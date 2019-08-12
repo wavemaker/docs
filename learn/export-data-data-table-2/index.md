@@ -1,0 +1,74 @@
+---
+title: "Export Data from Data Table"
+date: "2018-07-26"
+---
+
+##### 9.4 release
+
+: To export data from a Data Table to excel or CSV format. We will be using the Export option of Data Table to export data from a Database CRUD Variable.
+
+**specific to rel 9.4**
+
+- the entire contents of the underlying database table were being exported, post rel 9.4, only the contents displayed in the Data Table will be exported.
+- , for each column selected for display, columns can be customized either by
+    - selection can be done from the Advanced Settings, column show/hide checkbox,
+    - the **Options** using Value Expressions from the Advanced Settings of the Data Table (NOTE: Value Expression to be set for custom fields), or
+    - JavaScript code for the **Before Export** callback event for the Data Table.
+- features are available ONLY for Data Table bound to a Database CRUD variable, Live Filter result, or Query API Variable.
+
+:
+
+1. WaveMaker Web Application, with a database imported (we are using the sample HR Database).
+2. page with Data Table bound to a Database CRUD variable, here we are using the Employee table from the sample hrdb.
+
+:
+
+1. the **Settings** of the Data Table.
+2. the Data Table tab, scroll down to locate **Format** option and select required format. [![](../assets/dt_export.png)](../assets/dt_export.png)
+3. **Data Size** property can be used to specify the number of records to be exported.  By default, the value is set to 100, the maximum export size. To export more than 100 records, the max size in the [](http:/#ppsShowPopUp_109) needs to be changed from the Project Configurations menu of  [Workspace](http:/#ppsShowPopUp_107)
+4. to Columns tab and note that for each column **Options** tab is visible. Use this to customize the data to be exported. NOTE: If you have any custom columns, value expression to be given here, else the export will fail. [![](../assets/dt_cols_export.png)](../assets/dt_cols_export.png)
+5. and close the Advanced Settings.
+6. can further customize the data being exported using the **Before Export** callback event of the Data Table. [![](../assets/dt_export_event.png)](../assets/dt_export_event.png)
+7. can use the following script:
+    
+    1Beforeexport = function($data) {
+    
+        // Change Export Type
+        $data.exportType = 'CSV';
+    
+        //Changing the export size
+        $data.size = 5;
+    
+        //Apply Sorting on fields
+        $data.orderBy = "empId desc";
+    
+       //updating the header
+         $data.columns.firstname.header = ‘Fullname’;
+    
+        //updating first name expression
+        $data.columns.firstname.expression = firstname + ' ' +lastname;
+    
+        //adding new column 
+        $data.columns.username = {
+           header: ‘Username’,
+            expression: firstname + '.' + lastname
+        }
+    
+       //Deleting the existing column during Export
+       delete $data.columns.firstname;
+    };
+    
+     
+
+[Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
+
+- [1\. Basic Table Usage](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage/)
+- [2\. How to customise table actions](/learn/how-tos/data-table-actions/)
+- [3\. How to represent data table columns using widgets](/learn/how-tos/data-table-widget-representations/)
+- [4\. How to format data table column](/learn/how-tos/data-table-format/)
+- [5\. How to apply styles (generic and conditional) to data table](/learn/how-tos/data-table-styling/)
+- [6\. How to view master-detail record using a data table](/learn/how-tos/view-master-detail-data-records-using-data-table/)
+- [7\. How to add master-detail record using a data table](/learn/how-tos/add-master-detail-records-using-data-table/)
+- [8\. How to export data using a data table](/learn/how-tos/export-data-data-table/)
+- [9\. How to create a dynamic data table](/learn/how-tos/dynamic-data-tables/)
+- [10\. How to bind column of a data table to query variable](/learn/how-tos/data-table-column-bound-query/)

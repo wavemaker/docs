@@ -1,0 +1,221 @@
+---
+title: "Using Tree Widget"
+date: "2016-06-28"
+---
+
+We will build a tree using a simple static structure
+
+1. and drop a tree widget in your canvas. Tree widget comes with multiple nodes [![tree_dnd](../assets/tree_dnd-1024x576.png)](../assets/tree_dnd.png)
+2. [a static variable](/learn/variables/#menu) giving the structure of the data to be displayed in the tree. Ensure that the check box is selected.
+3. the _Editor_ enter the following code:
+    
+    \[
+      {
+        "label": "item1",
+        "icon": "fa fa-align-left"
+      },
+      {
+        "label": "item2",
+        "icon": "glyphicon glyphicon-music",
+        "children": \[
+          {
+            "label": "item2.1",
+            "icon": "glyphicon glyphicon-bookmark",
+            "children": \[
+              {
+                "label": "item2.1.1",
+                "icon": "glyphicon glyphicon-headphones",
+                "children": \[
+                  {
+                    "label": "item2.1.1.1",
+                    "icon": "glyphicon glyphicon-euro"
+                  }
+                \]
+              }
+            \]
+          }
+        \]
+      },
+      {
+        "label": "item2.2",
+        "icon": "glyphicon glyphicon-euro"
+      }
+    \]
+    
+    In this code we are specifying the node structure - the on each node, to be displayed at each node and any _\-level nodes_ Icons can be [from glyphicons](http://getbootstrap.com/components/) or [awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons. : If you follow this structure, the label, icon, link and children tags are picked automatically. If you are using different tag names, then you need to specify them while binding. [![tree_statvar](../assets/tree_statvar.png)](../assets/tree_statvar.png)
+4. , bind the dataset value property of the tree widget to the dataset under the static variable created in the previous step. [![tree_bind](../assets/tree_bind.png)](../assets/tree_bind.png) You can see the preview on the canvas. [![tree_design](../assets/tree_design-1024x576.png)](../assets/tree_design.png)
+5. the application and see the menu in action. [![tree_run1](../assets/tree_run1.png)](../assets/tree_run1.png)[![tree_run2](../assets/tree_run2.png)](../assets/tree_run2.png)
+
+Tree can be bound to a Java Service which returns an arraylist of Label, icon and has its own pojo as children. We will address one such scenario here.
+
+## 1: Create Source - Java Service
+
+1. a **Service** by name [![tree_JS](../assets/tree_JS.png)](../assets/tree_JS.png)
+2. following code needs to be added to the Java service:
+    1. the ArrayList utility:
+        
+         java.util.ArrayList;
+        import java.util.List;
+        
+    2. the following array structure:
+        
+            public String label;
+            public String icon;
+            public List<TreeData> subItems;
+        
+    3. the following methods:
+        
+         TreeData() {
+        
+            }
+        
+            public TreeData(String label, String icon) {
+                this.label = label;
+                this.icon = icon;
+            }
+        
+            public List<TreeData> getTreeNodesList() {
+                return this.subItems;
+            }
+        
+            public void setTreeNodesList(List<TreeData> children) {
+                this.subItems = children;
+            }
+        
+            public String getLabel() {
+                return label;
+            }
+        
+            public void setLabel(String label) {
+                this.label = label;
+            }
+        
+            public String getIcon() {
+                return icon;
+            }
+        
+            public void setIcon(String icon) {
+                this.icon = icon;
+            }
+        
+    4. the following main method:
+        
+         List<TreeData> sampleJavaOperation(String name) {
+                String result = null;
+                try {
+                    TreeData TreeData1 = new TreeData("C:", "test1");
+                    TreeData TreeData2 = new TreeData("Program Files", "glyphicon glyphicon-star");
+                    TreeData TreeData3 = new TreeData("System 32", "glyphicon glyphicon-ok");
+                    TreeData TreeData4 = new TreeData("D:", "test4");
+                    TreeData TreeData5 = new TreeData("My Documents", "glyphicon glyphicon-chevron-right");
+                    TreeData TreeData9 = new TreeData("Songs", "glyphicon glyphicon-music");
+                    TreeData TreeData10 = new TreeData("Movies", "glyphicon glyphicon-film");
+                    TreeData TreeData6 = new TreeData("Pictures", "glyphicon glyphicon-picture");
+                    TreeData TreeData7 = new TreeData("Pic1", "glyphicon glyphicon-picture");
+                    TreeData TreeData8 = new TreeData("Pic2", "glyphicon glyphicon-picture");
+                    List<TreeData> children = new ArrayList();
+                    children.add(TreeData2);
+                    children.add(TreeData3);
+                    List<TreeData> children1 = new ArrayList();
+                    children1.add(TreeData5);
+                    children1.add(TreeData6);
+                    List<TreeData> children2 = new ArrayList();
+                    children2.add(TreeData1);
+                    children2.add(TreeData3);
+                    TreeData1.setTreeNodesList(children);
+                    TreeData4.setTreeNodesList(children1);
+                    List<TreeData> children3 = new ArrayList();
+                    children3.add(TreeData7);
+                    children3.add(TreeData8);
+                    TreeData6.setTreeNodesList(children3);
+                    List<TreeData> children4 = new ArrayList();
+                    children4.add(TreeData9);
+                    children4.add(TreeData10);
+                    TreeData5.setTreeNodesList(children4);
+                    List<TreeData> allTrees = new ArrayList();
+                    allTrees.add(TreeData1);
+                    allTrees.add(TreeData4);
+                    return allTrees;
+                } catch (Exception e) {
+                    logger.error("Sample java service operation has failed", e);
+                    throw e;
+                }
+            }
+        }
+        
+
+## 2: Binding
+
+1. [a Service Variable](/learn/variables/#menu) using the Java Service created in the earlier step [![tree_JSvar](../assets/tree_JSvar.png)](../assets/tree_JSvar.png)
+2. and drop a tree widget onto the canvas and bind the dataset value to the Service Variable created in the above step [![tree_JSbind](../assets/tree_JSbind.png)](../assets/tree_JSbind.png)
+3. the properties of Node Label, Icon and Children respectively [![tree_JSprops](../assets/tree_JSprops.png)](../assets/tree_JSprops.png)
+
+## 3: Test Run
+
+1. the app and see the tree in action [![tree_JSrun](../assets/tree_JSrun.png)](../assets/tree_JSrun.png)
+
+[![tree_JSrun2](../assets/tree_JSrun2.png)](../assets/tree_JSrun2.png)
+
+If you have a requirement, whereby the user decides the structure of the tree. For example, you are building a folder-file structure and the user decides how many folders and files are to be present in a tree. This section deals with such a situation.
+
+## 1: Create Source - Script Variable
+
+1. a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas [![tree_dynamic_design](../assets/tree_dynamic_design.png)](../assets/tree_dynamic_design.png)
+2. the Tree widget and specify a _Variable_ as property, "" Use the following for treeData in the Script:
+    
+    // should be an array of objects consisting of label, icon, children keys
+        // populate the initial data
+    $scope.treeData = \[{
+            "label": "folder1",
+            "icon": "fa fa-folder",
+            "children": \[\]
+        }, {
+            "label": "folder2",
+            "icon": "fa fa-folder",
+            "children": \[\]
+        }\];
+    
+3. JavaScript for the onSelect event of the tree widget as:
+    
+    $scope.activeTreeElement = $item;
+    
+
+## 2: Event Mapping
+
+1. JavaScript for the click event of the buttons, Add File and Add Folder
+2. for the click events would be:
+    - Add File:
+        
+        $scope.addFile = function($event, $isolateScope) {
+                // add file
+                if ($scope.activeTreeElement) {
+                    if (WM.isArray($scope.activeTreeElement.children)) {
+                        $scope.activeTreeElement.children.push({
+                            "label": "new file",
+                            "icon": "fa fa-file"
+                        });
+                    }
+                }
+            };
+        
+    - Add Folder:
+        
+        $scope.addFolder = function($event, $isolateScope) {
+                // add folder
+                if ($scope.activeTreeElement) {
+                    if (WM.isArray($scope.activeTreeElement.children)) {
+                        $scope.activeTreeElement.children.push({
+                            "label": "new folder",
+                            "icon": "fa fa-folder",
+                            "children": \[\]
+                        });
+                    }
+                }
+            };
+        
+
+## 3: Test Run
+
+1. the application and see the tree in action.
+
+[![tree_dynamic_run](../assets/tree_dynamic_run.png)](../assets/tree_dynamic_run.png)

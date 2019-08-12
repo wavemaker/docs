@@ -1,0 +1,43 @@
+---
+title: "List - Use Cases"
+date: "2016-11-27"
+---
+
+- [Usage - Creating an Employee List](/learn/how-tos/list-basic-usage/)
+- [to group list items](/learn/how-tos/list-grouped/)
+- [to group list items based upon multiple fields](/learn/how-tos/list-multi-grouped/)
+- [to include data table within a list](/learn/how-tos/list-data-table/)
+- [to set partial page content for Accordion within a List](/learn/how-tos/setting-partial-page-content-accordion-within-list/)
+- [to set partial page content for Panel within a List using JavaScript](/learn/how-tos/setting-partial-page-content-panel-within-list-using-javascript/)
+- [to build editable list using live form](/learn/how-tos/building-editable-list/)
+- [to build list from the selected item of another list](/learn/how-tos/building-cascading-lists/)
+- [to access list items](/learn/how-tos/list-item-access/)
+
+[1\. Live & Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
+
+- [1.1 Cards](/learn/app-development/widgets/datalive/cards/)
+- [1.2 Data Table](/learn/app-development/widgets/datalive/data-table/)
+- [1.3 Form](/learn/app-development/widgets/datalive/form/)
+- [1.4 List](/learn/app-development/widgets/datalive/list/)
+    - [Data Source](/learn/app-development/widgets/datalive/list/list-data-source/)
+    - [Templates](/learn/app-development/widgets/datalive/list/list-templates/)
+        - [Action List](/learn/app-development/widgets/datalive/list/list-templates/#action-list)
+        - [Contact List](/learn/app-development/widgets/datalive/list/list-templates/#contact-list)
+        - [Email List](/learn/app-development/widgets/datalive/list/list-templates/#email-list)
+        - [Media List](/learn/app-development/widgets/datalive/list/list-templates/#media-list)
+    - [List Configuration](/learn/app-development/widgets/datalive/list/configuration/)
+        - [Items per row](/learn/app-development/widgets/datalive/list/configuration/#items-per-row)
+        - [Grouping & Ordering](/learn/app-development/widgets/datalive/list/configuration/#grouping-ordering)
+        - [Pagination](/learn/app-development/widgets/datalive/list/configuration/#pagin)
+        - [Message](/learn/app-development/widgets/datalive/list/configuration/#message)
+    - [List Behavior Settings](/learn/app-development/widgets/datalive/list/behavior-settings/)
+        - [Selection Limit](/learn/app-development/widgets/datalive/list/behavior-settings/#selection-limit)
+        - [Multiselect](/learn/app-development/widgets/datalive/list/behavior-settings/#multiselect)
+        - [Item Reordering](/learn/app-development/widgets/datalive/list/behavior-settings/#item-reordering)
+    - [Properties, Events & Methods](/learn/app-development/widgets/datalive/list/list-properties-events-methods/)
+        - [Properties](/learn/app-development/widgets/datalive/list/list-events-methods/#properties)
+        - [Events](/learn/app-development/widgets/datalive/list/list-events-methods/#events)
+        - [Methods](/learn/app-development/widgets/datalive/list/list-events-methods/#methods)
+    - [Use Case](/learn/app-development/widgets/datalive/list/list-use-cases)
+- [1.5 Live Form](/learn/app-development/widgets/datalive/live-form/)
+- [1.6 Live Filter](/learn/app-development/widgets/datalive/live-filter/)
