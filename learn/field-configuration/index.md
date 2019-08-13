@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Field Configuration"
-date: "2016-10-14"
+id: "field-configuration"
 ---
 
 The following features are available from the  **Settings** property of the Data Table.

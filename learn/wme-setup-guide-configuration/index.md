@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide – Configuration"
-date: "2017-03-15"
+id: "wme-setup-guide-configuration"
 ---
 
 This section walks you through  **WME** You should have completed [](/learn/installation/wme-setup-guide-launch-initialize/#launch-wme), [](/learn/installation/wme-setup-guide-launch-initialize/#initialize-wme) and  [up](/learn/installation/wme-setup-guide-access-setting/#setting-up-wme) of WME. These configurations are available from WaveMaker Launchpad.

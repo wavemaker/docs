@@ -1,6 +1,6 @@
 ---
 title: "Database Tools"
-date: "2016-10-21"
+id: "database-tools"
 ---
 
 provides database tools to connect to your development and deployment database servers in the cloud. You can execute scripts and run the commands supported by the database server. To access the database tools, click on DB Tools located at the bottom of your project workspace, when in the Databases Resource page.

@@ -1,6 +1,6 @@
 ---
 title: "Button Group"
-date: "2016-09-12"
+id: "button-group"
 ---
 
 **Group** widget is a container that shows a set of buttons that can be managed and styled as a group.

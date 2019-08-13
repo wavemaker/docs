@@ -1,6 +1,6 @@
 ---
 title: "Tree"
-date: "2016-06-28"
+id: "tree"
 ---
 
 is a widget that helps display data in a structured format. It can be used to show a hierarchical structure in data.

@@ -1,6 +1,6 @@
 ---
 title: "Concurrency and Record Locking in WaveMaker"
-date: "2018-11-02"
+id: "concurrency-record-locking-wavemaker"
 ---
 
 ## Case

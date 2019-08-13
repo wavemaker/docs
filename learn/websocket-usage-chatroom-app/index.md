@@ -1,6 +1,6 @@
 ---
 title: "WebSocket Usage - Chatroom App"
-date: "2016-12-16"
+id: "websocket-usage-chatroom-app"
 ---
 
 App utilizes a WebSocket service to enable chat among multiple users.

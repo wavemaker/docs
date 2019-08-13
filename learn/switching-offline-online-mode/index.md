@@ -1,6 +1,6 @@
 ---
 title: "Switching between Offline and Online Mode"
-date: "2018-01-17"
+id: "switching-offline-online-mode"
 ---
 
 ##### 9.2 release

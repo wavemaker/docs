@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Basic Usage"
-date: "2016-11-08"
+id: "data-table-basic-usage"
 ---
 
 Table provides a tabular view for database entities through a database service and allows to Create, Update and Delete (CRUD) operations on the entities. It can also be used to display the response data from a web or java service in a tabular form.

@@ -1,6 +1,6 @@
 ---
 title: "Building an Editable List"
-date: "2017-01-18"
+id: "building-editable-list"
 ---
 
 : To make List editable.

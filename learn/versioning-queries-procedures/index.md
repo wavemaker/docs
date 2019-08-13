@@ -1,6 +1,6 @@
 ---
 title: "Versioning of Queries and Procedures"
-date: "2017-04-06"
+id: "versioning-queries-procedures"
 ---
 
 8.4.1 release, WaveMaker has changed field naming strategy for result columns of queries and procedures. This has resulted in two versions of Queries and Procedures for backward compatibility:

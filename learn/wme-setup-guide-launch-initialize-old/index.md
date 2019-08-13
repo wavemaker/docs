@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide – Launch & Initialize - old"
-date: "2019-05-28"
+id: "wme-setup-guide-launch-initialize-old"
 ---
 
 This document talks about  **and Initializing WME** using the WaveMaker Setup Portal. It is recommended that you ensure that you meet the necessary [\-requisites](/learn/installation/wavemaker-enterprise-setup-guide/) before proceeding with the installation.

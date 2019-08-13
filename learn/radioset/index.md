@@ -1,6 +1,6 @@
 ---
 title: "Radioset"
-date: "2016-12-01"
+id: "radioset"
 ---
 
 allows you to group a set of radio buttons under a common heading. You need to bind to a dataset to display a radio button for each value.

@@ -1,6 +1,6 @@
 ---
 title: "Build Options for App Deployment"
-date: "2019-04-10"
+id: "build-options-app-deployment"
 ---
 
 From WaveMaker 10.0, you can choose from the new build options to deploy your app. The following are the two build options:

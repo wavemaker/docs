@@ -1,6 +1,6 @@
 ---
 title: "Form Configurations"
-date: "2016-11-08"
+id: "form-configurations"
 ---
 
 main features of a Form are as follows:

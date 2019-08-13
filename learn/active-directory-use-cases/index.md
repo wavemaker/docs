@@ -1,6 +1,6 @@
 ---
 title: "Active Directory - Use Cases"
-date: "2017-06-15"
+id: "active-directory-use-cases"
 ---
 
 **Directory** Domain Services is Microsoft’s Directory Server. It provides authentication and authorization mechanisms as well as a framework within which other related services can be deployed (AD Certificate Services, AD Federated Services, etc). It is an LDAP compliant database that contains objects.

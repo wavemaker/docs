@@ -1,6 +1,6 @@
 ---
 title: "Marquee"
-date: "2016-09-13"
+id: "marquee"
 ---
 
  widget is used to display the content in marquee styles, any widget can be dropped into it.

@@ -1,6 +1,6 @@
 ---
 title: "Youtube"
-date: "2016-07-08"
+id: "youtube"
 ---
 
 prefab ships with WaveMaker and it connects with Youtube to display a video on the web page.

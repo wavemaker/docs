@@ -1,6 +1,6 @@
 ---
 title: "Web Services"
-date: "2016-06-20"
+id: "web-services"
 ---
 
 Web service is a software system designed to support interoperable machine-to-machine interaction over a network. It has an interface described in a machine-processable format (specifically WSDL). Other systems interact with the Web service in a manner prescribed by its description using SOAP-messages, typically conveyed using HTTP with an XML serialization in conjunction with other Web-related standards ( [Services Glossary](https://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice)).

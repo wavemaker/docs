@@ -1,6 +1,6 @@
 ---
 title: "Media -  Audio,  Picture &  Video Widgets"
-date: "2016-06-27"
+id: "media-widgets"
 ---
 
 WaveMaker supports all three types of media - image, audio and video in the form of three widgets:

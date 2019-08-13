@@ -1,6 +1,6 @@
 ---
 title: "Data Table"
-date: "2016-10-14"
+id: "data-table"
 ---
 
 [![](../assets/laptop.png)  ](../assets/laptop.png): Data Table is available only for web responsive apps.

@@ -1,6 +1,6 @@
 ---
 title: "Studio Basics"
-date: "2017-11-24"
+id: "studio-basics"
 ---
 
 # Steps

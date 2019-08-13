@@ -1,6 +1,6 @@
 ---
 title: "Partial Pages"
-date: "2016-11-15"
+id: "partial-pages"
 ---
 
 A part of the page which is common across the app like a header or a left navigation can be implemented as a single partial and used across all app pages. These partial pages have to be associated with a component within a page. Here we will be seeing where partial pages can be used, how to create the same and the various types of partial pages available.

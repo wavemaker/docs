@@ -1,6 +1,6 @@
 ---
 title: "How To: One-to-Many Relationship"
-date: "2016-08-02"
+id: "one-many-relationship"
 ---
 
 ## \-Child Relationship

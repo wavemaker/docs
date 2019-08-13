@@ -1,6 +1,6 @@
 ---
 title: "Use Static Variable to pass data between pages"
-date: "2017-01-19"
+id: "use-static-variable-pass-data-pages"
 ---
 
 Apart from using [Parameters](/learn/app-development/ui-design/page-concepts/#page-parameters), data can be passed between pages using app-level variables. In this section, we see how to use Model Variable to pass data between pages.

@@ -1,6 +1,6 @@
 ---
 title: "Database Service APIs"
-date: "2016-11-23"
+id: "database-service-apis"
 ---
 
 APIs generated for CRUD, searching and listing operations for each [table integrated](http://[supsystic-show-popup id=106]) within the app can be viewed from API Designer. For easy usability, these APIs are categorized under various heads. They are grouped by the database, then entities, queries, and procedures.

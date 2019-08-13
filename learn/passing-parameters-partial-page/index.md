@@ -1,6 +1,6 @@
 ---
 title: "Passing Parameters to Partial Page"
-date: "2016-11-25"
+id: "passing-parameters-partial-page"
 ---
 
 We will see how page params can be used to pass data to partial page. We will be using the Department and Employee datasets from the sample hrdb that has been imported.

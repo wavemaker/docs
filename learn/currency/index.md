@@ -1,6 +1,6 @@
 ---
 title: "Currency"
-date: "2016-09-12"
+id: "currency"
 ---
 
  is a special text widget to input the currency type data. This widget will change the display format based on the currency type.

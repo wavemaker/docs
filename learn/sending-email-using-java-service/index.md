@@ -1,6 +1,6 @@
 ---
 title: "Sending eMail using Java Service"
-date: "2017-01-17"
+id: "sending-email-using-java-service"
 ---
 
 We will see how to implement send email in Java Service using Java Mail API.

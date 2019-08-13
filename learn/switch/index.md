@@ -1,6 +1,6 @@
 ---
 title: "Switch"
-date: "2016-09-12"
+id: "switch"
 ---
 
 **widget** can help switching between 3 or more different options by pressing a single key.

@@ -1,6 +1,6 @@
 ---
 title: "Using Live Variable APIs"
-date: "2017-06-13"
+id: "using-live-variable-apis"
 ---
 
 Showcases:

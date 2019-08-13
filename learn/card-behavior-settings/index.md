@@ -1,6 +1,6 @@
 ---
 title: "Cards - Behavior Settings"
-date: "2016-11-08"
+id: "card-behavior-settings"
 ---
 
 1. **Limit**: This property sets the maximum items that can be chosen at run-time. It also determines whether the list can have single or multiple items selected. This property can be bound to a variable to determine the selection limit at run-time.

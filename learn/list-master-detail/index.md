@@ -1,6 +1,6 @@
 ---
 title: "List - Master Detail"
-date: "2016-11-27"
+id: "list-master-detail"
 ---
 
 ## \-Detail List

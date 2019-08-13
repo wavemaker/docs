@@ -1,6 +1,6 @@
 ---
 title: "File Upload & Blob Data"
-date: "2017-02-07"
+id: "file-upload-blob-data"
 ---
 
 This section showcases the usage of Fileupload Widget and Java Service to save blob data into the database.

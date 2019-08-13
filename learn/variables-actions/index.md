@@ -1,6 +1,6 @@
 ---
 title: "Variables &  Actions"
-date: "2017-08-09"
+id: "variables-actions"
 ---
 
 Variables and Actions form the glue between the frontend UI and the backend services. While Variables provide data integration for the widgets, Actions implement the business logic, rules and data flows.

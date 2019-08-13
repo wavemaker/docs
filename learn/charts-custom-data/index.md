@@ -1,6 +1,6 @@
 ---
 title: "Charts - Custom Data"
-date: "2016-11-30"
+id: "charts-custom-data"
 ---
 
 **Data Manipulation**: Instead of using the existing columns to be plotted on the x- and y-axis ( [here to know how](/learn/how-tos/charts-displaying-user-selection-another-widget/)), you can plot custom data as an aggregation or sum of the columns. For example, from the Department table of the sample hrdb, we want to plot the chart with average of all four quarters data (Q1, Q2, Q3, and Q4)

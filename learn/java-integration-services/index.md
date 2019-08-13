@@ -1,6 +1,6 @@
 ---
 title: "Java Integration Services"
-date: "2016-11-23"
+id: "java-integration-services"
 ---
 
 you want more control or you are more comfortable working with Java, you can invoke various services like DB, Feed, SOAP and Security services from Java using _@Autowired in the UserService.java_ files. The **autowiring feature of spring framework** enables you to inject the object dependency implicitly. It internally uses setter or constructor injection. The advantage of autowiring is, it requires the less code because we don't need to write the code to inject the dependency explicitly. **:** REST Services cannot be invoked.

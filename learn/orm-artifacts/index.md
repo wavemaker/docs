@@ -1,6 +1,6 @@
 ---
 title: "ORM Artifacts"
-date: "2016-11-21"
+id: "orm-artifacts"
 ---
 
 of WaveMaker app with database generates few files, services, and APIs. These are used internally by WaveMaker to achieve the seamless integration. This information is for advanced developers who want more control or need more information for academic interests.

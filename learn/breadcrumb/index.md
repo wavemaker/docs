@@ -1,6 +1,6 @@
 ---
 title: "Breadcrumb"
-date: "2016-06-28"
+id: "breadcrumb"
 ---
 
 ![](../assets/laptop.png)  : Breadcrumb is available only for web responsive apps.

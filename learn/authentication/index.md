@@ -1,6 +1,6 @@
 ---
 title: "Authentication"
-date: "2016-10-21"
+id: "authentication"
 ---
 
 is a process by which the access to the app is restricted to known/authentic users.

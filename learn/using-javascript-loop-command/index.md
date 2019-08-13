@@ -1,6 +1,6 @@
 ---
 title: "Using JavaScript to loop a command"
-date: "2017-01-23"
+id: "using-javascript-loop-command"
 ---
 
 Showcases

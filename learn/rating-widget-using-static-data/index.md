@@ -1,6 +1,6 @@
 ---
 title: "Building Rating Widget using Static Data"
-date: "2016-12-01"
+id: "rating-widget-using-static-data"
 ---
 
 1. and drop a widget on the canvas.

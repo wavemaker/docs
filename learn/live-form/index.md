@@ -1,6 +1,6 @@
 ---
 title: "Live Form"
-date: "2016-06-24"
+id: "live-form"
 ---
 
 **Form** widget provides a columnar group of input elements for user entry. Live Form can be bound to a database through Database CRUD variables and can be used to perform CRUD operations on the underlying database via REST API call. These CRUD APIs are auto-generated at the time of [Integration](http://[supsystic-show-popup id=106])

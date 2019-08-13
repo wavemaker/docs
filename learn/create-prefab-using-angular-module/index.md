@@ -1,6 +1,6 @@
 ---
 title: "How to: Create Prefab using Angular Module"
-date: "2016-08-12"
+id: "create-prefab-using-angular-module"
 ---
 
 In this section, we will list the steps in creating a Prefab using an AngularJS module. For this we will be using the AngularJS tree module provided [](http://jimliu.github.io/angular-ui-tree/)Below example is based on [2.15.0](https://github.com/angular-ui-tree/angular-ui-tree/releases/tag/v2.15.0) We need to download the css and js files.

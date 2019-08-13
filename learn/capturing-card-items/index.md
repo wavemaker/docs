@@ -1,6 +1,6 @@
 ---
 title: "Capturing Card Items"
-date: "2016-11-27"
+id: "capturing-card-items"
 ---
 
 1. **& currentItemWidgets**: These bind objects can be used to bind the current item of the list to any form widget placed within the list template. The currentItemWidgets can be accessed as the fourth argument of the events for widgets within the List. For example, button click event within List will result in the following code will capture the caption property of the Name label within a List:

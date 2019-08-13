@@ -1,6 +1,6 @@
 ---
 title: "Customize an Existing Theme"
-date: "2017-04-05"
+id: "customize-existing-theme"
 ---
 
 Themes are used to provide consistent usage of font, color, border, and layout throughout the application. WaveMaker provides sample themes that you can apply to your app. If needed you can make changes to the same. This How-To talks about customizing an existing WaveMaker theme. The steps include:

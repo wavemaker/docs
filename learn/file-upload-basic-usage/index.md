@@ -1,6 +1,6 @@
 ---
 title: "FileUpload - Basic Usage"
-date: "2017-01-05"
+id: "file-upload-basic-usage"
 ---
 
 1. and drop a widget onto the canvas.

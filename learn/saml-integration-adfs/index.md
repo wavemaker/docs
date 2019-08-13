@@ -1,6 +1,6 @@
 ---
 title: "SAML Integration - ADFS"
-date: "2016-12-14"
+id: "saml-integration-adfs"
 ---
 
 **Directory ** Services () is a software component developed by Microsoft that can be installed on Windows Server operating systems to provide users with single sign-on access to systems and applications located across organizational boundaries.

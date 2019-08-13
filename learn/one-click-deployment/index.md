@@ -1,6 +1,6 @@
 ---
 title: "One-Click Deployment"
-date: "2016-06-27"
+id: "one-click-deployment"
 ---
 
 provides single-click app deployment to WaveMaker Demo cloud infrastructure. Using this option you can deploy your apps to cloud and make it public. This option is available only for Project Admins.

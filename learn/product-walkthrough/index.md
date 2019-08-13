@@ -1,6 +1,6 @@
 ---
 title: "Product Walkthrough"
-date: "2016-10-26"
+id: "product-walkthrough"
 ---
 
 WaveMaker is a RAD platform to develop and deploy web and mobile applications. This document is intended to be a walkthrough of the WaveMaker RAD platform. It includes:

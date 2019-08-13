@@ -1,6 +1,6 @@
 ---
 title: "Working with Feed service"
-date: "2016-11-22"
+id: "working-with-feed-service"
 ---
 
 web feed is a document (often XML-based) whose discrete content items include web links to the source of the content. News websites and blogs are common sources for web feeds, but feeds are also used to deliver structured information ranging from weather data to top-ten lists of hit tunes to search results. The two main web feed formats are RSS and Atom.

@@ -1,6 +1,6 @@
 ---
 title: "Testing Subscription"
-date: "2017-01-30"
+id: "testing-subscription"
 ---
 
 How TosWorking Solutions for WaveMaker FeaturesSubscribe

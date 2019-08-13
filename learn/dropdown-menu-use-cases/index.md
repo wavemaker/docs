@@ -1,6 +1,6 @@
 ---
 title: "Dropdown Menu - Basic Usage"
-date: "2016-11-28"
+id: "dropdown-menu-use-cases"
 ---
 
 This document talks of a simple Dropdown Menu usage. For usage example involving role-based menu access [here](/learn/how-tos/restricting-menu-item-display-based-user-role/)

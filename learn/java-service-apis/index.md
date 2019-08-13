@@ -1,6 +1,6 @@
 ---
 title: "Java Service APIs"
-date: "2016-11-23"
+id: "java-service-apis"
 ---
 
 APIs are generated for the user defined [Service](http://[supsystic-show-popup id=119]) Classes which can be viewed from the API Designer.

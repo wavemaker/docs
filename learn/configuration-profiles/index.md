@@ -1,6 +1,6 @@
 ---
 title: "Configuration Profiles"
-date: "2016-11-10"
+id: "configuration-profiles"
 ---
 
 Configuration is externalized at each service through configuration profiles. Configuration for DB, REST servers etc. can be separated for Development and Deployment environments through Profiles. The profile can be accessed from the Settings option in the Secondary Actions.

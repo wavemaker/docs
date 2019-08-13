@@ -1,6 +1,6 @@
 ---
 title: "Working with Database Schema"
-date: "2016-10-21"
+id: "working-database-schema"
 ---
 
 The  **Designer** workspace allows you to create tables, columns, and relationships.

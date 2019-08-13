@@ -1,6 +1,6 @@
 ---
 title: "Cards - Configuration"
-date: "2016-11-08"
+id: "card-configuration"
 ---
 
 #### per Row

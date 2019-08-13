@@ -1,6 +1,6 @@
 ---
 title: "Restricting menu item display based on user role"
-date: "2017-03-02"
+id: "restricting-menu-item-display-based-user-role"
 ---
 
 **Statement**: How to restrict certain users from accessing pages/links based upon their login credentials.Using the User Role property of a Menu or Nav widget, you a can restrict user access to certain pages/links based upon the User Role value. For example, to restrict 'user' role to access 'admin' related links(pages), use the following JSON structure for the Model Variable bound to the [widget](/learn/app-development/widgets/navigation/dropdown-menu-use-cases/):

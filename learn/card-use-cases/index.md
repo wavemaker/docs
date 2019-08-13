@@ -1,6 +1,6 @@
 ---
 title: "Cards - Use  Cases"
-date: "2016-11-08"
+id: "card-use-cases"
 ---
 
 can use Card Widget in many different ways.  The following links talk about the different use cases:

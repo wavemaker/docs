@@ -1,6 +1,6 @@
 ---
 title: "Localization of Error Messages"
-date: "2018-04-05"
+id: "localization-error-messages"
 ---
 
 App Localization is the process of rendering your app in multiple languages. WaveMaker allows you to create a dictionary of localized messages so that users can change the language of the application to experience the application in their language.

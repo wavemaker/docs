@@ -1,6 +1,6 @@
 ---
 title: "Authorization"
-date: "2016-10-21"
+id: "authorization"
 ---
 
 is a process through which the access to various aspects of the app such as services, widgets, and functionality is restricted to the specified app roles.

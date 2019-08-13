@@ -1,6 +1,6 @@
 ---
 title: "Upgrading an App from WaveMaker 9.x to WaveMaker 10.0"
-date: "2019-04-09"
+id: "guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0"
 ---
 
 guide helps you upgrade your apps from WaveMaker 9 (WM 9.4) to WaveMaker 10 (WM 10.0). It describes the steps you should take to prepare and test your app for a version upgrade. With this upgrade, the WaveMaker app's code will be using the latest version of Angular 7. 

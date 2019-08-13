@@ -1,6 +1,6 @@
 ---
 title: "Deployment to Heroku"
-date: "2017-01-30"
+id: "deployment-to-heroku"
 ---
 
 is a platform as a service (PaaS) that enables developers to build, run, and manage applications entirely in the cloud. Developers can setup a Continuous Integration pipeline for a wide range of technologies.

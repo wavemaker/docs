@@ -1,6 +1,6 @@
 ---
 title: "Create Prefab Using  D3 Library (DataMaps)"
-date: "2016-07-13"
+id: "create-prefab-using-d3-library-datamaps"
 ---
 
 **3.js** (or just D3 for Data-Driven Documents) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of the widely implemented SVG, HTML5, and CSS standards. is intended to provide data visualizations based on geographical data. It is SVG-based and can scale to any screen size. It heavily relies on the D3.js library.

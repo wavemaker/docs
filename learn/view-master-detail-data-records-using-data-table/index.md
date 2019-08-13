@@ -1,6 +1,6 @@
 ---
 title: "View Master-Detail Data Records using Data Table"
-date: "2017-01-16"
+id: "view-master-detail-data-records-using-data-table"
 ---
 
 : In a Master-Detail relationship, display the details record for a selected row of Master table. We will see the implementation of this scenario using Data Table widget.

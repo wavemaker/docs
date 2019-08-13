@@ -1,6 +1,6 @@
 ---
 title: "Carousel"
-date: "2016-09-13"
+id: "carousel"
 ---
 
 widget is a flexible, responsive way to add a slider to your site. In addition to being responsive, the content is flexible enough to allow images, iframes, videos, or just about any type of content that you might want.

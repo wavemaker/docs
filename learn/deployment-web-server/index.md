@@ -1,6 +1,6 @@
 ---
 title: "Deployment to Web Server"
-date: "2016-11-10"
+id: "deployment-web-server"
 ---
 
 Applications built with WaveMaker can be deployed to a number of environments. In this document, we walk through the process of WaveMaker app deployment to Web Server.

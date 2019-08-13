@@ -1,6 +1,6 @@
 ---
 title: "Selection Widgets - Use Case"
-date: "2016-06-28"
+id: "selection-widgets-use-case"
 ---
 
 WaveMaker offers three ways of allowing user to choose from given options:

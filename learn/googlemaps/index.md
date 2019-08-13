@@ -1,6 +1,6 @@
 ---
 title: "Googlemaps"
-date: "2016-07-08"
+id: "googlemaps"
 ---
 
 The prefab connects with Google Maps and displays the map on your page. It can be used either for map or as map or as a map.

@@ -1,6 +1,6 @@
 ---
 title: "Navigation Action"
-date: "2016-09-24"
+id: "navigation-action"
 ---
 
 **Action** provides navigation capabilities to help in navigating from one page or view to another. By default, for every page added to the app, a navigation action is created with the name **\__<pagename>. _** can choose to create a new Navigation Action.

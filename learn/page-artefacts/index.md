@@ -1,6 +1,6 @@
 ---
 title: "Page Artefacts"
-date: "2016-05-26"
+id: "page-artefacts"
 ---
 
 would have witnessed by now that you can accomplish most of the tasks of creating an application in the mode itself - using intuitive drag and drop options and properties. However, some situations may require you to edit the code of your application pages. Also, some advanced users and experienced developers may prefer to code. Thus, WaveMaker provides different **Modes** - [](#page-markup), [](#page-script), and [](#page-style)\- apart from the default mode. We will look at each of these modes separately.

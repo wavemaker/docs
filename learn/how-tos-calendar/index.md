@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Calendar"
-date: "2016-09-20"
+id: "how-tos-calendar"
 ---
 
 ## an Event using Calendar

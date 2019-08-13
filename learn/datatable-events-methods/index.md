@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Events & Methods"
-date: "2016-10-21"
+id: "datatable-events-methods"
 ---
 
 Data Table behavior can be customized with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..

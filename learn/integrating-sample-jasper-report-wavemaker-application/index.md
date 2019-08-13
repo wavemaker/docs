@@ -1,6 +1,6 @@
 ---
 title: "Integrating Sample Jasper Report in WaveMaker Application"
-date: "2017-02-14"
+id: "integrating-sample-jasper-report-wavemaker-application"
 ---
 
 Jasper Reports is an open source Java reporting tool that can write to a variety of targets, such as: screen, a printer, into PDF, HTML, Microsoft Excel, RTF, ODT, Comma-separated values or XML files. It can be used in Java-enabled applications, including Java EE or web applications, to generate dynamic content.

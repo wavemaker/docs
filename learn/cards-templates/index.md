@@ -1,6 +1,6 @@
 ---
 title: "Cards - Templates"
-date: "2016-11-08"
+id: "cards-templates"
 ---
 
 Cards elements can be displayed using various templates:

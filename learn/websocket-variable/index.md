@@ -1,6 +1,6 @@
 ---
 title: "WebSocket Variable"
-date: "2016-12-12"
+id: "websocket-variable"
 ---
 
 **Variable** is the interface for the app developer to interact with a WebSocket Service imported into a WaveMaker app. The Variable has methods to interact with the target service like opening and closing the connection, sending and receiving messages to and from the server. It also holds the data to be sent to the service and the data received from the service.

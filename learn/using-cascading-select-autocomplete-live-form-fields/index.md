@@ -1,6 +1,6 @@
 ---
 title: "Using Cascading Select & Autocomplete for Live Form Fields"
-date: "2017-01-17"
+id: "using-cascading-select-autocomplete-live-form-fields"
 ---
 
 **:** To enable user selection for a form fields.

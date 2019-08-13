@@ -1,6 +1,6 @@
 ---
 title: "Applying Live Filter to a Data Table or a Chart"
-date: "2016-12-01"
+id: "live-filter-applying"
 ---
 
 1. and drop a filter onto the canvas, setting the Service Type to Database CRUD, using hrdb Service and Department entity. Select Name for the Filter Fields. [![](../assets/lftr_apply_1.png)](../assets/lftr_apply_1.png)

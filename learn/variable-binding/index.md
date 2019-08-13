@@ -1,6 +1,6 @@
 ---
 title: "Variable Binding"
-date: "2016-06-20"
+id: "variable-binding"
 ---
 
 leverages the concept of Data Binding by Angular, to bind Widgets with Variables. Widgets can be configured to bind the UI Elements to specific fields of the Data Model.

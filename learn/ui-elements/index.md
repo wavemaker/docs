@@ -1,6 +1,6 @@
 ---
 title: "UI Elements - Widgets & Prefabs"
-date: "2016-07-07"
+id: "ui-elements"
 ---
 
 In this document, we will learn the basics about the HTML/Bootstrap based widgets or UI Components, with rich interaction and for responsive design. We will also look at the common Widget properties.

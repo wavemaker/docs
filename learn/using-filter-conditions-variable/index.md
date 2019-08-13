@@ -1,6 +1,6 @@
 ---
 title: "Using Filter Conditions on Variable"
-date: "2017-06-13"
+id: "using-filter-conditions-variable"
 ---
 
 Showcases:

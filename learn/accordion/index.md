@@ -1,6 +1,6 @@
 ---
 title: "Accordion"
-date: "2016-08-05"
+id: "accordion"
 ---
 
 is a stacked list of UI components, with only one focused component expanded at any point of time and the rest collapsed.

@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Layouts"
-date: "2016-11-08"
+id: "livefilter-layouts"
 ---
 
 Filter can be _1-column_, _2-column_ or _3-column_ Apart from this, the **of a caption** for the fields can be configured to be placed on , or of the filter fields.

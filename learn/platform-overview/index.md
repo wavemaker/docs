@@ -1,6 +1,6 @@
 ---
 title: "Platform Overview"
-date: "2016-10-26"
+id: "platform-overview"
 ---
 
 # Web Apps

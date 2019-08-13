@@ -1,6 +1,6 @@
 ---
 title: "Working with Temporals"
-date: "2018-03-07"
+id: "working-with-temporals"
 ---
 
 ## Case

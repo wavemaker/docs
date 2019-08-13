@@ -1,6 +1,6 @@
 ---
 title: "Rapid RBAC Support (Enterprise Version)"
-date: "2018-11-08"
+id: "rapid-rbac-support"
 ---
 
 ##### Enterprise Version post 10.0 release

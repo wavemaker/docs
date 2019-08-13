@@ -1,6 +1,6 @@
 ---
 title: "Select Locale"
-date: "2016-06-27"
+id: "select-locale"
 ---
 
 refers to the tools, techniques, and steps taken to enable your application to run in other languages. WaveMaker allows you to create a  dictionary of localized messages so that users can change the language of the application to experience the application in their language.

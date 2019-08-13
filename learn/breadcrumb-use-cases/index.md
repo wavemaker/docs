@@ -1,6 +1,6 @@
 ---
 title: "Breadcrumb - Basic Usage"
-date: "2016-11-28"
+id: "breadcrumb-use-cases"
 ---
 
 will see here a simple usage of a widget. All breadcrumbs start with the home page. The home page is the first level because it’s the user’s starting point. Displaying the home page first helps users recognize the hierarchy. Breadcrumbs are typically placed, in horizontal form, under the masthead or navigation of a website.

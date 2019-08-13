@@ -1,6 +1,6 @@
 ---
 title: "Using Cordova Plugins"
-date: "2017-12-14"
+id: "using-cordova-plugins"
 ---
 
 WaveMaker provides common plugins like camera, contacts etc. for you to use within a Mobile app. These plugins are exposed as services under [Variables](/learn/hybrid-mobile/device-variables/#) The output of a plugin operation is available as the variable's outbound property. You can bind the values to another variable or a widget.

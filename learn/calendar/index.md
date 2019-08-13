@@ -1,6 +1,6 @@
 ---
 title: "Calendar"
-date: "2016-09-12"
+id: "calendar"
 ---
 
 **Calendar** widget is the most popular solution for scheduling events on a full-sized calendar in a web application. This widget can be used to show agenda. The calendar will be automatically switched to the Web or Mobile version, based on the device it is being viewed on.

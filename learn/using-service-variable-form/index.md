@@ -1,6 +1,6 @@
 ---
 title: "Using Service Variable in a Form"
-date: "2017-06-13"
+id: "using-service-variable-form"
 ---
 
 Showcases:

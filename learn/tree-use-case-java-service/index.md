@@ -1,6 +1,6 @@
 ---
 title: "Tree Use Case - from Java Service"
-date: "2016-11-30"
+id: "tree-use-case-java-service"
 ---
 
 1. the source structure for Tree as a [**Service**](http://[supsystic-show-popup id=119]) by name

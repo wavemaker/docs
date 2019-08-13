@@ -1,6 +1,6 @@
 ---
 title: "Jump Start – WaveMaker DB Essentials"
-date: "2018-12-11"
+id: "jump-start-db-essentials"
 ---
 
 In this Jump Start guide, you will be learning to integrate your app with Database.

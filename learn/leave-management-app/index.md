@@ -1,6 +1,6 @@
 ---
 title: "Leave Management App"
-date: "2016-08-08"
+id: "leave-management-app"
 ---
 
 document provides step by step for building **Management Application** WaveMaker Rapid Application Development Platform

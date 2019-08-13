@@ -1,6 +1,6 @@
 ---
 title: "Docusign Prefab"
-date: "2018-12-15"
+id: "docusign"
 ---
 
 Docusign prefab allows user to enable electronic signature technology services using the Docusign API. Application using this prefab can allow it's users to electronically sign their documents for various purposes.

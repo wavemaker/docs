@@ -1,6 +1,6 @@
 ---
 title: "Radioset to Filter a List"
-date: "2017-01-16"
+id: "radioset-filter-list"
 ---
 
 WaveMaker offers three ways of allowing user to choose from given options:

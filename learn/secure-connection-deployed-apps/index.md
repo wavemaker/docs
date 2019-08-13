@@ -1,6 +1,6 @@
 ---
 title: "Secure Connection for Deployed Apps"
-date: "2017-11-13"
+id: "secure-connection-deployed-apps"
 ---
 
 is a process by which the access to the app is restricted to known/authentic users.

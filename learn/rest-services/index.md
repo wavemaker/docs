@@ -1,6 +1,6 @@
 ---
 title: "3rd Party REST Services"
-date: "2016-11-09"
+id: "rest-services"
 ---
 
 REST stands for Representational State Transfer, which is an architectural style for networked hypermedia applications, it is primarily used to build Web services that are lightweight, maintainable, and scalable. A service based on REST is called a RESTful service. REST is not dependent on any protocol, but almost every RESTful service uses HTTP as its underlying protocol.

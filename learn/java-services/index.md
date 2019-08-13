@@ -1,6 +1,6 @@
 ---
 title: "Variable for Java Service"
-date: "2017-08-22"
+id: "java-services"
 ---
 
 Services can be accessed from within your app using Variables. These variables allow one to trigger the methods within the Java Service, pass the necessary parameters to the method and access the results from the method.

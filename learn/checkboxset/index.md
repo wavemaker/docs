@@ -1,6 +1,6 @@
 ---
 title: "CheckboxSet"
-date: "2016-11-30"
+id: "checkboxset"
 ---
 
 allows you to group a set of checkboxes under a common heading. You need to bind to a dataset to display a checkbox for each value.

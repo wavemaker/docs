@@ -1,6 +1,6 @@
 ---
 title: "Using Wizard for Cumulative Data Entry in a Form"
-date: "2017-02-27"
+id: "using-wizard-cumulative-data-entry-form"
 ---
 
 We will see how form fields can be distributed over multiple wizard steps, with single save in the last step.

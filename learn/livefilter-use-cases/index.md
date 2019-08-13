@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Use Cases"
-date: "2016-11-08"
+id: "livefilter-use-cases"
 ---
 
 - [Usage Scenario](/learn/app-development/widgets/datalive/livefilter/live-filter-basic-usage/)

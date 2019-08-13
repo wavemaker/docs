@@ -1,6 +1,6 @@
 ---
 title: "Facebook"
-date: "2016-08-12"
+id: "facebook"
 ---
 
 2.0 is an authorization framework, which is updated after the original OAuth protocol created in 2006. OAuth 2.0 is a standard protocol, which provides delegated secured access for web, mobile, and desktop applications. To know more about the working of WaveMaker OAuth Prefabs [ here](/learn/app-development/widgets/prefab/oauth-prefabs/)

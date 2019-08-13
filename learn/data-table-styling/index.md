@@ -1,6 +1,6 @@
 ---
 title: "Custom Styling Data Table Columns & Rows"
-date: "2016-11-27"
+id: "data-table-styling"
 ---
 
 : Set the display style of the entire column or row in a Data Table and based upon the value of a particular field. We will customise the Data Table for the following:

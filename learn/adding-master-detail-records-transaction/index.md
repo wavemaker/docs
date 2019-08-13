@@ -1,6 +1,6 @@
 ---
 title: "Adding Master-Detail records in the same transaction"
-date: "2017-01-16"
+id: "adding-master-detail-records-transaction"
 ---
 
 In this use case, you will be:

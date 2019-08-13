@@ -1,6 +1,6 @@
 ---
 title: "QRCode"
-date: "2016-07-08"
+id: "qrcode"
 ---
 
 prefab that ships with WaveMaker can be used to add any text or URL to your app in the QRCode format. This code, when scanned by a QR Reader, will display the stored content. [more about QR Code from here](http://www.qrcode.com/en/)

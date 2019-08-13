@@ -1,6 +1,6 @@
 ---
 title: "Popover - Basic Usage"
-date: "2017-01-06"
+id: "popover-basic-usage"
 ---
 
 will use the popover to display the list of employees of a particular department using the Sample HRDB Database.

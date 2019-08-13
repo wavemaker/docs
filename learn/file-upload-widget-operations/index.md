@@ -1,6 +1,6 @@
 ---
 title: "File Upload Widget Operations"
-date: "2017-01-05"
+id: "file-upload-widget-operations"
 ---
 
 The uploaded files will be available in the upload folder and can be referred to using the and methods.

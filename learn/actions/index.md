@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Actions"
-date: "2016-10-14"
+id: "actions"
 ---
 
 Table is capable of performing CRUD operations on the underlying Database Source. This functionality can be achieved through the table and record level actions like adding, editing and deleting records. In addition, custom actions can also be defined as per the requirements.

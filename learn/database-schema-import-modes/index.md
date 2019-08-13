@@ -1,6 +1,6 @@
 ---
 title: "DataBase Schema Import Modes"
-date: "2017-03-02"
+id: "database-schema-import-modes"
 ---
 
 When importing a database into WaveMaker, it connects to database, reads the schema, generates the sources and shows all the tables/views along with their relations in the Database Designer. Apart from displaying, the DB designer has a provision to make changes to the schema and update the underlying Database.

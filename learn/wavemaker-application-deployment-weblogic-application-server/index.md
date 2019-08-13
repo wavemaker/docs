@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Application deployment to WebLogic application server"
-date: "2017-12-18"
+id: "wavemaker-application-deployment-weblogic-application-server"
 ---
 
 Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 1.8. You can know more about [to Web Server](/learn/app-development/deployment/deployment-web-server/) from here.

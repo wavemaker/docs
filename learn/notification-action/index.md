@@ -1,6 +1,6 @@
 ---
 title: "Notification Action"
-date: "2016-09-24"
+id: "notification-action"
 ---
 
 **Action** is an action to show UI notifications in the app in the form of a toaster, alert or a confirmation box. It provides message capabilities, a way for the app to notify the end users. Based on the operation selected app can notify the user through an Alert/Confirm dialog or a simple toaster message. This action can be useful in cases like error handling, confirm user action, etc.

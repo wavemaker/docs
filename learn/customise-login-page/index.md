@@ -1,6 +1,6 @@
 ---
 title: "Customise Login Page"
-date: "2017-01-09"
+id: "customise-login-page"
 ---
 
 A Login page is added to your app, by default.

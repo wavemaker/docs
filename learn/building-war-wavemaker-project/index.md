@@ -1,6 +1,6 @@
 ---
 title: "Building a War from a WaveMaker Project"
-date: "2019-04-17"
+id: "building-war-wavemaker-project"
 ---
 
 This guide helps to create a war file for deploying the project in your local machine or a web server like Apache Tomcat.

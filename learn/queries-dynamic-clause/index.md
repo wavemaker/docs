@@ -1,6 +1,6 @@
 ---
 title: "Queries with Dynamic Where Clause"
-date: "2017-03-07"
+id: "queries-dynamic-clause"
 ---
 
 ## Case

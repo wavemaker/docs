@@ -1,6 +1,6 @@
 ---
 title: "Database Views"
-date: "2016-11-09"
+id: "database-views"
 ---
 
 provides support for importing Database Views into WaveMaker applications with some limitations.

@@ -1,6 +1,6 @@
 ---
 title: "Access Levels & Permissions"
-date: "2016-10-21"
+id: "access-levels-permissions"
 ---
 
 you have added the roles, you can set up the Permissions is a mix of Authentication and Authorization. The Authentication options are and If the developer chooses “Everyone”, then it's not covered under WaveMaker security. “Authenticated” secures the resource/service.

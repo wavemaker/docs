@@ -1,6 +1,6 @@
 ---
 title: "Creating a Registration Page"
-date: "2017-01-12"
+id: "creating-registration-page"
 ---
 
 [security and login pages](http://[supsystic-show-popup id=111]) to your application is a good idea and simple one at that. another story. Registration is a common process in web applications. Many applications have the facility to self-register and then allow registered users to login to the applications. The link to registration page is provided on the login page. In this post we will see how to create this registration page using WaveMaker Studio. In this section you will see

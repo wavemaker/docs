@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Data Tables"
-date: "2017-03-03"
+id: "dynamic-data-tables"
 ---
 
 Dynamic Data Tables can be created in the following ways:

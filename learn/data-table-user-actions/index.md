@@ -1,6 +1,6 @@
 ---
 title: "Data Table - User Actions"
-date: "2016-10-14"
+id: "data-table-user-actions"
 ---
 
 \[sc name="DT-TOC"\]

@@ -1,6 +1,6 @@
 ---
 title: "Tile"
-date: "2016-08-05"
+id: "tile"
 ---
 
 is a container for other widgets used to present a set of objects.  widget lets you to directly add an image, text box, video, or web code to user dashboard. _to the container_ but it comes with some default styling which makes it different from a container.  cannot create partials using tile.

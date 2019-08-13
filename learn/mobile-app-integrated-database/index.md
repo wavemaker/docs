@@ -1,6 +1,6 @@
 ---
 title: "Mobile App Integrated with Database"
-date: "2017-01-11"
+id: "mobile-app-integrated-database"
 ---
 
 to create a **mobile application** that will display an _Profile_ and allow you to _the existing profile picture_ with the newly captured image.

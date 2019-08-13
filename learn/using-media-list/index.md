@@ -1,6 +1,6 @@
 ---
 title: "Using Media List"
-date: "2016-10-05"
+id: "using-media-list"
 ---
 
 Media List can be used to display images in a Hybrid Mobile App.

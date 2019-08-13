@@ -1,6 +1,6 @@
 ---
 title: "Device Variables"
-date: "2016-12-08"
+id: "device-variables"
 ---
 
 **Variables** are specific to Mobile App projects. These are useful in performing operations specific to a Mobile Device like taking a picture and getting its path, select a contact, add events to a calendar, etc.

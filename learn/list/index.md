@@ -1,6 +1,6 @@
 ---
 title: "List"
-date: "2016-05-18"
+id: "list"
 ---
 
 **widget** provides a list view of items from a data source. List data can be obtained from various Services like database, queries or web services through Variables. The list provides a variety of flexible templates for defining the display format of each item.

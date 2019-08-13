@@ -1,6 +1,6 @@
 ---
 title: "Localization - using Select Locale"
-date: "2016-12-01"
+id: "select-locale-usage"
 ---
 
 ## 1: App Messages

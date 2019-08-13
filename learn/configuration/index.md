@@ -1,6 +1,6 @@
 ---
 title: "List - Configuration"
-date: "2016-11-08"
+id: "configuration"
 ---
 
 #### per Row

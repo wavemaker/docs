@@ -1,6 +1,6 @@
 ---
 title: "Wizard"
-date: "2016-06-28"
+id: "wizard"
 ---
 
 **UI** are suitable for tasks that have **independent steps,** wherein the user is taken through each step to comprehend the task in a structured manner. Wizards have steps with a specific UI style that facilitates easy navigation. Wizards provide **and next step buttons** for the user to confirm their selections/actions in each of these steps. Users can also the task at any step. Wizards also provide Done or Finish button at the end of the final step, to indicate that all the steps are finished.

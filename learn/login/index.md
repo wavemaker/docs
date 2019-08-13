@@ -1,6 +1,6 @@
 ---
 title: "Login"
-date: "2016-09-13"
+id: "login"
 ---
 
 be used to display a pre-built Login section with a sign in button, username, and password fields. It also provides the option to remember the password.

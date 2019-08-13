@@ -1,6 +1,6 @@
 ---
 title: "Icon"
-date: "2016-06-27"
+id: "icon"
 ---
 
 Many widgets like Panel, Button etc. have a way to display an icon. You can choose the icons from the list of  (thin fonts that abide the iOS and Android mobile style guidelines) or **\-awesome** icons.

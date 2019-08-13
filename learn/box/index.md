@@ -1,6 +1,6 @@
 ---
 title: "Box"
-date: "2017-04-19"
+id: "box"
 ---
 
 2.0 is an authorization framework, which is updated after the original OAuth protocol created in 2006. OAuth 2.0 is a standard protocol, which provides delegated secured access for web, mobile, and desktop applications. To know more about the working of WaveMaker OAuth Prefabs [ here](/learn/app-development/widgets/prefab/oauth-prefabs/)

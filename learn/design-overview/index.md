@@ -1,6 +1,6 @@
 ---
 title: "Design Overview"
-date: "2016-10-26"
+id: "design-overview"
 ---
 
 # App UI Design

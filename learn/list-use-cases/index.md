@@ -1,6 +1,6 @@
 ---
 title: "List - Use Cases"
-date: "2016-11-27"
+id: "list-use-cases"
 ---
 
 - [Usage - Creating an Employee List](/learn/how-tos/list-basic-usage/)

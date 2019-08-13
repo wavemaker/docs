@@ -1,6 +1,6 @@
 ---
 title: "Including a Data Table within a List"
-date: "2016-11-27"
+id: "list-data-table"
 ---
 
 In this section we will build a **list** with a **Table.**

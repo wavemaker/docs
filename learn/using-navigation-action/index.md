@@ -1,6 +1,6 @@
 ---
 title: "Using Navigation Action"
-date: "2017-06-13"
+id: "using-navigation-action"
 ---
 
 Showcases:

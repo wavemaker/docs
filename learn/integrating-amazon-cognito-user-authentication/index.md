@@ -1,6 +1,6 @@
 ---
 title: "Integrating Amazon Cognito for User Authentication"
-date: "2017-01-31"
+id: "integrating-amazon-cognito-user-authentication"
 ---
 
 Cognito is a service that enables you to create unique identities for your users and authenticate them using either your own user pools or by using federated identity providers. Here we will see hot to create Cognito User Pool and implement custom authentication service in WaveMaker App using this user pool. [more about Amazon Cognito from here](http://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)

@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Live Filter"
-date: "2016-09-21"
+id: "tos-live-filter"
 ---
 
 Filtering on Multiple ValuesLive Filter can applied for multiple values of the filter field, i.e. employees from New York and Chicago cities. This can be achieved using the Checkboxset or Select widget to represent the Filter fields from the Advanced Settings property of Live Filter.

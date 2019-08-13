@@ -1,6 +1,6 @@
 ---
 title: "How Tos: UI Layouts"
-date: "2016-06-22"
+id: "howtos-ui"
 ---
 
 ## Pages

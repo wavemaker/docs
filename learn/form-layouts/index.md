@@ -1,6 +1,6 @@
 ---
 title: "Form - Layouts"
-date: "2016-11-08"
+id: "form-layouts"
 ---
 
 can be _1-column_, _2-column_ or _3-column_ Apart from this, the **of the caption** for the form fields can be configured to be placed at the , or of the form fields.

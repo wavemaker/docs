@@ -1,6 +1,6 @@
 ---
 title: "Using Notification Actions"
-date: "2017-06-13"
+id: "using-notification-actions"
 ---
 
 Showcases:

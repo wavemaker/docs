@@ -1,6 +1,6 @@
 ---
 title: "Model Variable"
-date: "2017-08-22"
+id: "model-variable"
 ---
 
 Variable can be used as storage model to store data on the client.

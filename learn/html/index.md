@@ -1,6 +1,6 @@
 ---
 title: "HTML"
-date: "2016-09-13"
+id: "html"
 ---
 
  widget can be used to display HTML content.

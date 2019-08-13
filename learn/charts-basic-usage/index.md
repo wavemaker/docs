@@ -1,6 +1,6 @@
 ---
 title: "Charts - Basic Usage"
-date: "2016-11-30"
+id: "charts-basic-usage"
 ---
 
 **1: Datasource & Type**

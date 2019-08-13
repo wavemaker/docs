@@ -1,6 +1,6 @@
 ---
 title: "Data Table Column bound to Query"
-date: "2018-10-31"
+id: "data-table-column-bound-query"
 ---
 
 Data Table is build using a single table from an imported Database. You might want to enable user selection for one column of the Data Table from values of a query result.

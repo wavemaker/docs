@@ -1,6 +1,6 @@
 ---
 title: "Form - Events & Methods"
-date: "2017-01-10"
+id: "form-events-methods"
 ---
 
  behavior can be customized with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..

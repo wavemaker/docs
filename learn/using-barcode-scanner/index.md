@@ -1,6 +1,6 @@
 ---
 title: "Using Barcode Scanner"
-date: "2016-10-05"
+id: "using-barcode-scanner"
 ---
 
 Barcode Scanner can be used to scan and encode a barcode sequence.

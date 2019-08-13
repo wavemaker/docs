@@ -1,6 +1,6 @@
 ---
 title: "List - Properties, Events & Methods"
-date: "2016-11-08"
+id: "list-properties-events-methods"
 ---
 
 the title for the List. It is bindable.

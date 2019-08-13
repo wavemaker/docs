@@ -1,6 +1,6 @@
 ---
 title: "Using Live Form"
-date: "2016-06-21"
+id: "using-live-form"
 ---
 
 The **Form** widget has built-in functionality for performing **operations** on the data source it is bound to. A typical Live Form set up in WaveMaker has the following steps:

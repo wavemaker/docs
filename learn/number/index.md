@@ -1,6 +1,6 @@
 ---
 title: "Number"
-date: "2018-10-25"
+id: "number"
 ---
 
 ##### 10.0 release

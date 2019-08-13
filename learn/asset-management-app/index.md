@@ -1,6 +1,6 @@
 ---
 title: "Asset Management App"
-date: "2016-08-09"
+id: "asset-management-app"
 ---
 
 document provides step by step for building **Management Application** WaveMaker Rapid Application Development Platform

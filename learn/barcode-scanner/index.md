@@ -1,6 +1,6 @@
 ---
 title: "Barcode Scanner"
-date: "2016-09-26"
+id: "barcode-scanner"
 ---
 
 is a number encoded in a sequence of bars (vertical line). It is used for machine reading the number.  A common example where barcode scanning is used is billing in supermarkets. Bill desk employees add a product to the bill by just scanning the product’s barcode. Barcode scanner widget brings this scanning functionality to mobile devices.

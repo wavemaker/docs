@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Actions"
-date: "2016-11-08"
+id: "livefilter-actions"
 ---
 
 ### filter actions

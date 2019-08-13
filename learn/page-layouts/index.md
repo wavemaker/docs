@@ -1,6 +1,6 @@
 ---
 title: "Page Layouts"
-date: "2016-11-25"
+id: "page-layouts"
 ---
 
 An app is divided into multiple pages to segregate the functionality of the app. Various aspects of a Page are used to unite these segregated functionalities to form an app flow. In this document we will discuss:

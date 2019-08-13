@@ -1,6 +1,6 @@
 ---
 title: "Support for Password Encryption"
-date: "2017-02-24"
+id: "support-password-encryption"
 ---
 
 document provides overview of securing passwords of users’ when DB Based authentication provider/mechanism is used in WaveMaker applications for authenticating the users.

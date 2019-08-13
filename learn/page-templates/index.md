@@ -1,6 +1,6 @@
 ---
 title: "Page Templates"
-date: "2016-11-25"
+id: "page-templates"
 ---
 
 are editable pages with the layout and content defined. These can be used by the developer as a foundation on which the application pages can be built. Here we will be talking about:

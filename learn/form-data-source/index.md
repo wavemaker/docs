@@ -1,6 +1,6 @@
 ---
 title: "Form - Data Source"
-date: "2016-12-29"
+id: "form-data-source"
 ---
 
 first step in configuring a Form is to define the data that needs to be displayed. This data can be in the form of a Variable.

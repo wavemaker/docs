@@ -1,6 +1,6 @@
 ---
 title: "Error Handling in a WaveMaker App"
-date: "2017-04-24"
+id: "error-handling-wavemaker-app"
 ---
 
 WaveMaker platform, by default, takes care of the error handling for all the network calls being made by Variables and Widgets within an App.

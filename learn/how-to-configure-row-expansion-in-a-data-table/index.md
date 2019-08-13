@@ -1,6 +1,6 @@
 ---
 title: "How to Configure Row Expansion in a Data Table"
-date: "2019-04-12"
+id: "how-to-configure-row-expansion-in-a-data-table"
 ---
 
 this article, you will learn how to configure row expansion on a data table. To use the  [expansion](/learn/app-development/widgets/datalive/datatable/row-expansion-data-table/) feature, you create a  [table](/learn/app-development/widgets/datalive/data-table/) and a [](/learn/app-development/ui-design/page-concepts/partial-pages/); you configure the partial to contain related information of the table item. A partial is a semi page which is a reusable object, and a data table is a data widget configured as a variable. You add page params in the partial page and bind it through the data table settings.

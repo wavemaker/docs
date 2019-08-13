@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Using DEB Installer with Private AMI"
-date: "2019-05-13"
+id: "wme-setup-using-deb-installer-private-ami"
 ---
 
 This document contains the prerequisites and the pre-setup instructions for WaveMaker Enterprise 10.0.2 installation on a VM using the DEB installer.

@@ -1,6 +1,6 @@
 ---
 title: "Data Modelling"
-date: "2016-10-20"
+id: "data-modelling"
 ---
 
   **model** describes the structure of the database: the tables, columns, keys, and relationships. The data model for imported databases can be viewed from within the app using  **Designer** DB Designer for a specific database can be accessed by selecting the  the **Databases** Resource option

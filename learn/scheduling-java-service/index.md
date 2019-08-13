@@ -1,6 +1,6 @@
 ---
 title: "Scheduling a Java Service"
-date: "2017-01-25"
+id: "scheduling-java-service"
 ---
 
 We will see how to schedule a Java Service to trigger at certain intervals. We will see:

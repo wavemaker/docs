@@ -1,6 +1,6 @@
 ---
 title: "List - Templates"
-date: "2016-11-08"
+id: "list-templates"
 ---
 
  be displayed using various templates:

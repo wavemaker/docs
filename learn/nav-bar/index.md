@@ -1,6 +1,6 @@
 ---
 title: "Nav Bar"
-date: "2016-08-05"
+id: "nav-bar"
 ---
 
 ![](../assets/laptop.png)  : Nav Bar is available only for web responsive apps.

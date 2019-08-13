@@ -1,6 +1,6 @@
 ---
 title: "Inspection Framework"
-date: "2019-03-27"
+id: "inspection-framework"
 ---
 
 framework is available since WaveMaker 10.0. Inspection Framework helps you locate errors, custom code or any unsupported methods in your project. For example, you can use this feature for the project migration process to identify unsupported methods. Using the inspection framework, you can perform tests and include this feature in your QA cycle to help you find code errors. Also, with this, you can point to the project’s custom code and edit and fix any code errors you may have. 

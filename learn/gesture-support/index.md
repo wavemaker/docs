@@ -1,6 +1,6 @@
 ---
 title: "Gesture SupportBeta"
-date: "2018-01-18"
+id: "gesture-support"
 ---
 
 In order to bring the Mobile app experience closer to that of Native apps, Gesture feature has been introduced. Using this the user can swipe to open/close Left panel, navigate to the next Tab and view the successive Carousel pane contents.

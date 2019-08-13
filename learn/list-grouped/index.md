@@ -1,6 +1,6 @@
 ---
 title: "Creating an Employee List grouped by City"
-date: "2016-11-27"
+id: "list-grouped"
 ---
 
 You can use the List widget to list data from a database. There are various flavors to the List. Here we will be using the **by property** to categorize the List Items based upon a field. We will be building a page to list Employee list grouped by city they live in.

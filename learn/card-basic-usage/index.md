@@ -1,6 +1,6 @@
 ---
 title: "Cards - Basic Usage"
-date: "2016-11-18"
+id: "card-basic-usage"
 ---
 
 ## Employee Cards

@@ -1,6 +1,6 @@
 ---
 title: "Live Form - Configurations"
-date: "2016-11-08"
+id: "liveform-configurations"
 ---
 
 main features of a Live Form are as follows:

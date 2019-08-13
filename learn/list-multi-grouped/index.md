@@ -1,6 +1,6 @@
 ---
 title: "Creating an Employee List grouped by Birth Month and City"
-date: "2017-01-18"
+id: "list-multi-grouped"
 ---
 
 **:** To display list grouped by multiple fields like City and State they reside in

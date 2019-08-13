@@ -1,6 +1,6 @@
 ---
 title: "Chart Widget"
-date: "2016-06-28"
+id: "chart-widget"
 ---
 
 "A picture is worth a thousand words".

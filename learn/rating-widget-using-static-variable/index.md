@@ -1,6 +1,6 @@
 ---
 title: "Building Rating Widget using Static Variable"
-date: "2016-12-01"
+id: "rating-widget-using-static-variable"
 ---
 
 Data for the Rating widget can come from a Variable - Static, Live etc.. In this example, we will see how to use a Static Variable as the data source for a Rating Widget. The process is same for all types of Variables.

@@ -1,6 +1,6 @@
 ---
 title: "Multiple Security Provider Implementation"
-date: "2017-03-10"
+id: "multiple-security-provider-implementation"
 ---
 
 The document provides an overview for implementing authentication for the application created in Studio using the Database as the security provider as well as using Google Oauth integration.

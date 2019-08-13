@@ -1,6 +1,6 @@
 ---
 title: "Passing Parameters to Pages"
-date: "2016-11-25"
+id: "passing-parameters-pages"
 ---
 
 We will see how page params can be used to pass data between pages. We will be using the Department and Employee datasets from the sample hrdb that has been imported.

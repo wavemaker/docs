@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide – Add external VCS Configuration"
-date: "2017-03-31"
+id: "wme-setup-guide-add-external-vcs-configuration"
 ---
 
 ###### Applicable to WaveMaker Studio alone

@@ -1,6 +1,6 @@
 ---
 title: "XSS antisamy policy configuration"
-date: "2017-02-13"
+id: "xss-antisamy-policy-configuration"
 ---
 
 is an HTML, CSS and JavaScript filter for Java that sanitizes user input based on a policy file. AntiSamy is not an HTML, CSS and JavaScript validator. It is merely a way to make sure HTML, CSS and JavaScript input strictly follows rules defined by a policy file.

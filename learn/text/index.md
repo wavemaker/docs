@@ -1,6 +1,6 @@
 ---
 title: "Text"
-date: "2016-09-12"
+id: "text"
 ---
 
 ** widget** is an editor widget that accepts single-line text input. You can:

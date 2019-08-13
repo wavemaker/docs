@@ -1,6 +1,6 @@
 ---
 title: "Handling Related Fields in a Live Form"
-date: "2016-12-01"
+id: "live-form-related-fields"
 ---
 
 Live Form deals with Database CRUD Variables with the underlying data source as Database. Database tables are usually related with each other through Foreign keys. We will see here how to handle data for these related fields within a table.

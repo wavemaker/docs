@@ -1,6 +1,6 @@
 ---
 title: "Using Widgets to represent Data Table Columns"
-date: "2016-11-27"
+id: "data-table-widget-representations"
 ---
 
 **:** How to represent Data Table data using appropriate widgets. We will customise the Data Table to display:

@@ -1,6 +1,6 @@
 ---
 title: "Export Data from Data Table"
-date: "2017-01-16"
+id: "export-data-data-table"
 ---
 
 : To export data from a Data Table to excel or csv format. We will be using the Export option of Data Table to export data from a Live/Service (Query) Variable.

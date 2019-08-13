@@ -1,6 +1,6 @@
 ---
 title: "Generated REST APIs (API Designer)"
-date: "2016-11-23"
+id: "generated-rest-apis-api-designer"
 ---
 
 the Java Service is saved, it is available as REST API in the API Designer under Core APIs. For each method in the Java controller, an API endpoint is generated. The Type of API is auto-assigned based upon the name of the method. In case the method takes input parameters, it is converted to a POST method. This can be modified by the API Designer.

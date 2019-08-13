@@ -1,6 +1,6 @@
 ---
 title: "OWASP"
-date: "2016-10-21"
+id: "owasp"
 ---
 
 [](https://www.owasp.org/index.php/About_OWASP)is an open community dedicated to enabling organizations to conceive, develop, acquire, operate, and maintain applications that can be trusted. The OWASP Top 10 provides a list of the [10 Most Critical Web Application Security Risks](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)

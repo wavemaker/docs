@@ -1,6 +1,6 @@
 ---
 title: "Building Rating Widget using Variable"
-date: "2018-10-31"
+id: "building-rating-widget-using-variable"
 ---
 
 Data for the Rating widget can come from a Variable - Model, Live etc.. In this example we will see how to use a Model Variable as the data source for a Rating Widget. The process is same for all types of Variables.

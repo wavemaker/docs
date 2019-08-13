@@ -1,6 +1,6 @@
 ---
 title: "Live Form - Actions"
-date: "2016-11-08"
+id: "liveform-actions"
 ---
 
 ### live form actions

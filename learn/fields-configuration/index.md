@@ -1,6 +1,6 @@
 ---
 title: "Live Form - Fields Configuration"
-date: "2016-11-08"
+id: "fields-configuration"
 ---
 
 ### form fields display options

@@ -1,6 +1,6 @@
 ---
 title: "Show Header Property in Data Table"
-date: "2019-06-21"
+id: "show-header-data-table"
 ---
 
 Show Header is a Data Table property. It determines the visibility of the column header captions.

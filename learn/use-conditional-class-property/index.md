@@ -1,6 +1,6 @@
 ---
 title: "How to use Conditional Class Property"
-date: "2017-04-19"
+id: "use-conditional-class-property"
 ---
 
 **Class** property allows you to bind an expression which will be evaluated and appended as classes to a widget.

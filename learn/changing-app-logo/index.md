@@ -1,6 +1,6 @@
 ---
 title: "Changing App Logo"
-date: "2017-01-09"
+id: "changing-app-logo"
 ---
 
 App Logo is used in multiple places like:

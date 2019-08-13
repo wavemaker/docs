@@ -1,6 +1,6 @@
 ---
 title: "Security Variables"
-date: "2016-10-21"
+id: "security-variables"
 ---
 
 Authentication is enabled for an app, one variable and two actions are created by default and these are used in conjunction with the default _page and logout button_ (in topnav) given by WaveMaker. If you decide to design your own login page and define the login and logout behavior, you can still use these variables to handle the login and log out behavior, by appropriate bindings.

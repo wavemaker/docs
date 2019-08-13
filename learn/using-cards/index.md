@@ -1,6 +1,6 @@
 ---
 title: "Using Cards"
-date: "2016-07-27"
+id: "using-cards"
 ---
 
  a view of items that are rendered responsively across a wide range of mobile devices and screen sizes.

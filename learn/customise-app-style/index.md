@@ -1,6 +1,6 @@
 ---
 title: "Customise App Style"
-date: "2017-01-09"
+id: "customise-app-style"
 ---
 
 The theme applied to an app defines the styling attributes of various Page Components. You can

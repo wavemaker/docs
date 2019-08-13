@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide - Custom Apps Capacity"
-date: "2017-03-31"
+id: "wme-setup-guide-custom-apps-capacity"
 ---
 
 ###### Applicable to WaveMaker Cloud alone

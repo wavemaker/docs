@@ -1,6 +1,6 @@
 ---
 title: "Request-Response Processing for REST Services"
-date: "2018-11-02"
+id: "request-response-processing-rest-services"
 ---
 
 This document will go through the steps in adding Request-Response processing for REST services integrated with a WaveMaker application.

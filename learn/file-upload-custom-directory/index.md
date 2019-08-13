@@ -1,6 +1,6 @@
 ---
 title: "File Upload - Custom Directory"
-date: "2017-02-07"
+id: "file-upload-custom-directory"
 ---
 
 This section showcases using FileUpload widget to :

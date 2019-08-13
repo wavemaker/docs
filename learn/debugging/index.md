@@ -1,6 +1,6 @@
 ---
 title: "Debugging"
-date: "2016-12-05"
+id: "debugging"
 ---
 
 times you might get stuck with a situation wherein your app does not respond the way you intended it to or throws an error that is particularly difficult to solve. In such cases debugging comes in handy. There are two ways to debug a WaveMaker app:

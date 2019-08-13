@@ -1,6 +1,6 @@
 ---
 title: "Accessing Elements via JavaScript"
-date: "2016-06-20"
+id: "accessing-elements-via-javascript"
 ---
 
 in WaveMaker application consists of Markup, Script & CSS files. In this document, we will go through the various functions/methods that are available in the script file. We will see how these methods can be created and modified.

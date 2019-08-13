@@ -1,6 +1,6 @@
 ---
 title: "Live Form - Use Cases"
-date: "2016-11-08"
+id: "liveform-use-cases"
 ---
 
 - [Form Basic Usage](/learn/app-development/widgets/datalive/live-form/live-form-basic-usage/)

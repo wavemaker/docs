@@ -1,6 +1,6 @@
 ---
 title: "Pre-Post Processing for Database Service APIs"
-date: "2017-03-09"
+id: "pre-post-processing-db-service-apis"
 ---
 
 This document will go through the steps in adding Pre and Post processing for generated APIs in an imported Database service.
