@@ -1,6 +1,6 @@
 ---
 title: "Setting Swipe Gestures on a List Widget"
-id: "setting-swipe-gestures-list-widget"
+id: ""
 ---
 
 In the Gmail mobile app, swipe left or right on any item on the email list helps archive the email. Similar kind of swipe gestures support is provided on List Widget in WaveMaker.

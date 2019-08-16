@@ -1,6 +1,6 @@
 ---
 title: "List - Master Detail"
-id: "list-master-detail"
+id: ""
 ---
 
 ## \-Detail List

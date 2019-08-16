@@ -1,6 +1,6 @@
 ---
 title: "Mobile App using Bar code"
-id: "mobile-app-using-bar-code"
+id: ""
 ---
 
 to create a **mobile application** that will scan an employee id barcode and display the corresponding _Profile_ We will be using the sample hrdb shipped with WaveMaker.

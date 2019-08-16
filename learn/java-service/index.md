@@ -1,6 +1,6 @@
 ---
 title: "Java Service"
-id: "java-service"
+id: ""
 ---
 
 Services allow app developers to write custom business logic or enable integration with 3rd party libraries and tools and are deployed on the Server side. For every Java Service created in WaveMaker, its REST API contract is auto-generated and is ready for integration with front-end layer (web or mobile).

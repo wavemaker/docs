@@ -1,6 +1,6 @@
 ---
 title: "Slider"
-id: "slider"
+id: ""
 ---
 
 are often the UI control of choice for letting users select a value or range from a fixed set of options.  are good to use while:

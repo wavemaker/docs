@@ -1,6 +1,6 @@
 ---
 title: "Progress Bar"
-id: "progress-bar"
+id: ""
 ---
 
 **Bar** widget can be used to show the status of any given event. It can be used to r the completion progress of a task. Progress may be either indeterminate — meaning it is unclear how much work remains before the task is complete (e.g., the task is waiting for a response from a remote host) — or a numeric value between 0 and a given maximum, explicitly specifying the fraction of work that has so far been completed

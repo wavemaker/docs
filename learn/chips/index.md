@@ -1,6 +1,6 @@
 ---
 title: "Chips"
-id: "chips"
+id: ""
 ---
 
 represent complex entities in small blocks, such as a contact. Contact chips may represent contact information in a compact way. Chips can be used for various types of entities, including free-form text, predefined text, rules, or contacts. Chips may also contain icons.

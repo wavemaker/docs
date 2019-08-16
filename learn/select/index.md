@@ -1,6 +1,6 @@
 ---
 title: "Select"
-id: "select"
+id: ""
 ---
 
 Select widget provides a way for users to select an item from a drop-down list of choices. The selection can be captured through the property.

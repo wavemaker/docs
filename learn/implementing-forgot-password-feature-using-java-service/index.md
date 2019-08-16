@@ -1,6 +1,6 @@
 ---
 title: "Implementing Forgot Password feature using Java Service"
-id: "implementing-forgot-password-feature-using-java-service"
+id: ""
 ---
 
 We will see how to implement Forgot Password feature using Java Service for Sending Email with Default password.

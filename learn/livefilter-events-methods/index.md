@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Events & Methods"
-id: "livefilter-events-methods"
+id: ""
 ---
 
 Live Filter behavior can be customized with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..

@@ -1,6 +1,6 @@
 ---
 title: "Mobile Integrations - Amazon Mobile Analytics"
-id: "mobile-integrations-amazon-mobile-analytics"
+id: ""
 ---
 
 Mobile Analytics(AMA) is a service provided under the aegis of the AWS Mobile Services.  AMA gives complete details about the users, revenues, subscriptions, in-app behavior and more such details and allows you to view the charts in the mobile analytics console.  In this post, we will let you know how to integrate your WaveMaker mobile application with Amazon Mobile Analytics service and view all the statistics regarding your mobile application.

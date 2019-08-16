@@ -1,6 +1,6 @@
 ---
 title: "Nav - Basic Usage"
-id: "nav-basic-usage"
+id: ""
 ---
 
 In this post, we will walk through the steps to create a simple navigation, with icons and links to pages.

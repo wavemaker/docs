@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Basic Usage"
-id: "live-filter-basic-usage"
+id: ""
 ---
 
 add filter capabilities to your app, drag-and-drop the  **Filter** widget and bind the result from the Live Filter to the desired widget like Data Table or List. [![](../assets/lftr_sel.png)](../assets/lftr_sel.png)

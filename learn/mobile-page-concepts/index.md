@@ -1,6 +1,6 @@
 ---
 title: "Mobile Page Concepts"
-id: "mobile-page-concepts"
+id: ""
 ---
 
 mentioned in [Design Overview](/learn/app-development/ui-design/design-overview/), a WaveMaker app is a collection of pages. Same is true for Mobile Apps. Each page can be designed by selecting a proper layout and arranging widgets within it. The app flow can be achieved using page navigation and actions to trigger this navigation.

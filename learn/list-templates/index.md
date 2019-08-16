@@ -1,6 +1,6 @@
 ---
 title: "List - Templates"
-id: "list-templates"
+id: ""
 ---
 
  be displayed using various templates:

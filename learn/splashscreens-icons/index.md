@@ -1,6 +1,6 @@
 ---
 title: "Setting Splashscreen Images and App Icons"
-id: "splashscreens-icons"
+id: ""
 ---
 
 **screen** is a graphical control element, that usually appears while the app is launching. Icons and splashes are usually platform specific.

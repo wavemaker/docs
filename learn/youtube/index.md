@@ -1,6 +1,6 @@
 ---
 title: "Youtube"
-id: "youtube"
+id: ""
 ---
 
 prefab ships with WaveMaker and it connects with Youtube to display a video on the web page.

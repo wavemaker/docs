@@ -1,6 +1,6 @@
 ---
 title: "SAML Integration"
-id: "saml-integration"
+id: ""
 ---
 
 **Assertion Markup Language (SAML)** is an XML-based open standard for exchanging authentication and authorization data between different parties. The SAML exchanges are usually between

@@ -1,6 +1,6 @@
 ---
 title: "Using Filter Criteria for a Database CRUD Variable"
-id: "using-filter-criteria-database-crud-variable"
+id: ""
 ---
 
 : To filter the rows fetched from a database table using the Filter Criteria option of Database CRUD Variable (of 'read' type).

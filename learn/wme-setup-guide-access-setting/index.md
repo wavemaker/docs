@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide – Setting up"
-id: "wme-setup-guide-access-setting"
+id: ""
 ---
 
 This section talks about initializing and setting up the WME. This step comes after you have [ Instances](/learn/installation/wme-setup-guide-launch-initialize/)

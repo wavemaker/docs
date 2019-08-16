@@ -1,6 +1,6 @@
 ---
 title: "Platform Overview"
-id: "platform-overview"
+id: ""
 ---
 
 # Web Apps

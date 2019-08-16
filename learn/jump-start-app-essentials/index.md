@@ -1,6 +1,6 @@
 ---
 title: "Jump Start - WaveMaker App Building Essentials"
-id: "jump-start-app-essentials"
+id: ""
 ---
 
 In this Jump Start guide, you will be learning the concepts behind WaveMaker and apply them to building an app.

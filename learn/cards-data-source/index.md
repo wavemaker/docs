@@ -1,6 +1,6 @@
 ---
 title: "Cards - Data Source"
-id: "cards-data-source"
+id: ""
 ---
 
 first step in configuring a card is to define the data that needs to be displayed. This data can be in the form of a Variable or another Widget.

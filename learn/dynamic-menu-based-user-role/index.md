@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Menu based on the User Role"
-id: "dynamic-menu-based-user-role"
+id: ""
 ---
 
 **Statement**: To create a dynamic menu based on the roles of the logged in user.Dropdown Menu uses the property User Role to automatically build the Menu Items as per the logged-in User role when bound to a Database with the User-Role mapping established.

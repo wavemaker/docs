@@ -1,6 +1,6 @@
 ---
 title: "Artifacts Repository"
-id: "artifacts-repository"
+id: ""
 ---
 
 **Repository** is a collection of artifacts or resources used across application development lifecycle in WaveMaker platform. It allows for easy exploration and discovery of Artifacts available to the developer network. These artifacts include:

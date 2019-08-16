@@ -1,6 +1,6 @@
 ---
 title: "Design Overview"
-id: "design-overview"
+id: ""
 ---
 
 # App UI Design

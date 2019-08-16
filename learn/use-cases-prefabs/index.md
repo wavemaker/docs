@@ -1,6 +1,6 @@
 ---
 title: "Use Cases - Prefabs"
-id: "use-cases-prefabs"
+id: ""
 ---
 
 The following Use Cases explain in detail how to create Prefabs:

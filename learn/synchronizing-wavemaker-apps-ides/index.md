@@ -1,6 +1,6 @@
 ---
 title: "Synchronizing WaveMaker Apps with IDEs Beta"
-id: "synchronizing-wavemaker-apps-ides"
+id: ""
 ---
 
 In scenarios where you want to work on WaveMaker apps and use IDE for editing Java code, synchronizing the two can be a challenge.

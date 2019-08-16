@@ -1,6 +1,6 @@
 ---
 title: "Manage Deployed Apps"
-id: "manage-deployed-apps"
+id: ""
 ---
 
   **Portal** is a place for you as the project owner to manage the deployed apps. The one-click deployment from Studio hosts the app on WaveMaker Demo Cloud using the [ Profile](http://[supsystic-show-popup id=109]) Apps Portal will enable the project owner to configure phases and push the apps from one phase to the next. From this portal you can:

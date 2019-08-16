@@ -1,6 +1,6 @@
 ---
 title: "Download JDBC Driver jar"
-id: "download-jdbc-driver-jar"
+id: ""
 ---
 
 Steps to download the JDBC Driver jar for SQL Server

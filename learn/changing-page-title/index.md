@@ -1,6 +1,6 @@
 ---
 title: "Changing Page Title"
-id: "changing-page-title"
+id: ""
 ---
 
 By default, the Page Title in an app is set the to the name given to the Page at the time of Page Creation. You will see it once you Remove Toolbar and come out of the Preview mode. [![](../assets/design_pagetitle.png)](../assets/design_pagetitle.png)

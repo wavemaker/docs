@@ -1,6 +1,6 @@
 ---
 title: "OAuth Prefabs"
-id: "oauth-prefabs"
+id: ""
 ---
 
 2.0 is an authorization framework, which is updated after the original OAuth protocol created in 2006. OAuth 2.0 focuses on client developer simplicity by providing secured delegated access for web and desktop applications.

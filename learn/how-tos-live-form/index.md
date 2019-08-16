@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Live Form"
-id: "how-tos-live-form"
+id: ""
 ---
 
 Tabbed Live FormWe will see how to build the following tabbed Live Form: [![form_tab_run1](../assets/form_tab_run1-1024x640.png)](../assets/form_tab_run1.png) [![form_tab_run2](../assets/form_tab_run2-1024x640.png)](../assets/form_tab_run2.png)

@@ -1,6 +1,6 @@
 ---
 title: "Panel"
-id: "panel"
+id: ""
 ---
 
 **panel** be used to group a set of widgets together. It has a collapsible title bar and you can add multiple panels and any number of multiple panes can be open at any given point of time.

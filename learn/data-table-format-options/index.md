@@ -1,6 +1,6 @@
 ---
 title: "Formatting Data Table Columns"
-id: "data-table-format-options"
+id: ""
 ---
 
 : To change the display format of columns in a Data Table. We will customise the Data Table to display:

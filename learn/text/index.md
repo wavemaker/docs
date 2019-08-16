@@ -1,6 +1,6 @@
 ---
 title: "Text"
-id: "text"
+id: ""
 ---
 
 ** widget** is an editor widget that accepts single-line text input. You can:

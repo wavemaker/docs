@@ -1,6 +1,6 @@
 ---
 title: "Login Action"
-id: "login-action"
+id: ""
 ---
 
 purpose of **Action ** to authenticate a user at the server. A Login Action is created automatically when you [Security](http://[supsystic-show-popup id=111]) in your application. Login Action makes a request to the server where the authentication process takes place, based on the selected Security Provider. On successful login, the user is redirected to the Landing page configured against the user role.

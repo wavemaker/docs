@@ -1,6 +1,6 @@
 ---
 title: "Switching between Offline and Online Mode"
-id: "switching-offline-online-mode"
+id: ""
 ---
 
 ##### 9.2 release

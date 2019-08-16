@@ -1,6 +1,6 @@
 ---
 title: "Color Picker"
-id: "color-picker"
+id: ""
 ---
 
 ![](../assets/laptop.png)  : Color Picker is available only for web responsive apps.

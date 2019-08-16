@@ -1,6 +1,6 @@
 ---
 title: "Using Wizard for Cumulative Data Entry in a Live Form"
-id: "using-wizard-cumulative-data-entry-live-form"
+id: ""
 ---
 
 We will see how Live form fields can be distributed over multiple wizard steps, with single save in the last step.

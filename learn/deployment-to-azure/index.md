@@ -1,6 +1,6 @@
 ---
 title: "Configuring for Azure Deployment"
-id: "deployment-to-azure"
+id: ""
 ---
 
 WaveMaker allows you to deploy your app to your Azure cloud account for Live (and Stage for WME users) phase. [more about App Phases from here](/learn/app-development/deployment/release-management/)

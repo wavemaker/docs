@@ -1,6 +1,6 @@
 ---
 title: "Media List"
-id: "media-list"
+id: ""
 ---
 
 ![](../assets/phone.png)  : Media List is available only for mobile apps.

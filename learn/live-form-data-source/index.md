@@ -1,6 +1,6 @@
 ---
 title: "Live Form - Data Source"
-id: "live-form-data-source"
+id: ""
 ---
 
 first step in configuring a Live Form is to define the data that needs to be displayed. This data can be in the form of a Variable or another Widget.

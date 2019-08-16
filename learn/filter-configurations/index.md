@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Configurations"
-id: "filter-configurations"
+id: ""
 ---
 
 ### Properties

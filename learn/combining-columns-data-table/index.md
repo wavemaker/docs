@@ -1,6 +1,6 @@
 ---
 title: "Combining Columns in Data Table"
-id: "combining-columns-data-table"
+id: ""
 ---
 
 : You can combine two or more columns to be displayed in a single column in a Data Table. **Case**: From the Department table, display two half-yearly budget figures by adding the values for first two and the second two quarters. We will be using the hrdb that is shipped with WaveMaker.

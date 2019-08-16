@@ -1,6 +1,6 @@
 ---
 title: "How to Get Validation Messages from a Form"
-id: "get-validation-messages-form"
+id: ""
 ---
 
 this article, you will learn how the ValidationMessages are exposed on a form. ValidationMessages are a list of objects which provides the validation details of the invalid field; this is an outbound property of the form. 

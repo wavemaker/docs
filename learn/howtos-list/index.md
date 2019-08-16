@@ -1,6 +1,6 @@
 ---
 title: "How Tos: List"
-id: "howtos-list"
+id: ""
 ---
 
 Custom ListThere are various ways to customise your List. We will show an example here - of having a **Table within List** Going with the example of sample database, we will see how to list the department details [![ll_run1](../assets/ll_run1-1024x293.png)](../assets/ll_run1.png) and on click of a department to display the employees of that department in a table format. [![ll_run2](../assets/ll_run2-1024x435.png)](../assets/ll_run2.png)

@@ -1,6 +1,6 @@
 ---
 title: "Building an Interactive Rating Widget"
-id: "rating-widget-interactive"
+id: ""
 ---
 
 You can change the Rating widget style at the runtime, using the  event. Using the example from the [section with Variable data](/learn/how-tos/rating-widget-using-variable/), here we will see how.

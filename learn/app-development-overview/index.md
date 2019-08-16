@@ -1,6 +1,6 @@
 ---
 title: "App Development - Overview"
-id: "app-development-overview"
+id: ""
 ---
 
 A typical **application** has two parts - Software that works on the device you use or **Interface** and **/remote Server**, that provides back-end or data services. [![appbuilding_basic](../assets/appbuilding_basic.png)](../assets/appbuilding_basic.png)

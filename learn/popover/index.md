@@ -1,6 +1,6 @@
 ---
 title: "Popover"
-id: "popover"
+id: ""
 ---
 
 **Widget** can be used to display a list of items on click event. An example of this would be the Notifications displayed on the Facebook page.

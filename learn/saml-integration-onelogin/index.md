@@ -1,6 +1,6 @@
 ---
 title: "SAML Integration - OneLogin"
-id: "saml-integration-onelogin"
+id: ""
 ---
 
 [™](https://www.onelogin.com/) is a cloud-based IAM vendor providing users a secure SSO portal to access all their cloud and on-prem applications from any device.

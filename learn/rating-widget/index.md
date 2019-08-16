@@ -1,6 +1,6 @@
 ---
 title: "Rating"
-id: "rating-widget"
+id: ""
 ---
 
 widget can be used to display or elicit information about a quantitative or a qualitative attribute in the form of a set of categories.

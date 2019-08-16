@@ -1,6 +1,6 @@
 ---
 title: "SSL Encryption"
-id: "ssl-encryption"
+id: ""
 ---
 
 WaveMaker application can be accessed through protocol to ensure higher level of security in place.

@@ -1,6 +1,6 @@
 ---
 title: "Date,  Time and  Datetime"
-id: "date-time-datetime"
+id: ""
 ---
 
 **, Time and Datetime** widgets can be used to capture the date and time-related data from the user. Drag and drop of these widgets result in a composite widget along with a label.

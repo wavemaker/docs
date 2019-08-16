@@ -1,6 +1,6 @@
 ---
 title: "Login Configuration"
-id: "login-configuration"
+id: ""
 ---
 
 **Configuration** defines the login behavior once authentication is enabled.

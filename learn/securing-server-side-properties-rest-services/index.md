@@ -1,6 +1,6 @@
 ---
 title: "Securing Server Side Properties in REST Services"
-id: "securing-server-side-properties-rest-services"
+id: ""
 ---
 
 working with REST Services, it is imperative to secure your API keys and passwords and ensure your app sensitive information hides from the UI and network calls. The following are three types of Properties for Header and Query params when configuring REST Services; they are:

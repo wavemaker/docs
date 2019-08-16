@@ -1,6 +1,6 @@
 ---
 title: "How to generate PDF File using Jasper Reports"
-id: "generate-pdf-file-using-jasper-reports"
+id: ""
 ---
 
 To generate PDF file using Jasper Reports, d needs to be consumed from an external REST service. This data should be made available as a downloadable PDF file, which is generated internally using Jasper.

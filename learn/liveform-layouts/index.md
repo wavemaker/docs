@@ -1,6 +1,6 @@
 ---
 title: "Live Form - Layouts"
-id: "liveform-layouts"
+id: ""
 ---
 
 1. Form can be _1-column_, _2-column_ or _3-column_

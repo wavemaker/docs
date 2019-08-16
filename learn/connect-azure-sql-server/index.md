@@ -1,6 +1,6 @@
 ---
 title: "Connect To Azure SQL Server"
-id: "connect-azure-sql-server"
+id: ""
 ---
 
 - import/connect to SQL Server running in Azure Cloud, you need to have the database driver jar named sqljdbc4.jar available with you. [in download](/learn/app-development/services/database-services/download-jdbc-driver-jar/)

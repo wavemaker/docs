@@ -1,6 +1,6 @@
 ---
 title: "Debugging Mobile Apps"
-id: "debugging-mobile-apps"
+id: ""
 ---
 
 uses Cordova platform to build hybrid mobile apps. While Cordova handles the native JavaScript API binding, WaveMaker handles the core app logic and UI. A mobile app built using WaveMaker runs in a web view (equivalent to a web browser). How to debug the web view layer is explained below.

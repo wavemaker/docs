@@ -1,6 +1,6 @@
 ---
 title: "How Tos: UI Layouts"
-id: "howtos-ui"
+id: ""
 ---
 
 ## Pages

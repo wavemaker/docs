@@ -1,6 +1,6 @@
 ---
 title: "Mobile Tabbar"
-id: "mobile-tabbar"
+id: ""
 ---
 
 Tabbar provides a form of navigation between the pages. It comes as a part of page layout and is always at the bottom of the page.

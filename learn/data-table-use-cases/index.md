@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Use Cases"
-id: "data-table-use-cases"
+id: ""
 ---
 
 - [Table Usage](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage/)

@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker App Development FAQs"
-id: "wavemaker-app-development-faqs"
+id: ""
 ---
 
 Here we address some of the most pertinent questions regarding App Development using WaveMaker Platform.   What is a WaveMaker App? **App** can either be a web responsive application or a hybrid mobile application built using the low-code or rapid app development approach. WaveMaker App is built as a single HTML Web App, with clear separation of User Interface (UI) layer and the backend services layer using REST APIs. The UI layer is built using the visual RAD approach, with drag-n-drop of widgets onto the Canvas. Later, these widgets are integrated with the backend services, to fetch and update data. [![](../assets/3layered_arch.png)](../assets/3layered_arch.png) WaveMaker App is composed of 3 layers:

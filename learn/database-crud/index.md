@@ -1,6 +1,6 @@
 ---
 title: "Variable for Database CRUD"
-id: "database-crud"
+id: ""
 ---
 
 **CRUD Variable** connects to an individual database entity through auto generated CRUD APIs. It contains the values from the specified database table and controls such as Live Form require a Database CRUD Variable as input.

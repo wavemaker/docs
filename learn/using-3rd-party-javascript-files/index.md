@@ -1,6 +1,6 @@
 ---
 title: "Using 3rd party JavaScript files"
-id: "using-3rd-party-javascript-files"
+id: ""
 ---
 
 In this section, we will look at the usage of **JavaScript and CSS** files. The basic steps would involve:

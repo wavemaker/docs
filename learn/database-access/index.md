@@ -1,6 +1,6 @@
 ---
 title: "Database Access"
-id: "database-access"
+id: ""
 ---
 
 Once you have integrated a database into your application, you need a way to access the data within the database and use it from within the app. There are many ways to achieve this:

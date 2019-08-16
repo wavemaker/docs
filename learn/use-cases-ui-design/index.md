@@ -1,6 +1,6 @@
 ---
 title: "Use Cases - UI Design"
-id: "use-cases-ui-design"
+id: ""
 ---
 
 workflow is defined by navigation and interaction between various pages that constitute an app. Following are the ways to achieve the same:

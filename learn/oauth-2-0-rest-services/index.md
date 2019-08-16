@@ -1,6 +1,6 @@
 ---
 title: "REST Services using OAuth 2.0"
-id: "oauth-2-0-rest-services"
+id: ""
 ---
 
 **2** is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub, etc.. OAuth 2 focuses on client developer simplicity by providing secured delegated access for web and desktop applications. It works by delegating user authentication to the service that hosts the user account and authorizing third-party applications to access the user account.

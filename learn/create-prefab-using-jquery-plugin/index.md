@@ -1,6 +1,6 @@
 ---
 title: "Create Prefab using JQuery Plugin"
-id: "create-prefab-using-jquery-plugin"
+id: ""
 ---
 
 This post walks you through the creation and usage of a Prefab using JQuery Plugin. This is to showcase the use of Events and Methods in a Prefab.

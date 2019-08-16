@@ -1,6 +1,6 @@
 ---
 title: "Textarea"
-id: "textarea"
+id: ""
 ---
 
 **widget** represents a multi-line plain-text editing control. It can be used in a web application for adding comments and feedback forms as a plain text editor.

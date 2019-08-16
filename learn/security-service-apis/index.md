@@ -1,6 +1,6 @@
 ---
 title: "Security Service APIs"
-id: "security-service-apis"
+id: ""
 ---
 
 you [Security](http://[supsystic-show-popup id=111]) for your application, the Security Services are created. You can view the various methods and their functionality from API Designer.

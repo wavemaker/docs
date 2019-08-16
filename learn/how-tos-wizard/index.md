@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Wizard"
-id: "how-tos-wizard"
+id: ""
 ---
 
 basic usage scenario is used to go through the wizard interface step by step trying to build a Registration Form. A **Registration Form** that can be used by any web sites to get their users registered to their sites for example accessing trial versions of products, or for buying goods online etc. In this scenario, the user is asked to register when they need to access some resources that needs registration. To register, user is provided a Registration form for creating username and password for that user. Once the user has given the inputs, the user navigates to a page where the user has to **personal information** and if the user is employed the **data** also has to be supplied by the user. Once the required data is provided by the user the user is registered and is informed of the success of registration. The scenario assumes that you will be creating the required data model for taking the login data (Person Entity), profile (Profile Entity) and professional (Profession Entity) data inputs from the user. [![WZ_usage_dm](../assets/WZ_usage_dm.png)](../assets/WZ_usage_dm.png)

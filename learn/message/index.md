@@ -1,6 +1,6 @@
 ---
 title: "Message"
-id: "message"
+id: ""
 ---
 
  widget helps to display a custom message on the page. Based on the message type - , , , , \- the message look and feel changes. For instance, setting the message type to shows an error icon alongside the message text, which is displayed in red.

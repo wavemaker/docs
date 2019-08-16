@@ -1,6 +1,6 @@
 ---
 title: "List - Data Source"
-id: "list-data-source"
+id: ""
 ---
 
 first step in configuring a list is to define the data that needs to be displayed. This data can be in the form of Services or Widget or Existing Variable.

@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide – Setting up - old"
-id: "wme-setup-guide-setting-old"
+id: ""
 ---
 
 This section talks about Accessing and Setting up the WME. This step comes after you have  [and Initialized WME](/learn/installation/wme-setup-guide-launch-initialize/)

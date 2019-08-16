@@ -1,6 +1,6 @@
 ---
 title: "Prefabs - Custom Widgets & Extensions"
-id: "custom-widgets"
+id: ""
 ---
 
 is a reusable, distributable component of an application, which can be tested independently. It can interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease.

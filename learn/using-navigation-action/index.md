@@ -1,6 +1,6 @@
 ---
 title: "Using Navigation Action"
-id: "using-navigation-action"
+id: ""
 ---
 
 Showcases:

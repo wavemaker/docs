@@ -1,6 +1,6 @@
 ---
 title: "Export Data from Data Table"
-id: "export-data-data-table-2"
+id: ""
 ---
 
 ##### 9.4 release

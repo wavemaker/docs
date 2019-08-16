@@ -1,6 +1,6 @@
 ---
 title: "Building an Editable List"
-id: "building-editable-list"
+id: ""
 ---
 
 : To make List editable.

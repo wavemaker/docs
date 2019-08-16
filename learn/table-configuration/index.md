@@ -1,6 +1,6 @@
 ---
 title: "Data Table Configuration"
-id: "table-configuration"
+id: ""
 ---
 
 You can access the following features from the **Settings** property of a Data Table.

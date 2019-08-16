@@ -1,6 +1,6 @@
 ---
 title: "Building a Multiple Selection Live Filter"
-id: "live-filter-multiple-values"
+id: ""
 ---
 
 Live Filter can be applied for multiple values of the filter field, i.e. list employees from New York and Chicago cities. This can be achieved using the Checkboxset or Select widget to represent the Filter fields from the Advanced Settings property of Live Filter.

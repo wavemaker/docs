@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Studio 7.x Release Notes"
-id: "wavemaker-studio-7-x-release-notes"
+id: ""
 ---
 
 ## 7.8.0 Release Date: 3rd Sept 2015

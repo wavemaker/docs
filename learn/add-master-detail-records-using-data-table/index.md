@@ -1,6 +1,6 @@
 ---
 title: "Add Master-Detail records using Data Table"
-id: "add-master-detail-records-using-data-table"
+id: ""
 ---
 
 : To implement CRUD operations on an Master-Detail database schema. We will be adding records in a  Master-Detail scenario using Data Table bound to Live Variable.

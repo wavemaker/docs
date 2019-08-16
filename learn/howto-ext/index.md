@@ -1,6 +1,6 @@
 ---
 title: "How Tos: External Resources"
-id: "howto-ext"
+id: ""
 ---
 
 External Resource Files

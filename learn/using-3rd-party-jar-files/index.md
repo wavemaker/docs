@@ -1,6 +1,6 @@
 ---
 title: "Using 3rd party jar files"
-id: "using-3rd-party-jar-files"
+id: ""
 ---
 
 You can import external JAR files and use them in your apps, just like how you would use a Java Service written in your app. Following are the steps to incorporate an external jar file:

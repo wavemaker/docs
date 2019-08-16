@@ -1,6 +1,6 @@
 ---
 title: "FileUpload - Use Cases"
-id: "fileupload-use-cases"
+id: ""
 ---
 
 widget can be used to let users upload files to your apps. WaveMaker  widget generates a **Service** to enable additional file processing functionality. It exposes few methods like , , and

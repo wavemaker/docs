@@ -1,6 +1,6 @@
 ---
 title: "Anchor"
-id: "anchor"
+id: ""
 ---
 
  widget refers to the visible, clickable words used to link one web page to another.

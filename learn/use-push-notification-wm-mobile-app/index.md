@@ -1,6 +1,6 @@
 ---
 title: "How to use Push Notification in WM Mobile App"
-id: "use-push-notification-wm-mobile-app"
+id: ""
 ---
 
 Assume, an app is used to share tasks across users in a team. A user is assigned a task which has to be completed by 5:00PM. Right now, the time is 4:30 PM and task is not completed. App wants to send an auto-reminder to the user about the task. But, app is not opened on user’s mobile device. So, app has to use third party services to send sms or email. In addition to these notification channels, a mobile operating system also provides a Push notification service. Using this service an app can send messages to the user even when the app is not in foreground. Operating system maintains an http service to which all notifications have to be posted. This service acts as a post office. Each mobile app has to register with this service and should obtain a registration id. If any notification addressed to the registration id is received, then service will simply forward them to respective mobile device. Registration id is unique for each app on device. In iOS, this service is called Apple Push Notification service (APNS). In Android, this service is called Firebase Messaging Service.

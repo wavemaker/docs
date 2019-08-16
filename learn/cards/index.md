@@ -1,6 +1,6 @@
 ---
 title: "Cards"
-id: "cards"
+id: ""
 ---
 
 view of items that are rendered responsively across a wide range of mobile devices and screen sizes. Cards are the popular UI elements used in the implementation of Google Now; item details on online shopping websites and many more modern mobile and web apps.

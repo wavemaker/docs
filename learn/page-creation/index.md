@@ -1,6 +1,6 @@
 ---
 title: "Page Creation"
-id: "page-creation"
+id: ""
 ---
 
 When you create an app within WaveMaker, by default the Main Page is generated. In the process of app development, you will be adding pages and linking them as per the app workflow.

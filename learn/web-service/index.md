@@ -1,6 +1,6 @@
 ---
 title: "Variable for Web Service"
-id: "web-service"
+id: ""
 ---
 
 every service imported into the app, APIs exposed by the service can be accessed. A Variable needs to be created to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.

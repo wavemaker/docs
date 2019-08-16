@@ -1,6 +1,6 @@
 ---
 title: "Localization in WaveMaker Apps"
-id: "localization-wavemaker-apps"
+id: ""
 ---
 
 App Localization is the process of rendering your app in multiple languages. WaveMaker allows you to create a dictionary of localized messages so that users can change the language of the application to experience the application in their language. Here we will see a sample for how the same can be accomplished.

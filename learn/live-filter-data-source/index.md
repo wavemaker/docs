@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Data Source"
-id: "live-filter-data-source"
+id: ""
 ---
 
 first step in configuring a Live Filter is to define the data that needs to be filtered upon. This data can be in the form of a Variable or another Widget.

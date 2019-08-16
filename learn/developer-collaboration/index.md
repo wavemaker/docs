@@ -1,6 +1,6 @@
 ---
 title: "Developer Collaboration"
-id: "developer-collaboration"
+id: ""
 ---
 
 Developer Collaboration includes two steps:

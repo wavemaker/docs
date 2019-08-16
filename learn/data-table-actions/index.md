@@ -1,6 +1,6 @@
 ---
 title: "Customising Data Table Row Action"
-id: "data-table-actions"
+id: ""
 ---
 
 : Click of a button in a Data Table row should display a message

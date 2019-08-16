@@ -1,6 +1,6 @@
 ---
 title: "Offline Data Support - Implementation"
-id: "offline-data-support-implementation"
+id: ""
 ---
 
 is providing **data support** as an out-of-the-box feature so that developers can enable offline support to existing components. For an overview of this feature, [here](/learn/hybrid-mobile/offline-data-support/)

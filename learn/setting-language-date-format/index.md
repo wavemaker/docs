@@ -1,6 +1,6 @@
 ---
 title: "Setting Language and Date Format"
-id: "setting-language-date-format"
+id: ""
 ---
 
 You can set the **Page**, **Language** and **Format** for _and time fields_ in the app from the Project Settings dialog. **Settings** can be accessed from project configurations of the [Workspace](http://[supsystic-show-popup id=107])

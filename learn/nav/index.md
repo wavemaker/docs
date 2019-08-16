@@ -1,6 +1,6 @@
 ---
 title: "Nav"
-id: "nav"
+id: ""
 ---
 
 element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.

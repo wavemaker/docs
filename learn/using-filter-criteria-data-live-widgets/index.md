@@ -1,6 +1,6 @@
 ---
 title: "Using Filter Criteria for a Data and Live Widgets"
-id: "using-filter-criteria-data-live-widgets"
+id: ""
 ---
 
 : To apply filter criteria on referenced entities in Data and Live Widgets.

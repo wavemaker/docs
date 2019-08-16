@@ -1,6 +1,6 @@
 ---
 title: "Live Form - Events & Methods"
-id: "events-methods"
+id: ""
 ---
 
 Live Form behavior can be customized with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..

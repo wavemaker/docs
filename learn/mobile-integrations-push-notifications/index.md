@@ -1,6 +1,6 @@
 ---
 title: "Mobile Integrations - Push Notifications"
-id: "mobile-integrations-push-notifications"
+id: ""
 ---
 
 this post, we will outline how to interact with Google Cloud Messaging (GCM) and push messages to a device.

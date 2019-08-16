@@ -13,6 +13,10 @@ const siteConfig = {
     url: 'https://www.wavemaker.com', // Your website URL
     baseUrl: '/learn/',
 
+    //The base URL for all docs file. Set this field to '' to remove the docs prefix of the documentation URL. If unset, it is defaulted to docs.
+    docsUrl: '',
+    customDocsPath: 'learn',
+
     // Used for publishing and more
     projectName: 'WaveMaker Docs',
     organizationName: 'WaveMaker Inc.',
@@ -23,8 +27,6 @@ const siteConfig = {
         {doc: 'doc4', label: 'API'},
         {page: 'help', label: 'Help'}*/
     ],
-
-    customDocsPath: 'learn',
 
     /* path to images for header/footer */
     headerIcon: 'img/headerIcon.png',

@@ -1,6 +1,6 @@
 ---
 title: "Button"
-id: "button"
+id: ""
 ---
 
 indicates a possible user action. The button provides a styled clickable UI functionality with arbitrary content to indicate the different states.

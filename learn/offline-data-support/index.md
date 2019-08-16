@@ -1,6 +1,6 @@
 ---
 title: "Offline Data Support"
-id: "offline-data-support"
+id: ""
 ---
 
 support for mobile applications can be thought of as the ability of the application to react gracefully to the lack of stability in the network connection. That is, apps should work even when not connected to any network. This is especially true of mobile apps for on-the-move users and for users working out of remote areas. In this context, one of the most complicated scenarios will be that of “ _data access_”.

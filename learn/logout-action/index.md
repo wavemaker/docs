@@ -1,6 +1,6 @@
 ---
 title: "Logout Action"
-id: "logout-action"
+id: ""
 ---
 
 A  **Action** is automatically created when you [Security](http://[supsystic-show-popup id=111]) in your application. You can edit the   of the** Logout Action** from the 

@@ -1,6 +1,6 @@
 ---
 title: "Number"
-id: "number"
+id: ""
 ---
 
 ##### 10.0 release

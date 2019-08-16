@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Form"
-id: "how-tos-form-2"
+id: ""
 ---
 
 Using Form to trigger an Insert QueryWe will be seeing how to use a Form to insert values into a Employee table of hrdb database using Insert Query:

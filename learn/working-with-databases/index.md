@@ -1,6 +1,6 @@
 ---
 title: "Working with Databases"
-id: "working-with-databases"
+id: ""
 ---
 
 ## Database

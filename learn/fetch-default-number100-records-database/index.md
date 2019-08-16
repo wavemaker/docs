@@ -1,6 +1,6 @@
 ---
 title: "How to fetch more than the default number(100) of records from database?"
-id: "fetch-default-number100-records-database"
+id: ""
 ---
 
 Variables provide data integration for the widgets. Variables are the gateways for the users to control, manage and synchronize the data from the database/web service or any other service in the backend. In case user wants to fetch the record from database and show it in select widget.

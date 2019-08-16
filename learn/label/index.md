@@ -1,6 +1,6 @@
 ---
 title: "Label"
-id: "label"
+id: ""
 ---
 
 represents a caption in a user interface. The label displays text on the page. Common use cases include

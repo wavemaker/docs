@@ -1,6 +1,6 @@
 ---
 title: "Release Management"
-id: "release-management"
+id: ""
 ---
 
 **management** is a software engineering process intended to oversee the development, testing, deployment and support of software releases. Release Management aims to plan, schedule and control the movement of releases to test and live environments. Release Management also needs to ensure the delivery of new and enhanced app services required by the business, while protecting the integrity of existing services.

@@ -1,6 +1,6 @@
 ---
 title: "Mobile Navbar"
-id: "mobile-navbar"
+id: ""
 ---
 
 **Navbar** is created specifically for hybrid apps to construct page header. It contains an icon, title and a list of actions on left and right sides.

@@ -1,6 +1,6 @@
 ---
 title: "Setting partial page content for Panel within a List using JavaScript"
-id: "setting-partial-page-content-panel-within-list-using-javascript"
+id: ""
 ---
 
 We will see how the content of a Panel can be set to a Partial Page. We will be embedding the Panel within a List and use JavaScript to trigger the loading of the Partial Page content.

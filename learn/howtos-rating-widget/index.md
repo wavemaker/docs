@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Rating Widget"
-id: "howtos-rating-widget"
+id: ""
 ---
 
 You can use the Rating widget to capture the input from the user as 1.datavalue or from the direct bind dialog. You can also change the caption according to the user selection. We will see how to do that in this section.Rating Widget using the Static data

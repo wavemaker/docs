@@ -1,6 +1,6 @@
 ---
 title: "Variable for Security Service"
-id: "security-service"
+id: ""
 ---
 
 Services can be accessed from within your app using Variables. By default, a Model Variable is created for all applications. In case you need access to more details, you can create a Variable using the appropriate API.

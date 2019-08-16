@@ -1,6 +1,6 @@
 ---
 title: "Working with WebSockets"
-id: "working-with-websockets"
+id: ""
 ---
 
 represent the next evolution of web communications a full-duplex, bidirectional communications channel that operate through a single socket over the Web. It provides a true standard that you can use to build scalable, real-time web applications. It provides full-duplex communication channels over a single TCP connection. Its only relationship to HTTP is that its handshake is interpreted by HTTP servers as an Upgrade Request.

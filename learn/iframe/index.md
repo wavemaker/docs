@@ -1,6 +1,6 @@
 ---
 title: "Iframe"
-id: "iframe"
+id: ""
 ---
 
 ![](../assets/laptop.png)  : Iframe is available only for web responsive apps.

@@ -1,6 +1,6 @@
 ---
 title: "Blob Support for Queries and Procedures"
-id: "blob-support-queries-procedures-ar"
+id: ""
 ---
 
 - Database services generated for each table provides an additional API for downloading the blob  content for each blob column in the table.

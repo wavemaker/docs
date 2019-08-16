@@ -1,6 +1,6 @@
 ---
 title: "Richtext Editor"
-id: "richtext-editor"
+id: ""
 ---
 
 **editor** widget allows users to create formatted/styled text similar to entering text into a word processor.  richtext editor is used to generate HTML text codes for your website or blog. The toolbar includes text-specific buttons. This makes it easy to create headers, bold text, italic, lists, set text alignment, embed images, audio, video, and more. Users can also add tables, change fonts, apply changes to font size and color.

@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Best Practices"
-id: "wavemaker-best-practices"
+id: ""
 ---
 
 Best Practices to follow while building apps using WaveMaker.   Responsive Web Apps

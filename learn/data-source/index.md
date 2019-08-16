@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Data Source"
-id: "data-source"
+id: ""
 ---
 
 first step in configuring a data table is to define the data that needs to be displayed. This data can be in the form of Services, Exiting Variable or another Widget.

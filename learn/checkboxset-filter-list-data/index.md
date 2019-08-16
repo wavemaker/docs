@@ -1,6 +1,6 @@
 ---
 title: "CheckboxSet to Filter List data"
-id: "checkboxset-filter-list-data"
+id: ""
 ---
 
 WaveMaker offers three ways of allowing user to choose from given options:

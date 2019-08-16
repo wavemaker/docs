@@ -1,6 +1,6 @@
 ---
 title: "Fields Configuration"
-id: "form-fields-configuration"
+id: ""
 ---
 
 ### form fields display options

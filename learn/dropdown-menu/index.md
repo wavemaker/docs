@@ -1,6 +1,6 @@
 ---
 title: "Dropdown Menu"
-id: "dropdown-menu"
+id: ""
 ---
 
 displays grouped navigation actions. The drop-down menu is typically used inside the navigation header to display a list of related links on a mouse hover or click on the trigger element.

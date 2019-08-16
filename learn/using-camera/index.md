@@ -1,6 +1,6 @@
 ---
 title: "Using Camera"
-id: "using-camera"
+id: ""
 ---
 
 Camera Widget can be used to capture images and videos from a Mobile App In this post, we will create a mobile app to capture and display a photo. [![camera_run3](../assets/camera_run3.png)](../assets/camera_run3.png)

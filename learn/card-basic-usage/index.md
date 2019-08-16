@@ -1,6 +1,6 @@
 ---
 title: "Cards - Basic Usage"
-id: "card-basic-usage"
+id: ""
 ---
 
 ## Employee Cards

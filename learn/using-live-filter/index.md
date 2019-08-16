@@ -1,6 +1,6 @@
 ---
 title: "Using Live Filter"
-id: "using-live-filter"
+id: ""
 ---
 
 Live Filter provides data filtering UI and functionality. Live Filter can be bound to a Live Variable and returns filtered results which in turn can be bound to any widget

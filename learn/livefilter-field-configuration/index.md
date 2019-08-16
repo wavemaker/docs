@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Field Configuration"
-id: "livefilter-field-configuration"
+id: ""
 ---
 
 ### filter fields display options

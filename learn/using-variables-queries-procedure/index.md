@@ -1,6 +1,6 @@
 ---
 title: "Using Variables for Queries and Procedure"
-id: "using-variables-queries-procedure"
+id: ""
 ---
 
 Showcases:

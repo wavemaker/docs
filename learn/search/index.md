@@ -1,6 +1,6 @@
 ---
 title: "Search"
-id: "search"
+id: ""
 ---
 
 allows you to add search capability via the **widget** Data Table widget has the **Search** property which lets you add the search facility to your table.

@@ -1,6 +1,6 @@
 ---
 title: "Changing App Logo"
-id: "changing-app-logo"
+id: ""
 ---
 
 App Logo is used in multiple places like:

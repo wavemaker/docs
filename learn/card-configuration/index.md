@@ -1,6 +1,6 @@
 ---
 title: "Cards - Configuration"
-id: "card-configuration"
+id: ""
 ---
 
 #### per Row

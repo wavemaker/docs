@@ -1,6 +1,6 @@
 ---
 title: "Project User Management"
-id: "project-user-management"
+id: ""
 ---
 
 Collaboration is allowed for WaveMaker project development. The owner of a project can add new members  (already registered with WaveMaker) to the project and assign roles to them. This document walks through the various roles and permissions allowed for the members of a project.

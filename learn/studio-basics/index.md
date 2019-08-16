@@ -1,6 +1,6 @@
 ---
 title: "Studio Basics"
-id: "studio-basics"
+id: ""
 ---
 
 # Steps

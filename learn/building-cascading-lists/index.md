@@ -1,6 +1,6 @@
 ---
 title: "Building Cascading Lists"
-id: "building-cascading-lists"
+id: ""
 ---
 
 **:** To show Master-Detail records using List

@@ -1,6 +1,6 @@
 ---
 title: "Accessing REST APIs from Java Service"
-id: "accessing-rest-apis-java-service"
+id: ""
 ---
 
 We will see how to access REST APIs using Java Service. The steps include:

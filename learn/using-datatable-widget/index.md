@@ -1,6 +1,6 @@
 ---
 title: "Using Data Table Widget"
-id: "using-datatable-widget"
+id: ""
 ---
 
 Data Table provides a tabular view for database entities through a database service or Rest APIs by binding to Live, Service or Static Variables and allows for Create, Update and Delete (CRUD) operations on the entities.

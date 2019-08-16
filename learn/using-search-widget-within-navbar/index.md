@@ -1,6 +1,6 @@
 ---
 title: "Using Search Widget within the Navbar"
-id: "using-search-widget-within-navbar"
+id: ""
 ---
 
 We will see how to configure the Search widget within the Navbar. We will create a list using the Employee data from sample hrdb and provide search functionality on the Employee's first name. [![navbar_search_run2](../assets/navbar_search_run2.png)](../assets/navbar_search_run2.png)

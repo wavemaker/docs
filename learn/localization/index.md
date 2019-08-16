@@ -1,6 +1,6 @@
 ---
 title: "Localization"
-id: "localization"
+id: ""
 ---
 
 is the adaptation of a product or service to meet the needs of a particular language, culture or desired populations’ look and feel. In WaveMaker, localization can be achieved at two levels:

@@ -1,6 +1,6 @@
 ---
 title: "Box Viewer Prefab"
-id: "box-viewer-prefab"
+id: ""
 ---
 
 Box preview prefab enables preview of hundreds of different file formats including all Microsoft Office Documents images, videos, 3D models etc. It uses the [preview API](https://developer.box.com/docs/box-view) provided by a developer account of Box Platform.

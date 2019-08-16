@@ -1,6 +1,6 @@
 ---
 title: "Tabs"
-id: "tabs"
+id: ""
 ---
 
 can be used when you need multiple containers within a single window. Tab-based navigation provides an easy and powerful mechanism to handle a huge amount of content within a limited area through separating content into different panes where one pane is viewable at a time. The user can quickly access the content by switching between the panes without leaving the page.

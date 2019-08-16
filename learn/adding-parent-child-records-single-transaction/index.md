@@ -1,6 +1,6 @@
 ---
 title: "Adding Parent and Child Records in a Single Transaction"
-id: "adding-parent-child-records-single-transaction"
+id: ""
 ---
 
 This topic describes how to add a Parent and Child records in a single transaction, where a Parent is the master record, and the Child is the extension or the details of the master record. For example, assume that a Pizza is a Parent entity, the Types of Pizzas are the Child entity type.  When you enter the Parent record, you want to add the child records at the same time, too. To do this, follow the step by step instructions as below. Also, achieve this topic's agenda of:

@@ -1,6 +1,6 @@
 ---
 title: "Temporal Support"
-id: "temporal-support"
+id: ""
 ---
 
 DB2 has an inbuilt support for temporal or time-based data management. The temporal features in the DB2 product enable you to accurately track information and data changes over time and provide an efficient and cost-effective way to address auditing and compliance requirements, without having to specifically code for the same.

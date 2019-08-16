@@ -1,6 +1,6 @@
 ---
 title: "Project Shells"
-id: "project-shells"
+id: ""
 ---
 
 **Shells** can be used as a starting point in app development and used as a foundation for multiple apps within an enterprise. In this document, we will be talking about:

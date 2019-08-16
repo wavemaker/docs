@@ -1,6 +1,6 @@
 ---
 title: "Displaying Icon color based upon a condition"
-id: "displaying-icon-color-based-upon-condition"
+id: ""
 ---
 
 In WaveMaker many widgets like Panel, Button etc. have a way to display an icon. You can choose the icons from the list of wavicons or font-awesome icons or glyph icons.

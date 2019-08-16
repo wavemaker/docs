@@ -1,6 +1,6 @@
 ---
 title: "Row Expansion in Data Table"
-id: "row-expansion-data-table"
+id: ""
 ---
 
 _row expansion feature is available since WaveMaker 10.0. GA release. _

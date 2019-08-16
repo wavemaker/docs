@@ -1,6 +1,6 @@
 ---
 title: "List - Configuration"
-id: "configuration"
+id: ""
 ---
 
 #### per Row

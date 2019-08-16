@@ -1,6 +1,6 @@
 ---
 title: "First Mobile App"
-id: "first-mobile-app"
+id: ""
 ---
 
 This section will give an overview of the steps to create a simple hybrid mobile app. This simple app will

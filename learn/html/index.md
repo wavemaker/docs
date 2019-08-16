@@ -1,6 +1,6 @@
 ---
 title: "HTML"
-id: "html"
+id: ""
 ---
 
  widget can be used to display HTML content.

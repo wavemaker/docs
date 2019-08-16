@@ -1,6 +1,6 @@
 ---
 title: "Live Filter"
-id: "live-filter"
+id: ""
 ---
 
 **Filter** provides data filtering UI and functionality. Live Filter can be bound to a data source from the database through the Database CRUD Variable. It returns filtered results which in turn can be bound to any widget. When designing in WaveMaker, Live Filter offers the following features to be configured:

@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Charts"
-id: "how-tos-charts"
+id: ""
 ---
 
 Once the data is imported and is ready to use follow these steps for chart creation.

@@ -1,6 +1,6 @@
 ---
 title: "Working with Stored Procedures"
-id: "working-stored-procedures"
+id: ""
 ---
 
 will be times when you want to display data from multiple tables or update/insert values into multiple tables. Queries and Stored Procedures come in handy in such instances. WaveMaker provides editors for Queries & Procedures for integrating them with the WaveMaker applications. Each query & procedure used in the WaveMaker application will be exposed as a REST API for the UI to consume and render the data.
