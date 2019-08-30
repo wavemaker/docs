@@ -5,12 +5,12 @@ id: ""
 
 We will see how to schedule a Java Service to trigger at certain intervals. We will see:
 
-- to use a Java Service to schedule a service to  within WaveMaker Apps.
+- How to use a Java Service to schedule a service to trigger within WaveMaker Apps.
 - The scheduler will be a spring scheduler which will schedule the java service created to trigger at certain intervals.
 
 We will be using the following Java Service Method:
 
- com.testschedulterandemail.simplejavaservice;
+package com.testschedulterandemail.simplejavaservice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -37,7 +37,7 @@ public class SimpleJavaService {
             throw e;
         }}}
 
-We will be using the following XML code in <javaservice\_name>.spring.xml file:
+We will be using the following XML code in <javaservice\_name>.spring.xml _.spring.xml_ file:
 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <beans xsi:schemaLocation="http://www.springframework.org/schema/beans
@@ -67,18 +67,18 @@ In the above XML code replace the bean class with the appropriate package name o
 
 The task details include:
 
--  referring to the time interval string we used corresponds to: _\*/10 \* \* \* \* ?_  The time interval specified is in the UNIX cron format ( [here](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html)). [![](../assets/cronformat.png?v=10)](../assets/cronformat.png)
-- refers to the Java method to be invoked at the above-mentioned time intervals
-- refers to the id given to the bean class for the Java controller
+- _cron_ referring to the time interval string we used corresponds to: _\*/10 \* \* \* \* ?_.  The time interval specified is in the UNIX cron format ([refer here](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html)). [![](../assets/cronformat.png?v=10)](../assets/cronformat.png)
+- _method_ refers to the Java method to be invoked at the above-mentioned time intervals
+- _id_ refers to the id given to the bean class for the Java controller
 
-The following annotation needs to be added in _\-user-spring.xml_ file:
+The following annotation needs to be added in _project-user-spring.xml_ file:
 
     <task:annotation-driven scheduler="taskScheduler" />
     <task:scheduler id="taskScheduler" pool-size="5" />
 
 <iframe width="960" height="749" src="https://docs.google.com/presentation/d/e/2PACX-1vRyRnyxwtJeQye7djWn32axB7krcI7l8v52snl8k9whVxm4Zt4ILILc0mprQW0Mor-gFQU7n9iLV1e0/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-Service Use Cases
+Java Service Use Cases
 
 - [1\. How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)
 - [2\. How to implement forgot password feature using Java Service](/learn/how-tos/implementing-forgot-password-feature-using-java-service/)

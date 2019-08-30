@@ -5,45 +5,47 @@ id: ""
 
 This post walks you through the creation and usage of a Prefab using JQuery Plugin. This is to showcase the use of Events and Methods in a Prefab.
 
-Let us create a simple Prefab named TreeView which is interactive. We are going to use a JQuery plugin named jsTree is a JQuery plugin, that provides interactive trees. jsTree is easily extendable, theme-able and configurable, it supports HTML & JSON data sources and AJAX loading.
+Let us create a simple Prefab named TreeView which is interactive. We are going to use a JQuery plugin named _jsTree_. jsTree is a JQuery plugin, that provides interactive trees. jsTree is easily extendable, theme-able and configurable, it supports HTML & JSON data sources and AJAX loading.
 
-Download the jsTree JQuery Plugin from [://www.jstree.com/](https://www.jstree.com/) Unzip the file downloaded and use the files from the dist folder.
+**Prerequisites**
+
+Download the jsTree JQuery Plugin from [https://www.jstree.com/](https://www.jstree.com/) Unzip the file downloaded and use the files from the dist folder.
 
 [![](../assets/jstree_prefab_download.png)](../assets/jstree_prefab_download.png)
 
-# the Prefab
+# Creating the Prefab
 
-1. on from the tab of the [Dashboard](http://[supsystic-show-popup id=102])
-2. a name (say TreeView2) and description for the Prefab.
-3. [Explorer](http://[supsystic-show-popup id=112]) add the JS and CSS files from the above-downloaded dist folder. Here we have created a folder to hold the same structure as the dist folder. [![](../assets/jstree_prefab_import.png)](../assets/jstree_prefab_import.png)
-4. [Configurations](http://[supsystic-show-popup id=107]), choose Config Prefab under Settings:
-    1. the Resources tab, choose the css and js files. [![](../assets/jstree_prefab_resources.png)](../assets/jstree_prefab_resources.png)
-    2. the Properties tab, add an property as an object,array (type if not selectable) which should consist of parent and child node names: [![](../assets/jstree_prefab_inbound.png)](../assets/jstree_prefab_inbound.png)
-    3. the Events tab, add events to be triggered when a node is Selected, Deselected, Expanded or Collapsed. Note, by default two events are already given - Load and Destroy [![](../assets/jstree_prefab_events.png)](../assets/jstree_prefab_events.png)
-    4. the Methods tab, add the following methods:
+1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](http://[supsystic-show-popup id=102])
+2. Enter a name (say TreeView2) and description for the Prefab.
+3. From [File Explorer](http://[supsystic-show-popup id=112]) add the JS and CSS files from the above-downloaded dist folder. Here we have created a folder _jsTree_ to hold the same structure as the dist folder. [![](../assets/jstree_prefab_import.png)](../assets/jstree_prefab_import.png)
+4. From [Project Configurations](http://[supsystic-show-popup id=107]), choose Config Prefab under Settings:
+    1. In the Resources tab, choose the css and js files. [![](../assets/jstree_prefab_resources.png)](../assets/jstree_prefab_resources.png)
+    2. In the Properties tab, add an _inbound_ property as an object,array (type if not selectable) which should consist of parent and child node names: [![](../assets/jstree_prefab_inbound.png)](../assets/jstree_prefab_inbound.png)
+    3. In the Events tab, add events to be triggered when a node is Selected, Deselected, Expanded or Collapsed. Note, by default two events are already given - Load and Destroy [![](../assets/jstree_prefab_events.png)](../assets/jstree_prefab_events.png)
+    4. In the Methods tab, add the following methods:
         
-        1. : Method to select a node
-            - : Node, Type: any
-            - type: void
-        2. : Method to redraw the whole tree
-            - type: void
-        3. : Method to select all Nodes
-            - type: void
-        4. : Method to deselect all nodes
-            - type: void
-        5. : Method to deselect a node
-            - : Node, Type: any
-            - type: void
+        1. _SelectNode_: Method to select a node
+            - Parameters: Node, Type: any
+            - Return type: void
+        2. _Redraw_: Method to redraw the whole tree
+            - Return type: void
+        3. _selectAllNodes_: Method to select all Nodes
+            - Return type: void
+        4. _deselectAllNodes_: Method to deselect all nodes
+            - Return type: void
+        5. _deselectNode_: Method to deselect a node
+            - Parameters: Node, Type: any
+            - Return type: void
         
         [![](../assets/jstree_prefab_methods.png)](../assets/jstree_prefab_methods.png)
-5. these properties, methods, and events are added to Prefab configuration in the Prefab Script the Method snippets will be auto-generated. You can fill with the code for the same.[![](../assets/jstree_prefab_script.png)](../assets/jstree_prefab_script.png)
-6. is the script for all methods : Declare a variable:
+5. Once these properties, methods, and events are added to Prefab configuration in the Prefab Script the Method snippets will be auto-generated. You can fill with the code for the same.[![](../assets/jstree_prefab_script.png)](../assets/jstree_prefab_script.png)
+6. Here is the script for all methods : Declare a variable:
     
-     treeMapInstance;
+    var treeMapInstance;
     
     Property Change event:
     
-     = function(key, newVal, oldVal) {
+    Prefab.onPropertyChange = function(key, newVal, oldVal) {
         switch (key) {
             case "treedata": //UI Property for the node array
                 initJStreeView();
@@ -57,7 +59,7 @@ Download the jsTree JQuery Plugin from [://www.jstree.com/](https://www.jstree.c
     
     Function to initialize the tree view:
     
-     initJStreeView() {
+    function initJStreeView() {
         var treeViewELe = Prefab.Widgets.treeViewContainer.$element;
         treeViewELe.jstree({
             core: {
@@ -97,7 +99,7 @@ Download the jsTree JQuery Plugin from [://www.jstree.com/](https://www.jstree.c
     
     Function to redraw the tree view:
     
-     \_redraw() {
+    function \_redraw() {
         if (treeMapInstance) {
             treeMapInstance.redraw();
         }
@@ -148,31 +150,31 @@ Download the jsTree JQuery Plugin from [://www.jstree.com/](https://www.jstree.c
         \_redraw();
     }
     
-7. a _\-container tag_ with the name in the Markup, as follows:
+7. Add a _wm-container tag_ with the name **treeViewContainer** in the Markup, as follows:
     
     <wm-container name="treeViewContainer"></wm-container>
     
     [![](../assets/jstree_prefab_html.png)](../assets/jstree_prefab_html.png)
-8. the Prefab. Know more about publishing Prefabs from[](/learn/app-development/custom-widgets/creating-prefabs/#publish-prefab)
+8. Publish the Prefab. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/creating-prefabs/#publish-prefab).
 
-# the Prefab in Project
+# Using the Prefab in Project
 
-1. us now use the above-created Prefab in an application.
-2. are using the WaveMaker non-enterprise version and have Published the Prefab to Workspace.
-3. _or Open an application_
-4. can see the Prefab in the Prefab Listing.
-5. the Main page drag and drop the TreeView2 Prefab. [![](../assets/jstree_prefab_appdnd.png)](../assets/jstree_prefab_appdnd.png)
+1. Let us now use the above-created Prefab in an application.
+2. We are using the WaveMaker non-enterprise version and have Published the Prefab to Workspace.
+3. _Create or Open an application_.
+4. You can see the Prefab in the Prefab Listing.
+5. On the Main page drag and drop the TreeView2 Prefab. [![](../assets/jstree_prefab_appdnd.png)](../assets/jstree_prefab_appdnd.png)
 
-## Prefab Methods in Project
+## Invoking Prefab Methods in Project
 
 The prefab has exposed methods which can be triggered by the application as shown below.
 
-1. call the exposed methods drag and drop **Button Widgets** in the main page under the Prefab and give the for the buttons as SELECT ALL, SELECT NODE, DESELECT NODE and DESELECT ALL. We have the buttons as selectAll, selectNode, deselectNode and deselectAll.
-2. _Click_ events for each of the buttons. [![](../assets/jstree_prefab_appmethods.png)](../assets/jstree_prefab_appmethods.png)
-3. will create the snippet for the _<button>Click_ event in the script tab of the main page in the application.
-4. code for the _<button>Click_ event will call the exposed methods respectively (check the name of the Button widget, it might be different if you have not named them as mentioned in step 1). Ensure that the Prefab name (TreeView21) matches what you have in your project:
+1. To call the exposed methods drag and drop **four Button Widgets** in the main page under the Prefab and give the _captions_ for the buttons as SELECT ALL, SELECT NODE, DESELECT NODE and DESELECT ALL. We have _named_ the buttons as selectAll, selectNode, deselectNode and deselectAll.
+2. Create _On Click_ events for each of the buttons. [![](../assets/jstree_prefab_appmethods.png)](../assets/jstree_prefab_appmethods.png)
+3. This will create the snippet for the _<button>Click_ event in the script tab of the main page in the application.
+4. The code for the _<button>Click_ event will call the exposed methods respectively (check the name of the Button widget, it might be different if you have not named them as mentioned in step 1). Ensure that the Prefab name (TreeView21) matches what you have in your project:
     
-     = function($event, widget) {
+    Page.selectAllClick = function($event, widget) {
         Page.Widgets.TreeView21.selectAllNodes();
         alert("Selected All Nodes");
     };
@@ -193,7 +195,7 @@ The prefab has exposed methods which can be triggered by the application as show
     
     [![](../assets/jstree_prefab_appscript.png)](../assets/jstree_prefab_appscript.png)
 
-## Prefab Events in Project
+## Invoking Prefab Events in Project
 
 The events are also exposed on the events tab and you can create actions for each of them.
 
@@ -201,18 +203,18 @@ The events are also exposed on the events tab and you can create actions for eac
 
 Here we have created Notification Action to be displayed for each of the Event:
 
--  for **Select** - Create a Notification Action and when any node is selected, it will give a callback as a notification with the text “Node Selected”
--   **collapse** - Create a Notification Action and when nodes are collapsed, it will give a callback as a notification with the text “Nodes Collapsed”
--   **expand** - Create a Notification Action and when nodes are expanded it will give a callback as a notification with the text “Nodes expanded”
--  for  **deselect** - Create a Notification Action and when any node is deselected, it will give a callback as a notification with the text “Node DeSelected” [![](../assets/jstree_prefab_appnotification.png)](../assets/jstree_prefab_appnotification.png)
+- **selectAction** for **On Select** - Create a Notification Action and when any node is selected, it will give a callback as a notification with the text “Node Selected”
+- **collapseAction **for **On collapse** - Create a Notification Action and when nodes are collapsed, it will give a callback as a notification with the text “Nodes Collapsed”
+- **expandAction **for **On expand** - Create a Notification Action and when nodes are expanded it will give a callback as a notification with the text “Nodes expanded”
+- **deselectAction** for **On deselect** - Create a Notification Action and when any node is deselected, it will give a callback as a notification with the text “Node DeSelected” [![](../assets/jstree_prefab_appnotification.png)](../assets/jstree_prefab_appnotification.png)
 
 The Prefab application can also add an Event listener for an event and take some appropriate action once the event happens.
 
-## Data to Prefab in Project
+## Passing Data to Prefab in Project
 
 Finally, this Prefab needs data to render in the Tree format.
 
-1. this, we have created a Model Variable with the following JSON structure:
+1. For this, we have created a Model Variable with the following JSON structure:
     
     \[
       {
@@ -275,18 +277,18 @@ Finally, this Prefab needs data to render in the Tree format.
     \]
     
     [![](../assets/jstree_prefab_appvar.png)](../assets/jstree_prefab_appvar.png)
-2. the above Variable to the Tree Data property of the Prefab: [![](../assets/jstree_prefab_appdata.png)](../assets/jstree_prefab_appdata.png) [![](../assets/jstree_prefab_appbind.png)](../assets/jstree_prefab_appbind.png)
-3. the app and see the Prefab in action [![](../assets/jstree_prefab_apprun.png)](../assets/jstree_prefab_apprun.png)
+2. Bind the above Variable to the Tree Data property of the Prefab: [![](../assets/jstree_prefab_appdata.png)](../assets/jstree_prefab_appdata.png) [![](../assets/jstree_prefab_appbind.png)](../assets/jstree_prefab_appbind.png)
+3. Run the app and see the Prefab in action [![](../assets/jstree_prefab_apprun.png)](../assets/jstree_prefab_apprun.png)
 
-[Use Cases](/learn/app-development/widgets/use-cases-prefabs/)
+[Prefab Use Cases](/learn/app-development/widgets/use-cases-prefabs/)
 
 - [1\. Prefab to compare two strings](/learn/how-tos/create-simple-prefab/)
 - [2\. Prefab using 3rd Party UI Widgets](/learn/how-tos/create-prefab-using-third-party-ui-widgets/)
 - [3\. Prefab Using D3 & NVD3 Charts](/learn/how-tos/create-prefab-using-d3-nvd3-charts/)
 - [4\. Prefab Using D3 Library (DataMaps)](/learn/how-tos/create-prefab-using-d3-library-datamaps/)
 - [5\. Prefab using JQuery Plugin](#)
-    - [Creation](#creation)
-    - [Usage](#usage)
-        - [Invoking Methods](#methods)
-        - [Invoking Events](#events)
-        - [Passing Data](#data)
+    - [i. Creation](#creation)
+    - [ii. Usage](#usage)
+        - [○ Invoking Methods](#methods)
+        - [○ Invoking Events](#events)
+        - [○ Passing Data](#data)

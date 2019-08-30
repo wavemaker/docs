@@ -3,15 +3,15 @@ title: "Custom Styling Data Table Columns & Rows"
 id: ""
 ---
 
-: Set the display style of the entire column or row in a Data Table and based upon the value of a particular field. We will customise the Data Table for the following:
+**Scenario**: Set the display style of the entire column or row in a Data Table and based upon the value of a particular field. We will customise the Data Table for the following:
 
-- Budget column to be displayed in pink color
-- column to be in blue when the value is 90028 _(row.zip=='90028')_
-- to be displayed as warning when the value is New York _(row.city=='New York')_
+- Department Budget column to be displayed in pink color
+- Zip column to be in blue when the value is 90028 _(row.zip=='90028')_
+- Row to be displayed as warning when the value is New York _(row.city=='New York')_
 
 The following style classes have been defined from the Style tab:
 
- {
+.pink {
     background-color: #F8E0E0;
 }
 .blue {
@@ -23,7 +23,7 @@ The following style classes have been defined from the Style tab:
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vTwZeGOaeN9tvLmf-G7QlbIrdRuaig6QgAhoAfR5p9bUZEqkpnJXZXRrQV65JjDbyno75KWSxSCeL2i/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
+[Data Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
 
 - [1\. Basic Table Usage](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage/)
 - [2\. How to customise table actions](/learn/how-tos/data-table-actions/)

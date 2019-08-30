@@ -3,13 +3,13 @@ title: "Java Integration Services"
 id: ""
 ---
 
-you want more control or you are more comfortable working with Java, you can invoke various services like DB, Feed, SOAP and Security services from Java using _@Autowired in the UserService.java_ files. The **autowiring feature of spring framework** enables you to inject the object dependency implicitly. It internally uses setter or constructor injection. The advantage of autowiring is, it requires the less code because we don't need to write the code to inject the dependency explicitly. **:** REST Services cannot be invoked.
+If you want more control or you are more comfortable working with Java, you can invoke various services like DB, Feed, SOAP and Security services from Java using _@Autowired in the UserService.java_ files. The **autowiring feature of spring framework** enables you to inject the object dependency implicitly. It internally uses setter or constructor injection. The advantage of autowiring is, it requires the less code because we don't need to write the code to inject the dependency explicitly. **Note:** REST Services cannot be invoked.
 
-### current logged in user details
+### Accessing current logged in user details
 
-access the Logged in user details in an app that is secured, you need to import the security service. The **Service** import can be done using the following code snippet
+To access the Logged in user details in an app that is secured, you need to import the security service. The **Security Service** import can be done using the following code snippet
 
- com.wavemaker.runtime.security.SecurityService;
+import com.wavemaker.runtime.security.SecurityService;
 @Autowired
 public SecurityService securityService;
 public String getLoggedUser() {
@@ -17,34 +17,34 @@ public String getLoggedUser() {
 return loggedUser ;
     }
 
-### external Java libraries
+### Accessing external Java libraries
 
 There are two ways in which this can be achieved:
 
-1. the project to an IDE of your choice and changing the code as per your requirements and importing it to WaveMaker. This is possible since the code generated for WaveMaker projects is complaint. [Project](http://[supsystic-show-popup id=116])
-2. the files as external resource and using them within your app. [Resource](http://[supsystic-show-popup id=112])
+1. Exporting the project to an IDE of your choice and changing the code as per your requirements and importing it to WaveMaker. This is possible since the code generated for WaveMaker projects is **Maven** complaint. [Export Project](http://[supsystic-show-popup id=116])
+2. Importing the **jar** files as external resource and using them within your app. [Import Resource](http://[supsystic-show-popup id=112])
 
-### Database services using Java Service
+### Accessing Database services using Java Service
 
-access a database table from a [Integrated](http://[supsystic-show-popup id=106]) into your app, you need to access the **Service** file corresponding to the table from the Services tab in the left panel. For example, to access the User table from hrdb, you need to access the UserService.java file from the Services subfolder from the left Files panel.
+To access a database table from a [Database Integrated](http://[supsystic-show-popup id=106]) into your app, you need to access the **Java Service** file corresponding to the table from the Services tab in the left panel. For example, to access the User table from hrdb, you need to access the UserService.java file from the Services subfolder from the left Files panel.
 
 We will see:
 
-- [to find the database services](#where),
-- [to access DB services from Java service](#access),
-- [transactions](#trans1) when interacting with related entities of a database
+- [where to find the database services](#where),
+- [how to access DB services from Java service](#access),
+- [creating transactions](#trans1) when interacting with related entities of a database
 
-### to find DB Services
+### Where to find DB Services
 
-can find a list of methods for User table in like create, delete, find, update, query service, procedure service and so on.
+You can find a list of methods for User table in _userservice.java_ like create, delete, find, update, query service, procedure service and so on.
 
 [![](../assets/dbservices.png)](../assets/dbservices.png)
 
-### DB Services
+### Accessing DB Services
 
-working with the **table operations** such as insert, get, update in Java Service, the following generic code can be used. Here we are trying to access the User table from the sample hrdb:
+For working with the **Database table operations** such as insert, get, update in Java Service, the following generic code can be used. Here we are trying to access the User table from the sample hrdb:
 
- org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.<project\_name>.hrdb.service.UserService;
 import com.<project\_name>.hrdb.User;
@@ -58,11 +58,11 @@ public class MyJavaService {
 return user;
     }
 
-### different DB Services with the same name
+### Accessing different DB Services with the same name
 
-there are two or more beans for same class type, you need to use _@Qualifier_ annotation along with @Autowired annotation and pass the bean name in annotation parameter. For example, you have more than one implementation of User service, then use qualifier to inject the specific implementation of User service.
+If there are two or more beans for same class type, you need to use _@Qualifier_ annotation along with @Autowired annotation and pass the bean name in annotation parameter. For example, you have more than one implementation of User service, then use qualifier to inject the specific implementation of User service.
 
- org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.hrdb.service.UserService;
 import com.hrdb.User;
@@ -77,17 +77,17 @@ public class MyJavaService {
 return user;
     }
 
-### Transactions from Java Service
+### Database Transactions from Java Service
 
-#### for related entities
+#### Transactions for related entities
 
-can be used in cases where you have multiple independent statements which need to be linked together. A transaction can end in two ways: with a commit or with a rollback. When a transaction commits, the data modifications made by its statements are saved. If a statement within a transaction fails, the transaction rolls back, undoing the effects of all statements in the transaction.
+Transactions can be used in cases where you have multiple independent statements which need to be linked together. A transaction can end in two ways: with a commit or with a rollback. When a transaction commits, the data modifications made by its statements are saved. If a statement within a transaction fails, the transaction rolls back, undoing the effects of all statements in the transaction.
 
 Let us see a simple example of interacting with the hrdb database in Java service using Transactions.
 
-- an API that creates employee and retrieves the same from the database.
-- employee and retrieving employee are two independent calls to the database. When we enclose it with the transaction it will ensure that either both actions occur or neither action occurs.
-- the below transaction code, if is successful but retrieve employee fails, then created employee will be reverted from the database.
+- Define an API that creates employee and retrieves the same from the database.
+- Create employee and retrieving employee are two independent calls to the database. When we enclose it with the transaction it will ensure that either both actions occur or neither action occurs.
+- In the below transaction code, if _createEmployee_ is successful but retrieve employee fails, then created employee will be reverted from the database.
 
 /\*\\/\*\*
  \* Copyright (c) 2015-2016 WaveMaker.com All Rights Reserved.
@@ -179,17 +179,17 @@ To see the rollback in action replace the last line with:
         //retrieve non existing object
         return employeeService.getById(71236);
 
-### Query services using Java Service
+### Accessing Query services using Java Service
 
-**Queries** or queries that are written, tested and saved in query editor of Database Designer. [Editor](http://[supsystic-show-popup id=117]) For each and every named query, there will be a rest service generated in query execution controller and exposed. Here we are seeing two queries - Emp\_Count and Total\_by\_City which were created from the query editor. [![](../assets/autowired_queries.png)](../assets/autowired_queries.png)
+**Named Queries** or queries that are written, tested and saved in query editor of Database Designer. [Query Editor](http://[supsystic-show-popup id=117]). For each and every named query, there will be a rest service generated in query execution controller and exposed. Here we are seeing two queries - Emp\_Count and Total\_by\_City which were created from the query editor. [![](../assets/autowired_queries.png)](../assets/autowired_queries.png)
 
-### Imported Web Services
+### Invoking Imported Web Services
 
-Various [Service can be Integrated](http://[supsystic-show-popup id=115]) into WaveMaker apps. These services can be invoked from Java Services.
+Various [Web Service can be Integrated](http://[supsystic-show-popup id=115]) into WaveMaker apps. These services can be invoked from Java Services.
 
-For **Service** import following is the code snippet : Calculator is WSDL service which was imported.
+For **Soap Service** import following is the code snippet _Note_: Calculator is WSDL service which was imported.
 
- com.wavemaker..services.calculator.\*;
+import com.wavemaker..services.calculator.\*;
 import com.wavemaker..services.calculator.services.\*;
 @ExposeToClient
 public class MyJavaService {
@@ -202,9 +202,9 @@ public class MyJavaService {
         return calculatorService.add(add);
     }
 
-For **Service** import following is the code snippet
+For **Feed Service** import following is the code snippet
 
- com.wavemaker.runtime.feed.service.FeedService;
+import com.wavemaker.runtime.feed.service.FeedService;
 import com.wavemaker.runtime.feed.model.Feed;
 @Autowired
     FeedService feedService;
@@ -214,7 +214,7 @@ import com.wavemaker.runtime.feed.model.Feed;
 return myFeed;
     }
 
-For **With Auth Service** import following is the code snippet
+For **Feed With Auth Service** import following is the code snippet
 
     public Feed authFeedfromJavaService(String feedURL, String username, String password, int connectionTimeout) {
         Feed authFeed = feedService.getFeedWithHttpConfig(feedUrl,username,password,connectionTimeout);
@@ -229,103 +229,103 @@ return authFeed ;
 5\. Creating Backend Services
 
 - 5.1 Overview
-    - [Accessing Data](/learn/app-development/services/creating-backend-services/#accessing-data)
-        - [Life-cycle of data](/learn/app-development/services/creating-backend-services/#life-cycle)
-    - [Manipulating Data](/learn/app-development/services/creating-backend-services/#manipulating-data)
-        - [Life-cycle of Events](/learn/app-development/services/creating-backend-services/#life-cycle-events)
-    - [REST APIs](/learn/app-development/services/creating-backend-services/#rest-apis)
+    - [i. Accessing Data](/learn/app-development/services/creating-backend-services/#accessing-data)
+        - [○ Life-cycle of data](/learn/app-development/services/creating-backend-services/#life-cycle)
+    - [ii. Manipulating Data](/learn/app-development/services/creating-backend-services/#manipulating-data)
+        - [○ Life-cycle of Events](/learn/app-development/services/creating-backend-services/#life-cycle-events)
+    - [iii. REST APIs](/learn/app-development/services/creating-backend-services/#rest-apis)
 - 5.2 Web Services
-    - [Overview](/learn/services/web-services/web-services/#overview)
-    - [Variables for Invocation](/learn/services/web-services/web-services/#service-variable)
+    - [i. Overview](/learn/services/web-services/web-services/#overview)
+    - [ii. Variables for Invocation](/learn/services/web-services/web-services/#service-variable)
     - iii. Working with SOAP Services
-        - [Overview](/learn/app-development/services/web-services/web-services/working-with-soap-services/#SOAP-service-setup)
-        - [SOAP Service Setup](/learn/app-development/services/web-services/working-with-soap-services/#SOAP-service-setup)
-        - [SOAP Service Settings](/learn/app-development/services/web-services/working-with-soap-services/#SOAP-service-settings)
-        - [Generated REST APIs](/learn/app-development/services/web-services/working-with-soap-services/#generated-rest-apis)
-        - [SOAP Service Usage](/learn/app-development/services/web-services/working-with-soap-services/#SOAP-service-usage)
+        - [○ Overview](/learn/app-development/services/web-services/web-services/working-with-soap-services/#SOAP-service-setup)
+        - [○ SOAP Service Setup](/learn/app-development/services/web-services/working-with-soap-services/#SOAP-service-setup)
+        - [○ SOAP Service Settings](/learn/app-development/services/web-services/working-with-soap-services/#SOAP-service-settings)
+        - [○ Generated REST APIs](/learn/app-development/services/web-services/working-with-soap-services/#generated-rest-apis)
+        - [○ SOAP Service Usage](/learn/app-development/services/web-services/working-with-soap-services/#SOAP-service-usage)
     - iv. Working with REST Services
-        - [ Overview](/learn/app-development/services/web-services/rest-services/)
-        - [ Test REST Service](/learn/app-development/services/web-services/rest-services/#test-API)
-        - [ Configure REST Service](/learn/app-development/services/web-services/rest-services/#configure-REST-service)
-        - [REST Service Usage](/learn/app-development/services/web-services/rest-services/#REST-service-usage)
+        - [○ Overview](/learn/app-development/services/web-services/rest-services/)
+        - [○ Test REST Service](/learn/app-development/services/web-services/rest-services/#test-API)
+        - [○ Configure REST Service](/learn/app-development/services/web-services/rest-services/#configure-REST-service)
+        - [○ REST Service Usage](/learn/app-development/services/web-services/rest-services/#REST-service-usage)
     - v. Working with Web Sockets
-        - [Overview](/learn/app-development/services/web-services/working-with-websockets/)
-        - [Service Integration](/learn/app-development/services/web-services/working-with-websockets/#import)
-        - [Service Consumption](/learn/app-development/services/web-services/working-with-websockets/#variable)
-        - [Use Cases](/learn/app-development/services/web-services/working-with-websockets/#use-cases)
+        - [○ Overview](/learn/app-development/services/web-services/working-with-websockets/)
+        - [○ Service Integration](/learn/app-development/services/web-services/working-with-websockets/#import)
+        - [○ Service Consumption](/learn/app-development/services/web-services/working-with-websockets/#variable)
+        - [○ Use Cases](/learn/app-development/services/web-services/working-with-websockets/#use-cases)
 - 5.3 Database Services
-    - [Overview](/learn/app-development/services/database-services/database-services/)
-    - [Supported Databases](/learn/app-development/services/database-services/database-services/#supported-databases)
+    - [i. Overview](/learn/app-development/services/database-services/database-services/)
+    - [ii. Supported Databases](/learn/app-development/services/database-services/database-services/#supported-databases)
     - iii. Working with Databases
-        - [Overview](/learn/app-development/services/database-services/working-with-databases/)
-        - [Adding Database](/learn/app-development/services/database-services/working-with-databases/#integrating-database)
-        - [Database Actions](/learn/app-development/services/database-services/working-with-databases/#database-actions)
+        - [○ Overview](/learn/app-development/services/database-services/working-with-databases/)
+        - [○ Adding Database](/learn/app-development/services/database-services/working-with-databases/#integrating-database)
+        - [○ Database Actions](/learn/app-development/services/database-services/working-with-databases/#database-actions)
     - iv. Data Modelling
-        - [Overview](/learn/app-development/services/database-services/data-modelling/)
-        - [Configuration Settings](/learn/services/db-services/data-modelling/#configuration-settings)
-        - [Database Designer](/learn/services/db-services/data-modelling/#database-designer)
-            - [Schema Import Modes](/learn/app-development/services/database-services/database-schema-import-modes/)
+        - [○ Overview](/learn/app-development/services/database-services/data-modelling/)
+        - [○ Configuration Settings](/learn/services/db-services/data-modelling/#configuration-settings)
+        - [○ Database Designer](/learn/services/db-services/data-modelling/#database-designer)
+            - [● Schema Import Modes](/learn/app-development/services/database-services/database-schema-import-modes/)
         - ○ Working with Database Schema
-            - [Overview](/learn/app-development/services/database-services/working-database-schema/)
-            - [Adding Tables and Columns](/learn/app-development/services/database-services/working-database-schema/#add-tables-columns)
-            - [Working with Relationships](/learn/app-development/services/database-services/working-database-schema/#database-relationships)
-            - [Identity Generators for Primary Key Column](/learn/app-development/services/database-services/working-database-schema/#identity-generators)
-            - [Column Metadata Configuration](/learn/app-development/services/database-services/working-database-schema/#column-metadata-configuration)
-            - [Virtual Primary Keys and Relations](/learn/app-development/services/database-services/working-database-schema/#virtual-primary-keys)
-            - [Temporal Support](/learn/app-development/services/database-services/temporal-support/)
+            - [● Overview](/learn/app-development/services/database-services/working-database-schema/)
+            - [● Adding Tables and Columns](/learn/app-development/services/database-services/working-database-schema/#add-tables-columns)
+            - [● Working with Relationships](/learn/app-development/services/database-services/working-database-schema/#database-relationships)
+            - [● Identity Generators for Primary Key Column](/learn/app-development/services/database-services/working-database-schema/#identity-generators)
+            - [● Column Metadata Configuration](/learn/app-development/services/database-services/working-database-schema/#column-metadata-configuration)
+            - [● Virtual Primary Keys and Relations](/learn/app-development/services/database-services/working-database-schema/#virtual-primary-keys)
+            - [● Temporal Support](/learn/app-development/services/database-services/temporal-support/)
     - v. Databases Access
-        - [Overview](/learn/app-development/services/database-access/)
+        - [○ Overview](/learn/app-development/services/database-access/)
         - ○ Working with Queries
-            - [Overview](/learn/app-development/services/database-services/working-with-queries/)
-            - [Query Editor](/learn/app-development/services/database-services/working-with-queries/#query-editor)
-            - [Types of Queries](/learn/app-development/services/database-services/working-with-queries/#query-types)
-            - [Query Creation](/learn/app-development/services/database-services/working-with-queries/#query-creation)
-            - [Query Usage](/learn/app-development/services/database-services/working-with-queries/#query-usage)
-            - [Parameterised Query Creation](/learn/app-development/services/database-services/working-with-queries/#query-creation-parameterised)
-            - [Query Operation Type](/learn/app-development/services/database-services/working-with-queries/#query-op-types)
-            - [Query Architecture](/learn/app-development/services/database-services/working-with-queries/#query-architecture)
+            - [● Overview](/learn/app-development/services/database-services/working-with-queries/)
+            - [● Query Editor](/learn/app-development/services/database-services/working-with-queries/#query-editor)
+            - [● Types of Queries](/learn/app-development/services/database-services/working-with-queries/#query-types)
+            - [● Query Creation](/learn/app-development/services/database-services/working-with-queries/#query-creation)
+            - [● Query Usage](/learn/app-development/services/database-services/working-with-queries/#query-usage)
+            - [● Parameterised Query Creation](/learn/app-development/services/database-services/working-with-queries/#query-creation-parameterised)
+            - [● Query Operation Type](/learn/app-development/services/database-services/working-with-queries/#query-op-types)
+            - [● Query Architecture](/learn/app-development/services/database-services/working-with-queries/#query-architecture)
         - ○ Working with Stored Procedures
-            - [Overview](/learn/app-development/services/db-services/working-stored-procedures/)
-            - [Procedure Creation](/learn/app-development/services/db-services/working-stored-procedures/#procedure-creation)
-            - [Procedure Parameters](/learn/app-development/services/db-services/working-stored-procedures/#proc-params)
-            - [Procedure Invocation](/learn/app-development/services/db-services/working-stored-procedures/#procedure-invocation)
-            - [Procedure Architecture](/learn/app-development/services/db-services/working-stored-procedures/#procedure-architecture)
-        - [Versioning of Queries and Procedures](/learn/app-development/services/database-services/versioning-queries-procedures/)
-        - [ Blob Support for Queries and Procedures](/learn/app-development/services/database-services/blob-support-queries-procedures/)
-        - [Invoking Queries & Procedures from Java Service](/learn/app-development/services/database-services/invoking-queriesprocedures-java-services/)
-        - [ Database Views](/learn/app-development/services/db-services/database-views/)
+            - [● Overview](/learn/app-development/services/db-services/working-stored-procedures/)
+            - [● Procedure Creation](/learn/app-development/services/db-services/working-stored-procedures/#procedure-creation)
+            - [● Procedure Parameters](/learn/app-development/services/db-services/working-stored-procedures/#proc-params)
+            - [● Procedure Invocation](/learn/app-development/services/db-services/working-stored-procedures/#procedure-invocation)
+            - [● Procedure Architecture](/learn/app-development/services/db-services/working-stored-procedures/#procedure-architecture)
+        - [○ Versioning of Queries and Procedures](/learn/app-development/services/database-services/versioning-queries-procedures/)
+        - [○ Blob Support for Queries and Procedures](/learn/app-development/services/database-services/blob-support-queries-procedures/)
+        - [○ Invoking Queries & Procedures from Java Service](/learn/app-development/services/database-services/invoking-queriesprocedures-java-services/)
+        - [○ Database Views](/learn/app-development/services/db-services/database-views/)
         - ○ Database Tools
-            - [Overview](/learn/app-development/services/database-tools/)
-            - [DB Shell](/learn/app-development/services/database-tools/#db-shell)
-            - [DB Scripts](/learn/app-development/services/database-tools/#db-scripts)
-                - [Import DB](/learn/app-development/services/database-tools/#import-db)
-                - [Export DB](/learn/app-development/services/database-tools/#export-db)
+            - [● Overview](/learn/app-development/services/database-tools/)
+            - [● DB Shell](/learn/app-development/services/database-tools/#db-shell)
+            - [● DB Scripts](/learn/app-development/services/database-tools/#db-scripts)
+                - [● Import DB](/learn/app-development/services/database-tools/#import-db)
+                - [● Export DB](/learn/app-development/services/database-tools/#export-db)
     - vi. ORM Artifacts
-        - [Layered Architecture](/learn/app-development/services/db-services/orm-artifacts/#layered-architecture)
-        - [Generated Files](/learn/app-development/services/db-services/orm-artifacts/#generated-files)
-        - [Generated APIs](/learn/app-development/services/db-services/orm-artifacts/#generated-apis)
-            - [CRUD APIs](/learn/app-development/services/db-services/orm-artifacts/#crud-apis)
-            - [Query APIs](/learn/app-development/services/db-services/orm-artifacts/#query-apis)
-            - [Custom Query Syntax](/learn/app-development/services/db-services/orm-artifacts/#custom-query-syntax)
+        - [○ Layered Architecture](/learn/app-development/services/db-services/orm-artifacts/#layered-architecture)
+        - [○ Generated Files](/learn/app-development/services/db-services/orm-artifacts/#generated-files)
+        - [○ Generated APIs](/learn/app-development/services/db-services/orm-artifacts/#generated-apis)
+            - [● CRUD APIs](/learn/app-development/services/db-services/orm-artifacts/#crud-apis)
+            - [● Query APIs](/learn/app-development/services/db-services/orm-artifacts/#query-apis)
+            - [● Custom Query Syntax](/learn/app-development/services/db-services/orm-artifacts/#custom-query-syntax)
 - [5.4 Java Services](/learn/app-development/services/java-services/java-service/)
-    - [ Overview](/learn/app-development/services/java-services/java-service/#overview)
-    - [Java Services Framework](/learn/app-development/services/java-services/java-service/#java-services-framework)
-    - [Integration Services](#)
-        - [Current Loggedin User](#loggedin-user)
-        - [External Java Libraries](#external-java-libraries)
-        - [Database Entities](#db-services)
-        - [Named Queries](#query-service)
-        - [Imported Web Services](#web-services)
-    - [Variables for Invocation](/learn/app-development/services/java-services/variables/)
-    - [ Generated REST APIs](/learn/app-development/services/java-services/generated-rest-apis-api-designer/)
+    - [i. Overview](/learn/app-development/services/java-services/java-service/#overview)
+    - [ii. Java Services Framework](/learn/app-development/services/java-services/java-service/#java-services-framework)
+    - [iii. Integration Services](#)
+        - [○ Current Loggedin User](#loggedin-user)
+        - [○ External Java Libraries](#external-java-libraries)
+        - [○ Database Entities](#db-services)
+        - [○ Named Queries](#query-service)
+        - [○ Imported Web Services](#web-services)
+    - [iv. Variables for Invocation](/learn/app-development/services/java-services/variables/)
+    - [v. Generated REST APIs](/learn/app-development/services/java-services/generated-rest-apis-api-designer/)
 - 5.5 API Designer
-    - [Overview](/learn/app-development/services/api-designer/api/)
-    - [Database Services APIs](/learn/app-development/services/api-designer/database-service-apis/)
-    - [Web Services APIs](/learn/app-development/services/api-designer/web-service-apis/)
-    - [Java Services APIs](/learn/app-development/services/api-designer/java-service-apis/)
-    - [Security Services APIs](/learn/app-development/services/api-designer/security-service-apis/)
+    - [i. Overview](/learn/app-development/services/api-designer/api/)
+    - [ii. Database Services APIs](/learn/app-development/services/api-designer/database-service-apis/)
+    - [iii. Web Services APIs](/learn/app-development/services/api-designer/web-service-apis/)
+    - [iv. Java Services APIs](/learn/app-development/services/api-designer/java-service-apis/)
+    - [v. Security Services APIs](/learn/app-development/services/api-designer/security-service-apis/)
 - 5.6 3rd Party Libraries
-    - [Overview](/learn/app-development/services/3rd-party-libraries/)
-    - [Including resource files](/learn/app-development/services/3rd-party-libraries/#resource-files)
-    - [Using third-party JavaScript file](/learn/app-development/services/3rd-party-libraries/using-3rd-party-javascript-files/)
-    - [Using third-party jar file](/learn/app-development/services/3rd-party-libraries/using-3rd-party-jar-files/)
+    - [i. Overview](/learn/app-development/services/3rd-party-libraries/)
+    - [ii. Including resource files](/learn/app-development/services/3rd-party-libraries/#resource-files)
+    - [iii. Using third-party JavaScript file](/learn/app-development/services/3rd-party-libraries/using-3rd-party-javascript-files/)
+    - [iv. Using third-party jar file](/learn/app-development/services/3rd-party-libraries/using-3rd-party-jar-files/)

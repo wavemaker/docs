@@ -5,17 +5,17 @@ id: ""
 
 A Login page is added to your app, by default.
 
-1. can select from the list of default templates and change it for this page, [more](/learn/app-development/ui-design/page-concepts/page-templates/)
-2. can make modifications to the login page components:
-    - the [logo](/learn/how-tos/changing-app-logo/) will change the logo for this page, too
-    - can access the Login page from Pages Resource [![](../assets/design_login-1.png)](../assets/design_login-1.png)
-    - the _container_ and change the _name_ and location from the property to change the background image and style [![](../assets/design_login_style.png)](../assets/design_login_style.png)
+1. You can select from the list of default templates and change it for this page, [know more](/learn/app-development/ui-design/page-concepts/page-templates/)
+2. You can make modifications to the login page components:
+    - Changing the [app logo](/learn/how-tos/changing-app-logo/) will change the logo for this page, too
+    - You can access the Login page from Pages Resource [![](../assets/design_login-1.png)](../assets/design_login-1.png)
+    - Select the _page container_ and change the _Class name_ and _Image_ location from the _Style_ property to change the background image and style [![](../assets/design_login_style.png)](../assets/design_login_style.png)
 
-[UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
+[Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
 - 1\. How to Navigate between Pages in
-    - [Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
-    - [Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
+    - [i. Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
+    - [ii. Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
 - [2\. How to pass parameters to pages](/learn/how-tos/passing-parameters-pages/)
 - [3\. How to pass parameters to partial pages](/learn/how-tos/passing-parameters-partial-page/)
 - [4\. How to use static variable to pass data between pages](/learn/how-tos/use-static-variable-pass-data-pages/)

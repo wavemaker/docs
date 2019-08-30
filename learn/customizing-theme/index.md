@@ -3,15 +3,15 @@ title: "Customizing Theme"
 id: ""
 ---
 
-Before trying to customize the app Theme, it is recommended you that familiarise with the Theme implementation from [document](http://www.wavemaker.com/learn/app-development/ui-design/themes/#customise-theme) regarding the build, import and application of a Theme in WaveMaker app.
+Before trying to customize the app Theme, it is recommended you that familiarise with the Theme implementation from [this document](http://www.wavemaker.com/learn/app-development/ui-design/themes/#customise-theme) regarding the build, import and application of a Theme in WaveMaker app.
 
-### to change background of an application?
+### How to change background of an application?
 
-- and update the value for **@body-bg**
+- Edit _variables.less_ and update the value for **@body-bg**.
 
-### to use the web fonts in the theme?
+### How to use the web fonts in the theme?
 
-- use the **fonts** in the theme, copy the web fonts(.ttf, .eot, woff) in the font folder and include the font definition in variable.less:
+- To use the **web fonts** in the theme, copy the web fonts(.ttf, .eot, woff) in the font folder and include the font definition in variable.less:
     
     @font-face {
      font-family: 'robotoregular';
@@ -22,7 +22,7 @@ Before trying to customize the app Theme, it is recommended you that familiarise
      url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
     }
     
-- the font definitions are added the same need to be applied. For this change the font family specifications in the variable.less to point to the above-defined font family name (robotoregular, in this case). Note the second font family name (Arial, in this case) will be the fallback option.
+- Once the font definitions are added the same need to be applied. For this change the font family specifications in the variable.less to point to the above-defined font family name (robotoregular, in this case). Note the second font family name (Arial, in this case) will be the fallback option.
     
     //== Typography
     //
@@ -35,1764 +35,2460 @@ Before trying to customize the app Theme, it is recommended you that familiarise
     @font-family-base:        @font-family-sans-serif;
     
 
-### to style various components of WaveMaker App?
+### How to style various components of WaveMaker App?
 
-app (Web & Mobile) theme is based on the BootStrap CSS markup. The various components can be styled using the corresponding Bootstrap classes defined in the LESS files. In the following sections the various app components and the style properties are listed along with the class name and the file where the class is defined. Use these to make styling changes. Remember to [, import and re-apply the theme](/learn/app-development/ui-design/themes/) to enforce the changes.
+WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The various components can be styled using the corresponding Bootstrap classes defined in the LESS files. In the following sections the various app components and the style properties are listed along with the class name and the file where the class is defined. Use these to make styling changes. Remember to [build, import and re-apply the theme](/learn/app-development/ui-design/themes/) to enforce the changes.
 
-: Some of Bootswatch themes might not have all these variables defined.
+**NOTE**: Some of Bootswatch themes might not have all these variables defined.
 
-### to style header element?
+### How to style header element?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-header
+**Variable Name**
 
-Color
+**Example**
+
+Header
+
+.app-header
+
+Background Color
+
+style.less
 
 @wm-header-bg-color
 
 #2196f3
 
-Color
+Border Color
+
+style.less
 
 @wm-header-border-color
 
 #ffeb3b
 
+Height
+
+style.less
+
 @wm-header-height
 
-Color
+auto
+
+Text Color
+
+style.less
 
 @wm-header-text-color
 
 #fff
 
-### to style footer element?
+### How to style footer element?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-footer
+**Variable Name**
 
-Color
+**Example**
+
+Footer
+
+.app-footer
+
+Background Color
+
+style.less
 
 @wm-footer-bg-color
 
 #F5F7FA
 
-Color
+Border Color
+
+style.less
 
 @wm-footer-border-color
 
 #ccc
 
+Height
+
+style.less
+
 @wm-footer-height
 
-Color
+auto
+
+Text Color
+
+style.less
 
 @wm-footer-text-color
 
 #F5F7FA
 
-### to style topnav element?
+### How to style topnav element?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-top-nav
+**Variable Name**
 
-Color
+**Example**
+
+TopNav
+
+.app-top-nav
+
+Background Color
+
+variables.less
 
 @navbar-default-bg
 
 #2090EA
 
-Hover Color
+Background Hover Color
+
+variables.less
 
 @navbar-default-hover-bg
 
-Color
+transparent
+
+Border Color
+
+variables.less
 
 @navbar-default-border
 
-Color
+transparent
+
+Text Color
+
+variables.less
 
 @navbar-default-color
 
 #000
 
-### to style leftnav element?
+### How to style leftnav element?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-Navigation
+**Variable Name**
 
-\-left-panel
+**Example**
 
-Color
+Left Navigation
+
+.app-left-panel
+
+Background Color
+
+style.less
 
 @wm-left-panel-bg
 
 #fff
 
-Hover color
+Background Hover color
+
+style.less
 
 @wm-left-panel-link-hover-bg
 
 #F4F4F4
 
-Color
+Border Color
+
+style.less
 
 @wm-left-panel-border-color
 
 #CFDBE2
 
-Border
+Link Border
+
+style.less
 
 @wm-left-panel-list-border
 
 #e6e5e5
 
-Hover Border
+Link Hover Border
+
+style.less
 
 @wm-left-panel-link-hover-border-color
 
-Text Color
+transparent
+
+Link Text Color
+
+style.less
 
 @wm-left-panel-link-color
 
 #4f5256
 
-Hover Text
+Link Hover Text
+
+style.less
 
 @wm-left-panel-link-hover-text-color
 
-Link Background Color
+inherit
+
+Active Link Background Color
+
+style.less
 
 @wm-left-panel-link-active-bg
 
 #f7f7f7
 
-Background Color
+Dropdown Background Color
+
+style.less
 
 @wm-left-panel-dropdown-menu-bg
 
-### to style rightnav element?
+transparent
 
-**Name**
+### How to style rightnav element?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-Navigation
+**Class Name**
 
-\-right-panel
+**Variable Name**
 
-Color
+**Example**
+
+Right Navigation
+
+.app-right-panel
+
+Background Color
+
+style.less
 
 @wm-right-panel-bg
 
 #fff
 
-Color
+Border Color
+
+style.less
 
 @wm-right-panel-border-color
 
 #CFDBE2
 
-Text Color
+Link Text Color
+
+style.less
 
 @wm-right-panel-btn-color
 
 #515253
 
-Border
+Link Border
+
+style.less
 
 @wm-right-panel-list-border
 
 #e6e5e5
 
-### to style Cards Widget?
+### How to style Cards Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-card
+**Variable Name**
 
-Background Color
+**Example**
 
-\-card-header
+Cards
+
+.app-card
+
+Header Background Color
+
+style.less
+
+.app-card-header
 
 \-
 
-Color
+transparent
 
-\-title
+Text Color
+
+style.less
+
+.card-title
 
 \-
 
 #333
 
-### to style Data Table Widget?
+### How to style Data Table Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-tables
+**Variable Name**
 
-Color
+**Example**
+
+Data tables
+
+.table
+
+Background Color
+
+variables.less
 
 @table-bg
 
 #fff
 
-Color
+Border Color
+
+variables.less
 
 @table-border-color
 
 #eee
 
-Hover Color
+Background Hover Color
+
+variables.less
 
 @table-bg-hover
 
 #eee
 
-Active Color
+Background Active Color
+
+variables.less
 
 @table-bg-active
 
 #eee
 
-Background Color
+Header Background Color
+
+style.less
 
 @table-header-bg
 
 #fff
 
-### to style List Widget?
+### How to style List Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-livelist-container
+**Variable Name**
 
-Color
+**Example**
 
-\-group-item
+List
+
+.app-livelist-container
+
+Background Color
+
+variables.less
+
+.list-group-item
 
 @list-group-bg
 
 #fff
 
-Color
+Border Color
 
-\-group-item
+variables.less
+
+.list-group-item
 
 @list-group-border
 
 #ddd
 
-Radius
+Border Radius
 
-\-group-item
+variables.less
+
+.list-group-item
 
 @list-group-border-radius
 
 2px
 
-Hover Color
+Background Hover Color
 
-\-group-item
+variables.less
+
+.list-group-item
 
 @list-group-hover-bg
 
 #f5f5f5
 
-Text Color
+Active Text Color
 
-\-group-item
+variables.less
+
+.list-group-item
 
 @list-group-active-color
 
 #fff
 
-Background Color
+Active Background Color
 
-\-group-item
+variables.less
+
+.list-group-item
 
 @list-group-active-bg
 
 #fff
 
-Border Color
+Active Border Color
 
-\-group-item
+variables.less
+
+.list-group-item
 
 @list-group-active-border
 
 #448AFF
 
-Items Active Text Color
+Content Items Active Text Color
 
-\-group-item
+variables.less
+
+.list-group-item
 
 @list-group-active-text-color
 
 #448AFF
 
-Text Color
+Disabled Text Color
 
-\-group-item
+variables.less
+
+.list-group-item
 
 @list-group-disabled-color
 
 #777
 
-Background Color
+Disabled Background Color
 
-\-group-item
+variables.less
+
+.list-group-item
 
 @list-group-disabled-bg
 
 #ddd
 
-Items Disabled Text Color
+Content Items Disabled Text Color
 
-\-group-item
+variables.less
+
+.list-group-item
 
 @list-group-disabled-text-color
 
 #777
 
-Text Color
+Link Text Color
+
+variables.less
 
 @list-group-link-color
 
 #555
 
-Hover Color
+Link Hover Color
+
+variables.less
 
 @list-group-link-hover-color
 
 #555
 
-Text Color
+Heading Text Color
+
+variables.less
 
 @list-group-link-heading-color
 
 #333
 
-### to style Pagination of Live Widgets?
+### How to style Pagination of Live Widgets?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-datanavigator
+**Variable Name**
 
-Color
+**Example**
+
+Pagination
+
+.app-datanavigator
+
+Text Color
+
+variables.less
+
+.basic
 
 @pagination-color
 
 #333
 
-Color
+Background Color
+
+variables.less
 
 @pagination-bg
 
 #fff
 
-Color
+Border Color
+
+variables.less
 
 @pagination-border
 
 #ddd
 
-Text Color
+Hover Text Color
+
+variables.less
 
 @pagination-hover-color
 
 #448AFF
 
-Background Color
+Hover Background Color
+
+variables.less
 
 @pagination-hover-bg
 
 #ddd
 
-Border Color
+Hover Border Color
+
+variables.less
 
 @pagination-hover-border
 
 #ddd
 
-Text Color
+Active Text Color
+
+variables.less
 
 @pagination-active-color
 
 #fff
 
-Background Color
+Active Background Color
+
+variables.less
 
 @pagination-active-bg
 
 #448AFF
 
-Border Color
+Active Border Color
+
+variables.less
 
 @pagination-active-border
 
 #fff
 
-Text Color
+Disabled Text Color
+
+variables.less
 
 @pagination-disabled-color
 
 #777
 
-Background Color
+Disabled Background Color
+
+variables.less
 
 @pagination-disabled-bg
 
 #fff
 
-Border Color
+Disabled Border Color
+
+variables.less
 
 @pagination-disabled-border
 
 #ddd
 
-Color
+.pager
+
+Background Color
+
+variables.less
 
 @pager-bg
 
 #fff
 
-Color
+Border Color
+
+variables.less
 
 @pager-border
 
 #ddd
 
-Radius
+Border Radius
+
+variables.less
 
 @pager-border-radius
 
 30px
 
-Background Color
+Hover Background Color
+
+variables.less
 
 @pager-hover-bg
 
 #ddd
 
-Background Color
+Active Background Color
+
+variables.less
 
 @pager-active-bg
 
 #448AFF
 
-Border Color
+Active Border Color
+
+variables.less
 
 @pager-active-color
 
 #fff
 
-Text Color
+Disabled Text Color
+
+variables.less
 
 @pager-disabled-color
 
 #777
 
-### to style Accordion Widget?
+### How to style Accordion Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-accordion
+**Variable Name**
 
-Color
+**Example**
 
-\-accordion-panel
+Accordion
+
+.app-accordion
+
+Background Color
+
+style.less
+
+.app-accordion-panel
 
 \-
 
 #fff
 
+Heading Background Color
+
+style.less
+
+.panel-heading
+
+transparent
+
+### How to style Panel Widget?
+
+**Property**
+
+**File Name**
+
+**Class Name**
+
+**Variable Name**
+
+**Example**
+
+Panel
+
+.panel
+
 Background Color
 
-\-heading
-
-### to style Panel Widget?
-
-**Name**
-
-**Name**
-
-**Name**
-
-Color
+variables.less
 
 @panel-bg
 
 #fff
 
-Padding
+Body Padding
+
+variables.less
 
 @panel-body-padding
 
 10px
 
-Color
+Border Color
+
+variables.less
 
 @panel-inner-border
 
 #f0f0f0
 
-Background Color
+Footer Background Color
+
+variables.less
 
 @panel-footer-bg
 
 #fff
 
-Padding
+Footer Padding
+
+variables.less
 
 @panel-footer-padding
 
 5px
 
-### to style Tabs Widget?
+### How to style Tabs Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-tabs
+**Variable Name**
 
-Color
+**Example**
 
-\-tabs
+Tabs
+
+.app-tabs
+
+Background Color
+
+variables.less
+
+.nav-tabs
 
 @nav-tabs-bg
 
 #fff
 
-Color
+Text Color
+
+variables.less
 
 @nav-tabs-color
 
 #7a7a7a
 
-Color
+Border Color
+
+variables.less
 
 @nav-tabs-border-color
 
 #ddd
 
-Padding
+Link Padding
+
+variables.less
 
 @nav-link-padding
 
 12px
 
-Active Hover Background Color
+Link Active Hover Background Color
+
+variables.less
 
 @nav-tabs-active-link-hover-bg
 
-Active Hover Text Color
+transparent
+
+Link Active Hover Text Color
+
+variables.less
 
 @nav-tabs-active-link-hover-color
 
 #333
 
-Active Hover Border Color
+Link Active Hover Border Color
+
+variables.less
 
 @nav-tabs-active-link-hover-border-color
 
 #ddd
 
-Link color
+Disabled Link color
+
+variables.less
 
 @nav-disabled-link-color
 
 #777
 
-Link Hover Color
+Disabled Link Hover Color
+
+variables.less
 
 @nav-disabled-link-hover-color
 
 #777
 
-### to style Wizard Widget?
+### How to style Wizard Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-wizard
+**Variable Name**
 
-Color
+**Example**
 
-\-
+Wizard
 
-#fff
+.app-wizard
 
 Background Color
 
-\-wizard-heading
-
-\-
-
-Step Title Color
-
-\-title
-
-\-
-
-#448AFF
-
-Step Background Color
-
-\-wizard-step.active a
-
-\-
-
-#448AFF
-
-Step Text Color
-
-\-wizard-step.active a
+style.less
 
 \-
 
 #fff
 
-### to style Button Widget?
+Heading Background Color
 
-**Name**
+style.less
 
-**Name**
+.app-wizard-heading
 
-**Name**
+\-
 
-Color
+transparent
 
-\-default
+Current Step Title Color
+
+style.less
+
+.step-title
+
+\-
+
+#448AFF
+
+Active Step Background Color
+
+style.less
+
+.app-wizard-step.active a
+
+\-
+
+#448AFF
+
+Active Step Text Color
+
+style.less
+
+.app-wizard-step.active a
+
+\-
+
+#fff
+
+### How to style Button Widget?
+
+**Property**
+
+**File Name**
+
+**Class Name**
+
+**Variable Name**
+
+**Example**
+
+Buttons
+
+.btn
+
+Text Color
+
+variable.less
+
+.btn-default
 
 @btn-default-color
 
 #5e5e5e
 
-Color
+Background Color
+
+variable.less
 
 @btn-default-bg
 
 #fff
 
-Color
+Border Color
+
+variable.less
 
 @btn-default-border
 
 #ECEFF1
 
-Button Text Color
+Primary Button Text Color
 
-\-primary
+variable.less
+
+.btn-primary
 
 @btn-primary-color
 
 #fff
 
-Button Background Color
+Primary Button Background Color
+
+variable.less
 
 @btn-primary-bg
 
 #448AFF
 
-Button Border Color
+Primary Button Border Color
+
+variable.less
 
 @btn-primary-border
 
 #448AFF
 
-Color
+Text Color
 
-\-success
+variable.less
+
+.btn-success
 
 @btn-success-color
 
 #fff
 
-Color
+Background Color
+
+variable.less
 
 @btn-success-bg
 
 #4CAF50
 
-Color
+Border Color
+
+variable.less
 
 @btn-success-border
 
 #4CAF50
 
-Color
+Text Color
 
-\-info
+variable.less
+
+.btn-info
 
 @btn-info-color
 
 #fff
 
-Color
+Background Color
+
+variable.less
 
 @btn-info-bg
 
 #03A9F4
 
-Color
+Border Color
+
+variable.less
 
 @btn-info-border
 
 #03A9F4
 
-Color
+Text Color
 
-\-warning
+variable.less
+
+.btn-warning
 
 @btn-warning-color
 
 #fff
 
-Color
+Background Color
+
+variable.less
 
 @btn-warning-bg
 
 #FFB300
 
-Color
+Border Color
+
+variable.less
 
 @btn-warning-border
 
 #FFB300
 
-Color
+Text Color
 
-\-danger
+variable.less
+
+.btn-danger
 
 @btn-danger-color
 
 #fff
 
-Color
+Background Color
+
+variable.less
 
 @btn-danger-bg
 
 #F44336
 
-Color
+Border Color
+
+variable.less
 
 @btn-danger-border
 
 #F44336
 
-Text Color
+Disabled Text Color
+
+variable.less
 
 @btn-link-disabled-color
 
-### to style Calendar Widget?
+transparent
 
-**Name**
+### How to style Calendar Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-Color
+**Class Name**
 
-\-calendar
+**Variable Name**
+
+**Example**
+
+Calendar
+
+Text Color
+
+style.less
+
+.app-calendar
 
 @wm-calendar-text-color
 
 #ccc
 
-Date Text Color
+Current Date Text Color
 
-\-today
+style.less
+
+.fc-today
 
 \-
 
 #448AFF
 
-### to style Date Widget?
+### How to style Date Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-Picker
+**Variable Name**
 
-\-date
+**Example**
 
-Color
+Date Picker
+
+.app-date
+
+Text Color
+
+style.less
+
+thead
 
 @wm-datepicker-text-color
 
 #000
 
-Background Color
+Header Background Color
+
+style.less
+
+thead
 
 @wm-datepicker-header-bg
 
 #128ff2
 
-Text Hover Background Color
+Date Text Hover Background Color
+
+style.less
+
+.btn
 
 @wm-datepicker-btn-hover-bg
 
 #f0f0f0
 
-### to style Switch & Toggle Widget?
+### How to style Switch & Toggle Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-switch
+**Variable Name**
 
-Color
+**Example**
+
+Switch
+
+.app-switch
+
+Border Color
+
+style.less
+
+.btn
 
 \-
 
 #ddd
 
-Background Color
+Active Background Color
 
-\-switch-overlay
+style.less
+
+.app-switch-overlay
 
 \-
 
 #448AFF
 
-### to style Text Widget?
+### How to style Text Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-1
+**Variable Name**
 
-1
+**Example**
+
+Text
+
+heading 1
+
+variables.less
+
+.h1
 
 @font-size-h1
 
 36px
 
-2
+heading 2
 
-2
+.h2
 
 @font-size-h2
 
 30px
 
-3
+heading 3
 
-3
+.h3
 
 @font-size-h3
 
 24px
 
-4
+heading 4
 
-4
+.h4
 
 @font-size-h4
 
 18px
 
-5
+heading 5
 
-5
+.h5
 
 @font-size-h5
 
 13px
 
-6
+heading 6
 
-6
+.h6
 
 @font-size-h6
 
 12px
 
-Background Color
+Default Background Color
 
-\-default
+variables.less
+
+.label-default
 
 @label-default-bg
 
 #777
 
-Background Color
+Primary Background Color
 
-\-primary
+variables.less
+
+.label-primary
 
 @label-primary-bg
 
 #448AFF
 
-Background Color
+Success Background Color
 
-\-success
+variables.less
+
+.label-success
 
 @label-success-bg
 
 #4CAF50
 
-Background Color
+Info Background Color
 
-\-info
+variables.less
+
+.label-info
 
 @label-info-bg
 
 #03A9F4
 
-Background Color
+Warning Background Color
 
-\-warning
+variables.less
+
+.label-warning
 
 @label-warning-bg
 
 #FFB300
 
-Background Color
+Danger Background Color
 
-\-danger
+variables.less
+
+.label-danger
 
 @label-danger-bg
 
 #F44336
 
-Text Color
+Default Text Color
+
+variables.less
 
 @label-color
 
 #fff
 
-Text
+Muted Text
 
-\-muted
+variables.less
+
+.text-muted
 
 @text-muted
 
 #777
 
-Link Hover Text Color
+Label Link Hover Text Color
+
+variables.less
 
 @label-link-hover-color
 
 #fff
 
-### to style Message Widget?
+### How to style Message Widget?
 
-This is the widget used to display the [messages](/learn/app-development/variables/notification-action/) in WaveMaker Apps.
+This is the widget used to display the [Notification messages](/learn/app-development/variables/notification-action/) in WaveMaker Apps.
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
+
+**Variable Name**
+
+**Example**
+
+Alert
+
+.alert
+
+Padding
+
+variables.less
 
 @alert-padding
 
 8px
 
-Radius
+Border Radius
+
+variables.less
 
 @alert-border-radius
 
 2px
 
-Weight
+Font Weight
+
+variables.less
 
 @alert-link-font-weight
 
-Alert Backgorund Color
+bold
 
-\-success
+Success Alert Backgorund Color
+
+variables.less
+
+.alert-success
 
 @alert-success-bg
 
 #4CAF50
 
-Alert Text Color
+Success Alert Text Color
+
+variables.less
 
 @alert-success-text
 
 #fff
 
-Alert Border Color
+Success Alert Border Color
+
+variables.less
 
 @alert-success-border
 
 #4CAF50
 
-Alert Backgorund Color
+Info Alert Backgorund Color
 
-\-info
+variables.less
+
+.alert-info
 
 @alert-info-bg
 
 #03A9F4
 
-Alert Text Color
+Info Alert Text Color
+
+variables.less
 
 @alert-info-text
 
 #fff
 
-Alert Border Color
+Info Alert Border Color
+
+variables.less
 
 @alert-info-border
 
 #03A9F4
 
-Alert Backgorund Color
+Warning Alert Backgorund Color
 
-\-warning
+variables.less
+
+.alert-warning
 
 @alert-warning-bg:
 
 #FFB300
 
-Alert Text Color
+Warning Alert Text Color
+
+variables.less
 
 @alert-warning-text
 
 #fff
 
-Alert Border Color
+Warning Alert Border Color
+
+variables.less
 
 @alert-warning-border
 
 #FFB300
 
-Alert Backgorund Color
+Danger Alert Backgorund Color
 
-\-danger
+variables.less
+
+.alert-danger
 
 @alert-danger-bg
 
 #F44336
 
-Alert Text Color
+Danger Alert Text Color
+
+variables.less
 
 @alert-danger-text
 
 #fff
 
-Alert Border Color
+Danger Alert Border Color
+
+variables.less
 
 @alert-danger-border
 
 #F44336
 
-### to style Progress Bar Widget?
+### How to style Progress Bar Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-Bar
+**Variable Name**
 
-\-progress
+**Example**
 
-Color
+Progress Bar
+
+.app-progress
+
+Background Color
+
+variables.less
 
 @progress-bg
 
 #f5f5f5
 
-Color
+Text Color
+
+variables.less
 
 @progress-bar-color
 
 #fff
 
-Radius
+Border Radius
+
+variables.less
 
 @progress-border-radius
 
 2px
 
-Progress Bar
+Default Progress Bar
+
+variables.less
 
 @progress-bar-bg
 
 #448AFF
 
-Progress Bar
+Success Progress Bar
+
+variables.less
 
 @progress-bar-success-bg
 
 #4CAF50
 
-Progress Bar
+Warning Progress Bar
+
+variables.less
 
 @progress-bar-warning-bg
 
 #FFB300
 
-Progress Bar
+Danger Progress Bar
+
+variables.less
 
 @progress-bar-danger-bg
 
 #F44336
 
-Progress Bar
+Info Progress Bar
+
+variables.less
 
 @progress-bar-info-bg
 
 #03A9F4
 
-### to style Spinner Widget?
+### How to style Spinner Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-spinner
+**Variable Name**
 
-Color
+**Example**
+
+Spinner
+
+.app-spinner
+
+Background Color
+
+style.less
 
 \-
 
-Color
+transparent
 
-\-text
+Text Color
+
+style.less
+
+.spinner-text
 
 \-
 
 #448AFF
 
-Color
+Icon Color
 
-\-image
+style.less
+
+.spinner-image
 
 \-
 
 #448AFF
 
-### to style Dropdown Menu Widget?
+### How to style Dropdown Menu Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
+
+**Variable Name**
+
+**Example**
 
 Menu
+
+.dropdown
+
+Dropdown Menu
+
+variables.less
 
 @dropdown-bg
 
 #fff
 
-Color
+Border Color
+
+variables.less
 
 @dropdown-border
 
 #ECEFF1
 
-color
+Caret color
+
+variables.less
 
 @dropdown-caret-color
 
 #000
 
-Color
+Link Color
+
+variables.less
 
 @dropdown-link-color
 
 #333
 
-Hover Color
+Link Hover Color
+
+variables.less
 
 @dropdown-link-hover-color
 
 #000
 
-Hover Background Color
+Link Hover Background Color
+
+variables.less
 
 @dropdown-link-hover-bg
 
 #f5f5f5
 
-Active Color
+Link Active Color
+
+variables.less
 
 @dropdown-link-active-color
 
 #fff
 
-Active Background Color
+Link Active Background Color
+
+variables.less
 
 @dropdown-link-active-bg
 
 #448AFF
 
-Disabled Color
+Link Disabled Color
+
+variables.less
 
 @dropdown-link-disabled-color
 
 #777
 
-### to style Navbar Widget?
+### How to style Navbar Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-navbar
+**Variable Name**
 
-Color
+**Example**
+
+Navbar
+
+.app-navbar
+
+Background Color
+
+variables.less
 
 @navbar-default-bg
 
 #2090EA
 
-Color
+Text Color
+
+variables.less
 
 @navbar-default-color
 
 #777
 
-Color
+Border Color
+
+variables.less
 
 @navbar-default-border
+
+transparent
+
+Height
+
+variables.less
 
 @navbar-height
 
 50px
 
+Margin
+
+variables.less
+
 @navbar-margin-bottom
 
 0px
 
-Radius
+Border Radius
+
+variables.less
 
 @navbar-border-radius
 
 2px
 
-Horizontal
+Padding Horizontal
+
+variables.less
 
 @navbar-padding-horizontal
 
 8px
 
-Vertical
+Padding Vertical
+
+variables.less
 
 @navbar-padding-vertical
 
 4px
 
-Text Color
+Brand Text Color
+
+variables.less
 
 @navbar-default-brand-color
 
-Hover Color
+Brand Hover Color
+
+variables.less
 
 @navbar-default-brand-hover-color
 
-Hover Background Color
+Brand Hover Background Color
+
+variables.less
 
 @navbar-default-brand-hover-bg
 
-Navbar Text Color
+Inverse Navbar Text Color
 
-\-inverse
+variables.less
+
+.navbar-inverse
 
 @navbar-inverse-color
 
 #ccc
 
-Navbar Background Color
+Inverse Navbar Background Color
+
+variables.less
 
 @navbar-inverse-bg
 
 #222
 
-Navbar Border Color
+Inverse Navbar Border Color
+
+variables.less
 
 @navbar-inverse-border
 
 #000
 
-Navbar Link Text Color
+Inverse Navbar Link Text Color
+
+variables.less
 
 @navbar-inverse-link-color
 
 #ccc
 
-Navbar Link Hover Text Color
+Inverse Navbar Link Hover Text Color
+
+variables.less
 
 @navbar-inverse-link-hover-color
 
 #fff
 
-Navbar Link Hover Background Color
+Inverse Navbar Link Hover Background Color
+
+variables.less
 
 @navbar-inverse-link-hover-bg
 
-Navbar Link Active Text Color
+transparent
+
+Inverse Navbar Link Active Text Color
+
+variables.less
 
 @navbar-inverse-link-active-color
 
 #fff
 
-Navbar Link Active Background Color
+Inverse Navbar Link Active Background Color
+
+variables.less
 
 @navbar-inverse-link-active-bg
 
 #222
 
-Navbar Link Disabled Text Color
+Inverse Navbar Link Disabled Text Color
+
+variables.less
 
 @navbar-inverse-link-disabled-color
 
 #444
 
-Navbar Link Disabled Background Color
+Inverse Navbar Link Disabled Background Color
+
+variables.less
 
 @navbar-inverse-link-disabled-bg
 
-Brand Text Color
+transparent
+
+Inverse Brand Text Color
+
+variables.less
 
 @navbar-inverse-brand-color
 
 #ccc
 
-Brand Hover Color
+Inverse Brand Hover Color
+
+variables.less
 
 @navbar-inverse-brand-hover-color
 
 #fff
 
-Brand Hover Background Color
+Inverse Brand Hover Background Color
+
+variables.less
 
 @navbar-inverse-brand-hover-bg
 
-### to style Popover Widget?
+transparent
 
-**Name**
+### How to style Popover Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-\-popover
+**Class Name**
 
-Color
+**Variable Name**
+
+**Example**
+
+Popover
+
+.app-popover
+
+Background Color
+
+variables.less
 
 @popover-bg
 
 #fff
 
+Width
+
+variables.less
+
 @popover-max-width
 
 300px
 
-Color
+Border Color
+
+variables.less
 
 @popover-border-color
 
 #ddd
 
-Background Color
+Title Background Color
+
+variables.less
 
 @popover-title-bg
 
 #ddd
 
-Width
+Arrow Width
+
+variables.less
 
 @popover-arrow-width
 
 10px
 
-Color
+Arrow Color
+
+variables.less
 
 @popover-arrow-color
 
 #fff
 
-### to style Carousel Widget?
+### How to style Carousel Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-\-carousel
+**Variable Name**
 
-Text Shadow
+**Example**
 
-\-caption
+Carousel
+
+.app-carousel
+
+Caption Text Shadow
+
+variables.less
+
+.carousel-caption
 
 @carousel-text-shadow
 
 0 1px 2px #ddd
 
-Text Color
+Caption Text Color
 
-\-caption
+variables.less
+
+.carousel-caption
 
 @carousel-caption-color
 
 #fff
 
-Arrows Color
+Control Arrows Color
 
-\-control
+variables.less
+
+.carousel-control
 
 @carousel-control-color
 
 #808080
 
-Arrows Width
+Control Arrows Width
 
-\-control
+variables.less
+
+.carousel-control
 
 @carousel-control-width
 
 20px
 
-Arrows Transparency
+Control Arrows Transparency
 
-\-control
+variables.less
+
+.carousel-control
 
 @carousel-control-opacity
 
 0.5
 
-Arrows Font Size
+Control Arrows Font Size
 
-\-control
+variables.less
+
+.carousel-control
 
 @carousel-control-font-size
 
 20px
 
-Active Background Color
+Indicator Active Background Color
 
-\-indicators
+variables.less
+
+.carousel-indicators
 
 @carousel-indicator-active-bg
 
 #fff
 
-Border Color
+Indicator Border Color
 
-\-indicators
+variables.less
+
+.carousel-indicators
 
 @carousel-indicator-border-color
 
 #fff
 
-### to style Modal Dialog/Dialog Widget?
+### How to style Modal Dialog/Dialog Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-Background Color
+**Variable Name**
 
-\-content
+**Example**
+
+Dialog
+
+.modal
+
+Content Background Color
+
+variables.less
+
+.modal-content
 
 @modal-content-bg
 
 #fff
 
-Border Color
+Content Border Color
+
+variables.less
 
 @modal-content-border-color
 
-(0,0,0,.2)
+rgba(0,0,0,.2)
 
-Background Color
+Header Background Color
 
-\-header
+style.less
+
+.modal-header
 
 @modal-header-bg
 
 #2090EA
 
-Text Color
+Header Text Color
+
+style.less
 
 @modal-header-color
 
 #fff
 
-Border Color
+Header Border Color
+
+variables.less
 
 @modal-header-border-color
 
-Color
+transparent
 
-\-backdrop
+Backdrop Color
+
+variables.less
+
+.modal-backdrop
 
 @modal-backdrop-bg
 
 #000
 
-Border Color
+Footer Border Color
 
-\-footer
+variables.less
+
+.modal-footer
 
 @modal-footer-border-color
 
-Padding
+transparent
+
+Inner Padding
+
+variables.less
 
 @modal-inner-padding
 
 1em
 
-Padding
+Title Padding
+
+variables.less
 
 @modal-title-padding
 
 1em 2em
 
-large
+Modal large
 
-\-lg
+variables.less
+
+.modal-lg
 
 @modal-lg
 
 900px
 
-Medium
+Modal Medium
 
-\-md
+variables.less
+
+.modal-md
 
 @modal-md
 
 500px
 
-Small
+Modal Small
 
-\-sm
+variables.less
+
+.modal-sm
 
 @modal-sm
 
 300px
 
-### to style Badge available for certain Widgets?
+### How to style Badge available for certain Widgets?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-Color
+**Variable Name**
+
+**Example**
+
+Badge
+
+.badge
+
+Text Color
+
+variables.less
 
 @badge-color
 
 #fff
 
-Weight
+Font Weight
+
+variables.less
 
 @badge-font-weight
 
-Height
+bold
+
+Line Height
+
+variables.less
 
 @badge-line-height
 
 1
 
-Radius
+Border Radius
+
+variables.less
 
 @badge-border-radius
 
 2px
 
-Hover Color
+Link Hover Color
+
+variables.less
 
 @badge-link-hover-color
 
 #fff
 
-Color
+Background Color
+
+variables.less
 
 @badge-bg
 
 #ddd
 
-Text Color
+Active Text Color
+
+variables.less
 
 @badge-active-color
 
 #448AFF
 
-Background Color
+Active Background Color
+
+variables.less
 
 @badge-active-bg
 
 #fff
 
-### to style Segmented Control (Mobile) Widget?
+### How to style Segmented Control (Mobile) Widget?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-Segmented Control
+**Variable Name**
 
-\-segmented-control
+**Example**
 
-Color
+Mobile Segmented Control
 
-\-group
+.app-segmented-control
+
+Background Color
+
+style.less
+
+.btn-group
 
 \-
 
 #448AFF
 
-Color
+Text Color
+
+style.less
+
+.btn
 
 \-
 
 #f5f5f5
 
-border Color
+Active border Color
+
+style.less
+
+.btn.active
 
 \-
 
 #fff
 
-Text Color
+Active Text Color
+
+style.less
+
+.btn.active
 
 \-
 
 #fff
 
-### to style Tab Bar (Mobile)?
+### How to style Tab Bar (Mobile)?
 
-**Name**
+**Property**
 
-**Name**
+**File Name**
 
-**Name**
+**Class Name**
 
-bar mobile
+**Variable Name**
 
-\-tabbar
+**Example**
 
-Color
+Tab bar mobile
+
+.app-tabbar
+
+Background Color
+
+variables.less
 
 @navbar-default-bg
 
 #448AFF
 
-Hover Color
+Background Hover Color
+
+variables.less
 
 @navbar-default-hover-bg
 
-Color
+transparent
+
+Border Color
+
+variables.less
 
 @navbar-default-border
 
-Color
+transparent
+
+Text Color
+
+variables.less
 
 @navbar-default-color
 
 #000
 
-Themes
+Customize Themes
 
 - [1\. How to change background of an application](#background)
 - [2\. How to use web fonts in theme](#web-fonts)
 - [3\. How to style app components](#styling)
-    - [header](#head)
-    - [footer](#foot)
-    - [tonav](#topnav)
-    - [leftnav](#leftnav)
-    - [rightnav](#rightnav)
-    - [Cards](#cards)
-    - [Data Table](#data-table)
-    - [List](#list)
-    - [pagination](#pagin)
-    - [Accordion](#accordion)
-    - [Panel](#panel)
-    - [Tabs](#tabs)
-    - [Wizard](#wizard)
-    - [Button](#button)
-    - [Calendar](#calendar)
-    - [Date](#date)
-    - [Switch & Toggle](#switch-toggle)
-    - [Text](#text)
-    - [Message](#message)
-    - [Progress Bar](#progress-bar)
-    - [Spinner](#spinner)
-    - [Dropdown Menu](#dropdown-menu)
-    - [Navbar](#navbar)
-    - [Popover](#popover)
-    - [Carousel](#carousel)
-    - [Modal Dialog](#dialog)
-    - [Badge](#badge)
-    - [Segmented Control (Mobile)](#segmented-control)
-    - [Tabbar (Mobile)](#tab-bar)
+    - [i. header](#head)
+    - [ii. footer](#foot)
+    - [iii. tonav](#topnav)
+    - [iv. leftnav](#leftnav)
+    - [v. rightnav](#rightnav)
+    - [vi. Cards](#cards)
+    - [vii. Data Table](#data-table)
+    - [viii. List](#list)
+    - [ix. pagination](#pagin)
+    - [x. Accordion](#accordion)
+    - [xi. Panel](#panel)
+    - [xii. Tabs](#tabs)
+    - [xiii. Wizard](#wizard)
+    - [xiv. Button](#button)
+    - [xv. Calendar](#calendar)
+    - [xvi. Date](#date)
+    - [xvii. Switch & Toggle](#switch-toggle)
+    - [xviii. Text](#text)
+    - [xix. Message](#message)
+    - [xx. Progress Bar](#progress-bar)
+    - [xxi. Spinner](#spinner)
+    - [xxii. Dropdown Menu](#dropdown-menu)
+    - [xxiii. Navbar](#navbar)
+    - [xxiv. Popover](#popover)
+    - [xxv. Carousel](#carousel)
+    - [xxvi. Modal Dialog](#dialog)
+    - [xxvii. Badge](#badge)
+    - [xxviii. Segmented Control (Mobile)](#segmented-control)
+    - [xxix. Tabbar (Mobile)](#tab-bar)
 - [4\. How to customize existing theme](/learn/how-tos/customize-existing-theme/)

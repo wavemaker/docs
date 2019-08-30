@@ -5,6 +5,6 @@ id: ""
 
 \[sc name="DT-TOC"\]
 
-### traversal
+### Table traversal
 
-### Options
+### Export Options

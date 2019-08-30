@@ -3,250 +3,290 @@ title: "Chips"
 id: ""
 ---
 
-represent complex entities in small blocks, such as a contact. Contact chips may represent contact information in a compact way. Chips can be used for various types of entities, including free-form text, predefined text, rules, or contacts. Chips may also contain icons.
+**Chips** represent complex entities in small blocks, such as a contact. Contact chips may represent contact information in a compact way. Chips can be used for various types of entities, including free-form text, predefined text, rules, or contacts. Chips may also contain icons.
 
 [![](../assets/chips_design.png)](../assets/chips_design.png)
 
-**to use this widget: ** Chips widget is a growing trend across social and communication-related apps. This can afford recipient selection using tokenized auto-completing text fields. This kind of UI is more concise than list-based interfaces and more visually rich, intuitive and directly manipulable (manage recipients by touching their token).
+**When to use this widget: **Using Chips widget is a growing trend across social and communication-related apps. This can afford recipient selection using tokenized auto-completing text fields. This kind of UI is more concise than list-based interfaces and more visually rich, intuitive and directly manipulable (manage recipients by touching their token).
 
-**can Chips Widget be used in WaveMaker**
+**Where can Chips Widget be used in WaveMaker**
 
-Widget is one of the Form Widgets. It is available to be used as a standalone widget or as a part of Live Forms, Data Entry Dialogs etc.
+Chips Widget is one of the Form Widgets. It is available to be used as a standalone widget or as a part of Live Forms, Data Entry Dialogs etc.
 
-1. Chips widget property can be bound to a dataset of valid values for eg – Email Addresses, Hobbies, Skillset, Categories etc.. User can add new values but these new values will not be added to the dataset.
-2. acts as **/autocomplete** widget. When the user starts typing in the Chips widget, it triggers the selection of values from the dataset and shows the corresponding values for the character pressed.
-3. **Only Select** (Default: false) - If Allow Only Select is set to true, Chips will restrict adding values other than in the selection. By default, there is no restriction. But note that these new values will not be added to the dataset.
-4. **Size** (Default: 0) - By default, there is no limit on the number of chips to add. If it set to true, after Max Size is reached the input box to add more will be hidden and will be shown again after some of the elements are deleted.
-5. **reorder** property can be used to allow the user to reorder the Chip Elements at runtime, using a simple drag and drop operation.
-6. Functionality: User can  between the chip items using the keyboard right and left keys. Also using the delete/backspace keys the Chip item can be 
-7. **item class name** property from styles tab can be used to apply styles for individual items of the Chip:
-    1. class can be added conditionally when bound to an expression ( [below for use case example](#ex3)), or
-    2. names can be entered (without any condition), these classes will be applied to all the chips.
+# Features
 
-**difference between Search and Chips widget:**
+1. The Chips widget **Value** property can be bound to a dataset of valid values for eg – Email Addresses, Hobbies, Skillset, Categories etc.. User can add new values but these new values will not be added to the dataset.
+2. It acts as **search/autocomplete** widget. When the user starts typing in the Chips widget, it triggers the selection of values from the dataset and shows the corresponding values for the character pressed.
+3. **Allow Only Select** (Default: false) - If Allow Only Select is set to true, Chips will restrict adding values other than in the selection. By default, there is no restriction. But note that these new values will not be added to the dataset.
+4. **Max Size** (Default: 0) - By default, there is no limit on the number of chips to add. If it set to true, after Max Size is reached the input box to add more will be hidden and will be shown again after some of the elements are deleted.
+5. **Enable reorder** property can be used to allow the user to reorder the Chip Elements at runtime, using a simple drag and drop operation.
+6. Runtime Functionality: User can **navigate** between the chip items using the keyboard right and left keys. Also using the delete/backspace keys the Chip item can be **Deleted**.
+7. **Chip item class name** property from styles tab can be used to apply styles for individual items of the Chip:
+    1. a class can be added conditionally when bound to an expression ([see below for use case example](#ex3)), or
+    2. class names can be entered (without any condition), these classes will be applied to all the chips.
 
-1. Search, you can select only one element, whereas in Chips multiple elements can be selected.
-2. Search, you cannot edit or remove selected items, whereas Chips support these features.
+**The difference between Search and Chips widget:**
 
-## a Chip
+1. In Search, you can select only one element, whereas in Chips multiple elements can be selected.
+2. In Search, you cannot edit or remove selected items, whereas Chips support these features.
 
-1. for a field by typing it in the input box. Select the required chip and by clicking on to it or enter key press
-2. add chip other than listed items and hit enter that will add to existing list
-3. you want to add an item which is not there in the populated list, type the item and press enter. It will be added to the chips list but it will not be added to the dataset.
+## Adding a Chip
 
-## a Chip
+1. Search for a field by typing it in the input box. Select the required chip and by clicking on to it or enter key press
+2. Enter add chip other than listed items and hit enter that will add to existing list
+3. If you want to add an item which is not there in the populated list, type the item and press enter. It will be added to the chips list but it will not be added to the dataset.
 
-1. on to the cross button of each Chip element.
-2. can also select a Chip element and press DELETE button
-3. backspace in the input will select the last Chips element and later deletes it.
+## Deleting a Chip
 
-## a Chip
+1. Click on to the cross button of each Chip element.
+2. User can also select a Chip element and press DELETE button
+3. Hitting backspace in the input will select the last Chips element and later deletes it.
 
-1. user can double click on the Chip element and edit it.
-2. double click, you will see a format like: “displayField < dataField >”
-3. the changes and hit the enter key. Changes will be persisted.
+## Edit a Chip
 
-## Chip Elements
+1. The user can double click on the Chip element and edit it.
+2. On double click, you will see a format like: “displayField < dataField >”
+3. Make the changes and hit the enter key. Changes will be persisted.
 
-1. user can drag and drop the element in the required place.
+## Reorder Chip Elements
 
-name is a unique identifier for the chips. Special characters and spaces are not allowed in widget name.
+1. The user can drag and drop the element in the required place.
 
-placeholder is a text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
+# Properties
 
-Index
+**Property**
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+**Description**
+
+Name
+
+The name is a unique identifier for the chips. Special characters and spaces are not allowed in widget name.
+
+Placeholder
+
+A placeholder is a text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
+
+**Accessibility**
+
+Tab Index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-width of Chip widget can be specified in em, pt, px or % (i.e 50px, 75%).
-
-height of Chip widget can be specified in em, pt, px or % (i.e 50px, 75%).
+**Layout**
 
 Width
 
-this property to set the width of the chip item input box.
+The width of Chip widget can be specified in em, pt, px or % (i.e 50px, 75%).
+
+Height
+
+The height of Chip widget can be specified in em, pt, px or % (i.e 50px, 75%).
+
+Input Width
+
+Use this property to set the width of the chip item input box.
 
 You can select from:
 
-- – which is the normal Chip widget size, 170px, or
-- – 100% width of the container
+- Default – which is the normal Chip widget size, 170px, or
+- Full – 100% width of the container
 
-this property to a variable to populate the list of values to display. Can be bound to a Variable.
+**Dataset**
 
-Key
+Value
 
-field from the above Value dataset based on which the search needs to be performed for fetching Chip Elements for user selection.
+Set this property to a variable to populate the list of values to display. Can be bound to a Variable.
 
-Source
+Search Key
 
-property sets the image to be displayed in the search results. Pick from the fields from the above Dataset Value.
+The field from the above Value dataset based on which the search needs to be performed for fetching Chip Elements for user selection.
 
-field
+Picture Source
 
-property is useful when the dataSet is an array of objects. It decides the dataValue to be returned by the widget. If set to "All Fields", the whole object is returned against user selection. If set to a particular field, the returned value will be the value of that field in the selected object. In the case of multi-selection, the returned dataValue will also be an array.
+This property sets the image to be displayed in the search results. Pick from the fields from the above Dataset Value.
 
-Field
+Data field
 
-property sets the displayValue to show in the select editor when the list is populated using the dataSet property.
+This property is useful when the dataSet is an array of objects. It decides the dataValue to be returned by the widget. If set to "All Fields", the whole object is returned against user selection. If set to a particular field, the returned value will be the value of that field in the selected object. In the case of multi-selection, the returned dataValue will also be an array.
 
-Expression
+Display Field
 
-is an advanced property that gives more control over what is displayed in the drop-down select list. A Display Expression uses a Javascript expression to format exactly what is shown.
+This property sets the displayValue to show in the select editor when the list is populated using the dataSet property.
 
-by
+Display Expression
 
-allows for multiple selections for ordering the display of rows based on fields in asc or desc order - up arrow for asc and down arrow for desc.
+This is an advanced property that gives more control over what is displayed in the drop-down select list. A Display Expression uses a Javascript expression to format exactly what is shown.
 
-**Value**
+Order by
 
-is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not the dataValue returned by the widget.
+This allows for multiple selections for ordering the display of rows based on fields in asc or desc order - up arrow for asc and down arrow for desc.
 
-Focus
+**Default Value**
 
-property makes the Chip to get focus automatically when the page loads.
+Value
 
-only
+This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not the dataValue returned by the widget.
 
-this property prevents the user from being able to change the data value of a widget. This property can be bound to a boolean value.
+**Behavior**
 
-Size
+Auto Focus
 
-max size is set, chips will restrict adding more than max size.
+This property makes the Chip to get focus automatically when the page loads.
 
-Position
+Read only
 
-this property to change the position of the newly added chip item as
+Selecting this property prevents the user from being able to change the data value of a widget. This property can be bound to a boolean value.
 
-- \- The input box appears in the beginning followed by the selected chips
-- – The input box appears at the end of the chip item list, this is the default setting
+Max Size
 
-Only Select
+If max size is set, chips will restrict adding more than max size.
 
-Allow Only Select is set to true, chips will restrict adding values other than in the selection. By default, there is no restriction.
+Input Position
 
-Reorder
+Use this property to change the position of the newly added chip item as
 
-property will allow users to reorder the Chip Elements at runtime. This is a bindable property.
+- _First_ - The input box appears in the beginning followed by the selected chips
+- _Last_ – The input box appears at the end of the chip item list, this is the default setting
 
-determines whether or not a component is visible. It is a bindable property.
+Allow Only Select
 
-on Demand (visible only when show property is bound to a variable)
+If Allow Only Select is set to true, chips will restrict adding values other than in the selection. By default, there is no restriction.
 
-this property is set and show property is bound, the initialization of the widget will be deferred until the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+Enable Reorder
 
-the disabled property is true (checked) the widget becomes display-only and user input will not be accepted. It can also set programmatically by binding it to a boolean type variable.
+This property will allow users to reorder the Chip Elements at runtime. This is a bindable property.
 
-Chars
+Show
 
-minimum number of characters to be entered by the user before the search query is triggered. The value should be greater than 0. The default value is 1.
+Showing determines whether or not a component is visible. It is a bindable property.
 
-event handler is called each time the chip item value changes.
+Load on Demand (visible only when show property is bound to a variable)
 
-**Events**
+When this property is set and show property is bound, the initialization of the widget will be deferred until the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-Chip Click
+Disabled
 
-event handler is called each time the chip item is clicked.
+If the disabled property is true (checked) the widget becomes display-only and user input will not be accepted. It can also set programmatically by binding it to a boolean type variable.
 
-**Events**
+Min Chars
 
-Before Add
+The minimum number of characters to be entered by the user before the search query is triggered. The value should be greater than 0. The default value is 1.
 
-event gives handle to user whether to continue or abort to add current chip item
+# Events
 
-1. the function does not return anything the chip item will be added
-2. the function returns false, then chip item will not be added
-3. the function returns anything other than false, chip item will be added
+Event
 
-Add
+Description
 
-event gives a handle on the successful addition of the Chip item.
+Change
 
-Before Remove
+This event handler is called each time the chip item value changes.
 
-event gives handle to user whether to continue or abort removing current chip item
+**Mouse Events**
 
-1. the function does not return anything the chip item will be removed
-2. the function returns false, then chip item will not be removed
-3. the function returns anything other than false, chip item will be removed
+On Chip Click
 
-Remove
+This event handler is called each time the chip item is clicked.
 
-event gives handle to user on successful removal
+**Callback Events**
 
-Chip Select
+On Before Add
 
-event handler is called each time the chip item is selected.
+This event gives handle to user whether to continue or abort to add current chip item
 
-Before Service Call
+1. If the function does not return anything the chip item will be added
+2. If the function returns false, then chip item will not be added
+3. If the function returns anything other than false, chip item will be added
 
-event is triggered before sending the service call for fetching the search results.
+On Add
 
-Before Reorder
+This event gives a handle on the successful addition of the Chip item.
 
-event gives handle to user whether to continue or abort reordering current chip item
+On Before Remove
 
-1. the function does not return anything the chip item will be reordered
-2. the function returns false, then chip item will not be reordered
-3. the function returns anything other than false, chip item will be reordered
+This event gives handle to user whether to continue or abort removing current chip item
 
-Reorder
+1. If the function does not return anything the chip item will be removed
+2. If the function returns false, then chip item will not be removed
+3. If the function returns anything other than false, chip item will be removed
 
-event gives a handle on successful reordered in the following form:
+On Remove
 
-1Reorder = function($event, widget, $data, $changedItem)
+This event gives handle to user on successful removal
+
+On Chip Select
+
+This event handler is called each time the chip item is selected.
+
+On Before Service Call
+
+This event is triggered before sending the service call for fetching the search results.
+
+On Before Reorder
+
+This event gives handle to user whether to continue or abort reordering current chip item
+
+1. If the function does not return anything the chip item will be reordered
+2. If the function returns false, then chip item will not be reordered
+3. If the function returns anything other than false, chip item will be reordered
+
+On Reorder
+
+This event gives a handle on successful reordered in the following form:
+
+Page.chips1Reorder = function($event, widget, $data, $changedItem)
 
 where
 
 - _$data_ - is the object containing the current chip item data,
-- _$changedItem - _ and specifying the position of the chip item
+- _$changedItem - _gives _newIndex_ and _oldIndex_ specifying the position of the chip item
 
-# Cases
+# Use Cases
 
-**1: Adding contacts and sending Emails**:  In this use case, you will be using the chips widget as email recipients and create a UI of Composing an Email.
+**Example 1: Adding contacts and sending Emails**:  In this use case, you will be using the chips widget as email recipients and create a UI of Composing an Email.
 
 [![](../assets/chips_ex1.png)](../assets/chips_ex1.png)
 
-- a database called ProfileDB and a table named Profile with basic fields like first name, last name, job title, email.
-- **:**
-    1. and drop the chips widget onto the canvas.
-    2. a variable based on the database CRUD APIs that is bound to Profile Table. [more from here](/learn/app-development/variables/database-crud/#)
-    3. this variable to the dataset value property.
-    4. Data Field as email
-    5. Display Field as FirstName
-    6. and Drop a TextArea Field for composing messages
-    7. a [Service for Sending Email](/learn/app-development/services/3rd-party-libraries/using-3rd-party-jar-files/)
-    8. a variable based on the APIs auto-generated for the methods from the Java service.  [more from here](/learn/app-development/variables/java-services/)
-    9. the Data tab, bind the values to those returned by the Chips widget.
-    10. and Drop a button – Give the caption as Send. On Click of that button trigger the service variable for Java service.
+- Have a database called ProfileDB and a table named Profile with basic fields like first name, last name, job title, email.
+- **Steps:**
+    1. Drag and drop the chips widget onto the canvas.
+    2. Create a variable based on the database CRUD APIs that is bound to Profile Table. [Know more from here](/learn/app-development/variables/database-crud/#).
+    3. Bind this variable to the dataset value property.
+    4. Choose Data Field as email
+    5. Choose Display Field as FirstName
+    6. Drag and Drop a TextArea Field for composing messages
+    7. Create a [Java Service for Sending Email](/learn/app-development/services/3rd-party-libraries/using-3rd-party-jar-files/).
+    8. Create a variable based on the APIs auto-generated for the methods from the Java service. [Know more from here](/learn/app-development/variables/java-services/).
+    9. From the Data tab, bind the values to those returned by the Chips widget.
+    10. Drag and Drop a button – Give the caption as Send. On Click of that button trigger the service variable for Java service.
 
-**2: Use in Live Form**:
+**Example 2: Use in Live Form**:
 
-1. two more tables in Profile DB namely Hobbies and Skillsets. Have ID and Name as fields in both.
-2. a one-to-many relationship between id -  HobbyID
-3. a Live Form based on a data source – ProfileDB.
-4. Advanced Settings and set the widget property for the fields Hobbies and Skillset to chips and also display expression as Hobbies and Skillset respectively.
-5. Save and Run the App. You will observe for the Hobbies and Skillsets you are able to enter multiple values.
-6. multiple values will have to be delimited before you save the date in live form. This can be done through scripting. 
-    1. to the Live Form events tab and for the "On before service call" event
-    2. JavaScript from the drop down and in the script tab  add the code as below
+1. Create two more tables in Profile DB namely Hobbies and Skillsets. Have ID and Name as fields in both.
+2. Create a one-to-many relationship between id -  HobbyID
+3. Create a Live Form based on a data source – ProfileDB.
+4. From Advanced Settings and set the widget property for the fields Hobbies and Skillset to chips and also display expression as Hobbies and Skillset respectively.
+5. Now Save and Run the App. You will observe for the Hobbies and Skillsets you are able to enter multiple values.
+6. The multiple values will have to be delimited before you save the date in live form. This can be done through scripting. 
+    1. Go to the Live Form events tab and for the "On before service call" event
+    2. Select JavaScript from the drop down and in the script tab  add the code as below
         
-        1Beforeservicecall = function($event, $operation, $data) { 
+        Page.liveform1Beforeservicecall = function($event, $operation, $data) { 
                   $data.<field\_name> = $data.<field\_name>.join(','); 
            };
         
 
-**3: Use a conditional class**:
+**Example 3: Use a conditional class**:
 
-1. sample hrdb and create a CRUD Variable for the Employee table.
-2. and drop Chips widget and bind the Dataset Value property to the HRDB employee variable
-3. Data field property to All Fields,
-4. the Styles tab bind Chip item class name to the following expression: : item.datavalue.department.name === 'Engineering'? 'skyblue' : 'mustard' This will check if employee's department name is engineering applies "skyblue" class else applies "mustard" class (note: here "item" denotes the chip object.) [![](../assets/chips_ex3_1.png)](../assets/chips_ex3_1.png)[![](../assets/chips_ex3_2.png)](../assets/chips_ex3_2.png)
-5. the following class to the app using the Style tab – for skyblue and mustard
+1. Import sample hrdb and create a CRUD Variable for the Employee table.
+2. Drag and drop Chips widget and bind the Dataset Value property to the HRDB employee variable
+3. Set Data field property to All Fields,
+4. From the Styles tab bind Chip item class name to the following expression: bind: item.datavalue.department.name === 'Engineering'? 'skyblue' : 'mustard' This will check if employee's department name is engineering applies "skyblue" class else applies "mustard" class (note: here "item" denotes the chip object.) [![](../assets/chips_ex3_1.png)](../assets/chips_ex3_1.png)[![](../assets/chips_ex3_2.png)](../assets/chips_ex3_2.png)
+5. Add the following class to the app using the Style tab – for skyblue and mustard
     
-    \-chips > li.skyblue .app-chip {
+    .nav.app-chips > li.skyblue .app-chip {
         background-color: #50b4dd;
         color: white;
         font-weight: normal;
@@ -258,8 +298,8 @@ where
     }
     
     [![](../assets/chips_ex3_3.png)](../assets/chips_ex3_3.png)
-6. the page [![](../assets/chips_ex3_4.png)](../assets/chips_ex3_4.png)
-7. the chip item class name (or Class Name property) as skyblue, will apply skyblue class to all the chips at runtime. [![](../assets/chips_ex3_5.png)](../assets/chips_ex3_5.png)
+6. Preview the page [![](../assets/chips_ex3_4.png)](../assets/chips_ex3_4.png)
+7. Setting the chip item class name (or Class Name property) as skyblue, will apply skyblue class to all the chips at runtime. [![](../assets/chips_ex3_5.png)](../assets/chips_ex3_5.png)
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 
@@ -269,10 +309,10 @@ where
 - [3.4 Checkbox](/learn/app-development/widgets/form/checkbox/)
 - [3.5 CheckboxSet](/learn/app-development/widgets/form/checkboxset/)
 - [3.6 Chips](/learn/app-development/widgets/form/chips/)
-    - [Features](#features)
-    - [Properties](#properties)
-    - [Events](#events)
-    - [Use Cases](#use-cases)
+    - [i. Features](#features)
+    - [ii. Properties](#properties)
+    - [iii. Events](#events)
+    - [iv. Use Cases](#use-cases)
 - [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
 - [3.8 Currency](/learn/app-development/widgets/form/currency/)
 - [3.9 Date](/learn/app-development/widgets/form-widgets/date-time-datetime/)

@@ -5,15 +5,15 @@ id: ""
 
 We will see how to implement Forgot Password feature using Java Service for Sending Email with Default password.
 
-:
+**Scenario**:
 
-1. the Login screen, when the user chooses ForgotPassword, the user will be prompted to enter their email address.
-2. default password will be sent to the user at the email address entered.
-3. password in the database also will be updated with the default password.
+1. On the Login screen, when the user chooses ForgotPassword, the user will be prompted to enter their email address.
+2. The default password will be sent to the user at the email address entered.
+3. The password in the database also will be updated with the default password.
 
 The following files were imported into the Java Service:
 
- javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -74,7 +74,7 @@ public String sendEmail(String toEmailAddress) {
 	        }
 	    }
 
- String getPassword()
+public String getPassword()
 	{
 		String temp = Long.toHexString(Double.doubleToLongBits(Math.random()));
 		return temp;
@@ -84,11 +84,11 @@ public String sendEmail(String toEmailAddress) {
 
 Update Query:
 
- LOGIN set PASSWORD = :pwd where USER\_NAME = :name;
+update LOGIN set PASSWORD = :pwd where USER\_NAME = :name;
 
 JavaScript Function:
 
- = function (variable, data) {
+Page.ForgotPasswordonSuccess = function (variable, data) {
     Page.Variables.UpdatePWD.setInput("name", Page.Widgets.form1.formWidgets.text1.datavalue);
     Page.Variables.UpdatePWD.setInput("pwd", data);
     Page.Variables.UpdatePWD.update();
@@ -96,7 +96,7 @@ JavaScript Function:
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vQ3CCQRozlqEZeDc0iacU9GfWn4K5qFOYW7ukW-yH8Tm3sPYKWdTlBzzwMWyDx_cNPCqsOXzdqQNf8M/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-Service Use Cases
+Java Service Use Cases
 
 - [1\. How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)
 - [2\. How to implement forgot password feature using Java Service](/learn/how-tos/implementing-forgot-password-feature-using-java-service/)

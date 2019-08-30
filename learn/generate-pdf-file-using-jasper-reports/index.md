@@ -3,18 +3,18 @@ title: "How to generate PDF File using Jasper Reports"
 id: ""
 ---
 
-To generate PDF file using Jasper Reports, d needs to be consumed from an external REST service. This data should be made available as a downloadable PDF file, which is generated internally using Jasper.
+To generate PDF file using Jasper Reports, data needs to be consumed from an external REST service. This data should be made available as a downloadable PDF file, which is generated internally using Jasper. 
 
-: Using HRDB Sample and listing all the departments using a REST API.
+**Example**: Using HRDB Sample and listing all the departments using a REST API.
 
 [![](../assets/Departments_city.jpg)](../assets/Departments_city.jpg)
 
 Steps to generate PDF file using Jasper reports are as follows:
 
-- a  WaveMaker Web App and give the name as RestJasper.
-- HRDB and navigate to API Designer to get the REST API URL for /hrdb/Department. [![](../assets/jasper_hrdb_department.png)](../assets/jasper_hrdb_department.png)
-- that your app is deployed and use the Deploy URL instead of Run URL.
-- JSON output looks typically as follows:
+- Create a  WaveMaker Web App and give the name as RestJasper.
+- Import HRDB and navigate to API Designer to get the REST API URL for /hrdb/Department. [![](../assets/jasper_hrdb_department.png)](../assets/jasper_hrdb_department.png)
+- Ensure that your app is deployed and use the Deploy URL instead of Run URL.
+- The JSON output looks typically as follows:
     
     {
     	"totalPages": 1,
@@ -89,8 +89,8 @@ Steps to generate PDF file using Jasper reports are as follows:
     	\]
     }
     
-- the jars highlighted as shown below and add them to lib [![](../assets/Jasper_jars.png)](../assets/Jasper_jars.png)
-- **Jasper as dependency in pom.xml along with required exclusions:  ** is the relevant section that needs to be added by the developer.
+- Download the jars highlighted as shown below and add them to lib [![](../assets/Jasper_jars.png)](../assets/Jasper_jars.png)
+- **Add Jasper as dependency in pom.xml along with required exclusions:  **Here is the relevant section that needs to be added by the developer.
     
     <dependency>
                 <groupId>net.sf.jasperreports</groupId>
@@ -152,7 +152,7 @@ Steps to generate PDF file using Jasper reports are as follows:
                 </exclusions>
             </dependency>
     
-- a .jrxml file that describes the template  - The template has a header title and the page content has a table which has field names and the field data. To generate the PDF as shown in the above example, the following template was used. [here for details](http://community.jaspersoft.com/wiki/jasperreports-library-samples)
+- Create a .jrxml file that describes the template  - The template has a header title and the page content has a table which has field names and the field data. To generate the PDF as shown in the above example, the following _jrxml_ template was used. [Refer here for details](http://community.jaspersoft.com/wiki/jasperreports-library-samples)
     
     <?xml version="1.0" encoding="UTF-8"?>
     <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="81afe112-ee1b-4443-8d1c-cb6d9ab95dd8">
@@ -271,7 +271,7 @@ Steps to generate PDF file using Jasper reports are as follows:
       </detail>
     </jasperReport>
     
-- a Java Service named GenerateReports and create a method named generatePDFReport that takes – String –jrxml, String – database (if any), HttpServletResponse  - response
+- Create a Java Service named GenerateReports and create a method named generatePDFReport that takes – String –jrxml, String – database (if any), HttpServletResponse  - response
     
      Imports
     import javax.servlet.http.HttpServletRequest;
@@ -366,8 +366,8 @@ Steps to generate PDF file using Jasper reports are as follows:
         }
     }
     
-- the file in the location as shown below: [![](../assets/Jasper_jrxml_location.png)](../assets/Jasper_jrxml_location.png)
-- the Main page drag and drop an onto the canvas.
-- the Source Property from the properties panel for Iframe. [![](../assets/Jasper_properties_iframe.png)](../assets/Jasper_properties_iframe.png)
-- and run the project – The PDF Report gets generated. You can download the PDF file. [![](../assets/run_project.jpg)](../assets/run_project.jpg)
-- complete output is as follows: [![](../assets/output.jpg)](../assets/output.jpg)
+- Place the _.jrxml_ file in the location as shown below: [![](../assets/Jasper_jrxml_location.png)](../assets/Jasper_jrxml_location.png)
+- In the Main page drag and drop an **Iframe** onto the canvas.
+- Set the Source Property from the properties panel for Iframe. [![](../assets/Jasper_properties_iframe.png)](../assets/Jasper_properties_iframe.png)
+- Save and run the project – The PDF Report gets generated. You can download the PDF file. [![](../assets/run_project.jpg)](../assets/run_project.jpg)
+- The complete output is as follows: [![](../assets/output.jpg)](../assets/output.jpg)

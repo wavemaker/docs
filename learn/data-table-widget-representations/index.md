@@ -3,15 +3,15 @@ title: "Using Widgets to represent Data Table Columns"
 id: ""
 ---
 
-**:** How to represent Data Table data using appropriate widgets. We will customise the Data Table to display:
+**Scenario:** How to represent Data Table data using appropriate widgets. We will customise the Data Table to display:
 
-- field as a primary button
-- field as danger button with a click event triggering the display of alert notification variable
-- as an image widget
+- Firstname field as a primary button
+- Lastname field as danger button with a click event triggering the display of alert notification variable
+- Picurl as an image widget
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vTcp0kSObZBafcmfPYzP_u5u5laMiU_51op-HCPvVRkQhDiWNQMH3NLCrI2VDFhRnITGlLEQfqdASpH/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
+[Data Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
 
 - [1\. Basic Table Usage](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage/)
 - [2\. How to customise table actions](/learn/how-tos/data-table-actions/)

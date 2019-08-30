@@ -3,195 +3,237 @@ title: "Cards - Properties, Events & Methods"
 id: ""
 ---
 
-Card Widget is contained within a List and as such, you can set the [Properties](/learn/app-development/widgets/datalive/list/list-properties-events-methods/#properties) too.
+# Properties
 
-the title for the List. It is bindable.
+Card Widget is contained within a List and as such, you can set the [List Properties](/learn/app-development/widgets/datalive/list/list-properties-events-methods/#properties) too.
 
-Heading
+**Event**
 
-bindable property defines the subheading or title for the list.
+**Description**
 
-name is a unique identifier for the list.
+Title
 
-property allows you to set the height of the picture, by default set to 200px
+Set the title for the List. It is bindable.
 
-property specifies the source for the picture, it is bindable.
+Sub Heading
 
-bindable property specifies the title on the picture
+This bindable property defines the subheading or title for the list.
 
-width of list can be specified in em, pt, px or % (i.e 50px, 75%).
+Name
 
-height of list can be specified in em, pt, px or % (i.e 50px, 75%).
+The name is a unique identifier for the list.
 
-Actions
+**Picture**
 
-property sets the actions for the widget. To set the data and events see [widget](/learn/app-development/widgets/navigation/dropdown-menu/)
+Height
 
-Label
+This property allows you to set the height of the picture, by default set to 200px
 
-for menu items. It can be bound to a variable or set to a field from the Dataset Value variable.
+Source
 
-Icon
+This property specifies the source for the picture, it is bindable.
 
-for menu items. It can be bound to a variable or set to a field from the Dataset Value variable.
+Title
 
-Link
+This bindable property specifies the title on the picture
 
-for the items. It can be bound to a variable or set to a field from the Dataset Value variable. **:** item link has priority over actions i.e. when the link is selected the onSelect actions won't get executed.
+**Layout**
 
-Task
+Width
 
-for menu items generated dynamically. This is the action that will be triggered when the user clicks on the Menu Item.
+The width of list can be specified in em, pt, px or % (i.e 50px, 75%).
 
-Role
+Height
 
-for menu items generated dynamically. You can assign a property to 'userrole' which contains comma separated user roles. Each item will be evaluated with given 'userrole' for that item to that of the logged in user roles, from security. If any of the user roles bound to 'userrole' property matches then that menu item will be shown else will be hidden.
+The height of list can be specified in em, pt, px or % (i.e 50px, 75%).
 
-Actions
+**Actions**
 
-a menu widget is required the sub-items can be mentioned in the children. It can be bound to a variable or set to a field from the Dataset Value variable.
+Menu Actions
 
-determines whether or not a component is visible. It is a bindable property.
+This property sets the actions for the widget. To set the data and events see [menu widget](/learn/app-development/widgets/navigation/dropdown-menu/)
 
-on Demand (visible only when show property is bound to a variable)
+Action Label
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+Label for menu items. It can be bound to a variable or set to a field from the Dataset Value variable.
 
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
+Action Icon
 
-Icon class
+Label for menu items. It can be bound to a variable or set to a field from the Dataset Value variable.
 
-bindable property defines the class of the icon that is applied to the button.
+Action Link
 
-Url
+Link for the items. It can be bound to a variable or set to a field from the Dataset Value variable. **Note:** item link has priority over _onSelect_ actions i.e. when the link is selected the onSelect actions won't get executed.
 
-can give Url of the image.
+Action Task
 
-**Events**
+Task for menu items generated dynamically. This is the action that will be triggered when the user clicks on the Menu Item.
 
-click
+User Role
 
-event handler is called whenever the click event is triggered on the list.
+Role for menu items generated dynamically. You can assign a property to 'userrole' which contains comma separated user roles. Each item will be evaluated with given 'userrole' for that item to that of the logged in user roles, from security. If any of the user roles bound to 'userrole' property matches then that menu item will be shown else will be hidden.
 
-double click
+Sub Actions
 
-event handler is called whenever the double click event is triggered on the list.
+When a menu widget is required the sub-items can be mentioned in the children. It can be bound to a variable or set to a field from the Dataset Value variable.
 
-mouse enter
+**Behavior**
 
-event handler is called whenever the mouse enters the list.
+Show
 
-mouse leave
+Showing determines whether or not a component is visible. It is a bindable property.
 
-event handler is called whenever the mouse leaves the list.
+Load on Demand (visible only when show property is bound to a variable)
 
-**Events**
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-tap
+Animation
 
-event handler is called whenever the tap event is triggered on the list.
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
 
-double tap
+**Graphics**
 
-event handler is called whenever the double tap event is triggered on the list.
+Title Icon class
 
-**Events**
+This bindable property defines the class of the icon that is applied to the button.
 
-Key Press
+Icon Url
 
-the user hits ENTER/Return while the focus is on the list, execute the specified event handler.
+You can give Url of the image.
 
-**Events**
+# Events
 
-before data render
+**Event**
 
-event handler is called when the data is set using the pagination.
+**Description**
 
-pagination change
+**Mouse Events**
 
-event handler is called when the page is changed through navigation controls.
+On click
 
-reorder
+This event handler is called whenever the click event is triggered on the list.
 
-event is triggered when the item in a list is reordered. For this, the Enable Reorder property has to be set.
+On double click
 
-selection limit exceed
+This event handler is called whenever the double click event is triggered on the list.
 
-event is triggered when selected items cross the value set for the Selection Limit property.
+On mouse enter
+
+This event handler is called whenever the mouse enters the list.
+
+On mouse leave
+
+This event handler is called whenever the mouse leaves the list.
+
+**Touch Events**
+
+On tap
+
+This event handler is called whenever the tap event is triggered on the list.
+
+On double tap
+
+This event handler is called whenever the double tap event is triggered on the list.
+
+**Keyboard Events**
+
+Enter Key Press
+
+When the user hits ENTER/Return while the focus is on the list, execute the specified event handler.
+
+**Callback Events**
+
+On before data render
+
+This event handler is called when the data is set using the pagination.
+
+On pagination change
+
+This event handler is called when the page is changed through navigation controls.
+
+On reorder
+
+This event is triggered when the item in a list is reordered. For this, the Enable Reorder property has to be set.
+
+On selection limit exceed
+
+This event is triggered when selected items cross the value set for the Selection Limit property.
+
+# Methods
 
 The card has few methods exposed on widget scope which can be accessed via JavaScript. For the following script samples, we are considering the hrdb Employee table. EmployeeList is bound to the Live Variable corresponding to the Employee table.
 
-- **list data**:
+- **Clear list data**:
     
-    (); //Clear the list items.
+    Page.Widgets.EmployeeList.clear(); //Clear the list items.
     
-- **select a list item**:
+- **To select a list item**:
     
-    (0); 
+    Page.Widgets.EmployeeList.selectItem(0); 
     //Selects first item , the parameter can be index or object.
     
-- **deselect item**:
+- **To deselect item**:
     
-    (0); 
+    Page.Widgets.EmployeeList.deselectItem(0); 
     //Deselects first item, the parameter can be index or object.
     
-- **change navigation**:
+- **To change navigation**:
     
-     = ‘Basic’; 
+    Page.Widgets.EmployeeList.navigation = ‘Basic’; 
     //Changes navigation type to Basic.
     
-- **interact with widgets of selected item**:
+- **To interact with widgets of selected item**:
     
-    \[0\].Name.caption = ‘Eric’; 
+    Page.Widgets.EmployeeList.selectedItemWidgets\[0\].Name.caption = ‘Eric’; 
     //Changes caption for Name widget of selected item to ‘Eric’.
     
-- **selected item**:
+- **Modify selected item**:
     
-     = 0; 
+    Page.Widgets.EmployeeList.selecteditem = 0; 
     //selects first item in the list.
     
-- **change the value of currentItem**: Note: currentItem and currentItemWidgets can’t be accessed through the script. But those were given as parameters for events of widgets inside list widget template. currentItem is given as item in the arguments.
+- **To change the value of currentItem**: Note: currentItem and currentItemWidgets can’t be accessed through the script. But those were given as parameters for events of widgets inside list widget template. currentItem is given as item in the arguments.
     
-     = ‘Eric’; //Sets username field value to ‘Eric’;
+    item.username = ‘Eric’; //Sets username field value to ‘Eric’;
     
-- **change the caption of username widget for currentItem**: Note: currentItem and currentItemWidgets can’t be accessed through the script. But those were given as parameters for events of widgets inside list widget template. currentItem is given as item in the arguments.
+- **To change the caption of username widget for currentItem**: Note: currentItem and currentItemWidgets can’t be accessed through the script. But those were given as parameters for events of widgets inside list widget template. currentItem is given as item in the arguments.
     
-     = ‘Eric’; 
+    currentItemWidgets.Name.caption = ‘Eric’; 
     //Sets caption of Name widget to Eric.
     
-- **preserve the reordered list**: Enable reorder allows the user to change the order of the items in the List in runtime, but the order after reordering do not persist after refresh. callback event is triggered when the order of the items in the List is changed. In the script, $data parameter has the complete order after each reorder. This data can be used to make the reorder permanent.
+- **To preserve the reordered list**: Enable reorder allows the user to change the order of the items in the List in runtime, but the order after reordering do not persist after refresh. _onReorder_ callback event is triggered when the order of the items in the List is changed. In the script, $data parameter has the complete order after each reorder. This data can be used to make the reorder permanent.
     
-    1Reorder = function ($event, $data, $changedItem) { 
+    Page.livelist1Reorder = function ($event, $data, $changedItem) { 
           //$data is the newly reordered array of items.
     };
     
 
 < Behavior Settings
 
-Cases >
+Use Cases >
 
 [1\. Live & Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
 
 - [1.1 Cards](/learn/app-development/widgets/datalive/cards/)
-    - [Data Source](/learn/app-development/widgets/datalive/cards/cards-data-source/)
-    - [Templates](/learn/app-development/widgets/datalive/cards/cards-templates/)
-        - [Profile Cards](/learn/app-development/widgets/datalive/cards/cards-templates/#profile)
-        - [Feed Cards](/learn/app-development/widgets/datalive/cards/cards-templates/#feed)
-        - [Product Cards](/learn/app-development/widgets/datalive/cards/cards-templates/#product)
-    - [Card Configuration](/learn/app-development/widgets/datalive/cards/card-configuration/)
-        - [Items per Row](/learn/app-development/widgets/datalive/cards/card-configuration/#items-per-row)
-        - [Grouping & Ordering](/learn/app-development/widgets/datalive/cards/card-configuration/#grouping-ordering)
-        - [Pagination](/learn/app-development/widgets/datalive/cards/card-configuration/#pagin)
-        - [Message](/learn/app-development/widgets/datalive/cards/card-configuration/#message)
-    - [Card Behavior Settings](/learn/app-development/widgets/datalive/cards/card-behavior-settings/)
-        - [Selection Limit](/learn/app-development/widgets/datalive/cards/card-behavior-settings/#selection)
-        - [Multiselect](/learn/app-development/widgets/datalive/cards/card-behavior-settings/#multiselect)
-        - [Item Reorder](/learn/app-development/widgets/datalive/cards/card-behavior-settings/#item-reorder)
-    - [Properties, Events & Methods](#)
-        - [Properties](#properties)
-        - [Events](#events)
-        - [Methods](#methods)
-    - [Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)
+    - [i. Data Source](/learn/app-development/widgets/datalive/cards/cards-data-source/)
+    - [ii. Templates](/learn/app-development/widgets/datalive/cards/cards-templates/)
+        - [○ Profile Cards](/learn/app-development/widgets/datalive/cards/cards-templates/#profile)
+        - [○ Feed Cards](/learn/app-development/widgets/datalive/cards/cards-templates/#feed)
+        - [○ Product Cards](/learn/app-development/widgets/datalive/cards/cards-templates/#product)
+    - [iii. Card Configuration](/learn/app-development/widgets/datalive/cards/card-configuration/)
+        - [○ Items per Row](/learn/app-development/widgets/datalive/cards/card-configuration/#items-per-row)
+        - [○ Grouping & Ordering](/learn/app-development/widgets/datalive/cards/card-configuration/#grouping-ordering)
+        - [○ Pagination](/learn/app-development/widgets/datalive/cards/card-configuration/#pagin)
+        - [○ Message](/learn/app-development/widgets/datalive/cards/card-configuration/#message)
+    - [iv. Card Behavior Settings](/learn/app-development/widgets/datalive/cards/card-behavior-settings/)
+        - [○ Selection Limit](/learn/app-development/widgets/datalive/cards/card-behavior-settings/#selection)
+        - [○ Multiselect](/learn/app-development/widgets/datalive/cards/card-behavior-settings/#multiselect)
+        - [○ Item Reorder](/learn/app-development/widgets/datalive/cards/card-behavior-settings/#item-reorder)
+    - [v. Properties, Events & Methods](#)
+        - [○ Properties](#properties)
+        - [○ Events](#events)
+        - [○ Methods](#methods)
+    - [vi. Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)
 - [1.2 Data Table](/learn/app-development/widgets/datalive/data-table/)
 - [1.3 Form](/learn/app-development/widgets/datalive/form/)
 - [1.4 List](/learn/app-development/widgets/datalive/list/)

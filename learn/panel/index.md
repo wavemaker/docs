@@ -3,288 +3,336 @@ title: "Panel"
 id: ""
 ---
 
-**panel** be used to group a set of widgets together. It has a collapsible title bar and you can add multiple panels and any number of multiple panes can be open at any given point of time.
+**A panel** can be used to group a set of widgets together. It has a collapsible title bar and you can add multiple panels and any number of multiple panes can be open at any given point of time.
 
-panel has designated sections such as header, body, and footer. [![](../assets/panel_run1.png)](../assets/panel_run1.png)
+A panel has designated sections such as header, body, and footer. [![](../assets/panel_run1.png)](../assets/panel_run1.png)
 
 [![](../assets/panel_run2.png)](../assets/panel_run2.png)
 
-- can define the of the panel to be another page, partial page or place widgets in the panel.
-- various can be set for the panel as per your needs:
+# Features
+
+- You can define the **content** of the panel to be another page, partial page or place widgets in the panel.
+- The various **properties** can be set for the panel as per your needs:
     
-    - \- entering a comma separated items or binding to a variable, would give a drop-down menu widget which can be handled.
-    - **Text** - entering text either in plain format or an HTML format will enable _icon_ on the title bar of the panel which on click would display the help content.
-    - \- lets the user collapse or expand a given panel at runtime.  Note:  When the content of Panel widget is set to a partial and the initial state is collapsed, the loading of the partial is deferred/delayed until the widget is expanded for the first time.
-    - **Full Screen** - lets the user make panel full screen
-    - \- defines the default behavior of the panel
-    - **Default Close Action** - lets user close the panel. This triggers an event, which the developer can choose to handle through JavaScript code.
-    - \- controls the animation behavior of the panel
-    - **Class** - defines the icon to be displayed on the header
+    - **Actions** - entering a comma separated items or binding to a variable, would give a drop-down menu widget which can be handled.
+    - **Help Text** - entering text either in plain format or an HTML format will enable _help icon_ on the title bar of the panel which on click would display the help content.
+    - **Collapsible** - lets the user collapse or expand a given panel at runtime.  Note:  When the content of Panel widget is set to a partial and the initial state is collapsed, the loading of the partial is deferred/delayed until the widget is expanded for the first time.
+    - **Enable Full Screen** - lets the user make panel full screen
+    - **Expanded** - defines the default behavior of the panel
+    - **Enable Default Close Action** - lets user close the panel. This triggers an _onClose_ event, which the developer can choose to handle through JavaScript code.
+    - **Animation** - controls the animation behavior of the panel
+    - **Icon Class** - defines the icon to be displayed on the header
     
     [![](../assets/panel_prop1.png)](../assets/panel_prop1.png) [![](../assets/panel_prop2.png)](../assets/panel_prop2.png)
 
-<iframe width="60%" height="350" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Panels"></iframe>
+### Usage
 
-### Styles
+<iframe width="60%" height="350" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Panels">Panel</iframe>
 
-Panel style can be set by using the **Name** option from the tab of the panel. You can also use the Conditional Class property to set the class based upon a condition. See here for [to](/learn/how-tos/use-conditional-class-property/)
+### Panel Styles
 
-<iframe width="100%" height="800" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PanelStyle">Style</iframe>
+Panel style can be set by using the **Class Name** option from the **Styles** tab of the **Properties** panel. You can also use the Conditional Class property to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/).
 
-panel has few methods exposed on widget scope which can be accessed via JavaScript. [below for usage example](#script-access)
+<iframe width="100%" height="800" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PanelStyle">Panel Style</iframe>
 
-- close a panel:
+# Methods
+
+The panel has few methods exposed on widget scope which can be accessed via JavaScript. [See below for usage example](#script-access)
+
+- to close a panel:
     
-    1.close(); //Closes panel1
+    Page.Widgets.panel1.close(); //Closes panel1
     
-- expand a panel:
+- to expand a panel:
     
-    1.expand(); //Expand panel1
+    Page.Widgets.panel1.expand(); //Expand panel1
     
-- collapse a panel:
+- to collapse a panel:
     
-    1.collapse(); //collapses panel1
+    Page.Widgets.panel1.collapse(); //collapses panel1
     
-- toggle panel status:
+- to toggle panel status:
     
-    1.toggle(); //Toggles the panel
+    Page.Widgets.panel1.toggle(); //Toggles the panel
                        // i.e expands if closed, closes if expanded
     
      
-- displays panel in full screen:
+- to displays panel in full screen:
     
-    1.toggleFullScreen(); //displayes in full screen panel1
+    Page.Widgets.panel1.toggleFullScreen(); //displayes in full screen panel1
     
-- show the help text as set from the properties panel:
+- to show the help text as set from the properties panel:
     
-    1.toggleHelp(); //displays help text
+    Page.Widgets.panel1.toggleHelp(); //displays help text
     
 
-# Access
+# Script Access
 
-**1:- (Prepare data and widgets)**
+**Step 1:- (Prepare data and widgets)**
 
-1. three variables of type ‘Employee’ entity and for 1st variable from variables tab select the variable and go to data tab and for deptid keep value as 1, do the same for others also as deptid 4, 2 for respective variables, name these variables as ‘EngineeringEmployeesData’, ‘SalesEmployeesData’, ‘MarketingEmployeesData’. [how to create variables from here.](/learn/app-development/variables/database-crud/#menu)
-2. and Drop two Panel widget.
-3. first ‘Panel’ widget as ‘engineeringPanel’ and second ‘Panel’ widget as ‘salesPanel’.
-4. ‘collapsible’ and ‘closable’ on both the panel widgets from properties panel options.
-5. ‘engineeringPanel’ uncheck the ‘expanded’ property from properties panel as shown above and for ‘salesPanel’ check the ‘Enable full screen’ option from properties panel.
-6. title of ‘engineeringPanel’ to ‘Engineering’ and subheading to ‘Dept’ and change title of ‘salesPanel’ to ‘Sales’ and subheading to ‘Dept’.
-7. ‘List’ widget in each of these panels and bind to respective variables and map template widgets to respective fields.
-8. three buttons and name the first button as ‘collapseSalesBtn’, the second one as ‘expandEngBtn’ and last one as ‘closeSalesBtn’ and also change the captions to ‘Collapse Sales Panel’, ‘Expand Engineering Panel’, ‘Close Sales Panel’.
+1. Create three variables of type ‘Employee’ entity and for 1st variable from variables tab select the variable and go to data tab and for deptid keep value as 1, do the same for others also as deptid 4, 2 for respective variables, name these variables as ‘EngineeringEmployeesData’, ‘SalesEmployeesData’, ‘MarketingEmployeesData’. [Learn how to create variables from here.](/learn/app-development/variables/database-crud/#menu)
+2. Drag and Drop two Panel widget.
+3. Name first ‘Panel’ widget as ‘engineeringPanel’ and second ‘Panel’ widget as ‘salesPanel’.
+4. Check ‘collapsible’ and ‘closable’ on both the panel widgets from properties panel options.
+5. For ‘engineeringPanel’ uncheck the ‘expanded’ property from properties panel as shown above and for ‘salesPanel’ check the ‘Enable full screen’ option from properties panel.
+6. Change title of ‘engineeringPanel’ to ‘Engineering’ and subheading to ‘Dept’ and change title of ‘salesPanel’ to ‘Sales’ and subheading to ‘Dept’.
+7. Drop ‘List’ widget in each of these panels and bind to respective variables and map template widgets to respective fields.
+8. Drop three buttons and name the first button as ‘collapseSalesBtn’, the second one as ‘expandEngBtn’ and last one as ‘closeSalesBtn’ and also change the captions to ‘Collapse Sales Panel’, ‘Expand Engineering Panel’, ‘Close Sales Panel’.
 
-**2:- (Scripting with accordion)**
+**Step 2:- (Scripting with accordion)**
 
-1. JavaScript for on click event of ‘collapseSalesBtn’ and use the following as javascript function with the following script:
+1. Select JavaScript for on click event of ‘collapseSalesBtn’ and use the following as javascript function with the following script:
     
-     = function($event, widget) {
+    Page.collapseSalesBtnClick = function($event, widget) {
         Page.Widgets.salesPanel.toggle(); //Toggles the panel
           // i.e expands if closed, closes if expanded
     };
     
-2. JavaScript for the on click event for ‘expandEngBtn’ and use the following script:
+2. Select JavaScript for the on click event for ‘expandEngBtn’ and use the following script:
     
-     = function($event, widget) {
+    Page.expandEngBtnClick = function($event, widget) {
         Page.Widgets.engineeringPanel.toggle();//Toggles the panel
          // i.e expands if closed, closes if expanded
     };
     
-3. JavaScript for the on click event for ‘goToSalesBtn’ and use the following script:
+3. Select JavaScript for the on click event for ‘goToSalesBtn’ and use the following script:
     
-     = function($event, widget) {
+    Page.expandSalesPaneBtnClick = function($event, widget) {
         Page.Widgets.salesPane.expand(); //Expands sales accordion pane.
     };
     
-4. JavaScript for the on click event for ‘closeSalesBtn’ and use the following script:
+4. Select JavaScript for the on click event for ‘closeSalesBtn’ and use the following script:
     
-     = function($event, widget) {
+    Page.closeSalesBtnClick = function($event, widget) {
         Page.Widgets.salesPanel.close(); //Closes sales panel
     };
     
 
-**3:- (Run)**
+**Step 3:- (Run)**
 
-1. on ‘Collapse Sales Panel’ and see it toggles the sales employees panel i.e if expanded closes it and if closed expands it.
-2. on ‘Expand Engineering Panel’ and see it toggles the sales employees panel i.e if expanded closes it and if closed expands it.
-3. on ‘Close Sales Panel’ and see it closes the Sales panel.
+1. Click on ‘Collapse Sales Panel’ and see it toggles the sales employees panel i.e if expanded closes it and if closed expands it.
+2. Click on ‘Expand Engineering Panel’ and see it toggles the sales employees panel i.e if expanded closes it and if closed expands it.
+3. Click on ‘Close Sales Panel’ and see it closes the Sales panel.
 
-the title of the panel. It is bindable.
+# Properties
 
-Heading
+**Property**
 
-the subheading of the panel. It is bindable.
+**Description**
 
-name is a unique identifier for the panel.
+Title
 
-Value
+Set the title of the panel. It is bindable.
 
-to be displayed in the badge span. It is bindable
+Sub Heading
 
-Type
+Set the subheading of the panel. It is bindable.
 
-bindable property controls the color of the badge. These values are default, primary, success, info, warning, danger.
+Name
 
-Text
+The name is a unique identifier for the panel.
 
-this property has a value, a "?" icon is added next to your editor. If the user points the mouse at this icon, the text you put into this helpText property will popup for the user.
+Badge Value
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+Value to be displayed in the badge span. It is bindable
 
-content(in the case of an HTML widget) or Page's content(in the case of page container widgets) will be included in the widget.
+Badge Type
 
-Actions
+This bindable property controls the color of the badge. These values are default, primary, success, info, warning, danger.
 
-bindable property sets the actions for the widget. To set the data and events see [menu widget](/learn/app-development/widgets/navigation/dropdown-menu-use-cases/)
+**Accessibility**
 
-Label
+Help Text
 
-(available only when the above Menu Actions is bound to a variable)
+If this property has a value, a "?" icon is added next to your editor. If the user points the mouse at this icon, the text you put into this helpText property will popup for the user.
 
-for anchor or menu tags generated dynamically.
+**Layout**
 
-Icon
+Height
 
-(available only when the above Menu Actions is bound to a variable)
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-for the action. Example- 'fa fa-ban' or 'glyphicon glyphicon-cloud'.
+**Content**
 
-Link
+Content
 
-(available only when the above Menu Actions is bound to a variable)
+Html content(in the case of an HTML widget) or Page's content(in the case of page container widgets) will be included in the widget.
 
-for the action item.
+**Actions**
 
-Task
+Menu Actions
 
-(available only when the above Menu Actions is bound to a variable)
+This bindable property sets the actions for the widget. To set the data and events see [dropdown menu widget](/learn/app-development/widgets/navigation/dropdown-menu-use-cases/).
 
-for menu items generated dynamically. This is the action that will be triggered when the user clicks on the Menu Item. It can be a script like: 1.show or 1.invoke() Execution order on click of Node:
-
-1. provided will be executed first.
-2. provided will be executed next.
-3. provided _ link_ will be executed last.
-
-Role
+Action Label
 
 (available only when the above Menu Actions is bound to a variable)
 
-for menu items generated dynamically. You can assign the property to 'userrole' which contains comma separated user roles. Each item will be evaluated with given 'userrole' for that item to that of the logged in user roles, from security. If any of the user roles bound to 'userrole' property matches then that menu item will be shown else will be hidden.
+Label for anchor or menu tags generated dynamically.
 
-Actions
+Action Icon
 
 (available only when the above Menu Actions is bound to a variable)
 
-an action is required the sub-items can be mentioned in the children.
+Class for the action. Example- 'fa fa-ban' or 'glyphicon glyphicon-cloud'.
 
-determines whether or not a component is visible. It is a bindable property.
+Action Link
 
-on Demand (visible only when show property is bound to a variable)
+(available only when the above Menu Actions is bound to a variable)
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+Link for the action item.
 
-control for collapsing and expanding the panel.
+Action Task
 
-full screen
+(available only when the above Menu Actions is bound to a variable)
 
-control for making the panel full screen.
+Task for menu items generated dynamically. This is the action that will be triggered when the user clicks on the Menu Item. It can be a script like: Widgets.label1.show or Variables.v1.invoke() Execution order on click of Node:
 
-property defines if the panel should be allowed to be closed.
+1. If provided _onSelect_ will be executed first.
+2. If provided _Action_ will be executed next.
+3. If provided _Action link_ will be executed last.
 
-the default state of the panel whether it is expanded or collapsed.
+User Role
 
-Close
+(available only when the above Menu Actions is bound to a variable)
 
-property defines the behavior of menu closing, it can be:
+Role for menu items generated dynamically. You can assign the property to 'userrole' which contains comma separated user roles. Each item will be evaluated with given 'userrole' for that item to that of the logged in user roles, from security. If any of the user roles bound to 'userrole' property matches then that menu item will be shown else will be hidden.
 
-- \- close the menu when clicked outside of the menu,
-- \- when a menu item is selected or on click outside menu, or
-- \- do not close once opened.
+Sub Actions
 
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
+(available only when the above Menu Actions is bound to a variable)
 
-Class
+When an action is required the sub-items can be mentioned in the children.
 
-property defines the class of the icon that is applied to the button.
+**Behavior**
 
-load
+Show
 
-event handler is called when the panel is loaded.
+Showing determines whether or not a component is visible. It is a bindable property.
 
-**Events**
+Load on Demand (visible only when show property is bound to a variable)
 
-mouse over
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-event fires when the mouse hovers over this widget.
+Collapsible
 
-mouse out
+Enable control for collapsing and expanding the panel.
 
-event fires when the mouse moves away from this widget.
+Enable full screen
 
-mouse enter
+Enable control for making the panel full screen.
 
-event handler is called whenever the mouse enters the widget.
+Closable
 
-mouse leave
+This property defines if the panel should be allowed to be closed.
 
-event handler is called whenever the mouse leaves the widget.
+Expanded
 
-**Events**
+Set the default state of the panel whether it is expanded or collapsed.
 
-swipe up
+Auto Close
 
-event handler is called whenever a swipeup event is triggered.
+This property defines the behavior of menu closing, it can be:
 
-swipe down
+- outsideClick - close the menu when clicked outside of the menu,
+- always - when a menu item is selected or on click outside menu, or
+- disabled - do not close once opened.
 
-event handler is called whenever swipe down event is triggered.
+Animation
 
-swipe left
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
 
-event handler is called whenever swipe left event is triggered.
+**Graphics**
 
-swipe right
+Icon Class
 
-event handler is called whenever a swiperight event is triggered.
+This property defines the class of the icon that is applied to the button.
 
-pinch in
+# Events
 
-event handler is called whenever pinch event is triggered.
+**Event**
 
-pinch out
+**Description**
 
-event handler is called whenever a pinchout event is triggered.
+On load
 
-**Events**
+This event handler is called when the panel is loaded.
 
-enter key press
+**Mouse Events**
 
-the user hits ENTER/Return while the focus is in this editor, execute the specified event handler.
+On mouse over
 
-**Events**
+This event fires when the mouse hovers over this widget.
 
-close
+On mouse out
 
-event handler is called whenever a close event is triggered.
+This event fires when the mouse moves away from this widget.
 
-expand
+On mouse enter
 
-property defines the event handler for the expand event of the accordion panels.
+This event handler is called whenever the mouse enters the widget.
 
-collapse
+On mouse leave
 
-property defines the event handler for the collapse event of the accordion panels.
+This event handler is called whenever the mouse leaves the widget.
 
-actions click
+**Touch Events**
 
-event handler is called when the actions icon is clicked.
+On swipe up
 
-full screen
+This event handler is called whenever a swipeup event is triggered.
 
-event is called on the full-screen state of the widget.
+On swipe down
 
-exit full screen
+This event handler is called whenever swipe down event is triggered.
 
-event is called on the full-screen state is exited.
+On swipe left
+
+This event handler is called whenever swipe left event is triggered.
+
+On swipe right
+
+This event handler is called whenever a swiperight event is triggered.
+
+On pinch in
+
+This event handler is called whenever pinch event is triggered.
+
+In pinch out
+
+This event handler is called whenever a pinchout event is triggered.
+
+**Keyboard Events**
+
+On enter key press
+
+When the user hits ENTER/Return while the focus is in this editor, execute the specified event handler.
+
+**Callback Events**
+
+On close
+
+This event handler is called whenever a close event is triggered.
+
+On expand
+
+This property defines the event handler for the expand event of the accordion panels.
+
+On collapse
+
+This property defines the event handler for the collapse event of the accordion panels.
+
+On actions click
+
+This event handler is called when the actions icon is clicked.
+
+On full screen
+
+This event is called on the full-screen state of the widget.
+
+On exit full screen
+
+This event is called on the full-screen state is exited.
 
 [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
 
@@ -292,13 +340,13 @@ event is called on the full-screen state is exited.
 - [2.2 Container](/learn/app-development/widgets/container/container/)
 - [2.3 Grid Layout](/learn/app-development/widgets/container/grid-layout/)
 - [2.4 Panel](/learn/app-development/widgets/container/panel/)
-    - [Features](#features)
-        - [Usage](#usage)
-        - [Styles](#styles)
-    - [Methods](#methods)
-    - [Script Access](#script-access)
-    - [Properties](#properties)
-    - [Events](#events)
+    - [i. Features](#features)
+        - [○ Usage](#usage)
+        - [○ Styles](#styles)
+    - [ii. Methods](#methods)
+    - [iii. Script Access](#script-access)
+    - [iv. Properties](#properties)
+    - [v. Events](#events)
 - [2.5 Tabs](/learn/app-development/widgets/container/tabs/)
 - [2.6 Tile](/learn/app-development/widgets/container/tile/)
 - [2.7 Wizard](/learn/app-development/widgets/container/wizard/)

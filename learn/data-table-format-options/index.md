@@ -3,16 +3,16 @@ title: "Formatting Data Table Columns"
 id: ""
 ---
 
-: To change the display format of columns in a Data Table. We will customise the Data Table to display:
+**Scenario**: To change the display format of columns in a Data Table. We will customise the Data Table to display:
 
-1. with a prefix of ‘US-‘
-2. formatted to toDate with Date Pattern as ‘yyyy, MMM dd’
-3. Name with a suffix of ‘Dept’
-4. Budget formatted as toCurrency with ‘USD’ symbol and Fraction Size ‘2’
+1. Zip with a prefix of ‘US-‘
+2. Birthdate formatted to toDate with Date Pattern as ‘yyyy, MMM dd’
+3. Department Name with a suffix of ‘Dept’
+4. Department Budget formatted as toCurrency with ‘USD’ symbol and Fraction Size ‘2’
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vQBoIoP6HLO3rPgdbmRbwDEWQ_eJ0W24PcjwC8UoeMBIqjG3D3u8sk980v2MHx5zmxIj7ppzHMMaSqb/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
+[Data Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
 
 - [1\. Basic Table Usage](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage/)
 - [2\. How to customise table actions](/learn/how-tos/data-table-actions/)

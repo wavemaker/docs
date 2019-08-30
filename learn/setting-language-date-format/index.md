@@ -3,17 +3,17 @@ title: "Setting Language and Date Format"
 id: ""
 ---
 
-You can set the **Page**, **Language** and **Format** for _and time fields_ in the app from the Project Settings dialog. **Settings** can be accessed from project configurations of the [Workspace](http://[supsystic-show-popup id=107])
+You can set the **Home Page**, **Default Language** and **Display Format** for _date and time fields_ in the app from the Project Settings dialog. **Project Settings** can be accessed from project configurations of the [Project Workspace](http://[supsystic-show-popup id=107]).
 
-: The date/time format set at the widget level will get priority over the Project level setting. : Default Language needs the App Messages to be configured in the selected language. [here for more](/learn/app-development/widgets/form-widgets/select-locale-usage/)
+**Note**: The date/time format set at the widget level will get priority over the Project level setting. **Note**: Default Language needs the App Messages to be configured in the selected language. [See here for more](/learn/app-development/widgets/form-widgets/select-locale-usage/).
 
 [![](../assets/Project_Settings2-1.png)](../assets/Project_Settings2-1.png)
 
-[UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
+[Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
 - 1\. How to Navigate between Pages in
-    - [Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
-    - [Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
+    - [i. Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
+    - [ii. Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
 - [2\. How to pass parameters to pages](/learn/how-tos/passing-parameters-pages/)
 - [3\. How to pass parameters to partial pages](/learn/how-tos/passing-parameters-partial-page/)
 - [4\. How to use static variable to pass data between pages](/learn/how-tos/use-static-variable-pass-data-pages/)

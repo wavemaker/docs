@@ -5,133 +5,181 @@ id: ""
 
 ##### 10.0 release
 
-**widget** is an editor widget that accepts numeric input. You can:
+**Number widget** is an editor widget that accepts numeric input. You can:
 
-1. be used in conjunction with the selected app Locale to display the number in the appropriate format.
-2. the input by applying maximum character length.
-3. regular expressions to validate client side number.
+1. Can be used in conjunction with the selected app Locale to display the number in the appropriate format.
+2. Limit the input by applying maximum character length.
+3. Apply regular expressions to validate client side number.
 
-: Number widget applies the number formatting as per the Locale automatically. In case you do not wish to change the app behavior as per the Locale, use the Text widget with Number Type ( [here for more](/learn/app-development/widgets/form-widgets/text/))
+**NOTE**: Number widget applies the number formatting as per the Locale automatically. In case you do not wish to change the app behavior as per the Locale, use the Text widget with Number Type ([click here for more](/learn/app-development/widgets/form-widgets/text/))
 
-name is a unique identifier for Number widget.
+# Properties
 
-placeholder is a text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
+**Property**
 
-text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
+**Description**
 
-index
+Name
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+The name is a unique identifier for Number widget.
+
+Placeholder
+
+A placeholder is a text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
+
+**Accessibility**
+
+Hint
+
+Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
+
+Tab index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-key
+Shortcut key
 
-shortcut key property specifies a shortcut key to activate/focus an element. (\* [below for details](#shortcut))
+The shortcut key property specifies a shortcut key to activate/focus an element. (\*[See below for details](#shortcut))
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+**Layout**
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+Width
 
-**Value**
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
-is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
+Height
 
-required editor in may refuse to save without a required field.
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-Expression
+**Default Value**
 
-any regular expression to be used to validate user input for client-side input validation.
+Value
 
-value
+This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
 
-minimum value user is allowed to enter.
+**Validation**
 
-value
+Required
 
-maximum value user is allowed to enter.
+A required editor in _wm.LiveForm_ may refuse to save without a required field.
 
-the stepper to increment/decrement the input value by the specified step interval. Example: if step='3', legal numbers could be -3, 0, 3, 6, etc.
+Regular Expression
 
-Focus
+Enter any regular expression to be used to validate user input for client-side input validation.
 
-property makes the element get focused automatically when the page loads.
+Minimum value
 
-Only
+Enter minimum value user is allowed to enter.
 
-this checkbox property prevents the user from changing the data value of a widget.
+Maximum value
 
-determines whether or not a component is visible. It is a bindable property.
+Enter maximum value user is allowed to enter.
 
-on Demand (visible only when show property is bound to a variable)
+Step
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+Use the stepper to increment/decrement the input value by the specified step interval. Example: if step='3', legal numbers could be -3, 0, 3, 6, etc.
 
-the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only.
+**Behavior**
 
-value on
+Auto Focus
 
-the selected value is \`blur\`: data value will be updated on blur event, \`default\`: data value will be updated on key up.
+This property makes the element get focused automatically when the page loads.
 
-event handler is called each time your element's value changes.
+Read Only
 
-focus
+Selecting this checkbox property prevents the user from changing the data value of a widget.
 
-event handler is called each time your element is focused.
+Show
 
-blur
+Showing determines whether or not a component is visible. It is a bindable property.
 
-event handler is called each time your focus leaves your element.
+Load on Demand (visible only when show property is bound to a variable)
 
-**Events**
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-click
+Disabled
 
-event handler is called whenever the click event is triggered on a widget.
+If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only.
 
-mouse enter
+Update value on
 
-event handler is called whenever the mouse enters the widget.
+If the selected value is \`blur\`: data value will be updated on blur event, \`default\`: data value will be updated on key up.
 
-mouse leave
+# Events
 
-event handler is called whenever the mouse leaves the widget.
+Event
 
-**Events**
+Description
 
-tap
+Change
 
-event handler is called whenever the tap event is triggered on a widget.
+This event handler is called each time your element's value changes.
 
-**Events**
+On focus
 
-key down
+This event handler is called each time your element is focused.
 
-event handler is called whenever a key is pressed down.
+On blur
 
-key press
+This event handler is called each time your focus leaves your element.
 
-event handler is called whenever a key is pressed.
+**Mouse Events**
 
-key up
+On click
 
-event handler is called whenever a key is released.
+This event handler is called whenever the click event is triggered on a widget.
 
-: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
+On mouse enter
 
-Trigger
+This event handler is called whenever the mouse enters the widget.
 
-Explorer
+On mouse leave
+
+This event handler is called whenever the mouse leaves the widget.
+
+**Touch Events**
+
+On tap
+
+This event handler is called whenever the tap event is triggered on a widget.
+
+**Keyboard Events**
+
+On key down
+
+This event handler is called whenever a key is pressed down.
+
+On key press
+
+This event handler is called whenever a key is pressed.
+
+On key up
+
+This event handler is called whenever a key is released.
+
+**Shortcutkey**: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
+
+Browser
+
+Shortcutkey Trigger
+
+Internet Explorer
 
 \[Alt\] + shortcutkey
 
-\[Alt\] + shortcutkey (_/Linux_)
+Chrome
 
-\[Control\] \[Alt\] + shortcutkey ()
+\[Alt\] + shortcutkey (_Windows/Linux_)
 
-\[Alt\] \[Shift\] + shortcutkey (_/Linux_)
+\[Control\] \[Alt\] + shortcutkey (_MAC_)
 
-\[Control\] \[Alt\] + shortcutkey ()
+Firefox
+
+\[Alt\] \[Shift\] + shortcutkey (_Windows/Linux_)
+
+\[Control\] \[Alt\] + shortcutkey (_MAC_)
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 
@@ -147,8 +195,8 @@ Explorer
 - [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
 - [3.11 File Upload](/learn/app-development/widgets/form/file-upload/)
 - [3.12 Number](#)
-    - [Properties](#properties)
-    - [Events](#events)
+    - [i. Properties](#properties)
+    - [ii. Events](#events)
 - [3.13 Radioset](/learn/app-development/widgets/form/radioset/)
 - [3.14 Rating](/learn/app-development/widgets/form/rating/)
 - [3.15 Select](/learn/app-development/widgets/form/select/)

@@ -3,22 +3,22 @@ title: "Live Form"
 id: ""
 ---
 
-**Form** widget provides a columnar group of input elements for user entry. Live Form can be bound to a database through Database CRUD variables and can be used to perform CRUD operations on the underlying database via REST API call. These CRUD APIs are auto-generated at the time of [Integration](http://[supsystic-show-popup id=106])
+**Live Form** widget provides a columnar group of input elements for user entry. Live Form can be bound to a database through Database CRUD variables and can be used to perform CRUD operations on the underlying database via REST API call. These CRUD APIs are auto-generated at the time of [Database Integration](http://[supsystic-show-popup id=106])
 
-Form in WaveMaker, when associated with the current item/selected item/row of a List or Data Table, provides values for update operations.
+Live Form in WaveMaker, when associated with the current item/selected item/row of a List or Data Table, provides values for update operations.
 
-Live Form fields are auto-generated from the Database CRUD Variable to which it is bound and can be configured to:
+The Live Form fields are auto-generated from the Database CRUD Variable to which it is bound and can be configured to:
 
-- represented by appropriate widgets,
-- field input validation,
-- form field data;
-- actions like editing and saving the form fields, adding a new record, and deleting existing record;
-- set as a read-only form and
-- layout styles like 1-column, 2-columns or 3-columns.
+- be represented by appropriate widgets,
+- enable field input validation,
+- reset form field data;
+- perform actions like editing and saving the form fields, adding a new record, and deleting existing record;
+- be set as a read-only form and
+- different layout styles like 1-column, 2-columns or 3-columns.
 
 [![](../assets/LiveForm_concept.png)](../assets/LiveForm_concept.png)
 
-Source >
+Data Source >
 
 [1\. Live & Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
 
@@ -27,16 +27,16 @@ Source >
 - [1.3 Form](/learn/app-development/widgets/datalive/form/)
 - [1.4 List](/learn/app-development/widgets/datalive/list/)
 - [1.5 Live Form](/learn/app-development/widgets/datalive/live-form/)
-    - [Data Source](/learn/app-development/widgets/datalive/live-form/live-form-data-source/)
-    - [Layouts](/learn/app-development/widgets/datalive/live-form/liveform-layouts/)
-    - [Configuration](/learn/app-development/widgets/datalive/live-form/liveform-configurations/)
-    - [Fields Configuration](/learn/app-development/widgets/datalive/live-form/fields-configuration/)
-        - [Display Options](/learn/app-development/widgets/datalive/live-form/fields-configuration/#display)
-        - [Validations](/learn/app-development/widgets/datalive/live-form/fields-configuration/#validations)
-        - [Widget Usage](/learn/app-development/widgets/datalive/live-form/fields-configuration/#widgets)
-    - [Actions](/learn/app-development/widgets/datalive/live-form/liveform-actions/)
-    - [Events & Methods](/learn/app-development/widgets/datalive/live-form/events-methods/)
-        - [Events](/learn/app-development/widgets/datalive/live-form/events-methods/#events)
-        - [Methods](/learn/app-development/widgets/datalive/live-form/events-methods/#methods)
-    - [Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
+    - [i. Data Source](/learn/app-development/widgets/datalive/live-form/live-form-data-source/)
+    - [ii. Layouts](/learn/app-development/widgets/datalive/live-form/liveform-layouts/)
+    - [iii. Configuration](/learn/app-development/widgets/datalive/live-form/liveform-configurations/)
+    - [iv. Fields Configuration](/learn/app-development/widgets/datalive/live-form/fields-configuration/)
+        - [○ Display Options](/learn/app-development/widgets/datalive/live-form/fields-configuration/#display)
+        - [○ Validations](/learn/app-development/widgets/datalive/live-form/fields-configuration/#validations)
+        - [○ Widget Usage](/learn/app-development/widgets/datalive/live-form/fields-configuration/#widgets)
+    - [v. Actions](/learn/app-development/widgets/datalive/live-form/liveform-actions/)
+    - [vi. Events & Methods](/learn/app-development/widgets/datalive/live-form/events-methods/)
+        - [○ Events](/learn/app-development/widgets/datalive/live-form/events-methods/#events)
+        - [○ Methods](/learn/app-development/widgets/datalive/live-form/events-methods/#methods)
+    - [v. Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
 - [1.6 Live Filter](/learn/app-development/widgets/datalive/live-filter/)

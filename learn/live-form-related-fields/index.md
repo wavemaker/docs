@@ -7,7 +7,7 @@ Live Form deals with Database CRUD Variables with the underlying data source as 
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vT8NZ_kjBh6JhZ5FYiijwYMM9PUBOkF2LG-8Ixas1ccOrsFd0k18kqoGcdt--EEg780cWz6R9RpyLUn/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
+[Live Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
 
 - [1\. Live Form Basic Usage](/learn/app-development/widgets/datalive/live-form/live-form-basic-usage/)
 - [2\. How to split live form](/learn/how-tos/live-form-tabbed-form/)

@@ -3,170 +3,220 @@ title: "Text"
 id: ""
 ---
 
-** widget** is an editor widget that accepts single-line text input. You can:
+**Text widget** is an editor widget that accepts single-line text input. You can:
 
-1. the input text by applying maximum character length
-2. regular expressions to validate client side text
+1. Limit the input text by applying maximum character length
+2. Apply regular expressions to validate client side text
 
-name is a unique identifier for Text widget.
+# Properties
 
-property specifies the type of the variable. It can be of type:
+**Property**
 
-- ,
-- , datetime-local, time
-- ,
-- , month, week,
-- ,
-- , text, tel, url
+**Description**
+
+Name
+
+The name is a unique identifier for Text widget.
+
+Type
+
+This property specifies the type of the variable. It can be of type:
+
+- color,
+- date, datetime-local, time
+- email,
+- number, month, week,
+- password,
+- search, text, tel, url
+
+Placeholder
 
 (only for alphanumeric type)
 
-placeholder is a text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
+A placeholder is a text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
 
-text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
+**Accessibility**
 
-index
+Hint
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
+
+Tab index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-key
+Shortcut key
 
-shortcut key property specifies a shortcut key to activate/focus an element. (\* [below for details](#shortcut))
+The shortcut key property specifies a shortcut key to activate/focus an element. (\*[See below for details](#shortcut))
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+**Layout**
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+Width
 
-**Value**
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
-is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
+Height
 
-required editor in may refuse to save without a required field.
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-Expression
+**Default Value**
 
-any regular expression to be used to validate user input for client-side input validation.
+Value
 
-Characters
+This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
+
+**Validation**
+
+Required
+
+A required editor in _wm.LiveForm_ may refuse to save without a required field.
+
+Regular Expression
+
+Enter any regular expression to be used to validate user input for client-side input validation.
+
+Maximum Characters
 
 (not available for color, date, time, month, week types)
 
-the maximum number of characters that can be entered in the editor.
+Defines the maximum number of characters that can be entered in the editor.
 
-value
-
-(only for numeric, date, time, week, month types)
-
-minimum number. This property applies when the type is a number.
-
-value
+Minimum value
 
 (only for numeric, date, time, week, month types)
 
-maximum number. This property applies when the type is a number.
+Enter minimum number. This property applies when the type is a number.
+
+Maximum value
 
 (only for numeric, date, time, week, month types)
 
-the stepper to increment/decrement the input value by the specified step interval. Example: if step='3', legal numbers could be -3, 0, 3, 6, etc.
+Enter maximum number. This property applies when the type is a number.
 
-Focus
+Step
 
-property makes the element get focused automatically when the page loads.
+(only for numeric, date, time, week, month types)
 
-Only
+Use the stepper to increment/decrement the input value by the specified step interval. Example: if step='3', legal numbers could be -3, 0, 3, 6, etc.
 
-this checkbox property prevents the user from changing the data value of a widget.
+**Behavior**
 
-determines whether or not a component is visible. It is a bindable property.
+Auto Focus
 
-on Demand (visible only when show property is bound to a variable)
+This property makes the element get focused automatically when the page loads.
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+Read Only
 
-the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only.
+Selecting this checkbox property prevents the user from changing the data value of a widget.
 
-Complete
+Show
 
-this box turns on auto-completion in the editor. As the user types into the pull-down select editor, the choices change dynamically.
+Showing determines whether or not a component is visible. It is a bindable property.
 
-Format
+Load on Demand (visible only when show property is bound to a variable)
 
-keys in display format represent the special tokens/characters used to delimit acceptable ranges of inputs. For example, we use '9' here to accept any numeric values for a phone number: displayformat='(999) 999-9999'. The values associated with each token are regexen. Each regex defines the ranges of values that will be acceptable as inputs in the position of that token. Tokens:
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-- Any letter.
+Disabled
+
+If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only.
+
+Auto Complete
+
+Checking this box turns on auto-completion in the editor. As the user types into the pull-down select editor, the choices change dynamically.
+
+Display Format
+
+The keys in display format represent the special tokens/characters used to delimit acceptable ranges of inputs. For example, we use '9' here to accept any numeric values for a phone number: displayformat='(999) 999-9999'. The values associated with each token are regexen. Each regex defines the ranges of values that will be acceptable as inputs in the position of that token. Tokens:
+
+- A Any letter.
 - 9 Any number.
 - \* Any letter or number.
 - ? Make any part of the mask optional.
 
-value on
+Update value on
 
-the selected value is \`blur\`: data value will be updated on blur event, \`default\`: data value will be updated on key up.
+If the selected value is \`blur\`: data value will be updated on blur event, \`default\`: data value will be updated on key up.
 
-delay
+Update delay
 
-amount of delay in milliseconds to update the data value.
+The amount of delay in milliseconds to update the data value.
 
-event handler is called each time your element's value changes.
+# Events
 
-focus
+Event
 
-event handler is called each time your element is focused.
+Description
 
-blur
+Change
 
-event handler is called each time your focus leaves your element.
+This event handler is called each time your element's value changes.
 
-**Events**
+On focus
 
-click
+This event handler is called each time your element is focused.
 
-event handler is called whenever the click event is triggered on a widget.
+On blur
 
-mouse enter
+This event handler is called each time your focus leaves your element.
 
-event handler is called whenever the mouse enters the widget.
+**Mouse Events**
 
-mouse leave
+On click
 
-event handler is called whenever the mouse leaves the widget.
+This event handler is called whenever the click event is triggered on a widget.
 
-**Events**
+On mouse enter
 
-tap
+This event handler is called whenever the mouse enters the widget.
 
-event handler is called whenever the tap event is triggered on a widget.
+On mouse leave
 
-**Events**
+This event handler is called whenever the mouse leaves the widget.
 
-key down
+**Touch Events**
 
-event handler is called whenever a key is pressed down.
+On tap
 
-key press
+This event handler is called whenever the tap event is triggered on a widget.
 
-event handler is called whenever a key is pressed.
+**Keyboard Events**
 
-key up
+On key down
 
-event handler is called whenever a key is released.
+This event handler is called whenever a key is pressed down.
 
-: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
+On key press
 
-Trigger
+This event handler is called whenever a key is pressed.
 
-Explorer
+On key up
+
+This event handler is called whenever a key is released.
+
+**Shortcutkey**: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
+
+Browser
+
+Shortcutkey Trigger
+
+Internet Explorer
 
 \[Alt\] + shortcutkey
 
-\[Alt\] + shortcutkey (_/Linux_)
+Chrome
 
-\[Control\] \[Alt\] + shortcutkey ()
+\[Alt\] + shortcutkey (_Windows/Linux_)
 
-\[Alt\] \[Shift\] + shortcutkey (_/Linux_)
+\[Control\] \[Alt\] + shortcutkey (_MAC_)
 
-\[Control\] \[Alt\] + shortcutkey ()
+Firefox
+
+\[Alt\] \[Shift\] + shortcutkey (_Windows/Linux_)
+
+\[Control\] \[Alt\] + shortcutkey (_MAC_)
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 
@@ -189,8 +239,8 @@ Explorer
 - [3.17 Slider](/learn/app-development/widgets/form/slider/)
 - [3.18 Switch](/learn/app-development/widgets/form/switch/)
 - [3.19 Text](#)
-    - [Properties](#properties)
-    - [Events](#events)
+    - [i. Properties](#properties)
+    - [ii. Events](#events)
 - [3.20 Textarea](/learn/app-development/widgets/form/textarea/)
 - [3.21 Time](/learn/app-development/widgets/form-widgets/date-time-datetime/)
 - [3.22 Toggle](/learn/app-development/widgets/form/toggle/)

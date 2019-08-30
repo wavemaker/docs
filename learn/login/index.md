@@ -3,46 +3,72 @@ title: "Login"
 id: ""
 ---
 
-be used to display a pre-built Login section with a sign in button, username, and password fields. It also provides the option to remember the password.
+**Login** can be used to display a pre-built Login section with a sign in button, username, and password fields. It also provides the option to remember the password.
 
-name is a unique identifier Login Form.
+# Properties
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+**Property**
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+**Description**
 
-determines whether or not a component is visible. It is a bindable property.
+Name
 
-on Demand (visible only when show property is bound to a variable)
+The name is a unique identifier Login Form.
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+**Layout**
 
-on error
+Width
 
-message will be displayed, if there is an error during the login operation.
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
-**Events**
+Height
 
-submit
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-event handler is called whenever a submit event is triggered.
+**Behavior**
 
-before render
+Show
 
-event handler is called before rendering the form fields.
+Showing determines whether or not a component is visible. It is a bindable property.
 
-success
+Load on Demand (visible only when show property is bound to a variable)
 
-event handler is called whenever a success event is triggered.
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-error
+**Message**
 
-event handler is called whenever an error event is triggered.
+Message on error
+
+This message will be displayed, if there is an error during the login operation.
+
+# Events
+
+Event
+
+Description
+
+**Callback Events**
+
+On submit
+
+This event handler is called whenever a submit event is triggered.
+
+On before render
+
+This event handler is called before rendering the form fields.
+
+On success
+
+This event handler is called whenever a success event is triggered.
+
+On error
+
+This event handler is called whenever an error event is triggered.
 
 [7\. Advanced Widgets](/learn/app-development/widgets/widget-library/#advanced)
 
 - [7.1 Carousel](/learn/app-development/widgets/advanced/carousel/)
 - [7.2 Login](#)
-    - [Properties](#properties)
-    - [Events](#events)
+    - [i. Properties](#properties)
+    - [ii. Events](#events)
 - [7.3 Marquee](/learn/app-development/widgets/advanced/marquee/)

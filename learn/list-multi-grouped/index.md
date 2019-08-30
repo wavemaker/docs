@@ -3,17 +3,17 @@ title: "Creating an Employee List grouped by Birth Month and City"
 id: ""
 ---
 
-**:** To display list grouped by multiple fields like City and State they reside in
+**Scenario:** To display list grouped by multiple fields like City and State they reside in
 
 We will see how List items can be grouped by multiple fields. We will
 
-1. of Employees grouped by Birth Month and City of Employees.
-2. custom JavaScript function is used to manipulate the dataset returned to achieve multi-field grouping.
-3. Variable is used to get the month names in Order.
+1. List of Employees grouped by Birth Month and City of Employees.
+2. A custom JavaScript function is used to manipulate the dataset returned to achieve multi-field grouping.
+3. Static Variable is used to get the month names in Order.
 
 We have used the following code snippets:
 
-- file for list of months static variable:
+- JSON file for list of months static variable:
     
      {
       "0": "Jan",
@@ -30,9 +30,9 @@ We have used the following code snippets:
       "11": "Dec"
     }
     
-- for the OnBeforeDatasetReady event:
+- JavaScript for the OnBeforeDatasetReady event:
     
-     = function(variable, data) {
+    Page.EmployeeVaronBeforeDatasetReady = function(variable, data) {
         var dataByMonth = \_.groupBy(data, function(datum) { 
             //getting the employees grouped by their birth month
             return new Date(datum.birthdate).getMonth();
@@ -51,7 +51,7 @@ We have used the following code snippets:
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vTCOvaDgtmU4GWwiKhikpdkcNu9yU7m4U5LB55zS7TPGazFcpVYFkOrLuMh8WijzKM5zODgHrM09Y56/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Use Cases](/learn/app-development/widgets/datalive/list/list-use-cases/)
+[List Use Cases](/learn/app-development/widgets/datalive/list/list-use-cases/)
 
 - [1\. List Basic Usage](/learn/app-development/widgets/datalive/list/list-basic-usage/)
 - [2\. How to group list items](/learn/how-tos/list-grouped/)

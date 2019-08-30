@@ -3,54 +3,58 @@ title: "SAML Integration - ADFS"
 id: ""
 ---
 
-**Directory ** Services () is a software component developed by Microsoft that can be installed on Windows Server operating systems to provide users with single sign-on access to systems and applications located across organizational boundaries.
+**Active Directory **Federation Services (**ADFS**) is a software component developed by Microsoft that can be installed on Windows Server operating systems to provide users with single sign-on access to systems and applications located across organizational boundaries.
 
-Directory Federation Services (AD FS) simplifies access to systems and applications using a claims-based access (CBA) authorization mechanism to maintain application security. AD FS supports Web single-sign-on (SSO) technologies that help information technology (IT) organizations collaborate across organizational boundaries.
+Active Directory Federation Services (AD FS) simplifies access to systems and applications using a claims-based access (CBA) authorization mechanism to maintain application security. AD FS supports Web single-sign-on (SSO) technologies that help information technology (IT) organizations collaborate across organizational boundaries.
 
-FS is an identity access solution that provides browser-based clients (internal or external to your network) with seamless, "one prompt" access to one or more protected Internet-facing applications, even when the user accounts and applications are located in completely different networks or organizations.
+AD FS is an identity access solution that provides browser-based clients (internal or external to your network) with seamless, "one prompt" access to one or more protected Internet-facing applications, even when the user accounts and applications are located in completely different networks or organizations.
 
-## \-requisites
+## Pre-requisites
 
-testing was done with  ADFS 3.0 in Windows Server® 2012 R2.
+The testing was done with  ADFS 3.0 in Windows Server® 2012 R2.
 
-1. should have already installed AD CS - Certificate Service, AD DS - Domain Service, AD FS - Federated Service on Active Directory. 
-2. have the Metadata URL for the WaveMaker App: Steps to obtain the Metadata URL:
-    1. should have already created an app using WaveMaker integrated with SAML as security provider ( [here for more](/learn/app-development/app-security/saml-integration/#integration)).
-    2. ADFS Federation Metadata details in WaveMaker App. You can either use the URL or upload file. [![](../assets/adfs_wm_meta1.png?v=20)](../assets/adfs_wm_meta1.png?v=20)
-    3. Service Provider Configuration, generate Keystore. [![](../assets/adfs_wm_meta2.png)](../assets/adfs_wm_meta2.png)
-    4. the app and open the Security dialog again. Note the Metadata URL from the WaveMaker App: [![](../assets/adfs_url.png)](../assets/adfs_url.png)
+1. You should have already installed AD CS - Certificate Service, AD DS - Domain Service, AD FS - Federated Service on Active Directory. 
+2. You have the Metadata URL for the WaveMaker App: Steps to obtain the Metadata URL:
+    1. You should have already created an app using WaveMaker integrated with SAML as security provider ([see here for more](/learn/app-development/app-security/saml-integration/#integration)).
+    2. Configure ADFS Federation Metadata details in WaveMaker App. You can either use the URL or upload file. [![](../assets/adfs_wm_meta1.png?v=20)](../assets/adfs_wm_meta1.png?v=20)
+    3. From Service Provider Configuration, generate Keystore. [![](../assets/adfs_wm_meta2.png)](../assets/adfs_wm_meta2.png)
+    4. Preview the app and open the Security dialog again. Note the Metadata URL from the WaveMaker App: [![](../assets/adfs_url.png)](../assets/adfs_url.png)
 
-to US export limitations, Java JDK comes with a limited set of cryptographic capabilities. Usage of the SAML Extension might require an installation of the Unlimited Strength Jurisdiction Policy Files which removes these limitations.
+Due to US export limitations, Java JDK comes with a limited set of cryptographic capabilities. Usage of the SAML Extension might require an installation of the Unlimited Strength Jurisdiction Policy Files which removes these limitations.
 
-## Steps
+## Implementation Steps
 
 (NOTE: The screenshots were current from AD FS at the time of documentation and they might differ from actual)
 
-1. Active Directory
-2. AD FS from Server Manager AD FS
-3. Tools select AD FS Management [![adfs_1](../assets/adfs_1.png)](../assets/adfs_1.png)
-4. AD FS 2.0 Management Console select "Add Relying Party Trust" [![adfs_2](../assets/adfs_2.png)](../assets/adfs_2.png) [![adfs_3](../assets/adfs_3.png)](../assets/adfs_3.png)
-5. "Import data about the relying party from a file" [![adfs_4](../assets/adfs_4.png)](../assets/adfs_4.png)
-6. the metadata.xml file from the WaveMaker app as mentioned earlier in the prerequisites section (ignore any warning messages). [![adfs_5](../assets/adfs_5.png)](../assets/adfs_5.png) [![adfs_6](../assets/adfs_6.png)](../assets/adfs_6.png)
-7. the "Ready to Add Trust" make sure that tab endpoints contain multiple endpoint values. If not, verify that your metadata was generated with HTTPS protocol URLs. [![adfs_7](../assets/adfs_7.png)](../assets/adfs_7.png) [![adfs_8](../assets/adfs_8.png)](../assets/adfs_8.png)
-8. "Open the Edit Claim Rules dialog" checkbox checked and finish the wizard. [![adfs_9](../assets/adfs_9.png)](../assets/adfs_9.png)
-9. "Add Rule", choose "Send LDAP Attributes as Claims" and press Next [![adfs_10](../assets/adfs_10.png)](../assets/adfs_10.png) 
-10. NameID as "Claim rule name", choose "Active Directory" as Attribute store, choose "SAM-Account-Name" as LDAP Attribute and "Name ID" as "Outgoing claim type", finish the wizard and confirm the claim rules window, in ADFS 3.0 you might need to configure the Name ID as a Pass Through claim - As we are using Spring SAML Security it expects the Name ID Parameter in the Spring SAML Response. [![adfs_11](../assets/adfs_11.png)](../assets/adfs_11.png)
-11. the provider by double-clicking it, select tab Advanced and change "Secure hash algorithm" to SHA-1 [![adfs_12](../assets/adfs_12.png)](../assets/adfs_12.png)
+1. Launch Active Directory
+2. Select AD FS from Server Manager AD FS
+3. From Tools select AD FS Management [![adfs_1](../assets/adfs_1.png)](../assets/adfs_1.png)
+4. In AD FS 2.0 Management Console select "Add Relying Party Trust" [![adfs_2](../assets/adfs_2.png)](../assets/adfs_2.png) [![adfs_3](../assets/adfs_3.png)](../assets/adfs_3.png)
+5. Select "Import data about the relying party from a file" [![adfs_4](../assets/adfs_4.png)](../assets/adfs_4.png)
+6. Select the metadata.xml file from the WaveMaker app as mentioned earlier in the prerequisites section (ignore any warning messages). [![adfs_5](../assets/adfs_5.png)](../assets/adfs_5.png) [![adfs_6](../assets/adfs_6.png)](../assets/adfs_6.png)
+7. On the "Ready to Add Trust" make sure that tab endpoints contain multiple endpoint values. If not, verify that your metadata was generated with HTTPS protocol URLs. [![adfs_7](../assets/adfs_7.png)](../assets/adfs_7.png) [![adfs_8](../assets/adfs_8.png)](../assets/adfs_8.png)
+8. Leave "Open the Edit Claim Rules dialog" checkbox checked and finish the wizard. [![adfs_9](../assets/adfs_9.png)](../assets/adfs_9.png)
+9. Select "Add Rule", choose "Send LDAP Attributes as Claims" and press Next [![adfs_10](../assets/adfs_10.png)](../assets/adfs_10.png) 
+10. Add NameID as "Claim rule name", choose "Active Directory" as Attribute store, choose "SAM-Account-Name" as LDAP Attribute and "Name ID" as "Outgoing claim type", finish the wizard and confirm the claim rules window, in ADFS 3.0 you might need to configure the Name ID as a Pass Through claim - As we are using Spring SAML Security it expects the Name ID Parameter in the Spring SAML Response. [![adfs_11](../assets/adfs_11.png)](../assets/adfs_11.png)
+11. Open the provider by double-clicking it, select tab Advanced and change "Secure hash algorithm" to SHA-1 [![adfs_12](../assets/adfs_12.png)](../assets/adfs_12.png)
 
-1. when you preview the WaveMaker app, you will be redirected to the ADFS login page.
+## Preview
+
+1. Now when you preview the WaveMaker app, you will be redirected to the ADFS login page.
+
+## Deployment
 
 Before deployment, ensure that you configure the deployment profile with the ADFS Server details.
 
-1. the deployment URL from [Configuration dialog](http://[supsystic-show-popup id=109]) [![](../assets/adfs_wm_deploy.png)](../assets/adfs_wm_deploy.png)
-2. Metadata in ADFS Server with this URL
-3. the above steps (preview) with the new ADFS metadata details and deploy the app.
+1. Get the deployment URL from [Profile Configuration dialog](http://[supsystic-show-popup id=109]) [![](../assets/adfs_wm_deploy.png)](../assets/adfs_wm_deploy.png)
+2. Configure Metadata in ADFS Server with this URL
+3. Repeat the above steps (preview) with the new ADFS metadata details and deploy the app.
 
-[Security Cases](/learn/app-development/app-security/app-security/)
+[App Security Cases](/learn/app-development/app-security/app-security/)
 
 - [1\. How to integrage SAML with OneLogin](/learn/how-tos/saml-integration-onelogin/)
 - [2\. How to integrage SAML with ADFS](/learn/how-tos/saml-integration-adfs/)
-    - [Pre-requisites](#prereqs)
-    - [Implementation Steps](#steps)
-    - [Preview](#preview)
-    - [Deployment](#deploy)
+    - [i. Pre-requisites](#prereqs)
+    - [ii. Implementation Steps](#steps)
+    - [iii. Preview](#preview)
+    - [iv. Deployment](#deploy)

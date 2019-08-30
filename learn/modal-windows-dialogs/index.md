@@ -3,7 +3,7 @@ title: "Modal Windows/ Dialogs"
 id: ""
 ---
 
-provides the facility to add pop-up windows to your project through the **widgets** Pop-up windows are a way to give additional information to users without cluttering your project space. This can be for alerts, getting additional information like user name, or for login purposes. There are six types of Dialog widgets provided by WaveMaker.
+WaveMaker provides the facility to add pop-up windows to your project through the **Dialog widgets**. Pop-up windows are a way to give additional information to users without cluttering your project space. This can be for alerts, getting additional information like user name, or for login purposes. There are six types of Dialog widgets provided by WaveMaker.
 
 [![alert_struct](../assets/alert_struct.jpg)](../assets/alert_struct.jpg)
 
@@ -17,474 +17,664 @@ provides the facility to add pop-up windows to your project through the **widget
 
 [![login_struct](../assets/login_struct.jpg)](../assets/login_struct.jpg)
 
-and dropping a dialog creates a containing the dialog. The view can be selected from the **Structure** or from the given at the bottom. The display of the dialog box at runtime is usually associated with the event of a widget. You can also trigger the dialog by calling methods from
+## Overview
 
-**:** Even though the dialog widget is placed in a view, that view is not available for navigation.
+Dragging and dropping a dialog creates a **view** containing the dialog. The view can be selected from the **Page Structure** or from the **tabs** given at the bottom. The display of the dialog box at runtime is usually associated with the _onClick_ event of a **Button** widget. You can also trigger the dialog by calling methods from _JavaScript_.
+
+**Note:** Even though the dialog widget is placed in a view, that view is not available for navigation.
 
 [![](../assets/dialog.png)](../assets/dialog.png)
 
-## Dialog
+# Features
 
-For **Dialog**, you can set:
+## Alert Dialog
 
-- name, the title of the alert pop-up, message to be displayed in the pop-up, text on the OK button and the type of alert - error, information, success or warning.
-- icon for display next to the title of the alert box, you can pick the icon from the [dialog](/learn/app-development/widgets/basic/icon/)
+For **Alert Dialog**, you can set:
+
+- the name, the title of the alert pop-up, message to be displayed in the pop-up, text on the OK button and the type of alert - error, information, success or warning.
+- the icon for display next to the title of the alert box, you can pick the icon from the [icon dialog](/learn/app-development/widgets/basic/icon/).
 
 [![](../assets/dialog_alert.png)](../assets/dialog_alert.png)
 
-## Dialog
+## Confirm Dialog
 
-Dialog is used to get confirmation from the user. In addition to the properties mentioned for Alert Dialog, it has an additional  The most common usage is to confirm a delete action.
+Confirm Dialog is used to get confirmation from the user. In addition to the properties mentioned for Alert Dialog, it has an additional **Cancel **button. The most common usage is to confirm a delete action.
 
 [![](../assets/dialog_confirm.png)](../assets/dialog_confirm.png)
 
-## Dialog
+## Design Dialog
 
-Dialog gives a for obtaining additional information from the user, like the name. It is a composite widget with Labels and Text widgets. It comes with two buttons 
+Design Dialog gives a **Form** for obtaining additional information from the user, like the name. It is a composite widget with Labels and Text widgets. It comes with two buttons **Cancel **and **Save**.
 
 [![dialog_form](../assets/dialog_form.png)](../assets/dialog_form.png)
 
-## Dialog
+## IFrame Dialog
 
-Iframe Dialog is a popup window that displays content from an external source (URL) in a dialog. It has an property, where you mention the external source for the content.
+An Iframe Dialog is a popup window that displays content from an external source (URL) in a dialog. It has an **URL** property, where you mention the external source for the content.
 
-**:** Since WaveMaker is secured, only secure URLs can be displayed in the Iframe.
+**Note:** Since WaveMaker is secured, only secure URLs can be displayed in the Iframe.
 
 [![](../assets/dialog_iframe.png)](../assets/dialog_iframe.png)
 
-## Dialog
+## Login Dialog
 
-Dialog is a popup window that displays Login page content and can be dismissed by the user. Especially used to refresh the membership or for additional confirmation. The events that can be set include , and
+Login Dialog is a popup window that displays Login page content and can be dismissed by the user. Especially used to refresh the membership or for additional confirmation. The events that can be set include _onSuccess_, _onError_ and _onClose_.
 
 [![dialog_login](../assets/dialog_login.png)](../assets/dialog_login.png)
 
-## Dialog
+## Page Dialog
 
-Dialog is a popup window that displays page content and can be dismissed by the user. The property of this widget can be set to the desired [page](/learn/app-development/ui-design/page-concepts/partial-pages/) content.
+Page Dialog is a popup window that displays page content and can be dismissed by the user. The **content** property of this widget can be set to the desired [partial page](/learn/app-development/ui-design/page-concepts/partial-pages/) content.
 
 [![](../assets/dialog_page.png)](../assets/dialog_page.png)
 
-# Access
+# Script Access
 
-widget in your project can be accessed by associating the open and properties of the dialog with an event of any other widget. The dialog can be accessed through scripting by adding to the _controller_ and adding the code for and as shown below, here we are displaying an alert dialog on click of a button: Click event of the button should trigger the following JavaScript code:
+**Dialog** widget in your project can be accessed by associating the open and _close_ properties of the dialog with an event of any other widget. The dialog can be accessed through scripting by adding _DialogService_ to the _page controller_ and adding the code for _open_ and _close_ as shown below, here we are displaying an alert dialog on click of a button: Click event of the button should trigger the following JavaScript code:
 
    
 Page.button3Click = function($event, widget) {
      Page.Widgets.alertdialog1.open();
  }
 
-hiding dialog:
+For hiding dialog:
 
 /\*\* function called on button1 click \*\*/
         Page.button1Click = function($event, widget) {
             Page.Widgets.alertdialog1.close();
         };
 
-# & Events
+# Properties & Events
 
-### **Dialog Properties**
+### **Alert Dialog Properties**
 
-the title of an alert dialog.
+**Property**
 
-name is a unique identifier for alert dialog.
+**Description**
 
-the message of the widget.
+Title
 
-Text
+Set the title of an alert dialog.
 
-widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+Name
 
-Type
+The name is a unique identifier for alert dialog.
 
-property will help in identifying the type of alert in the alert box. Can be set to error (default), information, success, and warning.
+Message
 
-index
+Set the message of the widget.
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+Ok Text
 
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
+This widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+Alert Type
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+This property will help in identifying the type of alert in the alert box. Can be set to error (default), information, success, and warning.
 
-property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
+**Accessibility**
 
-Default Close Action
+Tab index
 
-property allows the user to access close action from header through an "x" icon; and also enables close through ESC key.
-
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
-
-property if set true allows closing of dialog on ESC keypress. The default is true.
-
-Class
-
-property defines the class of the icon that is applied to the button.
-
-Width
-
-property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
-
-Height
-
-property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
-
-Margin
-
-property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
-
-**Events**
-
-ok
-
-event handler is called whenever an ok event is triggered.
-
-close
-
-event handler is called whenever a close event is triggered.
-
-open
-
-widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
-
-### **Dialog Properties**
-
-the title of the widget.
-
-name is a unique identifier for the confirm dialog.
-
-the display message for the widget.
-
-Text
-
-Confirm Dialog prompts to get confirmation from the user.
-
-Text
-
-widget gives a pop-up window. It can be used to get confirmation of an action from the user. For example, do you want to delete this item?
-
-index
-
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
-
-height of your widget can be specified in px or % (i.e 50px, 75%).
-
-property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
-
-Default Close Action
-
-property allows the user to access close action from header through an "x" icon; and also enables close through ESC key.
-
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
-
-property if set true allows closing of dialog on ESC keypress. The default is true.
-
-Class
-
-property defines the class of the icon that is applied to the button.
+**Layout**
 
 Width
 
-property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
 Height
 
-property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-Margin
+Modal
 
-property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
+This property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
 
-**Events**
+**Behavior**
 
-ok
+Enable Default Close Action
 
-event handler is called whenever an ok event is triggered.
+This property allows the user to access close action from header through an "x" icon; and also enables close through ESC key.
 
-cancel
+Animation
 
-event handler is called whenever a cancel event is triggered.
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
 
-close
+Keyboard
 
-event handler is called whenever a close event is triggered.
+This property if set true allows closing of dialog on ESC keypress. The default is true.
 
-open
+**Graphics**
 
-widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+Icon Class
 
-### **Dialog Properties**
+This property defines the class of the icon that is applied to the button.
 
-the title of the design dialog.
+Icon Width
 
-name is a unique identifier for design dialog.
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
 
-index
+Icon Height
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Margin
+
+Optional property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
+
+Event
+
+Description
+
+**Callback Events**
+
+On ok
+
+This event handler is called whenever an ok event is triggered.
+
+On close
+
+This event handler is called whenever a close event is triggered.
+
+On open
+
+This widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+
+### **Confirm Dialog Properties**
+
+Property
+
+Description
+
+Title
+
+Set the title of the widget.
+
+Name
+
+The name is a unique identifier for the confirm dialog.
+
+Message
+
+Set the display message for the widget.
+
+Ok Text
+
+This Confirm Dialog prompts to get confirmation from the user.
+
+Cancel Text
+
+This widget gives a pop-up window. It can be used to get confirmation of an action from the user. For example, do you want to delete this item?
+
+**Accessibility**
+
+Tab index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
-
-height of your widget can be specified in px or % (i.e 50px, 75%).
-
-Header
-
-/hide header of the design dialog.
-
-property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
-
-Default Close Action
-
-property allows the user to access close action from header through an "x" icon; and also enables close through ESC key.
-
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
-
-Class
-
-property defines the class of the icon that is applied to the button.
+**Layout**
 
 Width
 
-property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
 Height
 
-property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-Margin
+Modal
 
-property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
+This property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
 
-**Events**
+**Behavior**
 
-close
+Enable Default Close Action
 
-event handler is called whenever a close event is triggered.
+This property allows the user to access close action from header through an "x" icon; and also enables close through ESC key.
 
-open
+Animation
 
-widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
 
-### **Dialog Properties**
+Keyboard
+
+This property if set true allows closing of dialog on ESC keypress. The default is true.
+
+**Graphics**
+
+Icon Class
+
+This property defines the class of the icon that is applied to the button.
+
+Icon Width
+
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Height
+
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Margin
+
+Optional property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
+
+Event
+
+Description
+
+**Callback Events**
+
+On ok
+
+This event handler is called whenever an ok event is triggered.
+
+On cancel
+
+This event handler is called whenever a cancel event is triggered.
+
+On close
+
+This event handler is called whenever a close event is triggered.
+
+On open
+
+This widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+
+### **Design Dialog Properties**
+
+Property
+
+Description
+
+Title
+
+Set the title of the design dialog.
+
+Name
+
+The name is a unique identifier for design dialog.
+
+**Accessibility**
+
+Tab index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+
+NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
+
+**Layout**
+
+Width
+
+The width of your widget can be specified in px or % (i.e 50px, 75%).
+
+Height
+
+The height of your widget can be specified in px or % (i.e 50px, 75%).
+
+Show Header
+
+Show/hide header of the design dialog.
+
+Modal
+
+This property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
+
+**Behavior**
+
+Enable Default Close Action
+
+This property allows the user to access close action from header through an "x" icon; and also enables close through ESC key.
+
+Animation
+
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
+
+**Graphics**
+
+Icon Class
+
+This property defines the class of the icon that is applied to the button.
+
+Icon Width
+
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Height
+
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Margin
+
+Optional property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
+
+Event
+
+Description
+
+**Callback Events**
+
+On close
+
+This event handler is called whenever a close event is triggered.
+
+On open
+
+This widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+
+### **Iframe Dialog Properties**
 
 Check this if you want the provided URL to be encoded at the run time.
 
-the title of iframe dialog.
+Property
 
-name is a unique identifier for iframe dialog.
+Description
 
-Text
+Title
 
-widget gives a pop-up window. It can be used to provide contextual information from an HTML source to the user. For example, here is a sample from the source.
+Set the title of iframe dialog.
 
-index
+Name
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+The name is a unique identifier for iframe dialog.
 
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
+Ok Text
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+This widget gives a pop-up window. It can be used to provide contextual information from an HTML source to the user. For example, here is a sample from the source.
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+**Accessibility**
 
-Header
+Tab index
 
-/hide header of the iframe dialog.
-
-property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
-
-URL entered for this property will be shown in the dialog content.
-
-Default Close Action
-
-property allows the user to access close action from header through an "x" icon; and also enables close through ESC key.
-
-actions
-
-property shows/hides actions section of the iframe dialog.
-
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
-
-URL
-
-this if you want the provided URL to be encoded at the run time. Enabling this property will encode the special characters in the URL and enable rendering of the page which otherwise might fail. By default, it is set to false.
-
-property if set true allows closing of dialog on ESC keypress. The default is true.
-
-Class
-
-property defines the class of the icon that is applied to the button.
-
-Width
-
-property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
-
-Height
-
-property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
-
-Margin
-
-property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
-
-**Events**
-
-ok
-
-event handler is called whenever an ok event is triggered.
-
-close
-
-event handler is called whenever a close event is triggered.
-
-open
-
-widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
-
-### **Dialog Properties**
-
-the title of the widget.
-
-name is a unique identifier for the widget.
-
-Text
-
-widget gives a pop-up window. It can be used to provide contextual information to the user.
-
-index
-
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
-
-height of your widget can be specified in px or % (i.e 50px, 75%).
-
-property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
-
-'s content to be included in the widget.
-
-Default Close Action
-
-property allows the user to access close action from header through an "x" icon; and also enables close through ESC key.
-
-actions
-
-property shows/hides actions section of the widget.
-
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
-
-property if set true allows closing of dialog on ESC keypress. The default is true.
-
-Class
-
-property defines the class of the icon that is applied to the button.
+**Layout**
 
 Width
 
-property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
 Height
 
-property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-Margin
+Show Header
 
-property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
+Show/hide header of the iframe dialog.
 
-load
+Modal
 
-event handler is called when the widget is loaded.
+This property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
 
-**Events**
+**Content**
 
-ok
+Url
 
-event handler is called whenever an ok event is triggered.
+Any URL entered for this property will be shown in the dialog content.
 
-close
+**Behavior**
 
-event handler is called whenever a close event is triggered.
+Enable Default Close Action
 
-open
+This property allows the user to access close action from header through an "x" icon; and also enables close through ESC key.
 
-widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+Show actions
 
-### **Dialog Properties**
+This property shows/hides actions section of the iframe dialog.
 
-the title of the widget.
+Animation
 
-name is a unique identifier for the widget.
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+Encode URL
 
-property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
+Check this if you want the provided URL to be encoded at the run time. Enabling this property will encode the special characters in the URL and enable rendering of the page which otherwise might fail. By default, it is set to false.
 
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
+Keyboard
 
-property if set true allows closing of dialog on ESC keypress. The default is true.
+This property if set true allows closing of dialog on ESC keypress. The default is true.
 
-Class
+**Graphics**
 
-property defines the class of the icon that is applied to the button.
+Icon Class
+
+This property defines the class of the icon that is applied to the button.
+
+Icon Width
+
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Height
+
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Margin
+
+Optional property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
+
+Event
+
+Description
+
+**Callback Events**
+
+On ok
+
+This event handler is called whenever an ok event is triggered.
+
+On close
+
+This event handler is called whenever a close event is triggered.
+
+On open
+
+This widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+
+### **Page Dialog Properties**
+
+Property
+
+Description
+
+Title
+
+Set the title of the widget.
+
+Name
+
+The name is a unique identifier for the widget.
+
+Ok Text
+
+This widget gives a pop-up window. It can be used to provide contextual information to the user.
+
+**Accessibility**
+
+Tab index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+
+NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
+
+**Layout**
 
 Width
 
-property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
 Height
 
-property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-Margin
+Modal
 
-property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
+This property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
 
-**Events**
+**Content**
 
-submit
+Content
 
-event handler is called whenever a submit event is triggered.
+Page's content to be included in the widget.
 
-close
+**Behavior**
 
-event handler is called whenever a close event is triggered.
+Enable Default Close Action
 
-open
+This property allows the user to access close action from header through an "x" icon; and also enables close through ESC key.
 
-widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+Show actions
 
-success
+This property shows/hides actions section of the widget.
 
-event handler is called whenever a success event is triggered.
+Animation
 
-error
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
 
-event handler is called whenever an error event is triggered.
+Keyboard
+
+This property if set true allows closing of dialog on ESC keypress. The default is true.
+
+**Graphics**
+
+Icon Class
+
+This property defines the class of the icon that is applied to the button.
+
+Icon Width
+
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Height
+
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Margin
+
+Optional property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
+
+Event
+
+Description
+
+On load
+
+This event handler is called when the widget is loaded.
+
+**Callback Events**
+
+On ok
+
+This event handler is called whenever an ok event is triggered.
+
+On close
+
+This event handler is called whenever a close event is triggered.
+
+On open
+
+This widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+
+### **Login Dialog Properties**
+
+Property
+
+Description
+
+Title
+
+Set the title of the widget.
+
+Name
+
+The name is a unique identifier for the widget.
+
+**Layout**
+
+Width
+
+The width of your widget can be specified in px or % (i.e 50px, 75%).
+
+Modal
+
+This property, if set true, adds a backdrop for the dialog restricting the closure of the dialog when the user clicks outside of the dialog. The default value is false, which allows close of dialog on click outside.
+
+**Behavior**
+
+Animation
+
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
+
+Keyboard
+
+This property if set true allows closing of dialog on ESC keypress. The default is true.
+
+**Graphics**
+
+Icon Class
+
+This property defines the class of the icon that is applied to the button.
+
+Icon Width
+
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Height
+
+Optional property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent.
+
+Icon Margin
+
+Optional property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text.
+
+Event
+
+Description
+
+**Callback Events**
+
+On submit
+
+This event handler is called whenever a submit event is triggered.
+
+On close
+
+This event handler is called whenever a close event is triggered.
+
+On open
+
+This widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page.
+
+On success
+
+This event handler is called whenever a success event is triggered.
+
+On error
+
+This event handler is called whenever an error event is triggered.
 
 [8\. Modal Dialog Widgets](/learn/app-development/widgets/widget-library/#dialog)
 
-- [Overview](#overview)
-- [Features](#features)
-    - [Alert Dialog](#alert-dialog)
-    - [Confirm Dialog](#confirm-dialog)
-    - [Design Dialog](#design-dialog)
-    - [Iframe Dialog](#iframe-dialog)
-    - [Login Dialog](#login-dialog)
-    - [Page Dialog](#page-dialog)
-- [Script Access](#script-access)
-- [Properties & Events](#properties-events)
-    - [Alert Dialog](#alert_properties)
-    - [Confirm Dialog](#confirm_properties)
-    - [Design Dialog](#design_properties)
-    - [Iframe Dialog](#iframe_properties)
-    - [Login Dialog](#login_properties)
-    - [Page Dialog](#page_properties)
+- [i. Overview](#overview)
+- [ii. Features](#features)
+    - [○ Alert Dialog](#alert-dialog)
+    - [○ Confirm Dialog](#confirm-dialog)
+    - [○ Design Dialog](#design-dialog)
+    - [○ Iframe Dialog](#iframe-dialog)
+    - [○ Login Dialog](#login-dialog)
+    - [○ Page Dialog](#page-dialog)
+- [iii. Script Access](#script-access)
+- [iv. Properties & Events](#properties-events)
+    - [○ Alert Dialog](#alert_properties)
+    - [○ Confirm Dialog](#confirm_properties)
+    - [○ Design Dialog](#design_properties)
+    - [○ Iframe Dialog](#iframe_properties)
+    - [○ Login Dialog](#login_properties)
+    - [○ Page Dialog](#page_properties)

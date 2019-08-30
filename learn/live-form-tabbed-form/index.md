@@ -3,13 +3,13 @@ title: "Building Tabbed Live Form"
 id: ""
 ---
 
-: While dealing with Live Form handling many fields, for easier use and manage-ability it would be better to spread the fields across.
+**Scenario**: While dealing with Live Form handling many fields, for easier use and manage-ability it would be better to spread the fields across.
 
 We will use a Tab container to disperse the Live Form fields.
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vQCbxUt1R6XtRrRPVRRLHe8sjhj5HzaCbuFvKVe8ye7Wnn2H172GAjPKcgB0i1rZfD4lsyjZdMYCSl9/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
+[Live Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
 
 - [1\. Live Form Basic Usage](/learn/app-development/widgets/datalive/live-form/live-form-basic-usage/)
 - [2\. How to split live form](/learn/how-tos/live-form-tabbed-form/)

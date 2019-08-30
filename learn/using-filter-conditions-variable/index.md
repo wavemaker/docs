@@ -5,10 +5,10 @@ id: ""
 
 Showcases:
 
-- to use filter conditions in Variables.
-- alternative approach to using Filter Fields in Data Tab.
-- will allow for using mathematical expressions and other expressions.
-- is a list of database match modes that can be used as filter condition:
+- how to use filter conditions in Variables.
+- An alternative approach to using Filter Fields in Data Tab.
+- This will allow for using mathematical expressions and other expressions.
+- Below is a list of database match modes that can be used as filter condition:
     
     "DATABASE\_MATCH\_MODES": {
     "start"            : "STARTING\_WITH",
@@ -30,7 +30,7 @@ Showcases:
     }
     
 
-: Depending upon the type of the data you need to use either the match mode (left side values from the above list) or filter condition (right side values from the above list), as per the following code snippet:
+**Usage**: Depending upon the type of the data you need to use either the match mode (left side values from the above list) or filter condition (right side values from the above list), as per the following code snippet:
 
 /\*if filter field is of type string\*/
         inputData.<string\_field\_name> = {
@@ -46,7 +46,7 @@ Showcases:
 
 In this example, we use the following JavaScript code to filter the records from Login CRUD Variable to fetch records with ID less than or equal to a text value:
 
- = function (variable, inputData) {
+Page.LoginDataonBeforeUpdate = function (variable, inputData) {
     inputData.id = {
         'value': Page.Widgets.text1.datavalue,
         'filterCondition': 'LESS\_THAN\_OR\_EQUALS',
@@ -55,7 +55,7 @@ In this example, we use the following JavaScript code to filter the records from
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS_ShziKiIlw9f_ANdjyVWkMs4uYNY420R-x_PxlbuDWAnADbZCCbePzqYuhPB5WaUCgP9gazbsA71S/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="708" height="560" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-Usage
+Variable Usage
 
 - [1\. How to use Filter in Live Variables](#)
 - [2\. How to use Live Variable APIs](/learn/how-tos/using-live-variable-apis/)

@@ -3,11 +3,11 @@ title: "Youtube"
 id: ""
 ---
 
-prefab ships with WaveMaker and it connects with Youtube to display a video on the web page.
+**Youtube** prefab ships with WaveMaker and it connects with Youtube to display a video on the web page.
 
-1. and drop the prefab onto the canvas on any of the pages of your application.
-2. the , and **URL** properties of the prefab using the **Panel**
-3. and the project. You will see that the video is now embedded on the page in a container with specified height and width.
+1. Drag and drop the **Youtube** prefab onto the canvas on any of the pages of your application.
+2. Set the **Height**, **Width** and **Youtube URL** properties of the **Youtube** prefab using the **Properties Panel**.
+3. Save and **Run** the project. You will see that the video is now embedded on the page in a container with specified height and width.
 
 [![](../assets/prefab.png)](../assets/prefab.png) [![](../assets/youtube_props.png)](../assets/youtube_props.png)
 

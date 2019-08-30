@@ -5,11 +5,11 @@ id: ""
 
 Showcases
 
-- and updating multiple rows using:
+- inserting and updating multiple rows using:
     
-     into Subscriptions(UserId,ChannelId,SubscriptionCost) values(:UserId,:ChannelId,:SubscriptionCost)
+    insert into Subscriptions(UserId,ChannelId,SubscriptionCost) values(:UserId,:ChannelId,:SubscriptionCost)
     
-- onChange event
+- CheckboxSet onChange event
     
     // For handling Selected Channels
     var userChannels = \[\];
@@ -19,9 +19,9 @@ Showcases
         userChannels = newVal;
     };
     
-- function through JavaScript
+- Loop function through JavaScript
     
-     = function ($event, widget) {
+    Page.buttonSubscribeClick = function ($event, widget) {
         // Check if User selected any channels if YES add them ELSE notify him
         if (userChannels.length > 0) {
             // Iterating along the selected channels for subscription and adding them
@@ -41,7 +41,7 @@ Showcases
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vQxHInykV_LRP0ApP4mVm32-2v7bexGZKIPQTzrb8ZakIdXo3D3yHoFt4fByapn0Ee6XpmWRz0AVNW0/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-Usage
+JavaScript Usage
 
 - [1\. How to use JavaScript to Use Expressions for Binding](/learn/how-tos/using-javascript-binding/)
 - [2\. How to load JavaScript from external URLs](/learn/how-tos/using-javascript-external-url/)

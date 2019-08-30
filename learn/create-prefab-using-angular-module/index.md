@@ -3,15 +3,15 @@ title: "How to: Create Prefab using Angular Module"
 id: ""
 ---
 
-In this section, we will list the steps in creating a Prefab using an AngularJS module. For this we will be using the AngularJS tree module provided [](http://jimliu.github.io/angular-ui-tree/)Below example is based on [2.15.0](https://github.com/angular-ui-tree/angular-ui-tree/releases/tag/v2.15.0) We need to download the css and js files.
+In this section, we will list the steps in creating a Prefab using an AngularJS module. For this we will be using the AngularJS tree module provided [here](http://jimliu.github.io/angular-ui-tree/). Below example is based on [v2.15.0](https://github.com/angular-ui-tree/angular-ui-tree/releases/tag/v2.15.0). We need to download the css and js files.
 
-## Prefab
+## Creating Prefab
 
-1. 1. the Prefab tab in Project Dashboard, click on the **Prefab** icon [![prefab_create1](../assets/Prefab_Create1.png)](../assets/Prefab_Create1.png)
-    2. Name and Description and click on [![prefab_create2](../assets/Prefab_Create2.png)](../assets/Prefab_Create2.png)
-    3. the **Settings** dialog, without any changes.
-    4. the css and js files to the resources folder, using the Import option from Main Menu. [![import_resource1](../assets/import_resource1.png)](../assets/import_resource1.png) [![prefab_angui_resource](../assets/prefab_angui_resource.png)](../assets/prefab_angui_resource.png) : Ensure that the resources folder is selected for the import
-    5. Main Menu use Create option to **a Static Variable**, , to hold the default tree structure. Select the **List** option and enter the Json structure. The structure needs to include **, title, and nodes for subitems** Here we have used the structure provided at the [](http://jimliu.github.io/angular-ui-tree/):
+1. 1. From the Prefab tab in Project Dashboard, click on the **Create Prefab** icon [![prefab_create1](../assets/Prefab_Create1.png)](../assets/Prefab_Create1.png)
+    2. Enter Name and Description and click on **CREATE** [![prefab_create2](../assets/Prefab_Create2.png)](../assets/Prefab_Create2.png)
+    3. From the **Prefab Settings** dialog, **SAVE** without any changes.
+    4. **Import** the css and js files to the resources folder, using the Import option from Main Menu. [![import_resource1](../assets/import_resource1.png)](../assets/import_resource1.png) [![prefab_angui_resource](../assets/prefab_angui_resource.png)](../assets/prefab_angui_resource.png) **NOTE**: Ensure that the resources folder is selected for the import
+    5. From Main Menu use Create option to **Create a Static Variable**, **defaultTreeData**, to hold the default tree structure. Select the **is List** option and enter the Json structure. The structure needs to include **id, title, and nodes for subitems**. Here we have used the structure provided at the [website](http://jimliu.github.io/angular-ui-tree/):
         
         \[
           {
@@ -59,17 +59,17 @@ In this section, we will list the steps in creating a Prefab using an AngularJS 
         \]
         
         [![prefab_angui_statvar](../assets/prefab_angui_statvar.png)](../assets/prefab_angui_statvar.png)
-    6. the following Prefab properties, from the Prefab Settings:
-        - **a Style** to include the imported _file_
-        - **module**, give the name and point it to the uploaded _file_ : The module and its name is the requirement of the angular module being implemented. Use the same name.[![prefab_angui_resourcesettings](../assets/prefab_angui_resourcesettings.png)](../assets/prefab_angui_resourcesettings.png)
-        - **a property**
-            - & _Name_ as **list**
-            - _Type_ set to
-            - _Value_ bound to the static variable, created
-            - _Type_ set to **\-out-bound**
-            - _Type_   [![prefab_angui_props](../assets/prefab_angui_props.png)](../assets/prefab_angui_props.png) [![prefab_angui_propbind](../assets/prefab_angui_propbind.png)](../assets/prefab_angui_propbind.png)
-        - changes and the dialog
-    7. the template in html as:
+    6. Set the following Prefab properties, from the Prefab Settings:
+        - **Add a Style** to include the imported _css file_.
+        - **Add module**, give the name **ui.tree** and point it to the uploaded _js file_. **Note**: The module and its name is the requirement of the angular module being implemented. Use the same name.[![prefab_angui_resourcesettings](../assets/prefab_angui_resourcesettings.png)](../assets/prefab_angui_resourcesettings.png)
+        - **Add a property**
+            - _Name_ & _Display Name_ as **list**
+            - _Data Type_ set to **list**
+            - the _Default Value_ bound to the static variable, **defaultTreeData** created
+            - the _Binding Type_ set to **in-out-bound**
+            - _Widget Type_ as **text** [![prefab_angui_props](../assets/prefab_angui_props.png)](../assets/prefab_angui_props.png) [![prefab_angui_propbind](../assets/prefab_angui_propbind.png)](../assets/prefab_angui_propbind.png)
+        - **APPLY** changes and **CLOSE** the dialog
+    7. Define the template in html **markup** as:
         
          <wm-content class="container" backgroundcolor="#fff" name="view1">
            <div ui-tree id="tree-root">
@@ -81,7 +81,7 @@ In this section, we will list the steps in creating a Prefab using an AngularJS 
         
         [![prefab_angui_html](../assets/prefab_angui_html.png)](../assets/prefab_angui_html.png)
         
-        to include the following functions to be trigger whenever a property defined inside a prefab is changed. This also will generate the html file included above: : Be sure to include **$templateCache** in the first line of the Script in **places**
+        **Script** to include the following functions to be trigger whenever a property defined inside a prefab is changed. This also will generate the html file included above: **NOTE**: Be sure to include **$templateCache** in the first line of the Script in **two places**.
         
            $templateCache.put('nodes\_renderer.html',
                '<div ui-tree-handle class="tree-node tree-node-content">' +
@@ -120,9 +120,9 @@ In this section, we will list the steps in creating a Prefab using an AngularJS 
         
         [![prefab_angui_script](../assets/prefab_angui_script.png)](../assets/prefab_angui_script.png)
         
-        Add required :
+        Add required **styles**:
         
-         {
+        .btn {
             margin-right: 8px;
         }
         .angular-ui-tree-handle {
@@ -149,20 +149,20 @@ In this section, we will list the steps in creating a Prefab using an AngularJS 
         }
         
         [![prefab_angui_styles](../assets/prefab_angui_styles.png)](../assets/prefab_angui_styles.png)
-    8. and the Prefab.
+    8. **Save** and **run** the Prefab.
 
  
 
 [![prefab_angui_run](../assets/prefab_angui_run.png)](../assets/prefab_angui_run.png)
 
-1. 1. - the Prefab. [![](../assets/prefab_publish_old.png)](../assets/prefab_publish_old.png)
+1. 1. - **Publish** the Prefab. [![](../assets/prefab_publish_old.png)](../assets/prefab_publish_old.png)
 
-## Prefab
+## Using Prefab
 
 To use the prefab in your application, Open the app where you want to use the Prefab
 
-1. 1. 1. the Prefab was published to workspace, you can see it in the Widget toolbox ready for drag and drop operation. Drag and drop the prefab onto the canvas and run the application. [![prefab_angui_app](../assets/prefab_angui_app.png)](../assets/prefab_angui_app.png)
-        2. can bind the prefab list property to any list and change the tree structure. We have created a static variable with the following structure and bound it to the list property
+1. 1. 1. Since the Prefab was published to workspace, you can see it in the Widget toolbox ready for drag and drop operation. Drag and drop the prefab onto the canvas and run the application. [![prefab_angui_app](../assets/prefab_angui_app.png)](../assets/prefab_angui_app.png)
+        2. You can bind the prefab list property to any list and change the tree structure. We have created a static variable with the following structure and bound it to the list property
             
             \[
               {
@@ -218,15 +218,15 @@ To use the prefab in your application, Open the app where you want to use the Pr
             \]
             
             [![prefab_angui_appstatvar](../assets/prefab_angui_appstatvar.png)](../assets/prefab_angui_appstatvar.png)
-        3. the List property of the Prefab to the Static Variable created in the previous step [![prefab_angui_appsbind](../assets/prefab_angui_appsbind.png)](../assets/prefab_angui_appsbind.png)
-        4. the app and see the new tree structure [![prefab_angui_apprun](../assets/prefab_angui_apprun.png)](../assets/prefab_angui_apprun.png)
+        3. Bind the List property of the Prefab to the Static Variable created in the previous step [![prefab_angui_appsbind](../assets/prefab_angui_appsbind.png)](../assets/prefab_angui_appsbind.png)
+        4. **Run** the app and see the new tree structure [![prefab_angui_apprun](../assets/prefab_angui_apprun.png)](../assets/prefab_angui_apprun.png)
 
-[Use Cases](/learn/app-development/widgets/use-cases-prefabs/)
+[Prefab Use Cases](/learn/app-development/widgets/use-cases-prefabs/)
 
 - [1\. Prefab to compare two strings](/learn/how-tos/create-simple-prefab/)
 - [2\. Prefab using Angular Module](/learn/how-tos/create-prefab-using-angular-module/)
-    - [Creation](#creation)
-    - [Usage](#usage)
+    - [i. Creation](#creation)
+    - [ii. Usage](#usage)
 - [3\. Prefab using 3rd Party UI Widgets](/learn/how-tos/create-prefab-using-third-party-ui-widgets/)
 - [4\. Prefab Using D3 & NVD3 Charts](/how-tos/create-prefab-using-d3-nvd3-charts/)
 - [5\. Prefab Using D3 Library (DataMaps)](/learn/how-tos/create-prefab-using-d3-library-datamaps/)

@@ -3,93 +3,161 @@ title: "Carousel"
 id: ""
 ---
 
-widget is a flexible, responsive way to add a slider to your site. In addition to being responsive, the content is flexible enough to allow images, iframes, videos, or just about any type of content that you might want.
+**Carousel** widget is a flexible, responsive way to add a slider to your site. In addition to being responsive, the content is flexible enough to allow images, iframes, videos, or just about any type of content that you might want.
 
-provides you with two types of Carousel:
+WaveMaker provides you with two types of Carousel:
 
-1. where the Carousel content will take the form of an array or any repeated list like a dataset. The number of items displayed within the carousel will depend upon the number of rows in the bound variable.  **Template** a subWidget of Carousel holds the slide content.
-2. where the Carousel content can be bound to individual image resources.  **Content** a subWidget of Carousel holds the slide content. By default, Carousel comes with three carousel contents each with a picture widget. You can add more using the **Carousel** action property.
+1. **Dynamic** where the Carousel content will take the form of an array or any repeated list like a dataset. The number of items displayed within the carousel will depend upon the number of rows in the bound variable. **Carousel Template** a subWidget of Carousel holds the slide content.
+2. **Static** where the Carousel content can be bound to individual image resources. **Carousel Content** a subWidget of Carousel holds the slide content. By default, Carousel comes with three carousel contents each with a picture widget. You can add more using the **Add Carousel** action property.
 
 [![](../assets/carousel_types.png)](../assets/carousel_types.png)
 
-name is a unique identifier for Carousel.
+# Properties
 
-Carousel (available only for Static Carousel)
+**Property**
 
-you to add carousel content to the carousel widget.
+**Description**
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+Name
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+The name is a unique identifier for Carousel.
 
-(available only for Dynamic Carousel)
+Add Carousel (available only for Static Carousel)
 
-this bindable property to a variable to populate the list of images to display.
+Allows you to add carousel content to the carousel widget.
 
-determines whether or not a component is visible. It is a bindable property.
+**Layout**
 
-on Demand (visible only when show property is bound to a variable)
+Width
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
-Controls
+Height
 
-property allows you to enable the controls in the form of:
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-- \- arrows on either side of the images,
-- \- dots at the bottom of the images,
-- \- default or
+**Dataset** (available only for Dynamic Carousel)
 
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. Can be set to:
+Value
 
-- \- default or
+Set this bindable property to a variable to populate the list of images to display.
 
-Interval
+**Behavior**
 
-property defines the animation interval in seconds.
+Show
 
-**Content** (only for Static Carousel) SubWidget of Carousel to hold a slide content. By default, Carousel comes with three carousel contents each with a picture widget. You can add more using the Add Carousel action button.
+Showing determines whether or not a component is visible. It is a bindable property.
 
-name is a unique identifier for your widget.
+Load on Demand (visible only when show property is bound to a variable)
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+Enable Controls
 
-determines whether or not a component is visible. It is a bindable property.
+This property allows you to enable the controls in the form of:
 
-on Demand (visible only when show property is bound to a variable)
+- navs - arrows on either side of the images,
+- indicators - dots at the bottom of the images,
+- both - default or
+- none
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+Animation
 
-Align
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. Can be set to:
 
-text alignment horizontally, can be left, center or right.
+- auto - default or
+- none.
 
-**Template** (only for Dynamic Carousel) SubWidget of Carousel to hold a slide content. The number of images displayed will be determined by the values of the variable bound to the Dataset Value property of Carousel.
+Animation Interval
 
-name is a unique identifier for your widget.
+This property defines the animation interval in seconds.
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+**Carousel Content** (only for Static Carousel) SubWidget of Carousel to hold a slide content. By default, Carousel comes with three carousel contents each with a picture widget. You can add more using the Add Carousel action button.
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+Property
 
-determines whether or not a component is visible. It is a bindable property.
+Description
 
-on Demand (visible only when show property is bound to a variable)
+Name
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+The name is a unique identifier for your widget.
 
-Align
+**Layout**
 
-text alignment horizontally, can be left, center or right.
+Width
 
-event handler is called each time your element's value changes.
+The width of your widget can be specified in px or % (i.e 50px, 75%).
+
+Height
+
+The height of your widget can be specified in px or % (i.e 50px, 75%).
+
+**Behavior**
+
+Show
+
+Showing determines whether or not a component is visible. It is a bindable property.
+
+Load on Demand (visible only when show property is bound to a variable)
+
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+
+**Format**
+
+Horizontal Align
+
+Set text alignment horizontally, can be left, center or right.
+
+**Carousel Template** (only for Dynamic Carousel) SubWidget of Carousel to hold a slide content. The number of images displayed will be determined by the values of the variable bound to the Dataset Value property of Carousel.
+
+Property
+
+Description
+
+Name
+
+The name is a unique identifier for your widget.
+
+**Layout**
+
+Width
+
+The width of your widget can be specified in px or % (i.e 50px, 75%).
+
+Height
+
+The height of your widget can be specified in px or % (i.e 50px, 75%).
+
+**Behavior**
+
+Show
+
+Showing determines whether or not a component is visible. It is a bindable property.
+
+Load on Demand (visible only when show property is bound to a variable)
+
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+
+**Format**
+
+Horizontal Align
+
+Set text alignment horizontally, can be left, center or right.
+
+# Event
+
+**Event**
+
+**Description**
+
+Change
+
+This event handler is called each time your element's value changes.
 
 [7\. Advanced Widgets](/learn/app-development/widgets/widget-library/#advanced)
 
 - [7.1 Carousel](#)
-    - [Properties](#properties)
-    - [Events](#events)
+    - [i. Properties](#properties)
+    - [ii. Events](#events)
 - [7.2 Login](/learn/app-development/widgets/advanced/login/)
 - [7.3 Marquee](/learn/app-development/widgets/advanced/marquee/)

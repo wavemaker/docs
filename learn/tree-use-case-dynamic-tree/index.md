@@ -5,9 +5,9 @@ id: ""
 
 If you have a requirement, whereby the user decides the structure of the tree. For example, you are building a folder-file structure and the user decides how many folders and files are to be present in a tree. This section deals with such a situation.
 
-1. a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas
-2. the Tree widget and specify a _Variable_ as property, "" [![](../assets/tree_dynamic_design.png)](../assets/tree_dynamic_design.png)
-3. the Script tab, use the following script for treeData:
+1. Drop a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas
+2. Select the Tree widget and specify a _Script Variable_ as **dataset** property, "_treeData_" [![](../assets/tree_dynamic_design.png)](../assets/tree_dynamic_design.png)
+3. From the Script tab, use the following script for treeData:
     
     // should be an array of objects consisting of label, icon, children keys
         // populate the initial data
@@ -21,13 +21,13 @@ If you have a requirement, whereby the user decides the structure of the tree. F
             "children": \[\]
         }\];
     
-4. JavaScript for the onSelect event of the tree widget as:
+4. Select JavaScript for the onSelect event of the tree widget as:
     
-     = $item;
+    Page.activeTreeElement = $item;
     
-5. the buttons addfile and add folder, select JavaScript for the onClick events and add the following code:
+5. For the buttons addfile and add folder, select JavaScript for the onClick events and add the following code:
     
-     = function ($event, widget) {
+    Page.addfileClick = function ($event, widget) {
         // add file
         if (Page.activeTreeElement) {
             if (\_.isArray(Page.activeTreeElement.children)) {
@@ -54,9 +54,9 @@ If you have a requirement, whereby the user decides the structure of the tree. F
         }
     };
     
-6. the page and see two folders given by default. Select one node and click Add File to add files, or Add Folder to add folder.
+6. Preview the page and see two folders given by default. Select one node and click Add File to add files, or Add Folder to add folder.
 
-[Widget Cases](/learn/app-development/widgets/basic/tree/)
+[Tree Widget Cases](/learn/app-development/widgets/basic/tree/)
 
 - [1\. How to build a tree from static variable](/learn/how-tos/tree-use-case-static-variable/)
 - [2\. How to build tree from java service](/learn/how-tos/tree-use-case-java-service/)

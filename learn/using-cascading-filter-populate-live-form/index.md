@@ -5,16 +5,16 @@ id: ""
 
 We will be use Live Filter result value to populate a Live Form.
 
-1. a field based on other fields using the filter on field property in Live Filter.
-2. filtering the unique value for fields such as name, phone number, email etc. by using cascaded filter and in turn change the fields data and save it.
+1. Filter a field based on other fields using the filter on field property in Live Filter.
+2. For filtering the unique value for fields such as name, phone number, email etc. by using cascaded filter and in turn change the fields data and save it.
 
 We use the following query to obtain employee details based upon first and last name:
 
- \* from employees where first\_name like :fname and last\_name like :lname
+select \* from employees where first\_name like :fname and last\_name like :lname
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vTW25WmFg-BgHVFJ4-ho_972ImUe_ZXETzi1eM3x8QMh6OdOq6-kVulqGCfd50ex6kEz2AVNE_3oH0B/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
+[Live Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
 
 - [1\. Live Form Basic Usage](/learn/app-development/widgets/datalive/live-form/live-form-basic-usage/)
 - [2\. How to split live form](/learn/how-tos/live-form-tabbed-form/)

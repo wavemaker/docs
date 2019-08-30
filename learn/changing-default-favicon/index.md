@@ -5,15 +5,15 @@ id: ""
 
 By default WaveMaker logo is displayed as the favicon when you run your app. [![design_favicon](../assets/design_favicon.png)](../assets/design_favicon.png) This can be can be changed by replacing the favicon.
 
-1. the Main Menu, under  **-> Resource** option locate the  the images folder. [![design_favicon_resource](../assets/design_favicon_resource.png)](../assets/design_favicon_resource.png)
-2. this file and upload the icon of your choice at the **location with the same name**
-3. the app and see the change
+1. From the Main Menu, under **Import -> Resource** option locate the _favicon _under the images folder. [![design_favicon_resource](../assets/design_favicon_resource.png)](../assets/design_favicon_resource.png)
+2. Delete this file and upload the icon of your choice at the **same location with the same name**
+3. Run the app and see the change
 
-[UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
+[Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
 - 1\. How to Navigate between Pages in
-    - [Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
-    - [Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
+    - [i. Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
+    - [ii. Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
 - [2\. How to pass parameters to pages](/learn/how-tos/passing-parameters-pages/)
 - [3\. How to pass parameters to partial pages](/learn/how-tos/passing-parameters-partial-page/)
 - [4\. How to use static variable to pass data between pages](/learn/how-tos/use-static-variable-pass-data-pages/)

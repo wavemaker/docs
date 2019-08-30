@@ -5,13 +5,13 @@ id: ""
 
 In this section we will be seeing how to validate Google Login using Custom Security within WaveMaker App and to access Gmail API. Steps to attain this include:
 
-1. OAuth Prefab for Google to get the access token for the Google user to access Google API – Gmail API
-2. validate the login through Google, a Java Service will be created which will override WMCustomAuthenticationManager
-3. access token from OAuth prefab will be used as an id in the WMUser object returned by the Java Service.
+1. Using OAuth Prefab for Google to get the access token for the Google user to access Google API – Gmail API
+2. To validate the login through Google, a Java Service will be created which will override WMCustomAuthenticationManager
+3. The access token from OAuth prefab will be used as an id in the WMUser object returned by the Java Service.
 
 We have used the following Java code to accomplish this.
 
-- in file
+- Dependency in _pom.xml_ file
     
     <dependency>
                 <groupId>org.springframework.social</groupId>
@@ -19,9 +19,9 @@ We have used the following Java code to accomplish this.
                 <version>1.0.0.RELEASE</version>
     </dependency>
     
-- of Java Service – class definition:
+- Imports of Java Service – class definition:
     
-     com.customsecurityhowto.myauthenticationmanager;
+    package com.customsecurityhowto.myauthenticationmanager;
     import javax.servlet.http.HttpServletRequest;
     import org.slf4j.Logger;
     import org.slf4j.LoggerFactory;
@@ -38,7 +38,7 @@ We have used the following Java code to accomplish this.
     import org.springframework.social.google.api.plus.Person;
     import com.wavemaker.runtime.security.AuthRequestContext;
     
-- Class – Method Definition :
+- Java Class – Method Definition :
     
     @ExposeToClient
     public class MyAuthenticationManager implements WMCustomAuthenticationManager {
@@ -63,9 +63,9 @@ We have used the following Java code to accomplish this.
             return user;
         }}
     
-- Load JavaScript for Google Prefab
+- On Load JavaScript for Google Prefab
     
-    1Load = function (widget) {
+    Page.GoogleOAuth1Load = function (widget) {
         angular.$watch('accesstoken', function (newVal) {
             if (newVal) {
                 Page.Actions.googleLoginVar.invoke();

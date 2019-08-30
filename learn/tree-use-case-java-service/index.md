@@ -3,22 +3,22 @@ title: "Tree Use Case - from Java Service"
 id: ""
 ---
 
-1. the source structure for Tree as a [**Service**](http://[supsystic-show-popup id=119]) by name
-2. following code needs to be added to the Java service:
-    1. the ArrayList utility:
+1. Create the source structure for Tree as a [**Java Service**](http://[supsystic-show-popup id=119]) by name _TreeData_
+2. The following code needs to be added to the Java service:
+    1. import the ArrayList utility:
         
-         java.util.ArrayList;
+        import java.util.ArrayList;
         import java.util.List;
         
-    2. the following array structure:
+    2. add the following array structure:
         
             public String label;
             public String icon;
             public List<TreeData> subItems;
         
-    3. the following methods:
+    3. add the following methods:
         
-         TreeData() {
+        public TreeData() {
         
             }
         
@@ -51,9 +51,9 @@ id: ""
                 this.icon = icon;
             }
         
-    4. the following main method:
+    4. and the following main method:
         
-         List<TreeData> sampleJavaOperation(String name) {
+        public List<TreeData> sampleJavaOperation(String name) {
                 String result = null;
                 try {
                     TreeData TreeData1 = new TreeData("C:", "test1");
@@ -96,11 +96,11 @@ id: ""
             }
         }
         
-3. a [Service Variable](http://[supsystic-show-popup id=105]) to invoke the above Java Service
-4. and drop a Tree widget, bind the Dataset to the above Java Service Variable
-5. the page to see Tree widget in action.
+3. Create a [Java Service Variable](http://[supsystic-show-popup id=105])Service to invoke the above Java Service
+4. Drag and drop a Tree widget, bind the Dataset to the above Java Service Variable
+5. Preview the page to see Tree widget in action.
 
-[Widget Cases](/learn/app-development/widgets/basic/tree/)
+[Tree Widget Cases](/learn/app-development/widgets/basic/tree/)
 
 - [1\. How to build a tree from static variable](/learn/how-tos/tree-use-case-static-variable/)
 - [2\. How to build tree from java service](/learn/how-tos/tree-use-case-java-service/)

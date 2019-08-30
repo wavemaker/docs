@@ -5,8 +5,8 @@ id: ""
 
 WaveMaker offers three ways of allowing user to choose from given options:
 
-- : Select widget lets the user to select values from an available list of options. The options are given in the form of a drop-down list from which the user can choose one option.
-- and are used when there are multiple values belonging to a single group to choose from. In case we have a yes/no or true/false scenario, we can use the Checkbox widgets.
+- Select: Select widget lets the user to select values from an available list of options. The options are given in the form of a drop-down list from which the user can choose one option.
+- Radioset and **CheckboxSet** are used when there are multiple values belonging to a single group to choose from. In case we have a yes/no or true/false scenario, we can use the Checkbox widgets.
 
 Here we will see how to Filter a List using a CheckboxSet Widget
 

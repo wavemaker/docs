@@ -7,10 +7,10 @@ In this post, we will walk through the steps to create a simple navigation, with
 
 [![](../assets/nav_run.png)](../assets/nav_run.png) We will be using a Model Variable for the purpose of this example:
 
-1. or Open page where you want to use the Nav Widget
-2. the Variables dialog from the Variables menu and using New Variable create a Model variable ( [more about variables)](/learn/app-development/variables/model-variable/) [![](../assets/Nav_Var_create.png)](../assets/Nav_Var_create.png)
-3. a new Model Variable called as select [![](../assets/nav_var.png)](../assets/nav_var.png)
-4. the following in the _Editor_, this defines the structure for Menu identifying , , , _Value_ and _\-action_ Icons can be [from glyphicons](http://glyphicons.com/) or [awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons.
+1. Create or Open page where you want to use the Nav Widget
+2. Open the Variables dialog from the Variables menu and using New Variable create a Model variable ([Know more about variables)](/learn/app-development/variables/model-variable/). [![](../assets/Nav_Var_create.png)](../assets/Nav_Var_create.png)
+3. Create a new Model Variable called as _navvar_ and select _isList_ [![](../assets/nav_var.png)](../assets/nav_var.png)
+4. Add the following in the _Text Editor_, this defines the structure for Menu identifying _Label_, _Icon_, _Link_, _Badge Value_ and _sub-action_. Icons can be [halflings from glyphicons](http://glyphicons.com/) or [font awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons.
     
     \[
       {
@@ -36,19 +36,19 @@ In this post, we will walk through the steps to create a simple navigation, with
       }
     \]
     
-5. the property of the Menu widget to the variable created in the previous step.
-6. the
+5. Bind the _Value_ property of the Menu widget to the variable created in the previous step.
+6. Set the
     
-    - _Label_ to label,
-    - _Icon_ to Icon,
-    - _Link_ to Link,
-    - _Badge_ to badge-value,
-    - _Actions_ to sub-action.
+    - _Action Label_ to label,
+    - _Action Icon_ to Icon,
+    - _Action Link_ to Link,
+    - _Item Badge_ to badge-value,
+    - _Sub Actions_ to sub-action.
     
     If you need you can modify the JSON structure given for the Model Variable and do the appropriate settings. [![](../assets/nav_props.png)](../assets/nav_props.png)
-7. the application and see the menu in action.
+7. Run the application and see the menu in action.
 
-## Nav
+## Multilevel Nav
 
 You can have multiple levels of nav-items. Follow the steps from the above example, replace the Variable JSON with the below code:
 
@@ -110,7 +110,7 @@ You will get the following nav: [![](../assets/nested_nav_items.png)](../assets/
 - [6.1 Breadcrumb](/learn/app-development/widgets/navigation/breadcrumb/)
 - [6.2 Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu/)
 - [6.3 Nav](/learn/app-development/widgets/navigation/nav/)
-    - [Properties](/learn/app-development/widgets/navigation/nav/#properties)
-    - [Use Cases](/learn/app-development/widgets/navigation/nav/#use-cases)
+    - [i. Properties](/learn/app-development/widgets/navigation/nav/#properties)
+    - [ii. Use Cases](/learn/app-development/widgets/navigation/nav/#use-cases)
 - [6.4 Nav Bar](/learn/app-development/widgets/navigation/nav-bar/)
 - [6.5 Popover](/learn/app-development/widgets/navigation/popover/)

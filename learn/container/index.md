@@ -3,107 +3,139 @@ title: "Container"
 id: ""
 ---
 
-**widget** is an empty box for flow content, a collection of more semantically marked-up content that may need to be grouped together with the class, lang and title attributes. It represents its children. The users can either place the content or include the partial pages.
+**Container widget** is an empty box for flow content, a collection of more semantically marked-up content that may need to be grouped together with the class, lang and title attributes. It represents its children. The users can either place the content or include the partial pages.
 
-are semantically correct for laying out content. Its most common use will likely be for stylistic purposes — i.e., wrapping some semantically marked-up content in a CSS-styled container.
+Containers are semantically correct for laying out content. Its most common use will likely be for stylistic purposes — i.e., wrapping some semantically marked-up content in a CSS-styled container.
 
-can also use the Conditional Class property from the Style tab to set the class based upon a condition. See here for [to](/learn/how-tos/use-conditional-class-property/)
+# Properties
 
-name is a unique identifier for the container widget.
+You can also use the Conditional Class property from the Style tab to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/).
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+**Property**
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+**Description**
 
-bindable property, defines the content to be displayed within the container:
+Name
 
-- Content - HTML content,
-- Content - in the form of Partial Pages, choose from the list provided
+The name is a unique identifier for the container widget.
 
-determines whether or not a component is visible. It is a bindable property.
+**Layout**
 
-on Demand (visible only when show property is bound to a variable)
+Width
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
+Height
 
-Align
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
-text alignment horizontally.
+**Content**
 
-**Events**
+Content
 
-click
+This bindable property, defines the content to be displayed within the container:
 
-event handler is called whenever the click event is triggered on a widget.
+- Inline Content - HTML content,
+- Page Content - in the form of Partial Pages, choose from the list provided
 
-double click
+**Behavior**
 
-event handler is called whenever the double click event is triggered on a widget.
+Show
 
-mouse over
+Showing determines whether or not a component is visible. It is a bindable property.
 
-event fires when the mouse hovers over this widget.
+Load on Demand (visible only when show property is bound to a variable)
 
-mouse out
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-event fires when the mouse moves away from this widget.
+Animation
 
-mouse enter
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
 
-event handler is called whenever the mouse enters the widget.
+**Format**
 
-mouse leave
+Horizontal Align
 
-event handler is called whenever the mouse leaves the widget.
+Set text alignment horizontally.
 
-**Events**
+# Events
 
-tap
+**Event**
 
-event handler is called whenever the tap event is triggered on a widget.
+**Description**
 
-double tap
+**Mouse Events**
 
-event handler is called whenever the double tap event is triggered on a widget.
+On click
 
-swipe up
+This event handler is called whenever the click event is triggered on a widget.
 
-event handler is called whenever the swipeup event is triggered.
+On double click
 
-swipe down
+This event handler is called whenever the double click event is triggered on a widget.
 
-event handler is called whenever swipe down event is triggered.
+On mouse over
 
-swipe left
+This event fires when the mouse hovers over this widget.
 
-event handler is called whenever a swipeleft event is triggered.
+On mouse out
 
-swipe right
+This event fires when the mouse moves away from this widget.
 
-event handler is called whenever a swiperight event is triggered.
+On mouse enter
 
-pinch in
+This event handler is called whenever the mouse enters the widget.
 
-event handler is called whenever pinch event is triggered.
+On mouse leave
 
-pinch out
+This event handler is called whenever the mouse leaves the widget.
 
-event handler is called whenever pinch out event is triggered.
+**Touch Events**
 
-**Events**
+On tap
 
-enter key press
+This event handler is called whenever the tap event is triggered on a widget.
 
-the user hits ENTER/Return while the focus is in this editor, execute the specified event handler.
+On double tap
+
+This event handler is called whenever the double tap event is triggered on a widget.
+
+On swipe up
+
+This event handler is called whenever the swipeup event is triggered.
+
+On swipe down
+
+This event handler is called whenever swipe down event is triggered.
+
+On swipe left
+
+This event handler is called whenever a swipeleft event is triggered.
+
+On swipe right
+
+This event handler is called whenever a swiperight event is triggered.
+
+On pinch in
+
+This event handler is called whenever pinch event is triggered.
+
+On pinch out
+
+This event handler is called whenever pinch out event is triggered.
+
+**Keyboard Events**
+
+On enter key press
+
+When the user hits ENTER/Return while the focus is in this editor, execute the specified event handler.
 
 [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
 
 - [2.1 Accordion](/learn/app-development/widgets/container/accordion/)
 - [2.2 Container](/learn/app-development/widgets/container/container/)
-    - [Properties](#properties)
-    - [Events](#events)
+    - [i. Properties](#properties)
+    - [ii. Events](#events)
 - [2.3 Grid Layout](/learn/app-development/widgets/container/grid-layout/)
 - [2.4 Panel](/learn/app-development/widgets/container/panel/)
 - [2.5 Tabs](/learn/app-development/widgets/container/tabs/)

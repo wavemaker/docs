@@ -5,12 +5,12 @@ id: ""
 
 We will see how to access REST APIs using Java Service. The steps include:
 
-1. to create a Java Service method to access a Rest Service
-2. the Java Service can invoke the Rest Service to get the response.
+1. How to create a Java Service method to access a Rest Service
+2. How the Java Service can invoke the Rest Service to get the response.
 
 The following files were imported into the Java Service:
 
- javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,7 +31,7 @@ import org.json.JSONObject;
 
 We will be using the following Java Service Method:
 
- ArrayList<String> restService(String origin, String destination) {
+public ArrayList<String> restService(String origin, String destination) {
     	ArrayList<String> directionList = new ArrayList<String>();
     	try {
     		URL url = new URL("http://maps.googleapis.com/maps/api/directions/xml?origin="+origin+"&destination="+destination+"&sensor=false");
@@ -58,7 +58,7 @@ We will be using the following Java Service Method:
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vT_RIWG_2L-gQxlVC1A0ggTs_vVweTjUevfacyYwAj9nMs5qUuOAJV86Ujnk1s25LWQO8ZkttUqRomg/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-Service Use Cases
+Java Service Use Cases
 
 - [1\. How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)
 - [2\. How to implement forgot password feature using Java Service](/learn/how-tos/implementing-forgot-password-feature-using-java-service/)

@@ -5,15 +5,15 @@ id: ""
 
 The theme applied to an app defines the styling attributes of various Page Components. You can
 
-1. can select from a wide range of Themes provided by WaveMaker, [more](/learn/app-development/ui-design/themes/)
-2. your own theme and apply them to the Project, [more](/learn/app-development/ui-design/themes/#create-theme)
+1. You can select from a wide range of Themes provided by WaveMaker, [know more](/learn/app-development/ui-design/themes/)
+2. Use your own theme and apply them to the Project, [know more](/learn/app-development/ui-design/themes/#create-theme)
 
-You can also use the  file to set styling changes for a specific page component. **:** This is not a recommended course of action, use one of the above mentioned steps for theme change.
+You can also use the _app.css_ file to set styling changes for a specific page component. **Note:** This is not a recommended course of action, use one of the above mentioned steps for theme change.
 
-1. file from the additional developer tools [![](../assets/design_app_css.png)](../assets/design_app_css.png)
-2. the css stylesheet. For example, to change background colors for header, footer, navbar, leftnav and rightnav use the following snippet:
+1. Open _app.css_ file from the additional developer tools [![](../assets/design_app_css.png)](../assets/design_app_css.png)
+2. Enter the css stylesheet. For example, to change background colors for header, footer, navbar, leftnav and rightnav use the following snippet:
     
-    \-app .app-header {
+    .wm-app .app-header {
         background-color: green;
     }
     .wm-app .app-footer {
@@ -29,13 +29,13 @@ You can also use the  file to set styling changes for a specific page component
         background-color: black;
     }
     
-3. the app and see the changes [![](../assets/design_app.png)](../assets/design_app.png)
+3. Run the app and see the changes [![](../assets/design_app.png)](../assets/design_app.png)
 
-[UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
+[Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
 - 1\. How to Navigate between Pages in
-    - [Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
-    - [Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
+    - [i. Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
+    - [ii. Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
 - [2\. How to pass parameters to pages](/learn/how-tos/passing-parameters-pages/)
 - [3\. How to pass parameters to partial pages](/learn/how-tos/passing-parameters-partial-page/)
 - [4\. How to use static variable to pass data between pages](/learn/how-tos/use-static-variable-pass-data-pages/)

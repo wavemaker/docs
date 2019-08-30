@@ -5,16 +5,16 @@ id: ""
 
 By default, the Page Title in an app is set the to the name given to the Page at the time of Page Creation. You will see it once you Remove Toolbar and come out of the Preview mode. [![](../assets/design_pagetitle.png)](../assets/design_pagetitle.png)
 
-1. can set the Page Title from the properties panel of the page [![](../assets/design_pagetitle_prop-1.png)](../assets/design_pagetitle_prop-1.png)
-2. can set it from the Markup, too:
-    - to the of the concerned page
-    - the **tag** and give the name of your choice. [![](../assets/design_pagetitle_markup.png)](../assets/design_pagetitle_markup.png)
+1. You can set the Page Title from the properties panel of the page [![](../assets/design_pagetitle_prop-1.png)](../assets/design_pagetitle_prop-1.png)
+2. You can set it from the Markup, too:
+    - Go to the **Markup** of the concerned page
+    - Locate the **pagetitle tag** and give the name of your choice. [![](../assets/design_pagetitle_markup.png)](../assets/design_pagetitle_markup.png)
 
-[UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
+[Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
 - 1\. How to Navigate between Pages in
-    - [Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
-    - [Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
+    - [i. Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
+    - [ii. Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
 - [2\. How to pass parameters to pages](/learn/how-tos/passing-parameters-pages/)
 - [3\. How to pass parameters to partial pages](/learn/how-tos/passing-parameters-partial-page/)
 - [4\. How to use static variable to pass data between pages](/learn/how-tos/use-static-variable-pass-data-pages/)

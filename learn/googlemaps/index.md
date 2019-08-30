@@ -3,97 +3,103 @@ title: "Googlemaps"
 id: ""
 ---
 
-The prefab connects with Google Maps and displays the map on your page. It can be used either for map or as map or as a map.
+The **Googlemaps** prefab connects with Google Maps and displays the map on your page. It can be used either for **location** map or as **route** map or as a **heat** map.
 
-[![](../assets/prefab.png)](../assets/prefab.png) order to use GoogleMaps, you need to register your app with Google Maps and add the API key here:
+[![](../assets/prefab.png)](../assets/prefab.png)In order to use GoogleMaps, you need to register your app with Google Maps and add the API key here:
 
 [![](../assets/googlemaps_apikey.png)](../assets/googlemaps_apikey.png)
+
+# Layouts
 
 Three types of maps can be plotted using Googlemaps Prefab:
 
 Heat map 
 
-<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/HeatMap">of Heat Map</iframe>
+<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/HeatMap">Example of Heat Map</iframe>
 
 Location map 
 
-<iframe width="100%" height="500" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PrefabGMapMarker">of Marker Map</iframe>
+<iframe width="100%" height="500" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PrefabGMapMarker">Example of Marker Map</iframe>
 
 Route map 
 
-<iframe width="100%" height="500" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/RouteGMaps">of Route Map</iframe>
+<iframe width="100%" height="500" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/RouteGMaps">Example of Route Map</iframe>
+
+# Features
 
 Using Googlemaps Prefab, you can:
 
-- various [of maps](#types),
-- [events](#events) to customize the map behavior, and
-- [scripts](#script) to enhance the functionality.
+- display various [types of maps](#types),
+- [use events](#events) to customize the map behavior, and
+- [use scripts](#script) to enhance the functionality.
 
-There are three **Types** supported by Googlemaps Prefab:
+There are three **Map Types** supported by Googlemaps Prefab:
 
-1. help to mark a given with an , , highlight using a circle of given _shade_(color). The input can be any variable which has the above-mentioned fields delimited. The variable can be bound to the Locations property and each of the above properties can be set to the elements of the variable.
-    - : Variable containing the location details. Can be static variable in JSON format, or a Live Variable with the following fields
-    - ** type**: tells the format of the location being plotted. It can be
-        - in which case Marker Latitude and Marker Longitude of the location is given as the input
-        - wherein the Address fields in the form of a city, state, zip etc can be picked from the multi-list dropdown. These are the fields from the variable bound to the Locations property above.
-    - **Icon**: Used to mark the location
-    - **Info**: Any information that needs to be displayed when the location is clicked
-    - **Color**: Used to set a circle shaped boundary around the marker.
-    - **Radius**: Used to set the radius of the boundary around the marker. _change is reflected in prefab only when Perimeter property is enabled_
-2. a **map** you can mark:
-    - and by passing the String or GeoLocations(Latitude and longitude) to get the route rendered on the map,
-    - a location which needs to be included in the route from the origin to destination,
-    - the property you can choose to mark the waypoint in the route,
-    - **Mode** can be Driving, Walking or Transit. The Route information like Origin, Destination, Duration, Distance is displayed below the map.
-3. a **,** the traffic congestion points can be marked. You can set:
-    - **Latitude** **Longitude ** be selected from the fields from the Locations variable
-    
-    - **Density** to mark the size of the marker
-    - to set the appearance of the marker
+1. **Markers** help to mark a given _location_ with an _icon_, _information_, highlight using a circle of given _radius_ and _shade_(color). The input can be any variable which has the above-mentioned fields delimited. The variable can be bound to the Locations property and each of the above properties can be set to the elements of the variable.
+    - **Locations**: Variable containing the location details. Can be static variable in JSON format, or a Live Variable with the following fields
+    - **Location type**: tells the format of the location being plotted. It can be
+        - **LatLng** in which case Marker Latitude and Marker Longitude of the location is given as the input
+        - **Address** wherein the Address fields in the form of a city, state, zip etc can be picked from the multi-list dropdown. These are the fields from the variable bound to the Locations property above.
+    - **Marker Icon**: Used to mark the location
+    - **Marker Info**: Any information that needs to be displayed when the location is clicked
+    - **Perimeter Color**: Used to set a circle shaped boundary around the marker.
+    - **Perimeter Radius**: Used to set the radius of the boundary around the marker. _This change is reflected in prefab only when Perimeter property is enabled_.
+2. As a **route map** you can mark:
+    - the **origin** and **destination** by passing the String or GeoLocations(Latitude and longitude) to get the route rendered on the map,
+    - the **Waypoints** a location which needs to be included in the route from the origin to destination,
+    - using the **Stopover** property you can choose to mark the waypoint in the route,
+    - the **Travel Mode** can be Driving, Walking or Transit. The Route information like Origin, Destination, Duration, Distance is displayed below the map.
+3. As a **Heatmap,** the traffic congestion points can be marked. You can set:
+    - **Marker Latitude** and **Longitude**can be selected from the fields from the Locations variable
+    - **Gradient**
+    - **Pixel Density** to mark the size of the marker
+    - **Opacity** to set the appearance of the marker
 
 [![](../assets/gm_features.png)](../assets/gm_features.png)
 
+#### Events
+
 The following events are exposed for Googlemaps Prefab:
 
-1. Load: this can be used to trigger any action when the Prefab is loaded on the page containing it
-2. Destroy: this can be used to trigger any action when the Prefab is deleted/closed
-3. : this can be used to trigger any action when a marker on the map is clicked
-4. : this can be used to trigger any action when a marker on the map is hovered on
+1. On Load: this can be used to trigger any action when the Prefab is loaded on the page containing it
+2. On Destroy: this can be used to trigger any action when the Prefab is deleted/closed
+3. onMarkerclick: this can be used to trigger any action when a marker on the map is clicked
+4. onMarkerhover: this can be used to trigger any action when a marker on the map is hovered on
 
-#### Access
+#### Script Access
 
-- can get the marker information from **$data** in the On Marker Click event of the google map.
-- can open the info window of the marker by invoking the method on the widget scope. Params required for the method : ‘’. For example 1.showInfoWindow(mapMarkerData) This will open the info window for the selected marker. **:** To open the info window of the marker in the Marker on Click event is shown below:
+- You can get the marker information from **$data** in the On Marker Click event of the google map.
+- You can open the info window of the marker by invoking the _showInfoWindow_ method on the widget scope. Params required for the method : ‘_mapMarkerData_’. For example Page.Widgets.googlemaps1.showInfoWindow(mapMarkerData). This will open the info window for the selected marker. **Example:** To open the info window of the marker in the Marker on Click event is shown below:
     
-    1Markerclick = function($event, $data) {
+    Page.googlemaps1Markerclick = function($event, $data) {
         Page.Widgets.googlemaps1.showInfoWindow($data);
      };
     
-- can plot a custom Marker on the map either by sending the Address to the function (or) by sending the _, lng_ values to the function. For example: 1.markAddress('Chicago') will plot the marker in Chicago, USA. 1.markLatLng(31.619770, 74.876713) will plot the marker according to the provided latitude, longitude values.
-- can remove all the custom Markers by invoking the function on widget scope
+- You can plot a custom Marker on the map either by sending the Address to the _markAddress_ function (or) by sending the _lat, lng_ values to the _markLatLng_ function. For example: Page.Widgets.googlemaps1.markAddress('Chicago') will plot the marker in Chicago, USA. Page.Widgets.googlemaps1.markLatLng(31.619770, 74.876713) will plot the marker according to the provided latitude, longitude values.
+- You can remove all the custom Markers by invoking the function _clearAllMarkers_ on widget scope
 
 [![](../assets/gm_features_events.png)](../assets/gm_features_events.png)
 
-# Scenario
+# Usage Scenario
 
 We will see three use cases for various features of the Googlemaps prefab:
 
-1. [from Database](#db)
-2. [from Static Variable](#static)
-3. [Map](#route)
+1. [Location from Database](#db)
+2. [Location from Static Variable](#static)
+3. [Route Map](#route)
 
-#### from Database
+#### Location from Database
 
-1. and drop the prefab onto the canvas on any of the pages in your application.
-2. the property to a database which contains the address fields. Here we are using table from the [Sample DB](/learn/app-development/services/database-services/#integrating-database) [![](../assets/googlemaps_loc_db.png)](../assets/googlemaps_loc_db.png)
-3. the to and choose a **, state, and zip** for the property. [![](../assets/googlemaps_props_address.png)](../assets/googlemaps_props_address.png)
-4. can set the other properties to any fields in your DB. Here we are not setting them since we do not have corresponding fields in the sample DB.
-5. and see the map. [![](../assets/googlemaps_run_db.png)](../assets/googlemaps_run_db.png)
+1. Drag and drop the **Googlemaps** prefab onto the canvas on any of the pages in your application.
+2. Bind the **Locations** property to a database which contains the address fields. Here we are using _HrdbEmployeeData_ table from the [imported Sample DB](/learn/app-development/services/database-services/#integrating-database). [![](../assets/googlemaps_loc_db.png)](../assets/googlemaps_loc_db.png)
+3. Set the **Markertype** to **Address** and choose a **city, state, and zip** for the **Address** property. [![](../assets/googlemaps_props_address.png)](../assets/googlemaps_props_address.png)
+4. You can set the other properties to any fields in your DB. Here we are not setting them since we do not have corresponding fields in the sample DB.
+5. Run and see the map. [![](../assets/googlemaps_run_db.png)](../assets/googlemaps_run_db.png)
 
-#### from Static Variable
+#### Location from Static Variable
 
-1. and drop the prefab onto the canvas on any of the pages in your application.
-2. a custom variable as per your requirements.  [more from here](https://www.wavemaker.com/learn/app-development/variables/model-variable/) Then enable the **property**, and enter the appropriate JSON in the **Editor** [![](../assets/googlemaps_loc_statvar.png)](../assets/googlemaps_loc_statvar.png) As an example you can use the following:
+1. Drag and drop the **Googlemaps** prefab onto the canvas on any of the pages in your application.
+2. Create a custom variable as per your requirements. [Know more from here](https://www.wavemaker.com/learn/app-development/variables/model-variable/). Then enable the **isList property**, and enter the appropriate JSON in the **Text Editor**. [![](../assets/googlemaps_loc_statvar.png)](../assets/googlemaps_loc_statvar.png) As an example you can use the following:
 
  \[
   {
@@ -130,15 +136,15 @@ We will see three use cases for various features of the Googlemaps prefab:
 
  
 
-- the location's property of the prefab to the model variable created.
-- for property, for property, for property and for property. You can set the height and width of the prefab. The property can be set for the default level of display, set the and of the display window. [![](../assets/googlemaps_props_sample.png)](../assets/googlemaps_props_sample.png)
-- and run the application.
-- will see the google map displayed with the cities mentioned in the static variable highlighted with the appropriate icon and information tags. You can zoom in, zoom out, pan left, right, top and bottom as you would with google maps. [![](../assets/prefab_google_run.png)](../assets/prefab_google_run.png)
-- get the marker details in the on click event of the marker:
-    - to the google map prefab and navigate to the Events tab in the properties panel. Here, in the On Marker Click event, select javascript from the dropdown. [![](https://www.wavemaker.com../assets/googlemapsonclickeventscript.png)](https://www.wavemaker.com../assets/googlemapsonclickeventscript.png)
-    - the Script tab from the Markerclick event, you can access the marker data as below: Example:
+- Bind the location's property of the prefab to the model variable created.
+- Select _coords.lat_ for **Lat** property, _coords.lng_ for **Lng** property, _icon_ for **Icon** property and _info_ for **info** property. You can set the height and width of the prefab. The **zoom** property can be set for the default level of display, set the **width** and **height** of the display window. [![](../assets/googlemaps_props_sample.png)](../assets/googlemaps_props_sample.png)
+- Save and run the application.
+- You will see the google map displayed with the cities mentioned in the static variable highlighted with the appropriate icon and information tags. You can zoom in, zoom out, pan left, right, top and bottom as you would with google maps. [![](../assets/prefab_google_run.png)](../assets/prefab_google_run.png)
+- To get the marker details in the on click event of the marker:
+    - Go to the google map prefab and navigate to the Events tab in the properties panel. Here, in the On Marker Click event, select javascript from the dropdown. [![](https://www.wavemaker.com../assets/googlemapsonclickeventscript.png)](https://www.wavemaker.com../assets/googlemapsonclickeventscript.png)
+    - In the Script tab from the Markerclick event, you can access the marker data as below: Example:
         
-        1Markerclick = function($event, $data) {
+        Page.googlemaps1Markerclick = function($event, $data) {
          var lat = $data.latLng.lat();
          var lng = $data.latLng.lng();
          var color = $data.color;
@@ -148,13 +154,13 @@ We will see three use cases for various features of the Googlemaps prefab:
         };
         
 
-#### Map
+#### Route Map
 
 Using the Origin and Destination properties, you can plot a route.
 
-1. and drop the prefab onto the canvas on any of the pages in your application.
-2. the values for and These can be static string values or bound to variables. For example, we have used and values: [![](../assets/googlemaps_route_run1.png)](../assets/googlemaps_route_run1.png)
-3. property, you can set the intermediary points from origin to destination. : Due to restriction from Google Maps API, the input to waypoint has to be in a JSON format. Create a model **variable** with this content and bind it to the waypoint property. [![](../assets/googlemaps_route_statvar.png)](../assets/googlemaps_route_statvar.png) Here is a sample code we have used for this example.
+1. Drag and drop the **Googlemaps** prefab onto the canvas on any of the pages in your application.
+2. Enter the values for **Origin** and **Destination**. These can be static string values or bound to variables. For example, we have used **Toronto** and **Ottawa** values: [![](../assets/googlemaps_route_run1.png)](../assets/googlemaps_route_run1.png)
+3. Using **Waypoint** property, you can set the intermediary points from origin to destination. **Note**: Due to restriction from Google Maps API, the input to waypoint has to be in a JSON format. Create a model **variable** with this content and bind it to the waypoint property. [![](../assets/googlemaps_route_statvar.png)](../assets/googlemaps_route_statvar.png) Here is a sample code we have used for this example.
 
 \[
   {
@@ -171,16 +177,16 @@ Using the Origin and Destination properties, you can plot a route.
   }
 \]
 
-- the and to and , and bind the to the model variable created in the previous step. Selecting the property will mark the waypoint. [![](../assets/googlemaps_route_waypt.png)](../assets/googlemaps_route_waypt.png)
-- the app. [![](../assets/googlemaps_route_run2.png)](../assets/googlemaps_route_run2.png)
+- Set the **Origin** and **Destination** to **Toronto** and **Ottawa**, and bind the **Waypoint** to the model variable created in the previous step. Selecting the **Stopover** property will mark the waypoint. [![](../assets/googlemaps_route_waypt.png)](../assets/googlemaps_route_waypt.png)
+- Run the app. [![](../assets/googlemaps_route_run2.png)](../assets/googlemaps_route_run2.png)
 
 [9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
 
 - [9.1 Youtube](/learn/app-development/widgets/prefab/youtube/)
 - [9.2 Googlemaps](/learn/app-development/widgets/prefab/googlemaps/)
-    - [Layouts](#layouts)
-    - [Features](#features)
-    - [Usage Scenario](#usage-scenario)
+    - [i. Layouts](#layouts)
+    - [ii. Features](#features)
+    - [iii. Usage Scenario](#usage-scenario)
 - [9.3 QRCode](/learn/app-development/widgets/prefab/qrcode/)
 - [9.4 OAuth Prefabs](/learn/app-development/widgets/prefab/oauth-prefabs/)
     - [9.4.1 Box](/learn/app-development/widgets/prefab/oauth-prefabs/box/)

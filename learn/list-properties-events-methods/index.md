@@ -3,162 +3,214 @@ title: "List - Properties, Events & Methods"
 id: ""
 ---
 
-the title for the List. It is bindable.
+# Properties
 
-Heading
+**Event**
 
-bindable property defines the subheading or title for the list.
+**Description**
 
-name is a unique identifier for the list.
+Title
 
-Index
+Set the title for the List. It is bindable.
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+Sub Heading
+
+This bindable property defines the subheading or title for the list.
+
+Name
+
+The name is a unique identifier for the list.
+
+**Accessibility**
+
+Tab Index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-width of list can be specified in em, pt, px or % (i.e 50px, 75%).
+**Layout**
 
-height of list can be specified in em, pt, px or % (i.e 50px, 75%).
+Width
 
-this bindable property to a variable to populate the list of values to display.
+The width of list can be specified in em, pt, px or % (i.e 50px, 75%).
 
-by
+Height
 
-property allows for grouping the list of rows in the variable bound to a dataset by selecting one of the field names from the drop-down list.
+The height of list can be specified in em, pt, px or % (i.e 50px, 75%).
 
-by
+**Dataset**
 
-allows for multiple selection for ordering the display of rows based on fields in asc or desc order - up arrow for asc and down arrow for desc.
+Value
 
-Reorder
+Set this bindable property to a variable to populate the list of values to display.
 
-property will allow users to reorder the list items at runtime.
+Group by
 
-determines whether or not a component is visible. It is a bindable property.
+This property allows for grouping the list of rows in the variable bound to a dataset by selecting one of the field names from the drop-down list.
 
-on Demand (visible only when show property is bound to a variable)
+Order by
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+This allows for multiple selection for ordering the display of rows based on fields in asc or desc order - up arrow for asc and down arrow for desc.
 
-Selection
+**Behavior**
 
-this property is set to true (checked), selection of List item won't be allowed at run-time.
+Enable Reorder
 
-Limit
+This property will allow users to reorder the list items at runtime.
 
-bindable property will allow users to select only a limited number of items.
+Show
 
-checking this property users can select multiple items.
+Showing determines whether or not a component is visible. It is a bindable property.
 
-first item
+Load on Demand (visible only when show property is bound to a variable)
 
-this bindable property is checked, the first item of the livelist will be selected automatically when the livelist is displayed.
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-the pagination type for the list. This property determines how records are fetched. It can be: Basic, Pager, Classic, Infinite Scroll, Horizontal Slider or None
+Disable Selection
 
-Total Records
+If this property is set to true (checked), selection of List item won't be allowed at run-time.
 
-property controls whether the total record count is displayed in the pagination or not.
+Selection Limit
 
-property specifies how the paginator should be aligned horizontally: Left, center or right.
+This bindable property will allow users to select only a limited number of items.
 
-Icon
+Multiselect
 
-property can assign an icon that is shown while loading list items.
+On checking this property users can select multiple items.
 
-Icon Class
+Select first item
 
-property defines the class of the icon that is applied to the list.
+If this bindable property is checked, the first item of the livelist will be selected automatically when the livelist is displayed.
 
-align
+**Pagination**
 
-property specifies how the list should be aligned horizontally: left, center or right.
+Type
 
-data message
+Select the pagination type for the list. This property determines how records are fetched. It can be: Basic, Pager, Classic, Infinite Scroll, Horizontal Slider or None
 
-message will be displayed when there is no data to display. It is bindable.
+Show Total Records
 
-loading message
+This property controls whether the total record count is displayed in the pagination or not.
 
-message will be displayed when waiting for data to load. It is bindable.
+Align
 
-**Events**
+This property specifies how the paginator should be aligned horizontally: Left, center or right.
 
-click
+**Graphics**
 
-event handler is called whenever the click event is triggered on the list.
+Loading Icon
 
-double click
+This property can assign an icon that is shown while loading list items.
 
-event handler is called whenever the double click event is triggered on the list.
+Title Icon Class
 
-mouse enter
+This property defines the class of the icon that is applied to the list.
 
-event handler is called whenever the mouse enters the list.
+**Format**
 
-mouse leave
+Horizontal align
 
-event handler is called whenever the mouse leaves the list.
+This property specifies how the list should be aligned horizontally: left, center or right.
 
-**Events**
+**Message**
 
-tap
+No data message
 
-event handler is called whenever the tap event is triggered on the list.
+This message will be displayed when there is no data to display. It is bindable.
 
-double tap
+Data loading message
 
-event handler is called whenever the double tap event is triggered on the list.
+This message will be displayed when waiting for data to load. It is bindable.
 
-**Events**
+# Events
 
-Key Press
+**Event**
 
-the user hits ENTER/Return while the focus is on the list, execute the specified event handler.
+**Description**
 
-**Events**
+**Mouse Events**
 
-before data render
+On click
 
-event handler is called when the data is set using the pagination.
+This event handler is called whenever the click event is triggered on the list.
 
-pagination change
+On double click
 
-event handler is called when the page is changed through navigation controls.
+This event handler is called whenever the double click event is triggered on the list.
 
-reorder
+On mouse enter
 
-event is triggered when the item in a list is reordered. For this, the Enable Reorder property has to be set.
+This event handler is called whenever the mouse enters the list.
 
-selection limit exceed
+On mouse leave
 
-event is triggered when selected items cross the value set for the Selection Limit property.
+This event handler is called whenever the mouse leaves the list.
+
+**Touch Events**
+
+On tap
+
+This event handler is called whenever the tap event is triggered on the list.
+
+On double tap
+
+This event handler is called whenever the double tap event is triggered on the list.
+
+**Keyboard Events**
+
+Enter Key Press
+
+When the user hits ENTER/Return while the focus is on the list, execute the specified event handler.
+
+**Callback Events**
+
+On before data render
+
+This event handler is called when the data is set using the pagination.
+
+On pagination change
+
+This event handler is called when the page is changed through navigation controls.
+
+On reorder
+
+This event is triggered when the item in a list is reordered. For this, the Enable Reorder property has to be set.
+
+On selection limit exceed
+
+This event is triggered when selected items cross the value set for the Selection Limit property.
+
+# Methods
 
 The list has few methods exposed on widget scope which can be accessed via JavaScript. For the following script samples, we are considering the hrdb Employee table. EmployeeList is bound to the Live Variable corresponding to the Employee table.
 
-list data
+**Purpose**
 
-(); //Clear the list items.
+**Usage**
 
-select a list item
+Clear list data
 
-(0); 
+Page.Widgets.EmployeeList.clear(); //Clear the list items.
+
+To select a list item
+
+Page.Widgets.EmployeeList.selectItem(0); 
 //Selects first item , the parameter can be index or object.
 
-deselect item
+To deselect item
 
-(0); 
+Page.Widgets.EmployeeList.deselectItem(0); 
 //Deselects first item, the parameter can be index or object.
 
-change navigation
+To change navigation
 
- = ‘Basic’; 
+Page.Widgets.EmployeeList.navigation = ‘Basic’; 
 //Changes navigation type to Basic.
 
-access widgets within the List
+To access widgets within the List
 
-(widgetName, index);
+Page.Widgets.EmployeeList.getWidgets(widgetName, index);
 //returns the widget you are trying to access
 //widgetName: name of the widget which we are trying to access \[Required\]
 //index: zero based index of the list item. \[Optional\]
@@ -170,64 +222,68 @@ The widget returned can be manipulated as any other widget using $element proper
 
 Note: Returns an array of widgets with the given name inside the list. When the index is provided, only the widget with the given name at the given index will be returned. When the index is not provided, all the widgets with the given name inside the livelist will be returned.
 
-selected item
+Modify selected item
 
- = 0; 
+Page.Widgets.EmployeeList.selecteditem = 0; 
 //selects first item in the list.
 
-change value of currentItem
+To change value of currentItem
 
- = ‘Eric’; //Sets username field value to ‘Eric’;
+item.username = ‘Eric’; //Sets username field value to ‘Eric’;
 
 Note: currentItem and currentItemWidgets can’t be accessed through script. But those were given as parameters for events of widgets inside list widget template. currentItem is given as item in the arguments.
 
-change caption of username widget for currentItem
+To change caption of username widget for currentItem
 
- = ‘Eric’; 
+currentItemWidgets.Name.caption = ‘Eric’; 
 //Sets caption of Name widget to Eric.
 
 Note: currentItem and currentItemWidgets can’t be accessed through the script. But those were given as parameters for events of widgets inside list widget template. currentItem is given as item in the arguments.
 
-preserve the reordered list
+To preserve the reordered list
 
-1Reorder = function ($event, $data) { 
+Page.livelist1Reorder = function ($event, $data) { 
       //$data is the newly reordered array of items.
 };
 
-Note: Enable reorder allows the user to change the order of the items in the List in runtime, but the order after reordering do not persist after refresh. callback event is triggered when the order of the items in the List is changed. In the script, $data parameter has the complete order after each reorder. This data can be used to make the reorder permanent.
+Note: Enable reorder allows the user to change the order of the items in the List in runtime, but the order after reordering do not persist after refresh. _onReorder_ callback event is triggered when the order of the items in the List is changed. In the script, $data parameter has the complete order after each reorder. This data can be used to make the reorder permanent.
 
-interact with widgets of selected item
+To interact with widgets of selected item
 
-\[0\].Name.caption = ‘Eric’; 
+Page.Widgets.EmployeeList.selectedItemWidgets\[0\].Name.caption = ‘Eric’; 
 //Changes caption for Name widget of selected item to ‘Eric’.
 
-: To find the index of a list item
+**getIndex**: To find the index of a list item
 
-(listItemObject: ListItem);
+**Syntax**
 
-**: **: list item object against which the index is required. **: ** of the passed list item object. **: **
+Page.Widgets.MyList.getIndex(listItemObject: ListItem);
 
- i = Page.Widgets.list1.getIndex(Page.Widgets.list1.selecteditem);
+**Parameter: **listItemObject: list item object against which the index is required. **Return: **Index of the passed list item object. **Example: **
 
-: To find  list item object for an index
+let i = Page.Widgets.list1.getIndex(Page.Widgets.list1.selecteditem);
 
-(index: number);
+**getItem**: To find the list item object for an index
 
-**:** index: index (zero based) of the list item against which the corresponding list item object is required. **:** list item object. **: **
+**Syntax**
 
- item = Page.Widgets.list1.getItem(1); //returns list item against 2nd index (0 based)
+Page.Widgets.MyList.getItem(index: number);
 
-**:**
+**Parameter:** index: index (zero based) of the list item against which the corresponding list item object is required. **Return:** list item object. **Example: **
+
+let item = Page.Widgets.list1.getItem(1); //returns list item against 2nd index (0 based)
+
+**getWidget:**
 
 Returns a list of all widgets against a passed widget name.
 
-designing a list in a WM app, when a widget (with name my\_widget) is dropped in the list template, multiple instances of the same widget are created for each list item. In order to access all the instances of a widget, the getWidgets method can be used.
+While designing a list in a WM app, when a widget (with name my\_widget) is dropped in the list template, multiple instances of the same widget are created for each list item. In order to access all the instances of a widget, the getWidgets method can be used. **Syntax**
 
-(name: string, \[index: number\])
+Page.Widgets.Mylist.getWidgets(name: string, \[index: number\])
 
-**:** Name (string): name of the widget in the list template. Index (number)  \[optional\]: Index of the list item for which the widget instance is required. **:** Returns a list of all widget instances with the passed name. If index is passed, the list contains only one widget instance against the passed index. **:**
+**Parameter:** Name (string): name of the widget in the list template. Index (number)  \[optional\]: Index of the list item for which the widget instance is required. **Return:** Returns a list of all widget instances with the passed name. If index is passed, the list contains only one widget instance against the passed index. **Example:**
 
- widgetsList = Page.Widgets.MyList.getWidgets(“my\_text\_widget”);
+let widgetsList = Page.Widgets.MyList.getWidgets(“my\_text\_widget”);
 // If there are 10 list items, the method call will return an array of 10 
 instances of widget “my\_text\_widget” for each list item.
 let widget = Page.Widgets.MyList.getWidgets(“my\_text\_widget”, 4);
@@ -235,7 +291,7 @@ let widget = Page.Widgets.MyList.getWidgets(“my\_text\_widget”, 4);
 
 < Behavior Settings
 
-Cases >
+Use Cases >
 
 [1\. Live & Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
 
@@ -243,25 +299,25 @@ Cases >
 - [1.2 Data Table](/learn/app-development/widgets/datalive/data-table/)
 - [1.3 Form](/learn/app-development/widgets/datalive/form/)
 - [1.4 List](/learn/app-development/widgets/datalive/list/)
-    - [Data Source](/learn/app-development/widgets/datalive/list/list-data-source/)
-    - [Templates](/learn/app-development/widgets/datalive/list/list-templates/)
-        - [Action List](/learn/app-development/widgets/datalive/list/list-templates/#action-list)
-        - [Contact List](/learn/app-development/widgets/datalive/list/list-templates/#contact-list)
-        - [Email List](/learn/app-development/widgets/datalive/list/list-templates/#email-list)
-        - [Media List](/learn/app-development/widgets/datalive/list/list-templates/#media-list)
-    - [List Configuration](/learn/app-development/widgets/datalive/list/configuration/)
-        - [Items per row](/learn/app-development/widgets/datalive/list/configuration/#items-per-row)
-        - [Grouping & Ordering](/learn/app-development/widgets/datalive/list/configuration/#grouping-ordering)
-        - [Pagination](/learn/app-development/widgets/datalive/list/configuration/#pagin)
-        - [Message](/learn/app-development/widgets/datalive/list/configuration/#message)
-    - [List Behavior Settings](/learn/app-development/widgets/datalive/list/behavior-settings/)
-        - [Selection Limit](/learn/app-development/widgets/datalive/list/behavior-settings/#selection-limit)
-        - [Multiselect](/learn/app-development/widgets/datalive/list/behavior-settings/#multiselect)
-        - [Item Reordering](/learn/app-development/widgets/datalive/list/behavior-settings/#item-reordering)
-    - [Properties, Events & Methods](/learn/app-development/widgets/datalive/list/list-properties-events-methods/)
-        - [Properties](#properties)
-        - [Events](#events)
-        - [Methods](#methods)
-    - [Use Case](/learn/app-development/widgets/datalive/list/list-use-cases)
+    - [i. Data Source](/learn/app-development/widgets/datalive/list/list-data-source/)
+    - [ii. Templates](/learn/app-development/widgets/datalive/list/list-templates/)
+        - [○ Action List](/learn/app-development/widgets/datalive/list/list-templates/#action-list)
+        - [○ Contact List](/learn/app-development/widgets/datalive/list/list-templates/#contact-list)
+        - [○ Email List](/learn/app-development/widgets/datalive/list/list-templates/#email-list)
+        - [○ Media List](/learn/app-development/widgets/datalive/list/list-templates/#media-list)
+    - [iii. List Configuration](/learn/app-development/widgets/datalive/list/configuration/)
+        - [○ Items per row](/learn/app-development/widgets/datalive/list/configuration/#items-per-row)
+        - [○ Grouping & Ordering](/learn/app-development/widgets/datalive/list/configuration/#grouping-ordering)
+        - [○ Pagination](/learn/app-development/widgets/datalive/list/configuration/#pagin)
+        - [○ Message](/learn/app-development/widgets/datalive/list/configuration/#message)
+    - [iv. List Behavior Settings](/learn/app-development/widgets/datalive/list/behavior-settings/)
+        - [○ Selection Limit](/learn/app-development/widgets/datalive/list/behavior-settings/#selection-limit)
+        - [○ Multiselect](/learn/app-development/widgets/datalive/list/behavior-settings/#multiselect)
+        - [○ Item Reordering](/learn/app-development/widgets/datalive/list/behavior-settings/#item-reordering)
+    - [v. Properties, Events & Methods](/learn/app-development/widgets/datalive/list/list-properties-events-methods/)
+        - [○ Properties](#properties)
+        - [○ Events](#events)
+        - [○ Methods](#methods)
+    - [vi. Use Case](/learn/app-development/widgets/datalive/list/list-use-cases)
 - [1.5 Live Form](/learn/app-development/widgets/datalive/live-form/)
 - [1.6 Live Filter](/learn/app-development/widgets/datalive/live-filter/)

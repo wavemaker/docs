@@ -3,13 +3,13 @@ title: "Select - Use Cases"
 id: ""
 ---
 
-offers various ways to use the Select widget. This section elaborates on all the options available. These various options pertain to how the data displayed in the drop down list is set. Running the app will display the select widgets with the label showing the selection.
+WaveMaker offers various ways to use the Select widget. This section elaborates on all the options available. These various options pertain to how the data displayed in the drop down list is set. Running the app will display the select widgets with the label showing the selection.
 
-- [to use list of values for select widget configuration](/learn/how-tos/configuring-select-widget-static-list-values/)
-- [to use variable for select widget configuration](/learn/how-tos/configuring-select-widget-variable/)
-- [to use display and data value fields for select widget configuration](/learn/how-tos/configuring-select-widget-display-data-fields/)
-- [to use database fields for select widget configuration](/learn/how-tos/configuring-select-widget-database-fields/)
-- [to configure cascading select](/learn/how-tos/configuring-cascading-select/)
+- [How to use list of values for select widget configuration](/learn/how-tos/configuring-select-widget-static-list-values/)
+- [How to use variable for select widget configuration](/learn/how-tos/configuring-select-widget-variable/)
+- [How to use display and data value fields for select widget configuration](/learn/how-tos/configuring-select-widget-display-data-fields/)
+- [How to use database fields for select widget configuration](/learn/how-tos/configuring-select-widget-database-fields/)
+- [How to configure cascading select](/learn/how-tos/configuring-cascading-select/)
 
 [![](../assets/sel_dnd.png)](../assets/sel_dnd.png)
 
@@ -29,9 +29,9 @@ offers various ways to use the Select widget. This section elaborates on all the
 - [3.12 Radioset](/learn/app-development/widgets/form/radioset/)
 - [3.13 Rating](/learn/app-development/widgets/form/rating/)
 - [3.14 Select](/learn/app-development/widgets/form/select/)
-    - [Properties](#properties)
-    - [Events](#events)
-    - [Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)
+    - [i. Properties](#properties)
+    - [ii. Events](#events)
+    - [iii. Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)
 - [3.15 Select Locale](/learn/app-development/widgets/form/select-locale/)
 - [3.16 Slider](/learn/app-development/widgets/form/slider/)
 - [3.17 Switch](/learn/app-development/widgets/form/switch/)

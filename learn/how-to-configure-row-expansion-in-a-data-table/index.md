@@ -3,84 +3,86 @@ title: "How to Configure Row Expansion in a Data Table"
 id: ""
 ---
 
-this article, you will learn how to configure row expansion on a data table. To use the  [expansion](/learn/app-development/widgets/datalive/datatable/row-expansion-data-table/) feature, you create a  [table](/learn/app-development/widgets/datalive/data-table/) and a [](/learn/app-development/ui-design/page-concepts/partial-pages/); you configure the partial to contain related information of the table item. A partial is a semi page which is a reusable object, and a data table is a data widget configured as a variable. You add page params in the partial page and bind it through the data table settings.
+In this article, you will learn how to configure row expansion on a data table. To use the [row expansion](/learn/app-development/widgets/datalive/datatable/row-expansion-data-table/) feature, you create a [data table](/learn/app-development/widgets/datalive/data-table/) and a [partial](/learn/app-development/ui-design/page-concepts/partial-pages/); you configure the partial to contain related information of the table item. A partial is a semi page which is a reusable object, and a data table is a data widget configured as a variable. You add page params in the partial page and bind it through the data table settings.
 
-### _Case_
+### _Use Case_
 
-_a department page and display employees of each department when you expand the department ID._
+_Create a department page and display employees of each department when you expand the department ID._
 
-: In the following example, we use the department table which invokes the data from the Employee table. Thus, ensure the hrdb sample database is up. To import the sample database, see  [to a Database](/learn/app-development/services/database-services/working-with-databases/)
+**Note**: In the following example, we use the department table which invokes the data from the Employee table. Thus, ensure the hrdb sample database is up. To import the sample database, see [Connecting to a Database](/learn/app-development/services/database-services/working-with-databases/).
 
-## a page
+## Creating a page
 
-- a Page called Department. To create a page, see  [Creation](/learn/app-development/ui-design/page-creation/)
-- and Drop a Data Table on the Department page.
-- the Data Table to bind the data source to the  table.
-    - Data From → Services.
-    - a service type → All.
-    - a service → hrdb.
-    - /Entity → Department → A variable will be created automatically, for example, HrdbDepartmentData.
-    - Records per request, Update data on input change, Request data on page load, and click  
+- Create a Page called Department. To create a page, see [Page Creation](/learn/app-development/ui-design/page-creation/).
+- Drag and Drop a Data Table on the Department page.
+- Configure the Data Table to bind the data source to the **Department** table.
+    - Retrieve Data From → Services.
+    - Select a service type → All.
+    - Select a service → hrdb.
+    - Table/Entity → Department → A variable will be created automatically, for example, HrdbDepartmentData.
+    - Set Records per request, Update data on input change, Request data on page load, and click **Next**.  
 
   [![](https://www.wavemaker.com../assets/DataTableConfig.png)](https://www.wavemaker.com../assets/DataTableConfig.png)
 
-- the next window, choose  function, and select  **View Only**
-- pagination; for example, basic.
-- next, and 
+- In the next window, choose **ReadOnly** function, and select **Simple View Only**.
+- Choose pagination; for example, basic.
+- Click next, and **Done**.
 
-created a department page which displays the department table. Next, you create a Partial to contain employee details. You use a List Widget and configure the List to bind with employee table.
+You created a department page which displays the department table. Next, you create a Partial to contain employee details. You use a List Widget and configure the List to bind with employee table.
 
-## a partial
+## Creating a partial
 
-- a partial called Employees.
-    - **+** from the 
-    - a → Partial (select from the dropdown, the default is a page).
-    - the partial; for example, Employee.
-    - a category → All.
-    - blank template, and click  A partial is created.
-- the Page Params for the partial to bind the Department table.
-    - → deptID.
-    - → integer.
-    
+- Create a partial called Employees.
+    - Click **+** from the **Pages **tab.
+    - Create a → Partial (select from the dropdown, the default is a page).
+    - Name the partial; for example, Employee.
+    - Choose a category → All.
+    - Use blank template, and click **Create**. A partial is created.
+- Set the Page Params for the partial to bind the Department table.
+    - Name → deptID.
+    - Type → integer.
+    - Save.
 
 [![](https://www.wavemaker.com../assets/PageParam-Partial.png)](https://www.wavemaker.com../assets/PageParam-Partial.png)
 
-- the partial, drag and drop the  
-- the List widget to bind the data source to the 
-    - Data From → Services.
-    - a service type → All.
-    - a service → hrdb.
-    - /Entity → Employee  → A variable will be created automatically, for example, HrdbEmployeeData.
-    - Records per request,  check  **data on input change**, and uncheck  **data on page load**, and click 
-- the next window, choose an appropriate template type; for example, Contact List, and click 
-- pagination, for example, basic.
-- the next window, bind the data source for the picture widget and name widget.
-    - Widget → Source → picurl (select from the dropdown).
-    - Widget → Source → username (select from the dropdown)
-    
+- In the partial, drag and drop the **List **Widget.  
+- Configure the List widget to bind the data source to the **Employee **table.
+    - Retrieve Data From → Services.
+    - Select a service type → All.
+    - Select a service → hrdb.
+    - Table/Entity → Employee  → A variable will be created automatically, for example, HrdbEmployeeData.
+    - Set Records per request,  check **Update data on input change**, and uncheck **Request data on page load**, and click **Next**.
+- In the next window, choose an appropriate template type; for example, Contact List, and click **Next**.
+- Choose pagination, for example, basic.
+- In the next window, bind the data source for the picture widget and name widget.
+    - Picture Widget → Source → picurl (select from the dropdown).
+    - Name Widget → Source → username (select from the dropdown)
+    - Click **Done**.
 
 [![](https://www.wavemaker.com../assets/List-configuration.png)](https://www.wavemaker.com../assets/List-configuration.png)
 
-created a partial which contains employee information and page params.
+You created a partial which contains employee information and page params.
 
-, set filter criteria in the variables for  to   **equal to** _, _ shown in the image below:
+Now, set filter criteria in the variables for _HrdbEmployeeData_ to _deptId_ **Is equal to** _bind.pageParams.deptID, _as shown in the image below:
 
- [![](https://www.wavemaker.com../assets/employeeparambindingdeptid.png)](https://www.wavemaker.com../assets/employeeparambindingdeptid.png) the department page, you bind the Employee (partial) and Page Params and set the row expansion property.
+[![](https://www.wavemaker.com../assets/employeeparambindingdeptid.png)](https://www.wavemaker.com../assets/employeeparambindingdeptid.png)In the department page, you bind the Employee (partial) and Page Params and set the row expansion property.
 
-## row expansion property
+## Configure row expansion property
 
-- the department page, go to Advanced Settings.
-- to the Row Detail tab.
-- Row Expansion property.
+- In the department page, go to Advanced Settings.
+- Navigate to the Row Detail tab.
+- Enable Row Expansion property.
 
 [![](https://www.wavemaker.com../assets/RowExpAdvancedSettings.png)](https://www.wavemaker.com../assets/RowExpAdvancedSettings.png)
 
-- → Employee.
-- Params → deptID → click on the  **Property** icon.
-- to the Widgets tab → DepartmentTable → selecteditem → deptid **→ **
+- Content → Employee.
+- Partial Params → deptID → click on the **Bind Property** icon.
+- Go to the Widgets tab → DepartmentTable → selecteditem → deptid _integer _**→ **click **Bind.**
 
-fills with: :Widgets.DepartmentTable1.selecteditem.deptId
+deptID fills with: bind:Widgets.DepartmentTable1.selecteditem.deptId
 
    [![](https://www.wavemaker.com../assets/Bind_tablerow_value_RowExp.png)](https://www.wavemaker.com../assets/Bind_tablerow_value_RowExp.png)
 
-implemented the row expansion feature on the Department page. By expanding the department ID, you can view the employees associated with the department you expand. You can view the changes in the preview mode.
+1. - Click **Save**.  
+
+You implemented the row expansion feature on the Department page. By expanding the department ID, you can view the employees associated with the department you expand. You can view the changes in the preview mode.

@@ -5,12 +5,12 @@ id: ""
 
 Showcases:
 
-- how navigation to different pages can be done using Navigation variables which are referred to as call variables.
-- data has to be shared between pages, we can do so by using Page Params which can be passed using Navigation Variables.
+- Showcases how navigation to different pages can be done using Navigation variables which are referred to as call variables.
+- When data has to be shared between pages, we can do so by using Page Params which can be passed using Navigation Variables.
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vSg5PwQtN5pAHAV3kixOBFSNG2MnVsTRMp4VfEr73r8SEaK6dK9coOVoyy0QxoG62GGbdUER3vgDIqN/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-Usage
+Variable Usage
 
 - [1\. How to use Filter in Live Variables](/learn/how-tos/using-filter-conditions-variable/)
 - [2\. How to use Live Variable APIs](/learn/how-tos/using-live-variable-apis/)

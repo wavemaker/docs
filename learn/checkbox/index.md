@@ -3,95 +3,141 @@ title: "Checkbox"
 id: ""
 ---
 
-checkbox is a specific type of two-states button that can be either checked or unchecked. Checkboxes let a user select an option. Examples: " _agree to terms and conditions"_ etc. checked and unchecked options.
+A checkbox is a specific type of two-states button that can be either checked or unchecked. Checkboxes let a user select an option. Examples: "_I agree to terms and conditions"_ etc. checked and unchecked options.
 
-caption is the text that the end user sees on the button. This property can be bound to any variable or another widget.
+# Properties
 
-name is a unique identifier for the button. Special characters and spaces are not allowed in widget name.
+**Property**
 
-text you enter for this property will be shown as a tooltip when the mouse hovers over this widget for _1.5 seconds. _ can be bound to a variable or another widget.
+**Description**
 
-Index
+Caption
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+The caption is the text that the end user sees on the button. This property can be bound to any variable or another widget.
+
+Name
+
+The name is a unique identifier for the button. Special characters and spaces are not allowed in widget name.
+
+**Accessibility**
+
+Hint
+
+Any text you enter for this property will be shown as a tooltip when the mouse hovers over this widget for _1.5 seconds. _It can be bound to a variable or another widget.
+
+Tab Index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-Key
+Shortcut Key
 
-to act as a Shortcut key. The shortcut key property specifies a key to click the button. The way to activate the shortcut key varies from browser to browser ( [below for details](#shortcut)).
+Alphabet to act as a Shortcut key. The shortcut key property specifies a key to click the button. The way to activate the shortcut key varies from browser to browser ([see below for details](#shortcut)).
 
-width of your widget can be specified in _, pt, px_ or _% (_ _50px, 75%)._
+**Layout**
 
-height of your widget can be specified in _, pt, px_ or _% (_ _50px, 75%)._
+Width
 
-**Value**
+The width of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._
 
-is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
+Height
+
+The height of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._
+
+**Default Value**
 
 Value
 
-property defines the value of the widget when the element is in the checked state. The default value is boolean value true. If specified, the value will be of string type.
+This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
 
-Value
+Checked Value
 
-property defines the value of the widget when the element is in the unchecked state.
+This property defines the value of the widget when the element is in the checked state. The default value is boolean value true. If specified, the value will be of string type.
 
-required editor in wm.LiveForm may refuse to save without a required field.
+Unchecked Value
 
-determines whether or not a component is visible. It is a bindable property.
+This property defines the value of the widget when the element is in the unchecked state.
 
-on Demand (visible only when show property is bound to a variable)
+**Validation**
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+Required
 
-the disabled property is true (checked) the widget becomes display-only and user input will not be accepted. It can also set programmatically by binding it to a boolean type variable.
+A required editor in wm.LiveForm may refuse to save without a required field.
 
-**key**: The shortcut key property specifies a shortcut key to check the checkbox. The way of accessing the shortcut key is varying in different browsers:
+**Behavior**
 
-key Trigger
+Show
 
-Explorer
+Showing determines whether or not a component is visible. It is a bindable property.
+
+Load on Demand (visible only when show property is bound to a variable)
+
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+
+Disabled
+
+If the disabled property is true (checked) the widget becomes display-only and user input will not be accepted. It can also set programmatically by binding it to a boolean type variable.
+
+**Shortcut key**: The shortcut key property specifies a shortcut key to check the checkbox. The way of accessing the shortcut key is varying in different browsers:
+
+Browser
+
+Shortcut key Trigger
+
+Internet Explorer
 
 \[Alt\] + shortcut key
 
-\[Alt\] + shortcut key (_/Linux_)
+Chrome
 
-\[Control\] \[Alt\] + shortcut key ()
+\[Alt\] + shortcut key (_Windows/Linux_)
 
-\[Alt\] \[Shift\] + shortcut key (_/Linux_)
+\[Control\] \[Alt\] + shortcut key (_MAC_)
 
-\[Control\] \[Alt\] + shortcut key ()
+Firefox
 
-event handler is called each time your element's value changes.
+\[Alt\] \[Shift\] + shortcut key (_Windows/Linux_)
 
-focus
+\[Control\] \[Alt\] + shortcut key (_MAC_)
 
-event handler is called each time your element is focused.
+# Events
 
-blur
+Event
 
-event handler is called each time your focus leaves your element.
+Description
 
-**Events**
+Change
 
-click
+This event handler is called each time your element's value changes.
 
-is an HTML button. It is used to generate a click event. For example, save button.
+On focus
 
-mouse enter
+This event handler is called each time your element is focused.
 
-event handler is called whenever the mouse enters the widget.
+On blur
 
-mouse leave
+This event handler is called each time your focus leaves your element.
 
-event handler is called whenever the mouse leaves the widget.
+**Mouse Events**
 
-**Events**
+On click
 
-tap
+It is an HTML button. It is used to generate a click event. For example, save button.
 
-event handler is called whenever the widget is tapped.
+On mouse enter
+
+This event handler is called whenever the mouse enters the widget.
+
+On mouse leave
+
+This event handler is called whenever the mouse leaves the widget.
+
+**Touch Events**
+
+On tap
+
+This event handler is called whenever the widget is tapped.
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 
@@ -99,8 +145,8 @@ event handler is called whenever the widget is tapped.
 - [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
 - [3.3 Calendar](/learn/app-development/widgets/form/calendar/)
 - [3.4 Checkbox](#)
-    - [Properties](#properties)
-    - [Events](#events)
+    - [i. Properties](#properties)
+    - [ii. Events](#events)
 - [3.5 CheckboxSet](/learn/app-development/widgets/form/checkboxset/)
 - [3.6 Chips](/learn/app-development/widgets/form-widgets/chips/)
 - [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)

@@ -3,112 +3,151 @@ title: "Progress Bar"
 id: ""
 ---
 
-**Bar** widget can be used to show the status of any given event. It can be used to r the completion progress of a task. Progress may be either indeterminate — meaning it is unclear how much work remains before the task is complete (e.g., the task is waiting for a response from a remote host) — or a numeric value between 0 and a given maximum, explicitly specifying the fraction of work that has so far been completed
+**Progress Bar** widget can be used to show the status of any given event. It can be used to represent the completion progress of a task. Progress may be either indeterminate — meaning it is unclear how much work remains before the task is complete (e.g., the task is waiting for a response from a remote host) — or a numeric value between 0 and a given maximum, explicitly specifying the fraction of work that has so far been completed
 
-<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ProgressBar">Bar</iframe>
+# Features
 
-name is a unique identifier for progress bar widget.
+<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ProgressBar">Progress Bar</iframe>
 
-the format you want to use to display the progress bar. Choose from
+# Properties
 
-- ,
-- _\-striped_,
-- ,
-- _\-striped_,
-- ,
-- _\-striped_,
-- ,
-- _\-striped_,
-- ,
-- _\-striped_
+**Property**
 
-text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
+**Description**
 
-index
+Name
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+The name is a unique identifier for progress bar widget.
+
+Type
+
+Indicates the format you want to use to display the progress bar. Choose from
+
+- _default_,
+- _default-striped_,
+- _success_,
+- _success-striped_,
+- _info_,
+- _info-striped_,
+- _warning_,
+- _warning-striped_,
+- _danger_,
+- _danger-striped_.
+
+**Accessibility**
+
+Hint
+
+Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
+
+Tab index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+**Layout**
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+Width
 
-this property to a variable to populate the list of values to display.
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
-**Value**
+Height
 
-is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-Value
-
-minimum number for the Progress bar.
+**Dataset**
 
 Value
 
-a maximum number for the Progress bar.
+Set this property to a variable to populate the list of values to display.
 
-Interval
+**Default Value**
 
-interval in milliseconds to poll the service.
+Value
 
-determines whether or not a component is visible. It is a bindable property.
+This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
 
-on Demand (visible only when show property is bound to a variable)
+Minimum Value
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+Enter minimum number for the Progress bar.
 
-Format
+Maximum Value
 
-in which the progress needs to be displayed. You can choose from a list of decimal options like 9, 9.9, 9.99 etc. If the progress bar's data value is 30.7056 and the selected display format is: -  9.9 then label will be rounded as 30.7 -  9.999% then label will be rounded to 30.706%
+Enter a maximum number for the Progress bar.
 
-placement
+**Behavior**
 
-of progress bar value can be
+Poll Interval
 
-- or
+Time interval in milliseconds to poll the service.
 
-**Events**
+Show
 
-click
+Showing determines whether or not a component is visible. It is a bindable property.
 
-event handler is called whenever the click event is triggered on a widget.
+Load on Demand (visible only when show property is bound to a variable)
 
-double click
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-event handler is called whenever the double click event is triggered on a widget.
+Display Format
 
-mouse enter
+Format in which the progress needs to be displayed. You can choose from a list of decimal options like 9, 9.9, 9.99 etc. If the progress bar's data value is 30.7056 and the selected display format is: -  9.9 then label will be rounded as 30.7 -  9.999% then label will be rounded to 30.706%
 
-event handler is called whenever the mouse enters the widget.
+Caption placement
 
-mouse leave
+Placement of progress bar value can be
 
-event handler is called whenever the mouse leaves the widget.
+- inside or
+- hidden
 
-**Events**
+# Events
 
-tap
+**Event**
 
-event handler is called whenever the tab event is triggered on a widget.
+**Description**
 
-double tap
+**Mouse Events**
 
-event handler is called whenever the double tap event is triggered on a widget.
+On click
 
-**Events**
+This event handler is called whenever the click event is triggered on a widget.
 
-start
+On double click
 
-event handler is called on start of the progress.
+This event handler is called whenever the double click event is triggered on a widget.
 
-complete
+On mouse enter
 
-event handler is called on complete of the progress.
+This event handler is called whenever the mouse enters the widget.
 
-before update
+On mouse leave
 
-event handler is called on before update of the progress.
+This event handler is called whenever the mouse leaves the widget.
+
+**Touch Events**
+
+On tap
+
+This event handler is called whenever the tab event is triggered on a widget.
+
+On double tap
+
+This event handler is called whenever the double tap event is triggered on a widget.
+
+**Callback Events**
+
+On start
+
+This event handler is called on start of the progress.
+
+On complete
+
+This event handler is called on complete of the progress.
+
+On before update
+
+This event handler is called on before update of the progress.
 
 [4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
 
@@ -121,8 +160,8 @@ event handler is called on before update of the progress.
 - [4.7 Message](/learn/app-development/widgets/basic/message/)
 - [4.8 Picture](/learn/app-development/widgets/media-widgets/)
 - [4.9 Progress Bar](/learn/app-development/widgets/basic/progress-bar/)
-    - [Properties](#properties)
-    - [Events](#events)
+    - [i. Properties](#properties)
+    - [ii. Events](#events)
 - [4.10 Richtext Editor](/learn/app-development/widgets/basic/richtext-editor/)
 - [4.11 Search](/learn/app-development/widgets/basic/search/)
 - [4.12 Spinner](/learn/app-development/widgets/basic/spinner/)

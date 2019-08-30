@@ -3,7 +3,7 @@ title: "Restricting menu item display based on user role"
 id: ""
 ---
 
-**Statement**: How to restrict certain users from accessing pages/links based upon their login credentials.Using the User Role property of a Menu or Nav widget, you a can restrict user access to certain pages/links based upon the User Role value. For example, to restrict 'user' role to access 'admin' related links(pages), use the following JSON structure for the Model Variable bound to the [widget](/learn/app-development/widgets/navigation/dropdown-menu-use-cases/):
+**Problem Statement**: How to restrict certain users from accessing pages/links based upon their login credentials.Using the User Role property of a Menu or Nav widget, you a can restrict user access to certain pages/links based upon the User Role value. For example, to restrict 'user' role to access 'admin' related links(pages), use the following JSON structure for the Model Variable bound to the [Menu widget](/learn/app-development/widgets/navigation/dropdown-menu-use-cases/):
 
 \[
 {
@@ -45,13 +45,13 @@ id: ""
 From the above data:
 
 1. 'Add Users' menu item will not be visible to _user_ and thus cannot access  page as only 'admin' access role is given on that item.
-2. 'Pending orders' menu item will not be visible to  as only 'user' access role is allowed.
-3. a parent node has '_, user_' access and few of it children only have '' access then if logged in user has only '' access then those child nodes will be hidden. Like the Dropdown item in the above example.
-4. task (in the above example showing the label widget) will be performed and then the navigation will be done based upon the given link.
+2. 'Pending orders' menu item will not be visible to _admin_ as only 'user' access role is allowed.
+3. If a parent node has '_admin, user_' access and few of it children only have '_admin_' access then if logged in user has only '_user_' access then those child nodes will be hidden. Like the Dropdown item in the above example.
+4. The task (in the above example showing the label widget) will be performed and then the navigation will be done based upon the given link.
 
-: The user role values should be the same as that given while [Security for the App](http://[supsystic-show-popup id=111])
+**Note**: The user role values should be the same as that given while [enabling Security for the App](http://[supsystic-show-popup id=111]).
 
-Menu Use Cases
+Dropdown Menu Use Cases
 
 - [1\. Dropdown Menu Basic Usage](/learn/app-development/widgets/navigation/dropdown-menu-use-cases/)
 - [2\. How to enable role-based access to menu items](#)

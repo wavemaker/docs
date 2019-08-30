@@ -3,101 +3,129 @@ title: "Tile"
 id: ""
 ---
 
-is a container for other widgets used to present a set of objects.  widget lets you to directly add an image, text box, video, or web code to user dashboard. _to the container_ but it comes with some default styling which makes it different from a container.  cannot create partials using tile.
+**Tile** is a container for other widgets used to present a set of objects. Tile widget lets you to directly add an image, text box, video, or web code to user dashboard. Functions _similar to the container_ but it comes with some default styling which makes it different from a container. Users cannot create partials using tile.
 
 Tiles can be used while creating Dashboard like UI where you need to show analytics data.
 
 When to use Tile:
 
-- other containers, its size is limited, and it is not recommended to place too many widgets and/or complex widgets.
+- Unlike other containers, its size is limited, and it is not recommended to place too many widgets and/or complex widgets.
 
 ![](https://www.wavemaker.com../assets/tile_design-1.png)
 
-You can also use the Conditional Class property from the Style tab to set the class based upon a condition. See here for [to](/learn/how-tos/use-conditional-class-property/)
+# Properties
 
-name is a unique identifier for tile.
+You can also use the Conditional Class property from the Style tab to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/).
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+**Property**
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+**Description**
 
-determines whether or not a component is visible. It is a bindable property.
+Name
 
-on Demand (visible only when show property is bound to a variable)
+The name is a unique identifier for tile.
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+**Layout**
 
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
+Width
 
-Align
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
-text alignment horizontally.
+Height
 
-**Events**
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
-click
+**Behavior**
 
-event handler is called whenever the click event is triggered on a widget.
+Show
 
-double click
+Showing determines whether or not a component is visible. It is a bindable property.
 
-event handler is called whenever the double click event is triggered on a widget.
+Load on Demand (visible only when show property is bound to a variable)
 
-mouse over
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-event fires when the mouse hovers over this widget.
+Animation
 
-mouse out
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
 
-event fires when the mouse moves away from this widget.
+**Format**
 
-mouse enter
+Horizontal Align
 
-event handler is called whenever the mouse enters the widget.
+Set text alignment horizontally.
 
-mouse leave
+# Events
 
-event handler is called whenever the mouse leaves the widget.
+**Event**
 
-**Events**
+**Description**
 
-tap
+**Mouse Events**
 
-event handler is called whenever the tap event is triggered on a widget.
+On click
 
-double tap
+This event handler is called whenever the click event is triggered on a widget.
 
-event handler is called whenever the double tap event is triggered on a widget.
+On double click
 
-swipe up
+This event handler is called whenever the double click event is triggered on a widget.
 
-event handler is called whenever a swipeup event is triggered.
+On mouse over
 
-swipe down
+This event fires when the mouse hovers over this widget.
 
-event handler is called whenever a swipe down event is triggered.
+On mouse out
 
-swipe left
+This event fires when the mouse moves away from this widget.
 
-event handler is called whenever a swipeleft event is triggered.
+On mouse enter
 
-swipe right
+This event handler is called whenever the mouse enters the widget.
 
-event handler is called whenever a swiperight event is triggered.
+On mouse leave
 
-pinch in
+This event handler is called whenever the mouse leaves the widget.
 
-event handler is called whenever pinch event is triggered.
+**Touch Events**
 
-pinch out
+On tap
 
-event handler is called whenever pinch out event is triggered.
+This event handler is called whenever the tap event is triggered on a widget.
 
-**Events**
+On double tap
 
-enter key press
+This event handler is called whenever the double tap event is triggered on a widget.
 
-the user hits ENTER/Return while the focus is in this editor, execute the specified event handler.
+On swipe up
+
+This event handler is called whenever a swipeup event is triggered.
+
+On swipe down
+
+This event handler is called whenever a swipe down event is triggered.
+
+On swipe left
+
+This event handler is called whenever a swipeleft event is triggered.
+
+On swipe right
+
+This event handler is called whenever a swiperight event is triggered.
+
+On pinch in
+
+This event handler is called whenever pinch event is triggered.
+
+On pinch out
+
+This event handler is called whenever pinch out event is triggered.
+
+**Keyboard Events**
+
+On enter key press
+
+When the user hits ENTER/Return while the focus is in this editor, execute the specified event handler.
 
 [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
 
@@ -107,6 +135,6 @@ the user hits ENTER/Return while the focus is in this editor, execute the specif
 - [2.4 Panel](/learn/app-development/widgets/container/panel/)
 - [2.5 Tabs](/learn/app-development/widgets/container/tabs/)
 - [2.6 Tile](/learn/app-development/widgets/container/tile/)
-    - [Properties](#properties)
-    - [Events](#events)
+    - [i. Properties](#properties)
+    - [ii. Events](#events)
 - [2.7 Wizard](/learn/app-development/widgets/container/wizard/)

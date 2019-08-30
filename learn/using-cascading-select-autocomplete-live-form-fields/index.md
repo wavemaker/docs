@@ -3,16 +3,16 @@ title: "Using Cascading Select & Autocomplete for Live Form Fields"
 id: ""
 ---
 
-**:** To enable user selection for a form fields.
+**Scenario:** To enable user selection for a form fields.
 
 We will see how to use cascading selects and autocomplete widgets for Live Form fields.
 
-1. can use multiple select widgets to filter values based on values from another select widget.
-2. property can be used to filter the existing values
+1. You can use multiple select widgets to filter values based on values from another select widget.
+2. Autocomplete property can be used to filter the existing values
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vSo2jOTgvbEOBcrzw-Meyq5ni-4I16bb-ruQmJfoaOep1PbOvhIWqrBky1w-iJYhyjI0fFw7DSJ4ezl/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
+[Live Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
 
 - [1\. Live Form Basic Usage](/learn/app-development/widgets/datalive/live-form/live-form-basic-usage/)
 - [2\. How to split live form](/learn/how-tos/live-form-tabbed-form/)

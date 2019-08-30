@@ -7,46 +7,52 @@ In a WaveMaker app, pages have specific life cycle events. An onBeforePageLeave 
 
 Following are the typical scenarios when this event is invoked:
 
-- you navigate from active page to another page
-- you reload the app
-- , when you close the app browser tab
+- Before you navigate from active page to another page
+- Before you reload the app
+- Or, when you close the app browser tab
 
-#### Use Case
+#### Problem Use Case
 
 The app should prevent users from exiting the page before they could:
 
-- exit the page while filling up the form
-- , navigate away from the active page before they save any changes to the form
+- accidentally exit the page while filling up the form
+- Or, navigate away from the active page before they save any changes to the form
 
-the help of the onBeforePageLeave event, the app developer can add some checks and prevent the user from exiting the page.
+**Solution**
+
+With the help of the onBeforePageLeave event, the app developer can add some checks and prevent the user from exiting the page.
+
+## Syntax
 
 You can define the event callback in the page script with the following script:
 
- = function() {
+Page.onBeforePageLeave = function() {
  // perform checks
  // to prevent page navigation return false;
 }
 
-a registration form page, the user should get a warning message, if the user has filled in some information and attempts to navigate away from the page.  achieve this, you can write the following lines of code in the page script.
+## Example
 
- = function() {
+For a registration form page, the user should get a warning message, if the user has filled in some information and attempts to navigate away from the page. To achieve this, you can write the following lines of code in the page script.
+
+Page.onBeforePageLeave = function() {
     if(Page.Widgets.RegistrationForm.dirty) {
        return window.confirm(“You have unsaved changes, do you want to leave?”);
    }
 }
 
-## in app.js
+## Usage in app.js
 
 If you want to handle multiple pages throughout the app, write the callback event in the app.js file, as below:
 
- = function(activePageName, activePageScope) {
+App.onBeforePageLeave = function(activePageName, activePageScope) {
   // perform checks
   // to prevent page navigation return false;
 }
 
-points to be aware of: 
+Important points to be aware of: 
 
-the event is defined in app.js as well as on a page, then:
+If the event is defined in app.js as well as on a page, then:
 
-- event on the page will be invoked first before the one in app.js.
-- the page event returns false, the navigation from the page will be prevented and the app.js event will not be invoked.
+- the event on the page will be invoked first before the one in app.js.
+- if the page event returns false, the navigation from the page will be prevented and the app.js event will not be invoked.

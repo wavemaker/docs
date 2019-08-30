@@ -7,13 +7,13 @@ App Localization is the process of rendering your app in multiple languages. Wav
 
 This post:
 
-1. Localization
-2. Localization means for WaveMaker apps
-3. Localization can be set in a WaveMaker App
+1. Defines Localization
+2. What Localization means for WaveMaker apps
+3. How Localization can be set in a WaveMaker App
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRjmVw1gYz-_hTDynYBIi4AMODyX1_qx-6ETIjm8bPtxcbFk0x2MzcU2AylROhblrcVx7LpzRNPFwqi/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="708" height="560" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-[Cases](/learn/app-development/ui-design/use-cases-ui-design/)
+[Localization Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
 - [1\. Localization in WaveMaker Apps](#)
 - [2\. Localization of Error Messages](/learn/how-tos/localization-error-messages/)

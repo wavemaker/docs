@@ -5,514 +5,588 @@ id: ""
 
 Here you will find a list of all Widgets available in the WaveMaker platform along with a brief description and links to detailed documents.
 
-# Widgets
+# Data Widgets
 
-is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area.
+Widget
 
-[](/learn/app-development/widgets/datalive/cards/)
+Description
 
-[Docs]([sc name='api-doc-version']docs/classes/Card.html)
-
-**Table** is a widget that presents a tabular view of data and allows actions.
-
-[](/learn/app-development/widgets/datalive/data-table/)
-
-[Docs]([sc name='api-doc-version']docs/classes/LiveTable.html)
-
-is a group of input elements put together to post data, typically updating data through a web service call
-
-[](/learn/app-development/widgets/datalive/form/)
-
-[Docs]([sc name='api-doc-version']docs/classes/Form.html)
-
-is a widget that presents a list view of data, which contains a template for designing each list item
-
-[](/learn/app-development/widgets/list/)
-
-[Docs]([sc name='api-doc-version']docs/classes/List.html)
-
-**Filter** is a widget that allows user to filter the database results, usually used in combination with List or Data Table to display the filtered results
-
-[](/learn/app-development/widgets/datalive/live-filter/)
-
-[Docs]([sc name='api-doc-version']docs/classes/LiveFilter.html)
-
-**Form** is a group of input elements put together to submit data, typically resulting in creating or updating a database row
-
-[](/learn/app-development/widgets/datalive/live-form/)
-
-[Docs]([sc name='api-doc-version']docs/classes/LiveForm.html)
-
-# Widgets
+Document
 
 Reference
 
-is a stacked list of UI components, with only one component expanded or viewed at any point in time, and the rest collapsed
+**Cards** is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area.
 
- [](/learn/app-development/widgets/container/accordion/)
+[Overview](/learn/app-development/widgets/datalive/cards/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Accordion.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Card.html)
 
-is an enclosing element that wraps the widgets placed within, mostly used for embedding partial pages
+**Data Table** is a widget that presents a tabular view of data and allows actions.
 
- [](/learn/app-development/widgets/container/container/)
+[Overview](/learn/app-development/widgets/datalive/data-table/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Container.html)
+[API Docs]([sc name='api-doc-version']docs/classes/LiveTable.html)
 
-**Layout** helps division of pages or content area into cells or grids based on the 12-column fluid grid system, which helps in proper placement of the widgets for responsive design.
+**Form** is a group of input elements put together to post data, typically updating data through a web service call
 
-[](/learn/app-development/widgets/container/grid-layout/)
+[Overview](/learn/app-development/widgets/datalive/form/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Layoutgrid.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Form.html)
 
-has designated sections such as header, body, and footer and can be used to group a set of widgets together.
+**List** is a widget that presents a list view of data, which contains a template for designing each list item
 
-[](/learn/app-development/widgets/container/panel/)
+[Overview](/learn/app-development/widgets/list/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Panel.html)
+[API Docs]([sc name='api-doc-version']docs/classes/List.html)
 
-are Multiple UI components placed in a single window, with only one active component and headings allowing navigation to other components
+**Live Filter** is a widget that allows user to filter the database results, usually used in combination with List or Data Table to display the filtered results
 
- [](/learn/app-development/widgets/container/tabs/)
+[Overview](/learn/app-development/widgets/datalive/live-filter/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Tabs.html)
+[API Docs]([sc name='api-doc-version']docs/classes/LiveFilter.html)
 
-is a form of UI components to group a set of widgets together and to apply a uniform style to the content
+**Live Form** is a group of input elements put together to submit data, typically resulting in creating or updating a database row
 
- [](/learn/app-development/widgets/container/tile/)
+[Overview](/learn/app-development/widgets/datalive/live-form/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Tile.html)
+[API Docs]([sc name='api-doc-version']docs/classes/LiveForm.html)
 
-is a form of UI components to group a set of widgets together and to apply a uniform style to the content
+# Container Widgets
 
- [](/learn/app-development/widgets/container/wizard/)
+Widget
 
-[Docs]([sc name='api-doc-version']docs/classes/Wizard.html)
+Definition
 
-# Widgets
+Overview
 
-is a control that can be clicked to perform an action.
+API Reference
 
- [](/learn/app-development/widgets/datalive/form/button/)
+**Accordion** is a stacked list of UI components, with only one component expanded or viewed at any point in time, and the rest collapsed
 
-[Docs]([sc name='api-doc-version']docs/classes/Button.html)
+ [Overview](/learn/app-development/widgets/container/accordion/)
 
-**Group** is the arrangement of buttons grouped together.
+[API Docs]([sc name='api-doc-version']docs/classes/Accordion.html)
 
- [](/learn/app-development/widgets/datalive/form/button-group/)
+**Container** is an enclosing element that wraps the widgets placed within, mostly used for embedding partial pages
 
-[Docs]([sc name='api-doc-version']docs/classes/ButtonGroup.html)
+ [Overview](/learn/app-development/widgets/container/container/)
 
-widget allows the user to select a date from the calendar displayed.
+[API Docs]([sc name='api-doc-version']docs/classes/Container.html)
 
- [](/learn/app-development/widgets/datalive/form/calendar/)
+**Grid Layout** helps division of pages or content area into cells or grids based on the 12-column fluid grid system, which helps in proper placement of the widgets for responsive design.
 
-[Docs]([sc name='api-doc-version']docs/classes/Calendar.html)
+[Overview](/learn/app-development/widgets/container/grid-layout/)
 
-allows the user to choose one or multiple of a predefined set of options.
+[API Docs]([sc name='api-doc-version']docs/classes/Layoutgrid.html)
 
-[](/learn/app-development/widgets/form-widgets/checkbox/)
+**Panel** has designated sections such as header, body, and footer and can be used to group a set of widgets together.
 
-[Docs]([sc name='api-doc-version']docs/classes/Checkbox.html)
+[Overview](/learn/app-development/widgets/container/panel/)
 
-is the arrangement of checkbox widgets grouped together.
+[API Docs]([sc name='api-doc-version']docs/classes/Panel.html)
 
-[](/learn/app-development/widgets/form-widgets/checkboxset/)
+**Tabs** are Multiple UI components placed in a single window, with only one active component and headings allowing navigation to other components
 
-[Docs]([sc name='api-doc-version']docs/classes/Checkboxset.html)
+ [Overview](/learn/app-development/widgets/container/tabs/)
 
-allow user to search data and add, delete and edit the same.
+[API Docs]([sc name='api-doc-version']docs/classes/Tabs.html)
 
-[](/learn/app-development/widgets/form-widgets/chips/)
+**Tile** is a form of UI components to group a set of widgets together and to apply a uniform style to the content
 
-[Docs]([sc name='api-doc-version']docs/classes/Chips.html)
+ [Overview](/learn/app-development/widgets/container/tile/)
 
-**Picker** widget is to select the color and translate to a hex value.
+[API Docs]([sc name='api-doc-version']docs/classes/Tile.html)
 
- [](/learn/app-development/widgets/datalive/form/color-picker/)
+**Wizard** is a form of UI components to group a set of widgets together and to apply a uniform style to the content
 
-[Docs]([sc name='api-doc-version']docs/classes/ColorPicker.html)
+ [Overview](/learn/app-development/widgets/container/wizard/)
 
-is a special text widget to input the currency type data, with the display format based on the currency type.
+[API Docs]([sc name='api-doc-version']docs/classes/Wizard.html)
 
- [](/learn/app-development/widgets/datalive/form/currency/)
+# Form Widgets
 
-[Docs]([sc name='api-doc-version']docs/classes/Currency.html)
+Widget
 
-widget helps to select a date from a calendar within the date range.
+Description
 
-[](/learn/app-development/widgets/form-widgets/date-time-datetime/)
+Overview
 
-[Docs]([sc name='api-doc-version']docs/classes/Date.html)
+Reference
 
-is a composite widget of date and time widgets.
+**Button** is a control that can be clicked to perform an action.
 
-[](/learn/app-development/widgets/form-widgets/date-time-datetime/)
+ [Overview](/learn/app-development/widgets/datalive/form/button/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Datetime.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Button.html)
 
-is a widget that pops up a file browsing window to select files and upload.
+**Button Group** is the arrangement of buttons grouped together.
 
-[](/learn/app-development/widgets/datalive/form/file-upload/)
+ [Overview](/learn/app-development/widgets/datalive/form/button-group/)
 
-[Docs]([sc name='api-doc-version']docs/classes/FileUpload.html)
+[API Docs]([sc name='api-doc-version']docs/classes/ButtonGroup.html)
 
-allows input of a number. It works with the selected app Locale and displays the number localized format.
+**Calendar** widget allows the user to select a date from the calendar displayed.
 
- [](/learn/app-development/widgets/form-widgets/number/)
+ [Overview](/learn/app-development/widgets/datalive/form/calendar/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Number.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Calendar.html)
 
-is the arrangement of radio widgets grouped together.
+**Checkbox** allows the user to choose one or multiple of a predefined set of options.
 
-[](/learn/app-development/widgets/form-widgets/radioset/)
+[Overview](/learn/app-development/widgets/form-widgets/checkbox/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Radioset.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Checkbox.html)
 
-Widget allows users to input ratings as data.
+**CheckboxSet** is the arrangement of checkbox widgets grouped together.
 
- [](/learn/app-development/widgets/datalive/form/rating-widget/)
+[Overview](/learn/app-development/widgets/form-widgets/checkboxset/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Rating.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Checkboxset.html)
 
-provides a drop-down list that with a list of items a user can select from.
+**Chips** allow user to search data and add, delete and edit the same.
 
-[](/learn/app-development/widgets/form-widgets/select/)
+[Overview](/learn/app-development/widgets/form-widgets/chips/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Select.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Chips.html)
 
-**Locale** Widget is for Language selection from the list of support languages.
+**Color Picker** widget is to select the color and translate to a hex value.
 
- [](/learn/app-development/widgets/form-widgets/select-locale/)
+ [Overview](/learn/app-development/widgets/datalive/form/color-picker/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Select.html)
+[API Docs]([sc name='api-doc-version']docs/classes/ColorPicker.html)
 
-is a widget control with a handle that can be moved right and left (horizontal slider) on a bar to select a value from within the range of allowed values.
+**Currency** is a special text widget to input the currency type data, with the display format based on the currency type.
 
- [](/learn/app-development/widgets/form-widgets/slider/)
+ [Overview](/learn/app-development/widgets/datalive/form/currency/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Slider.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Currency.html)
 
-widget can help switching between 3 or more different options by pressing a single key.
+**Date** widget helps to select a date from a calendar within the date range.
 
- [](/learn/app-development/widgets/form-widgets/switch/)
+[Overview](/learn/app-development/widgets/form-widgets/date-time-datetime/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Switch.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Date.html)
 
-allows input of a single line of text.
+**Datetime** is a composite widget of date and time widgets.
 
- [](/learn/app-development/widgets/form-widgets/text/)
+[Overview](/learn/app-development/widgets/form-widgets/date-time-datetime/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Text.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Datetime.html)
 
-allows for multiple rows of data to be shown and entered.
+**FileUpload** is a widget that pops up a file browsing window to select files and upload.
 
- [](/learn/app-development/widgets/form-widgets/textarea/)
+[Overview](/learn/app-development/widgets/datalive/form/file-upload/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Textarea.html)
+[API Docs]([sc name='api-doc-version']docs/classes/FileUpload.html)
 
-widget helps to select a time from within a specified time range.
+**Number** allows input of a number. It works with the selected app Locale and displays the number localized format.
 
-[](/learn/app-development/widgets/form-widgets/date-time-datetime/)
+ [Overview](/learn/app-development/widgets/form-widgets/number/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Time.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Number.html)
 
-is a widget that can help switching between two different options by pressing a single key.
+**Radioset** is the arrangement of radio widgets grouped together.
 
- [](/learn/app-development/widgets/datalive/form/toggle/)
+[Overview](/learn/app-development/widgets/form-widgets/radioset/)
 
-[Docs]([sc name='api-doc-version']docs/classes/Toggle.html)
+[API Docs]([sc name='api-doc-version']docs/classes/Radioset.html)
 
-# Widgets
+**Rating** Widget allows users to input ratings as data.
 
-is used as a navigation link within the app or an external URL.
+ [Overview](/learn/app-development/widgets/datalive/form/rating-widget/)
 
- [](/learn/app-development/widgets/basic/anchor/)
+[API Docs]([sc name='api-doc-version']docs/classes/Rating.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Anchor.html)
+**Select** provides a drop-down list that with a list of items a user can select from.
 
-widget is to embed an audio player into the project.
+[Overview](/learn/app-development/widgets/form-widgets/select/)
 
-[](/learn/app-development/widgets/media-widgets/)
+[API Docs]([sc name='api-doc-version']docs/classes/Select.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Audio.html)
+**Select Locale** Widget is for Language selection from the list of support languages.
 
-is a widget to display HTML content or to render the text content using HTML.
+ [Overview](/learn/app-development/widgets/form-widgets/select-locale/)
 
-[](/learn/app-development/widgets/datalive/form/html/)
+[API Docs]([sc name='api-doc-version']docs/classes/Select.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Html.html)
+**Slider** is a widget control with a handle that can be moved right and left (horizontal slider) on a bar to select a value from within the range of allowed values.
 
-widget is for displaying a comprehensible symbol or graphic.
+ [Overview](/learn/app-development/widgets/form-widgets/slider/)
 
-[](/learn/app-development/widgets/basic/icon/)
+[API Docs]([sc name='api-doc-version']docs/classes/Slider.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Icon.html)
+**Switch** widget can help switching between 3 or more different options by pressing a single key.
 
-is a widget to display a web page content in a separate frame, without affecting the current page content or styles.
+ [Overview](/learn/app-development/widgets/form-widgets/switch/)
 
- [](/learn/app-development/widgets/datalive/form/iframe/)
+[API Docs]([sc name='api-doc-version']docs/classes/Switch.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Iframe.html)
+**Text** allows input of a single line of text.
 
-is a uneditable text as a heading or to describe another widget.
+ [Overview](/learn/app-development/widgets/form-widgets/text/)
 
- [](/learn/app-development/widgets/basic/label/)
+[API Docs]([sc name='api-doc-version']docs/classes/Text.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Label.html)
+**Textarea** allows for multiple rows of data to be shown and entered.
 
-is a widget to display success, info, loading, error or warning messages to the user.
+ [Overview](/learn/app-development/widgets/form-widgets/textarea/)
 
- [](/learn/app-development/widgets/basic/message/)
+[API Docs]([sc name='api-doc-version']docs/classes/Textarea.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Message.html)
+**Time** widget helps to select a time from within a specified time range.
 
-is a widget to display images in the project.
+[Overview](/learn/app-development/widgets/form-widgets/date-time-datetime/)
 
-[](/learn/app-development/widgets/media-widgets/)
+[API Docs]([sc name='api-doc-version']docs/classes/Time.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Picture.html)
+**Toggle** is a widget that can help switching between two different options by pressing a single key.
 
-**Bar** is an actual indicator of activity progress with time/percentage.
+ [Overview](/learn/app-development/widgets/datalive/form/toggle/)
 
- [](/learn/app-development/widgets/basic/progress-bar/)
+[API Docs]([sc name='api-doc-version']docs/classes/Toggle.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/ProgressBar.html)
+# Basic Widgets
 
-**Editor** is an input control for formatted text content, optionally including media (WYSIWYG).
+Widget
 
- [](/learn/app-development/widgets/basic/richtext-editor/)
+Description
 
-[Docs]([sc name='api-doc-version']docs/classes/RichTextEditor.html)
+Overview
 
-within a data source and give results.
+Reference
 
-[](/learn/app-development/widgets/basic/search/)
+**Anchor** is used as a navigation link within the app or an external URL.
 
-[]([sc name='api-doc-version']docs/classes/Search.html)
+ [Overview](/learn/app-development/widgets/basic/anchor/)
 
-is a widget for a visual indicator of activity in progress.
+[API Docs]([sc name='api-doc-version']docs/classes/Anchor.html)
 
- [](/learn/app-development/widgets/basic/spinner/)
+**Audio** widget is to embed an audio player into the project.
 
-[Docs]([sc name='api-doc-version']docs/classes/Spinner.html)
+[Overview](/learn/app-development/widgets/media-widgets/)
 
-widget can be used to display data in a hierarchical format.
+[API Docs]([sc name='api-doc-version']docs/classes/Audio.html)
 
-[](/learn/app-development/widgets/basic/tree/)
+**HTML** is a widget to display HTML content or to render the text content using HTML.
 
-[Docs]([sc name='api-doc-version']docs/classes/Tree.html)
+[Overview](/learn/app-development/widgets/datalive/form/html/)
 
-is a widget to embed a media player into the project.
+[API Docs]([sc name='api-doc-version']docs/classes/Html.html)
 
-[](/learn/app-development/widgets/media-widgets/)
+**Icon** widget is for displaying a comprehensible symbol or graphic.
 
-[Docs]([sc name='api-doc-version']docs/classes/Video.html)
+[Overview](/learn/app-development/widgets/basic/icon/)
 
-# Widgets
+[API Docs]([sc name='api-doc-version']docs/classes/Icon.html)
 
- are marginal differences in the various usage scenarios for the various chart types, which is highlighted in the [](/learn/app-development/widgets/chart/chart-widget/)and [documentation](https://preview.wavemakeronline.com/studio/docs/classes/Chart.html)
+**Iframe** is a widget to display a web page content in a separate frame, without affecting the current page content or styles.
 
-chart displays information as a series of data points called 'markers' connected by straight line segments.
+ [Overview](/learn/app-development/widgets/datalive/form/iframe/)
 
-charts display vertical bars going across the horizontal axis.
+[API Docs]([sc name='api-doc-version']docs/classes/Iframe.html)
 
-chart is a line chart with the areas below the lines filled.
+**Label** is a uneditable text as a heading or to describe another widget.
 
-chart is a type of graph in which a circle is divided into sectors that each represent a proportion of the whole.
+ [Overview](/learn/app-development/widgets/basic/label/)
 
-chart presents grouped data with horizontal bars with lengths proportional to the values that they represent.
+[API Docs]([sc name='api-doc-version']docs/classes/Label.html)
 
-  Line is a line chart displays information as a series of data points, each data point is a cumulative sum of the data points of the preceding series.
+**Message** is a widget to display success, info, loading, error or warning messages to the user.
 
-is a type of graph in which a circle is divided into sectors that each represent a proportion of the whole, with an inner circle showing summary.
+ [Overview](/learn/app-development/widgets/basic/message/)
 
-chart is a type of chart that displays three dimensions of data.
+[API Docs]([sc name='api-doc-version']docs/classes/Message.html)
 
-# Widgets
+**Picture** is a widget to display images in the project.
 
-is an indicator or nav link to the current page's location within the app's hierarchy.
+[Overview](/learn/app-development/widgets/media-widgets/)
 
-[](/learn/app-development/widgets/navigation/breadcrumb/)
+[API Docs]([sc name='api-doc-version']docs/classes/Picture.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Breadcrumb.html)
+**Progress Bar** is an actual indicator of activity progress with time/percentage.
 
-**Menu** is a pull-down menu interface used for defining navigation structure within the app or for external links.
+ [Overview](/learn/app-development/widgets/basic/progress-bar/)
 
-[](/learn/app-development/widgets/dropdown-menu/)
+[API Docs]([sc name='api-doc-version']docs/classes/ProgressBar.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Menu.html)
+**Richtext Editor** is an input control for formatted text content, optionally including media (WYSIWYG).
 
-widget represents navigation link or anchor, typically used for building navigation for multi-page apps.
+ [Overview](/learn/app-development/widgets/basic/richtext-editor/)
 
- [](/learn/app-development/widgets/navigation/nav/)
+[API Docs]([sc name='api-doc-version']docs/classes/RichTextEditor.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Nav.html)
+**Search** within a data source and give results.
 
-**Bar** is a grouping of nav widgets for navigation capabilities.
+[Overview](/learn/app-development/widgets/basic/search/)
 
- [](/learn/app-development/widgets/navigation/nav-bar/)
+[Reference]([sc name='api-doc-version']docs/classes/Search.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Navbar.html)
+**Spinner** is a widget for a visual indicator of activity in progress.
 
-is a container-type graphical control element that opens in its parent window and blocks any other interaction until selected.
+ [Overview](/learn/app-development/widgets/basic/spinner/)
 
-[](/learn/app-development/widgets/navigation/popover/)
+[API Docs]([sc name='api-doc-version']docs/classes/Spinner.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Popover.html)
+**Tree** widget can be used to display data in a hierarchical format.
 
-# Widgets
+[Overview](/learn/app-development/widgets/basic/tree/)
 
-displays two or more items either images, text or any content, that transitions in a cyclic order.
+[API Docs]([sc name='api-doc-version']docs/classes/Tree.html)
 
- [](/learn/app-development/widgets/advanced/carousel/)
+**Video** is a widget to embed a media player into the project.
 
-[Docs]([sc name='api-doc-version']docs/classes/Carousel.html)
+[Overview](/learn/app-development/widgets/media-widgets/)
 
-is used for taking credentials for authentication, embedded within a page.
+[API Docs]([sc name='api-doc-version']docs/classes/Video.html)
 
- [](/learn/app-development/widgets/advanced/login/)
+# Chart Widgets
 
-[Docs]([sc name='api-doc-version']docs/classes/Login.html)
+There are marginal differences in the various usage scenarios for the various chart types, which is highlighted in the [overview](/learn/app-development/widgets/chart/chart-widget/) and [API documentation](https://preview.wavemakeronline.com/studio/docs/classes/Chart.html).
 
-is a container to keep scrolling content. The scrolling can be in horizontal or in the vertical direction.
+Widget
 
- [](/learn/app-development/widgets/advanced/marquee/)
+Description
 
-[Docs]([sc name='api-doc-version']docs/classes/Marquee.html)
+**Line** chart displays information as a series of data points called 'markers' connected by straight line segments.
 
-# Dialog/ Dialog Widgets
+**Column** charts display vertical bars going across the horizontal axis.
 
-Dialog is a special dialog that is displayed when the user needs to take an immediate action.
+**Area** chart is a line chart with the areas below the lines filled.
 
- [](/learn/app-development/widgets/modal-windows-dialogs/#alert-dialog)
+**Pie** chart is a type of graph in which a circle is divided into sectors that each represent a proportion of the whole.
 
-[Docs]([sc name='api-doc-version']docs/classes/Alertdialog.html)
+**Bar** chart presents grouped data with horizontal bars with lengths proportional to the values that they represent.
 
-Dialog gives a special dialog box that is displayed which requires user’s consent to complete the action.
+ **Cumulative** Line is a line chart displays information as a series of data points, each data point is a cumulative sum of the data points of the preceding series.
 
- [](/learn/app-development/widgets/modal-windows-dialogs/#confirm-dialog)
+**Donut** is a type of graph in which a circle is divided into sectors that each represent a proportion of the whole, with an inner circle showing summary.
 
-[Docs]([sc name='api-doc-version']docs/classes/Confirmdialog.html)
+**Bubble** chart is a type of chart that displays three dimensions of data.
 
-Dialog gives a small window that communicates information to the user and prompts them for a response. The content of the dialog is customizable.
+# Navigation Widgets
 
- [](/learn/app-development/widgets/modal-windows-dialogs/#design-dialog)
+Widget
 
-[Docs]([sc name='api-doc-version']docs/classes/Designdialog.html)
+Description
 
-Dialog is a dialog box that loads an external webpage.
+Overview
 
- [](/learn/app-development/widgets/modal-windows-dialogs/#login-dialog)
+Reference
 
-[Docs]([sc name='api-doc-version']docs/classes/IFramedialog.html)
+**Breadcrumb** is an indicator or nav link to the current page's location within the app's hierarchy.
 
-Dialog is a dialog box that loads the partial page content.
+[Overview](/learn/app-development/widgets/navigation/breadcrumb/)
 
- [](/learn/app-development/widgets/modal-windows-dialogs/#page-dialog)
+[API Docs]([sc name='api-doc-version']docs/classes/Breadcrumb.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Pagedialog.html)
+**Dropdown Menu** is a pull-down menu interface used for defining navigation structure within the app or for external links.
 
-Dialog is a dialog box that allows you to customize the login dialog.
+[Overview](/learn/app-development/widgets/dropdown-menu/)
 
- [](/learn/app-development/widgets/modal-windows-dialogs/)
+[API Docs]([sc name='api-doc-version']docs/classes/Menu.html)
 
-[Docs]([sc name='api-doc-version']docs/classes/Logindialog.html)
+**Nav** widget represents navigation link or anchor, typically used for building navigation for multi-page apps.
 
-# \- Custom Widgets & Extensions
+ [Overview](/learn/app-development/widgets/navigation/nav/)
 
-For an overview on Prefabs and how you can create Prefabs [here](/learn/app-development/widgets/custom-widgets/)
+[API Docs]([sc name='api-doc-version']docs/classes/Nav.html)
+
+**Nav Bar** is a grouping of nav widgets for navigation capabilities.
+
+ [Overview](/learn/app-development/widgets/navigation/nav-bar/)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Navbar.html)
+
+**Popover** is a container-type graphical control element that opens in its parent window and blocks any other interaction until selected.
+
+[Overview](/learn/app-development/widgets/navigation/popover/)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Popover.html)
+
+# Advanced Widgets
+
+Widget
+
+Description
+
+Overview
+
+Reference
+
+**Carousel** displays two or more items either images, text or any content, that transitions in a cyclic order.
+
+ [Overview](/learn/app-development/widgets/advanced/carousel/)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Carousel.html)
+
+**Login** is used for taking credentials for authentication, embedded within a page.
+
+ [Overview](/learn/app-development/widgets/advanced/login/)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Login.html)
+
+**Marquee** is a container to keep scrolling content. The scrolling can be in horizontal or in the vertical direction.
+
+ [Overview](/learn/app-development/widgets/advanced/marquee/)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Marquee.html)
+
+# Modal Dialog/ Dialog Widgets
+
+Widget
+
+Description
+
+Overview
+
+Reference
+
+**Alert** Dialog is a special dialog that is displayed when the user needs to take an immediate action.
+
+ [Overview](/learn/app-development/widgets/modal-windows-dialogs/#alert-dialog)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Alertdialog.html)
+
+**Confirm** Dialog gives a special dialog box that is displayed which requires user’s consent to complete the action.
+
+ [Overview](/learn/app-development/widgets/modal-windows-dialogs/#confirm-dialog)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Confirmdialog.html)
+
+**Design** Dialog gives a small window that communicates information to the user and prompts them for a response. The content of the dialog is customizable.
+
+ [Overview](/learn/app-development/widgets/modal-windows-dialogs/#design-dialog)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Designdialog.html)
+
+**Iframe** Dialog is a dialog box that loads an external webpage.
+
+ [Overview](/learn/app-development/widgets/modal-windows-dialogs/#login-dialog)
+
+[API Docs]([sc name='api-doc-version']docs/classes/IFramedialog.html)
+
+**Page** Dialog is a dialog box that loads the partial page content.
+
+ [Overview](/learn/app-development/widgets/modal-windows-dialogs/#page-dialog)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Pagedialog.html)
+
+**Login** Dialog is a dialog box that allows you to customize the login dialog.
+
+ [Overview](/learn/app-development/widgets/modal-windows-dialogs/)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Logindialog.html)
+
+# Prefabs - Custom Widgets & Extensions
+
+For an overview on Prefabs and how you can create Prefabs [see here](/learn/app-development/widgets/custom-widgets/).
+
+Widget
+
+Description
+
+Document
+
+Reference
 
 [![](../assets/youtube.png)](../assets/youtube.png)
 
-YouTube prefab connects with YouTube and displays a video on the web page.
+The YouTube prefab connects with YouTube and displays a video on the web page.
 
-[](/learn/app-development/widgets/prefab/youtube/)
+[Overview](/learn/app-development/widgets/prefab/youtube/)
 
 [![](../assets/maps.png)](../assets/maps.png)
 
-Googlemaps prefab connects with Google Maps and displays the map on your page.
+The Googlemaps prefab connects with Google Maps and displays the map on your page.
 
-[](/learn/app-development/widgets/prefab/googlemaps/)
+[Overview](/learn/app-development/widgets/prefab/googlemaps/)
 
 [![](../assets/fbpost.png)](../assets/fbpost.png)
 
-Prefab is no longer available from version 10.
+This Prefab is no longer available from version 10.
 
 [![](../assets/qrcode.png)](../assets/qrcode.png)
 
-prefab that ships with WaveMaker can be used to add any text or url to your app in the QRCode format.
+QRCode prefab that ships with WaveMaker can be used to add any text or url to your app in the QRCode format.
 
-[](/learn/app-development/widgets/prefab/qrcode/)
+[Overview](/learn/app-development/widgets/prefab/qrcode/)
 
-Prefabs
+OAuth Prefabs
 
 [![](../assets/box.png)](../assets/box.png)
 
-this Prefab to enable user authorization using their Box credentials.
+Use this Prefab to enable user authorization using their Box credentials.
 
-[](/learn/app-development/widgets/prefab/oauth-prefabs/box/)
+[Overview](/learn/app-development/widgets/prefab/oauth-prefabs/box/)
 
 [![](../assets/fb.jpg)](../assets/fb.jpg)
 
-this Prefab to enable user authorization using their FaceBook credentials.
+Use this Prefab to enable user authorization using their FaceBook credentials.
 
-[](/learn/app-development/widgets/prefab/oauth-prefabs/facebook/)
+[Overview](/learn/app-development/widgets/prefab/oauth-prefabs/facebook/)
 
 [![](../assets/Google.png)](../assets/Google.png)
 
-this Prefab to enable user authorization using their Google credentials.
+Use this Prefab to enable user authorization using their Google credentials.
 
-[](/learn/app-development/widgets/prefab/oauth-prefabs/google/)
+[Overview](/learn/app-development/widgets/prefab/oauth-prefabs/google/)
 
 [![](../assets/instagram.png)](../assets/instagram.png)
 
-this Prefab to enable user authorization using their Instagram credentials.
+Use this Prefab to enable user authorization using their Instagram credentials.
 
-[](/learn/app-development/widgets/prefab/oauth-prefabs/instagram/)
+[Overview](/learn/app-development/widgets/prefab/oauth-prefabs/instagram/)
 
 [![](../assets/linkedin.png)](../assets/linkedin.png)
 
-this Prefab to enable user authorization using their LinkedIn credentials.
+Use this Prefab to enable user authorization using their LinkedIn credentials.
 
-[](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/)
+[Overview](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/)
 
-# & Device Widgets
+# Mobile & Device Widgets
 
-**List** displays a list of pictures. The media can be displayed in a single-row mode or grid mode and can be opened to full screen by touching the media.
+Widget
 
-[](/learn/app-development/widgets/mobile-widgets/media-list/)
+Description
 
-[Docs]([sc name='api-doc-version']docs/classes/MediaList.html)
+Document
 
-**Control** group of buttons to toggle Segmented Content containing the page content.
+Reference
 
-[](/learn/app-development/widgets/mobile-widgets/segmented-control/)
+**Media List** displays a list of pictures. The media can be displayed in a single-row mode or grid mode and can be opened to full screen by touching the media.
 
-[Docs]([sc name='api-doc-version']docs/classes/SegmentedControl.html)
+[Overview](/learn/app-development/widgets/mobile-widgets/media-list/)
 
-**scanner** can be used for scanning barcode.
+[API Docs]([sc name='api-doc-version']docs/classes/MediaList.html)
 
-[](/learn/app-development/widgets/mobile-widgets/barcode-scanner/)
+**Segmented Control** group of buttons to toggle Segmented Content containing the page content.
 
-[Docs]([sc name='api-doc-version']docs/classes/Barcodescanner.html)
+[Overview](/learn/app-development/widgets/mobile-widgets/segmented-control/)
 
-can be used to access the device camera for taking pictures and videos.
+[API Docs]([sc name='api-doc-version']docs/classes/SegmentedControl.html)
 
-[](/learn/app-development/widgets/mobile-widgets/camera/)
+**Barcode scanner** can be used for scanning barcode.
 
-[Docs]([sc name='api-doc-version']docs/classes/Camera.html)
+[Overview](/learn/app-development/widgets/mobile-widgets/barcode-scanner/)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Barcodescanner.html)
+
+**Camera** can be used to access the device camera for taking pictures and videos.
+
+[Overview](/learn/app-development/widgets/mobile-widgets/camera/)
+
+[API Docs]([sc name='api-doc-version']docs/classes/Camera.html)
 
 < Widgets Overview
 
-Widgets or Prefabs >
+Custom Widgets or Prefabs >
 
 3\. UI Elements - Widgets & Prefabs
 
 - 3.1 Widgets
-    - [Basics](/learn/app-development/widgets/ui-elements/#widget-basics)
-    - [Properties](/learn/app-development/widgets/ui-elements/#widget-properties)
-    - [Data Widgets](/learn/app-development/widgets/ui-elements/#live-and-data)
+    - [i. Basics](/learn/app-development/widgets/ui-elements/#widget-basics)
+    - [ii. Properties](/learn/app-development/widgets/ui-elements/#widget-properties)
+    - [iii. Data Widgets](/learn/app-development/widgets/ui-elements/#live-and-data)
 - [3.2 Widget Library](#)
     - [1\. Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
     - [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)

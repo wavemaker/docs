@@ -3,365 +3,481 @@ title: "Date,  Time and  Datetime"
 id: ""
 ---
 
-**, Time and Datetime** widgets can be used to capture the date and time-related data from the user. Drag and drop of these widgets result in a composite widget along with a label.
+**Date, Time and Datetime** widgets can be used to capture the date and time-related data from the user. Drag and drop of these widgets result in a composite widget along with a label.
 
-The main include
+# Features
 
-- **Pattern** which defines how the date/time/date time is rendered in the UI, and
-- **Pattern** defines the format of output data value returned by these widgets.
-- **Step and Minute Step** defines the time picker UI for the time and datetime widgets.
-- date and datetime widgets, **Date, Max Date, Exclude Days and Dates** can be set. In this case, the date picker will not have the invalid dates available for selection.
+The main **properties** include
 
-The following tables show the behavior in various scenarios: _Patterns_: [![](../assets/date_patterns.png)](../assets/date_patterns.png)
+- **Date Pattern** which defines how the date/time/date time is rendered in the UI, and
+- **Output Pattern** defines the format of output data value returned by these widgets.
+- **Hour Step and Minute Step** defines the time picker UI for the time and datetime widgets.
+- For date and datetime widgets, **Min Date, Max Date, Exclude Days and Dates** can be set. In this case, the date picker will not have the invalid dates available for selection.
 
-_Patterns_: [![](../assets/time_patterns.png)](../assets/time_patterns.png)
+The following tables show the behavior in various scenarios: _Date Patterns_: [![](../assets/date_patterns.png)](../assets/date_patterns.png)
 
-_Patterns_: [![](../assets/datetime_patterns.png)](../assets/datetime_patterns.png)
+_Time Patterns_: [![](../assets/time_patterns.png)](../assets/time_patterns.png)
 
-: For Time and Datetime widgets the time picker UI based on the time pattern given. For example, if the pattern is ‘hh:mm:ss a’, seconds and AM/PM pattern is displayed in time picker. If the pattern is ‘HH:mm’, 24Hr format is shown. Seconds and AM/PM are not displayed in time picker.
+_Datetime Patterns_: [![](../assets/datetime_patterns.png)](../assets/datetime_patterns.png)
 
-### Properties
+**Note**: For Time and Datetime widgets the time picker UI based on the time pattern given. For example, if the pattern is ‘hh:mm:ss a’, seconds and AM/PM pattern is displayed in time picker. If the pattern is ‘HH:mm’, 24Hr format is shown. Seconds and AM/PM are not displayed in time picker.
 
-name is a unique identifier for Date widget.
+# Properties
 
-placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
+### Date Properties
 
-text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
+**Property**
 
-index
+**Description**
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+Name
 
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
+The name is a unique identifier for Date widget.
 
-key
+Placeholder
 
-shortcut key property specifies a shortcut key to activate/focus an element. (\* [below for details](#shortcut))
+A placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
 
-width of your widget can be specified in or _% (_ _50px, 75%)._
+**Accessibility**
 
-**Value**
+Hint
 
-is the default value to display value for an editor widget, it can be set to current date. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
+Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
 
-**Format**
+Tab index
 
-Pattern
-
-pattern lets you override how dates are displayed. Common options are 'dd-MMMM-yyyy', 'yyyy/MM/dd'.
-
-Format
-
-the format of output datavalue returned by the date widget. Default output format is 'yyyy-MM-dd', which returns the equivalent data value. E.g data value for '19/06/2015' is '2015-06-19'. If the output format is given as 'MMM dd, yyyy', widget returns datavalue as 'Jun 19, 2015'.
-
-required editor in wm.LiveForm may refuse to save without a required field.
-
-Date
-
-a minimum date. The dates before this will not be shown in the date picker. The field is bindable.
-
-Date
-
-a maximum date. The dates after this will not be shown in the date picker. The field is bindable.
-
-Days
-
-days which are to be excluded from the selection from the date picker.
-
-Dates
-
-string and a variable containing dates which will be excluded from the selection from the date picker.
-
-DatePicker on
-
-this property you can control the visibility of the Date Picker. You can choose to open it on:
-
-- click and button click (default setting), or
-- on button click.
-
-Week Number
-
-set, week number will be displayed in the date picker UI.
-
-Focus
-
-property makes the element get focused automatically when the page loads.
-
-Only
-
-this checkbox property prevents the user from being able to change the data value of a widget.
-
-determines whether or not a component is visible. It is a bindable property.
-
-on Demand (visible only when show property is bound to a variable)
-
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
-
-the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only.
-
-### Properties
-
-name is a unique identifier for Date widget.
-
-placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
-
-text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
-
-index
-
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-key
+Shortcut key
 
-shortcut key property specifies a shortcut key to activate/focus an element. (\* [below for details](#shortcut))
+The shortcut key property specifies a shortcut key to activate/focus an element. (\*[See below for details](#shortcut))
 
-width of your widget can be specified in or _% (_ _50px, 75%)._
+**Layout**
 
-**Value**
+Width
 
-is the default value to display value for an editor widget, it can be set to current date. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
+The width of your widget can be specified in _px_ or _% (_i.e _50px, 75%)._
 
-**Format**
+**Default Value**
 
-Pattern
+Value
 
-pattern lets you override how dates are displayed. Common options are 'dd-MMMM-yyyy', 'yyyy/MM/dd'.
+This is the default value to display value for an editor widget, it can be set to current date. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
 
-Step
+**Display Format**
 
-of hours to increase or decrease.
+Date Pattern
 
-Step
+Date pattern lets you override how dates are displayed. Common options are 'dd-MMMM-yyyy', 'yyyy/MM/dd'.
 
-of minutes to increase or decrease.
+**Output**
 
-Format
+Output Format
 
-the format of output datavalue returned by the date time widget. Default output format is 'timestamp', which returns the equivalent timestamp integer. E.g timestamp value for '2012-12-12 12:12 PM' is '1355294520000'. If the output format is given as 'yyyy-MM-dd hh:mm a', widget returns datavalue as '2012-12-12 12:12 PM'.
+Defines the format of output datavalue returned by the date widget. Default output format is 'yyyy-MM-dd', which returns the equivalent data value. E.g data value for '19/06/2015' is '2015-06-19'. If the output format is given as 'MMM dd, yyyy', widget returns datavalue as 'Jun 19, 2015'.
 
-required editor in wm.LiveForm may refuse to save without a required field.
+**Validation**
 
-Date
+Required
 
-a minimum date. The dates before this will not be shown in the date picker. The field is bindable.
+A required editor in wm.LiveForm may refuse to save without a required field.
 
-Date
+Min Date
 
-a maximum date. The dates after this will not be shown in the date picker. The field is bindable.
+Enter a minimum date. The dates before this will not be shown in the date picker. The field is bindable.
 
-Days
+Max Date
 
-days which are to be excluded from the selection from the date picker.
+Enter a maximum date. The dates after this will not be shown in the date picker. The field is bindable.
 
-Dates
+Exclude Days
 
-string and a variable containing dates which will be excluded from the selection from the date picker.
+Select days which are to be excluded from the selection from the date picker.
 
-DateTimePicker on
+Exclude Dates
 
-this property you can control the visibility of the DateTime picker. You can choose to open it on:
+Accepts string and a variable containing dates which will be excluded from the selection from the date picker.
 
-- click and button click (default setting), or
-- on button click.
+**Behavior**
 
-Week Number
+Show DatePicker on
 
-set, week number will be displayed in the date picker UI.
+Using this property you can control the visibility of the Date Picker. You can choose to open it on:
 
-Focus
+- input click and button click (default setting), or
+- only on button click.
 
-property makes the element get focused automatically when the page loads.
+Show Week Number
 
-Only
+When set, week number will be displayed in the date picker UI.
 
-this checkbox property prevents the user from being able to change the data value of a widget.
+Auto Focus
 
-determines whether or not a component is visible. It is a bindable property.
+This property makes the element get focused automatically when the page loads.
 
-on Demand (visible only when show property is bound to a variable)
+Read Only
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+Selecting this checkbox property prevents the user from being able to change the data value of a widget.
 
-the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only.
+Show
 
-### Properties
+Showing determines whether or not a component is visible. It is a bindable property.
 
-name is a unique identifier for Date widget.
+Load on Demand (visible only when show property is bound to a variable)
 
-placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
+Disabled
 
-index
+If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only.
 
-tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+### Datetime Properties
+
+**Property**
+
+**Description**
+
+Name
+
+The name is a unique identifier for Date widget.
+
+Placeholder
+
+A placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
+
+**Accessibility**
+
+Hint
+
+Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
+
+Tab index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
 NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
 
-key
+Shortcut key
 
-shortcut key property specifies a shortcut key to activate/focus an element. (\* [below for details](#shortcut))
+The shortcut key property specifies a shortcut key to activate/focus an element. (\*[See below for details](#shortcut))
 
-**Value**
+**Layout**
 
-is the default value to display value for an editor widget, it can be set to current date. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
+Width
 
-**Format**
+The width of your widget can be specified in _px_ or _% (_i.e _50px, 75%)._
 
-Pattern
+**Default Value**
 
-pattern lets you override how time is displayed. Common options are 'hh-mm-ss'.
+Value
 
-Step
+This is the default value to display value for an editor widget, it can be set to current date. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
 
-of hours to increase or decrease.
+**Display Format**
 
-Step
+Date Pattern
 
-of minutes to increase or decrease.
+Date pattern lets you override how dates are displayed. Common options are 'dd-MMMM-yyyy', 'yyyy/MM/dd'.
 
-Format
+Hour Step
 
-the format of output data value returned by the time widget. Default output format is 'timestamp', which returns the equivalent timestamp integer. E.g timestamp value for '10:10:00 AM' is '16800000'. If the output format is given as 'hh:mm a', widget returns data value as '10:10 AM'.
+Number of hours to increase or decrease.
 
-required editor in wm.LiveForm may refuse to save without a required field.
+Minute Step
 
-TimePicker on
+Number of minutes to increase or decrease.
 
-this property you can control the visibility of the Time picker. You can choose to open it on:
+**Output**
 
-- click and button click (default setting), or
-- on button click.
+Output Format
 
-Focus
+Defines the format of output datavalue returned by the date time widget. Default output format is 'timestamp', which returns the equivalent timestamp integer. E.g timestamp value for '2012-12-12 12:12 PM' is '1355294520000'. If the output format is given as 'yyyy-MM-dd hh:mm a', widget returns datavalue as '2012-12-12 12:12 PM'.
 
-property makes the element get focused automatically when the page loads.
+**Validation**
 
-Only
+Required
 
-this checkbox property prevents the user from being able to change the data value of a widget.
+A required editor in wm.LiveForm may refuse to save without a required field.
 
-determines whether or not a component is visible. It is a bindable property.
+Min Date
 
-on Demand (visible only when show property is bound to a variable)
+Enter a minimum date. The dates before this will not be shown in the date picker. The field is bindable.
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+Max Date
 
-the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only.
+Enter a maximum date. The dates after this will not be shown in the date picker. The field is bindable.
 
-**key**: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
+Exclude Days
 
-key Trigger
+Select days which are to be excluded from the selection from the date picker.
 
-Explorer
+Exclude Dates
+
+Accepts string and a variable containing dates which will be excluded from the selection from the date picker.
+
+**Behavior**
+
+Show DateTimePicker on
+
+Using this property you can control the visibility of the DateTime picker. You can choose to open it on:
+
+- input click and button click (default setting), or
+- only on button click.
+
+Show Week Number
+
+When set, week number will be displayed in the date picker UI.
+
+Auto Focus
+
+This property makes the element get focused automatically when the page loads.
+
+Read Only
+
+Selecting this checkbox property prevents the user from being able to change the data value of a widget.
+
+Show
+
+Showing determines whether or not a component is visible. It is a bindable property.
+
+Load on Demand (visible only when show property is bound to a variable)
+
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+
+Disabled
+
+If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only.
+
+### Time Properties
+
+**Property**
+
+**Description**
+
+Name
+
+The name is a unique identifier for Date widget.
+
+Placeholder
+
+A placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
+
+**Accessibility**
+
+Hint
+
+Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
+
+Tab index
+
+The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+
+NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
+
+Shortcut key
+
+The shortcut key property specifies a shortcut key to activate/focus an element. (\*[See below for details](#shortcut))
+
+**Default Value**
+
+Value
+
+This is the default value to display value for an editor widget, it can be set to current date. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
+
+**Display Format**
+
+Time Pattern
+
+Time pattern lets you override how time is displayed. Common options are 'hh-mm-ss'.
+
+Hour Step
+
+Number of hours to increase or decrease.
+
+Minute Step
+
+Number of minutes to increase or decrease.
+
+**Output**
+
+Output Format
+
+Defines the format of output data value returned by the time widget. Default output format is 'timestamp', which returns the equivalent timestamp integer. E.g timestamp value for '10:10:00 AM' is '16800000'. If the output format is given as 'hh:mm a', widget returns data value as '10:10 AM'.
+
+**Validation**
+
+Required
+
+A required editor in wm.LiveForm may refuse to save without a required field.
+
+**Behavior**
+
+Show TimePicker on
+
+Using this property you can control the visibility of the Time picker. You can choose to open it on:
+
+- input click and button click (default setting), or
+- only on button click.
+
+Auto Focus
+
+This property makes the element get focused automatically when the page loads.
+
+Read Only
+
+Selecting this checkbox property prevents the user from being able to change the data value of a widget.
+
+Show
+
+Showing determines whether or not a component is visible. It is a bindable property.
+
+Load on Demand (visible only when show property is bound to a variable)
+
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+
+Disabled
+
+If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only.
+
+**Shortcut key**: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
+
+Browser
+
+Shortcut key Trigger
+
+Internet Explorer
 
 \[Alt\] + shortcut key
 
-\[Alt\] + shortcut key (_/Linux_)
+Chrome
 
-\[Control\] \[Alt\] + shortcut key ()
+\[Alt\] + shortcut key (_Windows/Linux_)
 
-\[Alt\] \[Shift\] + shortcut key (_/Linux_)
+\[Control\] \[Alt\] + shortcut key (_MAC_)
 
-\[Control\] \[Alt\] + shortcut key ()
+Firefox
 
-### Events
+\[Alt\] \[Shift\] + shortcut key (_Windows/Linux_)
 
-event handler is called each time your element's value changes.
+\[Control\] \[Alt\] + shortcut key (_MAC_)
 
-focus
+# Events
 
-event handler is called each time your element is focused.
+### Date Events
 
-blur
+Event
 
-event handler is called each time your focus leaves your element.
+Description
 
-**Events**
+Change
 
-click
+This event handler is called each time your element's value changes.
 
-event handler is called whenever the click event is triggered on a widget.
+On focus
 
-mouse enter
+This event handler is called each time your element is focused.
 
-event handler is called whenever the mouse enters the widget.
+On blur
 
-mouse leave
+This event handler is called each time your focus leaves your element.
 
-event handler is called whenever the mouse leaves the widget.
+**Mouse Events**
 
-**Events**
+On click
 
-tap
+This event handler is called whenever the click event is triggered on a widget.
 
-event handler is called whenever the tap event is triggered on a widget.
+On mouse enter
 
-### Events
+This event handler is called whenever the mouse enters the widget.
 
-event handler is called each time your element's value changes.
+On mouse leave
 
-focus
+This event handler is called whenever the mouse leaves the widget.
 
-event handler is called each time your element is focused.
+**Touch Events**
 
-blur
+On tap
 
-event handler is called each time your focus leaves your element.
+This event handler is called whenever the tap event is triggered on a widget.
 
-**Events**
+### Datetime Events
 
-click
+Event
 
-event handler is called whenever the click event is triggered on a widget.
+Description
 
-mouse enter
+Change
 
-event handler is called whenever the mouse enters the widget.
+This event handler is called each time your element's value changes.
 
-mouse leave
+On focus
 
-event handler is called whenever the mouse leaves the widget.
+This event handler is called each time your element is focused.
 
-**Events**
+On blur
 
-tap
+This event handler is called each time your focus leaves your element.
 
-event handler is called whenever the tap event is triggered on a widget.
+**Mouse Events**
 
-### Events
+On click
 
-event handler is called each time your element's value changes.
+This event handler is called whenever the click event is triggered on a widget.
 
-focus
+On mouse enter
 
-event handler is called each time your element is focused.
+This event handler is called whenever the mouse enters the widget.
 
-blur
+On mouse leave
 
-event handler is called each time your focus leaves your element.
+This event handler is called whenever the mouse leaves the widget.
 
-**Events**
+**Touch Events**
 
-click
+On tap
 
-event handler is called whenever the click event is triggered on a widget.
+This event handler is called whenever the tap event is triggered on a widget.
 
-mouse enter
+### Time Events
 
-event handler is called whenever the mouse enters the widget.
+Event
 
-mouse leave
+Description
 
-event handler is called whenever the mouse leaves the widget.
+Change
 
-**Events**
+This event handler is called each time your element's value changes.
 
-tap
+On focus
 
-event handler is called whenever the tap event is triggered on a widget.
+This event handler is called each time your element is focused.
+
+On blur
+
+This event handler is called each time your focus leaves your element.
+
+**Mouse Events**
+
+On click
+
+This event handler is called whenever the click event is triggered on a widget.
+
+On mouse enter
+
+This event handler is called whenever the mouse enters the widget.
+
+On mouse leave
+
+This event handler is called whenever the mouse leaves the widget.
+
+**Touch Events**
+
+On tap
+
+This event handler is called whenever the tap event is triggered on a widget.
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 
@@ -374,13 +490,13 @@ event handler is called whenever the tap event is triggered on a widget.
 - [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
 - [3.8 Currency](/learn/app-development/widgets/form/currency/)
 - [3.9 Date](/learn/app-development/widgets/form/date/)
-    - [Features](#features)
-    - [Properties](#date-properties)
-    - [Events](#date-events)
+    - [i. Features](#features)
+    - [ii. Properties](#date-properties)
+    - [iii. Events](#date-events)
 - [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-    - [Features](#features)
-    - [Properties](#datetime-properties)
-    - [Events](#datetime-events)
+    - [i. Features](#features)
+    - [ii. Properties](#datetime-properties)
+    - [iii. Events](#datetime-events)
 - [3.11 FileUpload](/learn/app-development/widgets/form/file-upload/)
 - [3.12 Radioset](/learn/app-development/widgets/form/radioset/)
 - [3.13 Rating](/learn/app-development/widgets/form/rating/)
@@ -391,7 +507,7 @@ event handler is called whenever the tap event is triggered on a widget.
 - [3.18 Text](/learn/app-development/widgets/form/text/)
 - [3.19 Textarea](/learn/app-development/widgets/form/textarea/)
 - [3.20 Time](/learn/app-development/widgets/form/time/)
-    - [Features](#features)
-    - [Properties](#time-properties)
-    - [Events](#time-events)
+    - [i. Features](#features)
+    - [ii. Properties](#time-properties)
+    - [iii. Events](#time-events)
 - [3.21 Toggle](/learn/app-development/widgets/form/toggle/)

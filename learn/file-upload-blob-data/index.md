@@ -5,13 +5,13 @@ id: ""
 
 This section showcases the usage of Fileupload Widget and Java Service to save blob data into the database.
 
-- the database table has a field of blob type, the data table automatically uses a Fileupload widget to upload files into the database
-- files using download=true in the ng-href property of the anchor
-- type of files are best suited for blob type? eg. video are not best suited.
+- When the database table has a field of blob type, the data table automatically uses a Fileupload widget to upload files into the database
+- Download files using download=true in the ng-href property of the anchor
+- What type of files are best suited for blob type? eg. video are not best suited.
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vSEs3UuouQsOyTqmFrMtWluoSH3jfh3DM1mAPHInX8RlU9GbVEMGBCA_Tovu4XICM4gecSqmcGQRC2K/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Upload Use Cases](/learn/app-development/widgets/basic/fileupload-use-cases/)
+[File Upload Use Cases](/learn/app-development/widgets/basic/fileupload-use-cases/)
 
 - [1\. File Upload Basic Usage](/learn/app-development/widgets/form-widgets/file-upload-basic-usage/)
 - [2\. How to use various file service operations](/learn/how-tos/file-upload-widget-operations/)

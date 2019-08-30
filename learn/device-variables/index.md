@@ -3,408 +3,632 @@ title: "Device Variables"
 id: ""
 ---
 
-**Variables** are specific to Mobile App projects. These are useful in performing operations specific to a Mobile Device like taking a picture and getting its path, select a contact, add events to a calendar, etc.
+**Device Variables** are specific to Mobile App projects. These are useful in performing operations specific to a Mobile Device like taking a picture and getting its path, select a contact, add events to a calendar, etc.
 
 [![](../assets/var_sel_mobile.png)](../assets/var_sel_mobile.png)
 
 [![](../assets/var_new_mobile.png)](../assets/var_new_mobile.png)
 
-s the target service to be used. Each service is targeted to perform a set of operations for a feature. Available services are:
+# Services
 
-- – you can use this service to add, remove and list events in your phone calendar. The event details would include title, notes, location, start and end times.
-- – you can use this to capture an image or a video
-- – you can use this variable to list the contacts on your phone. You can apply a filter on the list retrieved.
-- \- you can use this service to sync data
-- – you can use this service to handle your mobile device features like vibrate, get connection type, model, OS, OS version etc.
-- – you can upload files to your mobile device
-- – can be used to access the barcode scanner.
+**Service** specifies the target service to be used. Each service is targeted to perform a set of operations for a feature. Available services are:
+
+- **Calendar** – you can use this service to add, remove and list events in your phone calendar. The event details would include title, notes, location, start and end times.
+- **Camera** – you can use this to capture an image or a video
+- **Contacts** – you can use this variable to list the contacts on your phone. You can apply a filter on the list retrieved.
+- **Datasync **\- you can use this service to sync data
+- **Device** – you can use this service to handle your mobile device features like vibrate, get connection type, model, OS, OS version etc.
+- **File** – you can upload files to your mobile device
+- **Scan** – can be used to access the barcode scanner.
+
+# Operations
 
 Based upon the service selected various operations are available.
 
-[Service Operations](#calendar)
+[Calendar Service Operations](#calendar)
 
-[Service Operations](#camera)
+[createEvent](#createEvent)
 
-[Service Operations](#device)
+[deleteEvent](#deleteEvent)
 
-[Service Operations](#device)
+[getEvents](#getEvents)
 
-[Service Operations](#device)
+[Camera Service Operations](#camera)
 
-[Service Operations](#file)
+[captureImage](#captureImage)
 
-[Service Operations](#scan)
+[captureVideo](#captureVideo)
 
-## Service Operations
+[Contacts Service Operations](#device)
 
-: Creates calendar event in device
+[getContacts](#getContacts)
 
-**Parameter** (from Data Tab)
+[Datasync Service Operations](#device)
 
-Title
+[exportDB](#exportDB)
 
-the event title
+[getOfflineChanges](#getOfflineChanges)
 
-‘Space Race’
+[importDB](#importDB)
 
-Notes
+[Pull](#pull)
 
-notes related to the event
+[Push](#push)
 
-‘Bring Sandwiches’
+[lastPullInfo](#lastPullInfo)
 
-Location
+[lastPushInfo](#lastPushInfo)
 
-the event location
+[Device Service Operations](#device)
 
-‘The Moon’
+[getAppInfo](#getAppInfo)
 
-Start
+[getCurrentGeoPosition](#getCurrentGeoPosition)
 
-the start date and time of the event
+[getDeviceInfo](#getDeviceInfo)
 
-2016-09-20 10:35:38 AM (select value from date time input)
+[getNetworkInfo](#getNetworkInfo)
 
-End
+[vibrate](#vibrate)
 
-the end date and time  of the event
+[goOnline](#goOnline)
 
-2016-09-25 08:35:38 PM (select value from date time input)
+[goOffline](#goOffline)
 
-: Deletes the calendar event in device satisfying the provided input, any combination of the below-mentioned parameters
+[File Service Operations](#file)
 
-**Parameter** (from Data Tab)
+[upload](#upload)
 
-Title
+[OpenFile](#openfile)
 
-the event title
+[Scan Service Operations](#scan)
 
-‘Space Race’
+[scanBarCode](#scanBarCode)
 
-Notes
+## Calendar Service Operations
 
-notes related to the event
+**createEvent**: Creates calendar event in device
 
-‘Bring Sandwiches’
+**Input Parameter** (from Data Tab)
 
-Location
+**Description**
 
-the event location
+**Sample**
 
-‘The Moon’
+Event Title
 
-Date
-
-the start date of the event
-
-2016-09-20 10:35:38 AM (select value from date time input)
-
-Date
-
-the end date of the event
-
-2016-09-25 08:35:38 PM (select value from date time input)
-
-: Retrieves the calendar events in device satisfying the provided input, any combination of the below-mentioned parameters. Returns array of objects, each object containing the same fields as input parameters.
-
-data on input change
-
-checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable.
-
-or unchecked
-
-data on page load
-
-checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load
-
-or unchecked
-
-**Parameter** (from Data Tab)
-
-Title
-
-the event title
+specifies the event title
 
 ‘Space Race’
 
-Notes
+Event Notes
 
-notes related to the event
+represents notes related to the event
 
 ‘Bring Sandwiches’
 
-Location
+Event Location
 
-the event location
+specifies the event location
 
 ‘The Moon’
 
-Date
+Event Start
 
-the start date of the event
+specifies the start date and time of the event
 
 2016-09-20 10:35:38 AM (select value from date time input)
 
-Date
+Event End
 
-the end date of the event
+specifies the end date and time  of the event
 
 2016-09-25 08:35:38 PM (select value from date time input)
 
-## Service Operations
+**deleteEvent**: Deletes the calendar event in device satisfying the provided input, any combination of the below-mentioned parameters
 
-: Capture image from the device camera
+**Filter Parameter** (from Data Tab)
 
-**Parameter** (from Data Tab)
+**Description**
 
-Edit
+**Sample**
 
-simple editing of image before selection
+Event Title
 
-(default), false
+specifies the event title
 
-the quality of saved image, expressed as a range of 0-100, where 100 is typically full resolution with no loss of file compression. The default value is 80.
+‘Space Race’
+
+Event Notes
+
+represents notes related to the event
+
+‘Bring Sandwiches’
+
+Event Location
+
+specifies the event location
+
+‘The Moon’
+
+Start Date
+
+specifies the start date of the event
+
+2016-09-20 10:35:38 AM (select value from date time input)
+
+End Date
+
+specifies the end date of the event
+
+2016-09-25 08:35:38 PM (select value from date time input)
+
+**getEvents**: Retrieves the calendar events in device satisfying the provided input, any combination of the below-mentioned parameters. Returns array of objects, each object containing the same fields as input parameters.
+
+**Behavior**
+
+**Description**
+
+**Sample**
+
+Update data on input change
+
+If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable.
+
+checked or unchecked
+
+Request data on page load
+
+If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load
+
+checked or unchecked
+
+**Filter Parameter** (from Data Tab)
+
+**Description**
+
+**Sample**
+
+Event Title
+
+specifies the event title
+
+‘Space Race’
+
+Event Notes
+
+represents notes related to the event
+
+‘Bring Sandwiches’
+
+Event Location
+
+specifies the event location
+
+‘The Moon’
+
+Start Date
+
+specifies the start date of the event
+
+2016-09-20 10:35:38 AM (select value from date time input)
+
+End Date
+
+specifies the end date of the event
+
+2016-09-25 08:35:38 PM (select value from date time input)
+
+## Camera Service Operations
+
+**captureImage**: Capture image from the device camera
+
+**Input Parameter** (from Data Tab)
+
+**Description**
+
+**Sample**
+
+Allow Edit
+
+allows simple editing of image before selection
+
+true (default), false
+
+Quality
+
+represents the quality of saved image, expressed as a range of 0-100, where 100 is typically full resolution with no loss of file compression. The default value is 80.
 
 80
 
-Type
+Encoding Type
 
-the returned image file’s encoding.
+set the returned image file’s encoding.
 
-(default) or PNG
+JPEG (default) or PNG
 
-Orientation
+Correct Orientation
 
-the image to correct for the orientation of the device during capture.
+Rotate the image to correct for the orientation of the device during capture.
 
-(default) or false
+true(default) or false
 
-Width\*
+Target Width\*
 
-in pixels to scale image.
-
-100 (only when required to get small images)
-
-Height\*
-
-in pixels to scale image.
+width in pixels to scale image.
 
 100 (only when required to get small images)
 
-\*: To get smaller images, you can return a resized image by passing both targetHeight and targetWidth values. If these values are not set, it returns the original image captured by the camera.
+Target Height\*
 
-: to capture video using the device camera
+height in pixels to scale image.
 
-## Service Operations
+100 (only when required to get small images)
 
-: Retrieves the device contacts list
+\***Note**: To get smaller images, you can return a resized image by passing both targetHeight and targetWidth values. If these values are not set, it returns the original image captured by the camera.
 
-**Parameter** (from Data Tab)
+**captureVideo**: to capture video using the device camera
 
-string field can be used as a search filter when querying the contacts database. If provided, a case-insensitive, partial value match is applied to each field specified in the contactsFields parameter. If there is a match for any of specified fields, the contact is returned.
+## Contacts Service Operations
 
-:
+**getContacts**: Retrieves the device contacts list
 
-data on input change
+**Input Parameter** (from Data Tab)
 
-checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable.
+**Description**
 
-data on page load
+Filter
 
-checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load.
+This string field can be used as a search filter when querying the contacts database. If provided, a case-insensitive, partial value match is applied to each field specified in the contactsFields parameter. If there is a match for any of specified fields, the contact is returned.
 
-: Returns array of objects, each object containing phoneNumber and displayName fields. : Sample Input: “Bob” (contact name) Result: Retrieves all the contacts containing string “Bob”
+**Behavior**:
 
-## Service Operations
+**Description**
 
-: Offline database is saved as zip in ‘Downloads’ folder in Android. In IOS, zip is stored in ‘Documents’ folder so that one can export from iPhone via iTunes. For the file to be visible in iTunes, File sharing needs to be enabled for the app in iOS preferences.
+Update data on input change
 
-Context
+If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable.
 
-the pull process is happening, a spinner will be shown in the container that is selected. By default, no context is selected and the spinner will not be shown
+Request data on page load
 
-of file
+If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load.
 
-: Retrieves the changes made when offline
+**Output**: Returns array of objects, each object containing phoneNumber and displayName fields. **Example**: Sample Input: “Bob” (contact name) Result: Retrieves all the contacts containing string “Bob”
 
-of changes while offline
+## DataSync Service Operations
 
-pending sync
+**exportDB**: Offline database is saved as zip in ‘Downloads’ folder in Android. In IOS, zip is stored in ‘Documents’ folder so that one can export from iPhone via iTunes. For the file to be visible in iTunes, File sharing needs to be enabled for the app in iOS preferences.
 
-for which sync failed
+**Behavior**
 
-: Upon invocation, a file browser opens up to choose the zip file to import.
+**Description**
 
-Context
+Spinner Context
 
-the pull process is happening, a spinner will be shown in the container that is selected. By default, no context is selected and the spinner will not be shown
+When the pull process is happening, a spinner will be shown in the container that is selected. By default, no context is selected and the spinner will not be shown
 
-: Pull changes from the server to the device
+**Output**
 
-offline data before pull
+**Description**
 
-checked, then the whole offline data (other than BUNDLED data) will be deleted before the pull. The default is true (checked).
+path
 
-Progress
+Location of file
 
-the pull process is happening, a progress bar will be shown. By default, the progress bar will not be shown.
+**getOfflineChanges**: Retrieves the changes made when offline
 
-of entities data to pull
+**Output**
 
-number of entities data has been pulled so far.
+**Description**
 
-when data pull process is going on, otherwise false
+total
 
-: Push changes to the server from the device
+number of changes while offline
 
-Progress
+pendingToSync
 
-the pull process is happening, a progress bar will be shown. By default, the progress bar will not be shown.
+changes pending sync
 
-of tasks/changes that were successfully pushed to the server.
+failedToSync
+
+changes for which sync failed
+
+**importDB**: Upon invocation, a file browser opens up to choose the zip file to import.
+
+**Behavior**
+
+**Description**
+
+Spinner Context
+
+When the pull process is happening, a spinner will be shown in the container that is selected. By default, no context is selected and the spinner will not be shown
+
+**Pull**: Pull changes from the server to the device
+
+**Behavior**
+
+**Description**
+
+Clear offline data before pull
+
+If checked, then the whole offline data (other than BUNDLED data) will be deleted before the pull. The default is true (checked).
+
+Show Progress
+
+When the pull process is happening, a progress bar will be shown. By default, the progress bar will not be shown.
+
+**Output**
+
+**Description**
+
+totalTaskCount
+
+number of entities data to pull
+
+completedTaskCount
+
+the number of entities data has been pulled so far.
+
+inProgress
+
+true when data pull process is going on, otherwise false
+
+**Push**: Push changes to the server from the device
+
+**Behavior**
+
+**Description**
+
+Show Progress
+
+When the pull process is happening, a progress bar will be shown. By default, the progress bar will not be shown.
+
+**Output**
+
+**Description**
+
+successfulTaskCount
+
+Number of tasks/changes that were successfully pushed to the server.
+
+failedTaskCount
 
  Number of changes that failed.
 
-of completed tasks (both successful and failed).
+completedTaskCount
 
-total number of local changes that need to be pushed to the server.
+Number of completed tasks (both successful and failed).
+
+totalTaskCount
+
+The total number of local changes that need to be pushed to the server.
+
+inProgress
 
  true only when data push process is going on, otherwise false.
 
-: to get the last pull details
+**lastPullInfo**: to get the last pull details
 
-Context
+**Behavior**
 
-the pull process is happening, a spinner will be shown in the container that is selected. By default, no context is selected and spinner will not be shown
+**Description**
 
-of entity names and number of records pulled per entity
+Spinner Context
 
-of database names, list of entities within the database, and the number of records pulled per database.
+When the pull process is happening, a spinner will be shown in the container that is selected. By default, no context is selected and spinner will not be shown
 
-total number of records in the last pull.
+**Output**
 
-time of pull operation.
+**Description**
 
-time of pull operation.
+entities
 
-: to get the last push details
+list of entity names and number of records pulled per entity
 
-Progress
+databases
 
-the pull process is happening, a progress bar will be shown. By default, progress bar will not be shown.
+list of database names, list of entities within the database, and the number of records pulled per database.
 
-of successful tasks (changes synced to server)
+totalPulledRecordCount
 
-of failed tasks
+The total number of records in the last pull.
 
-of completed tasks includes tasks which were successful and failed.
+startTime
 
-of total tasks includes tasks completed and pending
+Start time of pull operation.
 
-time of push operation.
+endTime
 
-time of push operation.
+End time of pull operation.
 
-## Service Operations
+**lastPushInfo**: to get the last push details
 
-: Returns the version number of the app
+**Behavior**
 
-: Returns the current location of the app
+**Description**
 
-**Parameter** (from Data Tab)
+Show Progress
 
-High Accuracy
+When the pull process is happening, a progress bar will be shown. By default, progress bar will not be shown.
 
-a hint that the application needs the best possible results. By default, the device attempts to retrieve a ‘Position’ using network-based methods. Setting this property to true tells the framework to use more accurate methods, such as satellite positioning.
+**Output**
 
-(default), false
+**Description**
 
-Age
+successfulTaskCount
 
-to accept a cached position whose age is no greater than the specified time in milliseconds.
+Number of successful tasks (changes synced to server)
 
-number, the default is 3
+failedTaskCount
 
-the maximum length of time (milliseconds) that is allowed to pass from the call to navigator.geolocation.getCurrentPosition until the corresponding geolocationSuccess callback executes. If geolocationSuccess callback is not invoked within this time, geolocationError callback passes a PositionError.TIMEOUT error code.
+Number of failed tasks
 
-number, the default is 5
+completedTaskCount
 
-: Returns the followingdevice information
+Number of completed tasks includes tasks which were successful and failed.
 
-of the device’s model or product. The value is set by the device manufacturer and may be different across versions of the same product.
+totalTaskCount
 
-device’s operating system name.
+Number of total tasks includes tasks completed and pending
 
-operation system version.
+startTime
 
-device’s Universally Unique Identifier (UUID)
+Start time of push operation.
 
-: Provides information whether device has internet connection
+endTime
 
-the device’s connection type, eg: WIFI, ethernet
+End time of push operation.
 
-if phone network is offline
+## Device Service Operations
 
-if phone network  is online
+**getAppInfo**: Returns the version number of the app
 
-if the app is trying to connect to backend service
+**getCurrentGeoPosition**: Returns the current location of the app
 
-if network connection is available
+**Input Parameter** (from Data Tab)
 
-: Vibrates the device programmatically
+**Description**
 
-**(from data tab)**
+**Sample**
 
-_Time_
+Enable High Accuracy
 
-to vibrate the device. Default value is 2.
+provides a hint that the application needs the best possible results. By default, the device attempts to retrieve a ‘Position’ using network-based methods. Setting this property to true tells the framework to use more accurate methods, such as satellite positioning.
 
-: Used to turn the mobile app to offline mode by blocking all network calls.
+true (default), false
 
-: Used to turn the mobile app to online mode by blocking trying to connect to the backend server.
+Maximum Age
 
-## Service Operations
+specifies to accept a cached position whose age is no greater than the specified time in milliseconds.
 
-: Opens files like pdf, document, excel and powerpoint. Note: A file can be opened if corresponding application is available on the mobile device. For example, a pdf file requires acrobat reader or another file that can open the pdf. When a remote file has to be opened for the first time, the file is downloaded. On subsequent calls to open the same file, the earlier downloaded file is just opened.
+any number, the default is 3
 
-**Parameter** (from Data Tab)
+Timeout
 
-string value that denotes the type of file to open.
+represents the maximum length of time (milliseconds) that is allowed to pass from the call to navigator.geolocation.getCurrentPosition until the corresponding geolocationSuccess callback executes. If geolocationSuccess callback is not invoked within this time, geolocationError callback passes a PositionError.TIMEOUT error code.
 
-default value is pdf. Values can be pdf, doc, xls, ppt.
+any number, the default is 5
 
-string value that denotes the URL of the file.
+**getDeviceInfo**: Returns the followingdevice information
 
-://www.pdf995.com/samples/pdf.pdf)
+**Output**
 
-: Retrieves the device contacts list
+**Description**
 
-**Parameter** (from Data Tab)
+_deviceModel_
 
-the file path on the device. remoteFolder represents the folder path on the server to save the uploaded image. If empty, then images gets saved to `/wavemaker/appdata//uploads`
+name of the device’s model or product. The value is set by the device manufacturer and may be different across versions of the same product.
 
-## Service Operations
+_OS_
 
-: to access the barcode scanner.
+the device’s operating system name.
 
-1. **Error**: The event is fired on the error of the device variable.
-2. **Success**: The event is fired on the success of the device variable.
-3. **Before:** This event is fired before starting the pull/push for the dataSync variable.
-4. **Progress:** This event is fired during the pull/push for the dataSync variable.
+_OSversion_
 
-## (options)
+the operation system version.
+
+_deviceUUID_
+
+the device’s Universally Unique Identifier (UUID)
+
+**getNetworkInfo**: Provides information whether device has internet connection
+
+**Output**
+
+**Description**
+
+_connectionType_
+
+determines the device’s connection type, eg: WIFI, ethernet
+
+_isOffline_
+
+checks if phone network is offline
+
+_isOnline_
+
+checks if phone network  is online
+
+_isConnecting_
+
+checks if the app is trying to connect to backend service
+
+_isNetworkAvailable_
+
+checks if network connection is available
+
+**vibrate**: Vibrates the device programmatically
+
+**_Input_ (from data tab)**
+
+**Description**
+
+_Vibration Time_
+
+seconds to vibrate the device. Default value is 2.
+
+**goOffline**: Used to turn the mobile app to offline mode by blocking all network calls.
+
+**goOnline**: Used to turn the mobile app to online mode by blocking trying to connect to the backend server.
+
+## File Service Operations
+
+**OpenFile**: Opens files like pdf, document, excel and powerpoint. Note: A file can be opened if corresponding application is available on the mobile device. For example, a pdf file requires acrobat reader or another file that can open the pdf. When a remote file has to be opened for the first time, the file is downloaded. On subsequent calls to open the same file, the earlier downloaded file is just opened.
+
+**Input Parameter** (from Data Tab)
+
+**Description**
+
+**Sample**
+
+_FileType_
+
+A string value that denotes the type of file to open.
+
+The default value is pdf. Values can be pdf, doc, xls, ppt.
+
+_FilePath_
+
+A string value that denotes the URL of the file.
+
+http://www.pdf995.com/samples/pdf.pdf)
+
+**upload**: Retrieves the device contacts list
+
+**Input Parameter** (from Data Tab)
+
+**Description**
+
+_localFile_
+
+specifies the file path on the device. remoteFolder represents the folder path on the server to save the uploaded image. If empty, then images gets saved to `/wavemaker/appdata//uploads`
+
+## Scan Service Operations
+
+**scanBarCode**: to access the barcode scanner.
+
+# Events
+
+1. **On Error**: The event is fired on the error of the device variable.
+2. **On Success**: The event is fired on the success of the device variable.
+3. **On Before:** This event is fired before starting the pull/push for the dataSync variable.
+4. **On Progress:** This event is fired during the pull/push for the dataSync variable.
+
+# Methods
+
+## invoke(options)
 
 This method invokes the device variable
 
-:
+_Parameters_:
 
-- (object)
-- (callback)
-- (callback)
+- **options**(object)
+- success (callback)
+- error (callback)
 
-_Value_: None
+_Return Value_: None
 
-_:_
+_Example:_
 
 // Example 1: Notify with default set properties
 Page.Variables.myDeviceVariable.invoke();
@@ -423,92 +647,92 @@ Page.Variables.myDeviceVariable.invoke(
 6\. Data Integration - Variables
 
 - 6.1 Binding Layer
-    - [Overview](/learn/app-development/variables/data-integration/)
+    - [i. Overview](/learn/app-development/variables/data-integration/)
 - [6.2 Variables and Actions](/learn/app-development/variables/variables-actions/)
-    - [Overview](/learn/app-development/variables/variables-actions/#)
-    - [Variables](/learn/app-development/variables/variables-actions/#variables)
+    - [i. Overview](/learn/app-development/variables/variables-actions/#)
+    - [ii. Variables](/learn/app-development/variables/variables-actions/#variables)
         - a. Database CRUD
-            - [Overview](/learn/app-development/variables/database-crud/)
-            - [Variable Creation](/learn/app-development/variables/database-crud/#creation)
-            - [Properties](/learn/app-development/variables/database-crud/#properties)
-            - [Events](/learn/app-development/variables/database-crud/#events)
-            - [Methods](/learn/app-development/variables/database-crud/#methods)
+            - [○ Overview](/learn/app-development/variables/database-crud/)
+            - [○ Variable Creation](/learn/app-development/variables/database-crud/#creation)
+            - [○ Properties](/learn/app-development/variables/database-crud/#properties)
+            - [○ Events](/learn/app-development/variables/database-crud/#events)
+            - [○ Methods](/learn/app-development/variables/database-crud/#methods)
         - b. Database API
-            - [Overview](/learn/app-development/variables/database-apis/)
-            - [Variable Creation](/learn/app-development/variables/database-apis/#creation)
-            - [Properties](/learn/app-development/variables/database-apis/#properties)
-            - [Events](/learn/app-development/variables/database-apis/#events)
-            - [Methods](/learn/app-development/variables/database-apis/#methods)
+            - [○ Overview](/learn/app-development/variables/database-apis/)
+            - [○ Variable Creation](/learn/app-development/variables/database-apis/#creation)
+            - [○ Properties](/learn/app-development/variables/database-apis/#properties)
+            - [○ Events](/learn/app-development/variables/database-apis/#events)
+            - [○ Methods](/learn/app-development/variables/database-apis/#methods)
         - c. Web Service
-            - [Overview](/learn/app-development/variables/web-service/)
-            - [Variable Creation](/learn/app-development/variables/web-service/#creation)
-            - [Properties](/learn/app-development/variables/web-service/#properties)
-            - [Events](/learn/app-development/variables/web-service/#events)
-            - [Methods](/learn/app-development/variables/web-service/#methods)
+            - [○ Overview](/learn/app-development/variables/web-service/)
+            - [○ Variable Creation](/learn/app-development/variables/web-service/#creation)
+            - [○ Properties](/learn/app-development/variables/web-service/#properties)
+            - [○ Events](/learn/app-development/variables/web-service/#events)
+            - [○ Methods](/learn/app-development/variables/web-service/#methods)
         - d. Java Service
-            - [Overview](/learn/app-development/variables/java-services)
-            - [Variable Creation](/learn/app-development/variables/java-services/#creation)
-            - [Properties](/learn/app-development/variables/java-services/#properties)
-            - [Events](/learn/app-development/variables/java-services/#events)
-            - [Methods](/learn/app-development/variables/java-services/#methods)
+            - [○ Overview](/learn/app-development/variables/java-services)
+            - [○ Variable Creation](/learn/app-development/variables/java-services/#creation)
+            - [○ Properties](/learn/app-development/variables/java-services/#properties)
+            - [○ Events](/learn/app-development/variables/java-services/#events)
+            - [○ Methods](/learn/app-development/variables/java-services/#methods)
         - e. Security Service
-            - [Overview](/learn/app-development/variables/security-service/)
-            - [Variable Creation](/learn/app-development/variables/security-service/#creation)
-            - [Properties](/learn/app-development/variables/security-service/#properties)
-            - [Events](/learn/app-development/variables/security-service/#events)
-            - [Methods](/learn/app-development/variables/security-service/#methods)
+            - [○ Overview](/learn/app-development/variables/security-service/)
+            - [○ Variable Creation](/learn/app-development/variables/security-service/#creation)
+            - [○ Properties](/learn/app-development/variables/security-service/#properties)
+            - [○ Events](/learn/app-development/variables/security-service/#events)
+            - [○ Methods](/learn/app-development/variables/security-service/#methods)
         - f. Model
-            - [Overview](/learn/app-development/variables/model-variable/)
-            - [Variable Creation](/learn/app-development/variables/model-variable/#creation)
-            - [Properties](/learn/app-development/variables/model-variable/#properties)
-            - [Events](/learn/app-development/variables/model-variable/#events)
-            - [Methods](/learn/app-development/variables/model-variable/#methods)
-        - [Device Variables](#)
-            - [Overview](#)
-            - [Services](#services)
-            - [Operations](#operations)
-            - [Events](#events)
-            - [Methods](#methods)
-            - [Usage](#usage)
-    - [Actions](/learn/app-development/variables/variables-actions/#actions)
+            - [○ Overview](/learn/app-development/variables/model-variable/)
+            - [○ Variable Creation](/learn/app-development/variables/model-variable/#creation)
+            - [○ Properties](/learn/app-development/variables/model-variable/#properties)
+            - [○ Events](/learn/app-development/variables/model-variable/#events)
+            - [○ Methods](/learn/app-development/variables/model-variable/#methods)
+        - [g. Device Variables](#)
+            - [○ Overview](#)
+            - [○ Services](#services)
+            - [○ Operations](#operations)
+            - [○ Events](#events)
+            - [○ Methods](#methods)
+            - [○ Usage](#usage)
+    - [iii. Actions](/learn/app-development/variables/variables-actions/#actions)
         - i. Navigation
-            - [Overview](/learn/app-development/variables/navigation-action/)
-            - [Action Creation](/learn/app-development/variables/navigation-action/#creation)
-            - [Properties](/learn/app-development/variables/navigation-action/#properties)
-            - [Methods](/learn/app-development/variables/navigation-action/#methods)
+            - [○ Overview](/learn/app-development/variables/navigation-action/)
+            - [○ Action Creation](/learn/app-development/variables/navigation-action/#creation)
+            - [○ Properties](/learn/app-development/variables/navigation-action/#properties)
+            - [○ Methods](/learn/app-development/variables/navigation-action/#methods)
         - ii. Login
-            - [Overview](/learn/app-development/variables/login-action/)
-            - [Action Creation](/learn/app-development/variables/login-action/#creation)
-            - [Properties](/learn/app-development/variables/login-action/#properties)
-            - [Data](/learn/app-development/variables/login-action/#data)
-            - [Events](/learn/app-development/variables/login-action/#events)
+            - [○ Overview](/learn/app-development/variables/login-action/)
+            - [○ Action Creation](/learn/app-development/variables/login-action/#creation)
+            - [○ Properties](/learn/app-development/variables/login-action/#properties)
+            - [○ Data](/learn/app-development/variables/login-action/#data)
+            - [○ Events](/learn/app-development/variables/login-action/#events)
         - iii. Logout
-            - [Overview](/learn/app-development/variables/logout-action/)
-            - [Action Creation](/learn/app-development/variables/logout-action/#creation)
-            - [Properties](/learn/app-development/variables/logout-action/#properties)
-            - [Events](/learn/app-development/variables/logout-action/#events)
+            - [○ Overview](/learn/app-development/variables/logout-action/)
+            - [○ Action Creation](/learn/app-development/variables/logout-action/#creation)
+            - [○ Properties](/learn/app-development/variables/logout-action/#properties)
+            - [○ Events](/learn/app-development/variables/logout-action/#events)
         - iv. Timer
-            - [Overview](/learn/app-development/variables/timer-action/)
-            - [Action Creation](/learn/app-development/variables/timer-action/#creation)
-            - [Properties](/learn/app-development/variables/timer-action/#properties)
-            - [Events](/learn/app-development/variables/timer-action/#events)
-            - [Methods](/learn/app-development/variables/timer-action/#methods)
+            - [○ Overview](/learn/app-development/variables/timer-action/)
+            - [○ Action Creation](/learn/app-development/variables/timer-action/#creation)
+            - [○ Properties](/learn/app-development/variables/timer-action/#properties)
+            - [○ Events](/learn/app-development/variables/timer-action/#events)
+            - [○ Methods](/learn/app-development/variables/timer-action/#methods)
         - v. Notification
-            - [Overview](/learn/app-development/variables/notification-action/)
-            - [Action Creation](/learn/app-development/variables/notification-action/#creation)
-            - [Properties](/learn/app-development/variables/notification-action/#properties)
-            - [Events](/learn/app-development/variables/notification-action/#events)
-            - [Methods](/learn/app-development/variables/notification-action/#methods)
-    - [Scoping](/learn/app-development/variables/variables-actions/#scoping)
-    - [Variable Events](/learn/app-development/variables/variables-actions/#events)
-    - [Error Handling](/learn/app-development/variables/variables-actions/#error-handling)
+            - [○ Overview](/learn/app-development/variables/notification-action/)
+            - [○ Action Creation](/learn/app-development/variables/notification-action/#creation)
+            - [○ Properties](/learn/app-development/variables/notification-action/#properties)
+            - [○ Events](/learn/app-development/variables/notification-action/#events)
+            - [○ Methods](/learn/app-development/variables/notification-action/#methods)
+    - [iv. Scoping](/learn/app-development/variables/variables-actions/#scoping)
+    - [v. Variable Events](/learn/app-development/variables/variables-actions/#events)
+    - [vi. Error Handling](/learn/app-development/variables/variables-actions/#error-handling)
 - 6.3 Variable Binding
-    - [Overview](/learn/variables/variable-binding/#)
-    - [Data Binding](/learn/variables/variable-binding/#data-binding)
-    - [Widget Binding](/learn/variables/variable-binding/#widget-binding)
-    - [Binding Options](/learn/variables/variable-binding/#binding-options)
+    - [i. Overview](/learn/variables/variable-binding/#)
+    - [ii. Data Binding](/learn/variables/variable-binding/#data-binding)
+    - [iii. Widget Binding](/learn/variables/variable-binding/#widget-binding)
+    - [iv. Binding Options](/learn/variables/variable-binding/#binding-options)
 - 6.4 JavaScript Access
-    - [Overview](/learn/variables/accessing-elements-via-javascript/#)
-    - [Widget Controllers](/learn/variables/accessing-elements-via-javascript/#widget-controllers)
-    - [Page Scripting](/learn/variables/accessing-elements-via-javascript/#page-scripting)
-    - [Script Access](/learn/variables/accessing-elements-via-javascript/#script-access)
+    - [i. Overview](/learn/variables/accessing-elements-via-javascript/#)
+    - [ii. Widget Controllers](/learn/variables/accessing-elements-via-javascript/#widget-controllers)
+    - [iii. Page Scripting](/learn/variables/accessing-elements-via-javascript/#page-scripting)
+    - [iv. Script Access](/learn/variables/accessing-elements-via-javascript/#script-access)

@@ -5,9 +5,9 @@ id: ""
 
 We will build a tree using a simple static structure
 
-1. and drop a tree widget in your canvas. Tree widget comes with multiple nodes [![tree_dnd](../assets/tree_dnd-1024x576.png)](../assets/tree_dnd.png)
-2. [a static variable](/learn/variables/#menu) giving the structure of the data to be displayed in the tree. Ensure that the check box is selected.
-3. the _Editor_ enter the following code:
+1. Drag and drop a tree widget in your canvas. Tree widget comes with multiple nodes [![tree_dnd](../assets/tree_dnd-1024x576.png)](../assets/tree_dnd.png)
+2. [Create a static variable](/learn/variables/#menu) giving the structure of the data to be displayed in the tree. Ensure that the _IsList_ check box is selected.
+3. In the _Text Editor_ enter the following code:
     
     \[
       {
@@ -42,30 +42,30 @@ We will build a tree using a simple static structure
       }
     \]
     
-    In this code we are specifying the node structure - the on each node, to be displayed at each node and any _\-level nodes_ Icons can be [from glyphicons](http://getbootstrap.com/components/) or [awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons. : If you follow this structure, the label, icon, link and children tags are picked automatically. If you are using different tag names, then you need to specify them while binding. [![tree_statvar](../assets/tree_statvar.png)](../assets/tree_statvar.png)
-4. , bind the dataset value property of the tree widget to the dataset under the static variable created in the previous step. [![tree_bind](../assets/tree_bind.png)](../assets/tree_bind.png) You can see the preview on the canvas. [![tree_design](../assets/tree_design-1024x576.png)](../assets/tree_design.png)
-5. the application and see the menu in action. [![tree_run1](../assets/tree_run1.png)](../assets/tree_run1.png)[![tree_run2](../assets/tree_run2.png)](../assets/tree_run2.png)
+    In this code we are specifying the node structure - the _label_ on each node, _icon_ to be displayed at each node and any _child-level nodes_. Icons can be [halflings from glyphicons](http://getbootstrap.com/components/) or [font awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons. **Note**: If you follow this structure, the label, icon, link and children tags are picked automatically. If you are using different tag names, then you need to specify them while binding. [![tree_statvar](../assets/tree_statvar.png)](../assets/tree_statvar.png)
+4. Next, bind the dataset value property of the tree widget to the dataset under the static variable created in the previous step. [![tree_bind](../assets/tree_bind.png)](../assets/tree_bind.png) You can see the preview on the canvas. [![tree_design](../assets/tree_design-1024x576.png)](../assets/tree_design.png)
+5. Run the application and see the menu in action. [![tree_run1](../assets/tree_run1.png)](../assets/tree_run1.png)[![tree_run2](../assets/tree_run2.png)](../assets/tree_run2.png)
 
 Tree can be bound to a Java Service which returns an arraylist of Label, icon and has its own pojo as children. We will address one such scenario here.
 
-## 1: Create Source - Java Service
+## Step 1: Create Source - Java Service
 
-1. a **Service** by name [![tree_JS](../assets/tree_JS.png)](../assets/tree_JS.png)
-2. following code needs to be added to the Java service:
-    1. the ArrayList utility:
+1. Create a **Java Service** by name _TreeData_ [![tree_JS](../assets/tree_JS.png)](../assets/tree_JS.png)
+2. The following code needs to be added to the Java service:
+    1. import the ArrayList utility:
         
-         java.util.ArrayList;
+        import java.util.ArrayList;
         import java.util.List;
         
-    2. the following array structure:
+    2. add the following array structure:
         
             public String label;
             public String icon;
             public List<TreeData> subItems;
         
-    3. the following methods:
+    3. add the following methods:
         
-         TreeData() {
+        public TreeData() {
         
             }
         
@@ -98,9 +98,9 @@ Tree can be bound to a Java Service which returns an arraylist of Label, icon an
                 this.icon = icon;
             }
         
-    4. the following main method:
+    4. and the following main method:
         
-         List<TreeData> sampleJavaOperation(String name) {
+        public List<TreeData> sampleJavaOperation(String name) {
                 String result = null;
                 try {
                     TreeData TreeData1 = new TreeData("C:", "test1");
@@ -144,24 +144,24 @@ Tree can be bound to a Java Service which returns an arraylist of Label, icon an
         }
         
 
-## 2: Binding
+## Step 2: Binding
 
-1. [a Service Variable](/learn/variables/#menu) using the Java Service created in the earlier step [![tree_JSvar](../assets/tree_JSvar.png)](../assets/tree_JSvar.png)
-2. and drop a tree widget onto the canvas and bind the dataset value to the Service Variable created in the above step [![tree_JSbind](../assets/tree_JSbind.png)](../assets/tree_JSbind.png)
-3. the properties of Node Label, Icon and Children respectively [![tree_JSprops](../assets/tree_JSprops.png)](../assets/tree_JSprops.png)
+1. [Create a Service Variable](/learn/variables/#menu) using the Java Service created in the earlier step [![tree_JSvar](../assets/tree_JSvar.png)](../assets/tree_JSvar.png)
+2. Drag and drop a tree widget onto the canvas and bind the dataset value to the Service Variable created in the above step [![tree_JSbind](../assets/tree_JSbind.png)](../assets/tree_JSbind.png)
+3. Set the properties of Node Label, Icon and Children respectively [![tree_JSprops](../assets/tree_JSprops.png)](../assets/tree_JSprops.png)
 
-## 3: Test Run
+## Step 3: Test Run
 
-1. the app and see the tree in action [![tree_JSrun](../assets/tree_JSrun.png)](../assets/tree_JSrun.png)
+1. Run the app and see the tree in action [![tree_JSrun](../assets/tree_JSrun.png)](../assets/tree_JSrun.png)
 
 [![tree_JSrun2](../assets/tree_JSrun2.png)](../assets/tree_JSrun2.png)
 
 If you have a requirement, whereby the user decides the structure of the tree. For example, you are building a folder-file structure and the user decides how many folders and files are to be present in a tree. This section deals with such a situation.
 
-## 1: Create Source - Script Variable
+## Step 1: Create Source - Script Variable
 
-1. a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas [![tree_dynamic_design](../assets/tree_dynamic_design.png)](../assets/tree_dynamic_design.png)
-2. the Tree widget and specify a _Variable_ as property, "" Use the following for treeData in the Script:
+1. Drop a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas [![tree_dynamic_design](../assets/tree_dynamic_design.png)](../assets/tree_dynamic_design.png)
+2. Select the Tree widget and specify a _Script Variable_ as **dataset** property, "_treeData_" Use the following for treeData in the Script:
     
     // should be an array of objects consisting of label, icon, children keys
         // populate the initial data
@@ -175,16 +175,16 @@ If you have a requirement, whereby the user decides the structure of the tree. F
             "children": \[\]
         }\];
     
-3. JavaScript for the onSelect event of the tree widget as:
+3. Select JavaScript for the onSelect event of the tree widget as:
     
     $scope.activeTreeElement = $item;
     
 
-## 2: Event Mapping
+## Step 2: Event Mapping
 
-1. JavaScript for the click event of the buttons, Add File and Add Folder
-2. for the click events would be:
-    - Add File:
+1. Select JavaScript for the click event of the buttons, Add File and Add Folder
+2. Code for the click events would be:
+    - For Add File:
         
         $scope.addFile = function($event, $isolateScope) {
                 // add file
@@ -198,7 +198,7 @@ If you have a requirement, whereby the user decides the structure of the tree. F
                 }
             };
         
-    - Add Folder:
+    - For Add Folder:
         
         $scope.addFolder = function($event, $isolateScope) {
                 // add folder
@@ -214,8 +214,8 @@ If you have a requirement, whereby the user decides the structure of the tree. F
             };
         
 
-## 3: Test Run
+## Step 3: Test Run
 
-1. the application and see the tree in action.
+1. Run the application and see the tree in action.
 
 [![tree_dynamic_run](../assets/tree_dynamic_run.png)](../assets/tree_dynamic_run.png)

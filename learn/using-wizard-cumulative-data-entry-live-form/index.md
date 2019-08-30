@@ -7,7 +7,7 @@ We will see how Live form fields can be distributed over multiple wizard steps, 
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vTJMXqAMlLtMtVPOr-XgJDCslgAZ2iC-FAgE9gTayzhdpmP3DSTGuk2Ruie5IrJYkIeJjWJR5bqoiOk/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
+[Live Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
 
 - [1\. Live Form Basic Usage](/learn/app-development/widgets/datalive/live-form/live-form-basic-usage/)
 - [2\. How to split live form](/learn/how-tos/live-form-tabbed-form/)

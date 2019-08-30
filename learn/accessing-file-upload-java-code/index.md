@@ -5,7 +5,7 @@ id: ""
 
 File upload service can be accessed via Java code. For example, if you have a fileupload widget in your app, the file can be accessed using the following code:
 
- String sampleJavaOperation(MultipartFile singleFile){
+public String sampleJavaOperation(MultipartFile singleFile){
 
 //for single file upload
 singleFile.getInputStream()
@@ -14,7 +14,7 @@ singleFile.getInputStream()
 
 In case you are using FileUpload to handle multiple files, then the code would be:
 
- String sampleJavaOperation(MultipartFile\[\] multipleFiles){
+public String sampleJavaOperation(MultipartFile\[\] multipleFiles){
 
 //for multiple files upload
 for (MultipartFile file : multipleFiles) {
@@ -24,12 +24,12 @@ for (MultipartFile file : multipleFiles) {
 
 Note: You need to import a few class files, as given below:
 
- org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartFile;
 import com.wavemaker.runtime.file.model.DownloadResponse;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 
-[Upload Use Cases](/learn/app-development/widgets/basic/fileupload-use-cases/)
+[File Upload Use Cases](/learn/app-development/widgets/basic/fileupload-use-cases/)
 
 - [1\. File Upload Basic Usage](/learn/app-development/widgets/form-widgets/file-upload-basic-usage/)
 - [2\. How to use various file service operations](/learn/how-tos/file-upload-widget-operations/)

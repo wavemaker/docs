@@ -3,76 +3,100 @@ title: "Variable for Security Service"
 id: ""
 ---
 
-Services can be accessed from within your app using Variables. By default, a Model Variable is created for all applications. In case you need access to more details, you can create a Variable using the appropriate API.
+Security Services can be accessed from within your app using Variables. By default, a **loggedInUser** Model Variable is created for all applications. In case you need access to more details, you can create a Variable using the appropriate API.
 
- comprehensive list of these APIs can be found from the [Designer](http://[supsystic-show-popup id=110]) after the import of the service. These include APIs to:
+A comprehensive list of these APIs can be found from the [API Designer](http://[supsystic-show-popup id=110]) after the import of the service. These include APIs to:
 
-- Access Token, Logged In User details, logged in Time, logged in User Id, Role etc.,
-- security and authentication etc..
+- get Access Token, Logged In User details, logged in Time, logged in User Id, Role etc.,
+- check security and authentication etc..
 
-# Creation
+# Variable Creation
 
-The **data source** for these Variables comes from a _ Service APIs_
+The **data source** for these Variables comes from a _Security Service APIs_.
 
-1. the Variable option from Variable Workspace Toolbar. [![](../assets/var_sel.png)](../assets/var_sel.png)
-2. New Variable from the Variable Dialog [![](../assets/var_new.png?v=20)](../assets/var_new.png?v=20)
-3. will initiate Create Variable wizard with the following steps:
-    1. we are creating a variable to access Security Service, select  the target action
-    2. :
-        - \- security service (already set),
-        -  - the security operation that you want to invoke,
-        - \- is set by default but can be modified
-        - \- the scope of the Variable being created. By default it is set to Page, you can change it to Application if you want this variable to be available across the app
-    3. to complete the variable creation process
-4. will be directed to the Variables page, with the new variable listed. As you can see:
-    1. **Service** Variable is created,
-    2. the selected operation as target
-    3. **tab** contains all the properties like and behavior. [more about properties](#properties)
-    4. tab will contain the events that can be configured to trigger any action. [more about events](#events)
+1. Select the Variable option from Variable Workspace Toolbar. [![](../assets/var_sel.png)](../assets/var_sel.png)
+2. Click New Variable from the Variable Dialog [![](../assets/var_new.png?v=20)](../assets/var_new.png?v=20)
+3. This will initiate Create Variable wizard with the following steps:
+    1. Since we are creating a variable to access Security Service, select **Security ****Service **as the target action
+    2. Select:
+        - **Service** - security service (already set),
+        - **Method** - the security operation that you want to invoke,
+        - **Name** - is set by default but can be modified
+        - **Owner** - the scope of the Variable being created. By default it is set to Page, you can change it to Application if you want this variable to be available across the app
+    3. Click **Done** to complete the variable creation process
+4. You will be directed to the Variables page, with the new variable listed. As you can see:
+    1. a **Security Service** Variable is created,
+    2. with the selected operation as target
+    3. the **properties tab** contains all the properties like _behavior_ and _spinner_ behavior. [Know more about properties](#properties).
+    4. the **events** tab will contain the events that can be configured to trigger any action. [Know more about events](#events).
 
-data on page load
+# Properties
 
-checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load.
+**Property**
 
-Flight Behavior
+**Description**
 
-property determines the behavior when a call is fired through the variable with the previous call still pending. Variable queues all these calls, waits for the previous call completion and then based on the value of the property, decides what to do with all the queued calls:
+**Behavior**
 
-- \- all the queued calls will be discarded,
-- \- all the calls will be triggered one by one, or
-- \- only the last call is triggered and the rest are discarded, this is the default behavior
+Request data on page load
 
-Context
+If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load.
 
-property specifies on which UI widget the spinner should show. Leave empty if no spinner required.
+In Flight Behavior
 
-Message
+This property determines the behavior when a call is fired through the variable with the previous call still pending. Variable queues all these calls, waits for the previous call completion and then based on the value of the _inFlightBehavior_ property, decides what to do with all the queued calls:
 
-message to be displayed below the spinner. Leave empty if no message is required below the spinner. Note: If multiple variables are fired then the spinner messages will be displayed as a list below a single spinner.
+- doNotExecute - all the queued calls will be discarded,
+- executeAll - all the calls will be triggered one by one, or
+- executeLast - only the last call is triggered and the rest are discarded, this is the default behavior
 
-the life cycle of a Variable, a set of events are emitted by the Variable, thus giving you the option to control the behavior of the Variable such as input data validations, data processing, success/error handling, etc. [More](/learn/app-development/variables/variables-actions/#events-implementation)
+**Spinner**
+
+Spinner Context
+
+This property specifies on which UI widget the spinner should show. Leave empty if no spinner required.
+
+Spinner Message
+
+The message to be displayed below the spinner. Leave empty if no message is required below the spinner. Note: If multiple variables are fired then the spinner messages will be displayed as a list below a single spinner.
+
+# Events
+
+During the life cycle of a Variable, a set of events are emitted by the Variable, thus giving you the option to control the behavior of the Variable such as input data validations, data processing, success/error handling, etc. [Know More](/learn/app-development/variables/variables-actions/#events-implementation).
+
+# Methods
 
 Few Methods are exposed for Variables which can be used for achieving more control and accessing extra functionality. Listed here are the same.
 
-## ()
+[invoke](#invoke)
 
-method updates the Variable’s dataSet with new data by making a call to the target service.
+[cancel](#cancel)
 
-:
+[getData](#getData)
 
-- (object) - It can have fields as:
-    - (key-value pair of inputData)
-    - (pagination for Query Service Variable)
-    - (pagination for Query Service Variable)
-    - (pagination for Query Service Variable)
-- (callback)
-- (callback)
+[clearData](#clearData)
 
-_Value_: none
+[setInput](#setInput)
 
-_:_
+## invoke()
 
- sv = Page.Variables.\[variable\_name\];
+This method updates the Variable’s dataSet with new data by making a call to the target service.
+
+_Parameters_:
+
+- **options**(object) - It can have fields as:
+    - inputFields(key-value pair of inputData)
+    - page(pagination for Query Service Variable)
+    - size(pagination for Query Service Variable)
+    - orderBy(pagination for Query Service Variable)
+- **success**(callback)
+- **error**(callback)
+
+_Return Value_: none
+
+_Example:_
+
+var sv = Page.Variables.\[variable\_name\];
     sv.invoke({
        "inputFields": {
        "fname": "Steve",
@@ -86,75 +110,75 @@ _:_
         console.log("error", error)
     });
 
-## ()
+## cancel()
 
-method aborts the current inflight variable request.
+This method aborts the current inflight variable request.
 
-: none _Value_: none
+_Parameters_: none _Return Value_: none
 
-_:_
+_Example:_
 
-\[variable\_name\].cancel();
+Page.Variables.\[variable\_name\].cancel();
 
-## ()
+## getData()
 
-method returns the variable’s dataSet, i.e., the current data stored in the variable through the listrecords method.
+This method returns the variable’s dataSet, i.e., the current data stored in the variable through the listrecords method.
 
-: none
+_Parameters_: none
 
-_Value_: Array of record objects
+_Return Value_: Array of record objects
 
-_:_
+_Example:_
 
- result = Page.Variables.\[variable\_name\].getData();
+var result = Page.Variables.\[variable\_name\].getData();
 console.log("result:", result);
 // Output: 
 // result: {data in the variable}
 
-## ()
+## clearData()
 
-This method clears  variable dataSet.
+This method clears the variable dataSet.
 
-: none
+_Parameters_: none
 
-_Value_: Updated(empty) dataSet of the variable
+_Return Value_: Updated(empty) dataSet of the variable
 
-_:_
+_Example:_
 
- result = Page.Variables.\[variable\_name\].clearData();
+var result = Page.Variables.\[variable\_name\].clearData();
 console.log("result:", result);
 // Output: 
 // result: {}
 
-## (key, value)
+## setInput(key, value)
 
 This method sets the input field value against the specified field(key).
 
-:
+_Parameters_:
 
-- (string): name of the input field
-- (\*): value for the input field
+- **key**(string): name of the input field
+- **value**(\*): value for the input field
 
-_Value_: Updated inputFields object
+_Return Value_: Updated inputFields object
 
-_:_
+_Example:_
 
- sv = Page.Variables.\[variable\_name\];
+var sv = Page.Variables.\[variable\_name\];
     sv.setInput("fname": "Peter");
     sv.setInput("lname": "Parker");
     sv.invoke();
 
-## (object)
+## setInput(object)
 
 This method can also be used to set all the specified key-value pairs as input fields in the variable.
 
-: inputData(object) object or key-value pairs {“key”: “value”,…}
+_Parameters_: inputData(object) object or key-value pairs {“key”: “value”,…}
 
-_Value_: Updated inputFields object
+_Return Value_: Updated inputFields object
 
-_:_
+_Example:_
 
- sv = Page.Variables.\[variable\_name\];
+var sv = Page.Variables.\[variable\_name\];
     sv.setInput({
       "fname": "Peter",
       "lname": "Parker"
@@ -166,92 +190,92 @@ _:_
 6\. Data Integration - Variables
 
 - 6.1 Binding Layer
-    - [Overview](/learn/app-development/variables/data-integration/)
+    - [i. Overview](/learn/app-development/variables/data-integration/)
 - [6.2 Variables and Actions](/learn/app-development/variables/variables-actions/)
-    - [Overview](/learn/app-development/variables/variables-actions/#)
-    - [Variables](/learn/app-development/variables/variables-actions/#variables)
+    - [i. Overview](/learn/app-development/variables/variables-actions/#)
+    - [ii. Variables](/learn/app-development/variables/variables-actions/#variables)
         - a. Database CRUD
-            - [Overview](/learn/app-development/variables/database-crud/)
-            - [Variable Creation](/learn/app-development/variables/database-crud/#creation)
-            - [Properties](/learn/app-development/variables/database-crud/#properties)
-            - [Events](/learn/app-development/variables/database-crud/#events)
-            - [Methods](/learn/app-development/variables/database-crud/#methods)
+            - [○ Overview](/learn/app-development/variables/database-crud/)
+            - [○ Variable Creation](/learn/app-development/variables/database-crud/#creation)
+            - [○ Properties](/learn/app-development/variables/database-crud/#properties)
+            - [○ Events](/learn/app-development/variables/database-crud/#events)
+            - [○ Methods](/learn/app-development/variables/database-crud/#methods)
         - b. Database API
-            - [Overview](/learn/app-development/variables/database-apis/)
-            - [Variable Creation](/learn/app-development/variables/database-apis/#creation)
-            - [Properties](/learn/app-development/variables/database-apis/#properties)
-            - [Events](/learn/app-development/variables/database-apis/#events)
-            - [Methods](/learn/app-development/variables/database-apis/#methods)
+            - [○ Overview](/learn/app-development/variables/database-apis/)
+            - [○ Variable Creation](/learn/app-development/variables/database-apis/#creation)
+            - [○ Properties](/learn/app-development/variables/database-apis/#properties)
+            - [○ Events](/learn/app-development/variables/database-apis/#events)
+            - [○ Methods](/learn/app-development/variables/database-apis/#methods)
         - c. Web Service
-            - [Overview](/learn/app-development/variables/web-service/)
-            - [Variable Creation](/learn/app-development/variables/web-service/#creation)
-            - [Properties](/learn/app-development/variables/web-service/#properties)
-            - [Events](/learn/app-development/variables/web-service/#events)
-            - [Methods](/learn/app-development/variables/web-service/#methods)
+            - [○ Overview](/learn/app-development/variables/web-service/)
+            - [○ Variable Creation](/learn/app-development/variables/web-service/#creation)
+            - [○ Properties](/learn/app-development/variables/web-service/#properties)
+            - [○ Events](/learn/app-development/variables/web-service/#events)
+            - [○ Methods](/learn/app-development/variables/web-service/#methods)
         - d. Java Service
-            - [Overview](/learn/app-development/variables/java-services)
-            - [Variable Creation](/learn/app-development/variables/java-services/#creation)
-            - [Properties](/learn/app-development/variables/java-services/#properties)
-            - [Events](/learn/app-development/variables/java-services/#events)
-            - [Methods](/learn/app-development/variables/java-services/#methods)
-        - [Security Service](#)
-            - [Overview](#)
-            - [Variable Creation](#creation)
-            - [Properties](#properties)
-            - [Events](#events)
-            - [Methods](#methods)
+            - [○ Overview](/learn/app-development/variables/java-services)
+            - [○ Variable Creation](/learn/app-development/variables/java-services/#creation)
+            - [○ Properties](/learn/app-development/variables/java-services/#properties)
+            - [○ Events](/learn/app-development/variables/java-services/#events)
+            - [○ Methods](/learn/app-development/variables/java-services/#methods)
+        - [e. Security Service](#)
+            - [○ Overview](#)
+            - [○ Variable Creation](#creation)
+            - [○ Properties](#properties)
+            - [○ Events](#events)
+            - [○ Methods](#methods)
         - f. Model
-            - [Overview](/learn/app-development/variables/model-variable/)
-            - [Variable Creation](/learn/app-development/variables/model-variable/#creation)
-            - [Properties](/learn/app-development/variables/model-variable/#properties)
-            - [Events](/learn/app-development/variables/model-variable/#events)
-            - [Methods](/learn/app-development/variables/model-variable/#methods)
+            - [○ Overview](/learn/app-development/variables/model-variable/)
+            - [○ Variable Creation](/learn/app-development/variables/model-variable/#creation)
+            - [○ Properties](/learn/app-development/variables/model-variable/#properties)
+            - [○ Events](/learn/app-development/variables/model-variable/#events)
+            - [○ Methods](/learn/app-development/variables/model-variable/#methods)
         - g. Device Variables
-            - [Overview](/learn/hybrid-mobile/device-variables/#)
-            - [Services](/learn/hybrid-mobile/device-variables/#services)
-            - [Operations](/learn/hybrid-mobile/device-variables/#operations)
-            - [Events](/learn/hybrid-mobile/device-variables/#events)
-            - [Methods](/learn/hybrid-mobile/device-variables/#methods)
-            - [Usage](/learn/hybrid-mobile/device-variables/#usage)
-    - [Actions](/learn/app-development/variables/variables-actions/#actions)
+            - [○ Overview](/learn/hybrid-mobile/device-variables/#)
+            - [○ Services](/learn/hybrid-mobile/device-variables/#services)
+            - [○ Operations](/learn/hybrid-mobile/device-variables/#operations)
+            - [○ Events](/learn/hybrid-mobile/device-variables/#events)
+            - [○ Methods](/learn/hybrid-mobile/device-variables/#methods)
+            - [○ Usage](/learn/hybrid-mobile/device-variables/#usage)
+    - [iii. Actions](/learn/app-development/variables/variables-actions/#actions)
         - i. Navigation
-            - [Overview](/learn/app-development/variables/navigation-action/)
-            - [Action Creation](/learn/app-development/variables/navigation-action/#creation)
-            - [Properties](/learn/app-development/variables/navigation-action/#properties)
-            - [Methods](/learn/app-development/variables/navigation-action/#methods)
+            - [○ Overview](/learn/app-development/variables/navigation-action/)
+            - [○ Action Creation](/learn/app-development/variables/navigation-action/#creation)
+            - [○ Properties](/learn/app-development/variables/navigation-action/#properties)
+            - [○ Methods](/learn/app-development/variables/navigation-action/#methods)
         - ii. Login
-            - [Overview](/learn/app-development/variables/login-action/)
-            - [Action Creation](/learn/app-development/variables/login-action/#creation)
-            - [Properties](/learn/app-development/variables/login-action/#properties)
-            - [Data](/learn/app-development/variables/login-action/#data)
-            - [Events](/learn/app-development/variables/login-action/#events)
+            - [○ Overview](/learn/app-development/variables/login-action/)
+            - [○ Action Creation](/learn/app-development/variables/login-action/#creation)
+            - [○ Properties](/learn/app-development/variables/login-action/#properties)
+            - [○ Data](/learn/app-development/variables/login-action/#data)
+            - [○ Events](/learn/app-development/variables/login-action/#events)
         - iii. Logout
-            - [Overview](/learn/app-development/variables/logout-action/)
-            - [Action Creation](/learn/app-development/variables/logout-action/#creation)
-            - [Properties](/learn/app-development/variables/logout-action/#properties)
-            - [Events](/learn/app-development/variables/logout-action/#events)
+            - [○ Overview](/learn/app-development/variables/logout-action/)
+            - [○ Action Creation](/learn/app-development/variables/logout-action/#creation)
+            - [○ Properties](/learn/app-development/variables/logout-action/#properties)
+            - [○ Events](/learn/app-development/variables/logout-action/#events)
         - iv. Timer
-            - [Overview](/learn/app-development/variables/timer-action/)
-            - [Action Creation](/learn/app-development/variables/timer-action/#creation)
-            - [Properties](/learn/app-development/variables/timer-action/#properties)
-            - [Events](/learn/app-development/variables/timer-action/#events)
-            - [Methods](/learn/app-development/variables/timer-action/#methods)
+            - [○ Overview](/learn/app-development/variables/timer-action/)
+            - [○ Action Creation](/learn/app-development/variables/timer-action/#creation)
+            - [○ Properties](/learn/app-development/variables/timer-action/#properties)
+            - [○ Events](/learn/app-development/variables/timer-action/#events)
+            - [○ Methods](/learn/app-development/variables/timer-action/#methods)
         - v. Notification
-            - [Overview](/learn/app-development/variables/notification-action/)
-            - [Action Creation](/learn/app-development/variables/notification-action/#creation)
-            - [Properties](/learn/app-development/variables/notification-action/#properties)
-            - [Events](/learn/app-development/variables/notification-action/#events)
-            - [Methods](/learn/app-development/variables/notification-action/#methods)
-    - [Scoping](/learn/app-development/variables/variables-actions/#scoping)
-    - [Variable Events](/learn/app-development/variables/variables-actions/#events)
-    - [Error Handling](/learn/app-development/variables/variables-actions/#error-handling)
+            - [○ Overview](/learn/app-development/variables/notification-action/)
+            - [○ Action Creation](/learn/app-development/variables/notification-action/#creation)
+            - [○ Properties](/learn/app-development/variables/notification-action/#properties)
+            - [○ Events](/learn/app-development/variables/notification-action/#events)
+            - [○ Methods](/learn/app-development/variables/notification-action/#methods)
+    - [iv. Scoping](/learn/app-development/variables/variables-actions/#scoping)
+    - [v. Variable Events](/learn/app-development/variables/variables-actions/#events)
+    - [vi. Error Handling](/learn/app-development/variables/variables-actions/#error-handling)
 - 6.3 Variable Binding
-    - [Overview](/learn/variables/variable-binding/#)
-    - [Data Binding](/learn/variables/variable-binding/#data-binding)
-    - [Widget Binding](/learn/variables/variable-binding/#widget-binding)
-    - [Binding Options](/learn/variables/variable-binding/#binding-options)
+    - [i. Overview](/learn/variables/variable-binding/#)
+    - [ii. Data Binding](/learn/variables/variable-binding/#data-binding)
+    - [iii. Widget Binding](/learn/variables/variable-binding/#widget-binding)
+    - [iv. Binding Options](/learn/variables/variable-binding/#binding-options)
 - 6.4 JavaScript Access
-    - [Overview](/learn/variables/accessing-elements-via-javascript/#)
-    - [Widget Controllers](/learn/variables/accessing-elements-via-javascript/#widget-controllers)
-    - [Page Scripting](/learn/variables/accessing-elements-via-javascript/#page-scripting)
-    - [Script Access](/learn/variables/accessing-elements-via-javascript/#script-access)
+    - [i. Overview](/learn/variables/accessing-elements-via-javascript/#)
+    - [ii. Widget Controllers](/learn/variables/accessing-elements-via-javascript/#widget-controllers)
+    - [iii. Page Scripting](/learn/variables/accessing-elements-via-javascript/#page-scripting)
+    - [iv. Script Access](/learn/variables/accessing-elements-via-javascript/#script-access)

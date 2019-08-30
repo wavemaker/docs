@@ -3,16 +3,16 @@ title: "Building an Editable List"
 id: ""
 ---
 
-: To make List editable.
+**Scenario**: To make List editable.
 
 We will see how a Live Form can be added to a List to make it editable.
 
-1. form Form Data will be bound to selected item in a list.
-2. item in the List will show that record in Live Form which allows for editing the record and saving it.
+1. Live form Form Data will be bound to selected item in a list.
+2. Selected item in the List will show that record in Live Form which allows for editing the record and saving it.
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vSMIBR7pbcpMiOkKBNk4C1VwkD9LbQC6-1P7beGoVAGXXCYT950NRjRMjWpQi7Ok6caWTZogkt2kR2P/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Use Cases](/learn/app-development/widgets/datalive/list/list-use-cases/)
+[List Use Cases](/learn/app-development/widgets/datalive/list/list-use-cases/)
 
 - [1\. List Basic Usage](/learn/app-development/widgets/datalive/list/list-basic-usage/)
 - [2\. How to group list items](/learn/how-tos/list-grouped/)

@@ -7,21 +7,21 @@ We will see how to implement send email in Java Service using Java Mail API.
 
 The process shows:
 
-1. to create an Email client to send out emails.
-2. to use Java Mail API in a Java Service to send out emails.
-3. to parameterize the Java Service.
+1. How to create an Email client to send out emails.
+2. How to use Java Mail API in a Java Service to send out emails.
+3. How to parameterize the Java Service.
 
-**1: Adding Mail.jar** This can be done in two ways:
+**Step 1: Adding Mail.jar** This can be done in two ways:
 
-**1**: Download and Import file of your choice into your app using the [Resource](http://[supsystic-show-popup id=112]) option to the folder.
+**Method 1**: Download and Import _mail.jar_ file of your choice into your app using the [Import Resource](http://[supsystic-show-popup id=112]) option to the _lib_ folder.
 
 OR
 
-**2**: Add dependency:
+**Method 2**: Add dependency:
 
-1. the project and access File Explorer
-2. for pom.xml
-3. following dependency needs to be added to  file under section:
+1. Open the project and access File Explorer
+2. Search for pom.xml
+3. The following dependency needs to be added to _pom.xml_ file under _dependencies_ section:
     
     <dependency>
         <groupId>com.sun.mail</groupId> 
@@ -30,12 +30,12 @@ OR
     </dependency>
     
 
-[![](../assets/email_pom.png)](../assets/email_pom.png) **2: Creating Java Service**:
+[![](../assets/email_pom.png)](../assets/email_pom.png)**Step 2: Creating Java Service**:
 
-1. a [Service](http://[supsystic-show-popup id=119]), named EmailService
-2. the following import statements in the Java service created in the above step.
+1. Create a [Java Service](http://[supsystic-show-popup id=119]), named EmailService
+2. Add the following import statements in the Java service created in the above step.
     
-     javax.servlet.http.HttpServletRequest;
+    import javax.servlet.http.HttpServletRequest;
     import javax.annotation.PostConstruct;
     import org.slf4j.Logger;
     import org.slf4j.LoggerFactory;
@@ -54,7 +54,7 @@ OR
     import com.wavemaker.runtime.service.annotations.ExposeToClient;
     import com.wavemaker.runtime.service.annotations.HideFromClient;
     
-3. the following class definition for the EmailService : Here we are setting default values for the properties like username, password, etc. required by the EmailService. To set them to Environment level values see the next section.
+3. Add the following class definition for the EmailService _Note_: Here we are setting default values for the properties like username, password, etc. required by the EmailService. To set them to Environment level values see the next section.
     
     @ExposeToClient
     public class EmailService {
@@ -109,22 +109,22 @@ OR
     }
     
 
-**3: Using the Java Service**:
+**Step 3: Using the Java Service**:
 
-1. 1. a [Service Variable](http://[supsystic-show-popup id=105]) the Java service created in the previous steps.
+1. 1. Create a [Java Service Variable](http://[supsystic-show-popup id=105]) for the Java service created in the previous steps.
 
 [![](../assets/email_java_var.png)](../assets/email_java_var.png)
 
-- can then use this service variable as per your business logic.
+- You can then use this service variable as per your business logic.
 
  
 
-**email Service**:
+**Parameterizing email Service**:
 
-1. the above Java Service example, you can parameterize the properties.
-2. example, currently, in the above Java Service, we are using “ smtp.gmail.com ” as the SMTP host. Also the username, password fields are set to default values.
-3. can set these properties at the environment level by adding the “@Value” annotation and remove the default values set onto the fields.
-4. parameterizing the fields, the Java Service will look like below:
+1. In the above Java Service example, you can parameterize the properties.
+2. For example, currently, in the above Java Service, we are using “ smtp.gmail.com ” as the SMTP host. Also the username, password fields are set to default values.
+3. You can set these properties at the environment level by adding the “@Value” annotation and remove the default values set onto the fields.
+4. After parameterizing the fields, the Java Service will look like below:
     
     @Value("${app.environment.authentication}")
     private boolean authentication;
@@ -139,11 +139,11 @@ OR
     @Value("${app.environment.password}")
     private String password;
     
-5. [Settings](http://[supsystic-show-popup id=108]) navigate to the [Configuration](http://[supsystic-show-popup id=109])
-6. Development section access the App Environment tab and add the values as per your needs: [![](../assets/email_app_env.png)](../assets/email_app_env.png)
-7. can use these app environment variables as per your app needs. [here for more](/learn/how-tos/using-app-environment-properties/)
+5. From [Project Settings](http://[supsystic-show-popup id=108]) navigate to the [Profile Configuration](http://[supsystic-show-popup id=109]).
+6. From Development section access the App Environment tab and add the values as per your needs: [![](../assets/email_app_env.png)](../assets/email_app_env.png)
+7. You can use these app environment variables as per your app needs. [See here for more](/learn/how-tos/using-app-environment-properties/).
 
-Service Use Cases
+Java Service Use Cases
 
 - [1\. How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)
 - [2\. How to implement forgot password feature using Java Service](/learn/how-tos/implementing-forgot-password-feature-using-java-service/)

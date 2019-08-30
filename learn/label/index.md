@@ -3,76 +3,116 @@ title: "Label"
 id: ""
 ---
 
-represents a caption in a user interface. The label displays text on the page. Common use cases include
+The **label** represents a caption in a user interface. The label displays text on the page. Common use cases include
 
-- page header
-- form field label
-- paragraph of text
-- link
+- a page header
+- a form field label
+- a paragraph of text
+- a link
 
 [![](../assets/label_struct.jpg)](../assets/label_struct.jpg)
 
-The following features for Label can be set in the property from the tab of the Panel.
+# Features
 
-###  Types
+The following features for Label can be set in the **Class** property from the **Style** tab of the **Properties** Panel.
 
-<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LabelStyles">Types</iframe>
+### Label Types
 
-###  Styles
+<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LabelStyles">Label Types</iframe>
 
-<iframe width="100%" height="700" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Labels"></iframe>
+### Label Styles
 
-caption is the text that the end user sees on your label. It can be bound to a variable or another widget.
+<iframe width="100%" height="700" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Labels">LabelStyles</iframe>
 
-name is a unique identifier for label widget.
+# Properties
 
-can enter any text for this property and it will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. It can be bound to a variable or another widget.
+Property
 
-width of your widget can be specified in px or % (i.e 50px, 75%).
+Description
 
-height of your widget can be specified in px or % (i.e 50px, 75%).
+Caption
 
-required editor in wm.LiveForm may refuse to save without a required field.
+The caption is the text that the end user sees on your label. It can be bound to a variable or another widget.
 
-determines whether or not a component is visible. It is a bindable property.
+Name
 
-on Demand (visible only when show property is bound to a variable)
+The name is a unique identifier for label widget.
 
-this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+**Accessibility**
 
-property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
+Hint
 
-align
+You can enter any text for this property and it will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. It can be bound to a variable or another widget.
 
-property specifies how the elements should be aligned horizontally.
+**Layout**
 
-**Events**
+Width
 
-click
+The width of your widget can be specified in px or % (i.e 50px, 75%).
 
-event handler is called whenever the click event is triggered on a widget.
+Height
 
-double click
+The height of your widget can be specified in px or % (i.e 50px, 75%).
 
-event handler is called whenever the double click event is triggered on a widget.
+**Validation**
 
-mouse enter
+Required
 
-event handler is called whenever the mouse enters the widget.
+A required editor in wm.LiveForm may refuse to save without a required field.
 
-mouse leave
+**Behavior**
 
-event handler is called whenever the mouse leaves the widget.
+Show
 
-**Events**
+Showing determines whether or not a component is visible. It is a bindable property.
 
-tap
+Load on Demand (visible only when show property is bound to a variable)
 
-event handler is called whenever the tap event is triggered on a widget.
+When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
 
-double tap
+Animation
 
-event handler is called whenever the double tap event is triggered on a widget.
+This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
+
+**Format**
+
+Horizontal align
+
+This property specifies how the elements should be aligned horizontally.
+
+# Events
+
+Event
+
+Description
+
+**Mouse Events**
+
+On click
+
+This event handler is called whenever the click event is triggered on a widget.
+
+On double click
+
+This event handler is called whenever the double click event is triggered on a widget.
+
+On mouse enter
+
+This event handler is called whenever the mouse enters the widget.
+
+On mouse leave
+
+This event handler is called whenever the mouse leaves the widget.
+
+**Touch Events**
+
+On tap
+
+This event handler is called whenever the tap event is triggered on a widget.
+
+On double tap
+
+This event handler is called whenever the double tap event is triggered on a widget.
 
 [4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
 
@@ -82,9 +122,9 @@ event handler is called whenever the double tap event is triggered on a widget.
 - [4.4 Icon](/learn/app-development/widgets/basic/icon/)
 - [4.5 Iframe](/learn/app-development/widgets/basic/iframe/)
 - [4.6 Label](/learn/app-development/widgets/basic/label/)
-    - [Features](#features)
-    - [Properties](#properties)
-    - [Events](#events)
+    - [i. Features](#features)
+    - [ii. Properties](#properties)
+    - [iii. Events](#events)
 - [4.7 Message](/learn/app-development/widgets/basic/message/)
 - [4.8 Picture](/learn/app-development/widgets/media-widgets/)
 - [4.9 Progress Bar](/learn/app-development/widgets/basic/progress-bar/)

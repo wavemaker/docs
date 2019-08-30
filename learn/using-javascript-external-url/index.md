@@ -5,7 +5,7 @@ id: ""
 
 Showcases
 
-- external JS libraries for example a custom Demo Spinner
+- loading external JS libraries for example a custom Demo Spinner
     
     /\* perform any action on widgets/variables within this block \*/
     
@@ -38,11 +38,11 @@ Showcases
         var spinner = new Spinner(opts).spin(target);
     };
     
-- an external url to load the JS file. `//cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js`
+- using an external url to load the JS file. `//cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js`
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRzlGIdapsL_dzJ9eqfK_yZmkPUU9fjDTUojej4EdItrQOumE80U-DjbxGLl5QrF1WmWZLEGG_BJHBj/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="708" height="560" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-Usage
+JavaScript Usage
 
 - [1\. How to use JavaScript to Use Expressions for Binding](/learn/how-tos/using-javascript-binding/)
 - [2\. How to load JavaScript from external URLs](/learn/how-tos/using-javascript-external-url/)

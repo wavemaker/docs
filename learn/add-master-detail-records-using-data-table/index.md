@@ -3,15 +3,15 @@ title: "Add Master-Detail records using Data Table"
 id: ""
 ---
 
-: To implement CRUD operations on an Master-Detail database schema. We will be adding records in a  Master-Detail scenario using Data Table bound to Live Variable.
+**Scenario**: To implement CRUD operations on an Master-Detail database schema. We will be adding records in a  Master-Detail scenario using Data Table bound to Live Variable.
 
-1. a Customer you will be able create Order rows.
-2. an Order you will be able to create Order Detail rows.
-3. will also be able to edit and delete operations too.
+1. For a Customer you will be able create Order rows.
+2. For an Order you will be able to create Order Detail rows.
+3. You will also be able to edit and delete operations too.
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vSqfCUTgQiQf8t4tVzCJZBKDyApZbAi8oOhWvkw6Rd-DgCftLstD3OU4ewmqUwRfEt0t45RZYKObVHB/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
+[Data Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
 
 - [1\. Basic Table Usage](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage/)
 - [2\. How to customise table actions](/learn/how-tos/data-table-actions/)

@@ -3,19 +3,19 @@ title: "Change Icon for the Global Spinner"
 id: ""
 ---
 
-The icon that is displayed at the time of page load, data load etc., is defined by a _\-spinner_ tag defined in the You can set it to any Font-Awesome icon using the corresponding icon class, for eg: "fa fa-hourglass-o fa-spin fa-lg" You can change it using the following steps:
+The icon that is displayed at the time of page load, data load etc., is defined by a _wm-spinner_ tag defined in the _index.html_. You can set it to any Font-Awesome icon using the corresponding icon class, for eg: "fa fa-hourglass-o fa-spin fa-lg" You can change it using the following steps:
 
-1. the left pullout menu Files tab, select Project from the drop down, and locate
-2. the icon class property to the "wm-spinner" tag
-3. the index.html page and run the application.
+1. From the left pullout menu Files tab, select Project from the drop down, and locate _index.html_
+2. Add the icon class property to the "wm-spinner" tag
+3. Save the index.html page and run the application.
 
 [![](../assets/spin_icon.png)](../assets/spin_icon.png)
 
-[UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
+[Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
 - 1\. How to Navigate between Pages in
-    - [Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
-    - [Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
+    - [i. Web Responsive Apps](/learn/responsive-web/web-ui-design/#page-navigation)
+    - [ii. Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
 - [2\. How to pass parameters to pages](/learn/how-tos/passing-parameters-pages/)
 - [3\. How to pass parameters to partial pages](/learn/how-tos/passing-parameters-partial-page/)
 - [4\. How to use static variable to pass data between pages](/learn/how-tos/use-static-variable-pass-data-pages/)
