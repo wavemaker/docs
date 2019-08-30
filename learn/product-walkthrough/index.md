@@ -2,29 +2,20 @@
 title: "Product Walkthrough"
 id: ""
 ---
-
+# Product Walkthrough
 WaveMaker is a RAD platform to develop and deploy web and mobile applications. This document is intended to be a walkthrough of the WaveMaker RAD platform. It includes:
 
-- [Product Terminology](#terminology),
-- [Project Dashboard](#project-dashboard),
-- [Project Workspace](#workspace),
-- [Project Canvas](#canvas),
-- [Project Settings](#settings),
-- [Project Profile](#profiles)
+- [Product Terminology](#product-terminology)
+- [Project Dashboard](#project-dashboard)
+- [Project Workspace](#project-workspace)
+- [Project Canvas](#project-canvas)
+- [Project Settings](#project-settings)
+- [Project Profile](#project-profiles)
 
-# Getting Started
-
-WaveMaker Online(WMO) is a platform for users to access Studio for app development and deploy them on Cloud. Once you sign-up on WMO, you are on a 30 day trial period. During this period your developer team can develop, test-run and collaborate applications. They can also deploy the apps to Amazon Web Service or WaveMaker Demo Cloud. At the end of the 30-day trial, you get the option to buy and continue working on the app. There are various affordable purchase options - monthly or annual. Once you purchase the app, you can continue app development and deployment.
-
-To start on the trial version of WaveMaker Online, visit [www.wavemakeronline.com](http://www.wavemakeronline.com) and sign-up using your email id. You will get a confirmation mail with a link to activate your account. Once activated, log in to WMO  to access Studio.
-
-You will be directed to the **Project Dashboard** page, enabling you to create a new project or take an overview of sample apps.
-
-[Visit our jumpstart to know about app building process and create a simple app](/learn/jump-start/jump-start-app-essentials/).
-
-# Product Terminology
+## Product Terminology
 
 Before starting with product walkthrough, let us get familiarized with some of the terms commonly used in Studio parlance.
+
 
 **Terms**
 
@@ -162,7 +153,7 @@ Binding of the Variables to Widgets helps in capturing the data from the user or
 
 - [Reference](/learn/app-development/variables/variable-binding/)
 
-# Project Dashboard
+## Project Dashboard
 
 Once you have created projects, the **Project Dashboard** page displays all your Projects, Prefabs and Template Bundles along with the latest activity updates. You have the option to create/import project, prefab or template bundle. [![](../assets/project-listing.png)](../assets/project-listing.png)
 
@@ -196,7 +187,7 @@ Once you have created projects, the **Project Dashboard** page displays all you
             
             For more on Project roles [refer here](/learn/app-development/wavemaker-overview/project-user-management/). For Enterprise version refer to [RBAC Support](/learn/app-development/wavemaker-overview/rapid-rbac-support/#project_roles).
 
-# Project Workspace
+## Project Workspace
 
 When a project from the Project Dashboard is opened, it opens in the Project Workspace. This space is the designer pallet for your app. The various sections of the Project Workspace assist you in building the app.
 
@@ -222,7 +213,7 @@ When a project from the Project Dashboard is opened, it opens in the Project Wor
         - update project source,
         - edit access to frequently used files like app.css and app.js.
 
-# Project Canvas
+## Project Canvas
 
 Once you create a project, the Main Page is created by default. You can add pages to the app, by using the **+** button next to the Page on Resource Explorer. On selection of a page, Canvas is provided:
 
@@ -235,7 +226,7 @@ Once you create a project, the Main Page is created by default. You can add page
 7. selected widget properties like data source, styles, events, device, and security can be set from the Properties Panel
 8. Widget hierarchy shows the widget construct and allows you to traverse to the parent container. [![](../assets/Canvas2.png)](../assets/Canvas2.png)
 
-# Project Settings
+## Project Settings
 
 You can view and change project details and settings from the **Project Settings** dialog.
 
@@ -260,7 +251,7 @@ Project Settings can be accessed from the **Settings** option of the **Secondary
 - **Created date** is the project creation timestamp, non-editable.
 - **Last Accessed **date is the timestamp of last project modification, non-editable.
 
-# Configuration Profiles
+## Configuration Profiles
 
 App Configuration is externalized at each service through configuration profiles. Configuration for DB, REST, SOAP, WebSocket servers, Security etc. can be separated for Dev and Deploy environments through Profiles.
 
@@ -274,40 +265,4 @@ The Configuration Profiles allows one to run the same application under differen
 
 [![](../assets/config_prof_deploy.png)](../assets/config_prof_deploy.png)
 
-< Platform Overview
 
-Supported Technologies >
-
-1\. WaveMaker Overview
-
-- 1.1 Platform Overview
-    - [i. Modern Web Apps](/learn/app-development/wavemaker-overview/platform-overview/#modern-web-apps)
-    - [ii. App Architecture](/learn/app-development/wavemaker-overview/platform-overview/#app-architecture)
-    - [iii. App Building Process](/learn/app-development/wavemaker-overview/platform-overview/#app-building-process)
-    - [iv. Technology Stack](/learn/app-development/wavemaker-overview/platform-overview/#technology-stack)
-    - [v. Material Design](/learn/app-development/wavemaker-overview/platform-overview/#material-design)
-    - [vi. Hybrid Mobile Apps](/learn/app-development/wavemaker-overview/platform-overview/#mobile-apps)
-- [1.2 Product walk-through](#)
-    - [i. Getting Started](#getting-started)
-    - [ii. Product Terminology](#terminology)
-    - [iii. Project Dashboard ](#project-dashboard)
-    - [iv. Project Workspace](#workspace)
-    - [v.Project Canvas](#canvas)
-    - [vi. Project Settings](#settings)
-    - [vii. Configuration Profiles](#profiles)
-- [1.3 Supported Technologies](/learn/app-development/wavemaker-overview/supported-technologies/)
-- [1.4  Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites/)
-- 1.5 Artifacts Repository
-    - [i. Overview](/learn/app-development/wavemaker-overview/artifacts-repository/#)
-    - [ii. Publishing Mechanism](/learn/app-development/wavemaker-overview/artifacts-repository/#publishing)
-    - [iii. Flow (Enterpise version)](/learn/app-development/wavemaker-overview/artifacts-repository/#enterprise)
-- 1.6 WaveMaker Localization
-    - [i. Platform Localization](/learn/app-development/wavemaker-overview/localization/#platform_locale)
-    - [ii. Setting Language Preference](/learn/app-development/wavemaker-overview/localization/#setting)
-    - [iii. Adding Language Bundles](/learn/app-development/wavemaker-overview/localization/#adding)
-    - [iv. Build Platform](/learn/app-development/wavemaker-overview/localization/#build)
-- 1.7 User Management
-    - [i. Overview](/learn/app-development/wavemaker-overview/project-user-management/#roles)
-    - [ii. Member Roles](/learn/app-development/wavemaker-overview/project-user-management/#roles)
-    - [iii. Add Members](/learn/app-development/wavemaker-overview/project-user-management/#add)
-    - [iv. Permissions](/learn/app-development/wavemaker-overview/project-user-management/#permissions)

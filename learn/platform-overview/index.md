@@ -19,7 +19,7 @@ A typical application has 3 parts:
 2. Central/remote Server component that provides **backend services**
 3. Both these components separated by well-defined **REST API** contract
 
-# What is a WaveMaker App
+## What is a WaveMaker App
 
 WaveMaker App can either be a web responsive application or a hybrid mobile application built using the low-code or rapid app development approach. WaveMaker App is built as a single HTML Web App, with clear separation of User Interface (UI) layer and the backend services layer using REST APIs. The UI layer is built using the visual RAD approach, with drag-n-drop of widgets onto the Canvas. Later, these widgets are integrated with the backend services, to fetch and update data.
 
@@ -31,7 +31,7 @@ WaveMaker App is composed of 3 layers:
 
 [![WM App](../assets/3layered_arch.png)](../assets/3layered_arch.png)
 
-# App Architecture
+## App Architecture
 
 #### Single Page Application (SPA)
 
@@ -48,7 +48,7 @@ Benefits of Single Page Applications:
 
 [![SPA vs traditional](../assets/spa_arch.png)](../assets/spa_arch.png)
 
-# App Building Process
+## App Building Process
 
 WaveMaker enables rapid application development with clear separation of front-end and back-end development, and enables easy integration with well-defined REST APIs. This model brings separation of concerns for various layers, which form part of the app architecture.
 
@@ -56,7 +56,7 @@ App building process combines the ability to develop front-end by auto-generatin
 
 [![wmapp_process](../assets/WMApp_process.png)](../assets/WMApp_process.png)
 
-# Technology Stack
+## Technology Stack
 
 WaveMaker Apps are built using open-standards based technology stack, without any lock-in to vendor specific frameworks. Apps built can be freely distributed without any licensing concerns and deployed on any platform of your choice.
 
@@ -67,7 +67,7 @@ WaveMaker Apps are built using open-standards based technology stack, without a
 3. _Back-end Services_: Spring framework provides the back-end service layer in Java with support for dependency injection, REST controllers, security etc.
 4. _Hybrid Mobile_: Cordova framework is used for enabling access to mobile device features and native installer creation using the appropriate SDKs.
 
-# Material Design
+## Material Design
 
 WaveMaker widgets and themes embrace Android Material Design specification for visual design and building interaction across multiple devices. Android Material Design provides design guidelines for user interaction across mobile apps and modern web apps.
 
@@ -75,7 +75,7 @@ WaveMaker widgets and themes embrace Android Material Design specification for 
 
 In WaveMaker widget library, widgets such as Grids, Cards, Lists, Forms etc. make use of the visual design principles from Material. These design guidelines are optimized for use in enterprise applications and also validated from a performance standpoint, to make sure the best experience has been delivered for app users.
 
-# Hybrid Mobile Apps
+## Hybrid Mobile Apps
 
 In the age of digitization with smartphones and tablets, mobile apps are the need of the day for enterprises. Mobile apps have a farther reach and these apps would get a wider exposure. There are [three different ways of building mobile apps](http://www.wavemaker.com/item/native-responsive-or-hybrid/):
 
@@ -85,37 +85,3 @@ In the age of digitization with smartphones and tablets, mobile apps are the ne
 
 [![app type](../assets/project-type.png)](../assets/project-type.png)
 
-Product Walkthrough >
-
-1\. WaveMaker Overview
-
-- [1.1 Platform Overview](#)
-    - [i. Modern Web Apps](#modern-web-apps)
-    - [ii. App Architecture](#app-architecture)
-    - [iii. App Building Process](#app-building-process)
-    - [iv. Technology Stack](#technology-stack)
-    - [v. Material Design](#material-design)
-    - [vi. Hybrid Mobile Apps](#mobile-apps)
-- 1.2 Product walk-through
-    - [i. Getting Started](/learn/app-development/wavemaker-overview/product-walkthrough/#getting-started)
-    - [ii. Project Dashboard ](/learn/app-development/wavemaker-overview/product-walkthrough/#project-dashboard)
-    - [iii. Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#workspace)
-    - [iv.Project Canvas](/learn/app-development/wavemaker-overview/product-walkthrough/#canvas)
-    - [v. Project Settings](/learn/app-development/wavemaker-overview/product-walkthrough/#settings)
-    - [vi. Configuration Profiles](/learn/app-development/wavemaker-overview/product-walkthrough/#profiles)
-- [1.3 Supported Technologies](/learn/app-development/wavemaker-overview/supported-technologies/)
-- [1.4  Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites/)
-- 1.5 Artifacts Repository
-    - [i. Overview](/learn/app-development/wavemaker-overview/artifacts-repository/#)
-    - [ii. Publishing Mechanism](/learn/app-development/wavemaker-overview/artifacts-repository/#publishing)
-    - [iii. Flow (Enterpise version)](/learn/app-development/wavemaker-overview/artifacts-repository/#enterprise)
-- 1.6 WaveMaker Localization
-    - [i. Platform Localization](/learn/app-development/wavemaker-overview/localization/#platform_locale)
-    - [ii. Setting Language Preference](/learn/app-development/wavemaker-overview/localization/#setting)
-    - [iii. Adding Language Bundles](/learn/app-development/wavemaker-overview/localization/#adding)
-    - [iv. Build Platform](/learn/app-development/wavemaker-overview/localization/#build)
-- 1.7 User Management
-    - [i. Overview](/learn/app-development/wavemaker-overview/project-user-management/#roles)
-    - [ii. Member Roles](/learn/app-development/wavemaker-overview/project-user-management/#roles)
-    - [iii. Add Members](/learn/app-development/wavemaker-overview/project-user-management/#add)
-    - [iv. Permissions](/learn/app-development/wavemaker-overview/project-user-management/#permissions)

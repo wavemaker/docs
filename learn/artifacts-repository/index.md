@@ -3,6 +3,8 @@ title: "Artifacts Repository"
 id: ""
 ---
 
+# Artifacts Repository
+
 **Artifact Repository** is a collection of artifacts or resources used across application development lifecycle in WaveMaker platform. It allows for easy exploration and discovery of Artifacts available to the developer network. These artifacts include:
 
 - **Prefabs**: Prefabs are a collection of one or more widgets that are bound to APIs or services.
@@ -17,7 +19,7 @@ Each of the above artifacts has a workspace to develop the artifact and then pub
 There are three ways in which an Artifact can be published:
 
 1. **Publish to Project**: This will allow the artifact developer to send it to a specific project for testing purposes.
-2. **Publish to EDN **(only for enterprise version): To make the artifact available for the entire enterprise for all applications to use, it needs to be published to EDN. After publishing, EDN Admin or Product Owner approves the artifact for use within the enterprise.
+2. **Publish to EDN** (only for enterprise version): To make the artifact available for the entire enterprise for all applications to use, it needs to be published to EDN. After publishing, EDN Admin or Product Owner approves the artifact for use within the enterprise.
 3. **Publish to Workspace** (only for non-enterprise version): Once tested and verified, it can be used for any project under development. This is done by publishing the artifact to artifact developer's workspace and made available for any project he/she is currently working on.
 
 Each of the Artifact has a slightly different publishing flow as described in the sections for [Prefab](#prefabs), [Project Shell](#shells), [Template Bundle](#templates) and [Themes](#themes).
@@ -30,7 +32,7 @@ Once published the artifacts can be viewed from the Artifacts dialog.
 
 [![](../assets/Artifacts_list_ws.png)](../assets/Artifacts_list_ws.png)
 
-### Prefab Publishing
+## Prefab Publishing
 
 Prefab is developed from the Project Workspace, similar to any other app development, and then made available to other developers. [![](../assets/prefab_publish-1.png)](../assets/prefab_publish-1.png) Publishing states for a Prefab include:
 
@@ -40,7 +42,7 @@ Prefab is developed from the Project Workspace, similar to any other app develop
 
 To know more about creating and publishing Prefabs, [click here](/learn/app-development/custom-widgets/creating-prefabs/)
 
-### Project Shell Publishing
+## Project Shell Publishing
 
 Project shell is created by the App Owner from the Studio workspace, by exporting the project being developed as a shell. [![](../assets/Publish_shell.png)](../assets/Publish_shell.png)
 
@@ -51,7 +53,7 @@ Project shell is created by the App Owner from the Studio workspace, by exportin
 
 To know more about creating and publishing Project Shell, [click here](/learn/app-development/ui-design/project-shells/)
 
-### Template Bundle Publishing
+## Template Bundle Publishing
 
 Template Bundle can be created from the Project Workspace using from the Template Bundles tab. Publishing Template Bundles process is different for the enterprise and non-enterprise versions:
 
@@ -60,7 +62,7 @@ Template Bundle can be created from the Project Workspace using from the Templat
 
 To know more about creating and publishing Template Bundles, [click here](/learn/app-development/ui-design/page-concepts/page-templates/)
 
-### Theme Publishing
+## Theme Publishing
 
 Themes can be built by setting up WaveMaker Theme Repository and using Grunt commands.
 
@@ -69,13 +71,13 @@ Themes can be built by setting up WaveMaker Theme Repository and using Grunt com
 
 To know more about creating and publishing Themes, [click here](/learn/app-development/ui-design/themes/)
 
-## Artifact flow in Enterprise version
+# Artifact flow in Enterprise version 
 
-##### (ONLY for Enterprise version)
+> (ONLY for Enterprise version)
 
 The following sections are for Enterprise version of WaveMaker.
 
-### Artifact States
+## Artifact States
 
 When publishing to EDN Artifact goes through several stages: [![](../assets/artifactPublishing.png)](../assets/artifactPublishing.png)
 
@@ -86,7 +88,7 @@ When publishing to EDN Artifact goes through several stages: [![](../assets/arti
 
 [![](../assets/Artifacts_pending.png)](../assets/Artifacts_pending.png)
 
-### Artifact Features
+## Artifact Features
 
 Each artifact needs the following information for proper tracking and identification from within the repository: [![](../assets/artifactRepository.png)](../assets/artifactRepository.png)
 
@@ -95,7 +97,7 @@ Each artifact needs the following information for proper tracking and identifica
 - **Version Number**: Each artifact is associated with a version (automatic versioning) at the time of the publishing process.
 - **Change Log**: These include the comments that the developer needs to add before publishing the artifact.
 
-### Artifact Publish Process
+## Artifact Publish Process
 
 Artifact Publishing involves the following steps:
 
@@ -104,7 +106,7 @@ Artifact Publishing involves the following steps:
 3. **Documentation** (only for Prefabs): This is populated automatically by the platform, from the Configuration Settings entered at the time of the Prefab development. Any changes to this need to be done at the Prefab development time. [![](../assets/prefab_publish3.png)](../assets/prefab_publish3.png)
 4. **Summary**: Verify the details before proceeding with publishing. [![](../assets/prefab_publish4.png)](../assets/prefab_publish4.png)
 
-### Published Artifacts and Updates
+## Published Artifacts and Updates
 
 Once published the artifacts can be viewed from the Artifacts dialog.
 
@@ -120,7 +122,7 @@ Prefabs can be imported from this dialog. Other Artifacts are available for use
 
 **Artifact Updates**: Every time there is a change or modification in an Artifact, it needs to be Published again with a changed Version number. When a developer opens a project using that updated Artifact, Artifact updates are prompted. The developer can choose to update, revert (in case artifact is being downgraded) or ignore. Alternatively, notifications will be pushed for the developer within Studio to take an action on artifact upgrades.[![](../assets/Artifacts_list.png)](../assets/Artifacts_list.png)
 
-### Artifact Management
+## Artifact Management
 
 Artifact Management involves two aspects:
 
@@ -152,50 +154,3 @@ Artifact Management involves two aspects:
 
 **Approval Queue** This will list all the Artifacts Pending Approvals and Rejected. [![](../assets/Artifacts_pending.png)](../assets/Artifacts_pending.png) Artifacts Pending Approval can be selected, reviewed, and approved or rejected. For both Approve and Reject, the reason can be entered under Remarks. This will be appended to the Version History and in case of rejection, the developer can act upon it accordingly. [![](../assets/Artifacts_action.png)](../assets/Artifacts_action.png)
 
-< Pre-Requisites
-
-WaveMaker Localization >
-
-1\. WaveMaker Overview
-
-- 1.1 Platform Overview
-    - [i. Modern Web Apps](/learn/app-development/wavemaker-overview/platform-overview/#modern-web-apps)
-    - [ii. App Architecture](/learn/app-development/wavemaker-overview/platform-overview/#app-architecture)
-    - [iii. App Building Process](/learn/app-development/wavemaker-overview/platform-overview/#app-building-process)
-    - [iv. Technology Stack](/learn/app-development/wavemaker-overview/platform-overview/#technology-stack)
-    - [v. Material Design](/learn/app-development/wavemaker-overview/platform-overview/#material-design)
-    - [vi. Hybrid Mobile Apps](/learn/app-development/wavemaker-overview/platform-overview/#mobile-apps)
-- 1.2 Product walk-through
-    - [i. Getting Started](/learn/app-development/wavemaker-overview/product-walkthrough/#getting-started)
-    - [ii. Project Dashboard ](/learn/app-development/wavemaker-overview/product-walkthrough/#project-dashboard)
-    - [iii. Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#workspace)
-    - [iv.Project Canvas](/learn/app-development/wavemaker-overview/product-walkthrough/#canvas)
-    - [v. Project Settings](/learn/app-development/wavemaker-overview/product-walkthrough/#settings)
-    - [vi. Configuration Profiles](/learn/app-development/wavemaker-overview/product-walkthrough/#profiles)
-- [1.3 Supported Technologies](/learn/app-development/wavemaker-overview/supported-technologies/)
-- [1.4  Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites/)
-- [1.5 Artifacts Repository](#)
-    - [i. Publishing Mechanism](#publishing)
-        - [○ States](#states)
-        - [○ Features](#features)
-        - [○ Process](#process)
-        - [○ Prefabs](#prefabs)
-        - [○ Project Shells](#shells)
-        - [○ Template Bundle](#templates)
-        - [○ Themes](#themes)
-    - [ii. Artifacts flow for Enterprise version](#enterprise)
-        - [○ States](#states)
-        - [○ Features](#features)
-        - [○ Publish Process](#process)
-        - [○ Published Artifacts & Updates](#updates)
-        - [○ Artifacts Management](#management)
-- 1.6 WaveMaker Localization
-    - [i. Platform Localization](/learn/app-development/wavemaker-overview/localization/#platform_locale)
-    - [ii. Setting Language Preference](/learn/app-development/wavemaker-overview/localization/#setting)
-    - [iii. Adding Language Bundles](/learn/app-development/wavemaker-overview/localization/#adding)
-    - [iv. Build Platform](/learn/app-development/wavemaker-overview/localization/#build)
-- 1.7 User Management
-    - [i. Overview](/learn/app-development/wavemaker-overview/project-user-management/#roles)
-    - [ii. Member Roles](/learn/app-development/wavemaker-overview/project-user-management/#roles)
-    - [iii. Add Members](/learn/app-development/wavemaker-overview/project-user-management/#add)
-    - [iv. Permissions](/learn/app-development/wavemaker-overview/project-user-management/#permissions)
