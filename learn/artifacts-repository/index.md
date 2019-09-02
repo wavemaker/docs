@@ -3,8 +3,6 @@ title: "Artifacts Repository"
 id: ""
 ---
 
-# Artifacts Repository
-
 **Artifact Repository** is a collection of artifacts or resources used across application development lifecycle in WaveMaker platform. It allows for easy exploration and discovery of Artifacts available to the developer network. These artifacts include:
 
 - **Prefabs**: Prefabs are a collection of one or more widgets that are bound to APIs or services.
@@ -71,7 +69,7 @@ Themes can be built by setting up WaveMaker Theme Repository and using Grunt com
 
 To know more about creating and publishing Themes, [click here](/learn/app-development/ui-design/themes/)
 
-# Artifact flow in Enterprise version 
+# Artifact flow in Enterprise version
 
 > (ONLY for Enterprise version)
 

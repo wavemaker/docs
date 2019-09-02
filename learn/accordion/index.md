@@ -88,72 +88,29 @@ The accordion has few methods exposed on widget scope which can be accessed via 
 
 # Properties
 
-**Property**
-
-**Description**
-
-Name
-
-The name is a unique identifier for the Accordion. Special characters and spaces are not allowed in widget name.
-
-Add Accordion Pane
-
-This action allows one to add multiple panes to the Accordion.
-
-**Accessibility**
-
-Tab Index
-
-The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
-
-**Layout**
-
-Height
-
-The height of your widget can be specified in px or % (i.e 50px, 75%).
-
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Load on Demand (visible only when show property is bound to a variable)
-
-When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately, irrespective of this property setting.
-
-Close Others
-
-This property specifies whether, on clicking of an accordion panel, other panels should close or not.
+| **Property** | **Description** |
+| --- | --- |
+| Name | The name is a unique identifier for the Accordion. Special characters and spaces are not allowed in widget name. |
+| Add Accordion Pane | This action allows one to add multiple panes to the Accordion. |
+| **Accessibility** |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| **Layout** |
+| Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately, irrespective of this property setting. |
+| Close Others | This property specifies whether, on clicking of an accordion panel, other panels should close or not. |
 
 **Accordion Pane** SubWidget of Accordion, to hold the accordion header and content.
 
-**Property**
-
-**Description**
-
-Title
-
-This bindable property defines the heading or title for the accordion pane.
-
-Sub Heading
-
-This bindable property defines the subheading for the accordion pane. It is displayed right below the Title of the Pane.
-
-Name
-
-The name is a unique identifier for the accordion pane. Special characters and spaces are not allowed in widget name.
-
-Badge Value
-
-Value to be displayed in the badge area on the right edge of title next to the expand/collapse button. It is a bindable property.
-
-Badge Type
-
-This bindable property controls the color of the badge. The values are:
-
+| **Property** | **Description** |
+| --- | --- |
+| Title | This bindable property defines the heading or title for the accordion pane. |
+| Sub Heading | This bindable property defines the subheading for the accordion pane. It is displayed right below the Title of the Pane. |
+| Name | The name is a unique identifier for the accordion pane. Special characters and spaces are not allowed in widget name. |
+| Badge Value | Value to be displayed in the badge area on the right edge of title next to the expand/collapse button. It is a bindable property. |
+| Badge Type | This bindable property controls the color of the badge. The values are:
 - _default_,
 - _primary_,
 - _success_,
@@ -161,66 +118,36 @@ This bindable property controls the color of the badge. The values are:
 - _warning_,
 - _danger_.
 
-**Accessibility**
+ |
+| **Accessibility** |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
-Tab Index
-
-The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
-
-**Layout**
-
-Height
-
-The height of the widget can be specified in px or % (i.e 50px, 75%).
-
-**Content**
-
-Content
-
-Bindable property, specifies the content to be displayed within the Accordion Pane:
+NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| **Layout** |
+| Height | The height of the widget can be specified in px or % (i.e 50px, 75%). |
+| **Content** |
+| Content | Bindable property, specifies the content to be displayed within the Accordion Pane:
 
 - Inline Content - HTML content or any widget
 - Page Content - in the form of Partial pages created within the app, choose from the available list
 
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is bindable.
-
-Is Default Pane
-
-This bindable property determines if this pane is the default pane.
-
-**Graphics**
-
-Icon Class
-
-This bindable property defines the class of the icon that is applied to the button.
+ |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is bindable. |
+| Is Default Pane | This bindable property determines if this pane is the default pane. |
+| **Graphics** |
+| Icon Class | This bindable property defines the class of the icon that is applied to the button. |
 
 # Events
 
 The following events are available on the Accordion Panes
 
-**Event**
-
-**Description**
-
-On load
-
-This property defines the event handler for the load event of the accordion panes.
-
-**Callback Events**
-
-On expand
-
-This property defines the event handler for the expand event of the accordion panes.
-
-On collapse
-
-This property defines the event handler for the collapse event of the accordion panes.
+| **Event** | **Description** |
+| --- | --- |
+| On load | This property defines the event handler for the load event of the accordion panes. |
+| **Callback Events** |
+| On expand | This property defines the event handler for the expand event of the accordion panes. |
+| On collapse | This property defines the event handler for the collapse event of the accordion panes. |
 
 [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
 

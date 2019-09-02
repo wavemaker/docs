@@ -87,14 +87,10 @@ For the following script samples, we are considering the _hrdb_ _Employee_ table
 
 Using Live Form Callback EventsWhen dealing with tables with foreign key relationships, for related fields in the Live Form Select widget is set as default for the Live Form field.Live Form behavior can be customised with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..
 
-Event
-
-Trigger and JavaScript Usage
-
-On before service call
-
-This event will be called on saving the live form. Any validation checks can be performed here. Returning false from the script will stop the live form save.
-
+| Event | Trigger and JavaScript Usage |
+| --- | --- |
+| On before service call | This event will be called on saving the live form. Any validation checks can be performed here. Returning false from the script will stop the live form save. |
+|  | 
 $scope.liveform1Beforeservicecall = function($event, $operation, $data) {
 //$operation: Current operation being performed - INSERT or UPDATE or DELETE
 //$data has the data of the all widgets inside the live form. This data can be modified and validated before sending the request.
@@ -115,9 +111,9 @@ $scope.liveform1Beforeservicecall = function($event, $operation, $data) {
         return isValidData($data)
 };
 
-On result
-
-This event will be called after live form is saved and API returns a response. Event is triggered in both success and failure cases.
+ |
+| On result | This event will be called after live form is saved and API returns a response. Event is triggered in both success and failure cases. |
+|  | 
 
 $scope.liveform1Result = function($event, $operation, $data) {
 //$operation: operation  performed - INSERT or UPDATE or DELETE
@@ -125,9 +121,9 @@ $scope.liveform1Result = function($event, $operation, $data) {
 console.log("server response:", $data);
 };
 
-On success
-
-This event will be called after live form is saved and API returns a success response.
+ |
+| On success | This event will be called after live form is saved and API returns a success response. |
+|  | 
 
 $scope.liveform1Success = function($event, $operation, $data) {
 //$operation: operation performed - INSERT or UPDATE or DELETE
@@ -135,12 +131,14 @@ $scope.liveform1Success = function($event, $operation, $data) {
 console.log("The inserted/updated/deleted data:", $data);
 };
 
-On error
-
-This event will be called after live form is saved and API returns a failure response.
+ |
+| On error | This event will be called after live form is saved and API returns a failure response. |
+|  | 
 
 $scope.liveform1Error = function($event, $operation, $data) {
 //$operation: operation performed - INSERT or UPDATE or DELETE
 //$data has the error message returned from the API.
 console.log("Error returned from server:", $data);
 };
+
+ |

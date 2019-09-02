@@ -28,51 +28,20 @@ There are two ways of setting the icon class for a given icon:
 
 # Properties
 
-Property
-
-Description
-
-Caption
-
-This bindable property is the text that the end user sees on icon.
-
-Name
-
-The name is a unique identifier for icon widget.
-
-**Accessibility**
-
-Hint
-
-Any text or html you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
-
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Load on Demand (visible only when show property is bound to a variable)
-
-When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
-
-Animation
-
-This property controls the animation of an element. The animation is based on the css classes and works only in the run mode.
-
-**Graphics**
-
-Icon Class
-
-This property defines the class of the icon that is applied to the button.
-
-Icon Size
-
-This property defines the size of the icon. Value has to be specified along with the units (em or px).
-
-Icon Position
-
-Property to set the position of icon - can be left (default) or right.
+| Property | Description |
+| --- | --- |
+| Caption | This bindable property is the text that the end user sees on icon. |
+| Name | The name is a unique identifier for icon widget. |
+| **Accessibility** |
+| Hint | Any text or html you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| Animation | This property controls the animation of an element. The animation is based on the css classes and works only in the run mode. |
+| **Graphics** |
+| Icon Class | This property defines the class of the icon that is applied to the button. |
+| Icon Size | This property defines the size of the icon. Value has to be specified along with the units (em or px). |
+| Icon Position | Property to set the position of icon - can be left (default) or right. |
 
 [4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
 

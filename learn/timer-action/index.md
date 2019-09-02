@@ -24,23 +24,12 @@ id: ""
 
 Timer Variables are special variables that can be used to trigger a particular event at regular time intervals.
 
-**Property**
-
-**Description**
-
-**Behavior**
-
-Trigger on page load
-
-Selecting this option will ensure that the timer starts at page load.
-
-Trigger after a delay
-
-Defines the time delay, in milliseconds, before triggering the specified event.
-
-Repeat after delay
-
-Specifies whether the timer is one-time or a repeating event.
+| **Property** | **Description** |
+| --- | --- |
+| **Behavior** |
+| Trigger on page load | Selecting this option will ensure that the timer starts at page load. |
+| Trigger after a delay | Defines the time delay, in milliseconds, before triggering the specified event. |
+| Repeat after delay | Specifies whether the timer is one-time or a repeating event. |
 
 # Events
 
@@ -68,9 +57,7 @@ Once a Timer Action is triggered, if it is Page scoped, then the action (and its
 
 # Methods
 
-[invoke](#invoke)
-
-[cancel](#cancel)
+<table class="reference notranslate"><tbody><tr><td><a href="#invoke">invoke</a></td><td><a href="#cancel">cancel</a></td></tr></tbody></table>
 
 ## invoke(object, success callback, error callback)
 

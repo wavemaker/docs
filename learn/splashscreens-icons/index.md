@@ -20,187 +20,61 @@ For WaveMaker Hybrid Mobile Apps, splash screens and app icons for various devic
 
 ### Android Platform
 
-Screen Size
-
-Dimensions
-
-Landscape
-
-Potrait
-
-LDPI
-
-320x200px
-
-200x320px
-
-MDPI
-
-480x320px
-
-320x480px
-
-HDPI
-
-800x480px
-
-480x800px
-
-XHDPI
-
-1280x720px
-
-720x1280px
-
-XXHDPI
-
-1600x960px
-
-960x1600px
-
-XXXHDPI
-
-1280x1920px
-
-720x1280px
+| Screen Size | Dimensions |
+| --- | --- |
+| Landscape | Potrait |
+| --- | --- |
+| LDPI | 320x200px | 200x320px |
+| MDPI | 480x320px | 320x480px |
+| HDPI | 800x480px | 480x800px |
+| XHDPI | 1280x720px | 720x1280px |
+| XXHDPI | 1600x960px | 960x1600px |
+| XXXHDPI | 1280x1920px | 720x1280px |
 
 ### iOs Platform
 
-Device
-
-Dimensions
-
-Landscape
-
-Potrait
-
-Tablet (iPad)
-
-Non-Retina (1x)
-
-1024x768px
-
-768x1024px
-
-Retina (2x)
-
-2048x1536px
-
-1536x2048px
-
-Handheld (iPhone, iPod)
-
-Non-Retina (1x)
-
-480x320px
-
-320x480px
-
-Retina (2x)
-
-960x640px
-
-640x960px
-
-iPhone 5 Retina (2x)
-
-1136x640px
-
-640x1136px
-
-iPhone 6 (2x)
-
-1334x750px
-
-750x1334px
-
-iPhone 6 Plus (3x)
-
-1920x1080px
-
-1080x1920px
+| Device | Dimensions |
+| --- | --- |
+| Landscape | Potrait |
+| --- | --- |
+| Tablet (iPad) |
+| Non-Retina (1x) | 1024x768px | 768x1024px |
+| Retina (2x) | 2048x1536px | 1536x2048px |
+| Handheld (iPhone, iPod) |
+| Non-Retina (1x) | 480x320px | 320x480px |
+| Retina (2x) | 960x640px | 640x960px |
+| iPhone 5 Retina (2x) | 1136x640px | 640x1136px |
+| iPhone 6 (2x) | 1334x750px | 750x1334px |
+| iPhone 6 Plus (3x) | 1920x1080px | 1080x1920px |
 
 ## App Icon Dimensions
 
 ### Android Platform
 
-Screen Size
-
-Dimensions
-
-XXXHDPI
-
-192px
-
-XXHDPI
-
-144px
-
-XHDPI
-
-96px
-
-HDPI
-
-72px
-
-MDPI
-
-48px
-
-LDPI
-
-36px
+| Screen Size | Dimensions |
+| --- | --- |
+| XXXHDPI | 192px |
+| XXHDPI | 144px |
+| XHDPI | 96px |
+| HDPI | 72px |
+| MDPI | 48px |
+| LDPI | 36px |
 
 ### iOS Platform
 
-Device
-
-Dimensions
-
-iPhone
-
-57 px
-
-iPad
-
-72 px
-
-iPhone 4 Retina Display
-
-114 px
-
-iPad 3 Retina Display
-
-144 px
-
-iTunes\*
-
-1024 px
-
-iPhone Settings/Spotlight
-
-29 px
-
-iPad Settings
-
-29 px
-
-iPad Spotlight
-
-48 px
-
-iPhone 4 Settings/Spotlight
-
-58 px
-
-document icon
-
-64 px
-
-document icon
-
-320 px
+| Device | Dimensions |
+| --- | --- |
+| iPhone | 57 px |
+| iPad | 72 px |
+| iPhone 4 Retina Display | 114 px |
+| iPad 3 Retina Display | 144 px |
+| iTunes\* | 1024 px |
+| iPhone Settings/Spotlight | 29 px |
+| iPad Settings | 29 px |
+| iPad Spotlight | 48 px |
+| iPhone 4 Settings/Spotlight | 58 px |
+| document icon | 64 px |
+| document icon | 320 px |
 
 Mobile App Use Cases
 

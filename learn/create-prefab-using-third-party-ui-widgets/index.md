@@ -20,41 +20,10 @@ In this section, you will learn how to use third-party UI widgets in Studio. We 
         - Scripts: include the js file imported in the above step [![](../assets/lbprefab_settings.png)](../assets/lbprefab_settings.png)
     - **Properties**: any properties you want to expose to the user of this prefab. Here we have set two properties _pic_ and _title_, both being _in-bound_.
 
-Name
-
-Display Name
-
-Data Type
-
-Default Value
-
-Binding Type
-
-Widget Type
-
-pic
-
-Picture
-
-string
-
-http://lokeshdhakar.com/projects/ lightbox2/images/image-1.jpg
-
-in-bound
-
-text
-
-title
-
-Title
-
-string
-
-Image
-
-in-bound
-
-text
+| Name | Display Name | Data Type | Default Value | Binding Type | Widget Type |
+| --- | --- | --- | --- | --- | --- |
+| pic | Picture | string | http://lokeshdhakar.com/projects/ lightbox2/images/image-1.jpg | in-bound | text |
+| title | Title | string | Image | in-bound | text |
 
 [![](../assets/lbprefab_props.png)](../assets/lbprefab_props.png)
 

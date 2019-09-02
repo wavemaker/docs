@@ -43,49 +43,17 @@ The **data source** for these Variables is custom-defined.
 
 Static Variables help you store page or application level data. Using Static Variable you can even store data as cookies.
 
-**Property**
-
-**Description**
-
-Type
-
-Property to use to specify the data-type of the static variable. This includes live/service variables also.
-
-Is List
-
-Property to use if the data in the variable is of type array.
-
-**JSON**
-
-name (for Entry type)
-
-Name of the data value in the name-datavalue pair
-
-Data Value
-
-Property to specify the value to be stored in the variable. You can use either the Field Editor or Text Editor to specify the values.
+| **Property** | **Description** |
+| --- | --- |
+| Type | Property to use to specify the data-type of the static variable. This includes live/service variables also. |
+| Is List | Property to use if the data in the variable is of type array. |
+| **JSON** |
+| name (for Entry type) | Name of the data value in the name-datavalue pair |
+| Data Value | Property to specify the value to be stored in the variable. You can use either the Field Editor or Text Editor to specify the values. |
 
 # Methods
 
-[getData](#getData)
-
-[setData](#setData)
-
-[clearData](#clearData)
-
-[getValue](#getValue)
-
-[setValue](#setValue)
-
-[getItem](#getItem)
-
-[setItem](#setItem)
-
-[addItem](#addItem)
-
-[removeItem](#removeItem)
-
-[getCount](#getCount)
+<table class="reference notranslate"><tbody><tr><td><a href="#getData">getData</a></td><td><a href="#setData">setData</a></td><td><a href="#clearData">clearData</a></td><td><a href="#getValue">getValue</a></td><td><a href="#setValue">setValue</a></td></tr><tr><td><a href="#getItem">getItem</a></td><td><a href="#setItem">setItem</a></td><td><a href="#addItem">addItem</a></td><td><a href="#removeItem">removeItem</a></td><td><a href="#getCount">getCount</a></td></tr></tbody></table>
 
 ## getData()
 

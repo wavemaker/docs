@@ -28,96 +28,20 @@ You can launch WaveMaker Enterprise as a VM or as an AWS EC2 instance. The prere
 
 Before you start setting up the WaveMaker Enterprise VM, here is a list of a minimum and recommended System Requirements for the WME VM:
 
-**Memory**
-
-- Minimum 16GB
-
-**CPU**
-
-- 4-cores, single CPU system
-- Intel Virtualization Technology (VT-x) enabled
-- Hyperthreading (HT) disabled
-
-**Hard Disk**
-
-- Minimum 300 GB to be allocated to VM
-
-**Network**
-
-- Static IP with valid DNS
-- Ports 80, 443, 8080
-
-**Virtualization Platform**
-
-- VMware ESXi 5.1+
-- or Oracle VirtualBox 4.3.36
-- or VMware Workstation Pro 12
-
-**Host OS**
-
-- Ubuntu 14.04.3 LTS or
-- Windows 2012 R2 Server or
-- Windows 7 or
-- Windows 10
+<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li><li>Intel Virtualization Technology (VT-x) enabled</li><li>Hyperthreading (HT) disabled</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum 300 GB to be allocated to VM</li></ul></td></tr><tr><td><strong>Network</strong></td><td><ul><li>Static IP with valid DNS</li><li>Ports 80, 443, 8080</li></ul></td></tr><tr><td><strong>Virtualization Platform</strong></td><td><ul><li>VMware ESXi 5.1+</li><li>or Oracle VirtualBox 4.3.36</li><li>or VMware Workstation Pro 12</li></ul></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 14.04.3 LTS or</li><li>Windows 2012 R2 Server or</li><li>Windows 7 or</li><li>Windows 10</li></ul></td></tr></tbody></table>
 
 #### System Requirements for Additional Instances
 
 Adding an instance to either Studio or Cloud aids in the scalability of the VM in terms of application development and deployment, respectively. Each added Studio and Cloud instance would allow for a specific number of app developments and app deployments. These numbers will vary based on the WME version, refer to the table below for the exact numbers.
 
-WME Version
-
-Developer logins per 16GB WaveMaker Studio Instance
-
-App Deployments per 16GB WaveMaker Cloud Instance
-
-v10.0
-
-14
-
-22
-
-v9.4.0
-
-14
-
-22
+| WME Version | Developer logins per 16GB WaveMaker Studio Instance | App Deployments per 16GB WaveMaker Cloud Instance |
+| --- | --- | --- |
+| v10.0 | 14 | 22 |
+| v9.4.0 | 14 | 22 |
 
 The actual app development and deployment support are further determined by your license terms. This means that, even if your infrastructure has the capacity, the apps that can be developed and deployed is restricted by your license terms. Similarly, even though your license terms allow, the apps that can be developed and deployed are limited by the infrastructure capacity. **Note** different Cloud instance needs to be added to each stage in the release pipeline as explained in the Increasing Deployment Capacity section. For **each instance to be added**, the following requirements should be met:
 
-**Memory**
-
-- Minimum 16 GB
-
-**CPU**
-
-- 4-cores, single CPU system
-
-**Hard Disk**
-
-- Minimum 200 GB
-
-**Network**
-
-- Static IP with valid DNS
-- Ports to be opened on added instance for access from platform VM:
-    - TCP: TCP: 22, 80, 2375, 8301, 2200-2299, 8000-8099
-    - UDP: 8301, ICMP80, 443, 8080
-- Additional ports to be opened on platform VM for access from instances:
-    - TCP: 5555, 8000, 8008, 8081, 8301
-    - UDP: 8301
-
-**Virtualization Platform**
-
-- VMware ESXi 5.1+
-- or Oracle VirtualBox 4.3.36
-- or VMware Workstation Pro 12
-
-**Host OS**
-
-- Ubuntu 14.04.3 LTS or
-- Windows 2012 R2 Server or
-- Windows 7 or
-- Windows 10
+<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16 GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum 200 GB</li></ul></td></tr><tr><td><strong>Network</strong></td><td><ul><li>Static IP with valid DNS</li><li>Ports to be opened on added instance for access from platform VM:<ul><li>TCP: TCP: 22, 80, 2375, 8301, 2200-2299, 8000-8099</li><li>UDP: 8301, ICMP80, 443, 8080</li></ul></li><li>Additional ports to be opened on platform VM for access from instances:<ul><li>TCP: 5555, 8000, 8008, 8081, 8301</li><li>UDP: 8301</li></ul></li></ul></td></tr><tr><td><strong>Virtualization Platform</strong></td><td><ul><li>VMware ESXi 5.1+</li><li>or Oracle VirtualBox 4.3.36</li><li>or VMware Workstation Pro 12</li></ul></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 14.04.3 LTS or</li><li>Windows 2012 R2 Server or</li><li>Windows 7 or</li><li>Windows 10</li></ul></td></tr></tbody></table>
 
 ### WME VM File Requirements
 
@@ -167,23 +91,10 @@ You will be needing IP Addresses for the following:
     - In case of AWS instance: Private static IP for the instance within your VPC (assigned via eth0 or via ENI on eth1)
     - **DNS Mapping**: Map a domain to the above IP for easy access:
         
-        **Domain**
-        
-        **Domain URL**
-        
-        **Description**
-        
-        WaveMaker Studio/Cloud platform
-        
-        `wavemaker.[mycompany].com`
-        
-        This domain will be used to access WaveMaker Studio and WaveMaker Cloud
-        
-        WaveMaker Deployed Apps
-        
-        `qa.wmcloud.[mycompany].com` `stage.wmcloud.[mycompany].com` `live.wmcloud.[mycompany].com`
-        
-        These domains will be used to access WaveMaker Studio apps deployed onto WaveMaker Cloud
+        | **Domain** | **Domain URL** | **Description** |
+        | --- | --- | --- |
+        | WaveMaker Studio/Cloud platform | `wavemaker.[mycompany].com` | This domain will be used to access WaveMaker Studio and WaveMaker Cloud |
+        | WaveMaker Deployed Apps | `qa.wmcloud.[mycompany].com` `stage.wmcloud.[mycompany].com` `live.wmcloud.[mycompany].com` | These domains will be used to access WaveMaker Studio apps deployed onto WaveMaker Cloud |
         
         Note: In the preceding table, `[mycompany]` is used as an example. You may have to replace `[mycompany]` with your appropriate domain name.
 - **Docker Container Access**: You will be needing to assign a /16 [CIDR ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) to Docker during setup. This IP range should not be in use anywhere on your network and can be completely different from your network’s range. These IPs are assigned internally by Docker to containers and these IPs won’t be exposed on your network. For example, if your network is using a _10.x.x.x_ range and the range _192.168.x.x_ is not used anywhere in your network, you may assign this _192.168.x.x_ range to Docker. See [here](https://en.wikipedia.org/wiki/Private_network#Private_IPv4_address_spaces) for the possible LAN IP ranges.

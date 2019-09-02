@@ -18,48 +18,22 @@ You can also create different variations of the navbar such as navbars with drop
 
 # Properties
 
-Property
-
-Description
-
-Title
-
-Set the title of the Navbar. This name is used for the first (home) link of the navbar.
-
-Name
-
-The name is a unique identifier for Navbar.
-
-Home Link
-
-This property can be used to specify the URL for the home link. By default, this is set to the Home page set in the Project Configuration dialog.
-
-**Layout**
-
-Height
-
-The height of your widget can be specified in px or % (i.e 50px, 75%).
-
-Image Source
-
-This bindable property specifies the source for the brand image. The source can be either a file or a URL:
-
+| Property | Description |
+| --- | --- |
+| Title | Set the title of the Navbar. This name is used for the first (home) link of the navbar. |
+| Name | The name is a unique identifier for Navbar. |
+| Home Link | This property can be used to specify the URL for the home link. By default, this is set to the Home page set in the Project Configuration dialog. |
+| **Layout** |
+| Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
+| Image Source | This bindable property specifies the source for the brand image. The source can be either a file or a URL:
 - File: enter the directory and filename for the image to display (supported file types include .jpg, .gif and .png). By default, WaveMaker looks for images in the src/main/webapp directory of the project.
 - URL: enter a URL to any internet-accessible image. To display the file, foo.jpg, in the project directory src/main/webapp/resources/images/imagelists/, enter the following into the source property:resources/images/imagelists/foo.jpg or simply foo.jpg
 
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Load on Demand (visible only when show property is bound to a variable)
-
-When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
-
-Menu icon
-
-This property sets the icon for the menu button that will appear in the mobile layout ONLY.
+ |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| Menu icon | This property sets the icon for the menu button that will appear in the mobile layout ONLY. |
 
 [6\. Navigation Widgets](/learn/app-development/widgets/widget-library/#nav-widgets)
 

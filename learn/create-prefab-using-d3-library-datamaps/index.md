@@ -84,137 +84,19 @@ Now that we have seen the usage of a basic datamap, let us add some properties t
 1. Open the Datamap Prefab created earlier
 2. Open the Prefab Settings and add the following properties to it
 
-Name
-
-Display Value
-
-Data Type
-
-Default Value
-
-Binding Type
-
-Widget Type
-
-Data Options
-
-coverage
-
-Coverage
-
-string
-
-world
-
-select
-
-world,usa
-
-colormap
-
-Color Map
-
-object
-
-in-bound
-
-text
-
-dataset
-
-Dataset
-
-object
-
-in-bound
-
-text
-
-datafield
-
-Data Field
-
-string
-
-in-bound
-
-select
-
-usekeys
-
-Use Keys
-
-string
-
-in-bound
-
-select
-
-itemlabel
-
-Item Label
-
-string
-
-world
-
-in-bound
-
-select
-
-showdetails
-
-Show
-
-boolean
-
-true
-
-in-bound
-
- checkbox
-
-detailstemplate
-
-Details Template
-
-list
-
-in-bound
-
- text
-
-highlight
-
-Highlight
-
-string
-
-#e36000
-
-in-bound
-
-colorpicker
-
-height
-
-Height
-
-string
-
-400
-
- text
-
-width
-
-Width
-
-string
-
-100%
-
- text
+| Name | Display Value | Data Type | Default Value | Binding Type | Widget Type | Data Options |
+| --- | --- | --- | --- | --- | --- | --- |
+| coverage | Coverage | string | world |  | select | world,usa |
+| colormap | Color Map | object |  | in-bound | text |  |
+| dataset | Dataset | object |  | in-bound | text |  |
+| datafield | Data Field | string |  | in-bound | select |  |
+| usekeys | Use Keys | string |  | in-bound | select |  |
+| itemlabel | Item Label | string | world | in-bound | select |  |
+| showdetails | Show | boolean | true | in-bound |  checkbox |  |
+| detailstemplate | Details Template | list |  | in-bound |  text |  |
+| highlight | Highlight | string | #e36000 | in-bound | colorpicker |  |
+| height | Height | string | 400 |  |  text |  |
+| width | Width | string | 100% |  |  text |  |
 
 [![](../assets/datamap_props.png)](../assets/datamap_props.png)
 

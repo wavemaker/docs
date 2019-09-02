@@ -7,16 +7,10 @@ id: ""
 
 Form behavior can be customized with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..
 
-Event
-
-Trigger and JavaScript Usage
-
-On before submit
-
-This event will be called before submitting the form. Any validation checks can be performed here. Returning false from the script will stop the form submit.
-
-We are assuming that Notification Action notificationAction1 is already created.
-
+| Event | Trigger and JavaScript Usage |
+| --- | --- |
+| On before submit | This event will be called before submitting the form. Any validation checks can be performed here. Returning false from the script will stop the form submit. |
+|  | We are assuming that Notification Action notificationAction1 is already created.
 Page.form1Beforesubmit = function ($event, widget, $data) {
     //$data has the data of the all widgets inside the form. This data can be modified and validated before sending the request
 
@@ -32,41 +26,43 @@ Page.form1Beforesubmit = function ($event, widget, $data) {
     $data.dateModified = Date.now(); //Set today's date as modified date field
 };
 
-On submit
-
-This event will be called on submitting the form. (This is called after ‘on before submit’. If on before submit returns false, this function will not be called).
+ |
+| On submit | This event will be called on submitting the form. (This is called after ‘on before submit’. If on before submit returns false, this function will not be called). |
+|  | 
 
 Page.form1Submit = function ($event, widget, $formdata) { 
 //$formData has the data of the all widgets inside the form.
 console.log(“Form data:”, $formdata);
 };
 
-On result
-
-This event will be called after the form is submitted and API returns a response. This event is triggered in both success and failure cases.
+ |
+| On result | This event will be called after the form is submitted and API returns a response. This event is triggered in both success and failure cases. |
+|  | 
 
 Page.form1Result = function ($event, widget, $data) { 
 //$data has the response returned from the API.
 console.log(“server response:”, $data);
 };
 
-On success
-
-This event will be called after the form is submitted and API returns a success response.
+ |
+| On success | This event will be called after the form is submitted and API returns a success response. |
+|  | 
 
 Page.form1Success = function ($event, widget, $data) { 
 //$data has the response returned from the API.
 console.log(“The inserted data:”, $data);
 };
 
-On error
-
-This event will be called after the form is submitted and API returns a failure response.
+ |
+| On error | This event will be called after the form is submitted and API returns a failure response. |
+|  | 
 
 Page.form1Error = function ($event, widget, $data) { 
 //$data has the error message returned from the API.
 console.log(“Error returned from server:”, $data);
 };
+
+ |
 
 # Methods
 

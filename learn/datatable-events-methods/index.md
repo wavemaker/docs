@@ -7,14 +7,10 @@ id: ""
 
 Data Table behavior can be customized with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..
 
-Event
-
-Trigger and JavaScript Usage
-
-On row select
-
-This event will be called when a row from Data Table is selected
-
+| Event | Trigger and JavaScript Usage |
+| --- | --- |
+| On row select | This event will be called when a row from Data Table is selected |
+|  | 
 Page.\[gridname\]Select = function($event, widget, row) {
         //row: row has the selected row data. row has also the index of the row
         // Note: Row selection will happen on click of a cell. So, cell element is present in $event.
@@ -23,9 +19,9 @@ Page.\[gridname\]Select = function($event, widget, row) {
         console.log(“The row data with index:”, row.index , row); 
     };
 
-On row deselect
-
-This event will be called when a row from Data Table is deselected
+ |
+| On row deselect | This event will be called when a row from Data Table is deselected |
+|  | 
 
 Page.\[gridname\]Deselect = function($event, widget, row) {
         //row has the deselected row data. row has also the index of the row
@@ -34,9 +30,9 @@ Page.\[gridname\]Deselect = function($event, widget, row) {
         console.log(“The row data with index:”, row.index , row); 
     };
 
-On data sort
-
-This event will be called when the Data Table header is clicked to sort by a particular column.
+ |
+| On data sort | This event will be called when the Data Table header is clicked to sort by a particular column. |
+|  | 
 
 Page.grid1Sort = function($event, widget, $data) {
         //$data: $data contains the newly sorted data, colDef, and sortDirection
@@ -46,9 +42,9 @@ Page.grid1Sort = function($event, widget, $data) {
         console.log(“The sort column data:”, $data); 
     };
 
-On header click
-
-This event will be called when the Data Table header is clicked.
+ |
+| On header click | This event will be called when the Data Table header is clicked. |
+|  | 
 
 Page.\[gridname\]Headerclick = function($event, widget, column) {
          //column has the column definition data of the corresponding clicked header
@@ -58,9 +54,9 @@ Page.\[gridname\]Headerclick = function($event, widget, column) {
         console.log(“The column data with column field:”, column.field , column); 
     };
 
-On row click
-
-This event will be called when a row in Data Table is clicked. **Note** this event can happen when selecting or deselecting a row.
+ |
+| On row click | This event will be called when a row in Data Table is clicked. **Note** this event can happen when selecting or deselecting a row. |
+|  | 
 
 Page.\[gridname\]Rowclick = function($event, widget, row) {
         //row has the data of the row which is clicked and the index of the row
@@ -70,9 +66,9 @@ Page.\[gridname\]Rowclick = function($event, widget, row) {
         console.log(“The clicked row data with index:”, row.index , row); 
     };
 
-On column select
-
-This event will be called when a column in Data Table is selected.
+ |
+| On column select | This event will be called when a column in Data Table is selected. |
+|  | 
 
 Page.\[gridname\]Columnselect = function($event, widget, $data) {
         //$data has the object containing colDef, data and sortDirection. 
@@ -83,9 +79,9 @@ Page.\[gridname\]Columnselect = function($event, widget, $data) {
         console.log(“The column data with column field:”, $data.colDef.field , $data.data);
     };
 
-On column deselect
-
-This event will be called when a column in Data Table is deselected.
+ |
+| On column deselect | This event will be called when a column in Data Table is deselected. |
+|  | 
 
 Page.\[gridname\]Columndeselect = function($event, widget, $data) {
         //$data: $data contains colDef, data and sortDirection
@@ -94,12 +90,14 @@ Page.\[gridname\]Columndeselect = function($event, widget, $data) {
         console.log(“The column data with column field:”, $data.colDef.field , $data.data);
     };
 
-On row delete
-
-This event will be called when a record is deleted from the underlying data entity. **Notes:**
+ |
+| On row delete | This event will be called when a record is deleted from the underlying data entity. **Notes:**
 
 - this event will be triggered for _Editable Data Table with delete action defined_.
 - For Data Table with Form option, this event will be available in the corresponding Form widget and not with Data Table.
+
+ |
+|  | 
 
 Page.\[gridname\]Rowdelete = function($event, widget, row ) {
         //row: row has the data of the row deleted
@@ -107,12 +105,14 @@ Page.\[gridname\]Rowdelete = function($event, widget, row ) {
         console.log(“The deleted row data:”, row);
     };
 
-On before row insert
-
-This event will be called before a new record is inserted in the underlying data entity. **Notes**
+ |
+| On before row insert | This event will be called before a new record is inserted in the underlying data entity. **Notes**
 
 - this event is triggered for _Editable Data Table with insert action defined_. Use Case: Populate the date modified or modified user to the current date or logged in user
 - For Data Table with Form option, this event will be available in the corresponding Form widget and not with Data Table.
+
+ |
+|  | 
 
 Page.\[gridname\]Beforerowinsert = function($event, widget, row, options) {
         //row has the data of the new record to be inserted. This data can be modified and validated before sending the request
@@ -127,12 +127,14 @@ Page.\[gridname\]Beforerowinsert = function($event, widget, row, options) {
         row.dateModified = Date.now(); //Set today's date as modified date field
     };
 
-On row insert
-
-This event will be called after a new record is inserted in the underlying data entity. **Notes**
+ |
+| On row insert | This event will be called after a new record is inserted in the underlying data entity. **Notes**
 
 - this event is triggered only for _Editable Data Table with insert action defined_.
 - For Data Table with Form option, this event will be available in the corresponding Form widget and not with Data Table.
+
+ |
+|  | 
 
 Page.\[gridname\]Rowinsert = function($event, widget, row) {
         //row: row has the data of the the new record inserted.
@@ -141,12 +143,14 @@ Page.\[gridname\]Rowinsert = function($event, widget, row) {
         console.log(“The inserted row data:”, row);
     };
 
-On before row update
-
-This event will be called before a record is updated to the underlying data entity. **Notes**
+ |
+| On before row update | This event will be called before a record is updated to the underlying data entity. **Notes**
 
 - this event is triggered only for _Editable Data Tables with update action defined_.
 - For Data Table with Form option, this event will be available in the corresponding Form widget and not with Data Table.
+
+ |
+|  | 
 
 Page.\[gridname\]Beforerowupdate = function($event, widget, row, options) {
         //row has the data of the the record to be updated. This data can be modified and validated before sending the request
@@ -162,12 +166,14 @@ Page.\[gridname\]Beforerowupdate = function($event, widget, row, options) {
         row.dateModified = Date.now(); //Set today's date as modified date
     };
 
-On after row update
-
-This event will be called after a record is updated to the underlying data entity. **Notes:**
+ |
+| On after row update | This event will be called after a record is updated to the underlying data entity. **Notes:**
 
 - this event is triggered only for _Editable Data Tables with update action defined_.
 - For Data Table with Form option, this event will be available in the corresponding Form widget and not with Data Table.
+
+ |
+|  | 
 
 Page.\[gridname\]Rowupdate = function($event, widget, row) {
         //row has the data of the the record updated.
@@ -176,9 +182,9 @@ Page.\[gridname\]Rowupdate = function($event, widget, row) {
         console.log(“The deleted row data:”, row);
     };
 
-On before data render
-
-This event will be called the before the data is rendered in the Data Grid. **Note** the data accessible is restricted to the current page of the Data Grid. Use Case: If you want to change the display value based on the values of a column
+ |
+| On before data render | This event will be called the before the data is rendered in the Data Grid. **Note** the data accessible is restricted to the current page of the Data Grid. Use Case: If you want to change the display value based on the values of a column |
+|  | 
 
 Page.\[gridname\]Setrecord = function($event, data, columns) {
         //data has data to be rendered in table
@@ -194,9 +200,9 @@ Page.\[gridname\]Setrecord = function($event, data, columns) {
         });
     };
 
-On data render
-
-This event will be called when the data is rendered in the Data Table. **Note**: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to add a class to a particular row.
+ |
+| On data render | This event will be called when the data is rendered in the Data Table. **Note**: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to add a class to a particular row. |
+|  | 
 
 Page.\[gridname\]Datarender = function(widget, data) {
         //data: data has the data to be rendered in the current page of data table
@@ -210,11 +216,11 @@ Page.\[gridname\]Datarender = function(widget, data) {
         });
     };
 
-On Before Form Render
+ |
+| On Before Form Render | (Only for Data Table with Quick-Edit and Inline-Edit)
 
-(Only for Data Table with Quick-Edit and Inline-Edit)
-
-This event is fired on the edit of a row and before the inline form is rendered. **Note**: This gives access to data to be displayed in the form Use Case: You can use this event to edit values to be displayed in the form. Edit also can be prevented in form based on some condition.
+This event is fired on the edit of a row and before the inline form is rendered. **Note**: This gives access to data to be displayed in the form Use Case: You can use this event to edit values to be displayed in the form. Edit also can be prevented in form based on some condition. |
+|  | 
 
 Page.\[gridname\]Beforeformrender = function($event, 
 widget, $rowData, $operation) { 
@@ -235,11 +241,11 @@ widget, $rowData, $operation) {
    } 
 };
 
-On Form Render
+ |
+| On Form Render | (Only for Data Table with Quick-Edit and Inline-Edit)
 
-(Only for Data Table with Quick-Edit and Inline-Edit)
-
-This event is fired after the inline form is rendered. **Note**: This gives access to the widgets in the form. Use Case: Individual widget can be disabled based on a condition.
+This event is fired after the inline form is rendered. **Note**: This gives access to the widgets in the form. Use Case: Individual widget can be disabled based on a condition. |
+|  | 
 
 Page.\[gridName\]Formrender = function($event, widget,
 formWidgets, $operation) {
@@ -249,11 +255,11 @@ formWidgets, $operation) {
    formWidgets.role.disabled = true;
 };
 
-On Error
+ |
+| On Error | (ONLY for Data Table with Quick-Edit and Inline-Edit)
 
-(ONLY for Data Table with Quick-Edit and Inline-Edit)
-
-This event will be called after the edit/insert/delete operation returns a failure response
+This event will be called after the edit/insert/delete operation returns a failure response |
+|  | 
 
 Page.\[gridName\]Error = function($event, widget,
 $data, $operation) {
@@ -261,11 +267,11 @@ $data, $operation) {
     //$operation: operation performed - edit or new or delete
     console.log("Error returned from server:", $data);};
 
-On Before Export
+ |
+| On Before Export | (ONLY for Data Table with Export Format selected)
 
-(ONLY for Data Table with Export Format selected)
-
-This event will be called before downloading the file. Any data changes like file format changes, field expression, size changes etc can be performed here. Returning false from the script will stop the file download.
+This event will be called before downloading the file. Any data changes like file format changes, field expression, size changes etc can be performed here. Returning false from the script will stop the file download. |
+|  | 
 
 Page.hrdbDeptTable1Beforeexport = function (widget, $data) { 
     $data.exportType = 'CSV';
@@ -282,9 +288,9 @@ Page.hrdbDeptTable1Beforeexport = function (widget, $data) {
     }
 };
 
-On Before Filter
-
-This event will be called when filter is applied on Data Table and before the search is triggered by the Data Table. Search values can be modified in this method. If false is returned from the method, Data Table filter will be stopped.
+ |
+| On Before Filter | This event will be called when filter is applied on Data Table and before the search is triggered by the Data Table. Search values can be modified in this method. If false is returned from the method, Data Table filter will be stopped. |
+|  | 
 
 Page.UserTable1Beforefilter = function($event, widget, columns) {
     // Add tenantId filter always
@@ -293,57 +299,26 @@ Page.UserTable1Beforefilter = function($event, widget, columns) {
     }
 };
 
+ |
+
 ### Event Flow
 
 Following is the flow of events for each action triggered on the Data Table.
 
-Action
-
-Flow
-
-On row select
-
-Single select [![](../assets/rowclick_event1.png)](../assets/rowclick_event1.png) Row deselect will be called only if previously a row was selected
-
-Multi-Select If a selected row is clicked: [![](../assets/rowclick_event2a.png)](../assets/rowclick_event2a.png) If an unselected row is clicked: [![](../assets/rowclick_event2b.png)](../assets/rowclick_event2b.png)
-
-On Header click
-
-Column selection is enabled If a selected column is clicked: [![](../assets/headerclick_event1a.png)](../assets/headerclick_event1a.png) If an unselected column is clicked: [![](../assets/headerclick_event1b.png)](../assets/headerclick_event1b.png)
-
-Column selection is disabled & sort is enabled [![](../assets/headerclick_event2.png)](../assets/headerclick_event2.png) On Row Select row is triggered if select first record is enabled
-
-On Page Load
-
-[![](../assets/pageload_event1.png)](../assets/pageload_event1.png) If ‘Select first record’ is enabled: [![](../assets/pageload_event2.png)](../assets/pageload_event2.png)
-
-On Filter
-
-[![](../assets/filter_event1.png)](../assets/filter_event1.png) On Row Select row is triggered if select first record is enabled.
-
-On Export
-
-[![](../assets/export_event1.png)](../assets/export_event1.png)
-
-On Pagination
-
-[![](../assets/pagination_event1.png)](../assets/pagination_event1.png)
-
-On Click of edit or new buttons
-
-[![](../assets/editnew_event1.png)](../assets/editnew_event1.png)
-
-On Click of save in edit mode
-
-[![](../assets/saveedit_event1.png)](../assets/saveedit_event1.png) If before row update returns false, operation is stopped and next events are not fired
-
-On Click of save in insert mode
-
-[![](../assets/saveinsert_event1.png)](../assets/saveinsert_event1.png) If before row insert returns false, operation is stopped and next events are not fired
-
-On Click of delete button
-
-[![](../assets/delete_event1.png)](../assets/delete_event1.png) If before row delete returns false, operation is stopped and next events are not fired
+| Action | Flow |
+| --- | --- |
+| On row select | Single select [![](../assets/rowclick_event1.png)](../assets/rowclick_event1.png) Row deselect will be called only if previously a row was selected |
+| Multi-Select If a selected row is clicked: [![](../assets/rowclick_event2a.png)](../assets/rowclick_event2a.png) If an unselected row is clicked: [![](../assets/rowclick_event2b.png)](../assets/rowclick_event2b.png) |
+| On Header click | Column selection is enabled If a selected column is clicked: [![](../assets/headerclick_event1a.png)](../assets/headerclick_event1a.png) If an unselected column is clicked: [![](../assets/headerclick_event1b.png)](../assets/headerclick_event1b.png) |
+| Column selection is disabled & sort is enabled [![](../assets/headerclick_event2.png)](../assets/headerclick_event2.png) On Row Select row is triggered if select first record is enabled |
+| On Page Load | [![](../assets/pageload_event1.png)](../assets/pageload_event1.png) If ‘Select first record’ is enabled: [![](../assets/pageload_event2.png)](../assets/pageload_event2.png) |
+| On Filter | [![](../assets/filter_event1.png)](../assets/filter_event1.png) On Row Select row is triggered if select first record is enabled. |
+| On Export | [![](../assets/export_event1.png)](../assets/export_event1.png) |
+| On Pagination | [![](../assets/pagination_event1.png)](../assets/pagination_event1.png) |
+| On Click of edit or new buttons | [![](../assets/editnew_event1.png)](../assets/editnew_event1.png) |
+| On Click of save in edit mode | [![](../assets/saveedit_event1.png)](../assets/saveedit_event1.png) If before row update returns false, operation is stopped and next events are not fired |
+| On Click of save in insert mode | [![](../assets/saveinsert_event1.png)](../assets/saveinsert_event1.png) If before row insert returns false, operation is stopped and next events are not fired |
+| On Click of delete button | [![](../assets/delete_event1.png)](../assets/delete_event1.png) If before row delete returns false, operation is stopped and next events are not fired |
 
 ### Methods
 

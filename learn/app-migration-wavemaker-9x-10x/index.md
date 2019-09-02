@@ -28,13 +28,7 @@ Widgets can now be accessed directly using the context as mentioned above.
 
 For example, to refer to a Button in a Page:
 
-WaveMaker 9x
-
-WaveMaker 10x
-
-$scope.Widgets.button\_name
-
-Page.Widgets.button\_name
+<table><tbody><tr><td>WaveMaker 9x</td><td>WaveMaker 10x</td></tr><tr><td><span class="lang:js decode:true crayon-inline ">$scope.Widgets.button_name</span></td><td><span class="lang:js decode:true crayon-inline ">Page.Widgets.button_name</span></td></tr></tbody></table>
 
 ## Variable Access
 
@@ -42,23 +36,11 @@ Similar to Widgets, Variables too can now be accessed directly using the context
 
 For example, to refer to a Variable in a Page:
 
-WaveMaker 9x
-
-WaveMaker 10x
-
-$scope.Variables.variable\_name
-
-Page.Variables.variable\_name
+<table><tbody><tr><td>WaveMaker 9x</td><td>WaveMaker 10x</td></tr><tr><td><span class="lang:js decode:true crayon-inline">$scope.Variables.variable_name</span></td><td><span class="lang:js decode:true crayon-inline ">Page.Variables.variable_name</span></td></tr></tbody></table>
 
 Similarly, to refer to an App Variable from a Page:
 
-WaveMaker 9x
-
-WaveMaker 10x
-
-$scope.$root.Variables.variable\_name
-
-App.Variables.variable\_name
+<table><tbody><tr><td>WaveMaker 9x</td><td>WaveMaker 10x</td></tr><tr><td><span class="lang:js decode:true crayon-inline ">$scope.$root.Variables.variable_name</span></td><td><span class="lang:js decode:true crayon-inline">App.Variables.variable_name</span></td></tr></tbody></table>
 
 ## Dependency Injection
 

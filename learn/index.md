@@ -75,156 +75,44 @@ Technology Stack for WaveMaker 8.2.3
 
 ### UI Frameworks
 
-Description
-
-JS Library
-
-Version
-
-JS Binding
-
-jquery
-
-2.2.3
-
-jquery-ui\*
-
-1.11.4
-
-MVC Framework
-
-angular
-
-1.5.5
-
-angular-ui-bootstrap
-
-1.3.2
-
-Editor
-
-ace-editor
-
-1.2.2
-
-Styles
-
-bootstrap
-
-3.3.6
-
-Charting
-
-d3
-
-3.5.17
-
-nvd3
-
-1.8.3
-
-CORS support, prefabs
-
-xdomain
-
-0.7.5
-
-Built-in functions
-
-lodash
-
-4.12.0
-
-Device support, gestures
-
-hammerjs
-
-2.0.8
+| Description | JS Library | Version |
+| --- | --- | --- |
+| JS Binding | jquery | 2.2.3 |
+|  | jquery-ui\* | 1.11.4 |
+| MVC Framework | angular | 1.5.5 |
+|  | angular-ui-bootstrap | 1.3.2 |
+| Editor | ace-editor | 1.2.2 |
+| Styles | bootstrap | 3.3.6 |
+| Charting | d3 | 3.5.17 |
+|  | nvd3 | 1.8.3 |
+| CORS support, prefabs | xdomain | 0.7.5 |
+| Built-in functions | lodash | 4.12.0 |
+| Device support, gestures | hammerjs | 2.0.8 |
 
 \*Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
 ### Run Time Environment
 
-Description
-
-Version
-
-JDK
-
-7.0
-
-Tomcat
-
-6.0
+| Description | Version |
+| --- | --- |
+| JDK | 7.0 |
+| Tomcat | 6.0 |
 
 ### Back-end Frameworks
 
-Description
-
-Java Library
-
-Version
-
-Spring Framework
-
-4.2.o
-
-Security framework
-
-Spring Security
-
-3.2.3
-
-Java JSON utilities
-
-Gson
-
-2.2.4
-
-DB Persistence library
-
-Hibernate
-
-4.3.11
-
-Sample database
-
-HSQL
-
-2.3.3
-
-JSON library
-
-Jackson
-
-2.6.3
-
-Logging framework
-
-SLF4j
-
-1.7.12
-
-Http client library
-
-HttpComponents
-
-client-4.3.3, core-4.3.2, mime-4.2.5
-
-REST API annotations
-
-Swagger
-
-1.3.10
-
-Logging framework
-
-Log4j
-
-1.2.17
-and-export-of-projects/ "Import and Export of Projects") of projects.
-4. Do I need to register again for 7.6.0 activation?
-    - Yes, a one time activation is required even if you have registered for 7.5. If you already have registered for Studio 7.5.0, you can use the same credentials, else you need to register.
+| Description | Java Library | Version |
+| --- | --- | --- |
+|  | Spring Framework | 4.2.o |
+| Security framework | Spring Security | 3.2.3 |
+| Java JSON utilities | Gson | 2.2.4 |
+| DB Persistence library | Hibernate | 4.3.11 |
+| Sample database | HSQL | 2.3.3 |
+| JSON library | Jackson | 2.6.3 |
+| Logging framework | SLF4j | 1.7.12 |
+| Http client library | HttpComponents | client-4.3.3, core-4.3.2, mime-4.2.5 |
+| REST API annotations | Swagger | 1.3.10 |
+| Logging framework | Log4j | 1.2.17 |
+red for 7.5. If you already have registered for Studio 7.5.0, you can use the same credentials, else you need to register.
 5. How do I uninstall 7.5.0?
     - Uninstall option is given in the desktop installation. But be aware your projects will be deleted on uninstall of Studio 7.5.0, if you have selected the Force delete option.
 6. Why am I getting "HTTP 404 Error"?

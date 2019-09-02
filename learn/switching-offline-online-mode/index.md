@@ -11,69 +11,21 @@ Mobile Apps switch between online and offline modes based on the network connec
 
 Following are the network scenarios and the state of WaveMaker apps:
 
-The network is available
-
-The app connected to the backend server
-
-The app is in online mode.
-
-The network is not available
-
-The app is in offline mode.
-
-The network is available
-
-The backend server is not available
-
-The app is in offline mode.
-
-Network and backend server is available
-
-The app is not connected
-
-The app is in offline mode.
-
-(The app goes into this state when ‘goOffline’ operation is invoked.)
-
-The app is trying to connect to backend server
-
-This is an intermediate state and app will be online or offline based on the success of the operation.
+<table><tbody><tr><td><p style="text-align: left;">The network is available</p><p style="text-align: left;">The app connected to the&nbsp;backend server</p></td><td>The app is in&nbsp;online mode.</td></tr><tr><td style="text-align: left;">The network is not available</td><td>The app is in&nbsp;offline mode.</td></tr><tr><td><p style="text-align: left;">The network is available</p><p style="text-align: left;">The&nbsp;backend server is not available</p></td><td>The app is in&nbsp;offline mode.</td></tr><tr><td><p style="text-align: left;">Network and backend server is available</p><p style="text-align: left;">The&nbsp;app is not connected</p></td><td>The app is in&nbsp;offline mode.<div></div>(The app goes into this state&nbsp;when ‘goOffline’ operation is invoked.)</td></tr><tr><td style="text-align: left;">The app is trying to connect to backend server</td><td>This is an intermediate state and app will be online or offline based on the success of the&nbsp;operation.</td></tr></tbody></table>
 
 ### Implementation
 
 A tag in _index.html_ called ‘**wm-network-info-toaster**’ will display the network info toaster when there is app network status change. Messages shown in the toaster are part of the app’s localized messages. Following are the keys to these messages.
 
-Key
-
-Message
-
-LABEL\_HIDE\_NETWORK\_INFO
-
-Hide
-
-LABEL\_CONNECT\_TO\_SERVICE
-
-Connect
-
-MESSAGE\_SERVICE\_NOT\_AVAILABLE
-
-Service is not reachable.
-
-MESSAGE\_NETWORK\_NOT\_AVAILABLE
-
-Network not available.
-
-MESSAGE\_SERVICE\_AVAILABLE
-
-Service is available.
-
-MESSAGE\_SERVICE\_CONNECTING
-
-Connecting to server.
-
-MESSAGE\_SERVICE\_CONNECTED
-
-You are online.
+| Key | Message |
+| --- | --- |
+| LABEL\_HIDE\_NETWORK\_INFO | Hide |
+| LABEL\_CONNECT\_TO\_SERVICE | Connect |
+| MESSAGE\_SERVICE\_NOT\_AVAILABLE | Service is not reachable. |
+| MESSAGE\_NETWORK\_NOT\_AVAILABLE | Network not available. |
+| MESSAGE\_SERVICE\_AVAILABLE | Service is available. |
+| MESSAGE\_SERVICE\_CONNECTING | Connecting to server. |
+| MESSAGE\_SERVICE\_CONNECTED | You are online. |
 
 **NOTES**:
 

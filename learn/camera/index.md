@@ -22,81 +22,29 @@ You can use the _localFilePath_ and _localFile_ to further enhance the app funct
 
 # Properties
 
-**Property**
-
-**Description**
-
-Name
-
-The name is a unique identifier for the Camera. Special characters and spaces are not allowed in widget name.
-
-**Accessibility**
-
-Hint
-
-Any text or HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
-
-**Default Value**
-
-Value
-
-This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
-
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Load on Demand (visible only when show property is bound to a variable)
-
-When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
-
-Capture Type
-
-This specifies whether the image or video that is to be captured.
-
-**Graphics**
-
-Icon Class
-
-This bindable property defines the class of the icon that is applied to the button.
-
-Icon Size
-
-This property defines the size of the icon. Value has to be specified along with the units (em or px).
-
-**Format**
-
-Horizontal Align
-
-This property specifies how the elements should be aligned horizontally - left, center or right.
-
-**Image Properties**
-
-Target Width
-
-This property specifies the width in px to resize the image.
-
-Target Height
-
-This property specifies the height in px to resize the image.
-
-Image Quality
-
-Quality of the saved image expressed as a range of 0-100, where 100 is typically full resolution with no loss of file compression
-
-Encoding Type
-
-Choose the returned image file's encoding. The default is JPEG.
-
-Save to Gallery
-
-Save the image to the photo album on the device after capture
-
-Edit
-
-Allow simple editing of the image before selection.
+| **Property** | **Description** |
+| --- | --- |
+| Name | The name is a unique identifier for the Camera. Special characters and spaces are not allowed in widget name. |
+| **Accessibility** |
+| Hint | Any text or HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
+| **Default Value** |
+| Value | This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget. |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| Capture Type | This specifies whether the image or video that is to be captured. |
+| **Graphics** |
+| Icon Class | This bindable property defines the class of the icon that is applied to the button. |
+| Icon Size | This property defines the size of the icon. Value has to be specified along with the units (em or px). |
+| **Format** |
+| Horizontal Align | This property specifies how the elements should be aligned horizontally - left, center or right. |
+| **Image Properties** |
+| Target Width | This property specifies the width in px to resize the image. |
+| Target Height | This property specifies the height in px to resize the image. |
+| Image Quality | Quality of the saved image expressed as a range of 0-100, where 100 is typically full resolution with no loss of file compression |
+| Encoding Type | Choose the returned image file's encoding. The default is JPEG. |
+| Save to Gallery | Save the image to the photo album on the device after capture |
+| Edit | Allow simple editing of the image before selection. |
 
 # Events
 

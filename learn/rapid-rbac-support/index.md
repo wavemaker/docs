@@ -55,20 +55,20 @@ Apart from these, roles can be created and defined as per the enterprise needs. 
 
 As mentioned earlier, default roles are set by the Platform. Of these roles, some can be customized. Here is the list of roles and permissions that are provided: The following roles CANNOT be customized:
 
-Role
-
-Permissions
-
-Project Admin
-
+| Role | Permissions |
+| --- | --- |
+| Project Admin | 
 - All Studio Permissions
 
-Default
+ |
+| Default | 
 
 - Pages - Create, Edit, Delete, and View
 - Services - View Databases, View Java Services, View REST Services, View SOAP Services, View Websocket Sevices, View API's,
 - View Settings,
 - View User Management
+
+ |
 
 ## Role Creation and Assignment
 
@@ -136,136 +136,150 @@ By default, only Project Admin can create projects and members added will be ass
 
 As mentioned earlier, two default roles are set by the Platform. You can add roles and assign permissions based upon app requirements. The following is a list of permissions that can be set:
 
-Category
-
-Permissions
-
-Pages
-
+| Category | Permissions |
+| --- | --- |
+| Pages | 
 - Create Pages
 - Edit Pages
 - Delete Pages
 - View Pages
 
-Database Services
+ |
+| Database Services | 
 
 - Create/Import Database
 - Edit Database
 - Delete Database
 - View Database
 
-Database - Queries
+ |
+| Database - Queries | 
 
 - Create Queries
 - Edit Queries
 - Delete Queries
 - View Queries
 
-Database - Procedures
+ |
+| Database - Procedures | 
 
 - Create Procedures
 - Edit Procedures
 - Delete Procedures
 - View Procedures
 
-Java Service
+ |
+| Java Service | 
 
 - Create Java Service
 - Edit Java Service
 - Delete Java Service
 - View Java Service
 
-REST Service
+ |
+| REST Service | 
 
 - Import REST Service
 - Edit REST Service
 - Delete REST Service
 - View REST Service
 
-SOAP Service
+ |
+| SOAP Service | 
 
 - Import SOAP Service
 - Edit SOAP Service
 - Delete SOAP Service
 - View SOAP Service
 
-Web Socket Service
+ |
+| Web Socket Service | 
 
 - Import Web Socket Service
 - Edit Web Socket Service
 - Delete Web Socket Service
 - View Web Socket Service
 
-API Designer
+ |
+| API Designer | 
 
 - Edit API Designer
 - View API Designer
 
-Security Service
+ |
+| Security Service | 
 
 - Configure Security Service
 
-Category
+ |
 
-Permissions
-
-i18n
-
+| Category | Permissions |
+| --- | --- |
+| i18n | 
 - Configure Languages
 - Delete Language
 - View i18n
 - Edit Messages
 
-VCS
+ |
+| VCS | 
 
 - Push, Pull, and View Log
 - Pull & View Log
 - Push
 - Push to External Repo
 
-Prefabs
+ |
+| Prefabs | 
 
 - Import Prefab
 - Delete Prefab
 
-Tools
+ |
+| Tools | 
 
 - DB Console
 - File Explorer
 
-Profiles
+ |
+| Profiles | 
 
 - Configure Profiles
 
-Artifacts
+ |
+| Artifacts | 
 
 - Import Artifacts
 - View Artifacts
 
-Themes
+ |
+| Themes | 
 
 - Import Themes
 - Change Themes
 - View Themes
 
-Mobile
+ |
+| Mobile | 
 
 - Export as Cordova zip
 - Send to PhoneGap
 - Build for Android
 
-Category
+ |
 
-Permissions
-
-Project Actions
-
+| Category | Permissions |
+| --- | --- |
+| Project Actions | 
 - Export Project as Zip
 - Export Project as Shell
 - Export Project as Prefab
 - Export Project as Template Bundle
 - Update Sources
 - Enable Workspace Sync
+
+ |
+| 
 
 - Export Project as WAR
 - Deploy Project
@@ -274,11 +288,19 @@ Project Actions
 - Publish Project Shell To EDN
 - Publish Project shell to Workspace
 
+ |
+| 
+
 - View Settings
 - Configure Settings
 
+ |
+| 
+
 - View User Management
 - Configures User Permissions
+
+ |
 
 < Pre-Requisites
 

@@ -32,12 +32,9 @@ Project Roles can also be assigned or updated from the Project Workspace using t
 
 Here is the list of roles and permissions that are provided:
 
-Role
-
-Permissions
-
-Project Admin
-
+| Role | Permissions |
+| --- | --- |
+| Project Admin | 
 - Pages - Create, Edit, Delete, and View
 - REST Services - Import, Edit, Delete, and View
 - SOAP Services - Import, Edit, Delete, and View
@@ -48,6 +45,8 @@ Project Admin
 - Prefabs - Import, and Delete
 - Artifacts - View, and Import
 
+ | 
+
 - Security - View, and Configure
 - API Designer - View, and Edit API's
 - VCS - Pull & View Log, Push to VCS, Push to External Repository, and Sync Workspace
@@ -57,15 +56,19 @@ Project Admin
 - Project Management - Release Management
 - Project Actions - Export Project as Zip, Export Project as Shell, Export Project as Prefab, Export Project as Template Bundle, Update Sources, Enable Workspace Sync, Export Project as WAR, Deploy Project, Publish Prefab To EDN, Publish Prefab to Workspace, Publish Project Shell To EDN, Publish Project shell to Workspace, Publish Template Bundle To EDN, Publish Template Bundle To Workspace, View Settings, Configure Settings, View User Management, Configures User Permissions, Delete Project, and Publish Theme To EDN
 
-Default
+ |
+| Default | 
 
 - Pages - View
 - Services - View Databases, View Java Services, View REST Services, View SOAP Services, View Websocket Sevices, View API's
 
+ | 
+
 - Project Actions - View Settings, View User Management
 - VCS - Pull & View Logs
 
-Contributor
+ |
+| Contributor | 
 
 - Pages - Create, Edit, Delete, and View
 - REST Services - Import, Edit, Delete, and View
@@ -77,6 +80,8 @@ Contributor
 - Prefabs - Import, and Delete
 - Artifacts - View
 
+ | 
+
 - Security - View, and Configure
 - API Designer - View, and Edit API's
 - VCS - Pull & View Log, Push to VCS, and Sync Workspace
@@ -84,6 +89,8 @@ Contributor
 - i18n - Configure Languages and Edit messages
 - Tools - DB Console, and File Explorer
 - Project Actions - View Settings, View User Management, Export Project as Zip, Export Project as Shell, Export Project as Prefab, Export Project as Template Bundle, Update Sources, Enable Workspace Sync, Export Project as WAR, Publish Prefab to Workspace, Publish Project shell to Workspace, Publish Template Bundle To Workspace
+
+ |
 
 < WaveMaker Localization
 

@@ -86,22 +86,16 @@ A typical event flow when a variable is used to update data would be:
 - onBeforeDeleteRecord for Database CRUD Variable with DELETE operation
 - onBeforeUpdate for all types of variables except Database CRUD Variable
 
-Event
-
-Description
-
-**onCanUpdate**
-
-This event is called as soon as the variable is ready to be triggered to hit the target service.
-
-**onBeforeListRecords** (for READ operation of Database CRUD variable)
-
-This event is called just before the variable is triggered to hit the target service. “dataFilter” contains an object based on the filter criteria set (that appear under the “Filter Criteria” tab of Variable definition dialog). Each criteria contains the following information - Field Name, Condition, and Value. You can retrieve the criteria using the following method: dataFilter.getCriteria(“field-name”) and make any changes. Allowed actions on the criteria are:
-
+| Event | Description |
+| --- | --- |
+| **onCanUpdate** | This event is called as soon as the variable is ready to be triggered to hit the target service. |
+| **onBeforeListRecords** (for READ operation of Database CRUD variable) | This event is called just before the variable is triggered to hit the target service. “dataFilter” contains an object based on the filter criteria set (that appear under the “Filter Criteria” tab of Variable definition dialog). Each criteria contains the following information - Field Name, Condition, and Value. You can retrieve the criteria using the following method: dataFilter.getCriteria(“field-name”) and make any changes. Allowed actions on the criteria are:
 - Retrieve/Validate data of a particular field.
 - Change the value of a particular field.
 
-**Usage Examples**
+ |
+| **Usage Examples** |
+| 
 
 Example 1: Filter Criteria can be changes as per your use case.
 
@@ -116,6 +110,9 @@ Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, option
   };
 };
 
+ |
+| 
+
 Example 2: Stop execution for a given condition.
 
 Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, options) {
@@ -129,13 +126,12 @@ Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, option
   };
 };
 
-For Database CRUD Variables
+ |
+| For Database CRUD Variables
 
-**onBeforeUpdateRecord** (for Update operation) **onBeforeInsertRecord** (for Insert operation) **onBeforeDeleteRecord** (for Delete operation)
-
-These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place.
-
-**Usage Examples**
+**onBeforeUpdateRecord** (for Update operation) **onBeforeInsertRecord** (for Insert operation) **onBeforeDeleteRecord** (for Delete operation) | These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place. |
+| **Usage Examples** |
+| 
 
 Example 1: Input data can be modified by simply modifying the “inputData” parameter passed to the function. Please note, calling setInput on the Variable from this event is not valid. “inputData” param should directly be modified.
 
@@ -144,6 +140,9 @@ Page.empInsertonBeforeInsertRecord = function(variable, inputData, options) {
     inputData.firstname = "Steve";
     inputData.lastname = "Rogers";
 };
+
+ |
+| 
 
 Example 2: Input data can also be modified by returning a new set of input data (object having key-value pair of input data)
 
@@ -155,6 +154,9 @@ Page.empInsertonBeforeInsertRecord = function(variable, inputData, options) {
     };
     return new\_data;
 };
+
+ |
+| 
 
 Example 3: If the call to the target service is to be blocked due to any validation failure, return false
 
@@ -166,13 +168,12 @@ Page.empInsertonBeforeInsertRecord= function(variable, inputData, options) {
     }
 };
 
-For all Variables except Database Crud Variables
+ |
+| For all Variables except Database Crud Variables
 
-**onBeforeUpdate**
-
-These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place.
-
-**Usage Examples**
+**onBeforeUpdate** | These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place. |
+| **Usage Examples** |
+| 
 
 Example 1: Input data can be modified by simply modifying the “inputData” parameter passed to the function. Please note, calling setInput on the Variable from this event is not valid. “inputData” param should directly be modified.
 
@@ -181,6 +182,9 @@ Page.MyJavaServiceVariableonBeforeUpdateRecord = function(variable, inputData, o
     inputData.firstname = "Steve";
     inputData.lastname = "Rogers";
 };
+
+ |
+| 
 
 Example 2: Input data can also be modified by returning a new set of input data (object having key-value pair of input data)
 
@@ -193,6 +197,9 @@ Page.MyJavaServiceVariableonBeforeUpdate = function(variable, inputData, options
     return new\_data;
 };
 
+ |
+| 
+
 Example 3: If the call to the target service is to be blocked due to any validation failure, return false
 
 Page.MyJavaServiceVariableonBeforeUpdate = function(variable, inputData, options) {
@@ -203,15 +210,11 @@ Page.MyJavaServiceVariableonBeforeUpdate = function(variable, inputData, options
     }
 };
 
-**onResult**
-
-This event is triggered as soon as the variable receives a response from the target service. onResult is called whether or not there was an error generated. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables.
-
-**onBeforeDatasetReady**
-
-This event is triggered just before the variable's dataSet property is updated with the data received from the target service (after onResult). This event handler gives you the opportunity to manipulate the data before your variable’s dataSet property is assigned this value. If you want to add rows to a Grid or List or Select, this is a good way to add in extra items into your results before your variable is set and your widget is updated. The new data can be returned from here in order to update the Variable’s dataSet.
-
-**Usage Examples**
+ |
+| **onResult** | This event is triggered as soon as the variable receives a response from the target service. onResult is called whether or not there was an error generated. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
+| **onBeforeDatasetReady** | This event is triggered just before the variable's dataSet property is updated with the data received from the target service (after onResult). This event handler gives you the opportunity to manipulate the data before your variable’s dataSet property is assigned this value. If you want to add rows to a Grid or List or Select, this is a good way to add in extra items into your results before your variable is set and your widget is updated. The new data can be returned from here in order to update the Variable’s dataSet. |
+| **Usage Examples** |
+| 
 
 Example 1: “data” is the response received from the target service. This event gives a chance to process this data before it is assigned to the Variable’s “dataSet” property. Please note, calling setData on the Variable from this event is not valid. Modified “data” should be returned from this event.
 
@@ -229,13 +232,9 @@ Page.HrdbEmployeeDataonBeforeDatasetReady = function(variable, data) {
     }
 };
 
-**onSuccess**
-
-Allows you to trigger an action when the Variable has completed its life cycle. Any component bound to the resultant dataSet of this Variable will be updated just before this event is triggered. So, If you want to trigger another Variable which is dependent on the dataSet of this Variable, the Variable should be triggered by this event. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables.
-
-**onError**
-
-This event is called if there is an error generated during the Service call. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables.
+ |
+| **onSuccess** | Allows you to trigger an action when the Variable has completed its life cycle. Any component bound to the resultant dataSet of this Variable will be updated just before this event is triggered. So, If you want to trigger another Variable which is dependent on the dataSet of this Variable, the Variable should be triggered by this event. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
+| **onError** | This event is called if there is an error generated during the Service call. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
 
 **NOTE**: WaveMaker supports binding multiple actions to a given event, i.e. a given event can trigger multiple actions.
 

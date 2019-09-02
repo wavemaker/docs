@@ -13,23 +13,10 @@ In this document, we will explain how to add/increase the developer and deployme
 
 Adding an instance to either Studio or Cloud aids in the scalability of the VM in terms of application development and deployment, respectively. [![](../assets/WME_instance.png)](../assets/WME_instance.png) Each added Studio and Cloud instance would allow for a specific number of app developments and app deployments. These numbers will vary based on the WME version, refer to the table below for the exact numbers.
 
-WME Version
-
-Developer logins per 16GB WaveMaker Studio Instance
-
-App Deployments per 16GB WaveMaker Cloud Instance
-
-v10.0
-
-14
-
-22
-
-v9.4.0
-
-14
-
-22
+| WME Version | Developer logins per 16GB WaveMaker Studio Instance | App Deployments per 16GB WaveMaker Cloud Instance |
+| --- | --- | --- |
+| v10.0 | 14 | 22 |
+| v9.4.0 | 14 | 22 |
 
 The actual app development and deployment support are further determined by your license terms. This means that, even if your infrastructure has the capacity, the apps that can be developed and deployed is restricted by your license terms. Similarly, even though your license terms allow, the apps that can be developed and deployed are limited by the infrastructure capacity.
 

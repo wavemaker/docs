@@ -33,62 +33,16 @@ The following are prerequisites to setup WaveMaker Enterprise. The below-menti
 
 WaveMaker Enterprise can be installed on any machine with Operating system Ubuntu 16.04.6 LTS.  Before you start setting up the WaveMaker Enterpris, here is a list of a minimum and recommended System Requirements for the WME Platform Instance:
 
-**Memory**
-
-- Minimum 16GB
-
-**CPU**
-
-- 4-cores, single CPU system
-- Intel Virtualization Technology (VT-x) enabled
-- Hyperthreading (HT) disabled
-
-**Hard Disk**
-
-- Minimum 250 GB to be allocated to Platform machine
-- In case of Cloud setups we recommend 3 disks
-    - /                      50 GB
-    - /wm-data        150 GB
-    - /wm-runtime   50 GB
-- Minimum 100 GB to be allocated for additional machines(Developer workspace/Deployed Apps)
-
-**Network**
-
-- Static IP with valid DNS
-- Ports 80, 443, 8080
-- Ports to be opened on added instance for access from platform instance:
-    - TCP: 22 80 2375 2200-2299 8000-8099 9400-9499 9500-9599 9100-9199
-    - ICMP: Enable CMP -IPv4
-- Additional ports to be opened on platform instance for access from added instances:
-    - TCP: 3000, 3030, 8000-8008, 8081, 8500, 5000, 5555, 5601, 9200, 9100, 9101, 9090, 9093, 9400-9499
-
-**Host OS**
-
-- Ubuntu 16.04.6 LTS
-- Kernel 4.4 or 4.15
-- Python 3.5 or higher
+<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li><li>Intel Virtualization Technology (VT-x) enabled</li><li>Hyperthreading (HT) disabled</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;250 GB to be allocated to Platform machine</li><li>In case of Cloud setups we recommend 3 disks<ul><li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 GB</li><li>/wm-data&nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li><li>/wm-runtime&nbsp; &nbsp;50 GB</li></ul></li><li>Minimum 100 GB to be allocated for additional machines(Developer workspace/Deployed Apps)</li></ul></td></tr><tr><td><strong>Network</strong></td><td><ul><li>Static IP with valid DNS</li><li>Ports 80, 443, 8080</li><li>Ports to be opened on added instance for access from platform instance:<ul><li>TCP: 22 80 2375 2200-2299 8000-8099 9400-9499 9500-9599 9100-9199</li><li>ICMP: Enable CMP -IPv4</li></ul></li><li>Additional ports to be opened on platform&nbsp;instance for access from added instances:<ul><li>TCP: 3000, 3030, 8000-8008, 8081, 8500, 5000, 5555, 5601, 9200, 9100, 9101, 9090, 9093, 9400-9499</li></ul></li></ul></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 16.04.6 LTS</li><li>Kernel 4.4 or 4.15</li><li>Python 3.5 or higher</li></ul></td></tr></tbody></table>
 
 #### System Requirements for Additional Instances
 
 Adding an instance to either User workspace or Deployed Apps aids in the scalability of the WME setup in terms of application development and deployment, respectively. Each addedUser workspace or Deployed Apps instances would allow for a specific number of app developments and app deployments. These numbers will vary based on the WME version, refer to the table below for the exact numbers.
 
-WME Version
-
-Developer logins per 16GB WaveMaker Studio Instance
-
-App Deployments per 16GB WaveMaker Cloud Instance
-
-v10.0
-
-14
-
-22
-
-v9.4.0
-
-14
-
-22
+| WME Version | Developer logins per 16GB WaveMaker Studio Instance | App Deployments per 16GB WaveMaker Cloud Instance |
+| --- | --- | --- |
+| v10.0 | 14 | 22 |
+| v9.4.0 | 14 | 22 |
 
 The actual app development and deployment support are further determined by your license terms. This means that, even if your infrastructure has the capacity, the apps that can be developed and deployed is restricted by your license terms. Similarly, even though your license terms allow, the apps that can be developed and deployed are limited by the infrastructure capacity. **Note** different instances needs to be added to each stage in the release pipeline as explained in the Increasing Deployment Capacity section.
 
@@ -131,23 +85,10 @@ You will be needing IP Addresses for the following.
     - In case of AWS instance: Private static IP for the instance within your VPC (assigned via eth0 or via ENI on eth1,ens5)
     - **DNS Mapping**: Map a domain to the above IP for easy access:
         
-        **Domain**
-        
-        **Domain URL**
-        
-        **Description**
-        
-        WaveMaker Studio
-        
-        `wavemaker.[mycompany].com`
-        
-        This domain will be used to access WaveMaker Studio
-        
-        WaveMaker Deployed Apps
-        
-        `qa.wmcloud.[mycompany].com` `stage.wmcloud.[mycompany].com` `live.wmcloud.[mycompany].com`
-        
-        These domains will be used to access WaveMaker Studio apps deployed onto WaveMaker Cloud
+        | **Domain** | **Domain URL** | **Description** |
+        | --- | --- | --- |
+        | WaveMaker Studio | `wavemaker.[mycompany].com` | This domain will be used to access WaveMaker Studio |
+        | WaveMaker Deployed Apps | `qa.wmcloud.[mycompany].com` `stage.wmcloud.[mycompany].com` `live.wmcloud.[mycompany].com` | These domains will be used to access WaveMaker Studio apps deployed onto WaveMaker Cloud |
         
         Note: In the preceding table, `[mycompany]` is used as an example. You may have to replace `[mycompany]` with your appropriate domain name.
 - **Docker Container Access**: You will be needing to assign a /16 [CIDR ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) to Docker during setup. This IP range should not be in use anywhere on your network and can be completely different from your network’s range. These IPs are assigned internally by Docker to containers and these IPs won’t be exposed on your network. For example, if your network is using a _10.x.x.x_ range and the range _192.168.x.x_ is not used anywhere in your network, you may assign this _192.168.x.x_ range to Docker. See [here](https://en.wikipedia.org/wiki/Private_network#Private_IPv4_address_spaces) for the possible LAN IP ranges.

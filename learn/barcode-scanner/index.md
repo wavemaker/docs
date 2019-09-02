@@ -16,38 +16,16 @@ Barcode scanner has two main properties.
 
 # Properties
 
-**Property**
-
-**Description**
-
-Caption
-
-The caption is the text that the end user sees.
-
-Name
-
-The name is a unique identifier for the Barcode Scanner. Special characters and spaces are not allowed in widget name.
-
-**Default Value**
-
-Value
-
-This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
-
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Load on Demand (visible only when show property is bound to a variable)
-
-When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
-
-Bar Code Format
-
-You can restrict the format of the barcode to scan based on your app requirement.
-
+| **Property** | **Description** |
+| --- | --- |
+| Caption | The caption is the text that the end user sees. |
+| Name | The name is a unique identifier for the Barcode Scanner. Special characters and spaces are not allowed in widget name. |
+| **Default Value** |
+| Value | This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget. |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| Bar Code Format | You can restrict the format of the barcode to scan based on your app requirement.
 The format can be:
 
 - CODABAR (not supported in iOS),
@@ -66,21 +44,12 @@ The format can be:
 - UPC\_A,
 - ALL is the default setting. This option can be used to scan any barcode format listed above except PDF\_417 and RSS\_EXPANDED.
 
-**Graphics**
-
-Icon Class
-
-This bindable property defines the class of the icon that is applied to the button.
-
-Icon Size
-
-This property defines the size of the icon. Value has to be specified along with the units (em or px).
-
-**Format**
-
-Horizontal Align
-
-This property specifies how the elements should be aligned horizontally - left, center or right.
+ |
+| **Graphics** |
+| Icon Class | This bindable property defines the class of the icon that is applied to the button. |
+| Icon Size | This property defines the size of the icon. Value has to be specified along with the units (em or px). |
+| **Format** |
+| Horizontal Align | This property specifies how the elements should be aligned horizontally - left, center or right. |
 
 # Events
 

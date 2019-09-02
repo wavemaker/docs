@@ -27,49 +27,18 @@ To set the properties of the calendar widget through script, access the properti
 
 Other properties which can be set using the similar methods:
 
-Method
-
-Description
-
-allDaySlot
-
-Determines if the title ("all-day") slot is displayed at the top of the calendar. When false, all-day events will not be displayed in agenda views.
-
-allDayText
-
-The text for title ("all-day") slot at the top of the calendar.
-
-slotDuration
-
-The frequency for displaying time slots. Default: '00:30:00' (30 minutes)
-
-slotLabelFormat
-
-Determines the time-text that will be displayed on the vertical axis of the agenda views. default: 'h(:mm)a' The default English value will produce times that look like "5pm" and "5:30pm".
-
-slotLabelInterval
-
-Determines how often the time-axis is labelled with text displaying the date/time of slots.
-
-snapDuration
-
-If not specified, this value is automatically computed from slotDuration. With slotDuration's default value of 30 minutes, this value will be 1 hour.
-
-scrollTime
-
-Determines how far down the scroll pane is initially scrolled down. default: '06:00:00' (6am). The user will be able to scroll upwards to see events before this time. If you want to prevent users from doing this, use the minTime option instead.
-
-minTime
-
-Determines the starting time that will be displayed, even when the scrollbars have been scrolled all the way up. default: "00:00:00" The default "00:00:00" means the start time will be at the very beginning of the day (midnight).
-
-maxTime
-
-Determines the end time (exclusively) that will be displayed, even when the scrollbars have been scrolled all the way down. default: "24:00:00" The default "24:00:00" means the end time will be at the very end of the day (midnight).
-
-slotEventOverlap
-
-Determines if timed events in agenda view should visually overlap. default: true. When set to true (the default), events will overlap each other. At the most half of each event will be obscured. When set to false, there will be absolutely no overlapping.
+| Method | Description |
+| --- | --- |
+| allDaySlot | Determines if the title ("all-day") slot is displayed at the top of the calendar. When false, all-day events will not be displayed in agenda views. |
+| allDayText | The text for title ("all-day") slot at the top of the calendar. |
+| slotDuration | The frequency for displaying time slots. Default: '00:30:00' (30 minutes) |
+| slotLabelFormat | Determines the time-text that will be displayed on the vertical axis of the agenda views. default: 'h(:mm)a' The default English value will produce times that look like "5pm" and "5:30pm". |
+| slotLabelInterval | Determines how often the time-axis is labelled with text displaying the date/time of slots. |
+| snapDuration | If not specified, this value is automatically computed from slotDuration. With slotDuration's default value of 30 minutes, this value will be 1 hour. |
+| scrollTime | Determines how far down the scroll pane is initially scrolled down. default: '06:00:00' (6am). The user will be able to scroll upwards to see events before this time. If you want to prevent users from doing this, use the minTime option instead. |
+| minTime | Determines the starting time that will be displayed, even when the scrollbars have been scrolled all the way up. default: "00:00:00" The default "00:00:00" means the start time will be at the very beginning of the day (midnight). |
+| maxTime | Determines the end time (exclusively) that will be displayed, even when the scrollbars have been scrolled all the way down. default: "24:00:00" The default "24:00:00" means the end time will be at the very end of the day (midnight). |
+| slotEventOverlap | Determines if timed events in agenda view should visually overlap. default: true. When set to true (the default), events will overlap each other. At the most half of each event will be obscured. When set to false, there will be absolutely no overlapping. |
 
 Google Calendar Integration**Prerequisites**:
 

@@ -5,39 +5,7 @@ id: ""
 
 The POC solution for the following three apps:
 
-**App**
-
-**Link**
-
-**Email/Password**
-
-**(case sensitive)**
-
-MyFix Admin 
-
-[View](http://pk3sg9gjkbf9.cloud.wavemakeronline.com/Myfix_admin/) (Any browser)
-
-admin@admin.com/admin
-
-MyFix Customer
-
-[Download](https://drive.google.com/open?id=1GflUobX69ybnrUhnnEesFQHOXHdGMFk5) (Android)
-
-Download
-
-(iPhone)
-
-adam@adam.com/adam
-
-MyFix Professional
-
-[Download](https://drive.google.com/file/d/1vgdvlPBMTKLZ4IG4h9uh34DMYjk7F_id/view?usp=sharing) (Android)
-
-Download
-
-(iPhone)
-
-henry@henry.com/henry
+<table><tbody><tr><td><span style="color: #00ccff;"><b>App</b></span></td><td colspan="2"><span style="color: #00ccff;"><b>Link</b></span></td><td><span style="color: #00ccff;"><b>Email/Password</b></span><div></div><span style="color: #00ccff;"><b>(case sensitive)</b></span></td></tr><tr><td><span style="font-weight: 400;">MyFix Admin&nbsp;</span></td><td colspan="2"><a href="http://pk3sg9gjkbf9.cloud.wavemakeronline.com/Myfix_admin/"><span style="font-weight: 400;">View</span></a><span style="font-weight: 400;"> (Any browser)</span></td><td><span style="font-weight: 400;">admin@admin.com/admin</span></td></tr><tr><td><span style="font-weight: 400;">MyFix Customer</span></td><td><a href="https://drive.google.com/open?id=1GflUobX69ybnrUhnnEesFQHOXHdGMFk5"><span style="font-weight: 400;">Download</span></a><span style="font-weight: 400;"> (Android)</span></td><td><span style="font-weight: 400;">Download</span><div></div><span style="font-weight: 400;">(iPhone)</span></td><td><span style="font-weight: 400;">adam@adam.com/adam</span></td></tr><tr><td><span style="font-weight: 400;">MyFix Professional</span></td><td><a href="https://drive.google.com/file/d/1vgdvlPBMTKLZ4IG4h9uh34DMYjk7F_id/view?usp=sharing"><span style="font-weight: 400;">Download</span></a> <span style="font-weight: 400;"></span><span style="font-weight: 400;">(Android)</span></td><td><span style="font-weight: 400;">Download</span><div></div><span style="font-weight: 400;">(iPhone)</span></td><td><span style="font-weight: 400;">henry@henry.com/henry</span></td></tr></tbody></table>
 
 ## My Fix Admin Web App
 

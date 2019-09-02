@@ -13,17 +13,7 @@ This document contains the prerequisites and the pre-setup instructions for Wave
 
 The VM should have the following minimum configuration:
 
-**vCPU**
-
-- 4
-
-**Memory**
-
-- Minimum 16GB
-
-**Root volume**
-
-- 100GB
+<table><tbody><tr><td><strong>vCPU</strong></td><td><ul><li>4</li></ul></td></tr><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>Root volume</strong></td><td><ul><li>100GB</li></ul></td></tr></tbody></table>
 
 ### IP Addressing Requirements
 

@@ -71,55 +71,31 @@ We will show the steps in creating Variable using the Data Table widget. The ste
 
 # Properties
 
-**Property**
+| **Property** | **Description** |
+| --- | --- |
+| **Server Options** Available only for Query APIs |
+| Records per request
+(Available only for Query APIs) | This property sets the number of records to be fetched at runtime. It can be set to a value with 100 being maximum allowed value. 0 is invalid and entering the same will reset it to the default value. The default value is 20.
 
-**Description**
+In the Development profile, the maximum limit is set to 100 records for optimized performance. For Deployment profile, you can change this limit by changing the change the "Records per Request" for the Database from the Config Profiles for Deployment Profile. |
+| Order by
 
-**Server Options** Available only for Query APIs
+(Available only for Query APIs) | Property to use for ordering the data. Sorting can be in ascending or descending order. By default, it is set to the Primary Key Field ascending order. You can add more fields, or delete this setting.
 
-Records per request
-
-(Available only for Query APIs)
-
-This property sets the number of records to be fetched at runtime. It can be set to a value with 100 being maximum allowed value. 0 is invalid and entering the same will reset it to the default value. The default value is 20.
-
-In the Development profile, the maximum limit is set to 100 records for optimized performance. For Deployment profile, you can change this limit by changing the change the "Records per Request" for the Database from the Config Profiles for Deployment Profile.
-
-Order by
-
-(Available only for Query APIs)
-
-Property to use for ordering the data. Sorting can be in ascending or descending order. By default, it is set to the Primary Key Field ascending order. You can add more fields, or delete this setting.
-
-**Usage**: You can select the fields to which you want the data to be ordered from a drop-down list and click on + to add new order by field. By default, the order is set to descending which can be changed by a simple click operation.
-
-**Behavior**
-
-Update data on input change
-
-If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable.
-
-Request data on page load
-
-If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load.
-
-In Flight Behavior
-
-This property determines the behavior when a call is fired through the variable with the previous call still pending. Variable queues all these calls, waits for the previous call completion and then based on the value of the _inFlightBehavior_ property, decides what to do with all the queued calls:
+**Usage**: You can select the fields to which you want the data to be ordered from a drop-down list and click on + to add new order by field. By default, the order is set to descending which can be changed by a simple click operation. |
+| **Behavior** |
+| Update data on input change | If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable. |
+| Request data on page load | If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load. |
+| In Flight Behavior | This property determines the behavior when a call is fired through the variable with the previous call still pending. Variable queues all these calls, waits for the previous call completion and then based on the value of the _inFlightBehavior_ property, decides what to do with all the queued calls:
 
 - doNotExecute - all the queued calls will be discarded,
 - executeAll - all the calls will be triggered one by one, or
 - executeLast - only the last call is triggered and the rest are discarded, this is the default behavior
 
-**Spinner**
-
-Spinner Context
-
-This property specifies on which UI widget the spinner should show. Leave empty if no spinner required.
-
-Spinner Message
-
-The message to be displayed below the spinner. Leave empty if no message is required below the spinner. Note: If multiple variables are fired then the spinner messages will be displayed as a list below a single spinner.
+ |
+| **Spinner** |
+| Spinner Context | This property specifies on which UI widget the spinner should show. Leave empty if no spinner required. |
+| Spinner Message | The message to be displayed below the spinner. Leave empty if no message is required below the spinner. Note: If multiple variables are fired then the spinner messages will be displayed as a list below a single spinner. |
 
 # Events
 
@@ -129,15 +105,7 @@ During the life cycle of a Variable, a set of events are emitted by the Variable
 
 Few Methods are exposed for Variables which can be used for achieving more control and accessing extra functionality. Listed here are the same.
 
-[invoke](#invoke)
-
-[cancel](#cancel)
-
-[getData](#getData)
-
-[clearData](#clearData)
-
-[setInput](#setInput)
+<table class="reference notranslate"><tbody><tr><td><a href="#invoke">invoke</a></td><td><a href="#cancel">cancel</a></td></tr><tr><td><a href="#getData">getData</a></td><td><a href="#clearData">clearData</a></td><td><a href="#setInput">setInput</a></td></tr></tbody></table>
 
 ## invoke()
 

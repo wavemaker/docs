@@ -44,33 +44,7 @@ We will Import a database to add data source to our application
 
 Drag and drop following widgets
 
-Widget
-
-Usage
-
-Barcode scanner
-
-Used to scan product id
-
-Button
-
-To search the fetched product
-
-Textbox(text1)
-
-To view the scanned barcode value(Employee id)
-
-Textbox(text2)
-
-To view fetched Employee Name
-
-Textbox(text3)
-
-To view fetched Employee Designation
-
-Picture(picture1)
-
-To view fetched Employee image
+<table><tbody><tr><td width="312"><u>Widget</u></td><td width="312"><u>Usage</u></td></tr><tr><td width="312">Barcode scanner</td><td width="312">Used to scan product id</td></tr><tr><td width="312">Button</td><td width="312">To search the fetched product</td></tr><tr><td width="312">Textbox(text1)</td><td width="312">To view the scanned barcode value(Employee id)</td></tr><tr><td width="312">Textbox(text2)</td><td width="312">To view fetched Employee Name</td></tr><tr><td width="312">Textbox(text3)</td><td width="312">To view fetched Employee Designation</td></tr><tr><td width="312">Picture(picture1)</td><td width="312">To view fetched Employee image</td></tr></tbody></table>
 
 ## Variable Creation
 

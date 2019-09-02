@@ -11,55 +11,26 @@ id: ""
 
 # Properties
 
-**Property**
-
-**Description**
-
-Caption
-
-The caption is the text that the end user sees on your label.
-
-Name
-
-The name is a unique identifier for Message widget.Special characters and spaces are not allowed in widget name.
-
-Type
-
-This property specifies the type of the variable:
-
+| **Property** | **Description** |
+| --- | --- |
+| Caption | The caption is the text that the end user sees on your label. |
+| Name | The name is a unique identifier for Message widget.Special characters and spaces are not allowed in widget name. |
+| Type | This property specifies the type of the variable:
 - error,
 - info,
 - loading,
 - success or
 - warning
 
-**Layout**
-
-Width
-
-The width of your widget can be specified in px or % (i.e 50px, 75%).
-
-Height
-
-The height of your widget can be specified in px or % (i.e 50px, 75%).
-
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Load on Demand (visible only when show property is bound to a variable)
-
-When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
-
-Hide Close
-
-Hides the close option.
-
-Animation
-
-This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode.
+ |
+| **Layout** |
+| Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
+| Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| Hide Close | Hides the close option. |
+| Animation | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. |
 
 # Methods
 
@@ -76,15 +47,10 @@ Message widget has few methods exposed on widget scope which can be accessed vi
 
 # Events
 
-**Event**
-
-Description
-
-**Callback Events**
-
-On close
-
-This event handler is called **whenever** a close event is triggered.
+| **Event** | Description |
+| --- | --- |
+| **Callback Events** |
+| On close | This event handler is called **whenever** a close event is triggered. |
 
 [4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
 

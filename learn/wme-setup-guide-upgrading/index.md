@@ -9,21 +9,11 @@ The following table is the compatibility matrix for upgrading the WME:
 
 **Note**: The following list provides the currently supported versions for WME patching. Kindly contact our WaveMaker support team if you did not find the right version.
 
-**WME Patch release**
-
-**Supported WME versions**
-
-v10.0.3
-
-v9.3.x or higher
-
-v9.4.0
-
- v9.2.0 or higher
-
-v9.3.0.1
-
- v9.0.x or higher
+| **WME Patch release** | **Supported WME versions** |
+| --- | --- |
+| v10.0.3 | v9.3.x or higher |
+| v9.4.0 |  v9.2.0 or higher |
+| v9.3.0.1 |  v9.0.x or higher |
 
 ## Patch Inventory
 

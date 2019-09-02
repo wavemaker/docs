@@ -96,85 +96,38 @@ We will see how Tab events can be accessed using the JavaScript. We will be seei
 
 # Properties
 
-**Property**
-
-**Description**
-
-Name
-
-The name is a unique identifier for tab.
-
-Add Tab Pane
-
-This action allows one to add multiple panes to the Tab.
-
-**Layout**
-
-Height
-
-The height of tab can be specified in px or % (i.e 50px, 75%).
-
-Tab Position
-
-This property determines if the tabs should be displayed on the
-
+| **Property** | **Description** |
+| --- | --- |
+| Name | The name is a unique identifier for tab. |
+| Add Tab Pane | This action allows one to add multiple panes to the Tab. |
+| **Layout** |
+| Height | The height of tab can be specified in px or % (i.e 50px, 75%). |
+| Tab Position | This property determines if the tabs should be displayed on the
 - _left_,
 - _top (default)_,
 - _right_ or
 - _bottom_ of the tab content.
 
-**Behavior**
-
-Default Pane Index
-
-This property sets the default active pane on a load of the widget based on the provided index. The tab index is an integer starting from 0, 1, 2 and so on. That is, setting this property to 0 will display the first tab pane; setting to 1 will display the second tab pane.
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Load on Demand (visible only when show property is bound to a variable)
-
-When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
-
-Transition
-
-This property defines the transition effect to be applied when switching tabs. You can choose from _none_ or _slide_. When the transition property is \`slide\`, selected tab will be animated into the viewport. \`Swipe events\` will work only when the transition value is \`slide\`.
-
-**Format**
-
-Horizontal Align
-
-Set text alignment horizontally, can be left, center or right.
-
-Tab Order
-
-The order of the Tabs can be changed using the arrow icons next to the tab names.
+ |
+| **Behavior** |
+| Default Pane Index | This property sets the default active pane on a load of the widget based on the provided index. The tab index is an integer starting from 0, 1, 2 and so on. That is, setting this property to 0 will display the first tab pane; setting to 1 will display the second tab pane. |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| Transition | This property defines the transition effect to be applied when switching tabs. You can choose from _none_ or _slide_. When the transition property is \`slide\`, selected tab will be animated into the viewport. \`Swipe events\` will work only when the transition value is \`slide\`. |
+| **Format** |
+| Horizontal Align | Set text alignment horizontally, can be left, center or right. |
+| Tab Order | The order of the Tabs can be changed using the arrow icons next to the tab names. |
 
 **Tab Pane**
 
 SubWidget of Tabs, to hold the tab content
 
-**Property**
-
-**Description**
-
-Title
-
-This property defines the heading or title for the tab panes.
-
-Name
-
-The name is a unique identifier for tab pane.
-
-Badge Value
-
-Value to be displayed in the badge span for the tab pane
-
-Badge Type
-
-The property controls the color of the badge. These values are:
-
+| **Property** | **Description** |
+| --- | --- |
+| Title | This property defines the heading or title for the tab panes. |
+| Name | The name is a unique identifier for tab pane. |
+| Badge Value | Value to be displayed in the badge span for the tab pane |
+| Badge Type | The property controls the color of the badge. These values are:
 - default,
 - primary,
 - success,
@@ -182,55 +135,27 @@ The property controls the color of the badge. These values are:
 - warning, or
 - danger
 
-**Accessibility**
+ |
+| **Accessibility** |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
-Tab Index
-
-The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
-
-**Content**
-
-Content
-
-Inline content or Partial page's content to be included in the widget.
-
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is bindable.
-
-Disabled
-
-If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. It is bindable.
-
-**Graphics**
-
-Title Icon Class
-
-This property can assign an icon for the pane.
+NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| **Content** |
+| Content | Inline content or Partial page's content to be included in the widget. |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is bindable. |
+| Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. It is bindable. |
+| **Graphics** |
+| Title Icon Class | This property can assign an icon for the pane. |
 
 # Events
 
-**Event**
-
-**Description**
-
-On load
-
-This event handler is called when the widget is loaded.
-
-**Callback Events**
-
-On select
-
-This event handler is called when the tab is selected.
-
-On deselect
-
-This event handler is called when the tab is deselected.
+| **Event** | **Description** |
+| --- | --- |
+| On load | This event handler is called when the widget is loaded. |
+| **Callback Events** |
+| On select | This event handler is called when the tab is selected. |
+| On deselect | This event handler is called when the tab is deselected. |
 
 [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
 

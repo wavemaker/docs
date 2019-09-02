@@ -33,86 +33,45 @@ The **data source** for WebSocket Variables comes from a _Web Service_. We will
 
 WebSocket Variables are special variables that interact with the imported Web Socket service.
 
-**Property**
-
-**Description**
-
-**Service**
-
-Service
-
-The WebSocket service targeted for the Variable.
-
-**Behavior**
-
-Connect on page load
-
-If set to true, the variable will open the connection between the client and target WebSocket service on:
-
+| **Property** | **Description** |
+| --- | --- |
+| **Service** |
+| Service | The WebSocket service targeted for the Variable. |
+| **Behavior** |
+| Connect on page load | If set to true, the variable will open the connection between the client and target WebSocket service on:
 - page load, for a page variable
 - app load, for an app variable.
 
-**Dataset**
-
-On New Data
-
-A client once connected to a WebSocket service, can receive messages at any point in time and can receive a number of messages sequentially. This property determines what to do with data received from the variable.
+ |
+| **Dataset** |
+| On New Data | A client once connected to a WebSocket service, can receive messages at any point in time and can receive a number of messages sequentially. This property determines what to do with data received from the variable.
 
 - _Refresh dataSet:_ dataSet will be updated with the data received.
 - _Add as last record:_ data will be appended at the end of dataSet. Latest data will be the last record in dataSet.
 - _Add as first record_: data will be prepended at the beginning of dataSet. Latest data will be the first record in dataSet.
 
-In latter two cases, dataSet will always be a list of messages.
-
-Data Limit
-
-Maximum number of messages that dataSet will hold. This is applicable only if “On New Data” property is set to other than “Refresh”. E.g. if set to 10, dataSet will hold a maximum of 10 message received from the server. When a new message is received, the first message is removed from the dataSet and the new one is appended to the end. Set it to 0 if no such upper limit is required.
+In latter two cases, dataSet will always be a list of messages. |
+| Data Limit | Maximum number of messages that dataSet will hold. This is applicable only if “On New Data” property is set to other than “Refresh”. E.g. if set to 10, dataSet will hold a maximum of 10 message received from the server. When a new message is received, the first message is removed from the dataSet and the new one is appended to the end. Set it to 0 if no such upper limit is required. |
 
 # Events
 
 Following events are triggered during the lifecycle of a WebSocket Variable. These events can be utilized by the end user application developer to customize the behavior of the app through more complex logic.
 
-**Event**
-
-**Description**
-
-on Before Open
-
-The event is triggered just before the Variable attempts to establish a connection between the client and target WebSocket service. If returned false from here, the connection establishment will be aborted.
-
-on Open
-
-The event is triggered right after a successful connection is established between the client and the WebSocket service through the Variable.
-
-on Before Message Send
-
-The event is triggered just before the Variable attempts to send a message to the target service through the existing connection. You have a chance at this point to validate and edit the data to be sent to the service. Returning false from this event will prevent the message to be sent to the service.
-
-on Message Receive
-
-The event is triggered on the Variable when a message is received from the WebSocket service in an existing connection made by the Variable.
-
-on Error
-
-Triggered if an error is encountered in establishing a connection with the server in the open phase.
-
-on Before Close
-
-Triggered before an existing connection(opened by the Variable) is closed. Returning false from here will abort the closing of the connection.
-
-**onClose**
-
-Triggered after the connection is closed.
+| **Event** | **Description** |
+| --- | --- |
+| on Before Open | The event is triggered just before the Variable attempts to establish a connection between the client and target WebSocket service. If returned false from here, the connection establishment will be aborted. |
+| on Open | The event is triggered right after a successful connection is established between the client and the WebSocket service through the Variable. |
+| on Before Message Send | The event is triggered just before the Variable attempts to send a message to the target service through the existing connection. You have a chance at this point to validate and edit the data to be sent to the service. Returning false from this event will prevent the message to be sent to the service. |
+| on Message Receive | The event is triggered on the Variable when a message is received from the WebSocket service in an existing connection made by the Variable. |
+| on Error | Triggered if an error is encountered in establishing a connection with the server in the open phase. |
+| on Before Close | Triggered before an existing connection(opened by the Variable) is closed. Returning false from here will abort the closing of the connection. |
+| **onClose** | Triggered after the connection is closed. |
 
 **NOTE**: WaveMaker supports binding multiple actions to a given event, i.e. a given event can trigger multiple actions.
 
 # Methods
 
-[open](#open)
-
-[send](#send)
-
-[close](#close)
+<table class="reference notranslate"><tbody><tr><td><a href="#open">open</a></td><td><a href="#send">send</a></td><td><a href="#close">close</a></td></tr></tbody></table>
 
 ## open()
 

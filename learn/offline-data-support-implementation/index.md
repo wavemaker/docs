@@ -40,41 +40,13 @@ The offline mechanism has to be enabled for the tables you want to work on offli
 10. **Pull Configuration:** (available for on-demand Sync configurations): During pull operation, data that matches Filter or Query criteria and sorted in **Order By** criteria, will be fetched and stored in the offline database. By triggering a device variable with ‘DATA SYNC’ as service and ‘PULL’ as operation, a pull operation can be started.
     - **Delta Field**: Delta Field is a timestamp column in the offline-enabled table that records the time when the record is last modified. Given Delta Field, Filter criteria are further enhanced (internally by platform) to fetch only modified records from the pull. This greatly helps in pulling data faster as the number of records to pull are restricted. If an offline-enabled entity has Delta Field, then only modified data will be pulled. Otherwise, the entire offline-enabled entity will be pulled. For example, if there are 10 records matching the filter criteria, then all 10 will be pulled in the first pull for user1. Then say, 1 record matching the filter criteria is added by user2. In second pull for user1, 10 (initial) + 1 (delta or modified) records are fetched. To avoid the 10 records (that are not modified and already present in user1’s device) in second pull, DELTA field is used. Using this field, only the modified records are pulled and not all, in the above case for the second pull only 1 record is fetched as opposed to 11. _Modifications_ will be pulled only if the filter criteria that was applied in the last pull and filter criteria that are going to be applied in the current pull are same. Following table shows an example when only DELTA is pulled for Employees table.
         
-        **Pull No**.
-        
-        **Filter Criteria**
-        
-        **Data Pulled**
-        
-        1
-        
-        where departmentId = 1
-        
-        FULL
-        
-        2
-        
-        where departmentId = 1
-        
-        DELTA
-        
-        3
-        
-        where departmentId = 1
-        
-        DELTA
-        
-        4
-        
-        where departmentId = 2
-        
-        FULL
-        
-        5
-        
-        where departmentId = 2
-        
-        DELTA
+        | **Pull No**. | **Filter Criteria** | **Data Pulled** |
+        | --- | --- | --- |
+        | 1 | where departmentId = 1 | FULL |
+        | 2 | where departmentId = 1 | DELTA |
+        | 3 | where departmentId = 1 | DELTA |
+        | 4 | where departmentId = 2 | FULL |
+        | 5 | where departmentId = 2 | DELTA |
         
     - **Maximum Number Of Records** (M): In a pull operation of a table, the maximum number of records to pull can be configured. Suppose, the Filter criteria match 1000 records, but M is specified as 100. Then, only 100 records that match the filter criteria are fetched. If M is specified as a non-positive number (ex: 0, -1), then all records that match the Filter criteria are pulled.
     - **Page Size** (P): If Filter criteria match 1,00,000 and M is specified as 0, then 100000 are fetched (see above). Due to performance reasons, 1,00,000 records cannot be loaded in a single call. So, data is loaded page-wise iteratively until all (1,00,000) records are fetched. If P is specified as 100, then data is fetched in 1,000 calls. NOTE: Make sure that page size value that is specified here is lesser than or equals to the page size value for the database in profiles.
@@ -99,89 +71,18 @@ By default, three variables **networkInfo**, **datasyncPush** and **datasyncPul
 
 [![](../assets/offline_var.png?v=5)](../assets/offline_var.png?v=5) These are device variables with target as datasync, which has the following three operations. To avail these operation, create a new Device Variable with datasync service and select the needed operation.
 
-**Operation**
+| **Operation** | **Behavior** | **Input Data** | **Events** | **Description** |
+| --- | --- | --- | --- | --- |
+| getOfflineChanges | none | none | On Success On Error | to fetch the changes made when the app was offline Return Values: {**'total'**: 0 **'pendingToSync'**: changeLogSet **'failedToSync'**: changeLogSet} |
+| lastPullInfo | Spinner Context and Message - to be displayed while pull is in progress | none | On Success On Error | get the last pull info Return Values: {'**databases**' : \[{ '**name**' : 'datbaseName', '**entities**': \[{ '**entityName**': '**entityName**', '**pulledRecordCount**': 0 }\], '**pulledRecordCount**' : 0 }\], '**totalPulledRecordCount**' : 0, '**startTime**' : Date, '**endTime**' : Date} |
+| lastPushInfo | Spinner Context and Message - to be displayed while pull is in progress | none | On Success On Error | get the last push info Return Values: {**'completedTaskCount'**: 0 **'endTime'**: 0 **'failedTaskCount'**: 0 **'startTime'**: 0 **'successfulTaskCount'**: 0 **'totalTaskCount'**: 0} |
+| pull | Request data on page load - to pull the data when the page is loaded Clear offline data before pull - to delete the whole offline data (other than BUNDLED data) before the pull Spinner Context and Message - to be displayed while pull is in progress | none | On Success On Error On Progress On Before | get the data from the server Return Values: {**'completedTaskCount'**: 0 **'inProgress'**: 0 **'totalTaskCount'**: 0} |
+| push | Spinner Context and Message - to be displayed while push is in progress | none | On Success On Error On Progress On Before | send the data to server Return Values: {**'completedTaskCount'**: 0 **'failedTaskCount'**: 0 **'inProgress'**: 0 **'successfulTaskCount'**: 0 **'totalTaskCount'**: 0} |
+| exportDB (ver 9.3) | Spinner Context and Message to display during this operation | none | On Success On Error | Offline database is saved as zip in ‘Downloads’ folder in Android. In IOS, zip is stored into ‘Documents’ folder so that one can export from iPhone via iTunes. For the file to be visible in iTunes, File sharing needs to be enabled for the app in iOS preferences.
+Location of the file is exposed as an outbound property on this variable. |
+| importDB
 
-**Behavior**
-
-**Input Data**
-
-**Events**
-
-**Description**
-
-getOfflineChanges
-
-none
-
-none
-
-On Success On Error
-
-to fetch the changes made when the app was offline Return Values: {**'total'**: 0 **'pendingToSync'**: changeLogSet **'failedToSync'**: changeLogSet}
-
-lastPullInfo
-
-Spinner Context and Message - to be displayed while pull is in progress
-
-none
-
-On Success On Error
-
-get the last pull info Return Values: {'**databases**' : \[{ '**name**' : 'datbaseName', '**entities**': \[{ '**entityName**': '**entityName**', '**pulledRecordCount**': 0 }\], '**pulledRecordCount**' : 0 }\], '**totalPulledRecordCount**' : 0, '**startTime**' : Date, '**endTime**' : Date}
-
-lastPushInfo
-
-Spinner Context and Message - to be displayed while pull is in progress
-
-none
-
-On Success On Error
-
-get the last push info Return Values: {**'completedTaskCount'**: 0 **'endTime'**: 0 **'failedTaskCount'**: 0 **'startTime'**: 0 **'successfulTaskCount'**: 0 **'totalTaskCount'**: 0}
-
-pull
-
-Request data on page load - to pull the data when the page is loaded Clear offline data before pull - to delete the whole offline data (other than BUNDLED data) before the pull Spinner Context and Message - to be displayed while pull is in progress
-
-none
-
-On Success On Error On Progress On Before
-
-get the data from the server Return Values: {**'completedTaskCount'**: 0 **'inProgress'**: 0 **'totalTaskCount'**: 0}
-
-push
-
-Spinner Context and Message - to be displayed while push is in progress
-
-none
-
-On Success On Error On Progress On Before
-
-send the data to server Return Values: {**'completedTaskCount'**: 0 **'failedTaskCount'**: 0 **'inProgress'**: 0 **'successfulTaskCount'**: 0 **'totalTaskCount'**: 0}
-
-exportDB (ver 9.3)
-
-Spinner Context and Message to display during this operation
-
-none
-
-On Success On Error
-
-Offline database is saved as zip in ‘Downloads’ folder in Android. In IOS, zip is stored into ‘Documents’ folder so that one can export from iPhone via iTunes. For the file to be visible in iTunes, File sharing needs to be enabled for the app in iOS preferences.
-
-Location of the file is exposed as an outbound property on this variable.
-
-importDB
-
-(ver 9.3)
-
-Spinner Context and Message to display during this operation
-
-none
-
-On Success On Error
-
-Upon invocation, a file browser opens up to choose the zip file to import.
+(ver 9.3) | Spinner Context and Message to display during this operation | none | On Success On Error | Upon invocation, a file browser opens up to choose the zip file to import. |
 
 #### Plugin Configuration
 

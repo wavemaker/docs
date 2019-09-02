@@ -50,45 +50,7 @@ Just like any REST Service, you need to create a variable to access the OAuth AP
 
 WaveMaker provides few OAuth 2 service providers out of the box. When selected the provider details are pre-populated and need to be further configured. These providers include:
 
-![](../assets/amazon.png)
-
-[Developer Link](http://login.amazon.com/manageApps)
-
-![](../assets/box.png)
-
-[Developer Link](https://developer.box.com/)
-
-![](../assets/dropbox.png)
-
-[Developer Link](https://www.dropbox.com/developers)
-
-![](../assets/facebook.png)
-
-[Developer Link](https://developers.facebook.com/)
-
-![](../assets/github.png)
-
-[Developer Link](https://github.com/settings/developers)
-
-![](../assets/Google.png)
-
-[Developer Link](https://console.developers.google.com)
-
-![](../assets/instagram.png)
-
-[Developer Link](https://www.instagram.com/developer/)
-
-![](../assets/linkedin.png)
-
-[Developer Link](https://www.linkedin.com/developer/apps/)
-
-![](../assets/outlook.png)
-
-[Developer Link](https://apps.dev.microsoft.com)
-
-![](../assets/salesforce.png)
-
-[Developer Link](https://login.salesforce.com/)
+<table><tbody><tr><td><img class="no-shadow alignnone wp-image-20280 size-full" src="../assets/amazon.png" alt="" width="24" height="24"></td><td><a href="http://login.amazon.com/manageApps" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20281 size-full" src="../assets/box.png" alt="" width="24" height="24"></td><td><a href="https://developer.box.com/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20282 size-full" src="../assets/dropbox.png" alt="" width="24" height="24"></td><td><a href="https://www.dropbox.com/developers" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20283 size-full" src="../assets/facebook.png" alt="" width="24" height="24"></td><td><a href="https://developers.facebook.com/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20284 size-full" src="../assets/github.png" alt="" width="24" height="24"></td><td><a href="https://github.com/settings/developers" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20299 size-full" src="../assets/Google.png" alt="" width="24" height="25"></td><td><a href="https://console.developers.google.com" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20286 size-full" src="../assets/instagram.png" alt="" width="24" height="24"></td><td><a href="https://www.instagram.com/developer/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20287 size-full" src="../assets/linkedin.png" alt="" width="24" height="24"></td><td><a href="https://www.linkedin.com/developer/apps/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20288 size-full" src="../assets/outlook.png" alt="" width="24" height="24"></td><td><a href="https://apps.dev.microsoft.com" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20289 size-full" src="../assets/salesforce.png" alt="" width="24" height="24"></td><td><a href="https://login.salesforce.com/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr></tbody></table>
 
 < Web Services Overview
 

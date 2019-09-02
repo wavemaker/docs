@@ -536,40 +536,4 @@ Not supported in Wavemaker 10.x**Rules for Inspection Framework**
 
 <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
 
-[No AngularJS Service](#service)
-
-[No AngularJS Controller](#controller)
-
-[No AngularJS Factory](#factory)
-
-[No AngularJS Config](#config)
-
-[No AngularJS Run](#run)
-
-[No AngularJS Constant](#constant)
-
-[No AngularJS Value](#value)
-
-[No AngularJS $scope](#scope)
-
-[No AngularJS Arrow function](#arrow)
-
-[No AngularJS $location](#location)
-
-[No AngularJS $apply](#apply)
-
-[No AngularJS $watch](#watch)
-
-[No AngularJS $filter](#filter)
-
-[No AngularJS $window](#window)
-
-[No AngularJS Component](#component)
-
-[No AngularJS Directive](#directive)
-
-[No AngularJS Provider](#provider)
-
-[No AngularJS $parent](#parent)
-
-[No AngularJS RouteParams](#routeparams)
+<table dir="ltr" border="1" cellspacing="0" cellpadding="0"><colgroup><col width="245"></colgroup><tbody><tr><td><a href="#service">No AngularJS Service</a></td></tr><tr><td><a href="#controller">No AngularJS Controller</a></td></tr><tr><td><a href="#factory">No AngularJS Factory</a></td></tr><tr><td><a href="#config">No AngularJS Config</a></td></tr><tr><td><a href="#run">No AngularJS Run</a></td></tr><tr><td><a href="#constant">No AngularJS Constant</a></td></tr><tr><td><a href="#value">No AngularJS Value</a></td></tr><tr><td><a href="#scope">No AngularJS $scope</a></td></tr><tr><td><a href="#arrow">No AngularJS Arrow function</a></td></tr><tr><td><a href="#location">No AngularJS $location</a></td></tr><tr><td><a href="#apply">No AngularJS $apply</a></td></tr><tr><td><a href="#watch">No AngularJS $watch</a></td></tr><tr><td><a href="#filter">No AngularJS $filter</a></td></tr><tr><td><a href="#window">No AngularJS $window</a></td></tr><tr><td><a href="#component">No AngularJS Component</a></td></tr><tr><td><a href="#directive">No AngularJS Directive</a></td></tr><tr><td><a href="#provider">No AngularJS Provider</a></td></tr><tr><td><a href="#parent">No AngularJS $parent</a></td></tr><tr><td><a href="#routeparams">No AngularJS RouteParams</a></td></tr></tbody></table>

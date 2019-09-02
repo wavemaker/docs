@@ -181,39 +181,7 @@ In order to make a custom theme available to developers across the enterprise, i
 
 For creating a custom theme for WaveMaker application, you need to understand the package structure. The theme package contains the following files:
 
-Name
-
-Description
-
-Fonts
-
-Folder containing web-based fonts used in the app.
-
-Required
-
-.wmproject.properties
-
-Containing essential properties required to identify the theme which includes the _name_ of the theme, _version_ of the theme, a short meaningful _description_ of the theme, the _type_ should be THEME (DO NOT CHANGE THIS), and the name of the _author_ for the theme.
-
-Required
-
-style.css
-
-Containing styles related to the theme.
-
-Required
-
-theme.png
-
-Theme icon.
-
-Required
-
-variables.less
-
-LESS variables to define colors, sizes and more.
-
-Required
+<table><tbody><tr><td>Name</td><td>Description</td><td></td></tr><tr><td>Fonts</td><td>Folder containing web-based fonts used in the app.</td><td>Required</td></tr><tr><td>.wmproject.properties</td><td>Containing essential properties required to identify the theme which includes the <em>name</em> of the theme, <em>version</em> of the theme, a short meaningful <em>description</em> of the theme, the <em>type</em> should be THEME (DO NOT CHANGE THIS), and the name of the <em>author</em> for the theme.</td><td>Required</td></tr><tr><td>style.css</td><td>Containing styles related to the theme.</td><td>Required</td></tr><tr><td>theme.png</td><td>Theme icon.</td><td>Required</td></tr><tr><td>variables.less</td><td>LESS variables to define colors, sizes and more.</td><td>Required</td></tr></tbody></table>
 
 ## Hybrid Mobile
 
@@ -221,67 +189,7 @@ In a hybrid app mobile theme, there can be different flavors for android and ios
 
 Following is the package structure:
 
-Sub-Folder
-
-Name
-
-Description
-
-none
-
-.wmproject.properties
-
-Containing essential properties required to identify the theme which includes the _name_ of the theme, _version_ of the theme, a short meaningful _description_ of the theme, the _type_ should be THEME (DO NOT CHANGE THIS), and the name of the _author_ for the theme.
-
-Required
-
-none
-
-theme.png
-
-Theme icon.
-
-Required
-
-Android
-
-Fonts
-
-Folder containing web-based fonts used in the app.
-
-Required
-
-style.css
-
-Containing styles related to the theme.
-
-Required
-
-variables.less
-
-LESS variables to define colors, sizes and more.
-
-Required
-
-ios
-
-Fonts
-
-Folder containing web-based fonts used in the app.
-
-Required
-
-style.css
-
-Containing styles related to the theme.
-
-Required
-
-variables.less
-
-Less variables to define colors, sizes and more.
-
-Required
+<table><tbody><tr><td>Sub-Folder</td><td>Name</td><td>Description</td><td></td></tr><tr><td>none</td><td>.wmproject.properties</td><td>Containing essential properties required to identify the theme which includes the <em>name</em> of the theme, <em>version</em> of the theme, a short meaningful <em>description</em> of the theme, the <em>type</em> should be THEME (DO NOT CHANGE THIS), and the name of the <em>author</em> for the theme.</td><td>Required</td></tr><tr><td>none</td><td>theme.png</td><td>Theme icon.</td><td>Required</td></tr><tr><td>Android</td><td>Fonts</td><td>Folder containing web-based fonts used in the app.</td><td>Required</td></tr><tr><td></td><td>style.css</td><td>Containing styles related to the theme.</td><td>Required</td></tr><tr><td></td><td>variables.less</td><td>LESS variables to define colors, sizes and more.</td><td>Required</td></tr><tr><td>ios</td><td>Fonts</td><td>Folder containing web-based fonts used in the app.</td><td>Required</td></tr><tr><td></td><td>style.css</td><td>Containing styles related to the theme.</td><td>Required</td></tr><tr><td></td><td>variables.less</td><td>Less variables to define colors, sizes and more.</td><td>Required</td></tr></tbody></table>
 
 We have learned how WaveMaker themes work and how we can build, import and apply custom themes.
 

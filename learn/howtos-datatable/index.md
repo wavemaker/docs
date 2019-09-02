@@ -167,31 +167,27 @@ Role-based Access to ColumnsIf you [security has been enabled](/learn/app-securi
 
  
 
-Event
-
-Trigger and JavaScript Usage
-
-On show
-
-This event will be called when the Data Table is shown.
-
+| Event | Trigger and JavaScript Usage |
+| --- | --- |
+| On show | This event will be called when the Data Table is shown. |
+|  | 
 $scope.\[gridname\]Show = function() {
         //Display a message to the effect
         console.log("Data Table has been displayed");
     };
 
-On hide
-
-This event will be called when the Data Table is hidden.
+ |
+| On hide | This event will be called when the Data Table is hidden. |
+|  | 
 
 $scope.\[gridname\]Hide = function() {
         //Display a message to the effect
         console.log("Data Table has been hidden");
     };
 
-On select
-
-This event will be called when a row from Data Table is selected
+ |
+| On select | This event will be called when a row from Data Table is selected |
+|  | 
 
 $scope.\[gridname\]Select = function($event, $data) {
         //$data: $data has the selected row data. $data has also the index of the row
@@ -201,9 +197,9 @@ $scope.\[gridname\]Select = function($event, $data) {
         console.log(“The row data with index:”, $data.index , $data); 
     };
 
-On deselect
-
-This event will be called when a row from Data Table is deselected
+ |
+| On deselect | This event will be called when a row from Data Table is deselected |
+|  | 
 
 $scope.\[gridname\]Deselect = function($event, $data) {
         //$data has the deselected row data. $data has also the index of the row
@@ -212,9 +208,9 @@ $scope.\[gridname\]Deselect = function($event, $data) {
         console.log(“The row data with index:”, $data.index , $data); 
     };
 
-On data sort
-
-This event will be called when the Data Table header is clicked to sort by a particular column.
+ |
+| On data sort | This event will be called when the Data Table header is clicked to sort by a particular column. |
+|  | 
 
 $scope.grid1Sort = function($event, $data) {
         //$data: $data has sorted data information returned from server
@@ -224,9 +220,9 @@ $scope.grid1Sort = function($event, $data) {
         console.log(“The sort column data:”, $data); 
     };
 
-On header click
-
-This event will be called when the Data Table header is clicked.
+ |
+| On header click | This event will be called when the Data Table header is clicked. |
+|  | 
 
 $scope.\[gridname\]Headerclick = function($event, $data) {
          //$data has the column definition data of the corresponding clicked header
@@ -236,9 +232,9 @@ $scope.\[gridname\]Headerclick = function($event, $data) {
         console.log(“The column data with column field:”, $data.field , $data); 
     };
 
-On row click
-
-This event will be called when a row in Data Table is clicked. Note this event can happen when selecting or deselecting a row.
+ |
+| On row click | This event will be called when a row in Data Table is clicked. Note this event can happen when selecting or deselecting a row. |
+|  | 
 
 $scope.\[gridname\]Rowclick = function($event, $data) {
         //$data has the data of the row which is clicked and the index of the row
@@ -248,9 +244,9 @@ $scope.\[gridname\]Rowclick = function($event, $data) {
         console.log(“The clicked row data with index:”, $data.index , $data); 
     };
 
-On row double click
-
-This event will be called when a row in Data Table is double clicked.
+ |
+| On row double click | This event will be called when a row in Data Table is double clicked. |
+|  | 
 
 $scope.\[gridname\]Rowdblclick = function($event, $data) {
         //$data has the data of the row which is clicked and the index of the selected row
@@ -260,9 +256,9 @@ $scope.\[gridname\]Rowdblclick = function($event, $data) {
         console.log(“The clicked row data with index:”, $data.index , $data); 
     };
 
-On column select
-
-This event will be called when a column in Data Table is selected.
+ |
+| On column select | This event will be called when a column in Data Table is selected. |
+|  | 
 
 $scope.\[gridname\]Columnselect = function($event, $data) {
         //$data has the object containing data and colDef. 
@@ -273,9 +269,9 @@ $scope.\[gridname\]Columnselect = function($event, $data) {
         console.log(“The column data with column field:”, $data.colDef.field , $data.data);
     };
 
-On column deselect
-
-This event will be called when a column in Data Table is deselected.
+ |
+| On column deselect | This event will be called when a column in Data Table is deselected. |
+|  | 
 
 $scope.\[gridname\]Columndeselect = function($event, $data) {
         //$data: $data has the object containing data and colDef. data has the selected column data. colDef has the selected column definition
@@ -284,9 +280,9 @@ $scope.\[gridname\]Columndeselect = function($event, $data) {
         console.log(“The column data with column field:”, $data.colDef.field , $data.data);
     };
 
-On record delete
-
-This event will be called when a record is deleted from the underlying data entity. Note this event will be triggered for Editable Data Table with delete action defined.
+ |
+| On record delete | This event will be called when a record is deleted from the underlying data entity. Note this event will be triggered for Editable Data Table with delete action defined. |
+|  | 
 
 $scope.\[gridname\]Rowdeleted = function($event, $data) {
         //$data: $data has the data of the row deleted
@@ -294,9 +290,9 @@ $scope.\[gridname\]Rowdeleted = function($event, $data) {
         console.log(“The deleted row data:”, $data);
     };
 
-On before record insert
-
-This event will be called before a new record is inserted in the underlying data entity. Note this event is triggered for Editable Data Table with insert action defined. Use Case: Populate the date modified or modified user to the current date or logged in user
+ |
+| On before record insert | This event will be called before a new record is inserted in the underlying data entity. Note this event is triggered for Editable Data Table with insert action defined. Use Case: Populate the date modified or modified user to the current date or logged in user |
+|  | 
 
 $scope.\[gridname\]Beforerowinsert = function($event, $data) {
         //$data has the data of the new record to be inserted. This data can be modified and validated before sending the request
@@ -305,9 +301,9 @@ $scope.\[gridname\]Beforerowinsert = function($event, $data) {
         $data.dateModified = Date.now(); //Set today's date as modified date field
     };
 
-On after record insert
-
-This event will be called after a new record is inserted in the underlying data entity. Note this event is triggered only for Editable Data Table with insert action defined.
+ |
+| On after record insert | This event will be called after a new record is inserted in the underlying data entity. Note this event is triggered only for Editable Data Table with insert action defined. |
+|  | 
 
 $scope.\[gridname\]Rowinsert = function($event, $data) {
         //$data: $data has the data of the the new record inserted.
@@ -316,9 +312,9 @@ $scope.\[gridname\]Rowinsert = function($event, $data) {
         console.log(“The inserted row data:”, $data);
     };
 
-On before record update
-
-This event will be called before a record is updated to the underlying data entity.. Note this event is triggered only for Editable Data Tables with update action defined.
+ |
+| On before record update | This event will be called before a record is updated to the underlying data entity.. Note this event is triggered only for Editable Data Tables with update action defined. |
+|  | 
 
 $scope.\[gridname\]Beforerowupdate = function($event, $data) {
         //$data has the data of the the record to be updated. This data can be modified and validated before sending the request
@@ -327,9 +323,9 @@ $scope.\[gridname\]Beforerowupdate = function($event, $data) {
         $data.dateModified = Date.now(); //Set today's date as modified date
     };
 
-On after record update
-
-This event will be called after a record is updated to the underlying data entity. Note this event is triggered only for editable Data Tables with update action defined.
+ |
+| On after record update | This event will be called after a record is updated to the underlying data entity. Note this event is triggered only for editable Data Tables with update action defined. |
+|  | 
 
 $scope.\[gridname\]Rowupdate = function($event, $data) {
         //$data has the data of the the record updated.
@@ -338,9 +334,9 @@ $scope.\[gridname\]Rowupdate = function($event, $data) {
         console.log(“The deleted row data:”, $data);
     };
 
-On before data render
-
-This event will be called the before the data is rendered in the Data Grid. Note the data accessible is restricted to the current page of the Data Grid. Use Case: If you want to change the display value based upon the values of a column
+ |
+| On before data render | This event will be called the before the data is rendered in the Data Grid. Note the data accessible is restricted to the current page of the Data Grid. Use Case: If you want to change the display value based upon the values of a column |
+|  | 
 
 $scope.\[gridname\]Setrecord = function($event, $data) {
         //$data: $data has the data returned from variable. This data can be modified before rendering the data table.
@@ -355,9 +351,9 @@ $scope.\[gridname\]Setrecord = function($event, $data) {
         });
     };
 
-On data render
-
-This event will be called when the data is rendered in the Data Table. Note: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to add a class to a particular row.
+ |
+| On data render | This event will be called when the data is rendered in the Data Table. Note: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to add a class to a particular row. |
+|  | 
 
 $scope.\[gridname\]Datarender = function($isolateScope, $data) {
         //$isolateScope: $isolateScope of the data table
@@ -371,6 +367,8 @@ $scope.\[gridname\]Datarender = function($isolateScope, $data) {
             }
         });
     };
+
+ |
 
 Using the Data Table MethodsData Grid has few methods exposed on widget scope which can be accessed via JavaScript. For the following script samples, we are considering the hrdb Department table. DepartmentGrid is bound to the Live Variable corresponding to the Department table.
 

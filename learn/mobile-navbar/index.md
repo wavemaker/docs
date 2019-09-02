@@ -45,57 +45,21 @@ In search view of the mobile navbar, there is a button for navigating from searc
 
 # Properties
 
-**Property**
-
-**Description**
-
-Title
-
-Set the title of the widget.
-
-Name
-
-The name is a unique identifier for the Navbar. Special characters and spaces are not allowed in widget name.
-
-Add Widget
-
-This action button allows you to add widgets within the Navbar. The available options are Anchor, Menu, Popover, or Button.
-
-**Layout**
-
-Height
-
-The height of your widget can be specified in px or % (i.e 50px, 75%).
-
-Image Source
-
-This property specifies the source for the brand image. The source can be either a file or a URL: File: enter the directory and filename for the image to display (supported file types include .jpg, .gif and .png). By default, WaveMaker looks for images in the src/main/webapp directory of the project. Every WaveMaker project has a data directory under src/main/webapp, so this is a good place to put pictures. URL: enter a URL to any internet-accessible image. To display the file, foo.jpg, in the project directory src/main/webapp/resources/images/imagelists/, enter the following into the source property:resources/images/imagelists/foo.jpg or simply foo.jpg
-
-**Behavior**
-
-Default View
-
-This property shows the action bar if set to action-view and shows the search bar if set to search view.
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Left Nav Panel Icon Class
-
-This property sets the icon class for Left nav panel toggle button.
-
-Show Back Button
-
-Back button is displayed only when this property is set.
-
-Back Button Label
-
-This property sets the back button label.
-
-Show Search Button
-
-Search button is displayed only when this property is set.
+| **Property** | **Description** |
+| --- | --- |
+| Title | Set the title of the widget. |
+| Name | The name is a unique identifier for the Navbar. Special characters and spaces are not allowed in widget name. |
+| Add Widget | This action button allows you to add widgets within the Navbar. The available options are Anchor, Menu, Popover, or Button. |
+| **Layout** |
+| Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
+| Image Source | This property specifies the source for the brand image. The source can be either a file or a URL: File: enter the directory and filename for the image to display (supported file types include .jpg, .gif and .png). By default, WaveMaker looks for images in the src/main/webapp directory of the project. Every WaveMaker project has a data directory under src/main/webapp, so this is a good place to put pictures. URL: enter a URL to any internet-accessible image. To display the file, foo.jpg, in the project directory src/main/webapp/resources/images/imagelists/, enter the following into the source property:resources/images/imagelists/foo.jpg or simply foo.jpg |
+| **Behavior** |
+| Default View | This property shows the action bar if set to action-view and shows the search bar if set to search view. |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Left Nav Panel Icon Class | This property sets the icon class for Left nav panel toggle button. |
+| Show Back Button | Back button is displayed only when this property is set. |
+| Back Button Label | This property sets the back button label. |
+| Show Search Button | Search button is displayed only when this property is set. |
 
 # Callback Events
 

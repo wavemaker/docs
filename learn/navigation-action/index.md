@@ -29,25 +29,15 @@ id: ""
 
 # Properties
 
-**Property**
-
-**Description**
-
-**Inputs**
-
-Page Name
-
-The page name to navigate to. This option will not appear for goToPreviousPage Operation.
-
-Tab/Accordion Name
-
-The tab/accordion pane’s name to navigate to if the operation is selected. This option will not appear for goToPreviousPage and goToPage Operation.
+| **Property** | **Description** |
+| --- | --- |
+| **Inputs** |
+| Page Name | The page name to navigate to. This option will not appear for goToPreviousPage Operation. |
+| Tab/Accordion Name | The tab/accordion pane’s name to navigate to if the operation is selected. This option will not appear for goToPreviousPage and goToPage Operation. |
 
 # Methods
 
-[invoke](#invoke)
-
-[setData](#setData)
+<table class="reference notranslate"><tbody><tr><td><a href="#invoke">invoke</a></td><td><a href="#setData">setData</a></td></tr></tbody></table>
 
 ## invoke(options)
 

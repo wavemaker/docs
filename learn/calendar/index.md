@@ -53,86 +53,35 @@ The following are the outbound properties of a Calendar widget that can be captu
 
 # Properties
 
-**Property**
-
-**Description**
-
-Name
-
-The name is a unique identifier for the Calendar. Special characters and spaces are not allowed in widget name.
-
-**Accessibility**
-
-Tab index
-
-The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
-
-**Layout**
-
-Width
-
-The width of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._
-
-Height
-
-The height of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._
-
-**Default Value**
-
-Value
-
-This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget.
-
-**Dataset**
-
-Value
-
-Set this property to a variable to populate the list of values to display.
-
-**Events Data**
-
-Title
-
-Title for the Event, set from the Dataset fields.
-
-Start
-
-Start date or date time for the event, set from the Dataset fields.
-
-End
-
-End date or date time for the event, set from the Dataset fields.
-
-All day
-
-Whether it is an All day event or not
-
-Class name
-
-Display Class to be applied to that event.
-
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Load on Demand (visible only when show property is bound to a variable)
-
-When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
-
-Type
-
-This property allows you to set the type of the calendar widget:
+| **Property** | **Description** |
+| --- | --- |
+| Name | The name is a unique identifier for the Calendar. Special characters and spaces are not allowed in widget name. |
+| **Accessibility** |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| **Layout** |
+| Width | The width of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._ |
+| Height | The height of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._ |
+| **Default Value** |
+| Value | This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget. |
+| **Dataset** |
+| Value | Set this property to a variable to populate the list of values to display. |
+| **Events Data** |
+| Title | Title for the Event, set from the Dataset fields. |
+| Start | Start date or date time for the event, set from the Dataset fields. |
+| End | End date or date time for the event, set from the Dataset fields. |
+| All day | Whether it is an All day event or not |
+| Class name | Display Class to be applied to that event. |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| Type | This property allows you to set the type of the calendar widget:
 
 - agenda, or
 - basic (default).
 
-Enable Controls
-
-This property allows you to enable the header controls for calendar widget. These include
+ |
+| Enable Controls | This property allows you to enable the header controls for calendar widget. These include
 
 - navigation - to navigate previous/next month/week/day(depending upon the display) on the calendar,
 - today - go to today's location on the calendar,
@@ -142,55 +91,33 @@ This property allows you to enable the header controls for calendar widget. Thes
 
 All these controls on the calendar are used to navigate between the months and switch the view to _Month_(or) _Week_ (or) _Day._
 
-**Note:-** _This property is shown only for the Web version of the Calendar._
-
-View
-
-This property allows you to set the default view of the calendar widget:
+**Note:-** _This property is shown only for the Web version of the Calendar._ |
+| View | This property allows you to set the default view of the calendar widget:
 
 - month (default),
 - week or
 - day.
 
-Selection Mode
-
-This property can be used to control the user selection of the dates using a simple mouse drag operation. The values can be:
+ |
+| Selection Mode | This property can be used to control the user selection of the dates using a simple mouse drag operation. The values can be:
 
 - _None_: no selection, the calendar is just there to present data, not to be selected
 - _Single_: only one row can be selected at a time
 - _Multiple_: many rows can be selected at a time.
 
+ |
+
 # Events
 
-Event
-
-Description
-
-**Callback Events**
-
-On Select
-
-This event is triggered when a user selects one or more dates.
-
-On View Render
-
-This event handler is triggered when the calendar view is changed.
-
-On Event Drop
-
-This event handler is triggered when dragging of an event in calendar stops and the event has moved to a different day/time.
-
-On Event Resize
-
-This event handler is triggered when resizing of the event in calendar stops and the event has changed in duration.
-
-On Event Click
-
-This event handler is triggered when an event is clicked in the calendar.
-
-On Event Render
-
-This event handler is triggered when an event is rendered.
+| Event | Description |
+| --- | --- |
+| **Callback Events** |
+| On Select | This event is triggered when a user selects one or more dates. |
+| On View Render | This event handler is triggered when the calendar view is changed. |
+| On Event Drop | This event handler is triggered when dragging of an event in calendar stops and the event has moved to a different day/time. |
+| On Event Resize | This event handler is triggered when resizing of the event in calendar stops and the event has changed in duration. |
+| On Event Click | This event handler is triggered when an event is clicked in the calendar. |
+| On Event Render | This event handler is triggered when an event is rendered. |
 
 # Methods
 
@@ -202,106 +129,74 @@ To set the properties of the calendar widget through the script, access the prop
 
 Other properties which can be set using the similar methods: For more information on Calendar, properties [see here.](https://fullcalendar.io/docs/)
 
-Method
+| Method | Description |
+| --- | --- |
+| allDaySlot | Determines if the title ("all-day") slot is displayed at the top of the calendar. When false, all-day events will not be displayed in agenda views. |
+| allDayText | The text for title ("all-day") slot at the top of the calendar. |
+| slotDuration | The frequency for displaying time slots. Default: '00:30:00' (30 minutes) |
+| slotLabelFormat | Determines the time-text that will be displayed on the vertical axis of the agenda views. default: 'h(:mm)a' The default English value will produce times that look like "5pm" and "5:30pm". |
+| slotLabelInterval | Determines how often the time-axis is labeled with text displaying the date/time of slots. |
+| snapDuration | If not specified, this value is automatically computed from slotDuration. With slotDuration's default value of 30 minutes, this value will be 1 hour. |
+| scrollTime | Determines how far down the scroll pane is initially scrolled down. default: '06:00:00' (6am). The user will be able to scroll upwards to see events before this time. If you want to prevent users from doing this, use the minTime option instead. |
+| minTime | Determines the starting time that will be displayed, even when the scrollbars have been scrolled all the way up. default: "00:00:00" The default "00:00:00" means the start time will be at the very beginning of the day (midnight). |
+| maxTime | Determines the end time (exclusively) that will be displayed, even when the scrollbars have been scrolled all the way down. default: "24:00:00" The default "24:00:00" means the end time will be at the very end of the day (midnight). |
+| slotEventOverlap | Determines if timed events in agenda view should visually overlap. default: true. When set to true (the default), events will overlap each other. At the most half of each event will be obscured. When set to false, there will be absolutely no overlapping. |
+| selectDate() | It highlights the default date given for the calendar.
+<table class="reference notranslate"><tbody><tr><td><p style="text-align: left;"><em>Case 1 - datavalue (data/string):</em> If the default value is date object, then that particular date will be highlighted. For example: To select 1st June 2017</p><div></div><pre class="lang:js decode:true">Page.Widgets.calendar.datavalue = '01/0/2017';
+Page.Widgets.calendar.selectDate();</pre></td></tr></tbody></table>
 
-Description
+<table class="reference notranslate"><tbody><tr><td><p style="text-align: left;"><em>Case 2 - datavalue (Object): </em>If the default value is Object, then the particular dates from start to end date will be highlighted. For example: To select dates from 1st Jan to 10th Jan 2017</p><div></div><pre class="lang:js decode:true">Page.Widgets.calendar.datavalue = {start:'01/01/2017', end:'10/01/2017'};
+Page.Widgets.calendar.selectDate();</pre></td></tr></tbody></table>
 
-allDaySlot
-
-Determines if the title ("all-day") slot is displayed at the top of the calendar. When false, all-day events will not be displayed in agenda views.
-
-allDayText
-
-The text for title ("all-day") slot at the top of the calendar.
-
-slotDuration
-
-The frequency for displaying time slots. Default: '00:30:00' (30 minutes)
-
-slotLabelFormat
-
-Determines the time-text that will be displayed on the vertical axis of the agenda views. default: 'h(:mm)a' The default English value will produce times that look like "5pm" and "5:30pm".
-
-slotLabelInterval
-
-Determines how often the time-axis is labeled with text displaying the date/time of slots.
-
-snapDuration
-
-If not specified, this value is automatically computed from slotDuration. With slotDuration's default value of 30 minutes, this value will be 1 hour.
-
-scrollTime
-
-Determines how far down the scroll pane is initially scrolled down. default: '06:00:00' (6am). The user will be able to scroll upwards to see events before this time. If you want to prevent users from doing this, use the minTime option instead.
-
-minTime
-
-Determines the starting time that will be displayed, even when the scrollbars have been scrolled all the way up. default: "00:00:00" The default "00:00:00" means the start time will be at the very beginning of the day (midnight).
-
-maxTime
-
-Determines the end time (exclusively) that will be displayed, even when the scrollbars have been scrolled all the way down. default: "24:00:00" The default "24:00:00" means the end time will be at the very end of the day (midnight).
-
-slotEventOverlap
-
-Determines if timed events in agenda view should visually overlap. default: true. When set to true (the default), events will overlap each other. At the most half of each event will be obscured. When set to false, there will be absolutely no overlapping.
-
-selectDate()
-
-It highlights the default date given for the calendar.
-
-_Case 1 - datavalue (data/string):_ If the default value is date object, then that particular date will be highlighted. For example: To select 1st June 2017
-
-Page.Widgets.calendar.datavalue = '01/0/2017';
-Page.Widgets.calendar.selectDate();
-
-_Case 2 - datavalue (Object):_ If the default value is Object, then the particular dates from start to end date will be highlighted. For example: To select dates from 1st Jan to 10th Jan 2017
-
-Page.Widgets.calendar.datavalue = {start:'01/01/2017', end:'10/01/2017'};
-Page.Widgets.calendar.selectDate();
-
-gotoDate()
+ |
+| gotoDate() | 
 
 It shows the calendar view to default date given for the calendar. For example, to go to a specific date - 1st Jan 2107
 
 Page.Widgets.calendar.datavalue='01/01/2017';
 Page.Widgets.calendar.gotoDate();
 
-gotoMonth(int)
+ |
+| gotoMonth(int) | 
 
 This method renders the present view (i.e. year view will be the same) for the specified month. For example: To view the February month.
 
 Page.Widgets.calendar.gotoMonth(2);
 
-gotoNextMonth()
+ |
+| gotoNextMonth() | 
 
 This method renders the present view (i.e. year view will be the same) for the next month. For example: To view the next month
 
 Page.Widgets.calendar.gotoNextMonth();
 
-gotoPrevMonth()
+ |
+| gotoPrevMonth() | 
 
 This method renders the present view (i.e. year view will be the same) for the prev month. For example: To view the prev month
 
 Page.Widgets.calendar.gotoPrevMonth();
 
-gotoNextYear()
+ |
+| gotoNextYear() | 
 
 This method renders the present view (i.e. month/week view will be the same) for the next year. For example: To view the next year
 
 Page.Widgets.calendar.gotoNextYear();
 
-gotoPrevYear()
+ |
+| gotoPrevYear() | 
 
  It renders the present view (i.e. month/week view will be the same ) for the previous year. For example: To view the previous year
 
 Page.Widgets.calendar.gotoPrevYear();
 
-rerenderEvents()
-
- It rerenders the events from the dataset. For example, to get events on the calendar, we use:
+ |
+| rerenderEvents() |  It rerenders the events from the dataset. For example, to get events on the calendar, we use:
 
 Page.Widgets.calendar.rerenderEvents();
+
+ |
 
 # Use Cases
 

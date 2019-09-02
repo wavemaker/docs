@@ -7,39 +7,14 @@ Applications built with WaveMaker can be deployed to a number of environments. I
 
 1. You will need a valid Web Server installation. The following is a list of Web Servers where the WaveMaker apps can be deployed. **Note: This list is for reference purpose. Apart from these, you can use any standard Java Web Server running on JDK 1.8 and Servlet Framework version 3.1.**
     
-    **Web Server**
-    
-    **Version**
-    
-    **Instructions**
-    
-    [![](../assets/tomcat.jpg)](../assets/tomcat.jpg)
-    
-    8.x
-    
-    [deployment instructions](/learn/how-tos/wavemaker-application-deployment-tomcat/)
-    
-    9.x
-    
-    [![](../assets/websphere.png)](../assets/websphere.png)
-    
-    17.0.0.2 Liberty
-    
-    [deployment instructions](/learn/how-tos/wavemaker-application-deployment-websphere-liberty-profile/)
-    
-    [![](../assets/jboss.png)](../assets/jboss.png)
-    
-    WildFly 10.0
-    
-    [deployment instructions](/learn/how-tos/wavemaker-application-deployment-jboss/)
-    
-    WildFly 11.0
-    
-    [![](../assets/weblogic.png)](../assets/weblogic.png) WebLogic
-    
-    12c (12.2.1)
-    
-    [deployment instructions](/learn/how-tos/wavemaker-application-deployment-weblogic-application-server/)
+    | **Web Server** | **Version** | **Instructions** |
+    | --- | --- | --- |
+    | [![](../assets/tomcat.jpg)](../assets/tomcat.jpg) | 8.x | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-tomcat/) |
+    | 9.x |
+    | [![](../assets/websphere.png)](../assets/websphere.png) | 17.0.0.2 Liberty | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-websphere-liberty-profile/) |
+    | [![](../assets/jboss.png)](../assets/jboss.png) | WildFly 10.0 | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-jboss/) |
+    | WildFly 11.0 |
+    | [![](../assets/weblogic.png)](../assets/weblogic.png) WebLogic | 12c (12.2.1) | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-weblogic-application-server/) |
     
 2. You need to set up the **configuration profile** - you can choose to use the [default profile](/learn/app-development/deployment/configuration-profiles/) configured by WaveMaker based upon the services incorporated within the app or build a [custom profile](/learn/app-development/deployment/configuration-profiles/#custom-profile) as per your needs
 3. You need to generate a **WAR file** of the WaveMaker app you want to deploy. WAR file can be generated either by

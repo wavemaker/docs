@@ -26,63 +26,24 @@ Media List has two **layout options**:
 
 # Properties
 
-**Property**
-
-**Description**
-
-Name
-
-The name is a unique identifier for the Media List. Special characters and spaces are not allowed in widget name.
-
-**Accessibility**
-
-Hint
-
-Any text or HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds.
-
-Tab index
-
-The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage".
-
-**Layout**
-
-Width
-
-The width of your widget can be specified in px or % (i.e 50px, 75%).
-
-Height
-
-The height of your widget can be specified in px or % (i.e 50px, 75%).
-
-Layout
-
-This property controls how contained widgets are displayed within this widget container - single-row or multi-row.
-
-**Dataset**
-
-Value
-
-Set this property to a variable to populate the list of values to display.
-
-Thumbnailurl
-
-Field from the above Dataset value that holds the Thumbnail URL.
-
-Mediaurl
-
-Field from the above Dataset value that holds the Media URL.
-
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Load on Demand (visible only when show property is bound to a variable)
-
-When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+| **Property** | **Description** |
+| --- | --- |
+| Name | The name is a unique identifier for the Media List. Special characters and spaces are not allowed in widget name. |
+| **Accessibility** |
+| Hint | Any text or HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
+NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| **Layout** |
+| Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
+| Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
+| Layout | This property controls how contained widgets are displayed within this widget container - single-row or multi-row. |
+| **Dataset** |
+| Value | Set this property to a variable to populate the list of values to display. |
+| Thumbnailurl | Field from the above Dataset value that holds the Thumbnail URL. |
+| Mediaurl | Field from the above Dataset value that holds the Media URL. |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 
 # Use Cases
 

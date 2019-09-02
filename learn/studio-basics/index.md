@@ -28,61 +28,16 @@ UI Layer in WaveMaker apps has the following components:
 
 # Integration/Binding Layer
 
-**Terms**
-
-**Definition**
-
-**Description**
-
-**Reference**
-
-**Variable**
-
-Provides data integration for the widgets
-
-Holds the actual data rendered by the widgets. The data model is obtained from the API source and rendered in the form of a data structure used for binding, with attributes and related objects. Events help control the updates between widgets and actual service, vice versa.
-
-Reference
-
-**Variable Types**
-
-Classification of Variables based upon the source and purpose.
-
-**Database CRUD** for the basic insert, read and update operation on the Database tables
-
-Reference
-
-**Database API** for accessing the additional Database functionality and queries and procedures
-
-Reference
-
-**Service API** from Web, Java, Security for the service APIs exposed by the Web, Java and Security services.
-
-Reference
-
-**Model Variable** to define data based upon JSON structure.
-
-Reference
-
-**Device Variable** to access device features in case of mobile applications.
-
-Reference
-
-**Actions**
-
-To define the business logic, rules and data flows
-
-Actions assist in invoking a backend API, Database CRUD operation or navigation to another page when a UI event occurs. Events can be either user-initiated, notifications or a result of another task being performed.
-
-Reference
-
-**Binding**
-
-Connecting variables and widgets
-
-Binding of the Variables to Widgets helps in capturing the data from the user or fetching data from the backend services.
-
-Reference
+| **Terms** | **Definition** | **Description** | **Reference** |
+| --- | --- | --- | --- |
+| **Variable** | Provides data integration for the widgets | Holds the actual data rendered by the widgets. The data model is obtained from the API source and rendered in the form of a data structure used for binding, with attributes and related objects. Events help control the updates between widgets and actual service, vice versa. | Reference |
+| **Variable Types** | Classification of Variables based upon the source and purpose. | **Database CRUD** for the basic insert, read and update operation on the Database tables | Reference |
+| **Database API** for accessing the additional Database functionality and queries and procedures | Reference |
+| **Service API** from Web, Java, Security for the service APIs exposed by the Web, Java and Security services. | Reference |
+| **Model Variable** to define data based upon JSON structure. | Reference |
+| **Device Variable** to access device features in case of mobile applications. | Reference |
+| **Actions** | To define the business logic, rules and data flows | Actions assist in invoking a backend API, Database CRUD operation or navigation to another page when a UI event occurs. Events can be either user-initiated, notifications or a result of another task being performed. | Reference |
+| **Binding** | Connecting variables and widgets | Binding of the Variables to Widgets helps in capturing the data from the user or fetching data from the backend services. | Reference |
 
 # Miscellaneous Topics
 

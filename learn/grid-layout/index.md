@@ -58,95 +58,42 @@ The following image gives you an idea of the flexible design that grid layout of
 
 # Properties
 
-**Property**
-
-**Description**
-
-Name
-
-The name is a unique identifier for the grid layout widget.
-
-Insert
-
-Add a row to the grid layout, at the bottom.
-
-**Layout**
-
-Width
-
-The width of your widget can be specified in px or % (i.e 50px, 75%).
-
-Height
-
-The height of your widget can be specified in px or % (i.e 50px, 75%).
-
-Columns
-
-Number of columns in each row of the layout grid widget. Columns are droppable. The number of columns restricted to a range, to suit bootstrap fluid grid system.
-
-**Behavior**
-
-Show
-
-Showing determines whether or not a component is visible. It is a bindable property.
-
-Load on Demand (visible only when show property is bound to a variable)
-
-When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately.
+| **Property** | **Description** |
+| --- | --- |
+| Name | The name is a unique identifier for the grid layout widget. |
+| Insert | Add a row to the grid layout, at the bottom. |
+| **Layout** |
+| Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
+| Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
+| Columns | Number of columns in each row of the layout grid widget. Columns are droppable. The number of columns restricted to a range, to suit bootstrap fluid grid system. |
+| **Behavior** |
+| Show | Showing determines whether or not a component is visible. It is a bindable property. |
+| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 
 ### Row Properties
 
 A sub widget of the grid layout is the direct child of the grid.
 
-**Property**
-
-**Description**
-
-Name
-
-The name is a unique identifier for the grid row.
-
-Insert
-
-Add a row either above or below the current row or add a column to the current row.
-
-**Layout**
-
-Height
-
-The height of your widget can be specified in px or % (i.e 50px, 75%).
+| **Property** | **Description** |
+| --- | --- |
+| Name | The name is a unique identifier for the grid row. |
+| Insert | Add a row either above or below the current row or add a column to the current row. |
+| **Layout** |
+| Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
 
 ### Column Properties
 
 A sub widget of the grid layout is the direct child of the grid row.
 
-**Property**
-
-**Description**
-
-Name
-
-The name is a unique identifier for the grid column
-
-Insert
-
-Add a column either before or after the current column.
-
-**Layout**
-
-Height
-
-The height of your widget can be specified in px or % (i.e 50px, 75%).
-
-**Format**
-
-Horizontal Align
-
-Set text alignment horizontally.
-
-Column Width
-
-Accepts integer(x) between 1-12 and adds class col-md-(x), to suit bootstrap fluid grid system.
+| **Property** | **Description** |
+| --- | --- |
+| Name | The name is a unique identifier for the grid column |
+| Insert | Add a column either before or after the current column. |
+| **Layout** |
+| Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
+| **Format** |
+| Horizontal Align | Set text alignment horizontally. |
+| Column Width | Accepts integer(x) between 1-12 and adds class col-md-(x), to suit bootstrap fluid grid system. |
 
 [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
 

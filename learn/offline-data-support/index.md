@@ -80,55 +80,12 @@ WaveMaker uses an inbuilt SQL Lite Database for offline storage. Offline storage
 
 Following table details the behavior of various configurations (see [Offline Data Support - Implementation](/learn/hybrid-mobile/offline-data-support-implementation/) for more details):
 
-**Data Configuration**
-
-**Data packed in installer**
-
-**Data pulled from server**
-
-**Saves data response from server**
-
-**Editable in offline**
-
-**Bundle with installer **
-
-Yes
-
-Yes (if Delta Field is present)
-
-Yes
-
-No
-
-**Bundle with installer  + on-demand sync**
-
-Yes
-
-Yes (if Delta Field is present)
-
-Yes
-
-Yes
-
-**Sync data on-demand**
-
-No
-
-Yes
-
-Yes
-
-Yes
-
-**Cache data response**
-
-No
-
-No
-
-Yes
-
-No
+| **Data Configuration** | **Data packed in installer** | **Data pulled from server** | **Saves data response from server** | **Editable in offline** |
+| --- | --- | --- | --- | --- |
+| **Bundle with installer ** | Yes | Yes (if Delta Field is present) | Yes | No |
+| **Bundle with installer  + on-demand sync** | Yes | Yes (if Delta Field is present) | Yes | Yes |
+| **Sync data on-demand** | No | Yes | Yes | Yes |
+| **Cache data response** | No | No | Yes | No |
 
 1. _Accumulating data received_ for the Database CRUD Variables calls (with read operation) from the server to the offline storage layer. Thus, data gets accumulated as the user uses the app.
 2. _Get data during app startup_ from the app-level Database CRUD Variables. The page level Database CRUD Variables are triggered only when the user visits the page. Unless the user visits a page once, data required for that page will not be available in offline. Say an app has with pages for employee and department details. The user opened the app and visited department page and closed the app. In offline mode, the user sees department page alone and employees page is not available as offline data for employees is not available. To deal with such scenarios, required data needs to be retrieved during app startup. The disadvantages are of this method are:
