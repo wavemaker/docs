@@ -70,8 +70,8 @@ img.emoji {
 <link rel='stylesheet' id='js_composer_front-css'  href='https://www.wavemaker.com/learn/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=4.11.2.1' type='text/css' media='all' />
 <link rel='stylesheet' id='shortcodes-css'  href='https://www.wavemaker.com/learn/wp-content/themes/unicon/framework/css/shortcodes.css?ver=4.7.13' type='text/css' media='all' />
 <link rel='stylesheet' id='responsive-css'  href='https://www.wavemaker.com/learn/wp-content/themes/unicon/framework/css/responsive.css?ver=4.7.13' type='text/css' media='all' />
-<link rel='stylesheet' id='rw_toprated-css'  href='https://secure.rating-widget.com/css/wordpress/toprated.css?ck=Y2019M08D12&#038;ver=2.8.9' type='text/css' media='all' />
-<link rel='stylesheet' id='rw_recommendations-css'  href='https://secure.rating-widget.com/css/widget/recommendations.css?ck=Y2019M08D12&#038;ver=2.8.9' type='text/css' media='all' />
+<link rel='stylesheet' id='rw_toprated-css'  href='https://secure.rating-widget.com/css/wordpress/toprated.css?ck=Y2019M09D02&#038;ver=2.8.9' type='text/css' media='all' />
+<link rel='stylesheet' id='rw_recommendations-css'  href='https://secure.rating-widget.com/css/widget/recommendations.css?ck=Y2019M09D02&#038;ver=2.8.9' type='text/css' media='all' />
 <link rel='stylesheet' id='jetpack_css-css'  href='https://www.wavemaker.com/learn/wp-content/plugins/jetpack/css/jetpack.css?ver=5.1' type='text/css' media='all' />
 <script type='text/javascript' src='https://www.wavemaker.com/learn/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript' src='https://www.wavemaker.com/learn/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
@@ -856,7 +856,7 @@ var searchford_vars = {"ajaxurl":"https:\/\/www.wavemaker.com\/learn\/wp-admin\/
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://www.wavemaker.com/learn/wp-content/plugins/searchford/public/js/searchford.min.js?ver=4.7.13'></script>
-<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201933'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201936'></script>
 <script type='text/javascript' src='https://www.wavemaker.com/learn/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.6'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
@@ -954,7 +954,7 @@ var tocplus = {"smooth_scroll":"1"};
 	});
 	</script>
 	
-<script type='text/javascript' src='https://stats.wp.com/e-201933.js' async defer></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201936.js' async defer></script>
 <script type='text/javascript'>
 	_stq = window._stq || [];
 	_stq.push([ 'view', {v:'ext',j:'1:5.1',blog:'123358534',post:'0',tz:'5.5',srv:'www.wavemaker.com'} ]);
