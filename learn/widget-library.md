@@ -2,7 +2,7 @@
 title: "Widget Library"
 id: "widget-library"
 ---
-Here you will find a list of all Widgets available in the WaveMaker platform along with a brief description and links to detailed documents.
+Find the list of Widgets available in the WaveMaker platform along with a brief description and links to the detailed documents.
 
 ---
 
