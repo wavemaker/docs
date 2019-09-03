@@ -15,17 +15,20 @@
         "wavemaker-overview/artifacts-repository",
         "wavemaker-overview/localization"] 
         },
-		    "widget-library"
+        "widget-library",
+        "how-to-docs"
         ],
-    "widget-library": 
+    "How-tos": 
     [
-      "widgets-overview",
+      
       {
         "type": "subcategory",
-        "label": "Data Widgets",
+        "label": "How to Documentation",
         "ids": [
-            "authentication",
-            "doc3"]
+            "how-to-app-development",
+            "how-to-mobile-development",
+            "how-to-widgets",
+            "how-to-prefabs"]
       },
       {
         "type": "subcategory2",
