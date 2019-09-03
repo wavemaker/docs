@@ -100,14 +100,17 @@ Studio makes use of module APIs to work with backend services. These language bu
 Once you add the language bundles, update the flyway script and initiate the build process for the languages to take effect.
 
 1. New locale has to be inserted to the PostgreSQL Database, by adding the insert statement to the flyway script file. Following are the instructions:
-    - Go to the directory:   
+    1. Go to the directory:   
 `wavemaker-login-service/wavemaker-login/wavemaker-login-portal/src/main/resources/db\_scripts/postgresql/`
-    - Add a flyway script file incrementing the version number.  
+    2. Add a flyway script file incrementing the version number.  
     For example, if you have the recent version of flyway script as 
     `wmlogin\_v74\_\_RBAC\_model\_permissions.sql`,  
-    Create a new file with the following name: `wmlogin\_v75\_\_new\_locale\_.sql` 
+    Create a new file with the following name:  
+    `wmlogin\_v75\_\_new\_locale\_.sql`  
+
     > Note double underscore after the version number v75.
-    - Add the following statement in the above newly created file, after replacing the placeholders for `localeId`, `DisplayName`, and `Language`.  
+
+    3. Add the following statement in the above newly created file, after replacing the placeholders for `localeId`, `DisplayName`, and `Language`.  
     INSERT INTO SUPPORTED\_LOCALE (LOCALE\_ID, DISPLAY\_NAME, LANGUAGE) values (`'localeId'`, `'DisplayName'`, `'Language'`);  
     For example to insert German locale: 
     `INSERT INTO SUPPORTED\_LOCALE (LOCALE\_ID, DISPLAY\_NAME, LANGUAGE)`  
