@@ -1,9 +1,9 @@
 /* your custom css */
 .fixedHeaderContainer {
-    background-color: #f2f2f2;
+    background-color: #097FD5;
 }
 .headerTitleWithLogo {
-    color: #1794ef;
+    color: #f2f2f2;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {

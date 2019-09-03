@@ -2,7 +2,7 @@
 title: "Pre-Requisites"
 id: "pre-requisites"
 ---
-[WaveMaker Overview]() > [Pre-Requisites]()
+Pre-requisites for WaveMaker app development. 
 
 ---
 WaveMaker makes building web/mobile applications easy. It can be used by a RAD Developer with a basic skillset or by a professional UI developer with advanced skills. Below is a brief outline of the prerequisites necessary for building apps using WaveMaker.

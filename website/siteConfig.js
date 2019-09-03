@@ -73,7 +73,7 @@ const siteConfig = {
   /* Colors for website */
   colors: {
     primaryColor: '#097FD5',
-    secondaryColor: '#EE7E4F',
+    secondaryColor: '#097FD5',
   },
 
   /* Custom fonts for website - the default was Times New Roman instead of Open Sans */
