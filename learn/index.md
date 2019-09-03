@@ -3,8 +3,7 @@ id: "index"
 title: "Welcome to the WaveMaker Learning Center"
 description: "WaveMaker is a low-code platform for developing modern and rich end-to-end web and mobile apps."
 sidebar_label: "Welcome to WaveMaker LC"
-
-edit_custom_url: https://www.wavemaker.com/learn/
+edit_custom_url: https://github.com/wavemaker/docs/blob/master/learn/index.md
 
 ---
 *Introduction to WaveMaker and getting started with WM Studio the Low-code platform and RAD (Rapid Application Development).*

@@ -53,7 +53,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
 	{search: true},
-	{ languages: true },
+	{languages: true },
 	{doc: 'widget-library', label: 'Widgets'},
     {href: 'https://www.wavemakeronline.com/studio/10.1.1.7359/docs/index.html', label: 'API Docs'},
     {page: 'help', label: 'FAQ'},
@@ -106,6 +106,7 @@ const siteConfig = {
   // No .html extensions for paths.
   cleanUrl: true,
   
+  editUrl: 'https://github.com/wavemaker/learn/',
  
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
