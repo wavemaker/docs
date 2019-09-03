@@ -1,20 +1,50 @@
 {
-  "learn": {
-    "Features": [
+  "docs": 
+  {
+    "WaveMaker Overview": 
+      [
+        "index", 
+        "wavemaker-overview/platform-overview",
         {
-            "type": "subcategory",
-            "label": "WaveMaker App Development",
-            "ids": [
-                "platform-overview/index"
-            ]
+        "type": "subcategory",
+		    "label": "Getting Started",
+			  "ids": [
+        "wavemaker-overview/product-walkthrough",
+        "wavemaker-overview/supported-technologies",
+        "wavemaker-overview/pre-requisites",
+        "wavemaker-overview/artifacts-repository",
+        "wavemaker-overview/localization"] 
         },
-        {
-            "type": "subcategory",
-            "label": "Mobile App Development",
-            "ids": [
-                "/design-overview/index"
-            ]
-        }
+		    "widget-library"
+        ],
+    "widget-library": 
+    [
+      "widgets-overview",
+      {
+        "type": "subcategory",
+        "label": "Data Widgets",
+        "ids": [
+            "authentication",
+            "doc3"]
+      },
+      {
+        "type": "subcategory2",
+        "label": "Container",
+        "ids": [
+            "exampledoc4",
+            "exampledoc5"]
+      }
+    ],
+    "Policy": ["xss-antisamy-policy-configuration"],
+    "App Building Exercises": 
+    [
+      "app-building-exercises/index",
+			"app-building-exercises/leave-management",
+      "app-building-exercises/asset-management",
+      "tutorials"
     ]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
   }
 }
