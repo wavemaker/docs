@@ -54,11 +54,11 @@ const siteConfig = {
   headerLinks: [
 	{search: true},
 	{ languages: true },
-	{href: 'https://www.wavemaker.com/', label: 'WaveMaker'},
 	{doc: 'widget-library', label: 'Widgets'},
     {href: 'https://www.wavemakeronline.com/studio/10.1.1.7359/docs/index.html', label: 'API Docs'},
     {page: 'help', label: 'FAQ'},
-    {blog: true, label: 'Release Notes'},
+    {doc: 'release-notes/release-notes-v10.1', label: 'Release Notes'},
+	{href: 'https://www.wavemaker.com/', label: 'WaveMaker'},
 	{href: 'https://www.wavemakeronline.com/login/login', label: 'Login'},
   ],
 
