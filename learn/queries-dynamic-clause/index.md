@@ -34,17 +34,19 @@ This solution can be used only with a single entity. If you want to use multiple
     - invoke the DB API Variable, and
     - call Update on the DB API Variable.
 8. Assuming that you will be getting the input fields at runtime from a widget in the UI, construct a query by using the field names as literal and field values may be taken from various widgets.
-9. You should write the script using an if condition to check whether each field is available in the runtime or not and give appropriate value for each of them and construct the value for q field for the service variable.
+9. You should write the script using an if condition to check whether each field is available in the runtime or not and give appropriate value for each of them and construct the value for q field for the service variable.  
+    - In the query (q) request param, the field name of the column has to be specified and not the column name.
     
+        ```
         Page.button2Click = function($event, widget) {
     
             var sv = Page.Variables.customQueryVar;
-            sv.setInput("q", "FIRSTNAME like '%J%' and JOB\_TITLE like '%Marketing%'");
+            sv.setInput("q", "firstname like '%J%' and jobTitle like '%Marketing%'");
             sv.invoke();
             Page.Variables.customQueryVar.update();
     
         };
-    
+        ```
     In the script, the field names have to be literal and the field values can be taken from UI. For example, if a text widget is used for the value, then use the following expression: `Page.Widgets.text1.datavalue`. Try from the Use Expression tab in Binding dialog to ensure your expression is syntactically correct.
 10. This is the outcome of the page when the user clicks on Filter Data button [![](../assets/dynamic_query5.png)](../assets/dynamic_query5.png)
 
@@ -55,7 +57,9 @@ This solution can be used only with a single entity. If you want to use multiple
 3. Under Request Parameters
 4. For q enter the conditions to filter as:
     
-    FIRSTNAME like '%J%' and JOB\_TITLE like '%Market%'
+    ```
+    firstname like '%J%' and jobTitle like '%Market%'
+    ```
     
 5. Click on TEST.
 6. You will see the Response as [![](../assets/dynamic_query6.png)](../assets/dynamic_query6.png)

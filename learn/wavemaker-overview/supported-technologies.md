@@ -2,9 +2,11 @@
 title: "Supported Technologies"
 id: "supported-technologies"
 ---
+Find the list of supported technologies by WaveMaker.
+
 ---
 
-In this document, you will find a list of various technologies supported by WaveMaker.Click to know about the latest version support for [UI Frameworks](/learn/wavemaker-release-notes/#UI-Frameworks), [Back-end Frameworks](/learn/wavemaker-release-notes/#Back-end-Frameworks), and [Run-time Environment](/learn/wavemaker-release-notes/#Run_Time_Environment)
+In this document, you will find a list of various technologies supported by WaveMaker. Click to know about the latest version support for [UI Frameworks](/learn/wavemaker-release-notes/#UI-Frameworks), [Back-end Frameworks](/learn/wavemaker-release-notes/#Back-end-Frameworks), and [Run-time Environment](/learn/wavemaker-release-notes/#Run_Time_Environment).
 
 | Description | Vendor/Version |
 | --- | --- |
