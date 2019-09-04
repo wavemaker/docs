@@ -5,7 +5,7 @@ id: ""
 
 WaveMaker leverages the concept of Data Binding by Angular, to bind Widgets with Variables. Widgets can be configured to bind the UI Elements to specific fields of the Data Model.
 
-[![binding_concept](../assets/binding_concept.png)](../assets/binding_concept.png)
+[![binding_concept](./assets/binding_concept.png)](./assets/binding_concept.png)
 
 Binding is used to serve two purposes:
 
@@ -17,7 +17,7 @@ Binding is used to serve two purposes:
 Once you have created the necessary variables ([Variable Access](http://[supsystic-show-popup id=105])), you can display the data or capture user input by binding data to a component/widget. The connection between a widget (or widget property) and a source of data is called the **binding**.
 
 1. To bind widgets to data, you need to use the **Bind** dialog.
-2. In the **Properties Panel**, anything that can support data from a different source is marked with the _bind chain_ icon. You can edit or delete the bindings. Click the bind icon to display the **Bind** dialog. [![bind](../assets/bind.png)](../assets/bind.png)
+2. In the **Properties Panel**, anything that can support data from a different source is marked with the _bind chain_ icon. You can edit or delete the bindings. Click the bind icon to display the **Bind** dialog. [![bind](./assets/bind.png)](./assets/bind.png)
 3. Clicking on the _bind chain icon_ next to any widget property will open a **Bind** dialog. From this dialog you can:
     - see a listing the various binding options, fields along with the data types,
     - do multiple bindings, that is all the fields can be bound at the same time,
@@ -29,12 +29,12 @@ Once you have created the necessary variables ([Variable Access](http://[supsyst
     - **Resource**:  List of resources included in the project, including images, HTML, CSS, and JavaScript.
     - **Use Expression**: Any JavaScript expression.
     - **Localized Messages**: Any of the application messages that you created in the Application Messages repository.
-5. Select the appropriate binding options and click **Bind**. [![widget_binding](../assets/widget_binding.png)](../assets/widget_binding.png)
+5. Select the appropriate binding options and click **Bind**. [![widget_binding](./assets/widget_binding.png)](./assets/widget_binding.png)
 6. A **validation message** will be displayed to indicate whether the binding is valid or not. Along with the message, you will see the expected data type (Target) and your selection (Bound to). Based on this information, you may either choose to ignore the message or change the binding accordingly.
 
 # Binding to Data from Variables
 
-Variables can be bound to each other. Usually, this is the requirement with Variables when the data needs to be filtered i.e. output limited by a constraint or when a Variable which needs parameters as input in order to process information from the data source. These input/filter parameters will be available from the _Data_ tab of the Variable. For example, the Variable corresponding to the Employee CRUD API from the sample hrdb can be filtered on any field of the dataset: [![var_bind](../assets/var_bind1.png)](../assets/var_bind1.png) Clicking on the _bind chain icon_ next to any parameter will open a **Bind** dialog. From this dialog you can:
+Variables can be bound to each other. Usually, this is the requirement with Variables when the data needs to be filtered i.e. output limited by a constraint or when a Variable which needs parameters as input in order to process information from the data source. These input/filter parameters will be available from the _Data_ tab of the Variable. For example, the Variable corresponding to the Employee CRUD API from the sample hrdb can be filtered on any field of the dataset: [![var_bind](./assets/var_bind1.png)](./assets/var_bind1.png) Clicking on the _bind chain icon_ next to any parameter will open a **Bind** dialog. From this dialog you can:
 
 - see a listing the various binding options, fields along with the data types,
 - do multiple bindings, that is all the fields can be bound at the same time,
@@ -49,7 +49,7 @@ Variables can be bound to each other. Usually, this is the requirement with Vari
 - **Expression**: Any JavaScript expression.
 - **Localized Messages**: Any of the application messages that you created in the Application Messages repository.
 
-[![var_bind](../assets/var_bind2.png)](../assets/var_bind2.png) A **validation message** will be displayed to indicate whether the binding is valid or not. Along with the message, you will see the expected data type (Target) and your selection (Bound to). Based on this information, you may choose to ignore the message or change the binding accordingly. [![var_bind_warn](../assets/var_bind2_warn.png)](../assets/var_bind2_warn.png)
+[![var_bind](./assets/var_bind2.png)](./assets/var_bind2.png) A **validation message** will be displayed to indicate whether the binding is valid or not. Along with the message, you will see the expected data type (Target) and your selection (Bound to). Based on this information, you may choose to ignore the message or change the binding accordingly. [![var_bind_warn](./assets/var_bind2_warn.png)](./assets/var_bind2_warn.png)
 
 # Binding Options
 

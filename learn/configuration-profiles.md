@@ -5,7 +5,7 @@ id: ""
 
 App Configuration is externalized at each service through configuration profiles. Configuration for DB, REST servers etc. can be separated for Development and Deployment environments through Profiles. The profile can be accessed from the Settings option in the Secondary Actions.
 
-[![](../assets/config_settings.png)](../assets/config_settings.png)
+[![](./assets/config_settings.png)](./assets/config_settings.png)
 
 The **Configuration Profiles** allows one to run the same application under different environments with different configurations. This is in line with _[Maven Configuration Profiles](https://maven.apache.org/guides/mini/guide-building-for-different-environments.html)_. By default, two profiles are generated for every application - **Development** used with the **Run** option and **Deployment** for **Deploy** option.
 
@@ -13,7 +13,7 @@ The **Configuration Profiles** allows one to run the same application under diff
 
 The **Development Configuration Profiles,** used with the **Run** option, are not editable. The values are set from the configuration of the underlying services at the time of import/creation. If you want to change these values, go the respective service configuration dialog and make the changes.
 
-[![](../assets/config_dev.png)](../assets/config_dev.png)
+[![](./assets/config_dev.png)](./assets/config_dev.png)
 
 - Under Security tab, Configuration SSL is disabled by default.
 - There is no provision to configure X-Frame options. It is by default set to “Same Origin”.
@@ -23,7 +23,7 @@ The **Development Configuration Profiles,** used with the **Run** option, are no
 
 The **Deployment Configuration Profiles,** used with the **Deploy **option, are editable. The values are set from the configuration of the underlying services at the time of import/creation. You can change them according to the Deployment Environment settings.
 
-[![](../assets/config_deploy.png)](../assets/config_deploy.png)
+[![](./assets/config_deploy.png)](./assets/config_deploy.png)
 
 - **Database Settings**:
     - **Records per request:** Max Results can be set for Database configuration. This option will restrict the number of rows returned by any Variable associated with the database. The REST API calls will impose this restriction.
@@ -59,7 +59,7 @@ The **Deployment Configuration Profiles,** used with the **Deploy **option, ar
 
 If your app is using Prefab which has services imported, you can configure the same here. Same as with the app profiles, only Deployment Profile is configurable. Also, for Prefabs, you cannot change the Security settings.
 
-[![](../assets/config_prefab.png)](../assets/config_prefab.png)
+[![](./assets/config_prefab.png)](./assets/config_prefab.png)
 
 ## Creating Configuration Profile
 
@@ -67,7 +67,7 @@ You can choose to **add different configuration profiles** as per the need of th
 
 **NOTE**: This custom profile can be used when exporting the project as a WAR file.
 
-[![](../assets/config_custom.png)](../assets/config_custom.png)
+[![](./assets/config_custom.png)](./assets/config_custom.png)
 
 < Manage Deployed Apps
 

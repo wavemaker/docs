@@ -15,7 +15,7 @@ You can use the following types of web services:
 - **SOAP services:** SOAP (Simple Object Access Protocol) is a standard XML protocol for exposing and calling web services. A SOAP service is described by a Web Services Definition Language (WSDL) document, often available through a URL from the service itself.
 - **WebSocket services:** WebSockets represent the next evolution of web communications a full-duplex, bidirectional communications channel that operate through a single socket over the Web. It provides a true standard that you can use to build scalable, real-time web applications. It provides full-duplex communication channels over a single TCP connection. Its only relationship to HTTP is that its handshake is interpreted by HTTP servers as an Upgrade Request.
 
-[![](../assets/web_types.png)](../assets/web_types.png)
+[![](./assets/web_types.png)](./assets/web_types.png)
 
 # Variables for invocation
 
@@ -23,7 +23,7 @@ After importing a web-service, a **Variable** needs to be created manually for 
 
 [Know more about Variables from here](/learn/app-development/variables/variables-actions/#).
 
-[Know how to create Variables for web service from here](/learn/app-development/variables/web-service/).[![](../assets/Var_create.png)](../assets/Var_create.png)[![](../assets/soap_var.png)](../assets/soap_var.png)WaveMaker supports various types of web services and these services can be invoked and results captured through Variables.
+[Know how to create Variables for web service from here](/learn/app-development/variables/web-service/).[![](./assets/Var_create.png)](./assets/Var_create.png)[![](./assets/soap_var.png)](./assets/soap_var.png)WaveMaker supports various types of web services and these services can be invoked and results captured through Variables.
 
 < Backend Services Overview
 

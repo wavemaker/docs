@@ -9,23 +9,23 @@ In this section, we will look at the usage of **external JavaScript and CSS** fi
 2. Making an entry in the **index.html** file giving the location of the files imported.
 3. Using the imported files, via **script** in your application.
 
-We will explain the process with the help of an example. We want to add a multiple date selection facility to our application. The current calendar widget allows selection of a single date. We will use [MultiDatesPicker v1.6.3](../assets/MultiDatesPicker-v1.6.3.zip) jQuery UI downloaded from [http://multidatespickr.sourceforge.net/](http://multidatespickr.sourceforge.net/). We will also be needing [jquery-ui-1.12.0.custom](../assets/jquery-ui-1.12.0.custom.zip) file. Download and unzip both the files
+We will explain the process with the help of an example. We want to add a multiple date selection facility to our application. The current calendar widget allows selection of a single date. We will use [MultiDatesPicker v1.6.3](./assets/MultiDatesPicker-v1.6.3.zip) jQuery UI downloaded from [http://multidatespickr.sourceforge.net/](http://multidatespickr.sourceforge.net/). We will also be needing [jquery-ui-1.12.0.custom](./assets/jquery-ui-1.12.0.custom.zip) file. Download and unzip both the files
 
 1. From **Developer Utilities**, select File Explorer and **Import Resource**. We need to import two files:
     1. a _js file_ - jquery-ui.multidatespicker.js with the code and
-    2. a _CSS file_ - mdp.css for the UI. The js file will be placed in the _resources/javascript_ folder and the CSS file in the _resources/css_ folder. Create the appropriate folders [![](../assets/js_import.png)](../assets/js_import.png)
+    2. a _CSS file_ - mdp.css for the UI. The js file will be placed in the _resources/javascript_ folder and the CSS file in the _resources/css_ folder. Create the appropriate folders [![](./assets/js_import.png)](./assets/js_import.png)
 2. In the _index.html_ file make the following entries specifying the path for script and CSS files:
     
-    [![](../assets/js_index.png)](../assets/js_index.png)
+    [![](./assets/js_index.png)](./assets/js_index.png)
 3. On the main page mark the position for the display of the date-picker using a div tag
     
-    [![](../assets/js_markup.png)](../assets/js_markup.png) In the script tab attach the _mulitdatespicker_ function from the js file imported to the div created
+    [![](./assets/js_markup.png)](./assets/js_markup.png) In the script tab attach the _mulitdatespicker_ function from the js file imported to the div created
     
     $(function() {
                     $('#multidatepicker').multiDatesPicker();
                 });
     
-    [![](../assets/js_script.png)](../assets/js_script.png)
+    [![](./assets/js_script.png)](./assets/js_script.png)
 4. When you run the application you will see the calendar displayed and you can select multiple dates.
 
 < Backend Services Overview

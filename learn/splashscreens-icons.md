@@ -11,7 +11,7 @@ For WaveMaker Hybrid Mobile Apps, splash screens and app icons for various devic
 
 1. From Project Actions, Build -> Build for Android option (you can also select the Send to PhoneGap option)
 2. In the build dialog, you will see the Splash screens and App Icons option under Android (and iOS, in case of PhoneGap) section
-3. On hover of the splash screen/ app icon, edit icon is shown. [![](../assets/mobile_splashscreen_default.png)](../assets/mobile_splashscreen_default.png)
+3. On hover of the splash screen/ app icon, edit icon is shown. [![](./assets/mobile_splashscreen_default.png)](./assets/mobile_splashscreen_default.png)
 4. On click of the edit icon, the selected splash screen/icon is shown in the file tree.
 5. Upload a file and select the uploaded file in the tree. Click ‘Apply’ to apply the changes. (See the next sections for the splash screen image and icon requirements).
 6. Repeat for all the splash screens and icons.

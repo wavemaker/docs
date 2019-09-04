@@ -5,7 +5,7 @@ id: ""
 
 An **accordion** is a stacked list of UI components, with only one focused component expanded at any point of time and the rest collapsed.
 
-WaveMaker **Accordion Widget** is a collection of accordion panes where users can either place the content or include the partial pages. [![](../assets/accordion_run.png)](../assets/accordion_run.png)
+WaveMaker **Accordion Widget** is a collection of accordion panes where users can either place the content or include the partial pages. [![](./assets/accordion_run.png)](./assets/accordion_run.png)
 
 # Features
 
@@ -27,7 +27,7 @@ When you drag and drop an Accordion, by default three accordion panes are provid
 4. _Badge_ - Indicated the small meaning information. The badge type can be set different styles - primary, success, info, warning, or danger on the accordion pane components to customize the look and feel. It can be bound to a variable, for example, to indicate the number of employees in a department
 5. _Is pane default_ - Sets a default pane to be opened when the accordion is rendered
 
-[![](../assets/accordion_prop.png)](../assets/accordion_prop.png) [![](../assets/accordion_pane_prop-1.png)](../assets/accordion_pane_prop-1.png)
+[![](./assets/accordion_prop.png)](./assets/accordion_prop.png) [![](./assets/accordion_pane_prop-1.png)](./assets/accordion_pane_prop-1.png)
 
 ### Accordion Types
 

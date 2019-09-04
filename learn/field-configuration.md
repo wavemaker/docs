@@ -21,21 +21,21 @@ The columns or fields to be displayed in a Data Table can be further configured
 
 All the above-mentioned options are available from the **Columns tab** of the **Advanced Settings** property.
 
-[![](../assets/AS_fields.png)](../assets/AS_fields.png)
+[![](./assets/AS_fields.png)](./assets/AS_fields.png)
 
 ### Column Grouping
 
-This feature helps you group columns under a heading for better readability and convenience. [![](../assets/group_run.png)](../assets/group_run.png)
+This feature helps you group columns under a heading for better readability and convenience. [![](./assets/group_run.png)](./assets/group_run.png)
 
-1. Use the **Add Group** button under _Columns_ tab of _Advanced Settings_. This will allow you to give a title to the group. [![](../assets/group_new.png)](../assets/group_new.png)
+1. Use the **Add Group** button under _Columns_ tab of _Advanced Settings_. This will allow you to give a title to the group. [![](./assets/group_new.png)](./assets/group_new.png)
 2. **Add columns**  to the group by either
     - using the _drag_ or  _reorder_ option from the column tree on the left panel within the  Advanced Settings dialog, or
-    - by selecting the _Group_ from the Basic properties tab [![](../assets/group_add.png)](../assets/group_add.png)
-3. You can also have nested groups by selecting the parent group while adding the group or use the drag feature. [![](../assets/group_nested.png)](../assets/group_nested.png) [![](../assets/group_nested_final.png)](../assets/group_nested_final.png)
+    - by selecting the _Group_ from the Basic properties tab [![](./assets/group_add.png)](./assets/group_add.png)
+3. You can also have nested groups by selecting the parent group while adding the group or use the drag feature. [![](./assets/group_nested.png)](./assets/group_nested.png) [![](./assets/group_nested_final.png)](./assets/group_nested_final.png)
 
 ### View Mode Options
 
-[![](../assets/dt_cols_view.png)](../assets/dt_cols_view.png)
+[![](./assets/dt_cols_view.png)](./assets/dt_cols_view.png)
 
 #### Widget Representation
 
@@ -90,7 +90,7 @@ This feature helps you group columns under a heading for better readability and 
 
 #### Format Options
 
-[![](../assets/dt_cols_format.png)](../assets/dt_cols_format.png)
+[![](./assets/dt_cols_format.png)](./assets/dt_cols_format.png)
 
 **Format** Options enables you to define the display format of the column at runtime. The options include _toDate, toCurrency, prefix, suffix, and srtingtoNumber_. Be aware that these format types selected are only for display purpose. During runtime, edit row will display the values as defined in the data source.
 
@@ -124,7 +124,7 @@ For _Quick Edit_ and _Inline Editable_ Table, you can specify the Display Format
         - _Default Value_
         - _Filter on Field_ to set cascading data, i.e., restrict the display values for the current field based on the value of the field set for this property. For example, the values displayed in the city field should depend upon the value selected for state field; then correspondingly for city field, filter on field property should be set to state.
     
-    [![](../assets/dt_cols_edit.png)](../assets/dt_cols_edit.png)
+    [![](./assets/dt_cols_edit.png)](./assets/dt_cols_edit.png)
 2. **Validation options**:
     
     - - **Required**: whether the column entry is mandatory or not;
@@ -134,7 +134,7 @@ For _Quick Edit_ and _Inline Editable_ Table, you can specify the Display Format
             - _regular expression for validations_ for text and numeric fields.
         - **Validation Message** to be displayed if the field fails the validation specified. in case of validation failure, an error icon is displayed, hovering over which will display the validation message.
     
-    [![](../assets/dt_cols_validations.png)](../assets/dt_cols_validations.png)
+    [![](./assets/dt_cols_validations.png)](./assets/dt_cols_validations.png)
 
 ### Export Options
 
@@ -142,13 +142,13 @@ In the case where the export option is set by selecting the Export Format as EXC
 
 NOTE: Value Expression **has** to be set for custom fields.
 
-[![](../assets/dt_cols_export.png)](../assets/dt_cols_export.png)
+[![](./assets/dt_cols_export.png)](./assets/dt_cols_export.png)
 
 ### Filter Mode Options
 
 In the case, Filter Option is set to Row while designing the Data Table, then the **Filter Options** can be enabled or disabled for the specific column.
 
-[![](../assets/dt_cols_filter.png)](../assets/dt_cols_filter.png)
+[![](./assets/dt_cols_filter.png)](./assets/dt_cols_filter.png)
 
 ### Styling Options
 
@@ -166,7 +166,7 @@ In the case, Filter Option is set to Row while designing the Data Table, then th
 
 **Role-based access** can be set to enforce security at column-level: If the [security has been enabled](http://[supsystic-show-popup id=111]) in your app, then you can define the app role which has access to a specific column.
 
-[![](../assets/dt_security.png)](../assets/dt_security.png)
+[![](./assets/dt_security.png)](./assets/dt_security.png)
 
 < Configuration
 

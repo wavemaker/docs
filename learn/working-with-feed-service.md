@@ -14,26 +14,26 @@ A web feed is a document (often XML-based) whose discrete content items include 
 
 You can import a feed service into your WaveMaker application by following these steps:
 
-1. From Main Menu, click Import Web Services [![Web_Service1](../assets/Web_Service1.png)](../assets/Web_Service1.png)
+1. From Main Menu, click Import Web Services [![Web_Service1](./assets/Web_Service1.png)](./assets/Web_Service1.png)
 2. From the **Web Service** dialog, click the **Feed** icon.
-3. Click **Import**. [![240_FEED](../assets/240_FEED.png)](../assets/240_FEED.png)
-4. A generic Feed Service is imported to your application and is displayed in the **Services** section of the **Files and  Services Panel** on the left under _Web Service_ section. [![240_FEEDService](../assets/240_FEEDService.png)](../assets/240_FEEDService.png)
+3. Click **Import**. [![240_FEED](./assets/240_FEED.png)](./assets/240_FEED.png)
+4. A generic Feed Service is imported to your application and is displayed in the **Services** section of the **Files and  Services Panel** on the left under _Web Service_ section. [![240_FEEDService](./assets/240_FEEDService.png)](./assets/240_FEEDService.png)
 
 # Service Variable for Generic Feed Service
 
 To use the Service data within the app, you need a Service Variable.
 
-1. From Main Menu, click **Create** and choose **Variables**. [![Var_create](../assets/Var_create.png)](../assets/Var_create.png)
-2. In the **Variables** dialog, select _Service Variable_ and **ADD**; then select _FeedService_ as **Service** and _getFeed_ as the **Operation.** [![web_feed_var](../assets/web_feed_var.png)](../assets/web_feed_var.png)
-3. Click the **Data** tab and set the _feedURL _the URL for your service. Configure other properties of the variable, if required. In this example, we are using the CNN Feed Service: http://rss.cnn.com/rss/edition.rss [![web_feed_data](../assets/web_feed_data.png)](../assets/web_feed_data.png)
+1. From Main Menu, click **Create** and choose **Variables**. [![Var_create](./assets/Var_create.png)](./assets/Var_create.png)
+2. In the **Variables** dialog, select _Service Variable_ and **ADD**; then select _FeedService_ as **Service** and _getFeed_ as the **Operation.** [![web_feed_var](./assets/web_feed_var.png)](./assets/web_feed_var.png)
+3. Click the **Data** tab and set the _feedURL _the URL for your service. Configure other properties of the variable, if required. In this example, we are using the CNN Feed Service: http://rss.cnn.com/rss/edition.rss [![web_feed_data](./assets/web_feed_data.png)](./assets/web_feed_data.png)
 
 # Widget Binding to Display the Feed Response
 
 1. Drag and Drop a List onto the project canvas.
-2. Use the Existing Variable option to select the Service Variable created in the previous step, and select the _entries_ node. [![web_feed_list](../assets/web_feed_list.png)](../assets/web_feed_list.png)
+2. Use the Existing Variable option to select the Service Variable created in the previous step, and select the _entries_ node. [![web_feed_list](./assets/web_feed_list.png)](./assets/web_feed_list.png)
 3. Select a Template and Pagination appropriately. We have selected Media List and Basic Pagination style.
 4. Bind the fields appropriately. We have bound Name to the author, Time to updatedDate, and Description to description. From the canvas delete unwanted widgets, Picture in this case.
-5. Run the app and see the content displayed. (Ensure that the Request Data on Page Load property is checked for the Service Variable) [![web_feed_listrun](../assets/web_feed_listrun.png)](../assets/web_feed_listrun.png)
+5. Run the app and see the content displayed. (Ensure that the Request Data on Page Load property is checked for the Service Variable) [![web_feed_listrun](./assets/web_feed_listrun.png)](./assets/web_feed_listrun.png)
 
 4\. Creating Backend Services
 

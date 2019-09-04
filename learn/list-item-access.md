@@ -17,7 +17,7 @@ id: ""
         };
     
 
-[![](../assets/list_bind.png)](../assets/list_bind.png)We have used the following JavaScript for the onSelect event of the List:
+[![](./assets/list_bind.png)](./assets/list_bind.png)We have used the following JavaScript for the onSelect event of the List:
 
 Page.select1Change = function ($event, widget, item, currentItemWidgets, newVal, oldVal) {
     Page.Variables.NorthwindProducttestData.setFilter('subcategory', currentItemWidgets.select1.datavalue);

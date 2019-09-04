@@ -13,11 +13,11 @@ A Select widget can be used in various ways based on the source of data. Each ty
 Instead of having a [comma-separated list](/learn/how-tos/configuring-select-widget-static-list-values/), one can use a Variable to hold the list and then bind it to the Select widget. This will enable us to reuse the list at multiple places if needed.
 
 1. Drag and drop a Select and Label widget onto the canvas.
-2. [Create a Model Variable](http://[supsystic-show-popup id=105]), choose the Is List and add the list values: [![](../assets/sel_listvar.png)](../assets/sel_listvar.png)
+2. [Create a Model Variable](http://[supsystic-show-popup id=105]), choose the Is List and add the list values: [![](./assets/sel_listvar.png)](./assets/sel_listvar.png)
 3. Bind the Select Widget to the Model Variable dataset
 4. Set the Data field value to the dataValue of the model variable. This is the value that is selected by the user.
-5. The Display field is what the user sees in the list. In this case it is same as the Data field. We will see the case when both are different in the next use case. [![](../assets/sel_listvar_props.png)](../assets/sel_listvar_props.png)
-6. The selection made by the user is displayed in a Label widget, by binding the select datavalue to it. [![](../assets/sel_list_res.png)](../assets/sel_list_res.png)
+5. The Display field is what the user sees in the list. In this case it is same as the Data field. We will see the case when both are different in the next use case. [![](./assets/sel_listvar_props.png)](./assets/sel_listvar_props.png)
+6. The selection made by the user is displayed in a Label widget, by binding the select datavalue to it. [![](./assets/sel_list_res.png)](./assets/sel_list_res.png)
 7. Preview the app and see the selected item from the Select widget displayed in the label.
 
 [Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)

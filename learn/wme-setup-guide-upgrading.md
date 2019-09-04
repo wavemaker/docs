@@ -45,12 +45,12 @@ Following are the prerequisites for applying the patch on WME:
     _Case 2: Windows as host machine_
     - Download and install WinSCP installer in your Windows host machine.
     - Launch WinSCP after installation.
-    - Enter Hostname, Username and Password and click Login. [![](../assets/WME_patch1.png)](../assets/WME_patch1.png) **In case of AWS installation**, you need the use the _ppk_ file instead of the password [![](../assets/WME_patch1_1.png)](../assets/WME_patch1_1.png)
-    - Click 'Yes' when the Unknown server warning is displayed. [![](../assets/WME_patch2.png)](../assets/WME_patch2.png)
-    - Enter the password when prompted (communicated to you by the WaveMaker team). [![](../assets/WME_patch3.png)](../assets/WME_patch3.png)
+    - Enter Hostname, Username and Password and click Login. [![](./assets/WME_patch1.png)](./assets/WME_patch1.png) **In case of AWS installation**, you need the use the _ppk_ file instead of the password [![](./assets/WME_patch1_1.png)](./assets/WME_patch1_1.png)
+    - Click 'Yes' when the Unknown server warning is displayed. [![](./assets/WME_patch2.png)](./assets/WME_patch2.png)
+    - Enter the password when prompted (communicated to you by the WaveMaker team). [![](./assets/WME_patch3.png)](./assets/WME_patch3.png)
     - Now you are connected to the WME platform machine from your Windows host machine.
-    - Drag and drop the WME patch file and WME patch checksum file from the Windows machine to the WME platform machine /home/ubuntu location. [![](../assets/WME_patch4.png)](../assets/WME_patch4.png)
-    - Click 'Ok' on the upload dialog. [![](../assets/WME_patch5.png)](../assets/WME_patch5.png)
+    - Drag and drop the WME patch file and WME patch checksum file from the Windows machine to the WME platform machine /home/ubuntu location. [![](./assets/WME_patch4.png)](./assets/WME_patch4.png)
+    - Click 'Ok' on the upload dialog. [![](./assets/WME_patch5.png)](./assets/WME_patch5.png)
     - Now patch and checksum/private key files will start copying to the WME platform machine. Wait until the patch and checksum/private key files are copied to the WME platform machine.
 
 ## Accessing WME patch file & verifying
@@ -65,10 +65,10 @@ _Case 2: Windows Host Machine_
 
 1. Download and install [PuTTY installer](https://winscp.net/download/putty-0.67-installer.exe) in your Windows host machine
 2. Launch PuTTY after installation
-3. Enter the Platform machine IP address in the Host Name field and select SSH option. Click 'Open' button [![](../assets/WME_patch6.png)](../assets/WME_patch6.png)
-4. In case of **AWS installation**, under **SSH** -> **Auth** option add the _Private key file_ [![](../assets/WME_patch6_1.png)](../assets/WME_patch6_1.png)
-5. Click 'Yes' on the PuTTY security Alert dialog [![](../assets/WME_patch7.png)](../assets/WME_patch7.png)
-6. Enter the Username and password when prompted (as provided by the WaveMaker team) [![](../assets/WME_patch8.png)](../assets/WME_patch8.png)
+3. Enter the Platform machine IP address in the Host Name field and select SSH option. Click 'Open' button [![](./assets/WME_patch6.png)](./assets/WME_patch6.png)
+4. In case of **AWS installation**, under **SSH** -> **Auth** option add the _Private key file_ [![](./assets/WME_patch6_1.png)](./assets/WME_patch6_1.png)
+5. Click 'Yes' on the PuTTY security Alert dialog [![](./assets/WME_patch7.png)](./assets/WME_patch7.png)
+6. Enter the Username and password when prompted (as provided by the WaveMaker team) [![](./assets/WME_patch8.png)](./assets/WME_patch8.png)
 7. Switch to root access `ubuntu@wavemaker:~$ sudo su -`
 
 You need to verify the WME  patch files using checksum command before installing it, [see here for details](/learn/installation/wavemaker-enterprise-setup-guide/#verifying-checksum-vm).
@@ -155,7 +155,7 @@ In case you encounter any issues while applying patch, download and send the log
 2. Login to Setup Portal with your admin credentials (provided at the time of admin user creation).
 3. From the left panel, click Support Center and Download Logs.
 
-[![](../assets/WME_trouble.png)](../assets/WME_trouble.png)
+[![](./assets/WME_trouble.png)](./assets/WME_trouble.png)
 
 Contents
 

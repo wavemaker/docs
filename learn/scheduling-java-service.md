@@ -67,7 +67,7 @@ In the above XML code replace the bean class with the appropriate package name o
 
 The task details include:
 
-- _cron_ referring to the time interval string we used corresponds to: _\*/10 \* \* \* \* ?_.  The time interval specified is in the UNIX cron format ([refer here](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html)). [![](../assets/cronformat.png?v=10)](../assets/cronformat.png)
+- _cron_ referring to the time interval string we used corresponds to: _\*/10 \* \* \* \* ?_.  The time interval specified is in the UNIX cron format ([refer here](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html)). [![](./assets/cronformat.png?v=10)](./assets/cronformat.png)
 - _method_ refers to the Java method to be invoked at the above-mentioned time intervals
 - _id_ refers to the id given to the bean class for the Java controller
 

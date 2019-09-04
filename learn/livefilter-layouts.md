@@ -5,7 +5,7 @@ id: ""
 
 Live Filter **layout** can be _1-column_, _2-column_ or _3-column_. Apart from this, the **alignment of a caption** for the fields can be configured to be placed on _top_, _left_ or _right_ of the filter fields.
 
-[![](../assets/lftr_layout.png)](../assets/lftr_layout.png)
+[![](./assets/lftr_layout.png)](./assets/lftr_layout.png)
 
 1. 1-Column Filter with left-aligned Captions: 
     

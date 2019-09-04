@@ -5,7 +5,7 @@ id: ""
 
 Mobile app developers can preview their apps using Preview button. However, web preview lacks native capabilities (like camera, calendar etc.,). To see the complete app along with their native capabilities, developers have to build the installer (apk or ipa) for respective OS. This build step consumes 10 mins of developer time. To improve your productivity, Wavemaker introduces a mobile app called ‘**WaveLens**’. Using this app, you can see an instant preview of their app without building the installer.
 
-[![](../assets/wavelens.png)](../assets/wavelens.png)[![](../assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.wavemaker.wavelens&hl=en) [![](../assets/App_Store_Badge.png)](https://itunes.apple.com/in/app/wavelens/id1146808805?mt=8)
+[![](./assets/wavelens.png)](./assets/wavelens.png)[![](./assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.wavemaker.wavelens&hl=en) [![](./assets/App_Store_Badge.png)](https://itunes.apple.com/in/app/wavelens/id1146808805?mt=8)
 
 ## Usage
 

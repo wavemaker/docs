@@ -26,7 +26,7 @@ Following are the limits:
 
 Each anchor requires a label, Icon (icon CSS class) and link. A JSON array containing this information has to be bound to dataset property of the widget, you can create a [Model Variable](/learn/app-development/variables/model-variable/) for the same. Corresponding property names should then be mapped for action label, action icon, and an action link. More Button label and icon are configurable via properties panel. See below for use case example.
 
-[![](../assets/tabbar_props.png)](../assets/tabbar_props.png)
+[![](./assets/tabbar_props.png)](./assets/tabbar_props.png)
 
 # Properties
 
@@ -90,7 +90,7 @@ We will create navigation for the following music app pages using tabbar.
 ## Step 1: Data
 
 1. From the **[Variable](http://[supsystic-show-popup id=121])** on Workspace Toolbar, access Variables to create a New Model Variable.
-2. Set the **Type** property to _Entry_ and check the **Is List** option. [![](../assets/tabbar_statvar.png)](../assets/tabbar_statvar.png)
+2. Set the **Type** property to _Entry_ and check the **Is List** option. [![](./assets/tabbar_statvar.png)](./assets/tabbar_statvar.png)
 3. Use the TEXT EDITOR under the JSON section to enter the following structure. This structure builds the list as given above. _Note_: In WaveMaker apps, link to an app page with name ‘pageName’ is ‘#/pageName’
     
     \[{
@@ -122,13 +122,13 @@ We will create navigation for the following music app pages using tabbar.
 
 ## Step 2: Design
 
-1. Select the tabbar and bind **Dataset Value** property to the _dataset of the Model Variable_ created earlier [![](../assets/tabbar_bind.png)](../assets/tabbar_bind.png)
-2. Set _action label_, _action icon_ and _action link_ to corresponding fields from the Model Variable [![](../assets/tabbar_props_ex.png)](../assets/tabbar_props_ex.png)
+1. Select the tabbar and bind **Dataset Value** property to the _dataset of the Model Variable_ created earlier [![](./assets/tabbar_bind.png)](./assets/tabbar_bind.png)
+2. Set _action label_, _action icon_ and _action link_ to corresponding fields from the Model Variable [![](./assets/tabbar_props_ex.png)](./assets/tabbar_props_ex.png)
 
 ## Step 3: Preview App
 
-1. Click **Run** to preview the tabbar. [![](../assets/tabbar_run1.png)](../assets/tabbar_run1.png)
-2. When more button is clicked, the remaining anchors will be shown. [![](../assets/tabbar_run2.png)](../assets/tabbar_run2.png)
+1. Click **Run** to preview the tabbar. [![](./assets/tabbar_run1.png)](./assets/tabbar_run1.png)
+2. When more button is clicked, the remaining anchors will be shown. [![](./assets/tabbar_run2.png)](./assets/tabbar_run2.png)
 
 B.2 Mobile UI Design
 

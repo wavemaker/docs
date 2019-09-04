@@ -20,7 +20,7 @@ While designing the List following features can be set:
     - by a simple click of the mouse on the item or
     - _Up_ and _Down arrows_ can be used to traverse the list items. Pressing enter key on any focused item will select the item.
 
-[![](../assets/LL_Features.png)](../assets/LL_Features.png)
+[![](./assets/LL_Features.png)](./assets/LL_Features.png)
 
 Data Source >
 

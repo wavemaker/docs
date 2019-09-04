@@ -18,9 +18,9 @@ Amazon Cognito is a service that enables you to create unique identities for you
 
 1. Go to [Amazon Management Console](http://docs.aws.amazon.com/cognito/latest/developerguide/create-new-user-pool-console-quickstart.html)
 2. [Configure the User Pool](http://docs.aws.amazon.com/cognito/latest/developerguide/create-new-user-pool-console-quickstart.html) as required
-3. Note down the generated pool id and Pool ARN values [![](../assets/AC_poolid.png)](../assets/AC_poolid.png)
-4. From the Apps tab, create an application with following configuration, make sure that “Generate Client Secret” is unchecked [![](../assets/AC_poolapp.png)](../assets/AC_poolapp.png)
-5. Create the application and note down the App client ID [![](../assets/AC_poolappid.png)](../assets/AC_poolappid.png)
+3. Note down the generated pool id and Pool ARN values [![](./assets/AC_poolid.png)](./assets/AC_poolid.png)
+4. From the Apps tab, create an application with following configuration, make sure that “Generate Client Secret” is unchecked [![](./assets/AC_poolapp.png)](./assets/AC_poolapp.png)
+5. Create the application and note down the App client ID [![](./assets/AC_poolappid.png)](./assets/AC_poolappid.png)
 
 ## Configuring JS Libraries in WaveMaker
 
@@ -35,7 +35,7 @@ Amazon Cognito is a service that enables you to create unique identities for you
 ### Upload JS files to WaveMaker:
 
 1. Upload the JS files to WaveMaker. Go to [Import Resource](http://[supsystic-show-popup id=112]) and Upload the JS files downloaded in the previous section. The files should be uploaded to _project/src/main/webapp/_ directory.
-2. From File Explorer, Navigate to _index.html_ and include the JS files manually (ensure the path is correct) [![](../assets/AC_index.png)](../assets/AC_index.png)
+2. From File Explorer, Navigate to _index.html_ and include the JS files manually (ensure the path is correct) [![](./assets/AC_index.png)](./assets/AC_index.png)
 
 At this point, we’ve integrated the Amazon JavaScript SDK into our project.
 
@@ -103,7 +103,7 @@ We will implement a custom Authentication Service which will take the JWT access
     import com.wavemaker.runtime.security.AuthRequestContext;
     import java.util.Arrays;
     
-    [![](../assets/AC_js_import.png)](../assets/AC_js_import.png)
+    [![](./assets/AC_js_import.png)](./assets/AC_js_import.png)
 3. Edit the code as follows
     
     @ExposeToClient
@@ -138,7 +138,7 @@ We will implement a custom Authentication Service which will take the JWT access
         }
     }
     
-    [![](../assets/AC_js_code.png)](../assets/AC_js_code.png)
+    [![](./assets/AC_js_code.png)](./assets/AC_js_code.png)
 4. [Configure the Security](http://[supsystic-show-popup id=111]) with provider as Custom and give the above Class Name
 
 ## Configuring Login Page
@@ -197,11 +197,11 @@ We will implement a custom Authentication Service which will take the JWT access
     
                 });
     
-4. From the Settings dialog of the project, set the Landing page as Registration page and from the security dialog, set the permission for the Registrations page as Everyone. [![](../assets/registration_security_permission1.png)](../assets/registration_security_permission1.png)
+4. From the Settings dialog of the project, set the Landing page as Registration page and from the security dialog, set the permission for the Registrations page as Everyone. [![](./assets/registration_security_permission1.png)](./assets/registration_security_permission1.png)
 5. The JWT- Access token,ID token will be available in the Logged In User Variable.
 
 ## Post-registration Process
 
-1. On running the application, the Registration Page shows up. This page allows you to create a user who will be added to the user pool created. [![](../assets/AC_loginpage.png)](../assets/AC_loginpage.png)
-2. After creating the account, Login page shows up. Verification of the user should be done by going to to the Amazon Cognito Create User Pool page and click on Users and Groups in the Left Navigation Pane. This will show you the all the Users added to the user pool. [![](../assets/AC_loginuser.png)](../assets/AC_loginuser.png) The user added should be confirmed by using the verification option chosen for verifying the user (EMail or Phone Number). [![](../assets/AC_loginver.png)](../assets/AC_loginver.png)
-3. Once the user is confirmed, the user can login into the account. [![](../assets/AC_login.png)](../assets/AC_login.png)
+1. On running the application, the Registration Page shows up. This page allows you to create a user who will be added to the user pool created. [![](./assets/AC_loginpage.png)](./assets/AC_loginpage.png)
+2. After creating the account, Login page shows up. Verification of the user should be done by going to to the Amazon Cognito Create User Pool page and click on Users and Groups in the Left Navigation Pane. This will show you the all the Users added to the user pool. [![](./assets/AC_loginuser.png)](./assets/AC_loginuser.png) The user added should be confirmed by using the verification option chosen for verifying the user (EMail or Phone Number). [![](./assets/AC_loginver.png)](./assets/AC_loginver.png)
+3. Once the user is confirmed, the user can login into the account. [![](./assets/AC_login.png)](./assets/AC_login.png)

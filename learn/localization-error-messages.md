@@ -36,7 +36,7 @@ Ensure that the error message returned by the web service server meets the follo
     - add language using the Manage Language option, if not added already
     - add the message key and the appropriate message for the multiple languages.
     
-    [![](../assets/locale_error_msg.png)](../assets/locale_error_msg.png)
+    [![](./assets/locale_error_msg.png)](./assets/locale_error_msg.png)
 2. As can be seen in the above screenshot, the English version of the error message is “**Unexpected error "${0}"**,please **check server logs for more information**” where “_${0}_” in the message will be replaced by the “_parameters_” key returned in the error message JSON. Hence, as per the above sample error response shown, the message would be displayed as: “**Unexpected error "org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: asdasd near line 1, column 52 \[select count(\*) from com.testing.hrdb.User where asdasd\]" ,please check server logs for more information**”
 
 [Localization Cases](/learn/app-development/ui-design/use-cases-ui-design/)

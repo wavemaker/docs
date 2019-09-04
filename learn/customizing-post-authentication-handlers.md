@@ -27,7 +27,7 @@ Note: Multiple implementations can be provided as per your app requirements by f
 
 Create the package folder structure under **src/main/java**. If you want to name your package, see the following example:
 
-[![](https://www.wavemaker.com../assets/Java-src-file.png)](https://www.wavemaker.com../assets/Java-src-file.png)
+[![](https://www.wavemaker.com./assets/Java-src-file.png)](https://www.wavemaker.com./assets/Java-src-file.png)
 
 ### Interface to Implement
 

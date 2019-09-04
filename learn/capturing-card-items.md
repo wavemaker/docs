@@ -17,7 +17,7 @@ id: ""
         };
     
 
-[![list_bind](../assets/list_bind.png)](../assets/list_bind.png)
+[![list_bind](./assets/list_bind.png)](./assets/list_bind.png)
 
 [Cards Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)
 

@@ -29,7 +29,7 @@ Visibility can be set based upon a column value within the row, for example, to 
 
 You can configure the layout of the action column in terms of title for the column - set by default to Actions; the position of the column in the table - set to last by default; width of the column; width Unit for the above-mentioned width; class for custom column styles.
 
-[![](../assets/AS_actions.png?ver=20)](../assets/AS_actions.png?ver=20)
+[![](./assets/AS_actions.png?ver=20)](./assets/AS_actions.png?ver=20)
 
 < Field Configuration
 

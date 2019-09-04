@@ -14,7 +14,7 @@ In this document, we will be seeing how this can be achieved for WaveMaker.
 
 Project Sharing ensures that you do not lose any changes made by the developer network by tying your app into a version control system. You can start collaborative development, by, from the [**Project Dashboard**](http://[supsystic-show-popup id=102]).
 
-- Click on Members link on the [Project card](http://[supsystic-show-popup id=103]) to view the App Member Details, add and remove **Members** having access to the project. [![](../assets/user_management_add.png)](../assets/user_management_add.png)
+- Click on Members link on the [Project card](http://[supsystic-show-popup id=103]) to view the App Member Details, add and remove **Members** having access to the project. [![](./assets/user_management_add.png)](./assets/user_management_add.png)
 
 ### Add members
 
@@ -55,7 +55,7 @@ From the Project Listing page, you have the option to **restore** your project t
 
 Also, in the project workspace, you will find that a **VCS Menu** is displayed for projects.
 
-[![](../assets/vcs_menu.png)](../assets/vcs_menu.png)
+[![](./assets/vcs_menu.png)](./assets/vcs_menu.png)
 
 # Version Control System
 
@@ -117,7 +117,7 @@ You can choose to have a copy of your project code in an **External Repo**. Wave
 
 Select the **Push to External Repo** option from the **VCS Menu**. You will be prompted to choose from three options: **GitHub**, **Bitbucket** or **Git Repo**. Provide the credentials of the selected repo and the project code will be **pushed** to that repo using the credentials provided.
 
-[![](../assets/VCS_ExtRepo.png?v=20)](../assets/VCS_ExtRepo.png?v=20)
+[![](./assets/VCS_ExtRepo.png?v=20)](./assets/VCS_ExtRepo.png?v=20)
 
 You can specify the branch to which the project needs to be pushed. In case the branch does not exist, one will be created. When using an existing branch, keep in mind that the folder structure of the selected branch should match the code being pushed. You can optionally choose the branch from the list provided.
 

@@ -11,7 +11,7 @@ Variables provide data integration for the widgets. Variables are the gateways f
 
 To fetch greater than 100 records for the deployed application, you will need to configure the below settings: 1. "Records per request" property in the below location: Settings >> configuration profiles >> deployment Profiles to the required number(say 300). 2. Set the "Records per request" for the respective variable bound to the select widget to the required value.
 
-[![](../assets/deploymentProfile-1.png)](../assets/deploymentProfile-1.png)
+[![](./assets/deploymentProfile-1.png)](./assets/deploymentProfile-1.png)
 
 #### **Development Profile:**
 
@@ -19,7 +19,7 @@ We do not recommend fetching large number of records in a single call from serve
 
 1\. Open File explorer --> <project\_name> --> profiles --> development.properties file. 2. Set db.datbaseName.maxPageSize to the required number.
 
-[![](../assets/developmentprofile.png)](../assets/developmentprofile.png)**Disclaimer:** It's not advised to change the number of records from development.properties file. **Recommendation:** It's recommended to use search widget with autocomplete instead of select widget.
+[![](./assets/developmentprofile.png)](./assets/developmentprofile.png)**Disclaimer:** It's not advised to change the number of records from development.properties file. **Recommendation:** It's recommended to use search widget with autocomplete instead of select widget.
 
 Fetching Records from Database
 

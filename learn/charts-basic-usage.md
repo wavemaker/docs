@@ -7,13 +7,13 @@ id: ""
 
 Once the data is imported and is ready to use follow these steps for chart creation.
 
-1. Go to the page layout of your application and drag-and-drop the required chart widget. Here, we are creating a column chart.                                                                                                                                 ![](https://www.wavemaker.com../assets/chart_usage1.png)
+1. Go to the page layout of your application and drag-and-drop the required chart widget. Here, we are creating a column chart.                                                                                                                                 ![](https://www.wavemaker.com./assets/chart_usage1.png)
 2. Bind the chart to the appropriate data source.
 3. Click on the _link _icon next to the _Value_ Property and choose the appropriate variable for data binding. In this example, we are using the transformed data from a web service, Quandl imported earlier.
 
 **Step 2: Properties**
 
-1. Select the values to be depicted on the x-axis and the y-axis. You can select multiple columns for the y-axis. You can add a caption for the axis, else by default the column names from the database table is taken as the caption. **Note**: You can not use string data for plotting on the y-axis. **Note**: For **Donut and Pie Charts**, you can specify the Label and Value Data fields for representation instead of x- and y-axis.![](https://www.wavemaker.com../assets/chart_properties.png)
+1. Select the values to be depicted on the x-axis and the y-axis. You can select multiple columns for the y-axis. You can add a caption for the axis, else by default the column names from the database table is taken as the caption. **Note**: You can not use string data for plotting on the y-axis. **Note**: For **Donut and Pie Charts**, you can specify the Label and Value Data fields for representation instead of x- and y-axis.![](https://www.wavemaker.com./assets/chart_properties.png)
 2. Run your application to see the data represented in the chart format.
 
 **Step 3: Aggregation & Group by**

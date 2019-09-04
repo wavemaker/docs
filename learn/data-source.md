@@ -23,7 +23,7 @@ You can either create a new variable or use existing variables. The behavior of 
 
 Widgets can be a source of data in some cases. For example, you might want to display the results from a Live Filter or more details of a selected row/item from a List or another Data Table. Widget option will allow you to achieve this. Selecting Widget as the data source will display the various options available. Widget binding will allow you to show 1-many relationships eg Employees of a selected Department list item.
 
-[![](../assets/dt_data.png)](../assets/dt_data.png)
+[![](./assets/dt_data.png)](./assets/dt_data.png)
 
 < Overview
 

@@ -26,14 +26,14 @@ To deploy your app to Azure account, you need to configure the Live (Stage) phas
 - From [Apps Portal](http://[supsystic-show-popup id=122]), select the project.
 - Click Configure on the Live Phase option.
 - While configuring the Live phase choose to host your app on your Azure account.
-- Enter your Azure account credentials to proceed with the configuration. You need to enter: [![](../assets/deploy_azure_account.png)](../assets/deploy_azure_account.png)
+- Enter your Azure account credentials to proceed with the configuration. You need to enter: [![](./assets/deploy_azure_account.png)](./assets/deploy_azure_account.png)
     - Subscription ID ([see here for details](https://blogs.msdn.microsoft.com/mschray/2016/03/18/getting-your-azure-subscription-guid-new-portal/))
     - Tenant ID, Client ID, and Client Secret ([see here on how to obtain it](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-tenant-id))
     - Resource Group Name ([see here for details](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal))
     - Azure region where the app needs to be deployed
     - A new storage account at Azure will be created with the name you provide. Make sure you enter a unique name.
     - If you already have a storage account ([see here on how to create the same](https://docs.microsoft.com/en-us/azure/storage/storage-create-storage-account)) you can give the details, test the connection before proceeding to the next step.
-- Select the appropriate instance based on your app requirements. You can choose from the three options provided ([see here for size comparisons](https://docs.microsoft.com/en-in/azure/virtual-machines/windows/sizes-general#a-series)) and enter the [Username and Password](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/classic/tutorial#1-basics-blade) details. [See here](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq) for more information regarding setting up of Azure VM like username, password, etc.. [![](../assets/deploy_azure_instance.png)](../assets/deploy_azure_instance.png)
+- Select the appropriate instance based on your app requirements. You can choose from the three options provided ([see here for size comparisons](https://docs.microsoft.com/en-in/azure/virtual-machines/windows/sizes-general#a-series)) and enter the [Username and Password](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/classic/tutorial#1-basics-blade) details. [See here](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq) for more information regarding setting up of Azure VM like username, password, etc.. [![](./assets/deploy_azure_instance.png)](./assets/deploy_azure_instance.png)
 - Once the setup is done (this could take **upto 30 minutes** in case the storage account has to be created), you can push the app from Demo to Live ([Continue from here](/learn/app-development/deployment/manage-deployed-apps/#push-to-live)).
 
 < Manage Deployed Apps

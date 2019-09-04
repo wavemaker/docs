@@ -22,11 +22,11 @@ The following roles are provided by default and cannot be customized:
 
 ## Add Members
 
-As the creator of a project, you are assigned the role of a Project Admin. You can assign users to the project using the **Add Member Details** option from the Project Listing. [![](../assets/Project-Details.png)](../assets/Project-Details.png)
+As the creator of a project, you are assigned the role of a Project Admin. You can assign users to the project using the **Add Member Details** option from the Project Listing. [![](./assets/Project-Details.png)](./assets/Project-Details.png)
 
-[![](../assets/user_management_add.png)](../assets/user_management_add.png)
+[![](./assets/user_management_add.png)](./assets/user_management_add.png)
 
-Project Roles can also be assigned or updated from the Project Workspace using the User Management dialog under Settings option. [![](../assets/user_management.png)](../assets/user_management.png) [![](../assets/user_management_assign.png)](../assets/user_management_assign.png)
+Project Roles can also be assigned or updated from the Project Workspace using the User Management dialog under Settings option. [![](./assets/user_management.png)](./assets/user_management.png) [![](./assets/user_management_assign.png)](./assets/user_management_assign.png)
 
 ## Permissions
 

@@ -3,7 +3,7 @@ title: "How Tos: List"
 id: ""
 ---
 
-Custom ListThere are various ways to customise your List. We will show an example here - of having a **Data Table within List**. Going with the example of sample database, we will see how to list the department details [![ll_run1](../assets/ll_run1-1024x293.png)](../assets/ll_run1.png) and on click of a department to display the employees of that department in a table format. [![ll_run2](../assets/ll_run2-1024x435.png)](../assets/ll_run2.png)
+Custom ListThere are various ways to customise your List. We will show an example here - of having a **Data Table within List**. Going with the example of sample database, we will see how to list the department details [![ll_run1](./assets/ll_run1-1024x293.png)](./assets/ll_run1.png) and on click of a department to display the employees of that department in a table format. [![ll_run2](./assets/ll_run2-1024x435.png)](./assets/ll_run2.png)
 
 1. Drag and drop a List
 2. Select **HrdbDepartment** as the _Variable data source_
@@ -14,17 +14,17 @@ Custom ListThere are various ways to customise your List. We will show an exampl
     
     select FIRSTNAME, LASTNAME from EMPLOYEE where DEPTID = :id
     
-    [![ll_query](../assets/ll_query-1024x392.png)](../assets/ll_query.png)
+    [![ll_query](./assets/ll_query-1024x392.png)](./assets/ll_query.png)
 7. Drag and drop a **Data Table** into the List
-8. Choose **HrdbExecuteEmpbyDept** (service variable corresponding to the query created earlier) from the Variable list [![ll_dt_data](../assets/ll_dt_data.png)](../assets/ll_dt_data.png)
+8. Choose **HrdbExecuteEmpbyDept** (service variable corresponding to the query created earlier) from the Variable list [![ll_dt_data](./assets/ll_dt_data.png)](./assets/ll_dt_data.png)
 9. You will be provided with **Readonly Data Table** template option, since the query was select query
-10. Bind the **input data** for the HrdbExecuteEmpbyDept to the _deptid from the selectedItem of the List_ [![ll_query_bind](../assets/ll_query_bind.png)](../assets/ll_query_bind.png)
+10. Bind the **input data** for the HrdbExecuteEmpbyDept to the _deptid from the selectedItem of the List_ [![ll_query_bind](./assets/ll_query_bind.png)](./assets/ll_query_bind.png)
 11. Bind the **Show** property of the data table to the following expression. This will ensure that the table is displayed only for the selected list item - take care that the livelist1 matches the list name from previous step
     
     item.deptid === Widgets.livelist1.selecteditem.deptid
     
-    [![ll_dt_show](../assets/ll_dt_show-1024x613.png)](../assets/ll_dt_show.png)
-12. In design mode, your page should look like this [![ll_design](../assets/ll_design-1024x640.png)](../assets/ll_design.png)
+    [![ll_dt_show](./assets/ll_dt_show-1024x613.png)](./assets/ll_dt_show.png)
+12. In design mode, your page should look like this [![ll_design](./assets/ll_design-1024x640.png)](./assets/ll_design.png)
 13. Run the app, click on a department and see the table with employee details displayed
 
 Using List MethodsList has few methods exposed on widget scope which can be accessed via JavaScript. For the following script samples, we are considering the hrdb Employee table. EmployeeList is bound to the Live Variable corresponding to the Employee table.

@@ -34,7 +34,7 @@ Following are the steps to import and use a REST web service within a WaveMaker 
 
 ## Test REST Service API
 
-1. From **Resources** choose **Web Services** and click on **+**. [![](../assets/Web_Service1.png)](../assets/Web_Service1.png)
+1. From **Resources** choose **Web Services** and click on **+**. [![](./assets/Web_Service1.png)](./assets/Web_Service1.png)
 2. From the **Web Service** dialog, select **REST** icon.
 3. **Test**:
     
@@ -44,13 +44,13 @@ Following are the steps to import and use a REST web service within a WaveMaker 
     4. Configure the query, path and header parameters etc. if needed.
     5. Click **Import** to proceed. **Note**: IMPORT button will be activated only on the success of the TEST.
     
-    [![](../assets/rest_import.png)](../assets/rest_import.png)
+    [![](./assets/rest_import.png)](./assets/rest_import.png)
 
 ## Configure REST Service
 
 1. The new service created can be accessed from the **Web Services** under _Rest Service_ section.
 2. Click on the service name listed under the _Web Service_ section and the **Service Settings** are displayed.
-3. You can make changes to the service settings. Once you make the changes, **Test** the changes before **saving** them. This is particularly helpful when the REST service has undergone any changes or when it needs additional input parameters. You can see the Response Format from the REST service in the JSON format as required by the platform. _Post ver 9.1 release_, you can make changes to the Authentication option, too. [![](../assets/rest_settings.png?v=20)](../assets/rest_settings.png?v=20)
+3. You can make changes to the service settings. Once you make the changes, **Test** the changes before **saving** them. This is particularly helpful when the REST service has undergone any changes or when it needs additional input parameters. You can see the Response Format from the REST service in the JSON format as required by the platform. _Post ver 9.1 release_, you can make changes to the Authentication option, too. [![](./assets/rest_settings.png?v=20)](./assets/rest_settings.png?v=20)
 
 ### REST Services with Input Data
 
@@ -60,7 +60,7 @@ When importing REST Service which requires string or file as input, set the **Co
     - Text for string type data.
     - Text (text/plain) and JSON (application/json) for invoking WaveMaker generated internal REST APIs.
 
-[![](../assets/rest_formdata.png?v=20)](../assets/rest_formdata.png?v=20)
+[![](./assets/rest_formdata.png?v=20)](./assets/rest_formdata.png?v=20)
 
 ## REST Service Usage
 

@@ -10,8 +10,8 @@ id: ""
 **Navigation Action** can be used to redirect the user to another page.
 
 1. There are two ways of creating a Navigation Action:
-    - Select the Action option from Variables on the Workspace Toolbar [![](../assets/action_sel.png)](../assets/action_sel.png)and click New Action from the Actions dialog. [![](../assets/action_new.png?v=20)](../assets/action_new.png?v=20)
-    - or, as a New Action event on any widget [![](../assets/action_new1.png)](../assets/action_new1.png)
+    - Select the Action option from Variables on the Workspace Toolbar [![](./assets/action_sel.png)](./assets/action_sel.png)and click New Action from the Actions dialog. [![](./assets/action_new.png?v=20)](./assets/action_new.png?v=20)
+    - or, as a New Action event on any widget [![](./assets/action_new1.png)](./assets/action_new1.png)
 2. In both the cases, a **New Action** wizard will open.
     1. Choose **Navigation** Type
     2. Set the **Navigation Target** to:

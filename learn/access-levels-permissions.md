@@ -9,7 +9,7 @@ Permissions can be set to three levels:
 
 1. **Everyone** \- access is granted to all users irrespective of whether they are logged in or not. This setting would be used for an About or Contact Us pages which can be viewed by anyone.
 2. **Authenticated** \- access is granted only to users who are logged in, for example, the logout button.
-3. Once the resource/service is authenticated, then you can choose the level of “visibility”, i.e Authorization. You can choose roles which can have exclusive access to this resource/service. By default, all resources/services are “Authenticated” and are accessible to all once authenticated. [![](../assets/sec_perm_web.png)](../assets/sec_perm_web.png)
+3. Once the resource/service is authenticated, then you can choose the level of “visibility”, i.e Authorization. You can choose roles which can have exclusive access to this resource/service. By default, all resources/services are “Authenticated” and are accessible to all once authenticated. [![](./assets/sec_perm_web.png)](./assets/sec_perm_web.png)
 
 # Setting Permissions
 
@@ -37,7 +37,7 @@ Once you create roles in a project, you can enable **role-based access** for a w
     2. **Anonymous** \- access is granted only to users who are not logged in. An example would be the login button on the About page
     3. **Authenticated** \- access is granted only to users who are logged in. For example the logout button.
     4. Further authenticated access can be **Role-based** ie for a particular User Role as defined in the App Role section.
-4. Select a **User Role** to make the selected widget visible to users with this role. [![](../assets/sec_widgets.png)](../assets/sec_widgets.png)
+4. Select a **User Role** to make the selected widget visible to users with this role. [![](./assets/sec_widgets.png)](./assets/sec_widgets.png)
 
 < Authorization
 

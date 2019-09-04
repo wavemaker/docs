@@ -33,7 +33,7 @@ As mentioned earlier, the offline layer intercepts all data requests. When the 
 4. The offline layer stores the data sent by the server in its storage layer.
 5. The entity data is forwarded as the response to the app.
 
-[![offline_lifecycle_online](../assets/offline_lifecycle_online.png)](../assets/offline_lifecycle_online.png)[![offline_lifecyclemod_online](../assets/offline_lifecyclemod_online.png)](../assets/offline_lifecyclemod_online.png)
+[![offline_lifecycle_online](./assets/offline_lifecycle_online.png)](./assets/offline_lifecycle_online.png)[![offline_lifecyclemod_online](./assets/offline_lifecyclemod_online.png)](./assets/offline_lifecyclemod_online.png)
 
 1. A **data modification request** through a Database CRUD Variable is received by the offline layer.
 2. This request is forwarded to the server.
@@ -48,7 +48,7 @@ As mentioned earlier, the offline layer intercepts all data requests. When the 
 3. The entity data is received from the storage layer.
 4. This data is forwarded as a response to the app.
 
-[![](../assets/offline_lifecycle_offline.png)](../assets/offline_lifecycle_offline.png)[![offline_lifecyclemod_offline](../assets/offline_lifecyclemod_offline.png)](../assets/offline_lifecyclemod_offline.png)
+[![](./assets/offline_lifecycle_offline.png)](./assets/offline_lifecycle_offline.png)[![offline_lifecyclemod_offline](./assets/offline_lifecyclemod_offline.png)](./assets/offline_lifecyclemod_offline.png)
 
 1. A **data modification request** is intercepted by the offline layer through a call to Database CRUD Variable,
 2. The corresponding entity in the storage layer is updated.
@@ -66,7 +66,7 @@ Thus, all data modification requests are added to the sync layer queue.
 4. Once the response is received and the sync queue is cleared,
 5. the app gets restarted.
 
-[![offline_lifecycle_push](../assets/offline_lifecycle_push.png)](../assets/offline_lifecycle_push.png)
+[![offline_lifecycle_push](./assets/offline_lifecycle_push.png)](./assets/offline_lifecycle_push.png)
 
 # How Offline Storage Layer gets Data
 
@@ -100,7 +100,7 @@ Following table details the behavior of various configurations (see [Offline Dat
     1. Bundled data cannot be edited or deleted.
     2. If the bundled data needs to be updated, then a new version of the app with updated bundled data has to be released.
 
-[![offline_data](../assets/offline_data.png?v=20)](../assets/offline_data.png?v=20)
+[![offline_data](./assets/offline_data.png?v=20)](./assets/offline_data.png?v=20)
 
 # How Sync Layer Works
 
@@ -108,7 +108,7 @@ During app startup, data (except bundle data) is removed and fresh data is pulle
 
 When sync call of a particular entity fails due to any reason, then all subsequent calls to that entity and entities that are dependent upon it are blocked. Rest of the calls from the queue are pushed. All failures are removed from the queue but are persisted. There is no default UI support for error handling. But you can build UI using the data exposed through device variable.
 
-**For Example**: In HR app, an employee object is dependent on the department. There are 3 departments (D1, D2, D3) and 3 employees (E1, E2, E3). E1 belongs to D1, E2 belongs to D2 and E3 belongs to D3. Following is the sync queue with some operation on these entities. Assume that boxes in red have failed at the server. [![offline_lifecycle_sync1](../assets/offline_lifecycle_sync1.png)](../assets/offline_lifecycle_sync1.png)
+**For Example**: In HR app, an employee object is dependent on the department. There are 3 departments (D1, D2, D3) and 3 employees (E1, E2, E3). E1 belongs to D1, E2 belongs to D2 and E3 belongs to D3. Following is the sync queue with some operation on these entities. Assume that boxes in red have failed at the server. [![offline_lifecycle_sync1](./assets/offline_lifecycle_sync1.png)](./assets/offline_lifecycle_sync1.png)
 
 Following is the result.
 
@@ -124,7 +124,7 @@ Following is the result.
 10. D3 call executed successfully.
 11. D1 call executed successfully.
 
-[![offline_lifecycle_sync2](../assets/offline_lifecycle_sync2.png)](../assets/offline_lifecycle_sync2.png)
+[![offline_lifecycle_sync2](./assets/offline_lifecycle_sync2.png)](./assets/offline_lifecycle_sync2.png)
 
 ## How Conflicts are Resolved
 

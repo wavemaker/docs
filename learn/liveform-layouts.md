@@ -8,7 +8,7 @@ id: ""
 3. **Mode** of the Live Form can be set to be _editable_or _read only._
 4. Apart from this, the **alignment of the caption** for the form fields can be configured to be placed at the _top_, _left_ or _right_ of the form fields.
 
-[![](../assets/lf_layout.png)](../assets/lf_layout.png)
+[![](./assets/lf_layout.png)](./assets/lf_layout.png)
 
 1. 1-Column Form with left-aligned Captions: 
     

@@ -11,19 +11,19 @@ WaveMaker Enterprise supports team collaboration. To this end you can add users 
 
 Following are the steps to add Users to the network by the Admin from **WaveMaker Launchpad**:
 
-1. From the left menu, click on **User On-boarding**. [![](../assets/WME_user1.png)](../assets/WME_user1.png)
+1. From the left menu, click on **User On-boarding**. [![](./assets/WME_user1.png)](./assets/WME_user1.png)
 2. On the User On-boarding page, click **Create User. **Create User window is displayed.
-3. Enter the **Email**, **First Name**, **Last Name** and **Password** in their respective fields. [![](../assets/WME_user2.png)](../assets/WME_user2.png)
+3. Enter the **Email**, **First Name**, **Last Name** and **Password** in their respective fields. [![](./assets/WME_user2.png)](./assets/WME_user2.png)
 4. Click **Create User**. Your user is now created.
 
 ## Uploading License
 
 You can upload WaveMaker License from **WaveMaker Launchpad**.
 
-[![](../assets/WME_license1.png)](../assets/WME_license1.png) It is a two-step process:
+[![](./assets/WME_license1.png)](./assets/WME_license1.png) It is a two-step process:
 
-1. **Upload Key bunch**: [![](../assets/WME_license1_2.png)](../assets/WME_license1_2.png)
-2. **Upload Keys**: [![](../assets/WME_license1_3.png)](../assets/WME_license1_3.png)
+1. **Upload Key bunch**: [![](./assets/WME_license1_2.png)](./assets/WME_license1_2.png)
+2. **Upload Keys**: [![](./assets/WME_license1_3.png)](./assets/WME_license1_3.png)
 
 The terms of License include:
 
@@ -40,8 +40,8 @@ The terms of License include:
 
 During the course of app development, tracking code changes and synchronizing the changes, in case of collaborated development, is of the essence. WaveMaker provides Version Control Services for this purpose. By default, WaveMaker Studio comes with a version control system that runs within your VM based on Gitlab. You can choose to add an external repo of your choice.
 
-1. From Launchpad, go to **Code Repository**. You will see the existing internal VCS server referred to as `vcs.wmenterprise.com`. This points to the Gitlab based VCS installed within your WME VM as part of Studio. [![](../assets/WME_vcs1.png)](../assets/WME_vcs1.png)
-2. If you have an **external repo** which you want to use for version control, you can add a new VCS configuration. Click **Add VCS Config** on the top right corner. Add VCS Configuration window is displayed. [![](../assets/WME_vcs2.png)](../assets/WME_vcs2.png)
+1. From Launchpad, go to **Code Repository**. You will see the existing internal VCS server referred to as `vcs.wmenterprise.com`. This points to the Gitlab based VCS installed within your WME VM as part of Studio. [![](./assets/WME_vcs1.png)](./assets/WME_vcs1.png)
+2. If you have an **external repo** which you want to use for version control, you can add a new VCS configuration. Click **Add VCS Config** on the top right corner. Add VCS Configuration window is displayed. [![](./assets/WME_vcs2.png)](./assets/WME_vcs2.png)
 3. You can choose between GitLab or Bitbucket Enterprise version control systems. (Bitbucket option is available on WaveMaker ver 9.0.2 or higher).
 4. Enter the appropriate **Base URL, Username** and **Password** in the respective fields.
 5. Check the **Primary** box, if you want the new VCS server to be the default. **Note**: On selecting the Primary checkbox, the new VCS server becomes the default for all the projects that you create subsequently in Studio.

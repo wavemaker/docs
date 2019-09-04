@@ -29,7 +29,7 @@ Web Single Sign-On (SSO), as a subset of identity and access management, was pro
 
 In an SSO flow (see the figure below) user U navigates user agent U-A (e.g.a browser) and tries to access a restricted resource on SP (1). The user is not authenticated yet, SP generates a token request (2) and redirects U-A with the token request to IdP (3,4). In the following step, U authenticates himself to IdP (5) according to the supported authentication mechanisms. Subsequently, the security token is issued and sent through U-A to SP, where the integrity and authenticity are verified and the content is evaluated (6,7).
 
-[![saml_sso1](../assets/saml_sso1.png)](../assets/saml_sso1.png)
+[![saml_sso1](./assets/saml_sso1.png)](./assets/saml_sso1.png)
 
 ### Single Logout Profile
 
@@ -39,7 +39,7 @@ In such a situation, the identity provider can act as a session authority and th
 
 Note that a principal (or an administrator terminating a principal's session) may choose to terminate this "global" session either by contacting the session authority, or an individual session participant. Also, note that an identity provider acting as a session authority may itself act as a session participant in situations in which it is the relying party for another identity provider's assertions regarding that principle. The SSO flow is shown below.
 
-[![saml_sso](../assets/saml_sso.png)](../assets/saml_sso.png)
+[![saml_sso](./assets/saml_sso.png)](./assets/saml_sso.png)
 
 # SAML Integration with WaveMaker App
 
@@ -58,7 +58,7 @@ While registering the application with IdP, some IdP providers ask for Service P
 
 ## Configure IdP with WaveMaker application
 
-[![](../assets/sec_access.png)](../assets/sec_access.png)
+[![](./assets/sec_access.png)](./assets/sec_access.png)
 
 After enabling Security and on selecting SAML as the Security Provider for your app:
 
@@ -77,12 +77,12 @@ After enabling Security and on selecting SAML as the Security Provider for your 
         {app-hosted-url} + /saml/SingleLogout
         
     
-    [![](../assets/saml_config.png)](../assets/saml_config.png)
+    [![](./assets/saml_config.png)](./assets/saml_config.png)
 2. In the 2nd section - Identity Provider Configuration, enter the Metadata URL of the application registered with IdP as obtained from the above section.
     
     - Enter the metadata URL of the app and select the load button.
-    - Once the load button is clicked, the metadata URL is valid & the IdP endpoint URL should be loaded. This validates the IdP metadata URL. [![](../assets/saml_config2.png)](../assets/saml_config2.png)
-    - You can also choose to upload the Metadata file. [![](../assets/saml_config2_file.png)](../assets/saml_config2_file.png)
+    - Once the load button is clicked, the metadata URL is valid & the IdP endpoint URL should be loaded. This validates the IdP metadata URL. [![](./assets/saml_config2.png)](./assets/saml_config2.png)
+    - You can also choose to upload the Metadata file. [![](./assets/saml_config2_file.png)](./assets/saml_config2_file.png)
 3. In the 3rd section: the service provider configuration options are shown:
     - Configure Keystore: The SAML message exchange requires a public/private key pair for every participating entity in the message exchange. The Idp key pair is maintained by the IdP provider, but the Service Provider’s key pair should be maintained by the service provider, in this case, the WaveMaker application. In most of the production deployments, a valid key pair is recommended to be used, but during application development, WaveMaker helps in auto-generating a key pair for you which should be used only for demo purposes, but not for actual deployment. Below configuration gives information about configuring key pair for your application. In this, the user is prompted to choose auto-generate option or upload a valid key pair in JKS format.
         - The user can auto-generate or import a Java KeyStore (JKS).
@@ -92,24 +92,24 @@ After enabling Security and on selecting SAML as the Security Provider for your 
             - Password - this is the keystore password. This should be a minimum of 6 characters
             - Subject Name - This is the Subject name of the self-signed certificate
             
-            [![](../assets/saml_config3.png)](../assets/saml_config3.png)
+            [![](./assets/saml_config3.png)](./assets/saml_config3.png)
         - Import - The user can import a java keystore into WaveMaker. The inputs required are
             
             - Alias - the alias of the public key for the service provider.
             - Password - this is the keystore password. This should be a minimum of 6 characters
             
-            [![](../assets/saml_config3_import.png)](../assets/saml_config3_import.png)
-4. In the 4th section - Role Mapping: The roles of an application user logged in through SAML SSO can be mapped using a SAML attribute or database-backed roles. A SAML attribute that maintains the roles can be configured by selecting the SAML as the user role provider as shown below. [![](../assets/saml_config4.png)](../assets/saml_config4.png) In case if the DB is selected as the user role provider, then each and every SAML user must pre-exist in the specified user’s table with the roles. You can follow the [steps given here](/learn/app-development/app-security/authorization/#user-onboarding) for the same.
+            [![](./assets/saml_config3_import.png)](./assets/saml_config3_import.png)
+4. In the 4th section - Role Mapping: The roles of an application user logged in through SAML SSO can be mapped using a SAML attribute or database-backed roles. A SAML attribute that maintains the roles can be configured by selecting the SAML as the user role provider as shown below. [![](./assets/saml_config4.png)](./assets/saml_config4.png) In case if the DB is selected as the user role provider, then each and every SAML user must pre-exist in the specified user’s table with the roles. You can follow the [steps given here](/learn/app-development/app-security/authorization/#user-onboarding) for the same.
 
 ## Configuration Files
 
 The SAML Configuration done will be stored in a saml-options.json file under project option in Files tab as shown below :
 
-[![](../assets/saml_file.png)](../assets/saml_file.png)
+[![](./assets/saml_file.png)](./assets/saml_file.png)
 
 The keystore.jks file is also available in the project option under the files tab as shown under and it can be downloaded:
 
-[![](../assets/saml_keystore.png)](../assets/saml_keystore.png)
+[![](./assets/saml_keystore.png)](./assets/saml_keystore.png)
 
 Once the configuration is done you can run the app and you will be logged into your app. You will see the message “Redirecting to sso login…”
 

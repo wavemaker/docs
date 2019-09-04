@@ -19,7 +19,7 @@ id: ""
 - There can be multiple blob params for a single query. However, each blob supports single file uploading and not as a list.
 - A query instance with blob input, is as shown in the figure:
 
-###      ![](../assets/blob.png)
+###      ![](./assets/blob.png)
 
 - When a blob param exists in a query, then the generated API for such query will be accepting Multipart data and POST method is used irrespective of query type.
 
@@ -32,12 +32,12 @@ id: ""
     - User can select multiple columns of identifier property, but at least one column has to be selected.
     - While saving the query a pop-up is shown with all non-blob fields for selecting identifier properties. When the user selects at least one Identifier, then only the SAVE button will be highlighted. (By default, user will be unable to click on SAVE button. Refer below figure)
 
-![](../assets/save_query1.png)
+![](./assets/save_query1.png)
 
 - - These properties are useful to retrieve the blob data for the particular row.
     - Users have to select unique columns, because if unique combination is not selected then in the run-time the blob content will not be retrieved.
     - Separate API will be generated for each blob field that returns _Downloadable_ return type in addition to the executeQueryAPI.
-- The instance of generated API’s is as shown below. It consists of blob field named as _blobcol_ and _pkid_ as identifier property.![](../assets/GeneratedAPIs_Query.png)
+- The instance of generated API’s is as shown below. It consists of blob field named as _blobcol_ and _pkid_ as identifier property.![](./assets/GeneratedAPIs_Query.png)
 - The actual response of the execute query’s blob field’s value contains the absolute URL to the  blob content. It will be null for the rows which does not have a value for that field.
 
 **     Note:-**
@@ -49,7 +49,7 @@ id: ""
 
 - Procedure param types is now supporting the Blob data. A typical procedure with blob input is as shown below:
 
-![](../assets/blob_for_procedure-1.png)
+![](./assets/blob_for_procedure-1.png)
 
 - When param type of blob is IN in a procedure, then the generated API for such procedure will be accepted as multipart data.
 - Each blob field expected as Blob and remaining fields are expected as one Part with      content type application/json.

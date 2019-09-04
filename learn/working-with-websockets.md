@@ -17,15 +17,15 @@ Data returned from the WebSocket Service can be handled in three different ways:
 
 Just like any web service, a WebSocket service can be imported into a WaveMaker app.
 
-[![](../assets/Web_Service1.png)](../assets/Web_Service1.png)
+[![](./assets/Web_Service1.png)](./assets/Web_Service1.png)
 
  
 
 1. Provide the WebSocket service URL, test the connection and import the service.
-2. To leverage the full power of the platform, you should provide the sample request and response body while configuring the service. This helps the platform to generate request and response type metadata for the service, which can be utilized while binding the input to the corresponding Variable and the output of the Variable to a widget. [![](../assets/socket_response.png)](../assets/socket_response.png)
+2. To leverage the full power of the platform, you should provide the sample request and response body while configuring the service. This helps the platform to generate request and response type metadata for the service, which can be utilized while binding the input to the corresponding Variable and the output of the Variable to a widget. [![](./assets/socket_response.png)](./assets/socket_response.png)
 3. WebSocket Service can be further configured by specifying the Query, Path, and Body Parameters as per the app requirements.
 4. The newly created service will be visible under the Web Service
-5. Select the service name listed under WebSocket Service to access the Service Settings [![](../assets/socket_settings.png)](../assets/socket_settings.png)
+5. Select the service name listed under WebSocket Service to access the Service Settings [![](./assets/socket_settings.png)](./assets/socket_settings.png)
 
 ## Limitation
 

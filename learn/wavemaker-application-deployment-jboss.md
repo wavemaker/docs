@@ -86,8 +86,8 @@ From WaveMaker Studio, for the app that you want to deploy to JBoss, Export the 
 
 - Click on settings menu in project workspace and create a new profile.
 - Select datasource as JNDI and provide jndi name in the respective text box.
-- Save profile and close settings. [![](../assets/JBoss_JNDI1.png)](../assets/JBoss_JNDI1.png)
-- Export war for the newly created profile. [![](../assets/JBoss_JNDI2.png)](../assets/JBoss_JNDI2.png)
+- Save profile and close settings. [![](./assets/JBoss_JNDI1.png)](./assets/JBoss_JNDI1.png)
+- Export war for the newly created profile. [![](./assets/JBoss_JNDI2.png)](./assets/JBoss_JNDI2.png)
 - Save the war file
 
 **Deploy to JBOSS Server** [click here](#process)
@@ -98,7 +98,7 @@ From WaveMaker Studio, for the app that you want to deploy to JBoss, Export the 
     - And search <socket-binding name="http"
     - On this port the application will be running.
 
-[![](../assets/JBoss_troubleshoot.png)](../assets/JBoss_troubleshoot.png)
+[![](./assets/JBoss_troubleshoot.png)](./assets/JBoss_troubleshoot.png)
 
 **Deployment to JBoss**
 

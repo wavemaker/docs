@@ -17,9 +17,9 @@ You can access the Apps Portal in two ways:
 
 ### Manage Deployed Apps
 
-[![](../assets/ap_opt1.png)](../assets/ap_opt1.png)
+[![](./assets/ap_opt1.png)](./assets/ap_opt1.png)
 
-By selecting **Manage Deployed Apps** button from the Project Dashboard, you will see a list of deployed apps. [![](../assets/apps_portal.png)](../assets/apps_portal.png)
+By selecting **Manage Deployed Apps** button from the Project Dashboard, you will see a list of deployed apps. [![](./assets/apps_portal.png)](./assets/apps_portal.png)
 
 - one the right side you can find
     - the total number of apps owned by you that can be deployed;
@@ -34,13 +34,13 @@ By selecting **Manage Deployed Apps** button from the Project Dashboard, you wi
 
 By using the **Manage App** option under Deploy from the Project Workspace Main Menu - this will open the app for management. **Note this option will be available only for deployed apps**.
 
-[![](../assets/ap_opt2.png)](../assets/ap_opt2.png)
+[![](./assets/ap_opt2.png)](./assets/ap_opt2.png)
 
 # Manage Deployed App
 
 Selecting an app from the App Portal or Manage App from Project Workspace will give you the details about the app. You can view the deployed app details.
 
-[![](../assets/MA_deploy_details.png)](../assets/MA_deploy_details.png)
+[![](./assets/MA_deploy_details.png)](./assets/MA_deploy_details.png)
 
 1. From the header you can
     - **open** the deployed app URL
@@ -59,7 +59,7 @@ Once the app is tested and ready to go live, you can push the app from Demo to L
 - WME users can use the same steps to configure both Stage and Live phases.
 - WME users need to add instances for Stage and Live phases _before_ configuration. ([see here for adding instances)](/learn/installation/wme-setup-guide-adding-capacity/)
 
-[![](../assets/ptl_noconfigure-1.png)](../assets/ptl_noconfigure-1.png) **Steps in Configuring Live Phase**:
+[![](./assets/ptl_noconfigure-1.png)](./assets/ptl_noconfigure-1.png) **Steps in Configuring Live Phase**:
 
 1. Click the Configure button for the Live phase and select the Cloud Provider - you can choose between WaveMaker Demo Cloud or external provider like AWS, Azure or Google.
 2. Here we will show steps in **WaveMaker Demo Cloud**,
@@ -68,16 +68,16 @@ Once the app is tested and ready to go live, you can push the app from Demo to L
         - [click here for Azure configuration](/learn/app-development/deployment/deployment-to-azure/),
         - [click here for Google Cloud configuration](/learn/app-development/deployment/deployment-google-cloud/).
     
-    [![](../assets/manage_apps_live.png)](../assets/manage_apps_live.png)
+    [![](./assets/manage_apps_live.png)](./assets/manage_apps_live.png)
 3. Selecting WaveMaker Demo Cloud will initiate Live Pipeline setup and will auto-configure the phase and you can push the app to the Live phase.
 
 # Push to Live
 
-Once the app is tested and live phase has been configured, you can push the app from Demo to Live. [![](../assets/MA_push_cloud.png)](../assets/MA_push_cloud.png)
+Once the app is tested and live phase has been configured, you can push the app from Demo to Live. [![](./assets/MA_push_cloud.png)](./assets/MA_push_cloud.png)
 
-1. When you Push from Demo to Live a dialog for configuration profiles will be displayed. The configuration settings from the Deployment phase is selected which can be modified or retained as is to create the Live Configuration Profile. [![](../assets/ptl_configure.png)](../assets/ptl_configure.png) You can also mention the version number and release notes for tracking purposes [![](../assets/ptl_version.png)](../assets/ptl_version.png)
+1. When you Push from Demo to Live a dialog for configuration profiles will be displayed. The configuration settings from the Deployment phase is selected which can be modified or retained as is to create the Live Configuration Profile. [![](./assets/ptl_configure.png)](./assets/ptl_configure.png) You can also mention the version number and release notes for tracking purposes [![](./assets/ptl_version.png)](./assets/ptl_version.png)
 2. Once the configuration is set, you can Push the app from Demo to Live.
-3. Once deployed, you can view the current release along with release notes and the latest history. You can view all releases/history. [![](../assets/ptl_cloud_done.png)](../assets/ptl_cloud_done.png) Hover over the Live card to visit the Details page or launch the app. Selecting **Details** will let you:
+3. Once deployed, you can view the current release along with release notes and the latest history. You can view all releases/history. [![](./assets/ptl_cloud_done.png)](./assets/ptl_cloud_done.png) Hover over the Live card to visit the Details page or launch the app. Selecting **Details** will let you:
     - view app details, you can
         - **open** the deployed app URL
         - **stop** the deployed app, this will disable the deploy URL
@@ -93,7 +93,7 @@ Once the app is tested and live phase has been configured, you can push the app 
 
 ## App Versioning
 
-Once you have deployed and pushed the app to Live Phase, for various reasons like enhancements or due to requirement changes, your app can undergo changes. You can deploy the app with a change in version number. **Note** this will overwrite the previous version in Live phase. [![](../assets/apver_update.png)](../assets/apver_update.png) [![](../assets/apver_portal.png)](../assets/apver_portal.png)
+Once you have deployed and pushed the app to Live Phase, for various reasons like enhancements or due to requirement changes, your app can undergo changes. You can deploy the app with a change in version number. **Note** this will overwrite the previous version in Live phase. [![](./assets/apver_update.png)](./assets/apver_update.png) [![](./assets/apver_portal.png)](./assets/apver_portal.png)
 
 < Release Management
 

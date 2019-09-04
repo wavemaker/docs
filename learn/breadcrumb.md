@@ -3,13 +3,13 @@ title: "Breadcrumb"
 id: ""
 ---
 
-![](../assets/laptop.png)  **NOTE**: Breadcrumb is available only for web responsive apps.
+![](./assets/laptop.png)  **NOTE**: Breadcrumb is available only for web responsive apps.
 
 **Breadcrumb** is a _Navigation widget_ which will specify the path taken to reach the current page. Breadcrumb widget is to _show the site hierarchy_. Breadcrumb navigation can greatly enhance the accessibility of the websites by indicating the user where they are in relation to the rest of the site when they navigate.
 
 Most websites organize their content by a hierarchy. Some are shallow and some are deep depending on the amount of content. It is advisable to use breadcrumb navigation if the user’s hierarchy contains 3 levels or more.
 
-[![](../assets/bc_run2.png)](../assets/bc_run2.png)
+[![](./assets/bc_run2.png)](./assets/bc_run2.png)
 
 # Properties
 

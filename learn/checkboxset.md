@@ -5,11 +5,11 @@ id: ""
 
 CheckboxSet allows you to group a set of checkboxes under a common heading. You need to bind to a dataset to display a checkbox for each value.
 
-[![](../assets/checkboxset_struct.jpg)](../assets/checkboxset_struct.jpg)
+[![](./assets/checkboxset_struct.jpg)](./assets/checkboxset_struct.jpg)
 
 Using the Group By property you can group the items together under a heading. The Show Count property will show the number of items within a group.
 
-[![](../assets/checkboxset_group.png)](../assets/checkboxset_group.png)
+[![](./assets/checkboxset_group.png)](./assets/checkboxset_group.png)
 
 # Properties
 

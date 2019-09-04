@@ -49,7 +49,7 @@ Apart from these, roles can be created and defined as per the enterprise needs. 
 - **Project permissions**: Project Permissions are project-level permissions that are not specific to any resource or resource type. These permissions are applicable to actions that are performed in the workspace of an active project. Project Permissions specific to a Project are configured by the Project Owner.
 - **Project resource permissions**: Project Resource Permissions are resource-level permissions, that are assigned specifically to a resource such as a Page, Database, Web Service etc. These permissions are applicable to all actions performed on the specific resource. Project Resource Permissions are configured within the project workspace by Project Owner.
 
-[![](../assets/RBAC.png)](../assets/RBAC.png)
+[![](./assets/RBAC.png)](./assets/RBAC.png)
 
 ## Implementation
 
@@ -80,11 +80,11 @@ In the following sections, we will discuss both in detail.
 
 ### Studio and Project Permissions
 
-**Launchpad** **Role Definitions**: Roles can be created from the Role Definition tab of the User On-boarding section of Launchpad. As mentioned earlier the Product Roles are pre-defined with permissions set and they cannot be modified. [![](../assets/product_roles.png)](../assets/product_roles.png) Project Roles come with a pre-defined roles of Project Admin, Project Developer and Default. [![](../assets/project_roles.png)](../assets/project_roles.png) Custom Project Roles can be created and Permissions allocated to them as per the requirements. [![](../assets/project_roles_custom.png)](../assets/project_roles_custom.png) From the Role Mapping tab users can be assigned to Super Admin, Enterprise Admin and Studio User. [![](../assets/role_mapping.png)](../assets/role_mapping.png) [![](../assets/role_mapping2.png)](../assets/role_mapping2.png)
+**Launchpad** **Role Definitions**: Roles can be created from the Role Definition tab of the User On-boarding section of Launchpad. As mentioned earlier the Product Roles are pre-defined with permissions set and they cannot be modified. [![](./assets/product_roles.png)](./assets/product_roles.png) Project Roles come with a pre-defined roles of Project Admin, Project Developer and Default. [![](./assets/project_roles.png)](./assets/project_roles.png) Custom Project Roles can be created and Permissions allocated to them as per the requirements. [![](./assets/project_roles_custom.png)](./assets/project_roles_custom.png) From the Role Mapping tab users can be assigned to Super Admin, Enterprise Admin and Studio User. [![](./assets/role_mapping.png)](./assets/role_mapping.png) [![](./assets/role_mapping2.png)](./assets/role_mapping2.png)
 
 ### Project Resource Permissions
 
-**Project Role Assignment**: Once the Project Roles are defined, they need to be assigned to Studio Users for specific projects. Project Admin will log to Rapid and assign users usin the **Add Member Details** option. [![](../assets/Project-Details.png)](../assets/Project-Details.png) [![](../assets/project_roles_assign.png)](../assets/project_roles_assign.png) Project Roles can be updated from the Project Workspace using the User Management dialog under Settings option. [![](../assets/user_management.png)](../assets/user_management.png) [![](../assets/project_roles_update.png)](../assets/project_roles_update.png)
+**Project Role Assignment**: Once the Project Roles are defined, they need to be assigned to Studio Users for specific projects. Project Admin will log to Rapid and assign users usin the **Add Member Details** option. [![](./assets/Project-Details.png)](./assets/Project-Details.png) [![](./assets/project_roles_assign.png)](./assets/project_roles_assign.png) Project Roles can be updated from the Project Workspace using the User Management dialog under Settings option. [![](./assets/user_management.png)](./assets/user_management.png) [![](./assets/project_roles_update.png)](./assets/project_roles_update.png)
 
 ### Project Admin
 
@@ -93,7 +93,7 @@ By default, only Project Admin can create projects and members added will be ass
 1. Login to EDN.
 2. Select the Project tab.
 3. Search and open the Project for which the admin role has to be changed.
-4. EDN Admin can - Revoke Admin, Make Admin or delete the user. [![](../assets/project_roles_revoke_lp.png)](../assets/project_roles_revoke_lp.png)
+4. EDN Admin can - Revoke Admin, Make Admin or delete the user. [![](./assets/project_roles_revoke_lp.png)](./assets/project_roles_revoke_lp.png)
 
 1\. WaveMaker Overview
 

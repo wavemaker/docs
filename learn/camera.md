@@ -18,7 +18,7 @@ Following **Image Properties** can be further configured:
 - _Save To Gallery_ _-_ If turned on, then photos taken using this widget will be saved to the device gallery.
 - _Edit_ _\-_ If this property is checked, then the user can edit or crop the picture taken.
 
-You can use the _localFilePath_ and _localFile_ to further enhance the app functionality. These properties are passed as parameters for Camera Success Event. See  [Use Case](#store-image) for more details. [![](../assets/camera_bind.png)](../assets/camera_bind.png)
+You can use the _localFilePath_ and _localFile_ to further enhance the app functionality. These properties are passed as parameters for Camera Success Event. See  [Use Case](#store-image) for more details. [![](./assets/camera_bind.png)](./assets/camera_bind.png)
 
 # Properties
 
@@ -54,29 +54,29 @@ You can use the _localFilePath_ and _localFile_ to further enhance the app funct
 
 Capture an image using camera and store in the database using CRUD variable (we are using a Customer Database with pic as the blob type field):
 
-1. Bind the Input Fields from the Data tab for the CRUD Variable to the Camera -> localFile field [![](../assets/camera_db_storefields.png)](../assets/camera_db_storefields.png)[![](../assets/camera_db_storebind.png)](../assets/camera_db_storebind.png)
-2. On Sucess event of Camera widget needs to invoke the above Insert Variable [![](../assets/camera_db_storeevent.png)](../assets/camera_db_storeevent.png)
+1. Bind the Input Fields from the Data tab for the CRUD Variable to the Camera -> localFile field [![](./assets/camera_db_storefields.png)](./assets/camera_db_storefields.png)[![](./assets/camera_db_storebind.png)](./assets/camera_db_storebind.png)
+2. On Sucess event of Camera widget needs to invoke the above Insert Variable [![](./assets/camera_db_storeevent.png)](./assets/camera_db_storeevent.png)
 
 # Use Cases
 
 ### Overview
 
-Camera Widget can be used to capture images and videos from a Mobile App In this post, we will create a mobile app to capture and display a photo. [![](../assets/camera_run3.png)](../assets/camera_run3.png)
+Camera Widget can be used to capture images and videos from a Mobile App In this post, we will create a mobile app to capture and display a photo. [![](./assets/camera_run3.png)](./assets/camera_run3.png)
 
 ### Step 1: Building Page
 
 1. Create or Open a Hybrid Mobile App.
-2. Create a page using _blank template_ and layout as ‘_One column layout with top navbar_’ [![](../assets/camera_template.png)](../assets/camera_template.png) [![](../assets/camera_layout.png)](../assets/camera_layout.png)
+2. Create a page using _blank template_ and layout as ‘_One column layout with top navbar_’ [![](./assets/camera_template.png)](./assets/camera_template.png) [![](./assets/camera_layout.png)](./assets/camera_layout.png)
 3. Drag and drop a _container widget_ and set horizontal align property as the center.
 4. Drag and drop a camera widget.
-5. Drag and drop a picture widget and set its width to 100%. [![](../assets/camera_design.png)](../assets/camera_design.png)
-6. Bind the source of the picture to the ‘localFilePath’ of camera widget. [![](../assets/camera_binding.png)](../assets/camera_binding.png)
+5. Drag and drop a picture widget and set its width to 100%. [![](./assets/camera_design.png)](./assets/camera_design.png)
+6. Bind the source of the picture to the ‘localFilePath’ of camera widget. [![](./assets/camera_binding.png)](./assets/camera_binding.png)
 
 ### Step 4: Build & Run
 
-1. Build the apk, install it on an android phone and open the app. [![](../assets/camera_run1.png)](../assets/camera_run1.png)
-2. Open the app and click camera button and take a photo. [![](../assets/camera_run2.png)](../assets/camera_run2.png)
-3. The captured image will get displayed in the app. [![camera_run3](../assets/camera_run3.png)](../assets/camera_run3.png)
+1. Build the apk, install it on an android phone and open the app. [![](./assets/camera_run1.png)](./assets/camera_run1.png)
+2. Open the app and click camera button and take a photo. [![](./assets/camera_run2.png)](./assets/camera_run2.png)
+3. The captured image will get displayed in the app. [![camera_run3](./assets/camera_run3.png)](./assets/camera_run3.png)
 
 [10\. Mobile & Device Widgets](/learn/app-development/widgets/widget-library/#mobile)
 

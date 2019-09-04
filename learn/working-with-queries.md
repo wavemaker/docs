@@ -11,7 +11,7 @@ In this section, we will be seeing how WaveMaker supports Query usage with the h
 
 From the Database Designer, use the Query tab to build custom database queries for custom reports and dashboards.
 
-[![](../assets/query_tab.png)](../assets/query_tab.png)
+[![](./assets/query_tab.png)](./assets/query_tab.png)
 
 - The editor supports IntelliSense, use **CTRL-Space** to see suggestions for the table and column names.
 - The queries can be in **HQL or Native SQL**. These queries can be saved and used via the Database APIs generated.
@@ -157,7 +157,7 @@ Incorrect way:
 
 For all queries and procedures, there will be a Rest API generated with the Service layer. Along with the API, depending on the query or procedure type, request and response POJO classes are generated.
 
-**Understanding generated Code** _File structure_ [![](../assets/queryproc_files.png)](../assets/queryproc_files.png)_Models_: Both _Request_ and _Response_ POJO classes are generated as: <queryName>Request/Response
+**Understanding generated Code** _File structure_ [![](./assets/queryproc_files.png)](./assets/queryproc_files.png)_Models_: Both _Request_ and _Response_ POJO classes are generated as: <queryName>Request/Response
 
 - These classes are generated in a package: <service\_package>.models.query
 - Response class is generated only for SELECT queries. The return type for Non-Select queries will be integer hence POJO class is not generated. Eg: query with name **getAllEmployees** will generate **GetAllEmployeesResponse** class with all returned columns.
@@ -179,13 +179,13 @@ _Services_: This layer exposes the methods related to the configured query and p
     - For non-select queries, it returns INT.
 - Export API is added for queries which will return Paginated data. Method name will be **export<queryName>** and which takes same arguments as execute method (as mentioned above).
 
-[![](../assets/query_files_service.png)](../assets/query_files_service.png)_Controllers_:
+[![](./assets/query_files_service.png)](./assets/query_files_service.png)_Controllers_:
 
 - Separate controller classes are generated for query and procedures with names as **QueryExecutorController** and **ProcedureExecutorController** respectively in package **<service\_package>.controller**.
 - Rest API is generated for each configured query and procedure. Generated method signature will be same as service layer method signature.
 - For methods returning INT type, controller layer returns **IntegerWrapper**.
 
-[![](../assets/query_files_controller.png)](../assets/query_files_controller.png)
+[![](./assets/query_files_controller.png)](./assets/query_files_controller.png)
 
 < Working with DB Schema
 

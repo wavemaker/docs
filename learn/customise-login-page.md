@@ -8,8 +8,8 @@ A Login page is added to your app, by default.
 1. You can select from the list of default templates and change it for this page, [know more](/learn/app-development/ui-design/page-concepts/page-templates/)
 2. You can make modifications to the login page components:
     - Changing the [app logo](/learn/how-tos/changing-app-logo/) will change the logo for this page, too
-    - You can access the Login page from Pages Resource [![](../assets/design_login-1.png)](../assets/design_login-1.png)
-    - Select the _page container_ and change the _Class name_ and _Image_ location from the _Style_ property to change the background image and style [![](../assets/design_login_style.png)](../assets/design_login_style.png)
+    - You can access the Login page from Pages Resource [![](./assets/design_login-1.png)](./assets/design_login-1.png)
+    - Select the _page container_ and change the _Class name_ and _Image_ location from the _Style_ property to change the background image and style [![](./assets/design_login_style.png)](./assets/design_login_style.png)
 
 [Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 

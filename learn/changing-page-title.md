@@ -3,12 +3,12 @@ title: "Changing Page Title"
 id: ""
 ---
 
-By default, the Page Title in an app is set the to the name given to the Page at the time of Page Creation. You will see it once you Remove Toolbar and come out of the Preview mode. [![](../assets/design_pagetitle.png)](../assets/design_pagetitle.png)
+By default, the Page Title in an app is set the to the name given to the Page at the time of Page Creation. You will see it once you Remove Toolbar and come out of the Preview mode. [![](./assets/design_pagetitle.png)](./assets/design_pagetitle.png)
 
-1. You can set the Page Title from the properties panel of the page [![](../assets/design_pagetitle_prop-1.png)](../assets/design_pagetitle_prop-1.png)
+1. You can set the Page Title from the properties panel of the page [![](./assets/design_pagetitle_prop-1.png)](./assets/design_pagetitle_prop-1.png)
 2. You can set it from the Markup, too:
     - Go to the **Markup** of the concerned page
-    - Locate the **pagetitle tag** and give the name of your choice. [![](../assets/design_pagetitle_markup.png)](../assets/design_pagetitle_markup.png)
+    - Locate the **pagetitle tag** and give the name of your choice. [![](./assets/design_pagetitle_markup.png)](./assets/design_pagetitle_markup.png)
 
 [Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 

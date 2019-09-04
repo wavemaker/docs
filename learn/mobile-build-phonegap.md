@@ -21,7 +21,7 @@ PhoneGap build option provides a complete package of building .apk and .ipa file
 
 To perform a **PhoneGap Build**, using the Workspace Toolbar from **Build** task select **Send to PhoneGap. **
 
-[![](../assets/mobile_build.png)](../assets/mobile_build.png) Build through PhoneGap is a three-step process:
+[![](./assets/mobile_build.png)](./assets/mobile_build.png) Build through PhoneGap is a three-step process:
 
 1. Build Configuration:
     - The properties for PhoneGap are same as Android. Refer to [Android Build](/learn/hybrid-mobile/mobile-build-android/#android).
@@ -38,7 +38,7 @@ To perform a **PhoneGap Build**, using the Workspace Toolbar from **Build** ta
     - Select the Android and iOS platform keys as required. For Playstore release and for iOS builds keys are mandatory. (**Note: **You  must setup the keys prior to the build in your PhoneGap account and make sure they are unlocked) Refer to the documentation for [iOS Keys](http://docs.phonegap.com/phonegap-build/signing/ios/) and [Android Keys](http://docs.phonegap.com/phonegap-build/signing/android/).
     - For testing purposes, you can specify PhoneGap build settings such as [Hydration](http://docs.build.phonegap.com/en_US/3.1.0/tools_hydration.md.html#Hydration), [Debugging](http://docs.build.phonegap.com/en_US/3.1.0/debugging_remote_debugging_tools.md.html#Remote%20Debugging%20Tools) and Public Sharing by checking the box.
     - **Done **will initiate the build sequence in which WaveMaker first prepares PhoneGap compatible project structure then send the zip to your account for the build. Once the build starts on PhoneGap build system user shown the pop-up message showing that build has been queued and user can check the status at their PhoneGap account
-    - Click **Check Status, **it leads to your PhoneGap account and displays the build status of your application. [![](../assets/PhoneGap_Adobe_Build.png)](../assets/PhoneGap_Adobe_Build.png)
+    - Click **Check Status, **it leads to your PhoneGap account and displays the build status of your application. [![](./assets/PhoneGap_Adobe_Build.png)](./assets/PhoneGap_Adobe_Build.png)
     - From your PhoneGap account, you can now download the .apk or .ipa files. See the build details such as **app id,** **version, ****source** and also **update code**,  **rebuild the app** and **access the log file. **
 
 B.3 Platform Installer

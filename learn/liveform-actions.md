@@ -22,7 +22,7 @@ For each action button, you can specify the
 - **hidden** to hide the button from the form
 - choose an icon to be displayed on the button.
 
-The Form Events can be triggered from actions outside the Live Form, i.e. a button placed outside the Live Form template can trigger a form save the event. [![](../assets/lf_events.png)](../assets/lf_events.png)
+The Form Events can be triggered from actions outside the Live Form, i.e. a button placed outside the Live Form template can trigger a form save the event. [![](./assets/lf_events.png)](./assets/lf_events.png)
 
 New action functionality can be added by clicking on the **ADD** button, against the respective category. Once the action is specified a code snippet will be created in the JavaScript which can be used to code the desired action. The Action will be a JS function as shown below. Here we have written a function to display an alert dialog. The name of the function is the action field entry in the custom button created earlier.
 
@@ -30,7 +30,7 @@ Page.test = function(){
         alert("hello");
    };
 
-[![](../assets/LF_actions.png)](../assets/LF_actions.png)
+[![](./assets/LF_actions.png)](./assets/LF_actions.png)
 
 < Field Configurations
 

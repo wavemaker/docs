@@ -9,7 +9,7 @@ When working with REST Services, it is imperative to secure your API keys and pa
 2. Server Side Properties
 3. App Environment Properties
 
-From all the types, the Server Side Properties and App Environment Properties enforces you to use a Proxy server. This is to hide API keys and passwords from viewing via network calls and UI.[![](https://www.wavemaker.com../assets/ServerSidePropertiesHeader.png)](https://www.wavemaker.com../assets/ServerSidePropertiesHeader.png)[![](https://www.wavemaker.com../assets/ServerSidePropertiesQuery.png)](https://www.wavemaker.com../assets/ServerSidePropertiesQuery.png)
+From all the types, the Server Side Properties and App Environment Properties enforces you to use a Proxy server. This is to hide API keys and passwords from viewing via network calls and UI.[![](https://www.wavemaker.com./assets/ServerSidePropertiesHeader.png)](https://www.wavemaker.com./assets/ServerSidePropertiesHeader.png)[![](https://www.wavemaker.com./assets/ServerSidePropertiesQuery.png)](https://www.wavemaker.com./assets/ServerSidePropertiesQuery.png)
 
 ## How it works
 

@@ -30,9 +30,9 @@ Data for the Rating widget can come from a Variable - Static, Live etc.. In this
       }
     \]
     
-    [![rating_usage_statvar](../assets/rating_usage_statvar.png)](../assets/rating_usage_statvar.png)
+    [![rating_usage_statvar](./assets/rating_usage_statvar.png)](./assets/rating_usage_statvar.png)
 2. Drag and drop a Rating widget
-3. Bind the Value Dataset property to the Static Variable created above and set the Data and Display Fields to the respective fields within the Variable. [![rating_usage_statvar_bind](../assets/rating_usage_statvar_bind.png)](../assets/rating_usage_statvar_bind.png)
+3. Bind the Value Dataset property to the Static Variable created above and set the Data and Display Fields to the respective fields within the Variable. [![rating_usage_statvar_bind](./assets/rating_usage_statvar_bind.png)](./assets/rating_usage_statvar_bind.png)
 4. Set the properties for Default Value, Maximum Value and Show captions according to your app requirements.
 5. Run the app.
 

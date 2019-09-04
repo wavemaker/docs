@@ -19,7 +19,7 @@ id: ""
     - _exact_ for matching the entire string;
 - **filter criteria** can be applied to referenced entities for Inline Editable and Quick Edit Data Tables ([see here for usage](http://pm.wavemaker.com/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets/)).
 
-[![](../assets/filter_fields.png)](../assets/filter_fields.png)
+[![](./assets/filter_fields.png)](./assets/filter_fields.png)
 
 < Configurations
 

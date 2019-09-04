@@ -5,7 +5,7 @@ id: ""
 
 You would have witnessed by now that you can accomplish most of the tasks of creating an application in the **Design** mode itself - using intuitive drag and drop options and properties. However, some situations may require you to edit the code of your application pages. Also, some advanced users and experienced developers may prefer to code. Thus, WaveMaker provides different **Page Modes** - [**Markup**](#page-markup), [**Scripting**](#page-script), and [**Styles**](#page-style) - apart from the default **Design** mode. We will look at each of these modes separately.
 
-[![](../assets/page_modes.png)](../assets/page_modes.png)
+[![](./assets/page_modes.png)](./assets/page_modes.png)
 
 # Page Markup
 
@@ -49,7 +49,7 @@ Once you have saved these changes and run the application, clicking on the butto
 
 There are four ways in which you can apply a custom style to your app:
 
-1. **Inline Styling**: This is the locally applied style for individual widget or container, used for alignment (padding, margin, border etc.) and applying custom style such as h2, btn-info etc. The class property for widgets is rendered as a **class picker**. This is a multi select drop down list with various classes that are contextual to the widget displayed. You can select classes and see the effect of those applied classes on the canvas with immediate effect. [![](../assets/styles.png)](../assets/styles.png) A comprehensive list of the available classes can be [wm-widgets](../assets/wm-widgets.pdf). In addition to the list, you can create your own classes and use them, as mentioned below.
+1. **Inline Styling**: This is the locally applied style for individual widget or container, used for alignment (padding, margin, border etc.) and applying custom style such as h2, btn-info etc. The class property for widgets is rendered as a **class picker**. This is a multi select drop down list with various classes that are contextual to the widget displayed. You can select classes and see the effect of those applied classes on the canvas with immediate effect. [![](./assets/styles.png)](./assets/styles.png) A comprehensive list of the available classes can be [wm-widgets](./assets/wm-widgets.pdf). In addition to the list, you can create your own classes and use them, as mentioned below.
 2. **Style editor**: In the **Style** mode, you can create and edit styles for the page using CSS. Let us create a CSS class for a button _formSubmitButton_.
     
     - In the **Design** mode, select the button named _formSubmitButton_.

@@ -13,8 +13,8 @@ A comprehensive list of these APIs can be found from the [API Designer](http://
 
 The **data source** for these Variables comes from a _Web Service APIs_. NOTE: Though the process for creating a variable for WebSocket Service is the same as below, properties and methods are different. [See here for the WebSocket Variable](/learn/app-development/variables/websocket-variable/).
 
-1. Select the Variable option from the Variable Workspace Toolbar. [![](../assets/var_sel.png)](../assets/var_sel.png)
-2. Click New Variable from the Variable Dialog [![](../assets/var_new.png?v=20)](../assets/var_new.png?v=20)
+1. Select the Variable option from the Variable Workspace Toolbar. [![](./assets/var_sel.png)](./assets/var_sel.png)
+2. Click New Variable from the Variable Dialog [![](./assets/var_new.png?v=20)](./assets/var_new.png?v=20)
 3. This will initiate Create Variable wizard with the following steps:
     1. Since we are creating a variable to access Web service APIs, select **Web Service **as the target action
     2. Select:

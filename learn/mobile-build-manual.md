@@ -17,11 +17,11 @@ If you want to customize build process you can issue Cordova/PhoneGap commands s
 
 To perform a Cordova Build, from the **Main Menu** of the Project Workspace, under **Export** option select **Download as Cordova Zip.** It opens the **Build Cordova Zip** window.
 
-[![](../assets/Cordova_Zip.png)](../assets/Cordova_Zip.png)
+[![](./assets/Cordova_Zip.png)](./assets/Cordova_Zip.png)
 
 Before clicking on Save/Build, you need to set the build properties: Refer to the properties section of [Android Build](#android) and [iOS  Build](/learn/docs/mobile-build/#iOS_Build).
 
-[![](../assets/Build_Cordova_Zip.png)](../assets/Build_Cordova_Zip.png) To save the properties for future builds,  click **Save. **Click on **Build** to download the zip file.
+[![](./assets/Build_Cordova_Zip.png)](./assets/Build_Cordova_Zip.png) To save the properties for future builds,  click **Save. **Click on **Build** to download the zip file.
 
 1. Ensure that Cordova@8.0.0 is setup on your machine, [see here for details](https://cordova.apache.org/).
 2. Extract the zip contents (say, CORDOVA\_PROJECT folder)

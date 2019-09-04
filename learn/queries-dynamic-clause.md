@@ -25,8 +25,8 @@ This solution can be used only with a single entity. If you want to use multiple
     - **Database** as _hrdb_
     - **API Type** as _Table APIs_
     - **Table** to _Employee_
-    - **API** to _findEmployees_. [![](../assets/dynamic_query1.png)](../assets/dynamic_query1.png)
-4. Notice in Data tab of the Service Variable _q_ Input Field. This will be used to construct the dynamic where clause on Employee for findEmployees method. [![](../assets/dynamic_query2.png)](../assets/dynamic_query2.png)
+    - **API** to _findEmployees_. [![](./assets/dynamic_query1.png)](./assets/dynamic_query1.png)
+4. Notice in Data tab of the Service Variable _q_ Input Field. This will be used to construct the dynamic where clause on Employee for findEmployees method. [![](./assets/dynamic_query2.png)](./assets/dynamic_query2.png)
 5. Drag and Drop a **Data Table** and bind it to the _customQueryVar Service Variable_ created earlier.
 6. Drag and Drop a **Button** with **Caption** set as _FILTER DATA_.
 7. For the button **OnClick Event** write a JavaScript function that will
@@ -48,7 +48,7 @@ This solution can be used only with a single entity. If you want to use multiple
         };
         ```
     In the script, the field names have to be literal and the field values can be taken from UI. For example, if a text widget is used for the value, then use the following expression: `Page.Widgets.text1.datavalue`. Try from the Use Expression tab in Binding dialog to ensure your expression is syntactically correct.
-10. This is the outcome of the page when the user clicks on Filter Data button [![](../assets/dynamic_query5.png)](../assets/dynamic_query5.png)
+10. This is the outcome of the page when the user clicks on Filter Data button [![](./assets/dynamic_query5.png)](./assets/dynamic_query5.png)
 
 ## Testing the Use Case Using API Designer
 
@@ -62,4 +62,4 @@ This solution can be used only with a single entity. If you want to use multiple
     ```
     
 5. Click on TEST.
-6. You will see the Response as [![](../assets/dynamic_query6.png)](../assets/dynamic_query6.png)
+6. You will see the Response as [![](./assets/dynamic_query6.png)](./assets/dynamic_query6.png)

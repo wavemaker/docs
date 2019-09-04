@@ -13,13 +13,13 @@ WaveMaker provides **HTML/Bootstrap based widgets or UI Components**, with rich 
 
 Widgets could simply map to a standard HTML construct like a label or select or could be complex HTML structures like Lists or extended Forms built for responsive design.
 
-[![](../assets/widget_concept.png)](../assets/widget_concept.png)
+[![](./assets/widget_concept.png)](./assets/widget_concept.png)
 
 # Widget Properties
 
 Once you add a widget to your page, click on the widget to see the available actions in the **Properties Panel**. Below are some of the common actions of Widgets.
 
-[![](../assets/widget_props.png)](../assets/widget_props.png)
+[![](./assets/widget_props.png)](./assets/widget_props.png)
 
 1. **Basic Attributes**: Define the content to be displayed in a widget by connecting it to a database query, web service, Java method, or another widget. Data binding provides integration with data sources known as ‘Variables’ or any other Widgets. Variables offer the ability to integrate with services such as a database, web service or any other backend service. [More on Variables and Binding](/learn/app-development/variables/data-integration/).
 2. **Styling**: Use the **Styles** tab in the **Properties Panel** to define styles. Widget styles for alignment such as margin, padding, text & background, and border styles can be customized as per the required look-n-feel. Advanced users can switch to the Style **Page Mode** to edit the code. [More on Styling](/learn/app-development/ui-design/page-artefacts/#page-style "Markup, Scripting and Styles")

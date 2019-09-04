@@ -7,11 +7,11 @@ In order to bring the Mobile app experience closer to that of Native apps, Gestu
 
 # Swipe Gestures
 
-A swipe gesture involves the app responding when the user moves one or more fingers across the screen in a horizontal - left or right direction. [![](../assets/swipe.png)](../assets/swipe.png)In WaveMaker Mobile Apps, Gestures are turned on by default. This will cause:
+A swipe gesture involves the app responding when the user moves one or more fingers across the screen in a horizontal - left or right direction. [![](./assets/swipe.png)](./assets/swipe.png)In WaveMaker Mobile Apps, Gestures are turned on by default. This will cause:
 
-1. **Left Panel** to be expanded by swiping from left to right and collapsed by swiping right to left; [![](../assets/swipe_leftpanel.png)](../assets/swipe_leftpanel.png)
-2. **Tab content** to navigate to the next tab or previous tab on swipe; NOTE: Transition property for Tabs widget should be set to slide (default setting) for swipe functionality to work. [![](../assets/swipe_tabs.png)](../assets/swipe_tabs.png)
-3. **Carousel** content to navigate to the next or previous content on swipe; [![](../assets/swipe_carousel.png)](../assets/swipe_carousel.png)
+1. **Left Panel** to be expanded by swiping from left to right and collapsed by swiping right to left; [![](./assets/swipe_leftpanel.png)](./assets/swipe_leftpanel.png)
+2. **Tab content** to navigate to the next tab or previous tab on swipe; NOTE: Transition property for Tabs widget should be set to slide (default setting) for swipe functionality to work. [![](./assets/swipe_tabs.png)](./assets/swipe_tabs.png)
+3. **Carousel** content to navigate to the next or previous content on swipe; [![](./assets/swipe_carousel.png)](./assets/swipe_carousel.png)
 
 ### Limitations
 

@@ -3,9 +3,9 @@ title: "Changing Default Favicon"
 id: ""
 ---
 
-By default WaveMaker logo is displayed as the favicon when you run your app. [![design_favicon](../assets/design_favicon.png)](../assets/design_favicon.png) This can be can be changed by replacing the favicon.
+By default WaveMaker logo is displayed as the favicon when you run your app. [![design_favicon](./assets/design_favicon.png)](./assets/design_favicon.png) This can be can be changed by replacing the favicon.
 
-1. From the Main Menu, under **Import -> Resource** option locate the _favicon _under the images folder. [![design_favicon_resource](../assets/design_favicon_resource.png)](../assets/design_favicon_resource.png)
+1. From the Main Menu, under **Import -> Resource** option locate the _favicon _under the images folder. [![design_favicon_resource](./assets/design_favicon_resource.png)](./assets/design_favicon_resource.png)
 2. Delete this file and upload the icon of your choice at the **same location with the same name**
 3. Run the app and see the change
 

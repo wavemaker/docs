@@ -24,7 +24,7 @@ Of particular interest are:
 
 Widgets can be a source of data in some cases. For example, you might want to display the results from a Live Filter or more details of a selected row/item from a Data Table or another List. Widget option will allow you to achieve this. Selecting Widget as the data source will display the various options available.
 
-[![](../assets/cards-data.png)](../assets/cards-data.png)
+[![](./assets/cards-data.png)](./assets/cards-data.png)
 
 < Overview
 

@@ -6,7 +6,7 @@ id: ""
 If you have a requirement, whereby the user decides the structure of the tree. For example, you are building a folder-file structure and the user decides how many folders and files are to be present in a tree. This section deals with such a situation.
 
 1. Drop a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas
-2. Select the Tree widget and specify a _Script Variable_ as **dataset** property, "_treeData_" [![](../assets/tree_dynamic_design.png)](../assets/tree_dynamic_design.png)
+2. Select the Tree widget and specify a _Script Variable_ as **dataset** property, "_treeData_" [![](./assets/tree_dynamic_design.png)](./assets/tree_dynamic_design.png)
 3. From the Script tab, use the following script for treeData:
     
     // should be an array of objects consisting of label, icon, children keys

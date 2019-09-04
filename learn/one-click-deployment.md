@@ -5,7 +5,7 @@ id: ""
 
 WaveMaker provides single-click app deployment to WaveMaker Demo cloud infrastructure. Using this option you can deploy your apps to cloud and make it public. This option is available only for Project Admins.
 
-[![](../assets/deploy.png)](../assets/deploy.png)
+[![](./assets/deploy.png)](./assets/deploy.png)
 
 Only apps under version control will be deployed. In case you have not pushed changes done to your app to VCS, you will be prompted to do so. You cannot proceed with deployment until you commit your changes.
 
@@ -21,7 +21,7 @@ Post-deployment you have three further options:
 2. launch the deployed app
 3. manage app - you can push the deployed app to live and other phases. This option will open [Apps Portal](/learn/app-development/deployment/manage-deployed-apps/#manage-deployed-app) page.
 
-[![](../assets/cloud_postdeploy.png)](../assets/cloud_postdeploy.png)
+[![](./assets/cloud_postdeploy.png)](./assets/cloud_postdeploy.png)
 
 Release Management >
 

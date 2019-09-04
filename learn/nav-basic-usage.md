@@ -5,11 +5,11 @@ id: ""
 
 In this post, we will walk through the steps to create a simple navigation, with icons and links to pages.
 
-[![](../assets/nav_run.png)](../assets/nav_run.png) We will be using a Model Variable for the purpose of this example:
+[![](./assets/nav_run.png)](./assets/nav_run.png) We will be using a Model Variable for the purpose of this example:
 
 1. Create or Open page where you want to use the Nav Widget
-2. Open the Variables dialog from the Variables menu and using New Variable create a Model variable ([Know more about variables)](/learn/app-development/variables/model-variable/). [![](../assets/Nav_Var_create.png)](../assets/Nav_Var_create.png)
-3. Create a new Model Variable called as _navvar_ and select _isList_ [![](../assets/nav_var.png)](../assets/nav_var.png)
+2. Open the Variables dialog from the Variables menu and using New Variable create a Model variable ([Know more about variables)](/learn/app-development/variables/model-variable/). [![](./assets/Nav_Var_create.png)](./assets/Nav_Var_create.png)
+3. Create a new Model Variable called as _navvar_ and select _isList_ [![](./assets/nav_var.png)](./assets/nav_var.png)
 4. Add the following in the _Text Editor_, this defines the structure for Menu identifying _Label_, _Icon_, _Link_, _Badge Value_ and _sub-action_. Icons can be [halflings from glyphicons](http://glyphicons.com/) or [font awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons.
     
     \[
@@ -45,7 +45,7 @@ In this post, we will walk through the steps to create a simple navigation, with
     - _Item Badge_ to badge-value,
     - _Sub Actions_ to sub-action.
     
-    If you need you can modify the JSON structure given for the Model Variable and do the appropriate settings. [![](../assets/nav_props.png)](../assets/nav_props.png)
+    If you need you can modify the JSON structure given for the Model Variable and do the appropriate settings. [![](./assets/nav_props.png)](./assets/nav_props.png)
 7. Run the application and see the menu in action.
 
 ## Multilevel Nav
@@ -103,7 +103,7 @@ You can have multiple levels of nav-items. Follow the steps from the above examp
 }
 \]
 
-You will get the following nav: [![](../assets/nested_nav_items.png)](../assets/nested_nav_items.png)
+You will get the following nav: [![](./assets/nested_nav_items.png)](./assets/nested_nav_items.png)
 
 [6\. Navigation Widgets](/learn/app-development/widgets/widget-library/#nav-widgets)
 

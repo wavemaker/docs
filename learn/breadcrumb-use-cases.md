@@ -7,9 +7,9 @@ We will see here a simple usage of a **Breadcrumb** widget. All breadcrumbs star
 
 **Scenario**: Consider an app with three pages - Main, First and Second Pages. Breadcrumb in the First Page will enable one to navigate to Main Page, while the one in Second Page will provide navigation to First and Main Page.
 
-[![](../assets/bc_run1.png)](../assets/bc_run1.png)
+[![](./assets/bc_run1.png)](./assets/bc_run1.png)
 
-[![](../assets/bc_run2.png)](../assets/bc_run2.png)
+[![](./assets/bc_run2.png)](./assets/bc_run2.png)
 
 ## Step 1: App Creation
 
@@ -17,7 +17,7 @@ Create an app with three pages - Main, Page1, and Page2. We have used Employee P
 
 ## Step 2: Variable Creation
 
-- Click Variables option under Variables in Workspace Toolbar. Select New Variables button and click Model.  Choose the Application as Owner i.e. Application scoped. [![](../assets/Var_create.png)](../assets/Var_create.png)
+- Click Variables option under Variables in Workspace Toolbar. Select New Variables button and click Model.  Choose the Application as Owner i.e. Application scoped. [![](./assets/Var_create.png)](./assets/Var_create.png)
 - In the text editor of the above Model Variable, enter the following code: This code sets values for the properties of _label, id, icon, and link_ to be displayed on the breadcrumb.
     
     - _label_ and _icon_ are the name and icon displayed on the Breadcrumb,
@@ -59,12 +59,12 @@ Create an app with three pages - Main, Page1, and Page2. We have used Employee P
         }
       \]
     
-    [![](../assets/bc_var.png)](../assets/bc_var.png)
+    [![](./assets/bc_var.png)](./assets/bc_var.png)
     
     ## Step 3: Binding
     
     - Drag and drop **Breadcrumb widget** onto the canvas of FirstPage
-    - Bind the **value (under dataset) property** to the Model **dataset** which we have created above and set the **Action** properties to the corresponding fields from the Model. [![](../assets/bc_props.png)](../assets/bc_props.png)
+    - Bind the **value (under dataset) property** to the Model **dataset** which we have created above and set the **Action** properties to the corresponding fields from the Model. [![](./assets/bc_props.png)](./assets/bc_props.png)
     
     ## Step 4: Page2
     

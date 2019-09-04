@@ -30,10 +30,10 @@ Data for the Rating widget can come from a Variable - Model, Live etc.. In this 
       }
     \]
     
-    [![](../assets/rating_usage_statvar.png)](../assets/rating_usage_statvar.png)
+    [![](./assets/rating_usage_statvar.png)](./assets/rating_usage_statvar.png)
 2. Drag and drop a Rating widget
 3. Bind the Value Dataset property to the Static Variable created above and set the Data and Display Fields to the respective fields within the Variable.
-4. Set the properties for Default Value, Maximum Value and Show captions according to your app requirements. [![](../assets/rating_usage_statvar_bind.png)](../assets/rating_usage_statvar_bind.png)
+4. Set the properties for Default Value, Maximum Value and Show captions according to your app requirements. [![](./assets/rating_usage_statvar_bind.png)](./assets/rating_usage_statvar_bind.png)
 5. Preview the app to see the Rating widget in action.
 
 [Rating Widget Use Cases](/learn/app-development/widgets/form-widgets/rating-widget/#use-cases)

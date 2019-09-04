@@ -8,14 +8,14 @@ id: ""
 # Action Creation
 
 1. To create a Timer Action:
-    - Select the Action option from Variables on the Workspace Toolbar [![](../assets/action_sel.png)](../assets/action_sel.png)and click New Action from the Actions dialog. [![](../assets/action_new.png?v=20)](../assets/action_new.png?v=20)
+    - Select the Action option from Variables on the Workspace Toolbar [![](./assets/action_sel.png)](./assets/action_sel.png)and click New Action from the Actions dialog. [![](./assets/action_new.png?v=20)](./assets/action_new.png?v=20)
 2. A **New Action** wizard will open.
     1. Choose **Timer **Type
     2. **Name** - set by default which can be modified
     3. **Owner** - the scope of the Variable being created. By default it is set to Page, you can change it to Application if you want this variable to be available across the app.
     4. You can set the **Properties** ([know more](#properties))
     5. Click **Done** to create the Action
-3. You will be directed to the Actions dialog, with the new action listed. [![](../assets/action_timer.png)](../assets/action_timer.png) As you can see:
+3. You will be directed to the Actions dialog, with the new action listed. [![](./assets/action_timer.png)](./assets/action_timer.png) As you can see:
     1. a Timer Action is created,
     2. the properties tab contains the _behavior_ properties. [Know more about properties](#properties).
     3. the events tab will contain the events that can be configured to trigger any action. [Know more about events](#events).
@@ -44,7 +44,7 @@ Once a Timer Action is triggered, if it is Page scoped, then the action (and its
     
     You can assign a Variable (or multiple Variables) or a Javascript method with custom logic in for dynamic behavior as required.
 
-1. Call a Variable that fetches the updates from Employee database with the latest after every 30 seconds. [![](../assets/var_timer_props.png)](../assets/var_timer_props.png) [![](../assets/var_timer_event.png)](../assets/var_timer_event.png)
+1. Call a Variable that fetches the updates from Employee database with the latest after every 30 seconds. [![](./assets/var_timer_props.png)](./assets/var_timer_props.png) [![](./assets/var_timer_event.png)](./assets/var_timer_event.png)
 2. A Variable that gives Facebook-like feeds after a certain timestamp. Assign Javascript to the onTimerFire event and write following logic. Once the Timer Action is triggered, if repeating property is set, then the variable will be invoked after every delay milliseconds.
     
     Page.timerAction1onTimerFire = function(variable, data){

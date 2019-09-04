@@ -20,9 +20,9 @@ Localization is the adaptation of a product or service to meet the needs of a pa
 
 ### Setting Language Preference
 
-- You can set your personal preference, from Studio, by opening the Account Profile. [![](../assets/locale_profile.png)](../assets/locale_profile.png)
-- Edit Profile and choose the preferred language. [![](../assets/locale_profile_edit.png)](../assets/locale_profile_edit.png)
-- The Default Language for all users will be set from Launchpad by the Admin. [![](../assets/locale_default.png)](../assets/locale_default.png)
+- You can set your personal preference, from Studio, by opening the Account Profile. [![](./assets/locale_profile.png)](./assets/locale_profile.png)
+- Edit Profile and choose the preferred language. [![](./assets/locale_profile_edit.png)](./assets/locale_profile_edit.png)
+- The Default Language for all users will be set from Launchpad by the Admin. [![](./assets/locale_default.png)](./assets/locale_default.png)
 
 ### Adding Language Bundles
 

@@ -13,7 +13,7 @@ id: ""
 - specify a cascading filter,
 - different layout styles like 1-column, 2-column or 3-column
 
-[![](../assets/livefilter_concept.png)](../assets/livefilter_concept.png)
+[![](./assets/livefilter_concept.png)](./assets/livefilter_concept.png)
 
 Data Source >
 

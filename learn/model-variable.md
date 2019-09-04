@@ -21,8 +21,8 @@ Each of these types can further be in an array format by selecting the **isList*
 
 The **data source** for these Variables is custom-defined.
 
-1. Select the Variable option from the Variable Workspace Toolbar. [![](../assets/var_sel.png)](../assets/var_sel.png)
-2. Click New Variable from the Variable Dialog [![](../assets/var_new.png?v=20)](../assets/var_new.png?v=20)
+1. Select the Variable option from the Variable Workspace Toolbar. [![](./assets/var_sel.png)](./assets/var_sel.png)
+2. Click New Variable from the Variable Dialog [![](./assets/var_new.png?v=20)](./assets/var_new.png?v=20)
 3. This will initiate Create Variable wizard with the following steps:
     1. Select **Model **as the target action
     2. Select the **Type** based upon the type of data you want the Static variable to hold.

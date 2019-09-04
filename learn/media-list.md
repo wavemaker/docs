@@ -3,7 +3,7 @@ title: "Media List"
 id: ""
 ---
 
-![](../assets/phone.png)  **NOTE**: Media List is available only for mobile apps.
+![](./assets/phone.png)  **NOTE**: Media List is available only for mobile apps.
 
 **Media List Widget** can be used for displaying a list of pictures. Initially, a list with thumbnails of the pictures is displayed. When the user clicks on a thumbnail, then the original picture will be displayed.
 
@@ -51,23 +51,23 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 
 Media List can be used to display images in a Hybrid Mobile App.
 
-In this post, we will be creating a page with Media List to display employee’s pictures. We will be using the Sample HRDB for this example. [![](../assets/medialist_run.png)](../assets/medialist_run.png)
+In this post, we will be creating a page with Media List to display employee’s pictures. We will be using the Sample HRDB for this example. [![](./assets/medialist_run.png)](./assets/medialist_run.png)
 
 ### Step 1: Data
 
 1. Open or Create a Hybrid Mobile App.
 2. From the **Resources section,** select Database and click on Add icon. Select Connect to a DB option >> Sample HRDB.
-3. To create an appropriate variable, select the Variables >>New Variable>> Database CRUD option. In the New Variables window,  select the source as ‘hrdb’, type as ‘employee’ and operation as read. [![](../assets/medialist_lv.png)](../assets/medialist_lv.png)
+3. To create an appropriate variable, select the Variables >>New Variable>> Database CRUD option. In the New Variables window,  select the source as ‘hrdb’, type as ‘employee’ and operation as read. [![](./assets/medialist_lv.png)](./assets/medialist_lv.png)
 
 ### Step 2: Design
 
 1. Drag and drop _Media List_ widget on the page.
-2. Bind the _dataset value_ property of Medial List to ‘employees’ live variable dataset created in the previous step. [![](../assets/medialist_bind.png)](../assets/medialist_bind.png)
-3. From the Properties panel set _Thumbnailurl_ and _Mediaurl_ to the _picurl_ property of the CRUD Variable. **NOTE**: In this example, we are using the original picture for both Thumbnail and Media. [![](../assets/medialist_props.png)](../assets/medialist_props.png)
+2. Bind the _dataset value_ property of Medial List to ‘employees’ live variable dataset created in the previous step. [![](./assets/medialist_bind.png)](./assets/medialist_bind.png)
+3. From the Properties panel set _Thumbnailurl_ and _Mediaurl_ to the _picurl_ property of the CRUD Variable. **NOTE**: In this example, we are using the original picture for both Thumbnail and Media. [![](./assets/medialist_props.png)](./assets/medialist_props.png)
 
 ### Step 3: Preview App
 
-1. Click **Run** to preview the Media List. [![](../assets/medialist_run.png)](../assets/medialist_run.png)
+1. Click **Run** to preview the Media List. [![](./assets/medialist_run.png)](./assets/medialist_run.png)
 
 [10\. Mobile & Device Widgets](/learn/app-development/widgets/widget-library/#mobile)
 

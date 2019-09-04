@@ -14,8 +14,8 @@ id: ""
 ##  Export Project
 
 - Export Project allows you to create a ZIP or a WAR file including the project along with the resources used. The projects are [Maven compliant](/learn/app-development/dev-integration/extending-application-using-ides/ "Extending the Application").
-- Here we will be using the ZIP option. WAR option can be used for deployment to a Web Server, [see here for more](/learn/app-development/deployment/deployment-web-server/). [![](../assets/export_project1.png)](../assets/export_project1.png)
-- You can also use the ZIP icon from the Project Dashboard to export the project without opening the same. [![](../assets/export_project3.png)](../assets/export_project3.png)
+- Here we will be using the ZIP option. WAR option can be used for deployment to a Web Server, [see here for more](/learn/app-development/deployment/deployment-web-server/). [![](./assets/export_project1.png)](./assets/export_project1.png)
+- You can also use the ZIP icon from the Project Dashboard to export the project without opening the same. [![](./assets/export_project3.png)](./assets/export_project3.png)
 - Once a ZIP file is created you can download it to your machine.
 
 **Note:** For security reasons, the export project option is restricted to the projects you own. **Note:** In case the project is using a database, only the data model is exported, data is not included in the export.
@@ -24,7 +24,7 @@ id: ""
 
 You can import a project or a prefab in the ZIP format using the **Import **from the Project Dashboard. Choose the file from the import dialog and click on Import. These are the files that were created from the Export option of WaveMaker Studio as discussed above.
 
-- On the **Project Dashboard**, click the **Import** button. [![](../assets/import_project1.png)](../assets/import_project1.png)
+- On the **Project Dashboard**, click the **Import** button. [![](./assets/import_project1.png)](./assets/import_project1.png)
 - Select the ZIP file from your machine to import and give it an appropriate name. You can retain the original name or change it.
 - Now this project will be available on your Project Dashboard for selection.
 
@@ -33,7 +33,7 @@ You can import a project or a prefab in the ZIP format using the **Import **fro
 You will use this option when you want to incorporate the changes made to the project after export i.e. when you want to "re-import" the project.
 
 - Open the Project that you want to update.
-- Select **Update Source** option from the **Developer Utilities.** [![](../assets/update_project1.png)](../assets/update_project1.png)
+- Select **Update Source** option from the **Developer Utilities.** [![](./assets/update_project1.png)](./assets/update_project1.png)
 - Select the location of the ZIP file with the updates. Keep in mind, this operation will overwrite the project source file from your local copy.
 
 ## Project Recovery
@@ -56,11 +56,11 @@ We will be looking at each of these options in the following sections.
 
 Export option downloads project as a ZIP file. Using this option you can export the project (.zip) without opening the project and make changes if any required by [working on it using an IDE](/learn/app-development/dev-integration/extending-application-using-ides/#steps) of your choice and [update the project](#update-project) with new changes.
 
-[![](../assets/export_project3.png)](../assets/export_project3.png)
+[![](./assets/export_project3.png)](./assets/export_project3.png)
 
 ### Restore Project options
 
-[![](../assets/restore_project1.png)](../assets/restore_project1.png) Restore opens a dialog with two sub-options:
+[![](./assets/restore_project1.png)](./assets/restore_project1.png) Restore opens a dialog with two sub-options:
 
 - Restore to last stable state
 - Restore from project ZIP

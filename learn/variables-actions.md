@@ -11,7 +11,7 @@ In this document, we give an overview of how Variables and Actions work, the var
 
 Variables can be represented using a block with 3 faces, as in the picture below, representing the APIs invoked, events processed and the Model or Entity objects returned by the APIs.
 
-[![variable representation](../assets/var_representation.png)](../assets/var_representation.png)
+[![variable representation](./assets/var_representation.png)](./assets/var_representation.png)
 
 # Variables
 
@@ -43,11 +43,11 @@ Actions can be categorized based on the triggering event:
 
 WaveMaker Variables dealing with external services like Web, Database etc. may not always return with a successful response. Sometimes the Variable call may fail due to various reasons like server validation, request timeout, etc. To gracefully handle such scenarios, a default **Notification Action **(_toaster target_) named _appNotification_ is created in the app. By default, all Variables invoke this action on error response from the target service. This enables the app has a central point of error handling. The default appNotification Action can further be customized as per requirement. For example, if you want the app to display errors in an alert dialog, the appNotification action can be changed to alert type. To suppress the default error handling, simply delete the appNotification action. [Know more about error handling](/learn/how-tos/error-handling-wavemaker-app/).
 
-[![variable error](../assets/vars_error.png)](../assets/vars_error.png)
+[![variable error](./assets/vars_error.png)](./assets/vars_error.png)
 
 # Scope of Variables
 
-Variables and Actions can be classified into two based on the scope of the Variable. The two types of variables are - **Application** and **Page** level variables. While both these types reside at the _client side_, the _application level_ variables share the data across multiple pages, whereas _Page level_ variables share the data within the page where they have been declared/created. Whenever you are switching from one page to another, all the previous page level variables are destroyed. [![var_scope](../assets/var_scope.png)](../assets/var_scope.png) **NOTE**: It is advised to have unique names for any variable to avoid confusion. Whenever you try to create or rename a variable WaveMaker will throw an error if another variable of the same name exists either within the page or at the app level.
+Variables and Actions can be classified into two based on the scope of the Variable. The two types of variables are - **Application** and **Page** level variables. While both these types reside at the _client side_, the _application level_ variables share the data across multiple pages, whereas _Page level_ variables share the data within the page where they have been declared/created. Whenever you are switching from one page to another, all the previous page level variables are destroyed. [![var_scope](./assets/var_scope.png)](./assets/var_scope.png) **NOTE**: It is advised to have unique names for any variable to avoid confusion. Whenever you try to create or rename a variable WaveMaker will throw an error if another variable of the same name exists either within the page or at the app level.
 
 # Variable Events
 
@@ -57,7 +57,7 @@ In a typical life-cycle:
 2. The event action talks to the data source via the API call.
 3. The result from API call is reflected in the Data which in turn changes the user data view.
 
-[![var_lifecycle](../assets/var_lifecycle.png)](../assets/var_lifecycle.png)
+[![var_lifecycle](./assets/var_lifecycle.png)](./assets/var_lifecycle.png)
 
 Four actions can be said to be responsible for triggering a variable life-cycle:
 
@@ -66,7 +66,7 @@ Four actions can be said to be responsible for triggering a variable life-cycle:
 - **Events** - Widgets are updated/notified by user events like click, submit, or variable events like pre and post update, on error etc..
 - **Update data on input change** is a property which configures the ability to auto-reload Variable data, for example, if the data filter value changes dynamically from city = ‘New York’ to city = ‘Boston.
 
-[![var_triggers](../assets/var_triggers.png)](../assets/var_triggers.png)
+[![var_triggers](./assets/var_triggers.png)](./assets/var_triggers.png)
 
 # Events Implementation
 
@@ -78,7 +78,7 @@ Based on the application needs, a component can be assigned to these events like
 
 A typical event flow when a variable is used to update data would be:
 
-[![lsv_eventcycle](../assets/LSV_eventcycle.png)](../assets/LSV_eventcycle.png) NOTE: The onBeforeUpdate event in the above diagram differs based upon the type of variable as explained in the table below. It is:
+[![lsv_eventcycle](./assets/LSV_eventcycle.png)](./assets/LSV_eventcycle.png) NOTE: The onBeforeUpdate event in the above diagram differs based upon the type of variable as explained in the table below. It is:
 
 - onBeforeListRecords for Database CRUD Variable with READ operation
 - onBeforeUpdateRecord for Database CRUD Variable with UPDATE operation

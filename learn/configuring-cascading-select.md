@@ -3,13 +3,13 @@ title: "Configuring Cascading Select"
 id: ""
 ---
 
-One can drive the content of a Select widget based upon the selection of another Select widget. For example, a user is provided with a list of Countries and based upon the selection, a list of Cities is displayed for selection from a second list. Let us see how to achieve this in WaveMaker. **Note**: We are using a dataset CityListing which contains the country and city details. [![](../assets/sel_cs_db.png)](../assets/sel_cs_db.png)
+One can drive the content of a Select widget based upon the selection of another Select widget. For example, a user is provided with a list of Countries and based upon the selection, a list of Cities is displayed for selection from a second list. Let us see how to achieve this in WaveMaker. **Note**: We are using a dataset CityListing which contains the country and city details. [![](./assets/sel_cs_db.png)](./assets/sel_cs_db.png)
 
 1. Drag and drop two Select and one Label widgets onto the canvas.
-2. [Create a Database CRUD Variable](http://[supsystic-show-popup id=105]) for the above CityListing table (say, _citylistingVar_). [![](../assets/sel_cs_var1.png)](../assets/sel_cs_var1.png)
-3. Bind the first Select widget to the _citylistingVar _dataset. Set the Display Field and Data Field to the Country field of the dataset. [![](../assets/sel_cs_prop1.png)](../assets/sel_cs_prop1.png)
-4. [Create another Database CRUD variable](http://[supsystic-show-popup id=105]) (say, _cityVar_), bind it to the CityListing dataset and set filter on the Country field to the Country Select widget datavalue. [![](../assets/sel_cs_var2.png)](../assets/sel_cs_var2.png)
-5. Bind the second Select widget to the variable (_cityVar) _created in the above step. Set the Display Field and Data Field to the City field. [![](../assets/sel_cs_prop2.png)](../assets/sel_cs_prop2.png)
+2. [Create a Database CRUD Variable](http://[supsystic-show-popup id=105]) for the above CityListing table (say, _citylistingVar_). [![](./assets/sel_cs_var1.png)](./assets/sel_cs_var1.png)
+3. Bind the first Select widget to the _citylistingVar _dataset. Set the Display Field and Data Field to the Country field of the dataset. [![](./assets/sel_cs_prop1.png)](./assets/sel_cs_prop1.png)
+4. [Create another Database CRUD variable](http://[supsystic-show-popup id=105]) (say, _cityVar_), bind it to the CityListing dataset and set filter on the Country field to the Country Select widget datavalue. [![](./assets/sel_cs_var2.png)](./assets/sel_cs_var2.png)
+5. Bind the second Select widget to the variable (_cityVar) _created in the above step. Set the Display Field and Data Field to the City field. [![](./assets/sel_cs_prop2.png)](./assets/sel_cs_prop2.png)
 6. Run the application, select country and see the city list change.
 
 [Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)

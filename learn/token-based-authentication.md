@@ -7,7 +7,7 @@ id: ""
 
 The interaction between front-end and back-end for WaveMaker applications goes through REST APIs exposed by the back-end. For every service such as DB, Java, SOAP etc created/imported into WaveMaker application, the corresponding functionality is exposed through REST APIs. These REST APIs can be invoked from the application front-end or they can be integrated with other applications (non-WaveMaker applications). Invocation from the application front-end goes through the login page flow wherein a cookie is provided post authentication, which will be sent while invoking the back-end REST APIs.
 
-[![app_flow](../assets/app_flow.png)](../assets/app_flow.png)
+[![app_flow](./assets/app_flow.png)](./assets/app_flow.png)
 
 If the REST APIs are invoked from a third-party application, the same login flow with cookie will not work. The other alternative is to send the credentials for each and every REST API call through Basic Authentication Header. Though this option works, it is not recommended for security reasons as every request carrying the credentials of the user. To avoid such problems, WaveMaker applications follows **Token Based authentication mechanism** for their REST APIs.
 
@@ -15,7 +15,7 @@ If the REST APIs are invoked from a third-party application, the same login flow
 
 Token-based authentication is an authentication mechanism mostly used for authentication of API requests. In this mechanism, the user is issued an API access token upon successful authentication, which will be used while invoking any API request. In this process, a cookie will never be issued by the server. All requests are stateless.
 
-[![token_app_flow](../assets/token_app_flow.png)](../assets/token_app_flow.png)
+[![token_app_flow](./assets/token_app_flow.png)](./assets/token_app_flow.png)
 
 ## What is a token?
 

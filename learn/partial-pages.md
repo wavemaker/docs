@@ -15,7 +15,7 @@ The partial pages are loaded asynchronously on the page. Partial pages are loade
 
 Partial Pages are created like Pages and can be designed similar to any other Page.
 
-[![](../assets/partial_page.png)](../assets/partial_page.png)
+[![](./assets/partial_page.png)](./assets/partial_page.png)
 
 # Types of Partials
 

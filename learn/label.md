@@ -10,7 +10,7 @@ The **label** represents a caption in a user interface. The label displays text 
 - a paragraph of text
 - a link
 
-[![](../assets/label_struct.jpg)](../assets/label_struct.jpg)
+[![](./assets/label_struct.jpg)](./assets/label_struct.jpg)
 
 # Features
 

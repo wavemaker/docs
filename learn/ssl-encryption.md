@@ -7,7 +7,7 @@ A WaveMaker application can be accessed through _https_ protocol to ensure highe
 
 If the user enables SSL, it means that the user will be redirected to the same URL but protected by SSL. For eg. if user inputs [www.wavemakeronline.com](http://www.wavemakeronline.com/), SSL filter will redirect the user to [https://www.wavemakeronline.com](https://www.wavemakeronline.com/)Security SSL Encryption can be set at the [**Profile Configuration**](http://[supsystic-show-popup id=109]) which can be accessed from the [Settings Secondary Action in Project Workspace](http://[supsystic-show-popup id=107]). For Development Profile SSL Encryption is set by default. You can choose to change the setting for  Deployment Profile.
 
-[![](../assets/config_deploy_sec.png)](../assets/config_deploy_sec.png)
+[![](./assets/config_deploy_sec.png)](./assets/config_deploy_sec.png)
 
 < Security Variables
 

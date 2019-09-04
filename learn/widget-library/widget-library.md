@@ -124,16 +124,16 @@ For an overview on Prefabs and how you can create Prefabs [see here](/learn/app-
 
 | Widget | Description | Document | Reference |
 | --- | --- | --- | --- |
-| [![](../assets/youtube.png)](../assets/youtube.png) | The YouTube prefab connects with YouTube and displays a video on the web page. | [Overview](/learn/app-development/widgets/prefab/youtube/) |  |
-| [![](../assets/maps.png)](../assets/maps.png) | The Googlemaps prefab connects with Google Maps and displays the map on your page. | [Overview](/learn/app-development/widgets/prefab/googlemaps/) |  |
-| [![](../assets/fbpost.png)](../assets/fbpost.png) | This Prefab is no longer available from version 10. |  |  |
-| [![](../assets/qrcode.png)](../assets/qrcode.png) | QRCode prefab that ships with WaveMaker can be used to add any text or url to your app in the QRCode format. | [Overview](/learn/app-development/widgets/prefab/qrcode/) |  |
+| [![](./assets/youtube.png)](./assets/youtube.png) | The YouTube prefab connects with YouTube and displays a video on the web page. | [Overview](/learn/app-development/widgets/prefab/youtube/) |  |
+| [![](./assets/maps.png)](./assets/maps.png) | The Googlemaps prefab connects with Google Maps and displays the map on your page. | [Overview](/learn/app-development/widgets/prefab/googlemaps/) |  |
+| [![](./assets/fbpost.png)](./assets/fbpost.png) | This Prefab is no longer available from version 10. |  |  |
+| [![](./assets/qrcode.png)](./assets/qrcode.png) | QRCode prefab that ships with WaveMaker can be used to add any text or url to your app in the QRCode format. | [Overview](/learn/app-development/widgets/prefab/qrcode/) |  |
 | OAuth Prefabs |
-| [![](../assets/box.png)](../assets/box.png) | Use this Prefab to enable user authorization using their Box credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/box/) |  |
-| [![](../assets/fb.jpg)](../assets/fb.jpg) | Use this Prefab to enable user authorization using their FaceBook credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/facebook/) |  |
-| [![](../assets/Google.png)](../assets/Google.png) | Use this Prefab to enable user authorization using their Google credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/google/) |  |
-| [![](../assets/instagram.png)](../assets/instagram.png) | Use this Prefab to enable user authorization using their Instagram credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/instagram/) |  |
-| [![](../assets/linkedin.png)](../assets/linkedin.png) | Use this Prefab to enable user authorization using their LinkedIn credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/) |  |
+| [![](./assets/box.png)](./assets/box.png) | Use this Prefab to enable user authorization using their Box credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/box/) |  |
+| [![](./assets/fb.jpg)](./assets/fb.jpg) | Use this Prefab to enable user authorization using their FaceBook credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/facebook/) |  |
+| [![](./assets/Google.png)](./assets/Google.png) | Use this Prefab to enable user authorization using their Google credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/google/) |  |
+| [![](./assets/instagram.png)](./assets/instagram.png) | Use this Prefab to enable user authorization using their Instagram credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/instagram/) |  |
+| [![](./assets/linkedin.png)](./assets/linkedin.png) | Use this Prefab to enable user authorization using their LinkedIn credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/) |  |
 
 # Mobile & Device Widgets
 

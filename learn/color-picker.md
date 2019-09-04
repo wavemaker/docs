@@ -3,7 +3,7 @@ title: "Color Picker"
 id: ""
 ---
 
-![](../assets/laptop.png)  **NOTE**: Color Picker is available only for web responsive apps.
+![](./assets/laptop.png)  **NOTE**: Color Picker is available only for web responsive apps.
 
 **Color Picker **widget helps in selecting a color and translate to the hex value. The Color Picker Tool can be used to select a color on any image opened on your screen. By clicking a point on an image, you can change the active color to that which is located under the pointer.
 

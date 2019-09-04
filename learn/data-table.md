@@ -3,7 +3,7 @@ title: "Data Table"
 id: ""
 ---
 
-[![](../assets/laptop.png)  ](../assets/laptop.png)**NOTE**: Data Table is available only for web responsive apps.
+[![](./assets/laptop.png)  ](./assets/laptop.png)**NOTE**: Data Table is available only for web responsive apps.
 
 **Data Table** provides a tabular view for database Entities or API response data. Data Table can be bound to data sources like database tables, queries, procedures, web services or JSON objects through Variables.
 
@@ -21,7 +21,7 @@ While designing Data Table in WaveMaker, the following features are provided to
 - add any other custom action,
 - export to CSV or Excel files, and much more.
 
-[![](../assets/GraphicsData-Table-Widgeta.jpg)](../assets/GraphicsData-Table-Widgeta.jpg)
+[![](./assets/GraphicsData-Table-Widgeta.jpg)](./assets/GraphicsData-Table-Widgeta.jpg)
 
 Data Source >
 

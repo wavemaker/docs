@@ -17,7 +17,7 @@ This guide helps you upgrade your apps from WaveMaker 9 (WM 9.4) to WaveMaker 1
 
 With the WaveMaker 10.0 release, you will notice alerts on the project cards prompting you to upgrade your apps. When you begin the project upgrade, the project card converts into a folder. The folder contains all the versions of the app including WM 9.4 and WM 10.0. You can independently work on both versions. In WM 9.4, you can continue to make critical fixes supporting the application that is already released to your customers. At the same time in WM 10.0, you can test and work on the upgrade process. After doing all the necessary tests to verify your application features, you finish the upgrade by selecting the "Finish upgrade" option. Then the WaveMaker 9.4 version archives, and you start using WakeMaker 10.0.
 
-[![](https://www.wavemaker.com../assets/wm10-upgrade-process-e1555339158151.jpg)](https://www.wavemaker.com../assets/wm10-upgrade-process.jpg)
+[![](https://www.wavemaker.com./assets/wm10-upgrade-process-e1555339158151.jpg)](https://www.wavemaker.com./assets/wm10-upgrade-process.jpg)
 
 We recommend you to process the project upgrade as fast as possible not only to experience 3x faster load time but also to reduce repetition of production work after upgrading the app. The changes happening in WM 9.4 version during the upgrade process should be done again on WM 10.0 manually. Therefore, making minimum changes in WM 9.4 and active implementation of project upgrade helps the entire process to be much simpler and smoother.
 
@@ -36,17 +36,17 @@ All the apps currently using the older platform versions will start displaying a
 - Select the project. 
 - From the contextual menu, click **Upgrade to WM 10.0.0. **
 
-**![](https://www.wavemaker.com../assets/Start_Upgrading_WM_10_RAD.png)**
+**![](https://www.wavemaker.com./assets/Start_Upgrading_WM_10_RAD.png)**
 
 - You get a prompt message that an app **Version **is being created, click **Create**.  
 
-![](https://www.wavemaker.com../assets/UpgradeProjectPrompt_WM_10.png)
+![](https://www.wavemaker.com./assets/UpgradeProjectPrompt_WM_10.png)
 
 - In the **Manage Members** window, select _members_, and click **Done**.
 
 The project card converts into a folder which holds two versions of the project including version 9.4 and version 10.0. 
 
-_![](https://www.wavemaker.com../assets/Two_Versions_created_WM_9_and_WM_10_0.png)_
+_![](https://www.wavemaker.com./assets/Two_Versions_created_WM_9_and_WM_10_0.png)_
 
 _Two copies of the project will be created - 9.4 branch and 10.0 branch. You can work on both versions simultaneously. _
 
@@ -61,13 +61,13 @@ _Two copies of the project will be created - 9.4 branch and 10.0 branch. You ca
 - From the folder, open the app in WM 10.0 version.
 - When prompted, **Update** action for each service type, and click **Continue**.
 
-![](https://www.wavemaker.com../assets/UpdatesAction_before_Accessing_WM_10.png)
+![](https://www.wavemaker.com./assets/UpdatesAction_before_Accessing_WM_10.png)
 
 - Click **Preview**in the WaveMaker Studio and verify if the project previews as expected.
 
 Check for the custom JavaScript code by using the Inspection framework. You locate it from the more options menu as shown in the image below.
 
-![](https://www.wavemaker.com../assets/inspectionframeworklowcode.png)
+![](https://www.wavemaker.com./assets/inspectionframeworklowcode.png)
 
 In the **Preview **mode**,** check all the following:
 

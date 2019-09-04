@@ -17,7 +17,7 @@ The **Form** widget has inbuilt functionality to perform **POST & GET operatio
 2. Select the display **layout** of the Form. You can choose from one-column, two-column or a three-column layout.
 3. Select the **fields** to be available for the user to interact with. All the fields from the selected data source will be presented for selection and assign the display widget for each.
 
-Drag and drop the **Form** widget onto the page. [![](../assets/form_usage_dnd.png)](../assets/form_usage_dnd.png)
+Drag and drop the **Form** widget onto the page. [![](./assets/form_usage_dnd.png)](./assets/form_usage_dnd.png)
 
 #### STEP 1 – SELECT DATA
 
@@ -42,21 +42,21 @@ There can be different scenarios to deal with when configuring your Form Widget
     4. Once you select the variables, it shows the dataset that it is bound to.
     5. As Data Configuration options are already set for this variable, you do not see those options in this scenario.
 
-[![](../assets/form_usage_var.png)](../assets/form_usage_var.png)
+[![](./assets/form_usage_var.png)](./assets/form_usage_var.png)
 
 #### STEP 2: Layout and Alignment Configuration
 
 - You can choose to have a _1, 2 or 3-column layout_.
 - You can set the _Alignment, Position, and Size_ of the **Caption** for the Form.
 
-[![](../assets/form_usage_layout.png)](../assets/form_usage_layout.png)
+[![](./assets/form_usage_layout.png)](./assets/form_usage_layout.png)
 
 #### STEP 3: Field Configuration
 
 - The **View As** widget to represent the selected field. The widgets applicable to the field based on the field data type, are available for selection from the drop-down box.
 - In the case of a multi-column layout, you can choose the fields to be displayed in the respective columns. You can use the up and down arrows to arrange the fields.
 
-[![](../assets/form_usage_data.png)](../assets/form_usage_data.png)
+[![](./assets/form_usage_data.png)](./assets/form_usage_data.png)
 
 # Using Form to trigger an Insert Query
 
@@ -71,8 +71,8 @@ We will be seeing how to use a Form to insert values into an Employee table of t
 2. Provide test values and run and save the query (as InsertEmp).
 3. Create a variable by dragging and dropping Form widget and using Create new functionality or by using this query operation from the variable dialog.
 4. Select Layout and Configure Fields changing the display name and widget type if needed. Note that if the database API Variable underlying the Form, has to have some input fields the same should be done using the Data tab of the Variable.
-5. Your page will look like this in design mode [![](../assets/form_query_design.png)](../assets/form_query_design.png)
-6. Run the app, enter the values and SAVE [![](../assets/form_query_run.png)](../assets/form_query_run.png)
+5. Your page will look like this in design mode [![](./assets/form_query_design.png)](./assets/form_query_design.png)
+6. Run the app, enter the values and SAVE [![](./assets/form_query_run.png)](./assets/form_query_run.png)
 
 # Using Form as Filter
 
@@ -87,8 +87,8 @@ Below example is for filtering the data using a query. We will be using the Empl
 2. Provide test values and run and save the query (as EmpByCity).
 3. Create a variable using this query operation from the variable dialog or dragging and dropping Form widget and using Create new functionality.
 4. Select Layout and Configure Fields changing the display name and widget type if needed.
-5. Drag and drop a Data Table onto the canvas and bind it to the Database API Variable created when configuring Form. Your page will look like this in design mode Note: We have changed the name of the SAVE button to FILTER [![form_filter_design](../assets/form_filter_design.png)](../assets/form_filter_design.png)
-6. Run the app, enter the values and FILTER, see the content of the Data Table change. [![form_filter_run](../assets/form_filter_run.png)](../assets/form_filter_run.png)
+5. Drag and drop a Data Table onto the canvas and bind it to the Database API Variable created when configuring Form. Your page will look like this in design mode Note: We have changed the name of the SAVE button to FILTER [![form_filter_design](./assets/form_filter_design.png)](./assets/form_filter_design.png)
+6. Run the app, enter the values and FILTER, see the content of the Data Table change. [![form_filter_run](./assets/form_filter_run.png)](./assets/form_filter_run.png)
 
 [1\. Live & Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
 

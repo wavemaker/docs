@@ -10,7 +10,7 @@ This document will go through the steps in adding Pre and Post processing for ge
 # **Pre- requisites**
 
 - Create a WaveMaker Project (UserManagementApp)
-- [Import a database service](http://[supsystic-show-popup id=106]): (we are using the sample HRDB) [![](../assets/hrdb.png)](../assets/hrdb.png)
+- [Import a database service](http://[supsystic-show-popup id=106]): (we are using the sample HRDB) [![](./assets/hrdb.png)](./assets/hrdb.png)
 - [Set Security to On](http://[supsystic-show-popup id=111]). Use Database as Security Provider and Configure Security with user table of HRDB.
 
 # **Background**
@@ -25,14 +25,14 @@ There are 3 layers in the generated source code:
 
 The diagram below depicts the Layered Architecture mentioned above:
 
-[![](../assets/word-image-155.png)](../assets/word-image-155.png)
+[![](./assets/word-image-155.png)](./assets/word-image-155.png)
 
 The screenshots below show the folder structure of the generated code.
 
-1. Controllers are generated for entities, queries and procedures [![](../assets/word-image-156.png)](../assets/word-image-156.png)
-2. Data Access Objects (DAO) for each of the entities [![](../assets/word-image-157.png)](../assets/word-image-157.png)
-3. Service Interfaces and Service Implementations for entities, queries and procedures [![](../assets/word-image-158.png)](../assets/word-image-158.png)
-4. POJOs for each entity [![](../assets/word-image-159.png)](../assets/word-image-159.png)
+1. Controllers are generated for entities, queries and procedures [![](./assets/word-image-156.png)](./assets/word-image-156.png)
+2. Data Access Objects (DAO) for each of the entities [![](./assets/word-image-157.png)](./assets/word-image-157.png)
+3. Service Interfaces and Service Implementations for entities, queries and procedures [![](./assets/word-image-158.png)](./assets/word-image-158.png)
+4. POJOs for each entity [![](./assets/word-image-159.png)](./assets/word-image-159.png)
 
 Each of the layers performs its responsibilities and delegates the call to the next layer in the chain. For example, after the unmarshaling of the JSON data to model, and authorization checks, the REST layer delegates the call to the service layer etc.
 
@@ -50,11 +50,11 @@ To write a pre-post processing of service implement the following steps:
 
 Write a new service implementation class by extending the existing Service Impl
 
-- Create a service in user src/main/java folder of the project Example: UserManagementApp/src/main/java/com/hrdb/service/PreProcessUserService.java ![](../assets/word-image-160.png) Please refer the [documentation](/learn/app-development/services/3rd-party-libraries/#resource-files) to add the files in project.
+- Create a service in user src/main/java folder of the project Example: UserManagementApp/src/main/java/com/hrdb/service/PreProcessUserService.java ![](./assets/word-image-160.png) Please refer the [documentation](/learn/app-development/services/3rd-party-libraries/#resource-files) to add the files in project.
 
 ## Step 2: Extend service impl class and override method
 
-Extend the UserServiceImpl to preprocess the service ![](../assets/word-image-161.png)
+Extend the UserServiceImpl to preprocess the service ![](./assets/word-image-161.png)
 
 You can Override only those methods which need extra processing in one of the following ways
 
@@ -63,7 +63,7 @@ You can Override only those methods which need extra processing in one of the fo
 - Or throw exceptions it appropriate
 - You can also inject multiple other services into this new class & perform multiple actions in it, say inject SecurityService & perform additional security checks etc.
 
-In this example we have implemented the first way, i.e. delegate to superclass. A service is written to check if the login user is an admin and if the user is admin then the user details are fetched. Find below the code for both PreProcessService and PostProcessService classes Note : Please create these classes in an IDE and copy it in path specified in the following screenshot, [see here to know how to work with IDE](/learn/app-development/dev-integration/extending-application-using-ides/). ![](../assets/word-image-162a.png) **PreProcessUserService.java** _Imports_:
+In this example we have implemented the first way, i.e. delegate to superclass. A service is written to check if the login user is an admin and if the user is admin then the user details are fetched. Find below the code for both PreProcessService and PostProcessService classes Note : Please create these classes in an IDE and copy it in path specified in the following screenshot, [see here to know how to work with IDE](/learn/app-development/dev-integration/extending-application-using-ides/). ![](./assets/word-image-162a.png) **PreProcessUserService.java** _Imports_:
 
 import com.hrdb.User;
 import com.wavemaker.commons.WMRuntimeException;
@@ -101,7 +101,7 @@ public class PreProcessUserService extends UserServiceImpl {
     }
 }
 
-![](../assets/word-image-162.png)
+![](./assets/word-image-162.png)
 
 **PostProcessService.java** _Imports_:
 
@@ -116,18 +116,18 @@ public class PostProcessService {
     }
 }
 
-![](../assets/word-image-163.png)
+![](./assets/word-image-163.png)
 
 ## Step 3: Override the bean class
 
 - Let the REST layer use your implementation rather than using the default service impl by overriding the bean-class in the user-spring xml.
 - Now in **project-user-spring.xml** add the bean to declare the Service which user has defined.
 
-![](../assets/word-image-164.png)
+![](./assets/word-image-164.png)
 
-At run-time, data is fetched for admin: ![](../assets/word-image-165.png)
+At run-time, data is fetched for admin: ![](./assets/word-image-165.png)
 
-For other users an error is thrown as follows: ![](../assets/word-image-166.png)
+For other users an error is thrown as follows: ![](./assets/word-image-166.png)
 
 Java Service Use Cases
 

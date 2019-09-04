@@ -37,7 +37,7 @@ Pagination is dividing the set of data rows into discrete pages that will allow 
 
 **Messages** to be displayed at the time of data loading and in case no data is found can be configured.
 
-[![](../assets/cards_config-1.png)](../assets/cards_config-1.png)
+[![](./assets/cards_config-1.png)](./assets/cards_config-1.png)
 
 < Templates
 

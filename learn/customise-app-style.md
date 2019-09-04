@@ -10,7 +10,7 @@ The theme applied to an app defines the styling attributes of various Page Compo
 
 You can also use the _app.css_ file to set styling changes for a specific page component. **Note:** This is not a recommended course of action, use one of the above mentioned steps for theme change.
 
-1. Open _app.css_ file from the additional developer tools [![](../assets/design_app_css.png)](../assets/design_app_css.png)
+1. Open _app.css_ file from the additional developer tools [![](./assets/design_app_css.png)](./assets/design_app_css.png)
 2. Enter the css stylesheet. For example, to change background colors for header, footer, navbar, leftnav and rightnav use the following snippet:
     
     .wm-app .app-header {
@@ -29,7 +29,7 @@ You can also use the _app.css_ file to set styling changes for a specific page 
         background-color: black;
     }
     
-3. Run the app and see the changes [![](../assets/design_app.png)](../assets/design_app.png)
+3. Run the app and see the changes [![](./assets/design_app.png)](./assets/design_app.png)
 
 [Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 

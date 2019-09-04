@@ -25,10 +25,10 @@ Here we will see how to create a dynamic grid based on the metadata returned fro
         
         select \* from USER
         
-2. [Create a Database API variables](http://[supsystic-show-popup id=105]) for the queries created above. Call them, say DeptData and UserData **Note**: Make sure you have checked the **Request Data on Page Load** option for the variables created above. [![](../assets/dynamic_grid1.png)](../assets/dynamic_grid1.png)
+2. [Create a Database API variables](http://[supsystic-show-popup id=105]) for the queries created above. Call them, say DeptData and UserData **Note**: Make sure you have checked the **Request Data on Page Load** option for the variables created above. [![](./assets/dynamic_grid1.png)](./assets/dynamic_grid1.png)
 3. Drag and drop two **Button** widgets onto the canvas. Set the **Caption** property as _Show Department Data_ and _Show User Data_.
-4. Drag and drop a **Data Table** widget on the canvas. While configuring the Data Table, select the option “_The columns are dynamic_”. Also, please note that we have chosen the UserData as the Source Variable. Thus User data will be displayed initially. You can configure it to any variable of your choice. [![](../assets/dynamic_grid2.png)](../assets/dynamic_grid2.png)
-5. Rename the Data Table to “SVGrid” or any other valid name as per your scenario (this name is used in the JavaScript code later). [![](../assets/dynamic_grid3.png)](../assets/dynamic_grid3.png)
+4. Drag and drop a **Data Table** widget on the canvas. While configuring the Data Table, select the option “_The columns are dynamic_”. Also, please note that we have chosen the UserData as the Source Variable. Thus User data will be displayed initially. You can configure it to any variable of your choice. [![](./assets/dynamic_grid2.png)](./assets/dynamic_grid2.png)
+5. Rename the Data Table to “SVGrid” or any other valid name as per your scenario (this name is used in the JavaScript code later). [![](./assets/dynamic_grid3.png)](./assets/dynamic_grid3.png)
 6. For the buttons placed on the canvas, navigate to the Events tab from the properties panel and choose JavaScript as operation for the **on Click** event.
 7. Below is an example code snippet to change the grid dataset’s dynamically at runtime.
     
@@ -40,7 +40,7 @@ Here we will see how to create a dynamic grid based on the metadata returned fro
         Page.Widgets.SVGrid.dataset = Page.Variables.UserData.dataset;
     };
     
-    [![](../assets/dynamic_grid4.png)](../assets/dynamic_grid4.png)
+    [![](./assets/dynamic_grid4.png)](./assets/dynamic_grid4.png)
 
 Using the above implementation steps, you will be able to successfully change the Data Table at runtime using multiple services.
 

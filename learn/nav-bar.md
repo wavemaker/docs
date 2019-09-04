@@ -3,7 +3,7 @@ title: "Nav Bar"
 id: ""
 ---
 
-![](../assets/laptop.png)  **NOTE**: Nav Bar is available only for web responsive apps.
+![](./assets/laptop.png)  **NOTE**: Nav Bar is available only for web responsive apps.
 
 **Nav Bar Widget** can be used to create responsive navigation header for your website or application. These responsive navbars are initially collapsed on devices having small viewports like cell-phones but expand when user click the toggle button. However, it will be horizontal as normal on the medium and large devices like laptop or desktop.
 

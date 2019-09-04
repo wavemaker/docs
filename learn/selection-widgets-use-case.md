@@ -23,7 +23,7 @@ This document gives you the usage details of these three widgets. We will be:
 - We will be writing a query which takes city, state and zip as input parameters and returns the total number of employees from that place.
 - The input parameters of the query will be bound to the selected values of the widgets and the result to the text widget for display.
 
-[![](../assets/selection_run2.png)](../assets/selection_run2.png)
+[![](./assets/selection_run2.png)](./assets/selection_run2.png)
 
 1. Open/Create a project.
 2. [Import the default hrdb database](http://[supsystic-show-popup id=106]).
@@ -34,13 +34,13 @@ This document gives you the usage details of these three widgets. We will be:
     where city = :city and state = :state and zip = :zip
     group by city, state, zip
     
-    [![](../assets/selection_query.png)](../assets/selection_query.png)
-4. Drag and drop a Select, Radioset, Checkboxset and a Label widget onto the canvas. [![](../assets/selection_design.png)](../assets/selection_design.png)
-5. Create a [Database Crud Variable](http://[supsystic-show-popup id=105]) for the Employee entity [![](../assets/selection_lv.png)](../assets/selection_lv.png)
+    [![](./assets/selection_query.png)](./assets/selection_query.png)
+4. Drag and drop a Select, Radioset, Checkboxset and a Label widget onto the canvas. [![](./assets/selection_design.png)](./assets/selection_design.png)
+5. Create a [Database Crud Variable](http://[supsystic-show-popup id=105]) for the Employee entity [![](./assets/selection_lv.png)](./assets/selection_lv.png)
 6. Bind the widgets thus:
-    - **Select**: bind it to the Employee - Set the datafield property to city and display field also to city. The display field is the value that the user sees while the datafield is the value that is internally represents the display value. In this case both are the same. [![](../assets/selection_sel_prop.png)](../assets/selection_sel_prop.png)
-    - Repeat the above two steps for **Radioset** and **Checkboxset**. Choose the appropriate properties. [![](../assets/selection_check_prop.png)](../assets/selection_check_prop.png)       [![](../assets/selection_radio_prop.png)](../assets/selection_radio_prop.png)
-7. Create a [Database API Variable](http://[supsystic-show-popup id=105]) for the Query service [![](../assets/selection_sv.png)](../assets/selection_sv.png)
-8. Bind variable data city, state and zip to the selected values of Select, Checkboxset and Radioset widgets. [![](../assets/selection_SV_data.png)](../assets/selection_SV_data.png) [![](../assets/selection_SV_bind.png)](../assets/selection_SV_bind.png)
-9. Bind the caption property of the Label widget to the output from the query [![](../assets/selection_text.png)](../assets/selection_text.png)
+    - **Select**: bind it to the Employee - Set the datafield property to city and display field also to city. The display field is the value that the user sees while the datafield is the value that is internally represents the display value. In this case both are the same. [![](./assets/selection_sel_prop.png)](./assets/selection_sel_prop.png)
+    - Repeat the above two steps for **Radioset** and **Checkboxset**. Choose the appropriate properties. [![](./assets/selection_check_prop.png)](./assets/selection_check_prop.png)       [![](./assets/selection_radio_prop.png)](./assets/selection_radio_prop.png)
+7. Create a [Database API Variable](http://[supsystic-show-popup id=105]) for the Query service [![](./assets/selection_sv.png)](./assets/selection_sv.png)
+8. Bind variable data city, state and zip to the selected values of Select, Checkboxset and Radioset widgets. [![](./assets/selection_SV_data.png)](./assets/selection_SV_data.png) [![](./assets/selection_SV_bind.png)](./assets/selection_SV_bind.png)
+9. Bind the caption property of the Label widget to the output from the query [![](./assets/selection_text.png)](./assets/selection_text.png)
 10. Run the project and select the various values to see the output.

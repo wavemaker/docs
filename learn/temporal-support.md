@@ -38,7 +38,7 @@ Two types of APIs are generated for temporal tables:
     - a time different from the current time, or
     - for a specific time period.
 
-[![](../assets/dbtemp_apis.png)](../assets/dbtemp_apis.png)
+[![](./assets/dbtemp_apis.png)](./assets/dbtemp_apis.png)
 
 # Database Designer
 
@@ -48,14 +48,14 @@ Two types of APIs are generated for temporal tables:
     - Application Temporal, or
     - Bi Temporal
     
-    [![](../assets/dbtemp_tables.png)](../assets/dbtemp_tables.png)
+    [![](./assets/dbtemp_tables.png)](./assets/dbtemp_tables.png)
 - A column property, **Temporal Column Type**, specifies the temporal type and the period type. The values can be:
     - System Period Start
     - System Period End
     - Application Period State
     - Application Period end
-- A clock icon will be displayed against columns which are part of temporals. These fields will not be displayed in the query results. You can uncheck the Hidden property in order to view these fields in the UI. [![](../assets/dbtemp_columns.png)](../assets/dbtemp_columns.png)
-- By default system period columns and transaction id are marked as Database defined. The values need not be entered by the user, they will be auto-populated by the database. [![](../assets/dbtemp_datavalue.png)](../assets/dbtemp_datavalue.png)
+- A clock icon will be displayed against columns which are part of temporals. These fields will not be displayed in the query results. You can uncheck the Hidden property in order to view these fields in the UI. [![](./assets/dbtemp_columns.png)](./assets/dbtemp_columns.png)
+- By default system period columns and transaction id are marked as Database defined. The values need not be entered by the user, they will be auto-populated by the database. [![](./assets/dbtemp_datavalue.png)](./assets/dbtemp_datavalue.png)
 
 # Generated REST APIs
 
@@ -106,7 +106,7 @@ To achieve the above functionality, a **@TableTemporal** annotation is added, sp
 - SystemTemporal - Tables having System Temporal will be annotated with this annotation.
 - ApplicationTemporal - Tables having Application Temporal will be annotated with this annotation.
 
-[![](../assets/dbtemp_java.png)](../assets/dbtemp_java.png) Though there are no API changes in WMGenericDao, while processing request the above annotation will be used.
+[![](./assets/dbtemp_java.png)](./assets/dbtemp_java.png) Though there are no API changes in WMGenericDao, while processing request the above annotation will be used.
 
 # Limitations
 

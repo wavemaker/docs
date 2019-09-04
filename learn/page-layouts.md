@@ -15,11 +15,11 @@ An app is divided into multiple pages to segregate the functionality of the app
 
 A layout can be selected at the time of Page Creation or later from the Change Layout option on the Workspace Toolbar.
 
-[![](../assets/layout_change.png)](../assets/layout_change.png)
+[![](./assets/layout_change.png)](./assets/layout_change.png)
 
 A **Page Layout** has the following containers - a header, navigation bar, content, and footer. The content can have one, two or three columns. To change the layout of a page, simply click on the desired layout to see it take effect on the design canvas.
 
-[![](../assets/page_layout.png)](../assets/page_layout.png)
+[![](./assets/page_layout.png)](./assets/page_layout.png)
 
 There are four Page Layout options:
 
@@ -33,7 +33,7 @@ There are four Page Layout options:
 
 A typical page layout with header, footer, topnav, leftnav and rightnav has the following structure, as can be seen from the _Page Structure_ for the selected page:
 
-[![](../assets/page_layout_files.png)](../assets/page_layout_files.png)
+[![](./assets/page_layout_files.png)](./assets/page_layout_files.png)
 
 Widgets can be added to the _content._ The header, footer, top-nav, left and right panels are partial pages and can be customized using the edit button on each of the panels.
 
@@ -57,9 +57,9 @@ Navigation Action is a component you can add to your project and provide the fol
 - _Accordion_ – Navigates to the specified accordion of the specified page.
 - _Tab_ – Navigates to the specified tab of the specified page.
 
-Navigation in the application happens using a **Navigation Action**. Whenever a page is created a corresponding _gotoPage_ navigation action is generated or one can create the action manually. [![](../assets/call_var.png)](../assets/call_var.png) Navigation can be to a page or to a component like a tab or accordion pane on a page. Navigation Action can be invoked in two ways:
+Navigation in the application happens using a **Navigation Action**. Whenever a page is created a corresponding _gotoPage_ navigation action is generated or one can create the action manually. [![](./assets/call_var.png)](./assets/call_var.png) Navigation can be to a page or to a component like a tab or accordion pane on a page. Navigation Action can be invoked in two ways:
 
-1. Binding the Navigation Action to a Widget event - For example Button click – Use the button’s onClick event to trigger a Navigation Action to move to a new page or view. [![](../assets/call_event.png)](../assets/call_event.png)
+1. Binding the Navigation Action to a Widget event - For example Button click – Use the button’s onClick event to trigger a Navigation Action to move to a new page or view. [![](./assets/call_event.png)](./assets/call_event.png)
 2. Manually invoking the Navigation Action used when you want to validate the user action or state of the application before allowing the navigation. For example: Assume a scenario, to allow the navigation only when the user selects a subscriptionType, then the onClick event can trigger a JavaScript function:
     
     Page.subscribe = funtion($event, widget){
@@ -75,7 +75,7 @@ Navigation in the application happens using a **Navigation Action**. Whenever a 
 
 Events provide a way for you to define the actions that take place when something occurs in your application. There are many events that occur within a WaveMaker application. The most common events are user interface events, such as when a user clicks a button. Events are also triggered when an editor's value changes, and even when a** Variable** gets new data from the server. You have several options for specifying what will happen when a button is clicked.
 
-[![](../assets/event_types.png)](../assets/event_types.png) Here are a few examples:
+[![](./assets/event_types.png)](./assets/event_types.png) Here are a few examples:
 
 - **No Event**: Take no action.
 - **New Action:** For example, a help dialog automatically displays when a help button is clicked. Or the user clicks a _Next Page_ button, and the _Navigation Action_you select for your event loads a new page.

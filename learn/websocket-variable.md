@@ -7,14 +7,14 @@ id: ""
 
 # Variable Lifecycle
 
-[![socket_lifecycle](../assets/socket_lifecycle.png)](../assets/socket_lifecycle.png)
+[![socket_lifecycle](./assets/socket_lifecycle.png)](./assets/socket_lifecycle.png)
 
 # Variable Creation
 
 The **data source** for WebSocket Variables comes from a _Web Service_. We will see steps in creating a WebSocket variable here.
 
-1. Select Variable option from the Create Menu [![](../assets/var_sel.png)](../assets/var_sel.png)
-2. Click New Variable from the Variable Dialog [![](../assets/var_new.png)](../assets/var_new.png)
+1. Select Variable option from the Create Menu [![](./assets/var_sel.png)](./assets/var_sel.png)
+2. Click New Variable from the Variable Dialog [![](./assets/var_new.png)](./assets/var_new.png)
 3. This will initiate Create Variable wizard with the following steps:
     1. Since we are creating a variable to access WebSocket Web service APIs, select **Web Service **as the target action
     2. Select:

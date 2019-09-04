@@ -5,8 +5,8 @@ id: ""
 
 You can import external JAR files and use them in your apps, just like how you would use a Java Service written in your app. Following are the steps to incorporate an external jar file:
 
-1. From _Developer Utilities_, access **File Explorer** [![](../assets/ext_import.png)](../assets/ext_import.png)
-2. **Import Resource**, and select the **Lib** folder to place the jar file to be imported. As an example, we are using a [mail](../assets/mail.zip) file. [![](../assets/jar_folder.png)](../assets/jar_folder.png)
+1. From _Developer Utilities_, access **File Explorer** [![](./assets/ext_import.png)](./assets/ext_import.png)
+2. **Import Resource**, and select the **Lib** folder to place the jar file to be imported. As an example, we are using a [mail](./assets/mail.zip) file. [![](./assets/jar_folder.png)](./assets/jar_folder.png)
 3. Add the **import** statements for the required classes in your Java Service file. In this example, we have used the _mail.jar_, the package details of which can be found at [https://javamail.java.net/nonav/docs/api/](https://javamail.java.net/nonav/docs/api/). To use this jar file to send emails we will be using the following code in the Java Service file after adding the import statements for the required class files:
     
     import java.util.Properties;
@@ -60,8 +60,8 @@ You can import external JAR files and use them in your apps, just like how you w
             }
         }
     
-    [![](../assets/jar_java.png)](../assets/jar_java.png)
-4. To invoke the Java Service create a new Variable for Java Service: [![](../assets/jar_sv.png)](../assets/jar_sv.png)
+    [![](./assets/jar_java.png)](./assets/jar_java.png)
+4. To invoke the Java Service create a new Variable for Java Service: [![](./assets/jar_sv.png)](./assets/jar_sv.png)
 5. The _input parameters_ can be accessed from the **Data** tab and can be bound or set to static values
 6. The Java Service can be executed either
     - by setting the **Update data on input change** to true thus triggering whenever the input values change or

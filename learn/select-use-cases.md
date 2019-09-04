@@ -11,7 +11,7 @@ WaveMaker offers various ways to use the Select widget. This section elaborates 
 - [How to use database fields for select widget configuration](/learn/how-tos/configuring-select-widget-database-fields/)
 - [How to configure cascading select](/learn/how-tos/configuring-cascading-select/)
 
-[![](../assets/sel_dnd.png)](../assets/sel_dnd.png)
+[![](./assets/sel_dnd.png)](./assets/sel_dnd.png)
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

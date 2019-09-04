@@ -12,7 +12,7 @@ Many times you might get stuck with a situation wherein your app does not respon
 
 Log files can be accessed from the project workspace footer area. There are types of logs that are recorded - Server, and Application. These can be accessed from the [Developer Utilities](http://[supsystic-show-popup id=107]) menu for an application.
 
-[![](../assets/logs.png)](../assets/logs.png)
+[![](./assets/logs.png)](./assets/logs.png)
 
 ### Server Logs
 
@@ -20,7 +20,7 @@ Server logs consist WaveMaker designer backend logs while developing the app. Fo
 
 You can download the log files using the download icon in the far right corner of the logs window. This option is available for both server and application logs.
 
-[![](../assets/logs_server.png)](../assets/logs_server.png)
+[![](./assets/logs_server.png)](./assets/logs_server.png)
 
 # Debugging with HAR files
 
@@ -30,7 +30,7 @@ Sometimes, in order to debug a problem WaveMaker support team may ask you to sen
 2. From the Developer Tools panel select the **Network tab**.
 3. Select the option to **Preserve Log**
 4. Refresh the page
-5. Right-click on any Network call and choose the option _Copy_ -> _Copy all as HAR_ [![](../assets/logs_har.png)](../assets/logs_har.png)
+5. Right-click on any Network call and choose the option _Copy_ -> _Copy all as HAR_ [![](./assets/logs_har.png)](./assets/logs_har.png)
 6. Open any editor like Notepad and paste the content.
 7. Save the file and send it to the support team along with the name of the Service call that is failing.
 
@@ -66,8 +66,8 @@ In case you want to debug deployed apps or to send logs for the deployed app to 
 1. Open the [Apps Portal](http://[supsystic-show-popup id=122]) either
     - by selecting Manage Deployed Apps button from the Project Dashboard, or
     - by using the Manage App option under Deploy from the Project Workspace Main Menu and then selecting the app in question.
-2. Once you have opened the app, hover over the phase for which you want the logs, select DETAILS. [![](../assets/apps_portal_liveapp.png)](../assets/apps_portal_liveapp.png)
-3. Select the Logs tab and locate the download button to download the logs. [![](../assets/logs_deployed.png)](../assets/logs_deployed.png)
+2. Once you have opened the app, hover over the phase for which you want the logs, select DETAILS. [![](./assets/apps_portal_liveapp.png)](./assets/apps_portal_liveapp.png)
+3. Select the Logs tab and locate the download button to download the logs. [![](./assets/logs_deployed.png)](./assets/logs_deployed.png)
 
 < Version Control
 

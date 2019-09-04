@@ -10,4 +10,4 @@ Steps to download the JDBC Driver jar for SQL Server
     - From this site you can download JDBC driver 4.2. You can use JDBC driver 6.0, 6.1 or 6.2, ensure that you import **sqljdbc42.jar** or any Java ver 8 compatible jar file
 2. Select language and click on **Download**
 3. Select and download _sqljdbc\_4.2.8112.100\_enu.tar.gz_
-4. Once the download is complete, extract the downloaded file. Select and upload “sqljdbc42.jar” located : \[your extract folder\] \\sqljdbc\_4.2.8112.100\_enu\\sqljdbc\_4.2\\enu\\jre8 **NOTE**: It is recommended to use **sqljdbc42.jar** or any Java ver 8 compatible jar file. [![](../assets/jdbc_driver_step4.png)](../assets/jdbc_driver_step4.png)
+4. Once the download is complete, extract the downloaded file. Select and upload “sqljdbc42.jar” located : \[your extract folder\] \\sqljdbc\_4.2.8112.100\_enu\\sqljdbc\_4.2\\enu\\jre8 **NOTE**: It is recommended to use **sqljdbc42.jar** or any Java ver 8 compatible jar file. [![](./assets/jdbc_driver_step4.png)](./assets/jdbc_driver_step4.png)

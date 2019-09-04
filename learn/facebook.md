@@ -20,7 +20,7 @@ In order to use the **Facebook** OAuth prefab, please follow the below steps: Di
 7. Select **Website** as a platform to get started.
 8. Enter a **Name** to your app and click **Create New Facebook App ID**. Create a New App ID window is displayed.
 9. Select a category from **Choose a Category** drop-down list and click **Create App ID**. Tell us about your website window is displayed.
-10. Enter a sample valid URL in the **Site URL** field and click **Next**. Your App Dashboard page is displayed. **Note:** Make a note of the **App ID** and **App Secret**. [![](../assets/Facebook_reg9.png)](../assets/Facebook_reg9.png)
+10. Enter a sample valid URL in the **Site URL** field and click **Next**. Your App Dashboard page is displayed. **Note:** Make a note of the **App ID** and **App Secret**. [![](./assets/Facebook_reg9.png)](./assets/Facebook_reg9.png)
 
 # Usage Example
 
@@ -31,15 +31,15 @@ In order to use the **Facebook** OAuth prefab, please follow the below steps: Di
     - _auto_ will in the run mode after initialization of the Prefab the app would automatically be navigated to the OAuth Authorization page
     - _manual_ (default mode) will invoke the OAuth Authorization page on click of the login button
     
-    [![](../assets/Facebook_app1.png)](../assets/Facebook_app1.png)
-4. In the Properties Panel, under **SERVER PROPERTIES**, enter the **Appid, Page, Scope** and **Secret** in their respective fields. [![](../assets/Facebook_app2.png)](../assets/Facebook_app2.png)
-5. Save the application and Run the application. Note the generated redirect URL. You might have to click REMOVE TOOLBAR to get the URL. Copy the redirect uri till the _callback_ part only. [![](../assets/Facebook_app_run1.png)](../assets/Facebook_app_run1.png)
+    [![](./assets/Facebook_app1.png)](./assets/Facebook_app1.png)
+4. In the Properties Panel, under **SERVER PROPERTIES**, enter the **Appid, Page, Scope** and **Secret** in their respective fields. [![](./assets/Facebook_app2.png)](./assets/Facebook_app2.png)
+5. Save the application and Run the application. Note the generated redirect URL. You might have to click REMOVE TOOLBAR to get the URL. Copy the redirect uri till the _callback_ part only. [![](./assets/Facebook_app_run1.png)](./assets/Facebook_app_run1.png)
 6. Go to Facebook Developers – your project page and click on Settings on the left side of the Dashboard page.
-7. Enter this redirect URl in the Site URL field and click Save Changes. [![](../assets/Facebook_reg10.png)](../assets/Facebook_reg10.png)
-8. Go back to WaveMaker application and again Run the app. You can now see the WaveMaker login page. [![](../assets/Facebook_app_run2.png)](../assets/Facebook_app_run2.png)
+7. Enter this redirect URl in the Site URL field and click Save Changes. [![](./assets/Facebook_reg10.png)](./assets/Facebook_reg10.png)
+8. Go back to WaveMaker application and again Run the app. You can now see the WaveMaker login page. [![](./assets/Facebook_app_run2.png)](./assets/Facebook_app_run2.png)
 9. Click on the Login with Facebook button to be redirected to Facebook Authorisation page. This will the first page, in case you have set the Login Mode to auto
 10. To use the Facebook API in your application, import the corresponding [REST Web Service](/learn/web-services/#rest) into WaveMaker by giving a valid URL with the access token. Test and Import.
-11. You can see the variables imported from the service in the Left panel and these are available for binding and usage within your app. ![Facebook_serviceVar](../assets/Facebook_serviceVar.png)
+11. You can see the variables imported from the service in the Left panel and these are available for binding and usage within your app. ![Facebook_serviceVar](./assets/Facebook_serviceVar.png)
 
 [9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
 

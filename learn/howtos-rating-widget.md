@@ -13,14 +13,14 @@ You can use the Rating widget to capture the input from the user as Widgets.rati
     3. **Value** under **Dataset** to comma separated string containing the label values (they will be mapped to rating value in ascending order)
     4. Select **Show Captions** property, this will display the value against the selected rating. It unchecked user will see the value on hover over the rating.
     
-    [![rating_usage_props](../assets/rating_usage_props.png)](../assets/rating_usage_props.png)
+    [![rating_usage_props](./assets/rating_usage_props.png)](./assets/rating_usage_props.png)
 3. From **Style** tab,  you can set the Icon color.
 
-[![rating_usage_style](../assets/rating_usage_style.png)](../assets/rating_usage_style.png)
+[![rating_usage_style](./assets/rating_usage_style.png)](./assets/rating_usage_style.png)
 
 1. Run the app
 
-[![rating_usage_run](../assets/rating_usage_run.png)](../assets/rating_usage_run.png)Rating Widget using Static VariableData for the Rating widget can come from a Variable - Static, Live etc.. In this example we will see how to use a Static Variable as the data source for a Rating Widget. The process is same for all types of Variables.
+[![rating_usage_run](./assets/rating_usage_run.png)](./assets/rating_usage_run.png)Rating Widget using Static VariableData for the Rating widget can come from a Variable - Static, Live etc.. In this example we will see how to use a Static Variable as the data source for a Rating Widget. The process is same for all types of Variables.
 
 1. Create a Static Variable of Entry Type, with Is List option selected and using the following JSON structure:
     
@@ -47,15 +47,15 @@ You can use the Rating widget to capture the input from the user as Widgets.rati
       }
     \]
     
-    [![rating_usage_statvar](../assets/rating_usage_statvar.png)](../assets/rating_usage_statvar.png)
+    [![rating_usage_statvar](./assets/rating_usage_statvar.png)](./assets/rating_usage_statvar.png)
 2. Drag and drop a Rating widget
-3. Bind the Value Dataset property to the Static Variable created above and set the Data and Display Fields to the respective fields within the Variable. [![rating_usage_statvar_bind](../assets/rating_usage_statvar_bind.png)](../assets/rating_usage_statvar_bind.png)
+3. Bind the Value Dataset property to the Static Variable created above and set the Data and Display Fields to the respective fields within the Variable. [![rating_usage_statvar_bind](./assets/rating_usage_statvar_bind.png)](./assets/rating_usage_statvar_bind.png)
 4. Set the properties for Default Value, Maximum Value and Show captions according to your app requirements.
 5. Run the app.
 
-[![rating_usage_run](../assets/rating_usage_run.png)](../assets/rating_usage_run.png)Changing Widget Style InteractivelyYou can change the Rating widget style at run time, using the **Change** event. Using the example from the previous section with Static Variable, here we will see how.
+[![rating_usage_run](./assets/rating_usage_run.png)](./assets/rating_usage_run.png)Changing Widget Style InteractivelyYou can change the Rating widget style at run time, using the **Change** event. Using the example from the previous section with Static Variable, here we will see how.
 
-1. Add **Javascript** to the **Change** event of the Rating widget. [![rating_usage_statvar_event](../assets/rating_usage_statvar_event.png)](../assets/rating_usage_statvar_event.png)
+1. Add **Javascript** to the **Change** event of the Rating widget. [![rating_usage_statvar_event](./assets/rating_usage_statvar_event.png)](./assets/rating_usage_statvar_event.png)
 2. Enter the following script. This script captures the rating value as changed by the user, and changes the color of the widget appropriately. **Note**: Use the rating widget name from your app in place of rating1 in the following code.
     
         $scope.rating1Change = function($event, $isolateScope) {
@@ -74,4 +74,4 @@ You can use the Rating widget to capture the input from the user as Widgets.rati
     
 3. Run the app
 
-[![rating_usage_run2](../assets/rating_usage_run2.png)](../assets/rating_usage_run2.png)
+[![rating_usage_run2](./assets/rating_usage_run2.png)](./assets/rating_usage_run2.png)

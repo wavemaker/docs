@@ -23,7 +23,7 @@ It is also recommended that regular and frequent backups be taken of the host ma
 While launching WaveMaker, if setup fails:
 
 1. Take a screenshot of the installation failure message.
-2. From the left panel, click Support Center and Download Logs. [![](../assets/WME_trouble.png)](../assets/WME_trouble.png)
+2. From the left panel, click Support Center and Download Logs. [![](./assets/WME_trouble.png)](./assets/WME_trouble.png)
 3. Send the screenshot of the failure message along with the downloaded log file to [WaveMaker Support](mailto: support@wavemaker.com)
 
 ### Troubleshooting WaveMaker Enterprise VM after Setup
@@ -36,7 +36,7 @@ Checking your WaveMaker Enterprise Status:
 2. Login to Setup Portal with your admin credentials (provided at the time of admin user creation), to check your WME platform status.
 3. After you log in, you can see the status of all the services in Running state.
 
-[![](../assets/WME_trouble1.png)](../assets/WME_trouble1.png)
+[![](./assets/WME_trouble1.png)](./assets/WME_trouble1.png)
 
 ## Restarting Services
 
@@ -53,7 +53,7 @@ In case you need to restart WME platform instance, follow the steps given below:
 
 1. Take a backup of the platform instance. ([refer here](#back-up))
 2. Access the WaveMaker Enterprise Setup Portal at `http://[ip-of-vm]:8080`.
-3. Login to Setup Portal with your admin credentials (provided at the time of admin user creation) [![](../assets/WME_trouble1.png)](../assets/WME_trouble1.png)
+3. Login to Setup Portal with your admin credentials (provided at the time of admin user creation) [![](./assets/WME_trouble1.png)](./assets/WME_trouble1.png)
 4. Click the Stop button to shut down WME.
 5. Wait until the status of all services has changed to Stopped and the Start button is visible.
 6. Now you can restart the platform instance.
@@ -72,7 +72,7 @@ Post the launch of WME, in case you run into problems pertaining to running and 
 - From the logs tab, you can choose the service causing the error and download the corresponding logs.
 - You can contact WaveMaker Support and send them the requested log file.
 
-[![](../assets/WME_logs2.png)](../assets/WME_logs2.png)
+[![](./assets/WME_logs2.png)](./assets/WME_logs2.png)
 
 Contents
 

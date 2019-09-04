@@ -13,7 +13,7 @@ From WaveMaker's API Designer, one can view the various Database and Java Servic
 2. test the APIs using the test tab, without having to access URL;
 3. and in case of Java Services customize the APIs.
 
-[![](../assets/API_Access.png)](../assets/API_Access.png)
+[![](./assets/API_Access.png)](./assets/API_Access.png)
 
 ### Application APIs
 
@@ -23,7 +23,7 @@ These APIs are generated for the services imported/written in the current applic
 
 Core APIs are APIs generated from the Database, Java and Security Services.
 
-[![](../assets/API_DB.png)](../assets/API_DB.png)
+[![](./assets/API_DB.png)](./assets/API_DB.png)
 
 < Backend Services Overview
 

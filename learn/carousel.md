@@ -10,7 +10,7 @@ WaveMaker provides you with two types of Carousel:
 1. **Dynamic** where the Carousel content will take the form of an array or any repeated list like a dataset. The number of items displayed within the carousel will depend upon the number of rows in the bound variable. **Carousel Template** a subWidget of Carousel holds the slide content.
 2. **Static** where the Carousel content can be bound to individual image resources. **Carousel Content** a subWidget of Carousel holds the slide content. By default, Carousel comes with three carousel contents each with a picture widget. You can add more using the **Add Carousel** action property.
 
-[![](../assets/carousel_types.png)](../assets/carousel_types.png)
+[![](./assets/carousel_types.png)](./assets/carousel_types.png)
 
 # Properties
 

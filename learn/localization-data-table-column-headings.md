@@ -17,9 +17,9 @@ This capability can be extended to localize the column headings of a Data Table.
         - add language using the Manage Language option, if not added already
         - add the column names as message key in multiple languages.
         
-        [![](../assets/locale_dt1.png)](../assets/locale_dt1.png)
-    2. Open the Advanced Settings of the data table widget and navigate to the Columns tab. [![](../assets/locale_dt2.png)](../assets/locale_dt2.png)
-    3. Bind the respective message keys to the "Title" property of the columns. [![](../assets/locale_dt3.png)](../assets/locale_dt3.png)
+        [![](./assets/locale_dt1.png)](./assets/locale_dt1.png)
+    2. Open the Advanced Settings of the data table widget and navigate to the Columns tab. [![](./assets/locale_dt2.png)](./assets/locale_dt2.png)
+    3. Bind the respective message keys to the "Title" property of the columns. [![](./assets/locale_dt3.png)](./assets/locale_dt3.png)
     4. Save and Preview the application. At runtime, on changing the locale from the Select Locale widget, the column headers for the data table widget will display the respective localized values.
 
 [Localization Cases](/learn/app-development/ui-design/use-cases-ui-design/)

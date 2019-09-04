@@ -23,11 +23,11 @@ In this document the following concepts are elaborated upon:
 
 To **change the theme** of the page, simply click on the **Themes** option from the _Workspace Toolbar:_
 
-[![](../assets/theme_change.png)](../assets/theme_change.png)
+[![](./assets/theme_change.png)](./assets/theme_change.png)
 
 This will open a Theme dialog with a list of available themes to choose from.
 
-[![](../assets/Themes.png)](../assets/Themes.png) **NOTE**: WaveMaker provides a few default themes that can be applied to your apps. From time to time, these Themes might undergo changes and you might be asked to update the theme when you open the project. **Remember** that the updates will re-write any changes you made directly to the CSS styles of the corresponding theme.
+[![](./assets/Themes.png)](./assets/Themes.png) **NOTE**: WaveMaker provides a few default themes that can be applied to your apps. From time to time, these Themes might undergo changes and you might be asked to update the theme when you open the project. **Remember** that the updates will re-write any changes you made directly to the CSS styles of the corresponding theme.
 
 ## Importing Theme
 
@@ -66,7 +66,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. Creatio
      npm install
     
     Follow the instructions given [at the GIT repository](https://github.com/wavemaker/grunt-wavemaker-theme)
-5. After setting up the repository, under the **src** folder you will find the following files that can be modified as per your needs: [![theme-web](../assets/theme-web.png)](../assets/theme-web.png) **NOTE**: Themes for Web and Mobile(Android/iOS) apps are different, use the appropriate theme source file to generate the theme bundle.
+5. After setting up the repository, under the **src** folder you will find the following files that can be modified as per your needs: [![theme-web](./assets/theme-web.png)](./assets/theme-web.png) **NOTE**: Themes for Web and Mobile(Android/iOS) apps are different, use the appropriate theme source file to generate the theme bundle.
 
 **Directory Structure**
 
@@ -118,7 +118,7 @@ Bootswatch provides bootstrap themes that can be integrated into your WaveMaker 
 1. Select a theme from [Bootswatch](https://bootswatch.com/3/).
 2. Download the _variables.less_ and _bootswatch.less_ files for the selected theme.
 3. After [setting up theme repository](#create-theme), navigate to the **bootswatch** folder.
-4. Copy _bootswatch.less_ and _variables_.less files to  _grunt-wavemaker-theme/src/bootswatch_ folder. [![bootswatch_folder](../assets/bootswatch_folder.png)](../assets/bootswatch_folder.png) **NOTE**: The variable files downloaded from bootswatch will fail if placed in any other theme folders like mobile or web.
+4. Copy _bootswatch.less_ and _variables_.less files to  _grunt-wavemaker-theme/src/bootswatch_ folder. [![bootswatch_folder](./assets/bootswatch_folder.png)](./assets/bootswatch_folder.png) **NOTE**: The variable files downloaded from bootswatch will fail if placed in any other theme folders like mobile or web.
 5. You can further customize the theme in style.less specific to the header, footer, leftnav etc. [See here for details](#create-theme-web).
 6. Replace the theme.png with your image in the bootswatch folder
 7. Update the .wm-properties to [provide theme information](#dir-struct)
@@ -130,9 +130,9 @@ Bootswatch provides bootstrap themes that can be integrated into your WaveMaker 
 
 Mobile Apps come in two flavors - Android and iOS. The theme renders differently on these platforms and as such the theme needs to be packaged differently.
 
-For example, below is the rendering of a Live Form within List on Android and [![theme-diff-android](../assets/theme-diff-android.png)](../assets/theme-diff-android.png) iOS device:
+For example, below is the rendering of a Live Form within List on Android and [![theme-diff-android](./assets/theme-diff-android.png)](./assets/theme-diff-android.png) iOS device:
 
-[![theme-diff-ios](../assets/theme-diff-ios.png)](../assets/theme-diff-ios.png)
+[![theme-diff-ios](./assets/theme-diff-ios.png)](./assets/theme-diff-ios.png)
 
 As mentioned in the [previous section](/learn/app-development/ui-design/themes/#create-theme), WaveMaker provides two folders for Mobile Themes - Android and iOS. The structure is replica of that for Web with the content tailored for the specific platform. When building theme for Mobile Apps, make sure that you use the appropriate files and make the same changes to both sets. DO NOT replicate the files, make changes where needed.
 
@@ -155,7 +155,7 @@ You can test the custom theme, before import, by copying the _style.css_ file di
 - These changes are temporary, for permanent change you have to import the Theme.
 - If you make changes to the default theme _style.css_ file and do not import it as your custom theme, updating the theme will erase those changes.
 
-[![](../assets/theme-css-folder.png)](../assets/theme-css-folder.png)
+[![](./assets/theme-css-folder.png)](./assets/theme-css-folder.png)
 
 ## Publishing a Custom Theme
 
@@ -164,14 +164,14 @@ You can test the custom theme, before import, by copying the _style.css_ file di
 In order to make a custom theme available to developers across the enterprise, it needs to be published. Following are the steps to publish a Theme:
 
 1. Once you have created a custom theme, import and test it in your application.
-2. From the **Project Configurations**, under **Export** select the **Theme to EDN** option. [![](../assets/Theme_publish.png)](../assets/Theme_publish.png)
+2. From the **Project Configurations**, under **Export** select the **Theme to EDN** option. [![](./assets/Theme_publish.png)](./assets/Theme_publish.png)
 3. Theme publishing wizard with three steps will appear:
     
     1. 1. **Information** regarding the **Category**, **Version**, **Description** and **Change Log**.
         2. **Configuration** allows you to add **Tags** for search and tracking purposes and also includes the **Metadata** populated automatically.
         3. **Summary** for a review before Publishing.
     
-    [![](../assets/Theme_publish_dialog.png)](../assets/Theme_publish_dialog.png)
+    [![](./assets/Theme_publish_dialog.png)](./assets/Theme_publish_dialog.png)
 4. Note that the current Theme applied to the application will be selected for Publishing.
 5. Once the EDN Admin approves the Theme, the same will be available in the Artifacts listing and the Themes dialog for other developers to select and apply.
 

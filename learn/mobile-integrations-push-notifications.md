@@ -11,14 +11,14 @@ In this post, we will outline how to interact with Google Cloud Messaging (GCM) 
 
 ### Step 1: Register your app with GCM Server and get Sender Id.
 
-1. Go to [Google Developer Console](https://developers.google.com/mobile/add?platform=android&cntapi=gcm&cnturl=https:%2F%2Fdevelopers.google.com%2Fcloud-messaging%2Fandroid%2Fclient&cntlbl=Continue%20Adding%20GCM%20Support&%3Fconfigured%3Dtrue) and register your app name and app package(optional) click on continue. [![GCM_app_register](../assets/GCM_app_register-1024x544.png)](../assets/GCM_app_register.png)
-2. You will get API Key ( needed when you push a message) and Sender Id as below and keep this data copied and safe which we need in further steps. [![GCM_app_API](../assets/GCM_app_API-1024x651.png)](../assets/GCM_app_API.png)
+1. Go to [Google Developer Console](https://developers.google.com/mobile/add?platform=android&cntapi=gcm&cnturl=https:%2F%2Fdevelopers.google.com%2Fcloud-messaging%2Fandroid%2Fclient&cntlbl=Continue%20Adding%20GCM%20Support&%3Fconfigured%3Dtrue) and register your app name and app package(optional) click on continue. [![GCM_app_register](./assets/GCM_app_register-1024x544.png)](./assets/GCM_app_register.png)
+2. You will get API Key ( needed when you push a message) and Sender Id as below and keep this data copied and safe which we need in further steps. [![GCM_app_API](./assets/GCM_app_API-1024x651.png)](./assets/GCM_app_API.png)
 
 ### Step 2: Create a mobile app with the SenderId from Step 1 and configure it to receive notifications
 
-1. Create a Hybrid Mobile project in WaveMaker using the same app name that you registered with GCM server in the previous step. **Note**: As the project name containing special characters is not allowed in Google Developer Console, create the project in WaveMaker without any special character including ‘\_’. [![Selecting_mobile_app](../assets/Selecting_mobile_app.png)](../assets/Selecting_mobile_app.png)
-2. Import the [gcm.server.jar](http://www.java2s.com/Code/Jar/g/gcm.htm) and [json-simple-1.1.1.jar](http://www.java2s.com/Code/Jar/j/json-simple.htm) files into your project using Import -> Jar option from Main Menu. [![JAR_import](../assets/JAR_import.png)](../assets/JAR_import.png) [![GCM_imp_res](../assets/GCM_imp_res.png)](../assets/GCM_imp_res.png)
-3. Create a Java Service for push notification [![JS_Create](../assets/JS_Create.png)](../assets/JS_Create.png)
+1. Create a Hybrid Mobile project in WaveMaker using the same app name that you registered with GCM server in the previous step. **Note**: As the project name containing special characters is not allowed in Google Developer Console, create the project in WaveMaker without any special character including ‘\_’. [![Selecting_mobile_app](./assets/Selecting_mobile_app.png)](./assets/Selecting_mobile_app.png)
+2. Import the [gcm.server.jar](http://www.java2s.com/Code/Jar/g/gcm.htm) and [json-simple-1.1.1.jar](http://www.java2s.com/Code/Jar/j/json-simple.htm) files into your project using Import -> Jar option from Main Menu. [![JAR_import](./assets/JAR_import.png)](./assets/JAR_import.png) [![GCM_imp_res](./assets/GCM_imp_res.png)](./assets/GCM_imp_res.png)
+3. Create a Java Service for push notification [![JS_Create](./assets/JS_Create.png)](./assets/JS_Create.png)
 
 using the following code:
 
@@ -72,7 +72,7 @@ public class PushService {
 	}
 }
 
-1. In _app.js_, include the below code for registering the push notification: For more details, refer to [push API](https://github.com/phonegap/phonegap-plugin-push/blob/master/docs/API.md) [![GCM_appjs](../assets/GCM_appjs.png)](../assets/GCM_appjs.png)
+1. In _app.js_, include the below code for registering the push notification: For more details, refer to [push API](https://github.com/phonegap/phonegap-plugin-push/blob/master/docs/API.md) [![GCM_appjs](./assets/GCM_appjs.png)](./assets/GCM_appjs.png)
 
 //push notification initialization and registration. 
 	if (!$window.PushNotification) {
@@ -113,8 +113,8 @@ public class PushService {
     	console.log('error');
 	}, 'push-1');
 
-- To invoke the service create a push notification service variable. [![GCM_push_var](../assets/GCM_push_var.png)](../assets/GCM_push_var.png)
-- The GCM Push Notification service requires API Key, sender ID, deviceID (or array of deviceId’s). [![GCM_push_vardata](../assets/GCM_push_vardata.png)](../assets/GCM_push_vardata.png)
+- To invoke the service create a push notification service variable. [![GCM_push_var](./assets/GCM_push_var.png)](./assets/GCM_push_var.png)
+- The GCM Push Notification service requires API Key, sender ID, deviceID (or array of deviceId’s). [![GCM_push_vardata](./assets/GCM_push_vardata.png)](./assets/GCM_push_vardata.png)
 
  
 
@@ -124,7 +124,7 @@ Install Cordova on your machines and once you have it ready then do following fo
 
 1. Export Cordova Zip from WaveMaker
 2. Unzip it and you see a _config.xml_ and two folders
-3. Specify the plugin in config.xml [![GCM_plugin](../assets/GCM_plugin.png)](../assets/GCM_plugin.png)
+3. Specify the plugin in config.xml [![GCM_plugin](./assets/GCM_plugin.png)](./assets/GCM_plugin.png)
 4. Go to _cmd_ line and navigate to the unzipped folder
 5. The run the below commands in sequence
     

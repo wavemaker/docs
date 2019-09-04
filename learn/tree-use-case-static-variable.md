@@ -42,8 +42,8 @@ We will build a tree using a simple static structure
       }
     \]
     
-    In this code, we are specifying the node structure - the _label_ on each node, _icon_ to be displayed at each node and any _child-level nodes_. Icons can be [halflings from glyphicons](https://getbootstrap.com/docs/3.3/components/) or [font awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons. **Note**: If you follow this structure, the label, icon, link, and children tags are picked automatically. If you are using different tag names, then you need to specify them while binding. [![](../assets/tree_statvar.png)](../assets/tree_statvar.png)
-4. Next, bind the **Dataset ->** **Value** property of the tree widget to the dataset under the model variable created in the previous step (staticTree -> dataSet). You can see the preview on the canvas. [![](../assets/tree_design.png)](../assets/tree_design.png)
+    In this code, we are specifying the node structure - the _label_ on each node, _icon_ to be displayed at each node and any _child-level nodes_. Icons can be [halflings from glyphicons](https://getbootstrap.com/docs/3.3/components/) or [font awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons. **Note**: If you follow this structure, the label, icon, link, and children tags are picked automatically. If you are using different tag names, then you need to specify them while binding. [![](./assets/tree_statvar.png)](./assets/tree_statvar.png)
+4. Next, bind the **Dataset ->** **Value** property of the tree widget to the dataset under the model variable created in the previous step (staticTree -> dataSet). You can see the preview on the canvas. [![](./assets/tree_design.png)](./assets/tree_design.png)
 5. Run the application and see the menu in action. Click on the + before nodes, here item2, to expand the node.
 
 [Tree Widget Cases](/learn/app-development/widgets/basic/tree/)

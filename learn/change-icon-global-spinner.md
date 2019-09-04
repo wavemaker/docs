@@ -9,7 +9,7 @@ The icon that is displayed at the time of page load, data load etc., is defined 
 2. Add the icon class property to the "wm-spinner" tag
 3. Save the index.html page and run the application.
 
-[![](../assets/spin_icon.png)](../assets/spin_icon.png)
+[![](./assets/spin_icon.png)](./assets/spin_icon.png)
 
 [Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 

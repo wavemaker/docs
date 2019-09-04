@@ -22,8 +22,8 @@ The **data source** for these Variables comes from a _Database_. There are two w
 
 Here we list the steps to create a Variable for Database CRUD operations:
 
-1. Select the Variable option from the Variable Workspace Toolbar. [![](../assets/var_sel.png)](../assets/var_sel.png)
-2. Click New Variable from the Variable Dialog [![](../assets/var_new.png?v=20)](../assets/var_new.png?v=20)
+1. Select the Variable option from the Variable Workspace Toolbar. [![](./assets/var_sel.png)](./assets/var_sel.png)
+2. Click New Variable from the Variable Dialog [![](./assets/var_new.png?v=20)](./assets/var_new.png?v=20)
 3. This will initiate the Create Variable wizard with the following steps:
     
     1. Since we are creating a variable to perform database CRUD operations, select **Database CRUD** as the target operation
@@ -35,8 +35,8 @@ Here we list the steps to create a Variable for Database CRUD operations:
         - **Owner** - the scope of the Variable being created. By default it is set to Page, you can change it to Application if you want this variable to be available across the app
     3. Click **Done** to complete the variable creation process
     
-    [![](../assets/dbcrud_varcr_direct.png)](../assets/dbcrud_varcr_direct.png)
-4. You will be directed to the Variables page, with the new variable listed. [![](../assets/dbcrud_varcr_direct_var.png)](../assets/dbcrud_varcr_direct_var.png) As you can see:
+    [![](./assets/dbcrud_varcr_direct.png)](./assets/dbcrud_varcr_direct.png)
+4. You will be directed to the Variables page, with the new variable listed. [![](./assets/dbcrud_varcr_direct_var.png)](./assets/dbcrud_varcr_direct_var.png) As you can see:
     1. a **Database CRUD** Variable for selected operation is created,
     2. with the selected database and table as target
     3. the **Properties tab** contains all the properties like _server options_, _behavior_ and _spinner_ behavior. [Know more about properties](#properties).
@@ -51,7 +51,7 @@ We will show the steps in creating Variable using the Data Table widget. The ste
 1. Drag and drop a **Data Table **onto the canvas
 2. Set **Retrieve Data** from _Service_ **Note**: If you have not imported any database or web service in your application, you will be prompted to import the same.
 3. Once you have imported the data source, choose _Database CRUD_ from the list of **service type**
-4. Set the **service** to the desired _database_ and then select a **Table/Entity** from the list of entities of tables within the selected database. [![](../assets/dbcrud_varcr_dt.png)](../assets/dbcrud_varcr_dt.png)
+4. Set the **service** to the desired _database_ and then select a **Table/Entity** from the list of entities of tables within the selected database. [![](./assets/dbcrud_varcr_dt.png)](./assets/dbcrud_varcr_dt.png)
 5. Once you have selected the service type and the service you can:
     - change the **name of the variable** generated
     - **Data Configuration** includes:
@@ -60,7 +60,7 @@ We will show the steps in creating Variable using the Data Table widget. The ste
         - **Update data on input change** will ensure that the data content of the variable is refreshed when the value of the input parameter changes
         - **Request data on page load** will ensure that the data is fetched when the page rendering the variable data is loaded
 6. This will be followed by steps to select the Data Table layout and columns to be displayed.
-7. You can see the variable listed Variables dialog [![](../assets/dbcrud_varcr_dt_var.png)](../assets/dbcrud_varcr_dt_var.png) As you can see:
+7. You can see the variable listed Variables dialog [![](./assets/dbcrud_varcr_dt_var.png)](./assets/dbcrud_varcr_dt_var.png) As you can see:
     1. a **Database CRUD** Variable for Read operation is created,
     2. which is a **page scoped variable,**
     3. with the selected database and table as target

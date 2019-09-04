@@ -31,15 +31,15 @@ Here we show a simple use case for login using Google credentials. [For validati
     - _auto_ will in the run mode after initialization of the Prefab the app would automatically be navigated to the OAuth Authorization page
     - _manual_ (default mode) will invoke the OAuth Authorization page on click of the login button
     
-    [![](../assets/Google_design1.png)](../assets/Google_design1.png)
-- From the Properties Panel, enter the Client ID and Client Secret in the **Server Properties**  panel in their respective fields. [![](../assets/Google_props1.png)](../assets/Google_props1.png)
+    [![](./assets/Google_design1.png)](./assets/Google_design1.png)
+- From the Properties Panel, enter the Client ID and Client Secret in the **Server Properties**  panel in their respective fields. [![](./assets/Google_props1.png)](./assets/Google_props1.png)
 - Save the application and Run the application. Note the **redirect URL**.
-- After you run the application, redirect URL is generated. You might have to click REMOVE TOOLBAR to get the URL. Copy the redirect uri till the _callback_ part only. [![](../assets/Google_run.png)](../assets/Google_run.png)
+- After you run the application, redirect URL is generated. You might have to click REMOVE TOOLBAR to get the URL. Copy the redirect uri till the _callback_ part only. [![](./assets/Google_run.png)](./assets/Google_run.png)
 - Go to **Google Developers Console** – your project page and click on Edit Settings. Enter this redirect Url in the Authorized redirect URIs field and click Update.
-- Go back to WaveMaker application and again Run the app. You can now see the application. You will see the WaveMaker login screen if you have set the Login Mode as manual: [![](../assets/Google_run_manual.png)](../assets/Google_run_manual.png) Click the Login with Google button and you will be directed to the Google login page. This will be the first screen in case you have set the Login Mode to auto: [![](../assets/Google_run_auto.png)](../assets/Google_run_auto.png)
+- Go back to WaveMaker application and again Run the app. You can now see the application. You will see the WaveMaker login screen if you have set the Login Mode as manual: [![](./assets/Google_run_manual.png)](./assets/Google_run_manual.png) Click the Login with Google button and you will be directed to the Google login page. This will be the first screen in case you have set the Login Mode to auto: [![](./assets/Google_run_auto.png)](./assets/Google_run_auto.png)
 - Entering the Google credential will allow access to the WaveMaker App
-- To use Google APIs, you need to [import the appropriate web service](/learn/web-services/#setup). Go to https://developers.google.com/oauthplayground/, select the required API and get the Authorization key [![](../assets/Google_API.png)](../assets/Google_API.png)
-- From app designer, import a web service with the proper credentials as obtained from the above step. [![](../assets/Google_Service.png)](../assets/Google_Service.png)
+- To use Google APIs, you need to [import the appropriate web service](/learn/web-services/#setup). Go to https://developers.google.com/oauthplayground/, select the required API and get the Authorization key [![](./assets/Google_API.png)](./assets/Google_API.png)
+- From app designer, import a web service with the proper credentials as obtained from the above step. [![](./assets/Google_Service.png)](./assets/Google_Service.png)
 
 [9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
 

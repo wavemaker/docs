@@ -20,7 +20,7 @@ You can set the following properties of the elements of the Live Form from the *
     - behavior like **Auto Focus**, **Read Only**, **Show** etc can be set;
     - **filter criteria** can be applied to referenced entities ([see here for usage](http://pm.wavemaker.com/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets/)).
 
-[![](../assets/LF_Fields.png)](../assets/LF_Fields.png)
+[![](./assets/LF_Fields.png)](./assets/LF_Fields.png)
 
 ### Live Form Validations
 
@@ -30,8 +30,8 @@ There are various ways in which Form fields can be validated depending upon the 
 2. For **Text Type fields**, **Regular expression** field can be used to provide valid and desired formats.
 3. For **Text Type fields**, you can restrict the **Maximum characters** to be entered
 4. For **Number Type fields**, **Minimum and Maximum Values** permissible can be set
-5. For **Date Type fields**, **Min Date, Max Date, Exclude Days and Dates** can be set. In this case, the date picker will not have the invalid dates available for selection. [![](../assets/LF_valid.png)](../assets/LF_valid.png)
-6. You can invoke the **hightlightInvalidFields** method on _Save_ action from the Advanced Settings, to highlight all invalid fields in red and display appropriate error messages. [![](../assets/AS_actions_valid.png)](../assets/AS_actions_valid.png)
+5. For **Date Type fields**, **Min Date, Max Date, Exclude Days and Dates** can be set. In this case, the date picker will not have the invalid dates available for selection. [![](./assets/LF_valid.png)](./assets/LF_valid.png)
+6. You can invoke the **hightlightInvalidFields** method on _Save_ action from the Advanced Settings, to highlight all invalid fields in red and display appropriate error messages. [![](./assets/AS_actions_valid.png)](./assets/AS_actions_valid.png)
 7. For additional checks, you can use the **Before Service Call** event to perform any validation checks. For example, we want to make sure that the password entry is at least six characters in length. Select the **Events** panel and select Javascript for **Before Service Call** and enter the following code. This will ensure that before updating the data source, the JavaScript is executed.
     
     Page.liveform1Beforeservicecall = function($data, $event) {
@@ -63,11 +63,11 @@ Widgets like select, autocomplete, radioset, checkboxset and switch can be used 
 
 1. Drag and drop a Live Form and bind it to a Database CRUD Variable.
 2. Configure layout options, as per your needs.
-3. In fields configuration step, change the required field widget type to Select. [![](../assets/lf_widget_fields.png)](../assets/lf_widget_fields.png)
+3. In fields configuration step, change the required field widget type to Select. [![](./assets/lf_widget_fields.png)](./assets/lf_widget_fields.png)
 4. Select the field from the canvas.
-5. The dataset for the form field widget is auto populated with the Variable Dataset field. Data field and display field is set to field’s key. Here, the dataset value can be bound to any other variable or widget. [![](../assets/lf_widget_propss.png)](../assets/lf_widget_propss.png)
-6. The widget can be changed from Live Form Advanced Settings also. [![](../assets/lf_widget_AS.png)](../assets/lf_widget_AS.png)
-7. Now, at runtime, the user can use this widget to select a value from predefined options. [![](../assets/lf_widget_run.png)](../assets/lf_widget_run.png)
+5. The dataset for the form field widget is auto populated with the Variable Dataset field. Data field and display field is set to field’s key. Here, the dataset value can be bound to any other variable or widget. [![](./assets/lf_widget_propss.png)](./assets/lf_widget_propss.png)
+6. The widget can be changed from Live Form Advanced Settings also. [![](./assets/lf_widget_AS.png)](./assets/lf_widget_AS.png)
+7. Now, at runtime, the user can use this widget to select a value from predefined options. [![](./assets/lf_widget_run.png)](./assets/lf_widget_run.png)
 
 < Configurations
 

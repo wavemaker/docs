@@ -15,19 +15,19 @@ System prerequisites:
 
 - Step-1: Export the project as zip.
 
-[![](https://www.wavemaker.com../assets/ExportProjectasZip.png)](https://www.wavemaker.com../assets/ExportProjectasZip.png)
+[![](https://www.wavemaker.com./assets/ExportProjectasZip.png)](https://www.wavemaker.com./assets/ExportProjectasZip.png)
 
 - Step-2: Extract the downloaded zip file.
 - Step-3: Get the project location path.
 - Step-4: In the command line, type the following command. See the image below:
 
-[![](https://www.wavemaker.com../assets/LocateProjectIncmdline.png)](https://www.wavemaker.com../assets/LocateProjectIncmdline.png)
+[![](https://www.wavemaker.com./assets/LocateProjectIncmdline.png)](https://www.wavemaker.com./assets/LocateProjectIncmdline.png)
 
 - Step-5: Run the following command where _<profileName>_ should either be **development** or **deployment**.
 
 mvn clean install -PprofileName
 
-![](https://www.wavemaker.com../assets/enter-mvn-install-cmd-and-profilename.png)
+![](https://www.wavemaker.com./assets/enter-mvn-install-cmd-and-profilename.png)
 
 **Note-1:** Wavemaker project has two default profiles, which are **development** and **deployment**. Prefix the profile name with a **P**. If you do not prefix the profile name; the system selects a **development** profile by default. You can add Custom Profiles from the **Config Profiles** section in the **Project Settings** options. To locate the existing profiles' path, go to Step-7.
 
@@ -37,11 +37,11 @@ mvn clean install -PprofileName
 
 - Step-7: Go to the project folder -> profiles -> open the file _<profilename.properties>_. As shown in the image below:
 
-[![](https://www.wavemaker.com../assets/profile-location.png)](https://www.wavemaker.com../assets/profile-location.png)
+[![](https://www.wavemaker.com./assets/profile-location.png)](https://www.wavemaker.com./assets/profile-location.png)
 
 - Step-8: Adjust the value of **build.ui.node.args.** See the image below:
 
-[![](https://www.wavemaker.com../assets/adjusting-space-on-failure.png)](https://www.wavemaker.com../assets/adjusting-space-on-failure.png)
+[![](https://www.wavemaker.com./assets/adjusting-space-on-failure.png)](https://www.wavemaker.com./assets/adjusting-space-on-failure.png)
 
 - Step-9: Re-do the steps 5 and 6.
 

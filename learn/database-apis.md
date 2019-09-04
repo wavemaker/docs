@@ -24,8 +24,8 @@ The **data source** for these Variables comes from a _Database APIs_. There are 
 
 ## Variable Creation - direct method
 
-1. Select Variable option from the Variables Workspace Toolbar. [![](../assets/var_sel.png)](../assets/var_sel.png)
-2. Click New Variable from the Variable Dialog [![](../assets/var_new.png?v=20)](../assets/var_new.png?v=20)
+1. Select Variable option from the Variables Workspace Toolbar. [![](./assets/var_sel.png)](./assets/var_sel.png)
+2. Click New Variable from the Variable Dialog [![](./assets/var_new.png?v=20)](./assets/var_new.png?v=20)
 3. This will initiate Create Variable wizard with the following steps:
     
     1. Since we are creating a variable to access database API operations, select **Database API** as the target operation
@@ -37,8 +37,8 @@ The **data source** for these Variables comes from a _Database APIs_. There are 
         - **Owner** - the scope of the Variable being created. By default it is set to Page, you can change it to Application if you want this variable to be available across the app
     3. Click **Done** to complete the variable creation process
     
-    [![](../assets/dbapi_varcr_direct.png)](../assets/dbapi_varcr_direct.png)
-4. You will be directed to the Variables page, with the new variable listed. [![](../assets/dbapi_varcr_direct_var.png)](../assets/dbapi_varcr_direct_var.png) As you can see:
+    [![](./assets/dbapi_varcr_direct.png)](./assets/dbapi_varcr_direct.png)
+4. You will be directed to the Variables page, with the new variable listed. [![](./assets/dbapi_varcr_direct_var.png)](./assets/dbapi_varcr_direct_var.png) As you can see:
     1. a **Database API** Variable is created,
     2. with the selected API/query/procedure as target
     3. the **properties tab** contains all the properties like _server options_, _behavior_ and _spinner_ behavior. [Know more about properties](#properties).
@@ -52,7 +52,7 @@ We will show the steps in creating Variable using the Data Table widget. The ste
 1. Drag and drop a **Data Table **onto the canvas
 2. Set **Retrieve Data** from _Service_ **Note**: If you have not imported any database or web service in your application, you will be prompted to import the same.
 3. Once you have imported the data source, choose _Database API _from the list of **service type**
-4. Set the **service** to the desired _database_ and then select an **Operation/Type** from the list of APIs for tables within the selected database or query/procedure name. [![](../assets/dbapi_varcr_dt.png)](../assets/dbapi_varcr_dt.png)
+4. Set the **service** to the desired _database_ and then select an **Operation/Type** from the list of APIs for tables within the selected database or query/procedure name. [![](./assets/dbapi_varcr_dt.png)](./assets/dbapi_varcr_dt.png)
 5. Once you have selected the service type and the service you can:
     - change the **name of the variable** generated
     - **Data Configuration** includes:

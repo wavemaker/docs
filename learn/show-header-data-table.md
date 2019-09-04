@@ -21,7 +21,7 @@ To hide the Data Table header, disable the **Show Header** property for the sel
 
 The following steps show how to enable or disable a Show Header property.
 
-![](https://www.wavemaker.com../assets/ShowHideHeader.gif)
+![](https://www.wavemaker.com./assets/ShowHideHeader.gif)
 
 1. Select the Data Table.
 2. Go to **Advanced Settings.**

@@ -11,8 +11,8 @@ id: ""
     3. **Value** under **Dataset** to comma separated string containing the label values (they will be mapped to rating value in ascending order)
     4. Select **Show Captions** property, this will display the value of the selected rating. It unchecked user will see the value on hover over the rating.
     
-    [![](../assets/rating_usage_props.png)](../assets/rating_usage_props.png)
-3. From **Style** tab,  you can set the Icon color. [![](../assets/rating_usage_style.png)](../assets/rating_usage_style.png)
+    [![](./assets/rating_usage_props.png)](./assets/rating_usage_props.png)
+3. From **Style** tab,  you can set the Icon color. [![](./assets/rating_usage_style.png)](./assets/rating_usage_style.png)
 4. Preview the app to see the Rating widget in action
 
 [Rating Widget Use Cases](/learn/app-development/widgets/form-widgets/rating-widget/#use-cases)
