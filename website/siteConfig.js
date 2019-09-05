@@ -56,10 +56,11 @@ const siteConfig = {
 	{languages: true },
 	{doc: 'widget-library', label: 'Widgets'},
     {href: 'https://www.wavemakeronline.com/studio/10.1.1.7359/docs/index.html', label: 'API Docs'},
-    {page: 'help', label: 'FAQ'},
     {doc: 'release-notes/release-notes-v10.1', label: 'Release Notes'},
-	{href: 'https://www.wavemaker.com/', label: 'WaveMaker'},
-	{href: 'https://www.wavemakeronline.com/login/login', label: 'Login'},
+	{doc: 'app-development/wavemaker-app-development-faqs/index', label: 'FAQs'},
+	{page: 'help', label: 'Help'},
+	{href: 'https://www.wavemakeronline.com/login/login', label: 'Login'}
+	
   ],
 
   // If you have users set above, you add it here:

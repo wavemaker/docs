@@ -1,0 +1,13 @@
+---
+title: "How databases work in WaveMaker?"
+id: "database-in-wavemaker"
+sidebar_label: "Databases"
+---
+See the [FAQs](index.md) for WaveMaker app development.   
+
+---
+
+By importing database schema, WaveMaker automatically detects the entities, their associated relationships and generates the Entity-Relational model for building the business logic. CRUD APIs for entities and relationships are automatically generated, including relationship accessor APIs such as orders placed by customer, employees belonging to a department, and more. 
+
+For more information, see [Integrating Web Services](/learn/app-development/services/web-services/web-services/#overview).
+

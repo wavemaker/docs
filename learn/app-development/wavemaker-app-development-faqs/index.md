@@ -1,55 +1,18 @@
 ---
-title: "WaveMaker App Development FAQs"
-id: ""
+title: "FAQs - App Development"
+id: "index"
+sidebar_label: "Overview"
 ---
+Here we address some of the most pertinent questions regarding App Development using WaveMaker Platform.   
 
-Here we address some of the most pertinent questions regarding App Development using WaveMaker Platform.   What is a WaveMaker App? **WaveMaker App** can either be a web responsive application or a hybrid mobile application built using the low-code or rapid app development approach. WaveMaker App is built as a single HTML Web App, with clear separation of User Interface (UI) layer and the backend services layer using REST APIs. The UI layer is built using the visual RAD approach, with drag-n-drop of widgets onto the Canvas. Later, these widgets are integrated with the backend services, to fetch and update data. [![](./assets/3layered_arch.png)](./assets/3layered_arch.png) WaveMaker App is composed of 3 layers:
+---
+### [What is a WaveMaker App?](what-is-wavemaker-app.md)
 
-1. **UI Layer** is built with Pages, which are composed with widgets using visual drag-n-drop approach.
-2. **Binding Layer** integrates backend services with the front-end UI layer through REST APIs.
-3. **Services Layer** represents backend services auto-generated from databases, external web services or custom Java services etc.
+### [What skills are required to build a WaveMaker app?](skills-need-to-build-wavemaker-app.md)
 
-#### Doc Reference
+### [How does WaveMaker simplify app development using the RAD paradigm?](app-development-using-rad.md)
 
-- [Platform Overview](/learn/app-development/wavemaker-overview/platform-overview/)
-
-  What skills are required to build a WaveMaker app?
-
-To build a WaveMaker app, the first time developer needs to inherit the following skills:
-
-**Technical Skills:**
-
-- Basic understanding of HTML, CSS and JavaScript
-- Basic knowledge of Database, SQL syntax, relationships etc.
-- REST API basics, AJAX
-- Basic app design, understanding of various artifacts etc.
-- Java syntax, class, methods and annotation for building backend services
-
-**Analytical Skills:**
-
-To develop an application it is essential to analytically think in terms of functionality, design, and implementation. In order to build an app, it is crucial to have answers to the following questions:
-
-- What is the purpose of the application?
-- Who is the end-user of the application?
-- What level of security is required for the application?
-
-#### Doc Reference
-
-- [Pre-Requisites](/learn/app-development/wavemaker-overview/pre-requisites/)
-
-  How does WaveMaker simplify app development using the RAD paradigm?
-
-WaveMaker simplifies app development by combining the power of auto-generated code for backend services, with visual drag-n-drop based composition of UI.
-
-Boiler plate code comprising more than 60% of application’s code, such as the Object Relational Mapping (ORM) layer, integration code for invoking APIs, data conversions to JSON, parameter validations, widgets markup etc. is totally removed from developer’s responsibilities. While the platform takes care of code generation for the parts mentioned above, app developers can now focus on the business logic, business rules that define data flows, interaction, look-n-feel etc.
-
-#### Doc Reference
-
-[Integrating Backend Services](/learn/app-development/services/creating-backend-services/)
-
-## Databases
-
-By importing database schema, WaveMaker automatically detects the entities, their associated relationships and generates the Entity-Relational model for building the business logic. CRUD APIs for entities and relationships are automatically generated, including relationship accessor APIs such as orders placed by customer, employees belonging to a department etc.[Integrating Web Services](/learn/app-development/services/web-services/web-services/#overview)
+### [How database work in WaveMaker?](database-in-wavemaker.md)
 
 ## Web Services
 
