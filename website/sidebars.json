@@ -53,7 +53,11 @@
       "app-development/wavemaker-app-development-faqs/what-is-wavemaker-app", 
       "app-development/wavemaker-app-development-faqs/skills-need-build-to-wavemaker-app", 
       "app-development/wavemaker-app-development-faqs/app-development-using-rad",
-      "app-development/wavemaker-app-development-faqs/database-in-wavemaker"
+      "app-development/wavemaker-app-development-faqs/database-in-wavemaker",
+      "app-development/wavemaker-app-development-faqs/web-services",
+      "app-development/wavemaker-app-development-faqs/java-services-in-wavemaker",
+      "app-development/wavemaker-app-development-faqs/",
+      "app-development/wavemaker-app-development-faqs/"
     ]
   }
 }

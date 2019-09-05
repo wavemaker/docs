@@ -1,7 +1,7 @@
 ---
-title: "How databases work in WaveMaker?"
+title: "How database work in WaveMaker?"
 id: "database-in-wavemaker"
-sidebar_label: "Databases"
+sidebar_label: "What are Databases?"
 ---
 See the [FAQs](index.md) for WaveMaker app development.   
 
