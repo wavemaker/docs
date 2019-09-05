@@ -2,7 +2,7 @@
 title: "What is a WaveMaker App?"
 id: "what-is-wavemaker-app"
 ---
-See the [FAQs](index.md) for WaveMaker app development.    
+See the [FAQs](index.md) section for WaveMaker app development.    
 
 ---
 

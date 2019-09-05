@@ -2,7 +2,7 @@
 title: "What are WaveMaker Web Services?"
 id: "web-services"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](index.md) section for WaveMaker app development.      
 
 ---
 

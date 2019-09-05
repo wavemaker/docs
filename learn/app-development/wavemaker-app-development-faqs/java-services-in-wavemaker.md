@@ -3,7 +3,7 @@ title: "How Java Services work in WaveMaker?"
 id: "java-services-in-wavemaker"
 sidebar_label: "Java Services in WaveMaker"
 ---
-See the [FAQs](index.md) for WaveMaker app development.    
+See the [FAQs](index.md) section for WaveMaker app development.    
 
 ---   
 
