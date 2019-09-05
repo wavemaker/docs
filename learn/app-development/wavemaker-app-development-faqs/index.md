@@ -12,7 +12,7 @@ See the [FAQs](index.md) for WaveMaker app development.      
 
 #### [2. What skills you need to build a WaveMaker app?](skills-need-to-build-wavemaker-app.md)
 
-#### [3. How does WaveMaker simplify app development using the RAD paradigm?](app-development-using-rad.md)
+#### [3. How does WaveMaker simplify app development using the RAD paradigm?](app-development-using-rad.md)
 
 #### [4. Does WaveMaker use the model-first approach or the UI-first approach for RAD development?](model-first-or-UI-first-rad-development.md)  
 
@@ -34,18 +34,9 @@ See the [FAQs](index.md) for WaveMaker app development.      
 
 #### [10. Explain the WaveMaker Architecture](wavemaker-architecture.md)
 
-#### What application architectures does WaveMaker Apps support?
+#### [What application architectures does WaveMaker Apps support?](wavemaker-application-architecture.md)
 
-WaveMaker built applications use the modern application architectures such as :
-
-1. _Micro Services_ enabled architecture allowing a large application to be built as smaller scalable services, which are integrated through REST APIs. WaveMaker applications use session-less architecture allowing them to be scaled up as the app needs or the number of users grow using docker containers ([https://martinfowler.com/articles/microservices.html](https://martinfowler.com/articles/microservices.html))
-2. _Single Page Applications (SPA)_ load a single HTML front-end with interaction built using JavaScript & AJAX (refer: [https://msdn.microsoft.com/en-us/magazine/dn463786.aspx](https://msdn.microsoft.com/en-us/magazine/dn463786.aspx)). Front-end is clearly separated from the back-end services using REST APIs. A typical application can be demarcated into three parts:
-    - Client-side app component that works on the device used
-    - Central/remote Server component that provides backend services
-    - Both these components separated by well-defined REST API contract.
-3. _Hybrid Mobile App_ for building mobile Apps using Cordova which provides the native wrapper for interacting with the device capabilities and an installer for the device. WaveMaker developers build Mobile apps just the way they build web apps using drag-n-drop visual RAD approach and integrating the mobile front-end with the backend services using REST APIs.
-
-##  How does WaveMaker support Micro-Services enabled architecture? 
+####  How does WaveMaker support Micro-Services enabled architecture? 
 
 [![](./assets/services_concept.png)](./assets/services_concept.png)
 
