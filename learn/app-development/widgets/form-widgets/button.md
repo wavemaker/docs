@@ -1,8 +1,8 @@
 ---
 title: "Button"
-id: ""
+id: "button"
 ---
-
+---
 A **button** indicates a possible user action. The button provides a styled clickable UI functionality with arbitrary content to indicate the different states.
 
 The button widget can trigger any of the following actions when it is clicked.
@@ -15,36 +15,42 @@ The button widget can trigger any of the following actions when it is clicked.
 
 [![](../../../assets/button_graphic.jpg)](../../../assets/button_graphic.jpg)
 
-# Features
+## Features
 
-- **Shortcut key**: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
+**Shortcut key**: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
     
-    | Browser | Shortcut key Trigger |
-    | --- | --- |
-    | Internet Explorer | \[Alt\] + shortcut key |
-    | Chrome | \[Alt\] + shortcut key (_Windows/Linux_) |
-    |  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
-    | Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
-    |  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
+| Browser | Shortcut key Trigger |
+| --- | --- |
+| Internet Explorer | \[Alt\] + shortcut key |
+| Chrome | \[Alt\] + shortcut key (Windows/Linux) |
+|  | \[Control\] \[Alt\] + shortcut key (MAC) |
+| Firefox | \[Alt\] \[Shift\] + shortcut key (Windows/Linux) |
+|  | \[Control\] \[Alt\] + shortcut key (MAC) |
     
-- **Hide/Show** properties: The business logic of an application often requires a certain button to be temporarily enabled/ disabled. WaveMaker button can be configured to the initially disabled or enabled by checking the show or disabled properties from behavior section.
-- **Icon** image: The button can accommodate an icon, which enhances the meaning of the text content. The widget provides two ways to add an icon with the class name or with a background image i.e image URL (usually a sprite).
-    - **Icon class**: In some cases, you may want to use a Button with no text and only an icon inside. You will be provided with two types of icon one is the wavicon and the other is the font awesome icon.
-    - **Icon Url**: Image icons are applied via the imageUrl property and are displayed as an img element.
+### Hide/Show Properties
+The business logic of an application often requires a certain button to be temporarily enabled/ disabled. WaveMaker button can be configured to the initially disabled or enabled by checking the show or disabled properties from behavior section.
+### Icon image
+The button can accommodate an icon, which enhances the meaning of the text content. The widget provides two ways to add an icon with the class name or with a background image i.e image URL (usually a sprite).
+### Icon class 
+In some cases, you may want to use a Button with no text and only an icon inside. You will be provided with two types of icon one is the wavicon and the other is the font awesome icon.
+### Icon Url
+Image icons are applied via the imageUrl property and are displayed as an img element.
 
-### Button Class
+## Button Class
 
 From the Style tab of Properties panel,  you can set the button style. You can also use the Conditional Class property to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/). 
 
 <iframe width="100%" height="450" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Buttons">Button Types</iframe>
 
-### Button Size
+## Button Size
 
 From the Style tab of Properties panel, you can also set the button size along with the style as btn-primary btn-xs 
 
 <iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ButtonSizes">Button Sizes</iframe>
 
-# Properties
+
+## Button Properties
+---
 
 | **Property** | **Description** |
 | --- | --- |
@@ -54,7 +60,7 @@ From the Style tab of Properties panel, you can also set the button size along w
 | Badge Value | Value to be displayed in the badge span for anchor and button. |
 | **Accessibility** |
 | Hint | Any text you enter for this property will be shown as a tooltip when the mouse hovers over this widget for _1.5 seconds. _It can be bound to a variable or another widget. |
-| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.</br>NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.</br> **NOTE:** In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from ```Preferences -> Advanced -> Accessibility``` set the option "Press Tab to highlight each item on a webpage". |
 | Shortcut Key | Alphabet to act as the Shortcut key. The shortcut key property specifies a key to click the button. The way to activate the shortcut key varies from browser to browser. |
 | **Layout** |
 | Width | The width of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._ |
@@ -74,8 +80,8 @@ From the Style tab of Properties panel, you can also set the button size along w
 | **Format** |
 | Horizontal Align | This property specifies how the elements should be aligned horizontally - left, center or right. |
 
-# Events
-
+## Events
+---
 | Event | Description |
 | --- | --- |
 | On focus | This event handler is called each time your element is focused. |
@@ -93,43 +99,29 @@ From the Style tab of Properties panel, you can also set the button size along w
 | On key press | This event handler is called when the widget is in focus and a key is pressed. This event will relay the character pressed |
 | On key up | This event handler is called when the widget is in focus and a key is pressed and released. |
 
-# Use Cases
+## Use Cases
 
-- Change button properties from **Markup** <wm-button caption="Inbox" name="button1"></wm-button> To add hint to the given button from the markup <wm-button caption="Inbox" name="button1" hint="Sample Text"></wm-button>
-- Change button properties from **Script** To Hide button1 use the following code snippet
+- Change button properties from **Markup** 
+```
+<wm-button caption="Inbox" name="button1"></wm-button>
+``` 
+- To add hint to the given button from the markup 
+```
+<wm-button caption="Inbox" name="button1" hint="Sample Text"></wm-button>
+```
+- Change button properties from **Script**. To Hide button1 use the following code snippet:
     
-    Page.Widgets.button1.setWidgetProperty('show', false);
+```
+Page.Widgets.button1.setWidgetProperty('show', false);
+```
     
-- To Capture the show value
+- To Capture the show value:
     
-    alert(Page.Widgets.button1.show);
+```    
+alert(Page.Widgets.button1.show);
+```
     
+## See More
 
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-
-- [3.1 Button](#)
-    - [i. Features](#features)
-    - [ii. Properties](#properties)
-    - [iii. Events](#events)
-    - [iv. Use Cases](#use-cases)
-- [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
-- [3.3 Calendar](/learn/app-development/widgets/form/calendar/)
-- [3.4 Checkbox](/learn/app-development/widgets/form/checkbox/)
-- [3.5 CheckboxSet](/learn/app-development/widgets/form/checkboxset/)
-- [3.6 Chips](/learn/app-development/widgets/form-widgets/chips/)
-- [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
-- [3.8 Currency](/learn/app-development/widgets/form/currency/)
-- [3.9 Date](/learn/app-development/widgets/form/date/)
-- [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.11 FileUpload](/learn/app-development/widgets/form/file-upload/)
-- [3.12 Number](/learn/app-development/widgets/form-widgets/number/)
-- [3.13 Radioset](/learn/app-development/widgets/form/radioset/)
-- [3.14 Rating](/learn/app-development/widgets/form/rating/)
-- [3.15 Select](/learn/app-development/widgets/form/select/)
-- [3.16 Select Locale](/learn/app-development/widgets/form/select-locale/)
-- [3.17 Slider](/learn/app-development/widgets/form/slider/)
-- [3.18 Switch](/learn/app-development/widgets/form/switch/)
-- [3.19 Text](/learn/app-development/widgets/form/text/)
-- [3.20 Textarea](/learn/app-development/widgets/form/textarea/)
-- [3.21 Time](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.22 Toggle](/learn/app-development/widgets/form/toggle/)
+[Form Widgets](/learn/app-development/widgets/widget-library/#form)  
+[Button Group](/learn/app-development/widgets/form/button-group)  

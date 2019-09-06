@@ -1,6 +1,6 @@
 ---
-title: "Data Table"
-id: ""
+title: "Data Table Widget"
+id: "data-table"
 ---
 
 [![](../../../assets/laptop.png)  ](../../../assets/laptop.png)**NOTE**: Data Table is available only for web responsive apps.

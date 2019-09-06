@@ -1,6 +1,7 @@
 ---
-title: "List"
-id: ""
+title: "List Widget"
+id: "list"
+---
 ---
 
 **List widget** provides a list view of items from a data source. List data can be obtained from various Services like database, queries or web services through Variables. The list provides a variety of flexible templates for defining the display format of each item.
