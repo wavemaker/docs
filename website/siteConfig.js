@@ -107,7 +107,7 @@ const siteConfig = {
   // No .html extensions for paths.
   cleanUrl: true,
   
-  editUrl: 'https://github.com/wavemaker/learn/',
+  editUrl: 'https://github.com/wavemaker/docs/tree/master/learn/',
  
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
