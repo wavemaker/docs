@@ -52,17 +52,19 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-	{search: true},
 	{languages: true },
 	{doc: 'app-development/widgets/widget-library', label: 'Widgets'},
     {href: 'https://www.wavemakeronline.com/studio/10.1.1.7359/docs/index.html', label: 'API Docs'},
     {doc: 'release-notes/release-notes-v10.1', label: 'Release Notes'},
 	{doc: 'app-development/wavemaker-app-development-faqs/index', label: 'FAQs'},
 	{page: 'help', label: 'Help'},
-	{href: 'https://www.wavemakeronline.com/login/login', label: 'Login'}
-	
+	{href: 'https://www.wavemakeronline.com/login/login', label: 'Login'},
+    {search: true},
   ],
-
+    algolia: {
+        apiKey: '#add-the-key-here',
+        indexName: 'github',
+    },
   // If you have users set above, you add it here:
   users,
 
