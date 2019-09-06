@@ -41,8 +41,8 @@
     "App Building Exercises": 
     [
       "app-building-exercises/index",
-			"app-building-exercises/leave-management",
-      "app-building-exercises/asset-management",
+      "tutorials/leave-management-app",
+      "tutorials/asset-management-app",
       "tutorials"
     ]
   },

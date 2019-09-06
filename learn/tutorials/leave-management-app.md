@@ -1,11 +1,12 @@
 ---
+id: "leave-management-app"
 title: "Leave Management App"
-id: ""
+---
+This topic provides step-by-step instructions for building a Leave Management app using the WaveMaker *Rapid-Application Development* Platform. 
+
 ---
 
-# Introduction
-
-This document provides step by step **instructions** for building **Leave Management Application** using WaveMaker Rapid Application Development Platform
+This app allows an employee to apply for leave, and it will enable the manager to take action against the leave request. 
 
 **Pre-Requisite**: You are advised to understand the [WaveMaker App Development Essentials](/learn/jump-start/jump-start-app-essentials/) before starting to build the app.
 
@@ -19,6 +20,24 @@ The following concepts are covered in building this application.
 6. **Binding**
 7. **Securing the App**
 8. **Running the App**
+
+## Creating a Basic Application
+
+### App Overview
+
+|Step | Categories  | Description | 
+|----|-----|-----|
+|1  | Database | A predefined sample database is provided to work with. |
+|2  | Profile  | This is an Employee Profile. It contains the list of employees from the same Department.|
+|3  | Employee List | View the list of employees within the organisation. Visible to Managers only. |
+|4  | Workflows | Keep track of the applied leaves and the statuses. |
+|5  | Security | Users get access to view specific pages only depending on the user-permission level.|
+|6  | Dashboard | Use charts to depict the leave utilisation of employees.|
+
+### Application Flow
+
+![App-Flow](../assets/app-flow-leave-management-low-code-project.svg)   
+
 
 **WM**App Overview
 

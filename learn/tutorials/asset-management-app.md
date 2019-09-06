@@ -1,11 +1,11 @@
 ---
 title: "Asset Management App"
-id: ""
+id: "asset-management-app"
+---
+This topic provides step-by-step instructions for building an Asset Management app using the WaveMaker *Rapid-Application Development* Platform. 
+
 ---
 
-# Introduction
-
-This document provides step by step **instructions** for building **Asset Management Application** using WaveMaker Rapid Application Development Platform
 
 **Pre-Requisite**: You are advised to understand the [WaveMaker App Development Essentials](/learn/jump-start/#app-essentials) before starting to build the app.
 
@@ -21,7 +21,7 @@ The following concepts are covered in building this application.
 8. **Running the App**
 9. **Deploying the App**
 
-**WM**App Overview
+## WM App Overview
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vTbTGYsGvR-h2powLU1XZCG0VQZpPpfMcuZtcpB2BWeYt5fMHxD3jPdqukBPRUlnIxBhLOHSxOoyFaN/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
