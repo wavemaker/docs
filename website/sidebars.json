@@ -4,18 +4,17 @@
     "WaveMaker Overview": 
       [
         "index", 
-        "wavemaker-overview/platform-overview",
+        "app-development/wavemaker-overview/platform-overview",
         {
         "type": "subcategory",
 		    "label": "Getting Started",
 			  "ids": [
-        "wavemaker-overview/product-walkthrough",
-        "wavemaker-overview/supported-technologies",
-        "wavemaker-overview/pre-requisites",
-        "wavemaker-overview/artifacts-repository",
-        "wavemaker-overview/localization"] 
+        "app-development/wavemaker-overview/product-walkthrough",
+        "app-development/wavemaker-overview/supported-technologies",
+        "app-development/wavemaker-overview/pre-requisites",
+        "app-development/wavemaker-overview/artifacts-repository",
+        "app-development/wavemaker-overview/localization"] 
         },
-        "widget-library",
         "how-to-docs"
         ],
     "How-tos": 
@@ -68,5 +67,13 @@
       "app-development/wavemaker-app-development-faqs/",
       "app-development/wavemaker-app-development-faqs/"
     ]
+  },
+  "Widgets": {
+    "waveMaker Widgets": [
+      "app-development/widgets/widget-library" 
+
+ 
+    ]
   }
+
 }

@@ -24,8 +24,7 @@ See the [FAQs](index.md) for WaveMaker app development.      
 
 #### [7. How Java Services work in WaveMaker?](java-services-in-wavemaker.md)  
 
-#### [8. What are Widgets in WaveMaker?](widgets-in-wavemaker.md)
-See the [FAQs](index.md) for WaveMaker app development.      
+#### [8. What are Widgets in WaveMaker?](widgets-in-wavemaker.md)   
 
 ## Security
 ---
