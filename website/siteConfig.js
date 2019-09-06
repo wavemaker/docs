@@ -54,7 +54,7 @@ const siteConfig = {
   headerLinks: [
 	{search: true},
 	{languages: true },
-	{doc: 'widget-library', label: 'Widgets'},
+	{doc: 'widget-library/widget-lib', label: 'Widgets'},
     {href: 'https://www.wavemakeronline.com/studio/10.1.1.7359/docs/index.html', label: 'API Docs'},
     {doc: 'release-notes/release-notes-v10.1', label: 'Release Notes'},
 	{doc: 'app-development/wavemaker-app-development-faqs/index', label: 'FAQs'},
