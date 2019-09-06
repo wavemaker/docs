@@ -1,6 +1,7 @@
 ---
 title: "Invoking Web App APIs in Mobile Apps"
-id: ""
+id: "invoking-web-app-apis-mobile-apps"
+---
 ---
 
 To access the APIs of WaveMaker Web App (say Project1) into Hybrid Mobile App (say, Project2), you will need to import the services in the form of REST services.

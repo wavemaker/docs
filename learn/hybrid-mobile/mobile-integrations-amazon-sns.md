@@ -1,6 +1,6 @@
 ---
 title: "Mobile Integrations - Amazon SNS"
-id: ""
+id: "mobile-integrations-amazon-sns"
 ---
 
 # Introduction

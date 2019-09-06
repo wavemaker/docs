@@ -1,6 +1,7 @@
 ---
 title: "Mobile Build - Android"
-id: ""
+id: "mobile-build-android"
+---
 ---
 
 The **Build** process for a mobile application can be performed through Automated Build process where you can generate .apk (Android application package) or .ipa file (iOS App Store package). Another way is to download Cordova/PhoneGap compatible .zip files to build systems manually for Android/iOS platforms.

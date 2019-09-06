@@ -1,7 +1,7 @@
 ---
-title: "WaveMaker Widget Library"
+title: "WaveMaker Widgets Library"
 id: "widget-library"
-sidebar_label: "Widget Library"
+sidebar_label: "Widgets Library"
 ---
 Find the list of Widgets available in the WaveMaker platform with a description and links to the detailed documentation.
 

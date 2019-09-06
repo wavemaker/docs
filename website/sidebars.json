@@ -7,7 +7,7 @@
         "app-development/wavemaker-overview/platform-overview"
       ],
 
-    "App development": 
+    "Getting started": 
       [
         "app-development/wavemaker-overview/product-walkthrough",
         "app-development/wavemaker-overview/supported-technologies",
@@ -57,10 +57,42 @@
       ], 
 
     "Mobile apps": 
-      [
-        "hybrid-mobile/building-hybrid-mobile-apps"
-      ]
+    [
+        "hybrid-mobile/building-hybrid-mobile-apps",           
+      {
+        "type": "subcategory",
+        "label": "Mobile Design",
+        "ids": [
+        "hybrid-mobile/mobile-page-concepts",
+        "hybrid-mobile/mobile-tabbar"]
+      },
 
+      {
+        "type": "subcategory",
+        "label": "Mobile Installer",
+        "ids": [
+        "hybrid-mobile/test-run",
+        "hybrid-mobile/mobile-build-android"]
+      },
+
+      {
+        "type": "subcategory",
+        "label": "Mobile Integrations",
+        "ids": [
+        "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
+        "hybrid-mobile/mobile-integrations-amazon-sns",
+        "hybrid-mobile/use-push-notification-wm-mobile-app",
+        "hybrid-mobile/invoking-web-app-apis-mobile-apps"]
+      },
+
+      {
+        "type": "subcategory",
+        "label": "Offline Features",
+        "ids": [
+        "hybrid-mobile/offline-data-support",
+        "hybrid-mobile/switching-offline-online-mode"]
+      }
+    ]
   },
 
   "FAQ": {
@@ -120,7 +152,7 @@
   },
 
   "Widgets": {
-    "WaveMaker Widgets": [
+    "Widgets & Prefabs": [
       "app-development/widgets/ui-elements",
       "app-development/widgets/widget-library"
     ],

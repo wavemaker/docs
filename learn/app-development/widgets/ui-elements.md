@@ -1,6 +1,7 @@
 ---
 title: "Introduction to Widgets & Prefabs in WaveMaker"
 id: "ui-elements"
+sidebar_label: "Widgets Overview"
 ---
 You can find everything about WaveMaker widgets in this section. 
 
