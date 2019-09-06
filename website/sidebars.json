@@ -69,10 +69,13 @@
     ]
   },
   "Widgets": {
-    "waveMaker Widgets": [
-      "app-development/widgets/widget-library" 
-
- 
+    "WaveMaker Widgets": [
+      "app-development/widgets/widget-library"
+    ],
+    "Cards": [ 
+      "app-development/widgets/datalive/cards",
+      "app-development/widgets/datalive/cards/cards-data-source",
+      "app-development/widgets/datalive/cards/card-basic-usage"
     ]
   }
 

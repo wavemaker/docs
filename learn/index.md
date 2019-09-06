@@ -41,4 +41,4 @@ When you sign up, you will be directed to a **Project Dashboard** page. Voila! 
 
 ---
 ### Notice something is incorrect or outdated?
-First off, great catch! We appreciate your discovery and want to ensure it gets addressed immediately. Please let us know [here](mailto:docs@wavemaker.com).
+First off, great catch! We appreciate your discovery and want to ensure it gets addressed immediately. Please let us know [here](https://github.com/wavemaker/docs/issues/new).

@@ -1,8 +1,8 @@
 ---
-title: "Cards - Basic Usage"
-id: ""
+title: "Creating Cards"
+id: "card-basic-usage"
 ---
-
+---
 ## Creating Employee Cards
 
 **Cards** represents view of items that are rendered responsively across a wide range of mobile devices and screen sizes.
@@ -74,12 +74,9 @@ Click on Preview button to test run the app.
 
 [![](https://www.wavemaker.com../../../../assets/cards_basic_run.png)](https://www.wavemaker.com../../../../assets/cards_basic_run.png)
 
-[Cards Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)
 
-- [1\. Cards Basic Usage](/learn/app-development/widgets/datalive/cards/card-basic-usage/)
-    - [○ Data Selection](#data-selection)
-    - [○ Template Selection](#template-selection)
-    - [○ Binding Fields](#binding-fields)
-    - [○ Design](#design)
-    - [○ Run/Preview](#run)
-- [2\. How to access cards items](/learn/how-tos/capturing-card-items/)
+## See More
+
+[Cards Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)  
+[Cards Basic Usage](/learn/app-development/widgets/datalive/cards/card-basic-usage/)  
+[How to access cards items](/learn/how-tos/capturing-card-items/)  
