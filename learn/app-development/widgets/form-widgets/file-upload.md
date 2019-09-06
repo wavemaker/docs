@@ -1,11 +1,11 @@
 ---
 title: "FileUpload"
-id: ""
+id: "file-upload"
 ---
-
+---
 The FileUpload widget can be used to let users upload files to your apps. WaveMaker **FileUpload** widget generates a **Java Service** to enable additional file processing functionality.
 
-# Features
+## Features
 
 Following properties can be set for a **FileUpload** widget:
 
@@ -20,7 +20,7 @@ Following properties can be set for a **FileUpload** widget:
 
 [![](../../../assets/fu_feats.png)](../../../assets/fu_feats.png)
 
-# Properties
+## Properties
 
 | Property | Description |
 | --- | --- |
@@ -45,7 +45,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Format** |
 | Horizontal Align | This property specifies how the elements should be aligned horizontally. |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
@@ -66,6 +66,8 @@ Apart from the above events attached to the FileUpload widget, the following Ser
 | On Before Dataset Ready | This event is triggered just before the variable’s dataSet property is updated with the data received from the target service (after onResult). This event handler gives you the opportunity to manipulate the data before your variable’s dataSet property is assigned this value. If you want to add rows to a Grid or List or Select, this is a good way to add in extra items into your results before your variable is set and your widget is updated. The new data can be returned from here in order to update the Variable’s dataSet. |
 | On Can Update | This event is triggered just before the variable’s dataSet property is updated with the data received from the target service (after onResult). This event handler gives you the opportunity to manipulate the data before your variable’s dataSet property is assigned this value. If you want to add rows to a Grid or List or Select, this is a good way to add in extra items into your results before your variable is set and your widget is updated. The new data can be returned from here in order to update the Variable’s dataSet. |
 | On Success | Allows you to trigger an action when the Variable has completed its life cycle. Any component bound to the resultant dataSet of this Variable will be updated just before this event is triggered. So, If you want to trigger another Variable which is dependent on the dataSet of this Variable, the Variable should be triggered by this event. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

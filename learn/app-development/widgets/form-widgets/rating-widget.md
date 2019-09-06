@@ -1,11 +1,12 @@
 ---
 title: "Rating"
-id: ""
+id: "rating"
+---
 ---
 
 **Rating** widget can be used to display or elicit information about a quantitative or a qualitative attribute in the form of a set of categories.
 
-# Features
+## Features
 
 - **Icon color** property can be set from the _Styles_ tab of Property Panel
 - **Show captions** property can be used to hide or show the captions.
@@ -19,14 +20,13 @@ id: ""
 - In **Read only** mode, if the dataset is null then the caption can be bound through displayexpression.
 - **Tab index** selects the widget (focus the widget) and the UP-ARROW and DOWN-ARROW keypress would increase and decrease the rating value.
 
-# Properties
+## Properties
 
 | Property | Description |
 | --- | --- |
 | Name | The name is a unique identifier for Rating widget. |
 | **Accessibility** |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Default Value** |
 | Value | Default value (number of active stars) of Rating.It should always be less than or equal to the maximum value of Rating. |
 | Maximum Value | Maximum value (number of stars) of Rating.It should be less than or equal to 10. |
@@ -43,19 +43,21 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Graphics** |
 | Icon Size | This property defines the size of the icon. Value has to be specified along with the units (em or px). |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
 | Change | This event handler is called each time your element's value changes. |
 
-# Use Cases
+## Use Cases
 
 You can use the Rating widget to capture the input from the user as Widgets.rating1.datavalue or from the direct bind dialog. You can also change the caption according to the user selection.
 
 - [How to build Rating widget from static data](/learn/how-tos/rating-widget-using-static-data/)
 - [How to build Rating widget from static variable data](/learn/how-tos/rating-widget-using-static-variable/)
 - [How to build an interactive rating widget](/learn/how-tos/rating-widget-interactive/)
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

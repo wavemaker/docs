@@ -1,11 +1,11 @@
 ---
 title: "Radioset"
-id: ""
+id: "radioset"
 ---
-
+---
 Radioset allows you to group a set of radio buttons under a common heading. You need to bind to a dataset to display a radio button for each value.
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -34,7 +34,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Disabled | If the disabled property is true (checked) the widget becomes display-only and user input will not be accepted. It can also set programmatically by binding it to a boolean type variable. |
 
-# Events
+## Events
 
 | **Event** | **Description** |
 | --- | --- |
@@ -46,10 +46,12 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Touch Events** |
 | On tap | This event handler is called whenever the widget is tapped. |
 
-# Use Cases
+## Use Cases
 
 - [Working with Selection Widgets](/learn/how-tos/selection-widgets-use-case/)
-- [How to use Radioset widget to filter a List](/learn/how-tos/radioset-filter-list/)
+- [How to use Radioset widget to filter a List](/learn/how-tos/radioset-filter-list/) 
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

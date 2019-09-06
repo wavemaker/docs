@@ -1,11 +1,11 @@
 ---
 title: "Toggle"
-id: ""
+id: "toggle"
 ---
-
+--- 
 **Toggle widget **represents a physical switch that allows users to turn things on or off. Use Toggle controls to present users with exactly two mutually exclusive options (like on/off), where choosing option results in an immediate action.
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -40,7 +40,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
 |  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
 
-# Events
+## Events
 
 | **Event** | **Description** |
 | --- | --- |
@@ -53,6 +53,8 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | On mouse leave | The mouse leave event occurs when the mouse pointer leaves a widget. |
 | **Touch Events** |
 | On tap | This event handler is called whenever the tap event is triggered on a widget. |
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

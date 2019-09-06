@@ -1,11 +1,11 @@
 ---
 title: "Checkbox"
-id: ""
+id: "checkbox"
 ---
-
+---
 A checkbox is a specific type of two-states button that can be either checked or unchecked. Checkboxes let a user select an option. Examples: "_I agree to terms and conditions"_ etc. checked and unchecked options.
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -40,7 +40,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
 |  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
@@ -53,6 +53,8 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | On mouse leave | This event handler is called whenever the mouse leaves the widget. |
 | **Touch Events** |
 | On tap | This event handler is called whenever the widget is tapped. |
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

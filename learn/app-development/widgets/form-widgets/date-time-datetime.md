@@ -1,11 +1,11 @@
 ---
 title: "Date,  Time and  Datetime"
-id: ""
+id: "date-time-datetime"
 ---
-
+---
 **Date, Time and Datetime** widgets can be used to capture the date and time-related data from the user. Drag and drop of these widgets result in a composite widget along with a label.
 
-# Features
+## Features
 
 The main **properties** include
 
@@ -22,9 +22,9 @@ _Datetime Patterns_: [![](../../../assets/datetime_patterns.png)](../../../asset
 
 **Note**: For Time and Datetime widgets the time picker UI based on the time pattern given. For example, if the pattern is ‘hh:mm:ss a’, seconds and AM/PM pattern is displayed in time picker. If the pattern is ‘HH:mm’, 24Hr format is shown. Seconds and AM/PM are not displayed in time picker.
 
-# Properties
+## Properties
 
-### Date Properties
+## Date Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -148,7 +148,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
 |  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
 
-# Events
+## Events
 
 ### Date Events
 
@@ -191,6 +191,8 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | On mouse leave | This event handler is called whenever the mouse leaves the widget. |
 | **Touch Events** |
 | On tap | This event handler is called whenever the tap event is triggered on a widget. |
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

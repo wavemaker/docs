@@ -1,6 +1,7 @@
 ---
 title: "Slider"
-id: ""
+id: "slider"
+---
 ---
 
 **Sliders** are often the UI control of choice for letting users select a value or range from a fixed set of options. Sliders are good to use while:
@@ -9,7 +10,7 @@ id: ""
 - setting screen brightness
 - setting price range while purchasing things online
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -43,11 +44,13 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
 |  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
 | Change | This event handler is called each time your element's value changes. |
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

@@ -1,6 +1,6 @@
 ---
 title: "Chips"
-id: ""
+id: "chips"
 ---
 
 **Chips** represent complex entities in small blocks, such as a contact. Contact chips may represent contact information in a compact way. Chips can be used for various types of entities, including free-form text, predefined text, rules, or contacts. Chips may also contain icons.
@@ -13,7 +13,7 @@ id: ""
 
 Chips Widget is one of the Form Widgets. It is available to be used as a standalone widget or as a part of Live Forms, Data Entry Dialogs etc.
 
-# Features
+## Features
 
 1. The Chips widget **Value** property can be bound to a dataset of valid values for eg – Email Addresses, Hobbies, Skillset, Categories etc.. User can add new values but these new values will not be added to the dataset.
 2. It acts as **search/autocomplete** widget. When the user starts typing in the Chips widget, it triggers the selection of values from the dataset and shows the corresponding values for the character pressed.
@@ -52,7 +52,7 @@ Chips Widget is one of the Form Widgets. It is available to be used as a standal
 
 1. The user can drag and drop the element in the required place.
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -99,7 +99,7 @@ You can select from:
 | Disabled | If the disabled property is true (checked) the widget becomes display-only and user input will not be accepted. It can also set programmatically by binding it to a boolean type variable. |
 | Min Chars | The minimum number of characters to be entered by the user before the search query is triggered. The value should be greater than 0. The default value is 1. |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
@@ -142,7 +142,7 @@ where
 
  |
 
-# Use Cases
+## Use Cases
 
 **Example 1: Adding contacts and sending Emails**:  In this use case, you will be using the chips widget as email recipients and create a UI of Composing an Email.
 
@@ -199,6 +199,8 @@ where
     [![](../../../assets/chips_ex3_3.png)](../../../assets/chips_ex3_3.png)
 6. Preview the page [![](../../../assets/chips_ex3_4.png)](../../../assets/chips_ex3_4.png)
 7. Setting the chip item class name (or Class Name property) as skyblue, will apply skyblue class to all the chips at runtime. [![](../../../assets/chips_ex3_5.png)](../../../assets/chips_ex3_5.png)
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

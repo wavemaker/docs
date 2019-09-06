@@ -1,11 +1,11 @@
 ---
 title: "Textarea"
-id: ""
+id: "textarea"
 ---
 
 **Textarea widget** represents a multi-line plain-text editing control. It can be used in a web application for adding comments and feedback forms as a plain text editor.
 
-# Properties
+## Properties
 
 | Property | Description |
 | --- | --- |
@@ -33,7 +33,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Update value on | If the selected value is \`blur\`: data value will be updated on blur event, \`default\`: data value will be updated on key up. |
 | Update delay | The amount of delay in milliseconds to update the data value. |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
@@ -56,12 +56,14 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Browser | Shortcut key Trigger |
 | --- | --- |
 | Internet Explorer | \[Alt\] + shortcut key |
-| Chrome | \[Alt\] + shortcut key (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
-| Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
+| Chrome | \[Alt\] + shortcut key (Windows/Linux) |
+|  | \[Control\] \[Alt\] + shortcut key (MAC) |
+| Firefox | \[Alt\] \[Shift\] + shortcut key (Windows/Linux) |
+|  | \[Control\] \[Alt\] + shortcut key (MAC) |
 
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
+## See More
+
+[Form Widgets](/learn/app-development/widgets/widget-library/#form)
 
 - [3.1 Button](/learn/app-development/widgets/form/button/)
 - [3.2 Button Group](/learn/app-development/widgets/form/button-group/)

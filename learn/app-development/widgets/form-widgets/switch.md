@@ -1,11 +1,12 @@
 ---
 title: "Switch"
-id: ""
+id: "switch"
+---
 ---
 
 **Switch widget** can help switching between 3 or more different options by pressing a single key.
 
-# Properties
+## Properties
 
 | Property | Description |
 | --- | --- |
@@ -31,7 +32,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. |
 
-# Events
+## Events
 
 | **Event** | **Description** |
 | --- | --- |
@@ -42,6 +43,8 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | On mouse leave | The mouse leave event occurs when the mouse pointer leaves a widget. |
 | **Touch Events** |
 | On tap | This event handler is called whenever the tap event is triggered on a widget. |
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

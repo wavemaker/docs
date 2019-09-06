@@ -1,11 +1,14 @@
 ---
 title: "Number"
-id: ""
+id: "number"
+---
 ---
 
 ##### 10.0 release
 
-**Number widget** is an editor widget that accepts numeric input. You can:
+**Number widget** is an editor widget that accepts numeric input. 
+
+You can:
 
 1. Can be used in conjunction with the selected app Locale to display the number in the appropriate format.
 2. Limit the input by applying maximum character length.
@@ -30,7 +33,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Default Value** |
 | Value | This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget. |
 | **Validation** |
-| Required | A required editor in _wm.LiveForm_ may refuse to save without a required field. |
+| Required | A required editor in ```wm.LiveForm``` may refuse to save without a required field. |
 | Regular Expression | Enter any regular expression to be used to validate user input for client-side input validation. |
 | Minimum value | Enter minimum value user is allowed to enter. |
 | Maximum value | Enter maximum value user is allowed to enter. |
@@ -66,34 +69,16 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Browser | Shortcutkey Trigger |
 | --- | --- |
 | Internet Explorer | \[Alt\] + shortcutkey |
-| Chrome | \[Alt\] + shortcutkey (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcutkey (_MAC_) |
-| Firefox | \[Alt\] \[Shift\] + shortcutkey (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcutkey (_MAC_) |
+| Chrome | \[Alt\] + shortcutkey (Windows/Linux) |
+|  | \[Control\] \[Alt\] + shortcutkey (MAC) |
+| Firefox | \[Alt\] \[Shift\] + shortcutkey (Windows/Linux) |
+|  | \[Control\] \[Alt\] + shortcutkey (MAC) |
 
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
+## See More
 
-- [3.1 Button](/learn/app-development/widgets/form/button/)
-- [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
-- [3.3 Calendar](/learn/app-development/widgets/form/calendar/)
-- [3.4 Checkbox](/learn/app-development/widgets/form/checkbox/)
-- [3.5 Checkboxset](/learn/app-development/widgets/form/checkboxset/)
-- [3.6 Chips](/learn/app-development/widgets/form-widgets/chips/)
-- [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
-- [3.8 Currency](/learn/app-development/widgets/form/currency/)
-- [3.9 Date](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.11 File Upload](/learn/app-development/widgets/form/file-upload/)
-- [3.12 Number](#)
-    - [i. Properties](#properties)
-    - [ii. Events](#events)
-- [3.13 Radioset](/learn/app-development/widgets/form/radioset/)
-- [3.14 Rating](/learn/app-development/widgets/form/rating/)
-- [3.15 Select](/learn/app-development/widgets/form/select/)
-- [3.16 Select Locale](/learn/app-development/widgets/form/select-locale/)
-- [3.17 Slider](/learn/app-development/widgets/form/slider/)
-- [3.18 Switch](/learn/app-development/widgets/form/switch/)
-- [3.19 Text](/learn/app-development/widgets/form/text/)
-- [3.20 Textarea](/learn/app-development/widgets/form/textarea/)
-- [3.21 Time](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.22 Toggle](/learn/app-development/widgets/form/toggle/)
+[Form Widgets](/learn/app-development/widgets/widget-library/#form)  
+[Currency](/learn/app-development/widgets/form/currency/)  
+[Date](/learn/app-development/widgets/form-widgets/date-time-datetime/)  
+[Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)  
+[Text](/learn/app-development/widgets/form/text/)  
+

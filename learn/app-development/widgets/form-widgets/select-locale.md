@@ -1,6 +1,7 @@
 ---
 title: "Select Locale"
-id: ""
+id: "select-locale"
+---
 ---
 
 Localization refers to the tools, techniques, and steps taken to enable your application to run in other languages. WaveMaker allows you to create a  dictionary of localized messages so that users can change the language of the application to experience the application in their language.
@@ -14,7 +15,7 @@ There are three ways that Localization comes into effect:
     App.changeLocale({'datavalue': 'en'})
     
 
-# Properties
+## Properties
 
 | Property | Description |
 | --- | --- |
@@ -46,7 +47,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
@@ -78,10 +79,12 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
 |  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
 
-# Use Cases
+## Use Cases
 
 - [Simple Usage Scenario](/learn/app-development/widgets/form-widgets/select-locale-usage/)
 - [Localization of Error Messages](/learn/how-tos/localization-error-messages/)
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

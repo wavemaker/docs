@@ -1,8 +1,8 @@
 ---
 title: "CheckboxSet"
-id: ""
+id: "checkboxset"
 ---
-
+---
 CheckboxSet allows you to group a set of checkboxes under a common heading. You need to bind to a dataset to display a checkbox for each value.
 
 [![](../../../assets/checkboxset_struct.jpg)](../../../assets/checkboxset_struct.jpg)
@@ -11,7 +11,7 @@ Using the Group By property you can group the items together under a heading. Th
 
 [![](../../../assets/checkboxset_group.png)](../../../assets/checkboxset_group.png)
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -42,7 +42,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Collapsible | Enable control for collapsing and expanding the group. |
 | Show Count | To display the number of items within the group. |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
@@ -56,10 +56,12 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Callback Events** |
 | On ready | This event handler is called when the container is loaded. |
 
-# Use Cases
+## Use Cases
 
 - [Working with Selection Widgets](/learn/how-tos/selection-widgets-use-case/)
 - [How to use CheckboxSet widget to filter a List](/learn/how-tos/checkboxset-filter-list-data/)
+
+## See More
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

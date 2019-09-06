@@ -1,13 +1,13 @@
 ---
 title: "Select"
-id: ""
+id: "select"
 ---
 
 The Select widget provides a way for users to select an item from a drop-down list of choices. The selection can be captured through the _displayValue_ property.
 
 The number of records fetched will be limited by the "Records per Request" property of the underlying Variable to which the Select widget is bound to. Refer to the corresponding Variable to change this value.
 
-# Properties
+## Properties
 
 | Property | Description |
 | --- | --- |
@@ -39,7 +39,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
@@ -62,12 +62,14 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Browser | Shortcut key Trigger |
 | --- | --- |
 | Internet Explorer | \[Alt\] + shortcut key |
-| Chrome | \[Alt\] + shortcut key (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
-| Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
+| Chrome | \[Alt\] + shortcut key (Windows/Linux) |
+|  | \[Control\] \[Alt\] + shortcut key (MAC) |
+| Firefox | \[Alt\] \[Shift\] + shortcut key (Windows/Linux) |
+|  | \[Control\] \[Alt\] + shortcut key (MAC) |
 
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
+## See More
+
+[Form Widgets](/learn/app-development/widgets/widget-library/#form)
 
 - [3.1 Button](/learn/app-development/widgets/form/button/)
 - [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
