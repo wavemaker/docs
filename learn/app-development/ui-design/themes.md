@@ -1,6 +1,7 @@
 ---
 title: "Themes"
-id: ""
+id: "themes"
+---
 ---
 
 **Themes** are style elements which work at the widget or UI component level. Themes help you provide a consistent look and feel to your application. Theme mainly contains the following styling for all the elements on the page:

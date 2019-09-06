@@ -1,17 +1,16 @@
 ---
-title: "Developer Integrations"
-id: ""
+title: "Test and Run (Preview) Apps"
+id: "developer-tools"
 ---
-
-# Test Run (Preview) Apps
+---
 
 Once the design and building an app is completed, it needs to be tested. The easiest way to test an application is to click the **Preview **button from WaveMaker Studio. When you click Preview**, **you are given a URL for the web application that can be accessed by anyone in your network (e.g., by anyone inside your network firewall).
 
-### Preview Application
+## Preview Application
 
-**Preview **is recommended only for test or trial purpose as the application is deployed to the WaveMaker server provided with WaveMaker Studio. When you stop WaveMaker Studio, using the WaveMaker console, the application stops too.
+**Preview** is recommended only for test or trial purpose as the application is deployed to the WaveMaker server provided with WaveMaker Studio. When you stop WaveMaker Studio, using the WaveMaker console, the application stops too.
 
-- Click **Preview **will run the application in a new browser window.
+- Click **Preview** will run the application in a new browser window.
 - The app will open the page within the app from where you clicked the Preview button. In case the app is secured, then you will be prompted to login and based on the permissions you will be redirected to the appropriate page.
 - An **Application Preview** will be displayed, where one can select the **target device** to run the app. This will give you an idea of how the app looks on various devices like various laptop, tablet, and phone sizes.
 - **QR code** is also displayed which can be used to access the app on a mobile device with ease. You can choose to remove this preview toolbar if not needed. [![](../../assets/app_preview.png)](../../assets/app_preview.png)

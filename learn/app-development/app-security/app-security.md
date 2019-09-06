@@ -1,9 +1,8 @@
 ---
 title: "App Security"
-id: ""
+id: "app-security"
 ---
-
-**Overview**
+---
 
 The WaveMaker security feature offers comprehensive security solutions to secure the apps developed. WaveMaker offers application level security and the two major areas are “Authentication” and “Authorization”. In practice, once Wavemaker security is enabled, both authentication and authorization are available to be taken advantage of and are intertwined. “**Authentication**” is the process of establishing a principal who they claim to be (a “principal” generally means a user, device or some other system which can perform an action in your application). “**Authorization**” or “**Access-Control**” refers to the process of deciding whether a principal is allowed to perform an action within your application. "**Onboarding**" is the process of retrieving user's data from various providers like DB, LDAP, AD or any custom provider. This data includes roles and role groups information. Then, Authentication is done based on user credentials, which are obtained from the security provider; and Authorization or access to various app resources such as widgets, pages, data, and APIs can be controlled through configuration.
 

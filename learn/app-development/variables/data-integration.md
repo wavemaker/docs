@@ -1,6 +1,7 @@
 ---
 title: "Data Integration - Binding Layer"
-id: ""
+id: "data-integration"
+---
 ---
 
 The **binding layer** provides a _low-code approach_ to defining data flows, interaction, and integration of UI elements with the backend services.

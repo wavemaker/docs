@@ -7,9 +7,9 @@ sidebar_label: "Welcome to WaveMaker LC"
 
 ---
 
-WaveMaker is a low-code platform for developing enterprise apps. It is a design studio with over 80 widgets that work out-of-the-box for developing a rich and modern end-to-end application. Simply drag-and-drop UI components and bind them with data and services. 
+[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing enterprise apps. It is a design studio with over [80 widgets](/learn/app-development/widgets/widget-library) that work out-of-the-box for developing a rich and modern end-to-end application. Simply drag-and-drop UI components and bind them with data and services. 
 
-WaveMaker apps are built on the concept called variables. You can create simple to complex variables which contain data and services. You bind them with the UI in a few clicks and done. Also, you can extend your app using APIs, web services, or write your own code to extend an original feature. 
+WaveMaker apps are built on the concept called [variables](/learn/app-development/variables/variables-actions). You can create simple to complex variables which contain data and services. You bind them with the UI in a few clicks and done. Also, you can extend your app using APIs, web services, or write your own code to extend an original feature. 
 
 In addition, WaveMaker is also a simple-to-use solution for building apps faster with one-click deployment. In this section, you can find a complete developers' guide for building apps in WaveMaker Studio.
 

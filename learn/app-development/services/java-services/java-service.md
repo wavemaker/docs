@@ -1,6 +1,7 @@
 ---
 title: "Java Service"
-id: ""
+id: "java-service"
+---
 ---
 
 ## **Overview**

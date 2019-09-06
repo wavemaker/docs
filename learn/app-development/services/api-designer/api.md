@@ -1,6 +1,7 @@
 ---
 title: "Application Programming Interface (API)"
-id: ""
+id: "api"
+---
 ---
 
 **Application Programming Interfaces** or APIs are the building blocks of the modern web. APIs enable simplifying the access to a program’s internal functions by an external application through a set of request and response messages. WaveMaker uses an API-driven app development approach wherein [REST APIs](http://www.restapitutorial.com/lessons/whatisrest.html) are generated automatically for the application. Every service, be it Database Service or Java Service, that is imported into an application generates REST APIs. These are available for modification and consumption through the **API Designer**.

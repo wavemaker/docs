@@ -1,6 +1,7 @@
 ---
 title: "3rd Party Libraries"
-id: ""
+id: "3rd-party-libraries"
+---
 ---
 
 There will be times when you want to use external resources in your application. These may be in the form of images, audio files, video files, JavaScript files, UI designs etc. WaveMaker understands these needs and facilitates the usage.

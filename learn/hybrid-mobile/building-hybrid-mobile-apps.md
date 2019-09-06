@@ -1,6 +1,6 @@
 ---
 title: "Building Hybrid Mobile Apps"
-id: ""
+id: "building-hybrid-mobile-apps"
 ---
 
 # Hybrid App Architecture

@@ -1,8 +1,8 @@
 ---
 title: "Design Overview"
-id: ""
+id: "design-overview"
 ---
-
+---
 # Understanding App UI Design
 
 An application is a collection of pages, with each page being composed of various UI elements or Widgets. These UI elements enable user interaction with the app and can get data from backend Services via Variable binding. Navigation and interaction rules can be setup across pages. Thus, the UI design becomes an integral part of any app development.
