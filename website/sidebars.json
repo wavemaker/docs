@@ -28,11 +28,45 @@
 
       "Data & Services": 
       [
-        "app-development/services/creating-backend-services",
         "app-development/variables/variables",
-        "app-development/services/database-services/database-services",
-        "app-development/services/web-services/web-services",
-        "app-development/services/java-services/java-service",
+        "app-development/services/creating-backend-services",
+        {
+          "type": "subcategory",
+          "label": "Database",
+          "ids": [
+            "app-development/services/database-services/database-services",
+            "app-development/services/database-services/working-with-databases",
+            "app-development/services/database-services/data-modelling",
+            "app-development/services/database-services/database-schema-import-modes",
+            "app-development/services/database-services/working-database-schema",
+            "app-development/services/database-services/temporal-support",
+            "app-development/services/database-access",
+            "app-development/services/database-services/working-with-queries",
+            "app-development/services/database-services/working-stored-procedures",
+            "app-development/services/database-services/versioning-queries-procedures",
+            "app-development/services/database-services/blob-support-queries-procedures",
+            "app-development/services/database-services/invoking-queriesprocedures-java-services",
+            "app-development/services/database-services/database-views",
+            "app-development/services/database-tools",
+            "app-development/services/database-services/orm-artifacts"]
+        },
+
+        {
+        "type": "subcategory",
+        "label": "Web Services",
+        "ids": ["app-development/services/web-services/web-services"]
+
+        
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Java Services",
+          "ids": ["app-development/services/java-services/java-service"]
+  
+          
+        },
+
         "app-development/services/api-designer/api",
         "app-development/services/3rd-party-libraries"
       ],  

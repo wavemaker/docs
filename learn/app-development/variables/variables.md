@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Variables"
 id: ""
-sidebar_label: "Variables"
+sidebar_label: "Introduction to Variables"
 ---
 Learn about Variables in WaveMaker low-code platform. See how it works and how to use them as services.
 
@@ -20,7 +20,7 @@ Variables can be represented using a block with 3 faces, as in the picture below
 [![variable representation](../../assets/var_representation.png)](../../assets/var_representation.png)
 
 ## Variable Types
-
+---
 Variables can be categorized based on the target action:
 
 |No.|Variable Types|See|
@@ -31,9 +31,13 @@ Variables can be categorized based on the target action:
 
 
 ## 1. Database CRUD
+---
 The basic insert, read, update and delete operations on an imported database entities can be performed using the default CRUD APIs generated at the time of import by the platform. For more information, see [Database CRUD](/learn/app-development/variables/database-crud/).
 
+
+
 ## 2. APIs
+---
 Variables can be created to be based upon the various APIs exposed by the services integrated within the app. These can be further classified as as following. 
 
 ### Database APIs
@@ -48,15 +52,17 @@ For every Java Service created within WaveMaker, its REST API contract is auto-g
 ### Security Services
 In case security is enabled for the app, you have access to various security-related data. For more information, see [Security Services](/learn/app-development/variables/security-service/).
 
-## Other Services
+## 3. Other Services
+---
 
-### Model
+### Model Variable
 To store data on the client side. For more information, see [Model Variable](/learn/app-development/variables/model-variable/).
 
-### Device
+### Device Variable
 For Mobile Apps, the various device information can be used to access the respective devices like camera, contacts, and more. For more information, see [Device Variable](/learn/hybrid-mobile/device-variables/).
 
 ## Scope of Variables
+---
 
 Variables and Actions can be classified into two based on the scope of the Variable. The two types of variables are - **Application** and **Page** level variables. While both these types reside at the _client side_, the _application level_ variables share the data across multiple pages, whereas _Page level_ variables share the data within the page where they have been declared/created. Whenever you are switching from one page to another, all the previous page level variables are destroyed.  
 
