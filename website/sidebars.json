@@ -25,7 +25,7 @@
         "app-development/ui-design/themes"
       ],
 
-    "Backend services": 
+    "Backend": 
       [
         "app-development/services/creating-backend-services",
         "app-development/services/web-services/web-services",
@@ -35,18 +35,18 @@
         "app-development/services/3rd-party-libraries"
       ],   
 
-    "Bind services": 
+    "Binding": 
       [
         "app-development/variables/data-integration"
 
       ],
 
-    "App security": 
+    "Security": 
       [
         "app-development/app-security/app-security"
       ],
       
-    "Dev integration": 
+    "Test": 
       [
         "app-development/dev-integration/developer-tools"
       ],
@@ -56,7 +56,7 @@
         "app-development/deployment/one-click-deployment"
       ], 
 
-    "Mobile apps": 
+    "Mobile app": 
     [
         "hybrid-mobile/building-hybrid-mobile-apps",           
       {

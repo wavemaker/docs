@@ -1,12 +1,11 @@
 ---
-title: "Platform Overview"
+title: "WaveMaker Platform Architecture"
 id: "platform-overview"
+sidebar_label: "WaveMaker Platform"
 ---
 Learn how WaveMaker modern apps work.
 
 ---
-# Modern Web Apps
-
 Application architectures have been constantly evolving, embracing changes in the technology trends like AJAX, cloud, mobile etc. Modern Web application development demands an understanding of these trends and adopting the architectural aspects into development practices.
 
 For Enterprise developers, the challenge is mounting to make a shift from legacy application systems, where they interact with desktop-based monolithic software apps to modern web and mobile apps. The skills required for understanding the fast-paced technology changes are very high and making the right technology choices to be able to build apps for future is quite a daunting task.
