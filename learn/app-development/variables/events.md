@@ -1,57 +1,12 @@
 ---
-title: "Variables &  Actions"
+title: "Events"
 id: ""
 ---
+Introducing Variable Events. Learn how it works in WaveMaker. 
 
-Variables and Actions form the glue between the frontend UI and the backend services. While Variables provide data integration for the widgets, Actions implement the business logic, rules and data flows.
+---
 
-In this document, we give an overview of how Variables and Actions work, the various types, events, and implementation.
-
-**Variables** function by invoking the associated REST APIs on the server-side, invoking the client-side JavaScript events that are associated or bound by configuration, after the response is obtained. Variables play a significant role in binding the UI and the backend services layer together through configuration and events, eliminating the necessity to write a lot of code.
-
-Variables can be represented using a block with 3 faces, as in the picture below, representing the APIs invoked, events processed and the Model or Entity objects returned by the APIs.
-
-[![variable representation](../../assets/var_representation.png)](../../assets/var_representation.png)
-
-# Variables
-
-Variables can be categorized based on the target action:
-
-1. **Database CRUD** - The basic insert, read, update and delete operations on an imported database entities can be performed using the default CRUD APIs generated at the time of import by the platform. [More](/learn/app-development/variables/database-crud/).
-2. **APIs **\- Variables can be created to be based upon the various APIs exposed by the services integrated within the app. These can be further classified as:
-    1. **Database APIs** - Database import generates several APIs for functionalities like Count, Filter, Get by field name, Get associated table data etc. apart from the default CRUD APIs and can be used for more control over the database. These Database APIs also include those corresponding to Queries and Procedures created within the data model. [More](/learn/app-development/variables/database-apis/).
-    2. **Web Service** - Variable can be created to access the APIs exposed by the imported web service. [More](/learn/app-development/variables/web-service/).
-    3. **Java Service** - For every Java Service created within WaveMaker, its REST API contract is auto-generated and the same can be accessed through a Variable. [More](/learn/app-development/variables/java-services/).
-    4. **Security Service** - In case security is enabled for the app, you have access to various security-related data. [More](/learn/app-development/variables/security-service/).
-3. **Other**
-    1. **Model** - To store data on the client side. [More](/learn/app-development/variables/model-variable/).
-    2. **Device** - For Mobile Apps, the various device information can be used to access the respective devices like camera, contacts, etc. [More](/learn/hybrid-mobile/device-variables/).
-
-# Actions
-
-Actions are the tasks performed such as invoking a backend API, database CRUD operation or navigating to another page etc. when a UI event occurs. Events could be either user-initiated or can occur as a result of another task being performed.
-
-Actions can be categorized based on the triggering event:
-
-1. **Navigation** to pass control from one page to another passing data if needed. [More](/learn/app-development/variables/navigation-action/).
-2. **Login** to trigger at the time of user login. [More](/learn/app-development/variables/login-action/).
-3. **Logout** to trigger at the time of user logout. [More](/learn/app-development/variables/logout-action/).
-4. **Timer** to trigger an action based on time interval. [More](/learn/app-development/variables/timer-action/).
-5. **Notification** to alert the user of any information. [More](/learn/app-development/variables/notification-action/).
-
-# Error Handling
-
-WaveMaker Variables dealing with external services like Web, Database etc. may not always return with a successful response. Sometimes the Variable call may fail due to various reasons like server validation, request timeout, etc. To gracefully handle such scenarios, a default **Notification Action **(_toaster target_) named _appNotification_ is created in the app. By default, all Variables invoke this action on error response from the target service. This enables the app has a central point of error handling. The default appNotification Action can further be customized as per requirement. For example, if you want the app to display errors in an alert dialog, the appNotification action can be changed to alert type. To suppress the default error handling, simply delete the appNotification action. [Know more about error handling](/learn/how-tos/error-handling-wavemaker-app/).
-
-[![variable error](../../assets/vars_error.png)](../../assets/vars_error.png)
-
-# Scope of Variables
-
-Variables and Actions can be classified into two based on the scope of the Variable. The two types of variables are - **Application** and **Page** level variables. While both these types reside at the _client side_, the _application level_ variables share the data across multiple pages, whereas _Page level_ variables share the data within the page where they have been declared/created. Whenever you are switching from one page to another, all the previous page level variables are destroyed. [![var_scope](../../assets/var_scope.png)](../../assets/var_scope.png) **NOTE**: It is advised to have unique names for any variable to avoid confusion. Whenever you try to create or rename a variable WaveMaker will throw an error if another variable of the same name exists either within the page or at the app level.
-
-# Variable Events
-
-In a typical life-cycle:
+In a typical life-cycle of Events:
 
 1. A user action triggers an event for the variable.
 2. The event action talks to the data source via the API call.
@@ -68,7 +23,7 @@ Four actions can be said to be responsible for triggering a variable life-cycle:
 
 [![var_triggers](../../assets/var_triggers.png)](../../assets/var_triggers.png)
 
-# Events Implementation
+## Events Implementation
 
 During the life cycle of a Variable, a set of events are emitted by the Variable, thus giving you the option to control the behavior of the Variable such as input data validations, data processing, success/error handling, etc.
 
@@ -78,27 +33,27 @@ Based on the application needs, a component can be assigned to these events like
 
 A typical event flow when a variable is used to update data would be:
 
-[![lsv_eventcycle](../../assets/LSV_eventcycle.png)](../../assets/LSV_eventcycle.png) NOTE: The onBeforeUpdate event in the above diagram differs based upon the type of variable as explained in the table below. It is:
+[![lsv_eventcycle](../../assets/LSV_eventcycle.png)](../../assets/LSV_eventcycle.png) 
+
+:::note
+The onBeforeUpdate event in the above diagram differs based upon the type of variable as explained in the table below. It is:
 
 - onBeforeListRecords for Database CRUD Variable with READ operation
 - onBeforeUpdateRecord for Database CRUD Variable with UPDATE operation
 - onBeforeInsertRecord for Database CRUD Variable with INSERT operation
 - onBeforeDeleteRecord for Database CRUD Variable with DELETE operation
 - onBeforeUpdate for all types of variables except Database CRUD Variable
+:::
 
-| Event | Description |
+| Events | Description |
 | --- | --- |
 | **onCanUpdate** | This event is called as soon as the variable is ready to be triggered to hit the target service. |
-| **onBeforeListRecords** (for READ operation of Database CRUD variable) | This event is called just before the variable is triggered to hit the target service. “dataFilter” contains an object based on the filter criteria set (that appear under the “Filter Criteria” tab of Variable definition dialog). Each criteria contains the following information - Field Name, Condition, and Value. You can retrieve the criteria using the following method: dataFilter.getCriteria(“field-name”) and make any changes. Allowed actions on the criteria are:
-- Retrieve/Validate data of a particular field.
-- Change the value of a particular field.
+| **onBeforeListRecords** (for READ operation of Database CRUD variable) | This event is called just before the variable is triggered to hit the target service. “dataFilter” contains an object based on the filter criteria set (that appear under the “Filter Criteria” tab of Variable definition dialog). Each criteria contains the following information - Field Name, Condition, and Value. You can retrieve the criteria using the following method: dataFilter.getCriteria(“field-name”) and make any changes. Allowed actions on the criteria are:<br> - Retrieve/Validate data of a particular field. <br> - Change the value of a particular field.  |
 
- |
-| **Usage Examples** |
-| 
+### Example 1: Filter 
+Change filter criteria as per your use case.
 
-Example 1: Filter Criteria can be changes as per your use case.
-
+```
 Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, options) {
     // Validate or retrieve the data of a particular field
     if (dataFilter.getCriteria("jobtitle")\[0\].value == "Product Manager") {
@@ -109,12 +64,11 @@ Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, option
     }
   };
 };
+```
 
- |
-| 
+### Example 2: Stop execution
 
-Example 2: Stop execution for a given condition.
-
+```
 Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, options) {
     // Validate or retrieve the data of a particular field
     if (dataFilter.getCriteria("deptId")\[0\].value == 1) {
@@ -125,27 +79,26 @@ Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, option
     }
   };
 };
+```
+| Events | Description |
+| --- | --- |
+| For Database CRUD Variables  |
+|**onBeforeUpdateRecord** (for Update operation) <br> **onBeforeInsertRecord** (for Insert operation) <br> **onBeforeDeleteRecord** (for Delete operation) | These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place. |
 
- |
-| For Database CRUD Variables
+### Example 1
+Input data can be modified by simply modifying the “inputData” parameter passed to the function. Please note, calling setInput on the Variable from this event is not valid. “inputData” param should directly be modified.
 
-**onBeforeUpdateRecord** (for Update operation) **onBeforeInsertRecord** (for Insert operation) **onBeforeDeleteRecord** (for Delete operation) | These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place. |
-| **Usage Examples** |
-| 
-
-Example 1: Input data can be modified by simply modifying the “inputData” parameter passed to the function. Please note, calling setInput on the Variable from this event is not valid. “inputData” param should directly be modified.
-
+```
 Page.empInsertonBeforeInsertRecord = function(variable, inputData, options) {
     // append/modify fields in the current input data
     inputData.firstname = "Steve";
     inputData.lastname = "Rogers";
 };
+``` 
 
- |
-| 
-
-Example 2: Input data can also be modified by returning a new set of input data (object having key-value pair of input data)
-
+### Example 2
+Input data can also be modified by returning a new set of input data (object having key-value pair of input data)
+```
 Page.empInsertonBeforeInsertRecord = function(variable, inputData, options) {
     // return a new set of input data (old one is discarded)
     var new\_data = {
@@ -154,12 +107,11 @@ Page.empInsertonBeforeInsertRecord = function(variable, inputData, options) {
     };
     return new\_data;
 };
+```
 
- |
-| 
-
-Example 3: If the call to the target service is to be blocked due to any validation failure, return false
-
+### Example 3
+If the call to the target service is to be blocked due to any validation failure, return false
+```
 Page.empInsertonBeforeInsertRecord= function(variable, inputData, options) {
     // Validation Check for mandatory input fields
     // example, block the call if input data does not have fields 'firstname' or 'lastname'
@@ -167,27 +119,27 @@ Page.empInsertonBeforeInsertRecord= function(variable, inputData, options) {
         return false;
     }
 };
+```
 
- |
-| For all Variables except Database Crud Variables
+| Events | Description |
+| --- | --- |
+| For all Variables |All Variables, except Database Crud Variables. |
+| **onBeforeUpdate** | These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place. |
+ 
 
-**onBeforeUpdate** | These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place. |
-| **Usage Examples** |
-| 
-
-Example 1: Input data can be modified by simply modifying the “inputData” parameter passed to the function. Please note, calling setInput on the Variable from this event is not valid. “inputData” param should directly be modified.
-
+### Example 1
+Input data can be modified by simply modifying the “inputData” parameter passed to the function. Please note, calling setInput on the Variable from this event is not valid. “inputData” param should directly be modified.
+```
 Page.MyJavaServiceVariableonBeforeUpdateRecord = function(variable, inputData, options) {
     // append/modify fields in the current input data
     inputData.firstname = "Steve";
     inputData.lastname = "Rogers";
 };
+```
 
- |
-| 
-
-Example 2: Input data can also be modified by returning a new set of input data (object having key-value pair of input data)
-
+### Example 2
+Input data can also be modified by returning a new set of input data (object having key-value pair of input data)
+```
 Page.MyJavaServiceVariableonBeforeUpdate = function(variable, inputData, options) {
     // return a new set of input data (old one is discarded)
     var new\_data = {
@@ -196,12 +148,11 @@ Page.MyJavaServiceVariableonBeforeUpdate = function(variable, inputData, options
     };
     return new\_data;
 };
+```
 
- |
-| 
-
-Example 3: If the call to the target service is to be blocked due to any validation failure, return false
-
+### Example 3
+If the call to the target service is to be blocked due to any validation failure, return false
+```
 Page.MyJavaServiceVariableonBeforeUpdate = function(variable, inputData, options) {
     // Validation Check for mandatory input fields
     // example, block the call if input data does not have fields 'firstname' or 'lastname'
@@ -209,8 +160,9 @@ Page.MyJavaServiceVariableonBeforeUpdate = function(variable, inputData, options
         return false;
     }
 };
-
- |
+```
+| Events | Description |
+| --- | --- |
 | **onResult** | This event is triggered as soon as the variable receives a response from the target service. onResult is called whether or not there was an error generated. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
 | **onBeforeDatasetReady** | This event is triggered just before the variable's dataSet property is updated with the data received from the target service (after onResult). This event handler gives you the opportunity to manipulate the data before your variable’s dataSet property is assigned this value. If you want to add rows to a Grid or List or Select, this is a good way to add in extra items into your results before your variable is set and your widget is updated. The new data can be returned from here in order to update the Variable’s dataSet. |
 | **Usage Examples** |
@@ -238,9 +190,11 @@ Page.HrdbEmployeeDataonBeforeDatasetReady = function(variable, data) {
 
 **NOTE**: WaveMaker supports binding multiple actions to a given event, i.e. a given event can trigger multiple actions.
 
-# Methods
+## Methods
 
 Few Methods are exposed on Variables which can be used for achieving more control and accessing extra functionality. The methods differ based on the type of Variable, see the respective Variable document for the detailed listing.
+
+
 
 < Data Integration
 

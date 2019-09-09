@@ -1,7 +1,7 @@
 {
   "docs": 
   {
-    "Hello WaveRiders!": 
+    "Hello WaveMakers!": 
       [
         "index", 
         "app-development/wavemaker-overview/platform-overview"
@@ -22,38 +22,44 @@
         "app-development/ui-design/design-overview",
         "app-development/ui-design/page-concepts",
         "app-development/ui-design/page-artefacts",
-        "app-development/ui-design/themes"
+        "app-development/ui-design/themes",
+        "app-development/widgets/widget-library"
       ],
 
-    "Backend": 
+      "Data & Services": 
       [
         "app-development/services/creating-backend-services",
-        "app-development/services/web-services/web-services",
+        "app-development/variables/variables",
         "app-development/services/database-services/database-services",
+        "app-development/services/web-services/web-services",
         "app-development/services/java-services/java-service",
         "app-development/services/api-designer/api",
         "app-development/services/3rd-party-libraries"
-      ],   
+      ],  
 
-    "Binding": 
+      "Integration": 
       [
-        "app-development/variables/data-integration"
-
-      ],
+        "app-development/variables/data-integration",
+        "app-development/variables/variable-binding",
+        "app-development/variables/actions",
+        "app-development/variables/events",
+        "app-development/variables/accessing-elements-via-javascript"
+      ], 
 
     "Security": 
       [
         "app-development/app-security/app-security"
       ],
       
-    "Test": 
+    "Testing": 
       [
         "app-development/dev-integration/developer-tools"
       ],
 
     "Build & deploy": 
       [
-        "app-development/deployment/one-click-deployment"
+        "app-development/deployment/one-click-deployment",
+        "how-tos/localization-wavemaker-apps"
       ], 
 
     "Mobile app": 
@@ -130,7 +136,7 @@
       "tutorials"
     ],
 
-    "All faqs": [
+    "Expand all faqs": [
       "app-development/wavemaker-app-development-faqs/what-is-wavemaker-app", 
       "app-development/wavemaker-app-development-faqs/skills-need-build-to-wavemaker-app", 
       "app-development/wavemaker-app-development-faqs/app-development-using-rad",
