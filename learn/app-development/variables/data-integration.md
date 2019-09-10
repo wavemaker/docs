@@ -1,6 +1,7 @@
 ---
 title: "Data Integration - Binding Layer"
 id: "data-integration"
+sidebar_label: "Data Integration Overview"
 ---
 ---
 

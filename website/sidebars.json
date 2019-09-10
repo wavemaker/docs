@@ -1,7 +1,7 @@
 {
   "docs": 
   {
-    "Hello WaveMakers!": 
+    "Introduction": 
       [
         "index", 
         "app-development/wavemaker-overview/platform-overview"
@@ -26,9 +26,8 @@
         "app-development/widgets/widget-library"
       ],
 
-      "Data & Services": 
+      "Backend": 
       [
-        "app-development/variables/variables",
         "app-development/services/creating-backend-services",
         {
           "type": "subcategory",
@@ -54,9 +53,11 @@
         {
         "type": "subcategory",
         "label": "Web Services",
-        "ids": ["app-development/services/web-services/web-services"]
-
-        
+        "ids": ["app-development/services/web-services/web-services",
+              "app-development/services/web-services/rest-services",
+              "app-development/services/web-services/oauth-2-0-rest-services",
+              "app-development/services/web-services/working-with-soap-services",              
+              "app-development/services/web-services/working-with-websockets"]       
         },
 
         {
@@ -74,6 +75,7 @@
       "Integration": 
       [
         "app-development/variables/data-integration",
+        "app-development/variables/variables",
         "app-development/variables/variable-binding",
         "app-development/variables/actions",
         "app-development/variables/events",

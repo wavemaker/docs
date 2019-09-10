@@ -7,7 +7,7 @@ Learn about Variables in WaveMaker low-code platform. See how it works and how t
 
 ---
 
-Variables and Actions form the glue between the frontend UI and the backend services. While Variables provide data integration for the widgets, Actions implement the business logic, rules and data flows.
+Variables and Actions form the glue between the frontend UI and the backend services. While Variables provide data integration for the widgets, Actions implement the business logic, rules and data flows. For more information about implementing actions, see [Actions](/learn/app-development/variables/actions).
 
 In this document, we give an overview of how Variables work and the types of Variables in WaveMaker.
 
