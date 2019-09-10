@@ -21,17 +21,21 @@
       [
         "app-development/ui-design/design-overview",
         "app-development/ui-design/page-concepts",
+        "app-development/ui-design/page-creation",
+        "app-development/ui-design/page-concepts/partial-pages",
+        "learn/app-development/ui-design/page-concepts/page-layouts",
+        "app-development/ui-design/page-concepts/page-templates",
+        "app-development/ui-design/project-shells",        
         "app-development/ui-design/page-artefacts",
         "app-development/ui-design/themes",
-        "app-development/widgets/widget-library"
-      ],
+        "app-development/ui-design/use-cases-ui-design"],
 
-      "Backend": 
+      "Services": 
       [
         "app-development/services/creating-backend-services",
         {
           "type": "subcategory",
-          "label": "Database",
+          "label": "Database Services",
           "ids": [
             "app-development/services/database-services/database-services",
             "app-development/services/database-services/working-with-databases",
@@ -63,13 +67,33 @@
         {
           "type": "subcategory",
           "label": "Java Services",
-          "ids": ["app-development/services/java-services/java-service"]
+          "ids": ["app-development/services/java-services/java-service",
+                  "app-development/services/java-services/java-integration-services",
+                  "app-development/services/java-services/variables",
+                  "app-development/services/java-services/generated-rest-apis-api-designer"
+                  ]
   
           
         },
 
-        "app-development/services/api-designer/api",
-        "app-development/services/3rd-party-libraries"
+        {
+          "type": "subcategory",
+          "label": "APIs",
+          "ids": ["app-development/services/api-designer/api",
+            "app-development/services/api-designer/database-service-apis",
+            "app-development/services/api-designer/web-service-apis",
+            "app-development/services/api-designer/java-service-apis",
+            "app-development/services/api-designer/security-service-apis"]           
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Third Party Libraries",
+          "ids": ["app-development/services/3rd-party-libraries",
+            "app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
+            "app-development/services/3rd-party-libraries/using-3rd-party-jar-files"]           
+        } 
+        
       ],  
 
       "Integration": 

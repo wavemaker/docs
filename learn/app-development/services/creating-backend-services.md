@@ -1,20 +1,32 @@
 ---
-title: "Creating Backend Services"
+title: "Backend Services Overview"
 id: "creating-backend-services"
 ---
 ---
 
 WaveMaker handles external data as a service. Based on the underlying data being served, services are categorized as _Web Services_, _Database_ and _Java Services_. Each of these services is converted to a RESTful service and is consumed through their respective REST APIs.
 
+## Quick Start Guide
+
+|No.| To | See |
+|---|---|---|
+|1.|Learn about Database Services|[Database Services](/learn/app-development/services/database-services/database-services)|
+|2.|Learn about Web Services|[Web Services](/learn/app-development/services/web-services/web-services)|
+|3.|Learn about Java Services|[Java Services](app-development/services/java-services/java-service)|
+|4.|Learn about APIs|[API Designer](/learn/app-development/services/api-designer/api)|
+|5.|Learn about third party libraries|[Third Party Libraries](/learn/app-development/services/3rd-party-libraries)|
+
+## Backend Service Architecture 
+
 [![](../../assets/backend_model.png)](../../assets/backend_model.png)
 
-# Micro-Services enabled Architecture
+## Micro-Services enabled Architecture
 
 To support micro-services architecture, WaveMaker uses an API-driven app development approach wherein REST APIs are generated automatically for the application. Every backend service such as Database Entity, Queries or Custom Java code, that is integrated into an application generates REST APIs. Some of these APIs are available for further customization based on the app integration needs.
 
 [![](https://pm.wavemaker.com../../assets/services_concept.png)](../../assets/services_concept.png) ORM Layer is auto-generated from DB schema using Hibernate & JPA. Services Layer is auto-generated using Spring. Custom queries, procedures, and Java Services can be used to extend the app functionality. For all these services, REST API is auto-generated using Spring-REST/Swagger. Variables interact with REST API layer to access the services.
 
-# Accessing Data - Variables
+## Accessing Data - Variables
 
 A **Variable** is a non-visual component that is used to call web services, custom database queries and Java methods. Variables can be invoked by Service Calls and by handling the call events. Using variable events ensures:
 
@@ -37,13 +49,13 @@ The graphic below represents the life-cycle of the variable.
 7. The response data is updated in the variable
 8. The widgets listening to the data change on the variable gets updated.
 
-# Manipulating Data - Variable Events
+## Manipulating Data - Variable Events
 
 ### Life-cycle Events of Variable
 
 Given the life cycle of a variable, next step would be to capture and control the flow to include validation, pre and post processing of data. A typical event flow when a variable is used to update data would be as follows: [![](../../assets/LSV_eventcycle.png)](../../assets/LSV_eventcycle.png)
 
-# REST APIs
+## REST APIs
 
 As mentioned earlier, each of the services integrated into your app is converted to a RESTful service and are consumed through their respective REST APIs.These REST APIs are exposed via the [API Designer](http://[supsystic-show-popup id=110]) and can be re-configured as per the application needs.
 
