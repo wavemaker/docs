@@ -1,6 +1,7 @@
 ---
 title: "Page Creation"
 id: ""
+sidebar_label: "Creating a Page"
 ---
 
 When you create an app within WaveMaker, by default the Main Page is generated. In the process of app development, you will be adding pages and linking them as per the app workflow.
@@ -75,44 +76,3 @@ Let us say that test\_page needs an id to render the data and it has to be invok
 
 We have seen how a page can be added to WaveMaker app, it's title and layout set. We also saw how page parameters can be used to pass information to pages. Learn more about [Partial Pages](/learn/app-development/ui-design/page-concepts/partial-pages/), [Page Layouts](/learn/app-development/ui-design/page-concepts/page-layouts/), and [Page Templates](/learn/app-development/ui-design/page-concepts/page-templates/).
 
-< Page Concepts
-
-Partial Pages >
-
-2\. Design UI
-
-- 2.1 Overview
-    - [i. App UI Design](/learn/app-development/ui-design/design-overview/#app-ui-design)
-    - [ii. Responsive Design](/learn/app-development/ui-design/design-overview/#responsive-design)
-    - [iii. UI Development](/learn/app-development/ui-design/design-overview/#ui-development)
-- [2.2 Page Concepts](#)
-    - [i. Single Page Apps](/learn/app-development/ui-design/page-concepts/)
-    - [ii. Page Life Cycle](/learn/app-development/ui-design/page-concepts/#page-lifecycle)
-    - [iii. Page Creation](#)
-    - [iv. Parameter Passing](#page-parameters)
-    - [v. Partial Pages](/learn/app-development/ui-design/page-concepts/partial-pages/)
-    - vi. Page Basics
-        - [○ Page Layouts](/learn/app-development/ui-design/page-concepts/page-layouts/#page-layouts)
-        - [○ Page Navigation](/learn/app-development/ui-design/page-concepts/page-layouts/#page-navigation)
-        - [○ Events](/learn/app-development/ui-design/page-concepts/page-layouts/#events)
-            - [● Event Categorization](/learn/app-development/ui-design/page-concepts/page-layouts/#event-categorization)
-            - [● Multiple Event Handling](/learn/app-development/ui-design/page-concepts/page-layouts/#multiple-events)
-    - [vii. Page Templates](/learn/app-development/ui-design/page-concepts/page-templates/)
-        - [○ Custom Page Templates](/learn/app-development/ui-design/page-concepts/page-templates/#creating-page-templates)
-    - [viii. Use Cases](/learn/app-development/ui-design/use-cases-ui-design/)
-    - [2.3 Project Shell](/learn/app-development/ui-design/project-shells/)
-    - 2.4 Page Artefacts
-        - [i. Overview](/learn/app-development/ui-design/page-artefacts/)
-        - [ii. Markup](/learn/app-development/ui-design/page-artefacts/#page-markup)
-        - [iii. Script](/learn/app-development/ui-design/page-artefacts/#page-script)
-        - [iv. Style](/learn/app-development/ui-design/page-artefacts/#page-style)
-    - 2.5 Themes
-        - [i. Overview](/learn/app-development/ui-design/themes/)
-        - [ii. Applying Theme](/learn/app-development/ui-design/themes/#apply-theme)
-        - [iii. Importing Theme](/learn/app-development/ui-design/themes/#import-theme)
-        - [iv. Creating Themes](/learn/app-development/ui-design/themes/#create-theme)
-            - [○ Creating Web Theme](/learn/app-development/ui-design/themes/#create-theme-web)
-            - [○ Creating Web Theme using Bootswatch](/learn/app-development/ui-design/themes/#create-theme-bootswatch)
-            - [○ Creating Mobile Theme](/learn/app-development/ui-design/themes/#create-theme-mobile)
-        - [v. Building Theme](/learn/app-development/ui-design/themes/#build-theme)
-        - [vi. Testing Theme](/learn/app-development/ui-design/themes/#test-theme)
