@@ -2,12 +2,13 @@
 title: "Database Services"
 id: ""
 ---
+---
 
 A _database_ is the most common form of data storage for any enterprise and apps need to interact with these databases to define the workflow.
 
 WaveMaker makes it easy to create web-based forms that are connected to an underlying database. To access a database from your WaveMaker application, you first create a new data model or import an existing data model into the project.
 
-Import or creation of database within a WaveMaker app results in the generation of REST APIs. Each of the services integrated into your app is converted to a RESTful service and is consumed through their respective REST APIs. These REST APIs are exposed via the [API Designer](http://[supsystic-show-popup id=110]) and can be tested and reconfigured as per the application needs.
+Import or creation of database within a WaveMaker app results in the generation of REST APIs. Each of the services integrated into your app is converted to a RESTful service and is consumed through their respective REST APIs. These REST APIs are exposed via the [API Designer](http://[supsystic-show-popup id=110]) and can be tested and reconfigured as per the application needs. 
 
 ## WaveMaker DB Integration Process
 
