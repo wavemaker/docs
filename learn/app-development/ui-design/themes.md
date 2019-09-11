@@ -4,72 +4,98 @@ id: "themes"
 ---
 ---
 
-**Themes** are style elements which work at the widget or UI component level. Themes help you provide a consistent look and feel to your application. Theme mainly contains the following styling for all the elements on the page:
+**Themes** are style elements which work at the widget or UI component level. Themes help you provide a consistent look and feel to your application. 
 
-1. _color_ - background, text color, border color, hover/active/focus colors etc.
-2. _properties_ for text like text-align, text-decoration, font-size, font-weight etc.
-3. _layout_ like margin, padding, border-radius etc.
+## Styling Elements
+Theme mainly contains the following styling for all the elements on the page:
 
-In this document the following concepts are elaborated upon:
+1. **Color**: Background, text color, border color, hover/active/focus colors, and more.
+2. **Properties**: For text like text-align, text-decoration, font-size, font-weight, and more.
+3. **Layout**: Includes margin, padding, border-radius, and more.
 
-- [applying themes](#apply-theme) to WaveMaker app,
-- [importing custom themes](#import-theme),
-- [creating themes](#create-theme) for WaveMaker [web apps](#create-theme-web), [using Bootswatch](#create-theme-bootswatch), and for [mobile apps](#create-theme-mobile),
-- [building](#build-theme) a WaveMaker app,
-- [testing](#test-theme) or changing theme temporarily,
-- [publishing](#publish-theme) the Theme to EDN, and
-- WaveMaker [theme package structure](#theme-packaging).
+## Theme Concepts
+
+In this document the following concepts are explained:
+
+- [Applying themes](#applying-theme)
+- [Importing custom themes](#importing-theme)
+- [Creating themes](#create-theme) for WaveMaker [web apps](#create-theme-web), [using Bootswatch](#create-theme-bootswatch), and for [mobile apps](#create-theme-mobile)
+- [Building](#build-theme)
+- [Testing](#test-theme) or changing theme temporarily
+- [Publishing](#publish-theme)
+- [Theme package structure](#theme-packaging)
 
 ## Applying Theme
 
-To **change the theme** of the page, simply click on the **Themes** option from the _Workspace Toolbar:_
+1. To **change the theme** for a page, simply click on the **Themes** option from the _Workspace Toolbar:_
 
 [![](../../assets/theme_change.png)](../../assets/theme_change.png)
 
-This will open a Theme dialog with a list of available themes to choose from.
+2. This will open a Theme dialog with a list of available themes to choose from.
 
-[![](../../assets/Themes.png)](../../assets/Themes.png) **NOTE**: WaveMaker provides a few default themes that can be applied to your apps. From time to time, these Themes might undergo changes and you might be asked to update the theme when you open the project. **Remember** that the updates will re-write any changes you made directly to the CSS styles of the corresponding theme.
+[![](../../assets/Themes.png)](../../assets/Themes.png) 
+
+:::note
+WaveMaker provides a few default themes that can be applied to your apps. From time to time, these Themes might undergo changes and you might be asked to update the theme when you open the project.  
+:::
+
+:::warning
+Remember that the updates will re-write any changes you made directly to the CSS styles of the corresponding theme.
+:::
 
 ## Importing Theme
 
-You can use your own theme by importing it into your app. [See below to know how to create Theme](#create-theme).
+You can use your own theme by importing it into your app. For more information, see [Creating Theme](#creating-theme).
 
-(**NOTE**: For Enterprise version, the custom themes will be available once they are published to the EDN and approved by the EDN Admin, WITHOUT any need for Import)
+:::note
+For Enterprise version, the custom themes will be available once they are published to the EDN and approved by the EDN Admin, without needing to import.
+:::
 
-From the above Themes dialog, choose the **Import Theme **button for a pop-up window which will allow you to select a WaveMaker theme zip file. Once imported, the Theme will appear in the _Theme dialog_. To apply the theme, select the imported theme and **Re-Apply**.
+From the above Themes dialog, choose the **Import Theme** button for a pop-up window which will allow you to select a WaveMaker theme zip file. Once imported, the Theme will appear in the _Theme dialog_. To apply the theme, select the imported theme and **Re-Apply**.
 
-# Creating Theme for WaveMaker Apps
+## Creating Theme
 
-WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. Creation of a theme requires a working knowledge of HTML, CSS, LESS and Grunt.
+WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. For creating a theme, you should know HTML, CSS, LESS and Grunt.
 
-**Prerequisites**: Before creating a Theme, make sure you have the following installed on your system:
+### Prerequisites 
+Before creating a theme, make sure you have installed the following on your machine:
 
 - [Nodejs](https://nodejs.org/)
 - [GIT](https://www.git-scm.com/)
 
-**Setup**:
+### Setup
 
 1. Open GIT Bash prompt
 2. Install **grunt** using the following command:
-    
-    npm install -g grunt-cli
-    
-    For more information on grunt [click here](https://gruntjs.com/getting-started)
-3. Install **bower** using the following command:
-    
-    npm install -g bower
-    
-    For more information on bower [click here](https://www.npmjs.com/package/bower)
-4. Setup the **WaveMaker Theme repository**
-    
-     git clone https://github.com/wavemaker/grunt-wavemaker-theme.git
-     cd grunt-wavemaker-theme
-     npm install
-    
-    Follow the instructions given [at the GIT repository](https://github.com/wavemaker/grunt-wavemaker-theme)
-5. After setting up the repository, under the **src** folder you will find the following files that can be modified as per your needs: [![theme-web](../../assets/theme-web.png)](../../assets/theme-web.png) **NOTE**: Themes for Web and Mobile(Android/iOS) apps are different, use the appropriate theme source file to generate the theme bundle.
+```    
+npm install -g grunt-cli
+``` 
+For more information, see [Grunt](https://gruntjs.com/getting-started).
 
-**Directory Structure**
+3. Install **bower** using the following command:
+```
+npm install -g bower
+```  
+For more information on bower [click here](https://www.npmjs.com/package/bower)
+4. Setup the **WaveMaker Theme repository**. 
+> For Git clone, see [Grunt Wavemaker Theme](https://github.com/wavemaker/grunt-wavemaker-theme.git).
+```     
+cd grunt-wavemaker-theme
+```
+```
+npm install
+``` 
+Follow the instructions given at the [Git repository](https://github.com/wavemaker/grunt-wavemaker-theme).
+
+5. After setting up the repository, under the **src** folder you will find the following files that can be modified as per your needs:  
+
+[![theme-web](../../assets/theme-web.png)](../../assets/theme-web.png) 
+
+:::note
+Themes for Web and Mobile (Android/iOS) apps are different, use the appropriate theme source file to generate the theme bundle.
+:::
+
+### Directory Structure
 
 1. **Fonts** folder: The web fonts can be copied here and referenced in the theme. There will be references to Roboto regular fonts in the variables.less (src/web), to avail them please download Roboto regular fonts and paste them in fonts directory (src/web/fonts).
 2. **.wmprojects.properties**: This contains essential properties required to identify the theme
@@ -194,44 +220,3 @@ Following is the package structure:
 
 We have learned how WaveMaker themes work and how we can build, import and apply custom themes.
 
-< Page Artefacts
-
-2\. Design UI
-
-- 2.1 Overview
-    - [i. App UI Design](/learn/app-development/ui-design/design-overview/#app-ui-design)
-    - [ii. Responsive Design](/learn/app-development/ui-design/design-overview/#responsive-design)
-    - [iii. UI Development](/learn/app-development/ui-design/design-overview/#ui-development)
-- 2.2 Page Concepts
-    - [i. Single Page Apps](/learn/app-development/ui-design/page-concepts/)
-    - [ii. Page Life Cycle](/learn/app-development/ui-design/page-concepts/#page-lifecycle)
-    - [iii. Page Creation](/learn/app-development/ui-design/page-creation/)
-    - [iv. Parameter Passing](/learn/app-development/ui-design/page-creation/#page-parameters)
-    - [v. Partial Pages](/learn/app-development/ui-design/page-concepts/partial-pages/)
-    - vi. Page Basics
-        - [○ Page Layouts](/learn/app-development/ui-design/page-concepts/page-layouts/#page-layouts)
-        - [○ Page Navigation](/learn/app-development/ui-design/page-concepts/page-layouts/#page-navigation)
-        - [○ Events](/learn/app-development/ui-design/page-concepts/page-layouts/#events)
-            - [● Event Categorization](/learn/app-development/ui-design/page-concepts/page-layouts/#event-categorization)
-            - [● Multiple Event Handling](/learn/app-development/ui-design/page-concepts/page-layouts/#multiple-events)
-    - [vii. Page Templates](/learn/app-development/ui-design/page-concepts/page-templates/)
-        - [○ Custom Page Templates](/learn/app-development/ui-design/page-concepts/page-templates/#creating-page-templates)
-    - [viii. Use Cases](/learn/app-development/ui-design/use-cases-ui-design/)
-- [2.3 Project Shell](/learn/app-development/ui-design/project-shells/)
-- 2.4 Page Artefacts
-    - [i. Overview](/learn/app-development/ui-design/page-artefacts/)
-    - [ii. Markup](/learn/app-development/ui-design/page-artefacts/#page-markup)
-    - [iii. Script](/learn/app-development/ui-design/page-artefacts/#page-script)
-    - [iv. Style](/learn/app-development/ui-design/page-artefacts/#page-style)
-    - [v. Variables](/learn/app-development/ui-design/page-artefacts/#page-variables)
-- [2.5 Themes](#)
-    - [i. Overview](#)
-    - [ii. Applying Theme](#apply-theme)
-    - [iii. Importing Theme](#import-theme)
-    - [iv. Creating Themes](#create-theme)
-        - [○ Creating Web Theme](#create-theme-web)
-        - [○ Creating Web Theme using Bootswatch](#create-theme-bootswatch)
-        - [○ Creating Mobile Theme](#create-theme-mobile)
-    - [v. Building Theme](#build-theme)
-    - [vi. Testing Theme](#test-theme)
-    - [vii. Publishing Theme](#publish-theme)

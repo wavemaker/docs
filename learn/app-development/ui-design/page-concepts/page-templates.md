@@ -1,6 +1,8 @@
 ---
-title: "Page Templates"
+title: "Templates"
 id: ""
+sidebar_label: "Templates"
+---
 ---
 
 Templates are editable pages with the layout and content defined. These can be used by the developer as a foundation on which the application pages can be built. Here we will be talking about:
@@ -48,46 +50,3 @@ Template Bundles let you create and use templates across all applications in you
 
 In order for the Template to be available for all developers within the enterprise, it needs to be published to the EDN and approved by the EDN Admin. [![](../../../assets/Publish_template.png)](../../../assets/Publish_template.png) Refer to [Artifacts Publishing Mechanism](/learn/app-development/wavemaker-overview/artifacts-repository/#publishing) for more details. [![](../../../assets/Publish_template_edn.png)](../../../assets/Publish_template_edn.png) After Admin's approval, the Template Bundle is listed in the artifact repository listing. To use the Template, the app developer needs to select it from the Template Dialog while adding a Page to the app, or by using the Change Template option for an existing app. [![](../../../assets/Artifacts_template_list.png)](../../../assets/Artifacts_template_list.png)In this document, we have seen how Page Templates ease page design and how you can create your own templates.
 
-< Page Basics
-
-Project Shells >
-
-UI Design Use Cases >
-
-2\. Design UI
-
-- 2.1 Overview
-    - [i. App UI Design](/learn/app-development/ui-design/design-overview/#app-ui-design)
-    - [ii. Responsive Design](/learn/app-development/ui-design/design-overview/#responsive-design)
-    - [iii. UI Development](/learn/app-development/ui-design/design-overview/#ui-development)
-- [2.2 Page Concepts](/learn/app-development/ui-design/page-concepts/)
-    - [i. Single Page Apps](/learn/app-development/ui-design/page-concepts/)
-    - [ii. Page Life Cycle](/learn/app-development/ui-design/page-concepts/#page-lifecycle)
-    - [iii. Page Creation](/learn/app-development/ui-design/page-creation/)
-    - [iv. Parameter Passing](/learn/app-development/ui-design/page-creation/#page-parameters)
-    - [v. Partial Pages](/learn/app-development/ui-design/page-concepts/partial-pages/)
-    - vi. Page Basics
-        - [○ Page Layouts](/learn/app-development/ui-design/page-concepts/page-layouts/#page-layouts)
-        - [○ Page Navigation](/learn/app-development/ui-design/page-concepts/page-layouts/#page-navigation)
-        - [○ Events](/learn/app-development/ui-design/page-concepts/page-layouts/#events)
-            - [● Event Categorization](/learn/app-development/ui-design/page-concepts/page-layouts/#event-categorization)
-            - [● Multiple Event Handling](/learn/app-development/ui-design/page-concepts/page-layouts/#multiple-events)
-    - [vii. Page Templates](#)
-        - [○ Custom Page Templates](#creating-page-templates)
-    - [viii. Use Cases](/learn/app-development/ui-design/use-cases-ui-design/)
-- [2.3 Project Shell](/learn/app-development/ui-design/project-shells/)
-- 2.4 Page Artefacts
-    - [i. Overview](/learn/app-development/ui-design/page-artefacts/)
-    - [ii. Markup](/learn/app-development/ui-design/page-artefacts/#page-markup)
-    - [iii. Script](/learn/app-development/ui-design/page-artefacts/#page-script)
-    - [iv. Style](/learn/app-development/ui-design/page-artefacts/#page-style)
-- 2.5 Themes
-    - [i. Overview](/learn/app-development/ui-design/themes/)
-    - [ii. Applying Theme](/learn/app-development/ui-design/themes/#apply-theme)
-    - [iii. Importing Theme](/learn/app-development/ui-design/themes/#import-theme)
-    - [iv. Creating Themes](/learn/app-development/ui-design/themes/#create-theme)
-        - [○ Creating Web Theme](/learn/app-development/ui-design/themes/#create-theme-web)
-        - [○ Creating Web Theme using Bootswatch](/learn/app-development/ui-design/themes/#create-theme-bootswatch)
-        - [○ Creating Mobile Theme](/learn/app-development/ui-design/themes/#create-theme-mobile)
-    - [v. Building Theme](/learn/app-development/ui-design/themes/#build-theme)
-    - [vi. Testing Theme](/learn/app-development/ui-design/themes/#test-theme)
