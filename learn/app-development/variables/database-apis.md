@@ -1,6 +1,8 @@
 ---
 title: "Variable for Database APIs"
 id: ""
+sidebar_label: "Database APIs"
+---
 ---
 
 For every database table imported into the app, APIs are generated. In addition to the CRUD operations, functionalities like Count, Filter, Get by field name, Get associated table data etc. can be accessed through the corresponding APIs. These Database APIs also include those corresponding to Queries and Procedures created within the data model.

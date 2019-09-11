@@ -107,10 +107,32 @@
 
       "Integration": 
       [
-        "app-development/variables/data-integration",
-        "app-development/variables/variables",
-        "app-development/variables/variable-binding",
-        "app-development/variables/actions",
+        "app-development/variables/data-integration",        
+        {
+          "type": "subcategory",
+          "label": "Variables",
+          "ids": [
+            "app-development/variables/variables",
+            "app-development/variables/database-crud",
+            "app-development/variables/database-apis",
+            "app-development/variables/web-service",
+            "app-development/variables/java-services",
+            "app-development/variables/security-service",
+            "app-development/variables/model-variable",
+            "hybrid-mobile/device-variables"]           
+        }, 
+        
+        "app-development/variables/variable-binding",        
+        {
+          "type": "subcategory",
+          "label": "Actions",
+          "ids": ["app-development/variables/actions",
+            "app-development/variables/navigation-action",
+            "app-development/variables/login-action",
+            "app-development/variables/logout-action",
+            "app-development/variables/timer-action",
+            "app-development/variables/notification-action"]           
+        }, 
         "app-development/variables/events",
         "app-development/variables/accessing-elements-via-javascript"
       ], 

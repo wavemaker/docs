@@ -1,6 +1,8 @@
 ---
 title: "Variable for Web Service"
 id: ""
+sidebar_label: "Web Services"
+---
 ---
 
 For every service imported into the app, APIs exposed by the service can be accessed. A Variable needs to be created to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
@@ -9,7 +11,7 @@ A comprehensive list of these APIs can be found from the [API Designer](http://
 
 **Note**: Since the service needs to be invoked to fetch the data, the widgets bound to these variables will display values only at run-time, not in Studio mode.
 
-# Variable Creation
+## Variable Creation
 
 The **data source** for these Variables comes from a _Web Service APIs_. NOTE: Though the process for creating a variable for WebSocket Service is the same as below, properties and methods are different. [See here for the WebSocket Variable](/learn/app-development/variables/websocket-variable/).
 
@@ -30,7 +32,7 @@ The **data source** for these Variables comes from a _Web Service APIs_. NOTE: T
         4. the **data tab** will contain the fields serving as _input fields_ for the API
         5. the **events** tab will contain the events that can be configured to trigger any action. [Know more about events](#events).
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |

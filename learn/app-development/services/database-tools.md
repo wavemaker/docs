@@ -34,27 +34,37 @@ Script execution does not work on IE9 browsers
 
 [![](../../assets/dbtools_script.png)](../../assets/dbtools_script.png)
 
-### Import Database
+## Import Database
 
 Import Database can be used to import an external data source into the WaveMaker and work with it. A data source will be replicated within WaveMaker. Importing an existing database will result in overwriting of the WaveMaker copy with the original data source, i.e. any changes made to the database within WaveMaker will be lost. In order to retain the changes made within WaveMaker, an export is essential.
 
-**Note** that once you run the script, you need to physically Import the Database from the **Databases Resource + icon**or use the link from the success screen
+:::note
+Note that once you run the script, you need to physically Import the Database from the **Databases Resource + icon** or use the link from the success screen. 
+:::
 
-Key things to note while importing databases are:
+### Things to be aware of
+Key things to note while importing databases include:
 
 - WaveMaker supports major SQL data types. In case the imported database uses any other data type, those will be converted to the closest matching data type.
-- Sequence-generated primary key columns will not be mapped during database import. It will be converted to assigned generator type. To retain the original sequence-generation, one needs to manually change the generator type to sequence, give a generator name, save and re-import the database.
-- The configuration fields need to be entered based on the type of database used.
+- Sequence-generated primary key columns will not be mapped during database import. It will be converted to assigned generator type. To retain the original sequence-generation, you need to manually change the generator type to sequence; give a generator name, save and re-import the database.
+- The configuration fields should be entered based on the type of database used.
+
+## Script Execution 
 
 Click on the **Import** tab and use the following steps to execute a script:
 
 1. Select the database server on which the script needs to be executed by selecting from the options in the **Host** field. Currently, the only server option is _MariaDB Cloud_ database server.
-2. Enter the **Database Name**. Note: A database with this name must exist in the selected database server. You can create one using the DB Shell if the database doesn't exist.
+2. Enter the **Database Name**.   
+
+:::note
+A database with this name must exist in the selected database server. You can create one using the DB Shell if the database doesn't exist.
+:::
+
 3. Click **Choose File** to locate and upload the script file to be executed. Make sure you choose a valid script file.
 4. Click on the **Execute** button. After the script executes, the status of the script execution is displayed.
-5. Once you have executed the script, the database is ready for import. Import the Database from the **Databases Resource + icon **or use the link from the success screen.
+5. Once you have executed the script, the database is ready for import. Import the Database from the **Databases Resource + icon** or use the link from the success screen.
 
-### Export Database
+## Export Database
 
 Export Database can be used to export the database within WaveMaker to an external data source. Click on the **Export** tab and use the following steps to execute a script:
 
