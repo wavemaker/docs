@@ -14,7 +14,16 @@
         "app-development/wavemaker-overview/pre-requisites",
         "app-development/wavemaker-overview/artifacts-repository",
         "app-development/wavemaker-overview/localization",
-        "app-development/wavemaker-overview/project-user-management"
+        "app-development/wavemaker-overview/project-user-management",
+        {
+          "type": "subcategory",
+          "label": "WaveMaker Concepts",
+          "ids": [
+            "app-development/variables/variables",
+            "app-development/services/creating-backend-services"                    
+            ]       
+        }
+
       ],
 
     "Design": 
@@ -39,14 +48,14 @@
         "app-development/ui-design/page-concepts/page-templates",
         "app-development/ui-design/use-cases-ui-design"],
 
-      "Services": 
+      "Databases": 
       [
-        "app-development/services/creating-backend-services",
+        "app-development/services/database-services/database-services",
+        "app-development/services/api-designer/database-service-apis",
         {
           "type": "subcategory",
           "label": "Database Services",
-          "ids": [
-            "app-development/services/database-services/database-services",
+          "ids": [            
             "app-development/services/database-tools",
             "app-development/services/database-services/working-with-databases",            
             "app-development/services/database-services/data-modelling",
@@ -64,63 +73,82 @@
         },
 
         {
-        "type": "subcategory",
-        "label": "Web Services",
-        "ids": ["app-development/services/web-services/web-services",
-              "app-development/services/web-services/rest-services",
-              "app-development/services/web-services/oauth-2-0-rest-services",
-              "app-development/services/web-services/working-with-soap-services",              
-              "app-development/services/web-services/working-with-websockets"]       
-        },
-
-        {
           "type": "subcategory",
-          "label": "Java Services",
-          "ids": ["app-development/services/java-services/java-service",
-                  "app-development/services/java-services/java-integration-services",
-                  "app-development/services/java-services/variables",
-                  "app-development/services/java-services/generated-rest-apis-api-designer"
-                  ]
-  
-          
-        },
-
-        {
-          "type": "subcategory",
-          "label": "APIs",
-          "ids": ["app-development/services/api-designer/api",
-            "app-development/services/api-designer/database-service-apis",
-            "app-development/services/api-designer/web-service-apis",
-            "app-development/services/api-designer/java-service-apis",
-            "app-development/services/api-designer/security-service-apis"]           
-        },
-
-        {
-          "type": "subcategory",
-          "label": "Third Party Libraries",
-          "ids": ["app-development/services/3rd-party-libraries",
-            "app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
-            "app-development/services/3rd-party-libraries/using-3rd-party-jar-files"]           
-        } 
+          "label": "Database Variables",
+          "ids": [            
+            "app-development/variables/database-crud",
+            "app-development/variables/database-apis"         
+            ]
+        }       
         
       ],  
 
-      "Integration": 
-      [
-        "app-development/variables/data-integration",        
+      "Web Services": 
+      [   
+            "app-development/services/web-services/web-services",
+            "app-development/services/api-designer/web-service-apis",
         {
           "type": "subcategory",
-          "label": "Variables",
+          "label": "Services",
           "ids": [
-            "app-development/variables/variables",
-            "app-development/variables/database-crud",
-            "app-development/variables/database-apis",
-            "app-development/variables/web-service",
-            "app-development/variables/java-services",
-            "app-development/variables/security-service",
+                "app-development/services/web-services/rest-services",
+                "app-development/services/web-services/oauth-2-0-rest-services",
+                "app-development/services/web-services/working-with-soap-services",              
+                "app-development/services/web-services/working-with-websockets",
+                "app-development/variables/web-service" ]       
+        }
+
+      ],
+
+      "Java Services": 
+      [   
+          "app-development/services/java-services/java-service",
+          "app-development/services/api-designer/java-service-apis",
+
+          {
+            "type": "subcategory",
+            "label": "Java Services",
+            "ids": [
+                    "app-development/services/java-services/java-integration-services",
+                    "app-development/services/java-services/variables",
+                    "app-development/services/java-services/generated-rest-apis-api-designer",
+                    "app-development/variables/java-services"
+                    ]           
+          },
+          {
+            "type": "subcategory",
+            "label": "Manifest files",
+            "ids": ["app-development/services/3rd-party-libraries",
+              "app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
+              "app-development/services/3rd-party-libraries/using-3rd-party-jar-files"]           
+          } 
+      ],
+
+      "Security": 
+      [
+        "app-development/app-security/app-security",
+        "app-development/services/api-designer/security-service-apis",
+        {
+          "type": "subcategory",
+          "label": "Security Variable",
+          "ids": [
+        "app-development/variables/security-service"]
+        }
+      ],
+
+      "Integration": 
+      [
+        "app-development/variables/data-integration", 
+        "app-development/services/api-designer/api",   
+        {
+          "type": "subcategory",
+          "label": "Other Variables",
+          "ids": [                                      
+            
             "app-development/variables/model-variable",
             "hybrid-mobile/device-variables"]           
         }, 
+
         
         "app-development/variables/variable-binding",        
         {
@@ -136,15 +164,10 @@
         "app-development/variables/events",
         "app-development/variables/accessing-elements-via-javascript"
       ], 
-
-    "Security": 
-      [
-        "app-development/app-security/app-security"
-      ],
       
-    "Testing": 
+    "Dev-IT": 
       [
-        "app-development/dev-integration/developer-tools"
+        "app-development/dev-integration/developer-tools"       
       ],
 
     "Build & deploy": 
