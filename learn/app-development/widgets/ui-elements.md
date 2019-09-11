@@ -17,7 +17,7 @@ To view the list of widgets in WaveMaker, see [Widget Library](widget-library.md
 
 Pages are constructed as a composition of widgets using the visual drag-n-drop approach. Responsive Layout grid is used for the placement of widgets for automatically making them responsive to all devices.
 
-[![](../../assets/widget_concept.png)](../../assets/widget_concept.png)
+[![](/learn/assets/widget_concept.png)](/learn/assets/widget_concept.png)
 
 WaveMaker provides **HTML/Bootstrap based widgets or UI Components**, with rich interaction and for responsive design. Widgets are the building block of any application. They are the tools for exchange of information from the user to the project. Widgets eliminate repeated development and provide consistent behavior across browsers and platforms. Drag and drop action lets you add widgets to your project.
 
@@ -27,7 +27,7 @@ Widgets could simply map to a standard HTML construct like a label or select or 
 
 Once you add a widget to your page, click on the widget to see the available actions in the **Properties Panel**. Below are some of the common actions of Widgets.
 
-[![](../../assets/widget_props.png)](../../assets/widget_props.png)
+[![](/learn/assets/widget_props.png)](/learn/assets/widget_props.png)
 
 ### Basic Attributes
 Define the content to be displayed in a widget by connecting it to a database query, web service, Java method, or another widget. Data binding provides integration with data sources known as ‘Variables’ or any other Widgets. Variables offer the ability to integrate with services such as a database, web service or any other backend service. [More on Variables and Binding](/learn/app-development/variables/data-integration/).

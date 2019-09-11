@@ -11,7 +11,7 @@ Variables are required to invoke Java Service methods, each Variable can be conf
 
 When you create a Java Service in WaveMaker, Java sample file is created. You can access this file from the _Java Services_ Resources. You can edit the file and even delete the service.
 
-[![](../../assets/Java_services.png)](../../assets/Java_services.png)
+[![](/learn/assets/Java_services.png)](/learn/assets/Java_services.png)
 
 A Java method can have input and output in the form of an individual or a set of parameters. These parameters can be of the following types: **Input parameters** can be of the type:
 
@@ -33,7 +33,7 @@ A Java method can have input and output in the form of an individual or a set of
 
 Creating a Java Service generates multiple files, of which the following are of importance:
 
-[![](../../assets/JS_files.png)](../../assets/JS_files.png)
+[![](/learn/assets/JS_files.png)](/learn/assets/JS_files.png)
 
 1. **Spring Controller File**: MyJavaController.java, in this example - This file contains the details related to the Java Service. Public methods in the controller class are wrappers of the underlying Java Service code, acting as an endpoint which can be invoked as REST API. The methods can be hidden or exposed to the client using the directives: @HideFromClient and @ExposeToClient, respectively. Request JSON object from the invoking client is automatically converted to POJOs in the method parameter for POST/PUT/DELETE. Similarly, the response POJOs get converted to JSON object.
 2. **API JSON File**: MyJavaService\_API.json, in this example - contains the file structure and details as used by the API Documentation. This is available only during the design time.

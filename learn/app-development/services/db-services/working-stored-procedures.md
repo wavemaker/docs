@@ -9,7 +9,7 @@ A _stored procedure_ is a prepared SQL code that you save in your database so yo
 
 Procedure tab from WaveMaker Database Designer can be used to execute procedures that are written in and imported from the database using the `call` command. Execute the procedure calls and save them for the usage within the app [by creating Variable using the generated APIs](/learn/app-development/variables/database-apis/).
 
-[![](../../../assets/db_procs.png)](../../../assets/db_procs.png)
+[![](/learn/assets/db_procs.png)](/learn/assets/db_procs.png)
 
 ## Procedure Parameters
 
@@ -43,7 +43,7 @@ There are two aspects to stored procedure usage - Creation and Invocation:
 
 Procedure/Function needs to be created in the database itself. For MySQL DBs, you can use the **DB Shell** tab of [DB Tools](http://[supsystic-show-popup id=113]). Any procedures you have in a database that you [import](http://[supsystic-show-popup id=106]) will be available for use.
 
-1. The database we used contains an Employee table with Emp\_ID, Name and City details. Here is the _Employee_ table that we have designed using the [DB Designer](http://[supsystic-show-popup id=114]). [![](../../../assets/employee_schema.png)](../../../assets/employee_schema.png)
+1. The database we used contains an Employee table with Emp\_ID, Name and City details. Here is the _Employee_ table that we have designed using the [DB Designer](http://[supsystic-show-popup id=114]). [![](/learn/assets/employee_schema.png)](/learn/assets/employee_schema.png)
 2. The procedure entered in the DBShell under [DB Tools](http://[supsystic-show-popup id=113]) would be:
     
     DELIMITER ;;
@@ -114,7 +114,7 @@ Procedures created in a DB can be accessed by creating a live service variable a
 
 For all queries and procedures, there will be a Rest API generated with the Service layer. Along with the API, depending on the query or procedure type, request and response POJO classes are generated.
 
-**Understanding generated Code** _File structure_ [![](../../../assets/queryproc_files.png)](../../../assets/queryproc_files.png)_Models_: Both _Request_ and _Response_ POJO classes are generated as: <procedureName>Request/Response
+**Understanding generated Code** _File structure_ [![](/learn/assets/queryproc_files.png)](/learn/assets/queryproc_files.png)_Models_: Both _Request_ and _Response_ POJO classes are generated as: <procedureName>Request/Response
 
 - These classes are generated in a package: <service\_packagegt;.models.procedure
 - Response classes generated for all procedures having at least one return property i.e OUT parameter or cursor. Eg: a procedure with name **getEmployees** will generate **GetEmployeesResponse** class with the returned columns.
@@ -125,7 +125,7 @@ For all queries and procedures, there will be a Rest API generated with the Serv
         - For example procedure with name **getStudents** with cursor parameter **marks**, the POJO generated will be **GetStudentsResponseMarks**.
         - The generated type will be used in <procedureResponse> class with given property name. In the above-mentioned case, it will be marked with type **GetStudentsReponseMarks**.
     - In the case of Undefined cursor returned i.e cursor not specified in parameters section.
-        - using the field as **content** the POJO class will be generated as per the above case. [![](../../../assets/proc_cursor.png)](../../../assets/proc_cursor.png)
+        - using the field as **content** the POJO class will be generated as per the above case. [![](/learn/assets/proc_cursor.png)](/learn/assets/proc_cursor.png)
     - Request classes will be generated for all procedures, with names starting “create”, “build”, “add”, “update”, “edit”, “set”.
     
     _Services_:
@@ -139,12 +139,12 @@ For all queries and procedures, there will be a Rest API generated with the Serv
         - As mentioned in Models->Procedures naming convention, if Request type generated for that procedure it will expected as argument otherwise all IN parameters expects as arguments.
         - Response type will be <procedureName>Response. In case of procedure not returning any properties it uses Void
     
-    [![](../../../assets/proc_services.png)](../../../assets/proc_services.png)_Controller_:
+    [![](/learn/assets/proc_services.png)](/learn/assets/proc_services.png)_Controller_:
     
     - Controller class with name ProcedureExecutorController in package .controller.
     - Rest API is generated for each configured query and procedure. Generated method signature will be same as service layer method signature.
     
-    [![](../../../assets/proc_controller.png)](../../../assets/proc_controller.png)
+    [![](/learn/assets/proc_controller.png)](/learn/assets/proc_controller.png)
     
     < Working with DB Schema
     

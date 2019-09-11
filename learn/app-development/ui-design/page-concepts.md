@@ -13,7 +13,7 @@ WaveMaker apps are a collection of pages. This document talks about
 
 Single-Page Applications (SPAs) are Web apps that load a single HTML page and dynamically update that page as the user interacts with the app. This is achieved through a clear separation of front-end and backend through AJAX Service, thus cutting full roundtrip to the server to retrieve new presentation content (HTML) which is common to traditional page life cycle.
 
-[![](../../assets/spa_arch.png)](../../assets/spa_arch.png)
+[![](/learn/assets/spa_arch.png)](/learn/assets/spa_arch.png)
 
 A WaveMaker application is a single page application(SPA). Though an app is composed of multiple pages, these pages are loaded asynchronously on demand. At a given point of time, a single page is loaded in the browser for the user to see and interact. The structure of the page i.e. header, footer, left nav is retained across pages, causing no jitter.
 
@@ -36,7 +36,7 @@ When the request for a page is made, it goes through the following life-cycle:
 
 ### Flow Diagrams
 
-**Page without any partials or Prefabs** [![page-life-cycle](../../assets/Page-Life-Cycle.png)](../../assets/Page-Life-Cycle.png) **Page with partials and Prefabs** [![page-life-cycle-full](../../assets/Page-Life-Cycle-full.png)](../../assets/Page-Life-Cycle-full.png)
+**Page without any partials or Prefabs** [![page-life-cycle](/learn/assets/Page-Life-Cycle.png)](/learn/assets/Page-Life-Cycle.png) **Page with partials and Prefabs** [![page-life-cycle-full](/learn/assets/Page-Life-Cycle-full.png)](/learn/assets/Page-Life-Cycle-full.png)
 
 We have seen the page life cycle within a WaveMaker app. Work with pages by [page creation](/learn/app-development/ui-design/page-creation/), [page layouts](/learn/app-development/ui-design/page-concepts/page-layouts/), and [page templates](/learn/app-development/ui-design/page-concepts/page-templates/).
 

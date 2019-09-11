@@ -11,9 +11,9 @@ When the client visits an application desiring to authenticate to it, the applic
 
 To set up authentication using a Central Authentication Service in WaveMaker apps, enable from the security dialog, choose _CAS_ as the **Security Provider**.
 
-[![](../../assets/sec_access.png)](../../assets/sec_access.png)
+[![](/learn/assets/sec_access.png)](/learn/assets/sec_access.png)
 
-[![](../../assets/sec_user_cas.png)](../../assets/sec_user_cas.png)
+[![](/learn/assets/sec_user_cas.png)](/learn/assets/sec_user_cas.png)
 
 When you choose _CAS_ as the **Security Provider**, you can perform the following configurations on the **Users** tab:
 
@@ -37,7 +37,7 @@ When you choose _CAS_ as the **Security Provider**, you can perform the follow
         - _Password Field_: Select the column for the password.
         - _Role Field_: Select the column for the user's role.
     
-    [![](../../assets/sec_user_cas_role.png)](../../assets/sec_user_cas_role.png)
+    [![](/learn/assets/sec_user_cas_role.png)](/learn/assets/sec_user_cas_role.png)
 
 < SSL Encryption
 

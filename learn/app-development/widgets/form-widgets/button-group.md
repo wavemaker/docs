@@ -15,7 +15,7 @@ The buttons inside the group can be:
 
 Using Button Group, Buttons can exist together as a group. They are great when you need to display a group of actions in a bar. These build off the button styles and work perfectly with the grid. Button group can be used in cases where you have three different behavior upon a single entity. Example for video/audio we have a play, pause, stop operations. In such cases, the button group provides visual groupings of buttons.
 
-[![](../../../assets/buttongroup_graphic.jpg)](../../../assets/buttongroup_graphic.jpg)
+[![](/learn/assets/buttongroup_graphic.jpg)](/learn/assets/buttongroup_graphic.jpg)
 
 ## Properties
 

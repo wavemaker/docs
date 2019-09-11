@@ -20,7 +20,7 @@ To refer to the parent context $parent and $scope.$root for app level was used, 
 
 Now, these can be referred independently in the App or Page/Partial/Prefab context.
 
-[![](./assets/migration.png)](./assets/migration.png)
+[![](/learn/assets/migration.png)](/learn/assets/migration.png)
 
 ## Widget Access
 

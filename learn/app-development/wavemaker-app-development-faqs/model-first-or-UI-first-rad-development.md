@@ -13,11 +13,11 @@ However, there are certain advantages with the model-first approach as the UI la
 
 ## A. Model-first Approach
 
-In the Model-first approach, backend services such as Entities, and CRUD operations are auto-generated along with the source files, metadata, schema etc. The corresponding REST APIs are also generated, and the same can be used for binding. [![](../../assets/backend_model.png)](../../assets/backend_model.png)
+In the Model-first approach, backend services such as Entities, and CRUD operations are auto-generated along with the source files, metadata, schema etc. The corresponding REST APIs are also generated, and the same can be used for binding. [![](/learn/assets/backend_model.png)](/learn/assets/backend_model.png)
 
 After the backend services and the model are generated, UI layer is built by creating pages. Pages are composed with widgets and the Page Layout defines the structure of a page i.e. header, left panel, top navigation etc.
 
-[![](../../assets/UI_design-1.png)](../../assets/UI_design-1.png)
+[![](/learn/assets/UI_design-1.png)](/learn/assets/UI_design-1.png)
 
 Now these widgets are integrated with the backend services using data components known as ‘Variables’. Variables can be configured to work with any backend service supported by WaveMaker. Variables are client-side components residing within the browser or client-runtime, and make use of the underlying REST APIs of the application to talk to the backend services.
 

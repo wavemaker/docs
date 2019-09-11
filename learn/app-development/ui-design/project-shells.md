@@ -16,7 +16,7 @@ For example, multiple apps in an organization could be using the same database o
 
 You can select the project shell to apply when you create an application. **NOTE**: You will not be given an option to select a project shell unless you create and save (or publish to EDN for Enterprise Edition) a project as a shell within your workspace. The default project shell that comes with the platform will be applied.
 
-[![project_shell_apply](../../assets/project_shell_apply.png)](../../assets/project_shell_apply.png)
+[![project_shell_apply](/learn/assets/project_shell_apply.png)](/learn/assets/project_shell_apply.png)
 
 ## Default Page Shell
 
@@ -34,14 +34,14 @@ Whenever you create an app using WaveMaker it is based out of a default project 
 Like mentioned above, you can create and use your own project shells as per your app development needs. For this follow these steps:
 
 1. Create an app with the functionality, theme, and styles that you want to be applied in common to multiple apps.
-2. Once you have created the app, Export it as Project Shell. [![](../../assets/Publish_shell_ws.png)](../../assets/Publish_shell_ws.png)
-3. This shell will be available for selection when you create an app from your workspace. [![project_shell_apply](../../assets/project_shell_apply2.png)](../../assets/project_shell_apply2.png)
+2. Once you have created the app, Export it as Project Shell. [![](/learn/assets/Publish_shell_ws.png)](/learn/assets/Publish_shell_ws.png)
+3. This shell will be available for selection when you create an app from your workspace. [![project_shell_apply](/learn/assets/project_shell_apply2.png)](/learn/assets/project_shell_apply2.png)
 
 ## Publishing Project Shell
 
 ##### Enterprise Version post 10.0 release
 
-In order for the Project Shell to be available for all developers within the enterprise, it needs to be published to the EDN and approved by the EDN Admin. Refer to [Artifacts Publishing Mechanism](/learn/app-development/wavemaker-overview/artifacts-repository/#publishing) for more details. [![](../../assets/Publish_shell.png)](../../assets/Publish_shell.png)
+In order for the Project Shell to be available for all developers within the enterprise, it needs to be published to the EDN and approved by the EDN Admin. Refer to [Artifacts Publishing Mechanism](/learn/app-development/wavemaker-overview/artifacts-repository/#publishing) for more details. [![](/learn/assets/Publish_shell.png)](/learn/assets/Publish_shell.png)
 
 Export as Shell to EDN will prompt you to enter the following details:
 
@@ -50,10 +50,10 @@ Export as Shell to EDN will prompt you to enter the following details:
 - **Change Log**: These include the comments that the developer needs to add before publishing the artifact.
 - **Tag**: this will be useful for searching, each artifact can have multiple tags.
 
-[![](../../assets/shell_publish_edn.png)](../../assets/shell_publish_edn.png)
+[![](/learn/assets/shell_publish_edn.png)](/learn/assets/shell_publish_edn.png)
 
-- After Admin's approval, the Shell is listed in the artifact repository listing. [![](../../assets/Artifacts_shell_list.png)](../../assets/Artifacts_shell_list.png)
-- To use the Shell, the app developer needs to select the Shell at the time of App creation. [![project_shell_apply](../../assets/project_shell_apply2.png)](../../assets/project_shell_apply2.png)
+- After Admin's approval, the Shell is listed in the artifact repository listing. [![](/learn/assets/Artifacts_shell_list.png)](/learn/assets/Artifacts_shell_list.png)
+- To use the Shell, the app developer needs to select the Shell at the time of App creation. [![project_shell_apply](/learn/assets/project_shell_apply2.png)](/learn/assets/project_shell_apply2.png)
 
 In this document, we have seen how Project Shell can be used as a foundation for multiple applications without replicating the effort.
 

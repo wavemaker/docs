@@ -21,8 +21,8 @@ This section walks through the steps to deploy WaveMaker app to Oracle WebLogic 
 
 ## Setting WebLogic XML file in project
 
-1. Download the following [zip file](../assets/weblogic.zip) and extract the WebLogic XML file.
-2. Open the WaveMaker app and [Import the extracted _weblogic.xml_ file](http://[supsystic-show-popup id=112]) into project. Make sure it is imported to the following location: \[project\_home\]/src/main/webapp/web-inf[![](../assets/weblogic1.png)](../assets/weblogic1.png)
+1. Download the following [zip file](/learn/assets/weblogic.zip) and extract the WebLogic XML file.
+2. Open the WaveMaker app and [Import the extracted _weblogic.xml_ file](http://[supsystic-show-popup id=112]) into project. Make sure it is imported to the following location: \[project\_home\]/src/main/webapp/web-inf[![](/learn/assets/weblogic1.png)](/learn/assets/weblogic1.png)
 
 ## Create Application War file
 
@@ -31,13 +31,13 @@ This section walks through the steps to deploy WaveMaker app to Oracle WebLogic 
 ## Deploy Application to WebLogic (Deployment Process)
 
 1. Log in to WebLogic server
-2. From the _Deployments_ section (link on the left side menu), click the _Install_ button.[![](../assets/weblogic2.png)](../assets/weblogic2.png)
-3. Provide the path to the location of war file in the _Path_ text box, select the _war file_ and click the _Next_ button.[![](../assets/weblogic3.png)](../assets/weblogic3.png)
-4. Select '_Install this deployment as an application_' and click the _Next_ button.[![](../assets/weblogic4.png)](../assets/weblogic4.png)
-5. Provide the app _Name_ and click the _Next_ button.[![](../assets/weblogic5.png)](../assets/weblogic5.png)
-6. Select '_Yes, take me to the deployment's configuration screen_' and click the _Finish_ button.[![](../assets/weblogic6.png)](../assets/weblogic6.png)
-7. Click the _Save_ button in deployment settings page[![](../assets/weblogic7.png)](../assets/weblogic7.png)
-8. Select the _Testing_ tab to access the deployed application.[![](../assets/weblogic8.png)](../assets/weblogic8.png)
+2. From the _Deployments_ section (link on the left side menu), click the _Install_ button.[![](/learn/assets/weblogic2.png)](/learn/assets/weblogic2.png)
+3. Provide the path to the location of war file in the _Path_ text box, select the _war file_ and click the _Next_ button.[![](/learn/assets/weblogic3.png)](/learn/assets/weblogic3.png)
+4. Select '_Install this deployment as an application_' and click the _Next_ button.[![](/learn/assets/weblogic4.png)](/learn/assets/weblogic4.png)
+5. Provide the app _Name_ and click the _Next_ button.[![](/learn/assets/weblogic5.png)](/learn/assets/weblogic5.png)
+6. Select '_Yes, take me to the deployment's configuration screen_' and click the _Finish_ button.[![](/learn/assets/weblogic6.png)](/learn/assets/weblogic6.png)
+7. Click the _Save_ button in deployment settings page[![](/learn/assets/weblogic7.png)](/learn/assets/weblogic7.png)
+8. Select the _Testing_ tab to access the deployed application.[![](/learn/assets/weblogic8.png)](/learn/assets/weblogic8.png)
 
 **Deployment to WebLogic**
 

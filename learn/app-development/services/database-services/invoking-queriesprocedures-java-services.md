@@ -15,7 +15,7 @@ Example:
 
 **Invocation of Services** As specified each query and procedure have a method in the service layer. You can call these methods to execute the query or procedure.
 
-[![](../../../assets/queryproc_java.png)](../../../assets/queryproc_java.png)
+[![](/learn/assets/queryproc_java.png)](/learn/assets/queryproc_java.png)
 
 ## Securing Query/Procedure APIs
 
@@ -23,7 +23,7 @@ There are two ways to configure API visibility:
 
 **Security** You can configure API permissions from Security dialog. Here you can configure which user can access a particular API depending on User Roles.
 
-[![](../../../assets/queryproc_security.png)](../../../assets/queryproc_security.png) **API Designer** From API Designer you can configure API visibility by changing Visibility options.
+[![](/learn/assets/queryproc_security.png)](/learn/assets/queryproc_security.png) **API Designer** From API Designer you can configure API visibility by changing Visibility options.
 
-[![](../../../assets/queryproc_api.png)](../../../assets/queryproc_api.png)
+[![](/learn/assets/queryproc_api.png)](/learn/assets/queryproc_api.png)
 

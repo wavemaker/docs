@@ -7,7 +7,7 @@ id: ""
 
 Live Filter provides data filtering UI and functionality. Live Filter can be bound to a Live Variable and returns filtered results which in turn can be bound to any widget
 
-Drag-and-drop the **Live Filter** widget. [![lftr_sel](./assets/lftr_sel.png)](./assets/lftr_sel.png)
+Drag-and-drop the **Live Filter** widget. [![lftr_sel](/learn/assets/lftr_sel.png)](/learn/assets/lftr_sel.png)
 
 #### STEP 1 – SELECT DATA
 
@@ -39,21 +39,21 @@ There can be different scenarios to deal with when configuring your Live Filter�
     3. You can **select data node** to be the entire widget or the selecteditem node in case of another Data Table or List or Cards or result from a Live Filter
     4. As you are not using a Variable the Data Configuration options will not be available.
 
-[![lftr_data](./assets/lftr_data.png)](./assets/lftr_data.png)
+[![lftr_data](/learn/assets/lftr_data.png)](/learn/assets/lftr_data.png)
 
 ## Layout and Alignment Configuration
 
-Select the Live Filter **Layout** from _one-column, two-column or three-column_. You can also specify the **Caption** _Alignment, Position and Size_. [![lftr_layout](./assets/lftr_layout.png)](./assets/lftr_layout.png)
+Select the Live Filter **Layout** from _one-column, two-column or three-column_. You can also specify the **Caption** _Alignment, Position and Size_. [![lftr_layout](/learn/assets/lftr_layout.png)](/learn/assets/lftr_layout.png)
 
 ## Field Selection
 
-Once the datasource and layout are selected, you can set the filter **fields**. You can choose the fields to be displayed on the filter by selecting from the list and set the appropriate widget for the fields. Click on the **Done** button. Now your filter is ready. [![lftr_fields](./assets/lftr_fields.png)](./assets/lftr_fields.png)
+Once the datasource and layout are selected, you can set the filter **fields**. You can choose the fields to be displayed on the filter by selecting from the list and set the appropriate widget for the fields. Click on the **Done** button. Now your filter is ready. [![lftr_fields](/learn/assets/lftr_fields.png)](/learn/assets/lftr_fields.png)
 
 ### How to Apply Live Filter to a Data Table/Chart
 
 1. Drag and drop _Data Table or Chart_ widget on the page.
 2. Bind the Data Table/Chart widget to the filter created by clicking on the _bind variable_ button next to the _Value_ Property in the _Dataset_ section of the Data Table/Chart widget.
-3. Select the _Result_ of the filter you just created from the _Widgets_ tab on the **Bind** dialog box. [![lftr_apply_bind](./assets/lftr_apply_bind.png)](./assets/lftr_apply_bind.png)
-4. Select the x-axis and y-axis values for the chart. (in case of Data Table, select the columns to be displayed at the time of [configuration](/learn/using-datatable-widget/#fields) or from [Advanced Settings](/learn/howtos-datatable/#intro)) [![lftr_apply_chart](./assets/lftr_apply_chart-1024x576.png)](./assets/lftr_apply_chart.png)
+3. Select the _Result_ of the filter you just created from the _Widgets_ tab on the **Bind** dialog box. [![lftr_apply_bind](/learn/assets/lftr_apply_bind.png)](/learn/assets/lftr_apply_bind.png)
+4. Select the x-axis and y-axis values for the chart. (in case of Data Table, select the columns to be displayed at the time of [configuration](/learn/using-datatable-widget/#fields) or from [Advanced Settings](/learn/howtos-datatable/#intro)) [![lftr_apply_chart](/learn/assets/lftr_apply_chart-1024x576.png)](/learn/assets/lftr_apply_chart.png)
 5. Run the application.
-6. Select a value in the filter and click on _Filter_ button and see the values change in the table/chart.[![lftr_apply_run1](./assets/lftr_apply_run1-1024x576.png)](./assets/lftr_apply_run1.png)
+6. Select a value in the filter and click on _Filter_ button and see the values change in the table/chart.[![lftr_apply_run1](/learn/assets/lftr_apply_run1-1024x576.png)](/learn/assets/lftr_apply_run1.png)

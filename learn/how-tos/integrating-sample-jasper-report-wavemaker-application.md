@@ -72,8 +72,8 @@ Jasper Reports is an open source Java reporting tool that can write to a variety
                 </exclusions>
             </dependency>
     
-2. Create a database with a table named _employee_ with the following DB Schema and add sample data [![](../assets/prereq_db.png)](../assets/prereq_db.png)
-3. The _jrxml_ file has to be created as per your database. [Import](http://[supsystic-show-popup id=112]) the _jrxml_ file to _projects/src/main/resources_. For the above database, we have used the following [employee](../assets/employee.zip).
+2. Create a database with a table named _employee_ with the following DB Schema and add sample data [![](/learn/assets/prereq_db.png)](/learn/assets/prereq_db.png)
+3. The _jrxml_ file has to be created as per your database. [Import](http://[supsystic-show-popup id=112]) the _jrxml_ file to _projects/src/main/resources_. For the above database, we have used the following [employee](/learn/assets/employee.zip).
 
 ## Steps in Integration
 

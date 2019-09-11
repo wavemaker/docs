@@ -7,7 +7,7 @@ As mentioned in [previous sections](/learn/app-development/ui-design/design-over
 
 # Page Layouts
 
-**Page Layouts** help you design the structure of the page by demarcating the header, footer, navigation and one or more content columns. Page Layout can be selected from the drop-down on the canvas toolbar. [![](../assets/page_layout.png)](../assets/page_layout.png) A **Page Layout** has the following containers - a header, navigation bar, content, and footer. The content can have one, two or three columns. To change the layout of a page, simply click on the desired layout to see it take effect on the design canvas. There are four Page Layout options:
+**Page Layouts** help you design the structure of the page by demarcating the header, footer, navigation and one or more content columns. Page Layout can be selected from the drop-down on the canvas toolbar. [![](/learn/assets/page_layout.png)](/learn/assets/page_layout.png) A **Page Layout** has the following containers - a header, navigation bar, content, and footer. The content can have one, two or three columns. To change the layout of a page, simply click on the desired layout to see it take effect on the design canvas. There are four Page Layout options:
 
 - **Blank Layout** - without any header or a footer.
 - **Layout with header, content, and footer**: The content along with a header and a footer.
@@ -19,7 +19,7 @@ As mentioned in [previous sections](/learn/app-development/ui-design/design-over
 
 A typical page layout with a header, footer, topnav, leftnav and rightnav has the following structure, as can be seen from the _Files_ tab on the **Files and Services **panel on the left:
 
-[![](../assets/page_layout_files.png)](../assets/page_layout_files.png)
+[![](/learn/assets/page_layout_files.png)](/learn/assets/page_layout_files.png)
 
 Widgets can be added to the _mainContent._ The widgets in a container can be left-aligned, right-aligned or centered. The header, footer, topnav, left and right panels are partial pages and can be customized using the edit button on each of the panels.
 
@@ -43,9 +43,9 @@ NavigationCall is a component you can add to your project and provide the follow
 - _gotoAccordion_ – Navigates to the specified accordion of the specified page.
 - _gotoTab_ – Navigates to the specified tab of the specified page.
 
-Navigation in the application happens using a **Navigation Call**. Whenever a page is created a corresponding _gotoPage_ navigation call variable is generated or one can create a call variable manually. [![call_var](../assets/call_var.png)](../assets/call_var.png) Navigation can be to a page or to a component like a tab or accordion pane on a page. Navigation call can be invoked in two ways:
+Navigation in the application happens using a **Navigation Call**. Whenever a page is created a corresponding _gotoPage_ navigation call variable is generated or one can create a call variable manually. [![call_var](/learn/assets/call_var.png)](/learn/assets/call_var.png) Navigation can be to a page or to a component like a tab or accordion pane on a page. Navigation call can be invoked in two ways:
 
-1. Binding the NavigationCall to a Widget event - For example Button click – Use the button’s onClick event to trigger a NavigationCall to move to a new page or view. [![call_event](../assets/call_event.png)](../assets/call_event.png)
+1. Binding the NavigationCall to a Widget event - For example Button click – Use the button’s onClick event to trigger a NavigationCall to move to a new page or view. [![call_event](/learn/assets/call_event.png)](/learn/assets/call_event.png)
 2. Manually invoking the NavigationCall used when we want to validate the user action or state of the application before allowing the navigation. For example: Assuming a scenario, allow the navigation only when the user selects a subscriptionType, then the onClick event can trigger a JavaScript function:
     
     Page.subscribe = funtion($event, widget){
@@ -58,7 +58,7 @@ Navigation in the application happens using a **Navigation Call**. Whenever a pa
 
 # Events
 
-Events provide a way for you to define the actions that take place when something occurs in your application.There are many events that occur within a WaveMaker application. The most common events are user interface events, such as when a user clicks a button. Events are also triggered when an editor's value changes, and even when a **ServiceVariable** gets new data from the server. You have several options for specifying what will happen when a button is clicked. [![event_types](../assets/event_types.png)](../assets/event_types.png) Here are a few examples:
+Events provide a way for you to define the actions that take place when something occurs in your application.There are many events that occur within a WaveMaker application. The most common events are user interface events, such as when a user clicks a button. Events are also triggered when an editor's value changes, and even when a **ServiceVariable** gets new data from the server. You have several options for specifying what will happen when a button is clicked. [![event_types](/learn/assets/event_types.png)](/learn/assets/event_types.png) Here are a few examples:
 
 - **No Event**: Take no action.
 - **New Action:** For example, a help dialog automatically displays when a help button is clicked.
@@ -80,7 +80,7 @@ For sake of convenience, the events are categorized as follows:
 
 WaveMaker supports multi-event handling. One can assign a series of events to be triggered by a single event. Click on the "+" next to the event name to add more events. When you use a series of variables to trigger on an event ensure that you handle eventualities like one callback was a success and other a failure.
 
-[![](../assets/event_multi.png)](../assets/event_multi.png)
+[![](/learn/assets/event_multi.png)](/learn/assets/event_multi.png)
 
 B.1 Web UI Design
 

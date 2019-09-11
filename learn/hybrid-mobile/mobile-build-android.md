@@ -22,7 +22,7 @@ For building a .apk file, **Mobile Configuration** needs to be set. Mobile Confi
 
 To perform an **APK Build**, using the Workspace Toolbar from **Build** task select **Build for Android**.
 
-[![](../assets/mobile_build.png)](../assets/mobile_build.png)
+[![](/learn/assets/mobile_build.png)](/learn/assets/mobile_build.png)
 
 Before proceeding with Build, you need to set the following properties:
 

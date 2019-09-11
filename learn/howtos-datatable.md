@@ -15,7 +15,7 @@ Customisation of Data Table can be in terms of:
 
 We will be using a Data Table bound to Employee Live Variable from the sample database that ships with WaveMaker. The Data Table displays the following fields: Firstname, Lastname, Zip, Birthdate, Picurl, Department Name, and Department Budget.
 
-[![dt_as](./assets/dt_as-1024x640.png)](./assets/dt_as.png) Widgets for Edit and Display of ColumnsWidgets can be used for two purposes:
+[![dt_as](/learn/assets/dt_as-1024x640.png)](/learn/assets/dt_as.png) Widgets for Edit and Display of ColumnsWidgets can be used for two purposes:
 
 - **Edit Options**: This option is available for _Inline Editable Data Table_. This defines the _format for data input_ by the user. The options include **text**, **number**, **textarea**, **select**, **autocomplete**, **checkbox**, **date**, **time**, **datetime**, and **upload**. These behave the same way as for a Live Form.
 - **View Options**: View option defines the presentation of data to the user. The available options are: **button**, **checkbox**, and **image**.
@@ -51,11 +51,11 @@ We will customise the Data Table:
 - Lastname field as danger button with a click event triggering the display of alert notification variable
 - Picurl as an image widget
 
-[![dt_widget_run](./assets/dt_widget_run-1024x640.png)](./assets/dt_widget_run.png) Click on the any Lastname button [![dt_widget_run2](./assets/dt_widget_run2-1024x640.png)](./assets/dt_widget_run2.png)
+[![dt_widget_run](/learn/assets/dt_widget_run-1024x640.png)](/learn/assets/dt_widget_run.png) Click on the any Lastname button [![dt_widget_run2](/learn/assets/dt_widget_run2-1024x640.png)](/learn/assets/dt_widget_run2.png)
 
-1. Firstname field as a primary button [![dt_button](./assets/dt_button.png)](./assets/dt_button.png)
-2. Lastname field as danger button with a click event triggering the display of alert notification variable: Set the Widget to button, Widget class to btn-danger, Widget Action to New Notification Variable. Design the Notification Variable to display an alert box with the message 'Testing' [![dt_button_danger](./assets/dt_button_danger.png)](./assets/dt_button_danger.png)[![dt_button_alert](./assets/dt_button_alert.png)](./assets/dt_button_alert.png)
-3. Picurl as an image widget, [![dt_widget_image](./assets/dt_widget_image.png)](./assets/dt_widget_image.png)
+1. Firstname field as a primary button [![dt_button](/learn/assets/dt_button.png)](/learn/assets/dt_button.png)
+2. Lastname field as danger button with a click event triggering the display of alert notification variable: Set the Widget to button, Widget class to btn-danger, Widget Action to New Notification Variable. Design the Notification Variable to display an alert box with the message 'Testing' [![dt_button_danger](/learn/assets/dt_button_danger.png)](/learn/assets/dt_button_danger.png)[![dt_button_alert](/learn/assets/dt_button_alert.png)](/learn/assets/dt_button_alert.png)
+3. Picurl as an image widget, [![dt_widget_image](/learn/assets/dt_widget_image.png)](/learn/assets/dt_widget_image.png)
 
 Column Formatting OptionsThe Format options available are: prefix, suffix, toCurrency, toDate and toNumber. Depending upon the option selected further choices open up:
 
@@ -87,12 +87,12 @@ We will customise the Data Table:
     3. Department Name with a suffix of ‘Dept’
     4. Department Budget formatted as toCurrency with ‘USD’ symbol and Fraction Size ‘2’
 
-[![dt_format_run](./assets/dt_format_run-1024x640.png)](./assets/dt_format_run.png)
+[![dt_format_run](/learn/assets/dt_format_run-1024x640.png)](/learn/assets/dt_format_run.png)
 
-- Zip with a prefix of ‘US-‘, [![dt_format_pre](./assets/dt_format_pre.png)](./assets/dt_format_pre.png)
-- Birthdate formatted to toDate with Date Pattern as ‘yyyy, MMM dd’, [![dt_format_date](./assets/dt_format_date.png)](./assets/dt_format_date.png)
-- Department Name with a suffix of ‘Dept’, [![dt_format_suff](./assets/dt_format_suff.png)](./assets/dt_format_suff.png)
-- Department Budget formatted as toCurrency with ‘USD’ symbol and Fraction Size ‘2’ [![dt_format_curr](./assets/dt_format_curr.png)](./assets/dt_format_curr.png)
+- Zip with a prefix of ‘US-‘, [![dt_format_pre](/learn/assets/dt_format_pre.png)](/learn/assets/dt_format_pre.png)
+- Birthdate formatted to toDate with Date Pattern as ‘yyyy, MMM dd’, [![dt_format_date](/learn/assets/dt_format_date.png)](/learn/assets/dt_format_date.png)
+- Department Name with a suffix of ‘Dept’, [![dt_format_suff](/learn/assets/dt_format_suff.png)](/learn/assets/dt_format_suff.png)
+- Department Budget formatted as toCurrency with ‘USD’ symbol and Fraction Size ‘2’ [![dt_format_curr](/learn/assets/dt_format_curr.png)](/learn/assets/dt_format_curr.png)
 
 Column Styling OptionsStyling options include
 
@@ -109,7 +109,7 @@ We will customise the Data Table:
 - - Department Budget column to be displayed in pink color
     - Zip column to be in blue when the value is 90028
 
-[![dt_style_run](./assets/dt_style_run-1024x640.png)](./assets/dt_style_run.png)
+[![dt_style_run](/learn/assets/dt_style_run-1024x640.png)](/learn/assets/dt_style_run.png)
 
 The following style classes have been defined from the Style tab:
 
@@ -123,12 +123,12 @@ The following style classes have been defined from the Style tab:
     background-color: #D8F6CE;
 }
 
-[![dt_style](./assets/dt_style.png)](./assets/dt_style.png)
+[![dt_style](/learn/assets/dt_style.png)](/learn/assets/dt_style.png)
 
 From the Advanced Settings dialog:
 
-1. select Department Budget field and set the Class under Style tab to pink [![dt_style_class](./assets/dt_style_class.png)](./assets/dt_style_class.png)
-2. _Conditional Column Classes_ - specify the style class name to be applied to select rows satisfying the given condition. For example, you want to display the cell for Zip value of 90028 in blue [![dt_style_cond](./assets/dt_style_cond.png)](./assets/dt_style_cond.png)
+1. select Department Budget field and set the Class under Style tab to pink [![dt_style_class](/learn/assets/dt_style_class.png)](/learn/assets/dt_style_class.png)
+2. _Conditional Column Classes_ - specify the style class name to be applied to select rows satisfying the given condition. For example, you want to display the cell for Zip value of 90028 in blue [![dt_style_cond](/learn/assets/dt_style_cond.png)](/learn/assets/dt_style_cond.png)
 
 Table and Column ActionsActions Tab can be used to define the actions at grid and row level. By default the following actions are given:
 
@@ -142,9 +142,9 @@ You can add custom actions:
 
 ## Usage Example
 
-We will add a Row Action to display an alert message on click. [![dt_actions_run2](./assets/dt_actions_run2-1024x640.png)](./assets/dt_actions_run2.png)
+We will add a Row Action to display an alert message on click. [![dt_actions_run2](/learn/assets/dt_actions_run2-1024x640.png)](/learn/assets/dt_actions_run2.png)
 
-- Add Row Action and set the Action to trigger Javascript, click the message to open Script [![dt_actions](./assets/dt_actions.png)](./assets/dt_actions.png)
+- Add Row Action and set the Action to trigger Javascript, click the message to open Script [![dt_actions](/learn/assets/dt_actions.png)](/learn/assets/dt_actions.png)
 - The Action will be a JS function as shown below. Here we have written a function to display an alert dialog. The name of the function is the action field entry in the custom button created earlier.
     
     Application.$controller("grid1Controller", \["$scope",
@@ -157,13 +157,13 @@ We will add a Row Action to display an alert message on click. [![dt_actions_run
         }
     \]);
     
-    [![dt_actions_js](./assets/dt_actions_js-1024x640.png)](./assets/dt_actions_js.png)
+    [![dt_actions_js](/learn/assets/dt_actions_js-1024x640.png)](/learn/assets/dt_actions_js.png)
 
 Role-based Access to ColumnsIf you [security has been enabled](/learn/app-security/#permissions) in your app, then you can define the app role which has access to a specific column.
 
-[![dt_security](./assets/dt_security.png)](./assets/dt_security.png)Using the Data Table call back EventsData Grid has few methods exposed on widget scope which can be accessed via JavaScript. Data Table behavior can be customised with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..
+[![dt_security](/learn/assets/dt_security.png)](/learn/assets/dt_security.png)Using the Data Table call back EventsData Grid has few methods exposed on widget scope which can be accessed via JavaScript. Data Table behavior can be customised with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..
 
-[![dt_events](./assets/dt_events.png)](./assets/dt_events.png)
+[![dt_events](/learn/assets/dt_events.png)](/learn/assets/dt_events.png)
 
  
 

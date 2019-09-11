@@ -8,7 +8,7 @@ id: ""
 3. Item Reordering: **Enabling reorder** will enable users to reorder the list items at run-time.
 4. **Disable Item**: This property will disable all the events on the item and other widgets present it.
 
-[![](../../../../assets/cards_behav1.png)](../../../../assets/cards_behav1.png)
+[![](/learn/assets/cards_behav1.png)](/learn/assets/cards_behav1.png)
 
 < Configuration
 

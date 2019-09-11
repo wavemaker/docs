@@ -78,11 +78,11 @@ There are three scenarios wherein you will be dealing with once you start using 
 
 If you are using any IDE or programming editor of your choice, make sure to change the line separator or delimiter to Unix (\\n). **For example:** **In intellij IDEA :-** From the code Style panel, set the Line Separator field property from system-dependent to unix-style.
 
-**[![](../assets/IntelliJLineSeparator.png)](../assets/IntelliJLineSeparator.png)**
+**[![](/learn/assets/IntelliJLineSeparator.png)](/learn/assets/IntelliJLineSeparator.png)**
 
 **In Eclipse:-** User has to select the project and convert line delimiters to Unix.
 
-[![](../assets/EclipseIDELineSeparator.png)](../assets/EclipseIDELineSeparator.png)
+[![](/learn/assets/EclipseIDELineSeparator.png)](/learn/assets/EclipseIDELineSeparator.png)
 
 Contents
 

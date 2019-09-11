@@ -7,7 +7,7 @@ You can set the **Home Page**, **Default Language** and **Display Format** for _
 
 **Note**: The date/time format set at the widget level will get priority over the Project level setting. **Note**: Default Language needs the App Messages to be configured in the selected language. [See here for more](/learn/app-development/widgets/form-widgets/select-locale-usage/).
 
-[![](../assets/Project_Settings2-1.png)](../assets/Project_Settings2-1.png)
+[![](/learn/assets/Project_Settings2-1.png)](/learn/assets/Project_Settings2-1.png)
 
 [Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 

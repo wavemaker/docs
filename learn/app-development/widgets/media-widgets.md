@@ -11,23 +11,23 @@ WaveMaker supports all three types of media - image, audio and video in the form
 
 Just drag and drop the desired widget and bind it to the resource using the Property Panel.
 
-**NOTE**: **Picture widget** can be used by itself or within any widget like Live List or Data Grid or Carousel etc.. It can be bound to a database column containing the URL for the picture resource location. Example, the picurl field of Employee database from Sample DB. **NOTE**: The following table gives the browser support for **audio/video resource**: [![](../../assets/widget_audiovideo.png)](../../assets/widget_audiovideo.png)
+**NOTE**: **Picture widget** can be used by itself or within any widget like Live List or Data Grid or Carousel etc.. It can be bound to a database column containing the URL for the picture resource location. Example, the picurl field of Employee database from Sample DB. **NOTE**: The following table gives the browser support for **audio/video resource**: [![](/learn/assets/widget_audiovideo.png)](/learn/assets/widget_audiovideo.png)
 
 # Features
 
 The following features are available for all the three media widgets,
 
 1. From the Property panel of the media widget:
-    - for _picture_: find the “Source” property. Notice the bind icon (represented by a chain link). Click on it. The Bind modal dialog pops up. [![](../../assets/media_pic.png)](../../assets/media_pic.png)
-    - for _video_: find the “Video” section. Locate the “MP4 Source Path” option and click on the “Bind” icon (represented by a chain link). Click on it. The Bind modal dialog pops up. [![](../../assets/media_video.png)](../../assets/media_video.png)
-    - for _audio_: find the “Audio” section. Locate the “MP3 Source Path” option and click on the “Bind” icon (represented by a chain link). Click on it. The Bind modal dialog pops up. [![](../../assets/media_audio.png)](../../assets/media_audio.png)
+    - for _picture_: find the “Source” property. Notice the bind icon (represented by a chain link). Click on it. The Bind modal dialog pops up. [![](/learn/assets/media_pic.png)](/learn/assets/media_pic.png)
+    - for _video_: find the “Video” section. Locate the “MP4 Source Path” option and click on the “Bind” icon (represented by a chain link). Click on it. The Bind modal dialog pops up. [![](/learn/assets/media_video.png)](/learn/assets/media_video.png)
+    - for _audio_: find the “Audio” section. Locate the “MP3 Source Path” option and click on the “Bind” icon (represented by a chain link). Click on it. The Bind modal dialog pops up. [![](/learn/assets/media_audio.png)](/learn/assets/media_audio.png)
 2. In the modal dialog, click on the “Resource” tab.
     
     - for _picture_: find the “Upload New” button and click on it. “Import Image” modal dialog pops up.
     - for _video_: From the “Type” dropdown, select the “Video” option. Click the “Upload New” button. “Import Video” modal dialog pops up.
     - for _audio_: from the “Type” dropdown, select the “Audio” option. Click the “Upload New” button. “Import Audio” modal dialog pops up.
     
-    [![](../../assets/media_resources.png)](../../assets/media_resources.png)
+    [![](/learn/assets/media_resources.png)](/learn/assets/media_resources.png)
 3. Additional customizations can also be done to the displayed item.
     - for _picture__:_ the properties such as Width and Height can be adjusted. Valid values, for example, can be 50px for Width, 75px for Height, etc.
     - for _audio_:

@@ -10,7 +10,7 @@ id: ""
 - Mobile Navbar comes as part of the page when the page layout with top navbar is selected. It is not available as a ‘drag n drop’ widget.
 - Widgets cannot be dropped on the mobile navbar.
 
-[![](../assets/Navbar_struct.jpg)](../assets/Navbar_struct.jpg)
+[![](/learn/assets/Navbar_struct.jpg)](/learn/assets/Navbar_struct.jpg)
 
 # Features
 
@@ -70,7 +70,7 @@ In search view of the mobile navbar, there is a button for navigating from searc
 
 ### Example 1
 
-[![](../assets/navbar_usage1.png)](../assets/navbar_usage1.png)
+[![](/learn/assets/navbar_usage1.png)](/learn/assets/navbar_usage1.png)
 
 1. Create a page with ‘Two column with top nav’ layout.
 2. Select the mobile navbar and go to properties panel.
@@ -82,7 +82,7 @@ In search view of the mobile navbar, there is a button for navigating from searc
 
 ### Example 2
 
-[![](../assets/navbar_usage2.png)](../assets/navbar_usage2.png)
+[![](/learn/assets/navbar_usage2.png)](/learn/assets/navbar_usage2.png)
 
 1. Create a page with a ‘One column with top nav’ layout.
 2. Select the mobile navbar and go to properties panel

@@ -17,13 +17,13 @@ The same-origin policy is an important security concept implemented by web brows
 
 XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end-user. For example, attacker can write the following script in a text box <script>alert(document.cookie)</script> which gets executed.
 
-[![](../../assets/security_OWSP_XSS.png)](../../assets/security_OWSP_XSS.png) In WaveMaker Security dialog provides three strategies to handle XSS:
+[![](/learn/assets/security_OWSP_XSS.png)](/learn/assets/security_OWSP_XSS.png) In WaveMaker Security dialog provides three strategies to handle XSS:
 
 1. **NONE**: In this case, all the scripts will be executed, this is the default setting
 2. **ENCODE**: In this case, the scripts will be encoded so that they cannot be executed in data access. For example, the script code:<script>alert(document.cookie)</script> will be converted to _&lt ; script &gt ; alert(document.cookie) &lt ; /script &gt ;_, thus rendering the script invalid.
 3. **WHITE LIST**: In this case, the scripts will be filtered based on
-    - _policy file_: this will implement XSS protection based on the rules defined in _/src/main/webapp/WEB-INF/wm-xss-policies.xml_. The default policy file is _wm-xss-policies.xml_. According to this default policy file, script tags will be removed. However, you can upload your own policy file which will be uploaded to WEB-INF folder. Clicking on to the file name will open it in the editor. Go through the [document](/learn/app-development/app-security/xss-antisamy-policy-configuration/) for more descriptions on AntiSamy rules. [![](../../assets/security_OWSP_XSSpolicy.png)](../../assets/security_OWSP_XSSpolicy.png)
-    - _manual tags_: Custom tag rules can be specified in terms of HTML tags which are categorized based on their actions. The possible actions are Validate, Remove, Truncate and Filter. These rules are used while handling the tags in the XSS attacks. You can add or delete tags against an action. We can specify the action for all Unknown tags also. [![](../../assets/security_OWSP_XSStags.png)](../../assets/security_OWSP_XSStags.png)
+    - _policy file_: this will implement XSS protection based on the rules defined in _/src/main/webapp/WEB-INF/wm-xss-policies.xml_. The default policy file is _wm-xss-policies.xml_. According to this default policy file, script tags will be removed. However, you can upload your own policy file which will be uploaded to WEB-INF folder. Clicking on to the file name will open it in the editor. Go through the [document](/learn/app-development/app-security/xss-antisamy-policy-configuration/) for more descriptions on AntiSamy rules. [![](/learn/assets/security_OWSP_XSSpolicy.png)](/learn/assets/security_OWSP_XSSpolicy.png)
+    - _manual tags_: Custom tag rules can be specified in terms of HTML tags which are categorized based on their actions. The possible actions are Validate, Remove, Truncate and Filter. These rules are used while handling the tags in the XSS attacks. You can add or delete tags against an action. We can specify the action for all Unknown tags also. [![](/learn/assets/security_OWSP_XSStags.png)](/learn/assets/security_OWSP_XSStags.png)
 
 ### Preventing CSRF Attacks
 
@@ -33,7 +33,7 @@ Angular provides a mechanism to counter CSRF. When performing XHR requests, the 
 
 WaveMaker Defaults: Cookie Name: wm\_xsrf\_token. This cookie gets set at run-time during the Login process. Header Name: X-WM-XSRF-TOKEN (User can customize it through security dialog)
 
-[![](../../assets/security_OWSP_CSRF.png)](../../assets/security_OWSP_CSRF.png)
+[![](/learn/assets/security_OWSP_CSRF.png)](/learn/assets/security_OWSP_CSRF.png)
 
 ### Enabling CORS
 
@@ -46,7 +46,7 @@ CORS defines a way in which a browser and server can interact to determine wheth
 3. **Path**: Only the resources (in the WaveMaker app) in the mentioned path can be exposed.
 4. **Origins**: WaveMaker app resources can be exposed only to these origins.
 
-[![](../../assets/security_OWSP_CORS.png)](../../assets/security_OWSP_CORS.png)
+[![](/learn/assets/security_OWSP_CORS.png)](/learn/assets/security_OWSP_CORS.png)
 
 < SSL Encryption
 

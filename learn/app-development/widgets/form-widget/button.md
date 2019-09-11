@@ -13,7 +13,7 @@ The button widget can trigger any of the following actions when it is clicked.
 - Call a JavaScript function
 - Call a web service or Java method
 
-[![](../../../assets/button_graphic.jpg)](../../../assets/button_graphic.jpg)
+[![](/learn/assets/button_graphic.jpg)](/learn/assets/button_graphic.jpg)
 
 # Features
 

@@ -13,7 +13,7 @@ Before proceeding with the set up, let us take a look at what constitutes WaveMa
 2. WaveMaker Cloud - a container based platform for app deployments within a private cloud, and
 3. Launchpad - WaveMaker's administrative console where you can configure users, additional Studio/Cloud instances for scaling, configure external VCS, etc. Launchpad is automatically installed when you setup WaveMaker Enterprise .
 
-Internally WME utilizes Docker containers to segregate and isolate the platform components and the developer workspace as depicted below: [![](../assets/vm_arch.png)](../assets/vm_arch.png)
+Internally WME utilizes Docker containers to segregate and isolate the platform components and the developer workspace as depicted below: [![](/learn/assets/vm_arch.png)](/learn/assets/vm_arch.png)
 
 1. **Platform Containers:** consisting of multiple internal services needed to run the WME platform like Studio, Cloud, VCS etc.. Each of these services runs in a separate Docker Container. Services talk to each other via REST service. Platform Containers make calls to the Docker Engine for operations like starting a new user container, stopping / starting a container etc..
 2. **User Containers**: Each user gets a container for developing apps. Containers are used to isolate each user’s workspace from other users.
@@ -78,7 +78,7 @@ To verify on Windows
 You will be needing IP Addresses for the following.
 
 - one static IP for accessing the Platform machine from your network and
-- an IP range to be assigned to the Docker containers internally. [![](../assets/ip_add.png)](../assets/ip_add.png)
+- an IP range to be assigned to the Docker containers internally. [![](/learn/assets/ip_add.png)](/learn/assets/ip_add.png)
 - **VM Access**:
     - Machine Static IP: This is the IP assigned to machine during setup and should be accessible on your network, or
     - In case of VM's, it will be the local IP address, which should be routable from in your LAN.

@@ -15,16 +15,16 @@ The source code is generated with the ORM, Service Layer & REST APIs with each l
 - **Layer 2: Service Layer** is responsible for validating the inputs and transaction management
 - **Layer 3: DAO Layer** is responsible for interacting with the underlying database
 
-The following diagram depicts the Layered Architecture mentioned above: [![](../../../assets/db_architecture.png)](../../../assets/db_architecture.png)
+The following diagram depicts the Layered Architecture mentioned above: [![](/learn/assets/db_architecture.png)](/learn/assets/db_architecture.png)
 
 ## Generated Files
 
 The folder structure for the generated code is as follows:
 
-1. Controllers generated for entities (one for each entity), queries and procedures: [![](../../../assets/db_files_controller.png)](../../../assets/db_files_controller.png)
-2. Data Access Objects (DAO) for each of the entities: [![](../../../assets/db_files_dao.png)](../../../assets/db_files_dao.png)
-3. Service Interfaces and Service Implementations for entities, queries, and procedures [![](../../../assets/db_files_services.png)](../../../assets/db_files_services.png)
-4. POJOs for each entity [![](../../../assets/db_files_pojo.png)](../../../assets/db_files_pojo.png)
+1. Controllers generated for entities (one for each entity), queries and procedures: [![](/learn/assets/db_files_controller.png)](/learn/assets/db_files_controller.png)
+2. Data Access Objects (DAO) for each of the entities: [![](/learn/assets/db_files_dao.png)](/learn/assets/db_files_dao.png)
+3. Service Interfaces and Service Implementations for entities, queries, and procedures [![](/learn/assets/db_files_services.png)](/learn/assets/db_files_services.png)
+4. POJOs for each entity [![](/learn/assets/db_files_pojo.png)](/learn/assets/db_files_pojo.png)
 
 Each of the layers performs its function and delegates the call to the next layer in the chain. For example, after the unmarshaling of the JSON data to the model, and authorization checks, the REST layer delegates the call to the service layer etc.**Design time Configuration Files**: It contains files required for designing database.
 
@@ -36,15 +36,15 @@ Each of the layers performs its function and delegates the call to the next laye
 - _servicename\_draft\_datamodel.json_: Contains user modifications. It’ll delete when we do update/re-import database.
 - _servicedef.xml_: contains types information for this service.
 
-[![](../../../assets/dbfiles.png)](../../../assets/dbfiles.png)
+[![](/learn/assets/dbfiles.png)](/learn/assets/dbfiles.png)
 
 # Generated APIs for Database Services
 
 Import or creation of database within a WaveMaker app results in the auto-generation of ORM artifacts from the Database Schema and as such each Schema needs to have a Primary key either single or composite. In case your external database schema comes without a primary key, you need to assign a column(s) as virtual primary key else all the columns are treated as part of a composite primary key. For each entity imported, a REST API is generated for each of the CRUD operations, Filter and Count functionalities. These REST APIs are exposed via the API Designer and can be tested and reconfigured as per the application needs.
 
-[![](../../../assets/db_apis.png)](../../../assets/db_apis.png)As an example, we are using the following Employee-Department Database Schema (Sample hrdb that can be imported into Studio) with a unique constraint for Dept\_code on the department table:
+[![](/learn/assets/db_apis.png)](/learn/assets/db_apis.png)As an example, we are using the following Employee-Department Database Schema (Sample hrdb that can be imported into Studio) with a unique constraint for Dept\_code on the department table:
 
-[![](../../../assets/db_apis_db.png)](../../../assets/db_apis_db.png)
+[![](/learn/assets/db_apis_db.png)](/learn/assets/db_apis_db.png)
 
 **Request Mapping:** _\[PROJECT\_ID\]/\[PROJECT\_NAME\]/services/\[SERVICE\_NAME\]/\[ENTITY\_NAME\]/_
 
@@ -52,25 +52,25 @@ Import or creation of database within a WaveMaker app results in the auto-genera
 
 ### CRUD APIs
 
-1. **CREATE** Inserts a record into the table _URL_: / _Request Type_: POST _Path Variables_: None _Request Parameter_: None _Request Body_: object in JSON format _Method Name Example_: createEmployee [![](../../../assets/db_apis_create.png)](../../../assets/db_apis_create.png)
-2. **READ (primary key based)** Retrieves the data associated with given ID value _URL_: /{id} _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getEmployee [![](../../../assets/db_apis_readpk.png)](../../../assets/db_apis_readpk.png)
-3. **READ (unique key based)** Retrieves the data associated with given unique key value _URL_: /\[UNIQUE\_KEY\]/{unique\_key\_value} _Request Type_: GET _Path Variables_: unique key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getByDeptCode (unique key for department entity) [![](../../../assets/db_apis_readuk.png)](../../../assets/db_apis_readuk.png)
+1. **CREATE** Inserts a record into the table _URL_: / _Request Type_: POST _Path Variables_: None _Request Parameter_: None _Request Body_: object in JSON format _Method Name Example_: createEmployee [![](/learn/assets/db_apis_create.png)](/learn/assets/db_apis_create.png)
+2. **READ (primary key based)** Retrieves the data associated with given ID value _URL_: /{id} _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getEmployee [![](/learn/assets/db_apis_readpk.png)](/learn/assets/db_apis_readpk.png)
+3. **READ (unique key based)** Retrieves the data associated with given unique key value _URL_: /\[UNIQUE\_KEY\]/{unique\_key\_value} _Request Type_: GET _Path Variables_: unique key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getByDeptCode (unique key for department entity) [![](/learn/assets/db_apis_readuk.png)](/learn/assets/db_apis_readuk.png)
 4. **READ (foreign key based)** Retrieves the data associated with given ID value from the related table _URL_: /{id..+}/\[relation\_field\] _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_:
     
     - Page,
     - Size,
     - Sort
     
-    _Request Body_: none _Method Name_: findAssociatedEmployees (employee foreign key for department entity) [![](../../../assets/db_apis_readfk.png)](../../../assets/db_apis_readfk.png)
+    _Request Body_: none _Method Name_: findAssociatedEmployees (employee foreign key for department entity) [![](/learn/assets/db_apis_readfk.png)](/learn/assets/db_apis_readfk.png)
 5. **READ (foreign key based - self-referential)** Retrieves the data associated with given ID value _URL_: /{id..+}/\[relation\_field\] _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_:
     
     - Page,
     - Size,
     - Sort
     
-    _Request Body_: none _Method Name_: findAssociatedEmployeesForManagerId (foreign key) [![](../../../assets/db_apis_readsr.png)](../../../assets/db_apis_readsr.png)
-6. **UPDATE** Updates entity record associated with the given id value _URL_: /{id} _Request Type_: PUT _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: object in JSON format _Method Name Example_: editEmployee [![](../../../assets/db_apis_update.png)](../../../assets/db_apis_update.png)
-7. **DELETE** Deletes entity record associated with the given id _URL_: /{id} _Request Type_: DELETE _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: None _Method Name Example_: deleteEmployee [![](../../../assets/db_apis_delete.png)](../../../assets/db_apis_delete.png)
+    _Request Body_: none _Method Name_: findAssociatedEmployeesForManagerId (foreign key) [![](/learn/assets/db_apis_readsr.png)](/learn/assets/db_apis_readsr.png)
+6. **UPDATE** Updates entity record associated with the given id value _URL_: /{id} _Request Type_: PUT _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: object in JSON format _Method Name Example_: editEmployee [![](/learn/assets/db_apis_update.png)](/learn/assets/db_apis_update.png)
+7. **DELETE** Deletes entity record associated with the given id _URL_: /{id} _Request Type_: DELETE _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: None _Method Name Example_: deleteEmployee [![](/learn/assets/db_apis_delete.png)](/learn/assets/db_apis_delete.png)
 
 ### Query APIs
 
@@ -83,8 +83,8 @@ Import or creation of database within a WaveMaker app results in the auto-genera
     - Size,
     - Sort
     
-    _Request Body_: none _Method Name_: findEmployees [![](../../../assets/db_apis_search.png)](../../../assets/db_apis_search.png)
-2. **COUNT** Returns the count of filtered entity instances (total count if query not given) _URL_: /count _Request Type_: POST/GET _Path Variables_: none _Request Parameter_: custom query (optional, see here for [query syntax](#custom-query-syntax)) _Request Body_: none _Method Name_: countEmployees [![](../../../assets/db_apis_count.png)](../../../assets/db_apis_count.png)
+    _Request Body_: none _Method Name_: findEmployees [![](/learn/assets/db_apis_search.png)](/learn/assets/db_apis_search.png)
+2. **COUNT** Returns the count of filtered entity instances (total count if query not given) _URL_: /count _Request Type_: POST/GET _Path Variables_: none _Request Parameter_: custom query (optional, see here for [query syntax](#custom-query-syntax)) _Request Body_: none _Method Name_: countEmployees [![](/learn/assets/db_apis_count.png)](/learn/assets/db_apis_count.png)
 3. **EXPORT ** Returns the downloadable file url for the filtered data _URL_: /export _Request Type_: POST _Request Parameter_:
     
     - pageable - pagination and sorting options, [see here for more](http://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Pageable.html),
@@ -99,7 +99,7 @@ Import or creation of database within a WaveMaker app results in the auto-genera
         - exportType - data format for export can be EXCEL or CSV
         - fileName: exported file name.
     
-    _Method Name Example_: exportEmployees [![](../../../assets/db_apis_export.png)](../../../assets/db_apis_export.png)
+    _Method Name Example_: exportEmployees [![](/learn/assets/db_apis_export.png)](/learn/assets/db_apis_export.png)
 
 ### Custom Query Syntax
 
@@ -122,9 +122,9 @@ The APIs generated by WaveMaker for all the imported tables will have methods th
 
 **FieldName parameter**
 
-- The fieldName refers to the name of the field associated with the column in the respective table. The field name is derived from the column name in the table and usually camelCased. [![](../../../assets/db_apis_fields.png)](../../../assets/db_apis_fields.png)
-- The name of the field for a given column can be seen from DB Designer or the respectively generated model class. Field Name of a column can be found in DB designer on the selection of respective column in the properties panel. [![](../../../assets/db_apis_fieldname.png)](../../../assets/db_apis_fieldname.png)
-- Relational field names - In order to filter values with respect to an entity in relation, fieldname must be given as _entityfield.fieldname_. This is applicable only for ManyToOne and OneToOne Relations. Eg: department.name = ‘Engineering’, the name is the fieldname of Department.java [![](../../../assets/db_apis_fieldsrel.png)](../../../assets/db_apis_fieldsrel.png)
+- The fieldName refers to the name of the field associated with the column in the respective table. The field name is derived from the column name in the table and usually camelCased. [![](/learn/assets/db_apis_fields.png)](/learn/assets/db_apis_fields.png)
+- The name of the field for a given column can be seen from DB Designer or the respectively generated model class. Field Name of a column can be found in DB designer on the selection of respective column in the properties panel. [![](/learn/assets/db_apis_fieldname.png)](/learn/assets/db_apis_fieldname.png)
+- Relational field names - In order to filter values with respect to an entity in relation, fieldname must be given as _entityfield.fieldname_. This is applicable only for ManyToOne and OneToOne Relations. Eg: department.name = ‘Engineering’, the name is the fieldname of Department.java [![](/learn/assets/db_apis_fieldsrel.png)](/learn/assets/db_apis_fieldsrel.png)
 
 **Value Expression parameter** Supported value expression types are listed in below table
 

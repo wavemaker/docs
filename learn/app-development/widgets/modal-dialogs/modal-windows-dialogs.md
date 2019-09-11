@@ -5,17 +5,17 @@ id: ""
 
 WaveMaker provides the facility to add pop-up windows to your project through the **Dialog widgets**. Pop-up windows are a way to give additional information to users without cluttering your project space. This can be for alerts, getting additional information like user name, or for login purposes. There are six types of Dialog widgets provided by WaveMaker.
 
-[![alert_struct](../../../assets/alert_struct.jpg)](../../../assets/alert_struct.jpg)
+[![alert_struct](/learn/assets/alert_struct.jpg)](/learn/assets/alert_struct.jpg)
 
-[![confirm_struct](../../../assets/confirm_struct.jpg)](../../../assets/confirm_struct.jpg)
+[![confirm_struct](/learn/assets/confirm_struct.jpg)](/learn/assets/confirm_struct.jpg)
 
-[![design_struct](../../../assets/design_struct.jpg)](../../../assets/design_struct.jpg)
+[![design_struct](/learn/assets/design_struct.jpg)](/learn/assets/design_struct.jpg)
 
-[![iframe_struct](../../../assets/iframe_struct.jpg)](../../../assets/iframe_struct.jpg)
+[![iframe_struct](/learn/assets/iframe_struct.jpg)](/learn/assets/iframe_struct.jpg)
 
-[![page_struct](../../../assets/page_struct.jpg)](../../../assets/page_struct.jpg)
+[![page_struct](/learn/assets/page_struct.jpg)](/learn/assets/page_struct.jpg)
 
-[![login_struct](../../../assets/login_struct.jpg)](../../../assets/login_struct.jpg)
+[![login_struct](/learn/assets/login_struct.jpg)](/learn/assets/login_struct.jpg)
 
 ## Overview
 
@@ -23,7 +23,7 @@ Dragging and dropping a dialog creates a **view** containing the dialog. The vie
 
 **Note:** Even though the dialog widget is placed in a view, that view is not available for navigation.
 
-[![](../../../assets/dialog.png)](../../../assets/dialog.png)
+[![](/learn/assets/dialog.png)](/learn/assets/dialog.png)
 
 # Features
 
@@ -34,19 +34,19 @@ For **Alert Dialog**, you can set:
 - the name, the title of the alert pop-up, message to be displayed in the pop-up, text on the OK button and the type of alert - error, information, success or warning.
 - the icon for display next to the title of the alert box, you can pick the icon from the [icon dialog](/learn/app-development/widgets/basic/icon/).
 
-[![](../../../assets/dialog_alert.png)](../../../assets/dialog_alert.png)
+[![](/learn/assets/dialog_alert.png)](/learn/assets/dialog_alert.png)
 
 ## Confirm Dialog
 
 Confirm Dialog is used to get confirmation from the user. In addition to the properties mentioned for Alert Dialog, it has an additional **Cancel **button. The most common usage is to confirm a delete action.
 
-[![](../../../assets/dialog_confirm.png)](../../../assets/dialog_confirm.png)
+[![](/learn/assets/dialog_confirm.png)](/learn/assets/dialog_confirm.png)
 
 ## Design Dialog
 
 Design Dialog gives a **Form** for obtaining additional information from the user, like the name. It is a composite widget with Labels and Text widgets. It comes with two buttons **Cancel **and **Save**.
 
-[![dialog_form](../../../assets/dialog_form.png)](../../../assets/dialog_form.png)
+[![dialog_form](/learn/assets/dialog_form.png)](/learn/assets/dialog_form.png)
 
 ## IFrame Dialog
 
@@ -54,19 +54,19 @@ An Iframe Dialog is a popup window that displays content from an external source
 
 **Note:** Since WaveMaker is secured, only secure URLs can be displayed in the Iframe.
 
-[![](../../../assets/dialog_iframe.png)](../../../assets/dialog_iframe.png)
+[![](/learn/assets/dialog_iframe.png)](/learn/assets/dialog_iframe.png)
 
 ## Login Dialog
 
 Login Dialog is a popup window that displays Login page content and can be dismissed by the user. Especially used to refresh the membership or for additional confirmation. The events that can be set include _onSuccess_, _onError_ and _onClose_.
 
-[![dialog_login](../../../assets/dialog_login.png)](../../../assets/dialog_login.png)
+[![dialog_login](/learn/assets/dialog_login.png)](/learn/assets/dialog_login.png)
 
 ## Page Dialog
 
 Page Dialog is a popup window that displays page content and can be dismissed by the user. The **content** property of this widget can be set to the desired [partial page](/learn/app-development/ui-design/page-concepts/partial-pages/) content.
 
-[![](../../../assets/dialog_page.png)](../../../assets/dialog_page.png)
+[![](/learn/assets/dialog_page.png)](/learn/assets/dialog_page.png)
 
 # Script Access
 

@@ -14,7 +14,7 @@ Once the design and building an app is completed, it needs to be tested. The ea
 - Click **Preview **will run the application in a new browser window.
 - The app will open the page within the app from where you clicked the Preview button. In case the app is secured, then you will be prompted to login and based on the permissions you will be redirected to the appropriate page.
 - An **Application Preview** will be displayed, where one can select the **target device** to run the app. This will give you an idea of how the app looks on various devices like various laptop, tablet, and phone sizes.
-- **QR code** is also displayed which can be used to access the app on a mobile device with ease. You can choose to remove this preview toolbar if not needed. [![](../assets/app_preview.png)](../assets/app_preview.png)
+- **QR code** is also displayed which can be used to access the app on a mobile device with ease. You can choose to remove this preview toolbar if not needed. [![](/learn/assets/app_preview.png)](/learn/assets/app_preview.png)
 
 **Application Runtime** The application will then open with a URL in the following format: _https://www.wavemakeronline.com/unique-id/app-name/login.html#/login_ Here are the elements of the generated URL:
 

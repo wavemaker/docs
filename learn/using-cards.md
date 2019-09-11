@@ -5,7 +5,7 @@ id: ""
 
 **Cards **is a view of items that are rendered responsively across a wide range of mobile devices and screen sizes.
 
-To bind the Cards to your back-end services data, drag and drop the Cards Widget onto the canvas. [![cards_sel](./assets/cards_sel.png)](./assets/cards_sel.png)
+To bind the Cards to your back-end services data, drag and drop the Cards Widget onto the canvas. [![cards_sel](/learn/assets/cards_sel.png)](/learn/assets/cards_sel.png)
 
 #### STEP 1 – SELECT DATA
 
@@ -37,13 +37,13 @@ There can be different scenarios to deal with when configuring your Cards Widge
     3. You can **select data node** to be the entire widget or the selecteditem node in case of another Data Table or List or Cards or result from a Live Filter
     4. As you are not using a Variable the Data Configuration options will not be available.
 
-[![cards_data](./assets/cards_data.png)](./assets/cards_data.png)
+[![cards_data](/learn/assets/cards_data.png)](/learn/assets/cards_data.png)
 
 ### STEP 2 – SELECT CARDS TEMPLATE
 
-1. Selecting the Template: In this step, you are expected to select a template suitable for the current use case. [![Card_template](./assets/Card_template.png)](./assets/Card_template.png)
-2. Select Pagination: Choose one of the pagination options provided [![Card_pag](./assets/Card_pag.png)](./assets/Card_pag.png)
+1. Selecting the Template: In this step, you are expected to select a template suitable for the current use case. [![Card_template](/learn/assets/Card_template.png)](/learn/assets/Card_template.png)
+2. Select Pagination: Choose one of the pagination options provided [![Card_pag](/learn/assets/Card_pag.png)](/learn/assets/Card_pag.png)
 
 #### STEP 3 – Binding Data Fields
 
-The template selected in the previous step provides a set of widgets that need to be bound to the corresponding field from the data source selected in the first step. Select the widget and bind to the corresponding properties like Caption etc. to the fields by selecting the field from the drop-down list. [![Card_fields](./assets/Card_fields.png)](./assets/Card_fields.png)
+The template selected in the previous step provides a set of widgets that need to be bound to the corresponding field from the data source selected in the first step. Select the widget and bind to the corresponding properties like Caption etc. to the fields by selecting the field from the drop-down list. [![Card_fields](/learn/assets/Card_fields.png)](/learn/assets/Card_fields.png)

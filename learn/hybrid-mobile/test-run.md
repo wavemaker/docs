@@ -6,13 +6,13 @@ id: "test-run"
 
 Once the design and building an app is completed, it needs to be tested. The easiest way to test an application is to click the **Preview **button from the Project Workspace. When you click **Preview, **you are given an URL for the web application that can be accessed by anyone in your network (e.g., by anyone inside your network firewall).
 
-[![](../assets/preview_page_mobile.png)](../assets/preview_page_mobile.png)
+[![](/learn/assets/preview_page_mobile.png)](/learn/assets/preview_page_mobile.png)
 
 **Preview** is recommended only for test or trial purpose as the application is deployed to the WaveMaker server provided with WaveMaker. When you stop WaveMaker, using the WaveMaker console, the application stops too. Using the WaveLens app, you can test run the hybrid mobile apps directly using any smartphone.
 
 - Click **Preview **will run the application in a new browser window.
 - An **Application Preview** will be displayed, where one can select the **target device** to run the app. This will give you an idea of how the app looks on various devices like various phone sizes.
-- **QR code** is also displayed which can be used to access the app on a mobile device with ease. You can choose to remove this preview toolbar if not needed. [![](../assets/app_preview_mobile.png)](../assets/app_preview_mobile.png)
+- **QR code** is also displayed which can be used to access the app on a mobile device with ease. You can choose to remove this preview toolbar if not needed. [![](/learn/assets/app_preview_mobile.png)](/learn/assets/app_preview_mobile.png)
 
 **Application Runtime** The application will then open with a URL in the following format: _https://www.wavemakeronline.com/unique-id/app-name/login.html#/login_ Here are the elements of the generated URL:
 

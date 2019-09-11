@@ -5,16 +5,16 @@ id: ""
 
 **Web Socket Variable** is the interface for the app developer to interact with a WebSocket Service imported into a WaveMaker app. The Variable has methods to interact with the target service like opening and closing the connection, sending and receiving messages to and from the server. It also holds the data to be sent to the service and the data received from the service.
 
-Web Socket Variable Lifecycle[![websocket_lifecycle](../../assets/websocket_lifecycle.png)](../../assets/websocket_lifecycle.png)
+Web Socket Variable Lifecycle[![websocket_lifecycle](/learn/assets/websocket_lifecycle.png)](/learn/assets/websocket_lifecycle.png)
 
 We can create variables directly instead of through the Data & Live Widgets. Here we list the steps for the same:
 
-1. Select Variable option from the Create Menu [![Var_create](../../assets/Var_create.png)](../../assets/Var_create.png)
-2. Select the **type of Variable** to be created from the list provided in the Variable Main Page and click on **ADD**[![varcr_menu_add](../../assets/varcr_menu_add.png)](../../assets/varcr_menu_add.png)
-3. Select Service - web/java service name and Operation - method/function [![websocket_var_props](../../assets/websocket_var_props.png)](../../assets/websocket_var_props.png)
-4. the **properties tab** contains all the properties like _source_, _service_ and _server options_ in case of live variables, and _behavior_. [![varcr_menu_beh](../../assets/varcr_menu_beh.png)](../../assets/varcr_menu_beh.png)
-5. the **data tab** will contain the fields serving as _filter fields_ while data fetch operation in case of Live Variable and as _input parameters_ for the Web Service call in case of Service Variables [![varcr_menu_data](../../assets/varcr_menu_data.png)](../../assets/varcr_menu_data.png)
-6. The events tab will contain the events that can be configured to trigger any action [![varcr_menu_events](../../assets/varcr_menu_events.png)](../../assets/varcr_menu_events.png)
+1. Select Variable option from the Create Menu [![Var_create](/learn/assets/Var_create.png)](/learn/assets/Var_create.png)
+2. Select the **type of Variable** to be created from the list provided in the Variable Main Page and click on **ADD**[![varcr_menu_add](/learn/assets/varcr_menu_add.png)](/learn/assets/varcr_menu_add.png)
+3. Select Service - web/java service name and Operation - method/function [![websocket_var_props](/learn/assets/websocket_var_props.png)](/learn/assets/websocket_var_props.png)
+4. the **properties tab** contains all the properties like _source_, _service_ and _server options_ in case of live variables, and _behavior_. [![varcr_menu_beh](/learn/assets/varcr_menu_beh.png)](/learn/assets/varcr_menu_beh.png)
+5. the **data tab** will contain the fields serving as _filter fields_ while data fetch operation in case of Live Variable and as _input parameters_ for the Web Service call in case of Service Variables [![varcr_menu_data](/learn/assets/varcr_menu_data.png)](/learn/assets/varcr_menu_data.png)
+6. The events tab will contain the events that can be configured to trigger any action [![varcr_menu_events](/learn/assets/varcr_menu_events.png)](/learn/assets/varcr_menu_events.png)
 
 ## Properties
 

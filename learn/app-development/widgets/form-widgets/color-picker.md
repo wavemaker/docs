@@ -4,7 +4,7 @@ id: "color-picker"
 ---
 ---
 
-![](../../../assets/laptop.png)
+![](/learn/assets/laptop.png)
   
 :::note
 Color Picker is available only for web responsive apps.

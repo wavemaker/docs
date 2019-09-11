@@ -28,7 +28,7 @@ WaveMaker Variables dealing with external services like Web, Database etc. may n
 
 The default appNotification Action can further be customized as per requirement. For example, if you want the app to display errors in an alert dialog, the appNotification action can be changed to alert type. To suppress the default error handling, simply delete the appNotification action. For more information, see [Error handling](/learn/how-tos/error-handling-wavemaker-app/).
 
-[![variable error](../../assets/vars_error.png)](../../assets/vars_error.png)
+[![variable error](/learn/assets/vars_error.png)](/learn/assets/vars_error.png)
 
 ## See More
 

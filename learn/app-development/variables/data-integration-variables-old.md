@@ -9,22 +9,22 @@ While creating an application, you will want to tie specific components, such as
 
 Variables can be created either manually through **Create** variables option from Main Menu or they can be **generated** at the time of drag and drop of **Live Widgets** like **Data Table, Live List, Live Form** and **Live Filter**.
 
-[![Var_create](../../assets/Var_create.png)](../../assets/Var_create.png)
+[![Var_create](/learn/assets/Var_create.png)](/learn/assets/Var_create.png)
 
 # Scope of variables
 
-Variables can be classified into two based on the scope of the Variable. The two types of variables are - **Application** and **Page** level variables. While both these types reside at the _client side_, the _application level_ variables share the data across multiple pages, whereas _Page level_ variables share the data within the page where they have been declared/created. Whenever you are switching from one page to another, all the previous page level variables are destroyed. [![var_scope](../../assets/var_scope.png)](../../assets/var_scope.png) **NOTE**: It is advised to have unique names for any variable to avoid confusion. Whenever you try to create or rename a variable WaveMaker will throw an error if another variable of the same name exists either within the page or at the app level. You can access these variables from the **Files Panel** under the **Resources** or **Page** folders
+Variables can be classified into two based on the scope of the Variable. The two types of variables are - **Application** and **Page** level variables. While both these types reside at the _client side_, the _application level_ variables share the data across multiple pages, whereas _Page level_ variables share the data within the page where they have been declared/created. Whenever you are switching from one page to another, all the previous page level variables are destroyed. [![var_scope](/learn/assets/var_scope.png)](/learn/assets/var_scope.png) **NOTE**: It is advised to have unique names for any variable to avoid confusion. Whenever you try to create or rename a variable WaveMaker will throw an error if another variable of the same name exists either within the page or at the app level. You can access these variables from the **Files Panel** under the **Resources** or **Page** folders
 
 # Data Storage
 
-A variable can be thought of comprising of four parts: [![var_struct](../../assets/var_struct.png)](../../assets/var_struct.png)
+A variable can be thought of comprising of four parts: [![var_struct](/learn/assets/var_struct.png)](/learn/assets/var_struct.png)
 
 1. **Data**, as rendered by the widgets, fetched from the data source
 2. **Data model** used for binding, with attributes and related objects; this is defined by the underlying data source
 3. **API** source from where the model object is obtained (DB, REST API or Java Services); [see here for WaveMaker Services](/learn/app-development/services/creating-backend-services/).
 4. **Events & Methods** that provide options to control the interaction between Variables and Widgets.
 
-[![var_def](../../assets/var_def.png)](../../assets/var_def.png)
+[![var_def](/learn/assets/var_def.png)](/learn/assets/var_def.png)
 
 # Variable Types
 
@@ -73,7 +73,7 @@ In a typical variable lifecycle:
 2. The event action talks to the data source via the API call.
 3. The result from API call is reflected in the Data which in turn changes the user data view.
 
-[![var_lifecycle](../../assets/var_lifecycle.png)](../../assets/var_lifecycle.png)
+[![var_lifecycle](/learn/assets/var_lifecycle.png)](/learn/assets/var_lifecycle.png)
 
 Four actions can be said to be responsible for triggering a variable lifecycle:
 
@@ -82,11 +82,11 @@ Four actions can be said to be responsible for triggering a variable lifecycle:
 - **Events** - Widgets are updated/notified on user events like click, submit, or variable events like pre and post update, on error etc..
 - **Update data on input change** is a property which configures the ability to auto reload Variable data, for example, if the data filter value changes dynamically from city = ‘New York’ to city = ‘Boston.
 
-[![var_triggers](../../assets/var_triggers.png)](../../assets/var_triggers.png)
+[![var_triggers](/learn/assets/var_triggers.png)](/learn/assets/var_triggers.png)
 
 # Error Handling
 
-WaveMaker Variables dealing with external services like Service Variable, Live Variable, etc. may not always return with a successful response. Sometimes the Variable call may fail due to various reasons like server validation, request timeout, etc. To gracefully handle such scenarios, a default **Notification Variable** (_toaster type_) named _appNotification_ is created in the app. By default, all Service/Live Variables invoke this variable on error response from the target service. [![vars_error](../../assets/vars_error.png)](../../assets/vars_error.png) In this manner, the app has a central point of error handling. The default appNotification variable can further be customized as per requirement. For example, if you want the app to display errors through an alert dialog, the appNotification variable can be changed to alert type. To suppress the default error handling, simply delete the appNotification variable. [Know more about error handling](/learn/how-tos/error-handling-wavemaker-app/).
+WaveMaker Variables dealing with external services like Service Variable, Live Variable, etc. may not always return with a successful response. Sometimes the Variable call may fail due to various reasons like server validation, request timeout, etc. To gracefully handle such scenarios, a default **Notification Variable** (_toaster type_) named _appNotification_ is created in the app. By default, all Service/Live Variables invoke this variable on error response from the target service. [![vars_error](/learn/assets/vars_error.png)](/learn/assets/vars_error.png) In this manner, the app has a central point of error handling. The default appNotification variable can further be customized as per requirement. For example, if you want the app to display errors through an alert dialog, the appNotification variable can be changed to alert type. To suppress the default error handling, simply delete the appNotification variable. [Know more about error handling](/learn/how-tos/error-handling-wavemaker-app/).
 
 5\. Data Integration - Variables
 

@@ -10,7 +10,7 @@ A **Logout Action** is automatically created when you [implement Security](htt
 **Logout Action** can be used to perform user logout.
 
 1. To create a Logout Action:
-    - Select the Action option from Variables on the Workspace Toolbar [![](../../assets/action_sel.png)](../../assets/action_sel.png)and click New Action from the Actions dialog. [![](../../assets/action_new.png?v=20)](../../assets/action_new.png?v=20)
+    - Select the Action option from Variables on the Workspace Toolbar [![](/learn/assets/action_sel.png)](/learn/assets/action_sel.png)and click New Action from the Actions dialog. [![](/learn/assets/action_new.png?v=20)](/learn/assets/action_new.png?v=20)
 2. A **New Action** wizard will open.
     1. Choose **Logout** Type
     2. **Name** - set by default which can be modified

@@ -7,7 +7,7 @@ Learn what database tools you can use to work with database services in WaveMake
 ---
 WaveMaker provides database tools to connect to your development and deployment database servers in the cloud. You can execute scripts and run the commands supported by the database server. To access the database tools, click on DB Tools located at the bottom of your project workspace, when in the Databases Resource page.
 
-[![](../../assets/db_tools.png)](../../assets/db_tools.png)
+[![](/learn/assets/db_tools.png)](/learn/assets/db_tools.png)
 
 ## DB Shell
 
@@ -19,7 +19,7 @@ DB Shell can be used only for the database hosted on Cloud supporting MariaDB v
 
 Upon clicking DB Tools from Databases Resource page, you will be shown the DB Shell- MariaDB Cloud tab which connects to the development database server and displays a command-line interface to execute database commands.
 
-[![](../../assets/dbtools_shell.png)](../../assets/dbtools_shell.png)
+[![](/learn/assets/dbtools_shell.png)](/learn/assets/dbtools_shell.png)
 
 ## DB Scripts
 
@@ -32,7 +32,7 @@ WaveMaker also makes it simple to execute SQL scripts on your database servers.
 Script execution does not work on IE9 browsers
 :::
 
-[![](../../assets/dbtools_script.png)](../../assets/dbtools_script.png)
+[![](/learn/assets/dbtools_script.png)](/learn/assets/dbtools_script.png)
 
 ## Import Database
 

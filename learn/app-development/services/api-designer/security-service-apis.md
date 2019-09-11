@@ -5,7 +5,7 @@ id: ""
 
 When you [enable Security](http://[supsystic-show-popup id=111]) for your application, the Security Services are created. You can view the various methods and their functionality from API Designer.
 
-[![](../../../assets/API_security.png)](../../../assets/API_security.png)
+[![](/learn/assets/API_security.png)](/learn/assets/API_security.png)
 
 < Backend Services Overview
 

@@ -3,7 +3,7 @@ title: "Charts Temporary"
 id: ""
 ---
 
-"A picture is worth a thousand words". To this end, WaveMaker gives you a tool to present your data in a pictorial form using the chart widgets. Using these widgets you can transform your data into either a line chart, column chart, pie chart, area chart, cumulative line chart, bar chart or a donut Chart. [![chart_run](./assets/chart_run-1024x640.png)](./assets/chart_run.png)
+"A picture is worth a thousand words". To this end, WaveMaker gives you a tool to present your data in a pictorial form using the chart widgets. Using these widgets you can transform your data into either a line chart, column chart, pie chart, area chart, cumulative line chart, bar chart or a donut Chart. [![chart_run](/learn/assets/chart_run-1024x640.png)](/learn/assets/chart_run.png)
 
 # Chart Types
 
@@ -56,11 +56,11 @@ Data can come from various sources as listed below
 - From Live Filter,
 - From Web Services.
 
-The x-axis and y-axis values can be set to the fields from the datasource, the chart is bound to. [![charts_feat1](./assets/charts_feat1.png)](./assets/charts_feat1.png)
+The x-axis and y-axis values can be set to the fields from the datasource, the chart is bound to. [![charts_feat1](/learn/assets/charts_feat1.png)](/learn/assets/charts_feat1.png)
 
-Depending upon the data type of the inderlying fields, you can choose the Data Display Format. [![chart_as_yaxis_format](./assets/chart_as_yaxis_format.png)](./assets/chart_as_yaxis_format.png)
+Depending upon the data type of the inderlying fields, you can choose the Data Display Format. [![chart_as_yaxis_format](/learn/assets/chart_as_yaxis_format.png)](/learn/assets/chart_as_yaxis_format.png)
 
-In case of Service and WebSocket Variables you can choose the Format Type to be toDate or toNumber. [![chart_as_yaxis_formattype](./assets/chart_as_yaxis_formattype.png)](./assets/chart_as_yaxis_formattype.png)
+In case of Service and WebSocket Variables you can choose the Format Type to be toDate or toNumber. [![chart_as_yaxis_formattype](/learn/assets/chart_as_yaxis_formattype.png)](/learn/assets/chart_as_yaxis_formattype.png)
 
 Note: For Pie and Donut charts, the options include Label and Value fields.
 
@@ -74,7 +74,7 @@ Note: For Pie and Donut charts, the options include Label and Value fields.
 - **Legend** position can be set to be top or bottom.
 - Layout of the **values** can be defined in terms of location, value format, caption for line charts  and more
 
-[![charts_feat2](./assets/charts_feat2.png)](./assets/charts_feat2.png) These options are available from the Advanced Settings of the chart. Apart from these properties, a **Title**, **Sub heading** and **Icon** can be assigned for the chart as a whole to be displayed top left corner of the Chart.
+[![charts_feat2](/learn/assets/charts_feat2.png)](/learn/assets/charts_feat2.png) These options are available from the Advanced Settings of the chart. Apart from these properties, a **Title**, **Sub heading** and **Icon** can be assigned for the chart as a whole to be displayed top left corner of the Chart.
 
 <iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="http://e1d52cdd9823.cloud.wavemakeronline.com/documentation_snippets/#/ChartsThemes">Chart Themes</iframe>
 
@@ -88,14 +88,14 @@ This property defines how the data is represented in the chart.
     - Cardinal for smooth curves, or
     - Step
     
-    [![](./assets/chart_interpolation.png)](./assets/chart_interpolation.png)
+    [![](/learn/assets/chart_interpolation.png)](/learn/assets/chart_interpolation.png)
 - **Data Arrangement** Property (available only for Column, Area and Bar Charts) controls whether to show the areas in:
     
     - - stack,
         - stream, or
         - expand
     
-    [![](./assets/chart_arrangement.png)](./assets/chart_arrangement.png)
+    [![](/learn/assets/chart_arrangement.png)](/learn/assets/chart_arrangement.png)
 
 ## Data Aggregation and Grouping
 
@@ -105,7 +105,7 @@ When dealing with charts bound to live variables, you can add additional functio
 - _Order By_ property can be used to set the column by which the data needs to be sorted. By default it will be set to the Group by column selected.
 - The values to be depicted on x- and y-axis are set to the _group by_ and _aggregation columns_ respectively.
 
-[![charts_feat3](./assets/charts_feat3.png)](./assets/charts_feat3.png)
+[![charts_feat3](/learn/assets/charts_feat3.png)](/learn/assets/charts_feat3.png)
 
 ## Interaction
 
@@ -117,7 +117,7 @@ When dealing with charts bound to live variables, you can add additional functio
 
 You can capture user selection in two ways:
 
-1. 1. The various outbound properties of chart are available for binding to other widgets or variables. The fields under selecteditem will be from the underlying dataset used for binding [![chart_output](./assets/chart_output.png)](./assets/chart_output.png)
+1. 1. The various outbound properties of chart are available for binding to other widgets or variables. The fields under selecteditem will be from the underlying dataset used for binding [![chart_output](/learn/assets/chart_output.png)](/learn/assets/chart_output.png)
     2. These selected values can be accessed via Javascript
         
         $scope.chart3Select = function($event, $isolateScope, selectedItem, selectedChartItem) {
@@ -128,7 +128,7 @@ You can capture user selection in two ways:
               $scope.Widgets.selectdept.datavalue = selectedItem.deptcode; // deptcode of selected object
         };
         
-        Here we have used the on select event of the chart: [![chart_events](./assets/chart_events.png)](./assets/chart_events.png)
+        Here we have used the on select event of the chart: [![chart_events](/learn/assets/chart_events.png)](/learn/assets/chart_events.png)
 
 # Use Cases
 

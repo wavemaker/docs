@@ -9,7 +9,7 @@ The WaveMaker security feature offers comprehensive security solutions to secure
 
 In WaveMaker, Security can be configured by selecting the Security option from the Project Configurations bar in the Project Workspace.
 
-[![sec_access](../assets/sec_access.png)](../assets/sec_access.png)
+[![sec_access](/learn/assets/sec_access.png)](/learn/assets/sec_access.png)
 
 # How App Security Works
 
@@ -31,7 +31,7 @@ WaveMaker also provides Role-based Access Control to control widget visibility. 
 
 Once Authentication is switched on the User Configuration information can be obtained from **Service Providers** like Database, LDAP, AD or any custom provider.
 
-[![sec_prov](../assets/sec_prov.png)](../assets/sec_prov.png)
+[![sec_prov](/learn/assets/sec_prov.png)](/learn/assets/sec_prov.png)
 
 Depending on the security provider enabled, **users and roles** are on-boarded through configuration. Details regarding the access to details and the corresponding App role needs to be configured.
 

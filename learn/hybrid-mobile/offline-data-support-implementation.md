@@ -27,7 +27,7 @@ The offline mechanism has to be enabled for the tables you want to work on offli
 3. Select the ‘Offline’ tab.
 4. You can enable all the tables for offline use or select individual tables.
 5. If a table has to be available in offline, select the table and then check the flag ‘**Enable Table for offline use'.**
-6. When selecting a dependent table, you will be prompted to enable offline mode for the parent table. [![](../assets/offline_dbenable.png?v=12)](../assets/offline_dbenable.png?v=12)
+6. When selecting a dependent table, you will be prompted to enable offline mode for the parent table. [![](/learn/assets/offline_dbenable.png?v=12)](/learn/assets/offline_dbenable.png?v=12)
 7. If offline enabled, four **Data Configuration** options are provided to the developer. They are:
     1. Bundle with installer (Read-only)
     2. Bundle with installer + on-demand sync (Read-Write)
@@ -58,7 +58,7 @@ The offline mechanism has to be enabled for the tables you want to work on offli
 2. Select the ‘Offline’ tab.
 3. The tables available offline are marked with an icon.
 4. If a table has to be available in offline, select the table and then check the flag ‘**Enable data storage when device is offline'.**
-5. When selecting a dependent table, you will be prompted to enable offline mode for the parent table. [![](../assets/offline_dbenable_90.png)](../assets/offline_dbenable_90.png)
+5. When selecting a dependent table, you will be prompted to enable offline mode for the parent table. [![](/learn/assets/offline_dbenable_90.png)](/learn/assets/offline_dbenable_90.png)
 6. If offline enabled, then the strategy must be chosen for pulling data. There are two options here:
     - **Synchronize data when online** - With this method, data will be pulled during app startup. To limit the number of rows available offline,  ‘_Filter Value_’ can be configured using the table located below the options. Be cautious, if no filter is used, then entire table data will be fetched (application level pagination).  Rows fetched will honor the application limit of maximum records per request. NOTE you will not be able to apply a filter to BLOB data type as these fields are available for upload only and not download.
     - **Bundle the data with the app** - With this method, data will be packaged with the installer. During runtime, a query for the data present in these tables will be answered using the bundled data (either offline or online). ‘Bundle the data’ is helpful only if the table has data that doesn’t change. If there is any change in data, a new version of the app has to be released.
@@ -69,7 +69,7 @@ By default, three variables **networkInfo**, **datasyncPush** and **datasyncPul
 
 - **Clear offline data before pull** - If checked, then the whole offline data (other than BUNDLED data) will be deleted before the pull. The default is true (i.e. checked). NOTE due to the size of the data, the BLOB type data will not be downloaded, users can upload files offline but not download.
 
-[![](../assets/offline_var.png?v=5)](../assets/offline_var.png?v=5) These are device variables with target as datasync, which has the following three operations. To avail these operation, create a new Device Variable with datasync service and select the needed operation.
+[![](/learn/assets/offline_var.png?v=5)](/learn/assets/offline_var.png?v=5) These are device variables with target as datasync, which has the following three operations. To avail these operation, create a new Device Variable with datasync service and select the needed operation.
 
 | **Operation** | **Behavior** | **Input Data** | **Events** | **Description** |
 | --- | --- | --- | --- | --- |
@@ -86,7 +86,7 @@ Location of the file is exposed as an outbound property on this variable. |
 
 #### Plugin Configuration
 
-The offline module requires ‘Offline DB’ and ‘Network’ plugin. Just make sure these are selected in the plugins list in android build dialog. [![](../assets/offline_plugin.png)](../assets/offline_plugin.png)
+The offline module requires ‘Offline DB’ and ‘Network’ plugin. Just make sure these are selected in the plugins list in android build dialog. [![](/learn/assets/offline_plugin.png)](/learn/assets/offline_plugin.png)
 
 #### Security Configuration
 
@@ -115,17 +115,17 @@ Case: A multi-user application for tracking personal tasks is to be created. Tas
 
 **Setup** The application with the specified functionality (except offline support) has been created.
 
-1. Import the project into your WaveMaker studio. [todo\_90](../assets/ToDo_9_0.zip)
-2. Import the attached database. [todo\_dump](../assets/ToDo_dump.zip)
+1. Import the project into your WaveMaker studio. [todo\_90](/learn/assets/ToDo_9_0.zip)
+2. Import the attached database. [todo\_dump](/learn/assets/ToDo_dump.zip)
 3. Run the project.
 4. Build an android app and check the application. There are two users _user1/password_, _user2/password_. User1 is having some tasks and user2 has no tasks.
 5. Check the app in both online and offline. In offline, the application fails with error ‘server call failed’.
 
-[![](../assets/offline_ex1.png)](../assets/offline_ex1.png)**Solution**
+[![](/learn/assets/offline_ex1.png)](/learn/assets/offline_ex1.png)**Solution**
 
 1. Open the app.
 2. Open TODO database.
-3. Make TODO table to be available in offline. Pull only tasks belongs to the logged-in user during app startup. Save the configuration. [![](../assets/offline_ex2.png?v=5)](../assets/offline_ex2.png?v=5)
+3. Make TODO table to be available in offline. Pull only tasks belongs to the logged-in user during app startup. Save the configuration. [![](/learn/assets/offline_ex2.png?v=5)](/learn/assets/offline_ex2.png?v=5)
 4. Two variables, datasyncPush and networkInfo, are automatically created. With these variables in place, the app will push offline data changes whenever the mobile comes online.
 5. Click on ‘Build For Android’.
 6. Go to plugins section, make sure that ‘Network’ and ‘Offline DB’ are selected.

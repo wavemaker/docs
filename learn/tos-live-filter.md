@@ -10,23 +10,23 @@ For example, we will how to filter the vacation details of employees based on th
 1. 1. Drag and drop a Live Filter onto the canvas.
     2. Bind the Live Filter to Live Variable with hrdb as source and Vacation as Type
     3. From the Advanced Settings property
-        1. Set the Widget Display Property for Status field to Checkboxset [![multiple_filter_as](./assets/multiple_filter_AS.png)](./assets/multiple_filter_AS.png)
+        1. Set the Widget Display Property for Status field to Checkboxset [![multiple_filter_as](/learn/assets/multiple_filter_AS.png)](/learn/assets/multiple_filter_AS.png)
         2. Set the Widget Display Property for Type field to Select
-    4. From the canvas, select the Type field and check the Multiple field property [![multiple_filter_props](./assets/multiple_filter_props.png)](./assets/multiple_filter_props.png)
+    4. From the canvas, select the Type field and check the Multiple field property [![multiple_filter_props](/learn/assets/multiple_filter_props.png)](/learn/assets/multiple_filter_props.png)
     5. For seeing the results, we will use a Data Table
     6. Drag and drop a Data Table
     7. Bind the Dataset Value property of Data Table to the result node of the Live Filter created above.
-    8. Run the app and select multiple values from Select and-or Checkboxset and see the result in the Data Table [![multiple_filter_run](./assets/multiple_filter_run.png)](./assets/multiple_filter_run.png)
+    8. Run the app and select multiple values from Select and-or Checkboxset and see the result in the Data Table [![multiple_filter_run](/learn/assets/multiple_filter_run.png)](/learn/assets/multiple_filter_run.png)
 
 Filtering with RangeTo filter data between given two values, **Show Range Selector** property from the Advanced Settings can be used. For example, we will how to filter the vacation details of employees between to Start Dates. We are using the hrdb Vacation table for this example.
 
 1. Drag and drop a Live Filter onto the canvas.
 2. Bind the Live Filter to Live Variable with hrdb as source and Vacation as Type
-3. From the Advanced Settings property, check the Show Range Selector property for Start Data field [![range_filter_as](./assets/range_filter_AS.png)](./assets/range_filter_AS.png)
+3. From the Advanced Settings property, check the Show Range Selector property for Start Data field [![range_filter_as](/learn/assets/range_filter_AS.png)](/learn/assets/range_filter_AS.png)
 4. For seeing the results, we will use a Data Table
     1. Drag and drop a Data Table
     2. Bind the Dataset Value property of Data Table to the result node of the Live Filter created above.
-5. Run the app and select a range of dates for Start Date [![range_filter_run](./assets/range_filter_run.png)](./assets/range_filter_run.png)
+5. Run the app and select a range of dates for Start Date [![range_filter_run](/learn/assets/range_filter_run.png)](/learn/assets/range_filter_run.png)
 
 Using Live Filter Callback EventsLive Filter behavior can be customised with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..
 

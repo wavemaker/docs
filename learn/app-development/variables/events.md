@@ -12,7 +12,7 @@ In a typical life-cycle of Events:
 2. The event action talks to the data source via the API call.
 3. The result from API call is reflected in the Data which in turn changes the user data view.
 
-[![var_lifecycle](../../assets/var_lifecycle.png)](../../assets/var_lifecycle.png)
+[![var_lifecycle](/learn/assets/var_lifecycle.png)](/learn/assets/var_lifecycle.png)
 
 Four actions can be said to be responsible for triggering a variable life-cycle:
 
@@ -21,7 +21,7 @@ Four actions can be said to be responsible for triggering a variable life-cycle:
 - **Events** - Widgets are updated/notified by user events like click, submit, or variable events like pre and post update, on error etc..
 - **Update data on input change** is a property which configures the ability to auto-reload Variable data, for example, if the data filter value changes dynamically from city = ‘New York’ to city = ‘Boston.
 
-[![var_triggers](../../assets/var_triggers.png)](../../assets/var_triggers.png)
+[![var_triggers](/learn/assets/var_triggers.png)](/learn/assets/var_triggers.png)
 
 ## Events Implementation
 
@@ -33,7 +33,7 @@ Based on the application needs, a component can be assigned to these events like
 
 A typical event flow when a variable is used to update data would be:
 
-[![lsv_eventcycle](../../assets/LSV_eventcycle.png)](../../assets/LSV_eventcycle.png) 
+[![lsv_eventcycle](/learn/assets/LSV_eventcycle.png)](/learn/assets/LSV_eventcycle.png) 
 
 :::note
 The onBeforeUpdate event in the above diagram differs based upon the type of variable as explained in the table below. It is:

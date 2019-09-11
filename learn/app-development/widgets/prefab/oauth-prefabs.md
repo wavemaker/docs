@@ -7,7 +7,7 @@ id: ""
 
 OAuth 2.0 is an authorization framework, which is updated after the original OAuth protocol created in 2006. OAuth 2.0 focuses on client developer simplicity by providing secured delegated access for web and desktop applications.
 
-[![](../../../assets/instagram-design-flow.png)](../../../assets/instagram-design-flow.png)
+[![](/learn/assets/instagram-design-flow.png)](/learn/assets/instagram-design-flow.png)
 
 The device flow is illustrated in the above image. The steps include:
 
@@ -20,7 +20,7 @@ The device flow is illustrated in the above image. The steps include:
 
 Most Web Services use OAuth for access, and configuring your app to use these Web Services can be an uphill task. WaveMaker Prefabs abstracts OAuth and offers API integration without the need for writing code. This section deals with such OAuth Prefabs.
 
-WaveMaker provides few OAuth Prefabs for developer convenience. [![](../../../assets/OAuth.png)](../../../assets/OAuth.png)
+WaveMaker provides few OAuth Prefabs for developer convenience. [![](/learn/assets/OAuth.png)](/learn/assets/OAuth.png)
 
 Steps in using OAuth Prefabs:
 

@@ -12,7 +12,7 @@ For Enterprise developers, the challenge is mounting to make a shift from legacy
 
 WaveMaker RAD platform combines the ease of development, with the right architecture and technology choices to be able to build apps for the future. Here give you an overview of WaveMaker Platform in terms of the architecture, technology and as a RAD tool.
 
-[![app components](../../assets/Modern_Web_Apps.png)](../../assets/Modern_Web_Apps.png)
+[![app components](/learn/assets/Modern_Web_Apps.png)](/learn/assets/Modern_Web_Apps.png)
 
 A typical application has 3 parts:
 
@@ -30,7 +30,7 @@ WaveMaker App is composed of 3 layers:
 2. **Binding Layer** integrates backend services with the front-end UI layer through REST APIs.
 3. **Services Layer** represents backend services auto-generated from databases, external web services or custom Java services etc.
 
-[![WM App](../../assets/3layered_arch.png)](../../assets/3layered_arch.png)
+[![WM App](/learn/assets/3layered_arch.png)](/learn/assets/3layered_arch.png)
 
 ## App Architecture
 
@@ -47,7 +47,7 @@ Benefits of Single Page Applications:
 5. Allow data to be passed across pages, defined by the Scope
 6. Scalable to support large data sets and growing user-base
 
-[![SPA vs traditional](../../assets/spa_arch.png)](../../assets/spa_arch.png)
+[![SPA vs traditional](/learn/assets/spa_arch.png)](/learn/assets/spa_arch.png)
 
 ## App Building Process
 
@@ -55,13 +55,13 @@ WaveMaker enables rapid application development with clear separation of front-
 
 App building process combines the ability to develop front-end by auto-generating widget code and binding to the data services. From the data model obtained from the database, back-end services with their REST API contracts are auto-generated for integration. Both the front-end and back-end layers can be integrated with the help of binding and variables, which enable data integration with various services such as DB, Web Services or any custom Java Service.
 
-[![wmapp_process](../../assets/WMApp_process.png)](../../assets/WMApp_process.png)
+[![wmapp_process](/learn/assets/WMApp_process.png)](/learn/assets/WMApp_process.png)
 
 ## Technology Stack
 
 WaveMaker Apps are built using open-standards based technology stack, without any lock-in to vendor specific frameworks. Apps built can be freely distributed without any licensing concerns and deployed on any platform of your choice.
 
-[![tech stack](../../assets/OS_Technology_Stack.png)](../../assets/OS_Technology_Stack.png)
+[![tech stack](/learn/assets/OS_Technology_Stack.png)](/learn/assets/OS_Technology_Stack.png)
 
 1. _Front-end_: Angular 7.x version for user interface, data binding and events. Bootstrap provides responsive layouts for various form factors
 2. _Object Relational Mapping (ORM)_: Hibernate and JPA provide standards based ORM layer and Entity model for database interaction
@@ -72,7 +72,7 @@ WaveMaker Apps are built using open-standards based technology stack, without a
 
 WaveMaker widgets and themes embrace Android Material Design specification for visual design and building interaction across multiple devices. Android Material Design provides design guidelines for user interaction across mobile apps and modern web apps.
 
-[![materialdesign_principles_metaphor](../../assets/materialdesign_principles_metaphor.png)](../../assets/materialdesign_principles_metaphor.png)Material is a metaphor coined by Android/Google Developers to standardize good design principles used for modern web and mobile apps. The foundational elements such as typography, space, color, grids, use of images guide the visual aesthetics of modern apps. A lot of emphasis has been given to these elements in the Material design principles, which makes it an apt choice for WaveMaker Apps.
+[![materialdesign_principles_metaphor](/learn/assets/materialdesign_principles_metaphor.png)](/learn/assets/materialdesign_principles_metaphor.png)Material is a metaphor coined by Android/Google Developers to standardize good design principles used for modern web and mobile apps. The foundational elements such as typography, space, color, grids, use of images guide the visual aesthetics of modern apps. A lot of emphasis has been given to these elements in the Material design principles, which makes it an apt choice for WaveMaker Apps.
 
 In WaveMaker widget library, widgets such as Grids, Cards, Lists, Forms etc. make use of the visual design principles from Material. These design guidelines are optimized for use in enterprise applications and also validated from a performance standpoint, to make sure the best experience has been delivered for app users.
 
@@ -84,5 +84,5 @@ In the age of digitization with smartphones and tablets, mobile apps are the ne
 - **Responsive Web Apps** which can be built just like any other web app, with the capability to adapt their UI to the size of current browser window. **Web apps built using WaveMaker Studio are responsive by default**. See here for how to build Web Responsive Apps [link](/learn/documentation-reference/). Responsive web apps, however, do not have the ability to leverage device capabilities such as the use of a camera, accessing contacts, storing a file on the device etc. and accessing the app when offline or not connected.
 - **Hybrid Mobile Apps** attempt to strike a compromise between native and mobile web. They use HTML5 + CSS3 + JavaScript along with a wrapper/development framework like Sencha, PhoneGap or Titanium to give the app access to native device capabilities. **WaveMaker Studio offers this feature, hybrid mobile apps, via the [Apache Cordova Platform](https://cordova.apache.org/)**.
 
-[![app type](../../assets/project-type.png)](../../assets/project-type.png)
+[![app type](/learn/assets/project-type.png)](/learn/assets/project-type.png)
 

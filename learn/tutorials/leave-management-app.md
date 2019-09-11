@@ -36,7 +36,7 @@ The following concepts are covered in building this application.
 
 ### Application Flow
 
-![App-Flow](../assets/app-flow-leave-management-low-code-project.svg)   
+![App-Flow](/learn/assets/app-flow-leave-management-low-code-project.svg)   
 
 
 **WM**App Overview

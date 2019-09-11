@@ -5,7 +5,7 @@ id: ""
 
 **Chips** represent complex entities in small blocks, such as a contact. Contact chips may represent contact information in a compact way. Chips can be used for various types of entities, including free-form text, predefined text, rules, or contacts. Chips may also contain icons.
 
-[![](../../../assets/chips_design.png)](../../../assets/chips_design.png)
+[![](/learn/assets/chips_design.png)](/learn/assets/chips_design.png)
 
 **When to use this widget: **Using Chips widget is a growing trend across social and communication-related apps. This can afford recipient selection using tokenized auto-completing text fields. This kind of UI is more concise than list-based interfaces and more visually rich, intuitive and directly manipulable (manage recipients by touching their token).
 
@@ -146,7 +146,7 @@ where
 
 **Example 1: Adding contacts and sending Emails**:  In this use case, you will be using the chips widget as email recipients and create a UI of Composing an Email.
 
-[![](../../../assets/chips_ex1.png)](../../../assets/chips_ex1.png)
+[![](/learn/assets/chips_ex1.png)](/learn/assets/chips_ex1.png)
 
 - Have a database called ProfileDB and a table named Profile with basic fields like first name, last name, job title, email.
 - **Steps:**
@@ -182,7 +182,7 @@ where
 1. Import sample hrdb and create a CRUD Variable for the Employee table.
 2. Drag and drop Chips widget and bind the Dataset Value property to the HRDB employee variable
 3. Set Data field property to All Fields,
-4. From the Styles tab bind Chip item class name to the following expression: bind: item.datavalue.department.name === 'Engineering'? 'skyblue' : 'mustard' This will check if employee's department name is engineering applies "skyblue" class else applies "mustard" class (note: here "item" denotes the chip object.) [![](../../../assets/chips_ex3_1.png)](../../../assets/chips_ex3_1.png)[![](../../../assets/chips_ex3_2.png)](../../../assets/chips_ex3_2.png)
+4. From the Styles tab bind Chip item class name to the following expression: bind: item.datavalue.department.name === 'Engineering'? 'skyblue' : 'mustard' This will check if employee's department name is engineering applies "skyblue" class else applies "mustard" class (note: here "item" denotes the chip object.) [![](/learn/assets/chips_ex3_1.png)](/learn/assets/chips_ex3_1.png)[![](/learn/assets/chips_ex3_2.png)](/learn/assets/chips_ex3_2.png)
 5. Add the following class to the app using the Style tab – for skyblue and mustard
     
     .nav.app-chips > li.skyblue .app-chip {
@@ -196,9 +196,9 @@ where
         font-weight: normal;
     }
     
-    [![](../../../assets/chips_ex3_3.png)](../../../assets/chips_ex3_3.png)
-6. Preview the page [![](../../../assets/chips_ex3_4.png)](../../../assets/chips_ex3_4.png)
-7. Setting the chip item class name (or Class Name property) as skyblue, will apply skyblue class to all the chips at runtime. [![](../../../assets/chips_ex3_5.png)](../../../assets/chips_ex3_5.png)
+    [![](/learn/assets/chips_ex3_3.png)](/learn/assets/chips_ex3_3.png)
+6. Preview the page [![](/learn/assets/chips_ex3_4.png)](/learn/assets/chips_ex3_4.png)
+7. Setting the chip item class name (or Class Name property) as skyblue, will apply skyblue class to all the chips at runtime. [![](/learn/assets/chips_ex3_5.png)](/learn/assets/chips_ex3_5.png)
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

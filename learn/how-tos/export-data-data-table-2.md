@@ -24,11 +24,11 @@ id: ""
 **Steps**:
 
 1. Open the **Advanced Settings** of the Data Table.
-2. From the Data Table tab, scroll down to locate **Export Format** option and select required format. [![](../assets/dt_export.png)](../assets/dt_export.png)
+2. From the Data Table tab, scroll down to locate **Export Format** option and select required format. [![](/learn/assets/dt_export.png)](/learn/assets/dt_export.png)
 3. **Export Data Size** property can be used to specify the number of records to be exported.  By default, the value is set to 100, the maximum export size. To export more than 100 records, the max size in the [profile](http:/#ppsShowPopUp_109) needs to be changed from the Project Configurations menu of [Project Workspace](http:/#ppsShowPopUp_107).
-4. Navigate to Columns tab and note that for each column **Export Options** tab is visible. Use this to customize the data to be exported. NOTE: If you have any custom columns, value expression has to be given here, else the export will fail. [![](../assets/dt_cols_export.png)](../assets/dt_cols_export.png)
+4. Navigate to Columns tab and note that for each column **Export Options** tab is visible. Use this to customize the data to be exported. NOTE: If you have any custom columns, value expression has to be given here, else the export will fail. [![](/learn/assets/dt_cols_export.png)](/learn/assets/dt_cols_export.png)
 5. Save and close the Advanced Settings.
-6. You can further customize the data being exported using the **on Before Export** callback event of the Data Table. [![](../assets/dt_export_event.png)](../assets/dt_export_event.png)
+6. You can further customize the data being exported using the **on Before Export** callback event of the Data Table. [![](/learn/assets/dt_export_event.png)](/learn/assets/dt_export_event.png)
 7. You can use the following script:
     
     Page.EmployeeTable1Beforeexport = function($data) {

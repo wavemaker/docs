@@ -18,7 +18,7 @@ While designing the Cards following features can be set:
 - enable multiple selections of items and
 - set the pagination style for multi-page data.
 
-[![](../../../assets/cards_overview.png)](../../../assets/cards_overview.png)
+[![](/learn/assets/cards_overview.png)](/learn/assets/cards_overview.png)
 
 ## See More
 

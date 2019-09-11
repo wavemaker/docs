@@ -32,7 +32,7 @@ Import or creation of database within a WaveMaker app results in the generation 
 
 ## Database Integration Process
 
-The following figure gives an overview of the Database integration process within WaveMaker App.[![](../../../assets/db_concepts.png)](../../../assets/db_concepts.png)
+The following figure gives an overview of the Database integration process within WaveMaker App.[![](/learn/assets/db_concepts.png)](/learn/assets/db_concepts.png)
 
 1. Database Schema from an external RDBMS is imported into the app. This import includes the Data Model consisting of Tables, Columns, Relationships between tables and Constraints.
 2. An ORM layer is auto-generated from the above DB Schema using Hibernate and JPA. A service layer is also auto-generated using Spring.
@@ -47,7 +47,7 @@ When you integrate your WaveMaker app with any database, you set up the connecti
 - during design time to generate files for use within the app, and
 - during runtime to access the data and work with it.
 
-[![](../../../assets/db_integrate_process.png)](../../../assets/db_integrate_process.png) **Design Time Studio App behavior**: From the WaveMaker app:
+[![](/learn/assets/db_integrate_process.png)](/learn/assets/db_integrate_process.png) **Design Time Studio App behavior**: From the WaveMaker app:
 
 1. when you add DB to WaveMaker app, it results in a request for metadata to the corresponding external Database, based upon the connection settings,
 2. the external Database returns the metadata,
@@ -71,11 +71,11 @@ WaveMaker supports the following databases and versions and the same can be used
 
 | Database Name | Version | Driver Jar |
 | --- | --- | --- |
-|[![](../../../assets/MariaDB.png)](../../../assets/MariaDB.png)| 10.2 | Available in Maven Repo |
-|[![mysql](../../../assets/mysql.png)](../../../assets/mysql.png)|- 5.5<br>- 5.6<br>- 5.7 | Available in Maven Repo |
-|[![PostgreSQL](../../../assets/PostgreSQL.png)](../../../assets/PostgreSQL.png) PostgreSQL |- 9.4<br>- 9.5 | Available in Maven Repo |
-| [![Oracle](../../../assets/Oracle.png)](../../../assets/Oracle.png) |- 11.2 <br>- 12.1 <br>- 12.2 |- [download ojdbc6.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html) <br> - [download ojdbc7.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html) <br> - [download ojdbc8.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)|
-| [![SQLServer](../../../assets/SQLServer.png)](../../../assets/SQLServer.png) SQL Server | 2014 <br> Azure SQL Database [Connect to Azure](/learn/how-tos/connect-azure-sql-server/) | [Steps to Download sqljdbc4.2.jar](/learn/app-development/services/database-services/download-jdbc-driver-jar/) <br> (you can use JDBC driver 4.2, 6.0, 6.1 or 6.2, ensure that you import  **sqljdbc42.jar** or any Java ver 8 compatible jar file) |
-| [![DB2](../../../assets/DB2.png)](../../../assets/DB2.png) |- 10.1 <br> - 11.1| [db2jcc4.jar](http://www-01.ibm.com/support/docview.wss?uid=swg21363866) |
-| [![HSQLDB](../../../assets/HSQLDB.png)](../../../assets/HSQLDB.png) |- 2.3.3 <br> - 2.3.4| Available in Maven Repo |
+|[![](/learn/assets/MariaDB.png)](/learn/assets/MariaDB.png)| 10.2 | Available in Maven Repo |
+|[![mysql](/learn/assets/mysql.png)](/learn/assets/mysql.png)|- 5.5<br>- 5.6<br>- 5.7 | Available in Maven Repo |
+|[![PostgreSQL](/learn/assets/PostgreSQL.png)](/learn/assets/PostgreSQL.png) PostgreSQL |- 9.4<br>- 9.5 | Available in Maven Repo |
+| [![Oracle](/learn/assets/Oracle.png)](/learn/assets/Oracle.png) |- 11.2 <br>- 12.1 <br>- 12.2 |- [download ojdbc6.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html) <br> - [download ojdbc7.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html) <br> - [download ojdbc8.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)|
+| [![SQLServer](/learn/assets/SQLServer.png)](/learn/assets/SQLServer.png) SQL Server | 2014 <br> Azure SQL Database [Connect to Azure](/learn/how-tos/connect-azure-sql-server/) | [Steps to Download sqljdbc4.2.jar](/learn/app-development/services/database-services/download-jdbc-driver-jar/) <br> (you can use JDBC driver 4.2, 6.0, 6.1 or 6.2, ensure that you import  **sqljdbc42.jar** or any Java ver 8 compatible jar file) |
+| [![DB2](/learn/assets/DB2.png)](/learn/assets/DB2.png) |- 10.1 <br> - 11.1| [db2jcc4.jar](http://www-01.ibm.com/support/docview.wss?uid=swg21363866) |
+| [![HSQLDB](/learn/assets/HSQLDB.png)](/learn/assets/HSQLDB.png) |- 2.3.3 <br> - 2.3.4| Available in Maven Repo |
 

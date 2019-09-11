@@ -7,7 +7,7 @@ id: ""
 
 WaveMaker implements the [Bootstrap Grid](http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp) system which is the 12-column system:
 
-[![](../../../assets/gridlayout_bootstrap.png)](../../../assets/gridlayout_bootstrap.png)
+[![](/learn/assets/gridlayout_bootstrap.png)](/learn/assets/gridlayout_bootstrap.png)
 
 # Features
 
@@ -22,7 +22,7 @@ Grid Layout when dropped on the canvas, gives you a two-row, two-column grid to 
     - move the columns and rows anywhere in the grid;
     - _insert_ rows to the existing grid. When inserting a new row, the last row pattern is replicated, i.e. if you have the last row with two columns then the new row added will also be a two-column row.
     
-    [![](../../../assets/gridlayout_props.png)](../../../assets/gridlayout_props.png)
+    [![](/learn/assets/gridlayout_props.png)](/learn/assets/gridlayout_props.png)
 - **Row-level features**
     
     - change the height of the row,
@@ -30,14 +30,14 @@ Grid Layout when dropped on the canvas, gives you a two-row, two-column grid to 
     - insert a row either before or after the selected row
     - delete a selected row, by clicking delete key after selecting the row
     
-    [![](../../../assets/gridlayout_rowprops.png)](../../../assets/gridlayout_rowprops.png)
+    [![](/learn/assets/gridlayout_rowprops.png)](/learn/assets/gridlayout_rowprops.png)
 - **Column-level Features**
     
     - change the height and width of the column from the properties panel of the selected cell.
     - insert a cell before or after the selected cell.
     - delete a selected column, by clicking delete key after selection.
     
-    [![](../../../assets/gridlayout_colprops.png)](../../../assets/gridlayout_colprops.png)
+    [![](/learn/assets/gridlayout_colprops.png)](/learn/assets/gridlayout_colprops.png)
 
 ### Grid Layout Column Width Settings
 
@@ -54,7 +54,7 @@ WaveMaker ensures that the sum of all columns in a given row does not exceed 12.
 
 The following image gives you an idea of the flexible design that grid layout offers. The first row has three columns with the width being 4+4+4; second row three columns - 1+10+1; the third row with two columns - 6+6 and the last row same as the first row.
 
-[![](../../../assets/gridlayout_final.png)](../../../assets/gridlayout_final.png)
+[![](/learn/assets/gridlayout_final.png)](/learn/assets/gridlayout_final.png)
 
 # Properties
 

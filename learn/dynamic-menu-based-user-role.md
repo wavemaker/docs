@@ -7,10 +7,10 @@ id: ""
 
 In this document, we will be walking through the steps to dynamically build the Dropdown Menu widget based upon the user role.
 
-1. Please make sure that you configure the security in the application with the database. We are using a sample database with Actions, Roles, Users, and RolesActionMapping entities. [![](./assets/rbac_menu_db.png)](./assets/rbac_menu_db.png)
+1. Please make sure that you configure the security in the application with the database. We are using a sample database with Actions, Roles, Users, and RolesActionMapping entities. [![](/learn/assets/rbac_menu_db.png)](/learn/assets/rbac_menu_db.png)
 2. Create a page and drag and drop a Dropdown Menu widget.
 3. [Create a DB CRUD variable](http://[supsystic-show-popup id=105]) for the RolesActionMapping entity from the above Database and enable the _Request data on page load_ property.
-4. Navigate to the Events tab for the variable and choose JavaScript as the operation for the onSuccess event as below: [![](./assets/rbac_menu_varevent.png)](./assets/rbac_menu_varevent.png)
+4. Navigate to the Events tab for the variable and choose JavaScript as the operation for the onSuccess event as below: [![](/learn/assets/rbac_menu_varevent.png)](/learn/assets/rbac_menu_varevent.png)
 5. Add the below code snippet in the onSuccess event definition generated in the Script tab of the respective page:
     
         Page.dynamicMenuonSuccess = function(variable, data) {

@@ -62,7 +62,7 @@ Here we will showcase:
         Page.Widgets.labelOutput.show = true;
     };
     
-- Instead of the button click event, you can invoke the JS function from the Use Expression option of the bind dialog for the Label caption property: [![](../assets/JS_functions.png)](../assets/JS_functions.png)
+- Instead of the button click event, you can invoke the JS function from the Use Expression option of the bind dialog for the Label caption property: [![](/learn/assets/JS_functions.png)](/learn/assets/JS_functions.png)
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vQFj6S-v6BVTTVWD1wJ-A2q3j6tYsxy-yPrCRDQpsst8zLUTEzQdRmLLpXdCN9iGnrJGZGyeQTcaypL/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 

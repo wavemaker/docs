@@ -7,7 +7,7 @@ id: ""
 
 With this reference, WaveMaker gives you a tool to present your data in a pictorial form using the chart widgets. Using these widgets you can transform your data into either a line chart, column chart, pie chart, area chart, cumulative line chart, bar chart or a donut chart.
 
-[![](../../../assets/chart_run.png)](../../../assets/chart_run.png)
+[![](/learn/assets/chart_run.png)](/learn/assets/chart_run.png)
 
 # Chart Types
 
@@ -62,20 +62,20 @@ Data can come from various sources as listed below:
 
 The X-Axis and Y-Axis values can be set to the fields from the data source, the chart is bound to.
 
-[![](../../../assets/charts_feat1.png)](../../../assets/charts_feat1.png)
+[![](/learn/assets/charts_feat1.png)](/learn/assets/charts_feat1.png)
 
 Depending upon the data type of the underlying fields, you can choose the Data Display Format.
 
-[![](../../../assets/chart_as_yaxis_format.png)](../../../assets/chart_as_yaxis_format.png)
+[![](/learn/assets/chart_as_yaxis_format.png)](/learn/assets/chart_as_yaxis_format.png)
 
 In the case, when the data source is from Web Services or Web Socket, you can choose the Format Type to be toDate or toNumber.
 
-[![](../../../assets/chart_as_yaxis_formattype.png)](../../../assets/chart_as_yaxis_formattype.png) For **Pie** and **Donut charts**, the options include Label and Value fields. You can specify
+[![](/learn/assets/chart_as_yaxis_formattype.png)](/learn/assets/chart_as_yaxis_formattype.png) For **Pie** and **Donut charts**, the options include Label and Value fields. You can specify
 
 - the position of the Values - hidden, outside (default) or inside
 - the Value to be displayed - as key, value, percent (default) or key-value pair
 
-[![](../../../assets/chart_as_pievalues-6.png)](../../../assets/chart_as_pievalues-6.png)
+[![](/learn/assets/chart_as_pievalues-6.png)](/learn/assets/chart_as_pievalues-6.png)
 
 ## Layout
 
@@ -87,7 +87,7 @@ In the case, when the data source is from Web Services or Web Socket, you can ch
 - **Legend** position can be set to be top or bottom.
 - Layout of the **values** can be defined in terms of location, value format, caption for line charts  and more
 
-[![](../../../assets/charts_feat2.png)](../../../assets/charts_feat2.png)
+[![](/learn/assets/charts_feat2.png)](/learn/assets/charts_feat2.png)
 
 These options are available from the Advanced Settings of the chart. Apart from these properties, a **Title**, **Sub Heading**, and **Icon** can be assigned for the chart as a whole to be displayed on the top left corner of the Chart. 
 
@@ -103,14 +103,14 @@ This property defines how the data is represented in the chart.
     - Cardinal for smooth curves, or
     - Step
     
-    [![](../../../assets/chart_interpolation.png)](../../../assets/chart_interpolation.png)
+    [![](/learn/assets/chart_interpolation.png)](/learn/assets/chart_interpolation.png)
 - **Data Arrangement** Property (available only for Column, Area and Bar Charts) controls whether to show the areas in:
     
     - - stack,
         - stream, or
         - expand
     
-    [![](../../../assets/chart_arrangement.png)](../../../assets/chart_arrangement.png)
+    [![](/learn/assets/chart_arrangement.png)](/learn/assets/chart_arrangement.png)
 
 ## Data Aggregation and Grouping
 
@@ -120,7 +120,7 @@ When dealing with charts bound to live variables, you can add additional functio
 - _Order By_ property can be used to set the column by which the data needs to be sorted. By default, it will be set to the Group by column selected.
 - The values to be depicted on x and y-axis are set to the _group by_ and _aggregation columns_ respectively.
 
-[![](../../../assets/charts_feat3.png)](../../../assets/charts_feat3.png)
+[![](/learn/assets/charts_feat3.png)](/learn/assets/charts_feat3.png)
 
 ## Interaction
 
@@ -132,7 +132,7 @@ When dealing with charts bound to live variables, you can add additional functio
 
 You can capture user selection in two ways:
 
-1. The various outbound properties of a chart are available for binding to other widgets or variables. The fields under _selecteditem_ will be from the underlying dataset used for binding [![](../../../assets/chart_output.png)](../../../assets/chart_output.png)
+1. The various outbound properties of a chart are available for binding to other widgets or variables. The fields under _selecteditem_ will be from the underlying dataset used for binding [![](/learn/assets/chart_output.png)](/learn/assets/chart_output.png)
 2. These selected values can be accessed via JavaScript
     
     Page.chart3Select = function($event, widgets, selectedItem, selectedChartItem) {
@@ -143,7 +143,7 @@ You can capture user selection in two ways:
           Page.Widgets.selectdept.datavalue = selectedItem.deptcode; // deptcode of selected object
     };
     
-    Here we have used the _On select_ event of the chart: [![](../../../assets/chart_events.png)](../../../assets/chart_events.png)
+    Here we have used the _On select_ event of the chart: [![](/learn/assets/chart_events.png)](/learn/assets/chart_events.png)
 
 # Use Cases
 

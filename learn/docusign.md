@@ -7,16 +7,16 @@ Docusign prefab allows user to enable electronic signature technology services 
 
  
 
-![](./assets/Screenshot-2018-12-15-at-1.43.11-PM.png)Prerequisites for using the Docusign prefab:
+![](/learn/assets/Screenshot-2018-12-15-at-1.43.11-PM.png)Prerequisites for using the Docusign prefab:
 
-1. Create a developer account in Docusign.![](./assets/Screenshot-2018-12-15-at-11.47.48-AM.png)
-2. Go to Admin page and add an App![](./assets/Screenshot-2018-12-15-at-11.55.26-AM.png)![](./assets/Screenshot-2018-12-15-at-11.44.52-AM.png)
-3. Now go to your Apps listing and click on Actions drop down of your created app and click Edit.![](./assets/Screenshot-2018-12-15-at-11.46.14-AM.png)
-4. From the pop up copy the Integrator key and keep it ready.![](./assets/Screenshot-2018-12-15-at-11.46.49-AM.png)
+1. Create a developer account in Docusign.![](/learn/assets/Screenshot-2018-12-15-at-11.47.48-AM.png)
+2. Go to Admin page and add an App![](/learn/assets/Screenshot-2018-12-15-at-11.55.26-AM.png)![](/learn/assets/Screenshot-2018-12-15-at-11.44.52-AM.png)
+3. Now go to your Apps listing and click on Actions drop down of your created app and click Edit.![](/learn/assets/Screenshot-2018-12-15-at-11.46.14-AM.png)
+4. From the pop up copy the Integrator key and keep it ready.![](/learn/assets/Screenshot-2018-12-15-at-11.46.49-AM.png)
 
 Drag and drop the prefab into your project page. It'll appear as a link labeled "E-sign". Then go to settings and select Config Profiles
 
-![](./assets/Screenshot-2018-12-06-at-3.27.56-PM.png)
+![](/learn/assets/Screenshot-2018-12-06-at-3.27.56-PM.png)
 
 In the dialogue that appears enter the required fields after selecting Docusign namely:
 
@@ -26,19 +26,19 @@ In the dialogue that appears enter the required fields after selecting Docusign 
 4. Integrator Key: Provide the Integrator Key derived for your Docusign App from the Docusign Admin console.
 5. Return URL: Provide the URL to the page of your Wavemaker app that uses the prefab.
 
-![](./assets/Screenshot-2018-12-15-at-11.41.48-AM.png)
+![](/learn/assets/Screenshot-2018-12-15-at-11.41.48-AM.png)
 
 Now bind the Source of the prefab to the URL of the file to be e-signed and the email to the email of the user who will perform the e-signing.
 
-![](./assets/Screenshot-2018-12-15-at-2.46.45-PM.png)
+![](/learn/assets/Screenshot-2018-12-15-at-2.46.45-PM.png)
 
 With the above steps done your Docusign prefab integration is complete. Now clicking on the E-sign link will invoke a Docusign dialogue and the your document will appear in the dialogue. Click continue to start the e-signing process. Click on the e-signing options from the left menu and e-sign the document. Then click finish button in the popup to complete the process.
 
-![](./assets/Screenshot-2018-12-15-at-1.22.23-PM.png)
+![](/learn/assets/Screenshot-2018-12-15-at-1.22.23-PM.png)
 
-![](./assets/Screenshot-2018-12-15-at-1.23.47-PM.png)
+![](/learn/assets/Screenshot-2018-12-15-at-1.23.47-PM.png)
 
-![](./assets/Screenshot-2018-12-15-at-1.23.11-PM.png)
+![](/learn/assets/Screenshot-2018-12-15-at-1.23.11-PM.png)
 
 [9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
 

@@ -5,7 +5,7 @@ id: ""
 
 The **Database Designer** workspace allows you to create tables, columns, and relationships.
 
-[![db_designer_schema](../../assets/db_designer_schema.png)](../../assets/db_designer_schema.png)
+[![db_designer_schema](/learn/assets/db_designer_schema.png)](/learn/assets/db_designer_schema.png)
 
 Click to enlarge
 
@@ -37,7 +37,7 @@ These actions are restricted to [Schemas in Editable mode](/learn/app-developmen
         - auto-generated will assign the primary key values  or
         - sequence will assign the values based on the generator name given. **Note**: WaveMaker supports **Composite Keys** that is multiple columns can be specified as Primary Keys.
 
-[![](../../assets/db_schema.png)](../../assets/db_schema.png)
+[![](/learn/assets/db_schema.png)](/learn/assets/db_schema.png)
 
 # Database Relationships
 
@@ -54,7 +54,7 @@ Relations are a way to establish a connection between tables within a given data
     3. It is possible to add **Virtual Relations**. This feature can be used to establish relations without changing the DB Schema. This will enable one to enforce DB level constraints without having to write any scripts or queries. Clicking on CREATE will create the virtual relation. This will be indicated by a dotted line and the virtual flag is set in the relationship property.
     4. It is possible to add **Relations involving Composite Keys**. You can **add columns** to the relation by using the **Add Relationship** button. Clicking on CREATE will create the composite relation. This will be indicated by a double-pronged line between the tables in the DB Designer.
     
-    [![](../../assets/DB_cr_relation.png)](../../assets/DB_cr_relation.png)
+    [![](/learn/assets/DB_cr_relation.png)](/learn/assets/DB_cr_relation.png)
 
 # Relationship Fetch Options
 
@@ -70,7 +70,7 @@ From the relations tab, for the particular relation (one-one, many-one), you can
 - Primary Key column from the related table will be fetched.
 - By default, all columns from the related table will be fetched.
 
-[![](../../assets/DB_fetch_relations.png)](../../assets/DB_fetch_relations.png)
+[![](/learn/assets/DB_fetch_relations.png)](/learn/assets/DB_fetch_relations.png)
 
 # Identity Generators for Primary Keys
 
@@ -103,7 +103,7 @@ An identity generator of type “Assigned” will not be managed by the database
 
 Data Value Types define the value of column while performing insert/update operations in Database. This is particularly useful for adding auditing of information about the creation and modification of records.
 
-[![](../../assets/db_col_data.png)](../../assets/db_col_data.png) There are three types of Data Values:
+[![](/learn/assets/db_col_data.png)](/learn/assets/db_col_data.png) There are three types of Data Values:
 
 - User Defined
 - Server Defined
@@ -182,7 +182,7 @@ To support such cases where you want to control whether to include a particular 
 
 There may be situations where you might want to set validations for user-defined columns. This can be achieved by an option to select the validation from the list of default validators list for the column based on the data type. This option is available on the properties panel for the selected column.
 
-[![](../../assets/db_col_validator.png)](../../assets/db_col_validator.png)
+[![](/learn/assets/db_col_validator.png)](/learn/assets/db_col_validator.png)
 
 | Validator | Column Data Type | Description | Values |
 | --- | --- | --- | --- |
@@ -217,7 +217,7 @@ There may be situations where you might want to set validations for user-defined
 
 ## Implementation in WaveMaker
 
-The _Insertable_ and _Updatable_ options can be configured for **User Defined** and **Server Defined** value types for Database columns. For **Database Defined** value type these are implicitly set to false. **Insertable** and **Updatable** options are provided under _Data Value_ group for the columns in the **Database Designer**. [![](../../assets/db_col_settings.png)](../../assets/db_col_settings.png)
+The _Insertable_ and _Updatable_ options can be configured for **User Defined** and **Server Defined** value types for Database columns. For **Database Defined** value type these are implicitly set to false. **Insertable** and **Updatable** options are provided under _Data Value_ group for the columns in the **Database Designer**. [![](/learn/assets/db_col_settings.png)](/learn/assets/db_col_settings.png)
 
 - If the Value Type is selected as _User Defined or Server Defined_, both Insertable and Updatable options are selected by default. You can edit the options, but **at least one option** has to be selected.
     - If you select _Insertable option alone_, the column value will be inserted only at the time of creating a new record. The inserted value will not be updated at any point of time if the Updatable option is unchecked.
@@ -232,7 +232,7 @@ In case you are using a database table which has no primary keys and either you 
 
 Designation of Virtual Primary Key can be done at the time of Database Import or later from the Table Properties.
 
-[![](../../assets/DB_vpk_table.png)](../../assets/DB_vpk_table.png)
+[![](/learn/assets/DB_vpk_table.png)](/learn/assets/DB_vpk_table.png)
 
 ### Limitations of using virtual primary key
 

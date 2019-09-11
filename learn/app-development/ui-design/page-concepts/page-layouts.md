@@ -15,11 +15,11 @@ An app is divided into multiple pages to segregate the functionality of the app
 
 A layout can be selected at the time of Page Creation or later from the Change Layout option on the Workspace Toolbar.
 
-[![](../../../assets/layout_change.png)](../../../assets/layout_change.png)
+[![](/learn/assets/layout_change.png)](/learn/assets/layout_change.png)
 
 A **Page Layout** has the following containers - a header, navigation bar, content, and footer. The content can have one, two or three columns. To change the layout of a page, simply click on the desired layout to see it take effect on the design canvas.
 
-[![](../../../assets/page_layout.png)](../../../assets/page_layout.png)
+[![](/learn/assets/page_layout.png)](/learn/assets/page_layout.png)
 
 There are four Page Layout options:
 
@@ -33,7 +33,7 @@ There are four Page Layout options:
 
 A typical page layout with header, footer, topnav, leftnav and rightnav has the following structure, as can be seen from the _Page Structure_ for the selected page:
 
-[![](../../../assets/page_layout_files.png)](../../../assets/page_layout_files.png)
+[![](/learn/assets/page_layout_files.png)](/learn/assets/page_layout_files.png)
 
 Widgets can be added to the _content._ The header, footer, top-nav, left and right panels are partial pages and can be customized using the edit button on each of the panels.
 

@@ -5,7 +5,7 @@ id: ""
 
 A **data model** describes the structure of the database: the tables, columns, keys, and relationships. The data model for imported databases can be viewed from within the app using **DB Designer**. DB Designer for a specific database can be accessed by selecting the _database_ from the **Databases** Resource option**.**
 
-[![](../../../assets/db_designer_open.png)](../../../assets/db_designer_open.png)
+[![](/learn/assets/db_designer_open.png)](/learn/assets/db_designer_open.png)
 
 # Configuration Settings
 
@@ -35,7 +35,7 @@ Apart from the basic Database settings like host details, schema name etc., Wave
 
 # Database Designer
 
-**Design tab** renders the database components – tables, columns, and relationships. [![](../../../assets/db_designer_schema.png)](../../../assets/db_designer_schema.png)
+**Design tab** renders the database components – tables, columns, and relationships. [![](/learn/assets/db_designer_schema.png)](/learn/assets/db_designer_schema.png)
 
 Using this tab, you can:
 
@@ -59,7 +59,7 @@ Using this tab, you can:
 | Name | Columns whose values need to be restricted as unique |
 | **Column modifications** for selected column |
 | Name |  |
-| SQL and Java Types | It is advisable to make changes to Java Types rather than SQL Types unless you want the changes to be reflected in the database, in which case you need to export the database. You can review the type conversion from Java to SQL type from this document: [Java Types vs SQL Data Types](../../../assets/JavaTypesVsDBTypes-Sheet.pdf) |
+| SQL and Java Types | It is advisable to make changes to Java Types rather than SQL Types unless you want the changes to be reflected in the database, in which case you need to export the database. You can review the type conversion from Java to SQL type from this document: [Java Types vs SQL Data Types](/learn/assets/JavaTypesVsDBTypes-Sheet.pdf) |
 | Constraints | Nullable or not. NOTE: Primary Key and Unique Kay constraints need to be modified at the Table level. Foreign Key constraint can be modified from the respective Relation |
 | **Relations** between tables |
 |  | Relations cannot be modified, you need to delete and add a new relation if needed, [know more](/learn/app-development/services/database-services/working-database-schema/#database-relationships). |

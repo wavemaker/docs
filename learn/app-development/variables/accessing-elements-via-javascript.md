@@ -16,7 +16,7 @@ There are two more singleton instances are used in the platform named "**Partial
 
 **Note**: _onPageReady _function has been deprecated since 10.0 release, use Page.onReady instead.
 
-[![](../../assets/pageScript.png)](../../assets/pageScript.png)
+[![](/learn/assets/pageScript.png)](/learn/assets/pageScript.png)
 
 In the following sections, we will be seeing how each element of the project can be accessed using the Script.
 
@@ -77,7 +77,7 @@ Page.Widgets.\[container\_name\].Variables.\[variable\_name\];
 
 # App Level Access
 
-As with the Pages, App lifecycle events and variables can be accessed from the _app.js_ file. This file can be accessed from the File Explorer. [![](../../assets/appJS.png)](../../assets/appJS.png) The following methods are available:
+As with the Pages, App lifecycle events and variables can be accessed from the _app.js_ file. This file can be accessed from the File Explorer. [![](/learn/assets/appJS.png)](/learn/assets/appJS.png) The following methods are available:
 
 - - **onAppVariablesReady** - this refers to the Variables created with App as Owner.  Variables can be accessed through 'App.Variables' property: e.g. App.Variables.staticVariable1.getData()
     - **onSessionTimeout** - perform any action on session timeout here, e.g clearing some data, etc

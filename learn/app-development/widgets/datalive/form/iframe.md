@@ -3,7 +3,7 @@ title: "Iframe"
 id: ""
 ---
 
-![](../../../../assets/laptop.png)  **NOTE**: Iframe is available only for web responsive apps.
+![](/learn/assets/laptop.png)  **NOTE**: Iframe is available only for web responsive apps.
 
 An inline frame (**Iframe**) is used to embed another document within the current HTML document. Frames allow a visual HTML Browser window to be split into segments, each of which can show a different document. The iframe element represents a nested browsing context.
 

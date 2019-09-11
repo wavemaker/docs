@@ -24,7 +24,7 @@ This document shows how a column for the editable Data Table can be bound to out
     3. Choose the widget type as select from the drop-down.
     4. Set the Dataset is the variable that is created for the query service. Choose the data field and display field as per your requirement from the drop down.
 
-[![](../assets/DT_query.png)](../assets/DT_query.png)
+[![](/learn/assets/DT_query.png)](/learn/assets/DT_query.png)
 
 [Data Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
 

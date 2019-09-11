@@ -11,9 +11,9 @@ Themes are used to provide consistent usage of font, color, border, and layout t
 
 ## Steps to apply Theme
 
-1. In the Project Toolbar bar, select Themes option. [![](../assets/theme_change.png)](../assets/theme_change.png)
+1. In the Project Toolbar bar, select Themes option. [![](/learn/assets/theme_change.png)](/learn/assets/theme_change.png)
 2. It opens the theme window.
-3. Select the desired theme or search the theme name and click on Apply button [![](../assets/Themes.png)](../assets/Themes.png)
+3. Select the desired theme or search the theme name and click on Apply button [![](/learn/assets/Themes.png)](/learn/assets/Themes.png)
 4. Run the project, by clicking on Run button in the menu bar. The theme will be applied to all the pages present in the project.
 
 ## **Customize WaveMaker Theme**
@@ -23,7 +23,7 @@ NOTE: Before customizing the WaveMaker theme set-up the theme repository followi
 To customize the existing theme in WaveMaker, perform the following steps:
 
 1. From the File Explorer, under themes, expand the desired theme.
-2. Open the style.less and variable.less file. [![](../assets/theme_customize.png)](../assets/theme_customize.png)
+2. Open the style.less and variable.less file. [![](/learn/assets/theme_customize.png)](/learn/assets/theme_customize.png)
 3. Download both the files
 4. Replace the corresponding files in the Theme repository with the downloaded files.
 5. Make desired changes as required. For instance, change the background color or font color.

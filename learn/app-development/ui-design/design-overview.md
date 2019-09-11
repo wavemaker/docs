@@ -11,7 +11,7 @@ An application is a collection of pages, with each page composed of different U
 
 WaveMaker Pages are built using the drag-n-drop approach, by placing widgets in the corresponding responsive layout grids.  
 
-[![](../../assets/UI_design-1.png)](../../assets/UI_design-1.png)
+[![](/learn/assets/UI_design-1.png)](/learn/assets/UI_design-1.png)
 
 ## Designing Pages
 
@@ -25,7 +25,7 @@ The UI design involves the following subtasks:
 3. **Prefabs** to customize and extend widgets' capability. 
 4. Style using **Themes** and **Templates**.
 
-[![UI_design](../../assets/UI_design.png)](../../assets/UI_design.png)
+[![UI_design](/learn/assets/UI_design.png)](/learn/assets/UI_design.png)
 
 :::tip
 - For Widgets documentation, see [Widgets and Prefabs](/learn/app-development/widgets/ui-elements).   
@@ -36,7 +36,7 @@ The UI design involves the following subtasks:
 
 A page is divided automatically into different areas, with the content of all areas except the main area, repeated across all pages of the app. This helps achieve UI consistency throughout the app, easily.
 
-[![Page_responsive](../../assets/Page_responsive.png)](../../assets/Page_responsive.png) 
+[![Page_responsive](/learn/assets/Page_responsive.png)](/learn/assets/Page_responsive.png) 
 
 ### Responsiveness 
 WaveMaker supports responsive design, i.e. the apps are rendered automatically based upon the device they are viewed on. 
@@ -44,26 +44,26 @@ WaveMaker supports responsive design, i.e. the apps are rendered automatically b
 ### Grid Layout 
 The responsiveness of apps is achieved using the 12-column grid layout defined by bootstrap. For more information, see [Grid Layout](/learn/app-development/widgets/container/grid-layout/). 
 
-[![Page_grid](../../assets/Page_grid.png)](../../assets/Page_grid.png)
+[![Page_grid](/learn/assets/Page_grid.png)](/learn/assets/Page_grid.png)
 
 ### Page Layout
 Based on the Page construction system WaveMaker provides different options for Page Layouts, which can be picked based on the interaction required for the app. Depending upon the app platform the layout will differ.
 
 Page Layout can be set at the time of [Page Creation](./page-creation.md) or can be changed from the Workspace Toolbar.
 
-[![](../../assets/layout_change.png)](../../assets/layout_change.png)
+[![](/learn/assets/layout_change.png)](/learn/assets/layout_change.png)
 
 ### Web Responsive
 
 Each page can be designed by selecting an appropriate layout and arranging widgets in it which is suitable for web apps. For more information, see [Responsive Web Page Layout](/learn/responsive-web/web-ui-design/).
 
-[![page_layout](../../assets/page_layout.png)](../../assets/page_layout.png)
+[![page_layout](/learn/assets/page_layout.png)](/learn/assets/page_layout.png)
 
 ### Hybrid Mobile
 
 Similarly for Mobile apps, each page can be designed by selecting an appropriate layout and arranging widgets in it. For more information, see [Hybrid Mobile Page Layout](/learn/hybrid-mobile/mobile-page-concepts/).
 
-[![page_layout_mobile](../../assets/page_layout_mobile.png)](../../assets/page_layout_mobile.png)
+[![page_layout_mobile](/learn/assets/page_layout_mobile.png)](/learn/assets/page_layout_mobile.png)
 
 ## Reusable Pages
 
@@ -83,16 +83,16 @@ Themes are style elements which work at the widget or UI component level. For mo
 
 By default, Material Theme is set for Page and can be changed from the Workspace Toolbar.
 
-[![](../../assets/theme_change.png)](../../assets/theme_change.png)
+[![](/learn/assets/theme_change.png)](/learn/assets/theme_change.png)
 
-[![](../../assets/theme_concept.png)](../../assets/theme_concept.png)
+[![](/learn/assets/theme_concept.png)](/learn/assets/theme_concept.png)
 
 ## Templates
 Templates are editable pages with content pre-defined for the ease of UI development. For more information, see [Page Templates](/learn/app-development/ui-design/page-concepts/page-templates/).
 
 Templates are selected at the time of Page Creation and cannot be changed later.
 
-[![](../../assets/template_concept.png)](../../assets/template_concept.png)
+[![](/learn/assets/template_concept.png)](/learn/assets/template_concept.png)
 
 ## Drag-and-drop development
 
@@ -100,7 +100,7 @@ Pages are designed as a composition of Widgets or UI Elements. Widgets are the 
 
 They can be dropped into the Grids or Containers, making UI well-aligned and ready for consumption. For more information, see [Widgets](/learn/app-development/widgets/ui-elements/).
 
-[![](../../assets/widget_concept.png)](../../assets/widget_concept.png)
+[![](/learn/assets/widget_concept.png)](/learn/assets/widget_concept.png)
 
 
 

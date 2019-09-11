@@ -14,8 +14,8 @@ You can also configure the session timeout behavior.
 
 # Setting Login Page
 
-1. **How** the Login should be handled: using a **login page** - you can use the default login page provided by Studio or create your own page; [![](../assets/security_loginpage_1.png)](../assets/security_loginpage_1.png)
-2. or using a **login dialog** pop-up provided by Studio. This dialog is present in the _Common page_ as "_CommonLoginDialog_" and can be customized. [![](../assets/security_logindialog.png)](../assets/security_logindialog.png)
+1. **How** the Login should be handled: using a **login page** - you can use the default login page provided by Studio or create your own page; [![](/learn/assets/security_loginpage_1.png)](/learn/assets/security_loginpage_1.png)
+2. or using a **login dialog** pop-up provided by Studio. This dialog is present in the _Common page_ as "_CommonLoginDialog_" and can be customized. [![](/learn/assets/security_logindialog.png)](/learn/assets/security_logindialog.png)
 
 # Setting Landing Page
 
@@ -23,7 +23,7 @@ You can also configure the session timeout behavior.
 2. Few things that you need to be aware of regarding the landing page configured here and the home page configured in the [**Project Settings**](http://[supsystic-show-popup id=108]) dialog ([Settings accessed from the Project Configurations of Workspace](http://[supsystic-show-popup id=107])):
     - In case the app is not secure, user is redirected to the Home page configured in the project settings
     - In case the app is secure but the Home Page is not (permission set to everyone), user is redirected to the Home page configured in the project settings
-    - In case the app and Home Page are secure (permission set to specific user role), user is redirected to the configured login page as per the user role [![](../assets/security_landingpage.png)](../assets/security_landingpage.png)
+    - In case the app and Home Page are secure (permission set to specific user role), user is redirected to the configured login page as per the user role [![](/learn/assets/security_landingpage.png)](/learn/assets/security_landingpage.png)
 
 # Session Timeout
 
@@ -32,7 +32,7 @@ You can also configure the session timeout behavior.
     - - Page: On session timeout, the user is redirected to the configured login page. Any page can be configured to redirect the user on session timeout.
         - Dialog: On session timeout, a dialog pops-up, for re-logging in the app.
     
-    [![](../assets/security_reloginpage.png)](../assets/security_reloginpage.png)
+    [![](/learn/assets/security_reloginpage.png)](/learn/assets/security_reloginpage.png)
     
     In both the cases, on re-login, redirection occurs based upon the user login:
     
@@ -54,7 +54,7 @@ You can also configure the session timeout behavior.
 
 # Setting session timeout
 
-By default, the session timeout is set to 30 minutes. You can choose to change it [![](../assets/security_timeout.png)](../assets/security_timeout.png)
+By default, the session timeout is set to 30 minutes. You can choose to change it [![](/learn/assets/security_timeout.png)](/learn/assets/security_timeout.png)
 
 < Role Based Access
 

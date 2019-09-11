@@ -10,8 +10,8 @@ This post walks you through the creation and usage of a simple Prefab. We will b
 1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](http://[supsystic-show-popup id=102])
 2. Enter a name and description for the Prefab
 3. From [Project Configurations](http://[supsystic-show-popup id=107]), choose Config Prefab under Settings:
-    - In the Properties tab, add two _inbound_ properties which will take in the two strings to compare [![](../assets/demo_prefab_inbound-1.png)](../assets/demo_prefab_inbound-1.png) and one _outbound_ property to return the result [![](../assets/demo_prefab_outbound-1.png)](../assets/demo_prefab_outbound-1.png)
-    - In the Events tab, add an _event_ (Comparefail) which will be triggered when the comparison of strings fails. The event will be defined in the **JavaScript** of the Prefab, the application using this Prefab will be defining the action for this event. Note, by default two events are already given - Load and Destroy [![](../assets/demo_prefab_event-1.png)](../assets/demo_prefab_event-1.png)
+    - In the Properties tab, add two _inbound_ properties which will take in the two strings to compare [![](/learn/assets/demo_prefab_inbound-1.png)](/learn/assets/demo_prefab_inbound-1.png) and one _outbound_ property to return the result [![](/learn/assets/demo_prefab_outbound-1.png)](/learn/assets/demo_prefab_outbound-1.png)
+    - In the Events tab, add an _event_ (Comparefail) which will be triggered when the comparison of strings fails. The event will be defined in the **JavaScript** of the Prefab, the application using this Prefab will be defining the action for this event. Note, by default two events are already given - Load and Destroy [![](/learn/assets/demo_prefab_event-1.png)](/learn/assets/demo_prefab_event-1.png)
     - You can set the display icon and mention the group for Prefab from the Packaging tab
 4. [Add a **Java Service**](http://[supsystic-show-popup id=119]) for the string comparison logic. Use the same names that you gave in the Methods of Prefab Settings, in this case, **String\_compare** for _Java Service_ and **confirm** for the _method_ Enter the following method to compare strings:
     
@@ -106,9 +106,9 @@ This post walks you through the creation and usage of a simple Prefab. We will b
     
     }
     
-5. [Create a Variable](http://[supsystic-show-popup id=105]) to invoke the Java Service (string\_compare) and method (confirm) within that service [![](../assets/demo_prefab_var.png)](../assets/demo_prefab_var.png)
-6. Pass the _inbound parameters_ of the Prefab to the Java Service, by binding them to the input fields accessible from the Data tab [![](../assets/demo_prefab_var_data.png)](../assets/demo_prefab_var_data.png) [![](../assets/demo_prefab_var_databind.png)](../assets/demo_prefab_var_databind.png)
-7. We want the _event_ of the Prefab to be triggered when the _method_ returns an "invalid" message. This can be achieved by writing the appropriate **JavaScript** for the _onSuccess_ event of the method accessible from the Events tab of the Variable. [![](../assets/demo_prefab_var_dataevent.png)](../assets/demo_prefab_var_dataevent.png) You will find a message guiding you to the location of the JavaScript file. Click the link and use the following code in the JavaScript in the snippet
+5. [Create a Variable](http://[supsystic-show-popup id=105]) to invoke the Java Service (string\_compare) and method (confirm) within that service [![](/learn/assets/demo_prefab_var.png)](/learn/assets/demo_prefab_var.png)
+6. Pass the _inbound parameters_ of the Prefab to the Java Service, by binding them to the input fields accessible from the Data tab [![](/learn/assets/demo_prefab_var_data.png)](/learn/assets/demo_prefab_var_data.png) [![](/learn/assets/demo_prefab_var_databind.png)](/learn/assets/demo_prefab_var_databind.png)
+7. We want the _event_ of the Prefab to be triggered when the _method_ returns an "invalid" message. This can be achieved by writing the appropriate **JavaScript** for the _onSuccess_ event of the method accessible from the Events tab of the Variable. [![](/learn/assets/demo_prefab_var_dataevent.png)](/learn/assets/demo_prefab_var_dataevent.png) You will find a message guiding you to the location of the JavaScript file. Click the link and use the following code in the JavaScript in the snippet
     
     Prefab.compareStringonSuccess = function(variable, data) {
         if (data === "invalid") {
@@ -118,9 +118,9 @@ This post walks you through the creation and usage of a simple Prefab. We will b
         }
     };
     
-8. The result from the Java method needs to be bound to the outbound property declared in the above steps. From the Prefab Settings, Properties tab bind the _result_ of the Java Service to the _outbound_ property of the Prefab. [![](../assets/demo_prefab_outbound_afterbind-1.png)](../assets/demo_prefab_outbound_afterbind-1.png)
-9. Save and Preview the Prefab. Give the In-bound values:[![](../assets/Prefab_preview1.png)](../assets/Prefab_preview1.png) and see the result in the Out-bound properties tab:[![](../assets/Prefab_preview2.png)](../assets/Prefab_preview2.png)
-10. Publish the Prefab. [![](../assets/demo_prefab_publish.png)](../assets/demo_prefab_publish.png)
+8. The result from the Java method needs to be bound to the outbound property declared in the above steps. From the Prefab Settings, Properties tab bind the _result_ of the Java Service to the _outbound_ property of the Prefab. [![](/learn/assets/demo_prefab_outbound_afterbind-1.png)](/learn/assets/demo_prefab_outbound_afterbind-1.png)
+9. Save and Preview the Prefab. Give the In-bound values:[![](/learn/assets/Prefab_preview1.png)](/learn/assets/Prefab_preview1.png) and see the result in the Out-bound properties tab:[![](/learn/assets/Prefab_preview2.png)](/learn/assets/Prefab_preview2.png)
+10. Publish the Prefab. [![](/learn/assets/demo_prefab_publish.png)](/learn/assets/demo_prefab_publish.png)
 11. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/creating-prefabs/#publish-prefab).
 12. The Prefab will be available for use across the Projects. You can see the entry in the Artifacts list from the Developer Utilities on the [Project Workspace](http://[supsystic-show-popup id=107]) and in the Widget Toolbox of any Project within your workspace.
 
@@ -128,11 +128,11 @@ This post walks you through the creation and usage of a simple Prefab. We will b
 
 1. Let us now use the above-created Prefab in an application. _Create or Open an application_.
 2. From the Artifact Listing, import the above published Prefab.
-3. See the Prefab appear in the **Prefab** section of the Toolbox. The group name (Basic, in this example) and the icon are the values set from the Packaging tab of Prefab Settings. [![demo_prefab_toolbox](../assets/demo_prefab_toolbox.png)](../assets/demo_prefab_toolbox.png)
-4. Drop two _texts_ strings for comparison input to Prefab, a _label_ to hold the result from the Prefab, a _button_ to trigger the Prefab and the _Prefab_ on the canvas. Your canvas should look like this (we have used a Grid Layout for widget placement) [![demo_prefab_design](../assets/demo_prefab_design.png)](../assets/demo_prefab_design.png)
-5. Bind the _properties (inbound)_ of the Prefab to the two _text box_. [![](../assets/demo_prefab_design_inbound.png)](../assets/demo_prefab_design_inbound.png)
-6. Bind the _label_ on the canvas to the _result (outbound)_ from Prefab. [![demo_prefab_design_result](../assets/demo_prefab_design_result.png)](../assets/demo_prefab_design_result.png)
-7. Click event of the _button_ invokes the _Prefab method_. [![demo_prefab_design_event](../assets/demo_prefab_design_event.png)](../assets/demo_prefab_design_event.png)
+3. See the Prefab appear in the **Prefab** section of the Toolbox. The group name (Basic, in this example) and the icon are the values set from the Packaging tab of Prefab Settings. [![demo_prefab_toolbox](/learn/assets/demo_prefab_toolbox.png)](/learn/assets/demo_prefab_toolbox.png)
+4. Drop two _texts_ strings for comparison input to Prefab, a _label_ to hold the result from the Prefab, a _button_ to trigger the Prefab and the _Prefab_ on the canvas. Your canvas should look like this (we have used a Grid Layout for widget placement) [![demo_prefab_design](/learn/assets/demo_prefab_design.png)](/learn/assets/demo_prefab_design.png)
+5. Bind the _properties (inbound)_ of the Prefab to the two _text box_. [![](/learn/assets/demo_prefab_design_inbound.png)](/learn/assets/demo_prefab_design_inbound.png)
+6. Bind the _label_ on the canvas to the _result (outbound)_ from Prefab. [![demo_prefab_design_result](/learn/assets/demo_prefab_design_result.png)](/learn/assets/demo_prefab_design_result.png)
+7. Click event of the _button_ invokes the _Prefab method_. [![demo_prefab_design_event](/learn/assets/demo_prefab_design_event.png)](/learn/assets/demo_prefab_design_event.png)
 8. Run the application:
     1. Enter the same string in both the text boxes and see the comparison result:
     2. Enter different string in the text boxes and see the comparison result

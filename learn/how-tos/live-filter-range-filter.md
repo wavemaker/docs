@@ -8,7 +8,7 @@ To filter data between given two values, **Show Range Selector** property from t
 1. Drag and drop a Live Filter onto the canvas.
 2. Bind the Live Filter to Database CRUD Variable with hrdb as Service and Vacation as Entity
 3. From the Advanced Settings property, check the Show Range Selector property for Start Data field
-4. Here, we have also selected Type and Status fields. This is optional. [![](../assets/range_filter_AS.png)](../assets/range_filter_AS.png)
+4. Here, we have also selected Type and Status fields. This is optional. [![](/learn/assets/range_filter_AS.png)](/learn/assets/range_filter_AS.png)
 5. For seeing the results, we will use a Data Table
     - Drag and drop a Data Table
     - Bind the Dataset Value property of Data Table to the result node of the Live Filter created above.

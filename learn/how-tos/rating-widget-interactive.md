@@ -5,7 +5,7 @@ id: ""
 
 You can change the Rating widget style at the runtime, using the **Change** event. Using the example from the [previous section with Variable data](/learn/how-tos/rating-widget-using-variable/), here we will see how.
 
-1. Add **Javascript** to the **Change** event of the Rating widget. [![](../assets/rating_usage_statvar_event.png)](../assets/rating_usage_statvar_event.png)
+1. Add **Javascript** to the **Change** event of the Rating widget. [![](/learn/assets/rating_usage_statvar_event.png)](/learn/assets/rating_usage_statvar_event.png)
 2. Enter the following script. This script captures the rating value as changed by the user, and changes the color of the widget appropriately. **Note**: Use the rating widget name from your app in place of _rating1_ in the following code.
     
     Page.rating1Change = function ($event, widget, newVal, oldVal) {

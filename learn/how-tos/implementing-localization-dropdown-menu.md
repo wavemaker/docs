@@ -47,11 +47,11 @@ In this document, we will be walking through the steps to enable language suppor
         - the Action Label to the following value: _App.appLocale\[mylabel\],_ (you have to use the Use Expression option from the Bind Dialog)
         - the Action Icon to icon, and
         - the Action link to link.
-5. Open the I18N dialog from the Project Configurations of the [Project Workspace](http://[supsystic-show-popup id=107]) ([more on localization](/learn/app-development/widgets/form-widgets/select-locale-usage/)). [![](../assets/loc_create.png)](../assets/loc_create.png)
-    1. Use **Manage Languages** to add languages to your app. By default, English is already added. [![](../assets/loc_new_locale.png)](../assets/loc_new_locale.png)
-    2. Use **+** sign next to Message Key header to open the Localized Message Dialog. [![](../assets/loc_default_msgs.png)](../assets/loc_default_msgs.png)
-    3. Add a message as shown below: [![](../assets/menu_locale.png)](../assets/menu_locale.png)
-    4. Repeat the process for all the messages keys. [![](../assets/menu_locale_messages.png)](../assets/menu_locale_messages.png)
+5. Open the I18N dialog from the Project Configurations of the [Project Workspace](http://[supsystic-show-popup id=107]) ([more on localization](/learn/app-development/widgets/form-widgets/select-locale-usage/)). [![](/learn/assets/loc_create.png)](/learn/assets/loc_create.png)
+    1. Use **Manage Languages** to add languages to your app. By default, English is already added. [![](/learn/assets/loc_new_locale.png)](/learn/assets/loc_new_locale.png)
+    2. Use **+** sign next to Message Key header to open the Localized Message Dialog. [![](/learn/assets/loc_default_msgs.png)](/learn/assets/loc_default_msgs.png)
+    3. Add a message as shown below: [![](/learn/assets/menu_locale.png)](/learn/assets/menu_locale.png)
+    4. Repeat the process for all the messages keys. [![](/learn/assets/menu_locale_messages.png)](/learn/assets/menu_locale_messages.png)
 6. Drag and drop a Select Locale widget onto the canvas. The Select Locale widget auto-populates the languages added from the I18N dialog as a drop-down. ([more on Select Locale widget](/learn/app-development/widgets/form-widgets/select-locale/))
 7. Preview the page and check the functionality at runtime. On changing the language in the select Locale widget, the values in the Menu dropdown will also change.
 

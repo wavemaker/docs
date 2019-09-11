@@ -17,7 +17,7 @@ Variables function by invoking the associated REST APIs on the server-side, invo
 
 Variables can be represented using a block with 3 faces, as in the picture below, representing the APIs invoked, events processed and the Model or Entity objects returned by the APIs.
 
-[![variable representation](../../assets/var_representation.png)](../../assets/var_representation.png)
+[![variable representation](/learn/assets/var_representation.png)](/learn/assets/var_representation.png)
 
 ## Variable Types
 ---
@@ -66,7 +66,7 @@ For Mobile Apps, the various device information can be used to access the respec
 
 Variables and Actions can be classified into two based on the scope of the Variable. The two types of variables are - **Application** and **Page** level variables. While both these types reside at the _client side_, the _application level_ variables share the data across multiple pages, whereas _Page level_ variables share the data within the page where they have been declared/created. Whenever you are switching from one page to another, all the previous page level variables are destroyed.  
 
-[![var_scope](../../assets/var_scope.png)](../../assets/var_scope.png) 
+[![var_scope](/learn/assets/var_scope.png)](/learn/assets/var_scope.png) 
 
 :::note
 It is advised to have unique names for any variable to avoid confusion. Whenever you try to create or rename a variable WaveMaker will throw an error if another variable of the same name exists either within the page or at the app level.

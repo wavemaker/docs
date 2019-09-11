@@ -9,7 +9,7 @@ id: ""
 2. Set the **Height**, **Width** and **Youtube URL** properties of the **Youtube** prefab using the **Properties Panel**.
 3. Save and **Run** the project. You will see that the video is now embedded on the page in a container with specified height and width.
 
-[![](../../../assets/prefab.png)](../../../assets/prefab.png) [![](../../../assets/youtube_props.png)](../../../assets/youtube_props.png)
+[![](/learn/assets/prefab.png)](/learn/assets/prefab.png) [![](/learn/assets/youtube_props.png)](/learn/assets/youtube_props.png)
 
 [9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
 

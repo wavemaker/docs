@@ -59,7 +59,7 @@ The format can be:
 
 ### Overview
 
-Barcode Scanner can be used to scan and encode a barcode sequence. **Example: Barcode Scanner Usage with Web Service for book details from scanned book barcode** In this post, we will be creating a page that has a button to scan a book’s barcode. When a book’s barcode is scanned, information about the book has to fetched using google books API and barcode. [![](../../../assets/book_barcode_run3.png)](../../../assets/book_barcode_run3.png)
+Barcode Scanner can be used to scan and encode a barcode sequence. **Example: Barcode Scanner Usage with Web Service for book details from scanned book barcode** In this post, we will be creating a page that has a button to scan a book’s barcode. When a book’s barcode is scanned, information about the book has to fetched using google books API and barcode. [![](/learn/assets/book_barcode_run3.png)](/learn/assets/book_barcode_run3.png)
 
 ### Step 1: Data
 
@@ -74,30 +74,30 @@ Barcode Scanner can be used to scan and encode a barcode sequence. **Example: Ba
     - Once the response appears, click **NEXT**
     - Click **IMPORT**
     
-    [![](../../../assets/book_barcode_service.png)](../../../assets/book_barcode_service.png)
+    [![](/learn/assets/book_barcode_service.png)](/learn/assets/book_barcode_service.png)
 
 ### Step 2: Layout
 
-1. Create a page with _basic profile template_. [![](../../../assets/book_barcode_template.png)](../../../assets/book_barcode_template.png)
-2. Drag and drop _barcode scanner_ widget on the page. [![](../../../assets/book_barcode_design.png)](../../../assets/book_barcode_design.png)
+1. Create a page with _basic profile template_. [![](/learn/assets/book_barcode_template.png)](/learn/assets/book_barcode_template.png)
+2. Drag and drop _barcode scanner_ widget on the page. [![](/learn/assets/book_barcode_design.png)](/learn/assets/book_barcode_design.png)
 
 ### Step 3: Variable & Binding
 
-1. Create a page level **API variable** to use the imported google books API. [![](../../../assets/book_barcode_sv.png)](../../../assets/book_barcode_sv.png)
-2. Bind the value of q with barcode scanner ‘dataValue’ property and save the variable. [![](../../../assets/book_barcode_svdata.png)](../../../assets/book_barcode_svdata.png) [![](../../../assets/book_barcode_svdatabind.png)](../../../assets/book_barcode_svdatabind.png)
+1. Create a page level **API variable** to use the imported google books API. [![](/learn/assets/book_barcode_sv.png)](/learn/assets/book_barcode_sv.png)
+2. Bind the value of q with barcode scanner ‘dataValue’ property and save the variable. [![](/learn/assets/book_barcode_svdata.png)](/learn/assets/book_barcode_svdata.png) [![](/learn/assets/book_barcode_svdatabind.png)](/learn/assets/book_barcode_svdatabind.png)
 3. On the page:
     1. Bind Card Image to book thumbnail of the Variable.
     2. Bind Caption of Main Label to the book title.
     3. Bind Caption of the Last Label to the book description.
-    4. Bind Show property of Tile such that tile will be shown only if there is book information. [![](../../../assets/book_barcode_showbind.png)](../../../assets/book_barcode_showbind.png)
-    5. Drag and Drop a Label to the page, set Caption property to ‘Book Not found’. Bind the Show property this label such that this label is shown when the Variable does not return any books. [![book_barcode_showbind2](../../../assets/book_barcode_showbind2.png)](../../../assets/book_barcode_showbind2.png)
-4. On the success of barcode scanner, invoke the created variable. [![](../../../assets/book_barcode_event.png)](../../../assets/book_barcode_event.png)
+    4. Bind Show property of Tile such that tile will be shown only if there is book information. [![](/learn/assets/book_barcode_showbind.png)](/learn/assets/book_barcode_showbind.png)
+    5. Drag and Drop a Label to the page, set Caption property to ‘Book Not found’. Bind the Show property this label such that this label is shown when the Variable does not return any books. [![book_barcode_showbind2](/learn/assets/book_barcode_showbind2.png)](/learn/assets/book_barcode_showbind2.png)
+4. On the success of barcode scanner, invoke the created variable. [![](/learn/assets/book_barcode_event.png)](/learn/assets/book_barcode_event.png)
 
 ### Step 4: Build & Run
 
-1. Build the apk, install it on an android phone and open the app. [![](../../../assets/book_barcode_run1.png)](../../../assets/book_barcode_run1.png)
-2. Click on ‘scan a book’ button. The camera will open for barcode scanning. Point the camera at any book barcode. [![](../../../assets/book_barcode_run2.png)](../../../assets/book_barcode_run2.png)
-3. Book data will come up on the app, provided google has the book information. [![](../../../assets/book_barcode_run3.png)](../../../assets/book_barcode_run3.png)
+1. Build the apk, install it on an android phone and open the app. [![](/learn/assets/book_barcode_run1.png)](/learn/assets/book_barcode_run1.png)
+2. Click on ‘scan a book’ button. The camera will open for barcode scanning. Point the camera at any book barcode. [![](/learn/assets/book_barcode_run2.png)](/learn/assets/book_barcode_run2.png)
+3. Book data will come up on the app, provided google has the book information. [![](/learn/assets/book_barcode_run3.png)](/learn/assets/book_barcode_run3.png)
 
 [10\. Mobile & Device Widgets](/learn/app-development/widgets/widget-library/#mobile)
 

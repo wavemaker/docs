@@ -7,12 +7,12 @@ To generate PDF file using Jasper Reports, data needs to be consumed from an ext
 
 **Example**: Using HRDB Sample and listing all the departments using a REST API.
 
-[![](../assets/Departments_city.jpg)](../assets/Departments_city.jpg)
+[![](/learn/assets/Departments_city.jpg)](/learn/assets/Departments_city.jpg)
 
 Steps to generate PDF file using Jasper reports are as follows:
 
 - Create a  WaveMaker Web App and give the name as RestJasper.
-- Import HRDB and navigate to API Designer to get the REST API URL for /hrdb/Department. [![](../assets/jasper_hrdb_department.png)](../assets/jasper_hrdb_department.png)
+- Import HRDB and navigate to API Designer to get the REST API URL for /hrdb/Department. [![](/learn/assets/jasper_hrdb_department.png)](/learn/assets/jasper_hrdb_department.png)
 - Ensure that your app is deployed and use the Deploy URL instead of Run URL.
 - The JSON output looks typically as follows:
     
@@ -89,7 +89,7 @@ Steps to generate PDF file using Jasper reports are as follows:
     	\]
     }
     
-- Download the jars highlighted as shown below and add them to lib [![](../assets/Jasper_jars.png)](../assets/Jasper_jars.png)
+- Download the jars highlighted as shown below and add them to lib [![](/learn/assets/Jasper_jars.png)](/learn/assets/Jasper_jars.png)
 - **Add Jasper as dependency in pom.xml along with required exclusions:  **Here is the relevant section that needs to be added by the developer.
     
     <dependency>
@@ -366,8 +366,8 @@ Steps to generate PDF file using Jasper reports are as follows:
         }
     }
     
-- Place the _.jrxml_ file in the location as shown below: [![](../assets/Jasper_jrxml_location.png)](../assets/Jasper_jrxml_location.png)
+- Place the _.jrxml_ file in the location as shown below: [![](/learn/assets/Jasper_jrxml_location.png)](/learn/assets/Jasper_jrxml_location.png)
 - In the Main page drag and drop an **Iframe** onto the canvas.
-- Set the Source Property from the properties panel for Iframe. [![](../assets/Jasper_properties_iframe.png)](../assets/Jasper_properties_iframe.png)
-- Save and run the project – The PDF Report gets generated. You can download the PDF file. [![](../assets/run_project.jpg)](../assets/run_project.jpg)
-- The complete output is as follows: [![](../assets/output.jpg)](../assets/output.jpg)
+- Set the Source Property from the properties panel for Iframe. [![](/learn/assets/Jasper_properties_iframe.png)](/learn/assets/Jasper_properties_iframe.png)
+- Save and run the project – The PDF Report gets generated. You can download the PDF file. [![](/learn/assets/run_project.jpg)](/learn/assets/run_project.jpg)
+- The complete output is as follows: [![](/learn/assets/output.jpg)](/learn/assets/output.jpg)

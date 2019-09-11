@@ -19,10 +19,10 @@ id: ""
     
     {{row.getProperty('q1') + row.getProperty('q2')}}
     
-    This will add the content from columns q1 and q2 and set it as the content for H1 column. [![](./assets/dt_ve_1.png)](./assets/dt_ve_1.png)
+    This will add the content from columns q1 and q2 and set it as the content for H1 column. [![](/learn/assets/dt_ve_1.png)](/learn/assets/dt_ve_1.png)
     
-    **Note**: q1 and q1 are the Mapped Column name for the columns Q1 and Q2. [![](./assets/dt_ve_2.png)](./assets/dt_ve_2.png)
-4. Run the app and see the Data Table. [![](./assets/dt_ve_3.png)](./assets/dt_ve_3.png)
+    **Note**: q1 and q1 are the Mapped Column name for the columns Q1 and Q2. [![](/learn/assets/dt_ve_2.png)](/learn/assets/dt_ve_2.png)
+4. Run the app and see the Data Table. [![](/learn/assets/dt_ve_3.png)](/learn/assets/dt_ve_3.png)
 
 [Data Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
 

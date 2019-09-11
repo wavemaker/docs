@@ -5,7 +5,7 @@ id: ""
 
 We will build a tree using a simple static structure
 
-1. Drag and drop a tree widget in your canvas. Tree widget comes with multiple nodes [![tree_dnd](../assets/tree_dnd-1024x576.png)](../assets/tree_dnd.png)
+1. Drag and drop a tree widget in your canvas. Tree widget comes with multiple nodes [![tree_dnd](/learn/assets/tree_dnd-1024x576.png)](/learn/assets/tree_dnd.png)
 2. [Create a static variable](/learn/variables/#menu) giving the structure of the data to be displayed in the tree. Ensure that the _IsList_ check box is selected.
 3. In the _Text Editor_ enter the following code:
     
@@ -42,15 +42,15 @@ We will build a tree using a simple static structure
       }
     \]
     
-    In this code we are specifying the node structure - the _label_ on each node, _icon_ to be displayed at each node and any _child-level nodes_. Icons can be [halflings from glyphicons](http://getbootstrap.com/components/) or [font awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons. **Note**: If you follow this structure, the label, icon, link and children tags are picked automatically. If you are using different tag names, then you need to specify them while binding. [![tree_statvar](../assets/tree_statvar.png)](../assets/tree_statvar.png)
-4. Next, bind the dataset value property of the tree widget to the dataset under the static variable created in the previous step. [![tree_bind](../assets/tree_bind.png)](../assets/tree_bind.png) You can see the preview on the canvas. [![tree_design](../assets/tree_design-1024x576.png)](../assets/tree_design.png)
-5. Run the application and see the menu in action. [![tree_run1](../assets/tree_run1.png)](../assets/tree_run1.png)[![tree_run2](../assets/tree_run2.png)](../assets/tree_run2.png)
+    In this code we are specifying the node structure - the _label_ on each node, _icon_ to be displayed at each node and any _child-level nodes_. Icons can be [halflings from glyphicons](http://getbootstrap.com/components/) or [font awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons. **Note**: If you follow this structure, the label, icon, link and children tags are picked automatically. If you are using different tag names, then you need to specify them while binding. [![tree_statvar](/learn/assets/tree_statvar.png)](/learn/assets/tree_statvar.png)
+4. Next, bind the dataset value property of the tree widget to the dataset under the static variable created in the previous step. [![tree_bind](/learn/assets/tree_bind.png)](/learn/assets/tree_bind.png) You can see the preview on the canvas. [![tree_design](/learn/assets/tree_design-1024x576.png)](/learn/assets/tree_design.png)
+5. Run the application and see the menu in action. [![tree_run1](/learn/assets/tree_run1.png)](/learn/assets/tree_run1.png)[![tree_run2](/learn/assets/tree_run2.png)](/learn/assets/tree_run2.png)
 
 Tree can be bound to a Java Service which returns an arraylist of Label, icon and has its own pojo as children. We will address one such scenario here.
 
 ## Step 1: Create Source - Java Service
 
-1. Create a **Java Service** by name _TreeData_ [![tree_JS](../assets/tree_JS.png)](../assets/tree_JS.png)
+1. Create a **Java Service** by name _TreeData_ [![tree_JS](/learn/assets/tree_JS.png)](/learn/assets/tree_JS.png)
 2. The following code needs to be added to the Java service:
     1. import the ArrayList utility:
         
@@ -146,21 +146,21 @@ Tree can be bound to a Java Service which returns an arraylist of Label, icon an
 
 ## Step 2: Binding
 
-1. [Create a Service Variable](/learn/variables/#menu) using the Java Service created in the earlier step [![tree_JSvar](../assets/tree_JSvar.png)](../assets/tree_JSvar.png)
-2. Drag and drop a tree widget onto the canvas and bind the dataset value to the Service Variable created in the above step [![tree_JSbind](../assets/tree_JSbind.png)](../assets/tree_JSbind.png)
-3. Set the properties of Node Label, Icon and Children respectively [![tree_JSprops](../assets/tree_JSprops.png)](../assets/tree_JSprops.png)
+1. [Create a Service Variable](/learn/variables/#menu) using the Java Service created in the earlier step [![tree_JSvar](/learn/assets/tree_JSvar.png)](/learn/assets/tree_JSvar.png)
+2. Drag and drop a tree widget onto the canvas and bind the dataset value to the Service Variable created in the above step [![tree_JSbind](/learn/assets/tree_JSbind.png)](/learn/assets/tree_JSbind.png)
+3. Set the properties of Node Label, Icon and Children respectively [![tree_JSprops](/learn/assets/tree_JSprops.png)](/learn/assets/tree_JSprops.png)
 
 ## Step 3: Test Run
 
-1. Run the app and see the tree in action [![tree_JSrun](../assets/tree_JSrun.png)](../assets/tree_JSrun.png)
+1. Run the app and see the tree in action [![tree_JSrun](/learn/assets/tree_JSrun.png)](/learn/assets/tree_JSrun.png)
 
-[![tree_JSrun2](../assets/tree_JSrun2.png)](../assets/tree_JSrun2.png)
+[![tree_JSrun2](/learn/assets/tree_JSrun2.png)](/learn/assets/tree_JSrun2.png)
 
 If you have a requirement, whereby the user decides the structure of the tree. For example, you are building a folder-file structure and the user decides how many folders and files are to be present in a tree. This section deals with such a situation.
 
 ## Step 1: Create Source - Script Variable
 
-1. Drop a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas [![tree_dynamic_design](../assets/tree_dynamic_design.png)](../assets/tree_dynamic_design.png)
+1. Drop a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas [![tree_dynamic_design](/learn/assets/tree_dynamic_design.png)](/learn/assets/tree_dynamic_design.png)
 2. Select the Tree widget and specify a _Script Variable_ as **dataset** property, "_treeData_" Use the following for treeData in the Script:
     
     // should be an array of objects consisting of label, icon, children keys
@@ -218,4 +218,4 @@ If you have a requirement, whereby the user decides the structure of the tree. F
 
 1. Run the application and see the tree in action.
 
-[![tree_dynamic_run](../assets/tree_dynamic_run.png)](../assets/tree_dynamic_run.png)
+[![tree_dynamic_run](/learn/assets/tree_dynamic_run.png)](/learn/assets/tree_dynamic_run.png)

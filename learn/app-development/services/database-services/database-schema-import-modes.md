@@ -23,7 +23,7 @@ You can import the database in any mode according to the requirement. Read-Only 
 
 Once the database is imported in this mode, the DB designer will be opened in the read-only and will not permit any schema changes that affect the database.
 
-[![](../../../assets/db_import_readonly.png)](../../../assets/db_import_readonly.png)
+[![](/learn/assets/db_import_readonly.png)](/learn/assets/db_import_readonly.png)
 
 However, there are certain features that are allowed that do not affect the underlying schema such as but are reflected in the code generation:
 

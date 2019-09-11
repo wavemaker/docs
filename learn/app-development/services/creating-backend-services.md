@@ -18,13 +18,13 @@ WaveMaker handles external data as a service. Based on the underlying data being
 
 ## Backend Service Architecture 
 
-[![](../../assets/backend_model.png)](../../assets/backend_model.png)
+[![](/learn/assets/backend_model.png)](/learn/assets/backend_model.png)
 
 ## Micro-Services enabled Architecture
 
 To support micro-services architecture, WaveMaker uses an API-driven app development approach wherein REST APIs are generated automatically for the application. Every backend service such as Database Entity, Queries or Custom Java code, that is integrated into an application generates REST APIs. Some of these APIs are available for further customization based on the app integration needs.
 
-[![](https://pm.wavemaker.com../../assets/services_concept.png)](../../assets/services_concept.png) ORM Layer is auto-generated from DB schema using Hibernate & JPA. Services Layer is auto-generated using Spring. Custom queries, procedures, and Java Services can be used to extend the app functionality. For all these services, REST API is auto-generated using Spring-REST/Swagger. Variables interact with REST API layer to access the services.
+[![](https://pm.wavemaker.com../../assets/services_concept.png)](/learn/assets/services_concept.png) ORM Layer is auto-generated from DB schema using Hibernate & JPA. Services Layer is auto-generated using Spring. Custom queries, procedures, and Java Services can be used to extend the app functionality. For all these services, REST API is auto-generated using Spring-REST/Swagger. Variables interact with REST API layer to access the services.
 
 ## Accessing Data - Variables
 
@@ -38,7 +38,7 @@ A **Variable** is a non-visual component that is used to call web services, cust
 
 The graphic below represents the life-cycle of the variable.
 
-[![](../../assets/sevice_var_lifecycle.png)](../../assets/sevice_var_lifecycle.png)
+[![](/learn/assets/sevice_var_lifecycle.png)](/learn/assets/sevice_var_lifecycle.png)
 
 1. A user invokes the variable call through an action like click on a button.
 2. An event is emitted and event controller watches over the event.
@@ -53,7 +53,7 @@ The graphic below represents the life-cycle of the variable.
 
 ### Life-cycle Events of Variable
 
-Given the life cycle of a variable, next step would be to capture and control the flow to include validation, pre and post processing of data. A typical event flow when a variable is used to update data would be as follows: [![](../../assets/LSV_eventcycle.png)](../../assets/LSV_eventcycle.png)
+Given the life cycle of a variable, next step would be to capture and control the flow to include validation, pre and post processing of data. A typical event flow when a variable is used to update data would be as follows: [![](/learn/assets/LSV_eventcycle.png)](/learn/assets/LSV_eventcycle.png)
 
 ## REST APIs
 

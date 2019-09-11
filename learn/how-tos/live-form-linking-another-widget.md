@@ -6,7 +6,7 @@ id: ""
 To use form for updating the table, it needs to be bound to a **Data Table** or a **List** widget's **Selected row** property. Here we will see linking Data Table to a Live Form, the same can be replicated for a List. Another easy way to achieve this would be to use the Editable Data Table with Live Form layout.
 
 - Drag and drop a Data Table for the _Employee_ Variable.
-- Choose the Data Table (grid) selected item as the datasource for the Live Form. This will set the initial values that will be displayed in the form. [![form_bind_dt](../assets/form_bind_dt.png)](../assets/form_bind_dt.png)
+- Choose the Data Table (grid) selected item as the datasource for the Live Form. This will set the initial values that will be displayed in the form. [![form_bind_dt](/learn/assets/form_bind_dt.png)](/learn/assets/form_bind_dt.png)
 - At runtime, the row selected from the table will be displayed in the form. Make changes and click on save to commit the changes to the database.
 
 [Live Form Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)

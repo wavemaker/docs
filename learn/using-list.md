@@ -5,7 +5,7 @@ id: ""
 
 List provides a list view of data and has powerful features to provide meaningful display of data based on usage scenarios. The List can provide layouts such as Card View, Master-Detail View.
 
-To bind the List to your back-end services data, drag and drop the List Widget onto the canvas. [![ll_sel](./assets/ll_sel.png)](./assets/ll_sel.png)
+To bind the List to your back-end services data, drag and drop the List Widget onto the canvas. [![ll_sel](/learn/assets/ll_sel.png)](/learn/assets/ll_sel.png)
 
 #### STEP 1 – SELECT DATA
 
@@ -37,13 +37,13 @@ There can be different scenarios to deal with when configuring your Cards Widge
     3. You can **select data node** to be the entire widget or the selecteditem node in case of another Data Table or List or Cards or result from a Live Filter
     4. As you are not using a Variable the Data Configuration options will not be available.
 
-[![ll_data](./assets/ll_data-1.png)](./assets/ll_data-1.png)
+[![ll_data](/learn/assets/ll_data-1.png)](/learn/assets/ll_data-1.png)
 
 ### STEP 2 – SELECT LIST TEMPLATE
 
-1. Selecting the Template: In this step, you are expected to select a template suitable for the current use case. [![ll_template](./assets/ll_template.png)](./assets/ll_template.png)
-2. Select Pagination: Choose one of the pagination options provided [![ll_pagin](./assets/ll_pagin.png)](./assets/ll_pagin.png)
+1. Selecting the Template: In this step, you are expected to select a template suitable for the current use case. [![ll_template](/learn/assets/ll_template.png)](/learn/assets/ll_template.png)
+2. Select Pagination: Choose one of the pagination options provided [![ll_pagin](/learn/assets/ll_pagin.png)](/learn/assets/ll_pagin.png)
 
 #### STEP 3 – Binding Data Fields
 
-The template selected in the previous step provides a set of widgets that need to be bound to the corresponding field from the data source selected in the first step. Select the widget and bind to the corresponding properties like Caption etc. to the fields by selecting the field from the drop-down list. [![ll_fields](./assets/ll_fields.png)](./assets/ll_fields.png)
+The template selected in the previous step provides a set of widgets that need to be bound to the corresponding field from the data source selected in the first step. Select the widget and bind to the corresponding properties like Caption etc. to the fields by selecting the field from the drop-down list. [![ll_fields](/learn/assets/ll_fields.png)](/learn/assets/ll_fields.png)

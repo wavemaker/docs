@@ -7,7 +7,7 @@ id: ""
 2. **Multiselect:** Multiselect will enable users to select multiple list items at runtime. These items can be captured via the _selecteditem_ which will be an array of objects. See Usage Scenarios for more details.
 3. Item Reordering: **Enable reorder **will allow users to reorder the list items at run-time.
 
-[![](../../../../assets/cards_behav1.png)](../../../../assets/cards_behav1.png)
+[![](/learn/assets/cards_behav1.png)](/learn/assets/cards_behav1.png)
 
 < Configuration
 

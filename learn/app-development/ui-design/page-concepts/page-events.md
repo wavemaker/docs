@@ -6,7 +6,7 @@ sidebar_label: "Events"
 
 Events provide a way for you to define the actions that take place when something occurs in your application. There are many events that occur within a WaveMaker application. The most common events are user interface events, such as when a user clicks a button. Events are also triggered when an editor's value changes, and even when a** Variable** gets new data from the server. You have several options for specifying what will happen when a button is clicked.
 
-[![](../../../assets/event_types.png)](../../../assets/event_types.png) Here are a few examples:
+[![](/learn/assets/event_types.png)](/learn/assets/event_types.png) Here are a few examples:
 
 - **No Event**: Take no action.
 - **New Action:** For example, a help dialog automatically displays when a help button is clicked. Or the user clicks a _Next Page_ button, and the _Navigation Action_you select for your event loads a new page.

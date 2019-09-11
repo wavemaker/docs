@@ -9,17 +9,17 @@ Applications built with WaveMaker can be deployed to a number of environments. I
     
     | **Web Server** | **Version** | **Instructions** |
     | --- | --- | --- |
-    | [![](../../assets/tomcat.jpg)](../../assets/tomcat.jpg) | 8.x | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-tomcat/) |
+    | [![](/learn/assets/tomcat.jpg)](/learn/assets/tomcat.jpg) | 8.x | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-tomcat/) |
     | 9.x |
-    | [![](../../assets/websphere.png)](../../assets/websphere.png) | 17.0.0.2 Liberty | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-websphere-liberty-profile/) |
-    | [![](../../assets/jboss.png)](../../assets/jboss.png) | WildFly 10.0 | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-jboss/) |
+    | [![](/learn/assets/websphere.png)](/learn/assets/websphere.png) | 17.0.0.2 Liberty | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-websphere-liberty-profile/) |
+    | [![](/learn/assets/jboss.png)](/learn/assets/jboss.png) | WildFly 10.0 | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-jboss/) |
     | WildFly 11.0 |
-    | [![](../../assets/weblogic.png)](../../assets/weblogic.png) WebLogic | 12c (12.2.1) | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-weblogic-application-server/) |
+    | [![](/learn/assets/weblogic.png)](/learn/assets/weblogic.png) WebLogic | 12c (12.2.1) | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-weblogic-application-server/) |
     
 2. You need to set up the **configuration profile** - you can choose to use the [default profile](/learn/app-development/deployment/configuration-profiles/) configured by WaveMaker based upon the services incorporated within the app or build a [custom profile](/learn/app-development/deployment/configuration-profiles/#custom-profile) as per your needs
 3. You need to generate a **WAR file** of the WaveMaker app you want to deploy. WAR file can be generated either by
     - using **Export** -> **Project as WAR** option, or
-    - use **Export** -> **Project as ZIP** and use this file to generate WAR file through [Maven Build](https://maven.apache.org/) **Note**: For deployment to WebSphere (for apps with JNDI profile) and to WebLogic there is a pre-processing needed before generating the war file, check the corresponding deployment instructions before proceeding. [![](../../assets/deploy_web.png)](../../assets/deploy_web.png)
+    - use **Export** -> **Project as ZIP** and use this file to generate WAR file through [Maven Build](https://maven.apache.org/) **Note**: For deployment to WebSphere (for apps with JNDI profile) and to WebLogic there is a pre-processing needed before generating the war file, check the corresponding deployment instructions before proceeding. [![](/learn/assets/deploy_web.png)](/learn/assets/deploy_web.png)
 4. Once a WAR file is generated, deploy the same to [Tomcat](/learn/how-tos/wavemaker-application-deployment-tomcat/), [JBoss](/learn/how-tos/wavemaker-application-deployment-jboss/), [WebLogic](/learn/how-tos/wavemaker-application-deployment-weblogic-application-server/), or [WebSphere](/learn/how-tos/wavemaker-application-deployment-websphere-liberty-profile/) following the instructions that are given.
     
     Alternatively, the WAR file may also be deployed to public or private cloud servers. To deploy an application to one of the supported clouds you will need to:

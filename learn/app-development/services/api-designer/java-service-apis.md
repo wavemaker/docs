@@ -14,7 +14,7 @@ REST APIs are generated for the user defined [Java Service](http://[supsystic-sh
     - response format includes return parameters, type, and description.
 - The user can also test the API from the test tab, by passing values to the parameters and using the TEST button.
 
-[![](../../../assets/API_java.png)](../../../assets/API_java.png)
+[![](/learn/assets/API_java.png)](/learn/assets/API_java.png)
 
 < Backend Services Overview
 

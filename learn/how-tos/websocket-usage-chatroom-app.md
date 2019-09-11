@@ -16,7 +16,7 @@ Chatroom App utilizes a WebSocket service to enable chat among multiple users.
 - Enter _test _against Sample Request Body
 - Click **Test**.
 - Once the connection is established successfully with the service, the client will start receiving messages from the service and display it under the MESSAGES section.
-- Select one of the response messages by clicking on radio button on the left. This will help the platform to generate metadata info against the service. This metadata will be helpful while binding the corresponding WebSocket Variable with widgets. [![](../assets/wschat_msg.png)](../assets/wschat_msg.png)
+- Select one of the response messages by clicking on radio button on the left. This will help the platform to generate metadata info against the service. This metadata will be helpful while binding the corresponding WebSocket Variable with widgets. [![](/learn/assets/wschat_msg.png)](/learn/assets/wschat_msg.png)
 - If the server does not respond with any message or the message you are expecting at runtime is different, you can provide the same manually in the editor under the SAMPLE RESPONSE section. Please note providing Sample Response is useful only if the target WebSocket service returns homogenous data. If the data is heterogeneous, selecting a sample response is not going to be much of a use as you will end up writing JavaScript code to deal with different data structures returned by the service.
 
 **Step 3:** Configure the service and import
@@ -25,7 +25,7 @@ Chatroom App utilizes a WebSocket service to enable chat among multiple users.
     - If the service requires query params, they will show up under the query params section. You can make the path of the URL dynamic by adding path params under the second tab.
     - Give a name to the service (in this case **chatroomservice**) and click on **Import** and the service will be successfully imported into the project.
 
-[![](../assets/wschat_config.png)](../assets/wschat_config.png)
+[![](/learn/assets/wschat_config.png)](/learn/assets/wschat_config.png)
 
 **Step 4:** **Create a WebSocket Variable** against the service
 
@@ -40,14 +40,14 @@ This variable is an interface between client and server. Follow below steps to c
     - Check the properties **Connect on page load** and set **On New Data** to _Add as last record in dataSet (_since we want to display the latest message at the bottom of the list)
     - Click  **Save & Close** to save the variable.
     
-    [![](../assets/wschat_var.png)](../assets/wschat_var.png)
+    [![](/learn/assets/wschat_var.png)](/learn/assets/wschat_var.png)
 
 **Step 5:** Secure the app
 
 1. We will be using a Database for login details
     - [Import the Database](http://[supsystic-show-popup id=106]) with the login details (here we will be using the sample hrdb Employee table
 2. [Enable Security](http://[supsystic-show-popup id=111]) and use Database as Service Provider
-3. Configure the Security as follows: [![](../assets/wschat_sec.png)](../assets/wschat_sec.png)
+3. Configure the Security as follows: [![](/learn/assets/wschat_sec.png)](/learn/assets/wschat_sec.png)
 
 **Step 6:** Create a** DB CRUD Variable** to get the logged in user details
 
@@ -57,7 +57,7 @@ This variable will get the logged in employee details. Follow below steps to cr
     - Check the properties **Request data on page load**
     - From the **Data** tab, set **empId** Filter Field to _loggedInUser.dataSet.id_ using the bind icon next to the empId
 
-[![](../assets/wschat_var1.png)](../assets/wschat_var1.png) [![](../assets/wschat_var1data.png)](../assets/wschat_var1data.png)**Step 7:** Create a **Database CRUD Variable** to get all user details
+[![](/learn/assets/wschat_var1.png)](/learn/assets/wschat_var1.png) [![](/learn/assets/wschat_var1data.png)](/learn/assets/wschat_var1data.png)**Step 7:** Create a **Database CRUD Variable** to get all user details
 
 This variable will get employee details to be displayed against the chat messages. Follow below steps to create the variable:
 
@@ -72,7 +72,7 @@ This variable will get employee details to be displayed against the chat message
             };
         
 
-[![](../assets/wschat_var2.png)](../assets/wschat_var2.png) [![](../assets/wschat_var2event.png)](../assets/wschat_var2event.png) [![](../assets/wschat_var2js.png)](../assets/wschat_var2js.png)**Step 8:** We will design the Chat Room page [![](../assets/wschat_design.png)](../assets/wschat_design.png)
+[![](/learn/assets/wschat_var2.png)](/learn/assets/wschat_var2.png) [![](/learn/assets/wschat_var2event.png)](/learn/assets/wschat_var2event.png) [![](/learn/assets/wschat_var2js.png)](/learn/assets/wschat_var2js.png)**Step 8:** We will design the Chat Room page [![](/learn/assets/wschat_design.png)](/learn/assets/wschat_design.png)
 
 1. We have chosen **One column layout with top navbar** for the Main Page
 2. Select the top navbar and set:
@@ -99,7 +99,7 @@ This variable will get employee details to be displayed against the chat message
     - **username** to _loggedInUser.dataSet.name_,
     - **RequestBody** the _datavalue_ returned by _textarea_ widget
     
-    [![](../assets/wschat_vardata.png)](../assets/wschat_vardata.png)
+    [![](/learn/assets/wschat_vardata.png)](/learn/assets/wschat_vardata.png)
 
 **Step 7:** Run the app
 

@@ -23,7 +23,7 @@ id: ""
 6. Filter Criteria Preview gives you the filter expression based on the criteria and groups that you add.
 7. You can delete any criteria or group.
 
-[![](../assets/crudvar_filterfields.png)](../assets/crudvar_filterfields.png)
+[![](/learn/assets/crudvar_filterfields.png)](/learn/assets/crudvar_filterfields.png)
 
 Variable Usage
 

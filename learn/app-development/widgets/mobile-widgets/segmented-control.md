@@ -3,7 +3,7 @@ title: "Segmented Control"
 id: ""
 ---
 
-![](../../../assets/phone.png)  **NOTE**: Segmented Control is available only for mobile apps.
+![](/learn/assets/phone.png)  **NOTE**: Segmented Control is available only for mobile apps.
 
 **Segmented Control** is a group of buttons that toggle _Segmented Content_.
 

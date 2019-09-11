@@ -3,7 +3,7 @@ title: "Progress Circle"
 id: ""
 ---
 
-**Progress Circle** widget can be used to show the status of any given event. It can be used to represent the completion progress of a task. Progress may be either indeterminate — meaning it is unclear how much work remains before the task is complete (e.g., the task is waiting for a response from a remote host) — or a numeric value between 0 and a given maximum, explicitly specifying the fraction of work that has completed. [![](https://www.wavemaker.com../../../assets/ProgressCircle.jpg)](../../../assets/ProgressCircle.jpg)
+**Progress Circle** widget can be used to show the status of any given event. It can be used to represent the completion progress of a task. Progress may be either indeterminate — meaning it is unclear how much work remains before the task is complete (e.g., the task is waiting for a response from a remote host) — or a numeric value between 0 and a given maximum, explicitly specifying the fraction of work that has completed. [![](https://www.wavemaker.com../../../assets/ProgressCircle.jpg)](/learn/assets/ProgressCircle.jpg)
 
 # Properties
 

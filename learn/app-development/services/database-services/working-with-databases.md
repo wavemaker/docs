@@ -8,11 +8,11 @@ id: ""
 
 **Databases** can be accessed from the Resource Menu. Clicking the **+** will allow you to add a database to your app.
 
-[![](../../../assets/db_new.png)](../../../assets/db_new.png)
+[![](/learn/assets/db_new.png)](/learn/assets/db_new.png)
 
 There are various ways of adding a database to your app:
 
-[![](../../../assets/add_db.png)](../../../assets/add_db.png)
+[![](/learn/assets/add_db.png)](/learn/assets/add_db.png)
 
 ## Connect to a DB
 
@@ -52,7 +52,7 @@ It is strongly recommended that you assign Virtual Primary Key to avoid any runt
 
 While connecting or importing the Database, select the Configure option to assign Virtual Primary Key.  
 
-[![](../../../assets/DB_import2.png)](../../../assets/DB_import2.png) 
+[![](/learn/assets/DB_import2.png)](/learn/assets/DB_import2.png) 
 
 You can select column or columns whose values are unique and assign them to be the Virtual Primary Key. This assignment is specific to the app and will not impact the Database. 
 
@@ -61,7 +61,7 @@ After importing, you can always assign Virtual Primary key from the Database Des
 :::
   
 
-[![](../../../assets/DB_import3.png)](../../../assets/DB_import3.png)
+[![](/learn/assets/DB_import3.png)](/learn/assets/DB_import3.png)
 
 ## Map Sequences
 
@@ -69,7 +69,7 @@ For databases that support sequences (Oracle, SQL Server, PostgreSQL, DB2, etc.)
 
 You also have the option to change the assigned type to sequence and then assign a sequence to the same.
 
-[![](../../../assets/map_sequences.png)](../../../assets/map_sequences.png)
+[![](/learn/assets/map_sequences.png)](/learn/assets/map_sequences.png)
 
 ## Database Actions
 

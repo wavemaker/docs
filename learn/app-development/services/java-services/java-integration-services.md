@@ -38,7 +38,7 @@ We will see:
 
 You can find a list of methods for User table in _userservice.java_ like create, delete, find, update, query service, procedure service and so on.
 
-[![](../../../assets/dbservices.png)](../../../assets/dbservices.png)
+[![](/learn/assets/dbservices.png)](/learn/assets/dbservices.png)
 
 ### Accessing DB Services
 
@@ -181,7 +181,7 @@ To see the rollback in action replace the last line with:
 
 ### Accessing Query services using Java Service
 
-**Named Queries** or queries that are written, tested and saved in query editor of Database Designer. [Query Editor](http://[supsystic-show-popup id=117]). For each and every named query, there will be a rest service generated in query execution controller and exposed. Here we are seeing two queries - Emp\_Count and Total\_by\_City which were created from the query editor. [![](../../../assets/autowired_queries.png)](../../../assets/autowired_queries.png)
+**Named Queries** or queries that are written, tested and saved in query editor of Database Designer. [Query Editor](http://[supsystic-show-popup id=117]). For each and every named query, there will be a rest service generated in query execution controller and exposed. Here we are seeing two queries - Emp\_Count and Total\_by\_City which were created from the query editor. [![](/learn/assets/autowired_queries.png)](/learn/assets/autowired_queries.png)
 
 ### Invoking Imported Web Services
 

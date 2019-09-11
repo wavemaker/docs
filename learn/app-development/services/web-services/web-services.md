@@ -18,7 +18,7 @@ You can use the following types of web services:
 - [SOAP Services](/learn/app-development/services/web-services/working-with-soap-services)
 - [WebSocket Services](/learn/app-development/services/web-services/working-with-websockets)
 
-[![](../../../assets/web_types.png)](../../../assets/web_types.png)
+[![](/learn/assets/web_types.png)](/learn/assets/web_types.png)
 
 ### REST Services
 A REST (Representational State Transfer) web service is composed of resources accessed through unique URLs (requests) and returned as XML or JSON responses. An XML Schema typically defines the structure of those XML responses.
@@ -35,7 +35,7 @@ While binding a widget with a variable’s _dataSet_, it is assumed that the bin
 
 For more information about about working with variables, see [Variables](/learn/app-development/variables/variables). And, see [How to create Variables for Web Service](/learn/app-development/variables/web-service/).  
 
-[![](../../../assets/Var_create.png)](../../../assets/Var_create.png)[![](../../../assets/soap_var.png)](../../../assets/soap_var.png)
+[![](/learn/assets/Var_create.png)](/learn/assets/Var_create.png)[![](/learn/assets/soap_var.png)](/learn/assets/soap_var.png)
 
 WaveMaker supports various types of web services and these services can be invoked and results can be captured through Variables.
 

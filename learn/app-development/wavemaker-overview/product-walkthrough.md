@@ -30,7 +30,7 @@ Before starting with product walkthrough, let us get familiarized with some of t
 
 ## Project Dashboard
 
-Once you have created projects, the **Project Dashboard** page displays all your Projects, Prefabs and Template Bundles along with the latest activity updates. You have the option to create/import project, prefab or template bundle. [![](../../assets/project-listing.png)](../../assets/project-listing.png)
+Once you have created projects, the **Project Dashboard** page displays all your Projects, Prefabs and Template Bundles along with the latest activity updates. You have the option to create/import project, prefab or template bundle. [![](/learn/assets/project-listing.png)](/learn/assets/project-listing.png)
 
 - _Top Banner_ can be used to:
     - choose what you want to create/work on - Apps, Prefabs or Template Bundles. From Apps tab, you can access Sample Apps, which can be accessed from your account and tinkered with.
@@ -44,7 +44,7 @@ Once you have created projects, the **Project Dashboard** page displays all you
         - recent project activity
     - **Logs** give access to server logs which can be downloaded.
     - **Project Listing** will list all the apps, Prefabs, and template bundles, depending upon the tab you select. Hovering on a given app/prefab/template bundle will allow you to open the same in Studio designer.
-    - For each project or Prefab the following information is displayed: [![](../../assets/Project-Details.png)](../../assets/Project-Details.png)
+    - For each project or Prefab the following information is displayed: [![](/learn/assets/Project-Details.png)](/learn/assets/Project-Details.png)
         - **Provatar** or project avatar, to give a visual image of the type of project. It can be set at the time of project creation by selecting an image from the drop down list.
         - **Project type** of project - web, mobile, prefab, or template bundle
         - **Project Name** provided while creating a project or Prefab.
@@ -55,7 +55,7 @@ Once you have created projects, the **Project Dashboard** page displays all you
         - **Export:** Ability to export a project as a zip file without opening the project.
         - **Delete**: As an owner/admin of the project, you can delete the same. In case there are multiple Project Admins, each of them has the option to **Leave Project**.
         - **Leave project:** As a member of the project, you have the option to Leave the project, instead of delete.
-        - **App Member Details** gives the number of Members working on the project with an option to open the Member details dialog on click. [![](../../assets/user_management_add.png)](../../assets/user_management_add.png) This dialog allows you to:
+        - **App Member Details** gives the number of Members working on the project with an option to open the Member details dialog on click. [![](/learn/assets/user_management_add.png)](/learn/assets/user_management_add.png) This dialog allows you to:
             
             - view the project members and their roles;
             - the owner of the project can add or remove members and change the role
@@ -66,7 +66,7 @@ Once you have created projects, the **Project Dashboard** page displays all you
 
 When a project from the Project Dashboard is opened, it opens in the Project Workspace. This space is the designer pallet for your app. The various sections of the Project Workspace assist you in building the app.
 
-[![](../../assets/project_workspace.png)](../../assets/project_workspace.png)
+[![](/learn/assets/project_workspace.png)](/learn/assets/project_workspace.png)
 
 - **Project Actions** give a quick access to recently used resources, preview and deploy the app
 - **Project Configurations** helps secure, export, internationalize and version control the app. Also, the Configuration Profiles, Project Settings, and Studio Settings can be accessed from here.
@@ -94,12 +94,12 @@ Once you create a project, the Main Page is created by default. You can add page
 
 1. you can select the page to design/edit from the Pages resource category
 2. the selected page UI is displayed in the Canvas
-3. the Properties Panel displays the properties of the Page [![](../../assets/Canvas1.png)](../../assets/Canvas1.png)
+3. the Properties Panel displays the properties of the Page [![](/learn/assets/Canvas1.png)](/learn/assets/Canvas1.png)
 4. from the Page Structure section, you can see the various elements placed on the Page and their hierarchy
 5. you can select the widget from the Page structure
 6. selected widget is highlighted on the Canvas
 7. selected widget properties like data source, styles, events, device, and security can be set from the Properties Panel
-8. Widget hierarchy shows the widget construct and allows you to traverse to the parent container. [![](../../assets/Canvas2.png)](../../assets/Canvas2.png)
+8. Widget hierarchy shows the widget construct and allows you to traverse to the parent container. [![](/learn/assets/Canvas2.png)](/learn/assets/Canvas2.png)
 
 ## Project Settings
 
@@ -107,7 +107,7 @@ You can view and change project details and settings from the **Project Settings
 
 Project Settings can be accessed from the **Settings**option of the**Secondary Actions**.
 
-[![](../../assets/Project_Settings.png)](../../assets/Project_Settings.png)
+[![](/learn/assets/Project_Settings.png)](/learn/assets/Project_Settings.png)
 
 - **Type** indicates whether it is an application - web or mobile; or a prefab. For Prefabs, an additional [Prefab Settings](/learn/app-development/custom-widgets/creating-prefabs/ "Projects and Templates") tab is displayed.
 - **Project Name** non-editable field giving the name of the project.
@@ -136,8 +136,8 @@ The Configuration Profiles allows one to run the same application under differen
 
 [Know more about Configuration Profiles from here](/learn/app-development/deployment/configuration-profiles/).
 
-[![](../../assets/config_prof_dev.png)](../../assets/config_prof_dev.png)
+[![](/learn/assets/config_prof_dev.png)](/learn/assets/config_prof_dev.png)
 
-[![](../../assets/config_prof_deploy.png)](../../assets/config_prof_deploy.png)
+[![](/learn/assets/config_prof_deploy.png)](/learn/assets/config_prof_deploy.png)
 
 

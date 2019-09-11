@@ -30,7 +30,7 @@ OR
     </dependency>
     
 
-[![](../assets/email_pom.png)](../assets/email_pom.png)**Step 2: Creating Java Service**:
+[![](/learn/assets/email_pom.png)](/learn/assets/email_pom.png)**Step 2: Creating Java Service**:
 
 1. Create a [Java Service](http://[supsystic-show-popup id=119]), named EmailService
 2. Add the following import statements in the Java service created in the above step.
@@ -113,7 +113,7 @@ OR
 
 1. 1. Create a [Java Service Variable](http://[supsystic-show-popup id=105]) for the Java service created in the previous steps.
 
-[![](../assets/email_java_var.png)](../assets/email_java_var.png)
+[![](/learn/assets/email_java_var.png)](/learn/assets/email_java_var.png)
 
 - You can then use this service variable as per your business logic.
 
@@ -140,7 +140,7 @@ OR
     private String password;
     
 5. From [Project Settings](http://[supsystic-show-popup id=108]) navigate to the [Profile Configuration](http://[supsystic-show-popup id=109]).
-6. From Development section access the App Environment tab and add the values as per your needs: [![](../assets/email_app_env.png)](../assets/email_app_env.png)
+6. From Development section access the App Environment tab and add the values as per your needs: [![](/learn/assets/email_app_env.png)](/learn/assets/email_app_env.png)
 7. You can use these app environment variables as per your app needs. [See here for more](/learn/how-tos/using-app-environment-properties/).
 
 Java Service Use Cases

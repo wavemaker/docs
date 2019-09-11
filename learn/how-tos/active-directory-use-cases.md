@@ -21,7 +21,7 @@ When configuring for these situations, you need to:
 2. enter the **Root DN** following the placeholder convention "_dc=example,dc=com_",
 3. enter **Test Username** in the suffix email style i.e. _along with the @domain.com_
 
-[![](../assets/AD_case1-1.png)](../assets/AD_case1-1.png)**Scenario 2**: Support for user search using sAMAccountName.
+[![](/learn/assets/AD_case1-1.png)](/learn/assets/AD_case1-1.png)**Scenario 2**: Support for user search using sAMAccountName.
 
 The [sAMAccountName](https://msdn.microsoft.com/en-us/library/ms677605(v=vs.85).aspx#sAMAccountName) attribute is the User Logon Name used to support clients and servers from the previous version of Windows, such as Windows NT 4.0, Windows 95, Windows 98, and LAN Manager. Both userPrincipalName and sAMAccountName can be used to login to AD.
 
@@ -30,7 +30,7 @@ By default, WaveMaker sets the Active Directory user search to be based upon the
 1. leave **Domain** entry _blank,_
 2. enter the **User Search Pattern** as: `(&(objectClass=user)(sAMAccountName={0}))`
 
-[![](../assets/AD_case2-1.png)](../assets/AD_case2-1.png)**Scenario 3**: Support for users with certain domain name suffix
+[![](/learn/assets/AD_case2-1.png)](/learn/assets/AD_case2-1.png)**Scenario 3**: Support for users with certain domain name suffix
 
 In order to allow access to users of a particular domain you need to:
 
@@ -38,4 +38,4 @@ In order to allow access to users of a particular domain you need to:
 
 You can allow multiple domains by appending to the User Search Pattern: `(&(objectClass=user)(|(userPrincipalName={0}@yourdomain.com)(userPrincipalName={0}@anotherdomain.com)))`
 
-[![](../assets/AD_case3-1.png)](../assets/AD_case3-1.png)
+[![](/learn/assets/AD_case3-1.png)](/learn/assets/AD_case3-1.png)

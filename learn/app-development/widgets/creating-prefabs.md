@@ -15,7 +15,7 @@ In this document, we will be discussing the various phases of building you own P
 
 # Build your own Prefabs
 
-**Prefabs** are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker. [![](../../assets/prefab_create.png)](../../assets/prefab_create.png)
+**Prefabs** are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker. [![](/learn/assets/prefab_create.png)](/learn/assets/prefab_create.png)
 
 1. From the [**Project Dashboard**](http://[supsystic-show-popup id=102]), select **Prefab** tab and click **Create**
 2. Enter a **Name**, set an **Icon** for the Provatar and enter **Description**
@@ -25,7 +25,7 @@ In this document, we will be discussing the various phases of building you own P
 
 To **Configure ****Prefab**, from [Project Configurations](http://[supsystic-show-popup id=107]) click **Settings** to select **Config Prefab** option. The various configurations are grouped under various headings for developer convenience
 
-[![](../../assets/prefabsettings_resources.png)](../../assets/prefabsettings_resources.png)
+[![](/learn/assets/prefabsettings_resources.png)](/learn/assets/prefabsettings_resources.png)
 
 ## Resources
 
@@ -61,7 +61,7 @@ Users can add Prefab properties, which are exposed to the developers using the P
     - _Name_: of the property
     - _Default Value_: for the property.
 
-[![](../../assets/prefabsettings_props.png)](../../assets/prefabsettings_props.png)
+[![](/learn/assets/prefabsettings_props.png)](/learn/assets/prefabsettings_props.png)
 
 ## Events
 
@@ -70,7 +70,7 @@ You can define events that can be handled by the developers using the Prefab. Th
 - _Name_ of the event. It should be lower case and without any special characters. The event name gets prefixed with _on_ and the first alphabet will get capitalized. For example, if you name an event _test_ the event variable created would be _onTest_
 - _Description_ of the event. This will be used in the generatation of the documentation for the Prefab while publishing.
 
-[![](../../assets/prefabsettings_events.png)](../../assets/prefabsettings_events.png)
+[![](/learn/assets/prefabsettings_events.png)](/learn/assets/prefabsettings_events.png)
 
 ### Events Flow
 
@@ -84,7 +84,7 @@ Apart from these, Prefab developer can define **custom events**, as mentioned in
 
 Prefab.<event\_name>($scope, $data)
 
-[![](../../assets/prefab_event_method.png)](../../assets/prefab_event_method.png)
+[![](/learn/assets/prefab_event_method.png)](/learn/assets/prefab_event_method.png)
 
 ## Methods
 
@@ -97,7 +97,7 @@ Page.<prefab\_name>.<method\_name>(<parameter\_values>)
 - _Return Type_ of the method;
 - _Parameters_ required by the method.
 
-If the method does not exist, a function definition for the method will be generated in the JavaScript which can be accessed from the Script tab of the Prefab. [![](../../assets/prefabsettings_methods.png)](../../assets/prefabsettings_methods.png)[Click here to see the creation of a Prefab using Events and Methods](/learn/how-tos/create-prefab-using-jquery-plugin/)
+If the method does not exist, a function definition for the method will be generated in the JavaScript which can be accessed from the Script tab of the Prefab. [![](/learn/assets/prefabsettings_methods.png)](/learn/assets/prefabsettings_methods.png)[Click here to see the creation of a Prefab using Events and Methods](/learn/how-tos/create-prefab-using-jquery-plugin/)
 
 ## Packaging
 
@@ -106,16 +106,16 @@ These define how the Prefab appears in the Widget Toolbox in the apps
 1. _Name:_ display name for the Prefab.
 2. _Icon_: The icon displayed on the project dashboard for this Prefab can be changed by uploading it.
 
-[![](../../assets/prefabsettings_packagint-1.png)](../../assets/prefabsettings_packagint-1.png)
+[![](/learn/assets/prefabsettings_packagint-1.png)](/learn/assets/prefabsettings_packagint-1.png)
 
 # Testing Prefab
 
 The preview option on Prefab allows you to test your Prefab. The following options are available from the Preview screen:
 
-1. The In-bound Properties are listed and you can enter the test values. [![](../../assets/Prefab_preview1.png)](../../assets/Prefab_preview1.png)
-2. The result is displayed from the Out-bound Properties tab. [![](../../assets/Prefab_preview2.png)](../../assets/Prefab_preview2.png)
-3. The various methods included in the Prefab can be viewed and invoked from the Methods tab. [![](../../assets/Prefab_preview3.png)](../../assets/Prefab_preview3.png)
-4. The various events invoked can be viewed from the Events Tab. [![](../../assets/Prefab_preview4.png)](../../assets/Prefab_preview4.png)
+1. The In-bound Properties are listed and you can enter the test values. [![](/learn/assets/Prefab_preview1.png)](/learn/assets/Prefab_preview1.png)
+2. The result is displayed from the Out-bound Properties tab. [![](/learn/assets/Prefab_preview2.png)](/learn/assets/Prefab_preview2.png)
+3. The various methods included in the Prefab can be viewed and invoked from the Methods tab. [![](/learn/assets/Prefab_preview3.png)](/learn/assets/Prefab_preview3.png)
+4. The various events invoked can be viewed from the Events Tab. [![](/learn/assets/Prefab_preview4.png)](/learn/assets/Prefab_preview4.png)
 
 # Publish Prefab
 
@@ -125,35 +125,35 @@ Publishing a Prefab has the following options:
     - The Prefab will only appear in the specified project's widgets panel for use
     - The Project which is using a test Prefab cannot be pushed to VCS
 - **Publish to Workspace** (non-enterprise version):
-    - The Prefab will appear in the Widget Panel for all projects within your workspace [![](../../assets/prefab_publish_ws.png)](../../assets/prefab_publish_ws.png)
+    - The Prefab will appear in the Widget Panel for all projects within your workspace [![](/learn/assets/prefab_publish_ws.png)](/learn/assets/prefab_publish_ws.png)
 - **Publish to EDN** (enterprise version)**: **Approval needed by EDN Admin
     - You can publish the Prefab to EDN, and make it available to the entire enterprise
     - After Admin approval, the Prefab will be listed in the artifact repository listing
-    - Import the Prefab to see it in the Widget Panel for drag and drop usage. [![](../../assets/prefab_publish.png)](../../assets/prefab_publish.png)
+    - Import the Prefab to see it in the Widget Panel for drag and drop usage. [![](/learn/assets/prefab_publish.png)](/learn/assets/prefab_publish.png)
 
-Once the published Prefab is imported it will be available in the Widget Toolbox for drag and drop usage. You can use the refresh icon to check for any modification/updates in the Prefab. [![](../../assets/prefab_publish_toolbox.png)](../../assets/prefab_publish_toolbox.png)
+Once the published Prefab is imported it will be available in the Widget Toolbox for drag and drop usage. You can use the refresh icon to check for any modification/updates in the Prefab. [![](/learn/assets/prefab_publish_toolbox.png)](/learn/assets/prefab_publish_toolbox.png)
 
 ## Publish Prefab to Workspace
 
 ##### Only for non-Enterprise Version
 
-Using the Publish to Workspace option from the Main Menu listed under the app name, you can make your Prefab available across all projects within your workspace. [![](../../assets/prefab_publish_ws.png)](../../assets/prefab_publish_ws.png) Once Published the Prefab will be displayed in the Prefab section of the Widgets Panel under the category specified at the time of publishing. [![](../../assets/prefab_publish_ws2.png)](../../assets/prefab_publish_ws2.png) If you want to share the Prefab with another WaveMaker Developer, Export the Prefab as Zip. This zipped file can be imported from the Prefab section of the Project Workspace. [![](../../assets/prefab_export.png)](../../assets/prefab_export.png)
+Using the Publish to Workspace option from the Main Menu listed under the app name, you can make your Prefab available across all projects within your workspace. [![](/learn/assets/prefab_publish_ws.png)](/learn/assets/prefab_publish_ws.png) Once Published the Prefab will be displayed in the Prefab section of the Widgets Panel under the category specified at the time of publishing. [![](/learn/assets/prefab_publish_ws2.png)](/learn/assets/prefab_publish_ws2.png) If you want to share the Prefab with another WaveMaker Developer, Export the Prefab as Zip. This zipped file can be imported from the Prefab section of the Project Workspace. [![](/learn/assets/prefab_export.png)](/learn/assets/prefab_export.png)
 
 ## Publish Prefab to EDN
 
 ##### Only for Enterprise Version
 
-Using the Publish to EDN option from the Main Menu listed under the app name, you can make your Prefab available across all projects. Refer to [Artifacts Publishing Mechanism](/learn/app-development/wavemaker-overview/artifacts-repository/#publishing) for more details. [![](../../assets/prefab_publish1.png)](../../assets/prefab_publish1.png)
+Using the Publish to EDN option from the Main Menu listed under the app name, you can make your Prefab available across all projects. Refer to [Artifacts Publishing Mechanism](/learn/app-development/wavemaker-overview/artifacts-repository/#publishing) for more details. [![](/learn/assets/prefab_publish1.png)](/learn/assets/prefab_publish1.png)
 
 Once approved, these Prefabs will be available for Import from the Artifacts List. **IMP**: To use the Prefab in a project, the developer must Import the prefab into the project from the artifact repository and refresh the Prefab panel.
 
-[![](../../assets/Artifacts_prefab_list.png)](../../assets/Artifacts_prefab_list.png)
+[![](/learn/assets/Artifacts_prefab_list.png)](/learn/assets/Artifacts_prefab_list.png)
 
 ## Publish Prefab to Project
 
 Sometimes a Prefab may be used within a single project for testing purposes while it is still in development stages or changes made to a Prefab needs to be incorporated into a single project. In such cases, you can choose to **Publish Prefab to Project**. You can choose the project to which the Prefab needs to be updated, by selecting from the list. The Prefab will be displayed in the Widget Panel under Prefab section with a tag to indicate that it is an unpublished Prefab.
 
-[![](../../assets/prefab_bundle_proj.png)](../../assets/prefab_bundle_proj.png)
+[![](/learn/assets/prefab_bundle_proj.png)](/learn/assets/prefab_bundle_proj.png)
 
 You need to remember the following:
 
@@ -180,14 +180,14 @@ Conflicts can arise when different versions of Prefabs are in use. Consider the 
     - Drag and drop Prefab B which internally uses Prefab A (ver 2.0).
     - Conflict arises over the version of Prefab A.
     
-    [![](../../assets/prefab_conflict1.png)](../../assets/prefab_conflict1.png)
+    [![](/learn/assets/prefab_conflict1.png)](/learn/assets/prefab_conflict1.png)
 - **Case 2**:
     
     - Project P is using Prefab A which internally uses Prefab C (ver 1.0).
     - Drag and drop Prefab B which internally uses Prefab C (ver 2.0).
     - Conflict arises over the version of Prefab C.
     
-    [![](../../assets/prefab_conflict2.png)](../../assets/prefab_conflict2.png)
+    [![](/learn/assets/prefab_conflict2.png)](/learn/assets/prefab_conflict2.png)
 - **Case 3**:
     
     - Project P is using Prefab A ver 1.0 and Prefab B which internally uses Prefab A (ver 1.0).
@@ -195,7 +195,7 @@ Conflicts can arise when different versions of Prefabs are in use. Consider the 
     - Project P tries to update Prefab A.
     - Conflict arises over the version of Prefab A.
     
-    [![](../../assets/prefab_conflict3.png)](../../assets/prefab_conflict3.png)
+    [![](/learn/assets/prefab_conflict3.png)](/learn/assets/prefab_conflict3.png)
 - **Case 4**:
     
     - Project P is using Prefab A and Prefab B
@@ -204,12 +204,12 @@ Conflicts can arise when different versions of Prefabs are in use. Consider the 
     - Project P tries to update Prefab A.
     - Conflict arises over the version of Prefab C.
     
-    [![](../../assets/prefab_conflict4.png)](../../assets/prefab_conflict4.png)
+    [![](/learn/assets/prefab_conflict4.png)](/learn/assets/prefab_conflict4.png)
 
 In all of the above cases, WaveMaker gives you an option of
 
 - **Proceed Anyway**: which will update the Prefab in conflict. This might break the functionality of the other Prefab which uses the conflict Prefab, or
-- **OK**: this will retain the older version of the Prefab in conflict and cancel the current action which resulted in the conflict - drag and drop of Prefab B in Case 1 & 2 or update Prefab A in Case 3 & 4. [![](../../assets/prefab_conflict.png)](../../assets/prefab_conflict.png)
+- **OK**: this will retain the older version of the Prefab in conflict and cancel the current action which resulted in the conflict - drag and drop of Prefab B in Case 1 & 2 or update Prefab A in Case 3 & 4. [![](/learn/assets/prefab_conflict.png)](/learn/assets/prefab_conflict.png)
 
 ## Versioning Special Case
 
@@ -223,7 +223,7 @@ In case an updated dependent Prefab is deleted that the force update will be rev
     - Project P tries to update Prefab A.
     - Conflict arises over the version of Prefab C.
     
-    [![](../../assets/prefab_conflict4.png)](../../assets/prefab_conflict4.png)
+    [![](/learn/assets/prefab_conflict4.png)](/learn/assets/prefab_conflict4.png)
 
 Assume that the Project P developer choose to update Prefab C
 
@@ -231,17 +231,17 @@ Assume that the Project P developer choose to update Prefab C
 - Consider that Prefab A is updated to ver 2.1 wherein the Prefab C has been deleted
 - If Project P updates Prefab A to ver 2.1, then the Prefab C in Prefab B will be reverted to the original ver 1.0.
 
-[![](../../assets/prefab_conflict5.png)](../../assets/prefab_conflict5.png)
+[![](/learn/assets/prefab_conflict5.png)](/learn/assets/prefab_conflict5.png)
 
 # Deleting Prefab
 
 You can delete a custom Prefab from your project using the delete icon in the [Studio Artifacts](http://[supsystic-show-popup id=120]) listing dialog.
 
-[![](../../assets/prefab_publish_artefacts.png)](../../assets/prefab_publish_artefacts.png)
+[![](/learn/assets/prefab_publish_artefacts.png)](/learn/assets/prefab_publish_artefacts.png)
 
 # Accessing Prefab through Scripting
 
-- Once the Prefab properties are set, a **onPropertyChange** event is created, which can be programmed from the Script. [![](../../assets/Prefab_Script.png)](../../assets/Prefab_Script.png)
+- Once the Prefab properties are set, a **onPropertyChange** event is created, which can be programmed from the Script. [![](/learn/assets/Prefab_Script.png)](/learn/assets/Prefab_Script.png)
 - The exposed properties are defined on the Prefab scope. They can be accessed/modified in the Prefab script using: Prefab.\[propertyname\]
 
 We have seen the basics of creating a Prefab including the configuration settings, and various publishing options. Check out various use cases for Prefab creation by [clicking this link](/learn/app-development/custom-widgets/use-cases-prefabs/).

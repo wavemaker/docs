@@ -11,9 +11,9 @@ For example, we will see how to filter the vacation details of employees based o
 2. Bind the Live Filter to Database CRUD Variable with hrdb as Service and Vacation as Entity
 3. Pick a two-column layout and select Status and Type fields
 4. From the Advanced Settings property
-    1. Set the Widget Display Property for Status field to Checkboxset [![](../assets/multiple_filter_AS.png)](../assets/multiple_filter_AS.png)
+    1. Set the Widget Display Property for Status field to Checkboxset [![](/learn/assets/multiple_filter_AS.png)](/learn/assets/multiple_filter_AS.png)
     2. Set the Widget Display Property for Type field to Select
-5. From the canvas, select the Type field and check the Multiple field property [![](../assets/multiple_filter_props.png)](../assets/multiple_filter_props.png)
+5. From the canvas, select the Type field and check the Multiple field property [![](/learn/assets/multiple_filter_props.png)](/learn/assets/multiple_filter_props.png)
 6. For seeing the results, we will use a Data Table
     1. Drag and drop a Data Table
     2. Bind the Dataset Value property of Data Table to the result node of the Live Filter created above.

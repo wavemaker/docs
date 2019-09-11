@@ -19,7 +19,7 @@ id: ""
     - EMPTY: Filtering on 'No Value' returns empty records.
 - **Filter on input change** will trigger the filter automatically when any of the filter field values change
 
-[![](../../../../assets/filter_basics.png)](../../../../assets/filter_basics.png) [![](../../../../assets/filter_props-1.png)](../../../../assets/filter_props-1.png)
+[![](/learn/assets/filter_basics.png)](/learn/assets/filter_basics.png) [![](/learn/assets/filter_props-1.png)](/learn/assets/filter_props-1.png)
 
 < Layouts
 

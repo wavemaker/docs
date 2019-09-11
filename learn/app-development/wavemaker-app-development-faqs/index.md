@@ -37,7 +37,7 @@ See the [FAQs](index.md) for WaveMaker app development.      
 
 ####  How does WaveMaker support Micro-Services enabled architecture? 
 
-[![](./assets/services_concept.png)](./assets/services_concept.png)
+[![](/learn/assets/services_concept.png)](/learn/assets/services_concept.png)
 
 To support micro-services architecture, WaveMaker uses an API-driven app development approach wherein REST APIs are auto-generated for the application. Every backend services such as Database Entity, Queries or Custom Java code, that is integrated into an application generates REST APIs. Some of these APIs are available for further customization based on the app integration needs.
 
@@ -65,7 +65,7 @@ This model offers a true low-code approach eliminating the need to build an enti
 
 The Automated Build process for a mobile application within WaveMaker can be used to generate a .apk (Android application package) or .ipa file (iOS App Store package). Downloading Cordova/PhoneGap compatible .zip files can be used to build systems manually for Android/iOS platforms.
 
-[![](./assets/Hybrid_App_Installer.png)](./assets/Hybrid_App_Installer.png)
+[![](/learn/assets/Hybrid_App_Installer.png)](/learn/assets/Hybrid_App_Installer.png)
 
 WaveMaker supports the build for mobile applications in the following three ways:
 
@@ -81,9 +81,9 @@ WaveMaker supports the build for mobile applications in the following three ways
 
 The Mobile Themes give native look-n-feel of the same page based on the Platform (IOS, Android etc.). Most importantly themes adhere to design guidelines of the Platform, for example, the Page Title in Android platform needs to be left aligned while for iOS it needs to be centered or the menu tab needs to be rendered differently.
 
-[![](./assets/mobile_native_UIlooknfeel.png)](./assets/mobile_native_UIlooknfeel.png)
+[![](/learn/assets/mobile_native_UIlooknfeel.png)](/learn/assets/mobile_native_UIlooknfeel.png)
 
-Similarly, various widgets like date picker, drop down menu need to be rendered differently based on the platform. All these aspects are taken care of by the inbuilt Mobile Themes provided by WaveMaker. [![](./assets/mobile_native_UIcontrols.png)](./assets/mobile_native_UIcontrols.png)
+Similarly, various widgets like date picker, drop down menu need to be rendered differently based on the platform. All these aspects are taken care of by the inbuilt Mobile Themes provided by WaveMaker. [![](/learn/assets/mobile_native_UIcontrols.png)](/learn/assets/mobile_native_UIcontrols.png)
 
 ##### Doc Reference
 
@@ -97,15 +97,15 @@ WaveMaker App contains distributable components which are completely conforming 
 
 The responsive design facilitates the apps to automatically adjust to the device screen size with various UI components adjusting to the available real estate. In WaveMaker, this is achieved through Bootstrap styling using the 12-column layout.
 
-[![](./assets/Page_grid.png)](./assets/Page_grid.png)
+[![](/learn/assets/Page_grid.png)](/learn/assets/Page_grid.png)
 
 Widgets are dragged and dropped into the 12-column grid containers, whose sizes cumulatively aggregate to 12 within a row. The bootstrap layouting system automatically renders the widgets in different devices based on the available real estate, usually stacking them on a mobile device, while they appear side by side when viewed on a desktop screen.
 
-[![](./assets/widget_concept.png)](./assets/widget_concept.png)
+[![](/learn/assets/widget_concept.png)](/learn/assets/widget_concept.png)
 
 In WaveMaker, a Page has a flexible layout structure separated from the main content area where the widgets are dropped. Separation of the layout i.e. left panel, header, footer etc. helps not only in achieving UI consistency but also in simplifying the page rendering across devices.
 
-[![](./assets/Page_responsive.png)](./assets/Page_responsive.png)
+[![](/learn/assets/Page_responsive.png)](/learn/assets/Page_responsive.png)
 
 Also, WaveMaker widgets embrace Android Material Design specification for visual design and building interaction across multiple devices. Android Material Design provides standard design guidelines for user interaction across mobile apps and modern web apps.
 
@@ -122,7 +122,7 @@ To build WaveMaker app, following libraries are used:
 - **Spring Framework** enables the back-end service layer in Java to facilitate dependency injection, REST controllers, security, etc.
 - **Cordova Framework** provides easy access to mobile device features and native installer creation using the appropriate SDK’s.
     
-    [![](./assets/OS_Technology_Stack.png)](./assets/OS_Technology_Stack.png)
+    [![](/learn/assets/OS_Technology_Stack.png)](/learn/assets/OS_Technology_Stack.png)
     
 
 ##### Doc Reference
@@ -190,11 +190,11 @@ In WaveMaker, widget extensions or custom widgets are built using specialized co
 
 Prefabs are like the pieces of the jigsaw puzzle or equivalent of lego blocks, which when put together offer powerful extended features of existing widgets or build an altogether new UI element by integrating with 3rd party libraries.
 
-[![](./assets/prefab_concepts.png)](./assets/prefab_concepts.png)
+[![](/learn/assets/prefab_concepts.png)](/learn/assets/prefab_concepts.png)
 
 Prefab may consist of all 3 layers of a WaveMaker App, combining the power of custom widgets with any integrated service, as shown below.
 
-[![](./assets/prefab_layeredarch.png)](./assets/prefab_layeredarch.png)
+[![](/learn/assets/prefab_layeredarch.png)](/learn/assets/prefab_layeredarch.png)
 
 Prefabs can be used:
 
@@ -265,11 +265,11 @@ The benefits of Rapid Application Development have a direct bearing on the cost 
 - 80% lesser coding required compared to traditional software development
 - 75% lower maintenance costs than traditional software life cycle
 
-[![](./assets/rad_benefits.png)](./assets/rad_benefits.png)
+[![](/learn/assets/rad_benefits.png)](/learn/assets/rad_benefits.png)
 
 The following chart depicts performance comparison of an app built following the RAD approach using WaveMaker and a traditionally built app using AngularJS framework. The functionality of the app is designed to load several database records from a backend service, exposed as REST API to the UI layer, where the UI layer renders these records using widgets such as list, image, label, panel etc.
 
-[![](./assets/perf_graph.png)](./assets/perf_graph.png)
+[![](/learn/assets/perf_graph.png)](/learn/assets/perf_graph.png)
 
 Metrics such as page load time, memory consumed on the client side, page interaction response times and the number of backend service calls are plotted. As indicated in the figure above, the delta is very minimal and the application built with WaveMaker performs at par on all counts in comparison to the app built traditionally.   
 
@@ -277,6 +277,6 @@ Metrics such as page load time, memory consumed on the client side, page interac
 
 WaveMaker Apps are built to use stateless architectures making them ready for large scale container-based deployments. Large scale deployments needing high number concurrent requests and low response times can be achieved, by scaling apps to deploy on container based systems.
 
-[![](./assets/scal_graphic.png)](./assets/scal_graphic.png)
+[![](/learn/assets/scal_graphic.png)](/learn/assets/scal_graphic.png)
 
 WaveMaker App acts as a micro service with the REST APIs exposed and load-balanced when deployed on multiple containers. Since, there is no state associated on the server-side, the architecture allows for a high-scalable deployment with client-managed state (on the Angular side).

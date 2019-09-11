@@ -18,7 +18,7 @@ You can set the display properties of the elements of the Form.
     - additional Validations like **Required**, pattern matching in the form of **Regular Expression** and **Maximum Characters** allowed
     - behavior like **Auto Focus**, **Read Only**, **Show** etc can be set.
 
-[![](../../../../assets/Form_Fields.png)](../../../../assets/Form_Fields.png)
+[![](/learn/assets/Form_Fields.png)](/learn/assets/Form_Fields.png)
 
 ### Form Validations
 
@@ -50,7 +50,7 @@ There are various ways in which Form fields can be validated depending upon the 
         };
     
 
-[![](../../../../assets/LF_valid.png)](../../../../assets/LF_valid.png)
+[![](/learn/assets/LF_valid.png)](/learn/assets/LF_valid.png)
 
 < Configurations
 

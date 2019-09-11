@@ -27,7 +27,7 @@ The following use cases are discussed in this section:
 
 - A new param type "Blob" can be found in the Parameter section of the Query Editor.
 - **Note**: This Blob type is enabled only for Insert and Update queries.
-- Each Blob type column supports single file upload, i.e. not as a list. However, there can be multiple Blob params for a single query. [![](../../../assets/blob_query_param.png)](../../../assets/blob_query_param.png)
+- Each Blob type column supports single file upload, i.e. not as a list. However, there can be multiple Blob params for a single query. [![](/learn/assets/blob_query_param.png)](/learn/assets/blob_query_param.png)
 - When a Blob parameter exists in a query, then the generated API for such query will accept Multipart data and POST method is used irrespective of query type.
 
 ### Handling Blob content in query results (single or paginated results)
@@ -36,8 +36,8 @@ The following use cases are discussed in this section:
 - Queries returning a PAGINATED response containing Blob field should provide **Identifier** while saving the query
     - An identifier is required to uniquely identify the column in the query result.
     - You can select multiple columns as Identifier.
-    - **Note:** You cannot save the query without Identifier. [![](../../../assets/blob_query_save.png)](../../../assets/blob_query_save.png)
-- Separate API will be generated for each Blob field with a _Downloadable_ return type in addition to the executeQueryAPI. The response of the execute query's Blob field's value will contain the absolute URL to the Blob content. It will be null for the rows which do not have a value for that field. [![](../../../assets/blob_query_api.png)](../../../assets/blob_query_api.png)
+    - **Note:** You cannot save the query without Identifier. [![](/learn/assets/blob_query_save.png)](/learn/assets/blob_query_save.png)
+- Separate API will be generated for each Blob field with a _Downloadable_ return type in addition to the executeQueryAPI. The response of the execute query's Blob field's value will contain the absolute URL to the Blob content. It will be null for the rows which do not have a value for that field. [![](/learn/assets/blob_query_api.png)](/learn/assets/blob_query_api.png)
 
 **Notes:**
 
@@ -46,7 +46,7 @@ The following use cases are discussed in this section:
 
 ### Support for uploading the blob data as Procedure Param
 
-- A typical procedure with Blob input is as shown below: [![](../../../assets/blob_proc_param.png)](../../../assets/blob_proc_param.png)
+- A typical procedure with Blob input is as shown below: [![](/learn/assets/blob_proc_param.png)](/learn/assets/blob_proc_param.png)
 - When param type of Blob is IN in a procedure, then the generated API for such procedure will be accepted as multipart data and the remaining fields are expected as one part with the content type `application/json`. There can be multiple Blob inputs parameters.
 
 ### Handling Blob content as output param of a procedure

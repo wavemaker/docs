@@ -13,7 +13,7 @@ FileUpload widget can be used to let users upload files to your apps. WaveMakerÂ
 - [How to uploaded files from Java code](/learn/how-tos/accessing-file-upload-java-code/)
 - [How to use FileUpload in Form and Live Form](/learn/how-tos/upload-files-from-live-form-form/)
 
-[![](../../../assets/fu_service.png)](../../../assets/fu_service.png)
+[![](/learn/assets/fu_service.png)](/learn/assets/fu_service.png)
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

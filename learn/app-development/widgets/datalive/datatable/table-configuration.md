@@ -32,7 +32,7 @@ End-user can also be provided with a way to select rows and columns of a table.
 - Column selection needs to be further configured using the On Column Select and On Column Deselect events.
 - For Quick Edit and Inline Edit, New row position can be specified to be at the bottom or at the top of the Data Table.
 
-[![](../../../../assets/table-config1.png)](../../../../assets/table-config1.png)
+[![](/learn/assets/table-config1.png)](/learn/assets/table-config1.png)
 
 ### Pagination
 
@@ -50,7 +50,7 @@ The user can Export the Data Table to an Excel or CSV format. This option is ava
 
 Only the contents displayed in the Data Table will be exported, as opposed to the contents of the entire underlying database table. For each column selected for display, you can customize the export value using Value Expressions. Value Expression **has** to be set for custom fields.
 
-[![](../../../../assets/table-config2.png)](../../../../assets/table-config2.png)
+[![](/learn/assets/table-config2.png)](/learn/assets/table-config2.png)
 
 ### Message
 
@@ -62,7 +62,7 @@ Message On Error, Message On Add and Message On Update can be configured for CRU
 
 Similar to [columns styling](/learn/app-development/widgets/datalive/datatable/field-configuration/#styling), styles can be applied to rows in the Data Table. Conditional classes can also be applied based upon the data value within the rows.
 
-[![](../../../../assets/table-config3.png)](../../../../assets/table-config3.png)
+[![](/learn/assets/table-config3.png)](/learn/assets/table-config3.png)
 
 < Layouts
 

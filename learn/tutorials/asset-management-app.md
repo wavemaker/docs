@@ -25,7 +25,7 @@ The following concepts are covered in building this application.
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vTbTGYsGvR-h2powLU1XZCG0VQZpPpfMcuZtcpB2BWeYt5fMHxD3jPdqukBPRUlnIxBhLOHSxOoyFaN/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-**WM**First Steps - Page Creation, Page Navigation, Create Database**SQL File for Database Import**: Download and extract the zip file for use in this step: [AssetsDB](../assets/AssetsDB.zip)
+**WM**First Steps - Page Creation, Page Navigation, Create Database**SQL File for Database Import**: Download and extract the zip file for use in this step: [AssetsDB](/learn/assets/AssetsDB.zip)
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vTgttevcfKuDJCr_EwW_hcL1zXd1LJLPMbfdNynqm54VCFg7u8It13mwGAL4PR5dAQln1GAR1R76EFf/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 

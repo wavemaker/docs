@@ -9,14 +9,14 @@ id: ""
 2. How to link the registration to the [inbuilt security and login page](#login), and
 3. Add [security encryption](#encryption) to password field using Java service
 
-1. [Add user database](http://[supsystic-show-popup id=106]) - this should contain the details of the users, their usernames, password etc. [![](../assets/registration_database.png)](../assets/registration_database.png)
+1. [Add user database](http://[supsystic-show-popup id=106]) - this should contain the details of the users, their usernames, password etc. [![](/learn/assets/registration_database.png)](/learn/assets/registration_database.png)
 2. Design the registration page - create a **partial page** to allow a new user enter his/her details. Live Form will allow user to enter their details and insert the details to the database table. Drag and drop a Live Form widget, use the Database CRUD from the UserDB service and the UserDetails table and set the properties, as per your app requirements. We have used the following settings:
     - two column layout with first name, last name and email id in the first column; username, password, and role in the second column,
     - set First Name, and Username as Required fields,
-    - Email Id is also set as Required and in addition, the Input Type is set as email. This will auto validate the field entry to be in the email format with @ symbol [![](../assets/registration_email_validation.png)](../assets/registration_email_validation.png)
+    - Email Id is also set as Required and in addition, the Input Type is set as email. This will auto validate the field entry to be in the email format with @ symbol [![](/learn/assets/registration_email_validation.png)](/learn/assets/registration_email_validation.png)
     - add a text widget for confirm password field,
-    - set default value for Role field to 'User' and set it as hidden. [![](../assets/registration_regpage.png)](../assets/registration_regpage.png)
-3. A Variable with _source_ as the User table is created which will perform the insert into the database automatically. [![](../assets/registration_var_source.png)](../assets/registration_var_source.png)
+    - set default value for Role field to 'User' and set it as hidden. [![](/learn/assets/registration_regpage.png)](/learn/assets/registration_regpage.png)
+3. A Variable with _source_ as the User table is created which will perform the insert into the database automatically. [![](/learn/assets/registration_var_source.png)](/learn/assets/registration_var_source.png)
 4. In case of any processing that needs to be done before insertion, it can be done from the Form on Before Service Call event. You can add any other validation checks here. For example, in this script we are ensuring the the _password_ entries match. The appropriate message is loaded into the _Notification Action_ and is invoked. NOTE: We have already created a the Notification Action needs to be created.
     
         Partial.UserDetailsLiveForm1Beforeservicecall = function($event, $operation, $data, options) {
@@ -29,15 +29,15 @@ id: ""
             }
         };
     
-    [![](../assets/registration_validation.png)](../assets/registration_validation.png)
-5. Enable [Security](http://[supsystic-show-popup id=111]) and set the _Security Provider_ to be the UserDB from step 1 [![](../assets/registration_security.png)](../assets/registration_security.png) Set the permissions level for _registration page_, and _userdb_ to _permit all_. This is essential since we want the new users to be able to access to the registration page and add their details to the database. [![](../assets/registration_security_permission1.png)](../assets/registration_security_permission1.png) [![](../assets/registration_security_permission2.png)](../assets/registration_security_permission2.png)
+    [![](/learn/assets/registration_validation.png)](/learn/assets/registration_validation.png)
+5. Enable [Security](http://[supsystic-show-popup id=111]) and set the _Security Provider_ to be the UserDB from step 1 [![](/learn/assets/registration_security.png)](/learn/assets/registration_security.png) Set the permissions level for _registration page_, and _userdb_ to _permit all_. This is essential since we want the new users to be able to access to the registration page and add their details to the database. [![](/learn/assets/registration_security_permission1.png)](/learn/assets/registration_security_permission1.png) [![](/learn/assets/registration_security_permission2.png)](/learn/assets/registration_security_permission2.png)
 6. Redesign login page:
     - Open the Login page by selecting it from the **Pages** Resources
-    - Add a _pagedialog_ widget, with content as the registration partial page. [![](../assets/registration_dialog.png)](../assets/registration_dialog.png)
+    - Add a _pagedialog_ widget, with content as the registration partial page. [![](/learn/assets/registration_dialog.png)](/learn/assets/registration_dialog.png)
     - Go back to the _login page, (_select the Page tab from the bottom)
-    - Add **New User button**, _onClick_ event should open the registration page dialog. [![](../assets/registration_login_button.png)](../assets/registration_login_button.png)
-7. Now when you run the application, you see the **New User** button on the _login_ page. [![registration_run_login](../assets/registration_run_login.png)](../assets/registration_run_login.png)
-8. Clicking on it will take you to the _New Registration_ page. [![](../assets/registration_run_reg.png)](../assets/registration_run_reg.png)
+    - Add **New User button**, _onClick_ event should open the registration page dialog. [![](/learn/assets/registration_login_button.png)](/learn/assets/registration_login_button.png)
+7. Now when you run the application, you see the **New User** button on the _login_ page. [![registration_run_login](/learn/assets/registration_run_login.png)](/learn/assets/registration_run_login.png)
+8. Clicking on it will take you to the _New Registration_ page. [![](/learn/assets/registration_run_reg.png)](/learn/assets/registration_run_reg.png)
 9. Clicking on the **Register** button without entering the _user name_ or with _passwords_ not matching in the two fields, will display the _error message_.
 10. Entering all required data and clicking **Save **button, displays the _success message_.
 11. Now you can **login** with the new credentials.
@@ -78,7 +78,7 @@ NOTE: This method is useful for enforcing two-way encryption, i.e. in addition t
     
         }
     
-3. [Create a variable](http://[supsystic-show-popup id=105]) to invoke the Java Service created above [![](../assets/registration_javaservice_var.png)](../assets/registration_javaservice_var.png) and set the input data to the password widget of the registration page. [![](../assets/registration_javaservice_data.png)](../assets/registration_javaservice_data.png)
+3. [Create a variable](http://[supsystic-show-popup id=105]) to invoke the Java Service created above [![](/learn/assets/registration_javaservice_var.png)](/learn/assets/registration_javaservice_var.png) and set the input data to the password widget of the registration page. [![](/learn/assets/registration_javaservice_data.png)](/learn/assets/registration_javaservice_data.png)
 4. The Password field needs to be replaced with the encrypted one returned from the above Java service. For this, we will be using the _on Before Service Call_ event of the Live Form, we are invoking the Java service variable and setting the password field to the value returned from the Java Service.
     
         Partial.UserDetailsLiveForm1Beforeservicecall = function($event, $operation, $data, options) {
@@ -97,11 +97,11 @@ NOTE: This method is useful for enforcing two-way encryption, i.e. in addition t
     
 5. Ensure that in the **Security** dialog box, the Java Service created has _PermitAll_ permission level.
 6. On your _loginpage_
-    1. create a variable for the _Java Service_ created, [![](../assets/registration_javaservice_login.png)](../assets/registration_javaservice_login.png)
-    2. bind the _input data_ to the _password_ widget on the login page, [![](../assets/registration_javaservice_login_bind.png)](../assets/registration_javaservice_login_bind.png)
-    3. Next, set the _LoginAction_ data to the value returned by the above service variable. [![](../assets/registration_javaservice_loginvar.png)](../assets/registration_javaservice_loginvar.png)
-    4. set the _onClick_ event of the **Sign In** to _loginAction_. This will ensure that when any user logs in, the password is encrypted before checking it against the database by the login variable. [![](../assets/registration_javaservice_loginbutton.png)](../assets/registration_javaservice_loginbutton.png)
-7. Your application will work as before. The only change would be the values stored in the database, now the password field will be encrypted. [![registration_javaservice_db](../assets/registration_javaservice_db.png)](../assets/registration_javaservice_db.png)
+    1. create a variable for the _Java Service_ created, [![](/learn/assets/registration_javaservice_login.png)](/learn/assets/registration_javaservice_login.png)
+    2. bind the _input data_ to the _password_ widget on the login page, [![](/learn/assets/registration_javaservice_login_bind.png)](/learn/assets/registration_javaservice_login_bind.png)
+    3. Next, set the _LoginAction_ data to the value returned by the above service variable. [![](/learn/assets/registration_javaservice_loginvar.png)](/learn/assets/registration_javaservice_loginvar.png)
+    4. set the _onClick_ event of the **Sign In** to _loginAction_. This will ensure that when any user logs in, the password is encrypted before checking it against the database by the login variable. [![](/learn/assets/registration_javaservice_loginbutton.png)](/learn/assets/registration_javaservice_loginbutton.png)
+7. Your application will work as before. The only change would be the values stored in the database, now the password field will be encrypted. [![registration_javaservice_db](/learn/assets/registration_javaservice_db.png)](/learn/assets/registration_javaservice_db.png)
 
 Contents
 

@@ -10,7 +10,7 @@ The **Live Form** widget has built-in functionality for performing **CRUD operat
 3. Select the **fields** to be available for the user to interact with. All the fields from the selected data source will be presented for selection.
 4. Form **actions** - Cancel and Save are provided by default with every Live Form. No need to code these functionalities .
 
-Drag and drop the **Live Form** widget on to the page. [![lf_sel](./assets/lf_sel.png)](./assets/lf_sel.png)
+Drag and drop the **Live Form** widget on to the page. [![lf_sel](/learn/assets/lf_sel.png)](/learn/assets/lf_sel.png)
 
 #### STEP 1 – SELECT DATA
 
@@ -42,7 +42,7 @@ There can be different scenarios to deal with when configuring your Live Form W
     3. You can **select data node** to be the entire widget or the selecteditem node in case of another Data Table or List or Cards or result from a Live Filter
     4. As you are not using a Variable the Data Configuration options will not be available.
 
-[![lf_data](./assets/lf_data.png)](./assets/lf_data.png)
+[![lf_data](/learn/assets/lf_data.png)](/learn/assets/lf_data.png)
 
 ## Layout and Alignment Configuration
 
@@ -50,7 +50,7 @@ There can be different scenarios to deal with when configuring your Live Form W
 - You can also set the **Mode** as _READ ONLY_ or _EDITABLE_. Read only will be used for display purposes alone, while with a Editable form, user will be allowed to enter or modify values.
 - You can set the _Alignment, Position and Size_ of the **Caption** for the Form.
 
-[![lf_layout](./assets/lf_layout.png)](./assets/lf_layout.png)
+[![lf_layout](/learn/assets/lf_layout.png)](/learn/assets/lf_layout.png)
 
 ## Step 3: Field Configuration
 
@@ -58,4 +58,4 @@ There can be different scenarios to deal with when configuring your Live Form W
 - the **display widget** to represent the selected field. The widgets applicable to the field based upon the field data type, are available for selection from the drop-down box.
 - In case of a multi-column layout you can choose the fields to be displayed in the respective columns. You can use the up and down arrows to arrange the fields.
 
-[![lf_field](./assets/lf_field.png)](./assets/lf_field.png)
+[![lf_field](/learn/assets/lf_field.png)](/learn/assets/lf_field.png)

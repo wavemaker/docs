@@ -14,7 +14,7 @@ Conditional Class property can be set for the following Widgets:
 - Panel, and
 - Tile.
 
-You can access this property from the Styles tab of the Properties panel [![](../assets/cond_class.png)](../assets/cond_class.png)The expression can be of three ways:
+You can access this property from the Styles tab of the Properties panel [![](/learn/assets/cond_class.png)](/learn/assets/cond_class.png)The expression can be of three ways:
 
 1. **Variable/Widget**: it can be bound to any outbound property of the Variable/Widget or a simple JavaScript expression involving the Variable/Widget.
 2. **Array of expressions** as `[Variables.variablename.dataSet.datavalue, 'bg-info']`. In such cases all the classes that each array value evaluates to will be added to the widget.

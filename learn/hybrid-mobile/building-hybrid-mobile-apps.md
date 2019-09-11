@@ -7,11 +7,11 @@ id: "building-hybrid-mobile-apps"
 
 WaveMaker Hybrid Mobile applications are based on Cordova framework, with the Web App built on the open standards-based stack using Angular, Bootstrap & HTML.
 
-[![](../assets/Hybrid_App_Architecture.png)](../assets/Hybrid_App_Architecture.png)
+[![](/learn/assets/Hybrid_App_Architecture.png)](/learn/assets/Hybrid_App_Architecture.png)
 
 WaveMaker App components such as variables, widgets, layouts, prefabs etc. are bundled along with the App and a platform-specific installer using Cordova is created for running the app on mobile. WaveMaker widget library and the runtime component required for backend services integration are bundled as well.
 
-[![](../assets/Hybrid_App_Deployment_Architecture.png)](../assets/Hybrid_App_Deployment_Architecture.png)
+[![](/learn/assets/Hybrid_App_Deployment_Architecture.png)](/learn/assets/Hybrid_App_Deployment_Architecture.png)
 
 The mobile front-end is developed just like the way Pages are created in Web applications by making use of layouts and Variables for services integration. REST APIs are used for integration with backend services such as Database, Web Services or Java Services. Front end components are packaged into an installer and the backend services developed using WaveMaker should be deployed to any standards-based web server.
 
@@ -24,7 +24,7 @@ Mobile App Development involves the following four layers:
 3. The **Native Support** enhances the app functionality by enabling native look and feel, access to device-specific features, offline data support, and responsiveness
 4. **Installer** helps build platform-specific installers for deployment
 
-[![](../assets/Hybrid_App_Design.png)](../assets/Hybrid_App_Design.png)
+[![](/learn/assets/Hybrid_App_Design.png)](/learn/assets/Hybrid_App_Design.png)
 
 ### Developing UI
 
@@ -42,13 +42,13 @@ Variables and Binding enable you to establish the connection between the widgets
 
 **Test Run** of the App, give you a preview of the app similar to a Responsive Web app. You will not be able to access any Device specific features that are included in the app. For that, you can use **WaveLens**. WaveLens is an app that helps you to quickly preview their mobile app. It is available on both app store and play store. [More on testing apps](/learn/hybrid-mobile/test-run/)
 
-[![](../assets/Hybrid_App_WaveLens.png)](../assets/Hybrid_App_WaveLens.png)
+[![](/learn/assets/Hybrid_App_WaveLens.png)](/learn/assets/Hybrid_App_WaveLens.png)
 
 # Creating Installer
 
 The **Build** process for a mobile application can be performed through Automated Build process where you can generate .apk (Android application package) or .ipa file (iOS App Store package). Another way is to download Cordova/PhoneGap compatible .zip files to build systems manually for Android/iOS platforms.
 
-[![](../assets/Hybrid_App_Installer.png)](../assets/Hybrid_App_Installer.png) WaveMaker supports you to build mobile applications in the following ways:
+[![](/learn/assets/Hybrid_App_Installer.png)](/learn/assets/Hybrid_App_Installer.png) WaveMaker supports you to build mobile applications in the following ways:
 
 - **[Build for Android](/learn/hybrid-mobile/mobile-build/#android-build)**: Through this build, you can generate APK files which can be signed and hosted on PlayStore.
 - **[Send to PhoneGap](/learn/hybrid-mobile/mobile-build/#send-to-phonegap)**: Through this build, it provides you a complete package of building both apk/ipa files for Android and iOS platforms.

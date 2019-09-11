@@ -9,7 +9,7 @@ The **Form** widget has built-in functionality for performing **POST & GET oper
 2. Select the display **layout** of the Live Form. You can choose from one-column, two-column or a three-column layout.
 3. Select the **fields** to be available for the user to interact with. All the fields from the selected data source will be presented for selection and assign the display widget for each.
 
-Drag and drop the **Form** widget on to the page. [![form_usage_dnd](./assets/form_usage_dnd.png)](./assets/form_usage_dnd.png)
+Drag and drop the **Form** widget on to the page. [![form_usage_dnd](/learn/assets/form_usage_dnd.png)](/learn/assets/form_usage_dnd.png)
 
 #### STEP 1 – SELECT DATA
 
@@ -34,18 +34,18 @@ There can be different scenarios to deal with when configuring your Form Widget
     4. Once you select the variables, it shows the dataset that it is bound to.
     5. As Data Configuration options are already set for this variable, you do not see those options in this scenario.
 
-[![form_usage_var](./assets/form_usage_var.png)](./assets/form_usage_var.png)
+[![form_usage_var](/learn/assets/form_usage_var.png)](/learn/assets/form_usage_var.png)
 
 ## Layout and Alignment Configuration
 
 - You can choose to have a _1-, 2- or 3-column layout_.
 - You can set the _Alignment, Position and Size_ of the **Caption** for the Form.
 
-[![form_usage_layout](./assets/form_usage_layout.png)](./assets/form_usage_layout.png)
+[![form_usage_layout](/learn/assets/form_usage_layout.png)](/learn/assets/form_usage_layout.png)
 
 ## Step 3: Field Configuration
 
 - the **View As** widget to represent the selected field. The widgets applicable to the field based upon the field data type, are available for selection from the drop-down box.
 - In case of a multi-column layout you can choose the fields to be displayed in the respective columns. You can use the up and down arrows to arrange the fields.
 
-[![form_usage_data](./assets/form_usage_data.png)](./assets/form_usage_data.png)
+[![form_usage_data](/learn/assets/form_usage_data.png)](/learn/assets/form_usage_data.png)

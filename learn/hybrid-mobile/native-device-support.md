@@ -11,7 +11,7 @@ By choosing the appropriate Device setting, you can see the UI effect at design
 
 Design ModePreview Mode
 
-The Mobile Themes give native look-n-feel on the same page based on the Platform (IOS, Android etc.). Most importantly themes adhere to design guidelines of the Platform. [![mobile_native_uilooknfeel](../assets/mobile_native_UIlooknfeel.png)](../assets/mobile_native_UIlooknfeel.png)
+The Mobile Themes give native look-n-feel on the same page based on the Platform (IOS, Android etc.). Most importantly themes adhere to design guidelines of the Platform. [![mobile_native_uilooknfeel](/learn/assets/mobile_native_UIlooknfeel.png)](/learn/assets/mobile_native_UIlooknfeel.png)
 
 The following widgets are rendered using the Native UI Controls:
 
@@ -22,7 +22,7 @@ The following widgets are rendered using the Native UI Controls:
 - Toggle
 - Alert or Message Display
 
-[![mobile_native_uicontrols](../assets/mobile_native_UIcontrols.png)](../assets/mobile_native_UIcontrols.png)
+[![mobile_native_uicontrols](/learn/assets/mobile_native_UIcontrols.png)](/learn/assets/mobile_native_UIcontrols.png)
 
 # Device Specific Widgets
 
@@ -37,7 +37,7 @@ The following widgets are rendered using the Native UI Controls:
 
 # Device Features & Variables
 
-Device Variables can be created to access various Device Features like contacts, geolocation etc.. [![](../assets/mobile_native_features.png)](../assets/mobile_native_features.png)
+Device Variables can be created to access various Device Features like contacts, geolocation etc.. [![](/learn/assets/mobile_native_features.png)](/learn/assets/mobile_native_features.png)
 
 1. From Main Menu, select Create -> Variables
 2. Select Device Variable
@@ -46,7 +46,7 @@ Device Variables can be created to access various Device Features like contacts,
 
 [Learn more about Device Variables](/learn/app-development/variables/device-variables/)
 
-[![](../assets/mobile_native_variables.png)](../assets/mobile_native_variables.png)
+[![](/learn/assets/mobile_native_variables.png)](/learn/assets/mobile_native_variables.png)
 
 B.1 Mobile Apps
 

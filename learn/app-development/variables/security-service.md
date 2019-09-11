@@ -14,8 +14,8 @@ A comprehensive list of these APIs can be found from the [API Designer](http://
 
 The **data source** for these Variables comes from a _Security Service APIs_.
 
-1. Select the Variable option from Variable Workspace Toolbar. [![](../../assets/var_sel.png)](../../assets/var_sel.png)
-2. Click New Variable from the Variable Dialog [![](../../assets/var_new.png?v=20)](../../assets/var_new.png?v=20)
+1. Select the Variable option from Variable Workspace Toolbar. [![](/learn/assets/var_sel.png)](/learn/assets/var_sel.png)
+2. Click New Variable from the Variable Dialog [![](/learn/assets/var_new.png?v=20)](/learn/assets/var_new.png?v=20)
 3. This will initiate Create Variable wizard with the following steps:
     1. Since we are creating a variable to access Security Service, select **Security ****Service **as the target action
     2. Select:

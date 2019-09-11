@@ -12,8 +12,8 @@ A Select widget can be used in various ways based on the source of data. Each ty
 
 1. Drag and drop a Select and Label widget onto the canvas.
 2. The simplest way to use the Select Widget is to enter the values in a comma-separated format for display in the Value property under the DATASET section. In this example, we have set the value to Travelling, Reading, Writing, Photography.
-3. You can set the Default Value. This is the value that is seen by the user when the app runs, it should be one of the options set in the value field above. In the above example, we have set it to Writing. [![](../assets/sel_list.png)](../assets/sel_list.png)
-4. The selection made by the user is displayed in a Label widget, by binding the select datavalue to it. [![](../assets/sel_list_res.png)](../assets/sel_list_res.png)
+3. You can set the Default Value. This is the value that is seen by the user when the app runs, it should be one of the options set in the value field above. In the above example, we have set it to Writing. [![](/learn/assets/sel_list.png)](/learn/assets/sel_list.png)
+4. The selection made by the user is displayed in a Label widget, by binding the select datavalue to it. [![](/learn/assets/sel_list_res.png)](/learn/assets/sel_list_res.png)
 5. Preview the app and see the selected item from the Select widget displayed in the label.
 
 [Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)

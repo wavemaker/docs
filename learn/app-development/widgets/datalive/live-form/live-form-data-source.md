@@ -22,13 +22,13 @@ Under the Data tab of a Variable you can:
 - Bind input fields with values for insert/delete/update
 - Bind Filter fields with values for read
 
-[![](../../../../assets/lf_scenario2.png)](../../../../assets/lf_scenario2.png)
+[![](/learn/assets/lf_scenario2.png)](/learn/assets/lf_scenario2.png)
 
 ### Widget Source
 
 Widgets can be a source of data in some cases. For example, you might want to display the results from a Live Filter or more details of a current item/selected row/item from a Data Table or List. Widget option will allow you to achieve this. Selecting Widget as the data source will display the various options available. Widget binding will allow you to show 1-many relationships, for example- Employees of a selected Department list item.
 
-[![](../../../../assets/lf_data.png)](../../../../assets/lf_data.png)
+[![](/learn/assets/lf_data.png)](/learn/assets/lf_data.png)
 
 < Overview
 

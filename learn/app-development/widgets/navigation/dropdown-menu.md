@@ -19,7 +19,7 @@ Dropdown Menu can be used as:
 
 The **Menu Layout** - _horizontal_ or _vertical_ and **Menu Position** can be set as per the app requirements
 
-[![](../../../assets/menu_run2.png)](../../../assets/menu_run2.png)
+[![](/learn/assets/menu_run2.png)](/learn/assets/menu_run2.png)
 
 # Properties
 

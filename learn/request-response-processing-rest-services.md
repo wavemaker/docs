@@ -15,7 +15,7 @@ This document will go through the steps in adding Request-Response processing fo
 
 **HttpResponseProcessor:** This is used to process the response sent by the server before sending it to the client. Processing of response includes adding/removing/modifying response headers or modifying the response body.
 
-Following is the Request life cycle for a REST Service in a WaveMaker app: [![](./assets/REST-request-response.png)](./assets/REST-request-response.png)The following request and response processors are provided, by default, for every REST service integrated into WaveMaker Apps.
+Following is the Request life cycle for a REST Service in a WaveMaker app: [![](/learn/assets/REST-request-response.png)](/learn/assets/REST-request-response.png)The following request and response processors are provided, by default, for every REST service integrated into WaveMaker Apps.
 
 ## PassDefaultHeadersRequestProcessor
 

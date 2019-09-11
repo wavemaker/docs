@@ -16,9 +16,9 @@ The testing was done with  ADFS 3.0 in Windows Server® 2012 R2.
 1. You should have already installed AD CS - Certificate Service, AD DS - Domain Service, AD FS - Federated Service on Active Directory. 
 2. You have the Metadata URL for the WaveMaker App: Steps to obtain the Metadata URL:
     1. You should have already created an app using WaveMaker integrated with SAML as security provider ([see here for more](/learn/app-development/app-security/saml-integration/#integration)).
-    2. Configure ADFS Federation Metadata details in WaveMaker App. You can either use the URL or upload file. [![](../assets/adfs_wm_meta1.png?v=20)](../assets/adfs_wm_meta1.png?v=20)
-    3. From Service Provider Configuration, generate Keystore. [![](../assets/adfs_wm_meta2.png)](../assets/adfs_wm_meta2.png)
-    4. Preview the app and open the Security dialog again. Note the Metadata URL from the WaveMaker App: [![](../assets/adfs_url.png)](../assets/adfs_url.png)
+    2. Configure ADFS Federation Metadata details in WaveMaker App. You can either use the URL or upload file. [![](/learn/assets/adfs_wm_meta1.png?v=20)](/learn/assets/adfs_wm_meta1.png?v=20)
+    3. From Service Provider Configuration, generate Keystore. [![](/learn/assets/adfs_wm_meta2.png)](/learn/assets/adfs_wm_meta2.png)
+    4. Preview the app and open the Security dialog again. Note the Metadata URL from the WaveMaker App: [![](/learn/assets/adfs_url.png)](/learn/assets/adfs_url.png)
 
 Due to US export limitations, Java JDK comes with a limited set of cryptographic capabilities. Usage of the SAML Extension might require an installation of the Unlimited Strength Jurisdiction Policy Files which removes these limitations.
 
@@ -28,15 +28,15 @@ Due to US export limitations, Java JDK comes with a limited set of cryptographic
 
 1. Launch Active Directory
 2. Select AD FS from Server Manager AD FS
-3. From Tools select AD FS Management [![adfs_1](../assets/adfs_1.png)](../assets/adfs_1.png)
-4. In AD FS 2.0 Management Console select "Add Relying Party Trust" [![adfs_2](../assets/adfs_2.png)](../assets/adfs_2.png) [![adfs_3](../assets/adfs_3.png)](../assets/adfs_3.png)
-5. Select "Import data about the relying party from a file" [![adfs_4](../assets/adfs_4.png)](../assets/adfs_4.png)
-6. Select the metadata.xml file from the WaveMaker app as mentioned earlier in the prerequisites section (ignore any warning messages). [![adfs_5](../assets/adfs_5.png)](../assets/adfs_5.png) [![adfs_6](../assets/adfs_6.png)](../assets/adfs_6.png)
-7. On the "Ready to Add Trust" make sure that tab endpoints contain multiple endpoint values. If not, verify that your metadata was generated with HTTPS protocol URLs. [![adfs_7](../assets/adfs_7.png)](../assets/adfs_7.png) [![adfs_8](../assets/adfs_8.png)](../assets/adfs_8.png)
-8. Leave "Open the Edit Claim Rules dialog" checkbox checked and finish the wizard. [![adfs_9](../assets/adfs_9.png)](../assets/adfs_9.png)
-9. Select "Add Rule", choose "Send LDAP Attributes as Claims" and press Next [![adfs_10](../assets/adfs_10.png)](../assets/adfs_10.png)
-10. Add NameID as "Claim rule name", choose "Active Directory" as Attribute store, choose "SAM-Account-Name" as LDAP Attribute and "Name ID" as "Outgoing claim type", finish the wizard and confirm the claim rules window, in ADFS 3.0 you might need to configure the Name ID as a Pass Through claim - As we are using Spring SAML Security it expects the Name ID Parameter in the Spring SAML Response. [![adfs_11](../assets/adfs_11.png)](../assets/adfs_11.png)
-11. Open the provider by double-clicking it, select tab Advanced and change "Secure hash algorithm" to SHA-1 [![adfs_12](../assets/adfs_12.png)](../assets/adfs_12.png)
+3. From Tools select AD FS Management [![adfs_1](/learn/assets/adfs_1.png)](/learn/assets/adfs_1.png)
+4. In AD FS 2.0 Management Console select "Add Relying Party Trust" [![adfs_2](/learn/assets/adfs_2.png)](/learn/assets/adfs_2.png) [![adfs_3](/learn/assets/adfs_3.png)](/learn/assets/adfs_3.png)
+5. Select "Import data about the relying party from a file" [![adfs_4](/learn/assets/adfs_4.png)](/learn/assets/adfs_4.png)
+6. Select the metadata.xml file from the WaveMaker app as mentioned earlier in the prerequisites section (ignore any warning messages). [![adfs_5](/learn/assets/adfs_5.png)](/learn/assets/adfs_5.png) [![adfs_6](/learn/assets/adfs_6.png)](/learn/assets/adfs_6.png)
+7. On the "Ready to Add Trust" make sure that tab endpoints contain multiple endpoint values. If not, verify that your metadata was generated with HTTPS protocol URLs. [![adfs_7](/learn/assets/adfs_7.png)](/learn/assets/adfs_7.png) [![adfs_8](/learn/assets/adfs_8.png)](/learn/assets/adfs_8.png)
+8. Leave "Open the Edit Claim Rules dialog" checkbox checked and finish the wizard. [![adfs_9](/learn/assets/adfs_9.png)](/learn/assets/adfs_9.png)
+9. Select "Add Rule", choose "Send LDAP Attributes as Claims" and press Next [![adfs_10](/learn/assets/adfs_10.png)](/learn/assets/adfs_10.png)
+10. Add NameID as "Claim rule name", choose "Active Directory" as Attribute store, choose "SAM-Account-Name" as LDAP Attribute and "Name ID" as "Outgoing claim type", finish the wizard and confirm the claim rules window, in ADFS 3.0 you might need to configure the Name ID as a Pass Through claim - As we are using Spring SAML Security it expects the Name ID Parameter in the Spring SAML Response. [![adfs_11](/learn/assets/adfs_11.png)](/learn/assets/adfs_11.png)
+11. Open the provider by double-clicking it, select tab Advanced and change "Secure hash algorithm" to SHA-1 [![adfs_12](/learn/assets/adfs_12.png)](/learn/assets/adfs_12.png)
 
 ## Preview
 
@@ -46,7 +46,7 @@ Due to US export limitations, Java JDK comes with a limited set of cryptographic
 
 Before deployment, ensure that you configure the deployment profile with the ADFS Server details.
 
-1. Get the deployment URL from [Profile Configuration dialog](http://[supsystic-show-popup id=109]) [![](../assets/adfs_wm_deploy.png)](../assets/adfs_wm_deploy.png)
+1. Get the deployment URL from [Profile Configuration dialog](http://[supsystic-show-popup id=109]) [![](/learn/assets/adfs_wm_deploy.png)](/learn/assets/adfs_wm_deploy.png)
 2. Configure Metadata in ADFS Server with this URL
 3. Repeat the above steps (preview) with the new ADFS metadata details and deploy the app.
 

@@ -7,9 +7,9 @@ In WaveMaker many widgets like Panel, Button etc. have a way to display an icon.
 
 In case you want to add additional icons, following steps will help you achieve the same (here we are adding  foundation icons):
 
-1. Import all the files in the library into the resources folder. [![](../assets/icon_add1.png)](../assets/icon_add1.png)
-2. Navigate to the index.html and include the imported CSS file <link rel="stylesheet" href="resources/icons/foundation-icons.css" type="text/CSS" /> [![](../assets/icon_add2.png)](../assets/icon_add2.png) **Note**: you can also include the CDN URL directly without importing the files (step 1) as below: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" type="text/CSS" />
-3. Go to the page and drag and drop the icon widget and set the add the class name for the icon class property. [![](../assets/icon_add3.png)](../assets/icon_add3.png)
+1. Import all the files in the library into the resources folder. [![](/learn/assets/icon_add1.png)](/learn/assets/icon_add1.png)
+2. Navigate to the index.html and include the imported CSS file <link rel="stylesheet" href="resources/icons/foundation-icons.css" type="text/CSS" /> [![](/learn/assets/icon_add2.png)](/learn/assets/icon_add2.png) **Note**: you can also include the CDN URL directly without importing the files (step 1) as below: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" type="text/CSS" />
+3. Go to the page and drag and drop the icon widget and set the add the class name for the icon class property. [![](/learn/assets/icon_add3.png)](/learn/assets/icon_add3.png)
 
 [Design UI Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 

@@ -15,7 +15,7 @@ A WaveMaker application can include a login page that requires users to sign on 
 - Custom Java Service
 - WaveMaker Studio also provides a simple **Demo** data source. You can use this data source to set up and test your login page during development. We do not recommend the Demo data source for production applications.
 
-[![sec_prov](../assets/sec_prov.png)](../assets/sec_prov.png)
+[![sec_prov](/learn/assets/sec_prov.png)](/learn/assets/sec_prov.png)
 
 # Selecting Security Providers
 
@@ -61,7 +61,7 @@ To set up authentication using an LDAP data source, choose _LDAP_ as the **Secur
 
 When you choose _LDAP _as the **Security Provider**, you can perform the following configurations:
 
-- _LDAP URL_: This field specifies the host name and port number of the LDAP server. This is the root node of which security will be able to use - ldap://localhost:389/dc=wavemaker,dc=com. For deployment profile, you can specify _multiple LDAP server URLs_, if required, by providing the multiple LDAP URLs as space-separated values, from the security tab of the [Profile Configuration](http://[supsystic-show-popup id=109]). [![](../assets/sec_user_ldap_url.png)](../assets/sec_user_ldap_url.png)
+- _LDAP URL_: This field specifies the host name and port number of the LDAP server. This is the root node of which security will be able to use - ldap://localhost:389/dc=wavemaker,dc=com. For deployment profile, you can specify _multiple LDAP server URLs_, if required, by providing the multiple LDAP URLs as space-separated values, from the security tab of the [Profile Configuration](http://[supsystic-show-popup id=109]). [![](/learn/assets/sec_user_ldap_url.png)](/learn/assets/sec_user_ldap_url.png)
 - _Manager DN_: Distinguished Name for admin access, this is an optional field
 - _Manager Password_: Password in case admin access is mentioned above, this is an optional field
 - _User Search Pattern:_ Filter used to find the user in the directory, relative to the root specified above. The only valid variable is {0} which is replaced with the user's login name. For example: "cn={0},ou=people"
@@ -72,7 +72,7 @@ Once you have configured the security provider, click the **Test Connection** bu
 
 ##### Role Mapping
 
-Role Mapping for logged in users can come from the configured LDAP security provider or an imported Database. [![sec_user_ldap_role](../assets/sec_user_ldap_role.png)](../assets/sec_user_ldap_role.png)
+Role Mapping for logged in users can come from the configured LDAP security provider or an imported Database. [![sec_user_ldap_role](/learn/assets/sec_user_ldap_role.png)](/learn/assets/sec_user_ldap_role.png)
 
 - _Search User Role_: Check this box to select the user role provider - Database or LDAP.
     - If you select _**LDAP** _then both authentication and authorization (roles) will be retrieved from the LDAP security provider. You need to provide:
@@ -102,7 +102,7 @@ Once you have configured the security provider, click the **Test Connection** bu
 
 ##### Role Mapping
 
-Role Mapping for logged in users can come from the configured Active Directory security provider or an imported Database. [![sec_user_ad_role](../assets/sec_user_ad_role.png)](../assets/sec_user_ad_role.png)
+Role Mapping for logged in users can come from the configured Active Directory security provider or an imported Database. [![sec_user_ad_role](/learn/assets/sec_user_ad_role.png)](/learn/assets/sec_user_ad_role.png)
 
 - _Search User Role_: Check this box to select the user role provider - Database or AD.
     - If you select _**AD** _then both authentication and authorization (roles) will be retrieved from the AD security provider. You need to configure the _Group Role Attribute._
@@ -126,7 +126,7 @@ When you choose _CAS _as the **Security Provider**, you can perform the follo
 
 ##### Role Mapping
 
-Role Mapping for logged in users can come from the configured CAS security provider or an imported Database. [![sec_user_cas_role](../assets/sec_user_cas_role.png)](../assets/sec_user_cas_role.png)
+Role Mapping for logged in users can come from the configured CAS security provider or an imported Database. [![sec_user_cas_role](/learn/assets/sec_user_cas_role.png)](/learn/assets/sec_user_cas_role.png)
 
 - _Select User Role Provider_: Choose the user role provider. There are two role providers - CAS and Database.
     - The user can configure **CAS** role attribute and the same role can be configured in the WaveMaker application.  The _Role Attribute Name_ needs to be configured.
@@ -149,7 +149,7 @@ SAML Configuration in WaveMaker helps you configure the WaveMaker application wi
 
 **OpenID** is an open standard and decentralized authentication protocol. It allows you to use an existing account like Google, or Facebook, or Yahoo etc., to sign in to multiple websites, without needing to create new passwords.
 
-WaveMaker allows you to authenticate your apps with OpenID. Setting the Security Provider to OpenID will allow you to configure a Service Provider of your choice. [![](../assets/OpenID_config1.png)](../assets/OpenID_config1.png) This involves the following details:
+WaveMaker allows you to authenticate your apps with OpenID. Setting the Security Provider to OpenID will allow you to configure a Service Provider of your choice. [![](/learn/assets/OpenID_config1.png)](/learn/assets/OpenID_config1.png) This involves the following details:
 
 1. **Identity Provider Information**:
     - **Provider ID** is the Service Provider, it can be Google, Facebook or anything.
@@ -172,11 +172,11 @@ WaveMaker allows you to authenticate your apps with OpenID. Setting the Security
 
 To set up authentication using Java Services, choose _Custom_ as the **Security Provider**.
 
-[![sec_user_custom](../assets/sec_user_custom.png)](../assets/sec_user_custom.png)
+[![sec_user_custom](/learn/assets/sec_user_custom.png)](/learn/assets/sec_user_custom.png)
 
 When you choose _Custom _as the **Security Provider**, you need to specify the _fully qualified Java Class_ name, if this does not exist a sample implementation will be generated at the location as shown below.
 
-[![](../assets/sec_user_custom_java.png)](../assets/sec_user_custom_java.png)
+[![](/learn/assets/sec_user_custom_java.png)](/learn/assets/sec_user_custom_java.png)
 
 This Java Class should:
 
