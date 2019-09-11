@@ -1,6 +1,7 @@
 ---
 title: "Working with Database Schema"
 id: ""
+sidebar_label: "Working with DB Schema"
 ---
 
 The **Database Designer** workspace allows you to create tables, columns, and relationships.

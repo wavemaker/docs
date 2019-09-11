@@ -20,7 +20,8 @@
           "label": "WaveMaker Concepts",
           "ids": [
             "app-development/variables/variables",
-            "app-development/services/creating-backend-services"                    
+            "app-development/services/creating-backend-services",
+            "app-development/services/api-designer/api"                   
             ]       
         }
 
@@ -50,8 +51,7 @@
 
       "Databases": 
       [
-        "app-development/services/database-services/database-services",
-        "app-development/services/api-designer/database-service-apis",
+        "app-development/services/database-services/database-services",        
         {
           "type": "subcategory",
           "label": "Database Services",
@@ -74,10 +74,11 @@
 
         {
           "type": "subcategory",
-          "label": "Database Variables",
+          "label": "Database Variables & API",
           "ids": [            
             "app-development/variables/database-crud",
-            "app-development/variables/database-apis"         
+            "app-development/variables/database-apis",
+            "app-development/services/api-designer/database-service-apis"         
             ]
         }       
         
@@ -85,8 +86,7 @@
 
       "Web Services": 
       [   
-            "app-development/services/web-services/web-services",
-            "app-development/services/api-designer/web-service-apis",
+            "app-development/services/web-services/web-services",            
         {
           "type": "subcategory",
           "label": "Services",
@@ -94,27 +94,41 @@
                 "app-development/services/web-services/rest-services",
                 "app-development/services/web-services/oauth-2-0-rest-services",
                 "app-development/services/web-services/working-with-soap-services",              
-                "app-development/services/web-services/working-with-websockets",
-                "app-development/variables/web-service" ]       
-        }
+                "app-development/services/web-services/working-with-websockets"                 
+              ]       
+        },
+        {
+          "type": "subcategory",
+          "label": "Web Service Variables & API",
+          "ids": [ 
+            "app-development/variables/web-service",
+            "app-development/services/api-designer/web-service-apis"         
+            ]
+        }  
 
       ],
 
       "Java Services": 
       [   
-          "app-development/services/java-services/java-service",
-          "app-development/services/api-designer/java-service-apis",
-
+          "app-development/services/java-services/java-service",     
           {
             "type": "subcategory",
             "label": "Java Services",
             "ids": [
                     "app-development/services/java-services/java-integration-services",
                     "app-development/services/java-services/variables",
-                    "app-development/services/java-services/generated-rest-apis-api-designer",
-                    "app-development/variables/java-services"
+                    "app-development/services/java-services/generated-rest-apis-api-designer"        
                     ]           
           },
+          {
+            "type": "subcategory",
+            "label": "Java Services Variables & API",
+            "ids": [ 
+              "app-development/variables/java-services",
+              "app-development/services/api-designer/java-service-apis"         
+              ]
+          },  
+
           {
             "type": "subcategory",
             "label": "Manifest files",
@@ -126,20 +140,19 @@
 
       "Security": 
       [
-        "app-development/app-security/app-security",
-        "app-development/services/api-designer/security-service-apis",
+        "app-development/app-security/app-security",        
         {
           "type": "subcategory",
-          "label": "Security Variable",
+          "label": "Security Variable and API",
           "ids": [
-        "app-development/variables/security-service"]
+        "app-development/variables/security-service",
+        "app-development/services/api-designer/security-service-apis"]
         }
       ],
 
       "Integration": 
       [
-        "app-development/variables/data-integration", 
-        "app-development/services/api-designer/api",   
+        "app-development/variables/data-integration",   
         {
           "type": "subcategory",
           "label": "Other Variables",
@@ -149,7 +162,6 @@
             "hybrid-mobile/device-variables"]           
         }, 
 
-        
         "app-development/variables/variable-binding",        
         {
           "type": "subcategory",

@@ -1,6 +1,7 @@
 ---
 title: "Invoking Queries/Procedures from Java Services"
 id: ""
+sidebar_label: "Queries & Procedures - Java Services"
 ---
 
 As mentioned in previous documents, there will be a service method generated for each query and procedure. See here for [query service methods](/learn/app-development/services/database-services/working-with-queries/#query-architecture) and [procedure service methods](/learn/app-development/services/database-services/working-stored-procedures/#procedure-architecture). We can use these methods to invoke those in java services.

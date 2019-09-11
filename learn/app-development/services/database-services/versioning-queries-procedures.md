@@ -1,6 +1,7 @@
 ---
 title: "Versioning of Queries and Procedures"
 id: ""
+sidebar_label: "Version Queries & Procedures"
 ---
 ---
 

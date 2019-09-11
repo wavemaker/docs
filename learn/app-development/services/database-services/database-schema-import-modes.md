@@ -1,6 +1,7 @@
 ---
 title: "DataBase Schema Import Modes"
 id: ""
+sidebar_label: "DataBase Schema Modes"
 ---
 
 ## Introduction
