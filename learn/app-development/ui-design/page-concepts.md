@@ -1,10 +1,23 @@
 ---
-title: "Page Concepts"
+title: "Introduction to Pages"
 id: "page-concepts"
 ---
----
+Introduction to Pages in WaveMaker low-code platform. 
 
-WaveMaker apps are a collection of pages. This document talks about
+---
+An application is a collection of pages, with each page composed of different UI elements and Widgets. These UI elements enable user interaction with the app and can get data from backend services. Navigation and interaction rules can be setup across pages.
+
+:::tip
+To get started with designing pages, start from the [Design Overview](/learn/app-development/ui-design/design-overview) section.
+:::
+
+ You can navigate to the pages section as shown in the image below. 
+
+![Pages introduction in WaveMaker](../../assets/pages_introduction.png)  
+
+
+
+In this document, you will learn about the following: 
 
 - how WaveMaker apps are [single-page applications](#single-page-apps)
 - what a typical [page life cycle](#page-lifecycle) is within the app.
@@ -38,46 +51,8 @@ When the request for a page is made, it goes through the following life-cycle:
 
 **Page without any partials or Prefabs** [![page-life-cycle](/learn/assets/Page-Life-Cycle.png)](/learn/assets/Page-Life-Cycle.png) **Page with partials and Prefabs** [![page-life-cycle-full](/learn/assets/Page-Life-Cycle-full.png)](/learn/assets/Page-Life-Cycle-full.png)
 
-We have seen the page life cycle within a WaveMaker app. Work with pages by [page creation](/learn/app-development/ui-design/page-creation/), [page layouts](/learn/app-development/ui-design/page-concepts/page-layouts/), and [page templates](/learn/app-development/ui-design/page-concepts/page-templates/).
+## See More
+[Creating a page](/learn/app-development/ui-design/page-creation/)  
+[Page layouts](/learn/app-development/ui-design/page-concepts/page-layouts/)  
+[Templates](/learn/app-development/ui-design/page-concepts/page-templates/)  
 
-< Design Overview
-
-Page Creation >
-
-2\. Design UI
-
-- 2.1 Overview
-    - [i. App UI Design](/learn/app-development/ui-design/design-overview/#app-ui-design)
-    - [ii. Responsive Design](/learn/app-development/ui-design/design-overview/#responsive-design)
-    - [iii. UI Development](/learn/app-development/ui-design/design-overview/#ui-development)
-- [2.2 Page Concepts](#)
-    - [i. Single Page Apps](#)
-    - [ii. Page Life Cycle](#page-lifecycle)
-    - [iii. Page Creation](/learn/app-development/ui-design/page-creation/)
-    - [iv. Parameter Passing](/learn/app-development/ui-design/page-creation/#page-parameters)
-    - [v. Partial Pages](/learn/app-development/ui-design/page-concepts/partial-pages/)
-    - vi. Page Basics
-        - [○ Page Layouts](/learn/app-development/ui-design/page-concepts/page-layouts/#page-layouts)
-        - [○ Page Navigation](/learn/app-development/ui-design/page-concepts/page-layouts/#page-navigation)
-        - [○ Events](/learn/app-development/ui-design/page-concepts/page-layouts/#events)
-            - [● Event Categorization](/learn/app-development/ui-design/page-concepts/page-layouts/#event-categorization)
-            - [● Multiple Event Handling](/learn/app-development/ui-design/page-concepts/page-layouts/#multiple-events)
-    - [vii. Page Templates](/learn/app-development/ui-design/page-concepts/page-templates/)
-        - [○ Custom Page Templates](/learn/app-development/ui-design/page-concepts/page-templates/#creating-page-templates)
-    - [viii. Use Cases](/learn/app-development/ui-design/use-cases-ui-design/)
-- [2.3 Project Shell](/learn/app-development/ui-design/project-shells/)
-- 2.4 Page Artefacts
-    - [i. Overview](/learn/app-development/ui-design/page-artefacts/)
-    - [ii. Markup](/learn/app-development/ui-design/page-artefacts/#page-markup)
-    - [iii. Script](/learn/app-development/ui-design/page-artefacts/#page-script)
-    - [iv. Style](/learn/app-development/ui-design/page-artefacts/#page-style)
-- 2.5 Themes
-    - [i. Overview](/learn/app-development/ui-design/themes/)
-    - [ii. Applying Theme](/learn/app-development/ui-design/themes/#apply-theme)
-    - [iii. Importing Theme](/learn/app-development/ui-design/themes/#import-theme)
-    - [iv. Creating Themes](/learn/app-development/ui-design/themes/#create-theme)
-        - [○ Creating Web Theme](/learn/app-development/ui-design/themes/#create-theme-web)
-        - [○ Creating Web Theme using Bootswatch](/learn/app-development/ui-design/themes/#create-theme-bootswatch)
-        - [○ Creating Mobile Theme](/learn/app-development/ui-design/themes/#create-theme-mobile)
-    - [v. Building Theme](/learn/app-development/ui-design/themes/#build-theme)
-    - [vi. Testing Theme](/learn/app-development/ui-design/themes/#test-theme)

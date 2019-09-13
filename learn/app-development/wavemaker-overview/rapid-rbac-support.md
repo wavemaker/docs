@@ -20,7 +20,7 @@ When multiple developers across the team are collaborating on large development 
 - _Enterprise Admin_: This role presides over all the administrative functions related to projects, project membership, artefact approval, etc.
 - _Studio User_: User is the developer or the project administrator who works on the development projects and has access to Studio for app building. Product User when given access to a created project, or when added to an existing project can play one of the project roles assigned to. Project roles are specific to the app development life-cycle and are managed by the Project Admin.
 
-Product Role Policies:
+## Product Role Policies
 
 - Product Roles are pre-defined by the product and cannot be customized.
 - Super Admin can create or assign another user to become a Super Admin.
@@ -95,42 +95,7 @@ By default, only Project Admin can create projects and members added will be ass
 3. Search and open the Project for which the admin role has to be changed.
 4. EDN Admin can - Revoke Admin, Make Admin or delete the user. [![](/learn/assets/project_roles_revoke_lp.png)](/learn/assets/project_roles_revoke_lp.png)
 
-1\. WaveMaker Overview
-
-- 1.1 Platform Overview
-    - [i. Modern Web Apps](/learn/app-development/wavemaker-overview/platform-overview/#modern-web-apps)
-    - [ii. App Architecture](/learn/app-development/wavemaker-overview/platform-overview/#app-architecture)
-    - [iii. App Building Process](/learn/app-development/wavemaker-overview/platform-overview/#app-building-process)
-    - [iv. Technology Stack](/learn/app-development/wavemaker-overview/platform-overview/#technology-stack)
-    - [v. Material Design](/learn/app-development/wavemaker-overview/platform-overview/#material-design)
-    - [vi. Hybrid Mobile Apps](/learn/app-development/wavemaker-overview/platform-overview/#mobile-apps)
-- 1.2 Product walk-through
-    - [i. Getting Started](/learn/app-development/wavemaker-overview/product-walkthrough/#getting-started)
-    - [ii. Project Dashboard ](/learn/app-development/wavemaker-overview/product-walkthrough/#project-dashboard)
-    - [iii. Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#workspace)
-    - [iv.Project Canvas](/learn/app-development/wavemaker-overview/product-walkthrough/#canvas)
-    - [v. Project Settings](/learn/app-development/wavemaker-overview/product-walkthrough/#settings)
-    - [vi. Configuration Profiles](/learn/app-development/wavemaker-overview/product-walkthrough/#profiles)
-- [1.3 Supported Technologies](/learn/app-development/wavemaker-overview/supported-technologies/)
-- [1.4  Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites/)
-- [1.5 Rapid RBAC Support](#)
-    - [i. Product Roles](#product_roles)
-    - [ii. Project Roles](#project_roles)
-    - [iii. Implementation](#implementation)
-    - [iv. Role Creation and Assignment](#roles)
-        - [○ Studio and Project Permissions](#launchpad)
-        - [○ Project Resource Permissions](#studio)
-        - [○ Project Admin](#admin)
-    - [v. Permissions](#permissions)
-- 1.6 Artifacts Repository
-    - [i. Publishing Mechanism](/learn/app-development/wavemaker-overview/artifacts-repository/#publishing)
-    - [ii. Published Artifacts & Updates](/learn/app-development/wavemaker-overview/artifacts-repository/#published&updates)
-    - [iii. Artifact Management](/learn/app-development/wavemaker-overview/artifacts-repository/#management)
-- 1.7 WaveMaker Localization
-    - [i. Platform Localization](/learn/app-development/wavemaker-overview/localization/#platform_locale)
-    - [ii. Setting Language Preference](/learn/app-development/wavemaker-overview/localization/#setting)
-    - [iii. Adding Language Bundles](/learn/app-development/wavemaker-overview/localization/#adding)
-    - [iv. Build Platform](/learn/app-development/wavemaker-overview/localization/#build)
+---
 
 ## Permissions
 
@@ -138,61 +103,13 @@ As mentioned earlier, two default roles are set by the Platform. You can add rol
 
 | Category | Permissions |
 | --- | --- |
-| Pages | 
-- Create Pages
-- Edit Pages
-- Delete Pages
-- View Pages
-
- |
-| Database Services | 
-
-- Create/Import Database
-- Edit Database
-- Delete Database
-- View Database
-
- |
-| Database - Queries | 
-
-- Create Queries
-- Edit Queries
-- Delete Queries
-- View Queries
-
- |
-| Database - Procedures | 
-
-- Create Procedures
-- Edit Procedures
-- Delete Procedures
-- View Procedures
-
- |
-| Java Service | 
-
-- Create Java Service
-- Edit Java Service
-- Delete Java Service
-- View Java Service
-
- |
-| REST Service | 
-
-- Import REST Service
-- Edit REST Service
-- Delete REST Service
-- View REST Service
-
- |
-| SOAP Service | 
-
-- Import SOAP Service
-- Edit SOAP Service
-- Delete SOAP Service
-- View SOAP Service
-
- |
+| Pages |Create, Edit, Delete and View |
+| Database Services |   Create/Import      , Edit      , Delete    and View  |
+| Database - Queries |  Create Queries  , Edit Queries  , Delete Queries adn View Queries  |
+| Database - Procedures | - Create Procedures - Edit Procedures - Delete Procedures - View Procedures|
+| Java Service | - Create Java Service - Edit Java Service - Delete Java Service - View Java Service |
+| REST Service | - Import REST Service - Edit REST Service  - Delete REST Service - View REST Service|
+| SOAP Service | - Import SOAP Service - Edit SOAP Service - Delete SOAP Service - View SOAP Service |
 | Web Socket Service | 
 
 - Import Web Socket Service

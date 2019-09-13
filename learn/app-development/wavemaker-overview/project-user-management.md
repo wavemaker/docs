@@ -6,7 +6,7 @@ id: "project-user-management"
 Collaboration is allowed for WaveMaker project development. The owner of a project can add new members  (already registered with WaveMaker) to the project and assign roles to them. This document walks through the various roles and permissions allowed for the members of a project.
 
 :::note
-Enterprise version handles RBAC support differently,  [refer here](/learn/app-development/wavemaker-overview/rapid-rbac-support/) for more details.
+Enterprise version handles RBAC support differently. For more information, see [Rapid RBAC Support for Enterprise Version](/learn/app-development/wavemaker-overview/rapid-rbac-support/). 
 :::
 
 ## Member Roles

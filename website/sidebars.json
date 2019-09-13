@@ -14,11 +14,13 @@
         "app-development/wavemaker-overview/pre-requisites",
         "app-development/wavemaker-overview/artifacts-repository",
         "app-development/wavemaker-overview/localization",
+        "how-tos/localization-wavemaker-apps",
         "app-development/wavemaker-overview/project-user-management",
         {
           "type": "subcategory",
-          "label": "WaveMaker Concepts",
+          "label": "WM Concepts Overview",
           "ids": [
+            "app-development/ui-design/page-concepts",
             "app-development/variables/variables",
             "app-development/services/creating-backend-services",
             "app-development/services/api-designer/api"                   
@@ -34,7 +36,6 @@
           "type": "subcategory",
           "label": "Pages",
           "ids": [
-            "app-development/ui-design/page-concepts",
             "app-development/ui-design/page-creation",
             "app-development/ui-design/page-concepts/partial-pages",
             "app-development/ui-design/page-concepts/page-layouts",
@@ -51,25 +52,38 @@
 
       "Databases": 
       [
-        "app-development/services/database-services/database-services",        
+        "app-development/services/database-services/database-services",
+        "app-development/services/database-tools",        
         {
           "type": "subcategory",
-          "label": "Database Services",
+          "label": "Database Designing",
           "ids": [            
-            "app-development/services/database-tools",
+            
             "app-development/services/database-services/working-with-databases",            
             "app-development/services/database-services/data-modelling",
             "app-development/services/database-services/database-schema-import-modes",
             "app-development/services/database-services/working-database-schema",
-            "app-development/services/database-services/database-views",            
+            "app-development/services/database-services/database-views",
+            "app-development/services/database-services/temporal-support"  ]
+          },
+
+          {
+            "type": "subcategory",
+            "label": "Accessing Database",
+            "ids": [  
             "app-development/services/database-access",
+            "app-development/services/database-services/orm-artifacts"]
+          },
+          {
+            "type": "subcategory",
+            "label": "Queries and Procedures",
+            "ids": [ 
             "app-development/services/database-services/working-with-queries",
             "app-development/services/database-services/working-stored-procedures",
             "app-development/services/database-services/versioning-queries-procedures",
             "app-development/services/database-services/blob-support-queries-procedures",
-            "app-development/services/database-services/invoking-queriesprocedures-java-services",                
-            "app-development/services/database-services/temporal-support",
-            "app-development/services/database-services/orm-artifacts"]
+            "app-development/services/database-services/invoking-queriesprocedures-java-services"                          
+            ]
         },
 
         {
@@ -140,11 +154,21 @@
 
       "Security": 
       [
-        "app-development/app-security/app-security",        
+        "app-development/app-security/app-security",
+        "app-development/app-security/authentication",        
+        "app-development/app-security/authorization",
+        "app-development/app-security/access-levels-permissions",
+        "app-development/app-security/login-configuration",
+        "app-development/app-security/ssl-encryption",
+        "app-development/app-security/owasp",
+        "app-development/app-security/central-authentication-system",
+        "app-development/app-security/token-based-authentication",
+        "app-development/app-security/saml-integration",        
         {
           "type": "subcategory",
           "label": "Security Variable and API",
           "ids": [
+          "app-development/app-security/security-variables",
         "app-development/variables/security-service",
         "app-development/services/api-designer/security-service-apis"]
         }
@@ -177,16 +201,44 @@
         "app-development/variables/accessing-elements-via-javascript"
       ], 
       
-    "Dev-IT": 
-      [
-        "app-development/dev-integration/developer-tools"       
-      ],
+    "Developer": 
+    [
+    {
+      "type": "subcategory",
+      "label": "Developer Integration",
+      "ids": [
+        "app-development/dev-integration/developer-tools",
+        "app-development/dev-integration/import-export-update-apps",
+        "app-development/dev-integration/developer-collaboration",
+        "app-development/dev-integration/debugging",
+        "app-development/dev-integration/extending-application-using-ides"
+      ]
+    },
 
-    "Build & deploy": 
-      [
+    {
+      "type": "subcategory",
+      "label": "Build & Deployment",
+      "ids": [
         "app-development/deployment/one-click-deployment",
-        "how-tos/localization-wavemaker-apps"
-      ], 
+        "app-development/deployment/configuration-profiles", 
+        "app-development/deployment/release-management", 
+        "app-development/deployment/manage-deployed-apps",
+        "app-development/deployment/deployment-web-server"                   
+      ]
+    },
+    {
+        "type": "subcategory",
+        "label": "Configuration",
+        "ids": [  
+        "app-development/deployment/deployment-to-aws",
+        "app-development/deployment/deployment-to-azure",
+        "app-development/deployment/deployment-google-cloud",
+        "how-tos/wavemaker-application-deployment-tomcat",
+        "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
+        "how-tos/wavemaker-application-deployment-jboss",
+        "how-tos/wavemaker-application-deployment-weblogic-application-server" ]
+    }
+  ],
 
     "Mobile app": 
     [
