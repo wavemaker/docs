@@ -13,7 +13,7 @@ As the name suggests, operations include the CRUD operations on the database:
 - **insert/update** which can be used to insert data to a database, this would require the fields from the data tab bound either to static default values or from widgets capturing and processing the input from the user. **Note** any fields that are not bound will be set to NULL. If according to your use case user is prevented from updating a column value then you can uncheck the **Updatable** option for that column from the **Database Designer**. [See here for more](/learn/app-development/services/database-services/working-database-schema/#metadata-implementation).
 - **delete** which can be used to delete data from the database, the primary key value needs to be bound from the data tab.
 
-# Variable Creation
+## Variable Creation
 
 The **data source** for these Variables comes from a _Database_. There are two ways of creating variables:
 

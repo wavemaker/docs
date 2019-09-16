@@ -1,13 +1,20 @@
 ---
 title: "Configuring for Azure Deployment"
 id: ""
+sidebar_label: Azure
+---
+Learn how to deploy your app to Azure server. 
 ---
 
 WaveMaker allows you to deploy your app to your Azure cloud account for Live (and Stage for WME users) phase. [Know more about App Phases from here](/learn/app-development/deployment/release-management/).
 
 To deploy your app to Azure account, you need to configure the Live (Stage) phase.
 
-**NOTE**: This document covers the Live Phase configuration for your AWS account and is a part of the [Manage Deployed Apps](/learn/app-development/deployment/manage-deployed-apps/)**Prerequisites**:
+:::note
+This document covers the Live Phase configuration for your AWS account and is a part of the [Manage Deployed Apps](/learn/app-development/deployment/manage-deployed-apps/)
+:::
+
+## Prerequisites
 
 - You are expected to have an [Azure account](https://azure.microsoft.com/en-in/free/).
 - You must set up an Active Directory application and assign the required permissions to it. The permissions include access to _Microsoft.compute_, _Microsoft.network_ and _Microsoft.storage_. [See here to create AD app](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).

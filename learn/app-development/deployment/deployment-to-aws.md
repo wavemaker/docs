@@ -1,13 +1,19 @@
 ---
 title: "Configuring for AWS Deployment"
 id: ""
+sidebar_label: "AWS"
 ---
 
-WaveMaker allows you to deploy your app to your AWS cloud account for Live (and Stage for WME users) phase. [Know more about App Phases from here](/learn/app-development/deployment/release-management/).
+WaveMaker allows you to deploy your app to your AWS cloud account for Live (and Stage for WME users) phase. 
+For more information, see [Release Management](/learn/app-development/deployment/release-management/).
 
 To deploy your app to AWS account, you need to configure the Live (Stage) phase.
 
-**NOTE**: This document covers the Live Phase configuration for your AWS account and is a part of the [Manage Deployed Apps](/learn/app-development/deployment/manage-deployed-apps/)**Prerequisites**:
+:::note
+This document covers the Live Phase configuration for your AWS account and is a part of the [Manage Deployed Apps](/learn/app-development/deployment/manage-deployed-apps/).
+:::
+
+## Prerequisites
 
 - [AWS Account](https://aws.amazon.com/).
 - While setting up the AWS account care should be taken to ensure that the IAM key has the permissions as listed in the configuration dialog. [![](/learn/assets/deploy_aws_perms.png)](/learn/assets/deploy_aws_perms.png) **Steps in AWS Configuration**:

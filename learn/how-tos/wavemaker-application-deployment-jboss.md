@@ -1,6 +1,10 @@
 ---
 title: "WaveMaker Application deployment to JBoss"
 id: ""
+sidebar_label: "JBoss - WildFly"
+---
+Learn how to deploy your WaveMaker app to JBoss server.
+
 ---
 
 WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 1.8. This section walks through the steps to deploy WaveMaker app to **JBoss - WildFly**. You can know more about [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/) from here.

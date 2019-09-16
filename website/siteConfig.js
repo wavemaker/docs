@@ -51,6 +51,7 @@ const siteConfig = {
     // For no header links in the top nav bar -> headerLinks: [],
     headerLinks: [
         {languages: true},
+		{doc: 'index', label: 'Docs'},
         {doc: 'app-development/widgets/ui-elements', label: 'Widgets'},
         {href: 'https://www.wavemakeronline.com/studio/10.1.1.7359/docs/index.html', label: 'API Docs'},
         {doc: 'release-notes/release-notes-v10.1', label: 'Release Notes'},
@@ -69,7 +70,7 @@ const siteConfig = {
     users,
 
     /* path to images for header/footer */
-    headerIcon: 'img/WM_white_logo.png',
+    headerIcon: 'img/WM_blue_logo.png',
     footerIcon: 'img/WM_blue_logo.png',
     favicon: 'img/WM_blue_logo.png',
 

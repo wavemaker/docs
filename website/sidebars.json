@@ -98,7 +98,7 @@
         
       ],  
 
-      "Web Services": 
+      "Web services": 
       [   
             "app-development/services/web-services/web-services",            
         {
@@ -122,7 +122,7 @@
 
       ],
 
-      "Java Services": 
+      "Java services": 
       [   
           "app-development/services/java-services/java-service",     
           {
@@ -174,7 +174,7 @@
         }
       ],
 
-      "Integration": 
+      "Service integration": 
       [
         "app-development/variables/data-integration",   
         {
@@ -220,16 +220,16 @@
       "label": "Build & Deployment",
       "ids": [
         "app-development/deployment/one-click-deployment",
-        "app-development/deployment/configuration-profiles", 
         "app-development/deployment/release-management", 
-        "app-development/deployment/manage-deployed-apps",
-        "app-development/deployment/deployment-web-server"                   
+        "app-development/deployment/configuration-profiles", 
+        "app-development/deployment/manage-deployed-apps"                          
       ]
     },
     {
         "type": "subcategory",
         "label": "Configuration",
         "ids": [  
+         "app-development/deployment/deployment-web-server",
         "app-development/deployment/deployment-to-aws",
         "app-development/deployment/deployment-to-azure",
         "app-development/deployment/deployment-google-cloud",
