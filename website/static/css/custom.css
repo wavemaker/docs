@@ -9,6 +9,7 @@
 }
 .toc .toggleNav .navGroup .navGroupCategoryTitle {
 	font-size: 16px;
+	color: #808080;
 }
 .navigationSlider .slidingNav ul li.siteNavGroupActive a {
 	background-color: #066db7;

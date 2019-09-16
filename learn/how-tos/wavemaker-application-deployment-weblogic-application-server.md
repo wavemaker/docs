@@ -3,6 +3,7 @@ title: "WaveMaker Application deployment to WebLogic application server"
 id: ""
 sidebar_label: "WebLogic Server"
 ---
+---
 
 WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 1.8. You can know more about [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/) from here.
 
@@ -16,9 +17,9 @@ This section walks through the steps to deploy WaveMaker app to Oracle WebLogic 
 
 ## Steps Involved
 
-1. [Setting](#xmlfile) WebLogic.xml file in project
-2. [Create](#warfile) Application War file for WaveMaker app
-3. [Deploy](#deployment) Application (Deployment Process)
+1. Setting WebLogic.xml file in project
+2. Create Application War file for WaveMaker app
+3. Deploy Application (Deployment Process)
 
 ## Setting WebLogic XML file in project
 
@@ -40,10 +41,4 @@ This section walks through the steps to deploy WaveMaker app to Oracle WebLogic 
 7. Click the _Save_ button in deployment settings page[![](/learn/assets/weblogic7.png)](/learn/assets/weblogic7.png)
 8. Select the _Testing_ tab to access the deployed application.[![](/learn/assets/weblogic8.png)](/learn/assets/weblogic8.png)
 
-**Deployment to WebLogic**
 
-- [i. Prerequisites](#prerequisites)
-- [ii. Steps Overview](#steps)
-    - [○ Setting WebLogic xml file](#xmlfile)
-    - [○ Generating app war file](#warfile)
-    - [○ Deployment Process](#deployment)

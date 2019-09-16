@@ -98,7 +98,7 @@
         
       ],  
 
-      "Web services": 
+      "Web Services": 
       [   
             "app-development/services/web-services/web-services",            
         {
@@ -122,7 +122,7 @@
 
       ],
 
-      "Java services": 
+      "Java Services": 
       [   
           "app-development/services/java-services/java-service",     
           {
@@ -174,7 +174,7 @@
         }
       ],
 
-      "Service integration": 
+      "Service Integration": 
       [
         "app-development/variables/data-integration",   
         {
@@ -201,14 +201,14 @@
         "app-development/variables/accessing-elements-via-javascript"
       ], 
       
-    "Developer": 
+    "Developer-side": 
     [
+        "app-development/dev-integration/developer-tools",
+        "app-development/dev-integration/import-export-update-apps",
     {
       "type": "subcategory",
       "label": "Developer Integration",
-      "ids": [
-        "app-development/dev-integration/developer-tools",
-        "app-development/dev-integration/import-export-update-apps",
+      "ids": [        
         "app-development/dev-integration/developer-collaboration",
         "app-development/dev-integration/debugging",
         "app-development/dev-integration/extending-application-using-ides"
@@ -219,17 +219,18 @@
       "type": "subcategory",
       "label": "Build & Deployment",
       "ids": [
-        "app-development/deployment/one-click-deployment",
         "app-development/deployment/release-management", 
         "app-development/deployment/configuration-profiles", 
+        "app-development/build-options-app-deployment",    
+        "app-development/deployment/one-click-deployment",                
         "app-development/deployment/manage-deployed-apps"                          
       ]
     },
     {
         "type": "subcategory",
-        "label": "Configuration",
+        "label": "Configuring Web Server",
         "ids": [  
-         "app-development/deployment/deployment-web-server",
+        "app-development/deployment/deployment-web-server",
         "app-development/deployment/deployment-to-aws",
         "app-development/deployment/deployment-to-azure",
         "app-development/deployment/deployment-google-cloud",
@@ -240,7 +241,7 @@
     }
   ],
 
-    "Mobile app": 
+    "Mobile App": 
     [
         "hybrid-mobile/building-hybrid-mobile-apps",           
       {
@@ -325,9 +326,10 @@
       "app-development/wavemaker-app-development-faqs/widgets-in-wavemaker",
       "app-development/wavemaker-app-development-faqs/security-in-wavemaker",
       "app-development/wavemaker-app-development-faqs/widgets-in-wavemaker",
+      "app-development/wavemaker-app-development-faqs/wavemaker-architecture",
       "app-development/wavemaker-app-development-faqs/wavemaker-application-architecture",
-      "app-development/wavemaker-app-development-faqs/",
-      "app-development/wavemaker-app-development-faqs/",
+      "app-development/wavemaker-app-development-faqs/micro-services-enabled-architecture",
+      "app-development/wavemaker-app-development-faqs/build-app-using-low-code-approach",
       "app-development/wavemaker-app-development-faqs/",
       "app-development/wavemaker-app-development-faqs/",
       "app-development/wavemaker-app-development-faqs/",

@@ -34,11 +34,11 @@ With WM 10.0, the projects will contain generated Angular 7 code. Thus, users ca
 
 ## Locate Build Options
 
-To access the build options, click the **Settings** icon and select the **Config Profile** option from the drop-down. See the image below: [![](https://www.wavemaker.com../assets/Config-profile.png)](https://www.wavemaker.com../assets/Config-profile.png)
+To access the build options, click the **Settings** icon and select the **Config Profile** option from the drop-down. See the image below: [![](/learn/assets/Config-profile.png)](/learn/assets/Config-profile.png)
 
 The **Config Profiles** opens the **Profile Configuration** window. Go to the **Build Options** tab, as shown in the image below:
 
-[![](https://www.wavemaker.com../assets/Locate-build-options.png)](https://www.wavemaker.com../assets/Locate-build-options.png)
+[![](/learn/assets/Locate-build-options.png)](/learn/assets/Locate-build-options.png)
 
 The Build Options are Read-Only for ‘Development’ build profile of the WaveMaker build. For other profiles such as ‘Deployment’ or the custom ones, you can choose from the above-specified modes.
 
@@ -48,28 +48,19 @@ With the Angular code generation in place, the users can see the generated code 
 
 The ‘**generated-angular-app**’ is Angular 7 compliant project structure of the WaveMaker application as shown in the image below. The content in this section is Read-only.
 
-[![](https://www.wavemaker.com../assets/Build-start.png)](https://www.wavemaker.com../assets/Build-start.png)
+[![](/learn/assets/Build-start.png)](/learn/assets/Build-start.png)
 
 ## Deployment Flow Changes
 
 The Deployment operation in the earlier version of WaveMaker was blocking users to further work on WM until the process completes. Thus, the users were not able to perform any operations at this stage. From WM 10.0, the flow does not block you to make an action. You can choose to ‘close’ the Deployment progress dialog and continue with operations if needed.
 
-[![](https://www.wavemaker.com../assets/Deployment-flow-changes.png)](https://www.wavemaker.com../assets/Deployment-flow-changes.png)
+[![](/learn/assets/Deployment-flow-changes.png)](/learn/assets/Deployment-flow-changes.png)
 
 The user keeps informed about the status of the deployment through the 'toaster UI'. If the user works on the same project, after the deployment, they get notified by an email.
 
 The progress of the Deployment is indicated by the change of Deployment Icon on the header as shown below, and by clicking the icon, you can see an option to ‘Check Deployment Status’ by opening the dialog again.
 
-[![](https://www.wavemaker.com../assets/Check-deployment-status-Click-e1554896395542.png)](https://www.wavemaker.com../assets/Check-deployment-status-Click-e1554896395542.png)
+[![](/learn/assets/Check-deployment-status-Click-e1554896395542.png)](/learn/assets/Check-deployment-status-Click-e1554896395542.png)
 
 For the manual build, see [Building a War file from a WaveMaker Project](/learn/app-development/deployment/building-war-wavemaker-project/).
 
-- [Build Options](#build-options)
-- [WaveMaker Build](#wavemaker-build)
-- [Angular Build](#angular-build)
-    - [Development Mode](#development-mode)
-    - [Production Mode](#production-mode)
-- [Advantages of Angular Build](#advantages-of-angular-build)
-- [Locate Build Options](#locate-build-options)
-- [File Explorer](#file-explorer)
-- [New Deployment Flow](#deployment-flow)

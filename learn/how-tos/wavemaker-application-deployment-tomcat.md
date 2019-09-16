@@ -3,7 +3,9 @@ title: "WaveMaker Application deployment to Tomcat"
 id: ""
 sidebar_label: "Deploy to Tomcat"
 ---
+Learn how to deploy a WaveMaker app to the Tomcat server. 
 
+---
 WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 1.8. This section walks through the steps to deploy WaveMaker app to Tomcat. You can know more about [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/) from here.
 
 ## Supported Versions
