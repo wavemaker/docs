@@ -1,7 +1,7 @@
 ---
 title: "FAQs - App Development"
 id: "index"
-sidebar_label: "Overview"
+sidebar_label: "FAQs Overview"
 ---
 Frequently asked questions cover everything you need to know about WaveMaker so you can develop apps like a pro. 
 See the [FAQs](index.md) for WaveMaker app development.      
@@ -39,221 +39,45 @@ See the [FAQs](index.md) for WaveMaker app development.      
 
 #### [13. How to build app using low-code approach in WaveMaker?](build-app-using-low-code-approach.md)
 
+## Mobile Apps
+---
+
+#### [14. Can I build a mobile app with installer using WaveMaker and publish it to any App Store?](publishing-app-to-app-store.md) 
+
+#### [15. Can I publish the Mobiles apps built on WaveMaker to App Stores without any limitations?](publish-to-app-store-without-any-limitations.md)
+
+#### [16. Are there any licensing restrictions in re-distributing WaveMaker apps?](redistributing-licensing.md)
+
+#### [17. How to build responsive UI using Visual RAD approach in WaveMaker?](build-responsive-ui-using-visual-rad-approach.md)
 
 
-## Can I build a mobile app with installer using WaveMaker and publish it to any App Store?
+#### [18. What libraries are used to build WaveMaker App runtime?](libraries-used-app-runtime.md)
 
-The Automated Build process for a mobile application within WaveMaker can be used to generate a .apk (Android application package) or .ipa file (iOS App Store package). Downloading Cordova/PhoneGap compatible .zip files can be used to build systems manually for Android/iOS platforms.
 
-[![](/learn/assets/Hybrid_App_Installer.png)](/learn/assets/Hybrid_App_Installer.png)
+#### [19. What databases are supported by WaveMaker Platform?](databases-supported-by-wavemaker-platform.md)
 
-WaveMaker supports the build for mobile applications in the following three ways:
+#### [20. What type of security is provided for WaveMaker Apps?](security-provided-for-wavemaker-apps.md)
 
-- Build for Android to generate APK files which can be signed and hosted on PlayStore.
-- Send to PhoneGap for a complete package needed to build both apk/ipa files for Android and iOS platforms.
-- Manual Build for a downloadable zip file which can be further developed to be hosted on any mobile platform.
 
-##### Doc Reference
 
-[Building Mobile Apps](/learn/hybrid-mobile/building-hybrid-mobile-apps/)   
-
-## Are mobile Apps built using WaveMaker accepted to be published to App Stores? Are there any limitations?
-
-The Mobile Themes give native look-n-feel of the same page based on the Platform (IOS, Android etc.). Most importantly themes adhere to design guidelines of the Platform, for example, the Page Title in Android platform needs to be left aligned while for iOS it needs to be centered or the menu tab needs to be rendered differently.
-
-[![](/learn/assets/mobile_native_UIlooknfeel.png)](/learn/assets/mobile_native_UIlooknfeel.png)
-
-Similarly, various widgets like date picker, drop down menu need to be rendered differently based on the platform. All these aspects are taken care of by the inbuilt Mobile Themes provided by WaveMaker. [![](/learn/assets/mobile_native_UIcontrols.png)](/learn/assets/mobile_native_UIcontrols.png)
-
-##### Doc Reference
-
-[Native Device Support](/learn/hybrid-mobile/native-device-support/)   
-
-## Are there any licensing restrictions in re-distributing WaveMaker apps?
-
-WaveMaker App contains distributable components which are completely conforming to the open-standards based licenses such as Apache 2.0, MIT etc. WaveMaker platform’s runtime components are all open-sourced under Apache 2.0 license giving complete control to the app developer for distributing rights.   
-
-## How to build responsive UI using Visual RAD approach in WaveMaker?
-
-The responsive design facilitates the apps to automatically adjust to the device screen size with various UI components adjusting to the available real estate. In WaveMaker, this is achieved through Bootstrap styling using the 12-column layout.
-
-[![](/learn/assets/Page_grid.png)](/learn/assets/Page_grid.png)
-
-Widgets are dragged and dropped into the 12-column grid containers, whose sizes cumulatively aggregate to 12 within a row. The bootstrap layouting system automatically renders the widgets in different devices based on the available real estate, usually stacking them on a mobile device, while they appear side by side when viewed on a desktop screen.
-
-[![](/learn/assets/widget_concept.png)](/learn/assets/widget_concept.png)
-
-In WaveMaker, a Page has a flexible layout structure separated from the main content area where the widgets are dropped. Separation of the layout i.e. left panel, header, footer etc. helps not only in achieving UI consistency but also in simplifying the page rendering across devices.
-
-[![](/learn/assets/Page_responsive.png)](/learn/assets/Page_responsive.png)
-
-Also, WaveMaker widgets embrace Android Material Design specification for visual design and building interaction across multiple devices. Android Material Design provides standard design guidelines for user interaction across mobile apps and modern web apps.
-
-##### Doc Reference
-
-- [Design Overview](/learn/app-development/ui-design/design-overview/#app-ui-design)
-
-## What libraries are used to build WaveMaker App runtime?
-
-To build WaveMaker app, following libraries are used:
-
-- **AngularJS 1.x** version is used for front-end of an app. It constitutes the user interface, data binding, and events. Bootstrap provides diverse responsive design layouts for various form factors.
-- **Hibernate and JPA** provide standardized ORM layer and Entity model for database interaction.
-- **Spring Framework** enables the back-end service layer in Java to facilitate dependency injection, REST controllers, security, etc.
-- **Cordova Framework** provides easy access to mobile device features and native installer creation using the appropriate SDK’s.
-    
-    [![](/learn/assets/OS_Technology_Stack.png)](/learn/assets/OS_Technology_Stack.png)
-    
-
-##### Doc Reference
-
-- [Technology Stack](/learn/app-development/wavemaker-overview/platform-overview/#technology-stack)
-
-## What databases are supported by WaveMaker Platform?
-
-Following Databases can be used to build WaveMaker Apps:
-
-- MySQL
-- PostgreSQL
-- Oracle
-- SQL Server
-- DB2
-- HSQL
-
-##### Doc Reference
-
-- [Supported Technologies](/learn/app-development/wavemaker-overview/supported-technologies/)
-
-## What type of security is provided for WaveMaker Apps?
-
-The WaveMaker security feature offers comprehensive security solutions to secure the apps developed. WaveMaker offers application level security and the two major areas are “Authentication, who has access and “Authorization”, who can access what. In practice, once WaveMaker security is enabled, both authentication and authorization are available to be taken advantage of and are intertwined.
-
-By the process of “Onboarding,” end-users data is retrieved from various providers like DB, LDAP, AD or any custom provider. This data includes roles and role groups information. Then, Authentication is done based on user credentials, which are obtained from the security provider; and Authorization or role-based access control (RBAC) can be set up for various app resources such as widgets, pages, data, and APIs through configuration.
-
-Apart from the above-mentioned security providers, WaveMaker supports Single Sign-On using Central Authentication Service (CAS), any Security Assertion Markup Language (SAML) 2.0 compliant provider and Token-based authentication for API requests. Cross-site Scripting (XSS) and Cross-Site Request Forgery (CSRF) attacks, listed on OWASP top 10 security, can also be prevented on WaveMaker Apps.
-
-##### Doc Reference
-
-- [App Authentication](/learn/app-development/app-security/authentication/)
-- [App Authorization](/learn/app-development/app-security/authorization/)
-- [Single Sign-On using CAS](/learn/app-development/app-security/central-authentication-system/)
-- [OWASP Support](/learn/app-development/app-security/owasp/)
-- [SAML Integration](/learn/app-development/app-security/saml-integration/)
-- [Token Based Authentication](/learn/app-development/app-security/token-based-authentication/)
-
-  Can the App’s look and feel be modified or customized to match the branding of my choice?
-
-Yes. WaveMaker Themes are based upon Bootstrap CSS markup. App developer can choose from a wide range of inbuilt Themes provided with WaveMaker. With a working knowledge of HTML, CSS, LESS and Grunt, app developer can build their own themes and import them into WaveMaker platform. These imported Themes will be available for use across the apps.
-
-Themes can be built either by
-
-- modifying an existing WaveMaker Theme as per requirements (WaveMaker Themes are available on WaveMaker Git repository), or
-- using the bootstrap themes provided by Bootswatch.
-
-There are two ways Theme can be handled within WaveMaker apps:
-
-- At the App level, apply a selected Theme either inbuilt or custom built. This will allow for a consistent look and feel to your apps.
-- At the Widget level, app developer can apply style properties to change the color, margins, alignment and much more. This can be applied for a specific, one-instance styling.
-
-##### Doc Reference
-
-- [Applying Themes](/learn/app-development/ui-design/themes/#apply-theme)
-- [Creating Themes](/learn/app-development/ui-design/themes/#create-theme)
-- [Importing Themes](/learn/app-development/ui-design/themes/#import-theme)
+#### [21. Can the App’s look and feel be modified or customized to match the branding of my choice?](customizing-app-to-your-own-branding.md)
 
   
-## How to build widget extensions or custom widgets?
+#### [22. How to build widget extensions or custom widgets?](building-widget-extension-custom-widget.md)
 
-In WaveMaker, widget extensions or custom widgets are built using specialized components known as Prefabs. Prefabs are reusable and distributable components that can be used across applications.
+#### [23. Is the platform generated code readable and maintainable?](platform-generated-code.md)
 
-#### Concept of Prefab
-
-Prefabs are like the pieces of the jigsaw puzzle or equivalent of lego blocks, which when put together offer powerful extended features of existing widgets or build an altogether new UI element by integrating with 3rd party libraries.
-
-[![](/learn/assets/prefab_concepts.png)](/learn/assets/prefab_concepts.png)
-
-Prefab may consist of all 3 layers of a WaveMaker App, combining the power of custom widgets with any integrated service, as shown below.
-
-[![](/learn/assets/prefab_layeredarch.png)](/learn/assets/prefab_layeredarch.png)
-
-Prefabs can be used:
-
-- As widget extensions by extending 3rd party JS libraries or UI widgets. For example, DataMaps built on top of d3 library can be used to build new widgets for doing geographic projections which will allow integration of data from any data source or backend service to the DataMaps. Or integrate Lightbox Image Viewer into WaveMaker App to preview images within the App.
-- As API integrated components by combining with a WaveMaker UI component to customise built-in behavior. For example, WaveMaker List widget can be combined with Google Maps Prefab to form a composite UI component for marking the location of a selected item from the List.
-- As backend service extensions by leveraging 3rd party Java libraries, for example, to work with JasperReports.
-
-##### Doc Reference
-
-[Prefab - Custom Widgets](/learn/app-development/widgets/custom-widgets/)   
-
-## Is the platform generated code readable and maintainable? 
-
-
-WaveMaker App is built by drag-n-drop of Widgets, a simple HTML markup is generated. Any changes to the look-n-feel can be done using the Style properties exposed for each Widget. Though not necessary or advisable, the page markup can be further tweaked to suite app requirements.
-
-Similarly, when a Backend Service, like a database, is integrated into a WaveMaker App, ORM artifacts are auto-generated. The source code is generated following the design best practices, consisting of the DAO, Service Layer & REST APIs with each layer having a specific responsibility:
-
-- Layer 1: REST Controller is responsible for transporting the data between client and server, authorization of APIs & marshaling and unmarshaling of the model to JSON etc.
-- Layer 2: Service Layer is responsible for validating the inputs and transaction management
-- Layer 3: DAO Layer is responsible for interacting with the underlying database
-
-Following is the code snippet of the generated Entity DAO object, a JPA entity model using the standards based annotations, getter & setter methods.
-
-Additional artifacts, such as API definitions in standard Swagger notation, configuration files as Spring XML files and properties files and Maven pom.xml that defines application dependencies are all auto-generated and available for maintenance outside the platform.   Can the apps built using WaveMaker be deployed on any App Server?
-
-WaveMaker platform generates a standards based WAR file, which can be used to deploy App to any Java web server such as Tomcat, WebSphere, WebLogic, Pramati Server, JBoss etc.
-
-By default, WaveMaker Apps can be deployed to WaveMaker Cloud platform. Optionally you can configure your app to be deployed to your AWS or Azure or Google Cloud accounts.
-
-##### Doc Reference
-
-- [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/)
+#### [24. Can WaveMaker apps be modified outside the platform by manually editing the generated code?](editing-generated-code-outside-platform.md)
 
   
-## Can WaveMaker apps be modified outside the platform by manually editing the generated code?
-
-For WaveMaker apps a modular client-side code (AngularJS, CSS, and HTML) incorporating industry best practices is generated, thus making it Maven complaint. As such, for any WaveMaker app, a zip file can be generated which includes a pom.xml file. This zip file can be imported to any IDE like IntelliJ or Eclipse. The backend artifacts included in the zip file can be modified from the IDE.
-
-The app updated outside of WaveMaker can be reimported into WaveMaker to update the existing project or as a new project.
-
-##### Doc Reference
-
-- [Extending Apps using IDEs](/learn/app-development/dev-integration/extending-application-using-ides/)
+#### [25. Can multiple developers work on a WaveMaker app?](working-with-multiple-developers.md)
 
   
-## Can multiple developers work on a WaveMaker app?
+#### [26. How are the application stack upgrades done?](application-stack-upgrades.md)
 
-Collaborated and continuous development is part of WaveMaker platform. WaveMaker Apps can be shared with multiple users. WaveMaker’s integrated Version Control System (Git) allows pulling changes, merging and resolving conflicts. Apps can also be pushed to External Repos like GitHub or Bitbucket.
 
-Unlike the conventional method where every file or artifact goes through the review/merge process, all the generated code artifacts are auto-merged by the platform, eliminating this responsibility from the developer. As the major portion of the auto-generated code is auto-merged, the developer needs to only review/merge the files which are related to business logic or other files which are modified manually.
 
-##### Doc Reference
-
-- [Developer Collaboration](/learn/app-development/dev-integration/developer-collaboration/#project-sharing)
-- [Code Sharing](/learn/app-development/dev-integration/developer-collaboration/#vcs)
-
-  
-## How are the application stack upgrades done?
-
-WaveMaker platform is frequently updated to incorporate the latest developments in the underlying technology stack such as Spring, Hibernate, Angular etc. WaveMaker Apps are automatically upgraded by the platform to the latest version of the stacks that the platform ships. This is a major advantage for developers, as they do not have to make any changes in the applications manually.
-
-Deployed apps will not be affected by platform upgrades, and in case the deployed app needs to be upgraded as well, then it can be re-deployed.   How does a WaveMaker App compare with traditionally built app?
-
-The benefits of Rapid Application Development have a direct bearing on the cost and schedule of enterprise application development. In fact, organizations that used WaveMaker RAD Platform have experienced:
-
-- 67% faster application development than traditional software delivery
-- 80% lesser coding required compared to traditional software development
-- 75% lower maintenance costs than traditional software life cycle
-
-[![](/learn/assets/rad_benefits.png)](/learn/assets/rad_benefits.png)
-
-The following chart depicts performance comparison of an app built following the RAD approach using WaveMaker and a traditionally built app using AngularJS framework. The functionality of the app is designed to load several database records from a backend service, exposed as REST API to the UI layer, where the UI layer renders these records using widgets such as list, image, label, panel etc.
-
-[![](/learn/assets/perf_graph.png)](/learn/assets/perf_graph.png)
-
-Metrics such as page load time, memory consumed on the client side, page interaction response times and the number of backend service calls are plotted. As indicated in the figure above, the delta is very minimal and the application built with WaveMaker performs at par on all counts in comparison to the app built traditionally.   
-
-## Is WaveMaker App scalable in terms of usage?
+#### [27. Is WaveMaker App scalable in terms of usage?](is-wavemaker-app-scalable.md)
 
 WaveMaker Apps are built to use stateless architectures making them ready for large scale container-based deployments. Large scale deployments needing high number concurrent requests and low response times can be achieved, by scaling apps to deploy on container based systems.
 
