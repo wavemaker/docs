@@ -28,13 +28,17 @@ Develop app using WaveMaker Online (WMO) Studio and deploy your app on cloud. Wh
 
 ## Quick start guide to get you started
 
-|To learn | See |
+|To | See |
 |----|----|
-|How to create a new project | Creating a New Project |
-|Build a Simple WaveMaker App | Build a WaveMaker App in 5 Minutes |
-|How to create a variable | Creating a Variable in WaveMaker|
+|Start with beginners' guide | [Video Tutorials](/learn/tutorials) |
+|Get familiarize with WaveMaker Studio|[Product Terminology and Dashboard Walkthrough](/learn/app-development/wavemaker-overview/product-walkthrough)|
+|Create a simple Page | [Creating a Page](/learn/app-development/ui-design/page-creation)|
+|Explore Widgets and play around with it|[Widgets Library](/learn/app-development/widgets/widget-library)|
+|Build a Simple WaveMaker App | [Build a WaveMaker App in 5 Minutes](https://www.youtube.com/watch?list=PLNlIJ337WpshRs-8eCubDm2vilhsloiqs&v=tLjGGJbrZ2Q)|
 
-> [Visit our jumpstart to know about app building process and create a simple app](/learn/jump-start/jump-start-app-essentials/).
+:::tip
+Jumpstart to learn about the app building process and create a simple app. See, [WaveMaker App Building Essentials](/learn/jump-start/jump-start-app-essentials/).
+:::
 
 ## [Start a free trail!](https://www.wavemaker.com/get-started/)
 When you sign up, you will be directed to a **Project Dashboard** page. Voila! You can start creating a new projects. Happy developing! 

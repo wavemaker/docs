@@ -19,7 +19,8 @@
         {
           "type": "subcategory",
           "label": "WM Concepts Overview",
-          "ids": [
+          "ids": 
+            [
             "app-development/ui-design/page-concepts",
             "app-development/variables/variables",
             "app-development/services/creating-backend-services",
@@ -35,7 +36,8 @@
         {
           "type": "subcategory",
           "label": "Pages",
-          "ids": [
+          "ids": 
+            [
             "app-development/ui-design/page-creation",
             "app-development/ui-design/page-concepts/partial-pages",
             "app-development/ui-design/page-concepts/page-layouts",
@@ -43,12 +45,12 @@
             "app-development/ui-design/page-concepts/page-events"         
             ]       
         },
-
         "app-development/ui-design/project-shells",        
         "app-development/ui-design/page-artefacts",
         "app-development/ui-design/themes",
         "app-development/ui-design/page-concepts/page-templates",
-        "app-development/ui-design/use-cases-ui-design"],
+        "app-development/ui-design/use-cases-ui-design"
+      ],
 
       "Databases": 
       [
@@ -57,27 +59,32 @@
         {
           "type": "subcategory",
           "label": "Database Designing",
-          "ids": [            
-            
+          "ids": 
+          [                        
             "app-development/services/database-services/working-with-databases",            
             "app-development/services/database-services/data-modelling",
             "app-development/services/database-services/database-schema-import-modes",
             "app-development/services/database-services/working-database-schema",
             "app-development/services/database-services/database-views",
-            "app-development/services/database-services/temporal-support"  ]
+            "app-development/services/database-services/temporal-support"  
+          ]
           },
 
           {
             "type": "subcategory",
             "label": "Accessing Database",
-            "ids": [  
+            "ids": 
+            [  
             "app-development/services/database-access",
-            "app-development/services/database-services/orm-artifacts"]
+            "app-development/services/database-services/orm-artifacts"
+            ]
           },
+
           {
             "type": "subcategory",
             "label": "Queries and Procedures",
-            "ids": [ 
+            "ids": 
+            [ 
             "app-development/services/database-services/working-with-queries",
             "app-development/services/database-services/working-stored-procedures",
             "app-development/services/database-services/versioning-queries-procedures",
@@ -89,7 +96,8 @@
         {
           "type": "subcategory",
           "label": "Database Variables & API",
-          "ids": [            
+          "ids": 
+            [            
             "app-development/variables/database-crud",
             "app-development/variables/database-apis",
             "app-development/services/api-designer/database-service-apis"         
@@ -104,17 +112,19 @@
         {
           "type": "subcategory",
           "label": "Services",
-          "ids": [
-                "app-development/services/web-services/rest-services",
-                "app-development/services/web-services/oauth-2-0-rest-services",
-                "app-development/services/web-services/working-with-soap-services",              
-                "app-development/services/web-services/working-with-websockets"                 
-              ]       
+          "ids": 
+          [
+            "app-development/services/web-services/rest-services",
+            "app-development/services/web-services/oauth-2-0-rest-services",
+            "app-development/services/web-services/working-with-soap-services",              
+            "app-development/services/web-services/working-with-websockets"                 
+          ]       
         },
         {
           "type": "subcategory",
           "label": "Web Service Variables & API",
-          "ids": [ 
+          "ids": 
+            [ 
             "app-development/variables/web-service",
             "app-development/services/api-designer/web-service-apis"         
             ]
@@ -281,12 +291,17 @@
   },
 
 
-  "Tutorials": {
-
-    "Learn": ["tutorials"],
+  "Tutorials": 
+  {
+    "Learn": 
+      [  
+      "tutorials",
+      "jump-start/jump-start-app-essentials",
+      "jump-start/jump-start-db-essentials"
+      ],
 
       "App Building Exercises": 
-      [        
+      [      
         "tutorials/leave-management-app",
         "tutorials/asset-management-app"
       ],
@@ -304,13 +319,13 @@
             "how-to-prefabs"]
       }
     ]
+  },
 
-    },
 
-    
-  "FAQs": {
-
-    "Resources": [
+  "FAQs": 
+  {
+    "Resources": 
+      [
       "app-development/wavemaker-app-development-faqs/index"
       ],
     
@@ -399,7 +414,8 @@
       "app-development/widgets/datalive/list"
     ],
 
-    "Cards": [ 
+    "Cards": 
+    [ 
       "app-development/widgets/datalive/cards",
       "app-development/widgets/datalive/cards/card-basic-usage",
       "app-development/widgets/datalive/cards/cards-data-source",
@@ -410,12 +426,15 @@
       "app-development/widgets/datalive/cards/"
     ],
 
-    "Live Form": [ 
+    "Live Form": 
+    [ 
       "app-development/widgets/datalive/live-form"
     ],
 
-    "Live Filter": [ 
-      "app-development/widgets/datalive/live-filter"    ] 
+    "Live Filter": 
+    [ 
+      "app-development/widgets/datalive/live-filter"    
+    ] 
   }
 
 }

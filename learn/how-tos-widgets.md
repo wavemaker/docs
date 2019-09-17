@@ -1,7 +1,7 @@
 ---
 id: "how-to-widgets"
 title: "How-tos for Widgets"
-sidebar_label: "Widgets"
+sidebar_label: "How-tos: Widgets"
 ---
 How tos: Working Solutions for using WaveMaker Widgets
 

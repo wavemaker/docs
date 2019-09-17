@@ -3,8 +3,13 @@ id: tutorials
 title: Video Tutorials
 sidebar_label: Tutorials
 ---
-
 In this topic, you can find video tutorials covering the essentials of WaveMaker app development. 
+
+---
+
+:::tip
+When you sign-up, you can access video tutorials in WaveMaker Studio. This is a good start to get familiar with the product.  
+:::
 
 ## Low-code Development with WaveMaker
 

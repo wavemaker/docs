@@ -23,11 +23,4 @@ You can import the database as Read-Only or as Editable. [Know more](/learn/app-
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vSj6saQsgOFLy7j-x600qT1H_joBoYw3WbSIfzEDSclOBtFDMTIYcbN0O11po87XkE9CETh23JcOyAK/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Jump Starts](/learn/tutorials/)
 
-- [1\. App Building Essentials](/learn/jump-start/jump-start-app-essentials/)
-- [2\. Database Integration Essentials](#)
-    - [i. Database Essentials](#essentials)
-    - [ii. Create Database from Designer](#designer)
-    - [iii. Create Database by Importing Script](#script)
-    - [iv. Import Database](#connect)

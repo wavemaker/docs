@@ -55,7 +55,7 @@ const siteConfig = {
         {doc: 'app-development/widgets/ui-elements', label: 'Widgets'},
 		{doc: 'tutorials', label: 'Tutorials'},
 		{doc: 'app-development/wavemaker-app-development-faqs/index', label: 'FAQs'},
-        {href: 'https://www.wavemakeronline.com/studio/10.1.1.7359/docs/index.html', label: 'API Docs'},
+        {href: 'https://www.wavemakeronline.com/studio/10.1.2.7413/docs/index.html', label: 'API Docs'},
         {doc: 'release-notes/release-notes-v10.1', label: 'Release Notes'},        
         // {page: 'help', label: 'Help'},
         {href: 'https://www.wavemakeronline.com/login/login', label: 'Login'},

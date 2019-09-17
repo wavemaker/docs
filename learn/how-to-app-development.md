@@ -1,7 +1,7 @@
 ---
 id: "how-to-app-development"
 title: "How-tos for App Development"
-sidebar_label: "App Development How-tos"
+sidebar_label: "How-tos: App Development"
 ---
 How tos: Working Solutions for WaveMaker Features App Development
 

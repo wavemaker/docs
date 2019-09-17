@@ -1,7 +1,7 @@
 ---
 id: "how-to-mobile-development"
 title: "How-tos for Mobile Development"
-sidebar_label: "Mobile Development"
+sidebar_label: "How-tos: Mobile Development"
 ---
 How tos: Working Solutions for WaveMaker Features Mobile App Development
 

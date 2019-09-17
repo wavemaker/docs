@@ -1,7 +1,7 @@
 ---
 id: "how-to-prefabs"
 title: "How-tos for Prefabs"
-sidebar_label: "Prefabs"
+sidebar_label: "How-tos: Prefabs"
 ---
 How tos: Working Solutions for using WaveMaker Prefabs
 
