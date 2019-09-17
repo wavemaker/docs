@@ -32,7 +32,6 @@ Develop app using WaveMaker Online (WMO) Studio and deploy your app on cloud. Wh
 |----|----|
 |Start with beginners' guide | [Video Tutorials](/learn/tutorials) |
 |Get familiarize with WaveMaker Studio|[Product Terminology and Dashboard Walkthrough](/learn/app-development/wavemaker-overview/product-walkthrough)|
-|Create a simple Page | [Creating a Page](/learn/app-development/ui-design/page-creation)|
 |Explore Widgets and play around with it|[Widgets Library](/learn/app-development/widgets/widget-library)|
 |Build a Simple WaveMaker App | [Build a WaveMaker App in 5 Minutes](https://www.youtube.com/watch?list=PLNlIJ337WpshRs-8eCubDm2vilhsloiqs&v=tLjGGJbrZ2Q)|
 

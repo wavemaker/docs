@@ -56,21 +56,18 @@ Frequently asked questions cover everything you need to know about WaveMaker so 
 
 #### [17. What type of security is provided for WaveMaker Apps?](/learn/app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps)
 
-## Mobile Apps
+## Mobile App
 ---
 
+#### [18. How to build responsive UI using Visual RAD approach in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach)
+
+#### [19. Can I build a mobile app with installer using WaveMaker and publish it to any App Store?](/learn/app-development/wavemaker-app-development-faqs/publishing-app-to-app-store) 
+
+#### [20. Can I publish the Mobiles apps built on WaveMaker to App Stores without any limitations?](/learn/app-development/wavemaker-app-development-faqs/publish-to-app-store-without-any-limitations)
 
 
-#### [18. Can I build a mobile app with installer using WaveMaker and publish it to any App Store?](/learn/app-development/wavemaker-app-development-faqs/publishing-app-to-app-store) 
 
-#### [19. Can I publish the Mobiles apps built on WaveMaker to App Stores without any limitations?](/learn/app-development/wavemaker-app-development-faqs/publish-to-app-store-without-any-limitations)
-
-
-
-#### [20. How to build responsive UI using Visual RAD approach in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach)
-
-
-## Code and development
+## Development and code
 ---
 
 #### [21. Can multiple developers work on a WaveMaker app?](/learn/app-development/wavemaker-app-development-faqs/working-with-multiple-developers)

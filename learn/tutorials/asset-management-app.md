@@ -54,14 +54,4 @@ The following concepts are covered in building this application.
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vQdumr6267zxYYHUNOA-8RNGKOBTHCMGnT3AdOTT6Rd9dbfAd8Owsc8ADBZSvIL9kgbMqwH53wucivI/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-[Tutorials](/learn/tutorials/#tab-tutorials)
 
-- [1\. Leave Management App](/learn/tutorials/leave-management-app/)
-- [2\. Asset Management App](/learn/tutorials/asset-management-app/)
-    - [i. Introduction](#AM-intro)
-    - [ii. App Overview](#AM-overview)
-    - [iii. First Steps](#AM-step1)
-    - [iv. Building Pages](#AM-step2)
-    - [v. Securing App](#AM-step3)
-    - [vi. Workflows](#AM-step4)
-    - [vii. Dashboard & Deployment](#AM-step5)
