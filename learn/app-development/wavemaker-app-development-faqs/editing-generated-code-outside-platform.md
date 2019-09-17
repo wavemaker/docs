@@ -1,11 +1,11 @@
 ---
-title: "Can WaveMaker apps be modified outside the platform by manually editing the generated code?"
-id: "editing-generated-code-outside-platform"
+title: "Can WaveMaker apps be modified outside the platform by manually editing the generated code?"  
+id: ""
 sidebar_label: "Editing the Generated code outside the Platform"
---- 
-See the [FAQs](index.md) for WaveMaker app development.      
-
 ---
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.
+
+---      
 
 For WaveMaker apps a modular client-side code (AngularJS, CSS, and HTML) incorporating industry best practices is generated, thus making it Maven complaint. As such, for any WaveMaker app, a zip file can be generated which includes a pom.xml file. This zip file can be imported to any IDE like IntelliJ or Eclipse. The backend artifacts included in the zip file can be modified from the IDE.
 

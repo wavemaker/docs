@@ -2,7 +2,7 @@
 title: "What application architectures does WaveMaker Apps support?"
 id: "wavemaker-application-architecture"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 

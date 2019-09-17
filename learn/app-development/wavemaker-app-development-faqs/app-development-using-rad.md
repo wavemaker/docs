@@ -3,7 +3,7 @@ title: "How does WaveMaker simplify app development using the RAD paradigm?"
 id: "app-development-using-rad"
 sidebar_label: "Simplify app development using the RAD paradigm"
 ---
-See the [FAQs](index.md) section for WaveMaker app development.   
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) section for WaveMaker app development.   
 
 ---
 

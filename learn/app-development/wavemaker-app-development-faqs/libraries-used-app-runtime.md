@@ -3,7 +3,7 @@ title: "What libraries are used to build WaveMaker App runtime?"
 id: "libraries-used-app-runtime"
 sidebar_label: "Libraries used to build WaveMaker App runtime"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 

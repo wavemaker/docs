@@ -3,7 +3,7 @@ title: "Is WaveMaker App scalable in terms of usage?"
 id: "is-wavemaker-app-scalable"
 sidebar_label: "Is WaveMaker App scalable"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 

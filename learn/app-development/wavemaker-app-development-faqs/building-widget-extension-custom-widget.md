@@ -3,7 +3,7 @@ title: "How to build widget extensions or custom widgets?"
 id: "building-widget-extension-custom-widget"
 sidebar_label: "Building Widget Extension or Custom Widgets"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 

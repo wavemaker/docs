@@ -2,7 +2,7 @@
 title: "Explain the WaveMaker Architecture"
 id: "wavemaker-architecture"
 ---
-See the [FAQs](index.md) for WaveMaker app development. 
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development. 
 
 ---
      

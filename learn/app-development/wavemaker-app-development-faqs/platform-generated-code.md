@@ -3,7 +3,7 @@ title: "Is the platform generated code readable and maintainable?"
 id: "platform-generated-code"
 sidebar_label: "Maintaining Platform Generated Code"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 --- 
 

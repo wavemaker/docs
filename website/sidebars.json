@@ -301,19 +301,13 @@
             "how-to-mobile-development",
             "how-to-widgets",
             "how-to-prefabs"]
-      },
-      {
-        "type": "subcategory2",
-        "label": "Container",
-        "ids": [
-            "exampledoc4",
-            "exampledoc5"]
       }
     ],
     "Policy": ["xss-antisamy-policy-configuration"],
 
     "FAQs": [
-          "app-development/wavemaker-app-development-faqs/index" ],
+          "app-development/wavemaker-app-development-faqs/index",
+          "how-to-docs" ],
     
     "View all FAQs": [
           "app-development/wavemaker-app-development-faqs/what-is-wavemaker-app",          

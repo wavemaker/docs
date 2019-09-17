@@ -3,7 +3,7 @@ title: "What databases are supported by WaveMaker Platform?"
 id: "databases-supported-by-wavemaker-platform"
 sidebar_label: "Databases Supported by WaveMaker Platform"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 Following Databases can be used to build WaveMaker Apps:

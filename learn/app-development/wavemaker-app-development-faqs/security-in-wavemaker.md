@@ -3,7 +3,7 @@ title: "How to enable Security for WaveMaker apps?"
 id: "security-in-wavemaker"
 sidebar_label: "Enabling security for WaveMaker apps"
 ---
-See the [FAQs](index.md) for WaveMaker app development.  
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.  
 
 ---
     

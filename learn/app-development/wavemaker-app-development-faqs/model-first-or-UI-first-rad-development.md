@@ -3,7 +3,7 @@ title: "Does WaveMaker use the model-first approach or the UI-first approach for
 id: "model-first-or-UI-first-rad-development"
 sidebar_label: ""
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 

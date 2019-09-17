@@ -3,7 +3,7 @@ title: "How are the application stack upgrades done?"
 id: "application-stack-upgrades"
 sidebar_label: "Application Stack Upgrades"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 

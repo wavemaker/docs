@@ -3,7 +3,7 @@ title: "Are there any licensing restrictions in re-distributing WaveMaker apps?"
 id: "redistributing-licensing"
 sidebar_label: "Licensing Restrictions for re-distributing"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 

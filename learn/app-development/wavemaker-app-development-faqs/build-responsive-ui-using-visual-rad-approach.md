@@ -3,7 +3,7 @@ title: "How to build responsive UI using Visual RAD approach in WaveMaker?"
 id: "build-responsive-ui-using-visual-rad-approach"
 sidebar_label: "Build Responsive UI using Visual RAD Approach"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 

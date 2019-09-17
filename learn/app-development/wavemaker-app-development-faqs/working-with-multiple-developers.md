@@ -3,7 +3,7 @@ title: "Can multiple developers work on a WaveMaker app?"
 id: "working-with-multiple-developers"
 sidebar_label: "Working with Multiple Developers"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 Collaborated and continuous development is part of WaveMaker platform. WaveMaker Apps can be shared with multiple users. WaveMaker’s integrated Version Control System (Git) allows pulling changes, merging and resolving conflicts. Apps can also be pushed to External Repos like GitHub or Bitbucket.

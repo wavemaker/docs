@@ -3,7 +3,7 @@ title: "Can I publish the Mobiles apps built on WaveMaker to App Stores without 
 id: "publish-to-app-store-without-any-limitations"
 sidebar_label: "Can I Publish to App Store without any Limitations?"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 The Mobile Themes give native look-n-feel of the same page based on the Platform (IOS, Android etc.). Most importantly themes adhere to design guidelines of the Platform, for example, the Page Title in Android platform needs to be left aligned while for iOS it needs to be centered or the menu tab needs to be rendered differently.

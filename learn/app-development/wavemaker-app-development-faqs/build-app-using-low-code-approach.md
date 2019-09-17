@@ -3,7 +3,7 @@ title: "How to build app using low-code approach in WaveMaker?"
 id: "build-app-using-low-code-approach"
 sidebar_label: "Build app using low-code approach"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 

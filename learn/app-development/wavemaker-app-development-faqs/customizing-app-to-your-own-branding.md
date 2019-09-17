@@ -3,7 +3,7 @@ title: "Can I customize the look and feel of the App to match the branding of my
 id: "customizing-app-to-your-own-branding"
 sidebar_label: "Customizing your app to your own branding standards"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 Yes. WaveMaker Themes are based upon Bootstrap CSS markup. App developer can choose from a wide range of inbuilt Themes provided with WaveMaker. With a working knowledge of HTML, CSS, LESS and Grunt, app developer can build their own themes and import them into WaveMaker platform. These imported Themes will be available for use across the apps.

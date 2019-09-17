@@ -3,7 +3,7 @@ title: "How does WaveMaker support Micro-Services enabled architecture?"
 id: "micro-services-enabled-architecture"
 sidebar_label: "Micro-Services enabled architecture"
 ---
-See the [FAQs](index.md) for WaveMaker app development.      
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.      
 
 ---
 [![](/learn/assets/services_concept.png)](/learn/assets/services_concept.png)
