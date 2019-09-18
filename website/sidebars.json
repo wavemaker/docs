@@ -306,7 +306,7 @@
         "tutorials/asset-management-app"
       ],
 
-     "How-tos": 
+     "How-tos: Overview": 
     [
         "howtos-documents",
         "how-to-app-development",
@@ -490,7 +490,8 @@
     "How-to: Rating Widget":
     [
       "how-tos/rating-widget-using-static-data",
-      "how-tos/rating-widget-using-variable",
+      "how-tos/rating-widget-using-static-variable",
+      "building-rating-widget-using-variable",
       "how-tos/rating-widget-interactive"
     ],
 

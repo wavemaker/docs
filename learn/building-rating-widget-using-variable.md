@@ -1,5 +1,5 @@
 ---
-title: "Building Rating Widget using Variable"
+title: "Build Rating Widget using Model Variable"
 id: ""
 ---
 

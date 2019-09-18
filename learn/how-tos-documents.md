@@ -1,6 +1,6 @@
 ---
 id: "howtos-documents"
-title: "How-tos Overview"
+title: "How-to Documentation"
 ---
 ---
 See the how-tos for the each specified category. 

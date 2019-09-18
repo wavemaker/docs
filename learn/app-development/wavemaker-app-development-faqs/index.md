@@ -1,5 +1,5 @@
 ---
-title: "FAQs - App Development"
+title: "FAQs - WaveMaker"
 id: "index"
 sidebar_label: "FAQs Overview"
 ---
