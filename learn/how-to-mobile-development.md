@@ -18,7 +18,7 @@ How tos: Working Solutions for WaveMaker Features Mobile App Development
 
 *   [Gesture Support Basics](/learn/hybrid-mobile/gesture-support/)
 *   [Setting Swipe Gestures for a List](/learn/how-tos/setting-swipe-gestures-list-widget/)_New_
-*   [Working with Pull to Refresh](/learn/how-tos/working-pull-refresh)_New_
+*   [Working with Pull to Refresh](/learn/how-tos/working-pull-refresh)
 
 ## Mobile Widgets
 ---

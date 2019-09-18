@@ -399,27 +399,156 @@
       "how-tos/generate-pdf-file-using-jasper-reports"
     ],
 
-    "How-to: ":
+    "How-to: Mobile Gesture":
     [
-
+      "hybrid-mobile/gesture-support",
+      "how-tos/setting-swipe-gestures-list-widget",
+      "how-tos/working-pull-refresh"
     ],
 
-    "How-to: ":
+    "How-to: Mobile Widgets":
     [
-
+      "hybrid-mobile/mobile-navbar",
+      "how-tos/using-search-widget-within-navbar",
+      "app-development/widgets/mobile-widgets/barcode-scanner"  
     ],
 
-    "How-to: ":
+    "How-to: Mobile UI Design":
     [
-
+      "how-tos/splashscreens-icons",
+      "how-tos/using-cordova-plugins"
     ],
 
-    "How-to: ":
+    "How-to: Mobile Integrate":
     [
+      "hybrid-mobile/mobile-integrations-amazon-sns",
+      "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
+      "hybrid-mobile/use-push-notification-wm-mobile-app",
+      "mobile-app-development/invoking-web-app-apis-mobile-apps"
+    ],
 
+    "How-to: Data Table":
+    [
+      "how-tos/view-master-detail-data-records-using-data-table",
+      "how-tos/add-master-detail-records-using-data-table",
+      "how-tos/export-data-data-table",
+      "how-tos/dynamic-data-tables",
+      "how-tos/data-table-column-bound-query"
+    ],
+
+    "How-to: List Widget":
+    [
+      "how-tos/list-grouped",
+      "how-tos/list-multi-grouped",
+      "how-tos/list-data-table",
+      "how-tos/building-editable-list",
+      "how-tos/building-cascading-lists",
+      "how-tos/list-item-access",
+      "how-tos/localization-data-table-column-headings"
+    ],
+
+    "How-to: Forms":
+    [
+      "how-tos/using-wizard-cumulative-data-entry-form",
+      "how-tos/live-form-tabbed-form",
+      "how-tos/live-form-linking-another-widget",
+      "how-tos/live-form-related-fields",
+      "how-tos/using-cascading-select-autocomplete-live-form-fields",
+      "how-tos/using-cascading-select-within-live-form",
+      "how-tos/using-cascading-filter-populate-live-form",
+      "how-tos/using-wizard-master-detail-live-form",
+      "how-tos/using-wizard-progressive-data-entry-live-form",
+      "how-tos/using-wizard-cumulative-data-entry-live-form"
+    ],
+
+    "How-to: Calendar":
+    [
+      "how-tos/calendar-usage-create-event",
+      "how-tos/calender-usage-google-calendar-integration"
+    ],
+
+    "How-to: CheckboxSet":
+    [
+      "how-tos/checkboxset-filter-list-data"
+    ],
+
+    "How-to: FileUpload":
+    [
+      "how-tos/file-upload-widget-operations",
+      "how-tos/upload-file-save-database",
+      "how-tos/file-upload-blob-data",
+      "how-tos/file-upload-custom-directory",
+      "how-tos/accessing-file-upload-java-code",
+      "how-tos/upload-files-from-live-form-form"
+    ],
+
+    "How-to: Radioset":
+    [
+      "how-tos/radioset-filter-list"
+    ],
+
+    "How-to: Rating Widget":
+    [
+      "how-tos/rating-widget-using-static-data",
+      "how-tos/rating-widget-using-variable",
+      "how-tos/rating-widget-interactive"
+    ],
+
+    "How-to: Select Widget":
+    [
+      "how-tos/configuring-select-widget-static-list-values",
+      "how-tos/configuring-select-widget-variable",
+      "how-tos/configuring-select-widget-display-data-fields",
+      "how-tos/configuring-select-widget-database-fields",
+      "how-tos/configuring-cascading-select"
+    ],
+
+    "How-to: Chart Widget":
+    [
+      "how-tos/charts-displaying-user-selection-another-widget",
+      "how-tos/charts-handling-dynamic-data",
+      "how-tos/charts-custom-data"
+    ],
+
+    "How-to: Live Filter":
+    [
+      "how-tos/live-filter-applying",
+      "how-tos/live-filter-multiple-values",
+      "how-tos/live-filter-range-filter"
+    ],
+
+    "How-to: Container Widget":
+    [
+      "how-tos/setting-partial-page-content-accordion-within-list",
+      "how-tos/setting-partial-page-content-panel-within-list-using-javascript"
+    ],
+
+    "How-to: Tree Widget":
+    [
+      "how-tos/tree-use-case-static-variable",
+      "how-tos/tree-use-case-java-service",
+      "how-tos/tree-use-case-dynamic-tree"
+    ],
+
+    "How-to: Nav Widget":
+    [
+      "how-tos/restricting-menu-item-display-based-user-role",
+      "app-development/widgets/navigation/nav-basic-usage"
+    ],
+
+    "How-to: Dropdown":
+    [
+      "how-tos/restricting-menu-item-display-based-user-role",
+      "how-tos/implementing-localization-dropdown-menu"
+    ],
+
+    "How-to: Prefabs":
+    [
+      "how-tos/create-prefab-using-third-party-ui-widgets",
+      "how-tos/create-prefab-using-d3-nvd3-charts",
+      "how-tos/create-prefab-using-d3-library-datamaps",
+      "how-tos/create-prefab-using-jquery-plugin"
     ]
-
-
   },
 
 

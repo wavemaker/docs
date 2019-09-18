@@ -73,7 +73,7 @@ How tos: Working Solutions for using WaveMaker Widgets
 *   [How to create an event and save it in a Database](/learn/how-tos/calendar-usage-create-event/)
 *   [How to integrate with Google Calendar](/learn/how-tos/calender-usage-google-calendar-integration/)
 
-### CheckboxSet Widget
+## CheckboxSet Widget
 
 *   [How to use CheckboxSet widget to filter a List](/learn/how-tos/checkboxset-filter-list-data/)
 
