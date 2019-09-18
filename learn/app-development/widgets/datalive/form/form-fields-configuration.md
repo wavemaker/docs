@@ -52,31 +52,3 @@ There are various ways in which Form fields can be validated depending upon the 
 
 [![](/learn/assets/LF_valid.png)](/learn/assets/LF_valid.png)
 
-< Configurations
-
-Events & Methods >
-
-Contents
-
-- [1\. Live & Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
-    - [1.1 Cards](/learn/app-development/widgets/datalive/cards/)
-    - [1.2 Data Table](/learn/app-development/widgets/datalive/data-table/)
-    - [1.3 Form](/learn/app-development/widgets/datalive/form/)
-        - [i. Data Source](/learn/app-development/widgets/datalive/form/form-data-source/)
-        - [ii. Layouts](/learn/app-development/widgets/datalive/form/form-layouts/)
-        - [iii. Form Configuration](/learn/app-development/widgets/datalive/form/form-configurations/)
-        - [iv. Fields Configuration](#)
-        - [v. Events & Methods](/learn/app-development/widgets/datalive/form/form-events-methods/)
-        - [vi. Usage Scenarios](/learn/app-development/widgets/datalive/form/form-usage-scenarios/)
-    - [1.4 List](/learn/app-development/widgets/datalive/list/)
-    - [1.5 Live Form](/learn/app-development/widgets/datalive/live-form/)
-    - [1.6 Live Filter](/learn/app-development/widgets/datalive/live-filter/)
-- [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
-- [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-- [4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
-- [5\. Chart Widgets](/learn/app-development/widgets/widget-library/#chart)
-- [6\. Navigation Widgets](/learn/app-development/widgets/widget-library/#navigation)
-- [7\. Advanced Widgets](/learn/app-development/widgets/widget-library/#advanced)
-- [8\. Modal Dialog Widgets](/learn/app-development/widgets/widget-library/#dialog)
-- [9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
-- [10\. Mobile & Device Widgets](/learn/app-development/widgets/widget-library/#mobile)

@@ -33,16 +33,3 @@ Steps in using OAuth Prefabs:
 5. Import the required API as a REST service to Studio and set the parameters as required.
 6. The API data will be exposed in the form of Service Variables. Use these for binding to any widgets in your application.
 
-Box > Facebook > Google > Instagram > LinkedIn >
-
-[9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
-
-- [9.1 Youtube](/learn/app-development/widgets/prefab/youtube/)
-- [9.2 Googlemaps](/learn/app-development/widgets/prefab/googlemaps/)
-- [9.3 QRCode](/learn/app-development/widgets/prefab/qrcode/)
-- [9.4 OAuth Prefabs](/learn/app-development/widgets/prefab/oauth-prefabs/)
-    - [9.4.1 Box](/learn/app-development/widgets/prefab/oauth-prefabs/box/)
-    - [9.4.2 Facebook](/learn/app-development/widgets/prefab/oauth-prefabs/facebook/)
-    - [9.4.3 Google](/learn/app-development/widgets/prefab/oauth-prefabs/google/)
-    - [9.4.4 Instagram](learn/app-development/widgets/prefab/oauth-prefabs/instagram/)
-    - [9.4.5 LinkedIn](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/)

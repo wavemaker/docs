@@ -110,29 +110,3 @@ For each Prefab you will find 3 subfolders:
 
 In this document, we have learned the basics of a Prefab what they are and how they are implemented within WaveMaker. For details on how to use [predefined Prefabs](/learn/app-development/widgets/widget-library/#prefabs) or to [create your own Prefabs](/learn/app-development/custom-widgets/creating-prefabs/) refer the links.
 
-Pre-defined Prefabs >
-
-Custom Prefabs >
-
-4\. Prefabs - Custom Widgets
-
-- [4.1 Prefabs - Custom Widgets & Extensions](#)
-    - [i. Overview](#)
-        - [○ Understanding Prefabs](#prefabs-example)
-        - [○ Prefabs & API Integration](#prefabs-apis)
-        - [○ Prefab Benefits](#prefab-benefits)
-        - [○ Prefab Anatomy](#prefab-anatomy)
-        - [○ Prefab Types](#prefab-types)
-    - [ii. Prefab Features](#prefab-features)
-    - [iii. Publishing Prefabs](#publishing-prefabs)
-    - [iv. Importing Prefabs](#importing-prefabs)
-    - [v. File Structure](#files-prefabs)
-- 4.2 Predefined Prefabs
-    - [i. Basic Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
-    - [ii. OAuth Prefabs](/learn/app-development/widgets/prefab/oauth-prefabs/)
-- 4.3 Custom Prefabs
-    - [i. Creation](/learn/app-development/widgets/creating-prefabs/)
-    - [ii. Configuration](/learn/app-development/widgets/creating-prefabs/#prefab-settings)
-    - [iii. Publishing](/learn/app-development/widgets/creating-prefabs/#publish-prefab)
-    - [iv. Script Access](/learn/app-development/widgets/creating-prefabs/#accessing-prefab-through-scripting)
-    - [v. Use Cases](/learn/app-development/ui-design/use-cases-prefabs/)

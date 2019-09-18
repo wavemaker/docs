@@ -24,34 +24,3 @@ Post-deployment you have three further options:
 
 [![](/learn/assets/cloud_postdeploy.png)](/learn/assets/cloud_postdeploy.png)
 
-Release Management >
-
-9\. Deployment
-
-- [9.1 One-Click Deployment](#)
-    - [i. Overview](#)
-    - [ii. Deployment to Cloud](#cloud-deployment)
-- 9.2 Release Management
-    - [i. Overview](/learn/app-development/deployment/release-management/)
-    - [ii. Implementation](/learn/app-development/deployment/release-management/#working)
-- 9.3 Manage Deployed Apps
-    - [i. Overview](/learn/app-development/deployment/manage-deployed-apps/)
-    - [ii. Apps Portal](/learn/app-development/deployment/manage-deployed-apps/#apps-portal)
-    - [iii. Manage Deployed App](/learn/app-development/deployment/manage-deployed-apps/#manage-deployed-app)
-    - [iv. Push to Live](/learn/app-development/deployment/manage-deployed-apps/#push-to-live)
-    - [v. App Versioning](/learn/app-development/deployment/manage-deployed-apps/#versioning)
-    - [vi. AWS Deployment](/learn/app-development/deployment/deployment-to-aws/)
-    - [vii. Azure Deployment](/learn/app-development/deployment/deployment-to-azure/)
-    - [viii. Google Cloud Deployment](/learn/app-development/deployment/deployment-google-cloud/)
-- 9.4 Deployment to Web Server
-    - [i. Overview](/learn/app-development/deployment/deployment-web-server/#)
-    - [ii. WAR file generation](/learn/app-development/deployment/deployment-web-server/#war-file-generation)
-    - [iii. Deployment to Tomcat](/learn/how-tos/wavemaker-application-deployment-tomcat/)
-    - [iv. Deployment to WebSphere](/learn/how-tos/wavemaker-application-deployment-websphere-liberty-profile/)
-    - [v. Deployment to JBoss](/learn/how-tos/wavemaker-application-deployment-jboss/)
-    - [vi. Deployment to WebLogic](/learn/how-tos/wavemaker-application-deployment-weblogic-application-server/)
-- 9.5 Configuration Profiles
-    - [i. Overview](/learn/app-development/deployment/configuration-profiles/)
-    - [i. Development Profiles](/learn/app-development/deployment/configuration-profiles/#dev-profile)
-    - [ii. Deployment Profiles](/learn/app-development/deployment/configuration-profiles/#deploy-profile)
-    - [iii. Custom Profiles](/learn/app-development/deployment/configuration-profiles/#custom-profile)

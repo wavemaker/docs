@@ -25,37 +25,3 @@ Once the design and building an app is completed, it needs to be tested. The ea
 
 As long as your project is running in WaveMaker Studio, it will be available to other users. If you close the project or log out of WaveMaker Studio, it will become unavailable. When you open a new project within WaveMaker Studio the current project is closed.
 
-Import Export Update Apps >
-
-8\. Developer Integrations
-
-- [8.1 Test Run (Preview) Apps](#)
-    - [i. Overview](#)
-    - [ii. Preview](#preview)
-- 8.2 Import, Export & Update App
-    - [i. Overview](/learn/app-development/dev-integration/import-export-update-apps/)
-    - [ii. Export](/learn/app-development/dev-integration/import-export-update-apps/#export-project)
-    - [iii. Import](/learn/app-development/dev-integration/import-export-update-apps/#import-project)
-    - [iv. Update](/learn/app-development/dev-integration/import-export-update-apps/#update-project)
-    - [v. Project Recovery](/learn/app-development/dev-integration/import-export-update-apps/#project-recovery)
-        - [○ Export](/learn/app-development/dev-integration/import-export-update-apps/#export)
-        - [○ Restore](/learn/app-development/dev-integration/import-export-update-apps/#restore-project)
-- 8.3 Developer Collaboration
-    - [i. Overview](/learn/app-development/dev-integration/developer-collaboration/)
-    - [ii. Project Sharing](/learn/app-development/dev-integration/developer-collaboration/#project-sharing)
-    - [iii. Code Sharing - VCS](/learn/app-development/dev-integration/developer-collaboration/#vcs)
-        - [○ Checkout](/learn/app-development/dev-integration/developer-collaboration/#checkout)
-        - [○ Pull Changes](/learn/app-development/dev-integration/developer-collaboration/#pull-changes)
-        - [○ Push Changes](/learn/app-development/dev-integration/developer-collaboration/#push-changes)
-        - [○ View Changes](/learn/app-development/dev-integration/developer-collaboration/#view-changes)
-        - [○ Commit History](/learn/app-development/dev-integration/developer-collaboration/#commit-history)
-        - [○ Merge Conflicts](/learn/app-development/dev-integration/developer-collaboration/#merge-changes)
-        - [○ Push to External Repo](/learn/app-development/dev-integration/developer-collaboration/#push-to-external-repo)
-- 8.4 Debugging
-    - [i. Overview](/learn/app-development/dev-integration/debugging/)
-    - [ii. Debugging using Log Files](/learn/app-development/dev-integration/debugging/#logs)
-    - [iii. Debugging through JavaScript](/learn/app-development/dev-integration/debugging/#javascript)
-- 8.5 App Extensions
-    - [i. Overview](/learn/dev-integration/extending-application-using-ides/)
-    - [ii. Working with IDEs](/learn/dev-integration/extending-application-using-ides/#steps)
-    - [iii. Integrating with Jenkins](/learn/dev-integration/extending-application-using-ides/#jenkins)

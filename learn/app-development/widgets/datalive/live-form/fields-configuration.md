@@ -68,28 +68,3 @@ Widgets like select, autocomplete, radioset, checkboxset and switch can be used 
 5. The dataset for the form field widget is auto populated with the Variable Dataset field. Data field and display field is set to field’s key. Here, the dataset value can be bound to any other variable or widget. [![](/learn/assets/lf_widget_propss.png)](/learn/assets/lf_widget_propss.png)
 6. The widget can be changed from Live Form Advanced Settings also. [![](/learn/assets/lf_widget_AS.png)](/learn/assets/lf_widget_AS.png)
 7. Now, at runtime, the user can use this widget to select a value from predefined options. [![](/learn/assets/lf_widget_run.png)](/learn/assets/lf_widget_run.png)
-
-< Configurations
-
-Actions >
-
-[1\. Live & Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
-
-- [1.1 Cards](/learn/app-development/widgets/datalive/cards/)
-- [1.2 Data Table](/learn/app-development/widgets/datalive/data-table/)
-- [1.3 Form](/learn/app-development/widgets/datalive/form/)
-- [1.4 List](/learn/app-development/widgets/datalive/list/)
-- [1.5 Live Form](/learn/app-development/widgets/datalive/live-form/)
-    - [i. Data Source](/learn/app-development/widgets/datalive/live-form/live-form-data-source/)
-    - [ii. Layouts](/learn/app-development/widgets/datalive/live-form/liveform-layouts/)
-    - [iii. Configuration](/learn/app-development/widgets/datalive/live-form/liveform-configurations/)
-    - [iv. Fields Configuration](/learn/app-development/widgets/datalive/live-form/fields-configuration/)
-        - [○ Display Options](#display)
-        - [○ Validations](#validations)
-        - [○ Widget Usage](#widgets)
-    - [v. Actions](/learn/app-development/widgets/datalive/live-form/liveform-actions/)
-    - [vi. Events & Methods](/learn/app-development/widgets/datalive/live-form/events-methods/)
-        - [○ Events](/learn/app-development/widgets/datalive/live-form/events-methods/#events)
-        - [○ Methods](/learn/app-development/widgets/datalive/live-form/events-methods/#methods)
-    - [v. Use Cases](/learn/app-development/widgets/datalive/live-form/liveform-use-cases/)
-- [1.6 Live Filter](/learn/app-development/widgets/datalive/live-filter/)

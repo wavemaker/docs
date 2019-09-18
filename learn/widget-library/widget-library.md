@@ -144,24 +144,3 @@ For an overview on Prefabs and how you can create Prefabs [see here](/learn/app-
 |  | **Barcode scanner** can be used for scanning barcode. | [Overview](/learn/app-development/widgets/mobile-widgets/barcode-scanner/) | [API Docs]([sc name='api-doc-version']docs/classes/Barcodescanner.html) |
 |  | **Camera** can be used to access the device camera for taking pictures and videos. | [Overview](/learn/app-development/widgets/mobile-widgets/camera/) | [API Docs]([sc name='api-doc-version']docs/classes/Camera.html) |
 
-< Widgets Overview
-
-Custom Widgets or Prefabs >
-
-3\. UI Elements - Widgets & Prefabs
-
-- 3.1 Widgets
-    - [i. Basics](/learn/app-development/widgets/ui-elements/#widget-basics)
-    - [ii. Properties](/learn/app-development/widgets/ui-elements/#widget-properties)
-    - [iii. Data Widgets](/learn/app-development/widgets/ui-elements/#live-and-data)
-- [3.2 Widget Library](#)
-    - [1\. Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
-    - [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
-    - [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-    - [4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
-    - [5\. Chart Widgets](/learn/app-development/widgets/widget-library/#chart)
-    - [6\. Navigation Widgets](/learn/app-development/widgets/widget-library/#nav-widgets)
-    - [7\. Advanced Widgets](/learn/app-development/widgets/widget-library/#advanced)
-    - [8\. Modal Dialog Widgets](/learn/app-development/widgets/widget-library/#dialog)
-    - [9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
-    - [10\. Mobile & Device Widgets](/learn/app-development/widgets/widget-library/#mobile)
