@@ -345,6 +345,78 @@
       "how-tos/localization-wavemaker-apps",
       "how-tos/localization-error-messages",
       "how-tos/localization-data-table-column-headings"
+    ],
+
+    "How-to: App Security":
+    [
+      "how-tos/saml-integration-onelogin",
+      "how-tos/saml-integration-adfs",
+      "how-tos/custom-security-using-google-oauth-prefab",
+      "how-tos/multiple-security-provider-implementation",
+      "how-tos/customizing-post-authentication-handlers"
+    ],
+
+    "How-to: Databases":
+    [
+      "how-tos/queries-dynamic-clause",
+      "how-tos/connect-azure-sql-server",
+      "app-development/services/database-services/download-jdbc-driver-jar",
+      "how-tos/fetch-default-number100-records-database"
+    ],
+
+    "How-to: Web Services":
+    [
+      "how-tos/using-post-method-send-data-rest-api" 
+    ],
+
+    "How-to: Java Services":
+    [
+      "how-tos/sending-email-using-java-service",
+      "how-tos/implementing-forgot-password-feature-using-java-service",
+      "how-tos/accessing-rest-apis-java-service",
+      "how-tos/scheduling-java-service",
+      "app-development/services/database-services/orm-artifacts/#custom-query-syntax",
+      "how-tos/pre-post-processing-db-service-apis"
+    ],
+
+    "How-to: Use Variable":
+    [
+      "how-tos/using-variables-queries-procedure"
+    ],
+
+    "How-to: Use JavaScript":
+    [
+      "how-tos/using-javascript-binding",
+      "how-tos/using-javascript-external-url",
+      "how-tos/using-javascript-loop-command"
+    ],
+
+    "How-to: Developer-side":
+    [
+      "how-tos/synchronizing-wavemaker-apps-ides-beta",
+      "how-tos/integrating-amazon-cognito-user-authentication",
+      "how-tos/integrating-sample-jasper-report-wavemaker-application",
+      "how-tos/generate-pdf-file-using-jasper-reports"
+    ],
+
+    "How-to: ":
+    [
+
+    ],
+
+    "How-to: ":
+    [
+
+    ],
+
+    "How-to: ":
+    [
+
+    ],
+
+    "How-to: ":
+    [
+
     ]
 
 
