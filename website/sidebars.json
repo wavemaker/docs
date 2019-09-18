@@ -714,6 +714,26 @@
     [ 
       "app-development/widgets/datalive/live-filter"    
     ] 
+  },
+
+  "Release Notes": 
+  {
+    "Release Notes": 
+      [
+      "wavemaker-release-notes",
+      "wavemaker-release-notes/v10-1-0", 
+      "wavemaker-release-notes/v10-0-4",
+      "wavemaker-release-notes/v10-0-3",
+      "wavemaker-release-notes/v10-0-2",
+      "wavemaker-release-notes/v10-0-1"  
+      ],
+
+      "Release v9.GA": 
+      [
+      "wavemaker-release-notes/v10-0-0"
+     
+      ]
+    
   }
 
 }
