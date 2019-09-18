@@ -29,23 +29,3 @@ Once you add a widget to your page, click on the widget to see the available act
 
 We have seen the basics of the HTML/Bootstrap based widgets or UI Components and properties.
 
-Basic Widgets >
-
-Custom Widgets or Prefabs >
-
-3\. UI Elements - Widgets & Prefabs
-
-- [3.1 Widgets](#)
-    - [i. Basics](#widget-basics)
-    - [ii. Properties](#widget-properties)
-- 3.2 Widget Library
-    - [1\. Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
-    - [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
-    - [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-    - [4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
-    - [5\. Chart Widgets](/learn/app-development/widgets/widget-library/#chart)
-    - [6\. Navigation Widgets](/learn/app-development/widgets/widget-library/#nav-widgets)
-    - [7\. Advanced Widgets](/learn/app-development/widgets/widget-library/#advanced)
-    - [8\. Modal Dialog Widgets](/learn/app-development/widgets/widget-library/#dialog)
-    - [9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
-    - [10\. Mobile & Device Widgets](/learn/app-development/widgets/widget-library/#mobile)

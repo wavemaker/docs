@@ -57,18 +57,8 @@ As mentioned earlier, default roles are set by the Platform. Of these roles, som
 
 | Role | Permissions |
 | --- | --- |
-| Project Admin | 
-- All Studio Permissions
-
- |
-| Default | 
-
-- Pages - Create, Edit, Delete, and View
-- Services - View Databases, View Java Services, View REST Services, View SOAP Services, View Websocket Sevices, View API's,
-- View Settings,
-- View User Management
-
- |
+| Project Admin | - All Studio Permissions |
+| Default | - Pages - Create, Edit, Delete, and View <br/>- Services - View Databases, View Java Services, View REST Services, View SOAP Services, View Websocket Sevices, View API's, <br/>- View Settings, <br/>- View User Management |
 
 ## Role Creation and Assignment
 
@@ -106,119 +96,28 @@ As mentioned earlier, two default roles are set by the Platform. You can add rol
 | Pages |Create, Edit, Delete and View |
 | Database Services |   Create/Import      , Edit      , Delete    and View  |
 | Database - Queries |  Create Queries  , Edit Queries  , Delete Queries adn View Queries  |
-| Database - Procedures | - Create Procedures - Edit Procedures - Delete Procedures - View Procedures|
-| Java Service | - Create Java Service - Edit Java Service - Delete Java Service - View Java Service |
-| REST Service | - Import REST Service - Edit REST Service  - Delete REST Service - View REST Service|
-| SOAP Service | - Import SOAP Service - Edit SOAP Service - Delete SOAP Service - View SOAP Service |
-| Web Socket Service | 
-
-- Import Web Socket Service
-- Edit Web Socket Service
-- Delete Web Socket Service
-- View Web Socket Service
-
- |
-| API Designer | 
-
-- Edit API Designer
-- View API Designer
-
- |
-| Security Service | 
-
-- Configure Security Service
-
- |
+| Database - Procedures | <br/>- Create Procedures <br/>- Edit Procedures <br/>- Delete Procedures <br/>- View Procedures|
+| Java Service | - Create Java Service <br/>- Edit Java Service <br/>- Delete Java Service <br/>- View Java Service |
+| REST Service | - Import REST Service <br/>- Edit REST Service  <br/>- Delete REST Service <br/>- View REST Service|
+| SOAP Service | - Import SOAP Service <br/>- Edit SOAP Service <br/>- Delete SOAP Service <br/>- View SOAP Service |
+| Web Socket Service | - Import Web Socket Service <br/>- Edit Web Socket Service <br/>- Delete Web Socket Service <br/>- View Web Socket Service |
+| API Designer |  - Edit API Designer <br/>- View API Designer |
+| Security Service |  - Configure Security Service |
 
 | Category | Permissions |
 | --- | --- |
-| i18n | 
-- Configure Languages
-- Delete Language
-- View i18n
-- Edit Messages
-
- |
-| VCS | 
-
-- Push, Pull, and View Log
-- Pull & View Log
-- Push
-- Push to External Repo
-
- |
-| Prefabs | 
-
-- Import Prefab
-- Delete Prefab
-
- |
-| Tools | 
-
-- DB Console
-- File Explorer
-
- |
-| Profiles | 
-
-- Configure Profiles
-
- |
-| Artifacts | 
-
-- Import Artifacts
-- View Artifacts
-
- |
-| Themes | 
-
-- Import Themes
-- Change Themes
-- View Themes
-
- |
-| Mobile | 
-
-- Export as Cordova zip
-- Send to PhoneGap
-- Build for Android
-
- |
+| i18n | - Configure Languages <br/>- Delete Language <br/>- View i18n <br/>- Edit Messages |
+| VCS | - Push, Pull, and View Log <br/>- Pull & View Log - Push <br/>- Push to External Repo |
+| Prefabs | - Import Prefab <br/>- Delete Prefab |
+| Tools | - DB Console <br/>- File Explorer |
+| Profiles | - Configure Profiles |
+| Artifacts |  - Import Artifacts <br/>- View Artifacts |
+| Themes | - Import Themes <br/>- Change Themes <br/>- View Themes |
+| Mobile | - Export as Cordova zip <br/>- Send to PhoneGap <br/>- Build for Android |
 
 | Category | Permissions |
 | --- | --- |
-| Project Actions | 
-- Export Project as Zip
-- Export Project as Shell
-- Export Project as Prefab
-- Export Project as Template Bundle
-- Update Sources
-- Enable Workspace Sync
-
- |
-| 
-
-- Export Project as WAR
-- Deploy Project
-- Publish Prefab To EDN
-- Publish Prefab to Workspace
-- Publish Project Shell To EDN
-- Publish Project shell to Workspace
-
- |
-| 
-
-- View Settings
-- Configure Settings
-
- |
-| 
-
-- View User Management
-- Configures User Permissions
-
- |
-
-< Pre-Requisites
-
-Artifact Repository >
+| Project Actions | - Export Project as Zip <br/>- Export Project as Shell <br/>- Export Project as Prefab <br/>- Export Project as Template Bundle <br/>- Update Sources <br/>- Enable Workspace Sync |
+| | - Export Project as WAR <br/>- Deploy Project <br/>- Publish Prefab To EDN <br/>- Publish Prefab to Workspace <br/>- Publish Project Shell To EDN <br/>- Publish Project shell to Workspace |
+| | - View Settings <br/>- Configure Settings |
+| | - View User Management <br/>- Configures User Permissions |

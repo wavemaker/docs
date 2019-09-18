@@ -165,11 +165,9 @@ Page.MyJavaServiceVariableonBeforeUpdate = function(variable, inputData, options
 | --- | --- |
 | **onResult** | This event is triggered as soon as the variable receives a response from the target service. onResult is called whether or not there was an error generated. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
 | **onBeforeDatasetReady** | This event is triggered just before the variable's dataSet property is updated with the data received from the target service (after onResult). This event handler gives you the opportunity to manipulate the data before your variable’s dataSet property is assigned this value. If you want to add rows to a Grid or List or Select, this is a good way to add in extra items into your results before your variable is set and your widget is updated. The new data can be returned from here in order to update the Variable’s dataSet. |
-| **Usage Examples** |
-| 
-
-Example 1: “data” is the response received from the target service. This event gives a chance to process this data before it is assigned to the Variable’s “dataSet” property. Please note, calling setData on the Variable from this event is not valid. Modified “data” should be returned from this event.
-
+| **Usage Examples** | |
+| | Example 1: “data” is the response received from the target service. This event gives a chance to process this data before it is assigned to the Variable’s “dataSet” property. Please note, calling setData on the Variable from this event is not valid. Modified “data” should be returned from this event. |
+```
 Page.HrdbEmployeeDataonBeforeDatasetReady = function(variable, data) {
     // the data has 'firstname' and 'lastname'
     // add a new field 'fullname' into the data
@@ -183,8 +181,9 @@ Page.HrdbEmployeeDataonBeforeDatasetReady = function(variable, data) {
         return new\_data;
     }
 };
-
- |
+```
+| | |
+| --- | --- |
 | **onSuccess** | Allows you to trigger an action when the Variable has completed its life cycle. Any component bound to the resultant dataSet of this Variable will be updated just before this event is triggered. So, If you want to trigger another Variable which is dependent on the dataSet of this Variable, the Variable should be triggered by this event. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
 | **onError** | This event is called if there is an error generated during the Service call. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
 
@@ -193,104 +192,3 @@ Page.HrdbEmployeeDataonBeforeDatasetReady = function(variable, data) {
 ## Methods
 
 Few Methods are exposed on Variables which can be used for achieving more control and accessing extra functionality. The methods differ based on the type of Variable, see the respective Variable document for the detailed listing.
-
-
-
-< Data Integration
-
-Variable Binding >
-
-6\. Data Integration - Variables
-
-- 6.1 Binding Layer
-    - [i. Overview](/learn/app-development/variables/data-integration/)
-- [6.2 Variables and Actions](#)
-    - [i. Overview](#)
-    - [ii. Variables](#variables)
-        - a. Database CRUD
-            - [○ Overview](/learn/app-development/variables/database-crud/)
-            - [○ Variable Creation](/learn/app-development/variables/database-crud/#creation)
-            - [○ Properties](/learn/app-development/variables/database-crud/#properties)
-            - [○ Events](/learn/app-development/variables/database-crud/#events)
-            - [○ Methods](/learn/app-development/variables/database-crud/#methods)
-        - b. Database API
-            - [○ Overview](/learn/app-development/variables/database-apis/)
-            - [○ Variable Creation](/learn/app-development/variables/database-apis/#creation)
-            - [○ Properties](/learn/app-development/variables/database-apis/#properties)
-            - [○ Events](/learn/app-development/variables/database-apis/#events)
-            - [○ Methods](/learn/app-development/variables/database-apis/#methods)
-        - c. Web Service
-            - [○ Overview](/learn/app-development/variables/web-service/)
-            - [○ Variable Creation](/learn/app-development/variables/web-service/#creation)
-            - [○ Properties](/learn/app-development/variables/web-service/#properties)
-            - [○ Events](/learn/app-development/variables/web-service/#events)
-            - [○ Methods](/learn/app-development/variables/web-service/#methods)
-        - d. Java Service
-            - [○ Overview](/learn/app-development/variables/java-services)
-            - [○ Variable Creation](/learn/app-development/variables/java-services/#creation)
-            - [○ Properties](/learn/app-development/variables/java-services/#properties)
-            - [○ Events](/learn/app-development/variables/java-services/#events)
-            - [○ Methods](/learn/app-development/variables/java-services/#methods)
-        - e. Security Service
-            - [○ Overview](/learn/app-development/variables/security-service/)
-            - [○ Variable Creation](/learn/app-development/variables/security-service/#creation)
-            - [○ Properties](/learn/app-development/variables/security-service/#properties)
-            - [○ Events](/learn/app-development/variables/security-service/#events)
-            - [○ Methods](/learn/app-development/variables/security-service/#methods)
-        - f. Model
-            - [○ Overview](/learn/app-development/variables/model-variable/)
-            - [○ Variable Creation](/learn/app-development/variables/model-variable/#creation)
-            - [○ Properties](/learn/app-development/variables/model-variable/#properties)
-            - [○ Events](/learn/app-development/variables/model-variable/#events)
-            - [○ Methods](/learn/app-development/variables/model-variable/#methods)
-        - g. Device Variables
-            - [○ Overview](/learn/hybrid-mobile/device-variables/#)
-            - [○ Services](/learn/hybrid-mobile/device-variables/#services)
-            - [○ Operations](/learn/hybrid-mobile/device-variables/#operations)
-            - [○ Events](/learn/hybrid-mobile/device-variables/#events)
-            - [○ Methods](/learn/hybrid-mobile/device-variables/#methods)
-            - [○ Usage](/learn/hybrid-mobile/device-variables/#usage)
-    - [iii. Actions](/learn/app-development/variables/variables-actions/#actions)
-        - i. Navigation
-            - [○ Overview](/learn/app-development/variables/navigation-action/)
-            - [○ Action Creation](/learn/app-development/variables/navigation-action/#creation)
-            - [○ Properties](/learn/app-development/variables/navigation-action/#properties)
-            - [○ Methods](/learn/app-development/variables/navigation-action/#methods)
-        - ii. Login
-            - [○ Overview](/learn/app-development/variables/login-action/)
-            - [○ Action Creation](/learn/app-development/variables/login-action/#creation)
-            - [○ Properties](/learn/app-development/variables/login-action/#properties)
-            - [○ Data](/learn/app-development/variables/login-action/#data)
-            - [○ Events](/learn/app-development/variables/login-action/#events)
-        - iii. Logout
-            - [○ Overview](/learn/app-development/variables/logout-action/)
-            - [○ Action Creation](/learn/app-development/variables/logout-action/#creation)
-            - [○ Properties](/learn/app-development/variables/logout-action/#properties)
-            - [○ Events](/learn/app-development/variables/logout-action/#events)
-        - iv. Timer
-            - [○ Overview](/learn/app-development/variables/timer-action/)
-            - [○ Action Creation](/learn/app-development/variables/timer-action/#creation)
-            - [○ Properties](/learn/app-development/variables/timer-action/#properties)
-            - [○ Events](/learn/app-development/variables/timer-action/#events)
-            - [○ Methods](/learn/app-development/variables/timer-action/#methods)
-        - v. Notification
-            - [○ Overview](/learn/app-development/variables/notification-action/)
-            - [○ Action Creation](/learn/app-development/variables/notification-action/#creation)
-            - [○ Properties](/learn/app-development/variables/notification-action/#properties)
-            - [○ Events](/learn/app-development/variables/notification-action/#events)
-            - [○ Methods](/learn/app-development/variables/notification-action/#methods)
-    - [iv. Error Handling](#error-handling)
-    - [v. Scoping](#scoping)
-    - [vi. Variable Events](#events)
-    - [vii. Events Implementation](#events-implementation)
-    - [viii. Methods](#methods)
-- 6.3 Variable Binding
-    - [i. Overview](/learn/variables/variable-binding/#)
-    - [ii. Data Binding](/learn/variables/variable-binding/#data-binding)
-    - [iii. Widget Binding](/learn/variables/variable-binding/#widget-binding)
-    - [iv. Binding Options](/learn/variables/variable-binding/#binding-options)
-- 6.4 JavaScript Access
-    - [i. Overview](/learn/variables/accessing-elements-via-javascript/#)
-    - [ii. Widget Controllers](/learn/variables/accessing-elements-via-javascript/#widget-controllers)
-    - [iii. Page Scripting](/learn/variables/accessing-elements-via-javascript/#page-scripting)
-    - [iv. Script Access](/learn/variables/accessing-elements-via-javascript/#script-access)

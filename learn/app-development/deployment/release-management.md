@@ -60,36 +60,3 @@ Apps Portal provides a platform for the user to manage the deployed apps. By def
 
 Most app development is incremental in nature, i.e. different phases will be hosting the app in various levels of development. The developer will be working on the latest version, while Live version would be at least one step behind. In such cases versioning system comes in handy. In WaveMaker, the app in Demo phase will be the last version deployed from Studio. When pushing from Demo to other phases, you have the option to change the version for better tracking and control. [Know more](/learn/app-development/deployment/manage-deployed-apps/#push-to-live).
 
-< One Click Deployment
-
-Manage Deployed Apps >
-
-9\. Deployment
-
-- 9.1 One-Click Deployment
-    - [i. Overview](/learn/app-development/deployment/one-click-deployment/)
-    - [ii. Deployment to Cloud](/learn/app-development/deployment/one-click-deployment/#cloud-deployment)
-- [9.2 Release Management](#)
-    - [i. Overview](#)
-    - [ii. Implementation](#working)
-- 9.3 Manage Deployed Apps
-    - [i. Overview](/learn/app-development/deployment/manage-deployed-apps/)
-    - [ii. Apps Portal](/learn/app-development/deployment/manage-deployed-apps/#apps-portal)
-    - [iii. Manage Deployed App](/learn/app-development/deployment/manage-deployed-apps/#manage-deployed-app)
-    - [iv. Push to Live](/learn/app-development/deployment/manage-deployed-apps/#push-to-live)
-    - [v. App Versioning](/learn/app-development/deployment/manage-deployed-apps/#versioning)
-    - [vi. AWS Deployment](/learn/app-development/deployment/deployment-to-aws/)
-    - [vii. Azure Deployment](/learn/app-development/deployment/deployment-to-azure/)
-    - [viii. Google Cloud Deployment](/learn/app-development/deployment/deployment-google-cloud/)
-- 9.4 Deployment to Web Server
-    - [i. Overview](/learn/app-development/deployment/deployment-web-server/#)
-    - [ii. WAR file generation](/learn/app-development/deployment/deployment-web-server/#war-file-generation)
-    - [iii. Deployment to Tomcat](/learn/how-tos/wavemaker-application-deployment-tomcat/)
-    - [iv. Deployment to WebSphere](/learn/how-tos/wavemaker-application-deployment-websphere-liberty-profile/)
-    - [v. Deployment to JBoss](/learn/how-tos/wavemaker-application-deployment-jboss/)
-    - [vi. Deployment to WebLogic](/learn/how-tos/wavemaker-application-deployment-weblogic-application-server/)
-- 9.5 Configuration Profiles
-    - [i. Overview](/learn/app-development/deployment/configuration-profiles/)
-    - [i. Development Profiles](/learn/app-development/deployment/configuration-profiles/#dev-profile)
-    - [ii. Deployment Profiles](/learn/app-development/deployment/configuration-profiles/#deploy-profile)
-    - [iii. Custom Profiles](/learn/app-development/deployment/configuration-profiles/#custom-profile)

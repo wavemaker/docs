@@ -246,30 +246,3 @@ You can delete a custom Prefab from your project using the delete icon in the [S
 
 We have seen the basics of creating a Prefab including the configuration settings, and various publishing options. Check out various use cases for Prefab creation by [clicking this link](/learn/app-development/custom-widgets/use-cases-prefabs/).
 
-< Prefabs
-
-Prefabs Use Cases >
-
-4\. Prefabs - Custom Widgets
-
-- 4.1 Prefabs - Custom Widgets & Extensions
-    - i. Overview
-        - [○ Understanding Prefabs](/learn/app-development/custom-widgets/custom-widgets/#)
-        - [○ Prefabs & API Integration](/learn/app-development/custom-widgets/custom-widgets/#prefabs-apis)
-        - [○ Prefab Benefits](/learn/app-development/custom-widgets/custom-widgets/#prefab-benefits)
-        - [○ Prefab Anatomy](/learn/app-development/custom-widgets/custom-widgets/#prefab-anatomy)
-        - [○ Prefab Types](/learn/app-development/custom-widgets/custom-widgets/#prefab-types)
-    - [ii. Prefab Features](/learn/app-development/custom-widgets/custom-widgets/#prefab-features)
-    - [iii. Publishing Prefabs](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs)
-    - [iv. Importing Prefabs](/learn/app-development/custom-widgets/custom-widgets/#importing-prefabs)
-    - [v. File Structure](/learn/app-development/custom-widgets/custom-widgets/#files-prefabs)
-- 4.2 Predefined Prefabs
-    - [i. Basic Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
-    - [ii. OAuth Prefabs](/learn/app-development/widgets/prefab/oauth-prefabs/)
-- [4.3 Custom Prefabs](#)
-    - [i. Creation](#)
-    - [ii. Configuration](#prefab-settings)
-    - [iii. Testing](#testing-prefab)
-    - [iv. Publishing](#publish-prefab)
-    - [v. Script Access](#accessing-prefab-through-scripting)
-    - [vi. Use Cases](/learn/app-development/ui-design/use-cases-prefabs/)
