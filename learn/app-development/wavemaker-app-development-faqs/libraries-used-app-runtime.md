@@ -17,6 +17,6 @@ To build WaveMaker app, following libraries are used:
 [![](/learn/assets/OS_Technology_Stack.png)](/learn/assets/OS_Technology_Stack.png)
     
 ## See Also
-
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [Technology Stack](/learn/app-development/wavemaker-overview/platform-overview/#technology-stack)
 

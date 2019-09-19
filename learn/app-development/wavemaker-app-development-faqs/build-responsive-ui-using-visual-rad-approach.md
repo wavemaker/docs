@@ -22,6 +22,6 @@ In WaveMaker, a Page has a flexible layout structure separated from the main con
 Also, WaveMaker widgets embrace Android Material Design specification for visual design and building interaction across multiple devices. Android Material Design provides standard design guidelines for user interaction across mobile apps and modern web apps.
 
 ## See Also
-
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [Design Overview](/learn/app-development/ui-design/design-overview/#app-ui-design)
 

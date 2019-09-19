@@ -25,3 +25,5 @@ Now these widgets are integrated with the backend services using data components
 
 In the UI-first approach, UI layer is composed with the widgets first and then the backend services are created to be bound with the front-end component. UI-first approach is closer to the traditional way of development, separating the UI from the backend services development. However, the low-code advantages are still applicable by using the binding approach, where UI widgets are bound to the backend services without writing any code.   
 
+## See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  

@@ -18,6 +18,6 @@ Binding layer integrates backend services with the front-end UI layer through RE
 ## Services Layer
 Service layer represents backend services auto-generated from databases, external web services or custom Java services, and more.
 
-### See More
-
+## See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [Platform Overview](/learn/app-development/wavemaker-overview/platform-overview/)

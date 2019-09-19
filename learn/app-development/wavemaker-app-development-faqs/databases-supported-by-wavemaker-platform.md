@@ -16,6 +16,6 @@ Following Databases can be used to build WaveMaker Apps:
 - HSQL
 
 ## See Also
-
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [Supported Technologies](/learn/app-development/wavemaker-overview/supported-technologies/)
 

@@ -26,6 +26,6 @@ Prefabs can be used:
 - As backend service extensions by leveraging 3rd party Java libraries, for example, to work with JasperReports.
 
 ## See Also
-
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [Prefab - Custom Widgets](/learn/app-development/widgets/custom-widgets/)   
 

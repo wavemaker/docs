@@ -12,7 +12,7 @@ The Mobile Themes give native look-n-feel of the same page based on the Platform
 
 Similarly, various widgets like date picker, drop down menu need to be rendered differently based on the platform. All these aspects are taken care of by the inbuilt Mobile Themes provided by WaveMaker. [![](/learn/assets/mobile_native_UIcontrols.png)](/learn/assets/mobile_native_UIcontrols.png)
 
-## See More
-
+## See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [Native Device Support](/learn/hybrid-mobile/native-device-support/)   
 

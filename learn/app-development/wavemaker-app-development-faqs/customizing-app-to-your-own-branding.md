@@ -19,7 +19,7 @@ There are two ways Theme can be handled within WaveMaker apps:
 - At the Widget level, app developer can apply style properties to change the color, margins, alignment and much more. This can be applied for a specific, one-instance styling.
 
 ## See Also
-
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [Applying Themes](/learn/app-development/ui-design/themes/#apply-theme)
 [Creating Themes](/learn/app-development/ui-design/themes/#create-theme)
 [Importing Themes](/learn/app-development/ui-design/themes/#import-theme)

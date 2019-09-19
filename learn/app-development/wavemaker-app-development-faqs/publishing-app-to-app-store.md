@@ -16,7 +16,7 @@ WaveMaker supports the build for mobile applications in the following three ways
 - Send to PhoneGap for a complete package needed to build both apk/ipa files for Android and iOS platforms.
 - Manual Build for a downloadable zip file which can be further developed to be hosted on any mobile platform.
 
-## See More
-
+## See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [Building Mobile Apps](/learn/hybrid-mobile/building-hybrid-mobile-apps/)   
 

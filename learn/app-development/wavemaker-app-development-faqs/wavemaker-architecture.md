@@ -10,3 +10,5 @@ Apps built in WaveMaker follow modern application architectures, separating the 
 
 For more information, see [Integrating Web Services](/learn/app-development/services/web-services/web-services/#overview)   
 
+## See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  

@@ -25,3 +25,5 @@ The following chart depicts performance comparison of an app built following the
 
 Metrics such as page load time, memory consumed on the client side, page interaction response times and the number of backend service calls are plotted. As indicated in the figure above, the delta is very minimal and the application built with WaveMaker performs at par on all counts in comparison to the app built traditionally.   
 
+## See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  

@@ -1,6 +1,6 @@
 ---
 title: "What skills you need to build a WaveMaker app?"
-id: "skills-need-build-to-wavemaker-app"
+id: ""
 ---
 See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) section for WaveMaker app development.    
 
@@ -24,7 +24,7 @@ To develop an application it is essential to analytically think in terms of func
 - Who is the end-user of the application?
 - What level of security is required for the application?
 
-### See More
-
+### See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)
 [Pre-Requisites](/learn/app-development/wavemaker-overview/pre-requisites/)
 

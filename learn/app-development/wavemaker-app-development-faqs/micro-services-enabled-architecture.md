@@ -14,6 +14,6 @@ Custom queries, procedures, and Java Services can be used to extend the app func
 
 UI components via Variables interact with REST API layer to access these services.
 
-## See More
-
-[API Designer](/learn/app-development/services/api-designer/api/)
+## See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
+[API Designer](/learn/app-development/services/api-designer/api/)  

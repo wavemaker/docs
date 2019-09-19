@@ -11,3 +11,5 @@ By importing database schema, WaveMaker automatically detects the entities, thei
 
 For more information, see [Integrating Web Services](/learn/app-development/services/web-services/web-services/#overview).
 
+## See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  

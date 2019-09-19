@@ -17,3 +17,5 @@ Essentially, the code is written on the server-side (primarily in Java) to proce
 
 This model offers a true low-code approach eliminating the need to build an entire framework of UI, backend and binding layers, completely removing the burden from developers to maintain lot of code, frameworks, their upgrades and compatibility issues.  
 
+## See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  

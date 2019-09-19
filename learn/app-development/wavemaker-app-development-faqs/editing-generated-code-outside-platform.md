@@ -12,7 +12,7 @@ For WaveMaker apps a modular client-side code (AngularJS, CSS, and HTML) incorpo
 The app updated outside of WaveMaker can be reimported into WaveMaker to update the existing project or as a new project.
 
 ## See Also
-
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [Extending Apps using IDEs](/learn/app-development/dev-integration/extending-application-using-ides/)
 
   

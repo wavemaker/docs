@@ -9,3 +9,5 @@ See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMa
 
 WaveMaker App contains distributable components which are completely conforming to the open-standards based licenses such as Apache 2.0, MIT etc. WaveMaker platform’s runtime components are all open-sourced under Apache 2.0 license giving complete control to the app developer for distributing rights.   
 
+## See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  

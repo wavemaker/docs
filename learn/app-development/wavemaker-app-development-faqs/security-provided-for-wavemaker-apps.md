@@ -13,7 +13,7 @@ By the process of “Onboarding,” end-users data is retrieved from various pro
 Apart from the above-mentioned security providers, WaveMaker supports Single Sign-On using Central Authentication Service (CAS), any Security Assertion Markup Language (SAML) 2.0 compliant provider and Token-based authentication for API requests. Cross-site Scripting (XSS) and Cross-Site Request Forgery (CSRF) attacks, listed on OWASP top 10 security, can also be prevented on WaveMaker Apps.
 
 ## See Also
-
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [App Authentication](/learn/app-development/app-security/authentication/)  
 [App Authorization](/learn/app-development/app-security/authorization/)  
 [Single Sign-On using CAS](/learn/app-development/app-security/central-authentication-system/)  

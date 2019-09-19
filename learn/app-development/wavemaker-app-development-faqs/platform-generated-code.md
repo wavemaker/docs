@@ -24,7 +24,7 @@ WaveMaker platform generates a standards based WAR file, which can be used to de
 By default, WaveMaker Apps can be deployed to WaveMaker Cloud platform. Optionally you can configure your app to be deployed to your AWS or Azure or Google Cloud accounts.
 
 ## See Also
-
-[Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/)
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
+[Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/)  
 
   

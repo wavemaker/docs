@@ -11,6 +11,6 @@ WaveMaker simplifies app development by combining the power of auto-generated co
 
 Boiler plate code comprising more than 60% of application’s code, such as the Object Relational Mapping (ORM) layer, integration code for invoking APIs, data conversions to JSON, parameter validations, widgets markup etc. is totally removed from developer’s responsibilities. While the platform takes care of code generation for the parts mentioned above, app developers can now focus on the business logic, business rules that define data flows, interaction, look-n-feel, and more.
 
-### See More
-
+### See Also
+[FAQs](/learn/app-development/wavemaker-app-development-faqs)  
 [Integrating Backend Services](/learn/app-development/services/creating-backend-services/)
