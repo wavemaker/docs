@@ -2,7 +2,7 @@
 title: WaveMaker Release Notes
 id: ""
 ---
-Watch this section for the latest WaveMaker updates. 
+Find what's new in WaveMaker. Watch this section for the latest updates from WaveMaker developers. 
 
 ---
 

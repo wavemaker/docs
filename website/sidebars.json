@@ -715,7 +715,35 @@
     "Live Filter": 
     [ 
       "app-development/widgets/datalive/live-filter"    
-    ] 
+    ],
+
+    "Container":
+    [
+          "app-development/widgets/container/accordion",
+          "app-development/widgets/container/container", 
+          "app-development/widgets/datalive/live-filter",
+          "app-development/widgets/container/panel",
+          "app-development/widgets/container/tabs",
+          "app-development/widgets/container/tile",
+          "app-development/widgets/container/wizard"
+    ],
+
+    "":
+    [
+
+    ],
+
+    "":
+    [
+
+    ],
+
+    "":
+    [
+
+    ]
+
+
   },
 
   "Release Notes": 
