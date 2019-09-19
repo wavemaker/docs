@@ -10,7 +10,7 @@ You can find everything about WaveMaker widgets in this section.
 Learn about Widgets in WaveMaker which are HTML/Bootstrap based widgets with rich interaction and designed for highly-responsive design. Also, see the common Widget properties in this section.
 
 :::tip
-To view the list of widgets in WaveMaker, see [Widget Library](widget-library.md).
+To view the list of widgets in WaveMaker, see [Widgets Library](widget-library.md).
 :::
 
 ## Widget Basics

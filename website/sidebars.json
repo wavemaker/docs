@@ -657,12 +657,47 @@
       "app-development/widgets/widget-library"
     ],
 
+    "Cards": 
+    [ 
+      "app-development/widgets/datalive/cards",
+      "app-development/widgets/datalive/cards/card-basic-usage",
+      "app-development/widgets/datalive/cards/cards-data-source",
+      "app-development/widgets/datalive/cards/cards-templates",
+      "app-development/widgets/datalive/cards/card-configuration",
+      "app-development/widgets/datalive/cards/card-behavior-settings",
+      "app-development/widgets/datalive/cards/cards-properties-events-methods",
+      "app-development/widgets/datalive/cards/card-use-cases"
+    ],
+
     "Data Table": [ 
-      "app-development/widgets/datalive/data-table"
+      "app-development/widgets/datalive/data-table",
+      "app-development/widgets/datalive/datatable/data-source",
+      "app-development/widgets/datalive/datatable/layouts",
+      "app-development/widgets/datalive/datatable/table-configuration",
+      "app-development/widgets/datalive/datatable/field-configuration",
+      "app-development/widgets/datalive/datatable/actions",
+      "app-development/widgets/datalive/datatable/datatable-events-methods",
+      "app-development/widgets/datalive/datatable/data-table-use-cases"
+    ],
+
+    "List": [ 
+      "app-development/widgets/datalive/list",
+      "app-development/widgets/datalive/list/list-data-source",
+      "app-development/widgets/datalive/list/list-templates",
+      "app-development/widgets/datalive/list/configuration",
+      "app-development/widgets/datalive/list/behavior-settings",
+      "app-development/widgets/datalive/list/list-properties-events-methods",
+      "app-development/widgets/datalive/list/list-use-cases"
     ],
 
     "Form": [ 
-      "app-development/widgets/datalive/form"
+      "app-development/widgets/datalive/form",
+      "app-development/widgets/datalive/form/form-data-source",
+      "app-development/widgets/datalive/form/form-layouts",
+      "app-development/widgets/datalive/form/form-configurations",
+      "app-development/widgets/datalive/form/form-fields-configuration",
+      "app-development/widgets/datalive/form/form-events-methods",
+      "app-development/widgets/datalive/form/form-usage-scenarios"
     ],
 
     "Form Widgets": [ 
@@ -691,56 +726,81 @@
       "app-development/widgets/form-widgets/"
     ],
 
-    "List": [ 
-      "app-development/widgets/datalive/list"
-    ],
-
-    "Cards": 
-    [ 
-      "app-development/widgets/datalive/cards",
-      "app-development/widgets/datalive/cards/card-basic-usage",
-      "app-development/widgets/datalive/cards/cards-data-source",
-      "app-development/widgets/datalive/cards/",
-      "app-development/widgets/datalive/cards/",
-      "app-development/widgets/datalive/cards/",
-      "app-development/widgets/datalive/cards/",
-      "app-development/widgets/datalive/cards/"
-    ],
-
     "Live Form": 
     [ 
-      "app-development/widgets/datalive/live-form"
+      "app-development/widgets/datalive/live-form",
+      "app-development/widgets/datalive/live-form/live-form-data-source",
+      "app-development/widgets/datalive/live-form/liveform-layouts",
+      "app-development/widgets/datalive/live-form/liveform-configurations",
+      "app-development/widgets/datalive/live-form/fields-configuration",
+      "app-development/widgets/datalive/live-form/liveform-actions",
+      "app-development/widgets/datalive/live-form/events-methods",
+      "app-development/widgets/datalive/live-form/liveform-use-cases"
     ],
 
     "Live Filter": 
     [ 
-      "app-development/widgets/datalive/live-filter"    
+      "app-development/widgets/datalive/live-filter",
+      "app-development/widgets/datalive/livefilter/live-filter-data-source",
+      "app-development/widgets/datalive/livefilter/livefilter-layouts",
+      "app-development/widgets/datalive/livefilter/filter-configurations",
+      "app-development/widgets/datalive/livefilter/livefilter-field-configuration",
+      "app-development/widgets/datalive/livefilter/livefilter-actions",
+      "app-development/widgets/datalive/livefilter/livefilter-events-methods",
+      "app-development/widgets/datalive/livefilter/livefilter-use-cases"    
     ],
 
     "Container":
     [
           "app-development/widgets/container/accordion",
           "app-development/widgets/container/container", 
-          "app-development/widgets/datalive/live-filter",
           "app-development/widgets/container/panel",
           "app-development/widgets/container/tabs",
           "app-development/widgets/container/tile",
           "app-development/widgets/container/wizard"
     ],
 
-    "":
+    "Basic Widgets":
     [
-
+      "app-development/widgets/basic/anchor",
+      "app-development/widgets/basic/media-widgets",
+      "app-development/widgets/basic/html",
+      "app-development/widgets/basic/icon",
+      "app-development/widgets/basic/iframe",
+      "app-development/widgets/basic/label",
+      "app-development/widgets/basic/message",
+      "app-development/widgets/basic/media-widgets",
+      "app-development/widgets/basic/progress-bar",
+      "app-development/widgets/basic/richtext-editor",
+      "app-development/widgets/basic/search",
+      "app-development/widgets/basic/search-basic-usage",
+      "app-development/widgets/basic/spinner",
+      "app-development/widgets/basic/tree",
+      "app-development/widgets/basic/media-widgets"
     ],
 
-    "":
+    "Charts":
     [
-
+      "app-development/widgets/chart/chart-widget"
     ],
 
-    "":
+    "Navigation":
     [
+      "app-development/widgets/navigation/breadcrumb",
+      "app-development/widgets/navigation/breadcrumb-use-cases",
+      "app-development/widgets/navigation/dropdown-menu",
+      "app-development/widgets/navigation/dropdown-menu-use-cases",
+      "app-development/widgets/navigation/nav",
+      "learn/app-development/widgets/navigation/nav-bar",
+      "app-development/widgets/navigation/popover",
+      "app-development/widgets/navigation/popover-basic-usage"
+    ],
 
+    "Advanced Widgets":
+    [
+      "app-development/widgets/advanced/carousel",
+      "app-development/widgets/advanced/login",
+      "app-development/widgets/advanced/marquee"
     ]
 
 
