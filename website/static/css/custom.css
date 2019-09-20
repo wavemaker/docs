@@ -1,7 +1,7 @@
 /* your custom css */
 body {
     margin: 0;
-    font-family: 'Lato',' Arial', 'Helvetica', sans-serif;
+    
 }
 .row {
     display: flex;
@@ -94,6 +94,7 @@ body {
 
 .main-container {
     min-height: 80vh;
+	font-family: 'Lato',' Arial', 'Helvetica', sans-serif;
     background-color: #f5f5f5;
 }
 
