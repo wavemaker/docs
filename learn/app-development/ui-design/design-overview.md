@@ -3,9 +3,34 @@ title: Introduction to App UI Design
 id: "design-overview"
 sidebar_label: "Design Overview"
 ---
+Learn how to design and navigate across pages and use rich themes to your WaveMaker apps.
+
 ---
 
-An application is a collection of pages, with each page composed of different UI elements and Widgets. These UI elements enable user interaction with the app and can get data from backend services. Navigation and interaction rules can be setup across pages. 
+An app is a collection of pages, with each page composed of different UI elements and Widgets. These UI elements enable user interaction with the app and can get data from backend services. Navigation and interaction rules can be setup across pages. 
+
+## Designing Pages
+
+UI design is the starting point to get started with designing an app. It involves the following steps:
+
+1. Choosing a **Page Layout** for composition of Widgets or UI Elements.
+2. Using **Widgets** for:
+    - UI Components
+    - Data rendering
+    - User interaction and event handling.
+    - Page navigation to control the workflow.
+
+:::tip
+- To get started with Widgets already, see [Widgets and Prefabs](/learn/app-development/widgets/ui-elements) documentation. 
+- To explore WaveMaker' Widgets, see [Widgets Library](/learn/app-development/widgets/widget-library).
+:::
+
+3. **Prefabs** to customize and extend widgets' capability. 
+4. Style using **Themes** and **Templates**.  
+
+### Page Elements 
+
+[![UI_design](/learn/assets/UI_design.png)](/learn/assets/UI_design.png)
 
 ## How it works
 
@@ -13,24 +38,6 @@ WaveMaker Pages are built using the drag-n-drop approach, by placing widgets in 
 
 [![](/learn/assets/UI_design-1.png)](/learn/assets/UI_design-1.png)
 
-## Designing Pages
-
-The UI design involves the following subtasks:
-
-1. Choosing a **Page Layout** for composition of Widgets or UI Elements.
-2. Using **Widgets** for:
-    - Data rendering
-    - User interaction and event handling.
-    - Page navigation to control the workflow.
-3. **Prefabs** to customize and extend widgets' capability. 
-4. Style using **Themes** and **Templates**.
-
-[![UI_design](/learn/assets/UI_design.png)](/learn/assets/UI_design.png)
-
-:::tip
-- For Widgets documentation, see [Widgets and Prefabs](/learn/app-development/widgets/ui-elements).   
-- To view list of Widgets, see [Widgets Library](/learn/app-development/widgets/widget-library).
-:::
 
 ## Page Structure
 

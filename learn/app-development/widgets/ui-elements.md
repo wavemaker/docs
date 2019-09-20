@@ -9,11 +9,15 @@ You can find everything about WaveMaker widgets in this section.
 
 Learn about Widgets in WaveMaker which are HTML/Bootstrap based widgets with rich interaction and designed for highly-responsive design. Also, see the common Widget properties in this section.
 
+:::note
+Pages are constructed as a composition of widgets. You drag and drop widgets on a page. See [Design Pages](/learn/app-development/ui-design/design-overview) before getting started with widgets. 
+:::
+
 :::tip
 To view the list of widgets in WaveMaker, see [Widgets Library](widget-library.md).
 :::
 
-## Widget Basics
+## How it works
 
 Pages are constructed as a composition of widgets using the visual drag-n-drop approach. Responsive Layout grid is used for the placement of widgets for automatically making them responsive to all devices.
 

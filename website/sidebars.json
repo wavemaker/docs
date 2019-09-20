@@ -39,9 +39,20 @@
 
       ],
 
-    "Design": 
+    "Page design": 
       [
-        "app-development/ui-design/design-overview",
+        {
+          "type": "subcategory",
+          "label": "UI Design",
+          "ids": 
+            [
+            "app-development/ui-design/design-overview",
+            "app-development/ui-design/project-shells", 
+            "app-development/ui-design/page-artefacts",
+            "app-development/ui-design/themes",
+            "app-development/ui-design/page-concepts/page-templates"
+            ]
+        },
         {
           "type": "subcategory",
           "label": "Pages",
@@ -53,11 +64,7 @@
             "app-development/ui-design/page-concepts/page-navigation",
             "app-development/ui-design/page-concepts/page-events"         
             ]       
-        },
-        "app-development/ui-design/project-shells",        
-        "app-development/ui-design/page-artefacts",
-        "app-development/ui-design/themes",
-        "app-development/ui-design/page-concepts/page-templates",
+        },   
         "app-development/ui-design/use-cases-ui-design"
       ],
 
@@ -260,7 +267,7 @@
     }
   ],
 
-    "Mobile App": 
+    "Mobile app": 
     [
         "hybrid-mobile/building-hybrid-mobile-apps",           
       {

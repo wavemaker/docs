@@ -1,7 +1,7 @@
 ---
 title: "Application Programming Interface (API)"
 id: "api"
-sidebar_label: "API Designer"
+sidebar_label: "Introduction to API Designer"
 ---
 ---
 
