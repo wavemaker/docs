@@ -95,7 +95,7 @@ const siteConfig = {
 
 
     // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-    copyright: `Copyright © ${new Date().getFullYear()} WaveMaker, Inc. All rights reserved.`,
+    copyright: `Copyright © 2013-${new Date().getFullYear()} WaveMaker, Inc. All rights reserved.`,
 
     highlight: {
         // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -105,6 +105,8 @@ const siteConfig = {
     // Add custom scripts here that would be placed in <script> tags.
     scripts: ['https://buttons.github.io/buttons.js'],
 
+    // Add custom css.
+    stylesheets: ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', 'https://fonts.googleapis.com/css?family=Lato&display=swap'],
     // On page navigation for the current documentation page.
     onPageNav: 'separate',
     // No .html extensions for paths.
