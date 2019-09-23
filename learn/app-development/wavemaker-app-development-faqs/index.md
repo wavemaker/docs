@@ -1,7 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 id: "index"
-sidebar_label: "FAQs"
+sidebar_label: "Frequently Asked Questions"
 ---
 Frequently asked questions cover everything you need to know about WaveMaker so you can develop apps like a pro.     
 

@@ -1,9 +1,9 @@
 ---
 id: "docs"
-title: "Welcome to WaveMaker Docs"
+title: "Introduction to WaveMaker"
 sidebar_label: "Welcome to WaveMaker"
 ---
-Introduction to WaveMaker; the Low-code platform and RAD (Rapid Application Development). Learn and develop apps using WM Studio.
+Find a complete developers' guide to build a WaveMaker app with RAD (Rapid Application Development) concept.
 
 ---
 

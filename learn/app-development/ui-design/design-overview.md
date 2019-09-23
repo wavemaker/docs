@@ -1,7 +1,7 @@
 ---
 title: Introduction to App UI Design
 id: "design-overview"
-sidebar_label: "Design Overview"
+sidebar_label: "Designing Pages"
 ---
 Learn how to design and navigate across pages and use rich themes to your WaveMaker apps.
 
