@@ -1,7 +1,7 @@
 ---
 id: tutorials
-title: Video Tutorials
-sidebar_label: Tutorials
+title: Getting Started with Tutorials
+sidebar_label: Video Tutorials
 ---
 In this topic, you can find video tutorials covering the essentials of WaveMaker app development. 
 

@@ -41,8 +41,8 @@ class Index extends React.Component {
             <div className="banner">
                 <div className="row">
                     <div className="column">
-                        <h1>Welcome to WaveMaker Documentation</h1>
-                        <h4>Find all your resources related to wavemaker and develop an app in seconds.</h4>
+                        <h1>WaveMaker Learning Center</h1>
+                        <h4>Find all the resources you need to develop a WaveMaker app.</h4>
                         <button>Get Started</button>
                     </div>
                 </div>
@@ -52,13 +52,13 @@ class Index extends React.Component {
                     <div className="content-wrapper">
                         <div className="content-blocks">
                             <div className="imagebox-img">
-                                <img src="/learn/img/Features.png" alt=""/>
+                                <img src="/learn/img/Mobile-app-development.jpg" alt=""/>
                             </div>
-                            <h1>Features</h1>
-                            <p>In-depth reference docs to understand every menu, option and checkbox.</p>
+                            <h1>Mobile Apps</h1>                            
+							<p>Learn how to create cross-platform hybrid mobile apps</p>
                             <p>
-                                <b>If it’s on the screen, it’s in here</b><br />
-                                <a href="/learn/documentation-reference/" target="_self" className="button color-3 small" style={{'borderRadius': '2px'}}>Explore</a>
+                                <b>Rapid Mobile App Development</b><br />								
+                                <a href="/learn/documentation-reference/" target="_self" className="button color-3 small" style={{'borderRadius': '2px'}}>Build</a>
                             </p>
                         </div>
                     </div>
@@ -82,14 +82,14 @@ class Index extends React.Component {
                 <div className="column">
                     <div className="content-wrapper">
                         <div className="content-blocks">
-                            <div className="imagebox-img">
-                                <img src="/learn/img/Mobile-app-development.jpg" alt=""/>
+                            <div className="imagebox-img">                                
+								<img src="/learn/img/Features.png" alt=""/>
                             </div>
-                            <h1>Mobile Apps</h1>
-                            <p>Learn how to create cross-platform hybrid mobile apps</p>
+                            <h1>Resources</h1>
+							<p>In-depth reference docs to understand every menu, option and checkbox.</p>                            
                             <p>
-                                <b>Rapid Mobile App Development</b><br />
-                                <a href="/learn/documentation-reference/#tab-mob" target="_self" className="button color-3 small " style={{'borderRadius': '2px'}}>Build</a>
+                                <b>If it’s on the screen, it’s in here</b><br />
+                                <a href="/learn/documentation-reference/#tab-mob" target="_self" className="button color-3 small " style={{'borderRadius': '2px'}}>Explore</a>
                             </p>
                         </div>
                     </div>

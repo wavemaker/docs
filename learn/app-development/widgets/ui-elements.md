@@ -7,7 +7,7 @@ You can find everything about WaveMaker widgets in this section.
 
 ---
 
-Learn about Widgets in WaveMaker which are HTML/Bootstrap based widgets with rich interaction and designed for highly-responsive design. Also, see the common Widget properties in this section.
+Learn about Widgets in WaveMaker. These are HTML/Bootstrap based widgets with rich interaction and designed for highly-responsive design. Also, see the common Widget properties in this section.
 
 :::note
 Pages are constructed as a composition of widgets. You drag and drop widgets on a page. See [Design Pages](/learn/app-development/ui-design/design-overview) before getting started with widgets. 
@@ -50,21 +50,4 @@ Define which user roles can access the widget in the **Security** tab of the 
 
 We have seen the basics of the HTML/Bootstrap based widgets or UI Components and properties.
 
-## See Also
 
-3\. UI Elements - Widgets & Prefabs
-
-- [3.1 Widgets](#)
-    - [i. Basics](#widget-basics)
-    - [ii. Properties](#widget-properties)
-- 3.2 Widget Library
-    - [1\. Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
-    - [2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
-    - [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-    - [4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
-    - [5\. Chart Widgets](/learn/app-development/widgets/widget-library/#chart)
-    - [6\. Navigation Widgets](/learn/app-development/widgets/widget-library/#nav-widgets)
-    - [7\. Advanced Widgets](/learn/app-development/widgets/widget-library/#advanced)
-    - [8\. Modal Dialog Widgets](/learn/app-development/widgets/widget-library/#dialog)
-    - [9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
-    - [10\. Mobile & Device Widgets](/learn/app-development/widgets/widget-library/#mobile)
