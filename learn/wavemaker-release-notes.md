@@ -6,13 +6,11 @@ Find what's new in WaveMaker. Watch this section for the latest updates from Wav
 
 ---
 
-## Recent Updates
-
-- A new update released on 16 September 2019. 
 
 
 ## New Releases
 
+- A new update WaveMaker v10.1.2 released on 16 September 2019. 
 - [WaveMaker Update: 10.1.0](/learn/wavemaker-release-notes/v10-1-0)
 
 ## Release Details
