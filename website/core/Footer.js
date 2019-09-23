@@ -29,7 +29,7 @@ class Footer extends React.Component {
                   <div className="column logo-col">
                       <div id="logo">
                         <a href="https://www.wavemaker.com/">
-                            <img src="http://www.wavemaker.com/wp-content/uploads/WM_logo-final-grey-04.svg" alt="WaveMaker"/>
+                            <img src="/learn/img/WM_logo-final-grey-04.svg" alt="WaveMaker"/>
                         </a>
                       </div>
                   </div>

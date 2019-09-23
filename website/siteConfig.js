@@ -35,7 +35,6 @@ const siteConfig = {
     title: 'WaveMaker Learn', // Title for your website.
     tagline: 'Welcome to the Learning Center',
     url: 'https://www.wavemaker.com/',
-    baseUrl: '/',
     baseUrl: '/learn/',
     docsUrl: '',
     customDocsPath: 'learn',
@@ -51,15 +50,14 @@ const siteConfig = {
     // For no header links in the top nav bar -> headerLinks: [],
     headerLinks: [
         {languages: true},
-		{doc: 'index', label: 'Docs '},
+		{doc: 'docs', label: 'Docs '},
         {doc: 'app-development/widgets/ui-elements', label: 'Widgets'},
 		{doc: 'tutorials', label: 'Tutorials'},
 	//	{doc: 'app-development/wavemaker-app-development-faqs/index', label: 'FAQs'},
     //  {href: 'https://www.wavemakeronline.com/studio/10.1.2.7413/docs/index.html', label: 'API Docs'},
-        {doc: 'wavemaker-release-notes', label: 'Release Notes'},        
+        {doc: 'wavemaker-release-notes', label: 'Release Notes'},
         // {page: 'help', label: 'Help'},
-        {href: 'https://www.wavemakeronline.com/login/login', label: 'Login'},
-        {search: true},
+        {href: 'https://www.wavemakeronline.com/login/login', label: 'Login'}
     ],
 
     //disabling till docusaurus v2 comes with custom search

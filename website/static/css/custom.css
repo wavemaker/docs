@@ -121,6 +121,9 @@ body {
     margin: 30px 0 10px;
     color: #fff;
 }
+.banner button:hover {
+    cursor: pointer;
+}
 .banner h1 {
     font-size: 38px;
 }
@@ -144,7 +147,7 @@ body {
     padding: 15px 30px;
 }
 .imagebox-img {
-    display: none;
+    display: block;
 }
 .content-blocks h1 {
     font: 28px Lato, Arial, Helvetica, sans-serif;
@@ -165,7 +168,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     padding: 9px 14px 9px 14px;
-    margin: 20px 0 0 0;
+    margin: 20px 2px 0 0;
     display: inline-block;
     color: #fff;
     border-radius: 2px;

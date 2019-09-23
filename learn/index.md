@@ -1,5 +1,5 @@
 ---
-id: "index"
+id: "docs"
 title: "Welcome to the WaveMaker Learning Center"
 sidebar_label: "Welcome to WaveMaker"
 ---
