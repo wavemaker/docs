@@ -1,11 +1,21 @@
 ---
-title: "WaveMaker Widgets Library"
+title: "Getting Started with Widgets & Prefabs in WaveMaker"
 id: "widget-library"
 sidebar_label: "Widgets Library"
 ---
-Find the list of Widgets available in the WaveMaker platform with a description and links to the detailed documentation.
+You can find everything about WaveMaker widgets and prefabs in this section. 
 
 ---
+
+Learn about Widgets in WaveMaker. These are HTML/Bootstrap based widgets with rich interaction and designed for highly-responsive design.
+
+:::note
+Pages are constructed as a composition of widgets. You drag and drop widgets on a page. See [Design Pages](/learn/app-development/ui-design/design-overview) before getting started with widgets. 
+:::
+
+:::tip
+To view the list of widgets in WaveMaker, see [Widgets Library](widget-library.md).
+:::
 
 ## Data Widgets
 

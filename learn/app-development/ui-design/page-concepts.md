@@ -5,22 +5,22 @@ id: "page-concepts"
 Introduction to Pages in WaveMaker low-code platform. 
 
 ---
-An application is a collection of pages, with each page composed of different UI elements and Widgets. These UI elements enable user interaction with the app and can get data from backend services. Navigation and interaction rules can be setup across pages.
+An application is a collection of pages. Each page is composed of different UI elements and Widgets. These UI elements enable user interaction with the app and can get data from the backend services. You can be set navigation and interaction rules across pages.
 
 :::tip
-To get started with designing pages, start from the [Design Overview](/learn/app-development/ui-design/design-overview) section.
+To design pages, see the [Design Overview](/learn/app-development/ui-design/design-overview) section.
 :::
 
  You can navigate to the pages section as shown in the image below. 
 
 ![Pages introduction in WaveMaker](../../assets/pages_introduction.png)  
 
-
+## Page Architecture
 
 In this document, you will learn about the following: 
 
-- how WaveMaker apps are [single-page applications](#single-page-apps)
-- what a typical [page life cycle](#page-lifecycle) is within the app.
+- WaveMaker apps as single-page applications.
+- What a typical [page life cycle](#page-life-cycle) of a WaveMaker app looks like.
 
 ## WaveMaker as a Single Page Application
 
@@ -32,10 +32,10 @@ A WaveMaker application is a single page application(SPA). Though an app is comp
 
 A **page** can be composed of:
 
-- _Widgets_, which are loaded as part of the page, or
-- _Partial pages_ as the content of container widgets like Panel, Tabs, Accordion, etc.
+- [Widgets](/learn/app-development/widgets/widget-library) which are loaded as part of the page, or
+- [Partial Pages](/learn/app-development/ui-design/page-concepts/partial-pages) as the content of container widgets like Panel, Tabs, Accordion, etc.
 
-# Page Life Cycle
+## Page Life Cycle
 
 When the request for a page is made, it goes through the following life-cycle:
 
