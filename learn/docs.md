@@ -3,7 +3,7 @@ id: "docs"
 title: "Introduction to WaveMaker"
 sidebar_label: "Welcome to WaveMaker"
 ---
-Find a complete developers' guide to build a WaveMaker app with RAD (Rapid Application Development) concept.
+Find a complete developers' guide to build a WaveMaker app with RAD (Rapid Application Development) approach.
 
 ---
 

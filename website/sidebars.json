@@ -792,6 +792,13 @@
       "app-development/widgets/advanced/carousel",
       "app-development/widgets/advanced/login",
       "app-development/widgets/advanced/marquee"
+    ],
+
+    "Dialog Widgets":
+    [
+      "app-development/widgets/modal-windows-dialogs",
+      "app-development/widgets/alert-dialog",
+      "app-development/widgets/confirm-dialog"
     ]
 
 

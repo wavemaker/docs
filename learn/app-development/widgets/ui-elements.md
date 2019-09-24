@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Widgets in WaveMaker"
+title: "Introduction to Widgets"
 id: "ui-elements"
 sidebar_label: "Introduction to Widgets"
 ---
@@ -8,10 +8,6 @@ Learn about widgets and how it works.
 ---
 
 Learn about Widgets in WaveMaker. These are HTML/Bootstrap based widgets with rich interaction and designed for highly-responsive design. Also, see the common Widget properties in this section.
-
-:::note
-Pages are constructed as a composition of widgets. You drag and drop widgets on a page. See [Design Pages](/learn/app-development/ui-design/design-overview) before getting started with widgets. 
-:::
 
 :::tip
 To view the list of widgets in WaveMaker, see [Widgets Library](widget-library.md).
@@ -46,8 +42,11 @@ Use the **Event** tab in the **Properties Panel** to choose the action for s
 Use the **Device** tab in the **Properties Panel** to choose the widget visibility. Manage the widget visibility across device sizes.
 
 ### Access Control
-Define which user roles can access the widget in the **Security** tab of the **Properties Panel**. [More on role-based access](/learn/app-development/app-security/access-levels-permissions/ "Role-based Access Control") and [widget security](/learn/app-development/app-security/access-levels-permissions/#role-based-access).
+Define which user roles can access the widget in the **Security** tab of the **Properties Panel**. For more information, see [Role-based Access, and Widget Security](/learn/app-development/app-security/access-levels-permissions/#role-based-access-to-widgets).
 
 We have seen the basics of the HTML/Bootstrap based widgets or UI Components and properties.
 
+## See Also
 
+[Widgets Library](widget-library.md)   
+[Design Pages](/learn/app-development/ui-design/design-overview)  

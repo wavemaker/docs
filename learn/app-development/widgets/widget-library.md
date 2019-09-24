@@ -1,20 +1,22 @@
 ---
-title: "Getting Started with Widgets & Prefabs in WaveMaker"
+title: "Get Started with Widgets & Prefabs in WaveMaker"
 id: "widget-library"
 sidebar_label: "Widgets Library"
 ---
-You can find everything about WaveMaker widgets and prefabs in this section. 
+Find the list of Widgets and Prefabs in this section. Navigate to Widget's docs and related API documentation.
 
 ---
 
-Learn about Widgets in WaveMaker. These are HTML/Bootstrap based widgets with rich interaction and designed for highly-responsive design.
+Widgets are HTML/Bootstrap based UI components with rich interaction and designed for highly-responsive design.
 
 :::note
-Pages are constructed as a composition of widgets. You drag and drop widgets on a page. See [Design Pages](/learn/app-development/ui-design/design-overview) before getting started with widgets. 
+Pages are designed as a composition of widgets. See [Design Pages](/learn/app-development/ui-design/design-overview) before getting started with widgets. 
 :::
 
+There are over 80 widgets in WaveMaker. **Data** widgets for handling data.  **Container** widgets for organizing page element. **Form Widgets** for button, file upload, and more. View the entire list of Widgets in this page. 
+
 :::tip
-To view the list of widgets in WaveMaker, see [Widgets Library](widget-library.md).
+To learn the standard widgets' workflow, see [Widgets Overview](ui-elements.md).
 :::
 
 ## Data Widgets
@@ -44,7 +46,7 @@ To view the list of widgets in WaveMaker, see [Widgets Library](widget-library.m
 
 | Widget | Description | Overview | Reference |
 | --- | --- | --- | --- |
-|**Button**  | Button is a control that can be clicked to perform an action. |  [Overview](/learn/app-development/widgets/datalive/form/button/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Button.html) |
+|**Button**  | Button is a control that can be clicked to perform an action. |  [Overview](/learn/app-development/widgets/form-widgets/button) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Button.html) |
 |***Button Group**  | **Button Group** is the arrangement of buttons grouped together. |  [Overview](/learn/app-development/widgets/datalive/form/button-group/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/ButtonGroup.html) |
 |**Calendar**  | **Calendar** widget allows the user to select a date from the calendar displayed. |  [Overview](/learn/app-development/widgets/datalive/form/calendar/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Calendar.html) |
 |**Checkbox**  | **Checkbox** allows the user to choose one or multiple of a predefined set of options. | [Overview](/learn/app-development/widgets/form-widgets/checkbox/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Checkbox.html) |
