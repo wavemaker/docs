@@ -1,9 +1,9 @@
 ---
-title: "Get Started with Widgets & Prefabs in WaveMaker"
+title: "Getting Started with Widgets & Prefabs"
 id: "widget-library"
 sidebar_label: "Widgets Library"
 ---
-Find the list of Widgets and Prefabs in this section. Navigate to Widget's docs and related API documentation.
+Find everything about Widgets and Prefabs. Navigate to Widgets' list below and access relative docs and API docs.
 
 ---
 

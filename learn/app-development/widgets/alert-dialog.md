@@ -6,11 +6,10 @@ id: ""
 
 [![alert_struct](/learn/assets/alert_struct.jpg)](/learn/assets/alert_struct.jpg)
 
+## Overview 
 Dragging and dropping a dialog creates a **view** containing the dialog. The view can be selected from the **Page Structure** or from the **tabs** given at the bottom. The display of the dialog box at runtime is usually associated with the _onClick_ event of a **Button** widget. You can also trigger the dialog by calling methods from _JavaScript_.
 
-**Note:** Even though the dialog widget is placed in a view, that view is not available for navigation.
-
-[![](/learn/assets/dialog.png)](/learn/assets/dialog.png)
+## Alert Dialog
 
 For **Alert Dialog**, you can set:
 
@@ -39,8 +38,8 @@ For hiding dialog:
 ```
 
 ## Properties & Events
-
-### **Alert Dialog Properties**
+---
+### Alert Dialog Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -50,8 +49,7 @@ For hiding dialog:
 | Ok Text | This widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page. |
 | Alert Type | This property will help in identifying the type of alert in the alert box. Can be set to error (default), information, success, and warning. |
 | **Accessibility** |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
@@ -66,9 +64,11 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Icon Height | Optional property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent. |
 | Icon Margin | Optional property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text. |
 
-### Callback Events
+### Alert Dialog Events
+
 | Event | Description |
 | --- | --- |
+|**Callback Events**||
 | On ok | This event handler is called whenever an ok event is triggered. |
 | On close | This event handler is called whenever a close event is triggered. |
 | On open | This widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page. |

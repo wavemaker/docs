@@ -798,7 +798,11 @@
     [
       "app-development/widgets/modal-windows-dialogs",
       "app-development/widgets/alert-dialog",
-      "app-development/widgets/confirm-dialog"
+      "app-development/widgets/confirm-dialog",
+      "app-development/widgets/iframe-dialog",
+      "app-development/widgets/design-dialog",
+      "app-development/widgets/page-dialog",
+      "app-development/widgets/login-dialog"
     ]
 
 
