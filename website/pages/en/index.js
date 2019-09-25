@@ -58,7 +58,7 @@ class Index extends React.Component {
 							<p>Learn how to create cross-platform hybrid mobile apps</p>
                             <p>
                                 <b>Rapid Mobile App Development</b><br />								
-                                <a href="/learn/hybrid-mobile/building-hybrid-mobile-apps" target="_self" className="button color-3 small" style={{'borderRadius': '2px'}}>Build</a>
+                                <a href="/learn/hybrid-mobile/building-hybrid-mobile-apps" target="_self" className="button color-3 small" style={{'borderRadius': '2px'}}>Build Mobile App</a>
                             </p>
                         </div>
                     </div>
