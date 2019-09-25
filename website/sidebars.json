@@ -4,7 +4,8 @@
     "Introduction": 
       [
         "docs",
-        "app-development/wavemaker-overview/platform-overview"        
+        "app-development/wavemaker-overview/platform-overview",
+        "app-development/wavemaker-app-development-faqs/index"         
       ],
 
     "Getting started": 
@@ -287,93 +288,6 @@
         "hybrid-mobile/offline-data-support",
         "hybrid-mobile/switching-offline-online-mode"]
       }
-    ],
-
-  "FAQs": 
-      [
-        "app-development/wavemaker-app-development-faqs/index",
-          {
-        "type": "subcategory",
-        "label": "General",
-        "ids": 
-          [
-          "app-development/wavemaker-app-development-faqs/what-is-wavemaker-app", 
-          "app-development/wavemaker-app-development-faqs/skills-need-to-build-wavemaker-app", 
-          "app-development/wavemaker-app-development-faqs/app-development-using-rad",
-          "app-development/wavemaker-app-development-faqs/build-app-using-low-code-approach",
-          "app-development/wavemaker-app-development-faqs/model-first-or-UI-first-rad-development",
-          "app-development/wavemaker-app-development-faqs/customizing-app-to-your-own-branding"
-          ] 
-        },
- 
-        {
-          "type": "subcategory",
-          "label": "Architecture",
-          "ids": 
-            [
-              "app-development/wavemaker-app-development-faqs/wavemaker-application-architecture",
-              "app-development/wavemaker-app-development-faqs/wavemaker-architecture",
-              "app-development/wavemaker-app-development-faqs/micro-services-enabled-architecture" 
-            ]
-        },
-        
-        {
-          "type": "subcategory",
-          "label": "Widgets and Services",
-          "ids": 
-            [   
-              "app-development/wavemaker-app-development-faqs/widgets-in-wavemaker",     
-              "app-development/wavemaker-app-development-faqs/building-widget-extension-custom-widget",              
-              "app-development/wavemaker-app-development-faqs/database-in-wavemaker",
-              "app-development/wavemaker-app-development-faqs/databases-supported-by-wavemaker-platform",
-              "app-development/wavemaker-app-development-faqs/web-services",
-              "app-development/wavemaker-app-development-faqs/java-services-in-wavemaker"
-            ]
-        },
-
-        {
-          "type": "subcategory",
-          "label": "Security",
-          "ids": 
-            [             
-              "app-development/wavemaker-app-development-faqs/security-in-wavemaker",
-              "app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps"
-            ]
-        },
-
-        {
-          "type": "subcategory",
-          "label": "Mobile App",
-          "ids": 
-            [ 
-              "app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach",
-              "app-development/wavemaker-app-development-faqs/publishing-app-to-app-store",
-              "app-development/wavemaker-app-development-faqs/publish-to-app-store-without-any-limitations"
-            ]
-        },
-
-        {
-          "type": "subcategory",
-          "label": "Development and Code",
-          "ids": 
-            [ 
-              "app-development/wavemaker-app-development-faqs/working-with-multiple-developers",
-              "app-development/wavemaker-app-development-faqs/libraries-used-app-runtime",
-              "app-development/wavemaker-app-development-faqs/editing-generated-code-outside-platform",
-              "app-development/wavemaker-app-development-faqs/platform-generated-code"
-            ]
-        },
-
-        {
-          "type": "subcategory",
-          "label": "Licenses and other",
-          "ids": 
-            [ 
-              "app-development/wavemaker-app-development-faqs/redistributing-licensing",     
-              "app-development/wavemaker-app-development-faqs/application-stack-upgrades",
-              "app-development/wavemaker-app-development-faqs/is-wavemaker-app-scalable" 
-            ]
-        }
     ]
 
 },
@@ -644,10 +558,23 @@
 
   "Widgets": 
   {
-    "Widgets & Prefabs": [
-      "app-development/widgets/widget-library"
+    "Widgets & Prefabs Library": [
+      "app-development/widgets/widget-library",
+      "app-development/widgets/prefab/youtube",
+      "app-development/widgets/prefab/googlemaps",
+      "app-development/widgets/prefab/qrcode"
     ],
 
+    "OAuth Prefabs": 
+    [    
+      "app-development/widgets/prefab/oauth-prefabs",
+      "app-development/widgets/prefab/oauth-prefabs/box",
+      "app-development/widgets/prefab/oauth-prefabs/facebook",
+      "app-development/widgets/prefab/oauth-prefabs/google",
+      "app-development/widgets/prefab/oauth-prefabs/instagram",
+      "app-development/widgets/prefab/oauth-prefabs/linkedin"
+    ],
+    
     "Cards": 
     [ 
       "app-development/widgets/datalive/cards",
@@ -666,6 +593,7 @@
       "app-development/widgets/datalive/datatable/layouts",
       "app-development/widgets/datalive/datatable/table-configuration",
       "app-development/widgets/datalive/datatable/field-configuration",
+      "app-development/widgets/datalive/datatable/row-expansion-data-table",
       "app-development/widgets/datalive/datatable/actions",
       "app-development/widgets/datalive/datatable/datatable-events-methods",
       "app-development/widgets/datalive/datatable/data-table-use-cases"
@@ -803,9 +731,29 @@
       "app-development/widgets/design-dialog",
       "app-development/widgets/page-dialog",
       "app-development/widgets/login-dialog"
+    ],
+
+    "Mobile & Device Widgets":
+    [
+      "app-development/widgets/mobile-widgets/camera",
+      "app-development/widgets/mobile-widgets/media-list",
+      "app-development/widgets/mobile-widgets/segmented-control",
+      "app-development/widgets/mobile-widgets/barcode-scanner"
     ]
+  },
 
-
+  "WME":
+  {
+    "Enterprise Version": 
+    [
+      "installation/wavemaker-enterprise-setup-guide",
+      "installation/wme-setup-guide-launch-initialize",
+      "installation/wme-setup-guide-access-setting",
+      "installation/wme-setup-guide-configuration",
+      "installation/wme-setup-guide-adding-capacity",
+      "installation/wme-setup-guide-maintenance",
+      "installation/wme-setup-guide-upgrading"
+    ]
   },
 
   "Release Notes": 
@@ -826,6 +774,96 @@
      
       ]
     
+  },
+
+  "All FAQs":
+  {
+    "Frequently Asked Questions":
+    [
+      {
+        "type": "subcategory",
+        "label": "General",
+        "ids": 
+          [
+          "app-development/wavemaker-app-development-faqs/what-is-wavemaker-app", 
+          "app-development/wavemaker-app-development-faqs/skills-need-to-build-wavemaker-app", 
+          "app-development/wavemaker-app-development-faqs/app-development-using-rad",
+          "app-development/wavemaker-app-development-faqs/build-app-using-low-code-approach",
+          "app-development/wavemaker-app-development-faqs/model-first-or-UI-first-rad-development",
+          "app-development/wavemaker-app-development-faqs/customizing-app-to-your-own-branding"
+          ] 
+        },
+ 
+        {
+          "type": "subcategory",
+          "label": "Architecture",
+          "ids": 
+            [
+              "app-development/wavemaker-app-development-faqs/wavemaker-application-architecture",
+              "app-development/wavemaker-app-development-faqs/wavemaker-architecture",
+              "app-development/wavemaker-app-development-faqs/micro-services-enabled-architecture" 
+            ]
+        },
+        
+        {
+          "type": "subcategory",
+          "label": "Widgets and Services",
+          "ids": 
+            [   
+              "app-development/wavemaker-app-development-faqs/widgets-in-wavemaker",     
+              "app-development/wavemaker-app-development-faqs/building-widget-extension-custom-widget",              
+              "app-development/wavemaker-app-development-faqs/database-in-wavemaker",
+              "app-development/wavemaker-app-development-faqs/databases-supported-by-wavemaker-platform",
+              "app-development/wavemaker-app-development-faqs/web-services",
+              "app-development/wavemaker-app-development-faqs/java-services-in-wavemaker"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Security",
+          "ids": 
+            [             
+              "app-development/wavemaker-app-development-faqs/security-in-wavemaker",
+              "app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Mobile App",
+          "ids": 
+            [ 
+              "app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach",
+              "app-development/wavemaker-app-development-faqs/publishing-app-to-app-store",
+              "app-development/wavemaker-app-development-faqs/publish-to-app-store-without-any-limitations"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Development and Code",
+          "ids": 
+            [ 
+              "app-development/wavemaker-app-development-faqs/working-with-multiple-developers",
+              "app-development/wavemaker-app-development-faqs/libraries-used-app-runtime",
+              "app-development/wavemaker-app-development-faqs/editing-generated-code-outside-platform",
+              "app-development/wavemaker-app-development-faqs/platform-generated-code"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Licenses and other",
+          "ids": 
+            [ 
+              "app-development/wavemaker-app-development-faqs/redistributing-licensing",     
+              "app-development/wavemaker-app-development-faqs/application-stack-upgrades",
+              "app-development/wavemaker-app-development-faqs/is-wavemaker-app-scalable" 
+            ]
+        }
+
+    ]   
   }
 
 }

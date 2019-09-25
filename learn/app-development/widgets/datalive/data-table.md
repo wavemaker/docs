@@ -2,8 +2,10 @@
 title: "Data Table Widget"
 id: "data-table"
 ---
-
-[![](/learn/assets/laptop.png)  ](/learn/assets/laptop.png)**NOTE**: Data Table is available only for web responsive apps.
+---
+:::note
+Data Table is available only for web responsive apps.
+:::
 
 **Data Table** provides a tabular view for database Entities or API response data. Data Table can be bound to data sources like database tables, queries, procedures, web services or JSON objects through Variables.
 

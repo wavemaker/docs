@@ -7,26 +7,26 @@ Find a complete developers' guide to build a WaveMaker app with RAD (Rapid Appli
 
 ---
 
-[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing enterprise apps. It is a design studio with over [80 widgets](/learn/app-development/widgets/widget-library) that work out-of-the-box for developing a rich and modern end-to-end application. Simply drag-and-drop UI components on dashboard and integrate it with data and services. 
+[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing enterprise apps. It is a design studio with over [80 widgets](/learn/app-development/widgets/widget-library) that work out-of-the-box for developing a rich and modern end-to-end application. Simply drag-and-drop UI components on the dashboard and integrate it with data and services. 
 
 :::tip
-To learn about Widgets, see the [Widgets](/learn/app-development/widgets/ui-elements) documentation. 
+UI component are specified as widgets. To explore, see the [widgets documentation](/learn/app-development/widgets/widget-library). 
 :::
 
-WaveMaker apps are built on the concept called [variables](/learn/app-development/variables/variables-actions). You can create simple to complex variables with data and services. Integrate it with UI components in a few clicks and it is done. Also, you can extend your app using APIs, web services, or write your own code to extend an original feature. 
+In WaveMaker, apps are built on the concept called [variables](/learn/app-development/variables/variables) to connect frontend and backend. You can develop business logics using APIs, web services, java services, or write your own code to extend an original feature. Integrate it with widgets in a few clicks and use them across the project. 
 
 In addition, WaveMaker is also a simple-to-use solution for building apps faster with one-click deployment. In this section, you can find a complete developers' guide for building apps in WaveMaker Studio.
 
 ## WaveMaker Studios
 WaveMaker supports two types of Studios.  
 - **WaveMaker Online** (WMO) - a cloud product. 
-- **WaveMaker Enterprise** (WME) - an on-premise product. For more information, see [Enterprise App Development](https://www.wavemaker.com/enterprise-application-development-software/).
+- **WaveMaker Enterprise** (WME) - an on-premise product. For WME installation, see [WaveMaker Enterprise Setup Guide](/learn/installation/wavemaker-enterprise-setup-guide).
 
 ## WaveMaker Online (WMO)
 
 Develop app using WaveMaker Online (WMO) Studio and deploy your app on cloud. When you sign-up for WMO, you get a 30-day trial period. During this period you can develop, test, run and collaborate with your team members. Deploy your app to Amazon Web Service or WaveMaker Demo Cloud. At the end of the 30-day trial, you get an option to choose a suitable plan to continue working on the app. There are various purchase plans for monthly and annual subscription. For more information, talk to our [Consultant](https://www.wavemaker.com/talk-to-expert/).
 
-## Quick start guide to get you started
+## Quick Start Guide
 
 |To | See |
 |----|----|

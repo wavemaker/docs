@@ -2,22 +2,22 @@
 title: "Data Table - Field Configuration"
 id: ""
 ---
-
+---
 The following features are available from the **Advanced Settings** property of the Data Table.
 
-### Configure column display options
+## Configure column display options
 
 The columns or fields to be displayed in a Data Table can be further configured:
 
-1. 1. to be displayed based upon the platform i.e. for desktop and mobile. This enables you to keep your mobile display clutter free, you can choose to display only limited columns or fields for mobile platform;
-    2. the order can also be specified as different from the underlying data source ordering by using the arrow keys given below the column listing;
-    3. group columns under a common heading;
-    4. add a custom column;
-    5. to choose a representational view based upon the field content, like picture field can be depicted as an _image_ for the picurl field, boolean fields as a _checkbox_ etc.;
-    6. to define the display format of the column or field, based upon the content including date, currency, decimal and many more formats;
-    7. to style the fields for a better readability and for highlighting a particular value;
-    8. to restrict the display based upon the security roles;
-    9. filter criteria can be applied to referenced entities for Inline Editable and Quick Edit Data Tables ([see here for usage](http://pm.wavemaker.com/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets/)).
+1. to be displayed based upon the platform i.e. for desktop and mobile. This enables you to keep your mobile display clutter free, you can choose to display only limited columns or fields for mobile platform;
+2. the order can also be specified as different from the underlying data source ordering by using the arrow keys given below the column listing;
+3. group columns under a common heading;
+4. add a custom column;
+5. to choose a representational view based upon the field content, like picture field can be depicted as an _image_ for the picurl field, boolean fields as a _checkbox_ etc.;
+6. to define the display format of the column or field, based upon the content including date, currency, decimal and many more formats;
+7. to style the fields for a better readability and for highlighting a particular value;
+8. to restrict the display based upon the security roles;
+9. filter criteria can be applied to referenced entities for Inline Editable and Quick Edit Data Tables ([see here for usage](/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets)).
 
 All the above-mentioned options are available from the **Columns tab** of the **Advanced Settings** property.
 

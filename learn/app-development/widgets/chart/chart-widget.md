@@ -1,17 +1,47 @@
 ---
-title: "Chart Widget"
+title: "Chart Widgets"
 id: ""
 ---
+---
 
-"A picture is worth a thousand words".
+Use chart widgets to represent data in a pictorial format. Using chart widgets, you can transform data into various chart types. 
 
-With this reference, WaveMaker gives you a tool to present your data in a pictorial form using the chart widgets. Using these widgets you can transform your data into either a line chart, column chart, pie chart, area chart, cumulative line chart, bar chart or a donut chart.
+## Chart Types
 
-[![](/learn/assets/chart_run.png)](/learn/assets/chart_run.png)
+In WaveMaker Studio, you can use the following chart types as specified below.
 
-# Chart Types
+:::note
+This documentation page and charts may take a few seconds longer to load. Wait for the charts to load fully.  
+:::
 
-Following are the various charts offered by WaveMaker - Area, Bar, Bubble, Column, Cumulative Line, Donut, Line, and Pie.
+### 1. Line Chart
+
+<iframe width="100%" height="375" style="background-color: snow;" id="line" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Charts">Line Chart</iframe>
+
+### 2. Area Chart
+
+<iframe width="100%" height="375" style="background-color: snow;" id="area" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/AreaChart">Area Chart</iframe>
+
+### 3. Column Chart
+
+<iframe width="100%" height="375" style="background-color: snow;" id="column" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ChartsColBar">Column Chart</iframe>
+
+### 4. Bar Chart
+
+<iframe width="100%" height="375" style="background-color: snow;" id="bar" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/BarChart">Bar Chart</iframe>
+
+### 5. Pie Chart
+
+<iframe width="100%" height="375" style="background-color: snow;" id="pie" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PieChart">Pie Chart</iframe>
+
+### 6. Donut Chart
+
+<iframe width="100%" height="325" style="background-color: snow;" id="donut" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/DonutChart">Donut Chart</iframe>
+
+### 7. Bubble Chart
+
+<iframe width="100%" height="575" style="background-color: snow;" id="bubble" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/BubbleChart">Bubble Chart</iframe>
+
 
 ## Chart Comparison
 
@@ -26,21 +56,7 @@ The chart type property can be used to portray the data in various forms. Each t
 
 Choose the type according to your need, you might want to try different types before settling for the best.
 
-<iframe width="100%" height="375" style="background-color: snow;" id="line" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Charts">Line Chart</iframe>
-
-<iframe width="100%" height="375" style="background-color: snow;" id="area" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/AreaChart">Area Chart</iframe>
-
-<iframe width="100%" height="375" style="background-color: snow;" id="column" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ChartsColBar">Column Chart</iframe>
-
-<iframe width="100%" height="375" style="background-color: snow;" id="bar" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/BarChart">Bar Chart</iframe>
-
-<iframe width="100%" height="375" style="background-color: snow;" id="pie" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PieChart">Pie Chart</iframe>
-
-<iframe width="100%" height="325" style="background-color: snow;" id="donut" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/DonutChart">Donut Chart</iframe>
-
-<iframe width="100%" height="575" style="background-color: snow;" id="bubble" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/BubbleChart">Bubble Chart</iframe>
-
-# Features
+## Features
 
 Charts are used for graphical display of data  and WaveMaker charts come  with the following features:
 
@@ -97,20 +113,24 @@ These options are available from the Advanced Settings of the chart. Apart from 
 
 This property defines how the data is represented in the chart.
 
-- **Datapoint Interpolation** Property determines how data points are joined and represented in the chart. This property is applicable to Line, Area and Cumulative Line Charts. Value can be set to:
+### Datapoint Interpolation
+
+Property determines how data points are joined and represented in the chart. This property is applicable to Line, Area and Cumulative Line Charts. Value can be set to:
     
-    - Linear,
-    - Cardinal for smooth curves, or
-    - Step
+- Linear,
+- Cardinal for smooth curves, or
+- Step
     
-    [![](/learn/assets/chart_interpolation.png)](/learn/assets/chart_interpolation.png)
-- **Data Arrangement** Property (available only for Column, Area and Bar Charts) controls whether to show the areas in:
+[![](/learn/assets/chart_interpolation.png)](/learn/assets/chart_interpolation.png)
+
+### Data Arrangement
+Data Arrangement Property (available only for Column, Area and Bar Charts) controls whether to show the areas in:
     
-    - - stack,
-        - stream, or
-        - expand
+- stack,
+- stream, or
+- expand
     
-    [![](/learn/assets/chart_arrangement.png)](/learn/assets/chart_arrangement.png)
+[![](/learn/assets/chart_arrangement.png)](/learn/assets/chart_arrangement.png)
 
 ## Data Aggregation and Grouping
 
@@ -132,42 +152,30 @@ When dealing with charts bound to live variables, you can add additional functio
 
 You can capture user selection in two ways:
 
-1. The various outbound properties of a chart are available for binding to other widgets or variables. The fields under _selecteditem_ will be from the underlying dataset used for binding [![](/learn/assets/chart_output.png)](/learn/assets/chart_output.png)
-2. These selected values can be accessed via JavaScript
-    
-    Page.chart3Select = function($event, widgets, selectedItem, selectedChartItem) {
-          Page.Widgets.key.datavalue = selectedChartItem.key; // key value of selected item
-          Page.Widgets.xv.datavalue = selectedChartItem.x; // x value of selected item
-          Page.Widgets.yv.datavalue = selectedChartItem.y; // y value of selected item
-          Page.Widgets.selectname.datavalue = selectedItem.name; // name field of selected object
-          Page.Widgets.selectdept.datavalue = selectedItem.deptcode; // deptcode of selected object
-    };
-    
-    Here we have used the _On select_ event of the chart: [![](/learn/assets/chart_events.png)](/learn/assets/chart_events.png)
+1. The various outbound properties of a chart are available for binding to other widgets or variables. The fields under _selecteditem_ will be from the underlying dataset used for binding. 
 
-# Use Cases
+[![](/learn/assets/chart_output.png)](/learn/assets/chart_output.png)
+
+2. These selected values can be accessed via JavaScript
+
+```js
+Page.chart3Select = function($event, widgets, selectedItem, selectedChartItem) 
+{
+    Page.Widgets.key.datavalue = selectedChartItem.key; // key value of selected item
+    Page.Widgets.xv.datavalue = selectedChartItem.x; // x value of selected item
+    Page.Widgets.yv.datavalue = selectedChartItem.y; // y value of selected item
+    Page.Widgets.selectname.datavalue = selectedItem.name; // name field of selected object
+    Page.Widgets.selectdept.datavalue = selectedItem.deptcode; // deptcode of selected object
+};
+```
+    
+Here we have used the _On select_ event of the chart: 
+
+[![](/learn/assets/chart_events.png)](/learn/assets/chart_events.png)
+
+## Use Cases
 
 - [Basic Usage](/learn/app-development/widgets/chart/charts-basic-usage/)
 - [How to capture user selection](/learn/how-tos/charts-displaying-user-selection-another-widget/)
 - [How to handling dynamic data](/learn/how-tos/charts-handling-dynamic-data/)
-- [How to displaying custom data](/learn/how-tos/charts-custom-data/)
-
-[5\. Chart Widgets](/learn/app-development/widgets/widget-library/#chart)
-
-- [i. Chart Types](#chart-types)
-    - [○ Line Chart](#line)
-    - [○ Area Chart](#area)
-    - [○ Column Chart](#column)
-    - [○ Bar Chart](#bar)
-    - [○ Line Chart](#line)
-    - [○ Pie Chart](#pie)
-    - [○ Donut Chart](#donut)
-    - [○ Bubble Chart](#bubble)
-- [ii. Features](#features)
-    - [○ Data Source](#data)
-    - [○ Layout](#layout)
-    - [○ Data Representation](#data-rendering)
-    - [○ Data Aggregation & Grouping](#data-aggregation)
-    - [○ User Interaction](#user-interaction)
-    - [○ User Selection](#user-selection)
-- [iii. Use Cases](#use-cases)
+- [How to displaying custom data](/learn/how-tos/charts-custom-data/)  
