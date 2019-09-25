@@ -254,28 +254,38 @@
 
     "Mobile app": 
     [
-        "hybrid-mobile/building-hybrid-mobile-apps",           
+        "hybrid-mobile/building-hybrid-mobile-apps",
+        "hybrid-mobile/native-device-support",          
+
       {
         "type": "subcategory",
         "label": "Mobile Design",
-        "ids": [
+        "ids": 
+        [
         "hybrid-mobile/mobile-page-concepts",
-        "hybrid-mobile/mobile-tabbar"]
+        "hybrid-mobile/mobile-tabbar",
+        "hybrid-mobile/mobile-navbar"    
+        ]
       },
 
       {
         "type": "subcategory",
         "label": "Mobile Installer",
-        "ids": [
+        "ids": 
+        [
         "hybrid-mobile/test-run",
-        "hybrid-mobile/mobile-build-android"]
+        "hybrid-mobile/debugging-mobile-apps",        
+        "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
+        "hybrid-mobile/mobile-build-android",
+        ""
+        ]
       },
 
       {
         "type": "subcategory",
         "label": "Mobile Integrations",
         "ids": [
-        "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
+        "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",        
         "hybrid-mobile/mobile-integrations-amazon-sns",
         "hybrid-mobile/use-push-notification-wm-mobile-app",
         "hybrid-mobile/invoking-web-app-apis-mobile-apps"]
@@ -419,7 +429,6 @@
 
           "Mobile widgets":
           [
-            "hybrid-mobile/mobile-navbar",
             "how-tos/using-search-widget-within-navbar",
             "app-development/widgets/mobile-widgets/barcode-scanner"  
           ],
@@ -428,14 +437,6 @@
           [
             "how-tos/splashscreens-icons",
             "how-tos/using-cordova-plugins"
-          ],
-
-          "Mobile integrate":
-          [
-            "hybrid-mobile/mobile-integrations-amazon-sns",
-            "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
-            "hybrid-mobile/use-push-notification-wm-mobile-app",
-            "mobile-app-development/invoking-web-app-apis-mobile-apps"
           ],
 
           "DataTable":

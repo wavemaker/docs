@@ -58,7 +58,7 @@ class Index extends React.Component {
 							<p>Learn how to create cross-platform hybrid mobile apps</p>
                             <p>
                                 <b>Rapid Mobile App Development</b><br />								
-                                <a href="/learn/documentation-reference/" target="_self" className="button color-3 small" style={{'borderRadius': '2px'}}>Build</a>
+                                <a href="/learn/hybrid-mobile/building-hybrid-mobile-apps" target="_self" className="button color-3 small" style={{'borderRadius': '2px'}}>Build</a>
                             </p>
                         </div>
                     </div>
@@ -89,7 +89,8 @@ class Index extends React.Component {
 							<p>In-depth reference docs to understand every menu, option and checkbox.</p>                            
                             <p>
                                 <b>If it’s on the screen, it’s in here</b><br />
-                                <a href="/learn/documentation-reference/#tab-mob" target="_self" className="button color-3 small " style={{'borderRadius': '2px'}}>Explore</a>
+                                <a href="/learn/howtos-documents" target="_self" >How-to-Topics</a>
+                                <a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>
                             </p>
                         </div>
                     </div>
