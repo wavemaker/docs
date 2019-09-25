@@ -309,248 +309,259 @@
 
      "How-tos": 
     [
-        "howtos-documents",
+        
         "how-to-app-development",
         "how-to-mobile-development",
         "how-to-widgets",
         "how-to-prefabs"
-    ],
-
-    "how-to: App solution":
-    [
-      "how-tos/creating-registration-page",
-      "how-tos/support-password-encryption",
-      "how-tos/error-handling-wavemaker-app"
-    ],
-
-    "how-to: UI design":
-    [
-      "responsive-web/web-ui-design",
-      "hybrid-mobile/mobile-page-concepts",
-      "how-tos/passing-parameters-pages",
-      "how-tos/passing-parameters-partial-page",
-      "how-tos/use-static-variable-pass-data-pages",
-      "how-tos/setting-language-date-format",
-      "how-tos/incorporating-additional-icons",
-      "how-tos/displaying-icon-color-based-upon-condition",
-      "how-tos/changing-default-favicon",
-      "how-tos/changing-app-logo",
-      "how-tos/changing-page-title",
-      "how-tos/customise-app-style",
-      "how-tos/customize-existing-theme",
-      "how-tos/customizing-theme"
-    ],
-
-    "how-to: Localization":
-    [
-      "how-tos/localization-wavemaker-apps",
-      "how-tos/localization-error-messages",
-      "how-tos/localization-data-table-column-headings"
-    ],
-
-    "how-to: Security":
-    [
-      "how-tos/saml-integration-onelogin",
-      "how-tos/saml-integration-adfs",
-      "how-tos/custom-security-using-google-oauth-prefab",
-      "how-tos/multiple-security-provider-implementation",
-      "how-tos/customizing-post-authentication-handlers"
-    ],
-
-    "how-to: Databases":
-    [
-      "how-tos/queries-dynamic-clause",
-      "how-tos/connect-azure-sql-server",
-      "app-development/services/database-services/download-jdbc-driver-jar",
-      "how-tos/fetch-default-number100-records-database"
-    ],
-
-    "how-to: Web services":
-    [
-      "how-tos/using-post-method-send-data-rest-api" 
-    ],
-
-    "how-to: Java services":
-    [
-      "how-tos/sending-email-using-java-service",
-      "how-tos/implementing-forgot-password-feature-using-java-service",
-      "how-tos/accessing-rest-apis-java-service",
-      "how-tos/scheduling-java-service",
-      "app-development/services/database-services/orm-artifacts/#custom-query-syntax",
-      "how-tos/pre-post-processing-db-service-apis"
-    ],
-
-    "how-to: Variable":
-    [
-      "how-tos/using-variables-queries-procedure"
-    ],
-
-    "how-to: JavaScript":
-    [
-      "how-tos/using-javascript-binding",
-      "how-tos/using-javascript-external-url",
-      "how-tos/using-javascript-loop-command"
-    ],
-
-    "how-to: Developer-side":
-    [
-      "how-tos/synchronizing-wavemaker-apps-ides-beta",
-      "how-tos/integrating-amazon-cognito-user-authentication",
-      "how-tos/integrating-sample-jasper-report-wavemaker-application",
-      "how-tos/generate-pdf-file-using-jasper-reports"
-    ],
-
-    "how-to: Mobile gesture":
-    [
-      "hybrid-mobile/gesture-support",
-      "how-tos/setting-swipe-gestures-list-widget",
-      "how-tos/working-pull-refresh"
-    ],
-
-    "how-to: Mobile widgets":
-    [
-      "hybrid-mobile/mobile-navbar",
-      "how-tos/using-search-widget-within-navbar",
-      "app-development/widgets/mobile-widgets/barcode-scanner"  
-    ],
-
-    "how-to: Mobile UI design":
-    [
-      "how-tos/splashscreens-icons",
-      "how-tos/using-cordova-plugins"
-    ],
-
-    "how-to: Mobile integrate":
-    [
-      "hybrid-mobile/mobile-integrations-amazon-sns",
-      "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
-      "hybrid-mobile/use-push-notification-wm-mobile-app",
-      "mobile-app-development/invoking-web-app-apis-mobile-apps"
-    ],
-
-    "how-to: DataTable":
-    [
-      "how-tos/view-master-detail-data-records-using-data-table",
-      "how-tos/add-master-detail-records-using-data-table",
-      "how-tos/export-data-data-table",
-      "how-tos/dynamic-data-tables",
-      "how-tos/data-table-column-bound-query"
-    ],
-
-    "how-to: List":
-    [
-      "how-tos/list-grouped",
-      "how-tos/list-multi-grouped",
-      "how-tos/list-data-table",
-      "how-tos/building-editable-list",
-      "how-tos/building-cascading-lists",
-      "how-tos/list-item-access",
-      "how-tos/localization-data-table-column-headings"
-    ],
-
-    "how-to: Forms":
-    [
-      "how-tos/using-wizard-cumulative-data-entry-form",
-      "how-tos/live-form-tabbed-form",
-      "how-tos/live-form-linking-another-widget",
-      "how-tos/live-form-related-fields",
-      "how-tos/using-cascading-select-autocomplete-live-form-fields",
-      "how-tos/using-cascading-select-within-live-form",
-      "how-tos/using-cascading-filter-populate-live-form",
-      "how-tos/using-wizard-master-detail-live-form",
-      "how-tos/using-wizard-progressive-data-entry-live-form",
-      "how-tos/using-wizard-cumulative-data-entry-live-form"
-    ],
-
-    "how-to: Calendar":
-    [
-      "how-tos/calendar-usage-create-event",
-      "how-tos/calender-usage-google-calendar-integration"
-    ],
-
-    "how-to: CheckboxSet":
-    [
-      "how-tos/checkboxset-filter-list-data"
-    ],
-
-    "how-to: FileUpload":
-    [
-      "how-tos/file-upload-widget-operations",
-      "how-tos/upload-file-save-database",
-      "how-tos/file-upload-blob-data",
-      "how-tos/file-upload-custom-directory",
-      "how-tos/accessing-file-upload-java-code",
-      "how-tos/upload-files-from-live-form-form"
-    ],
-
-    "how-to: Radioset":
-    [
-      "how-tos/radioset-filter-list"
-    ],
-
-    "how-to: Rating":
-    [
-      "how-tos/rating-widget-using-static-data",
-      "how-tos/rating-widget-using-static-variable",
-      "building-rating-widget-using-variable",
-      "how-tos/rating-widget-interactive"
-    ],
-
-    "how-to: Select":
-    [
-      "how-tos/configuring-select-widget-static-list-values",
-      "how-tos/configuring-select-widget-variable",
-      "how-tos/configuring-select-widget-display-data-fields",
-      "how-tos/configuring-select-widget-database-fields",
-      "how-tos/configuring-cascading-select"
-    ],
-
-    "how-to: Charts":
-    [
-      "how-tos/charts-displaying-user-selection-another-widget",
-      "how-tos/charts-handling-dynamic-data",
-      "how-tos/charts-custom-data"
-    ],
-
-    "how-to: Live filter":
-    [
-      "how-tos/live-filter-applying",
-      "how-tos/live-filter-multiple-values",
-      "how-tos/live-filter-range-filter"
-    ],
-
-    "how-to: Container":
-    [
-      "how-tos/setting-partial-page-content-accordion-within-list",
-      "how-tos/setting-partial-page-content-panel-within-list-using-javascript"
-    ],
-
-    "how-to: Tree":
-    [
-      "how-tos/tree-use-case-static-variable",
-      "how-tos/tree-use-case-java-service",
-      "how-tos/tree-use-case-dynamic-tree"
-    ],
-
-    "how-to: Nav":
-    [
-      "how-tos/restricting-menu-item-display-based-user-role",
-      "app-development/widgets/navigation/nav-basic-usage"
-    ],
-
-    "how-to: Dropdown":
-    [
-      "how-tos/restricting-menu-item-display-based-user-role",
-      "how-tos/implementing-localization-dropdown-menu"
-    ],
-
-    "how-to: Prefabs":
-    [
-      "how-tos/create-prefab-using-third-party-ui-widgets",
-      "how-tos/create-prefab-using-d3-nvd3-charts",
-      "how-tos/create-prefab-using-d3-library-datamaps",
-      "how-tos/create-prefab-using-jquery-plugin"
     ]
+  },
+
+
+  
+  "How to Docs": 
+  {
+        "How-to-documents": 
+          [
+            "howtos-documents"
+          ],
+          
+          "App solution":
+          [
+            "how-tos/creating-registration-page",
+            "how-tos/support-password-encryption",
+            "how-tos/error-handling-wavemaker-app"
+          ],
+
+          "UI design":
+          [
+            "responsive-web/web-ui-design",
+            "hybrid-mobile/mobile-page-concepts",
+            "how-tos/passing-parameters-pages",
+            "how-tos/passing-parameters-partial-page",
+            "how-tos/use-static-variable-pass-data-pages",
+            "how-tos/setting-language-date-format",
+            "how-tos/incorporating-additional-icons",
+            "how-tos/displaying-icon-color-based-upon-condition",
+            "how-tos/changing-default-favicon",
+            "how-tos/changing-app-logo",
+            "how-tos/changing-page-title",
+            "how-tos/customise-app-style",
+            "how-tos/customize-existing-theme",
+            "how-tos/customizing-theme"
+          ],
+
+          "Localization":
+          [
+            "how-tos/localization-wavemaker-apps",
+            "how-tos/localization-error-messages",
+            "how-tos/localization-data-table-column-headings"
+          ],
+
+          "Security":
+          [
+            "how-tos/saml-integration-onelogin",
+            "how-tos/saml-integration-adfs",
+            "how-tos/custom-security-using-google-oauth-prefab",
+            "how-tos/multiple-security-provider-implementation",
+            "how-tos/customizing-post-authentication-handlers"
+          ],
+
+          "Databases":
+          [
+            "how-tos/queries-dynamic-clause",
+            "how-tos/connect-azure-sql-server",
+            "app-development/services/database-services/download-jdbc-driver-jar",
+            "how-tos/fetch-default-number100-records-database"
+          ],
+
+          "Web services":
+          [
+            "how-tos/using-post-method-send-data-rest-api" 
+          ],
+
+          "Java services":
+          [
+            "how-tos/sending-email-using-java-service",
+            "how-tos/implementing-forgot-password-feature-using-java-service",
+            "how-tos/accessing-rest-apis-java-service",
+            "how-tos/scheduling-java-service",
+            "app-development/services/database-services/orm-artifacts/#custom-query-syntax",
+            "how-tos/pre-post-processing-db-service-apis"
+          ],
+
+          "Variable":
+          [
+            "how-tos/using-variables-queries-procedure"
+          ],
+
+          "JavaScript":
+          [
+            "how-tos/using-javascript-binding",
+            "how-tos/using-javascript-external-url",
+            "how-tos/using-javascript-loop-command"
+          ],
+
+          "Developer-side":
+          [
+            "how-tos/synchronizing-wavemaker-apps-ides-beta",
+            "how-tos/integrating-amazon-cognito-user-authentication",
+            "how-tos/integrating-sample-jasper-report-wavemaker-application",
+            "how-tos/generate-pdf-file-using-jasper-reports"
+          ],
+
+          "Mobile gesture":
+          [
+            "hybrid-mobile/gesture-support",
+            "how-tos/setting-swipe-gestures-list-widget",
+            "how-tos/working-pull-refresh"
+          ],
+
+          "Mobile widgets":
+          [
+            "hybrid-mobile/mobile-navbar",
+            "how-tos/using-search-widget-within-navbar",
+            "app-development/widgets/mobile-widgets/barcode-scanner"  
+          ],
+
+          "Mobile UI design":
+          [
+            "how-tos/splashscreens-icons",
+            "how-tos/using-cordova-plugins"
+          ],
+
+          "Mobile integrate":
+          [
+            "hybrid-mobile/mobile-integrations-amazon-sns",
+            "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
+            "hybrid-mobile/use-push-notification-wm-mobile-app",
+            "mobile-app-development/invoking-web-app-apis-mobile-apps"
+          ],
+
+          "DataTable":
+          [
+            "how-tos/view-master-detail-data-records-using-data-table",
+            "how-tos/add-master-detail-records-using-data-table",
+            "how-tos/export-data-data-table",
+            "how-tos/dynamic-data-tables",
+            "how-tos/data-table-column-bound-query"
+          ],
+
+          "List":
+          [
+            "how-tos/list-grouped",
+            "how-tos/list-multi-grouped",
+            "how-tos/list-data-table",
+            "how-tos/building-editable-list",
+            "how-tos/building-cascading-lists",
+            "how-tos/list-item-access",
+            "how-tos/localization-data-table-column-headings"
+          ],
+
+          "Forms":
+          [
+            "how-tos/using-wizard-cumulative-data-entry-form",
+            "how-tos/live-form-tabbed-form",
+            "how-tos/live-form-linking-another-widget",
+            "how-tos/live-form-related-fields",
+            "how-tos/using-cascading-select-autocomplete-live-form-fields",
+            "how-tos/using-cascading-select-within-live-form",
+            "how-tos/using-cascading-filter-populate-live-form",
+            "how-tos/using-wizard-master-detail-live-form",
+            "how-tos/using-wizard-progressive-data-entry-live-form",
+            "how-tos/using-wizard-cumulative-data-entry-live-form"
+          ],
+
+          "Calendar":
+          [
+            "how-tos/calendar-usage-create-event",
+            "how-tos/calender-usage-google-calendar-integration"
+          ],
+
+          "CheckboxSet":
+          [
+            "how-tos/checkboxset-filter-list-data"
+          ],
+
+          "FileUpload":
+          [
+            "how-tos/file-upload-widget-operations",
+            "how-tos/upload-file-save-database",
+            "how-tos/file-upload-blob-data",
+            "how-tos/file-upload-custom-directory",
+            "how-tos/accessing-file-upload-java-code",
+            "how-tos/upload-files-from-live-form-form"
+          ],
+
+          "Radioset":
+          [
+            "how-tos/radioset-filter-list"
+          ],
+
+          "Rating":
+          [
+            "how-tos/rating-widget-using-static-data",
+            "how-tos/rating-widget-using-static-variable",
+            "building-rating-widget-using-variable",
+            "how-tos/rating-widget-interactive"
+          ],
+
+          "Select":
+          [
+            "how-tos/configuring-select-widget-static-list-values",
+            "how-tos/configuring-select-widget-variable",
+            "how-tos/configuring-select-widget-display-data-fields",
+            "how-tos/configuring-select-widget-database-fields",
+            "how-tos/configuring-cascading-select"
+          ],
+
+          "Charts":
+          [
+            "how-tos/charts-displaying-user-selection-another-widget",
+            "how-tos/charts-handling-dynamic-data",
+            "how-tos/charts-custom-data"
+          ],
+
+          "Live filter":
+          [
+            "how-tos/live-filter-applying",
+            "how-tos/live-filter-multiple-values",
+            "how-tos/live-filter-range-filter"
+          ],
+
+          "Container":
+          [
+            "how-tos/setting-partial-page-content-accordion-within-list",
+            "how-tos/setting-partial-page-content-panel-within-list-using-javascript"
+          ],
+
+          "Tree":
+          [
+            "how-tos/tree-use-case-static-variable",
+            "how-tos/tree-use-case-java-service",
+            "how-tos/tree-use-case-dynamic-tree"
+          ],
+
+          "Nav":
+          [
+            "how-tos/restricting-menu-item-display-based-user-role",
+            "app-development/widgets/navigation/nav-basic-usage"
+          ],
+
+          "Dropdown":
+          [
+            "how-tos/restricting-menu-item-display-based-user-role",
+            "how-tos/implementing-localization-dropdown-menu"
+          ],
+
+          "Prefabs":
+          [
+            "how-tos/create-prefab-using-third-party-ui-widgets",
+            "how-tos/create-prefab-using-d3-nvd3-charts",
+            "how-tos/create-prefab-using-d3-library-datamaps",
+            "how-tos/create-prefab-using-jquery-plugin"
+          ]
+        
   },
 
 
