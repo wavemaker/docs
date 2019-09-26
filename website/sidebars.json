@@ -185,7 +185,7 @@
         }
       ],
 
-      "Service Integration": 
+      "Integrating": 
       [
         "app-development/variables/data-integration",   
         {
@@ -212,7 +212,7 @@
         "app-development/variables/accessing-elements-via-javascript"
       ], 
       
-    "Developer-side": 
+    "Test, build and deploy": 
     [
         "app-development/dev-integration/developer-tools",
         "app-development/dev-integration/import-export-update-apps",
@@ -228,7 +228,7 @@
 
     {
       "type": "subcategory",
-      "label": "Build & Deployment",
+      "label": "Deployment",
       "ids": [
         "app-development/deployment/release-management", 
         "app-development/deployment/configuration-profiles", 

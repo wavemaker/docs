@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker Platform Architecture"
 id: "platform-overview"
-sidebar_label: "Platform Overview"
+sidebar_label: "Platform"
 ---
 Learn how WaveMaker modern apps work.
 

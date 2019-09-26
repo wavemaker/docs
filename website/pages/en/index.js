@@ -41,7 +41,7 @@ class Index extends React.Component {
             <div className="banner">
                 <div className="row">
                     <div className="column">
-                        <h1>Welcome to WaveMaker Learning Center</h1>
+                        <h1>WaveMaker Technical Documentation</h1>
                         <h4>Find all the resources you need to develop a WaveMaker app.</h4>
                         <button>Get Started</button>
                     </div>
@@ -58,7 +58,8 @@ class Index extends React.Component {
 							<p>Learn how to create cross-platform hybrid mobile apps</p>
                             <p>
                                 <b>Rapid Mobile App Development</b><br />								
-                                <a href="/learn/hybrid-mobile/building-hybrid-mobile-apps" target="_self" className="button color-3 small" style={{'borderRadius': '2px'}}>Build Mobile App</a>
+                                <a href="/learn/hybrid-mobile/building-hybrid-mobile-apps" target="_self" > Build</a>
+								<a href="http://www.wavemaker.com/training/" target="_self" >Mobile Widgets</a>
                             </p>
                         </div>
                     </div>
@@ -85,12 +86,12 @@ class Index extends React.Component {
                             <div className="imagebox-img">                                
 								<img src="/learn/img/Features.png" alt=""/>
                             </div>
-                            <h1>Resources</h1>
+                            <h1>How?</h1>
 							<p>In-depth reference docs to understand every menu, option and checkbox.</p>                            
                             <p>
                                 <b>If it’s on the screen, it’s in here</b><br />
-                                <a href="/learn/howtos-documents" target="_self" >How-to-Topics</a>
-                                <a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>
+								<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>
+                                <a href="/learn/howtos-documents" target="_self" >How-to-Topics</a>                                
                             </p>
                         </div>
                     </div>

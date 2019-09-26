@@ -15,8 +15,10 @@ Pages are designed as a composition of widgets. See [Design Pages](/learn/app-de
 
 There are over 80 widgets in WaveMaker. **Data** widgets for handling data.  **Container** widgets for organizing page element. **Form Widgets** for button, file upload, and more. View the entire list of Widgets in this page. 
 
+[![](/learn/assets/widgets-overview.gif)](/learn/assets/widgets-overview.gif)  
+
 :::tip
-To learn the standard widgets' workflow, see [Widgets Overview](ui-elements.md).
+To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
 :::
 
 ## Data Widgets
