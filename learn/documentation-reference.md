@@ -1,19 +1,19 @@
 ---
-id: "docs"
-title: "Introduction to WaveMaker"
-sidebar_label: "Welcome to WaveMaker"
+id: "documentation-reference"
+title: "Welcome to WaveMaker Developer Help"
+sidebar_label: "Welcome"
 ---
-Find a complete developers' guide to build a WaveMaker app with RAD (Rapid Application Development) approach.
+Find a complete developers' guide to build a WaveMaker app with RAD - *Rapid Application Development* approach.
 
 ---
 
-[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing enterprise apps. It is a design studio with over [80 widgets](/learn/app-development/widgets/widget-library) that work out-of-the-box for developing a rich and modern end-to-end application. Simply drag-and-drop UI components on the dashboard and integrate it with data and services. 
+[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing enterprise apps. It is a design studio with over [80 widgets](/learn/app-development/widgets/widget-library) that work out-of-the-box for developing a rich and modern end-to-end application. Simply drag-and-drop widgets on the dashboard and integrate it with services. 
 
 :::tip
-UI component are specified as widgets. To explore, see the [widgets documentation](/learn/app-development/widgets/widget-library). 
+Widgets are UI elements, which makes your app functional without coding. Explore the [widgets library](/learn/app-development/widgets/widget-library). 
 :::
 
-In WaveMaker, apps are built on the concept called [variables](/learn/app-development/variables/variables) to connect frontend and backend. You can develop business logics using APIs, web services, java services, or write your own code to extend an original feature. Integrate it with widgets in a few clicks and use them across the project. 
+In WaveMaker, apps are built on the concept called [variables](/learn/app-development/variables/variables), which connect widgets with backend services. You can develop business logics using APIs, web services, java services, or write your own code to extend an original feature. Integrate it with widgets in a few clicks and use them across the project. 
 
 In addition, WaveMaker is also a simple-to-use solution for building apps faster with one-click deployment. In this section, you can find a complete developers' guide for building apps in WaveMaker Studio.
 

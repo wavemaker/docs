@@ -2,7 +2,7 @@
 title: "Native Device Support"
 id: ""
 ---
-
+---
 WaveMaker offers various features which make the Mobile App building process easy. These features in the form of device widgets, device variables etc. allow you to concentrate on implementing the business logic by taking care of platform specific adaptation.
 
 ## Platform Look n Feel

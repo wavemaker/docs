@@ -2,12 +2,14 @@
 title: "How to generate PDF File using Jasper Reports"
 id: ""
 ---
-
+---
 To generate PDF file using Jasper Reports, data needs to be consumed from an external REST service. This data should be made available as a downloadable PDF file, which is generated internally using Jasper. 
 
 **Example**: Using HRDB Sample and listing all the departments using a REST API.
 
 [![](/learn/assets/Departments_city.jpg)](/learn/assets/Departments_city.jpg)
+
+## Generate PDF using Jasper Reports
 
 Steps to generate PDF file using Jasper reports are as follows:
 
@@ -15,145 +17,153 @@ Steps to generate PDF file using Jasper reports are as follows:
 - Import HRDB and navigate to API Designer to get the REST API URL for /hrdb/Department. [![](/learn/assets/jasper_hrdb_department.png)](/learn/assets/jasper_hrdb_department.png)
 - Ensure that your app is deployed and use the Deploy URL instead of Run URL.
 - The JSON output looks typically as follows:
-    
+
+```
+{
+  "totalPages": 1,
+  "totalElements": 5,
+  "first": true,
+  "sort": null,
+  "last": true,
+  "numberOfElements": 5,
+  "size": 20,
+  "number": 0,
+  "content": [
     {
-    	"totalPages": 1,
-    	"totalElements": 5,
-    	"first": true,
-    	"sort": null,
-    	"last": true,
-    	"numberOfElements": 5,
-    	"size": 20,
-    	"number": 0,
-    	"content": \[
-    		{
-    			"deptId": 1,
-    			"name": "Engineering",
-    			"budget": 1936760,
-    			"q1": 445455,
-    			"q2": 522925,
-    			"q3": 426087,
-    			"q4": 542293,
-    			"deptCode": "Eng",
-    			"location": "San Francisco",
-    			"tenantId": 1
-    		},
-    		{
-    			"deptId": 2,
-    			"name": "Marketing",
-    			"budget": 1129777,
-    			"q1": 225955,
-    			"q2": 271146,
-    			"q3": 327635,
-    			"q4": 305040,
-    			"deptCode": "Mktg",
-    			"location": "New York",
-    			"tenantId": 1
-    		},
-    		{
-    			"deptId": 3,
-    			"name": "General and Admin",
-    			"budget": 1452570,
-    			"q1": 435771,
-    			"q2": 290514,
-    			"q3": 348617,
-    			"q4": 377668,
-    			"deptCode": "G&A",
-    			"location": "San Francisco",
-    			"tenantId": 1
-    		},
-    		{
-    			"deptId": 4,
-    			"name": "Sales",
-    			"budget": 2743744,
-    			"q1": 493874,
-    			"q2": 658499,
-    			"q3": 713373,
-    			"q4": 877998,
-    			"deptCode": "Sales",
-    			"location": "Austin",
-    			"tenantId": 1
-    		},
-    		{
-    			"deptId": 5,
-    			"name": "Professional Services",
-    			"budget": 806984,
-    			"q1": 201746,
-    			"q2": 201746,
-    			"q3": 177536,
-    			"q4": 225955,
-    			"deptCode": "PS",
-    			"location": "San Francisco",
-    			"tenantId": 2
-    		}
-    	\]
+      "deptId": 1,
+      "name": "Engineering",
+      "budget": 1936760,
+      "q1": 445455,
+      "q2": 522925,
+      "q3": 426087,
+      "q4": 542293,
+      "deptCode": "Eng",
+      "location": "San Francisco",
+      "tenantId": 1
+    },
+    {
+      "deptId": 2,
+      "name": "Marketing",
+      "budget": 1129777,
+      "q1": 225955,
+      "q2": 271146,
+      "q3": 327635,
+      "q4": 305040,
+      "deptCode": "Mktg",
+      "location": "New York",
+      "tenantId": 1
+    },
+    {
+      "deptId": 3,
+      "name": "General and Admin",
+      "budget": 1452570,
+      "q1": 435771,
+      "q2": 290514,
+      "q3": 348617,
+      "q4": 377668,
+      "deptCode": "G&A",
+      "location": "San Francisco",
+      "tenantId": 1
+    },
+    {
+      "deptId": 4,
+      "name": "Sales",
+      "budget": 2743744,
+      "q1": 493874,
+      "q2": 658499,
+      "q3": 713373,
+      "q4": 877998,
+      "deptCode": "Sales",
+      "location": "Austin",
+      "tenantId": 1
+    },
+    {
+      "deptId": 5,
+      "name": "Professional Services",
+      "budget": 806984,
+      "q1": 201746,
+      "q2": 201746,
+      "q3": 177536,
+      "q4": 225955,
+      "deptCode": "PS",
+      "location": "San Francisco",
+      "tenantId": 2
     }
+  ]
+}
+```
     
-- Download the jars highlighted as shown below and add them to lib [![](/learn/assets/Jasper_jars.png)](/learn/assets/Jasper_jars.png)
-- **Add Jasper as dependency in pom.xml along with required exclusions:  **Here is the relevant section that needs to be added by the developer.
-    
-    <dependency>
-                <groupId>net.sf.jasperreports</groupId>
-                <artifactId>jasperreports</artifactId>
-                <version>6.2.2</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.fasterxml.jackson.core</groupId>
-                        <artifactId>jackson-core</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.fasterxml.jackson.core</groupId>
-                        <artifactId>jackson-databind</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.fasterxml.jackson.core</groupId>
-                        <artifactId>jackson-annotations</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.lucene</groupId>
-                        <artifactId>lucene-core</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.fasterxml.jackson.core</groupId>
-                        <artifactId>lucene-analyzers-common</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.lucene</groupId>
-                        <artifactId>lucene-queryparser</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.jfree</groupId>
-                        <artifactId>jcommon</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.jfree</groupId>
-                        <artifactId>jfreechart</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.eclipse.jdt.core.compiler</groupId>
-                        <artifactId>ecj</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.codehaus.castor</groupId>
-                        <artifactId>castor-xml</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.olap4j</groupId>
-                        <artifactId>olap4j</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.google.zxing</groupId>
-                        <artifactId>core</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.ibm.icu</groupId>
-                        <artifactId>icu4j</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
+- Download the jars highlighted as shown below and add them to lib 
+
+[![](/learn/assets/Jasper_jars.png)](/learn/assets/Jasper_jars.png)
+
+- **Add Jasper as dependency in pom.xml along with required exclusions:** Here is the relevant section that needs to be added by the developer.
+
+``` 
+<dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>6.2.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-databind</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-annotations</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.lucene</groupId>
+                    <artifactId>lucene-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>lucene-analyzers-common</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.lucene</groupId>
+                    <artifactId>lucene-queryparser</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.jfree</groupId>
+                    <artifactId>jcommon</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.jfree</groupId>
+                    <artifactId>jfreechart</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.eclipse.jdt.core.compiler</groupId>
+                    <artifactId>ecj</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.codehaus.castor</groupId>
+                    <artifactId>castor-xml</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.olap4j</groupId>
+                    <artifactId>olap4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.google.zxing</groupId>
+                    <artifactId>core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.ibm.icu</groupId>
+                    <artifactId>icu4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+```
     
 - Create a .jrxml file that describes the template  - The template has a header title and the page content has a table which has field names and the field data. To generate the PDF as shown in the above example, the following _jrxml_ template was used. [Refer here for details](http://community.jaspersoft.com/wiki/jasperreports-library-samples)
-    
+
+```
     <?xml version="1.0" encoding="UTF-8"?>
     <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="81afe112-ee1b-4443-8d1c-cb6d9ab95dd8">
       <property name="com.jaspersoft.studio.data.defaultdataadapter" value="JsonArrayDataAdapter.xml"/>
@@ -270,10 +280,12 @@ Steps to generate PDF file using Jasper reports are as follows:
           </band>
       </detail>
     </jasperReport>
-    
+```
+
 - Create a Java Service named GenerateReports and create a method named generatePDFReport that takes – String –jrxml, String – database (if any), HttpServletResponse  - response
-    
-     Imports
+
+``` 
+    Imports
     import javax.servlet.http.HttpServletRequest;
     import org.slf4j.Logger;
     import org.slf4j.LoggerFactory;
@@ -365,9 +377,13 @@ Steps to generate PDF file using Jasper reports are as follows:
             return response;
         }
     }
-    
-- Place the _.jrxml_ file in the location as shown below: [![](/learn/assets/Jasper_jrxml_location.png)](/learn/assets/Jasper_jrxml_location.png)
+```    
+- Place the _.jrxml_ file in the location as shown below: 
+[![](/learn/assets/Jasper_jrxml_location.png)](/learn/assets/Jasper_jrxml_location.png)  
 - In the Main page drag and drop an **Iframe** onto the canvas.
-- Set the Source Property from the properties panel for Iframe. [![](/learn/assets/Jasper_properties_iframe.png)](/learn/assets/Jasper_properties_iframe.png)
-- Save and run the project – The PDF Report gets generated. You can download the PDF file. [![](/learn/assets/run_project.jpg)](/learn/assets/run_project.jpg)
-- The complete output is as follows: [![](/learn/assets/output.jpg)](/learn/assets/output.jpg)
+- Set the Source Property from the properties panel for Iframe. 
+[![](/learn/assets/Jasper_properties_iframe.png)](/learn/assets/Jasper_properties_iframe.png)  
+- Save and run the project – The PDF Report gets generated. You can download the PDF file.   
+[![](/learn/assets/run_project.jpg)](/learn/assets/run_project.jpg)
+- The complete output is as follows: 
+[![](/learn/assets/output.jpg)](/learn/assets/output.jpg)

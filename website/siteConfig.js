@@ -50,7 +50,7 @@ const siteConfig = {
     // For no header links in the top nav bar -> headerLinks: [],
     headerLinks: [
         {languages: true},
-		{doc: 'docs', label: 'Docs '},
+		{doc: 'documentation-reference', label: 'Docs '},
         {doc: 'app-development/widgets/widget-library', label: 'Widgets'},
 		{doc: 'tutorials', label: 'Tutorials'},
 		{doc: 'installation/wavemaker-enterprise-setup-guide', label: 'Enterprise'},
