@@ -86,12 +86,13 @@ class Index extends React.Component {
                             <div className="imagebox-img">                                
 								<img src="/learn/img/Features.png" alt=""/>
                             </div>
-                            <h1>How?</h1>
+                            <h1>Resources</h1>
 							<p>In-depth reference docs to understand every menu, option and checkbox.</p>                            
                             <p>
                                 <b>If it’s on the screen, it’s in here</b><br />
 								<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>
-                                <a href="/learn/howtos-documents" target="_self" >How-to-Topics</a>                                
+                                <a href="/learn/howtos-documents" target="_self" >How-tos</a>
+								<a href="/learn/app-development/wavemaker-overview/platform-overview/" target="_self" >Platform</a>  
                             </p>
                         </div>
                     </div>

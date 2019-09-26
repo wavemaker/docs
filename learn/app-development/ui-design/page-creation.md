@@ -1,8 +1,16 @@
 ---
-title: "Page Creation"
+title: "Creating a Page"
 id: ""
 sidebar_label: "Creating a Page"
 ---
+WaveMaker app is collection of pages. Learn how to create a page.
+
+---
+WaveMaker app is a collection of pages. Each page is composed of different UI elements and Widgets. These UI elements enable user interaction with the app and can get data from the backend services. You can set navigation and interaction rules across pages. 
+
+Navigate to the pages section as shown in the image below. 
+
+![Pages introduction in WaveMaker](../../assets/pages_introduction.png)  
 
 When you create an app within WaveMaker, by default the Main Page is generated. In the process of app development, you will be adding pages and linking them as per the app workflow.
 

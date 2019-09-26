@@ -6,8 +6,9 @@ sidebar_label: "Widgets Library"
 Find everything about Widgets and Prefabs. Navigate to Widgets' list below and access relative docs and API docs.
 
 ---
+[![](/learn/assets/widgets-overview.gif)](/learn/assets/widgets-overview.gif)  
 
-Widgets are HTML/Bootstrap based UI components with rich interaction and designed for highly-responsive design.
+Widgets are HTML/Bootstrap based UI components with rich interaction and designed for responsiveness.
 
 :::note
 Pages are designed as a composition of widgets. See [Design Pages](/learn/app-development/ui-design/design-overview) before getting started with widgets. 
@@ -15,7 +16,7 @@ Pages are designed as a composition of widgets. See [Design Pages](/learn/app-de
 
 There are over 80 widgets in WaveMaker. **Data** widgets for handling data.  **Container** widgets for organizing page element. **Form Widgets** for button, file upload, and more. View the entire list of Widgets in this page. 
 
-[![](/learn/assets/widgets-overview.gif)](/learn/assets/widgets-overview.gif)  
+
 
 :::tip
 To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
