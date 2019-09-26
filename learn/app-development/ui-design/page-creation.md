@@ -1,26 +1,31 @@
 ---
-title: "Creating a Page"
+title: "Introduction to Pages"
 id: ""
-sidebar_label: "Creating a Page"
+sidebar_label: "Create a Page"
 ---
-WaveMaker app is collection of pages. Learn how to create a page.
+WaveMaker app is a collection of pages. Learn how to create a page.
 
 ---
-WaveMaker app is a collection of pages. Each page is composed of different UI elements and Widgets. These UI elements enable user interaction with the app and can get data from the backend services. You can set navigation and interaction rules across pages. 
+WaveMaker apps  are single page application (SPA). However, a WaveMaker app is a collection of pages and it loads asynchronously on demand. Each page is composed of different UI elements and [widgets](/learn/app-development/widgets/widgets-library). These UI elements enable user interaction and get data from the backend services. You can set navigation and interaction rules across pages to suit your workflow.
 
-Navigate to the pages section as shown in the image below. 
+:::tip
+To learn about page life cycle and architecture, see [Page Concepts](/learn/app-development/ui-design/page-concepts).
+:::
+
+For developing app, you add pages and link them as per your app flow design.
+
+## To create a page
+Navigate to the pages section and click on the plus sign next to it. By default, the **Main Page** is generated.  
 
 ![Pages introduction in WaveMaker](../../assets/pages_introduction.png)  
 
-When you create an app within WaveMaker, by default the Main Page is generated. In the process of app development, you will be adding pages and linking them as per the app workflow.
+In this section, we will learn:
 
-In this document, we will be seeing:
-
-- how the [Main Page](#main-page) can be customized,
-- [additional pages](#page-creation) can be created,
-- different [types of pages](#page-types) available,
-- different [page operations](#page-operations), and
-- how information can be passed to the pages using [Page Parameters](#page-parameters).
+- How to customize the [Main Page](#main-page)
+- How to create [Additional Pages](#page-creation)
+- See the [Types of Pages](#page-types)
+- Learn about [Page Operations](#page-operations)
+- How information can be passed to the pages using [Page Parameters](#page-parameters)
 
 The Main page comes with header, footer, top nav, left nav and right nav layout. This layout can be changed as per your needs ([more on layouts](/learn/app-development/ui-design/page-concepts/page-layouts/#page-layouts)). Wavemaker generates the HTML code which can be accessed from the markup tab.
 

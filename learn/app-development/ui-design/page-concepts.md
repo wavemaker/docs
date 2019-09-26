@@ -1,7 +1,6 @@
 ---
 title: "Pages Concepts"
 id: "page-concepts"
-
 ---
 Introduction to Pages in WaveMaker low-code platform. 
 

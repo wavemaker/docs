@@ -1,5 +1,5 @@
 ---
-title: Introduction to App UI Design
+title: App UI Design
 id: "design-overview"
 sidebar_label: "Designing Pages"
 ---
@@ -7,11 +7,7 @@ Learn how to design and navigate across pages and use rich themes to your WaveMa
 
 ---
 
-An app is a collection of pages, with each page composed of different UI elements and Widgets. These UI elements enable user interaction with the app and can get data from backend services. Navigation and interaction rules can be setup across pages. 
-
-## Designing Pages
-
-UI design is the starting point to get started with designing an app. It involves the following steps:
+Get started with designing your app. It involves the following steps:
 
 1. Choosing a **Page Layout** for composition of Widgets or UI Elements.
 2. Using **Widgets** for:
@@ -21,8 +17,7 @@ UI design is the starting point to get started with designing an app. It involve
     - Page navigation to control the workflow.
 
 :::tip
-- To get started with Widgets already, see [Widgets and Prefabs](/learn/app-development/widgets/ui-elements) documentation. 
-- To explore WaveMaker' Widgets, see [Widgets Library](/learn/app-development/widgets/widget-library).
+- To explore WaveMaker widgets, see [Widgets Library](/learn/app-development/widgets/widget-library).
 :::
 
 3. **Prefabs** to customize and extend widgets' capability. 
