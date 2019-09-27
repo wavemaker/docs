@@ -17,10 +17,7 @@
             [
             "app-development/ui-design/page-creation",
             "app-development/ui-design/design-overview",
-            "app-development/widgets/ui-elements",            
-            "app-development/services/creating-backend-services",
-            "app-development/services/api-designer/api",
-            "app-development/variables/variables",              
+            "app-development/widgets/ui-elements",                                  
             "app-development/ui-design/page-artefacts",
             "app-development/ui-design/themes",
             "app-development/ui-design/page-concepts/page-templates"            
@@ -34,10 +31,21 @@
             "app-development/ui-design/page-concepts/partial-pages",
             "app-development/ui-design/page-concepts/page-layouts",
             "app-development/ui-design/page-concepts/page-navigation",
-            "app-development/ui-design/page-concepts/page-events"         
+            "app-development/ui-design/page-concepts/page-events",
+            "app-development/ui-design/use-cases-ui-design"         
             ]       
-        },   
-        "app-development/ui-design/use-cases-ui-design"
+        }, 
+        {
+          "type": "subcategory",
+          "label": "Services",
+          "ids": 
+            [          
+            "app-development/services/creating-backend-services",
+            "app-development/services/api-designer/api",
+            "app-development/variables/variables"
+            ]
+        }
+        
       ],
 
       "Databases": 

@@ -7,8 +7,8 @@ What skills you need to develop web and hybrid mobile apps using WaveMaker.
 ---
 WaveMaker makes building web and mobile apps much easier. It can be used by a RAD Developer with a basic skill-set, or by a pro UI developer. 
 
-## Expected knowledge of
-Here is a brief outline of the skills you need to build apps using WaveMaker.
+## Expect to have
+Brief outline of the skills you need to build apps using WaveMaker.
 
 | **Skill** | **Basic RAD Developer** | **Advanced App Developer** |
 | --- | --- | --- |
