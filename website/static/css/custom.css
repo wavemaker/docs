@@ -75,6 +75,7 @@ body {
     min-height: 80vh;
 	font-family: 'Lato',' Arial', 'Helvetica', sans-serif;
     background-color: #f5f5f5;
+	padding-bottom: 30px;
 }
 
 .banner {
@@ -112,7 +113,7 @@ body {
 }
 
 .content-wrapper {
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
 }
 .content-blocks {
     background: #ffffff;
@@ -123,17 +124,23 @@ body {
     box-shadow: 0 2px 0 0 rgba(0,0,0,.03);
     overflow: hidden;
     min-height: 200px;
-    padding: 15px 30px;
+    padding: 20px;
 }
 .imagebox-img {
     display: block;
+	min-height: 113px;
+	background-color: #f4f4f4;
+}
+.imagebox-img img{
+	max-height: 100%;
+	background-size: 100%;
 }
 .content-blocks h1 {
-    font: 28px Lato, Arial, Helvetica, sans-serif;
+    font: 24px Lato, Arial, Helvetica, sans-serif;
     color: #333333;
 }
 .content-blocks h1, .content-blocks p {
-    margin: 0 0 10px 0;
+    margin: 15px 0 0 0;
     line-height: 1.7;
 }
 .content-blocks p {
@@ -147,7 +154,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     padding: 9px 14px 9px 14px;
-    margin: 20px 2px 0 0;
+    margin: 10px 2px 0 0;
     display: inline-block;
     color: #fff;
     border-radius: 2px;
@@ -165,8 +172,8 @@ body {
 
 
 .footer {
-    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
-    font: Lato, Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
 #logo {
@@ -256,13 +263,11 @@ body {
 }
 
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+@media only screen and (min-width: 360px) and (max-width: 736px) {
 	.row {
         width: 100%;
     }
-    .column {
-        flex: auto;
-    }
+    
     .footer .column,
     .footer .column ul,
     .header .column {
@@ -270,6 +275,9 @@ body {
         display: block;
         justify-content: center;
 		text-align: center;
+    }
+	.column {
+        flex: auto;
     }
 }
 
