@@ -3,6 +3,7 @@ body {
     margin: 0;
     
 }
+
 .row {
     display: flex;
     flex-direction: row;
@@ -87,7 +88,8 @@ body {
     margin: 0 0 40px;
 }
 .banner .column {
-    padding: 5em 1em;
+    padding: 3em .5em;
+	padding-top: 30px;
 }
 .banner button {
     width: 150px;
@@ -98,18 +100,19 @@ body {
     box-shadow: 0 0 3px 1px rgba(0,0,0,.3);
     border: 0;
     font-size: 18px;
-    margin: 30px 0 10px;
+    margin: 30px 20px 10px;
     color: #fff;
 }
 .banner button:hover {
     cursor: pointer;
 }
 .banner h1 {
-    font-size: 38px;
+    font-size: 44px;
 }
 .banner h1, .banner h4 {
     font-weight: normal;
     margin-bottom: 0px;
+	padding-left:20px;
 }
 
 .content-wrapper {
@@ -119,7 +122,7 @@ body {
     background: #ffffff;
     color: #777777;
     display: block;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 1px solid #eee;
     box-shadow: 0 2px 0 0 rgba(0,0,0,.03);
     overflow: hidden;
@@ -257,6 +260,7 @@ body {
 .toc .toggleNav .navGroup .navGroupCategoryTitle {
 	font-size: 16px;
 	color: #808080;
+	font-weight: 400;
 }
 .navigationSlider .slidingNav ul li.siteNavGroupActive a {
 	background-color: #066db7;

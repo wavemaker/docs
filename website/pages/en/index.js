@@ -42,7 +42,7 @@ class Index extends React.Component {
                 <div className="row">
                     <div className="column">
                         <h1>WaveMaker Technical Documentation</h1>
-                        <h4>Find all the resources you need to develop a WaveMaker app.</h4>
+                        <h4>Find the documentation and references to develop a WaveMaker app.</h4>
                         <button>Get Started</button>
                     </div>
 					<div className="column">
@@ -55,7 +55,7 @@ class Index extends React.Component {
                     <div className="content-wrapper">
                         <div className="content-blocks">
                             <div className="imagebox-img">
-                                <img src="/learn/img/Mobile app.svg" alt=""/>
+                                <img src="/learn/img/01-Mobile app.svg" alt=""/>
                             </div>
 							<div>
 								<h1>Mobile Apps</h1>                            
@@ -73,7 +73,7 @@ class Index extends React.Component {
                     <div className="content-wrapper">
                         <div className="content-blocks">
                             <div className="imagebox-img">
-                                <img src="/learn/img/Tutorials.svg" alt=""/>
+                                <img src="/learn/img/02-Tutorials.svg" alt=""/>
                             </div>
 							<div>
 								<h1>Tutorials</h1>
@@ -91,15 +91,15 @@ class Index extends React.Component {
                     <div className="content-wrapper">
                         <div className="content-blocks">
                             <div className="imagebox-img">                                
-								<img src="/learn/img/Resources.svg" alt=""/>
+								<img src="/learn/img/03-Resources.svg" alt=""/>
                             </div>
 							<div>
-								<h1>How-to Guides</h1>
+								<h1>How-to Docs</h1>
 								<p>See scenarios and solutions for using widgets and features.</p>                            
 								<p>
 									Customise your app<br />
-									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>
-									<a href="/learn/howtos-documents" target="_self" >How-to topics</a>                                
+                                    <a href="/learn/howtos-documents" target="_self" >How-tos</a>
+									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>									                                
 								</p>
 							</div>
                         </div>
@@ -109,14 +109,14 @@ class Index extends React.Component {
                     <div className="content-wrapper">
                         <div className="content-blocks">
                             <div className="imagebox-img">                                
-								<img src="/learn/img/Team blog.svg" alt=""/>
+								<img src="/learn/img/04-Team blog.svg" alt=""/>
                             </div>
 							<div>
-								<h1>What's new?</h1>
-								<p>Get the latest updates directly from our developers.</p>                            
-								<p>Stay tuned for the updates<br />
-									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >Team Blog</a>
-									<a href="/learn/wavemaker-release-notes" target="_self" >Release Notes</a>									
+								<h1>What's New?</h1>
+								<p>See the latest updates directly from our developers.</p>                            
+								<p>Stay tuned for more<br />
+									<a href="/learn/wavemaker-release-notes" target="_self" >Release Notes</a>
+									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >Team Blog</a>																		
 								</p>
 							</div>
                         </div>

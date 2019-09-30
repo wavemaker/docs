@@ -2,28 +2,15 @@
 id: "howtos-documents"
 title: "How-to Topics"
 ---
-See the how-tos for the each specified category or look for the topic from the left navigation. 
+Find the how to topics and look for sub-categories specified on the left navigation. 
 
 ---
 
+See the how-tos for the each specified category.
 
-
-[1. How-tos: App Development](/learn/how-to-app-development)
-====
-> For questions related to app development, see [How-tos: App Development](/learn/how-to-app-development).
-
-[2. How-tos: Mobile Development](/learn/how-to-mobile-development)
-=====
-
-> For questions related to hybrid mobile app development, see [How-tos: Mobile Development](/learn/how-to-mobile-development).
-
-
-[3. How-tos: Widgets](/learn/how-to-widgets)
-=====
-> For questions related to widgets, see [How-tos: Widgets](/learn/how-to-widgets).
-
-[4. How-tos: Prefabs](/learn/how-to-prefabs)
-======
-> For questions related to prefabs, see [How-tos: Prefabs](/learn/how-to-prefabs).
-
-
+|For|See|
+|---|---|
+|Use cases related to app development in general| [How-tos: App Development](/learn/how-to-app-development) |
+|Use cases related to hybrid mobile app development | [How-tos: Mobile Development](/learn/how-to-mobile-development)| 
+| Use cases related to widgets | [How-tos: Widgets](/learn/how-to-widgets) |
+|Use cases related to prefabs | [How-tos: Prefabs](/learn/how-to-prefabs) |
