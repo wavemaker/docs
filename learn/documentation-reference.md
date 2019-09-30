@@ -1,9 +1,9 @@
 ---
 id: "documentation-reference"
-title: "Welcome to WaveMaker Developer Help"
+title: "WaveMaker Developer Help"
 sidebar_label: "Introduction"
 ---
-Find a complete developers' guide to build a WaveMaker app with RAD - *Rapid Application Development* approach.
+Find a complete developer's guide to build a WaveMaker app with RAD approach - *Rapid Application Development*.
 
 ---
 

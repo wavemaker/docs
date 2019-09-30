@@ -41,7 +41,7 @@ class Index extends React.Component {
             <div className="banner">
                 <div className="row">
                     <div className="column">
-                        <h1>WaveMaker Technical Documentation</h1>
+                        <h1>Welcome to WaveMaker Learning Center</h1>
                         <h4>Find the documentation and references to develop a WaveMaker app.</h4>
                         <button>
 						<a href= "/learn/documentation-reference" target="_self" >Get Started</a>
