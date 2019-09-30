@@ -103,9 +103,17 @@ body {
     margin: 30px 20px 10px;
     color: #fff;
 }
+
+.banner button a{
+	color: #fff
+}
+
 .banner button:hover {
     cursor: pointer;
+	background: #e6703c;
+    border-color: #e6703c;
 }
+
 .banner h1 {
     font-size: 44px;
 }
