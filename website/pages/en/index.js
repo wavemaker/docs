@@ -59,9 +59,9 @@ class Index extends React.Component {
                             </div>
 							<div>
 								<h1>Mobile Apps</h1>                            
-								<p>Learn how to create cross-platform hybrid mobile apps</p>
+								<p>Create cross-platform hybrid mobile apps.</p>
 								<p>
-									Rapid Mobile App Development<br />								
+									Rapid mobile app development<br />								
 									<a href="/learn/hybrid-mobile/building-hybrid-mobile-apps" target="_self" > Build</a>
 									<a href="http://www.wavemaker.com/training/" target="_self" >Mobile Widgets</a>
 								</p>
@@ -94,12 +94,12 @@ class Index extends React.Component {
 								<img src="/learn/img/Resources.svg" alt=""/>
                             </div>
 							<div>
-								<h1>Resources</h1>
-								<p>In-depth reference docs to understand every menu.</p>                            
+								<h1>How-to Guides</h1>
+								<p>See scenarios and solutions for using widgets and features.</p>                            
 								<p>
-									If it’s on the screen, it’s in here<br />
+									Customise your app<br />
 									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>
-									<a href="/learn/howtos-documents" target="_self" >How-to-Topics</a>                                
+									<a href="/learn/howtos-documents" target="_self" >How-to topics</a>                                
 								</p>
 							</div>
                         </div>
@@ -112,11 +112,11 @@ class Index extends React.Component {
 								<img src="/learn/img/Team blog.svg" alt=""/>
                             </div>
 							<div>
-								<h1>Team blog</h1>
-								<p>In-depth reference docs to understand every menu.</p>                            
-								<p>
-									If it’s on the screen, it’s in here<br />
-									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>        
+								<h1>What's new?</h1>
+								<p>Get the latest updates directly from our developers.</p>                            
+								<p>Stay tuned for the updates<br />
+									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >Team Blog</a>
+									<a href="/learn/wavemaker-release-notes" target="_self" >Release Notes</a>									
 								</p>
 							</div>
                         </div>

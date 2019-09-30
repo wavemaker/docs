@@ -8,21 +8,18 @@ Find everything about Widgets and Prefabs. Navigate to Widgets' list below and a
 ---
 [![](/learn/assets/widgets-overview.gif)](/learn/assets/widgets-overview.gif)  
 
-Widgets are HTML/Bootstrap based UI components with rich interaction and designed for responsiveness.
+Widgets are HTML/Bootstrap based UI components with rich interaction and designed for responsiveness. View the entire list of Widgets in this page. 
 
 :::note
 Pages are designed as a composition of widgets. See [Design Pages](/learn/app-development/ui-design/design-overview) before getting started with widgets. 
 :::
-
-There are over 80 widgets in WaveMaker. **Data** widgets for handling data.  **Container** widgets for organizing page element. **Form Widgets** for button, file upload, and more. View the entire list of Widgets in this page. 
-
-
 
 :::tip
 To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
 :::
 
 ## Data Widgets
+---
 
 | Widget | Description | Document | Reference |
 | --- | --- | --- | --- |
@@ -34,7 +31,7 @@ To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
 |**Live Form**  | Live Form is a group of input elements put together to submit data, typically resulting in creating or updating a database row | [Overview](/learn/app-development/widgets/datalive/live-form/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/LiveForm.html) |
 
 ## Container Widgets
-
+---
 | Widget | Definition | Overview | API Reference |
 | --- | --- | --- | --- |
 |**Accordion**  | Accordion is a stacked list of UI components, with only one component expanded or viewed at any point in time, and the rest collapsed |  [Overview](/learn/app-development/widgets/container/accordion/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Accordion.html) |
@@ -46,7 +43,7 @@ To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
 |**Wizard**  | Wizard is a form of UI components to group a set of widgets together and to apply a uniform style to the content |  [Overview](/learn/app-development/widgets/container/wizard/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Wizard.html) |
 
 ## Form Widgets
-
+---
 | Widget | Description | Overview | Reference |
 | --- | --- | --- | --- |
 |**Button**  | Button is a control that can be clicked to perform an action. |  [Overview](/learn/app-development/widgets/form-widgets/button) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Button.html) |
@@ -73,7 +70,7 @@ To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
 | **Toggle** | **Toggle** is a widget that can help switching between two different options by pressing a single key. |  [Overview](/learn/app-development/widgets/datalive/form/toggle/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Toggle.html) |
 
 ## Basic Widgets
-
+---
 | Widget | Description | Overview | Reference |
 | --- | --- | --- | --- |
 |**Anchor**  | **Anchor** is used as a navigation link within the app or an external URL. |  [Overview](/learn/app-development/widgets/basic/anchor/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Anchor.html) |
@@ -92,7 +89,7 @@ To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
 |**Video**  | **Video** is a widget to embed a media player into the project. | [Overview](/learn/app-development/widgets/media-widgets/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Video.html) |
 
 ## Chart Widgets
-
+---
 There are marginal differences in the various usage scenarios for the various chart types, which is highlighted in the [overview](/learn/app-development/widgets/chart/chart-widget/) and [API documentation](https://preview.wavemakeronline.com/studio/docs/classes/Chart.html).
 
 | Widget | Description |
@@ -107,7 +104,7 @@ There are marginal differences in the various usage scenarios for the various 
 |**Bubble**  | **Bubble** chart is a type of chart that displays three dimensions of data. |
 
 ## Navigation Widgets
-
+---
 | Widget | Description | Overview | Reference |
 | --- | --- | --- | --- |
 |**Breadcrumb**  | **Breadcrumb** is an indicator or nav link to the current page's location within the app's hierarchy. | [Overview](/learn/app-development/widgets/navigation/breadcrumb/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Breadcrumb.html) |
@@ -117,7 +114,7 @@ There are marginal differences in the various usage scenarios for the various 
 | **Popover** | **Popover** is a container-type graphical control element that opens in its parent window and blocks any other interaction until selected. | [Overview](/learn/app-development/widgets/navigation/popover/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Popover.html) |
 
 ## Advanced Widgets
-
+---
 | Widget | Description | Overview | Reference |
 | --- | --- | --- | --- |
 | **Carousel**  | **Carousel** displays two or more items either images, text or any content, that transitions in a cyclic order. |  [Overview](/learn/app-development/widgets/advanced/carousel/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Carousel.html) |
@@ -125,7 +122,7 @@ There are marginal differences in the various usage scenarios for the various 
 |**Marquee**  | **Marquee** is a container to keep scrolling content. The scrolling can be in horizontal or in the vertical direction. |  [Overview](/learn/app-development/widgets/advanced/marquee/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Marquee.html) |
 
 ## Modal Dialog/ Dialog Widgets
-
+---
 | Widget | Description | Overview | Reference |
 | --- | --- | --- | --- |
 |**Alert**  | **Alert** Dialog is a special dialog that is displayed when the user needs to take an immediate action. |  [Overview](/learn/app-development/widgets/modal-windows-dialogs/#alert-dialog) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Alertdialog.html) |
@@ -136,7 +133,7 @@ There are marginal differences in the various usage scenarios for the various 
 | **Login**  | **Login** Dialog is a dialog box that allows you to customize the login dialog. |  [Overview](/learn/app-development/widgets/modal-windows-dialogs/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/Logindialog.html) |
 
 ## Prefabs - Custom Widgets & Extensions
-
+---
 For an overview on Prefabs and how you can create Prefabs [see here](/learn/app-development/widgets/custom-widgets/).
 
 | Widget | Description | Document | Reference |
@@ -153,7 +150,7 @@ For an overview on Prefabs and how you can create Prefabs [see here](/learn/app-
 | [![](/learn/assets/linkedin.png)](/learn/assets/linkedin.png) | Use this Prefab to enable user authorization using their LinkedIn credentials. | [Overview](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/) |  |
 
 ## Mobile & Device Widgets
-
+---
 | Widget | Description | Document | Reference |
 | --- | --- | --- | --- |
 | **Media List** | **Media List** displays a list of pictures. The media can be displayed in a single-row mode or grid mode and can be opened to full screen by touching the media. | [Overview](/learn/app-development/widgets/mobile-widgets/media-list/) | [API Docs](https://www.wavemakeronline.com/studio/10.1.2.7413/docs/classes/MediaList.html) |
