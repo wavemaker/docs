@@ -1,6 +1,8 @@
 ---
 title: "WME Setup Guide - Custom Apps Capacity"
 id: ""
+sidebar_label: "Custom Apps Capacity"
+---
 ---
 
 ###### Applicable to WaveMaker Cloud alone

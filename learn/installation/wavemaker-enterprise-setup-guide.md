@@ -1,8 +1,9 @@
 ---
 title: "WaveMaker Enterprise Setup Guide"
 id: ""
+sidebar_label: "Setup Guide"
 ---
-
+---
 Here you will find instructions to setup WaveMaker Enterprise (WME) using the WME Installer and WME Setup Portal. This section talks about the pre-requisites, requirements and verification needed before proceeding with the WME Setup.
 
 ## WME - an Overview

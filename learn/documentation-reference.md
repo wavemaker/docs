@@ -1,6 +1,6 @@
 ---
 id: "documentation-reference"
-title: "WaveMaker Developer Help"
+title: "WaveMaker Developer Guide"
 sidebar_label: "Introduction"
 ---
 Find a complete developer's guide to build a WaveMaker app with RAD approach - *Rapid Application Development*.
@@ -25,12 +25,8 @@ View the short video of how a WaveMaker app works in a three-layered architectur
 
 ## WaveMaker Studios
 WaveMaker supports two types of Studios.  
-- **WaveMaker Online** (WMO): This is a cloud product - no installation required. 
+- **WaveMaker Online** (WMO): This is a cloud product - no installation required. To see setup guide, see [WaveMaker Online Setup Guide](/learn/wmo-setup).
 - **WaveMaker Enterprise** (WME): This is an on-premise product. For WME installation, see [WaveMaker Enterprise Setup Guide](/learn/installation/wavemaker-enterprise-setup-guide).
-
-## WaveMaker Online (WMO)
-
-Develop app using WaveMaker Online (WMO) Studio and deploy your app on cloud. When you sign-up for WMO, you get a 30-day trial period. During this period you can develop, test, run and collaborate with your team members. Deploy your app to Amazon Web Service or WaveMaker Demo Cloud. At the end of the 30-day trial, you get an option to choose a suitable plan to continue working on the app. There are various purchase plans for monthly and annual subscription. For more information, talk to our [Consultant](https://www.wavemaker.com/talk-to-expert/).
 
 ## Quick Start Guide
 

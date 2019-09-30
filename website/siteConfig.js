@@ -51,9 +51,9 @@ const siteConfig = {
     headerLinks: [
         {languages: true},
 		{doc: 'documentation-reference', label: 'Docs '},
+		{doc: 'app-development/wavemaker-overview/pre-requisites', label: 'Install'},
         {doc: 'app-development/widgets/widget-library', label: 'Widgets'},
-		{doc: 'tutorials', label: 'Tutorials'},
-		{doc: 'installation/wavemaker-enterprise-setup-guide', label: 'Enterprise'},
+		{doc: 'tutorials', label: 'Tutorials'},		
     //  {href: 'https://www.wavemakeronline.com/studio/10.1.2.7413/docs/index.html', label: 'API Docs'},
     //    {doc: 'wavemaker-release-notes', label: 'Releases'},
         // {page: 'help', label: 'Help'},

@@ -1,6 +1,8 @@
 ---
 title: "WME Setup Guide – Adding Capacity"
 id: ""
+sidebar_label: "Adding Capacity"
+---
 ---
 
 Once you have [Launched](/learn/installation/wme-setup-guide-launch-initialize/#launch-wme), [Initialized](/learn/installation/wme-setup-guide-launch-initialize/#initialize-wme), [Set up](/learn/installation/wme-setup-guide-access-setting/#setting-up-wme) and [configured](/learn/installation/wme-setup-guide-configuration/) the WME, it is time for the developers to log in and build apps. For this, you need to add developer and deployment infrastructure capacity by adding instances.

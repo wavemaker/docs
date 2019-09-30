@@ -1,6 +1,8 @@
 ---
 title: "WME Setup Guide – Setting up"
 id: ""
+sidebar_label: "Setting up WME"
+---
 ---
 
 This section talks about initializing and setting up the WME. This step comes after you have [Launching Instances](/learn/installation/wme-setup-guide-launch-initialize/).

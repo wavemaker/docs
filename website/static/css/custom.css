@@ -115,12 +115,13 @@ body {
 }
 
 .banner h1 {
-    font-size: 44px;
+    font-size: 42px;
 }
 .banner h1, .banner h4 {
     font-weight: normal;
     margin-bottom: 0px;
 	padding-left:20px;
+	line-height: 1.4;
 }
 
 .content-wrapper {

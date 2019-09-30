@@ -1,6 +1,8 @@
 ---
 title: "WME Setup Guide – Upgrading"
 id: ""
+sidebar_label: "Upgrading"
+---
 ---
 
 This document provides the instructions to install the WME setup to upgrade the current WaveMaker Enterprise version or to apply a patch for enhancing or optimizing the performance of the installed WME.

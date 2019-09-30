@@ -1,5 +1,5 @@
 ---
-title: "Pre-Requisites"
+title: "Pre-requisites to Develop App in WaveMaker"
 id: ""
 ---
 What skills you need to develop web and hybrid mobile apps using WaveMaker. 

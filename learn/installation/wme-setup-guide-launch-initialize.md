@@ -1,6 +1,8 @@
 ---
 title: "WME Setup Guide – Launching Instances"
 id: ""
+sidebar_label: "Launching Instances"
+---
 ---
 
 This document talks about launching instances in different virtualization providers. It is recommended that you ensure that you meet the necessary [pre-requisites](/learn/installation/wavemaker-enterprise-setup-guide/) before proceeding with the installation. Move to [next section](https://www.wavemaker.com/learn/installation/wme-setup-guide-access-setting/) if you are already luanched instances using given [pre-requisites](/learn/installation/wavemaker-enterprise-setup-guide/).

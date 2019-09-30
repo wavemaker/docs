@@ -1,6 +1,8 @@
 ---
 title: "WME Setup Guide – Maintenance"
 id: ""
+sidebar_label: "Maintenance"
+---
 ---
 
 This section provides instructions to maintain & troubleshoot your WaveMaker Enterprise (WME) installation.

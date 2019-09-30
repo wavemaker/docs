@@ -3,8 +3,7 @@
   {
     "Getting started": 
       [
-        "documentation-reference",  
-        "app-development/wavemaker-overview/pre-requisites",        
+        "documentation-reference",                
         "app-development/wavemaker-overview/product-walkthrough"                    
       ],
 
@@ -760,10 +759,23 @@
 
   "WME":
   {
-    "Enterprise Version": 
+    "Installation":
+    [
+      "app-development/wavemaker-overview/pre-requisites"
+    ],
+
+    "WMO: Online Install":
+    [  
+      "wmo-setup"
+    ],
+
+    "WME: Enterprise Install": 
     [
       "installation/wavemaker-enterprise-setup-guide",
       "installation/wme-setup-guide-launch-initialize",
+      "installation/wme-setup-using-deb-installer-private-ami",
+      "installation/wme-setup-guide-add-external-vcs-configuration",
+      "installation/wme-setup-guide-custom-apps-capacity",
       "installation/wme-setup-guide-access-setting",
       "installation/wme-setup-guide-configuration",
       "installation/wme-setup-guide-adding-capacity",
