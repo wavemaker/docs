@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Pages"
 id: ""
-sidebar_label: "Creating a Page"
+sidebar_label: "Create Pages"
 ---
 WaveMaker app is a collection of pages. Learn how to create a page.
 
