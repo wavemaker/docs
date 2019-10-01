@@ -96,11 +96,11 @@ class Index extends React.Component {
 								<img src="/learn/img/03-Resources.svg" alt=""/>
                             </div>
 							<div>
-								<h1>How-to Docs</h1>
+								<h1>How-tos</h1>
 								<p>See scenarios and solutions for using widgets and features.</p>                            
 								<p>
 									Customise your app<br />
-                                    <a href="/learn/howtos-documents" target="_self" >How-tos</a>
+                                    <a href="/learn/howtos-documents" target="_self" >How-to Docs</a>
 									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>									                                
 								</p>
 							</div>
@@ -114,7 +114,7 @@ class Index extends React.Component {
 								<img src="/learn/img/04-Team blog.svg" alt=""/>
                             </div>
 							<div>
-								<h1>What's New?</h1>
+								<h1>What's new?</h1>
 								<p>See the latest updates directly from our developers.</p>                            
 								<p>Stay tuned for more<br />
 									<a href="/learn/wavemaker-release-notes" target="_self" >Release Notes</a>

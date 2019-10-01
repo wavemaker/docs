@@ -314,15 +314,6 @@
         "tutorials/asset-management-app"
       ],
 
-      "How-tos": 
-      [
-          
-          "how-to-app-development",
-          "how-to-mobile-development",
-          "how-to-widgets",
-          "how-to-prefabs"
-      ],
-
       "Platform Concepts":
       [
           "app-development/wavemaker-overview/platform-overview",           
@@ -336,7 +327,11 @@
   {
         "How-to-documents": 
           [
-            "howtos-documents"
+            "howtos-documents",
+            "how-to-app-development",
+            "how-to-mobile-development",
+            "how-to-widgets",
+            "how-to-prefabs"
           ],
           
           "App solution":
@@ -793,13 +788,14 @@
       "wavemaker-release-notes/v10-0-4",
       "wavemaker-release-notes/v10-0-3",
       "wavemaker-release-notes/v10-0-2",
-      "wavemaker-release-notes/v10-0-1"  
+      "wavemaker-release-notes/v10-0-1",
+      "wavemaker-release-notes/v10-0-0" 
       ],
 
       "Release v9.GA": 
       [
-      "wavemaker-release-notes/v10-0-0"
-     
+      "wavemaker-release-notes/v9-4-0",
+      "wavemaker-release-notes/v9-3-0"     
       ]
     
   },
