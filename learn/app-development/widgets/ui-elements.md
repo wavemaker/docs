@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Widgets"
 id: "ui-elements"
-sidebar_label: "Introduction to Widgets"
+sidebar_label: "Widgets Composition"
 ---
 Learn about widgets and how it works. 
 

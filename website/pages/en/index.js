@@ -45,7 +45,7 @@ class Index extends React.Component {
                         <h4>Find the documentation and references to develop a WaveMaker app.</h4>
 						<div>
 							<a class="cta" href= "/learn/documentation-reference" target="_self" >Get Started</a>
-							<a class="cta secondary" href= "/learn/documentation-reference" target="_self" >Platform</a>
+							<a class="cta secondary" href= "https://www.wavemaker.com/" target="_blank" >Platform</a>
 						</div>
                     </div>
 					<div className="column">
@@ -66,7 +66,7 @@ class Index extends React.Component {
 								<p>
 									Rapid mobile app development<br />								
 									<a href="/learn/hybrid-mobile/building-hybrid-mobile-apps" target="_self" > Build</a>
-									<a href="http://www.wavemaker.com/training/" target="_self" >Mobile Widgets</a>
+									<a href="http://www.wavemaker.com/training/" target="_blank" >Mobile Widgets</a>
 								</p>
 							</div>
                         </div>
@@ -84,7 +84,7 @@ class Index extends React.Component {
 								<p>
 									Build a fully-functional app<br />
 									<a href="/learn/tutorials/" target="_self" >Get Started</a>
-									<a href="http://www.wavemaker.com/training/" target="_self" >Training</a>
+									<a href="http://www.wavemaker.com/training/" target="_blank" >Training</a>
 								</p>
 							</div>
                         </div>
