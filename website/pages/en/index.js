@@ -43,9 +43,10 @@ class Index extends React.Component {
                     <div className="column">
                         <h1>Welcome to WaveMaker Learning Center</h1>
                         <h4>Find the documentation and references to develop a WaveMaker app.</h4>
-                        <button>
-						<a href= "/learn/documentation-reference" target="_self" >Get Started</a>
-						</button>
+						<div>
+							<a class="cta" href= "/learn/documentation-reference" target="_self" >Get Started</a>
+							<a class="cta secondary" href= "/learn/documentation-reference" target="_self" >Platform</a>
+						</div>
                     </div>
 					<div className="column">
 						<img src="/learn/img/Hero img_WM learning center.svg" alt="hero Image"/>
