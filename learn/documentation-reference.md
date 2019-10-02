@@ -16,7 +16,7 @@ Introduction to WaveMaker. Find a complete developer's guide to build an app wit
 Widgets are UI elements, which makes your app functional without coding. Explore the [widgets library](/learn/app-development/widgets/widget-library). 
 :::
 
-2. Create backend services. This includes, adding data services, web services, java services, security services, or use third party APIs, or write your own code to extend a feature.  
+2. Create backend services. It can be a data service, web service, java service, security service, or use a third party API, or write your own code to extend a feature.  
 
 3. In a few simple clicks, using [variables](/learn/app-development/variables/variables), integrate the backend services with the widgets. 
 
@@ -56,5 +56,5 @@ All the features work in the same way for WMO and WME unless specified in the do
 When you sign up, you will be directed to a **Project Dashboard** page. Voila! You can start creating a new projects. Happy developing! 
 
 ---
-### Notice something is incorrect or outdated?
+#### Notice something is incorrect or outdated?
 First off, great catch! We appreciate your discovery and want to ensure it gets addressed immediately. Please let us know [here](https://github.com/wavemaker/docs/issues/new).

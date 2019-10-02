@@ -4,70 +4,85 @@ id: "product-walkthrough"
 sidebar_label: "Walkthrough"
 ---
 ---
-WaveMaker is a RAD platform to develop and deploy web and mobile applications. This document is intended to be a walkthrough of the WaveMaker RAD platform. It includes:
+WaveMaker is a RAD solution for developing web and mobile applications. In this document, learn WaveMaker terminologies and get familiar with the product dashboard.  
 
 ## Product Terminology
 
-Before starting with product walkthrough, let us get familiarized with some of the terms commonly used in Studio parlance.
+Following are some of the terms commonly used in Studio parlance.
 
 | **Terms** |**Description** | **See this document** |
 | --- | --- | --- |
-| **Pages** | Pages contain app components. You can organize data by using widgets and define a workflow by interlinking them. <br> <details><summary>Read more</summary>A fully finished page has a Layout and Content. Page Content is based on the placement of widgets or from a Template chosen by you. Page Layout is used to define the common areas across pages. Ideally, new pages should be created for separate business rules. For example, a page can be used to display the employee listing, another for the department details and yet another for department expenditure details. </details>| [Creating a Page](/learn/app-development/ui-design/page-creation/)|
-| **Layouts** |  Demarcating the page into sections. <br> <details><summary>Read more</summary> A layout is HTML Markup defining placeholders for page sections such as header, footer, top navigation, left and right panels, and main area. You can choose from the pre-defined set of layout options. The content for each of these components can be defined using partial pages. </details> | [Page Layouts](/learn/app-development/ui-design/page-concepts/page-layouts) |
-| **Templates** | Re-usable arrangement of one or more widgets in the page content put together. <br> <details><summary>Read more</summary> A template is the structural composition of a page with widgets containing HTML markup and the CSS styles. The widgets within a Template do not have data binding with services, allowing the usage of these templates for different use cases on different pages. You can choose from a list of default templates provided by the platform or create your own template bundle as a collection of templates. For example, a dashboard template is typically created with charts, data table, and other widgets. When a page is created using this dashboard template, these widgets can be bound to Sales or Healthcare database services based on use cases like Sales dashboard or Healthcare dashboard. | [Templates](/learn/app-development/ui-design/page-concepts/page-templates/) |
-| **Template Bundle** | Custom templates built into a bundle. <br> <details><summary>Read more</summary> A template bundle is a collection of templates. Template Bundle can be built like an application sans data binding. Import of the Template Bundle to the Studio workspace ensures that all the templates within the bundle are available across the apps for selection at the time of page creation just like the default templates. |[Template Bundle](/learn/app-development/ui-design/page-concepts/#creating-template-bundles) |
-| **Widgets** | UI components for user interaction and responsive design. <br> <details><summary>Read more</summary>  Widgets are HTML/Bootstrap based UI Components to enable user interaction. Widgets get their data from backend Services through binding to Variables. Widgets can be customized in terms of appearance and behavior as per your use case using the attributes of properties, style, events, and security. For example Button, Text, Label, Data Table, List, Charts etc. |[Widget Basics](/learn/app-development/widgets/ui-elements/) |
+| **Pages** | Pages contain app components. You can organize data by using widgets and define a workflow by interlinking them. | [Creating a Page](/learn/app-development/ui-design/page-creation/)|
+| **Layouts** |  Demarcating the page into sections.  | [Page Layouts](/learn/app-development/ui-design/page-concepts/page-layouts) |
+| **Templates** | Re-usable arrangement of one or more widgets in the page content put together. <br>  | [Templates](/learn/app-development/ui-design/page-concepts/page-templates/) |
+| **Template Bundle** | Custom templates built into a bundle.   |[Template Bundle](/learn/app-development/ui-design/page-concepts/#creating-template-bundles) |
+| **Widgets** | UI components for user interaction and responsive design.  |[Widgets Overview](/learn/app-development/widgets/ui-elements/) |
 ||List of Widgets.|[Widget Library](/learn/app-development/widgets/widget-library/) |
 | **Prefabs** |Collection of one or more widgets that are bound to API or services. <br> <details><summary>Read more</summary> Prefab is a reusable, API-integrated component that can be used across apps. It encapsulates functionality, interaction & data and as such can be used to build custom widgets. For example, GoogleMap Prefab, QRCode reader or Youtube Prefab. |[Prefab Basics](/learn/app-development/custom-widgets/custom-widgets/)|
 ||List of prefabs that are already created.|[Predefined Prefabs](/learn/app-development/widgets/widget-library/#prefabs)|
 ||Build your own Prefab. |[Creating Prefabs](/learn/app-development/custom-widgets/creating-prefabs/) |
-| **Project Shell** | Foundation for multiple apps in an enterprise. <br> <details><summary>Read more</summary>  Project Shell is an app with functionality that is common to multiple apps across the enterprise. This can be used as a starting point in app development. For example, multiple apps in an organization could be using the same database or the same security mechanism. Shell will ensure uniformity and reduce the app development time and effort. |[Project Shells](/learn/app-development/ui-design/project-shells/) |
-| **Theme** | Colors, fonts, and branding elements (CSS & images) that is applied to all pages within an app. <br> <details><summary>Read more</summary>  Themes are style elements which work at the widget or UI component level. Themes help provide a consistent look and feel to your application. Themes can be selected from existing default list or custom built to suit the app needs. |[Themes Overview](/learn/app-development/ui-design/themes/)|
+| **Project Shell** | Foundation for multiple apps in an enterprise.  |[Project Shells](/learn/app-development/ui-design/project-shells/) |
+| **Theme** | Colors, fonts, and branding elements (CSS & images) that is applied to all pages within an app.  |[Themes Overview](/learn/app-development/ui-design/themes/)|
 ||Create your own custom theme.|[Creating Themes](/learn/app-development/ui-design/themes/#create-theme) |
-| **Variable** | Provides data integration for the widgets <br> <details><summary>Read more</summary>  Variable holds the actual data to be rendered by the widgets. It is based on a data model obtained from the API source (from services like database and web-based) and renders the same in the form of a data structure used for binding, with attributes and related objects. |[Variables Overview](/learn/app-development/variables/variables-actions/) |
-| **Variable Types** | **Database CRUD** for the basic insert, read and update operation on the Database tables. |[Database CRUD](/learn/app-development/variables/database-crud/) |
-|| **Database API** for accessing the queries and procedures and additional Database functionality. | [Database API](/learn/app-development/variables/database-apis/) |
-|| **Service API** from Web for the service APIs exposed by the Web services. |[Web Service](/learn/app-development/variables/web-service/)|
-||Service API from Java for the service APIs exposed by the Java services.|[Java Service](/learn/app-development/variables/java-services/)|
-||Service API from Security for the service APIs exposed by the Security services.|[Security Service](/learn/app-development/variables/security-service/) |
-|| **Model Variable** can be used as storage model to store data on the client. |[Model Variable](/learn/app-development/variables/model-variable/) |
-|| **Device Variable** to access device features in case of mobile applications. |[Device Variable](/learn/hybrid-mobile/device-variables/) |
-| **Actions** | Implement the business logic, rules and data flow <br> <details><summary>Read more</summary>  Actions assist in invoking a backend API, Database operation or navigation to another page when a UI event occurs. Events can be either user-initiated, notification response or as a result of another task being performed. |[Actions](/learn/app-development/variables/actions) |
-| **Binding** | Connecting variables and widgets <br> <details><summary>Read more</summary>  Binding of the Variables to Widgets helps in capturing the data from the user or fetching data from the backend services. |[Variable Binding](/learn/app-development/variables/variable-binding/) |
+| **Variable** | Provides data integration for the widgets. <br> <details><summary>Read more</summary>  Variable holds the actual data to be rendered by the widgets. It is based on a data model obtained from the API source (from services like database and web-based) and renders the same in the form of a data structure used for binding, with attributes and related objects. |[Variables Overview](/learn/app-development/variables/variables-actions/) |
+|  |**Variable Types**|| 
+|**Database CRUD** | For the basic insert, read and update operation on the Database tables. |[Database CRUD](/learn/app-development/variables/database-crud/) |
+| **Database API** | For accessing the queries and procedures and additional Database functionality. | [Database API](/learn/app-development/variables/database-apis/) |
+|  |**Service API** ||
+|**Web Services**|From Web for the service APIs exposed by the Web services. |[Web Service](/learn/app-development/variables/web-service/)|
+|**Java Services**|Service API from Java for the service APIs exposed by the Java services.|[Java Service](/learn/app-development/variables/java-services/)|
+|**Security Services**|Service API from Security for the service APIs exposed by the Security services.|[Security Service](/learn/app-development/variables/security-service/) |
+|**Model Variable**| It can be used as storage model to store data in the client-side. |[Model Variable](/learn/app-development/variables/model-variable/) |
+|**Device Variable**|  To access device features in case of mobile applications. |[Device Variable](/learn/hybrid-mobile/device-variables/) |
+| **Actions** | Implement the business logic, rules and data flow. <br> <details><summary>Read more</summary>  Actions assist in invoking a backend API, Database operation or navigation to another page when a UI event occurs. Events can be either user-initiated, notification response or as a result of another task being performed. |[Actions](/learn/app-development/variables/actions) |
+| **Binding** | Connecting variables and widgets. <br> <details><summary>Read more</summary>  Binding of the Variables to Widgets helps in capturing the data from the user or fetching data from the backend services. |[Variable Binding](/learn/app-development/variables/variable-binding/) |
 
 ## Project Dashboard
-
+---
 Once you have created projects, the **Project Dashboard** page displays all your Projects, Prefabs and Template Bundles along with the latest activity updates. You have the option to create/import project, prefab or template bundle. [![](/learn/assets/project-listing.png)](/learn/assets/project-listing.png)
 
-- _Top Banner_ can be used to:
-    - choose what you want to create/work on - Apps, Prefabs or Template Bundles. From Apps tab, you can access Sample Apps, which can be accessed from your account and tinkered with.
-    - **Manage Deployed Apps** open the Cloud Portal for managing release pipeline for deployed apps. [Know more](/learn/app-development/deployment/release-management/).
-    - **Accounts Access** allows you to view the following details:
-        - **Profile** details
-        - **Subscription** details allow you to manage the subscriptions. It gives the details of each application in your account, the plan they are under, the status of the plan and option to renew the subscription.
-        - **Logout** option.
-    - **Tutorial/Activity Panel** gives
-        - access to various tutorials
-        - recent project activity
-    - **Logs** give access to server logs which can be downloaded.
-    - **Project Listing** will list all the apps, Prefabs, and template bundles, depending upon the tab you select. Hovering on a given app/prefab/template bundle will allow you to open the same in Studio designer.
-    - For each project or Prefab the following information is displayed: [![](/learn/assets/Project-Details.png)](/learn/assets/Project-Details.png)
-        - **Provatar** or project avatar, to give a visual image of the type of project. It can be set at the time of project creation by selecting an image from the drop down list.
-        - **Project type** of project - web, mobile, prefab, or template bundle
-        - **Project Name** provided while creating a project or Prefab.
-        - **Project Description**: The description that you provided while creating a project or Prefab.
-        - **Modified Timestamp** date and time of the last update.
-        - **User role** on the project - owner or contributor
-        - **Restore**: Ability to restore a project from the VCS. [See here for project recovery options](/learn/app-development/dev-integration/import-export-update-apps/#project-recovery).
-        - **Export:** Ability to export a project as a zip file without opening the project.
-        - **Delete**: As an owner/admin of the project, you can delete the same. In case there are multiple Project Admins, each of them has the option to **Leave Project**.
-        - **Leave project:** As a member of the project, you have the option to Leave the project, instead of delete.
-        - **App Member Details** gives the number of Members working on the project with an option to open the Member details dialog on click. [![](/learn/assets/user_management_add.png)](/learn/assets/user_management_add.png) This dialog allows you to:
+### Top Banner 
+Top banner can be used to:
+- **Apps, Prefabs or Template Bundles** - choose what you want to create/work on.   
+From Apps tab, you can access Sample Apps, which can be accessed from your account and tinkered with.
+- **Manage Deployed Apps** open the Cloud Portal for managing release pipeline for deployed apps. [Know more](/learn/app-development/deployment/release-management/).
+- **Accounts Access** allows you to view the following details:
+    - **Profile** details
+    - **Subscription** details allow you to manage the subscriptions. It gives the details of each application in your account, the plan they are under, the status of the plan and option to renew the subscription.
+    - **Logout** option.
+- **Tutorial/Activity Panel** gives
+    - access to various tutorials
+    - recent project activity
+### Logs Access
+Logs give you access to server logs, which can be downloaded.
+### Project Listing
+It will list all the **Apps, Prefabs, and Template bundles**, depending on what you select from the **Top Banner** tab. Clicking on any app/prefab/template bundle from your dashboard will open it in the Studio designer.
+
+### Projects
+You can see the following information for each project or Prefab listed in your dashboard. 
+
+[![](/learn/assets/Project-Details.png)](/learn/assets/Project-Details.png)  
+- **Project Name** provided while creating a project or Prefab.
+- **Project Type** of project - web, mobile, prefab, or template bundle.
+- **Provatar** or project avatar, to give a visual image of the type of project. It can be set at the time of project creation by selecting an image from the drop down list.
+- **Project Description**: The description that you provided while creating a project or Prefab.
+- **Modified Timestamp** date and time of the last update.
+- **User role** on the project - owner or contributor
+- **Restore**: Ability to restore a project from the VCS. [See here for project recovery options](/learn/app-development/dev-integration/import-export-update-apps/#project-recovery).
+- **Export:** Ability to export a project as a zip file without opening the project.
+- **Delete**: As an owner/admin of the project, you can delete the same. In case there are multiple Project Admins, each of them has the option to **Leave Project**.
+- **Leave project:** As a member of the project, you have the option to Leave the project, instead of delete.
+- **App Member Details** gives the number of Members working on the project with an option to open the Member details dialog on click. 
+    
+    [![](/learn/assets/user_management_add.png)](/learn/assets/user_management_add.png) 
+    
+    This dialog allows you to:
             
-            - view the project members and their roles;
-            - the owner of the project can add or remove members and change the role
-            
-            For more on Project roles [refer here](/learn/app-development/wavemaker-overview/project-user-management/). For Enterprise version refer to [RBAC Support](/learn/app-development/wavemaker-overview/rapid-rbac-support/#project_roles).
+    - view the project members and their roles;
+    - the owner of the project can add or remove members and change the role
+    
+    For more information about Project roles, see [Project User Management](/learn/app-development/wavemaker-overview/project-user-management/).  
+    For Enterprise version, see [RBAC Support](/learn/app-development/wavemaker-overview/rapid-rbac-support/#project_roles).
 
 ## Project Workspace
 
@@ -132,19 +147,3 @@ Project Settings can be accessed from the **Settings**option of the**Secondary A
 - **Project Shell** used in building the app, non-editable
 - **Created date** is the project creation timestamp, non-editable.
 - **Last Accessed** date is the timestamp of last project modification, non-editable.
-
-## Configuration Profiles
-
-App Configuration is externalized at each service through configuration profiles. Configuration for DB, REST, SOAP, WebSocket servers, Security etc. can be separated for Dev and Deploy environments through Profiles.
-
-The **Configuration Profiles** can be accessed from the **Settings** option of the **Secondary Actions**.
-
-The Configuration Profiles allows one to run the same application under different environments with different configurations. This is in line with _[Maven Configuration Profiles](https://maven.apache.org/guides/mini/guide-building-for-different-environments.html)_. Services used by a Prefab within the app can also be configured.
-
-[Know more about Configuration Profiles from here](/learn/app-development/deployment/configuration-profiles/).
-
-[![](/learn/assets/config_prof_dev.png)](/learn/assets/config_prof_dev.png)
-
-[![](/learn/assets/config_prof_deploy.png)](/learn/assets/config_prof_deploy.png)
-
-

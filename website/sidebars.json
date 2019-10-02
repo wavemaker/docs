@@ -33,21 +33,18 @@
             "app-development/ui-design/page-concepts/page-events",
             "app-development/ui-design/use-cases-ui-design"         
             ]       
-        }, 
-        {
-          "type": "subcategory",
-          "label": "Services",
-          "ids": 
-            [          
-            "app-development/services/creating-backend-services",
-            "app-development/services/api-designer/api",
-            "app-development/variables/variables"
-            ]
-        }
+        } 
         
       ],
 
-      "Databases": 
+      "Backend Services":
+      [          
+        "app-development/services/creating-backend-services",
+        "app-development/services/api-designer/api",
+        "app-development/variables/variables"
+      ],
+
+      "Data Services": 
       [
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
@@ -157,7 +154,7 @@
           } 
       ],
 
-      "Security": 
+      "Security Services": 
       [
         "app-development/app-security/app-security",
         "app-development/app-security/authentication",        
