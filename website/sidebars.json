@@ -7,7 +7,7 @@
         "app-development/wavemaker-overview/product-walkthrough"                    
       ],
 
-    "Design Pages": 
+    "Design pages": 
       [
         {
           "type": "subcategory",
@@ -37,14 +37,14 @@
         
       ],
 
-      "Backend Services":
+      "Backend services":
       [          
         "app-development/services/creating-backend-services",
         "app-development/services/api-designer/api",
         "app-development/variables/variables"
       ],
 
-      "Data Services": 
+      "Data services": 
       [
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
@@ -98,7 +98,7 @@
         
       ],  
 
-      "Web Services": 
+      "Web services": 
       [   
             "app-development/services/web-services/web-services",            
         {
@@ -124,7 +124,7 @@
 
       ],
 
-      "Java Services": 
+      "Java services": 
       [   
           "app-development/services/java-services/java-service",     
           {
@@ -154,7 +154,7 @@
           } 
       ],
 
-      "Security Services": 
+      "Security services": 
       [
         "app-development/app-security/app-security",
         "app-development/app-security/authentication",        
@@ -176,7 +176,7 @@
         }
       ],
 
-      "Integrating": 
+      "Integration services": 
       [
         "app-development/variables/data-integration",   
         {
@@ -204,7 +204,7 @@
         "app-development/wavemaker-overview/localization"
       ], 
       
-    "Test, build and deploy": 
+    "Developer options": 
     [
         "app-development/dev-integration/developer-tools",
         "app-development/dev-integration/import-export-update-apps",
@@ -566,20 +566,26 @@
   "Widgets": 
   {
     "Widgets & Prefabs Library": [
-      "app-development/widgets/widget-library",
+      "app-development/widgets/widget-library"      
+    ],
+    "Prefabs": 
+    [ 
       "app-development/widgets/prefab/youtube",
       "app-development/widgets/prefab/googlemaps",
-      "app-development/widgets/prefab/qrcode"
-    ],
-
-    "OAuth Prefabs": 
-    [    
+      "app-development/widgets/prefab/qrcode",   
+      {
+        "type": "subcategory",
+        "label": "OAuth",
+        "ids": 
+          [
       "app-development/widgets/prefab/oauth-prefabs",
       "app-development/widgets/prefab/oauth-prefabs/box",
       "app-development/widgets/prefab/oauth-prefabs/facebook",
       "app-development/widgets/prefab/oauth-prefabs/google",
       "app-development/widgets/prefab/oauth-prefabs/instagram",
       "app-development/widgets/prefab/oauth-prefabs/linkedin"
+          ]
+      }
     ],
     
     "Cards": 

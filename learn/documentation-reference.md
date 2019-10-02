@@ -31,13 +31,13 @@ View the short video to see how WaveMaker apps work in a three-layered architect
 ## WaveMaker Studios
 WaveMaker supports two types of Studios.  
 ### 1. WaveMaker Online (WMO)
-This is a cloud product - no installation required. For more information on the pre-requisites and setup guide, see [WaveMaker Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites) and [Online Setup Guide](/learn/wmo-setup).
+WMO is a cloud product - no installation required. For more information on the pre-requisites and setup guide, see [WaveMaker Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites) and [Online Setup Guide](/learn/wmo-setup).
 
 ### 2. WaveMaker Enterprise (WME)
-This is an on-premise product. For WME installation, see [WaveMaker Enterprise Setup Guide](/learn/installation/wavemaker-enterprise-setup-guide).
+WME is an on-premise product. For WME installation, see [WaveMaker Enterprise Setup Guide](/learn/installation/wavemaker-enterprise-setup-guide).
 
 :::note
-All the features work in the same way for WMO and WME unless specified in the doc. 
+All features of WaveMaker Studio work the same for WMO and WME unless specified in the doc. 
 :::
 
 ## Quick Start Guide
@@ -46,7 +46,7 @@ All the features work in the same way for WMO and WME unless specified in the do
 |----|----|
 |Start with beginner's guide | [Video Tutorials](/learn/tutorials) |
 |For installation related information|[Pre-requisites to Develop App in WaveMaker](/learn/app-development/wavemaker-overview/pre-requisites)|
-|Get familiar with WaveMaker Studio|[Product Terminology and Dashboard Walkthrough](/learn/app-development/wavemaker-overview/product-walkthrough)|
+|Get the WaveMaker Studio walkthrough |[Product Terminology and Dashboard Walkthrough](/learn/app-development/wavemaker-overview/product-walkthrough)|
 |Explore Widgets and play around|[Widgets Library](/learn/app-development/widgets/widget-library)|
 |Build an app in 5 mins | [Build a WaveMaker App in 5 Minutes](https://www.youtube.com/watch?list=PLNlIJ337WpshRs-8eCubDm2vilhsloiqs&v=tLjGGJbrZ2Q)|
 |Jumpstart to app building process and create a simple app.|[WaveMaker App Building Essentials](/learn/jump-start/jump-start-app-essentials/)|

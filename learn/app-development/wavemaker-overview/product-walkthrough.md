@@ -90,17 +90,21 @@ When a project from the Project Dashboard is opened, it opens in the Project Wor
 
 [![](/learn/assets/project_workspace.png)](/learn/assets/project_workspace.png)
 
+- **Resources** are building blocks of an App like Page, Database, APIs etc.
+- **Resources Panel** gives access to various resources categories - a group or category of resources of the same type such as Pages, Databases, Web Services, Java Services, and APIs.
+
+- **Resource Explorer** lists all the resources of the selected resource category
+- **Resource Elements** constituting a selected a resource can be viewed within the **Canvas** along with the appropriate **Resource Toolbar**.
+
 - **Project Actions** give a quick access to recently used resources, preview and deploy the app
 - **Project Configurations** helps secure, export, internationalize and version control the app. Also, the Configuration Profiles, Project Settings, and Studio Settings can be accessed from here.
-- Resources are building blocks of an App like Page, Database, APIs etc.
-    - **Resources Panel** gives access to various resources categories - a group or category of resources of the same type such as Pages, Databases, Web Services, Java Services, and APIs.
-    - **Resource Explorer** lists all the resources of the selected resource category
-    - Resource Elements constituting a selected a resource can be viewed within the **Canvas** along with the appropriate **Resource Toolbar**
-    - For the **Pages Category**
-        - the Resource Explorer includes **Widgets**, **Prefabs, Page Structure** and **Variables** which aid in designing and building the Page
-        - **Workspace Toolbar** helps in defining runtime functionality of the Page in terms of Variables, Themes, Layout etc..
-        - **Widget Breadcrumb** giving the relative path to the selected element on the Page
-    - **Properties Panel** gives the settings for the selected Resource Element
+
+    
+- For the **Pages Category**
+    - the Resource Explorer includes **Widgets**, **Prefabs, Page Structure** and **Variables** which aid in designing and building the Page
+    - **Workspace Toolbar** helps in defining runtime functionality of the Page in terms of Variables, Themes, Layout etc..
+    - **Widget Breadcrumb** giving the relative path to the selected element on the Page
+- **Properties Panel** gives the settings for the selected Resource Element
 - **Developer Utilities** gives access to the
     - Files generated for the app through **File Explorer**,
     - **Logs** - server and client with download option and
