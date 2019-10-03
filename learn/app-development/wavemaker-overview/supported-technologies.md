@@ -28,6 +28,6 @@ In this document, you will find a list of various technologies supported by Wave
 ### WaveMaker Technology Stack
 
 Find the list of various technologies supported by WaveMaker. See the latest version of [release notes](/learn/wavemaker-release-notes) for more information. 
-- [UI Frameworks](/learn/wavemaker-release-notes/v10-1-0#ui-frameworks)
-- [Back-end Frameworks](/learn/wavemaker-release-notes/v10-1-0#back-end-frameworks)
-- [Run-time Environment](/learn/wavemaker-release-notes/v10-1-0#run-time-environment)
+- [UI Frameworks](/learn/wavemaker-release-notes/#ui-frameworks)
+- [Back-end Frameworks](/learn/wavemaker-release-notes/#back-end-frameworks)
+- [Run-time Environment](/learn/wavemaker-release-notes/#run-time-environment)

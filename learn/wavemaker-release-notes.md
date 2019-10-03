@@ -2,12 +2,12 @@
 title: WaveMaker Release Notes
 id: ""
 ---
-Find what's new in WaveMaker. See information related to bug fixes, features and improvements from WaveMaker. 
+Find what's new in WaveMaker. See information related to bug fixes, new features and improvements from WaveMaker. 
 
 ---
 WaveMaker constantly works on improving its products and services. If you notice a bug, report to us at [WaveMaker Support](mailto:support@wavemaker.com) and we will fix it and release an update. The fixes will be specified in the release notes. 
 
-We are continuously working on bring new features and improvements to our product. To learn more, see what's in our [road-map](). 
+We are continuously working on bringing new features and improvements to our product. Follow our [team blog](https://www.wavemaker.com/blog/) to see what's in happening in WaveMaker. 
 
 ## [Newest Release Details]()
 ---

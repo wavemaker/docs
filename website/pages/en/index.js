@@ -119,7 +119,7 @@ class Index extends React.Component {
 								<p>See the latest updates directly from our developers.</p>                            
 								<p>Stay tuned for more<br />
 									<a href="/learn/wavemaker-release-notes" target="_self" >Release Notes</a>
-									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >Team Blog</a>																		
+									<a href="https://www.wavemaker.com/blog/" target="_blank" >Team Blog</a>																		
 								</p>
 							</div>
                         </div>

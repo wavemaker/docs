@@ -57,7 +57,7 @@ For more information, see [Localization](/learn/app-development/wavemaker-overvi
 
 Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
-## Back-end Frameworks
+### Back-end Frameworks
 
 | Description | Java Library | Version |
 | --- | --- | --- |
@@ -74,7 +74,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | Json Libraries | com.tdunning |  |
 | Servlet Framework |  | 3.1 |
 
-## Run Time Environment
+### Run Time Environment
 
 | Description | Version |
 | --- | --- |

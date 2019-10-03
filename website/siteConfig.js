@@ -55,7 +55,7 @@ const siteConfig = {
 		{doc: 'app-development/wavemaker-overview/pre-requisites', label: 'Install'},
 		{doc: 'tutorials', label: 'Tutorials'},		
     //  {href: 'https://www.wavemakeronline.com/studio/10.1.2.7413/docs/index.html', label: 'API Docs'},
-	//	{doc: 'wavemaker-release-notes', label: 'Releases'},
+		{doc: 'wavemaker-release-notes', label: 'Releases'},
     //  {page: 'help', label: 'Help'},
         {href: 'https://www.wavemakeronline.com/login/login', label: 'Login'}
     ],
