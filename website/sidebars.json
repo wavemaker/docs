@@ -803,7 +803,11 @@
       "Release v9.GA": 
       [
       "wavemaker-release-notes/v9-4-0",
-      "wavemaker-release-notes/v9-3-0"     
+      "wavemaker-release-notes/v9-3-0", 
+      "wavemaker-release-notes/v9-2-1",
+      "wavemaker-release-notes/v9-2-0"
+     
+       
       ]
     
   },
