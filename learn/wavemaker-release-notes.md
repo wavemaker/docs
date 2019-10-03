@@ -2,16 +2,17 @@
 title: WaveMaker Release Notes
 id: ""
 ---
-Find what's new in WaveMaker. Watch this section for the latest updates from WaveMaker developers. 
+Find what's new in WaveMaker. See information related to bug fixes, features and improvements from WaveMaker. 
 
 ---
 WaveMaker constantly works on improving its products and services. If you notice a bug, report to us at [WaveMaker Support](mailto:support@wavemaker.com) and we will fix it and release an update. The fixes will be specified in the release notes. 
 
-We are continuously working on bring new features and improvements to our product. See what's in our [road-map](). 
+We are continuously working on bring new features and improvements to our product. To learn more, see what's in our [road-map](). 
 
-## Recent Release Details
+## [Newest Release Details]()
+---
 
-|Update |Details | Date |
+|Update|Details | Date |
 |---|---|---|
 |WaveMaker Update:  v10.1.2 |Bug fixes |16 September 2019 |   
 |[WaveMaker Update: 10.1.0](/learn/wavemaker-release-notes/v10-1-0)|New features + bug fixes |19 August 2019 |
@@ -22,8 +23,8 @@ We are continuously working on bring new features and improvements to our produc
 |[WaveMaker Update: v10 GA]()|Enhancements + new features |15 April, 2019 |
 |[WaveMaker Preview: v10]()| |20 November, 2018|
 
-## Technology Stack  
-Last updated: [WaveMaker Update: 10.1.0](/learn/wavemaker-release-notes/v10-1-0)
+## [Technology Stack](#technology-stack)
+Last updated: [Release: v10.1.0](/learn/wavemaker-release-notes/v10-1-0)
 
 ---
 
@@ -33,7 +34,7 @@ Last updated: [WaveMaker Update: 10.1.0](/learn/wavemaker-release-notes/v10-1-0)
 | --- | --- | --- |
 | JS Binding | jquery | 3.3.1 |
 |  | jquery-ui* | 1.12.1 |
-| MVC Framework | angular | **7.0.1 -> 7.2.2** |
+| MVC Framework | angular <td bgcolor="#44aaf4"> 7.0.1 -> 7.2.2 |
 |  | angular-ui-bootstrap | 3.3.6 |
 |  | ngx-bootstrap | 3.0.1 |
 | Styles | bootstrap | 3.3.7 |
@@ -48,15 +49,15 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | **4.3.19 -> 5.1.4** |
+|  | Spring Framework <td bgcolor="#44aaf4">4.3.19 -> 5.1.4 |
 | Security framework | Spring Security | 5.0.8 |
-| Java JSON utilities | Gson | **2.2.4 -> 2.8.5** |
-| DB Persistence library | Hibernate | **5.2.10 -> 5.2.17** |
-| Sample database | HSQL | **2.4.0 -> 2.4.1** |
-| JSON library | Jackson | **2.9.7 -> 2.9.8** |
-| Logging framework | SLF4j | **1.7.25** |
+| Java JSON utilities | Gson <td bgcolor="#44aaf4">2.2.4 -> 2.8.5 |
+| DB Persistence library | Hibernate <td bgcolor="#44aaf4">5.2.10 -> 5.2.17 |
+| Sample database | HSQL <td bgcolor="#44aaf4">2.4.0 -> 2.4.1 |
+| JSON library | Jackson <td bgcolor="#44aaf4">2.9.7 -> 2.9.8 |
+| Logging framework | SLF4j <td bgcolor="#44aaf4">1.7.25 |
 |  | Log4j | 1.2.17 |
-| Http client library | HttpComponents | httpclient- **4.5.5 -> 4.5.6** <br> httpmime- **4.5.5 -> 4.5.6** |
+| Http client library | HttpComponents <td bgcolor="#44aaf4">httpclient- **4.5.5 -> 4.5.6** <br> httpmime- **4.5.5 -> 4.5.6** |
 | REST API annotations | Swagger | 1.3.10 |
 | Date Time Framework | Java 8 Date/Time API |  |
 | Json Libraries | com.tdunning |  1.8 |
@@ -70,7 +71,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
 | Tomcat | 8.5* |
-| Cordova (mobile apps) | **8.0.0 -> 8.1.1** |
+| Cordova (mobile apps) <td bgcolor="#44aaf4">8.0.0 -> 8.1.1 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
