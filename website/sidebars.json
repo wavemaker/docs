@@ -300,7 +300,11 @@
   {
     "Learn": 
       [  
-      "tutorials",
+      "tutorials"
+      ],
+
+      "Essentials":
+      [
       "jump-start/jump-start-app-essentials",
       "jump-start/jump-start-db-essentials"
       ],
@@ -313,8 +317,7 @@
 
       "Platform Concepts":
       [
-          "app-development/wavemaker-overview/platform-overview",           
-          "app-development/wavemaker-overview/supported-technologies",                                     
+          "app-development/wavemaker-overview/platform-overview",                                              
           "app-development/ui-design/page-concepts",
           "app-development/wavemaker-overview/artifacts-repository"
       ]
@@ -757,9 +760,10 @@
 
   "WME":
   {
-    "Installation":
+    "Installation Guide":
     [
-      "app-development/wavemaker-overview/pre-requisites"
+      "app-development/wavemaker-overview/pre-requisites",
+      "app-development/wavemaker-overview/supported-technologies"
     ],
 
     "WMO: Online Install":

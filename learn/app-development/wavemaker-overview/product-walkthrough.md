@@ -37,7 +37,7 @@ Following are some of the terms commonly used in Studio parlance.
 | **Actions** | Implement the business logic, rules and data flow. <br> <details><summary>Read more</summary>  Actions assist in invoking a backend API, Database operation or navigation to another page when a UI event occurs. Events can be either user-initiated, notification response or as a result of another task being performed. |[Actions](/learn/app-development/variables/actions) |
 | **Binding** | Connecting variables and widgets. <br> <details><summary>Read more</summary>  Binding of the Variables to Widgets helps in capturing the data from the user or fetching data from the backend services. |[Variable Binding](/learn/app-development/variables/variable-binding/) |
 
-## Project Dashboard
+## Dashboard Walkthrough
 ---
 Once you have created projects, the **Project Dashboard** page displays all your Projects, Prefabs and Template Bundles along with the latest activity updates. You have the option to create/import project, prefab or template bundle. [![](/learn/assets/project-listing.png)](/learn/assets/project-listing.png)
 
@@ -85,7 +85,7 @@ You can see the following information for each project or Prefab listed in your 
     For Enterprise version, see [RBAC Support](/learn/app-development/wavemaker-overview/rapid-rbac-support/#project_roles).
 
 ## Project Workspace
-
+---
 When a project from the Project Dashboard is opened, it opens in the Project Workspace. This space is the designer pallet for your app. The various sections of the Project Workspace assist you in building the app.
 
 [![](/learn/assets/project_workspace.png)](/learn/assets/project_workspace.png)
@@ -115,7 +115,7 @@ When a project from the Project Dashboard is opened, it opens in the Project Wor
         - edit access to frequently used files like app.css and app.js.
 
 ## Project Canvas
-
+---
 Once you create a project, the Main Page is created by default. You can add pages to the app, by using the **+** button next to the Page on Resource Explorer. On selection of a page, Canvas is provided:
 
 1. you can select the page to design/edit from the Pages resource category

@@ -2,8 +2,11 @@
 title: "Supported Technologies"
 id: ""
 ---
+Find the list of technologies supported by WaveMaker. 
 
-In this document, you will find a list of various technologies supported by WaveMaker. Click to know about the latest version support for [UI Frameworks](/learn/wavemaker-release-notes/v10-1-0#ui-frameworks), [Back-end Frameworks](/learn/wavemaker-release-notes/v10-1-0#back-end-frameworks), and [Run-time Environment](/learn/wavemaker-release-notes/v10-1-0#run-time-environment)
+---
+
+In this document, you will find a list of various technologies supported by WaveMaker. 
 
 | Description | Vendor/Version |
 | --- | --- |
@@ -22,4 +25,9 @@ In this document, you will find a list of various technologies supported by Wave
 |  | Custom Java Service |
 | Supported IDEs | All Maven supporting IDEs like Eclipse, IntelliJ IDEA etc. |
 
+### WaveMaker Technology Stack
 
+Find the list of various technologies supported by WaveMaker. See the latest version of [release notes](/learn/wavemaker-release-notes) for more information. 
+- [UI Frameworks](/learn/wavemaker-release-notes/v10-1-0#ui-frameworks)
+- [Back-end Frameworks](/learn/wavemaker-release-notes/v10-1-0#back-end-frameworks)
+- [Run-time Environment](/learn/wavemaker-release-notes/v10-1-0#run-time-environment)
