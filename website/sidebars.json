@@ -791,25 +791,54 @@
     "Release Notes": 
       [
       "wavemaker-release-notes",
-      "wavemaker-release-notes/v10-1-0", 
-      "wavemaker-release-notes/v10-0-4",
-      "wavemaker-release-notes/v10-0-3",
-      "wavemaker-release-notes/v10-0-2",
-      "wavemaker-release-notes/v10-0-1",
-      "wavemaker-release-notes/v10-0-ga",
-      "wavemaker-release-notes/v10-0-preview" 
+      {
+        "type": "subcategory",
+        "label": "Version: 10.1",
+        "ids": 
+          [
+            "wavemaker-release-notes/v10-1-0"
+          ]
+        },
+        {
+          "type": "subcategory",
+          "label": "Version: 10.0",
+          "ids": 
+            [              
+              "wavemaker-release-notes/v10-0-4",
+              "wavemaker-release-notes/v10-0-3",
+              "wavemaker-release-notes/v10-0-2",
+              "wavemaker-release-notes/v10-0-1",
+              "wavemaker-release-notes/v10-0-ga",
+              "wavemaker-release-notes/v10-0-preview" 
+            ]
+          }                         
       ],
 
-      "Release v9.GA": 
+      "Release v9.x": 
       [
-      "wavemaker-release-notes/v9-4-0",
-      "wavemaker-release-notes/v9-3-0", 
-      "wavemaker-release-notes/v9-2-1",
-      "wavemaker-release-notes/v9-2-0"
-     
-       
-      ]
-    
+        "wavemaker-release-notes/v9-4-0",
+        "wavemaker-release-notes/v9-3-0", 
+        {
+          "type": "subcategory",
+          "label": "Version: 9.2",
+          "ids": 
+            [
+              "wavemaker-release-notes/v9-2-0",
+              "wavemaker-release-notes/v9-2-1"              
+            ]
+        },
+        "wavemaker-release-notes/v9-1-0",
+        {
+          "type": "subcategory",
+          "label": "Version: 9.0",
+          "ids": 
+            [
+              "wavemaker-release-notes/v9-0-2",
+              "wavemaker-release-notes/v9-0-1",
+              "wavemaker-release-notes/v9-0-ga"              
+            ]
+        }    
+      ]  
   },
 
   "FAQs":
