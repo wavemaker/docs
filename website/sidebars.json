@@ -793,7 +793,7 @@
       "wavemaker-release-notes",
       {
         "type": "subcategory",
-        "label": "Version: 10.1",
+        "label": "Versions: 10.1.x",
         "ids": 
           [
             "wavemaker-release-notes/v10-1-0"
@@ -801,7 +801,7 @@
         },
         {
           "type": "subcategory",
-          "label": "Version: 10.0",
+          "label": "Versions: 10.0.x",
           "ids": 
             [              
               "wavemaker-release-notes/v10-0-4",
@@ -820,7 +820,7 @@
         "wavemaker-release-notes/v9-3-0", 
         {
           "type": "subcategory",
-          "label": "Version: 9.2",
+          "label": "Versions: 9.2.x",
           "ids": 
             [
               "wavemaker-release-notes/v9-2-0",
@@ -830,14 +830,42 @@
         "wavemaker-release-notes/v9-1-0",
         {
           "type": "subcategory",
-          "label": "Version: 9.0",
+          "label": "Versions: 9.0.x",
           "ids": 
             [
               "wavemaker-release-notes/v9-0-2",
               "wavemaker-release-notes/v9-0-1",
               "wavemaker-release-notes/v9-0-ga"              
             ]
-        }    
+        }
+      ], 
+      
+      "Release v8.x": 
+      [
+        "wavemaker-release-notes/v8-5-0",        
+        {
+          "type": "subcategory",
+          "label": "Versions: 8.4.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v8-4-2-2",
+              "wavemaker-release-notes/v8-4-2-1",
+              "wavemaker-release-notes/v8-4-2",
+              "wavemaker-release-notes/v8-4-1",
+              "wavemaker-release-notes/v8-4-0-2",
+              "wavemaker-release-notes/v8-4-0"                
+            ]
+        },        
+        {
+          "type": "subcategory",
+          "label": "Versions: v8.3.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v8-0-2",
+              "wavemaker-release-notes/v8-0-1",
+              "wavemaker-release-notes/v8-0-ga"              
+            ]
+        }
       ]  
   },
 

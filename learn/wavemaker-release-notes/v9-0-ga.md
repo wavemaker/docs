@@ -74,7 +74,6 @@ WaveMaker Apps can now be deployed to your Google Cloud account. When configurin
 
 For more information, see [Deploy to Google Cloud](/learn/app-development/deployment/deployment-google-cloud/).
 
-
 ### Database Enhancements
 
 **Validators** have been introduced for database fields from the Database Designer. These can be used to enforce _Server Side Validations_ for specific fields to be performed at the time of insert/update of data to the underlying database. These checks include length, a range of values, patterns like email, credit card numbers or any custom defined regular expression patterns. The type of validator depends upon the data type of the data column.
@@ -123,49 +122,47 @@ For more information, see [Working with Database Schema](/learn/app-development/
 4.  Redeployment of apps already deployed to AWS/Azure will fail until the phase is re-configured and data migrated. [See here for more](/learn/app-development/deployment/migration-deployed-apps/).
 
 ## Technology Stack
-
+---
 ### UI Frameworks
 
 | Description | JS Library | Version |
 | --- | --- | --- |
 | JS Binding | jquery | 2.2.3 |
 |  | jquery-ui* | 1.11.4 |
-| MVC Framework | angular | 1.6.4 -> 1.6.5 |
+| MVC Framework | angular <td bgcolor="#44aaf4"> 1.6.4 -> 1.6.5 |
 |  | angular-ui-bootstrap | 2.5.0 |
 | Editor | ace-editor | 1.2.2 |
 | Styles | bootstrap | 3.3.6 |
 | Charting | d3 | 3.5.17 |
 |  | nvd3 | 1.8.3 |
 | CORS support, prefabs | xdomain | 0.7.5 |
-| Built-in functions | lodash | 4.16.4 -> 4.17.4 |
+| Built-in functions | lodash <td bgcolor="#44aaf4"> 4.16.4 -> 4.17.4 |
 | Device support, gestures | hammerjs | 2.0.8 |
 
 *Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
-## Back-end Frameworks
+### Back-end Frameworks
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | 4.2.0 -> 4.3.9 |
+|  | Spring Framework <td bgcolor="#44aaf4"> 4.2.0 -> 4.3.9 |
 | Security framework | Spring Security | 4.1.2 |
 | Java JSON utilities | Gson | 2.2.4 |
-| DB Persistence library | Hibernate | 4.3.11 -> 5.2.10 |
+| DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 4.3.11 -> 5.2.10 |
 | Sample database | HSQL | 2.3.3 |
 | JSON library | Jackson | 2.6.3 |
 | Logging framework | SLF4j | 1.7.12 |
-| Http client library | HttpComponents | client-4.5.2,
-core-4.3.2,
-mime-4.5.2 |
+| Http client library | HttpComponents | client-4.5.2, <br> core-4.3.2, <br> mime-4.5.2 |
 | REST API annotations | Swagger | 1.3.10 |
 | Logging framework | Log4j | 1.2.17 |
 
-## Run Time Environment
+### Run Time Environment
 | Description | Version |
 | --- | --- |
-| JDK | 1.8** |
+| JDK <td bgcolor="#44aaf4"> 1.8** |
 | Tomcat | 8.5* |
 | WebSphere | 8.5.5 |
 | JBOSS | 7.1.1 |
 
-**Re-deployment of WaveMaker apps to external cloud providers post 9.0 release need re-configuration of the Live Phase.
+**Re-deployment of WaveMaker apps to external cloud providers post 9.0 release need re-configuration of the Live Phase.  
 *Though the WaveMaker apps are developed on Tomcat ver 8.5, the generated war files can be deployed to Tomcat versions 6.x, 7.x and 8.x.

@@ -18,7 +18,7 @@ Widgets are UI elements, which makes your app functional without coding. Explore
 
 2. Create backend services. It can be a data service, web service, java service, security service, or use a third party API, or write your own code to extend a feature.  
 
-3. In a few simple clicks, using [variables](/learn/app-development/variables/variables), integrate the backend services with the widgets. 
+3. In a few simple clicks, using [variables](/learn/app-development/variables/variables), integrate the backend service with the widgets. 
 
 4. Build your apps with the [one-click deployment](/learn/app-development/deployment/one-click-deployment/). 
 
@@ -37,7 +37,7 @@ WMO is a cloud product - no installation required. For more information on the p
 WME is an on-premise product. For WME installation, see [WaveMaker Enterprise Setup Guide](/learn/installation/wavemaker-enterprise-setup-guide).
 
 :::note
-All features of WaveMaker Studio work the same for WMO and WME unless specified in the doc. 
+All features of WaveMaker Studio work similarly for WMO and WME unless specified in the doc. 
 :::
 
 ## Quick Start Guide
