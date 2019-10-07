@@ -13,7 +13,7 @@ Introduction to WaveMaker. Find a complete developer's guide to build an app wit
 1. Simply drag-and-drop widgets on a page.
 
 :::tip
-Widgets are UI elements, which makes your app functional without coding. Explore the [widgets library](/learn/app-development/widgets/widget-library). 
+Widgets are UI elements, which make your app functional without coding. Explore the [widgets library](/learn/app-development/widgets/widget-library). 
 :::
 
 2. Create backend services. It can be a data service, web service, java service, security service, or use a third party API, or write your own code to extend a feature.  
