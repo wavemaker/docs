@@ -15,6 +15,12 @@ To design pages, see the [Design Overview](/learn/app-development/ui-design/desi
 
 ![Pages introduction in WaveMaker](../../assets/pages_introduction.png)  
 
+## How Pages work
+
+WaveMaker Pages are built using the drag-n-drop approach, by placing widgets in the corresponding responsive layout grids.  
+
+[![](/learn/assets/UI_design-1.png)](/learn/assets/UI_design-1.png)
+
 ## Page Architecture
 
 In this document, you will learn about the following: 

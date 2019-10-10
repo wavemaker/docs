@@ -27,12 +27,13 @@ Get started with designing your app. It involves the following steps:
 
 [![UI_design](/learn/assets/UI_design.png)](/learn/assets/UI_design.png)
 
-## How it works
+## Drag-and-drop UI Components
 
-WaveMaker Pages are built using the drag-n-drop approach, by placing widgets in the corresponding responsive layout grids.  
+Widgets are the building block for any application. WaveMaker Pages are built using the drag-n-drop approach by placing widgets in the corresponding responsive layout grids.  Widgets enable users to interact with the App and can get their data (binding) from backend Services.
 
-[![](/learn/assets/UI_design-1.png)](/learn/assets/UI_design-1.png)
+They can be dropped into the Grids or Containers, making UI well-aligned and ready for consumption. For more information, see [Widgets](/learn/app-development/widgets/ui-elements/).
 
+[![](/learn/assets/widget_concept.png)](/learn/assets/widget_concept.png)
 
 ## Page Structure
 
@@ -96,13 +97,7 @@ Templates are selected at the time of Page Creation and cannot be changed later.
 
 [![](/learn/assets/template_concept.png)](/learn/assets/template_concept.png)
 
-## Drag-and-drop development
 
-Pages are designed as a composition of Widgets or UI Elements. Widgets are the building block for any application. Widgets enable users to interact with the App and can get their data (binding) from backend Services.
-
-They can be dropped into the Grids or Containers, making UI well-aligned and ready for consumption. For more information, see [Widgets](/learn/app-development/widgets/ui-elements/).
-
-[![](/learn/assets/widget_concept.png)](/learn/assets/widget_concept.png)
 
 
 
