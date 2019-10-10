@@ -20,8 +20,7 @@ Get started with designing your app. It involves the following steps:
 - To explore WaveMaker widgets, see [Widgets Library](/learn/app-development/widgets/widget-library).
 :::
 
-3. **Prefabs** to customize and extend widgets' capability. 
-4. Style using **Themes** and **Templates**.  
+3. Style using **Themes** and **Templates**.  
 
 ### Page Elements 
 

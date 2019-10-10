@@ -7,7 +7,7 @@
         "app-development/wavemaker-overview/product-walkthrough"                    
       ],
 
-    "Design pages": 
+    "App design": 
       [
         {
           "type": "subcategory",
@@ -17,14 +17,12 @@
             "app-development/ui-design/page-creation",
             "app-development/ui-design/design-overview",
             "app-development/widgets/ui-elements",                                  
-            "app-development/ui-design/page-artefacts",
-            "app-development/ui-design/themes",
-            "app-development/ui-design/page-concepts/page-templates"            
+            "app-development/ui-design/page-artefacts"                       
             ]
         },
         {
           "type": "subcategory",
-          "label": "Pages",
+          "label": "Page Configure",
           "ids": 
             [
             "app-development/ui-design/page-concepts/partial-pages",
@@ -34,8 +32,18 @@
             "app-development/ui-design/page-concepts/page-events",
             "app-development/ui-design/use-cases-ui-design"         
             ]       
-        } 
-        
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Apply Styles",
+          "ids": 
+            [
+              "app-development/ui-design/themes",
+              "app-development/ui-design/creating-themes",
+              "app-development/ui-design/page-concepts/page-templates" 
+            ]
+        }        
       ],
 
       "Backend services":

@@ -2,12 +2,12 @@
 title: "Page Artefacts"
 id: "page-artefacts"
 ---
-
+---
 You would have witnessed by now that you can accomplish most of the tasks of creating an application in the **Design** mode itself - using intuitive drag and drop options and properties. However, some situations may require you to edit the code of your application pages. Also, some advanced users and experienced developers may prefer to code. Thus, WaveMaker provides different **Page Modes** - [**Markup**](#page-markup), [**Scripting**](#page-script), and [**Styles**](#page-style) - apart from the default **Design** mode. We will look at each of these modes separately.
 
 [![](/learn/assets/page_modes.png)](/learn/assets/page_modes.png)
 
-# Page Markup
+## Page Markup
 
 In the **Markup** mode, you can view a set of tags assigned to the elements of the page. Markup may also include attributes and other details of the elements. These details and attributes can also be set in the **Design** mode.
 
@@ -18,13 +18,13 @@ Each of the directives represents an element that has to exist at that point of
 Custom markup can be added as needed directly in the code (if you are familiar with it). If not, WaveMaker automatically generates code when the elements are dragged on the canvas. This mode shows the styles that are associated with the particular widget. For instance, consider the **Button** widget. In the **Design** mode, drag and drop a **Button** widget and name it _formSubmitButton_. Set some of the properties of the _button_, say **Left Margin**, **Right Margin** and **Top Margin**, using the **Properties Panel**.
 
 Now, switch to **Markup** mode. You can see the corresponding markup for the _button _as shown below.
-
+```
  <wm-button class="btn-default" caption="Button" type="button" margin="unset 0.5em" 
 name="formSubmitButton" on-click="formSubmitButtonClick($event, widget)"></wm-button>
-
+```
 The **Button** widget is identified by name="formSubmitButton"  and some of the properties are margin="unset 0.5em" and caption="Button" . These properties can be modified in the markup. After saving the changes, the respective widget would get updated with the properties and values defined in the markup.
 
-# Page Script
+## Page Script
 
 In the **Script **mode, you can define JavaScript functions that can be executed on specific events of user interaction. You can use JavaScript to further customize your WaveMaker application. The various methods and properties associated with each of the WaveMaker elements can be found in the [API Documentation](/studio/docs/index.html). The various ways to access the variables, widgets etc. within an application can be [found here](/learn/app-development/variables/accessing-elements-via-javascript/ "Script Access to Widgets, Variables and more").
 
@@ -37,15 +37,16 @@ Here is an example to illustrate the process. Suppose you have a button named 
 - Select _JavaScript_ from the **On Click** event drop-down menu.
 - WaveMaker will switch to **Script** mode with the function that will be called when the button is clicked.
 - Call the _alert_ function to display an alert when the user clicks _formSubmitButton_ as shown below.
-    
+
+```    
     Page.formSubmitButtonClick = function($event, widget) {
         alert('Here is an alert from JavaScript');
     };
-    
+```    
 
 Once you have saved these changes and run the application, clicking on the button will display an alert box with the above message.
 
-# Page Style
+## Page Style
 
 There are four ways in which you can apply a custom style to your app:
 
@@ -56,11 +57,11 @@ There are four ways in which you can apply a custom style to your app:
     - In the **Properties Panel** on the right side, click on **Styles**.
     - Enter the class name, say _buttonSample_, for the property **ButtonClass**. This property defines the CSS class that is supposed to be associated _formSubmitButton_.
     - Switch to **Style** mode and enter the following:
-        
+    ```    
         .wm-app .buttonSample {
             color: red
         };
-        
+    ```    
     - This would make the _formSubmitButton_ appear red due to the properties mentioned in the _buttonSample_ CSS class.
     
     These style changes can be made at two levels:
