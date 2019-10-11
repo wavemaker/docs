@@ -1,7 +1,7 @@
 ---
 title: "Examples - UI Design"
 id: ""
-sidebar_label: "How-to Examples"
+sidebar_label: "Examples"
 ---
 ---
 

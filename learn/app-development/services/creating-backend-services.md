@@ -2,19 +2,29 @@
 title: "Backend Services Overview"
 id: "creating-backend-services"
 ---
+Get an overview of backend services in WaveMaker and see how it works. 
+
 ---
 
-WaveMaker handles external data as a service. Based on the underlying data being served, services are categorized as _Web Services_, _Database_ and _Java Services_. Each of these services is converted to a RESTful service and is consumed through their respective REST APIs.
+Before getting started with backend services, let's go back to basics. Designing an app involves four steps.
+- <span style="color: #D3D3D3;">Step-1: Drag-and-drop widgets and design the page.</span>
+- **Step-2: Create a backend service.**
+- <span style="color: #D3D3D3;">Step-3: Using variable, integrate the backend service with widget.</span>
 
-## Quick Start Guide
+# Backend
+---
+A service can be of any type. It can be a data service, web service, java service, security service, or using a third party API. Or, extending a feature with your own code. 
+
+Thus, you can consider external data as a service. Based on the underlying data being served, services are categorized as _Web Services_, _Database_ and _Java Services_. Each of these services is converted to a RESTful service and is consumed through their respective REST APIs.
+
+## Get started with each service type
 
 |No.| To | See |
 |---|---|---|
-|1.|Learn about Database Services|[Database Services](/learn/app-development/services/database-services/database-services)|
-|2.|Learn about Web Services|[Web Services](/learn/app-development/services/web-services/web-services)|
-|3.|Learn about Java Services|[Java Services](app-development/services/java-services/java-service)|
-|4.|Learn about APIs|[API Designer](/learn/app-development/services/api-designer/api)|
-|5.|Learn about third party libraries|[Third Party Libraries](/learn/app-development/services/3rd-party-libraries)|
+|1.|Get started with Database Services|[Database Services](/learn/app-development/services/database-services/database-services)|
+|2.|Get started with Web Services|[Web Services](/learn/app-development/services/web-services/web-services)|
+|3.|Get started with Java Services|[Java Services](app-development/services/java-services/java-service)|
+|4.|Get started with Security Services|[Security Services](/learn/app-development/app-security/app-security)|
 
 ## Backend Service Architecture 
 
@@ -40,7 +50,7 @@ The graphic below represents the life-cycle of the variable.
 
 [![](/learn/assets/sevice_var_lifecycle.png)](/learn/assets/sevice_var_lifecycle.png)
 
-1. A user invokes the variable call through an action like click on a button.
+1. A user invokes the variable call through an action. For example, click a button.
 2. An event is emitted and event controller watches over the event.
 3. Event controller requests the variable information from the base service.
 4. Event controller calls the update method on the “Variable” service.
@@ -53,7 +63,11 @@ The graphic below represents the life-cycle of the variable.
 
 ### Life-cycle Events of Variable
 
-Given the life cycle of a variable, next step would be to capture and control the flow to include validation, pre and post processing of data. A typical event flow when a variable is used to update data would be as follows: [![](/learn/assets/LSV_eventcycle.png)](/learn/assets/LSV_eventcycle.png)
+Given the life cycle of a variable, next step would be to capture and control the flow to include validation, pre and post processing of data. 
+
+A typical event flow when a variable is used to update data would be as follows:
+
+[![](/learn/assets/LSV_eventcycle.png)](/learn/assets/LSV_eventcycle.png)
 
 ## REST APIs
 

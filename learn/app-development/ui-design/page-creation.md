@@ -1,18 +1,16 @@
 ---
-title: "Getting started with Pages"
+title: "Creating Pages"
 id: ""
 sidebar_label: "Create Pages"
 ---
 WaveMaker app is a collection of pages. Learn how to create a page.
 
 ---
-WaveMaker app is a collection of pages though it is a single page application (SPA). Pages load asynchronously on demand. Each page is composed of different UI elements and [widgets](/learn/app-development/widgets/widgets-library). These UI elements enable user interaction and get data from the backend services. You can set navigation and interaction rules across pages.
+WaveMaker app is a collection of pages though it is called a single page application (SPA). Pages load asynchronously on demand. Each page is composed of different UI elements and widgets. 
 
 :::tip
-To learn about page life cycle and architecture, see [Page Concepts](/learn/app-development/ui-design/page-concepts).
+To learn about page life cycle and architecture, see [Page Concepts](/learn/app-development/ui-design/page-concepts). To learn about widgets, see [Widgets Library](/learn/app-development/widgets/widgets-library).
 :::
-
-For developing app, you create multiple pages and link them as per your app flow.
 
 ## Creating a Page
 Navigate to the pages section to create a page. However, by default, the **Main Page** generates automatically.  
@@ -52,6 +50,7 @@ There are two types of pages that can be created in an application:
 
 1. **Page** – which can be loaded independently in the application. These act as a route within the application when associated with navigation events.
 2. **Partial** - these have to be associated with a component within a page. Usually, a part of the page which is common across the app like a header or a left navigation, are implemented as a single partial and used across all app pages.
+3. **Popover** - Popover, also known as pop-up, can be built as a portion of a page, reusable and contains UI elements with data binding (e.g.: drill down details, pop-up menus etc.). These can be built like a partial page, but have pop-up based interaction.
 
 ## Page Title
 
@@ -70,4 +69,6 @@ You can duplicate, rename and delete a page using the page operations. These can
 - **Renaming** a page or a partial page leads to the page name being renamed, with the new name given by you. All the references are also renamed.
 - **Duplicating** a page leads to a copy of the page or partial page being created, with the new name given by you. A new goTo action for that page is also created.
 - **Deleting** a page removes all references to the selected page from the project.
+
+
 

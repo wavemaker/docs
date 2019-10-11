@@ -8,18 +8,13 @@
       ],
 
     "App design": 
-      [
-        {
-          "type": "subcategory",
-          "label": "Workflow",
-          "ids": 
-            [
+      [     
+            "app-development/ui-design/designing-app",
             "app-development/ui-design/page-creation",
-            "app-development/ui-design/design-overview",
+            "app-development/ui-design/design-overview",            
             "app-development/widgets/ui-elements",                                  
-            "app-development/ui-design/page-artefacts"                       
-            ]
-        },
+            "app-development/ui-design/page-artefacts",                       
+            
         {
           "type": "subcategory",
           "label": "Page Configure",
@@ -46,11 +41,48 @@
         }        
       ],
 
-      "Backend services":
+      "Backend & Integration":
       [          
-        "app-development/services/creating-backend-services",
-        "app-development/services/api-designer/api",
-        "app-development/variables/variables"
+        "app-development/services/creating-backend-services",  
+        {
+          "type": "subcategory",
+          "label": "Variables",
+          "ids": [ 
+            "app-development/variables/variables",
+            "app-development/variables/data-integration",  
+            "app-development/variables/variable-binding"
+          ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Other Variables",
+          "ids": [                                             
+            "app-development/variables/model-variable",
+            "hybrid-mobile/device-variables"
+          ]           
+        }, 
+        {
+          "type": "subcategory",
+          "label": "Actions",
+          "ids": [
+            "app-development/variables/actions",
+            "app-development/variables/navigation-action",
+            "app-development/variables/login-action",
+            "app-development/variables/logout-action",
+            "app-development/variables/timer-action",
+            "app-development/variables/notification-action"
+          ]           
+        }, 
+        {
+          "type": "subcategory",
+          "label": "Events",
+          "ids": [
+            "app-development/variables/events",
+            "app-development/variables/accessing-elements-via-javascript"
+          ]
+        },
+        "app-development/services/api-designer/api"
       ],
 
       "Data services": 
@@ -187,29 +219,9 @@
 
       "Integration services": 
       [
-        "app-development/variables/data-integration",   
-        {
-          "type": "subcategory",
-          "label": "Other Variables",
-          "ids": [                                      
-            
-            "app-development/variables/model-variable",
-            "hybrid-mobile/device-variables"]           
-        }, 
-
-        "app-development/variables/variable-binding",        
-        {
-          "type": "subcategory",
-          "label": "Actions",
-          "ids": ["app-development/variables/actions",
-            "app-development/variables/navigation-action",
-            "app-development/variables/login-action",
-            "app-development/variables/logout-action",
-            "app-development/variables/timer-action",
-            "app-development/variables/notification-action"]           
-        }, 
-        "app-development/variables/events",
-        "app-development/variables/accessing-elements-via-javascript",
+      
+ 
+        
         "app-development/wavemaker-overview/localization"
       ], 
       
