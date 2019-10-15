@@ -1,17 +1,24 @@
 ---
-title: "Introduction to Variables"
+title: "Variables Overview"
 id: ""
-sidebar_label: "Introduction to Variables"
+sidebar_label: "Variables Overview"
 ---
 Learn about Variables in WaveMaker low-code platform. See how it works and how to use them as services.
 
 ---
-
-Variables and Actions form the glue between the frontend UI and the backend services. While Variables provide data integration for the widgets, Actions implement the business logic, rules and data flows. For more information about implementing actions, see [Actions](/learn/app-development/variables/actions).
-
-In this document, we give an overview of how Variables work and the types of Variables in WaveMaker. You can navigate to the Variables section as shown in the image below.
+Variables form the glue between the frontend UI and the backend services. Variables provide data integration for the widgets. 
 
 ![Variables introduction in WaveMaker](../../assets/variables_introduction.png)  
+
+## Scope of Variables
+
+Variables and Actions can be classified into two based on the scope of the Variable. The two types of variables are - **Application** and **Page** level variables. While both these types reside at the _client side_, the _application level_ variables share the data across multiple pages, whereas _Page level_ variables share the data within the page where they have been declared/created. Whenever you are switching from one page to another, all the previous page level variables are destroyed.  
+
+[![var_scope](/learn/assets/var_scope.png)](/learn/assets/var_scope.png) 
+
+:::note
+It is advised to have unique names for any variable to avoid confusion. Whenever you try to create or rename a variable WaveMaker will throw an error if another variable of the same name exists either within the page or at the app level.
+:::
 
 ## How it works
 
@@ -19,7 +26,7 @@ Variables function by invoking the associated REST APIs on the server-side, invo
 
 Variables can be represented using a block with 3 faces, as in the picture below, representing the APIs invoked, events processed and the Model or Entity objects returned by the APIs.
 
-[![variable representation](/learn/assets/var_representation.png)](/learn/assets/var_representation.png)
+[![](/learn/assets/var_representation.png)](/learn/assets/var_representation.png)
 
 ## Variable Types
 ---
@@ -63,14 +70,5 @@ To store data on the client side. For more information, see [Model Variable](/le
 ### Device Variable
 For Mobile Apps, the various device information can be used to access the respective devices like camera, contacts, and more. For more information, see [Device Variable](/learn/hybrid-mobile/device-variables/).
 
-## Scope of Variables
----
 
-Variables and Actions can be classified into two based on the scope of the Variable. The two types of variables are - **Application** and **Page** level variables. While both these types reside at the _client side_, the _application level_ variables share the data across multiple pages, whereas _Page level_ variables share the data within the page where they have been declared/created. Whenever you are switching from one page to another, all the previous page level variables are destroyed.  
-
-[![var_scope](/learn/assets/var_scope.png)](/learn/assets/var_scope.png) 
-
-:::note
-It is advised to have unique names for any variable to avoid confusion. Whenever you try to create or rename a variable WaveMaker will throw an error if another variable of the same name exists either within the page or at the app level.
-:::
 

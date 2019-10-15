@@ -16,7 +16,7 @@ For developing an app in WaveMaker, you follow the three-layered architecture.
 # UI Design Module 
 ---
 
-In the Design module, you will learn how to create pages, use widgets and apply styles to meet your branding needs. 
+In the Design module, you will learn how to create pages, use widgets, and apply styles for developing an app. 
 
 ### How it works
 WaveMaker app is a collection of pages. Pages load asynchronously on demand. Each page is composed of different UI elements and [widgets](/learn/app-development/widgets/widgets-library). These UI elements enable user interaction and get data from the backend services. You can set navigation and interaction rules across pages.

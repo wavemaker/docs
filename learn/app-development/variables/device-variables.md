@@ -238,15 +238,17 @@ Based upon the service selected various operations are available.
 This method invokes the device variable
 
 _Parameters_:
-
+```
 - **options**(object)
 - success (callback)
 - error (callback)
+```
 
 _Return Value_: None
 
 _Example:_
 
+```
 // Example 1: Notify with default set properties
 Page.Variables.myDeviceVariable.invoke();
 
@@ -258,98 +260,4 @@ Page.Variables.myDeviceVariable.invoke(
      }, function () {
         console.log('error')
 });
-
-< Variables & Actions
-
-6\. Data Integration - Variables
-
-- 6.1 Binding Layer
-    - [i. Overview](/learn/app-development/variables/data-integration/)
-- [6.2 Variables and Actions](/learn/app-development/variables/variables-actions/)
-    - [i. Overview](/learn/app-development/variables/variables-actions/#)
-    - [ii. Variables](/learn/app-development/variables/variables-actions/#variables)
-        - a. Database CRUD
-            - [○ Overview](/learn/app-development/variables/database-crud/)
-            - [○ Variable Creation](/learn/app-development/variables/database-crud/#creation)
-            - [○ Properties](/learn/app-development/variables/database-crud/#properties)
-            - [○ Events](/learn/app-development/variables/database-crud/#events)
-            - [○ Methods](/learn/app-development/variables/database-crud/#methods)
-        - b. Database API
-            - [○ Overview](/learn/app-development/variables/database-apis/)
-            - [○ Variable Creation](/learn/app-development/variables/database-apis/#creation)
-            - [○ Properties](/learn/app-development/variables/database-apis/#properties)
-            - [○ Events](/learn/app-development/variables/database-apis/#events)
-            - [○ Methods](/learn/app-development/variables/database-apis/#methods)
-        - c. Web Service
-            - [○ Overview](/learn/app-development/variables/web-service/)
-            - [○ Variable Creation](/learn/app-development/variables/web-service/#creation)
-            - [○ Properties](/learn/app-development/variables/web-service/#properties)
-            - [○ Events](/learn/app-development/variables/web-service/#events)
-            - [○ Methods](/learn/app-development/variables/web-service/#methods)
-        - d. Java Service
-            - [○ Overview](/learn/app-development/variables/java-services)
-            - [○ Variable Creation](/learn/app-development/variables/java-services/#creation)
-            - [○ Properties](/learn/app-development/variables/java-services/#properties)
-            - [○ Events](/learn/app-development/variables/java-services/#events)
-            - [○ Methods](/learn/app-development/variables/java-services/#methods)
-        - e. Security Service
-            - [○ Overview](/learn/app-development/variables/security-service/)
-            - [○ Variable Creation](/learn/app-development/variables/security-service/#creation)
-            - [○ Properties](/learn/app-development/variables/security-service/#properties)
-            - [○ Events](/learn/app-development/variables/security-service/#events)
-            - [○ Methods](/learn/app-development/variables/security-service/#methods)
-        - f. Model
-            - [○ Overview](/learn/app-development/variables/model-variable/)
-            - [○ Variable Creation](/learn/app-development/variables/model-variable/#creation)
-            - [○ Properties](/learn/app-development/variables/model-variable/#properties)
-            - [○ Events](/learn/app-development/variables/model-variable/#events)
-            - [○ Methods](/learn/app-development/variables/model-variable/#methods)
-        - [g. Device Variables](#)
-            - [○ Overview](#)
-            - [○ Services](#services)
-            - [○ Operations](#operations)
-            - [○ Events](#events)
-            - [○ Methods](#methods)
-            - [○ Usage](#usage)
-    - [iii. Actions](/learn/app-development/variables/variables-actions/#actions)
-        - i. Navigation
-            - [○ Overview](/learn/app-development/variables/navigation-action/)
-            - [○ Action Creation](/learn/app-development/variables/navigation-action/#creation)
-            - [○ Properties](/learn/app-development/variables/navigation-action/#properties)
-            - [○ Methods](/learn/app-development/variables/navigation-action/#methods)
-        - ii. Login
-            - [○ Overview](/learn/app-development/variables/login-action/)
-            - [○ Action Creation](/learn/app-development/variables/login-action/#creation)
-            - [○ Properties](/learn/app-development/variables/login-action/#properties)
-            - [○ Data](/learn/app-development/variables/login-action/#data)
-            - [○ Events](/learn/app-development/variables/login-action/#events)
-        - iii. Logout
-            - [○ Overview](/learn/app-development/variables/logout-action/)
-            - [○ Action Creation](/learn/app-development/variables/logout-action/#creation)
-            - [○ Properties](/learn/app-development/variables/logout-action/#properties)
-            - [○ Events](/learn/app-development/variables/logout-action/#events)
-        - iv. Timer
-            - [○ Overview](/learn/app-development/variables/timer-action/)
-            - [○ Action Creation](/learn/app-development/variables/timer-action/#creation)
-            - [○ Properties](/learn/app-development/variables/timer-action/#properties)
-            - [○ Events](/learn/app-development/variables/timer-action/#events)
-            - [○ Methods](/learn/app-development/variables/timer-action/#methods)
-        - v. Notification
-            - [○ Overview](/learn/app-development/variables/notification-action/)
-            - [○ Action Creation](/learn/app-development/variables/notification-action/#creation)
-            - [○ Properties](/learn/app-development/variables/notification-action/#properties)
-            - [○ Events](/learn/app-development/variables/notification-action/#events)
-            - [○ Methods](/learn/app-development/variables/notification-action/#methods)
-    - [iv. Scoping](/learn/app-development/variables/variables-actions/#scoping)
-    - [v. Variable Events](/learn/app-development/variables/variables-actions/#events)
-    - [vi. Error Handling](/learn/app-development/variables/variables-actions/#error-handling)
-- 6.3 Variable Binding
-    - [i. Overview](/learn/variables/variable-binding/#)
-    - [ii. Data Binding](/learn/variables/variable-binding/#data-binding)
-    - [iii. Widget Binding](/learn/variables/variable-binding/#widget-binding)
-    - [iv. Binding Options](/learn/variables/variable-binding/#binding-options)
-- 6.4 JavaScript Access
-    - [i. Overview](/learn/variables/accessing-elements-via-javascript/#)
-    - [ii. Widget Controllers](/learn/variables/accessing-elements-via-javascript/#widget-controllers)
-    - [iii. Page Scripting](/learn/variables/accessing-elements-via-javascript/#page-scripting)
-    - [iv. Script Access](/learn/variables/accessing-elements-via-javascript/#script-access)
+```

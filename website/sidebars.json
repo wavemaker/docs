@@ -41,51 +41,39 @@
         }        
       ],
 
-      "Backend & Integration":
+      "Backend":
       [          
-        "app-development/services/creating-backend-services",  
-        {
-          "type": "subcategory",
-          "label": "Variables",
-          "ids": [ 
-            "app-development/variables/variables",
-            "app-development/variables/data-integration",  
-            "app-development/variables/variable-binding"
-          ]
-        },
+        "app-development/services/creating-backend-services",         
+        "app-development/services/api-designer/api" 
+      ],         
 
+      "1. Web services": 
+      [   
+            "app-development/services/web-services/web-services",            
         {
           "type": "subcategory",
-          "label": "Other Variables",
-          "ids": [                                             
-            "app-development/variables/model-variable",
-            "hybrid-mobile/device-variables"
-          ]           
-        }, 
-        {
-          "type": "subcategory",
-          "label": "Actions",
-          "ids": [
-            "app-development/variables/actions",
-            "app-development/variables/navigation-action",
-            "app-development/variables/login-action",
-            "app-development/variables/logout-action",
-            "app-development/variables/timer-action",
-            "app-development/variables/notification-action"
-          ]           
-        }, 
-        {
-          "type": "subcategory",
-          "label": "Events",
-          "ids": [
-            "app-development/variables/events",
-            "app-development/variables/accessing-elements-via-javascript"
-          ]
+          "label": "Services",
+          "ids": 
+          [
+            "app-development/services/web-services/rest-services",
+            "app-development/services/web-services/oauth-2-0-rest-services",
+            "app-development/services/web-services/working-with-soap-services",              
+            "app-development/services/web-services/working-with-websockets"                 
+          ]       
         },
-        "app-development/services/api-designer/api"
+        {
+          "type": "subcategory",
+          "label": "Web Service Variables & API",
+          "ids": 
+            [ 
+            "app-development/variables/web-service",
+            "app-development/services/api-designer/web-service-apis"         
+            ]
+        }  
+
       ],
 
-      "Data services": 
+      "2. Data services": 
       [
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
@@ -139,33 +127,7 @@
         
       ],  
 
-      "Web services": 
-      [   
-            "app-development/services/web-services/web-services",            
-        {
-          "type": "subcategory",
-          "label": "Services",
-          "ids": 
-          [
-            "app-development/services/web-services/rest-services",
-            "app-development/services/web-services/oauth-2-0-rest-services",
-            "app-development/services/web-services/working-with-soap-services",              
-            "app-development/services/web-services/working-with-websockets"                 
-          ]       
-        },
-        {
-          "type": "subcategory",
-          "label": "Web Service Variables & API",
-          "ids": 
-            [ 
-            "app-development/variables/web-service",
-            "app-development/services/api-designer/web-service-apis"         
-            ]
-        }  
-
-      ],
-
-      "Java services": 
+      "3. Java services": 
       [   
           "app-development/services/java-services/java-service",     
           {
@@ -195,7 +157,7 @@
           } 
       ],
 
-      "Security services": 
+      "4. Security services": 
       [
         "app-development/app-security/app-security",
         "app-development/app-security/authentication",        
@@ -216,20 +178,49 @@
         "app-development/services/api-designer/security-service-apis"]
         }
       ],
+    
+      "Integration":
+      [       
+            "app-development/variables/data-integration",              
+        {
+          "type": "subcategory",
+          "label": "Variables",
+          "ids": [   
+            "app-development/variables/variables",                                          
+            "app-development/variables/model-variable",
+            "hybrid-mobile/device-variables",
+            "app-development/variables/variable-binding"
+          ]           
+        },                
+         
+        {
+          "type": "subcategory",
+          "label": "Actions",
+          "ids": [
+            "app-development/variables/actions",
+            "app-development/variables/navigation-action",
+            "app-development/variables/login-action",
+            "app-development/variables/logout-action",
+            "app-development/variables/timer-action",
+            "app-development/variables/notification-action"
+          ]           
+        }, 
+        {
+          "type": "subcategory",
+          "label": "Events",
+          "ids": [
+            "app-development/variables/events",
+            "app-development/variables/accessing-elements-via-javascript"
+          ]
+        }             
+      ],  
 
-      "Integration services": 
-      [
-      
- 
-        
-        "app-development/wavemaker-overview/localization"
-      ], 
-      
     "Developer options": 
     [
         "app-development/dev-integration/developer-tools",
         "app-development/dev-integration/import-export-update-apps",
         "app-development/ui-design/project-shells",
+        "app-development/wavemaker-overview/localization",
     {
       "type": "subcategory",
       "label": "Developer Integration",
@@ -340,7 +331,9 @@
       [
           "app-development/wavemaker-overview/platform-overview",                                              
           "app-development/ui-design/page-concepts",
-          "app-development/wavemaker-overview/artifacts-repository"
+          "app-development/wavemaker-overview/artifacts-repository",
+          "app-development/services/backend-architecture",
+          "app-development/variables/integration-binding-layer"
       ]
   },
   
@@ -611,8 +604,16 @@
           ]
       }
     ],
+
+    "Mobile & Device Widgets":
+    [
+      "app-development/widgets/mobile-widgets/camera",
+      "app-development/widgets/mobile-widgets/media-list",
+      "app-development/widgets/mobile-widgets/segmented-control",
+      "app-development/widgets/mobile-widgets/barcode-scanner"
+    ],
     
-    "Cards": 
+    "1. Cards": 
     [ 
       "app-development/widgets/datalive/cards",
       "app-development/widgets/datalive/cards/card-basic-usage",
@@ -624,7 +625,7 @@
       "app-development/widgets/datalive/cards/card-use-cases"
     ],
 
-    "Data Table": [ 
+    "2. Data Table": [ 
       "app-development/widgets/datalive/data-table",
       "app-development/widgets/datalive/datatable/data-source",
       "app-development/widgets/datalive/datatable/layouts",
@@ -636,7 +637,7 @@
       "app-development/widgets/datalive/datatable/data-table-use-cases"
     ],
 
-    "List": [ 
+    "3. List": [ 
       "app-development/widgets/datalive/list",
       "app-development/widgets/datalive/list/list-data-source",
       "app-development/widgets/datalive/list/list-templates",
@@ -646,7 +647,7 @@
       "app-development/widgets/datalive/list/list-use-cases"
     ],
 
-    "Form": [ 
+    "4. Form": [ 
       "app-development/widgets/datalive/form",
       "app-development/widgets/datalive/form/form-data-source",
       "app-development/widgets/datalive/form/form-layouts",
@@ -656,7 +657,7 @@
       "app-development/widgets/datalive/form/form-usage-scenarios"
     ],
 
-    "Form Widgets": [ 
+    "5. Form Widgets": [ 
       "app-development/widgets/form-widgets/button",
       "app-development/widgets/form-widgets/button-group",
       "app-development/widgets/form-widgets/text",
@@ -682,7 +683,7 @@
       "app-development/widgets/form-widgets/"
     ],
 
-    "Live Form": 
+    "6. Live Form": 
     [ 
       "app-development/widgets/datalive/live-form",
       "app-development/widgets/datalive/live-form/live-form-data-source",
@@ -694,7 +695,7 @@
       "app-development/widgets/datalive/live-form/liveform-use-cases"
     ],
 
-    "Live Filter": 
+    "7. Live Filter": 
     [ 
       "app-development/widgets/datalive/live-filter",
       "app-development/widgets/datalive/livefilter/live-filter-data-source",
@@ -706,7 +707,7 @@
       "app-development/widgets/datalive/livefilter/livefilter-use-cases"    
     ],
 
-    "Container":
+    "8. Container":
     [
           "app-development/widgets/container/accordion",
           "app-development/widgets/container/container", 
@@ -716,7 +717,7 @@
           "app-development/widgets/container/wizard"
     ],
 
-    "Basic Widgets":
+    "9. Basic Widgets":
     [
       "app-development/widgets/basic/anchor",
       "app-development/widgets/basic/media-widgets",
@@ -735,12 +736,12 @@
       "app-development/widgets/basic/media-widgets"
     ],
 
-    "Charts":
+    "10. Charts":
     [
       "app-development/widgets/chart/chart-widget"
     ],
 
-    "Navigation":
+    "11. Navigation":
     [
       "app-development/widgets/navigation/breadcrumb",
       "app-development/widgets/navigation/breadcrumb-use-cases",
@@ -752,14 +753,14 @@
       "app-development/widgets/navigation/popover-basic-usage"
     ],
 
-    "Advanced Widgets":
+    "12. Advanced Widgets":
     [
       "app-development/widgets/advanced/carousel",
       "app-development/widgets/advanced/login",
       "app-development/widgets/advanced/marquee"
     ],
 
-    "Dialog Widgets":
+    "13. Dialog Widgets":
     [
       "app-development/widgets/modal-windows-dialogs",
       "app-development/widgets/alert-dialog",
@@ -768,15 +769,8 @@
       "app-development/widgets/design-dialog",
       "app-development/widgets/page-dialog",
       "app-development/widgets/login-dialog"
-    ],
-
-    "Mobile & Device Widgets":
-    [
-      "app-development/widgets/mobile-widgets/camera",
-      "app-development/widgets/mobile-widgets/media-list",
-      "app-development/widgets/mobile-widgets/segmented-control",
-      "app-development/widgets/mobile-widgets/barcode-scanner"
     ]
+
   },
 
   "WME":
