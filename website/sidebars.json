@@ -47,7 +47,7 @@
         "app-development/services/api-designer/api" 
       ],         
 
-      "1. Web services": 
+      "- Web services": 
       [   
             "app-development/services/web-services/web-services",            
         {
@@ -73,7 +73,7 @@
 
       ],
 
-      "2. Data services": 
+      "- Data services": 
       [
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
@@ -127,7 +127,7 @@
         
       ],  
 
-      "3. Java services": 
+      "- Java services": 
       [   
           "app-development/services/java-services/java-service",     
           {
@@ -157,7 +157,7 @@
           } 
       ],
 
-      "4. Security services": 
+      "- Security services": 
       [
         "app-development/app-security/app-security",
         "app-development/app-security/authentication",        
@@ -585,33 +585,6 @@
     "Widgets & Prefabs Library": [
       "app-development/widgets/widget-library"      
     ],
-    "Prefabs": 
-    [ 
-      "app-development/widgets/prefab/youtube",
-      "app-development/widgets/prefab/googlemaps",
-      "app-development/widgets/prefab/qrcode",   
-      {
-        "type": "subcategory",
-        "label": "OAuth",
-        "ids": 
-          [
-      "app-development/widgets/prefab/oauth-prefabs",
-      "app-development/widgets/prefab/oauth-prefabs/box",
-      "app-development/widgets/prefab/oauth-prefabs/facebook",
-      "app-development/widgets/prefab/oauth-prefabs/google",
-      "app-development/widgets/prefab/oauth-prefabs/instagram",
-      "app-development/widgets/prefab/oauth-prefabs/linkedin"
-          ]
-      }
-    ],
-
-    "Mobile & Device Widgets":
-    [
-      "app-development/widgets/mobile-widgets/camera",
-      "app-development/widgets/mobile-widgets/media-list",
-      "app-development/widgets/mobile-widgets/segmented-control",
-      "app-development/widgets/mobile-widgets/barcode-scanner"
-    ],
     
     "1. Cards": 
     [ 
@@ -769,6 +742,34 @@
       "app-development/widgets/design-dialog",
       "app-development/widgets/page-dialog",
       "app-development/widgets/login-dialog"
+    ],
+
+    "Mobile & Device Widgets":
+    [
+      "app-development/widgets/mobile-widgets/camera",
+      "app-development/widgets/mobile-widgets/media-list",
+      "app-development/widgets/mobile-widgets/segmented-control",
+      "app-development/widgets/mobile-widgets/barcode-scanner"
+    ],
+
+    "Prefabs": 
+    [ 
+      "app-development/widgets/prefab/youtube",
+      "app-development/widgets/prefab/googlemaps",
+      "app-development/widgets/prefab/qrcode",   
+      {
+        "type": "subcategory",
+        "label": "OAuth",
+        "ids": 
+          [
+      "app-development/widgets/prefab/oauth-prefabs",
+      "app-development/widgets/prefab/oauth-prefabs/box",
+      "app-development/widgets/prefab/oauth-prefabs/facebook",
+      "app-development/widgets/prefab/oauth-prefabs/google",
+      "app-development/widgets/prefab/oauth-prefabs/instagram",
+      "app-development/widgets/prefab/oauth-prefabs/linkedin"
+          ]
+      }
     ]
 
   },
