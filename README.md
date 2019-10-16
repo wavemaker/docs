@@ -14,7 +14,7 @@ Later, it will be moved to https://wavemaker.com/learn/
 
 ### Other things to have
 5.	Create a GitHub account if you do not have already. 
-6.	See Markdown cheat sheet to get familiar with editor. 
+6.	See [Markdown cheat sheet](https://guides.github.com/features/mastering-markdown/) to get familiar with editor. 
 7.	Become a contributor first for private repo setting for WaveMaker Docs. 
 
 Note: If you are not a contributor, become a contributor of WaveMaker docs. For this, get permissions from Venu. He will add you as a part of WaveMaker project. 
