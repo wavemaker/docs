@@ -2,11 +2,10 @@
 id: "howtos-documents"
 title: "How-to Topics"
 ---
-Find the how to topics and look for sub-categories specified on the left navigation. 
+Find the how to topics and look for sub-categories under each of the specified category. 
 
 ---
 
-See the how-tos for the each specified category.
 
 |For|See|
 |---|---|

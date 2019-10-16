@@ -40,4 +40,4 @@ How tos: Working Solutions for WaveMaker Features Mobile App Development
 *   [Amazon SNS](/learn/hybrid-mobile/mobile-integrations-amazon-sns/)
 *   [Amazon Mobile Analytics](/learn/hybrid-mobile/mobile-integrations-amazon-mobile-analytics/)
 *   [Push Notifications](/learn/hybrid-mobile/use-push-notification-wm-mobile-app/)
-*   [Invoking Web App APIs in Mobile Apps](/learn/mobile-app-development/invoking-web-app-apis-mobile-apps/)
+*   [Invoking Web App APIs in Mobile Apps](/learn/hybrid-mobile/invoking-web-app-apis-mobile-apps)

@@ -341,21 +341,22 @@
   {
         "How-to-documents": 
           [
-            "howtos-documents",
-            "how-to-app-development",
-            "how-to-mobile-development",
-            "how-to-widgets",
-            "how-to-prefabs"
+            "howtos-documents"                               
+          ],
+
+          "App Development": 
+          [          
+            "how-to-app-development"            
           ],
           
-          "App solution":
+          "- App solution":
           [
             "how-tos/creating-registration-page",
             "how-tos/support-password-encryption",
             "how-tos/error-handling-wavemaker-app"
           ],
 
-          "UI design":
+          "- UI design":
           [
             "responsive-web/web-ui-design",
             "hybrid-mobile/mobile-page-concepts",
@@ -373,14 +374,14 @@
             "how-tos/customizing-theme"
           ],
 
-          "Localization":
+          "- Localization":
           [
             "how-tos/localization-wavemaker-apps",
             "how-tos/localization-error-messages",
             "how-tos/localization-data-table-column-headings"
           ],
 
-          "Security":
+          "- Security":
           [
             "how-tos/saml-integration-onelogin",
             "how-tos/saml-integration-adfs",
@@ -389,7 +390,7 @@
             "how-tos/customizing-post-authentication-handlers"
           ],
 
-          "Databases":
+          "- Databases":
           [
             "how-tos/queries-dynamic-clause",
             "how-tos/connect-azure-sql-server",
@@ -397,12 +398,12 @@
             "how-tos/fetch-default-number100-records-database"
           ],
 
-          "Web services":
+          "- Web services":
           [
             "how-tos/using-post-method-send-data-rest-api" 
           ],
 
-          "Java services":
+          "- Java services":
           [
             "how-tos/sending-email-using-java-service",
             "how-tos/implementing-forgot-password-feature-using-java-service",
@@ -412,19 +413,19 @@
             "how-tos/pre-post-processing-db-service-apis"
           ],
 
-          "Variable":
+          "- Variable":
           [
             "how-tos/using-variables-queries-procedure"
           ],
 
-          "JavaScript":
+          "- JavaScript":
           [
             "how-tos/using-javascript-binding",
             "how-tos/using-javascript-external-url",
             "how-tos/using-javascript-loop-command"
           ],
 
-          "Developer-side":
+          "- Developer-side":
           [
             "how-tos/synchronizing-wavemaker-apps-ides-beta",
             "how-tos/integrating-amazon-cognito-user-authentication",
@@ -432,26 +433,36 @@
             "how-tos/generate-pdf-file-using-jasper-reports"
           ],
 
-          "Mobile gesture":
+          "Mobile Development": 
+          [          
+            "how-to-mobile-development"            
+          ],
+
+          "- Mobile gesture":
           [
             "hybrid-mobile/gesture-support",
             "how-tos/setting-swipe-gestures-list-widget",
             "how-tos/working-pull-refresh"
           ],
 
-          "Mobile widgets":
+          "- Mobile widgets":
           [
             "how-tos/using-search-widget-within-navbar",
             "app-development/widgets/mobile-widgets/barcode-scanner"  
           ],
 
-          "Mobile UI design":
+          "- Mobile UI design":
           [
             "how-tos/splashscreens-icons",
             "how-tos/using-cordova-plugins"
+          ],          
+
+          "Widgets": 
+          [          
+            "how-to-widgets"            
           ],
 
-          "DataTable":
+          "- DataTable":
           [
             "how-tos/view-master-detail-data-records-using-data-table",
             "how-tos/add-master-detail-records-using-data-table",
@@ -460,7 +471,7 @@
             "how-tos/data-table-column-bound-query"
           ],
 
-          "List":
+          "- List":
           [
             "how-tos/list-grouped",
             "how-tos/list-multi-grouped",
@@ -471,7 +482,7 @@
             "how-tos/localization-data-table-column-headings"
           ],
 
-          "Forms":
+          "- Forms":
           [
             "how-tos/using-wizard-cumulative-data-entry-form",
             "how-tos/live-form-tabbed-form",
@@ -485,18 +496,18 @@
             "how-tos/using-wizard-cumulative-data-entry-live-form"
           ],
 
-          "Calendar":
+          "- Calendar":
           [
             "how-tos/calendar-usage-create-event",
             "how-tos/calender-usage-google-calendar-integration"
           ],
 
-          "CheckboxSet":
+          "- CheckboxSet":
           [
             "how-tos/checkboxset-filter-list-data"
           ],
 
-          "FileUpload":
+          "- FileUpload":
           [
             "how-tos/file-upload-widget-operations",
             "how-tos/upload-file-save-database",
@@ -506,12 +517,12 @@
             "how-tos/upload-files-from-live-form-form"
           ],
 
-          "Radioset":
+          "- Radioset":
           [
             "how-tos/radioset-filter-list"
           ],
 
-          "Rating":
+          "- Rating":
           [
             "how-tos/rating-widget-using-static-data",
             "how-tos/rating-widget-using-static-variable",
@@ -519,7 +530,7 @@
             "how-tos/rating-widget-interactive"
           ],
 
-          "Select":
+          "- Select":
           [
             "how-tos/configuring-select-widget-static-list-values",
             "how-tos/configuring-select-widget-variable",
@@ -528,40 +539,40 @@
             "how-tos/configuring-cascading-select"
           ],
 
-          "Charts":
+          "- Charts":
           [
             "how-tos/charts-displaying-user-selection-another-widget",
             "how-tos/charts-handling-dynamic-data",
             "how-tos/charts-custom-data"
           ],
 
-          "Live filter":
+          "- Live filter":
           [
             "how-tos/live-filter-applying",
             "how-tos/live-filter-multiple-values",
             "how-tos/live-filter-range-filter"
           ],
 
-          "Container":
+          "- Container":
           [
             "how-tos/setting-partial-page-content-accordion-within-list",
             "how-tos/setting-partial-page-content-panel-within-list-using-javascript"
           ],
 
-          "Tree":
+          "- Tree":
           [
             "how-tos/tree-use-case-static-variable",
             "how-tos/tree-use-case-java-service",
             "how-tos/tree-use-case-dynamic-tree"
           ],
 
-          "Nav":
+          "- Nav":
           [
             "how-tos/restricting-menu-item-display-based-user-role",
             "app-development/widgets/navigation/nav-basic-usage"
           ],
 
-          "Dropdown":
+          "- Dropdown":
           [
             "how-tos/restricting-menu-item-display-based-user-role",
             "how-tos/implementing-localization-dropdown-menu"
@@ -569,6 +580,7 @@
 
           "Prefabs":
           [
+            "how-to-prefabs",
             "how-tos/create-prefab-using-third-party-ui-widgets",
             "how-tos/create-prefab-using-d3-nvd3-charts",
             "how-tos/create-prefab-using-d3-library-datamaps",
@@ -586,7 +598,7 @@
       "app-development/widgets/widget-library"      
     ],
     
-    "1. Cards": 
+    "- Cards": 
     [ 
       "app-development/widgets/datalive/cards",
       "app-development/widgets/datalive/cards/card-basic-usage",
@@ -598,7 +610,7 @@
       "app-development/widgets/datalive/cards/card-use-cases"
     ],
 
-    "2. Data Table": [ 
+    "- Data Table": [ 
       "app-development/widgets/datalive/data-table",
       "app-development/widgets/datalive/datatable/data-source",
       "app-development/widgets/datalive/datatable/layouts",
@@ -610,7 +622,7 @@
       "app-development/widgets/datalive/datatable/data-table-use-cases"
     ],
 
-    "3. List": [ 
+    "- List": [ 
       "app-development/widgets/datalive/list",
       "app-development/widgets/datalive/list/list-data-source",
       "app-development/widgets/datalive/list/list-templates",
@@ -620,7 +632,7 @@
       "app-development/widgets/datalive/list/list-use-cases"
     ],
 
-    "4. Form": [ 
+    "- Form": [ 
       "app-development/widgets/datalive/form",
       "app-development/widgets/datalive/form/form-data-source",
       "app-development/widgets/datalive/form/form-layouts",
@@ -630,7 +642,7 @@
       "app-development/widgets/datalive/form/form-usage-scenarios"
     ],
 
-    "5. Form Widgets": [ 
+    "- Form Widgets": [ 
       "app-development/widgets/form-widgets/button",
       "app-development/widgets/form-widgets/button-group",
       "app-development/widgets/form-widgets/text",
@@ -656,7 +668,7 @@
       "app-development/widgets/form-widgets/"
     ],
 
-    "6. Live Form": 
+    "- Live Form": 
     [ 
       "app-development/widgets/datalive/live-form",
       "app-development/widgets/datalive/live-form/live-form-data-source",
@@ -668,7 +680,7 @@
       "app-development/widgets/datalive/live-form/liveform-use-cases"
     ],
 
-    "7. Live Filter": 
+    "- Live Filter": 
     [ 
       "app-development/widgets/datalive/live-filter",
       "app-development/widgets/datalive/livefilter/live-filter-data-source",
@@ -680,7 +692,7 @@
       "app-development/widgets/datalive/livefilter/livefilter-use-cases"    
     ],
 
-    "8. Container":
+    "- Container":
     [
           "app-development/widgets/container/accordion",
           "app-development/widgets/container/container", 
@@ -690,7 +702,7 @@
           "app-development/widgets/container/wizard"
     ],
 
-    "9. Basic Widgets":
+    "- Basic Widgets":
     [
       "app-development/widgets/basic/anchor",
       "app-development/widgets/basic/media-widgets",
@@ -709,12 +721,12 @@
       "app-development/widgets/basic/media-widgets"
     ],
 
-    "10. Charts":
+    "- Charts":
     [
       "app-development/widgets/chart/chart-widget"
     ],
 
-    "11. Navigation":
+    "- Navigation":
     [
       "app-development/widgets/navigation/breadcrumb",
       "app-development/widgets/navigation/breadcrumb-use-cases",
@@ -726,14 +738,14 @@
       "app-development/widgets/navigation/popover-basic-usage"
     ],
 
-    "12. Advanced Widgets":
+    "- Advanced Widgets":
     [
       "app-development/widgets/advanced/carousel",
       "app-development/widgets/advanced/login",
       "app-development/widgets/advanced/marquee"
     ],
 
-    "13. Dialog Widgets":
+    "- Dialog Widgets":
     [
       "app-development/widgets/modal-windows-dialogs",
       "app-development/widgets/alert-dialog",

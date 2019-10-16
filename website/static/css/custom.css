@@ -282,7 +282,7 @@ body {
 }
 .toc .toggleNav .navGroup .navGroupCategoryTitle {
 	font-size: 15px;
-	color: #3e3e3e;
+	color: #000;
 	font-weight: 400;
 }
 .navigationSlider .slidingNav ul li.siteNavGroupActive a {
