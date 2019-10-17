@@ -1,6 +1,7 @@
 ---
 title: "Cards - Templates"
 id: ""
+sidebar_label: "Creating a Card"
 ---
 
 Cards elements can be displayed using various templates:

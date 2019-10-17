@@ -52,7 +52,7 @@ const siteConfig = {
         {languages: true},
 		{doc: 'documentation-reference', label: 'Docs '},		
         {doc: 'app-development/widgets/widget-library', label: 'Widgets'},
-		{doc: 'app-development/wavemaker-overview/pre-requisites', label: 'Install'},
+		{doc: 'app-development/wavemaker-overview/pre-requisites', label: 'Enterprise'},
 	//	{doc: 'tutorials', label: 'Tutorials'},		
     //  {href: 'https://www.wavemakeronline.com/studio/10.1.2.7413/docs/index.html', label: 'API Docs'},
 		{doc: 'howtos-documents', label: 'How-to'},

@@ -83,8 +83,8 @@ class Index extends React.Component {
 								<p>Step-by-step tutorials of specific features and applications.</p>
 								<p>
 									Build a fully-functional app<br />
-									<a href="/learn/tutorials/" target="_self" >Get Started</a>
-									<a href="http://www.wavemaker.com/training/" target="_blank" >Training</a>
+									<a href="/learn/tutorials/" target="_self" >Videos</a>
+									<a href="http://www.wavemaker.com/training/" target="_blank" >Get Training</a>
 								</p>
 							</div>
                         </div>
@@ -100,9 +100,8 @@ class Index extends React.Component {
 								<h1>Resources</h1>
 								<p>See scenarios and solutions for using widgets and features.</p>                            
 								<p>
-									Customise your app<br />
-                                    <a href="/learn/howtos-documents" target="_self" >How-to</a>
-									<a href="/learn/howtos-documents" target="_self" >API</a>
+									Customise your app<br />                                    
+									<a href="/learn/howtos-documents" target="_self" >API Docs</a>
 									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>									
 								</p>
 							</div>

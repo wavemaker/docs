@@ -598,7 +598,7 @@
       "app-development/widgets/widget-library"      
     ],
     
-    "- Cards": 
+    "Cards": 
     [ 
       "app-development/widgets/datalive/cards",
       "app-development/widgets/datalive/cards/card-basic-usage",
@@ -610,7 +610,7 @@
       "app-development/widgets/datalive/cards/card-use-cases"
     ],
 
-    "- Data Table": [ 
+    "Data Table": [ 
       "app-development/widgets/datalive/data-table",
       "app-development/widgets/datalive/datatable/data-source",
       "app-development/widgets/datalive/datatable/layouts",
@@ -622,7 +622,7 @@
       "app-development/widgets/datalive/datatable/data-table-use-cases"
     ],
 
-    "- List": [ 
+    "List": [ 
       "app-development/widgets/datalive/list",
       "app-development/widgets/datalive/list/list-data-source",
       "app-development/widgets/datalive/list/list-templates",
@@ -632,7 +632,7 @@
       "app-development/widgets/datalive/list/list-use-cases"
     ],
 
-    "- Form": [ 
+    "Form": [ 
       "app-development/widgets/datalive/form",
       "app-development/widgets/datalive/form/form-data-source",
       "app-development/widgets/datalive/form/form-layouts",
@@ -642,7 +642,7 @@
       "app-development/widgets/datalive/form/form-usage-scenarios"
     ],
 
-    "- Form Widgets": [ 
+    "Form Widgets": [ 
       "app-development/widgets/form-widgets/button",
       "app-development/widgets/form-widgets/button-group",
       "app-development/widgets/form-widgets/text",
@@ -668,7 +668,7 @@
       "app-development/widgets/form-widgets/"
     ],
 
-    "- Live Form": 
+    "Live Form": 
     [ 
       "app-development/widgets/datalive/live-form",
       "app-development/widgets/datalive/live-form/live-form-data-source",
@@ -680,7 +680,7 @@
       "app-development/widgets/datalive/live-form/liveform-use-cases"
     ],
 
-    "- Live Filter": 
+    "Live Filter": 
     [ 
       "app-development/widgets/datalive/live-filter",
       "app-development/widgets/datalive/livefilter/live-filter-data-source",
@@ -692,7 +692,7 @@
       "app-development/widgets/datalive/livefilter/livefilter-use-cases"    
     ],
 
-    "- Container":
+    "Container":
     [
           "app-development/widgets/container/accordion",
           "app-development/widgets/container/container", 
@@ -702,7 +702,7 @@
           "app-development/widgets/container/wizard"
     ],
 
-    "- Basic Widgets":
+    "Basic Widgets":
     [
       "app-development/widgets/basic/anchor",
       "app-development/widgets/basic/media-widgets",
@@ -721,12 +721,12 @@
       "app-development/widgets/basic/media-widgets"
     ],
 
-    "- Charts":
+    "Charts":
     [
       "app-development/widgets/chart/chart-widget"
     ],
 
-    "- Navigation":
+    "Navigation":
     [
       "app-development/widgets/navigation/breadcrumb",
       "app-development/widgets/navigation/breadcrumb-use-cases",
@@ -738,14 +738,14 @@
       "app-development/widgets/navigation/popover-basic-usage"
     ],
 
-    "- Advanced Widgets":
+    "Advanced Widgets":
     [
       "app-development/widgets/advanced/carousel",
       "app-development/widgets/advanced/login",
       "app-development/widgets/advanced/marquee"
     ],
 
-    "- Dialog Widgets":
+    "Dialog Widgets":
     [
       "app-development/widgets/modal-windows-dialogs",
       "app-development/widgets/alert-dialog",
@@ -794,7 +794,7 @@
       "app-development/wavemaker-overview/supported-technologies"
     ],
 
-    "WMO: Online Install":
+    "WMO: Online":
     [  
       "wmo-setup"
     ],

@@ -1,6 +1,7 @@
 ---
 title: "Row Expansion in Data Table"
 id: ""
+sidebar_label: "Row Expansion" 
 ---
 ---
 :::note

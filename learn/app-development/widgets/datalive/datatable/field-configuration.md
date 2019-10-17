@@ -1,6 +1,7 @@
 ---
 title: "Data Table - Field Configuration"
 id: ""
+sidebar_label: "Field Configuration" 
 ---
 ---
 The following features are available from the **Advanced Settings** property of the Data Table.

@@ -1,6 +1,8 @@
 ---
 title: "Data Table - Use Cases"
 id: ""
+sidebar_label: "Use Case"
+---
 ---
 
 - [Basic Table Usage](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage/)
@@ -13,42 +15,3 @@ id: ""
 - [How to export data using a data table](/learn/how-tos/export-data-data-table/)
 - [How to create a dynamic data table](/learn/how-tos/dynamic-data-tables/)
 
-[1\. Live & Data Widgets](/learn/app-development/widgets/widget-library/#data-live)
-
-- [1.1 Cards](/learn/app-development/widgets/datalive/cards/)
-- [1.2 Data Table](/learn/app-development/widgets/datalive/data-table/)
-    - [i. Data Source](/learn/app-development/widgets/datalive/datatable/data-source/)
-        - [○ Variable Source](/learn/app-development/widgets/datalive/datatable/data-source/#variable-source)
-        - [○ Widget Source](/learn/app-development/widgets/datalive/datatable/data-source/#widget-source)
-    - [ii. Layouts](/learn/app-development/widgets/datalive/datatable/layouts/)
-        - [○ Editable with Form as Dialog](/learn/app-development/widgets/datalive/datatable/layouts/#efd)
-        - [○ Editable with Form given below the Table](/learn/app-development/widgets/datalive/datatable/layouts/#efb)
-        - [○ Inline Editable](/learn/app-development/widgets/datalive/datatable/layouts/#edi)
-        - [○ Quick Edit](/learn/app-development/widgets/datalive/datatable/layouts/#edq)
-        - [○ Read-Only with details given below](/learn/app-development/widgets/datalive/datatable/layouts/#rof)
-        - [○ Read-only Simple View](/learn/app-development/widgets/datalive/datatable/layouts/#ros)
-    - [iii. Table Configuration](/learn/app-development/widgets/datalive/datatable/table-configuration/)
-        - [○ Search & Filter](/learn/app-development/widgets/datalive/datatable/table-configuration/#search-n-filter)
-        - [○ Sorting](/learn/app-development/widgets/datalive/datatable/table-configuration/#sorting)
-        - [○ Selection](/learn/app-development/widgets/datalive/datatable/table-configuration/#selection)
-        - [○ Pagination](/learn/app-development/widgets/datalive/datatable/table-configuration/#pagin)
-        - [○ Export Data](/learn/app-development/widgets/datalive/datatable/table-configuration/#export-data)
-        - [○ Message](/learn/app-development/widgets/datalive/datatable/table-configuration/#message)
-        - [○ Row Styling](/learn/app-development/widgets/datalive/datatable/table-configuration/#row-style)
-    - [iv. Field Configuration](/learn/app-development/widgets/datalive/datatable/field-configuration/)
-        - [○ Column Grouping](/learn/app-development/widgets/datalive/datatable/field-configuration/#grouping)
-        - [○ View Mode](/learn/app-development/widgets/datalive/datatable/field-configuration/#view-mode)
-        - [○ Edit Mode](/learn/app-development/widgets/datalive/datatable/field-configuration/#edit-mode)
-    - [v. Actions](/learn/app-development/widgets/datalive/datatable/actions/)
-        - [○ Table Specific Actions](/learn/app-development/widgets/datalive/datatable/actions/#table-actions)
-        - [○ Row Specific Actions](/learn/app-development/widgets/datalive/datatable/actions/#row-actions)
-        - [○ Actions Visibility](/learn/app-development/widgets/datalive/datatable/actions/#actions-visibility)
-        - [○ Actions Layout](/learn/app-development/widgets/datalive/datatable/actions/#actions-layout)
-    - [vi. Events & Methods](/learn/app-development/widgets/datalive/datatable/events-methods/)
-        - [○ Events](/learn/app-development/widgets/datalive/datatable/datatable-events-methods/#events)
-        - [○ Methods](/learn/app-development/widgets/datalive/datatable/datatable-events-methods/#methods)
-    - [vii.Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
-- [1.3 Form](/learn/app-development/widgets/datalive/form/)
-- [1.4 List](/learn/app-development/widgets/datalive/list/)
-- [1.5 Live Form](/learn/app-development/widgets/datalive/live-form/)
-- [1.6 Live Filter](/learn/app-development/widgets/datalive/live-filter/)

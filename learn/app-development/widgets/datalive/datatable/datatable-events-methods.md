@@ -1,9 +1,10 @@
 ---
 title: "Data Table - Events & Methods"
 id: ""
+sidebar_label: "Events & Methods"
 ---
-
-### Events
+---
+## Events
 
 Data Table behavior can be customized with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..
 
@@ -352,82 +353,81 @@ Following is the flow of events for each action triggered on the Data Table.
 | On Click of save in insert mode | [![](/learn/assets/saveinsert_event1.png)](/learn/assets/saveinsert_event1.png) If before row insert returns false, operation is stopped and next events are not fired |
 | On Click of delete button | [![](/learn/assets/delete_event1.png)](/learn/assets/delete_event1.png) If before row delete returns false, operation is stopped and next events are not fired |
 
-### Methods
-
+## Methods
+---
 Data Grid has few methods exposed on widget scope which can be accessed via JavaScript. For the following script samples, we are considering the hrdb Department table. DepartmentGrid is bound to the Database CRUD Variable corresponding to the Department table.
 
 - To refresh the data in data table with the currently applied filters and sort:
-    
-    Page.Widgets.\[gridName\].refreshData();
-    
+```    
+Page.Widgets.\[gridName\].refreshData();
+```   
 - To clear the filters applied on data table:
-    
-    Page.Widgets.\[gridName\].clearFilter();
-    
+```    
+Page.Widgets.\[gridName\].clearFilter();
+```    
 - To focus on a field in edit mode(applicable to inline and quick edit data tables alone):
-    
-    Page.Widgets.\[gridname\].formfields.\[columnname\].focus();
-    //This will focus the input on \[columnname\] field
-    
+```    
+Page.Widgets.\[gridname\].formfields.\[columnname\].focus();
+//This will focus the input on \[columnname\] field
+```   
 - To change a property of a column:
-    
-    Page.Widgets.\[gridname\].columns.\[columnname\].displayName = ‘Deptarment Id’; 
-    //Will change the display name of specified column to ‘Department Id’.
-    
+```
+Page.Widgets.\[gridname\].columns.\[columnname\].displayName = ‘Deptarment Id’; 
+//Will change the display name of specified column to ‘Department Id’.
+```    
 - To force re-render Data Table:
-    
-    Page.Widgets.\[gridname\].redraw(true); 
-    //Will force re-render data table.
-    
+```    
+Page.Widgets.\[gridname\].redraw(true); 
+//Will force re-render data table.
+```    
 - To change a property of a column:
-    
+```
     Page.Widgets.\[gridname\].column.\[columnname\].sortable = false; 
     // disables the sort property on the data table 
     //Note: you can replace 'sortable' with any column property listed in the advanced settings.
-    
+```    
 - To change value of a field which is in edit mode (applicable to inline and quick edit data tables alone):
-    
+```    
     Page.Widgets.\[gridname\].formfields.\[columnname\].value = 'Engineering 1'; 
     // Sets ‘Engineering 1’ to the specified column edit field 
     //Note: This will work only on click of edit on a row.
-    
+```    
 - To retrieve value of a field which is in edit mode (applicable to inline and quick edit data tables alone):
-    
+```    
     console.log(Page.Widgets.\[gridname\].formfields.\[columnname\].getProperty('value')); 
     // This will display the specified column field value in the console. 
     //Note: This will work only on click of edit on a row.
-    
+```    
 - To select a row:
-    
+```    
     Page.Widgets.\[gridname\].selectItem(1); 
     // The parameter can be index or object of row
-    
+```    
 - To deselect a row: Note: deselect will work only for data table with multiselect enabled on it.
-    
+```    
     Page.Widgets.\[gridname\].deselectItem(1);
     //the parameter can be index or object of row (data bound to row), 
     //For grid actions user can send $row (which is row data) , 
     //that can be sent as an argument to this method.
-    
+```    
 - Working with selected item:
-    
+```    
     Page.Widgets.\[gridname\].selecteditem = 2; 
     //Selects the third row or item          
     Page.Widgets.\[gridname\].selecteditem = \[2, 3\]; 
     //Selects the third and fourth row/item 
     Page.Widgets.\[gridname\].selecteditem = \[\]; 
     //Deselects the existing rows or items
-    
+```    
 - Set filter mode:
-    
+```    
     Page.Widgets.\[gridname\].filtermode = ‘search’; 
     // To set filter mode as search
     Page.Widgets.\[gridname\].filtermode = ‘multicolumn’; 
     //To set filter mode as multi column
-    
+```    
      
-
-### Inline edit for service variable
+## Inline edit for service variable
 
 Inline editing can be enabled for a Data Grid when bound to a Web Service/Java Service Variable
 
@@ -436,7 +436,8 @@ Inline editing can be enabled for a Data Grid when bound to a Web Service/Java S
 - Select the New, Edit and Delete actions.
 - As the Data Table is bound to Variable based on APIs exposed by the web service/ java service which returns list of records, for edit, update or delete user should map it to respective variables. This can be achieved through events on data table.
 - To _On Record Insert_:
-    
+
+```
     Page.\[gridName\]Rowinsert = function($event, widget, $rowData) {
          //$rowData: $rowData has the data of the row being inserted
          //$rowData can be modified here
@@ -449,9 +450,9 @@ Inline editing can be enabled for a Data Grid when bound to a Web Service/Java S
            widget.refreshData();
          });
       };
-    
+```    
 - To On Record Update:
-    
+```    
     Page.\[gridName\]Rowupdate = function($event, widget, $rowData) {
         //$rowData: $rowData has the data of the row being updated
         //$rowData can be modified here
@@ -464,9 +465,9 @@ Inline editing can be enabled for a Data Grid when bound to a Web Service/Java S
             widget.refreshData();
           });
       };
-    
+```    
 - On Record Delete:
-    
+```    
     Page.\[gridName\]Rowdelete = function($event, widget, $rowData) {
          //$rowData: $rowData has the data of the row being deleted
          //Set the input as $rowData for variable
@@ -477,34 +478,34 @@ Inline editing can be enabled for a Data Grid when bound to a Web Service/Java S
              widget.refreshData();
           });
        };
-    
+```    
 
 Methods: Below methods can be used for inline editing (applicable to inline and quick edit data tables alone)
 
 - To edit a row
-    
+```    
     Page.Widgets.\[gridname\].editRow(); 
     // Selected row will be edited
-    
+```    
 - To add a new row
-    
+```    
     Page.Widgets.\[gridname\].addRow();
-    
+```    
 - To save a row
-    
+```    
     Page.Widgets.\[gridname\].saveRow();
-    
+```    
 - To cancel a row edit
-    
+```    
     Page.Widgets.\[gridname\].cancelRow();
-    
+```    
 - To delete a row
-    
+```    
     Page.Widgets.\[gridname\].deleteRow();
-    
+```    
 - To hide the edit row and go back to view mode
-    
+```    
     Page.Widgets.\[gridname\].hideEditRow();
-    
+```    
      
 

@@ -1,6 +1,7 @@
 ---
 title: "Data Table - Basic Usage"
 id: ""
+sidebar_label: "Basic Usage"
 ---
 
 ### Overview

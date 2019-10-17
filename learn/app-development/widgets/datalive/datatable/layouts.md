@@ -1,6 +1,7 @@
 ---
 title: "Data Table - Layouts"
 id: ""
+sidebar_label: "Layouts"
 ---
 ---
 Data Table can be editable or read-only with editable options being inline or dialog-based. These options are available as **Layout options**: **NOTE:** Editable options are available only for Database CRUD Variables; as other variables do not support CRUD operations.

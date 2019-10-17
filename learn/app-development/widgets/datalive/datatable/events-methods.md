@@ -1,6 +1,7 @@
 ---
 title: "Live Form - Events & Methods"
 id: ""
+sidebar_label: "Events & Methods"
 ---
 
 # Events
