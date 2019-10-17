@@ -5,20 +5,6 @@ id: ""
 
 Cards elements can be displayed using various templates:
 
-1. [Profile Cards](#profile) which include:
-    - [Business Card](#business),
-    - [Contact Card](#contact),
-    - [Designation Card](#design), and
-    - [I Card](#i)
-2. [Feed Cards](#feed) which include:
-    - [Media Post](#media),
-    - [News Post](#news), and
-    - [Personal Spotlight](#spot)
-3. [Product Cards](#product) which include:
-    - [Product Inventory](#invent),
-    - [Product Overview](#overview), and
-    - [Product Thumbnail](#thumb)
-
 ## Profile Cards
 
 ### Business Card

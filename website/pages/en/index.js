@@ -97,12 +97,13 @@ class Index extends React.Component {
 								<img src="/learn/img/03-Resources.svg" alt=""/>
                             </div>
 							<div>
-								<h1>How-tos</h1>
+								<h1>Resources</h1>
 								<p>See scenarios and solutions for using widgets and features.</p>                            
 								<p>
 									Customise your app<br />
-                                    <a href="/learn/howtos-documents" target="_self" >How-to Docs</a>
-									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>									                                
+                                    <a href="/learn/howtos-documents" target="_self" >How-to</a>
+									<a href="/learn/howtos-documents" target="_self" >API</a>
+									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>									
 								</p>
 							</div>
                         </div>

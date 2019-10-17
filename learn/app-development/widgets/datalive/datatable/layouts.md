@@ -2,20 +2,12 @@
 title: "Data Table - Layouts"
 id: ""
 ---
-
+---
 Data Table can be editable or read-only with editable options being inline or dialog-based. These options are available as **Layout options**: **NOTE:** Editable options are available only for Database CRUD Variables; as other variables do not support CRUD operations.
 
-1. Editable Data Table with Forms:
-    - [Editable with Form as Dialog](#efd)
-    - [Editable with Form given below the Table](#efb)
-2. Editable Data Table:
-    - [Inline Editable](#edi)
-    - [Quick Edit](#edq)
-3. Read-Only Data Tables:
-    - [Read-Only with details given below in a Form layout](#rof)
-    - [Read-only Simple View](#ros)
-
-### Editable with Form as Dialog
+# Editable Data Table with Forms
+---
+## Editable with Form as Dialog
 
 A Data Table Layout for data viewing and a Dialog Form for User Data Entry
 
@@ -25,7 +17,7 @@ A Data Table Layout for data viewing and a Dialog Form for User Data Entry
 
 <iframe width="100%" height="500" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Main">Example of Grid with dialog form</iframe>
 
-### Editable with Form given below the Table
+## Editable with Form given below the Table
 
 - This is very similar to the first template except that the Form for editing is given below the Table.
 - Select any row for editing
@@ -33,14 +25,17 @@ A Data Table Layout for data viewing and a Dialog Form for User Data Entry
 
 <iframe width="100%" height="925" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/EditableDataGridWithInline">Example of Editable Grid with inline form</iframe>
 
-### Inline Editable
+# Editable Data Table
+---
+
+## Inline Editable
 
 - A Table Layout with Edit/Delete/New option
 - By default when NEW is clicked to add a new row, the new row will be appended to the bottom of the table. You can change this setting from ADVANCED SETTINGS and set the Form Position property to Top.
 
 <iframe width="100%" height="525" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/EditableDataGrid">Example of Editable Grid</iframe>
 
-### Quick Edit
+## Quick Edit
 
 - A Table Layout to enable quick editing of rows in a Data Table using keyboard events.
 - The following keys can be used:
@@ -52,11 +47,14 @@ A Data Table Layout for data viewing and a Dialog Form for User Data Entry
     - Use Delete key to delete the row currently in edit mode
 - In the Quick mode, always a new row will be shown in the data table. However, the position will depend upon the form position property.**Note:** _Quick edit template will not have new button action._
 
-### Read-Only with Details Below
+# Read-Only Data Tables
+---
+
+## Read-Only with Details Below
 
 - This Data Table provides for Read Only View of the existing Data
 
-### Read-Only Simple View
+## Read-Only Simple View
 
 - This Data Table provides for Read Only View of the existing Data
 
