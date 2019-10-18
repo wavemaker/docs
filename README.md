@@ -13,7 +13,7 @@ Later, it will be moved to https://wavemaker.com/learn/.
 4.	Visual Studio Code
 
 ### Other things to have
-5.	Login to your GitHub account. Sign up, if you do not have already. 
+5.	Login to your GitHub account. [Sign up](https://github.com/join?), if you do not have an account with GitHub. 
 6.	See [Markdown cheat sheet](https://guides.github.com/features/mastering-markdown/) to get familiar with the editor. 
 7.	Become a contributor for WaveMaker Docs for private repo.
 
@@ -24,16 +24,15 @@ Note: If you are not a contributor, become a contributor of WaveMaker docs. For 
 2.	Click Fork and clone to get a copy to your local machine. 
 3.	Clone using GitHub Desktop and select the local location to work with.
 4.	Open GitBash
-    a.	Go to copied location by using the following command: 
-
+a.	Go to copied location by using the following command: 
 ```
 cd Documents/GitHub/docs/Website
 ```
-    b.	Install the package to your local
+b.	Install the package to your local
 ```
 npm install
 ```
-    c.	Run the site using the following command. 
+c.	Run the site using the following command. 
 ```
 npm start
 ```
