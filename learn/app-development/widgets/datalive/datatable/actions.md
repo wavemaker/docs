@@ -3,7 +3,7 @@ title: "Data Table - Actions"
 id: ""
 sidebar_label: "Actions"
 ---
-
+---
 Data Table is capable of performing CRUD operations on the underlying Database Source. This functionality can be achieved through the table and record level actions like adding, editing and deleting records. In addition, custom actions can also be defined as per the requirements.
 
 Data Table actions include actions at the table-level and the row-level. These options are available from the **Actions** tab of the **Advanced Settings** property of the Data Table.

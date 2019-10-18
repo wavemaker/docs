@@ -1,10 +1,9 @@
 ---
 title: "Cards Widget"
 id: "cards"
-sidebar_label: "Cards Overview"
+sidebar_label: "Overview"
 ---
 ---
-
 **Cards** represents view of items that are rendered responsively across a wide range of mobile devices and screen sizes. Cards are the popular UI elements used in the implementation of Google Now; item details on online shopping websites and many more modern mobile and web apps.
 
 Cards data can be obtained from various data sources like database, queries or web services through variables. Cards templates have a picture and content widgets which can be bound to the fields from the data source. Few of these templates have provision to trigger events via default action buttons.

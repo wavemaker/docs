@@ -1,9 +1,9 @@
 ---
 title: "Cards - Templates"
 id: ""
-sidebar_label: "Creating a Card"
+sidebar_label: "Templates"
 ---
-
+---
 Cards elements can be displayed using various templates:
 
 ## Profile Cards

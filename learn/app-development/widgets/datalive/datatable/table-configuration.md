@@ -3,8 +3,10 @@ title: "Data Table Configuration"
 id: ""
 sidebar_label: "Configuration" 
 ---
-
-You can access the following features from the **Advanced Settings** property of a Data Table.
+---
+:::tip
+Access to the following features from the **Advanced Settings** property of a Data Table.
+:::
 
 ### Search & Filter Configuration
 

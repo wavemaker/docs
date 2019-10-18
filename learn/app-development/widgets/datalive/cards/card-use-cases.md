@@ -1,6 +1,8 @@
 ---
 title: "Cards - Use  Cases"
 id: ""
+sidebar_label: "Use Cases"
+---
 ---
 
 You can use Card Widget in many different ways.  The following links talk about the different use cases:

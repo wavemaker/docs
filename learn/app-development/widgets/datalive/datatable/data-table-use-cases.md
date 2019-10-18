@@ -1,7 +1,7 @@
 ---
 title: "Data Table - Use Cases"
 id: ""
-sidebar_label: "Use Case"
+sidebar_label: "Use Cases"
 ---
 ---
 

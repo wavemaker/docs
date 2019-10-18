@@ -1,11 +1,12 @@
 ---
 title: "List - Data Source"
 id: ""
+sidebar_label: "Data Source"
 ---
-
+---
 The first step in configuring a list is to define the data that needs to be displayed. This data can be in the form of Services or Widget or Existing Variable.
 
-### Variable Source
+## Variable Source
 
 Variable binding will allow you to
 
@@ -19,7 +20,7 @@ You can either create a new variable or use existing variables. The behavior of 
 - _Update data on input change_ - this property defines when the data displayed will be refreshed. When enabled the data is reloaded whenever the input to the Variable (in the form of filter fields for Live and parameter values for Database APIs Variable) changes;
 - _Request data on page load_ - enabling this property will ensure that the data within the data table is loaded at the time of page load.
 
-### Widget Source
+## Widget Source
 
 Widgets can be a source of data in some cases. For example, you might want to display the results from a Live Filter or more details of a selected row/item from a Data Table or another List. Widget option will allow you to achieve this. Selecting Widget as the data source will display the various options available.
 

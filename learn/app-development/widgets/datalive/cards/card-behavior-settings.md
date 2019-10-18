@@ -1,6 +1,8 @@
 ---
 title: "Cards - Behavior Settings"
 id: ""
+sidebar_label: "Behavior Settings"
+---
 ---
 
 1. **Selection Limit**: This property sets the maximum items that can be chosen at run-time. It also determines whether the list can have single or multiple items selected. This property can be bound to a variable to determine the selection limit at run-time.

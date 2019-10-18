@@ -1,6 +1,7 @@
 ---
 title: "Data Table Widget"
 id: "data-table"
+sidebar_label: "Overview"
 ---
 ---
 :::note

@@ -4,7 +4,9 @@ id: ""
 sidebar_label: "Field Configuration" 
 ---
 ---
+:::note
 The following features are available from the **Advanced Settings** property of the Data Table.
+:::
 
 ## Configure column display options
 

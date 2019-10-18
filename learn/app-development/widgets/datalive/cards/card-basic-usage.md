@@ -1,6 +1,7 @@
 ---
 title: "Creating Cards"
 id: "card-basic-usage"
+sidebar_label: "Creating a Card"
 ---
 ---
 ## Creating Employee Cards
@@ -87,7 +88,7 @@ Click on Preview button to test run the app.
 [![](https://www.wavemaker.com../../../../assets/cards_basic_run.png)](https://www.wavemaker.com../../../../assets/cards_basic_run.png)
 
 
-## See More
+## See Also
 
 [Cards Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)  
 [Cards Basic Usage](/learn/app-development/widgets/datalive/cards/card-basic-usage/)  

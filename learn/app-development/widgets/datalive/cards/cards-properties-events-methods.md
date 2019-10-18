@@ -1,9 +1,10 @@
 ---
 title: "Cards - Properties, Events & Methods"
 id: ""
+sidebar_label: "Properties, Events & Methods"
 ---
-
-# Properties
+---
+## Properties
 
 Card Widget is contained within a List and as such, you can set the [List Properties](/learn/app-development/widgets/datalive/list/list-properties-events-methods/#properties) too.
 
