@@ -5,7 +5,7 @@ id: ""
 Find what's new in WaveMaker. See information related to bug fixes, new features and improvements from WaveMaker. 
 
 ---
-WaveMaker is constantly working on bringing new features and improvements to the product. Follow our [team blog](https://www.wavemaker.com/blog/) to see what's happening in WaveMaker. If you notice a bug, report to us at [support](mailto:support@wavemaker.com). The fixes will be specified in the release notes. 
+WaveMaker is constantly working on bringing new features and improvements to the product. Follow our [team blog](/learn/blog) to see what's happening in WaveMaker. If you notice a bug, report to us at [support](mailto:support@wavemaker.com). The fixes will be specified in the release notes. 
 
 ## [Newest Release Details]()
 ---

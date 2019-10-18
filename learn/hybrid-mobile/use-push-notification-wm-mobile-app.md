@@ -98,7 +98,7 @@ For registration, app and backend server have to provide some information to pus
         - **OS** to _deviceInfo variable_ and
         - **userName** from _loggedInUser_ variable. [![](/learn/assets/push_serviceVar.png)](/learn/assets/push_serviceVar.png)
         - DeviceId will be bound on successful push registration which is written in app.js.
-        ```
+```
         var push;
 
 function enablePush() {
@@ -149,19 +149,25 @@ App.onAppVariablesReady = function() {
         enablePush();
     }
 };
-        ```
-7. On every successful login, register the device for receiving the push notification. For this, [open the Actions dialog](http://[supsystic-show-popup id=105]) and select the pre-defined **loginAction**. [![](/learn/assets/push_loginAct.png)](/learn/assets/push_loginAct.png) Go to **Events** tab and write the _JavaScript function_ on loginVariable success. [![](/learn/assets/push_loginAct_JS.png)](/learn/assets/push_loginAct_JS.png)
+```
+7. On every successful login, register the device for receiving the push notification. For this, [open the Actions dialog](http://[supsystic-show-popup id=105]) and select the pre-defined **loginAction**. [![](/learn/assets/push_loginAct.png)](/learn/assets/push_loginAct.png) Go to **Events** tab and write the _JavaScript function_ on loginVariable success. 
+```
+App.loginActiononSuccess = function(variable, data, options) {
+    //On successful login, enable push
+    enablePush();
+};
+```
 8. If user is already logged-in, then enable push.
 9. Initialize the plugin to get the deviceId, and start listening to all the events when notification is received. Store the device Id in DB that we receive on successful registration event.
-11. On the Main page, drag and drop a text widget and button as shown below. [![](/learn/assets/push_UI.png)](/learn/assets/push_UI.png)
-12. [Create a service variable](http://[supsystic-show-popup id=105]) named **sendNotification** which will call notify method of _PushService_ [![](/learn/assets/push_serviceVar2.png)](/learn/assets/push_serviceVar2.png)
+10. On the Main page, drag and drop a text widget and button as shown below. [![](/learn/assets/push_UI.png)](/learn/assets/push_UI.png)
+11. [Create a service variable](http://[supsystic-show-popup id=105]) named **sendNotification** which will call notify method of _PushService_ [![](/learn/assets/push_serviceVar2.png)](/learn/assets/push_serviceVar2.png)
     - Bind input field message to the text widget datavalue and currentUser to the name field of loggedInUser variable [![](/learn/assets/push_serviceVar2_input.png)](/learn/assets/push_serviceVar2_input.png)
-13. On Send button tap, invoke the sendNotification service variable created above.Enter the text and click on button, push message will be delivered to the devices. [![](/learn/assets/push_sendButton.png)](/learn/assets/push_sendButton.png)
-14. Create a service variable named UnregisterPush which will call unregisterDevice method of PushService [![](/learn/assets/push_serviceVar3.png)](/learn/assets/push_serviceVar3.png)
+12. On Send button tap, invoke the sendNotification service variable created above.Enter the text and click on button, push message will be delivered to the devices. [![](/learn/assets/push_sendButton.png)](/learn/assets/push_sendButton.png)
+13. Create a service variable named UnregisterPush which will call unregisterDevice method of PushService [![](/learn/assets/push_serviceVar3.png)](/learn/assets/push_serviceVar3.png)
     - Bind the input field deviceId to bind:deviceToken, which is in app.js, os to deviceInfo variable and userName to loggedInUserName variable as shown below. [![](/learn/assets/push_serviceVar3_input.png)](/learn/assets/push_serviceVar3_input.png)
     - On success of UnregisterPush, invoke Logout Action. [![](/learn/assets/push_serviceVar3_event.png)](/learn/assets/push_serviceVar3_event.png)
-15. Add an anchor in mobile navbar, on tap of this link invoke UnregisterPush service variable.[![](/learn/assets/push_UI_anchor.png)](/learn/assets/push_UI_anchor.png)
-16. Add a custom plugin in ‘Build for Android’ dialog [![](/learn/assets/push_plugin.png)](/learn/assets/push_plugin.png)
+14. Add an anchor in mobile navbar, on tap of this link invoke UnregisterPush service variable.[![](/learn/assets/push_UI_anchor.png)](/learn/assets/push_UI_anchor.png)
+15. Add a custom plugin in ‘Build for Android’ dialog [![](/learn/assets/push_plugin.png)](/learn/assets/push_plugin.png)
     - Mention ‘git’ as source, ‘phonegap-plugin-push’ as plugin name and ‘[https://github.com/wavemaker/phonegap-plugin-push.git#5817a63](https://github.com/wavemaker/phonegap-plugin-push.git#5817a63)’ as spec. Then, click ‘Add’ button and ‘Save’ button.
 
 ## App Usage
