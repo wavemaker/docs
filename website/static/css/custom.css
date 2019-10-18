@@ -94,6 +94,10 @@ body {
 .banner .column {
     padding: 1.5em;
 }
+.banner h1 {
+	margin-top: .85em;
+}
+
 .banner .column:last-child {
 	padding-top: 2em;
 }
