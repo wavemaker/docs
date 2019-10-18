@@ -9,7 +9,7 @@ Assume, an app is used to share tasks across users in a team. A user is assigned
 
 [![](/learn/assets/push_1.png)](/learn/assets/push_1.png)
 
-# Architecture
+## Architecture
 
 [![](/learn/assets/push_arch.png)](/learn/assets/push_arch.png) First, both mobile app and server have to register with APNS / FCM.
 
@@ -24,11 +24,11 @@ Assume, an app is used to share tasks across users in a team. A user is assigned
 2. Then, a push notification request is sent to the corresponding user devices (identified with registration tokens) via FCM / APNS.
 3. FCM/ APNS will send push notification to all the devices which have this app installed.
 
-# App Example
+## App Example
 
 A Cordova plugin called _phonegap-plugin-push_ can be used by the app to create a message to be broadcast to all logged-in users.
 
-# Prerequisites
+## Prerequisites
 
 For registration, app and backend server have to provide some information to push notification service so that they can be verified. These credentials have to be obtained first. NOTE: In a WaveMaker application, ‘Application Id’ in ‘Build for Android’ dialog is used as the App Id. [![](/learn/assets/push_prereq1.png)](/learn/assets/push_prereq1.png) **Android Prerequisites:** Follow below steps to achieve the Android prerequisites:
 
@@ -61,7 +61,7 @@ For registration, app and backend server have to provide some information to pus
     2. Continue with the next steps
     3. Download the profile. Install the provisioning profile on your Mac by double-clicking it.
 
-# App Creation
+## App Creation
 
 1. From File Explorer open **pom.xml** and add _firebase-admin_ and javapns_\-jdk16_ as dependencies as shown below:
     
@@ -97,11 +97,62 @@ For registration, app and backend server have to provide some information to pus
         - **deviceId** to _bind:deviceToken_,
         - **OS** to _deviceInfo variable_ and
         - **userName** from _loggedInUser_ variable. [![](/learn/assets/push_serviceVar.png)](/learn/assets/push_serviceVar.png)
-        - DeviceId will be bound on successful push registration which is written in app.js [![](/learn/assets/push_appjs.png)](/learn/assets/push_appjs.png)
+        - DeviceId will be bound on successful push registration which is written in app.js.
+        ```
+        var push;
+
+function enablePush() {
+    // Enable push only if this is invoked inside mobile with push notification plugin..
+    if (!push && window.cordova && PushNotification) {
+        // Initialize the plugin
+        push = PushNotification.init({
+            android: {
+                forceShow: true,
+                vibrate: true
+            },
+            ios: {
+                alert: true,
+                sound: true
+            }
+        });
+
+        push.on('registration', function(data) {
+            // On Successful registration with push notification center, save the registration id on our backend.
+            var pushVar = App.Variables.RegisterPush;
+            if (App.deviceToken === data.registrationId) {
+                return;
+            }
+            App.deviceToken = data.registrationId;
+            pushVar.setInput({
+                'deviceId': App.deviceToken
+            });
+
+            pushVar.invoke();
+        });
+
+        push.on('notification', function(data) {
+            console.log("notification: %O", data);
+        });
+
+    }
+}
+/* perform any action with the variables inside this block(on-page-load) */
+
+App.onAppVariablesReady = function() {
+    /*
+     * variables can be accessed through 'App.Variables' property here
+     * e.g. App.Variables.staticVariable1.getData()
+     */
+
+    //If the user is already logged-in, then enable push
+    if (App.Variables.loggedInUser.dataSet.name) {
+        enablePush();
+    }
+};
+        ```
 7. On every successful login, register the device for receiving the push notification. For this, [open the Actions dialog](http://[supsystic-show-popup id=105]) and select the pre-defined **loginAction**. [![](/learn/assets/push_loginAct.png)](/learn/assets/push_loginAct.png) Go to **Events** tab and write the _JavaScript function_ on loginVariable success. [![](/learn/assets/push_loginAct_JS.png)](/learn/assets/push_loginAct_JS.png)
 8. If user is already logged-in, then enable push.
 9. Initialize the plugin to get the deviceId, and start listening to all the events when notification is received. Store the device Id in DB that we receive on successful registration event.
-10. Download the complete [code snippet from here](/learn/assets/push_appjs.txt) and use it in the _app.js_ file.
 11. On the Main page, drag and drop a text widget and button as shown below. [![](/learn/assets/push_UI.png)](/learn/assets/push_UI.png)
 12. [Create a service variable](http://[supsystic-show-popup id=105]) named **sendNotification** which will call notify method of _PushService_ [![](/learn/assets/push_serviceVar2.png)](/learn/assets/push_serviceVar2.png)
     - Bind input field message to the text widget datavalue and currentUser to the name field of loggedInUser variable [![](/learn/assets/push_serviceVar2_input.png)](/learn/assets/push_serviceVar2_input.png)
@@ -113,26 +164,13 @@ For registration, app and backend server have to provide some information to pus
 16. Add a custom plugin in ‘Build for Android’ dialog [![](/learn/assets/push_plugin.png)](/learn/assets/push_plugin.png)
     - Mention ‘git’ as source, ‘phonegap-plugin-push’ as plugin name and ‘[https://github.com/wavemaker/phonegap-plugin-push.git#5817a63](https://github.com/wavemaker/phonegap-plugin-push.git#5817a63)’ as spec. Then, click ‘Add’ button and ‘Save’ button.
 
-# App Usage
+## App Usage
 
 - The plugin that is mentioned above uses ‘hook’ concept of Cordova for Android build. But, Hooks are not supported in _build.phonegap.com_. So, Android builds fail when this plugin is added in _build.phonegap.com_. But, Android app can be built using the using **Build For Android** menu option inside WaveMaker studio or through a manual build. [![](/learn/assets/push_build.png)](/learn/assets/push_build.png)
 - iOS app can be created either through a manual build or through build.phonegap.com. Please make sure that provision profile that is created above (with app id that has push notifications enabled) should be used
 - Build and test the app. Login in one device with user/user credentials. Login to another device with admin/admin credentials. If user sends a message, the other user should get a push notification.
 
-# Conclusion
+## Conclusion
 
 Our aim is to show how this plugin can be integrated into WaveMaker and how to create push notifications. This integration logic can be used at various places as per your use-case. For complete features of the plugin, please visit the [plugin site](https://github.com/wavemaker/phonegap-plugin-push/blob/master/docs/API.md).
 
-B.4 Mobile Integrations
-
-- [4.1 Amazon SNS](/learn/hybrid-mobile/mobile-integrations-amazon-sns/)
-- [4.2 Amazon Mobile Analytics](/learn/hybrid-mobile/mobile-integrations-amazon-mobile-analytics/)
-- [4.3 Push Notifications](#)
-    - [i. Overview](#overview)
-    - [ii. Architecture](#architecture)
-    - [iii. App Creation](#app)
-        - [Prerequisites](#prerequisites)
-        - [App Creation](#creation)
-    - [iv. App Usage](#usage)
-    - [v. Conclusion](#conclusion)
-- [4.4 Invoking Web App API’s in Mobile Apps](/learn/mobile-app-development/invoking-web-app-apis-mobile-apps/)

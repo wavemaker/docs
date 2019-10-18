@@ -794,11 +794,6 @@
       "app-development/wavemaker-overview/supported-technologies"
     ],
 
-    "WMO: Online":
-    [  
-      "wmo-setup"
-    ],
-
     "WME: Enterprise Install": 
     [
       "installation/wavemaker-enterprise-setup-guide",
@@ -811,7 +806,13 @@
       "installation/wme-setup-guide-adding-capacity",
       "installation/wme-setup-guide-maintenance",
       "installation/wme-setup-guide-upgrading"
+    ],
+
+    "WMO: Online":
+    [  
+      "wmo-setup"
     ]
+
   },
 
   "Release Notes": 

@@ -57,7 +57,7 @@ const siteConfig = {
     //  {href: 'https://www.wavemakeronline.com/studio/10.1.2.7413/docs/index.html', label: 'API Docs'},
 		{doc: 'howtos-documents', label: 'How-to'},
 		{doc: 'wavemaker-release-notes', label: 'Releases'},
-    //  {page: 'help', label: 'Help'},
+    //  {blog: true, label: 'Team Blog'},
         {href: 'https://www.wavemakeronline.com/login/login', label: 'Login'}
     ],
 
@@ -122,10 +122,12 @@ const siteConfig = {
     docsSideNavCollapsible: true,
 
     // Show documentation's last contributor's name.
-    enableUpdateBy: false,
+    enableUpdateBy: true,
 
     // Show documentation's last update time.
-    enableUpdateTime: false,
+    enableUpdateTime: true,
+	
+	blogSidebarCount: 'ALL',
 
     markdownPlugins: [
         require('remarkable-admonitions')({icon: 'svg-inline'})

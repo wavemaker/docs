@@ -79,11 +79,11 @@ class Index extends React.Component {
                                 <img src="/learn/img/02-Tutorials.svg" alt=""/>
                             </div>
 							<div>
-								<h1>Tutorials</h1>
+								<h1>Beginners</h1>
 								<p>Step-by-step tutorials of specific features and applications.</p>
 								<p>
 									Build a fully-functional app<br />
-									<a href="/learn/tutorials/" target="_self" >Videos</a>
+									<a href="/learn/tutorials/" target="_self" >Tutorials</a>
 									<a href="http://www.wavemaker.com/training/" target="_blank" >Get Training</a>
 								</p>
 							</div>
@@ -101,7 +101,7 @@ class Index extends React.Component {
 								<p>See scenarios and solutions for using widgets and features.</p>                            
 								<p>
 									Customise your app<br />                                    
-									<a href="/learn/howtos-documents" target="_self" >API Docs</a>
+									<a href="https://www.wavemakeronline.com/studio/10.1.2.7413/docs/index.html" target="_blank" >API Docs</a>
 									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>									
 								</p>
 							</div>
@@ -119,7 +119,7 @@ class Index extends React.Component {
 								<p>See the latest updates directly from our developers.</p>                            
 								<p>Stay tuned for more<br />
 									<a href="/learn/wavemaker-release-notes" target="_self" >Release Notes</a>
-									<a href="https://www.wavemaker.com/blog/" target="_blank" >Team Blog</a>																		
+									<a href="/learn/blog" target="_blank" >Team Blog</a>																		
 								</p>
 							</div>
                         </div>

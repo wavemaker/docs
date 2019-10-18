@@ -23,12 +23,12 @@ Note: If you are not a contributor, become a contributor of WaveMaker docs. For 
 1.	Go to https://github.com/wavemaker/docs
 2.	Click Fork and clone to get a copy to your local machine. 
 3.	Clone using GitHub Desktop and select the local location to work with.
-4.	Open GitBash
+4.	Open GitBash  
 a.	Go to copied location by using the following command: 
 ```
 cd Documents/GitHub/docs/Website
 ```
-b.	Install the package to your local
+b.	Install the package to your local machine
 ```
 npm install
 ```
