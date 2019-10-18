@@ -3,6 +3,9 @@ body {
     margin: 0;
     
 }
+.headerWrapper.wrapper {
+	max-width: 1200px;
+}
 
 .row {
     display: flex;
@@ -84,15 +87,15 @@ body {
     //background: linear-gradient(60deg, #0566ad, #1f95eb);
     color: #fff;
     width: 100%;
-    min-height: 250px;
-    margin: 0 0 40px;
+    min-height: 230px;
+    margin: 0 0 10px;
 	position: relative;
 }
 .banner .column {
-    padding: 1.85em 1.5em;
+    padding: 1.5em;
 }
 .banner .column:last-child {
-	padding-top: 4em;
+	padding-top: 2em;
 }
 .banner .cta {
     width: 150px;
