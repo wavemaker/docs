@@ -1,6 +1,8 @@
 ---
 title: "Form Configurations"
 id: ""
+sidebar_label: "Configuration"
+---
 ---
 
 The main features of a Form are as follows:

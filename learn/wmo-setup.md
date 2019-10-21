@@ -4,7 +4,7 @@ title: "WaveMaker Online (WMO) Setup"
 sidebar_label: "WaveMaker Online Setup"
 ---
 ---
-As a RAD tool, using WaveMaker Online (WMO) Studio, develop app and deploy your app to cloud without needing much of an equipment or setup. WMO is a browser based rich studio. It does not require any installation. All you need is a browser to start using WMO. To get an overview of how to setup WMO, see below. 
+As a RAD tool, using WaveMaker Online (WMO) Studio, develop app and deploy your app to cloud without needing much of an equipment or a setup. WMO is a browser based rich studio. Simply launch a browser, sign-up and start using WMO.  
 
 ## Supported Browsers
 

@@ -1,6 +1,7 @@
 ---
 title: "Working with SOAP Services"
 id: ""
+
 ---
 
 SOAP (Simple Object Access Protocol) is a standard XML protocol for exposing and calling web services. A SOAP service is described by a Web Services Definition Language (WSDL) document, often available through a URL from the service itself.
@@ -52,7 +53,7 @@ For each method defined by the SOAP service, a REST API is generated. You can vi
 
 ## SOAP Service Usage
 
-To use the Service data within the app, you need to create Variable. [Variable Access](http://[supsystic-show-popup id=105])
+To use the Service data within the app, you need to create Variable. 
 
 [![](/learn/assets/web_soap_var.png)](/learn/assets/web_soap_var.png)
 
@@ -88,6 +89,7 @@ Name collisions happen while code generation when there is more than one schema
 
 Following example depicts the collision of element “root”, because this element is defined twice in two different namespaces:
 
+```
 <wsdl:types>
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns="http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd" 
@@ -116,6 +118,7 @@ Following example depicts the collision of element “root”, because this elem
           </xs:element>
         </xs:schema>
 </wsdl:types>
+```
 
 These collisions can be avoided either by implicit handling by the platform or manual handling using an xjb file.
 
@@ -134,27 +137,29 @@ In manual handling, you have to write an _xjb_ file which defines the customizat
 
 XJB bindings can be customized by defining separate <jaxws:bindings> element for each namespace, which selects the node with given targetNamespace within the WSDL document.
 
+```
 <jaxws:bindings node=">wsdl:definitions/wsdl:types/xs:schema\[@targetNamespace='http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd'"
+```
 
-Inside the <jaxws:bindings> element should define which describes customization of package names/class names in code generation for selected node:
+Inside the ```<jaxws:bindings>``` element should define which describes customization of package names/class names in code generation for selected node:
 
 1. Suffixing all the classes generated from the schema
-    
+```    
     <jaxb:schemaBindings>
        <jaxb:nameXmlTransform>
          <jaxb:elementName suffix="Foo"/>
        </jaxb:nameXmlTransform>
     </jaxb:schemaBindings>
-    
+```    
 2. Changing the package name for generated classes from the schema
-    
+```    
     <jaxb:schemaBindings>
          <jaxb:package name="com.services.test.custom"/>
     </jaxb:schemaBindings>
-    
+```    
 
 Example of custom xjb file
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws"
        xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
@@ -179,4 +184,4 @@ Example of custom xjb file
         </jaxb:schemaBindings>
        </jaxws:bindings>
 </jaxws:bindings>
-
+```

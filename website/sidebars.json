@@ -462,6 +462,11 @@
             "how-to-widgets"            
           ],
 
+          "- Cards":
+          [
+            "how-tos/capturing-card-items"
+          ],
+
           "- DataTable":
           [
             "how-tos/view-master-detail-data-records-using-data-table",

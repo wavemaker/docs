@@ -8,6 +8,10 @@ How tos: Working Solutions for using WaveMaker Widgets
 ---
 # Data & Live Widgets
 
+## Cards
+
+* [How to access card items](/learn/how-tos/capturing-card-items/)
+
 ## Data Table
 
 *   [How to view master-detail record using a data table](/learn/how-tos/view-master-detail-data-records-using-data-table/)

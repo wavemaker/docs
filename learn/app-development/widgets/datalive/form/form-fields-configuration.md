@@ -1,6 +1,8 @@
 ---
-title: "Fields Configuration"
+title: "Form Fields Configuration"
 id: ""
+sidebar_label: "Fields Configuration"
+---
 ---
 
 ### Configure form fields display options
