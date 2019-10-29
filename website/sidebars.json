@@ -648,6 +648,18 @@
       "app-development/widgets/datalive/form/form-usage-scenarios"
     ],
 
+    "Live Form": 
+    [ 
+      "app-development/widgets/datalive/live-form",
+      "app-development/widgets/datalive/live-form/live-form-data-source",
+      "app-development/widgets/datalive/live-form/liveform-layouts",
+      "app-development/widgets/datalive/live-form/liveform-configurations",
+      "app-development/widgets/datalive/live-form/fields-configuration",
+      "app-development/widgets/datalive/live-form/liveform-actions",
+      "app-development/widgets/datalive/live-form/events-methods",
+      "app-development/widgets/datalive/live-form/liveform-use-cases"
+    ],
+
     "Form Widgets": [ 
       "app-development/widgets/form-widgets/button",
       "app-development/widgets/form-widgets/button-group",
@@ -672,18 +684,6 @@
       "app-development/widgets/form-widgets/",
       "app-development/widgets/form-widgets/",
       "app-development/widgets/form-widgets/"
-    ],
-
-    "Live Form": 
-    [ 
-      "app-development/widgets/datalive/live-form",
-      "app-development/widgets/datalive/live-form/live-form-data-source",
-      "app-development/widgets/datalive/live-form/liveform-layouts",
-      "app-development/widgets/datalive/live-form/liveform-configurations",
-      "app-development/widgets/datalive/live-form/fields-configuration",
-      "app-development/widgets/datalive/live-form/liveform-actions",
-      "app-development/widgets/datalive/live-form/events-methods",
-      "app-development/widgets/datalive/live-form/liveform-use-cases"
     ],
 
     "Live Filter": 
