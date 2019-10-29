@@ -302,6 +302,7 @@
         "label": "Offline Features",
         "ids": [
         "hybrid-mobile/offline-data-support",
+        "hybrid-mobile/offline-data-support-implementation",
         "hybrid-mobile/switching-offline-online-mode"]
       }
     ]

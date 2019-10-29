@@ -4,29 +4,37 @@ id: "offline-data-support"
 ---
 ---
 
-Offline support for mobile applications can be thought of as the ability of the application to react gracefully to the lack of stability in the network connection. That is, apps should work even when not connected to any network. This is especially true of mobile apps for on-the-move users and for users working out of remote areas. In this context, one of the most complicated scenarios will be that of “_offline data access_”.
+Offline support for mobile applications can be thought of as the ability of the application to react gracefully to the lack of stability in the network connection. It includes: 
+- App should work even when not connected to any network. 
 
-If a mobile app is not able to communicate to the back-end server due to lack of network connection, the app is said to be in _offline mode_. In offline mode, app user cannot perform any action and has to wait till network connection is available. This inability of a mobile app to work offline results in potential loss of time and business for the app user. To facilitate offline access to app users, app developers are having to spend a lot of time and effort in redesigning the apps.
+:::note
+It is true for mobile apps for on-the-move users and for users working out of remote areas. In this context, one of the most complicated scenarios include “_offline data access_”.
+:::
+
+### Why offline data support
+If the mobile app cannot communicate to the back-end server due to lack of network connection, the app turns to _offline mode_. In offline mode, app user cannot perform any action and forces user to wait when network connection gets back. This inability of a mobile app to work offline results in potential loss of time and business for the app user. To facilitate offline access to app users, app developers spend a lot of time and effort in redesigning the apps.
 
 WaveMaker is providing **offline data support** as an out-of-the-box feature so that developers can enable offline support to existing components.
 
-To enable offline data support, WaveMaker has a built-in **offline layer. **
+## How Offline Support works in WaveMaker
 
-1. When app is online, it gets data from server and saves it for offline usage
-2. When the app is offline, data saved above will be used to answer all data requests.
+To enable offline data support, WaveMaker has a built-in **offline layer**.
+
+1. When app is online, it gets data from server and saves it for offline use.
+2. When the app is offline, the saved data is used to answer all data requests.
 3. When the app is offline, all changes done by the user are recorded.
 4. When the app comes online, offline data changes are pushed to the server.
 
-# How Offline Support works in WaveMaker
+The offline layer intercepts all data requests. When the app is online, it forwards the request to the server and receives the responses from the server. When the app is offline, it consumes the request and provides the response. The offline layer includes:
 
-As mentioned earlier, the offline layer intercepts all data requests. When the app is online, it forwards the request to the server and receives the responses from the server. When the app is offline, it consumes the request and provides the response. The offline layer includes:
-
-1. **Storage layer **used to store data and answer all data calls from Variables based on Database CRUD APIs.
+1. **Storage layer** used to store data and answer all data calls from Variables based on Database CRUD APIs.
 2. **Sync layer** used to pull data from the server and push data changes to the server.
 
-**Note**: At the time of developing a mobile app in WaveMaker, you can define the database entities that need to be available in offline mode so as to enhance app performance.
+:::note
+At the time of developing a mobile app in WaveMaker, you can define the database entities that need to be available in offline mode so as to enhance app performance.
+:::
 
-**App Behavior when Online:**
+### App Behavior when Online
 
 1. An API call on behalf of a Database CRUD Variable to an entity is intercepted by the offline layer.
 2. This call is forwarded to the server.
@@ -34,7 +42,9 @@ As mentioned earlier, the offline layer intercepts all data requests. When the 
 4. The offline layer stores the data sent by the server in its storage layer.
 5. The entity data is forwarded as the response to the app.
 
-[![offline_lifecycle_online](/learn/assets/offline_lifecycle_online.png)](/learn/assets/offline_lifecycle_online.png)[![offline_lifecyclemod_online](/learn/assets/offline_lifecyclemod_online.png)](/learn/assets/offline_lifecyclemod_online.png)
+[![offline_lifecycle_online](/learn/assets/offline_lifecycle_online.png)](/learn/assets/offline_lifecycle_online.png)
+
+[![offline_lifecyclemod_online](/learn/assets/offline_lifecyclemod_online.png)](/learn/assets/offline_lifecyclemod_online.png)
 
 1. A **data modification request** through a Database CRUD Variable is received by the offline layer.
 2. This request is forwarded to the server.
@@ -42,14 +52,16 @@ As mentioned earlier, the offline layer intercepts all data requests. When the 
 4. The offline layer updates its storage layer.
 5. The data is forwarded as a response to the app.
 
-**App Behavior when Offline:**
+### App Behavior when Offline
 
 1. An API call on behalf of a Database CRUD Variable to an entity is intercepted by the offline layer.
 2. This request is forwarded to the storage layer (since the server is not reachable).
 3. The entity data is received from the storage layer.
 4. This data is forwarded as a response to the app.
 
-[![](/learn/assets/offline_lifecycle_offline.png)](/learn/assets/offline_lifecycle_offline.png)[![offline_lifecyclemod_offline](/learn/assets/offline_lifecyclemod_offline.png)](/learn/assets/offline_lifecyclemod_offline.png)
+[![](/learn/assets/offline_lifecycle_offline.png)](/learn/assets/offline_lifecycle_offline.png)
+
+[![offline_lifecyclemod_offline](/learn/assets/offline_lifecyclemod_offline.png)](/learn/assets/offline_lifecyclemod_offline.png)
 
 1. A **data modification request** is intercepted by the offline layer through a call to Database CRUD Variable,
 2. The corresponding entity in the storage layer is updated.
@@ -69,7 +81,7 @@ Thus, all data modification requests are added to the sync layer queue.
 
 [![offline_lifecycle_push](/learn/assets/offline_lifecycle_push.png)](/learn/assets/offline_lifecycle_push.png)
 
-# How Offline Storage Layer gets Data
+## How Offline Storage Layer gets Data
 
 WaveMaker uses an inbuilt SQL Lite Database for offline storage. Offline storage layer gets its data in 3 ways:
 
@@ -103,7 +115,7 @@ Following table details the behavior of various configurations (see [Offline Dat
 
 [![offline_data](/learn/assets/offline_data.png?v=20)](/learn/assets/offline_data.png?v=20)
 
-# How Sync Layer Works
+## How Sync Layer Works
 
 During app startup, data (except bundle data) is removed and fresh data is pulled from the server. During pushing of offline data changes, if any push fails due to any reason, then the push will be attempted again in the next cycle.
 
@@ -143,25 +155,3 @@ Currently, there is no conflict resolution strategy provided by WaveMaker. The l
 
 Offline data changes persist across app upgrades. Let us say that a user installed the app (Version V1). In offline, he made some changes and closed the app. Then, Version V2 is released on play store or app store. Due to automatic upgrades, the app gets upgraded to V2. Now, when the user opens the app, it comes online with Version V2 and the offline data changes done in V1 is pushed to the server.
 
-B.1 Mobile Apps
-
-- 1.1 Mobile App Development
-    - [i. App Architecture](/learn/hybrid-mobile/building-hybrid-mobile-apps/#mobile-app-architecture)
-    - [ii. App Development](/learn/hybrid-mobile/building-hybrid-mobile-apps/#mobile-app-development)
-    - [iii. Testing on Mobile](/learn/hybrid-mobile/building-hybrid-mobile-apps/#testing-mobile)
-    - [iv. Creating Installer](/learn/hybrid-mobile/building-hybrid-mobile-apps/#creating-installer)
-- 1.2 Native Device Support
-    - [i. Device Specific Widgets](/learn/hybrid-mobile/native-device-support/#device-specific-widgets)
-    - [ii. Device Variables](/learn/hybrid-mobile/native-device-support/#device-features-variables)
-    - [iii. Platform Look n Feel](/learn/hybrid-mobile/native-device-support/#platform-support)
-- [1.3 Offline Data Support](#)
-    - [i. Mechanism](#working)
-    - [ii. Storage Layer](#storage-layer)
-    - [iii. Sync Layer](#sync-layer)
-    - [iv. Enabling](/learn/hybrid-mobile/offline-data-support-implementation/)
-        - [○ DB Configuration](/learn/hybrid-mobile/offline-data-support-implementation/#db)
-        - [○ Variable Configuration](/learn/hybrid-mobile/offline-data-support-implementation/#variable)
-        - [○ Plugin Configuration](/learn/hybrid-mobile/offline-data-support-implementation/#plugin)
-        - [○ Security Configuration](/learn/hybrid-mobile/offline-data-support-implementation/#security)
-    - [v. Support & Limitations](/learn/hybrid-mobile/offline-data-support-implementation/#limitations)
-    - [vi. Use Cases](/learn/hybrid-mobile/offline-data-support-implementation/#use-cases)

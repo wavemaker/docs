@@ -1,13 +1,14 @@
 ---
 title: "Offline Data Support - Implementation"
 id: ""
+sidebar_label: "Implementation"
 ---
+---
+WaveMaker is providing **offline data support** as an out-of-the-box feature so that developers can enable offline support to existing components. For more information, see [Offline Data Support Overview](/learn/hybrid-mobile/offline-data-support/).
 
-WaveMaker is providing **offline data support** as an out-of-the-box feature so that developers can enable offline support to existing components. For an overview of this feature, [refer here](/learn/hybrid-mobile/offline-data-support/).
+In this document, learn how to implement the offline data support feature for your mobile app.
 
-In this document, we will see how you can take advantage of this feature in your mobile app.
-
-# Enabling Offline Mechanism
+## Enabling Offline Mechanism
 
 To [recap](/learn/hybrid-mobile/offline-data-support/), the basic working of offline mechanism involves:
 
@@ -18,7 +19,7 @@ To [recap](/learn/hybrid-mobile/offline-data-support/), the basic working of off
 
 Let us see how it is done within a WaveMaker app.
 
-#### Database Configuration
+### Database Configuration
 
 The offline mechanism has to be enabled for the tables you want to work on offline along with related tables in a database. This ensures that synchronization is successful. Follow the steps for these same:
 
@@ -40,13 +41,13 @@ The offline mechanism has to be enabled for the tables you want to work on offli
 10. **Pull Configuration:** (available for on-demand Sync configurations): During pull operation, data that matches Filter or Query criteria and sorted in **Order By** criteria, will be fetched and stored in the offline database. By triggering a device variable with ‘DATA SYNC’ as service and ‘PULL’ as operation, a pull operation can be started.
     - **Delta Field**: Delta Field is a timestamp column in the offline-enabled table that records the time when the record is last modified. Given Delta Field, Filter criteria are further enhanced (internally by platform) to fetch only modified records from the pull. This greatly helps in pulling data faster as the number of records to pull are restricted. If an offline-enabled entity has Delta Field, then only modified data will be pulled. Otherwise, the entire offline-enabled entity will be pulled. For example, if there are 10 records matching the filter criteria, then all 10 will be pulled in the first pull for user1. Then say, 1 record matching the filter criteria is added by user2. In second pull for user1, 10 (initial) + 1 (delta or modified) records are fetched. To avoid the 10 records (that are not modified and already present in user1’s device) in second pull, DELTA field is used. Using this field, only the modified records are pulled and not all, in the above case for the second pull only 1 record is fetched as opposed to 11. _Modifications_ will be pulled only if the filter criteria that was applied in the last pull and filter criteria that are going to be applied in the current pull are same. Following table shows an example when only DELTA is pulled for Employees table.
         
-        | **Pull No**. | **Filter Criteria** | **Data Pulled** |
-        | --- | --- | --- |
-        | 1 | where departmentId = 1 | FULL |
-        | 2 | where departmentId = 1 | DELTA |
-        | 3 | where departmentId = 1 | DELTA |
-        | 4 | where departmentId = 2 | FULL |
-        | 5 | where departmentId = 2 | DELTA |
+    | **Pull No**. | **Filter Criteria** | **Data Pulled** |
+    | --- | --- | --- |
+    | 1 | where departmentId = 1 | FULL |
+    | 2 | where departmentId = 1 | DELTA |
+    | 3 | where departmentId = 1 | DELTA |
+    | 4 | where departmentId = 2 | FULL |
+    | 5 | where departmentId = 2 | DELTA |
         
     - **Maximum Number Of Records** (M): In a pull operation of a table, the maximum number of records to pull can be configured. Suppose, the Filter criteria match 1000 records, but M is specified as 100. Then, only 100 records that match the filter criteria are fetched. If M is specified as a non-positive number (ex: 0, -1), then all records that match the Filter criteria are pulled.
     - **Page Size** (P): If Filter criteria match 1,00,000 and M is specified as 0, then 100000 are fetched (see above). Due to performance reasons, 1,00,000 records cannot be loaded in a single call. So, data is loaded page-wise iteratively until all (1,00,000) records are fetched. If P is specified as 100, then data is fetched in 1,000 calls. NOTE: Make sure that page size value that is specified here is lesser than or equals to the page size value for the database in profiles.
@@ -63,7 +64,7 @@ The offline mechanism has to be enabled for the tables you want to work on offli
     - **Synchronize data when online** - With this method, data will be pulled during app startup. To limit the number of rows available offline,  ‘_Filter Value_’ can be configured using the table located below the options. Be cautious, if no filter is used, then entire table data will be fetched (application level pagination).  Rows fetched will honor the application limit of maximum records per request. NOTE you will not be able to apply a filter to BLOB data type as these fields are available for upload only and not download.
     - **Bundle the data with the app** - With this method, data will be packaged with the installer. During runtime, a query for the data present in these tables will be answered using the bundled data (either offline or online). ‘Bundle the data’ is helpful only if the table has data that doesn’t change. If there is any change in data, a new version of the app has to be released.
 
-#### Variable Configuration
+### Variable Configuration
 
 By default, three variables **networkInfo**, **datasyncPush** and **datasyncPull** are created when for any table offline is enabled. They are configured in such a way that whenever the user comes online, offline data changes (if any) are pushed automatically. Using these variables, custom workflows for data push can also be created. You can control the pull behavior through the **datasyncPull** variable's property:
 
@@ -84,15 +85,15 @@ Location of the file is exposed as an outbound property on this variable. |
 
 (ver 9.3) | Spinner Context and Message to display during this operation | none | On Success On Error | Upon invocation, a file browser opens up to choose the zip file to import. |
 
-#### Plugin Configuration
+### Plugin Configuration
 
 The offline module requires ‘Offline DB’ and ‘Network’ plugin. Just make sure these are selected in the plugins list in android build dialog. [![](/learn/assets/offline_plugin.png)](/learn/assets/offline_plugin.png)
 
-#### Security Configuration
+### Security Configuration
 
 In offline, last logged-in user session will continue until the user logs out. No special configuration is needed for this.
 
-#### Support & Limitations
+## Support & Limitations
 
 **What is supported**
 
@@ -133,26 +134,3 @@ Case: A multi-user application for tracking personal tasks is to be created. Tas
 8. Make sure that network is available and login to the app with user1.
 9. Now close the app and turn off the network (to simulate offline).
 10. user1 should be able to perform actions. That’s how offline capability can be configured to an app.
-
-B.1 Mobile Apps
-
-- 1.1 Mobile App Development
-    - [i. App Architecture](/learn/hybrid-mobile/building-hybrid-mobile-apps/#mobile-app-architecture)
-    - [ii. App Development](/learn/hybrid-mobile/building-hybrid-mobile-apps/#mobile-app-development)
-    - [iii. Testing on Mobile](/learn/hybrid-mobile/building-hybrid-mobile-apps/#testing-mobile)
-    - [iv. Creating Installer](/learn/hybrid-mobile/building-hybrid-mobile-apps/#creating-installer)
-- 1.2 Native Device Support
-    - [i. Device Specific Widgets](/learn/hybrid-mobile/native-device-support/#device-specific-widgets)
-    - [ii. Device Variables](/learn/hybrid-mobile/native-device-support/#device-features-variables)
-    - [iii. Platform Look n Feel](/learn/hybrid-mobile/native-device-support/#platform-support)
-- [1.3 Offline Data Support](#)
-    - [i. Mechanism](#working)
-    - [ii. Storage Layer](#storage-layer)
-    - [iii. Sync Layer](#sync-layer)
-    - [iv. Enabling](#enabling)
-        - [○ DB Configuration](#db)
-        - [○ Variable Configuration](#variable)
-        - [○ Plugin Configuration](#plugin)
-        - [○ Security Configuration](#security)
-    - [v. Support & Limitations](#limitations)
-    - [vi. Use Cases](#use-cases)
