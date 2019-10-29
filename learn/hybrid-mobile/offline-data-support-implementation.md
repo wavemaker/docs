@@ -109,6 +109,7 @@ In offline, last logged-in user session will continue until the user logs out. N
 4. DB2 Temporals
 5. Web services (REST, SOAP)
 6. When you load an entity with any relation, only its first level children are retrived.
+7. Only single column primary key is supported.
 
 ## Use Cases
 
