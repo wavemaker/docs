@@ -1,6 +1,7 @@
 ---
-title: "Pre-requisites to Develop App in WaveMaker"
+title: "Pre-requisites for App Development"
 id: ""
+sidebar_label: "Pre-requisites"
 ---
 What skills you need to develop web and hybrid mobile apps using WaveMaker. 
 

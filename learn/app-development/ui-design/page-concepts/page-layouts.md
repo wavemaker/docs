@@ -2,6 +2,7 @@
 title: "Page Layout"
 id: "page-layouts"
 ---
+---
 
 An app is divided into multiple pages to segregate the functionality of the app. Various aspects of a Page are used to unite these segregated functionalities to form an app flow. In this document we will discuss:
 
@@ -9,7 +10,7 @@ An app is divided into multiple pages to segregate the functionality of the app
 - [Page Navigation](#page-navigation) to aid user to move from one page to another
 - [Events](#events) to capture define actions for user interactions and other incidents.
 
-# Page Layouts
+## Introduction
 
 **Page Layouts** help you design the structure of the page by demarcating the header, footer, navigation and one or more content columns. Based on the Page construction system WaveMaker provides different options for Page Layouts, which can be picked based on the interaction required for the app. Depending on the app platform - web or mobile, the layout will differ. Here we will be discussing web platform, for mobile platform [refer here](/learn/hybrid-mobile/mobile-page-concepts/). Page
 

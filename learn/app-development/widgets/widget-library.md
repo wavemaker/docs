@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Widgets & Prefabs"
+title: "Widgets & Prefabs"
 id: "widget-library"
 sidebar_label: "Widgets Library"
 ---

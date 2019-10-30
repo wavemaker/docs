@@ -1,6 +1,7 @@
 ---
-title: "Backend Services Overview"
+title: "Backend Services"
 id: "creating-backend-services"
+sidebar_label: "Backend Services"
 ---
 Get an overview of backend services in WaveMaker and see how it works. 
 
@@ -11,7 +12,7 @@ Before getting started with backend services, let's go back to basics. Designing
 - **Step-2: Create a backend service.**
 - <span style="color: #D3D3D3;">Step-3: Using variable, integrate the backend service with widget.</span>
 
-# Backend Module
+## Introduction
 ---
 In the backend module, you will learn how to create an independent backend service which can be used multiple times across your app. 
 

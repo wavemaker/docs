@@ -1,5 +1,5 @@
 ---
-title: "Getting started - Designing an App"
+title: "Designing an App"
 id: ""
 sidebar_label: "UI Overview"
 ---
@@ -13,7 +13,7 @@ For developing an app in WaveMaker, you follow the three-layered architecture.
 - <span style="color: #D3D3D3;">Step-3: Using variable, integrate the backend service with widget.</span>
 
 
-# UI Design Module 
+## Introduction 
 ---
 
 In the Design module, you will learn how to create pages, use widgets, and apply styles for developing an app. 

@@ -1,8 +1,10 @@
 ---
-title: "Service Integration - Binding Layer"
+title: "Service Integration"
 id: "data-integration"
 sidebar_label: "Service Integration"
 ---
+This is a binding layer. Integrate the backend services with the UI design in this module.
+
 ---
 WaveMaker app development process involves three steps as described earlier. 
 - <span style="color: #D3D3D3;">Step-1: Drag-and-drop widgets and design the page.</span>
@@ -11,7 +13,7 @@ WaveMaker app development process involves three steps as described earlier.
 
 When your backend service is ready, you use variable to bind a connection between the UI widget and backend service. 
 
-# Integrating Services and UI
+## Introduction
 ---
 
 The **binding layer** provides a _low-code approach_ to defining data flows, interaction, and integration of UI elements with the backend services. This functionality is achieved through the Binding layer, using the following components. 
