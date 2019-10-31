@@ -56,6 +56,7 @@
           "ids": 
           [
             "app-development/services/web-services/rest-services",
+            "app-development/app-security/securing-server-side-properties-rest-services",
             "app-development/services/web-services/oauth-2-0-rest-services",
             "app-development/services/web-services/working-with-soap-services",              
             "app-development/services/web-services/working-with-websockets"                 
@@ -197,7 +198,7 @@
           "type": "subcategory",
           "label": "Actions",
           "ids": [
-            "app-development/variables/actions",
+            "app-development/variables/variables-actions",
             "app-development/variables/navigation-action",
             "app-development/variables/login-action",
             "app-development/variables/logout-action",
@@ -401,6 +402,7 @@
 
           "- Web services":
           [
+            "how-tos/using-app-environment-properties",
             "how-tos/using-post-method-send-data-rest-api" 
           ],
 
@@ -481,6 +483,7 @@
           [
             "how-tos/list-grouped",
             "how-tos/list-multi-grouped",
+            "how-tos/onrender-event-list-widget",
             "how-tos/list-data-table",
             "how-tos/building-editable-list",
             "how-tos/building-cascading-lists",

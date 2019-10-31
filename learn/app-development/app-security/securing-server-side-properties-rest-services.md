@@ -3,6 +3,7 @@ title: "Securing Server Side and App Environment Properties in REST Services"
 id: ""
 sidebar_label: "Secure Server-side Properties"
 ---
+---
 
 When working with REST Services, it is essential to protect your API keys and passwords and ensure your app sensitive information hides from the UI and network calls. You can do this by using proxy server when configuring REST Services. For this, you should use App Environment Properties or Server Side Properties for Header and Query params.
 
@@ -12,14 +13,14 @@ App Environment properties and Server Side Properties are similar. However, Serv
 
 Whearas App Environment Properties are explicit variable. You create App Environment Properties once and you can use them any number of times across the project. Configure different values for different environments, and store API keys, passwords, imported services, and more. To learn how to create an App Environment Property, see [Using App Environment Properties](/learn/how-tos/using-app-environment-properties/).
 
-:::note
+:::important
 When adding App Environment Properties, ensure to click the “+” button after each entry. When done, click the immediate “Save” button, followed by the next “Save” button of the Config Profile window.
 :::
 
 When you create App Environment Properties, they should appear in Web Services window under the Header and Query param types.
 
 :::note
-Refresh the the Web Services configuration window if you do not see the App Environemnt Properties in the Header and Query param types.
+Refresh the the Web Services configuration window if you do not see the App Environment Properties in the Header and Query param types.
 :::
 
 ## Configuring Proxy Server
@@ -32,9 +33,9 @@ When configuring REST API, you add parameter name, data type and test value depe
 
 After you add the Endpoint URL, to use the Proxy Server, slide the toggle to enable the Use Proxy setting. The Server Side Properties and App Environment Properties enforces you to use the Proxy server by default. This is to protect app sensitive information from viewing via network calls and UI. 
 
-[![](/learn/assets/ServerSidePropertiesHeader.png)](https://www.wavemaker.com../../assets/ServerSidePropertiesHeader.png)
+[![](/learn/assets/ServerSidePropertiesHeader.png)](/learn/assets/ServerSidePropertiesHeader.png)
 
-[![](/learn/assets/ServerSidePropertiesQuery.png)](https://www.wavemaker.com../../assets/ServerSidePropertiesQuery.png)
+[![](/learn/assets/ServerSidePropertiesQuery.png)](/learn/assets/ServerSidePropertiesQuery.png)
 
 ## How it impacts UI
 

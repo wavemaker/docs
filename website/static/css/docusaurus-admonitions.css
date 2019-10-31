@@ -88,15 +88,15 @@
 }
 
 .admonition-note {
-  background-color: rgba(241, 196, 15, 0.1);
-  border-left: 8px solid #f1c40f;
+  background-color: rgba(230, 213, 231, .3);
+  border-left: 8px solid #A274AE;
 }
 
 .admonition-note h5 {
-  color: #f1c40f;
+  color: #A274AE;
 }
 
 .admonition-note .admonition-icon svg {
-  stroke: #f1c40f;
-  fill: #f1c40f;
+  stroke: #A274AE;
+  fill: #A274AE;
 }

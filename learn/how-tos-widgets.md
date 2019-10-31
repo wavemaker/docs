@@ -24,6 +24,7 @@ How tos: Working Solutions for using WaveMaker Widgets
 
 *   [How to group list items](/learn/how-tos/list-grouped/)
 *   [How to group list items based upon multiple fields](/learn/how-tos/list-multi-grouped/)
+*   [How to use OnRender Event for List widget](/learn/how-tos/onrender-event-list-widget)
 *   [How to include data table within a list](/learn/how-tos/list-data-table/)
 *   [How to build editable list using live form](/learn/how-tos/building-editable-list/)
 *   [How to build list from the selected item of another list](/learn/how-tos/building-cascading-lists/)
