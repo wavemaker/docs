@@ -25,12 +25,4 @@ id: ""
 
 [![](/learn/assets/crudvar_filterfields.png)](/learn/assets/crudvar_filterfields.png)
 
-Variable Usage
 
-- [1\. How-to use Filter in Live Variables](/learn/how-tos/using-filter-conditions-variable/)
-- [2\. How to use Live Variable APIs](/learn/how-tos/using-live-variable-apis/)
-- [3\. How to work with Notification Actions](/learn/how-tos/using-notification-actions/)
-- [4\. How to work with Navigation Actions](/learn/how-tos/using-navigation-action/)
-- [5\. How to work with Variables to access Queries and Procedures](/learn/how-tos/using-variables-queries-procedure/)
-- [6\. How to work with Service Variables in a Form](/learn/how-tos/using-service-variable-form/)
-- [7\. How to work use Filter Fields with Database CRUD Variables](#)

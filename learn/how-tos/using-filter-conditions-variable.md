@@ -2,14 +2,15 @@
 title: "Using Filter Conditions on Variable"
 id: ""
 ---
-
-Showcases:
+---
+### Showcases
 
 - how to use filter conditions in Variables.
 - An alternative approach to using Filter Fields in Data Tab.
 - This will allow for using mathematical expressions and other expressions.
 - Below is a list of database match modes that can be used as filter condition:
-    
+
+``` 
     "DATABASE\_MATCH\_MODES": {
     "start"            : "STARTING\_WITH",
     "end"              : "ENDING\_WITH",
@@ -28,30 +29,33 @@ Showcases:
     "isnotempty"       : "IS\_NOT\_EMPTY",
     "nullorempty"      : "NULL\_OR\_EMPTY"
     }
-    
+```   
 
-**Usage**: Depending upon the type of the data you need to use either the match mode (left side values from the above list) or filter condition (right side values from the above list), as per the following code snippet:
+### Usage
+Depending upon the type of the data you need to use either the match mode (left side values from the above list) or filter condition (right side values from the above list), as per the following code snippet:
 
-/\*if filter field is of type string\*/
+```js
+/* if filter field is of type string */
         inputData.<string\_field\_name> = {
             'value':'<value>',
             'matchMode': 'notequals'
         }
 
-/\*if filter field is of type Integer\*/
+/* if filter field is of type Integer */
         inputData.<integer\_field\_name> = {
             'value':'<value>',
             'filterCondition': 'NOT\_EQUALS'
         }
-
+```
 In this example, we use the following JavaScript code to filter the records from Login CRUD Variable to fetch records with ID less than or equal to a text value:
-
+```
 Page.LoginDataonBeforeUpdate = function (variable, inputData) {
     inputData.id = {
         'value': Page.Widgets.text1.datavalue,
         'filterCondition': 'LESS\_THAN\_OR\_EQUALS',
         'type': 'INTEGER'
     };
+```
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS_ShziKiIlw9f_ANdjyVWkMs4uYNY420R-x_PxlbuDWAnADbZCCbePzqYuhPB5WaUCgP9gazbsA71S/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="708" height="560" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 

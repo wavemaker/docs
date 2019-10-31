@@ -416,9 +416,16 @@
             "how-tos/pre-post-processing-db-service-apis"
           ],
 
-          "- Variable":
+          "- Variables":
           [
-            "how-tos/using-variables-queries-procedure"
+            "how-tos/using-filter-conditions-variable",
+            "how-tos/using-live-variable-apis",
+            "how-tos/using-notification-actions",
+            "how-tos/using-navigation-action",
+            "how-tos/using-variables-queries-procedure",
+            "how-tos/using-service-variable-form",
+            "how-tos/using-filter-criteria-data-live-widgets",
+            "how-tos/using-filter-criteria-database-crud-variable"                      
           ],
 
           "- JavaScript":

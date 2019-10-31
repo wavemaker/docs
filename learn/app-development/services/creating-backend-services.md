@@ -26,7 +26,7 @@ Thus, you can consider external data as a service. Based on the underlying data,
 |---|---|---|
 |1.|Get started with Database Services|[Database Services](/learn/app-development/services/database-services/database-services)|
 |2.|Get started with Web Services|[Web Services](/learn/app-development/services/web-services/web-services)|
-|3.|Get started with Java Services|[Java Services](app-development/services/java-services/java-service)|
+|3.|Get started with Java Services|[Java Services](/learn/app-development/services/java-services/java-service)|
 |4.|Get started with Security Services|[Security Services](/learn/app-development/app-security/app-security)|
 
 
