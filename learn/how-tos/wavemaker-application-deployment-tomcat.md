@@ -1,5 +1,5 @@
 ---
-title: "WaveMaker Application deployment to Tomcat"
+title: "App Deployment to Tomcat"
 id: ""
 sidebar_label: "Deploy to Tomcat"
 ---
@@ -34,13 +34,13 @@ The instructions are same for all versions of Tomcat.
 
 1. Copy the war file to _/webapps_ folder.
 2. Tomcat will automatically detect the newly copied war file and start deploying. You can check the status on the Tomcat console.
-3. After the deployment is successful you can access the application at http://localhost:8080/<ApplicationName>
+3. After the deployment is successful you can access the application at `http://localhost:8080/<ApplicationName>`.
 
 ### Deployment using Management portal
 
 **Deployment for Tomcat 8.x/9.x**
 
-1. Open a browser and navigate to http://localhost:8080 (if Tomcat is running on a different port, replace the 8080 with that port).
+1. Open a browser and navigate to `http://localhost:8080` (if Tomcat is running on a different port, replace the 8080 with that port).
 2. Click on **Manager App** button displayed on the homepage and provide User Name and Password in the respective text boxes when prompted.
 3. You will be navigated to Tomcat Web Application Manager.
 4. Navigate to **War file to deploy** section and choose the war file that you want to deploy and click on Deploy button.

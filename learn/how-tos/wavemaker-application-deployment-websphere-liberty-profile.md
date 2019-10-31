@@ -1,5 +1,5 @@
 ---
-title: "WaveMaker Application Deployment to WebSphere (Liberty Profile)"
+title: "App Deployment to WebSphere (Liberty Profile)"
 id: ""
 sidebar_label: "WebSphere"
 ---
@@ -19,9 +19,9 @@ WaveMaker Apps can be exported as a WAR file. This generated file can be deploye
 
 ## Preparing WAR File
 
-From WaveMaker Studio, for the app that you want to deploy to WebSphere, Export the app as WAR file using the appropriate configurations. [See here for more](/learn/app-development/deployment/deployment-web-server/#war-file-generation).
+From WaveMaker Studio, for the app that you want to deploy to WebSphere, Export the app as WAR file using the appropriate configurations. For more information, see [Generate a WAR file](/learn/app-development/deployment/deployment-web-server/#generate-a-war-file).
 
 ## Deploy to WebSphere (Liberty Profile)
 
-- Copy prepared war file into _Websphere\_Home\_Directory\\usr\\servers\\defaultServer\\dropins\\war_
-- Once success message is displayed in the terminal navigate to _http://localhost:8080/_ to view the deployed application.
+- Copy prepared war file into `Websphere\_Home\_Directory\\usr\\servers\\defaultServer\\dropins\\war`
+- Once success message is displayed in the terminal navigate to `http://localhost:8080/` to view the deployed application.

@@ -26,7 +26,7 @@ While launching WaveMaker, if setup fails:
 
 1. Take a screenshot of the installation failure message.
 2. From the left panel, click Support Center and Download Logs. [![](/learn/assets/WME_trouble.png)](/learn/assets/WME_trouble.png)
-3. Send the screenshot of the failure message along with the downloaded log file to [WaveMaker Support](mailto: support@wavemaker.com)
+3. Send the screenshot of the failure message along with the downloaded log file to [WaveMaker Support](mailto:support@wavemaker.com).
 
 ### Troubleshooting WaveMaker Enterprise VM after Setup
 
@@ -76,18 +76,4 @@ Post the launch of WME, in case you run into problems pertaining to running and 
 
 [![](/learn/assets/WME_logs2.png)](/learn/assets/WME_logs2.png)
 
-Contents
 
-- [1\. Getting Started](/learn/installation/wavemaker-enterprise-setup-guide/)
-- [2\. Launching Instances](https://www.wavemaker.com/learn/installation/wme-setup-guide-launch-initialize/)
-- [3\. Setting Up WME](https://www.wavemaker.com/learn/installation/wme-setup-guide-access-setting/)
-- [4\. Configuring WME](/learn/installation/wme-setup-guide-configuration/)
-- [5\. Adding Capacity](/learn/installation/wme-setup-guide-adding-capacity/)
-- [6\. Maintaining WME](#)
-    - [i. Backing up WME](#back-up)
-    - [ii. Troubleshooting WME](#troubleshooting)
-    - [iii. Restarting Services](#restart)
-    - [iv. Restarting Platform Instance](#restart_platform)
-    - [v. Factory Reset](#reset)
-    - [vi. Accessing Log Files](#log-files)
-- [7\. Upgrading WME](/learn/installation/wme-setup-guide-upgrading/)
