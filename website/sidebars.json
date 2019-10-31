@@ -160,23 +160,30 @@
 
       "- Security services": 
       [
-        "app-development/app-security/app-security",
-        "app-development/app-security/authentication",        
-        "app-development/app-security/authorization",
-        "app-development/app-security/access-levels-permissions",
-        "app-development/app-security/login-configuration",
-        "app-development/app-security/ssl-encryption",
-        "app-development/app-security/owasp",
-        "app-development/app-security/central-authentication-system",
-        "app-development/app-security/token-based-authentication",
-        "app-development/app-security/saml-integration",        
+        {
+          "type": "subcategory",
+          "label": "App Security",
+          "ids": [
+            "app-development/app-security/app-security",
+            "app-development/app-security/authentication",        
+            "app-development/app-security/authorization",
+            "app-development/app-security/access-levels-permissions",
+            "app-development/app-security/login-configuration",
+            "app-development/app-security/ssl-encryption",
+            "app-development/app-security/owasp",
+            "app-development/app-security/central-authentication-system",
+            "app-development/app-security/token-based-authentication",
+            "app-development/app-security/saml-integration"
+          ] 
+        },     
         {
           "type": "subcategory",
           "label": "Security Variable and API",
           "ids": [
           "app-development/app-security/security-variables",
-        "app-development/variables/security-service",
-        "app-development/services/api-designer/security-service-apis"]
+          "app-development/app-security/remember-me",
+          "app-development/variables/security-service",
+          "app-development/services/api-designer/security-service-apis"]
         }
       ],
     
