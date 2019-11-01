@@ -345,7 +345,8 @@ h3 {
 		font-weight: 400;
 		height: 35px;
 	}
-	.navigationSlider .slidingNav ul li a:hover, 
+	.navigationSlider .slidingNav ul li a:hover,
+	.navigationSlider .slidingNav ul li a:focus, 
 	.navigationSlider .slidingNav ul li.siteNavGroupActive a { 
 		color: #fff;
 		border-radius: 2px;
