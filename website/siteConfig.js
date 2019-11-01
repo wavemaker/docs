@@ -58,7 +58,8 @@ const siteConfig = {
 		{doc: 'howtos-documents', label: 'How-to'},
 		{doc: 'wavemaker-release-notes', label: 'Releases'},
     //  {blog: true, label: 'Team Blog'},
-        {href: 'https://www.wavemakeronline.com/login/login', label: 'Login'}
+        {href: 'https://github.com/wavemaker/docs', label: 'GitHub', external: true},
+        {href: 'https://www.wavemakeronline.com/login/login', label: 'Login', external: true}
     ],
 
     //disabling till docusaurus v2 comes with custom search
