@@ -2,46 +2,49 @@
 title: "Customizing Theme"
 id: ""
 ---
-
+---
 Before trying to customize the app Theme, it is recommended you that familiarise with the Theme implementation from [this document](http://www.wavemaker.com/learn/app-development/ui-design/themes/#customise-theme) regarding the build, import and application of a Theme in WaveMaker app.
 
-### How to change background of an application?
+## Changing background of an application
 
 - Edit _variables.less_ and update the value for **@body-bg**.
 
-### How to use the web fonts in the theme?
+## Using web fonts in a theme
 
 - To use the **web fonts** in the theme, copy the web fonts(.ttf, .eot, woff) in the font folder and include the font definition in variable.less:
-    
-    @font-face {
-     font-family: 'robotoregular';
-     src: url('fonts/Roboto-Regular-webfont.eot');
-     src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-     url('fonts/Roboto-Regular-webfont.woff') format('woff'),
-     url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
-     url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
-    }
-    
+```    
+@font-face 
+{
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+    url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+    url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+}
+```    
 - Once the font definitions are added the same need to be applied. For this change the font family specifications in the variable.less to point to the above-defined font family name (robotoregular, in this case). Note the second font family name (Arial, in this case) will be the fallback option.
-    
-    //== Typography
-    //
-    //## Font, line-height, and color for body text, headings, and more.
-    
-    @font-family-sans-serif:  'robotoregular', 'Arial', sans-serif;
-    @font-family-serif:       'robotoregular', 'Arial', sans-serif;
-    //\*\* Default monospace fonts for \`<code>\`, \`<kbd>\`, and \`<pre>\`.
-    @font-family-monospace:   'robotoregular', 'Arial', sans-serif;
-    @font-family-base:        @font-family-sans-serif;
-    
+```   
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
 
-### How to style various components of WaveMaker App?
+@font-family-sans-serif:  'robotoregular', 'Arial', sans-serif;
+@font-family-serif:       'robotoregular', 'Arial', sans-serif;
+//\*\* Default monospace fonts for \`<code>\`, \`<kbd>\`, and \`<pre>\`.
+@font-family-monospace:   'robotoregular', 'Arial', sans-serif;
+@font-family-base:        @font-family-sans-serif;
+```    
+
+## Style the Components of WaveMaker App
 
 WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The various components can be styled using the corresponding Bootstrap classes defined in the LESS files. In the following sections the various app components and the style properties are listed along with the class name and the file where the class is defined. Use these to make styling changes. Remember to [build, import and re-apply the theme](/learn/app-development/ui-design/themes/) to enforce the changes.
 
-**NOTE**: Some of Bootswatch themes might not have all these variables defined.
+:::note
+Some of Bootswatch themes might not have all these variables defined.
+:::
 
-### How to style header element?
+## Style Header Element
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -51,7 +54,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Height | style.less |  | @wm-header-height | auto |
 | Text Color | style.less |  | @wm-header-text-color | #fff |
 
-### How to style footer element?
+## Style Footer Element
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -61,7 +64,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Height | style.less |  | @wm-footer-height | auto |
 | Text Color | style.less |  | @wm-footer-text-color | #F5F7FA |
 
-### How to style topnav element?
+## Style topnav Element
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -71,7 +74,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Border Color | variables.less |  | @navbar-default-border | transparent |
 | Text Color | variables.less |  | @navbar-default-color | #000 |
 
-### How to style leftnav element?
+## Style leftnav Element
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -86,7 +89,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Active Link Background Color | style.less |  | @wm-left-panel-link-active-bg | #f7f7f7 |
 | Dropdown Background Color | style.less |  | @wm-left-panel-dropdown-menu-bg | transparent |
 
-### How to style rightnav element?
+## Style rightnav element
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -96,7 +99,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Link Text Color | style.less |  | @wm-right-panel-btn-color | #515253 |
 | Link Border | style.less |  | @wm-right-panel-list-border | #e6e5e5 |
 
-### How to style Cards Widget?
+## Style Cards Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -104,7 +107,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Header Background Color | style.less | .app-card-header | \- | transparent |
 | Text Color | style.less | .card-title | \- | #333 |
 
-### How to style Data Table Widget?
+## Style Data Table Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -115,7 +118,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Background Active Color | variables.less |  | @table-bg-active | #eee |
 | Header Background Color | style.less |  | @table-header-bg | #fff |
 
-### How to style List Widget?
+## Style List Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -127,16 +130,15 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Active Text Color | variables.less | .list-group-item | @list-group-active-color | #fff |
 | Active Background Color | variables.less | .list-group-item | @list-group-active-bg | #fff |
 | Active Border Color | variables.less | .list-group-item | @list-group-active-border | #448AFF |
-| Content Items Active Text Color | variables.less | .list-group-item | @list-group-active-text-color | #448AFF |
+| Content Items Active Text Color | variables.less | .list-group-item | @list-group-active-text-color |#448AFF|
 | Disabled Text Color | variables.less | .list-group-item | @list-group-disabled-color | #777 |
 | Disabled Background Color | variables.less | .list-group-item | @list-group-disabled-bg | #ddd |
-| Content Items Disabled Text Color | variables.less | .list-group-item | @list-group-disabled-text-color | #777 |
-
+| Content Items Disabled Text Color | variables.less | .list-group-item | @list-group-disabled-text-color |#777 |
 | Link Text Color | variables.less |  | @list-group-link-color | #555 |
 | Link Hover Color | variables.less |  | @list-group-link-hover-color | #555 |
 | Heading Text Color | variables.less |  | @list-group-link-heading-color | #333 |
 
-### How to style Pagination of Live Widgets?
+## Style Pagination of Live Widgets
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -147,15 +149,12 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Hover Text Color | variables.less |  | @pagination-hover-color | #448AFF |
 | Hover Background Color | variables.less |  | @pagination-hover-bg | #ddd |
 | Hover Border Color | variables.less |  | @pagination-hover-border | #ddd |
-
 | Active Text Color | variables.less |  | @pagination-active-color | #fff |
 | Active Background Color | variables.less |  | @pagination-active-bg | #448AFF |
 | Active Border Color | variables.less |  | @pagination-active-border | #fff |
-
 | Disabled Text Color | variables.less |  | @pagination-disabled-color | #777 |
 | Disabled Background Color | variables.less |  | @pagination-disabled-bg | #fff |
 | Disabled Border Color | variables.less |  | @pagination-disabled-border | #ddd |
-
 |  |  | .pager |  |  |
 | Background Color | variables.less |  | @pager-bg | #fff |
 | Border Color | variables.less |  | @pager-border | #ddd |
@@ -165,7 +164,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Active Border Color | variables.less |  | @pager-active-color | #fff |
 | Disabled Text Color | variables.less |  | @pager-disabled-color | #777 |
 
-### How to style Accordion Widget?
+## Style Accordion Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -173,7 +172,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Background Color | style.less | .app-accordion-panel | \- | #fff |
 | Heading Background Color | style.less | .panel-heading |  | transparent |
 
-### How to style Panel Widget?
+## Style Panel Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -184,7 +183,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Footer Background Color | variables.less |  | @panel-footer-bg | #fff |
 | Footer Padding | variables.less |  | @panel-footer-padding | 5px |
 
-### How to style Tabs Widget?
+## Style Tabs Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -196,11 +195,10 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Link Active Hover Background Color | variables.less |  | @nav-tabs-active-link-hover-bg | transparent |
 | Link Active Hover Text Color | variables.less |  | @nav-tabs-active-link-hover-color | #333 |
 | Link Active Hover Border Color | variables.less |  | @nav-tabs-active-link-hover-border-color | #ddd |
-
 | Disabled Link color | variables.less |  | @nav-disabled-link-color | #777 |
 | Disabled Link Hover Color | variables.less |  | @nav-disabled-link-hover-color | #777 |
 
-### How to style Wizard Widget?
+## Style Wizard Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -211,7 +209,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Active Step Background Color | style.less | .app-wizard-step.active a | \- | #448AFF |
 | Active Step Text Color | style.less | .app-wizard-step.active a | \- | #fff |
 
-### How to style Button Widget?
+## Style Button Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -222,25 +220,21 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Primary Button Text Color | variable.less | .btn-primary | @btn-primary-color | #fff |
 | Primary Button Background Color | variable.less |  | @btn-primary-bg | #448AFF |
 | Primary Button Border Color | variable.less |  | @btn-primary-border | #448AFF |
-
 | Text Color | variable.less | .btn-success | @btn-success-color | #fff |
 | Background Color | variable.less |  | @btn-success-bg | #4CAF50 |
 | Border Color | variable.less |  | @btn-success-border | #4CAF50 |
-
 | Text Color | variable.less | .btn-info | @btn-info-color | #fff |
 | Background Color | variable.less |  | @btn-info-bg | #03A9F4 |
 | Border Color | variable.less |  | @btn-info-border | #03A9F4 |
-
 | Text Color | variable.less | .btn-warning | @btn-warning-color | #fff |
 | Background Color | variable.less |  | @btn-warning-bg | #FFB300 |
 | Border Color | variable.less |  | @btn-warning-border | #FFB300 |
-
 | Text Color | variable.less | .btn-danger | @btn-danger-color | #fff |
 | Background Color | variable.less |  | @btn-danger-bg | #F44336 |
 | Border Color | variable.less |  | @btn-danger-border | #F44336 |
 | Disabled Text Color | variable.less |  | @btn-link-disabled-color | transparent |
 
-### How to style Calendar Widget?
+## Style Calendar Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -248,7 +242,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Text Color | style.less | .app-calendar | @wm-calendar-text-color | #ccc |
 | Current Date Text Color | style.less | .fc-today | \- | #448AFF |
 
-### How to style Date Widget?
+## Style Date Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -257,7 +251,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Header Background Color | style.less | thead | @wm-datepicker-header-bg | #128ff2 |
 | Date Text Hover Background Color | style.less | .btn | @wm-datepicker-btn-hover-bg | #f0f0f0 |
 
-### How to style Switch & Toggle Widget?
+## Style Switch & Toggle Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -265,7 +259,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Border Color | style.less | .btn | \- | #ddd |
 | Active Background Color | style.less | .app-switch-overlay | \- | #448AFF |
 
-### How to style Text Widget?
+## Style Text Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -286,7 +280,7 @@ WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. The var
 | Muted Text | variables.less | .text-muted | @text-muted | #777 |
 | Label Link Hover Text Color | variables.less |  | @label-link-hover-color | #fff |
 
-### How to style Message Widget?
+## Style Message Widget
 
 This is the widget used to display the [Notification messages](/learn/app-development/variables/notification-action/) in WaveMaker Apps.
 
@@ -299,20 +293,17 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Success Alert Backgorund Color | variables.less | .alert-success | @alert-success-bg | #4CAF50 |
 | Success Alert Text Color | variables.less |  | @alert-success-text | #fff |
 | Success Alert Border Color | variables.less |  | @alert-success-border | #4CAF50 |
-
 | Info Alert Backgorund Color | variables.less | .alert-info | @alert-info-bg | #03A9F4 |
 | Info Alert Text Color | variables.less |  | @alert-info-text | #fff |
 | Info Alert Border Color | variables.less |  | @alert-info-border | #03A9F4 |
-
 | Warning Alert Backgorund Color | variables.less | .alert-warning | @alert-warning-bg: | #FFB300 |
 | Warning Alert Text Color | variables.less |  | @alert-warning-text | #fff |
 | Warning Alert Border Color | variables.less |  | @alert-warning-border | #FFB300 |
-
 | Danger Alert Backgorund Color | variables.less | .alert-danger | @alert-danger-bg | #F44336 |
 | Danger Alert Text Color | variables.less |  | @alert-danger-text | #fff |
 | Danger Alert Border Color | variables.less |  | @alert-danger-border | #F44336 |
 
-### How to style Progress Bar Widget?
+## Style Progress Bar Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -326,7 +317,7 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Danger Progress Bar | variables.less |  | @progress-bar-danger-bg | #F44336 |
 | Info Progress Bar | variables.less |  | @progress-bar-info-bg | #03A9F4 |
 
-### How to style Spinner Widget?
+## Style Spinner Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -335,7 +326,7 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Text Color | style.less | .spinner-text | \- | #448AFF |
 | Icon Color | style.less | .spinner-image | \- | #448AFF |
 
-### How to style Dropdown Menu Widget?
+## Style Dropdown Menu Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -350,7 +341,7 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Link Active Background Color | variables.less |  | @dropdown-link-active-bg | #448AFF |
 | Link Disabled Color | variables.less |  | @dropdown-link-disabled-color | #777 |
 
-### How to style Navbar Widget?
+## Style Navbar Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -371,17 +362,16 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Inverse Navbar Border Color | variables.less |  | @navbar-inverse-border | #000 |
 | Inverse Navbar Link Text Color | variables.less |  | @navbar-inverse-link-color | #ccc |
 | Inverse Navbar Link Hover Text Color | variables.less |  | @navbar-inverse-link-hover-color | #fff |
-| Inverse Navbar Link Hover Background Color | variables.less |  | @navbar-inverse-link-hover-bg | transparent |
+| Inverse Navbar Link Hover Background Color | variables.less |  | @navbar-inverse-link-hover-bg | transparent|
 | Inverse Navbar Link Active Text Color | variables.less |  | @navbar-inverse-link-active-color | #fff |
 | Inverse Navbar Link Active Background Color | variables.less |  | @navbar-inverse-link-active-bg | #222 |
 | Inverse Navbar Link Disabled Text Color | variables.less |  | @navbar-inverse-link-disabled-color | #444 |
 | Inverse Navbar Link Disabled Background Color | variables.less |  | @navbar-inverse-link-disabled-bg | transparent |
-
 | Inverse Brand Text Color | variables.less |  | @navbar-inverse-brand-color | #ccc |
 | Inverse Brand Hover Color | variables.less |  | @navbar-inverse-brand-hover-color | #fff |
 | Inverse Brand Hover Background Color | variables.less |  | @navbar-inverse-brand-hover-bg | transparent |
 
-### How to style Popover Widget?
+## Style Popover Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -393,7 +383,7 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Arrow Width | variables.less |  | @popover-arrow-width | 10px |
 | Arrow Color | variables.less |  | @popover-arrow-color | #fff |
 
-### How to style Carousel Widget?
+## Style Carousel Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -407,7 +397,7 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Indicator Active Background Color | variables.less | .carousel-indicators | @carousel-indicator-active-bg | #fff |
 | Indicator Border Color | variables.less | .carousel-indicators | @carousel-indicator-border-color | #fff |
 
-### How to style Modal Dialog/Dialog Widget?
+## Style Modal Dialog/Dialog Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -425,7 +415,7 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Modal Medium | variables.less | .modal-md | @modal-md | 500px |
 | Modal Small | variables.less | .modal-sm | @modal-sm | 300px |
 
-### How to style Badge available for certain Widgets?
+## Style Badge available for certain Widgets
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -439,7 +429,7 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Active Text Color | variables.less |  | @badge-active-color | #448AFF |
 | Active Background Color | variables.less |  | @badge-active-bg | #fff |
 
-### How to style Segmented Control (Mobile) Widget?
+## Style Segmented Control (Mobile) Widget
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -449,7 +439,7 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Active border Color | style.less | .btn.active | \- | #fff |
 | Active Text Color | style.less | .btn.active | \- | #fff |
 
-### How to style Tab Bar (Mobile)?
+## Style Tab Bar (Mobile)
 
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
@@ -459,38 +449,5 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Border Color | variables.less |  | @navbar-default-border | transparent |
 | Text Color | variables.less |  | @navbar-default-color | #000 |
 
-Customize Themes
-
-- [1\. How to change background of an application](#background)
-- [2\. How to use web fonts in theme](#web-fonts)
-- [3\. How to style app components](#styling)
-    - [i. header](#head)
-    - [ii. footer](#foot)
-    - [iii. tonav](#topnav)
-    - [iv. leftnav](#leftnav)
-    - [v. rightnav](#rightnav)
-    - [vi. Cards](#cards)
-    - [vii. Data Table](#data-table)
-    - [viii. List](#list)
-    - [ix. pagination](#pagin)
-    - [x. Accordion](#accordion)
-    - [xi. Panel](#panel)
-    - [xii. Tabs](#tabs)
-    - [xiii. Wizard](#wizard)
-    - [xiv. Button](#button)
-    - [xv. Calendar](#calendar)
-    - [xvi. Date](#date)
-    - [xvii. Switch & Toggle](#switch-toggle)
-    - [xviii. Text](#text)
-    - [xix. Message](#message)
-    - [xx. Progress Bar](#progress-bar)
-    - [xxi. Spinner](#spinner)
-    - [xxii. Dropdown Menu](#dropdown-menu)
-    - [xxiii. Navbar](#navbar)
-    - [xxiv. Popover](#popover)
-    - [xxv. Carousel](#carousel)
-    - [xxvi. Modal Dialog](#dialog)
-    - [xxvii. Badge](#badge)
-    - [xxviii. Segmented Control (Mobile)](#segmented-control)
-    - [xxix. Tabbar (Mobile)](#tab-bar)
-- [4\. How to customize existing theme](/learn/how-tos/customize-existing-theme/)
+## See Also
+[How to customize existing theme](/learn/how-tos/customize-existing-theme/)

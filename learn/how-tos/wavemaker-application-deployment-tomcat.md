@@ -21,8 +21,8 @@ The minimum required JDK version is 1.8.
 
 - Tomcat has to be installed & running
 - Tomcat user credential that has the role of
-    - “manager-gui” for Tomcat v8.x & v9.x
-- [WaveMaker application war file to be deployed](/learn/app-development/deployment/deployment-web-server/#war-file-generation).
+    - `manager-gui` for Tomcat `v8.x` and `v9.x`
+- [WaveMaker application war file to be deployed](/learn/app-development/deployment/deployment-web-server/#generate-a-war-file).
 
 ## Deployment Process
 
@@ -32,7 +32,7 @@ The deployment on Tomcat can be done either by copying the war file into web app
 
 The instructions are same for all versions of Tomcat.
 
-1. Copy the war file to _/webapps_ folder.
+1. Copy the war file to `/webapps` folder.
 2. Tomcat will automatically detect the newly copied war file and start deploying. You can check the status on the Tomcat console.
 3. After the deployment is successful you can access the application at `http://localhost:8080/<ApplicationName>`.
 

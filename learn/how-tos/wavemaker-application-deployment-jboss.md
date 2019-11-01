@@ -1,5 +1,5 @@
 ---
-title: "WaveMaker Application deployment to JBoss"
+title: "Application deployment to JBoss"
 id: ""
 sidebar_label: "JBoss - WildFly"
 ---
@@ -7,21 +7,21 @@ Learn how to deploy your WaveMaker app to JBoss server.
 
 ---
 
-WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 1.8. This section walks through the steps to deploy WaveMaker app to **JBoss - WildFly**. You can know more about [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/) from here.
+WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 1.8. This section walks through the steps to deploy WaveMaker app to **JBoss - WildFly**. For more infomation, see [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/).
 
 ## Prerequisites
 
-**JBoss Server setup**
+#### JBoss Server setup
 
 - You need to configure JBoss server. [Learn more](http://wildfly.org/downloads/). 
 
 :::note
-Deployment has been tested on JBoss WildFly versions 11.0.0.CR1 and 10.1.0.Final.
+Deployment has been tested on JBoss WildFly versions `11.0.0.CR1` and `10.1.0.Final`.
 :::
 
 - Login to JBoss server with valid username and password.
 
-**Start JBoss Server**
+#### Start JBoss Server
 
 - Navigate to `\jboss-[version]\jboss-[version]\bin`.
     - Windows: Double click on _standalone.bat_ file to start JBoss server
@@ -41,7 +41,7 @@ From WaveMaker Studio, for the app that you want to deploy to JBoss, Export the 
 The screenshots from JBoss website were current at the time of documentation. The actual images might differ.
 :::
 
-**JBoss-WildFly**
+### JBoss-WildFly
 
 - Copy prepared war file into JBoss home dir\\standalone\\deployments
 - Open JBoss terminal and check app deployment logs for deployment status
@@ -51,7 +51,7 @@ The screenshots from JBoss website were current at the time of documentation. Th
 ---
 ## Configure JNDI in JBOSS Server
 
-**Configure JNDI for Oracle database server**
+#### Configuring JNDI for Oracle database server
 
 - Navigate to folder `..\Jboss Home Directory\modules\system\layers\base\com`. Create structure `..\oracle\oracle\main`.
 - Copy `ojdbc6-11.2.0.jar` in the main directory.
@@ -96,28 +96,23 @@ The screenshots from JBoss website were current at the time of documentation. Th
 </subsystem>
 ```   
 
-**Use JNDI name in the application using Config Profiles**
+#### Use JNDI name in the application using Config Profiles
 
 - Click on settings menu in project workspace and create a new profile.
 - Select datasource as JNDI and provide jndi name in the respective text box.
-- Save profile and close settings. [![](/learn/assets/JBoss_JNDI1.png)](/learn/assets/JBoss_JNDI1.png)
-- Export war for the newly created profile. [![](/learn/assets/JBoss_JNDI2.png)](/learn/assets/JBoss_JNDI2.png)
+- Save profile and close settings. 
+	[![](/learn/assets/JBoss_JNDI1.png)](/learn/assets/JBoss_JNDI1.png)
+- Export war for the newly created profile. 
+	[![](/learn/assets/JBoss_JNDI2.png)](/learn/assets/JBoss_JNDI2.png)
 - Save the war file
 
-**Deploy to JBOSS Server** [click here](#process)
 
 ## Troubleshooting
 
-- - To know on which port the application is being running open \\jboss-home-directory\\standalone\\configuration\\standalone.xml
-    - And search <socket-binding name="http"
+- - To know on which port the application is being running open `\jboss-home-directory\standalone\configuration\standalone.xml`
+    - And search `<socket-binding name="http"`
     - On this port the application will be running.
 
 [![](/learn/assets/JBoss_troubleshoot.png)](/learn/assets/JBoss_troubleshoot.png)
 
-**Deployment to JBoss**
 
-- [i. Prerequisites](#prerequisites)
-- [ii. Preparing WAR File](#prepare)
-- [iii. Deploy to JBoss Server](#process)
-- [iv. Deployment for JNDI Datasource](#JNDI)
-- [v. Troubleshooting](#troubleshooting)

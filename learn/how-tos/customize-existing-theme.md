@@ -2,7 +2,7 @@
 title: "Customize an Existing Theme"
 id: ""
 ---
-
+---
 Themes are used to provide consistent usage of font, color, border, and layout throughout the application. WaveMaker provides sample themes that you can apply to your app. If needed you can make changes to the same. This How-To talks about customizing an existing WaveMaker theme. The steps include:
 
 1. Apply Theme to WaveMaker app,
@@ -11,14 +11,17 @@ Themes are used to provide consistent usage of font, color, border, and layout t
 
 ## Steps to apply Theme
 
-1. In the Project Toolbar bar, select Themes option. [![](/learn/assets/theme_change.png)](/learn/assets/theme_change.png)
+1. In the Project Toolbar bar, select Themes option. 
+[![](/learn/assets/theme_change.png)](/learn/assets/theme_change.png)
 2. It opens the theme window.
 3. Select the desired theme or search the theme name and click on Apply button [![](/learn/assets/Themes.png)](/learn/assets/Themes.png)
 4. Run the project, by clicking on Run button in the menu bar. The theme will be applied to all the pages present in the project.
 
 ## **Customize WaveMaker Theme**
 
-NOTE: Before customizing the WaveMaker theme set-up the theme repository following [instructions from here](/learn/app-development/ui-design/themes/#create-theme).
+:::note
+Before customizing the WaveMaker theme set-up the theme repository following [instructions from here](/learn/app-development/ui-design/themes/#create-theme).
+:::
 
 To customize the existing theme in WaveMaker, perform the following steps:
 

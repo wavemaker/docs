@@ -89,14 +89,14 @@
 
 .admonition-note {
   background-color: rgba(230, 213, 231, .3);
-  border-left: 8px solid #A274AE;
+  border-left: 8px solid #aa2dae;
 }
 
 .admonition-note h5 {
-  color: #A274AE;
+  color: #aa2dae;
 }
 
 .admonition-note .admonition-icon svg {
-  stroke: #A274AE;
-  fill: #A274AE;
+  stroke: #aa2dae;
+  fill: #aa2dae;
 }
