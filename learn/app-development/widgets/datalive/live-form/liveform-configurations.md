@@ -1,6 +1,8 @@
 ---
 title: "Live Form - Configurations"
 id: ""
+sidebar_label: "Configuration"
+---
 ---
 
 The main features of a Live Form are as follows:

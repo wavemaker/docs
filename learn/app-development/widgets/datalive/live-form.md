@@ -1,11 +1,13 @@
 ---
 title: "Live Form Widget"
 id: "live-form"
+sidebar_label: "Overview"
+---
 ---
 
-**Live Form** widget provides a columnar group of input elements for user entry. Live Form can be bound to a database through Database CRUD variables and can be used to perform CRUD operations on the underlying database via REST API call. These CRUD APIs are auto-generated at the time of [Database Integration](http://[supsystic-show-popup id=106])
+**Live Form** widget provides a columnar group of input elements for user entry. Live Form can be bound to a database through Database CRUD variables and can be used to perform CRUD operations on the underlying database via REST API call. These CRUD APIs are auto-generated at the time of Database Integration.
 
-Live Form in WaveMaker, when associated with the current item/selected item/row of a List or Data Table, provides values for update operations.
+Live Form in WaveMaker, when associated with the current `item/selected item/row` of a List or Data Table, provides values for update operations.
 
 The Live Form fields are auto-generated from the Database CRUD Variable to which it is bound and can be configured to:
 
