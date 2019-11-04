@@ -1,6 +1,7 @@
 ---
 title: "Live Filter Widget"
 id: "live-filter"
+sidebar_label: "Overview"
 ---
 ---
 

@@ -1,9 +1,11 @@
 ---
 title: "Live Filter - Field Configuration"
 id: ""
+sidebar_label: "Field Configuration"
+---
 ---
 
-### Configure filter fields display options
+## Configure filter fields display options
 
 **Filter Fields** can be set from the _Fields_ tab of **Advanced Settings** property. Using this option you can select the columns for display on the Live Filter. Ordering can also be changed by using the buttons at the bottom of the designer window. Further, you can set:
 
@@ -17,7 +19,9 @@ id: ""
     - _end_ for matching the ending of the string,
     - _anywhere_ for matching any part of the string, or
     - _exact_ for matching the entire string;
-- **filter criteria** can be applied to referenced entities for Inline Editable and Quick Edit Data Tables ([see here for usage](http://pm.wavemaker.com/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets/)).
+- **filter criteria** can be applied to referenced entities for Inline Editable and Quick Edit Data Tables 
+
+([see here for usage](http://pm.wavemaker.com/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets/)).
 
 [![](/learn/assets/filter_fields.png)](/learn/assets/filter_fields.png)
 

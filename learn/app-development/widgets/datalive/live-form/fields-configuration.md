@@ -1,9 +1,10 @@
 ---
 title: "Live Form - Fields Configuration"
 id: ""
+sidebar_label: "Fields Configuration"
 ---
-
-### Configure form fields display options
+---
+## Configure form fields display options
 
 You can set the following properties of the elements of the Live Form from the **Advanced Settings** properties:
 
@@ -22,7 +23,7 @@ You can set the following properties of the elements of the Live Form from the *
 
 [![](/learn/assets/LF_Fields.png)](/learn/assets/LF_Fields.png)
 
-### Live Form Validations
+## Live Form Validations
 
 There are various ways in which Form fields can be validated depending upon the underlying data type. You can see these options in the properties panel for the selected field on the canvas.
 
@@ -33,27 +34,29 @@ There are various ways in which Form fields can be validated depending upon the 
 5. For **Date Type fields**, **Min Date, Max Date, Exclude Days and Dates** can be set. In this case, the date picker will not have the invalid dates available for selection. [![](/learn/assets/LF_valid.png)](/learn/assets/LF_valid.png)
 6. You can invoke the **hightlightInvalidFields** method on _Save_ action from the Advanced Settings, to highlight all invalid fields in red and display appropriate error messages. [![](/learn/assets/AS_actions_valid.png)](/learn/assets/AS_actions_valid.png)
 7. For additional checks, you can use the **Before Service Call** event to perform any validation checks. For example, we want to make sure that the password entry is at least six characters in length. Select the **Events** panel and select Javascript for **Before Service Call** and enter the following code. This will ensure that before updating the data source, the JavaScript is executed.
-    
-    Page.liveform1Beforeservicecall = function($data, $event) {
-            function isValidData($data) {
-                /\*restrict password to be minimum of 6 characters\*/
-                if ($data.password) {
-                    if ($data.password.length < 6) {
-                        return {
-                            'error': "Password too small"
-                        };
-                    }
-                } else {
+
+```    
+Page.liveform1Beforeservicecall = function($data, $event) {
+        function isValidData($data) {
+            /\*restrict password to be minimum of 6 characters\*/
+            if ($data.password) {
+                if ($data.password.length < 6) {
                     return {
-                        'error': "Password field required"
+                        'error': "Password too small"
                     };
                 }
+            } else {
+                return {
+                    'error': "Password field required"
+                };
             }
-            return isValidData($data)
-        };
+        }
+        return isValidData($data)
+    };
+```
     
 
-# Using Widgets for Live Form Fields
+## Using Widgets for Live Form Fields
 
 Widgets like select, autocomplete, radioset, checkboxset and switch can be used for various fields within Live Form. These widgets can be used to show the predefined options to the user.
 

@@ -713,6 +713,7 @@
     "Live Filter": 
     [ 
       "app-development/widgets/datalive/live-filter",
+      "app-development/widgets/datalive/livefilter/live-filter-basic-usage",
       "app-development/widgets/datalive/livefilter/live-filter-data-source",
       "app-development/widgets/datalive/livefilter/livefilter-layouts",
       "app-development/widgets/datalive/livefilter/filter-configurations",
