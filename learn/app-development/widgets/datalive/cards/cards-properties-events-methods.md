@@ -6,7 +6,9 @@ sidebar_label: "Properties, Events & Methods"
 ---
 ## Properties
 
+:::important
 Card Widget is contained within a List and as such, you can set the [List Properties](/learn/app-development/widgets/datalive/list/list-properties-events-methods/#properties) too.
+:::
 
 | **Event** | **Description** |
 | --- | --- |
@@ -36,7 +38,7 @@ Card Widget is contained within a List and as such, you can set the [List Proper
 | Title Icon class | This bindable property defines the class of the icon that is applied to the button. |
 | Icon Url | You can give Url of the image. |
 
-# Events
+## Events
 
 | **Event** | **Description** |
 | --- | --- |
@@ -56,51 +58,77 @@ Card Widget is contained within a List and as such, you can set the [List Proper
 | On reorder | This event is triggered when the item in a list is reordered. For this, the Enable Reorder property has to be set. |
 | On selection limit exceed | This event is triggered when selected items cross the value set for the Selection Limit property. |
 
-# Methods
+## Methods
 
 The card has few methods exposed on widget scope which can be accessed via JavaScript. For the following script samples, we are considering the hrdb Employee table. EmployeeList is bound to the Live Variable corresponding to the Employee table.
 
-- **Clear list data**:
-    
-    Page.Widgets.EmployeeList.clear(); //Clear the list items.
-    
-- **To select a list item**:
-    
-    Page.Widgets.EmployeeList.selectItem(0); 
-    //Selects first item , the parameter can be index or object.
-    
-- **To deselect item**:
-    
-    Page.Widgets.EmployeeList.deselectItem(0); 
-    //Deselects first item, the parameter can be index or object.
-    
-- **To change navigation**:
-    
-    Page.Widgets.EmployeeList.navigation = ‘Basic’; 
-    //Changes navigation type to Basic.
-    
-- **To interact with widgets of selected item**:
-    
-    Page.Widgets.EmployeeList.selectedItemWidgets\[0\].Name.caption = ‘Eric’; 
-    //Changes caption for Name widget of selected item to ‘Eric’.
-    
-- **Modify selected item**:
-    
-    Page.Widgets.EmployeeList.selecteditem = 0; 
-    //selects first item in the list.
-    
-- **To change the value of currentItem**: Note: currentItem and currentItemWidgets can’t be accessed through the script. But those were given as parameters for events of widgets inside list widget template. currentItem is given as item in the arguments.
-    
-    item.username = ‘Eric’; //Sets username field value to ‘Eric’;
-    
-- **To change the caption of username widget for currentItem**: Note: currentItem and currentItemWidgets can’t be accessed through the script. But those were given as parameters for events of widgets inside list widget template. currentItem is given as item in the arguments.
-    
-    currentItemWidgets.Name.caption = ‘Eric’; 
-    //Sets caption of Name widget to Eric.
-    
-- **To preserve the reordered list**: Enable reorder allows the user to change the order of the items in the List in runtime, but the order after reordering do not persist after refresh. _onReorder_ callback event is triggered when the order of the items in the List is changed. In the script, $data parameter has the complete order after each reorder. This data can be used to make the reorder permanent.
-    
-    Page.livelist1Reorder = function ($event, $data, $changedItem) { 
-          //$data is the newly reordered array of items.
-    };
-    
+### `Clear list data`
+
+```    
+Page.Widgets.EmployeeList.clear(); 
+//Clear the list items.
+```
+
+### `Select a list item`
+
+```
+Page.Widgets.EmployeeList.selectItem(0); 
+//Selects first item , the parameter can be index or object.
+```  
+
+### `Deselect item`
+
+```    
+Page.Widgets.EmployeeList.deselectItem(0); 
+//Deselects first item, the parameter can be index or object.
+```
+
+### `Change navigation`
+
+```
+Page.Widgets.EmployeeList.navigation = ‘Basic’; 
+//Changes navigation type to Basic.
+```
+
+### `Interact with widgets of selected item`
+
+```
+Page.Widgets.EmployeeList.selectedItemWidgets[0].Name.caption = ‘Eric’; 
+//Changes caption for Name widget of selected item to ‘Eric’.
+```
+
+### `Modify selected item`
+
+```    
+Page.Widgets.EmployeeList.selecteditem = 0; 
+//selects first item in the list.
+```    
+### `Change the value of currentItem`
+
+:::note
+`currentItem` and `currentItemWidgets` can’t be accessed through the script. But those were given as parameters for events of widgets inside list widget template. `currentItem` is given as item in the arguments.
+:::
+
+```    
+item.username = ‘Eric’; //Sets username field value to ‘Eric’;
+```
+
+### `Change the caption of username widget for currentItem`
+
+:::note
+`currentItem` and `currentItemWidgets` can’t be accessed through the script. But those were given as parameters for events of widgets inside list widget template. `currentItem` is given as item in the arguments.
+:::
+
+```    
+currentItemWidgets.Name.caption = ‘Eric’; 
+//Sets caption of Name widget to Eric.
+```
+
+### `Preserve the reordered list`
+Enable reorder allows the user to change the order of the items in the List in runtime, but the order after reordering do not persist after refresh. `onReorder` callback event is triggered when the order of the items in the List is changed. In the script, `$data` parameter has the complete order after each reorder. This data can be used to make the reorder permanent.
+
+```
+Page.livelist1Reorder = function ($event, $data, $changedItem) { 
+        //$data is the newly reordered array of items.
+};
+```    

@@ -2,8 +2,11 @@
 title: "Breadcrumb"
 id: ""
 ---
+---
 
-![](/learn/assets/laptop.png)  **NOTE**: Breadcrumb is available only for web responsive apps.
+:::note
+Breadcrumb is available only for web responsive apps.
+:::
 
 **Breadcrumb** is a _Navigation widget_ which will specify the path taken to reach the current page. Breadcrumb widget is to _show the site hierarchy_. Breadcrumb navigation can greatly enhance the accessibility of the websites by indicating the user where they are in relation to the rest of the site when they navigate.
 
@@ -11,7 +14,7 @@ Most websites organize their content by a hierarchy. Some are shallow and some a
 
 [![](/learn/assets/bc_run2.png)](/learn/assets/bc_run2.png)
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -31,12 +34,7 @@ Most websites organize their content by a hierarchy. Some are shallow and some a
 | **Format** |
 | Horizontal Align | Set text alignment horizontally. |
 
-[6\. Navigation Widgets](/learn/app-development/widgets/widget-library/#nav-widgets)
+## See Also
 
-- [6.1 Breadcrumb](/learn/app-development/widgets/navigation/breadcrumb/)
-    - [○ Properties](#properties)
-    - [○ Use Cases](/learn/app-development/widgets/navigation/breadcrumb-use-cases/)
-- [6.2 Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu/)
-- [6.3 Nav](/learn/app-development/widgets/navigation/nav/)
-- [6.4 Nav Bar](/learn/app-development/widgets/navigation/nav-bar/)
-- [6.5 Popover](/learn/app-development/widgets/navigation/popover/)
+[Creating a Breadcrumb](/learn/app-development/widgets/navigation/breadcrumb-use-cases/)  
+[Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu/)  

@@ -71,10 +71,23 @@ From the drop-down list of the variables available in the application. You can s
 
 :::important
 - When you select the variables, it shows the dataset that it is bound to.
-- Data Configuration options are already set for this variable, so you do not see those options in this scenario.
+- Data Configuration options are already set for this variable, so you do not see those options in this scenario. 
 :::
 
 [![](/learn/assets/cards_basic_data3_2.png)](/learn/assets/cards_basic_data3_2.png)
+
+#### Modify data request configuration
+
+Configure `Records per request`, `Update data on input change`, `Request data on page load` from the variable dialog.
+
+- Select the **Card** item from the page. 
+- Navigate to **Card Properties** and go to `Dataset: Value`.
+- Click the `Value:link` to open the Variable dialog.
+- Update the **Properties** tab and save & close. 
+
+:::tip
+For modifying widget data settings, you must modify the data-variable and not the actual widget settings.
+::: 
 
 ## Example 4: Binding to Widget
     
