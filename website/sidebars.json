@@ -277,6 +277,7 @@
         "ids": 
         [
         "hybrid-mobile/mobile-page-concepts",
+        "hybrid-mobile/gesture-support",
         "hybrid-mobile/mobile-tabbar",
         "hybrid-mobile/mobile-navbar"    
         ]
@@ -291,7 +292,8 @@
         "hybrid-mobile/debugging-mobile-apps",        
         "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
         "hybrid-mobile/mobile-build-android",
-        ""
+        "hybrid-mobile/mobile-build-phonegap",
+        "hybrid-mobile/mobile-build-manual"
         ]
       },
 
@@ -367,8 +369,7 @@
 
           "- UI design":
           [
-            "responsive-web/web-ui-design",
-            "hybrid-mobile/mobile-page-concepts",
+            "responsive-web/web-ui-design",            
             "how-tos/passing-parameters-pages",
             "how-tos/passing-parameters-partial-page",
             "how-tos/use-static-variable-pass-data-pages",
@@ -458,7 +459,6 @@
 
           "- Mobile gesture":
           [
-            "hybrid-mobile/gesture-support",
             "how-tos/setting-swipe-gestures-list-widget",
             "how-tos/working-pull-refresh"
           ],
