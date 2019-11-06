@@ -21,7 +21,7 @@ In the Design module, you will learn how to create pages, use widgets, and apply
 ### How it works
 WaveMaker app is a collection of pages. Pages load asynchronously on demand. Each page is composed of different UI elements and [widgets](/learn/app-development/widgets/widgets-library). These UI elements enable user interaction and get data from the backend services. You can set navigation and interaction rules across pages.
 
-## Quick start guide 
+## Get Started with UI Deisgn
 
 |To | See |
 |---|---|

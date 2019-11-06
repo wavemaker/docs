@@ -18,6 +18,7 @@ Each of the directives represents an element that has to exist at that point of
 Custom markup can be added as needed directly in the code (if you are familiar with it). If not, WaveMaker automatically generates code when the elements are dragged on the canvas. This mode shows the styles that are associated with the particular widget. For instance, consider the **Button** widget. In the **Design** mode, drag and drop a **Button** widget and name it _formSubmitButton_. Set some of the properties of the _button_, say **Left Margin**, **Right Margin** and **Top Margin**, using the **Properties Panel**.
 
 Now, switch to **Markup** mode. You can see the corresponding markup for the _button _as shown below.
+
 ```
  <wm-button class="btn-default" caption="Button" type="button" margin="unset 0.5em" 
 name="formSubmitButton" on-click="formSubmitButtonClick($event, widget)"></wm-button>
@@ -39,9 +40,9 @@ Here is an example to illustrate the process. Suppose you have a button named 
 - Call the _alert_ function to display an alert when the user clicks _formSubmitButton_ as shown below.
 
 ```    
-    Page.formSubmitButtonClick = function($event, widget) {
-        alert('Here is an alert from JavaScript');
-    };
+Page.formSubmitButtonClick = function($event, widget) {
+    alert('Here is an alert from JavaScript');
+};
 ```    
 
 Once you have saved these changes and run the application, clicking on the button will display an alert box with the above message.
@@ -50,24 +51,30 @@ Once you have saved these changes and run the application, clicking on the butto
 
 There are four ways in which you can apply a custom style to your app:
 
-1. **Inline Styling**: This is the locally applied style for individual widget or container, used for alignment (padding, margin, border etc.) and applying custom style such as h2, btn-info etc. The class property for widgets is rendered as a **class picker**. This is a multi select drop down list with various classes that are contextual to the widget displayed. You can select classes and see the effect of those applied classes on the canvas with immediate effect. [![](/learn/assets/styles.png)](/learn/assets/styles.png) A comprehensive list of the available classes can be [wm-widgets](/learn/assets/wm-widgets.pdf). In addition to the list, you can create your own classes and use them, as mentioned below.
-2. **Style editor**: In the **Style** mode, you can create and edit styles for the page using CSS. Let us create a CSS class for a button _formSubmitButton_.
+### Inline Styling
+This is the locally applied style for individual widget or container, used for alignment (padding, margin, border etc.) and applying custom style such as h2, btn-info etc. The class property for widgets is rendered as a **class picker**. This is a multi select drop down list with various classes that are contextual to the widget displayed. You can select classes and see the effect of those applied classes on the canvas with immediate effect. 
+[![](/learn/assets/styles.png)](/learn/assets/styles.png) 
+
+A comprehensive list of the available classes can be [wm-widgets](/learn/assets/wm-widgets.pdf). In addition to the list, you can create your own classes and use them, as mentioned below.
+
+### Style editor
+In the **Style** mode, you can create and edit styles for the page using CSS. Let us create a CSS class for a button _formSubmitButton_.
     
-    - In the **Design** mode, select the button named _formSubmitButton_.
-    - In the **Properties Panel** on the right side, click on **Styles**.
-    - Enter the class name, say _buttonSample_, for the property **ButtonClass**. This property defines the CSS class that is supposed to be associated _formSubmitButton_.
-    - Switch to **Style** mode and enter the following:
-    ```    
-        .wm-app .buttonSample {
-            color: red
-        };
-    ```    
-    - This would make the _formSubmitButton_ appear red due to the properties mentioned in the _buttonSample_ CSS class.
-    
-    These style changes can be made at two levels:
-    1. **Page Styling**: Page-only overrides can be applied by making entries to the corresponding _page.css_ file. This option can be used mostly for alignment and custom styles localized to the page.
-    2. **App Styling**: Styles over all pages of the App can be applied by making entries in the corresponding _app.css_ file. This can be used to override theme to apply a custom style to widgets.
-    3. **Theme**: These can be used across all widgets of the app. These can be reused over multiple apps for a standard look-n-feel. [More about Themes](/learn/app-development/ui-design/themes/).
+- In the **Design** mode, select the button named _formSubmitButton_.
+- In the **Properties Panel** on the right side, click on **Styles**.
+- Enter the class name, say _buttonSample_, for the property **ButtonClass**. This property defines the CSS class that is supposed to be associated _formSubmitButton_.
+- Switch to **Style** mode and enter the following:
+```    
+.wm-app .buttonSample {
+    color: red
+};
+```    
+- This would make the _formSubmitButton_ appear red due to the properties mentioned in the _buttonSample_ CSS class.
+
+These style changes can be made at two levels:
+1. **Page Styling**: Page-only overrides can be applied by making entries to the corresponding _page.css_ file. This option can be used mostly for alignment and custom styles localized to the page.
+2. **App Styling**: Styles over all pages of the App can be applied by making entries in the corresponding _app.css_ file. This can be used to override theme to apply a custom style to widgets.
+3. **Theme**: These can be used across all widgets of the app. These can be reused over multiple apps for a standard look-n-feel. [More about Themes](/learn/app-development/ui-design/themes/).
 
 In this document, we have seen how Markup, Style and Script mode for a page can be used to customize the page components of your app. Be aware that this needs to be done with caution and it might result in breaking of the page if you are not well versed with HTML and CSS.
 

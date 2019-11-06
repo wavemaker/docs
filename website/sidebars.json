@@ -9,20 +9,20 @@
 
     "App design": 
       [     
-            "app-development/ui-design/designing-app",
+            "app-development/ui-design/designing-app",            
             "app-development/ui-design/page-creation",
             "app-development/ui-design/design-overview",            
-            "app-development/widgets/ui-elements",                                  
-            "app-development/ui-design/page-artefacts",                       
+            "app-development/widgets/ui-elements",                       
             
         {
           "type": "subcategory",
           "label": "Page Configure",
           "ids": 
             [
+            "app-development/ui-design/page-concepts/page-layouts",
+            "app-development/ui-design/page-artefacts",
             "app-development/ui-design/page-concepts/partial-pages",
             "app-development/ui-design/page-concepts/page-parameters",
-            "app-development/ui-design/page-concepts/page-layouts",
             "app-development/ui-design/page-concepts/page-navigation",
             "app-development/ui-design/page-concepts/page-events",
             "app-development/ui-design/use-cases-ui-design"         
@@ -34,7 +34,15 @@
           "label": "Apply Styles",
           "ids": 
             [
-              "app-development/ui-design/themes",
+              "app-development/ui-design/themes"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Advanced",
+          "ids": 
+            [
               "app-development/ui-design/creating-themes",
               "app-development/ui-design/page-concepts/page-templates" 
             ]
@@ -46,33 +54,6 @@
         "app-development/services/creating-backend-services",         
         "app-development/services/api-designer/api" 
       ],         
-
-      "- Web services": 
-      [   
-            "app-development/services/web-services/web-services",            
-        {
-          "type": "subcategory",
-          "label": "Services",
-          "ids": 
-          [
-            "app-development/services/web-services/rest-services",
-            "app-development/app-security/securing-server-side-properties-rest-services",
-            "app-development/services/web-services/oauth-2-0-rest-services",
-            "app-development/services/web-services/working-with-soap-services",              
-            "app-development/services/web-services/working-with-websockets"                 
-          ]       
-        },
-        {
-          "type": "subcategory",
-          "label": "Web Service Variables & API",
-          "ids": 
-            [ 
-            "app-development/variables/web-service",
-            "app-development/services/api-designer/web-service-apis"         
-            ]
-        }  
-
-      ],
 
       "- Data services": 
       [
@@ -127,6 +108,34 @@
         }       
         
       ],  
+
+      "- Web services": 
+      [   
+            "app-development/services/web-services/web-services",            
+        {
+          "type": "subcategory",
+          "label": "Services",
+          "ids": 
+          [
+            "app-development/services/web-services/rest-services",
+            "app-development/app-security/securing-server-side-properties-rest-services",
+            "app-development/services/web-services/oauth-2-0-rest-services",
+            "app-development/services/web-services/working-with-soap-services",              
+            "app-development/services/web-services/working-with-websockets"                 
+          ]       
+        },
+        {
+          "type": "subcategory",
+          "label": "Web Service Variables & API",
+          "ids": 
+            [ 
+            "app-development/variables/web-service",
+            "app-development/services/api-designer/web-service-apis"         
+            ]
+        }  
+
+      ],
+
 
       "- Java services": 
       [   
@@ -342,6 +351,7 @@
       [
           "app-development/wavemaker-overview/platform-overview",                                              
           "app-development/ui-design/page-concepts",
+          "responsive-web/web-ui-design",
           "app-development/wavemaker-overview/artifacts-repository",
           "app-development/services/backend-architecture",
           "app-development/variables/integration-binding-layer"
@@ -368,8 +378,7 @@
           ],
 
           "- UI design":
-          [
-            "responsive-web/web-ui-design",            
+          [                       
             "how-tos/passing-parameters-pages",
             "how-tos/passing-parameters-partial-page",
             "how-tos/use-static-variable-pass-data-pages",
