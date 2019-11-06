@@ -1,11 +1,13 @@
 ---
-title: "Gesture SupportBeta"
+title: "Gesture Support Beta"
 id: ""
+sidebar_label: "Gesture Support"
+---
 ---
 
 In order to bring the Mobile app experience closer to that of Native apps, Gesture feature has been introduced. Using this the user can swipe to open/close Left panel, navigate to the next Tab and view the successive Carousel pane contents.
 
-# Swipe Gestures
+## Swipe Gestures
 
 A swipe gesture involves the app responding when the user moves one or more fingers across the screen in a horizontal - left or right direction. [![](/learn/assets/swipe.png)](/learn/assets/swipe.png)In WaveMaker Mobile Apps, Gestures are turned on by default. This will cause:
 
@@ -24,27 +26,3 @@ This feature is in Beta state and as such there are few limitations.
     <wm-left-panel content="leftnav" name="left\_panel1" gestures ="off"></wm-left-panel>
     
 
-B.2 Mobile UI Design
-
-- 2.1 Mobile Page Concepts
-    - [i. Page Layouts](/learn/hybrid-mobile/mobile-page-concepts/#page-layouts)
-    - [ii. Page Navigation & Actions](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
-    - [iii. Page Transitions & Gestures](/learn/hybrid-mobile/mobile-page-concepts/#page-transitions-gestures)
-- 2.2 Mobile Tabbar
-    - [i. Features](/learn/hybrid-mobile/mobile-tabbar/#features)
-    - [ii. Properties](/learn/hybrid-mobile/mobile-tabbar/#properties)
-    - [iii. Events](/learn/hybrid-mobile/mobile-tabbar/#events)
-    - [iv. Use Cases](/learn/hybrid-mobile/mobile-tabbar/#use-cases)
-- 2.3 Mobile Navbar
-    - [i. Features](/learn/hybrid-mobile/mobile-navbar/#features)
-    - [ii. Properties](/learn/hybrid-mobile/mobile-navbar/#properties)
-    - [iii. Events](/learn/hybrid-mobile/mobile-navbar/#events)
-    - [iv. Use Cases](/learn/hybrid-mobile/mobile-navbar/#use-cases)
-- 2.4 Mobile & Device Widgets
-    - [i. Media List](/learn/app-development/widgets/mobile-widgets/media-list/)
-    - [ii. Segmented Control](/learn/app-development/widgets/mobile-widgets/segmented-control/)
-    - [iii. Barcode Scanner](/learn/app-development/widgets/mobile-widgets/barcode-scanner/)
-    - [iv. Camera](/learn/app-development/widgets/mobile-widgets/camera/)
-- [2.5 Gesture Support](#)
-    - [i. Swipe Gesture](#swipe)
-    - [ii. Limitations](#limit)

@@ -51,7 +51,11 @@ The **Build** process for a mobile application can be performed through Automate
 
 [![](/learn/assets/Hybrid_App_Installer.png)](/learn/assets/Hybrid_App_Installer.png) WaveMaker supports you to build mobile applications in the following ways:
 
-- **[Build for Android](/learn/hybrid-mobile/mobile-build/#android-build)**: Through this build, you can generate APK files which can be signed and hosted on PlayStore.
+### 1. Build for Android
+
+Through this build, you can generate APK files which can be signed and hosted on PlayStore. For more information, see [Build for Android](/learn/hybrid-mobile/mobile-build-android). 
+
+
 - **[Send to PhoneGap](/learn/hybrid-mobile/mobile-build/#send-to-phonegap)**: Through this build, it provides you a complete package of building both apk/ipa files for Android and iOS platforms.
 - **[Manual Build](/learn/hybrid-mobile/mobile-build/#cordova-build)**: Through this build, you can generate or download a .zip file which can be further developed to be hosted on any mobile platform.
 
