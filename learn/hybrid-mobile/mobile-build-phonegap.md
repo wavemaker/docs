@@ -9,7 +9,7 @@ The **Build** process for a mobile application can be performed through Automate
 WaveMaker Studio supports you to build mobile applications in the following ways:
 
 - **[Build for Android](/learn/hybrid-mobile/mobile-build-android/)**: Through this build, you can generate APK files which can be signed and hosted on PlayStore.
-- **[Send to PhoneGap](#phonegap)**: Through this build, it provides you a complete package of building both apk/ipa files for Android and iOS platforms.
+- **[Send to PhoneGap](#)**: Through this build, it provides you a complete package of building both apk/ipa files for Android and iOS platforms.
 - **[Manual Build](/learn/hybrid-mobile/mobile-build-manual)**: Through this build, you can generate or download a .zip file which can be further developed to be hosted on any mobile platform.
 
 ## Send to PhoneGap
@@ -47,7 +47,7 @@ Make sure you have Adobe account credentials.
 ## PhoneGap Configuration
 This step allows you to configure the platform and build settings.
 - Select the Android and iOS platform keys as required. For Playstore release and for iOS builds keys are mandatory. (**Note: **You  must setup the keys prior to the build in your PhoneGap account and make sure they are unlocked) Refer to the documentation for [iOS Keys](http://docs.phonegap.com/phonegap-build/signing/ios/) and [Android Keys](http://docs.phonegap.com/phonegap-build/signing/android/).
-- For testing purposes, you can specify PhoneGap build settings such as [Hydration](http://docs.build.phonegap.com/en_US/3.1.0/tools_hydration.md.html#Hydration), [Debugging](http://docs.build.phonegap.com/en_US/3.1.0/debugging_remote_debugging_tools.md.html#Remote%20Debugging%20Tools) and Public Sharing by checking the box.
+- For testing purposes, you can specify PhoneGap build settings such as [Hydration](http://docs.phonegap.com/phonegap-build/tools/hydration/), [Debugging](http://docs.phonegap.com/phonegap-build/tools/debugging/) and Public Sharing by checking the box.
 - **Done** will initiate the build sequence in which WaveMaker first prepares PhoneGap compatible project structure then send the zip to your account for the build. Once the build starts on PhoneGap build system user shown the pop-up message showing that build has been queued and user can check the status at their PhoneGap account
 - Click **Check Status,** it leads to your PhoneGap account and displays the build status of your application.
 

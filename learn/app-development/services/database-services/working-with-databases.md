@@ -73,7 +73,7 @@ You also have the option to change the assigned type to sequence and then assign
 
 ## Database Actions
 
-Once you have your app integrated with a database, a copy is created in your local project workspace. While you can access the data through Variables, any changes made to the database at the schema level to the local database or external database has to be synced with its counterpart. The various ways to achieve this are:
+Once you have your app integrated with a database, schema information will be persisted in the wavemaker. While you can access the data through Variables, any changes made to the database at the schema level to the local database or external database has to be synced with its counterpart. The various ways to achieve this are:
 
 | Action | Description |
 | ---- | --- |

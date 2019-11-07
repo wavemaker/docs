@@ -1,6 +1,8 @@
 ---
 title: "3rd Party REST Services"
 id: ""
+sidebar_label: "REST Services"
+---
 ---
 
 While REST stands for Representational State Transfer, which is an architectural style for networked hypermedia applications, it is primarily used to build Web services that are lightweight, maintainable, and scalable. A service based on REST is called a RESTful service. REST is not dependent on any protocol, but almost every RESTful service uses HTTP as its underlying protocol.
@@ -11,6 +13,8 @@ Here we will look at:
 - [testing](#test-API) the configuration before import
 - [configuring service](#configure-REST-service)
 - [invoking service](#REST-service-usage)
+
+## Configuring API
 
 WaveMaker allows configuring the following fields while importing a REST Service:
 
