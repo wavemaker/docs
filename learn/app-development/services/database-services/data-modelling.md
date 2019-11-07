@@ -2,19 +2,19 @@
 title: "Data Modelling"
 id: ""
 ---
-
+---
 A **data model** describes the structure of the database: the tables, columns, keys, and relationships. The data model for imported databases can be viewed from within the app using **DB Designer**. DB Designer for a specific database can be accessed by selecting the _database_ from the **Databases** Resource option**.**
 
 [![](/learn/assets/db_designer_open.png)](/learn/assets/db_designer_open.png)
 
-# Configuration Settings
+## Configuration Settings
 
 **Settings tab** can be used to interact with the database and ensure that the data model is in sync with the database. It shows the connection settings of the selected database.
 
-**NOTE**:
-
+:::note
 - All these options are available **ONLY** for Data Model in **Edit Mode**.
 - DB Schemas for HSQL and for databases categorized as "Other Databases" at the time of import cannot be edited and hence are rendered as Read-Only schemas.
+:::
 
 From this tab you can:
 
@@ -33,7 +33,7 @@ Apart from the basic Database settings like host details, schema name etc., Wave
 | --- | --- |
 | **Java Package** | WaveMaker generates Java classes for you when you import a database. If you want a different Java package name than the default name we generate, type it in here. |
 
-# Database Designer
+## Database Designer
 
 **Design tab** renders the database components – tables, columns, and relationships. [![](/learn/assets/db_designer_schema.png)](/learn/assets/db_designer_schema.png)
 
@@ -41,7 +41,7 @@ Using this tab, you can:
 
 | Action | Description |
 | --- | --- |
-| +Table | **Add **tables |
+| +Table | **Add** tables |
 |  | **Delete** tables |
 |  | **Search** for tables within the designer |
 |  | **Update DB** with the changes made from the DB Designer. A preview dialog will open which will list all the changes made to the DB. Script tab will show the same changes in script format. |
@@ -64,8 +64,9 @@ Using this tab, you can:
 | **Relations** between tables |
 |  | Relations cannot be modified, you need to delete and add a new relation if needed, [know more](/learn/app-development/services/database-services/working-database-schema/#database-relationships). |
 
-**Notes**:
 
+:::note
 - Any changes made to the database design, needs to be **Exported/Updated** for the changes to be synced with the database. Save alone does not ensure syncing.
 - Design changes are restricted to Data Model in Edit Mode. For Read-Only DBs, HsqlDB, DB2 and other databases design modifications are restricted to Java Type changes and virtual relation settings. [Know more about import modes from here](/learn/app-development/services/database-services/database-schema-import-modes/)
+:::
 

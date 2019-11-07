@@ -3,7 +3,7 @@ title: "DataBase Schema Import Modes"
 id: ""
 sidebar_label: "DataBase Schema Modes"
 ---
-
+---
 ## Introduction
 
 When importing a database into WaveMaker, it connects to database, reads the schema, generates the sources and shows all the tables/views along with their relations in the Database Designer. Apart from displaying, the DB designer has a provision to make changes to the schema and update the underlying Database.
@@ -37,8 +37,11 @@ In this mode, the database designer will allow the developer to make changes to 
 
 When the DB designer has some changes in the draft, then you have two options:
 
-1. Update the Database: If you choose the _Update_ the database with the draft changes, it will list all the changes done by the user and also shows the SQL script that will get executed. You can review the changes before update.
-2. Revert the changes: On clicking _Revert_ the draft changes will be discarded and the DB designer & source code will be in sync with the database schema.
+#### 1. Update the Database
+If you choose the **Update** the database with the draft changes, it will list all the changes done by the user and also shows the SQL script that will get executed. You can review the changes before update.
+
+#### 2. Revert the changes
+On clicking **Revert** the draft changes will be discarded and the DB designer & source code will be in sync with the database schema.
 
 ## Changing schema mode post import
 
@@ -46,6 +49,6 @@ For databases in Edit Mode, the schema mode can be changed anytime from the sett
 
 ### Limitations
 
-- Import schema mode is given for avoiding accidental changes to the database. Any user either owner/developer can change the mode at any point of time from the _Settings_ tab as shown in the previous section.
+- Import schema mode is given for avoiding accidental changes to the database. Any user either owner/developer can change the mode at any point of time from the **Settings** tab as shown in the previous section.
 - There are certain databases for which WaveMaker itself does not allow editing of the importing database such as HQL, DB2, and any other custom database. For those databases, the default mode is READ-ONLY and cannot be changed.
 
