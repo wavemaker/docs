@@ -7,13 +7,20 @@ Find what's new in WaveMaker. See information related to bug fixes, new features
 ---
 WaveMaker is constantly working on bringing new features and improvements to the product. Follow our [team blog](/learn/blog) to see what's happening in WaveMaker. If you notice a bug, report to us at [support](mailto:support@wavemaker.com). The fixes will be specified in the release notes. 
 
-## [Newest Release Details]()
+## Older Releases
+
+
+- **[WaveMaker 9.x Documentation](https://www.wavemaker.com/9/learn/index.html)**  
+- **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)**  
+
+
+## Current Release Details
 ---
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
-|[WaveMaker v10.1.2]() |Bug fixes |16 September 2019 |v10.1.2, <br> v10.1.1 | 17 October 2019| 
-|[WaveMaker v10.1.1]()| Bug fixes ||-|-|
+|[WaveMaker v10.2.0](/learn/wavemaker-release-notes/v10-2-0)|New features + bug fixes| 24 October 2019 |-|-|
+|[WaveMaker v10.1.2]() |Bug fixes |16 September 2019 |v10.1.2, <br> v10.1.1 | 25 October 2019| 
 |[WaveMaker v10.1.0](/learn/wavemaker-release-notes/v10-1-0)|New features + bug fixes |19 August 2019 |v10.1.0, <br> v10.0.4 |19 August 2019|
 |[WaveMaker v10.0.4]()|Bug fixes |11 July, 2019 |-|-|
 |[WaveMaker v10.0.3]()|New features + bug fixes |29 May, 2019 |v10.0.3 , <br> v10.0.2, <br> v10.0.1, <br> v10 GA, <br> v10-preview|29 May, 2019|
@@ -22,7 +29,7 @@ WaveMaker is constantly working on bringing new features and improvements to the
 |[WaveMaker v10 GA]()|Enhancements + new features |10 April, 2019 |-|-| 
 |[WaveMaker Preview: v10]()|Try new features and enhancements <br> before 10.GA release|20 November, 2018|-| - |
 
-## [Technology Stack](#technology-stack)
+## Technology Stack
 Last updated: [Release: v10.1.0](/learn/wavemaker-release-notes/v10-1-0)
 
 ---

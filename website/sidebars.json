@@ -324,6 +324,20 @@
         "hybrid-mobile/offline-data-support-implementation",
         "hybrid-mobile/switching-offline-online-mode"]
       }
+    ],
+
+    "Enterprise": 
+    [
+      "installation/wavemaker-enterprise-setup-guide",
+      "installation/wme-setup-guide-launch-initialize",
+      "installation/wme-setup-using-deb-installer-private-ami",
+      "installation/wme-setup-guide-add-external-vcs-configuration",
+      "installation/wme-setup-guide-custom-apps-capacity",
+      "installation/wme-setup-guide-access-setting",
+      "installation/wme-setup-guide-configuration",
+      "installation/wme-setup-guide-adding-capacity",
+      "installation/wme-setup-guide-maintenance",
+      "installation/wme-setup-guide-upgrading"
     ]
 
 },
@@ -832,21 +846,7 @@
     [
       "app-development/wavemaker-overview/pre-requisites",
       "app-development/wavemaker-overview/supported-technologies"
-    ],
-
-    "WME: Enterprise Install": 
-    [
-      "installation/wavemaker-enterprise-setup-guide",
-      "installation/wme-setup-guide-launch-initialize",
-      "installation/wme-setup-using-deb-installer-private-ami",
-      "installation/wme-setup-guide-add-external-vcs-configuration",
-      "installation/wme-setup-guide-custom-apps-capacity",
-      "installation/wme-setup-guide-access-setting",
-      "installation/wme-setup-guide-configuration",
-      "installation/wme-setup-guide-adding-capacity",
-      "installation/wme-setup-guide-maintenance",
-      "installation/wme-setup-guide-upgrading"
-    ],
+    ],   
 
     "WMO: Online":
     [  
@@ -862,9 +862,10 @@
       "wavemaker-release-notes",
       {
         "type": "subcategory",
-        "label": "Versions: 10.1.x",
+        "label": "Versions: 10.x.x",
         "ids": 
           [
+            "wavemaker-release-notes/v10-2-0",
             "wavemaker-release-notes/v10-1-0"
           ]
         },
