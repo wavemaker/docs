@@ -98,11 +98,12 @@ class Index extends React.Component {
                             </div>
 							<div>
 								<h1>Resources</h1>
-								<p>See scenarios and solutions for using widgets and features.</p>                            
+								<p>Access to the WaveMaker older rescources, faqs, and more.</p>                            
 								<p>
-									Customise your app<br />                                    
-									<a href="https://www.wavemakeronline.com/studio/10.1.2.7413/docs/index.html" target="_blank" >API Docs</a>
+									Let experts guide you<br />                                    
 									<a href="/learn/app-development/wavemaker-app-development-faqs/" target="_self" >FAQs</a>									
+									<a href="https://www.wavemaker.com/9/learn/index.html" target="_blank" >9.x</a>
+									<a href="https://www.wavemaker.com/8/learn/index.html" target="_blank" >8.x</a>										
 								</p>
 							</div>
                         </div>

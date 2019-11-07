@@ -10,7 +10,7 @@ Introduction to WaveMaker. Find a complete developer's guide to build an app wit
 
 ## WaveMaker App Development Flow 
 
-1. Design you app by simply dragging-and-dropping widgets on a page.
+1. Design your app by simply dragging-and-dropping widgets on a page.
 
 :::tip
 Widgets are UI elements, which make your app functional without coding. Explore the [widgets library](/learn/app-development/widgets/widget-library). 
