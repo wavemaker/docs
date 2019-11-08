@@ -1,74 +1,87 @@
 ---
 title: "Creating Prefabs"
 id: ""
+sidebar_label: "Create Prefab"
+---
 ---
 
 As we have [seen here](/learn/app-development/custom-widgets/custom-widgets/), Prefabs are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker.
 
-In this document, we will be discussing the various phases of building you own Prefabs:
+## Build your own Prefabs
 
-- [Building Prefab](#build-prefabs)
-- [Prefab Configuration](#prefab-settings) like resources, properties, events, methods, and packaging.
-- [Publishing Prefabs](#publish-prefab) - [publish to workspace](#publish-to-workspace), [update a published prefab](#update-prefab), [updating in a project](#update-in-project), [bundling](#bundled-prefabs) and [version mismatches](#conflicts)
-- [Delete Prefab](#delete-prefab) from your project
-- [Accessing Prefab through Script](#accessing-prefab-through-scripting)
+**Prefabs** are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker. 
 
-# Build your own Prefabs
+[![](/learn/assets/prefab_create.png)](/learn/assets/prefab_create.png)
 
-**Prefabs** are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker. [![](/learn/assets/prefab_create.png)](/learn/assets/prefab_create.png)
-
-1. From the [**Project Dashboard**](http://[supsystic-show-popup id=102]), select **Prefab** tab and click **Create**
+1. From the [**Project Dashboard**](/learn/assets/ext_import.png), select **Prefab** tab and click **Create**
 2. Enter a **Name**, set an **Icon** for the Provatar and enter **Description**
 3. Review the **Package** and **Copyright** information and **Save** to continue. Make changes if needed.
 
-# Prefab Configuration
+## Prefab Configuration
 
-To **Configure ****Prefab**, from [Project Configurations](http://[supsystic-show-popup id=107]) click **Settings** to select **Config Prefab** option. The various configurations are grouped under various headings for developer convenience
+To **Configure ****Prefab**, from [Project Configurations](/learn/assets/project_workspace.png) click **Settings** to select **Config Prefab** option. The various configurations are grouped under various headings for developer convenience
 
 [![](/learn/assets/prefabsettings_resources.png)](/learn/assets/prefabsettings_resources.png)
 
-## Resources
+### Resources
 
-Under this tab, you can set the following resource references as needed by your Prefab. Before setting the details, you will need to [Import Resource](http://[supsystic-show-popup id=112]) into your Prefab project.
+Under this tab, you can set the following resource references as needed by your Prefab. Before setting the details, you will need to [Import Resource](/learn/assets/ext_import.png) into your Prefab project.
 
-1. _Style_: The CSS style associated with the project will be applied to this prefab. You can add your own style file.
-2. _Script_: Any scripts that need prior execution can be added here.
+1. `Style`: The CSS style associated with the project will be applied to this prefab. You can add your own style file.
+2. `Script`: Any scripts that need prior execution can be added here.
 
 ## Properties
 
 Users can add Prefab properties, which are exposed to the developers using the Prefab. These properties can take some input from the app(inbound) or give some output to the app(outbound) or both. These properties are defined in the Prefab scope. These properties will be displayed in the properties panel when the user uses the Prefab. The properties are further classified into UI and Server properties.
 
-- _UI Properties_: These are the properties that can be set from the front-end by the app developer using the Prefab
-    - General:
-        - _Name_ a meaningful name in small characters,
-        - _Display Name_: property for setting the display name of the property in the properties panel,
-        - _Description_: This property can be used to set the help text for the property in the properties panel. This will also be used when generating Documentation for the Prefab while publishing the same,
-    - Data:
-        - _Data Type_: of the value that can be entered for this property,
-        - _Default Value_: value given to the property, in case the user does not enter any value,
-        - _Binding Type_: specifies the binding behavior of the property:
-            - _in-bound_ allows binding for input value for the property by giving a bind icon next to it,
-            - _out-bound_ allows for the value of this property to be bound to another widget by exposing it in the binding dialog,
-            - _in-out-bound_: allows both input and output binding.
-    - _Widget_: to be displayed in the properties panel  - only for inbound properties
-        - _Type_: of widget for display;
-        - _Data Options_: list of values for user selection. (NOTE: Available only for the select, checkbox set, radioset widget type and can be bound to a variable). This can be set to:
-            - _Custom_ - Dataset property can be populated with comma-separated values or bound to a variable.
-            - _Depends on UI property_ - Property Name can be set to the already declared in-bound property. If the selected property has an object structure the same will be retained.
-        - _Show_: whether the property is visible or not, can be conditional if bound to a variable returning a boolean value;
-        - _Disabled_: whether the property is disabled or not, can be conditional if bound to a variable returning a boolean value.
-- _Server Properties_: These are the properties that need to be set from the back-end (using Java service) by the app developer using the Prefab. These would typically include the token for authorization etc..
-    - _Name_: of the property
-    - _Default Value_: for the property.
+### `UI Properties`
+These are the properties that can be set from the front-end by the app developer using the Prefab.
+
+### General
+- `Name`: a meaningful name in small characters,
+- `Display Name`: property for setting the display name of the property in the properties panel,
+- `Description`: This property can be used to set the help text for the property in the properties panel. This will also be used when generating Documentation for the Prefab while publishing the same
+
+### `Data`
+- `Data Type`: of the value that can be entered for this property,
+- `Default Value`: value given to the property, in case the user does not enter any value,
+- `Binding Type`: specifies the binding behavior of the property:
+
+#### Binding Type
+- `in-bound` allows binding for input value for the property by giving a bind icon next to it,
+- `out-bound` allows for the value of this property to be bound to another widget by exposing it in the binding dialog,
+- `in-out-bound`: allows both input and output binding.
+
+### `Widget`
+Widgets to be displayed in the properties panel  - only for inbound properties
+- `Type`: of widget for display;
+- `Data Options`: list of values for user selection. 
+
+#### Data Options
+:::note
+Available only for the select, checkbox set, radioset widget type and can be bound to a variable.
+:::
+
+This can be set to the following:
+1. `Custom` - Dataset property can be populated with comma-separated values or bound to a variable.
+2. `Depends on UI property` - Property Name can be set to the already declared in-bound property. If the selected property has an object structure the same will be retained.
+
+- `Show`: whether the property is visible or not, can be conditional if bound to a variable returning a boolean value;
+- `Disabled`: whether the property is disabled or not, can be conditional if bound to a variable returning a boolean value.
+
+### `Server Properties` 
+These are the properties that need to be set from the back-end (using Java service) by the app developer using the Prefab. These would typically include the token for authorization, and more.
+- `Name`: of the property
+- `Default Value`: for the property
 
 [![](/learn/assets/prefabsettings_props.png)](/learn/assets/prefabsettings_props.png)
 
 ## Events
 
-You can define events that can be handled by the developers using the Prefab. These events will be exposed under the events tab when the developer uses the Prefab, the developer can handle these events as per their requirements. By default, two events are defined - _onLoad_ and _onDestroy_ which will be triggered when the Prefab is loaded and deleted, respectively, from the app. Each Event will have the following properties that can be set:
+You can define events that can be handled by the developers using the Prefab. These events will be exposed under the events tab when the developer uses the Prefab, the developer can handle these events as per their requirements. By default, two events are defined - `onLoad` and `onDestroy` which will be triggered when the Prefab is loaded and deleted, respectively, from the app. Each Event will have the following properties that can be set:
 
-- _Name_ of the event. It should be lower case and without any special characters. The event name gets prefixed with _on_ and the first alphabet will get capitalized. For example, if you name an event _test_ the event variable created would be _onTest_
-- _Description_ of the event. This will be used in the generatation of the documentation for the Prefab while publishing.
+- `Name` of the event. It should be lower case and without any special characters. The event name gets prefixed with `on` and the first alphabet will get capitalized. For example, if you name an event `test` the event variable created would be `onTest`
+- `Description` of the event. This will be used in the generatation of the documentation for the Prefab while publishing.
 
 [![](/learn/assets/prefabsettings_events.png)](/learn/assets/prefabsettings_events.png)
 
@@ -82,33 +95,36 @@ Following are the pre-defined events for every Prefab:
 
 Apart from these, Prefab developer can define **custom events**, as mentioned in the previous section. These events are displayed in the Events tab of the Prefab properties panel, after drag and drop in the project page. Note that these custom events need to be triggered from within the Prefab. Actions assigned to these events from the project containing the Prefab will be performed only when the event is triggered. Events can be triggered using the following code (parameters $scope and $data are optional):
 
-Prefab.<event\_name>($scope, $data)
+```
+Prefab.<event_name>($scope, $data)
+```
 
 [![](/learn/assets/prefab_event_method.png)](/learn/assets/prefab_event_method.png)
 
 ## Methods
 
 You can define functionality in JavaScript which can be used by the developer. The developer can choose to invoke these methods in any way within the application using the Prefab as follows:
+```
+Page.<prefab_name>.<method_name>(<parameter_values>)
+```
 
-Page.<prefab\_name>.<method\_name>(<parameter\_values>)
-
-- _Name_ of the method;
-- _Description_ of the method. This will be used in the generation of the documentation for the Prefab while publishing;
-- _Return Type_ of the method;
-- _Parameters_ required by the method.
+- `Name` of the method;
+- `Description` of the method. This will be used in the generation of the documentation for the Prefab while publishing;
+- `Return Type` of the method;
+- `Parameters` required by the method.
 
 If the method does not exist, a function definition for the method will be generated in the JavaScript which can be accessed from the Script tab of the Prefab. [![](/learn/assets/prefabsettings_methods.png)](/learn/assets/prefabsettings_methods.png)[Click here to see the creation of a Prefab using Events and Methods](/learn/how-tos/create-prefab-using-jquery-plugin/)
 
-## Packaging
+### Packaging
 
 These define how the Prefab appears in the Widget Toolbox in the apps
 
-1. _Name:_ display name for the Prefab.
-2. _Icon_: The icon displayed on the project dashboard for this Prefab can be changed by uploading it.
+1. `Name:` display name for the Prefab.
+2. `Icon`: The icon displayed on the project dashboard for this Prefab can be changed by uploading it.
 
 [![](/learn/assets/prefabsettings_packagint-1.png)](/learn/assets/prefabsettings_packagint-1.png)
 
-# Testing Prefab
+## Testing Prefab
 
 The preview option on Prefab allows you to test your Prefab. The following options are available from the Preview screen:
 
@@ -117,7 +133,7 @@ The preview option on Prefab allows you to test your Prefab. The following optio
 3. The various methods included in the Prefab can be viewed and invoked from the Methods tab. [![](/learn/assets/Prefab_preview3.png)](/learn/assets/Prefab_preview3.png)
 4. The various events invoked can be viewed from the Events Tab. [![](/learn/assets/Prefab_preview4.png)](/learn/assets/Prefab_preview4.png)
 
-# Publish Prefab
+## Publish Prefab
 
 Publishing a Prefab has the following options:
 
@@ -174,56 +190,64 @@ In continuous development scenario, Prefabs may be enhanced to incorporate new f
 
 Conflicts can arise when different versions of Prefabs are in use. Consider the following cases:
 
-- **Case 1**:
+### Case 1
     
-    - Project P is using Prefab A (ver 1.0).
-    - Drag and drop Prefab B which internally uses Prefab A (ver 2.0).
-    - Conflict arises over the version of Prefab A.
+- Project P is using Prefab A (ver 1.0).
+- Drag and drop Prefab B which internally uses Prefab A (ver 2.0).
+- Conflict arises over the version of Prefab A.
+
+[![](/learn/assets/prefab_conflict1.png)](/learn/assets/prefab_conflict1.png)
+
+### Case 2
     
-    [![](/learn/assets/prefab_conflict1.png)](/learn/assets/prefab_conflict1.png)
-- **Case 2**:
+- Project P is using Prefab A which internally uses Prefab C (ver 1.0).
+- Drag and drop Prefab B which internally uses Prefab C (ver 2.0).
+- Conflict arises over the version of Prefab C.
+
+[![](/learn/assets/prefab_conflict2.png)](/learn/assets/prefab_conflict2.png)
+
+### Case 3
     
-    - Project P is using Prefab A which internally uses Prefab C (ver 1.0).
-    - Drag and drop Prefab B which internally uses Prefab C (ver 2.0).
-    - Conflict arises over the version of Prefab C.
+- Project P is using Prefab A ver 1.0 and Prefab B which internally uses Prefab A (ver 1.0).
+- Update on Prefab A (ver 2.0) is available.
+- Project P tries to update Prefab A.
+- Conflict arises over the version of Prefab A.
+
+[![](/learn/assets/prefab_conflict3.png)](/learn/assets/prefab_conflict3.png)
+
+### Case 4
     
-    [![](/learn/assets/prefab_conflict2.png)](/learn/assets/prefab_conflict2.png)
-- **Case 3**:
-    
-    - Project P is using Prefab A ver 1.0 and Prefab B which internally uses Prefab A (ver 1.0).
-    - Update on Prefab A (ver 2.0) is available.
-    - Project P tries to update Prefab A.
-    - Conflict arises over the version of Prefab A.
-    
-    [![](/learn/assets/prefab_conflict3.png)](/learn/assets/prefab_conflict3.png)
-- **Case 4**:
-    
-    - Project P is using Prefab A and Prefab B
-    - Both the Prefabs use Prefab C (ver 1.0).
-    - Prefab A (ver 2.0) is updated with Prefab C ver 2.1.
-    - Project P tries to update Prefab A.
-    - Conflict arises over the version of Prefab C.
-    
-    [![](/learn/assets/prefab_conflict4.png)](/learn/assets/prefab_conflict4.png)
+- Project P is using Prefab A and Prefab B
+- Both the Prefabs use Prefab C (ver 1.0).
+- Prefab A (ver 2.0) is updated with Prefab C ver 2.1.
+- Project P tries to update Prefab A.
+- Conflict arises over the version of Prefab C.
+
+[![](/learn/assets/prefab_conflict4.png)](/learn/assets/prefab_conflict4.png)
 
 In all of the above cases, WaveMaker gives you an option of
 
-- **Proceed Anyway**: which will update the Prefab in conflict. This might break the functionality of the other Prefab which uses the conflict Prefab, or
-- **OK**: this will retain the older version of the Prefab in conflict and cancel the current action which resulted in the conflict - drag and drop of Prefab B in Case 1 & 2 or update Prefab A in Case 3 & 4. [![](/learn/assets/prefab_conflict.png)](/learn/assets/prefab_conflict.png)
+### Proceed Anyway
+Update the Prefab in conflict. This might break the functionality of the other Prefab which uses the conflict Prefab.
+
+### OK
+This will retain the older version of the Prefab in conflict and cancel the current action which resulted in the conflict - drag and drop of Prefab B in Case 1 & 2 or update Prefab A in Case 3 & 4. 
+
+[![](/learn/assets/prefab_conflict.png)](/learn/assets/prefab_conflict.png)
 
 ## Versioning Special Case
 
 In case an updated dependent Prefab is deleted that the force update will be reverted in the conflict Prefab. Revisiting the Case 4 above:
 
-- **Case 4**:
+### Case 4
     
-    - Project P is using Prefab A and Prefab B
-    - Both the Prefabs use Prefab C (ver 1.0).
-    - Prefab A (ver 2.0) is updated with Prefab C ver 2.1.
-    - Project P tries to update Prefab A.
-    - Conflict arises over the version of Prefab C.
-    
-    [![](/learn/assets/prefab_conflict4.png)](/learn/assets/prefab_conflict4.png)
+- Project P is using Prefab A and Prefab B
+- Both the Prefabs use Prefab C (ver 1.0).
+- Prefab A (ver 2.0) is updated with Prefab C ver 2.1.
+- Project P tries to update Prefab A.
+- Conflict arises over the version of Prefab C.
+
+[![](/learn/assets/prefab_conflict4.png)](/learn/assets/prefab_conflict4.png)
 
 Assume that the Project P developer choose to update Prefab C
 
@@ -233,16 +257,19 @@ Assume that the Project P developer choose to update Prefab C
 
 [![](/learn/assets/prefab_conflict5.png)](/learn/assets/prefab_conflict5.png)
 
-# Deleting Prefab
+## Deleting Prefab
 
 You can delete a custom Prefab from your project using the delete icon in the [Studio Artifacts](http://[supsystic-show-popup id=120]) listing dialog.
 
 [![](/learn/assets/prefab_publish_artefacts.png)](/learn/assets/prefab_publish_artefacts.png)
 
-# Accessing Prefab through Scripting
+## Accessing Prefab through Scripting
 
-- Once the Prefab properties are set, a **onPropertyChange** event is created, which can be programmed from the Script. [![](/learn/assets/Prefab_Script.png)](/learn/assets/Prefab_Script.png)
-- The exposed properties are defined on the Prefab scope. They can be accessed/modified in the Prefab script using: Prefab.\[propertyname\]
+- Once the Prefab properties are set, a **onPropertyChange** event is created, which can be programmed from the Script. 
+
+[![](/learn/assets/Prefab_Script.png)](/learn/assets/Prefab_Script.png)
+
+- The exposed properties are defined on the Prefab scope. They can be accessed/modified in the Prefab script using: `Prefab.[propertyname]`
 
 We have seen the basics of creating a Prefab including the configuration settings, and various publishing options. Check out various use cases for Prefab creation by [clicking this link](/learn/app-development/custom-widgets/use-cases-prefabs/).
 
