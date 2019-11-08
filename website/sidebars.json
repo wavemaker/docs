@@ -34,19 +34,10 @@
           "label": "Apply Styles",
           "ids": 
             [
-              "app-development/ui-design/themes"
+              "app-development/ui-design/themes",
+              "app-development/ui-design/page-concepts/page-templates"
             ]
-        },
-
-        {
-          "type": "subcategory",
-          "label": "Advanced",
-          "ids": 
-            [
-              "app-development/ui-design/creating-themes",
-              "app-development/ui-design/page-concepts/page-templates" 
-            ]
-        }        
+        }      
       ],
 
       "Backend":
@@ -338,6 +329,13 @@
       "installation/wme-setup-guide-adding-capacity",
       "installation/wme-setup-guide-maintenance",
       "installation/wme-setup-guide-upgrading"
+    ],
+
+    "Develop Extensions":
+    [      
+      "app-development/custom-widgets/creating-prefabs",
+      "app-development/ui-design/creating-themes",
+      "app-development/ui-design/page-concepts/creating-template-bundles"
     ]
 
 },
@@ -635,7 +633,8 @@
   "Widgets": 
   {
     "Widgets & Prefabs Library": [
-      "app-development/widgets/widget-library"      
+      "app-development/widgets/widget-library",
+      "app-development/custom-widgets/custom-widgets"  
     ],
     
     "Cards": 
