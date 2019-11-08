@@ -5,7 +5,9 @@ sidebar_label: "Create Prefab"
 ---
 ---
 
-As we have [seen here](/learn/app-development/custom-widgets/custom-widgets/), Prefabs are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker.
+Prefabs are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker.
+
+To learn more, see [Prefabs Overview](/learn/app-development/custom-widgets/custom-widgets/). 
 
 ## Build your own Prefabs
 
@@ -19,7 +21,7 @@ As we have [seen here](/learn/app-development/custom-widgets/custom-widgets/), P
 
 ## Prefab Configuration
 
-To **Configure ****Prefab**, from [Project Configurations](/learn/assets/project_workspace.png) click **Settings** to select **Config Prefab** option. The various configurations are grouped under various headings for developer convenience
+To **Configure Prefab**, from [Project Configurations](/learn/assets/project_workspace.png) click **Settings** to select **Config Prefab** option. The various configurations are grouped under various headings for developer convenience
 
 [![](/learn/assets/prefabsettings_resources.png)](/learn/assets/prefabsettings_resources.png)
 
@@ -87,7 +89,7 @@ You can define events that can be handled by the developers using the Prefab. Th
 
 ### Events Flow
 
-Following are the pre-defined events for every Prefab:
+Following are the pre-defined events for every Prefab.
 
 - **on Load**: this event is triggered whenever the page containing the Prefab loads or when the Prefab is dragged and dropped onto a page. This event is exposed to the Prefab user and can be further customized. It is displayed in the Events tab of the Prefab properties panel, after drag and drop in the project page.
 - **on Property Change**: is triggered when any Prefab property is changed. This event is available only to the Prefab developer and is not exposed to the Prefab user.
@@ -184,13 +186,15 @@ You need to remember the following:
 
 ## Update Prefab
 
-In continuous development scenario, Prefabs may be enhanced to incorporate new functionality. In such cases you need to Publish the Prefab, changing the version number. **Updated Prefabs**: By updating the Prefab version while publishing the Prefab will update the version and the latest version will be available across all the projects. When a project using this Prefab is opened,  the developer will be prompted to update the same within the project. When you open a project using the Prefab (i.e the Prefab was dragged and dropped onto the canvas) you will see a dialog asking you to update the Prefab You can choose to update or continue with the previous version. In case you choose to continue with the previous version, whenever you try to drag and drop the Prefab, you will be prompted to update the same.
+In continuous development scenario, Prefabs may be enhanced to incorporate new functionality. In such cases you need to Publish the Prefab, changing the version number. 
+
+**Updated Prefabs**: By updating the Prefab version while publishing the Prefab will update the version and the latest version will be available across all the projects. When a project using this Prefab is opened,  the developer will be prompted to update the same within the project. When you open a project using the Prefab (i.e the Prefab was dragged and dropped onto the canvas) you will see a dialog asking you to update the Prefab You can choose to update or continue with the previous version. In case you choose to continue with the previous version, whenever you try to drag and drop the Prefab, you will be prompted to update the same.
 
 ## Version Mismatches
 
 Conflicts can arise when different versions of Prefabs are in use. Consider the following cases:
 
-### Case 1
+### Case-1
     
 - Project P is using Prefab A (ver 1.0).
 - Drag and drop Prefab B which internally uses Prefab A (ver 2.0).
@@ -198,7 +202,7 @@ Conflicts can arise when different versions of Prefabs are in use. Consider the 
 
 [![](/learn/assets/prefab_conflict1.png)](/learn/assets/prefab_conflict1.png)
 
-### Case 2
+### Case-2
     
 - Project P is using Prefab A which internally uses Prefab C (ver 1.0).
 - Drag and drop Prefab B which internally uses Prefab C (ver 2.0).
@@ -206,7 +210,7 @@ Conflicts can arise when different versions of Prefabs are in use. Consider the 
 
 [![](/learn/assets/prefab_conflict2.png)](/learn/assets/prefab_conflict2.png)
 
-### Case 3
+### Case-3
     
 - Project P is using Prefab A ver 1.0 and Prefab B which internally uses Prefab A (ver 1.0).
 - Update on Prefab A (ver 2.0) is available.
@@ -215,7 +219,7 @@ Conflicts can arise when different versions of Prefabs are in use. Consider the 
 
 [![](/learn/assets/prefab_conflict3.png)](/learn/assets/prefab_conflict3.png)
 
-### Case 4
+### Case-4
     
 - Project P is using Prefab A and Prefab B
 - Both the Prefabs use Prefab C (ver 1.0).
@@ -225,7 +229,7 @@ Conflicts can arise when different versions of Prefabs are in use. Consider the 
 
 [![](/learn/assets/prefab_conflict4.png)](/learn/assets/prefab_conflict4.png)
 
-In all of the above cases, WaveMaker gives you an option of
+In all of the above cases, WaveMaker gives you an option of the following.
 
 ### Proceed Anyway
 Update the Prefab in conflict. This might break the functionality of the other Prefab which uses the conflict Prefab.
@@ -239,7 +243,7 @@ This will retain the older version of the Prefab in conflict and cancel the curr
 
 In case an updated dependent Prefab is deleted that the force update will be reverted in the conflict Prefab. Revisiting the Case 4 above:
 
-### Case 4
+### Case-4
     
 - Project P is using Prefab A and Prefab B
 - Both the Prefabs use Prefab C (ver 1.0).

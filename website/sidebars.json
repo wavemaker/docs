@@ -317,6 +317,13 @@
       }
     ],
 
+    "Develop Extensions":
+    [      
+      "app-development/custom-widgets/creating-prefabs",
+      "app-development/ui-design/creating-themes",
+      "app-development/ui-design/page-concepts/creating-template-bundles"
+    ],
+
     "Enterprise": 
     [
       "installation/wavemaker-enterprise-setup-guide",
@@ -329,13 +336,6 @@
       "installation/wme-setup-guide-adding-capacity",
       "installation/wme-setup-guide-maintenance",
       "installation/wme-setup-guide-upgrading"
-    ],
-
-    "Develop Extensions":
-    [      
-      "app-development/custom-widgets/creating-prefabs",
-      "app-development/ui-design/creating-themes",
-      "app-development/ui-design/page-concepts/creating-template-bundles"
     ]
 
 },
