@@ -1,7 +1,6 @@
 # Welcome to WaveMaker Learn Documentation
 
-To view the staging site, click [this](http://52.8.62.171/learn/).  
-Later, it will be moved to https://wavemaker.com/learn/. 
+To view the learn site, see [WaveMaker Docs](https://wavemaker.com/learn/).
 
 ## Contributors Workflow
 
