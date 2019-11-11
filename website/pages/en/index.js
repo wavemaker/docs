@@ -53,25 +53,7 @@ class Index extends React.Component {
 					</div>
                 </div>
             </div>
-            <div className="row">
-                <div className="column" style={{'opacity': '1'}}>
-                    <div className="content-wrapper">
-                        <div className="content-blocks">
-                            <div className="imagebox-img">
-                                <img src="/learn/img/01-Mobile app.svg" alt=""/>
-                            </div>
-							<div>
-								<h1>Mobile Apps</h1>                            
-								<p>Create cross-platform hybrid mobile apps.</p>
-								<p>
-									Rapid mobile app development<br />								
-									<a href="/learn/hybrid-mobile/building-hybrid-mobile-apps" target="_self" > Build</a>
-									<a href="http://www.wavemaker.com/training/" target="_blank" >Mobile Widgets</a>
-								</p>
-							</div>
-                        </div>
-                    </div>
-                </div>
+            <div className="row">                
                 <div className="column" style={{'opacity': '1'}}>
                     <div className="content-wrapper">
                         <div className="content-blocks">
@@ -85,6 +67,24 @@ class Index extends React.Component {
 									Build a fully-functional app<br />
 									<a href="/learn/tutorials/" target="_self" >Tutorials</a>
 									<a href="http://www.wavemaker.com/training/" target="_blank" >Get Training</a>
+								</p>
+							</div>
+                        </div>
+                    </div>
+                </div>
+				<div className="column" style={{'opacity': '1'}}>
+                    <div className="content-wrapper">
+                        <div className="content-blocks">
+                            <div className="imagebox-img">
+                                <img src="/learn/img/01-Mobile app.svg" alt=""/>
+                            </div>
+							<div>
+								<h1>Mobile Apps</h1>                            
+								<p>Create cross-platform hybrid mobile apps.</p>
+								<p>
+									Rapid mobile app development<br />								
+									<a href="/learn/hybrid-mobile/building-hybrid-mobile-apps" target="_self" > Build</a>
+									<a href="http://www.wavemaker.com/training/" target="_blank" >Mobile Widgets</a>
 								</p>
 							</div>
                         </div>
