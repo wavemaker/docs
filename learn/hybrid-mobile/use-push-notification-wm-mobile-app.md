@@ -168,7 +168,7 @@ App.loginActiononSuccess = function(variable, data, options) {
     - On success of UnregisterPush, invoke Logout Action. [![](/learn/assets/push_serviceVar3_event.png)](/learn/assets/push_serviceVar3_event.png)
 14. Add an anchor in mobile navbar, on tap of this link invoke UnregisterPush service variable.[![](/learn/assets/push_UI_anchor.png)](/learn/assets/push_UI_anchor.png)
 15. Add a custom plugin in ‘Build for Android’ dialog [![](/learn/assets/push_plugin.png)](/learn/assets/push_plugin.png)
-    - Mention ‘git’ as source, ‘phonegap-plugin-push’ as plugin name and ‘[https://github.com/wavemaker/phonegap-plugin-push.git#5817a63](https://github.com/wavemaker/phonegap-plugin-push.git#5817a63)’ as spec. Then, click ‘Add’ button and ‘Save’ button.
+    - Mention ‘git’ as source, ‘phonegap-plugin-push’ as plugin name and ‘[https://github.com/wavemaker/phonegap-plugin-push.git#3314a4b](https://github.com/wavemaker/phonegap-plugin-push.git#3314a4b)’ as spec. Then, click ‘Add’ button and ‘Save’ button.
 
 ## App Usage
 
