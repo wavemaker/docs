@@ -128,7 +128,11 @@ Data Value Types define the value of column while performing insert/update opera
 
 ### How it works
 
-These properties are available in the DB designer, at column level under the group **Data Value**. The Value Type field enables you to select one of the types mentioned above. The definition & configuration of each type is defined in below sections. After choosing the data value types, the developer has to invoke **Update DB** to get the changes reflected. NOTE: Changes to Data Value types will not alter the underlying schema, however, the Java code will get regenerated on Update DB.
+These properties are available in the DB designer, at column level under the group **Data Value**. The Value Type field enables you to select one of the types mentioned above. The definition & configuration of each type is defined in below sections. After choosing the data value types, the developer has to invoke **Update DB** to get the changes reflected. 
+
+:::note
+Changes to Data Value types will not alter the underlying schema, however, the Java code will get regenerated on Update DB.
+:::
 
 ### User Defined
 
