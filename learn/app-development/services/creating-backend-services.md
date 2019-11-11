@@ -7,13 +7,8 @@ Get an overview of backend services in WaveMaker and see how it works.
 
 ---
 
-Before getting started with backend services, let's go back to basics. Designing an app involves three steps.
-- <span style="color: #D3D3D3;">Step-1: Drag-and-drop widgets and design the page.</span>
-- **Step-2: Create a backend service.**
-- <span style="color: #D3D3D3;">Step-3: Using variable, integrate the backend service with widget.</span>
-
 ## Introduction
----
+
 In the backend module, you will learn how to create an independent backend service which can be used multiple times across your app. 
 
 A backend service can be of any type. It can be a data service, web service, java service, security service, or using a third party API. Or, even extending a feature with your own code. 

@@ -10,17 +10,21 @@ Introduction to WaveMaker. Find a complete developer's guide to build an app wit
 
 ## WaveMaker App Development Flow 
 
-1. Design your app by simply dragging-and-dropping widgets on a page.
+**Step-1**: Create or import a backend service. It can be a data service, web service, java service, security service, or use a third party API.  
+
+:::tip
+WaveMaker provides a few ready-to-use sample databases and services. To learn more, see [Backend Services](/learn/app-development/services/creating-backend-services).
+:::
+
+**Step-2**: Design your app by simply dragging-and-dropping widgets on a page. 
 
 :::tip
 Widgets are UI elements, which make your app functional without coding. Explore the [widgets library](/learn/app-development/widgets/widget-library). 
 :::
 
-2. Create backend services. It can be a data service, web service, java service, security service, or use a third party API, or write your own code to extend a feature.  
+**Step-3**: In a few simple clicks, using [variables](/learn/app-development/variables/variables), integrate the backend service with the widgets. 
 
-3. In a few simple clicks, using [variables](/learn/app-development/variables/variables), integrate the backend service with the widgets. 
-
-4. Build your apps with the [one-click deployment](/learn/app-development/deployment/one-click-deployment/). 
+**Step-4**: Build your apps with the [one-click deployment](/learn/app-development/deployment/one-click-deployment/). 
 
 ### See in action 
 

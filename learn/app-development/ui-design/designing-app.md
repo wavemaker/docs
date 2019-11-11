@@ -7,14 +7,7 @@ Introduction to the UI design module in WaveMaker. Get started with designing an
 
 ---
 
-For developing an app in WaveMaker, you follow the three-layered architecture.
-- **Step-1: Drag-and-drop widgets and design the page.**
-- <span style="color: #D3D3D3;">Step-2: Create a backend service.</span>
-- <span style="color: #D3D3D3;">Step-3: Using variable, integrate the backend service with widget.</span>
-
-
 ## Introduction 
----
 
 In the Design module, you will learn how to create pages, use widgets, and apply styles for developing an app. 
 
