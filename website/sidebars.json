@@ -918,7 +918,43 @@
               "wavemaker-release-notes/v8-3-1",
               "wavemaker-release-notes/v8-3-0"              
             ]
+        },
+        {
+          "type": "subcategory",
+          "label": "Versions: v8.2.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v8-2-3",
+              "wavemaker-release-notes/v8-2-0"                     
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Versions: v8.1.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v8-1-1",
+              "wavemaker-release-notes/v8-1-0"                     
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Versions: v8.0.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v8-0-6",
+              "wavemaker-release-notes/v8-0-5",
+              "wavemaker-release-notes/v8-0-4",
+              "wavemaker-release-notes/v8-0-3",
+              "wavemaker-release-notes/v8-0-2",
+              "wavemaker-release-notes/v8-0-1",
+              "wavemaker-release-notes/v8-0-ga",
+              "wavemaker-release-notes/v8-0-beta"
+            ]
         }
+
       ]  
   },
 
