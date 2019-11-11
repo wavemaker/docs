@@ -266,6 +266,13 @@
     }
   ],
 
+  "Develop extensions":
+    [      
+      "app-development/custom-widgets/creating-prefabs",
+      "app-development/ui-design/creating-themes",
+      "app-development/ui-design/page-concepts/creating-template-bundles"
+    ],
+
     "Mobile app": 
     [
         "hybrid-mobile/building-hybrid-mobile-apps",
@@ -315,14 +322,7 @@
         "hybrid-mobile/offline-data-support-implementation",
         "hybrid-mobile/switching-offline-online-mode"]
       }
-    ],
-
-    "Develop Extensions":
-    [      
-      "app-development/custom-widgets/creating-prefabs",
-      "app-development/ui-design/creating-themes",
-      "app-development/ui-design/page-concepts/creating-template-bundles"
-    ],
+    ],    
 
     "Enterprise": 
     [
