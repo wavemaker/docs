@@ -56,7 +56,7 @@ All features of WaveMaker Studio work similarly for WMO and WME unless specified
 |Jumpstart to app building process and create a simple app.|[WaveMaker App Building Essentials](/learn/jump-start/jump-start-app-essentials/)|
 
 
-## [Start a free trail!](https://www.wavemaker.com/get-started/)
+## [Start a free trial!](https://www.wavemaker.com/get-started/)
 When you sign up, you will be directed to a **Project Dashboard** page. Voila! You can start creating a new projects. Happy developing! 
 
 ---

@@ -21,6 +21,6 @@ As a RAD tool, using WaveMaker Online (WMO) Studio, develop app and deploy your 
  When you sign-up for the first time, you get a 30-day free trial. During this period you can develop, test, run and collaborate with your team members. Deploy your app to Amazon Web Service or WaveMaker Demo Cloud. At the end of the 30-day trial, you get an option to choose a suitable plan in order to continue working on the app. There are purchase plans for monthly and annual subscription. To get a customized plan for your organization, talk to our [Consultant](https://www.wavemaker.com/talk-to-expert/).
 
 ---
-## [Start a free trail!](https://www.wavemaker.com/get-started/)
+## [Start a free trial!](https://www.wavemaker.com/get-started/)
 After signing up, you will be directed to a **Project Dashboard** page. You are set to create new projects. 
 
