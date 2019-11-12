@@ -16,7 +16,6 @@ To view the learn site, see [WaveMaker Docs](https://wavemaker.com/learn/).
 6.	See [Markdown cheat sheet](https://guides.github.com/features/mastering-markdown/) to get familiar with the editor. 
 7.	Become a contributor for WaveMaker Docs for private repo.
 
-Note: If you are not a contributor, become a contributor of WaveMaker docs. For this, get permission from Venu. He will add you to the WaveMaker Docs project. 
 
 ## Getting Started 
 1.	Go to https://github.com/wavemaker/docs
