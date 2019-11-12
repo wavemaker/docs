@@ -2,7 +2,7 @@
 title: "Working with Stored Procedures"
 id: ""
 ---
-
+---
 There will be times when you want to display data from multiple tables or update/insert values into multiple tables. Queries and Stored Procedures come in handy in such instances. WaveMaker provides editors for Queries & Procedures for integrating them with the WaveMaker applications. Each query & procedure used in the WaveMaker application will be exposed as a REST API for the UI to consume and render the data.
 
 A _stored procedure_ is a prepared SQL code that you save in your database so you can reuse the code over and over again.
@@ -19,19 +19,27 @@ Calling Procedure will add the specified parameters. You can select the appropri
 - OUT for output parameter; and
 - IN-OUT for a combination parameter.
 
-**Parameter Type**:
+### Parameter Type
 
-- You can specify the **data type** for each of the parameter. _NOTE_: Some data types might be specific to the underlying database being implemented, for example, cursor data type is available only for Oracle database.
-- You can also set the parameter type as one of **Server Side Properties**. When you select this option while executing the procedure, the appropriate value is taken from the application rather than from user. Currently supported server defined properties are:
+- You can specify the **data type** for each of the parameter. 
+
+:::note
+Some data types might be specific to the underlying database being implemented, for example, cursor data type is available only for Oracle database.
+:::
+- You can also set the parameter type as one of **Server Side Properties**.  
+When you select this option while executing the procedure, the appropriate value is taken from the application rather than from user.   
+<br>
+Currently supported server defined properties are:
     - Logged in User Id
     - Logged in User Name
     - Current Date
     - Current Time
     - Current Date Time
+
 - [See here on how Blob types are handled.](/learn/app-development/services/database-services/blob-support-queries-procedures/)
 - Parameters can also be set to App Environment Properties which can be configured differently for different runtime environments ([know more](/learn/how-tos/using-app-environment-properties/))
 
-**Defined & Undefined Cursors (Resultset)**
+### Defined & Undefined Cursors (Resultset)
 
 Along with the configured OUT parameters, procedures can also return ResultSet (cursor), which is referred to as Undefined Cursor. When any procedure is returning Undefined Cursor, in Response an extra property is generated with name Content. A POJO also will be generated for that Response.
 
@@ -41,11 +49,14 @@ There are two aspects to stored procedure usage - Creation and Invocation:
 
 ### Creation of procedures/functions
 
-Procedure/Function needs to be created in the database itself. For MySQL DBs, you can use the **DB Shell** tab of [DB Tools](http://[supsystic-show-popup id=113]). Any procedures you have in a database that you [import](http://[supsystic-show-popup id=106]) will be available for use.
+Procedure/Function needs to be created in the database itself. For MySQL DBs, you can use the **DB Shell** tab of [DB Tools](/learn/assets/db_tools.png). Any procedures you have in a database that you [import](/learn/assets/db_new.png) will be available for use.
 
-1. The database we used contains an Employee table with Emp\_ID, Name and City details. Here is the _Employee_ table that we have designed using the [DB Designer](http://[supsystic-show-popup id=114]). [![](/learn/assets/employee_schema.png)](/learn/assets/employee_schema.png)
-2. The procedure entered in the DBShell under [DB Tools](http://[supsystic-show-popup id=113]) would be:
-    
+1. The database we used contains an Employee table with Emp\_ID, Name and City details. Here is the _Employee_ table that we have designed using the [DB Designer](/learn/assets/db_designer_schema.png). 
+
+[![](/learn/assets/employee_schema.png)](/learn/assets/employee_schema.png)
+
+2. The procedure entered in the DBShell under [DB Tools](/learn/assets/db_tools.png) would be:
+   ``` 
     DELIMITER ;;
     CREATE PROCEDURE emp\_in\_out(IN in\_city varchar(255), OUT total integer) 
       BEGIN SELECT COUNT(Emp\_ID) 
@@ -54,9 +65,9 @@ Procedure/Function needs to be created in the database itself. For MySQL DBs, yo
             WHERE City = in\_city; 
       END;;
     DELIMITER ;
-    
+    ```
     A function would be:
-    
+    ```
     DELIMITER ;;
     CREATE FUNCTION emp\_in\_out(in\_city varchar(255)) RETURNS integer 
       BEGIN DECLARE emp\_tot INT;
@@ -67,25 +78,30 @@ Procedure/Function needs to be created in the database itself. For MySQL DBs, yo
             RETURN emp\_tot;
       END;;
     DELIMITER ;
-    
+    ```
 
 ### Invocation of procedures/functions from WaveMaker app
 
-Procedures created in a DB can be accessed by creating a live service variable and associating it with the invocation of the procedure. Follow the steps given below to do the same: NOTE: This post explains the usage of stored procedures/functions in WaveMaker using the MySQL code. For the usage in different databases [check here](#splinvoke).
+Procedures created in a DB can be accessed by creating a live service variable and associating it with the invocation of the procedure. Follow the steps given below to do the same: NOTE: This post explains the usage of stored procedures/functions in WaveMaker using the MySQL code. For the usage in different databases [check here](#db-specific-invocation).
 
-1. In the **Database Designer,** select the **Procedure** tab, use the following code to invoke the above procedure
-    
+1. In the **Database Designer,** select the **Procedure** tab, use the following code to invoke the above procedure.
+    ```
     call emp\_in\_out(:city, :total)
-    
+    ```
     Use the following code to invoke the function:
-    
+    ```
     {{:total = call emp\_in\_out(:city)
-    
-2. Post 8.4.1 release, you can use CTRL+space to select from a list of Procedures available in the database
+    ```
+2. Post 8.4.1 release, you can use CTRL+space to select from a list of Procedures available in the database.
 3. This will add the parameters. Select the appropriate options - **IN** for input parameter; **out** for output parameter; and **in-out** for a combination parameter.
-4. Specify the data type for each of the parameter. See [here](/learn/app-development/services/database-services/blob-support-queries-procedures/) for handling Blob types. **NOTE**: Some data types might be specific to the underlying database being implemented, for example, cursor data type is available only for Oracle database.
+4. Specify the data type for each of the parameter.   
+See [here](/learn/app-development/services/database-services/blob-support-queries-procedures/) for handling Blob types. 
+
+:::note 
+Some data types might be specific to the underlying database being implemented, for example, cursor data type is available only for Oracle database.
+:::
 5. **Save** the procedure.
-6. [Create a variable](http://[supsystic-show-popup id=105]) using the Database API generated on the save of the procedure. This variable will expose the parameters for binding. [More on Variable Creation](/learn/app-development/variables/database-apis/)
+6. [Create a variable](/learn/assets/var_sel.png) using the Database API generated on the save of the procedure. This variable will expose the parameters for binding. [More on Variable Creation](/learn/app-development/variables/database-apis/)
 7. To use the Procedure, create a page with
     - an input text box - to accept the city name to be bound to the input parameter of the above procedure and
     - label to display the result.
@@ -98,52 +114,73 @@ Procedures created in a DB can be accessed by creating a live service variable a
 - **MySQL/DB2** - the above documentation uses MySQL.
 - **Oracle** - same as MySQL. In case, procedures are bundled in a package, need to prefix the package name to the proc\_name.
 - **PostgreSQL** - can be same as above or
-    
+    ```
     SELECT proc\_name(:param\_value1, :param\_value2);
-    
+    ```
 - **MSSQL & SQLServer**\- Invoking Procedures:
-    
+    ```
     EXEC \[Schema\_name\].\[proc\_name\](:param\_value1, :param\_value2)
-    
+    ```
     Invoking Functions:
-    
+    ```
     Select \* from function\_name(:param\_value1, :param\_value2)
-    
+    ```
 
 ## Procedure Architecture
 
 For all queries and procedures, there will be a Rest API generated with the Service layer. Along with the API, depending on the query or procedure type, request and response POJO classes are generated.
 
-**Understanding generated Code** _File structure_ [![](/learn/assets/queryproc_files.png)](/learn/assets/queryproc_files.png)_Models_: Both _Request_ and _Response_ POJO classes are generated as: <procedureName>Request/Response
+**Understanding generated Code** _File structure_ 
 
-- These classes are generated in a package: <service\_packagegt;.models.procedure
-- Response classes generated for all procedures having at least one return property i.e OUT parameter or cursor. Eg: a procedure with name **getEmployees** will generate **GetEmployeesResponse** class with the returned columns.
-- For Procedures not returning any properties, no POJO is generated, instead, Void is used as return type in the Service layer.
-- For Procedures returning Cursor(s):
+[![](/learn/assets/queryproc_files.png)](/learn/assets/queryproc_files.png)
+
+### Models
+
+Both _Request_ and _Response_ POJO classes are generated as: `<procedureName>Request/Response`
+
+1. These classes are generated in a package: `<service\_packagegt;.models.procedure`
+2. Response classes generated for all procedures having at least one return property i.e OUT parameter or cursor.    
+
+    **Example**:  
+    a procedure with name `getEmployees` will generate `GetEmployeesResponse` class with the returned columns.
+
+3. For Procedures not returning any properties, no POJO is generated, instead, Void is used as return type in the Service layer.
+
+#### 4. For Procedures returning Cursor(s)
+- For each cursor, new POJO class gets generated with name Response.  
+<br>
+**Example**:  
+    procedure with name `getStudents` with cursor parameter `marks`, the POJO generated will be `GetStudentsResponseMarks`.  
+    <br>
+    The generated type will be used in `<procedureResponse>` class with given property name. In the above-mentioned case, it will be marked with type `GetStudentsReponseMarks`.
+- In the case of Undefined cursor returned i.e cursor not specified in parameters section.
+    - using the field as `content` the POJO class will be generated as per the above case.  
+
+    [![](/learn/assets/proc_cursor.png)](/learn/assets/proc_cursor.png)  
+
+- Request classes will be generated for all procedures, with names starting “create”, “build”, “add”, “update”, “edit”, “set”.
     
-    - For each cursor new POJO class generated with name Response.
-        - For example procedure with name **getStudents** with cursor parameter **marks**, the POJO generated will be **GetStudentsResponseMarks**.
-        - The generated type will be used in <procedureResponse> class with given property name. In the above-mentioned case, it will be marked with type **GetStudentsReponseMarks**.
-    - In the case of Undefined cursor returned i.e cursor not specified in parameters section.
-        - using the field as **content** the POJO class will be generated as per the above case. [![](/learn/assets/proc_cursor.png)](/learn/assets/proc_cursor.png)
-    - Request classes will be generated for all procedures, with names starting “create”, “build”, “add”, “update”, “edit”, “set”.
+### Services
     
-    _Services_:
+This layer exposes the methods related to the configured query and procedures. Controller layer uses these methods to complete the user requests.
+
+We recommend using methods from this layer in custom Java services.
+
+- Class with name ProcedureExecutorService is generated in the .service package. For eg: for service hrdb, class name will be HrdbProcedureExecutorService.
+- Method with name execute<procedureName> will be generated for all configured procedures.
+
+:::important
+- As mentioned in Models -> Procedures naming convention, if Request type generated for that procedure it will expected as argument otherwise all IN parameters expects as arguments.
+- Response type will be <procedureName>Response. In case of procedure not returning any properties it uses Void
+:::
+
+[![](/learn/assets/proc_services.png)](/learn/assets/proc_services.png)
+
+### Controller
     
-    This layer exposes the methods related to the configured query and procedures. Controller layer uses these methods to complete the user requests.
-    
-    We recommend using methods from this layer in custom Java services.
-    
-    - Class with name ProcedureExecutorService is generated in the .service package. For eg: for service hrdb, class name will be HrdbProcedureExecutorService.
-    - Method with name execute<procedureName> will be generated for all configured procedures.
-        - As mentioned in Models->Procedures naming convention, if Request type generated for that procedure it will expected as argument otherwise all IN parameters expects as arguments.
-        - Response type will be <procedureName>Response. In case of procedure not returning any properties it uses Void
-    
-    [![](/learn/assets/proc_services.png)](/learn/assets/proc_services.png)_Controller_:
-    
-    - Controller class with name ProcedureExecutorController in package .controller.
-    - Rest API is generated for each configured query and procedure. Generated method signature will be same as service layer method signature.
-    
-    [![](/learn/assets/proc_controller.png)](/learn/assets/proc_controller.png)
+- Controller class with name ProcedureExecutorController in package .controller.
+- Rest API is generated for each configured query and procedure. Generated method signature will be same as service layer method signature.
+
+[![](/learn/assets/proc_controller.png)](/learn/assets/proc_controller.png)
     
     

@@ -9,7 +9,7 @@ For every database table imported into the app, APIs are generated. In addition
 
 Variable can be created using these **Database APIs**.
 
-- The operations include, a comprehensive list can be found from the [API Designer](http://[supsystic-show-popup id=110]) after the import of the database:
+- The operations include, a comprehensive list can be found from the [API Designer](/learn/assets/API_Access.png) after the import of the database:
     - **Get**
     - **Count **
     - **Export**

@@ -15,7 +15,7 @@ id: ""
 
 **Steps**:
 
-1. [Access the Variable](http://[supsystic-show-popup id=105]) and navigate to the **Filter Criteria** tab.
+1. [Access the Variable](/learn/assets/var_sel.png) and navigate to the **Filter Criteria** tab.
 2. Here you can specify the conditions for applying the row filter on specified field values.
 3. Each condition is called a Criteria and multiple conditions can be categorized into a Group.
 4. Criteria/Groups can be joined by AND/OR expression.

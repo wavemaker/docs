@@ -5,7 +5,7 @@ id: ""
 
 Security Services can be accessed from within your app using Variables. By default, a **loggedInUser** Model Variable is created for all applications. In case you need access to more details, you can create a Variable using the appropriate API.
 
-A comprehensive list of these APIs can be found from the [API Designer](http://[supsystic-show-popup id=110]) after the import of the service. These include APIs to:
+A comprehensive list of these APIs can be found from the [API Designer](/learn/assets/API_Access.png) after the import of the service. These include APIs to:
 
 - get Access Token, Logged In User details, logged in Time, logged in User Id, Role etc.,
 - check security and authentication etc..

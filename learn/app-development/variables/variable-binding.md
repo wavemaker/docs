@@ -14,7 +14,7 @@ Binding is used to serve two purposes:
 
 # Binding to Widgets
 
-Once you have created the necessary variables ([Variable Access](http://[supsystic-show-popup id=105])), you can display the data or capture user input by binding data to a component/widget. The connection between a widget (or widget property) and a source of data is called the **binding**.
+Once you have created the necessary variables ([Variable Access](/learn/assets/var_sel.png)), you can display the data or capture user input by binding data to a component/widget. The connection between a widget (or widget property) and a source of data is called the **binding**.
 
 1. To bind widgets to data, you need to use the **Bind** dialog.
 2. In the **Properties Panel**, anything that can support data from a different source is marked with the _bind chain_ icon. You can edit or delete the bindings. Click the bind icon to display the **Bind** dialog. [![bind](/learn/assets/bind.png)](/learn/assets/bind.png)

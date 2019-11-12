@@ -11,7 +11,7 @@ The first step in configuring a Live Filter is to define the data that needs to
 
 Variable binding will allow you to obtain filter fields from a database through Database CRUD Variables.
 
-You can either create a variable or use existing variables. The behavior of data displayed will be defined by the Variable/Data Configuration properties. These properties are at the Variable level, you can configure them only when creating a service; for existing variables, the properties set at the time of variable creation will be used. To modify these, you will have to go to [variable dialog](http://[supsystic-show-popup id=105]) and make changes. Of particular interest are:
+You can either create a variable or use existing variables. The behavior of data displayed will be defined by the Variable/Data Configuration properties. These properties are at the Variable level, you can configure them only when creating a service; for existing variables, the properties set at the time of variable creation will be used. To modify these, you will have to go to [variable dialog](/learn/assets/var_sel.png) and make changes. Of particular interest are:
 
 ### `Records per request`
 This is the number of records that will be displayed on a page. Configure the Pagination property to enable user navigation to various pages of data;

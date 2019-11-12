@@ -5,7 +5,7 @@ id: ""
 
 Java Services can be accessed from within your app using Variables. These variables allow one to trigger the methods within the Java Service, pass the necessary parameters to the method and access the results from the method.
 
-A comprehensive list of these APIs can be found from the [API Designer](http://[supsystic-show-popup id=110]) after the import of the service.
+A comprehensive list of these APIs can be found from the [API Designer](/learn/assets/API_Access.png) after the import of the service.
 
 **Note**: Since the service needs to be invoked to fetch the data, the widgets bound to these variables will display values only at run-time, not in Studio mode.
 

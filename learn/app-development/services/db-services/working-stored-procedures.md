@@ -41,10 +41,10 @@ There are two aspects to stored procedure usage - Creation and Invocation:
 
 ### Creation of procedures/functions
 
-Procedure/Function needs to be created in the database itself. For MySQL DBs, you can use the **DB Shell** tab of [DB Tools](http://[supsystic-show-popup id=113]). Any procedures you have in a database that you [import](http://[supsystic-show-popup id=106]) will be available for use.
+Procedure/Function needs to be created in the database itself. For MySQL DBs, you can use the **DB Shell** tab of [DB Tools](/learn/assets/db_tools.png). Any procedures you have in a database that you [import](/learn/assets/db_new.png) will be available for use.
 
-1. The database we used contains an Employee table with Emp\_ID, Name and City details. Here is the _Employee_ table that we have designed using the [DB Designer](http://[supsystic-show-popup id=114]). [![](/learn/assets/employee_schema.png)](/learn/assets/employee_schema.png)
-2. The procedure entered in the DBShell under [DB Tools](http://[supsystic-show-popup id=113]) would be:
+1. The database we used contains an Employee table with Emp\_ID, Name and City details. Here is the _Employee_ table that we have designed using the [DB Designer](/learn/assets/db_designer_schema.png). [![](/learn/assets/employee_schema.png)](/learn/assets/employee_schema.png)
+2. The procedure entered in the DBShell under [DB Tools](/learn/assets/db_tools.png) would be:
     
     DELIMITER ;;
     CREATE PROCEDURE emp\_in\_out(IN in\_city varchar(255), OUT total integer) 
@@ -85,7 +85,7 @@ Procedures created in a DB can be accessed by creating a live service variable a
 3. This will add the parameters. Select the appropriate options - **IN** for input parameter; **out** for output parameter; and **in-out** for a combination parameter.
 4. Specify the data type for each of the parameter. See [here](/learn/app-development/services/database-services/blob-support-queries-procedures/) for handling Blob types. **NOTE**: Some data types might be specific to the underlying database being implemented, for example, cursor data type is available only for Oracle database.
 5. **Save** the procedure.
-6. [Create a variable](http://[supsystic-show-popup id=105]) using the Database API generated on the save of the procedure. This variable will expose the parameters for binding. [More on Variable Creation](/learn/app-development/variables/database-apis/)
+6. [Create a variable](/learn/assets/var_sel.png) using the Database API generated on the save of the procedure. This variable will expose the parameters for binding. [More on Variable Creation](/learn/app-development/variables/database-apis/)
 7. To use the Procedure, create a page with
     - an input text box - to accept the city name to be bound to the input parameter of the above procedure and
     - label to display the result.

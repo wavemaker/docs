@@ -49,7 +49,7 @@ A typical event flow when a variable is used to update data would be as follows:
 
 ## REST APIs
 
-As mentioned earlier, each of the services integrated into your app is converted to a RESTful service and are consumed through their respective REST APIs.These REST APIs are exposed via the [API Designer](http://[supsystic-show-popup id=110]) and can be re-configured as per the application needs.
+As mentioned earlier, each of the services integrated into your app is converted to a RESTful service and are consumed through their respective REST APIs.These REST APIs are exposed via the [API Designer](/learn/assets/API_Access.png) and can be re-configured as per the application needs.
 
 We have given an overview of how Backend services are handled in WaveMaker.
 

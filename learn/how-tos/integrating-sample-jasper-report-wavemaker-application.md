@@ -166,7 +166,7 @@ Jasper Reports is an open source Java reporting tool that can write to a variety
     
     **Note**: Some of these import files will be available already in the sample Java Service.
 4. Open/Create the page where you need to include the Jasper report
-5. Create a [Java Service Variable](http://[supsystic-show-popup id=105]) with
+5. Create a [Java Service Variable](/learn/assets/var_sel.png) with
     - Service as “_MyJavaService_” (the Java Service name created in step 1) and
     - Method as “_generatePdfReport_” (the method name added in step 2)
 6. Navigate to the **Data** tab

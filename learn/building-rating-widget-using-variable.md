@@ -5,7 +5,7 @@ id: ""
 
 Data for the Rating widget can come from a Variable - Model, Live etc.. In this example we will see how to use a Model Variable as the data source for a Rating Widget. The process is same for all types of Variables.
 
-1. Create a [Model Variable](http://[supsystic-show-popup id=105]) of Entry Type, with Is List option selected and using the following JSON structure:
+1. Create a [Model Variable](/learn/assets/var_sel.png) of Entry Type, with Is List option selected and using the following JSON structure:
     
     \[
       {

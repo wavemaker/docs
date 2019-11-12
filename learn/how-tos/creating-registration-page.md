@@ -78,7 +78,7 @@ NOTE: This method is useful for enforcing two-way encryption, i.e. in addition t
     
         }
     
-3. [Create a variable](http://[supsystic-show-popup id=105]) to invoke the Java Service created above [![](/learn/assets/registration_javaservice_var.png)](/learn/assets/registration_javaservice_var.png) and set the input data to the password widget of the registration page. [![](/learn/assets/registration_javaservice_data.png)](/learn/assets/registration_javaservice_data.png)
+3. [Create a variable](/learn/assets/var_sel.png) to invoke the Java Service created above [![](/learn/assets/registration_javaservice_var.png)](/learn/assets/registration_javaservice_var.png) and set the input data to the password widget of the registration page. [![](/learn/assets/registration_javaservice_data.png)](/learn/assets/registration_javaservice_data.png)
 4. The Password field needs to be replaced with the encrypted one returned from the above Java service. For this, we will be using the _on Before Service Call_ event of the Live Form, we are invoking the Java service variable and setting the password field to the value returned from the Java Service.
     
         Partial.UserDetailsLiveForm1Beforeservicecall = function($event, $operation, $data, options) {

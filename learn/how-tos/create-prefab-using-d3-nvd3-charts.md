@@ -178,7 +178,7 @@ In the previous section, we have seen a simple implementation using D3 Chart. Th
 
 1. Open the app, where you want to incorporate this Prefab
 2. Since we published the Prefab, in the **Prefab section of the toolbox** on the left, you will see the newly imported Prefab
-3. **Drag and drop the Prefab** onto the canvas and bind its **dataset** property. For this example, we have bound it to the _HrdbDepartmentData dataset_, [created from the Database CRUD APIs](http://[supsystic-show-popup id=105]) available on the [import of sample database](http://[supsystic-show-popup id=106]) [![](/learn/assets/nvd3_bind.png)](/learn/assets/nvd3_bind.png)
+3. **Drag and drop the Prefab** onto the canvas and bind its **dataset** property. For this example, we have bound it to the _HrdbDepartmentData dataset_, [created from the Database CRUD APIs](/learn/assets/var_sel.png) available on the [import of sample database](http://[supsystic-show-popup id=106]) [![](/learn/assets/nvd3_bind.png)](/learn/assets/nvd3_bind.png)
 4. **Preview** the app [![nvd3_app_run](/learn/assets/nvd3_app_run.png)](/learn/assets/nvd3_app_run.png)
 
 [Prefab Use Cases](/learn/app-development/widgets/use-cases-prefabs/)

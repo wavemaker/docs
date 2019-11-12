@@ -13,7 +13,7 @@ A Select widget can be used in various ways based on the source of data. Each ty
 Usually, when giving options to the user, one would want the option to make sense to the user while using a totally different value internally within the application. For example, the user may select Male/Female but the value stored could be M/F or 0/1. To cater for such needs, WaveMaker Studio offers an Entry type while creating a Model Variable. Using this option, the developer can specify different fields for the variable – one called dataValue and other called name. For example, you want the user to select gender as Male or Female, but want to use M or F internally.
 
 1. Drag and drop a Select and Label widget onto the canvas.
-2. [Create a Model Variable](http://[supsystic-show-popup id=105]), choose Entry Type
+2. [Create a Model Variable](/learn/assets/var_sel.png), choose Entry Type
 3. Select the Is List and add the list values. you can also use the text editor to enter the values in JSON format: [![](/learn/assets/sel_vals.png)](/learn/assets/sel_vals.png)
 4. Bind the dataset of the Model Variable to the select widget
 5. Set the Datafield property to the dataValue and Display Field to the name fields of the static variable. Set the Default Value, note the default value should correspond to the dataValue and not the name field of the static variable. [![](/learn/assets/sel_vals_props.png)](/learn/assets/sel_vals_props.png)

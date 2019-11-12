@@ -54,7 +54,7 @@ In case of “Random salt” which gets generated for every plain text, the hash
             return hashed\_password;
         }
     
-2. [Create a variable](http://[supsystic-show-popup id=105]) for the above Java service and bind the input parameter of the Java service variable to the _password text widget >> datavalue_ of the registration form.
+2. [Create a variable](/learn/assets/var_sel.png) for the above Java service and bind the input parameter of the Java service variable to the _password text widget >> datavalue_ of the registration form.
 3. For the DB CRUD Variable that inserts the registration details into database, bind the password field to the output of the Java Service Variable.
 4. On Submit event of the form, trigger the Java Service Variable and on onSuccess event of this variable, trigger the DB CRUD variable. This would insert the registered user details into database with encrypted password.
 

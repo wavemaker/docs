@@ -22,8 +22,8 @@ From the Database Designer, use the Query tab to build custom database queries f
 - You have to **Execute** the query successfully to be able to save the query. The **Save icon** will be active only after a successful run of the query.
 - Once you save the query, you can see the entry under Database Resources. You can use it to reopen and modify the query if need be. To modify the query, open the query, make the changes, run and save the query. You can also Delete the query using the **delete** icon.
 - When a query is saved, it generates a **paginated API** that returns a list of objects paginated. In cases where the query returns at most one record, setting the **Records** to _Single_ will ensure that the generated API returns one object instead of paginated objects. The default is set to _Paginated._
-- In addition, every API generated for query exposes an additional API for exporting the query results to Excel/CSV. However, in case the query returns a single result, the export API will not be generated. The list of APIs generated can be viewed from the [API Designer](http://[supsystic-show-popup id=110])
-- To execute and access the results of the query within the app, you need to [create a Variable based on Database APIs](/learn/app-development/variables/database-apis/) and bind the results to a widget of your choice. [Variable Access](http://[supsystic-show-popup id=105]).
+- In addition, every API generated for query exposes an additional API for exporting the query results to Excel/CSV. However, in case the query returns a single result, the export API will not be generated. The list of APIs generated can be viewed from the [API Designer](/learn/assets/API_Access.png)
+- To execute and access the results of the query within the app, you need to [create a Variable based on Database APIs](/learn/app-development/variables/database-apis/) and bind the results to a widget of your choice. [Variable Access](/learn/assets/var_sel.png).
 
 **Limitations**:
 
@@ -98,11 +98,11 @@ For example, let us modify the query above to accept the department name as inpu
     
     You can, in the Parameter section, set the **parameter id Type** to _LoggedIn UserId_ from under the _Server Side Properties_. When you enable security using the database as the service provider and employee as the User table, then setting the id to _LoggedIn UserId_ will get the user id of the current logged in user. You need not bind the parameter again, explicitly.
 6. Parameter values can also be set to App Environment properties and be defined separately for different app environments ([know more](/learn/how-tos/using-app-environment-properties/)).
-7. To execute and access the results of the query within the app, you need to [create a Variable based on Database APIs](/learn/app-development/variables/database-apis/) and bind the results to a widget of your choice. [Variable Access](http://[supsystic-show-popup id=105])
+7. To execute and access the results of the query within the app, you need to [create a Variable based on Database APIs](/learn/app-development/variables/database-apis/) and bind the results to a widget of your choice. [Variable Access](/learn/assets/var_sel.png)
 
 ### Parameterized Query Usage
 
-1. Create a [Database Crud Variable](/learn/app-development/variables/database-crud/) for Department table. [Variable Access](http://[supsystic-show-popup id=105])
+1. Create a [Database Crud Variable](/learn/app-development/variables/database-crud/) for Department table. [Variable Access](/learn/assets/var_sel.png)
 2. Add a **Select** widget to the page and bind it to the _Variable dataset_ created in the previous step with the _department name_ as the _Display field_ and _department id_ as the _Data field_. This will serve as input to the Query. Know more about [Select Widget usage](/learn/how-tos/configuring-select-widget-database-fields/).
 3. On the same page below the Select Widget, drag and drop a **Data  Table** widget
     1. set **Retrieve Data from** to _Services_, this will create a new variable for us
@@ -114,13 +114,13 @@ For example, let us modify the query above to accept the department name as inpu
     7. Since the query is a select query, the layout option available is **Readonly Simple View Data Table**.
     8. You can choose the **Pagination style** or go with the default.
     9. You have the option of **choosing the fields** to be displayed in the grid. Here we will retain the default of displaying all the fields.
-4. [Access the variable](http://[supsystic-show-popup id=105]) created during the configuration of the Data Table. It will have **Data tab** which can be used to bind the input value for the parameter. Bind it to the _datavalue_ of the select widget created in step 3, while Data Table drag and drop.
+4. [Access the variable](/learn/assets/var_sel.png) created during the configuration of the Data Table. It will have **Data tab** which can be used to bind the input value for the parameter. Bind it to the _datavalue_ of the select widget created in step 3, while Data Table drag and drop.
 5. Run the project.
 6. Select various departments and see the values in the Data Table change.
 
 ## Query Operation Type
 
-For all queries, there will be a Rest API generated. Depending on the type of the query, the appropriate HTTP method will be generated. You can access them from the [API Designer](http://[supsystic-show-popup id=110]) Here is the mapping for the type of query vs operation type:
+For all queries, there will be a Rest API generated. Depending on the type of the query, the appropriate HTTP method will be generated. You can access them from the [API Designer](/learn/assets/API_Access.png) Here is the mapping for the type of query vs operation type:
 
 - SELECT -> GET
 - INSERT -> POST

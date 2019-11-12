@@ -52,7 +52,7 @@ For each method defined by the SOAP service, a REST API is generated. You can vi
 
 ## SOAP Service Usage
 
-To use the Service data within the app, you need to create Variable. [Variable Access](http://[supsystic-show-popup id=105])
+To use the Service data within the app, you need to create Variable. [Variable Access](/learn/assets/var_sel.png)
 
 [![](/learn/assets/web_soap_var.png)](/learn/assets/web_soap_var.png)
 

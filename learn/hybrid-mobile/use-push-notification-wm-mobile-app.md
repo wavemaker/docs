@@ -92,7 +92,7 @@ For registration, app and backend server have to provide some information to pus
     To obtain the above-specified functionality, download [Java code file ](/learn/assets/push_PushService.txt)and include the Java code in this service file.
     
     NOTE: Replace packageName, imports specific to the app, senderId, apiKey, iosCertificateName, iosCertificateKey (password for iosCertificate) values in above code.
-6. [Create a service variable](http://[supsystic-show-popup id=105]) named _RegisterPush_ to register the device to receive push notifications.
+6. [Create a service variable](/learn/assets/var_sel.png) named _RegisterPush_ to register the device to receive push notifications.
     - Bind input fields
         - **deviceId** to _bind:deviceToken_,
         - **OS** to _deviceInfo variable_ and
@@ -150,7 +150,7 @@ App.onAppVariablesReady = function() {
     }
 };
 ```
-7. On every successful login, register the device for receiving the push notification. For this, [open the Actions dialog](http://[supsystic-show-popup id=105]) and select the pre-defined **loginAction**. [![](/learn/assets/push_loginAct.png)](/learn/assets/push_loginAct.png) Go to **Events** tab and write the _JavaScript function_ on loginVariable success. 
+7. On every successful login, register the device for receiving the push notification. For this, [open the Actions dialog](/learn/assets/var_sel.png) and select the pre-defined **loginAction**. [![](/learn/assets/push_loginAct.png)](/learn/assets/push_loginAct.png) Go to **Events** tab and write the _JavaScript function_ on loginVariable success. 
 ```
 App.loginActiononSuccess = function(variable, data, options) {
     //On successful login, enable push
@@ -160,7 +160,7 @@ App.loginActiononSuccess = function(variable, data, options) {
 8. If user is already logged-in, then enable push.
 9. Initialize the plugin to get the deviceId, and start listening to all the events when notification is received. Store the device Id in DB that we receive on successful registration event.
 10. On the Main page, drag and drop a text widget and button as shown below. [![](/learn/assets/push_UI.png)](/learn/assets/push_UI.png)
-11. [Create a service variable](http://[supsystic-show-popup id=105]) named **sendNotification** which will call notify method of _PushService_ [![](/learn/assets/push_serviceVar2.png)](/learn/assets/push_serviceVar2.png)
+11. [Create a service variable](/learn/assets/var_sel.png) named **sendNotification** which will call notify method of _PushService_ [![](/learn/assets/push_serviceVar2.png)](/learn/assets/push_serviceVar2.png)
     - Bind input field message to the text widget datavalue and currentUser to the name field of loggedInUser variable [![](/learn/assets/push_serviceVar2_input.png)](/learn/assets/push_serviceVar2_input.png)
 12. On Send button tap, invoke the sendNotification service variable created above.Enter the text and click on button, push message will be delivered to the devices. [![](/learn/assets/push_sendButton.png)](/learn/assets/push_sendButton.png)
 13. Create a service variable named UnregisterPush which will call unregisterDevice method of PushService [![](/learn/assets/push_serviceVar3.png)](/learn/assets/push_serviceVar3.png)
