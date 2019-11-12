@@ -44,7 +44,7 @@ You can select the appropriate type from the **Type** option in the designer.
 
 In this example, we will build a query to list the number of vacation days availed by employees from each department. We will be using the _hrdb sample database_ that ships with the product.
 
-1. Import the **sample database** into your project. [Database Integration](http://[supsystic-show-popup id=106]).
+1. Import the **sample database** into your project. [Database Integration](/learn/app-development/services/database-services/working-with-databases/).
 2. Select **hrdb** from the **Databases** Resource to open the Data Designer window.
 3. Click the **Query** tab of the **data designer** window.
 4. Select **Native SQL** as the query type and enter the following code in the Query Editor:
