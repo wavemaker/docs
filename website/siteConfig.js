@@ -70,6 +70,9 @@ const siteConfig = {
     // If you have users set above, you add it here:
     users,
 
+    /* Google Analytics */	
+    gaTrackingId: 'UA-1776644-1',
+
     /* path to images for header/footer */
     headerIcon: 'img/WM_blue_logo.png',
     footerIcon: 'img/WM_blue_logo.png',
