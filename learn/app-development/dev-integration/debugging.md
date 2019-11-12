@@ -10,7 +10,7 @@ Many times you might get stuck with a situation wherein your app does not respon
 
 # Using Logs for Debugging
 
-Log files can be accessed from the project workspace footer area. There are types of logs that are recorded - Server, and Application. These can be accessed from the [Developer Utilities](http://[supsystic-show-popup id=107]) menu for an application.
+Log files can be accessed from the project workspace footer area. There are types of logs that are recorded - Server, and Application. These can be accessed from the [Developer Utilities](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) menu for an application.
 
 [![](/learn/assets/logs.png)](/learn/assets/logs.png)
 

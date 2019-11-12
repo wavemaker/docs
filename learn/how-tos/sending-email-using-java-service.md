@@ -139,7 +139,7 @@ OR
     @Value("${app.environment.password}")
     private String password;
     
-5. From [Project Settings](http://[supsystic-show-popup id=108]) navigate to the [Profile Configuration](http://[supsystic-show-popup id=109]).
+5. From [Project Settings](/learn/app-development/wavemaker-overview/product-walkthrough#project-settings) navigate to the [Profile Configuration](/learn/app-development/deployment/configuration-profiles/).
 6. From Development section access the App Environment tab and add the values as per your needs: [![](/learn/assets/email_app_env.png)](/learn/assets/email_app_env.png)
 7. You can use these app environment variables as per your app needs. [See here for more](/learn/how-tos/using-app-environment-properties/).
 

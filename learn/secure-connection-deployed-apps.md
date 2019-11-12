@@ -60,7 +60,7 @@ To set up authentication using an LDAP data source, choose _LDAP_ as the **Secur
 
 When you choose _LDAP _as the **Security Provider**, you can perform the following configurations:
 
-- _LDAP URL_: This field specifies the host name and port number of the LDAP server. This is the root node of which security will be able to use - ldap://localhost:389/dc=wavemaker,dc=com. For deployment profile, you can specify _multiple LDAP server URLs_, if required, by providing the multiple LDAP URLs as space-separated values, from the security tab of the [Profile Configuration](http://[supsystic-show-popup id=109]). [![](/learn/assets/sec_user_ldap_url.png)](/learn/assets/sec_user_ldap_url.png)
+- _LDAP URL_: This field specifies the host name and port number of the LDAP server. This is the root node of which security will be able to use - ldap://localhost:389/dc=wavemaker,dc=com. For deployment profile, you can specify _multiple LDAP server URLs_, if required, by providing the multiple LDAP URLs as space-separated values, from the security tab of the [Profile Configuration](/learn/app-development/deployment/configuration-profiles/). [![](/learn/assets/sec_user_ldap_url.png)](/learn/assets/sec_user_ldap_url.png)
 - _Manager DN_: Distinguished Name for admin access, this is an optional field
 - _Manager Password_: Password in case admin access is mentioned above, this is an optional field
 - _User Search Pattern:_ Filter used to find the user in the directory, relative to the root specified above. The only valid variable is {0} which is replaced with the user's login name. For example: "cn={0},ou=people"

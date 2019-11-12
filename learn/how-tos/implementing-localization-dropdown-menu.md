@@ -47,7 +47,7 @@ In this document, we will be walking through the steps to enable language suppor
         - the Action Label to the following value: _App.appLocale\[mylabel\],_ (you have to use the Use Expression option from the Bind Dialog)
         - the Action Icon to icon, and
         - the Action link to link.
-5. Open the I18N dialog from the Project Configurations of the [Project Workspace](http://[supsystic-show-popup id=107]) ([more on localization](/learn/app-development/widgets/form-widgets/select-locale-usage/)). [![](/learn/assets/loc_create.png)](/learn/assets/loc_create.png)
+5. Open the I18N dialog from the Project Configurations of the [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) ([more on localization](/learn/app-development/widgets/form-widgets/select-locale-usage/)). [![](/learn/assets/loc_create.png)](/learn/assets/loc_create.png)
     1. Use **Manage Languages** to add languages to your app. By default, English is already added. [![](/learn/assets/loc_new_locale.png)](/learn/assets/loc_new_locale.png)
     2. Use **+** sign next to Message Key header to open the Localized Message Dialog. [![](/learn/assets/loc_default_msgs.png)](/learn/assets/loc_default_msgs.png)
     3. Add a message as shown below: [![](/learn/assets/menu_locale.png)](/learn/assets/menu_locale.png)

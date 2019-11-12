@@ -23,7 +23,7 @@ In this document, we will be discussing the various phases of building you own P
 
 # Prefab Configuration
 
-To **Configure ****Prefab**, from [Project Configurations](http://[supsystic-show-popup id=107]) click **Settings** to select **Config Prefab** option. The various configurations are grouped under various headings for developer convenience
+To **Configure ****Prefab**, from [Project Configurations](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) click **Settings** to select **Config Prefab** option. The various configurations are grouped under various headings for developer convenience
 
 [![](/learn/assets/prefabsettings_resources.png)](/learn/assets/prefabsettings_resources.png)
 

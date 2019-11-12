@@ -46,7 +46,7 @@ Due to US export limitations, Java JDK comes with a limited set of cryptographic
 
 Before deployment, ensure that you configure the deployment profile with the ADFS Server details.
 
-1. Get the deployment URL from [Profile Configuration dialog](http://[supsystic-show-popup id=109]) [![](/learn/assets/adfs_wm_deploy.png)](/learn/assets/adfs_wm_deploy.png)
+1. Get the deployment URL from [Profile Configuration dialog](/learn/app-development/deployment/configuration-profiles/) [![](/learn/assets/adfs_wm_deploy.png)](/learn/assets/adfs_wm_deploy.png)
 2. Configure Metadata in ADFS Server with this URL
 3. Repeat the above steps (preview) with the new ADFS metadata details and deploy the app.
 

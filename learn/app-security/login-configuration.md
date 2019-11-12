@@ -20,7 +20,7 @@ You can also configure the session timeout behavior.
 # Setting Landing Page
 
 1. **Where** the user should land: **Landing page** can be defined to be different for different roles the user is assigned. For example, an admin might want to start with the employee management page, while a user would start with their profile page. In such cases, the employee management page would be the Landing Page for the admin role and the employee profile page would be the Landing Page for the user role.
-2. Few things that you need to be aware of regarding the landing page configured here and the home page configured in the [**Project Settings**](http://[supsystic-show-popup id=108]) dialog ([Settings accessed from the Project Configurations of Workspace](http://[supsystic-show-popup id=107])):
+2. Few things that you need to be aware of regarding the landing page configured here and the home page configured in the [**Project Settings**](/learn/app-development/wavemaker-overview/product-walkthrough#project-settings) dialog ([Settings accessed from the Project Configurations of Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace)):
     - In case the app is not secure, user is redirected to the Home page configured in the project settings
     - In case the app is secure but the Home Page is not (permission set to everyone), user is redirected to the Home page configured in the project settings
     - In case the app and Home Page are secure (permission set to specific user role), user is redirected to the configured login page as per the user role [![](/learn/assets/security_landingpage.png)](/learn/assets/security_landingpage.png)

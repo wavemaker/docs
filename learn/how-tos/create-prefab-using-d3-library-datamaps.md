@@ -14,7 +14,7 @@ In this section we will see how to create a Prefab to display the datamaps and u
 3. Visit the website for [DataMaps](http://datamaps.github.io/) and download the required files from the Downloads section. We will be implementing the Basic edition. We have used the following two files - [topojson min.js](/learn/assets/topojson.min_.zip) and [datamaps world min.js](/learn/assets/datamaps.world_.min_.zip). (extract from the provided zip files)
 4. [Import the Resources](/learn/app-development/services/3rd-party-libraries)
 5. Select the folder you want the resource to be imported to, here we had selected _resources_ folder. [![](/learn/assets/datamap_resource.png)](/learn/assets/datamap_resource.png)
-6. From [Project Configurations](http://[supsystic-show-popup id=107]), choose Config Prefab under Settings:
+6. From [Project Configurations](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace), choose Config Prefab under Settings:
     - Add the uploaded script files. Make sure you enter topojson first and then datamaps resource [![](/learn/assets/datamap_settings.png)](/learn/assets/datamap_settings.png)
     - **UI Design**: Drag and drop a **Container Widget** onto the canvas, **name** it _mapContainer_ and set the **class** as _map-container_ [![](/learn/assets/prefab_container.png)](/learn/assets/prefab_container.png)
     - Open the **Script** tab and enter the following code for _Prefab.onReady_ method [![](/learn/assets/datamap_script-1.png)](/learn/assets/datamap_script-1.png) **Note**: After successful creation of the prefab, inside the script, we notice there are few functions pre-defined:
@@ -71,7 +71,7 @@ In this section we will see how to create a Prefab to display the datamaps and u
 
 1. Save and **Publish** the Prefab
 2. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs).
-3. The Prefab will be available for use across the Projects. You can see the entry in the Artefacts list from the Developer Utilities on the [Project Workspace](http://[supsystic-show-popup id=107]) and in the Widget Toolbox of any Project within your workspace.
+3. The Prefab will be available for use across the Projects. You can see the entry in the Artefacts list from the Developer Utilities on the [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) and in the Widget Toolbox of any Project within your workspace.
 4. Open the project where you want to incorporate the Datamap Prefab created earlier
 5. You will find the Prefab entry in the Prefab toolbox [![](/learn/assets/datamap_toolbar.png)](/learn/assets/datamap_toolbar.png)
 6. Drag and drop the Prefab onto the canvas and set the height to 500px
