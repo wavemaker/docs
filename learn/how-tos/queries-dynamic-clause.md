@@ -19,7 +19,7 @@ This solution can be used only with a single entity. If you want to use multiple
 
 ## Building where clause using Javascript
 
-1. We are using the _sample HRDB Database_ [imported into the app](http://[supsystic-show-popup id=106]).
+1. We are using the _sample HRDB Database_ [imported into the app](/learn/app-development/services/database-services/working-with-databases/).
 2. Create a **Page** named _SampleList_.
 3. Create a **Database API Variable** named _customQueryVar_ for the page created in previous step and set
     - **Database** as _hrdb_

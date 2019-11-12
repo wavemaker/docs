@@ -13,7 +13,7 @@ The process shows:
 
 **Step 1: Adding Mail.jar** This can be done in two ways:
 
-**Method 1**: Download and Import _mail.jar_ file of your choice into your app using the [Import Resource](http://[supsystic-show-popup id=112]) option to the _lib_ folder.
+**Method 1**: Download and Import _mail.jar_ file of your choice into your app using the [Import Resource](/learn/app-development/services/3rd-party-libraries) option to the _lib_ folder.
 
 OR
 
@@ -32,7 +32,7 @@ OR
 
 [![](/learn/assets/email_pom.png)](/learn/assets/email_pom.png)**Step 2: Creating Java Service**:
 
-1. Create a [Java Service](http://[supsystic-show-popup id=119]), named EmailService
+1. Create a [Java Service](app-development/services/java-services/java-service/), named EmailService
 2. Add the following import statements in the Java service created in the above step.
     
     import javax.servlet.http.HttpServletRequest;

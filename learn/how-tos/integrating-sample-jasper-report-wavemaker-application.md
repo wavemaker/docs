@@ -73,11 +73,11 @@ Jasper Reports is an open source Java reporting tool that can write to a variety
             </dependency>
     
 2. Create a database with a table named _employee_ with the following DB Schema and add sample data [![](/learn/assets/prereq_db.png)](/learn/assets/prereq_db.png)
-3. The _jrxml_ file has to be created as per your database. [Import](http://[supsystic-show-popup id=112]) the _jrxml_ file to _projects/src/main/resources_. For the above database, we have used the following [employee](/learn/assets/employee.zip).
+3. The _jrxml_ file has to be created as per your database. [Import](/learn/app-development/services/3rd-party-libraries) the _jrxml_ file to _projects/src/main/resources_. For the above database, we have used the following [employee](/learn/assets/employee.zip).
 
 ## Steps in Integration
 
-1. [Java Service Integration](http://[supsystic-show-popup id=119]) will create sample Java Service.
+1. [Java Service Integration](app-development/services/java-services/java-service/) will create sample Java Service.
 2. Add the below method (_generatePdfReport_) to the Java Service:
     
     public void generatePdfReport(String jrxml, String database,HttpServletResponse response)

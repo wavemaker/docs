@@ -17,7 +17,7 @@ The API’s in Project1 can be of two types:
     - From the [API Designer](/learn/assets/API_Access.png) navigate to the **Database Service** to access the API's and from the Test tab copy the **Request URL**
 2. Open the mobile app, Project2:
     
-    - Using [Web Service Integration](http://[supsystic-show-popup id=115]), import Rest service
+    - Using [Web Service Integration](/learn/app-development/services/web-services/web-services/), import Rest service
     - Provide the above URL as Service URL.
     - Click on Test and Import the web service.
     
@@ -39,7 +39,7 @@ You will need to use HTTP Authentication initially while importing the token API
     - From the [API Designer](/learn/assets/API_Access.png), navigate to the **Security Service** to access the authenticated API's
     - Locate the **Get Token API**, and copy the Description Request URL from the Test tab of the API.
 2. Open Mobile App, Project2:
-    - Using [Web Service Integration](http://[supsystic-show-popup id=115]), import REST Service
+    - Using [Web Service Integration](/learn/app-development/services/web-services/web-services/), import REST Service
     - Provide the above URL as Service URL.
     - Set HTTP Authentication to Basic and provide the test User Name and Password.
     - Test the connection.
@@ -56,7 +56,7 @@ You will need to use HTTP Authentication initially while importing the token API
     - From [API Designer](/learn/assets/API_Access.png) navigate to the **Database Service** to access the authenticated API's
     - from the Test tab copy the Request URL
 2. Open Mobile app, Project2:
-    - [Import REST Service](http://[supsystic-show-popup id=115])
+    - [Import REST Service](/learn/app-development/services/web-services/web-services/)
     - Provide the above URL
     - In the HEADERS tab provide the Name as "wm\_auth\_token" and Test Value as the token generated above.
     - Click on Test and Import the web service.

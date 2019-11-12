@@ -12,7 +12,7 @@ In this section we will see how to create a Prefab to display the datamaps and u
 1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](http://[supsystic-show-popup id=102])
 2. Enter a name and description for the Prefab
 3. Visit the website for [DataMaps](http://datamaps.github.io/) and download the required files from the Downloads section. We will be implementing the Basic edition. We have used the following two files - [topojson min.js](/learn/assets/topojson.min_.zip) and [datamaps world min.js](/learn/assets/datamaps.world_.min_.zip). (extract from the provided zip files)
-4. [Import the Resources](http://[supsystic-show-popup id=112])
+4. [Import the Resources](/learn/app-development/services/3rd-party-libraries)
 5. Select the folder you want the resource to be imported to, here we had selected _resources_ folder. [![](/learn/assets/datamap_resource.png)](/learn/assets/datamap_resource.png)
 6. From [Project Configurations](http://[supsystic-show-popup id=107]), choose Config Prefab under Settings:
     - Add the uploaded script files. Make sure you enter topojson first and then datamaps resource [![](/learn/assets/datamap_settings.png)](/learn/assets/datamap_settings.png)

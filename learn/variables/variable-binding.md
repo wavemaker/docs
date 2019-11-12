@@ -66,7 +66,7 @@ You can bind a widget value to another widget value. For example, you can bind a
 
 ### Binding to Resource
 
-You can bind your widgets to images, videos etc.. For this you have to [Import Resource](http://[supsystic-show-popup id=112]) first.
+You can bind your widgets to images, videos etc.. For this you have to [Import Resource](/learn/app-development/services/3rd-party-libraries) first.
 
 ### Binding using Expression
 

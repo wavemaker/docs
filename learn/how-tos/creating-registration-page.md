@@ -9,7 +9,7 @@ id: ""
 2. How to link the registration to the [inbuilt security and login page](#login), and
 3. Add [security encryption](#encryption) to password field using Java service
 
-1. [Add user database](http://[supsystic-show-popup id=106]) - this should contain the details of the users, their usernames, password etc. [![](/learn/assets/registration_database.png)](/learn/assets/registration_database.png)
+1. [Add user database](/learn/app-development/services/database-services/working-with-databases/) - this should contain the details of the users, their usernames, password etc. [![](/learn/assets/registration_database.png)](/learn/assets/registration_database.png)
 2. Design the registration page - create a **partial page** to allow a new user enter his/her details. Live Form will allow user to enter their details and insert the details to the database table. Drag and drop a Live Form widget, use the Database CRUD from the UserDB service and the UserDetails table and set the properties, as per your app requirements. We have used the following settings:
     - two column layout with first name, last name and email id in the first column; username, password, and role in the second column,
     - set First Name, and Username as Required fields,
@@ -48,7 +48,7 @@ To ensure that the password field is secure, it is advisable to store it in an e
 
 NOTE: This method is useful for enforcing two-way encryption, i.e. in addition to the SSL communication, you can encrypt the password before sending it to the backend. In case you want to use the One-way Digest method of scrambling the encrypted value to produce a digest we suggest you follow the steps given in [this document](/learn/how-tos/support-password-encryption/).
 
-1. [Create a Java Service](http://[supsystic-show-popup id=119]) called MD5Encryption.
+1. [Create a Java Service](app-development/services/java-services/java-service/) called MD5Encryption.
 2. Add the following to the Java Service code. Here we are using an MD5 hashing algorithm to generate a checksum for the password field, refer here for more [details](http://www.mkyong.com/java/java-md5-hashing-example/). Ensure that the length of the password column in the database is greater than the length of the result from the encryption algorithm used, in this case, it should be greater than 32. Import the following files:
     
     import org.apache.commons.codec.digest.DigestUtils;

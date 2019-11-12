@@ -29,7 +29,7 @@ To **Configure ****Prefab**, from [Project Configurations](http://[supsystic-sh
 
 ## Resources
 
-Under this tab, you can set the following resource references as needed by your Prefab. Before setting the details, you will need to [Import Resource](http://[supsystic-show-popup id=112]) into your Prefab project.
+Under this tab, you can set the following resource references as needed by your Prefab. Before setting the details, you will need to [Import Resource](/learn/app-development/services/3rd-party-libraries) into your Prefab project.
 
 1. _Style_: The CSS style associated with the project will be applied to this prefab. You can add your own style file.
 2. _Script_: Any scripts that need prior execution can be added here.

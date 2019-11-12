@@ -13,7 +13,7 @@ This post walks you through the creation and usage of a simple Prefab. We will b
     - In the Properties tab, add two _inbound_ properties which will take in the two strings to compare [![](/learn/assets/demo_prefab_inbound-1.png)](/learn/assets/demo_prefab_inbound-1.png) and one _outbound_ property to return the result [![](/learn/assets/demo_prefab_outbound-1.png)](/learn/assets/demo_prefab_outbound-1.png)
     - In the Events tab, add an _event_ (Comparefail) which will be triggered when the comparison of strings fails. The event will be defined in the **JavaScript** of the Prefab, the application using this Prefab will be defining the action for this event. Note, by default two events are already given - Load and Destroy [![](/learn/assets/demo_prefab_event-1.png)](/learn/assets/demo_prefab_event-1.png)
     - You can set the display icon and mention the group for Prefab from the Packaging tab
-4. [Add a **Java Service**](http://[supsystic-show-popup id=119]) for the string comparison logic. Use the same names that you gave in the Methods of Prefab Settings, in this case, **String\_compare** for _Java Service_ and **confirm** for the _method_ Enter the following method to compare strings:
+4. [Add a **Java Service**](app-development/services/java-services/java-service/) for the string comparison logic. Use the same names that you gave in the Methods of Prefab Settings, in this case, **String\_compare** for _Java Service_ and **confirm** for the _method_ Enter the following method to compare strings:
     
         
         public String confirm(String a, String b) {

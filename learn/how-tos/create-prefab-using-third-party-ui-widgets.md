@@ -11,7 +11,7 @@ In this section, you will learn how to use third-party UI widgets in Studio. We 
 
 1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](http://[supsystic-show-popup id=102])
 2. Enter a name and description for the Prefab
-3. [Import the resources](http://[supsystic-show-popup id=112]) needed
+3. [Import the resources](/learn/app-development/services/3rd-party-libraries) needed
 4. Create **folder lightbox** with **three sub-folders css, js and images**
 5. Upload the following files to their respective folders - **lightbox.min.js, lightbox.min.css and four images**. You will find these files in the respective folders from the extracted folder _lighbox2-master/dist_ folder. [![](/learn/assets/lbprefab_resource.png)](/learn/assets/lbprefab_resource.png)
 6. From [Project Configurations](http://[supsystic-show-popup id=107]), choose Config Prefab under Settings:

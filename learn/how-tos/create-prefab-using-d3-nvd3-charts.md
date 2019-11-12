@@ -93,7 +93,7 @@ We will see the implementation of a simple d3 line chart using [the following ex
     
      <svg id="visualisation" width="100%" height="500"></svg>
     
-6. [Import Resource](http://[supsystic-show-popup id=112]), to import the [d3-min js](/learn/assets/d3-min.zip) file (download and extract the file) into the Resource folder of your Prefab [![](/learn/assets/d3_import.png)](/learn/assets/d3_import.png)
+6. [Import Resource](/learn/app-development/services/3rd-party-libraries), to import the [d3-min js](/learn/assets/d3-min.zip) file (download and extract the file) into the Resource folder of your Prefab [![](/learn/assets/d3_import.png)](/learn/assets/d3_import.png)
 7. From [Project Configurations](http://[supsystic-show-popup id=107]), choose Config Prefab under Settings:
     - From Resources, add the js files [![](/learn/assets/d3_resource.png)](/learn/assets/d3_resource.png) NOTE: You can expose many properties and set the values as static or dynamic to be bound. For details of the properties that can be exposed refer to the [D3 website](https://d3js.org/).
     - **Add Property** - **dataset** with attributes _Widget_ set to **text**, _Type_ set to **object** (type it, if not selectable) and _Bindable_ set to **in-bound** [![](/learn/assets/d3_props.png)](/learn/assets/d3_props.png)
@@ -106,7 +106,7 @@ We will see the implementation of a simple d3 line chart using [the following ex
 
 1. Open the app, where you want to incorporate this Prefab.
 2. If you have published to the app, in the **Prefab section of the toolbox** on the left, you will see the newly imported Prefab.
-3. Drag and drop the Prefab onto the canvas and Bind its dataset property. For this example, we have bound it to the HrdbDepartmentData dataset, which is available on the [import of sample database](http://[supsystic-show-popup id=106]) [![](/learn/assets/d3_bind.png)](/learn/assets/d3_bind.png)
+3. Drag and drop the Prefab onto the canvas and Bind its dataset property. For this example, we have bound it to the HrdbDepartmentData dataset, which is available on the [import of sample database](/learn/app-development/services/database-services/working-with-databases/) [![](/learn/assets/d3_bind.png)](/learn/assets/d3_bind.png)
 4. **Preview** the app
 
 ## Implementing NVD3 Charts
@@ -118,7 +118,7 @@ In the previous section, we have seen a simple implementation using D3 Chart. Th
 1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](http://[supsystic-show-popup id=102])
 2. Enter a name and description for the Prefab
 3. **SAVE** the project setting without making any changes
-4. [Import Resource](http://[supsystic-show-popup id=112]) to import the following resource files: [nv-d3-min](/learn/assets/nv-d3-min.zip) & [nv-d3 file](/learn/assets/nv.d3.zip) into the Resource folder of your Prefab (download and extract the files). [![](/learn/assets/nvd3_import.png)](/learn/assets/nvd3_import.png)
+4. [Import Resource](/learn/app-development/services/3rd-party-libraries) to import the following resource files: [nv-d3-min](/learn/assets/nv-d3-min.zip) & [nv-d3 file](/learn/assets/nv.d3.zip) into the Resource folder of your Prefab (download and extract the files). [![](/learn/assets/nvd3_import.png)](/learn/assets/nvd3_import.png)
 5. Open the **SCRIPT** tab of the Main page
 6. Enter the following code (you can copy and paste the same). This code generates the sin and cosine values that can be represented on the chart. Note that for the sin values, the bar attribute is set to true, thus the sine values are represented as bar chart while cosine values are represented as line graph. [Click here for the code](/learn/assets/nvd3_linegraph.txt). Enter the following function, too, within **Prefab.onReady** function after the above code. This code is to set up the visual rendering of NVD3 chart. [Click here for the code](/learn/assets/nvd3_onReady.txt) [![](/learn/assets/nvd3_js1.png)](/learn/assets/nvd3_js1.png)
 7. In the **MARKUP** tab add the following code within the _wm-content_ tag: [![](/learn/assets/nvd3_html.png)](/learn/assets/nvd3_html.png)
@@ -178,7 +178,7 @@ In the previous section, we have seen a simple implementation using D3 Chart. Th
 
 1. Open the app, where you want to incorporate this Prefab
 2. Since we published the Prefab, in the **Prefab section of the toolbox** on the left, you will see the newly imported Prefab
-3. **Drag and drop the Prefab** onto the canvas and bind its **dataset** property. For this example, we have bound it to the _HrdbDepartmentData dataset_, [created from the Database CRUD APIs](/learn/assets/var_sel.png) available on the [import of sample database](http://[supsystic-show-popup id=106]) [![](/learn/assets/nvd3_bind.png)](/learn/assets/nvd3_bind.png)
+3. **Drag and drop the Prefab** onto the canvas and bind its **dataset** property. For this example, we have bound it to the _HrdbDepartmentData dataset_, [created from the Database CRUD APIs](/learn/assets/var_sel.png) available on the [import of sample database](/learn/app-development/services/database-services/working-with-databases/) [![](/learn/assets/nvd3_bind.png)](/learn/assets/nvd3_bind.png)
 4. **Preview** the app [![nvd3_app_run](/learn/assets/nvd3_app_run.png)](/learn/assets/nvd3_app_run.png)
 
 [Prefab Use Cases](/learn/app-development/widgets/use-cases-prefabs/)

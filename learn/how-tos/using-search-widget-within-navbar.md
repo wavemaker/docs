@@ -7,7 +7,7 @@ We will see how to configure the Search widget within the Navbar. We will create
 
 1. Create a page with and ‘blank’ template and ‘One column layout with top navbar’.
 2. Select mobile navbar and set the ‘Show Search button’ from the Properties Panel. [![](/learn/assets/navbar_search_props.png)](/learn/assets/navbar_search_props.png)
-3. [Database Integration](http://[supsystic-show-popup id=106]) - add the sample HRDB into your project.
+3. [Database Integration](/learn/app-development/services/database-services/working-with-databases/) - add the sample HRDB into your project.
 4. [Create a Database CRUD Variable](/learn/assets/var_sel.png) with ‘hrdb’ Database, ‘Employee’ Table and ‘read’ Operation. (name it say, employeeList) [![](/learn/assets/navbar_search_var.png)](/learn/assets/navbar_search_var.png)
 5. From the Data tab of the above Variable, bind the firstname Filter Field to query option under the mobile\_navbar Widget [![](/learn/assets/navbar_search_vardata.png)](/learn/assets/navbar_search_vardata.png) [![](/learn/assets/navbar_search_varbind.png)](/learn/assets/navbar_search_varbind.png)
 6. Drag and drop a List Widget. Use Existing ‘employeeList’ variable as the source of data.

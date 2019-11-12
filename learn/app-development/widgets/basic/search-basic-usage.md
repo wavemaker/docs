@@ -12,7 +12,7 @@ WaveMaker allows you to add search capability via the **search widget**. Followi
 [![](/learn/assets/search_run3.png)](learn/wp-content/uploads/search_run3.png)
 
 1. Drag and drop a **search**, and four **label** widgets on a page. We have used the grid layout here. [![](/learn/assets/search_design.png)](/learn/assets/search_design.png)
-2. [Import the sample database](http://[supsystic-show-popup id=106]). [Create a Variable](/learn/assets/var_sel.png) based on the database CRUD APIs auto-generated when the database is imported. [![](/learn/assets/search_lv.png)](/learn/assets/search_lv.png)
+2. [Import the sample database](/learn/app-development/services/database-services/working-with-databases/). [Create a Variable](/learn/assets/var_sel.png) based on the database CRUD APIs auto-generated when the database is imported. [![](/learn/assets/search_lv.png)](/learn/assets/search_lv.png)
 3. Bind the **Value** dataset property of the search widget to the department variable created in the previuos step. [![](/learn/assets/search_bind.png)](/learn/assets/search_bind.png)
 4. Set the **Search key** and **Label Value** properties to the column name you want to search by, in this case, _name_. **Note**: The Search Key, Label Value, and Image Source are bindable. For example, the Label Value can be bound in this case to 'deptcode+name', using the expression option from the binding dialog. [![](/learn/assets/search_props.png)](/learn/assets/search_props.png)
 

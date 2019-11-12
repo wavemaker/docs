@@ -5,7 +5,7 @@ id: ""
 
 We will use the popover to display the list of employees of a particular department using the Sample HRDB Database.
 
-1. [Import Sample HRDB](http://[supsystic-show-popup id=106]) and in the [Query Editor](http://[supsystic-show-popup id=117]) write two queries - one to obtain **Employee count** for a given department and one for **Employee Picurl**. `Select count(*) from EMPLOYEE where EMPLOYEE.DEPTID = :deptid` `Select EMPLOYEE.PICURL from EMPLOYEE where EMPLOYEE.DEPTID = :deptid`
+1. [Import Sample HRDB](/learn/app-development/services/database-services/working-with-databases/) and in the [Query Editor](/learn/app-development/services/database-services/working-with-queries) write two queries - one to obtain **Employee count** for a given department and one for **Employee Picurl**. `Select count(*) from EMPLOYEE where EMPLOYEE.DEPTID = :deptid` `Select EMPLOYEE.PICURL from EMPLOYEE where EMPLOYEE.DEPTID = :deptid`
 2. Create a **popover page** and select a blank template.
     1. Drag and drop a **List** onto the canvas space, select the _data source_ to the _dataset_ of the _Emp\_Picurl_ query variable created in the first step and set the _layout_ to _Media List. [![](/learn/assets/popover_configurelist.png)](/learn/assets/popover_configurelist.png)_
     2. Bind the _picture_ widget to the picurl field of the query variable, delete the label from the list on canvas.

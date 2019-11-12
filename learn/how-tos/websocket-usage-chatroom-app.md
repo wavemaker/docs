@@ -45,7 +45,7 @@ This variable is an interface between client and server. Follow below steps to c
 **Step 5:** Secure the app
 
 1. We will be using a Database for login details
-    - [Import the Database](http://[supsystic-show-popup id=106]) with the login details (here we will be using the sample hrdb Employee table
+    - [Import the Database](/learn/app-development/services/database-services/working-with-databases/) with the login details (here we will be using the sample hrdb Employee table
 2. [Enable Security](http://[supsystic-show-popup id=111]) and use Database as Service Provider
 3. Configure the Security as follows: [![](/learn/assets/wschat_sec.png)](/learn/assets/wschat_sec.png)
 

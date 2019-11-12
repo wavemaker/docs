@@ -45,7 +45,7 @@ You can use a database to store your authentication data. The database must incl
 When you choose **Database** as the **Security Provider**, you can perform the following configurations on the **Users** tab:
 
 - **Database Configuration**:
-    - **Database**: The Database that contains the tables for the username and password fields. Choose the Database from the pull-down menu. (You have to import the database first. See [Database Integration](http://[supsystic-show-popup id=106]). If you have imported the database and it does not appear in this list, try closing and reopening the project).
+    - **Database**: The Database that contains the tables for the username and password fields. Choose the Database from the pull-down menu. (You have to import the database first. See [Database Integration](/learn/app-development/services/database-services/working-with-databases/). If you have imported the database and it does not appear in this list, try closing and reopening the project).
     - **User Table**: Select the table that contains the columns for the usernames and passwords.
 - **User**:
     - `User Id Column`: Select the column for the user id
