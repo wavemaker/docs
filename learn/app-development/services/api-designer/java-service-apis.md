@@ -4,7 +4,9 @@ id: ""
 ---
 ---
 
-REST APIs are generated for the user defined [Java Service](http://[supsystic-show-popup id=119]) Classes which can be viewed from the API Designer.
+REST APIs are generated for the user defined [Java Service](app-development/services/java-services/java-service/) Classes which can be viewed from the API Designer.
+
+[![](/learn/assets/API_java.png)](/learn/assets/API_java.png)
 
 - Selecting the _endpoint_ will display the details of the Java Service which include description and methods
 - Selecting a method would display the details of the method including:
@@ -15,5 +17,5 @@ REST APIs are generated for the user defined [Java Service](http://[supsystic-sh
     - response format includes return parameters, type, and description.
 - The user can also test the API from the test tab, by passing values to the parameters and using the TEST button.
 
-[![](/learn/assets/API_java.png)](/learn/assets/API_java.png)
+
 
