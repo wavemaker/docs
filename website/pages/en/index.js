@@ -18,7 +18,7 @@ class Index extends React.Component {
             <div className="row">
                 <div id="logo-navigation" className="column logo-col">
                     <div id="logo">
-                        <a href="https://www.wavemaker.com/"><img src="/learn/img//WM_logo-final-grey-04.svg" alt="WaveMaker"/></a>
+                        <a href="https://www.wavemaker.com/rapid-application-development-platform/"><img src="/learn/img//WM_logo-final-grey-04.svg" alt="WaveMaker"/></a>
                     </div>
                 </div>
                 <div className="column navigation nav-menu">
