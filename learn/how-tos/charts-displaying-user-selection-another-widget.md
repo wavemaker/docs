@@ -10,7 +10,7 @@ Hovering over the chart shows the values corresponding to the nearest data point
     1. _Chart widget_,
     2. two _Label Widgets_\- to display the total budget of the selected department from the chart and
     3. a _Data Table_ - to display the selected department details from the chart in each of the three rows. [![](/learn/assets/chart_sel_design.png)](/learn/assets/chart_sel_design.png)
-3. Create a [Database CRUD Variable](http://[supsystic-show-popup id=105]) (say, _deptVar_) using the Department table
+3. Create a [Database CRUD Variable](/learn/assets/var_sel.png) (say, _deptVar_) using the Department table
 4. Drag and drop a Line chart onto the first Grid row. Bind the chart widget to the Department dataset, and set x-axis to deptCode and y-axis to Q1, Q2, Q3, and Q4 [![](/learn/assets/chart_sel_chart.png)](/learn/assets/chart_sel_chart.png)
 5. Drag and drop two labels onto the second row of the Grid. Set the caption of one to say "Total Budget:". Bind the caption property of the second Label widget to display the total budget as the sum of Q1, Q2, Q3 and Q4 values from the selected item under chart widget using the Use Expression option in the bind dialog. [![](/learn/assets/chart_sel_label.png)](/learn/assets/chart_sel_label.png)
 6. Drag and drop a Data Table onto the third row of the Grid. Set the data source of the Data Table to the selected item of the chart widget. Choose the other settings as per your requirements. We have chosen a Read-only table and selected to display department id, name, budget, code, and location. [![](/learn/assets/chart_sel_dt.png)](/learn/assets/chart_sel_dt.png)

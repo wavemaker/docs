@@ -13,7 +13,7 @@ Setting the data source to a variable will facilitate following scenarios:
 - List data from Services like a Database, Web Service, Java Service;
 - List values stored in a Custom (Model) Variable.
 
-When you select a service, a variable will be created automatically by the platform. You can use existing or predefined variables, too. The behavior of data displayed will be defined by the Variable/Data Configuration properties. These properties are at the Variable level and can be configured them only when creating a new variable. You can modify the properties from the [variable dialog](http://[supsystic-show-popup id=105]).
+When you select a service, a variable will be created automatically by the platform. You can use existing or predefined variables, too. The behavior of data displayed will be defined by the Variable/Data Configuration properties. These properties are at the Variable level and can be configured them only when creating a new variable. You can modify the properties from the [variable dialog](/learn/assets/var_sel.png).
 
 Of particular interest are:
 

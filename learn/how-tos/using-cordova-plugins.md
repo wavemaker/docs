@@ -25,7 +25,7 @@ There might be a case when this list of plugins provided by default falls short 
     - onAppReady function in app.js: if the plugin needs to be triggered at application startup time.
     - onPageReady function in a page: if the plugin needs to be triggered at page ready event.
     - Widget events: if the plugin needs to be triggered when a certain event (like tap, double tap etc.) occurs on a widget. Select JavaScript for the event and invoke the plugin from the JavaScript callback.
-5. [Create a model variable](http://[supsystic-show-popup id=105]) to hold the response from Cordova plugin. Whenever Cordova plugin is executed, update this variable. This variable can be used in further bindings.
+5. [Create a model variable](/learn/assets/var_sel.png) to hold the response from Cordova plugin. Whenever Cordova plugin is executed, update this variable. This variable can be used in further bindings.
 
 **Points to note**:
 
@@ -74,7 +74,7 @@ An application has to be built to list the phone numbers of employees in an orga
     - var Utils = App.getDependency('Utils');
         
         ![](/learn/assets/cordova_uc5.png)
-9. [Create a Model Variable](http://[supsystic-show-popup id=105]) called **callResponse** that will hold the plugin's response. callResponse is of entry type with message and success as its properties. Giving default values will help in identifying the type of the property. For example, success has false as the default value. From that, it can be inferred that success is of boolean type. [![](/learn/assets/cordova_uc6.png)](/learn/assets/cordova_uc6.png)
+9. [Create a Model Variable](/learn/assets/var_sel.png) called **callResponse** that will hold the plugin's response. callResponse is of entry type with message and success as its properties. Giving default values will help in identifying the type of the property. For example, success has false as the default value. From that, it can be inferred that success is of boolean type. [![](/learn/assets/cordova_uc6.png)](/learn/assets/cordova_uc6.png)
 10. The plugin's API takes success and error function as arguments which are invoked after execution of native code. From the onCallSuccess and onCallFailure callback of the plugin set the plugin's response to callResponse.
     
     var onCallSuccess = function(result) {

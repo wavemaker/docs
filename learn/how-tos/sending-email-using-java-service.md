@@ -111,7 +111,7 @@ OR
 
 **Step 3: Using the Java Service**:
 
-1. 1. Create a [Java Service Variable](http://[supsystic-show-popup id=105]) for the Java service created in the previous steps.
+1. 1. Create a [Java Service Variable](/learn/assets/var_sel.png) for the Java service created in the previous steps.
 
 [![](/learn/assets/email_java_var.png)](/learn/assets/email_java_var.png)
 

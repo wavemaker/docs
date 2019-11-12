@@ -6,7 +6,7 @@ id: ""
 We will build a tree using a simple static structure
 
 1. Drag and drop a _Tree_ widget in your canvas. Tree widget comes with multiple nodes
-2. [Create a Model Variable](http://[supsystic-show-popup id=105]), say staticTree, giving the structure of the data to be displayed in the tree. Ensure that the _IsList_ check box is selected.
+2. [Create a Model Variable](/learn/assets/var_sel.png), say staticTree, giving the structure of the data to be displayed in the tree. Ensure that the _IsList_ check box is selected.
 3. In the _Text Editor_ enter the following code:
     
     \[

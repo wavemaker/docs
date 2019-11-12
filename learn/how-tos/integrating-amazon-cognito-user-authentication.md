@@ -143,7 +143,7 @@ We will implement a custom Authentication Service which will take the JWT access
 
 ## Configuring Login Page
 
-1. In the Login page, create [Login Action](http://[supsystic-show-popup id=105]), called _cognitoLogin_. Note we are using this action in the code snippet given below, if you are creating the action with a different name, you need to change the code accordingly.
+1. In the Login page, create [Login Action](/learn/assets/var_sel.png), called _cognitoLogin_. Note we are using this action in the code snippet given below, if you are creating the action with a different name, you need to change the code accordingly.
 2. Add On Click event to the Login Button
 3. Add the Following code into the loginButtonClick function
     

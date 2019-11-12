@@ -32,7 +32,7 @@ Chatroom App utilizes a WebSocket service to enable chat among multiple users.
 This variable is an interface between client and server. Follow below steps to create the variable:
 
 - Open the page where you want to use the chat service
-- [Create a Web Service Variable](http://[supsystic-show-popup id=105])
+- [Create a Web Service Variable](/learn/assets/var_sel.png)
 - Select _chatroomservice_ (WebSocket service name entered while import) against the **Service** property.
 - Give the variable a name (in this case **ChatroomVariable)**
 - From the Variables dialog:
@@ -53,7 +53,7 @@ This variable is an interface between client and server. Follow below steps to c
 
 This variable will get the logged in employee details. Follow below steps to create the variable:
 
-1. [Create a Database CRUD Variable](http://[supsystic-show-popup id=105]) (in this case ****employeeDetails) for _hrdb_ _Employee_ entity.****
+1. [Create a Database CRUD Variable](/learn/assets/var_sel.png) (in this case ****employeeDetails) for _hrdb_ _Employee_ entity.****
     - Check the properties **Request data on page load**
     - From the **Data** tab, set **empId** Filter Field to _loggedInUser.dataSet.id_ using the bind icon next to the empId
 
@@ -61,7 +61,7 @@ This variable will get the logged in employee details. Follow below steps to cr
 
 This variable will get employee details to be displayed against the chat messages. Follow below steps to create the variable:
 
-1. [Create a Database CRUD Variable](http://[supsystic-show-popup id=105]) for _hrdb_ _Employee_ entity (in this case ****employeeData).****
+1. [Create a Database CRUD Variable](/learn/assets/var_sel.png) for _hrdb_ _Employee_ entity (in this case ****employeeData).****
     - Check the properties **Request data on page load**
     - From the **Events** tab, set **On Success** to trigger _JavaScript._ Enter the following code to retrieve the picurl of the employees:
         

@@ -106,7 +106,7 @@ This post walks you through the creation and usage of a simple Prefab. We will b
     
     }
     
-5. [Create a Variable](http://[supsystic-show-popup id=105]) to invoke the Java Service (string\_compare) and method (confirm) within that service [![](/learn/assets/demo_prefab_var.png)](/learn/assets/demo_prefab_var.png)
+5. [Create a Variable](/learn/assets/var_sel.png) to invoke the Java Service (string\_compare) and method (confirm) within that service [![](/learn/assets/demo_prefab_var.png)](/learn/assets/demo_prefab_var.png)
 6. Pass the _inbound parameters_ of the Prefab to the Java Service, by binding them to the input fields accessible from the Data tab [![](/learn/assets/demo_prefab_var_data.png)](/learn/assets/demo_prefab_var_data.png) [![](/learn/assets/demo_prefab_var_databind.png)](/learn/assets/demo_prefab_var_databind.png)
 7. We want the _event_ of the Prefab to be triggered when the _method_ returns an "invalid" message. This can be achieved by writing the appropriate **JavaScript** for the _onSuccess_ event of the method accessible from the Events tab of the Variable. [![](/learn/assets/demo_prefab_var_dataevent.png)](/learn/assets/demo_prefab_var_dataevent.png) You will find a message guiding you to the location of the JavaScript file. Click the link and use the following code in the JavaScript in the snippet
     

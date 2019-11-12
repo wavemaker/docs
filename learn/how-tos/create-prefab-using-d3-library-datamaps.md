@@ -120,7 +120,7 @@ Now that you have made changes to the Prefab, we have to incorporate these chang
     2. Open the Project where Prefab was incorporated earlier
     3. You will see a dialog saying the updated version is available for usage. **Update & Reload**.
 - You will find new properties displayed in the Properties panel
-- To set the properties we will be [creating **two Model Variables**](http://[supsystic-show-popup id=105]) - MapProps and ColorMap:
+- To set the properties we will be [creating **two Model Variables**](/learn/assets/var_sel.png) - MapProps and ColorMap:
     1. **MapProps** as a _list JSON format_, we are setting label etc.:
         
         \[

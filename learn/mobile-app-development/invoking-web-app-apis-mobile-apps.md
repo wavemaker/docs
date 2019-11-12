@@ -13,7 +13,7 @@ The API’s in Project1 can be of two types:
 ## Accessing unAuthenticated Services
 
 1. In the web app Project1: (As an example, we will look at accessing the sample database services i.e hrdb’s services)
-    - From the [API Designer](http://[supsystic-show-popup id=110]) navigate to the **Database Service** to access the API's and from the Test tab copy the **Request URL**
+    - From the [API Designer](/learn/assets/API_Access.png) navigate to the **Database Service** to access the API's and from the Test tab copy the **Request URL**
 2. Open the mobile app, Project2:
     
     - Using [Web Service Integration](http://[supsystic-show-popup id=115]), import Rest service
@@ -28,14 +28,14 @@ In the case of Authenticated Web App, you will need to use either HTTP Authentic
 
 We recommend you generate an authorization token at the initial load of the application (for instance, from the _onPageReady_ event of the landing page of the application or from the _onSuccess_ event of the _loginAction_, in the case security is enabled for Project2). You can then use the authorization token to access the other authenticated services of Project1.
 
-To import the Web API’s in Project2, you will need to use the Request URL for the API’s calls of Project1. You will be able to access the API's for the services in the Project1 through the [API Designer](http://[supsystic-show-popup id=110]).
+To import the Web API’s in Project2, you will need to use the Request URL for the API’s calls of Project1. You will be able to access the API's for the services in the Project1 through the [API Designer](/learn/assets/API_Access.png).
 
 You will need to use HTTP Authentication initially while importing the token API to generate the access token. This access token will then be used to access the remaining authenticated services.
 
 ### Step 1: Obtain the Auth Token
 
 1. In the Web App, Project1:
-    - From the [API Designer](http://[supsystic-show-popup id=110]), navigate to the **Security Service** to access the authenticated API's
+    - From the [API Designer](/learn/assets/API_Access.png), navigate to the **Security Service** to access the authenticated API's
     - Locate the **Get Token API**, and copy the Description Request URL from the Test tab of the API.
 2. Open Mobile App, Project2:
     - Using [Web Service Integration](http://[supsystic-show-popup id=115]), import REST Service
@@ -45,14 +45,14 @@ You will need to use HTTP Authentication initially while importing the token API
     - From the Response tab, locate and make a note of the _wm\_auth\_token_.
     - Import the service.
 3. Variable for Auth Token
-    - [Access variable dialog](http://[supsystic-show-popup id=105]) and click the New Variable button to create a Model Variable
+    - [Access variable dialog](/learn/assets/var_sel.png) and click the New Variable button to create a Model Variable
     - Enter _wm\_auth\_token_ from the previous step as the **dataValue**
 4. After the token is generated and stored, you can access the services of Project1 using that token.
 
 ### Step 2: Accessing Authenticated Services
 
 1. In the Project1: (As an example, we will look at accessing the sample database services i.e HRDB’s services.)
-    - From [API Designer](http://[supsystic-show-popup id=110]) navigate to the **Database Service** to access the authenticated API's
+    - From [API Designer](/learn/assets/API_Access.png) navigate to the **Database Service** to access the authenticated API's
     - from the Test tab copy the Request URL
 2. Open Mobile app, Project2:
     - [Import REST Service](http://[supsystic-show-popup id=115])

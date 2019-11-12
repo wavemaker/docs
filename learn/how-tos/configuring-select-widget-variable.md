@@ -13,7 +13,7 @@ A Select widget can be used in various ways based on the source of data. Each ty
 Instead of having a [comma-separated list](/learn/how-tos/configuring-select-widget-static-list-values/), one can use a Variable to hold the list and then bind it to the Select widget. This will enable us to reuse the list at multiple places if needed.
 
 1. Drag and drop a Select and Label widget onto the canvas.
-2. [Create a Model Variable](http://[supsystic-show-popup id=105]), choose the Is List and add the list values: [![](/learn/assets/sel_listvar.png)](/learn/assets/sel_listvar.png)
+2. [Create a Model Variable](/learn/assets/var_sel.png), choose the Is List and add the list values: [![](/learn/assets/sel_listvar.png)](/learn/assets/sel_listvar.png)
 3. Bind the Select Widget to the Model Variable dataset
 4. Set the Data field value to the dataValue of the model variable. This is the value that is selected by the user.
 5. The Display field is what the user sees in the list. In this case it is same as the Data field. We will see the case when both are different in the next use case. [![](/learn/assets/sel_listvar_props.png)](/learn/assets/sel_listvar_props.png)

@@ -10,7 +10,7 @@ Dynamic Data Tables can be created in the following ways:
 
 ## Creating Dynamic Data Table using Single Service
 
-The dynamic metadata from a single service can be displayed in the Data Table using “The Columns are dynamic” option and checking the “Update Data on Input Change” behavior in the respective variable at the time of Data Table configuration For example, an API may be returning dynamic data at runtime, hence, you will need to [create a API based variable](http://[supsystic-show-popup id=105]) for the above API service and choose the option “The columns are dynamic” for the Data Table widget. [Click here for more details](/learn/app-development/variables/database-apis/).
+The dynamic metadata from a single service can be displayed in the Data Table using “The Columns are dynamic” option and checking the “Update Data on Input Change” behavior in the respective variable at the time of Data Table configuration For example, an API may be returning dynamic data at runtime, hence, you will need to [create a API based variable](/learn/assets/var_sel.png) for the above API service and choose the option “The columns are dynamic” for the Data Table widget. [Click here for more details](/learn/app-development/variables/database-apis/).
 
 ## Creating Dynamic Data Table using Multiple Services
 
@@ -25,7 +25,7 @@ Here we will see how to create a dynamic grid based on the metadata returned fro
         
         select \* from USER
         
-2. [Create a Database API variables](http://[supsystic-show-popup id=105]) for the queries created above. Call them, say DeptData and UserData **Note**: Make sure you have checked the **Request Data on Page Load** option for the variables created above. [![](/learn/assets/dynamic_grid1.png)](/learn/assets/dynamic_grid1.png)
+2. [Create a Database API variables](/learn/assets/var_sel.png) for the queries created above. Call them, say DeptData and UserData **Note**: Make sure you have checked the **Request Data on Page Load** option for the variables created above. [![](/learn/assets/dynamic_grid1.png)](/learn/assets/dynamic_grid1.png)
 3. Drag and drop two **Button** widgets onto the canvas. Set the **Caption** property as _Show Department Data_ and _Show User Data_.
 4. Drag and drop a **Data Table** widget on the canvas. While configuring the Data Table, select the option “_The columns are dynamic_”. Also, please note that we have chosen the UserData as the Source Variable. Thus User data will be displayed initially. You can configure it to any variable of your choice. [![](/learn/assets/dynamic_grid2.png)](/learn/assets/dynamic_grid2.png)
 5. Rename the Data Table to “SVGrid” or any other valid name as per your scenario (this name is used in the JavaScript code later). [![](/learn/assets/dynamic_grid3.png)](/learn/assets/dynamic_grid3.png)

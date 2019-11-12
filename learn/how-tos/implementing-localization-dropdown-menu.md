@@ -7,7 +7,7 @@ id: ""
 
 In this document, we will be walking through the steps to enable language support to Dropdown Menu widget.
 
-1. From the [Variable](http://[supsystic-show-popup id=105]) menu create a Model Variable.
+1. From the [Variable](/learn/assets/var_sel.png) menu create a Model Variable.
 2. Give a name to the Variable, say _menudata_, and set the **isList** option to true.
 3. Use the following JSON structure in the Text Editor, to define the structure for Menu identifying Label, Icon, Link, and Children. Icons can be [halflings from glyphicons](http://glyphicons.com/) or [font awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons.
     
