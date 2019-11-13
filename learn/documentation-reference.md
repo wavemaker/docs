@@ -1,6 +1,6 @@
 ---
 id: "documentation-reference"
-title: "WaveMaker Developers Guide"
+title: "WaveMaker Guide"
 sidebar_label: "Introduction"
 ---
 Introduction to WaveMaker. Find a complete developer's guide to build an app with RAD solution.
