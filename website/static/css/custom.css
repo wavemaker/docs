@@ -320,6 +320,12 @@ h3 {
 	background-color: #066db7;
 }
 
+.navigationSlider .slidingNav ul li:last-child a {
+    background-color: #1794ef;
+    border-radius: 2px;
+    color: #fff;
+}
+
 
 @media only screen and (min-width: 360px) and (max-width: 736px) {
 	.row {
