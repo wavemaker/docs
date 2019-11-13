@@ -11,7 +11,7 @@ This document will go through the steps in adding Pre and Post processing for ge
 
 - Create a WaveMaker Project (UserManagementApp)
 - [Import a database service](/learn/app-development/services/database-services/working-with-databases/): (we are using the sample HRDB) [![](/learn/assets/hrdb.png)](/learn/assets/hrdb.png)
-- [Set Security to On](http://[supsystic-show-popup id=111]). Use Database as Security Provider and Configure Security with user table of HRDB.
+- [Set Security to On](/learn/app-development/app-security/app-security). Use Database as Security Provider and Configure Security with user table of HRDB.
 
 # **Background**
 

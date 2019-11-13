@@ -139,7 +139,7 @@ We will implement a custom Authentication Service which will take the JWT access
     }
     
     [![](/learn/assets/AC_js_code.png)](/learn/assets/AC_js_code.png)
-4. [Configure the Security](http://[supsystic-show-popup id=111]) with provider as Custom and give the above Class Name
+4. [Configure the Security](/learn/app-development/app-security/app-security) with provider as Custom and give the above Class Name
 
 ## Configuring Login Page
 

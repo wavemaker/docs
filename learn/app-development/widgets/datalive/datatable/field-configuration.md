@@ -167,7 +167,7 @@ In the case, Filter Option is set to Row while designing the Data Table, then th
 
 ### Security Options
 
-**Role-based access** can be set to enforce security at column-level: If the [security has been enabled](http://[supsystic-show-popup id=111]) in your app, then you can define the app role which has access to a specific column.
+**Role-based access** can be set to enforce security at column-level: If the [security has been enabled](/learn/app-development/app-security/app-security) in your app, then you can define the app role which has access to a specific column.
 
 [![](/learn/assets/dt_security.png)](/learn/assets/dt_security.png)
 

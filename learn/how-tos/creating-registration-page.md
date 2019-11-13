@@ -3,7 +3,7 @@ title: "Creating a Registration Page"
 id: ""
 ---
 
-[Adding security and login pages](http://[supsystic-show-popup id=111]) to your application is a good idea and simple one at that. **Registration** is another story. Registration is a common process in web applications. Many applications have the facility to self-register and then allow registered users to login to the applications. The link to registration page is provided on the login page. In this post we will see how to create this registration page using WaveMaker Studio. In this section you will see
+[Adding security and login pages](/learn/app-development/app-security/app-security) to your application is a good idea and simple one at that. **Registration** is another story. Registration is a common process in web applications. Many applications have the facility to self-register and then allow registered users to login to the applications. The link to registration page is provided on the login page. In this post we will see how to create this registration page using WaveMaker Studio. In this section you will see
 
 1. How to [design a registration page](#design),
 2. How to link the registration to the [inbuilt security and login page](#login), and
@@ -30,7 +30,7 @@ id: ""
         };
     
     [![](/learn/assets/registration_validation.png)](/learn/assets/registration_validation.png)
-5. Enable [Security](http://[supsystic-show-popup id=111]) and set the _Security Provider_ to be the UserDB from step 1 [![](/learn/assets/registration_security.png)](/learn/assets/registration_security.png) Set the permissions level for _registration page_, and _userdb_ to _permit all_. This is essential since we want the new users to be able to access to the registration page and add their details to the database. [![](/learn/assets/registration_security_permission1.png)](/learn/assets/registration_security_permission1.png) [![](/learn/assets/registration_security_permission2.png)](/learn/assets/registration_security_permission2.png)
+5. Enable [Security](/learn/app-development/app-security/app-security) and set the _Security Provider_ to be the UserDB from step 1 [![](/learn/assets/registration_security.png)](/learn/assets/registration_security.png) Set the permissions level for _registration page_, and _userdb_ to _permit all_. This is essential since we want the new users to be able to access to the registration page and add their details to the database. [![](/learn/assets/registration_security_permission1.png)](/learn/assets/registration_security_permission1.png) [![](/learn/assets/registration_security_permission2.png)](/learn/assets/registration_security_permission2.png)
 6. Redesign login page:
     - Open the Login page by selecting it from the **Pages** Resources
     - Add a _pagedialog_ widget, with content as the registration partial page. [![](/learn/assets/registration_dialog.png)](/learn/assets/registration_dialog.png)

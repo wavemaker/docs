@@ -138,7 +138,7 @@ The document provides an overview for implementing authentication for the applic
     
     }
     
-14. Open [Security Dialog](http://[supsystic-show-popup id=111]) and choose the _Security Provider_ as _custom_. Provide the _Class Name_ property as the package name of the _MyAuthenticationManager_ java service created above. Save the settings.
+14. Open [Security Dialog](/learn/app-development/app-security/app-security) and choose the _Security Provider_ as _custom_. Provide the _Class Name_ property as the package name of the _MyAuthenticationManager_ java service created above. Save the settings.
 15. Run the Application.
     1. The login page appears, Login using the Login Page - admin/admin; you will see the Employee Data
     2. Logout and Login using Google Button; Google Login Page shows up
