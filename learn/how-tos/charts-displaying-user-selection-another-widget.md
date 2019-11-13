@@ -5,7 +5,7 @@ id: ""
 
 Hovering over the chart shows the values corresponding to the nearest data point. These data points can be captured and used to bind to a widget for further display or computational purposes. Here we will see how to do the same:
 
-1. We are using the _Department_ DB available after [importing the sample DB](http://[supsystic-show-popup id=106]) which ships with the product. [![](/learn/assets/db_apis_db.png)](/learn/assets/db_apis_db.png)
+1. We are using the _Department_ DB available after [importing the sample DB](/learn/app-development/services/database-services/working-with-databases/) which ships with the product. [![](/learn/assets/db_apis_db.png)](/learn/assets/db_apis_db.png)
 2. We have designed the canvas with a _Grid Layout_ with three rows. We will have
     1. _Chart widget_,
     2. two _Label Widgets_\- to display the total budget of the selected department from the chart and

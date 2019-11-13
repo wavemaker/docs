@@ -10,7 +10,7 @@ Data Table is available only for web responsive apps.
 
 **Data Table** provides a tabular view for database Entities or API response data. Data Table can be bound to data sources like database tables, queries, procedures, web services or JSON objects through Variables.
 
-Data Table provides a user interface to perform CRUD operations for data from a database, by integrating the editable actions with their corresponding CRUD APIs that are generated automatically during [Database Integration](http://[supsystic-show-popup id=106]) process through Database CRUD variables.
+Data Table provides a user interface to perform CRUD operations for data from a database, by integrating the editable actions with their corresponding CRUD APIs that are generated automatically during [Database Integration](/learn/app-development/services/database-services/working-with-databases/) process through Database CRUD variables.
 
 Data Tables can also be bound with Web or Java or Query and Procedure Services, to display the response data in a tabular form. Note for such cases you will have the option of using a **Read-Only** table since the underlying CRUD functionality does not exist.
 

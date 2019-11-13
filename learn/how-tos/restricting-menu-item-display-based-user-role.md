@@ -49,7 +49,7 @@ From the above data:
 3. If a parent node has '_admin, user_' access and few of it children only have '_admin_' access then if logged in user has only '_user_' access then those child nodes will be hidden. Like the Dropdown item in the above example.
 4. The task (in the above example showing the label widget) will be performed and then the navigation will be done based upon the given link.
 
-**Note**: The user role values should be the same as that given while [enabling Security for the App](http://[supsystic-show-popup id=111]).
+**Note**: The user role values should be the same as that given while [enabling Security for the App](/learn/app-development/app-security/app-security).
 
 Dropdown Menu Use Cases
 

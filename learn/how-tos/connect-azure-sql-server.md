@@ -18,7 +18,7 @@ id: ""
 ## Instructions
 
 1. Create/Open the project in which you want to import the SQL Server database.
-2. From the [Add Database](http://[supsystic-show-popup id=106]) dialog, select SQL Server database.
+2. From the [Add Database](/learn/app-development/services/database-services/working-with-databases/) dialog, select SQL Server database.
 3. Select Database Versions as Azure SQL Database and provide sqljdbc4.jar file as Driver jar and click on upload button. After the JAR imported successfully, click on Next. [![](/learn/assets/azure_dbdriver.png)](/learn/assets/azure_dbdriver.png)
 4. Provide Azure SQL server details such as Host, User Name, Password and Database Name, Schema Filter (comma-separated list of schema names to import) in the configure settings step and click on ADVANCED SETTINGS button to review the generated connection url. Note: The mappings between the Azure MS SQL Server and WaveMaker are given in the [next section](#mapping). [![](/learn/assets/azure_dbsettings.png)](/learn/assets/azure_dbsettings.png)
 5. Once connection has been successfully established you will be provided with a connection success message and Next button will be enabled. In case you get an error message, check the Firewall settings at Azure as [explained here](#firewall).

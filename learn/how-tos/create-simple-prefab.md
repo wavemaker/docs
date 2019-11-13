@@ -9,11 +9,11 @@ This post walks you through the creation and usage of a simple Prefab. We will b
 
 1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](http://[supsystic-show-popup id=102])
 2. Enter a name and description for the Prefab
-3. From [Project Configurations](http://[supsystic-show-popup id=107]), choose Config Prefab under Settings:
+3. From [Project Configurations](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace), choose Config Prefab under Settings:
     - In the Properties tab, add two _inbound_ properties which will take in the two strings to compare [![](/learn/assets/demo_prefab_inbound-1.png)](/learn/assets/demo_prefab_inbound-1.png) and one _outbound_ property to return the result [![](/learn/assets/demo_prefab_outbound-1.png)](/learn/assets/demo_prefab_outbound-1.png)
     - In the Events tab, add an _event_ (Comparefail) which will be triggered when the comparison of strings fails. The event will be defined in the **JavaScript** of the Prefab, the application using this Prefab will be defining the action for this event. Note, by default two events are already given - Load and Destroy [![](/learn/assets/demo_prefab_event-1.png)](/learn/assets/demo_prefab_event-1.png)
     - You can set the display icon and mention the group for Prefab from the Packaging tab
-4. [Add a **Java Service**](http://[supsystic-show-popup id=119]) for the string comparison logic. Use the same names that you gave in the Methods of Prefab Settings, in this case, **String\_compare** for _Java Service_ and **confirm** for the _method_ Enter the following method to compare strings:
+4. [Add a **Java Service**](app-development/services/java-services/java-service/) for the string comparison logic. Use the same names that you gave in the Methods of Prefab Settings, in this case, **String\_compare** for _Java Service_ and **confirm** for the _method_ Enter the following method to compare strings:
     
         
         public String confirm(String a, String b) {
@@ -122,7 +122,7 @@ This post walks you through the creation and usage of a simple Prefab. We will b
 9. Save and Preview the Prefab. Give the In-bound values:[![](/learn/assets/Prefab_preview1.png)](/learn/assets/Prefab_preview1.png) and see the result in the Out-bound properties tab:[![](/learn/assets/Prefab_preview2.png)](/learn/assets/Prefab_preview2.png)
 10. Publish the Prefab. [![](/learn/assets/demo_prefab_publish.png)](/learn/assets/demo_prefab_publish.png)
 11. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/creating-prefabs/#publish-prefab).
-12. The Prefab will be available for use across the Projects. You can see the entry in the Artifacts list from the Developer Utilities on the [Project Workspace](http://[supsystic-show-popup id=107]) and in the Widget Toolbox of any Project within your workspace.
+12. The Prefab will be available for use across the Projects. You can see the entry in the Artifacts list from the Developer Utilities on the [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) and in the Widget Toolbox of any Project within your workspace.
 
 # Using the Prefab in Project
 

@@ -13,7 +13,7 @@ The process shows:
 
 **Step 1: Adding Mail.jar** This can be done in two ways:
 
-**Method 1**: Download and Import _mail.jar_ file of your choice into your app using the [Import Resource](http://[supsystic-show-popup id=112]) option to the _lib_ folder.
+**Method 1**: Download and Import _mail.jar_ file of your choice into your app using the [Import Resource](/learn/app-development/services/3rd-party-libraries) option to the _lib_ folder.
 
 OR
 
@@ -32,7 +32,7 @@ OR
 
 [![](/learn/assets/email_pom.png)](/learn/assets/email_pom.png)**Step 2: Creating Java Service**:
 
-1. Create a [Java Service](http://[supsystic-show-popup id=119]), named EmailService
+1. Create a [Java Service](app-development/services/java-services/java-service/), named EmailService
 2. Add the following import statements in the Java service created in the above step.
     
     import javax.servlet.http.HttpServletRequest;
@@ -139,7 +139,7 @@ OR
     @Value("${app.environment.password}")
     private String password;
     
-5. From [Project Settings](http://[supsystic-show-popup id=108]) navigate to the [Profile Configuration](http://[supsystic-show-popup id=109]).
+5. From [Project Settings](/learn/app-development/wavemaker-overview/product-walkthrough#project-settings) navigate to the [Profile Configuration](/learn/app-development/deployment/configuration-profiles/).
 6. From Development section access the App Environment tab and add the values as per your needs: [![](/learn/assets/email_app_env.png)](/learn/assets/email_app_env.png)
 7. You can use these app environment variables as per your app needs. [See here for more](/learn/how-tos/using-app-environment-properties/).
 

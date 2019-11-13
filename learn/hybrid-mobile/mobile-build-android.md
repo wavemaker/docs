@@ -16,7 +16,7 @@ WaveMaker Studio supports you to build mobile applications in the following ways
 
 Android Build generates a debug version (DEV only) **.apk file** using Cordova Build System which can be installed on any Android phone. The build feature triggers a build request to the system and the file is generated. Once the .apk file is ready, it will be sent to the Developer’s email account.
 
-For building a .apk file, **Mobile Configuration** needs to be set. Mobile Configuration can be set separately for each [pre-defined app configurations](http://[supsystic-show-popup id=109]) – DEV or PROD.
+For building a .apk file, **Mobile Configuration** needs to be set. Mobile Configuration can be set separately for each [pre-defined app configurations](/learn/app-development/deployment/configuration-profiles/) – DEV or PROD.
 
 ## Steps to perform an APK Build
 

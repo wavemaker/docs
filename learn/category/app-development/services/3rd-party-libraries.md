@@ -2,12 +2,15 @@
 title: "3rd Party Libraries"
 id: ""
 ---
+---
 
 There will be times when you want to use external resources in your application. These may be in the form of images, audio files, video files, JavaScript files, UI designs etc. WaveMaker understands these needs and facilitates the usage.
 
-[![](/learn/assets/ext_import.png)](/learn/assets/ext_import.png)[![](/learn/assets/ext_resources.png)](/learn/assets/ext_resources.png)
+[![](/learn/assets/ext_import.png)](/learn/assets/ext_import.png)
 
-# Including Resource Files
+## Including Resource Files
+
+[![](/learn/assets/ext_resources.png)](/learn/assets/ext_resources.png)
 
 1. From the **Developer Utilities** option select **File Explorer**. Here you will find the option to import resources to your app.
 2. Click **+** to open the **Import Resource** dialog box

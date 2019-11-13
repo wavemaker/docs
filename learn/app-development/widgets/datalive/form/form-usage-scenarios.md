@@ -7,7 +7,7 @@ sidebar_label: "Creating a Form"
 
 The **Form** widget has inbuilt functionality to perform **POST & GET operations** on the data source it is bound to. A typical Form set up in WaveMaker has the following steps:
 
-1. Set the **data source** that the Form will be working on. This takes the form of a variable based on the APIs exposed by [Java Service Integration](http://[supsystic-show-popup id=119]) or [Web Service Integration](http://[supsystic-show-popup id=115]).
+1. Set the **data source** that the Form will be working on. This takes the form of a variable based on the APIs exposed by [Java Service Integration](app-development/services/java-services/java-service/) or [Web Service Integration](/learn/app-development/services/web-services/web-services/).
 2. Select the display **layout** of the Form. You can choose from one-column, two-column or a three-column layout.
 3. Select the **fields** to be available for the user to interact with. All the fields from the selected data source will be presented for selection and assign the display widget for each.
 

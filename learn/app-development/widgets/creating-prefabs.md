@@ -23,13 +23,13 @@ In this document, we will be discussing the various phases of building you own P
 
 # Prefab Configuration
 
-To **Configure ****Prefab**, from [Project Configurations](http://[supsystic-show-popup id=107]) click **Settings** to select **Config Prefab** option. The various configurations are grouped under various headings for developer convenience
+To **Configure ****Prefab**, from [Project Configurations](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) click **Settings** to select **Config Prefab** option. The various configurations are grouped under various headings for developer convenience
 
 [![](/learn/assets/prefabsettings_resources.png)](/learn/assets/prefabsettings_resources.png)
 
 ## Resources
 
-Under this tab, you can set the following resource references as needed by your Prefab. Before setting the details, you will need to [Import Resource](http://[supsystic-show-popup id=112]) into your Prefab project.
+Under this tab, you can set the following resource references as needed by your Prefab. Before setting the details, you will need to [Import Resource](/learn/app-development/services/3rd-party-libraries) into your Prefab project.
 
 1. _Style_: The CSS style associated with the project will be applied to this prefab. You can add your own style file.
 2. _Script_: Any scripts that need prior execution can be added here.

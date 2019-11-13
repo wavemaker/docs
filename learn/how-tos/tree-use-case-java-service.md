@@ -3,7 +3,7 @@ title: "Tree Use Case - from Java Service"
 id: ""
 ---
 
-1. Create the source structure for Tree as a [**Java Service**](http://[supsystic-show-popup id=119]) by name _TreeData_
+1. Create the source structure for Tree as a [**Java Service**](app-development/services/java-services/java-service/) by name _TreeData_
 2. The following code needs to be added to the Java service:
     1. import the ArrayList utility:
         

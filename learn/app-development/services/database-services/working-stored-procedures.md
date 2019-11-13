@@ -51,31 +51,31 @@ There are two aspects to stored procedure usage - Creation and Invocation:
 
 Procedure/Function needs to be created in the database itself. For MySQL DBs, you can use the **DB Shell** tab of [DB Tools](/learn/assets/db_tools.png). Any procedures you have in a database that you [import](/learn/assets/db_new.png) will be available for use.
 
-1. The database we used contains an Employee table with Emp\_ID, Name and City details. Here is the _Employee_ table that we have designed using the [DB Designer](/learn/assets/db_designer_schema.png). 
+1. The database we used contains an Employee table with Emp_ID, Name and City details. Here is the _Employee_ table that we have designed using the [DB Designer](/learn/assets/db_designer_schema.png). 
 
 [![](/learn/assets/employee_schema.png)](/learn/assets/employee_schema.png)
 
 2. The procedure entered in the DBShell under [DB Tools](/learn/assets/db_tools.png) would be:
    ``` 
     DELIMITER ;;
-    CREATE PROCEDURE emp\_in\_out(IN in\_city varchar(255), OUT total integer) 
-      BEGIN SELECT COUNT(Emp\_ID) 
+    CREATE PROCEDURE emp_in_out(IN in_city varchar(255), OUT total integer) 
+      BEGIN SELECT COUNT(Emp_ID) 
             INTO total
             FROM Employee 
-            WHERE City = in\_city; 
+            WHERE City = in_city; 
       END;;
     DELIMITER ;
     ```
     A function would be:
     ```
     DELIMITER ;;
-    CREATE FUNCTION emp\_in\_out(in\_city varchar(255)) RETURNS integer 
-      BEGIN DECLARE emp\_tot INT;
-            SELECT COUNT(Emp\_ID) 
-               INTO emp\_tot
+    CREATE FUNCTION emp_in_out(in_city varchar(255)) RETURNS integer 
+      BEGIN DECLARE emp_tot INT;
+            SELECT COUNT(Emp_ID) 
+               INTO emp_tot
                FROM Employee 
-               WHERE City = in\_city; 
-            RETURN emp\_tot;
+               WHERE City = in_city; 
+            RETURN emp_tot;
       END;;
     DELIMITER ;
     ```
@@ -86,11 +86,11 @@ Procedures created in a DB can be accessed by creating a live service variable a
 
 1. In the **Database Designer,** select the **Procedure** tab, use the following code to invoke the above procedure.
     ```
-    call emp\_in\_out(:city, :total)
+    call emp_in_out(:city, :total)
     ```
     Use the following code to invoke the function:
     ```
-    {{:total = call emp\_in\_out(:city)
+    {{:total = call emp_in_out(:city)
     ```
 2. Post 8.4.1 release, you can use CTRL+space to select from a list of Procedures available in the database.
 3. This will add the parameters. Select the appropriate options - **IN** for input parameter; **out** for output parameter; and **in-out** for a combination parameter.
@@ -112,18 +112,18 @@ Some data types might be specific to the underlying database being implemented, 
 ### DB specific invocation
 
 - **MySQL/DB2** - the above documentation uses MySQL.
-- **Oracle** - same as MySQL. In case, procedures are bundled in a package, need to prefix the package name to the proc\_name.
+- **Oracle** - same as MySQL. In case, procedures are bundled in a package, need to prefix the package name to the proc_name.
 - **PostgreSQL** - can be same as above or
     ```
-    SELECT proc\_name(:param\_value1, :param\_value2);
+    SELECT proc_name(:param_value1, :param_value2);
     ```
-- **MSSQL & SQLServer**\- Invoking Procedures:
+- **MSSQL & SQLServer**- Invoking Procedures:
     ```
-    EXEC \[Schema\_name\].\[proc\_name\](:param\_value1, :param\_value2)
+    EXEC [Schema_name].[proc_name](:param_value1, :param_value2)
     ```
     Invoking Functions:
     ```
-    Select \* from function\_name(:param\_value1, :param\_value2)
+    Select * from function_name(:param_value1, :param_value2)
     ```
 
 ## Procedure Architecture
@@ -138,7 +138,7 @@ For all queries and procedures, there will be a Rest API generated with the Serv
 
 Both _Request_ and _Response_ POJO classes are generated as: `<procedureName>Request/Response`
 
-1. These classes are generated in a package: `<service\_packagegt;.models.procedure`
+1. These classes are generated in a package: `<service_packagegt;.models.procedure`
 2. Response classes generated for all procedures having at least one return property i.e OUT parameter or cursor.    
 
     **Example**:  
@@ -158,7 +158,7 @@ Both _Request_ and _Response_ POJO classes are generated as: `<procedureName>Re
 
     [![](/learn/assets/proc_cursor.png)](/learn/assets/proc_cursor.png)  
 
-- Request classes will be generated for all procedures, with names starting “create”, “build”, “add”, “update”, “edit”, “set”.
+- Request classes will be generated for all procedures, with names starting `create`, `build`, `add`, `update`, `edit`, `set`.
     
 ### Services
     

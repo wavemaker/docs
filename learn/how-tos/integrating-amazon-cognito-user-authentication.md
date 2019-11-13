@@ -34,7 +34,7 @@ Amazon Cognito is a service that enables you to create unique identities for you
 
 ### Upload JS files to WaveMaker:
 
-1. Upload the JS files to WaveMaker. Go to [Import Resource](http://[supsystic-show-popup id=112]) and Upload the JS files downloaded in the previous section. The files should be uploaded to _project/src/main/webapp/_ directory.
+1. Upload the JS files to WaveMaker. Go to [Import Resource](/learn/app-development/services/3rd-party-libraries) and Upload the JS files downloaded in the previous section. The files should be uploaded to _project/src/main/webapp/_ directory.
 2. From File Explorer, Navigate to _index.html_ and include the JS files manually (ensure the path is correct) [![](/learn/assets/AC_index.png)](/learn/assets/AC_index.png)
 
 At this point, we’ve integrated the Amazon JavaScript SDK into our project.
@@ -95,7 +95,7 @@ At this point, we’ve integrated the Amazon JavaScript SDK into our project.
 
 We will implement a custom Authentication Service which will take the JWT access token , ID token and create a WMUser Object.
 
-1. [Create a Java Service](http://[supsystic-show-popup id=119]) - CognitoUPoolLogin.
+1. [Create a Java Service](app-development/services/java-services/java-service/) - CognitoUPoolLogin.
 2. Add the import statements as follows
     
     import com.wavemaker.runtime.security.WMCustomAuthenticationManager;
@@ -139,7 +139,7 @@ We will implement a custom Authentication Service which will take the JWT access
     }
     
     [![](/learn/assets/AC_js_code.png)](/learn/assets/AC_js_code.png)
-4. [Configure the Security](http://[supsystic-show-popup id=111]) with provider as Custom and give the above Class Name
+4. [Configure the Security](/learn/app-development/app-security/app-security) with provider as Custom and give the above Class Name
 
 ## Configuring Login Page
 

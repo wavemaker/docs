@@ -77,13 +77,13 @@ For registration, app and backend server have to provide some information to pus
     </dependency>
     
     [![](/learn/assets/push_pomxml.png)](/learn/assets/push_pomxml.png)
-2. [Import Resource](http://[supsystic-show-popup id=112]): Import the following resources to the respective folders:
+2. [Import Resource](/learn/app-development/services/3rd-party-libraries): Import the following resources to the respective folders:
     - Import google-services.json (downloaded earlier) to the webapp folder. [![](/learn/assets/push_resources1.png)](/learn/assets/push_resources1.png)
     - Import ‘FCM-admin-service-key.json’ (downloaded earlier) to /project/src/main/resources.
     - Import .p12 Certificate to /project/src/main/resources.
-3. [Create a DB](http://[supsystic-show-popup id=106]) named DeviceDetails, which will store all the deviceIds, username and device type i.e. OS (Android or iOS). Mark these columns as unique. [![](/learn/assets/push_db-1.png)](/learn/assets/push_db-1.png)
-4. [Turn on security](http://[supsystic-show-popup id=111]). Here we are setting it to Demo. [![](/learn/assets/push_security.png)](/learn/assets/push_security.png)
-5. [Create a Java Service](http://[supsystic-show-popup id=119]) named _PushService_. This service will contain registerDevice, unregisterDevice and notify methods.
+3. [Create a DB](/learn/app-development/services/database-services/working-with-databases/) named DeviceDetails, which will store all the deviceIds, username and device type i.e. OS (Android or iOS). Mark these columns as unique. [![](/learn/assets/push_db-1.png)](/learn/assets/push_db-1.png)
+4. [Turn on security](/learn/app-development/app-security/app-security). Here we are setting it to Demo. [![](/learn/assets/push_security.png)](/learn/assets/push_security.png)
+5. [Create a Java Service](app-development/services/java-services/java-service/) named _PushService_. This service will contain registerDevice, unregisterDevice and notify methods.
     
     - RegisterDevice will create a new record of the registered device details (deviceId, os, userName) in the db.
     - UnregisterDevice will delete the device details record in db.

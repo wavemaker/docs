@@ -14,9 +14,9 @@ The dynamic metadata from a single service can be displayed in the Data Table us
 
 ## Creating Dynamic Data Table using Multiple Services
 
-Here we will see how to create a dynamic grid based on the metadata returned from multiple services. To illustrate the dynamic Data Table implementation, we have taken an example to switch the table data between the sample hrdb’s USER and DEPARTMENT datasets on a button click event. [See here to Import the Sample DB](http://[supsystic-show-popup id=106]).
+Here we will see how to create a dynamic grid based on the metadata returned from multiple services. To illustrate the dynamic Data Table implementation, we have taken an example to switch the table data between the sample hrdb’s USER and DEPARTMENT datasets on a button click event. [See here to Import the Sample DB](/learn/app-development/services/database-services/working-with-databases/).
 
-1. Create two [SELECT **queries**](http://[supsystic-show-popup id=117]) - one to retrieve the data from the DEPARTMENT entity and other to retrieve the data from USER entity. **Note**: We have written simple SELECT statements as part of this example. However, you can create queries as per your requirement.
+1. Create two [SELECT **queries**](/learn/app-development/services/database-services/working-with-queries) - one to retrieve the data from the DEPARTMENT entity and other to retrieve the data from USER entity. **Note**: We have written simple SELECT statements as part of this example. However, you can create queries as per your requirement.
     1. DeptData:
         
         select \* from DEPARTMENT

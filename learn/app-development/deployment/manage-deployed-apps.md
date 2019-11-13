@@ -4,7 +4,7 @@ id: ""
 ---
 ---
 
-WaveMaker **Apps Portal** is a place for you as the project owner to manage the deployed apps. The one-click deployment from Studio hosts the app on WaveMaker Demo Cloud using the [Deployment Profile](http://[supsystic-show-popup id=109]). Apps Portal will enable the project owner to configure phases and push the apps from one phase to the next. From this portal you can:
+WaveMaker **Apps Portal** is a place for you as the project owner to manage the deployed apps. The one-click deployment from Studio hosts the app on WaveMaker Demo Cloud using the [Deployment Profile](/learn/app-development/deployment/configuration-profiles/). Apps Portal will enable the project owner to configure phases and push the apps from one phase to the next. From this portal you can:
 
 1. Configure the deployment environment for each phase - Stage (WME) and Live. The configurations involves setting the various services like Database, Web Services, Security, REST Services
 2. Push the app from one phase to another without the need to modify the app. Push will deploy the app into the new deployment environment. A separate URL is generated for each phase. You can version the apps for easy tracking.

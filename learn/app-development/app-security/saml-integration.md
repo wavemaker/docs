@@ -2,6 +2,7 @@
 title: "SAML Integration"
 id: ""
 ---
+---
 
 **Security Assertion Markup Language (SAML)** is an XML-based open standard for exchanging authentication and authorization data between different parties. The SAML exchanges are usually between
 
@@ -41,22 +42,22 @@ Note that a principal (or an administrator terminating a principal's session) ma
 
 [![saml_sso](/learn/assets/saml_sso.png)](/learn/assets/saml_sso.png)
 
-# SAML Integration with WaveMaker App
+## SAML Integration with WaveMaker App
 
-## Steps Involved:
+### Steps Involved:
 
 1. Register WaveMaker application with Identity Provider
 2. Configure the Identity Provider information in WaveMaker application
 3. Configure Keystore
 4. Configure Role Mapping
 
-## Registering WaveMaker app with Identity Provider
+### Registering WaveMaker app with Identity Provider
 
 Each and every application that wants to integrate with Identity Provider (IdP) for SAML SSO has to be registered with that IdP by providing application endpoint URL. Once the application is registered with IdP, the IdP provides a metadata URL that contains the IdP certificate, sso endpoint URL etc.
 
 While registering the application with IdP, some IdP providers ask for Service Provider’s (SP) endpoint URL which can be obtained as mentioned in the below section.
 
-## Configure IdP with WaveMaker application
+### Configure IdP with WaveMaker application
 
 [![](/learn/assets/sec_access.png)](/learn/assets/sec_access.png)
 
@@ -65,40 +66,49 @@ After enabling Security and on selecting SAML as the Security Provider for your 
 1. In the 1st section, Service Provider (Application) Information, three read-only URLs are displayed which are required for application registration with IdP (as mentioned in the above section). They are:
     
     - Metadata URL – the metadata URL of the service provider which gives information about the service provider.
-        
-        {app-hosted-url} + /saml/metadata
-        
+    ```    
+    {app-hosted-url} + /saml/metadata
+    ```   
     - Audience URL – the service provider endpoint where the assertions are received.
-        
-        {app-hosted-url} + /saml/SSO
-        
+    ```    
+    {app-hosted-url} + /saml/SSO
+    ```    
     - Single Logout URL – This logs out the user from the IdP i.e global log out.
-        
-        {app-hosted-url} + /saml/SingleLogout
-        
+    ```    
+    {app-hosted-url} + /saml/SingleLogout
+    ```    
     
-    [![](/learn/assets/saml_config.png)](/learn/assets/saml_config.png)
+[![](/learn/assets/saml_config.png)](/learn/assets/saml_config.png)
+
 2. In the 2nd section - Identity Provider Configuration, enter the Metadata URL of the application registered with IdP as obtained from the above section.
     
     - Enter the metadata URL of the app and select the load button.
-    - Once the load button is clicked, the metadata URL is valid & the IdP endpoint URL should be loaded. This validates the IdP metadata URL. [![](/learn/assets/saml_config2.png)](/learn/assets/saml_config2.png)
-    - You can also choose to upload the Metadata file. [![](/learn/assets/saml_config2_file.png)](/learn/assets/saml_config2_file.png)
+    - Once the load button is clicked, the metadata URL is valid & the IdP endpoint URL should be loaded. This validates the IdP metadata URL. 
+
+    [![](/learn/assets/saml_config2.png)](/learn/assets/saml_config2.png)
+
+    - You can also choose to upload the Metadata file. 
+
+    [![](/learn/assets/saml_config2_file.png)](/learn/assets/saml_config2_file.png)
+
 3. In the 3rd section: the service provider configuration options are shown:
-    - Configure Keystore: The SAML message exchange requires a public/private key pair for every participating entity in the message exchange. The Idp key pair is maintained by the IdP provider, but the Service Provider’s key pair should be maintained by the service provider, in this case, the WaveMaker application. In most of the production deployments, a valid key pair is recommended to be used, but during application development, WaveMaker helps in auto-generating a key pair for you which should be used only for demo purposes, but not for actual deployment. Below configuration gives information about configuring key pair for your application. In this, the user is prompted to choose auto-generate option or upload a valid key pair in JKS format.
-        - The user can auto-generate or import a Java KeyStore (JKS).
-        - Auto-Generate - If the user chooses to auto-generate a keystore, WaveMaker will generate a self-signed private-public key pair and store it in the keystore with the following details as input
+
+#### Configure Keystore 
+The SAML message exchange requires a public/private key pair for every participating entity in the message exchange. The Idp key pair is maintained by the IdP provider, but the Service Provider’s key pair should be maintained by the service provider, in this case, the WaveMaker application. In most of the production deployments, a valid key pair is recommended to be used, but during application development, WaveMaker helps in auto-generating a key pair for you which should be used only for demo purposes, but not for actual deployment. Below configuration gives information about configuring key pair for your application. In this, the user is prompted to choose auto-generate option or upload a valid key pair in JKS format.
+- The user can auto-generate or import a Java KeyStore (JKS).
+- Auto-Generate - If the user chooses to auto-generate a keystore, WaveMaker will generate a self-signed private-public key pair and store it in the keystore with the following details as input       
+    - Alias - This is required for the self-signed public key which is generated and imported into the keystore
+    - Password - this is the keystore password. This should be a minimum of 6 characters
+    - Subject Name - This is the Subject name of the self-signed certificate.
+
+[![](/learn/assets/saml_config3.png)](/learn/assets/saml_config3.png)
+
+- Import - The user can import a java keystore into WaveMaker. The inputs required are       
+    - Alias - the alias of the public key for the service provider.
+    - Password - this is the keystore password. This should be a minimum of 6 characters
             
-            - Alias - This is required for the self-signed public key which is generated and imported into the keystore
-            - Password - this is the keystore password. This should be a minimum of 6 characters
-            - Subject Name - This is the Subject name of the self-signed certificate
-            
-            [![](/learn/assets/saml_config3.png)](/learn/assets/saml_config3.png)
-        - Import - The user can import a java keystore into WaveMaker. The inputs required are
-            
-            - Alias - the alias of the public key for the service provider.
-            - Password - this is the keystore password. This should be a minimum of 6 characters
-            
-            [![](/learn/assets/saml_config3_import.png)](/learn/assets/saml_config3_import.png)
+[![](/learn/assets/saml_config3_import.png)](/learn/assets/saml_config3_import.png)
+
 4. In the 4th section - Role Mapping: The roles of an application user logged in through SAML SSO can be mapped using a SAML attribute or database-backed roles. A SAML attribute that maintains the roles can be configured by selecting the SAML as the user role provider as shown below. [![](/learn/assets/saml_config4.png)](/learn/assets/saml_config4.png) In case if the DB is selected as the user role provider, then each and every SAML user must pre-exist in the specified user’s table with the roles. You can follow the [steps given here](/learn/app-development/app-security/authorization/#user-onboarding) for the same.
 
 ## Configuration Files
@@ -113,7 +123,7 @@ The keystore.jks file is also available in the project option under the files ta
 
 Once the configuration is done you can run the app and you will be logged into your app. You will see the message “Redirecting to sso login…”
 
-# Deployment of Application that is configured with SAML
+## Deployment of Application that is configured with SAML
 
 During the app development in WaveMaker, application URLs like Metadata, Audience and Single Signout URL are configured with any of the Identity Provider (for instance- Okta, Onelogin, ADFS, Pingone, etc.). However, these URLs being run URLs are temporary in nature, as such cannot be used for the deployed application. When the WaveMaker application is deployed in the container, the hostname/tenant\_id changes and therefore, the URLs that are to be _configured/registered in the SAML IdP_ should change. For Example, in WaveMaker Studio,
 
@@ -142,80 +152,26 @@ During the app development in WaveMaker, application URLs like Metadata, Audienc
     (http/https)://{hostname}/{appname}/saml/SingleLogout
     
 
-**Note**: You can get the {hostname} by looking at the URL of any deployed app from your account. It will typically be of the format: `tenant_id.cloud.wavemakeronline.com` for apps deployed to WaveMaker Cloud (ref [Managed Deployed App](/learn/app-development/deployment/manage-deployed-apps/) for details).
+:::note
+You can get the {hostname} by looking at the URL of any deployed app from your account. It will typically be of the format: `tenant_id.cloud.wavemakeronline.com` for apps deployed to WaveMaker Cloud (ref [Managed Deployed App](/learn/app-development/deployment/manage-deployed-apps/) for details).
+:::
 
-# Collaboration in Application that is configured with SAML
+## Collaboration in Application that is configured with SAML
 
 When multiple users are collaborating to develop an application that is configured with SAML SSO, each and every user of that application has to configure the SAML authentication every time they pull the changes. As the application endpoint URL is different for every user, they need to register their URLs with the Identity provider as well.
 
-# TroubleShooting
+## TroubleShooting
 
 **Time Synchronization**: Processing of SAML messages and assertions is often limited to a specific time window which e.g. prevents possibilities of replay attacks. Validation of messages can fail when internal clocks of the IDP and SP machines are not synchronized. Make sure to use a time synchronization service on all systems in the federation.
 
-# Integration with Third Party Identity Providers
+## Integration with Third Party Identity Providers
 
 Here you can find steps for SAML integration with:
 
 - [OneLogin](/learn/how-tos/saml-integration-onelogin/), and
 - [AD FS](/learn/how-tos/saml-integration-adfs/)
 
-**Note:** When the app is run with SSO configuration, assuming that there is no session present with third-party identity providers, the third-party IdP login dialog will show up. As our WaveMaker Run Toolbar is within iframe which may not be safe for third parties, we remove the toolbar before the Login dialog of the third-party identity provider appears.
+:::note
+When the app is run with SSO configuration, assuming that there is no session present with third-party identity providers, the third-party IdP login dialog will show up. As our WaveMaker Run Toolbar is within iframe which may not be safe for third parties, we remove the toolbar before the Login dialog of the third-party identity provider appears.
+:::
 
-< SSL Encryption
-
-7\. Security
-
-- 7.1 App Security Overview
-    - [i. Overview](/learn/app-security/app-security/#)
-    - [ii. How Security Works](/learn/app-security/app-security/#working)
-    - [iii. How Security is Implemented](/learn/app-security/app-security/#implementation)
-    - [iv. Security Terminology](/learn/app-security/app-security/#terminology)
-- 7.2 Authentication
-    - [i. Overview](/learn/app-security/authentication/)
-    - [ii. Security Providers](/learn/app-security/authentication/#security-providers)
-        - [○ Demo](/learn/app-security/authentication/#demo)
-        - [○ Database](/learn/app-security/authentication/#database)
-        - [○ LDAP](/learn/app-security/authentication/#ldap)
-        - [○ Active Directory](/learn/app-security/authentication/#ad)
-        - [○ CAS](/learn/app-security/authentication/#cas)
-        - [○ SAML](/learn/app-security/authentication/#saml)
-        - [○ Custom](/learn/app-security/authentication/#custom)
-- 7.3 Authorization
-    - [i. Overview](/learn/app-security/authorization/)
-    - [ii. User Onboarding](/learn/app-security/authorization/#user-onboarding)
-    - [iii. App Roles](/learn/app-security/authorization/#app-roles)
-- 7.4 Access Levels & Permissions
-    - [i. Overview](/learn/app-security/access-levels-permissions/)
-    - [ii. Setting Permissions](/learn/app-security/access-levels-permissions/#setting-permissions)
-    - [iii. Role Based Access to Widgets](/learn/app-security/access-levels-permissions/#role-based-access)
-- 7.5 Login Configuration
-    - [i. Overview](/learn/app-security/login-configuration/)
-    - [i. Login Page](/learn/app-security/login-configuration/#login-page)
-    - [ii. Landing Page](/learn/app-security/login-configuration/#landing-page)
-    - [iii. Session Timeout](/learn/app-security/login-configuration/#session-timeout)
-- 7.6 Security Related Variables
-    - [i. Overview](/learn/app-security/security-variables)
-- 7.7 SSL Encryption
-    - [i. Overview](/learn/app-security/ssl-encryption/)
-- 7.8 OWASP
-    - [i. Overview](/learn/app-security/owasp/)
-    - [ii. Preventing XSS Attacks](/learn/app-security/owasp/#xss)
-    - [iii. Preventing CSRF Attacks](/learn/app-security/owasp/#csrf)
-- 7.9 Single Sign-On (CAS)
-    - [i. Overview](/learn/app-security/central-authentication-system/)
-- 7.10 Token Based Authentication
-    - [i. Overview](/learn/app-security/token-based-authentication/)
-    - [ii. How Token Based Authentication Works](/learn/app-security/token-based-authentication/#working)
-    - [iii. What is Token](/learn/app-security/token-based-authentication/#token)
-    - [iv. Token Repository](/learn/app-security/token-based-authentication/#token-repository)
-    - [v. Token Request](/learn/app-security/token-based-authentication/#token-request)
-    - [vi. API Invocation](/learn/app-security/token-based-authentication/#api-invocation)
-    - [vii. Token Validity](/learn/app-security/token-based-authentication/#token-validity)
-- [7.11 SAML Integration](#)
-    - [i. Overview](#)
-    - [i. Profiles](#profiles)
-    - [ii. Integration](#integration)
-    - [iii. Configuration Files](#files)
-    - [iv. Deployment](#deployment)
-    - [v. Troubleshooting](#troubleshooting)
-    - [vi. Use Cases](#use-cases)

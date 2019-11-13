@@ -43,7 +43,7 @@ In case of “Random salt” which gets generated for every plain text, the hash
 
 **Storing Encrypted password in Database:**
 
-1. [Create a Java service](http://[supsystic-show-popup id=119]) and mention the following method. This would take the plain text as input and generates “Salt” for every plain text that is being encrypted. Dont forget to include the import statement
+1. [Create a Java service](app-development/services/java-services/java-service/) and mention the following method. This would take the plain text as input and generates “Salt” for every plain text that is being encrypted. Dont forget to include the import statement
     
         import org.springframework.security.crypto.bcrypt.BCrypt;
     
@@ -78,7 +78,7 @@ We need to override the default _daoauthenticationprovider_ bean by including th
 [![](/learn/assets/encrypt_pwd_xml.png)](/learn/assets/encrypt_pwd_xml.png) **STEP 3: **Importing the Java file for validating the password:
 
 1. 1. Download the  [MyPasswordEncoder](https://www.wavemaker.com../assets/BCryptPasswordEncoder-1.zip) file, extract the file and store it on your device.
-    2. [Import the above _myPasswordEncoder_ Java file](http://[supsystic-show-popup id=112]) in the following path as per the below screenshot: _project/src/main/java/com/wavemaker/runtime/security/provider/database/_ **Note**: This path needs to be match with the class package provided for “class” attribute in myPasswordEncoder bean. This myPasswordEncoder class implements the PasswordEncoder and uses the _bcrypt.checkpwd()_ method to validate the plain text with the encoded password from database.
+    2. [Import the above _myPasswordEncoder_ Java file](/learn/app-development/services/3rd-party-libraries) in the following path as per the below screenshot: _project/src/main/java/com/wavemaker/runtime/security/provider/database/_ **Note**: This path needs to be match with the class package provided for “class” attribute in myPasswordEncoder bean. This myPasswordEncoder class implements the PasswordEncoder and uses the _bcrypt.checkpwd()_ method to validate the plain text with the encoded password from database.
     3. Create these folders as per the path while importing the file through the import dialog.
 
 ## Limitations

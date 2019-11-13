@@ -12,7 +12,7 @@ Only apps under version control will be deployed. In case you have not pushed ch
 
 # Deployment to Cloud
 
-Deployed apps will be hosted on WaveMaker Demo Cloud. The deployment configuration profile will be used for various service configurations within the app like the database, REST, SOAP, Web Socket, and Security. These settings can be modified from [Configuration Profiles](http://[supsystic-show-popup id=109]) under Project Settings dialog, accessible from the Project Configurations.
+Deployed apps will be hosted on WaveMaker Demo Cloud. The deployment configuration profile will be used for various service configurations within the app like the database, REST, SOAP, Web Socket, and Security. These settings can be modified from [Configuration Profiles](/learn/app-development/deployment/configuration-profiles/) under Project Settings dialog, accessible from the Project Configurations.
 
 Once the Deployment is complete, you can [Manage Deployed Apps](/learn/app-development/deployment/manage-deployed-apps/#apps-portal) or view the deployed application.
 

@@ -17,18 +17,9 @@ A WaveMaker application can include a login page that requires users to sign on 
 
 [![sec_prov](/learn/assets/sec_prov.png)](/learn/assets/sec_prov.png)
 
-## Selecting Security Providers
+### Selecting Security Providers
 
-You can choose any of the following security providers for your WaveMaker applications:
-
-- **[Demo](#demo)**
-- **[Database](#database)**
-- **[LDAP](#ldap)**,
-- **[Active Directory](#active-directory)**
-- **[CAS](#cas)**
-- **[SAML](#saml)**
-- **[Open ID](#open-id)**
-- **[Custom](#custom)**
+You can choose any of the following security providers for your WaveMaker applications.
 
 ## Demo
 
@@ -45,7 +36,7 @@ You can use a database to store your authentication data. The database must incl
 When you choose **Database** as the **Security Provider**, you can perform the following configurations on the **Users** tab:
 
 - **Database Configuration**:
-    - **Database**: The Database that contains the tables for the username and password fields. Choose the Database from the pull-down menu. (You have to import the database first. See [Database Integration](http://[supsystic-show-popup id=106]). If you have imported the database and it does not appear in this list, try closing and reopening the project).
+    - **Database**: The Database that contains the tables for the username and password fields. Choose the Database from the pull-down menu. (You have to import the database first. See [Database Integration](/learn/app-development/services/database-services/working-with-databases/). If you have imported the database and it does not appear in this list, try closing and reopening the project).
     - **User Table**: Select the table that contains the columns for the usernames and passwords.
 - **User**:
     - `User Id Column`: Select the column for the user id
@@ -162,20 +153,23 @@ These configurations are for the development profile of the app. Configuration f
 
 WaveMaker allows you to authenticate your apps with OpenID. Setting the Security Provider to OpenID will allow you to configure a Service Provider of your choice. [![](/learn/assets/OpenID_config1.png)](/learn/assets/OpenID_config1.png) This involves the following details:
 
-1. **Identity Provider Information**:
-    - **Provider ID** is the Service Provider, it can be Google, Facebook or anything.
-    - **Authorization Url**, **Token Url**, **JWKS Url**, and **User Info Endpoint** of the authorization service provider for obtaining the authorization and access to the service. For Google provider, these fields are pre-populated by WaveMaker.
-2. **Service Provider Information**:
-    - **Redirect URL** is pre-populated by WaveMaker and is not editable. You need to copy this link and use it to as the callback URL in Provider app settings page when you register the app.
-3. **Integration Information**:
-    - Client Credentials issued once your app is registered with the Provider. It will be in the form of **Client ID** and **Client Secret**.
-    - **Scopes** defines what the access token can do and what resources it can access. Check with the selected service provider to understand how to further configure this field, usually, it will be email, username, etc..
-    - **User Name Attribute**: Attribute name used to access the user's name from the user info response
-4. **Role Mapping:**
-    - **Search User Role**: Select this option for authorization role mapping
-    - **Select User Role Provider**:
-        - If you select **OpenId** then both authentication and authorization (roles) will be retrieved from the OpenId security provider. You need to provide **Role Attribute** - the role parameter configured in the Identity Provider.
-        - If you select **Database** then authentication is performed using OpenId and authorization (roles) content is retrieved from the database. This allows you to use username and password credentials from OpenId while retrieving role content from a separate database. For role configuration using database [see here](/learn/app-development/app-security/authorization/#user-onboarding).
+### Identity Provider Information
+- **Provider ID** is the Service Provider, it can be Google, Facebook or anything.
+- **Authorization Url**, **Token Url**, **JWKS Url**, and **User Info Endpoint** of the authorization service provider for obtaining the authorization and access to the service. For Google provider, these fields are pre-populated by WaveMaker.
+
+### Service Provider Information
+- **Redirect URL** is pre-populated by WaveMaker and is not editable. You need to copy this link and use it to as the callback URL in Provider app settings page when you register the app.
+
+### Integration Information
+- Client Credentials issued once your app is registered with the Provider. It will be in the form of **Client ID** and **Client Secret**.
+- **Scopes** defines what the access token can do and what resources it can access. Check with the selected service provider to understand how to further configure this field, usually, it will be email, username, etc..
+- **User Name Attribute**: Attribute name used to access the user's name from the user info response.
+
+### Role Mapping
+- **Search User Role**: Select this option for authorization role mapping
+- **Select User Role Provider**:
+    - If you select **OpenId** then both authentication and authorization (roles) will be retrieved from the OpenId security provider. You need to provide **Role Attribute** - the role parameter configured in the Identity Provider.
+    - If you select **Database** then authentication is performed using OpenId and authorization (roles) content is retrieved from the database. This allows you to use username and password credentials from OpenId while retrieving role content from a separate database. For role configuration using database [see here](/learn/app-development/app-security/authorization/#user-onboarding).
 
 
 :::note

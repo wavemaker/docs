@@ -68,9 +68,13 @@ The various terminology used by WaveMaker concerning Security:
     
     - _Everyone_ - anyone can access this item i.e. no authentication required
     - _Authenticated_ - these items are accessible to authenticated users who will be identified via the roles assigned to them
-    - _Anonymous_ - widgets at this access level are visible to only users who are not logged in. _**NOTE**: this setting can be used only for widget access._
+    - _Anonymous_ - widgets at this access level are visible to only users who are not logged in. _
     
 :::note
+This setting can be used only for widget access.
+:::
+    
+:::important
 The permission levels follow a hierarchical structure with child element inheriting parent permissions if none are specified.
 :::
 

@@ -11,7 +11,7 @@ The document explains the implementation for obtaining concurrency and record lo
 
 ## Steps
 
-1. [Create a MariaDB database](http://[supsystic-show-popup id=106]). See the following the [documentation link](/learn/app-development/services/database-services/working-with-databases/#integrating-database) for details
+1. [Create a MariaDB database](/learn/app-development/services/database-services/working-with-databases/). See the following the [documentation link](/learn/app-development/services/database-services/working-with-databases/#integrating-database) for details
 2. Add a table with the following columns:
     - ID - type integer,
     - Name - type String name, and

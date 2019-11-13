@@ -21,7 +21,7 @@ The document provides an overview for implementing authentication for the applic
 **Configurations to be made in the Studio application:**
 
 1. Create a new application in Studio.
-2. [Add Database](http://[supsystic-show-popup id=106]) to your app by **Connect to Database** to import Sample  hrdb. You can choose to import any DB of your choice, ensure that there exists a table with Username/Role details.
+2. [Add Database](/learn/app-development/services/database-services/working-with-databases/) to your app by **Connect to Database** to import Sample  hrdb. You can choose to import any DB of your choice, ensure that there exists a table with Username/Role details.
 3. Create _New_ page in the application to place the _Google OAuth prefab_ for login.(lets call the page as _GoogleLogin_ for reference in later points) **NOTE**: For the sake of convenience we have shown the use case with a different page for Google Login. You can implement these steps using the default Login page provided by WaveMaker.
 4. Drag and drop the Google OAuth prefab in this newly created page. For the prefab, specify the _Secret_, _Scope_, _Appid_, _Page_ parameters. Please note that the Scope is with reference to the google API being utilised for ex: email. The Page parameter is the name of the page in which the _googleOAuth_ prefab is placed i.e., the current page itself (_GoogleLogin_ page)
 5. Open the _Login_ page of the application and add a button widget below the _Login_ button.
@@ -45,8 +45,8 @@ The document provides an overview for implementing authentication for the applic
          <version>1.0.0.RELEASE</version>
     </dependency>
     
-10. [Create a query](http://[supsystic-show-popup id=117]) which retrieves the user details based on the logged in user name. This query will be later on autowired and used in the Java Service for authenticating the user if DB as security provider is used.
-11. [Create a Java Service](http://[supsystic-show-popup id=119]) named MyAuthenticationManager.
+10. [Create a query](/learn/app-development/services/database-services/working-with-queries) which retrieves the user details based on the logged in user name. This query will be later on autowired and used in the Java Service for authenticating the user if DB as security provider is used.
+11. [Create a Java Service](app-development/services/java-services/java-service/) named MyAuthenticationManager.
 12. Add the following import statements:
     
     import javax.servlet.http.HttpServletRequest;
@@ -138,7 +138,7 @@ The document provides an overview for implementing authentication for the applic
     
     }
     
-14. Open [Security Dialog](http://[supsystic-show-popup id=111]) and choose the _Security Provider_ as _custom_. Provide the _Class Name_ property as the package name of the _MyAuthenticationManager_ java service created above. Save the settings.
+14. Open [Security Dialog](/learn/app-development/app-security/app-security) and choose the _Security Provider_ as _custom_. Provide the _Class Name_ property as the package name of the _MyAuthenticationManager_ java service created above. Save the settings.
 15. Run the Application.
     1. The login page appears, Login using the Login Page - admin/admin; you will see the Employee Data
     2. Logout and Login using Google Button; Google Login Page shows up

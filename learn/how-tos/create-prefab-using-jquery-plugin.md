@@ -17,8 +17,8 @@ Download the jsTree JQuery Plugin from [https://www.jstree.com/](https://www.jst
 
 1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](http://[supsystic-show-popup id=102])
 2. Enter a name (say TreeView2) and description for the Prefab.
-3. From [File Explorer](http://[supsystic-show-popup id=112]) add the JS and CSS files from the above-downloaded dist folder. Here we have created a folder _jsTree_ to hold the same structure as the dist folder. [![](/learn/assets/jstree_prefab_import.png)](/learn/assets/jstree_prefab_import.png)
-4. From [Project Configurations](http://[supsystic-show-popup id=107]), choose Config Prefab under Settings:
+3. From [File Explorer](/learn/app-development/services/3rd-party-libraries) add the JS and CSS files from the above-downloaded dist folder. Here we have created a folder _jsTree_ to hold the same structure as the dist folder. [![](/learn/assets/jstree_prefab_import.png)](/learn/assets/jstree_prefab_import.png)
+4. From [Project Configurations](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace), choose Config Prefab under Settings:
     1. In the Resources tab, choose the css and js files. [![](/learn/assets/jstree_prefab_resources.png)](/learn/assets/jstree_prefab_resources.png)
     2. In the Properties tab, add an _inbound_ property as an object,array (type if not selectable) which should consist of parent and child node names: [![](/learn/assets/jstree_prefab_inbound.png)](/learn/assets/jstree_prefab_inbound.png)
     3. In the Events tab, add events to be triggered when a node is Selected, Deselected, Expanded or Collapsed. Note, by default two events are already given - Load and Destroy [![](/learn/assets/jstree_prefab_events.png)](/learn/assets/jstree_prefab_events.png)

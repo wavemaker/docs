@@ -25,7 +25,7 @@ Let us see how we can add localization to our applications.
 
 - Drag and drop a **Select Locale** widget on the project. This widget is bound by default to the **supportLocale** variable created when the locales were added in the previous step. Use a label bound to the Localized Message created in the previous step. [![](/learn/assets/loc_design.png)](/learn/assets/loc_design.png)
 - Save and run the application. From the Select widget choose a language and see the text change in the Label widget
-- When the user selects a _Language_ on your application or when you set the _default language_ of the app from the [Project Settings](http://[supsystic-show-popup id=108]) dialog, WaveMaker applies the relevant locale settings to show the messages as per its value for that locale.
+- When the user selects a _Language_ on your application or when you set the _default language_ of the app from the [Project Settings](/learn/app-development/wavemaker-overview/product-walkthrough#project-settings) dialog, WaveMaker applies the relevant locale settings to show the messages as per its value for that locale.
 
 [3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 

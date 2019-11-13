@@ -11,10 +11,10 @@ In this section, you will learn how to use third-party UI widgets in Studio. We 
 
 1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](http://[supsystic-show-popup id=102])
 2. Enter a name and description for the Prefab
-3. [Import the resources](http://[supsystic-show-popup id=112]) needed
+3. [Import the resources](/learn/app-development/services/3rd-party-libraries) needed
 4. Create **folder lightbox** with **three sub-folders css, js and images**
 5. Upload the following files to their respective folders - **lightbox.min.js, lightbox.min.css and four images**. You will find these files in the respective folders from the extracted folder _lighbox2-master/dist_ folder. [![](/learn/assets/lbprefab_resource.png)](/learn/assets/lbprefab_resource.png)
-6. From [Project Configurations](http://[supsystic-show-popup id=107]), choose Config Prefab under Settings:
+6. From [Project Configurations](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace), choose Config Prefab under Settings:
     - **Resources** - delete the _Main.css_ from _Styles_ and add the following:
         - Styles: include the css file imported in the above step
         - Scripts: include the js file imported in the above step [![](/learn/assets/lbprefab_settings.png)](/learn/assets/lbprefab_settings.png)
@@ -49,7 +49,7 @@ We will use the Prefab to display the image in an app.
 
 1. Save and Publish the Prefab.
 2. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs).
-3. Once approved, the Prefab will be available for use across the Projects. An entry will appear in the Artefacts list from the Developer Utilities on the [Project Workspace.](http://[supsystic-show-popup id=107]) The Prefab needs to be imported before it can be used from the Widget Toolbox.
+3. Once approved, the Prefab will be available for use across the Projects. An entry will appear in the Artefacts list from the Developer Utilities on the [Project Workspace.](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) The Prefab needs to be imported before it can be used from the Widget Toolbox.
 4. Open/Create a project to see the usage of the above Prefab. Import the Prefanb from Artifacts listing dialog. Drag and drop the _Imageviewer_ onto the canvas.
 5. Set the Title and Picture property. Here we are binding the Picture property to an image resource already imported into the app. [![](/learn/assets/lbprefab_dnd.png?v=20)](/learn/assets/lbprefab_dnd.png?v=20)
 6. Run the project, the image will be displayed.
