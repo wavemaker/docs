@@ -42,10 +42,10 @@ class Index extends React.Component {
                 <div className="row">
                     <div className="column">
                         <h1>Welcome to WaveMaker Learning Center</h1>
-                        <h4>Find a complete developer's guide to build an app with RAD solution.</h4>
+                        <h4>Find a complete developer's guide to build an app with Low-code solution.</h4>
 						<div>
 							<a className="cta" href= "/learn/documentation-reference" target="_self" >Get Started</a>
-							<a className="cta secondary" href= "https://www.wavemaker.com/" target="_blank" >Platform</a>
+							<a className="cta secondary" href= "https://www.wavemaker.com/rapid-application-development-platform/" target="_blank" >Platform</a>
 						</div>
                     </div>
 					<div className="column">
@@ -84,7 +84,7 @@ class Index extends React.Component {
 								<p>
 									Rapid mobile app development<br />								
 									<a href="/learn/hybrid-mobile/building-hybrid-mobile-apps" target="_self" > Build</a>
-									<a href="http://www.wavemaker.com/training/" target="_blank" >Mobile Widgets</a>
+									<a href="/learn/app-development/widgets/widget-library#mobile-device-widgets" target="_blank" >Mobile Widgets</a>
 								</p>
 							</div>
                         </div>
