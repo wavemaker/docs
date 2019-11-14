@@ -3,6 +3,7 @@ title: "Configuring for AWS Deployment"
 id: ""
 sidebar_label: "AWS"
 ---
+---
 
 WaveMaker allows you to deploy your app to your AWS cloud account for Live (and Stage for WME users) phase. 
 For more information, see [Release Management](/learn/app-development/deployment/release-management/).

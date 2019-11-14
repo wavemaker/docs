@@ -2,8 +2,8 @@
 title: "Release Management"
 id: ""
 ---
+---
 
-# Overview
 
 **Release management** is a software engineering process intended to oversee the development, testing, deployment and support of software releases. Release Management aims to plan, schedule and control the movement of releases to test and live environments. Release Management also needs to ensure the delivery of new and enhanced app services required by the business, while protecting the integrity of existing services.
 
@@ -24,7 +24,7 @@ Each App phase as depicted above requires its own infrastructure components to 
 - ensure the smooth transition of the project between phases with minimum app changes,
 - control versioning during the transition.
 
-# How WaveMaker Implements Release Management
+## How WaveMaker Implements Release Management
 
 WaveMaker **Release Pipeline **enables setting up the App deployment phases for easier delivery by leveraging Docker containerization. Setting up an App deployment phase requires:
 
@@ -48,15 +48,15 @@ WaveMaker Platform offers a pre-defined set of App delivery phases which enables
 
 With **one-click deployment**, **apps portal** and **versioning of deployed apps** the various aspects of Release Pipeline mentioned in the above sections are made simple and easy to implement.
 
-**One-Click Deployment**
+## One-Click Deployment
 
 Using the Deploy option from Project Workspace, your app is deployed to WaveMaker Cloud (QA in WME). It takes care of the configuration for all required services needed for deployment to the Demo (QA) phase. [Know more](/learn/app-development/deployment/one-click-deployment/).
 
-**Apps Portal**
+## Apps Portal
 
 Apps Portal provides a platform for the user to manage the deployed apps. By default two phases - Demo and Live are provided for any WaveMaker App. WME users can utilize an additional Stage phase. Each phase can have its own infrastructure and versioning. Before pushing deployed app to a phase, the phase configuration profiles can be set, else the profiles from the previous phase are retained. [Know more](/learn/app-development/deployment/manage-deployed-apps/).
 
-**App Versioning**
+## App Versioning
 
 Most app development is incremental in nature, i.e. different phases will be hosting the app in various levels of development. The developer will be working on the latest version, while Live version would be at least one step behind. In such cases versioning system comes in handy. In WaveMaker, the app in Demo phase will be the last version deployed from Studio. When pushing from Demo to other phases, you have the option to change the version for better tracking and control. [Know more](/learn/app-development/deployment/manage-deployed-apps/#push-to-live).
 

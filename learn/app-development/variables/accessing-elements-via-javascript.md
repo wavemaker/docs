@@ -29,10 +29,11 @@ For every Widget, there are a set of lifecycle methods and event callbacks that 
 
 The events can be accessed from the properties panel for the specific Widget and assigned to a JavaScript or any other actions. JavaScript can be written from the Script tab, as per the app requirements. For example, to display an alert message on click of a button, the following would be the code:
 
+```
 Page.button1Click = function($event, widget) {
     alert("Hello")
 };
-
+```
 For Widget Life Cycle Methods usage examples refer to the specific [Widget Documentation](/learn/app-development/widgets/widget-library/).
 
 ## Custom Methods
