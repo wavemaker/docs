@@ -3,7 +3,7 @@ id: "documentation-reference"
 title: "WaveMaker Developers Guide"
 sidebar_label: "Introduction"
 ---
-Introduction to WaveMaker. Find a complete developer's guide to build an app with RAD solution.
+Introduction to WaveMaker. Find a complete developer's guide to build an app with Low-code solution.
 
 ---
 [WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing a modern end-to-end application. It is a rich design studio with over [80 widgets](/learn/app-development/widgets/widget-library) that work out-of-the-box. In this section, you can find a complete developers' guide for building apps with RAD solution using WaveMaker Studio.
