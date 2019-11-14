@@ -7,7 +7,7 @@ sidebar_label: "JavaScript Access"
 
 A **Page** in WaveMaker application consists of Markup, Script & CSS files. In this document, we will go through the various functions/methods that are available in the script file. We will see how these methods can be created and modified.
 
-**Page script** can be accessed from the script tab on your project workspace. Using JavaScript, the functionality of your project can be enhanced. The various methods and properties associated with each of the Studio elements can be found in the [API Documentation](https://www.wavemakeronline.com/studio/10.2.0.7594/docs/index.html).
+**Page script** can be accessed from the script tab on your project workspace. Using JavaScript, the functionality of your project can be enhanced. The various methods and properties associated with each of the Studio elements can be found in the [API Documentation](https://www.wavemakeronline.com/studio/10.2.1.7688/docs/index.html).
 
 ## Page Lifecycle
 
