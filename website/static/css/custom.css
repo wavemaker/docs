@@ -327,7 +327,7 @@ h3 {
 }
 
 
-@media only screen and (min-width: 360px) and (max-width: 736px) {
+@media only screen and (min-width: 320px) and (max-width: 736px) {
 	.row {
         width: 100%;
     }
@@ -342,6 +342,15 @@ h3 {
     }
 	.column {
         flex: auto;
+    }
+    .fixedHeaderContainer a {
+        display: none;
+    }
+    .navigationSlider .slidingNav ul {
+        margin-top:0;
+    }
+    .navPusher {
+        padding-top: 50px;
     }
 }
 
