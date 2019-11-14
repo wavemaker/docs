@@ -16,7 +16,9 @@ Localization is the adaptation of a product or service to meet the needs of a pa
 
 ## Platform Localization
 
-> Available only for Enterprise Version from 10.GA release.
+:::note
+Available only for Enterprise Version from 10.GA release.
+:::
 
 ### Setting Language Preference
 
@@ -99,21 +101,34 @@ Studio makes use of module APIs to work with backend services. These language bu
 
 Once you add the language bundles, update the flyway script and initiate the build process for the languages to take effect.
 
-1. New locale has to be inserted to the PostgreSQL Database, by adding the insert statement to the flyway script file. Following are the instructions:
-    1. Go to the directory:   
-`wavemaker-login-service/wavemaker-login/wavemaker-login-portal/src/main/resources/db\_scripts/postgresql/`
-    2. Add a flyway script file incrementing the version number.  
-    For example, if you have the recent version of flyway script as 
-    `wmlogin\_v74\_\_RBAC\_model\_permissions.sql`,  
-    Create a new file with the following name:  
-    `wmlogin\_v75\_\_new\_locale\_.sql`  
+New locale has to be inserted to the PostgreSQL Database, by adding the insert statement to the flyway script file. 
 
-    > Note double underscore after the version number v75.
+Following are the instructions:
+- Go to the directory:   
 
-    3. Add the following statement in the above newly created file, after replacing the placeholders for `localeId`, `DisplayName`, and `Language`.  
-    INSERT INTO SUPPORTED\_LOCALE (LOCALE\_ID, DISPLAY\_NAME, LANGUAGE) values (`'localeId'`, `'DisplayName'`, `'Language'`);  
-    For example to insert German locale: 
-    `INSERT INTO SUPPORTED\_LOCALE (LOCALE\_ID, DISPLAY\_NAME, LANGUAGE)`  
-    Values as `('de', 'German', 'German');`
-2. Initiate the platform build.
-3. Post-build, when developers log into the platform they will be able to see the language in their profiles for selection.
+`wavemaker-login-service/wavemaker-login/wavemaker-login-portal/src/main/resources/db_scripts/postgresql/`
+
+- Add a flyway script file incrementing the version number.  
+For example, if you have the recent version of flyway script as 
+
+`wmlogin_v74__RBAC_model_permissions.sql`,  
+
+Create a new file with the following name:  
+
+`wmlogin_v75__new_locale_.sql`  
+
+:::note
+There are two underscores after the version number **v75**.
+:::
+
+- Add the following statement in the above newly created file, after replacing the placeholders for `localeId`, `DisplayName`, and `Language`.  
+```
+INSERT INTO SUPPORTED_LOCALE (LOCALE_ID, DISPLAY_NAME, LANGUAGE) values (`'localeId'`, `'DisplayName'`, `'Language'`); 
+```
+For example to insert German locale: 
+```
+`INSERT INTO SUPPORTED_LOCALE (LOCALE_ID, DISPLAY_NAME, LANGUAGE)`  
+Values as `('de', 'German', 'German');`
+```
+- Initiate the platform build.
+- Post-build, when developers log into the platform they will be able to see the language in their profiles for selection.

@@ -115,6 +115,8 @@ const siteConfig = {
     onPageNav: 'separate',
     // No .html extensions for paths.
     cleanUrl: true,
+	
+	scrollToTop: true,
 
     editUrl: 'https://github.com/wavemaker/docs/tree/master/learn/',
 

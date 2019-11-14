@@ -10,6 +10,7 @@ To deploy your app to Google Cloud account, you need to configure the Live (Stag
 
 :::note
 This document covers the Live Phase configuration for your AWS account and is a part of the [Manage Deployed Apps](/learn/app-development/deployment/manage-deployed-apps/).
+:::
 
 ## Prerequisites
 
