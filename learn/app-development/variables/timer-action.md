@@ -5,7 +5,7 @@ id: ""
 
 **Timer action** can be used to trigger events repeatedly at timed intervals.
 
-# Action Creation
+## Action Creation
 
 1. To create a Timer Action:
     - Select the Action option from Variables on the Workspace Toolbar [![](/learn/assets/action_sel.png)](/learn/assets/action_sel.png)and click New Action from the Actions dialog. [![](/learn/assets/action_new.png?v=20)](/learn/assets/action_new.png?v=20)
@@ -20,7 +20,7 @@ id: ""
     2. the properties tab contains the _behavior_ properties. [Know more about properties](#properties).
     3. the events tab will contain the events that can be configured to trigger any action. [Know more about events](#events).
 
-# Properties
+## Properties
 
 Timer Variables are special variables that can be used to trigger a particular event at regular time intervals.
 

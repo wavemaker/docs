@@ -2,6 +2,7 @@
 title: "Device Variables"
 id: ""
 ---
+---
 
 **Device Variables** are specific to Mobile App projects. These are useful in performing operations specific to a Mobile Device like taking a picture and getting its path, select a contact, add events to a calendar, etc.
 
@@ -9,7 +10,7 @@ id: ""
 
 [![](/learn/assets/var_new_mobile.png)](/learn/assets/var_new_mobile.png)
 
-# Services
+## Services
 
 **Service** specifies the target service to be used. Each service is targeted to perform a set of operations for a feature. Available services are:
 
@@ -21,15 +22,15 @@ id: ""
 - **File** – you can upload files to your mobile device
 - **Scan** – can be used to access the barcode scanner.
 
-# Operations
+## Operations
 
 Based upon the service selected various operations are available.
 
 <table class="reference notranslate"><tbody><tr><td><p style="text-align: left;"><a href="#calendar">Calendar Service Operations</a></p><div></div><table class="reference notranslate"><tbody><tr><td><a href="#createEvent">createEvent</a></td><td><a href="#deleteEvent">deleteEvent</a></td><td><a href="#getEvents">getEvents</a></td></tr></tbody></table></td></tr><tr><td><p style="text-align: left;"><a href="#camera">Camera Service Operations</a></p><div></div><table class="reference notranslate"><tbody><tr><td><a href="#captureImage">captureImage</a></td><td><a href="#captureVideo">captureVideo</a></td></tr></tbody></table></td></tr><tr><td><p style="text-align: left;"><a href="#device">Contacts Service Operations</a></p><div></div><table class="reference notranslate"><tbody><tr><td><a href="#getContacts">getContacts</a></td></tr></tbody></table></td></tr><tr><td><p style="text-align: left;"><a href="#device">Datasync Service Operations</a></p><div></div><table class="reference notranslate"><tbody><tr><td><a href="#exportDB">exportDB</a></td><td><a href="#getOfflineChanges">getOfflineChanges</a></td><td><a href="#importDB">importDB</a></td></tr><tr><td><a href="#pull">Pull</a></td><td><a href="#push">Push</a></td></tr><tr><td><a href="#lastPullInfo">lastPullInfo</a></td><td><a href="#lastPushInfo">lastPushInfo</a></td></tr></tbody></table></td></tr><tr><td><p style="text-align: left;"><a href="#device">Device Service Operations</a></p><div></div><table class="reference notranslate"><tbody><tr><td><a href="#getAppInfo">getAppInfo</a></td><td><a href="#getCurrentGeoPosition">getCurrentGeoPosition</a></td><td><a href="#getDeviceInfo">getDeviceInfo</a></td></tr><tr><td><a href="#getNetworkInfo">getNetworkInfo</a></td><td><a href="#vibrate">vibrate</a></td></tr><tr><td><a href="#goOnline">goOnline</a></td><td><a href="#goOffline">goOffline</a></td></tr></tbody></table></td></tr><tr><td><p style="text-align: left;"><a href="#file">File Service Operations</a></p><div></div><table class="reference notranslate"><tbody><tr><td><a href="#upload">upload</a></td><td><a href="#openfile">OpenFile</a></td></tr></tbody></table></td></tr><tr><td><p style="text-align: left;"><a href="#scan">Scan Service Operations</a></p><div></div><table class="reference notranslate"><tbody><tr><td><a href="#scanBarCode">scanBarCode</a></td></tr></tbody></table></td></tr></tbody></table>
 
-## Calendar Service Operations
+### Calendar Service Operations
 
-**createEvent**: Creates calendar event in device
+**createEvent**: Creates calendar event in device.
 
 | **Input Parameter** (from Data Tab) | **Description** | **Sample** |
 | --- | --- | --- |
@@ -62,7 +63,7 @@ Based upon the service selected various operations are available.
 | Start Date | specifies the start date of the event | 2016-09-20 10:35:38 AM (select value from date time input) |
 | End Date | specifies the end date of the event | 2016-09-25 08:35:38 PM (select value from date time input) |
 
-## Camera Service Operations
+### Camera Service Operations
 
 **captureImage**: Capture image from the device camera
 
@@ -75,11 +76,13 @@ Based upon the service selected various operations are available.
 | Target Width\* | width in pixels to scale image. | 100 (only when required to get small images) |
 | Target Height\* | height in pixels to scale image. | 100 (only when required to get small images) |
 
-\***Note**: To get smaller images, you can return a resized image by passing both targetHeight and targetWidth values. If these values are not set, it returns the original image captured by the camera.
+:::note
+To get smaller images, you can return a resized image by passing both targetHeight and targetWidth values. If these values are not set, it returns the original image captured by the camera.
+:::
 
-**captureVideo**: to capture video using the device camera
+**captureVideo**: to capture video using the device camera.
 
-## Contacts Service Operations
+### Contacts Service Operations
 
 **getContacts**: Retrieves the device contacts list
 
@@ -90,9 +93,11 @@ Based upon the service selected various operations are available.
 | Update data on input change | If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable. |
 | Request data on page load | If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load. |
 
-**Output**: Returns array of objects, each object containing phoneNumber and displayName fields. **Example**: Sample Input: “Bob” (contact name) Result: Retrieves all the contacts containing string “Bob”
+**Output**: Returns array of objects, each object containing phoneNumber and displayName fields. 
 
-## DataSync Service Operations
+**Example**: Sample Input: “Bob” (contact name) Result: Retrieves all the contacts containing string “Bob”
+
+### DataSync Service Operations
 
 **exportDB**: Offline database is saved as zip in ‘Downloads’ folder in Android. In IOS, zip is stored in ‘Documents’ folder so that one can export from iPhone via iTunes. For the file to be visible in iTunes, File sharing needs to be enabled for the app in iOS preferences.
 
@@ -164,7 +169,7 @@ Based upon the service selected various operations are available.
 | startTime | Start time of push operation. |
 | endTime | End time of push operation. |
 
-## Device Service Operations
+### Device Service Operations
 
 **getAppInfo**: Returns the version number of the app
 
@@ -205,7 +210,7 @@ Based upon the service selected various operations are available.
 
 **goOnline**: Used to turn the mobile app to online mode by blocking trying to connect to the backend server.
 
-## File Service Operations
+### File Service Operations
 
 **OpenFile**: Opens files like pdf, document, excel and powerpoint. Note: A file can be opened if corresponding application is available on the mobile device. For example, a pdf file requires acrobat reader or another file that can open the pdf. When a remote file has to be opened for the first time, the file is downloaded. On subsequent calls to open the same file, the earlier downloaded file is just opened.
 
@@ -220,33 +225,34 @@ Based upon the service selected various operations are available.
 | --- | --- |
 | _localFile_ | specifies the file path on the device. remoteFolder represents the folder path on the server to save the uploaded image. If empty, then images gets saved to `/wavemaker/appdata//uploads` |
 
-## Scan Service Operations
+### Scan Service Operations
 
 **scanBarCode**: to access the barcode scanner.
 
-# Events
+## Events
 
 1. **On Error**: The event is fired on the error of the device variable.
 2. **On Success**: The event is fired on the success of the device variable.
 3. **On Before:** This event is fired before starting the pull/push for the dataSync variable.
 4. **On Progress:** This event is fired during the pull/push for the dataSync variable.
 
-# Methods
+## Methods
 
-## invoke(options)
+### invoke(options)
 
 This method invokes the device variable
 
-_Parameters_:
+**Parameters**:
 
 - **options**(object)
 - success (callback)
 - error (callback)
 
-_Return Value_: None
+**Return Value**: None
 
-_Example:_
+**Example**:
 
+```
 // Example 1: Notify with default set properties
 Page.Variables.myDeviceVariable.invoke();
 
@@ -258,98 +264,4 @@ Page.Variables.myDeviceVariable.invoke(
      }, function () {
         console.log('error')
 });
-
-< Variables & Actions
-
-6\. Data Integration - Variables
-
-- 6.1 Binding Layer
-    - [i. Overview](/learn/app-development/variables/data-integration/)
-- [6.2 Variables and Actions](/learn/app-development/variables/variables-actions/)
-    - [i. Overview](/learn/app-development/variables/variables-actions/#)
-    - [ii. Variables](/learn/app-development/variables/variables-actions/#variables)
-        - a. Database CRUD
-            - [○ Overview](/learn/app-development/variables/database-crud/)
-            - [○ Variable Creation](/learn/app-development/variables/database-crud/#creation)
-            - [○ Properties](/learn/app-development/variables/database-crud/#properties)
-            - [○ Events](/learn/app-development/variables/database-crud/#events)
-            - [○ Methods](/learn/app-development/variables/database-crud/#methods)
-        - b. Database API
-            - [○ Overview](/learn/app-development/variables/database-apis/)
-            - [○ Variable Creation](/learn/app-development/variables/database-apis/#creation)
-            - [○ Properties](/learn/app-development/variables/database-apis/#properties)
-            - [○ Events](/learn/app-development/variables/database-apis/#events)
-            - [○ Methods](/learn/app-development/variables/database-apis/#methods)
-        - c. Web Service
-            - [○ Overview](/learn/app-development/variables/web-service/)
-            - [○ Variable Creation](/learn/app-development/variables/web-service/#creation)
-            - [○ Properties](/learn/app-development/variables/web-service/#properties)
-            - [○ Events](/learn/app-development/variables/web-service/#events)
-            - [○ Methods](/learn/app-development/variables/web-service/#methods)
-        - d. Java Service
-            - [○ Overview](/learn/app-development/variables/java-services)
-            - [○ Variable Creation](/learn/app-development/variables/java-services/#creation)
-            - [○ Properties](/learn/app-development/variables/java-services/#properties)
-            - [○ Events](/learn/app-development/variables/java-services/#events)
-            - [○ Methods](/learn/app-development/variables/java-services/#methods)
-        - e. Security Service
-            - [○ Overview](/learn/app-development/variables/security-service/)
-            - [○ Variable Creation](/learn/app-development/variables/security-service/#creation)
-            - [○ Properties](/learn/app-development/variables/security-service/#properties)
-            - [○ Events](/learn/app-development/variables/security-service/#events)
-            - [○ Methods](/learn/app-development/variables/security-service/#methods)
-        - f. Model
-            - [○ Overview](/learn/app-development/variables/model-variable/)
-            - [○ Variable Creation](/learn/app-development/variables/model-variable/#creation)
-            - [○ Properties](/learn/app-development/variables/model-variable/#properties)
-            - [○ Events](/learn/app-development/variables/model-variable/#events)
-            - [○ Methods](/learn/app-development/variables/model-variable/#methods)
-        - [g. Device Variables](#)
-            - [○ Overview](#)
-            - [○ Services](#services)
-            - [○ Operations](#operations)
-            - [○ Events](#events)
-            - [○ Methods](#methods)
-            - [○ Usage](#usage)
-    - [iii. Actions](/learn/app-development/variables/variables-actions/#actions)
-        - i. Navigation
-            - [○ Overview](/learn/app-development/variables/navigation-action/)
-            - [○ Action Creation](/learn/app-development/variables/navigation-action/#creation)
-            - [○ Properties](/learn/app-development/variables/navigation-action/#properties)
-            - [○ Methods](/learn/app-development/variables/navigation-action/#methods)
-        - ii. Login
-            - [○ Overview](/learn/app-development/variables/login-action/)
-            - [○ Action Creation](/learn/app-development/variables/login-action/#creation)
-            - [○ Properties](/learn/app-development/variables/login-action/#properties)
-            - [○ Data](/learn/app-development/variables/login-action/#data)
-            - [○ Events](/learn/app-development/variables/login-action/#events)
-        - iii. Logout
-            - [○ Overview](/learn/app-development/variables/logout-action/)
-            - [○ Action Creation](/learn/app-development/variables/logout-action/#creation)
-            - [○ Properties](/learn/app-development/variables/logout-action/#properties)
-            - [○ Events](/learn/app-development/variables/logout-action/#events)
-        - iv. Timer
-            - [○ Overview](/learn/app-development/variables/timer-action/)
-            - [○ Action Creation](/learn/app-development/variables/timer-action/#creation)
-            - [○ Properties](/learn/app-development/variables/timer-action/#properties)
-            - [○ Events](/learn/app-development/variables/timer-action/#events)
-            - [○ Methods](/learn/app-development/variables/timer-action/#methods)
-        - v. Notification
-            - [○ Overview](/learn/app-development/variables/notification-action/)
-            - [○ Action Creation](/learn/app-development/variables/notification-action/#creation)
-            - [○ Properties](/learn/app-development/variables/notification-action/#properties)
-            - [○ Events](/learn/app-development/variables/notification-action/#events)
-            - [○ Methods](/learn/app-development/variables/notification-action/#methods)
-    - [iv. Scoping](/learn/app-development/variables/variables-actions/#scoping)
-    - [v. Variable Events](/learn/app-development/variables/variables-actions/#events)
-    - [vi. Error Handling](/learn/app-development/variables/variables-actions/#error-handling)
-- 6.3 Variable Binding
-    - [i. Overview](/learn/variables/variable-binding/#)
-    - [ii. Data Binding](/learn/variables/variable-binding/#data-binding)
-    - [iii. Widget Binding](/learn/variables/variable-binding/#widget-binding)
-    - [iv. Binding Options](/learn/variables/variable-binding/#binding-options)
-- 6.4 JavaScript Access
-    - [i. Overview](/learn/variables/accessing-elements-via-javascript/#)
-    - [ii. Widget Controllers](/learn/variables/accessing-elements-via-javascript/#widget-controllers)
-    - [iii. Page Scripting](/learn/variables/accessing-elements-via-javascript/#page-scripting)
-    - [iv. Script Access](/learn/variables/accessing-elements-via-javascript/#script-access)
+```
