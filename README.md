@@ -1,57 +1,147 @@
 # Welcome to WaveMaker Learn Documentation
 
-To view the learn site, see [WaveMaker Docs](https://wavemaker.com/learn/).
+To access the WaveMaker documentation, see [WaveMaker Docs](https://wavemaker.com/learn/).
 
 ## Contributors Workflow
 
 ### Pre requisites 
 
 1.	Node >= 8.x 
-2.	Git Bash
-3.	GitHub Desktop 
-4.	Visual Studio Code
+2.	Git
 
 ### Other things to have
-5.	Login to your GitHub account. [Sign up](https://github.com/join?), if you do not have an account with GitHub. 
-6.	See [Markdown cheat sheet](https://guides.github.com/features/mastering-markdown/) to get familiar with the editor. 
-7.	Become a contributor for WaveMaker Docs for private repo.
+3.	GitHub account. [Sign up](https://github.com/join?), if you do not have an account with GitHub. 
+4.	See [Markdown cheat sheet](https://guides.github.com/features/mastering-markdown/) to get familiar with the editor. 
 
 
 ## Getting Started 
 1.	Go to https://github.com/wavemaker/docs
-2.	Click Fork and clone to get a copy to your local machine. 
-3.	Clone using GitHub Desktop and select the local location to work with.
-4.	Open GitBash  
-a.	Go to copied location by using the following command: 
-```
-cd Documents/GitHub/docs/Website
-```
-b.	Install the package to your local machine
-```
-npm install
-```
-c.	Run the site using the following command. 
-```
-npm start
-```
-d.	launch the website on the local machine: http://localhost:3000/learn
 
-## To Edit the file 
-1.	Locate the file explorer to edit it in your local machine.
-    - Open in Visual Studio Code for better editing experience. 
-    - Edit the file and save it. 
-2.	Go to GitHub Desktop and track the local changes visually including lines edited, removed, files added, deleted, etc. 
-3.	When you are happy, commit your changes. Before committing, you can select the branch you want to push to.
-6.	Click on the Push origin button to push your changes to the repo. 
-7.	Select Pull to get recent changes from other contributors. 
-8.	Fetch origin to pull or refresh. 
+> **Note**  
+> If you are already a member of WaveMaker organization, you can skip the Fork step and directly clone the repo. 
+
+2.	Fork the repo. For more information, see [Fork a repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo). 
+
+3.	Clone the `wavemaker/docs` repo. For more information, see [Cloning a repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+4.	Open Git/GitBash  
+
+    a.	Go to copied location by using the following command:
+
+    ```
+    cd <path>/docs/website
+
+    // Example: 
+    // cd documents/gitHub/docs/website
+    ```
+    b.	Install the package to your local machine
+    ```
+    npm install
+    ```
+    c.	Run the site using the following command. 
+    ```
+    npm start
+    ```
+    The **step-c** launches the website on the local machine automatically with the following url:
+
+    `http://localhost:3000/learn`
+
+# Editing Content
+
+## Editing an existing docs page
+
+1. Locate the file from the file explorer by navigating to `learn/` to edit the `doc-to-be-edited.md` in your local machine.
+
+2. Open the `doc-to-be-edited.md` in any markdown editor. For example, [Visual Studio Code](https://code.visualstudio.com/download). 
+
+
+```markdown
+---
+id: page-needs-edit
+title: This Doc Needs To Be Edited
+---
+
+Edit me...
+```
+
+For more information on how to edit docs, click [here](https://docusaurus.io/docs/en/navigation)
+
+# Adding Content
+
+## Adding a new docs page to an existing sidebar
+
+- Create the doc as a new markdown file in `/learn`, example `learn/newly-created-doc.md`:
+
+```md
+---
+id: newly-created-doc
+title: This Doc Needs To Be Edited
+---
+
+My new content here..
+```
+
+## Adding to Sidebar (TOC)
+
+- Refer to that doc's ID in an existing sidebar in `website/sidebar.json`:
+
+```javascript
+// Add newly-created-doc to the Getting Started category of docs
+{
+  "docs": 
+  {
+    "Getting started": 
+    [
+        "documentation-reference", 
+        "newly-created-doc" // new doc here  
+        {
+          "type": "subcategory",
+          "label": "App Design",
+          "ids": 
+            [ 
+                "app-development/ui-design/designing-app",            
+                "app-development/ui-design/page-creation",            
+            ]
+        } 
+       ...                      
+    ]
+    ...
+  }
+}
+```
+
+## Adding a Blog
+
+Go to the `blog` directory to add `team blog` feed. 
+
+Create a file within the blog directory with a formatted name of `YYYY-MM-DD-my-blog-post-title.md`. The post date is extracted from the file name.
+
+For example, at `website/blog/2019-11-01-developers-team-blog`: 
+
+```markdown
+---
+title: "Welcome to the WaveMaker Developers Blog"
+author: Samantha Sam
+authorURL: http://twitter.com/sam**m
+authorFBID: 1212***24
+authorTwitter: Sama****am
+---
+
+Your blog content..
+```
+
+## Editing Release Notes
+
+Add/update the following documents on releasing a new version.
+
+1. Add a new document in the `learn/wavemaker-release-notes` directory with version name. For example, `v10.2.2`. 
+2. Edit the release table in the `wavemaker-release-notes` file in the `/learn` directory.  
+3. Update the `sidebar.json` file with the new version release notes.
+4. Remove the `current` keyword from the previous release notes by changing the `sidebar_label` and make the new document as current. 
+
 
 ## License
 [Apache 2.0 License](License)
-
-
-
-
 
 
 
