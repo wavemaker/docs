@@ -29,10 +29,11 @@ Before proceeding with Build, you need to set the following properties:
 ### Configuration Details
 
 ## Application Properties
-- _Application Name_: By default, it is set to the name of the WaveMaker application. You can set the name different from the app name.
-- _Server Path_: By default, it provides a server path where the app is being hosted. You can edit this field if you are hosting your app elsewhere like web server.
-- _Application Information_: It displays information related to the app such as **Application ID** (by default, com._appname_), **Version** (by default, 0.0.1) and you can edit the fields as per your requirements.
-- _Developer Information_: Provide details such as **Developer Name**, **Developer URL** and **Developer Email** (by default set to WaveMaker account email id).
+
+- **Application Name**: By default, it is set to the name of the WaveMaker application. You can set the name different from the app name.
+- **Server Path**: By default, it provides a server path where the app is being hosted. You can edit this field if you are hosting your app elsewhere like web server.
+- **Application Information**: It displays information related to the app such as **Application ID** (by default, `com.appname`), **Version** (by default, 0.0.1) and you can edit the fields as per your requirements.
+- **Developer Information**: Provide details such as **Developer Name**, **Developer URL** and **Developer Email** (by default set to WaveMaker account email id).
 
 ## Plugins
 You can see the list of native features used in the application. You drag and drop any mobile widget or use any device variable or functionality, the plugin is auto-selected and can be seen in Plugins section, thus ensuring app to access phone native features like Barcode scanner, Calendar, Camera, Contacts, File, Geolocation, Network and Vibrate.
@@ -47,7 +48,9 @@ Search for more plugins at npm ([https://www.npmjs.com/package/cordova-plugins](
         
 ## White Listings
 
-Most mobiles block access to external websites for security reasons. If your app needs access to external websites these can be set in the URL Whitelist. Say you want to provide access to google resources to your app, in that case, the URL Whitelist would be http://\*.google.com/\* [See here for more details](https://github.com/apache/cordova-plugin-whitelist#navigation-whitelist). Intent can be used to specify any applications that would need to be launched through your app. [See here for more details](https://github.com/apache/cordova-plugin-whitelist#intent-whitelist)
+Most mobiles block access to external websites for security reasons. If your app needs access to external websites these can be set in the URL Whitelist. For example, if you want to provide access to google resources to your app, in that case, the URL Whitelist would be `http://.google.com/` [See here for more details](https://github.com/apache/cordova-plugin-whitelist#navigation-whitelist). 
+
+Intent can be used to specify any applications that would need to be launched through your app. [See here for more details](https://github.com/apache/cordova-plugin-whitelist#intent-whitelist)
 
 ## Android Preferences
 These properties define the app behavior on the device. You have the option to select the Minimum Target Android Version from the drop down menu. Set the orientation of the screen to Portrait or Landscape and enable or disable Full Screen.
