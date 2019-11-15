@@ -46,6 +46,9 @@ d.	launch the website on the local machine: http://localhost:3000/learn
 7.	Select Pull to get recent changes from other contributors. 
 8.	Fetch origin to pull or refresh. 
 
+## License
+[Apache 2.0 License](License)
+
 
 
 
