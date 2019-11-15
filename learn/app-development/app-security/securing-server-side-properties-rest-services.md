@@ -19,10 +19,6 @@ When adding App Environment Properties, ensure to click the “+” button after
 
 When you create App Environment Properties, they should appear in Web Services window under the Header and Query param types.
 
-:::note
-Refresh the the Web Services configuration window if you do not see the App Environment Properties in the Header and Query param types.
-:::
-
 ## Configuring Proxy Server
 
 When configuring REST API, you add parameter name, data type and test value depending on the service requirements. To learn how to add REST services, see [Third Party REST Services](/learn/app-development/services/web-services/rest-services/). Following are the three types of Properties for using Header and Query params data types:
