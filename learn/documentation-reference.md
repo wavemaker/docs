@@ -32,16 +32,16 @@ View the short video to see how WaveMaker apps work in a three-layered architect
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNlIJ337WpsjTAfNsPE-16_jaNEEJW-5L" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
-## WaveMaker Studios
-WaveMaker supports two types of Studios.  
+## WaveMaker Studio Editions
+WaveMaker offers 2 variants of Studio, for cloud-based and on-premise development respectively.
 ### 1. WaveMaker Online (WMO)
-WMO is a cloud product - no installation required. For more information on the pre-requisites and setup guide, see [WaveMaker Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites) and [Online Setup Guide](/learn/wmo-setup).
+WMO is a cloud-based product - no installation required. For more information on the pre-requisites and setup guide, see [WaveMaker Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites) and [Online Setup Guide](/learn/wmo-setup).
 
 ### 2. WaveMaker Enterprise (WME)
 WME is an on-premise product. For WME installation, see [WaveMaker Enterprise Setup Guide](/learn/installation/wavemaker-enterprise-setup-guide).
 
 :::note
-All features of WaveMaker Studio work similarly for WMO and WME unless specified in the doc. 
+Most of the WaveMaker app development capabilities are available in both WMO and WME editions, except for Enterprise edition which offers very specific enterprise integrations like Git Enterprise, behind the firewall services, Single sign-on for platform logins etc.
 :::
 
 ## Quick Start Guide
@@ -49,7 +49,7 @@ All features of WaveMaker Studio work similarly for WMO and WME unless specified
 |To | See |
 |----|----|
 |Start with beginner's guide | [Video Tutorials](/learn/tutorials) |
-|For installation related information|[Pre-requisites to Develop App in WaveMaker](/learn/app-development/wavemaker-overview/pre-requisites)|
+|For installation related information, On-premise Setup |[Pre-requisites to Develop App in WaveMaker](/learn/app-development/wavemaker-overview/pre-requisites)|
 |Get the WaveMaker Studio walkthrough |[Product Terminology and Dashboard Walkthrough](/learn/app-development/wavemaker-overview/product-walkthrough)|
 |Explore Widgets and play around|[Widgets Library](/learn/app-development/widgets/widget-library)|
 |Build an app in 5 mins | [Build a WaveMaker App in 5 Minutes](https://www.youtube.com/watch?list=PLNlIJ337WpshRs-8eCubDm2vilhsloiqs&v=tLjGGJbrZ2Q)|
@@ -57,7 +57,7 @@ All features of WaveMaker Studio work similarly for WMO and WME unless specified
 
 
 ## [Start a free trial!](https://www.wavemaker.com/get-started/)
-When you sign up, you will be directed to a **Project Dashboard** page. Voila! You can start creating a new projects. Happy developing! 
+When you sign up, you will be directed to a **Project Dashboard** page. Voila! You can start creating new projects. Happy developing! 
 
 ---
 #### Notice something is incorrect or outdated?
