@@ -1,4 +1,4 @@
-# Welcome to WaveMaker Learn Documentation
+# Welcome to WaveMaker Documentation
 
 To access the WaveMaker documentation, see [WaveMaker Docs](https://wavemaker.com/learn/).
 
