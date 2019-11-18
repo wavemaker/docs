@@ -31,6 +31,8 @@ class MyPage extends React.Component {
 MyPage.description = 'My Custom Description';
 module.exports = MyPage;
 
+require('dotenv').config();
+
 const siteConfig = {
     title: 'WaveMaker Learn', // Title for your website.
     tagline: 'Welcome to the Learning Center',
@@ -72,7 +74,7 @@ const siteConfig = {
     users,
 
     /* Google Analytics */	
-    gaTrackingId: 'UA-1776644-1',
+    gaTrackingId: process.env.GA_TRACKING_ID,
 
     /* path to images for header/footer */
     headerIcon: 'img/WM_blue_logo.png',
