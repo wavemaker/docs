@@ -1,0 +1,181 @@
+/*
+
+Copyright (c) 2015-2016 wavemaker-com All Rights Reserved.
+ This software is the confidential and proprietary information of wavemaker-com You shall not disclose such Confidential Information and shall use it only in accordance
+ with the terms of the source code license agreement you entered into with wavemaker-com*/
+package com.notifier.pushservice;
+
+
+import com.your.app.devicedetails.DeviceDetails;
+importcom.your.app.devicedetails.service.DeviceDetailsService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.util.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javapns.devices.Devices;
+import javapns.notification.*;
+
+
+import com.wavemaker.runtime.service.annotations.ExposeToClient;
+
+
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.messaging.FirebaseMessaging;
+import com.google.firebase.messaging.Message;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.data.domain.Page;
+
+import java.io.InputStream;
+
+/**
+ * This is a singleton class with all its public methods exposed as REST APIs via generated controller class.
+ * To avoid exposing an API for a particular public method, annotate it with @HideFromClient.
+ * <p>
+ * Method names will play a major role in defining the Http Method for the generated APIs. For example, a method name
+ * that starts with delete/remove, will make the API exposed as Http Method "DELETE".
+ * <p>
+ * Method Parameters of type primitives (including java.lang.String) will be exposed as Query Parameters &
+ * Complex Types/Objects will become part of the Request body in the generated API.
+ */
+@ExposeToClient
+public class PushService {
+
+    private static final Logger logger = LoggerFactory.getLogger(PushService.class);
+    @Autowired
+    private DeviceDetailsService deviceDetailsService;
+
+
+    /******************************************************************************************
+     *                         ANDROID FIREBASE CONFIGURATION                                 *
+     ******************************************************************************************/
+    //Firebase app database url
+    private String databaseUrl = "https://xxxxxxxxx.firebaseio.com";
+    // place service-key at under /project/src/main/resources
+    private String serviceAccountJSON = "FCM-admin-service-key.json";
+
+
+    /******************************************************************************************
+     *                         IOS APNS CONFIGURATION                                 *
+     ******************************************************************************************/
+    //ios ceretificate in p12 format.
+    private String iosCertificateName = "xxxxxxxxx..p12";
+    //ios ceretificate key.
+    private String iosCertificateKey = "xxxxxxxxxxxxxxxxxxxxx";
+    //a boolean flag to indicate whether it is a production environment.
+    private boolean production = false;
+    
+    
+    
+    private File iosCeretificate;
+
+    public PushService() {
+        this.init();
+    }
+
+    private void init() {
+        try {
+            InputStream serviceAccount = new ClassPathResource(serviceAccountJSON).getInputStream();
+            FirebaseOptions options = new FirebaseOptions.Builder()
+                    .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+                    .setDatabaseUrl(databaseUrl)
+                    .build();
+            FirebaseApp.initializeApp(options);
+        } catch (Exception e) {
+            throw new Error("Not able to initialize firebase due to: ", e);
+        }
+
+        try {
+            String iosCertificate = new ClassPathResource(iosCertificateName).getFile().getAbsolutePath();
+            this.iosCeretificate = new File(iosCertificate);
+            logger.info(iosCertificate);
+        } catch (Exception e) {
+            throw new Error("Not able to initialize APNS due to: ", e);
+        }
+    }
+
+    private Page<DeviceDetails> getDeviceDetails(String deviceId, String os, String userName) {
+        return deviceDetailsService
+                .findAll("userName ='" + userName + "' and os = '" +os+ "' and deviceId = '"+ deviceId +"'", null);
+    }
+
+    public void registerDevice(String deviceId, String os, String userName) {
+        if (getDeviceDetails(deviceId, os, userName).getTotalElements() == 0) {
+            DeviceDetails deviceDetails = new DeviceDetails();
+            deviceDetails.setDeviceId(deviceId);
+            deviceDetails.setOs(os);
+            deviceDetails.setUserName(userName);
+            deviceDetailsService.create(deviceDetails);
+        }
+    }
+
+    public void notify(String message, String currentUser) {
+        try {
+            Iterator<DeviceDetails> deviceIdIterator = deviceDetailsService.findAll("userName !='" + currentUser + "'", null).iterator();
+
+            List<String> androidDevices = new ArrayList<String>();
+            List<String> iosDevices = new ArrayList<String>();
+            if (deviceIdIterator != null) {
+
+                // List device ids for android and ios devices.
+                for (DeviceDetails deviceId; deviceIdIterator.hasNext(); ) {
+                    deviceId = deviceIdIterator.next();
+
+                    if ((deviceId.getOs()).equals("Android")) {
+                        androidDevices.add(deviceId.getDeviceId());
+                    } else {
+                        iosDevices.add(deviceId.getDeviceId());
+                    }
+
+                }
+            }
+            if (!androidDevices.isEmpty()) {
+                sendAndroidNotification(androidDevices, message);
+            }
+            if (!iosDevices.isEmpty()) {
+                sendIOSNotification(iosDevices, message);
+            }
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void unregisterDevice(String deviceId, String os, String userName) {
+        getDeviceDetails(deviceId, os, userName)
+                .forEach(deviceDetails -> deviceDetailsService.delete(deviceDetails.getId()));
+    }
+
+    private void sendIOSNotification(List<String> deviceIds, String message) throws Exception {
+        AppleNotificationServer jksServer = new AppleNotificationServerBasicImpl(this.iosCeretificate, this.iosCertificateKey, this.production);
+        PushNotificationManager pushManager = new PushNotificationManager();
+        pushManager.initializeConnection(jksServer);
+        PushNotificationPayload payload = PushNotificationPayload.alert(message);
+        pushManager.sendNotifications(payload, Devices.asDevices(deviceIds));
+    }
+
+    private void sendAndroidNotification(List<String> deviceIds, String message) {
+        deviceIds.forEach(deviceId -> {
+
+            try {
+                // use this to send message with payload data
+                Message messageObj = Message.builder()
+                        .putData("message", message)
+                        .setToken(deviceId)
+                        .build();
+
+                FirebaseMessaging.getInstance().sendAsync(messageObj);
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+
+    }
+
+}
