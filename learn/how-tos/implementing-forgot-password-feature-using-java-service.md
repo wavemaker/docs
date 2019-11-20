@@ -2,17 +2,21 @@
 title: "Implementing Forgot Password feature using Java Service"
 id: ""
 ---
+---
 
-We will see how to implement Forgot Password feature using Java Service for Sending Email with Default password.
+Learn how to implement the **forgot password** feature using Java Service and send an email with default password.
 
-**Scenario**:
+### Scenario
 
-1. On the Login screen, when the user chooses ForgotPassword, the user will be prompted to enter their email address.
-2. The default password will be sent to the user at the email address entered.
-3. The password in the database also will be updated with the default password.
+1. On the Login screen, when a user chooses "Forgot Password", the user should be prompted to enter their email address.
+2. The default password should be sent to the user's email address.
+3. The password in the database should get updated with the default password which was sent to the user.
+
+## Files Imported to Java Service
 
 The following files were imported into the Java Service:
 
+```
 import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,9 +32,13 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+```
+
+## Java Service Method
 
 We will be using the following Java Service Method:
 
+```
 @ExposeToClient
 public class Forgetpassword {
 private static final Logger logger=LoggerFactory.getLogger(Forgetpassword.class);
@@ -81,25 +89,28 @@ public String getPassword()
 	}
 
 }
+```
+## Update Query
 
-Update Query:
-
+```
 update LOGIN set PASSWORD = :pwd where USER\_NAME = :name;
+```
 
-JavaScript Function:
+## JavaScript Function
+```
 
 Page.ForgotPasswordonSuccess = function (variable, data) {
     Page.Variables.UpdatePWD.setInput("name", Page.Widgets.form1.formWidgets.text1.datavalue);
     Page.Variables.UpdatePWD.setInput("pwd", data);
     Page.Variables.UpdatePWD.update();
 };
+```
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vQ3CCQRozlqEZeDc0iacU9GfWn4K5qFOYW7ukW-yH8Tm3sPYKWdTlBzzwMWyDx_cNPCqsOXzdqQNf8M/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-Java Service Use Cases
+## See Also
 
-- [1\. How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)
-- [2\. How to implement forgot password feature using Java Service](/learn/how-tos/implementing-forgot-password-feature-using-java-service/)
-- [3\. How to access REST APIs from Java Service](/learn/how-tos/accessing-rest-apis-java-service/)
-- [4\. How to schedule a Java Service](/learn/how-tos/scheduling-java-service/)
-- [5\. How to accomplish Pre-Post Processing for a DB Service APIs](/learn/how-tos/pre-post-processing-db-service-apis/)
+[How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)  
+[How to access REST APIs from Java Service](/learn/how-tos/accessing-rest-apis-java-service/)  
+[How to schedule a Java Service](/learn/how-tos/scheduling-java-service/)  
+[How to accomplish Pre-Post Processing for a DB Service APIs](/learn/how-tos/pre-post-processing-db-service-apis/)
