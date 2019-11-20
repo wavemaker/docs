@@ -130,6 +130,12 @@ authorTwitter: Sama****am
 Your blog content..
 ```
 
+## Adding Environment Variables
+
+Do not directly add secrets like passwords, API keys to the sourcecode. Instead add entries in the .env file in the website directory. The values to the keys are picked up from Amplify console per environment/branch. There is a sample .env.sample file with the list of environment variables that are currently in use. Copy all the keys from the .env.sample file to the newly created .env file and populate the keys with required values for local environment testing.
+
+Check the project [dotenv](https://github.com/motdotla/dotenv) for more details
+
 ## Editing Release Notes
 
 Add/update the following documents on releasing a new version.
