@@ -2,14 +2,19 @@
 title: "Accessing REST APIs from Java Service"
 id: ""
 ---
+---
 
-We will see how to access REST APIs using Java Service. The steps include:
+Learn how to access REST APIs using Java Service. 
 
-1. How to create a Java Service method to access a Rest Service
+The steps include:
+
+1. How to create a Java Service method to access a Rest Service.
 2. How the Java Service can invoke the Rest Service to get the response.
 
-The following files were imported into the Java Service:
+## Files Imported to Java Service 
 
+The following files were imported into the Java Service:
+```
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
@@ -28,9 +33,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import org.json.JSONObject;
+```
+
+## Java Service Method
 
 We will be using the following Java Service Method:
 
+```
 public ArrayList<String> restService(String origin, String destination) {
     	ArrayList<String> directionList = new ArrayList<String>();
     	try {
@@ -55,13 +64,13 @@ public ArrayList<String> restService(String origin, String destination) {
                  e.printStackTrace();}
          return directionList;
     }
+```
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vT_RIWG_2L-gQxlVC1A0ggTs_vVweTjUevfacyYwAj9nMs5qUuOAJV86Ujnk1s25LWQO8ZkttUqRomg/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
-Java Service Use Cases
+## See Also
 
-- [1\. How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)
-- [2\. How to implement forgot password feature using Java Service](/learn/how-tos/implementing-forgot-password-feature-using-java-service/)
-- [3\. How to access REST APIs from Java Service](/learn/how-tos/accessing-rest-apis-java-service/)
-- [4\. How to schedule a Java Service](/learn/how-tos/scheduling-java-service/)
-- [5\. How to accomplish Pre-Post Processing for a DB Service APIs](/learn/how-tos/pre-post-processing-db-service-apis/)
+[How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)  
+[How to implement forgot password feature using Java Service](/learn/how-tos/implementing-forgot-password-feature-using-java-service/)  
+[How to schedule a Java Service](/learn/how-tos/scheduling-java-service/)  
+[How to accomplish Pre-Post Processing for a DB Service APIs](/learn/how-tos/pre-post-processing-db-service-apis/)  
