@@ -19,13 +19,13 @@ This document will go through the steps in adding pre and post processing for ge
 
 ## Background
 
-When a database is imported into a WaveMaker app, it generates the source code with the ORM, Service Layer & REST APIs for all CRUD operations for each entity within the database. In addition to the CRUD APIs, it also generates the search (filter), count and export APIs. WaveMaker also understands the relations across the tables and generates the associated APIs as well.
+When a database is imported into a WaveMaker app, Java code with Spring based REST APIs for all CRUD operations on each database entity are generated. Generated APIs include endpoints to search(filter), get count of and export data. WaveMaker also understands the relations across the tables and generates the associated APIs as well.
 
 There are 3 layers in the generated source code:
 
 - **Layer 1 : REST Controller** responsible for transporting the data between client and server, authorization of APIs & marshalling and unmarshalling of model to JSON etc.
 - **Layer 2: Service Layer** \- responsible for validating the inputs and transaction management
-- **Layer 3: DAO Layer** - responsible for interacting with the underlying database
+- **Layer 3: DAO Layer** - responsible for interacting with the underlying database. This code uses Hibernate framework. 
 
 The diagram below depicts the Layered Architecture mentioned above:
 
