@@ -8,8 +8,8 @@ Learn how to schedule a Java Service to trigger at certain intervals.
 
 The steps include: 
 
-- How to use a Java Service to schedule a service to trigger within WaveMaker Apps.
-- The scheduler will be a spring scheduler which will schedule the java service created to trigger at certain intervals.
+- How to schedule a Java service and trigger it.
+- The scheduler will be a Spring scheduler which will schedule the java service and trigger it at certain intervals.
 
 ## Java Service Method 
 
