@@ -20,17 +20,6 @@ const users = [
     },
 ];
 
-const React = require('react');
-
-class MyPage extends React.Component {
-    render() {
-
-    }
-}
-
-MyPage.description = 'My Custom Description';
-module.exports = MyPage;
-
 require('dotenv').config();
 
 const siteConfig = {
@@ -52,15 +41,10 @@ const siteConfig = {
     // For no header links in the top nav bar -> headerLinks: [],
     headerLinks: [
         {languages: true},
-		{doc: 'documentation-reference', label: 'Docs '},		
+		{doc: 'documentation-reference', label: 'Docs '},
         {doc: 'app-development/widgets/widget-library', label: 'Widgets'},
-	//	{doc: 'installation/wavemaker-enterprise-setup-guide', label: 'Enterprise'},
-	//	{doc: 'tutorials', label: 'Tutorials'},		
-    //  {href: 'https://www.wavemakeronline.com/studio/10.1.2.7413/docs/index.html', label: 'API Docs'},
 		{doc: 'howtos-documents', label: 'How-to'},
 		{doc: 'wavemaker-release-notes', label: 'Releases'},
-    //  {blog: true, label: 'Team Blog'},
-    //     {href: 'https://github.com/wavemaker/docs', label: 'GitHub', external: true},
         {href: 'https://www.wavemakeronline.com/login/login', label: 'Login', external: true},
 		{href: 'https://www.wavemaker.com/get-started/', label: 'Start free trial', external: true}
     ],

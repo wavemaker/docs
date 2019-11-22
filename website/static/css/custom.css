@@ -326,6 +326,132 @@ h3 {
     color: #fff;
 }
 
+/* start - 404 page styles */
+
+.wrapall, .boxed-layout {
+    background-color: #ffffff;
+}
+
+.wrapall {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    min-width: 1200px;
+}
+
+#transparentimage {
+    position: relative;
+    padding: 90px 0 0 0;
+    background-position: center center;
+    background-size: cover;
+}
+
+#transparentimage {
+    padding: 80px 0 0 0;
+}
+
+#transparentimage {
+    background-image: url(../img/Waves-White-header.png),linear-gradient(108deg, #13547a, #80d0c7)!important;
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 150px 0px 50px 0px;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container .column, .container .columns {
+    float: left;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container .sixteen.columns {
+    width: 1160px;
+}
+
+#transparentimage h1, #transparentimage .title-h1 {
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    padding: 140px 0;
+    margin: 0;
+    font-size: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+#fullimagecenter h1, #transparentimage h1, #fullimagecenter .title-h1, #transparentimage .title-h1 {
+    font: 600 50px Raleway, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 1.9px;
+    text-align: center;
+}
+
+#transparentimage h1 {
+    padding: 0px;
+    text-align: center;
+}
+
+.blog_title_bottomwave {
+    background-image: url(../img/Wave_featuredcontent.png),linear-gradient(50deg, #13547a, #80d0c7)!important;
+    background-position: top;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Negative margin on Page Wrap */
+#page-wrap{
+    position: relative;
+    clear: both;
+    float: none;
+}
+
+#page-wrap {
+}
+
+#content{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.page-404 .entry{
+    text-align: center;
+    padding: 40px 0 80px 0;
+}
+
+.page-404 h2{
+    font-size: 100px;
+    color: #666666;
+    font-weight: 700;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    border: 10px solid #999999;
+    color: #999999;
+    border-radius: 50%;
+    margin: 0 auto 60px auto;
+}
+
+.page-404 h3{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+/* End - 404 page styles */
 
 @media only screen and (min-width: 320px) and (max-width: 736px) {
 	.row {
