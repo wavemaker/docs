@@ -32,6 +32,7 @@ class FourOhFour extends React.Component {
                         </div>
                     </div>
                 </div>
+                <script dangerouslySetInnerHTML={{__html: 'reportIssue("404")'}}></script>
             </div>
         );
     }

@@ -93,7 +93,10 @@ const siteConfig = {
     },
 
     // Add custom scripts here that would be placed in <script> tags.
-    scripts: ['https://buttons.github.io/buttons.js'],
+    scripts: [
+        'https://buttons.github.io/buttons.js',
+        '/learn/js/error-reporting.js'
+    ],
 
     // Add custom css.
     stylesheets: ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', 'https://fonts.googleapis.com/css?family=Lato&display=swap'],
