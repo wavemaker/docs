@@ -46,3 +46,14 @@ The instructions are same for all versions of Tomcat.
 4. Navigate to **War file to deploy** section and choose the war file that you want to deploy and click on Deploy button.
 5. Once Application war has been deployed the application name will be listed in the applications list and it is in **Start** state by default
 6. Click on the application name link to access the Deployed application.
+
+### Configure Tomcat to turn off compression
+
+During the build process WaveMaker already generates compressed artifacts for static content. Tomcat's compression should be turned off in the server.xml, otherwise the Tomcat server will compress the files again leading to errors when the deployed WaveMaker app is loaded in the browsers. 
+
+Here is how compression is turned off in server.xml
+
+1. Open server.xml for editing.
+2. Locate ```Connector``` tag that contains ```compression``` attribute.
+3. Remove the attributes ```compression, compressionMinSize, compressableMimeType``` from the ```Connector``` tag.
+4. Save the changes and restart Tomcat server.
