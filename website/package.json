@@ -13,6 +13,7 @@
     "dotenv": "^8.2.0"
   },
   "dependencies": {
-    "remarkable-admonitions": "^0.2.1"
+    "remarkable-admonitions": "^0.2.1",
+    "update": "^0.7.4"
   }
 }
