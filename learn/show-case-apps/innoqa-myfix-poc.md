@@ -13,30 +13,21 @@ This app is designed for administrators who can monitor Professionals, Customers
 
 **Flow diagram**
 
-[![](https://www.wavemaker.com../assets/FlowDiagram-Web-e1562335385816.png)](https://www.wavemaker.com../assets/FlowDiagram-Web-e1562335385816.png)
+[![](/learn/assets/FlowDiagram-Web-e1562335385816.png)](/learn/assets/FlowDiagram-Web-e1562335385816.png)
 
 ## Pages of Admin Web App
 
-In this Page
-
-1. [My Fix Admin Web App](#admin-app)
-    - [Admin App Screenshots](#admin-app-pages)
-2. [My Fix Customer  Mobile App](#customer-app)
-    - [Customer App Screenshots](#customer-app-pages)
-3. [My Fix Professional Mobile App](#professional-app)
-    - [Professional's App Screenshots](#professional-app-pages)
-
 **Login Page**
 
-[![](https://www.wavemaker.com../assets/Login-Page-show-case-app.png)](https://www.wavemaker.com../assets/Login-Page-show-case-app.png)**Dashboard Page**
+[![](/learn/assets/Login-Page-show-case-app.png)](/learn/assets/Login-Page-show-case-app.png)**Dashboard Page**
 
-[![](https://www.wavemaker.com../assets/Dashboard-Page.png)](https://www.wavemaker.com../assets/Dashboard-Page.png)**Professionals Page**
+[![](/learn/assets/Dashboard-Page.png)](/learn/assets/Dashboard-Page.png)**Professionals Page**
 
-[![](https://www.wavemaker.com../assets/Professionals-Page.png)](https://www.wavemaker.com../assets/Professionals-Page.png)**Customers Page**
+[![](/learn/assets/Professionals-Page.png)](/learn/assets/Professionals-Page.png)**Customers Page**
 
-[![](https://www.wavemaker.com../assets/Customers-Page.png)](https://www.wavemaker.com../assets/Customers-Page.png)**Appointments Page **
+[![](/learn/assets/Customers-Page.png)](/learn/assets/Customers-Page.png)**Appointments Page **
 
-[![](https://www.wavemaker.com../assets/Appointments-Page.png)](https://www.wavemaker.com../assets/Appointments-Page.png)
+[![](/learn/assets/Appointments-Page.png)](/learn/assets/Appointments-Page.png)
 
 ## My Fix Customer Mobile App
 
@@ -44,7 +35,7 @@ This app is designed for general customers who can look for professionals for a 
 
 ## Flow diagram
 
-[![](https://www.wavemaker.com../assets/Mobile-App.png)](https://www.wavemaker.com../assets/Mobile-App.png)
+[![](/learn/assets/Mobile-App.png)](/learn/assets/Mobile-App.png)
 
 ## Pages of My Fix Customer Mobile App
 
@@ -54,6 +45,6 @@ This app is designed for Professionals (service providers) who can check for pen
 
 ## Flow diagram
 
-[![](https://www.wavemaker.com../assets/Professional-Fix_FlowDiagram.png)](https://www.wavemaker.com../assets/Professional-Fix_FlowDiagram.png)
+[![](/learn/assets/Professional-Fix_FlowDiagram.png)](/learn/assets/Professional-Fix_FlowDiagram.png)
 
 ## Pages of My Fix Professional Mobile App

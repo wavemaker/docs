@@ -9,7 +9,9 @@ Once you have [Launched](/learn/installation/wme-setup-guide-launch-initialize/#
 
 In this document, we will explain how to add/increase the developer and deployment capacity of your WME setup.By default, WME installation allows for limited capacity for app development in WaveMaker Studio and app deployments onto WaveMaker Cloud. You can increase this capacity by adding Studio and Cloud instances thus scaling your WME.
 
-**Note**: In this document, when we say App Deployment we are referring to deployment to WaveMaker Cloud.
+::: note
+In this document, when we say App Deployment we are referring to deployment to WaveMaker Cloud.
+:::
 
 ## Increasing Development & Deployment Capacity
 
@@ -22,7 +24,7 @@ Adding an instance to either Studio or Cloud aids in the scalability of the VM i
 
 The actual app development and deployment support are further determined by your license terms. This means that, even if your infrastructure has the capacity, the apps that can be developed and deployed is restricted by your license terms. Similarly, even though your license terms allow, the apps that can be developed and deployed are limited by the infrastructure capacity.
 
-To add instances, you must first launch an additional machines (VM/EC2 instances) by following steps mentioned  [Launching Instances](https://www.wavemaker.com/learn/installation/wme-setup-guide-launch-initialize/) in page.
+To add instances, you must first launch an additional machines (VM/EC2 instances) by following steps mentioned  [Launching Instances](/learn/installation/wme-setup-guide-launch-initialize/) in page.
 
 Increasing Developer Capacity Adding Developer Workspace instances increases Development Capacity and allows more developers to use Studio subject to license.
 
@@ -59,14 +61,3 @@ Cloud Instances for all three phases can be added to increase Deployment capacit
 
 Once the instance is added, it will be in CONFIGURING state and the instance will be setup in the background. The instance will be ready for use, when the state changes to STARTED. Follow the same steps for setting up the other Phases. Refer here to learn more on how to use the [Release Management](/learn/app-development/deployment/release-management/) feature.
 
-Step 7: Maintaining WME
-
-Contents
-
-- [1\. Getting Started](/learn/installation/wavemaker-enterprise-setup-guide/)
-- [2\. Launching Instances](https://www.wavemaker.com/learn/installation/wme-setup-guide-launch-initialize/)
-- [3\. Setting Up WME](/learn/installation/wme-setup-guide-access-setting/)
-- [4\. Configuring WME](/learn/installation/wme-setup-guide-configuration/)
-- [5\. Adding Capacit](/learn/installation/wme-setup-guide-adding-capacity/)y
-- [6\. Maintaining WME](/learn/installation/wme-setup-guide-maintenance/)
-- [7\. Upgrading WME](/learn/installation/wme-setup-guide-upgrading/)

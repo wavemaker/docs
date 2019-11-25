@@ -22,7 +22,7 @@ _Create a department page and display employees of each department when you expa
     - Table/Entity → Department → A variable will be created automatically, for example, HrdbDepartmentData.
     - Set Records per request, Update data on input change, Request data on page load, and click **Next**.  
 
-  [![](https://www.wavemaker.com../assets/DataTableConfig.png)](https://www.wavemaker.com../assets/DataTableConfig.png)
+  [![](/learn/assets/DataTableConfig.png)](/learn/assets/DataTableConfig.png)
 
 - In the next window, choose **ReadOnly** function, and select **Simple View Only**.
 - Choose pagination; for example, basic.
@@ -43,7 +43,7 @@ You created a department page which displays the department table. Next, you cre
     - Type → integer.
     - Save.
 
-[![](https://www.wavemaker.com../assets/PageParam-Partial.png)](https://www.wavemaker.com../assets/PageParam-Partial.png)
+[![](/learn/assets/PageParam-Partial.png)](/learn/assets/PageParam-Partial.png)
 
 - In the partial, drag and drop the **List **Widget.  
 - Configure the List widget to bind the data source to the **Employee **table.
@@ -59,13 +59,13 @@ You created a department page which displays the department table. Next, you cre
     - Name Widget → Source → username (select from the dropdown)
     - Click **Done**.
 
-[![](https://www.wavemaker.com../assets/List-configuration.png)](https://www.wavemaker.com../assets/List-configuration.png)
+[![](/learn/assets/List-configuration.png)](/learn/assets/List-configuration.png)
 
 You created a partial which contains employee information and page params.
 
 Now, set filter criteria in the variables for _HrdbEmployeeData_ to _deptId_ **Is equal to** _bind.pageParams.deptID, _as shown in the image below:
 
-[![](https://www.wavemaker.com../assets/employeeparambindingdeptid.png)](https://www.wavemaker.com../assets/employeeparambindingdeptid.png)In the department page, you bind the Employee (partial) and Page Params and set the row expansion property.
+[![](/learn/assets/employeeparambindingdeptid.png)](/learn/assets/employeeparambindingdeptid.png)In the department page, you bind the Employee (partial) and Page Params and set the row expansion property.
 
 ## Configure row expansion property
 
@@ -73,7 +73,7 @@ Now, set filter criteria in the variables for _HrdbEmployeeData_ to _deptId_
 - Navigate to the Row Detail tab.
 - Enable Row Expansion property.
 
-[![](https://www.wavemaker.com../assets/RowExpAdvancedSettings.png)](https://www.wavemaker.com../assets/RowExpAdvancedSettings.png)
+[![](/learn/assets/RowExpAdvancedSettings.png)](/learn/assets/RowExpAdvancedSettings.png)
 
 - Content → Employee.
 - Partial Params → deptID → click on the **Bind Property** icon.
@@ -81,7 +81,7 @@ Now, set filter criteria in the variables for _HrdbEmployeeData_ to _deptId_
 
 deptID fills with: bind:Widgets.DepartmentTable1.selecteditem.deptId
 
-   [![](https://www.wavemaker.com../assets/Bind_tablerow_value_RowExp.png)](https://www.wavemaker.com../assets/Bind_tablerow_value_RowExp.png)
+   [![](/learn/assets/Bind_tablerow_value_RowExp.png)](/learn/assets/Bind_tablerow_value_RowExp.png)
 
 1. - Click **Save**.  
 

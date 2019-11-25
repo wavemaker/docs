@@ -6,16 +6,16 @@ id: ""
 The conditional style settings allow you to bind expressions to the style property. The conditional property applies to the widgets specified below, and it is similar to the Conditional Class property.
 
 **Syntax:**
-
+```
 {‘CSSpropertyName’:  ‘valueExpression’}
-
+```
 **Example:**
-
+```
 {‘color’: ‘red’}
 {‘color’: Widgets.colorPicker1.datavalue}
 {‘background’: Page.Variables.MyVariable.dataSet.status === ‘pending’ ? ‘yellow’: ‘green’}
 {‘color’: ‘red’, ‘font-size’: ‘30px’, ‘background’: Page.Variables.MyVariable.dataSet.status === ‘pending’? ‘blue’: ‘green’}
-
+```
 The property adds to the widget that has conditional class property.
 
 - Anchor
@@ -27,11 +27,12 @@ The property adds to the widget that has conditional class property.
 - Container
 - Panel
 - Tile
-th editable options being inline or dialog-based. Data Table provides a tabular view for database Entities or API response data.
 
-[#docs](/learn/data-table/)Database Enhancements**Working with databases**:
+The editable options being inline or dialog-based. Data Table provides a tabular view for database Entities or API response data.[#docs](/learn/data-table/)
 
-- Database Import has been renamed to **Connect to Database, **to clearly indicate that the database schema is imported into WaveMaker applications by directly connecting to the database. [#docs](/learn/db-services/)
+Database Enhancements **Working with databases**:
+
+- Database Import has been renamed to **Connect to Database,** to clearly indicate that the database schema is imported into WaveMaker applications by directly connecting to the database. [#docs](/learn/db-services/)
 - **Create Database** dialog now includes option to import of a script file.
 - Database columns can be configured to be User defined, Server defined and DB defined types
     - User defined properties are passed on from the frontend layer to the backend services through API.
@@ -50,7 +51,7 @@ The Googlemaps Prefab can now be used to depict three types of maps:
 Usability Enhancements
 
 1. **Terminology changes:** Following are the changes related to widgets and property naming conventions
-    - _Live_ or _Data Grid_ renamed to **Data Table **
+    - _Live_ or _Data Grid_ renamed to **Data Table**
     - _LiveList_ widget has been renamed to **List**
     - Card based templates offered by the LiveList have been moved out to the new widget **Cards**
     - **Chart** widget properties have been moved to _Advanced Settings_
@@ -113,7 +114,7 @@ Technology Stack for WaveMaker 8.2.3
 6. Why am I getting "HTTP 404 Error"?
     - Due to caching problems, some current 7.5 users might get a _HTTP 404 Error_. In such cases clearing the cache would work or change the url _" /wavemaker/app/index.html"_ to _" /wavemaker/studio/index.html#projects/"_
 7. Where can I find the release notes?
-    - WaveMaker Online release notes are same as that for Desktop version and can be found at http://dev.wavemaker.com/learn/docs/Studio/release-notes/. **Note: Desktop release 7.7 includes the enhancements for both 7.7.0 and 7.7.1 of WaveMaker Online release.**
+    - WaveMaker Online release notes are same as that for Desktop version and can be found at http://www.wavemaker.com/learn/docs/Studio/release-notes/. **Note: Desktop release 7.7 includes the enhancements for both 7.7.0 and 7.7.1 of WaveMaker Online release.**
 8. Why are my databases from 7.5/7.6 not working in 7.7?
     - If your existing applications use database with date/time/timestamp related data fields, these applications need the database to be re-imported to avail of the new features.
 9. Why import of SQL Server/Oracle databases not working?

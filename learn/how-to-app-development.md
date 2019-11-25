@@ -58,7 +58,7 @@ How tos: Working Solutions for WaveMaker Features App Development
 *   [How to build a Query with dynamic where clause](/learn/how-tos/queries-dynamic-clause/)
 *   [How to connect to Azure SQL Server](/learn/how-tos/connect-azure-sql-server/)
 *   [How to download JDBC driver jar for SQL server](/learn/app-development/services/database-services/download-jdbc-driver-jar/)
-*   [How to fetch more than the default number(100) of records from Database ?](https://www.wavemaker.com/learn/how-tos/fetch-default-number100-records-database/)
+*   [How to fetch more than the default number(100) of records from Database ?](/learn/how-tos/fetch-default-number100-records-database/)
 
 ## Web Services
 ---

@@ -15,7 +15,7 @@ To learn about page life cycle and architecture, see [Page Concepts](/learn/app-
 ## Creating a Page
 Navigate to the pages section to create a page. However, by default, the **Main Page** generates automatically.  
 
-![Pages introduction in WaveMaker](../../assets/pages_introduction.png)  
+![Pages introduction in WaveMaker](/learn/assets/pages_introduction.png)
 
 In this section, you will learn:
 

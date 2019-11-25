@@ -16,7 +16,7 @@ Navigate to the Databases section and create your own database. For more inform
 - Step-1: In the database designer, add a one-to-many relation for the parent and child tables.
 - Step-2: Enable the **Cascade Option** for the one-to-many relation as shown in the image below. For more information, see [Working with Database Schema](/learn/app-development/services/database-services/working-database-schema/).
 
-[![](https://www.wavemaker.com../assets/cascade-options-1.png)](https://www.wavemaker.com../assets/cascade-options-1.png)
+[![](/learn/assets/cascade-options-1.png)](/learn/assets/cascade-options-1.png)
 
 ## Page Design
 
@@ -25,26 +25,34 @@ Navigate to the Databases section and create your own database. For more inform
 - Step-5: Drag and drop a **Button** widget on the Parent form (created in step-3) and name the button as "Add Child Items".
 - Step-6: Go to the **Events** tab of the **Add Child Items** button, and set the **On Click** property to open to the **Dialogue Design** (of step-4).
 
-[![](https://www.wavemaker.com../assets/EventsDialog-e1559301180845.png)](https://www.wavemaker.com../assets/EventsDialog.png)
+[![](/learn/assets/EventsDialog-e1559301180845.png)](/learn/assets/EventsDialog.png)
 
 ## Model Variable Settings
 
 - Step-7: Create a Model Variable of the type Child entity and set the flag to the **isList** option.
 - Step-8: In the **Design Dialog**, drag and drop a **Form** widget and bind it to the Model Variable (from step-7).
 
-Note: To add multiple Child objects in the Model Variable, push the data into the Model Variable. To achieve this, select the Child form (from the Design Dialog) and navigate to the Events tab and choose **Javascript** for the **On Before Submit** event and add the below-specified code snippet:
-
- Page.dialog1\_childForm1Beforesubmit = function($event, widget, $data)
- { Page.Variables.child.addItem($data); 
-   Page.Widgets.dialog1.close(); };
-
-[![](https://www.wavemaker.com../assets/On-Before-Submit.png)](https://www.wavemaker.com../assets/On-Before-Submit.png)
+:::note
+To add multiple Child objects in the Model Variable, push the data into the Model Variable. To achieve this, select the Child form (from the Design Dialog) and navigate to the Events tab and choose **Javascript** for the **On Before Submit** event and add the below-specified code snippet:
+:::
+```
+ Page.dialog1\_childForm1Beforesubmit = function($event, widget, $data) {
+    Page.Variables.child.addItem($data);
+    Page.Widgets.dialog1.close();
+ };
+```
+[![](/learn/assets/On-Before-Submit.png)](/learn/assets/On-Before-Submit.png)
 
 ## Setting Event Properties
 
 - Step-9: For the Parent form (Live form), navigate to the Events tab and select **JavaScript** as an operation for the **onBeforeServiceCall** event. Add the below-specified code-snippet in the function generated in the Script tab of the respective page:
+```
+ $scope.ParentLiveForm1Beforeservicecall = function($event, $operation, $data, options) {
+    $data.childs = Page.Variables.child.dataSet;
+ };
+```
+**[![](/learn/assets/On-Before-Service-Call.png)](/learn/assets/On-Before-Service-Call.png)
 
- $scope.ParentLiveForm1Beforeservicecall = function($event, $operation, $data, options)
- { $data.childs = Page.Variables.child.dataSet; };
-
-**[![](https://www.wavemaker.com../assets/On-Before-Service-Call.png)](https://www.wavemaker.com../assets/On-Before-Service-Call.png)Note:** Ensure that the naming convention is the same as the related Child entity mentioned in its Parent entity. To verify the name, see .java file from the File Explorer.
+:::note
+Ensure that the naming convention is the same as the related Child entity mentioned in its Parent entity. To verify the name, see .java file from the File Explorer.
+:::

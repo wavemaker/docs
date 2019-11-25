@@ -28,7 +28,7 @@ The following widgets are rendered using the Native UI Controls:
 
 ## Device Specific Widgets
 
-[![](https://www.wavemaker.com../assets/mobile_native_widgets.png)](https://www.wavemaker.com../assets/mobile_native_widgets.png)
+[![](/learn/assets/mobile_native_widgets.png)](/learn/assets/mobile_native_widgets.png)
 
 **Device Widgets** allow your Mobile App to take advantage of Device Functionality. Two such widgets are available:
 

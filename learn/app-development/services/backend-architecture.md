@@ -12,7 +12,7 @@ Get an overview of backend services in WaveMaker and see how it works.
 
 To support micro-services architecture, WaveMaker uses an API-driven app development approach wherein REST APIs are generated automatically for the application. Every backend service such as Database Entity, Queries or Custom Java code, that is integrated into an application generates REST APIs. Some of these APIs are available for further customization based on the app integration needs.
 
-[![](https://pm.wavemaker.com../../assets/services_concept.png)](/learn/assets/services_concept.png) ORM Layer is auto-generated from DB schema using Hibernate & JPA. Services Layer is auto-generated using Spring. Custom queries, procedures, and Java Services can be used to extend the app functionality. For all these services, REST API is auto-generated using Spring-REST/Swagger. Variables interact with REST API layer to access the services.
+[![](/learn/assets/services_concept.png)](/learn/assets/services_concept.png) ORM Layer is auto-generated from DB schema using Hibernate & JPA. Services Layer is auto-generated using Spring. Custom queries, procedures, and Java Services can be used to extend the app functionality. For all these services, REST API is auto-generated using Spring-REST/Swagger. Variables interact with REST API layer to access the services.
 
 ## Accessing Data - Variables
 

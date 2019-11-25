@@ -18,7 +18,7 @@ These actions are restricted to [Schemas in Editable mode](/learn/app-developmen
     - For tables created, you have the option of assigning it to any Schema which has been imported into the app. This feature is not available for MySQL databases.
 - Click **Add Column** to add columns to the table. For each column, you can specify
     - the name of the column,
-    - **SQL and Java Types** – It is advisable to make changes to Java Types rather than SQL Types unless you want the changes to be reflected in the database, in which case you need to export the database. You can review the type conversion from Java to SQL type from this document: [Java Types vs SQL Data Types](http://pm.wavemaker.com../../assets/JavaTypesVsDBTypes-Sheet.pdf)
+    - **SQL and Java Types** – It is advisable to make changes to Java Types rather than SQL Types unless you want the changes to be reflected in the database, in which case you need to export the database. You can review the type conversion from Java to SQL type from this document: [Java Types vs SQL Data Types](/learn/assets/JavaTypesVsDBTypes-Sheet.pdf)
     - precision and scale for number type; length for string type;
     - You can also choose to hide the column using **Hidden** option. These columns will not be available for user manipulation. You can set the values of these hidden columns during insert/update operations:
         - by setting the Value from the Data Value tab, or
