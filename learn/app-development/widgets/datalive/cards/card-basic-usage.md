@@ -140,7 +140,7 @@ You can add widgets from the canvas, change the properties at the card and at wi
 
 Click on Preview button to test run the app.
 
-[![](https://www.wavemaker.com../../../../assets/cards_basic_run.png)](https://www.wavemaker.com../../../../assets/cards_basic_run.png)
+[![](/learn/assets/cards_basic_run.png)](/learn/assets/cards_basic_run.png)
 
 
 ## See Also

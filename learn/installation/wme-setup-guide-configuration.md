@@ -34,7 +34,9 @@ The terms of License include:
 3. The maximum number of developers that can collaborate on the WME Studio platform
 4. The maximum number of nodes or apps that can be deployed to the WME Cloud
 
-**NOTE**: To avail the full benefits of the License in terms of Developers and Nodes (Apps), instances need to be added appropriately. See [Adding Capacity](/learn/installation/wme-setup-guide-adding-capacity/) for more details.
+::: note
+To avail the full benefits of the License in terms of Developers and Nodes (Apps), instances need to be added appropriately. See [Adding Capacity](/learn/installation/wme-setup-guide-adding-capacity/) for more details.
+:::
 
 ## Adding External VCS
 
@@ -49,19 +51,7 @@ During the course of app development, tracking code changes and synchronizing th
 5. Check the **Primary** box, if you want the new VCS server to be the default. **Note**: On selecting the Primary checkbox, the new VCS server becomes the default for all the projects that you create subsequently in Studio.
 6. Click **Test and Add**. The new VCS server is now configured.
 
-**Note**: After you create a new VCS server and make it Primary if you wish to edit the projects from the old VCS server when you sync/push the changes they will be made to the old VCS server and not the new VCS server. Since the project references are to the old server, there is no relation with the new VCS server.
+::: note
+After you create a new VCS server and make it Primary if you wish to edit the projects from the old VCS server when you sync/push the changes they will be made to the old VCS server and not the new VCS server. Since the project references are to the old server, there is no relation with the new VCS server.
+:::
 
-Step 5: Adding Capacity to WME from Launchpad
-
-Contents
-
-- [1\. Getting Started](/learn/installation/wavemaker-enterprise-setup-guide/)
-- [2\. Launching Instances](https://www.wavemaker.com/learn/installation/wme-setup-guide-launch-initialize/)
-- [3\. Setting Up WME](/learn/installation/wme-setup-guide-access-setting/)
-- [4\. Configuring WME](#)
-    - [i. Adding Users](#adding-users)
-    - [ii. Uploading License](#uploading-license)
-    - [iii. External VCS Configuration](#adding-external-vcs)
-- [5\. Adding Capacity](/learn/installation/wme-setup-guide-adding-capacity/)
-- [6\. Maintaining WME](/learn/installation/wme-setup-guide-maintenance/)
-- [7\. Upgrading WME](/learn/installation/wme-setup-guide-upgrading/)

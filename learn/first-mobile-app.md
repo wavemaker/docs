@@ -12,8 +12,8 @@ This section will give an overview of the steps to create a simple hybrid mobile
 
 ## Steps in Creating Mobile App
 
-1. Click on the **Create Application** icon on the _Project Listings_ page of WaveMaker. Select **Hybrid Mobile App** as the type of project to create. [![Project-Type](/learn/assets/Project-Type.png)](/learn/docs/wp-content/uploads/Project-Type.png)
-2. Enter the **name** of the application, set a **provatar** and give a brief **description** of the app. [![MobApp-name](/learn/assets/MobApp-name.png)](/learn/assets/MobApp-name.png)
+1. Click on the **Create Application** icon on the _Project Listings_ page of WaveMaker. Select **Hybrid Mobile App** as the type of project to create. [![Project-Type](/learn/assets/project-type.png)](/learn/assets/Project-Type.png)
+2. Enter the **name** of the application, set a **provatar** and give a brief **description** of the app. [![MobApp-name](/learn/assets/MobApp-name.png)](/learn/assets/mobApp-name.png)
 3. Set the screen size to your favorite mobile device or leave it to default
 4. Drag and drop **Segmented Content Layout** [![MobApp-layout1](/learn/assets/MobApp-layout1.png)](/learn/assets/MobApp-layout1.png)
 5. Name two **titles** as **Camera** and **Contact**. Delete the unwanted segment content [![MobApp-layout2](/learn/assets/MobApp-layout2.png)](/learn/assets/MobApp-layout2.png)
@@ -43,8 +43,3 @@ This section will give an overview of the steps to create a simple hybrid mobile
     12. Select the contacts tab and see all your contacts listed.
 9. You have thus created, built and installed a simple mobile app and seen the usage of the device widget and variables.
 
-[Mobile App Tutorials](/learn/tutorials/#tab-mob-tutorials)
-
-- [1\. First Mobile App](/learn/hybrid-mobile/first-mobile-app/)
-- [2\. Mobile App Integrated with Database](/learn/hybrid-mobile/mobile-app-integrated-database/)
-- [3\. Mobile App using Bar Code Scanner](/learn/hybrid-mobile/mobile-app-using-bar-code/)

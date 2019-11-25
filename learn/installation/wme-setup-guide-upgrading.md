@@ -9,7 +9,9 @@ This document provides the instructions to install the WME setup to upgrade the 
 
 The following table is the compatibility matrix for upgrading the WME:
 
-**Note**: The following list provides the currently supported versions for WME patching. Kindly contact our WaveMaker support team if you did not find the right version.
+::: note
+The following list provides the currently supported versions for WME patching. Kindly contact our WaveMaker support team if you did not find the right version.
+:::
 
 | **WME Patch release** | **Supported WME versions** |
 | --- | --- |
@@ -25,7 +27,9 @@ Following are the patch files you will need in order to install the patch on WM
 - WME base ova or WME base AMI if you want to launch instances with WaveMaker base image formats.
 - License Key (.zip format) issued by WaveMaker.
 
-**Note**: Links for WME Patch and the corresponding checksum (sha1sum) files will be provided to you by the WaveMaker team through an email. You need to download the files before starting the installation.
+::: note
+Links for WME Patch and the corresponding checksum (sha1sum) files will be provided to you by the WaveMaker team through an email. You need to download the files before starting the installation.
+:::
 
 ## Prerequisites
 
@@ -82,7 +86,7 @@ The current version(10.0.3) of WME patch, requires Ubuntu 16.04.  So there are 
 1. **Upgrade within the same instances.**
     - Recommended for setups with internet availability. Suits for samll scale setups(zero or one Developer workspace and App Deployments instance)
     - Upgrade will happen with in current machines. No new hardware required.
-    - Go to platform machine using [above steps](https://www.wavemaker.com/learn/installation/wme-setup-guide-upgrading/#patch-access) and extract the patch (Debian package) using the following command. Generally it may takes 3 to 5 mins.
+    - Go to platform machine using [above steps](/learn/installation/wme-setup-guide-upgrading/#patch-access) and extract the patch (Debian package) using the following command. Generally it may takes 3 to 5 mins.
         - _dpkg -i <patch-file-name.deb>_
     - You will be seeing a message with a command to start the WaveMaker patch installation. Run the command. This process may take 30-40 mins.
         - _bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh_
@@ -104,13 +108,13 @@ The current version(10.0.3) of WME patch, requires Ubuntu 16.04.  So there are 
         - Create data tar with below command.
             - _tar -cvfp wm-data.tar /wm-data_
                 
-        - Copy wm-data.tar to your local machine using appraoch mentioned [above](https://www.wavemaker.com/learn/installation/wme-setup-guide-upgrading/#download-copy)
-    - Launch another fresh machine as prescribed in the [pre-requisites](https://www.wavemaker.com/learn/installation/wavemaker-enterprise-setup-guide/#prerequisites-wme). You can lunch instances from WaveMaker base formats as mentioned in the  [Launching Instances](https://www.wavemaker.com/learn/installation/wme-setup-guide-launch-initialize/) section. Make sure the new machine has same IP as old machine.
-    - Download and Copy WME patch file to Platform machine using [above steps](https://www.wavemaker.com/learn/installation/wme-setup-guide-upgrading/#download-copy)
-    - Copy wm-data.tar from your local machine to platform machine. Go to platform machine using [above steps](https://www.wavemaker.com/learn/installation/wme-setup-guide-upgrading/#patch-access) and extract it to /wm-data.
+        - Copy wm-data.tar to your local machine using appraoch mentioned [above](/learn/installation/wme-setup-guide-upgrading/#download-copy)
+    - Launch another fresh machine as prescribed in the [pre-requisites](/learn/installation/wavemaker-enterprise-setup-guide/#prerequisites-wme). You can lunch instances from WaveMaker base formats as mentioned in the  [Launching Instances](/learn/installation/wme-setup-guide-launch-initialize/) section. Make sure the new machine has same IP as old machine.
+    - Download and Copy WME patch file to Platform machine using [above steps](/learn/installation/wme-setup-guide-upgrading/#download-copy)
+    - Copy wm-data.tar from your local machine to platform machine. Go to platform machine using [above steps](/learn/installation/wme-setup-guide-upgrading/#patch-access) and extract it to /wm-data.
         - mkdir -p  /wm-data
         - _tar -xvfp wm-data.tar /wm-data_
-    - Go to platform machine using [above steps](https://www.wavemaker.com/learn/installation/wme-setup-guide-upgrading/#patch-access) and extract the patch (Debian package) using the following command. Generally it may takes 3 to 5 mins.
+    - Go to platform machine using [above steps](/learn/installation/wme-setup-guide-upgrading/#patch-access) and extract the patch (Debian package) using the following command. Generally it may takes 3 to 5 mins.
         - _dpkg -i <patch-file-name.deb>_
     - You will be seeing a message with a command to start the WaveMaker patch installation. Run the command. This process may take 30-40 mins.
         - _bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh_
@@ -130,11 +134,11 @@ The current version(10.0.3) of WME patch, requires Ubuntu 16.04.  So there are 
         - Un mount wm-data volume.
             - _umount /wm-data_
         - Create snapshot of /wm-data for backup, make sure to note _snapshot-Id_ in your Cloud Provider Console(AWS console /Azure Protal/GCP portal etc)
-    - Launch another fresh machine as prescribed in the [pre-requisites](https://www.wavemaker.com/learn/installation/wavemaker-enterprise-setup-guide/#prerequisites-wme). You can lunch instnaces from WaveMaker base formats as mentioned in the  [Launching Instances](https://www.wavemaker.com/learn/installation/wme-setup-guide-launch-initialize/) section. Make sure the new machine has same IP as Old machine and with wm-data volume.
+    - Launch another fresh machine as prescribed in the [pre-requisites](/learn/installation/wavemaker-enterprise-setup-guide/#prerequisites-wme). You can lunch instnaces from WaveMaker base formats as mentioned in the  [Launching Instances](/learn/installation/wme-setup-guide-launch-initialize/) section. Make sure the new machine has same IP as Old machine and with wm-data volume.
         -   Add Storage with three volumes. root volume (/), config volume(/wm-config), data volume(/wm-data) .
         - Provide snapshot\_id of old wm-data volume while adding storage.
-    - Download and Copy WME patch file to Platform machine using [above steps](https://www.wavemaker.com/learn/installation/wme-setup-guide-upgrading/#download-copy).
-    - Go to platform machine using [above steps](https://www.wavemaker.com/learn/installation/wme-setup-guide-upgrading/#patch-access)
+    - Download and Copy WME patch file to Platform machine using [above steps](/learn/installation/wme-setup-guide-upgrading/#download-copy).
+    - Go to platform machine using [above steps](/learn/installation/wme-setup-guide-upgrading/#patch-access)
         - List disks and format them.
             - lsblk
             - mkfs.ext4 <disk1>
@@ -143,7 +147,7 @@ The current version(10.0.3) of WME patch, requires Ubuntu 16.04.  So there are 
             - mkdir -p /wm-data mkdir -p /wm-runtime mount <disk1> /wm-data   (disk created from old snapshot\_id) mount <disk2> /wm-runtime
             - Add below entries in /etc/fstab file (Note: Make sure not to have duplicate entries with same device names). To prserver these setting after reboot.
                 - <disk1> /wm-data ext4 defaults,nofail 0 2 <disk2> /wm-runtime ext4 defaults,nofail 0 2
-    - Go to platform machine using [above steps](https://www.wavemaker.com/learn/installation/wme-setup-guide-upgrading/#patch-access) and extract the patch (Debian package) using the following command. Generally it may takes 3 to 5 mins.
+    - Go to platform machine using [above steps](/learn/installation/wme-setup-guide-upgrading/#patch-access) and extract the patch (Debian package) using the following command. Generally it may takes 3 to 5 mins.
         - _dpkg -i <patch-file-name.deb>_
     - You will be seeing a message with a command to start the WaveMaker patch installation. Run the command. This process may take 30-40 mins.
         - _bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh_
@@ -159,18 +163,3 @@ In case you encounter any issues while applying patch, download and send the log
 
 [![](/learn/assets/WME_trouble.png)](/learn/assets/WME_trouble.png)
 
-Contents
-
-- [1\. Getting Started](/learn/installation/wavemaker-enterprise-setup-guide/)
-- [2\. Launching Instances](https://www.wavemaker.com/learn/installation/wme-setup-guide-launch-initialize/)
-- 3. [Setting Up WME](https://www.wavemaker.com/learn/installation/wme-setup-guide-access-setting/)
-- [4\. Configuring WME](/learn/installation/wme-setup-guide-configuration/)
-- [5\. Adding Capacity](/learn/installation/wme-setup-guide-adding-capacity/)
-- [6\. Maintaining WME](/learn/installation/wme-setup-guide-maintenance/)
-- [7\. Upgrading WME](#)
-    - [i. Patch Inventory](#patch-inventory)
-    - [ii. Prerequisites](#prerequisites)
-    - [iii. Download & Copy](#download-copy)
-    - [iv. Access & Verify](#patch-access)
-    - [v. Install Patch](#patch-install)
-    - [vi. Troubleshooting](#troubleshooting)

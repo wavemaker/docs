@@ -50,7 +50,7 @@ If the variables are already created in the project.
 2. **Select a Variable** from the drop-down list of the variables available in the application. You can select the one needed to bind the List Widget to. You can also search for a specific variable by typing in select variable option. If you are able to find your variable in the drop-down select the same.
 3. Once you select the variables, it shows the dataset that it is bound to.
 4. As Data Configuration options are already set for this variable, you do not see those options in this scenario. 
-[![](https://www.wavemaker.com../../../../assets/lf_scenario3.png)](https://www.wavemaker.com../../../../assets/lf_scenario3.png)
+[![](/learn/assets/lf_scenario3.png)](/learn/assets/lf_scenario3.png)
 
 ### Scenario 4: Binding to widget
 1. **Retrieve Data From** Select the source of data as Widget that was dragged and dropped onto the canvas.

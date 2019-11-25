@@ -40,8 +40,8 @@ Middle section holds icon and title.
 ### Right Section
 In the Right section, widgets can be added using _Add Widgets_ button. _Add Widgets_ provides a widget  (like Anchor, Menu, Popover, Button) to be added. Depending upon the widgets added various properties can be set:
 - _Anchor_: can have a _hyperlink_ to specify the destination link, _target_ where the linked document should be opened.
-- _Menu_: can specify the _layout_, _position_, and _value_–_action_ combination. [Click here for more on menu usage.](http://www.wavemaker.com/learn/dropdown-menu/)
-- _Popover_: can set the _content source_ and _content_ for further action. [Click here for Popover usage](http://www.wavemaker.com/learn/popover-widget/).
+- _Menu_: can specify the _layout_, _position_, and _value_–_action_ combination. [Click here for more on menu usage.](/learn/dropdown-menu/)
+- _Popover_: can set the _content source_ and _content_ for further action. [Click here for Popover usage](/learn/popover-widget/).
 - _Button_: _on click event_ can be set for page navigation
 
 ### Search Button

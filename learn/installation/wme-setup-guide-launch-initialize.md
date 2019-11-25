@@ -5,15 +5,17 @@ sidebar_label: "Launching Instances"
 ---
 ---
 
-This document talks about launching instances in different virtualization providers. It is recommended that you ensure that you meet the necessary [pre-requisites](/learn/installation/wavemaker-enterprise-setup-guide/) before proceeding with the installation. Move to [next section](https://www.wavemaker.com/learn/installation/wme-setup-guide-access-setting/) if you are already luanched instances using given [pre-requisites](/learn/installation/wavemaker-enterprise-setup-guide/).
+This document talks about launching instances in different virtualization providers. It is recommended that you ensure that you meet the necessary [pre-requisites](/learn/installation/wavemaker-enterprise-setup-guide/) before proceeding with the installation. Move to [next section](/learn/installation/wme-setup-guide-access-setting/) if you are already luanched instances using given [pre-requisites](/learn/installation/wavemaker-enterprise-setup-guide/).
 
 ## Launching Instances
 
 You can launch Instances for WaveMaker Enterprise Setup using ESXi, VirtualBox, VMware Workstation Pro or AWS EC2 instance. You need base OVA or AMI as specified in the [pre-requisites](/learn/installation/wavemaker-enterprise-setup-guide/).
 
-**NOTE**: You can use the same steps for launching additional instances for User workspace and Deployed Apps using the same approach.
+::: note
+You can use the same steps for launching additional instances for User workspace and Deployed Apps using the same approach.
+:::
 
-**      Click on the appropriate section to proceed.**Using ESXi
+**Click on the appropriate section to proceed.** Using ESXi
 
 1. Open **VMware vSphere Client** application and login using ESXi Server/vCenter Server **IP address** and user credentials.
 2. On the top left corner of the **VMware vSphere Client** window, click **File** and select **Deploy OVF Template**. [![](/learn/assets/WME_launch_esxi1.png)](/learn/assets/WME_launch_esxi1.png)
@@ -54,19 +56,3 @@ Using AWS EC2 Instance To launch an AWS EC2 Instance from the WaveMaker AMI, ref
 8. Create a new Key Pair before launching the instance and download this key pair to your machine. Without this file, you won’t be able to login to your instance.
 
 After launching the instance, check that the instance is in the ‘Running’ state and that 2/2 status checks have passed as shown in the screenshot below. [![](/learn/assets/WME_launch_aws.png)](/learn/assets/WME_launch_aws.png)
-
-Step 3: Setting up WME
-
-Contents
-
-- [1\. Getting Started](/learn/installation/wavemaker-enterprise-setup-guide/)
-- [2\. Launching Instances](#launch-instances)
-    - [i. Launch using ESXI](#launch-esxi)
-    - [ii. Launch using VirtualBox](#launch-vb)
-    - [iii. Launch using VMWare](#launch-vmware)
-    - [iv. Launch using AWS](#launch-aws)
-- [3\. Setting Up WME](/learn/installation/wme-setup-guide-access-setting/)
-- [4\. Configuring WME](/learn/installation/wme-setup-guide-configuration/)
-- [5\. Adding Capacity](/learn/installation/wme-setup-guide-adding-capacity/)
-- [6\. Maintaining WME](/learn/installation/wme-setup-guide-maintenance/)
-- [7\. Upgrading WME](/learn/installation/wme-setup-guide-upgrading/)

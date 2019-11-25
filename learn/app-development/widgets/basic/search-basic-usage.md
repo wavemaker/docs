@@ -9,7 +9,7 @@ WaveMaker allows you to add search capability via the **search widget**. Followi
 
 [![](/learn/assets/search_run2.png)](/learn/assets/search_run2.png)
 
-[![](/learn/assets/search_run3.png)](learn/wp-content/uploads/search_run3.png)
+[![](/learn/assets/search_run3.png)](/learn/assets/search_run3.png)
 
 1. Drag and drop a **search**, and four **label** widgets on a page. We have used the grid layout here. [![](/learn/assets/search_design.png)](/learn/assets/search_design.png)
 2. [Import the sample database](/learn/app-development/services/database-services/working-with-databases/). [Create a Variable](/learn/assets/var_sel.png) based on the database CRUD APIs auto-generated when the database is imported. [![](/learn/assets/search_lv.png)](/learn/assets/search_lv.png)
@@ -28,23 +28,3 @@ You can capture the result of the Search widget in two ways:
     
 3. Save and run the application.
 4. The page will display the search widget along with the labels.
-
-[4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
-
-- [4.1 Anchor](/learn/app-development/widgets/basic/anchor/)
-- [4.2 Audio](/learn/app-development/widgets/media-widgets/)
-- [4.3 HTML](/learn/app-development/widgets/basic/html/)
-- [4.4 Icon](/learn/app-development/widgets/basic/icon/)
-- [4.5 Iframe](/learn/app-development/widgets/basic/iframe/)
-- [4.6 Label](/learn/app-development/widgets/basic/label/)
-- [4.7 Message](/learn/app-development/widgets/basic/message/)
-- [4.8 Picture](/learn/app-development/widgets/media-widgets/)
-- [4.9 Progress Bar](/learn/app-development/widgets/basic/progress-bar/)
-- [4.10 Richtext Editor](/learn/app-development/widgets/basic/richtext-editor/)
-- [4.11 Search](/learn/app-development/widgets/basic/search/)
-    - [i. Properties](/learn/app-development/widgets/basic/search/#properties)
-    - [ii. Events](/learn/app-development/widgets/basic/search/#events)
-    - [iii. Use Cases](/learn/app-development/widgets/basic/search-basic-usage/)
-- [4.12 Spinner](/learn/app-development/widgets/basic/spinner/)
-- [4.13 Tree](/learn/app-development/widgets/basic/tree/)
-- [4.14 Video](/learn/app-development/widgets/media-widgets/)

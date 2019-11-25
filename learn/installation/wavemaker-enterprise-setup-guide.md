@@ -94,17 +94,3 @@ You will be needing IP Addresses for the following.
         Note: In the preceding table, `[mycompany]` is used as an example. You may have to replace `[mycompany]` with your appropriate domain name.
 - **Docker Container Access**: You will be needing to assign a /16 [CIDR ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) to Docker during setup. This IP range should not be in use anywhere on your network and can be completely different from your network’s range. These IPs are assigned internally by Docker to containers and these IPs won’t be exposed on your network. For example, if your network is using a _10.x.x.x_ range and the range _192.168.x.x_ is not used anywhere in your network, you may assign this _192.168.x.x_ range to Docker. See [here](https://en.wikipedia.org/wiki/Private_network#Private_IPv4_address_spaces) for the possible LAN IP ranges.
 
-Step 2: Launch & Initialize WME
-
-Contents
-
-- [1\. Getting Started](#)
-    - [i. WME - an Overview](#wme-overview)
-    - [ii. Prerequisites](#prerequisites-wme)
-    - [iii. IP Addressing](#ip-addressing)
-- [2\. Launching Instances](https://www.wavemaker.com/learn/installation/wme-setup-guide-launch-initialize/)
-- [3\. Setting Up WME](/learn/installation/wme-setup-guide-access-setting/)
-- [4\. Configuring WME](/learn/installation/wme-setup-guide-configuration/)
-- [5\. Adding Capacity](/learn/installation/wme-setup-guide-adding-capacity/)
-- [6\. Maintaining WME](/learn/installation/wme-setup-guide-maintenance/)
-- [7\. Upgrading WME](/learn/installation/wme-setup-guide-upgrading/)

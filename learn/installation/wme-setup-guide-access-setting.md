@@ -115,22 +115,6 @@ Once the installation process is completed successfully, click on Apply License 
 2. Click **Apply License**. On the bottom right corner, you will get a success message once the license is uploaded successfully. **NOTE**: To avail the full benefits of the License in terms of Developers and Nodes (Apps), instances need to be added appropriately. See [Adding Capacity](/learn/installation/wme-setup-guide-adding-capacity/) for more details.
 3. Click on **Go To Launchpad**. [![](/learn/assets/WME_license2.png)](/learn/assets/WME_license2.png)
 
-**Note**: Make sure you have the host entry made as mentioned above.
-
-Step 4: Configuring WME from Launchpad
-
-Contents
-
-- [1\. Getting Started](/learn/installation/wavemaker-enterprise-setup-guide/)
-- [2\. Launching Instances](https://www.wavemaker.com/learn/installation/wme-setup-guide-launch-initialize/)
-- [3\. Setting Up WME](#)
-    - [i. Download & Copy](#download-copy)
-    - [ii. Access and Verify](#patch-access)
-    - [iii. Initializing WME](#initializing-wme)
-    - [iv. Accessing WME](#accessing-wme)
-    - [v. Setting up WME](#setting-up-wme)
-    - [vi. Uploading License](#uploading-license)
-- [4\. Configuring WME](/learn/installation/wme-setup-guide-configuration/)
-- [5\. Adding Capacity](/learn/installation/wme-setup-guide-adding-capacity/)
-- [6\. Maintaining WME](/learn/installation/wme-setup-guide-maintenance/)
-- [7\. Upgrading WME](/learn/installation/wme-setup-guide-upgrading/)
+::: note
+Make sure you have the host entry made as mentioned above.
+:::

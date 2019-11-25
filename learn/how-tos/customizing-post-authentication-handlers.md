@@ -27,7 +27,7 @@ Note: Multiple implementations can be provided as per your app requirements by f
 
 Create the package folder structure under **src/main/java**. If you want to name your package, see the following example:
 
-[![](https://www.wavemaker.com../assets/Java-src-file.png)](https://www.wavemaker.com../assets/Java-src-file.png)
+[![](/learn/assets/Java-src-file.png)](/learn/assets/Java-src-file.png)
 
 ### Interface to Implement
 
@@ -214,17 +214,3 @@ Declare the following bean in the **project-user-spring.xml**.
 <bean id="wmAuthenticationSuccessRedirectionHandler" 
       class="<package\_name>.MyAuthenticationRedirectionHandler"/>
 
-Custom Authentication Handler
-
-- [i. Custom Post-Authentication Success Handler](#successhandler)
-    - [Creating a Package Structure](#creating-package-structure)
-    - [Interface to implement](#interface-implement)
-    - [Custom Handler Declaration](#custom-handler-declaration)
-- [ii. WM Authentication Class](#authclass)
-    - [Adding Custom Attributes](#add-custom-attribute)
-        - [Attribute Class](#attribute-class)
-        - [Attribute Scope](#attribute-scope)
-        - [Attaching to the Logged-in User](#attaching-loggedin-user)
-- [iii. Redirection Handler](#redirection)
-    - [Interface to Implement](#interface-implement)
-    - [Handler declaration](#handler-declaration)

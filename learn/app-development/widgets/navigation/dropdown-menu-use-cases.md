@@ -13,8 +13,8 @@ In this section, we will walk through the steps to create a multi-level menu, wi
 2. Open the Variables dialog from the Variables menu and using New Variable create a Model variable ([Know more about variables)](/learn/app-development/variables/model-variable/).
 3. Name the variable as _menudata_ and _s_elect _isList_ option_._ [![](/learn/assets/Dropdown_Var_create.png)](/learn/assets/Dropdown_Var_create.png)
 4. Add the following in the _Text Editor._ It defines the structure for Menu identifying _Label_, _Icon_, _Link_, and _Children_. Icons can be [halflings from glyphicons](http://glyphicons.com/) or [font awesome](https://fortawesome.github.io/Font-Awesome/cheatsheet/) icons.
-    
-    \[
+    ```
+    [
       {
         "label": "Main Page",
         "icon": "glyphicon glyphicon-home",
@@ -28,7 +28,7 @@ In this section, we will walk through the steps to create a multi-level menu, wi
       {
         "label": "Search Engines",
         "icon": "glyphicon glyphicon-search",
-        "children": \[
+        "children": [
           {
             "label": "Google",
             "icon": "glyphicon glyphicon-arrow-right",
@@ -39,11 +39,16 @@ In this section, we will walk through the steps to create a multi-level menu, wi
             "icon": "glyphicon glyphicon-arrow-right",
             "link": "http://www.yahoo.com"
           }
-        \]
+        ]
       }
-    \]
-    
-    **Note**: If you follow this structure, WaveMaker picks the label, icon, link and children tags automatically. If you are using different tag names, then you need to specify them in the Menu property as shown in step: 4 [![](https://www.wavemaker.com../../../assets/fieldeditor.png)![](https://www.wavemaker.com../../../assets/fieldeditor.png)](https://www.wavemaker.com../../../assets/fieldeditor.png)
+    ]
+    ```
+
+:::note
+If you follow this structure, WaveMaker picks the label, icon, link and children tags automatically. If you are using different tag names, then you need to specify them in the Menu property as shown in step: 4
+:::
+[![](/learn/assets/fieldeditor.png)![](/learn/assets/fieldeditor.png)](/learn/assets/fieldeditor.png)
+
 5. Bind the _Value_ property of the Menu widget to the model variable created in the previous step. [![](/learn/assets/menu_props.png)](/learn/assets/menu_props.png)
 6. Set the _Action label_, _Action icon_, _Action link_, _Sub actions_ to the appropriate item names from the model variable. Note, if you have used the same names then you may skip this step.
 7. Use the _Action link_ specified above to navigate to a page within the project, or an external URL. You can use the **On Select event** to invoke a dialog or call a variable. From the Events tab of Properties panel, set On Select event to JavaScript and use the following code. This code will check if the selected value of the Menu is My Account and open either a dialog or invoke a variable.
@@ -57,13 +62,3 @@ In this section, we will walk through the steps to create a multi-level menu, wi
     
 8. Run the application and see the menu in action.
 
-[6\. Navigation Widgets](/learn/app-development/widgets/widget-library/#nav-widgets)
-
-- [6.1 Breadcrumb](/learn/app-development/widgets/navigation/breadcrumb/)
-- [6.2 Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu/)
-    - [○ Properties](/learn/app-development/widgets/navigation/dropdown-menu/#properties)
-    - [○ Events](/learn/app-development/widgets/navigation/dropdown-menu/#events)
-    - [○ Use Cases](/learn/app-development/widgets/navigation/dropdown-menu-use-cases/)
-- [6.3 Nav](/learn/app-development/widgets/navigation/nav/)
-- [6.4 Nav Bar](/learn/app-development/widgets/navigation/nav-bar/)
-- [6.5 Popover](/learn/app-development/widgets/navigation/popover/)

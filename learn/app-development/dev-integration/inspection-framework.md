@@ -9,7 +9,7 @@ Inspection framework is available since WaveMaker 10.0. Inspection Framework he
 
 You can locate Inspection framework from the More options menu located on the bottom-left corner when you open a project. See the image below:
 
-![](https://www.wavemaker.com../../assets/inspectionframeworklowcode.png)
+![](/learn/assets/inspectionframeworklowcode.png)
 
 To initiate the inspection framework, you click the More options menu and click Run. When you run the inspection framework from your project, if there are any unsupported methods or errors in your code, it shows them on the screen immediately. The following guide helps you with each rule that Inspection Framework will help you identify and fix the issues in your project.
 

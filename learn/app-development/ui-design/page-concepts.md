@@ -13,7 +13,7 @@ To design pages, see the [Design Overview](/learn/app-development/ui-design/desi
 
  You can navigate to the pages section as shown in the image below. 
 
-![Pages introduction in WaveMaker](../../assets/pages_introduction.png)  
+![Pages introduction in WaveMaker](/learn/assets/pages_introduction.png)
 
 ## How Pages work
 

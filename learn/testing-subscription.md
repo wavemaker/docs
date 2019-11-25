@@ -16,7 +16,7 @@ How TosWorking Solutions for WaveMaker FeaturesSubscribe
     - [ii. Mobile Apps](/learn/hybrid-mobile/mobile-page-concepts/#page-navigation-actions)
 - [How to pass parameters to pages](/learn/how-tos/passing-parameters-pages/)
 - [How to pass parameters to partial pages](/learn/how-tos/passing-parameters-partial-page/)
-- [How to use static variable to pass data between pages](http://www.wavemaker.com/learn/how-tos/use-static-variable-pass-data-pages/) _New_
+- [How to use static variable to pass data between pages](/learn/how-tos/use-static-variable-pass-data-pages/) _New_
 - [How to set home page, default language and display format for date and time fields](/learn/how-tos/setting-language-date-format/) _New_
 - [How to change the default app favicon](/learn/how-tos/changing-default-favicon/)
 - [How to set the app logo](/learn/how-tos/changing-app-logo/)

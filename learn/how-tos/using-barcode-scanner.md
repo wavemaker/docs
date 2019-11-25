@@ -38,4 +38,4 @@ In this post we will be creating a page that has a button to scan a book’s bar
 
 1. Build the apk, install it on a android phone and open the app. [![book_barcode_run1](/learn/assets/book_barcode_run1.png)](/learn/assets/book_barcode_run1.png)
 2. Click on ‘scan a book’ button. Camera will open for barcode scanning. Point the camera on any book barcode. [![book_barcode_run2](/learn/assets/book_barcode_run2.png)](/learn/assets/book_barcode_run2.png)
-3. Book data will come up on the app, provided google has the book information. [![book_barcode_run3](/learn/assets/book_barcode_run3.png)](/wp-content/uploads/book_barcode_run3.png)
+3. Book data will come up on the app, provided google has the book information. [![book_barcode_run3](/learn/assets/book_barcode_run3.png)](/learn/assets/book_barcode_run3.png)
