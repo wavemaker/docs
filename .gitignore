@@ -14,3 +14,4 @@ website/i18n/*
 .idea
 
 .env
+website/package-lock.json
