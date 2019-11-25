@@ -256,6 +256,7 @@
         "label": "Configuring Web Server",
         "ids": [  
         "app-development/deployment/deployment-web-server",
+        "app-development/deployment/building-war-wavemaker-project",
         "app-development/deployment/deployment-to-aws",
         "app-development/deployment/deployment-to-azure",
         "app-development/deployment/deployment-google-cloud",
@@ -383,8 +384,7 @@
           [                       
             "how-tos/passing-parameters-pages",
             "how-tos/passing-parameters-partial-page",
-            "how-tos/use-static-variable-pass-data-pages",
-            "how-tos/setting-language-date-format",
+            "how-tos/use-static-variable-pass-data-pages",            
             "how-tos/incorporating-additional-icons",
             "how-tos/displaying-icon-color-based-upon-condition",
             "how-tos/changing-default-favicon",
@@ -399,6 +399,8 @@
           "- Localization":
           [
             "how-tos/localization-wavemaker-apps",
+            "how-tos/setting-language-date-format",
+            "app-development/widgets/form-widgets/select-locale-usage",
             "how-tos/localization-error-messages",
             "how-tos/localization-data-table-column-headings"
           ],
