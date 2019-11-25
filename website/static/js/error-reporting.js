@@ -1,7 +1,9 @@
 function reportIssue(eventType, event) {
     ga('send', {
-        hitType: 'error',
+        hitType: 'event',
+        eventCategory: 'error',
         eventAction: eventType,
         eventLabel: document.referrer,
+        eventValue: 404,
     });
 }
