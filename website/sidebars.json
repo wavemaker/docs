@@ -170,6 +170,7 @@
             "app-development/app-security/access-levels-permissions",
             "app-development/app-security/login-configuration",
             "app-development/app-security/ssl-encryption",
+            "app-development/app-security/xss-antisamy-policy-configuration",
             "app-development/app-security/owasp",
             "app-development/app-security/central-authentication-system",
             "app-development/app-security/token-based-authentication",
@@ -377,7 +378,8 @@
           [
             "how-tos/creating-registration-page",
             "how-tos/support-password-encryption",
-            "how-tos/error-handling-wavemaker-app"
+            "how-tos/error-handling-wavemaker-app",
+            "how-tos/prevent-user-leaving-page-unsaved-changes"
           ],
 
           "- UI design":
