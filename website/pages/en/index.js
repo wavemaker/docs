@@ -12,29 +12,6 @@ class Index extends React.Component {
     const {config: siteConfig, language = ''} = this.props;
     const {baseUrl} = siteConfig;
 
-    const Header = () => {
-      return (
-          <header id="header" className="header">
-            <div className="row">
-                <div id="logo-navigation" className="column logo-col">
-                    <div id="logo">
-                        <a href="https://www.wavemaker.com/rapid-application-development-platform/"><img src="/learn/img//WM_logo-final-grey-04.svg" alt="WaveMaker"/></a>
-                    </div>
-                </div>
-                <div className="column navigation nav-menu">
-                    <ul id="nav">
-                        <li><a href="/learn/docs">DOCS</a></li>
-                        <li><a href="http://www.wavemaker.com/partners">PARTNERS</a></li>
-                        <li><a href="http://www.wavemaker.com/customers">CUSTOMERS</a></li>
-                        <li><a href="http://www.wavemaker.com/about">ABOUT US</a></li>
-                        <li><a href="http://www.wavemaker.com/contact">CONTACT US</a></li>
-                    </ul>
-                </div>
-            </div>
-          </header>
-      );
-    };
-
     const Main = () => {
       return (
           <main className="main-container">
@@ -49,7 +26,7 @@ class Index extends React.Component {
 						</div>
                     </div>
 					<div className="column">
-						<img src="/learn/img/Hero img_WM learning center.svg" alt="hero Image"/>
+						<img src="/learn/img/Hero_img_WM_learning_center.svg" alt="hero Image"/>
 					</div>
                 </div>
             </div>
@@ -76,7 +53,7 @@ class Index extends React.Component {
                     <div className="content-wrapper">
                         <div className="content-blocks">
                             <div className="imagebox-img">
-                                <img src="/learn/img/01-Mobile app.svg" alt=""/>
+                                <img src="/learn/img/01-Mobile_app.svg" alt=""/>
                             </div>
 							<div>
 								<h1>Mobile Apps</h1>                            
@@ -113,7 +90,7 @@ class Index extends React.Component {
                     <div className="content-wrapper">
                         <div className="content-blocks">
                             <div className="imagebox-img">                                
-								<img src="/learn/img/04-Team blog.svg" alt=""/>
+								<img src="/learn/img/04-Team_blog.svg" alt=""/>
                             </div>
 							<div>
 								<h1>What's new?</h1>
