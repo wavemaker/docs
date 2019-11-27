@@ -119,7 +119,7 @@ console.log("result:", result);
 // result: “abc”
 
 // Example 2: If variable is list type having data as:
-// \[{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}\]
+// [{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}]
 var result = Page.Variables.staticVariable1.getValue(‘dataValue’, 1);
 console.log("result:", result);
 
@@ -133,7 +133,7 @@ This method sets the value against the specified key.
 **Parameters**:
 
 - key(string)
-- value(\*)
+- value(*)
 
 **Return Value**: Updated dataSet of variable
 
@@ -147,7 +147,7 @@ console.log("result:", result);
 // result: {dataValue: “def”}
 
 // Example 2: using key parameter. If variable is list type having data as:
-// \[{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}\]
+// [{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}]
 var result = Page.Variables.staticVariable1.setValue('key’, “ghi”);
 console.log("result:", result);
 
@@ -166,7 +166,7 @@ This method returns the object against the specified index. **Note**: This is on
 **Example**:
 ```
 // If variable is list type having data as:
-// \[{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}\]
+// [{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}]
 var result = Page.Variables.staticVariable1.getItem(1);
 console.log("result:", result);
 
@@ -180,19 +180,19 @@ This method sets the value against the specified index. **NOTE**: Only for array
 **Parameters**:
 
 - index(number)
-- value(\*)
+- value(*)
 
 **Return Value**: Updated dataSet of variable
 
 **Example**:
 ```
 // If variable is list type having data as:
-// \[{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}\]
+// [{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}]
 var result = Page.Variables.staticVariable1.setItem(1, {dataValue: "jkl"});
 console.log("result:", result);
 
 // Output: 
-// result: \[{dataValue: “abc”}, {dataValue: “jkl”}, {dataValue: “ghi”}\]
+// result: [{dataValue: “abc”}, {dataValue: “jkl”}, {dataValue: “ghi”}]
 ```
 ### addItem(index, value)
 
@@ -208,20 +208,20 @@ This method adds an item at specified index. NOTE: Only for array type variable,
 **Example**:
 ```
 //Example1: If variable is list type having data as:
-// \[{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}\]
+// [{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}]
 var result = Page.Variables.staticVariable1.addItem({dataValue: "jkl"});
 console.log("result:", result);
 
 // Output: 
-// result: \[{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}, {dataValue: “jkl”}\]
+// result: [{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}, {dataValue: “jkl”}]
 
 //Example2: If variable is list type having data as:
-// \[{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}\]
+// [{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}]
 var result = Page.Variables.staticVariable1.addItem({dataValue: "jkl"}, 1);
 console.log("result:", result);
 
 // Output: 
-// result: \[{dataValue: “abc”}, {dataValue: “jkl”}, {dataValue: “def”}, {dataValue: “ghi”}\]
+// result: [{dataValue: “abc”}, {dataValue: “jkl”}, {dataValue: “def”}, {dataValue: “ghi”}]
 ```
 ### removeItem(index)
 
@@ -234,12 +234,12 @@ This method updates the dataSet of variable **NOTE**: Only for array type variab
 **Example**:
 ```
 // If variable is list type having data as:
-// \[{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}\]
+// [{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}]
 var result = Page.Variables.staticVariable1.removeItem(1);
 console.log("result:", result);
 
 // Output: 
-// result: \[{dataValue: “abc”}, {dataValue: “ghi”}\]
+// result: [{dataValue: “abc”}, {dataValue: “ghi”}]
 ```
 ### clearData()
 
@@ -252,12 +252,12 @@ This method empties the variable dataSet. **NOTE**: Only for array type variable
 **Example**:
 ```
 // If variable is list type having data as:
-// \[{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}\]
+// [{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}]
 var result = Page.Variables.staticVariable1.clearData();
 console.log("result:", result);
 
 // Output: 
-// result: \[\]
+// result: []
 ```
 ### getCount()
 
@@ -274,7 +274,7 @@ Only for array type variable, i.e. when the Is List property is set.
 **Example**:
 ```
 // If variable is list type having data as:
-// \[{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}\]
+// [{dataValue: “abc”}, {dataValue: “def”}, {dataValue: “ghi”}]
 var result = Page.Variables.staticVariable1.getCount();
 console.log("result:", result);
 

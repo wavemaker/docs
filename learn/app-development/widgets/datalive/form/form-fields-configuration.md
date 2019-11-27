@@ -5,7 +5,7 @@ sidebar_label: "Fields Configuration"
 ---
 ---
 
-### Configure form fields display options
+## Configure form fields display options
 
 You can set the display properties of the elements of the Form.
 
@@ -22,7 +22,7 @@ You can set the display properties of the elements of the Form.
 
 [![](/learn/assets/Form_Fields.png)](/learn/assets/Form_Fields.png)
 
-### Form Validations
+## Form Validations
 
 There are various ways in which Form fields can be validated depending upon the underlying data type. You can see these options in the properties panel for the selected field on the canvas.
 
@@ -32,25 +32,26 @@ There are various ways in which Form fields can be validated depending upon the 
 4. For **Number Type fields**, **Minimum and Maximum Values** permissible can be set
 5. For **Date Type fields**, **Min Date, Max Date, Exclude Days and Dates** can be set. In this case, the date picker will not have the invalid dates available for selection.
 6. For additional checks, you can use the **On Before Submit** event to perform any validation checks. For example, we want to make sure that the password entry is at least six characters in length. Select the **Events** panel and select Javascript for **On Before Submit** and enter the following code. This will ensure that before updating the data source, the JavaScript is executed.
-    
-    Page.form1Beforesubmit = function($data, $event) {
-            function isValidData($data) {
-                /\*restrict password to be minimum of 6 characters\*/
-                if ($data.password) {
-                    if ($data.password.length < 6) {
-                        return {
-                            'error': "Password too small"
-                        };
-                    }
-                } else {
+
+```    
+Page.form1Beforesubmit = function($data, $event) {
+        function isValidData($data) {
+            /*restrict password to be minimum of 6 characters*/
+            if ($data.password) {
+                if ($data.password.length < 6) {
                     return {
-                        'error': "Password field required"
+                        'error': "Password too small"
                     };
                 }
+            } else {
+                return {
+                    'error': "Password field required"
+                };
             }
-            return isValidData($data)
-        };
-    
+        }
+        return isValidData($data)
+    };
+```    
 
 [![](/learn/assets/LF_valid.png)](/learn/assets/LF_valid.png)
 

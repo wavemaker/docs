@@ -78,13 +78,13 @@ Form has few methods exposed on widget scope.
 
 - To submit form:
 ```    
-Page.Widgets.\[formName\].submit();
+Page.Widgets.[formName].submit();
 //This method submits the form. 
 //This method can be used if form is to be submitted from outside of the form.
 ```    
 - To clear messages from the form:
 ```    
-Page.Widgets.\[formName\].clearMessage();
+Page.Widgets.[formName].clearMessage();
 //This method removes the success/error message on the form.
 ``` 
      

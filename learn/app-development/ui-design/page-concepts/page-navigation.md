@@ -40,7 +40,7 @@ Manually invoking the Navigation Action used when you want to validate the user 
     Page.subscribe = funtion($event, widget){
       //navigate to subscribe page only when subscriptionType is provided
       if (Page.Widgets.subscriptionType.datavalue) {
-          Page.Actions.goToPage\_subscription.navigate();
+          Page.Actions.goToPage_subscription.navigate();
        }
      };
 ```

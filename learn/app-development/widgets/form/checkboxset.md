@@ -11,7 +11,7 @@ Using the Group By property you can group the items together under a heading. Th
 
 [![](/learn/assets/checkboxset_group.png)](/learn/assets/checkboxset_group.png)
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -42,7 +42,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Collapsible | Enable control for collapsing and expanding the group. |
 | Show Count | To display the number of items within the group. |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
@@ -56,35 +56,8 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Callback Events** |
 | On ready | This event handler is called when the container is loaded. |
 
-# Use Cases
+## Use Cases
 
 - [Working with Selection Widgets](/learn/how-tos/selection-widgets-use-case/)
 - [How to use CheckboxSet widget to filter a List](/learn/how-tos/checkboxset-filter-list-data/)
 
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-
-- [3.1 Button](/learn/app-development/widgets/form/button/)
-- [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
-- [3.3 Calendar](/learn/app-development/widgets/form/calendar/)
-- [3.4 Checkbox](/learn/app-development/widgets/form/checkbox/)
-- [3.5 CheckboxSet](#)
-    - [i. Properties](#properties)
-    - [ii. Events](#events)
-    - [iii. Use Cases](#use-cases)
-- [3.6 Chips](/learn/app-development/widgets/form-widgets/chips/)
-- [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
-- [3.8 Currency](/learn/app-development/widgets/form/currency/)
-- [3.9 Date](/learn/app-development/widgets/form/date/)
-- [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.11 FileUpload](/learn/app-development/widgets/form/file-upload/)
-- [3.12 Number](/learn/app-development/widgets/form-widgets/number/)
-- [3.13 Radioset](/learn/app-development/widgets/form/radioset/)
-- [3.14 Rating](/learn/app-development/widgets/form/rating/)
-- [3.15 Select](/learn/app-development/widgets/form/select/)
-- [3.16 Select Locale](/learn/app-development/widgets/form/select-locale/)
-- [3.17 Slider](/learn/app-development/widgets/form/slider/)
-- [3.18 Switch](/learn/app-development/widgets/form/switch/)
-- [3.19 Text](/learn/app-development/widgets/form/text/)
-- [3.20 Textarea](/learn/app-development/widgets/form/textarea/)
-- [3.21 Time](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.22 Toggle](/learn/app-development/widgets/form/toggle/)

@@ -77,8 +77,8 @@ Replace Page with Partial or Prefab when working with in Partial or Prefab, resp
 The Widgets and Variables inside a partial page can be accessed from the parent page script through the 'Widgets' and 'Variables' property exposed in the scope of the partial container widget.
 
 ```
-Page.Widgets.\[container\_name\].Widgets.\[widget\_name\].\[widget\_property\];
-Page.Widgets.\[container\_name\].Variables.\[variable\_name\];
+Page.Widgets.[container_name].Widgets.[widget_name].[widget_property];
+Page.Widgets.[container_name].Variables.[variable_name];
 ```
 
 **Example**

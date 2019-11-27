@@ -67,33 +67,3 @@ Apart from the above events attached to the FileUpload widget, the following Ser
 | On Can Update | This event is triggered just before the variable’s dataSet property is updated with the data received from the target service (after onResult). This event handler gives you the opportunity to manipulate the data before your variable’s dataSet property is assigned this value. If you want to add rows to a Grid or List or Select, this is a good way to add in extra items into your results before your variable is set and your widget is updated. The new data can be returned from here in order to update the Variable’s dataSet. |
 | On Success | Allows you to trigger an action when the Variable has completed its life cycle. Any component bound to the resultant dataSet of this Variable will be updated just before this event is triggered. So, If you want to trigger another Variable which is dependent on the dataSet of this Variable, the Variable should be triggered by this event. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
 
-## See More
-
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-
-- [3.1 Button](/learn/app-development/widgets/form/button/)
-- [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
-- [3.3 Calendar](/learn/app-development/widgets/form/calendar/)
-- [3.4 Checkbox](/learn/app-development/widgets/form/checkbox/)
-- [3.5 CheckboxSet](/learn/app-development/widgets/form/checkboxset/)
-- [3.6 Chips](/learn/app-development/widgets/form-widgets/chips/)
-- [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
-- [3.8 Currency](/learn/app-development/widgets/form/currency/)
-- [3.9 Date](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.11 FileUpload](#)
-    - [i. Features](#features)
-    - [ii. Properties](#properties)
-    - [iii. Events](#events)
-    - [iv. Use Cases](/learn/app-development/widgets/form-widgets/fileupload-use-cases/)
-- [3.12 Number](/learn/app-development/widgets/form-widgets/number/)
-- [3.13 Radioset](/learn/app-development/widgets/form/radioset/)
-- [3.14 Rating](/learn/app-development/widgets/form/rating/)
-- [3.15 Select](/learn/app-development/widgets/form/select/)
-- [3.16 Select Locale](/learn/app-development/widgets/form/select-locale/)
-- [3.17 Slider](/learn/app-development/widgets/form/slider/)
-- [3.18 Switch](/learn/app-development/widgets/form/switch/)
-- [3.19 Text](/learn/app-development/widgets/form/text/)
-- [3.20 Textarea](/learn/app-development/widgets/form/textarea/)
-- [3.21 Time](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.22 Toggle](/learn/app-development/widgets/form/toggle/)

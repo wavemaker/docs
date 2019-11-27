@@ -7,7 +7,7 @@ An **accordion** is a stacked list of UI components, with only one focused compo
 
 WaveMaker **Accordion Widget** is a collection of accordion panes where users can either place the content or include the partial pages. [![](/learn/assets/accordion_run.png)](/learn/assets/accordion_run.png)
 
-# Features
+## Features
 
 When you drag and drop an Accordion, by default three accordion panes are provided. More accordion panes can be added by using _Add Accordion Pane_ action. Within each accordion pane, widgets like Data Table, List etc can be dragged and dropped and you can hide/show accordion panes according to the app requirement. In addition, you can provide the content as Partial Pages – for example – create a partial page and use that content within an accordion pane.
 
@@ -23,7 +23,7 @@ When you drag and drop an Accordion, by default three accordion panes are provid
 2. _Sub Header_ - Sets subheading for the accordion pane
 3. _Content_ - The content in the accordion pane. This can be either
     - _inline_ - HTML content, widgets etc.,
-    - _partial _\- any partial you have created within the app can be used as pane content
+    - _partial _- any partial you have created within the app can be used as pane content
 4. _Badge_ - Indicated the small meaning information. The badge type can be set different styles - primary, success, info, warning, or danger on the accordion pane components to customize the look and feel. It can be bound to a variable, for example, to indicate the number of employees in a department
 5. _Is pane default_ - Sets a default pane to be opened when the accordion is rendered
 
@@ -33,28 +33,28 @@ When you drag and drop an Accordion, by default three accordion panes are provid
 
 <iframe width="100%" height="600" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Accordion">Accordion</iframe>
 
-# Usage
+## Usage
 
 - [Setting partial page content for Accordion within a List](/learn/how-tos/setting-partial-page-content-accordion-within-list/)
 
-# Methods
+## Methods
 
 The accordion has few methods exposed on widget scope which can be accessed via JavaScript. See below for usage example.
 
 - to Collapse a pane:
-    
+    ```
     Page.Widgets.accordionpane1.collapse(); //collapse the specific pane.
-    
+    ```
 - to Expand a pane:
-    
+    ```
     Page.Widgets.accordionpane1.expand(); //Expands sales accordion pane.
-    
+    ```
 - to toggles a pane i.e. opens if closed, closes if opened:
-    
+    ```
     Page.Widgets.accordionpane1.toggle(); //toggles sales accordion pane.
-    
+    ```
 
-# Script Access
+## Script Access
 
 **Step 1:- (Prepare data and widgets)**
 
@@ -67,18 +67,18 @@ The accordion has few methods exposed on widget scope which can be accessed via 
 
 **Step 2:- (Scripting with accordion)**
 
-1. 1. Select JavaScript for the on click event of ‘collapseSalesPaneBtn’ and use the following as JavaScript function with the following script:
-        
-        Page.collapseSalesPaneBtnClick= function($event, widget) {
-           Page.Widgets.salesPane.collapse(); //Expands sales accordion pane.
-        };
-        
-    2. Select JavaScript for the on click event for ‘expandSalesPaneBtn’ and use the following script:
-        
-        Page.expandSalesPaneBtnClick = function($event, widget) {
-        		Page.Widgets.salesPane.expand(); //Collapses sales accordion pane.
-                    };
-        
+1. Select JavaScript for the on click event of ‘collapseSalesPaneBtn’ and use the following as JavaScript function with the following script:
+```        
+Page.collapseSalesPaneBtnClick= function($event, widget) {
+    Page.Widgets.salesPane.collapse(); //Expands sales accordion pane.
+};
+```        
+2. Select JavaScript for the on click event for ‘expandSalesPaneBtn’ and use the following script:
+```        
+Page.expandSalesPaneBtnClick = function($event, widget) {
+        Page.Widgets.salesPane.expand(); //Collapses sales accordion pane.
+            };
+```        
 
 **Step 3:- (Run)**
 
@@ -86,7 +86,7 @@ The accordion has few methods exposed on widget scope which can be accessed via 
 2. Now click on ‘expandSalesPaneBtn’ and see sales accordion pane will be expanded.
 3. Now click on ‘collapseSalesPaneBtn’ and see sales accordion pane will be collapsed.
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -110,15 +110,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Sub Heading | This bindable property defines the subheading for the accordion pane. It is displayed right below the Title of the Pane. |
 | Name | The name is a unique identifier for the accordion pane. Special characters and spaces are not allowed in widget name. |
 | Badge Value | Value to be displayed in the badge area on the right edge of title next to the expand/collapse button. It is a bindable property. |
-| Badge Type | This bindable property controls the color of the badge. The values are:
-- _default_,
-- _primary_,
-- _success_,
-- _info_,
-- _warning_,
-- _danger_.
-
- |
+| Badge Type | This bindable property controls the color of the badge. The values are: <br>  - _default_, <br> - _primary_, <br> - _success_, <br>  - _info_, <br> - _warning_, <br> - _danger_. <br>  |
 | **Accessibility** |
 | Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
@@ -126,19 +118,14 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Layout** |
 | Height | The height of the widget can be specified in px or % (i.e 50px, 75%). |
 | **Content** |
-| Content | Bindable property, specifies the content to be displayed within the Accordion Pane:
-
-- Inline Content - HTML content or any widget
-- Page Content - in the form of Partial pages created within the app, choose from the available list
-
- |
+| Content | Bindable property, specifies the content to be displayed within the Accordion Pane: <br> <br> - Inline Content - HTML content or any widget. <br> - Page Content - in the form of Partial pages created within the app, choose from the available list. <br> |
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is bindable. |
 | Is Default Pane | This bindable property determines if this pane is the default pane. |
 | **Graphics** |
 | Icon Class | This bindable property defines the class of the icon that is applied to the button. |
 
-# Events
+## Events
 
 The following events are available on the Accordion Panes
 
@@ -149,21 +136,3 @@ The following events are available on the Accordion Panes
 | On expand | This property defines the event handler for the expand event of the accordion panes. |
 | On collapse | This property defines the event handler for the collapse event of the accordion panes. |
 
-[2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
-
-- [2.1 Accordion](/learn/app-development/widgets/container/accordion/)
-    - [i. Features](#features)
-        - [○ Accordion](#accordion-features)
-        - [○ Accordion Pane](#pane-features)
-        - [○ Accordion Types](#types)
-    - [ii. Usage](#usage)
-    - [iii. Methods](#methods)
-    - [iv. Script Access](#script-access)
-    - [v. Properties](#properties)
-    - [vi. Events](#events)
-- [2.2 Container](/learn/app-development/widgets/container/container/)
-- [2.3 Grid Layout](/learn/app-development/widgets/container/grid-layout/)
-- [2.4 Panel](/learn/app-development/widgets/container/panel/)
-- [2.5 Tabs](/learn/app-development/widgets/container/tabs/)
-- [2.6 Tile](/learn/app-development/widgets/container/tile/)
-- [2.7 Wizard](/learn/app-development/widgets/container/wizard/)

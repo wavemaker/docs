@@ -95,7 +95,7 @@ You can bind your widgets to images, videos etc.. For this you have to [Import R
 
 ### Binding using Expression
 
-From the **Use Expression** tab, you can write a custom expression to change the display setting. The expression can be simple string concatenation expressions or HTML syntax following AngularJS conventions for binding. For complex expressions, it is advisable to [write a function](/learn/how-tos/using-javascript-binding/#js-function). For example, when displaying name you want the display to say _User Name is: some\_value_, you can achieve this by using the expression:
+From the **Use Expression** tab, you can write a custom expression to change the display setting. The expression can be simple string concatenation expressions or HTML syntax following AngularJS conventions for binding. For complex expressions, it is advisable to [write a function](/learn/how-tos/using-javascript-binding/#js-function). For example, when displaying name you want the display to say _User Name is: some_value_, you can achieve this by using the expression:
 
 ```
 "User Name is: " + datavalue

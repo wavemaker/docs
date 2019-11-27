@@ -93,7 +93,7 @@ Below example is for filtering the data using a query. We will be using the Empl
 
 1. Create a query in database designer with input params.
 ```
-SELECT \* FROM EMPLOYEE WHERE CITY = :city
+SELECT * FROM EMPLOYEE WHERE CITY = :city
 ``` 
 2. Provide test values and run and save the query (as EmpByCity).
 3. Create a variable using this query operation from the variable dialog or dragging and dropping Form widget and using Create new functionality.

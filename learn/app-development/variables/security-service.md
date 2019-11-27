@@ -70,7 +70,7 @@ This method updates the Variable’s dataSet with new data by making a call to t
 
 **Example**:
 ```
-var sv = Page.Variables.\[variable\_name\];
+var sv = Page.Variables.[variable_name];
     sv.invoke({
        "inputFields": {
        "fname": "Steve",
@@ -92,7 +92,7 @@ This method aborts the current inflight variable request.
 
 **Example**:
 ```
-Page.Variables.\[variable\_name\].cancel();
+Page.Variables.[variable_name].cancel();
 ```
 ### getData()
 
@@ -104,7 +104,7 @@ This method returns the variable’s dataSet, i.e., the current data stored in t
 
 **Example**:
 ```
-var result = Page.Variables.\[variable\_name\].getData();
+var result = Page.Variables.[variable_name].getData();
 console.log("result:", result);
 // Output: 
 // result: {data in the variable}
@@ -119,7 +119,7 @@ This method clears the variable dataSet.
 
 **Example**:
 ```
-var result = Page.Variables.\[variable\_name\].clearData();
+var result = Page.Variables.[variable_name].clearData();
 console.log("result:", result);
 // Output: 
 // result: {}
@@ -131,13 +131,13 @@ This method sets the input field value against the specified field(key).
 **Parameters**:
 
 - **key**(string): name of the input field
-- **value**(\*): value for the input field
+- **value**(*): value for the input field
 
 **Return Value**: Updated inputFields object
 
 **Example**:
 ```
-var sv = Page.Variables.\[variable\_name\];
+var sv = Page.Variables.[variable_name];
     sv.setInput("fname": "Peter");
     sv.setInput("lname": "Parker");
     sv.invoke();
@@ -152,7 +152,7 @@ This method can also be used to set all the specified key-value pairs as input f
 
 **Example**:
 ```
-var sv = Page.Variables.\[variable\_name\];
+var sv = Page.Variables.[variable_name];
     sv.setInput({
       "fname": "Peter",
       "lname": "Parker"

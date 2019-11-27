@@ -7,7 +7,7 @@ id: ""
 
 You can drop a spinner widget on the required page and set the spinner to false at _onPageReady_ which is part of the Script of the current page by using the following code snippet: Page.Widgets.spinner1.show = false;. If you would like to set the spinner till the variable loads, you can set the "_Track Variable_" property of the spinner to that particular variable. Then, the spinner would be shown until the variable gets loaded. You can track multiple variables by selecting the same.
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -23,20 +23,3 @@ You can drop a spinner widget on the required page and set the spinner to false 
 | Icon Class | This property defines the class of the icon that is applied to the spinner. |
 | Icon Size | This property defines the size of the icon. Value has to be specified along with the units (em or px). |
 
-[4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
-
-- [4.1 Anchor](/learn/app-development/widgets/basic/anchor/)
-- [4.2 Audio](/learn/app-development/widgets/media-widgets/)
-- [4.3 HTML](/learn/app-development/widgets/basic/html/)
-- [4.4 Icon](/learn/app-development/widgets/basic/icon/)
-- [4.5 Iframe](/learn/app-development/widgets/basic/iframe/)
-- [4.6 Label](/learn/app-development/widgets/basic/label/)
-- [4.7 Message](/learn/app-development/widgets/basic/message/)
-- [4.8 Picture](/learn/app-development/widgets/media-widgets/)
-- [4.9 Progress Bar](/learn/app-development/widgets/basic/progress-bar/)
-- [4.10 Richtext Editor](/learn/app-development/widgets/basic/richtext-editor/)
-- [4.11 Search](/learn/app-development/widgets/basic/search/)
-- [4.12 Spinner](/learn/app-development/widgets/basic/spinner/)
-    - [i. Properties](#properties)
-- [4.13 Tree](/learn/app-development/widgets/basic/tree/)
-- [4.14 Video](/learn/app-development/widgets/media-widgets/)

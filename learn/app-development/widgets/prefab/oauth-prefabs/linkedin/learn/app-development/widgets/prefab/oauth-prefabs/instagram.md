@@ -14,7 +14,7 @@ In order to use the ****Instagram****OAuth prefab, please follow the below step
 Disclaimer: The screenshots from the Instagram website were current at the time of writing this document, the actual screens might differ.
 
 1. Drag and drop the **Instagram OAuth Prefab** onto the canvas of the desired page in the application. [![](/learn/assets/Instagram_Prefab.png)](/learn/assets/Instagram_Prefab.png)
-2. Drag and drop a **Label** onto the canvas. Click on bind icon against the label caption property to the \`_callbackurl_\` property of the Instagram OAuth Prefab. [![](/learn/assets/instagram_bind.png)](/learn/assets/instagram_bind.png)
+2. Drag and drop a **Label** onto the canvas. Click on bind icon against the label caption property to the `_callbackurl_` property of the Instagram OAuth Prefab. [![](/learn/assets/instagram_bind.png)](/learn/assets/instagram_bind.png)
 3. Save and Run the project. Make a note of the Callback URL displayed on the Label. [![](/learn/assets/instagram_URI.png)](/learn/assets/instagram_URI.png)
 4. Login to the [Instagram](http://www.instagram.com/).
 5. To open the Instagram API platform [click here](https://www.instagram.com/developer/).
@@ -28,14 +28,3 @@ Disclaimer: The screenshots from the Instagram website were current at the time 
 
 After the OAuth authorization is completed, you can make API calls to the Instagram. This facilitates to fetch the information of the users and media from the Instagram. For more details on the API Endpoints, please [click here](https://www.instagram.com/developer/endpoints/).
 
-[9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
-
-- [9.1 Youtube](/learn/app-development/widgets/prefab/youtube/)
-- [9.2 Googlemaps](/learn/app-development/widgets/prefab/googlemaps/)
-- [9.3 QRCode](/learn/app-development/widgets/prefab/qrcode/)
-- [9.4 OAuth Prefabs](/learn/app-development/widgets/prefab/oauth-prefabs/)
-    - [9.4.1 Box](/learn/app-development/widgets/prefab/oauth-prefabs/box/)
-    - [9.4.2 Facebook](/learn/app-development/widgets/prefab/oauth-prefabs/facebook/)
-    - [9.4.3 Google](/learn/app-development/widgets/prefab/oauth-prefabs/google/)
-    - [9.4.4 Instagram](#)
-    - [9.4.5 LinkedIn](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/)

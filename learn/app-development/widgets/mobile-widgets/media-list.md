@@ -18,7 +18,7 @@ Media List has two **layout options**:
 
 **Dataset** of a Media List has the following properties:
 
-- _Value_ **\- An array of objects that has the data for media list.**
+- _Value_ **- An array of objects that has the data for media list.**
 - _Thumbnail URL_ - The data property which contains the URL for the picture’s thumbnail URL.
 - _Media URL_ - The data property which contains the URL for the picture.
 
@@ -69,7 +69,7 @@ In this post, we will be creating a page with Media List to display employee’
 
 1. Click **Run** to preview the Media List. [![](/learn/assets/medialist_run.png)](/learn/assets/medialist_run.png)
 
-[10\. Mobile & Device Widgets](/learn/app-development/widgets/widget-library/#mobile)
+[10. Mobile & Device Widgets](/learn/app-development/widgets/widget-library/#mobile)
 
 - [10.1 Media List](/learn/app-development/widgets/mobile-widgets/media-list/)
     - [i. Layouts](#layouts)

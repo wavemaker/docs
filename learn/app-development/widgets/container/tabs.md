@@ -113,7 +113,7 @@ We will see how Tab events can be accessed using the JavaScript. We will be seei
 | Default Pane Index | This property sets the default active pane on a load of the widget based on the provided index. The tab index is an integer starting from 0, 1, 2 and so on. That is, setting this property to 0 will display the first tab pane; setting to 1 will display the second tab pane. |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
-| Transition | This property defines the transition effect to be applied when switching tabs. You can choose from _none_ or _slide_. When the transition property is \`slide\`, selected tab will be animated into the viewport. \`Swipe events\` will work only when the transition value is \`slide\`. |
+| Transition | This property defines the transition effect to be applied when switching tabs. You can choose from _none_ or _slide_. When the transition property is `slide`, selected tab will be animated into the viewport. `Swipe events` will work only when the transition value is `slide`. |
 | **Format** |
 | Horizontal Align | Set text alignment horizontally, can be left, center or right. |
 | Tab Order | The order of the Tabs can be changed using the arrow icons next to the tab names. |
@@ -127,15 +127,7 @@ SubWidget of Tabs, to hold the tab content
 | Title | This property defines the heading or title for the tab panes. |
 | Name | The name is a unique identifier for tab pane. |
 | Badge Value | Value to be displayed in the badge span for the tab pane |
-| Badge Type | The property controls the color of the badge. These values are:
-- default,
-- primary,
-- success,
-- info,
-- warning, or
-- danger
-
- |
+| Badge Type | The property controls the color of the badge. These values are: <br> - default, <br> - primary, <br> - success, <br> - info, <br> - warning, or <br> - danger  |
 | **Accessibility** |
 | Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
@@ -148,7 +140,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Graphics** |
 | Title Icon Class | This property can assign an icon for the pane. |
 
-# Events
+## Events
 
 | **Event** | **Description** |
 | --- | --- |
@@ -157,19 +149,3 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | On select | This event handler is called when the tab is selected. |
 | On deselect | This event handler is called when the tab is deselected. |
 
-[2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
-
-- [2.1 Accordion](/learn/app-development/widgets/container/accordion/)
-- [2.2 Container](/learn/app-development/widgets/container/container/)
-- [2.3 Grid Layout](/learn/app-development/widgets/container/grid-layout/)
-- [2.4 Panel](/learn/app-development/widgets/container/panel/)
-- [2.5 Tabs](/learn/app-development/widgets/container/tabs/)
-    - [i. Features](#features)
-        - [○ Tab Features](#tab-features)
-        - [○ Tab Pane  Features](#pane-features)
-    - [ii. Methods](#methods)
-    - [iii. Script  Access](#script-access)
-    - [iv. Properties](#properties)
-    - [v. Events](#events)
-- [2.6 Tile](/learn/app-development/widgets/container/tile/)
-- [2.7 Wizard](/learn/app-development/widgets/container/wizard/)

@@ -149,7 +149,7 @@ In manual handling, you have to write an `xjb` file which defines the customizat
 XJB bindings can be customized by defining separate `<jaxws:bindings>` element for each namespace, which selects the node with given targetNamespace within the WSDL document.
 
 ```
-<jaxws:bindings node=">wsdl:definitions/wsdl:types/xs:schema\[@targetNamespace='http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd'"
+<jaxws:bindings node=">wsdl:definitions/wsdl:types/xs:schema[@targetNamespace='http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd'"
 ```
 
 Inside the ```<jaxws:bindings>``` element should define which describes customization of package names/class names in code generation for selected node:
@@ -180,8 +180,8 @@ Custom `xjb` file
        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" version="2.1"
        xmlns:xs="http://www.w3.org/2001/XMLSchema">
        <jaxws:bindings
-         node="wsdl:definitions/wsdl:types/xs:schema\[
-            @targetNamespace='http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd'\]">
+         node="wsdl:definitions/wsdl:types/xs:schema[
+            @targetNamespace='http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd']">
         <jaxb:schemaBindings>
          <jaxb:nameXmlTransform>
           <jaxb:elementName suffix="Foo"/>
@@ -189,8 +189,8 @@ Custom `xjb` file
         </jaxb:schemaBindings>
        </jaxws:bindings>
        <jaxws:bindings
-         node="wsdl:definitions/wsdl:types/xs:schema\[
-            @targetNamespace='http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd2'\]">
+         node="wsdl:definitions/wsdl:types/xs:schema[
+            @targetNamespace='http://www.xyz.com/schemas/CustService/Services/Schemas/Schema.xsd2']">
         <jaxb:schemaBindings>
           <jaxb:nameXmlTransform>
            <jaxb:elementName suffix="Bar"/>

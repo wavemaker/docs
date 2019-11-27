@@ -42,11 +42,11 @@ public String sendEmail(String userName, String password, String toEmailAddress,
 
         //	message.addRecipient(Message.RecipientType.TO, new InternetAddress(toEmailAddress));
 
-        String\[\] recipientList = toEmailAddress.split(",");
-        InternetAddress\[\] recipientAddress = new InternetAddress\[recipientList.length\];
+        String[] recipientList = toEmailAddress.split(",");
+        InternetAddress[] recipientAddress = new InternetAddress[recipientList.length];
         int counter = 0;
         for (String recipient: recipientList) {
-            recipientAddress\[counter\] = new InternetAddress(recipient.trim());
+            recipientAddress[counter] = new InternetAddress(recipient.trim());
             counter++;
         }
         message.setRecipients(Message.RecipientType.TO, recipientAddress);

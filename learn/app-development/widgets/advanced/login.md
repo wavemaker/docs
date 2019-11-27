@@ -29,10 +29,4 @@ id: ""
 | On success | This event handler is called whenever a success event is triggered. |
 | On error | This event handler is called whenever an error event is triggered. |
 
-[7\. Advanced Widgets](/learn/app-development/widgets/widget-library/#advanced)
 
-- [7.1 Carousel](/learn/app-development/widgets/advanced/carousel/)
-- [7.2 Login](#)
-    - [i. Properties](#properties)
-    - [ii. Events](#events)
-- [7.3 Marquee](/learn/app-development/widgets/advanced/marquee/)

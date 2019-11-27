@@ -21,11 +21,11 @@ The button widget can trigger any of the following actions when it is clicked.
     
 | Browser | Shortcut key Trigger |
 | --- | --- |
-| Internet Explorer | \[Alt\] + shortcut key |
-| Chrome | \[Alt\] + shortcut key (Windows/Linux) |
-|  | \[Control\] \[Alt\] + shortcut key (MAC) |
-| Firefox | \[Alt\] \[Shift\] + shortcut key (Windows/Linux) |
-|  | \[Control\] \[Alt\] + shortcut key (MAC) |
+| Internet Explorer | [Alt] + shortcut key |
+| Chrome | [Alt] + shortcut key (Windows/Linux) |
+|  | [Control] [Alt] + shortcut key (MAC) |
+| Firefox | [Alt] [Shift] + shortcut key (Windows/Linux) |
+|  | [Control] [Alt] + shortcut key (MAC) |
     
 ### Hide/Show Properties
 The business logic of an application often requires a certain button to be temporarily enabled/ disabled. WaveMaker button can be configured to the initially disabled or enabled by checking the show or disabled properties from behavior section.

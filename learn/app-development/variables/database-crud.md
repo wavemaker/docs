@@ -305,7 +305,7 @@ var result = Page.Variables.HrdbEmployeeData.getData();
         console.log("result", result);
         //  Output:
         result : {
-          data: \[Object, Object, Object\], // data in the table
+          data: [Object, Object, Object], // data in the table
           pagingOptions: {dataSize: 10, maxResults: 20, currentPage: 1} // pagination options
        }
 
@@ -337,7 +337,7 @@ This method sets the input field value against the specified field(key).
 **Parameters**:
 
 - **key**(string): name of the input field
-- **value**(\*): value for the input field
+- **value**(*): value for the input field
 
 **Return Value**: Updated inputFields object
 
@@ -373,7 +373,7 @@ This method sets the filter field value against the specified field(key)
 **Parameters**:
 
 - key(string): name of the input field
-- value(\*): value for the input field
+- value(*): value for the input field
 
 **Return Value**: Updated filterFields object
 

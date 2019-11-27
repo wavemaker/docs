@@ -14,7 +14,7 @@ Box uses OAuth 2.0 to authenticate connections that use the Box APIs. Box has se
 **Disclaimer**: The screenshots from the Box website were current at the time of writing this document, the actual screens might differ. To use the **Box**OAuth prefab, please follow the below steps:
 
 1. Drag and drop the Box OAuth Prefab on the canvas of the desired page of the application. [![](/learn/assets/box_prefab.png)](/learn/assets/box_prefab.png)
-2. Drag and drop a Label in the canvas. Click on Bind property to bind label with the \`callbackurl\` property of the Box OAuth prefab. [![](/learn/assets/box_bind.png)](/learn/assets/box_bind.png)
+2. Drag and drop a Label in the canvas. Click on Bind property to bind label with the `callbackurl` property of the Box OAuth prefab. [![](/learn/assets/box_bind.png)](/learn/assets/box_bind.png)
 3. Save and Run the project. Select the Callback URL from the label. [![](/learn/assets/Box_callback_URL.png)](/learn/assets/Box_callback_URL.png)
 4. To create a Box account, [click here](https://app.box.com/signup). Login to the Box account with the credentials.
 5. To open the Box API platform, [click here.](https://app.box.com/developers/console) The Box API gives access to secured content management system within your own app.
@@ -25,15 +25,3 @@ Box uses OAuth 2.0 to authenticate connections that use the Box APIs. Box has se
 10. In the WaveMaker studio, click on Properties. Enter the necessary server properties such as Appid, Secret, and Page for the BOX prefab widget. [![](/learn/assets/box_prop.png)](/learn/assets/box_prop.png)
 11. Run the project and log in using Box.
 12. For more information on Authentication with OAuth, [click here](https://docs.box.com/docs/oauth-20).
-
-[9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
-
-- [9.1 Youtube](/learn/app-development/widgets/prefab/youtube/)
-- [9.2 Googlemaps](/learn/app-development/widgets/prefab/googlemaps/)
-- [9.3 QRCode](/learn/app-development/widgets/prefab/qrcode/)
-- [9.4 OAuth Prefabs](/learn/app-development/widgets/prefab/oauth-prefabs/)
-    - [9.4.1 Box](#)
-    - [9.4.2 Facebook](/learn/app-development/widgets/prefab/oauth-prefabs/facebook/)
-    - [9.4.3 Google](/learn/app-development/widgets/prefab/oauth-prefabs/google/)
-    - [9.4.4 Instagram](learn/app-development/widgets/prefab/oauth-prefabs/instagram/)
-    - [9.4.5 LinkedIn](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/)

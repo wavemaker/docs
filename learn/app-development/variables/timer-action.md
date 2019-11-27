@@ -89,7 +89,7 @@ Page.Actions.timerAction1.cancel();
 
 < Variables & Actions
 
-6\. Data Integration - Variables
+6. Data Integration - Variables
 
 - 6.1 Binding Layer
     - [i. Overview](/learn/app-development/variables/data-integration/)

@@ -16,7 +16,7 @@ Page.liveform1Beforeservicecall = function($event, $operation, $data) {
 //$operation: Current operation being performed - INSERT or UPDATE or DELETE
 //$data has the data of the all widgets inside the live form. This data can be modified and validated before sending the request.
         function isValidData(data) {
-            /\*restrict password to be minimum of 6 characters\*/
+            /*restrict password to be minimum of 6 characters*/
             if ($data.password) {
                 if ($data.password.length < 6) {
                     return false;

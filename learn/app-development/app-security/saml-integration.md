@@ -125,7 +125,7 @@ Once the configuration is done you can run the app and you will be logged into y
 
 ## Deployment of Application that is configured with SAML
 
-During the app development in WaveMaker, application URLs like Metadata, Audience and Single Signout URL are configured with any of the Identity Provider (for instance- Okta, Onelogin, ADFS, Pingone, etc.). However, these URLs being run URLs are temporary in nature, as such cannot be used for the deployed application. When the WaveMaker application is deployed in the container, the hostname/tenant\_id changes and therefore, the URLs that are to be _configured/registered in the SAML IdP_ should change. For Example, in WaveMaker Studio,
+During the app development in WaveMaker, application URLs like Metadata, Audience and Single Signout URL are configured with any of the Identity Provider (for instance- Okta, Onelogin, ADFS, Pingone, etc.). However, these URLs being run URLs are temporary in nature, as such cannot be used for the deployed application. When the WaveMaker application is deployed in the container, the hostname/tenant_id changes and therefore, the URLs that are to be _configured/registered in the SAML IdP_ should change. For Example, in WaveMaker Studio,
 
 - the **Metadata URL** during development would look like this:
     
