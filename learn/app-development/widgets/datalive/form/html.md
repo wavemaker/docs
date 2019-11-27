@@ -36,7 +36,7 @@ id: ""
 | On tap | This event handler is called whenever the tap event is triggered on a widget. |
 | On double tap | This event handler is called whenever the double tap event is triggered on a widget. |
 
-[4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
+[4. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
 
 - [4.1 Anchor](/learn/app-development/widgets/basic/anchor/)
 - [4.2 Audio](/learn/app-development/widgets/media-widgets/)

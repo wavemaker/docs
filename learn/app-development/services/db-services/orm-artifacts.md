@@ -29,11 +29,11 @@ The folder structure for the generated code is as follows:
 Each of the layers performs its function and delegates the call to the next layer in the chain. For example, after the unmarshaling of the JSON data to the model, and authorization checks, the REST layer delegates the call to the service layer etc.**Design time Configuration Files**: It contains files required for designing database.
 
 - _db-connection-settings.json_: it contains connection properties.
-- _servicename\_API.json_: Generated API specification (swagger) of given service.
-- _servicename\_procedure.json_: contains information regarding procedures for that service.
-- _servicename\_query.json_: contains information regarding query for that service.
-- _servicename\_published\_datamodel.json_: contains database schema information. It plays a major role while updating DB changes. Whenever you do manual changes in the database you have to re-import to update this file.
-- _servicename\_draft\_datamodel.json_: Contains user modifications. It’ll delete when we do update/re-import database.
+- _servicename_API.json_: Generated API specification (swagger) of given service.
+- _servicename_procedure.json_: contains information regarding procedures for that service.
+- _servicename_query.json_: contains information regarding query for that service.
+- _servicename_published_datamodel.json_: contains database schema information. It plays a major role while updating DB changes. Whenever you do manual changes in the database you have to re-import to update this file.
+- _servicename_draft_datamodel.json_: Contains user modifications. It’ll delete when we do update/re-import database.
 - _servicedef.xml_: contains types information for this service.
 
 [![](/learn/assets/dbfiles.png)](/learn/assets/dbfiles.png)
@@ -42,11 +42,11 @@ Each of the layers performs its function and delegates the call to the next laye
 
 Import or creation of database within a WaveMaker app results in the auto-generation of ORM artifacts from the Database Schema and as such each Schema needs to have a Primary key either single or composite. In case your external database schema comes without a primary key, you need to assign a column(s) as virtual primary key else all the columns are treated as part of a composite primary key. For each entity imported, a REST API is generated for each of the CRUD operations, Filter and Count functionalities. These REST APIs are exposed via the API Designer and can be tested and reconfigured as per the application needs.
 
-[![](/learn/assets/db_apis.png)](/learn/assets/db_apis.png)As an example, we are using the following Employee-Department Database Schema (Sample hrdb that can be imported into Studio) with a unique constraint for Dept\_code on the department table:
+[![](/learn/assets/db_apis.png)](/learn/assets/db_apis.png)As an example, we are using the following Employee-Department Database Schema (Sample hrdb that can be imported into Studio) with a unique constraint for Dept_code on the department table:
 
 [![](/learn/assets/db_apis_db.png)](/learn/assets/db_apis_db.png)
 
-**Request Mapping:** _\[PROJECT\_ID\]/\[PROJECT\_NAME\]/services/\[SERVICE\_NAME\]/\[ENTITY\_NAME\]/_
+**Request Mapping:** _[PROJECT_ID]/[PROJECT_NAME]/services/[SERVICE_NAME]/[ENTITY_NAME]/_
 
 **Example:**
 
@@ -54,15 +54,15 @@ Import or creation of database within a WaveMaker app results in the auto-genera
 
 1. **CREATE** Inserts a record into the table _URL_: / _Request Type_: POST _Path Variables_: None _Request Parameter_: None _Request Body_: object in JSON format _Method Name Example_: createEmployee [![](/learn/assets/db_apis_create.png)](/learn/assets/db_apis_create.png)
 2. **READ (primary key based)** Retrieves the data associated with given ID value _URL_: /{id} _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getEmployee [![](/learn/assets/db_apis_readpk.png)](/learn/assets/db_apis_readpk.png)
-3. **READ (unique key based)** Retrieves the data associated with given unique key value _URL_: /\[UNIQUE\_KEY\]/{unique\_key\_value} _Request Type_: GET _Path Variables_: unique key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getByDeptCode (unique key for department entity) [![](/learn/assets/db_apis_readuk.png)](/learn/assets/db_apis_readuk.png)
-4. **READ (foreign key based)** Retrieves the data associated with given ID value from the related table _URL_: /{id..+}/\[relation\_field\] _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_:
+3. **READ (unique key based)** Retrieves the data associated with given unique key value _URL_: /[UNIQUE_KEY]/{unique_key_value} _Request Type_: GET _Path Variables_: unique key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getByDeptCode (unique key for department entity) [![](/learn/assets/db_apis_readuk.png)](/learn/assets/db_apis_readuk.png)
+4. **READ (foreign key based)** Retrieves the data associated with given ID value from the related table _URL_: /{id..+}/[relation_field] _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_:
     
     - Page,
     - Size,
     - Sort
     
     _Request Body_: none _Method Name_: findAssociatedEmployees (employee foreign key for department entity) [![](/learn/assets/db_apis_readfk.png)](/learn/assets/db_apis_readfk.png)
-5. **READ (foreign key based - self-referential)** Retrieves the data associated with given ID value _URL_: /{id..+}/\[relation\_field\] _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_:
+5. **READ (foreign key based - self-referential)** Retrieves the data associated with given ID value _URL_: /{id..+}/[relation_field] _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_:
     
     - Page,
     - Size,
@@ -95,7 +95,7 @@ Import or creation of database within a WaveMaker app results in the auto-genera
     
     - ExportOptions (Body)
         - custom query (optional, see here for [query syntax](#custom-query-syntax)),
-        - fields list (optional): \[{ “header”:”<column\_display\_name>”, “field”:”<entity\_field\_name>”, “expression”:”<custom\_expression>” (eg: (${field\_name} (or) <any string>)) }\]
+        - fields list (optional): [{ “header”:”<column_display_name>”, “field”:”<entity_field_name>”, “expression”:”<custom_expression>” (eg: (${field_name} (or) <any string>)) }]
         - exportType - data format for export can be EXCEL or CSV
         - fileName: exported file name.
     
@@ -130,7 +130,7 @@ The APIs generated by WaveMaker for all the imported tables will have methods th
 
 | **Operation** | **Expression** | **Supported Value Types** | **Result** | **Examples** |
 | --- | --- | --- | --- | --- |
-| equals | \= | Number or String | Values that equals to given value | 
+| equals | = | Number or String | Values that equals to given value | 
 - empId=1
 - firstname=’Eric’
 
@@ -152,7 +152,7 @@ The APIs generated by WaveMaker for all the imported tables will have methods th
 - empId<6
 
  |
-| greater than | \> | Number | Values greater than given value | 
+| greater than | > | Number | Values greater than given value | 
 
 - deptId>10
 
@@ -162,7 +162,7 @@ The APIs generated by WaveMaker for all the imported tables will have methods th
 - empId<=4
 
  |
-| greater than or equal to | \>= | Number | Values greater than or equal to given value | 
+| greater than or equal to | >= | Number | Values greater than or equal to given value | 
 
 - zip>=11
 
@@ -204,7 +204,7 @@ The APIs generated by WaveMaker for all the imported tables will have methods th
 - date is not null
 
  |
-| empty | \= | String | Values satisfying given condition | 
+| empty | = | String | Values satisfying given condition | 
 
 - lastname = ‘’
 
@@ -234,110 +234,3 @@ The APIs generated by WaveMaker for all the imported tables will have methods th
 
 For further reference to HQL query [http://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch16.html](http://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch16.html)
 
-< DB Access
-
-5\. Creating Backend Services
-
-- 5.1 Overview
-    - [i. Accessing Data](/learn/app-development/services/creating-backend-services/#accessing-data)
-        - [○ Life-cycle of data](/learn/app-development/services/creating-backend-services/#life-cycle)
-    - [ii. Manipulating Data](/learn/app-development/services/creating-backend-services/#manipulating-data)
-        - [○ Life-cycle of Events](/learn/app-development/services/creating-backend-services/#life-cycle-events)
-    - [iii. REST APIs](/learn/app-development/services/creating-backend-services/#rest-apis)
-- 5.2 Web Services
-    - [i. Overview](/learn/services/web-services/web-services/#overview)
-    - [ii. Variables for Invocation](/learn/services/web-services/web-services/#service-variable)
-    - iii. Working with SOAP Services
-        - [○ Overview](/learn/app-development/services/web-services/web-services/working-with-soap-services/#SOAP-service-setup)
-        - [○ SOAP Service Setup](/learn/app-development/services/web-services/working-with-soap-services/#SOAP-service-setup)
-        - [○ SOAP Service Settings](/learn/app-development/services/web-services/working-with-soap-services/#SOAP-service-settings)
-        - [○ Generated REST APIs](/learn/app-development/services/web-services/working-with-soap-services/#generated-rest-apis)
-        - [○ SOAP Service Usage](/learn/app-development/services/web-services/working-with-soap-services/#SOAP-service-usage)
-    - iv. Working with REST Services
-        - [○ Overview](/learn/app-development/services/web-services/rest-services/)
-        - [○ Test REST Service](/learn/app-development/services/web-services/rest-services/#test-API)
-        - [○ Configure REST Service](/learn/app-development/services/web-services/rest-services/#configure-REST-service)
-        - [○ REST Service Usage](/learn/app-development/services/web-services/rest-services/#REST-service-usage)
-    - v. Working with Web Sockets
-        - [○ Overview](/learn/app-development/services/web-services/working-with-websockets/)
-        - [○ Service Integration](/learn/app-development/services/web-services/working-with-websockets/#import)
-        - [○ Service Consumption](/learn/app-development/services/web-services/working-with-websockets/#variable)
-        - [○ Use Cases](/learn/app-development/services/web-services/working-with-websockets/#use-cases)
-- 5.3 Model Designer
-    - [i. Overview](/learn/app-development/services/model-designer/)
-- [5.4 Database Services](/learn/app-development/services/database-services/database-services/)
-    - [i. Overview](/learn/app-development/services/database-services/database-services/#)
-    - [ii. Supported Databases](/learn/app-development/services/database-services/database-services/#supported-databases)
-    - iii. Working with Databases
-        - [○ Overview](/learn/app-development/services/database-services/working-with-databases/#)
-        - [○ Adding Database](/learn/app-development/services/database-services/working-with-databases/#integrating-database)
-        - [○ Database Actions](/learn/app-development/services/database-services/working-with-databases/#database-actions)
-    - iv. Data Modelling
-        - [○ Overview](/learn/app-development/services/database-services/data-modelling/#)
-        - [○ Configuration Settings](/learn/app-development/services/database-services/data-modelling/#configuration-settings)
-        - [○ Database Designer](/learn/app-development/services/database-services/data-modelling/#database-designer)
-            - [● Schema Import Modes](/learn/app-development/services/database-services/database-schema-import-modes/)
-        - ○ Working with Database Schema
-            - [● Overview](/learn/app-development/services/database-services/working-database-schema/)
-            - [● Adding Tables and Columns](/learn/app-development/services/database-services/working-database-schema/#add-tables-columns)
-            - [● Working with Relationships](/learn/app-development/services/database-services/working-database-schema/#database-relationships)
-            - [● Identity Generators for Primary Key Column](/learn/app-development/services/database-services/working-database-schema/#identity-generators)
-            - [● Column Metadata Configuration](/learn/app-development/services/database-services/working-database-schema/#column-metadata-configuration)
-            - [● Virtual Primary Keys and Relations](/learn/app-development/services/database-services/working-database-schema/#virtual-primary-keys)
-            - [● Temporal Support](/learn/app-development/services/database-services/temporal-support/)
-    - v. Databases Access
-        - [○ Overview](/learn/app-development/services/database-access/)
-        - ○ Working with Queries
-            - [● Overview](/learn/app-development/services/database-services/working-with-queries/)
-            - [● Query Editor](/learn/app-development/services/database-services/working-with-queries/#query-editor)
-            - [● Types of Queries](/learn/app-development/services/database-services/working-with-queries/#query-types)
-            - [● Query Creation](/learn/app-development/services/database-services/working-with-queries/#query-creation)
-            - [● Query Usage](/learn/app-development/services/database-services/working-with-queries/#query-usage)
-            - [● Parameterised Query Creation](/learn/app-development/services/database-services/working-with-queries/#query-creation-parameterised)
-            - [● Query Operation Type](/learn/app-development/services/database-services/working-with-queries/#query-op-types)
-            - [● Query Architecture](/learn/app-development/services/database-services/working-with-queries/#query-architecture)
-        - ○ Working with Stored Procedures
-            - [● Overview](/learn/app-development/services/db-services/working-stored-procedures/)
-            - [● Procedure Creation](/learn/app-development/services/db-services/working-stored-procedures/#procedure-creation)
-            - [● Procedure Parameters](/learn/app-development/services/db-services/working-stored-procedures/#proc-params)
-            - [● Procedure Invocation](/learn/app-development/services/db-services/working-stored-procedures/#procedure-invocation)
-            - [● Procedure Architecture](/learn/app-development/services/db-services/working-stored-procedures/#procedure-architecture)
-        - [○ Versioning of Queries and Procedures](/learn/app-development/services/database-services/versioning-queries-procedures/)
-        - [○ Blob Support for Queries and Procedures](/learn/app-development/services/database-services/blob-support-queries-procedures/)
-        - [○ Invoking Queries & Procedures from Java Service](/learn/app-development/services/database-services/invoking-queriesprocedures-java-services/)
-        - [○ Database Views](/learn/app-development/services/db-services/database-views/)
-        - ○ Database Tools
-            - [● Overview](/learn/app-development/services/database-tools/)
-            - [● DB Shell](/learn/app-development/services/database-tools/#db-shell)
-            - [● DB Scripts](/learn/app-development/services/database-tools/#db-scripts)
-                - [● Import DB](/learn/app-development/services/database-tools/#import-db)
-                - [● Export DB](/learn/app-development/services/database-tools/#export-db)
-    - [vi. ORM Artifacts](#)
-        - [○ Layered Architecture](#layered-architecture)
-        - [○ Generated Files](#generated-files)
-        - [○ Generated APIs](#generated-apis)
-            - [● CRUD APIs](#crud-apis)
-            - [● Query APIs](#query-apis)
-            - [● Custom Query Syntax](#custom-query-syntax)
-- 5.5 Java Services
-    - [i. Overview](/learn/app-development/services/java-services/java-service/#overview)
-    - [ii. Java Services Framework](/learn/app-development/services/java-services/java-service/#java-services-framework)
-    - iii. Integration Services
-        - [○ Current Loggedin User](/learn/app-development/services/java-services/java-integration-services/#loggedin-user)
-        - [○ External Java Libraries](/learn/app-development/services/java-services/java-integration-services/#external-java-libraries)
-        - [○ Database Entities](/learn/app-development/services/java-services/java-integration-services/#db-services)
-        - [○ Named Queries](/learn/app-development/services/java-services/java-integration-services/#query-service)
-        - [○ Imported Web Services](/learn/app-development/services/java-services/java-integration-services/#web-services)
-    - [iv. Variables for Invocation](/learn/app-development/services/java-services/variables/)
-    - [v. Generated REST APIs](/learn/app-development/services/java-services/generated-rest-apis-api-designer/)
-- 5.6 API Designer
-    - [i. Overview](/learn/app-development/services/api-designer/api/)
-    - [ii. Database Services APIs](/learn/app-development/services/api-designer/database-service-apis/)
-    - [iii. Web Services APIs](/learn/app-development/services/api-designer/web-service-apis/)
-    - [iv. Java Services APIs](/learn/app-development/services/api-designer/java-service-apis/)
-    - [v. Security Services APIs](/learn/app-development/services/api-designer/security-service-apis/)
-- 5.7 3rd Party Libraries
-    - [i. Overview](/learn/app-development/services/3rd-party-libraries/)
-    - [ii. Including resource files](/learn/app-development/services/3rd-party-libraries/#resource-files)
-    - [iii. Using third-party JavaScript file](/learn/app-development/services/3rd-party-libraries/using-3rd-party-javascript-files/)
-    - [iv. Using third-party jar file](/learn/app-development/services/3rd-party-libraries/using-3rd-party-jar-files/)

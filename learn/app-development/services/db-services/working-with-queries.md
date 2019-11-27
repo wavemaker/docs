@@ -55,7 +55,7 @@ In this example, we will build a query to list the number of vacation days avail
     and e.DEPTID = d.DEPTID
     group by d.NAME
     
-5. **Execute** the query and see the results in the result box below the query window. Save the query as _vacation\_days_ with appropriate description.
+5. **Execute** the query and see the results in the result box below the query window. Save the query as _vacation_days_ with appropriate description.
 
 ### Query Usage
 
@@ -94,7 +94,7 @@ For example, let us modify the query above to accept the department name as inpu
 5. The parameters can be set to server-side properties like _current date, time, id, or username_ by picking the same for Type from under the **Server Side Properties** drop-down. When you select this option while executing the query the appropriate value is taken from the application rather than from the user. For example, if you have a query:
     
     select FIRSTNAME
-    from EMPLOYEE where EMP\_ID = :id
+    from EMPLOYEE where EMP_ID = :id
     
     You can, in the Parameter section, set the **parameter id Type** to _LoggedIn UserId_ from under the _Server Side Properties_. When you enable security using the database as the service provider and employee as the User table, then setting the id to _LoggedIn UserId_ will get the user id of the current logged in user. You need not bind the parameter again, explicitly.
 6. Parameter values can also be set to App Environment properties and be defined separately for different app environments ([know more](/learn/how-tos/using-app-environment-properties/)).
@@ -159,7 +159,7 @@ For all queries and procedures, there will be a Rest API generated with the Serv
 
 **Understanding generated Code** _File structure_ [![](/learn/assets/queryproc_files.png)](/learn/assets/queryproc_files.png)_Models_: Both _Request_ and _Response_ POJO classes are generated as: <queryName>Request/Response
 
-- These classes are generated in a package: <service\_package>.models.query
+- These classes are generated in a package: <service_package>.models.query
 - Response class is generated only for SELECT queries. The return type for Non-Select queries will be integer hence POJO class is not generated. Eg: query with name **getAllEmployees** will generate **GetAllEmployeesResponse** class with all returned columns.
 - For HQL queries existing Model classes will be used if possible, else a Response model similar to Native queries will be generated.
     - Eg: query `from Employee;`
@@ -170,7 +170,7 @@ For all queries and procedures, there will be a Rest API generated with the Serv
 
 _Services_: This layer exposes the methods related to the configured query and procedures. Controller layer uses these methods to complete the user requests. We recommend using methods from this layer in custom Java services.
 
-- Class with name QueryExecutorService is generated in the package <service\_package>.service For eg: for Service **hrdb**, class name will be **HrdbQueryExecutorService**
+- Class with name QueryExecutorService is generated in the package <service_package>.service For eg: for Service **hrdb**, class name will be **HrdbQueryExecutorService**
 - Method with name **execute<queryName>** will be generated for all configured queries
     - For SELECT and DELETE queries, all parameters are configured as arguments for that method. In the case of Paginated request Pageable argument is added to the method signature.
     - For INSERT and UPDATE queries, **<queryName>Request** is the argument.
@@ -181,7 +181,7 @@ _Services_: This layer exposes the methods related to the configured query and p
 
 [![](/learn/assets/query_files_service.png)](/learn/assets/query_files_service.png)_Controllers_:
 
-- Separate controller classes are generated for query and procedures with names as **QueryExecutorController** and **ProcedureExecutorController** respectively in package **<service\_package>.controller**.
+- Separate controller classes are generated for query and procedures with names as **QueryExecutorController** and **ProcedureExecutorController** respectively in package **<service_package>.controller**.
 - Rest API is generated for each configured query and procedure. Generated method signature will be same as service layer method signature.
 - For methods returning INT type, controller layer returns **IntegerWrapper**.
 

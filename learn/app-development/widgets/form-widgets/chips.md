@@ -171,11 +171,11 @@ where
 6. The multiple values will have to be delimited before you save the date in live form. This can be done through scripting. 
     1. Go to the Live Form events tab and for the "On before service call" event
     2. Select JavaScript from the drop down and in the script tab  add the code as below
-        
-        Page.liveform1Beforeservicecall = function($event, $operation, $data) { 
-                  $data.<field\_name> = $data.<field\_name>.join(','); 
-           };
-        
+    ```    
+    Page.liveform1Beforeservicecall = function($event, $operation, $data) { 
+                $data.<field_name> = $data.<field_name>.join(','); 
+        };
+    ```    
 
 **Example 3: Use a conditional class**:
 
@@ -184,49 +184,22 @@ where
 3. Set Data field property to All Fields,
 4. From the Styles tab bind Chip item class name to the following expression: bind: item.datavalue.department.name === 'Engineering'? 'skyblue' : 'mustard' This will check if employee's department name is engineering applies "skyblue" class else applies "mustard" class (note: here "item" denotes the chip object.) [![](/learn/assets/chips_ex3_1.png)](/learn/assets/chips_ex3_1.png)[![](/learn/assets/chips_ex3_2.png)](/learn/assets/chips_ex3_2.png)
 5. Add the following class to the app using the Style tab – for skyblue and mustard
-    
-    .nav.app-chips > li.skyblue .app-chip {
-        background-color: #50b4dd;
-        color: white;
-        font-weight: normal;
-    }
-    .nav.app-chips > li.mustard .app-chip {
-        background-color: #dda950;
-        color: white;
-        font-weight: normal;
-    }
-    
-    [![](/learn/assets/chips_ex3_3.png)](/learn/assets/chips_ex3_3.png)
+
+```
+.nav.app-chips > li.skyblue .app-chip {
+    background-color: #50b4dd;
+    color: white;
+    font-weight: normal;
+}
+.nav.app-chips > li.mustard .app-chip {
+    background-color: #dda950;
+    color: white;
+    font-weight: normal;
+}
+```
+
+[![](/learn/assets/chips_ex3_3.png)](/learn/assets/chips_ex3_3.png)
+
 6. Preview the page [![](/learn/assets/chips_ex3_4.png)](/learn/assets/chips_ex3_4.png)
 7. Setting the chip item class name (or Class Name property) as skyblue, will apply skyblue class to all the chips at runtime. [![](/learn/assets/chips_ex3_5.png)](/learn/assets/chips_ex3_5.png)
 
-## See More
-
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-
-- [3.1 Button](/learn/app-development/widgets/form/button/)
-- [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
-- [3.3 Calendar](/learn/app-development/widgets/form/calendar/)
-- [3.4 Checkbox](/learn/app-development/widgets/form/checkbox/)
-- [3.5 CheckboxSet](/learn/app-development/widgets/form/checkboxset/)
-- [3.6 Chips](/learn/app-development/widgets/form/chips/)
-    - [i. Features](#features)
-    - [ii. Properties](#properties)
-    - [iii. Events](#events)
-    - [iv. Use Cases](#use-cases)
-- [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
-- [3.8 Currency](/learn/app-development/widgets/form/currency/)
-- [3.9 Date](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.11 FileUpload](/learn/app-development/widgets/form/file-upload/)
-- [3.12 Number](/learn/app-development/widgets/form-widgets/number/)
-- [3.13 Radioset](/learn/app-development/widgets/form/radioset/)
-- [3.14 Rating](/learn/app-development/widgets/form/rating/)
-- [3.15 Select](/learn/app-development/widgets/form/select/)
-- [3.16 Select Locale](/learn/app-development/widgets/form/select-locale/)
-- [3.17 Slider](/learn/app-development/widgets/form/slider/)
-- [3.18 Switch](/learn/app-development/widgets/form/switch/)
-- [3.19 Text](/learn/app-development/widgets/form/text/)
-- [3.20 Textarea](/learn/app-development/widgets/form/textarea/)
-- [3.21 Time](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.22 Toggle](/learn/app-development/widgets/form/toggle/)

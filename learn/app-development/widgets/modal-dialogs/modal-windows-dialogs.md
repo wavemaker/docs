@@ -79,12 +79,12 @@ Page.button3Click = function($event, widget) {
 
 For hiding dialog:
 
-/\*\* function called on button1 click \*\*/
+/** function called on button1 click **/
         Page.button1Click = function($event, widget) {
             Page.Widgets.alertdialog1.close();
         };
 
-# Properties & Events
+## Properties & Events
 
 ### **Alert Dialog Properties**
 
@@ -192,8 +192,7 @@ Check this if you want the provided URL to be encoded at the run time.
 | Name | The name is a unique identifier for iframe dialog. |
 | Ok Text | This widget gives a pop-up window. It can be used to provide contextual information from an HTML source to the user. For example, here is a sample from the source. |
 | **Accessibility** |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
@@ -282,21 +281,3 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | On success | This event handler is called whenever a success event is triggered. |
 | On error | This event handler is called whenever an error event is triggered. |
 
-[8\. Modal Dialog Widgets](/learn/app-development/widgets/widget-library/#dialog)
-
-- [i. Overview](#overview)
-- [ii. Features](#features)
-    - [○ Alert Dialog](#alert-dialog)
-    - [○ Confirm Dialog](#confirm-dialog)
-    - [○ Design Dialog](#design-dialog)
-    - [○ Iframe Dialog](#iframe-dialog)
-    - [○ Login Dialog](#login-dialog)
-    - [○ Page Dialog](#page-dialog)
-- [iii. Script Access](#script-access)
-- [iv. Properties & Events](#properties-events)
-    - [○ Alert Dialog](#alert_properties)
-    - [○ Confirm Dialog](#confirm_properties)
-    - [○ Design Dialog](#design_properties)
-    - [○ Iframe Dialog](#iframe_properties)
-    - [○ Login Dialog](#login_properties)
-    - [○ Page Dialog](#page_properties)

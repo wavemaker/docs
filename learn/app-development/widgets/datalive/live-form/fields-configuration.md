@@ -38,7 +38,7 @@ There are various ways in which Form fields can be validated depending upon the 
 ```    
 Page.liveform1Beforeservicecall = function($data, $event) {
         function isValidData($data) {
-            /\*restrict password to be minimum of 6 characters\*/
+            /*restrict password to be minimum of 6 characters*/
             if ($data.password) {
                 if ($data.password.length < 6) {
                     return {

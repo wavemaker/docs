@@ -34,7 +34,7 @@ You can easily read the response data with the help of POJO classes. All propert
 Steps for manual Java Service Migration/Using latest Services
 
 1. Inject query/procedure service class (i.e `Query/ProcedureExecutorService`) by using `@Autowired`.
-2. For existing Java services, you can either modify the class name from `Query/ProcedureExecutorService\_V1` to `Query/ProcedureExecutorService` or inject a new field.
+2. For existing Java services, you can either modify the class name from `Query/ProcedureExecutorService_V1` to `Query/ProcedureExecutorService` or inject a new field.
 
 Execute query/procedures in the same way as following:
 

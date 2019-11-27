@@ -10,7 +10,7 @@ The **Nav** element represents a section of a page that links to other pages or 
 1. Bind the dataset for the nav elements using the _Value_ property and setting the _Action Items_ by mapping the properties from the value dataset to the action properties such as label, icon, link, badge value, sub actions.
 2. _Add Widgets_: Provides widget to be added to the nav panels such as Anchor, Menu, Popover, Button. Depending upon the widgets added to the nav various properties can be set:
     1. _Anchor_: can have _hyperlink_ to specify the destination link, _target_ where the linked document should be opened
-    2. _Menu_: can specify the _layout_, _position_ and _value_\-_action_ combination. [Click here for more on menu usage](/learn/app-development/widgets/dropdown-menu/)
+    2. _Menu_: can specify the _layout_, _position_ and _value_-_action_ combination. [Click here for more on menu usage](/learn/app-development/widgets/dropdown-menu/)
     3. _Popover_: can set the _content source_ and _content_ for further action. [Click here for Popover usage](/learn/app-development/widgets/navigation/popover/).
     4. _Button_: _on click event_ can be set for page navigation
 
@@ -20,7 +20,7 @@ From the Properties panel,  you can set the Nav Types and Layout
 
 <iframe width="100%" height="600" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Nav">Nav Types</iframe>
 
-# Properties
+## Properties
 
 Action IconClass for the icon. Choose from the options available based upon the structure of the Dataset Value.
 
@@ -71,7 +71,7 @@ Each _anchor_ widget events are available for adding functionality to this layou
 - [Basic Usage](/learn/app-development/widgets/navigation/nav-basic-usage/)
 - [How to build a multilevel navigation](/learn/app-development/widgets/navigation/nav-basic-usage/#multilevel)
 
-[6\. Navigation Widgets](/learn/app-development/widgets/widget-library/#nav-widgets)
+[6. Navigation Widgets](/learn/app-development/widgets/widget-library/#nav-widgets)
 
 - [6.1 Breadcrumb](/learn/app-development/widgets/navigation/breadcrumb/)
 - [6.2 Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu/)

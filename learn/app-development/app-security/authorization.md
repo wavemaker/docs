@@ -35,7 +35,7 @@ In case the role column is in a related table, use Custom query.
 - In the case of **Custom Role Configuration**, Query Type can be set to HQL or SQL. By default, HQL is selected and a default query is generated, which can be modified. 
 
 :::note
-The username and role can reside in separate tables and you can write a query to retrieve the information. **The parameter to the query LOGGED\_IN\_USERNAME needs to be retained as it is, WaveMaker stores the username details in this variable**. 
+The username and role can reside in separate tables and you can write a query to retrieve the information. **The parameter to the query LOGGED_IN_USERNAME needs to be retained as it is, WaveMaker stores the username details in this variable**. 
 :::
 
 [![](/learn/assets/sec_user_db_role2.png)](/learn/assets/sec_user_db_role2.png)

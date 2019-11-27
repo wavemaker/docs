@@ -7,7 +7,7 @@ id: ""
 
 Containers are semantically correct for laying out content. Its most common use will likely be for stylistic purposes — i.e., wrapping some semantically marked-up content in a CSS-styled container.
 
-# Properties
+## Properties
 
 You can also use the Conditional Class property from the Style tab to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/).
 
@@ -20,9 +20,7 @@ You can also use the Conditional Class property from the Style tab to set the cl
 | **Content** |
 | Content | This bindable property, defines the content to be displayed within the container:
 - Inline Content - HTML content,
-- Page Content - in the form of Partial Pages, choose from the list provided
-
- |
+- Page Content - in the form of Partial Pages, choose from the list provided <br>  |
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
@@ -30,7 +28,7 @@ You can also use the Conditional Class property from the Style tab to set the cl
 | **Format** |
 | Horizontal Align | Set text alignment horizontally. |
 
-# Events
+## Events
 
 | **Event** | **Description** |
 | --- | --- |
@@ -53,14 +51,3 @@ You can also use the Conditional Class property from the Style tab to set the cl
 | **Keyboard Events** |
 | On enter key press | When the user hits ENTER/Return while the focus is in this editor, execute the specified event handler. |
 
-[2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
-
-- [2.1 Accordion](/learn/app-development/widgets/container/accordion/)
-- [2.2 Container](/learn/app-development/widgets/container/container/)
-    - [i. Properties](#properties)
-    - [ii. Events](#events)
-- [2.3 Grid Layout](/learn/app-development/widgets/container/grid-layout/)
-- [2.4 Panel](/learn/app-development/widgets/container/panel/)
-- [2.5 Tabs](/learn/app-development/widgets/container/tabs/)
-- [2.6 Tile](/learn/app-development/widgets/container/tile/)
-- [2.7 Wizard](/learn/app-development/widgets/container/wizard/)

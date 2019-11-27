@@ -15,7 +15,9 @@ For displaying events in the Calendar widget you need a variable of type _Array_
 
 1. Drag and drop a Calendar widget onto the canvas
 2. Bind the variable consisting the data to the **Dataset Value** property of the widget.
-3. Set the properties _Title_, _Start_, _End_, _All day_, _Class name_ to the keys of the variable bound. **Note**: Start property is a must, other properties are optional.
+3. Set the properties _Title_, _Start_, _End_, _All day_, _Class name_ to the keys of the variable bound. :::note
+Start property is a must, other properties are optional.
+:::
 4. **Enable controls** There are five different types of controls on the calendar that can be enabled to:
     - navigate between the months, weeks and days, depending on the calendar view
     - select current day
@@ -40,18 +42,18 @@ The following are the outbound properties of a Calendar widget that can be captu
 
 - The _Month_ view of the Calendar displays all the days in the month. 
     
-    <iframe width="100%" height="715" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarMonthView">Calendar Month View</iframe>
+<iframe width="100%" height="715" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarMonthView">Calendar Month View</iframe>
     
 - The _Week_ view of the Calendar displays all the days in the week. 
     
-    <iframe width="100%" height="715" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarWeekView">Calendar Week View</iframe>
+<iframe width="100%" height="715" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarWeekView">Calendar Week View</iframe>
     
 - The _Day_ view of the Calendar displays all the events on the day. 
     
-    <iframe width="100%" height="715" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarDayView">Calendar Day View</iframe>
+<iframe width="100%" height="715" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarDayView">Calendar Day View</iframe>
     
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -75,39 +77,13 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
-| Type | This property allows you to set the type of the calendar widget:
+| Type | This property allows you to set the type of the calendar widget: <br> - agenda, or <br> - basic (default). <br>  |
+| Enable Controls | This property allows you to enable the header controls for calendar widget. These include <br> - navigation - to navigate previous/next month/week/day(depending upon the display) on the calendar, <br> - today - go to today's location on the calendar, <br> - month - to display entire month, <br> - week - to display entire week, <br> - day - to display entire day. <br> All these controls on the calendar are used to navigate between the months and switch the view to _Month_(or) _Week_ (or) _Day._ <br> <br> **Note:** _This property is shown only for the Web version of the Calendar._ |
+| View | This property allows you to set the default view of the calendar widget: <br> - month (default),
+- week or <br> - day. <br>  |
+| Selection Mode | This property can be used to control the user selection of the dates using a simple mouse drag operation. The values can be: <br> - _None_: no selection, the calendar is just there to present data, not to be selected <br> - _Single_: only one row can be selected at a time <br> - _Multiple_: many rows can be selected at a time. <br> |
 
-- agenda, or
-- basic (default).
-
- |
-| Enable Controls | This property allows you to enable the header controls for calendar widget. These include
-
-- navigation - to navigate previous/next month/week/day(depending upon the display) on the calendar,
-- today - go to today's location on the calendar,
-- month - to display entire month,
-- week - to display entire week,
-- day - to display entire day.
-
-All these controls on the calendar are used to navigate between the months and switch the view to _Month_(or) _Week_ (or) _Day._
-
-**Note:-** _This property is shown only for the Web version of the Calendar._ |
-| View | This property allows you to set the default view of the calendar widget:
-
-- month (default),
-- week or
-- day.
-
- |
-| Selection Mode | This property can be used to control the user selection of the dates using a simple mouse drag operation. The values can be:
-
-- _None_: no selection, the calendar is just there to present data, not to be selected
-- _Single_: only one row can be selected at a time
-- _Multiple_: many rows can be selected at a time.
-
- |
-
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
@@ -119,13 +95,13 @@ All these controls on the calendar are used to navigate between the months and s
 | On Event Click | This event handler is triggered when an event is clicked in the calendar. |
 | On Event Render | This event handler is triggered when an event is rendered. |
 
-# Methods
+## Methods
 
 To set the properties of the calendar widget through the script, access the properties on the calendar as (consider the calendar with name ‘wmcalendar’) Page.Widgets.wmcalendar.propertyname and change or assign the values accordingly. For example:
 
-- To set the first day of the month view \[Default: 0 (Sunday)\]: Page.Widgets.wmcalendar.calendarOptions.calendar.firstDay = 0;
-- To hide the all day slot of the agenda view \[Default: true\]: Page.Widgets.wmcalendar.calendarOptions.calendar.allDaySlot= false;
-- To set the text of the all-day slot in the agenda view \[Default: ‘all-day’\]: Page.Widgets.wmcalendar.calendarOptions.calendar.allDayText= ‘all-day’;
+- To set the first day of the month view [Default: 0 (Sunday)]: Page.Widgets.wmcalendar.calendarOptions.calendar.firstDay = 0;
+- To hide the all day slot of the agenda view [Default: true]: Page.Widgets.wmcalendar.calendarOptions.calendar.allDaySlot= false;
+- To set the text of the all-day slot in the agenda view [Default: ‘all-day’]: Page.Widgets.wmcalendar.calendarOptions.calendar.allDayText= ‘all-day’;
 
 Other properties which can be set using the similar methods: For more information on Calendar, properties [see here.](https://fullcalendar.io/docs/)
 
@@ -198,40 +174,8 @@ Page.Widgets.calendar.rerenderEvents();
 
  |
 
-# Use Cases
+## Use Cases
 
 - [How to create an event and save it in a Database](/learn/how-tos/calendar-usage-create-event/)
 - [How to integrate with Google Calendar](/learn/how-tos/calender-usage-google-calendar-integration/)
 
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-
-- [3.1 Button](/learn/app-development/widgets/form/button/)
-- [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
-- [3.3 Calendar](#)
-    - [i. Features](#features)
-        - [○ Display Events](#display-events)
-        - [○ Capturing Events](#capture-events)
-        - [○ Calendar Configuration](#configuration)
-    - [ii. Properties](#properties)
-    - [iii. Events](#events)
-    - [iv. Methods](#methods)
-    - [v. Use Cases](#use-cases)
-- [3.4 Checkbox](/learn/app-development/widgets/form/checkbox/)
-- [3.5 CheckboxSet](/learn/app-development/widgets/form/checkboxset/)
-- [3.6 Chips](/learn/app-development/widgets/form-widgets/chips/)
-- [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
-- [3.8 Currency](/learn/app-development/widgets/form/currency/)
-- [3.9 Date](/learn/app-development/widgets/form/date/)
-- [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.11 FileUpload](/learn/app-development/widgets/form/file-upload/)
-- [3.12 Number](/learn/app-development/widgets/form-widgets/number/)
-- [3.13 Radioset](/learn/app-development/widgets/form/radioset/)
-- [3.14 Rating](/learn/app-development/widgets/form/rating/)
-- [3.15 Select](/learn/app-development/widgets/form/select/)
-- [3.16 Select Locale](/learn/app-development/widgets/form/select-locale/)
-- [3.17 Slider](/learn/app-development/widgets/form/slider/)
-- [3.18 Switch](/learn/app-development/widgets/form/switch/)
-- [3.19 Text](/learn/app-development/widgets/form/text/)
-- [3.20 Textarea](/learn/app-development/widgets/form/textarea/)
-- [3.21 Time](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.22 Toggle](/learn/app-development/widgets/form/toggle/)

@@ -152,14 +152,14 @@ To support such cases where you want to control whether to include a particular 
     
     _Example_: Considering hrdb sample database. Let's say you want to assign default ROLE or NULL while creating new USER. To achieve this un-select the insertable option for ROLE column in the USER table. _Generated Code_: In _User.java_ that column’s insertable property marked as false
     
-       @Column(name = "\`ROLE\`", nullable = true, insertable = false, length = 20)
+       @Column(name = "`ROLE`", nullable = true, insertable = false, length = 20)
         public String getRole() {
             return this.role;
         }
     
     Insert SQL: ROLE column was ignored in the insert script so that the value will be assigned with configured default value or NULL.
     
-    insert into PUBLIC."USER" ("USER\_ID", "PASSWORD", "TENANT\_ID", "USERNAME") values (default, ?, ?, ?)
+    insert into PUBLIC."USER" ("USER_ID", "PASSWORD", "TENANT_ID", "USERNAME") values (default, ?, ?, ?)
     
 - **Updatable**: If the updatable option is selected, then the values will be passed at the time of updating the record in the database. If updatable option alone is selected (insertable option unchecked) the value will be passed to the database during an update. The value will not be passed for that column during insert. If the _updatable option is not selected_, then the value of the column during the update of the record, will be based on the following rules:
     
@@ -168,14 +168,14 @@ To support such cases where you want to control whether to include a particular 
     
     _Example_: Considering hrdb sample database. Let's say you don’t want to change the USERNAME column while updating USER table. So to do that we have to un-select the updatable option for USERNAME column in the USER table. _Generated Code_: In _User.java_ that column’s updatable property marked as false
     
-       @Column(name = "\`USERNAME\`", nullable = true, updatable = false, length = 20)
+       @Column(name = "`USERNAME`", nullable = true, updatable = false, length = 20)
         public String getUsername() {
             return this.username;
         }
     
     Update SQL: USERNAME column was ignored in update script.
     
-    update PUBLIC."USER" set "PASSWORD"=?, "ROLE"=?, "TENANT\_ID"=? where "USER\_ID"=?
+    update PUBLIC."USER" set "PASSWORD"=?, "ROLE"=?, "TENANT_ID"=? where "USER_ID"=?
     
 
 ## Data Validators
@@ -186,11 +186,7 @@ There may be situations where you might want to set validations for user-defined
 
 | Validator | Column Data Type | Description | Values |
 | --- | --- | --- | --- |
-| Length | String | It defines the number (minimum and maximum) of input characters that are allowed for the column. | It expects two integer values:
-- Min
-- Max
-
- |
+| Length | String | It defines the number (minimum and maximum) of input characters that are allowed for the column. | It expects two integer values:<br> - Min <br> - Max <br> |
 | Email | String | If email validator is given, the value given to that column tested for default email pattern. You can enhance the validation by specifying a regular expression, for example, allow emails for a specific domain. | RegExp: optional |
 | Credit Cart Number | String | This column expects 16 digits numeric number. Basic mod 10 checksum validation is performed. |  |
 | Pattern | String | It checks for the particular pattern present in that column value else throws a validation error. | RegExp |
@@ -198,20 +194,10 @@ There may be situations where you might want to set validations for user-defined
 | AssertFalse | Boolean | The value of that column must be provided as false. |  |
 | Min | Byte, Integer, Long, Short, BigInteger | The minimum value allowed. |  |
 | Max | Byte, Integer, Long, Short, BigInteger | The maximum value allowed. |  |
-| Range | Byte, Integer, Long, Short, BigInteger | The value of the column should be between a minimum and maximum values. | It expects two integer values:
-
-- Min
-- Max
-
- |
+| Range | Byte, Integer, Long, Short, BigInteger | The value of the column should be between a minimum and maximum values. | It expects two integer values: <br> - Min <br> - Max <br> |
 | DecimalMin | Double, BigDecimal | The minimum value allowed. |  |
 | DecimalMax | Double, BigDecimal | The maximum value allowed. |  |
-| DecimalRange | Double, BigDecimal | The value of the column should be between a minimum and maximum values. | It expects two integer values:
-
-- Min
-- Max
-
- |
+| DecimalRange | Double, BigDecimal | The value of the column should be between a minimum and maximum values. | It expects two integer values: <br> - Min <br>- Max |
 | Future |  Date, Time, Timestamp | The value in this column should be ahead of current (runtime) date/time/timestamp |  |
 | Past |  Date, Time, Timestamp | The value in this column should be behind current (runtime) date/time/timestamp |  |
 

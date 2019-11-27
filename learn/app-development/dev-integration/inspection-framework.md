@@ -187,12 +187,12 @@ If you want to remove AngularJS constant this rule can help you by warning you o
 
 #### Examples of incorrect code for this rule:
 
-Application.constant('MY\_CONSTANT1', 'The Constant Text Value');
+Application.constant('MY_CONSTANT1', 'The Constant Text Value');
 
 ### Use
 
 Application.$controller(‘$scope’, ‘myService’ function($scope, myService) {
-$scope.testValue = MY\_CONSTANT1;
+$scope.testValue = MY_CONSTANT1;
 });
 
 #### Examples of correct code for this rule:
@@ -212,19 +212,19 @@ If you want to remove AngularJS value this rule can help you by warning you of a
 
 #### Examples of incorrect code for this rule:
 
-Application.value(‘Test\_Value’, ‘Test’);
+Application.value(‘Test_Value’, ‘Test’);
 
 ### Use
 
 Application.$controller(‘$scope’, ‘myService’ function($scope, myService) {
-$scope.testValue = Test\_Value;
+$scope.testValue = Test_Value;
 });
 
 #### Examples of correct code for this rule:
 
 Create constants object in script file
 App.values = {
-	‘Test\_Value’: ‘Test’
+	‘Test_Value’: ‘Test’
 }
 
 ## No AngularJS $scope

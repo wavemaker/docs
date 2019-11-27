@@ -5,15 +5,7 @@ id: ""
 
 As we have [seen here](/learn/app-development/custom-widgets/custom-widgets/), Prefabs are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker.
 
-In this document, we will be discussing the various phases of building you own Prefabs:
-
-- [Building Prefab](#build-prefabs)
-- [Prefab Configuration](#prefab-settings) like resources, properties, events, methods, and packaging.
-- [Publishing Prefabs](#publish-prefab) - [publish to workspace](#publish-to-workspace), [update a published prefab](#update-prefab), [updating in a project](#update-in-project), [bundling](#bundled-prefabs) and [version mismatches](#conflicts)
-- [Delete Prefab](#delete-prefab) from your project
-- [Accessing Prefab through Script](#accessing-prefab-through-scripting)
-
-# Build your own Prefabs
+## Build your own Prefabs
 
 **Prefabs** are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker. [![](/learn/assets/prefab_create.png)](/learn/assets/prefab_create.png)
 
@@ -21,7 +13,7 @@ In this document, we will be discussing the various phases of building you own P
 2. Enter a **Name**, set an **Icon** for the Provatar and enter **Description**
 3. Review the **Package** and **Copyright** information and **Save** to continue. Make changes if needed.
 
-# Prefab Configuration
+## Prefab Configuration
 
 To **Configure ****Prefab**, from [Project Configurations](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) click **Settings** to select **Config Prefab** option. The various configurations are grouped under various headings for developer convenience
 
@@ -39,27 +31,28 @@ Under this tab, you can set the following resource references as needed by your
 Users can add Prefab properties, which are exposed to the developers using the Prefab. These properties can take some input from the app(inbound) or give some output to the app(outbound) or both. These properties are defined in the Prefab scope. These properties will be displayed in the properties panel when the user uses the Prefab. The properties are further classified into UI and Server properties.
 
 - _UI Properties_: These are the properties that can be set from the front-end by the app developer using the Prefab
-    - General:
-        - _Name_ a meaningful name in small characters,
-        - _Display Name_: property for setting the display name of the property in the properties panel,
-        - _Description_: This property can be used to set the help text for the property in the properties panel. This will also be used when generating Documentation for the Prefab while publishing the same,
-    - Data:
-        - _Data Type_: of the value that can be entered for this property,
-        - _Default Value_: value given to the property, in case the user does not enter any value,
-        - _Binding Type_: specifies the binding behavior of the property:
-            - _in-bound_ allows binding for input value for the property by giving a bind icon next to it,
-            - _out-bound_ allows for the value of this property to be bound to another widget by exposing it in the binding dialog,
-            - _in-out-bound_: allows both input and output binding.
-    - _Widget_: to be displayed in the properties panel  - only for inbound properties
-        - _Type_: of widget for display;
-        - _Data Options_: list of values for user selection. (NOTE: Available only for the select, checkbox set, radioset widget type and can be bound to a variable). This can be set to:
-            - _Custom_ - Dataset property can be populated with comma-separated values or bound to a variable.
-            - _Depends on UI property_ - Property Name can be set to the already declared in-bound property. If the selected property has an object structure the same will be retained.
-        - _Show_: whether the property is visible or not, can be conditional if bound to a variable returning a boolean value;
-        - _Disabled_: whether the property is disabled or not, can be conditional if bound to a variable returning a boolean value.
+
+- General:
+    - _Name_ a meaningful name in small characters,
+    - _Display Name_: property for setting the display name of the property in the properties panel,
+    - _Description_: This property can be used to set the help text for the property in the properties panel. This will also be used when generating Documentation for the Prefab while publishing the same,
+- Data:
+    - _Data Type_: of the value that can be entered for this property,
+    - _Default Value_: value given to the property, in case the user does not enter any value,
+    - _Binding Type_: specifies the binding behavior of the property:
+        - _in-bound_ allows binding for input value for the property by giving a bind icon next to it,
+        - _out-bound_ allows for the value of this property to be bound to another widget by exposing it in the binding dialog,
+        - _in-out-bound_: allows both input and output binding.
+- _Widget_: to be displayed in the properties panel  - only for inbound properties
+    - _Type_: of widget for display;
+    - _Data Options_: list of values for user selection. (NOTE: Available only for the select, checkbox set, radioset widget type and can be bound to a variable). This can be set to:
+        - _Custom_ - Dataset property can be populated with comma-separated values or bound to a variable.
+        - _Depends on UI property_ - Property Name can be set to the already declared in-bound property. If the selected property has an object structure the same will be retained.
+    - _Show_: whether the property is visible or not, can be conditional if bound to a variable returning a boolean value;
+    - _Disabled_: whether the property is disabled or not, can be conditional if bound to a variable returning a boolean value.
 - _Server Properties_: These are the properties that need to be set from the back-end (using Java service) by the app developer using the Prefab. These would typically include the token for authorization etc..
-    - _Name_: of the property
-    - _Default Value_: for the property.
+- _Name_: of the property
+- _Default Value_: for the property.
 
 [![](/learn/assets/prefabsettings_props.png)](/learn/assets/prefabsettings_props.png)
 
@@ -82,7 +75,7 @@ Following are the pre-defined events for every Prefab:
 
 Apart from these, Prefab developer can define **custom events**, as mentioned in the previous section. These events are displayed in the Events tab of the Prefab properties panel, after drag and drop in the project page. Note that these custom events need to be triggered from within the Prefab. Actions assigned to these events from the project containing the Prefab will be performed only when the event is triggered. Events can be triggered using the following code (parameters $scope and $data are optional):
 
-Prefab.<event\_name>($scope, $data)
+Prefab.<event_name>($scope, $data)
 
 [![](/learn/assets/prefab_event_method.png)](/learn/assets/prefab_event_method.png)
 
@@ -90,7 +83,7 @@ Prefab.<event\_name>($scope, $data)
 
 You can define functionality in JavaScript which can be used by the developer. The developer can choose to invoke these methods in any way within the application using the Prefab as follows:
 
-Page.<prefab\_name>.<method\_name>(<parameter\_values>)
+Page.<prefab_name>.<method_name>(<parameter_values>)
 
 - _Name_ of the method;
 - _Description_ of the method. This will be used in the generation of the documentation for the Prefab while publishing;
@@ -108,7 +101,7 @@ These define how the Prefab appears in the Widget Toolbox in the apps
 
 [![](/learn/assets/prefabsettings_packagint-1.png)](/learn/assets/prefabsettings_packagint-1.png)
 
-# Testing Prefab
+## Testing Prefab
 
 The preview option on Prefab allows you to test your Prefab. The following options are available from the Preview screen:
 
@@ -117,7 +110,7 @@ The preview option on Prefab allows you to test your Prefab. The following optio
 3. The various methods included in the Prefab can be viewed and invoked from the Methods tab. [![](/learn/assets/Prefab_preview3.png)](/learn/assets/Prefab_preview3.png)
 4. The various events invoked can be viewed from the Events Tab. [![](/learn/assets/Prefab_preview4.png)](/learn/assets/Prefab_preview4.png)
 
-# Publish Prefab
+## Publish Prefab
 
 Publishing a Prefab has the following options:
 
@@ -233,16 +226,16 @@ Assume that the Project P developer choose to update Prefab C
 
 [![](/learn/assets/prefab_conflict5.png)](/learn/assets/prefab_conflict5.png)
 
-# Deleting Prefab
+## Deleting Prefab
 
 You can delete a custom Prefab from your project using the delete icon in the [Studio Artifacts](http://[supsystic-show-popup id=120]) listing dialog.
 
 [![](/learn/assets/prefab_publish_artefacts.png)](/learn/assets/prefab_publish_artefacts.png)
 
-# Accessing Prefab through Scripting
+## Accessing Prefab through Scripting
 
 - Once the Prefab properties are set, a **onPropertyChange** event is created, which can be programmed from the Script. [![](/learn/assets/Prefab_Script.png)](/learn/assets/Prefab_Script.png)
-- The exposed properties are defined on the Prefab scope. They can be accessed/modified in the Prefab script using: Prefab.\[propertyname\]
+- The exposed properties are defined on the Prefab scope. They can be accessed/modified in the Prefab script using: Prefab.[propertyname]
 
 We have seen the basics of creating a Prefab including the configuration settings, and various publishing options. Check out various use cases for Prefab creation by [clicking this link](/learn/app-development/custom-widgets/use-cases-prefabs/).
 

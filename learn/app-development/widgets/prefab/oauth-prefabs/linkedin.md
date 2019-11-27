@@ -37,14 +37,4 @@ In order to use the **LinkedIn** OAuth prefab, please follow the below steps: **
 12. To use LinkedIn APIs, you need to [import the appropriate web service](/learn/web-services/#setup). Go to [https://apigee.com/console/linkedin](https://apigee.com/console/linkedin), select the required API and get the Authorization key.
 13. From WaveMaker app designer, import a web service with the proper credentials as obtained from the above step. [![ld_testurl](/learn/assets/ld_testurl.png)](/learn/assets/ld_testurl.png)
 
-[9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
 
-- [9.1 Youtube](/learn/app-development/widgets/prefab/youtube/)
-- [9.2 Googlemaps](/learn/app-development/widgets/prefab/googlemaps/)
-- [9.3 QRCode](/learn/app-development/widgets/prefab/qrcode/)
-- [9.4 OAuth Prefabs](/learn/app-development/widgets/prefab/oauth-prefabs/)
-    - [9.4.1 Box](/learn/app-development/widgets/prefab/oauth-prefabs/box/)
-    - [9.4.2 Facebook](/learn/app-development/widgets/prefab/oauth-prefabs/facebook/)
-    - [9.4.3 Google](/learn/app-development/widgets/prefab/oauth-prefabs/google/)
-    - [9.4.4 Instagram](learn/app-development/widgets/prefab/oauth-prefabs/instagram/)
-    - [9.4.5 LinkedIn](#)

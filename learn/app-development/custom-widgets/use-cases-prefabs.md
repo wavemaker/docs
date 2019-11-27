@@ -11,7 +11,7 @@ The following Use Cases explain in detail how to create Prefabs:
 - [Create Prefab Using D3 Library (DataMaps)](/learn/how-tos/create-prefab-using-d3-library-datamaps/)
 - [Create Prefab Using JQuery Plugin – showcases using Events and Methods](/learn/how-tos/create-prefab-using-jquery-plugin/)
 
-4\. Prefabs - Custom Widgets
+4. Prefabs - Custom Widgets
 
 - 4.1 Prefabs - Custom Widgets & Extensions
     - i. Overview

@@ -5,33 +5,19 @@ id: ""
 
 **Progress Bar** widget can be used to show the status of any given event. It can be used to represent the completion progress of a task. Progress may be either indeterminate — meaning it is unclear how much work remains before the task is complete (e.g., the task is waiting for a response from a remote host) — or a numeric value between 0 and a given maximum, explicitly specifying the fraction of work that has so far been completed
 
-# Features
+## Features
 
 <iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ProgressBar">Progress Bar</iframe>
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
 | Name | The name is a unique identifier for progress bar widget. |
-| Type | Indicates the format you want to use to display the progress bar. Choose from
-- _default_,
-- _default-striped_,
-- _success_,
-- _success-striped_,
-- _info_,
-- _info-striped_,
-- _warning_,
-- _warning-striped_,
-- _danger_,
-- _danger-striped_.
-
- |
+| Type | Indicates the format you want to use to display the progress bar. Choose from <br> - _default_, <br> - _default-striped_, <br> - _success_, <br> - _success-striped_, <br> - _info_, <br> - _info-striped_, <br> - _warning_, <br> - _warning-striped_, <br> - _danger_, <br> - _danger-striped_. <br>  |
 | **Accessibility** |
 | Hint | Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br> <br> NOTE: In Safari browsers, by default, Tab highlights only text fields. <br> To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
@@ -46,14 +32,9 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Display Format | Format in which the progress needs to be displayed. You can choose from a list of decimal options like 9, 9.9, 9.99 etc. If the progress bar's data value is 30.7056 and the selected display format is: -  9.9 then label will be rounded as 30.7 -  9.999% then label will be rounded to 30.706% |
-| Caption placement | Placement of progress bar value can be
+| Caption placement | Placement of progress bar value can be <br> - inside or <br> - hidden <br>  |
 
-- inside or
-- hidden
-
- |
-
-# Events
+## Events
 
 | **Event** | **Description** |
 | --- | --- |
@@ -70,21 +51,3 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | On complete | This event handler is called on complete of the progress. |
 | On before update | This event handler is called on before update of the progress. |
 
-[4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
-
-- [4.1 Anchor](/learn/app-development/widgets/basic/anchor/)
-- [4.2 Audio](/learn/app-development/widgets/media-widgets/)
-- [4.3 HTML](/learn/app-development/widgets/basic/html/)
-- [4.4 Icon](/learn/app-development/widgets/basic/icon/)
-- [4.5 Iframe](/learn/app-development/widgets/basic/iframe/)
-- [4.6 Label](/learn/app-development/widgets/basic/label/)
-- [4.7 Message](/learn/app-development/widgets/basic/message/)
-- [4.8 Picture](/learn/app-development/widgets/media-widgets/)
-- [4.9 Progress Bar](/learn/app-development/widgets/basic/progress-bar/)
-    - [i. Properties](#properties)
-    - [ii. Events](#events)
-- [4.10 Richtext Editor](/learn/app-development/widgets/basic/richtext-editor/)
-- [4.11 Search](/learn/app-development/widgets/basic/search/)
-- [4.12 Spinner](/learn/app-development/widgets/basic/spinner/)
-- [4.13 Tree](/learn/app-development/widgets/basic/tree/)
-- [4.14 Video](/learn/app-development/widgets/media-widgets/)

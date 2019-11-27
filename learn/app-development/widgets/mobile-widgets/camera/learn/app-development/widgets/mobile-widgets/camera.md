@@ -5,7 +5,7 @@ id: ""
 
 **The camera** is a**button based widget that opens device camera for taking photos or videos. The path of the photo or video captured is exposed as outbound property ‘localFilePath’.**
 
-# Features
+## Features
 
 The camera can be used for taking a picture or video. To specify the mode of the camera, set the **Capture Type** property to Image or Video.
 
@@ -16,11 +16,11 @@ Following **Image Properties** can be further configured:
 - _Encoding Type_ _-_ the format in which the image has to be saved. Supported formats are JPEG and PNG.
 - _Image Quality_ _-_ This is JPEG compression level in percentage. So, this value is used only when JPEG is selected as encoding type. If the value is 100, then no compression is applied to the image.
 - _Save To Gallery_ _-_ If turned on, then photos taken using this widget will be saved to the device gallery.
-- _Edit_ _\-_ If this property is checked, then the user can edit or crop the picture taken.
+- _Edit_ _-_ If this property is checked, then the user can edit or crop the picture taken.
 
 You can use the _localFilePath_ and _localFile_ to further enhance the app functionality. These properties are passed as parameters for Camera Success Event. See  [Use Case](#store-image) for more details. [![](/learn/assets/camera_bind.png)](/learn/assets/camera_bind.png)
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -46,7 +46,7 @@ You can use the _localFilePath_ and _localFile_ to further enhance the app funct
 | Save to Gallery | Save the image to the photo album on the device after capture |
 | Edit | Allow simple editing of the image before selection. |
 
-# Events
+## Events
 
 - **On Success** - The event listener to call when a photo or video is successfully captured. This can be bound to a Database CRUD Variable of Insert operation, to save the picture into a database
 
@@ -57,7 +57,7 @@ Capture an image using camera and store in the database using CRUD variable (we 
 1. Bind the Input Fields from the Data tab for the CRUD Variable to the Camera -> localFile field [![](/learn/assets/camera_db_storefields.png)](/learn/assets/camera_db_storefields.png)[![](/learn/assets/camera_db_storebind.png)](/learn/assets/camera_db_storebind.png)
 2. On Sucess event of Camera widget needs to invoke the above Insert Variable [![](/learn/assets/camera_db_storeevent.png)](/learn/assets/camera_db_storeevent.png)
 
-# Use Cases
+## Use Cases
 
 ### Overview
 
@@ -74,17 +74,14 @@ Camera Widget can be used to capture images and videos from a Mobile App In this
 
 ### Step 4: Build & Run
 
-1. Build the apk, install it on an android phone and open the app. [![](/learn/assets/camera_run1.png)](/learn/assets/camera_run1.png)
-2. Open the app and click camera button and take a photo. [![](/learn/assets/camera_run2.png)](/learn/assets/camera_run2.png)
-3. The captured image will get displayed in the app. [![camera_run3](/learn/assets/camera_run3.png)](/learn/assets/camera_run3.png)
+1. Build the apk, install it on an android phone and open the app. 
 
-[10\. Mobile & Device Widgets](/learn/app-development/widgets/widget-library/#mobile)
+[![](/learn/assets/camera_run1.png)](/learn/assets/camera_run1.png)
 
-- [10.1 Media List](/learn/app-development/widgets/mobile-widgets/media-list/)
-- [10.2 Segmented Control](/learn/app-development/widgets/mobile-widgets/segmented-control/)
-- [10.3 Barcode Scanner](/learn/app-development/widgets/mobile-widgets/barcode-scanner/)
-- [10.4 Camera](/learn/app-development/widgets/mobile-widgets/camera/)
-    - [i. Features](#features)
-    - [ii. Properties](#properties)
-    - [iii. Events](#events)
-    - [iv. Use Cases](#use-cases)
+2. Open the app and click camera button and take a photo. 
+
+[![](/learn/assets/camera_run2.png)](/learn/assets/camera_run2.png)
+
+3. The captured image will get displayed in the app. 
+
+[![camera_run3](/learn/assets/camera_run3.png)](/learn/assets/camera_run3.png)

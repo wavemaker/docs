@@ -11,9 +11,11 @@ WaveMaker supports all three types of media - image, audio and video in the form
 
 Just drag and drop the desired widget and bind it to the resource using the Property Panel.
 
-**NOTE**: **Picture widget** can be used by itself or within any widget like Live List or Data Grid or Carousel etc.. It can be bound to a database column containing the URL for the picture resource location. Example, the picurl field of Employee database from Sample DB. **NOTE**: The following table gives the browser support for **audio/video resource**: [![](/learn/assets/widget_audiovideo.png)](/learn/assets/widget_audiovideo.png)
+**NOTE**: **Picture widget** can be used by itself or within any widget like Live List or Data Grid or Carousel etc.. It can be bound to a database column containing the URL for the picture resource location. Example, the picurl field of Employee database from Sample DB. **NOTE**: The following table gives the browser support for **audio/video resource**: 
 
-# Features
+[![](/learn/assets/widget_audiovideo.png)](/learn/assets/widget_audiovideo.png)
+
+## Features
 
 The following features are available for all the three media widgets,
 
@@ -45,7 +47,7 @@ The following features are available for all the three media widgets,
         7. Support message - Allows the user agent to display video content within the element's playback area
         8. Subtitle source - This property is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing.
         9. Subtitle language - Specifies the language of the track text data (required if kind="subtitles")
-        10. Enable controls - Check/Uncheck for enabling controls\[play, pause, stop or volume\] for the media player.
+        10. Enable controls - Check/Uncheck for enabling controls[play, pause, stop or volume] for the media player.
         11. Enable autoplay
         12. Loop - Whether to loop the media resource
         13. Mute - Whether to mute the media resource by default
@@ -169,26 +171,3 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Loop | This property allows you to enable that the video will start over again, every time it is finished. |
 | Mute | This property allows you to enable that the audio output of the audio/video should be muted. |
 
-[4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
-
-- [4.1 Anchor](/learn/app-development/widgets/basic/anchor/)
-- [4.2 Audio](/learn/app-development/widgets/media-widgets/)
-    - [i. Features](#features)
-    - [ii. Properties](#audio-properties)
-- [4.3 HTML](/learn/app-development/widgets/basic/html/)
-- [4.4 Icon](/learn/app-development/widgets/basic/icon/)
-- [4.5 Iframe](/learn/app-development/widgets/basic/iframe/)
-- [4.6 Label](/learn/app-development/widgets/basic/label/)
-- [4.7 Message](/learn/app-development/widgets/basic/message/)
-- [4.8 Picture](/learn/app-development/widgets/media-widgets/)
-    - [i. Features](#features)
-    - [ii. Properties](#picture-properties)
-    - [iii. Events](#picture-events)
-- [4.9 Progress Bar](/learn/app-development/widgets/basic/progress-bar/)
-- [4.10 Richtext Editor](/learn/app-development/widgets/basic/richtext-editor/)
-- [4.11 Search](/learn/app-development/widgets/basic/search/)
-- [4.12 Spinner](/learn/app-development/widgets/basic/spinner/)
-- [4.13 Tree](/learn/app-development/widgets/basic/tree/)
-- [4.14 Video](/learn/app-development/widgets/media-widgets/)
-    - [i. Features](#features)
-    - [ii. Properties](#video-properties)

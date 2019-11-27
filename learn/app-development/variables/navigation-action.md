@@ -69,10 +69,10 @@ This method invokes the navigation action
 **Example**:
 ```
   // Example 1: Navigate to TestPage
-Page.Actions.goToPage\_TestPage.invoke();
+Page.Actions.goToPage_TestPage.invoke();
 
 // Example 2: Navigate to TestPage with url params
-Page.Actions.goToPage\_TestPage.invoke({
+Page.Actions.goToPage_TestPage.invoke({
      data: {
          'param1': "param value",
          "param2": "param value 2"
@@ -91,7 +91,7 @@ This method sets the input fields on the Navigation Action.
 
 ```
 // Example 1: Navigate to TestPage
-Var nv = Page.Actions.goToPage\_TestPage;
+Var nv = Page.Actions.goToPage_TestPage;
 nv.setData({
    'param1': "param value",
    "param2": "param value 2"

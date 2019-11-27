@@ -45,7 +45,7 @@ CSRF is an attack that tricks the victim into submitting a malicious request. Th
 
 Angular provides a mechanism to counter CSRF. When performing XHR requests, the _$http_ service reads a token from a cookie (by default, `XSRF-TOKEN`) and sets it as an HTTP header (`X-XSRF-TOKEN`). Since the only JavaScript that runs on your domain can read the cookie, your server can be assured that the XHR came from JavaScript running on your domain. The header will not be set for cross-domain requests.
 
-WaveMaker Defaults: Cookie Name: `wm\_xsrf\_token`. This cookie gets set at run-time during the Login process. Header Name: `X-WM-XSRF-TOKEN` (User can customize it through security dialog)
+WaveMaker Defaults: Cookie Name: `wm_xsrf_token`. This cookie gets set at run-time during the Login process. Header Name: `X-WM-XSRF-TOKEN` (User can customize it through security dialog)
 
 [![](/learn/assets/security_OWSP_CSRF.png)](/learn/assets/security_OWSP_CSRF.png)
 

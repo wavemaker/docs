@@ -131,7 +131,7 @@ Retrieves the data associated with given ID value from the related table.
 ### READ (foreign key based - self-referential)
 
 Retrieves the data associated with given ID value 
-- **URL**: `/{id..+}/\[relation\_field\]` 
+- **URL**: `/{id..+}/[relation_field]` 
 - **Request Type**: `GET` 
 - **Path Variables**: `primary key column value` 
 - **Request Parameter**:    
@@ -269,9 +269,9 @@ Supported value expression types are listed in below table
 | not equals | `!=` <br> (or) <br> `< >` | Number or String | Values that are not equal to given value | - `zip!=02127` <br> - `jobTitle< >‘Engineer’`  |
 | between | between | Date or Number | Values between given range |  <br> - birthdate between '1973-10-21' and '1986-06-18' (using date format - YYYY-MM-DD) <br> - zip between 14231 and 15922  |
 | less than | < | Number | Values less than given value | - empId<6  |
-| greater than | \> | Number | Values greater than given value |  - deptId>10 |
+| greater than | > | Number | Values greater than given value |  - deptId>10 |
 | less than or equal to | <= | Number | Values less or equal to given value | - empId<=4 |
-| greater than or equal to | \>= | Number | Values greater than or equal to given value | - zip>=11 |
+| greater than or equal to | >= | Number | Values greater than or equal to given value | - zip>=11 |
 | pattern matching | like | String | Values matching the given pattern |- street like ‘4%Houston%’  |
 | starts with | like | String | Values starting with the given string | - firstname like ‘E%’ |
 | ends with | like | String | Values ending with the given string | - lastname like ‘%e’ |
@@ -279,7 +279,7 @@ Supported value expression types are listed in below table
 | in | in | Number or Date or String | Values in the given set | - zip in (‘14231’, ‘02127’, ‘11212’) <br> - birthdate in ('1973-10-21' ,'1986-06-18') <br> - firstname in ( 'Sally' , 'William' , ‘Amanda’ ) |
 | null | is null | String | Values satisfying given condition | - role is null |
 | not null | is not null | String | Values satisfying given condition | - date is not null |
-| empty | \= | String | Values satisfying given condition | - lastname = ‘’ |
+| empty | = | String | Values satisfying given condition | - lastname = ‘’ |
 | not empty | != (or) <> | String | Values satisfying given condition | - lastname <> ‘’ <br> - lastname != ‘’ |
 
 ### Value parameter

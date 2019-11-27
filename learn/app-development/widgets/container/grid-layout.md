@@ -9,7 +9,7 @@ WaveMaker implements the [Bootstrap Grid](http://www.w3schools.com/bootstrap/boo
 
 [![](/learn/assets/gridlayout_bootstrap.png)](/learn/assets/gridlayout_bootstrap.png)
 
-# Features
+## Features
 
 ### Grid Layout - Basic Features
 
@@ -56,7 +56,7 @@ The following image gives you an idea of the flexible design that grid layout of
 
 [![](/learn/assets/gridlayout_final.png)](/learn/assets/gridlayout_final.png)
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -95,20 +95,3 @@ A sub widget of the grid layout is the direct child of the grid row.
 | Horizontal Align | Set text alignment horizontally. |
 | Column Width | Accepts integer(x) between 1-12 and adds class col-md-(x), to suit bootstrap fluid grid system. |
 
-[2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
-
-- [2.1 Accordion](/learn/app-development/widgets/container/accordion/)
-- [2.2 Container](/learn/app-development/widgets/container/container/)
-- [2.3 Grid Layout](/learn/app-development/widgets/container/grid-layout/)
-    - [i. Features](#features)
-        - [○ Grid-level Features](#grid-features)
-        - [○ Row-level Features](#row-features)
-        - [○ Column-level Features](#column-features)
-        - [○ Column Settings](#column-settings)
-    - [ii. Properties](#properties)
-        - [○ Row Properties](#row-properties)
-        - [○ Column Properties](#column-properties)
-- [2.4 Panel](/learn/app-development/widgets/container/panel/)
-- [2.5 Tabs](/learn/app-development/widgets/container/tabs/)
-- [2.6 Tile](/learn/app-development/widgets/container/tile/)
-- [2.7 Wizard](/learn/app-development/widgets/container/wizard/)

@@ -5,7 +5,7 @@ id: ""
 
 A **richtext editor** widget allows users to create formatted/styled text similar to entering text into a word processor. The richtext editor is used to generate HTML text codes for your website or blog. The toolbar includes text-specific buttons. This makes it easy to create headers, bold text, italic, lists, set text alignment, embed images, audio, video, and more. Users can also add tables, change fonts, apply changes to font size and color.
 
-# Properties
+## Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -26,27 +26,9 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Show Preview | Checking this box turns to show the preview section of the editor. |
 
-# Events
+## Events
 
 | **Event** | **Description** |
 | --- | --- |
 | Change | This event handler is called each time your element's value changes. |
 
-[4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
-
-- [4.1 Anchor](/learn/app-development/widgets/basic/anchor/)
-- [4.2 Audio](/learn/app-development/widgets/media-widgets/)
-- [4.3 HTML](/learn/app-development/widgets/basic/html/)
-- [4.4 Icon](/learn/app-development/widgets/basic/icon/)
-- [4.5 Iframe](/learn/app-development/widgets/basic/iframe/)
-- [4.6 Label](/learn/app-development/widgets/basic/label/)
-- [4.7 Message](/learn/app-development/widgets/basic/message/)
-- [4.8 Picture](/learn/app-development/widgets/media-widgets/)
-- [4.9 Progress Bar](/learn/app-development/widgets/basic/progress-bar/)
-- [4.10 Richtext Editor](/learn/app-development/widgets/basic/richtext-editor/)
-    - [i. Properties](#properties)
-    - [ii. Events](#events)
-- [4.11 Search](/learn/app-development/widgets/basic/search/)
-- [4.12 Spinner](/learn/app-development/widgets/basic/spinner/)
-- [4.13 Tree](/learn/app-development/widgets/basic/tree/)
-- [4.14 Video](/learn/app-development/widgets/media-widgets/)

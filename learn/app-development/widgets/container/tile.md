@@ -13,7 +13,7 @@ When to use Tile:
 
 ![](/learn/assets/tile_design-1.png)
 
-# Properties
+## Properties
 
 You can also use the Conditional Class property from the Style tab to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/).
 
@@ -30,7 +30,7 @@ You can also use the Conditional Class property from the Style tab to set the cl
 | **Format** |
 | Horizontal Align | Set text alignment horizontally. |
 
-# Events
+## Events
 
 | **Event** | **Description** |
 | --- | --- |
@@ -53,14 +53,3 @@ You can also use the Conditional Class property from the Style tab to set the cl
 | **Keyboard Events** |
 | On enter key press | When the user hits ENTER/Return while the focus is in this editor, execute the specified event handler. |
 
-[2\. Container Widgets](/learn/app-development/widgets/widget-library/#container)
-
-- [2.1 Accordion](/learn/app-development/widgets/container/accordion/)
-- [2.2 Container](/learn/app-development/widgets/container/container/)
-- [2.3 Grid Layout](/learn/app-development/widgets/container/grid-layout/)
-- [2.4 Panel](/learn/app-development/widgets/container/panel/)
-- [2.5 Tabs](/learn/app-development/widgets/container/tabs/)
-- [2.6 Tile](/learn/app-development/widgets/container/tile/)
-    - [i. Properties](#properties)
-    - [ii. Events](#events)
-- [2.7 Wizard](/learn/app-development/widgets/container/wizard/)

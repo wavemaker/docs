@@ -123,9 +123,9 @@ All these controls on the calendar are used to navigate between the months and s
 
 To set the properties of the calendar widget through the script, access the properties on the calendar as (consider the calendar with name ‘wmcalendar’) Page.Widgets.wmcalendar.propertyname and change or assign the values accordingly. For example:
 
-- To set the first day of the month view \[Default: 0 (Sunday)\]: Page.Widgets.wmcalendar.calendarOptions.calendar.firstDay = 0;
-- To hide the all day slot of the agenda view \[Default: true\]: Page.Widgets.wmcalendar.calendarOptions.calendar.allDaySlot= false;
-- To set the text of the all-day slot in the agenda view \[Default: ‘all-day’\]: Page.Widgets.wmcalendar.calendarOptions.calendar.allDayText= ‘all-day’;
+- To set the first day of the month view [Default: 0 (Sunday)]: Page.Widgets.wmcalendar.calendarOptions.calendar.firstDay = 0;
+- To hide the all day slot of the agenda view [Default: true]: Page.Widgets.wmcalendar.calendarOptions.calendar.allDaySlot= false;
+- To set the text of the all-day slot in the agenda view [Default: ‘all-day’]: Page.Widgets.wmcalendar.calendarOptions.calendar.allDayText= ‘all-day’;
 
 Other properties which can be set using the similar methods: For more information on Calendar, properties [see here.](https://fullcalendar.io/docs/)
 
@@ -203,7 +203,7 @@ Page.Widgets.calendar.rerenderEvents();
 - [How to create an event and save it in a Database](/learn/how-tos/calendar-usage-create-event/)
 - [How to integrate with Google Calendar](/learn/how-tos/calender-usage-google-calendar-integration/)
 
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
+[3. Form Widgets](/learn/app-development/widgets/widget-library/#form)
 
 - [3.1 Button](/learn/app-development/widgets/form/button/)
 - [3.2 Button Group](/learn/app-development/widgets/form/button-group/)

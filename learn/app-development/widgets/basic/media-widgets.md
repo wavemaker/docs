@@ -45,7 +45,7 @@ The following features are available for all the three media widgets,
         7. Support message - Allows the user agent to display video content within the element's playback area
         8. Subtitle source - This property is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing.
         9. Subtitle language - Specifies the language of the track text data (required if kind="subtitles")
-        10. Enable controls - Check/Uncheck for enabling controls\[play, pause, stop or volume\] for the media player.
+        10. Enable controls - Check/Uncheck for enabling controls[play, pause, stop or volume] for the media player.
         11. Enable autoplay
         12. Loop - Whether to loop the media resource
         13. Mute - Whether to mute the media resource by default
@@ -169,7 +169,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Loop | This property allows you to enable that the video will start over again, every time it is finished. |
 | Mute | This property allows you to enable that the audio output of the audio/video should be muted. |
 
-[4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
+[4. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
 
 - [4.1 Anchor](/learn/app-development/widgets/basic/anchor/)
 - [4.2 Audio](/learn/app-development/widgets/media-widgets/)

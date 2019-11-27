@@ -41,7 +41,7 @@ In order to use the **Facebook** OAuth prefab, please follow the below steps: Di
 10. To use the Facebook API in your application, import the corresponding [REST Web Service](/learn/web-services/#rest) into WaveMaker by giving a valid URL with the access token. Test and Import.
 11. You can see the variables imported from the service in the Left panel and these are available for binding and usage within your app. ![Facebook_serviceVar](/learn/assets/Facebook_serviceVar.png)
 
-[9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
+[9. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
 
 - [9.1 Youtube](/learn/app-development/widgets/prefab/youtube/)
 - [9.2 Googlemaps](/learn/app-development/widgets/prefab/googlemaps/)
