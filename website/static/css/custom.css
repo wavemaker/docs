@@ -328,11 +328,11 @@ h3 {
 
 /* start - 404 page styles */
 
-.wrapall, .boxed-layout {
+.error404 .wrapall, .error404 .boxed-layout {
     background-color: #ffffff;
 }
 
-.wrapall {
+.error404 .wrapall {
     margin: 0;
     padding: 0;
     background: #ffffff;
@@ -358,21 +358,21 @@ h3 {
     padding: 150px 0px 50px 0px;
 }
 
-.container {
+.error404 .container {
     position: relative;
     width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
 
-.container .column, .container .columns {
+.error404 .container .column, .error404 .container .columns {
     float: left;
     display: inline;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.container .sixteen.columns {
+.error404 .container .sixteen.columns {
     width: 1160px;
 }
 
@@ -400,7 +400,7 @@ h3 {
     text-align: center;
 }
 
-.blog_title_bottomwave {
+.error404 .blog_title_bottomwave {
     background-image: url(../img/Wave_featuredcontent.png),linear-gradient(50deg, #13547a, #80d0c7)!important;
     background-position: top;
     height: 70px;
