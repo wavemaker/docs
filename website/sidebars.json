@@ -465,7 +465,8 @@
             "how-tos/integrating-amazon-cognito-user-authentication",
             "how-tos/integrating-sample-jasper-report-wavemaker-application",
             "how-tos/generate-pdf-file-using-jasper-reports",
-            "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0"
+            "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
+            "how-tos/app-migration-wavemaker-9x-10x"
           ],
 
           "Mobile Development": 
