@@ -5,7 +5,7 @@ id: ""
 
 **Rating** widget can be used to display or elicit information about a quantitative or a qualitative attribute in the form of a set of categories.
 
-# Features
+## Features
 
 - **Icon color** property can be set from the _Styles_ tab of Property Panel
 - **Show captions** property can be used to hide or show the captions.
@@ -19,7 +19,7 @@ id: ""
 - In **Read only** mode, if the dataset is null then the caption can be bound through displayexpression.
 - **Tab index** selects the widget (focus the widget) and the UP-ARROW and DOWN-ARROW keypress would increase and decrease the rating value.
 
-# Properties
+## Properties
 
 | Property | Description |
 | --- | --- |
@@ -43,45 +43,17 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Graphics** |
 | Icon Size | This property defines the size of the icon. Value has to be specified along with the units (em or px). |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
 | Change | This event handler is called each time your element's value changes. |
 
-# Use Cases
+## Use Cases
 
-You can use the Rating widget to capture the input from the user as Widgets.rating1.datavalue or from the direct bind dialog. You can also change the caption according to the user selection.
+You can use the Rating widget to capture the input from the user as `Widgets.rating1.datavalue` or from the direct bind dialog. You can also change the caption according to the user selection.
 
 - [How to build Rating widget from static data](/learn/how-tos/rating-widget-using-static-data/)
 - [How to build Rating widget from static variable data](/learn/how-tos/rating-widget-using-static-variable/)
 - [How to build an interactive rating widget](/learn/how-tos/rating-widget-interactive/)
 
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-
-- [3.1 Button](/learn/app-development/widgets/form/button/)
-- [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
-- [3.3 Calendar](/learn/app-development/widgets/form/calendar/)
-- [3.4 Checkbox](/learn/app-development/widgets/form/checkbox/)
-- [3.5 CheckboxSet](/learn/app-development/widgets/form/checkboxset/)
-- [3.6 Chips](/learn/app-development/widgets/form-widgets/chips/)
-- [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
-- [3.8 Currency](/learn/app-development/widgets/form/currency/)
-- [3.9 Date](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.11 FileUpload](/learn/app-development/widgets/form/file-upload/)
-- [3.12 Number](/learn/app-development/widgets/form-widgets/number/)
-- [3.13 Radioset](/learn/app-development/widgets/form/radioset/)
-- [3.14 Rating](#)
-    - [i. Features](#features)
-    - [ii. Properties](#properties)
-    - [iii. Events](#events)
-    - [iv. Use Cases](#use-cases)
-- [3.15 Select](/learn/app-development/widgets/form/select/)
-- [3.16 Select Locale](/learn/app-development/widgets/form/select-locale/)
-- [3.17 Slider](/learn/app-development/widgets/form/slider/)
-- [3.18 Switch](/learn/app-development/widgets/form/switch/)
-- [3.19 Text](/learn/app-development/widgets/form/text/)
-- [3.20 Textarea](/learn/app-development/widgets/form/textarea/)
-- [3.21 Time](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.22 Toggle](/learn/app-development/widgets/form/toggle/)

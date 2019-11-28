@@ -2,12 +2,13 @@
 title: "Anchor"
 id: ""
 ---
+---
 
 **Anchor** widget refers to the visible, clickable words used to link one web page to another.
 
 When inside another widget like nav, the anchor widget will come with some defaults like file icon and with default styling to have a border and background color.
 
-# Features
+## Features
 
 The following features are available for anchor widget:
 
@@ -16,21 +17,24 @@ The following features are available for anchor widget:
 - **Hint** - It contains a text representing advisory information related to the element it belongs to.
 - **Shortcut Key**: The shortcut key property specifies a shortcut key to click the link. The way of accessing the shortcut key is varying in different browsers:
     
-    | Browser | Shortcut Key Trigger |
-    | --- | --- |
-    | Internet Explorer | \[Alt\] +shortcut key |
-    | Chrome | \[Alt\] + shortcut key (_Windows/Linux_) |
-    |  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
-    | Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
-    |  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
+| Browser | Shortcut Key Trigger |
+| --- | --- |
+| Internet Explorer | [Alt] +shortcut key |
+| Chrome | [Alt] + shortcut key (_Windows/Linux_) |
+|  | [Control] [Alt] + shortcut key (_MAC_) |
+| Firefox | [Alt] [Shift] + shortcut key (_Windows/Linux_) |
+|  | [Control] [Alt] + shortcut key (_MAC_) |
     
-- **Hyperlink** - Indicates the destination link.
-- **Target** - The target property specifies where to open the linked document:
-    - _\_blank_: Opens the linked document in a new window or tab
-    - _\_self_: Opens the linked document in the same frame as it was clicked (this is default)
-    -  _\_parent_: Opens the linked document in the parent frame
-    - _\_top_: Opens the linked document in the full body of the window
-- **Icon** - Aligns the anchor widget with an icon properties
+**Hyperlink** - Indicates the destination link.  
+
+**Target** - The target property specifies where to open the linked document.  
+
+- **_blank** : Opens the linked document in a new window or tab.
+- **_self** : Opens the linked document in the same frame as it was clicked (this is default).
+- **_parent** : Opens the linked document in the parent frame.
+- **_top** : Opens the linked document in the full body of the window.
+  
+**Icon** - Aligns the anchor widget with an icon properties
 
 ### Anchor Class
 
@@ -38,7 +42,7 @@ From the Style tab of Properties panel,  you can set the Anchor style. You can 
 
 <iframe width="100%" height="300" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Anchors">Anchor Classes</iframe>
 
-# Properties
+## Properties
 
 | Property | Description |
 | --- | --- |
@@ -47,16 +51,15 @@ From the Style tab of Properties panel,  you can set the Anchor style. You can 
 | Badge Value | Value to be displayed in the badge span for the anchor. |
 | **Accessibility** |
 | Hint | Any text or HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
-| Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (\*[See here for details](#shortcut)) |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. <br> To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (*[See here for details](#shortcut)) |
 | **Layout** |
 | Width | The width of your widget can be specified in _em, pt, px or %_ (i.e 50px, 75%). |
 | Height | The height of your widget can be specified in _em, pt, px or %_ (i.e 50px, 75%). |
 | **Dataset** |
 | Hyperlink | The web URL you want to redirect to on clicking the anchor. |
 | **Behavior** |
-| Target | Defines behavior on click of the link: \_blank: Opens the linked document in a new window or tab \_self: Opens the linked document in the same frame as it was clicked (this is default) \_parent: Opens the linked document in the parent frame \_top: Opens the linked document in the full body of the window. |
+| Target | Defines behavior on click of the link: _blank: Opens the linked document in a new window or tab _self: Opens the linked document in the same frame as it was clicked (this is default) _parent: Opens the linked document in the parent frame _top: Opens the linked document in the full body of the window. |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Animation | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. |
@@ -71,7 +74,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Format** |
 | Horizontal Align | This property specifies how the elements should be aligned horizontally - left, center or right. |
 
-# Events
+## Events
 
 | Event | Description |
 | --- | --- |
@@ -86,22 +89,3 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | On Tap | This event handler is called whenever the widget is tapped. |
 | On Double Tap | This event handler is called whenever the widget is double tapped. |
 
-[4\. Basic Widgets](/learn/app-development/widgets/widget-library/#basic)
-
-- [4.1 Anchor](/learn/app-development/widgets/basic/anchor/)
-    - [i. Features](#features)
-    - [ii. Properties](#properties)
-    - [iii. Events](#events)
-- [4.2 Audio](/learn/app-development/widgets/media-widgets/)
-- [4.3 HTML](/learn/app-development/widgets/basic/html/)
-- [4.4 Icon](/learn/app-development/widgets/basic/icon/)
-- [4.5 Iframe](/learn/app-development/widgets/basic/iframe/)
-- [4.6 Label](/learn/app-development/widgets/basic/label/)
-- [4.7 Message](/learn/app-development/widgets/basic/message/)
-- [4.8 Picture](/learn/app-development/widgets/media-widgets/)
-- [4.9 Progress Bar](/learn/app-development/widgets/basic/progress-bar/)
-- [4.10 Richtext Editor](/learn/app-development/widgets/basic/richtext-editor/)
-- [4.11 Search](/learn/app-development/widgets/basic/search/)
-- [4.12 Spinner](/learn/app-development/widgets/basic/spinner/)
-- [4.13 Tree](/learn/app-development/widgets/basic/tree/)
-- [4.14 Video](/learn/app-development/widgets/media-widgets/)
