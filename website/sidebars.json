@@ -529,8 +529,10 @@
 
           "- Forms":
           [
+            "how-tos/using-live-form",
             "how-tos/using-wizard-cumulative-data-entry-form",
             "how-tos/live-form-tabbed-form",
+            "how-tos/how-tos-live-form",            
             "how-tos/live-form-linking-another-widget",
             "how-tos/live-form-related-fields",
             "how-tos/adding-master-detail-records-transaction",
@@ -723,7 +725,7 @@
       "app-development/widgets/form-widgets/file-upload",
       "app-development/widgets/form-widgets/color-picker",
       "app-development/widgets/form-widgets/slider",
-      "app-development/widgets/form-widgets/rating",
+      "app-development/widgets/form-widgets/rating-widget",
       "app-development/widgets/form-widgets/select-locale",
       "app-development/widgets/form-widgets/",
       "app-development/widgets/form-widgets/",
@@ -774,7 +776,8 @@
 
     "Charts":
     [
-      "app-development/widgets/chart/chart-widget"
+      "app-development/widgets/chart/chart-widget",
+      "app-development/widgets/chart/onbeforerender"
     ],
 
     "Navigation":
