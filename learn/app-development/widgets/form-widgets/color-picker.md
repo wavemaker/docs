@@ -3,8 +3,6 @@ title: "Color Picker"
 id: "color-picker"
 ---
 ---
-
-![](/learn/assets/laptop.png)
   
 :::note
 Color Picker is available only for web responsive apps.

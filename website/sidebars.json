@@ -271,6 +271,7 @@
   "Develop extensions":
     [      
       "app-development/custom-widgets/creating-prefabs",
+      "app-development/widgets/use-cases-prefabs",
       "app-development/ui-design/creating-themes",
       "app-development/ui-design/page-concepts/creating-template-bundles"
     ],
