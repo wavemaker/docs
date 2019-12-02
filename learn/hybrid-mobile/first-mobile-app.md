@@ -2,7 +2,7 @@
 title: "First Mobile App"
 id: ""
 ---
-
+---
 This section will give an overview of the steps to create a simple hybrid mobile app. This simple app will
 
 - access the _phone's camera and contact list_;

@@ -1,6 +1,6 @@
 ---
-title: "Rating"
-id: "rating"
+title: "Rating Widget"
+id: ""
 ---
 ---
 

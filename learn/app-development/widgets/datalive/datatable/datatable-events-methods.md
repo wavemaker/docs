@@ -13,7 +13,7 @@ Data Table behavior can be customized with the help of the call-back events. The
 | On row select | This event will be called when a row from Data Table is selected |
 
 ```
-Page.\[gridname\]Select = function($event, widget, row) { 
+Page.[gridname]Select = function($event, widget, row) { 
         //row: row has the selected row data. row has also the index of the row
         // Note: Row selection will happen on click of a cell. So, cell element is present in $event.
         //Printing the selected row data and its index
@@ -25,7 +25,7 @@ Page.\[gridname\]Select = function($event, widget, row) {
 | --- | --- |
 | On row deselect | This event will be called when a row from Data Table is deselected |
 ```
-Page.\[gridname\]Deselect = function($event, widget, row) {
+Page.[gridname]Deselect = function($event, widget, row) {
         //row has the deselected row data. row has also the index of the row
         // Note: Row deselection will happen on click of a cell. So, cell element is present in $event.
         //Printing the deselected row data and its index
@@ -50,7 +50,7 @@ Page.grid1Sort = function($event, widget, $data) {
 | On header click | This event will be called when the Data Table header is clicked. |
 
 ```
-Page.\[gridname\]Headerclick = function($event, widget, column) {
+Page.[gridname]Headerclick = function($event, widget, column) {
          //column has the column definition data of the corresponding clicked header
         // Note: Column selection will happen on click of the header. So, column element is present in $event.
 
@@ -63,7 +63,7 @@ Page.\[gridname\]Headerclick = function($event, widget, column) {
 | On row click | This event will be called when a row in Data Table is clicked. **Note** this event can happen when selecting or deselecting a row. |
 
 ```
-Page.\[gridname\]Rowclick = function($event, widget, row) {
+Page.[gridname]Rowclick = function($event, widget, row) {
         //row has the data of the row which is clicked and the index of the row
         // Note: Row selection will happen on click of a cell. So, cell element is present in $event.
 
@@ -77,7 +77,7 @@ Page.\[gridname\]Rowclick = function($event, widget, row) {
 | On column select | This event will be called when a column in Data Table is selected. |
 
 ```
-Page.\[gridname\]Columnselect = function($event, widget, $data) {
+Page.[gridname]Columnselect = function($event, widget, $data) {
         //$data has the object containing colDef, data and sortDirection. 
         //data has the selected column data. colDef has the selected column definition
 
@@ -92,7 +92,7 @@ Page.\[gridname\]Columnselect = function($event, widget, $data) {
 | On column deselect | This event will be called when a column in Data Table is deselected. |
 
 ```
-Page.\[gridname\]Columndeselect = function($event, widget, $data) {
+Page.[gridname]Columndeselect = function($event, widget, $data) {
         //$data: $data contains colDef, data and sortDirection
 
         //Printing the selected column data and field name
@@ -110,7 +110,7 @@ Page.\[gridname\]Columndeselect = function($event, widget, $data) {
 :::
 
 ```
-Page.\[gridname\]Rowdelete = function($event, widget, row ) {
+Page.[gridname]Rowdelete = function($event, widget, row ) {
         //row: row has the data of the row deleted
         //Printing the deleted row data 
         console.log(“The deleted row data:”, row);
@@ -127,7 +127,7 @@ Page.\[gridname\]Rowdelete = function($event, widget, row ) {
 :::
 
 ```
-Page.\[gridname\]Beforerowinsert = function($event, widget, row, options) {
+Page.[gridname]Beforerowinsert = function($event, widget, row, options) {
         //row has the data of the new record to be inserted. This data can be modified and validated before sending the request
 
        //Validation can be performed here. 
@@ -151,7 +151,7 @@ Page.\[gridname\]Beforerowinsert = function($event, widget, row, options) {
 :::
 
 ```
-Page.\[gridname\]Rowinsert = function($event, widget, row) {
+Page.[gridname]Rowinsert = function($event, widget, row) {
         //row: row has the data of the the new record inserted.
 
         //Printing the inserted row data 
@@ -170,7 +170,7 @@ Page.\[gridname\]Rowinsert = function($event, widget, row) {
 
 
 ```
-Page.\[gridname\]Beforerowupdate = function($event, widget, row, options) {
+Page.[gridname]Beforerowupdate = function($event, widget, row, options) {
         //row has the data of the the record to be updated. This data can be modified and validated before sending the request
 
        //Validation can be performed here. 
@@ -195,7 +195,7 @@ Page.\[gridname\]Beforerowupdate = function($event, widget, row, options) {
 :::
 
 ```
-Page.\[gridname\]Rowupdate = function($event, widget, row) {
+Page.[gridname]Rowupdate = function($event, widget, row) {
         //row has the data of the the record updated.
 
         //Printing the deleted row data 
@@ -208,7 +208,7 @@ Page.\[gridname\]Rowupdate = function($event, widget, row) {
 | On before data render | This event will be called the before the data is rendered in the Data Grid. **Note** the data accessible is restricted to the current page of the Data Grid. Use Case: If you want to change the display value based on the values of a column |
 
 ```
-Page.\[gridname\]Setrecord = function($event, data, columns) {
+Page.[gridname]Setrecord = function($event, data, columns) {
         //data has data to be rendered in table
         // An object of column names with each column name pointing to column definition.
 
@@ -228,13 +228,13 @@ Page.\[gridname\]Setrecord = function($event, data, columns) {
 | On data render | This event will be called when the data is rendered in the Data Table. **Note**: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to add a class to a particular row. |
 
 ```
-Page.\[gridname\]Datarender = function(widget, data) {
+Page.[gridname]Datarender = function(widget, data) {
         //data: data has the data to be rendered in the current page of data table
 
         //widget.datagridElement has the data table jquery element
         widget.datagridElement.find('tr.app-datagrid-row').each(function(index) {
             //Loop through the rows. Add class admin for users having role as adminrole
-            if (data\[index\].role === 'adminrole') {
+            if (data[index].role === 'adminrole') {
                 $(this).addClass('admin');
             }
         });
@@ -249,7 +249,7 @@ Page.\[gridname\]Datarender = function(widget, data) {
  This gives access to data to be displayed in the form Use Case: You can use this event to edit values to be displayed in the form. Edit also can be prevented in form based on some condition. :::
 
 ```
-Page.\[gridname\]Beforeformrender = function($event, 
+Page.[gridname]Beforeformrender = function($event, 
 widget, $rowData, $operation) { 
    //$rowData: $rowData has the data of the row being edited/ inserted 
    //$operation: $operation value is 'new' for new row and 'edit' when row being edited 
@@ -280,9 +280,9 @@ This gives access to the widgets in the form. Use Case: Individual widget can be
 :::
 
 ```
-Page.\[gridName\]Formrender = function($event, widget,
+Page.[gridName]Formrender = function($event, widget,
 formWidgets, $operation) {
-   //formWidgets: formWidgets has the scopes of all the widgets in the form. Individual widget can be accessed as formWidgets.\[fieldName\]
+   //formWidgets: formWidgets has the scopes of all the widgets in the form. Individual widget can be accessed as formWidgets.[fieldName]
    //$operation: $operation value is 'new' for new row and 'edit' when row being edited
    //Disabled the editing of role field
    formWidgets.role.disabled = true;
@@ -293,7 +293,7 @@ formWidgets, $operation) {
 | On Error | (ONLY for Data Table with Quick-Edit and Inline-Edit) <br> This event will be called after the edit/insert/delete operation returns a failure response |
 
 ```
-Page.\[gridName\]Error = function($event, widget,
+Page.[gridName]Error = function($event, widget,
 $data, $operation) {
     //$data has the error message returned from the API.
     //$operation: operation performed - edit or new or delete
@@ -359,71 +359,71 @@ Data Grid has few methods exposed on widget scope which can be accessed via Java
 
 - To refresh the data in data table with the currently applied filters and sort:
 ```    
-Page.Widgets.\[gridName\].refreshData();
+Page.Widgets.[gridName].refreshData();
 ```   
 - To clear the filters applied on data table:
 ```    
-Page.Widgets.\[gridName\].clearFilter();
+Page.Widgets.[gridName].clearFilter();
 ```    
 - To focus on a field in edit mode(applicable to inline and quick edit data tables alone):
 ```    
-Page.Widgets.\[gridname\].formfields.\[columnname\].focus();
-//This will focus the input on \[columnname\] field
+Page.Widgets.[gridname].formfields.[columnname].focus();
+//This will focus the input on [columnname] field
 ```   
 - To change a property of a column:
 ```
-Page.Widgets.\[gridname\].columns.\[columnname\].displayName = ‘Deptarment Id’; 
+Page.Widgets.[gridname].columns.[columnname].displayName = ‘Deptarment Id’; 
 //Will change the display name of specified column to ‘Department Id’.
 ```    
 - To force re-render Data Table:
 ```    
-Page.Widgets.\[gridname\].redraw(true); 
+Page.Widgets.[gridname].redraw(true); 
 //Will force re-render data table.
 ```    
 - To change a property of a column:
 ```
-    Page.Widgets.\[gridname\].column.\[columnname\].sortable = false; 
+    Page.Widgets.[gridname].column.[columnname].sortable = false; 
     // disables the sort property on the data table 
     //Note: you can replace 'sortable' with any column property listed in the advanced settings.
 ```    
 - To change value of a field which is in edit mode (applicable to inline and quick edit data tables alone):
 ```    
-    Page.Widgets.\[gridname\].formfields.\[columnname\].value = 'Engineering 1'; 
+    Page.Widgets.[gridname].formfields.[columnname].value = 'Engineering 1'; 
     // Sets ‘Engineering 1’ to the specified column edit field 
     //Note: This will work only on click of edit on a row.
 ```    
 - To retrieve value of a field which is in edit mode (applicable to inline and quick edit data tables alone):
 ```    
-    console.log(Page.Widgets.\[gridname\].formfields.\[columnname\].getProperty('value')); 
+    console.log(Page.Widgets.[gridname].formfields.[columnname].getProperty('value')); 
     // This will display the specified column field value in the console. 
     //Note: This will work only on click of edit on a row.
 ```    
 - To select a row:
 ```    
-    Page.Widgets.\[gridname\].selectItem(1); 
+    Page.Widgets.[gridname].selectItem(1); 
     // The parameter can be index or object of row
 ```    
 - To deselect a row: Note: deselect will work only for data table with multiselect enabled on it.
 ```    
-    Page.Widgets.\[gridname\].deselectItem(1);
+    Page.Widgets.[gridname].deselectItem(1);
     //the parameter can be index or object of row (data bound to row), 
     //For grid actions user can send $row (which is row data) , 
     //that can be sent as an argument to this method.
 ```    
 - Working with selected item:
 ```    
-    Page.Widgets.\[gridname\].selecteditem = 2; 
+    Page.Widgets.[gridname].selecteditem = 2; 
     //Selects the third row or item          
-    Page.Widgets.\[gridname\].selecteditem = \[2, 3\]; 
+    Page.Widgets.[gridname].selecteditem = [2, 3]; 
     //Selects the third and fourth row/item 
-    Page.Widgets.\[gridname\].selecteditem = \[\]; 
+    Page.Widgets.[gridname].selecteditem = []; 
     //Deselects the existing rows or items
 ```    
 - Set filter mode:
 ```    
-    Page.Widgets.\[gridname\].filtermode = ‘search’; 
+    Page.Widgets.[gridname].filtermode = ‘search’; 
     // To set filter mode as search
-    Page.Widgets.\[gridname\].filtermode = ‘multicolumn’; 
+    Page.Widgets.[gridname].filtermode = ‘multicolumn’; 
     //To set filter mode as multi column
 ```    
      
@@ -438,14 +438,14 @@ Inline editing can be enabled for a Data Grid when bound to a Web Service/Java S
 - To _On Record Insert_:
 
 ```
-    Page.\[gridName\]Rowinsert = function($event, widget, $rowData) {
+    Page.[gridName]Rowinsert = function($event, widget, $rowData) {
          //$rowData: $rowData has the data of the row being inserted
          //$rowData can be modified here
          $rowData.dateInserted = Date.now();
          //Set the input as $rowData for variable
-         Page.Variables.\[insertVariable\].setInput($rowData);
+         Page.Variables.[insertVariable].setInput($rowData);
          //Insert the data by invoking the variable
-         Page.Variables.\[insertVariable\].invoke({}, function() {
+         Page.Variables.[insertVariable].invoke({}, function() {
            //On success, call the refreshData on method to get the refreshed data
            widget.refreshData();
          });
@@ -453,14 +453,14 @@ Inline editing can be enabled for a Data Grid when bound to a Web Service/Java S
 ```    
 - To On Record Update:
 ```    
-    Page.\[gridName\]Rowupdate = function($event, widget, $rowData) {
+    Page.[gridName]Rowupdate = function($event, widget, $rowData) {
         //$rowData: $rowData has the data of the row being updated
         //$rowData can be modified here
         $rowData.dateModified = Date.now();
         //Set the input as $rowData for variable
-        Page.Variables.\[updateVariable\].setInput($rowData);
+        Page.Variables.[updateVariable].setInput($rowData);
         //Update the data by invoking the variable
-        Page.Variables.\[updateVariable\].invoke({}, function() {
+        Page.Variables.[updateVariable].invoke({}, function() {
             //On success, call the refreshData on method to get the refreshed data
             widget.refreshData();
           });
@@ -468,12 +468,12 @@ Inline editing can be enabled for a Data Grid when bound to a Web Service/Java S
 ```    
 - On Record Delete:
 ```    
-    Page.\[gridName\]Rowdelete = function($event, widget, $rowData) {
+    Page.[gridName]Rowdelete = function($event, widget, $rowData) {
          //$rowData: $rowData has the data of the row being deleted
          //Set the input as $rowData for variable
-         Page.Variables.\[deleteVariable\].setInput($rowData);
+         Page.Variables.[deleteVariable].setInput($rowData);
          //Delete the data by invoking the variable
-         Page.Variables.\[deleteVariable\].invoke({}, function() {
+         Page.Variables.[deleteVariable].invoke({}, function() {
              //On success, call the refreshData on method to get the refreshed data
              widget.refreshData();
           });
@@ -484,28 +484,28 @@ Methods: Below methods can be used for inline editing (applicable to inline and 
 
 - To edit a row
 ```    
-    Page.Widgets.\[gridname\].editRow(); 
+    Page.Widgets.[gridname].editRow(); 
     // Selected row will be edited
 ```    
 - To add a new row
 ```    
-    Page.Widgets.\[gridname\].addRow();
+    Page.Widgets.[gridname].addRow();
 ```    
 - To save a row
 ```    
-    Page.Widgets.\[gridname\].saveRow();
+    Page.Widgets.[gridname].saveRow();
 ```    
 - To cancel a row edit
 ```    
-    Page.Widgets.\[gridname\].cancelRow();
+    Page.Widgets.[gridname].cancelRow();
 ```    
 - To delete a row
 ```    
-    Page.Widgets.\[gridname\].deleteRow();
+    Page.Widgets.[gridname].deleteRow();
 ```    
 - To hide the edit row and go back to view mode
 ```    
-    Page.Widgets.\[gridname\].hideEditRow();
+    Page.Widgets.[gridname].hideEditRow();
 ```    
      
 

@@ -3,6 +3,7 @@ title: "Date,  Time and  Datetime"
 id: "date-time-datetime"
 ---
 ---
+
 **Date, Time and Datetime** widgets can be used to capture the date and time-related data from the user. Drag and drop of these widgets result in a composite widget along with a label.
 
 ## Features
@@ -24,7 +25,7 @@ _Datetime Patterns_: [![](/learn/assets/datetime_patterns.png)](/learn/assets/da
 
 ## Properties
 
-## Date Properties
+### Date Properties
 
 | **Property** | **Description** |
 | --- | --- |
@@ -32,9 +33,8 @@ _Datetime Patterns_: [![](/learn/assets/datetime_patterns.png)](/learn/assets/da
 | Placeholder | A placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user. |
 | **Accessibility** |
 | Hint | Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
-| Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (\*[See below for details](#shortcut)) |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br>**NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (*[See below for details](#shortcut)) |
 | **Layout** |
 | Width | The width of your widget can be specified in _px_ or _% (_i.e _50px, 75%)._ |
 | **Default Value** |
@@ -50,12 +50,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Exclude Days | Select days which are to be excluded from the selection from the date picker. |
 | Exclude Dates | Accepts string and a variable containing dates which will be excluded from the selection from the date picker. |
 | **Behavior** |
-| Show DatePicker on | Using this property you can control the visibility of the Date Picker. You can choose to open it on:
-
-- input click and button click (default setting), or
-- only on button click.
-
- |
+| Show DatePicker on | Using this property you can control the visibility of the Date Picker. You can choose to open it on: <br><br> - input click and button click (default setting), or <br> - only on button click. |
 | Show Week Number | When set, week number will be displayed in the date picker UI. |
 | Auto Focus | This property makes the element get focused automatically when the page loads. |
 | Read Only | Selecting this checkbox property prevents the user from being able to change the data value of a widget. |
@@ -71,9 +66,8 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Placeholder | A placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user. |
 | **Accessibility** |
 | Hint | Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
-| Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (\*[See below for details](#shortcut)) |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (*[See below for details](#shortcut)) |
 | **Layout** |
 | Width | The width of your widget can be specified in _px_ or _% (_i.e _50px, 75%)._ |
 | **Default Value** |
@@ -91,12 +85,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Exclude Days | Select days which are to be excluded from the selection from the date picker. |
 | Exclude Dates | Accepts string and a variable containing dates which will be excluded from the selection from the date picker. |
 | **Behavior** |
-| Show DateTimePicker on | Using this property you can control the visibility of the DateTime picker. You can choose to open it on:
-
-- input click and button click (default setting), or
-- only on button click.
-
- |
+| Show DateTimePicker on | Using this property you can control the visibility of the DateTime picker. You can choose to open it on: <br><br> - input click and button click (default setting), or <br> - only on button click.  |
 | Show Week Number | When set, week number will be displayed in the date picker UI. |
 | Auto Focus | This property makes the element get focused automatically when the page loads. |
 | Read Only | Selecting this checkbox property prevents the user from being able to change the data value of a widget. |
@@ -112,9 +101,8 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Placeholder | A placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user. |
 | **Accessibility** |
 | Hint | Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
-| Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (\*[See below for details](#shortcut)) |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (*[See below for details](#shortcut)) |
 | **Default Value** |
 | Value | This is the default value to display value for an editor widget, it can be set to current date. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget. |
 | **Display Format** |
@@ -126,12 +114,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Validation** |
 | Required | A required editor in wm.LiveForm may refuse to save without a required field. |
 | **Behavior** |
-| Show TimePicker on | Using this property you can control the visibility of the Time picker. You can choose to open it on:
-
-- input click and button click (default setting), or
-- only on button click.
-
- |
+| Show TimePicker on | Using this property you can control the visibility of the Time picker. You can choose to open it on: <br> <br> - input click and button click (default setting), or <br> - only on button click. |
 | Auto Focus | This property makes the element get focused automatically when the page loads. |
 | Read Only | Selecting this checkbox property prevents the user from being able to change the data value of a widget. |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
@@ -142,11 +125,11 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 
 | Browser | Shortcut key Trigger |
 | --- | --- |
-| Internet Explorer | \[Alt\] + shortcut key |
-| Chrome | \[Alt\] + shortcut key (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
-| Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
+| Internet Explorer | [Alt] + shortcut key |
+| Chrome | [Alt] + shortcut key (_Windows/Linux_) |
+|  | [Control] [Alt] + shortcut key (_MAC_) |
+| Firefox | [Alt] [Shift] + shortcut key (_Windows/Linux_) |
+|  | [Control] [Alt] + shortcut key (_MAC_) |
 
 ## Events
 
@@ -192,37 +175,3 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Touch Events** |
 | On tap | This event handler is called whenever the tap event is triggered on a widget. |
 
-## See More
-
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-
-- [3.1 Button](/learn/app-development/widgets/form/button/)
-- [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
-- [3.3 Calendar](/learn/app-development/widgets/form/calendar/)
-- [3.4 Checkbox](/learn/app-development/widgets/form/checkbox/)
-- [3.5 CheckboxSet](/learn/app-development/widgets/form/checkboxset/)
-- [3.6 Chips](/learn/app-development/widgets/form-widgets/chips/)
-- [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
-- [3.8 Currency](/learn/app-development/widgets/form/currency/)
-- [3.9 Date](/learn/app-development/widgets/form/date/)
-    - [i. Features](#features)
-    - [ii. Properties](#date-properties)
-    - [iii. Events](#date-events)
-- [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-    - [i. Features](#features)
-    - [ii. Properties](#datetime-properties)
-    - [iii. Events](#datetime-events)
-- [3.11 FileUpload](/learn/app-development/widgets/form/file-upload/)
-- [3.12 Radioset](/learn/app-development/widgets/form/radioset/)
-- [3.13 Rating](/learn/app-development/widgets/form/rating/)
-- [3.14 Select](/learn/app-development/widgets/form/select/)
-- [3.15 Select Locale](/learn/app-development/widgets/form/select-locale/)
-- [3.16 Slider](/learn/app-development/widgets/form/slider/)
-- [3.17 Switch](/learn/app-development/widgets/form/switch/)
-- [3.18 Text](/learn/app-development/widgets/form/text/)
-- [3.19 Textarea](/learn/app-development/widgets/form/textarea/)
-- [3.20 Time](/learn/app-development/widgets/form/time/)
-    - [i. Features](#features)
-    - [ii. Properties](#time-properties)
-    - [iii. Events](#time-events)
-- [3.21 Toggle](/learn/app-development/widgets/form/toggle/)

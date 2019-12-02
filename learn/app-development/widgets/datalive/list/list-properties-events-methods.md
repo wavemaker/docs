@@ -103,11 +103,11 @@ Page.Widgets.EmployeeList.navigation = ‘Basic’;
 ```
 Page.Widgets.EmployeeList.getWidgets(widgetName, index);
 //returns the widget you are trying to access
-//widgetName: name of the widget which we are trying to access \[Required\]
-//index: zero based index of the list item. \[Optional\]
-
-The widget returned can be manipulated as any other widget using $element property
-
+//widgetName: name of the widget which we are trying to access [Required]
+//index: zero based index of the list item. [Optional]
+```
+The widget returned can be manipulated as any other widget using `$element` property.
+```
  Page.Widgets.button1.$element.removeClass('btn-primary');
 //to remove the button primary class
 ```
@@ -163,7 +163,7 @@ Enable reorder allows the user to change the order of the items in the List in r
 | --- | --- |
 | To interact with widgets of selected item | |
 ```
-Page.Widgets.EmployeeList.selectedItemWidgets\[0\].Name.caption = ‘Eric’; 
+Page.Widgets.EmployeeList.selectedItemWidgets[0].Name.caption = ‘Eric’; 
 //Changes caption for Name widget of selected item to ‘Eric’.
 ```
 | **Purpose** | **Usage** |
@@ -175,8 +175,8 @@ Page.Widgets.EmployeeList.selectedItemWidgets\[0\].Name.caption = ‘Eric’;
 Page.Widgets.MyList.getIndex(listItemObject: ListItem);
 ```
 
-**Parameter: **listItemObject: list item object against which the index is required.  
-**Return: **Index of the passed list item object. 
+**Parameter:** listItemObject: list item object against which the index is required.  
+**Return:** Index of the passed list item object. 
 
 **Example:**
 ```
@@ -200,23 +200,23 @@ let item = Page.Widgets.list1.getItem(1);
 
 | **Purpose** | **Usage** |
 | --- | --- |
-| **getWidget:** | Returns a list of all widgets against a passed widget name. | While designing a list in a WM app, when a widget (with name my\_widget) is dropped in the list template, multiple instances of the same widget are created for each list item. In order to access all the instances of a widget, the getWidgets method can be used. |
+| **getWidget:** | Returns a list of all widgets against a passed widget name. | While designing a list in a WM app, when a widget (with name my_widget) is dropped in the list template, multiple instances of the same widget are created for each list item. In order to access all the instances of a widget, the getWidgets method can be used. |
 
 **Syntax**
 ```
-Page.Widgets.Mylist.getWidgets(name: string, \[index: number\])
+Page.Widgets.Mylist.getWidgets(name: string, [index: number])
 ```
 **Parameter**  
 Name (string): name of the widget in the list template.   
-Index (number)  \[optional\]: Index of the list item for which the widget instance is required.   
+Index (number)  [optional]: Index of the list item for which the widget instance is required.   
 **Return:** Returns a list of all widget instances with the passed name. If index is passed, the list contains only one widget instance against the passed index.     
 
 ### Example
 ```
-let widgetsList = Page.Widgets.MyList.getWidgets(“my\_text\_widget”);
+let widgetsList = Page.Widgets.MyList.getWidgets(“my_text_widget”);
 // If there are 10 list items, the method call will return an array of 10 
-instances of widget “my\_text\_widget” for each list item.
-let widget = Page.Widgets.MyList.getWidgets(“my\_text\_widget”, 4);
+instances of widget “my_text_widget” for each list item.
+let widget = Page.Widgets.MyList.getWidgets(“my_text_widget”, 4);
 // returns an array with one widget instance for 5th list item (zero based index)
 ```
 

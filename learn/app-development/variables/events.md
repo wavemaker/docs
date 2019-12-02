@@ -56,11 +56,11 @@ Change filter criteria as per your use case.
 ```
 Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, options) {
     // Validate or retrieve the data of a particular field
-    if (dataFilter.getCriteria("jobtitle")\[0\].value == "Product Manager") {
+    if (dataFilter.getCriteria("jobtitle")[0].value == "Product Manager") {
        return true;
      } else {
     //Change value of a field
-     dataFilter.getCriteria("jobtitle")\[0\].value = "Product Manager";
+     dataFilter.getCriteria("jobtitle")[0].value = "Product Manager";
     }
   };
 };
@@ -71,11 +71,11 @@ Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, option
 ```
 Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, options) {
     // Validate or retrieve the data of a particular field
-    if (dataFilter.getCriteria("deptId")\[0\].value == 1) {
+    if (dataFilter.getCriteria("deptId")[0].value == 1) {
        return false;
      } else {
     //Change value of a field
-     dataFilter.getCriteria("deptId")\[0\].value = 3;
+     dataFilter.getCriteria("deptId")[0].value = 3;
     }
   };
 };
@@ -101,11 +101,11 @@ Input data can also be modified by returning a new set of input data (object hav
 ```
 Page.empInsertonBeforeInsertRecord = function(variable, inputData, options) {
     // return a new set of input data (old one is discarded)
-    var new\_data = {
+    var new_data = {
         "firstname": "Steve",
         "lastname": "Rogers"
     };
-    return new\_data;
+    return new_data;
 };
 ```
 
@@ -142,11 +142,11 @@ Input data can also be modified by returning a new set of input data (object hav
 ```
 Page.MyJavaServiceVariableonBeforeUpdate = function(variable, inputData, options) {
     // return a new set of input data (old one is discarded)
-    var new\_data = {
+    var new_data = {
         "firstname": "Steve",
         "lastname": "Rogers"
     };
-    return new\_data;
+    return new_data;
 };
 ```
 
@@ -171,14 +171,14 @@ Page.MyJavaServiceVariableonBeforeUpdate = function(variable, inputData, options
 Page.HrdbEmployeeDataonBeforeDatasetReady = function(variable, data) {
     // the data has 'firstname' and 'lastname'
     // add a new field 'fullname' into the data
-    var new\_data = \[\];
+    var new_data = [];
     if (data && data.length) {
         data.forEach(function(datum) {
             datum.fullname = datum.firstname + " " + datum.lastname;
-            new\_data.push(datum);
+            new_data.push(datum);
         });
 
-        return new\_data;
+        return new_data;
     }
 };
 ```

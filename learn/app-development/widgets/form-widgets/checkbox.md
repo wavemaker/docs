@@ -13,8 +13,7 @@ A checkbox is a specific type of two-states button that can be either checked or
 | Name | The name is a unique identifier for the button. Special characters and spaces are not allowed in widget name. |
 | **Accessibility** |
 | Hint | Any text you enter for this property will be shown as a tooltip when the mouse hovers over this widget for _1.5 seconds. _It can be bound to a variable or another widget. |
-| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | Shortcut Key | Alphabet to act as a Shortcut key. The shortcut key property specifies a key to click the button. The way to activate the shortcut key varies from browser to browser ([see below for details](#shortcut)). |
 | **Layout** |
 | Width | The width of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._ |
@@ -34,11 +33,11 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 
 | Browser | Shortcut key Trigger |
 | --- | --- |
-| Internet Explorer | \[Alt\] + shortcut key |
-| Chrome | \[Alt\] + shortcut key (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
-| Firefox | \[Alt\] \[Shift\] + shortcut key (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcut key (_MAC_) |
+| Internet Explorer | [Alt] + shortcut key |
+| Chrome | [Alt] + shortcut key (_Windows/Linux_) |
+|  | [Control] [Alt] + shortcut key (_MAC_) |
+| Firefox | [Alt] [Shift] + shortcut key (_Windows/Linux_) |
+|  | [Control] [Alt] + shortcut key (_MAC_) |
 
 ## Events
 
@@ -54,31 +53,3 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Touch Events** |
 | On tap | This event handler is called whenever the widget is tapped. |
 
-## See More
-
-[3\. Form Widgets](/learn/app-development/widgets/widget-library/#form)
-
-- [3.1 Button](/learn/app-development/widgets/form/button/)
-- [3.2 Button Group](/learn/app-development/widgets/form/button-group/)
-- [3.3 Calendar](/learn/app-development/widgets/form/calendar/)
-- [3.4 Checkbox](#)
-    - [i. Properties](#properties)
-    - [ii. Events](#events)
-- [3.5 CheckboxSet](/learn/app-development/widgets/form/checkboxset/)
-- [3.6 Chips](/learn/app-development/widgets/form-widgets/chips/)
-- [3.7 Color Picker](/learn/app-development/widgets/form/color-picker/)
-- [3.8 Currency](/learn/app-development/widgets/form/currency/)
-- [3.9 Date](/learn/app-development/widgets/form/date/)
-- [3.10 Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.11 FileUpload](/learn/app-development/widgets/form/file-upload/)
-- [3.12 Number](/learn/app-development/widgets/form-widgets/number/)
-- [3.13 Radioset](/learn/app-development/widgets/form/radioset/)
-- [3.14 Rating](/learn/app-development/widgets/form/rating/)
-- [3.15 Select](/learn/app-development/widgets/form/select/)
-- [3.16 Select Locale](/learn/app-development/widgets/form/select-locale/)
-- [3.17 Slider](/learn/app-development/widgets/form/slider/)
-- [3.18 Switch](/learn/app-development/widgets/form/switch/)
-- [3.19 Text](/learn/app-development/widgets/form/text/)
-- [3.20 Textarea](/learn/app-development/widgets/form/textarea/)
-- [3.21 Time](/learn/app-development/widgets/form-widgets/date-time-datetime/)
-- [3.22 Toggle](/learn/app-development/widgets/form/toggle/)

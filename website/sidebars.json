@@ -271,14 +271,16 @@
   "Develop extensions":
     [      
       "app-development/custom-widgets/creating-prefabs",
+      "app-development/widgets/use-cases-prefabs",
       "app-development/ui-design/creating-themes",
       "app-development/ui-design/page-concepts/creating-template-bundles"
     ],
 
     "Mobile app": 
     [
-        "hybrid-mobile/building-hybrid-mobile-apps",
-        "hybrid-mobile/native-device-support",          
+        "hybrid-mobile/building-hybrid-mobile-apps",        
+        "hybrid-mobile/native-device-support",   
+        "hybrid-mobile/first-mobile-app",       
 
       {
         "type": "subcategory",
@@ -465,7 +467,8 @@
             "how-tos/integrating-amazon-cognito-user-authentication",
             "how-tos/integrating-sample-jasper-report-wavemaker-application",
             "how-tos/generate-pdf-file-using-jasper-reports",
-            "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0"
+            "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
+            "how-tos/app-migration-wavemaker-9x-10x"
           ],
 
           "Mobile Development": 
@@ -527,8 +530,10 @@
 
           "- Forms":
           [
+            "how-tos/using-live-form",
             "how-tos/using-wizard-cumulative-data-entry-form",
             "how-tos/live-form-tabbed-form",
+            "how-tos/how-tos-live-form",            
             "how-tos/live-form-linking-another-widget",
             "how-tos/live-form-related-fields",
             "how-tos/adding-master-detail-records-transaction",
@@ -721,7 +726,7 @@
       "app-development/widgets/form-widgets/file-upload",
       "app-development/widgets/form-widgets/color-picker",
       "app-development/widgets/form-widgets/slider",
-      "app-development/widgets/form-widgets/rating",
+      "app-development/widgets/form-widgets/rating-widget",
       "app-development/widgets/form-widgets/select-locale",
       "app-development/widgets/form-widgets/",
       "app-development/widgets/form-widgets/",
@@ -772,7 +777,8 @@
 
     "Charts":
     [
-      "app-development/widgets/chart/chart-widget"
+      "app-development/widgets/chart/chart-widget",
+      "app-development/widgets/chart/onbeforerender"
     ],
 
     "Navigation":
@@ -1030,7 +1036,7 @@
           "label": "Mobile App",
           "ids": 
             [ 
-              "app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach",
+              "app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach",              
               "app-development/wavemaker-app-development-faqs/publishing-app-to-app-store",
               "app-development/wavemaker-app-development-faqs/publish-to-app-store-without-any-limitations"
             ]

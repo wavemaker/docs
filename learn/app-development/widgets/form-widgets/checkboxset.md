@@ -17,11 +17,10 @@ Using the Group By property you can group the items together under a heading. Th
 | --- | --- |
 | Name | The name is a unique identifier for the button. Special characters and spaces are not allowed in widget name. |
 | **Accessibility** |
-| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** |
-| Width | The width of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._ |
-| Height | The height of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._ |
+| Width | The width of your widget can be specified in _`em, pt, px`_ or _`% (_i.e _50px, 75%)`._ |
+| Height | The height of your widget can be specified in _`em, pt, px`_ or _`% (_i.e _50px, 75%)`._ |
 | Layout | This property controls how contained widgets are displayed within this widget container. |
 | **Dataset** |
 | Value | Set this property to a variable to populate the list of values to display. |
@@ -56,10 +55,9 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Callback Events** |
 | On ready | This event handler is called when the container is loaded. |
 
-## Use Cases
+## See Also
 
-- [Working with Selection Widgets](/learn/how-tos/selection-widgets-use-case/)
-- [How to use CheckboxSet widget to filter a List](/learn/how-tos/checkboxset-filter-list-data/)
+[Working with Selection Widgets](/learn/how-tos/selection-widgets-use-case/)  
+[How to use CheckboxSet widget to filter a List](/learn/how-tos/checkboxset-filter-list-data/)  
 
-## See More
 

@@ -31,7 +31,7 @@ The **Menu Layout** - _horizontal_ or _vertical_ and **Menu Position** can be se
 | **Accessibility** |
 | Hint | Any text or HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. It can be bound to a variable. |
 | Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. |
-| Shortcut Key | The shortcut key property specifies a shortcut key to activate/focus an element. (\*[See below for details](#shortcut)) |
+| Shortcut Key | The shortcut key property specifies a shortcut key to activate/focus an element. (*[See below for details](#shortcut)) |
 
 :::note
 In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". 
@@ -65,13 +65,7 @@ Item link has priority over _onSelect_ actions i.e. when the link is selected th
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Link Target | This defines the app behavior on click of the Item Link.  <br> - `_blank` Opens the linked document in a new window or tab; <br> - `_self` Opens the linked document in the same frame as it was clicked (this is the default value); <br> - `_parent` Opens the linked document in the parent frame; <br> - `_top` Opens the linked document in the full body of the window. |
-| Auto Close | This property defines the behavior of menu closing, it can be:
-
-- outsideClick - close the menu when clicked outside of the menu,
-- always - when a menu item is selected or on click outside menu, or
-- disabled - do not close once opened.
-
- |
+| Auto Close | This property defines the behavior of menu closing, it can be: <br><br> - outsideClick - close the menu when clicked outside of the menu, <br> - always - when a menu item is selected or on click outside menu, or <br> - disabled - do not close once opened.  |
 | Animation on to content | This property controls the animation of the menu items. It can be set to _slide, fade, or scale_. Note: This feature works only in the run mode. |
 | **Graphics** |
 | Icon Class | This bindable property defines the class of the icon that is applied to the button. |
@@ -82,11 +76,11 @@ Item link has priority over _onSelect_ actions i.e. when the link is selected th
 
 | Browser | Shortcutkey Trigger |
 | --- | --- |
-| Internet Explorer | \[Alt\] + shortcut key |
-| Chrome | \[Alt\] + shortcut key (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcutkey (_MAC_) |
-| Firefox | \[Alt\] \[Shift\] + shortcutkey (_Windows/Linux_) |
-|  | \[Control\] \[Alt\] + shortcutkey (_MAC_) |
+| Internet Explorer | [Alt] + shortcut key |
+| Chrome | [Alt] + shortcut key (_Windows/Linux_) |
+|  | [Control] [Alt] + shortcutkey (_MAC_) |
+| Firefox | [Alt] [Shift] + shortcutkey (_Windows/Linux_) |
+|  | [Control] [Alt] + shortcutkey (_MAC_) |
 
 ## Events
 
