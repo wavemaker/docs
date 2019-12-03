@@ -24,13 +24,13 @@ Before clicking on Save/Build, you need to set the build properties: Refer to th
 
 [![](/learn/assets/Build_Cordova_Zip.png)](/learn/assets/Build_Cordova_Zip.png) To save the properties for future builds,  click **Save. **Click on **Build** to download the zip file.
 
-1. Ensure that Cordova@8.0.0 is setup on your machine, [see here for details](https://cordova.apache.org/).
+1. Ensure that Cordova@8.1.1 is setup on your machine, [see here for details](https://cordova.apache.org/).
 2. Extract the zip contents (say, CORDOVA\_PROJECT folder)
 3. In the terminal, go to CORDOVA\_PROJECT (where the file was extracted to) directory and run the following commands:
 
 ### For Android
 ```       
-$cordova platform add android@7.0.0
+$cordova platform add android@7.1.2
 ```        
 The above command will add Android Platform to your project structure and also install all plugins that you specified in config.xml.
 ```        
