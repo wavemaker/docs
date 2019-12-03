@@ -50,10 +50,11 @@ const siteConfig = {
     ],
 
     //disabling till docusaurus v2 comes with custom search
-    /*algolia: {
-        apiKey: '#add-the-key-here',
-        indexName: 'github',
-    },*/
+    /* algolia: {
+        apiKey: process.env.ALGOLIA_DOCSEARCH_API_KEY,
+        indexName: process.env.ALGOLIA_DOCSEARCH_INDEX_NAME
+    }, */
+    
     // If you have users set above, you add it here:
     users,
 
@@ -126,7 +127,10 @@ const siteConfig = {
 	blogSidebarCount: 'ALL',
 
     markdownPlugins: [
-        require('remarkable-admonitions')({icon: 'svg-inline'})
+        require('remarkable-admonitions')({icon: 'svg-inline'}),
+        function (md) {
+            md.use(require("./variableInjectionPlugin"));
+        }
     ]
 
 };
