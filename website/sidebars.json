@@ -429,7 +429,8 @@
           "- Web services":
           [
             "how-tos/using-app-environment-properties",
-            "how-tos/using-post-method-send-data-rest-api" 
+            "how-tos/using-post-method-send-data-rest-api",
+            "how-tos/intercept-requests-responses-api-calls-one-place"
           ],
 
           "- Java services":
