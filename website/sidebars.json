@@ -46,7 +46,7 @@
         "app-development/services/api-designer/api" 
       ],         
 
-      "- Data services": 
+      "  Data services": 
       [
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
@@ -100,7 +100,7 @@
         
       ],  
 
-      "- Web services": 
+      "  Web services": 
       [   
             "app-development/services/web-services/web-services",            
         {
@@ -128,7 +128,7 @@
       ],
 
 
-      "- Java services": 
+      "  Java services": 
       [   
           "app-development/services/java-services/java-service",     
           {
@@ -158,7 +158,7 @@
           } 
       ],
 
-      "- Security services": 
+      "  Security services": 
       [
         {
           "type": "subcategory",
@@ -188,7 +188,7 @@
         }
       ],
     
-      "Integration":
+      "Service integration":
       [       
             "app-development/variables/data-integration",              
         {
