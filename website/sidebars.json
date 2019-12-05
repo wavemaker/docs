@@ -824,7 +824,8 @@
     [ 
       "app-development/widgets/prefab/youtube",
       "app-development/widgets/prefab/googlemaps",
-      "app-development/widgets/prefab/qrcode",   
+      "app-development/widgets/prefab/qrcode", 
+      "app-development/widgets/prefab/box-viewer-prefab",  
       {
         "type": "subcategory",
         "label": "OAuth",
