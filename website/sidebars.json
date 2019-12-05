@@ -429,7 +429,8 @@
           "- Web services":
           [
             "how-tos/using-app-environment-properties",
-            "how-tos/using-post-method-send-data-rest-api" 
+            "how-tos/using-post-method-send-data-rest-api",
+            "how-tos/intercept-requests-responses-api-calls-one-place"
           ],
 
           "- Java services":
@@ -851,6 +852,7 @@
         "label": "Versions: 10.2.x",
         "ids": 
           [
+            "wavemaker-release-notes/v10-2-4",
             "wavemaker-release-notes/v10-2-3",
             "wavemaker-release-notes/v10-2-2",
             "wavemaker-release-notes/v10-2-1",
