@@ -22,19 +22,22 @@ OR
 1. Open the project and access File Explorer
 2. Search for pom.xml
 3. The following dependency needs to be added to _pom.xml_ file under _dependencies_ section:
-    
+   ``` 
     <dependency>
         <groupId>com.sun.mail</groupId> 
         <artifactId>javax.mail</artifactId> 
         <version>1.5.6</version> 
     </dependency>
-    
+    ```
 
-[![](/learn/assets/email_pom.png)](/learn/assets/email_pom.png)**Step 2: Creating Java Service**:
+[![](/learn/assets/email_pom.png)](/learn/assets/email_pom.png)
 
-1. Create a [Java Service](app-development/services/java-services/java-service/), named EmailService
+**Step 2: Creating Java Service**:
+
+1. Create a [Java Service](/learn/app-development/services/java-services/java-service/#creating-a-java-service), named EmailService
 2. Add the following import statements in the Java service created in the above step.
     
+    ```Java
     import javax.servlet.http.HttpServletRequest;
     import javax.annotation.PostConstruct;
     import org.slf4j.Logger;
@@ -53,9 +56,11 @@ OR
     import com.wavemaker.runtime.security.SecurityService;
     import com.wavemaker.runtime.service.annotations.ExposeToClient;
     import com.wavemaker.runtime.service.annotations.HideFromClient;
+    ```
     
 3. Add the following class definition for the EmailService _Note_: Here we are setting default values for the properties like username, password, etc. required by the EmailService. To set them to Environment level values see the next section.
     
+    ```Java
     @ExposeToClient
     public class EmailService {
     
@@ -108,6 +113,7 @@ OR
             }
     }
     
+    ```
 
 **Step 3: Using the Java Service**:
 
@@ -125,7 +131,8 @@ OR
 2. For example, currently, in the above Java Service, we are using “ smtp.gmail.com ” as the SMTP host. Also the username, password fields are set to default values.
 3. You can set these properties at the environment level by adding the “@Value” annotation and remove the default values set onto the fields.
 4. After parameterizing the fields, the Java Service will look like below:
-    
+  
+    ```Java  
     @Value("${app.environment.authentication}")
     private boolean authentication;
     @Value("${app.environment.smtpServerTTLSEnabled}")
@@ -138,6 +145,8 @@ OR
     private String username;
     @Value("${app.environment.password}")
     private String password;
+    
+    ```
     
 5. From [Project Settings](/learn/app-development/wavemaker-overview/product-walkthrough#project-settings) navigate to the [Profile Configuration](/learn/app-development/deployment/configuration-profiles/).
 6. From Development section access the App Environment tab and add the values as per your needs: [![](/learn/assets/email_app_env.png)](/learn/assets/email_app_env.png)
