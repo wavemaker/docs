@@ -22,13 +22,16 @@ OR
 1. Open the project and access File Explorer
 2. Search for pom.xml
 3. The following dependency needs to be added to _pom.xml_ file under _dependencies_ section:
+
+
     
     <dependency>
-        <groupId>com.sun.mail</groupId> 
-        <artifactId>javax.mail</artifactId> 
-        <version>1.5.6</version> 
-    </dependency>
-    
+    <groupId>com.sun.mail</groupId> 
+    <artifactId>javax.mail</artifactId> 
+    <version>1.5.6</version> 
+</dependency>
+
+
 
 [![](/learn/assets/email_pom.png)](/learn/assets/email_pom.png)**Step 2: Creating Java Service**:
 
