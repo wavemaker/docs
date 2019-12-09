@@ -18,7 +18,7 @@ The same-origin policy is an important security concept implemented by web brows
 
 ## Preventing XSS Attacks
 
-XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end-user. For example, attacker can write the following script in a text box <script>alert(document.cookie)</script> which gets executed.
+XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end-user. For example, attacker can write the following script in a text box ` <script>alert(document.cookie)</script>` which gets executed.
 
 [![](/learn/assets/security_OWSP_XSS.png)](/learn/assets/security_OWSP_XSS.png) 
 
