@@ -142,7 +142,9 @@ Once published the artifacts can be viewed from the Artifacts dialog.
 
 [![](/learn/assets/artifactAccess.png)](/learn/assets/artifactAccess.png)
 
-**Artifacts dialog** will list all the Artifacts available with details like
+### Artifacts Dialog
+
+Artifacts dialog will list all the Artifacts available with details like
 
 - **Basic** with the category, publisher, changelog, tags, dependency information and metadata information
 - **Version History**, and
@@ -150,7 +152,9 @@ Once published the artifacts can be viewed from the Artifacts dialog.
 
 Prefabs can be imported from this dialog. Other Artifacts are available for use as soon as EDN Admin approves the Artifact.
 
-**Artifact Updates**: Every time there is a change or modification in an Artifact, it needs to be Published again with a changed Version number. When a developer opens a project using that updated Artifact, Artifact updates are prompted. The developer can choose to update, revert (in case artifact is being downgraded) or ignore. Alternatively, notifications will be pushed for the developer within Studio to take an action on artifact upgrades.
+### Artifact Updates
+
+Every time there is a change or modification in an Artifact, it needs to be Published again with a changed Version number. When a developer opens a project using that updated Artifact, Artifact updates are prompted. The developer can choose to update, revert (in case artifact is being downgraded) or ignore. Alternatively, notifications will be pushed for the developer within Studio to take an action on artifact upgrades.
 
 [![](/learn/assets/Artifacts_list.png)](/learn/assets/Artifacts_list.png)
 
@@ -161,19 +165,27 @@ Artifact Management involves two aspects:
 - **Pre-development**: this involves defining the Categories, Custom Metadata and Import of Artifacts. These activities are accessed from Launchpad by Super Admin.
 - **Post-development**: this involves reviewing, approving/rejecting and export of Artifacts. These activities are accessed from EDN by Enterprise Admin.
 
-**Launchpad** allows the Super Admin to the following functionality:
+**Launchpad** allows a super admin with the following functionality and permissions.
 
-1. **Import of Artifacts**: Artifacts imported here will be available enterprise-wide. 
+### Import Artifact
+
+Artifacts imported here will be available enterprise-wide. 
 
 [![](/learn/assets/Artifacts_import.png)](/learn/assets/Artifacts_import.png)
 
-2. **Custom Metadata**: This information is used to identify Artifacts based upon say the platform version and so on. Define the Key-value pairs and add. All Artifacts developed will get this data attached. 
+### Custom Metadata
+
+This information is used to identify Artifacts based upon say the platform version and so on. Define the Key-value pairs and add. All Artifacts developed will get this data attached. 
 
 [![](/learn/assets/Artifacts_metadata.png)](/learn/assets/Artifacts_metadata.png)
 
-3. **Categories**: used by the Artifact developer to aid in grouping the Artifacts 
+### Categories
+
+These are used by the Artifact developer to aid in grouping the Artifacts. 
 
 [![](/learn/assets/Artifacts_categories.png)](/learn/assets/Artifacts_categories.png)
+
+
 
 **EDN** allows management of Artifacts by the Enterprise Admin. The Artifacts can be filtered by:
 
@@ -181,18 +193,22 @@ Artifact Management involves two aspects:
     - The default Artifacts as provided by the **System**, or
     - Artifacts created and published by **Users**
 - **Types** - As mentioned earlier the different Artifact types include: Project Shell, Prefab, Template Bundle or Themes
-- **Categories** as defined by the publisher at the time of developing and/or publishing the Artifacts.
+- **Categories** - As defined by the publisher at the time of developing and/or publishing the Artifacts.
 
-[![](/learn/assets/Artifacts_dashboard.png)](/learn/assets/Artifacts_dashboard.png) **Export Artifact**
+[![](/learn/assets/Artifacts_dashboard.png)](/learn/assets/Artifacts_dashboard.png) 
 
-1. 1. Artifacts can be selected for **Export**.
-    2. You can set the Filter criterion and only the Artifacts meeting the filter requirements will be selected for Export.
-    3. You will be prompted for a Package name, a default package name will be generated.
-    4. The selected Artifacts will be bundled into a zip file with the given package name.
+### Export Artifact
+
+1. Artifacts can be selected for **Export**.
+2. You can set the Filter criterion and only the Artifacts meeting the filter requirements will be selected for Export.
+3. You will be prompted for a Package name, a default package name will be generated.
+4. The selected Artifacts will be bundled into a zip file with the given package name.
 
 [![](/learn/assets/Artifacts_export.png)](/learn/assets/Artifacts_export.png)
 
-**Approval Queue** This will list all the Artifacts Pending Approvals and Rejected. 
+### Approval Queue
+
+This will list all the Artifacts Pending Approvals and Rejected. 
 
 [![](/learn/assets/Artifacts_pending.png)](/learn/assets/Artifacts_pending.png) 
 
