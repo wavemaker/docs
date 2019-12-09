@@ -11,7 +11,7 @@ describe('Top Navigation in web & mobile', function() {
   });
   
   it('Verifies navigation elements in mobile', function() {
-	  cy.viewport('iphone-6');
+	cy.viewport('iphone-6');
 	var nav = ".slidingNav";
 	var navElements = ["Docs"];
 	navElements.forEach(function(navItem) {
