@@ -19,6 +19,16 @@ class Header extends React.Component {
                     </div>
                     <div className="column navigation nav-menu">
                         <ul id="nav">
+                            <li class="dropdown">
+                              <a href="#" role="button" id="dropdown">Docs</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/learn/docs">Docs</a>
+                                <a class="dropdown-item" href="http://www.wavemaker.com/partners">Partners</a>
+                                <a class="dropdown-item" href="http://www.wavemaker.com/customers">Customers</a>
+                                <a class="dropdown-item" href="http://www.wavemaker.com/about">About Us</a>
+                                <a class="dropdown-item" href="http://www.wavemaker.com/contact">Contact Us</a>
+                              </div>
+                            </li>
                             <li><a href="/learn/docs">DOCS</a></li>
                             <li><a href="http://www.wavemaker.com/partners">PARTNERS</a></li>
                             <li><a href="http://www.wavemaker.com/customers">CUSTOMERS</a></li>

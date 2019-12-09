@@ -49,11 +49,12 @@ const siteConfig = {
 		{href: 'https://www.wavemaker.com/get-started/', label: 'Start free trial', external: true}
     ],
 
-    //disabling till docusaurus v2 comes with custom search
-    /*algolia: {
-        apiKey: '#add-the-key-here',
-        indexName: 'github',
-    },*/
+    /* Algolia DocSearch */
+    algolia: {
+        apiKey: process.env.ALGOLIA_DS_API_KEY,
+        indexName: process.env.ALGOLIA_DS_INDEX_NAME
+    },
+
     // If you have users set above, you add it here:
     users,
 
@@ -99,7 +100,11 @@ const siteConfig = {
     ],
 
     // Add custom css.
-    stylesheets: ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', 'https://fonts.googleapis.com/css?family=Lato&display=swap'],
+    stylesheets: [
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
+        'https://fonts.googleapis.com/css?family=Lato&display=swap',
+        '/learn/css/wavemaker.css?'+ new Date().valueOf()
+    ],
     // On page navigation for the current documentation page.
     onPageNav: 'separate',
     // No .html extensions for paths.
