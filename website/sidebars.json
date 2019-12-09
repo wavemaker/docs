@@ -273,7 +273,8 @@
       "app-development/custom-widgets/creating-prefabs",
       "app-development/widgets/use-cases-prefabs",
       "app-development/ui-design/creating-themes",
-      "app-development/ui-design/page-concepts/creating-template-bundles"
+      "app-development/ui-design/page-concepts/creating-template-bundles",
+      "app-development/wavemaker-overview/artifacts-repository"
     ],
 
     "Mobile app": 
@@ -1059,8 +1060,7 @@
     [
         "app-development/wavemaker-overview/platform-overview",                                              
         "app-development/ui-design/page-concepts",
-        "responsive-web/web-ui-design",
-        "app-development/wavemaker-overview/artifacts-repository",
+        "responsive-web/web-ui-design",        
         "app-development/services/backend-architecture",
         "app-development/variables/integration-binding-layer"
     ]

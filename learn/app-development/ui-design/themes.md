@@ -15,15 +15,23 @@ Theme mainly contains the following styling for all the elements on the page:
 
 ## Theme Concepts
 
-In this document the following concepts are explained:
+In this document the following concepts are explained.
 
 - [Applying themes](#applying-theme)
 - [Importing custom themes](#importing-theme)
-- [Creating themes](#create-theme) for WaveMaker [web apps](#create-theme-web), [using Bootswatch](#create-theme-bootswatch), and for [mobile apps](#create-theme-mobile)
-- [Building](#build-theme)
-- [Testing](#test-theme) or changing theme temporarily
-- [Publishing](#publish-theme)
-- [Theme package structure](#theme-packaging)
+
+:::note
+You can apply themes and import custom themes, additionally, you can develop your own custom themes. To develop a custom theme, follow the topics specified below. 
+
+- [Creating themes](/learn/app-development/ui-design/creating-themes) 
+    - [For Web apps](/learn/app-development/ui-design/creating-themes#creating-wavemaker-theme-for-web-apps) 
+    - [Using Bootswatch](/learn/app-development/ui-design/creating-themes#creating-wavemaker-theme-for-web-apps-using-bootswatch)
+    - [For Mobile apps](/learn/app-development/ui-design/creating-themes#creating-wavemaker-theme-for-mobile-apps)
+- [Build WaveMaker Theme](/learn/app-development/ui-design/creating-themes#building-wavemaker-theme)
+- [Test Theme](/learn/app-development/ui-design/creating-themes#testing-a-custom-theme) or change a theme temporarily
+- [Publish Custom Theme](/learn/app-development/ui-design/creating-themes#publishing-a-custom-theme)
+- [WaveMaker Theme Package Structure](/learn/app-development/ui-design/creating-themes#wavemaker-theme-package-structure)
+:::
 
 ## Applying Theme
 
