@@ -534,7 +534,7 @@ h3 {
     .navigationSlider .slidingNav ul li:first-child {
         display: block;
         flex: 0;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .navigationSlider .slidingNav ul li:last-child {
         display: block;
