@@ -100,7 +100,11 @@ const siteConfig = {
     ],
 
     // Add custom css.
-    stylesheets: ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', 'https://fonts.googleapis.com/css?family=Lato&display=swap'],
+    stylesheets: [
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
+        'https://fonts.googleapis.com/css?family=Lato&display=swap',
+        '/learn/css/wavemaker.css?'+ new Date().valueOf()
+    ],
     // On page navigation for the current documentation page.
     onPageNav: 'separate',
     // No .html extensions for paths.
