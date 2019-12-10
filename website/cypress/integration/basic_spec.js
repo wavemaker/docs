@@ -3,7 +3,7 @@ describe('Top Navigation in web & mobile', function() {
 	navSearchWrapper = ".navSearchWrapper",
 	learnAppUrl = "http://localhost:3000/learn/";
   
-  it('Verifies navigation elements in desktop', function() {
+  it('Verifies top nav has 4 options in desktop browser', function() {
     cy.visit(learnAppUrl);
 	
 	var navElements = ["Docs", "Widgets", "How-to", "Releases"];
@@ -12,7 +12,7 @@ describe('Top Navigation in web & mobile', function() {
 	});
   });
   
-  it("searchBar should be visible in desktop and mobile", function() { 
+  it("Search should be visible in desktop and mobile", function() { 
 	cy.visit(learnAppUrl);
 	
 	cy.get(nav).get(navSearchWrapper).should("be.visible");
@@ -20,7 +20,7 @@ describe('Top Navigation in web & mobile', function() {
 	cy.get(nav).get(navSearchWrapper).should("be.visible");
   });
   
-  it('Verifies that only Docs, Search is visible in the navbar', function() {
+  it('Verifies that only Docs, Search is visible in the navbar in mobile', function() {
 	cy.viewport('iphone-6');
 	cy.visit(learnAppUrl);
 	

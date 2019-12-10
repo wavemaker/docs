@@ -14,7 +14,7 @@ Website Configuration files - **DO NOT EDIT** these files.
 
 Running integration tests
 
-1. End to end integration tests are written using (cypress)[https://docs.cypress.io] 
+1. End to end integration tests are written using [cypress](https://docs.cypress.io)
 2. You can run these tests by using the command `npm run cy:run`
 3. If you like to write a new integration tests, write them in cypress/integration folder
 
