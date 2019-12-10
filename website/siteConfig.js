@@ -96,14 +96,14 @@ const siteConfig = {
     // Add custom scripts here that would be placed in <script> tags.
     scripts: [
         'https://buttons.github.io/buttons.js',
-        '/learn/js/error-reporting.js'
+        '/learn/js/error-reporting.js',
+        '/learn/js/inject-stylesheets.js'
     ],
 
     // Add custom css.
     stylesheets: [
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
-        'https://fonts.googleapis.com/css?family=Lato&display=swap',
-        '/learn/css/wavemaker.css?'+ new Date().valueOf()
+        'https://fonts.googleapis.com/css?family=Lato&display=swap'
     ],
     // On page navigation for the current documentation page.
     onPageNav: 'separate',
