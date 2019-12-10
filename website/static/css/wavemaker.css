@@ -13,6 +13,18 @@ input#search_input_react:focus, input#search_input_react:active {
     color: #333;
 }
 
+.navSearchWrapper ::-webkit-input-placeholder { /* Edge */
+  color: #a9a9a9;
+}
+
+.navSearchWrapper :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #a9a9a9;
+}
+
+.navSearchWrapper ::placeholder {
+  color: #a9a9a9;
+}
+
 .navSearchWrapper::before {
     border: 2px solid #a9a9a9;
     height: 8px;
