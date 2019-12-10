@@ -1,0 +1,45 @@
+version: 0.1
+frontend:
+  phases:
+   preBuild:
+      commands:
+        - cd website
+        - npm install
+   build:
+     commands:
+        - npm run build
+  customHeaders:
+    - pattern: '**/*.js'
+      headers:
+      - key: 'Cache-Control'
+        value: 'max-age=2629744'
+    - pattern: '**/*.css'
+      headers:
+      - key: 'Cache-Control'
+        value: 'max-age=2629744'
+  artifacts:
+    baseDirectory: /website/build
+    files:
+      - '**/*'
+  cache:
+    paths:
+     - node_modules/**/*
+test:
+  artifacts:
+    baseDirectory: /website/cypress
+    configFilePath: "**/mochawesome.json"
+    files:
+      - "**/*.png"
+      - "**/*.mp4"
+  phases:
+    preTest:
+      commands:
+        - cd website
+        - npm install
+        - 'npm run cypress:prepare-prod'
+    test:
+      commands:
+        - 'npm run cypress:prod'
+    postTest:
+      commands:
+        - 'npm run cypress:prep-report'
