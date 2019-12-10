@@ -15,3 +15,6 @@ website/i18n/*
 
 .env
 website/package-lock.json
+
+website/cypress/videos
+website/cypress/report
