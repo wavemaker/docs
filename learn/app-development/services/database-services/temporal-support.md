@@ -31,7 +31,7 @@ Application-period temporal tables help in tracking business time i.e. when cert
 ### Bitemporal tables
 Bitemporal tables manage both system time and business time and combine all the capabilities of system-period and application-period temporal tables.
 
-For more details on DB2 Temporal refer to [A matter of time: Temporal data management in DB2 10](https://www.ibm.com/developerworks/data/library/techarticle/dm-1204db2temporaldata/).
+For more details on DB2 Temporal refer to [A matter of time: Temporal data management in DB2 10](https://www.ibm.com/developerworks/data/library/techarticle/dm-1410temporal-tables-db2zos/index.html).
 
 ## Temporal Support in WaveMaker
 
