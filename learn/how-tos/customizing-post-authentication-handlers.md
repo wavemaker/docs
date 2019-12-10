@@ -3,7 +3,7 @@ title: "Customizing Post Authentication Handlers"
 id: ""
 ---
 
-In a Security enabled WaveMaker app, post-authentication the following actions are performed:
+In a Security enabled WaveMaker app, post-authentication the following actions are performed.
 
 1. The Default Success Handler, which includes generation of CSRF token, storing the session context, etc., gets invoked.
 2. Next, any custom authentication success handlers provided by the app developer are triggered.
@@ -15,7 +15,7 @@ This section shows how custom post-authentication success handler and custom red
 
 Post-Authentication Success Handlers, in addition to the default one, can be implemented as per app requirements. At app runtime, WaveMaker will automatically trigger these custom handlers.
 
-Creating custom post-authentication success handler involves the following steps:
+Creating custom post-authentication success handler involves the following steps.
 
 - Creation of a package structure in `src/main/java`.
 - Creating the interface implementation in that package.
@@ -27,7 +27,7 @@ Multiple implementations can be provided as per your app requirements by followi
 
 ### Creating a Package Structure
 
-Create the package folder structure under `src/main/java`. If you want to name your package, see the following example:
+Create the package folder structure under `src/main/java`. If you want to name your package, see the following example.
 
 [![](/learn/assets/Java-src-file.png)](/learn/assets/Java-src-file.png)
 
@@ -41,7 +41,7 @@ void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse res
                              WMAuthentication authentication) throws IOException, ServletException;
 }
 ```
-For example, the following _MyCustomAuthenticationSuccessHandler_ fetches _lastAccessedTime_ of the authenticated user and sets it in the custom attributes.
+For example, the following `MyCustomAuthenticationSuccessHandler` fetches `lastAccessedTime` of the authenticated user and sets it in the custom attributes.
 
 Change the package name according to your requirements.
 
@@ -94,7 +94,7 @@ At app runtime, WaveMaker will automatically trigger these custom handlers. Foll
 
 ## WMAuthentication Class
 
-WMAuthentication wrapper class holds authentication information like principal, loginTime, userId and the original authentication object. This wrapper class has the following structure:
+`WMAuthentication` wrapper class holds authentication information like `principal`, `loginTime`, `userId` and the original authentication object. This wrapper class has the following structure.
 ```
 public class WMAuthentication extends AbstractAuthenticationToken {
    private Map<String, Attribute> attributes = new HashMap<>();
@@ -137,7 +137,7 @@ public class WMAuthentication extends AbstractAuthenticationToken {
    }
 }
 ```
-You can add custom attributes using the _addAttribute_ method. You need to implement methods in the WMAuthenticationSuccessHandler interface and call the below method of WMAuthentication object to add any custom attributes.
+You can add custom attributes using the `addAttribute` method. You need to implement methods in the `WMAuthenticationSuccessHandler` interface and call the below method of `WMAuthentication` object to add any custom attributes.
 ```
 public void addAttribute(String key, Object value, Attribute.AttributeScope scope) {
     attributes.put(key, new Attribute(scope, value));
@@ -178,7 +178,7 @@ public class Attribute implements Serializable{
 ```
 ### Attribute Scope
 
-AttributeScope determines whether the attribute is server only property or can be visible to both client and server. You can filter out the custom attributes from being visible to the client by setting Attribute.AttributeScope property.
+`AttributeScope` determines whether the attribute is server only property or can be visible to both client and server. You can filter out the custom attributes from being visible to the client by setting `Attribute.AttributeScope` property.
 ```
 public enum AttributeScope {
    /*
