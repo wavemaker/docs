@@ -5,8 +5,8 @@ frontend:
       commands:
         - cd website
         - npm install
-      build:
-        commands:
+   build:
+     commands:
         - npm run build
   customHeaders:
     - pattern: '**/*.js'
