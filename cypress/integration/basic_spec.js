@@ -17,6 +17,15 @@ describe('Top Navigation in web & mobile', function() {
 	navElements.forEach(function(navItem) {
 		cy.get(nav).contains(navItem);
 	});
+	//Add assertion to check that only Docs is visible and not others in slidingNav and that search bar is visible.
+  });
+  
+  it('Verifies that hamburger menu is visible in mobile', function() {
+	cy.viewport('iphone-6');
+	var nav = ".slidingNav";
+		
+	cy.get(nav).contains("Docs").click();
+	cy.get(".hamburger-menu").should("be.visible");
   });
 });
 
