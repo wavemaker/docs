@@ -48,11 +48,11 @@ In case of **Random salt** which gets generated for every plain text, the hash c
 ```    
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
-public static String hashPassword(String password\_plaintext) {
+public static String hashPassword(String password_plaintext) {
     String salt = BCrypt.gensalt();
     logger.debug("Salt generated " + salt);
-    String hashed\_password = BCrypt.hashpw(password\_plaintext, salt);
-    return hashed\_password;
+    String hashed_password = BCrypt.hashpw(password_plaintext, salt);
+    return hashed_password;
 }
 ```    
 - [Create a variable](/learn/app-development/variables/variables) for the above Java service and bind the input parameter of the Java service variable to the _`password text widget >> datavalue`_ of the registration form.
@@ -81,7 +81,7 @@ We need to override the default `daoauthenticationprovider` bean by including th
 
 ### STEP-3: Importing the Java File for Validating Password
 
-Download the [MyPasswordEncoder](learn/assets/BCryptPasswordEncoder-1.zip) file, extract the file and store it on your device.
+Download the [MyPasswordEncoder](/learn/assets/BCryptPasswordEncoder-1.zip) file, extract the file and store it on your device.
 
 - [Import the `myPasswordEncoder` Java file](/learn/app-development/services/3rd-party-libraries) in the following path: `project/src/main/java/com/wavemaker/runtime/security/provider/database/` 
 
