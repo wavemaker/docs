@@ -12,5 +12,14 @@ Website Configuration files - **DO NOT EDIT** these files.
 2. `pages` directory contains landing page `index.js`. 
 2. `static` directory contains website styling `custom.css` and website images. 
 
+Running integration tests
+
+1. End to end integration tests are written using cypress 
+2. You can run these tests by using the following command
+```
+npm run cy:run
+```
+3. If you like to write a new integration tests, write them in cypress folder
+
 
 
