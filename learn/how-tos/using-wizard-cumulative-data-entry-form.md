@@ -3,6 +3,23 @@ title: "Using Wizard for Cumulative Data Entry in a Form"
 id: ""
 ---
 
-We will see how form fields can be distributed over multiple wizard steps, with single save in the last step.
+Learn how form fields can be distributed over multiple wizard steps, with single save in the last step.
 
-<iframe width="708" height="427" src="https://docs.google.com/presentation/d/15L2kS2wtdlXA5qehwYMfsf3bcdRh-TwG__lIHIxtqQ8/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+## How-To create a Progressive Data Entry form using a Wizard
+
+### Setting Up Data
+
+Use ProfileDB and Profile Table. 
+Or add table to your database using the following DB Schema
+
+### Design UI
+### Wizard Step 1 UI Design
+### Configure OnNext Callback on Wizard Step 1
+### Wizard Step 2 UI Design
+### Configure OnNext Callback on Wizard Step 2
+### Configure OnNext Callback on Wizard Step 2
+### Wizard Step 3 UI Design
+### Configure OnDone Callback of Wizard
+### Preview the Page
+### 
+

@@ -273,7 +273,8 @@
       "app-development/custom-widgets/creating-prefabs",
       "app-development/widgets/use-cases-prefabs",
       "app-development/ui-design/creating-themes",
-      "app-development/ui-design/page-concepts/creating-template-bundles"
+      "app-development/ui-design/page-concepts/creating-template-bundles",
+      "app-development/wavemaker-overview/artifacts-repository"
     ],
 
     "Mobile app": 
@@ -368,15 +369,10 @@
   {
         "How-to-documents": 
           [
-            "howtos-documents"                               
-          ],
-
-          "App Development": 
-          [          
-            "how-to-app-development"            
+            "howtos-documents"                                                                        
           ],
           
-          "- App solution":
+          "App solution":
           [
             "how-tos/creating-registration-page",
             "how-tos/support-password-encryption",
@@ -384,8 +380,10 @@
             "how-tos/prevent-user-leaving-page-unsaved-changes"
           ],
 
-          "- UI design":
+          "UI design":
           [                       
+            "how-to-app-development",
+            "how-to-widgets",
             "how-tos/passing-parameters-pages",
             "how-tos/passing-parameters-partial-page",
             "how-tos/use-static-variable-pass-data-pages",            
@@ -400,7 +398,7 @@
             "how-tos/customizing-theme"
           ],
 
-          "- Localization":
+          "Localization":
           [
             "how-tos/localization-wavemaker-apps",
             "how-tos/setting-language-date-format",
@@ -409,7 +407,7 @@
             "how-tos/localization-data-table-column-headings"
           ],
 
-          "- Security":
+          "Security":
           [
             "how-tos/saml-integration-onelogin",
             "how-tos/saml-integration-adfs",
@@ -418,7 +416,7 @@
             "how-tos/customizing-post-authentication-handlers"
           ],
 
-          "- Databases":
+          "Databases":
           [
             "how-tos/queries-dynamic-clause",
             "how-tos/connect-azure-sql-server",
@@ -426,14 +424,14 @@
             "how-tos/fetch-default-number100-records-database"
           ],
 
-          "- Web services":
+          "Web services":
           [
             "how-tos/using-app-environment-properties",
             "how-tos/using-post-method-send-data-rest-api",
             "how-tos/intercept-requests-responses-api-calls-one-place"
           ],
 
-          "- Java services":
+          "Java services":
           [
             "how-tos/sending-email-using-java-service",
             "how-tos/implementing-forgot-password-feature-using-java-service",
@@ -443,7 +441,7 @@
             "how-tos/pre-post-processing-db-service-apis"
           ],
 
-          "- Variables":
+          "Variables":
           [
             "how-tos/using-filter-conditions-variable",
             "how-tos/using-live-variable-apis",
@@ -455,14 +453,14 @@
             "how-tos/using-filter-criteria-database-crud-variable"                      
           ],
 
-          "- JavaScript":
+          "JavaScript":
           [
             "how-tos/using-javascript-binding",
             "how-tos/using-javascript-external-url",
             "how-tos/using-javascript-loop-command"
           ],
 
-          "- Developer-side":
+          "Developer-side":
           [
             "how-tos/synchronizing-wavemaker-apps-ides-beta",
             "how-tos/integrating-amazon-cognito-user-authentication",
@@ -472,40 +470,30 @@
             "how-tos/app-migration-wavemaker-9x-10x"
           ],
 
-          "Mobile Development": 
-          [          
-            "how-to-mobile-development"            
-          ],
-
-          "- Mobile gesture":
+          "Mobile gesture":
           [
             "how-tos/setting-swipe-gestures-list-widget",
             "how-tos/working-pull-refresh"
           ],
 
-          "- Mobile widgets":
+          "Mobile widgets":
           [
             "how-tos/using-search-widget-within-navbar",
             "app-development/widgets/mobile-widgets/barcode-scanner"  
           ],
 
-          "- Mobile UI design":
+          "Mobile UI design":
           [
             "how-tos/splashscreens-icons",
             "how-tos/using-cordova-plugins"
-          ],          
+          ],         
 
-          "Widgets": 
-          [          
-            "how-to-widgets"            
-          ],
-
-          "- Cards":
+          "Cards":
           [
             "how-tos/capturing-card-items"
           ],
 
-          "- DataTable":
+          "DataTable":
           [
             "how-tos/data-table-actions",
             "how-tos/data-table-widget-representations",
@@ -517,7 +505,7 @@
             "how-tos/data-table-styling"
           ],
 
-          "- List":
+          "List":
           [
             "how-tos/list-grouped",
             "how-tos/list-multi-grouped",
@@ -529,7 +517,7 @@
             "how-tos/localization-data-table-column-headings"
           ],
 
-          "- Forms":
+          "Forms":
           [
             "how-tos/using-live-form",
             "how-tos/using-wizard-cumulative-data-entry-form",
@@ -546,18 +534,18 @@
             "how-tos/using-wizard-cumulative-data-entry-live-form"
           ],
 
-          "- Calendar":
+          "Calendar":
           [
             "how-tos/calendar-usage-create-event",
             "how-tos/calender-usage-google-calendar-integration"
           ],
 
-          "- CheckboxSet":
+          "CheckboxSet":
           [
             "how-tos/checkboxset-filter-list-data"
           ],
 
-          "- FileUpload":
+          "FileUpload":
           [
             "how-tos/file-upload-widget-operations",
             "how-tos/upload-file-save-database",
@@ -567,12 +555,12 @@
             "how-tos/upload-files-from-live-form-form"
           ],
 
-          "- Radioset":
+          "Radioset":
           [
             "how-tos/radioset-filter-list"
           ],
 
-          "- Rating":
+          "Rating":
           [
             "how-tos/rating-widget-using-static-data",
             "how-tos/rating-widget-using-static-variable",
@@ -580,7 +568,7 @@
             "how-tos/rating-widget-interactive"
           ],
 
-          "- Select":
+          "Select":
           [
             "how-tos/configuring-select-widget-static-list-values",
             "how-tos/configuring-select-widget-variable",
@@ -589,40 +577,40 @@
             "how-tos/configuring-cascading-select"
           ],
 
-          "- Charts":
+          "Charts":
           [
             "how-tos/charts-displaying-user-selection-another-widget",
             "how-tos/charts-handling-dynamic-data",
             "how-tos/charts-custom-data"
           ],
 
-          "- Live filter":
+          "Live filter":
           [
             "how-tos/live-filter-applying",
             "how-tos/live-filter-multiple-values",
             "how-tos/live-filter-range-filter"
           ],
 
-          "- Container":
+          "Container":
           [
             "how-tos/setting-partial-page-content-accordion-within-list",
             "how-tos/setting-partial-page-content-panel-within-list-using-javascript"
           ],
 
-          "- Tree":
+          "Tree":
           [
             "how-tos/tree-use-case-static-variable",
             "how-tos/tree-use-case-java-service",
             "how-tos/tree-use-case-dynamic-tree"
           ],
 
-          "- Nav":
+          "Nav":
           [
             "how-tos/restricting-menu-item-display-based-user-role",
             "app-development/widgets/navigation/nav-basic-usage"
           ],
 
-          "- Dropdown":
+          "Dropdown":
           [
             "how-tos/restricting-menu-item-display-based-user-role",
             "how-tos/implementing-localization-dropdown-menu"
@@ -630,7 +618,6 @@
 
           "Prefabs":
           [
-            "how-to-prefabs",
             "how-tos/create-prefab-using-third-party-ui-widgets",
             "how-tos/create-prefab-using-d3-nvd3-charts",
             "how-tos/create-prefab-using-d3-library-datamaps",
@@ -1073,8 +1060,7 @@
     [
         "app-development/wavemaker-overview/platform-overview",                                              
         "app-development/ui-design/page-concepts",
-        "responsive-web/web-ui-design",
-        "app-development/wavemaker-overview/artifacts-repository",
+        "responsive-web/web-ui-design",        
         "app-development/services/backend-architecture",
         "app-development/variables/integration-binding-layer"
     ]

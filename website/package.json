@@ -2,18 +2,27 @@
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",
+    "start:nw": "docusaurus-start --no-watch",
     "build": "docusaurus-build && node replaceVariables.js",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
+    "rename-version": "docusaurus-rename-version",
+    "cypress:local": "cypress open",
+    "cypress:prepare-prod": "npm run start:nw & npx wait-on http://localhost:3000/learn",
+    "cypress:prod": "cypress run --reporter mochawesome --reporter-options 'reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss'",
+    "cypress:prep-report": "npx mochawesome-merge --reportDir cypress/report/mochawesome-report > cypress/report/mochawesome.json && ps -ef | grep docusaurus-start | grep -v grep | awk '{print $2}' | xargs kill"
   },
   "devDependencies": {
+    "cypress": "^3.7.0",
     "docusaurus": "^1.12.0",
-    "dotenv": "^8.2.0"
-  },
-  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^2.1.0",
+    "mochawesome-report-generator": "^4.0.1",
     "remarkable-admonitions": "^0.2.1",
-    "update": "^0.7.4"
+    "update": "^0.7.4",
+    "wait-on": "^3.3.0"
   }
 }
