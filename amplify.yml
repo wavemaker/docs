@@ -26,7 +26,7 @@ frontend:
      - node_modules/**/*
 test:
   artifacts:
-    baseDirectory: cypress
+    baseDirectory: /website/cypress
     configFilePath: "**/mochawesome.json"
     files:
       - "**/*.png"
