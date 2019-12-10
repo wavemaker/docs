@@ -8,7 +8,7 @@ describe('Top Navigation in web & mobile', function() {
 	
 	var navElements = ["Docs", "Widgets", "How-to", "Releases"];
 	navElements.forEach(function(navItem) {
-		cy.get(nav).contains(navItem);
+		cy.get(nav).contains(navItem).should("be.visible");
 	});
   });
   
@@ -26,7 +26,7 @@ describe('Top Navigation in web & mobile', function() {
 	
 	var navElements = ["Docs"];
 	navElements.forEach(function(navItem) {
-		cy.get(nav).contains(navItem);
+		cy.get(nav).contains(navItem).should("be.visible");
 	});
 	
 	cy.get(nav).get(navSearchWrapper).should("be.visible");
