@@ -1,55 +1,72 @@
 describe('Top Navigation in web & mobile', function() {
-  var nav = ".slidingNav", 
-	navSearchWrapper = ".navSearchWrapper",
-	learnAppUrl = "http://localhost:3000/learn/";
+
+	var selectors = {
+		navElements 			: ".slidingNav > ul > li",
+		navElementsFirstChild 	: ".slidingNav > ul > li:first-child",
+		desktopNavElements 		: ".slidingNav > ul > li:not(:first-child)",
+		navSearchWrapper 		: ".navSearchWrapper",
+		mobileNavDropDown 		: "#dropdown",
+		mobileNavDropDownFirstChild: '.dropdown-menu > a:first-child',
+		hamburgerMenu			: ".hamburger-menu",
+	};
+ 
+	var learnAppUrl = "http://localhost:3000/learn/";
   
   beforeEach(function () { 
 	  cy.visit(learnAppUrl);
   });
   
   it('Verifies top nav has 4 options in desktop browser', function() {
-	var navElements = ["Docs", "Widgets", "How-to", "Releases"];
+	cy.get('header>a').should('have.attr', 'href').and('include', '/learn')
+		.get('h2.headerTitleWithLogo').contains('WaveMaker Docs').end();
+
+	var navElements = ["Get started", "Widgets", "How-to", "Releases"];
 	navElements.forEach(function(navItem) {
-		cy.get(nav).contains(navItem).should("be.visible");
+		cy.get(selectors.desktopNavElements).contains(navItem).should("be.visible");
 	});
-	cy.get(nav).get(navSearchWrapper).should("be.visible");
+	cy.get(selectors.navElements).get(selectors.navSearchWrapper).should("be.visible");
+
+	cy.get(selectors.navElementsFirstChild).get(".dropdown").should('not.be.visible');
+	
   });
   
   
   it('Verifies that only Docs, Search is visible in the navbar in mobile', function() {
 	cy.viewport('iphone-6');
 	
-	var navElements = ["Docs"];
-	navElements.forEach(function(navItem) {
-		cy.get(nav).contains(navItem).should("be.visible");
-	});
+	cy.get(selectors.mobileNavDropDown).contains("Docs").should("be.visible");
+		
+	cy.get(selectors.navElements).get(selectors.navSearchWrapper).should("be.visible");
 	
-	cy.get(nav).get(navSearchWrapper).should("be.visible");
 	
 	var hiddenNavElements = ["Widgets", "How-to", "Releases"];
 	hiddenNavElements.forEach(function(navItem) {
-		cy.get(nav).contains(navItem).should("not.be.visible");
+		cy.get(selectors.desktopNavElements).contains(navItem).should("not.be.visible");
 	});
   });
   
   it('Verifies that hamburger menu is visible in mobile', function() {
 	cy.viewport('iphone-6');
 	
-	cy.get(nav).contains("Docs").click().end();
-	cy.get(".hamburger-menu").should("be.visible");
+	cy.get(selectors.mobileNavDropDown).click();
+	cy.get(selectors.mobileNavDropDownFirstChild).click().end();
+	cy.get(selectors.hamburgerMenu).should("be.visible");
   });
 });
 
 describe("Login & Free trial button take to right places", function() {
 	var learnAppUrl = "http://localhost:3000/learn/";
+	var selectors = {
+		desktopNavElements 		: ".slidingNav > ul > li:not(:first-child)",
+	};
 	
 	beforeEach(function () { 
 	  cy.visit(learnAppUrl);
 	});
 	
 	it('Verifies navigation elements in desktop', function() {
-		var nav = ".slidingNav";
-		
+		var nav = selectors.desktopNavElements;
+
 		cy.get(nav).contains("Login").click().end();
 		cy.get(nav).contains("Start free trial").click().end();
 		//cy.get(".main-container").contains("PLATFORM").click();
