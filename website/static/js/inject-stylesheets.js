@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let dropdown_element = new DOMParser().parseFromString(`<li class="dropdown">
         <a href="#" role="button" id="dropdown">Docs</a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="/learn/documentation-reference" target="_self">Get Started</a>
+            <a class="dropdown-item" href="/learn/documentation-reference" target="_self">Get started</a>
             <a class="dropdown-item" href="/learn/app-development/widgets/widget-library" target="_self">Widgets</a>
             <a class="dropdown-item" href="/learn/howtos-documents" target="_self">How-to</a>
             <a class="dropdown-item" href="/learn/wavemaker-release-notes" target="_self">Releases</a>
