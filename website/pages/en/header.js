@@ -21,12 +21,13 @@ class Header extends React.Component {
                         <ul id="nav">
                             <li class="dropdown">
                               <a href="#" role="button" id="dropdown">Docs</a>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="/learn/docs">Docs</a>
-                                <a class="dropdown-item" href="http://www.wavemaker.com/partners">Partners</a>
-                                <a class="dropdown-item" href="http://www.wavemaker.com/customers">Customers</a>
-                                <a class="dropdown-item" href="http://www.wavemaker.com/about">About Us</a>
-                                <a class="dropdown-item" href="http://www.wavemaker.com/contact">Contact Us</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">                            
+                                <a class="dropdown-item" href="/learn/documentation-reference" target="_self">Docs</a>
+                                <a class="dropdown-item" href="/learn/app-development/widgets/widget-library" target="_self">Widgets</a>
+                                <a class="dropdown-item" href="/learn/howtos-documents" target="_self">How-to</a>
+                                <a class="dropdown-item" href="/learn/wavemaker-release-notes" target="_self">Releases</a>
+                                <a class="dropdown-item" href="https://www.wavemakeronline.com/login/login" target="_blank">Login</a>
+                                <a class="dropdown-item" href="https://www.wavemaker.com/get-started/" target="_blank">Start free trial</a>
                               </div>
                             </li>
                             <li><a href="/learn/docs">DOCS</a></li>
