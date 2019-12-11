@@ -23,7 +23,7 @@ const users = [
 require('dotenv').config();
 
 const siteConfig = {
-    title: 'WaveMaker Learn', // Title for your website.
+    title: 'WaveMaker Docs', // Title for your website.
     tagline: 'Welcome to the Learning Center',
     url: 'https://www.wavemaker.com/',
     baseUrl: '/learn/',
@@ -41,7 +41,7 @@ const siteConfig = {
     // For no header links in the top nav bar -> headerLinks: [],
     headerLinks: [
         {languages: true},
-		{doc: 'documentation-reference', label: 'Docs '},
+		{doc: 'documentation-reference', label: 'Get started '},
         {doc: 'app-development/widgets/widget-library', label: 'Widgets'},
 		{doc: 'howtos-documents', label: 'How-to'},
 		{doc: 'wavemaker-release-notes', label: 'Releases'},
