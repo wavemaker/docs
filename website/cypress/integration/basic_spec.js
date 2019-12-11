@@ -1,5 +1,5 @@
 describe('Top Navigation in web & mobile', function() {
-  var nav = ".slidingNav", 
+  var nav = ".slidingNav > ul > li", 
 	navSearchWrapper = ".navSearchWrapper",
 	learnAppUrl = "http://localhost:3000/learn/";
   
@@ -8,34 +8,39 @@ describe('Top Navigation in web & mobile', function() {
   });
   
   it('Verifies top nav has 4 options in desktop browser', function() {
+	var s = ".slidingNav > ul > li:not(:first-child)";
 	var navElements = ["Docs", "Widgets", "How-to", "Releases"];
 	navElements.forEach(function(navItem) {
-		cy.get(nav).contains(navItem).should("be.visible");
+		cy.get(s).contains(navItem).should("be.visible");
 	});
-	cy.get(nav).get(navSearchWrapper).should("be.visible");
+	cy.get('.slidingNav > ul > li').get(navSearchWrapper).should("be.visible");
+
+	cy.get(".slidingNav > ul > li:first-child").get(".dropdown").should('not.be.visible');
+	
   });
   
   
   it('Verifies that only Docs, Search is visible in the navbar in mobile', function() {
 	cy.viewport('iphone-6');
+	var nav = ".slidingNav > ul > li:first-child";
+	var s = ".slidingNav > ul > li:not(:first-child)";
+
 	
-	var navElements = ["Docs"];
-	navElements.forEach(function(navItem) {
-		cy.get(nav).contains(navItem).should("be.visible");
-	});
+	cy.get("#dropdown").contains("Docs").should("be.visible");
+		
+	cy.get('.slidingNav > ul > li').get(navSearchWrapper).should("be.visible");
 	
-	cy.get(nav).get(navSearchWrapper).should("be.visible");
 	
 	var hiddenNavElements = ["Widgets", "How-to", "Releases"];
 	hiddenNavElements.forEach(function(navItem) {
-		cy.get(nav).contains(navItem).should("not.be.visible");
+		cy.get(s).contains(navItem).should("not.be.visible");
 	});
   });
   
   it('Verifies that hamburger menu is visible in mobile', function() {
 	cy.viewport('iphone-6');
 	
-	cy.get(nav).contains("Docs").click().end();
+	cy.get("#dropdown").click().get('dropdown-item:first-child').should('be.visible').click();
 	cy.get(".hamburger-menu").should("be.visible");
   });
 });
