@@ -17,7 +17,10 @@ describe('Top Navigation in web & mobile', function() {
   });
   
   it('Verifies top nav has 4 options in desktop browser', function() {
-	var navElements = ["Docs", "Widgets", "How-to", "Releases"];
+	cy.get('header>a').should('have.attr', 'href').and('include', '/learn')
+		.get('h2.headerTitleWithLogo').contains('WaveMaker Docs').end();
+
+	var navElements = ["Get started", "Widgets", "How-to", "Releases"];
 	navElements.forEach(function(navItem) {
 		cy.get(selectors.desktopNavElements).contains(navItem).should("be.visible");
 	});
