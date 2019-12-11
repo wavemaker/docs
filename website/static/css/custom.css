@@ -271,20 +271,32 @@ h3 {
     border-radius: .25rem;
     color: #212529;
     position: absolute;
-    left: -14px;
-    top: 40px;
+    left: -10px;
+    top: 45px;
     z-index: 100;
+}
+.navigationSlider .slidingNav ul li .dropdown-menu::before {
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+    top: -15px;
+    left: 30px;
+    position: absolute;
+    display: inline-block;
+    content: "";
 }
 .navigationSlider .slidingNav ul li .dropdown-menu a {
     padding: .25rem 1.5rem;
     display: block;
-    width: 100%;
     white-space: nowrap;
     text-transform: capitalize;
     height: 35px;
     text-align: left;
+    font-weight: 300;
+    color: #097fd5;
 }
-.navigationSlider .slidingNav ul li .dropdown-menu a:hover {
+.navigationSlider .slidingNav ul li .dropdown-menu a:hover, 
+.navigationSlider .slidingNav ul li .dropdown-menu a:focus,
+.navigationSlider .slidingNav ul li .dropdown-menu a:active {
     background-color: #097fd5;
     color: #fff;
 }
@@ -540,7 +552,7 @@ h3 {
         display: block;
     }
     .navigationSlider .slidingNav ul li.navSearchWrapper {
-        width: 80%;
+        width: 77%;
     }
 }
 
