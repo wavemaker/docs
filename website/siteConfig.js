@@ -97,7 +97,7 @@ const siteConfig = {
     scripts: [
         'https://buttons.github.io/buttons.js',
         'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
-        '/learn//js/code-block-buttons.js',
+        '/learn/js/code-block-buttons.js',
         '/learn/js/error-reporting.js',
         '/learn/js/inject-stylesheets.js'
     ],
