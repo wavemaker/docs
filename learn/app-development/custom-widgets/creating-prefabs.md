@@ -95,10 +95,10 @@ Following are the pre-defined events for every Prefab.
 - **on Property Change**: is triggered when any Prefab property is changed. This event is available only to the Prefab developer and is not exposed to the Prefab user.
 - **on Destroy**: is triggered when the page containing the Prefab is closed or the Prefab is deleted from the page. This event is exposed to the Prefab user and can be further customized. It is displayed in the Events tab of the Prefab properties panel, after drag and drop in the project page.
 
-Apart from these, Prefab developer can define **custom events**, as mentioned in the previous section. These events are displayed in the Events tab of the Prefab properties panel, after drag and drop in the project page. Note that these custom events need to be triggered from within the Prefab. Actions assigned to these events from the project containing the Prefab will be performed only when the event is triggered. Events can be triggered using the following code (parameters $scope and $data are optional):
+Apart from these, Prefab developer can define **custom events**, as mentioned in the previous section. These events are displayed in the Events tab of the Prefab properties panel, after drag and drop in the project page. Note that these custom events need to be triggered from within the Prefab. Actions assigned to these events from the project containing the Prefab will be performed only when the event is triggered. Events can be triggered using the following code (parameters $event and $data are optional):
 
 ```
-Prefab.<event_name>($scope, $data)
+Prefab.<event_name>($event, $data)
 ```
 
 [![](/learn/assets/prefab_event_method.png)](/learn/assets/prefab_event_method.png)
