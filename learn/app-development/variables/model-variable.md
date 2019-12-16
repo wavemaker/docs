@@ -34,7 +34,7 @@ The **data source** for these Variables is custom-defined.
 
 ### Steps in Variable Wizard
 
-1. Select **Model **as the target action
+1. Select **Model** as the target action
 2. Select the **Type** based upon the type of data you want the Static variable to hold.
 3. Based on the selection, the JSON structure will change
     - for default types of  **boolean**, **number**, **string**, **date** types you will be allowed to enter the values
