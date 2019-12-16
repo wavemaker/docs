@@ -34,7 +34,7 @@ The **data source** for these Variables is custom-defined.
 
 ### Steps in Variable Wizard
 
-1. Select **Model **as the target action
+1. Select **Model** as the target action
 2. Select the **Type** based upon the type of data you want the Static variable to hold.
 3. Based on the selection, the JSON structure will change
     - for default types of  **boolean**, **number**, **string**, **date** types you will be allowed to enter the values
@@ -157,7 +157,11 @@ console.log("result:", result);
 
 ### getItem(index)
 
-This method returns the object against the specified index. **Note**: This is only for array type variable, i.e. when the Is List property is set.
+This method returns the object against the specified index. 
+
+:::note
+This is only for array type variable, i.e. when the Is List property is set.
+:::
 
 **Parameters**: index(number)
 
@@ -175,7 +179,11 @@ console.log("result:", result);
 ```
 ### setItem(index, value)
 
-This method sets the value against the specified index. **NOTE**: Only for array type variable, i.e. when the Is List property is set.
+This method sets the value against the specified index. 
+
+:::note
+Only for array type variable, i.e. when the Is List property is set.
+:::
 
 **Parameters**:
 
@@ -194,9 +202,13 @@ console.log("result:", result);
 // Output: 
 // result: [{dataValue: “abc”}, {dataValue: “jkl”}, {dataValue: “ghi”}]
 ```
-### addItem(index, value)
+### addItem(value, index)
 
-This method adds an item at specified index. NOTE: Only for array type variable, i.e. when the Is List property is set.
+This method adds an item at specified index. 
+
+:::note
+Only for array type variable, i.e. when the Is List property is set.
+:::
 
 **Parameters**:
 
@@ -225,7 +237,11 @@ console.log("result:", result);
 ```
 ### removeItem(index)
 
-This method updates the dataSet of variable **NOTE**: Only for array type variable, i.e. when the Is List property is set
+This method updates the dataSet of variable 
+
+:::note
+Only for array type variable, i.e. when the Is List property is set
+:::
 
 **Parameters**: index(number)
 
@@ -243,7 +259,11 @@ console.log("result:", result);
 ```
 ### clearData()
 
-This method empties the variable dataSet. **NOTE**: Only for array type variable, i.e. when the Is List property is set.
+This method empties the variable dataSet. 
+
+:::note
+Only for array type variable, i.e. when the Is List property is set.
+:::
 
 **Parameters**: none
 
