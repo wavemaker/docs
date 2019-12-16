@@ -11,7 +11,7 @@ We [released](/improve-your-app-development-experience-with-the-new-wavemaker-do
 
 Planning and implementing the new documentation site was a different story ([read more](https://github.com/wavemaker/docs/pull/95)), while integrating the search was another one altogether. We went with [algolia](https://www.algolia.com/) community project called 'DocSearch' which offer fast, accurate and robust search results.
 
-Algolia DocSearch is a popular search API and many open source communities use it, including React, Vue, Bootstrap, Netlify, Paypal, and more. It shows real-time results instantly as you type. We are happy with how it offered the flexibility to make our own customizations and display results in a more readable way possible. 
+Algolia DocSearch is a popular search API and many open source communities use it, including React, Vue, Bootstrap, Netlify, Paypal, and more. It shows real-time results instantly as you type. We are happy with how it offered the flexibility to make our own customizations and display results in a more readable way possible.
 
 ### With DocSearch
 
