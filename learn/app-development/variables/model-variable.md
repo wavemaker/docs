@@ -157,7 +157,11 @@ console.log("result:", result);
 
 ### getItem(index)
 
-This method returns the object against the specified index. **Note**: This is only for array type variable, i.e. when the Is List property is set.
+This method returns the object against the specified index. 
+
+:::note
+This is only for array type variable, i.e. when the Is List property is set.
+:::
 
 **Parameters**: index(number)
 
@@ -175,7 +179,11 @@ console.log("result:", result);
 ```
 ### setItem(index, value)
 
-This method sets the value against the specified index. **NOTE**: Only for array type variable, i.e. when the Is List property is set.
+This method sets the value against the specified index. 
+
+:::note
+Only for array type variable, i.e. when the Is List property is set.
+:::
 
 **Parameters**:
 
@@ -194,9 +202,13 @@ console.log("result:", result);
 // Output: 
 // result: [{dataValue: “abc”}, {dataValue: “jkl”}, {dataValue: “ghi”}]
 ```
-### addItem(index, value)
+### addItem(value, index)
 
-This method adds an item at specified index. NOTE: Only for array type variable, i.e. when the Is List property is set.
+This method adds an item at specified index. 
+
+:::note
+Only for array type variable, i.e. when the Is List property is set.
+:::
 
 **Parameters**:
 
@@ -225,7 +237,11 @@ console.log("result:", result);
 ```
 ### removeItem(index)
 
-This method updates the dataSet of variable **NOTE**: Only for array type variable, i.e. when the Is List property is set
+This method updates the dataSet of variable 
+
+:::note
+Only for array type variable, i.e. when the Is List property is set
+:::
 
 **Parameters**: index(number)
 
@@ -243,7 +259,11 @@ console.log("result:", result);
 ```
 ### clearData()
 
-This method empties the variable dataSet. **NOTE**: Only for array type variable, i.e. when the Is List property is set.
+This method empties the variable dataSet. 
+
+:::note
+Only for array type variable, i.e. when the Is List property is set.
+:::
 
 **Parameters**: none
 
