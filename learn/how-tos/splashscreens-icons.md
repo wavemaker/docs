@@ -2,16 +2,24 @@
 title: "Setting Splashscreen Images and App Icons"
 id: ""
 ---
+---
 
 A **splash screen** is a graphical control element, that usually appears while the app is launching. Icons and splashes are usually platform specific.
 
 ## Setting Splashscreen Images & App Icons
 
-For WaveMaker Hybrid Mobile Apps, splash screens and app icons for various devices can be edited and uploaded. You can set them from the Build dialog **Note**: Though the steps shown below are for [Andriod Build](/learn/hybrid-mobile/mobile-build-android/#android), the process is same when using the [Send to PhoneGap](/learn/hybrid-mobile/mobile-build-phonegap/) option for Build. In case of PhoneGap build, you will have the option to set images and icons for both iOS and Android platforms.
+For WaveMaker Hybrid Mobile Apps, splash screens and app icons for various devices can be edited and uploaded. You can set them from the Build dialog.
+
+:::note
+Though the steps shown below are for [Andriod Build](/learn/hybrid-mobile/mobile-build-android/#android), the process is same when using the [Send to PhoneGap](/learn/hybrid-mobile/mobile-build-phonegap/) option for Build. In case of PhoneGap build, you will have the option to set images and icons for both iOS and Android platforms.
+:::
 
 1. From Project Actions, Build -> Build for Android option (you can also select the Send to PhoneGap option)
 2. In the build dialog, you will see the Splash screens and App Icons option under Android (and iOS, in case of PhoneGap) section
-3. On hover of the splash screen/ app icon, edit icon is shown. [![](/learn/assets/mobile_splashscreen_default.png)](/learn/assets/mobile_splashscreen_default.png)
+3. On hover of the splash screen/ app icon, edit icon is shown. 
+
+[![](/learn/assets/mobile_splashscreen_default.png)](/learn/assets/mobile_splashscreen_default.png)
+
 4. On click of the edit icon, the selected splash screen/icon is shown in the file tree.
 5. Upload a file and select the uploaded file in the tree. Click ‘Apply’ to apply the changes. (See the next sections for the splash screen image and icon requirements).
 6. Repeat for all the splash screens and icons.
@@ -68,7 +76,7 @@ For WaveMaker Hybrid Mobile Apps, splash screens and app icons for various devic
 | iPad | 72 px |
 | iPhone 4 Retina Display | 114 px |
 | iPad 3 Retina Display | 144 px |
-| iTunes\* | 1024 px |
+| iTunes* | 1024 px |
 | iPhone Settings/Spotlight | 29 px |
 | iPad Settings | 29 px |
 | iPad Spotlight | 48 px |
@@ -76,9 +84,6 @@ For WaveMaker Hybrid Mobile Apps, splash screens and app icons for various devic
 | document icon | 64 px |
 | document icon | 320 px |
 
-Mobile App Use Cases
+## See Also
 
-- [1\. Setting Splashscreen Images & App Icons](#steps)
-    - [i. Splashscreen Image Requirements](#images)
-    - [ii. App Icon Dimensions](#icons)
-- [2\. Using Cordova Plugin](/learn/how-tos/using-cordova-plugins/)
+[Using Cordova Plugin](/learn/how-tos/using-cordova-plugins/)
