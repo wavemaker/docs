@@ -62,7 +62,7 @@ An application has to be built to list the phone numbers of employees in an orga
     [![](/learn/assets/cordova_uc4.png)](/learn/assets/cordova_uc4.png)
 8. Now, plugin's API can be used. Since we need to make a call when the user taps on the list, set the on Tap event of the list to JavaScript and define the following JavaScript function to invoke the plugin API. Before invoking the Cordova API, a check has to be done whether Cordova is there. This will prevent errors in preview in browser.
 
-```
+```js
 Page.EmployeeList1Tap = function($event, widget) {
     var phoneNumber = '+14084352700' + widget.item.empId,
     bypassAppChooser = true;
@@ -74,15 +74,20 @@ Page.EmployeeList1Tap = function($event, widget) {
 ```
 
 Add Utils dependency to the page as below.
-```
+
+```js
 var Utils = App.getDependency('Utils');
 ```
 
 ![](/learn/assets/cordova_uc5.png)
 
-9. [Create a Model Variable](/learn/assets/var_sel.png) called **callResponse** that will hold the plugin's response. callResponse is of entry type with message and success as its properties. Giving default values will help in identifying the type of the property. For example, success has false as the default value. From that, it can be inferred that success is of boolean type. [![](/learn/assets/cordova_uc6.png)](/learn/assets/cordova_uc6.png)
+9. [Create a Model Variable](/learn/assets/var_sel.png) called **callResponse** that will hold the plugin's response. callResponse is of entry type with message and success as its properties. Giving default values will help in identifying the type of the property. For example, success has false as the default value. From that, it can be inferred that success is of boolean type. 
+
+[![](/learn/assets/cordova_uc6.png)](/learn/assets/cordova_uc6.png)
+
 10. The plugin's API takes success and error function as arguments which are invoked after execution of native code. From the onCallSuccess and onCallFailure callback of the plugin set the plugin's response to callResponse.
-```
+
+```js
 var onCallSuccess = function(result) {
     Page.Variables.callResponse.dataSet.message = "CALL SUCCESS (" + result + ")";
     Page.Variables.callResponse.dataSet.success = true;
