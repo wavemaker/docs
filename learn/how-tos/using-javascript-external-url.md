@@ -8,7 +8,7 @@ id: ""
 
 For example, a custom Demo Spinner.
 
-```
+```js
 /* perform any action on widgets/variables within this block */
 
 Page.onReady = function () {
