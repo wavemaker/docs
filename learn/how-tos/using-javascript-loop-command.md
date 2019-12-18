@@ -4,14 +4,16 @@ id: ""
 ---
 ---
 
-## Inserting and updating multiple rows using
-```    
+## Inserting and updating multiple rows into the database table. 
+
+```sql
 insert into Subscriptions(UserId,ChannelId,SubscriptionCost) 
 values(:UserId,:ChannelId,:SubscriptionCost)
 ```    
 
 ## CheckboxSet onChange event
-```    
+
+```js   
 // For handling Selected Channels
 var userChannels = [];
 
@@ -22,7 +24,8 @@ Page.checkboxsetSelectedChannelsChange = function ($event, widget, newVal, oldVa
 ```
 
 ## Loop function through JavaScript
-```    
+
+```js   
 Page.buttonSubscribeClick = function ($event, widget) {
     // Check if User selected any channels if YES add them ELSE notify him
     if (userChannels.length > 0) {
