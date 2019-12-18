@@ -13,7 +13,7 @@ Jasper Reports is an open source Java reporting tool that can write to a variety
 
 1. **Add Jasper as dependency in pom.xml along with required exclusions**: Here is the relevant section that needs to be added by the developer. Adding the below dependency in `pom.xml`, will automatically download the specified `.jar` file from the repository and place it in the lib folder of the corresponding project.
 
-```    
+```js
 <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
@@ -85,7 +85,8 @@ Jasper Reports is an open source Java reporting tool that can write to a variety
 
 1. [Java Service Integration](app-development/services/java-services/java-service/) will create sample Java Service.
 2. Add the below method `generatePdfReport` to the Java Service.
-```    
+
+```js
 public void generatePdfReport(String jrxml, String database,HttpServletResponse response)
   {
     Connection conn = null;
@@ -139,7 +140,7 @@ public void generatePdfReport(String jrxml, String database,HttpServletResponse 
 ```    
 3. Add the following `import files`.
 
-```    
+```js 
 import javax.servlet.http.*;
 
 import org.slf4j.Logger;
