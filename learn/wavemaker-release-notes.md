@@ -19,6 +19,7 @@ WaveMaker is constantly working on bringing new features and improvements to the
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
+|[WaveMaker v10.2.6](/learn/wavemaker-release-notes/v10-2-6)|Bug fixes | 18 December 2019 | -|-|
 |WaveMaker v10.2.5|UX changes to the subscription [account settings page](https://www.wavemakeronline.com/subscriptions/app/main.html#/account/subscriptions) | 11 December 2019 |-|-|
 |[WaveMaker v10.2.4](/learn/wavemaker-release-notes/v10-2-4)|Bug fixes | 06 December 2019 | -|-|
 |[WaveMaker v10.2.3](/learn/wavemaker-release-notes/v10-2-3)|Bug fixes | 27 November 2019 | -|-|
