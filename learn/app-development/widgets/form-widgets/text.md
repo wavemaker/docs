@@ -77,4 +77,4 @@ Using Text widget, you can do the following:
 ## See More
 [Form Widgets](/learn/app-development/widgets/widget-library/#form)  
 [Number](/learn/app-development/widgets/form-widgets/number/)  
-[Textarea](/learn/app-development/widgets/form/textarea/)
+[Textarea](/learn/app-development/widgets/form-widgets/textarea/)

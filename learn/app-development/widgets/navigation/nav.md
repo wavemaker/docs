@@ -16,7 +16,7 @@ Bind dataset for the nav elements using the _Value_ property and setting the _
 Provides widget to be added to the nav panels such as Anchor, Menu, Popover, Button. Depending upon the widgets added to the nav various properties can be set:
 
 1. _Anchor_: can have _hyperlink_ to specify the destination link, _target_ where the linked document should be opened
-2. _Menu_: can specify the _layout_, _position_ and _value_-_action_ combination. [Click here for more on menu usage](/learn/app-development/widgets/dropdown-menu/)
+2. _Menu_: can specify the _layout_, _position_ and _value_-_action_ combination. [Click here for more on menu usage](/learn/app-development/widgets/navigation/dropdown-menu/)
 3. _Popover_: can set the _content source_ and _content_ for further action. [Click here for Popover usage](/learn/app-development/widgets/navigation/popover/).
 4. _Button_: _on click event_ can be set for page navigation
 

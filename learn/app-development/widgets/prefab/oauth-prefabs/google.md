@@ -38,6 +38,6 @@ Here we show a simple use case for login using Google credentials. [For validati
 - Go to **Google Developers Console** – your project page and click on Edit Settings. Enter this redirect Url in the Authorized redirect URIs field and click Update.
 - Go back to WaveMaker application and again Run the app. You can now see the application. You will see the WaveMaker login screen if you have set the Login Mode as manual: [![](/learn/assets/Google_run_manual.png)](/learn/assets/Google_run_manual.png) Click the Login with Google button and you will be directed to the Google login page. This will be the first screen in case you have set the Login Mode to auto: [![](/learn/assets/Google_run_auto.png)](/learn/assets/Google_run_auto.png)
 - Entering the Google credential will allow access to the WaveMaker App
-- To use Google APIs, you need to [import the appropriate web service](/learn/web-services/#setup). Go to https://developers.google.com/oauthplayground/, select the required API and get the Authorization key [![](/learn/assets/Google_API.png)](/learn/assets/Google_API.png)
+- To use Google APIs, you need to [import the appropriate web service](/learn/services/web-services/web-services/). Go to https://developers.google.com/oauthplayground/, select the required API and get the Authorization key [![](/learn/assets/Google_API.png)](/learn/assets/Google_API.png)
 - From app designer, import a web service with the proper credentials as obtained from the above step. [![](/learn/assets/Google_Service.png)](/learn/assets/Google_Service.png)
 
