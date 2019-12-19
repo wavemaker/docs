@@ -7,14 +7,14 @@ describe('Check for anchors', function() {
 
 	let urlJson = require('../fixtures/wavemaker-docs-urls.json');
 	urlJson.files.forEach(link => {
-		it('Broken for url: ' + link, function() {
+		it('Broken url check for: ' + link, function() {
 			cy.visit(link)
 				.get('a')
 				.not('.navItem') 
 				.not('.dropdown-item')
         .not('#dropdown')
 				.each($element => {
-					if ($element[0].href.startsWith('http://localhost')) {
+					if ($element[0].href.startsWith('http://localhost:3000')) {
 						cy.request({
 							url: $element[0].href,
 							failOnStatusCode: false,

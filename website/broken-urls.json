@@ -1,0 +1,1982 @@
+[
+  {
+    "url": "http://localhost:3000/learn/assets/appbuilding_basic.png",
+    "pageUrl": "app-development-overview",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/appbuilding_elements.png",
+    "pageUrl": "app-development-overview",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/appbuilding_process.png",
+    "pageUrl": "app-development-overview",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/mail.zip",
+    "pageUrl": "app-development/services/3rd-party-libraries/using-3rd-party-jar-files",
+    "text": "mail"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/services/api-designer/app-development/services/java-services/java-service/",
+    "pageUrl": "app-development/services/api-designer/java-service-apis",
+    "text": "Java Service"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/services/db-services/working-stored-procedures/",
+    "pageUrl": "app-development/services/database-access",
+    "text": "Stored Procedures"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/services/db-services/database-views/",
+    "pageUrl": "app-development/services/database-access",
+    "text": "Database Views"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/services/web-services/var_sel.png",
+    "pageUrl": "app-development/services/web-services/oauth-2-0-rest-services",
+    "text": "Variable Creation"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/240_FEED.png",
+    "pageUrl": "app-development/services/web-services/working-with-feed-service",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/240_FEEDService.png",
+    "pageUrl": "app-development/services/web-services/working-with-feed-service",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/web_feed_var.png",
+    "pageUrl": "app-development/services/web-services/working-with-feed-service",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/web_feed_data.png",
+    "pageUrl": "app-development/services/web-services/working-with-feed-service",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/web_feed_list.png",
+    "pageUrl": "app-development/services/web-services/working-with-feed-service",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/web_feed_listrun.png",
+    "pageUrl": "app-development/services/web-services/working-with-feed-service",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/widgets-library",
+    "pageUrl": "app-development/ui-design/designing-app",
+    "text": "widgets"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/widgets-library",
+    "pageUrl": "app-development/ui-design/page-creation",
+    "text": "Widgets Library"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_def.png",
+    "pageUrl": "app-development/variables/data-integration-variables-old",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/live-variable/",
+    "pageUrl": "app-development/variables/data-integration-variables-old",
+    "text": "Know more"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/service-variable/",
+    "pageUrl": "app-development/variables/data-integration-variables-old",
+    "text": "Know more"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/static-variable/",
+    "pageUrl": "app-development/variables/data-integration-variables-old",
+    "text": "Know more"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/navigation-variable/",
+    "pageUrl": "app-development/variables/data-integration-variables-old",
+    "text": "know more"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/notification-variable/",
+    "pageUrl": "app-development/variables/data-integration-variables-old",
+    "text": "know more"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/login-variable/",
+    "pageUrl": "app-development/variables/data-integration-variables-old",
+    "text": "Know more"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/logout-variable/",
+    "pageUrl": "app-development/variables/data-integration-variables-old",
+    "text": "Know more"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/timer-variable/",
+    "pageUrl": "app-development/variables/data-integration-variables-old",
+    "text": "Know more"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/actions",
+    "pageUrl": "app-development/variables/data-integration",
+    "text": "Actions"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/variables_introduction.png",
+    "pageUrl": "app-development/variables/variables",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/websocket_lifecycle.png",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/varcr_menu_add.png",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/websocket_var_props.png",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/varcr_menu_beh.png",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/varcr_menu_data.png",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/varcr_menu_events.png",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/variables/live-variable/",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": "5.1.1 Live Variables"
+  },
+  {
+    "url": "http://localhost:3000/learn/variables/service-variable/",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": "5.1.2 Service Variables"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/static-variable/",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": "5.1.3 Static Variables"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/timer-variable/",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": "5.1.4 Timer Variables"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/navigation-variable/",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": "5.1.5 Navigation Variables"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/notification-variable/",
+    "pageUrl": "app-development/variables/web-socket-variable",
+    "text": "5.1.6 Notification Variables"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/actions",
+    "pageUrl": "app-development/wavemaker-overview/product-walkthrough",
+    "text": "Actions"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/project_roles_revoke_lp.png",
+    "pageUrl": "app-development/wavemaker-overview/rapid-rbac-support",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/basic/html",
+    "pageUrl": "app-development/widgets/basic/icon",
+    "text": "← HTML"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "app-development/widgets/datalive/datatable/data-table-use-cases",
+    "text": "How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets",
+    "pageUrl": "app-development/widgets/datalive/datatable/field-configuration",
+    "text": "see here for usage"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "app-development/widgets/datalive/datatable/field-configuration",
+    "text": "See here for usage example"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/datalive/form/app-development/services/java-services/java-service/",
+    "pageUrl": "app-development/widgets/datalive/form/form-usage-scenarios",
+    "text": "Java Service Integration"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/datalive/list/app-development/services/java-services/java-service/",
+    "pageUrl": "app-development/widgets/datalive/list/list-basic-usage",
+    "text": "Java Service Integration"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form-widgets/",
+    "pageUrl": "app-development/widgets/datalive/live-filter",
+    "text": "← Previous"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets/",
+    "pageUrl": "app-development/widgets/datalive/live-form/fields-configuration",
+    "text": "see here for usage"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets/",
+    "pageUrl": "app-development/widgets/datalive/livefilter/livefilter-field-configuration",
+    "text": "see here for usage"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form-widget/button/",
+    "pageUrl": "app-development/widgets/form-widgets/button-group",
+    "text": "Button widget document"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/button/",
+    "pageUrl": "app-development/widgets/form-widgets/button-group",
+    "text": "Button"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/button-group",
+    "pageUrl": "app-development/widgets/form-widgets/button",
+    "text": "Button Group"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/currency/",
+    "pageUrl": "app-development/widgets/form-widgets/number",
+    "text": "Currency"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/text/",
+    "pageUrl": "app-development/widgets/form-widgets/number",
+    "text": "Text"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/textarea/",
+    "pageUrl": "app-development/widgets/form-widgets/text",
+    "text": "Textarea"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/button/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.1 Button"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/button-group/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.2 Button Group"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/color-picker/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.7 Color Picker"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/currency/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.8 Currency"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/date/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.9 Date"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/rating/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.14 Rating"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/select/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.15 Select"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/select-locale/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.16 Select Locale"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/slider/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.17 Slider"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/text/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.19 Text"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/textarea/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.20 Textarea"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/toggle/",
+    "pageUrl": "app-development/widgets/form/calendar",
+    "text": "3.22 Toggle"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/dropdown-menu/",
+    "pageUrl": "app-development/widgets/navigation/nav",
+    "text": "Click here for more on menu usage"
+  },
+  {
+    "url": "http://localhost:3000/learn/web-services/#rest",
+    "pageUrl": "app-development/widgets/prefab/oauth-prefabs/facebook",
+    "text": "REST Web Service"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/prefab/oauth-prefabs/learn/app-development/widgets/prefab/oauth-prefabs/instagram/",
+    "pageUrl": "app-development/widgets/prefab/oauth-prefabs/facebook",
+    "text": "9.4.4 Instagram"
+  },
+  {
+    "url": "http://localhost:3000/learn/web-services/#setup",
+    "pageUrl": "app-development/widgets/prefab/oauth-prefabs/google",
+    "text": "import the appropriate web service"
+  },
+  {
+    "url": "http://localhost:3000/learn/web-services/#setup",
+    "pageUrl": "app-development/widgets/prefab/oauth-prefabs/linkedin",
+    "text": "import the appropriate web service"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/datalive/form/button-group/",
+    "pageUrl": "app-development/widgets/widget-library",
+    "text": "Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/datalive/form/color-picker/",
+    "pageUrl": "app-development/widgets/widget-library",
+    "text": "Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/datalive/form/rating-widget/",
+    "pageUrl": "app-development/widgets/widget-library",
+    "text": "Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/datalive/form/toggle/",
+    "pageUrl": "app-development/widgets/widget-library",
+    "text": "Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/dropdown-menu/",
+    "pageUrl": "app-development/widgets/widget-library",
+    "text": "Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/services/db-services/#working-with-db",
+    "pageUrl": "blob-support-queries-procedures-ar",
+    "text": "i. Working with Databases "
+  },
+  {
+    "url": "http://localhost:3000/learn/learn/how-tos/change-icon-global-spinner/",
+    "pageUrl": "change-icon-global-spinner",
+    "text": "12. How to change load icon"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "combining-columns-data-table",
+    "text": "4. How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/combining-columns-data-table/",
+    "pageUrl": "combining-columns-data-table",
+    "text": "6. How to combine multiple columns to one"
+  },
+  {
+    "url": "http://localhost:3000/learn/variables/#menu",
+    "pageUrl": "configuring-select-widget-static-variable",
+    "text": "Create a Static Variable"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/configuring-select-widget-static-variable/",
+    "pageUrl": "configuring-select-widget-static-variable",
+    "text": "2. How to use static variable for select widget configuration"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/listing-files-uploaded-file-upload-widget/",
+    "pageUrl": "deleting-files-uploaded-file-upload-widget",
+    "text": "See here for list files usage"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/listing-files-uploaded-file-upload-widget/",
+    "pageUrl": "deleting-files-uploaded-file-upload-widget",
+    "text": "List file capability as designed here"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/listing-files-uploaded-file-upload-widget/",
+    "pageUrl": "deleting-files-uploaded-file-upload-widget",
+    "text": "2. How to list uploaded files"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/deleting-files-uploaded-file-upload-widget/",
+    "pageUrl": "deleting-files-uploaded-file-upload-widget",
+    "text": "3. How to delete uploaded files"
+  },
+  {
+    "url": "http://localhost:3000/learn/learn/app-development/widgets/prefab/oauth-prefabs/instagram/",
+    "pageUrl": "docusign",
+    "text": "9.4.4 Instagram"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/prefab/box-viewer/",
+    "pageUrl": "docusign",
+    "text": "9.5 Box Viewer"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/prefab/docusign/",
+    "pageUrl": "docusign",
+    "text": "9.6 Docusign"
+  },
+  {
+    "url": "http://localhost:3000/learn/data-table/",
+    "pageUrl": "how-tos-conditional-style-property",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/db-services/",
+    "pageUrl": "how-tos-conditional-style-property",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/form_query_var.png",
+    "pageUrl": "how-tos-form-2",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/form_filter_var.png",
+    "pageUrl": "how-tos-form-2",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/form_query_var.png",
+    "pageUrl": "how-tos-form",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/form_filter_var.png",
+    "pageUrl": "how-tos-form",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "how-tos/add-master-detail-records-using-data-table",
+    "text": "4. How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/learn/how-tos/change-icon-global-spinner/",
+    "pageUrl": "how-tos/changing-app-logo",
+    "text": "12. How to change load icon"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/learn/how-tos/change-icon-global-spinner/",
+    "pageUrl": "how-tos/changing-default-favicon",
+    "text": "12. How to change load icon"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/learn/how-tos/change-icon-global-spinner/",
+    "pageUrl": "how-tos/changing-page-title",
+    "text": "12. How to change load icon"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/prefab_publish_old.png",
+    "pageUrl": "how-tos/create-prefab-using-angular-module",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/how-tos/create-prefab-using-d3-nvd3-charts/",
+    "pageUrl": "how-tos/create-prefab-using-angular-module",
+    "text": "4. Prefab Using D3 & NVD3 Charts"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/datamaps_additional_script.txt",
+    "pageUrl": "how-tos/create-prefab-using-d3-library-datamaps",
+    "text": "datamaps_additional_script"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/nvd3_linegraph.txt",
+    "pageUrl": "how-tos/create-prefab-using-d3-nvd3-charts",
+    "text": "Click here for the code"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/nvd3_onReady.txt",
+    "pageUrl": "how-tos/create-prefab-using-d3-nvd3-charts",
+    "text": "Click here for the code"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/nv_d3_library_url.png",
+    "pageUrl": "how-tos/create-prefab-using-d3-nvd3-charts",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/%7B%7Bpic%7D%7D",
+    "pageUrl": "how-tos/create-prefab-using-third-party-ui-widgets",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/app-development/services/java-services/java-service/",
+    "pageUrl": "how-tos/create-simple-prefab",
+    "text": "Add a Java Service"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/app-development/services/java-services/java-service/",
+    "pageUrl": "how-tos/creating-registration-page",
+    "text": "Create a Java Service"
+  },
+  {
+    "url": "http://localhost:3000/learn/learn/how-tos/use-conditional-class-property",
+    "pageUrl": "how-tos/customise-app-style",
+    "text": "Next →"
+  },
+  {
+    "url": "http://localhost:3000/learn/learn/how-tos/use-conditional-class-property",
+    "pageUrl": "how-tos/customize-existing-theme",
+    "text": "← Previous"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "how-tos/data-table-actions",
+    "text": "4. How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "how-tos/data-table-column-bound-query",
+    "text": "4. How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "how-tos/data-table-format-options",
+    "text": "4. How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "how-tos/data-table-styling",
+    "text": "4. How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "how-tos/data-table-widget-representations",
+    "text": "4. How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "how-tos/dynamic-data-tables",
+    "text": "4. How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "how-tos/export-data-data-table",
+    "text": "4. How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/WZ_usage_titleprops.png",
+    "pageUrl": "how-tos/how-tos-wizard",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/WZ_usage_addsteps.png",
+    "pageUrl": "how-tos/how-tos-wizard",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/add_page.png",
+    "pageUrl": "how-tos/howtos-ui",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/layouts_templates/",
+    "pageUrl": "how-tos/howtos-ui",
+    "text": "Page Layouts and Page Templates"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/AC_poolappid.png",
+    "pageUrl": "how-tos/integrating-amazon-cognito-user-authentication",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/AC_index.png",
+    "pageUrl": "how-tos/integrating-amazon-cognito-user-authentication",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/app-development/services/java-services/java-service/",
+    "pageUrl": "how-tos/integrating-amazon-cognito-user-authentication",
+    "text": "Create a Java Service"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/app-development/services/java-services/java-service/",
+    "pageUrl": "how-tos/integrating-sample-jasper-report-wavemaker-application",
+    "text": "Java Service Integration"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/app-development/services/java-services/java-service/",
+    "pageUrl": "how-tos/list-basic-usage",
+    "text": "Java Service Integration"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/app-development/services/java-services/java-service/",
+    "pageUrl": "how-tos/multiple-security-provider-implementation",
+    "text": "Create a Java Service"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/rating-widget-using-variable/",
+    "pageUrl": "how-tos/rating-widget-interactive",
+    "text": "previous section with Variable data"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/rating-widget-using-variable/",
+    "pageUrl": "how-tos/rating-widget-interactive",
+    "text": "2. How to build Rating widget from variable data"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/rating-widget-using-variable/",
+    "pageUrl": "how-tos/rating-widget-using-static-data",
+    "text": "2. How to build Rating widget from variable data"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/button/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.1 Button"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/button-group/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.2 Button Group"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/color-picker/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.7 Color Picker"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/currency/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.8 Currency"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/rating/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.13 Rating"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/select/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.14 Select"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/select-locale/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.15 Select Locale"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/select-locale/#properties",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "i. Properties"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/select-locale/#events",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "ii. Events"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/slider/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.16 Slider"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/text/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.18 Text"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/textarea/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.19 Textarea"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/form/toggle/",
+    "pageUrl": "how-tos/select-locale-usage",
+    "text": "3.21 Toggle"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/learn/app-development/services/java-services/java-service",
+    "pageUrl": "how-tos/support-password-encryption",
+    "text": "Java Services"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/app-development/services/java-services/java-service/",
+    "pageUrl": "how-tos/tree-use-case-java-service",
+    "text": "Java Service"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/tree_dnd.png",
+    "pageUrl": "how-tos/using-tree-widget",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/variables/#menu",
+    "pageUrl": "how-tos/using-tree-widget",
+    "text": "Create a static variable"
+  },
+  {
+    "url": "http://localhost:3000/learn/variables/#menu",
+    "pageUrl": "how-tos/using-tree-widget",
+    "text": "Create a Service Variable"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/tree_JSvar.png",
+    "pageUrl": "how-tos/using-tree-widget",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/tree_JSbind.png",
+    "pageUrl": "how-tos/using-tree-widget",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/tree_JSprops.png",
+    "pageUrl": "how-tos/using-tree-widget",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/tree_JSrun.png",
+    "pageUrl": "how-tos/using-tree-widget",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/tree_JSrun2.png",
+    "pageUrl": "how-tos/using-tree-widget",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/tree_dynamic_run.png",
+    "pageUrl": "how-tos/using-tree-widget",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/data-table-format/",
+    "pageUrl": "how-tos/view-master-detail-data-records-using-data-table",
+    "text": "4. How to format data table column"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/wshr_import.png",
+    "pageUrl": "how-tos/websocket-usage-heartrate-monitor",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/resource_path.png",
+    "pageUrl": "howto-ext",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/resource_service.png",
+    "pageUrl": "howto-ext",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/jar_data.png",
+    "pageUrl": "howto-ext",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/jar_invoke.png",
+    "pageUrl": "howto-ext",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/jar_result.png",
+    "pageUrl": "howto-ext",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_as.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_widget_run.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_widget_run2.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_button.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_button_danger.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_button_alert.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_widget_image.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_format_run.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_format_pre.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_format_date.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_format_suff.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_format_curr.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_style_run.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_style.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_style_class.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_style_cond.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_actions_run2.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_actions.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_actions_js.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/#permissions",
+    "pageUrl": "howtos-datatable",
+    "text": "security has been enabled"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt_events.png",
+    "pageUrl": "howtos-datatable",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ll_run1.png",
+    "pageUrl": "howtos-list",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ll_run2.png",
+    "pageUrl": "howtos-list",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ll_query.png",
+    "pageUrl": "howtos-list",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ll_dt_data.png",
+    "pageUrl": "howtos-list",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ll_query_bind.png",
+    "pageUrl": "howtos-list",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ll_dt_show.png",
+    "pageUrl": "howtos-list",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ll_design.png",
+    "pageUrl": "howtos-list",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-build/#send-to-phonegap",
+    "pageUrl": "hybrid-mobile/building-hybrid-mobile-apps",
+    "text": "Send to PhoneGap"
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-build/#cordova-build",
+    "pageUrl": "hybrid-mobile/building-hybrid-mobile-apps",
+    "text": "Manual Build"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Project-Type.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/mobApp-name.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-layout1.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-layout2.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-segment1.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-picprops.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-picbind.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Create_Variables.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-mobvar.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-listbind.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-listbind2.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-listbind3.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-segment2.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-listbind4.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-run1.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-run2.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-run3.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-build.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-config1.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-config4.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/MobApp-buildmsg.png",
+    "pageUrl": "hybrid-mobile/first-mobile-app",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-integrations/",
+    "pageUrl": "hybrid-mobile/invoking-web-app-apis-mobile-apps",
+    "text": "4.1 Amazon Cognito"
+  },
+  {
+    "url": "http://localhost:3000/learn/docs/mobile-build/#iOS_Build",
+    "pageUrl": "hybrid-mobile/mobile-build-manual",
+    "text": "iOS  Build"
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-integrations/",
+    "pageUrl": "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
+    "text": "in this post"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/GCM_app_register.png",
+    "pageUrl": "hybrid-mobile/mobile-integrations-push-notifications",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/GCM_app_API.png",
+    "pageUrl": "hybrid-mobile/mobile-integrations-push-notifications",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Selecting_mobile_app.png",
+    "pageUrl": "hybrid-mobile/mobile-integrations-push-notifications",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/JAR_import.png",
+    "pageUrl": "hybrid-mobile/mobile-integrations-push-notifications",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/GCM_imp_res.png",
+    "pageUrl": "hybrid-mobile/mobile-integrations-push-notifications",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/GCM_appjs.png",
+    "pageUrl": "hybrid-mobile/mobile-integrations-push-notifications",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/GCM_push_var.png",
+    "pageUrl": "hybrid-mobile/mobile-integrations-push-notifications",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/GCM_push_vardata.png",
+    "pageUrl": "hybrid-mobile/mobile-integrations-push-notifications",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/GCM_plugin.png",
+    "pageUrl": "hybrid-mobile/mobile-integrations-push-notifications",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-integrations/",
+    "pageUrl": "hybrid-mobile/mobile-integrations-push-notifications",
+    "text": "4.1 Amazon Cognito"
+  },
+  {
+    "url": "http://localhost:3000/learn/dropdown-menu/",
+    "pageUrl": "hybrid-mobile/mobile-navbar",
+    "text": "Click here for more on menu usage."
+  },
+  {
+    "url": "http://localhost:3000/learn/popover-widget/",
+    "pageUrl": "hybrid-mobile/mobile-navbar",
+    "text": "Click here for Popover usage"
+  },
+  {
+    "url": "http://localhost:3000/learn/installation/wme-setup-guide-increasing-development-deployment-capacity/",
+    "pageUrl": "installation/wme-setup-guide-add-external-vcs-configuration",
+    "text": "iv. Development & Deployment Capacity"
+  },
+  {
+    "url": "http://localhost:3000/learn/installation/wme-setup-guide-increasing-development-deployment-capacity/",
+    "pageUrl": "installation/wme-setup-guide-custom-apps-capacity",
+    "text": "iv. Development & Deployment Capacity"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dbdesign.png",
+    "pageUrl": "list-master-detail",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/list-master-detail/",
+    "pageUrl": "list-master-detail",
+    "text": "3. Master-Detail List"
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-integrations/",
+    "pageUrl": "mobile-app-development/invoking-web-app-apis-mobile-apps",
+    "text": "4.1 Amazon Cognito"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Create_App.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Selecting_mobile_app.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Name_Description.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/settings.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Import_DB.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Import_Database_1.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Import_DB_2.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Import_DB_3.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Import_DB_Success.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/product-walkthrough/",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": "Widgets Panel"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/toolbox.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/LiveLIst_1.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/LiveList_2.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/LiveList_3.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/anchor_props.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/anchor_props1.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Create_Variables.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_takepic_props.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_takepic_data.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Device_Variable_File_Upload.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/anchor_event.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_selection.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_takepic_event.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_fileupload_data_takepic.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_fileupload_bind_takepic.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_update_props.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_update_props1.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_update_bind.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_update_bind_ue.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/var_update_bind_picurl.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/run_anchor.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Build_for_Android1.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Android_Build.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/White_Listings.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/mobrun.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/mobrun_postupdate.png",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-app-integrated-database/",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": "2. Mobile App Integrated with Database"
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-app-using-bar-code/",
+    "pageUrl": "mobile-app-integrated-database",
+    "text": "3. Mobile App using Bar Code Scanner"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Selecting_mobile_app.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Name_Description.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/settings.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/howtos-select-locale",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": "Localization"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Import_DB.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/bs_dbtables.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/bs_dbfinal.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/bs_empvar.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/bs_empvar_data.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/bs_empvar_databind.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/bs_empvar_data2.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/bs_text1_bind.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/bs_text1_bind2.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/bs_text2_bind.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/bs_but_event.png",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-app-integrated-database/",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": "2. Mobile App Integrated with Database"
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-app-using-bar-code/",
+    "pageUrl": "mobile-app-using-bar-code",
+    "text": "3. Mobile App using Bar Code Scanner"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/run.png",
+    "pageUrl": "one-many-relationship",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/jump-start/#db",
+    "pageUrl": "one-many-relationship",
+    "text": "Import the Sample HRDB"
+  },
+  {
+    "url": "http://localhost:3000/learn/data-table/",
+    "pageUrl": "one-many-relationship",
+    "text": "Data Table"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt1_dept_data.png",
+    "pageUrl": "one-many-relationship",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt1_dept_layout.png",
+    "pageUrl": "one-many-relationship",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt1_dept_fields.png",
+    "pageUrl": "one-many-relationship",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt2_emp_data_data.png",
+    "pageUrl": "one-many-relationship",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt2_emp_data_bind.png",
+    "pageUrl": "one-many-relationship",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/jump-start/#db",
+    "pageUrl": "one-many-relationship",
+    "text": "Import the Sample HRDB"
+  },
+  {
+    "url": "http://localhost:3000/learn/data-table/",
+    "pageUrl": "one-many-relationship",
+    "text": "Data Table"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/dt3_emp_fdept_prop.png",
+    "pageUrl": "one-many-relationship",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/run2.png",
+    "pageUrl": "one-many-relationship",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/docs/docs/getting-started-2/",
+    "pageUrl": "release-notes/wavemaker-studio-7-x-release-notes",
+    "text": "Documentation"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/app-security/#",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "i. Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/app-security/#working",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "ii. How Security Works"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/app-security/#implementation",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "iii. How Security is Implemented"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/app-security/#terminology",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "iv. Security Terminology"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/authorization/",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "i. Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/authorization/#user-onboarding",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "ii. User Onboarding"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/authorization/#app-roles",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "iii. App Roles"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/access-levels-permissions/",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "i. Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/access-levels-permissions/#setting-permissions",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "ii. Setting Permissions"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/access-levels-permissions/#role-based-access",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "iii. Role Based Access to Widgets"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/login-configuration/",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "i. Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/login-configuration/#login-page",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "i. Login Page"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/login-configuration/#landing-page",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "ii. Landing Page"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/login-configuration/#session-timeout",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "iii. Session Timeout"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/security-variables",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "i. Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/ssl-encryption/",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "i. Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/owasp/",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "i. Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/owasp/#xss",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "ii. Preventing XSS Attacks"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/owasp/#csrf",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "iii. Preventing CSRF Attacks"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/central-authentication-system/",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "i. Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/token-based-authentication/",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "i. Overview"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/token-based-authentication/#working",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "ii. How Token Based Authentication Works"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/token-based-authentication/#token",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "iii. What is Token"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/token-based-authentication/#token-repository",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "iv. Token Repository"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/token-based-authentication/#token-request",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "v. Token Request"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/token-based-authentication/#api-invocation",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "vi. API Invocation"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/token-based-authentication/#token-validity",
+    "pageUrl": "secure-connection-deployed-apps",
+    "text": "vii. Token Validity"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/customise-app-styling/",
+    "pageUrl": "testing-subscription",
+    "text": "How to customise app style"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/using-function-evaluating-conditions/",
+    "pageUrl": "testing-subscription",
+    "text": "How to use functions for evaluating conditions during binding"
+  },
+  {
+    "url": "http://localhost:3000/learn/hybrid-mobile/mobile-integrations/",
+    "pageUrl": "testing-subscription",
+    "text": "4.1 Amazon Coginito"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/listing-files-uploaded-file-upload-widget/",
+    "pageUrl": "testing-subscription",
+    "text": "How to list uploaded files"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/deleting-files-uploaded-file-upload-widget/",
+    "pageUrl": "testing-subscription",
+    "text": "How to delete uploaded files"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/configuring-select-widget-static-variable/",
+    "pageUrl": "testing-subscription",
+    "text": "How to use static variable for select widget configuration"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/building-multilevel-navigation/",
+    "pageUrl": "testing-subscription",
+    "text": "How to build a multilevel navigation"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/cards_data.png",
+    "pageUrl": "using-cards",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/Card_fields.png",
+    "pageUrl": "using-cards",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/using-live-form/#layout",
+    "pageUrl": "using-datatable-widget",
+    "text": "See here for more details"
+  },
+  {
+    "url": "http://localhost:3000/learn/using-live-form/#fields",
+    "pageUrl": "using-datatable-widget",
+    "text": "See here for more details"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ue_ex1.png",
+    "pageUrl": "using-function-evaluating-conditions",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ue_ex2.png",
+    "pageUrl": "using-function-evaluating-conditions",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ue_ex3.png",
+    "pageUrl": "using-function-evaluating-conditions",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ll_sel.png",
+    "pageUrl": "using-list",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/ll_data-1.png",
+    "pageUrl": "using-list",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/lftr_apply_run1.png",
+    "pageUrl": "using-live-filter",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_run.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_grid_var.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_grid_props.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_grid_layout.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_grid_fields.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_grid_run.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_param_LV.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/selection-widgets/",
+    "pageUrl": "using-queries",
+    "text": "Select Widget usage"
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_select.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_paramater_input.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_serverprops.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_param_sv.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_paramater_input.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_param_svdatabind.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_paramater_output.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_param_design.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_paramater_run1.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_paramater_run2.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/assets/query_paramater_run3.png",
+    "pageUrl": "using-queries",
+    "text": ""
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/using-filter-conditions-live-variable/",
+    "pageUrl": "using-service-variables-queries-procedure",
+    "text": "1. How-to -use Filter in Live Variables"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/using-notification-variables/",
+    "pageUrl": "using-service-variables-queries-procedure",
+    "text": "3. How to work with Notification Variables"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/using-navigation-variable/",
+    "pageUrl": "using-service-variables-queries-procedure",
+    "text": "4. How to work with Navigation Variables"
+  },
+  {
+    "url": "http://localhost:3000/learn/how-tos/using-service-variables-queries-procedure/",
+    "pageUrl": "using-service-variables-queries-procedure",
+    "text": "5. How to work with Service Variables"
+  },
+  {
+    "url": "http://localhost:3000/learn/web-services/",
+    "pageUrl": "wavemaker-release-notes/v8-0-2",
+    "text": "#doc"
+  },
+  {
+    "url": "http://localhost:3000/learn/variables/",
+    "pageUrl": "wavemaker-release-notes/v8-0-2",
+    "text": "#doc"
+  },
+  {
+    "url": "http://localhost:3000/learn/live-form/",
+    "pageUrl": "wavemaker-release-notes/v8-0-2",
+    "text": "#doc"
+  },
+  {
+    "url": "http://localhost:3000/learn/db-services/",
+    "pageUrl": "wavemaker-release-notes/v8-0-2",
+    "text": "#doc"
+  },
+  {
+    "url": "http://localhost:3000/learn/data-table/",
+    "pageUrl": "wavemaker-release-notes/v8-0-6",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/mobile-features/",
+    "pageUrl": "wavemaker-release-notes/v8-0-beta",
+    "text": "#DOC"
+  },
+  {
+    "url": "http://localhost:3000/learn/team-collaboration/",
+    "pageUrl": "wavemaker-release-notes/v8-0-beta",
+    "text": "#DOC"
+  },
+  {
+    "url": "http://localhost:3000/learn/deployment/",
+    "pageUrl": "wavemaker-release-notes/v8-0-beta",
+    "text": "#DOC"
+  },
+  {
+    "url": "http://localhost:3000/learn/team-collaboration/#vcs",
+    "pageUrl": "wavemaker-release-notes/v8-0-beta",
+    "text": "#DOC"
+  },
+  {
+    "url": "http://localhost:3000/learn/pages-partials/#partial_usage",
+    "pageUrl": "wavemaker-release-notes/v8-2-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/prefab-googlemaps/",
+    "pageUrl": "wavemaker-release-notes/v8-2-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/data-table/",
+    "pageUrl": "wavemaker-release-notes/v8-2-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/data-table/",
+    "pageUrl": "wavemaker-release-notes/v8-3-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/list/",
+    "pageUrl": "wavemaker-release-notes/v8-3-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-security/#owasp",
+    "pageUrl": "wavemaker-release-notes/v8-3-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/db-services/#unique",
+    "pageUrl": "wavemaker-release-notes/v8-3-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/db-services/#datatypevalues",
+    "pageUrl": "wavemaker-release-notes/v8-3-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/chart-widget/",
+    "pageUrl": "wavemaker-release-notes/v8-3-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/grid-layout/",
+    "pageUrl": "wavemaker-release-notes/v8-3-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/live-form/",
+    "pageUrl": "wavemaker-release-notes/v8-3-0",
+    "text": "#docs"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/dev-integration/code-sharing-vcs/#commit-history",
+    "pageUrl": "wavemaker-release-notes/v8-4-0",
+    "text": "#doc"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/widgets/mobile-widgets/camera//learn/app-development/widgets/mobile-widgets/camera/",
+    "pageUrl": "wavemaker-release-notes/v8-4-0",
+    "text": "#doc"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/live-variable/#methods",
+    "pageUrl": "wavemaker-release-notes/v8-4-2",
+    "text": "#doc"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/variables/actions",
+    "pageUrl": "wavemaker-release-notes/v9-0-ga",
+    "text": "Actions"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/deployment/migration-deployed-apps/",
+    "pageUrl": "wavemaker-release-notes/v9-0-ga",
+    "text": "See here for more"
+  },
+  {
+    "url": "http://localhost:3000/learn/app-development/deployment/migration-deployed-apps/",
+    "pageUrl": "wavemaker-release-notes/v9-0-ga",
+    "text": "See here for more"
+  },
+  {
+    "url": "http://localhost:3000/learn/docs/docs/getting-started-2/",
+    "pageUrl": "wavemaker-release-notes/wavemaker-studio-7-x-release-notes",
+    "text": "Documentation"
+  }
+]
