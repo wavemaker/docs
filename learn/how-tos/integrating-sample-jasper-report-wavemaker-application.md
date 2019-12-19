@@ -13,7 +13,7 @@ Jasper Reports is an open source Java reporting tool that can write to a variety
 
 1. **Add Jasper as dependency in pom.xml along with required exclusions**: Here is the relevant section that needs to be added by the developer. Adding the below dependency in `pom.xml`, will automatically download the specified `.jar` file from the repository and place it in the lib folder of the corresponding project.
 
-```js
+```xml
 <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
@@ -86,7 +86,7 @@ Jasper Reports is an open source Java reporting tool that can write to a variety
 1. [Java Service Integration](app-development/services/java-services/java-service/) will create sample Java Service.
 2. Add the below method `generatePdfReport` to the Java Service.
 
-```js
+```java
 public void generatePdfReport(String jrxml, String database,HttpServletResponse response)
   {
     Connection conn = null;
@@ -140,7 +140,7 @@ public void generatePdfReport(String jrxml, String database,HttpServletResponse 
 ```    
 3. Add the following `import files`.
 
-```js 
+```java
 import javax.servlet.http.*;
 
 import org.slf4j.Logger;
@@ -177,13 +177,15 @@ import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
 Some of these import files will be available already in the sample Java Service.
 :::
 
-4. Open/Create the page where you need to include the Jasper report
-5. Create a [Java Service Variable](/learn/assets/var_sel.png) with
-    - Service as `MyJavaService` (the Java Service name created in step-1) and
-    - Method as `generatePdfReport` (the method name added in step-2)
-6. Navigate to the **`Data`** tab
-    1. for **`jrxml`** field enter `employee.jrxml` (the file name added as per prerequisite2) and
-    2. for **`database`** field enter `employee` (database for which the report needs to be generated)
-7. To display the pdf file, drag and drop **`iframe`** widget and set the Source property: `services/myJava/generatePdfReport?jrxml=employee.jrxml&database=employee`
+4. Open/Create the page where you need to include the Jasper report.
+5. Create a [Java Service Variable](/learn/assets/var_sel.png) with the following. 
+    - Service as `MyJavaService` (the Java Service name created in step-1).
+    - Method as `generatePdfReport` (the method name added in step-2).
+6. Navigate to the **`Data`** tab.
+    1. For **`jrxml`** field enter `employee.jrxml` (the file name added as per prerequisite2).
+    2. For **`database`** field enter `employee` (database for which the report needs to be generated).
+7. To display the pdf file, drag and drop **`iframe`** widget and set the Source property to the following.
+
+`services/myJava/generatePdfReport?jrxml=employee.jrxml&database=employee`
 
 
