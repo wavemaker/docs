@@ -18,7 +18,7 @@ Steps to generate PDF file using Jasper reports are as follows:
 - Ensure that your app is deployed and use the Deploy URL instead of Run URL.
 - The JSON output looks typically as follows:
 
-```
+```json
 {
   "totalPages": 1,
   "totalElements": 5,
@@ -99,7 +99,7 @@ Steps to generate PDF file using Jasper reports are as follows:
 
 - **Add Jasper as dependency in pom.xml along with required exclusions:** Here is the relevant section that needs to be added by the developer.
 
-``` 
+```xml 
 <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
@@ -163,7 +163,7 @@ Steps to generate PDF file using Jasper reports are as follows:
     
 - Create a .jrxml file that describes the template  - The template has a header title and the page content has a table which has field names and the field data. To generate the PDF as shown in the above example, the following _jrxml_ template was used. [Refer here for details](http://community.jaspersoft.com/wiki/jasperreports-library-samples)
 
-```
+```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="81afe112-ee1b-4443-8d1c-cb6d9ab95dd8">
       <property name="com.jaspersoft.studio.data.defaultdataadapter" value="JsonArrayDataAdapter.xml"/>
@@ -284,8 +284,7 @@ Steps to generate PDF file using Jasper reports are as follows:
 
 - Create a Java Service named GenerateReports and create a method named generatePDFReport that takes – String –jrxml, String – database (if any), HttpServletResponse  - response
 
-``` 
-    Imports
+```java
     import javax.servlet.http.HttpServletRequest;
     import org.slf4j.Logger;
     import org.slf4j.LoggerFactory;
