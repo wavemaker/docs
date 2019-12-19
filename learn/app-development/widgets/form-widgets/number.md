@@ -78,8 +78,8 @@ Number widget applies the number formatting as per the Locale automatically. In 
 ## See More
 
 [Form Widgets](/learn/app-development/widgets/widget-library/#form)  
-[Currency](/learn/app-development/widgets/form/currency/)  
+[Currency](/learn/app-development/widgets/form-widgets/currency/)  
 [Date](/learn/app-development/widgets/form-widgets/date-time-datetime/)  
 [Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/)  
-[Text](/learn/app-development/widgets/form/text/)  
+[Text](/learn/app-development/widgets/form-widgets/text/)  
 

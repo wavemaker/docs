@@ -124,4 +124,4 @@ alert(Page.Widgets.button1.show);
 ## See More
 
 [Form Widgets](/learn/app-development/widgets/widget-library/#form)  
-[Button Group](/learn/app-development/widgets/form/button-group)  
+[Button Group](/learn/app-development/widgets/form-widgets/button-group)  
