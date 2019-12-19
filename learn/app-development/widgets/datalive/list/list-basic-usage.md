@@ -26,10 +26,10 @@ There can be different scenarios to deal with when configuring your List Widget 
 
 - **Scenario 1**: You do not have any services available in your project.
     
-    - You will be prompted to import a service by either [Database Integration](/learn/app-development/services/database-services/working-with-databases/), or [Web Service Integration](/learn/app-development/services/web-services/web-services/), or [Java Service Integration](app-development/services/java-services/java-service/). Click the appropriate button to proceed.
+    - You will be prompted to import a service by either [Database Integration](/learn/app-development/services/database-services/working-with-databases/), or [Web Service Integration](/learn/app-development/services/web-services/web-services/), or [Java Service Integration](/learn/app-development/services/java-services/java-service/). Click the appropriate button to proceed.
     - Once a service is available in your application, you can proceed to bind the widget to data source and follow the same steps as mentioned in scenario 2
     
-    [![](/learn/assets/list_basic_data1.png)](/learn/assets/list_basic_data1.png)
+    [![Screenshot](/learn/assets/list_basic_data1.png)](/learn/assets/list_basic_data1.png)
 - **Scenario 2**– There are no variables created for any of the services in your application
     
     - **Retrieve Data From**: Services is selected by default.
@@ -88,5 +88,3 @@ Test Run or Preview the App
 [![](/learn/assets/list_basic_run.png)](/learn/assets/list_basic_run.png)
 
 [List Use Cases](/learn/app-development/widgets/datalive/list/list-use-cases/)
-
-
