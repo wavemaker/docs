@@ -20,7 +20,7 @@ The columns or fields to be displayed in a Data Table can be further configured
 6. to define the display format of the column or field, based upon the content including date, currency, decimal and many more formats;
 7. to style the fields for a better readability and for highlighting a particular value;
 8. to restrict the display based upon the security roles;
-9. filter criteria can be applied to referenced entities for Inline Editable and Quick Edit Data Tables ([see here for usage](/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets)).
+9. filter criteria can be applied to referenced entities for Inline Editable and Quick Edit Data Tables ([see here for usage](/learn/how-tos/using-filter-criteria-data-live-widgets)).
 
 All the above-mentioned options are available from the **Columns tab** of the **Advanced Settings** property.
 
@@ -114,7 +114,7 @@ This feature helps you group columns under a heading for better readability and 
 
 - Fraction Size can be set
 
-[See here for usage example](/learn/how-tos/data-table-format/)
+[See here for usage example](/learn/how-tos/data-table-format-options/)
 
 ### Edit Mode Options
 

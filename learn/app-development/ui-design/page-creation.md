@@ -6,13 +6,16 @@ sidebar_label: "Create Pages"
 WaveMaker app is a collection of pages. Learn how to create a page.
 
 ---
-WaveMaker app is a collection of pages though it is called a single page application (SPA). Pages load asynchronously on demand. Each page is composed of different UI elements and widgets. 
+---
+
+WaveMaker app is a collection of pages though it is called a single page application (SPA). Pages load asynchronously on demand. Each page is composed of different UI elements and widgets.
 
 :::tip
-To learn about page life cycle and architecture, see [Page Concepts](/learn/app-development/ui-design/page-concepts). To learn about widgets, see [Widgets Library](/learn/app-development/widgets/widgets-library).
+To learn about page life cycle and architecture, see [Page Concepts](/learn/app-development/ui-design/page-concepts). To learn about widgets, see [Widgets Library](/learn/app-development/widgets/widget-library).
 :::
 
 ## Creating a Page
+
 Navigate to the pages section to create a page. However, by default, the **Main Page** generates automatically.  
 
 ![Pages introduction in WaveMaker](/learn/assets/pages_introduction.png)
@@ -26,13 +29,13 @@ In this section, you will learn:
 
 ## Main page
 
-The Main page comes with header, footer, top nav, left nav and right nav layout. You can change the layout can as per your needs. For more information, see [Layouts](/learn/app-development/ui-design/page-concepts/page-layouts). 
+The Main page comes with header, footer, top nav, left nav and right nav layout. You can change the layout can as per your needs. For more information, see [Layouts](/learn/app-development/ui-design/page-concepts/page-layouts).
 
-Each element of the page layout - header, footer, topnav, leftnav and rightnav can be edited and customized. The change will reflect in all pages that use the same element. Thus, it gives a unified look across all pages in the app. 
+Each element of the page layout - header, footer, topnav, leftnav and rightnav can be edited and customized. The change will reflect in all pages that use the same element. Thus, it gives a unified look across all pages in the app.
 
 When you are editing, WaveMaker effectively generates the HTML code. You can access the code from the markup tab.
 
-[![](/learn/assets/page_layout_edit.png)](/learn/assets/page_layout_edit.png) 
+[![screenshot](/learn/assets/page_layout_edit.png)](/learn/assets/page_layout_edit.png)
 
 ## Things to be aware of
 
@@ -42,7 +45,7 @@ When creating a page, the following naming conventions should to be followed:
 2. The page name should not contain special characters.
 3. The page name should not start with a number.
 
-New pages can be created to segregate the functionality of the app. Ideally, each page would cater to one business need of the app. New pages can use pre-built templates and layout. [![](/learn/assets/page_new.png)](/learn/assets/page_new.png)
+New pages can be created to segregate the functionality of the app. Ideally, each page would cater to one business need of the app. New pages can use pre-built templates and layout. [![screenshot](/learn/assets/page_new.png)](/learn/assets/page_new.png)
 
 ## Types of Pages
 
@@ -54,21 +57,18 @@ There are two types of pages that can be created in an application:
 
 ## Page Title
 
-By default, WaveMaker provides the Main Page. When you add additional pages, it titles the pages as Page1, Page2, and so on. You can use the Page Title property to set the Page Title. 
+By default, WaveMaker provides the Main Page. When you add additional pages, it titles the pages as Page1, Page2, and so on. You can use the Page Title property to set the Page Title.
 
-[![](/learn/assets/page_title.png)](/learn/assets/page_title.png)
+[![screenshot](/learn/assets/page_title.png)](/learn/assets/page_title.png)
 
 You can use Page.pageTitle to change and access the page title. You can set the Page Title from Script tab using: Page.pageTitle = 'Profile'. Once set through Script any binding from the properties will be invalidated.
 
 ## Page Operations
 
-You can duplicate, rename and delete a page using the page operations. These can be accessed from the more options against a given page or a partial page. 
+You can duplicate, rename and delete a page using the page operations. These can be accessed from the more options against a given page or a partial page.
 
 [![page_operations](/learn/assets/page_operations.png)](/learn/assets/page_operations.png)
 
 - **Renaming** a page or a partial page leads to the page name being renamed, with the new name given by you. All the references are also renamed.
 - **Duplicating** a page leads to a copy of the page or partial page being created, with the new name given by you. A new goTo action for that page is also created.
 - **Deleting** a page removes all references to the selected page from the project.
-
-
-

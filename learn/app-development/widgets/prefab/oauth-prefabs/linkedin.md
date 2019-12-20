@@ -34,7 +34,7 @@ In order to use the **LinkedIn** OAuth prefab, please follow the below steps: **
 9. Go to LinkedIn Developers – your project page and click on Settings on the left side. Add the generated redirect URL below **OAuth 2.0** and Click **Update.** [![](/learn/assets/ld_Settings.png)](/learn/assets/ld_Settings.png)
 10. Go back to WaveMaker application and again Run the app. You will see the WaveMaker Login page if you have set the Login Mode to manual. Click the Login using Linkedin button. [![](/learn/assets/linkedin_run_manual.png)](/learn/assets/linkedin_run_manual.png)
 11. You will be redirected to the LinkedIn Allow Access screen, this will be the screen you will first see if you have set Login Mode to auto. Enter your credentials to Login and click **Allow Access** You can now see the application with **Access Token** and **Callback URL**. [![](/learn/assets/ld_run_auto.png)](/learn/assets/ld_run_auto.png)
-12. To use LinkedIn APIs, you need to [import the appropriate web service](/learn/web-services/#setup). Go to [https://apigee.com/console/linkedin](https://apigee.com/console/linkedin), select the required API and get the Authorization key.
+12. To use LinkedIn APIs, you need to [import the appropriate web service](/learn/services/web-services/web-services/). Go to [https://apigee.com/console/linkedin](https://apigee.com/console/linkedin), select the required API and get the Authorization key.
 13. From WaveMaker app designer, import a web service with the proper credentials as obtained from the above step. [![ld_testurl](/learn/assets/ld_testurl.png)](/learn/assets/ld_testurl.png)
 
 

@@ -38,7 +38,7 @@ In order to use the **Facebook** OAuth prefab, please follow the below steps: Di
 7. Enter this redirect URl in the Site URL field and click Save Changes. [![](/learn/assets/Facebook_reg10.png)](/learn/assets/Facebook_reg10.png)
 8. Go back to WaveMaker application and again Run the app. You can now see the WaveMaker login page. [![](/learn/assets/Facebook_app_run2.png)](/learn/assets/Facebook_app_run2.png)
 9. Click on the Login with Facebook button to be redirected to Facebook Authorisation page. This will the first page, in case you have set the Login Mode to auto
-10. To use the Facebook API in your application, import the corresponding [REST Web Service](/learn/web-services/#rest) into WaveMaker by giving a valid URL with the access token. Test and Import.
+10. To use the Facebook API in your application, import the corresponding [REST Web Service](/learn/services/web-services/web-services/#rest) into WaveMaker by giving a valid URL with the access token. Test and Import.
 11. You can see the variables imported from the service in the Left panel and these are available for binding and usage within your app. ![Facebook_serviceVar](/learn/assets/Facebook_serviceVar.png)
 
 [9. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
@@ -50,5 +50,5 @@ In order to use the **Facebook** OAuth prefab, please follow the below steps: Di
     - [9.4.1 Box](/learn/app-development/widgets/prefab/oauth-prefabs/box/)
     - [9.4.2 Facebook](#)
     - [9.4.3 Google](/learn/app-development/widgets/prefab/oauth-prefabs/google/)
-    - [9.4.4 Instagram](learn/app-development/widgets/prefab/oauth-prefabs/instagram/)
+    - [9.4.4 Instagram](/learn/app-development/widgets/prefab/oauth-prefabs/instagram/)
     - [9.4.5 LinkedIn](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/)

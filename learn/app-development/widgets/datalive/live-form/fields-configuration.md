@@ -19,7 +19,7 @@ You can set the following properties of the elements of the Live Form from the *
     - set the **Update data value delay** in milliseconds
     - additional Validations like **Required**, pattern matching in the form of **Regular Expression** and **Maximum Characters** allowed
     - behavior like **Auto Focus**, **Read Only**, **Show** etc can be set;
-    - **filter criteria** can be applied to referenced entities ([see here for usage](/learn/how-tos/using-filter-criteria-for-a-data-and-live-widgets/)).
+    - **filter criteria** can be applied to referenced entities ([see here for usage](/learn/how-tos/using-filter-criteria-data-live-widgets/)).
 
 [![](/learn/assets/LF_Fields.png)](/learn/assets/LF_Fields.png)
 
