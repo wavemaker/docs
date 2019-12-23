@@ -75,7 +75,7 @@ Please refer the [documentation](/learn/app-development/services/3rd-party-libra
 
 Extend the `UserServiceImpl` to preprocess the service.
 
-```
+```java
 public class PreProcessUserService extends UserServiceImpl {
 
 }
@@ -92,9 +92,9 @@ In this example we have implemented the first way, i.e. delegate to superclass. 
 
 [![](/learn/assets/word-image-162a.png)](/learn/assets/word-image-162a.png) 
 
-**`PreProcessUserService.java` Imports**:
+**`PreProcessUserService.java
 
-```
+```java
 import com.hrdb.User;
 import com.wavemaker.commons.WMRuntimeException;
 import com.wavemaker.runtime.security.SecurityService;
@@ -105,10 +105,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import java.util.Arrays;
 import java.util.List;
-```
 
-**Class Definition**
-```
 public class PreProcessUserService extends UserServiceImpl {
     private static final Logger LOGGER = LoggerFactory.getLogger(PreProcessUserService.class);
 
@@ -137,11 +134,10 @@ public class PreProcessUserService extends UserServiceImpl {
 
 **`PostProcessService.java` Imports**:
 
-```
+```java
+
 import com.hrdb.User;
 import org.springframework.data.domain.Page;
-
-_Class Definition_
 
 public class PostProcessService {
     public Page process(Page users) {
