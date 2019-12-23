@@ -31,7 +31,7 @@ This document shows how a column for the editable Data Table can be bound to out
 - [1\. Basic Table Usage](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage/)
 - [2\. How to customise table actions](/learn/how-tos/data-table-actions/)
 - [3\. How to represent data table columns using widgets](/learn/how-tos/data-table-widget-representations/)
-- [4\. How to format data table column](/learn/how-tos/data-table-format/)
+- [4\. How to format data table column](/learn/how-tos/data-table-format-options/)
 - [5\. How to apply styles (generic and conditional) to data table](/learn/how-tos/data-table-styling/)
 - [6\. How to view master-detail record using a data table](/learn/how-tos/view-master-detail-data-records-using-data-table/)
 - [7\. How to add master-detail record using a data table](/learn/how-tos/add-master-detail-records-using-data-table/)
