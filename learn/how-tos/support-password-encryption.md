@@ -99,6 +99,6 @@ In case you want to secure even for SSL communication, then we recommend that yo
 
 ## See Also 
 [Creating Registration Page](/learn/how-tos/creating-registration-page)  
-[Java Services](learn/app-development/services/java-services/java-service)  
+[Java Services](/learn/app-development/services/java-services/java-service)  
 [Create Variable](/learn/app-development/variables/variables)  
 [3rd Party Libraries](/learn/app-development/services/3rd-party-libraries)  
