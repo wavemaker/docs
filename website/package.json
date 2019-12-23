@@ -15,7 +15,7 @@
     "cypress:e2e": "npm run cypress:prepare-prod && npm run cypress:prod && npm run cypress:prep-report"
   },
   "devDependencies": {
-    "cypress": "^3.7.0",
+    "cypress": "^3.8.0",
     "docusaurus": "^1.12.0",
     "dotenv": "^8.2.0",
     "mocha": "^5.2.0",

@@ -1,0 +1,91 @@
+Application.run(function($rootScope, $timeout) {
+    "use strict";
+
+    var push;
+
+    function enablePush() {
+        // Enable push only if this is invoked inside mobile with push notification plugin..
+        if (!push && window.cordova && PushNotification) {
+            // Initialize the plugin
+            push = PushNotification.init({
+                android: {
+                    forceShow: true,
+                    vibrate: true
+                },
+                ios: {
+                    alert: true,
+                    sound: true
+                }
+            });
+
+            push.on('registration', function(data) {
+                // On Successful registration with push notification center, save the registration id on our backend.
+                var pushVar = $rootScope.Variables.RegisterPush;
+                if ($rootScope.deviceToken === data.registrationId) {
+                    return;
+                }
+                $rootScope.deviceToken = data.registrationId;
+                pushVar.setInput({
+                    'deviceId': $rootScope.deviceToken
+                });
+                pushVar.invoke();
+            });
+            push.on('notification', function(data) {
+                console.log("notification: %O", data);
+            });
+        }
+    }
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $rootScope.onAppVariablesReady = function() {
+        /*
+         * variables can be accessed through '$rootScope.Variables' property here
+         * e.g. $rootScope.Variables.staticVariable1.getData()
+         */
+
+        //If the user is already logged-in, then enable push
+        if ($rootScope.Variables.loggedInUser.dataSet.name) {
+            enablePush();
+        }
+    };
+
+    /* perform any action on session timeout here, e.g clearing some data, etc */
+    $rootScope.onSessionTimeout = function() {
+        /*
+         * NOTE:
+         * On re-login after session timeout:
+         * if the same user logs in(through login dialog), app will retain its state
+         * if a different user logs in, app will be reloaded and user is redirected to respective landing page configured in Security.
+         */
+    };
+
+    /*
+     * This application level callback function will be invoked after the invocation of PAGE level onPageReady function.
+     * Use this function to write common logic across the pages in the application.
+     * activePageName : name of the page
+     * activePageScope: scope of the page
+     * $activePageEl  : page jQuery element
+     */
+    $rootScope.onPageReady = function(activePageName, activePageScope, $activePageEl) {
+
+    };
+
+    /*
+     * This application level callback function will be invoked after a Variable receives an error from the target service.
+     * Use this function to write common error handling logic across the application.
+     * source:      Variable object or Widget Scope
+     * errorMsg:    The error message returned by the target service. This message will be displayed through appNotification variable
+     *              You can change this though $rootScope.Variables.appNotification.setMessage(YOUR_CUSTOM_MESSAGE)
+     * xhrObj:      The xhrObject used to make the service call
+     *              This object contains useful information like statusCode, url, request/response body.
+     */
+    $rootScope.onServiceError = function(source, errorMsg, xhrObj) {
+
+    };
+
+    $rootScope.loginActiononSuccess = function(variable, data, options) {
+        //On successful login, enable push
+        enablePush();
+    };
+
+});
