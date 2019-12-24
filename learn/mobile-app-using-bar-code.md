@@ -2,7 +2,7 @@
 title: "Mobile App using Bar code"
 id: ""
 ---
-
+---
 Learn to create a **simple mobile application** that will scan an employee id barcode and display the corresponding _Employee Profile_. We will be using the sample hrdb shipped with WaveMaker.
 
 Through this mobile application, you will learn about the following functionalities:
@@ -27,7 +27,7 @@ Creating an app involves the following steps:
 
 - **package prefix** – Package prefix defines the default package for the generated code across all services. This can be modified as per your requirements.
 - **copyright** information – created by default, which can be modified.
-- set the **default language** for the project, this can be used in conjunction with [Localization](/learn/howtos-select-locale) to set the language for the application.
+- set the **default language** for the project, this can be used in conjunction with [Localization](/learn/app-development/widgets/form-widgets/select-locale-usage) to set the language for the application.
 - Click **SAVE**.
 - The **Main Page** is created by default, with a _Two Column layout with top navbar and tabbar_.
 
@@ -35,10 +35,21 @@ Creating an app involves the following steps:
 
 We will Import a database to add data source to our application
 
-1. From the Main Menu, click on **Import** and select **Database **from the drop-down list. This will enable us to include a data source (database) into our application. [![Import_DB](/learn/assets/Import_DB.png)](/learn/assets/Import_DB.png)
-2. You need to choose the Database Provider of the database being imported. For this tutorial, we will use the inbuilt sample database that ships with WaveMaker. Click **sample database** link. [![bs_dbimport](/learn/assets/bs_dbimport.png)](/learn/assets/bs_dbimport.png)
-3. **Select tables** that you want to import from the chosen database. Here we will go with the default setting and import all the tables by clicking **NEXT**. [![bs_dbtables](/learn/assets/bs_dbtables.png)](/learn/assets/bs_dbtables.png)
-4. Upon successful import, you can choose to work with the data model generated or use the DB widgets created or go back to the canvas you are working on. Click **CLOSE** to get back to the project workspace. [![bs_dbfinal](/learn/assets/bs_dbfinal.png)](/learn/assets/bs_dbfinal.png)
+1. From the Main Menu, click on **Import** and select **Database **from the drop-down list. This will enable us to include a data source (database) into our application. 
+
+[![Import_DB](/learn/assets/Import_DB.png)](/learn/assets/Import_DB.png)
+
+2. You need to choose the Database Provider of the database being imported. For this tutorial, we will use the inbuilt sample database that ships with WaveMaker. Click **sample database** link. 
+
+[![bs_dbimport](/learn/assets/bs_dbimport.png)](/learn/assets/bs_dbimport.png)
+
+3. **Select tables** that you want to import from the chosen database. Here we will go with the default setting and import all the tables by clicking **NEXT**. 
+
+[![bs_dbtables](/learn/assets/bs_dbtables.png)](/learn/assets/bs_dbtables.png)
+
+4. Upon successful import, you can choose to work with the data model generated or use the DB widgets created or go back to the canvas you are working on. Click **CLOSE** to get back to the project workspace. 
+
+[![bs_dbfinal](/learn/assets/bs_dbfinal.png)](/learn/assets/bs_dbfinal.png)
 
 ## UI Design
 
@@ -61,8 +72,15 @@ Select the Variable option from the Create Menu. From the variable dialog:
 
 For the various widgets dropped in the UI Design step, do the following:
 
-1. For text1 set value from barcode data value. This would display the barcode value and we are passing the same value to the above variable [![bs_text1_bind](/learn/assets/bs_text1_bind-1024x325.png)](/learn/assets/bs_text1_bind.png) [![bs_text1_bind2](/learn/assets/bs_text1_bind2.png)](/learn/assets/bs_text1_bind2.png)
-2. For text2 set value from empSearchVariable variable->firstname. This would display name of the product as per the filter. [![bs_text2_bind](/learn/assets/bs_text2_bind.png)](/learn/assets/bs_text2_bind.png)
+1. For text1 set value from barcode data value. This would display the barcode value and we are passing the same value to the above variable 
+[![bs_text1_bind](/learn/assets/bs_text1_bind-1024x325.png)](/learn/assets/bs_text1_bind.png) 
+
+[![bs_text1_bind2](/learn/assets/bs_text1_bind2.png)](/learn/assets/bs_text1_bind2.png)
+
+2. For text2 set value from empSearchVariable variable -> firstname. This would display name of the product as per the filter. 
+
+[![bs_text2_bind](/learn/assets/bs_text2_bind.png)](/learn/assets/bs_text2_bind.png)
+
 3. Similarly for text3 set value from empSearchVariable variable->jobtitle and for picture1 set Source value from empSearchVariable variable->picurl
 
 ## Widget Events
@@ -73,15 +91,9 @@ For the various widgets dropped in the UI Design step, do the following:
 
 - Save and run the project. Based on the Barcode generated the Employee name, job title and image changes in UI.
 - Generate APK file for using the App in mobile
-- Working with generated APK. Click [here](https://drive.google.com/file/d/0Bwk0Hs1G2nOgRDZ2c1ZueFRPX0U/view?usp=sharing) for Demo Apk file generated for the application. **Note**: For demo purpose, we have used Employee ids as 1,2,3... You can create a QR code for numbers and scan it for the respective product name, description etc. Sample QR Code generators online: http://www.qr-code-generator.com/
+- Working with generated APK. Click [here](https://drive.google.com/file/d/0Bwk0Hs1G2nOgRDZ2c1ZueFRPX0U/view?usp=sharing) for Demo Apk file generated for the application. 
 
-[Mobile App Tutorials](/learn/tutorials/#tab-mob-tutorials)
+:::note
+For demo purpose, we have used Employee ids as 1,2,3... You can create a QR code for numbers and scan it for the respective product name, description etc. Sample QR Code generators online: http://www.qr-code-generator.com/.
+:::
 
-- [1\. First Mobile App](/learn/hybrid-mobile/first-mobile-app/)
-- [2\. Mobile App Integrated with Database](/learn/hybrid-mobile/mobile-app-integrated-database/)
-- [3\. Mobile App using Bar Code Scanner](/learn/hybrid-mobile/mobile-app-using-bar-code/)
-    - [i. App Creation](#creation)
-    - [ii. Integrating Datasource](#datasource)
-    - [iii. UI Design](#ui-design)
-    - [iv. Variable Creation](#variables)
-    - [v. Widget Binding](#binding)
