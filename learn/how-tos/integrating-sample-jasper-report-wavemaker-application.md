@@ -83,7 +83,7 @@ Jasper Reports is an open source Java reporting tool that can write to a variety
 
 ## Steps in Integration
 
-1. [Java Service Integration](app-development/services/java-services/java-service/) will create sample Java Service.
+1. [Java Service Integration](/learn/app-development/services/java-services/java-service/) will create sample Java Service.
 2. Add the below method `generatePdfReport` to the Java Service.
 
 ```java

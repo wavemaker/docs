@@ -21,7 +21,7 @@ Only the project owners can initiate the upgrade. The contributors cannot upgrad
 
 With the WaveMaker 10.0 release, you will notice alerts on the project cards prompting you to upgrade your apps. When you begin the project upgrade, the project card converts into a folder. The folder contains all the versions of the app including WM 9.4 and WM 10.0. You can independently work on both versions. In WM 9.4, you can continue to make critical fixes supporting the application that is already released to your customers. At the same time in WM 10.0, you can test and work on the upgrade process. After doing all the necessary tests to verify your application features, you finish the upgrade by selecting the "Finish upgrade" option. Then the WaveMaker 9.4 version archives, and you start using WakeMaker 10.0.
 
-[![](/learn/assets/wm10-upgrade-process-e1555339158151.jpg)](/learn/assets/wm10-upgrade-process.jpg)
+[![](/learn/assets/wm10-upgrade-process.jpg)](/learn/assets/wm10-upgrade-process.jpg)
 
 We recommend you to process the project upgrade as fast as possible not only to experience 3x faster load time but also to reduce repetition of production work after upgrading the app. The changes happening in WM 9.4 version during the upgrade process should be done again on WM 10.0 manually. Therefore, making minimum changes in WM 9.4 and active implementation of project upgrade helps the entire process to be much simpler and smoother.
 
