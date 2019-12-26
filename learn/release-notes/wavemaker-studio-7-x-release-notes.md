@@ -2,6 +2,7 @@
 title: "WaveMaker Studio 7.x Release Notes"
 id: ""
 ---
+---
 
 ## Studio 7.8.0 Release Released Date: 3rd Sept 2015
 
@@ -277,7 +278,7 @@ Here is a summary of key features, known issues and bug fixes offered in **Studi
 
 Here is a summary of key features, known issues and bug fixes offered in **Studio 7.0.0-421 Release** as compared to [Studio 7.0.0-406 Release](#70406). We hope you enjoy this release. **What's New**
 
-<table><tbody><tr><td><strong>Feature</strong></td><td><strong>Description</strong></td></tr><tr><td nowrap="nowrap">Libraries</td><td>The following libraries have been updated:</td></tr><tr><td nowrap="nowrap"></td><td>Bootstrap updated to 3.2</td></tr><tr><td nowrap="nowrap"></td><td>Angular UI Bootstrap from 0.10.0 to 0.11.2</td></tr><tr><td nowrap="nowrap"></td><td>Ace Editor builds from 1.1.2 to 1.1.7</td></tr><tr><td nowrap="nowrap">Databases</td><td>Added feature to export database - data and schema.</td></tr><tr><td>Project</td><td>Now delete project and leave project options are available from the project dashboard. <a title="Getting Started" href="/learn/docs/docs/getting-started-2/">Documentation</a>.</td></tr></tbody></table>
+<table><tbody><tr><td><strong>Feature</strong></td><td><strong>Description</strong></td></tr><tr><td nowrap="nowrap">Libraries</td><td>The following libraries have been updated:</td></tr><tr><td nowrap="nowrap"></td><td>Bootstrap updated to 3.2</td></tr><tr><td nowrap="nowrap"></td><td>Angular UI Bootstrap from 0.10.0 to 0.11.2</td></tr><tr><td nowrap="nowrap"></td><td>Ace Editor builds from 1.1.2 to 1.1.7</td></tr><tr><td nowrap="nowrap">Databases</td><td>Added feature to export database - data and schema.</td></tr><tr><td>Project</td><td>Now delete project and leave project options are available from the project dashboard. <a title="Getting Started" href="/learn/documentation-reference">Documentation</a>.</td></tr></tbody></table>
 
 **Key Bug Fixes**
 
