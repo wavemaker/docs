@@ -2,11 +2,11 @@ describe('Check for anchors', function() {
 	let brokenLink = [];
 
 	after(function() {
-		cy.writeFile('broken-urls.json', brokenLink);
+		cy.writeFile('broken-urls-git.json', brokenLink);
 	});
-
-	let urlJson = require('../fixtures/wavemaker-docs-urls.json');
-	urlJson.files.forEach(link => {
+	
+    let urlJson = require('../fixtures/changedFiles.json');
+	urlJson.forEach(link => {
 		it('Broken url check for: ' + link, function() {
 			cy.visit(link)
 				.get('a')
