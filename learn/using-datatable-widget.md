@@ -2,16 +2,17 @@
 title: "Using Data Table Widget"
 id: ""
 ---
+---
 
-### Overview
+
 
 Data Table provides a tabular view for database entities through a database service or Rest APIs by binding to Live, Service or Static Variables and allows for Create, Update and Delete (CRUD) operations on the entities.
 
-### Configure Data Table
+## Configure Data Table
 
 To bind the Data Table Widget to your back-end services data, drag and drop the Data Table Widget onto the canvas. [![dt_sel](/learn/assets/dt_sel.png)](/learn/assets/dt_sel.png)
 
-#### STEP 1 – SELECT DATA
+### STEP 1 – SELECT DATA
 
 There can be different scenarios to deal with when configuring your Data Table Widget with data source. Data source can be in the form of a Live or Service variable created from a database or web service or from an another widget on the page.
 
@@ -43,7 +44,7 @@ There can be different scenarios to deal with when configuring your Data Table 
 
 [![dt_data](/learn/assets/dt_data.png)](/learn/assets/dt_data.png)
 
-#### Step 2 – Layout Selection
+### Step 2 – Layout Selection
 
 **Selecting the Layout** includes two sub steps:
 
@@ -61,9 +62,12 @@ There can be different scenarios to deal with when configuring your Data Table 
         - Simple Table view: This Data Table provides for Read Only View of the existing Data, when you want to show live data constantly refreshed. For Example: Stock Trading Views, Election Results etc.
         
         [![dt_layout2](/learn/assets/dt_layout2.png)](/learn/assets/dt_layout2.png)
-2. Selecting Pagination Style [![dt_pagin](/learn/assets/dt_pagin.png)](/learn/assets/dt_pagin.png)
 
-#### STEP 3 – SELECT DATA TABLE COLUMNS
+2. Selecting Pagination Style 
+
+[![dt_pagin](/learn/assets/dt_pagin.png)](/learn/assets/dt_pagin.png)
+
+### STEP 3 – SELECT DATA TABLE COLUMNS
 
 This step will allow us to select the fields to be shown in Data Table and once done
 
@@ -72,18 +76,22 @@ This step will allow us to select the fields to be shown in Data Table and once 
 3. Change the Title for the field
 4. Change the Widget type for the field
 
-**Note:** If the Data Table layout without Form is selected in step 2 DONE button will be provided after this step. Click the DONE button to add the Data Table to the current page. If any other layouts are selected then the you have to go through two more steps to select the Form layout and to select the Form fields. [![dt_fields](/learn/assets/dt_fields.png)](/learn/assets/dt_fields.png)
+:::note
+If the Data Table layout without Form is selected in step 2 DONE button will be provided after this step. Click the DONE button to add the Data Table to the current page. If any other layouts are selected then the you have to go through two more steps to select the Form layout and to select the Form fields. 
+:::
 
-#### STEP 4 – SELECTING FORM LAYOUT
+[![dt_fields](/learn/assets/dt_fields.png)](/learn/assets/dt_fields.png)
+
+### STEP 4 – SELECTING FORM LAYOUT
 
 If you have selected any of the Data Table layouts that include an inline or a dialog Form this step will allow you to select a Form layout for your inline Form or dialog Form.
 
 - You have the option of choosing **1-column, 2-column or 3-column layout**. 3-column layout is selected by default
 - You can also set the alignment, position and size of **caption** of the Form fields.
 
-[See here for more details](/learn/using-live-form/#layout)
+[See here for more details](/learn/how-tos/using-live-form#layout-and-alignment-configuration)
 
-#### STEP 5 – SELECTING FORM FIELDS
+### STEP 5 – SELECTING FORM FIELDS
 
 Select the fields and set the title and widget property for each field
 
@@ -92,4 +100,4 @@ Select the fields and set the title and widget property for each field
 3. Change the widget type for display of each field value
 4. Reorder the fields for display. In case you have selected 2- or 3-column layout, then you can specify the fields to be displayed in each column.
 
-[See here for more details](/learn/using-live-form/#fields)
+[See here for more details](/learn/how-tos/using-live-form#step-3-field-configuration)
