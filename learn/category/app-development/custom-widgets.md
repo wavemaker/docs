@@ -70,13 +70,13 @@ Prefabs, like any widget, have the following features that can be set:
 2. **Events**: There are two default events which can be handled - on Load and on Destroy. These events get triggered when the Prefab is loaded or removed, respectively, from the page containing the Prefab. Any other events that have been defined by the Prefab developer will also be listed and these can be handled by the user.
 3. **Methods**: Any methods that have been written and exposed by the Prefab developer will be available for invocation by binding them to an event of any widget.
 
-[Know more about Prefab settings](/learn/app-development/widgets/creating-prefabs/#prefab-settings).
+[Know more about Prefab settings](/learn/app-development/custom-widgets/creating-prefabs/#prefab-settings).
 
 [![prefab_frontend](/learn/assets/prefab_frontend.png)](/learn/assets/prefab_frontend.png)
 
 # Publishing Prefabs
 
-Once you have created a Prefab, it needs to be published in order for the apps to use it. [Know more about Publishing Prefabs](/learn/app-development/widgets/creating-prefabs/#publish-prefab).
+Once you have created a Prefab, it needs to be published in order for the apps to use it. [Know more about Publishing Prefabs](/learn/app-development/custom-widgets/creating-prefabs/#publish-prefab).
 
 [![](/learn/assets/prefab_publish.png)](/learn/assets/prefab_publish.png)
 

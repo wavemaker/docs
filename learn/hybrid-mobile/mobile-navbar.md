@@ -25,9 +25,13 @@ id: ""
 In action view, the widget area is divided into 3 sections:
 
 ### Left Section
+
 Left section is reserved for 2 buttons.
-- _First button_ will be visible if there is a left panel in the page. It is used to toggle the left panel. Icon of left panel button can be configured in the properties panel.
-- _Second button_ is by default acts as a button that takes the user to the last visited page. Following properties for this button are configurable
+
+- **First button** will be visible if there is a left panel in the page. It is used to toggle the left panel. Icon of left panel button can be configured in the properties panel.
+
+- **Second button** is by default acts as a button that takes the user to the last visited page. Following properties for this button are configurable.
+
     - Show Back Button
     - Back Button icon class
     - Back Button label
@@ -39,12 +43,14 @@ Middle section holds icon and title.
 
 ### Right Section
 In the Right section, widgets can be added using _Add Widgets_ button. _Add Widgets_ provides a widget  (like Anchor, Menu, Popover, Button) to be added. Depending upon the widgets added various properties can be set:
+
 - _Anchor_: can have a _hyperlink_ to specify the destination link, _target_ where the linked document should be opened.
-- _Menu_: can specify the _layout_, _position_, and _value_–_action_ combination. [Click here for more on menu usage.](/learn/dropdown-menu/)
-- _Popover_: can set the _content source_ and _content_ for further action. [Click here for Popover usage](/learn/popover-widget/).
+- _Menu_: can specify the _layout_, _position_, and _value_–_action_ combination. [Click here for more on menu usage.](/learn/app-development/widgets/navigation/dropdown-menu-use-cases)
+- _Popover_: can set the _content source_ and _content_ for further action. [Click here for Popover usage](/learn/app-development/widgets/navigation/popover-basic-usage).
 - _Button_: _on click event_ can be set for page navigation
 
 ### Search Button
+
 There is also **search button** available on Mobile Navbar which appears at extreme right. Search text is exposed as an outbound property on Mobile Navbar as ‘query’.
 
 ## Search View
@@ -103,7 +109,7 @@ This event handler to call when the user clicks the back button in action view o
 6. Select the added anchor from the canvas.
 7. Set the Icon Class to either '_wi wi-done_' or '_fa fa-check_'. You can choose from the list of icons by clicking the search icon next to the Icon Class property
 
-#### Use cases
+## See Also
 
-1. [How to use search widget within leftnav](/learn/how-tos/using-search-widget-within-navbar/)
-2. [How to add sliding leftnav](/learn/how-tos/sliding-leftnav-mobile-app/)
+[How to use search widget within leftnav](/learn/how-tos/using-search-widget-within-navbar/)  
+[How to add sliding leftnav](/learn/how-tos/sliding-leftnav-mobile-app/)  
