@@ -140,4 +140,4 @@ B.4 Mobile Integrations
 - [4.2 Amazon SNS](/learn/hybrid-mobile/mobile-integrations-amazon-sns/)
 - [4.3 Amazon Mobile Analytics](/learn/hybrid-mobile/mobile-integrations-amazon-mobile-analytics/)
 - [4.4 Push Notifications](/learn/hybrid-mobile/mobile-integrations-push-notifications/)
-- [4.5 Invoking Web App API’s in Mobile Apps](/learn/mobile-app-development/invoking-web-app-apis-mobile-apps/)
+- [4.5 Invoking Web App API’s in Mobile Apps](/learn/hybrid-mobile/invoking-web-app-apis-mobile-apps/)

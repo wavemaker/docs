@@ -21,7 +21,9 @@ The API’s in Project1 can be of two types:
     - Provide the above URL as Service URL.
     - Click on Test and Import the web service.
     
-    **Note**: You will need to deploy your application(Project1) to access its services in Project2.
+:::note
+You will need to deploy your application(Project1) to access its services in Project2.
+:::
 
 ## Accessing Authenticated Services
 
@@ -61,12 +63,13 @@ You will need to use HTTP Authentication initially while importing the token API
     - In the HEADERS tab provide the Name as "wm\_auth\_token" and Test Value as the token generated above.
     - Click on Test and Import the web service.
 
-**Note**: You will need to deploy your application(Project1) to access its services in Project2.
+:::note
+You will need to deploy your application(Project1) to access its services in Project2.
+:::
 
-B.4 Mobile Integrations
+## See Also
 
-- [4.1 Amazon Cognito](/learn/hybrid-mobile/mobile-integrations/)
-- [4.2 Amazon SNS](/learn/hybrid-mobile/mobile-integrations-amazon-sns/)
-- [4.3 Amazon Mobile Analytics](/learn/hybrid-mobile/mobile-integrations-amazon-mobile-analytics/)
-- [4.4 Push Notifications](/learn/hybrid-mobile/use-push-notification-wm-mobile-app/)
-- [4.5 Invoking Web App APIs in Mobile Apps](#)
+[Amazon Cognito](/learn/hybrid-mobile/mobile-integrations-amazon-mobile-analytics/)  
+[Amazon SNS](/learn/hybrid-mobile/mobile-integrations-amazon-sns/)  
+[Amazon Mobile Analytics](/learn/hybrid-mobile/mobile-integrations-amazon-mobile-analytics/)  
+[Push Notifications](/learn/hybrid-mobile/use-push-notification-wm-mobile-app/)  
