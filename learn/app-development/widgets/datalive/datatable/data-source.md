@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Data Source"
-id: ""
+id: "data-source"
 sidebar_label: "Data Source"
 ---
 

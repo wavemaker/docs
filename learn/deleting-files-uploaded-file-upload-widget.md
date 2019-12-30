@@ -1,6 +1,6 @@
 ---
 title: "Deleting  Files Uploaded from File Upload Widget"
-id: ""
+id: "deleting-files-uploaded-file-upload-widget"
 ---
 
 The uploaded files will be available in the upload folder and can be referred to using the **listFiles** and **deleteFiles** methods. This sections show the usage of list files functionalities. [See here for list files usage](/learn/how-tos/listing-files-uploaded-file-upload-widget/).

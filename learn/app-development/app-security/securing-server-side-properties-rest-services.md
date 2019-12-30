@@ -1,6 +1,6 @@
 ---
 title: "Securing Server Side and App Environment Properties in REST Services"
-id: ""
+id: "securing-server-side-properties-rest-services"
 sidebar_label: "Secure Server-side Properties"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Integrating Amazon Cognito for User Authentication"
-id: ""
+id: "integrating-amazon-cognito-user-authentication"
 ---
 ---
 

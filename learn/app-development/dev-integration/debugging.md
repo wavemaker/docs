@@ -1,6 +1,6 @@
 ---
 title: "Debugging"
-id: ""
+id: "debugging"
 ---
 ---
 

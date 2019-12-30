@@ -1,6 +1,6 @@
 ---
 title: "Variable for Database CRUD"
-id: ""
+id: "database-crud"
 sidebar_label: "Database CRUD"
 ---
 ---

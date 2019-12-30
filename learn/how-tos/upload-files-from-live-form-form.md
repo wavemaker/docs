@@ -1,6 +1,6 @@
 ---
 title: "Upload Files from Live Form & Form"
-id: ""
+id: "upload-files-from-live-form-form"
 ---
 
 This section showcases using FileUpload widget to :

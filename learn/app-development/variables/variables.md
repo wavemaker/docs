@@ -1,6 +1,6 @@
 ---
 title: "Variables Overview"
-id: ""
+id: "variables"
 sidebar_label: "Variables Overview"
 ---
 Learn about Variables in WaveMaker low-code platform. See how it works and how to use them as services.

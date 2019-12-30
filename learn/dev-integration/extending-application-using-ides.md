@@ -1,6 +1,6 @@
 ---
 title: "Extending the Application using IDEs"
-id: ""
+id: "extending-application-using-ides"
 ---
 
 Sometimes you might want to extend and maintain your code. You might want to work on a local machine text editor, make changes and import these changes back into your application. Or you might also want to work on an IDE of your choice and comfort and take advantage of its Java code editing, testing and debugging features. In WaveMaker all this can be achieved easily as a modular client-side code (AngularJS, CSS, and HTML) incorporating industry best practices is generated. In this section, we list the steps for the same.

@@ -1,6 +1,6 @@
 ---
 title: "What skills you need to build a WaveMaker app?"
-id: ""
+id: "skills-need-to-build-wavemaker-app"
 ---
 See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) section for WaveMaker app development.    
 

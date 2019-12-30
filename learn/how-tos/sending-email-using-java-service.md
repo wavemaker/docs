@@ -1,6 +1,6 @@
 ---
 title: "Sending eMail using Java Service"
-id: ""
+id: "sending-email-using-java-service"
 ---
 ---
 

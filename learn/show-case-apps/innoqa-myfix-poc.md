@@ -1,6 +1,6 @@
 ---
 title: "InnoQA | MyFix POC"
-id: ""
+id: "innoqa-myfix-poc"
 ---
 
 The POC solution for the following three apps:

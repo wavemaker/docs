@@ -1,6 +1,6 @@
 ---
 title: "Search - Basic Usage"
-id: ""
+id: "search-basic-usage"
 ---
 
 WaveMaker allows you to add search capability via the **search widget**. Following are the steps in using the same. We will use the search widget to search the [**Department database from the sample HRDB imported earlier**](/learn/app-development/services/database-services/working-with-databases/#integrating-database) and display the department id and name.

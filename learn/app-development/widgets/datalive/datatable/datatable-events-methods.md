@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Events & Methods"
-id: ""
+id: "datatable-events-methods"
 sidebar_label: "Events & Methods"
 ---
 ---

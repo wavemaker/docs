@@ -1,6 +1,6 @@
 ---
 title: "Create Prefab Using D3 & NVD3 Charts"
-id: ""
+id: "create-prefab-using-d3-nvd3-charts"
 ---
 
 D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. For example, you can use D3 to generate an HTML table from an array of numbers. Or, use the same data to create an interactive SVG bar chart with smooth transitions and interaction. The chart widgets which are offered by WaveMaker are based out of NVD3 charts, which are re-usable charts for D3 charts. and as such implementing any of the NVD3 & D3 charts becomes easy. Here we will see two simple examples - [line chart (D3)](#creationd3) and [line plus bar chart (NVD3)](#creationnvd3).

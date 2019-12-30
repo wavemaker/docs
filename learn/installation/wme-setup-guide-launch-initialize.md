@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide – Launching Instances"
-id: ""
+id: "wme-setup-guide-launch-initialize"
 sidebar_label: "Launching Instances"
 ---
 ---

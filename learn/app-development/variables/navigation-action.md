@@ -1,6 +1,6 @@
 ---
 title: "Navigation Action"
-id: ""
+id: "navigation-action"
 ---
 ---
 

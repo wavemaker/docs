@@ -1,6 +1,6 @@
 ---
 title: "Web UI Design"
-id: ""
+id: "web-ui-design"
 ---
 
 As mentioned in [previous sections](/learn/app-development/ui-design/design-overview/), a WaveMaker app is a collection of pages. Each page can be designed by selecting a proper layout and arranging widgets within it. The app flow can be achieved using page navigation and events to trigger this navigation.

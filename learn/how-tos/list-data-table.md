@@ -1,6 +1,6 @@
 ---
 title: "Including a Data Table within a List"
-id: ""
+id: "list-data-table"
 ---
 
 In this section we will build a **custom list** with a **Data Table.**

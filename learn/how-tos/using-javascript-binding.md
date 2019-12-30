@@ -1,6 +1,6 @@
 ---
 title: "Using JavaScript in Binding"
-id: ""
+id: "using-javascript-binding"
 ---
 ---
 This How To:

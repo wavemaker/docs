@@ -1,6 +1,6 @@
 ---
 title: "Mobile App Integrated with Database"
-id: ""
+id: "mobile-app-integrated-database"
 ---
 
 Learn to create a **simple mobile application** that will display an _Employee Profile_ and allow you to _update the existing profile picture_ with the newly captured image.

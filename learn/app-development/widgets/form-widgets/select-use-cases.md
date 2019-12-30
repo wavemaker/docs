@@ -1,6 +1,6 @@
 ---
 title: "Select - Use Cases"
-id: ""
+id: "select-use-cases"
 ---
 
 WaveMaker offers various ways to use the Select widget. This section elaborates on all the options available. These various options pertain to how the data displayed in the drop down list is set. Running the app will display the select widgets with the label showing the selection.

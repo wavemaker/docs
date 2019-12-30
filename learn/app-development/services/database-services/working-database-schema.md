@@ -1,6 +1,6 @@
 ---
 title: "Working with Database Schema"
-id: ""
+id: "working-database-schema"
 sidebar_label: "Working with DB Schema"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Implementing Localization for Dropdown Menu"
-id: ""
+id: "implementing-localization-dropdown-menu"
 ---
 
 **Problem Statement**: How to implement Localization for the menu items.[Localization](/learn/how-tos/localization-wavemaker-apps/) enables you to render your app in multiple languages. WaveMaker automatically detects the user’s preferred locales (from the browser) and renders the application with the locale of the user’s preference if the application supports. The user can be given a choice to select the language using the Select Locale widget.

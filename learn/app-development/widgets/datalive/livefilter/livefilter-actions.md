@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Actions"
-id: ""
+id: "livefilter-actions"
 sidebar_label: "Actions"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Examples - UI Design"
-id: ""
+id: "use-cases-ui-design"
 sidebar_label: "Examples"
 ---
 ---

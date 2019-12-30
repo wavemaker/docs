@@ -1,6 +1,6 @@
 ---
 title: "Mobile Build - Manual"
-id: ""
+id: "mobile-build-manual"
 ---
 ---
 

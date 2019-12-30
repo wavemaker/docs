@@ -1,6 +1,6 @@
 ---
 title: "Data Integration - Variables Old"
-id: ""
+id: "data-integration-variables-old"
 ---
 
 **Variables** provide data integration for the widgets and provide the ability to control data scoping, managing updates and synchronization to the actual data services in the backend.

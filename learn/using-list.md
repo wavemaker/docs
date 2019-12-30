@@ -1,6 +1,6 @@
 ---
 title: "Using List"
-id: ""
+id: "using-list"
 ---
 
 List provides a list view of data and has powerful features to provide meaningful display of data based on usage scenarios. The List can provide layouts such as Card View, Master-Detail View.

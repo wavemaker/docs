@@ -1,6 +1,6 @@
 ---
 title: "Using the Progress Circle Widget"
-id: ""
+id: "using-progress-circle-widget"
 ---
 
 In this article, you will learn how to create and configure a progress circle widget in a step by step process. A progress circle is a **basic** widget type.

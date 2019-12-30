@@ -1,6 +1,6 @@
 ---
 title: "Tree Use Case - from Static Variable"
-id: ""
+id: "tree-use-case-static-variable"
 ---
 
 We will build a tree using a simple static structure

@@ -1,6 +1,6 @@
 ---
 title: "WebSocket Usage - Heartrate Monitor"
-id: ""
+id: "websocket-usage-heartrate-monitor"
 ---
 
 ##### 8.4 Release

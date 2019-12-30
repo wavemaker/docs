@@ -1,6 +1,6 @@
 ---
 title: "XSS antisamy policy configuration"
-id: ""
+id: "xss-antisamy-policy-configuration"
 ---
 ---
 

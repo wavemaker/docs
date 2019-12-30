@@ -1,6 +1,6 @@
 ---
 title: "Localization - using Select Locale"
-id: ""
+id: "select-locale-usage"
 ---
 
 ## Step 1: App Messages

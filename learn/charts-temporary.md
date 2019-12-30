@@ -1,6 +1,6 @@
 ---
 title: "Charts Temporary"
-id: ""
+id: "charts-temporary"
 ---
 
 "A picture is worth a thousand words". To this end, WaveMaker gives you a tool to present your data in a pictorial form using the chart widgets. Using these widgets you can transform your data into either a line chart, column chart, pie chart, area chart, cumulative line chart, bar chart or a donut Chart. [![chart_run](/learn/assets/chart_run-1024x640.png)](/learn/assets/chart_run.png)

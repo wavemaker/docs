@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker 8.0.GA - Release date: 9 November 2015"
-id: ""
+id: "v8-0-ga"
 sidebar_label: "Release v8.0.GA"
 ---
 *Here is a summary of key features, known issues and bug fixes offered in 8.0.GA Release.*

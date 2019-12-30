@@ -1,6 +1,6 @@
 ---
 title: "Confirm Dialog"
-id: ""
+id: "confirm-dialog"
 ---
 ---
 

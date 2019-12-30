@@ -1,6 +1,6 @@
 ---
 title: "Camera"
-id: ""
+id: "camera"
 ---
 
 **The camera** is a**button based widget that opens device camera for taking photos or videos. The path of the photo or video captured is exposed as outbound property ‘localFilePath’.**

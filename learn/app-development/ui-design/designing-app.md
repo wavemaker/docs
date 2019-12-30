@@ -1,6 +1,6 @@
 ---
 title: "Designing an App"
-id: ""
+id: "designing-app"
 sidebar_label: "UI Overview"
 ---
 ---

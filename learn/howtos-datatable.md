@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Data Table"
-id: ""
+id: "howtos-datatable"
 ---
 
 Customising Data Table using Advanced SettingsData Table widget allows you to customise the columns. The customisation options are available from the **Advanced Settings** property of a **Data Table** widget.

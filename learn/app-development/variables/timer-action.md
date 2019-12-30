@@ -1,6 +1,6 @@
 ---
 title: "Timer Action"
-id: ""
+id: "timer-action"
 ---
 
 **Timer action** can be used to trigger events repeatedly at timed intervals.

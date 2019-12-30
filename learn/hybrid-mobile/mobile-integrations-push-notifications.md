@@ -1,6 +1,6 @@
 ---
 title: "Mobile Integrations - Push Notifications"
-id: ""
+id: "mobile-integrations-push-notifications"
 ---
 
 # Introduction

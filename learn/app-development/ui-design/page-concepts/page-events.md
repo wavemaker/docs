@@ -1,6 +1,6 @@
 ---
 title: "Page Events"
-id: ""
+id: "page-events"
 sidebar_label: "Events"
 ---
 ---

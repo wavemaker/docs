@@ -1,6 +1,6 @@
 ---
 title: "Using Service Variables for Queries and Procedure"
-id: ""
+id: "using-service-variables-queries-procedure"
 ---
 
 Showcases:

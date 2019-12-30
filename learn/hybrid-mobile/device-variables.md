@@ -1,6 +1,6 @@
 ---
 title: "Device Variables"
-id: ""
+id: "device-variables"
 ---
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Page Navigation"
-id: ""
+id: "page-navigation"
 sidebar_label: "Navigation"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Nav Bar"
-id: ""
+id: "nav-bar"
 ---
 
 ![](/learn/assets/laptop.png)  **NOTE**: Nav Bar is available only for web responsive apps.

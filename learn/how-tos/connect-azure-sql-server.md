@@ -1,6 +1,6 @@
 ---
 title: "Connect To Azure SQL Server"
-id: ""
+id: "connect-azure-sql-server"
 ---
 
 ## Prerequisites

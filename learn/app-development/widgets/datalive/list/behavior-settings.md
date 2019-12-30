@@ -1,6 +1,6 @@
 ---
 title: "List - Behavior Settings"
-id: ""
+id: "behavior-settings"
 sidebar_label: "Behavior Settings"
 ---
 ---

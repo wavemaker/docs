@@ -1,6 +1,6 @@
 ---
 title: "Variable for Java Service"
-id: ""
+id: "java-services"
 ---
 ---
 

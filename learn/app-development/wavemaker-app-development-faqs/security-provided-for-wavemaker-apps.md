@@ -1,6 +1,6 @@
 ---
 title: "What type of security is provided for WaveMaker Apps?"
-id: ""
+id: "security-provided-for-wavemaker-apps"
 sidebar_label: "Security Provided for WaveMaker Apps"
 ---
 See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.   

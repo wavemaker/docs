@@ -1,6 +1,6 @@
 ---
 title: "Use Static Variable to pass data between pages"
-id: ""
+id: "use-static-variable-pass-data-pages"
 ---
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Barcode Scanner"
-id: ""
+id: "barcode-scanner"
 ---
 ---
 

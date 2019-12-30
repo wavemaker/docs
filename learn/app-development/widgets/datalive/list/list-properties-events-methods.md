@@ -1,6 +1,6 @@
 ---
 title: "List - Properties, Events & Methods"
-id: ""
+id: "list-properties-events-methods"
 sidebar_label: "Properties, Events & Methods"
 ---
 ---

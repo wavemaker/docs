@@ -1,6 +1,6 @@
 ---
 title: "Authentication"
-id: ""
+id: "authentication"
 ---
 ---
 Authentication is a process by which the access to the app is restricted to known/authentic users.

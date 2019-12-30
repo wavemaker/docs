@@ -1,6 +1,6 @@
 ---
 title: "SAML Integration"
-id: ""
+id: "saml-integration"
 ---
 ---
 

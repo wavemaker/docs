@@ -1,6 +1,6 @@
 ---
 title: "Using Form"
-id: ""
+id: "using-form-2"
 ---
 
 The **Form** widget has built-in functionality for performing **POST & GET operations** on the data source it is bound to. A typical Form set up in WaveMaker has the following steps:

@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker 9.GA - Release date: 20 September 2017"
-id: ""
+id: "v9-0-ga"
 sidebar_label: "Release v9.GA"
 ---
 *This release includes enhancements to the product.*

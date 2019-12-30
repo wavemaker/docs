@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker 10.0 Preview - Release date: 20 November 2018"
-id: ""
+id: "v10-0-preview"
 sidebar_label: "Release v10.Preview"
 ---
 *WaveMaker has released a new version with new features.*

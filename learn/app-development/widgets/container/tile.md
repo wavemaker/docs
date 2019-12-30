@@ -1,6 +1,6 @@
 ---
 title: "Tile"
-id: ""
+id: "tile"
 ---
 
 **Tile** is a container for other widgets used to present a set of objects. Tile widget lets you to directly add an image, text box, video, or web code to user dashboard. Functions _similar to the container_ but it comes with some default styling which makes it different from a container. Users cannot create partials using tile.

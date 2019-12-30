@@ -1,6 +1,6 @@
 ---
 title: "Alert Dialog"
-id: ""
+id: "alert-dialog"
 ---
 ---
 

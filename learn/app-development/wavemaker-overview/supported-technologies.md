@@ -1,6 +1,6 @@
 ---
 title: "Supported Technologies"
-id: ""
+id: "supported-technologies"
 ---
 Find the list of technologies supported by WaveMaker. 
 

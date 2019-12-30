@@ -1,6 +1,6 @@
 ---
 title: "Using Wizard for Progressive Data Entry in a Live Form"
-id: ""
+id: "using-wizard-progressive-data-entry-live-form"
 ---
 
 We will see how Live form fields can be distributed over multiple wizard steps.

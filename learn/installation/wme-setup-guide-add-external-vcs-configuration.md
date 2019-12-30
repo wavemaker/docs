@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide – Add external VCS Configuration"
-id: ""
+id: "wme-setup-guide-add-external-vcs-configuration"
 sidebar_label: "Add external VCS Configuration"
 ---
 ---

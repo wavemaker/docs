@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide – Configuration"
-id: ""
+id: "wme-setup-guide-configuration"
 sidebar_label: "Configuration"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Configuring Select Widget from a Static Variable"
-id: ""
+id: "configuring-select-widget-static-variable"
 ---
 
 Instead of having a [comma-separated list](/learn/how-tos/configuring-select-widget-static-list-values/), one can use a Static Variable to hold the list and then bind it to the Select widget. This will enable us to reuse the list at multiple places, if needed.

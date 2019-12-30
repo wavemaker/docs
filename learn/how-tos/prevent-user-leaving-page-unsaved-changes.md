@@ -1,6 +1,6 @@
 ---
 title: "Prevent Leaving Page with Unsaved Changes"
-id: ""
+id: "prevent-user-leaving-page-unsaved-changes"
 sidebar_label: "Leaving Page with Unsaved Changes"
 ---
 ---

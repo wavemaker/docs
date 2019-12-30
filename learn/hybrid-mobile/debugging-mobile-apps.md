@@ -1,6 +1,6 @@
 ---
 title: "Debugging Mobile Apps"
-id: ""
+id: "debugging-mobile-apps"
 ---
 ---
 

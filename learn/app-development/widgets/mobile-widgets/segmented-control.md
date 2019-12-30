@@ -1,6 +1,6 @@
 ---
 title: "Segmented Control"
-id: ""
+id: "segmented-control"
 ---
 
 ![](/learn/assets/phone.png)  **NOTE**: Segmented Control is available only for mobile apps.

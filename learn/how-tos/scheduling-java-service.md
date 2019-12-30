@@ -1,6 +1,6 @@
 ---
 title: "Scheduling a Java Service"
-id: ""
+id: "scheduling-java-service"
 ---
 ---
 

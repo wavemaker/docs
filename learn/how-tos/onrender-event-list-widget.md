@@ -1,6 +1,6 @@
 ---
 title: "OnRender Event for List widget"
-id: ""
+id: "onrender-event-list-widget"
 sidebar_label: "OnRender Event"
 ---
 ---

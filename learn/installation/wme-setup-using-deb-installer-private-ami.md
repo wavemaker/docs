@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Using DEB Installer with Private AMI"
-id: ""
+id: "wme-setup-using-deb-installer-private-ami"
 sidebar_label: "DEB Installer - Private AMI"
 ---
 

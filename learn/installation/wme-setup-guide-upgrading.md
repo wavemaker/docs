@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide – Upgrading"
-id: ""
+id: "wme-setup-guide-upgrading"
 sidebar_label: "Upgrading"
 ---
 ---

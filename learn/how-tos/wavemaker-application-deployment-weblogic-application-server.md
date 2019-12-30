@@ -1,6 +1,6 @@
 ---
 title: "Deployment to WebLogic Application Server"
-id: ""
+id: "wavemaker-application-deployment-weblogic-application-server"
 sidebar_label: "WebLogic Server"
 ---
 ---

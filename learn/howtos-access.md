@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Script Access"
-id: ""
+id: "howtos-access"
 ---
 
 Accessing the Widgets and Variables of Partial from Parent Page through Scripting

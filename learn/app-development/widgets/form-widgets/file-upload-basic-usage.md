@@ -1,6 +1,6 @@
 ---
 title: "FileUpload - Basic Usage"
-id: ""
+id: "file-upload-basic-usage"
 ---
 
 1. Drag and drop a **FileUpload** widget onto the canvas.

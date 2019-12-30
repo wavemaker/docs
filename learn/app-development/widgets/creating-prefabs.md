@@ -1,6 +1,6 @@
 ---
 title: "Creating Prefabs"
-id: ""
+id: "creating-prefabs"
 ---
 
 As we have [seen here](/learn/app-development/custom-widgets/custom-widgets/), Prefabs are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker.

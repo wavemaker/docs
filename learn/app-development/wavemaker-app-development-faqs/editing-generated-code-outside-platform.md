@@ -1,6 +1,6 @@
 ---
 title: "Can WaveMaker apps be modified outside the platform by manually editing the generated code?"  
-id: ""
+id: "editing-generated-code-outside-platform"
 sidebar_label: "Editing the Generated code outside the Platform"
 ---
 See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) for WaveMaker app development.

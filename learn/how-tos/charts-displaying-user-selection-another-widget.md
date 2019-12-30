@@ -1,6 +1,6 @@
 ---
 title: "Charts - Displaying User Selection in another Widget"
-id: ""
+id: "charts-displaying-user-selection-another-widget"
 ---
 
 Hovering over the chart shows the values corresponding to the nearest data point. These data points can be captured and used to bind to a widget for further display or computational purposes. Here we will see how to do the same:

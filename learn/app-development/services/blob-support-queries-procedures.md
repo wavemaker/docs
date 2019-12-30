@@ -1,6 +1,6 @@
 ---
 title: "Blob Support for Queries and Procedures"
-id: ""
+id: "blob-support-queries-procedures"
 ---
 
 BLOB datatype being large in size and amorphous in nature need to be handled separately.

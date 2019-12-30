@@ -1,6 +1,6 @@
 ---
 title: "Setting Language and Date Format"
-id: ""
+id: "setting-language-date-format"
 ---
 ---
 

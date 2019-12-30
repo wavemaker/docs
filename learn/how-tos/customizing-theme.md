@@ -1,6 +1,6 @@
 ---
 title: "Customizing Theme"
-id: ""
+id: "customizing-theme"
 ---
 ---
 Before trying to customize the app Theme, it is recommended you that familiarise with the Theme implementation from [this document](/learn/app-development/ui-design/themes/#customise-theme) regarding the build, import and application of a Theme in WaveMaker app.

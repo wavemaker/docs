@@ -1,6 +1,6 @@
 ---
 title: "Using Queries"
-id: ""
+id: "using-queries"
 ---
 
 There will be times when you want to display data from multiple tables or update/insert values to multiple tables. Queries and Stored Procedures come in handy in such instances. In this section, we will be seeing how WaveMaker supports Query usage with the help of an example.

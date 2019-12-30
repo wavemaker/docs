@@ -1,6 +1,6 @@
 ---
 title: "Variables for Invocation"
-id: ""
+id: "variables"
 ---
 
 Java Service can be accessed from within your app using Variables. These variables allow one to trigger the methods within the Java Service, pass the necessary parameters to the method and access the results from the method.

@@ -1,6 +1,6 @@
 ---
 title: "Remember Me"
-id: ""
+id: "remember-me"
 ---
 ---
 Remembers me retains the session details and has a default expiry/lifetime cookie. This cookie is valid for 15 days or the user explicitly signing-out out of the application whichever comes first.

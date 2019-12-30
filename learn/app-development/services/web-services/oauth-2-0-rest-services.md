@@ -1,6 +1,6 @@
 ---
 title: "REST Services using OAuth 2.0"
-id: ""
+id: "oauth-2-0-rest-services"
 ---
 ---
 

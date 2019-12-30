@@ -1,6 +1,6 @@
 ---
 title: "Templates"
-id: ""
+id: "page-templates"
 sidebar_label: "Templates"
 ---
 ---

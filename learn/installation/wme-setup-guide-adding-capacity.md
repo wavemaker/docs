@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide – Adding Capacity"
-id: ""
+id: "wme-setup-guide-adding-capacity"
 sidebar_label: "Adding Capacity"
 ---
 ---

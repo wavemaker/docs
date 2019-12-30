@@ -1,6 +1,6 @@
 ---
 title: "3rd Party REST Services"
-id: ""
+id: "rest-services"
 sidebar_label: "REST Services"
 ---
 ---

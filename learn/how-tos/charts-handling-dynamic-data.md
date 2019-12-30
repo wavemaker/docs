@@ -1,6 +1,6 @@
 ---
 title: "Charts - Handling Dynamic Data"
-id: ""
+id: "charts-handling-dynamic-data"
 ---
 
 **Dynamic Data**: Ensure that the chart reflects changes in data: for example, if you are using a chart to track dynamic data like stock data, you need to ensure that the changes to the data are reflected in the chart. For this, you can use a [Timer Action](/learn/app-development/variables/timer-action/).

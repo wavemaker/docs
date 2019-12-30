@@ -1,6 +1,6 @@
 ---
 title: "Instagram"
-id: ""
+id: "instagram"
 ---
 ---
 

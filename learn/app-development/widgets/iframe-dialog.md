@@ -1,6 +1,6 @@
 ---
 title: "IFrame Dialog"
-id: ""
+id: "iframe-dialog"
 ---
 ---
 

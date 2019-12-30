@@ -1,6 +1,6 @@
 ---
 title: "Passing Parameters to Partial Page"
-id: ""
+id: "passing-parameters-partial-page"
 ---
 ---
 

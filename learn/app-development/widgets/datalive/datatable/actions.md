@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Actions"
-id: ""
+id: "actions"
 sidebar_label: "Actions"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Container"
-id: ""
+id: "container"
 ---
 
 **Container widget** is an empty box for flow content, a collection of more semantically marked-up content that may need to be grouped together with the class, lang and title attributes. It represents its children. The users can either place the content or include the partial pages.

@@ -1,6 +1,6 @@
 ---
 title: "Configuration Profiles"
-id: ""
+id: "configuration-profiles"
 ---
 ---
 

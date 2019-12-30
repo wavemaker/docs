@@ -1,6 +1,6 @@
 ---
 title: "WME Setup Guide - Custom Apps Capacity"
-id: ""
+id: "wme-setup-guide-custom-apps-capacity"
 sidebar_label: "Custom Apps Capacity"
 ---
 ---

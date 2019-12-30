@@ -1,6 +1,6 @@
 ---
 title: "Box Viewer Prefab"
-id: ""
+id: "box-viewer-prefab"
 ---
 ---
 

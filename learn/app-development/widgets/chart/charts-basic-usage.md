@@ -1,6 +1,6 @@
 ---
 title: "Charts - Basic Usage"
-id: ""
+id: "charts-basic-usage"
 ---
 
 **Step 1: Datasource & Type**

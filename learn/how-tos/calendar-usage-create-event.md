@@ -1,6 +1,6 @@
 ---
 title: "Calendar Usage - Create an Event"
-id: ""
+id: "calendar-usage-create-event"
 ---
 
 The procedure to create an event, when a user clicks on a particular date is described in the presentation below.

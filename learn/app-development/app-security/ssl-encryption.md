@@ -1,6 +1,6 @@
 ---
 title: "SSL Encryption"
-id: ""
+id: "ssl-encryption"
 ---
 ---
 

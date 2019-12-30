@@ -1,6 +1,6 @@
 ---
 title: "Custom Security using Google OAuth Prefab"
-id: ""
+id: "custom-security-using-google-oauth-prefab"
 ---
 
 In this section we will be seeing how to validate Google Login using Custom Security within WaveMaker App and to access Gmail API. Steps to attain this include:

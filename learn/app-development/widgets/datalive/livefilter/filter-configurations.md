@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Configurations"
-id: ""
+id: "filter-configurations"
 sidebar_label: "Configuration"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Using Barcode Scanner"
-id: ""
+id: "using-barcode-scanner"
 ---
 
 ### Overview

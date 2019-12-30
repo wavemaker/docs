@@ -1,6 +1,6 @@
 ---
 title: "Using JavaScript to loop a command"
-id: ""
+id: "using-javascript-loop-command"
 ---
 ---
 

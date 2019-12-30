@@ -1,6 +1,6 @@
 ---
 title: "Design Dialog"
-id: ""
+id: "design-dialog"
 ---
 
 ---

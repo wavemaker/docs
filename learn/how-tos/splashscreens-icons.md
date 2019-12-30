@@ -1,6 +1,6 @@
 ---
 title: "Setting Splashscreen Images and App Icons"
-id: ""
+id: "splashscreens-icons"
 ---
 ---
 

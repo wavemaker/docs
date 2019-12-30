@@ -1,6 +1,6 @@
 ---
 title: "Logout Action"
-id: ""
+id: "logout-action"
 ---
 ---
 

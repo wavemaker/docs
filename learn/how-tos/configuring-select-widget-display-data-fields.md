@@ -1,6 +1,6 @@
 ---
 title: "Configuring Select Widget using Display and Data Fields"
-id: ""
+id: "configuring-select-widget-display-data-fields"
 ---
 
 A Select widget can be used in various ways based on the source of data. Each type of data source needs a different approach. WaveMaker Select widget works in any one of the following ways:

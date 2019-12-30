@@ -1,6 +1,6 @@
 ---
 title: "App Migration from WaveMaker 9x to 10x"
-id: ""
+id: "app-migration-wavemaker-9x-10x"
 ---
 ---
 Upgrade of the WaveMaker MVC Framework from Angular 1.6 to Angular 7 results in changes to the way the app code is generated. The platform automatically migrates your existing app (built in WaveMaker 9x version) to WaveMaker 10 to generate the Angular 7 code base.

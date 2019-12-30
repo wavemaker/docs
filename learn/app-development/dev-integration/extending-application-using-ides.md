@@ -1,6 +1,6 @@
 ---
 title: "Extending the Application using IDEs"
-id: ""
+id: "extending-application-using-ides"
 ---
 ---
 

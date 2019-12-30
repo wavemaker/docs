@@ -1,6 +1,6 @@
 ---
 title: "How To: One-to-Many Relationship"
-id: ""
+id: "one-many-relationship"
 ---
 
 ## Parent-Child Relationship

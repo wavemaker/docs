@@ -1,6 +1,6 @@
 ---
 title: "Tree Use Case - Dynamic Tree"
-id: ""
+id: "tree-use-case-dynamic-tree"
 ---
 
 If you have a requirement, whereby the user decides the structure of the tree. For example, you are building a folder-file structure and the user decides how many folders and files are to be present in a tree. This section deals with such a situation.

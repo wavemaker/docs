@@ -1,6 +1,6 @@
 ---
 title: "Testing Subscription"
-id: ""
+id: "testing-subscription"
 ---
 
 How TosWorking Solutions for WaveMaker FeaturesSubscribe

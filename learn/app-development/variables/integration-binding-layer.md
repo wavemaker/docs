@@ -1,6 +1,6 @@
 ---
 title: "Data Integration Architecture"
-id: ""
+id: "integration-binding-layer"
 sidebar_label: "Integration - Binding Overview"
 ---
 ---

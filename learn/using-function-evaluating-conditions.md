@@ -1,6 +1,6 @@
 ---
 title: "Using function for evaluating conditions"
-id: ""
+id: "using-function-evaluating-conditions"
 ---
 
 While binding a widget to an expression using Use Expression option, in case expressions becoming complex, it is advisable to write an evaluation function for clarity and reusability. We will show how it can be done with the help of an example.

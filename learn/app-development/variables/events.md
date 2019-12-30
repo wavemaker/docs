@@ -1,6 +1,6 @@
 ---
 title: "Events"
-id: ""
+id: "events"
 ---
 Introducing Variable Events. Learn how it works in WaveMaker. 
 

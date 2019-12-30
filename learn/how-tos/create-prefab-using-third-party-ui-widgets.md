@@ -1,6 +1,6 @@
 ---
 title: "Create Prefab using Third Party UI Widgets"
-id: ""
+id: "create-prefab-using-third-party-ui-widgets"
 ---
 
 In this section, you will learn how to use third-party UI widgets in Studio. We do this with the help of Prefabs. We will use the example of integrating Lightbox image viewer in our application. It involves two steps – creating prefab and using the same. [![](/learn/assets/lbprefab_run2-1024x524.png)](/learn/assets/lbprefab_run2-1024x524.png)**Pre-Requisites**:

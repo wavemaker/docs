@@ -1,6 +1,6 @@
 ---
 title: "Passing Parameters to Pages"
-id: ""
+id: "passing-parameters-pages"
 ---
 ---
 

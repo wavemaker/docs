@@ -1,6 +1,6 @@
 ---
 title: WaveMaker Release Notes
-id: ""
+id: "wavemaker-release-notes"
 ---
 Find what's new in WaveMaker. See information related to bug fixes, new features and improvements from WaveMaker. 
 

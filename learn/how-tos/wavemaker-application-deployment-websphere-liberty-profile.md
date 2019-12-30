@@ -1,6 +1,6 @@
 ---
 title: "App Deployment to WebSphere (Liberty Profile)"
-id: ""
+id: "wavemaker-application-deployment-websphere-liberty-profile"
 sidebar_label: "WebSphere"
 ---
 ---

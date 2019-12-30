@@ -1,6 +1,6 @@
 ---
 title: "Change Icon for the Global Spinner"
-id: ""
+id: "change-icon-global-spinner"
 ---
 
 The icon that is displayed at the time of page load, data load etc., is defined by a _wm-spinner_ tag defined in the _index.html_. You can set it to any Font-Awesome icon using the corresponding icon class, for eg: "fa fa-hourglass-o fa-spin fa-lg" You can change it using the following steps:

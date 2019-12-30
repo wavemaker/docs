@@ -1,6 +1,6 @@
 ---
 title: "Tree Use Case - from Java Service"
-id: ""
+id: "tree-use-case-java-service"
 ---
 
 1. Create the source structure for Tree as a [**Java Service**](app-development/services/java-services/java-service/) by name _TreeData_

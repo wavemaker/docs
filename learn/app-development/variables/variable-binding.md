@@ -1,6 +1,6 @@
 ---
 title: "Variable Binding"
-id: ""
+id: "variable-binding"
 ---
 ---
 

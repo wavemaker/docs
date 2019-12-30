@@ -1,6 +1,6 @@
 ---
 title: "Creating a Registration Page"
-id: ""
+id: "creating-registration-page"
 ---
 ---
 

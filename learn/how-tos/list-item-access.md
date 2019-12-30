@@ -1,6 +1,6 @@
 ---
 title: "Accessing List Items"
-id: ""
+id: "list-item-access"
 ---
 
 1. **currentItem & currentItemWidgets**: The _currentItem_ bind object can be used to bind the current item of the list to any form widget placed within the list template. The currentItemWidgets can be accessed as the fourth argument of the events for widgets within the List. For example, button click event within List will result in the following code will capture the caption property of the Name label within a List:

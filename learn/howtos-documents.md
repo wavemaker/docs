@@ -1,5 +1,5 @@
 ---
-id: ""
+id: "howtos-documents"
 title: "How-to Wiki"
 ---
 Find the how to topics and look for sub-categories under each of the specified category. 

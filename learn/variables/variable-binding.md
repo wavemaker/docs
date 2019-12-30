@@ -1,6 +1,6 @@
 ---
 title: "Variable Binding"
-id: ""
+id: "variable-binding"
 ---
 
 WaveMaker leverages the concept of Data Binding by Angular, to bind Widgets with Variables. Widgets can be configured to bind the UI Elements to specific fields of the Data Model.

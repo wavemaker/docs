@@ -1,6 +1,6 @@
 ---
 title: "Using Search Widget within the Navbar"
-id: ""
+id: "using-search-widget-within-navbar"
 ---
 ---
 

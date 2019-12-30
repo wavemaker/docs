@@ -1,6 +1,6 @@
 ---
 title: "Rapid RBAC Support (Enterprise Version)"
-id: ""
+id: "rapid-rbac-support"
 ---
 
 ##### Enterprise Version post 10.0 release

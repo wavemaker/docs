@@ -1,6 +1,6 @@
 ---
 title: "Creating Themes"
-id: ""
+id: "creating-themes"
 sidebar_label: "Create Themes"
 ---
 ---

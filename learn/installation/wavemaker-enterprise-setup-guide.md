@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup Guide"
-id: ""
+id: "wavemaker-enterprise-setup-guide"
 sidebar_label: "Setup Guide"
 ---
 ---

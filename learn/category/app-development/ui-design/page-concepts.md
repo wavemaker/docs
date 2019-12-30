@@ -1,6 +1,6 @@
 ---
 title: "Page Concepts"
-id: ""
+id: "page-concepts"
 ---
 
 WaveMaker apps are a collection of pages. This document talks about

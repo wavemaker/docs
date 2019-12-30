@@ -1,6 +1,6 @@
 ---
 title: "Spinner"
-id: ""
+id: "spinner"
 ---
 
 **Spinner** widget controls the user interaction while the browser is performing some work in the background. It gives a feedback if the page is processing or, frozen, or just not working. This widget displays a loading icon with text.

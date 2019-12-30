@@ -1,6 +1,6 @@
 ---
 title: "FileUpload"
-id: ""
+id: "file-upload"
 ---
 
 The FileUpload widget can be used to let users upload files to your apps. WaveMaker **FileUpload** widget generates a **Java Service** to enable additional file processing functionality.

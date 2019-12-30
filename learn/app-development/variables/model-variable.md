@@ -1,6 +1,6 @@
 ---
 title: "Model Variable"
-id: ""
+id: "model-variable"
 ---
 ---
 

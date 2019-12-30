@@ -1,6 +1,6 @@
 ---
 title: "Working with SOAP Services"
-id: ""
+id: "working-with-soap-services"
 ---
 
 SOAP (Simple Object Access Protocol) is a standard XML protocol for exposing and calling web services. A SOAP service is described by a Web Services Definition Language (WSDL) document, often available through a URL from the service itself.

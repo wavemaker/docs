@@ -1,6 +1,6 @@
 ---
 title: "Generated REST APIs (API Designer)"
-id: ""
+id: "generated-rest-apis-api-designer"
 ---
 ---
 

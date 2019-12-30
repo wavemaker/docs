@@ -1,6 +1,6 @@
 ---
 title: "Notification Action"
-id: ""
+id: "notification-action"
 ---
 ---
 

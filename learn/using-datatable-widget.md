@@ -1,6 +1,6 @@
 ---
 title: "Using Data Table Widget"
-id: ""
+id: "using-datatable-widget"
 ---
 
 ### Overview

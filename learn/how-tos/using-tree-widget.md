@@ -1,6 +1,6 @@
 ---
 title: "Using Tree Widget"
-id: ""
+id: "using-tree-widget"
 ---
 
 We will build a tree using a simple static structure

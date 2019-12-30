@@ -1,6 +1,6 @@
 ---
 title: "ORM Artifacts"
-id: ""
+id: "orm-artifacts"
 ---
 ---
 

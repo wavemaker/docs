@@ -1,6 +1,6 @@
 ---
 title: "Mobile Build - Phonegap"
-id: ""
+id: "mobile-build-phonegap"
 ---
 ---
 
