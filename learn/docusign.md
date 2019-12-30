@@ -2,7 +2,7 @@
 title: "Docusign Prefab"
 id: ""
 ---
-
+---
 Docusign prefab allows user to enable electronic signature technology services using the Docusign API. Application using this prefab can allow it's users to electronically sign their documents for various purposes.
 
  
@@ -40,19 +40,4 @@ With the above steps done your Docusign prefab integration is complete. Now clic
 
 ![](/learn/assets/Screenshot-2018-12-15-at-1.23.11-PM.png)
 
-[9\. Custom Widgets - Prefabs](/learn/app-development/widgets/widget-library/#prefabs)
 
-- [9.1 Youtube](/learn/app-development/widgets/prefab/youtube/)
-- [9.2 Googlemaps](/learn/app-development/widgets/prefab/googlemaps/)
-    - [i. Layouts](#layouts)
-    - [ii. Features](#features)
-    - [iii. Usage Scenario](#usage-scenario)
-- [9.3 QRCode](/learn/app-development/widgets/prefab/qrcode/)
-- [9.4 OAuth Prefabs](/learn/app-development/widgets/prefab/oauth-prefabs/)
-    - [9.4.1 Box](/learn/app-development/widgets/prefab/oauth-prefabs/box/)
-    - [9.4.2 Facebook](/learn/app-development/widgets/prefab/oauth-prefabs/facebook/)
-    - [9.4.3 Google](/learn/app-development/widgets/prefab/oauth-prefabs/google/)
-    - [9.4.4 Instagram](learn/app-development/widgets/prefab/oauth-prefabs/instagram/)
-    - [9.4.5 LinkedIn](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/)
-- [9.5 Box Viewer](/learn/app-development/widgets/prefab/box-viewer/)
-- [9.6 Docusign](/learn/app-development/widgets/prefab/docusign/)
