@@ -386,14 +386,16 @@
             "how-to-widgets",
             "how-tos/passing-parameters-pages",
             "how-tos/passing-parameters-partial-page",
-            "how-tos/use-static-variable-pass-data-pages",            
+            "how-tos/use-static-variable-pass-data-pages",
+            "how-tos/customise-login-page",           
             "how-tos/incorporating-additional-icons",
             "how-tos/displaying-icon-color-based-upon-condition",
+            "how-tos/change-icon-global-spinner",
             "how-tos/changing-default-favicon",
             "how-tos/changing-app-logo",
             "how-tos/changing-page-title",
             "how-tos/customise-app-style",
-            "learn/how-tos/use-conditional-class-property",
+            "how-tos/use-conditional-class-property",
             "how-tos/customize-existing-theme",
             "how-tos/customizing-theme"
           ],
@@ -618,10 +620,13 @@
 
           "Prefabs":
           [
+            "how-tos/create-simple-prefab",
             "how-tos/create-prefab-using-third-party-ui-widgets",
+            "how-tos/create-simple-prefab",
             "how-tos/create-prefab-using-d3-nvd3-charts",
             "how-tos/create-prefab-using-d3-library-datamaps",
-            "how-tos/create-prefab-using-jquery-plugin"
+            "how-tos/create-prefab-using-jquery-plugin",
+            "how-tos/create-prefab-using-angular-module"
           ]
         
   },
@@ -736,12 +741,13 @@
 
     "Container":
     [
-          "app-development/widgets/container/accordion",
-          "app-development/widgets/container/container", 
-          "app-development/widgets/container/panel",
-          "app-development/widgets/container/tabs",
-          "app-development/widgets/container/tile",
-          "app-development/widgets/container/wizard"
+        "app-development/widgets/container/grid-layout",   
+        "app-development/widgets/container/accordion",
+        "app-development/widgets/container/container", 
+        "app-development/widgets/container/panel",
+        "app-development/widgets/container/tabs",
+        "app-development/widgets/container/tile",
+        "app-development/widgets/container/wizard"
     ],
 
     "Basic Widgets":

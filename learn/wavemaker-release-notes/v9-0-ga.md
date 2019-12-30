@@ -56,7 +56,7 @@ For more information, see [Product Walkthrough](/learn/app-development/wavemaker
 ![(/learn/assets/90_actions.png)](/learn/assets/90_actions.png)  
 
 For more information, see [Variables](/learn/app-development/variables/variables) and 
-[Actions](/learn/app-development/variables/actions).
+[Actions](/learn/app-development/variables/variables-actions)
 
 ### OAUTH Rest Integration
 
@@ -91,7 +91,7 @@ For more information, see [Working with Database Schema](/learn/app-development/
     *   All new apps will be deployed to JDK 1.8 runtime environment.
     *   Apps already deployed to WaveMaker Demo Cloud will be migrated to JDK 1.8 runtime environment, automatically.
     *   Apps already deployed to AWS/Azure will continue to work. These will not be migrated.
-    *   Redeployment of apps already deployed to AWS/Azure will require re-configuration of the Live/Stage Phase and a manual migration of data. [See here for more](/learn/app-development/deployment/migration-deployed-apps/).
+    *   Redeployment of apps already deployed to AWS/Azure will require re-configuration of the Live/Stage Phase and a manual migration of data. [See here for more](/learn/app-development/deployment/manage-deployed-apps).
 *   **Database**: The default database workspace has been moved to **MariaDB**.
 
 ### Widget Enhancements
@@ -119,7 +119,7 @@ For more information, see [Working with Database Schema](/learn/app-development/
 1.  Renaming Actions will not change the associated binding. You have to manually change the bindings.
 2.  Deleting a service from a project and if a variable was already created for that service, then the Variable dialog is not responsive. To overcome this you need to create another variable and delete the corresponding variable.
 3.  When re-importing a Database service, you may decide not to include few tables included in the earlier import. If you have variables created for those dropped tables, you need to manually delete them from the Variable dialog.
-4.  Redeployment of apps already deployed to AWS/Azure will fail until the phase is re-configured and data migrated. [See here for more](/learn/app-development/deployment/migration-deployed-apps/).
+4.  Redeployment of apps already deployed to AWS/Azure will fail until the phase is re-configured and data migrated. [See here for more](/learn/app-development/deployment/manage-deployed-apps).
 
 ## Technology Stack
 ---

@@ -14,19 +14,19 @@ New look-n-feel, to accommodate sleek and user-friendly editor, canvas actions, 
 
 ### Hybrid Mobile Apps
 
-Now it is possible to build hybrid mobile apps using WaveMaker Studio. Hybrid Mobile Apps are easy way to create apps which can take advantage of device features like camera, geolocation etc. using Apache Cordova and creating a platform specific installer. WaveMaker for Hybrid Mobile apps is in its ALPHA version with support for building Android based apps and will be enhanced in the upcoming releases. [#DOC](/learn/mobile-features/).
+Now it is possible to build hybrid mobile apps using WaveMaker Studio. Hybrid Mobile Apps are easy way to create apps which can take advantage of device features like camera, geolocation etc. using Apache Cordova and creating a platform specific installer. WaveMaker for Hybrid Mobile apps is in its ALPHA version with support for building Android based apps and will be enhanced in the upcoming releases. [#DOC](/learn/hybrid-mobile/building-hybrid-mobile-apps).
 
 ### Project Collaboration
 
-Project Collaboration is easier with the new Studio Project Listing & Activity page. WMO users will now be directed to this page after login, instead of EDN of the previous versions. You can collaborate with other developers – by sharing projects, viewing activities, notifications and also managing the deployed apps. [#DOC](/learn/team-collaboration/).
+Project Collaboration is easier with the new Studio Project Listing & Activity page. WMO users will now be directed to this page after login, instead of EDN of the previous versions. You can collaborate with other developers – by sharing projects, viewing activities, notifications and also managing the deployed apps. [#DOC](/learn/app-development/dev-integration/developer-collaboration).
 
 ### Deploy to AWS
 
-Introducing the option to **Deploy apps to your Amazon Web Services (AWS) account**. Deployment of apps is essential to enable public access to your apps post development phase. Now you have option to deploy them onto AWS account that you own and manage. WaveMaker Demo Cloud option is also available, but for a limited period. [#DOC](/learn/deployment/).
+Introducing the option to **Deploy apps to your Amazon Web Services (AWS) account**. Deployment of apps is essential to enable public access to your apps post development phase. Now you have option to deploy them onto AWS account that you own and manage. WaveMaker Demo Cloud option is also available, but for a limited period. [#DOC](/learn/app-development/deployment/deployment-to-aws).
 
 ### Push to Repo of your choice
 
-**Version Control** now enables you to **Push to External Repo**. Using this feature, you can push the app source code to your accounts at _GitHub_, _Stash_ or _Bitbucket_. This essentially allows user who have built applications using WaveMaker to own the source code by pushing it any public or SaaS repository of their choice. [#DOC](/learn/team-collaboration/#vcs).
+**Version Control** now enables you to **Push to External Repo**. Using this feature, you can push the app source code to your accounts at _GitHub_, _Stash_ or _Bitbucket_. This essentially allows user who have built applications using WaveMaker to own the source code by pushing it any public or SaaS repository of their choice. [#DOC](/learn/app-development/dev-integration/developer-collaboration#code-sharing---vcs).
 
 ## Enhancements
 ---
