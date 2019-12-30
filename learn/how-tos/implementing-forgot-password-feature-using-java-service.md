@@ -60,11 +60,11 @@ public String sendEmail(String toEmailAddress) {
             // Create email message
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(userName));
-            String\[\] recipientList = toEmailAddress.split(",");
-            InternetAddress\[\] recipientAddress = new InternetAddress\[recipientList.length\];
+            String[] recipientList = toEmailAddress.split(",");
+            InternetAddress[] recipientAddress = new InternetAddress[recipientList.length];
             int counter = 0;
             for (String recipient: recipientList) {
-                recipientAddress\[counter\] = new InternetAddress(recipient.trim());
+                recipientAddress[counter] = new InternetAddress(recipient.trim());
                 counter++;
             }
             message.setRecipients(Message.RecipientType.TO, recipientAddress);
