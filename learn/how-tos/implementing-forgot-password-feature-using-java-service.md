@@ -93,7 +93,7 @@ public String getPassword()
 ## Update Query
 
 ```
-update LOGIN set PASSWORD = :pwd where USER\_NAME = :name;
+update LOGIN set PASSWORD = :pwd where USER_NAME = :name;
 ```
 
 ## JavaScript Function
