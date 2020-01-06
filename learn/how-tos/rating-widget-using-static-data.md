@@ -15,8 +15,8 @@ id: ""
 3. From **Style** tab,  you can set the Icon color. [![](/learn/assets/rating_usage_style.png)](/learn/assets/rating_usage_style.png)
 4. Preview the app to see the Rating widget in action
 
-[Rating Widget Use Cases](/learn/app-development/widgets/form-widgets/rating-widget/#use-cases)
+## See Also
 
-- [1\. How to build Rating widget from static data](#)
-- [2\. How to build Rating widget from variable data](/learn/how-tos/rating-widget-using-variable/)
-- [3\. How to build an interactive rating widget](/learn/how-tos/rating-widget-interactive/)
+[Rating Widget Use Cases](/learn/app-development/widgets/form-widgets/rating-widget)  
+[How to build Rating widget from variable data](/learn/how-tos/building-rating-widget-using-variable)  
+[How to build an interactive rating widget](/learn/how-tos/rating-widget-interactive/)  

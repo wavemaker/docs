@@ -99,12 +99,12 @@ To ensure that the password field is secure, it is advisable to store it in an e
 This method is useful for enforcing two-way encryption, that is, in addition to the SSL communication, you can encrypt the password before sending it to the backend. In case you want to use the one-way digest method of scrambling the encrypted value to produce a digest we suggest you follow the steps given in [this document](/learn/how-tos/support-password-encryption/).
 :::
 
-- [Create a Java Service](app-development/services/java-services/java-service/) called MD5 Encryption.
+- [Create a Java Service](/learn/app-development/services/java-services/java-service/) called MD5 Encryption.
 - Add the following to the Java Service code. Here we are using an MD5 hashing algorithm to generate a checksum for the password field, refer here for more [details](http://www.mkyong.com/java/java-md5-hashing-example/). Ensure that the length of the password column in the database is greater than the length of the result from the encryption algorithm used, in this case, it should be greater than 32. 
 
 ### Imported files
 
-```    
+```java 
 import org.apache.commons.codec.digest.DigestUtils;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
@@ -114,7 +114,7 @@ import java.util.logging.Level;
 ### Encrypt password 
 
 Use the following method to encrypt the password:
-```    
+```java  
 public String md5Spring(String text) {
         String digest = null;
     try {
@@ -144,7 +144,7 @@ public String md5Spring(String text) {
 
 - The Password field needs to be replaced with the encrypted one returned from the above Java service. For this, we will be using the `Before Service Call` event of the Live Form, we are invoking the Java service variable and setting the password field to the value returned from the Java Service.
 
-```    
+```js    
 Partial.UserDetailsLiveForm1Beforeservicecall = function($event, $operation, $data, options) {
     if ($data.password != $data.confirm_password) {
         Partial.Actions.password_error.invoke({

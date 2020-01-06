@@ -249,7 +249,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 ## Widget: Rating
 
 *   [How to build Rating widget from static data](/learn/how-tos/rating-widget-using-static-data/)
-*   [How to build Rating widget from variable data](/learn/how-tos/rating-widget-using-variable/)
+*   [How to build Rating widget from variable data](/learn/how-tos/building-rating-widget-using-variable/)
 *   [How to build an interactive rating widget](/learn/how-tos/rating-widget-interactive/)
 
 ## Widget: Select

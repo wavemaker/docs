@@ -55,5 +55,6 @@ You can use the Rating widget to capture the input from the user as Widgets.rati
 
 - [How to build Rating widget from static data](/learn/how-tos/rating-widget-using-static-data/)
 - [How to build Rating widget from static variable data](/learn/how-tos/rating-widget-using-static-variable/)
+- [how-tos/building-rating-widget-using-variable](/learn/how-tos/building-rating-widget-using-variable)
 - [How to build an interactive rating widget](/learn/how-tos/rating-widget-interactive/)
 

@@ -109,7 +109,7 @@ Page.Variables.goToPage_Login.navigate();
 
 Implement a custom Authentication Service which will take the JWT access token , ID token and create a WMUser Object.
 
-1. [Create a Java Service](app-development/services/java-services/java-service/) - CognitoUPoolLogin.
+1. [Create a Java Service](/learn/app-development/services/java-services/java-service/) - CognitoUPoolLogin.
 2. Add the import statements as following.
 
 ```js

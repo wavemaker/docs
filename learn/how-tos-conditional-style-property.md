@@ -2,20 +2,23 @@
 title: "How to use Conditional Style Property"
 id: ""
 ---
-
+---
 The conditional style settings allow you to bind expressions to the style property. The conditional property applies to the widgets specified below, and it is similar to the Conditional Class property.
 
-**Syntax:**
+## Syntax
+
 ```
 {‘CSSpropertyName’:  ‘valueExpression’}
 ```
-**Example:**
+## Example
+
 ```
 {‘color’: ‘red’}
 {‘color’: Widgets.colorPicker1.datavalue}
 {‘background’: Page.Variables.MyVariable.dataSet.status === ‘pending’ ? ‘yellow’: ‘green’}
 {‘color’: ‘red’, ‘font-size’: ‘30px’, ‘background’: Page.Variables.MyVariable.dataSet.status === ‘pending’? ‘blue’: ‘green’}
 ```
+
 The property adds to the widget that has conditional class property.
 
 - Anchor
@@ -28,11 +31,11 @@ The property adds to the widget that has conditional class property.
 - Panel
 - Tile
 
-The editable options being inline or dialog-based. Data Table provides a tabular view for database Entities or API response data.[#docs](/learn/data-table/)
+The editable options being inline or dialog-based. Data Table provides a tabular view for database Entities or API response data.[#docs](/learn/app-development/services/database-services/database-services)
 
 Database Enhancements **Working with databases**:
 
-- Database Import has been renamed to **Connect to Database,** to clearly indicate that the database schema is imported into WaveMaker applications by directly connecting to the database. [#docs](/learn/db-services/)
+- Database Import has been renamed to **Connect to Database,** to clearly indicate that the database schema is imported into WaveMaker applications by directly connecting to the database. [#docs](/learn/app-development/services/database-services/working-with-databases)
 - **Create Database** dialog now includes option to import of a script file.
 - Database columns can be configured to be User defined, Server defined and DB defined types
     - User defined properties are passed on from the frontend layer to the backend services through API.
