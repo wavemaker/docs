@@ -10,7 +10,7 @@ Data Table behavior can be customized with the help of the call-back events. The
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-|**On Row Click** | This event will be called when a row in Data Table is clicked. <br> **Note** this event can happen when selecting or deselecting a row. |
+|**On Row Click** | This event will be called when a row in Data Table is clicked. <br> **Note**: This event can happen when selecting or deselecting a row. |
 
 ```js
 Page.[gridname]Rowclick = function($event, widget, row) {
@@ -89,7 +89,7 @@ Page.[gridname]Beforerowdelete = function ($event, widget, row, options) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| **On Column Select** | This event will be called when a column in Data Table is selected. <br> **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
+| **On Column Select** | This event will be called when a column in Data Table is selected. <br><br> **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
 
 ```js
 Page.[gridname]Columnselect = function($event, widget, $data) {
@@ -104,7 +104,7 @@ Page.[gridname]Columnselect = function($event, widget, $data) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| **On Column Deselect** | This event will be called when a column in Data Table is deselected. <br> **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
+| **On Column Deselect** | This event will be called when a column in Data Table is deselected. <br><br> **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
 
 ```js
 Page.[gridname]Columndeselect = function($event, widget, $data) {
@@ -137,7 +137,7 @@ Page.[gridname]Rowdelete = function($event, widget, row ) {
 | **On Before Record Insert** | This event will be called before a new record is inserted in the underlying data entity. 
 
 :::note
-- this event is triggered for _Editable Data Table with insert action defined_. Use Case: Populate the date modified or modified user to the current date or logged in user
+- This event is triggered for _Editable Data Table with insert action defined_. Use Case: Populate the date modified or modified user to the current date or logged in user
 - For Data Table with Form option, this event will be available in the corresponding Form widget and not with Data Table.
 :::
 
@@ -161,7 +161,7 @@ Page.[gridname]Beforerowinsert = function($event, widget, row, options) {
 | **On Record Insert** | This event will be called after a new record is inserted in the underlying data entity. 
 
 :::note
-- this event is triggered only for _Editable Data Table with insert action defined_.
+- This event is triggered only for _Editable Data Table with insert action defined_.
 - For Data Table with Form option, this event will be available in the corresponding Form widget and not with Data Table.
 :::
 
@@ -179,7 +179,7 @@ Page.[gridname]Rowinsert = function($event, widget, row) {
 | **On Before Record Update** | This event will be called before a record is updated to the underlying data entity. |
 
 :::note
-- this event is triggered only for _Editable Data Tables with update action defined_.
+- This event is triggered only for _Editable Data Tables with update action defined_.
 - For Data Table with Form option, this event will be available in the corresponding Form widget and not with Data Table.
 :::
 
@@ -220,7 +220,7 @@ Page.[gridname]Rowupdate = function($event, widget, row) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| **On Before Data Render** | This event will be called the before the data is rendered in the Data Table. <br> **Note** the data accessible is restricted to the current page of the Data Table. Use Case: If you want to change the display value based on the values of a column |
+| **On Before Data Render** | This event will be called the before the data is rendered in the Data Table. <br><br> **Note**: The data accessible is restricted to the current page of the Data Table. Use Case: If you want to change the display value based on the values of a column |
 
 ```js
 Page.[gridname]Setrecord = function($event, data, columns) {
@@ -446,7 +446,11 @@ Page.Widgets.[gridname].redraw(true);
     // The parameter can be index or object of row
 ```
 
-- To deselect a row: Note: deselect will work only for data table with multiselect enabled on it.
+- To deselect a row:
+
+:::note
+Deselect will work only for data table with multiselect enabled on it.
+:::
 
 ```js
     Page.Widgets.[gridname].deselectItem(1);
