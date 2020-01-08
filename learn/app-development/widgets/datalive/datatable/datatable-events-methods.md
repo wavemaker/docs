@@ -10,7 +10,7 @@ Data Table behavior can be customized with the help of the call-back events. The
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-|On Row Click | This event will be called when a row in Data Table is clicked. <br> **Note** this event can happen when selecting or deselecting a row. |
+|**On Row Click** | This event will be called when a row in Data Table is clicked. <br> **Note** this event can happen when selecting or deselecting a row. |
 
 ```js
 Page.[gridname]Rowclick = function($event, widget, row) {
@@ -24,7 +24,7 @@ Page.[gridname]Rowclick = function($event, widget, row) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Row Select | This event will be called when a row from Data Table is selected |
+|**On Row Select**| This event will be called when a row from Data Table is selected |
 
 ```js
 Page.[gridname]Select = function($event, widget, row) { 
@@ -38,7 +38,7 @@ Page.[gridname]Select = function($event, widget, row) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Row Deselect | This event will be called when a row from Data Table is deselected. |
+|**On Row Deselect**| This event will be called when a row from Data Table is deselected. |
 
 ```js
 Page.[gridname]Deselect = function($event, widget, row) {
@@ -51,7 +51,7 @@ Page.[gridname]Deselect = function($event, widget, row) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Data Sort | This event will be called when the Data Table header is clicked to sort by a particular column. |
+|**On Data Sort**| This event will be called when the Data Table header is clicked to sort by a particular column. |
 
 ```js
 Page.[gridname]Sort = function($event, widget, $data) {
@@ -65,7 +65,7 @@ Page.[gridname]Sort = function($event, widget, $data) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Header Click | This event will be called when the Data Table header is clicked. |
+| **On Header Click** | This event will be called when the Data Table header is clicked. |
 
 ```js
 Page.[gridname]Headerclick = function($event, widget, column) {
@@ -79,7 +79,7 @@ Page.[gridname]Headerclick = function($event, widget, column) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-|On Before Row Delete | This event is called before a record is deleted in a table.|
+|**On Before Row Delete** | This event is called before a record is deleted in a table.|
 
 ```js
 Page.[gridname]Beforerowdelete = function ($event, widget, row, options) {
@@ -89,7 +89,7 @@ Page.[gridname]Beforerowdelete = function ($event, widget, row, options) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Column Select | This event will be called when a column in Data Table is selected. <br> **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
+| **On Column Select** | This event will be called when a column in Data Table is selected. <br> **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
 
 ```js
 Page.[gridname]Columnselect = function($event, widget, $data) {
@@ -104,7 +104,7 @@ Page.[gridname]Columnselect = function($event, widget, $data) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Column Deselect | This event will be called when a column in Data Table is deselected. <br> **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
+| **On Column Deselect** | This event will be called when a column in Data Table is deselected. <br> **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
 
 ```js
 Page.[gridname]Columndeselect = function($event, widget, $data) {
@@ -117,7 +117,7 @@ Page.[gridname]Columndeselect = function($event, widget, $data) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Record Delete | This event will be called when a record is deleted from the underlying data entity. 
+| **On Record Delete** | This event will be called when a record is deleted from the underlying data entity. 
 
 :::note
 - This event will be triggered for _Editable Data Table with delete action defined_.
@@ -134,7 +134,7 @@ Page.[gridname]Rowdelete = function($event, widget, row ) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Before Row Insert | This event will be called before a new record is inserted in the underlying data entity. 
+| **On Before Record Insert** | This event will be called before a new record is inserted in the underlying data entity. 
 
 :::note
 - this event is triggered for _Editable Data Table with insert action defined_. Use Case: Populate the date modified or modified user to the current date or logged in user
@@ -158,7 +158,7 @@ Page.[gridname]Beforerowinsert = function($event, widget, row, options) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Row Insert | This event will be called after a new record is inserted in the underlying data entity. 
+| **On Record Insert** | This event will be called after a new record is inserted in the underlying data entity. 
 
 :::note
 - this event is triggered only for _Editable Data Table with insert action defined_.
@@ -176,13 +176,12 @@ Page.[gridname]Rowinsert = function($event, widget, row) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Before Row Update | This event will be called before a record is updated to the underlying data entity. |
+| **On Before Record Update** | This event will be called before a record is updated to the underlying data entity. |
 
 :::note
 - this event is triggered only for _Editable Data Tables with update action defined_.
 - For Data Table with Form option, this event will be available in the corresponding Form widget and not with Data Table.
 :::
-
 
 ```js
 Page.[gridname]Beforerowupdate = function($event, widget, row, options) {
@@ -202,12 +201,13 @@ Page.[gridname]Beforerowupdate = function($event, widget, row, options) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On After Row Update | This event will be called after a record is updated to the underlying data entity.|
+| **On Record Update** | This event will be called after a record is updated to the underlying data entity.|
 
 :::note
-- this event is triggered only for _Editable Data Tables with update action defined_.
+- This event is triggered only for _Editable Data Tables with update action defined_.
 - For Data Table with Form option, this event will be available in the corresponding Form widget and not with Data Table.
 :::
+
 
 ```js
 Page.[gridname]Rowupdate = function($event, widget, row) {
@@ -220,7 +220,7 @@ Page.[gridname]Rowupdate = function($event, widget, row) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Before Data Render | This event will be called the before the data is rendered in the Data Table. <br> **Note** the data accessible is restricted to the current page of the Data Table. Use Case: If you want to change the display value based on the values of a column |
+| **On Before Data Render** | This event will be called the before the data is rendered in the Data Table. <br> **Note** the data accessible is restricted to the current page of the Data Table. Use Case: If you want to change the display value based on the values of a column |
 
 ```js
 Page.[gridname]Setrecord = function($event, data, columns) {
@@ -240,25 +240,7 @@ Page.[gridname]Setrecord = function($event, data, columns) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-|On Data Render | This event will be called when the data is rendered in the Data Table. **Note**: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to add a class to a particular row. |
-
-```js
-Page.[gridname]Datarender = function(widget, data) {
-        //data: data has the data to be rendered in the current page of data table
-
-        //widget.datagridElement has the data table jquery element
-        widget.datagridElement.find('tr.app-datagrid-row').each(function(index) {
-            //Loop through the rows. Add class admin for users having role as adminrole
-            if (data[index].role === 'adminrole') {
-                $(this).addClass('admin');
-            }
-        });
-    };
-```
-
-| Event | Trigger and JavaScript Usage |
-| --- | --- |
-| On Before Form Render | (Only for Data Table with Quick-Edit and Inline-Edit) <br> This event is fired on the edit of a row and before the inline form is rendered. |
+| **On Before Form Render** | (Only for Data Table with Quick-Edit and Inline-Edit) <br> This event is fired on the edit of a row and before the inline form is rendered. |
 
 :::note 
 This gives access to data to be displayed in the form Use Case: You can use this event to edit values to be displayed in the form. Edit also can be prevented in form based on some condition. 
@@ -266,28 +248,28 @@ This gives access to data to be displayed in the form Use Case: You can use this
 
 ```js
 Page.[gridname]Beforeformrender = function($event, 
-widget, $rowData, $operation) { 
-   //$rowData: $rowData has the data of the row being edited/ inserted 
+widget, row, $operation) { 
+   //row: row has the data of the row being edited/ inserted 
    //$operation: $operation value is 'new' for new row and 'edit' when row being edited 
-   //If $rowData has role admin, show error and stop edit 
-   if ($rowData.role === 'admin') { 
+   //If row has role admin, show error and stop edit 
+   if (row.role === 'admin') { 
        wmToaster.show('error', 'error', 'Admin row can not be edited'); 
        return false; //Returning false will stop the editing and form is not rendered 
    } 
    //If city is not present in the row being edited, set default city 
-   if (!$rowData.city) { 
-       $rowData.city = 'New York'; 
+   if (!row.city) { 
+       row.city = 'New York'; 
    } 
    //For insert, set default role as 'user' 
    if ($operation === 'new') { 
-       $rowData.role = 'user'; 
+       row.role = 'user'; 
    } 
 };
 ```
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Form Render | This event is accessible for Data Table with `Quick-Edit` and `Inline-Edit` templates. <br> This event is called after the inline form is rendered. |
+| **On Form Render** | This event is accessible for Data Table with `Quick-Edit` and `Inline-Edit` templates. <br> This event is called after the inline form is rendered. |
 
 :::note
 This gives access to the widgets in the form. Use Case: Individual widget can be disabled based on a condition.
@@ -305,7 +287,7 @@ formWidgets, $operation) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Error | (ONLY for Data Table with Quick-Edit and Inline-Edit) <br> This event will be called after the edit/insert/delete operation returns a failure response |
+| **On Error** | (ONLY for Data Table with Quick-Edit and Inline-Edit) <br> This event will be called after the edit/insert/delete operation returns a failure response |
 
 ```js
 Page.[gridName]Error = function($event, widget,
@@ -317,7 +299,7 @@ $data, $operation) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Before Export | (ONLY for Data Table with Export Format selected) <br> This event will be called before downloading the file. Any data changes like file format changes, field expression, size changes etc can be performed here. Returning false from the script will stop the file download. |
+| **On Before Export** | (ONLY for Data Table with Export Format selected) <br> This event will be called before downloading the file. Any data changes like file format changes, field expression, size changes etc can be performed here. Returning false from the script will stop the file download. |
 
 ```js
 Page.hrdbDeptTable1Beforeexport = function (widget, $data) { 
@@ -338,7 +320,7 @@ Page.hrdbDeptTable1Beforeexport = function (widget, $data) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| On Before Filter | This event will be called when filter is applied on Data Table and before the search is triggered by the Data Table. Search values can be modified in this method. If false is returned from the method, Data Table filter will be stopped. |
+| **On Before Filter** | This event will be called when filter is applied on Data Table and before the search is triggered by the Data Table. Search values can be modified in this method. If false is returned from the method, Data Table filter will be stopped. |
 
 ```js
 Page.[gridname]Beforefilter = function($event, widget, columns) {
@@ -350,8 +332,26 @@ Page.[gridname]Beforefilter = function($event, widget, columns) {
 ```
 
 | Event | Trigger and JavaScript Usage |
+| --- | --- |
+|**On Data Render** | This event will be called when the data is rendered in the Data Table. <br> **Note**: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to add a class to a particular row. |
+
+```js
+Page.[gridname]Datarender = function(widget, data) {
+        //data: data has the data to be rendered in the current page of data table
+
+        //widget.datagridElement has the data table jquery element
+        widget.datagridElement.find('tr.app-datagrid-row').each(function(index) {
+            //Loop through the rows. Add class admin for users having role as adminrole
+            if (data[index].role === 'adminrole') {
+                $(this).addClass('admin');
+            }
+        });
+    };
+```
+
+| Event | Trigger and JavaScript Usage |
 |---|---|
-|On Pagination Change| This event is called on change of pagination. |
+|**On Pagination Change**| This event is called on change of pagination. |
 
 ```js
 Page.[gridName]Setrecord = function ($event, widget, data, pageInfo) {
@@ -426,7 +426,7 @@ Page.Widgets.[gridname].redraw(true);
 - To change value of a field which is in edit mode (applicable to inline and quick edit data tables alone):
 
 ```js
-    Page.Widgets.[gridname].formfields.[columnname].value = 'Engineering 1'; 
+    Page.Widgets.[gridname].formfields.[columnname].widget.datavalue = 'Engineering 1'; 
     // Sets ‘Engineering 1’ to the specified column edit field 
     //Note: This will work only on click of edit on a row.
 ```
@@ -486,12 +486,12 @@ Inline editing can be enabled for a Data Table when bound to a Web Service/Java 
 - To _On Record Insert_:
 
 ```js
-Page.[gridName]Rowinsert = function($event, widget, $rowData) {
-        //$rowData: $rowData has the data of the row being inserted
-        //$rowData can be modified here
-        $rowData.dateInserted = Date.now();
-        //Set the input as $rowData for variable
-        Page.Variables.[insertVariable].setInput($rowData);
+Page.[gridName]Rowinsert = function($event, widget, row) {
+        //row: row has the data of the row being inserted
+        //row can be modified here
+        row.dateInserted = Date.now();
+        //Set the input as row for variable
+        Page.Variables.[insertVariable].setInput(row);
         //Insert the data by invoking the variable
         Page.Variables.[insertVariable].invoke({}, function() {
         //On success, call the refreshData on method to get the refreshed data
@@ -503,12 +503,12 @@ Page.[gridName]Rowinsert = function($event, widget, $rowData) {
 - To On Record Update:
 
 ```js
-Page.[gridName]Rowupdate = function($event, widget, $rowData) {
-    //$rowData: $rowData has the data of the row being updated
-    //$rowData can be modified here
-    $rowData.dateModified = Date.now();
-    //Set the input as $rowData for variable
-    Page.Variables.[updateVariable].setInput($rowData);
+Page.[gridName]Rowupdate = function($event, widget, row) {
+    //row: row has the data of the row being updated
+    //row can be modified here
+    row.dateModified = Date.now();
+    //Set the input as row for variable
+    Page.Variables.[updateVariable].setInput(row);
     //Update the data by invoking the variable
     Page.Variables.[updateVariable].invoke({}, function() {
         //On success, call the refreshData on method to get the refreshed data
@@ -520,10 +520,10 @@ Page.[gridName]Rowupdate = function($event, widget, $rowData) {
 - On Record Delete:
 
 ```js
-Page.[gridName]Rowdelete = function($event, widget, $rowData) {
-        //$rowData: $rowData has the data of the row being deleted
-        //Set the input as $rowData for variable
-        Page.Variables.[deleteVariable].setInput($rowData);
+Page.[gridName]Rowdelete = function($event, widget, row) {
+        //row: row has the data of the row being deleted
+        //Set the input as row for variable
+        Page.Variables.[deleteVariable].setInput(row);
         //Delete the data by invoking the variable
         Page.Variables.[deleteVariable].invoke({}, function() {
             //On success, call the refreshData on method to get the refreshed data
