@@ -440,7 +440,9 @@
             "how-tos/accessing-rest-apis-java-service",
             "how-tos/scheduling-java-service",
             "app-development/services/database-services/orm-artifacts/#custom-query-syntax",
-            "how-tos/pre-post-processing-db-service-apis"
+            "how-tos/pre-post-processing-db-service-apis",
+	          "how-tos/camunda-wavemaker-app-integration"
+
           ],
 
           "Variables":
