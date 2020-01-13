@@ -1,7 +1,7 @@
 ---
 title: "Add workflow into WaveMaker App by integrating with Camunda BPM"
 id: "camunda-wavemaker-app-integration"
-sidebar_label: "Camunda Integration with WaveMaker App"
+sidebar_label: "Design a workflow in Camunda BPM and integrate into a WaveMaker app"
 ---
 ---
 
