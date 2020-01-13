@@ -85,6 +85,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to schedule a Java Service](/learn/how-tos/scheduling-java-service/)
 *   [Custom Query Syntax to access DB Service APIs from Java Service](/learn/app-development/services/database-services/orm-artifacts/#custom-query-syntax)
 *   [How to accomplish Pre-Post Processing for a DB Service APIs](/learn/how-tos/pre-post-processing-db-service-apis/)
+*   [How to design a workflow in Camunda BPM and integrate into a WaveMaker app](/learn/how-tos/camunda-wavemaker-app-integration/)
 
 ## Variable Usage
 ---
@@ -105,6 +106,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to integrate Amazon Cognito for User Authentication](/learn/how-tos/integrating-amazon-cognito-user-authentication/)
 *   [How to integrate Jasper Reports into a WaveMaker App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/)
 *   [How to generate PDF Files using Jasper Reports](/learn/how-tos/generate-pdf-file-using-jasper-reports/)
+
 
 ---
 
