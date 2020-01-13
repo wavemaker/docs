@@ -13,8 +13,7 @@ For demonstration purpose, we will use Employee Leave Management application. Th
 
 ### STEP 1 – CAMUNDA SETUP
 
-1. About Camunda
-  Camunda BPM is a light-weight, open-source platform for Business Process Management. Camunda is a Java-based framework supporting BPMN for workflow and process automation, CMMN for Case Management and DMN for Business Decision Management.
+1. Camunda BPM is a light-weight, open-source platform for Business Process Management. Camunda is a Java-based framework supporting BPMN for workflow and process automation, CMMN for Case Management and DMN for Business Decision Management.
 
 1. Getting Started With Camunda
    https://docs.camunda.org/get-started/quick-start/
@@ -28,6 +27,7 @@ For demonstration purpose, we will use Employee Leave Management application. Th
 
 1. Create DMN(Decision Management) table for setting up rules
     Below is the decision table created using the Camunda DMN.
+
     [![lftr_sel](/learn/assets/business_rules.png)](/learn/assets/business_rules.png)
 
 1. Create a REST End-point for Camunda WorkFlow Engine
@@ -58,9 +58,10 @@ For demonstration purpose, we will use Employee Leave Management application. Th
 
 ### STEP 2 – Build Leave Management WaveMaker App
 
-In leave management application, employee will apply for the leaves entering start date & end date. Note: Initial leave balance for all the employees will be 10. Depending on the applied leave by employee Camunda workflow will process it and request will go to the respected person i.e. Manager, Director or HR. 
-	
-    Create the UI in WaveMaker for Leave Management application: 
+In leave management application, employee will apply for the leaves entering start date & end date. Note: Initial leave balance for all the employees will be 10. Depending on the applied leave by employee Camunda workflow will process it and request will go to the respected person i.e. Manager, Director or HR.
+
+#### Create the UI in WaveMaker for Leave Management application: 
+
 [![lftr_sel](/learn/assets/leavemgmt_app.png)](/learn/assets/leavemgmt_app.png)
 
 ### STEP 3 – Integrate Camunda REST APIs for Business Rules Evaluation
@@ -73,7 +74,7 @@ Import the Camunda REST Web Service from WaveMaker’s Web Service section.
 Note: Please make sure to add Content-Type value as application/json in Header Params.
 
 [![lftr_sel](/learn/assets/importcamunda_api.png)](/learn/assets/importcamunda_api.png)
-            
+
 #### Implement the Pre-processing service before incoking Database API
 
 ```java
