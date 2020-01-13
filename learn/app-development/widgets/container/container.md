@@ -2,6 +2,7 @@
 title: "Container"
 id: ""
 ---
+---
 
 **Container widget** is an empty box for flow content, a collection of more semantically marked-up content that may need to be grouped together with the class, lang and title attributes. It represents its children. The users can either place the content or include the partial pages.
 
@@ -9,7 +10,7 @@ Containers are semantically correct for laying out content. Its most common use 
 
 ## Properties
 
-You can also use the Conditional Class property from the Style tab to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/).
+You can also use the Conditional Class property from the Style tab to set the class based upon a condition. For more information, see the [How-to](/learn/how-tos/use-conditional-class-property/) doc.
 
 | **Property** | **Description** |
 | --- | --- |
@@ -18,9 +19,7 @@ You can also use the Conditional Class property from the Style tab to set the cl
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | Height | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | **Content** |
-| Content | This bindable property, defines the content to be displayed within the container:
-- Inline Content - HTML content,
-- Page Content - in the form of Partial Pages, choose from the list provided <br>  |
+| Content | This bindable property, defines the content to be displayed within the container: <br><br> - Inline Content - HTML content, <br> - Page Content - in the form of Partial Pages, choose from the list provided <br>  |
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
