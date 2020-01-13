@@ -13,12 +13,12 @@ For demonstration purpose, we will use Employee Leave Management application. Th
 
 ### STEP 1 – CAMUNDA SETUP
 
-1. Camunda BPM is a light-weight, open-source platform for Business Process Management. Camunda is a Java-based framework supporting BPMN for workflow and process automation, CMMN for Case Management and DMN for Business Decision Management.
+1. About Camunda: <br>Camunda BPM is a light-weight, open-source platform for Business Process Management. Camunda is a Java-based framework supporting BPMN for workflow and process automation, CMMN for Case Management and DMN for Business Decision Management.
 
 1. Getting Started With Camunda
    https://docs.camunda.org/get-started/quick-start/
 
-1. [Download and Install Camunda](https://docs.camunda.org/enterprise/download/)
+1. [Download and Install Camunda](https://docs.camunda.org/enterprise/download/)<br>
    Note: For Integrating WM online server, Please install Camunda services on cloud such as AWS/Azure.
 
 1. Create BPMN Process for Apply Leave Request
@@ -33,13 +33,17 @@ For demonstration purpose, we will use Employee Leave Management application. Th
 1. Create a REST End-point for Camunda WorkFlow Engine
    You can create the Camunda REST endpoint url. [Refer to this Camunda documentation](https://docs.camunda.org/manual/7.12/reference/rest/decision-definition/get/)
     Example: `POST /decision-definition/key/{key}`
-
+#### Request:
 ```
-    `POST http://<camunda-host>/engine-rest/decision-definition/key/approve_leave/evaluate`
+    POST http://<camunda-host>/engine-rest/decision-definition/key/approve_leave/evaluate`
     HTTP Headers: Content-Type="application/json"
-    **Request Payload:**
-    {"variables":{"applied":{"value":3,"type":"Integer"},"leftBalance":{"value":10,"type":"Integer"}}}
-    **Response Payload:** This will return the list of all Approvers needed.
+    Request Payload:
+    {"variables":{"applied":{"value":3,"type":"Integer"},"leftBalance":{"value":10,"type":"Integer"}}
+    }
+```
+#### Response: 
+ Response Payload: This will return the list of all Approvers needed for a leave request.
+```
     [
         {
             "secondApprover": {
