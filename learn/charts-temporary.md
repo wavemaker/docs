@@ -3,9 +3,11 @@ title: "Charts Temporary"
 id: ""
 ---
 
-"A picture is worth a thousand words". To this end, WaveMaker gives you a tool to present your data in a pictorial form using the chart widgets. Using these widgets you can transform your data into either a line chart, column chart, pie chart, area chart, cumulative line chart, bar chart or a donut Chart. [![chart_run](/learn/assets/chart_run-1024x640.png)](/learn/assets/chart_run.png)
+"A picture is worth a thousand words". To this end, WaveMaker gives you a tool to present your data in a pictorial form using the chart widgets. Using these widgets you can transform your data into either a line chart, column chart, pie chart, area chart, cumulative line chart, bar chart or a donut Chart. 
 
-# Chart Types
+[![chart_run](/learn/assets/chart_run-1024x640.png)](/learn/assets/chart_run.png)
+
+## Chart Types
 
 Following are the various charts offered by WaveMaker - Area, Bar, Bubble, Column, Cumulative Line, Donut, Line, and Pie
 
@@ -36,17 +38,17 @@ Choose the type according to your need, you might want to try different types be
 
 <iframe width="100%" height="575" style="background-color: snow;" id="bubble" allowtransparency="true" src="http://e1d52cdd9823.cloud.wavemakeronline.com/documentation_snippets/#/BubbleChart">Bubble Chart</iframe>
 
-# Features
+## Features
 
 Charts are used for graphical display of data  and WaveMaker charts come  with the following features:
 
 - _Title_, _Sub heading_ and _Icon_ can be set.
-- [Data](#data) can come from various sources like database, web service or another widget and can be accessed through binding to Live or Service Variables
-- [Layout](#layout) can be set in terms of themes, positioning, formats for labels, captions, axis etc..
-- [Types](#comp) of charts for various purposes.
-- [Data aggregation](#data-aggregation) and grouping for displaying summary graphs.
-- Run-time [user-interaction](#user-interaction)
-- Capturing [user selection](#user-selection)
+- Data can come from various sources like database, web service or another widget and can be accessed through binding to Live or Service Variables
+- Layout can be set in terms of themes, positioning, formats for labels, captions, axis etc..
+- Types of charts for various purposes.
+- Data aggregation and grouping for displaying summary graphs.
+- Run-time user-interaction
+- Capturing user selection
 
 ## Data Sources
 
@@ -56,13 +58,21 @@ Data can come from various sources as listed below
 - From Live Filter,
 - From Web Services.
 
-The x-axis and y-axis values can be set to the fields from the datasource, the chart is bound to. [![charts_feat1](/learn/assets/charts_feat1.png)](/learn/assets/charts_feat1.png)
+The x-axis and y-axis values can be set to the fields from the datasource, the chart is bound to.
 
-Depending upon the data type of the inderlying fields, you can choose the Data Display Format. [![chart_as_yaxis_format](/learn/assets/chart_as_yaxis_format.png)](/learn/assets/chart_as_yaxis_format.png)
+[![charts_feat1](/learn/assets/charts_feat1.png)](/learn/assets/charts_feat1.png)
 
-In case of Service and WebSocket Variables you can choose the Format Type to be toDate or toNumber. [![chart_as_yaxis_formattype](/learn/assets/chart_as_yaxis_formattype.png)](/learn/assets/chart_as_yaxis_formattype.png)
+Depending upon the data type of the inderlying fields, you can choose the Data Display Format. 
 
-Note: For Pie and Donut charts, the options include Label and Value fields.
+[![chart_as_yaxis_format](/learn/assets/chart_as_yaxis_format.png)](/learn/assets/chart_as_yaxis_format.png)
+
+In case of Service and WebSocket Variables you can choose the Format Type to be toDate or toNumber. 
+
+[![chart_as_yaxis_formattype](/learn/assets/chart_as_yaxis_formattype.png)](/learn/assets/chart_as_yaxis_formattype.png)
+
+:::note
+For Pie and Donut charts, the options include Label and Value fields.
+:::
 
 ## Layout
 
@@ -88,14 +98,15 @@ This property defines how the data is represented in the chart.
     - Cardinal for smooth curves, or
     - Step
     
-    [![](/learn/assets/chart_interpolation.png)](/learn/assets/chart_interpolation.png)
+[![](/learn/assets/chart_interpolation.png)](/learn/assets/chart_interpolation.png)
+
 - **Data Arrangement** Property (available only for Column, Area and Bar Charts) controls whether to show the areas in:
     
-    - - stack,
-        - stream, or
-        - expand
-    
-    [![](/learn/assets/chart_arrangement.png)](/learn/assets/chart_arrangement.png)
+    - stack,
+    - stream, or
+    - expand
+
+[![](/learn/assets/chart_arrangement.png)](/learn/assets/chart_arrangement.png)
 
 ## Data Aggregation and Grouping
 
@@ -117,42 +128,30 @@ When dealing with charts bound to live variables, you can add additional functio
 
 You can capture user selection in two ways:
 
-1. 1. The various outbound properties of chart are available for binding to other widgets or variables. The fields under selecteditem will be from the underlying dataset used for binding [![chart_output](/learn/assets/chart_output.png)](/learn/assets/chart_output.png)
-    2. These selected values can be accessed via Javascript
+1. The various outbound properties of chart are available for binding to other widgets or variables. The fields under selecteditem will be from the underlying dataset used for binding 
+
+[![chart_output](/learn/assets/chart_output.png)](/learn/assets/chart_output.png)
+
+2. These selected values can be accessed via Javascript
+
+```js  
+$scope.chart3Select = function($event, $isolateScope, selectedItem, selectedChartItem) {
+        $scope.Widgets.key.datavalue = selectedChartItem.key; // key value of selected item
+        $scope.Widgets.xv.datavalue = selectedChartItem.x; // x value of selected item
+        $scope.Widgets.yv.datavalue = selectedChartItem.y; // y value of selected item
+        $scope.Widgets.selectname.datavalue = selectedItem.name; // name field of selected object
+        $scope.Widgets.selectdept.datavalue = selectedItem.deptcode; // deptcode of selected object
+};
+```
         
-        $scope.chart3Select = function($event, $isolateScope, selectedItem, selectedChartItem) {
-              $scope.Widgets.key.datavalue = selectedChartItem.key; // key value of selected item
-              $scope.Widgets.xv.datavalue = selectedChartItem.x; // x value of selected item
-              $scope.Widgets.yv.datavalue = selectedChartItem.y; // y value of selected item
-              $scope.Widgets.selectname.datavalue = selectedItem.name; // name field of selected object
-              $scope.Widgets.selectdept.datavalue = selectedItem.deptcode; // deptcode of selected object
-        };
-        
-        Here we have used the on select event of the chart: [![chart_events](/learn/assets/chart_events.png)](/learn/assets/chart_events.png)
+Here we have used the on select event of the chart: 
+    
+[![chart_events](/learn/assets/chart_events.png)](/learn/assets/chart_events.png)
 
-# Use Cases
+## Use Cases
 
-- [Basic Usage](/learn/app-development/widgets/chart/charts-basic-usage/)
-- [How to capture user selection](/learn/how-tos/charts-displaying-user-selection-another-widget/)
-- [How to handling dynamic data](/learn/how-tos/charts-handling-dynamic-data/)
-- [How to displaying custom data](/learn/how-tos/charts-custom-data/)
+[Basic Usage](/learn/app-development/widgets/chart/charts-basic-usage/)  
+[How to capture user selection](/learn/how-tos/charts-displaying-user-selection-another-widget/)  
+[How to handling dynamic data](/learn/how-tos/charts-handling-dynamic-data/)  
+[How to displaying custom data](/learn/how-tos/charts-custom-data/)  
 
-[5\. Chart Widgets](/learn/app-development/widgets/widget-library/#chart)
-
-- [i. Chart Types](#chart-types)
-    - [○ Line Chart](#line)
-    - [○ Area Chart](#area)
-    - [○ Column Chart](#column)
-    - [○ Bar Chart](#bar)
-    - [○ Line Chart](#line)
-    - [○ Pie Chart](#pie)
-    - [○ Donut Chart](#donut)
-    - [○ Bubble Chart](#bubble)
-- [ii. Features](#features)
-    - [○ Data Source](#data)
-    - [○ Layout](#layout)
-    - [○ Data Representation](#data-rendering)
-    - [○ Data Aggregation & Grouping](#data-aggregation)
-    - [○ User Interaction](#user-interaction)
-    - [○ User Selection](#user-selection)
-- [iii. Use Cases](#use-cases)

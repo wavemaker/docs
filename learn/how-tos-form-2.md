@@ -21,7 +21,7 @@ Using Form as Filter Form can be used as filter for GET type of API’s. Below e
 
 1. Create a query in database designer with input params
     
-    SELECT \* FROM EMPLOYEE WHERE CITY = :city
+    SELECT * FROM EMPLOYEE WHERE CITY = :city
     
 2. Provide test values and run and save the query (as EmpByCity).
 3. Create a variable using this query operation from variable dialog or dragging and dropping Form widget and using Create new functionality. [![form_filter_var](/learn/assets/form_filter_var.png)](/learn/assets/form_filter_var.png)

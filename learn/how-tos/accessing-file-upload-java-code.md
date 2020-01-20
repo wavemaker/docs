@@ -15,7 +15,7 @@ singleFile.getInputStream()
 
 In case you are using FileUpload to handle multiple files, then the code would be:
 
-public String sampleJavaOperation(MultipartFile\[\] multipleFiles){
+public String sampleJavaOperation(MultipartFile[] multipleFiles){
 
 //for multiple files upload
 for (MultipartFile file : multipleFiles) {

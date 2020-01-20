@@ -17,16 +17,29 @@ The document explains the implementation for obtaining concurrency and record lo
     - Name - type String name, and
     - Version - type long.
 3. Go to the File Explorer and navigate to the following directory:
+
+```
+<project_name>/services/<database_name>/src/com/<project_name>/<database_name>/<table_name>
+```
     
-    <project\_name>/services/<database\_name>/src/com/<project\_name>/<database\_name>/<table\_name>
+- Add @Version annotation for the version column as shown below.
     
-    - Add @Version annotation for the version column as shown below: [![](/learn/assets/concurrency_annot.png)](/learn/assets/concurrency_annot.png)
-    - Add the below import statement
-        
-        import javax.persistence.Version;
-        
-        **Note**: Please note the @Version annotation added in the above step might get reverted each time a DB re-import operation is performed, hence replace the @Version after each DB re-import.
-4. Create a Page in the app
+[![](/learn/assets/concurrency_annot.png)](/learn/assets/concurrency_annot.png)
+
+- Add the below import statement.
+
+```js
+import javax.persistence.Version;
+```
+
+:::note
+Please note the @Version annotation added in the above step might get reverted each time a DB re-import operation is performed, hence replace the @Version after each DB re-import.
+:::
+
+4. Create a Page in the app.
 5. Drag and drop a Data Table widget into the page and set the data source as the table/entity designed in Step #2.
-6. Open the Advanced Settings of the Data Table widget and uncheck the Show property for the version column. [![](/learn/assets/concurrency_DTAS.png)](/learn/assets/concurrency_DTAS.png)
+6. Open the Advanced Settings of the Data Table widget and uncheck the Show property for the version column. 
+
+[![](/learn/assets/concurrency_DTAS.png)](/learn/assets/concurrency_DTAS.png)
+
 7. Run the application and insert/update values into the Data Table widget. When two users update a row in the data table at the same time, only one of the transactions will be completed whereas the other call will fail with an error message.
