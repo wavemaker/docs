@@ -165,6 +165,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to export data using a data table](/learn/how-tos/export-data-data-table/)
 *   [How to create a dynamic data table](/learn/how-tos/dynamic-data-tables/)
 *   [How to bind column of a data table to query variable](/learn/how-tos/data-table-column-bound-query/)
+*   [Concurrency and Record Locking in WaveMaker](/learn/how-tos/concurrency-record-locking-wavemaker)
 
 ## Widget: List
 
@@ -198,6 +199,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 ## Widget: Form
 
 *   [How to accumulate data over multiple steps in a Wizard and save at the last step](/learn/how-tos/using-wizard-cumulative-data-entry-form/)
+*   [Using Forms](/learn/how-tos/how-tos-form)
 
 ---
 #### Container Widgets
@@ -228,6 +230,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 
 ## Widget: Calendar
 
+*   [How Tos: Calendar](/learn/how-tos/how-tos-calendar)
 *   [How to create an event and save it in a Database](/learn/how-tos/calendar-usage-create-event/)
 *   [How to integrate with Google Calendar](/learn/how-tos/calender-usage-google-calendar-integration/)
 
