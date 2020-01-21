@@ -840,6 +840,16 @@
     "Release Notes": 
       [
       "wavemaker-release-notes",
+      
+      {
+        "type": "subcategory",
+        "label": "Versions: 10.3.x",
+        "ids": 
+          [              
+            "wavemaker-release-notes/v10-3-0"
+          ]
+      },
+
       {
         "type": "subcategory",
         "label": "Versions: 10.2.x",
