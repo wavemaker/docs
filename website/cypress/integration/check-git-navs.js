@@ -1,7 +1,9 @@
 describe('Check for nav', () => {
-	var brokenNavs = [];
+	let brokenNavs = [];
 	Cypress.on('fail', (error, runnable) => {
-		brokenNavs.push(runnable.title.split('Verifies Nav in: ')[1]);
+		const fileName = runnable.title.split('Verifies left nav in: ')[1];
+		brokenNavs.push(fileName);
+		error.message = 'Left Nav is missing in ' + fileName + '.md';
 		throw error;
 	});
 
