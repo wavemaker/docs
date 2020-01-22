@@ -506,7 +506,8 @@
             "how-tos/export-data-data-table",
             "how-tos/dynamic-data-tables",
             "how-tos/data-table-column-bound-query",
-            "how-tos/data-table-styling"
+            "how-tos/data-table-styling",
+            "how-tos/concurrency-record-locking-wavemaker"
           ],
 
           "List":
@@ -524,6 +525,7 @@
           "Forms":
           [
             "how-tos/using-live-form",
+            "how-tos/how-tos-form",
             "how-tos/using-wizard-cumulative-data-entry-form",
             "how-tos/live-form-tabbed-form",
             "how-tos/how-tos-live-form",            
@@ -540,6 +542,7 @@
 
           "Calendar":
           [
+            "how-tos/how-tos-calendar",
             "how-tos/calendar-usage-create-event",
             "how-tos/calender-usage-google-calendar-integration"
           ],

@@ -67,8 +67,8 @@ Known Issues
 
 1. **Googlemaps Prefab**: The new projects deployed to external server will need the API Key in order to use Maps. The old projects will continue to work until there are more updates from google. This is due to the policy change updates from Google regarding the Maps API from June 22. Please [refer here](http://googlegeodevelopers.blogspot.in/2016/06/building-for-scale-updates-to-google.html) for more information on the Google Policy change. This issue will be addressed in future releases. For now the following workaround will enable the Googlemaps:
     1. Locate and open the config.json file, you will find it at /app/prefabs/googlemaps/config.json
-    2. You will find the following code: "scripts": \[ "https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places,visualization,drawing,geometry" \],
-    3. Add _key=YOUR\_API\_KEY&_ as shown below: YOUR\_API\_KEY is the key you obtain once you register your app at Google "scripts": \[ "https://maps.googleapis.com/maps/api/js?&ampkey=YOUR\_API\_KEY&amp;sensor=false&libraries=places,visualization,drawing,geometry" \],
+    2. You will find the following code: "scripts": [ "https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places,visualization,drawing,geometry" ],
+    3. Add _key=YOUR_API_KEY&_ as shown below: YOUR_API_KEY is the key you obtain once you register your app at Google "scripts": [ "https://maps.googleapis.com/maps/api/js?&ampkey=YOUR_API_KEY&amp;sensor=false&libraries=places,visualization,drawing,geometry" ],
 
 Technology Stack for WaveMaker 8.2.3
 
@@ -77,7 +77,7 @@ Technology Stack for WaveMaker 8.2.3
 | Description | JS Library | Version |
 | --- | --- | --- |
 | JS Binding | jquery | 2.2.3 |
-|  | jquery-ui\* | 1.11.4 |
+|  | jquery-ui* | 1.11.4 |
 | MVC Framework | angular | 1.5.5 |
 |  | angular-ui-bootstrap | 1.3.2 |
 | Editor | ace-editor | 1.2.2 |
@@ -88,7 +88,7 @@ Technology Stack for WaveMaker 8.2.3
 | Built-in functions | lodash | 4.12.0 |
 | Device support, gestures | hammerjs | 2.0.8 |
 
-\*Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
+*Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
 ### Run Time Environment
 

@@ -52,9 +52,9 @@ public ArrayList<String> restService(String origin, String destination) {
     		BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream())));
     		String output;
     		while ((output = br.readLine()) != null) {while ((output = br.readLine()) != null) {
-      			if(output.contains("<html\_instructions>"))      
+      			if(output.contains("<html_instructions>"))      
       			{
-      				output = output.substring(output.indexOf(">")+1, output.indexOf("</html\_instructions>"));
+      				output = output.substring(output.indexOf(">")+1, output.indexOf("</html_instructions>"));
       				directionList.add(output);
       			}	  			
       		}} conn.disconnect();} 

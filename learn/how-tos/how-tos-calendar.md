@@ -2,15 +2,22 @@
 title: "How Tos: Calendar"
 id: ""
 ---
+---
 
 ## Create an Event using Calendar
 
-You can use Calendar widget to create an event when user clicks on a date. We will be using a Database table to store the created event. We will be using a Design Dialog to capture the event details. We are using a database table with the following structure: [![event_schema](/learn/assets/event_schema.png)](/learn/assets/event_schema.png) and the Live Variable created for this table: [![event_livevar](/learn/assets/event_livevar.png)](/learn/assets/event_livevar.png)
+You can use Calendar widget to create an event when user clicks on a date. We will be using a Database table to store the created event. We will be using a Design Dialog to capture the event details. We are using a database table with the following structure: 
+
+[![event_schema](/learn/assets/event_schema.png)](/learn/assets/event_schema.png) 
+
+and the Live Variable created for this table: 
+
+[![event_livevar](/learn/assets/event_livevar.png)](/learn/assets/event_livevar.png)
 
 1. Create or open a web responsive app
 2. Add a page for the Calendar event, we have used a blank template and layout for the page
 3. Drag and drop a Calendar widget onto the page
-4. Bind the Dataset Value property to the Live Variable and set the Events Data to the corresponding fields of the Live Variable (event\_var) [![event_cal_bind](/learn/assets/event_cal_bind.png)](/learn/assets/event_cal_bind.png)
+4. Bind the Dataset Value property to the Live Variable and set the Events Data to the corresponding fields of the Live Variable (event_var) [![event_cal_bind](/learn/assets/event_cal_bind.png)](/learn/assets/event_cal_bind.png)
 5. Drag and drop a Design Dialog on the same page. Note: Design Dialog will be placed in a page view and you can switch between the page and page view using the tab at the bottom of the page.
 6. We will be using the Design Dialog to capture the Title, Description and All Day Event data for the event being created. Add two text widgets and a radio button to the dialog. [![event_dialog](/learn/assets/event_dialog.png)](/learn/assets/event_dialog.png)
 7. The Save of Design Dialog should update the database with the event details. For this we will be using a Service Variable triggering the createEvents operation. [![event_create](/learn/assets/event_create.png)](/learn/assets/event_create.png) The data for create event will be taken from the Calendar and Design Dialog [![event_create_bind](/learn/assets/event_create_bind.png)](/learn/assets/event_create_bind.png) The On Success event of this service variable should close the design dialog and refresh the Calendar which is achieved by calling the Live Variable bound to the Calendar. [![event_create_event](/learn/assets/event_create_event.png)](/learn/assets/event_create_event.png)
@@ -21,9 +28,18 @@ You can use Calendar widget to create an event when user clicks on a date. We wi
 
 To set the properties of the calendar widget through script, access the properties on the calendar as (consider the calendar with name ‘wmcalendar’) $scope.Widgets.wmcalendar.propertyname and change or assign the values accordingly. For example:
 
-- To set the first day of the month view \[Default: 0 (Sunday)\]: $scope.Widgets.wmcalendar.calendarOptions.calendar.firstDay = 0;
-- To hide the all day slot of the agenda view \[Default: true\]: $scope.Widgets.wmcalendar.calendarOptions.calendar.allDaySlot= false;
-- To set the text of the all day slot in the agenda view \[Default: ‘all-day’\]: $scope.Widgets.wmcalendar.calendarOptions.calendar.allDayText= ‘all-day’;
+- To set the first day of the month view [Default: 0 (Sunday)]: 
+```
+$scope.Widgets.wmcalendar.calendarOptions.calendar.firstDay = 0;
+```
+- To hide the all day slot of the agenda view [Default: true]:
+```
+$scope.Widgets.wmcalendar.calendarOptions.calendar.allDaySlot= false;
+```
+- To set the text of the all day slot in the agenda view [Default: ‘all-day’]: 
+```
+$scope.Widgets.wmcalendar.calendarOptions.calendar.allDayText= ‘all-day’;
+```
 
 Other properties which can be set using the similar methods:
 
@@ -73,28 +89,28 @@ Obtain your **Google Calendar's ID**
 
 1. Open a web responsive app
 2. Drag and drop a Calendar widget
-3. Include the following script inside the HEAD tag of
-    
-    _index.html_
-    
-    in the app (you can locate the index.html file from the left File panel).
-    
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.0/gcal.js"></script>
-    
+3. Include the following script inside the HEAD tag of _index.html_ in the app (you can locate the index.html file from the left File panel).
+
+```js 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.0/gcal.js"></script>
+```
+
 4. Insert the below snippet in the script part of the calendar widget page. Insert the below code in the $scope.onPageReady function. Here our calendar name is wmcalendar.
-    
-     var googleCalendarOptions = {
-                googleCalendarApiKey: 'your\_google\_api\_key',
-                events: {
-                    googleCalendarId: 'your\_calendar\_id',
-                    eventDataTransform: function(events) {
-                        $scope.Widgets.wmcalendar.dataSet = events;
-                        return events;
-                    }
+
+```js    
+    var googleCalendarOptions = {
+            googleCalendarApiKey: 'your_google_api_key',
+            events: {
+                googleCalendarId: 'your_calendar_id',
+                eventDataTransform: function(events) {
+                    $scope.Widgets.wmcalendar.dataSet = events;
+                    return events;
                 }
-            };
-    
-    \_.extend($scope.Widgets.wmcalendar.calendarOptions.calendar, googleCalendarOptions );
-    
+            }
+        };
+
+_.extend($scope.Widgets.wmcalendar.calendarOptions.calendar, googleCalendarOptions );
+```
+
 5. Now the calendar is successfully configured with the google.
 6. In order to use the data received from the google calendar API, the data will be sent to the _eventDataTransform_ callback which we have assigned earlier in the _googleCalendarOptions_ variable. Use the events parameter sent to the function. The events parameter would contain the data we received from the google calendar api.
