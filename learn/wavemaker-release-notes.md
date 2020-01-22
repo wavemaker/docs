@@ -19,7 +19,7 @@ WaveMaker is constantly working on bringing new features and improvements to the
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
-|[WaveMaker v10.3.0](/learn/wavemaker-release-notes/v10-3-0)|Bug fixes | 29 January 2020 | -|-|
+|[WaveMaker v10.3.0](/learn/wavemaker-release-notes/v10-3-0)|New features + bug fixes | 29 January 2020 | -|-|
 |WaveMaker v10.2.8|Bug fixes | 08 January 2020 | -|-|
 |[WaveMaker v10.2.7](/learn/wavemaker-release-notes/v10-2-7)|Bug fixes | 31 December 2019 | -|-|
 |[WaveMaker v10.2.6](/learn/wavemaker-release-notes/v10-2-6)|Bug fixes | 18 December 2019 | -|-|
@@ -86,7 +86,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
 | Tomcat | 8.5* |
-| Cordova (mobile apps) <td bgcolor="#44aaf4">8.0.0 -> 8.1.1 |
+| Cordova (mobile apps) <br> Android <br> iOS <td bgcolor="#44aaf4"> **8.1.1 -> 9.0.0** <br> 8.0.0   <br> 5.0.1 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
