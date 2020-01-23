@@ -39,7 +39,7 @@ WaveMaker is constantly working on bringing new features and improvements to the
 |[WaveMaker Preview: v10]()|Try new features and enhancements <br> before 10.GA release|20 November, 2018|-| - |
 
 ## Technology Stack
-Last updated: [Release: v10.1.0](/learn/wavemaker-release-notes/v10-1-0)
+Last updated: [Release: v10.3.0](/learn/wavemaker-release-notes/v10-3-0)
 
 ---
 
@@ -49,7 +49,7 @@ Last updated: [Release: v10.1.0](/learn/wavemaker-release-notes/v10-1-0)
 | --- | --- | --- |
 | JS Binding | jquery | 3.3.1 |
 |  | jquery-ui* | 1.12.1 |
-| MVC Framework | angular <td bgcolor="#44aaf4"> 7.0.1 -> 7.2.2 |
+| MVC Framework | angular | 7.2.2 |
 |  | angular-ui-bootstrap | 3.3.6 |
 |  | ngx-bootstrap | 3.0.1 |
 | Styles | bootstrap | 3.3.7 |
@@ -64,15 +64,15 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework <td bgcolor="#44aaf4">4.3.19 -> 5.1.4 |
+|  | Spring Framework | 5.1.4 |
 | Security framework | Spring Security | 5.0.8 |
-| Java JSON utilities | Gson <td bgcolor="#44aaf4">2.2.4 -> 2.8.5 |
-| DB Persistence library | Hibernate <td bgcolor="#44aaf4">5.2.10 -> 5.2.17 |
-| Sample database | HSQL <td bgcolor="#44aaf4">2.4.0 -> 2.4.1 |
-| JSON library | Jackson <td bgcolor="#44aaf4">2.9.7 -> 2.9.8 |
+| Java JSON utilities | Gson | 2.8.5 |
+| DB Persistence library | Hibernate | 5.2.17 |
+| Sample database | HSQL | 2.4.1 |
+| JSON library | Jackson | 2.9.8 |
 | Logging framework | SLF4j |1.7.25 |
 |  | Log4j | 1.2.17 |
-| Http client library | HttpComponents <td bgcolor="#44aaf4">httpclient- **4.5.5 -> 4.5.6** <br> httpmime- **4.5.5 -> 4.5.6** |
+| Http client library | HttpComponents | httpclient- **4.5.6** <br> httpmime- **4.5.6** |
 | REST API annotations | Swagger | 1.3.10 |
 | Date Time Framework | Java 8 Date/Time API |  |
 | Json Libraries | com.tdunning |  1.8 |

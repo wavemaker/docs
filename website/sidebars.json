@@ -686,6 +686,7 @@
       "app-development/widgets/datalive/form/form-layouts",
       "app-development/widgets/datalive/form/form-configurations",
       "app-development/widgets/datalive/form/form-fields-configuration",
+      "app-development/widgets/datalive/form/form-field-validator",
       "app-development/widgets/datalive/form/form-events-methods"      
     ],
 
@@ -702,7 +703,8 @@
       "app-development/widgets/datalive/live-form/liveform-use-cases"
     ],
 
-    "Form Widgets": [ 
+    "Form Widgets": 
+    [ 
       "app-development/widgets/form-widgets/button",
       "app-development/widgets/form-widgets/button-group",
       "app-development/widgets/form-widgets/text",

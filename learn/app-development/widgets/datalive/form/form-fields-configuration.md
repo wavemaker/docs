@@ -10,7 +10,12 @@ sidebar_label: "Fields Configuration"
 You can set the display properties of the elements of the Form.
 
 1. specify the **widget** to be used to represent each data field. Based on the data type of the field, the available widget options would vary.
-2. create **custom columns** by clicking on the **'+'** icon. **Note:** If a custom column is not selected on the left panel, it will be deleted when the Form Designer is saved.
+2. create **custom columns** by clicking on the **'+'** icon. 
+
+:::note
+If a custom column is not selected on the left panel, it will be deleted when the Form Designer is saved.
+:::
+
 3. modify the behavior of **individual fields**, from the canvas, by selecting any field on the form and setting the properties:
     - The display **Title** for the field - can be bound to another variable,
     - **Input Type** to perform on screen validation of the user input, for example, setting the Input Text to email will ensure that the user enters the text in an email id format,
@@ -33,7 +38,7 @@ There are various ways in which Form fields can be validated depending upon the 
 5. For **Date Type fields**, **Min Date, Max Date, Exclude Days and Dates** can be set. In this case, the date picker will not have the invalid dates available for selection.
 6. For additional checks, you can use the **On Before Submit** event to perform any validation checks. For example, we want to make sure that the password entry is at least six characters in length. Select the **Events** panel and select Javascript for **On Before Submit** and enter the following code. This will ensure that before updating the data source, the JavaScript is executed.
 
-```    
+```js
 Page.form1Beforesubmit = function($data, $event) {
         function isValidData($data) {
             /*restrict password to be minimum of 6 characters*/
