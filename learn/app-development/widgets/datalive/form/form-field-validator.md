@@ -38,7 +38,7 @@ In the above example, VALIDATOR can be accessed from constants service as shown 
 var VALIDATOR = App.getDependency(‘CONSTANTS’).VALIDATOR;
 ```
 
-VALIDATOR contains the default validators i.e. required, maxchars, minvalue, maxvalue, regexp,  mindate, maxdate, excludedates, excludedays, mintime, maxtime which can be accessed using VALIDATOR.REQUIRED, VALIDATOR.MAXCHARS, VALIDATOR.MINVALUE, VALIDATOR.MAXVALUE, VALIDATOR.REGEXP, VALIDATOR.MINDATE, VALIDATOR.MAXDATE, VALIDATOR.EXCLUDEDATES, VALIDATOR.EXCLUDEDAYS, VALIDATOR.MINTIME, VALIDATOR.MAXTIME.
+VALIDATOR contains the default validators which can be accessed using the following validator types.
 
 |Validator | Validator type |
 |----|----|
