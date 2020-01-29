@@ -35,13 +35,15 @@ Page.Widgets.formName.formfields.fieldName.setValidators([{
    }]);
 ```
 
-In the above example, VALIDATOR can be accessed from constants service as shown below.
+In the above example, `VALIDATOR` can be accessed from constants service as shown below.
 
 ```js
 var VALIDATOR = App.getDependency(‘CONSTANTS’).VALIDATOR;
 ```
 
-VALIDATOR contains the default validators which can be accessed using the following validator types.
+### Validator Types
+
+`VALIDATOR` contains the default validators which can be accessed using the following validator types.
 
 |Validator | Validator type |
 |----|----|
@@ -102,19 +104,24 @@ function emailRequired(field, form) {
 :::tip
 To watch for validator values, use functions, instead of widget data values.
 
+In the following example, if validator depends on some other widget value, then return the datavalue using the function and not use widget datavalue directly.
+
+#### Recommended
+
 ```js
-Page.Widgets.EmployeeForm1.formfields.currentDate.setValidators([{
-    type: VALIDATOR.MINDATE,
-    validator:function(){
+validator:function(){
         return Page.Widgets.date1.datavalue;
-    },
-    errorMessage: "Please select a valid Date."
-}])
+    }
 ```
 
+#### Not Recommended
+
+```js
+validator:Page.Widgets.date1.datavalue;
+```
 :::
 
-## ObserveOn
+## observeOn
 
 This validation type observes changes in two or more fields. This method accepts an array of field names. Registering observeOn on a field triggers the field validations whenever there are changes in the observing field values. For example, it notifies whenever there are changes in any of the fields specified in the array.
 
@@ -122,7 +129,7 @@ This validation type observes changes in two or more fields. This method accepts
 
 In the following example, we are matching password and confirm password. Confirm password field depends on password field value.
 
-In the following lines of code, we are defining function `confirmPasswordEval`.
+In the following lines of code, we are defining validator for `confirmpassword` field with `confirmPasswordEval` function which observes `password` form field.
 
 ```js
 Page.Widgets.staticVariable2Form1.formfields.confirmpassword.setValidators([confirmPasswordEval]);
@@ -143,15 +150,17 @@ function confirmPasswordEval(field, form) {
 
 ## setAsyncValidators
 
-This method on the formfield can be used to set async validations on the field. This method accepts array of promises or function returning a promise.
+This method on the formfield can be used to set async validations on the field. This method accepts an array of promises or function returning a promise.
 
 ### Example for setAsyncValidators
 
-Email validation checks the database. For example, entered email should not be present in the list of emails that are stored in the database already.
+In the following lines of code, we are setting async validation for email form field by defining a function called `emailAsync`.
 
 ```js
 Page.Widgets.employeeInfoForm3.formfields.email.setAsyncValidators([emailAsync]);
 ```
+
+In the following lines of code, the entered email should not be present in the list of emails that are stored in the database already.
 
 ```js
 function emailAsync(field, form) {
@@ -164,7 +173,7 @@ function emailAsync(field, form) {
            });
            if (emailExists.length != 0) {
                reject({
-                   errorMessage: "Email already exists in database"
+                   errorMessage: "The email address is already registered."
                });
            }
            resolve();
@@ -174,5 +183,5 @@ function emailAsync(field, form) {
 ```
 
 :::note
-By default validations trigger on form render. For example, if you have an async validation on a field and field value is null, then the form validation triggers and shows spinner until the async validation is completed. If you do not want to trigger the async validation when value is null then just have some default validators on the field like minLength on the field to be one/two characters or set field as required which prevents the async validation on form render.
+The form validators should be applied only after form fields are rendered. For example, if you have an async validation on a field and field value is null, then the form validation triggers and shows spinner until the async validation is completed. If you do not want to trigger the async validation when the value is null then just have some default validators on the field like minLength on the field to be one/two characters or set field as required which prevents the async validation on form render.
 :::
