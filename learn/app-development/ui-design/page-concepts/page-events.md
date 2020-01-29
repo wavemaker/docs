@@ -38,9 +38,9 @@ The events are categorized as follows:
 | **KeyBoard Events** | Capture the key strokes. These include _Enter Key Press_, and more.|
 | **CallBack Events** | Widget-specific special events. For example, _Record Delete_, _on Select_, _on Deselect_ for a grid widget; _Before Records Update_ for Data Navigator. |
 
-## Multiple Event Handling
+## Multiple Actions on an Event
 
-WaveMaker supports multi-event handling. One can assign a series of actions to be triggered by a single event. Click on the "**+**" next to the event name to add more actions. When you use a series of variables to trigger on an event ensure that you handle eventualities like one callback was a success and other failed.
+WaveMaker supports multi-action event handling. This means you can assign a series of actions that can be triggered by a single event. Click on the "**+**" next to the event name to add more actions. When you use a series of variables to trigger on an event ensure that you handle eventualities like one callback was a success and other failed.
 
 We have seen how Page Layouts, Navigation, and Events help in defining the flow of the app. Check out these [use cases](/learn/app-development/ui-design/use-cases-ui-design/) to further your experience.
 
