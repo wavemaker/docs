@@ -5,9 +5,11 @@ sidebar_label: "Field Validations"
 ---
 ---
 
-Apply validations to a single field and multiple fields using the specified methods. These methods on the form field can be used to set sync validations on a field. These validations can include default validators like required, min value, max value, or add more customizations to the basic validations.
+When creating a form, you can use Validator Functions to set rules to the form. Validation of form data is based on the validator type you specify for each field. For each validator type, only a specific set of rules apply. During form submission, the user can modify any input fields that contain invalid data.
 
-There are three ways to apply Validations on a form field based on your requirements; they are:
+Using Validator Functions, you can apply validations to a single field or multiple fields using methods described in this document. These methods can be used to set sync validations on a field and can include default validators like required, min value, max value, or add more customizations to just basic validations.
+
+There are three ways to apply Validations on a form field; they are:
 
 - `setValidators`
 - `observeOn`
@@ -15,20 +17,21 @@ There are three ways to apply Validations on a form field based on your requirem
 
 ## setValidators
 
-For setting default validations for Form fields, you can use the `setValidator()` method. This method accepts an array of:
+WaveMaker provides validators which can be referenced and used in the setValidator method for setting default validations for Form fields. This method accepts an array of:
 
 - Objects for default validators
 - Functions for custom validation
 
 ### Object Validators
 
-These validations also include default validators like required, min value, max value, and more. To apply **required** validation, follow the steps below: 
+These validations also include default validators like required, min value, max value, and more. To apply **required** validation, follow the steps below:
 
 ```js
 Page.Widgets.formName.formfields.fieldName.setValidators([{
        type: VALIDATOR.REQUIRED,
        validator: true,
-       errorMessage: "Error message to be displayed for Form Field."
+       // Display error message for the form field
+       errorMessage: "This field cannot be empty."
    }]);
 ```
 
@@ -76,7 +79,7 @@ In the above example, `firstNameVal` function accepts field and form as argument
 
 ### Example using objects and custom validator functions
 
-In the following example, form `EmployeeForm1` has multiple validations, including, email should validate regular expression `REGEXP` and should not be empty.
+In the following example, form `EmployeeForm1` has multiple validations, including email, it should validate regular expression `REGEXP` and should not be empty.
 
 ```js
 Page.Widgets.EmployeeForm1.formfields.email.setValidators([emailRequired, {
@@ -96,8 +99,8 @@ function emailRequired(field, form) {
 }
 ```
 
-:::note
-In order to watch on some values for validator, use functions, instead of widget data values.
+:::tip
+To watch for validator values, use functions, instead of widget data values.
 
 ```js
 Page.Widgets.EmployeeForm1.formfields.currentDate.setValidators([{
@@ -105,9 +108,10 @@ Page.Widgets.EmployeeForm1.formfields.currentDate.setValidators([{
     validator:function(){
         return Page.Widgets.date1.datavalue;
     },
-    errorMessage: "Enter correct current date value."
+    errorMessage: "Please select a valid Date."
 }])
 ```
+
 :::
 
 ## ObserveOn
@@ -148,6 +152,7 @@ Email validation checks the database. For example, entered email should not be p
 ```js
 Page.Widgets.employeeInfoForm3.formfields.email.setAsyncValidators([emailAsync]);
 ```
+
 ```js
 function emailAsync(field, form) {
    if (field.value) {
