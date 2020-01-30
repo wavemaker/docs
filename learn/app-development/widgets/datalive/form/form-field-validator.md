@@ -183,5 +183,7 @@ function emailAsync(field, form) {
 ```
 
 :::note
-The form validators should be applied only after form fields are rendered. For example, if you have an async validation on a field and field value is null, then the form validation triggers and shows spinner until the async validation is completed. If you do not want to trigger the async validation when the value is null then just have some default validators on the field like minLength on the field to be one/two characters or set field as required which prevents the async validation on form render.
+The form validators should be applied only after form fields are rendered. For example, if you have an async validation on a field and field value is null, then the form validation triggers and shows spinner until the async validation is completed. 
+
+If you do not want to trigger the async validation when the value is null then just have some default validators on the field like minLength on the field to be one/two characters or set the field as required which prevents the async validation on form render.
 :::
