@@ -227,6 +227,7 @@
     "Developer options": 
     [
         "app-development/dev-integration/developer-tools",
+        "app-development/dev-integration/inspection-framework",
         "app-development/dev-integration/import-export-update-apps",
         "app-development/ui-design/project-shells",
         "app-development/wavemaker-overview/localization",

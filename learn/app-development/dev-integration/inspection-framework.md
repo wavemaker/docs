@@ -1,8 +1,8 @@
 ---
 title: "Inspection Framework"
-id: ""
+id: "inspection-framework"
 ---
-
+---
 Inspection framework is available since WaveMaker 10.0. Inspection Framework helps you locate errors, custom code or any unsupported methods in your project. For example, you can use this feature for the project migration process to identify unsupported methods. Using the inspection framework, you can perform tests and include this feature in your QA cycle to help you find code errors. Also, with this, you can point to the project’s custom code and edit and fix any code errors you may have. 
 
 ## How to use Inspection Framework
@@ -11,7 +11,7 @@ You can locate Inspection framework from the More options menu located on the bo
 
 ![](/learn/assets/inspectionframeworklowcode.png)
 
-To initiate the inspection framework, you click the More options menu and click Run. When you run the inspection framework from your project, if there are any unsupported methods or errors in your code, it shows them on the screen immediately. The following guide helps you with each rule that Inspection Framework will help you identify and fix the issues in your project.
+To initiate the inspection framework, you click the More options menu and click Run. When you run the inspection framework from your project, if there are any unsupported methods or errors in your code, it shows them on the screen immediately. The following guide helps you with each rule that the Inspection Framework will help you identify and fix the issues in your project.
 
 ## No AngularJS Service
 
@@ -23,12 +23,15 @@ If you want to remove AngularJS service this rule can help you by warning you of
 
 #### That includes:
 
+```js
 Application.service(‘myService’, function() {});
+```
 
 For replacing AngularJS service, we can use objects defined on the App.
 
 #### Examples of incorrect code for this rule
 
+```js
 Application.service(‘myService’, function($rootScope) {
 this.someFunction = function() {
 	...
@@ -36,15 +39,19 @@ this.someFunction = function() {
 	...
 }
 });
+```
 
 ### Use
 
+```js
 Application.$controller(‘$scope’, ‘myService’ function($scope, myService) {
 myService.someFunction();
 });
+```
 
 #### Examples of correct code for this rule
 
+```js
 App.myService = {
 	someFunction: function() {
 		…
@@ -52,10 +59,13 @@ App.myService = {
 	...
 	}
 }
+```
 
 ### Use
 
+```
 App.myService.someFunction();
+```
 
 ## No AngularJS Controller
 
@@ -67,6 +77,7 @@ If you want to remove AngularJS controller this rule can help you by warning you
 
 #### That includes:
 
+```js
 Application.controller(‘myController’, function() {});
 
 For replacing the AngularJS controller, we can use Prefabs.
@@ -75,10 +86,13 @@ Application.controller("myCtrl", function ($scope) {
     $scope.firstName = "Alex";
     $scope.lastName = "Bob";
 });
+```
 
 ### Use
 
+```
 {{firstName}}
+```
 
 #### Examples of correct code for this rule:
 
@@ -86,7 +100,9 @@ Create a prefab with all the properties and methods. Export the prefab to the pr
 
 ### Use
 
+```js
 MyPrefab.firstName
+```
 
 ## No AngularJS Factory
 
@@ -98,12 +114,15 @@ If you want to remove AngularJS Factory this rule can help you by warning you of
 
 #### That includes:
 
+```js
 Application.factory(‘myFactory’, function() {});
+```
 
 For replacing the AngularJS factory, we can use objects defined on the App.
 
 #### Examples of incorrect code for this rule:
 
+```js
 Application.factory(‘myFactory’, function() {
 return {
 	displayMethod: function () {
@@ -111,16 +130,20 @@ return {
 	}
 };
 });
+```
 
 ### Use
 
+```js
 Application.$controller(‘$scope’, ‘myFactory’, function($scope, myService) {
 ‘myFactory’.displayMethod();
+```
 
 #### Examples of correct code for this rule:
 
 Define the factory in app.js. Any AngularJS dependency being used in the factory will NOT work. That has to be defined separately in app.js before defining the factory.
 
+```js
 App.myFactory = {
 	someFunction: function() {
 		…
@@ -128,10 +151,13 @@ App.myFactory = {
 	...
 	}
 }
+```
 
 ### Use
 
+```js
 App.myMethod.displayMethod();
+```
 
 ## No AngularJS Config
 
@@ -143,13 +169,17 @@ If you want to remove AngularJS config this rule can help you by warning you of 
 
 #### That includes:
 
+```js
 Application.config(function() {});
+```
 
 #### Examples of incorrect code for this rule:
 
+```js
 Application.config(function ($httpProvider) {
     $httpProvider.interceptors.push('myHttpInterceptor');
 });
+```
 
 #### Examples of correct code for this rule:
 
@@ -165,13 +195,17 @@ If you want to remove AngularJS run this rule can help you by warning you of any
 
 #### That includes:
 
+```js
 Application.run(function() {});
+```
 
 #### Examples of incorrect code for this rule:
 
+```js
 Application.run(function (editableOptions) {
 	editableOptions.theme = “default”;
 });
+```
 
 #### Examples of correct code for this rule:
 
@@ -187,20 +221,27 @@ If you want to remove AngularJS constant this rule can help you by warning you o
 
 #### Examples of incorrect code for this rule:
 
+
+```js
 Application.constant('MY_CONSTANT1', 'The Constant Text Value');
+```
 
 ### Use
 
+```js
 Application.$controller(‘$scope’, ‘myService’ function($scope, myService) {
 $scope.testValue = MY_CONSTANT1;
 });
+```
 
 #### Examples of correct code for this rule:
 
+```js
 Create constants object in script file
 App.constants = {
 	‘name’: ‘Alex’
 }
+```
 
 ## No AngularJS Value
 
@@ -212,20 +253,27 @@ If you want to remove AngularJS value this rule can help you by warning you of a
 
 #### Examples of incorrect code for this rule:
 
+```js
 Application.value(‘Test_Value’, ‘Test’);
+```
 
 ### Use
 
+```js
 Application.$controller(‘$scope’, ‘myService’ function($scope, myService) {
 $scope.testValue = Test_Value;
 });
+```
 
 #### Examples of correct code for this rule:
 
 Create constants object in script file
+
+```js
 App.values = {
 	‘Test_Value’: ‘Test’
 }
+```
 
 ## No AngularJS $scope
 
@@ -237,37 +285,47 @@ If you want to remove AngularJS $scope this rule can help you by warning you of 
 
 #### That includes:
 
+```js
 $scope.testValue = ‘test’;
 $scope.display = function () {
 	console.log($scope.testValue);
 }
+```
 
 For replacing AngularJS $scope, we can context for defining variables and methods.
 
 #### Examples of incorrect code for this rule:
 
+```js
 Application.controller("myCtrl", function ($scope) {
     $scope.firstName = "Alex";
     $scope.lastName = "Bob";
 });
+```
 
 ### Use
 
+```js
 {{firstName}} {{lastName}}
+```
 
 #### Examples of correct code for this rule:
 
-$scope is not supported in 10.x. Instead of $scope, current context can be used.
+`$scope` is not supported in 10.x. Instead of `$scope`, current context can be used.
 
+```js
 Page.title = ‘First Page’
 Page.newFunction = function() {
 	console.log(‘welcome’);
 }
+```
 
 ### Use
 
+```js
 Page.title;
 Page.newFunction();
+```
 
 ## No AngularJS Arrow Function
 
@@ -279,29 +337,39 @@ If you want to remove AngularJS Arrow functions this rule can help you by warnin
 
 #### That includes:
 
+```js
 Var x = ()=>{return 10;}
+```
 
 For replacing the AngularJS arrow function, we can normal functions.
 
 #### Examples of incorrect code for this rule:
 
+```js
 var func => () {console.log(‘in arrow function’);}
+```
 
 ### Use
 
+```js
 func();
+```
 
 #### Examples of correct code for this rule:
 
 Arrow functions are not supported in 10.x. Normal functions can be defined and used.
 
+```js
 var func = function() {
 	console.log(‘normal function’);
 }
+```
 
 ### Use
 
+```js
 func();
+```
 
 ## No AngularJS $location
 
@@ -313,25 +381,31 @@ If you want to remove AngularJS $location, this rule can help you by warning you
 
 #### Examples of incorrect code for this rule:
 
+```js
 $location.path(‘/page1’);
+```
 
 #### Examples of correct code for this rule:
 
+```js
 Window.location(‘/MainPage’);
+```
 
-## No AngularJS $apply
+## No AngularJS `$apply`
 
-This rule attempts to catch and prevent any usage of AngularJS $apply.
+This rule attempts to catch and prevent any usage of AngularJS `$apply`.
 
 ### Rule Details
 
-If you want to remove AngularJS $apply this rule can help you by warning you of any usage of AngularJS $apply in your app.
+If you want to remove AngularJS `$apply` this rule can help you by warning you of any usage of AngularJS ``$apply`` in your app.
 
 #### Examples of incorrect code for this rule:
 
-$scope.$apply(function () {
+```js
+$scope.`$apply`(function () {
 	$scope.val1 = ‘test’;
 });
+```
 
 #### Examples of correct code for this rule:
 
@@ -347,11 +421,13 @@ If you want to remove AngularJS $watch this rule can help you by warning you of 
 
 #### Examples of incorrect code for this rule:
 
+```js
 $scope.$watch(‘testVal’, function (nv) {
 	If (nv) {
 	console.log(‘new value’, nv);
 }
 });
+```
 
 #### Examples of correct code for this rule:
 
@@ -367,7 +443,9 @@ If you want to remove AngularJS $filter this rule can help you by warning you of
 
 #### Examples of incorrect code for this rule:
 
+```js
 $scope.fullDate = $filter('date')(today, 'fullDate');
+```
 
 #### Examples of correct code for this rule:
 
@@ -383,19 +461,25 @@ If you want to remove AngularJS $window this rule can help you by warning you of
 
 #### Examples of incorrect code for this rule:
 
+```js
 $window.alert(‘hello world’);
+```
 
 ### Use
 
+```js
 Application.$controller(‘$scope’, ‘$window’ function($scope, myService) {
 $window.alert(‘hello world’);
 });
+```
 
 #### Examples of correct code for this rule:
 
 $window is not supported in 10x. “Window” can be used in 10x instead of $window.
 
+```js
 window.alert(“hello world”);
+```
 
 ## No AngularJS Component
 
@@ -407,12 +491,14 @@ If you want to remove AngularJS components this rule can help you by warning you
 
 #### Examples of incorrect code for this rule:
 
+```js
 Application.component(‘greetUser’, {
 	template: ‘Hello, {{$ctrl.user}}!’,
 	controller: function GreetUserController() {
 		this.user = ‘world’;
 }
 });
+```
 
 ### Use
 
@@ -430,6 +516,7 @@ If you want to remove AngularJS directives this rule can help you by warning you
 
 #### Examples of incorrect code for this rule:
 
+```js
 Application.directive.directive('helloWorld', function() {
     return {
         restrict: 'E',
@@ -439,6 +526,7 @@ Application.directive.directive('helloWorld', function() {
         template: 'Hello {{name}}'
     }
 });
+```
 
 ### Use
 
@@ -456,6 +544,7 @@ If you want to remove AngularJS Provider this rule can help you by warning you o
 
 #### Examples of incorrect code for this rule:
 
+```js
 Application.provider(“test”, function () {
 	var type;
 	return {
@@ -475,6 +564,7 @@ Application.config(function (testProvider) {
 Application.controller(“AppCtrl”, function ($scope, test) {
 	$scope.title = test.title;
 });
+```
 
 #### Examples of correct code for this rule:
 
@@ -490,11 +580,15 @@ If you want to remove AngularJS $parent this rule can help you by warning you of
 
 #### Examples of incorrect code for this rule:
 
+```js
 $scope.$parent.testValue = ‘test’;
+```
 
 ### Use
 
+```js
 $scope.$parent.testValue;
+```
 
 #### Examples of correct code for this rule:
 
@@ -510,6 +604,7 @@ If you want to remove AngularJS RouteParams this rule can help you by warning yo
 
 #### Examples of incorrect code for this rule:
 
+```js
 Application.config(function($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('');
     $routeProvider
@@ -529,6 +624,7 @@ Application.controller('aboutCtrl', function($routeParams) {
     $scope.paramOnePrint = $routeParams.paramOne;
     $scope.paramTwoPrint = $routeParams.paramTwo;
 });
+```
 
 #### Examples of correct code for this rule:
 
