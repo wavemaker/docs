@@ -71,7 +71,7 @@ Page.Widgets.formName.formfields.fieldName.setValidators([lastNameVal]);
 function lastNameVal(field, form) {
    if (field.value && field.value.length < 2) {
        return {
-           "errorMessage ": "Enter your full last name."
+           errorMessage: "Enter your full name."
        };
    }
 }
@@ -142,7 +142,7 @@ In the following lines of code, it displays an error message if the password and
 function confirmPasswordEval(field, form) {
    if (field.value && form.formfields.password.value != field.value) {
        return {
-           errorMessage: "Password & ConfirmPassword are not same"
+           errorMessage: "Password & ConfirmPassword are not the same value"
        };
    }
 }
