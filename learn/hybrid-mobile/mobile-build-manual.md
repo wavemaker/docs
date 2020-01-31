@@ -22,26 +22,32 @@ To perform a Cordova Build, from the **Main Menu** of the Project Workspace, u
 
 Before clicking on Save/Build, you need to set the build properties: Refer to the properties section of [Android Build](/learn/hybrid-mobile/mobile-build-manual#for-android) and [iOS  Build](/learn/hybrid-mobile/mobile-build-manual#phonegap).
 
-[![](/learn/assets/Build_Cordova_Zip.png)](/learn/assets/Build_Cordova_Zip.png) To save the properties for future builds,  click **Save. **Click on **Build** to download the zip file.
+[![](/learn/assets/Build_Cordova_Zip.png)](/learn/assets/Build_Cordova_Zip.png) 
 
-1. Ensure that Cordova@8.1.1 is setup on your machine, [see here for details](https://cordova.apache.org/).
+To save the properties for future builds,  click **Save**. Click on **Build** to download the zip file.
+
+1. Ensure that Cordova@9.0.0 is setup on your machine, [see here for details](https://cordova.apache.org/).
 2. Extract the zip contents (say, CORDOVA_PROJECT folder)
 3. In the terminal, go to CORDOVA_PROJECT (where the file was extracted to) directory and run the following commands:
 
 ### For Android
-```       
-$cordova platform add android@7.1.2
-```        
-The above command will add Android Platform to your project structure and also install all plugins that you specified in config.xml.
-```        
+
+```
+$cordova platform add android@8.0.0
+```
+
+The above command will add Android Platform to your project structure and also install all plugins that you specified in `config.xml`.
+
+```
 $cordova build
 ```
-Once the build completes you can find the debug version of .apk in your platform/android/build/outputs/apk folder.
+
+Once the build completes you can find the debug version of `.apk` in your `platform/android/build/outputs/apk` folder.
 
 ### For publishing to Play store
 
 - You need a Keystore for signing your apk if you do not have the Keystore create one [following these instructions](http://docs.phonegap.com/phonegap-build/signing/android/#generating-a-private-key).
-- In CORDOVA_PROJECT/platforms/android folder, create a file named "**release-signing.properties**" with following details:
+- In CORDOVA_PROJECT/platforms/android folder, create a file named **`release-signing.properties`** with following details:
 
 ```
 storeFile=<path to keystore file>
@@ -93,4 +99,3 @@ Or you can safely issue Cordova commands as well.
 $phonegap cordova platform add ios
 $phonegap cordova build ios --device
 ```
-

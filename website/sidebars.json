@@ -467,6 +467,7 @@
           "Developer-side":
           [
             "how-tos/synchronizing-wavemaker-apps-ides-beta",
+            "how-tos/synchronizing-java-services-controller",
             "how-tos/integrating-amazon-cognito-user-authentication",
             "how-tos/integrating-sample-jasper-report-wavemaker-application",
             "how-tos/generate-pdf-file-using-jasper-reports",
@@ -689,6 +690,7 @@
       "app-development/widgets/datalive/form/form-layouts",
       "app-development/widgets/datalive/form/form-configurations",
       "app-development/widgets/datalive/form/form-fields-configuration",
+      "app-development/widgets/datalive/form/form-field-validator",
       "app-development/widgets/datalive/form/form-events-methods"      
     ],
 
@@ -705,7 +707,8 @@
       "app-development/widgets/datalive/live-form/liveform-use-cases"
     ],
 
-    "Form Widgets": [ 
+    "Form Widgets": 
+    [ 
       "app-development/widgets/form-widgets/button",
       "app-development/widgets/form-widgets/button-group",
       "app-development/widgets/form-widgets/text",
@@ -843,6 +846,16 @@
     "Release Notes": 
       [
       "wavemaker-release-notes",
+      
+      {
+        "type": "subcategory",
+        "label": "Versions: 10.3.x",
+        "ids": 
+          [              
+            "wavemaker-release-notes/v10-3-0"
+          ]
+      },
+
       {
         "type": "subcategory",
         "label": "Versions: 10.2.x",
