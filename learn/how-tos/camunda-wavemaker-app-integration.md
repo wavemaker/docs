@@ -81,7 +81,7 @@ Note: Please make sure to add Content-Type value as application/json in Header P
 
 [![lftr_sel](/learn/assets/importcamunda_api.png)](/learn/assets/importcamunda_api.png)
 
-#### Implement the Pre-processing service before incoking Database API
+#### Implement the Pre-processing service before invoking Database API
 
 ```java
         @Override
