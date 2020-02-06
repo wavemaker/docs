@@ -146,8 +146,8 @@ This method sets the input field value against the specified field(key).
 **Example**:
 ```
 var sv = Page.Variables.[variable_name];
-    sv.setInput("fname": "Peter");
-    sv.setInput("lname": "Parker");
+    sv.setInput("fname","Peter");
+    sv.setInput("lname","Parker");
     sv.invoke();
 ```
 ## setInput(object)
