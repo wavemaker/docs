@@ -18,10 +18,11 @@ WaveMaker Studio supports you to build mobile applications in the following ways
 2. Download and install a [git client](https://git-scm.com/downloads).
 3. Install Cordova module using `npm` utility of Node.js.
 - on OS X and Linux:
+
 ```
 $ sudo npm install -g cordova
 ```
-   - on Windows:
+- on Windows:
 
 ```
 C:\>npm install -g cordova
