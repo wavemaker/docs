@@ -4,7 +4,7 @@ id: ""
 ---
 ---
 
-The **Build** process for a mobile application can be performed through Automated Build process where you can generate .apk (Android application package) or .ipa file (iOS App Store package). Another way is to download Cordova/PhoneGap compatible .zip files to build systems manually for Android/iOS platforms.
+The **Build** process for a mobile application can be performed through an automated build process where you can generate .apk (Android application package) or .ipa file (iOS App Store package). Another way is to download Cordova/PhoneGap compatible .zip files to build systems manually for Android/iOS platforms.
 
 WaveMaker Studio supports you to build mobile applications in the following ways:
 
@@ -12,9 +12,26 @@ WaveMaker Studio supports you to build mobile applications in the following ways
 - **[Send to PhoneGap](/learn/hybrid-mobile/mobile-build-phonegap/)**: Through this build, it provides you a complete package of building both apk/ipa files for Android and iOS platforms.
 - **[Manual Build](/learn/hybrid-mobile/mobile-build-manual)**: Through this build, you can generate or download a .zip file which can be further developed to be hosted on any mobile platform.
 
+## Prerequisites for Manual Build
+
+1. Download and install [Node.js](https://nodejs.org/en/download/). On installation, you should be able to invoke `node` and `npm`.
+2. Download and install a [git client](https://git-scm.com/downloads).
+3. Install Cordova module using `npm` utility of Node.js.
+- on OS X and Linux:
+```
+$ sudo npm install -g cordova
+```
+   - on Windows:
+
+```
+C:\>npm install -g cordova
+```
+
+For more information about installing the Cordova CLI, see [Installing the Cordova CLI](https://cordova.apache.org/docs/en/latest/guide/cli/#installing-the-cordova-cli).
+
 ## Manual Build - Cordova zip
 
-If you want to customize build process you can issue Cordova/PhoneGap commands seamlessly for building artifacts.
+If you want to customize the build process you can issue Cordova/PhoneGap commands seamlessly for building artifacts.
 
 To perform a Cordova Build, from the **Main Menu** of the Project Workspace, under **Export** option select **Download as Cordova Zip.** It opens the **Build Cordova Zip** window.
 
