@@ -5,7 +5,7 @@ sidebar_label: "Add external VCS Configuration"
 ---
 ---
 
-When multiple developers are sharing the development base, tracking code changes and synchronizing the changes is of essence. WaveMaker provides Version Control Services for this purpose. By default, WaveMaker Studio comes with a version control system that runs within your VM based on Gitlab. You can choose to add an external repo of your choice.
+When multiple developers are sharing the development base, tracking code changes and synchronizing the changes is essential part of development. Therefore, WaveMaker provides Version Control Services. By default, WaveMaker Studio comes with a version control system that runs within your VM based on Gitlab. You can choose to add an external repository of your choice. Follow the steps below to add a new external repository. 
 
 1. From Launchpad, go to **Code Repository**. It displays the list of configured VCS servers. 
 
