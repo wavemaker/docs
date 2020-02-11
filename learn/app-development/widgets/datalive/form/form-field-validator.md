@@ -1,5 +1,5 @@
 ---
-title: "Validator Function"
+title: "Form Field Validator Function"
 id: ""
 sidebar_label: "Field Validations"
 ---
@@ -59,7 +59,7 @@ var VALIDATOR = App.getDependency(‘CONSTANTS’).VALIDATOR;
 |mintime | `VALIDATOR.MINTIME` |
 |maxtime | `VALIDATOR.MAXTIME` |
 
-### Custom Validators using functions
+### Custom Validators using Functions
 
 These validations can contain custom validations. Follow the steps below to add customizations to the form field.
 
@@ -79,7 +79,7 @@ function lastNameVal(field, form) {
 
 In the above example, `firstNameVal` function accepts field and form as arguments. This function returns an error message if the condition fails.
 
-### Example using objects and custom validator functions
+### Example using Objects and Custom Validator Functions
 
 In the following example, form `EmployeeForm1` has multiple validations, including email, it should validate regular expression `REGEXP` and should not be empty.
 
@@ -187,3 +187,23 @@ The form validators should be applied only after form fields are rendered. For e
 
 If you do not want to trigger the async validation when the value is null then just have some default validators on the field like minLength on the field to be one/two characters or set the field as required which prevents the async validation on form render.
 :::
+
+## Customizing Error Messages
+
+Customize form field validation error messages using functions, or simply use a string value to display error messages for form field validation.
+
+### Example for Customizing Error Messages
+
+You can customize error messages to make it more specific to what the user enters. In the following example, the `field.value` is the user-entered value which displays in the error message along with the extended text as shown below.
+
+```js
+errorMessage: function(field, form) {
+    return field.value + " is not a valid Email.";
+    }
+```
+
+To use a static message, simply use a string value with your own error message.
+
+```js
+errorMessage: "The entered value is not a valid email address."
+```
