@@ -38,7 +38,7 @@ Page.Widgets.formName.formfields.fieldName.setValidators([{
 In the above example, `VALIDATOR` can be accessed from constants service as shown below.
 
 ```js
-var VALIDATOR = App.getDependency(‘CONSTANTS’).VALIDATOR;
+var VALIDATOR = App.getDependency('CONSTANTS').VALIDATOR;
 ```
 
 ### Validator Types
