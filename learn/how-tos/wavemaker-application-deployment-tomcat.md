@@ -24,6 +24,9 @@ The minimum required JDK version is 1.8.
     - `manager-gui` for Tomcat `v8.x` and `v9.x`
 - [WaveMaker application war file to be deployed](/learn/app-development/deployment/deployment-web-server/#generate-a-war-file).
 
+## Typical Hardware requirements
+4 GB RAM, 2 core CPU, 100GB disk
+
 ## Deployment Process
 
 The deployment on Tomcat can be done either by copying the war file into web apps folder or by using Management portal.
