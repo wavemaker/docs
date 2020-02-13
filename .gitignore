@@ -18,4 +18,5 @@ website/package-lock.json
 
 website/cypress/videos
 website/cypress/report
+website/cypress/screenshots
 website/cypress/fixtures/changedFiles.json
