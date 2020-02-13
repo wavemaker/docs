@@ -27,7 +27,7 @@ The minimum required JDK version is 1.8.
 ## Typical Hardware requirements
 4 GB RAM, 2 core CPU, 100GB disk
 
-Capacity planning with your application and usage will yeild more accurate hardware requirements. 
+Capacity planning with your application and its expected usage will yeild more accurate hardware requirements. 
 
 ## Deployment Process
 
