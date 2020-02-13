@@ -12,8 +12,8 @@ WaveMaker Apps can be exported as a WAR file. This generated file can be deploye
 
 WaveMaker application can be deployed on any of the following versions of the Tomcat:
 
-- Tomcat 8.x
-- Tomcat 9.x
+- 8.5.48 onwards for 8.5.x 
+- 9.0.28 onwards for 9.0.x
 
 The minimum required JDK version is 1.8.
 
@@ -26,6 +26,8 @@ The minimum required JDK version is 1.8.
 
 ## Typical Hardware requirements
 4 GB RAM, 2 core CPU, 100GB disk
+
+Capacity planning with your application and usage will yeild more accurate hardware requirements. 
 
 ## Deployment Process
 
