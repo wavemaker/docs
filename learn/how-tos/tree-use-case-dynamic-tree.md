@@ -1,12 +1,14 @@
 ---
 title: "Tree Use Case - Dynamic Tree"
-id: ""
+id: "tree-use-case-dynamic-tree"
+sidebar_label: "Tree using Dynamic Tree"
 ---
 ---
+
 If you have a requirement, whereby the user decides the structure of the tree. For example, you are building a folder-file structure and the user decides how many folders and files are to be present in a tree. This section deals with such a situation.
 
-1. Drop a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas
-2. Select the Tree widget and specify a _Script Variable_ as **dataset** property, "_treeData_" 
+1. Drop a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas.
+2. Select the Tree widget and specify a _Script Variable_ as **dataset** property, "_treeData_".
 
 [![](/learn/assets/tree_dynamic_design.png)](/learn/assets/tree_dynamic_design.png)
 
@@ -27,12 +29,14 @@ Page.treeData = [{
 ```    
 
 4. Select JavaScript for the onSelect event of the tree widget as:
-```js    
+
+```js
 Page.activeTreeElement = $item;
-```    
+```
+
 5. For the buttons addfile and add folder, select JavaScript for the onClick events and add the following code:
 
-```js    
+```js
 Page.addfileClick = function ($event, widget) {
     // add file
     if (Page.activeTreeElement) {
@@ -68,4 +72,3 @@ Page.addfolderClick = function ($event, widget) {
 [Tree Widget Cases](/learn/app-development/widgets/basic/tree/)  
 [How to build a tree from static variable](/learn/how-tos/tree-use-case-static-variable/)  
 [How to build tree from java service](/learn/how-tos/tree-use-case-java-service/)  
-[How to build a dynamic tree](/learn/how-tos/tree-use-case-dynamic-tree/)  
