@@ -25,7 +25,7 @@ In the given example, we use the Product table which invokes data from the Sales
 ## Creating a database API
 
 - In the DataBases menu, navigate to the **Query** tab.
-- Create a query to get the total sales value from the **Sales **table. For example, write the following lines of code in the query builder to get the sum of sales.
+- Create a query to get the total sales value from the **Sales** table. For example, write the following lines of code in the query builder to get the sum of sales.
 
 ```sql
 SELECT SUM(SALES) AS TOTAL
@@ -42,7 +42,7 @@ FROM SALES
 WHERE PRODUCT_ID = :productId
 ```
 
-- Add parameters for the `PRODUCT_ID` including TYPE and Test Value. For examples, Type: Integer; Test Value: 2;
+- Add parameters for the `PRODUCT_ID` including TYPE and Test Value. For examples, Type: `Integer;` Test Value: `2;`
 
 [![](/learn/assets/DataBaseParams.png)](/learn/assets/DataBaseParams.png) 
 
@@ -92,8 +92,8 @@ WHERE PRODUCT_ID = :productId
     6. Similarly, add another variable. Follow the steps 1, 2, 3 in the variable configuration page.
     7. Select the **Query** from the drop-down. For example, `executeSalesByProduct`.
     8. Provide a **Name** to the variable as `ServiceSalesByProduct`, and click **Done**.
-    9. For `ServiceSalesByProduct`, configure the Data to bind with productId.
-    10. Go to the widgets tab, select `ProductsTable2` → `selecteditem` → id.
+    9. For `ServiceSalesByProduct`, configure the Data to bind with `productId`.
+    10. Go to the widgets tab, select `ProductsTable2` → `selecteditem` → `id`.
 
 [![](/learn/assets/BindServiceandTableID.png)](/learn/assets/BindServiceandTableID.png)
 
@@ -105,15 +105,15 @@ WHERE PRODUCT_ID = :productId
 - Select the progress circle and open the property settings. 
 - Set the **Default Value**; for example, enter any number for a static value. For dynamic update, bind the **Default** value with the variable called _Service_ `SalesByProduct.dataSet[$i].productSale`.
     - Click bind for the Default value in the properties.
-    - Go to Variable tab and select `ServiceSalesByProduct` → dataset → `productSale`. See the image below:
+    - Go to Variable tab and select `ServiceSalesByProduct` → `dataSet` → `productSale`. See the image below:
     - Click **Bind**.
 
 [![](/learn/assets/BindProgressCircleDefault.png)](/learn/assets/BindProgressCircleDefault.png)
 
 - Set validation for **Minimum Value** if you want to set a value other than “0”.
-- Set the **Maximum**** Value**; for example, enter any number for a static value. For dynamic update, bind the **Maximum** value with the variable called `ServiceMaximumValue.dataSet[$i].total`.
+- Set the **Maximum Value**; for example, enter any number for a static value. For dynamic update, bind the **Maximum** value with the variable called `ServiceMaximumValue.dataSet[$i].total`.
     - Click bind for the **Maximum** value in the properties.
-    - Go to Variable tab and select ServiceMaximumValue → dataset → total.  See the image below:
+    - Go to the Variable tab and select `ServiceMaximumValue` → `dataSet` → `total`.  See the image below:
     - Click **Bind.**
 
 [![](/learn/assets/BindProgressCircleMaximum.png)](/learn/assets/BindProgressCircleMaximum.png)
