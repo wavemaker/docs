@@ -1,29 +1,31 @@
 ---
 title: "Tree Use Case - from Java Service"
-id: ""
+id: "tree-use-case-java-service"
+sidebar_label: "Tree using Java Service"
 ---
 ---
 
-1. Create the source structure for Tree as a [Java Service](/learn/app-development/services/java-services/java-service/) by name _TreeData_
+1. Create the source structure for Tree as a [Java Service](/learn/app-development/services/java-services/java-service/) by name _TreeData_.
 2. The following code needs to be added to the Java service.
 
 - Import the ArrayList utility:
 
-```java        
+```java
 import java.util.ArrayList;
 import java.util.List;
-```        
+```
+
 - Add the following array structure:
 
-```java        
+```java
 public String label;
 public String icon;
 public List<TreeData> subItems;
 ```
-        
+
 - Add the following methods:
 
-```java        
+```java
 public TreeData() {
 
     }
@@ -56,11 +58,11 @@ public TreeData() {
     public void setIcon(String icon) {
         this.icon = icon;
     }
-```        
-    
+```
+
 - Add the following main method:
 
-```java        
+```java
 public List<TreeData> sampleJavaOperation(String name) {
         String result = null;
         try {
@@ -105,13 +107,12 @@ public List<TreeData> sampleJavaOperation(String name) {
 }
 ```
 
-3. Create a [Java Service Variable](/learn/assets/var_sel.png)Service to invoke the above Java Service
-4. Drag and drop a Tree widget, bind the Dataset to the above Java Service Variable
+3. Create a [Java Service Variable](/learn/assets/var_sel.png)Service to invoke the above Java Service.
+4. Drag and drop a Tree widget, bind the Dataset to the above Java Service Variable.
 5. Preview the page to see Tree widget in action.
 
 ## See Also
 
 [Tree Widget Cases](/learn/app-development/widgets/basic/tree/)  
 [How to build a tree from static variable](/learn/how-tos/tree-use-case-static-variable/)  
-[How to build tree from java service](/learn/how-tos/tree-use-case-java-service/)  
 [How to build a dynamic tree](/learn/how-tos/tree-use-case-dynamic-tree/)  

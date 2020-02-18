@@ -1,6 +1,7 @@
 ---
-title: "Nav - Basic Usage"
-id: ""
+title: "Navigation - Basic Usage"
+id: "nav-basic-usage"
+sidebar_label: "Creating navigation"
 ---
 ---
 
