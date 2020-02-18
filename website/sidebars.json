@@ -586,6 +586,11 @@
             "how-tos/configuring-cascading-select"
           ],
 
+          "Progress Circle":
+          [
+            "how-tos/using-progress-circle-widget"
+          ],
+
           "Charts":
           [
             "how-tos/charts-displaying-user-selection-another-widget",
@@ -767,6 +772,7 @@
       "app-development/widgets/basic/message",
       "app-development/widgets/basic/media-widgets",
       "app-development/widgets/basic/progress-bar",
+      "app-development/widgets/progress-circle",
       "app-development/widgets/basic/richtext-editor",
       "app-development/widgets/basic/search",
       "app-development/widgets/basic/search-basic-usage",
