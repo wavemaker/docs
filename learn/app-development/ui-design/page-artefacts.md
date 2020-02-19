@@ -29,7 +29,7 @@ The **Button** widget is identified by name="formSubmitButton"  and some of th
 
 ## Page Script
 
-In the **Script **mode, you can define JavaScript functions that can be executed on specific events of user interaction. You can use JavaScript to further customize your WaveMaker application. The various methods and properties associated with each of the WaveMaker elements can be found in the [API Documentation](https://www.wavemakeronline.com/studio/#{wmVersionNumber}#/docs). The various ways to access the variables, widgets etc. within an application can be [found here](/learn/app-development/variables/accessing-elements-via-javascript/ "Script Access to Widgets, Variables and more").
+In the **Script **mode, you can define JavaScript functions that can be executed on specific events of user interaction. You can use JavaScript to further customize your WaveMaker application. The various methods and properties associated with each of the WaveMaker elements can be found in the [API Documentation](https://www.wavemakeronline.com/studio/latest/docs). The various ways to access the variables, widgets etc. within an application can be [found here](/learn/app-development/variables/accessing-elements-via-javascript/ "Script Access to Widgets, Variables and more").
 
 For instance, to call a JavaScript function for a widget event, choose the _JavaScript _option in the **Events** section of **Properties Panel**. WaveMaker automatically switches to **Script** mode.
 
