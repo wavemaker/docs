@@ -3,7 +3,7 @@ title: "Calender Usage - Google Calendar Integration"
 id: ""
 ---
 
-**After following the below mentioned documentation, You will get the calendar as something similar to the following screenshot.**
+Google Calendar is one of the most popular ways to manage events, meetings, holidays and anything else that needs to be scheduled. In this document you'll learn how to integrate google calendar events into the WaveMaker calendar widget.
 
 [![](/learn/assets/google_calendar.png)](/learn/assets/google_calendar.png)
 
@@ -43,7 +43,7 @@ Obtain your **Google Calendar's ID**
 1. Open a web responsive app
 2. Drag and drop a Calendar widget
 3. Insert the below function in the Page.onPageReady function of script part of the calendar widget page. Here our calendar name will be the same as that of name attribute of the calendar.
-    ```
+    ```javascript
      Page.Widgets.MyCalendar.addEventSource({
         source: 'google',
         googleCalendarApiKey: '*********', // your google API key.
