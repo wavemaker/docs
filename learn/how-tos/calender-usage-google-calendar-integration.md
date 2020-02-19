@@ -3,6 +3,10 @@ title: "Calender Usage - Google Calendar Integration"
 id: ""
 ---
 
+Google Calendar is one of the most popular ways to manage events, meetings, holidays and anything else that needs to be scheduled. In this document you'll learn how to integrate google calendar events into the WaveMaker calendar widget.
+
+[![](/learn/assets/google_calendar.png)](/learn/assets/google_calendar.png)
+
 **Prerequisites**:
 
 Obtain **Google Calendar API Key**
@@ -20,10 +24,12 @@ Make your **Google Calendar public:**
 
 1. In the Google Calendar interface, locate the "My calendars" area on the left.
 2. Hover over the calendar you need and click the downward arrow.
-3. A menu will appear. Click "Share this Calendar".
+3. Click "Calendar settings" and go to Access permissions.
 4. Check "Make this calendar public".
 5. Make sure "Share only my free/busy information" is **unchecked**.
 6. Click "Save".
+
+  For more information, please follow this link https://support.google.com/calendar/answer/37083?hl=en.
 
 Obtain your **Google Calendar's ID**
 
@@ -36,25 +42,15 @@ Obtain your **Google Calendar's ID**
 
 1. Open a web responsive app
 2. Drag and drop a Calendar widget
-3. Insert the below snippet in the script part of the calendar widget page. Insert the below code in the Page.onPageReady function. Here our calendar name is wmcalendar.
-    
-     var googleCalendarOptions = {
-                googleCalendarApiKey: 'your\_google\_api\_key',
-                events: {
-                    googleCalendarId: 'your\_calendar\_id',
-                    eventDataTransform: function(events) {
-                        Page.Widgets.wmcalendar.dataSet = events;
-                        return events;
-                    }
-                }
-            };
-    $.getScript("https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/gcal.js", 
-      function(){
-         \_.extend(Page.Widgets.wmcalendar.calendarOptions.calendar, googleCalendarOptions);
-    });
-    
-4. Now the calendar is successfully configured with the google.
-5. In order to use the data received from the google calendar API, the data will be sent to the _eventDataTransform_ callback which we have assigned earlier in the _googleCalendarOptions_ variable. Use the events parameter sent to the function. The events parameter would contain the data we received from the google calendar API.
+3. Insert the below function in the Page.onPageReady function of script part of the calendar widget page. Here our calendar name will be the same as that of name attribute of the calendar.
+    ```javascript
+     Page.Widgets.MyCalendar.addEventSource({
+        source: 'google',
+        googleCalendarApiKey: '*********', // your google API key.
+        googleCalendarId: 'en.usa#holiday@group.v.calendar.google.com' // Your google calendar Id. 
+    })
+    ```  
+4. Now the calendar is successfully configured with google calendar.
 
 [Calendar Cases](/learn/app-development/widgets/form-widgets/calendar/#use-cases)
 
