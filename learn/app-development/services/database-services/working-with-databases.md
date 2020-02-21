@@ -40,6 +40,31 @@ This option lets you create a database by importing a DB Script. This option is 
 ## Create your own DB
 You can create your own database using the database designer. Using this option you can create MySQL, PostgreSQL, or SQL Server database and host them on WaveMaker Cloud (for MariaDB) or your external database.
 
+
+## Advanced Settings (only for External Databases)
+
+Apart from the basic Database settings like host details, schema name etc., **advanced database configuration options** need to be provided, when using an External Database. Based upon the basic settings the Advanced Settings are auto-populated but can be modified. Each Database System provides different options so you will see a portion of the options listed below, tailored to the Database System you are using.
+
+:::note 
+For connecting to an external database, you need to **Test Connection** before proceeding.
+:::
+
+| Setting | Description |
+| --- | --- |
+| **Service Name** | Name used to reference the imported database. By default, this is same as the Database Name, defined in Database Info section (not available for HSQL). Also,the database service name can only be given at the time of importing the database.
+
+|
+| **Port** | The port number for the database. Typically this is set automatically when the database type is selected and should not be changed (not available for HSQL and MariaDB). |
+| **Connection URL** | When you import a database using the standard configuration options on the Import Database screen, WaveMaker creates a JDBC URL for you. This URL is shown here in the Connection URL field. These are usually specific to the database type. For example with MySQL some character set usage could require adding “?useUnicode=true&characterEncoding=UTF-8” to the URL to characters to display correctly. If you know what you are doing and want to change this JDBC URL, you can do it here. |
+| **Java Package** | WaveMaker generates Java classes for you when you import a database. If you want a different Java package name than the default name we generate, type it in here. |
+| **Table Filter** | By default WaveMaker imports all the tables in the database. If you want to import only a subset of the tables, type in a comma-delimited list of regular expressions here (not available for HSQL and MariaDB). |
+| **Schema Filter** | When you are importing a database that supports schemas, WaveMaker imports only the tables for the default schema. If you want to import tables from other schemas, add the schema names in this field. |
+| **Driver Class** | JDBC driver class name. WaveMaker creates a JAR file for each database that uses a specified driver. If you want to use a different JAR file for connecting, specify it here (the JAR file must be in the Application Server’s classpath). |
+| **Dialect** | Hibernate dialect. See Hibernate documentation for details, including the list of available dialects. |
+| **Naming Strategy** | Most users should leave this blank. Enter the name of a Java class you created for handling the naming strategy (not available for HSQL and MariaDB) |
+
+
+
 ## Configuring Virtual Primary Key
 
 ##### 10.0 release
@@ -82,24 +107,4 @@ Once you have your app integrated with a database, schema information will be pe
 |**Save Database**  |Save Database will save the db in your app workspace, this is the draft copy of the database solely available to your app. |
 |**Update Database**  | Update Database will update the db with the changes from your workspace and incorporate changes made by any other collaborator (provided they have exported the changes). <br> This option is available after you make changes to the database schema from the design tab of the database designer. |
 |**Revert Database**  | Revert Database will revert the db and delete the changes from your workspace. This option is available after you make changes to the database schema from the design tab of the database designer. |
-
-## Advanced Settings (only for External Databases)
-
-Apart from the basic Database settings like host details, schema name etc., **advanced database configuration options** need to be provided, when using an External Database. Based upon the basic settings the Advanced Settings are auto-populated but can be modified. Each Database System provides different options so you will see a portion of the options listed below, tailored to the Database System you are using.
-
-:::note 
-For connecting to an external database, you need to **Test Connection** before proceeding.
-:::
-
-| Setting | Description |
-| --- | --- |
-| **Service Name** | Name used to reference the imported database. By default, this is same as the Database Name, defined in Database Info section (not available for HSQL and MariaDB). |
-| **Port** | The port number for the database. Typically this is set automatically when the database type is selected and should not be changed (not available for HSQL and MariaDB). |
-| **Connection URL** | When you import a database using the standard configuration options on the Import Database screen, WaveMaker creates a JDBC URL for you. This URL is shown here in the Connection URL field. These are usually specific to the database type. For example with MySQL some character set usage could require adding “?useUnicode=true&characterEncoding=UTF-8” to the URL to characters to display correctly. If you know what you are doing and want to change this JDBC URL, you can do it here. |
-| **Java Package** | WaveMaker generates Java classes for you when you import a database. If you want a different Java package name than the default name we generate, type it in here. |
-| **Table Filter** | By default WaveMaker imports all the tables in the database. If you want to import only a subset of the tables, type in a comma-delimited list of regular expressions here (not available for HSQL and MariaDB). |
-| **Schema Filter** | When you are importing a database that supports schemas, WaveMaker imports only the tables for the default schema. If you want to import tables from other schemas, add the schema names in this field. |
-| **Driver Class** | JDBC driver class name. WaveMaker creates a JAR file for each database that uses a specified driver. If you want to use a different JAR file for connecting, specify it here (the JAR file must be in the Application Server’s classpath). |
-| **Dialect** | Hibernate dialect. See Hibernate documentation for details, including the list of available dialects. |
-| **Naming Strategy** | Most users should leave this blank. Enter the name of a Java class you created for handling the naming strategy (not available for HSQL and MariaDB) |
 
