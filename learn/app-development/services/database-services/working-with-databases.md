@@ -41,7 +41,7 @@ This option lets you create a database by importing a DB Script. This option is 
 You can create your own database using the database designer. Using this option you can create MySQL, PostgreSQL, or SQL Server database and host them on WaveMaker Cloud (for MariaDB) or your external database.
 
 
-## Advanced Settings (only for External Databases)
+### Advanced Settings (only for External Databases)
 
 Apart from the basic Database settings like host details, schema name etc., **advanced database configuration options** need to be provided, when using an External Database. Based upon the basic settings the Advanced Settings are auto-populated but can be modified. Each Database System provides different options so you will see a portion of the options listed below, tailored to the Database System you are using.
 
@@ -61,7 +61,7 @@ For connecting to an external database, you need to **Test Connection** before p
 | **Dialect** | Hibernate dialect. See Hibernate documentation for details, including the list of available dialects. |
 | **Naming Strategy** | Most users should leave this blank. Enter the name of a Java class you created for handling the naming strategy (not available for HSQL and MariaDB) |
 
-## Configuring Virtual Primary Key
+### Configuring Virtual Primary Key
 
 ##### 10.0 release
 
@@ -84,7 +84,7 @@ After importing, you can always assign Virtual Primary key from the Database Des
 
 [![](/learn/assets/DB_import3.png)](/learn/assets/DB_import3.png)
 
-## Map Sequences
+### Map Sequences
 
 For databases that support sequences (Oracle, SQL Server, PostgreSQL, DB2, etc.) for the Primary Key generation, the mapping of Primary Key columns to the respective Sequences can be done at the time of connecting to Database.
 
