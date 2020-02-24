@@ -46,8 +46,8 @@ Repeat the steps 2 till 3 for the following:
 
 - Set the **content source** property to be _inline_
 - Set the _content_ as follows, we have used the list HTML from the partial page created in steps 2,3,4
-    
-```
+
+```html
 <wm-livelist listclass="media-list" itemclass="media" template="true" dataset="bind:Variables.HrdbExecuteEmpPic.dataSet" name="livelist1">
         <wm-listtemplate layout="media" name="listtemplate1">
             <wm-container class="media-left media-top" paddingleft="15" name="container1">
