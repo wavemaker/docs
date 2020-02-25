@@ -3,10 +3,13 @@ title: "Deliver WaveMaker Apps as Micro Frontend modules"
 author: Subodh Kumar
 ---
 
-# Deliver WaveMaker Apps as Micro Frontend modules
-## Introduction to Micro Frontends
+
 
 A Real world application is composed of multiple modules. Changes or upgrades to a given module can impact other modules & add more testing effort to the development timeline. Including a new technology into the existing app might be tough as the existing app might not include all support such as the build process. 
+
+<!-- truncate -->
+
+## Introduction to Micro Frontends
 
 One of the practices which simplifies development & maintenance of such apps is to decompose the application into modules which can be independently developed, tested and deployed. This is known as the **MicroServices** pattern. Adapting these practices to front end systems enables us to generate independent composable application modules. Such modules are called [**Micro Frontends**](https://www.martinfowler.com/articles/micro-frontends.html). 
 
@@ -64,14 +67,14 @@ WIth all the approaches & advantages described above, this pattern does come wit
 
 [**WaveMaker**](https://www.wavemakeronline.com/) is a RAD platform enabling users to develop high quality apps swiftly. Micro Frontends is a design practice which enables the users to scale their development & produce composable independent modules which can serve in building a new app or progressively integrate features to an existing app. To support phased modernisation methods our customers are adopting, we wanted to build support for this cutting edge design pattern in the microservices world.
  
-WaveMaker is the only low code platform to support Micro Frontend module extending RAD benefits to Micro Frontend development.  It adopts the Runtime integration approach for Micro Frontends & works with ‘Single-spa’ framework. 
+WaveMaker is the only low code platform to support Micro Frontend module extending RAD benefits to Micro Frontend development.  It adopts the Runtime integration approach for Micro Frontends & works with **Single-spa** framework. 
 
-[**Single-spa**](https://single-spa.js.org/) is a javascript framework for front-end microservices, with support to multiple framework modules. For any app to work with ‘Single-spa’, compatible artifacts need to be generated & integrated.
+[**Single-spa**](https://single-spa.js.org/) is a javascript framework for front-end microservices, with support to multiple framework modules. For any app to work with **Single-spa**, compatible artifacts need to be generated & integrated.
 
 WaveMaker support for Single SPA framework
-WaveMaker has developed a node based CLI to generate ‘Single-spa’ compatible artifacts for a given WaveMaker app. 
+WaveMaker has developed a node based CLI to generate **Single-spa** compatible artifacts for a given WaveMaker app. 
 
-> ###  [**wm-sspa-cli**](https://www.npmjs.com/package/wm-sspa-cli)
+> ####  [**wm-sspa-cli**](https://www.npmjs.com/package/wm-sspa-cli)
 
 The CLI requires the exported project location, deployed URL as its input. The CLI & details are available in the above link,
 
@@ -79,7 +82,7 @@ The CLI requires the exported project location, deployed URL as its input. The C
 
 
 
-The below steps can be followed to generate the ‘Single-spa’ artifacts for a given WaveMaker application.
+The below steps can be followed to generate the **Single-spa** artifacts for a given WaveMaker application.
 
 * Ensure the node >v10.15 is installed on the machine.
 * Login to [**WaveMaker**](https://www.wavemakeronline.com/), Deploy the project & note the deployed URL
@@ -124,19 +127,19 @@ The below steps can be followed to generate the ‘Single-spa’ artifacts for a
  ```
 * Once the changes are done in `index.html`, please follow the instructions in the `README.md` of the below link to start the [**Single-spa shell project**](https://github.com/joeldenning/coexisting-angular-microfrontends)
 
-### Next Steps
-**Single-spa** framework lets us compose & serve multi framework modules into an app by including compatible Javascript bundle. A real world web application when built will not just generate JS bundles but also produces CSS & other metadata artifacts. The Single-spa framework currently does not have any specific way of loading non-code, non-JS artifacts. For this specific reason, the users are requested to add the additional scripts in above mentioned steps.
+## Next Steps
+**Single-spa** framework lets us compose & serve multi framework modules into an app by including compatible Javascript bundle. A real world web application when built will not just generate JS bundles but also produces CSS & other metadata artifacts. The **Single-spa** framework currently does not have any specific way of loading non-code, non-JS artifacts. For this specific reason, the users are requested to add the additional scripts in above mentioned steps.
 
-WaveMaker is planning to work on a loader script which will take care of loading all the artifacts required for a WaveMaker app to work with Single-spa without the need of any additional loading scripts and provide seamless integration support in the coming releases.
+WaveMaker is planning to work on a loader script which will take care of loading all the artifacts required for a WaveMaker app to work with **Single-spa** without the need of any additional loading scripts and provide seamless integration support in the coming releases.
 
-### Screenshots
-#### HOME PAGE
+## Screenshots
+* #### Home
 [![screenshot](/learn/assets/wm-sspa-ss-home.png)](/learn/assets/wm-sspa-ss-home.png)
 
-#### SAMPLE ANGULAR APP
+* #### Angular App
 [![screenshot](/learn/assets/wm-sspa-ss-ng.png)](/learn/assets/wm-sspa-ss-ng.png)
 
-#### WAVEMAKER APP
+* #### WaveMaker App
 [![screenshot](/learn/assets/wm-sspa-ss-wm.png)](/learn/assets/wm-sspa-ss-wm.png)
 
 

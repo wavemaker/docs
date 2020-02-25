@@ -4,7 +4,7 @@ author: "Swetha Kundaram"
 ---
 
 We [released](/improve-your-app-development-experience-with-the-new-wavemaker-docs/) the new WaveMaker Docs site on the 14 November 2019. We migrated from WordPress to [Docusaurus](https://docusaurus.io/) with easy-to-edit markdown files. This change has also increased the contributions from our team members. 
-
+<!--truncate-->
 Since the release, we continued to make changes and improvements to the site very frequently, and now we have fully adapted to the new [GitHub workflow](https://guides.github.com/introduction/flow/). 
 
 In the recent additions to the site, we implemented the search, which was one of the most-waited and most-requested features. While WaveMaker documentation is well-indexed by Google; additionally, it has the ability to search within the site, which makes it easy to discover content inside and outside. 

@@ -45,6 +45,7 @@ const siteConfig = {
         {doc: 'app-development/widgets/widget-library', label: 'Widgets'},
 		{doc: 'howtos-documents', label: 'How-to'},
 		{doc: 'wavemaker-release-notes', label: 'Releases'},
+        {blog: true, label:'Blog'},
         {href: 'https://www.wavemakeronline.com/login/login', label: 'Login', external: true},
 		{href: 'https://www.wavemaker.com/get-started/', label: 'Start free trial', external: true}
     ],
