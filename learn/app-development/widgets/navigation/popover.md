@@ -1,6 +1,7 @@
 ---
-title: "Popover"
+title: "Popover Overview and Properties"
 id: ""
+sidebar_label: "Popover Overview"
 ---
 ---
 
