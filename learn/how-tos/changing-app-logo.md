@@ -14,7 +14,7 @@ App Logo is used in multiple places, for example:
 
 By default WaveMaker logo is used as app logo. You can change it by replacing the logo file.
 
-1. From the Main Menu, under **Import -> Resource** option locate the **logo** under the images folder. 
+1. In the File Explorer, under **Import -> Resource** option locate the **logo** under the images folder. 
 
 [![design_logo_resource](/learn/assets/design_logo_resource.png)](/learn/assets/design_logo_resource.png) 
 
