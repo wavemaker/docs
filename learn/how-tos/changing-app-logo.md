@@ -47,7 +47,7 @@ To use this method, you must use the same file name and same location.
 
 3. Delete this file and upload a new icon in the **same location with the same name**.
 
-4. Run the app and see the change.
+4. Run the app to view the change.
 
 ## See Also
 
