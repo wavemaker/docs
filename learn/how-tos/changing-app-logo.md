@@ -8,18 +8,46 @@ App Logo is used in multiple places, for example:
 - on the header of each page
 - on the login page
 
-[![design_logo](/learn/assets/design_logo.png)](/learn/assets/design_logo.png) 
+[![design_logo](/learn/assets/design_logo.png)](/learn/assets/design_logo.png)
 
 ## Steps to change app logo
 
-By default WaveMaker logo is used as app logo. You can change it by replacing the logo file.
+By default, the WaveMaker logo is used as an app logo. You can change it by replacing the logo file.
 
-1. From the Main Menu, under **Import -> Resource** option locate the **logo** under the images folder. 
+There are two ways to change the app logo.
 
-[![design_logo_resource](/learn/assets/design_logo_resource.png)](/learn/assets/design_logo_resource.png) 
+### Method-1: Change the logo from the header
 
-2. Delete this file and upload the icon of your choice at the **same location with the same name**.
-3. Run the app and see the change.
+1. Go to the page header, click the logo and navigate to the picture properties, and click bind.
+
+[![design_logo_resource](/learn/assets/app-logo-bind.png)](/learn/assets/app-logo-bind.png)
+
+2. In the following screen, navigate to the **logos** directory, and click **Upload New** to add new logo file.
+
+[![design_logo_resource](/learn/assets/app-logo-header.png)](/learn/assets/app-logo-header.png)
+
+3. Select the new uploaded logo, and click **Bind**.
+
+4. Save and run the app.
+
+
+### Method-2: Change logo from the File Explorer
+
+:::note
+To use this method, you must use the same file name and same location.
+:::
+
+1. Go to **File Explorer** -> **Resources** -> **Import Resource**.
+
+[![design_logo_resource](/learn/assets/import-resources.png)](/learn/assets/import-resources.png)
+
+2. Locate the logo file by using the Search. Or, navigate to **Images** -> **logos** directory -> `logo.png`.
+
+[![design_logo_resource](/learn/assets/design_logo_resource.png)](/learn/assets/design_logo_resource.png)
+
+3. Delete this file and upload a new icon in the **same location with the same name**.
+
+4. Run the app to view the change.
 
 ## See Also
 
