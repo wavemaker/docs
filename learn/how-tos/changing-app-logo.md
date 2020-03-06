@@ -34,20 +34,20 @@ There are two ways to change the app logo.
 ### Method-2: Change logo from the File Explorer
 
 :::note
-To use this method, you must use the same file name and same location.
+To use this method, you must use the same file name and the same location.
 :::
 
 1. Go to **File Explorer** -> **Resources** -> **Import Resource**.
 
 [![design_logo_resource](/learn/assets/import-resources.png)](/learn/assets/import-resources.png)
 
-2. Locate the logo file by using the Search. Or, navigate to **Images** -> **logos** directory -> `logo.png`.
+2. Navigate to **Images** -> **logos** directory -> `logo.png`. Alternatively, use the Search.
 
 [![design_logo_resource](/learn/assets/design_logo_resource.png)](/learn/assets/design_logo_resource.png)
 
 3. Delete this file and upload a new icon in the **same location with the same name**.
 
-4. Run the app to view the change.
+4. Run the app to view changes.
 
 ## See Also
 
