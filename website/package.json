@@ -1,9 +1,11 @@
 {
   "scripts": {
     "examples": "docusaurus-examples",
-    "start": "docusaurus-start",
-    "start:nw": "docusaurus-start --no-watch",
-    "build": "docusaurus-build",
+    "start": "concurrently \"docusaurus-start\" \"npm run build-slides\"",
+    "start:nw": "concurrently \"docusaurus-start --no-watch\" \"npm run build-slides:nw\"",
+    "build": "npm run build-slides:nw && docusaurus-build",
+    "build-slides": "node convertToSlides.js --watch",
+    "build-slides:nw": "node convertToSlides.js",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
@@ -24,6 +26,10 @@
     "mochawesome-report-generator": "^4.0.1",
     "remarkable-admonitions": "^0.2.1",
     "update": "^0.7.4",
-    "wait-on": "^3.3.0"
+    "wait-on": "^3.3.0",
+    "command-line-args": "5.1.1",
+    "remark": "11.0.2",
+    "markdown-to-slides": "1.0.5",
+    "concurrently": "5.1.0"
   }
 }

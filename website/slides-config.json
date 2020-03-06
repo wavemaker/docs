@@ -1,0 +1,5 @@
+{
+    "src": "slides",
+    "output": "pages/slides",
+    "theme": "static/css/remark-default-theme.css"
+}
