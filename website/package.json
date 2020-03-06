@@ -27,7 +27,6 @@
     "remarkable-admonitions": "^0.2.1",
     "update": "^0.7.4",
     "wait-on": "^3.3.0",
-    "command-line-args": "5.1.1",
     "remark": "11.0.2",
     "markdown-to-slides": "1.0.5",
     "concurrently": "5.1.0"
