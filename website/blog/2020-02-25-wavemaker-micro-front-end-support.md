@@ -109,7 +109,12 @@ The below steps can be followed to generate the **Single-spa** artifacts for a g
 * Once the above project is downloaded & please open the `index.html` in the folder *[folder-location]/root-html-file*
 * Include the below in the head section of the `index.html`
 ```html
- <script src="[APP_DEPLOYED_URL]/wmProperties.js"></script>
+<!-- 
+    Eg: 
+    [APP_DEPLOYED_URL]: http://localhost:8080/TestProject 
+    [ARTIFACTS_DEPLOYED_URL]: http://localhost:8081/
+-->
+ <script src="[APP_DEPLOYED_URL]/services/application/wmProperties.js"></script>
  <script src="[ARTIFACTS_DEPLOYED_URL]/scripts.[HASH].js"></script>
  <link href="[ARTIFACTS_DEPLOYED_URL]/styles.[HASH].css">
 ```
