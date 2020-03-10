@@ -28,18 +28,18 @@ class Footer extends React.Component {
               <div className="row">
                   <div className="column logo-col">
                       <div id="logo">
-                        <a href="https://www.wavemaker.com/">
+                        <a href="https://www.wavemaker.com/" target="_blank" >
                             <img src="/learn/img/WM_logo-final-grey-04.svg" alt="WaveMaker"/>
                         </a>
                       </div>
                   </div>
                   <div className="column navigation">
                       <ul id="nav">
-                          <li><a href="http://www.wavemaker.com/get-started">PRICING</a> </li>
-                          <li><a href="http://www.wavemaker.com/partners">PARTNERS</a> </li>
-                          <li><a href="http://www.wavemaker.com/customers">CUSTOMERS</a> </li>
-                          <li><a href="http://www.wavemaker.com/about">ABOUT US</a> </li>
-                          <li><a href="http://www.wavemaker.com/contact">CONTACT US</a> </li>
+                          <li><a href="https://www.wavemaker.com/get-started" target="_blank" >PRICING</a> </li>
+                          <li><a href="https://www.wavemaker.com/partners" target="_blank" >PARTNERS</a> </li>
+                          <li><a href="https://www.wavemaker.com/customer-stories" target="_blank" >CUSTOMERS</a> </li>
+                          <li><a href="https://www.wavemaker.com/about" target="_blank" >ABOUT US</a> </li>
+                          <li><a href="https://www.wavemaker.com/contact" target="_blank" >CONTACT US</a> </li>
                       </ul>
                   </div>
                   <div className="column social-media-list">
