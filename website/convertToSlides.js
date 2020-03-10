@@ -15,7 +15,9 @@ const outDirPath = path.join(__dirname, slidesConfig.output);
  * add theme key in the slides-config.json as shown below pointing to the css file
  * "theme": "static/css/remark_theme_blue_standard.css"
  */
-const customTheme = slidesConfig.theme;
+const customTheme = path.join(__dirname, slidesConfig.theme);
+const customJs = path.join(__dirname, slidesConfig.js);
+const customTemplate = path.join(__dirname, slidesConfig.template);
 
 function init() {
     fs.readdir(srcDirPath, function (err, files) {
@@ -26,9 +28,9 @@ function init() {
             fs.mkdirSync(outDirPath);
         }
         files.forEach(function (file) {
-            let command = 'npx markdown-to-slides -s '+ customTheme + ' ' + getSrcFile(file) + ' -o ' + getDestFile(file);
+            let command = 'npx markdown-to-slides -s ' + customTheme + ' -j '+ customJs + ' -l '+ customTemplate + ' ' + getSrcFile(file) + ' -o ' + getDestFile(file);
             if(isWatchModeEnabled) {
-                command = 'npx markdown-to-slides -w -s '+ customTheme + ' ' + getSrcFile(file) + ' -o ' + getDestFile(file);
+                command = 'npx markdown-to-slides -w -s ' + customTheme + ' -j '+ customJs + ' -l '+ customTemplate + ' ' + getSrcFile(file) + ' -o ' + getDestFile(file);
             }
             exec(command, function (e, stdout, stderr) {
                 console.log(stderr);
