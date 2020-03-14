@@ -108,6 +108,9 @@ const siteConfig = {
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
         'https://fonts.googleapis.com/css?family=Lato&display=swap'
     ],
+
+    separateCss: ['static/css/wmsicon.css', 'static/css/remark-default-theme.css', 'static/css/remark-wm-theme.css'],
+
     // On page navigation for the current documentation page.
     onPageNav: 'separate',
     // No .html extensions for paths.
