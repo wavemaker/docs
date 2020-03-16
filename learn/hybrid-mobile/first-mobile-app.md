@@ -4,9 +4,9 @@ id: ""
 ---
 ---
 
-Learn how to build a simple and fully functional hybrid mobile app using WaveMaker Studio.  To develop this app, use the following widgets and set their properties.
+Learn how to develop a simple hybrid mobile app in WaveMaker Studio. This app uses some essential device widgets and associated properties to create contact cards and save it the local device.
 
-### What widgets are used
+## Widgets used in this app
 
 | Widgets | Description |
 |---|---|
@@ -16,73 +16,85 @@ Learn how to build a simple and fully functional hybrid mobile app using WaveMak
 |[Picture](/learn/app-development/widgets/basic/media-widgets) | To display the captured images.|
 |[List](/learn/app-development/widgets/datalive/list) | To access and display the contacts from the mobile.|
 
-## Steps in Creating Mobile App
-1. Click on the **Create Application** icon on the _Project Listings_ page of WaveMaker. Select **Hybrid Mobile App** as the type of project to create. 
+## Creating a Mobile App
+
+1. Click the **Create** button on the _Project Listings_ page of WaveMaker, and select **Mobile** as a platform.
 
 ![Project-Type](/learn/assets/project-type.png)
 
-2. Enter the **name** of the application, set a **provatar** and give a brief **description** of the app. 
-3. Set the screen size to your favorite mobile device or leave it to default
-4. Drag and drop **Segmented Control** widget.
+2. Enter the **name** of the application, set an **icon** to represent your app, and provide a brief **description** for the app.
+
+## Designing Base
+
+1. Set the screen size to your favorite mobile device, or leave it to default settings.
+2. Drag and drop **Segmented Control** widget on the canvas.
 
 ![MobApp-layout1](/learn/assets/mobile_app_segmented_control.png)
 
-5. Name two **titles** as **Camera** and **Contact**. Delete the unwanted segment content 
+3. Name the **Titles** to **Camera** and **Contact** respectively, and delete the extra segments.
 
-![MobApp-layout2](/learn/assets/mobile_app_segmented_naming.png)
+    ![MobApp-layout2](/learn/assets/mobile_app_segmented_naming.png)
 
-6. On the Camera segment, we will have a camera widget to take a pic and display the same alongside
-    1. Drag and drop **camera** widget onto the canvas for the segment content camera. Select the **Save To Gallery** property of the camera. This will save the picture to the gallery on your mobile device. 
+## Adding Camera
+
+1. On the **Camera**'s segment, drag and drop the **camera** widget. 
+2. Select the **Save To Gallery** property for the camera widget. This enables the app to save pictures to the gallery on your mobile device.
     
     ![MobApp-segment1](/learn/assets/mobile_app_camera_widget.png)
+
+## Displaying Captured Pictures
+
+1. Add the Grid Layout widget and keep only one column and remove the remaining. This allows you to align the picture when displaying.
+2. Drag and drop the **Picture** widget onto the Grid Layout column and set the height and width to 150px.
+     
+    ![MobApp-picprops](/learn/assets/mobile_app_picture_widget_props.png)
+     
+3. Bind the picture source to the `localFilePath` property of the camera widget.
+     
+    ![MobApp-picbind](/learn/assets/mobile_app_camera_to_picture_bind.png)
+
+## Designing Contacts
+
+1. Click the **Contact** segment.
+1. Create a [variable](/learn/app-development/variables/variables) and select the **Device** variable type.
+
+    ![Create_Variables](/learn/assets/mobile_app_device_variable.png)
+
+2. For the **Service** type, select **contacts** from the dropdown. 
+3. Provide a name for the variable; for example, `Device_Contacts`, and click **Done**.
+
+    ![MobApp-mobvar](/learn/assets/mobile_app_contact_variable.png)
+
+4. Next, check the boxes for **Request on Page load** and **Update data on input change**. This ensures that the variable gets triggered when the app is run.
+5. Drag and drop the **List** widget onto the canvas and select the device _variable_ `Device_Contacts` as the data source for the list, and click **Next**.
+
+    ![MobApp-listbind](/learn/assets/mobile_app_existing_variable.png)
+
+5. Select **Actions List** as the template and set **Infinite Scroll** as the pagination. This ensures that the contacts are loaded into one page at a time.
+
+    ![MobApp-listbind2](/learn/assets/mobile_app_list_template.png)
     
-    2. Drag and drop **picture** widget onto the canvas set the height and width to 150px.
-     
-     ![MobApp-picprops](/learn/assets/mobile_app_picture_widget_props.png)
-     
-    3. Bind the picture source to the datavalue property of the camera widget.
-     
-     ![MobApp-picbind](/learn/assets/mobile_app_camera_to_picture_bind.png)
-     
-    4. We will be using a Live List to display the contact details from the variable created in the previous step. Click on the **contact segment**
-        1. Create a **variable** select **device variable** type.
-        
-        ![Create_Variables](/learn/assets/mobile_app_device_variable.png)
-        
-        2. Select **contacts as the service**.
-        
-        ![MobApp-mobvar](/learn/assets/mobile_app_contact_variable.png)
-        
-        3. Set the **Request on Page load** and **Update data on input change** to true. This will ensure that the variable is populated when the app is run.
-        4. Drag and drop a **List** onto the canvas. Select the _variable_ created in the above step as the data source for the list and click on next.
-        
-         ![MobApp-listbind](/learn/assets/mobile_app_existing_variable.png)
-         
-        5. Select **Actions List** as the template; and set **Infinite Scroll** as the pagination. This will ensure that the contacts are loaded one page at a time.
-        
-         ![MobApp-listbind2](/learn/assets/mobile_app_list_template.png)
-         
-         ![MobApp-listbind3](/learn/assets/mobile_app_pagination_type.png)
-         
-        6. Set the **Name** widget to **displayName** from the drop-down list.
-        
-        ![MobApp-listbind3](/learn/assets/mobile_app_name_label_bind.png)  
-        
-        7. This is how your list will look like in design mode. Remove the unwanted picture widget and share icon from the list. 
-        
-        ![MobApp-segment2](/learn/assets/mobile_app_list_view.png)
-        
-        8. Drag and drop another **List** onto the list which is dropped onto canvas previously.  
-        
-        9. Select the same _variable_ created in the above step and select data node as **phoneNumbers**.
-         
-         ![MobApp-segment2](/learn/assets/mobile_app_phonenumbers_list_bind.png)
-         
-        10. Select **Actions List** as the template and set **Infinite Scroll** as the pagination. Refer point 5
-        11. Set the **Name** widget to **value** from the drop-down list. Refer point 6
-        12. This is how your list inside list will look like in design mode. Remove the unwanted picture widget and share icon from the list.
-         
-         ![MobApp-segment2](/learn/assets/mobile_app_list_inside_list_remove_unwanted.png)
+    ![MobApp-listbind3](/learn/assets/mobile_app_pagination_type.png)
+
+6. Set the **Name** widget to **displayName** from the dropdown list and click **Done**.
+
+    ![MobApp-listbind3](/learn/assets/mobile_app_name_label_bind.png)  
+
+7. This is how your list will look like in design mode. Remove the unwanted picture widget and share icon from the list. 
+
+    ![MobApp-segment2](/learn/assets/mobile_app_list_view.png)
+
+8. Drag and drop another **List** onto the list which is dropped onto canvas previously.  
+
+9. Select the same _variable_ created in the above step and select data node as **phoneNumbers**.
+    
+    ![MobApp-segment2](/learn/assets/mobile_app_phonenumbers_list_bind.png)
+    
+10. Select **Actions List** as the template and set **Infinite Scroll** as the pagination. Refer point 5
+11. Set the **Name** widget to **value** from the drop-down list. Refer point 6
+12. This is how your list inside list will look like in design mode. Remove the unwanted picture widget and share icon from the list.
+    
+    ![MobApp-segment2](/learn/assets/mobile_app_list_inside_list_remove_unwanted.png)
          
 7. **Run** the app and see the preview.
  
@@ -107,7 +119,7 @@ Change the device type and see the changes.
     
     3. Retain the remaining default values on the **Application Properties** tab.
     
-    4. In the **Plugins** tab, ensure that the Camera and Contacts_ features of the mobile device are selected. 
+    4. In the **Plugins** tab, ensure that the Camera and Contacts features of the mobile device are selected. 
     
     ![MobApp-config4](/learn/assets/mobile_app_plugins.png)
     
