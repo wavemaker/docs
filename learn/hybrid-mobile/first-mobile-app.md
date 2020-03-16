@@ -125,11 +125,12 @@ Change the device type and see the changes.
   Or,
   
  Check your mail for the **App Build success mail**  and Use the link provided to **download the APK file**.
-:::      
-   8. **Install the APK file** on an Android mobile and run the app.
-   9. Select the camera tab and click on the camera, it will open the phone camera.
-   10. Click a picture. The screen should revert to the app and display the clicked image on the screen.
-   11. See the image saved to the picture gallery on your phone.
-   12. Select the contacts tab and see all your contacts listed.
+:::  
+
+   6. **Install the APK file** on an Android mobile and run the app.
+   7. Select the camera tab and click on the camera, it will open the phone camera.
+   8. Click a picture. The screen should revert to the app and display the clicked image on the screen.
+   9. See the image saved to the picture gallery on your phone.
+   10. Select the contacts tab and see all your contacts listed.
 9. You have thus created, built and installed a simple mobile app and seen the usage of the device widget and variables.
 
