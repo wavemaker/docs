@@ -4,7 +4,7 @@ id: ""
 ---
 ---
 
-Learn how to build a simple and fully functional hybrid mobile app using WaveMaker Studio.  To develop this app, use the following widgets and set their properties to work.
+Learn how to build a simple and fully functional hybrid mobile app using WaveMaker Studio.  To develop this app, use the following widgets and set their properties.
 
 ### What widgets are used
 
@@ -16,8 +16,7 @@ Learn how to build a simple and fully functional hybrid mobile app using WaveMak
 |[Picture](/learn/app-development/widgets/basic/media-widgets) | To display the captured images.|
 |[List](/learn/app-development/widgets/datalive/list) | To access and display the contacts from the mobile.|
 
-## Steps to Create Mobile App
-
+## Steps in Creating Mobile App
 1. Click on the **Create Application** icon on the _Project Listings_ page of WaveMaker. Select **Hybrid Mobile App** as the type of project to create. 
 
 ![Project-Type](/learn/assets/project-type.png)
@@ -58,28 +57,36 @@ Learn how to build a simple and fully functional hybrid mobile app using WaveMak
          
          ![MobApp-mobvar](/learn/assets/mobile_app_behaviour_set_true.png)
          
-        3. Drag and drop a **List** onto the canvas. Select the _variable_ created in the above step as the data source for the list and click on next.
+        4. Drag and drop a **List** onto the canvas. Select the _variable_ created in the above step as the data source for the list and click on next.
         
          ![MobApp-listbind](/learn/assets/mobile_app_existing_variable.png)
          
-        4. Select **Actions List** as the template; and set **Infinite Scroll** as the pagination. This will ensure that the contacts are loaded one page at a time.
+        5. Select **Actions List** as the template; and set **Infinite Scroll** as the pagination. This will ensure that the contacts are loaded one page at a time.
         
          ![MobApp-listbind2](/learn/assets/mobile_app_list_template.png)
          
          ![MobApp-listbind3](/learn/assets/mobile_app_pagination_type.png)
-         
-        5. Set the **Name** widget to **displayName** and **Title** to **phoneNumbers.value** from the drop-down list [![MobApp-listbind3](/learn/assets/MobApp-listbind3.png)](/learn/assets/MobApp-listbind3.png)
-        6. This is how your contacts segment will look like in design mode [![MobApp-segment2](/learn/assets/MobApp-segment2.png)](/learn/assets/MobApp-segment2.png)
-    5. There is a known issue whereby the phone number binding might not work. In such cases select the Title label from the canvas and bind its caption to the value under phoneNumbers item of the dataset property of the contacts device variable created [![MobApp-listbind4](/learn/assets/MobApp-listbind4.png)](/learn/assets/MobApp-listbind4.png)
+        6. Set the **Name** widget to **displayName** from the drop-down list ![MobApp-listbind3](/learn/assets/mobile_app_name_label_bind.png)  
+        7. This is how your list will look like in design mode ![MobApp-segment2](/learn/assets/mobile_app_list_view.png)
+        8. Remove the unwanted picture widget and share icon from the list. ![MobApp-segment2](/learn/assets/mobile_app_remove_picture_action_in_list.png)
+        9. Drag and drop another **List** onto the first list.  ![MobApp-segment2](/learn/assets/mobile_app_list_inside_list.png)
+        10. Select the same _variable_ created in the above step and select data node as **phoneNumbers** ![MobApp-segment2](/learn/assets/mobile_app_phonenumbers_list_bind.png)
+        11. Select **Actions List** as the template; and set **Infinite Scroll** as the pagination.  Set the **Name** widget to **value** from the drop-down list ![MobApp-listbind3](/learn/assets/mobile_app_phonenumber_valueto_name_label_bind.png)
+        12. This is how your list inside list will look like in design mode. ![MobApp-segment2](/learn/assets/mobile_app_list_inside_list_view.png)
+        13. Remove the unwanted picture widget and share icon from the list. ![MobApp-segment2](/learn/assets/mobile_app_remove_picture_action_in_list.png) 
+        14. This is how your contacts segment will look like in design mode ![MobApp-segment2](/learn/assets/mobile_app_list_inside_list_remove_unwanted.png)
 7. **Run** the app and see the preview. **Note**: You will not be able to use the camera or see the data in contacts list as these are device specific features. [![MobApp-run1](/learn/assets/MobApp-run1.png)](/learn/assets/MobApp-run1.png) [![MobApp-run2](/learn/assets/MobApp-run2.png)](/learn/assets/MobApp-run2.png) Change the device type and see the changes [![MobApp-run3](/learn/assets/MobApp-run3.png)](/learn/assets/MobApp-run3.png)
 8. Build the app for APK file to be installed on mobile device
-    1. Click on the **build** option from the main menu [![MobApp-build](/learn/assets/MobApp-build.png)](/learn/assets/MobApp-build.png)
-    2. Set the **Mobile Configurations**, Developer details. [![MobApp-config1](/learn/assets/MobApp-config1.png)](/learn/assets/MobApp-config1.png)
-    3. Retain the default setting on the **App Info**, **Device Settings**, and **Graphics** tabs.
-    4. In the **Permissions** tab, ensure that the app is _allowed access to Camera and Contacts_ features of the mobile device. [![MobApp-config4](/learn/assets/MobApp-config4.png)](/learn/assets/MobApp-config4.png)
-    5. You will get a _success message_. [![MobApp-buildmsg](/learn/assets/MobApp-buildmsg.png)](/learn/assets/MobApp-buildmsg.png)
-    6. Check your mail for the **App Build success mail**.
-    7. Use the link provided to **download the APK file**.
+    1. Click on the **build** option from the main menu ![MobApp-build](/learn/assets/mobile_app_menu_build_for_android.png)
+    2. Set the **Mobile Configurations**, Developer details. ![MobApp-config1](/learn/assets/mobile_app_build_developer_configuration.png)
+    3. Retain the remaining default values on the **Application Properties** tab.
+    4. In the **Plugins** tab, ensure that the Camera and Contacts_ features of the mobile device are selected. ![MobApp-config4](/learn/assets/mobile_app_plugins.png)
+    5. You will get a _success message_. ![MobApp-buildmsg](/learn/assets/mobile_app_build_confirmation_message.png)
+    6. Track the build status from the Jobs menu and once the job gets completed, Download the apk file and install it in the device.
+      ![MobApp-buildmsg](/learn/assets/mobile_app_build_job_tracking.png)
+      ![MobApp-buildmsg](/learn/assets/mobile_app_build_job_completed.png)
+         or
+    7. Check your mail for the **App Build success mail**  and Use the link provided to **download the APK file**.
     8. **Install the APK file** on an Android mobile and run the app.
     9. Select the camera tab and click on the camera, it will open the phone camera.
     10. Click a picture. The screen should revert to the app and display the clicked image on the screen.
