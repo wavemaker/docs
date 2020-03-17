@@ -20,14 +20,14 @@ package com.testschedulterandemail.simplejavaservice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-//import com.testschedulerandemail.simplejavaservice.model.\*;
+//import com.testschedulerandemail.simplejavaservice.model.*;
 import com.wavemaker.runtime.service.annotations.ExposeToClient;
 
-/\*\*
- \* This is a singleton class with all of its public methods exposed to the client via controller.
- \* Their return values and parameters will be passed to the client or taken
- \* from the client respectively.
- \*/
+/*
+ * This is a singleton class with all of its public methods exposed to the client via controller.
+ * Their return values and parameters will be passed to the client or taken
+ * from the client respectively.
+ */
 @ExposeToClient
 public class SimpleJavaService {
     private static final Logger logger=LoggerFactory.getLogger(SimpleJavaService.class);
@@ -44,7 +44,7 @@ public class SimpleJavaService {
         }}}
 ```
 
-We will be using the following XML code in the `javaservice_name.spring.xml` file:
+We will be using the following XML code in the `project-user-spring.xml` file:
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -67,7 +67,7 @@ http://www.springframework.org/schema/security/spring-security.xsd"
     <bean class="com.testschedulerandemail.simplejavaservice.SimpleJavaService" scope="singleton" lazy-init="true" id="SimpleJavaService"/>
     <bean class="com.testschedulerandemail.simplejavaservice.controller.SimpleJavaController" id="SimpleJavaServiceController"/>
     <task:scheduled-tasks >
-        <task:scheduled cron="\*/10 \* \* \* \* ?" method="sampleJavaOperation" ref="SimpleJavaService"/>
+        <task:scheduled cron="*/10 * * * * ?" method="sampleJavaOperation" ref="SimpleJavaService"/>
     </task:scheduled-tasks>
 </beans>
 ```
@@ -76,7 +76,7 @@ In the above XML code replace the bean class with the appropriate package name o
 
 The task details include:
 
-- `cron` referring to the time interval string we used corresponds to: _\*/10 \* \* \* \* ?_.  
+- `cron` referring to the time interval string we used corresponds to: _*/10 * * * * ?_.  
 
 The time interval specified is in the UNIX cron format ([refer here](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html)). 
 
@@ -85,7 +85,7 @@ The time interval specified is in the UNIX cron format ([refer here](https://doc
 - _`method`_ refers to the Java method to be invoked at the above-mentioned time intervals
 - _`id`_ refers to the id given to the bean class for the Java controller
 
-The following annotation needs to be added in _project-user-spring.xml_ file:
+The following annotation needs to be added in `project-user-spring.xml` file:
 ```
     <task:annotation-driven scheduler="taskScheduler" />
     <task:scheduler id="taskScheduler" pool-size="5" />
