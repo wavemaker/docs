@@ -1,10 +1,11 @@
 ---
-title: "First Mobile App"
-id: ""
+title: "Build your First Mobile App"
+id: "first-mobile-app"
+sidebar_label: "First Mobile App"
 ---
 ---
 
-Learn how to develop a simple hybrid mobile app in WaveMaker Studio. This app uses basic device widgets to create a contact card and save it the local device.
+Learn how to develop a simple hybrid mobile app in WaveMaker Studio. This app uses device-specific widgets like camera and contacts. In this app, click pictures, view it and save them to the phone gallery, and view your contacts.
 
 ## Widgets used in this app
 
@@ -39,13 +40,13 @@ Learn how to develop a simple hybrid mobile app in WaveMaker Studio. This app us
 
 1. On the **Camera**'s segment, drag and drop the **camera** widget.
 2. Select the **Save To Gallery** property for the camera widget. This enables the app to save pictures to the gallery on your mobile device.
-3. Select the **Camera** segment and set **Horizontal Align** property as `Align center`. This brings the camera to center alignment.
+3. Select the **Camera** segment and set **Horizontal Align** property to `Align center`. This brings the camera to center alignment.
     
     ![MobApp-segment1](/learn/assets/mobile_app_camera_widget.png)
 
 ## Displaying Captured Pictures
 
-1. Add the Grid Layout widget and use only one column and remove the remaining columns. Set the column width to `12` and `align center`. This allows you to align the picture when displaying.
+1. Drag and drop the Grid Layout widget. Use only one column and remove the remaining columns. Set the column width to `12` and `align center`. This allows you to align the picture when displaying.
 2. Drag and drop the **Picture** widget onto the Grid Layout column and set the height and width to 150px.
      
     ![MobApp-picprops](/learn/assets/mobile_app_picture_widget_props.png)
@@ -117,10 +118,10 @@ To design contacts page, create a device variable and bind that to the repeated 
 1. **Run**, to preview the app.
  
 :::note
-You cannot to use camera or see any data in contacts list as these are device specific features.
+You cannot use the camera, or see any data in contacts. These are device-specific features that work in mobile-only.
 :::
 
-2. Change the device type and view changes in different screen sizes.
+2. Change the device type to view changes in different screen sizes.
 
     ![MobApp-run3](/learn/assets/mobile_app_select_device.png)
 
@@ -128,9 +129,10 @@ When you are happy with the changes, proceed to build the app.
 
 ## Build App 
 
-For installing the app on mobile device, you need an APK file for android phones, and an IPA file for iOS devices. WaveMaker supports **Build for Android** to generate APK files, and **Send to PhoneGap** to generate both IPA and APK files. 
+For installing the app on mobile device, you need an APK file for android phones, and an IPA file for iOS phones. WaveMaker supports **Build for Android** to generate APK files, and **Send to PhoneGap** to generate both IPA and APK files.
 
-For this app, we use **Build for Android** because it internally generates the APK file. However, if you want to build app using **Send to PhoneGap** to generate both IPA and APK, see [Build App using Send to Phonegap](/learn/hybrid-mobile/mobile-build-phonegap).
+
+For this app, we use **[Build for Android](/learn/hybrid-mobile/mobile-build-android)** to generates an APK file. However, for creating release APK and IPA to publish on Playstore, or App Store, use [Send to PhoneGap](/learn/hybrid-mobile/mobile-build-phonegap) or [Manual Build](/learn/hybrid-mobile/mobile-build-manual/).
 
 ### Generate APK File for Mobile Installation
 
