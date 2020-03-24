@@ -76,7 +76,7 @@ public class CustomAuthenticationSuccessHandler implements WMAuthenticationSucce
 		//Accessing the ip address and userid and username
 		
 		final String userId=wmAuthentication.getUserId();
-        final String username=authentication.getPrincipal();
+        final String username=wmAuthentication.getPrincipal();
 		final String ip=httpServletRequest.getRemoteAddr();
 		
 		//Process the browser info from the header using 'User-Agent'
