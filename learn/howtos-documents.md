@@ -271,6 +271,11 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to handling dynamic data](/learn/how-tos/charts-handling-dynamic-data/)
 *   [How to displaying custom data](/learn/how-tos/charts-custom-data/)
 
+## Widget: Text / TextArea / Number
+
+*   [How to implement CopytoClipboard](/learn/how-tos/how-to-implement-a-copy-to-clipboard-feature/
+)
+
 ---
 #### Navigation Widgets
 ---
