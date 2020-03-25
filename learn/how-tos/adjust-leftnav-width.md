@@ -14,7 +14,7 @@ You can adjust the leftnav width by using the `Column Width` property.
 2. Go to the **Properties** panel and find the `Column Width` property under the **Format** options.
 3. Set a value for the `Column Width` property from the dropdown as shown in the screenshot below.
 
-[![leftnav](/learn/assets/maincontent_width.png)](/learn/assets/maincontent_width.png)
+![leftnav](/learn/assets/leftnav_width.png)
 
 ## AdjustIng Main Content Width
 
@@ -24,6 +24,6 @@ Similarly, you can adjust the main content width by using the `Column Width` pro
 2. Go to the **Properties** panel and find the `Column Width` property under the **Format** options.
 3. Set a value for the `Column Width` property from the dropdown to sum-up with the width of the left navigation bar. For example, if you set the leftnav width to 1, then the main content width should be 9.
 
-[![maincontent](/learn/assets/leftnav_width.png)](/learn/assets/leftnav_width.png)
+![maincontent](/learn/assets/maincontent_width.png)
 
 
