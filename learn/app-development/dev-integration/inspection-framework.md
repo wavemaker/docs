@@ -633,3 +633,64 @@ Not supported in Wavemaker 10.x**Rules for Inspection Framework**
 <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
 
 <table dir="ltr" border="1" cellspacing="0" cellpadding="0"><colgroup><col width="245"></colgroup><tbody><tr><td><a href="#service">No AngularJS Service</a></td></tr><tr><td><a href="#controller">No AngularJS Controller</a></td></tr><tr><td><a href="#factory">No AngularJS Factory</a></td></tr><tr><td><a href="#config">No AngularJS Config</a></td></tr><tr><td><a href="#run">No AngularJS Run</a></td></tr><tr><td><a href="#constant">No AngularJS Constant</a></td></tr><tr><td><a href="#value">No AngularJS Value</a></td></tr><tr><td><a href="#scope">No AngularJS $scope</a></td></tr><tr><td><a href="#arrow">No AngularJS Arrow function</a></td></tr><tr><td><a href="#location">No AngularJS $location</a></td></tr><tr><td><a href="#apply">No AngularJS $apply</a></td></tr><tr><td><a href="#watch">No AngularJS $watch</a></td></tr><tr><td><a href="#filter">No AngularJS $filter</a></td></tr><tr><td><a href="#window">No AngularJS $window</a></td></tr><tr><td><a href="#component">No AngularJS Component</a></td></tr><tr><td><a href="#directive">No AngularJS Directive</a></td></tr><tr><td><a href="#provider">No AngularJS Provider</a></td></tr><tr><td><a href="#parent">No AngularJS $parent</a></td></tr><tr><td><a href="#routeparams">No AngularJS RouteParams</a></td></tr></tbody></table>
+
+## No Missing Page Elements
+
+This rule attempts to validate all the Pages & Partial elements.
+
+### Rule Details
+
+Each Page or Partial in WaveMaker is composed of Markup, Style, Scripts, Variables and each of it is stored as seperate file in the filesystem as HTML,CSS, JS & JSON files respectively. 
+
+![](/learn/assets/inspection-no-missing-page-elements-details.png)
+
+If any of the files is deleted, the page cannot be formed completely & will cause Deployment failure. Inorder to resolve this error, the user can revert the changes causing the deletion of reported file.
+
+## No Invalid Partials
+
+This rule attempts to validate all the Partial references in the project code.
+
+### Rule Details
+
+If the Page or Partial needs to load another partial as it's content, the markup needs to have a partial container widget with its `content` attribute set to partial name. There are couple of usecases where such partial references can be invalid as listed below,
+
+* If the partial referred in the markup is deleted, the deployment can fail citing the invalid reference.
+* If a given partial trying to load itself as its content, the deployment can fail citing recursive reference.
+
+	eg: Partial named `testPartial` can have markup as below,
+
+	```
+	<wm-container name="container1" content="testPartial"></wm-container>
+	```
+
+Inorder to resolve errors caused by above listed cases, the user can update the markup to set `content` attribute with valid partial references.
+
+## No Invalid Fontpath
+
+This rule attempts to validate font paths updated in the project CSS files.
+
+### Rule Details
+
+If the project needs to use specific fonts, it can be achieved by adding `@font-face` entry in the `CSS` files. The path of source font file is updated in the `src` property as shown below,
+
+```
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+```
+
+if the path mentioned in the `src` property is not resolved relatively to the `CSS` file, the deployment can fail citing invalid path error. Inorder to fix this issue, the user needs to update the `src` with valid path.
+
+## No Declaration Block Trailing Semicolon
+
+This rule attempts to validate CSS files for trailing Semicolons
+
+### Rule Details
+
+This rule ensures that the trailing semicolon is required within the decleration block as shown below
+
+```
+.testClass {height: 200px; width: 100px;}
+```
