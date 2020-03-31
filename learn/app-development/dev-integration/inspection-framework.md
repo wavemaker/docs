@@ -659,7 +659,7 @@ If the Page or Partial needs to load another partial as it's content, the markup
 
 	eg: Partial named `testPartial` can have markup as below,
 
-	```
+	```html
 	<wm-container name="container1" content="testPartial"></wm-container>
 	```
 
@@ -673,7 +673,7 @@ This rule attempts to validate font paths updated in the project CSS files.
 
 If the project needs to use specific fonts, it can be achieved by adding `@font-face` entry in the `CSS` files. The path of source font file is updated in the `src` property as shown below,
 
-```
+```css
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('fonts/glyphicons-halflings-regular.eot');
@@ -691,6 +691,6 @@ This rule attempts to validate CSS files for trailing Semicolons
 
 This rule ensures that the trailing semicolon is required within the decleration block as shown below
 
-```
+```css
 .testClass {height: 200px; width: 100px;}
 ```
