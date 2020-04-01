@@ -512,6 +512,53 @@ h3 {
 
 /* End - 404 page styles */
 
+/* Prefabs named as Users page */
+
+.prefabs {
+    -webkit-box-flex: 1;
+    flex: 1 1 0%;
+    max-width: 100%;
+    padding: 0 0;
+}
+
+.container.paddingTop {
+    padding-top: 50px;
+	background-color: #f9f9f9;
+}
+.container.paddingBottom {
+    padding-bottom: 50px;	 
+}
+
+.showcaseSection .logos img {
+    max-height: 110px;
+    padding: 28px;
+    width: 110px;
+    align-self: center;
+	border-style: none;
+    box-sizing: content-box;
+    max-width: 100%;
+}
+
+.showcaseSection .prose h1 {
+    text-align: center;
+	font-size: 42px;
+}
+
+.showcaseSection .prose h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 24px;
+    margin-top: .25em;
+}
+
+
+/* End - Prefabs named as Users page */
+
+
+
+
+/* End - Prefabs named as Users page */
 
 @media only screen and (min-width: 320px) and (max-width: 736px) {
 	.row {
@@ -594,3 +641,5 @@ h3 {
 
 @media only screen and (min-width: 1500px) {
 }
+
+
