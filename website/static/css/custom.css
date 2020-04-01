@@ -530,9 +530,9 @@ h3 {
 }
 
 .showcaseSection .logos img {
-    max-height: 110px;
+    max-height: 96px;
     padding: 28px;
-    width: 110px;
+    width: 96px;
     align-self: center;
 	border-style: none;
     box-sizing: content-box;
