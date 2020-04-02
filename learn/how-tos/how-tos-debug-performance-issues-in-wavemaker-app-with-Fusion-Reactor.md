@@ -52,7 +52,8 @@ After installing and starting your JEE server refer the below steps for accesing
 
 - You can call FusionReactor directly from a web browser with a URL like this: 
 
-- http://127.0.0.1:8088/fusionreactor/  (http://<Your Server Ip>:<Port Configured in setenv.sh during intallation>/fusionreactor/ ).
+- http://127.0.0.1:8088/fusionreactor/  
+( http://< Your Server Ip>:< Port Configured in setenv.sh file during intallation>/fusionreactor/).
 
 - You must use the correct IP address and port for the FusionReactor instance you are trying to access.  The port will be the configured in set env.sh file and address on which FusionReactor listens are configurable. After installing and starting your JEE server, you'll need to enter your license key and activate it. 
 
