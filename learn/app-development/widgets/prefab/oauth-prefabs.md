@@ -1,6 +1,7 @@
 ---
 title: "OAuth Prefabs"
 id: ""
+sidebar_label: "Overview"
 ---
 
 ## Introduction

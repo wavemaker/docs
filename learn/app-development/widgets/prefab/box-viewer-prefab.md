@@ -1,6 +1,7 @@
 ---
 title: "Box Viewer Prefab"
 id: ""
+sidebar_label: "Box Viewer"
 ---
 ---
 

@@ -19,23 +19,26 @@ class Users extends React.Component {
     }
 
     const editUrl = `${siteConfig.repoUrl}/edit/master/website/siteConfig.js`;
-    const showcase = siteConfig.users.map(user => (
-      <a href={user.infoLink} key={user.infoLink}>
-        <img src={user.image} alt={user.caption} title={user.caption} />
-      </a>
-    ));
+	const showcase = siteConfig.users
+	.filter(user => user.pinned)
+	.map(user => (
+	  <a href={user.infoLink} key={user.infoLink}>
+		<img src={user.image} alt={user.caption} title={user.caption} />
+	  </a>
+	));
+
 
     return (
       <div className="prefabs">
         <Container padding={['bottom', 'top']}>
           <div className="showcaseSection">
             <div className="prose">
-              <h1>WM Prefabs Marketplace</h1>
+              <h1>Prefabs Marketplace</h1>
               <p>Prefabs are ready-to-use extensions that interact with APIs and databases. You can easily embed and integrate these Prefabs in WaveMaker apps.</p>
             </div>
             <div className="logos">{showcase}</div>
-            <p>Do you want to create your own Prefab using WaveMaker?</p>
-            <a href="/learn/app-development/custom-widgets/creating-prefabs" className="button">
+            <p className="paddingpara">Do you want to create your own Prefab using WaveMaker?</p>
+            <a href="/learn/app-development/custom-widgets/creating-prefabs" className="prefabcta">
               Develop your own Prefab
             </a>
           </div>

@@ -512,7 +512,7 @@ h3 {
 
 /* End - 404 page styles */
 
-/* Prefabs named as Users page */
+/* Start - Prefabs workplace styles*/
 
 .prefabs {
     -webkit-box-flex: 1;
@@ -530,9 +530,9 @@ h3 {
 }
 
 .showcaseSection .logos img {
-    max-height: 96px;
-    padding: 28px;
-    width: 96px;
+    max-height: 100px;
+    padding: 32px;
+    width: 100px;
     align-self: center;
 	border-style: none;
     box-sizing: content-box;
@@ -552,13 +552,37 @@ h3 {
     margin-top: .25em;
 }
 
+.paddingpara {
+	margin-bottom: 2.5em;
+    margin-top: 0.5em;
+	color: inherit;
+    font-weight: 500;
+}
 
-/* End - Prefabs named as Users page */
+.prefabcta {
+    border: 1px solid #097FD5;
+	background: #097FD5;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 10px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
+}
+
+.prefabcta:hover {
+	border: 1px solid #000;
+    background: #000;
+    color: #fff;
+}
 
 
+/* End - Prefabs workplace styles */
 
-
-/* End - Prefabs named as Users page */
 
 @media only screen and (min-width: 320px) and (max-width: 736px) {
 	.row {

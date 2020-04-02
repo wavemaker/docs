@@ -38,21 +38,21 @@ const users = [
     },
 	
 		{
-        caption: 'BoxOAuth',
+        caption: 'Box Viewer',
         // You will need to prepend the image path with your baseUrl
         // if it is not '/', like: '/test-site/img/image.jpg'.
         image: 'img/box.png',
         infoLink: '/learn/app-development/widgets/prefab/box-viewer-prefab',
         pinned: true,
     },
-	
+
 		{
         caption: 'GoogleOAuth',
         // You will need to prepend the image path with your baseUrl
         // if it is not '/', like: '/test-site/img/image.jpg'.
         image: 'img/google.png',
         infoLink: '/learn/app-development/widgets/prefab/oauth-prefabs/google',
-        pinned: true,
+        pinned: false,
     },
 	
 		{
@@ -61,7 +61,7 @@ const users = [
         // if it is not '/', like: '/test-site/img/image.jpg'.
         image: 'img/facebook.png',
         infoLink: '/learn/app-development/widgets/prefab/oauth-prefabs/facebook',
-        pinned: true,
+        pinned: false,
     },
 	
 		{
@@ -70,7 +70,7 @@ const users = [
         // if it is not '/', like: '/test-site/img/image.jpg'.
         image: 'img/instagram.png',
         infoLink: '/learn/app-development/widgets/prefab/oauth-prefabs/instagram',
-        pinned: true,
+        pinned: false,
     },
 	
 		{
@@ -79,9 +79,8 @@ const users = [
         // if it is not '/', like: '/test-site/img/image.jpg'.
         image: 'img/linkedin.png',
         infoLink: '/learn/app-development/widgets/prefab/oauth-prefabs/linkedin',
-        pinned: true,
-    },
-	
+        pinned: false,
+    },	
 	
 ];
 
