@@ -639,6 +639,10 @@
             "how-tos/create-prefab-using-d3-library-datamaps",
             "how-tos/create-prefab-using-jquery-plugin",
             "how-tos/create-prefab-using-angular-module"
+          ],
+          "Performance Debugging":
+          [
+            "how-tos/how-tos-debug-performance-issues-in-wavemaker-app-with-Fusion-Reactor"
           ]
         
   },
