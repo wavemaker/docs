@@ -13,6 +13,11 @@ website/i18n/*
 
 website/pages/slides
 
+website/static/remark
+website/static/*.html
+
+build-slides.js
+
 .idea
 
 .env

@@ -1,0 +1,34 @@
+{
+    "copyFiles": [
+        {
+            "from": [
+                "node_modules/remark-custom-theme/src/css/**/*"
+            ],
+            "to": "static/remark/css"
+        },
+        {
+            "from": [
+                "node_modules/remark-custom-theme/src/fonts/**/*"
+            ],
+            "to": "static/remark/fonts"
+        },
+        {
+            "from": [
+                "node_modules/remark-custom-theme/src/js/**/*"
+            ],
+            "to": "static/remark/js"
+        },
+        {
+            "from": [
+                "node_modules/remark-custom-theme/src/index.dynamic.template.html"
+            ],
+            "to": "static"
+        },
+        {
+            "from": [
+                "node_modules/remark-custom-theme/build-slides.js"
+            ],
+            "to": "."
+        }
+    ]
+}

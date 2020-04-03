@@ -1,7 +1,0 @@
-{
-    "src": "slides",
-    "output": "pages/slides",
-    "theme": "static/css/remark-wm-theme.css",
-    "js": "static/js/remark-custom.js",
-    "template": "static/wm-template.html"
-}

@@ -1,11 +1,11 @@
 {
   "scripts": {
     "examples": "docusaurus-examples",
-    "start": "concurrently \"docusaurus-start\" \"npm run build-slides\"",
+    "start": "copy-files-from-to && concurrently \"docusaurus-start\" \"npm run build-slides\"",
     "start:nw": "concurrently \"docusaurus-start --no-watch\" \"npm run build-slides:nw\"",
-    "build": "npm run build-slides:nw && docusaurus-build",
-    "build-slides": "node convertToSlides.js --watch",
-    "build-slides:nw": "node convertToSlides.js",
+    "build": "copy-files-from-to && npm run build-slides:nw && docusaurus-build",
+    "build-slides": "node build-slides.js --watch",
+    "build-slides:nw": "node build-slides.js",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
@@ -17,6 +17,8 @@
     "cypress:e2e": "npm run cypress:prepare-prod && npm run cypress:prod && npm run cypress:prep-report"
   },
   "devDependencies": {
+    "concurrently": "5.1.0",
+    "copy-files-from-to": "^2.3.0",
     "cypress": "^3.8.0",
     "docusaurus": "^1.12.0",
     "dotenv": "^8.2.0",
@@ -24,11 +26,10 @@
     "mochawesome": "^4.1.0",
     "mochawesome-merge": "^2.1.0",
     "mochawesome-report-generator": "^4.0.1",
+    "optimist": "^0.6.1",
+    "remark-custom-theme": "rnaresh/remark-custom-theme",
     "remarkable-admonitions": "^0.2.1",
     "update": "^0.7.4",
-    "wait-on": "^3.3.0",
-    "remark": "11.0.2",
-    "markdown-to-slides": "1.0.5",
-    "concurrently": "5.1.0"
+    "wait-on": "^3.3.0"
   }
 }

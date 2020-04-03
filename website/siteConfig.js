@@ -109,7 +109,7 @@ const siteConfig = {
         'https://fonts.googleapis.com/css?family=Lato&display=swap'
     ],
 
-    separateCss: ['static/css/wmsicon.css', 'static/css/remark-default-theme.css', 'static/css/remark-wm-theme.css'],
+    separateCss: ['static/remark/css/wmsicon.css', 'static/remark/css/remark-wm-theme.css'],
 
     // On page navigation for the current documentation page.
     onPageNav: 'separate',
