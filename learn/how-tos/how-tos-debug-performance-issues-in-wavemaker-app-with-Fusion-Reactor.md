@@ -128,7 +128,7 @@ The Web Requests and History page shows a list of the most-recently completed re
 
 ### JDBC Section
 
-JDBC History shows a list of completed JDBC transactions and shows slow jdbc query calls details.
+JDBC History shows a list of completed JDBC transactions and shows slow JDBC query calls details.
 For each JDBC transaction shown, you can see the starting time, the IP address of the client which created it, the JDBC Statement which was executed and the amount of time it has been running and slow transactions.
 
 [![form_filter_design](/learn/assets/fusion_reactor_jdbc.png)](/learn/assets/fusion_reactor_jdbc.png)
@@ -143,6 +143,4 @@ When you access the Profiler tab in the transaction details, you should be able 
 
 These sections help identify the root cause of slowness, and monitoring the requests.
 
-For more details on debugging, see [intergral documentaion](https://intergral.atlassian.net/wiki/spaces/FR82/pages/245547449/FusionReactor+User+s+Guide).
-
-For the sample live demo, see **[this demo](http://demo.fusionreactor.io/)** of fusion reactor.
+For more details on debugging, see [intergral documentaion](https://intergral.atlassian.net/wiki/spaces/FR82/pages/245547449/FusionReactor+User+s+Guide), and for the sample live demo, see **[this demo](http://demo.fusionreactor.io/)** of fusion reactor.
