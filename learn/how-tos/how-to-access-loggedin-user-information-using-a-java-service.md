@@ -1,47 +1,52 @@
 ---
-title: "Accessing logged in user info using a java service"
+title: "Accessing Logged-in User Details using Java Service"
 id: ""
 ---
 ---
 
 ## Introduction
 
-This document will go through the steps in getting the logged in user info details like Username and Userid and Ip Address and Browser name.
+In this document, learn how to get the logged-in user information using a Java Service. You write a handler to get user information. For example, get the username, userID, IP address, and browser details. To do this, follow the steps described below.
 
-To write a handler for get the logged in user info implement the following steps.
+## Step 1: Create a Java Handler in Source
 
-### Step 1: Handler implementation class
+Write a java handler class by using an existing handler.
 
-Write a java handler class by implementing the existing handler Implemenation.
-
-- Create a service in project src/main/java folder of the project Example: UserManagementApp/src/main/java/com/wavemaker/appscore/custom/handlers/CustomAuthenticationSuccessHandler.java 
+Create a service in the `src/main/java` inside the handlers folder. For example, `UserManagementApp/src/main/java/com/wavemaker/appscore/custom/handlers/CustomAuthenticationSuccessHandler.java`
 
 [![](/learn/assets/Doc1.png)](/learn/assets/Doc1.png) 
 
-Please refer the [documentation](/learn/app-development/services/3rd-party-libraries/#resource-files) to add the files in project.
+For more information to add files in a project, see [including resource files](/learn/app-development/services/3rd-party-libraries/#including-resource-files).
 
-### Step 2: Implement the Success Handler.
-Implement the WMAuthenticationSuccessHandler interface and override the method onAuthenticationSuccess this method will be invoked for every successfull login
+## Step 2: Implementing Success Handler
+
+:::note
+Create these classes in an IDE and copy it in the path specified in the above screenshot in the `CustomAuthenticationSuccessHandler.java` file. For more information, see [working with IDE](/learn/app-development/dev-integration/extending-application-using-ides/).
+:::
+
+- Implement `WMAuthenticationSuccessHandler` interface and override the method `onAuthenticationSuccess`. This method invokes on successful login.
 
 ```java
 public class CustomAuthenticationSuccessHandler implements WMAuthenticationSuccessHandler {
-	
+
 @Override
-	public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,
-			WMAuthentication wmAuthentication) throws IOException, ServletException 
-				{
-				}
-											}
-		
+    public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,
+    WMAuthentication wmAuthentication) throws IOException, ServletException
+        {
+        }
+}
 ```
 
-- Using these method parameters HttpServletRequest,HttpServletResponse, WMAuthentication we can access the logged-in user informations like logged in username,browser name,ip addess as shown in following handler class and preapre a userMap.
+- Use the following method parameters, including `HttpServletRequest`, `HttpServletResponse`, `WMAuthentication`. It allows accessing the logged-in user information.
+- Create a `userMap` to capture user information as shown in the example below.
 
- Note : Please create these classes in an IDE and copy it in path specified in the following screenshot, [see here to know how to work with IDE](/learn/app-development/dev-integration/extending-application-using-ides/). 
+:::tip
+Follow the commented-sections in the `CustomAuthenticationSuccessHandler.java` file in the following example.
+:::
 
-[![](/learn/assets/Doc1.png)](/learn/assets/Doc1.png) 
+### Example
 
-**CustomAuthenticationSuccessHandler.java
+**`CustomAuthenticationSuccessHandler.java`**
 
 ```java
 package com.wavemaker.appscore.custom.handlers;
@@ -124,11 +129,13 @@ public class CustomAuthenticationSuccessHandler implements WMAuthenticationSucce
 }
 }
 ```
+
 [![](/learn/assets/Doc3.png)](/learn/assets/Doc3.png)
 
-## Step 3: Declare this handler as a bean. 
+## Step 3: Declaring Handler as Bean
 
-- Now in **`project-user-spring.xml`** add the bean to declare the handler which user has defined.
+In **`project-user-spring.xml`**, add the bean to declare the user-defined handler.
+
 ```xml
  <bean class="com.wavemaker.appscore.custom.handlers.CustomAuthenticationSuccessHandler" id="customAuthenticationSuccessHandler/>
 ```
@@ -136,10 +143,14 @@ public class CustomAuthenticationSuccessHandler implements WMAuthenticationSucce
 [![](/learn/assets/Doc4.png)](/learn/assets/Doc4.png)
 
 
-### Step 4: 
- Now create a java service and write a simple method to access the userMap by importing the handler class as shown below and create a java service variable to access this service method to get the list of user details.
+## Step 4: Create a Java Service
 
- **`GetUserInfoService.java` Imports** CustomAuthenticationSuccessHandler:
+- Now create a java service and write a simple method to access the `userMap` by importing the handler class as shown below. 
+- Create a [Java Service variable](/learn/app-development/services/java-services/variables) to access this service method to get the list of user details.
+
+### Example
+
+- In this example, **`GetUserInfoService.java` Imports** CustomAuthenticationSuccessHandler.
 
 ```java
 
@@ -170,7 +181,7 @@ public Map<String,String> getUserInfo()
 }
 
 }
-``` 
+```
 
 ## See Also
 
