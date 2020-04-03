@@ -441,9 +441,9 @@
             "how-tos/implementing-forgot-password-feature-using-java-service",
             "how-tos/accessing-rest-apis-java-service",
             "how-tos/scheduling-java-service",
-            "app-development/services/database-services/orm-artifacts/#custom-query-syntax",
+            "app-development/services/database-services/orm-artifacts",
             "how-tos/pre-post-processing-db-service-apis",
-            "how-tos/how-to-access-loggedin-user-information-using-a-java-service",
+            "how-tos/accessing-loggedin-user-information-using-a-java-service",
 	         "how-tos/camunda-wavemaker-app-integration"
 
           ],
@@ -475,7 +475,8 @@
             "how-tos/integrating-sample-jasper-report-wavemaker-application",
             "how-tos/generate-pdf-file-using-jasper-reports",
             "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
-            "how-tos/app-migration-wavemaker-9x-10x"
+            "how-tos/app-migration-wavemaker-9x-10x",
+            "how-tos/how-tos-debug-performance-issues-in-wavemaker-app-with-Fusion-Reactor"
           ],
 
           "Mobile gesture":
@@ -639,10 +640,6 @@
             "how-tos/create-prefab-using-d3-library-datamaps",
             "how-tos/create-prefab-using-jquery-plugin",
             "how-tos/create-prefab-using-angular-module"
-          ],
-          "Performance Debugging":
-          [
-            "how-tos/how-tos-debug-performance-issues-in-wavemaker-app-with-Fusion-Reactor"
           ]
         
   },

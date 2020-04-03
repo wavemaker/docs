@@ -4,8 +4,6 @@ id: ""
 ---
 ---
 
-## Introduction
-
 In this document, learn how to get the logged-in user information using a Java Service. You write a handler to get user information. For example, get the username, userID, IP address, and browser details. To do this, follow the steps described below.
 
 ## Step 1: Create a Java Handler in Source
@@ -146,7 +144,6 @@ In **`project-user-spring.xml`**, add the bean to declare the user-defined handl
 ## Step 4: Create a Java Service
 
 - Now create a java service and write a simple method to access the `userMap` by importing the handler class as shown below. 
-- Create a [Java Service variable](/learn/app-development/services/java-services/variables) to access this service method to get the list of user details.
 
 ### Example
 
@@ -182,6 +179,8 @@ public Map<String,String> getUserInfo()
 
 }
 ```
+
+- Create a [Java Service variable](/learn/app-development/services/java-services/variables) to access this service method to get the list of user details.
 
 ## See Also
 
