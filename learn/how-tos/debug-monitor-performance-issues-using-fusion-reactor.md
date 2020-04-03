@@ -75,7 +75,7 @@ You can access FusionReactor from your external web server with a URL like this 
 Note that we have used an extension `.jsp` in this case so that the external web server maps to the monitored application engine. The request is passed to FusionReactor which runs inside the application engine. Access to FusionReactor from the external web server can be configured to on or off.
 :::
 
-## Debugging Performance issue using Fusion Reactor tool
+## Debug or Monitor Performance Issues using Fusion Reactor
 
 1. After configuring fusion reactor in web server, access your WaveMaker application and load the Webpage where you observe slowness or slow network calls in browser network tab.
 
