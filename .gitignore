@@ -18,6 +18,8 @@ website/static/*.html
 
 build-slides.js
 
+*-git.json
+
 .idea
 
 .env
