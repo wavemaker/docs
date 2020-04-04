@@ -17,6 +17,7 @@
     "cypress:e2e": "npm run cypress:prepare-prod && npm run cypress:prod && npm run cypress:prep-report"
   },
   "devDependencies": {
+    "@nareshr/remarkjs-themes": "^1.0.1",
     "concurrently": "5.1.0",
     "copy-files-from-to": "^2.3.0",
     "cypress": "^3.8.0",
@@ -27,7 +28,6 @@
     "mochawesome-merge": "^2.1.0",
     "mochawesome-report-generator": "^4.0.1",
     "optimist": "^0.6.1",
-    "remark-custom-theme": "rnaresh/remark-custom-theme",
     "remarkable-admonitions": "^0.2.1",
     "update": "^0.7.4",
     "wait-on": "^3.3.0"

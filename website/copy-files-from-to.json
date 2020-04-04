@@ -30,5 +30,8 @@
             ],
             "to": "."
         }
-    ]
+    ],
+    "copyFilesSettings": {
+        "whenFileExists": "overwrite"
+    }
 }
