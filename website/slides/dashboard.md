@@ -18,7 +18,6 @@ class:wave-theme,master
 Once you have created projects, the **Project Dashboard** page displays all your Projects, Prefabs and Template Bundles along with the latest activity updates.
 
 ---
-
 layout:true
 <div class="slide-header"></div>
 <div class="slide-footer">
@@ -32,14 +31,12 @@ layout:true
         <button title="Full screen (F)" class="fullScreen"><i class="wms wms-fullscreen"></i></button>
     </div>
 </div>
----
-class:wave-theme,left
 
+---
 ### Dashboard
 You have the option to create/import project, prefab or template bundle. .middle[![](/learn/assets/project-listing.png)]
 
 ---
-class:wave-theme,left
 ### Top Banner
 Top banner can be used to:
 - **Apps, Prefabs or Template Bundles** - choose what you want to create/work on.
@@ -54,7 +51,6 @@ From Apps tab, you can access Sample Apps, which can be accessed from your accou
     - recent project activity
 
 ---
-class:wave-theme,left
 ### Logs Access
 Logs give you access to server logs, which can be downloaded.
 
@@ -62,14 +58,12 @@ Logs give you access to server logs, which can be downloaded.
 It will list all the **Apps, Prefabs, and Template bundles**, depending on what you select from the **Top Banner** tab. Clicking on any app/prefab/template bundle from your dashboard will open it in the Studio designer.
 
 ---
-class:wave-theme,left
 ### Projects
 You can see the following information for each project or Prefab listed in your dashboard.
 
 .middle[![](/learn/assets/Project-Details.png)]
 
 ---
-class:wave-theme,left
 ### Projects.. Contd
 - **Project Name** provided while creating a project or Prefab.
 - **Project Type** of project - web, mobile, prefab, or template bundle.
@@ -83,7 +77,6 @@ class:wave-theme,left
 - **Leave project:** As a member of the project, you have the option to Leave the project, instead of delete.
 
 ---
-class:wave-theme,left
 ### Projects.. Contd
 - **App Member Details** gives the number of Members working on the project with an option to open the Member details dialog on click.
 .middle[![](/learn/assets/user_management_add.png)]
