@@ -451,3 +451,4 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 
 ## See Also
 [How to customize existing theme](/learn/how-tos/customize-existing-theme/)
+[How to customize leftnav width](/learn/how-tos/how-to-adjust-lefnav-width/)

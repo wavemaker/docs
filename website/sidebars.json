@@ -398,6 +398,7 @@
             "how-tos/customise-app-style",
             "how-tos/use-conditional-class-property",
             "how-tos/customize-existing-theme",
+            "how-tos/adjust-leftnav-width",
             "how-tos/customizing-theme"
           ],
 
@@ -440,9 +441,10 @@
             "how-tos/implementing-forgot-password-feature-using-java-service",
             "how-tos/accessing-rest-apis-java-service",
             "how-tos/scheduling-java-service",
-            "app-development/services/database-services/orm-artifacts/#custom-query-syntax",
+            "app-development/services/database-services/orm-artifacts",
             "how-tos/pre-post-processing-db-service-apis",
-	          "how-tos/camunda-wavemaker-app-integration"
+            "how-tos/accessing-loggedin-user-information-using-a-java-service",
+	         "how-tos/camunda-wavemaker-app-integration"
 
           ],
 
@@ -465,7 +467,7 @@
             "how-tos/using-javascript-loop-command"
           ],
 
-          "Developer-side":
+          "Developer options":
           [
             "how-tos/synchronizing-wavemaker-apps-ides-beta",
             "how-tos/synchronizing-java-services-controller",
@@ -473,7 +475,8 @@
             "how-tos/integrating-sample-jasper-report-wavemaker-application",
             "how-tos/generate-pdf-file-using-jasper-reports",
             "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
-            "how-tos/app-migration-wavemaker-9x-10x"
+            "how-tos/app-migration-wavemaker-9x-10x",
+            "how-tos/debug-monitor-performance-issues-using-fusion-reactor"
           ],
 
           "Mobile gesture":
@@ -539,7 +542,9 @@
             "how-tos/using-cascading-filter-populate-live-form",
             "how-tos/using-wizard-master-detail-live-form",
             "how-tos/using-wizard-progressive-data-entry-live-form",
-            "how-tos/using-wizard-cumulative-data-entry-live-form"
+            "how-tos/using-wizard-cumulative-data-entry-live-form",
+            "how-tos/using-wizard-progressive-data-entry-live-form",
+            "how-tos/copy-to-clipboard"
           ],
 
           "Calendar":
