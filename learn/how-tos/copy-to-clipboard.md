@@ -3,7 +3,7 @@ title: "Copy to Clipboard"
 id: ""
 ---
 ---
-Learn how to implement the copy text to the clipboard in WaveMaker by following the steps below. You can use copying text to clipboard functionality for text, number, and textarea widgets.
+Learn how to implement the copy text to clipboard in WaveMaker by following the steps below. You can use copying text to clipboard functionality for text, number, and textarea widgets.
 
 :::note
 Copying to clipboard applies to input widgets only. For example, text, textarea, and it does not apply to widgets like label.
@@ -11,17 +11,18 @@ Copying to clipboard applies to input widgets only. For example, text, textarea,
 
 ## Copy Text to Clipboard
 
-The clipboard allows you to copy the text on single a button click or through an event handler. The following steps describe how to implement copy text to the clipboard feature on a button click.
+The clipboard allows you to copy the text on a single button click or through an event handler. The following steps describe how to implement copy text to the clipboard feature on a button click.
 
 [![form_filter_design](/learn/assets/Copy_ClipBoard.png)](/learn/assets/Copy_ClipBoard.png)
 
 ## Step-1: Drag and Drop Widget
 
-Drag-and-drop a text or number or a textarea widget on a page and drag-and-drop a button and name it as `Copy Text`.
+1. Drag-and-drop a text, number, or a textarea widget on a page.
+2. Drag-and-drop a button and name it as `Copy Text`.
 
 ## Step-2: Adding Script to the On Click Event
 
-Add the following Script to copy text to the clipboard when you click the button.
+Add the following Script to the button to copy text.
 
 - Click the `Copy Text` button, go to **Events** -> **On Click** and select `JavaScript` from the dropdown.
 
