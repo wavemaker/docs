@@ -1,7 +1,7 @@
 ---
-title: "Debug Performance Issues using Fusion Reactor tool"
+title: "Debug Performance Issues using Fusion Reactor"
 id: ""
-sidebar_label: "Setup Fusion Reactor tool for WaveMaker Application Performance Monitoring"
+sidebar_label: "Setup Fusion Reactor for Debugging Issues"
 ---
 Learn how to setup Fusion Reactor tool for WaveMaker Application Performance Monitoring.
 
@@ -11,7 +11,7 @@ WaveMaker platform generates Spring and Hibernate code for the application backe
 
 In this document, learn how to configure Fusion Reactor to monitor app performance and get the level of depth and insights to instantly identify issues. For more information about this tool, see [this doc](https://intergral.atlassian.net/wiki/spaces/FR82/overview).
 
-To try the sample live demo, see **[this demo](http://demo.fusionreactor.io/)** of Fusion Reactor.
+To try the sample live demo, see **[Fusion Reactor Demo](http://demo.fusionreactor.io/)**.
 
 ## Prerequisites
 
