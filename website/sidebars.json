@@ -346,7 +346,22 @@
 
 },
 
-  "Tutorials": 
+"Enterprise":
+{
+  "Getting started":
+  [
+    "on-premise/wavemaker-enterprise-overview",
+    "on-premise/wavemaker-enterprise-prerequisites"
+  ],
+  "Preparing Infrastructure":
+  [
+    "on-premise/wavemaker-enterprise-preparing-infrastructure"
+  ]
+},
+
+
+
+"Tutorials": 
   {
     "Learn": 
       [  
