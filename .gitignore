@@ -15,6 +15,7 @@ website/pages/slides
 
 website/static/remark
 website/static/*.html
+website/static/*.tmp.md
 
 build-slides.js
 

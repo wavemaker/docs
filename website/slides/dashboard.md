@@ -1,16 +1,5 @@
 layout:true
-<div class="slide-footer">
-    <div class="slide-copright col">
-        <img class="image logo" width="70"/>
-        <span>WaveMaker.Inc. All Rights Reserved</span>
-    </div>
-    <div class="action-btns col">
-        <button title="Previous (←)" class="previousSlide"><div class="arrow-left"></div></button>
-        <button title="Next (→)" class="nextSlide"><div class="arrow-right"></div></button>
-        <button title="Full screen (F)" class="fullScreen"><i class="wms wms-fullscreen"></i></button>
-    </div>
-</div>
-
+{{footer}}
 ---
 class:wave-theme,master
 
@@ -19,18 +8,8 @@ Once you have created projects, the **Project Dashboard** page displays all you
 
 ---
 layout:true
-<div class="slide-header"></div>
-<div class="slide-footer">
-    <div class="slide-copright col">
-        <img class="image logo" width="70"/>
-        <span>WaveMaker.Inc. All Rights Reserved</span>
-    </div>
-    <div class="action-btns col">
-        <button title="Previous (←)" class="previousSlide"><div class="arrow-left"></div></button>
-        <button title="Next (→)" class="nextSlide"><div class="arrow-right"></div></button>
-        <button title="Full screen (F)" class="fullScreen"><i class="wms wms-fullscreen"></i></button>
-    </div>
-</div>
+{{header}}
+{{footer}}
 
 ---
 ### Dashboard

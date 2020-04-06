@@ -2,31 +2,33 @@
     "copyFiles": [
         {
             "from": [
-                "node_modules/remark-custom-theme/src/css/**/*"
+                "node_modules/@nareshr/remarkjs-themes/src/css/**/*"
             ],
             "to": "static/remark/css"
         },
         {
             "from": [
-                "node_modules/remark-custom-theme/src/fonts/**/*"
+                "node_modules/@nareshr/remarkjs-themes/src/fonts/**/*"
             ],
             "to": "static/remark/fonts"
         },
         {
             "from": [
-                "node_modules/remark-custom-theme/src/js/**/*"
+                "node_modules/@nareshr/remarkjs-themes/src/js/**/*"
             ],
             "to": "static/remark/js"
         },
         {
             "from": [
-                "node_modules/remark-custom-theme/src/index.dynamic.template.html"
+                "node_modules/@nareshr/remarkjs-themes/src/index.dynamic.template.html",
+                "node_modules/@nareshr/remarkjs-themes/src/header.template.html",
+                "node_modules/@nareshr/remarkjs-themes/src/footer.template.html"
             ],
             "to": "static"
         },
         {
             "from": [
-                "node_modules/remark-custom-theme/build-slides.js"
+                "node_modules/@nareshr/remarkjs-themes/build-slides.js"
             ],
             "to": "."
         }
