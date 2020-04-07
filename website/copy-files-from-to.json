@@ -2,33 +2,33 @@
     "copyFiles": [
         {
             "from": [
-                "node_modules/@nareshr/remarkjs-themes/src/css/**/*"
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/css/**/*"
             ],
             "to": "static/remark/css"
         },
         {
             "from": [
-                "node_modules/@nareshr/remarkjs-themes/src/fonts/**/*"
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/fonts/**/*"
             ],
             "to": "static/remark/fonts"
         },
         {
             "from": [
-                "node_modules/@nareshr/remarkjs-themes/src/js/**/*"
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/js/**/*"
             ],
             "to": "static/remark/js"
         },
         {
             "from": [
-                "node_modules/@nareshr/remarkjs-themes/src/index.dynamic.template.html",
-                "node_modules/@nareshr/remarkjs-themes/src/header.template.html",
-                "node_modules/@nareshr/remarkjs-themes/src/footer.template.html"
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/index.dynamic.template.html",
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/header.template.html",
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/footer.template.html"
             ],
             "to": "static"
         },
         {
             "from": [
-                "node_modules/@nareshr/remarkjs-themes/build-slides.js"
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/build-slides.js"
             ],
             "to": "."
         }
