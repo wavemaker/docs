@@ -46,7 +46,7 @@ const siteConfig = {
 		{doc: 'howtos-documents', label: 'How-to'},
 		{doc: 'wavemaker-release-notes', label: 'Releases'},
         {blog: true, label:'Blog'},
-		{doc: 'on-premise/wavemaker-enterprise-overview', label: 'Enterprise'},
+		{doc: 'on-premise/wme-overview', label: 'Enterprise'},
         {href: 'https://www.wavemakeronline.com/login/login', label: 'Login', external: true},
 		{href: 'https://www.wavemaker.com/get-started/', label: 'Start free trial', external: true}
     ],

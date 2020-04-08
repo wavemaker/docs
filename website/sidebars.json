@@ -350,13 +350,24 @@
 {
   "Getting started":
   [
-    "on-premise/wavemaker-enterprise-overview",
-    "on-premise/wavemaker-enterprise-prerequisites"
+    "on-premise/wme-overview",
+    "on-premise/wme-prerequisites"
   ],
   "Preparing Infrastructure":
   [
-    "on-premise/wavemaker-enterprise-preparing-infrastructure"
+    "on-premise/wme-preparing-infrastructure",
+    "on-premise/wme-launching-instances",
+    "on-premise/wme-install-prerequisites",
+    "on-premise/wme-download-copy-installer"
+  ],
+  "Setting Up WME":
+  [
+    "on-premise/wme-extract-package",
+    "on-premise/wme-initilize-setup",
+    "on-premise/wme-setup-using-cw",
+    "on-premise/apply-license"
   ]
+
 },
 
 
