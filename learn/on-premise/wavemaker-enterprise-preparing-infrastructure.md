@@ -5,8 +5,12 @@ sidebar_label: "Overview"
 ---
 ---
 
-This section provides how-to launch instances in various cloud providers.  
-How to add/format disks etc, security groups, networking, etc.  Install Prerequisites software. This section will show how to launch instances, add disks, configure security groups in various cloud providers.
+This section provides how-to 
+- launch instances in various cloud providers.  
+- add/format disks.
+- configure security groups
+- configure networking
+- install Prerequisites software. 
 
 ## Launch Instances
 
