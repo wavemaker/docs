@@ -348,11 +348,8 @@
 
 "Enterprise":
 {
-  "Getting started":
-  [
-    "on-premise/wme-overview",
-    "on-premise/wme-prerequisites"
-  ],
+  "Overview": ["on-premise/wme-overview"],
+  "Prerequisites": ["on-premise/wme-prerequisites"],
   "Preparing Infrastructure":
   [
     "on-premise/wme-preparing-infrastructure",
@@ -366,8 +363,23 @@
     "on-premise/wme-initilize-setup",
     "on-premise/wme-setup-using-cw",
     "on-premise/apply-license"
+  ],
+  "Configuring WME":
+  [
+    "on-premise/wme-config-users-auth-providers",
+    "on-premise/wme-config-vcs",
+    "on-premise/wme-add-dev-capacity",
+    "on-premise/wme-add-apps-capacity",
+    "on-premise/wme-config-pipeline",
+    "on-premise/wme-apply-license"
+  ],
+  "Upgrading WME":
+  [
+    "on-premise/wme-upgrade-setup",
+    "on-premise/wme-download-copy-patch",
+    "on-premise/wme-extract-patch",
+    "on-premise/wme-run-patch"
   ]
-
 },
 
 
