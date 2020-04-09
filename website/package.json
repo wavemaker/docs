@@ -1,11 +1,9 @@
 {
   "scripts": {
     "examples": "docusaurus-examples",
-    "start": "copy-files-from-to && concurrently \"docusaurus-start\" \"npm run build-slides\"",
-    "start:nw": "concurrently \"docusaurus-start --no-watch\" \"npm run build-slides:nw\"",
-    "build": "copy-files-from-to && npm run build-slides:nw && docusaurus-build",
-    "build-slides": "node build-slides.js --watch",
-    "build-slides:nw": "node build-slides.js",
+    "start": "copy-files-from-to && concurrently \"docusaurus-start\" \"npx build-slides --watch\"",
+    "start:nw": "concurrently \"docusaurus-start --no-watch\" \"npx build-slides\"",
+    "build": "copy-files-from-to && npx build-slides && docusaurus-build",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
@@ -23,6 +21,7 @@
     "cypress": "^3.8.0",
     "docusaurus": "^1.12.0",
     "dotenv": "^8.2.0",
+    "markdown-to-slides": "1.0.5",
     "mocha": "^5.2.0",
     "mochawesome": "^4.1.0",
     "mochawesome-merge": "^2.1.0",
