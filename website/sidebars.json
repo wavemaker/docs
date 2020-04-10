@@ -352,13 +352,28 @@
   "Prerequisites": ["on-premise/wme-prerequisites"],
   "Preparing Infrastructure":
   [
-    "on-premise/wme-preparing-infrastructure",
-    "on-premise/wme-launching-instances",
-    "on-premise/wme-install-prerequisites",
-    "on-premise/wme-download-copy-installer"
-  ],
+    "on-premise/wme-preparing-infrastructure", 
+    {
+      "type": "subcategory",
+      "label": "Launch Instances",
+      "ids":
+            [
+              "on-premise/wme-launching-instances" ,
+              "on-premise/wme-launching-instances-in-esxi-ova",
+              "on-premise/wme-launching-instances-in-esxi-iso",
+              "on-premise/wme-launching-instances-in-hyper-v-vhd",
+              "on-premise/wme-launching-instances-in-aws",
+              "on-premise/wme-launching-instances-in-gcp",
+              "on-premise/wme-launching-instances-in-azure",
+              "on-premise/wme-launching-instances-in-azure-vhd"
+            ]
+    },
+       
+    "on-premise/wme-install-prerequisite"  
+  	],
   "Setting Up WME":
   [
+    "on-premise/wme-download-copy-installer",
     "on-premise/wme-extract-package",
     "on-premise/wme-initilize-setup",
     "on-premise/wme-setup-using-cw",
