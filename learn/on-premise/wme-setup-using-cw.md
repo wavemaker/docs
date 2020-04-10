@@ -17,5 +17,3 @@ sidebar_label: "Setup Using Config Portal"
     [![](/learn/assets/wme-setup/wme-portal-setup/installation.png)](/learn/assets/wme-setup/wme-portal-setup/installation.png)
 - Upload the license key for proceeding to further operations
 	[![](/learn/assets/wme-setup/wme-portal-setup/apply-license.png)](/learn/assets/wme-setup/wme-portal-setup/apply-license.png)
--  At the developer workspace option select Add capacity to add external or additional instances by providing the required details.
-    [![](/learn/assets/wme-setup/wme-portal-setup/adding-capacity.png)](/learn/assets/wme-setup/wme-portal-setup/adding-capacity.png) 
