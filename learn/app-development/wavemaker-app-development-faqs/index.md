@@ -28,7 +28,6 @@ Frequently asked questions cover everything you need to know about WaveMaker so 
 #### [8. Explain the WaveMaker Architecture.](/learn/app-development/wavemaker-app-development-faqs/wavemaker-architecture)
 
 
-
 #### [9. How does WaveMaker support Micro-Services enabled architecture?](/learn/app-development/wavemaker-app-development-faqs/micro-services-enabled-architecture) 
 
 
@@ -38,51 +37,56 @@ Frequently asked questions cover everything you need to know about WaveMaker so 
 #### [10. What are Widgets in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/widgets-in-wavemaker)   
 
 #### [11. How to build widget extensions or custom widgets?](/learn/app-development/wavemaker-app-development-faqs/building-widget-extension-custom-widget)
-#### [12. How to work with databases in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/database-in-wavemaker)  
 
-#### [13. What databases are supported by WaveMaker Platform?](/learn/app-development/wavemaker-app-development-faqs/databases-supported-by-wavemaker-platform)  
+#### [12. What are backend services?](/learn/app-development/services/creating-backend-services)
 
-#### [14. How Web Services work in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/web-services)  
+#### [13. How to work with databases in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/database-in-wavemaker)  
 
-#### [15. How Java Services work in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/java-services-in-wavemaker)  
+#### [14. What databases are supported by WaveMaker Platform?](/learn/app-development/wavemaker-app-development-faqs/databases-supported-by-wavemaker-platform)  
+
+#### [15. How Web Services work in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/web-services)  
+
+#### [16. How Java Services work in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/java-services-in-wavemaker)  
+
+#### [17. How to integrate service in WaveMaker?](/learn/app-development/variables/data-integration)
 
 
 
 ## Security
 ---
 
-#### [16. How to enable Security for WaveMaker apps?](/learn/app-development/wavemaker-app-development-faqs/security-in-wavemaker)
+#### [19. How to enable Security for WaveMaker apps?](/learn/app-development/wavemaker-app-development-faqs/security-in-wavemaker)
 
 
-#### [17. What type of security is provided for WaveMaker Apps?](/learn/app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps)
+#### [20. What type of security is provided for WaveMaker Apps?](/learn/app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps)
 
 ## Mobile App
 ---
 
-#### [18. How to build responsive UI using Visual RAD approach in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach)
+#### [21. How to build responsive UI using Visual RAD approach in WaveMaker?](/learn/app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach)
 
-#### [19. Can I build a mobile app with installer using WaveMaker and publish it to any App Store?](/learn/app-development/wavemaker-app-development-faqs/publishing-app-to-app-store) 
+#### [22. Can I build a mobile app with installer using WaveMaker and publish it to any App Store?](/learn/app-development/wavemaker-app-development-faqs/publishing-app-to-app-store) 
 
-#### [20. Can I publish the Mobiles apps built on WaveMaker to App Stores without any limitations?](/learn/app-development/wavemaker-app-development-faqs/publish-to-app-store-without-any-limitations)
+#### [23. Can I publish the Mobiles apps built on WaveMaker to App Stores without any limitations?](/learn/app-development/wavemaker-app-development-faqs/publish-to-app-store-without-any-limitations)
 
 
 
 ## Development and code
 ---
 
-#### [21. Can multiple developers work on a WaveMaker app?](/learn/app-development/wavemaker-app-development-faqs/working-with-multiple-developers)
+#### [24. Can multiple developers work on a WaveMaker app?](/learn/app-development/wavemaker-app-development-faqs/working-with-multiple-developers)
 
-#### [22. What libraries are used to build WaveMaker App runtime?](/learn/app-development/wavemaker-app-development-faqs/libraries-used-app-runtime)
+#### [25. What libraries are used to build WaveMaker App runtime?](/learn/app-development/wavemaker-app-development-faqs/libraries-used-app-runtime)
 
-#### [23. Can WaveMaker apps be modified outside the platform by manually editing the generated code?](/learn/app-development/wavemaker-app-development-faqs/editing-generated-code-outside-platform)
+#### [26. Can WaveMaker apps be modified outside the platform by manually editing the generated code?](/learn/app-development/wavemaker-app-development-faqs/editing-generated-code-outside-platform)
 
-#### [24. Is the platform generated code readable and maintainable?](/learn/app-development/wavemaker-app-development-faqs/platform-generated-code)
+#### [27. Is the platform generated code readable and maintainable?](/learn/app-development/wavemaker-app-development-faqs/platform-generated-code)
 
 
 ## Licenses and other
 
-#### [25. Are there any licensing restrictions in re-distributing WaveMaker apps?](/learn/app-development/wavemaker-app-development-faqs/redistributing-licensing)  
+#### [28. Are there any licensing restrictions in re-distributing WaveMaker apps?](/learn/app-development/wavemaker-app-development-faqs/redistributing-licensing)  
 
-#### [26. How are the application stack upgrades done?](/learn/app-development/wavemaker-app-development-faqs/application-stack-upgrades)
+#### [29. How are the application stack upgrades done?](/learn/app-development/wavemaker-app-development-faqs/application-stack-upgrades)
 
-#### [27. Is WaveMaker App scalable in terms of usage?](/learn/app-development/wavemaker-app-development-faqs/is-wavemaker-app-scalable)
+#### [30. Is WaveMaker App scalable in terms of usage?](/learn/app-development/wavemaker-app-development-faqs/is-wavemaker-app-scalable)
