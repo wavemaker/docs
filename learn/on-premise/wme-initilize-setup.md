@@ -5,8 +5,9 @@ sidebar_label: "Initilize Setup"
 ---
 ---
 
-# INITIALIZE THE WME SETUP
-- after dowloading and extracting the wme installer run the bash script which is displayed at terminal
-- provide your network interface name and enter IP range in CIDR notation
+# Initilize the WME setup
+
+- After dowloading and extracting the wme installer run the bash script which is displayed at terminal
+- Provide your network interface name and enter IP range in CIDR notation
     [![](/learn/assets/wme-setup/wavemaker-setup-intialization.png)](/learn/assets/wme-setup/wavemaker-setup-intialization.png)
-- for wme portal setup goto < platform-ip >:8080 and do the config portal setup
+- Go to < platform-ip >:8080 as directed by the above command output to do the WME setup.

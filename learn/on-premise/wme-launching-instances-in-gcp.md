@@ -5,7 +5,11 @@ sidebar_label: "Launch Instances in GCP"
 ---
 ---
 
-## Launch instances in GCP  
+### Launch instances in GCP
+ **Prerequisite**
+
+ **Steps**  
+ 
 - FIREWALL RULES FOR PLATFORM AND EXTERNAL INSTANCE
   - Create firewall rules for public access to the platform instance
     - Provide basic details , target , source details and TCP ports for creating public access firewall rule

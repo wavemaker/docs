@@ -5,8 +5,13 @@ sidebar_label: "Launch Instances in Esxi using OVA"
 ---
 ---
 
-## Launch instances in Esxi using OVA  
-This guide has written based on Exsi version 6.5.
+### Launch instances in Esxi using OVA  
+ **Prerequisite**
+ - OVA file shared by WaveMaker team 
+ - VMware ESXi version 6.5 or higher
+ - Permision for launching OVA .
+ 
+ **Steps**
 - Login into VMware ESXi Server using  Server IP address and user credentials. 
 - Select Create/Register VM for creating the new virtual machine
 - Select creation type as deploy a virtual machine by from an ovf or ova file

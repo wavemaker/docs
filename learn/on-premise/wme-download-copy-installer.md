@@ -5,12 +5,17 @@ sidebar_label: "Download and Copy Installer"
 ---
 ---
 
-# DOWNLOAD THE WME INSTALLER
-- for ubuntu system download the debain package ,link wavemaker team will provide
-  - download the wme installer by using following command
-  - wget < link of wme installer >
-- for RHEL system download the tar file,link wavemaker team will provide
-  -  download the wme installer by using following command
-  - wget < link of wme installer >
+### Download the WME Installer
+
+**Ubuntu**
+- Download debain package. The link will be shared by wavemaker team.
+- wget < Link of wme installer >
+**RHEL**
+- Download tar package. The link will be shared by wavemaker team.
+- wget < Link of wme installer >
+
+### Copy The WME Installer
+- Copy downloaded file to /home/ubuntu or any location on the Platform Instance. 
+
 
 

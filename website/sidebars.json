@@ -358,7 +358,6 @@
       "label": "Launch Instances",
       "ids":
             [
-              "on-premise/wme-launching-instances" ,
               "on-premise/wme-launching-instances-in-esxi-ova",
               "on-premise/wme-launching-instances-in-esxi-iso",
               "on-premise/wme-launching-instances-in-hyper-v-vhd",
@@ -368,16 +367,15 @@
               "on-premise/wme-launching-instances-in-azure-vhd"
             ]
     },
-       
-    "on-premise/wme-install-prerequisite"  
-  	],
+    "on-premise/wme-install-prerequisites"
+  ], 
   "Setting Up WME":
   [
     "on-premise/wme-download-copy-installer",
     "on-premise/wme-extract-package",
     "on-premise/wme-initilize-setup",
     "on-premise/wme-setup-using-cw",
-    "on-premise/apply-license"
+    "on-premise/wme-apply-license"
   ],
   "Configuring WME":
   [
@@ -385,8 +383,7 @@
     "on-premise/wme-config-vcs",
     "on-premise/wme-add-dev-capacity",
     "on-premise/wme-add-apps-capacity",
-    "on-premise/wme-config-pipeline",
-    "on-premise/wme-apply-license"
+    "on-premise/wme-config-pipeline"
   ],
   "Upgrading WME":
   [

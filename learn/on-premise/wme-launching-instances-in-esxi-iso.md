@@ -5,10 +5,17 @@ sidebar_label: "Launch Instances in Esxi using ISO"
 ---
 ---
 
-## Launch instances in Esxi using ISO 
-This guide has written based on Exsi version 6.5.
-- click on the link for download the Ubuntu 16.04.6 ISO image
+### Launch instances in Esxi using ISO 
+ **Prerequisite**
+ - Ubuntu ISO file downloaded (Ex: link for download the Ubuntu 16.04.6 ISO image
   [ubuntu 16.04.6 iso image](http://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-amd64.iso)
+  )
+ - VMware ESXi version 6.5 or higher
+ - Permision for launching OVA.
+ This guide has written based on Exsi version 6.5.
+ 
+ **Steps**
+ 
 - Upload ubuntu server iso image to the database store
 - Select Create / Register VM 
 - Select creation type as a new virtual machine

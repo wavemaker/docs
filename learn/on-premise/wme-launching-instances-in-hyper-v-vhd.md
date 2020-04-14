@@ -5,7 +5,13 @@ sidebar_label: "Launch Instances in hyper-v using VHD"
 ---
 ---
 
-## Launch instances in hyper-v using VHD
+### Launch instances in hyper-v using VHD
+ **Prerequisite**
+ - VHD file shared by WaveMaker team 
+ - Hyper V with version 
+ - Permissions to launch VM 
+ 
+ **Steps**
 - Open  HYPER V, Right-click on your Hyper-V host, click on New, Select virtual machine for creating a platform virtual machine.
   [![](/learn/assets/wme-setup/vm-creation-in-hyperv-using-vhd/selecting-the-vm-creation-in-hyperv.png)](/learn/assets/wme-setup/vm-creation-in-hyperv-using-vhd/selecting-the-vm-creation-in-hyperv.png)
 - Click next on the wizard

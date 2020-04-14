@@ -4,10 +4,10 @@ id: ""
 sidebar_label: "Apply License"
 ---
 ---
-# APPLY LICENS
+### APPLY LICENS
 -  In two different ways you can upload the license keys
 
-## You can apply license keys from after installation process
+### You can apply license keys from after installation process
 - Uploading the license keys after the installation process is done,click on upload your license keys to upload the license keys
 - After uploading the license keys click on the apply license to apply those license file to setup
   [![](/learn/assets/wme-setup/configuring-wme/apply-license-after-installation.jpg)](/learn/assets/wme-setup/apply-license-after-installation.jpg)

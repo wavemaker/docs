@@ -5,9 +5,10 @@ sidebar_label: "Install  Prerequisites"
 ---
 ---
 
-## In Ubuntu
- We don't need to install any software. Intaller will automatically installs are required softwares.
-## In RHEL 
+### In Ubuntu
+ We don't need to install any software. 
+ WME Intaller will automatically installs required softwares.
+### In RHEL 
 - Install wget 
   - sudo yum install wget  -y
 - Install container-selinux
