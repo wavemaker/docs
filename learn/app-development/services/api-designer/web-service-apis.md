@@ -1,5 +1,5 @@
 ---
-title: "Web Service APIs"
+title: "Imported SOAP APIs"
 id: ""
 ---
 ---

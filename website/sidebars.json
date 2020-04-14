@@ -105,28 +105,55 @@
         
       ],  
 
-      "Web Services": 
+      "REST & SOAP": 
       [   
-            "app-development/services/web-services/web-services",            
+          "app-development/services/web-services/web-services",              
+          "app-development/services/api-designer/api",            
         {
           "type": "subcategory",
-          "label": "Services",
+          "label": "Swagger Import",
+          "ids": 
+          [
+                 
+          ]       
+        },
+            
+        {
+          "type": "subcategory",
+          "label": "Restful",
           "ids": 
           [
             "app-development/services/web-services/rest-services",
             "app-development/app-security/securing-server-side-properties-rest-services",
-            "app-development/services/web-services/oauth-2-0-rest-services",
-            "app-development/services/web-services/working-with-soap-services",              
-            "app-development/services/web-services/working-with-websockets"                 
+            "app-development/services/web-services/oauth-2-0-rest-services"                 
           ]       
         },
+
         {
           "type": "subcategory",
-          "label": "Web Service Variables & API",
+          "label": "SOAP",
+          "ids": 
+          [
+            "app-development/services/web-services/working-with-soap-services",
+            "app-development/services/api-designer/web-service-apis"                         
+          ]      
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Websocket",
+          "ids": 
+          [            
+            "app-development/services/web-services/working-with-websockets"                 
+          ]      
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Service Variable",
           "ids": 
             [ 
-            "app-development/variables/web-service",
-            "app-development/services/api-designer/web-service-apis"         
+            "app-development/variables/web-service"        
             ]
         }  
 
@@ -163,11 +190,6 @@
               "app-development/services/3rd-party-libraries/using-3rd-party-jar-files"]           
           } 
       ],
-
-      "API Designer":
-      [               
-        "app-development/services/api-designer/api" 
-      ], 
     
       "Variables & Actions":
       [                             
