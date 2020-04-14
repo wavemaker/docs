@@ -11,7 +11,11 @@ describe('Check for nav', () => {
 
 	let urlJson = require('../fixtures/wavemaker-docs-urls.json');
 	urlJson.files.forEach(link => {
-		it('Verifies left nav in: ' + link, () => {
+        //skip if it is from slides directory.
+        if(link.startsWith("slides")) {
+            return;
+        }
+        it('Verifies left nav in: ' + link, () => {
 			cy.visit(link);
 			cy.get('nav')
 				.should('have.class', 'toc')

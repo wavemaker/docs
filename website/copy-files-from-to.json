@@ -1,0 +1,33 @@
+{
+    "copyFiles": [
+        {
+            "from": [
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/css/**/*"
+            ],
+            "to": "static/remark/css"
+        },
+        {
+            "from": [
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/fonts/**/*"
+            ],
+            "to": "static/remark/fonts"
+        },
+        {
+            "from": [
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/js/**/*"
+            ],
+            "to": "static/remark/js"
+        },
+        {
+            "from": [
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/index.dynamic.template.html",
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/header.template.html",
+                "node_modules/@wavemaker.com/wm-remarkjs-theme/src/footer.template.html"
+            ],
+            "to": "static"
+        }
+    ],
+    "copyFilesSettings": {
+        "whenFileExists": "overwrite"
+    }
+}

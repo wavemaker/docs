@@ -7,7 +7,11 @@ describe('Check for anchors', function() {
 
 	let urlJson = require('../fixtures/wavemaker-docs-urls.json');
 	urlJson.files.forEach(link => {
-		it('Broken url check for: ' + link, function() {
+        //skip if it is from slides directory.
+        if(link.startsWith("slides")) {
+            return;
+        }
+        it('Broken url check for: ' + link, function() {
 			cy.visit(link)
 				.get('a')
 				.not('.navItem') 
