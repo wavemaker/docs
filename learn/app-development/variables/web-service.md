@@ -1,7 +1,7 @@
 ---
 title: "Variable for Web Service"
 id: ""
-sidebar_label: "Web Services Variable"
+sidebar_label: "Services Variable"
 ---
 ---
 

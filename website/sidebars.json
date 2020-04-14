@@ -7,7 +7,7 @@
         "app-development/wavemaker-overview/product-walkthrough"                    
       ],
 
-    "App design": 
+    "Pages": 
       [     
             "app-development/ui-design/designing-app",            
             "app-development/ui-design/page-creation",
@@ -37,16 +37,21 @@
               "app-development/ui-design/themes",
               "app-development/ui-design/page-concepts/page-templates"
             ]
-        }      
-      ],
+        },
 
-      "Backend":
-      [          
-        "app-development/services/creating-backend-services",         
-        "app-development/services/api-designer/api" 
-      ],         
+        {
+          "type": "subcategory",
+          "label": "Develop Themes",
+          "ids": 
+            [
+              "app-development/ui-design/creating-themes",
+              "app-development/ui-design/page-concepts/creating-template-bundles"
+            ]
+        }               
 
-      "  Data services": 
+      ],      
+
+   "Databases": 
       [
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
@@ -100,35 +105,62 @@
         
       ],  
 
-      "  Web services": 
+      "REST & SOAP": 
       [   
-            "app-development/services/web-services/web-services",            
+          "app-development/services/web-services/web-services",              
+          "app-development/services/api-designer/api",            
         {
           "type": "subcategory",
-          "label": "Services",
+          "label": "Swagger Import",
+          "ids": 
+          [
+                 
+          ]       
+        },
+            
+        {
+          "type": "subcategory",
+          "label": "Restful",
           "ids": 
           [
             "app-development/services/web-services/rest-services",
             "app-development/app-security/securing-server-side-properties-rest-services",
-            "app-development/services/web-services/oauth-2-0-rest-services",
-            "app-development/services/web-services/working-with-soap-services",              
-            "app-development/services/web-services/working-with-websockets"                 
+            "app-development/services/web-services/oauth-2-0-rest-services"                 
           ]       
         },
+
         {
           "type": "subcategory",
-          "label": "Web Service Variables & API",
+          "label": "SOAP",
+          "ids": 
+          [
+            "app-development/services/web-services/working-with-soap-services",
+            "app-development/services/api-designer/web-service-apis"                         
+          ]      
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Websocket",
+          "ids": 
+          [            
+            "app-development/services/web-services/working-with-websockets"                 
+          ]      
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Service Variable",
           "ids": 
             [ 
-            "app-development/variables/web-service",
-            "app-development/services/api-designer/web-service-apis"         
+            "app-development/variables/web-service"        
             ]
         }  
 
       ],
 
 
-      "  Java services": 
+      "Java Services": 
       [   
           "app-development/services/java-services/java-service",     
           {
@@ -151,55 +183,25 @@
 
           {
             "type": "subcategory",
-            "label": "Manifest files",
-            "ids": ["app-development/services/3rd-party-libraries",
+            "label": "Source Files",
+            "ids": [
+              "app-development/services/3rd-party-libraries",
               "app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
               "app-development/services/3rd-party-libraries/using-3rd-party-jar-files"]           
           } 
       ],
-
-      "  Security services": 
-      [
-        {
-          "type": "subcategory",
-          "label": "App Security",
-          "ids": [
-            "app-development/app-security/app-security",
-            "app-development/app-security/authentication",        
-            "app-development/app-security/authorization",
-            "app-development/app-security/access-levels-permissions",
-            "app-development/app-security/login-configuration",
-            "app-development/app-security/ssl-encryption",
-            "app-development/app-security/xss-antisamy-policy-configuration",
-            "app-development/app-security/owasp",
-            "app-development/app-security/central-authentication-system",
-            "app-development/app-security/token-based-authentication",
-            "app-development/app-security/saml-integration"
-          ] 
-        },     
-        {
-          "type": "subcategory",
-          "label": "Security Variable and API",
-          "ids": [
-          "app-development/app-security/security-variables",
-          "app-development/app-security/remember-me",
-          "app-development/variables/security-service",
-          "app-development/services/api-designer/security-service-apis"]
-        }
-      ],
     
-      "Service integration":
-      [       
-            "app-development/variables/data-integration",              
+      "Variables & Actions":
+      [                             
         {
           "type": "subcategory",
           "label": "Variables",
-          "ids": [   
-            "app-development/variables/variables",                                          
-            "app-development/variables/model-variable",
-            "hybrid-mobile/device-variables",
-            "app-development/variables/variable-binding"
-          ]           
+          "ids": [
+          "app-development/variables/variables",                                          
+          "app-development/variables/model-variable",
+          "hybrid-mobile/device-variables",
+          "app-development/variables/variable-binding"
+          ]
         },                
          
         {
@@ -224,6 +226,38 @@
         }             
       ],  
 
+      "Security": 
+      [
+        {
+          "type": "subcategory",
+          "label": "App Security",
+          "ids": [
+            "app-development/app-security/app-security",
+            "app-development/app-security/authentication",        
+            "app-development/app-security/authorization",
+            "app-development/app-security/access-levels-permissions",
+            "app-development/app-security/login-configuration",
+            "app-development/app-security/ssl-encryption",
+            "app-development/app-security/xss-antisamy-policy-configuration",
+            "app-development/app-security/owasp",
+            "app-development/app-security/central-authentication-system",
+            "app-development/app-security/token-based-authentication",
+            "app-development/app-security/saml-integration"
+          ] 
+        },     
+        {
+          "type": "subcategory",
+          "label": "Security Variable and API",
+          "ids": 
+          [
+          "app-development/app-security/security-variables",
+          "app-development/app-security/remember-me",
+          "app-development/variables/security-service",
+          "app-development/services/api-designer/security-service-apis"        
+          ]
+        }
+     ],
+
     "Developer options": 
     [
         "app-development/dev-integration/developer-tools",
@@ -231,54 +265,47 @@
         "app-development/dev-integration/import-export-update-apps",
         "app-development/ui-design/project-shells",
         "app-development/wavemaker-overview/localization",
-    {
-      "type": "subcategory",
-      "label": "Developer Integration",
-      "ids": [ 
-        "app-development/wavemaker-overview/project-user-management",       
-        "app-development/dev-integration/developer-collaboration",
-        "app-development/dev-integration/debugging",
-        "app-development/dev-integration/extending-application-using-ides"
-      ]
-    },
+        "app-development/wavemaker-overview/artifacts-repository",
+        {
+          "type": "subcategory",
+          "label": "Developer Integration",
+          "ids": [ 
+            "app-development/wavemaker-overview/project-user-management",       
+            "app-development/dev-integration/developer-collaboration",
+            "app-development/dev-integration/debugging",
+            "app-development/dev-integration/extending-application-using-ides"
+          ]
+        },
 
-    {
-      "type": "subcategory",
-      "label": "Deployment",
-      "ids": [
-        "app-development/deployment/release-management", 
-        "app-development/deployment/configuration-profiles", 
-        "app-development/build-options-app-deployment",    
-        "app-development/deployment/one-click-deployment",                
-        "app-development/deployment/manage-deployed-apps"                          
-      ]
-    },
-    {
-        "type": "subcategory",
-        "label": "Configuring Web Server",
-        "ids": [  
-        "app-development/deployment/deployment-web-server",
-        "app-development/deployment/building-war-wavemaker-project",
-        "app-development/deployment/deployment-to-aws",
-        "app-development/deployment/deployment-to-azure",
-        "app-development/deployment/deployment-google-cloud",
-        "how-tos/wavemaker-application-deployment-tomcat",
-        "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
-        "how-tos/wavemaker-application-deployment-jboss",
-        "how-tos/wavemaker-application-deployment-weblogic-application-server" ]
-    }
+        {
+          "type": "subcategory",
+          "label": "Deployment",
+          "ids": [
+            "app-development/deployment/release-management", 
+            "app-development/deployment/configuration-profiles", 
+            "app-development/build-options-app-deployment",    
+            "app-development/deployment/one-click-deployment",                
+            "app-development/deployment/manage-deployed-apps"                          
+          ]
+        },
+        {
+            "type": "subcategory",
+            "label": "Configuring Web Server",
+            "ids": [  
+            "app-development/deployment/deployment-web-server",
+            "app-development/deployment/building-war-wavemaker-project",
+            "app-development/deployment/deployment-to-aws",
+            "app-development/deployment/deployment-to-azure",
+            "app-development/deployment/deployment-google-cloud",
+            "how-tos/wavemaker-application-deployment-tomcat",
+            "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
+            "how-tos/wavemaker-application-deployment-jboss",
+            "how-tos/wavemaker-application-deployment-weblogic-application-server" 
+          ]
+        }
   ],
 
-  "Develop extensions":
-    [      
-      "app-development/custom-widgets/creating-prefabs",
-      "app-development/widgets/use-cases-prefabs",
-      "app-development/ui-design/creating-themes",
-      "app-development/ui-design/page-concepts/creating-template-bundles",
-      "app-development/wavemaker-overview/artifacts-repository"
-    ],
-
-    "Mobile app": 
+  "Mobile development":
     [
         "hybrid-mobile/building-hybrid-mobile-apps",        
         "hybrid-mobile/native-device-support",   
@@ -865,9 +892,18 @@
       "app-development/widgets/prefab/oauth-prefabs/instagram",
       "app-development/widgets/prefab/oauth-prefabs/linkedin"
           ]
+      },
+
+      {
+       "type": "subcategory",
+       "label": "Develop Prefab",
+       "ids": 
+          [
+      "app-development/custom-widgets/creating-prefabs",
+      "app-development/widgets/use-cases-prefabs"
+          ]
       }
     ]
-
   },
 
   "Release Notes": 
@@ -1058,7 +1094,9 @@
           "ids": 
             [   
               "app-development/wavemaker-app-development-faqs/widgets-in-wavemaker",     
-              "app-development/wavemaker-app-development-faqs/building-widget-extension-custom-widget",              
+              "app-development/wavemaker-app-development-faqs/building-widget-extension-custom-widget",    
+              "app-development/services/creating-backend-services",
+              "app-development/variables/data-integration",   
               "app-development/wavemaker-app-development-faqs/database-in-wavemaker",
               "app-development/wavemaker-app-development-faqs/databases-supported-by-wavemaker-platform",
               "app-development/wavemaker-app-development-faqs/web-services",
