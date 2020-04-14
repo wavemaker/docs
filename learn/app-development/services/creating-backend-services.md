@@ -1,15 +1,13 @@
 ---
-title: "Backend Services"
+title: "What are Backend Services?"
 id: "creating-backend-services"
-sidebar_label: "Backend Services"
+sidebar_label: "What are Backend Services?"
 ---
-Get an overview of backend services in WaveMaker and see how it works. 
+See the [FAQs](/learn/app-development/wavemaker-app-development-faqs) section for WaveMaker app development.
 
 ---
 
-## Introduction
-
-In the backend module, you will learn how to create an independent backend service which can be used multiple times across your app. 
+In WaveMaker, you can create an independent backend service which can be used multiple times across your app.
 
 A backend service can be of any type. It can be a data service, web service, java service, security service, or using a third party API. Or, even extending a feature with your own code. 
 
