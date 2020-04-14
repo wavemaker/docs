@@ -1,0 +1,361 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    margin-bottom: 0
+}
+
+.remark-slide-content h1 {
+    font-size: 3em
+}
+
+.remark-slide-content h2 {
+    font-size: 2em
+}
+
+.remark-slide-content h3 {
+    font-size: 1.6em
+}
+
+.footnote {
+    position: absolute;
+    bottom: 3em
+}
+
+li p {
+    line-height: 1.25em
+}
+
+.red {
+    color: #fa0000
+}
+
+.large {
+    font-size: 2em
+}
+
+a, a > code {
+    color: #097fd5;
+    text-decoration: none
+}
+
+code {
+    background: none repeat scroll 0 0 #f8f8ff;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    padding: 0 .2em
+}
+
+.remark-code, .remark-inline-code {
+    font-family: "Bitstream Vera Sans Mono", Courier, monospace
+}
+
+.remark-code-line-highlighted {
+    background-color: #373832
+}
+
+.pull-left {
+    float: left;
+    width: 47%
+}
+
+.pull-right {
+    float: right;
+    width: 47%
+}
+
+.pull-right ~ p {
+    clear: both
+}
+
+#slideshow .slide .content code {
+    font-size: .8em
+}
+
+#slideshow .slide .content pre code {
+    font-size: .9em;
+    padding: 15px
+}
+
+.main-title, .title {
+    background: #272822;
+    color: #777872;
+    text-shadow: 0 0 20px #333
+}
+
+.main-title h1, .main-title h2, .title h1, .title h2 {
+    color: #f3f3f3;
+    line-height: .8em
+}
+
+.remark-code {
+    display: block;
+    padding: .5em
+}
+
+.remark-container {
+    background-color: #fff;
+}
+
+.remark-slide-content {
+    padding: 4em 0;
+    border: 1px solid #ccc;
+}
+
+.remark-slide-content h3, .remark-slide-content p {
+    padding: 0px 40px;
+}
+
+.remark-slide-content ul {
+    padding: 0 60px;
+}
+
+.remark-slide-number {
+    padding: 10px 0;
+    font-size: 18px;
+    bottom: 0;
+    right: 6em;
+    color: #f5f5f5;
+    opacity: 1;
+    z-index: 3;
+}
+
+.remark-slide-scaler {
+    box-shadow: 0 5px 16px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, .3);
+}
+
+/* basic-blue theme with blue header*/
+.remark-slide-content.basic-blue.master {
+    background-image: none;
+}
+
+.remark-slide-content.basic-blue.master p {
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    background: #21adf0;
+    padding: 20px 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.remark-slide-content.basic-blue.master h3 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.remark-slide-content.master .slide-header {
+    display: none;
+}
+
+.remark-slide-content.basic-blue .slide-header {
+    background-image: none;
+}
+
+.remark-slide-content.basic-blue {
+    padding: 0;
+}
+
+.remark-slide-content.basic-blue .slide-footer {
+    background: #21adf0;
+    color: #fff;
+}
+
+/*wave theme master template*/
+.remark-slide-content.wave-theme.master {
+    background-image: linear-gradient(108deg, #74b5e4, #0465ad);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.remark-slide-content.wave-theme.master .slide-header {
+    display: block;
+}
+
+.remark-slide-content.wave-theme.master .section {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    min-height: 100px;
+    margin-top: -5em;
+    background-color: rgba(255, 255, 255, .09);
+}
+
+.remark-slide-content.wave-theme.master .section.right {
+    right: 0;
+    text-align: right;
+}
+
+.remark-slide-content.wave-theme.master h3 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.3;
+    padding-top: 2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.remark-slide-content.wave-theme.master p {
+    font-size: 24px;
+    color: yellow;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*standard master slide*/
+.remark-slide-content.master {
+    background-image: url(images/wm-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    /*background-size: contain;*/
+    color: #fff;
+}
+
+.remark-slide-content.master .slide-footer {
+    background-image: none;
+}
+
+.remark-slide-content.master h3 {
+    padding-top: 5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+/*header with wave theme*/
+div.slide-header {
+    background-image: url(images/wave-top.png);
+    background-position: 10%, center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+}
+
+/* standard footer with wave theme*/
+div.slide-footer {
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+    clear: both;
+    background-image: url(images/footer-wave-02.png);
+    background-repeat: no-repeat;
+    background-position: 72%, center;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+}
+
+div.slide-footer span {
+    font-size: 9pt;
+    position: absolute;
+    padding: 9px 10px;
+    bottom: 0;
+    color: #c6eafb;
+}
+
+.slide-footer .slide-copright {
+    text-align: left;
+}
+
+.slide-footer .slide-copright .image {
+    padding: 3px 0 0 15px;
+    display: inline-block;
+    width: 100px;
+    content:url("images/WM_white.png");
+}
+
+.logo {
+    content:url("images/WM_white.png");
+}
+
+/*footer control section */
+.slide-footer .action-btns {
+    text-align: right;
+}
+
+.slide-footer .action-btns button {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    margin: 0 30px;
+    padding: 27px 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+.slide-footer .action-btns i {
+    font-size: 1.5em;
+}
+
+.slide-footer .action-btns button:last-child {
+    margin-left: 0;
+}
+
+.slide-footer .arrow-right, .slide-footer .arrow-left {
+    position: relative;
+    top: 0;
+    height: 0;
+    width: 0;
+    z-index: 2;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+.slide-footer .arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+
+.slide-footer .arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+}
+
+.slide-footer .disabled {
+    cursor: default;
+    opacity: .3;
+}
+
+.slide-footer .col {
+    width: 50%;
+}
+
+.slide-footer .action-btns .fa-fullscreen {
+    font-family: wavicon;
+    width: auto;
+    height: auto;
+}
+
+.slide-footer .action-btns .fa-fullscreen::before {
+    content: "\f2bc";
+    font-size: 16px;
+}
+
+/**master template classes**/
+.remark-slide-content.blue-center.master {
+    text-align: center;
+    width: 100%;
+}
+
+.remark-slide-content.blue-center h1 {
+
+}
