@@ -107,17 +107,7 @@
 
       "REST & SOAP": 
       [   
-          "app-development/services/web-services/web-services",              
-          "app-development/services/api-designer/api",            
-        {
-          "type": "subcategory",
-          "label": "Swagger Import",
-          "ids": 
-          [
-                 
-          ]       
-        },
-            
+          "app-development/services/web-services/web-services",                                     
         {
           "type": "subcategory",
           "label": "Restful",
@@ -146,6 +136,16 @@
           [            
             "app-development/services/web-services/working-with-websockets"                 
           ]      
+        },
+
+        {
+          "type": "subcategory",
+          "label": "APIs",
+          "ids": 
+          [
+            "app-development/services/api-designer/api",
+            "app-development/services/api-designer/import-rest-apis-swagger"  
+          ]       
         },
 
         {
