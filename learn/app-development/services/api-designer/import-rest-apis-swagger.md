@@ -1,5 +1,5 @@
 ---
-title: "Importing Swagger"
+title: "Import REST APIs via Swagger"
 id: ""
 ---
 ---
