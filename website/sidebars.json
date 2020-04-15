@@ -701,6 +701,7 @@
       "app-development/widgets/datalive/datatable/layouts",
       "app-development/widgets/datalive/datatable/table-configuration",
       "app-development/widgets/datalive/datatable/field-configuration",
+      "app-development/widgets/datalive/datatable/field-validator",
       "app-development/widgets/datalive/datatable/row-expansion-data-table",
       "app-development/widgets/datalive/datatable/actions",
       "app-development/widgets/datalive/datatable/datatable-events-methods",
