@@ -33,8 +33,6 @@ An Entity contains multiple endpoints. For example, CRUD endpoints, including Cr
 |PUT |Update |UPDATE|
 |DELETE|Delete|DELETE|
 
-
-
 From the left navigation, view all the identified **Entities**. Click the Entity name to see its endpoints, which categorize as **CRUD endpoints** and **Other endpoints**. You can modify these if needed.
 
 ![import swagger url](/learn/assets/import-swagger-url.png)
@@ -53,7 +51,22 @@ When you have successfully imported the entities, you can create a service varia
 
 ## Creating Service Variable for Entities
 
+1. Select **Variable** from the workspace toolbar.
+
 ![variable creation](/learn/assets/var_sel.png)
+
+2. Click **New Variable** from the Variable Dialog.
+3. Select the **Web Services** as *target action for Variable*.
 
 ![select web services](/learn/assets/select-web-services.png)
 
+:::important
+The data source for the Variable comes from the imported Services.
+:::
+
+![swagger variable](/learn/assets/swagger-variable.png)
+
+**Service** - select service name, if it is already imported.  
+**Method** - in case the API exposes multiple services, you can choose from the list.  
+**Name** - is set by default but you can modify it.  
+**Owner** - the scope of the Variable being created. By default it is set to Page, you can change it to Application if you want this variable to be available across the app.  
