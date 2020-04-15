@@ -1,6 +1,7 @@
 ---
 title: "Import REST APIs via Swagger"
 id: ""
+sidebar_label: "Swagger Import"
 ---
 ---
 
@@ -56,17 +57,17 @@ When you have successfully imported the entities, you can create a service varia
 ![variable creation](/learn/assets/var_sel.png)
 
 2. Click **New Variable** from the Variable Dialog.
-3. Select the **Web Services** as *target action for Variable*.
+3. Select **Web Services** as *a target action for Variable*.
 
 ![select web services](/learn/assets/select-web-services.png)
 
 :::important
-The data source for the Variable comes from the imported Services.
+The data source for the Variable comes from imported Services.
 :::
 
 ![swagger variable](/learn/assets/swagger-variable.png)
 
-**Service** - select service name, if it is already imported.  
-**Method** - in case the API exposes multiple services, you can choose from the list.  
-**Name** - is set by default but you can modify it.  
-**Owner** - the scope of the Variable being created. By default it is set to Page, you can change it to Application if you want this variable to be available across the app.  
+- **Service**: Select the service name from imported services.
+- **Method**: If the API exposes multiple services, you can choose from the list.
+- **Name**: Set by default, but you can modify it.
+- **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
