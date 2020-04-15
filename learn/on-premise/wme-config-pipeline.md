@@ -5,8 +5,11 @@ sidebar_label: "Configure Pipeline"
 ---
 ---
 
-# CONFIGURE DEPLOYMENT PIPELINE
+### Configure Deployment Pipeline
+
 - For configure deployment pipeline at app deployment section selec pipeline option
 - Select the respective stages to configure available stages are QA,STAGE and  LIVE
+    <br/><br/>
     [![](/learn/assets/wme-setup/configuring-wme/pipeline-configuration.png)](/learn/assets/wme-setup/pipeline-configuration.png)
+
 - Provide respective details to configure and save the details

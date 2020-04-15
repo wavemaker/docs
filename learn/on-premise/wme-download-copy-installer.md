@@ -10,6 +10,7 @@ sidebar_label: "Download and Copy Installer"
 **Ubuntu**
 - Download debain package. The link will be shared by wavemaker team.
 - wget < Link of wme installer >
+
 **RHEL**
 - Download tar package. The link will be shared by wavemaker team.
 - wget < Link of wme installer >

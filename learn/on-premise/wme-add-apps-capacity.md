@@ -5,8 +5,11 @@ sidebar_label: "Add Apps Capacity"
 ---
 ---
 
-# ADD CAPACITY TO APP DEPLOYMENT
+### Add Capacity To App Deloyment
+
 - Select app deployment section and at deployment capacity select add capacity for adding instance to deployment capacity
 - Provide instance details and authentication details to connect to the instance,if you want you can test the connection and details of instance by selecting the test option.
-  [![](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.png)](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.png)
+  <br/><br/>
+  [![](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.jpg)](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.jpg)
+
 - Wait for few moments for configure and get started

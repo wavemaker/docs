@@ -6,8 +6,9 @@ sidebar_label: "Install  Prerequisites"
 ---
 
 ### In Ubuntu
- We don't need to install any software. 
- WME Intaller will automatically installs required softwares.
+- We don't need to install any software. 
+- WME Intaller will automatically installs required softwares.
+
 ### In RHEL 
 - Install wget 
   - sudo yum install wget  -y

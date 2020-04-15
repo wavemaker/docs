@@ -5,8 +5,10 @@ sidebar_label: "Run Patch"
 ---
 ---
 
-# RUN THE PATCH FOR UPGRADING
+# Run The Patch For Upgrading
 - Run the bash script for upgrading to desired version
 - Enter admin password for proceeding the process
-   [![](/learn/assets/wme-setup/upgrade-wme-setup/upgrading-wme.png)](/learn/assets/wme-setup/upgrade-wme-setup/upgrading-wme.png)
+   <br/><br/>
+   [![](/learn/assets/wme-setup/upgrade-wme-setup/upgrading-wme.jpg)](/learn/assets/wme-setup/upgrade-wme-setup/upgrading-wme.jpg)
+
 - Wait for few moments for upgrading 
