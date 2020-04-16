@@ -7,15 +7,22 @@ sidebar_label: "Swagger Import"
 
 Develop a WaveMaker app by importing REST APIs that have Swagger/OpenAPI support. Import REST services via Swagger to get access to the required information to consume and integrate with your app, and create a variable to perform CRUD operations.
 
-![import swagger](/learn/assets/import-swagger.png)
+### Supported Widgets
+
+**Web**: DataTable, Form, Cards (read-only), List (read-only).
+
+**Mobile**: List with Form.
 
 ## Importing Swagger
 
+Go to **APIs** section, add **Imported APIs**.
+
+![import swagger](/learn/assets/import-swagger.png)
+
 Import Swagger from a URL or a File.
 
-**File**: Supports `.json`  
-
-**URL**: The service URL that hosts the REST service.  
+- **File**: Supports `.json`  
+- **URL**: The service URL that hosts the REST service.  
 
 For example, see [Swagger Petstore Project](http://petstore.swagger.io/).  
 `https://petstore.swagger.io/v2/swagger.json`  
@@ -42,57 +49,22 @@ From the left navigation, view all the identified **Entities**. Click the Entity
 If you cannot find an entity for a path, look for the **Others** entry from the **Entities** list. You can use them as a Variable; however, it does not support CRUD operations.
 :::
 
-After verifying the details in the **Import APIs** dialog, click **Import**. 
+After verifying the details in the **Import APIs** dialog, click **Import** to add the service.
 
 ## Configuring Authentication
 
-Swagger supports OAuth 2.0. For more information, see [REST Services using OAuth 2.0](/learn/app-development/services/web-services/oauth-2-0-rest-services)
+Next, in the following dialog configure, API authentication. Swagger supports OAuth 2.0. Click **OAuth Provider** to enter provider details.
 
 ![oauth config for swagger](/learn/assets/oauth-swagger-congif.PNG)
 
-- **Provider ID** is the OAuth 2.0 Service Provider, selected from the list or enter the name if you are adding your own.
-- **Callback URL** is pre populated by WaveMaker and is not editable. You can copy this link and use it to as the callback URL in OAuth Provider app settings page.
-- **Authorization URL** and **Access Token URL** of the OAuth service provider for obtaining the authorization and access to the service. These fields are auto-populated in case of the selected providers, else you need to enter them manually.
-- Client Credentials issued once your app is registered with the Provider. It will be in the form of **Client ID** and **Client Secret**.
-- **Send Access Token As** Header or Query. Usually, the OAuth providers need the access token to be sent as a part of Header, few might require it as a Query parameter. Check with your OAuth provider and select the appropriate option. It is set to Header by default.
-- **Scope** defines what the access token can do and what resources it can access. For the listed Providers the popular Scopes are listed for you to select. Check with the selected OAuth 2 service provider to understand how to further configure this field.
+![oauth config for swagger](/learn/assets/oauth-swagger-config.png)
 
-## Integrating Imported REST Services
+In **OAuth Provider Configuration** dialog, enter the values to authenticate the imported REST services. To know how to configure these properties, see [OAuth Provider Configuration for REST Services](/learn/app-development/services/web-services/oauth-2-0-rest-services#oauth-provider-configuration).
 
-When you successfully import the REST service, you can drag-and-drop data widgets to perform CRUD operations. Or, create a service variable, and integrate it with widgets to perform a single operation at once.
+For more information, see [REST Services using OAuth 2.0](/learn/app-development/services/web-services/oauth-2-0-rest-services), and see list of Supported OAuth 2.0 Providers [here](/learn/app-development/services/web-services/oauth-2-0-rest-services#supported-oauth-20-providers).
 
-### Supported Widgets
+## Consuming Imported REST Services
 
-**Web**: DataTable, Form, Cards (read-only), List (read-only)
+When you successfully import the REST service, you can drag-and-drop a data widget to perform CRUD operations. To learn how to create a CRUD variable, see [Creating a CRUD Variable for REST Services](/learn/app-development/variables/crud-variable). 
 
-**Mobile**: List with Form
-
-### Creating CRUD Variables
-
-Create CRUD variables by drag-and-drop of widgets.
-
-![datatable crud variable](/learn/assets/datatable-crud-variable.png)
-
-For more information about using CRUD variable, see [CRUD Variable](/learn/app-development/variables/crud-variable)
-
-### Creating Service Variable
-
-1. Select **Variable** from the workspace toolbar.
-
-![variable creation](/learn/assets/var_sel.png)
-
-2. Click **New Variable** from the Variable Dialog.
-3. Select **Web Services** as *a target action for Variable*.
-
-![select web services](/learn/assets/select-web-services.PNG)
-
-:::important
-The data source for the Variable comes from imported Services.
-:::
-
-![swagger variable](/learn/assets/swagger-variable.png)
-
-- **Service**: Select the service name from imported services.
-- **Method**: If the API exposes multiple services, you can choose from the list.
-- **Name**: Set by default, but you can modify it.
-- **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
+Also, you can create a service variable, and integrate it with widgets to perform one operation at once using a single endpoint. For more information, see [Service Variable](/learn/app-development/variables/web-service).
