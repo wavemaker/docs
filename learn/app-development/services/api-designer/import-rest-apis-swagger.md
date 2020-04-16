@@ -48,7 +48,7 @@ If you cannot find an entity for a path, look for the **Others** entry from the 
 
 ## Integrating Imported REST Services
 
-When you have successfully imported the entities, you can grad and drop data widgets to perform CRUD operations, or create a service variable and integrate it with data widgets to perfom a single operation at a time.
+When you successfully import the REST services, you can drag-and-drop data widgets to perform CRUD operations. Or, create a service variable, and integrate it with widgets to perform a single operation at once.
 
 ### Supported Widgets
 
@@ -58,9 +58,9 @@ When you have successfully imported the entities, you can grad and drop data wid
 
 ### Creating CRUD Variables
 
-You can create CRUD variables only by drag and drop of widgets.
+You can create CRUD variables only by drag-and-drop of widgets.
 
-### Creating Service Variable for Entities
+### Creating Service Variable
 
 1. Select **Variable** from the workspace toolbar.
 
