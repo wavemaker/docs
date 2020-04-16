@@ -297,6 +297,7 @@
             "app-development/deployment/deployment-to-aws",
             "app-development/deployment/deployment-to-azure",
             "app-development/deployment/deployment-google-cloud",
+            "app-development/deployment/deployment-to-digital-ocean",
             "how-tos/wavemaker-application-deployment-tomcat",
             "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
             "how-tos/wavemaker-application-deployment-jboss",
