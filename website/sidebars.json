@@ -150,10 +150,11 @@
 
         {
           "type": "subcategory",
-          "label": "Service Variable",
+          "label": "Variables",
           "ids": 
             [ 
-            "app-development/variables/web-service"        
+            "app-development/variables/web-service",
+            "app-development/variables/crud-variable"
             ]
         }  
 
