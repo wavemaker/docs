@@ -5,7 +5,7 @@ sidebar_label: "Swagger Import"
 ---
 ---
 
-Develop a WaveMaker app by importing REST APIs that have Swagger/OpenAPI support. Import REST services via Swagger to get access to the required information to consume and integrate with your app, and create a service variable to perform CRUD operations.
+Develop a WaveMaker app by importing REST APIs that have Swagger/OpenAPI support. Import REST services via Swagger to get access to the required information to consume and integrate with your app, and create a variable to perform CRUD operations.
 
 ![import swagger](/learn/assets/import-swagger.png)
 
@@ -42,15 +42,25 @@ From the left navigation, view all the identified **Entities**. Click the Entity
 If you cannot find an entity for a path, look for the **Others** entry from the **Entities** list. You can use them as a Variable; however, it does not support CRUD operations.
 :::
 
+## Authentication 
+
+
+
+## Integrating Imported REST Services
+
+When you have successfully imported the entities, you can grad and drop data widgets to perform CRUD operations, or create a service variable and integrate it with data widgets to perfom a single operation at a time.
+
 ### Supported Widgets
 
-When you have successfully imported the entities, you can create a service variable and integrate it with data widgets to perform CRUD operations.
-
-**Desktop Supported**: DataTable, Form, Cards (read-only), List (read-only)
+**Web**: DataTable, Form, Cards (read-only), List (read-only)
 
 **Mobile**: List with Form
 
-## Creating Service Variable for Entities
+### Creating CRUD Variables
+
+You can create CRUD variables only by drag and drop of widgets.
+
+### Creating Service Variable for Entities
 
 1. Select **Variable** from the workspace toolbar.
 
@@ -59,7 +69,7 @@ When you have successfully imported the entities, you can create a service varia
 2. Click **New Variable** from the Variable Dialog.
 3. Select **Web Services** as *a target action for Variable*.
 
-![select web services](/learn/assets/select-web-services.png)
+![select web services](/learn/assets/select-web-services.PNG)
 
 :::important
 The data source for the Variable comes from imported Services.
