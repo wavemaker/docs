@@ -73,6 +73,8 @@ Create CRUD variables by drag-and-drop of widgets.
 
 ![datatable crud variable](/learn/assets/datatable-crud-variable.png)
 
+For more information about using CRUD variable, see [CRUD Variable](/learn/app-development/variables/crud-variable)
+
 ### Creating Service Variable
 
 1. Select **Variable** from the workspace toolbar.

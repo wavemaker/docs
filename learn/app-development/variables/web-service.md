@@ -71,7 +71,16 @@ You will be directed to the Variables page, with the new variable listed. You ca
 
 ## Events
 
-During the life cycle of a Variable, a set of events are emitted by the Variable, thus giving you the option to control the behavior of the Variable such as input data validations, data processing, success/error handling, and more. For more information, see [Events](/learn/app-development/variables/events).
+During the life cycle of a Variable, a set of events are emitted by the Variable, thus giving you the option to control the behavior of the Variable such as input data validations, data processing, success/error handling, and more.
+
+- OnBeforeUpdate
+- OnResult
+- OnError
+- OnBeforeDatasetReady
+- OnCanUpdate
+- OnSuccess
+
+To learn how to implement Events, see [Events Documentation](/learn/app-development/variables/events).
 
 ## Methods
 
