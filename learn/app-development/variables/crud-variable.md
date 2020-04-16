@@ -13,24 +13,39 @@ A comprehensive list of these APIs can be found from the [API Designer](/learn/
 Since the service needs to be invoked to fetch the data, the widgets bound to these variables will display values only at run-time, not in Studio mode.
 :::
 
+### Supported Widgets
+
+**Web**: DataTable, Form
+
+**Mobile**: List with Form
+
 ## Variable Creation
 
-Drag and drop a widget on the canvas. In the following screen, a Datatable widget is used.
+Drag and drop a widget on the canvas. For example, in the following image, a Datatable widget is used. CRUD variable supports 
 
 ![datatable crud variable](/learn/assets/datatable-crud-variable.png)
 
-- **Service**: Select the service name from imported services.
-- **Select a service**: If the API exposes multiple services, you can choose from the list.
-- **Name**: Set by default, but you can modify it.
-- **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
+- **Retrieve Data From**: Services is selected by default.
+- **Select a Service type**: To use CRUD variable, select **All** from the dropdown.
+- **Select a Service**: Select the entity from the drop-down which lists the services available in your application. 
+- **Variable Creation**: Once you select the service and table/Entity for the service, a default variable will be created. See the Variable Name field populated by default which will be holding the dataset of the service. You can change the Variable name.
+- Select **Form As Dialog** or **Form Below**, and Click **Next**.
+- Select pagination, click **Next**.
+- Configure table columns. These fields can also be configured using **Advanced Settings** from the **Properties** panel.
+- Select template. 
+- Configure Form fields. These fields can also be configured using **Advanced Settings** from the **Properties** panel.
+- Click **Done**.
 
-#### Step-2
-You will be directed to the Variables page, with the new variable listed. You can see the following options:
-1. a **Web Service** Variable is created,
-2. with the default exposed method/selected method as target
-3. the **properties tab** contains all the properties like _behavior_ and _spinner_ behavior. [Know more about properties](#properties).
-4. the **data tab** will contain the fields serving as _input fields_ for the API
-5. the **events** tab will contain the events that can be configured to trigger any action. [Know more about events](#events).
+For more information to create Datatable, see [Create a Datatable](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage).
+
+### Edit Variable from Variable Dialog
+
+![variable creation](/learn/assets/var_sel.png)
+
+![crud variable properties](/learn/assets/crud-var-properties.png)
+
+- **Name**: You can modify Name.
+- **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
 
 ## Properties
 
@@ -46,7 +61,16 @@ You will be directed to the Variables page, with the new variable listed. You ca
 
 ## Events
 
-During the life cycle of a Variable, a set of events are emitted by the Variable, thus giving you the option to control the behavior of the Variable such as input data validations, data processing, success/error handling, etc. [Know More](/learn/app-development/variables/variables-actions/#events-implementation).
+During the life cycle of a Variable, a set of events are emitted by the Variable, thus giving you the option to control the behavior of the Variable such as input data validations, data processing, success/error handling, and more. 
+
+- OnBeforeUpdate
+- OnResult
+- OnError
+- OnBeforeDatasetReady
+- OnCanUpdate
+- OnSuccess
+
+To learn how to implement Events, see [Events Documentation](/learn/app-development/variables/events).
 
 ## Methods
 
