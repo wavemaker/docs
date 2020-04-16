@@ -41,27 +41,34 @@ You can [add a REST service](/learn/assets/Web_Service1.png) to your app from th
 
 [![](/learn/assets/rest_oauth.png)](/learn/assets/rest_oauth.png)
 
-3. **OAuth Provider**: You can either
-    - [Select a provider](#supported-oauth-20-providers) from the list. WaveMaker provides support for most OAuth providers.
-    - Add a provider
-4. Once you have selected an OAuth Provider, you will be prompted for the following details: 
+## OAuth Configuration
 
-    [![](/learn/assets/rest_oauth_config.png)](/learn/assets/rest_oauth_config.png)
+For OAuth configuration, you can do the following. 
 
-    - **Provider ID** is the OAuth 2.0 Service Provider, selected from the list or enter the name if you are adding your own.
-    - **Callback URL** is pre populated by WaveMaker and is not editable. You can copy this link and use it to as the callback URL in OAuth Provider app settings page.
-    - **Authorization URL** and **Access Token URL** of the OAuth service provider for obtaining the authorization and access to the service. These fields are auto-populated in case of the selected providers, else you need to enter them manually.
-    - Client Credentials issued once your app is registered with the Provider. It will be in the form of **Client ID** and **Client Secret**.
-    - **Send Access Token As** Header or Query. Usually, the OAuth providers need the access token to be sent as a part of Header, few might require it as a Query parameter. Check with your OAuth provider and select the appropriate option. It is set to Header by default.
-    - **Scope** defines what the access token can do and what resources it can access. For the listed Providers the popular Scopes are listed for you to select. Check with the selected OAuth 2 service provider to understand how to further configure this field.
+WaveMaker provides support for most OAuth providers. [Select a provider](#supported-oauth-20-providers) from the list and add a provider.
 
-5. Once you have configured the OAuth 2 Provider, **Test** the configuration to complete the Import process. While testing, you will be prompted to enter the login credentials. This is to obtain the Access Token details and to set the various configuration settings. 
+### OAuth Provider Configuration
+
+When you select an OAuth Provider, fill in the prompted details in the **OAuth Provider Configuration** dialog.
+
+[![](/learn/assets/rest_oauth_config.png)](/learn/assets/rest_oauth_config.png)
+
+- **Provider ID** is the OAuth 2.0 Service Provider, selected from the list or enter the name if you are adding your own.
+- **Callback URL** is pre populated by WaveMaker and is not editable. You can copy this link and use it to as the callback URL in OAuth Provider app settings page.
+- **Authorization URL** and **Access Token URL** of the OAuth service provider for obtaining the authorization and access to the service. These fields are auto-populated in case of the selected providers, else you need to enter them manually.
+- Client Credentials issued once your app is registered with the Provider. It will be in the form of **Client ID** and **Client Secret**.
+- **Send Access Token As** Header or Query. Usually, the OAuth providers need the access token to be sent as a part of Header, few might require it as a Query parameter. Check with your OAuth provider and select the appropriate option. It is set to Header by default.
+- **Scope** defines what the access token can do and what resources it can access. For the listed Providers the popular Scopes are listed for you to select. Check with the selected OAuth 2 service provider to understand how to further configure this field.
+
+### Testing Configuration
+
+When you have configured the OAuth 2 Provider, **Test** the configuration to complete the Import process. While testing, you will be prompted to enter the login credentials. This is to obtain the Access Token details and to set the various configuration settings.
 
 [![](/learn/assets/rest_oauth_test.png)](/learn/assets/rest_oauth_test.png)
 
-6. Set the Headers, Query Params and Path Parameters, as needed.
-7. You have the option to change the provider details and provider itself.
-8. From the [Project Settings](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) under [Profile Configuration](/learn/assets/configAccess.png) you will find the OAuth 2.0 configurations. These can be configured seperately for Deployment profile to be used while deploying the app. Remember to to register the call back url provided therein with the oauth server. 
+- Set the Headers, Query Params and Path Parameters, as needed.
+- You have the option to change the provider details and provider itself.
+- From the [Project Settings](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) under [Profile Configuration](/learn/assets/configAccess.png) you can modify OAuth 2.0 configurations. These can be configured seperately for Deployment profile to be used while deploying the app. Remember to register the call back url provided therein with the oauth server.
 
 [![](/learn/assets/rest_oauth_prof.png)](/learn/assets/rest_oauth_prof.png)
 

@@ -42,13 +42,24 @@ From the left navigation, view all the identified **Entities**. Click the Entity
 If you cannot find an entity for a path, look for the **Others** entry from the **Entities** list. You can use them as a Variable; however, it does not support CRUD operations.
 :::
 
-## Authentication 
+After verifying the details in the **Import APIs** dialog, click **Import**. 
 
+## Configuring Authentication
 
+Swagger supports OAuth 2.0. For more information, see [REST Services using OAuth 2.0](/learn/app-development/services/web-services/oauth-2-0-rest-services)
+
+![oauth config for swagger](/learn/assets/oauth-swagger-congif.PNG)
+
+- **Provider ID** is the OAuth 2.0 Service Provider, selected from the list or enter the name if you are adding your own.
+- **Callback URL** is pre populated by WaveMaker and is not editable. You can copy this link and use it to as the callback URL in OAuth Provider app settings page.
+- **Authorization URL** and **Access Token URL** of the OAuth service provider for obtaining the authorization and access to the service. These fields are auto-populated in case of the selected providers, else you need to enter them manually.
+- Client Credentials issued once your app is registered with the Provider. It will be in the form of **Client ID** and **Client Secret**.
+- **Send Access Token As** Header or Query. Usually, the OAuth providers need the access token to be sent as a part of Header, few might require it as a Query parameter. Check with your OAuth provider and select the appropriate option. It is set to Header by default.
+- **Scope** defines what the access token can do and what resources it can access. For the listed Providers the popular Scopes are listed for you to select. Check with the selected OAuth 2 service provider to understand how to further configure this field.
 
 ## Integrating Imported REST Services
 
-When you successfully import the REST services, you can drag-and-drop data widgets to perform CRUD operations. Or, create a service variable, and integrate it with widgets to perform a single operation at once.
+When you successfully import the REST service, you can drag-and-drop data widgets to perform CRUD operations. Or, create a service variable, and integrate it with widgets to perform a single operation at once.
 
 ### Supported Widgets
 
@@ -58,7 +69,9 @@ When you successfully import the REST services, you can drag-and-drop data widge
 
 ### Creating CRUD Variables
 
-You can create CRUD variables only by drag-and-drop of widgets.
+Create CRUD variables by drag-and-drop of widgets.
+
+![datatable crud variable](/learn/assets/datatable-crud-variable.png)
 
 ### Creating Service Variable
 
