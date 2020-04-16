@@ -41,7 +41,7 @@ Hyscale provides us with a declarative spec for Kubernetes abstraction and docke
 Step 4: Application Configuration:
 Here, the app-specific deployment details are taken from the end-user.
 
-## Cluster COnfiguration
+## Cluster Configuration
 
 Below are the processes that can be performed by an end user:
 Process 1: create a cluster in their digital ocean account and deploy an application onto it.
