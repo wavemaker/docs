@@ -70,12 +70,13 @@ Once the app is tested and ready to go live, you can push the app from Demo to L
 
 ### Steps to Configure Live Phase
 
-1. Click the Configure button for the Live phase and select the Cloud Provider - you can choose between WaveMaker Demo Cloud or external provider like AWS, Azure or Google.
+1. Click the Configure button for the Live phase and select the Cloud Provider - you can choose between WaveMaker Demo Cloud or external provider like AWS, Azure, Google or DigitalOcean.
 2. Here we will show steps in **WaveMaker Demo Cloud**,
     
     - [click here for AWS configuration](/learn/app-development/deployment/deployment-to-aws/),
     - [click here for Azure configuration](/learn/app-development/deployment/deployment-to-azure/),
-    - [click here for Google Cloud configuration](/learn/app-development/deployment/deployment-google-cloud/).
+    - [click here for Google Cloud configuration](/learn/app-development/deployment/deployment-google-cloud/),
+    - [click here for DigitalOcean configuration](/learn/app-development/deployment/deployment-to-digital-ocean/).
     
     [![](/learn/assets/manage_apps_live.png)](/learn/assets/manage_apps_live.png)
 3. Selecting WaveMaker Demo Cloud will initiate Live Pipeline setup and will auto-configure the phase and you can push the app to the Live phase.

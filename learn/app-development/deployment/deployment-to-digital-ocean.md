@@ -1,86 +1,125 @@
 ---
-title: "Configuring Digital Ocean"
+title: "Configuring DigitalOcean Deployment"
 id: ""
-sidebar_label: "Digital Ocean"
+sidebar_label: "DigitalOcean"
 ---
 ---
 
-DigitalOcean Kubernetes (DOKS) is a DigitalOcean managed Kubernetes service that lets you deploy Kubernetes clusters without the complexities of handling the container infrastructures. 
-For the other providers like AWS, Azure, and GoogleCloud, only VM based deployments are supported and in this case, the container-related infrastructures need to be managed and monitored continuously manually.
+DigitalOcean Kubernetes (DOKS) is a DigitalOcean managed Kubernetes service that lets you deploy Kubernetes clusters without the complexities of handling the container infrastructures. This is the first Kubernetes deployment provider supported by the WaveMaker platform.
 
-### What is managing container infrastructure, and why do users prefer Kubernetes deployments?
-In modern architecture, there are multiple services that are delivered over the network via APIs (for ex: our WaveMaker platform requires and runs multiple services at a time). All these services are hosted on multiple servers and configurations in various locations all coordinating their actions via network communication. This kind of distributed architecture is useful for scaling up the services. 
-Now let's say. at any given point of time, service A is trying to contact service B. However Service B is down due to some infrastructure-related issues.
+Following are the few benefits of Kubernetes deployments:
 
-## VM deployment
-The communication between Service A and B will fail until a dev-ops member manually goes and fixes the cause for the Service B's container failure.  
-The entries of the services and their endpoints is maintained in consul and need to be updated manually.
+- Auto Scaling
+- Auto Recovery
+- Service Discovery
 
-## Kubernetes deployment
+WaveMaker allows you to deploy your app to your DigitalOcean account for Live phase(and Stage phase for WME users). [Know more about App Phases from here](/learn/app-development/deployment/release-management/).
 
-Kubernetes automatically keeps performing a health check on all its containers and in case of any failure like this, it relaunches another container with the same configuration to prevent any service communication failures.
-Also, Kubernetes maintains the details of the services and their endpoints in a registry and each time a container is relaunched and re-allocated, the endpoint for the service is automatically updated. 
-Autoscaling is another feature that lets users scale their applications without a radical redesign of their existing systems.
+To deploy your app to DigitalOcean account, you need to configure the Live phase(or Stage phase for WME).
 
-Hence, through this integration, we will be enabling the end-users to perform deployment operations on their DigitalOcean Kubernetes clusters.
+:::note
+This document covers the Live Phase configuration for your DigitalOcean account and is a part of the [Manage Deployed Apps](/learn/app-development/deployment/manage-deployed-apps/)
+:::
 
-## Deployment flow
+## Stages in DigitalOcean Deployment:
 
-Accept the DigitalOcean account token for the user. For more information, see [How to Create a Personal Access Token](https://www.digitalocean.com/docs/apis-clis/api/create-personal-access-token/). For testing, use the following token below:
+1. Configuration of DigitalOcean cluster
+2. Deployment of application to DigitalOcean cluster
 
-```
-836ae5a604051f8303efed9f46cf7a22ac369c562b7b786efa67829643ad74a5
-```
+## Stage-1: Configuration of DigitalOcean cluster:
 
-## Cluster Configuration
+1. From Apps Portal, select the project.
+2. Click Configure on the Live Phase option.
+3. While configuring the Live phase choose to host your app on the DigitalOcean cloud provider. Post choosing the DigitalOcean cloud provider, you will observe a configuration dialog comprising of multiple steps. Let's talk in detail about each step below.
 
-Here, the user will provide the necessary details needed to create a new cluster or use an existing one.
+## 1. DigitalOcean account and cluster details
 
-Below are the processes that can be performed by an end user:
-Process 1: create a cluster in their digital ocean account and deploy an application onto it.
-Process 2: Use an existing cluster and deploy an application onto it.
+Enter your **DigitalOcean access token** to proceed with the configuration. For more information, see [How to Create a Personal Access Token](https://www.digitalocean.com/docs/apis-clis/api/create-personal-access-token/).
 
+[![](/learn/assets/deploy_do_setup.png)](/learn/assets/deploy_do_setup.png)
 
-### Process 1: Creation of Cluster Process
+Post providing your access token, you will be able to see options to configure a new cluster or use an existing cluster.
 
-We will accept a few basic properties needed to launch a cluster from the end-user like below:
+**Process 1: Creation of a cluster:**
+
+[![](/learn/assets/deploy_do_new_cluster.png)](/learn/assets/deploy_do_new_cluster.png)
+
+You need to provide the necessary details needed to launch a cluster:
 1. Cluster Name
-2. The region to launch the cluster in
+2. The region for launching the cluster
 3. Cluster Capacity using:
-    - Cluster Node Size - This defines the type of memory, hard disk and CPU size that would be allocated to the cluster created.
-    - Cluster Node Count - this determines the number of worker nodes to be launched with the above-chosen node size. The default value for this is set to 1.
+    - Cluster Node Size - This defines the type of memory, hard disk and CPU size that you would want to allocate to the worker node created.
+    - Cluster Node Count - This determines the number of worker nodes to be launched with the above chosen node size in the cluster. The default value for this is set to 1.
 
-### Process 2: Use an existing cluster:
-The user can choose from a pre-populated list of clusters present in his/her account (these will be fetched based on the account token that the user will provide in Step #1)
+**Process 2: Use an existing cluster:**
 
-## Registry Details
+[![](/learn/assets/deploy_do_existing_cluster.png)](/learn/assets/deploy_do_existing_cluster.png)
 
-Kubernetes requires a set of manifest files to be generated for application deployment onto the cluster. Hence, for the application deployment process, we are depending on the Hyscale tool. Hyscale provides us with a declarative spec for Kubernetes abstraction and docker files are automatically generated, docker images are built and pushed to the docker registry details provided in this step, and the manifests are deployed to the Kubernetes cluster resulting in the final URL.
+You can choose from a pre-populated list of clusters present in your account (these will be fetched based on the access token that you provide).
 
-For each deployment, an image will be created by deploying the application WAR file on tomcat from the base tomcat image. This image is then pushed to the registry based on the details provided by the end-user. Below are the details accepted from the end-user:
+## 2. Registry Details
+
+Since it is comprises of  Image based deployment, we will be needing your registry account details to push the application image to the registry and pull the same at the time of deployment of application to DigitalOcean cluster.
+
+[![](/learn/assets/deploy_do_registry_details.png)](/learn/assets/deploy_do_registry_details.png)
 
 1. Registry Url: Currently this is fixed to `registry.hub.docker.com` as we are supporting only the docker hub registry for now.
 2. Username of Docker Hub account
 3. Password of Docker Hub account
-4. Repository Name: To enable only private push and access of images, we will be taking the repository name from the end-user. To create a private repo in docker Hub account, please follow the steps below:
+4. Repository Name: To enable only private push and access of images, you need to provide private repository name. To create a private repo in Docker Hub account, please follow the steps below:
 
-https://docs.docker.com/docker-hub/repos/#private-repositories
+    https://docs.docker.com/docker-hub/repos/#private-repositories
  
-You can create an account in Docker Hub by following the steps below:
-https://hub.docker.com/signup
- 
-## Application Configuration
+## 3. Application Configuration
 
-Here, the app-specific deployment details are taken from the end-user.
+You need to provide Application specific deployment configuration in this step.
 
-Below are the properties accepted as input from the end-user in this step:
-1. Application Memory: This is the amount of memory that needs to be allocated to deployed application. In case of a new cluster created, this value should never exceed the memory specified in the node size.
- 
-2. Application Replica:
-Scaling of an application is accomplished by changing the number of replicas in a Deployment.
-This value determines the number of pods that must be running at any given point of time.
- 
-:::note
-- We have just upgraded to hyscale 0.9.4 jar version this morning and few fixes specific to the jar are yet to be merged. I'll notify you once these changes are merged.
-- Also, the current storage space is limited in the DigitalOcean account. Hence, in case you see deployments or cluster creations failing due to storage issues, please let me know, I'll clear up the existing clusters or namespaces in the DigitalOcean account. You should be able to observe the exact cause of the failures in the logs in such cases.
-:::
+[![](/learn/assets/deploy_do_app_configuration.png)](/learn/assets/deploy_do_app_configuration.png)
+
+1. Application Replica: Scaling of an application is accomplished by changing the number of replicas in a Deployment.
+    This value determines the number of pods that must be running within the worker nodes at any given point of time.
+
+2. Application Memory: This is the amount of memory that needs to be allocated to deployed application. In case of a new cluster created, this value should never exceed the memory specified for the worker node size.
+
+Once all the configuration details are provided across the steps, you can click on Configure button to trigger the cluster configuration process. 
+
+In case you have configured a **new cluster**, the phase creation is initiated and you can track the progress of the cluster creation process under the jobs section of the respective project in Studio. 
+
+[![](/learn/assets/deploy_do_configure_new_cluster.png)](/learn/assets/deploy_do_configure_new_cluster.png)
+
+[![](/learn/assets/deploy_do_configuring.png)](/learn/assets/deploy_do_configuring.png)
+
+[![](/learn/assets/deploy_do_jobs_cluster_configuration.png)](/learn/assets/deploy_do_jobs_cluster_configurtion.png)
+
+On clicking on the "Configure" button, in case if you have chosen an **existing cluster**, the Live phase is associated with the cluster details chosen.
+
+[![](/learn/assets/deploy_do_configure_existing_cluster.png)](/learn/assets/deploy_do_configure_existing_cluster.png)
+
+
+## Stage-2: Deployment of application to DigitalOcean cluster:
+
+Once the live phase configuration is completed, you can trigger the deployment to DigitalOcean cluster by clicking on push option present in the Demo phase.
+
+We are depending on the **HyScale tool** for the deployment process.
+
+[![](/learn/assets/deploy_do_cluster_configured.png)](/learn/assets/deploy_do_cluster_configured.png)
+
+Once you click on the "Push" button, you will observe a [config profile window](/learn/app-development/deployment/configuration-profiles). Configure the details as per your requirement and click on "Next" and then "Push".
+
+[![](/learn/assets/deploy_do_push_to_live.png)](/learn/assets/deploy_do_push_to_live.png)
+
+[![](/learn/assets/deploy_do_deploying.png)](/learn/assets/deploy_do_deploying.png)
+
+The deployment progress can be tracked in the Jobs section of the respective project as shown below.
+
+[![](/learn/assets/deploy_do_jobs_deployment.png)](/learn/assets/deploy_do_jobs_deployment.png)
+
+Post deployment is successful, you will be able to see options to view the deployment details or go to the deployed URL.
+
+[![](/learn/assets/deploy_do_deployment.png)](/learn/assets/deploy_do_deployment.png)
+
+On clicking of the "View Details" tab, you will be able to view the deployment and Live phase specific information like ImageName, the namespace at which the application is deployed, the default storage class and cluster details etc. You may then use these details to perform registry or cluster specific operation or debugging.
+
+[![](/learn/assets/deploy_do_providerinfo1.png)](/learn/assets/deploy_do_providerinfo1.png)
+
+[![](/learn/assets/deploy_do_providerinfo2.png)](/learn/assets/deploy_do_providerinfo2.png)

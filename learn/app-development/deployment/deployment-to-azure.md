@@ -38,7 +38,7 @@ For this, you need to write to [support@wavemaker.com](mailto:support@wavemaker.
 
 **Steps in Azure Configuration**:
 
-- From [Apps Portal](http://[supsystic-show-popup id=122]), select the project.
+- From Apps Portal, select the project.
 - Click Configure on the Live Phase option.
 - While configuring the Live phase choose to host your app on your Azure account.
 - Enter your Azure account credentials to proceed with the configuration. You need to enter: 
