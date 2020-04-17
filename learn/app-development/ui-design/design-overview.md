@@ -36,7 +36,7 @@ They can be dropped into the Grids or Containers, making UI well-aligned and rea
 ### Page Layout
 Based on the Page construction system WaveMaker provides different options for Page Layouts, which can be picked based on the interaction required for the app. Depending upon the app platform the layout will differ.
 
-Page Layout can be set at the time of [Page Creation](./page-creation.md) or can be changed from the Workspace Toolbar.
+Page Layout can be set a default one at the time of [Page Creation](./page-creation.md) and later can be changed from the Workspace Toolbar.
 
 [![](/learn/assets/layout_change.png)](/learn/assets/layout_change.png)
 

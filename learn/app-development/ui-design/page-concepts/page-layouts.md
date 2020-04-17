@@ -14,7 +14,7 @@ An app is divided into multiple pages to segregate the functionality of the app
 
 **Page Layouts** help you design the structure of the page by demarcating the header, footer, navigation and one or more content columns. Based on the Page construction system WaveMaker provides different options for Page Layouts, which can be picked based on the interaction required for the app. Depending on the app platform - web or mobile, the layout will differ. Here we will be discussing web platform, for mobile platform [refer here](/learn/hybrid-mobile/mobile-page-concepts/). Page
 
-A layout can be selected at the time of Page Creation or later from the Change Layout option on the Workspace Toolbar.
+A layout can be set to a default one at the time of Page Creation and later can be changed from the Workspace Toolbar.
 
 [![](/learn/assets/layout_change.png)](/learn/assets/layout_change.png)
 
