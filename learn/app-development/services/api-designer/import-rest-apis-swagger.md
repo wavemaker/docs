@@ -15,7 +15,7 @@ Develop a WaveMaker app by importing REST APIs that have Swagger/OpenAPI support
 
 ## Importing Swagger
 
-Go to **APIs** section, add **Imported APIs**.
+Go to **APIs** section, and select **Imported APIs**.
 
 ![import swagger](/learn/assets/import-swagger.png)
 
