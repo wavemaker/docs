@@ -707,6 +707,7 @@
       "app-development/widgets/datalive/datatable/data-table-basic-usage",
       "app-development/widgets/datalive/datatable/data-source",
       "app-development/widgets/datalive/datatable/layouts",
+      "app-development/widgets/datalive/datatable/styles",
       "app-development/widgets/datalive/datatable/table-configuration",
       "app-development/widgets/datalive/datatable/field-configuration",
       "app-development/widgets/datalive/field-validator",
