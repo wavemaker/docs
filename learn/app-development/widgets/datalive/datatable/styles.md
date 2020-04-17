@@ -1,13 +1,13 @@
 ---
-title: "Data Table - Styles"
+title: "Data Table Styles"
 id: ""
 sidebar_label: "Styles"
 ---
 ---
 
-From [release 10.4](), the default pattern of the data tables change from boxy borders to list view.
-
 ## Data Table Classes
+
+From [release 10.4](/learn/wavemaker-release-notes/v10-4-0), the default pattern of the data tables change from boxy borders to list view.
 
 The class names for bordered table and striped table are optional. You can add these from the right style property panel.
 
