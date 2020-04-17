@@ -84,7 +84,7 @@ $cordova build --release
 - **For iOS** Run the following commands in your Mac:
 
 ```
-$cordova platform add ios
+$cordova platform add ios@5.1.1
 $cordova build ios --device
 ```
 
