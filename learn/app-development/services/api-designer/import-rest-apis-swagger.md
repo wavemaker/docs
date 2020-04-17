@@ -59,12 +59,12 @@ Next, in the following dialog configure, API authentication. Swagger supports OA
 
 ![oauth config for swagger](/learn/assets/oauth-swagger-config.png)
 
-In **OAuth Provider Configuration** dialog, enter the values to authenticate the imported REST services. To know how to configure these properties, see [OAuth Provider Configuration for REST Services](/learn/app-development/services/web-services/oauth-2-0-rest-services#oauth-provider-configuration).
+In **OAuth Provider Configuration** dialog, enter the values for **Access Token URL**, **Client ID** and **Client Secret** of the imported REST service. To know how to configure these properties, see [OAuth Provider Configuration for REST Services](/learn/app-development/services/web-services/oauth-2-0-rest-services#oauth-provider-configuration).
 
-For more information, see [REST Services using OAuth 2.0](/learn/app-development/services/web-services/oauth-2-0-rest-services), and see list of Supported OAuth 2.0 Providers [here](/learn/app-development/services/web-services/oauth-2-0-rest-services#supported-oauth-20-providers).
+For more information, see [REST Services using OAuth 2.0](/learn/app-development/services/web-services/oauth-2-0-rest-services), and see the list of Supported OAuth 2.0 Providers, [here](/learn/app-development/services/web-services/oauth-2-0-rest-services#supported-oauth-20-providers).
 
 ## Consuming Imported REST Services
 
-When you successfully import the REST service, you can drag-and-drop a data widget to perform CRUD operations. To learn how to create a CRUD variable, see [Creating a CRUD Variable for REST Services](/learn/app-development/variables/crud-variable). 
+When you successfully import a REST service, you can drag-and-drop the [supported](#supported-widgets) widgets to configure for CRUD-ready operations. To learn how to create a CRUD variable, see [Creating a CRUD Variable for REST Services](/learn/app-development/variables/crud-variable). 
 
 Also, you can create a service variable, and integrate it with widgets to perform one operation at once using a single endpoint. For more information, see [Service Variable](/learn/app-development/variables/web-service).
