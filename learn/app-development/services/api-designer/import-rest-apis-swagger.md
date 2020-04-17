@@ -5,7 +5,7 @@ sidebar_label: "Swagger Import"
 ---
 ---
 
-Develop a WaveMaker app by importing REST APIs that have Swagger/OpenAPI support. Import REST services via Swagger to get access to the required information to consume and integrate with your app, and create a variable to perform CRUD operations.
+WaveMaker automatically generates UI functionality for create, read, update, delete (CRUD) operations if you import REST API endpoints via Swagger/OpenAPI. Most of the backend frameworks like Spring Boot, .NET core already support automatic generation Swagger documentation for the REST APIs. You can develop a WaveMaker app by importing REST APIs that have Swagger/OpenAPI support. Import REST services via Swagger to get access to the required information to consume and integrate with your app.
 
 ### Supported Widgets
 
