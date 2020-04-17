@@ -1,9 +1,9 @@
 ---
-title: "Introduction to Widgets"
+title: "Composing Widgets"
 id: "ui-elements"
 sidebar_label: "Widgets Composition"
 ---
-Learn about widgets and how it works. 
+Learn about widgets and how it works.
 
 ---
 

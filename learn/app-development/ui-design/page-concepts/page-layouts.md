@@ -4,19 +4,15 @@ id: "page-layouts"
 ---
 ---
 
-An app is divided into multiple pages to segregate the functionality of the app. Various aspects of a Page are used to unite these segregated functionalities to form an app flow. In this document we will discuss:
+**Page Layouts** help you design the structure of the page by demarcating the header, footer, navigation and one or more content columns. Based on the Page construction system, WaveMaker provides different options for Page Layouts, which can be picked based on the interaction required for the app. Depending on the app platform - web or mobile, the layout will differ. 
 
-- [Page Layouts](#page-layouts) as tool to demarcate the page into components and give a unified look across pages
-- [Page Navigation](#page-navigation) to aid user to move from one page to another
-- [Events](#events) to capture define actions for user interactions and other incidents.
-
-## Introduction
-
-**Page Layouts** help you design the structure of the page by demarcating the header, footer, navigation and one or more content columns. Based on the Page construction system WaveMaker provides different options for Page Layouts, which can be picked based on the interaction required for the app. Depending on the app platform - web or mobile, the layout will differ. Here we will be discussing web platform, for mobile platform [refer here](/learn/hybrid-mobile/mobile-page-concepts/). Page
+## Select Layout
 
 A layout can be set to a default one at the time of Page Creation and later can be changed from the Workspace Toolbar.
 
 [![](/learn/assets/layout_change.png)](/learn/assets/layout_change.png)
+
+## Web Responsive
 
 A **Page Layout** has the following containers - a header, navigation bar, content, and footer. The content can have one, two or three columns. To change the layout of a page, simply click on the desired layout to see it take effect on the design canvas.
 
@@ -38,9 +34,17 @@ A typical page layout with header, footer, topnav, leftnav and rightnav has the 
 
 Widgets can be added to the _content._ The header, footer, top-nav, left and right panels are partial pages and can be customized using the edit button on each of the panels.
 
-**Note**: WaveMaker automatically adjusts the layout rendering for mobile devices.
+:::note
+WaveMaker automatically adjusts the layout rendering for mobile devices.
+:::
 
-### Container Widgets
+## Hybrid Mobile
 
-You can use the **Container Widgets** to arrange the widgets on a web page. [Know more](/learn/app-development/widgets/widget-library/#container).
+Similarly for Mobile apps, each page can be designed by selecting an appropriate layout and arranging widgets in it. For more information, see [Hybrid Mobile Page Layout](/learn/hybrid-mobile/mobile-page-concepts/).
+
+[![page_layout_mobile](/learn/assets/page_layout_mobile.png)](/learn/assets/page_layout_mobile.png)
+
+## Container Widgets
+
+You can use the **Container Widgets** to arrange the widgets on a web page. For more information, see [Container Widgets](/learn/app-development/widgets/widget-library/#container-widgets).
 

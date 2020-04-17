@@ -9,17 +9,24 @@
 
     "Pages": 
       [     
-            "app-development/ui-design/designing-app",            
-            "app-development/ui-design/page-creation",
-            "app-development/ui-design/design-overview",            
-            "app-development/widgets/ui-elements",                       
-            
+            "app-development/ui-design/designing-app",
+            "app-development/ui-design/page-creation",                   
+        {
+          "type": "subcategory",
+          "label": "Styles",
+          "ids": 
+            [     
+              "app-development/ui-design/page-concepts/page-layouts",         
+              "app-development/ui-design/themes",
+              "app-development/ui-design/page-concepts/page-templates"
+            ]
+        },           
+
         {
           "type": "subcategory",
           "label": "Page Configure",
           "ids": 
             [
-            "app-development/ui-design/page-concepts/page-layouts",
             "app-development/ui-design/page-artefacts",
             "app-development/ui-design/page-concepts/partial-pages",
             "app-development/ui-design/page-concepts/page-parameters",
@@ -31,12 +38,12 @@
 
         {
           "type": "subcategory",
-          "label": "Apply Styles",
+          "label": "Page Actions",
           "ids": 
             [
-              "app-development/ui-design/themes",
-              "app-development/ui-design/page-concepts/page-templates"
-            ]
+            "app-development/ui-design/page-concepts/page-navigation",
+            "app-development/ui-design/page-concepts/page-events"     
+            ]       
         },
 
         {
@@ -675,12 +682,11 @@
   },
 
 
-
-
   "Widgets": 
   {
     "Widgets & Prefabs Library": [
       "app-development/widgets/widget-library",
+      "app-development/widgets/ui-elements",
       "app-development/custom-widgets/custom-widgets"  
     ],
     
@@ -1166,7 +1172,7 @@
     [
         "app-development/wavemaker-overview/platform-overview",                                              
         "app-development/ui-design/page-concepts",
-        "responsive-web/web-ui-design",        
+        "app-development/ui-design/design-overview",         
         "app-development/services/backend-architecture",
         "app-development/variables/events-overview",
         "app-development/variables/integration-binding-layer"
