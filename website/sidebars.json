@@ -1168,6 +1168,7 @@
         "app-development/ui-design/page-concepts",
         "responsive-web/web-ui-design",        
         "app-development/services/backend-architecture",
+        "app-development/variables/events-overview",
         "app-development/variables/integration-binding-layer"
     ]
 
