@@ -9,17 +9,24 @@
 
     "Pages": 
       [     
-            "app-development/ui-design/designing-app",            
-            "app-development/ui-design/page-creation",
-            "app-development/ui-design/design-overview",            
-            "app-development/widgets/ui-elements",                       
-            
+            "app-development/ui-design/designing-app",
+            "app-development/ui-design/page-creation",                   
+        {
+          "type": "subcategory",
+          "label": "Styles",
+          "ids": 
+            [     
+              "app-development/ui-design/page-concepts/page-layouts",         
+              "app-development/ui-design/themes",
+              "app-development/ui-design/page-concepts/page-templates"
+            ]
+        },           
+
         {
           "type": "subcategory",
           "label": "Page Configure",
           "ids": 
             [
-            "app-development/ui-design/page-concepts/page-layouts",
             "app-development/ui-design/page-artefacts",
             "app-development/ui-design/page-concepts/partial-pages",
             "app-development/ui-design/page-concepts/page-parameters",
@@ -31,12 +38,12 @@
 
         {
           "type": "subcategory",
-          "label": "Apply Styles",
+          "label": "Page Actions",
           "ids": 
             [
-              "app-development/ui-design/themes",
-              "app-development/ui-design/page-concepts/page-templates"
-            ]
+            "app-development/ui-design/page-concepts/page-navigation",
+            "app-development/ui-design/page-concepts/page-events"     
+            ]       
         },
 
         {
@@ -107,17 +114,7 @@
 
       "REST & SOAP": 
       [   
-          "app-development/services/web-services/web-services",              
-          "app-development/services/api-designer/api",            
-        {
-          "type": "subcategory",
-          "label": "Swagger Import",
-          "ids": 
-          [
-                 
-          ]       
-        },
-            
+          "app-development/services/web-services/web-services",                                     
         {
           "type": "subcategory",
           "label": "Restful",
@@ -150,10 +147,21 @@
 
         {
           "type": "subcategory",
-          "label": "Service Variable",
+          "label": "APIs",
+          "ids": 
+          [
+            "app-development/services/api-designer/api",
+            "app-development/services/api-designer/import-rest-apis-swagger"  
+          ]       
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Variables",
           "ids": 
             [ 
-            "app-development/variables/web-service"        
+            "app-development/variables/web-service",
+            "app-development/variables/crud-variable"
             ]
         }  
 
@@ -297,6 +305,7 @@
             "app-development/deployment/deployment-to-aws",
             "app-development/deployment/deployment-to-azure",
             "app-development/deployment/deployment-google-cloud",
+            "app-development/deployment/deployment-to-digital-ocean",
             "how-tos/wavemaker-application-deployment-tomcat",
             "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
             "how-tos/wavemaker-application-deployment-jboss",
@@ -426,7 +435,8 @@
             "how-tos/use-conditional-class-property",
             "how-tos/customize-existing-theme",
             "how-tos/adjust-leftnav-width",
-            "how-tos/customizing-theme"
+            "how-tos/customizing-theme",
+            "how-tos/custom-widget-template"
           ],
 
           "Localization":
@@ -672,12 +682,11 @@
   },
 
 
-
-
   "Widgets": 
   {
     "Widgets & Prefabs Library": [
       "app-development/widgets/widget-library",
+      "app-development/widgets/ui-elements",
       "app-development/custom-widgets/custom-widgets"  
     ],
     
@@ -698,8 +707,10 @@
       "app-development/widgets/datalive/datatable/data-table-basic-usage",
       "app-development/widgets/datalive/datatable/data-source",
       "app-development/widgets/datalive/datatable/layouts",
+      "app-development/widgets/datalive/datatable/styles",
       "app-development/widgets/datalive/datatable/table-configuration",
       "app-development/widgets/datalive/datatable/field-configuration",
+      "app-development/widgets/datalive/field-validator",
       "app-development/widgets/datalive/datatable/row-expansion-data-table",
       "app-development/widgets/datalive/datatable/actions",
       "app-development/widgets/datalive/datatable/datatable-events-methods",
@@ -724,7 +735,7 @@
       "app-development/widgets/datalive/form/form-layouts",
       "app-development/widgets/datalive/form/form-configurations",
       "app-development/widgets/datalive/form/form-fields-configuration",
-      "app-development/widgets/datalive/form/form-field-validator",
+      "app-development/widgets/datalive/field-validator",
       "app-development/widgets/datalive/form/form-events-methods"      
     ],
 
@@ -911,6 +922,15 @@
     "Release Notes": 
       [
       "wavemaker-release-notes",
+      
+      {
+        "type": "subcategory",
+        "label": "Versions: 10.4.x",
+        "ids": 
+          [              
+            "wavemaker-release-notes/v10-4-0"
+          ]
+      },
       
       {
         "type": "subcategory",
@@ -1153,8 +1173,9 @@
     [
         "app-development/wavemaker-overview/platform-overview",                                              
         "app-development/ui-design/page-concepts",
-        "responsive-web/web-ui-design",        
+        "app-development/ui-design/design-overview",         
         "app-development/services/backend-architecture",
+        "app-development/variables/events-overview",
         "app-development/variables/integration-binding-layer"
     ]
 

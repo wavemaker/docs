@@ -35,11 +35,20 @@ You can apply themes and import custom themes, additionally, you can develop you
 
 ## Applying Theme
 
-1. To **change the theme** for a page, simply click on the **Themes** option from the _Workspace Toolbar:_
+1. To **change the theme** for a page, simply click on the **Themes** option from the Workspace Toolbar.
 
 [![](/learn/assets/theme_change.png)](/learn/assets/theme_change.png)
 
+### Supported Themes
+
 2. This will open a Theme dialog with a list of available themes to choose from.
+    - Dark
+    - Default
+    - Material
+    - Material-2.0
+    - Passion
+    - Vintage
+
 
 [![](/learn/assets/Themes.png)](/learn/assets/Themes.png) 
 
@@ -50,6 +59,23 @@ WaveMaker provides a few default themes that can be applied to your apps. From t
 :::warning
 Remember that the updates will re-write any changes you made directly to the CSS styles of the corresponding theme.
 :::
+
+### Deprecated Themes 
+
+These changes take effect from [Release-10.4](/learn/wavemaker-release-notes/v10-4-0).
+
+1. Graffiti
+2. Mellow-yellow
+3. Autumn
+4. Cool-blue
+5. Flyer
+6. Retro
+7. Vermillion
+
+:::warning
+If you are using a deprecated theme, you will still be able to use it until you change it to another theme. Once the changes are made, you cannot go back to the old theme.
+:::
+
 
 ## Importing Theme
 

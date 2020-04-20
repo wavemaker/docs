@@ -18,7 +18,7 @@ This document covers the Live Phase configuration for your AWS account and is a 
 
 - [AWS Account](https://aws.amazon.com/).
 - While setting up the AWS account care should be taken to ensure that the IAM key has the permissions as listed in the configuration dialog. [![](/learn/assets/deploy_aws_perms.png)](/learn/assets/deploy_aws_perms.png) **Steps in AWS Configuration**:
-- From [Apps Portal](http://[supsystic-show-popup id=122]), select the project.
+- From Apps Portal, select the project.
 - Click Configure on the Live Phase option.
 - While configuring the Live phase choose to host your app on AWS
 - Enter your AWS account credentials to proceed with the configuration. You need to enter [![](/learn/assets/deploy_aws_account.png)](/learn/assets/deploy_aws_account.png)

@@ -27,7 +27,7 @@ This document covers the Live Phase configuration for your AWS account and is a 
 
 ## Steps in Configuring Google Cloud
 
-1. From [Apps Portal](http://[supsystic-show-popup id=122]), select the project.
+1. From Apps Portal, select the project.
 2. Click Configure on the Live Phase option.
 3. While configuring the Live phase choose to host your app on Google Cloud
 4. Enter your Google Cloud account credentials to proceed with the configuration. [![](/learn/assets/deploy_google_account.png)](/learn/assets/deploy_google_account.png) You need to enter

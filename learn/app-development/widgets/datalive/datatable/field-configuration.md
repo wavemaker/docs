@@ -155,15 +155,11 @@ In the case, Filter Option is set to Row while designing the Data Table, then th
 
 ### Styling Options
 
-**Styles** can be used to change the styles for the selected field:
+**Styles** can be used to change the styles for the selected field.
 
-- **Width** for the column which can be specified in terms of the **Width Unit** - _px_ or _%_
-- **Text Alignment** of the column content
-- **Background** color for the column can be set
-- CSS **Class** for styling the field, this needs to be under the Style tab of the Page
-- **Conditional Class** for custom styling the column based on a condition
+For more information about styles and properties, see [Data Table Styles](/learn/app-development/widgets/datalive/datatable/styles).
 
-[See here for usage example](/learn/how-tos/data-table-styling/)
+For examples, see [Custom Styling Data Table Columns & Rows](/learn/how-tos/data-table-styling/)
 
 ### Security Options
 
