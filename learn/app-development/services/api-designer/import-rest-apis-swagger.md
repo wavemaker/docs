@@ -5,7 +5,9 @@ sidebar_label: "Swagger Import"
 ---
 ---
 
-WaveMaker automatically generates UI functionality for create, read, update, delete (CRUD) operations if you import REST API endpoints via Swagger/OpenAPI. Most of the backend frameworks like Spring Boot, .NET core already support automatic generation Swagger documentation for the REST APIs. You can develop a WaveMaker app by importing REST APIs that have Swagger/OpenAPI support. Import REST services via Swagger to get access to the required information to consume and integrate with your app.
+WaveMaker automatically generates UI functionality for create, read, update, delete (CRUD) operations if you import REST API endpoints via Swagger/OpenAPI. Most of the backend frameworks like Spring Boot, .NET core already support an automatic generation of Swagger documentation for the REST APIs. 
+
+You can develop a WaveMaker app by importing REST APIs that have Swagger/OpenAPI support. Import REST services via Swagger to get access to the required information to consume and integrate with your app.
 
 ### Supported Widgets
 
@@ -27,7 +29,7 @@ Import Swagger from a URL or a File.
 For example, see [Swagger Petstore Project](http://petstore.swagger.io/).  
 `https://petstore.swagger.io/v2/swagger.json`  
 
-![import swagger with url or file](/learn/assets/upload-file-url-swagger.png)
+![import swagger with url or file](/learn/assets/upload-file-url-swagger.PNG)
 
 ### Entity and Endpoints
 
