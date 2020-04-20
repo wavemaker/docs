@@ -11,7 +11,7 @@ You can use this feature to change the look and feel of the widgets that represe
 
 ![search template](/learn/assets/search-template.png)
 
-## Creating a Template from Canvas
+## Choosing Template from Canvas
 
 1. Drag and drop a Search Widget, and [bind the widget](/learn/app-development/variables/variable-binding#binding-to-widgets) to a dataSet.
 
@@ -33,7 +33,7 @@ You can use this feature to change the look and feel of the widgets that represe
 
 7. Now, [notify the widget](#notify-the-widget) to use the template from the page script tab.
 
-## Choosing from Page Creation Dialog
+## Creating Template from Page Creation Dialog
 
 1. Click the **+** to create a new page.
 
