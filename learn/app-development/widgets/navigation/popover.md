@@ -19,33 +19,66 @@ Popovers “pop-up” when the user performs a certain action or gets to a speci
 | Title | The Title is the text that the end user sees on Popover. |
 | Name | The name is a unique identifier for Popover. |
 | Badge Value | Value to be displayed in the badge span for Popover |
-| **Accessibility** |
+
+
+### Accessibility
+
+| **Property** | **Description** |
+| --- | --- |
 | Hint | Any text or HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
 | Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
-| Shortcut Key | The shortcut key property specifies a shortcut key to activate/focus an element. The way of accessing the shortcut key is varying in different browsers <br><br> - Internet Explorer - [Alt] + shortcutkey, <br> - Chrome - [Alt] + shortcutkey (Windows/Linux) [Control] [Alt] + shortcutkey (MAC), <br> - Firefox - [Alt] [Shift] + shortcutkey (Windows/Linux) [Control] [Alt] + shortcutkey (MAC), <br> - Safari - [Alt] + shortcutkey (Windows) [Control] [Alt] + shortcutkey (MAC) <br>  |
-| **Layout** |
-| Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
-| Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
+| Shortcut Key | The shortcut key property specifies a shortcut key to activate/focus an element. The way of accessing the shortcut key is varying in different browsers <br><br> - Internet Explorer - [Alt] + shortcutkey, <br> - Chrome - [Alt] + shortcutkey (Windows/Linux) [Control] [Alt] + shortcutkey (MAC), <br> - Firefox - [Alt] [Shift] + shortcutkey (Windows/Linux) [Control] [Alt] + shortcutkey (MAC), <br> - Safari - [Alt] + shortcutkey (Windows) [Control] [Alt] + shortcutkey (MAC)  |
+
+### Layout
+
+| **Property** | **Description** |
+| --- | --- |
+| Width | The width of your widget can be specified in `px` or `%` i.e `50px, 75%`. |
+| Height | The height of your widget can be specified in `px` or `%` i.e `50px, 75%`. |
 | Popover Width | This property defines the width of the popover. |
 | Popover Height | This property defines the height of the popover. |
-| **Content** |
+
+### Content
+
+| **Property** | **Description** |
+| --- | --- |
 | Content Source | Can be inline or partial. |
 | Content | In case the source is selected as <br><br> - inline enter the HTML code for the same. <br> - Partial source, choose from the available list of partial pages. |
 | Partial Param | In case the above set Partial page requires parameters. |
-| **Behavior** |
+
+### Behavior
+
+| **Property** | **Description** |
+| --- | --- |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
-| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| Load on Demand <br> (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| Interaction | This property defines which action should trigger the Popover to open or close. You can choose from the following options: <br><br> - **Click**: Popover opens on click and closes on click anywhere on the document. <br><br> - **Hover**: Popover opens on hover and closes on hover out. <br><br> - **Click and Hover** (Default): Popover opens and closes on both click or hover. |
+| Auto Close | This property defines when to close the popover. <br><br> **Outside Click**: popover will close when user clicks anywhere outside the popover content. <br><br> **Always**: the popover will close when user clicks anywhere on the page. <br><br> **Disabled**: popover will close only when user clicks on the popover link.|
+| Animation | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. |
+
+
+### Popover Behavior
+
+| **Property** | **Description** |
+| --- | --- |
 | Popover Placement | This property defines the placement of the popover. Choose from <br><br> - bottom, <br> - left, <br> - right or <br> - top.  |
 | Popover Arrow | This property defines the arrow for the popover. |
-| Interaction | This property defines which action should trigger the Popover to open or close. You can choose from the following options: <br><br> - _Click_ - Popover opens on click and closes on click anywhere on the document. <br><br> - _Hover _- Popover opens on hover and closes on hover out. <br> - _Click and Hover_ (Default)- Popover opens and closes on both click or hover. |
-| Animation | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. |
-| **Graphics** |
+
+### Graphics
+
+| **Property** | **Description** |
+| --- | --- |
 | Icon Class | This property defines the class of the icon that is applied to the button. |
 | Icon Url | This optional property allows you to add an icon to the left side of your button. You can give URL of the image. |
 | Icon Width | Optional property; but you will need this if you are using the button's iconUrl. Please enter the width of your icon. WARNING: It's best to specify size in pixels, not percent. |
 | Icon Height | Optional property; but you will need this if you are using the button's iconUrl. Please enter the height of your icon. WARNING: It's best to specify size in pixels, not percent. |
 | Icon Margin | Optional property; only has meaning if you specify the button's iconUrl. Values should all have "px" next to them. Use this to adjust the space between the icon and the button text. |
 | Icon position | Optional property; Property to set the position of the icon in the widget. Can be set to left, top or right. |
-| **Format** |
+
+
+### Format
+
+| **Property** | **Description** |
+| --- | --- |
 | Horizontal Align | This property specifies how the elements should be aligned horizontally. |
 
