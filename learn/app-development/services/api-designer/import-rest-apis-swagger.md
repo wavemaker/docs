@@ -29,7 +29,7 @@ Import Swagger from a URL or a File.
 For example, see [Swagger Petstore Project](http://petstore.swagger.io/).  
 `https://petstore.swagger.io/v2/swagger.json`  
 
-![import swagger with url or file](/learn/assets/upload-file-url-swagger.PNG)
+![import swagger with url or file](/learn/assets/upload-file-url-swagger.png)
 
 ### Entity and Endpoints
 
@@ -45,7 +45,7 @@ An Entity contains multiple endpoints. For example, CRUD endpoints, including Cr
 
 From the left navigation, view all the identified **Entities**. Click the Entity name to see its endpoints, which categorize as **CRUD endpoints** and **Other endpoints**. You can modify these if needed.
 
-![import swagger url](/learn/assets/import-swagger-url.png)
+![import swagger url](/learn/assets/import-swagger-url.PNG)
 
 :::note
 If you cannot find an entity for a path, look for the **Others** entry from the **Entities** list. You can use them as a Variable; however, it does not support CRUD operations.
