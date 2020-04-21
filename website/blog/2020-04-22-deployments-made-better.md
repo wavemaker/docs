@@ -8,9 +8,16 @@ With the latest release, WaveMaker has made the discovery of deployment failures
 
 <!-- truncate -->
 
-### Deployment Errors
 
-if the deployment of an application fails, it required some effort from the user to discover & resolve the issue in the last release as
+### Deployment
+
+When user invokes Deploy operation, WaveMaker executes the maven command to build the project and generate artefacts for deployment. 
+Build steps includes angular production build  to generate optimized & compressed javascript & other front end assets. 
+
+WaveMaker's One-click deploy feature allows developers deploy their application to AWS, Azure, Google Cloud or Kubernetes cluster.
+
+During the build process there can be failures if any of the markup, styles or scripts has issues. if the deployment of an application fails, it required some effort from the user to discover & resolve the issue in the last release as
+
 * The developer is informed about the errors post the deployment failure which usually takes couple of minutes since the deployment is triggered.
 * The user needs to analyse `build.log` file to find the exact error & its causes. The log file include framework specific messages which might be relatively hard for low code developers to comprehend & fix.
 * The build step of deployment fails for the first error it encounters. So the failure log did not include the complete list of errors in the application. This might cost the user multiple deployment operations to discover all issues & their fixes.
@@ -58,7 +65,13 @@ and developed pre-deployment validation for each. With these checks enabled prio
 * The validations are added as a part of Inspection framework, the user need not trigger Deployment to find out the issues in the project. 
 The user can also trigger Inspection check in the studio to find out application issues & fix them before making a deployment request.
 
-WaveMaker will be adding more validations with each release to help users develop & debug application easily ensuring a great developer & deployment experience.
+
+* The Inspection framework in WaveMaker is a custom static code analyzer developed with popular open source frameworks
+  * [**ESLint**](https://eslint.org/) 
+  * [**Stylelint**](https://stylelint.io/)
+* The Inspection framework analyse the markup, script & styles for any structure or usage which can cause deployment failure & logs it with additional metadata such as filename, line-column number, documentation links etc.
+* The Inspection framework will be equipped with more validations with each release to help users develop & debug application easily ensuring a great developer & deployment experience.
+
 
 
 
