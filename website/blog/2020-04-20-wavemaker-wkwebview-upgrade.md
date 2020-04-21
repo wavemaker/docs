@@ -7,6 +7,7 @@ author: Srinivasa Rao Boyina
 
 Apple deprecated UIWebView and introduced WKWebView. Starting from April 1st, 2020, Apple stopped accepting all new apps that have references to UIWebView. From December 2020, Apple will stop accepting app updates that have references to UIWebView. The current version Cordova that is used in Wavemaker, uses UIWebView by default.
 
+<!-- truncate -->
   
 ## Solution
 Cordova created a plugin called [cordova-plugin-wkwebview-engine](https://github.com/apache/cordova-plugin-wkwebview-engine). This plugin brings WKWebView of iOS into cordova. Due to its restrictions imposed by WKWebview, two problems araised.
