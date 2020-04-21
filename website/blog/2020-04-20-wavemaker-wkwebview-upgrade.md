@@ -1,5 +1,5 @@
 ---
-title: " Wavemaker platform is updated to use WKWebView."
+title: " WaveMaker platform is updated to use WKWebView."
 author: Srinivasa Rao Boyina
 ---
 
@@ -27,7 +27,7 @@ With Wavemaker 10.4 release, platform has no references to UIWebView. Developer 
 
 ## Known Issues
 
- 1. cordova-ios@5.1.0 is not supported by build.phonegap.com. When publishing **new app**, ipa has to be created manually. For all development builds (even for new) and distribution builds for app updates, phonegap service can still be used.
+ 1. cordova-ios@5.1.0 is not supported by build.phonegap.com. When publishing **new app**, ipa has to be created [manually](/learn/hybrid-mobile/mobile-build-manual). For all development builds (even for new) and distribution builds for app updates, phonegap service can still be used.
  2. While uploading a file, there is no pogress event avaiable in cordova-plugin-advanced-http plugin. Currently, a synthetic progress event is created which just mimics but doesnot corelate with the actual progress of operation.
 
 ## References
