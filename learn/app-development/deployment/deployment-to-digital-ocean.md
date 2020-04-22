@@ -63,7 +63,7 @@ You can choose from a pre-populated list of clusters present in your account. Th
 
 ## Registry Details
 
-Since it comprises of image-based deployment, you should have a registry account details to push the application image to the registry and pull the same at the time of deployment of an application to DigitalOcean cluster.
+Since the deployment flow involves image-based deployment, you will need to have a registry account to push the application image to the registry and pull the same at the time of deployment of an application to the DigitalOcean cluster.
 
 ![](/learn/assets/deploy_do_registry_details.png)
 
