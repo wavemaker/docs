@@ -3,7 +3,7 @@ title: "OpenAPI support in WaveMaker"
 author: Vibhu Singhal
 ---
 
-The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for REST APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. When properly defined via OpenAPI, a consumer can understand and interact with the remote service with a minimal amount of implementation logic. Similar to what interface descriptions have done for lower-level programming, the OpenAPI Specification removes guesswork in calling a service.
+WaveMaker now supports integration with OpenAPIs. If you have an OpenAPI definition document for your REST APIs, it can be easily integrated with a WaveMaker app. The OpenAPI Specification, originally known as the Swagger Specification, is a specification for machine-readable interface files for describing, producing, consuming, and visualizing RESTful web services.
 <!-- truncate -->
 
 ![OpenApi](/learn/img/OpenApi_Logo.png)
@@ -22,7 +22,8 @@ The development of the specification is fostered by the OpenAPI initiative, whic
 
   
 ## OpenAPI specification
-The OpenAPI Specification, originally known as the Swagger Specification, is a specification for machine-readable interface files for describing, producing, consuming, and visualizing RESTful web services.
+
+The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for REST APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. When properly defined via OpenAPI, a consumer can understand and interact with the remote service with a minimal amount of implementation logic. Similar to what interface descriptions have done for lower-level programming, the OpenAPI Specification removes guesswork in calling a service.
 
 A document (or set of documents) that defines or describes an API in called the OpenAPI definition document. An OpenAPI definition uses and conforms to the OpenAPI Specification. The specification can be found [here](http://spec.openapis.org/oas/v3.0.3).
 
@@ -34,7 +35,7 @@ As of release 10.4, WaveMaker supports OAS 2.0. Support for OSA 3.0 is being wor
 ## Advantage of working with OpenAPIs
 Since an OpenAPI definition document follows a standard OpenAPI specification, the document can be used by documentation generation tools to display the API, code generation tools to generate servers and clients in various programming languages, testing tools, and many other use cases.
 
-WaveMaker extends this advantage to integrate REST endpoints in a Web/Mobile application. WaveMaker generates UI for Create, List, Update and Delete operations (CRUD) for REST APIs that confirm to OpenAPI specification. Integrating a REST endpoint with any of the 100+ UI widgets offered by WaveMaker is also simple and straightforward without writing a single line of code.
+WaveMaker extends this advantage to integrate REST endpoints in a Web/Mobile application. **WaveMaker generates UI for Create, List, Update and Delete operations (CRUD) for REST APIs that confirm to OpenAPI specification**. Integrating a REST endpoint with any of the 100+ UI widgets offered by WaveMaker is also simple and straightforward without writing a single line of code.
 
 Since an OpenAPI document contains a number of APIs, WaveMaker identifies and groups a set of APIs under respective **“entities”**. For example, in an OpenAPI document, there can be multiple REST endpoints for an Employee entity. There could be respective endpoints to perform CRUD operations on this entity. While importing the OpenAPI document in WaveMaker, the platform performs a best guess algorithm to identify and map the endpoints against the respective CRUD operation. Once this is done, the app developer can make use of the Data widget combinations like Table/List with a Form and perform CRUD operations from the UI by simple drag and drop configuration without writing a single line of code.
 
@@ -60,3 +61,4 @@ Also, as mentioned above, the platform will identify “entities” from the Ope
 ## References
 - OpenAPI initiative official space: [https://www.openapis.org](https://www.openapis.org/)
 - Swagger official space: [https://swagger.io](https://swagger.io/)
+- [Importing REST APIs via OpenAPI/Swagger](/learn/app-development/services/api-designer/import-rest-apis-swagger)
