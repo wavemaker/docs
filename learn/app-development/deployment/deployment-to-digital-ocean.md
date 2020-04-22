@@ -34,7 +34,7 @@ This document covers the Live Phase configuration for your DigitalOcean account 
 
     [![](/learn/assets/manage_apps_live.png)](/learn/assets/manage_apps_live.png)
 
- Post choosing the DigitalOcean cloud provider, you observe a configuration dialog comprising of multiple steps. Let's talk in detail about each step below.
+ After choosing the DigitalOcean cloud provider, you observe a configuration dialog comprising of multiple steps. Let's talk in detail about each step below.
 
 ## DigitalOcean account and cluster details
 
@@ -42,7 +42,7 @@ Enter your **DigitalOcean access token** to proceed with the configuration. For 
 
 ![](/learn/assets/deploy_do_setup.png)
 
-Post providing your access token, you can see options to configure a new cluster or use an existing cluster.
+After providing your access token, you can see options to configure a new cluster or use an existing cluster.
 
 ### Process 1: Creation of a cluster
 
