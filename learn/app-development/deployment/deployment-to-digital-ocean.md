@@ -34,7 +34,7 @@ This document covers the Live Phase configuration for your DigitalOcean account 
 
     [![](/learn/assets/manage_apps_live.png)](/learn/assets/manage_apps_live.png)
 
- Post choosing the DigitalOcean cloud provider, you will observe a configuration dialog comprising of multiple steps. Let's talk in detail about each step below.
+ Post choosing the DigitalOcean cloud provider, you observe a configuration dialog comprising of multiple steps. Let's talk in detail about each step below.
 
 ## DigitalOcean account and cluster details
 
@@ -42,7 +42,7 @@ Enter your **DigitalOcean access token** to proceed with the configuration. For 
 
 ![](/learn/assets/deploy_do_setup.png)
 
-Post providing your access token, you will be able to see options to configure a new cluster or use an existing cluster.
+Post providing your access token, you can see options to configure a new cluster or use an existing cluster.
 
 ### Process 1: Creation of a cluster
 
@@ -59,11 +59,11 @@ You should provide the following details to launch a cluster.
 
 ![](/learn/assets/deploy_do_existing_cluster.png)
 
-You can choose from a pre-populated list of clusters present in your account. These will be fetched based on the access token that you provide.
+You can choose from a pre-populated list of clusters present in your account. These fetch based on the access token that you provide.
 
 ## Registry Details
 
-Since the deployment flow involves image-based deployment, you will need to have a registry account to push the application image to the registry and pull the same at the time of deployment of an application to the DigitalOcean cluster.
+Since the deployment flow involves image-based deployment, you should to have a registry account to push the application image to the registry and pull the same at the time of deployment of an application to the DigitalOcean cluster.
 
 ![](/learn/assets/deploy_do_registry_details.png)
 
