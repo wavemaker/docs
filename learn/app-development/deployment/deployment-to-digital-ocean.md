@@ -30,7 +30,11 @@ This document covers the Live Phase configuration for your DigitalOcean account 
 
 1. From Apps Portal, select the project.
 2. Click Configure on the Live Phase option.
-3. While configuring the Live phase choose to host your app on the DigitalOcean cloud provider. Post choosing the DigitalOcean cloud provider, you will observe a configuration dialog comprising of multiple steps. Let's talk in detail about each step below.
+3. While configuring the Live phase choose to host your app on the DigitalOcean cloud provider.
+
+    [![](/learn/assets/manage_apps_live.png)](/learn/assets/manage_apps_live.png)
+
+ Post choosing the DigitalOcean cloud provider, you will observe a configuration dialog comprising of multiple steps. Let's talk in detail about each step below.
 
 ## DigitalOcean account and cluster details
 
@@ -87,7 +91,7 @@ In case you have configured a **new cluster**, the phase creation is initiated a
 
 ![](/learn/assets/deploy_do_configuring.png)
 
-![](/learn/assets/deploy_do_jobs_cluster_configurtion.png)
+![](/learn/assets/deploy_do_jobs_cluster_configuration.png)
 
 On clicking the **Configure** button, for **existing cluster**, the Live phase is associated with already chosen cluster details.
 
