@@ -18,5 +18,21 @@ sidebar_label: "Download and Copy Installer"
 ### Copy The WME Installer
 - Copy downloaded file to /home/ubuntu or any location on the Platform Instance. 
 
+### Verifying Checksum
 
+You need to verify the WME Installer/OVA/License file (.deb/.ova file communicated to you by the WaveMaker team) using checksum command before installing it.
+
+To verify on Linux
+
+- Using the following command, go to the directory where .ova file and checksum files are downloaded `# cd /home/ubuntu`
+- To verify the file integrity of the VM image, run the following checksum command: `# sha1sum -c [checksum-filename]`
+- After running the command, the result should be displayed as OK, which means the checksum is verified and the file is OK.
+
+To verify on Windows
+
+- First, download the FCIV utility package (to download, [follow instructions from here](https://support.microsoft.com/en-us/kb/841290#bookmark-4)) `# cd /home/ubuntu`
+- After download, from command prompt, run the following command: `FCIV -sha1 pathfilename.ext`
+- In Windows, after running the command, the result should be manually verified with the values present in their respective files (checksum file shared to you by email).
+
+**Note** (Applicable for both Windows and Linux): Do not proceed further to installation if checksum verification fails. Invalid checksum indicates a likely corrupted download. Try downloading the file again or contact [WaveMaker Support](mailto: support@wavemaker.com).
 
