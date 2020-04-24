@@ -21,7 +21,9 @@ sidebar_label: "Launch Instances in AzureCloud using VHD"
   - Copy the vhd file from local to respective storage account container
     - azcopy copy "local\path\filename.vhd" "container url and sas" --blob-type PageBlob
     - example
-    - azcopy copy "C:\filename.vhd" "https://account.blob.core.windows.net/mycontainer1< generated sas >" --blob-type PageBlob
+    ```
+     azcopy copy "C:\filename.vhd" "https://account.blob.core.windows.net/mycontainer1< generated sas >" --blob-type PageBlob
+     ```
     - Vhd file WME-installer-10.3.1.ee.vhd uploaded to respected storage account container
   	  <br/><br/>
       [![](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vhd-upload.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vhd-upload.png)
