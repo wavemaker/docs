@@ -8,11 +8,10 @@ sidebar_label: "Launch Instances in AWS EC2"
 **Prerequisites**
 - AWS account with an access for launch instances and for create a security groups
 - Reference for creating infrastructure in AWS visit [AWS docmentation for creating EC2 linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
-
-**Steps**
-
 - users need IAM policies and user permissions to view and work with create and manage EC2 instances and security groups in a specified VPC resource in the Amazon EC2 console.
 - for IAM permissions and details visit [AWS IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actions-resources-contextkeys.html)
+
+**Steps**
 
 - **Creating Security Groups for WME Setup**
   - creating security group user need vpc ,if dont have a vpc ,for creating vpc refer [AWS documentation for creating vpc](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html)
