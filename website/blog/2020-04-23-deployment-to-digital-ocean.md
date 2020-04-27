@@ -8,11 +8,9 @@ WaveMaker platform's one-click deploy feature now enables applications to be dep
 You can configure the deployment topology as per your requirement and then with a single  button click, WaveMaker platform's deploy feature generates the docker files needed to build images, generates the K8S YAML files needed for deployment and triggers the K8S APIs for deployment. 
 Customer's don't have to write even a single line of K8S YAML file!!
 
-As we are aware, the Release Management Cycle for wavemaker apps offers a pre-defined set of App delivery phases which enables App progression through multiple phases like Demo, Stage and Live phase and let's you thoroughly verify your apps before taking them to the live environment.
+WaveMaker offers a pre-defined set of delivery phases which enables team a progression through Demo, Stage and Live phase. This let's you thoroughly verify your apps before taking them to the live environment.
 
-To configure the Stage and Live phases, apart from the previously existing and supported cloud providers like Google Cloud Platform, Microsoft Azure and AWS, you can now choose to host your application on a DigitalOcean Kubernetes cluster, which is our latest cloud provider addition to the platform.
-
-This is the first Kubernetes based cloud provider supported by the WaveMaker Platform !! 
+Demo phase uses WaveMaker's internal cloud. But Stage and Live phases, need to be configured to use your own AWS, Azure or GCP accounts. To this list of cloud providers to choose from we are now adding Digital Ocean. This is the first Kubernetes based cloud provider supported by the WaveMaker Platform.
 
 Let us introduce you to the DigitalOcean Kubernetes cluster and walk you through the benefits of a Kubernetes based cloud provider and its deployments. 
 
@@ -39,7 +37,7 @@ Containerized based deployments became popular due to multiple benefits like res
 [![screenshot](/learn/assets/Containerized_Deployment_DO_blog.png)](/learn/assets/Containerized_Deployment_DO_blog.png)
 
 So then why do you need Kubernetes and what can be done with it?
-<!-- truncate -->
+
 Kubernetes deployments, you can say, are nothing but containerized deployments only with Kubernetes providing you with a framework to manage container resources, scaling and failover for your application.
 For ex: if a container goes down, another container needs to start. Wouldn’t it be easier if this behavior was handled by a system? 
 Kubernetes helps us with this process and many other features that are good for the infrastructures!
@@ -50,10 +48,10 @@ Kubernetes helps us with this process and many other features that are good for 
 * Storage orchestration
 are few among the [features](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-you-need-kubernetes-and-what-can-it-do) that the application developer receives on adapting to Kubernetes based cloud provider deployments.
 
-So now that we understand the benefits of a Kubernetes based deployment, let us understand how WaveMaker platform simplifies the deployment process.
+Now that we understand the benefits of a Kubernetes based deployment, let us understand how WaveMaker platform simplifies the deployment process.
 
 ### What does an application developer need to deploy his app on DigitalOcean Cloud?
-Well, to deploy your application on DigitalOcean cloud, all you would need is a [DigitalOcean account](https://www.digitalocean.com/).
+To deploy your application on DigitalOcean cloud, all you would need is a [DigitalOcean account](https://www.digitalocean.com/).
 
 There are two stages involved for setting up the live/stage phase of the release pipeline with the DigitalOcean cloud provider:
 * Configuration of DigitalOcean cluster
@@ -63,35 +61,36 @@ There are two stages involved for setting up the live/stage phase of the release
 
 ### Configuration of DigitalOcean cluster
 
-So, the application developer choses the DigitalOcean Provider from the list of providers and provides his DigitalOcean access token. 
+After choosing DigitalOcean Provider from the list of providers an access token needs to be provided. 
 
-To spin up a new cluster in his/her account, we ask the app developer for minimal configuration details like:
+To spin up a new cluster in your account some configuration details need to be provided as well:
 * cluster region, 
 * cluster name and 
 * cluster capacity. 
 
 [![screenshot](/learn/assets/deploy_do_new_cluster.png)](/learn/assets/deploy_do_new_cluster.png)
 
-All the app developer would have to do is provide three field's config values and the platform would automatically take care of spinning up a new cluster in his account. 
+After providing these details WaveMaker spins up a new cluster in your Digital Ocean account. 
 
-Also, the app developer can as well choose to use an existing cluster already present in his account.
+Alternatively, you may well choose to use an existing cluster already present in your account.
 [![screenshot](/learn/assets/deploy_do_existing_cluster.png)](/learn/assets/deploy_do_existing_cluster.png)
 
 This cluster is then associated with the live/stage phase of the release pipeline.
 
 ### Deployment of application to DigitalOcean cluster
-Once the live/stage phase of the release pipeline is associated with a cluster in DigitalOcean account, the app developer can now deploy his application to with a single **“Push”** button click from the Demo phase. 
+Once the live/stage phase of the release pipeline is associated with a cluster in DigitalOcean account, you are now ready to deploy.
 
 [![screenshot](/learn/assets/Push_To_DO.png)](/learn/assets/Push_To_DO.png)
 
-There is no need for the app developer to write K8S specific yaml files or build any app images!!
+There is no need to write K8S specific yaml files or build any app images!
 
-Platform automatically handles the generation of dockerfiles, building of docker image, generating the K8S manifest files and deploys the application to cluster using K8S API's.
+WaveMaker automatically generates dockerfiles, builds a docker image, generates the K8S manifest files and deploys the application to cluster using K8S API's.
 
-Also, the app memory and number of pod replicas are completely configurable from UI by the app developer enabling him to take benefit of kubernetes features.
+Also, the app memory and number of pod replicas are completely configurable from UI.
+
 [![screenshot](/learn/assets/deploy_do_app_configuration.png)](/learn/assets/deploy_do_app_configuration.png)
 
-The good part is the app developer need not wait for the cluster creation process or the app deployment process as these are executed as jobs and run in the background enabling app developer to continue with the development.
+The cluster creation process and the app deployment process are executed as jobs and run in the background and the result will be notified in an email.
 
 ### What happens post the app is deployed?
 Now post deployment, the app developer is returned with a Service URL which is the URL of the deployed application.
@@ -104,7 +103,7 @@ Not only is the application deployed on a kubernetes cluster, but the platform a
 * the cluster version and 
 * worker node size being used etc. 
 
-to the app developer to enable to debug the application deployment further using the kubectl commands for the associated kubernetes cluster or debug the image in the associated registry.
+You can use the kubectl commands with the associated kubernetes cluster or debug the image in the associated registry.
 
 [![screenshot](/learn/assets/deploy_do_providerinfo1.png)](/learn/assets/deploy_do_providerinfo1.png)
 
