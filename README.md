@@ -112,29 +112,34 @@ My new content here..
 
 ## Adding a Blog
 
-Go to the `blog` directory to add `team blog` feed. 
+1. Go to the `blog` directory to add a team blog feed. 
 
-Create a file within the blog directory with a formatted name of `YYYY-MM-DD-my-blog-post-title.md`. The post date is extracted from the file name.
+2. Create a file within the blog directory with a formatted name of `YYYY-MM-DD-my-blog-post-title.md`. The post date is extracted from the file name.
 
-For example, at `website/blog/2019-11-01-developers-team-blog`: 
+### Editing blog
+
+When you create a `.md` file for a blog, use the following structure inside the file. 
+
+For example, at `website/blog/2019-11-01-developers-team-blog`. 
 
 ```markdown
 ---
 title: "Welcome to the WaveMaker Developers Blog"
 author: Samantha Sam
-authorURL: http://twitter.com/sam**m
-authorFBID: 1212***24
-authorTwitter: Sama****am
+authorURL: http://twitter.com/samm
+authorFBID: 12122
+authorTwitter: Samm
 ---
+```
+1. Write a summary of the blog in less than 100 words.
 
-Summary of blog in less than 100 words..
-
-<!--truncate-->
-
-Blog Content..
+2. Add the `truncate` tag as shown below. It enables to show the blogs in a list view with a summary. See the existing blogs to check the usage.
 
 ```
-The `truncate` tag in the above content enables to show the blogs in the list view with the summary. Please refer to the existing blogs to check the usage.
+<!--truncate-->
+```
+3. Blog content here..
+
 
 ## Adding Environment Variables
 
