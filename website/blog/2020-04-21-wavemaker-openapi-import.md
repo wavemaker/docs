@@ -15,7 +15,7 @@ OpenAPI is a broadly adopted industry standard for describing modern APIs. The d
 The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for REST APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. A document (or set of documents) that defines or describes an API in called the OpenAPI definition document. An OpenAPI definition uses and conforms to the OpenAPI Specification. The specification can be found [here](http://spec.openapis.org/oas/v3.0.3).
 
 :::note
-As of release 10.4, WaveMaker supports OAS 2.0. Support for OSA 3.0 is being worked upon. Keep an eye on this space for more updates.
+As of release 10.4, WaveMaker supports OAS 2.0. Support for OAS 3.0 is being worked upon. Keep an eye on this space for more updates.
 :::
 
   
