@@ -12,7 +12,7 @@ Using WaveMaker, you can almost instantly create a chart or plot for visualizati
 Link to the app
 http://apps.wavemakeronline.com/CoronaTracker/
 
-[![screenshot](/learn/assets/wm-blog-covid19-01-dashboard.png)](/learn/assets/wm-blog-covid19-01-dashboard.png)
+[![screenshot](/learn/assets/wm-blog-covid19-01-dashboard.png)](/learn/assets/wm-blog-covid19-01-dashboard.png =250x)
 
 Not only can you quickly build the dashboard, it is responsive automatically and one can access it on a mobile device as well as on a large screen.
 [![screenshot](/learn/assets/wm-blog-covid19-02-mobile-dashboard.png)](/learn/assets/wm-blog-covid19-02-mobile-dashboard.png)
