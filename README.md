@@ -127,8 +127,14 @@ authorFBID: 1212***24
 authorTwitter: Sama****am
 ---
 
-Your blog content..
+Summary of blog in less than 100 words..
+
+<!--truncate-->
+
+Blog Content..
+
 ```
+The `truncate` tag in the above content enables to show the blogs in the list view with the summary. Please refer to the existing blogs to check the usage.
 
 ## Adding Environment Variables
 
