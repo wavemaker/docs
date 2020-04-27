@@ -21,7 +21,7 @@ Not only can you quickly build the dashboard, it is responsive automatically and
 An extensive dashboard is created with key metrics globally, i.e. Confirmed cases across several countries, recovered, deaths reported etc. The dashboard provides visualization for top 10 affected countries, plotting their death rates against recovery percentages, number of affected people in 1 million population etc.
 
 The data set published by John Hopkins University is used to visualize the datamaps to depict spread of COVID-19 across the globe over a timeline.
-[![screenshot](/learn/assets/wm-blog-covid19-03-datamaps-cases.png)](/learn/assets/wm-blog-covid19-03-datamaps-cases.png)
+[![screenshot-data-maps-new-cases](/learn/assets/wm-blog-covid19-03-datamaps-cases.png)](/learn/assets/wm-blog-covid19-03-datamaps-cases.png)
 
 ### How to build the dashboard
 Using WaveMaker, the elements of the dashboard can be built in just 4 steps without writing code.
@@ -32,15 +32,15 @@ Bind the widgets to Variable
 
 Step 1: Import datasource, REST API in this case
 The primary source of data for the dashboard are the following 2 REST APIs:
-https://api.coronatracker.com/v3/stats/worldometer/country
-https://api.coronatracker.com/v3/stats/worldometer/global
+ * https://api.coronatracker.com/v3/stats/worldometer/country
+ * https://api.coronatracker.com/v3/stats/worldometer/global
 
 Import the REST APIs using Web Services import editor, as shown below
-[![screenshot](/learn/assets/wm-blog-covid19-04-studio-wsimport.png)](/learn/assets/wm-blog-covid19-04-studio-wsimport.png)
+[![screenshot-import-rest](/learn/assets/wm-blog-covid19-04-studio-wsimport.png)](/learn/assets/wm-blog-covid19-04-studio-wsimport.png)
 
 Step 2: Create Variable to access REST API
 Create a Page for the dashboard, and create a Variable within this page for the imported REST API, which enables invocation of the API whenever the page is accessed. 
-[![screenshot](/learn/assets/wm-blog-covid19-05-studio-variables.png)](/learn/assets/wm-blog-covid19-05-studio-variables.png)
+[![screenshot-bind-variables](/learn/assets/wm-blog-covid19-05-studio-variables.png)](/learn/assets/wm-blog-covid19-05-studio-variables.png)
 
 Step 3: Drag-n-drop widgets on to Canvas
 Key metrics for confirmed cases, recovery & deaths are built as tiles as shown. Each tile is further divided into sections using a Grid Layout which can be further customized to represent the data.
