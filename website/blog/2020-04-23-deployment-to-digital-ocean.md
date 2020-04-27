@@ -10,7 +10,7 @@ Customer's don't have to write even a single line of K8S YAML file!!
 
 WaveMaker offers a pre-defined set of delivery phases which enables team a progression through Demo, Stage and Live phase. This let's you thoroughly verify your apps before taking them to the live environment.
 
-Demo phase uses WaveMaker's internal cloud. But Stage and Live phases, need to be configured to use your own AWS, Azure or GCP accounts. To this list of cloud providers to choose from we are now adding Digital Ocean. This is the first Kubernetes based cloud provider supported by the WaveMaker Platform.
+Demo phase uses WaveMaker's internal cloud. But the Stage and Live phases need to be configured to use your own AWS, Azure or GCP accounts. To this list of cloud providers to choose from, we are now adding Digital Ocean. This is the first Kubernetes based cloud provider supported by the WaveMaker Platform.
 
 Let us introduce you to the DigitalOcean Kubernetes cluster and walk you through the benefits of a Kubernetes based cloud provider and its deployments. 
 
@@ -38,7 +38,7 @@ Containerized based deployments became popular due to multiple benefits like res
 
 So then why do you need Kubernetes and what can be done with it?
 
-Kubernetes deployments, you can say, are nothing but containerized deployments only with Kubernetes providing you with a framework to manage container resources, scaling and failover for your application.
+Kubernetes deployments, you can say, are nothing but containerized deployments only, with Kubernetes providing you with a framework to manage container resources, scaling and failover for your application.
 For ex: if a container goes down, another container needs to start. Wouldn’t it be easier if this behavior was handled by a system? 
 Kubernetes helps us with this process and many other features that are good for the infrastructures!
 
@@ -61,7 +61,7 @@ There are two stages involved for setting up the live/stage phase of the release
 
 ### Configuration of DigitalOcean cluster
 
-After choosing DigitalOcean Provider from the list of providers an access token needs to be provided. 
+After choosing DigitalOcean Provider from the list of providers, an [access token](https://www.digitalocean.com/docs/apis-clis/api/create-personal-access-token/) needs to be provided. 
 
 To spin up a new cluster in your account some configuration details need to be provided as well:
 * cluster region, 
@@ -90,7 +90,7 @@ Also, the app memory and number of pod replicas are completely configurable from
 
 [![screenshot](/learn/assets/deploy_do_app_configuration.png)](/learn/assets/deploy_do_app_configuration.png)
 
-The cluster creation process and the app deployment process are executed as jobs and run in the background and the result will be notified in an email.
+The cluster creation process and the app deployment process are executed as jobs and run in the background, allowing you to continue with your development while the cluster creates or the application deploys.
 
 ### What happens post the app is deployed?
 Now post deployment, the app developer is returned with a Service URL which is the URL of the deployed application.
