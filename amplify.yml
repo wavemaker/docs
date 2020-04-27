@@ -4,7 +4,7 @@ frontend:
    preBuild:
       commands:
         - cd website
-        - npm install
+        - yarn install
    build:
      commands:
         - npm run build
@@ -35,7 +35,7 @@ test:
     preTest:
       commands:
         - cd website
-        - npm install
+        - yarn install
         - 'npm run cypress:prepare-prod'
     test:
       commands:
