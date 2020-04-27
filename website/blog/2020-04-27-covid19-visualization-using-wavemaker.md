@@ -54,3 +54,4 @@ After arranging the widgets on the canvas, we can bind data to these widgets fro
 WaveMaker automatically identifies the JSON response structure from the imported REST API and makes it available for binding through variables.
 [![screenshot](/learn/assets/wm-blog-covid19-07-studio-binding.png)](/learn/assets/wm-blog-covid19-07-studio-binding.png)
 
+Step 5: Deploy to cloud and we are done!
