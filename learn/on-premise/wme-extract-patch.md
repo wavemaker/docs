@@ -5,7 +5,7 @@ sidebar_label: "Extract Package"
 ---
 ---
 
-Assuming you have already downloaded the patch and kept inside /home/ubuntu folder of the platform instance.
+Assuming you have already downloaded the patch and kept inside user home folder of the platform instance.
 
 ### Extract the package of the patch
 

@@ -8,14 +8,14 @@ sidebar_label: "Launch Instances in AWS EC2"
 **Prerequisites**
 - AWS account with an access for launch instances and for create a security groups
 - Reference for creating infrastructure in AWS visit [AWS docmentation for creating EC2 linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
-- users need IAM policies and user permissions to view and work with create and manage EC2 instances and security groups in a specified VPC resource in the Amazon EC2 console.
-- for IAM permissions and details visit [AWS IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actions-resources-contextkeys.html)
+- Users need IAM policies and user permissions to view and work with create and manage EC2 instances and security groups in a specified VPC resource in the Amazon EC2 console.
+- For IAM permissions and details visit [AWS IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actions-resources-contextkeys.html)
 
 **Steps**
 
 - **Creating Security Groups for WME Setup**
-  - creating security group user need vpc ,if dont have a vpc ,for creating vpc refer [AWS documentation for creating vpc](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html)
-  - creating the security groups refer [AWS documentation for creating security groups](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html)
+  - Creating security group user need vpc ,if dont have a vpc ,for creating vpc refer [AWS documentation for creating vpc](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html)
+  - Creating the security groups refer [AWS documentation for creating security groups](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html)
   - Open the Amazon VPC console [vpc console amazon](https://console.aws.amazon.com/vpc/.) (or) under Networking & Content Delivery select Networking & Content Delivery select VPC
   - In the navigation pane, choose Security Groups,Choose Create Security Group.
   
@@ -56,11 +56,11 @@ sidebar_label: "Launch Instances in AWS EC2"
   <br/><br/>
   [![](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)  
 
-   -  choose Next: Configure Instance Details,For Network, choose the entry for the same VPC that you created security groups,For Subnet, choose a desired subnet in any Availability Zone.
+   -  Choose Next: Configure Instance Details,For Network, choose the same VPC that you created security groups,For Subnet, choose a desired subnet in any Availability Zone.
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/configuration-of-instance.jpg)  
 
-   -  add storage 50 GiB for root volume, 50 GiB for wm-runtime and 150 GiB for wm-data
+   -  Add storage 50 GiB for root volume, 50 GiB for wm-runtime and 150 GiB for wm-data
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-setup-in-aws/platform-instance-storage.png)](/learn/assets/wme-setup/platform-instance-storage.png)  
 
@@ -73,6 +73,7 @@ sidebar_label: "Launch Instances in AWS EC2"
    [![](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)](/learn/assets/wme-setup/security-group-configurations.png)  
 
    -  Next review your instance details and launch the instance
+  
 -  **Creation of external instance**
    -  Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
    -  Choose Launch Instance,Choose an ubuntu 16.04 Amazon Machine Image (AMI) or you have any ubuntu 16.04 AMI select it.
@@ -83,11 +84,11 @@ sidebar_label: "Launch Instances in AWS EC2"
      <br/><br/>
   [![](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png) 
 
-   -  choose Next: Configure Instance Details,For Network, choose the entry for the same VPC that you created security groups,For Subnet, choose a desired subnet in any Availability Zone.
+   -  Choose Next: Configure Instance Details,For Network, choose the same VPC that you created security groups,For Subnet, choose a desired subnet in any Availability Zone.
      <br/><br/>
     [![](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/configuration-of-instance.jpg) 
 
-   -  add storage 150 GiB for data
+   -  Add storage 150 GiB for data
    [![](/learn/assets/wme-setup/wme-setup-in-aws/external-instance-storage.png)](/learn/assets/wme-setup/external-instance-storage.png)  
 
    -  Next if you want to add any tags add tags to instance
@@ -111,20 +112,17 @@ sidebar_label: "Launch Instances in AWS EC2"
            lsblk
            ```
       -  New volumes are raw block devices, and you must create a file system on them before you can mount and use them. For creating file systems use following command
-         -  Mkfs -t ext4 /dev/< block-device-name >
+         -  mkfs -t ext4 /dev/< block-device-name >
           ```
-           Example mkfs -t ext4 /dev/xvdb
+           Example: mkfs -t ext4 /dev/xvdb
            ```
       -  Use the mkdir command to create a mount point directory for the volume. The mount point is where the volume is located in the file system tree and where you read and write files to after you mount the volume.for wme-setup create two directories.create directories using the following commands
-           ```
-           mkdir /wm-data
           ```
-          ``` 
-           mkdir /wm-runtime
+           mkdir /wm-data /wm-runtime
           ```
       -  use the following command to mount the volume at the directory
-           ```
-           Mount /dev/block-device-name    /directory  
+          ```
+           mount /dev/block-device-name    /directory  
           ```
           <br/><br/>
           [![](/learn/assets/wme-setup/wme-setup-in-aws/mounting-platform-instance-volumes.jpg)](/learn/assets/wme-setup/mounting-platform-instance-volumes.jpg)
@@ -152,9 +150,9 @@ sidebar_label: "Launch Instances in AWS EC2"
           ```
       -  New volumes are raw block devices, and you must create a file system on them before you can mount and use them. For creating file systems use following command
          
-          - Mkfs -t ext4 /dev/< block-device-name >
+          - mkfs -t ext4 /dev/< block-device-name >
            ```
-           Example mkfs -t ext4 /dev/xvdb
+           Example: mkfs -t ext4 /dev/xvdb
            ```
       -  Use the mkdir command to create a mount point directory for the volume. The mount point is where the volume is located in the file system tree and where you read and write files to after you mount the volume.for wme-setup create two directories.create directories using the following commands
           ```
@@ -162,7 +160,7 @@ sidebar_label: "Launch Instances in AWS EC2"
           ```
       -  use the following command to mount the volume at the directory
            ```
-           Mount /dev/block-device-name   /directory  
+           mount /dev/block-device-name   /directory  
            ```
            <br/><br/>
            [![](/learn/assets/wme-setup/wme-setup-in-aws/mounting-external-instance-storage.jpg)](/learn/assets/wme-setup/mounting-external-instance-storage.jpg)

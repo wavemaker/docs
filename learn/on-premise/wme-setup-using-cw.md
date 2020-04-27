@@ -6,7 +6,7 @@ sidebar_label: "Setup Using Config Portal"
 ---
 # WME Setup on ConfigPortal
 
-- Open wavemaker portal by http://<platformip>:8080.
+- Open wavemaker portal by http://< Platform-Instance-IP >:8080.
 - Setup password for the wavemaker setup portal. This password is system level. All command line operations are authenticated by this Password. Subsequent operations like upgrades needs this password.
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-portal-setup/setting-username-and-password.png)](/learn/assets/wme-setup/wme-portal-setup/setting-username-and-password.png)
