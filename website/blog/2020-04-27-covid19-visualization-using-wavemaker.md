@@ -32,7 +32,7 @@ Create variable to access the REST API
 Visually drag-n-drop widgets onto the canvas or editor 
 Bind the widgets to Variable
 
-Step 1: Import datasource, REST API in this case
+#### Step 1: Import datasource, REST API in this case
 The primary source of data for the dashboard are the following 2 REST APIs:
  * https://api.coronatracker.com/v3/stats/worldometer/country
  * https://api.coronatracker.com/v3/stats/worldometer/global
@@ -41,21 +41,21 @@ Import the REST APIs using Web Services import editor, as shown below
 
 [![screenshot-import-rest](/learn/assets/wm-blog-covid19-04-studio-wsimport.png)](/learn/assets/wm-blog-covid19-04-studio-wsimport.png)
 
-Step 2: Create Variable to access REST API
+#### Step 2: Create Variable to access REST API
 Create a Page for the dashboard, and create a Variable within this page for the imported REST API, which enables invocation of the API whenever the page is accessed. 
 
 [![screenshot-bind-variables](/learn/assets/wm-blog-covid19-05-studio-variables.png)](/learn/assets/wm-blog-covid19-05-studio-variables.png)
 
-Step 3: Drag-n-drop widgets on to Canvas
+#### Step 3: Drag-n-drop widgets on to Canvas
 Key metrics for confirmed cases, recovery & deaths are built as tiles as shown. Each tile is further divided into sections using a Grid Layout which can be further customized to represent the data.
 Grid Layout is used to define the arrangement of various widgets on the page, by dividing the page into several responsive blocks. The size of each block can be configured and new columns and rows can be inserted as needed.
 
 [![screenshot](/learn/assets/wm-blog-covid19-06-studio-canvas.png)](/learn/assets/wm-blog-covid19-06-studio-canvas.png)
 
-Step 4: Bind widgets to the Variable for data
+#### Step 4: Bind widgets to the Variable for data
 After arranging the widgets on the canvas, we can bind data to these widgets from the created variable using the Properties panel.
 WaveMaker automatically identifies the JSON response structure from the imported REST API and makes it available for binding through variables.
 
 [![screenshot](/learn/assets/wm-blog-covid19-07-studio-binding.png)](/learn/assets/wm-blog-covid19-07-studio-binding.png)
 
-Step 5: Deploy to cloud and we are done!
+#### Step 5: Deploy to cloud and we are done!
