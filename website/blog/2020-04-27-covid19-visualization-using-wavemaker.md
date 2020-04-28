@@ -21,7 +21,7 @@ Not only can you quickly build the dashboard, it is responsive automatically and
 
 ## Quick walkthrough of the app
 
-The Corona Tracker application has extensive dashboard with key metrics globally, i.e. Confirmed cases across several countries, recovered, deaths reported etc. The dashboard provides visualization for top 10 affected countries, plotting their death rates against recovery percentages, number of affected people in 1 million population etc.
+The Corona Tracker application has an extensive dashboard with key metrics globally, i.e. Confirmed cases across several countries, recovered, deaths reported etc. The dashboard provides visualization for top 10 affected countries, plotting their death rates against recovery percentages, number of affected people in 1 million population etc.
 
 This app also features datamaps with data set published by John Hopkins University, to visualize the spread of COVID-19 across the globe over a timeline.
 
@@ -67,6 +67,7 @@ WaveMaker automatically identifies the JSON response structure from the imported
 [![screenhit](/learn/assets/wm-blog-covid19-08-studio-binding-dialog.png)](/learn/assets/wm-blog-covid19-08-studio-binding-dialog.png)
 
 [![screenshot](/learn/assets/wm-blog-covid19-09-dashboard-snippet.png)](/learn/assets/wm-blog-covid19-09-dashboard-snippet.png)
+
 Bingo! We have the metrics from the REST API in our dashboard page.
 
 Wait!, how did we get the other metric for % of recovered people?
