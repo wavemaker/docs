@@ -19,7 +19,8 @@ sidebar_label: "Launch Instances in AzureCloud using VHD"
 - For WME setup in Azure require two security groups,are
   - WME-SG-Platform-Public-and-Internal
   - WME-SG-Workspace-Internal
-**Creation of the Network Security Groups for Platform Virtual Machine and External or Workspace/AppDeployment Virtual Machine**
+   
+- **Creation of the Network Security Groups for Platform Virtual Machine and External or Workspace/AppDeployment Virtual Machine**
   - Creating network security group for platform virtual machine .To Access Platform Virtual Machine from Studio workspace/AppDeployment Virtual Machine and for public access.i.e WME-SG-Platform-Public-and-Internal
     - Provide basic information name and region by selecting the resource group
   	  <br/><br/>

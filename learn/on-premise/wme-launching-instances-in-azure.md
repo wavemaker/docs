@@ -173,8 +173,10 @@ sidebar_label: "Launch Instances in Azure Cloud"
      ```
     UUID=your-block-device-UUID      mount-directory     filesystem     defaults ,nofail  0  2
      ```
-  	  <br/><br/>
+      <br/>
       [![](/learn/assets/wme-setup/wme-setup-in-azure/vm-fstab.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-fstab.png)
+      <br/><br/>
+      
 **Mounting Disks in External or Workspace/AppDeployment virtual Machines**
 - For ssh into the platform virtual machine use the following command.
    - If you using the ssh key method for login use the following command
@@ -213,5 +215,5 @@ sidebar_label: "Launch Instances in Azure Cloud"
    ```
   UUID=your-block-device-UUID      mount-directory     filesystem     defaults ,nofail  0  2
    ```
-	  <br/><br/>
+
     [![](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-fstab.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-fstab.png)
