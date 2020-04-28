@@ -21,9 +21,9 @@ Not only can you quickly build the dashboard, it is responsive automatically and
 
 ## Quick walkthrough of the app
 
-An extensive dashboard is created with key metrics globally, i.e. Confirmed cases across several countries, recovered, deaths reported etc. The dashboard provides visualization for top 10 affected countries, plotting their death rates against recovery percentages, number of affected people in 1 million population etc.
+The Corona Tracker application has extensive dashboard with key metrics globally, i.e. Confirmed cases across several countries, recovered, deaths reported etc. The dashboard provides visualization for top 10 affected countries, plotting their death rates against recovery percentages, number of affected people in 1 million population etc.
 
-The data set published by John Hopkins University is used to visualize the datamaps to depict spread of COVID-19 across the globe over a timeline.
+This app also features datamaps with data set published by John Hopkins University, to visualize the spread of COVID-19 across the globe over a timeline.
 
 [![screenshot-data-maps-new-cases](/learn/assets/wm-blog-covid19-03-datamaps-cases.png)](/learn/assets/wm-blog-covid19-03-datamaps-cases.png)
 
@@ -65,5 +65,14 @@ WaveMaker automatically identifies the JSON response structure from the imported
 [![screenshot](/learn/assets/wm-blog-covid19-07-studio-binding.png)](/learn/assets/wm-blog-covid19-07-studio-binding.png)
 
 [![screenhit](/learn/assets/wm-blog-covid19-08-studio-binding-dialog.png)](/learn/assets/wm-blog-covid19-08-studio-binding-dialog.png)
+
+[![screenshot](/learn/assets/wm-blog-covid19-09-dashboard-snippet.png)](/learn/assets/wm-blog-covid19-09-dashboard-snippet.png)
+Bingo! We have the metrics from the REST API in our dashboard page.
+
+Wait!, how did we get the other metric for % of recovered people?
+
+Apart from just binding the data to API response, WaveMaker enables writing simple expressions as shown below to compute data. f(n) = (totalRecovered * 100) / totalConfirmed gives the % recovery, alongside using other data formatting rules.
+
+[![screenshot](/learn/assets/wm-blog-covid19-10-studio-expression.png)](/learn/assets/wm-blog-covid19-10-studio-expression.png)
 
 ### Step 5: Deploy to cloud and we are done!
