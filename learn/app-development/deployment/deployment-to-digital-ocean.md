@@ -102,7 +102,7 @@ On clicking the **Configure** button, for **existing cluster**, the Live phase i
 
 Once the live phase configuration is completed, you can trigger the deployment to DigitalOcean cluster by clicking **Push** option in the Demo phase.
 
-For the deployment process, we depend on the **HyScale tool**.
+For the deployment process, we depend on the [**HyScale tool**](https://github.com/hyscale/hyscale).
 
 ![](/learn/assets/deploy_do_cluster_configured.png)
 
