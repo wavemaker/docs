@@ -48,3 +48,5 @@ sidebar_label: "Launch Instances in hyper-v using VHD"
 - Start and connect to the VM.
   <br/><br/>
   [![](/learn/assets/wme-setup/vm-creation-in-hyperv-using-vhd/start-and-connect-vm.png)](/learn/assets/wme-setup/vm-creation-in-hyperv-using-vhd/start-and-connect-vm.png)
+
+* Also for External Instance or Workspace/AppDeployment Instance launching from Hyper-V  use same procedure

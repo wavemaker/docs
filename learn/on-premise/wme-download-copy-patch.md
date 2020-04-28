@@ -17,7 +17,7 @@ sidebar_label: "Download and Copy Patch"
       [![](/learn/assets/wme-setup/upgrade-wme-setup/installing-wme-patch.jpg)](/learn/assets/wme-setup/upgrade-wme-setup/installing-wme-patch.jpg)
 
 **RHEL**     
-- for RHEL system download the tar file,link wavemaker team will provide
+- For RHEL system download the tar file,link wavemaker team will provide
   - download the wme installer by using following command
   ```
    wget < link of wme installer >

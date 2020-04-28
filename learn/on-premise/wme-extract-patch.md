@@ -17,7 +17,7 @@ Assuming you have already downloaded the patch and kept inside user home folder 
 
 
 **RHEL**
-  - Excute the following command to untar the file
+  - Execute the following command to untar the file
      ```
     tar -xvf  < wme patch file name >
      ```

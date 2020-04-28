@@ -9,17 +9,17 @@ sidebar_label: "Launch Instances in Esxi using OVA"
  **Prerequisite**
  - OVA file shared by WaveMaker team 
  - VMware ESXi version 6.5 or higher
- - Permision for launching OVA .
+ - Permission for launching OVA .
  
  **Steps**
  
 - Login into VMware ESXi Server using  Server IP address and user credentials. 
 - Select Create/Register VM for creating the new virtual machine
-- Select creation type as deploy a virtual machine by from an ovf or ova file
+- Select creation type as deploy a virtual machine by from an OVF or OVA file
     <br/><br/>
     [![](/learn/assets/wme-setup/vm-creation-by-using-ova/select-vm-creation-type.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/select-vm-creation-type.png)
 
-- Select ovf or ova file for VM would like to deploy
+- Select OVF or OVA file for VM would like to deploy
     <br/><br/>
     [![](/learn/assets/wme-setup/vm-creation-by-using-ova/selecting-the-ovf-template-for-deploy.png)](/learn/assets//wme-setup/vm-creation-by-using-ova/selecting-the-ovf-template-for-deploy.png)
 
@@ -39,3 +39,4 @@ sidebar_label: "Launch Instances in Esxi using OVA"
     <br/><br/>
     [![](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png)
 
+* Also for External Instance or Workspace/AppDeployment Instance launching from Esxi use same procedure

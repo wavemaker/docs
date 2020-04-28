@@ -31,5 +31,5 @@ sidebar_label: "Setup Using Config Portal"
 	<br/><br/>
     [![](/learn/assets/wme-setup/wme-portal-setup/apply-license.jpg)](/learn/assets/wme-setup/wme-portal-setup/apply-license.jpg)
     
-- Go to launchpad for further operations.
+- Go to a launchpad for further operations.
 

@@ -1,13 +1,13 @@
 ---
-title: "Initilize Setup"
+title: "Initialize Setup"
 id: ""
-sidebar_label: "Initilize Setup"
+sidebar_label: "Initialize Setup"
 ---
 ---
 
-### Initilize the WME setup
+### Initialize the WME setup
 
-- After dowloading and extracting the wme installer run the bash script which is displayed at terminal
+- After downloading and extracting the wme installer run the bash script which is displayed at terminal
 - Provide your network interface name and enter IP range in CIDR notation
     <br/><br/>
     [![](/learn/assets/wme-setup/wavemaker-setup-intialization.jpg)](/learn/assets/wme-setup/wavemaker-setup-intialization.jpg)

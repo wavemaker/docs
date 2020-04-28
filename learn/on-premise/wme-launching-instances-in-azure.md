@@ -8,14 +8,17 @@ sidebar_label: "Launch Instances in Azure Cloud"
 
 ### Launch instances in Azure Cloud
 **Prerequisites**
-- User have to an access in azure to create VM and other resources for more details refer [Azure resource docmentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview)
+- User have to an access in azure to create VM and other resources for more details refer [Azure resource documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview)
 - Assuming an Azure Virtual Network (VNet) is already created or existed. an Azure Virtual Network (VNet) is a representation of your own network in the cloud.for creation of virtual network visit [Azure virtual network creation](https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal)
 
 **Steps**
-
+- For creating network security groups refer [creating NSG in Azure](https://docs.microsoft.com/en-us/azure/virtual-network/manage-network-security-group)
+- For WME setup in Azure require two security groups,are
+  - WME-SG-Platform-Public-and-Internal
+  - WME-SG-Workspace-Internal
 
 **Creation of the Network Security Groups for Platform Virtual Machine and External or Workspace/AppDeployment Virtual Machine**
-  - creating network security group for platform virtual machine .To Access Platfrom Virtual Machine from Studio workspace/AppDeployment Virtual Machine
+  - Creating network security group for platform virtual machine .To Access Platform Virtual Machine from Studio workspace/AppDeployment Virtual Machine. i.e WME-SG-Platform-Public-and-Internal
     - Provide basic information name and region by selecting the resource group
   	  <br/><br/>
       [![](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-basic-details.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-basic-details.png)
@@ -32,9 +35,9 @@ sidebar_label: "Launch Instances in Azure Cloud"
   	  <br/><br/>
       [![](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-for-public-access.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-for-public-access.png)
 
-    - If you want ssh access to only disired networks create another rule and provide your network ips for ssh access.
+    - If you want ssh access to only desired networks create another rule and provide your network ips for ssh access.
 
-    - Create another rule to open additional ports for access Platform Virtual Machine from the Workspce/Appdeployment or external virtual machine. Next,select a destination. 
+    - Create another rule to open additional ports for access Platform Virtual Machine from the Workspace/Appdeployment or external virtual machine. Next,select a destination. 
      
     - If you select a destination as a virtual network the security rule is applied to virtual machines whatever in the virtual network of the platform virtual machine,or if you select destination as application security group, it applies to the only VMs which are connect to that application security group ,or else if you select destination as Ip Addresses the rules are apply to respected IP address resource. for more details visit [filter network traffic in azure](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic)
     
@@ -44,7 +47,7 @@ sidebar_label: "Launch Instances in Azure Cloud"
 
     
 
-  - Creation of network security group for External or Workspace/AppDeployment virtual machine.To access External or Workspace/AppDeployment virtual machine from Platform Virtual Machine.
+  - Creation of network security group for External or Workspace/AppDeployment virtual machine.To access External or Workspace/AppDeployment virtual machine from Platform Virtual Machine. i.e WME-SG-Workspace-Internal
     - Provide basic information name and region by selecting the resource group
   	  <br/><br/>
       [![](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-basic.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-basic.png)
@@ -134,11 +137,11 @@ sidebar_label: "Launch Instances in Azure Cloud"
 
 **Mounting Disk in Platform Virtual Machines**
   - For ssh into the platform virtual machine use the following command.
-     - If you using the ssh key method for login use thefollowing command
+     - If you using the ssh key method for login use the following command
      ```
      ssh -i /path/to/ssh-privatekey username@ipaddress
      ```
-     - If you using the ssh username and password for login use the folowing command.
+     - If you using the ssh username and password for login use the following command.
      ```
      ssh username@ipaddress
      ```
@@ -155,18 +158,18 @@ sidebar_label: "Launch Instances in Azure Cloud"
       ```
        mkdir /wm-data /wm-runtime
       ```
-  -  use the following command to mount the volume at the directory
+  -  Use the following command to mount the volume at the directory
       ```
        mount /dev/block-device-name    /directory  
       ```
       [![](/learn/assets/wme-setup/wme-setup-in-azure/platform-instance-mounting-volumes.png)](/learn/assets/wme-setup/wme-setup-in-azure/platform-instance-mounting-volumes.png)
 
-  - To mount an attached EBS volume on every system reboot, add an entry for the device to the /etc/fstab file.
-      - take UUID of disks for identification by using the command
+  - To mount an attached Azure Disks on every system reboot, add an entry for the device to the /etc/fstab file.
+      - Take UUID of disks for identification by using the command
           ```
           blkid
           ```
-      - entry the UUID of the disks in fstab.use the following format
+      - Entry the UUID of the disks in fstab.use the following format
      ```
     UUID=your-block-device-UUID      mount-directory     filesystem     defaults ,nofail  0  2
      ```
@@ -174,11 +177,11 @@ sidebar_label: "Launch Instances in Azure Cloud"
       [![](/learn/assets/wme-setup/wme-setup-in-azure/vm-fstab.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-fstab.png)
 **Mounting Disks in External or Workspace/AppDeployment virtual Machines**
 - For ssh into the platform virtual machine use the following command.
-   - If you using the ssh key method for login use thefollowing command
+   - If you using the ssh key method for login use the following command
    ```
    ssh -i /path/to/ssh-privatekey username@ipaddress
    ```
-   - If you using the ssh username and password for login use the folowing command.
+   - If you using the ssh username and password for login use the following command.
    ```
    ssh username@ipaddress
    ```
@@ -195,18 +198,18 @@ sidebar_label: "Launch Instances in Azure Cloud"
     ```
      mkdir /data
     ```
--  use the following command to mount the volume at the directory
+-  Use the following command to mount the volume at the directory
     ```
      mount /dev/block-device-name    /directory  
     ```
     [![](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-mounting-volumes.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-mounting-volumes.png)
 
-- To mount an attached EBS volume on every system reboot, add an entry for the device to the /etc/fstab file.
-    - take UUID of disks for identification by using the command
+- To mount an attached Azure Disks on every system reboot, add an entry for the device to the /etc/fstab file.
+    - Take UUID of disks for identification by using the command
         ```
         blkid
         ```
-    - entry the UUID of the disks in fstab.use the following format
+    - Entry the UUID of the disks in fstab.use the following format
    ```
   UUID=your-block-device-UUID      mount-directory     filesystem     defaults ,nofail  0  2
    ```

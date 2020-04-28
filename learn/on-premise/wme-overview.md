@@ -26,7 +26,7 @@ WaveMaker's administrative console where you can configure users, additional Stu
 
 #### Platform 
 
-WaveMaker On-Primise Platform which consisting of multiple internal services needed to run the WME platform like Studio, Cloud, VCS etc.. Each of these services runs in a separate Docker Container. Services talk to each other via REST service. Platform Containers make calls to the Docker Engine for operations like starting a new user container, stopping / starting a container, and more.
+WaveMaker On-Premise Platform which consisting of multiple internal services needed to run the WME platform like Studio, Cloud, VCS etc.. Each of these services runs in a separate Docker Container. Services talk to each other via REST service. Platform Containers make calls to the Docker Engine for operations like starting a new user container, stopping / starting a container, and more.
 
 #### User Workspace
 

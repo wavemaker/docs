@@ -4,7 +4,7 @@ id: ""
 sidebar_label: "Apply License"
 ---
 ---
-### Apply Licens
+### Apply License
 -  In two different ways you can upload the license keys
 
 **You can apply license keys from after installation process**

@@ -8,7 +8,7 @@ sidebar_label: "Download and Copy Installer"
 ### Download the WME Installer
 
 **Ubuntu**
-- Download debain package. The link will be shared by wavemaker team.
+- Download debian package. The link will be shared by wavemaker team.
 - wget < Link of wme installer >
 
 **RHEL**

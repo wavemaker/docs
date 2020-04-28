@@ -7,18 +7,21 @@ sidebar_label: "Launch Instances in AWS EC2"
 ### Launch instances in AWS EC2 
 **Prerequisites**
 - AWS account with an access for launch instances and for create a security groups
-- Reference for creating infrastructure in AWS visit [AWS docmentation for creating EC2 linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
+- Reference for creating infrastructure in AWS visit [AWS documentation for creating EC2 linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
 - Users need IAM policies and user permissions to view and work with create and manage EC2 instances and security groups in a specified VPC resource in the Amazon EC2 console.
 - For IAM permissions and details visit [AWS IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actions-resources-contextkeys.html)
 
 **Steps**
 
 - **Creating Security Groups for WME Setup**
-  - Creating security group user need vpc ,if dont have a vpc ,for creating vpc refer [AWS documentation for creating vpc](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html)
+  - Creating security group user need vpc ,if don't have a vpc ,for creating vpc refer [AWS documentation for creating vpc](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html)
   - Creating the security groups refer [AWS documentation for creating security groups](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html)
+  - For WME setup require 3 security groups in AWS,are
+    - WME-SG-Platform-Public 
+    - WME-SG-Platform-Internal
+    - WME-SG-Workspace-Internal
   - Open the Amazon VPC console [vpc console amazon](https://console.aws.amazon.com/vpc/.) (or) under Networking & Content Delivery select Networking & Content Delivery select VPC
   - In the navigation pane, choose Security Groups,Choose Create Security Group.
-  
   - **Creation of WME-SG-platform-public security group**
     - Provide basic details for creating the security group and select your Desired VPC
      <br/><br/>
@@ -120,7 +123,7 @@ sidebar_label: "Launch Instances in AWS EC2"
           ```
            mkdir /wm-data /wm-runtime
           ```
-      -  use the following command to mount the volume at the directory
+      -  Use the following command to mount the volume at the directory
           ```
            mount /dev/block-device-name    /directory  
           ```
@@ -128,11 +131,11 @@ sidebar_label: "Launch Instances in AWS EC2"
           [![](/learn/assets/wme-setup/wme-setup-in-aws/mounting-platform-instance-volumes.jpg)](/learn/assets/wme-setup/mounting-platform-instance-volumes.jpg)
 
       - To mount an attached EBS volume on every system reboot, add an entry for the device to the /etc/fstab file.
-      - take UUID of disks for identification by using the command
+      - Take UUID of disks for identification by using the command
         ```
           blkid
         ```
-      - entry the UUID of the disks in fstab.use the following format
+      - Entry the UUID of the disks in fstab.use the following format
       ``` 
       UUID=your-block-device-UUID    /mount-directory     filesystem   defaults ,nofail  0  2
       ```
@@ -158,18 +161,18 @@ sidebar_label: "Launch Instances in AWS EC2"
           ```
           mkdir /data
           ```
-      -  use the following command to mount the volume at the directory
+      -  Use the following command to mount the volume at the directory
            ```
            mount /dev/block-device-name   /directory  
            ```
            <br/><br/>
            [![](/learn/assets/wme-setup/wme-setup-in-aws/mounting-external-instance-storage.jpg)](/learn/assets/wme-setup/mounting-external-instance-storage.jpg)
       - To mount an attached EBS volume on every system reboot, add an entry for the device to the /etc/fstab file.
-      - take UUID of disks for identification by using the command
+      - Take UUID of disks for identification by using the command
           ```
           blkid
           ```
-      - entry the UUID of the disks in fstab.use the following format
+      - Entry the UUID of the disks in fstab.use the following format
      ```
     UUID=your-block-device-UUID      mount-directory     filesystem     defaults ,nofail  0  2
      ```

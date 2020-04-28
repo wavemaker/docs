@@ -17,7 +17,7 @@ The following are prerequisites to setup WaveMaker Enterprise. The below-menti
 
 ### WME Setup System Requirements
 
-WaveMaker Enterprise can be installed on any machine with below requirements. Before you start setting up the WaveMaker Enterpris, here is a list of a minimum and recommended System Requirements for the each type of Instance:
+WaveMaker Enterprise can be installed on any machine with below requirements. Before you start setting up the WaveMaker Enterprise, here is a list of a minimum and recommended System Requirements for the each type of Instance:
 
 #### WME Platform Instance : 
 
@@ -41,7 +41,7 @@ Adding an instance to either User workspace or Deployed Apps aids in the scala
 
 The actual app development and deployment support are further determined by your license terms. This means that, even if your infrastructure has the capacity, the apps that can be developed and deployed is restricted by your license terms. Similarly, even though your license terms allow, the apps that can be developed and deployed are limited by the infrastructure capacity. **Note** different instances needs to be added to each stage in the release pipeline as explained in the Increasing Deployment Capacity section.
 
-### WME Setup Aritifacts
+### WME Setup Artifacts
 
 - There are two ways to do the setup.     
     - you can come up with Operating system pre installed, then use our installer to setup WME.
@@ -49,11 +49,11 @@ The actual app development and deployment support are further determined by your
 
 The following files should be shared with you by the WaveMaker team:
 You need to download the below files before starting the installation.
-Depends on your setup type, WaveMaker teams sends on of the follwing.
+Depends on your setup type, WaveMaker teams sends on of the following.
 
 - WME Installer(Operating System Pre-Installed).
-    - Deb installer if you choosen Ubuntu.
-    - Tar ball if you choosen RHEL/CentOS.
+    - Deb installer if you chosen Ubuntu.
+    - Tar ball if you chosen RHEL/CentOS.
 - WME Platform OVA for Esxi 6.5 or higher
     - Platform Instance OVA 
     - External Instance OVA
@@ -68,7 +68,7 @@ You will be needing IP Addresses for the following.
 - **IP Address**
     - one static IP for accessing the Platform machine from your network.
     - Machine Static IP: This is the IP assigned to machine during setup and should be accessible on your network, or
-        - In case of VM's, it will be the local IP address, which should be routable from in your LAN.
+        - In case of VM's, it will be the local IP address, which should be rout table from in your LAN.
         - In case of AWS instance: Private static IP for the instance within your VPC (assigned via eth0 or via ENI on eth1,ens5)
 - **DNS Mapping**: Map a domain to the above IP for easy access:
     

@@ -8,9 +8,9 @@ sidebar_label: "Users Onboarding"
 ### Configure Users, Auth Providers
 
 **Configure users**
-- Select user on-boarding section at letside for creating users
-- At users section select create user for creating the user
-- Create a user by providing basic details like name ,email and password and select the prefer role for user
+- Select user on-boarding section at the left side for creating users
+- At users section select create a user for creating the user
+- Create a user by providing basic details like name ,email and password and select the prefer role for a user
     <br/><br/>
     [![](/learn/assets/wme-setup/configuring-wme/user-creation.png)](/learn/assets/wme-setup/user-creation.png)
 
