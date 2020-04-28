@@ -72,7 +72,7 @@ Bingo! We have the metrics from the REST API in our dashboard page.
 
 Wait!, how did we get the other metric for % of recovered people?
 
-Apart from just binding the data to API response, WaveMaker enables writing simple expressions as shown below to compute data. f(n) = (totalRecovered * 100) / totalConfirmed gives the % recovery, alongside using other data formatting rules.
+Apart from just binding the data to API response, WaveMaker enables writing simple expressions as shown below to compute data. ```f(n) = (totalRecovered * 100) / totalConfirmed``` gives the % recovery, alongside using other data formatting rules.
 
 [![screenshot](/learn/assets/wm-blog-covid19-10-studio-expression.png)](/learn/assets/wm-blog-covid19-10-studio-expression.png)
 
