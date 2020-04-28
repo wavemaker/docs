@@ -1,5 +1,5 @@
 ---
-title: "COVID-19 Visualization using WaveMaker"
+title: "COVID-19 Visualization using WaveMaker - Part 1"
 author: Deepak Anupalli
 ---
 
@@ -12,6 +12,8 @@ Using WaveMaker, you can almost instantly create a chart or plot for visualizati
 ## Corona Tracker App
 
 Link to the app: http://apps.wavemakeronline.com/CoronaTracker/
+
+![app](/learn/assets/wm-blog-covid-19.gif)
 
 [![screenshot](/learn/assets/wm-blog-covid19-01-dashboard.png)](/learn/assets/wm-blog-covid19-01-dashboard.png)
 
@@ -30,43 +32,51 @@ This app also features datamaps with data set published by John Hopkins Universi
 ## How to build the dashboard
 
 Using WaveMaker, the elements of the dashboard can be built in just 4 steps without writing code.
+
 1. Import datasource, REST API in this case
 2. Create variable to access the REST API
 3. Visually drag-n-drop widgets onto the canvas or editor 
 4. Bind the widgets to Variable
 
 ### Step 1: Import datasource, REST API in this case
+
 The primary source of data for the dashboard are the following 2 REST APIs:
+
 ```
 https://api.coronatracker.com/v3/stats/worldometer/country
 ```
+
 ```
 https://api.coronatracker.com/v3/stats/worldometer/global
 ```
+
 Import the REST APIs using Web Services import editor, as shown below
 
 [![screenshot-import-rest](/learn/assets/wm-blog-covid19-04-studio-wsimport.png)](/learn/assets/wm-blog-covid19-04-studio-wsimport.png)
 
 ### Step 2: Create Variable to access REST API
+
 Create a Page for the dashboard, and create a Variable within this page for the imported REST API, which enables invocation of the API whenever the page is accessed. 
 
 [![screenshot-bind-variables](/learn/assets/wm-blog-covid19-05-studio-variables.png)](/learn/assets/wm-blog-covid19-05-studio-variables.png)
 
 ### Step 3: Drag-n-drop widgets on to Canvas
+
 Key metrics for confirmed cases, recovery & deaths are built as tiles as shown. Each tile is further divided into sections using a Grid Layout which can be further customized to represent the data.
 Grid Layout is used to define the arrangement of various widgets on the page, by dividing the page into several responsive blocks. The size of each block can be configured and new columns and rows can be inserted as needed.
 
 [![screenshot](/learn/assets/wm-blog-covid19-06-studio-canvas.png)](/learn/assets/wm-blog-covid19-06-studio-canvas.png)
 
 ### Step 4: Bind widgets to the Variable for data
+
 After arranging the widgets on the canvas, we can bind data to these widgets from the created variable using the Properties panel.
 WaveMaker automatically identifies the JSON response structure from the imported REST API and makes it available for binding through variables.
 
 [![screenshot](/learn/assets/wm-blog-covid19-07-studio-binding.png)](/learn/assets/wm-blog-covid19-07-studio-binding.png)
 
-[![screenhit](/learn/assets/wm-blog-covid19-08-studio-binding-dialog.png)](/learn/assets/wm-blog-covid19-08-studio-binding-dialog.png)
+[![screenshot](/learn/assets/wm-blog-covid19-08-studio-binding-dialog.png)](/learn/assets/wm-blog-covid19-08-studio-binding-dialog.png)
 
-[![screenshot](/learn/assets/wm-blog-covid19-09-dashboard-snippet.png)](/learn/assets/wm-blog-covid19-09-dashboard-snippet.png)
+![screenshot](/learn/assets/wm-blog-covid19-09-dashboard-snippet.png)
 
 Bingo! We have the metrics from the REST API in our dashboard page.
 
@@ -76,4 +86,6 @@ Apart from just binding the data to API response, WaveMaker enables writing simp
 
 [![screenshot](/learn/assets/wm-blog-covid19-10-studio-expression.png)](/learn/assets/wm-blog-covid19-10-studio-expression.png)
 
-### Step 5: Deploy to cloud and we are done!
+### Step 5: Deploy to the cloud and we are done!
+
+For more information, see how to deploy an app with [One-Click Deployment](/learn/app-development/deployment/one-click-deployment/).
