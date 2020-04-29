@@ -9,14 +9,18 @@ sidebar_label: "Download and Copy Installer"
 
 **Ubuntu**
 - Download debian package. The link will be shared by wavemaker team.
-- wget < Link of wme installer >
+ ```
+ wget  <WME Installer Link>
+ ```
 
 **RHEL**
 - Download tar package. The link will be shared by wavemaker team.
-- wget < Link of wme installer >
+ ```
+ wget  <WME Installer Link>
+ ```
 
 ### Copy The WME Installer
-- Copy downloaded file to /home/ubuntu or any location on the Platform Instance. 
+- Copy downloaded file to home location or any location on the Platform Instance. 
 
 ### Verifying Checksum
 
@@ -24,14 +28,26 @@ You need to verify the WME Installer/OVA/License file (.deb/.ova file communica
 
 To verify on Linux
 
-- Using the following command, go to the directory where .ova file and checksum files are downloaded `# cd /home/ubuntu`
-- To verify the file integrity of the VM image, run the following checksum command: `# sha1sum -c [checksum-filename]`
+- Using the following command, go to the directory where .ova file and checksum files are downloaded 
+ ``` 
+  cd  <ova-file-location>
+ ```
+- To verify the file integrity of the VM image, run the following checksum command: 
+ ```
+  sha1sum -c [checksum-filename]
+ ```
 - After running the command, the result should be displayed as OK, which means the checksum is verified and the file is OK.
 
 To verify on Windows
 
-- First, download the FCIV utility package (to download, [follow instructions from here](https://support.microsoft.com/en-us/kb/841290#bookmark-4)) `# cd /home/ubuntu`
-- After download, from command prompt, run the following command: `FCIV -sha1 pathfilename.ext`
+- First, download the FCIV utility package (to download, [follow instructions from here](https://support.microsoft.com/en-us/kb/841290#bookmark-4)) 
+```
+  cd <ova-file-location>
+```
+- After download, from command prompt, run the following command: 
+ ```
+ FCIV -sha1 pathfilename.ext
+ ```
 - In Windows, after running the command, the result should be manually verified with the values present in their respective files (checksum file shared to you by email).
 
 **Note** (Applicable for both Windows and Linux): Do not proceed further to installation if checksum verification fails. Invalid checksum indicates a likely corrupted download. Try downloading the file again or contact [WaveMaker Support](mailto: support@wavemaker.com).

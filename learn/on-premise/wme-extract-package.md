@@ -11,7 +11,7 @@ sidebar_label: "Extract Package"
 **Ubuntu** 
 - Install debian package using following
   ```
-   dpkg -i < WME-installer-filename >.deb.
+   dpkg -i  <WME-Installer-Filename>
    ```
   [![](/learn/assets/wme-setup/download-and-extract-package.jpg)](/learn/assets/wme-setup/download-and-extract-package.jpg)
 
@@ -19,5 +19,5 @@ sidebar_label: "Extract Package"
 **RHEL**
 - Execute the following command to untar the file
   ```
-   tar -xvf < wme-installer-filename >
+   tar -xvf  <WME-Installer-Filename>
    ```

@@ -12,4 +12,4 @@ sidebar_label: "Initialize Setup"
     <br/><br/>
     [![](/learn/assets/wme-setup/wavemaker-setup-intialization.jpg)](/learn/assets/wme-setup/wavemaker-setup-intialization.jpg)
 
-- Go to < platform-ip >:8080 as directed by the above command output to do the WME setup.
+- Go to  < Platform-Instance-IP >:8080 as directed by the above command output to do the WME setup.

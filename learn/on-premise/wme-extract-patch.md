@@ -11,7 +11,7 @@ Assuming you have already downloaded the patch and kept inside user home folder 
 
 **Ubuntu**
    ```
-   dpkg -i  < wme patch file name >
+   dpkg -i  <WME Patch filename>
    ```
   [![](/learn/assets/wme-setup/upgrade-wme-setup/extract-the-patch-package.jpg)](/learn/assets/wme-setup/upgrade-wme-setup/extract-the-patch-package.jpg)
 
@@ -19,5 +19,5 @@ Assuming you have already downloaded the patch and kept inside user home folder 
 **RHEL**
   - Execute the following command to untar the file
      ```
-    tar -xvf  < wme patch file name >
+    tar -xvf  <WME Patch Filename>
      ```
