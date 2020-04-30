@@ -5,9 +5,11 @@ author: Deepak Anupalli
 
 Alongside the crisis that COVID-19 had brought to the world, there has never been so much prominence for the numbers. Almost every household, governments, businesses, media etc. are contemplating these numbers, creating models for prediction, taking measures to flatten these curves. That’s when we immediately jumped on to create an application using our own low-code platform.
 
-Using WaveMaker, you can almost instantly create a chart or plot for visualization from any datasource. There are several API sources for COVID-19 data and with no code, using out-of-the-box widgets and charts the application has been built in just a few days.
+Using WaveMaker, you can almost instantly create a chart or plot for visualization from any datasource. There are several API sources for COVID-19 data and with no code, using out-of-the-box widgets and charts the application has been built in just a few days. 
 
 <!-- truncate -->
+
+In this series of blog post, we discuss [how to build a dashboard](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker#how-to-build-the-dashboard), and in the next post, we will see [how to build visualization for maps](/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2). But before, lets' do a little walkthrough of the app.
 
 ## Corona Tracker App
 
@@ -89,3 +91,7 @@ Apart from just binding the data to API response, WaveMaker enables writing simp
 ### Step 5: Deploy to the cloud and we are done!
 
 For more information, see how to deploy an app with [One-Click Deployment](/learn/app-development/deployment/one-click-deployment/).
+
+## What's next?
+
+In the next series of the blog post for developing a Covid-19 visualization using WaveMaker, see [how to build visualization for maps](/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2).
