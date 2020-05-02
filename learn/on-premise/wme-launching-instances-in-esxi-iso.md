@@ -5,16 +5,17 @@ sidebar_label: "Launch Instances in Esxi using ISO"
 ---
 ---
 
-### Launch instances in Esxi using ISO 
+### Launch Instances in Esxi using ISO 
  **Prerequisite**
- - Ubuntu ISO file downloaded (Ex: link for download the Ubuntu 16.04.6 ISO image
+ - Ubuntu ISO file from internet. 
+    - Link for download the Ubuntu 16.04.6 ISO image
   [ubuntu 16.04.6 iso image](http://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-amd64.iso)
   )
- - VMware ESXi version 6.5 or higher
- - Permission for launching OVA.
- This guide has written based on Esxi version 6.5.
+ - VMware ESXi version 6.5 or higher.
+ - Permission for launching machines in Esxi.
+Note: This guide has written based on Esxi version 6.5.
  
- **Steps**
+ **Launch Platform Instance**
 
 - Upload ubuntu server iso image to the database store
 - Select Create / Register VM 
@@ -92,16 +93,20 @@ sidebar_label: "Launch Instances in Esxi using ISO"
     [![](/learn/assets/wme-setup/vm-creation-by-using-iso-image/installing-grub-loader.png)](/learn/assets/wme-setup/installing-grub-loader.png)
     
 - Wait for few moments to complete the installation process, then login into system by providing username and password
-- For connecting from terminals please install openssh-server
+- For connecting from terminals via ssh, install openssh-server and check the status.
+  Below are the commands.
   ```
    sudo apt-get install openssh-server -y
-   ```
-  ```
    sudo systemctl start ssh
-   ```
-- For checking the status of ssh 
-  ```
    sudo systemctl status ssh
    ```
-* Also for External Instance or Workspace/AppDeployment Instance launch from Esxi use same procedure
+
+### Launch External Instance 
+- Use same procedure for External Instance(StudioWorkspace Instance / AppDeployment Instance.
+
+### Security and Networking.
+- Do one of the two things below. 
+    - All trafic opened between Platform Instance and External Instances.
+    - Configure security rules as per Prerequisites.
+
 

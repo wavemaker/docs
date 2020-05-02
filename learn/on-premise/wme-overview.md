@@ -1,42 +1,46 @@
 ---
-title: "Welcome to WaveMaker Enterprise Guide"
+title: "Welcome to WaveMaker Enterprise Setup Guide"
 id: ""
 sidebar_label: "Enterprise Overview"
 ---
-Find instructions to setup WaveMaker Enterprise, upgrade and manage the setup.
+
+Find instructions to setup, upgrade and manage WaveMaker Enterprise.
 
 ---
-Before proceeding with the set-up, see what constitutes WaveMaker Enterprise (WME). WME platform is made up of the following three components:
+Before proceeding with the set-up, see what constitutes WaveMaker Enterprise (WME). 
 
-#### Setup Wizard
+### Overview of WME Components
+
+#### 1. Config Portal 
 
 A simple wizard application to setup WME on premise. 
 
-#### WaveMaker Studio
+#### 2. WaveMaker Studio
 
 A modern low-code platform for collaborative development of multi-device apps. 
 
-#### WaveMaker Cloud
+#### 3. WaveMaker Cloud
 
 Consist of Containerized Cloud for User workspace and App Deployments isolation. Managed by Platform 
 
-#### Launchpad
+#### 4. Launchpad
 
 WaveMaker's administrative console where you can configure users, additional Studio/Cloud instances for scaling, configure external VCS, etc. Launchpad is automatically installed when you setup WaveMaker Enterprise .
 
-#### Platform 
+### Overview of WME Architecutre
+#### 1. Platform 
 
 WaveMaker On-Premise Platform which consisting of multiple internal services needed to run the WME platform like Studio, Cloud, VCS etc.. Each of these services runs in a separate Docker Container. Services talk to each other via REST service. Platform Containers make calls to the Docker Engine for operations like starting a new user container, stopping / starting a container, and more.
 
-#### User Workspace
+#### 2. User Workspace
 
 Each user gets a container for developing apps. Containers are used to isolate each user’s workspace from other users. 
 
-#### App Deployments
+#### 3. App Deployments
 
 Each WaveMaker app that is deployed into the internal WaveMaker Cloud is allocated a separate container. Thus the deployed apps are also isolated from each other.
 
-#### External Instances
+#### 4. External Instances
 
 Capacity added for User work space and App Deployments, we call it as External Instances.
 

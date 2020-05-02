@@ -5,13 +5,15 @@ sidebar_label: "Launch Instances in Esxi using OVA"
 ---
 ---
 
-### Launch instances in Esxi using OVA  
- **Prerequisite**
- - OVA file shared by WaveMaker team 
+### Launch Instances in Esxi using OVA  
+ **Prerequisites**
+ - Platform OVA file shared by WaveMaker team
+ - External Instance OVA file shared by WaveMaker team  
  - VMware ESXi version 6.5 or higher
- - Permission for launching OVA .
- 
- **Steps**
+ - Permission for launching OVA.
+  Note: This guide has written based on Esxi version 6.5.
+
+ **Launch Platform Instance**
  
 - Login into VMware ESXi Server using  Server IP address and user credentials. 
 - Select Create/Register VM for creating the new virtual machine
@@ -19,7 +21,7 @@ sidebar_label: "Launch Instances in Esxi using OVA"
     <br/><br/>
     [![](/learn/assets/wme-setup/vm-creation-by-using-ova/select-vm-creation-type.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/select-vm-creation-type.png)
 
-- Select OVF or OVA file for VM would like to deploy
+- Select OVF or OVA file for VM would like to deploy. User Platform Instance OVA.
     <br/><br/>
     [![](/learn/assets/wme-setup/vm-creation-by-using-ova/selecting-the-ovf-template-for-deploy.png)](/learn/assets//wme-setup/vm-creation-by-using-ova/selecting-the-ovf-template-for-deploy.png)
 
@@ -38,5 +40,11 @@ sidebar_label: "Launch Instances in Esxi using OVA"
 - Wait for few moments for complete successfully the creation of virtual machine
     <br/><br/>
     [![](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png)
+    
+### Launch External Instance 
+- Use same procedure for External Instance(StudioWorkspace Instance / AppDeployment Instance)- Use External Instance OVA.
 
-* Also for External Instance or Workspace/AppDeployment Instance launching from Esxi use same procedure
+### Security and Networking.
+- Do one of the two things below. 
+    - All trafic opened between Platform Instance and External Instances.
+    - Configure security rules as per Prerequisites.

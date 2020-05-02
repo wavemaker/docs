@@ -10,8 +10,9 @@ sidebar_label: "Launch Instances in hyper-v using VHD"
  - VHD file shared by WaveMaker team 
  - Hyper V with version 10.0.x on Windows 10 Pro
  - Permissions to launch VM 
- 
- **Steps**
+ Note: This guide has written based on Hyper V with version 10.0.x.
+
+ **Launch Platform Instance**
  
 - Open  HYPER V, Right-click on your Hyper-V host, click on New, Select virtual machine for creating a platform virtual machine.
   <br/><br/>
@@ -49,4 +50,12 @@ sidebar_label: "Launch Instances in hyper-v using VHD"
   <br/><br/>
   [![](/learn/assets/wme-setup/vm-creation-in-hyperv-using-vhd/start-and-connect-vm.png)](/learn/assets/wme-setup/vm-creation-in-hyperv-using-vhd/start-and-connect-vm.png)
 
-* Also for External Instance or Workspace/AppDeployment Instance launching from Hyper-V  use same procedure
+    
+### Launch External Instance 
+- Use same procedure for External Instance(StudioWorkspace Instance / AppDeployment Instance.
+- Use External Instance VHD
+
+### Security and Networking.
+- Do one of the two things below. 
+    - All trafic opened between Platform Instance and External Instances.
+    - Configure security rules as per Prerequisites.
