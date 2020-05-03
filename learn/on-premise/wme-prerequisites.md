@@ -47,11 +47,13 @@ The actual app development and deployment support are further determined by your
 
 ### WME Setup Artifacts
 
+WaveMaker will share required artifacts(installer files/Images) to do the setup.
+
 - There are two ways to do the setup.     
-    - Operating System Pre-Installed 
+    - Operating System Pre-Installed. 
         You can come up with machines with Operating system pre installed and install Prerequisite(optional). 
         Then use our installer to setup WME.
-    - Use WaveMaker Images(OVA/VHD/AMI) 
+    - Use WaveMaker Machine Images(OVA/VHD/AMI). 
         Backed with Operating System, prerequisite, Installer.
         Launch machines from hyperviors or cloud consoles.
 

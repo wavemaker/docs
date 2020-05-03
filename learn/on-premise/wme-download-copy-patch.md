@@ -5,23 +5,18 @@ sidebar_label: "Download and Copy Patch"
 ---
 ---
 
+### Download Patch
 
-### Download and Copy The Patch
-
-**Ubuntu**
-- Install latest version or any desired version of wme installer 
+- **for Ubuntu**
+  - Download debian package. The link will be shared by wavemaker team.
   ```
-   wget   < WME-Installer Link >
-   ```
-
- [![](/learn/assets/wme-setup/upgrade-wme-setup/installing-wme-patch.jpg)](/learn/assets/wme-setup/upgrade-wme-setup/installing-wme-patch.jpg)
-
-**RHEL**     
-- For RHEL system download the tar file,link wavemaker team will provide
-  - download the wme installer by using following command
+    wget  <WME-Patch-Link>
   ```
-   wget   < WME-Installer Link >
-   ```
+- **for RHEL**
+  - Download tar package. The link will be shared by wavemaker team.
+  ```
+    wget  <WME-Patch-Link>
+  ```
 
-### Copy The WME Installer
-- Copy downloaded patch file to location of wme installer on the Platform Instance. 
+### Copy Patch to Platform Machine
+- Copy downloaded patch file to home directory on the Platform Instance. 

@@ -1,13 +1,15 @@
 ---
-title: "Setup Using Config Portal"
+title: "Setup Using ConfigPortal"
 id: ""
-sidebar_label: "Setup Using Config Portal"
+sidebar_label: "Setup Using ConfigPortal"
 ---
 ---
-# WME Setup on ConfigPortal
+## WME Setup on ConfigPortal
 
-- Open wavemaker portal by http://< Platform-Instance-IP >:8080.
-- Setup password for the wavemaker setup portal. This password is system level. All command line operations are authenticated by this Password. Subsequent operations like upgrades needs this password.
+- Open wavemaker ConfigPortal by http://<Platform-Instance-IP>:8080.
+- Setup password for the wavemaker setup portal. This password is system level. All command line operations are authenticated by this Password. Subsequent operations like upgrades needs this password. 
+- Password must contain 8-20 characters, with at least one lower case alphabet, one upper case alphabet, one digit and a special character (underscore(_), at(@), dot(.))
+
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-portal-setup/setting-username-and-password.png)](/learn/assets/wme-setup/wme-portal-setup/setting-username-and-password.png)
 
@@ -15,21 +17,24 @@ sidebar_label: "Setup Using Config Portal"
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-portal-setup/type-of-setup.png)](/learn/assets/wme-setup/wme-portal-setup/type-of-setup.png)
 
-- Setup domain by giving enterprise name and click on next. Enterprise Name is your enterprise name. Domains names are used to access studio and deployed apps.
+- Setup domain by giving enterprise name and click on next. Enterprise Name is your enterprise name. Domains names are used to access studio and deployed apps by your developers. The Domain Names should be mapped in your DNS or developer host file.
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-portal-setup/domain-setup.png)](/learn/assets/wme-setup/wme-portal-setup/domain-setup.png)
 
-- Create an admin user for wme portal by providing an email address and password. These credentials are used to access launchpad and do admistration of WME setup like setting up vcs, adding capacity etc.
+- Create an admin user for WaveMaker launchpad access by providing an email address and password. These credentials are used to access launchpad and do admistration of WME setup like adding users, setting up vcs, adding capacity etc.
+- Password must contain 8-20 characters, with at least one lower case alphabet, one upper case alphabet, one digit and a special character (underscore(_), at(@), dot(.))
+
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-portal-setup/creating-admin-user.jpg)](/learn/assets/wme-setup/wme-portal-setup/creating-admin-user.jpg)
 
-- Install wme resources required for wme setup
+- Installation may take 45 mins to 60 mins. Please wait and watch on this page for the status until it reached 100%.
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-portal-setup/installation.png)](/learn/assets/wme-setup/wme-portal-setup/installation.png)
 
-- Upload the license key for proceeding to further operations
+- Bottom click on Upload the license key to apply the license. Upload license key file shared by WaveMaker team.
 	<br/><br/>
     [![](/learn/assets/wme-setup/wme-portal-setup/apply-license.jpg)](/learn/assets/wme-setup/wme-portal-setup/apply-license.jpg)
     
-- Go to a launchpad for further operations.
+- Click on launchpad for further operations.
+- Map <PLATFORM_IP> with the Domain name given in ur DNS or put an host entry in ur machine.
 

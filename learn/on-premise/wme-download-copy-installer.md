@@ -6,18 +6,20 @@ sidebar_label: "Download and Copy Installer"
 ---
 
 ### Download the WME Installer
+- #### If you choose to use WaveMaker Images(OVA/VHD/AMI) 
+  - No need to download the WME installer. 
+  - OVA/VHD/AMI will have it already.
 
-**Ubuntu**
-- Download debian package. The link will be shared by wavemaker team.
- ```
- wget  <WME Installer Link>
- ```
-
-**RHEL**
-- Download tar package. The link will be shared by wavemaker team.
- ```
- wget  <WME Installer Link>
- ```
+- **for Ubuntu**
+  - Download debian package. The link will be shared by wavemaker team.
+  ```
+    wget  <WME-Installer-Link>
+  ```
+- **for RHEL**
+  - Download tar package. The link will be shared by wavemaker team.
+  ```
+    wget  <WME-Installer-Link>
+  ```
 
 ### Copy The WME Installer
 - Copy downloaded file to home location or any location on the Platform Instance. 
@@ -28,11 +30,11 @@ You need to verify the WME Installer/OVA/License file (.deb/.ova file communica
 
 To verify on Linux
 
-- Using the following command, go to the directory where .ova file and checksum files are downloaded 
+- Using the following command, go to the directory where installer file(deb/tar/ova/vhd) and checksum files are downloaded 
  ``` 
-  cd  <ova-file-location>
+  cd  <file-location>
  ```
-- To verify the file integrity of the VM image, run the following checksum command: 
+- To verify the file integrity of the deb/tar/ova/vhd, run the following checksum command: 
  ```
   sha1sum -c [checksum-filename]
  ```
