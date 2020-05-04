@@ -31,13 +31,13 @@ Form and Live Form are two different widgets that work similarly. Live Form is u
 
 ## How do Forms work
 
-A form is designed to submit the user-provided data into the server and perform business operations on it. When the user submits the form data, the value expressions handles the data further. A form contains a group of input fields. Each field binds to the variable metadata that you can configure to the form-field settings.
+ A form contains a group of input fields. Each field binds to the variable metadata that you can configure to the form-field settings. You can design the form to perform business operations and save it to the server.
 
 ### Handling Form Submission Data
 
-Firstly, to build a form, you should have a dataset ready. You can use APIs for REST services, java service, database service, and more. There are multiple ways to build and manage datasource in WaveMaker. 
+Firstly, to build a form, you should have a dataset. You can use APIs for REST services, java service and database service. There are multiple ways to build and manage datasource in WaveMaker. 
 
-Create a form instantly even without having a dataset ready with a model variable. This helps you to plan and design your form structure.  For more information, see [Build a Form](/learn/app-development/widgets/datalive/form/form-usage-scenarios).
+You can instantly create a form without even having a dataset ready using a model variable. This helps you to plan and design your form structure. For more information, see [Build a Form](/learn/app-development/widgets/datalive/form/form-usage-scenarios).
 
 ### Layout and styling options
 
@@ -49,7 +49,7 @@ You can display form as a dialog. This means the form displays a pop-up when an 
 
 #### Inline
 
-Show the form inline as a page.
+To display form inline with a page. This is the default option.
 
 #### Align 
 
@@ -57,7 +57,11 @@ Set the alignment of the form. You can choose from left, center, right alignment
 
 #### Position
 
-Set the position of the input field and label placement. Label: Field, Field: Label, Label: Field below. See the image above.
+Set the position of the input field and label placement as shown in the image above: {label: field}, {field: label}, {label: field below}.
+
+#### Layout Style
+
+Select form layout styles. For example, display form fields in a single column, two columns, or three columns.
 
 ### Configure Form Fields
 
@@ -65,7 +69,11 @@ Set the position of the input field and label placement. Label: Field, Field: La
 
 - By default, an appropriate **Form Widget** is assigned to each field. However, you can select a suitable **Form Widget** for a field.
 - Field input validation. For example, should the field be a required field, or should it contain a regex expression, or more custom [field validations](/learn/app-development/widgets/datalive/field-validator).
+
+### Form Actions
+
+A typical form contains the following Form actions.
+
 - Reset form field data. For example, to clear entered data, or to start over.
 - Allow performing actions. For example, edit, save or submit data, and add a new record.
-- Select form layout styles. For example, display form fields in a single column, two columns, or three columns.
-
+- Cancel action for Live Form to clear entered-data.
