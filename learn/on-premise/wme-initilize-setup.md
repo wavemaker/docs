@@ -8,9 +8,9 @@ sidebar_label: "Initialize Setup"
 ### Initialize the WME setup
 
 - After downloading and extracting the wme installer run the bash script which is displayed at terminal. Command will looks like below.
-     ```
+    ```
        bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
-   ```
+    ```
 - When prompted, enter the interface name (e.g. eth0, ens5 etc) and cofirms the IPAddress.
 - Provide CIDR range as described in the prerequisites above.
 - After successful initialization, the script will display a URL to perform the rest of the WME setup.

@@ -42,11 +42,11 @@ To verify on Linux
 
 To verify on Windows
 
-- First, download the FCIV utility package (to download, [follow instructions from here](https://support.microsoft.com/en-us/kb/841290#bookmark-4)) 
+- First, download the FCIV utility package (to download, [follow instructions from here](https://support.microsoft.com/en-us/kb/841290#bookmark-4)).
 ```
   cd <ova-file-location>
 ```
-- After download, from command prompt, run the following command: 
+- After download, from command prompt, run the following command.
  ```
  FCIV -sha1 pathfilename.ext
  ```

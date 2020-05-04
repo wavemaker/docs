@@ -8,8 +8,8 @@ sidebar_label: "Extract Package"
 
 ### Extract Package for WME installer
 
-**for Ubuntu** 
-- Install debian package using following
+**Ubuntu** 
+- Install debian package using following command.
   ```
    dpkg -i  <WME-Installer-Filename>
    ```

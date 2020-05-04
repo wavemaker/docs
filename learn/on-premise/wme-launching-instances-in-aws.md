@@ -44,7 +44,7 @@ sidebar_label: "Launch Instances in AWS EC2"
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-setup-in-aws/wm-sg-workspace-internal-basic.png)](/learn/assets/wme-setup/wme-setup-in-aws/wm-sg-workspace-internal-basic.png)  
     
-    -  Select inbound rules and Edit rules for access  from the platform instance,at source field provide WME-SG-Platform-Internal security group ID
+    -  Select inbound rules and Edit rules for access  from the platform Instance,at source field provide WME-SG-Platform-Internal security group ID.
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-workspace-internal.png)](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-workspace-internal.png)  
 
