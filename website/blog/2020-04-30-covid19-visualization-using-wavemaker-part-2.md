@@ -3,7 +3,7 @@ title: "COVID-19 Visualization using WaveMaker - Part 2"
 author: Deepak Anupalli
 ---
 
-In my last blog post, we saw how the Corona Tracker app works and we discussed how to build a dashboard using WaveMaker. I recommend you to read the [part-1](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker) of the blog first. In this post, we will see how to build [visualization for charts](#how-to-build-chart-visualization) and [visualization for maps](/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2#how-to-build-maps-visualization).
+In my last blog post, we saw how the Corona Tracker app works and we discussed how to build a dashboard using WaveMaker. I recommend you to read the [part-1](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker) of the blog first. In this post, we will see how to build [visualization for charts](#how-to-build-charts-visualization) and [visualization for maps](/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2#how-to-build-maps-visualization).
 
 <!-- truncate -->
 
@@ -94,3 +94,7 @@ Again used low-code, a customized maps dataset is created from the REST API resp
 ## Summary
 
 Using single-click deployment from WaveMaker, the app is deployed on to containers and made available publicly. Entire application was built by a single developer in 1 week.
+
+## See Also
+
+[COVID-19 Visualization using WaveMaker - Part 1](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker)
