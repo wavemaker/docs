@@ -13,7 +13,7 @@ Additionally, build complex forms that contain multiple data widgets inside a si
 
 [![](/learn/assets/Form_run.png)](/learn/assets/Form_run.png)
 
-## Different Types of Forms
+## Forms Types
 
 Use an appropriate type of form to work with different types of datasets. There are two types of forms in WaveMaker; they are **Form** and **Live Form**.
 
