@@ -48,7 +48,7 @@ Capacity added for User Workspace and App Deployments, we call it as External In
 
 Internally WME utilizes Docker containers to segregate and isolate the platform components and the developer workspace as depicted below. 
 
-[![](/learn/assets/wme-setup/Platform-architecture.png)](/learn/assets/wme-setup/Platform-architecture.png)
+[![](/learn/assets/wme-setup/platform-architecture.png)](/learn/assets/wme-setup/platform-architecture.png)
 
 
 ### Release Policy
