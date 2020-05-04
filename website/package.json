@@ -15,19 +15,19 @@
     "cypress:e2e": "npm run cypress:prepare-prod && npm run cypress:prod && npm run cypress:prep-report"
   },
   "devDependencies": {
-    "@wavemaker.com/wm-remarkjs-theme": "wavemaker/wm-remarkjs-theme",
+    "@wavemaker.com/wm-remarkjs-theme": "github:wavemaker/wm-remarkjs-theme",
     "concurrently": "5.1.0",
     "copy-files-from-to": "^2.3.0",
-    "cypress": "^3.8.0",
-    "docusaurus": "^1.12.0",
+    "cypress": "^3.8.3",
+    "docusaurus": "^1.14.4",
     "dotenv": "^8.2.0",
     "markdown-to-slides": "1.0.5",
     "mocha": "^5.2.0",
     "mochawesome": "^4.1.0",
     "mochawesome-merge": "^2.1.0",
-    "mochawesome-report-generator": "^4.0.1",
+    "mochawesome-report-generator": "^4.1.0",
     "optimist": "^0.6.1",
-    "remarkable-admonitions": "^0.2.1",
+    "remarkable-admonitions": "^0.2.2",
     "update": "^0.7.4",
     "wait-on": "^3.3.0"
   }
