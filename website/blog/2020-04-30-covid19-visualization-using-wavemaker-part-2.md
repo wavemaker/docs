@@ -17,7 +17,7 @@ For more information, see [Corona Tracker App](/learn/blog/2020/04/27/covid19-vi
 
 ## How to build Charts Visualization
 
-WaveMaker has in-built d3 based charts which are used for building plots for visualization in this app. Drag-n-drop any chart widget to canvas and bind the dataset property to the Variable for plotting data as shown below.
+WaveMaker has in-built nvd3 based charts which are used for building plots for visualization in this app. Drag-n-drop any chart widget to canvas and bind the dataset property to the Variable for plotting data as shown below.
 
 [![DnD Chart widget](/learn/assets/wm-blog-covid19-18-charts-visualization.png)](/learn/assets/wm-blog-covid19-18-charts-visualization.png)
 
@@ -25,9 +25,9 @@ WaveMaker has in-built d3 based charts which are used for building plots for vis
 
 ### Configuring axes
 
-After binding the variable for the dataset, both x-axis and y-axis provider attributes from the dataset for configuration. By just picking the attributes your chart will be ready for viewing.
+After binding the variable for the dataset, configure x-axis and y-axis from the attributes of the dataset. By just picking these attributes your chart will be ready for viewing.
 
-In this particular case for the [bar chart](/learn/app-development/widgets/chart/chart-widget#4-bar-chart), we have picked country on x-axis and confirmedCases attribute from API to be depicted for each country.
+In this particular case for the [bar chart](/learn/app-development/widgets/chart/chart-widget#4-bar-chart), we have picked *country* on x-axis and *confirmedCases* attribute from API, to be depicted for each country on y-axis.
 
 ### Configuring titles
 
@@ -53,7 +53,7 @@ This is where low-code comes into play, you can write javascript code to customi
 
 Maps is not an in-built widget in WaveMaker, using datamaps javascript library a Prefab is created. Datamaps takes JSON input for countries with their code and a colormap to plot the visualization.
 
-Prefabs are typically built by a javascript developer who knows the nuances of working with a javascript library and creates a widget or prefab out of it. The Prefab developer will provide attributes that are available to WaveMaker low-code developers when the widget is dropped onto the canvas. 
+Prefabs are typically built by a javascript developer who knows the nuances of working with a javascript library and creates a widget or prefab out of it. The Prefab developer will provide attributes that are available to WaveMaker low-code developers when the widget is dropped onto the canvas.
 
 ### Creating a Prefab
 
@@ -63,7 +63,7 @@ The following are the attributes provided by the Datamaps prefab developer that 
 
 ### Testing the prefab independently
 
-A Prefab project is another variant of a project, where you can build a reusable component or widget and publish to the workspace. Prefab developers will be able to test the prefab independent of the application by providing test data through an editor.
+A Prefab project is another type of a project, where you can build a reusable component or widget and publish it to the workspace. Prefab developers will be able to test the prefab independent of the application by providing test data through an editor, as shown.
 
 [![Prefab config](/learn/assets/wm-blog-covid19-12-testing-prefab.png)](/learn/assets/wm-blog-covid19-12-testing-prefab.png)
 
@@ -87,7 +87,7 @@ Color map needed for the maps prefab can be created as a variable, shown below.
 
 [![maps prefab](/learn/assets/wm-blog-covid19-16-color-map-dataset.png)](/learn/assets/wm-blog-covid19-16-color-map-dataset.png)
 
-Again used low-code, a customized maps dataset is created from the REST API response by calculating the color codes based on the confirmed cases in each country as shown.
+Using javascript, we have created a custom maps dataset from the REST API response, by calculating the color codes based on the confirmed cases in each country as shown.
 
 [![maps prefab](/learn/assets/wm-blog-covid19-17-custom-maps-dataset.png)](/learn/assets/wm-blog-covid19-17-custom-maps-dataset.png)
 
