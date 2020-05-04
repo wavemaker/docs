@@ -11,7 +11,7 @@ sidebar_label: "Initialize Setup"
     ```
        bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
     ```
-- When prompted, enter the interface name (e.g. eth0, ens5 etc) and cofirms the IPAddress.
+- When prompted, enter the interface name (e.g. eth0, ens5 etc) and confirms the IPAddress.
 - Provide CIDR range as described in the prerequisites above.
 - After successful initialization, the script will display a URL to perform the rest of the WME setup.
 - Go to  http://<Platform-Instance-IP>:8080 as directed by the above command output to do the WME setup.

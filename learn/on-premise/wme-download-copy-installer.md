@@ -10,12 +10,12 @@ sidebar_label: "Download and Copy Installer"
   - No need to download the WME installer. 
   - OVA/VHD/AMI will have it already.
 
-- **for Ubuntu**
+- #### Ubuntu
   - Download debian package. The link will be shared by wavemaker team.
   ```
     wget  <WME-Installer-Link>
   ```
-- **for RHEL**
+- #### RHEL
   - Download tar package. The link will be shared by wavemaker team.
   ```
     wget  <WME-Installer-Link>

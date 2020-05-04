@@ -25,10 +25,10 @@ A modern low-code platform for collaborative development of multi-device apps.
 
 #### 4. WaveMaker Cloud
 
-Consist of Containerized Cloud for User workspace and App Deployments isolation. Managed by Platform 
+Consist of Containerized Cloud for User workspace and App Deployments isolation. Managed by Platform .
 
 
-### Overview of WaveMaker Enterprise Architecutre
+### Overview of WaveMaker Enterprise Architecture
 
 #### 1. Platform 
 
@@ -46,13 +46,13 @@ Each WaveMaker app that is deployed into the internal WaveMaker Cloud is alloca
 
 Capacity added for User Workspace and App Deployments, we call it as External Instances.
 
-Internally WME utilizes Docker containers to segregate and isolate the platform components and the developer workspace as depicted below: 
+Internally WME utilizes Docker containers to segregate and isolate the platform components and the developer workspace as depicted below. 
 
 [![](/learn/assets/wme-setup/Platform-architecture.png)](/learn/assets/wme-setup/Platform-architecture.png)
 
 
 ### Release Policy
 
-WaveMaker releases its enterprise version once stablized on WaveMaker Online Platform. 
+WaveMaker releases its enterprise version once stabilized on WaveMaker Online Platform. 
 
 [Check out full list of releases here.](/learn/wavemaker-release-notes#current-release-details)

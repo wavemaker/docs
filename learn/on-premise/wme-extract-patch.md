@@ -9,15 +9,15 @@ Assuming you have already downloaded the patch and kept inside user home folder 
 
 ### Extract the package of the patch
 
-**Ubuntu**
-- Execute the following command to extract debian package.
-   ```
-   dpkg -i  <WME Patch filename>
-   ```
-  [![](/learn/assets/wme-setup/upgrade-wme-setup/extract-the-patch-package.jpg)](/learn/assets/wme-setup/upgrade-wme-setup/extract-the-patch-package.jpg)
+- #### Ubuntu
+  - Execute the following command to extract debian package.
+     ```
+     dpkg -i  <WME Patch filename>
+     ```
+    [![](/learn/assets/wme-setup/upgrade-wme-setup/extract-the-patch-package.jpg)](/learn/assets/wme-setup/upgrade-wme-setup/extract-the-patch-package.jpg)
 
 
-**RHEL**
+- #### RHEL
   - Execute the following command to untar the file.
      ```
     tar -xvf  <WME Patch Filename>

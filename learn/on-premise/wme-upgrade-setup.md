@@ -5,7 +5,7 @@ sidebar_label: "Upgrade Overview"
 ---
 ---
 
-This document provides the instructions install a patch to upgrade the current WaveMaker Enterprise version for enhancing fetures or optimizing the performance of the installed WME.
+This document provides the instructions install a patch to upgrade the current WaveMaker Enterprise version for enhancing features or optimizing the performance of the installed WME.
 
 The following table is the compatibility matrix for upgrading the WME:
 
@@ -27,10 +27,10 @@ The following list provides the currently supported versions for WME patching. K
 
 Following are the patch files you will need in order to install the patch on WME setup running on your host machine.
 
-- **for Ubuntu**
+- **Ubuntu**
   - patch file in deb format   
   - corresponding checksum (sha1sum) files
-- **for RHEL**
+- **RHEL**
   - patch file in tar format.
   - corresponding checksum (sha1sum) files
 

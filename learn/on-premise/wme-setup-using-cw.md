@@ -4,7 +4,7 @@ id: ""
 sidebar_label: "Setup Using ConfigPortal"
 ---
 ---
-## WME Setup on ConfigPortal
+### WME Setup on ConfigPortal
 
 - Open wavemaker ConfigPortal by http://<Platform-Instance-IP>:8080.
 - Setup password for the wavemaker setup portal. This password is system level. All command line operations are authenticated by this Password. Subsequent operations like upgrades needs this password. 
@@ -21,7 +21,7 @@ sidebar_label: "Setup Using ConfigPortal"
     <br/><br/>
     [![](/learn/assets/wme-setup/wme-portal-setup/domain-setup.png)](/learn/assets/wme-setup/wme-portal-setup/domain-setup.png)
 
-- Create an admin user for WaveMaker launchpad access by providing an email address and password. These credentials are used to access launchpad and do admistration of WME setup like adding users, setting up vcs, adding capacity etc.
+- Create an admin user for WaveMaker launchpad access by providing an email address and password. These credentials are used to access launchpad and do adminstration of WME setup like adding users, setting up vcs, adding capacity etc.
 - Password must contain 8-20 characters, with at least one lower case alphabet, one upper case alphabet, one digit and a special character (underscore(_), at(@), dot(.))
 
     <br/><br/>

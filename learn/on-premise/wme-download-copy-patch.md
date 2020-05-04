@@ -7,12 +7,12 @@ sidebar_label: "Download and Copy Patch"
 
 ### Download Patch
 
-- **for Ubuntu**
+- #### Ubuntu
   - Download debian package. The link will be shared by wavemaker team.
   ```
     wget  <WME-Patch-Link>
   ```
-- **for RHEL**
+- #### RHEL
   - Download tar package. The link will be shared by wavemaker team.
   ```
     wget  <WME-Patch-Link>
