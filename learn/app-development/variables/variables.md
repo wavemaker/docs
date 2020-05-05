@@ -8,7 +8,7 @@ Learn about Variables in WaveMaker low-code platform. See how it works and how t
 ---
 Variables form the glue between the frontend UI and the backend services. Variables provide data integration for the widgets. 
 
-[![Variables introduction in WaveMaker](/learn/assets/variables_introduction.png)](/learn/assets/variables_introduction.png)  
+[![Variables introduction in WaveMaker](/learn/assets/variables_introduction.PNG)](/learn/assets/variables_introduction.PNG)  
 
 ## Scope of Variables
 
