@@ -384,9 +384,18 @@
 
   "Tutorials": 
   {
-    "Learn": 
+      "Learn": 
       [  
       "tutorials"
+      ],
+
+      "Build an app in 5 Minutes": 
+      [
+      "tutorials/build-app-in-5-minutes/app-demo",
+      "tutorials/build-app-in-5-minutes/import-database",
+      "tutorials/build-app-in-5-minutes/drag-and-drop-widget",
+      "tutorials/build-app-in-5-minutes/connecting-datasource-to-widget",
+      "tutorials/build-app-in-5-minutes/preview-test-app"
       ],
 
       "Essentials":
@@ -397,8 +406,8 @@
 
       "App Building Exercises": 
       [      
-        "tutorials/leave-management-app",
-        "tutorials/asset-management-app"
+      "tutorials/leave-management-app",
+      "tutorials/asset-management-app"
       ]
   },
   
