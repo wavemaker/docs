@@ -11,13 +11,77 @@
 // List of projects/orgs using your project for the users page.
 const users = [
     {
-        caption: 'User1',
+        caption: 'Youtube', 
         // You will need to prepend the image path with your baseUrl
         // if it is not '/', like: '/test-site/img/image.jpg'.
-        image: '/img/undraw_open_source.svg',
-        infoLink: 'https://www.facebook.com',
+        image: 'img/youtube.png',
+        infoLink: '/learn/app-development/widgets/prefab/youtube',
         pinned: true,
     },
+	
+	{
+        caption: 'Google Maps',
+        // You will need to prepend the image path with your baseUrl
+        // if it is not '/', like: '/test-site/img/image.jpg'.
+        image: 'img/googlemaps.png',
+        infoLink: '/learn/app-development/widgets/prefab/googlemaps',
+        pinned: true,
+    },
+	
+	{
+        caption: 'QR Code',
+        // You will need to prepend the image path with your baseUrl
+        // if it is not '/', like: '/test-site/img/image.jpg'.
+        image: 'img/qrcode.png',
+        infoLink: '/learn/app-development/widgets/prefab/qrcode',
+        pinned: true,
+    },
+	
+		{
+        caption: 'Box Viewer',
+        // You will need to prepend the image path with your baseUrl
+        // if it is not '/', like: '/test-site/img/image.jpg'.
+        image: 'img/box.png',
+        infoLink: '/learn/app-development/widgets/prefab/box-viewer-prefab',
+        pinned: true,
+    },
+
+		{
+        caption: 'GoogleOAuth',
+        // You will need to prepend the image path with your baseUrl
+        // if it is not '/', like: '/test-site/img/image.jpg'.
+        image: 'img/google.png',
+        infoLink: '/learn/app-development/widgets/prefab/oauth-prefabs/google',
+        pinned: false,
+    },
+	
+		{
+        caption: 'Facebook',
+        // You will need to prepend the image path with your baseUrl
+        // if it is not '/', like: '/test-site/img/image.jpg'.
+        image: 'img/facebook.png',
+        infoLink: '/learn/app-development/widgets/prefab/oauth-prefabs/facebook',
+        pinned: false,
+    },
+	
+		{
+        caption: 'Instagram',
+        // You will need to prepend the image path with your baseUrl
+        // if it is not '/', like: '/test-site/img/image.jpg'.
+        image: 'img/instagram.png',
+        infoLink: '/learn/app-development/widgets/prefab/oauth-prefabs/instagram',
+        pinned: false,
+    },
+	
+		{
+        caption: 'LinkedIn',
+        // You will need to prepend the image path with your baseUrl
+        // if it is not '/', like: '/test-site/img/image.jpg'.
+        image: 'img/linkedin.png',
+        infoLink: '/learn/app-development/widgets/prefab/oauth-prefabs/linkedin',
+        pinned: false,
+    },	
+	
 ];
 
 require('dotenv').config();
@@ -43,9 +107,10 @@ const siteConfig = {
         {languages: true},
 		{doc: 'documentation-reference', label: 'Get started '},
         {doc: 'app-development/widgets/widget-library', label: 'Widgets'},
+		{href: '/learn/prefabs', label: 'Prefabs'},
 		{doc: 'howtos-documents', label: 'How-to'},
 		{doc: 'wavemaker-release-notes', label: 'Releases'},
-        {blog: true, label:'Blog'},
+		{blog: true, label:'Blog'},
         {href: 'https://www.wavemakeronline.com/login/login', label: 'Login', external: true},
 		{href: 'https://www.wavemaker.com/get-started/', label: 'Start free trial', external: true}
     ],
@@ -108,7 +173,7 @@ const siteConfig = {
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
         'https://fonts.googleapis.com/css?family=Lato&display=swap'
     ],
-
+	
     separateCss: ['static/remark/css/wmsicon.css', 'static/remark/css/remark-wm-theme.css'],
 
     // On page navigation for the current documentation page.
