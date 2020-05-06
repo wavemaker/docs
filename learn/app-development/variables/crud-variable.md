@@ -78,23 +78,30 @@ Few Methods are exposed for Variables which can be used for achieving more contr
 
 ## `invoke()`
 
-This method updates the Variable’s dataSet with new data by making a call to the target service.
+This method updates the Variable’s dataSet with new data by making a call to the target service. There are four ways to call this method.
+
+#### `list.invoke()`
+#### `create.invoke()`
+#### `update.invoke()`
+#### `delete.invoke()`
+
 
 #### Parameters
 
-**options** (object) - It can have fields as operation. String which can take one of the values list, create, update or delete. If no value is provided then list will be taken as the default
+**options** (object) - It can have fields as:
 
 - `inputFields` (key-value pair of inputData)  
 - **success** (callback)
 - **error** (callback)
-- **Return Value** none
+
+#### Return Value
+none
 
 #### Example
 
-```
+```js
 var sv = Page.Variables.[variable_name];
-    sv.invoke({
-	“operation”: “list”,
+    sv.list.invoke({
        "inputFields": {
        "fname": "Steve",
        "lname": "Rogers"
@@ -106,4 +113,112 @@ var sv = Page.Variables.[variable_name];
         // Error Callback
         console.log("error", error)
     });
+
+var sv = Page.Variables.[variable_name];
+sv.create.invoke();
+
+var sv = Page.Variables.[variable_name];
+sv.update.invoke();
+
+var sv = Page.Variables.[variable_name];
+sv.delete.invoke();
 ```
+
+## `setInput(key, value)`
+
+This method sets the input field value against the specified field(key) for the specified operation(list, create, update or delete) based on how we call it. There are four ways to call a setInput method. 
+
+#### `list.setInput(key, value)`
+#### `create.setInput(key, value)`
+#### `update.setInput(key, value)`
+#### `delete.setInput(key, value)`
+ 
+#### Parameters
+
+- **key**(string): name of the input field
+- **value**(*): value for the input field
+
+#### Return Value
+- Updated `inputFields` object
+
+#### Example
+
+```js
+var sv = Page.Variables.[variable_name];
+    sv.list.setInput("page", 1);
+    sv.list.setInput("size", 50);
+ sv.list.invoke();
+
+var sv = Page.Variables.[variable_name];
+    sv.create.setInput("Employee", {
+        "firstName": "John",
+        "lastName": "Doe"
+    });
+ sv.create.invoke();
+
+var sv = Page.Variables.[variable_name];
+    sv.update.setInput("Employee", {
+        "firstName": "John",
+        "lastName": "Doe"
+    });
+    sv.update.setInput("empId", 50);
+ sv.update.invoke();
+var sv = Page.Variables.[variable_name];
+    sv.delete.setInput("empId", 50);
+ sv.delete.invoke();
+ ```
+
+## `setInput(object)`
+
+This method can also be used to set all the specified key-value pairs as input fields in the variable for a particular operation(list, create, update or delete)  based on how we call it. There are four ways to call a setInput method.
+
+#### `list.setInput(object)`
+#### `create.setInput(object)`
+#### `update.setInput(object)`
+#### `delete.setInput(object)`
+ 
+#### Parameters
+- **Object**: key-value pairs {“key”: “value”,…}
+ 
+#### Return Value
+- Updated `inputFields` object
+
+#### Example
+
+```js
+var sv = Page.Variables.[variable_name];
+    sv.list.setInput({
+        "page": 1,
+        "size": 50
+    });
+ sv.list.invoke();
+
+
+
+var sv = Page.Variables.[variable_name];
+    sv.create.setInput({
+        "Employee": {
+            "firstName": "John",
+            "lastName": "Doe"
+        }
+    });
+ sv.create.invoke();
+
+
+var sv = Page.Variables.[variable_name];
+    sv.update.setInput({
+        "Employee": {
+            "firstName": "John",
+            "lastName": "Doe"
+        },
+	 "empId": 50
+    });
+ sv.update.invoke();
+
+
+var sv = Page.Variables.[variable_name];
+    sv.delete.setInput({
+        "empId": 50
+    });
+ sv.delete.invoke();
+ ```
