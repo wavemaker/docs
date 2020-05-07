@@ -4,7 +4,7 @@
     "Getting started": 
       [
         "documentation-reference",                
-        "app-development/wavemaker-overview/product-walkthrough"                    
+        "app-development/wavemaker-overview/product-walkthrough"                  
       ],
 
     "Pages": 
@@ -250,7 +250,8 @@
             "app-development/app-security/owasp",
             "app-development/app-security/central-authentication-system",
             "app-development/app-security/token-based-authentication",
-            "app-development/app-security/saml-integration"
+            "app-development/app-security/saml-integration",
+            "app-development/app-security/secure-connection-deployed-apps"
           ] 
         },     
         {
@@ -309,7 +310,8 @@
             "how-tos/wavemaker-application-deployment-tomcat",
             "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
             "how-tos/wavemaker-application-deployment-jboss",
-            "how-tos/wavemaker-application-deployment-weblogic-application-server" 
+            "how-tos/wavemaker-application-deployment-weblogic-application-server",
+            "how-tos/deployment-to-heroku"
           ]
         }
   ],
@@ -423,6 +425,7 @@
             "how-to-widgets",
             "how-tos/passing-parameters-pages",
             "how-tos/passing-parameters-partial-page",
+            "how-tos/script-access",
             "how-tos/use-static-variable-pass-data-pages",
             "how-tos/customise-login-page",           
             "how-tos/incorporating-additional-icons",
@@ -433,6 +436,7 @@
             "how-tos/changing-page-title",
             "how-tos/customise-app-style",
             "how-tos/use-conditional-class-property",
+            "how-tos/use-conditional-style-property",
             "how-tos/customize-existing-theme",
             "how-tos/adjust-leftnav-width",
             "how-tos/customizing-theme",
@@ -469,6 +473,7 @@
           [
             "how-tos/using-app-environment-properties",
             "how-tos/using-post-method-send-data-rest-api",
+            "how-tos/request-response-processing-rest-services",
             "how-tos/intercept-requests-responses-api-calls-one-place"
           ],
 
@@ -548,6 +553,7 @@
             "how-tos/export-data-data-table",
             "how-tos/dynamic-data-tables",
             "how-tos/data-table-column-bound-query",
+            "how-tos/combining-columns-data-table",
             "how-tos/data-table-styling",
             "how-tos/concurrency-record-locking-wavemaker"
           ],
@@ -622,6 +628,7 @@
           "Select":
           [
             "how-tos/configuring-select-widget-static-list-values",
+            "how-tos/configuring-select-widget-static-variable",
             "how-tos/configuring-select-widget-variable",
             "how-tos/configuring-select-widget-display-data-fields",
             "how-tos/configuring-select-widget-database-fields",
@@ -635,6 +642,7 @@
 
           "Charts":
           [
+            "how-tos/working-with-charts",
             "how-tos/charts-displaying-user-selection-another-widget",
             "how-tos/charts-handling-dynamic-data",
             "how-tos/charts-custom-data"
