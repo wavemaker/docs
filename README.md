@@ -9,6 +9,11 @@ To access the WaveMaker documentation, see [WaveMaker Docs](https://wavemaker.co
 1.	Node >= 8.x 
 2.	Git
 
+### Yarn (Optional)
+We highly recommend that you install Yarn, an alternative package manager that has superb performance for managing NPM dependencies.
+```
+    npm install -g yarn
+```
 ### Other things to have
 3.	GitHub account. [Sign up](https://github.com/join?), if you do not have an account with GitHub. 
 4.	See [Markdown cheat sheet](https://guides.github.com/features/mastering-markdown/) to get familiar with the editor. 
@@ -24,7 +29,7 @@ To access the WaveMaker documentation, see [WaveMaker Docs](https://wavemaker.co
 
 3.	Clone the `wavemaker/docs` repo. For more information, see [Cloning a repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-4.	Open Git/GitBash  
+4.	Open Git/GitBash
 
     a.	Go to copied location by using the following command:
 
@@ -36,11 +41,11 @@ To access the WaveMaker documentation, see [WaveMaker Docs](https://wavemaker.co
     ```
     b.	Install the package to your local machine
     ```
-    npm install
+    yarn install
     ```
     c.	Run the site using the following command. 
     ```
-    npm start
+    yarn run start
     ```
     The **step-c** launches the website on the local machine automatically with the following url:
 

@@ -4,10 +4,10 @@ frontend:
    preBuild:
       commands:
         - cd website
-        - npm install
+        - yarn install
    build:
      commands:
-        - npm run build
+        - yarn run build
   customHeaders:
     - pattern: '**/*.js'
       headers:
@@ -35,11 +35,11 @@ test:
     preTest:
       commands:
         - cd website
-        - npm install
-        - 'npm run cypress:prepare-prod'
+        - yarn install
+        - 'yarn run cypress:prepare-prod'
     test:
       commands:
-        - 'npm run cypress:prod'
+        - 'yarn run cypress:prod'
     postTest:
       commands:
-        - 'npm run cypress:prep-report'
+        - 'yarn run cypress:prep-report'
