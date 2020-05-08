@@ -408,7 +408,8 @@
   {
         "How-to-documents": 
           [
-            "howtos-documents"                                                                        
+            "howtos-documents",
+            "app-development/wavemaker-overview/wavemaker-best-practices"                                                                     
           ],
           
           "App solution":
@@ -506,7 +507,8 @@
           [
             "how-tos/using-javascript-binding",
             "how-tos/using-javascript-external-url",
-            "how-tos/using-javascript-loop-command"
+            "how-tos/using-javascript-loop-command",
+            "how-tos/using-function-evaluating-conditions"
           ],
 
           "Developer options":
