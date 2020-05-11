@@ -5,9 +5,16 @@ sidebar_label: "Add Developer Capacity"
 ---
 ---
 
-### Add Capacity To Developer Workspace
+Once you have LaunchedInstnces, Initialized, Set up and configured the WME, it is time for the developers to log in and build apps. For this, you need to add developer and deployment infrastructure capacity by adding instances.
 
-- Select developer workspace section and select add capacity option to add Instance to capacity.
+Every User is allocated with one container. The infrstructure adding here will be used for this allocation.
+
+ <br/><br/>
+   [![](/learn/assets/wme-setup/configuring-wme/WME_instance.png)](/learn/assets/wme-setup/configuring-wme/WME_instance.png)
+
+### Add Capacity to Developer Workspace
+
+- Select Developer Workspace section and select Add Capacity option to add Instance to capacity.
 - Provide Instance details and authentication details to connect to the Instance,if you want you can test the connection and details of Instance by selecting the test option.
    <br/><br/>
    [![](/learn/assets/wme-setup/configuring-wme/workspace-capacity.jpg)](/learn/assets/wme-setup/configuring-wme/workspace-capacity.jpg)
