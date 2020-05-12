@@ -9,7 +9,7 @@ Find instructions to setup, upgrade and manage WaveMaker Enterprise.
 ---
 Before proceeding with the set-up, see what constitutes WaveMaker Enterprise (WME). 
 
-### Overview of WaveMaker Enterprise Components
+## Overview of WaveMaker Enterprise Components
 
 #### 1. Config Portal 
 
@@ -28,7 +28,7 @@ A modern low-code platform for collaborative development of multi-device apps.
 Consist of Containerized Cloud for User workspace and App Deployments isolation. Managed by Platform .
 
 
-### Overview of WaveMaker Enterprise Architecture
+## Overview of WaveMaker Enterprise Architecture
 
 #### 1. Platform 
 
@@ -51,7 +51,7 @@ Internally WME utilizes Docker containers to segregate and isolate the platform 
 [![](/learn/assets/wme-setup/platform-architecture.png)](/learn/assets/wme-setup/platform-architecture.png)
 
 
-### Release Policy
+## Release Policy
 
 WaveMaker releases its enterprise version once stabilized on WaveMaker Online Platform. 
 
