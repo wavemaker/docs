@@ -386,7 +386,11 @@
 
 "Enterprise":
 {
-  "Overview": ["on-premise/wme-overview"],
+  "Overview": 
+  [
+     "on-premise/wme-overview",
+     "on-premise/wme-architecture"
+  ],
   "Prerequisites": ["on-premise/wme-prerequisites"],
   "Preparing Infrastructure":
   [
