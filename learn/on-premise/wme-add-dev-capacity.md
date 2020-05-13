@@ -9,14 +9,13 @@ Once you have LaunchedInstnces, Initialized, Set up and configured the WME, it i
 
 Every User is allocated with one container. The infrstructure adding here will be used for this allocation.
 
- <br/><br/>
-   [![](/learn/assets/wme-setup/configuring-wme/WME_instance.png)](/learn/assets/wme-setup/configuring-wme/WME_instance.png)
+[![](/learn/assets/wme-setup/configuring-wme/WME_instance.png)](/learn/assets/wme-setup/configuring-wme/WME_instance.png)
 
-### Add Capacity to Developer Workspace
+## Add Capacity to Developer Workspace
 
 - Select Developer Workspace section and select Add Capacity option to add Instance to capacity.
 - Provide Instance details and authentication details to connect to the Instance,if you want you can test the connection and details of Instance by selecting the test option.
-   <br/><br/>
-   [![](/learn/assets/wme-setup/configuring-wme/workspace-capacity.jpg)](/learn/assets/wme-setup/configuring-wme/workspace-capacity.jpg)
+
+[![](/learn/assets/wme-setup/configuring-wme/workspace-capacity.jpg)](/learn/assets/wme-setup/configuring-wme/workspace-capacity.jpg)
 
 - Wait for few moments for configure and get started.

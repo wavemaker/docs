@@ -390,7 +390,8 @@
   "Prerequisites": ["on-premise/wme-prerequisites"],
   "Preparing Infrastructure":
   [
-    "on-premise/wme-preparing-infrastructure", 
+    "on-premise/wme-preparing-infrastructure",
+    "on-premise/wme-install-prerequisites",
     {
       "type": "subcategory",
       "label": "Launch Instances",
@@ -404,10 +405,9 @@
               "on-premise/wme-launching-instances-in-azure",
               "on-premise/wme-launching-instances-in-azure-vhd"
             ]
-    },
-    "on-premise/wme-install-prerequisites"
+    }
   ], 
-  "Setting Up WME":
+  "Setup":
   [
     "on-premise/wme-download-copy-installer",
     "on-premise/wme-extract-package",
@@ -415,7 +415,7 @@
     "on-premise/wme-setup-using-cw",
     "on-premise/wme-apply-license"
   ],
-  "Configuring WME":
+  "Configure":
   [
     "on-premise/wme-config-users-auth-providers",
     "on-premise/wme-config-vcs",
@@ -423,7 +423,7 @@
     "on-premise/wme-add-apps-capacity",
     "on-premise/wme-config-pipeline"
   ],
-  "Upgrading WME":
+  "Update":
   [
     "on-premise/wme-upgrade-setup",
     "on-premise/wme-download-copy-patch",
