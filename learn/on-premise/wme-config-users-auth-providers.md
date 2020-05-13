@@ -28,7 +28,7 @@ Following are the steps to add Users to the network by the SuperAdmin from WaveM
 - Create a user by providing basic details like name ,email and password and select the prefer role for a user.
 - Roles 
 - Super Admin - Access to Launchpad, Enterprise Network, Studio.
-- EnterepriseAdmin - Acces to Enterprise Network and Studio.
+- Enterprise Admin - Access to Enterprise Network and Studio.
 - Studio User - Access to Studio. All Developers will come under this.
 
 [![](/learn/assets/wme-setup/configuring-wme/user-creation.png)](/learn/assets/wme-setup/configuring-wme/user-creation.png)

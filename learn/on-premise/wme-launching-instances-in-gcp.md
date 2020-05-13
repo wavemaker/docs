@@ -16,9 +16,9 @@ Applies for Workspace Instance/App Deployment Instance
 
 - For creating firewall rules and more details visit [firewall rules in GCP](https://cloud.google.com/vpc/docs/using-firewalls)
 - For WME setup in GCP require 3 firewall rules ,are
-  - wme-sg-platform-public
-  - wme-sg-platform-internal 
-  - wme-sg-workspace-internal 
+  - [wme-sg-platform-public](#create-firewall-rules-for-public-access-to-the-platform-instance)
+  - [wme-sg-platform-internal](#create-a-firewall-rule-for-platform-instance)
+  - [wme-sg-workspace-internal](#create-firewall-rule-for-external-instance)
 
 ### Create firewall rules for public access to the Platform Instance
 
@@ -26,7 +26,7 @@ Applies for Workspace Instance/App Deployment Instance
 
 [![](/learn/assets/wme-setup/wme-setup-in-gcp/platform-public-firewall-name-and-network.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-public-firewall-name-and-network.png)
 
-- Select target type and source filter type.by using the target we can connect the firewall rule to Instance. example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the rules will be open to that Instance. we provide this tags at network section during the Instance creation.
+- Select target type and source filter type.by using the target we can connect the firewall rule to Instance. example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the ports will be open to that Instance. we provide this tags at network section during the Instance creation.or else you can select your own Target and Source methods.
 
 [![](/learn/assets/wme-setup/wme-setup-in-gcp/platform-public-firewall-targets-and-ports.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-public-firewall-targets-and-ports.png)
 
@@ -38,7 +38,7 @@ Applies for access from the External Instance (Workspace Instance/App Deployment
 
 [![](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-name-and-network.png)](/learn/assets/wme-setup/platform-internal-firewall-name-and-network.png)
 
-- Select target type and source filter type.by using the target we can connect the firewall rule to Instance.  example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the rules will be open to that Instance. we provide this tags at network section during the Instance creation.
+- Select target type and source filter type.by using the target we can connect the firewall rule to Instance.  example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the ports will be open to that Instance. we provide this tags at network section during the Instance creation.or else you can select your own Target and Source methods.
 
 [![](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-target-and-ports.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-target-and-ports.png)
 
@@ -50,7 +50,7 @@ Applies for access from the Platform Instance (Workspace Instance/App Deployment
 
 [![](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-firewall-name-and-network.png)](/learn/assets/wme-setup/external-instance-firewall-name-and-network.png)
 
-- Select target type and source filter type. by using the target we can connect the firewall rule to Instance. example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the rules will be open to that Instance.we provide this tags at network section during the Instance creation.
+- Select target type and source filter type. by using the target we can connect the firewall rule to Instance. example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the ports will be open to that Instance.we provide this tags at network section during the Instance creation.or else you can select your own Target and Source methods.
 
 [![](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-firewall-target-and-ports.png)](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-firewall-target-and-ports.png)
 

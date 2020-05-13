@@ -8,10 +8,13 @@ sidebar_label: "Launch Instances in Esxi using OVA"
 ## Prerequisites
 
 - Platform OVA file shared by WaveMaker team.
-- External Instance OVA file shared by WaveMaker team. 
+- External Instance(StudioWorkspace Instance / AppDeployment Instance) OVA file shared by WaveMaker team. 
 - VMware ESXi version 6.5 or higher.
 - Permission for launching OVA.
-Note: This guide has written based on Esxi version 6.5.
+
+:::note
+This guide has written based on Esxi version 6.5.
+::: 
 
 ## Launch Platform Instance
  

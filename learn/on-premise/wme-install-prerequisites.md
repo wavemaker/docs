@@ -25,7 +25,7 @@ For other cases, install below as per operating system.
 
 ### Ubuntu 
 
-- Install  wget, python3
+- Install  wget
 
 ```
 sudo apt-get install wget  -y
@@ -39,7 +39,7 @@ sudo apt-get install python3 -y
 
 ### RHEL
 
-- Install  wget, container-selinux, python3, docker 18.06.2-ce
+- Install  wget
 
 ```
 sudo yum install wget  -y

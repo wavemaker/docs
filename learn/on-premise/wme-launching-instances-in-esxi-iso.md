@@ -8,7 +8,7 @@ sidebar_label: "Launch Instances in Esxi using ISO"
 ## Prerequisite
 
 - Ubuntu ISO file from internet. 
-- Link for download the Ubuntu 16.04.6 ISO image
+- Link for download the image of 
 [ubuntu 16.04.6 iso image](http://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-amd64.iso).
 - VMware ESXi version 6.5 or higher.
 - Permission for launching machines in Esxi.

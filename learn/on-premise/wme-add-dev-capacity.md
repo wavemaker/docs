@@ -5,9 +5,9 @@ sidebar_label: "Add Developer Capacity"
 ---
 ---
 
-Once you have LaunchedInstnces, Initialized, Set up and configured the WME, it is time for the developers to log in and build apps. For this, you need to add developer and deployment infrastructure capacity by adding instances.
+Once you have Launched Instances, Initialized, Set up and configured the WME, it is time for the developers to log in and build apps. For this, you need to add developer and deployment infrastructure capacity by adding instances.
 
-Every User is allocated with one container. The infrstructure adding here will be used for this allocation.
+Every User is allocated with one container. The infrastructure adding here will be used for this allocation.
 
 [![](/learn/assets/wme-setup/configuring-wme/WME_instance.png)](/learn/assets/wme-setup/configuring-wme/WME_instance.png)
 

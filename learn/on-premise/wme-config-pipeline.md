@@ -22,5 +22,5 @@ You need to add cloud instances else configuration of the phases for any project
 [![](/learn/assets/wme-setup/configuring-wme/pipeline-configuration.png)](/learn/assets/wme-setup/configuring-wme/pipeline-configuration.png)
 
 - Provide respective details to configure and save the details.
-- Go to Deployment Capacitym, then select Phase.
+- Go to Deployment Capacity, then select Phase.
 - Add Capacity for each Phase.

@@ -7,7 +7,7 @@ sidebar_label: "Prerequisites"
 
 You can setup WaveMaker Enterprise on any machine.
 
-This document uses words like _**VM**_, _**Instance**_ to refer a machine.
+This document uses words like **VM**, **Instance** to refer a machine.
 
 The machine can be hosted on any cloud provider(like AWS EC2, GCP, Azure .etc) or enterprise cloud or baremetal. All machine allocated to WME  platform should not have any other running process.
 
@@ -26,7 +26,7 @@ WaveMaker Enterprise can be installed on any machine with below requirements. B
 
 ### WME External Instance (StudioWorkspace Instance / AppDeployment Instance)
 
-<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li><li>Intel Virtualization Technology (VT-x) enabled</li><li>Hyperthreading (HT) disabled</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;200 GB to be allocated</li><li>In case of volumes we recommend 3 disks<ul><li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 GB</li><li>/data&nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 16.04.6 LTS; RHEL 7.x, 8.x; CentOS 8.x</li><li>Kernel 4.4 or 4.15</li></ul></td></tr>
+<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li><li>Intel Virtualization Technology (VT-x) enabled</li><li>Hyperthreading (HT) disabled</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;200 GB to be allocated</li><li>In case of volumes we recommend 3 disks<ul><li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 GB</li><li>/data&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 16.04.6 LTS; RHEL 7.x, 8.x; CentOS 8.x</li><li>Kernel 4.4 or 4.15</li></ul></td></tr>
 <tr><td><strong>Software</strong></td><td><ul><li>docker 18.06.2-ce</li><li>python 3.5 or higher</li><li>wget</li><li>container-selinux-2.9-4.el7.noarch.rpm(only for RHEL)</li></ul></td></tr><tr><td><strong>Network</strong></td><td><ul><li>Static IP</li><li>Ports to be Opened on External Instance for Access from Platform Instance <ul><li>Ports: 22, 2375, 80, 5000, 9101, 9102, 9100, 9404,2200-2299, 8001-8099, 3300-3399, 9500-9599</li></ul></td></tr></tbody></table>
 
 ### Network Communication

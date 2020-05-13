@@ -18,8 +18,8 @@ sidebar_label: "Launch Instances in AzureCloud using VHD"
 
 - For creating network security groups refer [creating NSG in Azure](https://docs.microsoft.com/en-us/azure/virtual-network/manage-network-security-group).
 - For WME setup in Azure require two security groups,are
-  - WME-SG-Platform-Public-and-Internal
-  - WME-SG-Workspace-Internal
+  - [WME-SG-Platform-Public-and-Internal](#creating-network-security-group-for-platform-virtual-machine)
+  - [WME-SG-Workspace-Internal](#creation-of-network-security-group-for-external-virtual-machine)
    
 ### Creating Network Security Group for Platform Virtual Machine
 
@@ -108,11 +108,13 @@ azcopy copy "C:\filename.vhd" "https://account.blob.core.windows.net/mycontainer
 
 [![](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-basic.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-basic.png)
 
-- add storage 50 GiB for wm-runtime and 150 GiB for wm-data and if required add 50 GiB for /usr/local/content.
+- For Platform Virtual Machine add root 50 GiB, storage 50 GiB, for wm-runtime and 150 GiB for wm-data and if required add 50 GiB for /usr/local/content(/usr/local/content is optional not mandatory).
+- For External Virtual Machine add root 50 GiB, storage 150 GiB for data.
 
 [![](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-disks.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-disks.png)
 
-- select create VM option at the left top. create VM providing required details disks and networking.
+- Select create VM option at the left top. create VM providing required details disks and networking.
+- At Configure network security group select WME-SG-Platform-Public-and-Internal for Platform Virtual Machine and select WME-SG-Workspace-Internal for External Virtual Machine(Workspace Virtual Machine / AppDeployment Virtual Machine).
 
 [![](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-networking.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-networking.png)
 
@@ -185,7 +187,7 @@ UUID=<block-device_1-UUID>       /wm-runtime     ext4     defaults ,nofail  0  2
 
 [![](/learn/assets/wme-setup/wme-setup-in-azure/vm-fstab.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-fstab.png)
 
-- #### Mounting Disks in External virtual Machine(Workspace Virtual Machine / AppDeployment Virtual Machine)
+### Mounting Disks in External virtual Machine(Workspace Virtual Machine / AppDeployment Virtual Machine)
 - For ssh into the platform Virtual Machine use the following command.
 - If you using the ssh key method for login use the following command.
 

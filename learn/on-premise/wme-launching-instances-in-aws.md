@@ -17,9 +17,9 @@ sidebar_label: "Launch Instances in AWS EC2"
 - Creating security group user need vpc ,if don't have a vpc ,for creating vpc refer [AWS documentation for creating vpc](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html).
 - Creating the security groups refer [AWS documentation for creating security groups](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html).
 - For WME setup require 3 security groups in AWS EC2. Those are,
-  - WME-SG-Platform-Public  
-  - WME-SG-Platform-Internal
-  - WME-SG-Workspace-Internal
+  - [WME-SG-Platform-Public](#creation-of-wme-sg-platform-public-security-group)  
+  - [WME-SG-Platform-Internal](#creating-wme-sg-platform-internal-security-group)
+  - [WME-SG-Workspace-Internal](#creating-wme-sg-workspace-internal-security-group)
 - Open the Amazon VPC console [vpc console amazon](https://console.aws.amazon.com/vpc/.) (or) under Networking & Content Delivery select Networking & Content Delivery select VPC.
 - In the navigation pane, choose Security Groups, choose Create Security Group.
 
@@ -63,9 +63,11 @@ sidebar_label: "Launch Instances in AWS EC2"
 - Choose 16 GiB memory instance type from desired family and type.
 
 [![](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)
+
 - Choose Next: Configure Instance Details,For Network, choose the same VPC that you created security groups,For Subnet, choose a desired subnet in any Availability Zone.
 
 [![](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/configuration-of-instance.jpg) 
+
 - Add storage 50 GiB for root volume, 50 GiB for wm-runtime and 150 GiB for wm-data.
 
 [![](/learn/assets/wme-setup/wme-setup-in-aws/platform-instance-storage.png)](/learn/assets/wme-setup/platform-instance-storage.png)  
@@ -102,6 +104,7 @@ sidebar_label: "Launch Instances in AWS EC2"
 - Next if you want to add any tags add tags to instance.
 
 [![](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)](/learn/assets/wme-setup/addig-tags.png)  
+
 - Next Configure Security Group select existing security group and select WME-SG-Workspace-Internal security group.
 
 [![](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)](/learn/assets/wme-setup/security-group-configurations.png) 

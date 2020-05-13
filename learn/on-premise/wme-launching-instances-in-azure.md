@@ -15,8 +15,8 @@ sidebar_label: "Launch Instances in Azure Cloud"
 
 - For creating network security groups refer [creating NSG in Azure](https://docs.microsoft.com/en-us/azure/virtual-network/manage-network-security-group).
 - For WME setup in Azure require two security groups,are
-  - WME-SG-Platform-Public-and-Internal
-  - WME-SG-Workspace-Internal
+  - [WME-SG-Platform-Public-and-Internal](#creating-network-security-group-for-platform-virtual-machine)
+  - [WME-SG-Workspace-Internal](#creation-of-network-security-group-for-external-or-workspaceappdeployment-virtual-machine)
 
 ### Creating network security group for platform virtual machine
 
