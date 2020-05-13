@@ -4,22 +4,29 @@
     "Getting started": 
       [
         "documentation-reference",                
-        "app-development/wavemaker-overview/product-walkthrough"                    
+        "app-development/wavemaker-overview/product-walkthrough"                  
       ],
 
-    "App design": 
+    "Pages": 
       [     
-            "app-development/ui-design/designing-app",            
-            "app-development/ui-design/page-creation",
-            "app-development/ui-design/design-overview",            
-            "app-development/widgets/ui-elements",                       
-            
+            "app-development/ui-design/designing-app",
+            "app-development/ui-design/page-creation",                   
+        {
+          "type": "subcategory",
+          "label": "Styles",
+          "ids": 
+            [     
+              "app-development/ui-design/page-concepts/page-layouts",         
+              "app-development/ui-design/themes",
+              "app-development/ui-design/page-concepts/page-templates"
+            ]
+        },           
+
         {
           "type": "subcategory",
           "label": "Page Configure",
           "ids": 
             [
-            "app-development/ui-design/page-concepts/page-layouts",
             "app-development/ui-design/page-artefacts",
             "app-development/ui-design/page-concepts/partial-pages",
             "app-development/ui-design/page-concepts/page-parameters",
@@ -31,22 +38,27 @@
 
         {
           "type": "subcategory",
-          "label": "Apply Styles",
+          "label": "Page Actions",
           "ids": 
             [
-              "app-development/ui-design/themes",
-              "app-development/ui-design/page-concepts/page-templates"
+            "app-development/ui-design/page-concepts/page-navigation",
+            "app-development/ui-design/page-concepts/page-events"     
+            ]       
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Develop Themes",
+          "ids": 
+            [
+              "app-development/ui-design/creating-themes",
+              "app-development/ui-design/page-concepts/creating-template-bundles"
             ]
-        }      
-      ],
+        }               
 
-      "Backend":
-      [          
-        "app-development/services/creating-backend-services",         
-        "app-development/services/api-designer/api" 
-      ],         
+      ],      
 
-      "  Data services": 
+   "Databases": 
       [
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
@@ -100,35 +112,63 @@
         
       ],  
 
-      "  Web services": 
+      "REST & SOAP": 
       [   
-            "app-development/services/web-services/web-services",            
+          "app-development/services/web-services/web-services",                                     
         {
           "type": "subcategory",
-          "label": "Services",
+          "label": "Restful",
           "ids": 
           [
             "app-development/services/web-services/rest-services",
             "app-development/app-security/securing-server-side-properties-rest-services",
-            "app-development/services/web-services/oauth-2-0-rest-services",
-            "app-development/services/web-services/working-with-soap-services",              
-            "app-development/services/web-services/working-with-websockets"                 
+            "app-development/services/web-services/oauth-2-0-rest-services"                 
           ]       
         },
+
         {
           "type": "subcategory",
-          "label": "Web Service Variables & API",
+          "label": "SOAP",
+          "ids": 
+          [
+            "app-development/services/web-services/working-with-soap-services",
+            "app-development/services/api-designer/web-service-apis"                         
+          ]      
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Websocket",
+          "ids": 
+          [            
+            "app-development/services/web-services/working-with-websockets"                 
+          ]      
+        },
+
+        {
+          "type": "subcategory",
+          "label": "APIs",
+          "ids": 
+          [
+            "app-development/services/api-designer/api",
+            "app-development/services/api-designer/import-rest-apis-swagger"  
+          ]       
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Variables",
           "ids": 
             [ 
             "app-development/variables/web-service",
-            "app-development/services/api-designer/web-service-apis"         
+            "app-development/variables/crud-variable"
             ]
         }  
 
       ],
 
 
-      "  Java services": 
+      "Java Services": 
       [   
           "app-development/services/java-services/java-service",     
           {
@@ -151,55 +191,25 @@
 
           {
             "type": "subcategory",
-            "label": "Manifest files",
-            "ids": ["app-development/services/3rd-party-libraries",
+            "label": "Source Files",
+            "ids": [
+              "app-development/services/3rd-party-libraries",
               "app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
               "app-development/services/3rd-party-libraries/using-3rd-party-jar-files"]           
           } 
       ],
-
-      "  Security services": 
-      [
-        {
-          "type": "subcategory",
-          "label": "App Security",
-          "ids": [
-            "app-development/app-security/app-security",
-            "app-development/app-security/authentication",        
-            "app-development/app-security/authorization",
-            "app-development/app-security/access-levels-permissions",
-            "app-development/app-security/login-configuration",
-            "app-development/app-security/ssl-encryption",
-            "app-development/app-security/xss-antisamy-policy-configuration",
-            "app-development/app-security/owasp",
-            "app-development/app-security/central-authentication-system",
-            "app-development/app-security/token-based-authentication",
-            "app-development/app-security/saml-integration"
-          ] 
-        },     
-        {
-          "type": "subcategory",
-          "label": "Security Variable and API",
-          "ids": [
-          "app-development/app-security/security-variables",
-          "app-development/app-security/remember-me",
-          "app-development/variables/security-service",
-          "app-development/services/api-designer/security-service-apis"]
-        }
-      ],
     
-      "Service integration":
-      [       
-            "app-development/variables/data-integration",              
+      "Variables & Actions":
+      [                             
         {
           "type": "subcategory",
           "label": "Variables",
-          "ids": [   
-            "app-development/variables/variables",                                          
-            "app-development/variables/model-variable",
-            "hybrid-mobile/device-variables",
-            "app-development/variables/variable-binding"
-          ]           
+          "ids": [
+          "app-development/variables/variables",                                          
+          "app-development/variables/model-variable",
+          "hybrid-mobile/device-variables",
+          "app-development/variables/variable-binding"
+          ]
         },                
          
         {
@@ -224,6 +234,39 @@
         }             
       ],  
 
+      "Security": 
+      [
+        {
+          "type": "subcategory",
+          "label": "App Security",
+          "ids": [
+            "app-development/app-security/app-security",
+            "app-development/app-security/authentication",        
+            "app-development/app-security/authorization",
+            "app-development/app-security/access-levels-permissions",
+            "app-development/app-security/login-configuration",
+            "app-development/app-security/ssl-encryption",
+            "app-development/app-security/xss-antisamy-policy-configuration",
+            "app-development/app-security/owasp",
+            "app-development/app-security/central-authentication-system",
+            "app-development/app-security/token-based-authentication",
+            "app-development/app-security/saml-integration",
+            "app-development/app-security/secure-connection-deployed-apps"
+          ]
+        },     
+        {
+          "type": "subcategory",
+          "label": "Security Variable and API",
+          "ids": 
+          [
+          "app-development/app-security/security-variables",
+          "app-development/app-security/remember-me",
+          "app-development/variables/security-service",
+          "app-development/services/api-designer/security-service-apis"        
+          ]
+        }
+     ],
+
     "Developer options": 
     [
         "app-development/dev-integration/developer-tools",
@@ -231,54 +274,49 @@
         "app-development/dev-integration/import-export-update-apps",
         "app-development/ui-design/project-shells",
         "app-development/wavemaker-overview/localization",
-    {
-      "type": "subcategory",
-      "label": "Developer Integration",
-      "ids": [ 
-        "app-development/wavemaker-overview/project-user-management",       
-        "app-development/dev-integration/developer-collaboration",
-        "app-development/dev-integration/debugging",
-        "app-development/dev-integration/extending-application-using-ides"
-      ]
-    },
+        "app-development/wavemaker-overview/artifacts-repository",
+        {
+          "type": "subcategory",
+          "label": "Developer Integration",
+          "ids": [ 
+            "app-development/wavemaker-overview/project-user-management",       
+            "app-development/dev-integration/developer-collaboration",
+            "app-development/dev-integration/debugging",
+            "app-development/dev-integration/extending-application-using-ides"
+          ]
+        },
 
-    {
-      "type": "subcategory",
-      "label": "Deployment",
-      "ids": [
-        "app-development/deployment/release-management", 
-        "app-development/deployment/configuration-profiles", 
-        "app-development/build-options-app-deployment",    
-        "app-development/deployment/one-click-deployment",                
-        "app-development/deployment/manage-deployed-apps"                          
-      ]
-    },
-    {
-        "type": "subcategory",
-        "label": "Configuring Web Server",
-        "ids": [  
-        "app-development/deployment/deployment-web-server",
-        "app-development/deployment/building-war-wavemaker-project",
-        "app-development/deployment/deployment-to-aws",
-        "app-development/deployment/deployment-to-azure",
-        "app-development/deployment/deployment-google-cloud",
-        "how-tos/wavemaker-application-deployment-tomcat",
-        "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
-        "how-tos/wavemaker-application-deployment-jboss",
-        "how-tos/wavemaker-application-deployment-weblogic-application-server" ]
-    }
+        {
+          "type": "subcategory",
+          "label": "Deployment",
+          "ids": [
+            "app-development/deployment/release-management", 
+            "app-development/deployment/configuration-profiles", 
+            "app-development/build-options-app-deployment",    
+            "app-development/deployment/one-click-deployment",                
+            "app-development/deployment/manage-deployed-apps"                          
+          ]
+        },
+        {
+            "type": "subcategory",
+            "label": "Configuring Web Server",
+            "ids": [  
+            "app-development/deployment/deployment-web-server",
+            "app-development/deployment/building-war-wavemaker-project",
+            "app-development/deployment/deployment-to-aws",
+            "app-development/deployment/deployment-to-azure",
+            "app-development/deployment/deployment-google-cloud",
+            "app-development/deployment/deployment-to-digital-ocean",
+            "how-tos/wavemaker-application-deployment-tomcat",
+            "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
+            "how-tos/wavemaker-application-deployment-jboss",
+            "how-tos/wavemaker-application-deployment-weblogic-application-server",
+            "how-tos/deployment-to-heroku"
+          ]
+        }
   ],
 
-  "Develop extensions":
-    [      
-      "app-development/custom-widgets/creating-prefabs",
-      "app-development/widgets/use-cases-prefabs",
-      "app-development/ui-design/creating-themes",
-      "app-development/ui-design/page-concepts/creating-template-bundles",
-      "app-development/wavemaker-overview/artifacts-repository"
-    ],
-
-    "Mobile app": 
+  "Mobile development":
     [
         "hybrid-mobile/building-hybrid-mobile-apps",        
         "hybrid-mobile/native-device-support",   
@@ -420,7 +458,8 @@
   {
         "How-to-documents": 
           [
-            "howtos-documents"                                                                        
+            "howtos-documents",
+            "app-development/wavemaker-overview/wavemaker-best-practices"                                                                     
           ],
           
           "App solution":
@@ -437,6 +476,7 @@
             "how-to-widgets",
             "how-tos/passing-parameters-pages",
             "how-tos/passing-parameters-partial-page",
+            "how-tos/script-access",
             "how-tos/use-static-variable-pass-data-pages",
             "how-tos/customise-login-page",           
             "how-tos/incorporating-additional-icons",
@@ -447,8 +487,11 @@
             "how-tos/changing-page-title",
             "how-tos/customise-app-style",
             "how-tos/use-conditional-class-property",
+            "how-tos/use-conditional-style-property",
             "how-tos/customize-existing-theme",
-            "how-tos/customizing-theme"
+            "how-tos/adjust-leftnav-width",
+            "how-tos/customizing-theme",
+            "how-tos/custom-widget-template"
           ],
 
           "Localization":
@@ -481,6 +524,7 @@
           [
             "how-tos/using-app-environment-properties",
             "how-tos/using-post-method-send-data-rest-api",
+            "how-tos/request-response-processing-rest-services",
             "how-tos/intercept-requests-responses-api-calls-one-place"
           ],
 
@@ -490,9 +534,10 @@
             "how-tos/implementing-forgot-password-feature-using-java-service",
             "how-tos/accessing-rest-apis-java-service",
             "how-tos/scheduling-java-service",
-            "app-development/services/database-services/orm-artifacts/#custom-query-syntax",
+            "app-development/services/database-services/orm-artifacts",
             "how-tos/pre-post-processing-db-service-apis",
-	          "how-tos/camunda-wavemaker-app-integration"
+            "how-tos/accessing-loggedin-user-information-using-a-java-service",
+	         "how-tos/camunda-wavemaker-app-integration"
 
           ],
 
@@ -512,10 +557,11 @@
           [
             "how-tos/using-javascript-binding",
             "how-tos/using-javascript-external-url",
-            "how-tos/using-javascript-loop-command"
+            "how-tos/using-javascript-loop-command",
+            "how-tos/using-function-evaluating-conditions"
           ],
 
-          "Developer-side":
+          "Developer options":
           [
             "how-tos/synchronizing-wavemaker-apps-ides-beta",
             "how-tos/synchronizing-java-services-controller",
@@ -523,7 +569,8 @@
             "how-tos/integrating-sample-jasper-report-wavemaker-application",
             "how-tos/generate-pdf-file-using-jasper-reports",
             "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
-            "how-tos/app-migration-wavemaker-9x-10x"
+            "how-tos/app-migration-wavemaker-9x-10x",
+            "how-tos/debug-monitor-performance-issues-using-fusion-reactor"
           ],
 
           "Mobile gesture":
@@ -558,6 +605,7 @@
             "how-tos/export-data-data-table",
             "how-tos/dynamic-data-tables",
             "how-tos/data-table-column-bound-query",
+            "how-tos/combining-columns-data-table",
             "how-tos/data-table-styling",
             "how-tos/concurrency-record-locking-wavemaker"
           ],
@@ -589,7 +637,9 @@
             "how-tos/using-cascading-filter-populate-live-form",
             "how-tos/using-wizard-master-detail-live-form",
             "how-tos/using-wizard-progressive-data-entry-live-form",
-            "how-tos/using-wizard-cumulative-data-entry-live-form"
+            "how-tos/using-wizard-cumulative-data-entry-live-form",
+            "how-tos/using-wizard-progressive-data-entry-live-form",
+            "how-tos/copy-to-clipboard"
           ],
 
           "Calendar":
@@ -630,6 +680,7 @@
           "Select":
           [
             "how-tos/configuring-select-widget-static-list-values",
+            "how-tos/configuring-select-widget-static-variable",
             "how-tos/configuring-select-widget-variable",
             "how-tos/configuring-select-widget-display-data-fields",
             "how-tos/configuring-select-widget-database-fields",
@@ -643,6 +694,7 @@
 
           "Charts":
           [
+            "how-tos/working-with-charts",
             "how-tos/charts-displaying-user-selection-another-widget",
             "how-tos/charts-handling-dynamic-data",
             "how-tos/charts-custom-data"
@@ -690,12 +742,11 @@
   },
 
 
-
-
   "Widgets": 
   {
     "Widgets & Prefabs Library": [
       "app-development/widgets/widget-library",
+      "app-development/widgets/ui-elements",
       "app-development/custom-widgets/custom-widgets"  
     ],
     
@@ -716,8 +767,10 @@
       "app-development/widgets/datalive/datatable/data-table-basic-usage",
       "app-development/widgets/datalive/datatable/data-source",
       "app-development/widgets/datalive/datatable/layouts",
+      "app-development/widgets/datalive/datatable/styles",
       "app-development/widgets/datalive/datatable/table-configuration",
       "app-development/widgets/datalive/datatable/field-configuration",
+      "app-development/widgets/datalive/field-validator",
       "app-development/widgets/datalive/datatable/row-expansion-data-table",
       "app-development/widgets/datalive/datatable/actions",
       "app-development/widgets/datalive/datatable/datatable-events-methods",
@@ -742,7 +795,7 @@
       "app-development/widgets/datalive/form/form-layouts",
       "app-development/widgets/datalive/form/form-configurations",
       "app-development/widgets/datalive/form/form-fields-configuration",
-      "app-development/widgets/datalive/form/form-field-validator",
+      "app-development/widgets/datalive/field-validator",
       "app-development/widgets/datalive/form/form-events-methods"      
     ],
 
@@ -898,6 +951,7 @@
       "app-development/widgets/prefab/googlemaps",
       "app-development/widgets/prefab/qrcode", 
       "app-development/widgets/prefab/box-viewer-prefab",  
+      "app-development/widgets/prefab/docusign",
       {
         "type": "subcategory",
         "label": "OAuth",
@@ -910,9 +964,18 @@
       "app-development/widgets/prefab/oauth-prefabs/instagram",
       "app-development/widgets/prefab/oauth-prefabs/linkedin"
           ]
+      },
+
+      {
+       "type": "subcategory",
+       "label": "Develop Prefab",
+       "ids": 
+          [
+      "app-development/custom-widgets/creating-prefabs",
+      "app-development/widgets/use-cases-prefabs"
+          ]
       }
     ]
-
   },
 
   "Release Notes": 
@@ -920,6 +983,17 @@
     "Release Notes": 
       [
       "wavemaker-release-notes",
+      
+      {
+        "type": "subcategory",
+        "label": "Versions: 10.4.x",
+        "ids": 
+          [              
+            "wavemaker-release-notes/v10-4-2",
+            "wavemaker-release-notes/v10-4-1",
+            "wavemaker-release-notes/v10-4-0"
+          ]
+      },
       
       {
         "type": "subcategory",
@@ -1103,7 +1177,9 @@
           "ids": 
             [   
               "app-development/wavemaker-app-development-faqs/widgets-in-wavemaker",     
-              "app-development/wavemaker-app-development-faqs/building-widget-extension-custom-widget",              
+              "app-development/wavemaker-app-development-faqs/building-widget-extension-custom-widget",    
+              "app-development/services/creating-backend-services",
+              "app-development/variables/data-integration",   
               "app-development/wavemaker-app-development-faqs/database-in-wavemaker",
               "app-development/wavemaker-app-development-faqs/databases-supported-by-wavemaker-platform",
               "app-development/wavemaker-app-development-faqs/web-services",
@@ -1160,8 +1236,9 @@
     [
         "app-development/wavemaker-overview/platform-overview",                                              
         "app-development/ui-design/page-concepts",
-        "responsive-web/web-ui-design",        
+        "app-development/ui-design/design-overview",         
         "app-development/services/backend-architecture",
+        "app-development/variables/events-overview",
         "app-development/variables/integration-binding-layer"
     ]
 

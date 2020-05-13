@@ -19,10 +19,13 @@ WaveMaker is constantly working on bringing new features and improvements to the
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
+|[WaveMaker v10.4.2](/learn/wavemaker-release-notes/v10-4-2)|New features + Bug fixes | 07 May 2020 | -|-|
+|[WaveMaker v10.4.1](/learn/wavemaker-release-notes/v10-4-1)|Bug fixes | 29 April 2020 | -|-|
+|**[WaveMaker v10.4.0](/learn/wavemaker-release-notes/v10-4-0)**|**New features + Bug fixes** | **20 April 2020** | -|-|
 |[WaveMaker v10.3.3](/learn/wavemaker-release-notes/v10-3-3)|Bug fixes | 26 February 2020 | -|-|
 |[WaveMaker v10.3.2](/learn/wavemaker-release-notes/v10-3-2)|Bug fixes | 19 February 2020 | -|-|
-|[WaveMaker v10.3.1](/learn/wavemaker-release-notes/v10-3-1)|Improvement + Bug fixes | 12 February 2020 |v10.3.1, v10.3.0, v10.2.7, v10.2.6, v10.2.5, v10.2.4, v10.2.3, v10.2.2, v10.2.1 |14 February 2020|
-|[WaveMaker v10.3.0](/learn/wavemaker-release-notes/v10-3-0)|New features + bug fixes | 31 January 2020 | -|-|
+|[WaveMaker v10.3.1](/learn/wavemaker-release-notes/v10-3-1)|New features + Bug fixes | 12 February 2020 |v10.3.1, v10.3.0, v10.2.7, v10.2.6, v10.2.5, v10.2.4, v10.2.3, v10.2.2, v10.2.1 |14 February 2020|
+|**[WaveMaker v10.3.0](/learn/wavemaker-release-notes/v10-3-0)**|**New features + bug fixes** | **31 January 2020** | -|-|
 |WaveMaker v10.2.8|Bug fixes | 08 January 2020 | -|-|
 |[WaveMaker v10.2.7](/learn/wavemaker-release-notes/v10-2-7)|Bug fixes | 31 December 2019 | -|-|
 |[WaveMaker v10.2.6](/learn/wavemaker-release-notes/v10-2-6)|Bug fixes | 18 December 2019 | -|-|
@@ -31,15 +34,15 @@ WaveMaker is constantly working on bringing new features and improvements to the
 |[WaveMaker v10.2.3](/learn/wavemaker-release-notes/v10-2-3)|Bug fixes | 27 November 2019 | -|-|
 |[WaveMaker v10.2.2](/learn/wavemaker-release-notes/v10-2-2)|Bug fixes | 20 November 2019 | -|-|
 |[WaveMaker v10.2.1](/learn/wavemaker-release-notes/v10-2-1)|Bug fixes | 13 November 2019 | -|-|
-|[WaveMaker v10.2.0](/learn/wavemaker-release-notes/v10-2-0)|New features + bug fixes| 24 October 2019 |v10.2.0|11 November 2019|
-|[WaveMaker v10.1.2]() |Bug fixes |16 September 2019 |v10.1.2, <br> v10.1.1 | 25 October 2019| 
+|**[WaveMaker v10.2.0](/learn/wavemaker-release-notes/v10-2-0)**|**New features + bug fixes**| **24 October 2019** |**v10.2.0**|**11 November 2019**|
+|WaveMaker v10.1.2 |Bug fixes |16 September 2019 |v10.1.2, <br> v10.1.1 | 25 October 2019| 
 |[WaveMaker v10.1.0](/learn/wavemaker-release-notes/v10-1-0)|New features + bug fixes |19 August 2019 |v10.1.0, <br> v10.0.4 |19 August 2019|
-|[WaveMaker v10.0.4]()|Bug fixes |11 July, 2019 |-|-|
-|[WaveMaker v10.0.3]()|New features + bug fixes |29 May, 2019 |v10.0.3 , <br> v10.0.2, <br> v10.0.1, <br> v10 GA, <br> v10-preview|29 May, 2019|
-|[WaveMaker v10.0.2]()|New features + bug fixes |24 April, 2019 | -|-|
-|[WaveMaker v10.0.1]()|Migration bug fixes |15 April, 2019| -|-|
-|[WaveMaker v10 GA]()|Enhancements + new features |10 April, 2019 |-|-| 
-|[WaveMaker Preview: v10]()|Try new features and enhancements <br> before 10.GA release|20 November, 2018|-| - |
+|[WaveMaker v10.0.4](/learn/wavemaker-release-notes/v10-0-4)|Bug fixes |11 July, 2019 |-|-|
+|[WaveMaker v10.0.3](/learn/wavemaker-release-notes/v10-0-3)|New features + bug fixes |29 May, 2019 |v10.0.3 , <br> v10.0.2, <br> v10.0.1, <br> v10 GA, <br> v10-preview|29 May, 2019|
+|[WaveMaker v10.0.2](/learn/wavemaker-release-notes/v10-0-2)|New features + bug fixes |24 April, 2019 | -|-|
+|[WaveMaker v10.0.1](/learn/wavemaker-release-notes/v10-0-1)|Migration bug fixes |15 April, 2019| -|-|
+|[WaveMaker v10 GA](/learn/wavemaker-release-notes/v10-0-ga)|Enhancements + new features |10 April, 2019 |-|-| 
+|[WaveMaker Preview: v10](/learn/wavemaker-release-notes/v10-0-preview)|Try new features and enhancements <br> before 10.GA release|20 November, 2018|-| - |
 
 ## Technology Stack
 Last updated: [Release: v10.3.0](/learn/wavemaker-release-notes/v10-3-0)

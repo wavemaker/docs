@@ -61,9 +61,3 @@ Various messages to be displayed at various stages of Data Table rendering can b
 
 Message On Error, Message On Add and Message On Update can be configured for CRUD operations in editable grids.
 
-### Row Styles
-
-Similar to [columns styling](/learn/app-development/widgets/datalive/datatable/field-configuration/#styling), styles can be applied to rows in the Data Table. Conditional classes can also be applied based upon the data value within the rows.
-
-[![](/learn/assets/table-config3.png)](/learn/assets/table-config3.png)
-

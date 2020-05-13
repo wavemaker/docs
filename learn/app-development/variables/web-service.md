@@ -1,7 +1,7 @@
 ---
-title: "Variable for Web Service"
+title: "Service Variable"
 id: ""
-sidebar_label: "Web Services Variable"
+sidebar_label: "Service Variable"
 ---
 ---
 
@@ -21,27 +21,36 @@ The **data source** for these Variables comes from a _Web Service APIs_.
 Though the process for creating a variable for WebSocket Service is the same as below, properties and methods are different. For more information, see [WebSocket Variable](/learn/app-development/variables/websocket-variable/).
 :::
 
-1. Select the Variable option from the Variable Workspace Toolbar. 
+1. Select **Variable** from the workspace toolbar.
 
-[![](/learn/assets/var_sel.png)](/learn/assets/var_sel.png)
+![variable creation](/learn/assets/var_sel.png)
 
-2. Click New Variable from the Variable Dialog.
+2. Click **New Variable** from the Variable Dialog.
 
-[![](/learn/assets/var_new.png?v=20)](/learn/assets/var_new.png?v=20)
+![new variable](/learn/assets/var_new.png)
+
+3. Select **Web Services** as *a target action for Variable*.
+
+![select web services](/learn/assets/select-web-services.PNG)
+
+:::important
+The data source for the Variable comes from imported Services.
+:::
+
+![swagger variable](/learn/assets/swagger-variable.png)
 
 ### Steps to Create Variable in Variable Wizard
 
-#### Step-1
-To create a variable to access Web service APIs, select **Web Service** as the target action. Choose the appropriate option from the following.
-- **Service** - select service name, if it is already imported.
-- **Method** - in case the web service exposes multiple services, you can choose from the list
-- **Name** - is set by default but can be modified
-- **Owner** - the scope of the Variable being created. By default it is set to Page, you can change it to Application if you want this variable to be available across the app.
+- **Service**: Select the service name from imported services.
+- **Method**: If the API exposes multiple services, you can choose from the list.
+- **Name**: Set by default, but you can modify it.
+- **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
+- Click **Done** to complete the variable creation process.
 
-Click **Done** to complete the variable creation process.
+### Variable Properties and events
 
-#### Step-2
-You will be directed to the Variables page, with the new variable listed. You can see the following options:
+You will be directed to the Variables page, with the new variable listed. You can see the following options.
+
 1. a **Web Service** Variable is created,
 2. with the default exposed method/selected method as target
 3. the **properties tab** contains all the properties like _behavior_ and _spinner_ behavior. [Know more about properties](#properties).
@@ -62,7 +71,16 @@ You will be directed to the Variables page, with the new variable listed. You ca
 
 ## Events
 
-During the life cycle of a Variable, a set of events are emitted by the Variable, thus giving you the option to control the behavior of the Variable such as input data validations, data processing, success/error handling, etc. [Know More](/learn/app-development/variables/variables-actions/#events-implementation).
+During the life cycle of a Variable, a set of events are emitted by the Variable, thus giving you the option to control the behavior of the Variable such as input data validations, data processing, success/error handling, and more.
+
+- OnBeforeUpdate
+- OnResult
+- OnError
+- OnBeforeDatasetReady
+- OnCanUpdate
+- OnSuccess
+
+To learn how to implement Events, see [Events Documentation](/learn/app-development/variables/events).
 
 ## Methods
 

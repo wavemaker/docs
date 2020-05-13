@@ -15,7 +15,11 @@ The partial pages are loaded asynchronously on the page. Partial pages are loade
 
 Partial Pages are created like Pages and can be designed similar to any other Page.
 
-[![](/learn/assets/partial_page.png)](/learn/assets/partial_page.png)
+**Step-1**: Choose the template for partial.
+[![](/learn/assets/partial_page_step1.png)](/learn/assets/partial_page_step1.png)
+
+**Step-2**: Name your partial and create.
+[![](/learn/assets/partial_page_step2.png)](/learn/assets/partial_page_step2.png)
 
 # Types of Partials
 
