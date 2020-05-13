@@ -10,9 +10,9 @@ During the course of app development, tracking code changes and synchronizing th
 ## Configure External VCS
 
 - Supported Providers
-    - Gitlab
-    - Bitbucket
-    - Github
+    - [Gitlab](https://about.gitlab.com/)
+    - [Bitbucket](https://bitbucket.org/product)
+    - [Github](https://github.com/)
 - Select Code Repository section and select Add VCS Repository to code repository.
 
 [![](/learn/assets/wme-setup/configuring-wme/adding-vcs-repo.png)](/learn/assets/wme-setup//configuring-wme/adding-vcs-repo.png)

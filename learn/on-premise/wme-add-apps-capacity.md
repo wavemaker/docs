@@ -9,7 +9,7 @@ Every Deployed application allocated with a container. The infrastructure adding
 
 ## Add Capacity to App Deployment
 
-- Select App Deployments section and at deployment capacity select add capacity for adding an Instance to deployment capacity.
+- Select App Deployments section and at deployment capacity select add capacity for adding an Instance to deployment capacity.if Instance not created [launch instance with required prerequisites](wme-prerequisites.md)
 - Provide Instance details and authentication details to connect to the Instance,if you want you can test the connection and details of instance by selecting the test option.
 
 [![](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.jpg)](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.jpg)

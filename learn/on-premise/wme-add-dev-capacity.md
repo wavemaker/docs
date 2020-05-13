@@ -6,6 +6,7 @@ sidebar_label: "Add Developer Capacity"
 ---
 
 Once you have Launched Instances, Initialized, Set up and configured the WME, it is time for the developers to log in and build apps. For this, you need to add developer and deployment infrastructure capacity by adding instances.
+If not setup External Instance ,[launch Instance with the required prerequisites](wme-prerequisites.md)
 
 Every User is allocated with one container. The infrastructure adding here will be used for this allocation.
 

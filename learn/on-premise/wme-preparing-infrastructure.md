@@ -12,7 +12,7 @@ This document talks about launching instances in different virtualization provid
     -  Add/Format disks.
     -  Configure security groups.
     -  Configure networking.
-- Install Prerequisites softwares. 
+- [Install Prerequisites softwares.](wme-install-prerequisites.md)
 
 
 

@@ -4,7 +4,7 @@ id: ""
 sidebar_label: "Extract Package"
 ---
 ---
- Assuming you already downloaded required installer and kept the file in user home directory of platform machine.
+ Assuming you already launched Platform Instance, downloaded required installer and kept the file in user home directory of platform machine.for launching Platform Instance visit [launch Platform Instance with this prerequisites](wme-prerequisites.md)
 
 ### Extract Package for WME installer
 
