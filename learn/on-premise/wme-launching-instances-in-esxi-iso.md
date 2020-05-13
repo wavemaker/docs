@@ -7,8 +7,8 @@ sidebar_label: "Launch Instances in Esxi using ISO"
 
 ## Prerequisite
 
-- Ubuntu ISO file from internet. 
-- Link for download the image of 
+- Ubuntu ISO file from internet.
+- Link for download the image of
 [ubuntu 16.04.6 iso image](http://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-amd64.iso).
 - VMware ESXi version 6.5 or higher.
 - Permission for launching machines in Esxi.
@@ -90,15 +90,15 @@ This guide has written based on Esxi version 6.5.
 
 [![](/learn/assets/wme-setup/vm-creation-by-using-iso-image/managing-upgrades.png)](/learn/assets/wme-setup/managing-upgrades.png)
 
-- Choose option to install or not grub boot loader to the master boot record.
+- Choose an option to install or not grub boot loader to the master boot record.
 
-[![](/learn/assets/wme-setup/vm-creation-by-using-iso-image/installing-grub-loader.png)](/learn/assets/wme-setup/installing-grub-loader.png)
-    
+[![installing grub loader](/learn/assets/wme-setup/vm-creation-by-using-iso-image/installing-grub-loader.png)](/learn/assets/wme-setup/installing-grub-loader.png)
+
 - Wait for few moments to complete the installation process, then login into system by providing username and password.
 - For connecting from terminals via ssh, install openssh-server and check the status.
   Below are the commands.
 
-```
+```shell
 sudo apt-get install openssh-server -y
 sudo systemctl start ssh
 sudo systemctl status ssh
@@ -110,8 +110,6 @@ sudo systemctl status ssh
 
 ## Security and Networking
 
-- Do one of the two things below. 
-    - All traffic opened between Platform Instance and External Instances.
-    - Configure security rules as per Prerequisites.
-
-
+- Do one of the two things below.
+  - All traffic opened between Platform Instance and External Instances.
+  - Configure security rules as per Prerequisites.

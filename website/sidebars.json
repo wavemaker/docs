@@ -423,7 +423,7 @@
     "on-premise/wme-add-apps-capacity",
     "on-premise/wme-config-pipeline"
   ],
-  "Update":
+  "Upgrade":
   [
     "on-premise/wme-upgrade-setup",
     "on-premise/wme-download-copy-patch",
