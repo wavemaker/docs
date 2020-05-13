@@ -939,6 +939,7 @@
         "label": "Versions: 10.4.x",
         "ids": 
           [              
+            "wavemaker-release-notes/v10-4-3",
             "wavemaker-release-notes/v10-4-2",
             "wavemaker-release-notes/v10-4-1",
             "wavemaker-release-notes/v10-4-0"
