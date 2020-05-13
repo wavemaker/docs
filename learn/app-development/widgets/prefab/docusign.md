@@ -7,13 +7,21 @@ Docusign prefab allows user to enable electronic signature technology services 
 
  
 
-![](/learn/assets/Screenshot-2018-12-15-at-1.43.11-PM.png)Prerequisites for using the Docusign prefab:
+![](/learn/assets/Screenshot-2018-12-15-at-1.43.11-PM.png)
 
-1. Create a developer account in Docusign.![](/learn/assets/Screenshot-2018-12-15-at-11.47.48-AM.png)
-2. Go to Admin page and add an App![](/learn/assets/Screenshot-2018-12-15-at-11.55.26-AM.png)![](/learn/assets/Screenshot-2018-12-15-at-11.44.52-AM.png)
-3. Now go to your Apps listing and click on Actions drop down of your created app and click Edit.![](/learn/assets/Screenshot-2018-12-15-at-11.46.14-AM.png)
-4. From the pop up copy the Integrator key and keep it ready.![](/learn/assets/Screenshot-2018-12-15-at-11.46.49-AM.png)
+## Prerequisites for using the Docusign prefab:
 
+### 1. Create a developer account in Docusign.
+![](/learn/assets/Screenshot-2018-12-15-at-11.47.48-AM.png)
+### 2. Go to Admin page and add an App!
+[](/learn/assets/Screenshot-2018-12-15-at-11.55.26-AM.png)
+![](/learn/assets/Screenshot-2018-12-15-at-11.44.52-AM.png)
+### 3. Now go to your Apps listing and click on Actions drop down of your created app and click Edit.
+![](/learn/assets/Screenshot-2018-12-15-at-11.46.14-AM.png)
+### 4. From the pop up copy the Integrator key and keep it ready.
+![](/learn/assets/Screenshot-2018-12-15-at-11.46.49-AM.png)
+
+## Project Integration
 Drag and drop the prefab into your project page. It'll appear as a link labeled "E-sign". Then go to settings and select Config Profiles
 
 ![](/learn/assets/Screenshot-2018-12-06-at-3.27.56-PM.png)

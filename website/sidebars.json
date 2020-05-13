@@ -252,7 +252,7 @@
             "app-development/app-security/token-based-authentication",
             "app-development/app-security/saml-integration",
             "app-development/app-security/secure-connection-deployed-apps"
-          ] 
+          ]
         },     
         {
           "type": "subcategory",
@@ -901,6 +901,7 @@
       "app-development/widgets/prefab/googlemaps",
       "app-development/widgets/prefab/qrcode", 
       "app-development/widgets/prefab/box-viewer-prefab",  
+      "app-development/widgets/prefab/docusign",
       {
         "type": "subcategory",
         "label": "OAuth",
