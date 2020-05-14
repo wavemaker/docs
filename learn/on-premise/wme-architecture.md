@@ -51,3 +51,22 @@ Internally WME utilizes Docker containers to segregate and isolate the platform 
 WaveMaker releases its enterprise version once stabilized on WaveMaker Online Platform.
 
 [Check out full list of releases here.](/learn/wavemaker-release-notes#current-release-details)
+
+
+## WaveMaker Enterprise Roles and their activities
+
+### Setup Admin 
+- Procure Required Infrastructure and Other Prequisites
+- Setup WaveMaker Enterprise
+- Create SuperAdmin
+- Manages the setup and upgrades
+### Super Admin
+- Onboarding Users
+- Adding VCS to WaveMaker Enterprise Platform
+- Add Instances
+- Configure Pipelines
+### Enterprise Admin
+- Project Management
+- Artifact Management
+### WaveMaker Enterprise Studio User
+- Developer who builds WaveMaker apps using Studio
