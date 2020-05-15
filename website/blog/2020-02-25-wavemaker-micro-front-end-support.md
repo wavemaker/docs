@@ -74,7 +74,7 @@ WaveMaker is the only low code platform to support Micro Frontend module extendi
 WaveMaker support for Single SPA framework
 WaveMaker has developed a node based CLI to generate **Single-spa** compatible artifacts for a given WaveMaker app. 
 
-> ####  [**wm-sspa-cli**](https://www.npmjs.com/package/wm-sspa-cli)
+> ####  [**@wavemaker.com/wm-sspa-cli**](https://www.npmjs.com/package/@wavemaker.com/wm-sspa-cli)
 
 The CLI requires the exported project location, deployed URL as its input. The CLI & details are available in the above link,
 
@@ -89,13 +89,13 @@ The below steps can be followed to generate the **Single-spa** artifacts for a g
 * Export the project from WaveMaker as Zip, extract it into a folder & note the location.
 * Open the terminal & invoke CLI from the below command
  ```
- npx wm-sspa-cli
+ npx @wavemaker.com/wm-sspa-cli
  ```
 * npx downloads the CLI and prompts for the location of WaveMaker project & deployed URL
 * The usage of npx ensures the execution of the latest version of CLI.
 * The user can also provide the above info as parameters
 ```
- npx wm-sspa-cli -p <project_path> -d <deployed-url>
+ npx @wavemaker.com/wm-sspa-cli -p <project_path> -d <deployed-url>
  ```
 * The CLI also validates both the inputs before triggering the process. 
 * Once the valid params are provided, the CLI generates **Single-spa** compatible artifacts and presents users with its location.
