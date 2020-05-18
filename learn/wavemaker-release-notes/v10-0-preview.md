@@ -5,7 +5,7 @@ sidebar_label: "Release v10.Preview"
 ---
 *WaveMaker has released a new version with new features.*
 
-## [Highlights]()
+## Highlights
 ---
 ### i. Artifact Repository
 
@@ -24,7 +24,7 @@ When multiple developers across the team are collaborating on large development 
 For more information, see [Project User Management](/learn/app-development/wavemaker-overview/project-user-management/).
 
 
-## [Enhancements](#enhancements)
+## Enhancements
 ---
 
 ### i. Number Widget
@@ -39,7 +39,7 @@ For more information, see [Localization](/learn/app-development/wavemaker-overvi
 4.  **Mobile**: Integrated _pull-to-refresh_ functionality on Page ([#doc](/learn/how-tos/working-pull-refresh/)) and _swipe actions_ on the List widget ([#doc](/learn/how-tos/setting-swipe-gestures-list-widget/)).
 
 
-## [Technology Stack](#technology-stack)
+## Technology Stack
 ---
 ### UI Frameworks
 

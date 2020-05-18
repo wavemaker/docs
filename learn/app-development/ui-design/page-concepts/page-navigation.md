@@ -44,6 +44,3 @@ Manually invoking the Navigation Action used when you want to validate the user 
        }
      };
 ```
-    
-     
-

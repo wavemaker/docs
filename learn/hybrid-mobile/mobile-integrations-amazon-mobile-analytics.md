@@ -8,7 +8,7 @@ Amazon Mobile Analytics(AMA) is a service provided under the aegis of the AWS Mo
 
 For this post, we will track analytics of a user previously authenticated using Amazon Cognito. This will illustrate tracking the use case of "Daily Active Users". Note that it is possible to use Mobile Analytics without Cognito - but this means we cannot track Daily Active Users and other user-specific metrics.
 
-##  Source code:
+## Source code:
 
 The code used in this example is available for download [here](https://gist.github.com/manishchaks/9464254c51a968dec96d325f982ba2ea).
 

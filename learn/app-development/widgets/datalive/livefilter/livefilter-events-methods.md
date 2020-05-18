@@ -57,5 +57,3 @@ Page.Widgets.DepartmentFilter.formfields.deptId.value = 1;
 Page.Widgets.DepartmentFilter.clearFilter();; 
 //Clears the filter.
 ```
-    
-     

@@ -75,7 +75,7 @@ This feature helps you group columns under a heading for better readability and 
 - _Icon Position_ - to set the position of the Icon; choose Left (default) or Right
 - _Value Expression_ - You can write a custom expression to change the display setting for a table column. The expression needs to follow AngularJS conventions for binding. A sample expression is given which can be enhanced as per the needs of the application.
 
-#####  Image Mode Options
+##### Image Mode Options
 
 - _Widget Class_ - style class for the entire column
 - _Conditional Widget Class_ - specify the style class name to be applied to select rows satisfying the given condition.
@@ -166,4 +166,3 @@ For examples, see [Custom Styling Data Table Columns & Rows](/learn/how-tos/data
 **Role-based access** can be set to enforce security at column-level: If the [security has been enabled](/learn/app-development/app-security/app-security) in your app, then you can define the app role which has access to a specific column.
 
 [![](/learn/assets/dt_security.png)](/learn/assets/dt_security.png)
-

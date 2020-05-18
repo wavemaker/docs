@@ -6,7 +6,7 @@ id: "mobile-integrations-amazon-sns"
 
 Amazon SNS is an AWS service that is used to enable push notifications for mobile devices.  In this post, we will outline how to setup Amazon SNS with Google Cloud Messaging (GCM) and push messages to a device. In the end, this post will also show you how to integrate your WaveMaker mobile application with Amazon SNS service.
 
-##  Source code:
+## Source code:
 
 The code used in this example is available for download [here](https://gist.github.com/manishchaks/9464254c51a968dec96d325f982ba2ea).
 

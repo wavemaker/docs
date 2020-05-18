@@ -86,6 +86,4 @@ Page.Widgets.[formName].submit();
 ```    
 Page.Widgets.[formName].clearMessage();
 //This method removes the success/error message on the form.
-``` 
-     
-
+```

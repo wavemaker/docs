@@ -89,7 +89,6 @@ Page.subscribe = funtion($event, widget){
     }
     };
 ```    
-     
 
 ## Page Transitions & Gestures
 
@@ -114,4 +113,3 @@ Touch Gestures from a mobile device can be bound to actionable events like dele
 These gestures can be set from the Events property of the concerned Widget. 
 
 [![](/learn/assets/call_gestures_mobile.png)](/learn/assets/call_gestures_mobile.png)
-

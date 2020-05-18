@@ -11,16 +11,14 @@ This capability can be extended to localize the column headings of a Data Table.
 
 **Steps**
 
-1. 1. The column names need to be added in the localization i.e., i18n dialog as message keys
-        
-        - for this open the [I18N Dialog](http://[supsystic-show-popup id=125])
-        - add language using the Manage Language option, if not added already
-        - add the column names as message key in multiple languages.
-        
+1. The column names need to be added in the localization i.e., i18n dialog as message keys
+    1. for this open the [I18N Dialog](http://supsystic-show-popup id=125)
+    2. add language using the Manage Language option, if not added already
+    3. add the column names as message key in multiple languages.
         [![](/learn/assets/locale_dt1.png)](/learn/assets/locale_dt1.png)
-    2. Open the Advanced Settings of the data table widget and navigate to the Columns tab. [![](/learn/assets/locale_dt2.png)](/learn/assets/locale_dt2.png)
-    3. Bind the respective message keys to the "Title" property of the columns. [![](/learn/assets/locale_dt3.png)](/learn/assets/locale_dt3.png)
-    4. Save and Preview the application. At runtime, on changing the locale from the Select Locale widget, the column headers for the data table widget will display the respective localized values.
+2. Open the Advanced Settings of the data table widget and navigate to the Columns tab. [![](/learn/assets/locale_dt2.png)](/learn/assets/locale_dt2.png)
+3. Bind the respective message keys to the "Title" property of the columns. [![](/learn/assets/locale_dt3.png)](/learn/assets/locale_dt3.png)
+4. Save and Preview the application. At runtime, on changing the locale from the Select Locale widget, the column headers for the data table widget will display the respective localized values.
 
 [Localization Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
