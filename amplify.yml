@@ -36,6 +36,7 @@ test:
       commands:
         - cd website
         - npm install
+        - 'npm run test:mdlint'
         - 'npm run cypress:prepare-prod'
     test:
       commands:
