@@ -101,5 +101,3 @@ Page.Widgets.EmployeeForm.reset(); //Resets the form to initial state.
 ```    
 Page.Widgets.EmployeeForm.cancel(); //Cancels the form edit.
 ```    
-     
-

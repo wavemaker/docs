@@ -50,7 +50,7 @@ Only the Project Admins are allowed to change the roles.
 
 - From the Project card, you can leave or delete the project from the Leave project/Delete option on the project.
 
-##  Code Sharing - VCS
+## Code Sharing - VCS
 
 When multiple developers are working on the same application, tracking code changes and synchronizing the changes is of the essence. WaveMaker provides Version Control Services for this purpose.
 
@@ -70,13 +70,13 @@ Also, in the project workspace, you will find that a **VCS Menu** is displayed f
 
 Once you start working on a project, i.e. open it from the Project Dashboard, the project is checked out from the repository. Any changes made to the project will be saved on your local machine. To ensure that the changes are reflected in the repository, one needs to explicitly push the changes to the repository.
 
-###  Pull Changes
+### Pull Changes
 
 1. On your project listings page, a notification will indicate when your team collaborator has pushed any changes to the shared project.
 2. On the project workspace of a checked out project, from the **VCS** menu, select **Pull Changes**.
 3. This will ensure that your local copy of the project gets the latest copy of the project.
 
-###  Push Changes
+### Push Changes
 
 1. On the project workspace of a checked out project, from the **VCS** menu, select **Push Changes**.
 2. The **Push Changes** dialog is displayed, where you need to enter the Commit Message. 
@@ -88,7 +88,7 @@ Once you start working on a project, i.e. open it from the Project Dashboard, th
     
 3. Enter a Commit Message summarizing your changes and click on **OK** to check in the changes you have made to the project code back to the repository.
 
-###  View Changes
+### View Changes
 
 View Changes enables you to see the code difference. If you wish to undo the changes that you have performed on a project that you have checked out, you can revert changes to all or some of the files using the revert changes option.
 
@@ -102,7 +102,7 @@ View Changes enables you to see the code difference. If you wish to undo the c
 2. Click the **Show Diff** icon against the file you to see the code changes, with conflicts clearly marked. You can choose to revert or save the changes.
 3. You can also select the files that you want to revert changes for and click **Revert**. The project reloads after reverting your changes. You can also use the select-all option on the dialog to revert all the changes across the project.
 
-###  Merge Changes
+### Merge Changes
 
 When you perform a pull or a push operation, you may have to merge files and resolve conflicts resulting from the changes by other team members or developers. WaveMaker will prompt you with a **Merge Files** dialog to merge files and resolve conflicts when you try to Push changes. You can also click on **Merge Files** from the **VCS** menu to merge files and resolve conflicts.
 
@@ -118,7 +118,7 @@ There are three ways to merge files:
 Currently, Merge Files supports code level merges and the user is expected to know about the generated code of the project.
 :::
 
-###  Commit History
+### Commit History
 
 **Commit History**  option under VCS shows history (git log) of last 10 commits with the following information:
 
@@ -128,7 +128,7 @@ Currently, Merge Files supports code level merges and the user is expected to kn
 
 You can navigate through the older and newer commits by 10 commits each time by clicking on Older and Newer buttons.
 
-###  Push to External Repo
+### Push to External Repo
 
 You can choose to have a copy of your project code in an **External Repo**. WaveMaker supports GitHub, Bitbucket and any Git repository. This functionality is available only for Project Admins.
 
@@ -144,4 +144,3 @@ You can specify the branch to which the project needs to be pushed. In case the 
 - For using GitHub or Bitbucket, you should be having an account by registering with either of them. If no URL is provided one will be created for you.
 - To work with the **Git Repo** Repository URL is mandatory, you have to create the repo and provide the URL.
 :::
-

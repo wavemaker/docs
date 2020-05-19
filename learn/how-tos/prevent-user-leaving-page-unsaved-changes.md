@@ -20,15 +20,14 @@ Following are the typical scenarios when this event is invoked.
 
 The app should prevent users from exiting the page before they could:
 
-*   Accidentally exit the page while filling up a form.
-*   Or, navigate away from the active page before they save any changes to the form.
+- Accidentally exit the page while filling up a form.
+- Or, navigate away from the active page before they save any changes to the form.
 
 ## Solution
 
 With the help of the `onBeforePageLeave` event, the app developer can add some checks and prevent the user from exiting the page.
 
-Syntax
-------
+## Syntax
 
 You can define the event callback in the page script with the following script.
 ```

@@ -100,7 +100,7 @@ WHERE PRODUCT_ID = :productId
 - - Click **Bind**, and then **Done**.
     - Save and Close.
 
-##  Configuring the progress circle widget
+## Configuring the progress circle widget
 
 - Select the progress circle and open the property settings. 
 - Set the **Default Value**; for example, enter any number for a static value. For dynamic update, bind the **Default** value with the variable called _Service_ `SalesByProduct.dataSet[$i].productSale`.
