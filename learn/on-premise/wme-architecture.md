@@ -3,6 +3,7 @@ title: "WaveMaker Enterprise Architecture"
 id: ""
 sidebar_label: "Architecture"
 ---
+---
 
 Before proceeding with the set-up, see what constitutes WaveMaker Enterprise (WME).
 
