@@ -68,4 +68,6 @@ To verify on Windows
 
 - In Windows, after running the command, the result should be manually verified with the values present in their respective files (checksum file shared to you by email).
 
-**Note** (Applicable for both Windows and Linux): Do not proceed further to installation if checksum verification fails. Invalid checksum indicates a likely corrupted download. Try downloading the file again or contact [WaveMaker Support](mailto: support@wavemaker.com).
+:::note
+ (Applicable for both Windows and Linux): Do not proceed further to installation if checksum verification fails. Invalid checksum indicates a likely corrupted download. Try downloading the file again or contact [WaveMaker Support](mailto: support@wavemaker.com).
+:::
