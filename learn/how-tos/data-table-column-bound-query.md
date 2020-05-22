@@ -19,10 +19,10 @@ This document shows how a column for the editable Data Table can be bound to out
 
 ## Procedure
 
-1. 1. Open the Advanced Settings of the Data Table and navigate to the Columns tab.
-    2. Choose the required column and navigate to the Edit mode section.
-    3. Choose the widget type as select from the drop-down.
-    4. Set the Dataset is the variable that is created for the query service. Choose the data field and display field as per your requirement from the drop down.
+1. Open the Advanced Settings of the Data Table and navigate to the Columns tab.
+2. Choose the required column and navigate to the Edit mode section.
+3. Choose the widget type as select from the drop-down.
+4. Set the Dataset is the variable that is created for the query service. Choose the data field and display field as per your requirement from the drop down.
 
 [![](/learn/assets/DT_query.png)](/learn/assets/DT_query.png)
 

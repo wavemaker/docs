@@ -20,7 +20,7 @@ WaveMaker Studio supports you to build mobile applications in the following ways
 - on OS X and Linux:
 
 ```
-$ sudo npm install -g cordova
+sudo npm install -g cordova
 ```
 - on Windows:
 

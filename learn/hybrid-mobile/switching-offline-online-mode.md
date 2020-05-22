@@ -35,7 +35,7 @@ A tag in _index.html_ called ‘**wm-network-info-toaster**’ will display the 
 
 B.1 Mobile Apps
 
-- [1.1 Mobile App Development](#)
+- 1.1 Mobile App Development
     - [i. App Architecture](#mobile-app-architecture)
     - [ii. App Development](#mobile-app-development)
     - [iii. Testing on Mobile](#testing-mobile)

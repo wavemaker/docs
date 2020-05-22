@@ -12,7 +12,7 @@ id: ""
 - Export, and
 - Update
 
-##  Export Project
+## Export Project
 
 - Export Project allows you to create a ZIP or a WAR file including the project along with the resources used. The projects are [Maven compliant](/learn/app-development/dev-integration/extending-application-using-ides/ "Extending the Application").
 - Here we will be using the ZIP option. WAR option can be used for deployment to a Web Server, [see here for more](/learn/app-development/deployment/deployment-web-server/). [![](/learn/assets/export_project1.png)](/learn/assets/export_project1.png)
@@ -21,7 +21,7 @@ id: ""
 
 **Note:** For security reasons, the export project option is restricted to the projects you own. **Note:** In case the project is using a database, only the data model is exported, data is not included in the export.
 
-##  Import Project
+## Import Project
 
 You can import a project or a prefab in the ZIP format using the **Import **from the Project Dashboard. Choose the file from the import dialog and click on Import. These are the files that were created from the Export option of WaveMaker Studio as discussed above.
 
@@ -29,7 +29,7 @@ You can import a project or a prefab in the ZIP format using the **Import **fro
 - Select the ZIP file from your machine to import and give it an appropriate name. You can retain the original name or change it.
 - Now this project will be available on your Project Dashboard for selection.
 
-##  Updating Projects
+## Updating Projects
 
 You will use this option when you want to incorporate the changes made to the project after export i.e. when you want to "re-import" the project.
 
@@ -77,4 +77,3 @@ Upon selecting this option you will be asked to upload the zip file (exported fr
 To prepare the zip file for upload, we recommend using the “mvn clean install” command which prepares the zip for uploading in the “target/export” directory of the project sources where you extracted the zip file that you downloaded through Export option.
 
 This option also clears the VCS conflict state if any. But any changes to the files (added/deleted/modified) will be reflected in the VCS status.
-
