@@ -1,7 +1,7 @@
 ---
-title: "Launch Instances in Esxi using OVA"
+title: "WaveMaker Enterprise Setup on VMware ESXi using OVA"
 id: ""
-sidebar_label: "Launch Instances in Esxi using OVA"
+sidebar_label: "Setup on ESXi OVA"
 ---
 ---
 

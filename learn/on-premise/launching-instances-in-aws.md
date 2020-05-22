@@ -1,7 +1,7 @@
 ---
-title: "WME Launch Instances In AWS EC2"
+title: "WaveMaker Enterprise Setup on AWS EC2"
 id: ""
-sidebar_label: "Launch Instances in AWS EC2"
+sidebar_label: "Setup on AWS"
 ---
 ---
 

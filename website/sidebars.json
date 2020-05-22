@@ -386,53 +386,94 @@
 
 "Enterprise":
 {
-  "Overview": 
+  "WaveMaker Enterprise": 
   [
-     "on-premise/wme-overview",
-     "on-premise/wme-architecture"
+     "on-premise/welcome",
+     "on-premise/architecture",
+     "on-premise/getting-started"
   ],
-  "Prerequisites": ["on-premise/wme-prerequisites"],
-  "Preparing Infrastructure":
+
+  "Prerequisites": 
   [
-    "on-premise/wme-preparing-infrastructure",
-    "on-premise/wme-install-prerequisites",
+    "on-premise/prerequisites",
+    "on-premise/install-prerequisites"
+  ],
+
+  "Enviroments":
+  [
+    "on-premise/preparing-infrastructure",
     {
       "type": "subcategory",
-      "label": "Launch Instances",
-      "ids":
-            [
-              "on-premise/wme-launching-instances-in-esxi-ova",
-              "on-premise/wme-launching-instances-in-esxi-iso",
-              "on-premise/wme-launching-instances-in-hyper-v-vhd",
-              "on-premise/wme-launching-instances-in-aws",
-              "on-premise/wme-launching-instances-in-gcp",
-              "on-premise/wme-launching-instances-in-azure",
-              "on-premise/wme-launching-instances-in-azure-vhd"
-            ]
-    }
-  ], 
-  "Setup":
+      "label": "AWS",
+      "ids": 
+      [
+        "on-premise/launching-instances-in-aws"
+      ]
+    },
+
+    {
+      "type": "subcategory",
+      "label": "Microsoft Azure",
+      "ids": 
+      [
+        "on-premise/launching-instances-in-azure",
+        "on-premise/launching-instances-in-azure-vhd"
+      ]
+    },
+
+    {
+      "type": "subcategory",
+      "label": "Google Cloud Platform",
+      "ids": 
+      [
+        "on-premise/launching-instances-in-gcp"
+      ]
+    },
+
+    {
+      "type": "subcategory",
+      "label": "VMware ESXi",
+      "ids": 
+      [
+        "on-premise/launching-instances-in-esxi-ova",
+        "on-premise/launching-instances-in-esxi-iso"
+      ]
+    },
+
+    {
+      "type": "subcategory",
+      "label": "Hyper-V",
+      "ids": 
+      [
+        "on-premise/launching-instances-in-hyper-v-vhd"
+      ]
+    }  
+
+  ],
+   
+ 
+  "Installation":
   [
-    "on-premise/wme-download-copy-installer",
-    "on-premise/wme-extract-package",
-    "on-premise/wme-initilize-setup",
-    "on-premise/wme-setup-using-cw",
-    "on-premise/wme-apply-license"
+    "on-premise/download-copy-installer",
+    "on-premise/extract-package",
+    "on-premise/initilize-setup",
+    "on-premise/setup-using-cw",
+    "on-premise/apply-license"
   ],
   "Configure":
   [
-    "on-premise/wme-config-users-auth-providers",
-    "on-premise/wme-config-vcs",
-    "on-premise/wme-add-dev-capacity",
-    "on-premise/wme-add-apps-capacity",
-    "on-premise/wme-config-pipeline"
+    "on-premise/config-users-auth-providers",
+    "on-premise/config-vcs",
+    "on-premise/add-dev-capacity",
+    "on-premise/add-apps-capacity",
+    "on-premise/config-pipeline"
   ],
   "Upgrade":
   [
-    "on-premise/wme-upgrade-setup",
-    "on-premise/wme-download-copy-patch",
-    "on-premise/wme-extract-patch",
-    "on-premise/wme-run-patch"
+    "on-premise/upgrade-setup",
+    "on-premise/download-copy-patch",
+    "on-premise/extract-patch",
+    "on-premise/run-patch"
   ]
 },
 

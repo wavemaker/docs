@@ -1,7 +1,7 @@
 ---
-title: "Launch Instances in hyper-v using VHD"
+title: "WaveMaker Enterprise Setup on Hyper-V using VHD"
 id: ""
-sidebar_label: "Launch Instances in hyper-v using VHD"
+sidebar_label: "Setup on Hyper-V VHD"
 ---
 ---
 

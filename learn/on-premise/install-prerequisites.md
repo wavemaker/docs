@@ -1,7 +1,7 @@
 ---
-title: "Install  Prerequisites"
+title: "Install OS Specific Prerequisites"
 id: ""
-sidebar_label: "Install  Prerequisites"
+sidebar_label: "OS Prerequisites"
 ---
 ---
 

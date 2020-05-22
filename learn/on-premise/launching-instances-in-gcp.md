@@ -1,7 +1,7 @@
 ---
-title: "Launch Instances in GCP"
+title: "WaveMaker Enterprise Setup on Google Cloud Platform"
 id: ""
-sidebar_label: "Launch Instances in GCP"
+sidebar_label: "Setup on GCP"
 ---
 ---
 

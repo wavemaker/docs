@@ -1,7 +1,7 @@
 ---
-title: "Launch Instances in Azure Cloud"
+title: "WaveMaker Enterprise Setup on Azure Cloud"
 id: ""
-sidebar_label: "Launch Instances in Azure Cloud"
+sidebar_label: "Setup on Azure"
 ---
 ---
 

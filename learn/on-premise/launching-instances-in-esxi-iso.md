@@ -1,7 +1,7 @@
 ---
-title: "Launch Instances in Esxi using ISO"
+title: "WaveMaker Enterprise Setup on VMware ESXi using ISO"
 id: ""
-sidebar_label: "Launch Instances in Esxi using ISO"
+sidebar_label: "Setup on ESXi ISO"
 ---
 ---
 

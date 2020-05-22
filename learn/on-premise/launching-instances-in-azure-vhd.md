@@ -1,7 +1,7 @@
 ---
-title: "Launch Instances in AzureCloud using VHD"
+title: "WaveMaker Enterprise Setup on AzureCloud using VHD"
 id: ""
-sidebar_label: "Launch Instances in AzureCloud using VHD"
+sidebar_label: "Setup on Azure VHD"
 ---
 ---
 
