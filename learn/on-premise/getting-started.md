@@ -13,13 +13,22 @@ This document describes the process for setting up Wavemaker Enterprise in all m
 
 ## Wavemaker Enterprise setup process
 
+For setting up Wavemaker Enterprise setup involve below steps
+
+1.[Prerequisites](#prerequisites)  
+2.[Choosing the Environment and Infrastructure Provider](#choosing-the-environment-and-infrastructure-provider)  
+3.[Installing Additional Softwares based on Operating System](#installing-additional-softwares-based-on-operating-system)  
+4.[Installing WME on the Environment](#installing-wme-on-the-environment)  
+5.[Configuring WME using the Launchpad](#configuring-wme-using-the-launchpad)  
+
+## Prerequisites
+
 For setting up Wavemaker Enterprise in different environments, you would need system prerequisites for hardware capabilities, network, and security management. The following hardware requirements are for approximation; these may vary depending on the number of developers and apps.
 
-### Three Machines
-
-1. **Platform Instance**: 16 GB RAM,  4 Core CPU,  300 GB disk
-2. **Studio External Instance**: 16 GB RAM,  4 Core CPU,  300 GB disk
-3. **QA Apps External Instance**: 16 GB RAM,  4 Core CPU,  150 GB disk
+- Hardware Requirements
+  - 1. Platform Instance: 16 GB RAM,  4 Core CPU,  300 GB disk
+  - 2. Studio External Instance: 16 GB RAM,  4 Core CPU,  300 GB disk
+  - 3. QA Apps External Instance: 16 GB RAM,  4 Core CPU,  150 GB disk
 
 For more information on prerequisites, see [Wavemaker Enterprise Prerequisites](/learn/on-premise/prerequisites).
 
@@ -27,7 +36,7 @@ For more information on prerequisites, see [Wavemaker Enterprise Prerequisites](
 You can discuss your needs on hardware allocation before starting the setup.
 :::
 
-## Choosing the Environment
+## Choosing the Environment and Infrastructure Provider
 
 For setting up WME, it supports on-premise/private or public cloud. Launching instances process is preparing infrastructure for WME.
 
@@ -39,22 +48,22 @@ For setting up WME, it supports on-premise/private or public cloud. Launching in
 6. [VMware ESXi using OVA](/learn/on-premise/launching-instances-in-esxi-ova)
 7. [Hyper-V using VHD](/learn/on-premise/launching-instances-in-hyper-v-vhd)
 
-- ### Installing Software for the OS
+- ### Required files
 
-    For setting up Wavemaker Enterprise in different environments, some prerequisite software should be installed in the Instance. Also, based on the operating system the prerequisites will be changed.
-
-    For more information, see [Prerequisites for Operating System](/learn/on-premise/install-prerequisites).
-
-- ### Files needed
-
-  - **Launching Platform Instance**: Download the `WME-installer-10.3.1.ee.8273.ova`  and copy it to a location where you can launch instances using this OVA.
-  - **Launching External Instances**: Download the`WME-ExternalInstance-v24.ova`  and copy it to a location where you can launch instances using this OVA.
-  - Trial license.
+  - **Launching Platform Instance**: Download the `WME-Platform_Instance-ova`  and copy it to a location where you can launch instances using this OVA.
+  - **Launching External Instances**: Download the`WME-External_Instance-ova`  and copy it to a location where you can launch instances using this OVA.
   - Those files are required only when launching instances from Hyper V and VMware Esxi server.wavemaker team will provide those files
+  - License.
 
 :::note
-Wavemaker team will send the trial license link soon before the setup when customer contact.
+Wavemaker team will send the OVA files and license link before the setup when customer contacts.
 :::
+
+## Installing Additional Softwares based on Operating System
+
+For setting up Wavemaker Enterprise in different environments, some prerequisite software should be installed in the Instance. Also, based on the operating system the prerequisites will be changed.
+
+For more information, see [Prerequisites for Operating System](/learn/on-premise/install-prerequisites).
 
 ## Installing WME on the Environment
 
@@ -78,52 +87,3 @@ After Installing the WME in environment we can configure the WME for administrat
 3. [Adding Instance to Developers Workspace](/learn/on-premise/add-dev-capacity)
 4. [Adding Instance to App Deployments](/learn/on-premise/add-apps-capacity)
 5. [Configure pipeline](/learn/on-premise/config-pipeline)
-
-## Permissions
-
-You should ensure that you have the right permissions to import ova and launch machines.
-
-## Accessibility
-
-- Domain Names which should be mapped to Platform machine IP in your DNS.  
- For example:
-
-```example
-wme.dpo.com,  wm-apps.dpo.com
-```
-
-- You can skip domain name mapping. In such cases, developers should map it in the `/etc/host` file.
-- All the three machines should have static IP addresses, this means that the IP address should not change when you reboot.
-
-## VCS (Advanced)
-
-- If you would like to host source code in your own VCS, then you may have to provide details during the setup, such as username, password, access token of the VCS. Currently, we support Bitbucket, Gitlab, Github. Wavemaker ships with Gitlab as Default VCS.
-- Wavemaker ships DB based authentication as default. You can configure your own SSO for the platform. Currently, we support OpenID Connect, LDPA, CAS protocols.
-
-## The Process
-
-When you have all the prerequisites ready. The setup may take 60-90 minutes approximately.
-
-### Steps
-
----
-
-#### Step-1: Prepare Infrastructure
-
-#### Step-2: SSH to the platform instance
-
-#### Step-3: Start the setup process
-
-#### Step-4: Access URL `http://<platformIP>:8080/`
-
-#### Step-5: Complete the guided setup on setup wizard
-
-#### Step-6: Upload license
-
-#### Step-7: Add external instances from launchpad
-
-#### Step-8: Add external VCS (Advanced)
-
-## What's next
-
-[Get started with Wavemaker Studio](/learn/documentation-reference)
