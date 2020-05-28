@@ -5,9 +5,9 @@ sidebar_label: "Summary Row"
 ---
 ---
 
-When creating a datatable, you can use Summary Row Function to add summary rows at the bottom of the table. This summary rows can be some aggrigation logic/functions at the client side or server side.
+When creating a datatable, a Summary Row Function can be used to add summary at the bottom of the table. This summary computed on the client side or on the server side.
 
-Using Summary Row Function, you can apply summary to a single column or multiple columns using methods described in this document. These methods can be used to set sync values on a column and can include inbuilt aggregate functions like sum, minimum, maximum, or add more customizations to just basic summary rows.
+Using Summary Row Function, you can summarize any number of columns. A table can also include more than one summary row. These methods to calculate the summary can use inbuilt javascript functions like sum, minimum, maximum, or custom logic can be implemented in another javascript function.
 
 You can set summary row using the below exposed function on a column in Beforedatarender event callback:
 
