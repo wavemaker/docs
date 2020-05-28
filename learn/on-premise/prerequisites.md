@@ -102,3 +102,7 @@ In the preceding table, `[mycompany]` is used as an example. You may have to r
 - An IP range to be assigned to the Docker containers internally.
 
 You will be needing to assign a /16 [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) to Docker during setup. This IP range should not be in use anywhere on your network and can be completely different from your network’s range. These IPs are assigned internally by Docker to containers and these IPs won’t be exposed on your network. For example, if your network is using a 10.x.x.x_range and the range_192.168.x.x is not used anywhere in your network, you may assign this 192.168.x.x range to Docker. See [here](https://en.wikipedia.org/wiki/Private_network#Private_IPv4_address_spaces) for the possible LAN IP ranges.
+
+## What's next
+
+[Preparing the Infrastructure](preparing-infrastructure.md) for setting Wavemaker Enterprise

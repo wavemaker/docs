@@ -25,7 +25,7 @@ The complete Wavemaker Enterprise setup involve below steps
    - [VMware ESXi using ISO](/learn/on-premise/launching-instances-in-esxi-iso)
    - [VMware ESXi using OVA](/learn/on-premise/launching-instances-in-esxi-ova)
    - [Hyper-V using VHD](/learn/on-premise/launching-instances-in-hyper-v-vhd)
-3. [Installing Additional Softwares based on Operating System](/learn/on-premise/install-prerequisites) 
+3. [Installing Additional Softwares based on Operating System](/learn/on-premise/install-prerequisites)
 
 4. Installing WME on the Environment
    - [Download the WME Installer](/learn/on-premise/download-copy-installer)
