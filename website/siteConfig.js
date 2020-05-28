@@ -25,7 +25,7 @@ require('dotenv').config();
 const siteConfig = {
     title: 'WaveMaker Docs', // Title for your website.
     tagline: 'Welcome to the Learning Center',
-    url: 'https://www.wavemaker.com/',
+    url: 'https://www.wavemaker.com',
     baseUrl: '/learn/',
     docsUrl: '',
     customDocsPath: 'learn',
