@@ -27,39 +27,46 @@ WaveMaker provides aggregate functions which can be referenced and used in the s
 Call **setSummaryRowData** on the column where you want to set the summary row data
 
 ```js
-Page.DepartmentTable1Beforedatarender = function(widget, data, columns) {
-    columns.name.setSummaryRowData('Total Budget');
+Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
+    columns.item.setSummaryRowData('Net Total');
+    columns.netAmount.setSummaryRowData('670');
 };
 ```
+[![](/learn/assets/datatable_summaryrow1.png)](/learn/assets/datatable_summaryrow1.png)
 
 #### Multiple Summary Rows
 Call **setSummaryRowData** on the column where you want to set the summary rows data and pass an array of values.
 
 ```js
-Page.StudentAttendenceTable1Beforedatarender = function(widget, data, columns) {
-    const classesAggregate = columns.classes.aggregate;
-
-    columns.subject.setSummaryRowData([
-        'Total classes attended',
-        'Attendence percentage'
+Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
+    columns.item.setSummaryRowData([
+        'Net Total',
+        'Discount'
     ]);
-    columns.classes.setSummaryRowData([
-        classesAggregate.sum(),
-        classesAggregate.percent(500) + '%'
+    columns.netAmount.setSummaryRowData([
+        '670',
+        '2%'
     ]);
 };
 ```
-[![](/learn/assets/datatable_summaryrow1.png)](/learn/assets/datatable_summaryrow1.png)
+[![](/learn/assets/datatable_summaryrow2.png)](/learn/assets/datatable_summaryrow2.png)
 
-#### Summary Row with Aggregate Function
+#### Summary Row with Aggregate Function and Variables
 Create an aggregate function instance and call the inbuilt aggregate functions on the column **setSummaryRowData**.
 
 ```js
-Page.DepartmentTable1Beforedatarender = function(widget, data, columns) {
-    const budgetAggregate = columns.budget.aggregate;
+Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
+    const DISCOUNT = Page.Variables.Discount.dataSet.dataValue;
+    const netAmountAggregate = columns.netAmount.aggregate;
 
-    columns.name.setSummaryRowData('Total Budget');
-    columns.budget.setSummaryRowData(budgetAggregate.sum());
+    columns.item.setSummaryRowData([
+        'Net Total',
+        'Discount'
+    ]);
+    columns.netAmount.setSummaryRowData([
+        netAmountAggregate.sum(),
+        DISCOUNT + '%'
+    ]);
 };
 ```
 [![](/learn/assets/datatable_summaryrow2.png)](/learn/assets/datatable_summaryrow2.png)
@@ -80,9 +87,9 @@ Column contains the below built in aggregate functions which can be used in summ
 The above aggregate functions can be accessed using the `aggregate` object on the columns as shown below.
 
 ```js
-Page.DepartmentTable1Beforedatarender = function(widget, data, columns) {
-    const budgetAggregate = columns.budget.aggregate;
-    columns.budget.setSummaryRowData(budgetAggregate.sum());
+Page.<TableName>Beforedatarender = function(widget, data, columns) {
+    const columnAggregate = columns.<columnName>.aggregate;
+    columns.<columnName>.setSummaryRowData(columnAggregate.sum());
 };
 ```
 
@@ -92,38 +99,28 @@ Page.DepartmentTable1Beforedatarender = function(widget, data, columns) {
 Call custom function and return data in **setSummaryRowData** on the column where you want to set the summary row data.
 
 ```js
-Page.DepartmentTable1Beforedatarender = function(widget, data, columns) {
-    columns.name.setSummaryRowData('Result');
-    columns.result.setSummaryRowData(calculateResult(data));
+Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
+    const DISCOUNT = Page.Variables.Discount.dataSet.dataValue;
+    const netAmountAggregate = columns.netAmount.aggregate;
 
-    function calculateResult(data) {
-        let result = 0;
-        data.forEach(item => {
-            This.result = item.result > 50 ? item.result + this.result : this.result;
-        });
-        return result;
+    columns.item.setSummaryRowData([
+        'Net Total',
+        'Discount',
+        'Total'
+    ]);
+    columns.netAmount.setSummaryRowData([
+        netAmountAggregate.sum(),
+        DISCOUNT + '%',
+        calculateTotal()
+    ]);
+
+    function calculateTotal() {
+        let total = netAmountAggregate.sum();
+        return total - ((total / 100) * DISCOUNT);
     }
 };
 ```
-
-#### Summary Row Custom Asynchronous Function
-Call custom function and return promise in **setSummaryRowData** on the column where you want to set the summary row data.
-
-```js
-Page.DepartmentTable1Beforedatarender = function(widget, data, columns) {
-    columns.name.setSummaryRowData('Result');
-    columns.result.setSummaryRowData(calculateResult());
-
-    function calculateResult() {
-        return new Promise(function(resolve, reject) {
-            Page.Variables.result.invoke().then((data) => {
-                resolve(JSON.parse(data.body).result);
-            });
-        });
-    }
-};
-```
-[![](/learn/assets/datatable_summaryrow3.gif)](/learn/assets/datatable_summaryrow3.gif)
+[![](/learn/assets/datatable_summaryrow3.png)](/learn/assets/datatable_summaryrow3.png)
 
 ### Objects for custom styling
 
@@ -131,14 +128,105 @@ Page.DepartmentTable1Beforedatarender = function(widget, data, columns) {
 Return an object with keys value and class to display data and add styles associated to that class in **setSummaryRowData** on the column where you want to set the summary row data.
 
 ```js
-Page.DepartmentTable1Beforedatarender = function(widget, data, columns) {
-    const budgetAggregate = columns.budget.aggregate;
+Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
+    const DISCOUNT = Page.Variables.Discount.dataSet.dataValue;
+    const netAmountAggregate = columns.netAmount.aggregate;
 
-    columns.name.setSummaryRowData({
-        value: 'Total Budget',
-        class: 'bold-class'
-    });
-    columns.budget.setSummaryRowData(budgetAggregate.sum());
+    columns.item.setSummaryRowData([
+        'Net Total',
+        'Discount',
+        {
+            value: 'Total Budget',
+            class: 'bold-class'
+        }
+    ]);
+    columns.netAmount.setSummaryRowData([
+        netAmountAggregate.sum(),
+        DISCOUNT + '%',
+        {
+            value: calculateTotal(),
+            class: 'bold-class'
+        }
+    ]);
+
+    function calculateTotal() {
+        let total = netAmountAggregate.sum();
+        return total - ((total / 100) * DISCOUNT);
+    }
 };
 ```
 [![](/learn/assets/datatable_summaryrow4.png)](/learn/assets/datatable_summaryrow4.png)
+
+#### Summary Row Custom Asynchronous Function
+Call custom function and return promise in **setSummaryRowData** on the column where you want to set the summary row data.
+
+```js
+Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
+    const DISCOUNT = Page.Variables.Discount.dataSet.dataValue;
+    const netAmountAggregate = columns.netAmount.aggregate;
+
+    columns.item.setSummaryRowData([
+        'Net Total',
+        'Discount',
+        'Total'
+    ]);
+    columns.netAmount.setSummaryRowData([
+        netAmountAggregate.sum(),
+        DISCOUNT + '%',
+        calculateTotal()
+    ]);
+
+    function calculateTotal() {
+        return new Promise(function(resolve, reject) {
+            Page.Variables.Total.invoke().then((data) => {
+                resolve(JSON.parse(data.body).budget);
+            });
+        });
+    }
+};
+```
+[![](/learn/assets/datatable_summaryrow5.gif)](/learn/assets/datatable_summaryrow5.gif)
+
+:::note
+The Summary row columns visibility is dependent on the actual columns visibility. If a column is set to not show in mobile/desktop devices the respeective summary row columns will also be hidden.
+
+#### Example
+In the below example the **Net Amount** column is hidden in mobile devices hence the summary rows will only show the **Items** related summary data.
+
+```js
+Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
+    const DISCOUNT = Page.Variables.Discount.dataSet.dataValue;
+    const netAmountAggregate = columns.netAmount.aggregate;
+
+    columns.item.setSummaryRowData([
+        'Net Total',
+        'Discount',
+        {
+            value: 'Total Budget',
+            class: 'bold-class'
+        }
+    ]);
+    columns.netAmount.setSummaryRowData([
+        netAmountAggregate.sum(),
+        DISCOUNT + '%',
+        {
+            value: calculateTotal(),
+            class: 'bold-class'
+        }
+    ]);
+
+    function calculateTotal() {
+        let total = netAmountAggregate.sum();
+        return total - ((total / 100) * DISCOUNT);
+    }
+};
+```
+
+##### Mobile
+
+[![](/learn/assets/datatable_summaryrow6.png)](/learn/assets/datatable_summaryrow6.png)
+
+##### Desktop
+
+[![](/learn/assets/datatable_summaryrow4.png)](/learn/assets/datatable_summaryrow4.png)
+:::
