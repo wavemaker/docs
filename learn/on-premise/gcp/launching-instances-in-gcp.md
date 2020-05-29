@@ -1,7 +1,7 @@
 ---
-title: "WaveMaker Enterprise Setup on Google Cloud Platform"
+title: "WaveMaker Enterprise Setup on GCP"
 id: ""
-sidebar_label: "Setup on GCP"
+sidebar_label: "Preparing infrastructure on GCP"
 ---
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: "WaveMaker Enterprise Setup on AWS EC2"
+title: "Preparing Infrastructure on AWS"
 id: ""
-sidebar_label: "Setup on AWS"
+sidebar_label: "Preparing Infrastructure on AWS"
 ---
 ---
 

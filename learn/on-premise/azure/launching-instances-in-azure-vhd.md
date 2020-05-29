@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker Enterprise Setup on AzureCloud using VHD"
 id: ""
-sidebar_label: "Setup on Azure VHD"
+sidebar_label: "Preparing infrastructure on Azure using VHD"
 ---
 ---
 

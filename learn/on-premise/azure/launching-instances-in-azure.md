@@ -1,7 +1,7 @@
 ---
-title: "WaveMaker Enterprise Setup on Azure Cloud"
+title: "WaveMaker Enterprise Setup on Azure "
 id: ""
-sidebar_label: "Setup on Azure"
+sidebar_label: "Preparing infrastructure on Azure"
 ---
 ---
 
