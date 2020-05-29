@@ -393,18 +393,12 @@
      "on-premise/getting-started"
   ],
 
-  "Prerequisites": 
+  "Installation":
   [
-    "on-premise/prerequisites",
-    "on-premise/install-prerequisites"
-  ],
-
-  "Enviroments":
-  [
-    "on-premise/preparing-infrastructure",
+    
     {
       "type": "subcategory",
-      "label": "AWS",
+      "label": "Install on AWS",
       "ids": 
       [
         "on-premise/launching-instances-in-aws"
@@ -413,7 +407,7 @@
 
     {
       "type": "subcategory",
-      "label": "Microsoft Azure",
+      "label": "Install on Azure",
       "ids": 
       [
         "on-premise/launching-instances-in-azure",
@@ -423,7 +417,7 @@
 
     {
       "type": "subcategory",
-      "label": "Google Cloud Platform",
+      "label": "Install on GCP",
       "ids": 
       [
         "on-premise/launching-instances-in-gcp"
@@ -451,23 +445,7 @@
 
   ],
    
- 
-  "Installation":
-  [
-    "on-premise/download-copy-installer",
-    "on-premise/extract-package",
-    "on-premise/initilize-setup",
-    "on-premise/setup-using-cw",
-    "on-premise/apply-license"
-  ],
-  "Configure":
-  [
-    "on-premise/config-users-auth-providers",
-    "on-premise/config-vcs",
-    "on-premise/add-dev-capacity",
-    "on-premise/add-apps-capacity",
-    "on-premise/config-pipeline"
-  ],
+
   "Upgrade":
   [
     "on-premise/upgrade-setup",
