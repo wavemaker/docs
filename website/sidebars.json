@@ -393,57 +393,94 @@
      "on-premise/getting-started"
   ],
 
-  "Installation":
-  [
+  "Install on AWS":
+
+      [
+        "on-premise/aws/launching-instances-in-aws",
+        "on-premise/aws/install/download-copy-installer",
+        "on-premise/aws/install/extract-package",
+        "on-premise/aws/install/initilize-setup",
+        "on-premise/aws/install/setup-using-cw",
+        "on-premise/aws/install/apply-license",
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"
+      ],
+
+  "Install on Azure":
+      [
+        "on-premise/azure/launching-instances-in-azure",
+        "on-premise/azure/launching-instances-in-azure-vhd",
+        "on-premise/azure/install/download-copy-installer",
+        "on-premise/azure/install/extract-package",
+        "on-premise/azure/install/initilize-setup",
+        "on-premise/azure/install/setup-using-cw",
+        "on-premise/azure/install/apply-license",
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"
+      ],
+
+  "Install on GCP":
+ 
+      [
+        "on-premise/gcp/launching-instances-in-gcp",
+        "on-premise/gcp/install/download-copy-installer",
+        "on-premise/gcp/install/extract-package",
+        "on-premise/gcp/install/initilize-setup",
+        "on-premise/gcp/install/setup-using-cw",
+        "on-premise/gcp/install/apply-license",
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"
+      ],
+
+  "Install on VMware ESXi":
+
+      [
+        "on-premise/vmware-esxi/launching-instances-in-esxi-ova",
+        "on-premise/vmware-esxi/launching-instances-in-esxi-iso",
+        "on-premise/vmware-esxi/install/download-copy-installer",
+        "on-premise/vmware-esxi/install/extract-package",
+        "on-premise/vmware-esxi/install/initilize-setup",
+        "on-premise/vmware-esxi/install/setup-using-cw",
+        "on-premise/vmware-esxi/install/apply-license",
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"
+      ],
     
-    {
-      "type": "subcategory",
-      "label": "Install on AWS",
-      "ids": 
+  "Install on Hyper-V":
       [
-        "on-premise/launching-instances-in-aws"
-      ]
-    },
-
-    {
-      "type": "subcategory",
-      "label": "Install on Azure",
-      "ids": 
+        "on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
+        "on-premise/hyper-v/install/download-copy-installer",
+        "on-premise/hyper-v/install/extract-package",
+        "on-premise/hyper-v/install/initilize-setup",
+        "on-premise/hyper-v/install/setup-using-cw",
+        "on-premise/hyper-v/install/apply-license",
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"
+      ],
+  
+  "Configure":
       [
-        "on-premise/launching-instances-in-azure",
-        "on-premise/launching-instances-in-azure-vhd"
-      ]
-    },
-
-    {
-      "type": "subcategory",
-      "label": "Install on GCP",
-      "ids": 
-      [
-        "on-premise/launching-instances-in-gcp"
-      ]
-    },
-
-    {
-      "type": "subcategory",
-      "label": "VMware ESXi",
-      "ids": 
-      [
-        "on-premise/launching-instances-in-esxi-ova",
-        "on-premise/launching-instances-in-esxi-iso"
-      ]
-    },
-
-    {
-      "type": "subcategory",
-      "label": "Hyper-V",
-      "ids": 
-      [
-        "on-premise/launching-instances-in-hyper-v-vhd"
-      ]
-    }  
-
-  ],
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"       
+      ],    
    
 
   "Upgrade":
