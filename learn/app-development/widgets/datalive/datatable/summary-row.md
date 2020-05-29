@@ -191,44 +191,4 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 
 :::note
 The Summary row columns visibility is dependent on the actual columns visibility. If a column is set to not show in mobile/desktop devices the respeective summary row columns will also be hidden. Using authorisation setting in WaveMaker, a column could be hidden for specific roles of users. In this case, the summary row which depends on that column is also not visible.
-
-#### Example
-In the below example the **Net Amount** column is hidden in mobile devices hence the summary rows will only show the **Items** related summary data.
-
-```js
-Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
-    const DISCOUNT = Page.Variables.Discount.dataSet.dataValue;
-    const netAmountAggregate = columns.netAmount.aggregate;
-
-    columns.item.setSummaryRowData([
-        'Net Total',
-        'Discount',
-        {
-            value: 'Total Budget',
-            class: 'bold-class'
-        }
-    ]);
-    columns.netAmount.setSummaryRowData([
-        netAmountAggregate.sum(),
-        DISCOUNT + '%',
-        {
-            value: calculateTotal(),
-            class: 'bold-class'
-        }
-    ]);
-
-    function calculateTotal() {
-        let total = netAmountAggregate.sum();
-        return total - ((total / 100) * DISCOUNT);
-    }
-};
-```
-
-##### Mobile
-
-[![](/learn/assets/datatable_summaryrow6.png)](/learn/assets/datatable_summaryrow6.png)
-
-##### Desktop
-
-[![](/learn/assets/datatable_summaryrow4.png)](/learn/assets/datatable_summaryrow4.png)
 :::
