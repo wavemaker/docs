@@ -9,10 +9,6 @@ You can setup WaveMaker Enterprise on any machine.
 
 This document uses words like **VM**, **Instance** to refer a machine.
 
-The machine can be hosted on any cloud provider(like AWS EC2, GCP, Azure .etc) or enterprise cloud or baremetal. All machine allocated to WME  platform should not have any other running process.
-
-The following are prerequisites to setup WaveMaker Enterprise. The below-mentioned system requirements allow for limited app developments and deployments. You can increase this capacity by adding Developer Workspace and App Deployment instances thus scaling your WME.
-
 ## WME Setup System Requirements
 
 WaveMaker Enterprise can be installed on any machine with below requirements. Before you start setting up the WaveMaker Enterprise, here is a list of a minimum and recommended System Requirements for the each type of Instance.
