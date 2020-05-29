@@ -403,6 +403,7 @@
       [
         "on-premise/aws/waveMaker-Enterprise-Setup-on-AWS",
         "on-premise/aws/launching-instances-in-aws",
+        "on-premise/aws/install-prerequisites",
         "on-premise/aws/install/download-copy-installer",
         "on-premise/aws/install/extract-package",
         "on-premise/aws/install/initilize-setup",
@@ -420,6 +421,7 @@
         "on-premise/azure/wavemaker-enterprise-setup-on-azure",
         "on-premise/azure/launching-instances-in-azure",
         "on-premise/azure/launching-instances-in-azure-vhd",
+        "on-premise/azure/install-prerequisites",
         "on-premise/azure/install/download-copy-installer",
         "on-premise/azure/install/extract-package",
         "on-premise/azure/install/initilize-setup",
@@ -437,6 +439,7 @@
       [
         "on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
         "on-premise/gcp/launching-instances-in-gcp",
+        "on-premise/gcp/install-prerequisites",
         "on-premise/gcp/install/download-copy-installer",
         "on-premise/gcp/install/extract-package",
         "on-premise/gcp/install/initilize-setup",
