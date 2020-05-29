@@ -1,7 +1,7 @@
 ---
 title: "Wavemaker Enterprise Setup Process"
 id: ""
-sidebar_label: "Getting started"
+sidebar_label: "Enterprise Setup Process"
 ---
 ---
 

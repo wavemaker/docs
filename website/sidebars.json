@@ -389,8 +389,13 @@
   "WaveMaker Enterprise": 
   [
      "on-premise/welcome",
-     "on-premise/architecture",
-     "on-premise/getting-started"
+     "on-premise/architecture"
+  ],
+
+  "Getting started":
+  [
+    "on-premise/getting-started",
+    "on-premise/prerequisites"          
   ],
 
   "Install on AWS":
@@ -472,6 +477,7 @@
         "on-premise/configure/add-apps-capacity",
         "on-premise/configure/config-pipeline"
       ],
+
   
   "Configure":
       [
