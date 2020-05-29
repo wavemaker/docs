@@ -5,9 +5,9 @@ sidebar_label: "Summary Row"
 ---
 ---
 
-When creating a datatable, a Summary Row Function can be used to add summary at the bottom of the table. This summary computed on the client side or on the server side.
+When creating a data table, Summary Row Function can be used to add summary at the bottom of the table. This summary can be computed on the client side or on the server side.
 
-Using Summary Row Function, you can summarize any number of columns. A table can also include more than one summary row. These methods to calculate the summary can use inbuilt javascript functions like sum, minimum, maximum, or custom logic can be implemented in another javascript function.
+Using Summary Row Function, you can summarize any number of columns. A table can also include more than one summary row. Visibility of the summary row is governed by the visibility rules set upon the columns being summarised. To calculate the summary inbuilt javascript functions like sum, minimum, maximum, or custom logic can be used or another javascript function can be supplied.
 
 You can set summary row using the below exposed function on a column in Beforedatarender event callback:
 
@@ -122,9 +122,8 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 ```
 [![](/learn/assets/datatable_summaryrow3.png)](/learn/assets/datatable_summaryrow3.png)
 
-### Objects for custom styling
+### Styling the Summary row
 
-#### Summary Row Styling column
 Return an object with keys value and class to display data and add styles associated to that class in **setSummaryRowData** on the column where you want to set the summary row data.
 
 ```js
@@ -158,7 +157,10 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 [![](/learn/assets/datatable_summaryrow4.png)](/learn/assets/datatable_summaryrow4.png)
 
 #### Summary Row Custom Asynchronous Function
-Call custom function and return promise in **setSummaryRowData** on the column where you want to set the summary row data.
+
+Javascript function that calculates the summary can invoke an API to return result of calculation executed on the server side. This API could be application's business logic. For example, when calculating Discount being applied, business logic may assign the discount value based on the loggedin user or amount money spent etc. In such a case, the javascript function will return a ```Promise``` after calling the API.
+
+Here is an example of custom javascript function that invokes an API and returns promise to the ```setSummaryRowData```
 
 ```js
 Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
@@ -188,7 +190,7 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 [![](/learn/assets/datatable_summaryrow5.gif)](/learn/assets/datatable_summaryrow5.gif)
 
 :::note
-The Summary row columns visibility is dependent on the actual columns visibility. If a column is set to not show in mobile/desktop devices the respeective summary row columns will also be hidden.
+The Summary row columns visibility is dependent on the actual columns visibility. If a column is set to not show in mobile/desktop devices the respeective summary row columns will also be hidden. Using authorisation setting in WaveMaker, a column could be hidden for specific roles of users. In this case, the summary row which depends on that column is also not visible.
 
 #### Example
 In the below example the **Net Amount** column is hidden in mobile devices hence the summary rows will only show the **Items** related summary data.
