@@ -29,6 +29,6 @@ The complete Wavemaker Enterprise setup involve below steps
 3. Choose Operating system. We support
    - RHEL 7.x, RHEL 8.x
    - Ubuntu 16.04.
-3. Installing Additional Softwares based on Operating System.
-4. Installing WaveMakerEnterprise using WME installer.
-5. Configuring setup. 
+4. Installing Additional Softwares based on Operating System.
+5. Installing WaveMakerEnterprise using WME installer.
+6. Configuring setup.

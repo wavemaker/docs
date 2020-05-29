@@ -499,10 +499,10 @@
 
   "Upgrade":
   [
-    "on-premise/upgrade-setup",
-    "on-premise/download-copy-patch",
-    "on-premise/extract-patch",
-    "on-premise/run-patch"
+    "on-premise/upgrade/upgrade-setup",
+    "on-premise/upgrade/download-copy-patch",
+    "on-premise/upgrade/extract-patch",
+    "on-premise/upgrade/run-patch"
   ]
 },
 

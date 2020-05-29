@@ -12,7 +12,7 @@ sidebar_label: "Install Prerequisites Softwares"
 - Same applies for External Instance as well.
 - Internet is not required for Installation in this case.
 
-## The ssh user don't have privileges 
+## The ssh user don't have privileges
 
 - The given ssh user don't have permission to install softwares
 - Then install below as per operating system.

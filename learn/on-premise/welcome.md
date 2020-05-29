@@ -13,12 +13,12 @@ WaveMaker Enterprise (WME) is a on-premise offering of WaveMaker. WME can be ins
 
 - Unlimited Apps, Unlimited App Users, Team Collaboration
 - Enterprise Integrations
-    - Private code repose
-    - Enterprise SSO
-    - Administration Developer Roles
-    - Infra management
-    - Prometheus insights 
-    - Priority Support, Training & Professional Services
+  - Private code repose
+  - Enterprise SSO
+  - Administration Developer Roles
+  - Infra management
+  - Prometheus insights
+  - Priority Support, Training & Professional Services
 
 ## Release History
 

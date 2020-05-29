@@ -1,27 +1,21 @@
 ---
-title: "Install Prerequisites softwares"
+title: "Install Prerequisites Softwares"
 id: ""
-sidebar_label: "Install Prerequisites softwares"
+sidebar_label: "Install Prerequisites Softwares"
 ---
 ---
 
-## WaveMaker Images (OVA/VHD/AMI)
+## The ssh user has privileges(root/sudo) for install/upgrade
 
-If you have WaveMaker Images (OVA/VHD/AMI)
-
-- No need to install any Prerequisites.
-- OVA/VHD/AMI will come up with all Prerequisites.
-
-## Operating System Pre-Installed
-
-- If given user has privileges(root/sudo) to install/upgrade.
+- If given ssh user has privileges(root/sudo) to install/upgrade.
 - WME Installer will automatically installs required softwares.
 - Same applies for External Instance as well.
 - Internet is not required for Installation in this case.
 
-## Other OS
-  
-For other cases, install below as per operating system.
+## The ssh user don't have privileges
+
+- The given ssh user don't have permission to install softwares
+- Then install below as per operating system.
 
 ### Ubuntu
 
