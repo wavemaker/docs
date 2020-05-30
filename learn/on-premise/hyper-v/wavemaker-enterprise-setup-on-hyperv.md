@@ -1,16 +1,17 @@
 ---
-title: "WaveMaker Enterprise Setup on Hyper-v"
+title: "WaveMaker Enterprise Setup on Hyper-V"
 id: ""
-sidebar_label: "WaveMaker Enterprise Setup on Hyper-v"
+sidebar_label: "WaveMaker Enterprise Setup on Hyper-V"
 ---
 ---
 
-## Wavemaker Enterprise setup process on Hyper-v
+## Wavemaker Enterprise setup process on Hyper-V
 
-The below guide helps in the process of setting up WaveMaker Enterprise on Hyper-v.
-You need Hyper-v supported version prior to the starting this process.
+The below guide helps in the process of setting up WaveMaker Enterprise on Hyper-V.
+You need Hyper-V before starting this process.
 In the Guide we will walk through below things.
 
-- Preparing the Infrastructure in Hyper-v for WME setup with required [system prerequisites](../prerequisites.md).
-- The VHD file consists of WME installer file(Shipped by WaveMaker team) ,using the file install WME
-- configure WME based on your organization requirements
+- Preparing the Infrastructure using Hyper-V for WME setup with required [system prerequisites](../prerequisites.md).
+- Use VHD file shipped by WaveMaker team or your own VHD.
+- Download WME installer file(Shipped by WaveMaker team) and install WME
+- Configure WME based on your organization requirements

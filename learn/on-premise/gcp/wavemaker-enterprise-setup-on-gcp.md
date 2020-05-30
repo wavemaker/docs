@@ -14,4 +14,4 @@ In the Guide we will walk through below things.
 - Preparing the Infrastructure in GCP for WME setup with required [system prerequisites](../prerequisites.md).
 - Install required prerequisites softwares respect to the OS type.
 - Download WME installer file(Shipped by WaveMaker team) and install WME
-- configure WME based on your organization requirements
+- Configure WME based on your organization requirements
