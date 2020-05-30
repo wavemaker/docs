@@ -8,16 +8,16 @@ sidebar_label: "Preparing infrastructure on Hyper-V using VHD"
 ## Prerequisite
 
 - VHD file shared by WaveMaker team
-- Hyper V with version 10.0.x on Windows 10 Pro
+- Hyper-V with version 10.0.x on Windows 10 Pro
 - Permissions to launch VM
 
 :::note
-This guide has written based on Hyper V with version 10.0.x.
+This guide has written based on Hyper-V with version 10.0.x.
 :::
 
 ## Launch Platform Instance
 
-- Open  HYPER V, Right-click on your Hyper-V host, click on New, Select virtual machine for creating a platform virtual machine.
+- Open  Hyper-V, Right-click on your Hyper-V host, click on New, Select virtual machine for creating a platform virtual machine.
 
 [![selecting-the-vm-creation-in-hyperv](/learn/assets/wme-setup/vm-creation-in-hyperv-using-vhd/selecting-the-vm-creation-in-hyperv.png)](/learn/assets/wme-setup/vm-creation-in-hyperv-using-vhd/selecting-the-vm-creation-in-hyperv.png)
 

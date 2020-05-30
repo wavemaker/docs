@@ -1,7 +1,7 @@
 ---
-title: "WaveMaker Enterprise Setup on VMware ESXi using OVA"
+title: "WaveMaker Enterprise Setup on VMWare ESXi using OVA"
 id: ""
-sidebar_label: "Preparing infrastructure on VMware ESXi using OVA"
+sidebar_label: "Preparing infrastructure on VMWare ESXi using OVA"
 ---
 ---
 
@@ -9,7 +9,7 @@ sidebar_label: "Preparing infrastructure on VMware ESXi using OVA"
 
 - Platform OVA file shared by WaveMaker team.
 - External Instance(StudioWorkspace Instance / AppDeployment Instance) OVA file shared by WaveMaker team.
-- VMware ESXi version 6.5 or higher.
+- VMWare ESXi version 6.5 or higher.
 - Permission for launching OVA.
 
 :::note
@@ -18,7 +18,7 @@ This guide has written based on Esxi version 6.5.
 
 ## Launch Platform Instance
 
-- Login into VMware ESXi Server using  Server IP address and user credentials.
+- Login into VMWare ESXi Server using  Server IP address and user credentials.
 - Select Create/Register VM for creating the new virtual machine.
 - Select creation type as deploy a virtual machine by from an OVF or OVA file.
 
