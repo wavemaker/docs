@@ -66,19 +66,19 @@ sidebar_label: "Preparing Infrastructure on AWS"
 
 - Choose Next: Configure Instance Details,For Network, choose the same VPC that you created security groups,For Subnet, choose a desired subnet in any Availability Zone.
 
-[![instance configurations](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/configuration-of-instance.jpg)
+[![instance configurations](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)
 
 - Add storage 50 GiB for root volume, 50 GiB for wm-runtime and 150 GiB for wm-data.
 
-[![storage](/learn/assets/wme-setup/wme-setup-in-aws/platform-instance-storage.png)](/learn/assets/wme-setup/platform-instance-storage.png)  
+[![storage](/learn/assets/wme-setup/wme-setup-in-aws/platform-instance-storage.png)](/learn/assets/wme-setup/wme-setup-in-aws/platform-instance-storage.png)  
 
 - If you want to add any tags add tags to instance.
 
-[![tags](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)](/learn/assets/wme-setup/addig-tags.png)  
+[![tags](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)  
 
 - Configure Security Group select existing security group and select WME-SG-Platform-Internal and after creation of instance select instance and at actions open networking section choose change security groups add security group WME-SG-Platform-Public.
 
-[![security group](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)](/learn/assets/wme-setup/security-group-configurations.png)
+[![security group](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)
 
 - Next review your instance details and launch the instance.
 
@@ -95,19 +95,19 @@ sidebar_label: "Preparing Infrastructure on AWS"
 
 - Choose Next: Configure Instance Details,For Network, choose the same VPC that you created security groups,For Subnet, choose a desired subnet in any Availability Zone.
 
-[!instance configuration[](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/configuration-of-instance.jpg)
+[!instance configuration[](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)
 
 - Add storage 150 GiB for data.
 
-[![storage](/learn/assets/wme-setup/wme-setup-in-aws/external-instance-storage.png)](/learn/assets/wme-setup/external-instance-storage.png)  
+[![storage](/learn/assets/wme-setup/wme-setup-in-aws/external-instance-storage.png)](/learn/assets/wme-setup/wme-setup-in-aws/external-instance-storage.png)  
 
 - Next if you want to add any tags add tags to instance.
 
-[![tags](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)](/learn/assets/wme-setup/addig-tags.png)  
+[![tags](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)  
 
 - Next Configure Security Group select existing security group and select WME-SG-Workspace-Internal security group.
 
-[![security groups](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)](/learn/assets/wme-setup/security-group-configurations.png)
+[![security groups](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)
 
 - Next review your instance details and launch the instance.
 
@@ -160,7 +160,7 @@ Example :
           mount /dev/xvdc    /wm-runtime  
 ```
 
-[![mounting volumes](/learn/assets/wme-setup/wme-setup-in-aws/mounting-platform-instance-volumes.jpg)](/learn/assets/wme-setup/mounting-platform-instance-volumes.jpg)
+[![mounting volumes](/learn/assets/wme-setup/wme-setup-in-aws/mounting-platform-instance-volumes.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/mounting-platform-instance-volumes.jpg)
 
 - To mount an attached EBS volume on every system reboot, add an entry for the device to the /etc/fstab file.
 - Take UUID of disks for identification by using the command.
@@ -176,7 +176,7 @@ UUID=<block-device_1-UUID>    /wm-data     ext4   defaults ,nofail  0  2
 UUID=<block-device_2-UUID>    /wm-runtime  ext4   defaults ,nofail  0  2
 ```
 
-[![fstab](/learn/assets/wme-setup/wme-setup-in-aws/fstab-platform.png)](/learn/assets/wme-setup/fstab-platform.png)
+[![fstab](/learn/assets/wme-setup/wme-setup-in-aws/fstab-platform.png)](/learn/assets/wme-setup/wme-setup-in-aws/fstab-platform.png)
 
 ### Mounting storage External Instance
 
@@ -222,7 +222,7 @@ Command : mount /dev/<block-device-name>   /data
 Example : mount /dev/xvdb   /data  
 ```
 
-[![mounting volumes](/learn/assets/wme-setup/wme-setup-in-aws/mounting-external-instance-storage.jpg)](/learn/assets/wme-setup/mounting-external-instance-storage.jpg)
+[![mounting volumes](/learn/assets/wme-setup/wme-setup-in-aws/mounting-external-instance-storage.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/mounting-external-instance-storage.jpg)
 
 - To mount an attached EBS volume on every system reboot, add an entry for the device to the /etc/fstab file.
 - Take UUID of disks for identification by using the command.
@@ -237,7 +237,7 @@ blkid
 UUID=<your-block-device-UUID>    /data     ext4     defaults ,nofail  0  2
 ```
 
-[![fstab](/learn/assets/wme-setup/wme-setup-in-aws/fstab-external.png)](/learn/assets/wme-setup/fstab-external.png)
+[![fstab](/learn/assets/wme-setup/wme-setup-in-aws/fstab-external.png)](/learn/assets/wme-setup/wme-setup-in-aws/fstab-external.png)
 
 ## What's next
 

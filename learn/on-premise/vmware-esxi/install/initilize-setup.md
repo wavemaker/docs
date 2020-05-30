@@ -18,4 +18,4 @@ sidebar_label: "Initialize Setup"
 - After successful initialization, the script will display a URL to perform the rest of the WME setup.
 - Go to  <http://Platform-Instance-IP:8080> as directed by the above command output to do the WME setup.
 
-    [![setup initialization](/learn/assets/wme-setup/wavemaker-setup-intialization.jpg)](/learn/assets/wme-setup/wavemaker-setup-intialization.jpg)
+    [![setup initialization](/learn/assets/wme-setup/wavemaker-setup-initialization.jpg)](/learn/assets/wme-setup/wavemaker-setup-initialization.jpg)

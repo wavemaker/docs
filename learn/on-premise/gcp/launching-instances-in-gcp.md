@@ -36,7 +36,7 @@ Applies for access from the External Instance (Workspace Instance/App Deployment
 
 - Provide basic details name and network details for firewall.
 
-[![network details](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-name-and-network.png)](/learn/assets/wme-setup/platform-internal-firewall-name-and-network.png)
+[![network details](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-name-and-network.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-name-and-network.png)
 
 - Select target type and source filter type.by using the target we can connect the firewall rule to Instance.  example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the ports will be open to that Instance. we provide this tags at network section during the Instance creation.or else you can select your own Target and Source methods.
 
@@ -48,7 +48,7 @@ Applies for access from the Platform Instance (Workspace Instance/App Deployment
 
 - Provide basic details name and network details for firewall
 
-[![network details](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-firewall-name-and-network.png)](/learn/assets/wme-setup/external-instance-firewall-name-and-network.png)
+[![network details](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-firewall-name-and-network.png)](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-firewall-name-and-network.png)
 
 - Select target type and source filter type. by using the target we can connect the firewall rule to Instance. example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the ports will be open to that Instance.we provide this tags at network section during the Instance creation.or else you can select your own Target and Source methods.
 
@@ -58,7 +58,7 @@ Applies for access from the Platform Instance (Workspace Instance/App Deployment
 
 - Select region,zone and provide name for Instance.select machine type with minimum 16 GB memory.
 
-[![instance region](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-region-and-zone.png)](/learn/assets/wme-setup/platform-instance-region-and-zone.png)
+[![instance region](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-region-and-zone.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-region-and-zone.png)
 
 - Select image or snapshot for creating boot disk.select operating system as ubuntu and version as ubuntu 16.04 LTS.
 
@@ -66,7 +66,7 @@ Applies for access from the Platform Instance (Workspace Instance/App Deployment
 
 - Provide ssh key details in security for accessing the Instance.
 
-[![ssh details](/learn/assets/wme-setup/wme-setup-in-gcp/instance-ssh-security.png)](/learn/assets/wme-setup/instance-ssh-security.png)
+[![ssh details](/learn/assets/wme-setup/wme-setup-in-gcp/instance-ssh-security.png)](/learn/assets/wme-setup/wme-setup-in-gcp/instance-ssh-security.png)
 
 - At disk section create disks for wm-data and wm-runtime with 150 and 50 GiB.
 

@@ -39,60 +39,60 @@ This guide has written based on Esxi version 6.5.
 
 - Select the language to perform the further operation.
 
-[![language](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-language-for-process.png)](/learn/assets/wme-setup/selecting-language-for-process.png)
+[![language](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-language-for-process.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-language-for-process.png)
 
 - Select install ubuntu server to start installation process.
 
-[![installation](/learn/assets/wme-setup/vm-creation-by-using-iso-image/ubuntu-server-installation.png)](/learn/assets/wme-setup/ubuntu-server-installation.png)
+[![installation](/learn/assets/wme-setup/vm-creation-by-using-iso-image/ubuntu-server-installation.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/ubuntu-server-installation.png)
 
 - Select the language for system.
 
-[![language](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-the-language-for-system.png)](/learn/assets/wme-setup/selecting-the-language-for-system.png)
+[![language](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-the-language-for-system.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-the-language-for-system.png)
 
 - Select your location.
 
-[![location](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-location.png)](/learn/assets/wme-setup/selecting-location.png)
+[![location](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-location.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-location.png)
 
 - Configure the keyboard by selecting a language.
 - Provide hostname for the system to configure the system.
 
-[![host name](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-the-host-name.png)](/learn/assets/wme-setup/selecting-the-host-name.png)
+[![host name](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-the-host-name.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-the-host-name.png)
 
 - Setup users and password details for server, provide the username as ubuntu.
 
-[![username and password](/learn/assets/wme-setup/vm-creation-by-using-iso-image/username-and-password-setup.jpg)](/learn/assets/wme-setup/username-and-password-setup.jpg)
+[![username and password](/learn/assets/wme-setup/vm-creation-by-using-iso-image/username-and-password-setup.jpg)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/username-and-password-setup.jpg)
 
 - Configure the clock.
 
-[![clock configure](/learn/assets/wme-setup/vm-creation-by-using-iso-image/configuring-the-clock.png)](/learn/assets/wme-setup/configuring-the-clock.png)
+[![clock configure](/learn/assets/wme-setup/vm-creation-by-using-iso-image/configuring-the-clock.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/configuring-the-clock.png)
 
 - Select the disk partition method.
 
-[![disk partition method](/learn/assets/wme-setup/vm-creation-by-using-iso-image/disk-partition-method.png)](/learn/assets/wme-setup/disk-partition-method.png)
+[![disk partition method](/learn/assets/wme-setup/vm-creation-by-using-iso-image/disk-partition-method.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/disk-partition-method.png)
 
 - Select the disk to partition.
 
-[![disk partition](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-disk-to-partition.png)](/learn/assets/wme-setup/selecting-disk-to-partition.png)
+[![disk partition](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-disk-to-partition.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-disk-to-partition.png)
 
 - Choose the option to write changes to disk and configure.
 
-[![disk](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-option-for-writting-changes-to-disk.png)](/learn/assets/wme-setup/selecting-option-for-writting-changes-to-disk.png)
+[![disk](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-option-for-writting-changes-to-disk.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-option-for-writting-changes-to-disk.png)
 
 - Select amount of volume to do the partition.
 
-[![volume](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-volume-size-for-partition.png)](/learn/assets/wme-setup/selecting-volume-size-for-partition.png)
+[![volume](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-volume-size-for-partition.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/selecting-volume-size-for-partition.png)
 
 - If you have any proxy provide proxy details.
 
-[![proxy information](/learn/assets/wme-setup/vm-creation-by-using-iso-image/proxy-information.png)](/learn/assets/wme-setup/proxy-information.png)
+[![proxy information](/learn/assets/wme-setup/vm-creation-by-using-iso-image/proxy-information.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/proxy-information.png)
 
 - Select option to manage upgrades on your system.
 
-[![managing upgrade](/learn/assets/wme-setup/vm-creation-by-using-iso-image/managing-upgrades.png)](/learn/assets/wme-setup/managing-upgrades.png)
+[![managing upgrade](/learn/assets/wme-setup/vm-creation-by-using-iso-image/managing-upgrades.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/managing-upgrades.png)
 
 - Choose an option to install or not grub boot loader to the master boot record.
 
-[![installing grub loader](/learn/assets/wme-setup/vm-creation-by-using-iso-image/installing-grub-loader.png)](/learn/assets/wme-setup/installing-grub-loader.png)
+[![installing grub loader](/learn/assets/wme-setup/vm-creation-by-using-iso-image/installing-grub-loader.png)](/learn/assets/wme-setup/vm-creation-by-using-iso-image/installing-grub-loader.png)
 
 - Wait for few moments to complete the installation process, then login into system by providing username and password.
 - For connecting from terminals via ssh, install openssh-server and check the status.

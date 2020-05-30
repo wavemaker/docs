@@ -42,7 +42,7 @@ This guide has written based on Esxi version 6.5.
 
 - Wait for few moments for complete successfully the creation of virtual machine.
 
-[![dashboard](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png)
+[![dashboard](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png)
 
 ## Launch External Instance
 
