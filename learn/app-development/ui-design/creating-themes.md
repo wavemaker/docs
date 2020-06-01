@@ -28,7 +28,7 @@ npm install -g bower
 ```  
 For more information on bower [click here](https://www.npmjs.com/package/bower)
 4. Setup the **WaveMaker Theme repository**. 
-> For Git clone, see [Grunt Wavemaker Theme](https://github.com/wavemaker/grunt-wavemaker-theme.git).
+> For Git clone, see [Grunt WaveMaker Theme](https://github.com/wavemaker/grunt-wavemaker-theme.git).
 ```     
 cd grunt-wavemaker-theme
 ```

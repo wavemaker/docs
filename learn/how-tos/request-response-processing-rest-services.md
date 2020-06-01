@@ -78,7 +78,7 @@ Each HttpRequestProcessor will be called sequentially in the input http request 
 </bean>
 ```
 
-## Configuring Request and Response Processor properties in Wavemaker
+## Configuring Request and Response Processor properties in WaveMaker
 
 In order to configure the request and response processors:
 

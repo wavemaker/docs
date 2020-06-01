@@ -32,7 +32,7 @@ In the dialogue that appears enter the required fields after selecting Docusign 
 2. Docusign password: provide your password for Docusign(you can also provide the encrypted password)
 3. Docusign Username: Provide your username
 4. Integrator Key: Provide the Integrator Key derived for your Docusign App from the Docusign Admin console.
-5. Return URL: Provide the URL to the page of your Wavemaker app that uses the prefab.
+5. Return URL: Provide the URL to the page of your WaveMaker app that uses the prefab.
 
 ![](/learn/assets/Screenshot-2018-12-15-at-11.41.48-AM.png)
 

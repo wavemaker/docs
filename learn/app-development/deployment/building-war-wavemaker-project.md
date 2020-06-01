@@ -29,7 +29,7 @@ mvn clean install -PprofileName
 
 ![](/learn/assets/enter-mvn-install-cmd-and-profilename.png)
 
-**Note-1:** Wavemaker project has two default profiles, which are **development** and **deployment**. Prefix the profile name with a **P**. If you do not prefix the profile name; the system selects a **development** profile by default. You can add Custom Profiles from the **Config Profiles** section in the **Project Settings** options. To locate the existing profiles' path, go to Step-7.
+**Note-1:** WaveMaker project has two default profiles, which are **development** and **deployment**. Prefix the profile name with a **P**. If you do not prefix the profile name; the system selects a **development** profile by default. You can add Custom Profiles from the **Config Profiles** section in the **Project Settings** options. To locate the existing profiles' path, go to Step-7.
 
 - Step-6: In the project folder, a new folder called **target** generates automatically with the project war file in it.
 

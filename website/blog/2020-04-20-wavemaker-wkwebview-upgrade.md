@@ -5,7 +5,7 @@ author: Srinivasa Rao Boyina
 
 ## Problem 
 
-Apple deprecated UIWebView and introduced WKWebView. Starting from April 1st, 2020, Apple stopped accepting all new apps that have references to UIWebView. From December 2020, Apple will stop accepting app updates that have references to UIWebView. The current version Cordova that is used in Wavemaker, uses UIWebView by default.
+Apple deprecated UIWebView and introduced WKWebView. Starting from April 1st, 2020, Apple stopped accepting all new apps that have references to UIWebView. From December 2020, Apple will stop accepting app updates that have references to UIWebView. The current version Cordova that is used in WaveMaker, uses UIWebView by default.
 
 <!-- truncate -->
   
@@ -13,18 +13,18 @@ Apple deprecated UIWebView and introduced WKWebView. Starting from April 1st, 20
 Cordova created a plugin called [cordova-plugin-wkwebview-engine](https://github.com/apache/cordova-plugin-wkwebview-engine). This plugin brings WKWebView of iOS into cordova. Due to its restrictions imposed by WKWebview, two problems araised.
 
  1. Cordova by default loads index.html using file:// scheme. WKWebView is blocking access from html page (loaded via file://) to files outside of application directory.
- 2. UIWebView allowed CORS requests even if CORS is not enabled in the server. But, WKWebView blocks cross-origin requests unless CORS allowed by server. In Wavemaker, CORS is optional.
- 3. It doesnot store cookies from third party domains (domains other than the domain that html file is loaded). Wavemaker uses Cookie based authentication.
+ 2. UIWebView allowed CORS requests even if CORS is not enabled in the server. But, WKWebView blocks cross-origin requests unless CORS allowed by server. In WaveMaker, CORS is optional.
+ 3. It doesnot store cookies from third party domains (domains other than the domain that html file is loaded). WaveMaker uses Cookie based authentication.
 
 [cordova-plugin-local-webserver](https://github.com/wavemaker/cordova-plugin-local-webserver) is a cordova plugin that serves the app files over http by hosting a server with in the app. This helps in resolving problem1.
 
 [cordova-plugin-advanced-http](https://github.com/wavemaker/cordova-plugin-advanced-http) is a cordova plugin that provides API (instead of xhr) to make http calls to the remote server. Using this plugin API, a wrapper is created to replace XHR so that all existing XHR calls work as earlier. This plugin routes all requests through native layer that doesnot block cross-origin requests. This plugin also persist cookies from all domains and send them in appropriate requests. This plugin helps in resolving problem 2 and 3.
 
-In addition to the above, Cordova framework and plugins may have references to UIWebView. Cordova team addressed these framework level changes in cordova-ios@5.1.0. They added a preference called 'WKWebViewOnly'. If this preference is set to 'true', then UIWebView references in the cordova framework are replaced with WKWebView. Out of all the plugins that are supported by Wavemaker, cordova-plugin-inappbrowser has UIWebView reference. cordova-plugin-inappbrowser removed those references in version 3.2.0. So, that plugin is upgraded to 3.2.0.
+In addition to the above, Cordova framework and plugins may have references to UIWebView. Cordova team addressed these framework level changes in cordova-ios@5.1.0. They added a preference called 'WKWebViewOnly'. If this preference is set to 'true', then UIWebView references in the cordova framework are replaced with WKWebView. Out of all the plugins that are supported by WaveMaker, cordova-plugin-inappbrowser has UIWebView reference. cordova-plugin-inappbrowser removed those references in version 3.2.0. So, that plugin is upgraded to 3.2.0.
 
   
 #### Developer Action Required
-With Wavemaker 10.4 release, platform has no references to UIWebView. Developer has to make sure that all third party plugins (if any) also have no references to UIWebView in their code. If references are present, contact respective plugin-developer for a newer version of the plugin. 
+With WaveMaker 10.4 release, platform has no references to UIWebView. Developer has to make sure that all third party plugins (if any) also have no references to UIWebView in their code. If references are present, contact respective plugin-developer for a newer version of the plugin. 
 
 ## Known Issues
 
