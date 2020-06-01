@@ -189,6 +189,32 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 ```
 [![](/learn/assets/datatable_summaryrow5.gif)](/learn/assets/datatable_summaryrow5.gif)
 
+### Handling column visibility
+
 :::note
-The Summary row columns visibility is dependent on the actual columns visibility. If a column is set to not show in mobile/desktop devices the respeective summary row columns will also be hidden. Using authorisation setting in WaveMaker, a column could be hidden for specific roles of users. In this case, the summary row which depends on that column is also not visible.
+The Summary row columns visibility is dependent on the actual columns visibility. If a column is set to not show in mobile/desktop devices the respective summary row columns will also be hidden. Using authorisation setting in WaveMaker, a column could be hidden for specific roles of users. In this case, the respective column in summary row is also not visible.
 :::
+
+To handle such scenarios, it is handy to check on the column's existence in runtime. If a column is hidden, in runtime it will not be available under the 'columns' interface. Consider the below code:
+```js
+Page.DepartmentTable1Beforedatarender = function(widget, data, columns) {
+    const budgetAggregate = columns.budget.aggregate;
+    columns.budget.setSummaryRowData(budgetAggregate.sum());
+
+    if (columns.deptId) {
+        columns.deptId.setSummaryRowData("Total Budget");
+    } else {
+        columns.name.setSummaryRowData("Total Budget");
+    }
+};
+```
+Here, if the column ```deptId``` is present in the table, the label "Total Budget" is rendered under the respective column. Otherwise it is rendered under the ```name``` column.
+This could suit a requirement where the column ```deptId``` is present in the larger screens but not in mobile screens, while column ```name``` is present in all the screens.
+
+Here is how the summary row will appear in respective screens:
+
+#### Large Screen
+[![](/learn/assets/datatable_summaryrow7.png)](/learn/assets/datatable_summaryrow7.png)
+
+#### Mobile Screen
+[![](/learn/assets/datatable_summaryrow8.png)](/learn/assets/datatable_summaryrow8.png)
