@@ -495,7 +495,8 @@
         "on-premise/configure/config-vcs",
         "on-premise/configure/add-dev-capacity",
         "on-premise/configure/add-apps-capacity",
-        "on-premise/configure/config-pipeline"       
+        "on-premise/configure/config-pipeline",
+        "on-premise/configure/config-ssl"
       ],    
    
 

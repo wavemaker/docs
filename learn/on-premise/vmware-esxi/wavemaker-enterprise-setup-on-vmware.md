@@ -5,7 +5,7 @@ sidebar_label: "WaveMaker Enterprise Setup on VMWare Esxi"
 ---
 ---
 
-## Wavemaker Enterprise setup process on VMWare Esxi
+## WaveMaker Enterprise setup process on VMWare Esxi
 
 The below guide helps in the process of setting up WaveMaker Enterprise on VMWare Esxi.
 You need VMware Esxi server prior to the starting this process.

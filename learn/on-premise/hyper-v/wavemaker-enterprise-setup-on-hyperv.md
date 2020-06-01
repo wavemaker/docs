@@ -5,7 +5,7 @@ sidebar_label: "WaveMaker Enterprise Setup on Hyper-V"
 ---
 ---
 
-## Wavemaker Enterprise setup process on Hyper-V
+## WaveMaker Enterprise setup process on Hyper-V
 
 The below guide helps in the process of setting up WaveMaker Enterprise on Hyper-V.
 You need Hyper-V before starting this process.

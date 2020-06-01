@@ -74,6 +74,6 @@ WaveMaker releases its enterprise version once stabilized on WaveMaker Online Pl
 - Project Management
 - Artifact Management
 
-### WaveMaker Enterprise Studio User
+### Studio User
 
 - Developer who builds WaveMaker apps using Studio

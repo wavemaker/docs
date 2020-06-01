@@ -5,7 +5,7 @@ sidebar_label: "WaveMaker Enterprise Setup on GCP"
 ---
 ---
 
-## Wavemaker Enterprise setup process on GCP
+## WaveMaker Enterprise setup process on GCP
 
 The below guide helps in the process of setting up WaveMaker Enterprise on GCP.
 You need GCP account prior to the starting this process.
