@@ -5,7 +5,71 @@ sidebar_label: "Create Themes"
 ---
 ---
 
-WaveMaker app (Web & Mobile) theme is based on the BootStrap CSS markup. For creating a theme, you should know HTML, CSS, LESS and Grunt.
+WaveMaker themes (Web & Mobile) is based on the Bootstrap CSS markup. For creating a theme, you should know HTML, CSS, [LESS](https://getbootstrap.com/docs/3.4/css/#less), Grunt. We have two ways to create themes in Wavemaker  
+1. The first approach is using the Theme Editor tool 
+2. The second approach is manual setup for advanced level fixes.
+
+## Editor tool
+**Theme Builder** is a new Wavemaker application that allows you to build your theme by changing **Colors**, **Typography**, and **Styles** of the components and elements.
+
+Follow the below steps to build a theme:
+
+1. Go to https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard
+2. Click on the **Explore/Create** themes
+
+[![](/learn/assets/theme-builder.png)](/learn/assets/theme-builder.png)
+
+
+3. On the Editor page, you can customize the existing HEX # values with custom HEX, RGBA, RGB colors, Choose font-family and sizes, Select different styles for the component and elements in simple steps 
+
+### Step 1
+
+Change the existing **"HEX #"** values with custom HEX colors from the color picker for primary, secondary, and additional colors you want to modify for your page - 
+
+1. **`Colors`**: Global colors for components and elements
+2. **`LeftNav`**: Colors for left navigation
+3. **`Header`**: Colors to change the header styles
+4. **`More options`**: Disable and alert state colors for the application
+
+[![](/learn/assets/theme-builder-step1.png)](/learn/assets/theme-builder-step1.png)
+
+
+### Step 2
+
+Customize the typography of the body text, captions, and headings. Choose available **"font-family"** values from the dropdown.
+
+1. **`Heading font`**: Change font-family for headings like H1, H2, H3, H4, H5, H6
+2. **`Body font`**: Change font-famliy for body and captions 
+3. **`More options`**: Modify font weight, font-size, case
+
+[![](/learn/assets/theme-builder-step2.png)](/learn/assets/theme-builder-step2.png)
+
+
+### Step 3
+
+Change the variation of theme style as per the aesthetics. Switching between themes will allow you to preview the relative changes
+
+    - Material Line
+    - Flat Outline 
+    - Gradient Fill
+
+[![](/learn/assets/theme-builder-step3.png)](/learn/assets/theme-builder-step3.png)
+  
+
+:::note
+Step 4 Change the behavior of icons (coming soon)
+:::
+
+4. **Click done**, and your changes are ready to download.
+5. **Name** your theme from the dialog and click the download theme button.
+
+[![](/learn/assets/theme-builder-rename.png)](/learn/assets/theme-builder-rename.png)
+
+6. **Import** and **apply** the downloaded theme into any of your WaveMaker applications.
+
+
+
+## Manual approach
 
 ### Prerequisites 
 Before creating a theme, make sure you have installed the following on your machine:
