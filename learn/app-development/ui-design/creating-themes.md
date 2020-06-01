@@ -5,14 +5,14 @@ sidebar_label: "Create Themes"
 ---
 ---
 
-WaveMaker themes (Web & Mobile) is based on the Bootstrap CSS markup. For creating a theme, you should know HTML, CSS, [LESS](https://getbootstrap.com/docs/3.4/css/#less), Grunt. We have two ways to create themes in Wavemaker  
-1. The first approach is using the Theme Editor tool 
-2. The second approach is manual setup for advanced level fixes.
+WaveMaker themes (Web & Mobile) is based on the Bootstrap CSS markup. For creating a theme, you should know HTML, CSS, LESS, Grunt. There are two ways to create themes in Wavemaker  
+1. The first approach is by using the Theme Editor tool 
+2. The second approach is by manually installing the entire setup.
 
 ## Editor tool
-**Theme Builder** is a new Wavemaker application that allows you to build your theme by changing **Colors**, **Typography**, and **Styles** of the components and elements.
+**Theme Builder** is a new Wavemaker application that allows you to build a theme by changing **colors**, **typography**, and **styles** of the components and elements.
 
-Follow the below steps to build a theme:
+Following are the steps to build a theme:
 
 1. Go to https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard
 2. Click on the **Explore/Create** themes
@@ -20,11 +20,11 @@ Follow the below steps to build a theme:
 [![](/learn/assets/theme-builder.png)](/learn/assets/theme-builder.png)
 
 
-3. On the Editor page, you can customize the existing HEX # values with custom HEX, RGBA, RGB colors, Choose font-family and sizes, Select different styles for the component and elements in simple steps 
+3. On the Editor page, you can customize the existing #HEX values with custom hex, rgba, rgb colors, Choose font-family and sizes, Select different styles for the component and elements in simple steps 
 
 ### Step 1
 
-Change the existing **"HEX #"** values with custom HEX colors from the color picker for primary, secondary, and additional colors you want to modify for your page - 
+Change the existing **"#HEX"** values with custom colors from the color picker for primary, secondary, and additional colors you want to modify for the pages - 
 
 1. **`Colors`**: Global colors for components and elements
 2. **`LeftNav`**: Colors for left navigation
