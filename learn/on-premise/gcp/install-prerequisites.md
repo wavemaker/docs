@@ -61,3 +61,15 @@ systemctl start docker
 ```bash
 yum install python3 -y
 ```
+
+### Extra configurations on External Instances
+- If the user given to the Platform don't have privileged access, then provide below permission to the user given for External Instance. 
+- Have to execute these commands from privileged user.
+    - Add user to docker group. 
+    - Give read, write, execution permission for docker service.
+    - data directory should be owned by the user.
+        ```bash
+            usermod -aG <user> docker
+            chown -R <user> /etc/systemd/system/docker.service.d
+            chown -R <user>:<user> /data
+        ```

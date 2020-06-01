@@ -10,6 +10,20 @@ If not setup External Instance ,[launch Instance with the required prerequisites
 
 Every User is allocated with one container. The infrastructure adding here will be used for this allocation.
 
+To add instances to Platform, you need to provide ssh credentials.
+Ssh credentials of the Instance either should have root privliges or provide required permissions as below.
+
+- If the user given to the Platform don't have privileged access, then provide below permissions. 
+- Have to execute these commands from privileged user.
+    - Add user to docker group. 
+    - Give read, write, execution permission for docker service.
+    - data directory should be owned by the user.
+        ```bash
+            usermod -aG <user> docker
+            chown -R <user> /etc/systemd/system/docker.service.d
+            chown -R <user>:<user> /data
+        ```
+
 [![wme instance](/learn/assets/wme-setup/configuring-wme/WME_instance.png)](/learn/assets/wme-setup/configuring-wme/WME_instance.png)
 
 ## Add Capacity to Developer Workspace
