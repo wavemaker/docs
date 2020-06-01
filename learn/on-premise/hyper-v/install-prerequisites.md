@@ -12,6 +12,9 @@ sidebar_label: "Install Prerequisites Softwares"
 - Same applies for External Instance as well.
 - Internet is not required for Installation in this case.
 
+## If you using OVA file shipped by WaveMaker
+- Skip this step in this case.
+
 ## The ssh user don't have privileges
 
 - The given ssh user don't have permission to install softwares
@@ -61,6 +64,7 @@ systemctl start docker
 ```bash
 yum install python3 -y
 ```
+
 ### Extra configurations on External Instances
 - If the user given to the Platform don't have privileged access, then provide below permission for the user given on External Instance. 
 - Have to execute these commands from privileged user.

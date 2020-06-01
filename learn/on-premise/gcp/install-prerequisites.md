@@ -63,13 +63,15 @@ yum install python3 -y
 ```
 
 ### Extra configurations on External Instances
-- If the user given to the Platform don't have privileged access, then provide below permission to the user given for External Instance. 
+- If the user given to the Platform don't have privileged access, then provide below permission for the user given on External Instance. 
 - Have to execute these commands from privileged user.
     - Add user to docker group. 
     - Give read, write, execution permission for docker service.
     - data directory should be owned by the user.
+    - Give permission to manage docker.service, systemctl daemon reload, iptable.
         ```bash
             usermod -aG <user> docker
             chown -R <user> /etc/systemd/system/docker.service.d
             chown -R <user>:<user> /data
+            echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
         ```
