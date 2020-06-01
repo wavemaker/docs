@@ -64,7 +64,7 @@ Once the app is tested and ready to go live, you can push the app from Demo to L
 ### For WME users
 
 - WME users can use the same steps to configure both Stage and Live phases.
-- WME users need to add instances for Stage and Live phases _before_ configuration. ([see here for adding instances)](/learn/installation/wme-setup-guide-adding-capacity/)
+- WME users need to add instances for Stage and Live phases _before_ configuration. ([see here for adding instances)](/learn/on-premise/configure/add-apps-capacity)
 
 [![](/learn/assets/ptl_noconfigure-1.png)](/learn/assets/ptl_noconfigure-1.png) 
 

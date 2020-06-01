@@ -38,7 +38,7 @@ WaveMaker offers 2 variants of Studio, for cloud-based and on-premise developmen
 WMO is a cloud-based product - no installation required. For more information on the pre-requisites and setup guide, see [WaveMaker Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites) and [Online Setup Guide](/learn/wmo-setup).
 
 ### 2. WaveMaker Enterprise (WME)
-WME is an on-premise product. For WME installation, see [WaveMaker Enterprise Setup Guide](/learn/installation/wavemaker-enterprise-setup-guide).
+WME is an on-premise product. For WME installation, see [WaveMaker Enterprise Setup Guide](/learn/on-premise/welcome).
 
 :::note
 Most of the WaveMaker app development capabilities are available in both WMO and WME editions, except for Enterprise edition which offers very specific enterprise integrations like Git Enterprise, behind the firewall services, Single sign-on for platform logins etc.
