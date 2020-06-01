@@ -1,29 +1,30 @@
 ---
 title: "WaveMaker Enterprise Architecture"
 id: ""
-sidebar_label: "Architecture"
+sidebar_label: "About Enterprise"
 ---
 ---
 
-Before proceeding with the set-up, see what constitutes WaveMaker Enterprise (WME).
+## Enterprise Components
 
-## WaveMaker Enterprise Components
+WaveMaker Enterprise consists of the following four components.
 
-### 1. Config Portal
+### Config Portal
 
-A simple wizard application to setup WME on premise.
+A Config Portal is a simple wizard application to setup WME on on-premise environment.
 
-### 2. Launchpad
+### Launchpad
 
-WaveMaker's administrative console where you can configure users, additional Studio/Cloud instances for scaling, configure external VCS, etc. Launchpad is automatically installed when you setup WaveMaker Enterprise .
+Launchpad is a WaveMaker's administrative console where you can configure users, additional Studio/Cloud instances for scaling, configure external VCS, etc. Launchpad is automatically installed when you setup WaveMaker Enterprise.
 
-### 3. WaveMaker Studio
+### WaveMaker Studio
 
 A modern low-code platform for collaborative development of multi-device apps.
 
-### 4. WaveMaker Cloud
+### WaveMaker Cloud
 
-Consist of Containerized Cloud for User workspace and App Deployments isolation. Managed by Platform .
+Consist of Containerized Cloud for User workspace and App Deployments isolation. Managed by Platform.
+
 
 ## WaveMaker Enterprise Architecture
 
@@ -47,12 +48,6 @@ Internally WME utilizes Docker containers to segregate and isolate the platform 
 
 [![platform architecture](/learn/assets/wme-setup/platform-architecture.png)](/learn/assets/wme-setup/platform-architecture.png)
 
-## Release Policy
-
-WaveMaker releases its enterprise version once stabilized on WaveMaker Online Platform.
-
-[Check out full list of releases here.](/learn/wavemaker-release-notes#current-release-details)
-
 ## WaveMaker Enterprise Roles and their activities
 
 ### Setup Admin
@@ -74,6 +69,6 @@ WaveMaker releases its enterprise version once stabilized on WaveMaker Online Pl
 - Project Management
 - Artifact Management
 
-### WaveMaker Enterprise Studio User
+### Studio User
 
 - Developer who builds WaveMaker apps using Studio

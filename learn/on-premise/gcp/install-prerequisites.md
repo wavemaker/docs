@@ -1,23 +1,21 @@
 ---
-title: "Install Prerequisites Softwares"
+title: "Configuring Instance"
 id: ""
-sidebar_label: "Install Prerequisites Softwares"
+sidebar_label: "Configure Instance"
 ---
 ---
 
-## The ssh user has privileges(root/sudo) for install/upgrade
+## Ubuntu
+
+### The ssh user has privileges(root/sudo) for install/upgrade utility softwares
 
 - If given ssh user has privileges(root/sudo) to install/upgrade.
 - WME Installer will automatically installs required softwares.
 - Same applies for External Instance as well.
 - Internet is not required for Installation in this case.
 
-## The ssh user don't have privileges
-
-- The given ssh user don't have permission to install softwares
-- Then install below as per operating system.
-
-### Ubuntu
+### The ssh user don't have privileges install/upgrade utility softwares
+The given ssh user don't have permission to install softwares Then install below as per operating system.
 
 - Install  wget
 
@@ -31,7 +29,47 @@ sudo apt-get install wget  -y
 sudo apt-get install python3 -y
 ```
 
-### RHEL
+- Install docker 18.06.2-ce
+
+```bash
+    apt-get install apt-transport-https
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable" > /etc/apt/sources.list.d/docker.list
+    apt-get update 
+    apt-get install iptables ca-certificates
+```
+```bash
+    apt-get install docker-ce=18.06.2~ce~3-0~ubuntu
+```
+
+### Extra configurations on External Instances
+
+#### The ssh user has privileges(root/sudo)
+
+- No need to do any configurations. Platform will do it automatically.
+
+#### The ssh user don't have privileges(non sudo users)
+
+- If the user given to the Platform don't have privileged access, then provide below permission for the user given on External Instance. 
+- Have to execute these commands from privileged user.
+    - Add user to docker group. 
+    - Make the user as owner for docker systemd process.
+    - data directory should be owned by the user.
+    - Give permission to manage docker.service, systemctl daemon reload, iptable.
+        ```bash
+            usermod -aG <user> docker
+            chown -R <user>:<user> /etc/systemd/system/docker.service.d
+            chown -R <user>:<user> /data
+            echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>            
+        ```
+
+## RHEL
+
+Install below softwares on Platform Instance and External Instances(User Workspace and AppDeployment Instances)
+
+:::note
+Use same version numbers as mentioned.
+:::
 
 - Install  wget
 
@@ -61,3 +99,24 @@ systemctl start docker
 ```bash
 yum install python3 -y
 ```
+
+### Extra configurations on External Instances
+
+#### The ssh user has privileges(root/sudo)
+
+- No need to do any configurations. Platform will do it automatically.
+
+#### The ssh user don't have privileges(non sudo users)
+
+- If the user given to the Platform don't have privileged access, then provide below permission for the user given on External Instance. 
+- Have to execute these commands from privileged user.
+    - Add user to docker group. 
+    - Make the user as owner for docker systemd process.
+    - data directory should be owned by the user.
+    - Give permission to manage docker.service, systemctl daemon reload, iptable.
+        ```bash
+            usermod -aG <user> docker
+            chown -R <user>:<user> /usr/lib/systemd/system
+            chown -R <user>:<user> /data
+            echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>            
+        ```

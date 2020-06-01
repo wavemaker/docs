@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker Enterprise Setup on VMWare ESXi using OVA"
 id: ""
-sidebar_label: "Preparing infrastructure on VMWare ESXi using OVA"
+sidebar_label: "Prepare Infrastructure using OVA"
 ---
 ---
 

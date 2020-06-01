@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker Enterprise Setup on Hyper-V using VHD"
 id: ""
-sidebar_label: "Preparing infrastructure on Hyper-V using VHD"
+sidebar_label: "Prepare Infrastructure using VHD"
 ---
 ---
 

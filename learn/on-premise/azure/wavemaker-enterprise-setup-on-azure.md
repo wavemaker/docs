@@ -1,11 +1,11 @@
 ---
 title: "WaveMaker Enterprise Setup on AZURE"
 id: ""
-sidebar_label: "WaveMaker Enterprise Setup on AZURE"
+sidebar_label: "Overview"
 ---
 ---
 
-## Wavemaker Enterprise setup process on AZURE
+## WaveMaker Enterprise setup process on AZURE
 
 The below guide helps in the process of setting up WaveMaker Enterprise on AZURE.
 You need AZURE account prior to the starting this process.

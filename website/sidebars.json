@@ -401,7 +401,7 @@
   "Install on AWS":
 
       [
-        "on-premise/aws/waveMaker-Enterprise-Setup-on-AWS",
+        "on-premise/aws/wavemaker-enterprise-setup-on-aws",
         "on-premise/aws/launching-instances-in-aws",
         "on-premise/aws/install-prerequisites",
         "on-premise/aws/install/download-copy-installer",
@@ -458,6 +458,7 @@
         "on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware",
         "on-premise/vmware-esxi/launching-instances-in-esxi-ova",
         "on-premise/vmware-esxi/launching-instances-in-esxi-iso",
+        "on-premise/vmware-esxi/install-prerequisites",
         "on-premise/vmware-esxi/install/download-copy-installer",
         "on-premise/vmware-esxi/install/extract-package",
         "on-premise/vmware-esxi/install/initilize-setup",
@@ -474,6 +475,7 @@
       [
         "on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv",
         "on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
+        "on-premise/hyper-v/install-prerequisites",
         "on-premise/hyper-v/install/download-copy-installer",
         "on-premise/hyper-v/install/extract-package",
         "on-premise/hyper-v/install/initilize-setup",
@@ -493,7 +495,8 @@
         "on-premise/configure/config-vcs",
         "on-premise/configure/add-dev-capacity",
         "on-premise/configure/add-apps-capacity",
-        "on-premise/configure/config-pipeline"       
+        "on-premise/configure/config-pipeline",
+        "on-premise/configure/config-ssl"
       ],    
    
 
