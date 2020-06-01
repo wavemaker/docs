@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker Enterprise Setup on VMWare Esxi"
 id: ""
-sidebar_label: "WaveMaker Enterprise Setup on VMWare Esxi"
+sidebar_label: "Overview"
 ---
 ---
 

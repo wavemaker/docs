@@ -1,29 +1,32 @@
 ---
 title: "WaveMaker Enterprise Architecture"
 id: ""
-sidebar_label: "Architecture"
+sidebar_label: "About Enterprise"
 ---
 ---
 
-Before proceeding with the set-up, see what constitutes WaveMaker Enterprise (WME).
+WaveMaker Enterprise consists of the following consititions.
 
-## WaveMaker Enterprise Components
+## Enterprise Components
 
-### 1. Config Portal
+WaveMaker Enterprise consists of the following four components.
 
-A simple wizard application to setup WME on premise.
+### Config Portal
 
-### 2. Launchpad
+A Config Portal is a simple wizard application to setup WME on on-premise environment.
 
-WaveMaker's administrative console where you can configure users, additional Studio/Cloud instances for scaling, configure external VCS, etc. Launchpad is automatically installed when you setup WaveMaker Enterprise .
+### Launchpad
 
-### 3. WaveMaker Studio
+Launchpad is a WaveMaker's administrative console where you can configure users, additional Studio/Cloud instances for scaling, configure external VCS, etc. Launchpad is automatically installed when you setup WaveMaker Enterprise.
+
+### WaveMaker Studio
 
 A modern low-code platform for collaborative development of multi-device apps.
 
-### 4. WaveMaker Cloud
+### WaveMaker Cloud
 
-Consist of Containerized Cloud for User workspace and App Deployments isolation. Managed by Platform .
+Consist of Containerized Cloud for User workspace and App Deployments isolation. Managed by Platform.
+
 
 ## WaveMaker Enterprise Architecture
 
@@ -46,12 +49,6 @@ Capacity added for User Workspace and App Deployments, we call it as External In
 Internally WME utilizes Docker containers to segregate and isolate the platform components and the developer workspace as depicted below.
 
 [![platform architecture](/learn/assets/wme-setup/platform-architecture.png)](/learn/assets/wme-setup/platform-architecture.png)
-
-## Release Policy
-
-WaveMaker releases its enterprise version once stabilized on WaveMaker Online Platform.
-
-[Check out full list of releases here.](/learn/wavemaker-release-notes#current-release-details)
 
 ## WaveMaker Enterprise Roles and their activities
 

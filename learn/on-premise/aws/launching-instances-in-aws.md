@@ -1,7 +1,7 @@
 ---
 title: "Preparing Infrastructure on AWS"
 id: ""
-sidebar_label: "Preparing Infrastructure on AWS"
+sidebar_label: "Prepare Infrastructure"
 ---
 ---
 
