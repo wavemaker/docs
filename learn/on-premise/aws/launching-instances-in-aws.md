@@ -241,5 +241,5 @@ UUID=<your-block-device-UUID>    /data     ext4     defaults ,nofail  0  2
 
 ## What's next
 
-- Install [prerequisites softwares](install-prerequisites.md) based on OS.
+- Install [prerequisites softwares](/learn/on-premise/aws/install-prerequisites) based on OS.
 - Start WME Installation process
