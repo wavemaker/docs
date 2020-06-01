@@ -5,8 +5,6 @@ sidebar_label: "About Enterprise"
 ---
 ---
 
-WaveMaker Enterprise consists of the following consititions.
-
 ## Enterprise Components
 
 WaveMaker Enterprise consists of the following four components.

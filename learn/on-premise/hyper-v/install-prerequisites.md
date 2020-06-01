@@ -1,7 +1,7 @@
 ---
-title: "Install Prerequisites Softwares"
+title: "Configuring Instance"
 id: ""
-sidebar_label: "Install Prerequisites Softwares"
+sidebar_label: "Configure Instance"
 ---
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker Enterprise Setup on VMware ESXi using ISO"
 id: ""
-sidebar_label: "Prepare infrastructure on VMWare ESXi - ISO"
+sidebar_label: "Prepare infrastructure using ISO"
 ---
 ---
 
