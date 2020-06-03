@@ -183,7 +183,7 @@ Application.config(function ($httpProvider) {
 
 #### Examples of correct code for this rule:
 
-Not supported in Wavemaker 10.x.
+Not supported in WaveMaker 10.x.
 
 ## No AngularJS Run
 
@@ -209,7 +209,7 @@ Application.run(function (editableOptions) {
 
 #### Examples of correct code for this rule:
 
-Not supported in Wavemaker 10.x.
+Not supported in WaveMaker 10.x.
 
 ## No AngularJS Constant
 
@@ -409,7 +409,7 @@ $scope.`$apply`(function () {
 
 #### Examples of correct code for this rule:
 
-Not supported in Wavemaker 10.x.
+Not supported in WaveMaker 10.x.
 
 ## No AngularJS $watch
 
@@ -449,7 +449,7 @@ $scope.fullDate = $filter('date')(today, 'fullDate');
 
 #### Examples of correct code for this rule:
 
-Not supported in Wavemaker 10.x
+Not supported in WaveMaker 10.x
 
 ## No AngularJS $window
 
@@ -592,7 +592,7 @@ $scope.$parent.testValue;
 
 #### Examples of correct code for this rule:
 
-$parent is not supported in Wavemaker 10.x. Use App or App.activePage based on the requirement.
+$parent is not supported in WaveMaker 10.x. Use App or App.activePage based on the requirement.
 
 ## No AngularJS RouteParams
 
@@ -628,7 +628,7 @@ Application.controller('aboutCtrl', function($routeParams) {
 
 #### Examples of correct code for this rule:
 
-Not supported in Wavemaker 10.x
+Not supported in WaveMaker 10.x
 
 ## No Missing Page Elements
 

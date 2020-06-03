@@ -4,7 +4,7 @@ id: ""
 ---
 ---
 
-Mobile app developers can preview their apps using Preview button. However, web preview lacks native capabilities (like camera, calendar etc.,). To see the complete app along with their native capabilities, developers have to build the installer (apk or ipa) for respective OS. This build step consumes 10 mins of developer time. To improve your productivity, Wavemaker introduces a mobile app called ‘**WaveLens**’. 
+Mobile app developers can preview their apps using Preview button. However, web preview lacks native capabilities (like camera, calendar etc.,). To see the complete app along with their native capabilities, developers have to build the installer (apk or ipa) for respective OS. This build step consumes 10 mins of developer time. To improve your productivity, WaveMaker introduces a mobile app called ‘**WaveLens**’. 
 
 :::tip
 Using this app, you can see an instant preview of their app without building the installer.
@@ -16,14 +16,14 @@ Using this app, you can see an instant preview of their app without building th
 
 [![](/learn/assets/App_Store_Badge.png)](https://itunes.apple.com/in/app/wavelens/id1146808805?mt=8)
 
-## For Wavemaker Online Developers
+## For WaveMaker Online Developers
 
-1. Select Wavemaker domain.
+1. Select WaveMaker domain.
 2. Login with your credentials.
 3. All your mobile projects are shown in alphabetical order.
 4. Tap on any project, you wish to preview
 
-## For Wavemaker On-premise Developers
+## For WaveMaker On-premise Developers
 
 :::note
 You do not need internet to use WaveLens. If you can access the WaveMaker on-premise installation domain from the mobile browser you can use WaveLens.
