@@ -5,73 +5,72 @@ sidebar_label: "Create Themes"
 ---
 ---
 
-WaveMaker themes (Web & Mobile) is based on the Bootstrap CSS markup. For creating a theme, you should know HTML, CSS, LESS, Grunt. There are two ways to create themes in Wavemaker  
-1. The first approach is by using the Theme Editor tool 
-2. The second approach is by manually installing the entire setup.
+Themes are used to apply a style to the entire application. Develop themes for web and mobile apps instantly with without needing to code; you can do this by using WaveMaker theme builder. Also, you can develop more advanced themes by installing the setup which requires you to know HTML, CSS, LESS, and Grunt.
 
-## Editor tool
-**Theme Builder** is a new Wavemaker application that allows you to build a theme by changing **colors**, **typography**, and **styles** of the components and elements.
+In this document, see how to develop themes in WaveMaker using both approaches.
 
-Following are the steps to build a theme:
+1. The first approach is by using the Theme Editor tool.
+2. The second approach is by installing the setup.
 
-1. Go to https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard
-2. Click on the **Explore/Create** themes
+## Using the Editor Tool
 
-[![](/learn/assets/theme-builder.png)](/learn/assets/theme-builder.png)
+**Theme Builder** is a WaveMaker application that allows you to build a theme by changing **colors**, **typography**, and **styles** of the components and elements without needing to edit the code.
 
+Follow the steps below to build a theme.
 
-3. On the Editor page, you can customize the existing #HEX values with custom hex, rgba, rgb colors, Choose font-family and sizes, Select different styles for the component and elements in simple steps 
+1. Go to the [WaveMaker Theme Builder](https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard) app.
+2. Click the **Explore/Create** themes option.
 
-### Step 1
+    ![theme options](/learn/assets/theme-builder.png)
 
-Change the existing **"#HEX"** values with custom colors from the color picker for primary, secondary, and additional colors you want to modify for the pages - 
+3. On the Editor page, you can customize the existing #HEX values with custom hex, rgba, rgb colors, choose font-family and sizes, and select styles for the component and elements in a few simple steps.
 
-1. **`Colors`**: Global colors for components and elements
-2. **`LeftNav`**: Colors for left navigation
-3. **`Header`**: Colors to change the header styles
-4. **`More options`**: Disable and alert state colors for the application
+### Step 1: Choose Colors
 
-[![](/learn/assets/theme-builder-step1.png)](/learn/assets/theme-builder-step1.png)
+Change the existing **#HEX** values by choosing colors from the color picker for primary, secondary, and additional colors that you want to modify for the pages.
 
+1. **`Colors`**: Set global colors for components and elements
+2. **`LeftNav`**: Set colors for the left navigation
+3. **`Header`**: Set colors to change the header styles
+4. **`More options`**: Set the colors for the disabling, links, and alerting properties
 
-### Step 2
+[![apply colors](/learn/assets/theme-builder-step1.png)](/learn/assets/theme-builder-step1.png)
 
-Customize the typography of the body text, captions, and headings. Choose available **"font-family"** values from the dropdown.
+### Step 2: Apply Font Styles
 
-1. **`Heading font`**: Change font-family for headings like H1, H2, H3, H4, H5, H6
-2. **`Body font`**: Change font-famliy for body and captions 
-3. **`More options`**: Modify font weight, font-size, case
+Customize the typography for the header, body, and caption styles. You can choose the **font-family** from the options available in the dropdown.
 
-[![](/learn/assets/theme-builder-step2.png)](/learn/assets/theme-builder-step2.png)
+1. **`Heading font`**: Select the font-family for headers, which apply to H1, H2, H3, H4, H5, and H6
+2. **`Body font`**: Select the font-family for body and captions
+3. **`More options`**: Set font-weight, font-size and case sensitive preferences
 
+[![apply font](/learn/assets/theme-builder-step2.png)](/learn/assets/theme-builder-step2.png)
 
-### Step 3
+### Step 3: Select Theme Variation Style
 
-Change the variation of theme style as per the aesthetics. Switching between themes will allow you to preview the relative changes
+Change the variation of theme style as per the aesthetics. Switching between themes will allow you to preview the relative changes instantly. You can select from the following options.
 
-    - Material Line
-    - Flat Outline 
-    - Gradient Fill
+- Material Line
+- Flat Outline
+- Gradient Fill
 
-[![](/learn/assets/theme-builder-step3.png)](/learn/assets/theme-builder-step3.png)
+[![apply theme style](/learn/assets/theme-builder-step3.png)](/learn/assets/theme-builder-step3.png)
   
-
 :::note
-Step 4 Change the behavior of icons (coming soon)
+Step 4: Changing the behavior of icons (coming soon).
 :::
 
-4. **Click done**, and your changes are ready to download.
-5. **Name** your theme from the dialog and click the download theme button.
+4. Click **Done**, and your changes are ready to download.
+5. Provide a **Name** for your theme, and click **Download Theme**.
 
 [![](/learn/assets/theme-builder-rename.png)](/learn/assets/theme-builder-rename.png)
 
 6. **Import** and **apply** the downloaded theme into any of your WaveMaker applications.
 
+## Using the Manual Setup
 
+### Prerequisites
 
-## Manual approach
-
-### Prerequisites 
 Before creating a theme, make sure you have installed the following on your machine:
 
 - [Nodejs](https://nodejs.org/)
