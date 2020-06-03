@@ -7,7 +7,7 @@ sidebar_label: "Summary Row"
 
 When creating a data table, Summary Row Function can be used to add summary at the bottom of the table. This summary can be computed on the client side or on the server side.
 
-Using Summary Row Function, you can summarize any number of columns. A table can also include more than one summary row. Visibility of the summary row is governed by the visibility rules set upon the columns being summarised. To calculate the summary inbuilt javascript functions like sum, minimum, maximum, or custom logic can be used or another javascript function can be supplied.
+Using Summary Row Function, you can summarize any number of columns. A table can also include more than one summary row. To calculate the summary in-built javascript functions like ```sum, minimum, maximum, percent``` can be used. Application developers may also use their own javascript function that calculates the summary.
 
 You can set summary row using the below exposed function on a column in Beforedatarender event callback:
 
@@ -192,7 +192,7 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 ### Handling column visibility
 
 :::note
-The Summary row columns visibility is dependent on the actual columns visibility. If a column is set to not show in mobile/desktop devices the respective summary row columns will also be hidden. Using authorisation setting in WaveMaker, a column could be hidden for specific roles of users. In this case, the respective column in summary row is also not visible.
+The Summary row columns visibility may be dependent on the actual columns visibility. If a column is set to not show in mobile/desktop devices the respective summary row columns may also be need to be hidden. Using authorisation setting in WaveMaker, a column could be hidden for specific roles of users. 
 :::
 
 To handle such scenarios, it is handy to check on the column's existence in runtime. If a column is hidden, in runtime it will not be available under the 'columns' interface. Consider the below code:
