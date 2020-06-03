@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker Enterprise Setup on GCP"
 id: ""
-sidebar_label: "WaveMaker Enterprise Setup on GCP"
+sidebar_label: "Overview"
 ---
 ---
 

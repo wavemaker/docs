@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker Enterprise Setup on Hyper-V"
 id: ""
-sidebar_label: "WaveMaker Enterprise Setup on Hyper-V"
+sidebar_label: "Overview"
 ---
 ---
 

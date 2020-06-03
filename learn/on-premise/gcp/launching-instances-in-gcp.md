@@ -1,13 +1,13 @@
 ---
-title: "WaveMaker Enterprise Setup on GCP"
+title: "WaveMaker Enterprise Setup on Google Cloud Platform"
 id: ""
-sidebar_label: "Preparing infrastructure on GCP"
+sidebar_label: "Prepare Infrastructure"
 ---
 ---
 
 ## Prerequisite
 
-- Having access in GCP to create Instances and other resources. for more details visit [IAM and permissions in GCP](https://cloud.google.com/compute/docs/access/iam).
+- Having access in Google Cloud Platform (GCP) to create Instances and other resources. for more details visit [IAM and permissions in GCP](https://cloud.google.com/compute/docs/access/iam).
 - Assuming VPC is already created. for creating VPC in GCP visit [VPC creation in GCP](https://cloud.google.com/vpc/docs/using-vpc).
 
 ## Firewall Rules for Platform and External Instance

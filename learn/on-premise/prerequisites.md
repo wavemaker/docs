@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker Enterprise Prerequisites"
 id: ""
-sidebar_label: "Prerequisites"
+sidebar_label: "What you'll need"
 ---
 ---
 
@@ -57,8 +57,8 @@ WaveMaker will share the required artifacts (installer files/Images) to do the s
 
 ### Files
 
-The following files will be shared with you by the WaveMaker team. You need to download the below files before starting the installation.
-Depends on your setup type, WaveMaker teams sends one of the following.
+Wavemaker team will share the following files. You should download the below files before starting the installation.
+Depending on your setup type, WaveMaker team will send one of the following.
 
 - Operating System Pre-Installed.
   - Deb installer if you choose Ubuntu.
@@ -75,7 +75,7 @@ You will be needing IP Addresses for the following.
 
 ### IP Address
 
-- One static IP for accessing the Platform machine from your developer's network.
+- One static IP for accessing the platform machine from your developer's network.
 - Machine Static IP: This is the IP assigned to machine during setup and should be accessible on your network, or
   - In case of VM, it will be the local IP address, which should be rout table from in your LAN.
   - In case of AWS instance: Private static IP for the instance within your VPC (assigned via eth0 or via ENI on eth1,ens5)
