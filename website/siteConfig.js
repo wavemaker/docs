@@ -41,7 +41,7 @@ const siteConfig = {
     // For no header links in the top nav bar -> headerLinks: [],
     headerLinks: [
         {languages: true},
-		{doc: 'documentation-reference', label: 'Get started '},
+		{doc: 'documentation-reference', label: 'Get started'},
         {doc: 'app-development/widgets/widget-library', label: 'Widgets'},
 		{doc: 'howtos-documents', label: 'How-to'},
 		{doc: 'on-premise/welcome', label: 'Enterprise'},

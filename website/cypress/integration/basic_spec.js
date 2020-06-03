@@ -67,7 +67,7 @@ describe("Top Navigation in web & mobile", function() {
   });
 });
 
-describe("Login & Free trial button take to right places", function() {
+describe("Sign-in button take to right places", function() {
   var selectors = {
     desktopNavElements: ".slidingNav > ul > li:not(:first-child)"
   };
@@ -80,11 +80,7 @@ describe("Login & Free trial button take to right places", function() {
     var nav = selectors.desktopNavElements;
 
     cy.get(nav)
-      .contains("Login")
-      .click()
-      .end();
-    cy.get(nav)
-      .contains("Start free trial")
+      .contains("Sign-in")
       .click()
       .end();
     //cy.get(".main-container").contains("PLATFORM").click();

@@ -19,12 +19,13 @@ document.addEventListener('DOMContentLoaded', function () {
             <a class="dropdown-item" href="/learn/documentation-reference" target="_self">Get started</a>
             <a class="dropdown-item" href="/learn/app-development/widgets/widget-library" target="_self">Widgets</a>
             <a class="dropdown-item" href="/learn/howtos-documents" target="_self">How-to</a>
+            <a class="dropdown-item" href="/learn/on-premise/welcome" target="_self">Enterprise</a>
             <a class="dropdown-item" href="/learn/wavemaker-release-notes" target="_self">Releases</a>
-            <a class="dropdown-item" href="https://www.wavemakeronline.com/login/login" target="_blank">Login</a>
-            <a class="dropdown-item" href="https://www.wavemaker.com/get-started/" target="_blank">Start free trial</a>
+            <a class="dropdown-item" href="/learn/blog/" target="_self">Blog</a>
+            <a class="dropdown-item" href="https://www.wavemaker.com/get-started/" target="_blank">Sign-in</a>
         </div>
     </li>`, 'text/html').body.firstChild;
-    
+
     let host_element = document.querySelector('ul.nav-site.nav-site-internal');
 
     /* Append the HTML as first child into the unordered list */
