@@ -50,9 +50,11 @@ Customize the typography for the header, body, and caption styles. You can choos
 
 Change the variation of theme style as per the aesthetics. Switching between themes will allow you to preview the relative changes instantly. You can select from the following options.
 
-- Material Line
-- Flat Outline
-- Gradient Fill
+- **Flat**: The flat-theme includes a solid background to the elements with active states. It also adds an outlined border for user inputs.
+
+- **Material**: The material-theme has a sleek finish with elevated shadows to understand each element's relative importance and focus their attention.
+
+- **Gradient**: The gradient theme fills the content blocks with a linear gradient shade starting from top to bottom.
 
 [![apply theme style](/learn/assets/theme-builder-step3.png)](/learn/assets/theme-builder-step3.png)
   
@@ -63,7 +65,9 @@ Step 4: Changing the behavior of icons (coming soon).
 4. Click **Done**, and your changes are ready to download.
 5. Provide a **Name** for your theme, and click **Download Theme**.
 
-[![](/learn/assets/theme-builder-rename.png)](/learn/assets/theme-builder-rename.png)
+[![download theme](/learn/assets/theme-builder-rename.png)](/learn/assets/theme-builder-rename.png)
+
+The theme will be downloaded as a .zip file.
 
 6. **Import** and **apply** the downloaded theme into any of your WaveMaker applications.
 
