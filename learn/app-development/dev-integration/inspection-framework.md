@@ -504,7 +504,7 @@ Application.component(‘greetUser’, {
 
 #### Examples of correct code for this rule:
 
-Components are not supported in wavemaker 10.x. You can yse Prefabs instead of the component. Drag and drop the prefab where you want to use instead of the component.
+Components are not supported in WaveMaker 10.x. You can yse Prefabs instead of the component. Drag and drop the prefab where you want to use instead of the component.
 
 ## No AngularJS Directive
 
@@ -532,7 +532,7 @@ Application.directive.directive('helloWorld', function() {
 
 #### Examples of correct code for this rule:
 
-Directives are not supported in wavemaker 10.x. You can use Prefabs instead of a directive. Drag and drop the prefab where you want to use instead of a directive.
+Directives are not supported in WaveMaker 10.x. You can use Prefabs instead of a directive. Drag and drop the prefab where you want to use instead of a directive.
 
 ## No AngularJS Provider
 

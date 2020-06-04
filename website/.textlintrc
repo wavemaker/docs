@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "terminology": {
+      "defaultTerms": false,
+      "terms": [
+        "WaveMaker"
+      ]
+    }
+  },
+  "plugins": [
+          "html"
+      ]
+}
