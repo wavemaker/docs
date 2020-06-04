@@ -9,6 +9,7 @@
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version",
     "test:mdlint": "npx markdownlint ../learn",
+    "test:brandlint": "textlint  --rule terminology ../learn/**",
     "cypress:local": "cypress open",
     "cypress:prepare-prod": "npm run start:nw & npx wait-on http://localhost:3000/learn && bash changed_md_files.sh",
     "cypress:prod": "cypress run --reporter mochawesome --reporter-options 'reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss'",
