@@ -5,7 +5,7 @@ sidebar_label: "Create Themes"
 ---
 ---
 
-Themes are used to apply a style to the entire application. Develop themes for web and mobile apps instantly with without needing to code; you can do this by using WaveMaker theme builder. Also, you can develop more advanced themes by installing the setup which requires you to know HTML, CSS, LESS, and Grunt.
+Themes are used to apply a style to the entire application. Develop themes for web and mobile apps instantly without needing to code; you can do this by using WaveMaker theme builder. Also, you can develop more advanced themes by installing the setup which requires you to know HTML, CSS, LESS, and Grunt.
 
 In this document, see how to develop themes in WaveMaker using both approaches.
 
