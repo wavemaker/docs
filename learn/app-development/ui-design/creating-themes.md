@@ -34,7 +34,7 @@ Change the existing **#HEX** values by choosing colors from the color picker for
 3. **`Header`**: Set colors to change the header styles
 4. **`More options`**: Set the colors for the disabling, links, and alerting properties
 
-[![apply colors](/learn/assets/theme-builder-step1.png)](/learn/assets/theme-builder-step1.png)
+![apply colors](/learn/assets/Theme-builder-step1.png)
 
 ### Step 2: Apply Font Styles
 
@@ -44,7 +44,7 @@ Customize the typography for the header, body, and caption styles. You can choos
 2. **`Body font`**: Select the font-family for body and captions
 3. **`More options`**: Set font-weight, font-size and case sensitive preferences
 
-[![apply font](/learn/assets/theme-builder-step2.png)](/learn/assets/theme-builder-step2.png)
+![apply font](/learn/assets/Theme-builder-step2.png)
 
 ### Step 3: Select Theme Variation Style
 
@@ -56,7 +56,7 @@ Change the variation of theme style as per the aesthetics. Switching between the
 
 - **Gradient**: The gradient theme fills the content blocks with a linear gradient shade starting from top to bottom.
 
-[![apply theme style](/learn/assets/theme-builder-step3.png)](/learn/assets/theme-builder-step3.png)
+![apply theme style](/learn/assets/Theme-builder-step3.png)
   
 :::note
 Step 4: Changing the behavior of icons (coming soon).

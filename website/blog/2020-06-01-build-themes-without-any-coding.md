@@ -11,29 +11,29 @@ A theme is a preset package containing graphical appearance details. It is often
 
 Link to the app: http://apps.wavemakeronline.com/Theme_Builder/#/Dashboard
 
-[![theme builder](/learn/assets/theme-builder.png)](/learn/assets/theme-builder.png)
+![theme builder](/learn/assets/theme-builder.png)
 
 ## Customize color, typography, and style
 
 To begin customizing a theme, one can modify values for color, typography, and style. By default, the preview application starts with the material theme applied. We can switch between different theme styles and instantly preview the changes.
 
-[![theme preview](/learn/assets/theme-builder-preview.png)](/learn/assets/theme-builder-preview.png)
+![theme preview](/learn/assets/theme-builder-preview.png)
 
 ### Color
 
 To change your theme colors, replace the predefined #HEX color code with a custom color.
 
-Primary color maps to all components and elements, while secondary color accents the icon colors for date and time selection. Background color applies to the scrollable content, while the text color maps to the body text and captions used in the application. 
+Primary color maps to all active components and elements like(primary buttons, selected tabs, nav items, etc), while secondary color accents the icon colors for date and time selection. Background color applies to the scrollable content, while the text color maps to the body text and captions used in the application. 
 
 **Header** and **Left nav** colors define the coloring scheme for background, text, and active links. We also have **More** options to handle the notification and disable state colors.
 
-[![apply colors](/learn/assets/theme-builder-step1.png)](/learn/assets/theme-builder-step1.png)
+![apply colors](/learn/assets/Theme-builder-step1.png)
 
 ### Typography
 
 To change your theme's typography, choose the options from the dropdown, be it font-family, or the size of headings and body text.
 
-[![apply font](/learn/assets/theme-builder-step2.png)](/learn/assets/theme-builder-step2.png)
+![apply font](/learn/assets/Theme-builder-step2.png)
 
 ### Style
 
@@ -45,13 +45,13 @@ Applying different styles like Flat, Material, and Gradient. This will help you 
 
 **Gradient**: The gradient theme fills the content blocks with a linear gradient shade starting from top to bottom.
 
-[![apply style](/learn/assets/theme-builder-step3.png)](/learn/assets/theme-builder-step3.png)
+![apply style](/learn/assets/Theme-builder-step3.png)
 
 ### How to build a theme
 
 1. Go to https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard
 2. Click on the Explore/Create themes
-3. On the Editor page, customize the HEX # values with your brand colors.
+3. On the Editor page, customize the #HEX values with your brand colors.
 4. Select applicable font-family and sizes for your content and heading texts.
 5. Switch between styles types to suit your requirement accordingly.
 6. Icons changes are in progress (coming soon)
