@@ -11,7 +11,7 @@ From WaveMaker 10.0, you can choose from the new build options to deploy your 
 
 ### WaveMaker Build
 
-This build option follows the classic wavemaker build process which was used in the earlier versions of WaveMaker; for example, WM 9.4.
+This build option follows the classic WaveMaker build process which was used in the earlier versions of WaveMaker; for example, WM 9.4.
 
 ### Angular Build
 

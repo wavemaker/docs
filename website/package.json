@@ -9,6 +9,7 @@
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version",
     "test:mdlint": "npx markdownlint ../learn",
+    "test:brandlint": "textlint  --rule terminology ../learn/**",
     "cypress:local": "cypress open",
     "cypress:prepare-prod": "npm run start:nw & npx wait-on http://localhost:3000/learn && bash changed_md_files.sh",
     "cypress:prod": "cypress run --reporter mochawesome --reporter-options 'reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss'",
@@ -31,6 +32,9 @@
     "mochawesome-report-generator": "^4.1.0",
     "optimist": "^0.6.1",
     "remarkable-admonitions": "^0.2.2",
+    "textlint": "^11.6.3",
+    "textlint-plugin-html": "^0.2.0",
+    "textlint-rule-terminology": "^2.1.4",
     "update": "^0.7.4",
     "wait-on": "^3.3.0"
   }

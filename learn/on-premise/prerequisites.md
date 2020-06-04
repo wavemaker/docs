@@ -57,7 +57,7 @@ WaveMaker will share the required artifacts (installer files/Images) to do the s
 
 ### Files
 
-Wavemaker team will share the following files. You should download the below files before starting the installation.
+WaveMaker team will share the following files. You should download the below files before starting the installation.
 Depending on your setup type, WaveMaker team will send one of the following.
 
 - Operating System Pre-Installed.
