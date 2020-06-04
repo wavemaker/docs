@@ -7,7 +7,7 @@ Creating and customizing the look and feel of WaveMaker applications is just a f
 
 <!-- truncate -->
 
-A theme is a preset package containing graphical appearance details. It is often used to change the look and feel of multiple things at once, which makes the elements less granular than allowing the user to set each option individually. For example, you can specify your company's branding colors instantly for your project.  
+A theme is a preset package containing graphical appearance details. It is often used to change the look and feel of multiple things at once, which makes the elements less granular than allowing the user to set each option individually. For example, you can specify your company's branding colors for your project.  
 
 Link to the app: http://apps.wavemakeronline.com/Theme_Builder/#/Dashboard
 
