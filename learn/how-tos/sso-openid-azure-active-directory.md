@@ -113,6 +113,6 @@ For more information about Role mapping, see [Role Mapping in OpenID](/learn/app
 
 ## See Also
 
-[Aunthentication in Wavemaker](/learn/app-development/app-security/authentication/#openid)  
+[Aunthentication in WaveMaker](/learn/app-development/app-security/authentication/#openid)  
 [Quickstart: Add sign-in with Microsoft to a Java web app](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-java-webapp)  
 [Authorize access to web applications using OpenID Connect and Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-protocols-openid-connect-code)  
