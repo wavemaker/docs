@@ -45,7 +45,7 @@ There are many ways to enable security for your app in WaveMaker. You can use Az
 
 ## Note these details
 
-You'll need the following details to enter in WaveMaker Security settings.
+You'll need the following details for enabling security for WaveMaker application.
 
 ![azure provider details](/learn/assets/azure-provider-details.png)
 
@@ -96,20 +96,20 @@ You'll need the the Endpoints from [OpenID Connect metadata document](#endpoints
 
 ### 2. Service Provider Information
 
-- **Redirect Url**: Go to Azure Portal app [Overview](#note-these-details) page, and enter this URL in the **Redirect URLs** section.
+- **Redirect Url**: Go to the app [overview](#note-these-details) page in Azure AD, and enter this URL in the **Redirect URLs** section.
 
 ### 3. Integration Information
 
 ![service provider and integration](/learn/assets/service-provider-integration.png)
 
-- **Client ID**:  Paste the [Client ID](#client-id) of the app created in Azure portal.
-- **Client Secret**: Paste the Client Secret ID generated in [Certificates and Secrets](#certificates-and-secrets).
+- **Client ID**:  Paste the [Client ID](#client-id) of the app created in Azure AD.
+- **Client Secret**: Paste the **Client Secret** ID generated in [Certificates and Secrets](#certificates-and-secrets).
 
 ### 4. Role Mapping
 
-You can assign the roles to the logged-in user by selecting OpenID, or Database. If you select the provider as Database, the configuration is similar to the WaveMaker standards. You just have to keep in mind that the user against whom the roles will be linked is the one returned by the Active Directory query. 
+You can assign the roles to the logged-in user by selecting OpenID, or Database. If you select the provider as a Database, the configuration is similar to the WaveMaker standards. You just have to keep in mind that the user against whom the roles will be linked is the one returned by the Active Directory query. 
 
-For more information about Role mapping, see [Role Mapping in OpenID](/learn/app-development/app-security/authentication/#role-mapping-3)
+For more information about role mapping, see [Role Mapping in OpenID](/learn/app-development/app-security/authentication/#role-mapping-3)
 
 ## See Also
 
