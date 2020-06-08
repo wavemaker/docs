@@ -43,45 +43,76 @@ There are many ways to enable security for your app in WaveMaker. You can use Az
 
 - Click **Add User** to add the domain users to give permissions.
 
+## Note these details
 
-- On the Created App Overview page, find the Application (client) ID value of the application. Copy this value for later.
-- Now select the Endpoints option in App overview page and copy the OpenID Connect metadata document url and paste the URL in a browser window which will show you the JSON with OpenId connection Url’s  details which will be used in configuring the details in Wavemaker-->Security-->Openid configurations.
+You'll need the following details to enter in WaveMaker Security settings.
 
-- In the Azure Active Directory left menu select Certificates & secrets ---> Client secrets ---> Select New Client Secret ---> Select Duration example 1year --> Copy the generated Secret value.
+![azure provider details](/learn/assets/azure-provider-details.png)
 
-Please refer following Screenshots for more details.
+### Client ID
+
+- Go to **App Registrations**.
+- Click on the app to access all necessary authorization details.
+- Note the **Application (client) ID** for the app that you created.
+
+### Endpoints
+
+- In the App Overview page, select the **Endpoints** option.
+- Go to the **OpenID Connect metadata document**.
+- Copy and paste the URL in a browser; it will display data in JSON format with OpenID connection URLs. This information will be used in [OpenID Configuration Setup in WaveMaker](#open-id-configuration-setup-in-wavemaker).
+
+### Certificates and Secrets
+
+You can upload certificates and related information in the **Manage** section of app settings under the **Certificates & Secrets** option.
+
+- Click **New client secret**, and select the **Duration**; for example, *Expires in 1 year*. Note the generated secret value.
 
 ## Open ID Configuration Setup in WaveMaker
 
-- Now go to Wavemaker project ---> Select Security window ---> Authentication --> Security Providers --> Select OpenID and provide the Identity Information as shown in above provided Endpoint document  OpenID Connect metadata document.
+- Open a WaveMaker project.
+- Go to the Security settings of the project.
 
-ProviderID: Select Custom and Enter the Provider Name ( Microsoft).
+![select security](/learn/assets/select-security.png)
 
-Authorization Url : Check for the authorization_endpoint url in metadata doc provide here.
+- Go to the Authentication and Authorization tab.
 
-Token Url: Check for the token_endpoint url in metadata doc provide here.
+![authentication-authorization](/learn/assets/authentication-authorization.png)
 
-JWKS Url: Check for the jwks_uri in metadata doc provide here.
+- In the **Authentication** section, go to **Security Providers**, and select **Open ID** from the dropdown.
+- Enter the Provider details in the following section.
 
-User Info Endpoint: Check for the userinfo_endpoint url in metadata doc provide here.
+### 1. Identity Provider Information
 
+You'll need the the Endpoints from [OpenID Connect metadata document](#endpoints).
 
-Logout Url: Check for the end_session_endpoint url in metadata doc provide here.
+![enter the provider details](/learn/assets/identity-provider-information-openid.png)
 
+- **ProviderID**: Select the Custom option and Enter the Provider Name. For example, azure.
+- **Authorization Url**: Enter the `authorization_endpoint` URL specified from the [metadata](#endpoints) document.
+- **Token Url**: Enter the `token_endpoint` URL from the [metadata](#endpoints) document.
+- **JWKS Url**: Enter the `jwks_uri` from the [metadata](#endpoints) document.
+- **User Info Endpoint**: Enter the `userinfo_endpoint` URL from the [metadata](#endpoints) document.
+- **Logout Url**: Enter the `end_session_endpoint` URL from the [metadata](#endpoints) document.
 
-Client ID:  Paste the Client ID copied in step1.
+### 2. Service Provider Information
 
+- **Redirect Url**: Go to Azure Portal app [Overview](#note-these-details) page, and enter this URL in the **Redirect URLs** section.
 
-Client Secret: Paste the Client Secret ID generated in step1.
+### 3. Integration Information
 
-Now copy the Redirect Url from Service Provider Information section and go to Azure AD app Overview section select the Redirect URIs and provide the redirect URI.
+![service provider and integration](/learn/assets/service-provider-integration.png)
 
-## Step 3: Test the Application
+- **Client ID**:  Paste the [Client ID](#client-id) of the app created in Azure portal.
+- **Client Secret**: Paste the Client Secret ID generated in [Certificates and Secrets](#certificates-and-secrets).
 
-Go to Wavemaker Project--->Select Preview--->You observe microsoft SSO login page will be visible and try login one AD user details which will redirect you to the Wavemaker Application Screen.
+### 4. Role Mapping
+
+You can assign the roles to the logged-in user by selecting OpenID, or Database. If you select the provider as Database, the configuration is similar to the WaveMaker standards. You just have to keep in mind that the user against whom the roles will be linked is the one returned by the Active Directory query. 
+
+For more information about Role mapping, see [Role Mapping in OpenID](/learn/app-development/app-security/authentication/#role-mapping-3)
 
 ## See Also
 
 [Aunthentication in Wavemaker](/learn/app-development/app-security/authentication/#openid)  
-[quickstart-v2-java-webapp](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-java-webapp)  
-[protocols-openid-connect-code](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-protocols-openid-connect-code)  
+[Quickstart: Add sign-in with Microsoft to a Java web app](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-java-webapp)  
+[Authorize access to web applications using OpenID Connect and Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-protocols-openid-connect-code)  
