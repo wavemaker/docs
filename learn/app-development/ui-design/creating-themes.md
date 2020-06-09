@@ -1,77 +1,27 @@
 ---
-title: "Creating Themes"
+title: "Creating Themes using the Manual Setup"
 id: ""
-sidebar_label: "Create Themes"
+sidebar_label: "Manual Setup"
 ---
 ---
 
-Themes are used to apply a style to the entire application. Develop themes for web and mobile apps instantly without needing to code; you can do this by using WaveMaker theme builder. Also, you can develop more advanced themes by installing the setup which requires you to know HTML, CSS, LESS, and Grunt.
+Themes are used to apply a style to the entire application. WaveMaker app (web, and mobile) themes are based on the BootStrap CSS markup and it requires you to know HTML, CSS, LESS, and Grunt.
 
-In this document, see how to develop themes in WaveMaker using both approaches.
+### Styling Elements
 
-1. The first approach is by using the Theme Editor tool.
-2. The second approach is by installing the setup.
+Mainly, themes contain the following styling for all the elements on a page.
 
-## Using the Editor Tool
+1. **Color**: Background, text color, border color, hover/active/focus colors, and more.
+2. **Properties**: For text like text-align, text-decoration, font-size, font-weight, and more.
+3. **Layout**: Includes margin, padding, border-radius, and more.
 
-**Theme Builder** is a WaveMaker application that allows you to build a theme by changing **colors**, **typography**, and **styles** of the components and elements without needing to edit the code.
-
-Follow the steps below to build a theme.
-
-1. Go to the [WaveMaker Theme Builder](https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard) app.
-2. Click the **Explore/Create** themes option.
-
-    ![theme options](/learn/assets/theme-builder.png)
-
-3. On the Editor page, you can customize the existing #HEX values with custom hex, rgba, rgb colors, choose font-family and sizes, and select styles for the component and elements in a few simple steps.
-
-### Step 1: Choose Colors
-
-Change the existing **#HEX** values by choosing colors from the color picker for primary, secondary, and additional colors that you want to modify for the pages.
-
-1. **`Colors`**: Set global colors for components and elements
-2. **`LeftNav`**: Set colors for the left navigation
-3. **`Header`**: Set colors to change the header styles
-4. **`More options`**: Set the colors for the disabling, links, and alerting properties
-
-![apply colors](/learn/assets/Theme-builder-step1.png)
-
-### Step 2: Apply Font Styles
-
-Customize the typography for the header, body, and caption styles. You can choose the **font-family** from the options available in the dropdown.
-
-1. **`Heading font`**: Select the font-family for headers, which apply to H1, H2, H3, H4, H5, and H6
-2. **`Body font`**: Select the font-family for body and captions
-3. **`More options`**: Set font-weight, font-size and case sensitive preferences
-
-![apply font](/learn/assets/Theme-builder-step2.png)
-
-### Step 3: Select Theme Variation Style
-
-Change the variation of theme style as per the aesthetics. Switching between themes will allow you to preview the relative changes instantly. You can select from the following options.
-
-- **Flat**: The flat-theme includes a solid background to the elements with active states. It also adds an outlined border for user inputs.
-
-- **Material**: The material-theme has a sleek finish with elevated shadows to understand each element's relative importance and focus their attention.
-
-- **Gradient**: The gradient theme fills the content blocks with a linear gradient shade starting from top to bottom.
-
-![apply theme style](/learn/assets/Theme-builder-step3.png)
-  
-:::note
-Step 4: Changing the behavior of icons (coming soon).
+:::tip
+You can also develop themes instantly without needing to code; you can do this by using WaveMaker theme builder. For more information, see the [Theme Builder Editor Tool](/learn/app-development/ui-design/theme-builder).
 :::
 
-4. Click **Done**, and your changes are ready to download.
-5. Provide a **Name** for your theme, and click **Download Theme**.
-
-[![download theme](/learn/assets/theme-builder-rename.png)](/learn/assets/theme-builder-rename.png)
-
-The theme will be downloaded as a .zip file.
-
-6. **Import** and **apply** the downloaded theme into any of your WaveMaker applications.
-
 ## Using the Manual Setup
+
+In this document, see how to develop themes in WaveMaker using the manual approach which requires you to install the whole setup into the local environment.
 
 ### Prerequisites
 
@@ -83,30 +33,39 @@ Before creating a theme, make sure you have installed the following on your mach
 ### Setup
 
 1. Open GIT Bash prompt
-2. Install **grunt** using the following command:
-```    
-npm install -g grunt-cli
-``` 
-For more information, see [Grunt](https://gruntjs.com/getting-started).
+2. Install **grunt** using the following command
+
+    ```npm
+    npm install -g grunt-cli
+    ```
+
+    For more information, see [Grunt](https://gruntjs.com/getting-started).
 
 3. Install **bower** using the following command:
-```
-npm install -g bower
-```  
-For more information on bower [click here](https://www.npmjs.com/package/bower)
+
+    ```npm
+    npm install -g bower
+    ```
+
+    For more information on bower, see [click here](https://www.npmjs.com/package/bower).
+
 4. Setup the **WaveMaker Theme repository**. 
-> For Git clone, see [Grunt WaveMaker Theme](https://github.com/wavemaker/grunt-wavemaker-theme.git).
-```     
-cd grunt-wavemaker-theme
-```
-```
-npm install
-``` 
-Follow the instructions given at the [Git repository](https://github.com/wavemaker/grunt-wavemaker-theme).
+
+    - For Git clone, see [Grunt WaveMaker Theme](https://github.com/wavemaker/grunt-wavemaker-theme.git).
+
+    ```npm
+    cd grunt-wavemaker-theme
+    ```
+
+    ```npm
+    npm install
+    ```
+
+    Follow the instructions given at the [Git repository](https://github.com/wavemaker/grunt-wavemaker-theme).
 
 5. After setting up the repository, under the **src** folder you will find the following files that can be modified as per your needs:  
 
-[![theme-web](/learn/assets/theme-web.png)](/learn/assets/theme-web.png) 
+    [![theme-web](/learn/assets/theme-web.png)](/learn/assets/theme-web.png)
 
 :::note
 Themes for Web and Mobile (Android/iOS) apps are different, use the appropriate theme source file to generate the theme bundle.
@@ -128,30 +87,35 @@ Themes for Web and Mobile (Android/iOS) apps are different, use the appropriate 
 4. **`style.less`**: This less file includes styles for components like header, footer, leftnav, calendar etc., which are not defined in the bootstrap CSS. These components can be further customized in this file by using the variables defined at the beginning of the file eg header background color can be changed using the @wm-header-bg-color variable.
 5. **`variables.less`**: This less file includes the styles defined by bootstrap. The values defined in this file are used by the widgets like buttons, links, textbox etc. Refer [Bootstrap documentation](http://getbootstrap.com/customize/) on LESS variables for more details.
 
-## Creating WaveMaker Theme for Web Apps
+## Creating Theme for Web Apps
 
-Following are steps for creating a theme for a web app:
+Follow the steps below for creating a theme for a web app:
 
-1. After [setting up theme repository](#create-theme), navigate to the **web** folder.
+1. After setting up the theme repository, navigate to the **web** folder.
 2. Open `style.less` and `variables.less` in the editor of your choice.
-3. To use the **web fonts** in the theme, copy the web fonts (.ttf,.eot,woff) in the font folder and include the font definition in `variables.less`:
-```    
-@font-face {
-    font-family: 'robotoregular';
-    src: url('fonts/Roboto-Regular-webfont.eot');
-    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('fonts/Roboto-Regular-webfont.woff') format('woff'),
-    url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
-    url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
-}
-```    
-4. The `variables.less` contain variables which are used while building the bootstrap CSS.  For example, `@brand-primary` value change will affect all the styles using this specific property value. More information on variables at the [Bootstrap site](http://getbootstrap.com/customize/).
-```    
-//## Gray and brand colors for use across Bootstrap.
-@brand-primary:         #551C2B;
-@brand-success:         #088362;
-```    
-[More on Styling App Components](/learn/how-tos/customizing-theme/)
+3. To use the **web fonts** in the theme, copy the web fonts (.ttf,.eot, .woff) in the font folder and include the font definition in `variables.less`.
+
+    ```css
+    @font-face {
+        font-family: 'robotoregular';
+        src: url('fonts/Roboto-Regular-webfont.eot');
+        src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+        url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+        url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    }
+    ```
+
+4. The `variables.less` contain variables which are used while building the bootstrap CSS.  For example, `@brand-primary` value change will affect all the styles using this specific property value. For more information on variables, see [Bootstrap customization](http://getbootstrap.com/customize/).
+
+    ```css
+    //## Gray and brand colors for use across Bootstrap.
+    @brand-primary:         #551C2B;
+    @brand-success:         #088362;
+    ```
+
+    For more information, see [Styling App Components](/learn/how-tos/customizing-theme/).
+
 5. Replace the theme.png with your image in the web folder
 6. Update the .wm-properties to [provide theme information](#dir-struct)
 7. [Build the theme](#build-theme).
@@ -160,7 +124,7 @@ Following are steps for creating a theme for a web app:
 
 ## Creating WaveMaker Theme for Web apps using Bootswatch
 
-Bootswatch provides bootstrap themes that can be integrated into your WaveMaker web apps. The prerequisites and setup for building WaveMaker theme are the same as mentioned in the [previous section](#create-theme).
+Bootswatch provides bootstrap themes that can be integrated into your WaveMaker web apps. The prerequisites and setup for building the WaveMaker theme are the same as mentioned in the [previous section](#create-theme).
 
 1. Select a theme from [Bootswatch](https://bootswatch.com/3/).
 2. Download the `variables.less` and `bootswatch.less` files for the selected theme.
