@@ -240,3 +240,9 @@ In order to make a custom theme available to developers across the enterprise, i
 
 4. Note that the current Theme applied to the application will be selected for Publishing.
 5. Once the EDN Admin approves the Theme, the same will be available in the Artifacts listing in the **Themes** dialog for other developers to select and apply.
+
+## See Also
+
+[Apply and Import Theme](/learn/app-development/ui-design/themes/)  
+[Customize an Existing Theme](/learn/how-tos/customize-existing-theme/)  
+[How to Customize Themes](/learn/how-tos/customizing-theme/)  

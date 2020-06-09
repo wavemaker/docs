@@ -6,7 +6,7 @@ id: "themes"
 
 **Themes** are style elements that work at the widget or UI component level. Themes help you provide a consistent look and feel to your application.
 
-In this document, see how to apply standard themes, and in the next section see how to import and apply custom themes.
+In this document, see how to apply standard themes, and in the next section, see how to import and apply custom themes.
 
 ## Applying Standard Themes
 
@@ -67,6 +67,8 @@ If you want to use a custom theme, it is recommended to create a theme and come 
 
 :::important
 For the Enterprise version, the custom themes will be available once they are published to the EDN and approved by the EDN Admin, without needing to import.
+
+For more information, see [How to Publish a Theme to EDN](/learn/app-development/ui-design/creating-themes#publishing-the-theme).
 :::
 
 ### Import Theme
