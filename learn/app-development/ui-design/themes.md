@@ -1,6 +1,7 @@
 ---
 title: "Apply and Import Theme"
 id: "themes"
+sidebar_label: "Themes"
 ---
 ---
 
