@@ -73,6 +73,22 @@ Themes for Web and Mobile (Android/iOS) apps are different, use the appropriate 
 
 ## Theme Package Structure
 
+### Directory Structure
+
+1. **`Fonts`** folder: The web fonts can be copied here and referenced in the theme. There will be references to Roboto regular fonts in the variables.less (src/web), to avail them please download Roboto regular fonts and paste them in fonts directory (src/web/fonts).
+2. **`.wmprojects.properties`**: This contains essential properties required to identify the theme.
+
+    **`.wmprojects.properties`**
+    - **`name:`** for the theme,
+    - **`version`**: of the theme. Updated version will be used to replace the existing theme in the project.
+    - **`description`**: a short meaningful `description` of the theme,
+    - **`type:`** THEME (DO NOT CHANGE THIS), and
+    - **`author`**: name of the author for the theme.
+
+3. **`theme.png`**: Used to visually identify the Theme in the Theme dialog. The size of the image should be 160 x 120 px.
+4. **`style.less`**: This less file includes styles for components like header, footer, leftnav, calendar etc., which are not defined in the bootstrap CSS. These components can be further customized in this file by using the variables defined at the beginning of the file eg header background color can be changed using the @wm-header-bg-color variable.
+5. **`variables.less`**: This less file includes the styles defined by bootstrap. The values defined in this file are used by widgets like buttons, links, textbox, and more. For more information, see [Bootstrap documentation](http://getbootstrap.com/customize/) on LESS variables.
+
 ### Web Responsive
 
 For creating a custom theme for a WaveMaker application, you need to understand the package structure. The theme package contains the following files:
@@ -101,22 +117,6 @@ Following is the package structure:
 | ios | Fonts | Folder containing web-based fonts used in the app. | Required |
 |  | style.css | Containing styles related to the theme. | Required |
 |  | variables.less | Less variables to define colors, sizes and more. | Required |
-
-### Directory Structure
-
-1. **`Fonts`** folder: The web fonts can be copied here and referenced in the theme. There will be references to Roboto regular fonts in the variables.less (src/web), to avail them please download Roboto regular fonts and paste them in fonts directory (src/web/fonts).
-2. **`.wmprojects.properties`**: This contains essential properties required to identify the theme.
-
-    **`.wmprojects.properties`**
-    - **`name:`** for the theme,
-    - **`version`**: of the theme. Updated version will be used to replace the existing theme in the project.
-    - **`description`**: a short meaningful `description` of the theme,
-    - **`type:`** THEME (DO NOT CHANGE THIS), and
-    - **`author`**: name of the author for the theme.
-
-3. **`theme.png`**: Used to visually identify the Theme in the Theme dialog. The size of the image should be 160 x 120 px.
-4. **`style.less`**: This less file includes styles for components like header, footer, leftnav, calendar etc., which are not defined in the bootstrap CSS. These components can be further customized in this file by using the variables defined at the beginning of the file eg header background color can be changed using the @wm-header-bg-color variable.
-5. **`variables.less`**: This less file includes the styles defined by bootstrap. The values defined in this file are used by widgets like buttons, links, textbox, and more. For more information, see [Bootstrap documentation](http://getbootstrap.com/customize/) on LESS variables.
 
 ## Creating Theme for Web Apps
 
