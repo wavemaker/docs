@@ -131,7 +131,7 @@ public void generatePdfReport(String jrxml, String database,HttpServletResponse 
     } catch (Exception e) {
       logger.info("Error: ", e);
     } finally {
-      if (conn==null) {
+      if (conn!==null) {
         //closing database connection
         conn.close();
       }
