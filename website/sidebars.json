@@ -51,6 +51,7 @@
           "label": "Develop Themes",
           "ids": 
             [
+              "app-development/ui-design/theme-builder",
               "app-development/ui-design/creating-themes",
               "app-development/ui-design/page-concepts/creating-template-bundles"
             ]
