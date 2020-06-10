@@ -10,7 +10,7 @@ You can Import REST API endpoints via Open API/Swagger import feature.
 In this document, see how you can use an API of an existing WaveMaker app into another WaveMaker app in just a few simple steps.
 
 :::note
-This document assumes that you have a sample hrdb imported in your project. For more infromation, see [Connect to a sample DB](/learn/app-development/services/database-services/working-with-databases/#connect-to-a-db).
+This document assumes that you have a sample HRDB imported in your project. For more information, see [Connect to a sample DB](/learn/app-development/services/database-services/working-with-databases/#connect-to-a-db).
 :::
 
 ## Download Swagger from a WaveMaker Project
@@ -23,11 +23,11 @@ This document assumes that you have a sample hrdb imported in your project. For 
 
 ## Import Swagger into another Project
 
-Import the swagger into another project. For more information on how to import, see [Importing REST APIs via Swagger](/learn/app-development/services/api-designer/import-rest-apis-swagger).
+Import the downloaded swagger into another WaveMakar project. For more information on how to import, see [Importing REST APIs via Swagger](/learn/app-development/services/api-designer/import-rest-apis-swagger).
 
 ## Enter Host Name and Base Path
 
-You'll need the host name and base path when you import an API via Swagger Import.
+You will need the host name and base path when you import an API via [Swagger Import](/learn/app-development/services/api-designer/import-rest-apis-swagger).
 
 :::note
 Ensure that the application is deployed before you could use the API. For more information on how to deploy an app, see [One-Click Deployment](/learn/app-development/deployment/one-click-deployment).
@@ -35,7 +35,7 @@ Ensure that the application is deployed before you could use the API. For more i
 
 ![updating host and basepath](/learn/assets/update-host-basepath.png)
 
-- Enter the **Host URL**. The host is the URL where the app is hosted. For example, `hostid.cloud.wavemakeronline.com/yourappname`.
+- Enter the **Host Name**. The host is the URL where the app is hosted. For example, `hostid.cloud.wavemakeronline.com/yourappname`.
 - Enter the **Base Path**. For example, `/services` is the basepath for HRDB.
 - Click **Save**.
 
