@@ -612,6 +612,7 @@
           "Web services":
           [
             "how-tos/using-app-environment-properties",
+            "how-tos/consuming-existing-wm-api-into-another-wm-project",
             "how-tos/using-post-method-send-data-rest-api",
             "how-tos/request-response-processing-rest-services",
             "how-tos/intercept-requests-responses-api-calls-one-place"
