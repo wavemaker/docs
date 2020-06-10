@@ -10,15 +10,15 @@
     "Pages": 
       [     
             "app-development/ui-design/designing-app",
-            "app-development/ui-design/page-creation",                   
+            "app-development/ui-design/page-creation",                 
         {
           "type": "subcategory",
-          "label": "Styles",
+          "label": "Layout and Styles",
           "ids": 
             [     
-              "app-development/ui-design/page-concepts/page-layouts",         
-              "app-development/ui-design/themes",
-              "app-development/ui-design/page-concepts/page-templates"
+              "app-development/ui-design/page-concepts/page-layouts",
+              "app-development/ui-design/page-concepts/page-templates",
+              "app-development/ui-design/themes"            
             ]
         },           
 
@@ -48,13 +48,15 @@
 
         {
           "type": "subcategory",
-          "label": "Develop Themes",
-          "ids": 
+          "label": "Custom Development",
+          "ids":
+        
             [
+              "app-development/ui-design/theme-builder",
               "app-development/ui-design/creating-themes",
               "app-development/ui-design/page-concepts/creating-template-bundles"
             ]
-        }               
+          }
 
       ],      
 

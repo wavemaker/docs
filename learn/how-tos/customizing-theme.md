@@ -3,16 +3,20 @@ title: "Customizing Theme"
 id: ""
 ---
 ---
-Before trying to customize the app Theme, it is recommended you that familiarise with the Theme implementation from [this document](/learn/app-development/ui-design/themes/#customise-theme) regarding the build, import and application of a Theme in WaveMaker app.
 
-## Changing background of an application
+:::note
+Before trying to customize the app Theme, it is recommended that you familiarise with the [Theme Implementation Process](/learn/app-development/ui-design/creating-themes) regarding the build and [How to Import and Apply](/learn/app-development/ui-design/themes/#import-and-apply-custom-themes) theme in a WaveMaker app.
+:::
+
+## Changing the background of an application
 
 - Edit _variables.less_ and update the value for **@body-bg**.
 
 ## Using web fonts in a theme
 
-- To use the **web fonts** in the theme, copy the web fonts(.ttf, .eot, woff) in the font folder and include the font definition in variable.less:
-```    
+- To use the **web fonts** in the theme, copy the web fonts(.ttf, .eot, woff) in the font folder and include the font definition in variable.less.
+
+```css
 @font-face 
 {
     font-family: 'robotoregular';
@@ -22,9 +26,11 @@ Before trying to customize the app Theme, it is recommended you that familiarise
     url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
     url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
 }
-```    
+```
+ 
 - Once the font definitions are added the same need to be applied. For this change the font family specifications in the variable.less to point to the above-defined font family name (robotoregular, in this case). Note the second font family name (Arial, in this case) will be the fallback option.
-```   
+
+```css
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
@@ -34,7 +40,7 @@ Before trying to customize the app Theme, it is recommended you that familiarise
 //\*\* Default monospace fonts for \`<code>\`, \`<kbd>\`, and \`<pre>\`.
 @font-family-monospace:   'robotoregular', 'Arial', sans-serif;
 @font-family-base:        @font-family-sans-serif;
-```    
+```
 
 ## Style the Components of WaveMaker App
 
@@ -450,5 +456,7 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | Text Color | variables.less |  | @navbar-default-color | #000 |
 
 ## See Also
-[How to customize existing theme](/learn/how-tos/customize-existing-theme/)
+
+[Creating Themes using the Manual Setup](/learn/app-development/ui-design/creating-themes)  
+[How to customize existing theme](/learn/how-tos/customize-existing-theme/)  
 [How to customize leftnav width](/learn/how-tos/how-to-adjust-lefnav-width/)
