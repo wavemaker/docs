@@ -14,9 +14,9 @@ They come with obvious advantages as these micro services are:
 
 Although micro services make it easy for the services to be micromanaged by individual owners, it poses a challenge to the consumer of these APIs. For example a front end app that wants data which may be served at different micro services, the client has to make an API call to each microservice and combine the data to finally consume it in the UI elements. There is also the problem of over fetching and under fetching with these APIs. There could be certain fields in the data from one API, which the UI client may not even need, but still a bloated data is fetched.
 
-Let's consider a simple example of a bookstore app with just two entities, a `Book` and an `Author`. Each entity is maintained by an individual micro service.
+Let's consider a simple example of a bookstore app with just two entities, a `Book` and an `Author`. Each entity is maintained by an individual microservice.
 
-![GraphQL_MicroServices_Architecture](/learn/assets/GraphQL_Example.png)
+![MicroServices_Architecture Example](/learn/assets/GraphQL_Example.png)
 
 In order to display details of a book, minimum two API calls are required to be made, one to get Book info and one to get the respective Author info.
 Similarly, to display an Author details with all the Books written by them, two API calls are required to be made, one to get Author info and one to get the list of books for that author.
@@ -41,14 +41,14 @@ GraphQL is an API that was invented and open sourced by Facebook as a better rep
 
 Here is an example of a query to fetch an `Author` by `id`:
 
-![GraphQL_MicroServices_Architecture](/learn/assets/GraphQL_Query_Bookstore_Example.png)
+![Bookstore Query Example](/learn/assets/GraphQL_Query_Bookstore_Example.png)
 
 ## Type system in GraphQL
 GraphQL’s powerful expressive ability mainly comes from its complete type system. Unlike REST, it regards all resources in the entire Web service as a connected graph, rather than a resource island, which can be accessed when accessing any resource. Access other resources through connections between resources.
 
 The bookstore schema graph would look something like below:
 
-![GraphQL_MicroServices_Architecture](/learn/assets/GraphQL_Schema_Example.png)
+![GraphQL Schema Example](/learn/assets/GraphQL_Schema_Example.png)
 
 ## Wiring data with a GraphQL query
 GraphQL can simply be treated as the middleware of a back end system. Hence, it is very easy to plug it in with existing systems. For example, in NodeJS implementation of GraphQL, data against a query can be fetched via a `resolve` function, that simply returns a promise. The logic to query the data (e.g. calling an existing REST API) can be written in this resolve function.
