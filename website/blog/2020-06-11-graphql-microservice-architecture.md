@@ -91,6 +91,13 @@ Authentication and authorization are other issues that need to be considered whe
 To answer this question, you can think of GraphQL as a DSL (Domain Specific Language) on top of your own backend data acquisition logic. We just need to think of it as an intermediate layer that can be placed between the client and our actual data service (or multiple services).
 Then consider authentication and authorization as another layer. GraphQL is not useful in the actual implementation of authentication or authorization logic because it does not mean it. However, if we want to place these layers behind GraphQL, we can use GraphQL to pass the access token between the client and Auth API. This is very similar to the way we authenticate and authorize via the RESTful API.
 
+## Integrating with a WaveMaker App
+
+The GraphQL implementation (irrespective of the language implemented in) exposes a REST endpoint which is always a POST call with the query as request body. Now, this GraphQL endpoint can be imported into a WaveMaker app like any other REST API through the REST API import interface in WaveMaker studio. Once imported, UI can be built while binding to the GraphQL data in the form of a service variable without writing any code on the UI.
+Follow the document on [working with REST APIs in a WaveMaker app](/learn/app-development/services/web-services/rest-services).
+
+
+
 ## Conclusion
 
 GraphQL is really good at describing schemas but also stitch together different APIs and the end result is something that's really useful for someone building an app as querying for data will be very simple. Different APIs is exactly what we have when we have a micro services architecture. Using GraphQL on top of it all means we can reap the benefits from our chosen architecture at the same time as an App can get exactly the data it needs.
