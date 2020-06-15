@@ -5,12 +5,15 @@ author: Vibhu Singhal
 
 Today it is becoming more and more common to break down a monolithic architecture into micro services, thereby you get many small APIs that work independently. In micro services architecture, a bunch of services are broken down into independent smaller services which expose standard REST APIs to interact with.
 <!-- truncate -->
+
 They come with obvious advantages as these micro services are:
 - Highly maintainable and testable
 - Loosely coupled
 - Independently deployable
 - Organized around business capabilities
 - Owned by a small team
+
+## Problems in a micro service architecture
 
 Although micro services make it easy for the services to be micromanaged by individual owners, it poses a challenge to the consumer of these APIs. For example a front end app that wants data which may be served at different micro services, the client has to make an API call to each microservice and combine the data to finally consume it in the UI elements. There is also the problem of over fetching and under fetching with these APIs. There could be certain fields in the data from one API, which the UI client may not even need, but still a bloated data is fetched.
 
