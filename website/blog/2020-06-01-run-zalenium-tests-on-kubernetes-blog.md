@@ -41,7 +41,7 @@ First lets understand often used terms in the Kubernetes world.
 
 **Job:** The main function of a job is to create one or more pods and track the success of pods.
 
-##Test Environment Provisioning
+## Test Environment Provisioning
 
 WaveMaker has created a kubernetes cluster with default two nodes for the test execution environment. In the kubernetes cluster, the image source of the test case execution is being pushed to the kubernetes registry once a commit has been merged into master.
 Before the image is being pushed to the registry pre-compilation task is being executed in the Jenkins task to avoid pushing the image with compilation errors.
@@ -57,7 +57,7 @@ On completion of above commands, respective Job status will be changed to comple
 
 Based on the number of requests for test execution a new Job will be launched. If there is a need to create new pods then kubernetes engine checks for the resource availability in the running node. If node is fully utilized then the kubernetes engine will launch a new node and launch the pod from it. After the pod execution is done kubernetes engine will perform a health check and close the node if no resources are being utilized.
 
-##Remote Driver and setup challenges
+## Remote Driver and setup challenges
 
 As UI Tests run on a browser, Team observed browser crashing issues when more tests are running on the same machine. To avoid this problem, test execution has to be distributed onto multiple machines. 
 If tests need to run in multiple machines, each machine needs to have a browser node which has to be registered to a remote driver in the master. This involves lots of manual configuration.
