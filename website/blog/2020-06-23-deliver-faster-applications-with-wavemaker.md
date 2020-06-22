@@ -62,7 +62,7 @@ Below are the stats from WaveMaker testing with CDN integration comparing the do
 |-------------|-----------------------|
 | Starter App |                   ~39%|
 | WaveKart    |                   ~29%| 
-| SalesVision |                   ~30%| 
+| [SalesVision](https://www.wavemaker.com/showcase/docs/salesVision) |                   ~30%| 
 
 As stated, improving performance is a continuous endeavor for WaveMaker & more optimizations will be delivered to the customers with each release. It will enable our customers to build & deliver faster apps for their users leading to successful collaboration.
 
