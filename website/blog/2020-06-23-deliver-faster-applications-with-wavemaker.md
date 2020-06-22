@@ -25,7 +25,7 @@ WaveMaker generates Angular code for the applications, thus has the flexibility 
 
 * Treeshaking/Dead Code Elimination, with the help of Angular Production Build & modular component library
 * Lazy Loading of Routes & Components, so that user is served with just the required code as they navigate pages of the app
-* Enable modern compression algorithms such as gzip & brotli for all the requests reducing the network load & time.
+* Enable modern compression algorithms such as [gzip & brotli](https://www.wavemaker.com/faster-page-load-times-using-brotli-compression/) for all the requests reducing the network load & time.
 
 With the current release i.e., version 10.5, WaveMaker team is pleased to announce support for deployment of frontend artifacts onto a Content Delivery Network, which can help in reducing the download time of static resources by ~30%.
 
@@ -58,11 +58,11 @@ However, for deploying onto production, the customers may prefer their cloud ser
 
 Below are the stats from WaveMaker testing with CDN integration comparing the download times of static assets for some of the standard sized applications,
 
-| Application | Without CDN | With CDN | Reduced Download Time |
-|-------------|-------------|----------|-----------------------|
-| Starter App | 4108ms      | 2496ms   |                   ~39%|
-| WaveKart    | 3585ms      | 2531ms   |                   ~29%| 
-| SalesVision | 3773ms      | 2617ms   |                   ~30%| 
+| Application | Reduced Download Time |
+|-------------|-----------------------|
+| Starter App |                   ~39%|
+| WaveKart    |                   ~29%| 
+| SalesVision |                   ~30%| 
 
 As stated, improving performance is a continuous endeavor for WaveMaker & more optimizations will be delivered to the customers with each release. It will enable our customers to build & deliver faster apps for their users leading to successful collaboration.
 
