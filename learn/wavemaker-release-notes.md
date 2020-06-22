@@ -15,7 +15,7 @@ WaveMaker is constantly working on bringing new features and improvements to the
 |**[WaveMaker v10.5.0](/learn/wavemaker-release-notes/v10-5-0)**|**New features + Bug fixes** |**22 June 2020** | -|-|
 |[WaveMaker v10.4.2](/learn/wavemaker-release-notes/v10-4-2)|New features + Bug fixes | 27 May 2020, <br> 13 May 2020, <br> 07 May 2020 |v10.4.2, v10.4.1, v10.4.0, v10.3.3, v10.3.2 |10 May 2020|
 |[WaveMaker v10.4.1](/learn/wavemaker-release-notes/v10-4-1)|Bug fixes | 29 April 2020 | -|-|
-|[WaveMaker v10.4.0](/learn/wavemaker-release-notes/v10-4-0)|New features + Bug fixes | 20 April 2020 | -|-|
+|**[WaveMaker v10.4.0](/learn/wavemaker-release-notes/v10-4-0)**|**New features + Bug fixes** |**20 April 2020** | -|-|
 |[WaveMaker v10.3.3](/learn/wavemaker-release-notes/v10-3-3)|Bug fixes | 26 February 2020 | -|-|
 |[WaveMaker v10.3.2](/learn/wavemaker-release-notes/v10-3-2)|Bug fixes | 19 February 2020 | -|-|
 |[WaveMaker v10.3.1](/learn/wavemaker-release-notes/v10-3-1)|New features + Bug fixes | 12 February 2020 |v10.3.1, v10.3.0, v10.2.7, v10.2.6, v10.2.5, v10.2.4, v10.2.3, v10.2.2, v10.2.1 |14 February 2020|
