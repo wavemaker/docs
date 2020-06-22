@@ -7,22 +7,15 @@ Find what's new in WaveMaker. See information related to bug fixes, new features
 ---
 WaveMaker is constantly working on bringing new features and improvements to the product. Follow our [team blog](/learn/blog) to see what's happening in WaveMaker. If you notice a bug, report to us at [support](mailto:support@wavemaker.com). The fixes will be specified in the release notes. 
 
-## Older Releases
-
-
-- **[WaveMaker 9.x Documentation](https://www.wavemaker.com/9/learn/index.html)**  
-- **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)**  
-
-
 ## Current Release Details
 ---
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
-|[WaveMaker v10.5.0](/learn/wavemaker-release-notes/v10-5-0)|New features + Bug fixes | 22 June 2020 | -|-|
+|**[WaveMaker v10.5.0](/learn/wavemaker-release-notes/v10-5-0)**|**New features + Bug fixes** |**22 June 2020** | -|-|
 |[WaveMaker v10.4.2](/learn/wavemaker-release-notes/v10-4-2)|New features + Bug fixes | 27 May 2020, <br> 13 May 2020, <br> 07 May 2020 |v10.4.2, v10.4.1, v10.4.0, v10.3.3, v10.3.2 |10 May 2020|
 |[WaveMaker v10.4.1](/learn/wavemaker-release-notes/v10-4-1)|Bug fixes | 29 April 2020 | -|-|
-|**[WaveMaker v10.4.0](/learn/wavemaker-release-notes/v10-4-0)**|**New features + Bug fixes** | **20 April 2020** | -|-|
+|**[WaveMaker v10.4.0](/learn/wavemaker-release-notes/v10-4-0)**|**New features + Bug fixes** |**20 April 2020** | -|-|
 |[WaveMaker v10.3.3](/learn/wavemaker-release-notes/v10-3-3)|Bug fixes | 26 February 2020 | -|-|
 |[WaveMaker v10.3.2](/learn/wavemaker-release-notes/v10-3-2)|Bug fixes | 19 February 2020 | -|-|
 |[WaveMaker v10.3.1](/learn/wavemaker-release-notes/v10-3-1)|New features + Bug fixes | 12 February 2020 |v10.3.1, v10.3.0, v10.2.7, v10.2.6, v10.2.5, v10.2.4, v10.2.3, v10.2.2, v10.2.1 |14 February 2020|
@@ -96,6 +89,12 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | Cordova (mobile apps) <br> Android <br> iOS <td bgcolor="#44aaf4"> **8.1.1 -> 9.0.0** <br> 8.0.0   <br> 5.0.1 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
+
+## Older Releases
+
+- **[WaveMaker 9.x Documentation](https://www.wavemaker.com/9/learn/index.html)**  
+- **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)**  
+
 
 
 
