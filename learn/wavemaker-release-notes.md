@@ -7,13 +7,6 @@ Find what's new in WaveMaker. See information related to bug fixes, new features
 ---
 WaveMaker is constantly working on bringing new features and improvements to the product. Follow our [team blog](/learn/blog) to see what's happening in WaveMaker. If you notice a bug, report to us at [support](mailto:support@wavemaker.com). The fixes will be specified in the release notes. 
 
-## Older Releases
-
-
-- **[WaveMaker 9.x Documentation](https://www.wavemaker.com/9/learn/index.html)**  
-- **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)**  
-
-
 ## Current Release Details
 ---
 
@@ -96,6 +89,12 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | Cordova (mobile apps) <br> Android <br> iOS <td bgcolor="#44aaf4"> **8.1.1 -> 9.0.0** <br> 8.0.0   <br> 5.0.1 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
+
+## Older Releases
+
+- **[WaveMaker 9.x Documentation](https://www.wavemaker.com/9/learn/index.html)**  
+- **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)**  
+
 
 
 
