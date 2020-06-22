@@ -557,16 +557,16 @@ h3 {
 
 @media only screen and (min-width: 1024px) {
 	.navigationSlider .slidingNav ul li a {
-		color: #097FD5;
+		color: #24292e;
 		font-weight: 400;
 		height: 34px;
 	}
 	.navigationSlider .slidingNav ul li a:hover,
 	.navigationSlider .slidingNav ul li a:focus, 
 	.navigationSlider .slidingNav ul li.siteNavGroupActive a { 
-		color: #fff;
-		border-radius: 2px;
-		background-color: #097FD5;
+		color: #1994ef;
+		border-radius: 0;
+		background-color: transparent;
 	}
 }
 
