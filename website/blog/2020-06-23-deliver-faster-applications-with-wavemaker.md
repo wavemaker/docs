@@ -17,7 +17,7 @@ When a user requests for an app, the speed with which it loads & becomes respons
 
 * Bundle Size
 * Network Quality
-* Number of HTTP requests made
+* Number of Resource Requests
 * API/Service response quality
 * User perception of app readiness
 
