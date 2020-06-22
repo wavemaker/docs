@@ -1077,6 +1077,15 @@
       
       {
         "type": "subcategory",
+        "label": "Versions: 10.5.x",
+        "ids": 
+          [              
+            "wavemaker-release-notes/v10-5-0"
+          ]
+      },
+
+      {
+        "type": "subcategory",
         "label": "Versions: 10.4.x",
         "ids": 
           [              
