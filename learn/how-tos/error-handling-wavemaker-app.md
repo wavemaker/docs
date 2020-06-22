@@ -8,7 +8,7 @@ WaveMaker platform, by default, takes care of the error handling for all the net
 
 ## Notification Action
 
-By default, the errors are captured by a **Notification Action** called `appNotification`. This Action is created in the app by default, which is of `error toaster` type. Therefore, all the errors display as a red toaster, and these can be customized. If the messages does not apply, you can delete the `appNotification` variable. 
+By default, the errors are captured by a **Notification Action** called `appNotification`. This Action is created in the app by default, which is of `error toaster` type. Therefore, all the errors display as a red toaster, and these can be customized. If the messages does not apply, you can delete the `appNotification` variable.
 
 :::tip
 For more information about Toasters, see [Toast in Notification Action](/learn/app-development/variables/notification-action#toast).
@@ -20,19 +20,18 @@ You can customize these error messages. A common JavaScript error handler in `ap
 
 ```
 /*
-* This application level callback function will be invoked after 
+* This application level callback function will be invoked after
 * a Variable receives an error from the target service.
 * Use this function to write common error handling logic across the application.
-* source:    Variable object or Widget Scope
-* errorMsg:  The error message returned by the target service. 
+* errorMsg:  The error message returned by the target service.
 *            This message will be displayed through appNotification variable
 *            You can change this through $rootScope.Variables.appNotification.setMessage(YOUR_CUSTOM_MESSAGE)
 * xhrObj:      The xhrObject used to make the service call
-*              This object contains useful information like 
+*              This object contains useful information like
 *              statusCode, url, request/response body.
 */
 
-App.onServiceError = function (source, errorMsg, xhrObj) {
+App.onServiceError = function (errorMsg, xhrObj) {
 
 };
 ```
@@ -48,16 +47,16 @@ An app could a number of Variables hitting backend services. These services, in 
 3. Use the `setMessage` method setting the message on the default notification variable.
 
 ```
-App.onServiceError = function(source, errorMsg, xhrObj) {
+App.onServiceError = function(errorMsg, xhrObj) {
         var custom_message;
 
         // logic to compute error message
         if (xhrObj.status === 404) {
-            custom_message = 'Requested resource "' + xhrObj.config.url + '" not found. Please contact admin.';
+            custom_message = 'Requested resource "' + xhrObj.url + '" not found. Please contact admin.';
         }
 
         // set message on the default notification variable
-        App.Variables.appNotification.setMessage(custom_message);
+        App.Actions.appNotification.setMessage(custom_message);
     };
 ```
 
@@ -69,10 +68,9 @@ Capture all service errors of an app and store it in a DB. Here, `lvErrorLogs` i
 App.Variables.lvErrorLogs.insertRecord({
         row: {
             "message": errorMsg.message || errorMsg,
-            "url": xhrObj.config.url,
+            "url": xhrObj.url,
             "httpStatus": xhrObj.status,
             "userid": App.Variables.loggedInUser.dataSet.id
         }
     });
 ```
-
