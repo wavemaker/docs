@@ -1,5 +1,5 @@
 ---
-title: "Another Major Update 10.5 from WFH"
+title: "WaveMaker releases 10.5 version"
 author: Swetha Kundaram
 ---
 
