@@ -21,7 +21,9 @@ Ensuring a consistent user experience is important not just in terms of features
 
 ***Customize data more SPECIFIC to your audience!***
 
-You can now write custom data formatter to convert data from services to a well-formatted data before showing it in the UI depending on the role, country, currency, and more. For example, John is a card-holder, he can view his card details without any restrictions, whereas bank admin cannot see his **card number** which is masked with specific characters as shown below.
+You can now write custom data formatter to convert data from services to a well-formatted data before showing it in the UI. You can control how you want to show data depending on the role, country, currency, and more. 
+
+For example, John is a card-holder, he can view his card details without any restrictions, whereas the bank admin cannot see his complete **card number**, which is masked with specific characters as shown below.
 
 ![custom formatter](/learn/assets/custom-formatter.png)
 
