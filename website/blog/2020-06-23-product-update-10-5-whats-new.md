@@ -55,6 +55,4 @@ In the last [update 10.4](/learn/wavemaker-release-notes/v10-4-0), we introduced
 
 Some of the critical bugs have been fixed in the release. See the list of [bug fixes here](/learn/wavemaker-release-notes/v10-5-0/).
 
-And most importantly, despite the lockdown, we had no impact on how we deliver our product updates, and the credit goes to all the brains behind the screen.
-
-If you have any feedback, do write to us at [support@wavemaker.com](mailto:support@wavemaker.com).
+And most importantly, [despite the lockdown, our team is staying agile and adapting](https://www.wavemaker.com/delivering-major-product-update-from-home/) to be able to deliver product updates. Stay safe and go ahead and create that application to digitise and create new efficiencies.
