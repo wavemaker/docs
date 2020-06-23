@@ -33,7 +33,7 @@ A table is considered as the most preferred method to represent data that talk! 
 
 ![summary row function](/learn/assets/datatable_summaryrow4.png)
 
-To learn more about how it works, check out the [Data Table Summary Row documentation](/learn/app-development/widgets/datalive/datatable/summary-row).
+To learn more about how it works, check out the [Data Table summary row documentation](/learn/app-development/widgets/datalive/datatable/summary-row).
 
 ## Smart Widget Templates
 
@@ -45,7 +45,7 @@ For [Cards](/learn/app-development/widgets/datalive/cards), [List](/learn/app-de
 
 ## Extended Micro-frontend Support
 
-***Smaller apps are easy to develop, maintain, and communicate with each other!***
+***Smaller apps are easy to develop, maintain and communicate with each other!***
 
 In the last [update 10.4](/learn/wavemaker-release-notes/v10-4-0), we introduced support for building Micro-frontend applications. This architecture encourages the independent delivery of frontend applications with a Node-based CLI. A CLI helps to convert **[WaveMaker](https://www.wavemakeronline.com/login/login)** apps to **[Single-spa](https://single-spa.js.org/)** compatible app. This release includes the version update of `single-spa-angular` to 3.4  for better support of Angular 7 projects.
 
