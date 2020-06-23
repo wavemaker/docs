@@ -3,7 +3,7 @@ title: "Another Major Update 10.5 - WFH"
 author: Swetha Kundaram
 ---
 
-With working from home as the new normal, we are so excited to release another major update with some of the most interesting features in this release. To learn about our detailed list of features and fixes, see [WaveMaker Release Notes 10.5](/learn/wavemaker-release-notes/v10-5-0).
+With working from home as a new normal, we have released yet another major update with some of the most interesting features in this release. To learn about our detailed list of features and fixes, see [WaveMaker Release Notes 10.5](/learn/wavemaker-release-notes/v10-5-0).
 
 Let's jump straight to see what's new in this release!
 
@@ -13,7 +13,7 @@ Let's jump straight to see what's new in this release!
 
 ***Well, speed matters!***
 
-Ensuring a consistent user experience is important not just in terms of features and looks, but also in terms of speed. With our 10.5 update, we are all set to adapt CDN into WaveMaker. All you have to do is nothing different than before - thanks to our backend team! Now you can deploy your apps with CDN automatically with improved performance. To read our developer blog, see [delivering your apps faster with WaveMaker](/learn/blog/2020/06/23/deliver-faster-applications-with-wavemaker).
+Ensuring a consistent user experience is important not just in terms of features and looks, but also in terms of speed. With our 10.5 update, we are all set to adapt CDN into WaveMaker. All you have to do is nothing different than before - thanks to our backend team, now you can deploy your apps with CDN automatically with improved performance. To read our developer blog, see [delivering your apps faster with WaveMaker](/learn/blog/2020/06/23/deliver-faster-applications-with-wavemaker).
 
 ## Extended Micro-frontend Support
 
