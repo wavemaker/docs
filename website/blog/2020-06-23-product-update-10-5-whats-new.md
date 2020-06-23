@@ -11,23 +11,29 @@ Now, let's jump straight to see what's new in this release!
 
 <!-- truncate -->
 
-## Deploy to CDN
+## Deploying to CDN
 
 ***Well, speed matters!***
 
 Ensuring a consistent user experience is important not just in terms of features and looks, but also in terms of speed. With our 10.5 update, we are all set to adapt CDN into WaveMaker. This allows WaveMaker apps to work together with geographically distributed servers that enable fast, reliable, and secure delivery of the content. Now, you can deploy your apps with CDN automatically. To read our developer blog, see [delivering your apps faster with WaveMaker](/learn/blog/2020/06/23/deliver-faster-applications-with-wavemaker).
 
-## Extended Micro-frontend Support
+## Custom Formatter
 
-***Smaller apps are easy to develop, maintain, and communicate with each other!***
+***Customize data more SPECIFIC to your audience!***
 
-In the last [update 10.4](/learn/wavemaker-release-notes/v10-4-0), we introduced support for building Micro-frontend applications. This architecture encourages the independent delivery of frontend applications with a Node-based CLI. A CLI helps to convert **[WaveMaker](https://www.wavemakeronline.com/login/login)** apps to **[Single-spa](https://single-spa.js.org/)** compatible app. This release includes the version update of `single-spa-angular` to 3.4  for better support of Angular 7 projects.
+You can now write custom data formatter to convert data from services to a well-formatted data before showing it in the UI depending on the role, country, currency, and more. For example, John is a card-holder, he can view his card details without any restrictions, whereas bank admin cannot see his **card number** which is masked with specific characters as shown below.
 
-## Data Table Summary Row
+![custom formatter](/learn/assets/custom-formatter.png)
+
+## Data Table Widget Summary Row
 
 ***If Data Table is your widget, this is for you!***
 
-A table is considered as the most preferred method to represent data that talk! And having to do more with the Data Table adds so much value to it. And we are thrilled to add a summary row function, which helps you to calculate the summary with in-built javascript functions like sum, minimum, maximum, percent, and more. To learn more about how it works, check out the [Data Table Summary Row documentation](/learn/app-development/widgets/datalive/datatable/summary-row).
+A table is considered as the most preferred method to represent data that talk! And having to do more with the Data Table adds so much value to it. And we are thrilled to add a summary row function, which helps you to calculate the summary with in-built javascript functions like sum, minimum, maximum, percent, and more.
+
+![summary row function](/learn/assets/datatable_summaryrow4.png)
+
+To learn more about how it works, check out the [Data Table Summary Row documentation](/learn/app-development/widgets/datalive/datatable/summary-row).
 
 ## Smart Widget Templates
 
@@ -37,16 +43,16 @@ For [Cards](/learn/app-development/widgets/datalive/cards), [List](/learn/app-de
 
 ![widget template](/learn/assets/widget-template.gif)
 
-## Custom Formatter
+## Extended Micro-frontend Support
 
+***Smaller apps are easy to develop, maintain, and communicate with each other!***
 
-
-
+In the last [update 10.4](/learn/wavemaker-release-notes/v10-4-0), we introduced support for building Micro-frontend applications. This architecture encourages the independent delivery of frontend applications with a Node-based CLI. A CLI helps to convert **[WaveMaker](https://www.wavemakeronline.com/login/login)** apps to **[Single-spa](https://single-spa.js.org/)** compatible app. This release includes the version update of `single-spa-angular` to 3.4  for better support of Angular 7 projects.
 
 ## Well, that's not it
 
 Some of the critical bugs have been fixed in the release. See the list of [bug fixes here](/learn/wavemaker-release-notes/v10-5-0/).
 
-And most importantly, despite the lockdown, it had pretty much no impact on how we deliver our product updates, and the credit goes to all the brains behind the screen.
+And most importantly, despite the lockdown, we had no impact on how we deliver our product updates, and the credit goes to all the brains behind the screen.
 
-For any feedback, do write to us at [support@wavemaker.com](mailto:support@wavemaker.com).
+If you have any feedback, do write to us at [support@wavemaker.com](mailto:support@wavemaker.com).
