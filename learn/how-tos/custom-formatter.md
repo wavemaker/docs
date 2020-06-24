@@ -5,9 +5,9 @@ sidebar_label: "Custom Formatters"
 ---
 ---
 
-Apply the custom formatter for iterable and dataset widgets.
+***Customize data more SPECIFIC to your audience!***
 
-You can use this feature to transform the data into well-formatted before showing in the UI depending on the role, country, currency and more. For example, John is a card-holder, he can view his card details without any restrictions, whereas Bank admin cannot see his card number which is masked with specific character  as shown below.
+You can now write the custom data formatter to covert the data received from services to a well-formatted data before showing it in the UI depending on the role, country, currency and more. For example, John is a card-holder, he can view his card details without any restrictions, whereas Bank admin cannot see his card number which is masked with specific character  as shown below.
 
 ![Credit card number formatter](/learn/assets/credit-card.png)
 
