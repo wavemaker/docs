@@ -10,7 +10,7 @@ Every Deployed application allocated with a container. The infrastructure adding
 To add instances to Platform, you need to provide ssh credentials.
 Ssh credentials of the Instance either should have root privliges or provide required permissions as below.
 
-### Extra configurations on External Instances
+### Extra configurations on Studio Workspace Instance/App Deployment Instance
 
 #### The ssh user has privileges(root/sudo)
 
@@ -18,7 +18,7 @@ Ssh credentials of the Instance either should have root privliges or provide req
 
 #### The ssh user don't have privileges(non sudo users)
 
-- If the user given to the Platform don't have privileged access, then provide below permission for the user given on External Instance.
+- If the user given to the Platform don't have privileged access, then provide below permission for the user given on Studio Workspace Instance/App Deployment Instance.
 - Have to execute these commands from privileged user.
   - Add user to docker group.
   - Make the user as owner for docker systemd process.

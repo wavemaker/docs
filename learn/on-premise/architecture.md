@@ -40,9 +40,9 @@ Each user gets a container for developing apps. Containers are used to isolate e
 
 Each WaveMaker app that is deployed into the internal WaveMaker Cloud is allocated a separate container. Thus the deployed apps are also isolated from each other.
 
-### 4. External Instances
+### 4. Studio Workspace Instance/App Deployment Instances
 
-Capacity added for User Workspace and App Deployments, we call it as External Instances.
+Capacity added for User Workspace and App Deployments, we call it as Studio Workspace Instance/App Deployment Instances.
 
 Internally WME utilizes Docker containers to segregate and isolate the platform components and the developer workspace as depicted below.
 

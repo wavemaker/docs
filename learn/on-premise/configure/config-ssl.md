@@ -15,7 +15,6 @@ To start this process you need 3 files.
 
 If you have .pem file, you can extract these files from pem file.
 
-
 ### Upload Bundle file to LB via LB Admin Console
 
 - Login to LB admin console `http://<Platform-Machine-IP>/local/admin`
@@ -32,7 +31,6 @@ If you have .pem file, you can extract these files from pem file.
 - Go to Configure -> Security Certificates from Left Nav
 - Delete the old test keystore from Server Certificates section.
 - Upload bundle file in Certification Authorities trusted by Server Section.
-
 
 ### Copy certificate files to LB Container
 

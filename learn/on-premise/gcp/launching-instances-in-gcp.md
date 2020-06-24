@@ -10,7 +10,7 @@ sidebar_label: "Prepare Infrastructure"
 - Having access in Google Cloud Platform (GCP) to create Instances and other resources. for more details visit [IAM and permissions in GCP](https://cloud.google.com/compute/docs/access/iam).
 - Assuming VPC is already created. for creating VPC in GCP visit [VPC creation in GCP](https://cloud.google.com/vpc/docs/using-vpc).
 
-## Firewall Rules for Platform and External Instance
+## Firewall Rules for Platform and Studio Workspace Instance/App Deployment Instance
 
 Applies for Workspace Instance/App Deployment Instance
 
@@ -18,9 +18,9 @@ Applies for Workspace Instance/App Deployment Instance
 - For WME setup in GCP require 3 firewall rules ,are
   - [wme-sg-platform-public](#create-firewall-rules-for-public-access-to-the-platform-instance)
   - [wme-sg-platform-internal](#create-a-firewall-rule-for-platform-instance)
-  - [wme-sg-workspace-internal](#create-firewall-rule-for-external-instance)
+  - [wme-sg-workspace-internal](#create-firewall-rule-for-studio-workspace-instanceapp-deployment-instance)
 
-### Create firewall rules for public access to the Platform Instance
+### Create firewall rules for developer network access to the Platform Instance
 
 - Provide basic details name and network details for firewall.
 
@@ -32,7 +32,7 @@ Applies for Workspace Instance/App Deployment Instance
 
 ### Create a firewall rule for Platform Instance
 
-Applies for access from the External Instance (Workspace Instance/App Deployment Instance)
+Applies for access from the Studio Workspace Instance/App Deployment Instance
 
 - Provide basic details name and network details for firewall.
 
@@ -42,9 +42,9 @@ Applies for access from the External Instance (Workspace Instance/App Deployment
 
 [![ports details](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-target-and-ports.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-target-and-ports.png)
 
-### Create firewall rule for External Instance
+### Create firewall rule for Studio Workspace Instance/App Deployment Instance
 
-Applies for access from the Platform Instance (Workspace Instance/App Deployment Instance)
+Applies for access from the Platform Instance
 
 - Provide basic details name and network details for firewall
 
@@ -76,7 +76,7 @@ Applies for access from the Platform Instance (Workspace Instance/App Deployment
 
 [![network](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-networking.jpg)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-networking.jpg)
 
-## Creating a External Instance
+## Creating a Studio Workspace Instance/App Deployment Instance
 
 Applies for Studio Instance/App Deployment Instance
 
@@ -92,7 +92,7 @@ Applies for Studio Instance/App Deployment Instance
 
 [![ssh](/learn/assets/wme-setup/wme-setup-in-gcp/instance-ssh-security.png)](/learn/assets/wme-setup/wme-setup-in-gcp/instance-ssh-security.png)
 
-- At disk section create disk for External Instance usage with minimum of 100 GiB.
+- At disk section create disk for Studio Workspace Instance/App Deployment Instance usage with minimum of 100 GiB.
 
 [![disk](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-disk.png)](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-disk.png)
 
@@ -162,7 +162,7 @@ UUID=<block-device_2-UUID>    /wm-runtime  ext4   defaults ,nofail  0  2
 
 [![fstab](/learn/assets/wme-setup/wme-setup-in-gcp/fstab-platform.png)](/learn/assets/wme-setup/wme-setup-in-gcp/fstab-platform.png)
 
-### Mounting Disks in External Instance
+### Mounting Disks in Studio Workspace Instance/App Deployment Instance
 
 :::note
 Applies for StudioWorkspace Instance/AppDeployment Instance

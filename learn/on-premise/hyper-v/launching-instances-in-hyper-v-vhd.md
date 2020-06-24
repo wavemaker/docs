@@ -53,13 +53,13 @@ This guide has written based on Hyper-V with version 10.0.x.
 
 [![staring vm](/learn/assets/wme-setup/vm-creation-in-hyperv-using-vhd/start-and-connect-vm.png)](/learn/assets/wme-setup/vm-creation-in-hyperv-using-vhd/start-and-connect-vm.png)
   
-## Launch External Instance(StudioWorkspace Instance / AppDeployment Instance)
+## Launch Studio Workspace Instance/App Deployment Instance
 
-- Use same procedure for External Instance(StudioWorkspace Instance / AppDeployment Instance).
-- Use External Instance VHD.
+- Use same procedure for Studio Workspace Instance/App Deployment Instance.
+- Use Studio Workspace Instance/App Deployment Instance VHD.
 
 ## Security and Networking
 
 - Do one of the two things below.
-  - All traffic opened between Platform Instance and External Instances.
+  - All traffic opened between Platform Instance and Studio Workspace Instance/App Deployment Instance.
   - Configure security rules as per Prerequisites.

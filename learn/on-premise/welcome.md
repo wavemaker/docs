@@ -24,7 +24,6 @@ With Enterprise, you get the following features.
   - Prometheus insights
   - Priority Support, Training & Professional Services
 
-
 ## Release Policy
 
 WaveMaker follows [semantic versioning](https://semver.org/). WaveMaker releases enterprise version upgrades for major, minor versions. Patch version is available on demand.
