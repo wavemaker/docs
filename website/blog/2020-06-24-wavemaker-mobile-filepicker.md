@@ -5,7 +5,7 @@ author: Srinivasa Rao Boyina
 
 Uploading files from a mobile phone is a common use case that every mobile app has. Until last release, WaveMaker UI to select files had the following problems.
 
-1. Failing to honor multiple/single flag in all the cases.
+1. Failing to honor multiple/single flag in some of the cases.
 2. UI for selecting images and UI for selecting videos are completely different.
 3. There is no option to select files from Google drive or Cloud drive.
 4. UI to select files (filetype: file) is very basic and doesn't provide much file information (thumbnails, last modified time etc.,).
