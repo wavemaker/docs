@@ -16,7 +16,7 @@ Uploading files from a mobile phone is a common usecase that every mobile app ha
   
 ## Solution
 
-A Cordova plugin was created (with open source license) by WaveMaker team to address the above problems. Please visit (https://github.com/wavemaker/wm-filepicker-plugin)[https://github.com/wavemaker/wm-filepicker-plugin] to know more about the plugin. 
+A Cordova plugin was created (with open source license) by WaveMaker team to address the above problems. Please visit [github repo of the plugin](https://github.com/wavemaker/wm-filepicker-plugin) to know more about the plugin. 
   
 #### WavaMaker mobile apps automatically upgraded to use this file picker
 
