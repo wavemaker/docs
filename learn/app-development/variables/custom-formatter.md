@@ -3,7 +3,7 @@ title: "Custom Formatter"
 id: ""
 sidebar_label: "Custom Formatter"
 ---
-With Customer Formmater, customize data more specific to your audience.
+With Custom Formatter, customize data more specific to your audience.
 
 ---
 
@@ -11,15 +11,19 @@ Convert data received from services to a well-formatted data before showing it i
 
 ![Credit card number formatter](/learn/assets/credit-card.png)
 
+:::tip
+To learn about the usage of this feature, see using [Custom Formatter for masking sensitive data](/learn/how-tos/using-custom-formatter).
+:::
+
 ## Accessing Custom Formatter
 
-You can add custom formatter from the **Use Expression** tab of the variable dialog.
+You can add custom formatter from the **Use Expression** tab of the variable binding dialog.
 
 ![Add custom formatter](/learn/assets/add-custom-formatter.png)
 
 ## Syntax Definition
 
-The following is a sample custom formatter definition for formatting data in the `formatter.js` file.
+The following is a sample custom formatter definition. For formatting custom data, you edit the `formatter.js` file.
 
 ```js
  myFormatter : {
