@@ -24,7 +24,7 @@ You can now write the custom data formatter to covert the data received from ser
 
 ![formatter JS file](/learn/assets/formatterjs.png)
 
- E.g. Here is a sample custom formatter (for data formatting)
+ E.g. Here is a sample custom formatter defination (for data formatting)
 
 ```js
  myFormatter : {
