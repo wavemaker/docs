@@ -27,6 +27,8 @@ For example, John is a card-holder, he can view his card details without any res
 
 ![custom formatter](/learn/assets/custom-formatter.png)
 
+To learn about the usage of this feature, see [Using Custom Formatter for masking sensitive data](/learn/how-tos/using-custom-formatter).
+
 ## Data Table Widget Summary Row
 
 ***If Data Table is your widget, this is for you!***
