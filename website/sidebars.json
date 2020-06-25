@@ -579,7 +579,8 @@
             "how-tos/customize-existing-theme",
             "how-tos/adjust-leftnav-width",
             "how-tos/customizing-theme",
-            "how-tos/custom-widget-template"
+            "how-tos/custom-widget-template",
+            "how-tos/widget-template-layout"
           ],
 
           "Localization":
