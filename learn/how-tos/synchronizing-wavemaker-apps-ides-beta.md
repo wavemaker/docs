@@ -22,17 +22,21 @@ Git has to be installed on your local machine.
 
 **Initialize the plugin**: This is a one-time setup configuration. 
 
+1. Export *any* WaveMaker project by opening the project options in project listing page or by clicking on the export button in the top navbar if you are inside the project.
+
+2. After downloading the exported project zip, extract it into a folder. You can use your IDE to import this folder as a Java project.
+
 :::note
-In this step, all changes made to the project in IDE will be replaced with the Studio source.
+In the below step, all changes made to the project in IDE will be replaced with the Studio source.
 :::
 
-1. Either from the terminal of your IDE or from the command shell on your local machine (from the project folder) and run the following command:
+3. Either from the terminal of your IDE or from the command shell on your local machine run the following command in the project folder:
 ```    
 mvn wavemaker-workspace:init
 ```    
-2. Upon running the above Maven command, you will be prompted to enter:
+4. Upon running the above Maven command, you will be prompted to enter:
     - the Studio **hostUrl**
-3. Next, you need to enter the Authentication credentials. It can be either
+5. Next, you need to enter the Authentication credentials. It can be either
     - Username & Password which would require:
         - **user email** - WaveMaker account which has access to the required project and
         - **password** of the WaveMaker account.
@@ -41,8 +45,8 @@ mvn wavemaker-workspace:init
 
 [![](/learn/assets/InitFlow.jpg)](/learn/assets/InitFlow.jpg)
 
-4. Once the login is authenticated, you will be presented with a list of projects existing within the Studio Workspace. Choose and enter the Project Number when prompted.
-5. `Build Success` message will indicate that the project is now available for use from your IDE.
+6. Once the login is authenticated, you will be presented with a list of projects existing within the Studio Workspace. Choose and enter the Project Number when prompted.
+7. `Build Success` message will indicate that the project is now available for use from your IDE.
 
 ## How to synchronize your project
 
