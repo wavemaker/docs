@@ -3,7 +3,7 @@ title: "PostgREST OpenAPI support in WaveMaker"
 author: Nikhilesh K V
 ---
 
-WaveMaker has added support for integration with [OpenAPIs](https://www.wavemaker.com/learn/blog/2020/04/21/wavemaker-openapi-import) in 10.4.  However, the OpenAPI definition document for REST APIS generated using [PostgREST](http://postgrest.org/en/v7.0.0/) looks different than a document generated using Spring. Support for such documents has been added in 10.5.
+WaveMaker has added support for integration with [OpenAPIs](https://www.wavemaker.com/learn/blog/2020/04/21/wavemaker-openapi-import) in 10.4.  As we are trying out more and more variations of OpenAPI documents from different sources of generation tools, our OpenAPI parser is evolving too. One such example is when we tested an OpenAPI document generated through [PostgREST](http://postgrest.org/en/v7.0.0/). In this blog we'll discuss what changes we have made in 10.5 in order to support OpenAPI documents generated from such sources.
 <!-- truncate -->
 
 ![OpenApi](/learn/assets/postGRESTlogo.png)
@@ -17,28 +17,9 @@ PostgREST is a standalone web server that turns your PostgreSQL database directl
 Generally, the structure of an OpenAPI document generated out of a Spring/Node etc app looks like this.
 ```
    {
-       "swagger":"2.0",
-       "info":{
-       },
-       "host":"springboot.herokuapp.com",
-       "basePath":"/",
-       "tags":[
-           {
-               "name":"Employee",
-               "description":"Rest Apis for Employee crud"
-           }
-       ],
-       "schemes":[
-       "https"
-       ],
        "paths":{
            "/employees":{
                "post":{
-                   "tags":["Employee"],
-                   "summary":"Adding the Employee",
-                   "operationId":"addEmployeeUsingPOST",
-                   "consumes":["application/json"],
-                   "produces":["*/*"],
                    "parameters":[
                        {
                            "in":"body",
@@ -49,16 +30,8 @@ Generally, the structure of an OpenAPI document generated out of a Spring/Node e
                                 "$ref":"#/definitions/Employee"
                            }
                        }
-                   ],
-                   "responses":{
-                       "200":{
-                           "description":"OK",
-                           "schema":{
-                                "$ref":"#/definitions/Employee"
-                           }
-                       }
-                   },
-                   "deprecated":false
+                   ]
+
                }
            }
        },
@@ -83,18 +56,9 @@ The above document indicates that the POST API expects a body parameter of the t
 Now let us see an OpenAPI document generated out of PostgREST.
 ```
 {
-    "swagger":"2.0",
-    "info":{
-    },
-    "host":"0.0.0.0:3000",
-    "basePath":"/",
-    "schemes":["http"],
-    "consumes":["application/json"],
-    "produces":["application/json"],
     "paths":{
         "/todos":{
             "post":{
-                "tags":["todos"],
                 "parameters":[
                     {
                         "$ref":"#/parameters/body.todos"
@@ -105,12 +69,7 @@ Now let us see an OpenAPI document generated out of PostgREST.
                     {
                         "$ref":"#/parameters/preferReturn"
                     }
-                ],
-                "responses":{
-                    "201":{
-                        "description":"Created"
-                    }
-                }
+                ]
             }
         }
     },
@@ -118,7 +77,6 @@ Now let us see an OpenAPI document generated out of PostgREST.
         "todos": {
             "required": [
                 "id",
-                "done",
                 "task"
             ],
             "properties": {
