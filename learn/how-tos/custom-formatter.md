@@ -1,30 +1,19 @@
 ---
-title: "How to apply custom formatters for widgets"
+title: "How to apply Custom Formatters for widgets"
 id: ""
-sidebar_label: "Custom Formatters"
+sidebar_label: "Custom Data Formatters"
 ---
+With Customer Formmater, customize data more specific to your audience.
+
 ---
 
-***Customize data more SPECIFIC to your audience!***
-
-You can now write the custom data formatter to covert the data received from services to a well-formatted data before showing it in the UI depending on the role, country, currency and more. For example, John is a card-holder, he can view his card details without any restrictions, whereas Bank admin cannot see his card number which is masked with specific character  as shown below.
+Convert data received from services to a well-formatted data before showing it in the UI, depending on the role, country, currency, and more. For example, John is a card-holder, he can view his card details without any restrictions, whereas bank admin cannot see his card number which is masked with specific character  as shown below.
 
 ![Credit card number formatter](/learn/assets/credit-card.png)
 
-## Applying the custom formatter from Canvas
+## Custom Formatter Definition
 
-1. Drag and drop a Card widget, and [bind the widget](/learn/app-development/variables/variable-binding#binding-to-widgets) to a dataSet.
-
-2. Now select the label from the canvas where you want to apply the formatter and from property panel click on Bind property to bind label with data.
-3. Once you see the property binding dailog navigate to the User Expression tab.
-4. Below the expression editor you will find the Format type dropdown where you have to select the custom formatter.
- ![Add custom formatter](/learn/assets/add-custom-formatter.png)
-
-5. Initially if there is no formatter under custom section write your own formatter by clicking on the Add Custom Formatter option which will navigate us to formatter.js file.
-
-![formatter JS file](/learn/assets/formatterjs.png)
-
- E.g. Here is a sample custom formatter defination (for data formatting)
+You can add custom formatter from the **Use Expression** tab of the variable dialog. The following is a sample custom formatter definition for formatting data.
 
 ```js
  myFormatter : {
@@ -40,38 +29,76 @@ You can now write the custom data formatter to covert the data received from ser
         }
       }
     }
-
 ```
 
-###  Terminology
-**myFormatter**    
-   Name of the custom formatter.
+### `myFormatter`
 
- **formatter** 
-   Function where you can write the logic to format the data. The returned value from this function will be applied on the property this formatter is bound to.
+Name of the custom formatter.
 
-The first argument is always data, then rest arguments depending on the config where the user set. The last argument will be the context for all iterable widgets(Default it get passed as last argument).
+### `formatter`
 
- **config** 
-  Parameter information required during the design time. List down all the                parameters required for your formatter function.
+Here, you write a function containing the logic to format the data. The returned-value from this function applies to the property that this **formatter** is bound to.
 
-  Each param has following info.
+The first argument is always `data`, the rest of the arguments depend on the `config` where the user is set. The last argument will be the `context` for all iterable widgets (by default it gets passed as the last argument).
 
-***name***      : name of the parameter to display during design time.
+### `config`
 
-***widget***    : widget to take parameter input from the user. E.g. text, select.
+Parameter information required during the design time. List down all the parameters required for your formatter function.
 
- If widget is ***select*** then you need to provide ***options*** property as Array of strings format.
+Each param has the following information.
 
+**`name`** : Name of the parameter to display during design time.
 
-***value***     : default value if user doesn't provide any value.
+**`widget`** : Widget to take parameter input from the user. For example, text, select.
 
-***context***   : If you bounded  the iterable modal object to a widget eg: List, Card, Table, Select and Search etc. then internally context(respective object from JSON) will get passed to the formatter function(For a simple label widget there is no context).
+If you use **Select** widget, you should provide the **options** property as the array of strings format.
 
+**`value`** : Set a default value that is used to mask or customize the data.
 
-**Note** : We are not supporting custom formatters for **Prefab** and **TemplateBundles**.
+**`context`** : If you bound the iterable modal object to a widget like List, Card, Table, Select, and Search widgets, the **context** (respective object from JSON) gets passed to the formatter function automatically. For a simple label widget, there is no context.
 
-Let's see the example snippet of credit card formatter to show card number for card-holder and hide it from the Bank Admin.
+:::note
+We do not support Custom Formatter for **Prefab** and **TemplateBundles**.
+:::
+
+## Applying a Custom Formatter for a Card Widget
+
+1. Drag and drop a Card widget, and [bind the widget](/learn/app-development/variables/variable-binding#binding-to-widgets) to a dataSet. In this example, we are using the following static data using a [model variable](/learn/app-development/variables/model-variable).
+
+```JSON
+[
+  {
+    "name": "John",
+    "groupId": 123,
+    "dataValue": "9234567898765432"
+  },
+  {
+    "name": "Bob",
+    "dataValue": "8294567898769876"
+  },
+  {
+    "name": "Lora",
+    "dataValue": "7761640026883576"
+  }
+]
+```
+
+2. Select a **Label** from the canvas where you want to apply the formatter. Go to the property panel, click the **Bind** property to bind the **Label** with "new custom" data.
+
+![bind](/learn/assets/bind.png)
+
+3. In the property **Bind** dialog, navigate to the **Use Expression** tab.
+4. Below the expression editor, from the **Format Type** dropdown, select the **Add custom formatter**.
+
+![Add custom formatter](/learn/assets/add-custom-formatter.png)
+
+5. You will be navigated to the `formatter.js` script editor page.
+
+![formatter JS file](/learn/assets/formatterjs.png)
+
+### Credit Card Formatter
+
+Here's a simple example snippet of credit card formatter to show sensitive data like credit card number only to the card holder, and hide it from the bank admin.
 
 ```js
     creditcard: {
@@ -95,32 +122,24 @@ Let's see the example snippet of credit card formatter to show card number for c
                 }
             }
         }
-
 ```
 
-6. As soon as you add this snippet in the ***formatter.js*** file, you can see this formatter under custom section of the format type dropdown.
+6. When you add this snippet in the `formatter.js` file, you can see this formatter under the **Custom** section of the **Format Type** dropdown.
   
-  Select the formater, then you will see the configured text widget where you can send custom params(***param1***) to the ***formatter*** function
+7. When you select the formatter, you will see the configured text widget where you can send custom params `param1` to the `formatter` function
 
 ![Apply formatter](/learn/assets/applyformat.png)
 
 ![Config params](/learn/assets/mask-config-param.png)
 
+### Binding Roles
 
-7. Now our formatter needs ***roles*** data  to differentiate the users.
+Allow viewing only to specific user-roles to differentiate the users. Thus, the formatter needs **roles** data.
 
-In the same Use Expression tab you will find the Variable section where we you can get the roles from the variable named ***loggedInUser***.
+8. In the **Use Expression** tab, from the Variable section, get the roles from the variable named `loggedInUser`.
 
-Select the ***roles*** property then the expression will be built as shown below in the Use Expression tab and click on the **Bind** button to save the expression.
+9. Select the **roles** property then the expression will be built as shown below in the **Use Expression** tab. 
 
 ![Custom roles params](/learn/assets/loggedin-user-role.png)
 
-
-
-
-
-
-
-
-
-
+10. Click on the **Bind** button to save the expression.
