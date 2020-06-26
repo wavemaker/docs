@@ -6,8 +6,9 @@ sidebar_label: "Custom Formatter"
 With Custom Formatter, customize data more specific to your audience.
 
 ---
+WaveMaker provides a few default formatters like `numberToString` and `stringToNumber`, `prefix` and `suffix`, `timeFromNow`, `toCurrency` and `toDate`. These can be accessed from the **Use Expression** tab. Sometimes, when these do not meet your requirement, you can write your own custom formatters, depending on the role, phone number format with a region or country code and more.
 
-Convert data received from services to a well-formatted data before showing it in the UI, depending on the role, country, currency, and more. For example, John is a card-holder, he can view his card details without any restrictions, whereas the bank admin cannot see his card number which is masked with specific character  as shown below.
+For example, John is a card-holder, he can view his card details without any restrictions, whereas the bank admin cannot see his card number which is masked with specific character  as shown below.
 
 ![Credit card number formatter](/learn/assets/credit-card.png)
 
