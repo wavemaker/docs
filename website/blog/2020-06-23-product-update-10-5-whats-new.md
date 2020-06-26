@@ -47,6 +47,8 @@ For [Cards](/learn/app-development/widgets/datalive/cards), [List](/learn/app-de
 
 ![widget template](/learn/assets/widget-template.gif)
 
+For more information about applying a template as well as a layout from the canvas, see [Using Smart Template and Layout for Widgets](/learn/how-tos/widget-template-layout).
+
 ## Extended Micro-frontend Support
 
 ***Smaller apps are easy to develop, maintain and communicate with each other!***
