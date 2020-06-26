@@ -209,10 +209,18 @@
           "ids": [
           "app-development/variables/variables",                                          
           "app-development/variables/model-variable",
-          "hybrid-mobile/device-variables",
-          "app-development/variables/variable-binding"
+          "hybrid-mobile/device-variables"
           ]
-        },                
+        }, 
+
+        {
+          "type": "subcategory",
+          "label": "Binding",
+          "ids": [        
+          "app-development/variables/variable-binding",
+          "app-development/variables/custom-formatter"
+          ]
+        },
          
         {
           "type": "subcategory",
@@ -579,7 +587,8 @@
             "how-tos/customize-existing-theme",
             "how-tos/adjust-leftnav-width",
             "how-tos/customizing-theme",
-            "how-tos/custom-widget-template"
+            "how-tos/custom-widget-template",
+            "how-tos/using-custom-formatter"
           ],
 
           "Localization":
