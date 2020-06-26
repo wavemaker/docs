@@ -587,7 +587,8 @@
             "how-tos/customize-existing-theme",
             "how-tos/adjust-leftnav-width",
             "how-tos/customizing-theme",
-            "how-tos/custom-widget-template"
+            "how-tos/custom-widget-template",
+            "how-tos/using-custom-formatter"
           ],
 
           "Localization":
@@ -629,7 +630,6 @@
           "Java services":
           [
             "how-tos/sending-email-using-java-service",
-            "how-tos/using-custom-formatter",
             "how-tos/implementing-forgot-password-feature-using-java-service",
             "how-tos/accessing-rest-apis-java-service",
             "how-tos/scheduling-java-service",
