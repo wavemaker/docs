@@ -3,7 +3,7 @@ title: "PostgREST OpenAPI support in WaveMaker"
 author: Nikhilesh K V
 ---
 
-WaveMaker has added support for integration with [OpenAPIs](https://www.wavemaker.com/learn/blog/2020/04/21/wavemaker-openapi-import) in 10.4.  As we are trying out more and more variations of OpenAPI documents from different sources of generation tools, our OpenAPI parser is evolving too. One such example is when we tested an OpenAPI document generated through [PostgREST](http://postgrest.org/en/v7.0.0/). In this blog we'll discuss what changes we have made in 10.5 in order to support OpenAPI documents generated from such sources.
+WaveMaker has added support for integration with [OpenAPIs](https://www.wavemaker.com/learn/blog/2020/04/21/wavemaker-openapi-import) in 10.4. For building a robust(refer [Robustness principle](https://en.wikipedia.org/wiki/Robustness_principle)) OpenAPI support, we are trying out more and more variations of OpenAPI documents from different sources of generation tools. One such example is when we tested an OpenAPI document generated through [PostgREST](http://postgrest.org/en/v7.0.0/). In this blog we'll discuss what changes we have made in 10.5 in order to support OpenAPI documents generated from such sources.
 <!-- truncate -->
 
 ![OpenApi](/learn/assets/postGRESTlogo.png)
@@ -51,7 +51,7 @@ Generally, the structure of an OpenAPI document generated out of a Spring/Node e
        }
    }
 ```
-The above document indicates that the POST API expects a body parameter of the type Employee, therefore expecting empId and empName.
+The above document indicates that the POST API expects a body parameter of the type **Employee**, therefore expecting empId and empName.
 
 Now let us see an OpenAPI document generated out of PostgREST.
 ```
@@ -124,10 +124,12 @@ Now let us see an OpenAPI document generated out of PostgREST.
     }
 }
 ``` 
-The difference here is that the parameters for POST API are references to the **parameters** object which in turn refers to the **definitions** object(schema.$ref for body.todos). By parsing this, we identify that the API expects these parameters.
+If you have a look at the request parameters for the POST API, you can see that they are references to a different object in the document. So we will have to parse these parameters from the root level **parameters** object. On having a closer look at the **body.todos parameter**, we see that it has a reference to the **todos** definition. We will have to parse its properties from the root level **definitions** object. By parsing these, we identify that the API expects the below parameters:
 - Prefer in header
 - select in query
 - id,task,due in Request Body
+
+Since we did not have this kind of parsing logic in 10.4, we were unable to extract the form fields on dragging a Form widget for **todos** Entity.
 
 ## Conclusion
 
