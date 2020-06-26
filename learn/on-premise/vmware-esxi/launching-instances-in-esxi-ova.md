@@ -8,7 +8,7 @@ sidebar_label: "Prepare Infrastructure using OVA"
 ## Prerequisites
 
 - Platform OVA file shared by WaveMaker team.
-- Studio Workspace Instance/App Deployment Instance OVA file shared by WaveMaker team.
+- StudioWorkspace Instance / AppDeployment Instance OVA file shared by WaveMaker team.
 - VMWare ESXi version 6.5 or higher.
 - Permission for launching OVA.
 
@@ -44,12 +44,12 @@ This guide has written based on Esxi version 6.5.
 
 [![dashboard](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png)
 
-## Launch Studio Workspace Instance/App Deployment Instance
+## Launch StudioWorkspace Instance / AppDeployment Instance
 
-- Use same procedure for Studio Workspace Instance/App Deployment Instance- Use Studio Workspace Instance/App Deployment Instance OVA.
+- Use same procedure for StudioWorkspace Instance / AppDeployment Instance- Use StudioWorkspace Instance / AppDeployment Instance OVA.
 
 ## Security and Networking
 
 - Do one of the two things below.
-  - All traffic opened between Platform Instance and Studio Workspace Instance/App Deployment Instances.
+  - All traffic opened between Platform Instance and StudioWorkspace Instance / AppDeployment Instances.
   - Configure security rules as per Prerequisites.

@@ -23,7 +23,7 @@ A modern low-code platform for collaborative development of multi-device apps.
 
 ### WaveMaker Cloud
 
-Consist of Containerized Cloud for User workspace and App Deployments isolation. Managed by Platform.
+Consist of Containerized Cloud for StudioWorkspace Instance / AppDeployment Instance isolation. Managed by Platform.
 
 
 ## WaveMaker Enterprise Architecture
@@ -32,17 +32,17 @@ Consist of Containerized Cloud for User workspace and App Deployments isolation.
 
 WaveMaker On-Premise Platform which consisting of multiple internal services needed to run the WME platform like Studio, Cloud, VCS etc.. Each of these services runs in a separate Docker Container. Services talk to each other via REST service. Platform Containers make calls to the Docker Engine for operations like starting a new user container, stopping / starting a container, and more.
 
-### 2. User Workspace
+### 2. StudioWorkspace
 
 Each user gets a container for developing apps. Containers are used to isolate each user’s workspace from other users.
 
-### 3. App Deployments
+### 3. AppDeployments
 
 Each WaveMaker app that is deployed into the internal WaveMaker Cloud is allocated a separate container. Thus the deployed apps are also isolated from each other.
 
-### 4. Studio Workspace Instance/App Deployment Instances
+### 4. StudioWorkspace Instance / AppDeployment Instances
 
-Capacity added for User Workspace and App Deployments, we call it as Studio Workspace Instance/App Deployment Instances.
+Capacity added for StudioWorkspace Instance / AppDeployment Instance, we call it as StudioWorkspace Instance / AppDeployment Instances.
 
 Internally WME utilizes Docker containers to segregate and isolate the platform components and the developer workspace as depicted below.
 

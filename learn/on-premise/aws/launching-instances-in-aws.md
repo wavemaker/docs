@@ -39,7 +39,7 @@ sidebar_label: "Prepare Infrastructure"
 
 [![basic](/learn/assets/wme-setup/wme-setup-in-aws/wme-sg-platform-internal-basic.png)](/learn/assets/wme-setup/wme-setup-in-aws/wme-sg-platform-internal-basic.png)
 
-- Select inbound rules and Edit rules for access from the Studio Workspace Instance/App Deployment Instance, at source field provide WME-SG-Workspace-Internal security group ID.
+- Select inbound rules and Edit rules for access from the StudioWorkspace Instance / AppDeployment Instance, at source field provide WME-SG-Workspace-Internal security group ID.
 
 [![ports internal](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-platform-internal.png)](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-platform-internal.png)
   
@@ -178,7 +178,7 @@ UUID=<block-device_2-UUID>    /wm-runtime  ext4   defaults ,nofail  0  2
 
 [![fstab](/learn/assets/wme-setup/wme-setup-in-aws/fstab-platform.png)](/learn/assets/wme-setup/wme-setup-in-aws/fstab-platform.png)
 
-### Mounting storage Studio Workspace Instance/App Deployment Instance
+### Mounting storage StudioWorkspace Instance / AppDeployment Instance
 
 :::note
 Applies for StudioWorkspace Instance/AppDeployment Instance

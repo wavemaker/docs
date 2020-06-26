@@ -6,14 +6,14 @@ sidebar_label: "Add Developer Capacity"
 ---
 
 Once you have Launched Instances, Initialized, Set up and configured the WME, it is time for the developers to log in and build apps. For this, you need to add developer and deployment infrastructure capacity by adding instances.
-If not setup Studio Workspace Instance/App Deployment Instance ,[launch Instance with the required prerequisites](/learn/on-premise/prerequisites)
+If not setup StudioWorkspace Instance / AppDeployment Instance ,[launch Instance with the required prerequisites](/learn/on-premise/prerequisites)
 
 Every User is allocated with one container. The infrastructure adding here will be used for this allocation.
 
 To add instances to Platform, you need to provide ssh credentials.
 Ssh credentials of the Instance either should have root privliges or provide required permissions as below.
 
-### Extra configurations on Studio Workspace Instance/App Deployment Instance
+### Extra configurations on StudioWorkspace Instance / AppDeployment Instance
 
 #### The ssh user has privileges(root/sudo)
 
@@ -21,7 +21,7 @@ Ssh credentials of the Instance either should have root privliges or provide req
 
 #### The ssh user don't have privileges(non sudo users)
 
-- If the user given to the Platform don't have privileged access, then provide below permission for the user given on Studio Workspace Instance/App Deployment Instance.
+- If the user given to the Platform don't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
 - Have to execute these commands from privileged user.
   - Add user to docker group.
   - Make the user as owner for docker systemd process.
