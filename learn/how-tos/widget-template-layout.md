@@ -13,9 +13,9 @@ This feature is used to change the template, or the layout of the widget. It ide
 
 The following are the two types.
 
-1. **Widget Template**: This is the arrangement of inner elements.
+1. **Widget Template**: This is the arrangement of the inner elements.
 
-2. **Widget Layout**: This is arrangement of the outer shell.
+2. **Widget Layout**: This is the arrangement of the outer shell.
 
 ## Choosing Widget Template from Canvas
 
