@@ -3,7 +3,7 @@ title: "PostgREST OpenAPI support in WaveMaker"
 author: Nikhilesh K V
 ---
 
-WaveMaker has added support for integration with [OpenAPIs](https://www.wavemaker.com/learn/blog/2020/04/21/wavemaker-openapi-import) in 10.4. For building a robust(refer [Robustness principle](https://en.wikipedia.org/wiki/Robustness_principle)) OpenAPI support, we are trying out more and more variations of OpenAPI documents from different sources of generation tools. One such example is when we tested an OpenAPI document generated through [PostgREST](http://postgrest.org/en/v7.0.0/). In this blog we'll discuss what changes we have made in 10.5 in order to support OpenAPI documents generated from such sources.
+WaveMaker has added support for importing API that are documented using [OpenAPIs, Swagger](https://www.wavemaker.com/learn/blog/2020/04/21/wavemaker-openapi-import) specification in 10.4. However building a [robust](https://en.wikipedia.org/wiki/Robustness_principle) OpenAPI support is very important as different API while using OpenAPI/Swagger document thier endpoints in subtly different ways. We tried importing OpenAPI documents from different API sources. One such example is when we tested an OpenAPI document generated through [PostgREST](http://postgrest.org/en/v7.0.0/). In this blog we'll discuss what changes we have made in 10.5 in order to support OpenAPI documents generated from such sources.
 <!-- truncate -->
 
 ![OpenApi](/learn/assets/postGRESTlogo.png)
@@ -124,6 +124,9 @@ Now let us see an OpenAPI document generated out of PostgREST.
     }
 }
 ``` 
+
+Not only does WaveMaker allow importing of the REST API, but by parsing the entity definitions we generate user interface that handles create, read, update, delete of the entities. WaveMaker form generates form fields corresponding to the entity definition in the OpenAPI documentation. 
+
 If you have a look at the request parameters for the POST API, you can see that they are references to a different object in the document. So we will have to parse these parameters from the root level **parameters** object. On having a closer look at the **body.todos parameter**, we see that it has a reference to the **todos** definition. We will have to parse its properties from the root level **definitions** object. By parsing these, we identify that the API expects the below parameters:
 - Prefer in header
 - select in query
@@ -133,4 +136,4 @@ Since we did not have this kind of parsing logic in 10.4, we were unable to extr
 
 ## Conclusion
 
-By analysing different kinds of OpenAPI documents, We are making our OpenAPI document parser as comprehensive as possible.
+The OpenAPI support in WaveMaker has been around for few months now and with this release we are making this more robust. Our target is to be able to import API from varied sources so that our users can quickly build out web, mobile applications. We would love to hear from you, if you have tried this feature out. Write to us at info@wavemaker.com. 
