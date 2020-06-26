@@ -3,7 +3,7 @@ title: "PostgREST OpenAPI support in WaveMaker"
 author: Nikhilesh K V
 ---
 
-WaveMaker has added support for importing API that are documented using [OpenAPIs, Swagger](https://www.wavemaker.com/learn/blog/2020/04/21/wavemaker-openapi-import) specification in 10.4. However building a [robust](https://en.wikipedia.org/wiki/Robustness_principle) OpenAPI support is very important as different API while using OpenAPI/Swagger document thier endpoints in subtly different ways. We tried importing OpenAPI documents from different API sources. One such example is when we tested an OpenAPI document generated through [PostgREST](http://postgrest.org/en/v7.0.0/). In this blog we'll discuss what changes we have made in 10.5 in order to support OpenAPI documents generated from such sources.
+WaveMaker has added support for importing API that are documented using [OpenAPIs, Swagger](https://www.wavemaker.com/learn/blog/2020/04/21/wavemaker-openapi-import) specification in 10.4. However building a [robust](https://en.wikipedia.org/wiki/Robustness_principle) OpenAPI support is very important as different API while using OpenAPI/Swagger document their endpoints in subtly different ways. We tried importing OpenAPI documents from different API sources. One such example is when we tested an OpenAPI document generated through [PostgREST](http://postgrest.org/en/v7.0.0/). In this blog we'll discuss what changes we have made in 10.5 in order to support OpenAPI documents generated from such sources.
 <!-- truncate -->
 
 ![OpenApi](/learn/assets/postGRESTlogo.png)
