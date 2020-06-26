@@ -29,6 +29,13 @@ Generally, the structure of an OpenAPI document generated out of a Spring/Node e
                            "schema":{
                                 "$ref":"#/definitions/Employee"
                            }
+                       },
+                       {
+                           "in":"header",
+                           "name":"Prefer",
+                           "description":"Preference",
+                           "required":false,                           
+                           "type":"string"
                        }
                    ]
 
@@ -51,20 +58,19 @@ Generally, the structure of an OpenAPI document generated out of a Spring/Node e
        }
    }
 ```
-The above document indicates that the POST API expects a body parameter of the type **Employee**, therefore expecting empId and empName.
+The above document indicates that the POST API expects an **employee** parameter of the type **Employee** in body and a **Prefer** parameter in header, therefore expecting the below parameters:
+- Prefer in header
+- empId and empName in Request Body
 
 Now let us see an OpenAPI document generated out of PostgREST.
 ```
 {
     "paths":{
-        "/todos":{
+        "/employees":{
             "post":{
                 "parameters":[
                     {
-                        "$ref":"#/parameters/body.todos"
-                    },
-                    {
-                        "$ref":"#/parameters/select"
+                        "$ref":"#/parameters/body.employee"
                     },
                     {
                         "$ref":"#/parameters/preferReturn"
@@ -74,52 +80,34 @@ Now let us see an OpenAPI document generated out of PostgREST.
         }
     },
     "definitions":{
-        "todos": {
-            "required": [
-                "id",
-                "task"
-            ],
+        "Employee": {
+            "type": "object",
             "properties": {
-                "id": {
-                    "format": "integer",
-                    "type": "integer",
-                    "description": "Note:\nThis is a Primary Key.<pk/>"
+                "empId":{
+                    "type":"string"
                 },
-                "task": {
-                    "format": "text",
-                    "type": "string"
-                },
-                "due": {
-                    "format": "timestamp with time zone",
-                    "type": "string"
+                "empName":{
+                    "type":"string"
                 }
-            },
-            "type": "object"
+            }            
         }
     },
     "parameters":{
         "preferReturn":{
+            "in":"header",
             "name":"Prefer",
             "description":"Preference",
             "required":false,
-            "in":"header",
             "type":"string"
         },
-        "select":{
-            "name":"select",
-            "description":"Filtering Columns",
-            "required":false,
-            "in":"query",
-            "type":"string"
-        },
-        "body.todos":{
-            "name":"todos",
-            "description":"todos",
-            "required":false,
+        "body.employee":{
+            "in":"body",
+            "name":"employee",
+            "description":"employee",
+            "required":true,
             "schema":{
-                "$ref":"#/definitions/todos"
-            },
-            "in":"body"
+                "$ref":"#/definitions/employee"
+            }            
         }
     }
 }
@@ -127,12 +115,11 @@ Now let us see an OpenAPI document generated out of PostgREST.
 
 Not only does WaveMaker allow importing of the REST API, but by parsing the entity definitions we generate user interface that handles create, read, update, delete of the entities. WaveMaker form generates form fields corresponding to the entity definition in the OpenAPI documentation. 
 
-If you have a look at the request parameters for the POST API, you can see that they are references to a different object in the document. So we will have to parse these parameters from the root level **parameters** object. On having a closer look at the **body.todos parameter**, we see that it has a reference to the **todos** definition. We will have to parse its properties from the root level **definitions** object. By parsing these, we identify that the API expects the below parameters:
+If you have a look at the request parameters for the POST API, you can see that they are references to a different object in the document. So we will have to parse these parameters from the root level **parameters** object. On having a closer look at the **body.employee** parameter, we see that it is of the type **Employee**. We will have to parse its properties from the root level **definitions** object. By parsing these, we identify that the API expects the below parameters:
 - Prefer in header
-- select in query
-- id,task,due in Request Body
+- empId and empName in Request Body
 
-Since we did not have this kind of parsing logic in 10.4, we were unable to extract the form fields on dragging a Form widget for **todos** Entity.
+Since we did not have this kind of parsing logic in 10.4, we were unable to extract the form fields on dragging a Form widget for **Employee** Entity.
 
 ## Conclusion
 
