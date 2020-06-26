@@ -8,7 +8,7 @@ sidebar_label: "Apply Custom Data Formatter"
 With [Custom Formatter](/learn/app-development/variables/custom-formatter), customize data more specific to your audience. Convert data received from services to well-formatted data before showing it in the UI, depending on the role, country, currency, and more. In this example, we are using a [Card Widget](/learn/) to show how it works.
 
 :::note
-To learn more about how the Custom Formatter works, see [Custom Formatter](/learn/app-development/variables/custom-formatter).
+For more information about Custom Formatter syntax and definition, see [Custom Formatter](/learn/app-development/variables/custom-formatter).
 :::
 
 ## Drag and Drop the Widget
