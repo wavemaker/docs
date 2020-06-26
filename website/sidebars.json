@@ -403,7 +403,6 @@
   "Install on AWS":
 
       [
-        "on-premise/aws/wavemaker-enterprise-setup-on-aws",
         "on-premise/aws/launching-instances-in-aws",
         "on-premise/aws/install-prerequisites",
         "on-premise/aws/install/download-copy-installer",
