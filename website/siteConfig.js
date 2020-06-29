@@ -103,6 +103,13 @@ const siteConfig = {
         '/learn/js/inject-stylesheets.js'
     ],
 
+    twitter: 'true',
+    twitterUsername: 'WaveMaker',
+
+    // Open Graph and Twitter card images.
+    ogImage: 'img/WM_blue_logo.png',
+    twitterImage: 'img/WM_blue_logo.png',
+
     // Add custom css.
     stylesheets: [
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
@@ -119,10 +126,6 @@ const siteConfig = {
 	scrollToTop: true,
 
     editUrl: 'https://github.com/wavemaker/docs/tree/master/learn/',
-
-    // Open Graph and Twitter card images.
-    //ogImage: 'img/undraw_online.svg',
-    //twitterImage: 'img/undraw_tweetstorm.svg',
 
     // For sites with a sizable amount of content, set collapsible to true.
     // Expand/collapse the links and subcategories under categories.
