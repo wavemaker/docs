@@ -11,6 +11,8 @@ Uploading files from a mobile phone is a common use case that every mobile app h
 4. UI to select files (filetype: file) is very basic and doesn't provide much file information (thumbnails, last modified time etc.,).
 
 <!-- truncate -->
+
+> WaveMaker allows creation of mobile applications by a simple drag and drop approach. [Click here to know more](/learn/hybrid-mobile/first-mobile-app).
   
 ## Solution
 
