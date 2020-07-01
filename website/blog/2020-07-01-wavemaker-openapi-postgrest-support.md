@@ -121,6 +121,8 @@ If you have a look at the request parameters for the POST API, you can see that 
 
 Since we did not have this kind of parsing logic in 10.4, we were unable to extract the form fields on dragging a Form widget for **Employee** Entity.
 
+> This feature is part of WaveMaker 10.5 release. [Checkout more details on whats included this release](learn/wavemaker-release-notes/v10-5-0).
+
 ## Conclusion
 
 The OpenAPI support in WaveMaker has been around for few months now and with this release we are making this more robust. Our target is to be able to import API from varied sources so that our users can quickly build out web, mobile applications. We would love to hear from you, if you have tried this feature out. Write to us at info@wavemaker.com. 
