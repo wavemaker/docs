@@ -121,7 +121,7 @@ If you have a look at the request parameters for the POST API, you can see that 
 
 Since we did not have this kind of parsing logic in 10.4, we were unable to extract the form fields on dragging a Form widget for **Employee** Entity.
 
-> This feature is part of WaveMaker 10.5 release. [Checkout more details on whats included this release](learn/wavemaker-release-notes/v10-5-0).
+> This feature is part of WaveMaker 10.5 release. [Checkout more details on what is included in this release](learn/wavemaker-release-notes/v10-5-0).
 
 ## Conclusion
 
