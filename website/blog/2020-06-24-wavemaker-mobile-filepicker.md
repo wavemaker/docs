@@ -26,4 +26,4 @@ Like always, with WaveMaker product updates, we also migrate applications that a
 
  1. In iOS, selection of multiple videos from local Photo Library is not supported.
  
- > This feature is part of WaveMaker 10.5 release. [Checkout more details on whats included this release](learn/wavemaker-release-notes/v10-5-0).
+ > This feature is part of WaveMaker 10.5 release. [Checkout more details on what is included in this release](learn/wavemaker-release-notes/v10-5-0).
