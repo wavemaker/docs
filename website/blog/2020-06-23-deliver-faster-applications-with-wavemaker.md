@@ -7,6 +7,8 @@ Performance is [key to the success](https://developers.google.com/web/fundamenta
 
 <!-- truncate -->
 
+> This feature is part of WaveMaker 10.5 release. [Checkout more details on whats included this release](learn/wavemaker-release-notes/v10-5-0). 
+
 As per the Google stats link shared above, BBC lost 10% of its users with each additional second the site took to load & Pinterest gained 15% users signup when the perceived load times were reduced to 40%. So, performance is one of the important factors to consider in app development. An app with good performance can help businesses in better signups, enhanced user engagement & result in improved sales conversions.
 
 ### Performance in WaveMaker
