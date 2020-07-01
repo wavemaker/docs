@@ -66,4 +66,4 @@ Sanity Tests Execution|55%
 Regression Tests Execution|60% (10 hours -> 4 hours)
 Sanity and Regression as parallel Jobs|60%
 
-> Checkout whats in our latest release [WaveMaker 10.5 here](/learn/wavemaker-release-notes/v10-5-0).
+> Checkout what is in our latest release [WaveMaker 10.5 here](/learn/wavemaker-release-notes/v10-5-0).
