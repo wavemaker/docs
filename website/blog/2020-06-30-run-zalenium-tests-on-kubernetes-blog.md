@@ -4,10 +4,10 @@ author: Tejaswi Maryala, Harish Vanama
 keywords: zalenium, selenium-grid, kubernetes, frequent-releases
 ---
 
-Typically product releases involve testing of several micro services, API’s and User interface, functionality etc. WaveMaker platform is composed of several such services, and functional testing can be only done by building apps using visual drag-n-drop studio. To ensure the best product quality for releases, our QA process involves building automation tests for APIs as well as UI functionality using Selenium.  
-        
-        * UI Tests based on Selenium
-        * API Tests based on RestTemplate 
+WaveMaker product team is able to make [weekly patch releases and, feature packed releases](/learn/wavemaker-release-notes) every alternate months. Typically product releases involve testing of several micro services, API’s and User interface, functionality etc. WaveMaker platform is composed of several such services, and functional testing can be only done by building apps using visual drag-n-drop studio. To ensure the best product quality for releases, our QA process involves building automation tests for APIs as well as UI functionality using Selenium.  
+
+1. UI Tests based on Selenium
+2. API Tests based on RestTemplate 
 
 We have multiple environments i.e., Development, Staging and Production for WMO and several on-premise WME environment setups for enterprise customer releases. Our development team uses feature branches and when they merge these branches onto the master branch, we have to make sure all the existing automation tests pass. On a regular basis when each feature team performs a merge, we run a full set of automation tests at their beck and call.
 
@@ -43,8 +43,8 @@ As the test repo keeps updated frequently by the QA team with new automation tes
 
 Once k8s Job has started, a Pod will be created to execute commands in the k8s spec file given below
 
-    * Maven command to execute tests
-    * Upload test results to s3.
+* Maven command to execute tests
+* Upload test results to s3.
 
 On completion of above commands, respective Job status will be changed to complete. 
 
@@ -66,11 +66,4 @@ Sanity Tests Execution|55%
 Regression Tests Execution|60% (10 hours -> 4 hours)
 Sanity and Regression as parallel Jobs|60%
 
-
-
-
-
-
-
-
-
+> Checkout what is in our latest release [WaveMaker 10.5 here](/learn/wavemaker-release-notes/v10-5-0).
