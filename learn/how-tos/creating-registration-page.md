@@ -44,8 +44,8 @@ We have already created a `Notification Action` that needs to be created.
 
 ```    
 Partial.UserDetailsLiveForm1Beforeservicecall = function($event, $operation, $data, options) {
-    if ($data.password != $data.confirm\_password) {
-        Partial.Actions.password\_error.invoke({
+    if ($data.password != $data.confirm_password) {
+        Partial.Actions.password_error.invoke({
             "message": "Password Mismatch, try again",
             "position": "center center"
         });
