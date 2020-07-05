@@ -3,7 +3,7 @@ title: "Theme builder is ready with a new update"
 author: Lovin Ahmed
 ---
 
-Here is another update on the theme builder tool. After the first release of theme builder, we thought of adding few more features and enhancements to enable the end users to create great themes without worrying much about the fit and finish of the applications.  
+Here is another update on the [Theme builder](https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard) app. After the first release of theme builder, we thought of adding few more features and enhancements to enable the end users to create great themes to get their web, mobile applications looking well finished.  
 
 <!-- truncate -->
 
@@ -44,7 +44,7 @@ Our new additions to the list of font-family will allow the users to select from
 
 ### Feedback dialog
 
-Introduced the new feedback dialog for users to share their experience using the app.
+Introduced the new feedback dialog for users to share their experience using the app. We will be looking at the feedback received to carve next set of updates to the app.
 
 ![theme preview](/learn/assets/theme-builder-feedback.png)
 
@@ -55,13 +55,9 @@ Integrated google analytics to track and report the traffic visit to the theme b
 ## Bug Fixes
 
 1. Alignment issues when layout selection includes a right nav on the page. This works fine now
-
 2. Redirection changes from #main to #Dashboard page to support google analytics. Working now
-
 3. Fixes to support the instant changes of the color and theme style of newly added components in the preview application. Works now
-
 4. On change of the primary color to a darker shade like #333, the hover/selected state of data table rows was effected. This is fixed now and the hover state will always apply a lighter shade of the primary color selected. 
-
 5. Font selection for heading tags (h3 to h6) was not working. This is fixed now.
 
 
