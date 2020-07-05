@@ -3,7 +3,7 @@ title: "Theme builder is ready with a new update"
 author: Lovin Ahmed
 ---
 
-Here is another update on the [Theme builder](https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard) app. After the first release of theme builder, we thought of adding few more features and enhancements to enable the end users to create great themes to get their web, mobile applications looking well finished.  
+Here is another update on the [Theme builder](https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard) app. After the [first release](/learn/blog/2020/06/01/build-themes-without-any-coding) of theme builder, we thought of adding few more features and enhancements to enable our users to create great themes to get their web, mobile applications looking well finished.  
 
 <!-- truncate -->
 
