@@ -15,6 +15,12 @@ Previously, we covered how to import REST API as datasource for the app and how 
 
 For more information, see [Corona Tracker App](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker#corona-tracker-app), [walkthrough of the app](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker#quick-walkthrough-of-the-app), and [how to build the dashboard](/learn/blog/2020/04/27/covid19-visualization-using-wavemaker#how-to-build-the-dashboard).
 
+:::tip
+Download the D3Maps prefab used in this project from the following link.
+
+**[Datamaps.zip](https://github.com/wavemaker/prefab-datamaps)**
+:::
+
 ## How to build Charts Visualization
 
 WaveMaker has in-built nvd3 based charts which are used for building plots for visualization in this app. Drag-n-drop any chart widget to canvas and bind the dataset property to the Variable for plotting data as shown below.
