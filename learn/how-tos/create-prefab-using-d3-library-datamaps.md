@@ -1,79 +1,110 @@
 ---
-title: "Create Prefab Using  D3 Library (DataMaps)"
+title: "Create Prefab Using  D3 Library DataMaps"
 id: ""
 ---
 ---
 
-**D3.js** (or just D3 for Data-Driven Documents) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of the widely implemented SVG, HTML5, and CSS standards. **Datamaps** is intended to provide data visualizations based on geographical data. It is SVG-based and can scale to any screen size. It heavily relies on the `D3.js` library.
+**D3.js** is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It uses widely implemented SVG, HTML5, and CSS standards and it is also known as D3 (Data-Driven Documents).
 
-In this section we will see how to create a Prefab to display the datamaps and use it in a project of your own. 
+**DataMaps** provides data visualizations based on geographical data, and it mainly relies on the `D3.js` library. DataMaps are designed based on the SVG type; thus, it can scale into any screen size.
+
+In this section, learn how to create a Prefab that displays **Datamaps** and use it in a project.
 
 [![datamap_runbasic](/learn/assets/datamap_runbasic.png)](/learn/assets/datamap_runbasic.png) 
 
-We will be showing how to add some basic properties to manipulate the functionality. [![datamap_runadv](/learn/assets/datamap_runadv.png)](/learn/assets/datamap_runadv.png)
+Also, learn how to add some basic properties to edit the functionality.
 
-## DataMaps Prefab Creation
+[![datamap_runadv](/learn/assets/datamap_runadv.png)](/learn/assets/datamap_runadv.png)
 
-1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](http://[supsystic-show-popup id=102])
-2. Enter a name and description for the Prefab
-3. Visit the website for [DataMaps](http://datamaps.github.io/) and download the required files from the Downloads section. We will be implementing the Basic edition. We have used the following two files - [topojson min.js](/learn/assets/topojson.min_.zip) and [datamaps world min.js](/learn/assets/datamaps.world_.min_.zip). (extract from the provided zip files)
-4. [Import the Resources](/learn/app-development/services/3rd-party-libraries)
-5. Select the folder you want the resource to be imported to, here we had selected _resources_ folder. 
+## Creating DataMaps Prefab
+
+1. From the **Project Dashboard**, go to the **Prefab** tab and click **Create** .
+
+![create prefab](/learn/assets/prefab_create.png)
+
+2. Enter a name and description of the Prefab.
+
+### Download files
+
+3. Go to [DataMaps website](http://datamaps.github.io/) and download the required files from the **Downloads** section.
+
+:::important
+We will be implementing the Basic edition. We have used the following two files - [topojson min.js](/learn/assets/topojson.min_.zip) and [datamaps world min.js](/learn/assets/datamaps.world_.min_.zip). (extract from the provided zip files)
+:::
+
+4. [Import the Resources](/learn/app-development/services/3rd-party-libraries).
+5. Select the folder you want the resource to be imported to. In this case, we have selected the `resources` folder.
 
 [![](/learn/assets/datamap_resource.png)](/learn/assets/datamap_resource.png)
 
-6. From [Project Configurations](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace), choose Config Prefab under Settings:
-    - Add the uploaded script files. Make sure you enter topojson first and then datamaps resource [![](/learn/assets/datamap_settings.png)](/learn/assets/datamap_settings.png)
-    - **UI Design**: Drag and drop a **Container Widget** onto the canvas, **name** it _mapContainer_ and set the **class** as _map-container_ [![](/learn/assets/prefab_container.png)](/learn/assets/prefab_container.png)
-    - Open the **Script** tab and enter the following code for _Prefab.onReady_ method [![](/learn/assets/datamap_script-1.png)](/learn/assets/datamap_script-1.png) **Note**: After successful creation of the prefab, inside the script, we notice there are few functions pre-defined:
-        -  _[Prefab.onPropertyChange = propertyChangeHandler;]_
-        - _Prefab.onReady_ method will be triggered post-initialization of the prefab. The code should go here:
+### Project Configuration
 
-        ```js
-        Prefab.onReady = function () {
-            var mapCtr = Prefab.Widgets.mapContainer.$element[0];
-            // this method will be triggered post initialization of the prefab.
-            Prefab.map = new Datamap({
-                element: mapCtr,
-                scope: Prefab.coverage,
-                fills: Prefab.colormap,
-                data: Prefab.data,
-                customTemplate: Prefab.detailstemplate,
-                done: function (datamap) {
-                    datamap.svg.call(d3.behavior.zoom().on("zoom", redrawMap));
-                    Prefab.datamap = datamap;
-                    Prefab.zoom = d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoomed);
-        
-                    function redrawMap() {
-                        datamap.svg.selectAll("g").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-                    }
-                    Prefab.datamap = datamap;
-                },
-                responsive: true
-            });
-        
-            generateLabelsfromKey();
-            if (Prefab.labeldata) {
-                //get all keys from the label data
-                _.forEach(Prefab.labeldata, function (value, key) {
-                    labelKeys.push(key);
-                });
-        
-                _.forEach(Prefab.datamap.worldTopo.objects.world.geometries, function (value) {
-                    _.includes(labelKeys, value.id) ? countryList[value.id] = Prefab.labeldata[value.id] : countryList[value.id] = ' ';
-                });
-        
-                Prefab.map.labels({
-                    'customLabelText': countryList
-                });
-        
+From [Project Configurations](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace), choose Config Prefab under Settings.
+
+- Add the uploaded script files. Make sure you enter topojson first and then datamaps resource.
+
+[![](/learn/assets/datamap_settings.png)](/learn/assets/datamap_settings.png)
+
+- **UI Design**: Drag and drop a **Container Widget** onto the canvas, **name** it _mapContainer_ and set the **class** as _map-container_.
+
+[![](/learn/assets/prefab_container.png)](/learn/assets/prefab_container.png)
+
+- Open the **Script** tab and enter the following code for _Prefab.onReady_ method
+
+[![](/learn/assets/datamap_script-1.png)](/learn/assets/datamap_script-1.png)
+
+:::note
+After creating the prefab, inside the script, you can find few pre-defined functions.
+
+- `[Prefab.onPropertyChange = propertyChangeHandler;]`
+- _Prefab.onReady_ method will be triggered post-initialization of the prefab. The code should go here:
+:::
+
+```js
+Prefab.onReady = function () {
+    var mapCtr = Prefab.Widgets.mapContainer.$element[0];
+    // this method will be triggered post initialization of the prefab.
+    Prefab.map = new Datamap({
+        element: mapCtr,
+        scope: Prefab.coverage,
+        fills: Prefab.colormap,
+        data: Prefab.data,
+        customTemplate: Prefab.detailstemplate,
+        done: function (datamap) {
+            datamap.svg.call(d3.behavior.zoom().on("zoom", redrawMap));
+            Prefab.datamap = datamap;
+            Prefab.zoom = d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoomed);
+
+            function redrawMap() {
+                datamap.svg.selectAll("g").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
             }
-        };
-        
-        $(window).on('resize', function () {
-            Prefab.datamap.resize();
+            Prefab.datamap = datamap;
+        },
+        responsive: true
+    });
+
+    generateLabelsfromKey();
+    if (Prefab.labeldata) {
+        //get all keys from the label data
+        _.forEach(Prefab.labeldata, function (value, key) {
+            labelKeys.push(key);
         });
-        ```    
+
+        _.forEach(Prefab.datamap.worldTopo.objects.world.geometries, function (value) {
+            _.includes(labelKeys, value.id) ? countryList[value.id] = Prefab.labeldata[value.id] : countryList[value.id] = ' ';
+        });
+
+        Prefab.map.labels({
+            'customLabelText': countryList
+        });
+
+    }
+};
+
+$(window).on('resize', function () {
+    Prefab.datamap.resize();
+});
+```    
     - Prefab is ready for use.
 
 ## DataMaps Prefab Usage
