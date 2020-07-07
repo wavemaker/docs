@@ -30,7 +30,7 @@ WaveMaker Enterprise consists of the following four components.
 
 ### 1. WaveMaker Studio
 
-WaveMaker is a rich low-code design studio with over 80 widgets that work out-of-the-box for modern end-to-end application development with team collaboration. To learn more about working with WaveMaker Studio, see [Getting Started with WaveMaker](/learn/documentation-reference).
+WaveMaker is a low-code platform with over 80 widgets that work out-of-the-box to build modern end-to-end application development with team collaboration. To learn more about working with WaveMaker Studio, see [Getting Started with WaveMaker](/learn/documentation-reference).
 
 ### 2. WaveMaker Cloud
 
