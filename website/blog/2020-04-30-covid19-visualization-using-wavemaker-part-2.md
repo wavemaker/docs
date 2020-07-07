@@ -59,6 +59,10 @@ Prefabs are typically built by a javascript developer who knows the nuances of w
 Download the **[D3Maps.zip](https://github.com/wavemaker/prefab-datamaps)**, and import it the **Prefabs** section to use it straightaway. For more information about how to use it, see [Importing Prefab](/learn/app-development/custom-widgets/custom-widgets#importing-prefabs).
 :::
 
+:::note
+To create a Datamaps Prefab, see a detailed documentation of [How to Create a Prefab Using D3 Library DataMaps](/learn/how-tos/create-prefab-using-d3-library-datamaps).
+:::
+
 The following are the attributes provided by the Datamaps prefab developer that will appear in the Studio properties panel for binding.
 
 [![Prefab config](/learn/assets/wm-blog-covid19-11-prefab-config.png)](/learn/assets/wm-blog-covid19-11-prefab-config.png)
