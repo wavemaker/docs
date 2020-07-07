@@ -8,17 +8,17 @@ id: ""
 
 **DataMaps** provides data visualizations based on geographical data, and it mainly relies on the `D3.js` library. DataMaps are designed based on the SVG type; thus, it can scale into any screen size.
 
-In this section, learn how to create a Prefab that displays **Datamaps** and use it in a project.
+In this document, learn how to create a Prefab that displays **Datamaps** and use it in a project.
 
 [![datamap_runbasic](/learn/assets/datamap_runbasic.png)](/learn/assets/datamap_runbasic.png) 
 
-Also, learn how to add some basic properties to edit the functionality.
+Also, learn how to add some basic properties to edit the functionality. For example, add different colors, show bubbles, labels, and more.
 
-[![datamap_runadv](/learn/assets/datamap_runadv.png)](/learn/assets/datamap_runadv.png)
+![bubbles](/learn/assets/bubbles-corona-tracker.png)
 
 ## Creating DataMaps Prefab
 
-From the **Project Dashboard**, go to the **Prefab** tab and click **Create** .
+From the **Project Dashboard**, go to the **Prefab** tab and click **Create**.
 
 ![create prefab](/learn/assets/prefab_create.png)
 
@@ -33,7 +33,7 @@ We have used the following two files - [topojson min.js](/learn/assets/topojson.
 :::
 
 2. [Import the Resources](/learn/app-development/services/3rd-party-libraries).
-3. Select the folder you want the resource to be imported to. For this, select the `resources` folder and upload the `topojson.min.js` and `datamaps.world.min.js` files.
+3. Select the folder where you want the resource to import. For this example, select the `resources` folder and upload the `topojson.min.js` and `datamaps.world.min.js` files.
 
 [![](/learn/assets/datamap_resource.png)](/learn/assets/datamap_resource.png)
 
@@ -43,28 +43,41 @@ We have used the following two files - [topojson min.js](/learn/assets/topojson.
 
 ![prefab project config](/learn/assets/prefab-project-config.png)
 
-2. Reference the uploaded javascript files here. Make sure to add `topojson` first, and then the `datamaps` resource.
+2. Reference the uploaded javascript files here. Ensure to add `topojson` first, and then the `datamaps` resource.
 
 [![](/learn/assets/datamap_settings.png)](/learn/assets/datamap_settings.png)
 
+### Adding UI Properties
+
+From the **Properties** tab, set the **UI Properties** for the Prefab to configure from an app. In this case, you add `scope` and `dataset`. For example, `scope` lets you choose a particular country map, or a world map.
+
+![prefab ui properties](/learn/assets/prefab-ui-properties.png)
+
+|Property Name | Display value | Data Type | Default value | Binding Type | Widget Type | Data Options |
+|---|---|---|---|---|---|---|
+|scope | Scope | string | World | | Select | World, India |
+|dataset | Dataset| object | |in-bound|text ||
+
 ### Designing the UI
 
-1. Drag and drop a **Container Widget** onto the canvas, **Name** it `mapContainer`, and set the **Class Name** as `map-container`.
+Drag and drop a **Container Widget** onto the canvas, and provide a **Name**: `mapContainer`, and set the **Class Name**: `map-container`.
 
 [![](/learn/assets/prefab_container.png)](/learn/assets/prefab_container.png)
 
-2. Go to the **Script** tab, and add the following code.
+### Add Custom Functions
+
+Go to the **Script** tab, and add the following code.
 
 [![](/learn/assets/datamap_script-1.png)](/learn/assets/datamap_script-1.png)
 
+In this example, we are using the world map and India map. Here, you can choose which map to use based on the scope property of the Prefab.
+
 :::note
-After creating the prefab, inside the script, you can find a few pre-defined functions.
+After creating the Prefab, inside the script, you can find a few pre-defined functions.
 
 - `[Prefab.onPropertyChange = propertyChangeHandler;]`
-- `Prefab.onReady` method will be triggered post-initialization of the prefab. The code should go here:
+- `Prefab.onReady` method will be triggered after the initialization of the prefab. The code should go here.
 :::
-
-In this example, we are using world map and India map.
 
 ```js
 Prefab.onPropertyChange = function(key, newVal, oldVal) {
@@ -176,11 +189,11 @@ function initIndiaMap(mapCtr) {
             highlightBorderOpacity: 0.5,
             popupTemplate: function(geography, data) {
                 return data["detailstemplate"];
-            }        
+            }
         },
         fills: Prefab.colormap,
         data: Prefab.data,
-        done: function(datamap) {            
+        done: function(datamap) {
         },
         setProjection: function(element) {
             var lat, lon, scaleval;
@@ -242,27 +255,31 @@ function generateDataset(dset) {
 }
 ```
 
-- Prefab is ready for use.
+- Now, the Prefab should be ready for use.
 
-## DataMaps Prefab Usage - Adding Dataset
+### Publish the Prefab
 
 1. Save and **Publish** the Prefab.
-2. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs).
-3. The Prefab will be available for use across the Projects. You can see the entry in the Artefacts list from the Developer Utilities on the [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) and in the Widget Toolbox of any Project within your workspace.
-4. Open the project where you want to incorporate the Datamap Prefab created earlier
-5. You will find the Prefab entry in the Prefab toolbox 
+2. You can set the version for the Prefab and Publish it. For more information about publishing Prefabs, see [Publish Prefab](/learn/app-development/custom-widgets/creating-prefabs/#publish-prefab).
+3. The Prefab will be available for use across the Projects. You can see the entry in the [Artefacts](/learn/assets/artefacts_access.png) list and in the Widget Toolbox of any Project within your workspace.
+
+## Using the DataMaps Prefab
+
+1. Open the project where you want to include the Datamaps Prefab which you created.
+2. You can find the new Prefab in the **Prefabs** section.
 
 [![](/learn/assets/datamap_toolbar.png)](/learn/assets/datamap_toolbar.png)
 
-6. Drag and drop the Prefab onto the canvas and set the height to 500px.
-7. Add the dataset variable.
+3. Drag and drop the Prefab onto the canvas and set the height to auto and width to 100%.
+4. Set the scope as World or India.
 
-#### Dataset
+### Adding the Data
 
-For the dataset, create a variable as per requirement ( Ex : crud/ web service/ model). Here we are using a model variable derived from a web service variable.
-As an example you can use the following : 
+To add the Dataset, create a variable. For example, you can create a CRUD variable, add a Web Service, or create a model variable. For this example, we are using a model variable derived from a web service variable. For more information to add variable, see [Variable](/learn/app-development/variables/variables).
 
-For world map:
+#### Example data
+
+**Data for World map**
 
 ```json	
 [
@@ -314,7 +331,7 @@ For world map:
 ]
 ```
 
-For India Map:
+**Data for India Map**:
 
 ```json
 {
@@ -330,73 +347,162 @@ For India Map:
 ```
 
 :::note
-Do not change the structure of the dataset. Use the above formats.
+Do not change the structure of the dataset. Use the above data format.
 :::
 
 8. Run the app and see the map displayed.
 
 [![datamap_runbasic](/learn/assets/datamap_runbasic.png)](/learn/assets/datamap_runbasic.png)
 
-## DataMaps Prefab - added functionality
+## Editing or Adding More Functions
 
-Now that we have seen the usage of a basic datamap. Now, let us add some properties to the Prefab which can add bubble and labels.
+Now that we have seen the usage of a basic datamap. Now, let us add some more properties to the Prefab which can add bubble and labels.
 
-can be bound from the project containing the Prefab.
+These can be bound from the project containing the Prefab.
 
-1. Open the Datamap Prefab created earlier
-2. Open the Prefab Settings and add the following properties to it
+1. From the **Project Dashboard**, go to the **Prefab** tab and click **Create**.
+
+2. Click **Config Prefab** from the **Settings** dropdown.
+
+![prefab project config](/learn/assets/prefab-project-config.png)
+
+### Adding UI More Properties
+
+From the **Properties** tab, set the **UI Properties** for the Prefab to configure from an app.
+
+![prefab ui properties](/learn/assets/prefab-ui-properties.png)
 
 | Name | Display Value | Data Type | Default Value | Binding Type | Widget Type | Data Options |
 | --- | --- | --- | --- | --- | --- | --- |
-| coverage | Coverage | string | world |  | select | world,usa |
-| colormap | Color Map | object |  | in-bound | text |  |
-| dataset | Dataset | object |  | in-bound | text |  |
-| datafield | Data Field | string |  | in-bound | select |  |
-| usekeys | Use Keys | string |  | in-bound | select |  |
-| itemlabel | Item Label | string | world | in-bound | select |  |
-| showdetails | Show | boolean | true | in-bound |  checkbox |  |
-| detailstemplate | Details Template | list |  | in-bound |  text |  |
-| highlight | Highlight | string | #e36000 | in-bound | colorpicker |  |
-| height | Height | string | 400 |  |  text |  |
-| width | Width | string | 100% |  |  text |  |
+|colormap|Color map|object||in-bound|text||
+show|Show|boolean|true|in-bound|checkbox||
+|highlight|Highlight|string|#46C8FF|in-bound|colorpicker||
+|height|Height|string|||text||
+|width|Width|string|||text||
+|bubblecolor|Bubblecolor|string|#ffc0cb|in-bound|text||
+|showbubbles|Showbubbles|boolean|false|in-bound|text||
+|legend|Legend|boolean|false|in-bound|text||
 
-[![](/learn/assets/datamap_props.png)](/learn/assets/datamap_props.png)
+### Additional Custom Functions
 
-3. Drag and drop another **container**, **name** - _mapActionContainer_; **class** - _map-action-buttons_
-4. Add **three buttons** **named** - _zoomIn, zoomOut and zoomHome_; with **icon class** - _wi wi-zoom-in, wi wi-zoom-out, wi wi-home_; and **Click event** to trigger - _zoomInClick, zoomOutClick, zoomHomeClick_
-5. The **Script** needs to be updated to include the functionality to support the properties and button events added. Download the following file for the updated script: [datamaps_additional_script](/learn/assets/datamaps_additional_script.txt)
-6. Now the Prefab is ready for consumption
+Go to the **Script** tab, and add the following lines code which adds new functions; these functions were referenced in the [example-code above](#add-custom-functions). It adds additional ability to display the label and bubbles on the Datamaps Prefab.
 
-![bubbles](/learn/assets/bubbles-corona-tracker.png)
+```js
+function resetLabels() {
+    var stdLabelKeys = {};
+    if (Prefab.scope === 'india') {
+        stdLabelKeys = _.keys(Prefab.Variables.indiaStateCodes.dataSet);
+    } else {
+        stdLabelKeys = Prefab.datamap.worldTopo.objects.world.geometries;
+    }
 
-## DataMaps Prefab Usage - added functionality
+    var labels = {};
+    _.forEach(stdLabelKeys, function(value) {
+        var key = (Prefab.scope === 'india') ? value : value.id;
+        labels[key] = ' ';
+    });
+    Prefab.map.labels({
+        'customLabelText': labels
+    });
+    $($('.labels')).empty();   
 
-Now that you have made changes to the Prefab, we have to incorporate these changes in the Project using the Prefab. There are two ways to achieve this - Update in Prefab in Project or Publish Prefab with an updated version.
+//generates custom labels for countries
+function generateLabels() {
+    var stdLabelKeys = {};
+    if (Prefab.scope === 'india') {
+        stdLabelKeys = _.keys(Prefab.Variables.indiaStateCodes.dataSet);
+    } else {
+        stdLabelKeys = Prefab.datamap.worldTopo.objects.world.geometries;
+    }
 
-- **Update Prefab in Project**:
-    1. From the Prefab, select Update Prefab in Project under the Export option and select the Project using the Prefab. 
-    
-    [![](/learn/assets/datamap_update.png)](/learn/assets/datamap_update.png)
+    if (Prefab.labeldata) {
+        var countryList = {},
+            labelKeys = [];
+        //get all keys from the label data
+        _.forEach(Prefab.labeldata, function(value, key) {
+            labelKeys.push(key);
+        });        
+        //get all countries to prepare the list of key and value for labels
+        _.forEach(stdLabelKeys, function(value) {
+            var key = (Prefab.scope === 'india') ? value : value.id;
+            _.includes(labelKeys, key) ? countryList[key] = key : countryList[key] = ' ';
+        });       
+        Prefab.map.labels({
+            'customLabelText': countryList
+        });
+    }
+}
 
-    2. Open the Project where Prefab was incorporated earlier
-    3. You will see a dialog saying the updated version is available for usage. You can choose to **Revert** to the published version or **Continue** with the updated version. Click **Continue** to see the updated version.
-    4. You will see the Prefab in the Toolbox with **MOD** status indicating that it is the modified version
-    5. You need to Publish the Prefab to get the updated version in the Artifacts
-- **Publish Prefab**:
-    1. Publish the Prefab and increment the version number
-    2. Open the Project where Prefab was incorporated earlier
-    3. You will see a dialog saying the updated version is available for usage. **Update & Reload**.
-- You will find new properties displayed in the Properties panel
-- To set the properties we will be [creating **two Model Variables**](/learn/assets/var_sel.png) - ColorMap:
+function generateBubbles() {
+    if (Prefab.scope === 'india' && Prefab.dataset) {
+        const bubblearray = [];
+        _.forEach(Prefab.dataset, function(obj) {
+            bubblearray.push(obj);
+        });
         
-For colormap create a custom variable that will have color codes for the map.
-As an example you can use the following : 
+        Prefab.map.bubbles(bubblearray, {
+            popupOnHover: true,
+            highlightOnHover: Prefab.bubblecolor ? true : false,
+            highlightFillColor: Prefab.bubblecolor,
+            highlightBorderColor: Prefab.bubblecolor,
+            highlightBorderOpacity: 0.4,
+            popupTemplate: function(geo, data) {
+                return data["detailstemplate"];
+            }
+        });
+    } else {
+        Prefab.map.bubbles(Prefab.dataset, {
+            popupOnHover: true,
+            highlightOnHover: Prefab.bubblecolor ? true : false,
+            highlightFillColor: Prefab.bubblecolor,
+            highlightBorderColor: Prefab.bubblecolor,
+            highlightBorderOpacity: 0.3,
+            popupTemplate: function(geo, data) {
+                return data["detailstemplate"];
+            }
+        });
+    }
+}
+```
 
+### Save and Publish
+
+Save and [publish](/learn/app-development/custom-widgets/creating-prefabs/#publish-prefab) the prefab. Now, the Prefab is ready for use with additional functionalities.
+
+## Using Prefab with Additional Functionality
+
+Now that you have made changes to the Prefab, we have to include these changes in the Project using the Prefab. There are two ways to achieve this.
+
+1. Update in Prefab in Project
+2. Publish Prefab with an updated version
+
+### Update Prefab in Project
+
+1. From the Prefab, select Update Prefab in Project under the Export option and select the Project using the Prefab.
+    
+[![](/learn/assets/datamap_update.png)](/learn/assets/datamap_update.png)
+
+2. Open the Project where Prefab was incorporated earlier.
+3. You will see a dialog saying the updated version is available for usage. You can choose to **Revert** to the published version or **Continue** with the updated version. Click **Continue** to see the updated version.
+4. You will see the Prefab in the Toolbox with **MOD** status indicating that it is the modified version.
+5. You need to Publish the Prefab to get the updated version in the Artifacts.
+
+### Publish Prefab
+
+1. Publish the Prefab and increment the version number.
+2. Open the Project where Prefab was incorporated earlier.
+3. You will see a dialog saying the updated version is available for use. Thus, **Update** and **Reload**.
+
+You will find new properties displayed in the Properties panel.
+
+### Adding New Variable
+
+To set the colormap property, we will be using a **[Model Variables](/learn/assets/var_sel.png)** for ColorMap. As an example you can use the following.
 
 #### Colormap Variable
 
 
-For world map 
+Data for the World map
 
 ```json
 {
@@ -409,7 +515,7 @@ For world map
 }
 ```
 
-For India map
+Data for India map
 
 ```json
 {
@@ -423,16 +529,17 @@ For India map
 }
 ```
 
+[![](/learn/assets/colormap_var.png)](/learn/assets/colormap_var.png)
 
-        [![](/learn/assets/colormap_var.png)](/learn/assets/colormap_var.png)
+- Bind ColorMaps Variable to the Colormap Property. 
+- Set ShowBubbles property to true.
 
-- Bind the MapProps Variable to the **Dataset** property and set the rest of the properties; Bind ColorMaps Variable to the **Colormap** Property 
 
 [![](/learn/assets/datamap_bind.png)](/learn/assets/datamap_bind.png)
 
-- Run the app, you can see the countries color coded, along with the labels. You can use the buttons to zoom in, zoom out or return to home settings: 
+Run the app, you can see the countries color-coded, along with the labels and bubbles.
 
-[![datamap_runadv](/learn/assets/datamap_runadv.png)](/learn/assets/datamap_runadv.png)
+![bubbles](/learn/assets/bubbles-corona-tracker.png)
 
 ## See Also
 
