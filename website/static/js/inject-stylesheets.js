@@ -49,5 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
     /* Add click event to the document to hide the dropdown when clicked outside of it */
     document.addEventListener('click', function(e){
         document.querySelector('.dropdown .dropdown-menu').style.display = 'none';
-    })
+    });
+
+    if(window.location.pathname.indexOf("blog") !== -1) {
+        $(".navGroup h3.navGroupCategoryTitle").html('<h3 class="navGroupCategoryTitle" style="display: inline-block">All Blog Posts</h3><a style="padding-left: 10px;" href="https://www.wavemaker.com/learn/blog/feed.xml" target="_blank"><i class="fa fa-2x fa-rss" aria-hidden="true"></i></a>');
+    }
 });
