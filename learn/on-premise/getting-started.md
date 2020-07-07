@@ -38,7 +38,7 @@ Or, choose any on-premise virtualization providers from
 1. [VMWare Esxi](/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware)
 2. [Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv)
 
-Or, you can choose bare-metal or any other option.
+Or, you can choose bare-metal or any other option as well.
 
 ### Step-3: Choose the OS
 
