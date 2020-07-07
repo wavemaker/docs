@@ -5,15 +5,9 @@ sidebar_label: "Architecture"
 ---
 ---
 
-## StudioWorkspace
-
-Each user gets a container for developing apps. Containers are used to isolate each user’s workspace from the other users.
-
-## AppDeployments
-
-When a WaveMaker app is deployed in WaveMaker Cloud, it allocates a separate container for each app. Thus, the deployed apps are independent of each other.
-
 ## Instances
+
+Instances are like host computers where you can do so much more than just storing and managing data to run the WaveMaker Enterprise (WME) infrastructure. There are three types of instances in WME.
 
 ### WaveMaker Platform Instance
 
@@ -29,10 +23,16 @@ Platform Containers work to make calls to the Docker engine to perform operation
 
 ### StudioWorkspace Instance
 
+Each user gets a container for developing apps. Containers are used to isolate each user’s workspace from the other users.
+
 You add capacity for the StudioWorkspace Instance.
 
-### AppDeployment Instance
+### AppDeployments Instance
+
+When a WaveMaker app is deployed in WaveMaker Cloud, it allocates a separate container for each app. Thus, the deployed apps are independent of each other.
 
 You add capacity for the AppDeployment Instance.
 
+:::note
 WME internally utilizes Docker containers to segregate and isolate the platform components and the developer workspace.
+:::
