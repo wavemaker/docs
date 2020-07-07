@@ -37,9 +37,7 @@ In the advanced settings for chart widget, there are several configuration optio
 
 [![Top affected countries](/learn/assets/wm-blog-covid19-21-top-affected-countries.png)](/learn/assets/wm-blog-covid19-21-top-affected-countries.png)
 
-
 Top countries bar chart is ready!
-
 
 Wait, How did we pick only 10 countries from the entire list of 180+ countries returned by the API?
 
@@ -58,8 +56,7 @@ Prefabs are typically built by a javascript developer who knows the nuances of w
 ### Creating a Prefab
 
 :::tip
-Download the D3Maps prefab used in this project from the link below.
-**[Datamaps.zip](https://github.com/wavemaker/prefab-datamaps)**
+Download the **[D3Maps.zip](https://github.com/wavemaker/prefab-datamaps)**, and import it the **Prefabs** section to use it straightaway. For more information about how to use it, see [Importing Prefab](/learn/app-development/custom-widgets/custom-widgets#importing-prefabs).
 :::
 
 The following are the attributes provided by the Datamaps prefab developer that will appear in the Studio properties panel for binding.

@@ -18,38 +18,42 @@ Also, learn how to add some basic properties to edit the functionality.
 
 ## Creating DataMaps Prefab
 
-1. From the **Project Dashboard**, go to the **Prefab** tab and click **Create** .
+From the **Project Dashboard**, go to the **Prefab** tab and click **Create** .
 
 ![create prefab](/learn/assets/prefab_create.png)
 
-2. Enter a name and description of the Prefab.
+Enter a name and description of the Prefab.
 
 ### Download files
 
-3. Go to [DataMaps website](http://datamaps.github.io/) and download the required files from the **Downloads** section.
+1. Go to [DataMaps website](http://datamaps.github.io/) and download the required files from the **Downloads** section.
 
 :::important
-We will be implementing the Basic edition. We have used the following two files - [topojson min.js](/learn/assets/topojson.min_.zip) and [datamaps world min.js](/learn/assets/datamaps.world_.min_.zip). (extract from the provided zip files)
+We have used the following two files - [topojson min.js](/learn/assets/topojson.min_.zip) and [datamaps world min.js](/learn/assets/datamaps.world_.min_.zip). Extract files from the `downloaded-zip` files.
 :::
 
-4. [Import the Resources](/learn/app-development/services/3rd-party-libraries).
-5. Select the folder you want the resource to be imported to. In this case, we have selected the `resources` folder.
+2. [Import the Resources](/learn/app-development/services/3rd-party-libraries).
+3. Select the folder you want the resource to be imported to. For this, select the `resources` folder and upload the `datamaps.world.min.js` file.
 
 [![](/learn/assets/datamap_resource.png)](/learn/assets/datamap_resource.png)
 
 ### Project Configuration
 
-From [Project Configurations](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace), choose Config Prefab under Settings.
+1. Click **Config Prefab** from the **Settings** dropdown.
 
-- Add the uploaded script files. Make sure you enter topojson first and then datamaps resource.
+![prefab project config](/learn/assets/prefab-project-config.png)
+
+2. Reference the uploaded javascript files here. Make sure to add `topojson` first, and then the `datamaps` resource.
 
 [![](/learn/assets/datamap_settings.png)](/learn/assets/datamap_settings.png)
 
-- **UI Design**: Drag and drop a **Container Widget** onto the canvas, **name** it _mapContainer_ and set the **class** as _map-container_.
+### Designing the UI
+
+1. Drag and drop a **Container Widget** onto the canvas, **Name** it `mapContainer`, and set the **Class Name** as `map-container`.
 
 [![](/learn/assets/prefab_container.png)](/learn/assets/prefab_container.png)
 
-- Open the **Script** tab and enter the following code for _Prefab.onReady_ method
+2. Go to the **Script** tab, and enter the following code for the `Prefab.onReady` function.
 
 [![](/learn/assets/datamap_script-1.png)](/learn/assets/datamap_script-1.png)
 
@@ -104,12 +108,13 @@ Prefab.onReady = function () {
 $(window).on('resize', function () {
     Prefab.datamap.resize();
 });
-```    
-    - Prefab is ready for use.
+```   
+
+- Prefab is ready for use.
 
 ## DataMaps Prefab Usage
 
-1. Save and **Publish** the Prefab
+1. Save and **Publish** the Prefab.
 2. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs).
 3. The Prefab will be available for use across the Projects. You can see the entry in the Artefacts list from the Developer Utilities on the [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) and in the Widget Toolbox of any Project within your workspace.
 4. Open the project where you want to incorporate the Datamap Prefab created earlier
