@@ -65,6 +65,7 @@ Bingo! We are ready with the theme.
 ## What's next
 
 In the next release version, we will feature the icons and more styling options.
+> Update: Check out [additions we made in the second release](/learn/blog/2020/07/03/Another-update-to-theme-builder) since this announcement.
 
 ## See Also
 
