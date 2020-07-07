@@ -33,7 +33,7 @@ We have used the following two files - [topojson min.js](/learn/assets/topojson.
 :::
 
 2. [Import the Resources](/learn/app-development/services/3rd-party-libraries).
-3. Select the folder you want the resource to be imported to. For this, select the `resources` folder and upload the `datamaps.world.min.js` file.
+3. Select the folder you want the resource to be imported to. For this, select the `resources` folder and upload the `topojson.min.js` and `datamaps.world.min.js` files.
 
 [![](/learn/assets/datamap_resource.png)](/learn/assets/datamap_resource.png)
 
@@ -53,66 +53,198 @@ We have used the following two files - [topojson min.js](/learn/assets/topojson.
 
 [![](/learn/assets/prefab_container.png)](/learn/assets/prefab_container.png)
 
-2. Go to the **Script** tab, and enter the following code for the `Prefab.onReady` function.
+2. Go to the **Script** tab, and add the following code.
 
 [![](/learn/assets/datamap_script-1.png)](/learn/assets/datamap_script-1.png)
 
 :::note
-After creating the prefab, inside the script, you can find few pre-defined functions.
+After creating the prefab, inside the script, you can find a few pre-defined functions.
 
 - `[Prefab.onPropertyChange = propertyChangeHandler;]`
-- _Prefab.onReady_ method will be triggered post-initialization of the prefab. The code should go here:
+- `Prefab.onReady` method will be triggered post-initialization of the prefab. The code should go here:
 :::
 
+In this example, we are using world map and India map.
+
 ```js
-Prefab.onReady = function () {
+Prefab.onPropertyChange = function(key, newVal, oldVal) {
+    switch (key) {
+        case 'dataset':
+            Prefab.datafield = 'name'; //hardcoded
+            Prefab.labelfield = 'customLabel'; //hardcoded
+
+            generateDataset(newVal);
+
+            if (Prefab.map) { //if map has been previously initialized
+                Prefab.map.options.customLabelText = {};
+                resetLabels();
+
+                Prefab.map.options.fills = Prefab.colormap;
+                Prefab.map.updateChoropleth(Prefab.data, {
+                    reset: true
+                });
+                generateLabels();
+
+                if (Prefab.showbubbles)
+                    generateBubbles();
+
+                if (Prefab.legend) {
+                    $($('.datamaps-legend')).empty();
+                    Prefab.map.legend();
+                }
+            }
+            break;
+        case 'colormap':
+            break;
+        default:
+            break;
+    }
+};
+
+
+Prefab.onReady = function() {
+    initDataMap();
+};
+
+function initDataMap() {
     var mapCtr = Prefab.Widgets.mapContainer.$element[0];
     // this method will be triggered post initialization of the prefab.
+    if (Prefab.scope === 'world') {
+        initWorldMap(mapCtr);
+    }
+    // India map
+    if (Prefab.scope === 'india') {
+        initIndiaMap(mapCtr);
+    }
+
+    //draw bubbles for bombs
+    if (Prefab.showbubbles)
+        generateBubbles();
+    if (Prefab.legend)
+        Prefab.map.legend();
+}
+
+function initWorldMap(mapCtr) {
     Prefab.map = new Datamap({
         element: mapCtr,
-        scope: Prefab.coverage,
-        fills: Prefab.colormap,
+        scope: Prefab.scope,
+        fills: Prefab.colormap, //Any fill key, HIGH, LOW, MEDIUM, MAJOR, MINOR
+        //height: Prefab.height,
+        //width: Prefab.width,
         data: Prefab.data,
-        customTemplate: Prefab.detailstemplate,
-        done: function (datamap) {
-            datamap.svg.call(d3.behavior.zoom().on("zoom", redrawMap));
+        //customTemplate: Prefab.detailstemplate,
+        done: function(datamap) {
+            //datamap.svg.call(d3.behavior.zoom().on("zoom", redrawMap));
             Prefab.datamap = datamap;
-            Prefab.zoom = d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoomed);
+            //Prefab.zoom = d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoomed);
 
-            function redrawMap() {
-                datamap.svg.selectAll("g").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-            }
+            // function redrawMap() {
+            //     debugger
+            //     console.log("inside refraw----", d3);
+            //     datamap.svg.selectAll("g").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+            // }
             Prefab.datamap = datamap;
+        },
+        geographyConfig: {
+            popupOnHover: Prefab.showdetails,
+            //highlightOnHover: Prefab.highlight ? true : false,
+            // highlightFillColor: Prefab.highlight,
+            highlightBorderColor: Prefab.highlight,
+            highlightBorderOpacity: 0.5,
+            popupTemplate: function(geography, data) {
+                return data["detailstemplate"];
+            }
         },
         responsive: true
     });
 
-    generateLabelsfromKey();
-    if (Prefab.labeldata) {
-        //get all keys from the label data
-        _.forEach(Prefab.labeldata, function (value, key) {
-            labelKeys.push(key);
-        });
+    generateLabels();
+}
 
-        _.forEach(Prefab.datamap.worldTopo.objects.world.geometries, function (value) {
-            _.includes(labelKeys, value.id) ? countryList[value.id] = Prefab.labeldata[value.id] : countryList[value.id] = ' ';
-        });
+function initIndiaMap(mapCtr) {
+    Prefab.map = new Datamap({
+        element: mapCtr,
+        scope: Prefab.scope,
+        //height: Prefab.height,
+        geographyConfig: {
+            popupOnHover: Prefab.showdetails,
+            highlightOnHover: true,
+            borderColor: '#444',
+            borderWidth: 0.5,
+            dataUrl: 'https://rawgit.com/Anujarya300/bubble_maps/master/data/geography-data/india.topo.json',
+            highlightBorderColor: Prefab.highlight,
+            highlightBorderOpacity: 0.5,
+            popupTemplate: function(geography, data) {
+                return data["detailstemplate"];
+            }        
+        },
+        fills: Prefab.colormap,
+        data: Prefab.data,
+        done: function(datamap) {            
+        },
+        setProjection: function(element) {
+            var lat, lon, scaleval;
+            if (window.matchMedia("screen and (max-width: 480px)").matches) {
+                lat = 118.9629;
+                lon = 23.5937;
+                scaleval = 500;
+            } else if (window.matchMedia("screen and (max-width: 640px)").matches) {
+                lat = 96.9629;
+                lon = 23.5937;
+                scaleval = 700;
+            } else if (window.matchMedia("screen and (max-width: 800px)").matches) {
+                lat = 104.9629;
+                lon = 23.5937;
+                scaleval = 650;
+            } else if (window.matchMedia("screen and (max-width: 1200px)").matches) {
+                lat = 96.9629;
+                lon = 23.5937;
+                scaleval = 750;
+            } else {
+                lat = 84.9629;
+                lon = 23.5937;
+                scaleval = 1000;
+            }
+            var projection = d3.geo.mercator()
+                .center([lat, lon]) // always in [East Latitude, North Longitude]
+                .scale(scaleval);
+            var path = d3.geo.path().projection(projection);
+            return {
+                path: path,
+                projection: projection
+            };
+        },
+        responsive: true
+    });
+    generateLabels();
+}
 
-        Prefab.map.labels({
-            'customLabelText': countryList
-        });
-
+//generate dataset for datamap, call on property init()
+function generateDataset(dset) {
+    if (Prefab.scope === 'india') {
+        Prefab.data = {};
+    } else {
+        Prefab.data = [];
     }
-};
-
-$(window).on('resize', function () {
-    Prefab.datamap.resize();
-});
-```   
+    Prefab.labeldata = {};
+    if (dset && Prefab.datafield) {
+        var mainKey = [];
+        var field = Prefab.datafield.split('.');
+        var lblfield = Prefab.labelfield.split('.');
+        _.forEach(dset, function(value, key) {
+            mainKey = field.length > 1 ? value[field[0]][field[1]] : value[field[0]];
+            Prefab.data[mainKey] = value;
+            var labelKey = lblfield.length > 1 ? value[lblfield[0]][lblfield[1]] : value[lblfield[0]];
+            if (labelKey)
+                Prefab.labeldata[mainKey] = labelKey;
+        });
+    }
+}
+```
 
 - Prefab is ready for use.
 
-## DataMaps Prefab Usage
+## DataMaps Prefab Usage - Adding Dataset
 
 1. Save and **Publish** the Prefab.
 2. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs).
@@ -123,13 +255,93 @@ $(window).on('resize', function () {
 [![](/learn/assets/datamap_toolbar.png)](/learn/assets/datamap_toolbar.png)
 
 6. Drag and drop the Prefab onto the canvas and set the height to 500px.
-7. Run the app and see the map displayed.
+7. Add the dataset variable.
+
+#### Dataset
+
+For the dataset, create a variable as per requirement ( Ex : crud/ web service/ model). Here we are using a model variable derived from a web service variable.
+As an example you can use the following : 
+
+For world map:
+
+```json	
+[
+  {
+    "name": "RUS",
+    "fillKey": "RUS",
+	"latitude": 61.52401,
+	"longitude": 105.318756,
+	"radius": 25,
+    "customLabel": "2361",
+	"detailstemplate": "2361$"
+  },
+  {
+    "name": "IND",
+    "fillKey": "IND",
+    "latitude": 20.593684,
+	"longitude": 78.96288,
+	"radius": 25,
+    "customLabel": "5456",
+	"detailstemplate": "5456$"
+  },
+  {
+    "name": "GBR",
+    "fillKey": "GBR",
+    "latitude": 55.378051,
+	"longitude": -3.435973,
+	"radius": 25,
+    "customLabel": "123",
+	"detailstemplate": "4894$"
+  },
+  {
+    "name": "FRA",
+    "fillKey": "FRA",
+    "latitude": 46.227638,
+	"longitude": 2.213749,
+	"radius": 25,
+    "customLabel": "145",
+	"detailstemplate": "4456$"
+  },
+  {
+    "name": "USA",
+    "fillKey": "USA",
+    "latitude": 37.09024,
+	"longitude": -95.712891,
+	"radius": 25,
+    "customLabel": "4231",
+	"detailstemplate": "4231$"
+  }
+]
+```
+
+For India Map:
+
+```json
+{
+   "JH":{
+      "fillKey":"MINOR",
+      "detailstemplate":"2361$"
+   },
+   "MH":{
+      "fillKey":"MINOR",
+      "detailstemplate":"5456$"
+   }
+}
+```
+
+:::note
+Do not change the structure of the dataset. Use the above formats.
+:::
+
+8. Run the app and see the map displayed.
 
 [![datamap_runbasic](/learn/assets/datamap_runbasic.png)](/learn/assets/datamap_runbasic.png)
 
 ## DataMaps Prefab - added functionality
 
-Now that we have seen the usage of a basic datamap, let us add some properties to the Prefab which can be bound from the project containing the Prefab.
+Now that we have seen the usage of a basic datamap. Now, let us add some properties to the Prefab which can add bubble and labels.
+
+can be bound from the project containing the Prefab.
 
 1. Open the Datamap Prefab created earlier
 2. Open the Prefab Settings and add the following properties to it
@@ -155,6 +367,8 @@ Now that we have seen the usage of a basic datamap, let us add some properties t
 5. The **Script** needs to be updated to include the functionality to support the properties and button events added. Download the following file for the updated script: [datamaps_additional_script](/learn/assets/datamaps_additional_script.txt)
 6. Now the Prefab is ready for consumption
 
+![bubbles](/learn/assets/bubbles-corona-tracker.png)
+
 ## DataMaps Prefab Usage - added functionality
 
 Now that you have made changes to the Prefab, we have to incorporate these changes in the Project using the Prefab. There are two ways to achieve this - Update in Prefab in Project or Publish Prefab with an updated version.
@@ -173,79 +387,42 @@ Now that you have made changes to the Prefab, we have to incorporate these chang
     2. Open the Project where Prefab was incorporated earlier
     3. You will see a dialog saying the updated version is available for usage. **Update & Reload**.
 - You will find new properties displayed in the Properties panel
-- To set the properties we will be [creating **two Model Variables**](/learn/assets/var_sel.png) - MapProps and ColorMap:
-    1. **MapProps** as a _list JSON format_, we are setting label etc.:
+- To set the properties we will be [creating **two Model Variables**](/learn/assets/var_sel.png) - ColorMap:
+        
+For colormap create a custom variable that will have color codes for the map.
+As an example you can use the following : 
 
-        ```json
-        [
-          {
-            "name": "RUS",
-            "fillKey": "RUS",
-            "numberOfThings": 1564,
-            "customLabel": "2,361$"
-          },
-          {
-            "name": "PRK",
-            "fillKey": "PRK",
-            "numberOfThings": 2786,
-            "customLabel": "2,749$"
-          },
-          {
-            "name": "PRC",
-            "fillKey": "PRC",
-            "numberOfThings": 13456,
-            "customLabel": "3,418$"
-          },
-          {
-            "name": "IND",
-            "fillKey": "IND",
-            "numberOfThings": 23459,
-            "customLabel": "5,456$"
-          },
-          {
-            "name": "GBR",
-            "fillKey": "GBR",
-            "numberOfThings": 1038,
-            "customLabel": "4,894$"
-          },
-          {
-            "name": "FRA",
-            "fillKey": "FRA",
-            "numberOfThings": 3814,
-            "customLabel": "4,456$"
-          },
-          {
-            "name": "PAK",
-            "fillKey": "PAK",
-            "numberOfThings": 6381,
-            "customLabel": "4,196$"
-          },
-          {
-            "name": "USA",
-            "fillKey": "USA",
-            "numberOfThings": 10381,
-            "customLabel": "4,231$"
-          }
-        ]
-        ```
 
-        [![](/learn/assets/mapprops_var.png)](/learn/assets/mapprops_var.png)
+#### Colormap Variable
 
-    2. **ColorMap** with the following code, where we are defining colors for a few countries:
 
-        ```json
-        {
-          "USA": "#1f77b4",
-          "RUS": "#9467bd",
-          "PRK": "#ff7f0e",
-          "PRC": "#2ca02c",
-          "IND": "#e377c2",
-          "GBR": "#8c564b",
-          "FRA": "#d62728",
-          "PAK": "#7f7f7f",
-          "defaultFill": "#EDDC4E"
-        }
-        ```
+For world map 
+
+```json
+{
+  "USA": "#1f77b4",
+  "RUS": "#9467bd",
+  "IND": "#e377c2",
+  "GBR": "#8c564b",
+  "FRA": "#d62728",
+  "defaultFill": "#EDDC4E"
+}
+```
+
+For India map
+
+```json
+{
+  "LOW": "FADCD9",
+  "MINOR": "#F8AFA6",
+  "MODERATE": "#FE8181",
+  "HIGH": "#FE5757",
+  "SEVERE": "#FE2E2E",
+  "CRITICAL": "#CB2424",
+  "defaultFill": "#dddddd"
+}
+```
+
 
         [![](/learn/assets/colormap_var.png)](/learn/assets/colormap_var.png)
 
