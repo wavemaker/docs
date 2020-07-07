@@ -366,7 +366,7 @@ These can be bound from the project containing the Prefab.
 
 ![prefab project config](/learn/assets/prefab-project-config.png)
 
-### Adding UI More Properties
+### Adding More UI Properties
 
 From the **Properties** tab, set the **UI Properties** for the Prefab to configure from an app.
 
