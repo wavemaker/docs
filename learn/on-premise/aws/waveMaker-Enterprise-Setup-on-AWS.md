@@ -1,17 +1,15 @@
 ---
-title: "WaveMaker Enterprise Setup on AWS"
+title: "WaveMaker Enterprise Setup Process on AWS"
 id: ""
 sidebar_label: "Overview"
 ---
 ---
 
-## WaveMaker Enterprise setup process on AWS
+The below guide helps you in the process of setting up WaveMaker Enterprise on AWS.
+You need an AWS account before starting this process.
+In the guide, we will walk through the following steps.
 
-The below guide helps in the process of setting up WaveMaker Enterprise on AWS.
-You need AWS account prior to the starting this process.
-In the Guide we will walk through below things.
-
-- Preparing the required Infrastructure as per [system prerequisites](/learn/on-premise/prerequisites).
-- Install required prerequisites softwares respect to the Operating system.
-- Download WME installer file(Shipped by WaveMaker team) and install WME
-- Configure WME based on your organization requirements
+1. Preparing the required Infrastructure as per [system prerequisites](/learn/on-premise/prerequisites).
+2. Install required prerequisites' software respect to the Operating system.
+3. Download the WME installer file (shipped by the WaveMaker team) and install WME.
+4. Configure WME based on your organization requirements.

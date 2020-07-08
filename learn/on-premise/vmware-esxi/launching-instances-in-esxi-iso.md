@@ -104,12 +104,12 @@ sudo systemctl start ssh
 sudo systemctl status ssh
 ```
 
-## Launch External Instance
+## Launch StudioWorkspace Instance / AppDeployment Instance
 
-- Use same procedure for External Instance(StudioWorkspace Instance / AppDeployment Instance).
+- Use same procedure for StudioWorkspace Instance / AppDeployment Instance.
 
 ## Security and Networking
 
 - Do one of the two things below.
-  - All traffic opened between Platform Instance and External Instances.
+  - All traffic opened between Platform Instance and StudioWorkspace Instance / AppDeployment Instance.
   - Configure security rules as per Prerequisites.

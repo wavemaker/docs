@@ -35,13 +35,13 @@ sidebar_label: "Prepare Infrastructure using VHD"
 
 [![review](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-review-and-create.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-review-and-create.png)
 
-- After creating the network security group under settings select inbound security rules, create a rule for public access and select protocol TCP and add a rule to network security group.
+- After creating the network security group under settings select inbound security rules, create a rule for developer network access and select protocol TCP and add a rule to network security group.
 
 [![port public access](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-for-public-access.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-for-public-access.png)
 
 - If you want ssh access to only desired networks create another rule and provide your network ips for ssh access.
 
-- Create another rule to open additional ports for access Platform Virtual Machine from the Workspace/AppDeployment or External Virtual Machine. Next, select a destination.
+- Create another rule to open additional ports for access Platform Virtual Machine from the Studio Workspace/App Deployment Virtual Machine. Next, select a destination.
 
 - If you select a destination as a virtual network the security rule is applied to Virtual Machines whatever in the virtual network of the platform Virtual Machine,or if you select destination as application security group, it applies to the only VMs which are connect to that application security group, or else if you select destination as Ip Addresses the rules are apply to respected IP address resource. for more details visit [filter network traffic in azure](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic).
 
@@ -49,7 +49,7 @@ sidebar_label: "Prepare Infrastructure using VHD"
 
 [![internal rule](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-internal-rule.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-internal-rule.png)
 
-### Creation of Network Security Group for External Virtual Machine
+### Creation of Network Security Group for Studio Workspace/App Deployment Virtual Machine
 
 Applies for Workspace Virtual Machine / AppDeployment Virtual Machine
 
@@ -65,7 +65,7 @@ Applies for Workspace Virtual Machine / AppDeployment Virtual Machine
 
 [![review](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-review-and-create.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-review-and-create.png)
 
-- Create a security rule to open additional ports for access from the Platform Instance. Select a destination.based on the destination it applies the rules to Virtual Machines.
+- Create a security rule to open additional ports for access from the Platform Virtual Machine. Select a destination.based on the destination it applies the rules to Virtual Machines.
 - If you select a destination as a virtual network the security rule is applied to Virtual Machines whatever in the virtual network of the platform Virtual Machine,or if you select destination as application security group, it applies to the only VMs which are connect to that application security group, or else if you select destination as Ip Addresses the rules are apply to respected IP address resource. for more details visit [filter network traffic in azure](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic).
 
 [![internal rule](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-internal-rule.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-internal-rule.png)
@@ -107,12 +107,12 @@ azcopy copy "C:\filename.vhd" "https://account.blob.core.windows.net/mycontainer
 [![vhd basic](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-basic.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-basic.png)
 
 - For Platform Virtual Machine add root 50 GiB, storage 50 GiB, for wm-runtime and 150 GiB for wm-data and if required add 50 GiB for /usr/local/content(/usr/local/content is optional not mandatory).
-- For External Virtual Machine add root 50 GiB, storage 150 GiB for data.
+- For Studio Workspace/App Deployment Virtual Machine add root 50 GiB, storage 150 GiB for data.
 
 [![vhd disk](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-disks.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-disks.png)
 
 - Select create VM option at the left top. create VM providing required details disks and networking.
-- At Configure network security group select WME-SG-Platform-Public-and-Internal for Platform Virtual Machine and select WME-SG-Workspace-Internal for External Virtual Machine(Workspace Virtual Machine / AppDeployment Virtual Machine).
+- At Configure network security group select WME-SG-Platform-Public-and-Internal for Platform Virtual Machine and select WME-SG-Workspace-Internal for Studio Workspace/App Deployment Virtual Machine(Workspace Virtual Machine / AppDeployment Virtual Machine).
 
 [![network](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-networking.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-networking.png)
 
@@ -184,10 +184,10 @@ UUID=<block-device_1-UUID>       /wm-runtime     ext4     defaults ,nofail  0  2
 
 [![fstab](/learn/assets/wme-setup/wme-setup-in-azure/vm-fstab.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-fstab.png)
 
-### Mounting Disks in External virtual Machine(Workspace Virtual Machine / AppDeployment Virtual Machine)
+### Mounting Disks in Workspace Virtual Machine/AppDeployment Virtual Machine
 
 :::note
-Applies for StudioWorkspace Instance/AppDeployment Instance
+Applies for StudioWorkspace Virtual Machine/AppDeployment Virtual Machine
 :::
 
 - For ssh into the platform Virtual Machine use the following command.

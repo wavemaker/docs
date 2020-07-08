@@ -1,74 +1,38 @@
 ---
 title: "WaveMaker Enterprise Architecture"
 id: ""
-sidebar_label: "About Enterprise"
+sidebar_label: "Architecture"
 ---
 ---
 
-## Enterprise Components
+## Instances
 
-WaveMaker Enterprise consists of the following four components.
+Instances are like host computers where you can do so much more than just storing and managing data to run the WaveMaker Enterprise (WME) infrastructure. There are three types of instances in WME.
 
-### Config Portal
+### WaveMaker Platform Instance
 
-A Config Portal is a simple wizard application to setup WME on on-premise environment.
+WaveMaker On-Premise Platform consists of multiple internal services to run WaveMaker Studio, Cloud, VCS, and more. Each of these services runs in a separate [Docker Container](https://www.docker.com/resources/what-container) and services talk to each other via REST services.
 
-### Launchpad
+![platform architecture](/learn/assets/wme-setup/platform-architecture.png)
 
-Launchpad is a WaveMaker's administrative console where you can configure users, additional Studio/Cloud instances for scaling, configure external VCS, etc. Launchpad is automatically installed when you setup WaveMaker Enterprise.
+<br>
 
-### WaveMaker Studio
+Platform Containers work to make calls to the Docker engine to perform operations like starting a new user container, starting or stopping a container, and more.
 
-A modern low-code platform for collaborative development of multi-device apps.
+![vm architecture](/learn/assets/vm_arch.png)
 
-### WaveMaker Cloud
+### StudioWorkspace Instance
 
-Consist of Containerized Cloud for User workspace and App Deployments isolation. Managed by Platform.
+Each user gets a container for developing apps. Containers are used to isolate each user’s workspace from the other users.
 
+You add capacity for the StudioWorkspace Instance.
 
-## WaveMaker Enterprise Architecture
+### AppDeployments Instance
 
-### 1. Platform
+When a WaveMaker app is deployed in WaveMaker Cloud, it allocates a separate container for each app. Thus, the deployed apps are independent of each other.
 
-WaveMaker On-Premise Platform which consisting of multiple internal services needed to run the WME platform like Studio, Cloud, VCS etc.. Each of these services runs in a separate Docker Container. Services talk to each other via REST service. Platform Containers make calls to the Docker Engine for operations like starting a new user container, stopping / starting a container, and more.
+You add capacity for the AppDeployment Instance.
 
-### 2. User Workspace
-
-Each user gets a container for developing apps. Containers are used to isolate each user’s workspace from other users.
-
-### 3. App Deployments
-
-Each WaveMaker app that is deployed into the internal WaveMaker Cloud is allocated a separate container. Thus the deployed apps are also isolated from each other.
-
-### 4. External Instances
-
-Capacity added for User Workspace and App Deployments, we call it as External Instances.
-
-Internally WME utilizes Docker containers to segregate and isolate the platform components and the developer workspace as depicted below.
-
-[![platform architecture](/learn/assets/wme-setup/platform-architecture.png)](/learn/assets/wme-setup/platform-architecture.png)
-
-## WaveMaker Enterprise Roles and their activities
-
-### Setup Admin
-
-- Procure Required Infrastructure and Other Prerequisites
-- Setup WaveMaker Enterprise
-- Create SuperAdmin
-- Manages the setup and upgrades
-
-### Super Admin
-
-- Onboarding Users
-- Adding VCS to WaveMaker Enterprise Platform
-- Add Instances
-- Configure Pipelines
-
-### Enterprise Admin
-
-- Project Management
-- Artifact Management
-
-### Studio User
-
-- Developer who builds WaveMaker apps using Studio
+:::note
+WME internally utilizes Docker containers to segregate and isolate the platform components and the developer workspace.
+:::

@@ -29,7 +29,7 @@ sidebar_label: "Prepare Infrastructure"
 
 [![basic](/learn/assets/wme-setup/wme-setup-in-aws/wme-sg-platform-public-basic.png)](/learn/assets/wme-setup/wme-setup-in-aws/wme-sg-platform-public-basic.png)
 
-- Select inbound rules and Edit rules for public access. You can mention you developer network range/0.0.0.0 for the destination.
+- Select inbound rules and Edit rules for developer network access. You can mention you developer network range at source.
 
 [![ports public access](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-platform-public.png)](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-platform-public.png)
 
@@ -39,7 +39,7 @@ sidebar_label: "Prepare Infrastructure"
 
 [![basic](/learn/assets/wme-setup/wme-setup-in-aws/wme-sg-platform-internal-basic.png)](/learn/assets/wme-setup/wme-setup-in-aws/wme-sg-platform-internal-basic.png)
 
-- Select inbound rules and Edit rules for access from the external instance, at source field provide WME-SG-Workspace-Internal security group ID.
+- Select inbound rules and Edit rules for access from the StudioWorkspace Instance / AppDeployment Instance, at source field provide WME-SG-Workspace-Internal security group ID.
 
 [![ports internal](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-platform-internal.png)](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-platform-internal.png)
   
@@ -82,7 +82,7 @@ sidebar_label: "Prepare Infrastructure"
 
 - Next review your instance details and launch the instance.
 
-## Launch External Instance (Studio Workspace Instance / AppDeployment Instance)
+## Launch Studio Workspace Instance / AppDeployment Instance
 
 - Open the Amazon EC2 console at <https://console.aws.amazon.com/ec2/.>
 - Choose Launch Instance,Choose an ubuntu 16.04 Amazon Machine Image (AMI) or you have any ubuntu 16.04 AMI select it.
@@ -178,7 +178,7 @@ UUID=<block-device_2-UUID>    /wm-runtime  ext4   defaults ,nofail  0  2
 
 [![fstab](/learn/assets/wme-setup/wme-setup-in-aws/fstab-platform.png)](/learn/assets/wme-setup/wme-setup-in-aws/fstab-platform.png)
 
-### Mounting storage External Instance
+### Mounting storage StudioWorkspace Instance / AppDeployment Instance
 
 :::note
 Applies for StudioWorkspace Instance/AppDeployment Instance

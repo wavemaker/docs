@@ -11,7 +11,7 @@ sidebar_label: "Install Prerequisites Softwares"
 
 - If given ssh user has privileges(root/sudo) to install/upgrade.
 - WME Installer will automatically installs required softwares.
-- Same applies for External Instance as well.
+- Same applies for StudioWorkspace Instance / AppDeployment Instance as well.
 - Internet is not required for Installation in this case.
 
 ### The ssh user don't have privileges install/upgrade utility softwares
@@ -44,15 +44,15 @@ sudo apt-get install python3 -y
     apt-get install docker-ce=18.06.2~ce~3-0~ubuntu
 ```
 
-### Extra configurations on Ubuntu External Instances
+### Extra configurations on Ubuntu StudioWorkspace Instance / AppDeployment Instance
 
-#### The ssh user has privileges(root/sudo) on Ubuntu External Instances
+#### The ssh user has privileges(root/sudo) on Ubuntu StudioWorkspace Instance / AppDeployment Instance
 
 - No need to do any configurations. Platform will do it automatically.
 
-#### The ssh user don't have privileges(non sudo users) Ubuntu External Instances
+#### The ssh user don't have privileges(non sudo users) Ubuntu StudioWorkspace Instance / AppDeployment Instance
 
-- If the user given to the Platform don't have privileged access, then provide below permission for the user given on External Instance.  
+- If the user given to the Platform don't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.  
 - Have to execute these commands from privileged user.
   - Add user to docker group.  
   - Make the user as owner for docker systemd process.
@@ -68,7 +68,7 @@ sudo apt-get install python3 -y
 
 ## RHEL
 
-Install below softwares on Platform Instance and External Instances(User Workspace and AppDeployment Instances)
+Install below softwares on Platform Instance and StudioWorkspace Instance / AppDeployment Instance
 
 :::note
 Use same version numbers as mentioned.
@@ -103,15 +103,15 @@ systemctl start docker
 yum install python3 -y
 ```
 
-### Extra configurations on RHEL External Instances
+### Extra configurations on RHEL StudioWorkspace Instance / AppDeployment Instance
 
-#### The ssh user has privileges(root/sudo) on RHEL External Instances
+#### The ssh user has privileges(root/sudo) on RHEL StudioWorkspace Instance / AppDeployment Instance
 
 - No need to do any configurations. Platform will do it automatically.
 
-#### The ssh user don't have privileges(non sudo users) on RHEL External Instances
+#### The ssh user don't have privileges(non sudo users) on RHEL StudioWorkspace Instance / AppDeployment Instance
 
-- If the user given to the Platform don't have privileged access, then provide below permission for the user given on External Instance.
+- If the user given to the Platform don't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
 - Have to execute these commands from privileged user.
   - Add user to docker group.
   - Make the user as owner for docker systemd process.
