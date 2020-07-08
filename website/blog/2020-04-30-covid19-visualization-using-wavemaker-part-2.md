@@ -37,9 +37,7 @@ In the advanced settings for chart widget, there are several configuration optio
 
 [![Top affected countries](/learn/assets/wm-blog-covid19-21-top-affected-countries.png)](/learn/assets/wm-blog-covid19-21-top-affected-countries.png)
 
-
 Top countries bar chart is ready!
-
 
 Wait, How did we pick only 10 countries from the entire list of 180+ countries returned by the API?
 
@@ -56,6 +54,14 @@ Maps is not an in-built widget in WaveMaker, using datamaps javascript library a
 Prefabs are typically built by a javascript developer who knows the nuances of working with a javascript library and creates a widget or prefab out of it. The Prefab developer will provide attributes that are available to WaveMaker low-code developers when the widget is dropped onto the canvas.
 
 ### Creating a Prefab
+
+:::tip
+Download the **[D3Maps.zip](https://github.com/wavemaker/prefab-datamaps)**, and import it the **Prefabs** section to use it straightaway. For more information about how to use it, see [Importing Prefab](/learn/app-development/custom-widgets/custom-widgets#importing-prefabs).
+:::
+
+:::note
+To create a Datamaps Prefab, see a detailed documentation of [How to Create a Prefab Using D3 Library DataMaps](/learn/how-tos/create-prefab-using-d3-library-datamaps).
+:::
 
 The following are the attributes provided by the Datamaps prefab developer that will appear in the Studio properties panel for binding.
 

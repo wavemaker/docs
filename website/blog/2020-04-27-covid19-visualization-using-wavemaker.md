@@ -5,7 +5,7 @@ author: Deepak Anupalli
 
 Alongside the crisis that COVID-19 had brought to the world, there has never been so much prominence for the numbers. Almost every household, governments, businesses, media etc. are contemplating these numbers, creating models for prediction, taking measures to flatten these curves. That’s when we immediately jumped on to create an application using our own low-code platform.
 
-Using WaveMaker, you can almost instantly create a chart or plot for visualization from any datasource. There are several API sources for COVID-19 data and with no code, using out-of-the-box widgets and charts the application has been built in just a few days. 
+Using WaveMaker, you can almost instantly create a chart or plot for visualization from any datasource. There are several API sources for COVID-19 data and with no code, using out-of-the-box widgets and charts the application has been built in just a few days.
 
 <!-- truncate -->
 

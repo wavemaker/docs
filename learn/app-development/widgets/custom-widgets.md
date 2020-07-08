@@ -85,7 +85,7 @@ Once you have created a Prefab, it needs to be published in order for the apps t
 1. To use a prefab for the first time, it needs to be imported into your app. You can import your prefabs by clicking + on the Prefab Resource panel.
 2. Once imported, you can find the prefab in the **Prefabs** section of the **Pages Resources**. These prefabs are grouped into categories like Media, location, etc., as defined in the properties of the Prefab at the time of creation.
 3. You can use prefabs in any of your projects by simply dragging them from the  **Prefabs** section of the **Pages Resources**and dropping them onto your page, like any other widget. Once, embedded into the page, all the functionality of the prefab becomes part of that page.
-4. You can find the list of available Prefabs from the [Studio Artefacts](http://[supsystic-show-popup id=120]) page.
+4. You can find the list of available Prefabs from the [Studio Artefacts](/learn/assets/artefacts.png) page.
 
 **Notes:**
 

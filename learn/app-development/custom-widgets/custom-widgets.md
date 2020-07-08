@@ -81,12 +81,22 @@ Once you have created a Prefab, it needs to be published in order for the apps t
 
 ## Importing Prefabs
 
-1. To use a prefab for the first time, it needs to be imported into your app. You can import your prefabs by clicking + on the Prefab Resource panel.
-2. Once imported, you can find the prefab in the **Prefabs** section of the **Pages Resources**. These prefabs are grouped into categories like Media, location, etc., as defined in the properties of the Prefab at the time of creation.
-3. You can use prefabs in any of your projects by simply dragging them from the  **Prefabs** section of the **Pages Resources**and dropping them onto your page, like any other widget. Once, embedded into the page, all the functionality of the prefab becomes part of that page.
-4. You can find the list of available Prefabs from the [Studio Artefacts](http://[supsystic-show-popup id=120]) page.
+1. To use a prefab for the first time, you should import the Prefab into your app. To import, click the **+** from the **Prefabs** section.
+
+    ![prefabs import](/learn/assets/prefab-import.png)
+
+2. Upload the `.zip` file.
+
+    ![upload zip file](/learn/assets/prefab-zip-import.png)
+
+3. Once imported, you can find the prefab in the **Prefabs** section of the **Pages Resources**. These prefabs are grouped into categories like Basic, Media, Location, and more, as defined in the properties of the Prefab at the time of creation.
+4. You can use prefabs in any of your projects by simply dragging and dropping them from the  **Prefabs** section to your page like any other widget. Once, embedded into the page, all the functionality of the prefab becomes a part of that page.
+5. You can find the list of available Prefabs from the [Studio Artefacts](/learn/assets/artefacts.png) page.
+
+![artefacts](/learn/assets/artefacts_access.png)
 
 :::note
+
 1. All Published Prefabs will be available under Prefabs, without needing to Import. Just click the refresh icon if you don't find the Prefab.
 2. To incorporate any changes made to an already imported prefab, it needs to be re-imported to an updated version of the project. Use the refresh icon for the same.
 3. Deleting a prefab already incorporated into a project will not affect the project.
