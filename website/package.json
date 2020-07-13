@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@wavemaker.com/wm-remarkjs-theme": "github:wavemaker/wm-remarkjs-theme",
+    "aws-sdk": "^2.712.0",
     "concurrently": "5.1.0",
     "copy-files-from-to": "^2.3.0",
     "cypress": "^3.8.3",
@@ -31,7 +32,9 @@
     "mochawesome-merge": "^2.1.0",
     "mochawesome-report-generator": "^4.1.0",
     "optimist": "^0.6.1",
+    "remark": "11.0.2",
     "remarkable-admonitions": "^0.2.2",
+    "strip-markdown": "^3.1.2",
     "textlint": "^11.6.3",
     "textlint-plugin-html": "^0.2.0",
     "textlint-rule-terminology": "^2.1.4",

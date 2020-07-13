@@ -1,0 +1,10 @@
+{
+    "config": {
+        "textType": "ssml",
+        "outputFormat": "mp3",
+        "voiceId": "Joanna"
+    },
+    "files": ["2019-11-01-developers-team-blog.md"],
+    "outputPath": "/tmp/blog-mp3"
+
+}
