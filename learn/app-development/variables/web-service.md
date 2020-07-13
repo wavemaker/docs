@@ -5,7 +5,7 @@ sidebar_label: "Service Variable"
 ---
 ---
 
-For every service imported into the app, APIs exposed by the service can be accessed. A Variable needs to be created to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
+For every service imported into the app, the APIs exposed by the service can be accessed to perform many operations with it. A Variable needs to be created to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
 
 A comprehensive list of these APIs can be found from the [API Designer](/learn/assets/API_Access.png) after the import of the service.
 
@@ -13,13 +13,20 @@ A comprehensive list of these APIs can be found from the [API Designer](/learn/
 Since the service needs to be invoked to fetch the data, the widgets bound to these variables will display values only at run-time, not in Studio mode.
 :::
 
-## Variable Creation
+## How to Create a Service Variable
 
-The **data source** for these Variables comes from a _Web Service APIs_. 
+The **data source** for these Variables comes from imported REST and SOAP services. You can create a Service variable by using the following two approaches depending on the source of the data.
+
+1. Service Variable for **Web Service** (REST APIs, SOAP, WebSocket)
+2. Service Variable for **Imported APIs** (Swagger/Open API)
 
 :::important
-Though the process for creating a variable for WebSocket Service is the same as below, properties and methods are different. For more information, see [WebSocket Variable](/learn/app-development/variables/websocket-variable/).
+The process for creating a variable for WebSocket Service is the same as below, however, the properties and methods are different. For more information, see [WebSocket Variable](/learn/app-development/variables/websocket-variable/).
 :::
+
+![select web services](/learn/assets/select-service-variable.png)
+
+### Service Variable for Web Services
 
 1. Select **Variable** from the workspace toolbar.
 
@@ -29,19 +36,43 @@ Though the process for creating a variable for WebSocket Service is the same as 
 
 ![new variable](/learn/assets/var_new.png)
 
-3. Select **Web Services** as *a target action for Variable*.
+3. Select **Web Services** as a target action for Variable.
 
 ![select web services](/learn/assets/select-web-services.PNG)
 
+4. In the new Variable dialog, configure the properties for the variable.
+
 :::important
-The data source for the Variable comes from imported Services.
+The data source for the Variable comes from the imported Services.
 :::
 
-![swagger variable](/learn/assets/swagger-variable.png)
-
-### Steps to Create Variable in Variable Wizard
+![web service variable](/learn/assets/web-service-variable.png)
 
 - **Service**: Select the service name from imported services.
+- **Name**: Set by default, but you can modify it.
+- **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
+- Click **Done** to complete the variable creation process.
+
+### Service Variable for Imported APIs
+
+1. Select **Variable** from the workspace toolbar.
+
+![variable creation](/learn/assets/var_sel.png)
+
+2. Click **New Variable** from the Variable Dialog.
+
+![new variable](/learn/assets/var_new.png)
+
+3. Select **Imported APIs** as a target action for Variable.
+
+![select imported api](/learn/assets/select-imported-api.png)
+
+4. In the new Variable dialog, configure the properties for the variable.
+
+![swagger variable](/learn/assets/other-endpoints-variable.png)
+
+- **Service**: Select the [Imported Service](/learn/app-development/services/api-designer/import-rest-apis-swagger#importing-swagger).
+- **Type**: Select the **Type** as `Other Endpoints`.
 - **Method**: If the API exposes multiple services, you can choose from the list.
 - **Name**: Set by default, but you can modify it.
 - **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.

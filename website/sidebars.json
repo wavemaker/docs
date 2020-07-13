@@ -162,8 +162,9 @@
           "label": "Variables",
           "ids": 
             [ 
+            "app-development/variables/crud-variable",
             "app-development/variables/web-service",
-            "app-development/variables/crud-variable"
+            "app-development/variables/websocket-variable"
             ]
         }  
 
