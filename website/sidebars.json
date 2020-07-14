@@ -281,23 +281,29 @@
     [
         "app-development/dev-integration/developer-tools",
         "app-development/dev-integration/inspection-framework",
-        "app-development/dev-integration/import-export-update-apps",
-        "app-development/ui-design/project-shells",
-        "app-development/wavemaker-overview/localization",
-        "app-development/wavemaker-overview/artifacts-repository",
+        "app-development/dev-integration/debugging",
         {
           "type": "subcategory",
           "label": "Developer Integration",
           "ids": [ 
             "app-development/wavemaker-overview/project-user-management",       
             "app-development/dev-integration/developer-collaboration",
-            "app-development/dev-integration/debugging",
-            "app-development/dev-integration/extending-application-using-ides"
+            "app-development/dev-integration/extending-application-using-ides",
+            "app-development/dev-integration/import-export-update-apps",
+            "app-development/ui-design/project-shells"
+          ]
+        },
+        {
+          "type": "subcategory",
+          "label": "Add-ons",
+          "ids": [
+            "app-development/wavemaker-overview/localization",
+            "app-development/wavemaker-overview/artifacts-repository"
           ]
         }
     ],
 
-    "Deploy":
+    "Deployment":
     [       
       "app-development/deployment/configuration-profiles",
       "app-development/deployment/build-options", 
