@@ -5,9 +5,11 @@ sidebar_label: "CRUD Variable"
 ---
 ---
 
-For every service imported into the app, APIs exposed by the service can be accessed. To create a CRUD variable, you need to drag-and-drop a widget to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
+For every service imported into the app, the APIs exposed by the service can be accessed to perform many operations with it. A variable needs to be created to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
 
-A comprehensive list of these APIs can be found from the [API Designer](/learn/assets/API_Access.png) after the import of the service. 
+WaveMaker automatically generates UI functionality for create, read, update, delete (CRUD) operations if you import REST API endpoints via Swagger/OpenAPI. For more information, see [Import REST APIs via Swagger](/learn/app-development/services/api-designer/import-rest-apis-swagger).
+
+A comprehensive list of these APIs can be found from the [API Designer](/learn/assets/API_Access.png) after the import of the service.
 
 :::note
 Since the service needs to be invoked to fetch the data, the widgets bound to these variables will display values only at run-time, not in Studio mode.
@@ -19,9 +21,45 @@ Since the service needs to be invoked to fetch the data, the widgets bound to th
 
 **Mobile**: List with Form
 
-## Variable Creation
+## How to Create a CRUD Variable
 
-Drag and drop a widget on the canvas. For example, in the following image, a Datatable widget is used. CRUD variable supports 
+You can create a CRUD variable by using the following two approaches.
+
+1. Create a CRUD variable from a Variable Dialog.
+2. Create a CRUD variable by drag-n-drop of the [supported widget](#supported-widgets).
+
+### Using Variable Dialog
+
+1. Select **Variable** from the workspace toolbar.
+
+![variable creation](/learn/assets/var_sel.png)
+
+2. Click **New Variable** from the Variable Dialog.
+
+![new variable](/learn/assets/var_new.png)
+
+3. Select **Imported APIs** as a target action for the Variable.
+
+![select imported api](/learn/assets/select-imported-api.png)
+
+4. In the new Variable dialog, configure the properties for the variable.
+
+![create crud variable](/learn/assets/create-crud-variable.png)
+
+:::note
+You can create a service variable to perform one operation at once using **Other Endpoints**. For more information, see [Service Variable for Imported APIs](/learn/app-development/variables/web-service#service-variable-for-imported-apis).
+:::
+
+- **Service**: Select the [Imported Service](/learn/app-development/services/api-designer/import-rest-apis-swagger#importing-swagger).
+- **Type**: Select the **Type** as `Entities (CRUD)`.
+- **Entity**: Select the entity from the dropdown. Create, Read, Update, and Delete methods group into a single entity. For more information, see [Entity and Endpoints](/learn/app-development/services/api-designer/import-rest-apis-swagger#entity-and-endpoints).
+- **Name**: Set by default, but you can modify it.
+- **Owner**: The scope of the Variable. **Page** is the default option. You can choose **Application** to make the variable available across the app.
+- Click **Done** to complete the variable creation process.
+
+### Using Drag and Drop of Widget
+
+Drag and drop the [supported-widget](#supported-widgets) on the canvas. For example, in the following image, a Datatable widget is used to create a CRUD variable.
 
 ![datatable crud variable](/learn/assets/datatable-crud-variable.png)
 
@@ -32,20 +70,26 @@ Drag and drop a widget on the canvas. For example, in the following image, a Dat
 - Select **Form As Dialog** or **Form Below**, and Click **Next**.
 - Select pagination, click **Next**.
 - Configure table columns. These fields can also be configured using **Advanced Settings** from the **Properties** panel.
-- Select template. 
+- Select template.
 - Configure Form fields. These fields can also be configured using **Advanced Settings** from the **Properties** panel.
 - Click **Done**.
 
 For more information to create Datatable, see [Create a Datatable](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage).
 
-### Edit Variable from Variable Dialog
+### Variable Properties and Events
 
 ![variable creation](/learn/assets/var_sel.png)
 
+You will be directed to the Variables page, with the new variable listed. You can see the following options.
+
 ![crud variable properties](/learn/assets/crud-var-properties.png)
 
-- **Name**: You can modify Name.
-- **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
+1. **Name**: You can modify the variable name.
+2. **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
+3. A new **Imported APIs** Variable created with the default exposed method/selected method as a target.
+4. The **Properties** tab contains all the properties like behavior and spinner behavior. [Learn more](#properties).
+5. The **Data** tab contains the fields serving as **Input Fields** for the API.
+6. The **Events** tab contains the events that can be configured to trigger any action. [Learn more](#events).
 
 ## Properties
 
