@@ -26,7 +26,7 @@ You can create a CRUD variable by using the following two approaches.
 1. Create a CRUD variable from a Variable Dialog.
 2. Create a CRUD variable by drag-n-drop of the [supported widget](#supported-widgets).
 
-### Via Variable Dialog
+### Using Variable Dialog
 
 1. Select **Variable** from the workspace toolbar.
 
@@ -51,7 +51,7 @@ You can create a CRUD variable by using the following two approaches.
 - **Owner**: The scope of the Variable. **Page** is the default option. You can choose **Application** to make the variable available across the app.
 - Click **Done** to complete the variable creation process.
 
-### Via Drag and Drop of Widget
+### Using Drag and Drop of Widget
 
 Drag and drop the [supported-widget](#supported-widgets) on the canvas. For example, in the following image, a Datatable widget is used to create a CRUD variable.
 
