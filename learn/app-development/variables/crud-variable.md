@@ -7,6 +7,8 @@ sidebar_label: "CRUD Variable"
 
 For every service imported into the app, the APIs exposed by the service can be accessed to perform many operations with it. A variable needs to be created to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
 
+WaveMaker automatically generates UI functionality for create, read, update, delete (CRUD) operations if you import REST API endpoints via Swagger/OpenAPI. For more information, see [Import REST APIs via Swagger](/learn/app-development/services/api-designer/import-rest-apis-swagger).
+
 A comprehensive list of these APIs can be found from the [API Designer](/learn/assets/API_Access.png) after the import of the service.
 
 :::note
@@ -43,6 +45,10 @@ You can create a CRUD variable by using the following two approaches.
 4. In the new Variable dialog, configure the properties for the variable.
 
 ![create crud variable](/learn/assets/create-crud-variable.png)
+
+:::note
+You can create a service variable to perform one operation at once using **Other Endpoints**. For more information, see [Service Variable for Imported APIs](/learn/app-development/variables/web-service#service-variable-for-imported-apis).
+:::
 
 - **Service**: Select the [Imported Service](/learn/app-development/services/api-designer/import-rest-apis-swagger#importing-swagger).
 - **Type**: Select the **Type** as `Entities (CRUD)`.

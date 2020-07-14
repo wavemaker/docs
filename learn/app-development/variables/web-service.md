@@ -17,8 +17,8 @@ Since the service needs to be invoked to fetch the data, the widgets bound to th
 
 The **data source** for these Variables comes from imported REST and SOAP services. You can create a Service variable by using the following two approaches depending on the source of the data.
 
-1. Service Variable for **Web Service** (REST APIs, SOAP, WebSocket)
-2. Service Variable for **Imported APIs** (Swagger/Open API)
+1. Service Variable for **[Web Service](/learn/app-development/services/web-services/web-services)** (REST APIs, SOAP, WebSocket)
+2. Service Variable for **[Imported APIs](/learn/app-development/services/api-designer/import-rest-apis-swagger)** (Swagger/Open API)
 
 :::important
 The process for creating a variable for WebSocket Service is the same as below, however, the properties and methods are different. For more information, see [WebSocket Variable](/learn/app-development/variables/websocket-variable/).
@@ -70,6 +70,10 @@ The data source for the Variable comes from the imported Services.
 4. In the new Variable dialog, configure the properties for the variable.
 
 ![swagger variable](/learn/assets/other-endpoints-variable.png)
+
+:::note
+You can create a CRUD variable to perform create, read, update, delete operations using the **Entities (CRUD)** option. For more information, see [Service Variable](/learn/app-development/variables/web-service#service-variable-for-imported-apis).
+:::
 
 - **Service**: Select the [Imported Service](/learn/app-development/services/api-designer/import-rest-apis-swagger#importing-swagger).
 - **Type**: Select the **Type** as `Other Endpoints`.

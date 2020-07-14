@@ -69,4 +69,4 @@ For more information, see [REST Services using OAuth 2.0](/learn/app-development
 
 When you successfully import a REST service, you can drag-and-drop the [supported](#supported-widgets) widgets to configure for CRUD-ready operations. To learn how to create a CRUD variable, see [Creating a CRUD Variable for REST Services](/learn/app-development/variables/crud-variable). 
 
-Also, you can create a service variable, and integrate it with widgets to perform one operation at once using a single endpoint. For more information, see [Service Variable](/learn/app-development/variables/web-service).
+Also, you can create a service variable, and integrate it with widgets to perform one operation at once using **Other Endpoints**. For more information, see [Service Variable for Imported APIs](/learn/app-development/variables/web-service#service-variable-for-imported-apis).
