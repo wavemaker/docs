@@ -5,7 +5,7 @@ sidebar_label: "CRUD Variable"
 ---
 ---
 
-For every service imported into the app, the APIs exposed by the service can be accessed to perform many operations with it. To create a CRUD variable, you can create a CRUD variable or drag-and-drop a widget to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
+For every service imported into the app, the APIs exposed by the service can be accessed to perform many operations with it. A variable needs to be created to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
 
 A comprehensive list of these APIs can be found from the [API Designer](/learn/assets/API_Access.png) after the import of the service.
 
@@ -70,14 +70,20 @@ Drag and drop the [supported-widget](#supported-widgets) on the canvas. For exam
 
 For more information to create Datatable, see [Create a Datatable](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage).
 
-### Edit Variable
+### Variable Properties and Events
 
 ![variable creation](/learn/assets/var_sel.png)
 
+You will be directed to the Variables page, with the new variable listed. You can see the following options.
+
 ![crud variable properties](/learn/assets/crud-var-properties.png)
 
-- **Name**: You can modify Name.
-- **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
+1. **Name**: You can modify the variable name.
+2. **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
+3. A new **Imported APIs** Variable created with the default exposed method/selected method as a target.
+4. The **Properties** tab contains all the properties like behavior and spinner behavior. [Learn more](#properties).
+5. The **Data** tab contains the fields serving as **Input Fields** for the API.
+6. The **Events** tab contains the events that can be configured to trigger any action. [Learn more](#events).
 
 ## Properties
 

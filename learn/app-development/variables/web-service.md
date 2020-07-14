@@ -5,7 +5,7 @@ sidebar_label: "Service Variable"
 ---
 ---
 
-For every service imported into the app, the APIs exposed by the service can be accessed to perform many operations with it. A Variable needs to be created to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
+For every service imported into the app, the APIs exposed by the service can be accessed to perform many operations with it. A variable needs to be created to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
 
 A comprehensive list of these APIs can be found from the [API Designer](/learn/assets/API_Access.png) after the import of the service.
 
@@ -78,15 +78,20 @@ The data source for the Variable comes from the imported Services.
 - **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
 - Click **Done** to complete the variable creation process.
 
-### Variable Properties and events
+### Variable Properties and Events
+
+![variable creation](/learn/assets/var_sel.png)
 
 You will be directed to the Variables page, with the new variable listed. You can see the following options.
 
-1. a **Web Service** Variable is created,
-2. with the default exposed method/selected method as target
-3. the **properties tab** contains all the properties like _behavior_ and _spinner_ behavior. [Know more about properties](#properties).
-4. the **data tab** will contain the fields serving as _input fields_ for the API
-5. the **events** tab will contain the events that can be configured to trigger any action. [Know more about events](#events).
+![crud variable properties](/learn/assets/service-variable-properties.png)
+
+1. **Name**: You can modify the variable name.
+2. **Owner**: The scope of the Variable. Page is the default option. You can choose Application to make it available across the app.
+3. A new **Web Service** variable created with the default exposed method/selected method as a target.
+4. The **Properties** tab contains all the properties like behavior and spinner behavior. [Learn more](#properties).
+5. The **Data** tab contains the fields serving as **Input Fields** for the API.
+6. The **Events** tab contains the events that can be configured to trigger any action. [Learn more](#events).
 
 ## Properties
 
