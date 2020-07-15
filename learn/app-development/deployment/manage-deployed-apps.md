@@ -47,10 +47,10 @@ This option will be available only for deployed apps.
 
 Selecting an app from the App Portal or Manage App from Project Workspace will give you the details about the app. You can view the deployed app details.
 
-[![](/learn/assets/wm-release-management/details-of-managed-apps.png)](/learn/assets/wm-release-management/details-of-managed-apps.png)
+[![](/learn/assets/details-of-managed-apps.png)](/learn/assets/details-of-managed-apps.png)
 
 user can perform operation on the databse using DB shell provided by wavemaker
-[![](/learn/assets/wm-release-management/DB-shell.png)](/learn/assets/wm-release-management/DB-shell.png)
+[![](/learn/assets/DB-shell.png)](/learn/assets/DB-shell.png)
 
 1. From the header you can
     - **open** the deployed app URL
@@ -72,7 +72,7 @@ Once the app is tested and ready to go live, you can push the app from Demo to L
 - WME users can use the same steps to configure both Stage and Live phases.
 - WME users need to add instances for Stage and Live phases _before_ configuration if they want to select wavemaker cloud for stages configurations. ([see here for adding instances)](/learn/on-premise/configure/add-apps-capacity)
 
-[![](/learn/assets/wm-release-management/stage-and-live-configurations.png)](/learn/assets/wm-release-management/stage-and-live-configurations.png) 
+[![](/learn/assets/stage-and-live-configurations.png)](/learn/assets/stage-and-live-configurations.png) 
 
 ### Steps to Configure Stage and Live Phase
 
@@ -84,7 +84,7 @@ Once the app is tested and ready to go live, you can push the app from Demo to L
     - [click here for Google Cloud configuration](/learn/app-development/deployment/deployment-google-cloud/),
     - [click here for DigitalOcean configuration](/learn/app-development/deployment/deployment-to-digital-ocean/).
     
-    [![](/learn/assets/wm-release-management/deploy-to-stage-and-live.png)](/learn/assets/wm-release-management/deploy-to-stage-and-live.png)
+    [![](/learn/assets/deploy-to-stage-and-live.png)](/learn/assets/deploy-to-stage-and-live.png)
 3. Selecting WaveMaker Demo Cloud will initiate Live Pipeline setup and will auto-configure the phase and you can push the app to the Live phase.
 
 ## Push to Stage and Live
@@ -92,24 +92,24 @@ Once the app is tested and ready to go live, you can push the app from Demo to L
 Once the app is tested and phase has been configured, you can push the app from Demo to Stage and Stage to Live.
 first configure the type of provider for deployment.and push the application from one stage to other stage for deployment
 
-[![](/learn/assets/wm-release-management/stage-configuration-for-deploy.png)](/learn/assets/wm-release-management/stage-configuration-for-deploy.png)
+[![](/learn/assets/stage-configuration-for-deploy.png)](/learn/assets/stage-configuration-for-deploy.png)
 
 ### Steps to configure
 
 1. When you Push from Demo to Stage and Stage to Live, a dialog for configuration profiles will be displayed. The configuration settings from the Deployment phase is selected which can be modified or retained as it is to create the Live Configuration Profile.  
 
-[![](/learn/assets/wm-release-management/configure-for-push-to-stage.png)](/learn/assets/wm-release-management/configure-for-push-to-stage.png) 
+[![](/learn/assets/configure-for-push-to-stage.png)](/learn/assets/configure-for-push-to-stage.png) 
 
 :::tip
 You can also mention the version number and release notes for tracking purposes.  
 :::
 
-[![](/learn/assets/wm-release-management/release-version-at-stage.png)](/learn/assets/wm-release-management/release-version-at-stage.png)  
+[![](/learn/assets/release-version-at-stage.png)](/learn/assets/release-version-at-stage.png)  
 
 2. Once the configuration is set, you can Push the app from Demo to Stage and Stage to Live.
 3. Once deployed, you can view the current release along with release notes and the latest history. You can view all releases/history.
 
-[![](/learn/assets/wm-release-management/1.0-version-deployment.png)](/learn/assets/wm-release-management/1.0-version-deployment.png) 
+[![](/learn/assets/1.0-version-deployment.png)](/learn/assets/1.0-version-deployment.png) 
 
 Hover over the Live card to visit the Details page or launch the app. Selecting the **Details** page allows you to:
 - view the app details. Here, you can further:
@@ -129,5 +129,5 @@ Hover over the Live card to visit the Details page or launch the app. Selecting 
 ## App Versioning
 
 Once you have deployed and pushed the app to Live Phase, for various reasons like enhancements or due to requirement changes, your app can undergo changes. You can deploy the app with a change in version number. **Note** this will overwrite the previous version in Stage and Live phase.
- [![](/learn/assets/wm-release-management/release-version-2-at-stage.png)](/learn/assets/wm-release-management/release-version-2-at-stage.png) 
- [![](/learn/assets/wm-release-management/release-version-2-deployment.png)](/learn/assets/wm-release-management/release-version-2-deployment.png)
+ [![](/learn/assets/release-version-2-at-stage.png)](/learn/assets/release-version-2-at-stage.png) 
+ [![](/learn/assets/release-version-2-deployment.png)](/learn/assets/release-version-2-deployment.png)
