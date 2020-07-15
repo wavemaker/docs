@@ -618,7 +618,9 @@
             "how-tos/queries-dynamic-clause",
             "how-tos/connect-azure-sql-server",
             "app-development/services/database-services/download-jdbc-driver-jar",
-            "how-tos/fetch-default-number100-records-database"
+            "how-tos/fetch-default-number100-records-database",
+            "how-tos/one-many-relationship",
+            "how-tos/working-with-temporals"
           ],
 
           "Web services":
@@ -627,7 +629,8 @@
             "how-tos/consuming-existing-wm-api-into-another-wm-project",
             "how-tos/using-post-method-send-data-rest-api",
             "how-tos/request-response-processing-rest-services",
-            "how-tos/intercept-requests-responses-api-calls-one-place"
+            "how-tos/intercept-requests-responses-api-calls-one-place",
+            "how-tos/websocket-usage-chatroom-app"
           ],
 
           "Java services":
@@ -684,13 +687,15 @@
           "Mobile widgets":
           [
             "how-tos/using-search-widget-within-navbar",
-            "app-development/widgets/mobile-widgets/barcode-scanner"  
+            "app-development/widgets/mobile-widgets/barcode-scanner"
           ],
 
           "Mobile UI design":
           [
             "how-tos/splashscreens-icons",
-            "how-tos/using-cordova-plugins"
+            "how-tos/using-cordova-plugins",
+            "how-tos/sliding-leftnav-mobile-app",
+            "how-tos/mobile-app-using-bar-code"
           ],         
 
           "Cards":
@@ -705,10 +710,12 @@
             "how-tos/view-master-detail-data-records-using-data-table",
             "how-tos/add-master-detail-records-using-data-table",
             "how-tos/export-data-data-table",
+            "how-tos/export-data-data-table-2",
             "how-tos/dynamic-data-tables",
             "how-tos/data-table-column-bound-query",
             "how-tos/combining-columns-data-table",
             "how-tos/data-table-styling",
+            "how-tos/data-table-format-options",
             "how-tos/concurrency-record-locking-wavemaker"
           ],
 
@@ -733,7 +740,9 @@
             "how-tos/how-tos-live-form",            
             "how-tos/live-form-linking-another-widget",
             "how-tos/live-form-related-fields",
+            "how-tos/get-validation-messages-form",
             "how-tos/adding-master-detail-records-transaction",
+            "how-tos/adding-parent-child-records-single-transaction",
             "how-tos/using-cascading-select-autocomplete-live-form-fields",
             "how-tos/using-cascading-select-within-live-form",
             "how-tos/using-cascading-filter-populate-live-form",
@@ -758,6 +767,7 @@
 
           "FileUpload":
           [
+            "app-development/widgets/form-widgets/file-upload-basic-usage",
             "how-tos/file-upload-widget-operations",
             "how-tos/upload-file-save-database",
             "how-tos/file-upload-blob-data",
@@ -786,7 +796,8 @@
             "how-tos/configuring-select-widget-variable",
             "how-tos/configuring-select-widget-display-data-fields",
             "how-tos/configuring-select-widget-database-fields",
-            "how-tos/configuring-cascading-select"
+            "how-tos/configuring-cascading-select",
+            "how-tos/selection-widgets-use-case"
           ],
 
           "Progress Circle":
@@ -812,7 +823,8 @@
           "Container":
           [
             "how-tos/setting-partial-page-content-accordion-within-list",
-            "how-tos/setting-partial-page-content-panel-within-list-using-javascript"
+            "how-tos/setting-partial-page-content-panel-within-list-using-javascript",
+            "how-tos/how-tos-wizard"
           ],
 
           "Tree":

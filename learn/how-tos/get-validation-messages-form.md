@@ -2,22 +2,23 @@
 title: "How to Get Validation Messages from a Form"
 id: ""
 ---
+---
 
-In this article, you will learn how the ValidationMessages are exposed on a form. ValidationMessages are a list of objects which provides the validation details of the invalid field; this is an outbound property of the form. 
+In this article, you will learn how the ValidationMessages are exposed on a form.` ValidationMessages` are a list of objects which provides the validation details of the invalid field; this is an outbound property of the form.
+
+## Form Expressions
 
 Each object contains the following expressions:
 
 1. A field represents the field name.
 2. A Value represents the value of the field.
-3. The errorType represents the list of errors. For example, if the field is breaking the validation rule applies like the required value, minimum value, or max values.
+3. The `errorType` represents the list of errors. For example, if the field is breaking the validation rule applies like the required value, minimum value, or max values.
 4. The message represents the validation message on the field.
-5. The getElement method returns the elements specific to the field.
-6. The formName returns the name of the form, to which this field belongs.
-7. The fullyQualifiedName returns the full name of the form, which includes the name of the form and its the ancestor form names to which this field belongs.
+5. The `getElement` method returns the elements specific to the field.
+6. The `formName` returns the name of the form, to which this field belongs.
+7. The `fullyQualifiedName` returns the full name of the form, which includes the name of the form and its the ancestor form names to which this field belongs.
 
 The below screenshot shows the validation messages as outbound property to the form.
-
- 
 
 ### Use Case
 
@@ -37,12 +38,11 @@ In the following use case, the employee form contains a few required fields. The
 - Step-9: Bind the Card widget to the Model variable to show the validation messages. By doing this, the incorrect information gets highlighted when you submit the wrong information.
 - Step-10:
 
- 
+### Example
 
- 
+For example, we have a User Form which contains the Details Form. Details Form includes another form, i.e., Address Form. It is binding the validation Messages of UserForm to list and applying group based on the `formName` field. On submitting the form, Output will be the validationMessage response as shown below:
 
-For example, we have a User Form which contains the Details Form. Details Form includes another form, i.e., Address Form. It is binding the validation Messages of UserForm to list and applying group based on the formName field. On submitting the form, Output will be the validationMessage response as shown below:
-
+```js
 [{
 "Field":"state",
 "errorType":["required"],
@@ -78,3 +78,4 @@ For example, we have a User Form which contains the Details Form. Details Form i
 "formName":"UserForm",
 "fullyQualifiedFormName":"UserForm"
 }]
+```
