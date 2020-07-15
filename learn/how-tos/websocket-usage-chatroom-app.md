@@ -67,7 +67,7 @@ This variable will get employee details to be displayed against the chat message
         
             $scope.employeeDataonSuccess = function(variable, data) {
                 for (var i = 0; i < data.length; i++) {
-                    $scope.picUrls\[data\[i\].username\] = data\[i\].picurl;
+                    $scope.picUrls[data[i].username] = data[i].picurl;
                 }
             };
         
@@ -83,13 +83,13 @@ This variable will get employee details to be displayed against the chat message
     - Bind **Time **label to  Chatroom -> time field
 4. From the canvas
     - For the **Time** label Use Expression to set the time format to: _toDate: 'hh:mm:ss a'_
-    - For the **Picture** widget Use Expression to set it to the appropriate picurl: _picUrls\[Widgets.chatmessageList.currentItem.username\]_
+    - For the **Picture** widget Use Expression to set it to the appropriate picurl: _picUrls[Widgets.chatmessageList.currentItem.username]_
 5. Drag and drop a **Grid Layout** inside the Panel Footer. Set:
     - GridColumn1 width = 10
     - GridColumn2 width = 2
     - Drag and drop  **Textarea** in GridColumn 1
     - Drag and drop a **Button** in Grid Column 2. Set
-        - **Icon Class **\= _wi wi-paper-plane_
+        - **Icon Class **= _wi wi-paper-plane_
         - **on Click** to _chatroom.send_
 
 **Step 9:** Variable Binding.

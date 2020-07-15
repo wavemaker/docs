@@ -169,26 +169,26 @@ Steps to generate PDF file using Jasper reports are as follows:
       <property name="com.jaspersoft.studio.data.defaultdataadapter" value="JsonArrayDataAdapter.xml"/>
       <subDataset name="content" uuid="4563e834-a9e5-43b5-9f0a-824948c73c73">
         <field name="NAME" class="java.lang.String">
-          <fieldDescription><!\[CDATA\[name\]\]></fieldDescription>
+          <fieldDescription><![CDATA[name]]></fieldDescription>
         </field>
         <field name="LOCATION" class="java.lang.String">
-          <fieldDescription><!\[CDATA\[location\]\]></fieldDescription>
+          <fieldDescription><![CDATA[location]]></fieldDescription>
         </field>
         <field name="DEPTCODE" class="java.lang.String">
-          <fieldDescription><!\[CDATA\[deptCode\]\]></fieldDescription>
+          <fieldDescription><![CDATA[deptCode]]></fieldDescription>
         </field>
       </subDataset>
       <queryString language="json">
-        <!\[CDATA\[\]\]>
+        <![CDATA[]]>
       </queryString>
       <field name="NAME" class="java.lang.String">
-        <fieldDescription><!\[CDATA\[NAME\]\]></fieldDescription>
+        <fieldDescription><![CDATA[NAME]]></fieldDescription>
       </field>
       <field name="LOCATION" class="java.lang.String">
-        <fieldDescription><!\[CDATA\[LOCATION\]\]></fieldDescription>
+        <fieldDescription><![CDATA[LOCATION]]></fieldDescription>
       </field>
        <field name="DEPTCODE" class="java.lang.String">
-        <fieldDescription><!\[CDATA\[DEPTCODE\]\]></fieldDescription>
+        <fieldDescription><![CDATA[DEPTCODE]]></fieldDescription>
       </field>
       <title>
         <band height="70">
@@ -200,7 +200,7 @@ Steps to generate PDF file using Jasper reports are as follows:
             <textElement textAlignment="Center">
               <font size="22" isBold="true"/>
             </textElement>
-          <text><!\[CDATA\[Departments By City\]\]></text>
+          <text><![CDATA[Departments By City]]></text>
         </staticText>
     </band>
     </title>
@@ -211,7 +211,7 @@ Steps to generate PDF file using Jasper reports are as follows:
             <textElement textAlignment="Center">
               <font size="26" isBold="true"/>
             </textElement>
-          <text><!\[CDATA\[Departments Report\]\]></text>
+          <text><![CDATA[Departments Report]]></text>
           </staticText>
         </band>
       </pageHeader>
@@ -224,7 +224,7 @@ Steps to generate PDF file using Jasper reports are as follows:
                    <bottomPen lineWidth = "1.0" lineColor = "#CCCCCC" />
                 </box>
                 <text>
-                   <!\[CDATA\[\]\]>
+                   <![CDATA[]]>
                 </text>
             </staticText>
             <staticText>
@@ -234,14 +234,14 @@ Steps to generate PDF file using Jasper reports are as follows:
                    <font isBold = "true" />
                 </textElement>
     
-            <text><!\[CDATA\[LOCATION\]\]></text>
+            <text><![CDATA[LOCATION]]></text>
           </staticText>
           <staticText>
             <reportElement x="10" y="3" width="121" height="15" />
             <textElement textAlignment = "Center" verticalAlignment = "Middle">
               <font isBold ="true"/>
             </textElement>
-            <text><!\[CDATA\[NAME\]\]></text>
+            <text><![CDATA[NAME]]></text>
           </staticText>
           <staticText>
             <reportElement x="200" y="0" width="121" height="15" 
@@ -249,7 +249,7 @@ Steps to generate PDF file using Jasper reports are as follows:
            <textElement textAlignment = "Center" verticalAlignment = "Middle">
                    <font isBold = "true" />
                 </textElement>
-            <text><!\[CDATA\[DEPTCODE\]\]></text>
+            <text><![CDATA[DEPTCODE]]></text>
           </staticText>
         </band>
       </columnHeader>
@@ -259,20 +259,20 @@ Steps to generate PDF file using Jasper reports are as follows:
             <reportElement x="0" y="1" width="333" height="20" uuid="c3237c70-6b2e-43e3-aa21-5092d8b91afc"/>
             <jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
               <datasetRun subDataset="content" uuid="f5fdc6a3-736f-43ce-b549-cd7332d19eb8">
-                <dataSourceExpression><!\[CDATA\[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT\_DATA\_SOURCE}).subDataSource("content")\]\]></dataSourceExpression>
+                <dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("content")]]></dataSourceExpression>
               </datasetRun>
               <jr:listContents height="25" width="600">
                 <textField>
                   <reportElement x = "50" y = "3" width = "121" height = "15" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe"/>
-                  <textFieldExpression><!\[CDATA\[$F{NAME}\]\]></textFieldExpression>
+                  <textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
                 </textField>
                  <textField>
                   <reportElement x="400" y="3" width="121" height="15"  uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe"/>
-                  <textFieldExpression><!\[CDATA\[$F{LOCATION}\]\]></textFieldExpression>
+                  <textFieldExpression><![CDATA[$F{LOCATION}]]></textFieldExpression>
                 </textField>
                  <textField>
                   <reportElement x="200" y="3" width="121" height="15" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe"/>
-                  <textFieldExpression><!\[CDATA\[$F{DEPTCODE}\]\]></textFieldExpression>
+                  <textFieldExpression><![CDATA[$F{DEPTCODE}]]></textFieldExpression>
                 </textField>
               </jr:listContents>
             </jr:list>
@@ -298,7 +298,7 @@ Steps to generate PDF file using Jasper reports are as follows:
     import org.apache.commons.httpclient.HttpMethod;
     import org.apache.commons.httpclient.methods.GetMethod;
     
-    import java.io.\*;
+    import java.io.*;
     import java.util.HashMap;
     import javax.servlet.http.HttpServletResponse;
     import net.sf.jasperreports.engine.JasperReport;

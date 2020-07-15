@@ -10,7 +10,7 @@ In this section we will see how to add a sliding navigation to your Mobile App. 
 3. Add a container in this grid column and choose the Content property for the container widget from the properties panel as “leftnav”. Here, we have added an animation for the container widget as “slideInLeft”. You can choose any animation as per your choice. [![](/learn/assets/sliding_leftnav4.png)](/learn/assets/sliding_leftnav4.png) Hence, the markup should look as follows:
     
     <wm-header content="header" name="header" height="auto"></wm-header>
-        <wm-top-nav content="topnav" name="top\_nav1"></wm-top-nav>
+        <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
         <wm-content name="content">
             <wm-page-content columnwidth="12" name="mainContent" padding="unset 15px">
                 <wm-layoutgrid name="layoutgrid1">
@@ -62,5 +62,5 @@ In this section we will see how to add a sliding navigation to your Mobile App. 
 
 Mobile Widgets
 
-- [1\. How to use search widget within leftnav](/learn/how-tos/using-search-widget-within-navbar/)
-- [2\. How to add sliding leftnav](/learn/how-tos/sliding-leftnav-mobile-app/)
+- [1. How to use search widget within leftnav](/learn/how-tos/using-search-widget-within-navbar/)
+- [2. How to add sliding leftnav](/learn/how-tos/sliding-leftnav-mobile-app/)

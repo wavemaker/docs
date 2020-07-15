@@ -40,7 +40,7 @@ This feature is in Beta state and as such there are few limitations.
 - In case the Swipe Gesture functionality is hindering your app performance you can disable it. Go to the markup tab and add the attribute gestures = “off” to the widgets you want the swipe to be disabled. For example, to turn the swipe off for Left Panel, following would be the markup:
 
 ```   
-<wm-left-panel content="leftnav" name="left\_panel1" gestures ="off"></wm-left-panel>
+<wm-left-panel content="leftnav" name="left_panel1" gestures ="off"></wm-left-panel>
 ```
     
 

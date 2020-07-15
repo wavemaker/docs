@@ -52,7 +52,7 @@ Download the jsTree JQuery Plugin from [https://www.jstree.com/](https://www.jst
                 break;
             case "multiple":
             case "dots":
-                \_redraw();
+                _redraw();
                 break;
         }
     };
@@ -77,29 +77,29 @@ Download the jsTree JQuery Plugin from [https://www.jstree.com/](https://www.jst
         // });
     
         // select event
-        treeViewELe.on("select\_node.jstree", function(e, data) {
+        treeViewELe.on("select_node.jstree", function(e, data) {
             Prefab.onSelect(e, data);
         });
     
         // deselect event
-        treeViewELe.on("deselect\_node.jstree", function(e, data) {
+        treeViewELe.on("deselect_node.jstree", function(e, data) {
             Prefab.onDeselect(e, data);
         });
     
         // expand event
-        treeViewELe.on("open\_node.jstree", function(e, data) {
+        treeViewELe.on("open_node.jstree", function(e, data) {
             Prefab.onExpand(e, data);
         });
     
         // collapse event
-        treeViewELe.on("close\_node.jstree", function(e, data) {
+        treeViewELe.on("close_node.jstree", function(e, data) {
             Prefab.onCollapse(e, data);
         });
     }
     
     Function to redraw the tree view:
     
-    function \_redraw() {
+    function _redraw() {
         if (treeMapInstance) {
             treeMapInstance.redraw();
         }
@@ -107,47 +107,47 @@ Download the jsTree JQuery Plugin from [https://www.jstree.com/](https://www.jst
     
     Methods for the tree:
     
-    /\*
-     \* Method to select all nodes
-     \*/
+    /*
+     * Method to select all nodes
+     */
     Prefab.selectAllNodes = function() {
         if (treeMapInstance) {
-            treeMapInstance.select\_all();
+            treeMapInstance.select_all();
         }
     };
     
-    /\*
-     \* Deselect all nodes
-     \*/
+    /*
+     * Deselect all nodes
+     */
     Prefab.deselectAllNodes = function() {
         if (treeMapInstance) {
-            treeMapInstance.deselect\_all();
+            treeMapInstance.deselect_all();
         }
     };
     
-    /\*
-     \* Method for selecting a node in the tree by id.
-     \*/
+    /*
+     * Method for selecting a node in the tree by id.
+     */
     Prefab.selectNode = function(node, preventOpen) {
         if (treeMapInstance) {
-            treeMapInstance.select\_node(node, false, preventOpen);
+            treeMapInstance.select_node(node, false, preventOpen);
         }
     };
     
-    /\*
-     \* Method for deselecting a node in the tree.
-     \*/
+    /*
+     * Method for deselecting a node in the tree.
+     */
     Prefab.deselectNode = function(node) {
         if (treeMapInstance) {
-            treeMapInstance.deselect\_node(node);
+            treeMapInstance.deselect_node(node);
         }
     };
     
-    /\*
-     \* Re Draws the whole tree
-     \*/
+    /*
+     * Re Draws the whole tree
+     */
     Prefab.redraw = function() {
-        \_redraw();
+        _redraw();
     }
     
 7. Add a _wm-container tag_ with the name **treeViewContainer** in the Markup, as follows:
@@ -216,7 +216,7 @@ Finally, this Prefab needs data to render in the Tree format.
 
 1. For this, we have created a Model Variable with the following JSON structure:
     
-    \[
+    [
       {
         "id": 1,
         "text": "Root node",
@@ -224,8 +224,8 @@ Finally, this Prefab needs data to render in the Tree format.
           "opened": true
         },
         "icon": "",
-        "type": \[\],
-        "children": \[
+        "type": [],
+        "children": [
           {
             "id": 2,
             "text": "Child node 1",
@@ -237,7 +237,7 @@ Finally, this Prefab needs data to render in the Tree format.
           {
             "id": 3,
             "text": "Child node 2",
-            "children": \[
+            "children": [
               {
                 "id": 4,
                 "text": "Child node 2 - 1",
@@ -245,8 +245,8 @@ Finally, this Prefab needs data to render in the Tree format.
                   "opened": true
                 },
                 "icon": "",
-                "type": \[\],
-                "children": \[
+                "type": [],
+                "children": [
                   {
                     "id": 5,
                     "text": "Child node 2 - 1 - 1",
@@ -260,9 +260,9 @@ Finally, this Prefab needs data to render in the Tree format.
                     "text": "Child node 2 - 1 - 1",
                     "icon": "glyphicon glyphicon-flash"
                   }
-                \]
+                ]
               }
-            \]
+            ]
           },
           {
             "id": 7,
@@ -272,9 +272,9 @@ Finally, this Prefab needs data to render in the Tree format.
             },
             "icon": "glyphicon glyphicon-flash"
           }
-        \]
+        ]
       }
-    \]
+    ]
     
     [![](/learn/assets/jstree_prefab_appvar.png)](/learn/assets/jstree_prefab_appvar.png)
 2. Bind the above Variable to the Tree Data property of the Prefab: [![](/learn/assets/jstree_prefab_appdata.png)](/learn/assets/jstree_prefab_appdata.png) [![](/learn/assets/jstree_prefab_appbind.png)](/learn/assets/jstree_prefab_appbind.png)
@@ -282,11 +282,11 @@ Finally, this Prefab needs data to render in the Tree format.
 
 [Prefab Use Cases](/learn/app-development/widgets/use-cases-prefabs/)
 
-- [1\. Prefab to compare two strings](/learn/how-tos/create-simple-prefab/)
-- [2\. Prefab using 3rd Party UI Widgets](/learn/how-tos/create-prefab-using-third-party-ui-widgets/)
-- [3\. Prefab Using D3 & NVD3 Charts](/learn/how-tos/create-prefab-using-d3-nvd3-charts/)
-- [4\. Prefab Using D3 Library (DataMaps)](/learn/how-tos/create-prefab-using-d3-library-datamaps/)
-- [5\. Prefab using JQuery Plugin](#)
+- [1. Prefab to compare two strings](/learn/how-tos/create-simple-prefab/)
+- [2. Prefab using 3rd Party UI Widgets](/learn/how-tos/create-prefab-using-third-party-ui-widgets/)
+- [3. Prefab Using D3 & NVD3 Charts](/learn/how-tos/create-prefab-using-d3-nvd3-charts/)
+- [4. Prefab Using D3 Library (DataMaps)](/learn/how-tos/create-prefab-using-d3-library-datamaps/)
+- [5. Prefab using JQuery Plugin](#)
     - [i. Creation](#creation)
     - [ii. Usage](#usage)
         - [○ Invoking Methods](#methods)

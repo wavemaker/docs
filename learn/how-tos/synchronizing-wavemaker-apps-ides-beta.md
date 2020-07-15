@@ -118,7 +118,7 @@ However, by using the `init` command, the IDE changes will be lost.
 
 ## Prerequisites for Windows
 
-If you are using any IDE or programming editor of your choice, make sure to change the line separator or delimiter to Unix (\\n). **For example:** **In intellij IDEA :-** From the code Style panel, set the Line Separator field property from system-dependent to unix-style.
+If you are using any IDE or programming editor of your choice, make sure to change the line separator or delimiter to Unix (\n). **For example:** **In intellij IDEA :-** From the code Style panel, set the Line Separator field property from system-dependent to unix-style.
 
 [![](/learn/assets/IntelliJLineSeparator.png)](/learn/assets/IntelliJLineSeparator.png)
 

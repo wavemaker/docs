@@ -75,7 +75,7 @@ By default, three variables **networkInfo**, **datasyncPush** and **datasyncPul
 | **Operation** | **Behavior** | **Input Data** | **Events** | **Description** |
 | --- | --- | --- | --- | --- |
 | getOfflineChanges | none | none | On Success On Error | to fetch the changes made when the app was offline Return Values: {**'total'**: 0 **'pendingToSync'**: changeLogSet **'failedToSync'**: changeLogSet} |
-| lastPullInfo | Spinner Context and Message - to be displayed while pull is in progress | none | On Success On Error | get the last pull info Return Values: {'**databases**' : \[{ '**name**' : 'datbaseName', '**entities**': \[{ '**entityName**': '**entityName**', '**pulledRecordCount**': 0 }\], '**pulledRecordCount**' : 0 }\], '**totalPulledRecordCount**' : 0, '**startTime**' : Date, '**endTime**' : Date} |
+| lastPullInfo | Spinner Context and Message - to be displayed while pull is in progress | none | On Success On Error | get the last pull info Return Values: {'**databases**' : [{ '**name**' : 'datbaseName', '**entities**': [{ '**entityName**': '**entityName**', '**pulledRecordCount**': 0 }], '**pulledRecordCount**' : 0 }], '**totalPulledRecordCount**' : 0, '**startTime**' : Date, '**endTime**' : Date} |
 | lastPushInfo | Spinner Context and Message - to be displayed while pull is in progress | none | On Success On Error | get the last push info Return Values: {**'completedTaskCount'**: 0 **'endTime'**: 0 **'failedTaskCount'**: 0 **'startTime'**: 0 **'successfulTaskCount'**: 0 **'totalTaskCount'**: 0} |
 | pull | Request data on page load - to pull the data when the page is loaded Clear offline data before pull - to delete the whole offline data (other than BUNDLED data) before the pull Spinner Context and Message - to be displayed while pull is in progress | none | On Success On Error On Progress On Before | get the data from the server Return Values: {**'completedTaskCount'**: 0 **'inProgress'**: 0 **'totalTaskCount'**: 0} |
 | push | Spinner Context and Message - to be displayed while push is in progress | none | On Success On Error On Progress On Before | send the data to server Return Values: {**'completedTaskCount'**: 0 **'failedTaskCount'**: 0 **'inProgress'**: 0 **'successfulTaskCount'**: 0 **'totalTaskCount'**: 0} |
@@ -117,8 +117,8 @@ Case: A multi-user application for tracking personal tasks is to be created. Tas
 
 **Setup** The application with the specified functionality (except offline support) has been created.
 
-1. Import the project into your WaveMaker studio. [todo\_90](/learn/assets/ToDo_9_0.zip)
-2. Import the attached database. [todo\_dump](/learn/assets/ToDo_dump.zip)
+1. Import the project into your WaveMaker studio. [todo_90](/learn/assets/ToDo_9_0.zip)
+2. Import the attached database. [todo_dump](/learn/assets/ToDo_dump.zip)
 3. Run the project.
 4. Build an android app and check the application. There are two users _user1/password_, _user2/password_. User1 is having some tasks and user2 has no tasks.
 5. Check the app in both online and offline. In offline, the application fails with error ‘server call failed’.

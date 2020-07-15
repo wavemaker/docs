@@ -15,16 +15,16 @@ Ensure that the error message returned by the web service server meets the follo
 
 {
   "errors": {
-    "error": \[
+    "error": [
       {
         "id": null,
         "messageKey": "com.wavemaker.studio.json$UnexpectedError",
         "message": null,
-        "parameters": \[
-          "org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: asdasd near line 1, column 52 \[select count(\*) from com.testing.hrdb.User where   asdasd\]"
-        \]
+        "parameters": [
+          "org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: asdasd near line 1, column 52 [select count(*) from com.testing.hrdb.User where   asdasd]"
+        ]
       }
-    \]
+    ]
   }
 }
 
@@ -37,10 +37,10 @@ Ensure that the error message returned by the web service server meets the follo
     - add the message key and the appropriate message for the multiple languages.
     
     [![](/learn/assets/locale_error_msg.png)](/learn/assets/locale_error_msg.png)
-2. As can be seen in the above screenshot, the English version of the error message is “**Unexpected error "${0}"**,please **check server logs for more information**” where “_${0}_” in the message will be replaced by the “_parameters_” key returned in the error message JSON. Hence, as per the above sample error response shown, the message would be displayed as: “**Unexpected error "org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: asdasd near line 1, column 52 \[select count(\*) from com.testing.hrdb.User where asdasd\]" ,please check server logs for more information**”
+2. As can be seen in the above screenshot, the English version of the error message is “**Unexpected error "${0}"**,please **check server logs for more information**” where “_${0}_” in the message will be replaced by the “_parameters_” key returned in the error message JSON. Hence, as per the above sample error response shown, the message would be displayed as: “**Unexpected error "org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected AST node: asdasd near line 1, column 52 [select count(*) from com.testing.hrdb.User where asdasd]" ,please check server logs for more information**”
 
 [Localization Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
-- [1\. Localization in WaveMaker Apps](/learn/how-tos/localization-wavemaker-apps/)
-- [2\. Localization of Error Messages](#)
-- [3\. Localization of Data Table Column Headings](/learn/how-tos/localization-data-table-column-headings/)
+- [1. Localization in WaveMaker Apps](/learn/how-tos/localization-wavemaker-apps/)
+- [2. Localization of Error Messages](#)
+- [3. Localization of Data Table Column Headings](/learn/how-tos/localization-data-table-column-headings/)

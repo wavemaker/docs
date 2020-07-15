@@ -24,7 +24,7 @@ You can use the Rating widget to capture the input from the user as Widgets.rati
 
 1. Create a Static Variable of Entry Type, with Is List option selected and using the following JSON structure:
     
-    \[
+    [
       {
         "name": "Poor",
         "dataValue": "1"
@@ -45,7 +45,7 @@ You can use the Rating widget to capture the input from the user as Widgets.rati
         "name": "Excellent",
         "dataValue": "5"
       }
-    \]
+    ]
     
     [![rating_usage_statvar](/learn/assets/rating_usage_statvar.png)](/learn/assets/rating_usage_statvar.png)
 2. Drag and drop a Rating widget

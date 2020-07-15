@@ -36,7 +36,7 @@ Navigate to the Databases section and create your own database. For more inform
 To add multiple Child objects in the Model Variable, push the data into the Model Variable. To achieve this, select the Child form (from the Design Dialog) and navigate to the Events tab and choose **Javascript** for the **On Before Submit** event and add the below-specified code snippet:
 :::
 ```
- Page.dialog1\_childForm1Beforesubmit = function($event, widget, $data) {
+ Page.dialog1_childForm1Beforesubmit = function($event, widget, $data) {
     Page.Variables.child.addItem($data);
     Page.Widgets.dialog1.close();
  };

@@ -43,38 +43,38 @@ In the following use case, the employee form contains a few required fields. The
 
 For example, we have a User Form which contains the Details Form. Details Form includes another form, i.e., Address Form. It is binding the validation Messages of UserForm to list and applying group based on the formName field. On submitting the form, Output will be the validationMessage response as shown below:
 
-\[{
+[{
 "Field":"state",
-"errorType":\["required"\],
+"errorType":["required"],
 "message":"Enter the address",
 "formName":"addressForm",
 "fullyQualifiedFormName":"UserForm.DetailsForm.addressForm"
 },
 {
 "Field":"city",
-"errorType":\["required"\],
+"errorType":["required"],
 "Message":"",
 “formName":"addressForm",
 "fullyQualifiedFormName":"UserForm.DetailsForm.addressForm"
 },
 {
 "Field":"name",
-"errorType":\["required"\],
+"errorType":["required"],
 "message":"Enter the details",
 "formName":"DetailsForm",
 "fullyQualifiedFormName":"UserForm.DetailsForm"
 },
 {
 "Field":"age",
-"errorType":\["required"\],
+"errorType":["required"],
 "message":"Enter the details",
 "formName":"DetailsForm",
 "fullyQualifiedFormName":"UserForm.DetailsForm"
 },
 {
 "Field":"name",
-"errorType":\["required"\],
+"errorType":["required"],
 "message":"Enter user name",
 "formName":"UserForm",
 "fullyQualifiedFormName":"UserForm"
-}\]
+}]

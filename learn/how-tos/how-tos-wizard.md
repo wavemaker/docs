@@ -28,7 +28,7 @@ This is the set-up of an existing page - Getting Basic Details from the User f
 
 - **On Next**: Use Case – When the User is not Employed – On Blur Event of employed field In Personal Data Step when user tabs out after entering a value in employed form field of liveform On Blur event is fired. In the above use case mentioned the user would not want to go to next step to input Professional data as the user is not employed in which case the appropriate handler has to be plugged into the On Blur of the employed field. This example has a On Blur Javascript handler that does the following:
 
-Application.$controller("liveform2Controller", \["$scope",
+Application.$controller("liveform2Controller", ["$scope",
 function($scope) {
 "use strict";
 $scope.ctrlScope = $scope;
@@ -42,7 +42,7 @@ else
 $scope.Widgets.wizardstep2.enabledone = false;
 };
 }
-\]);
+]);
 
 - Gets the datavalue of the employed widget and assigns it to employed variable.
 - If the is employed datavalue is “No” it enables the Done button in this step itself as the user can complete the registration in step 1 itself without going to step 2.
@@ -52,8 +52,8 @@ $scope.Widgets.wizardstep2.enabledone = false;
 $scope.wizard1Done = function($isolateScope, steps) {
 var liveData = $scope.Widgets.liveform2.dataset.data;
 var ctrOfData = liveData.length;
-var profileData = $scope.Widgets.liveform2.dataset.data\[ctrOfData -
-1\];
+var profileData = $scope.Widgets.liveform2.dataset.data[ctrOfData -
+1];
 var userName = profileData.personByPerson.userName;
 $scope.Variables.UpdateRegistered.setInput('uid', userName);
 $scope.Variables.UpdateRegistered.update();

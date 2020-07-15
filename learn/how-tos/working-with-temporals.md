@@ -48,16 +48,16 @@ We will use a dialog to display the historical data for the selected Employee. T
 - Create a new Database CRUD Variable for Employee History table.
 - From the Data tab, using the bind icon set the employeeId to EmployeesTable1 (Data Table name, might differ for your example) -> selecteditem -> employeeid. This will ensure that the History data for the selected employee is fetched. [![](/learn/assets/dbtemp_ex3_var.png)](/learn/assets/dbtemp_ex3_var.png)
 - Drag and Drop a Design Dialog. This will be opened in a View.
-- Using the Use Expression, set the Title of the Dialog to 'Historical Data for: ' + Variables.SAMPLEEmployeesHistData.dataSet.data\[$i\].employeeName
+- Using the Use Expression, set the Title of the Dialog to 'Historical Data for: ' + Variables.SAMPLEEmployeesHistData.dataSet.data[$i].employeeName
 - Drag and drop a List widget and bind it to the EmployeesHist variable created earlier. We have used the Action List, with Basic Pagination and mapped the JobTitle widget to department field.
 - From the canvas
     
     - delete all the widgets except JobTitle
     - using Grid Layout and four Labels, design your Dialog as shown below
     - set two Label Captions to 'Original Value' and 'Modified Value on'
-    - using the bind icon, set one Label Caption to fieldDefs\[$index - 1\].sysBegin | toDate: 'EEE, dd MMM yyyy'
-    - using the bind icon, set one Label Caption to fieldDefs\[$index - 1\].department'
-    - In the above code _fieldDefs\[$index - 1\]_ is used to fetch values from the record that was added _after_ the current record.
+    - using the bind icon, set one Label Caption to fieldDefs[$index - 1].sysBegin | toDate: 'EEE, dd MMM yyyy'
+    - using the bind icon, set one Label Caption to fieldDefs[$index - 1].department'
+    - In the above code _fieldDefs[$index - 1]_ is used to fetch values from the record that was added _after_ the current record.
     
     [![](/learn/assets/dbtemp_ex3_dialog.png)](/learn/assets/dbtemp_ex3_dialog.png)
 - Go to the parent Page (you can choose it from the Page Structure or from the widget breadcrumb at the bottom of the canvas) and using the Advanced Settings for the Data Table, add a Custom Column to open the Dialog created in the previous step [![](/learn/assets/dbtemp_ex3_dt.png)](/learn/assets/dbtemp_ex3_dt.png)
@@ -68,7 +68,7 @@ We will use a dialog to display the historical data for the selected Employee. T
 1. Drag and drop a Date widget and set the Label caption as '_Employee Status As Of:_'
 2. Create a Variable from Database API for Employees table API findEmployeesHistory
     
-    - From the Data tab, using the bind icon next to systemClause Input Field from Use Expression bind it to 'as\_of ' + Widgets.date1.timestamp. This will ensure that the rows from the Employees History table are filtered based on the date selected by the user.
+    - From the Data tab, using the bind icon next to systemClause Input Field from Use Expression bind it to 'as_of ' + Widgets.date1.timestamp. This will ensure that the rows from the Employees History table are filtered based on the date selected by the user.
     
     [![](/learn/assets/dbtemp_ex5.png)](/learn/assets/dbtemp_ex5.png)
 3. Drag and drop a Data Table and set the data source to the variable created in the above step. We chose a Read-Only table to display Employee Id, Name and Department.

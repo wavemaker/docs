@@ -14,7 +14,7 @@ WaveMaker Apps can be exported as a WAR file. This generated file can be deploye
 
 ## WebSphere Setup
 
-1. Navigate to _WebSphere\_Home\_Directory\\bin_
+1. Navigate to _WebSphere_Home_Directory\bin_
 2. Execute command: server.bat start
 
 ## Preparing WAR File
@@ -23,5 +23,5 @@ From WaveMaker Studio, for the app that you want to deploy to WebSphere, Export 
 
 ## Deploy to WebSphere (Liberty Profile)
 
-- Copy prepared war file into `Websphere\_Home\_Directory\\usr\\servers\\defaultServer\\dropins\\war`
+- Copy prepared war file into `Websphere_Home_Directory\usr\servers\defaultServer\dropins\war`
 - Once success message is displayed in the terminal navigate to `http://localhost:8080/` to view the deployed application.

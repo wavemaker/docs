@@ -18,7 +18,7 @@ Show/Hide an image (say, tick image) in a page based on the condition. You can e
     
     //function to show the tick
     $scope.isShowTick = function(item) {
-    return item.actioncount > 0 ? true:(item.note\_text ? (item.note\_text !== '' ? true : false) : false);
+    return item.actioncount > 0 ? true:(item.note_text ? (item.note_text !== '' ? true : false) : false);
         }
     
 5. Run the application to test

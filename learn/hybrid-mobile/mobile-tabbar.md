@@ -20,10 +20,10 @@ Following are the limits:
 | Screen Size (px) | Limit of anchors |
 | --- | --- |
 | < 480 | 4 |
-| \>= 480 and < 768 | 5 |
-| \>= 768 and < 1024 | 7 |
-| \>= 1024 and < 2048 | 10 |
-| \>= 2048 | 12 |
+| >= 480 and < 768 | 5 |
+| >= 768 and < 1024 | 7 |
+| >= 1024 and < 2048 | 10 |
+| >= 2048 | 12 |
 
 Each anchor requires a label, Icon (icon CSS class) and link. A JSON array containing this information has to be bound to dataset property of the widget, you can create a [Model Variable](/learn/app-development/variables/model-variable/) for the same. Corresponding property names should then be mapped for action label, action icon, and an action link. More Button label and icon are configurable via properties panel. See below for use case example.
 
@@ -63,7 +63,7 @@ $scope.form1Beforesubmit = function ($event, $isolateScope, $data) {
 //$data has the data of the all widgets inside the form. This data can be modified and validated before sending the request 
 
         function isValidData(data) {
-            /\*restrict password to be minimum of 6 characters\*/
+            /*restrict password to be minimum of 6 characters*/
             if (data.password) {
                 if (data.password.length < 6) {
                     return {
@@ -101,7 +101,7 @@ We will create navigation for the following music app pages using tabbar.
 
 3. Use the TEXT EDITOR under the JSON section to enter the following structure. This structure builds the list as given above. _Note_: In WaveMaker apps, link to an app page with name ‘pageName’ is ‘#/pageName’
     ```
-    \[{
+    [{
     	"label" : "Songs",
     	"icon" : "fa fa-music",
     	"link" : "#/Songs"
@@ -125,7 +125,7 @@ We will create navigation for the following music app pages using tabbar.
     	"label" :"Account",
     	"icon" : "wi wi-account-box",
     	"link" : "#/Account"
-    }\]
+    }]
     ```
 
 ## Step 2: Design

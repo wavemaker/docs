@@ -37,7 +37,7 @@ Before trying to customize the app Theme, it is recommended that you familiarise
 
 @font-family-sans-serif:  'robotoregular', 'Arial', sans-serif;
 @font-family-serif:       'robotoregular', 'Arial', sans-serif;
-//\*\* Default monospace fonts for \`<code>\`, \`<kbd>\`, and \`<pre>\`.
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   'robotoregular', 'Arial', sans-serif;
 @font-family-base:        @font-family-sans-serif;
 ```
@@ -110,8 +110,8 @@ Some of Bootswatch themes might not have all these variables defined.
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
 | Cards |  | .app-card |  |  |
-| Header Background Color | style.less | .app-card-header | \- | transparent |
-| Text Color | style.less | .card-title | \- | #333 |
+| Header Background Color | style.less | .app-card-header | - | transparent |
+| Text Color | style.less | .card-title | - | #333 |
 
 ## Style Data Table Widget
 
@@ -175,7 +175,7 @@ Some of Bootswatch themes might not have all these variables defined.
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
 | Accordion |  | .app-accordion |  |  |
-| Background Color | style.less | .app-accordion-panel | \- | #fff |
+| Background Color | style.less | .app-accordion-panel | - | #fff |
 | Heading Background Color | style.less | .panel-heading |  | transparent |
 
 ## Style Panel Widget
@@ -209,11 +209,11 @@ Some of Bootswatch themes might not have all these variables defined.
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
 | Wizard |  | .app-wizard |  |  |
-| Background Color | style.less |  | \- | #fff |
-| Heading Background Color | style.less | .app-wizard-heading | \- | transparent |
-| Current Step Title Color | style.less | .step-title | \- | #448AFF |
-| Active Step Background Color | style.less | .app-wizard-step.active a | \- | #448AFF |
-| Active Step Text Color | style.less | .app-wizard-step.active a | \- | #fff |
+| Background Color | style.less |  | - | #fff |
+| Heading Background Color | style.less | .app-wizard-heading | - | transparent |
+| Current Step Title Color | style.less | .step-title | - | #448AFF |
+| Active Step Background Color | style.less | .app-wizard-step.active a | - | #448AFF |
+| Active Step Text Color | style.less | .app-wizard-step.active a | - | #fff |
 
 ## Style Button Widget
 
@@ -246,7 +246,7 @@ Some of Bootswatch themes might not have all these variables defined.
 | --- | --- | --- | --- | --- |
 | Calendar |  |  |  |  |
 | Text Color | style.less | .app-calendar | @wm-calendar-text-color | #ccc |
-| Current Date Text Color | style.less | .fc-today | \- | #448AFF |
+| Current Date Text Color | style.less | .fc-today | - | #448AFF |
 
 ## Style Date Widget
 
@@ -262,8 +262,8 @@ Some of Bootswatch themes might not have all these variables defined.
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
 | Switch |  | .app-switch |  |  |
-| Border Color | style.less | .btn | \- | #ddd |
-| Active Background Color | style.less | .app-switch-overlay | \- | #448AFF |
+| Border Color | style.less | .btn | - | #ddd |
+| Active Background Color | style.less | .app-switch-overlay | - | #448AFF |
 
 ## Style Text Widget
 
@@ -328,9 +328,9 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
 | Spinner |  | .app-spinner |  |  |
-| Background Color | style.less |  | \- | transparent |
-| Text Color | style.less | .spinner-text | \- | #448AFF |
-| Icon Color | style.less | .spinner-image | \- | #448AFF |
+| Background Color | style.less |  | - | transparent |
+| Text Color | style.less | .spinner-text | - | #448AFF |
+| Icon Color | style.less | .spinner-image | - | #448AFF |
 
 ## Style Dropdown Menu Widget
 
@@ -440,10 +440,10 @@ This is the widget used to display the [Notification messages](/learn/app-develo
 | **Property** | **File Name** | **Class Name** | **Variable Name** | **Example** |
 | --- | --- | --- | --- | --- |
 | Mobile Segmented Control |  | .app-segmented-control |  |  |
-| Background Color | style.less | .btn-group | \- | #448AFF |
-| Text Color | style.less | .btn | \- | #f5f5f5 |
-| Active border Color | style.less | .btn.active | \- | #fff |
-| Active Text Color | style.less | .btn.active | \- | #fff |
+| Background Color | style.less | .btn-group | - | #448AFF |
+| Text Color | style.less | .btn | - | #f5f5f5 |
+| Active border Color | style.less | .btn.active | - | #fff |
+| Active Text Color | style.less | .btn.active | - | #fff |
 
 ## Style Tab Bar (Mobile)
 

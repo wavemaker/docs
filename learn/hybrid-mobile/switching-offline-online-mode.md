@@ -20,13 +20,13 @@ A tag in _index.html_ called ‘**wm-network-info-toaster**’ will display the 
 
 | Key | Message |
 | --- | --- |
-| LABEL\_HIDE\_NETWORK\_INFO | Hide |
-| LABEL\_CONNECT\_TO\_SERVICE | Connect |
-| MESSAGE\_SERVICE\_NOT\_AVAILABLE | Service is not reachable. |
-| MESSAGE\_NETWORK\_NOT\_AVAILABLE | Network not available. |
-| MESSAGE\_SERVICE\_AVAILABLE | Service is available. |
-| MESSAGE\_SERVICE\_CONNECTING | Connecting to server. |
-| MESSAGE\_SERVICE\_CONNECTED | You are online. |
+| LABEL_HIDE_NETWORK_INFO | Hide |
+| LABEL_CONNECT_TO_SERVICE | Connect |
+| MESSAGE_SERVICE_NOT_AVAILABLE | Service is not reachable. |
+| MESSAGE_NETWORK_NOT_AVAILABLE | Network not available. |
+| MESSAGE_SERVICE_AVAILABLE | Service is available. |
+| MESSAGE_SERVICE_CONNECTING | Connecting to server. |
+| MESSAGE_SERVICE_CONNECTED | You are online. |
 
 **NOTES**:
 

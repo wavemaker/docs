@@ -11,23 +11,23 @@ id: ""
 - List of database match modes for filter condition. 
 
 ``` 
-"DATABASE\_MATCH\_MODES": {
-"start"            : "STARTING\_WITH",
-"end"              : "ENDING\_WITH",
+"DATABASE_MATCH_MODES": {
+"start"            : "STARTING_WITH",
+"end"              : "ENDING_WITH",
 "anywhere"         : "CONTAINING",
 "exact"            : "EQUALS",
-"notequals"        : "NOT\_EQUALS",
+"notequals"        : "NOT_EQUALS",
 "between"          : "BETWEEN",
 "in"               : "IN",
-"lessthan"         : "LESS\_THAN",
-"lessthanequal"    : "LESS\_THAN\_OR\_EQUALS",
-"greaterthan"      : "GREATER\_THAN",
-"greaterthanequal" : "GREATER\_THAN\_OR\_EQUALS",
+"lessthan"         : "LESS_THAN",
+"lessthanequal"    : "LESS_THAN_OR_EQUALS",
+"greaterthan"      : "GREATER_THAN",
+"greaterthanequal" : "GREATER_THAN_OR_EQUALS",
 "null"             : "NULL",
-"isnotnull"        : "IS\_NOT\_NULL",
+"isnotnull"        : "IS_NOT_NULL",
 "empty"            : "EMPTY",
-"isnotempty"       : "IS\_NOT\_EMPTY",
-"nullorempty"      : "NULL\_OR\_EMPTY"
+"isnotempty"       : "IS_NOT_EMPTY",
+"nullorempty"      : "NULL_OR_EMPTY"
 }
 ```   
 
@@ -37,15 +37,15 @@ Depending upon the type of the data you need to use either the match mode (left 
 
 ```js
 /* if filter field is of type string */
-        inputData.<string\_field\_name> = {
+        inputData.<string_field_name> = {
             'value':'<value>',
             'matchMode': 'notequals'
         }
 
 /* if filter field is of type Integer */
-        inputData.<integer\_field\_name> = {
+        inputData.<integer_field_name> = {
             'value':'<value>',
-            'filterCondition': 'NOT\_EQUALS'
+            'filterCondition': 'NOT_EQUALS'
         }
 ```
 In this example, we use the following JavaScript code to filter the records from Login `CRUD Variable` to fetch records with ID less than or equal to a text value. 
@@ -54,7 +54,7 @@ In this example, we use the following JavaScript code to filter the records from
 Page.LoginDataonBeforeUpdate = function (variable, inputData) {
     inputData.id = {
         'value': Page.Widgets.text1.datavalue,
-        'filterCondition': 'LESS\_THAN\_OR\_EQUALS',
+        'filterCondition': 'LESS_THAN_OR_EQUALS',
         'type': 'INTEGER'
     };
 ```

@@ -23,7 +23,7 @@ Deployment has been tested on JBoss WildFly versions `11.0.0.CR1` and `10.1.0.Fi
 
 #### Start JBoss Server
 
-- Navigate to `\jboss-[version]\jboss-[version]\bin`.
+- Navigate to `jboss-[version]jboss-[version]bin`.
     - Windows: Double click on _standalone.bat_ file to start JBoss server
     - Linux: Double click on _standalone.sh_ file to start JBoss server
 - Open Browser and navigate to `http://localhost:9990` as JBoss by default starts in 9990 port.
@@ -43,7 +43,7 @@ The screenshots from JBoss website were current at the time of documentation. Th
 
 ### JBoss-WildFly
 
-- Copy prepared war file into JBoss home dir\\standalone\\deployments
+- Copy prepared war file into JBoss home dir\standalone\deployments
 - Open JBoss terminal and check app deployment logs for deployment status
 - Once success message is displayed in the terminal navigate to `http://localhost:8080/` to view the deployed application.
 
@@ -74,7 +74,7 @@ The screenshots from JBoss website were current at the time of documentation. Th
 </module>
 ```
     
-- Open standalone.xml file in '..Jboss home directory\\standalone\\configuration'.
+- Open standalone.xml file in '..Jboss home directory\standalone\configuration'.
 - Add following details in profile.
 ```    
 <subsystem xmlns="urn:jboss:domain:datasources:1.2">
