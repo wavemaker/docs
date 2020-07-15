@@ -15,7 +15,7 @@ The following is the JavaScript function used as the callback event for on befor
  Page.NorthwindProductsDataonBeforeUpdate = function(variable, data) {
         data.standardCost = {
             'value': Page.Widgets.radioset1.datavalue,
-            'filterCondition': 'LESS\_THAN\_OR\_EQUALS',
+            'filterCondition': 'LESS_THAN_OR_EQUALS',
             'type': 'INTEGER'
         }
     };

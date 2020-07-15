@@ -8,7 +8,7 @@ We will see how the content of a Panel can be set to a Partial Page. We will be 
 ```
 $scope.panel1Expand = function($event, $isolateScope, item, currentItemWidgets) {
     debugger;
-    \_.forEach($('\[name="livelist1"\]> ul .app-panel'), function(object) {
+    _.forEach($('[name="livelist1"]> ul .app-panel'), function(object) {
         $(object).isolateScope().expanded = false;
     });
     currentItemWidgets.panel1.expanded = true;

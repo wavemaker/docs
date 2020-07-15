@@ -34,7 +34,7 @@ A typical page layout with mobile navbar, tabbar and content have the following 
 
 [![](/learn/assets/page_layout_files_mobile.png)](/learn/assets/page_layout_files_mobile.png)
 
-Widgets can be added to the _page\_content._ The widgets in a container can be left-aligned, right-aligned or centered. navbar and tabbar are widgets which can be customized.
+Widgets can be added to the _page_content._ The widgets in a container can be left-aligned, right-aligned or centered. navbar and tabbar are widgets which can be customized.
 
 ### Container Widgets
 

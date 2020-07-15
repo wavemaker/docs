@@ -19,11 +19,11 @@ Here we will see how to create a dynamic grid based on the metadata returned fro
 1. Create two [SELECT **queries**](/learn/app-development/services/database-services/working-with-queries) - one to retrieve the data from the DEPARTMENT entity and other to retrieve the data from USER entity. **Note**: We have written simple SELECT statements as part of this example. However, you can create queries as per your requirement.
     1. DeptData:
         
-        select \* from DEPARTMENT
+        select * from DEPARTMENT
         
     2. UserData:
         
-        select \* from USER
+        select * from USER
         
 2. [Create a Database API variables](/learn/assets/var_sel.png) for the queries created above. Call them, say DeptData and UserData **Note**: Make sure you have checked the **Request Data on Page Load** option for the variables created above. [![](/learn/assets/dynamic_grid1.png)](/learn/assets/dynamic_grid1.png)
 3. Drag and drop two **Button** widgets onto the canvas. Set the **Caption** property as _Show Department Data_ and _Show User Data_.
@@ -46,13 +46,13 @@ Using the above implementation steps, you will be able to successfully change th
 
 [Data Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
 
-- [1\. Basic Table Usage](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage/)
-- [2\. How to customise table actions](/learn/how-tos/data-table-actions/)
-- [3\. How to represent data table columns using widgets](/learn/how-tos/data-table-widget-representations/)
-- [4\. How to format data table column](/learn/how-tos/data-table-format-options/)
-- [5\. How to apply styles (generic and conditional) to data table](/learn/how-tos/data-table-styling/)
-- [6\. How to view master-detail record using a data table](/learn/how-tos/view-master-detail-data-records-using-data-table/)
-- [7\. How to add master-detail record using a data table](/learn/how-tos/add-master-detail-records-using-data-table/)
-- [8\. How to export data using a data table](/learn/how-tos/export-data-data-table/)
-- [9\. How to create a dynamic data table](/learn/how-tos/dynamic-data-tables/)
-- [10\. How to bind column of a data table to query variable](/learn/how-tos/data-table-column-bound-query/)
+- [1. Basic Table Usage](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage/)
+- [2. How to customise table actions](/learn/how-tos/data-table-actions/)
+- [3. How to represent data table columns using widgets](/learn/how-tos/data-table-widget-representations/)
+- [4. How to format data table column](/learn/how-tos/data-table-format-options/)
+- [5. How to apply styles (generic and conditional) to data table](/learn/how-tos/data-table-styling/)
+- [6. How to view master-detail record using a data table](/learn/how-tos/view-master-detail-data-records-using-data-table/)
+- [7. How to add master-detail record using a data table](/learn/how-tos/add-master-detail-records-using-data-table/)
+- [8. How to export data using a data table](/learn/how-tos/export-data-data-table/)
+- [9. How to create a dynamic data table](/learn/how-tos/dynamic-data-tables/)
+- [10. How to bind column of a data table to query variable](/learn/how-tos/data-table-column-bound-query/)

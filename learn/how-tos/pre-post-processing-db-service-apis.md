@@ -24,7 +24,7 @@ When a database is imported into a WaveMaker app, Java code with Spring based RE
 There are 3 layers in the generated source code:
 
 - **Layer 1 : REST Controller** responsible for transporting the data between client and server, authorization of APIs & marshalling and unmarshalling of model to JSON etc.
-- **Layer 2: Service Layer** \- responsible for validating the inputs and transaction management
+- **Layer 2: Service Layer** - responsible for validating the inputs and transaction management
 - **Layer 3: DAO Layer** - responsible for interacting with the underlying database. This code uses Hibernate framework. 
 
 The diagram below depicts the Layered Architecture mentioned above:

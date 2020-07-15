@@ -33,15 +33,15 @@ We have used the following code snippets:
 - JavaScript for the OnBeforeDatasetReady event:
     
     Page.EmployeeVaronBeforeDatasetReady = function(variable, data) {
-        var dataByMonth = \_.groupBy(data, function(datum) { 
+        var dataByMonth = _.groupBy(data, function(datum) { 
             //getting the employees grouped by their birth month
             return new Date(datum.birthdate).getMonth();
         });
-        data = \[\];
-        \_.each(dataByMonth, function(employees, month) { 
+        data = [];
+        _.each(dataByMonth, function(employees, month) { 
             //for each of the month, getting the array of employees born on that month.
             data.push({
-                'birth\_month': month,
+                'birth_month': month,
                 'employees': employees
             });
         });
@@ -53,10 +53,10 @@ We have used the following code snippets:
 
 [List Use Cases](/learn/app-development/widgets/datalive/list/list-use-cases/)
 
-- [1\. List Basic Usage](/learn/app-development/widgets/datalive/list/list-basic-usage/)
-- [2\. How to group list items](/learn/how-tos/list-grouped/)
-- [3\. How to group list items based upon multiple fields](/learn/how-tos/list-multi-grouped/)
-- [4\. How to include data table within a list](/learn/how-tos/list-data-table/)
-- [5\. How to build editable list using live form](/learn/how-tos/building-editable-list/)
-- [6\. How to build list from the selected item of another list](/learn/how-tos/building-cascading-lists/)
-- [7\. How to access list items](/learn/how-tos/list-item-access/)
+- [1. List Basic Usage](/learn/app-development/widgets/datalive/list/list-basic-usage/)
+- [2. How to group list items](/learn/how-tos/list-grouped/)
+- [3. How to group list items based upon multiple fields](/learn/how-tos/list-multi-grouped/)
+- [4. How to include data table within a list](/learn/how-tos/list-data-table/)
+- [5. How to build editable list using live form](/learn/how-tos/building-editable-list/)
+- [6. How to build list from the selected item of another list](/learn/how-tos/building-cascading-lists/)
+- [7. How to access list items](/learn/how-tos/list-item-access/)

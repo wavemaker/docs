@@ -50,7 +50,7 @@ Using List MethodsList has few methods exposed on widget scope which can be acce
     
 - To interact with widgets of selected item:
     
-    $scope.Widgets.EmployeeList.selectedItemWidgets\[0\].Name.caption = ‘Eric’; 
+    $scope.Widgets.EmployeeList.selectedItemWidgets[0].Name.caption = ‘Eric’; 
     //Changes caption for Name widget of selected item to ‘Eric’.
     
 - Modify selected item:

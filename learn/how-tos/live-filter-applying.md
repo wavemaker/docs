@@ -13,7 +13,7 @@ id: ""
 
 [Live Filter Use Cases](/learn/app-development/widgets/datalive/livefilter/livefilter-use-cases/)
 
-- [1\. Basic Usage Scenario](/learn/app-development/widgets/datalive/livefilter/live-filter-basic-usage/)
-- [2\. How to Apply Live Filter to a Data Table/Chart](/learn/how-tos/live-filter-applying/)
-- [3\. How to build a filtering based upon multiple values](/learn/how-tos/live-filter-multiple-values/)
-- [4\. How to build a filtering based upon a range of values](/learn/how-tos/live-filter-range-filter/)
+- [1. Basic Usage Scenario](/learn/app-development/widgets/datalive/livefilter/live-filter-basic-usage/)
+- [2. How to Apply Live Filter to a Data Table/Chart](/learn/how-tos/live-filter-applying/)
+- [3. How to build a filtering based upon multiple values](/learn/how-tos/live-filter-multiple-values/)
+- [4. How to build a filtering based upon a range of values](/learn/how-tos/live-filter-range-filter/)

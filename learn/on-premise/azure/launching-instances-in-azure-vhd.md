@@ -79,7 +79,7 @@ Applies for Workspace Virtual Machine / AppDeployment Virtual Machine
 [![generate sas](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/generate-sas.jpg)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/generate-sas.jpg)
 
 - Copy the vhd file from local to respective created storage account container. use the following example for copying the vhd to container.
-- azcopy copy "local\path\filename.vhd" "container url and sas" --blob-type PageBlob
+- azcopy copy "localpath\filename.vhd" "container url and sas" --blob-type PageBlob
 - Example:
 
 ```bash

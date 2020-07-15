@@ -25,7 +25,7 @@ sudo npm install -g cordova
 - on Windows:
 
 ```
-C:\>npm install -g cordova
+C:>npm install -g cordova
 ```
 
 For more information about installing the Cordova CLI, see [Installing the Cordova CLI](https://cordova.apache.org/docs/en/latest/guide/cli/#installing-the-cordova-cli).

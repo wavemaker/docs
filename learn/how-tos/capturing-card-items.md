@@ -21,5 +21,5 @@ id: ""
 
 [Cards Use Cases](/learn/app-development/widgets/datalive/cards/card-use-cases/)
 
-- [1\. Cards Basic Usage](/learn/app-development/widgets/datalive/cards/card-basic-usage/)
-- [2\. How to access cards items](/learn/how-tos/capturing-card-items/)
+- [1. Cards Basic Usage](/learn/app-development/widgets/datalive/cards/card-basic-usage/)
+- [2. How to access cards items](/learn/how-tos/capturing-card-items/)

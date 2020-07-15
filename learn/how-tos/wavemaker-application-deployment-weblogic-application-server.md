@@ -28,7 +28,7 @@ The following instructions are for deployment to **WebLogic Server 11g `10.3.6`*
 ## Setting WebLogic XML file in project
 
 1. Download the following [zip file](/learn/assets/weblogic.zip) and extract the WebLogic XML file.
-2. Open the WaveMaker app and [Import the extracted `weblogic.xml` file](/learn/app-development/services/3rd-party-libraries) into project. Make sure it is imported to the following location: \[project\_home\]/src/main/webapp/web-inf[![](/learn/assets/weblogic1.png)](/learn/assets/weblogic1.png)
+2. Open the WaveMaker app and [Import the extracted `weblogic.xml` file](/learn/app-development/services/3rd-party-libraries) into project. Make sure it is imported to the following location: [project_home]/src/main/webapp/web-inf[![](/learn/assets/weblogic1.png)](/learn/assets/weblogic1.png)
 
 ## Create Application War file
 

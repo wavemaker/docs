@@ -22,6 +22,6 @@ This capability can be extended to localize the column headings of a Data Table.
 
 [Localization Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
-- [1\. Localization in WaveMaker Apps](/learn/how-tos/localization-wavemaker-apps/)
-- [2\. Localization of Error Messages](/learn/how-tos/localization-error-messages/)
-- 3\. Localization of Data Table Column Headings
+- [1. Localization in WaveMaker Apps](/learn/how-tos/localization-wavemaker-apps/)
+- [2. Localization of Error Messages](/learn/how-tos/localization-error-messages/)
+- 3. Localization of Data Table Column Headings

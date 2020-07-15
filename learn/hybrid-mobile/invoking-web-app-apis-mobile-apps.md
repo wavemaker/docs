@@ -45,11 +45,11 @@ You will need to use HTTP Authentication initially while importing the token API
     - Provide the above URL as Service URL.
     - Set HTTP Authentication to Basic and provide the test User Name and Password.
     - Test the connection.
-    - From the Response tab, locate and make a note of the _wm\_auth\_token_.
+    - From the Response tab, locate and make a note of the _wm_auth_token_.
     - Import the service.
 3. Variable for Auth Token
     - [Access variable dialog](/learn/assets/var_sel.png) and click the New Variable button to create a Model Variable
-    - Enter _wm\_auth\_token_ from the previous step as the **dataValue**
+    - Enter _wm_auth_token_ from the previous step as the **dataValue**
 4. After the token is generated and stored, you can access the services of Project1 using that token.
 
 ### Step 2: Accessing Authenticated Services
@@ -60,7 +60,7 @@ You will need to use HTTP Authentication initially while importing the token API
 2. Open Mobile app, Project2:
     - [Import REST Service](/learn/app-development/services/web-services/web-services/)
     - Provide the above URL
-    - In the HEADERS tab provide the Name as "wm\_auth\_token" and Test Value as the token generated above.
+    - In the HEADERS tab provide the Name as "wm_auth_token" and Test Value as the token generated above.
     - Click on Test and Import the web service.
 
 :::note

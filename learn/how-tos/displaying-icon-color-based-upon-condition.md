@@ -20,7 +20,7 @@ You can change the color of an icon based on a condition. In the following examp
 4. Enter the expression as below.
 
 ``` 
-<glyph class name>" + " " + (Widgets.<checkbox\_name>.datavalue?"first\_calssname":"second\_classname") 
+<glyph class name>" + " " + (Widgets.<checkbox_name>.datavalue?"first_calssname":"second_classname") 
 ```
 
 [![](/learn/assets/icon_color3.png)](/learn/assets/icon_color3.png) 

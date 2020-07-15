@@ -69,7 +69,7 @@ For more information about the syntax, see [Custom Formatter Syntax Definition](
                 if (roles && roles.length && roles[0] == 'user') {
                     maskedData = hiphenSaperatedStr.substring(0, hiphenSaperatedStr.length - 4);
                 } else {
-                    maskedData = hiphenSaperatedStr.substring(0, hiphenSaperatedStr.length - 4).replace(/\d/g, param1);
+                    maskedData = hiphenSaperatedStr.substring(0, hiphenSaperatedStr.length - 4).replace(/d/g, param1);
                 }
                 return maskedData + " " + " " + substring;
             },

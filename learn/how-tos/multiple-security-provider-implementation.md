@@ -14,7 +14,7 @@ The document provides an overview for implementing authentication for the applic
 5. Choose the Application type as _Web_ application. Enter the _Authorized JavaScript Origin_ and _Authorized Redirect URIs_. An example of a sample redirect URI is as below:
     
 ```
-https://www.wavemakeronline.com/run-\[container-name\]/\[project-name\]/prefabs/GoogleOAuth/oAuthHandler/callback
+https://www.wavemakeronline.com/run-[container-name]/[project-name]/prefabs/GoogleOAuth/oAuthHandler/callback
 ```
     
 :::note
@@ -35,10 +35,10 @@ In the above URL change the container name and your project name accordingly.
 8. For the _on Load_ event of the google OAuth prefab, choose _JavaScript_ as operation. In the function generated in the script tab of the page, place the code snippet below:
 
 ```js    
-Page.<GoogleOAuth\_prefab\_name>Load = function(widget) {
+Page.<GoogleOAuth_prefab_name>Load = function(widget) {
     angular.$watch('accesstoken', function(newVal) {
             if (newVal) {
-                    Page.Variables.<login\_variable\_page\_level\_name>.invoke();
+                    Page.Variables.<login_variable_page_level_name>.invoke();
                 }
         });
     };
@@ -106,12 +106,12 @@ private static final Logger logger = LoggerFactory.getLogger(MyAuthenticationMan
         WMUser user = null;
 
 //checking for the security provider type i.e., whether it is OAuth or DB provider
-        String securityProvider = httpServletRequest.getParameter("j\_username");
+        String securityProvider = httpServletRequest.getParameter("j_username");
 
 //logic for the OAuth as the security provider
         if ("OAUTH".equals(securityProvider)) {
 //obtaining the token from Prefab
-            String token = httpServletRequest.getParameter("j\_password"); 
+            String token = httpServletRequest.getParameter("j_password"); 
             if (token == null) {
                 return null;
             }
@@ -128,8 +128,8 @@ private static final Logger logger = LoggerFactory.getLogger(MyAuthenticationMan
             }
         } else {
 //logic for the DB as security provider
-            String username = httpServletRequest.getParameter("j\_username");
-            String providedPassword = httpServletRequest.getParameter("j\_password");
+            String username = httpServletRequest.getParameter("j_username");
+            String providedPassword = httpServletRequest.getParameter("j_password");
 //references the query created to obtain logged in user details           
     List<Object> userObjects = hrdbQueryExecutorService.executeGetUserByName(null, username).getContent();
             if (userObjects == null || userObjects.size() != 1 ) {

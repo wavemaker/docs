@@ -33,5 +33,5 @@ Steps in OneLogin Integration:
 
 [App Security Cases](/learn/app-development/app-security/app-security/)
 
-- [1\. How to integrage SAML with OneLogin](/learn/how-tos/saml-integration-onelogin/)
-- [2\. How to integrage SAML with ADFS](/learn/how-tos/saml-integration-adfs/)
+- [1. How to integrage SAML with OneLogin](/learn/how-tos/saml-integration-onelogin/)
+- [2. How to integrage SAML with ADFS](/learn/how-tos/saml-integration-adfs/)

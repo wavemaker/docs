@@ -15,6 +15,6 @@ This post:
 
 #### [Localization Cases](/learn/app-development/ui-design/use-cases-ui-design/)
 
-- [1\. Localization in WaveMaker Apps](#)
-- [2\. Localization of Error Messages](/learn/how-tos/localization-error-messages/)
-- [3\. Localization of Data Table Column Headings](/learn/how-tos/localization-data-table-column-headings/)
+- [1. Localization in WaveMaker Apps](#)
+- [2. Localization of Error Messages](/learn/how-tos/localization-error-messages/)
+- [3. Localization of Data Table Column Headings](/learn/how-tos/localization-data-table-column-headings/)

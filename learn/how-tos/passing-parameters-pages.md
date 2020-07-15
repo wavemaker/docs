@@ -53,7 +53,7 @@ The solution includes the following steps:
 
 [![](/learn/assets/pp_dept_event.png?v=200)](/learn/assets/pp_dept_event.png?v=200)
 
-10. **Pass Parameter**: Now we need to pass the selected row deptid to the Employee page. Select the goToPage\_Employee from the Actions dialog and select the Data tab. Click the bind icon next to the deptid 
+10. **Pass Parameter**: Now we need to pass the selected row deptid to the Employee page. Select the goToPage_Employee from the Actions dialog and select the Data tab. Click the bind icon next to the deptid 
 
 [![](/learn/assets/pp_dept_callvar.png)](/learn/assets/pp_dept_callvar.png)
 

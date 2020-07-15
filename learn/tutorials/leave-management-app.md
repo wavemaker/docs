@@ -63,7 +63,7 @@ The following concepts are covered in building this application.
 
 1. _tobeApprovedLeaves_:
     
-    select e.firstname,e.lastname,e.picurl,e.birthdate,e.job\_title,e.city, v.\* from employee e,vacation v where e.emp\_id=v.emp\_id and manager\_id=:data and status='Pending'
+    select e.firstname,e.lastname,e.picurl,e.birthdate,e.job_title,e.city, v.* from employee e,vacation v where e.emp_id=v.emp_id and manager_id=:data and status='Pending'
     
 2. _LeaveAction_:
     

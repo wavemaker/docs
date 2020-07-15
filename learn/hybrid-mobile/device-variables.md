@@ -17,7 +17,7 @@ id: ""
 - **Calendar** – you can use this service to add, remove and list events in your phone calendar. The event details would include title, notes, location, start and end times.
 - **Camera** – you can use this to capture an image or a video
 - **Contacts** – you can use this variable to list the contacts on your phone. You can apply a filter on the list retrieved.
-- **Datasync **\- you can use this service to sync data
+- **Datasync **- you can use this service to sync data
 - **Device** – you can use this service to handle your mobile device features like vibrate, get connection type, model, OS, OS version etc.
 - **File** – you can upload files to your mobile device
 - **Scan** – can be used to access the barcode scanner.
@@ -73,8 +73,8 @@ Based upon the service selected various operations are available.
 | Quality | represents the quality of saved image, expressed as a range of 0-100, where 100 is typically full resolution with no loss of file compression. The default value is 80. | 80 |
 | Encoding Type | set the returned image file’s encoding. | JPEG (default) or PNG |
 | Correct Orientation | Rotate the image to correct for the orientation of the device during capture. | true(default) or false |
-| Target Width\* | width in pixels to scale image. | 100 (only when required to get small images) |
-| Target Height\* | height in pixels to scale image. | 100 (only when required to get small images) |
+| Target Width* | width in pixels to scale image. | 100 (only when required to get small images) |
+| Target Height* | height in pixels to scale image. | 100 (only when required to get small images) |
 
 :::note
 To get smaller images, you can return a resized image by passing both targetHeight and targetWidth values. If these values are not set, it returns the original image captured by the camera.

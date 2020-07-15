@@ -49,10 +49,10 @@ We have used the following Java code to accomplish this.
         @Override
          public WMUser authenticate(AuthRequestContext authRequestContext) {
             HttpServletRequest httpServletRequest = authRequestContext.getHttpServletRequest();
-            boolean isSecurityUrl = httpServletRequest.getRequestURI().endsWith("j\_spring\_security\_check");
+            boolean isSecurityUrl = httpServletRequest.getRequestURI().endsWith("j_spring_security_check");
             WMUser user = null;
-            //String securityProvider = httpServletRequest.getParameter("j\_username");
-            String token = httpServletRequest.getParameter("j\_password"); //getting the token from Prefab
+            //String securityProvider = httpServletRequest.getParameter("j_username");
+            String token = httpServletRequest.getParameter("j_password"); //getting the token from Prefab
             logger.info(" --------- Token is "+token);
             if (isSecurityUrl && token != null) {
                    Google google = new GoogleTemplate(token); //passing the token to Google

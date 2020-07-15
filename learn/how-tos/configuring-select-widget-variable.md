@@ -22,8 +22,8 @@ Instead of having a [comma-separated list](/learn/how-tos/configuring-select-wid
 
 [Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)
 
-- [1\. How to use list of values for select widget configuration](/learn/how-tos/configuring-select-widget-static-list-values/)
-- [2\. How to use variable for select widget configuration](#)
-- [3\. How to use display and data value fields for select widget configuration](/learn/how-tos/configuring-select-widget-display-data-fields/)
-- [4\. How to use database fields for select widget configuration](/learn/how-tos/configuring-select-widget-database-fields/)
-- [5\. How to configure cascading select](/learn/how-tos/configuring-cascading-select/)
+- [1. How to use list of values for select widget configuration](/learn/how-tos/configuring-select-widget-static-list-values/)
+- [2. How to use variable for select widget configuration](#)
+- [3. How to use display and data value fields for select widget configuration](/learn/how-tos/configuring-select-widget-display-data-fields/)
+- [4. How to use database fields for select widget configuration](/learn/how-tos/configuring-select-widget-database-fields/)
+- [5. How to configure cascading select](/learn/how-tos/configuring-cascading-select/)
