@@ -10,7 +10,19 @@ WaveMaker provides single-click app deployment to WaveMaker Demo cloud infrastru
 
 Only apps under version control will be deployed. In case you have not pushed changes done to your app to VCS, you will be prompted to do so. You cannot proceed with deployment until you commit your changes.
 
-# Deployment to Cloud
+## Deployment Flow
+
+The Deployment operation in the earlier version of WaveMaker was blocking users to further work on WM until the process completes. Thus, the users were not able to perform any operations at this stage. From WM 10.0, the flow does not block you to make an action. You can choose to ‘close’ the Deployment progress dialog and continue with operations if needed.
+
+[![](/learn/assets/Deployment-flow-changes.png)](/learn/assets/Deployment-flow-changes.png)
+
+The user keeps informed about the status of the deployment through the 'toaster UI'. If the user works on the same project, after the deployment, they get notified by an email.
+
+The progress of the Deployment is indicated by the change of Deployment Icon on the header as shown below, and by clicking the icon, you can see an option to ‘Check Deployment Status’ by opening the dialog again.
+
+[![](/learn/assets/Check-deployment-status-Click-e1554896395542.png)](/learn/assets/Check-deployment-status-Click-e1554896395542.png)
+
+## Deployment to Cloud
 
 Deployed apps will be hosted on WaveMaker Demo Cloud. The deployment configuration profile will be used for various service configurations within the app like the database, REST, SOAP, Web Socket, and Security. These settings can be modified from [Configuration Profiles](/learn/app-development/deployment/configuration-profiles/) under Project Settings dialog, accessible from the Project Configurations.
 

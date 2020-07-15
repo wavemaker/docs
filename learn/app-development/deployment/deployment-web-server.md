@@ -1,7 +1,7 @@
 ---
-title: "Deployment to Web Server"
+title: "Deployment to Application Server"
 id: ""
-sidebar_label: "Deploy to Web Server Overview"
+sidebar_label: "Application Server Overview"
 ---
 Overview document for deploying your app to a web server. 
 
@@ -25,7 +25,7 @@ This list is for reference purpose. Apart from these, you can use any standard J
 
 ## Profile Configuration
 
-Set up the **configuration profile**. You can choose to use the [default profile](/learn/app-development/deployment/configuration-profiles/) configured by WaveMaker based upon the services incorporated within the app, or build a [custom profile](/learn/app-development/deployment/configuration-profiles/#custom-profile). 
+Set up the **configuration profile**. You can choose to use the [default profile](/learn/app-development/deployment/configuration-profiles/) configured by WaveMaker based upon the services incorporated within the app, or build a [custom profile](/learn/app-development/deployment/build-options). 
 
 ## Generate a WAR file
 

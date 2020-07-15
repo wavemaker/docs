@@ -282,42 +282,52 @@
     [
         "app-development/dev-integration/developer-tools",
         "app-development/dev-integration/inspection-framework",
-        "app-development/dev-integration/import-export-update-apps",
-        "app-development/ui-design/project-shells",
-        "app-development/wavemaker-overview/localization",
-        "app-development/wavemaker-overview/artifacts-repository",
+        "app-development/dev-integration/debugging",
         {
           "type": "subcategory",
           "label": "Developer Integration",
           "ids": [ 
             "app-development/wavemaker-overview/project-user-management",       
             "app-development/dev-integration/developer-collaboration",
-            "app-development/dev-integration/debugging",
-            "app-development/dev-integration/extending-application-using-ides"
+            "app-development/dev-integration/extending-application-using-ides",
+            "app-development/dev-integration/import-export-update-apps",
+            "app-development/ui-design/project-shells"
+          ]
+        },
+        {
+          "type": "subcategory",
+          "label": "Add-ons",
+          "ids": [
+            "app-development/wavemaker-overview/localization",
+            "app-development/wavemaker-overview/artifacts-repository"
+          ]
+        }
+    ],
+
+    "Deployment":
+    [       
+      "app-development/deployment/configuration-profiles",
+      "app-development/deployment/build-options", 
+      "app-development/deployment/one-click-deployment",
+        {
+          "type": "subcategory",
+          "label": "CI/CD In-built",
+          "ids": [
+            "app-development/deployment/release-management",  
+            "app-development/deployment/manage-deployed-apps", 
+            "app-development/deployment/deployment-to-aws",
+            "app-development/deployment/deployment-to-azure",
+            "app-development/deployment/deployment-google-cloud",
+            "app-development/deployment/deployment-to-digital-ocean"                                                                   
           ]
         },
 
         {
-          "type": "subcategory",
-          "label": "Deployment",
-          "ids": [
-            "app-development/deployment/release-management", 
-            "app-development/deployment/configuration-profiles", 
-            "app-development/build-options-app-deployment",    
-            "app-development/deployment/one-click-deployment",                
-            "app-development/deployment/manage-deployed-apps"                          
-          ]
-        },
-        {
             "type": "subcategory",
-            "label": "Configuring Web Server",
-            "ids": [  
+            "label": "Deploy to Application Server",
+            "ids": [ 
             "app-development/deployment/deployment-web-server",
             "app-development/deployment/building-war-wavemaker-project",
-            "app-development/deployment/deployment-to-aws",
-            "app-development/deployment/deployment-to-azure",
-            "app-development/deployment/deployment-google-cloud",
-            "app-development/deployment/deployment-to-digital-ocean",
             "how-tos/wavemaker-application-deployment-tomcat",
             "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
             "how-tos/wavemaker-application-deployment-jboss",
