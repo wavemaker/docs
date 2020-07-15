@@ -18,6 +18,14 @@ The Deployment operation in the earlier version of WaveMaker was blocking users 
 
 The user keeps informed about the status of the deployment through the 'toaster UI'. If the user works on the same project, after the deployment, they get notified by an email.
 
+The progress of the Deployment is indicated by the change of Deployment Icon on the header as shown below, and by clicking the icon, you can see an option to ‘Check Deployment Status’ by opening the dialog again.
+
+[![](/learn/assets/Check-deployment-status-Click-e1554896395542.png)](/learn/assets/Check-deployment-status-Click-e1554896395542.png)
+
+![deploy failed](/learn/assets/deploy-failed.png)
+
+If the deployment fails, you can fix the code errors using [inspection framework](/learn/app-development/dev-integration/inspection-framework) and redeploy the app in the same way.
+
 
 ## Deployment to Cloud
 
