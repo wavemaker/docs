@@ -25,7 +25,7 @@ Each App phase as depicted above requires its own infrastructure components to 
 
 ## How WaveMaker Implements Release Management
 
-WaveMaker **Release Pipeline **enables setting up the App deployment phases for easier delivery by leveraging Docker containerization. Setting up an App deployment phase requires:
+WaveMaker **Release Pipeline**enables setting up the App deployment phases for easier delivery by leveraging Docker containerization. Setting up an App deployment phase requires:
 
 - provisioning of infrastructure,
 - installing the required software components,
@@ -41,7 +41,7 @@ All of the above-mentioned release management tasks are facilitated within WaveM
 
 WaveMaker Platform offers a pre-defined set of App delivery phases which enables App progression through multiple phases. At each phase, App is accessible using a unique URL. Each App phase can be setup to use WaveMaker Cloud leveraging Docker containerization or for Stage and Live phases to run on a public cloud like AWS.
 
-### Demo 
+### Demo
 
 ***Aavailable as QA for WME users***
 
@@ -70,4 +70,3 @@ Apps Portal provides a platform for the user to manage the deployed apps. By def
 ## App Versioning
 
 Most app development is incremental in nature, i.e. different phases will be hosting the app in various levels of development. The developer will be working on the latest version, while Live version would be at least one step behind. In such cases versioning system comes in handy. In WaveMaker, the app in Demo phase will be the last version deployed from Studio. When pushing from Demo to other phases, you have the option to change the version for better tracking and control. [App Versioning](/learn/app-development/deployment/manage-deployed-apps/#app-versioning).
-

@@ -22,7 +22,7 @@ The **Development Configuration Profiles,** used with the **Run** option, are no
 
 ## Deployment Configuration Profile
 
-The **Deployment Configuration Profiles,** used with the **Deploy **option, are editable. The values are set from the configuration of the underlying services at the time of import/creation. You can change them according to the Deployment Environment settings.
+The **Deployment Configuration Profiles,** used with the **Deploy**option, are editable. The values are set from the configuration of the underlying services at the time of import/creation. You can change them according to the Deployment Environment settings.
 
 [![](/learn/assets/config_deploy.png)](/learn/assets/config_deploy.png)
 
