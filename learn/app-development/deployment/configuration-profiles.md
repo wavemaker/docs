@@ -14,7 +14,7 @@ The **Configuration Profiles** allows one to run the same application under diff
 
 The **Development Configuration Profiles,** used with the **Run** option, are not editable. The values are set from the configuration of the underlying services at the time of import/creation. If you want to change these values, go the respective service configuration dialog and make the changes.
 
-[![](/learn/assets/config_dev.png)](/learn/assets/config_dev.png)
+[![profile deployment configurations](/learn/assets//wm-release-management/development-profile-configurations.png)](/learn/assets//wm-release-management/development-profile-configurations.png)
 
 - Under Security tab, Configuration SSL is disabled by default.
 - There is no provision to configure X-Frame options. It is by default set to “Same Origin”.
@@ -24,7 +24,7 @@ The **Development Configuration Profiles,** used with the **Run** option, are no
 
 The **Deployment Configuration Profiles,** used with the **Deploy **option, are editable. The values are set from the configuration of the underlying services at the time of import/creation. You can change them according to the Deployment Environment settings.
 
-[![](/learn/assets/config_deploy.png)](/learn/assets/config_deploy.png)
+[![profile deployment configurations](/learn/assets//wm-release-management/deploy-profile-configrations.png)](/learn/assets//wm-release-management/deploy-profile-configrations.png)
 
 ### Database Settings
 
@@ -100,5 +100,5 @@ You can choose to **add different configuration profiles** as per the need of th
 This custom profile can be used when exporting the project as a WAR file.
 :::
 
-[![](/learn/assets/config_custom.png)](/learn/assets/config_custom.png)
+[![](/learn/assets//wm-release-management/custom-profile.png)](/learn/assets//wm-release-management/custom-profile.png)
 

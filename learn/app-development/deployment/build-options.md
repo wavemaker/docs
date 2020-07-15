@@ -12,7 +12,7 @@ You can choose from the following build options to deploy your app. There are
 
 ## WaveMaker Build
 
-This build option follows the classic WaveMaker build process which was used in the earlier versions of WaveMaker; for example, WM 9.4. WaveMaker build follows Maven build process. For more information, see [](/learn/app-development/deployment/configuration-profiles#development-configuration-profile)
+This build option follows the classic WaveMaker build process which was used in the earlier versions of WaveMaker; for example, WM 9.4. WaveMaker build follows Maven build process. For more information, see [wavemaker build profiles](/learn/app-development/deployment/configuration-profiles#development-configuration-profile)
 
 ## Angular Build
 
