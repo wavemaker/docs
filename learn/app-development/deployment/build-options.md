@@ -7,10 +7,10 @@ sidebar_label: "Build Options"
 
 You can choose from the following build options to deploy your app. There are two build options you can choose from.
 
-1. WaveMaker Build
+1. WaveMaker Build (deprecated)
 2. Angular Build
 
-## WaveMaker Build
+## WaveMaker Build (deprecated)
 
 This build option follows the classic WaveMaker build process which was used in the earlier versions of WaveMaker; for example, WM 9.4. WaveMaker build follows Maven build process. For more information, see [WaveMaker profiles](/learn/app-development/deployment/configuration-profiles#development-configuration-profile)
 
