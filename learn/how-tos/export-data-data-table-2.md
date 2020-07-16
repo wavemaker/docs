@@ -1,6 +1,7 @@
 ---
 title: "Export Data from Data Table"
 id: ""
+sidebar_label: "Export Data from Data Table - 2"
 ---
 
 ##### 9.4 release
@@ -16,49 +17,52 @@ id: ""
     - writing JavaScript code for the **on Before Export** callback event for the Data Table.
 - These features are available ONLY for Data Table bound to a Database CRUD variable, Live Filter result, or Query API Variable.
 
-**Prerequisites**:
+## Prerequisites
 
 1. A WaveMaker Web Application, with a database imported (we are using the sample HR Database).
 2. A page with Data Table bound to a Database CRUD variable, here we are using the Employee table from the sample hrdb.
 
-**Steps**:
+## Steps
 
 1. Open the **Advanced Settings** of the Data Table.
-2. From the Data Table tab, scroll down to locate **Export Format** option and select required format. [![](/learn/assets/dt_export.png)](/learn/assets/dt_export.png)
+2. From the Data Table tab, scroll down to locate **Export Format** option and select required format. 
+[![](/learn/assets/dt_export.png)](/learn/assets/dt_export.png)
 3. **Export Data Size** property can be used to specify the number of records to be exported.  By default, the value is set to 100, the maximum export size. To export more than 100 records, the max size in the [profile](http:/#ppsShowPopUp_109) needs to be changed from the Project Configurations menu of [Project Workspace](http:/#ppsShowPopUp_107).
-4. Navigate to Columns tab and note that for each column **Export Options** tab is visible. Use this to customize the data to be exported. NOTE: If you have any custom columns, value expression has to be given here, else the export will fail. [![](/learn/assets/dt_cols_export.png)](/learn/assets/dt_cols_export.png)
+4. Navigate to Columns tab and note that for each column **Export Options** tab is visible. Use this to customize the data to be exported. NOTE: If you have any custom columns, value expression has to be given here, else the export will fail. 
+[![](/learn/assets/dt_cols_export.png)](/learn/assets/dt_cols_export.png)
 5. Save and close the Advanced Settings.
-6. You can further customize the data being exported using the **on Before Export** callback event of the Data Table. [![](/learn/assets/dt_export_event.png)](/learn/assets/dt_export_event.png)
+6. You can further customize the data being exported using the **on Before Export** callback event of the Data Table. 
+[![](/learn/assets/dt_export_event.png)](/learn/assets/dt_export_event.png)
 7. You can use the following script:
-    
-    Page.EmployeeTable1Beforeexport = function($data) {
-    
-        // Change Export Type
-        $data.exportType = 'CSV';
-    
-        //Changing the export size
-        $data.size = 5;
-    
-        //Apply Sorting on fields
-        $data.orderBy = "empId desc";
-    
-       //updating the header
-         $data.columns.firstname.header = ‘Fullname’;
-    
-        //updating first name expression
-        $data.columns.firstname.expression = firstname + ' ' +lastname;
-    
-        //adding new column 
-        $data.columns.username = {
-           header: ‘Username’,
-            expression: firstname + '.' + lastname
-        }
-    
-       //Deleting the existing column during Export
-       delete $data.columns.firstname;
-    };
-    
-     
+
+```js
+Page.EmployeeTable1Beforeexport = function($data) {
+
+    // Change Export Type
+    $data.exportType = 'CSV';
+
+    //Changing the export size
+    $data.size = 5;
+
+    //Apply Sorting on fields
+    $data.orderBy = "empId desc";
+
+    //updating the header
+        $data.columns.firstname.header = ‘Fullname’;
+
+    //updating first name expression
+    $data.columns.firstname.expression = firstname + ' ' +lastname;
+
+    //adding new column 
+    $data.columns.username = {
+        header: ‘Username’,
+        expression: firstname + '.' + lastname
+    }
+
+    //Deleting the existing column during Export
+    delete $data.columns.firstname;
+};
+```
 
 [Data Table Use Cases](/learn/app-development/widgets/datalive/datatable/data-table-use-cases/)
 

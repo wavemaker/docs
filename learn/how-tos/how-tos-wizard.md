@@ -2,8 +2,11 @@
 title: "How Tos: Wizard"
 id: ""
 ---
+---
 
-A basic usage scenario is used to go through the wizard interface step by step trying to build a Registration Form. A **Generic Registration Form** that can be used by any web sites to get their users registered to their sites for example accessing trial versions of products, or for buying goods online etc. In this scenario, the user is asked to register when they need to access some resources that needs registration. To register, user is provided a Registration form for creating username and password for that user. Once the user has given the inputs, the user navigates to a page where the user has to **add personal information** and if the user is employed the **professional data** also has to be supplied by the user. Once the required data is provided by the user the user is registered and is informed of the success of registration. The scenario assumes that you will be creating the required data model for taking the login data (Person Entity), profile (Profile Entity) and professional (Profession Entity) data inputs from the user. [![WZ_usage_dm](/learn/assets/WZ_usage_dm.png)](/learn/assets/WZ_usage_dm.png)
+A basic usage scenario is used to go through the wizard interface step by step trying to build a Registration Form. A **Generic Registration Form** that can be used by any web sites to get their users registered to their sites for example accessing trial versions of products, or for buying goods online etc. In this scenario, the user is asked to register when they need to access some resources that needs registration. To register, user is provided a Registration form for creating username and password for that user. Once the user has given the inputs, the user navigates to a page where the user has to **add personal information** and if the user is employed the **professional data** also has to be supplied by the user. Once the required data is provided by the user the user is registered and is informed of the success of registration. The scenario assumes that you will be creating the required data model for taking the login data (Person Entity), profile (Profile Entity) and professional (Profession Entity) data inputs from the user. 
+
+[![WZ_usage_dm](/learn/assets/WZ_usage_dm.png)](/learn/assets/WZ_usage_dm.png)
 
 This is the set-up of an existing page - Getting Basic Details from the User for Registration with a button to invoke the Wizard to add Profile and Professional data.
 
@@ -28,6 +31,7 @@ This is the set-up of an existing page - Getting Basic Details from the User f
 
 - **On Next**: Use Case – When the User is not Employed – On Blur Event of employed field In Personal Data Step when user tabs out after entering a value in employed form field of liveform On Blur event is fired. In the above use case mentioned the user would not want to go to next step to input Professional data as the user is not employed in which case the appropriate handler has to be plugged into the On Blur of the employed field. This example has a On Blur Javascript handler that does the following:
 
+```js
 Application.$controller("liveform2Controller", ["$scope",
 function($scope) {
 "use strict";
@@ -43,12 +47,14 @@ $scope.Widgets.wizardstep2.enabledone = false;
 };
 }
 ]);
+```
 
 - Gets the datavalue of the employed widget and assigns it to employed variable.
 - If the is employed datavalue is “No” it enables the Done button in this step itself as the user can complete the registration in step 1 itself without going to step 2.
 - Writing Event on the Wizard Step 2 (Professional Data) – On Done:
     - On Done: Use Case –When the User is Employed. In this case the user is allowed to move to the next step to enter professional data. Once entered and Done button is clicked, On Done event fires. A Javascript handler is added to On Done Event which does the following:
 
+```js
 $scope.wizard1Done = function($isolateScope, steps) {
 var liveData = $scope.Widgets.liveform2.dataset.data;
 var ctrOfData = liveData.length;
@@ -62,6 +68,7 @@ DialogService.open('alertdialog1', $scope, {
 'showInUserMode': true
 });
 };
+```
 
 - Gets the UserName from the Live Form Dataset
 - Sets the UserName Input for the Update Query on the Person Service Variable to set the Registered field to true.
@@ -69,6 +76,14 @@ DialogService.open('alertdialog1', $scope, {
 - Shows the Alert Dialog with Successful Message – Registration Successful – To create Alert Dialog and show up in a page – Refer Dialog Documentation
 - Navigates to Registration Details Page
 
-- Run the app and click on Update Personal Data on User Registration page [![WZ_usage2_run1](/learn/assets/WZ_usage2_run1.png)](/learn/assets/WZ_usage2_run1.png)
-- Enter the Personal Details and click on NEXT to enter Professional Data [![wz_usage2_run2](/learn/assets/WZ_usage2_run2.png)](/learn/assets/WZ_usage2_run2.png)
-- Run the app again and Enter the Personal Details with Employed set to NO, observe the DONE button with no navigation to Professional Data step [![WZ_usage_run1](/learn/assets/WZ_usage_run1.png)](/learn/assets/WZ_usage_run1.png)
+- Run the app and click on Update Personal Data on User Registration page 
+
+[![WZ_usage2_run1](/learn/assets/WZ_usage2_run1.png)](/learn/assets/WZ_usage2_run1.png)
+
+- Enter the Personal Details and click on NEXT to enter Professional Data 
+
+[![wz_usage2_run2](/learn/assets/WZ_usage2_run2.png)](/learn/assets/WZ_usage2_run2.png)
+
+- Run the app again and Enter the Personal Details with Employed set to NO, observe the DONE button with no navigation to Professional Data step 
+
+[![WZ_usage_run1](/learn/assets/WZ_usage_run1.png)](/learn/assets/WZ_usage_run1.png)
