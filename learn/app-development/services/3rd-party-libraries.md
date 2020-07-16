@@ -1,14 +1,24 @@
 ---
-title: "3rd Party Libraries"
+title: "Resources and Third-party Libraries"
 id: "3rd-party-libraries"
 ---
 ---
 
+With the Angular code generation in place, the users can see the generated code in parallel to their application development in the **File Explorer** Section.
+
+## File Explorer
+
+The file explorer contains a folder called the ‘**generated-angular-app**’ folder at the root of the application folder structure.
+
+The ‘**generated-angular-app**’ is Angular 7 compliant project structure of the WaveMaker application as shown in the image below. The content in this section is Read-only.
+
+[![](/learn/assets/Build-start.png)](/learn/assets/Build-start.png)
+
+## Including Resource Files
+
 There will be times when you want to use external resources in your application. These may be in the form of images, audio files, video files, JavaScript files, UI designs etc. WaveMaker understands these needs and facilitates the usage.
 
 [![](/learn/assets/ext_import.png)](/learn/assets/ext_import.png)
-
-## Including Resource Files
 
 [![](/learn/assets/ext_resources.png)](/learn/assets/ext_resources.png)
 

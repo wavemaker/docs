@@ -16,10 +16,14 @@ You need to add cloud instances else configuration of the phases for any project
 ## Configure Deployment Pipeline
 
 - For configure deployment pipeline at app deployment section select pipeline option.
-- Select the respective stages to configure available stages are QA,STAGE and  LIVE.
+- Select the respective stages to configure available stages are QA, STAGE, and LIVE.
 
 [![pipeline configuration](/learn/assets/wme-setup/configuring-wme/pipeline-configuration.png)](/learn/assets/wme-setup/configuring-wme/pipeline-configuration.png)
 
 - Provide respective details to configure and save the details.
 - Go to Deployment Capacity, then select Phase.
 - Add Capacity for each Phase.
+
+## Release Management
+
+WaveMaker offers in-built CI-CD Pipeline (continuous integration/continuous delivery). For more information about how to manage releases, see [CI-CD Pipeline in WaveMaker](/learn/app-development/deployment/release-management).
