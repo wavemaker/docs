@@ -26,4 +26,4 @@ You need to add cloud instances else configuration of the phases for any project
 
 ## Release Management
 
-WaveMaker offers in-built CI-CD pipelines. For more information about how WaveMaker implements release management, see [CI-CD Pipelines](/learn/app-development/deployment/release-management).
+WaveMaker offers in-built CI-CD Pipeline (continuous integration/continuous delivery). For more information about how to manage releases, see [CI-CD Pipeline in WaveMaker](/learn/app-development/deployment/release-management).
