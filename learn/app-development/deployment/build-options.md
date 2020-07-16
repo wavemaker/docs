@@ -52,4 +52,5 @@ The Build Options are Read-Only for ‘Development’ build profile of the WaveM
 
 ## See Also
 
+[One-Click Deployment](/learn/app-development/deployment/one-click-deployment)  
 [Building a War file from a WaveMaker Project](/learn/app-development/deployment/building-war-wavemaker-project/)
