@@ -63,7 +63,7 @@ Each _anchor_ widget events are available for adding functionality to this layou
 
 ## Use Cases
 
-[Basic Usage](/learn/app-development/widgets/navigation/nav-basic-usage/)  
+[Using Navigation](/learn/app-development/widgets/navigation/nav-basic-usage/)  
 [Working with Nav Bar](/learn/app-development/widgets/navigation/nav-bar)  
 [Creating a Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu-use-cases)  
 [Dynamic Menu based on the User Role](/learn/how-tos/dynamic-menu-based-user-role)  
