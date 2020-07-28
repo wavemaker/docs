@@ -265,7 +265,7 @@ You can handle exceptions by throwing [subclasses of AuthenticationException](ht
 
 2. and returns a **WMUser** object which can be initialized by a call to the following constructor:
 ```
-public WMUser(String userId, String userName, Collection roles)
+public WMUser(String userName, String password, Collection<String> roles)
 ``` 
 
 For example, the following sample implementation extracts the **user** value from the **ticket** parameter from the Http header data and adds the roles of user and admin, accordingly. 
@@ -294,11 +294,11 @@ public class SecureService implements WMCustomAuthenticationManager {
         if(username.equals("John") && password.equals("John123")) {
             List roles = new ArrayList();
             roles.add("admin");
-            return new WMUser("John", username, roles);
+            return new WMUser(username,password,roles);
         } else if(username.equals("Jane") && password.equals("Jane123")) {
             List roles = new ArrayList();
             roles.add("user");
-            return new WMUser("Jane", username, roles);
+            return new WMUser(username,password,roles);
         }
         return null;
     }
