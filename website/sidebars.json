@@ -346,10 +346,9 @@
 
         {
           "type": "subcategory",
-          "label": "Pipeline Configuration (continues)",
+          "label": "Pipeline Configuration",
           "ids": [    
-            "app-development/deployment/push-to-next-phase",
-            "app-development/deployment/profile-management",
+            "app-development/deployment/phase-configuration",
             "app-development/deployment/webhooks-integration",
             "app-development/deployment/tests-integration"
             ]
@@ -369,13 +368,11 @@
           "ids": [    
             "app-development/deployment/push-code-to-external-repo",
             "app-development/deployment/integration-with-custom-vcs-provider",
-            "app-development/deployment/export-war",
-            "app-development/deployment/building-war-wavemaker-project",
-            "app-development/deployment/build-wavemaker-apps",
-            "app-development/deployment/build-with-maven",
+            "app-development/deployment/export-wavemaker-application",
+            "app-development/deployment/building-with-maven",
             "app-development/deployment/build-with-docker",
             "app-development/deployment/jenkins-integration",
-            "app-development/deployment/using-docker-compose",
+            "app-development/deployment/deployment-using-docker-compose",
             "how-tos/deployment-to-heroku"
             ]
         },

@@ -10,7 +10,7 @@ id: ""
 
 A typical App life cycle involves various phases i.e. development, testing, and deployment before the App goes live. A **Deployment** or **Release Pipeline** involves setting up these phases to the respective teams in order to prepare the App for delivery. These multiple phases involve different roles within an App engineering team for successful App delivery
 
-1. **Dev** - Used by the developers while building the app for testing the app.
+1. **Dev** - Used by the developers while building the app for testing.
 2. **QA or Demo** – Normally used for integration testing allowing collaborators to add their integration pieces or to do a demo of App to stakeholders or to get an approval of the App features. It can also be used for end-to-end testing of the app by the QA team, verifying feature completeness, run automated tests etc.
 3. **Stage** – Used for pre-live demos, approvals from business teams, performance & user acceptance testing (UAT).
 4. **Live** – The environment where the App is accessible to the end users.
@@ -40,6 +40,10 @@ Release Pipeline combines the power of Docker-based WaveMaker Cloud to configur
 All of the above-mentioned release management tasks are facilitated within WaveMaker through a **Deployment Environment**. A deployment environment is provisioned with all the required services, such as Web Services, database services, and the dependent services, for the application to be fully functional and available. Each deployment environment requires a bunch of containers to be provisioned and setup.
 
 WaveMaker Platform offers a pre-defined set of App delivery phases which enables App progression through multiple phases. At each phase, App is accessible using a unique URL. Each App phase can be setup to use WaveMaker Cloud leveraging Docker containerization or for Stage and Live phases to run on a public cloud like AWS.
+
+:::note
+WME customers has to configure their Pipeline before doing deployment.for configure pipeline visit [pipeline configuration](../../on-premise/configure/config-pipeline.md) . WMO customers they will use [wavemaker inbuilt pipeline](default-pipelines.md) configuration with default phases Demo and Live.
+:::
 
 ### Demo
 
