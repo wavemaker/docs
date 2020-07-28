@@ -95,7 +95,7 @@ This will produce the .ipa file and you can install it on your iOS device using 
 - In XCode, go to Windows → Devices then add your .ipa file to the device. Open the project in Xcode and run the following command:
 
 ```
-open CORDOVA_PROJECT/platforms/ios/*.xcodeproj
+open CORDOVA_PROJECT/platforms/ios/*.xcworkspace
 ```
 
 - Using Xcode, one can run the project in emulators or create a .ipa file to publish. For more information, see [the workflow](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/LaunchingYourApponDevices/LaunchingYourApponDevices.html).
