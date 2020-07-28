@@ -1,5 +1,5 @@
 ---
-title: "Nav Bar"
+title: "Nav Bar Overview"
 id: ""
 ---
 ---
@@ -34,3 +34,9 @@ You can also create different variations of the navbar such as navbars with drop
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Menu icon | This property sets the icon for the menu button that will appear in the mobile layout ONLY. |
 
+## See Also
+
+[Navigation Properties and Events](/learn/app-development/widgets/navigation/nav)  
+[Basic Usage](/learn/app-development/widgets/navigation/nav-basic-usage/)  
+[Creating a Dropdown Menu](/learn/app-development/widgets/navigation/dropdown-menu-use-cases)  
+[Dynamic Menu based on the User Role](/learn/how-tos/dynamic-menu-based-user-role)  
