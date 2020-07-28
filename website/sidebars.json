@@ -305,34 +305,91 @@
     ],
 
     "Deployment":
-    [       
-      "app-development/deployment/configuration-profiles",
-      "app-development/deployment/build-options", 
-      "app-development/deployment/one-click-deployment",
+    [   
         {
           "type": "subcategory",
-          "label": "CI/CD In-built",
+          "label": "One-Click Deployment",
+          "ids": [    
+              "app-development/deployment/one-click-deployment",
+              "app-development/deployment/configuration-profiles",
+              "app-development/deployment/build-options" 
+            ]
+        },
+        {
+          "type": "subcategory",
+          "label": "Default CI/CD in WaveMaker",
           "ids": [
-            "app-development/deployment/release-management",  
-            "app-development/deployment/manage-deployed-apps", 
-            "app-development/deployment/deployment-to-aws",
-            "app-development/deployment/deployment-to-azure",
-            "app-development/deployment/deployment-google-cloud",
-            "app-development/deployment/deployment-to-digital-ocean"                                                                   
+            "app-development/deployment/release-management"                                                                              
           ]
         },
 
         {
+          "type": "subcategory",
+          "label": "Pipeline Configuration",
+          "ids": [    
+            "app-development/deployment/default-pipelines",
+            "app-development/deployment/configure-pipelines"
+           
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Deploy to Cloud Providers",
+          "ids": [    
+            "app-development/deployment/deployment-to-aws",
+            "app-development/deployment/deployment-to-azure",
+            "app-development/deployment/deployment-google-cloud",
+            "app-development/deployment/deployment-to-digital-ocean"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Pipeline Configuration (continues)",
+          "ids": [    
+            "app-development/deployment/push-to-next-phase",
+            "app-development/deployment/profile-management",
+            "app-development/deployment/webhooks-integration",
+            "app-development/deployment/tests-integration"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Manage Deployed Apps",
+          "ids": [    
+            "app-development/deployment/manage-deployed-apps"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Integrate with your CI/CD Providers",
+          "ids": [    
+            "app-development/deployment/push-code-to-external-repo",
+            "app-development/deployment/integration-with-custom-vcs-provider",
+            "app-development/deployment/export-war",
+            "app-development/deployment/building-war-wavemaker-project",
+            "app-development/deployment/build-wavemaker-apps",
+            "app-development/deployment/build-with-maven",
+            "app-development/deployment/build-with-docker",
+            "app-development/deployment/jenkins-integration",
+            "app-development/deployment/using-docker-compose",
+            "how-tos/deployment-to-heroku"
+            ]
+        },
+
+
+        {
             "type": "subcategory",
-            "label": "Deploy to Application Server",
+            "label": "Deployment to external web servers",
             "ids": [ 
             "app-development/deployment/deployment-web-server",
-            "app-development/deployment/building-war-wavemaker-project",
             "how-tos/wavemaker-application-deployment-tomcat",
             "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
             "how-tos/wavemaker-application-deployment-jboss",
-            "how-tos/wavemaker-application-deployment-weblogic-application-server",
-            "how-tos/deployment-to-heroku"
+            "how-tos/wavemaker-application-deployment-weblogic-application-server"
           ]
         }
   ],

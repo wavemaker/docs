@@ -1,6 +1,7 @@
 ---
 title: "One-Click Deployment"
 id: "one-click-deployment"
+sidebar_label: "Overview"
 ---
 ---
 
