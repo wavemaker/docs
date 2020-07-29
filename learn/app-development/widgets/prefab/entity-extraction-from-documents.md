@@ -1,12 +1,12 @@
 ---
-title: "Entity Extraction Prefab"
+title: "Entity Extraction Prefab - Automatically extract data from structured documents such as Invoices, Receipts"
 id: ""
 ---
 ---
 
-The Entity Extraction prefab enables extracting required entities with values from any structured document. It uses the [AWS Textract](https://docs.aws.amazon.com/textract/latest/dg/what-is.html).
+There are many situations where data has to be extracted from a scanned recipt or a PDF document or an screenshot taken from a mobile phone. Automatically extracting information from such documents will enable in building delighful user experiences. This prefab will help implement such extraction of data any structured document. Given the document as input, the prefab uploads to it to [AWS Textract](https://docs.aws.amazon.com/textract/latest/dg/what-is.html) to extract data from it. The extracted data is available as key-value pair and developer can pick the data they are interested in. 
 
-Prerequisites of using the prefab are:
+** Prerequisites of using the prefab are:
 
 1. Create AWS account and IAM user with policy `AmazonTextractFullAccess`.
 
