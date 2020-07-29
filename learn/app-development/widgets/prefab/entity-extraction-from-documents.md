@@ -31,4 +31,4 @@ There are many situations where data has to be extracted from a scanned recipt o
 ![/learn/assets/entity-extraction-from-document-picture5.png](/learn/assets/entity-extraction-from-document-picture5.png)
 
 ## Other Prefabs
-1. [Use Box Viewer to view Office documents in browser] (/learn/app-development/widgets/custom-widgets/#importing-prefabs)
+1. [Use Box Viewer to view Office documents in browser](/learn/app-development/widgets/prefab/box-viewer-prefab.md)
