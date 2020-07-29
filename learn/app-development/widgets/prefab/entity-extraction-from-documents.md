@@ -9,7 +9,7 @@ There are many situations where data has to be extracted from a scanned recipt o
 
 ## How to use this prefab:
 
-1. Download the prefab [here](https://github.com/wavemaker/prefab-entity-extractor/releases/latest) and [import into your WaveMaker project](/learn/app-development/widgets/custom-widgets/#importing-prefabs).
+1. Download the prefab [here](https://github.com/wavemaker/prefab-entity-extractor/releases/latest) and [import into your WaveMaker project](/learn/app-development/widgets/custom-widgets.md#importing-prefabs).
 
 2. Create AWS account and IAM user with policy `AmazonTextractFullAccess`.
 
@@ -17,7 +17,7 @@ There are many situations where data has to be extracted from a scanned recipt o
 
 ![/learn/assets/entity-extraction-from-document-picture1.png](/learn/assets/entity-extraction-from-document-picture1.png)
 
-4. Bind the “URL” and “Entities” (properties of prefab) on your page. URL is the path to the file (uploaded to the project) to be processed and Entities are labels from the document which are required to be extract their values.
+4. Bind the “URL” and “Entities” (properties of prefab) on your page. URL is the path of the document to download and processed.  and Entities are labels from the document which are required to be extract their values.
 
 ![/learn/assets/entity-extraction-from-document-picture2.png](/learn/assets/entity-extraction-from-document-picture2.png)
 ![/learn/assets/entity-extraction-from-document-picture3.png](/learn/assets/entity-extraction-from-document-picture3.png)
