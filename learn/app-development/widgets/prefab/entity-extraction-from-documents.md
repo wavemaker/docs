@@ -22,3 +22,7 @@ Prerequisites of using the prefab are:
 4. That’s it. Now you can bind prefab’s output(JSON object - key-value pair) back to different widgets (text, list, table, or form). The below example shows how to bind each individual entity-value to a text-widget.
 
 ![/learn/assets/entity-extraction-from-document-picture4.png](/learn/assets/entity-extraction-from-document-picture4.png)
+
+5. Once click on the prefab it can fill values automatically in text widgets as below.
+
+![/learn/assets/entity-extraction-from-document-picture5.png](/learn/assets/entity-extraction-from-document-picture5.png)
