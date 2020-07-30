@@ -20,15 +20,14 @@ There are many situations where data has to be extracted from a scanned recipt o
 4. Bind the “URL” and “Entities” (properties of prefab) on your page. URL is the path of the document to download and process. Entities are labels from the document whose values have to be extracted. For example, in a [W2 form](https://upload.wikimedia.org/wikipedia/en/1/10/Form_W-2%2C_2016.pdf) `Employee’s social security number` could be an entity.
 
 ![/learn/assets/entity-extraction-from-document-picture2.png](/learn/assets/entity-extraction-from-document-picture2.png)
-![/learn/assets/entity-extraction-from-document-picture3.png](/learn/assets/entity-extraction-from-document-picture3.png)
 
 5. That’s it. Now you can bind prefab’s output(JSON object - key-value pair) back to different widgets (text, list, table, or form). The below example shows how to bind each individual entity-value to a text-widget.
 
-![/learn/assets/entity-extraction-from-document-picture4.png](/learn/assets/entity-extraction-from-document-picture4.png)
+![/learn/assets/entity-extraction-from-document-picture3.png](/learn/assets/entity-extraction-from-document-picture3.png)
 
 6. Once click on the prefab it can fill values automatically in text widgets as below.
 
-![/learn/assets/entity-extraction-from-document-picture5.png](/learn/assets/entity-extraction-from-document-picture5.png)
+![/learn/assets/entity-extraction-from-document-picture4.png](/learn/assets/entity-extraction-from-document-picture4.png)
 
 ## Other Prefabs
 1. [Use Box Viewer to view Office documents in browser](/learn/app-development/widgets/prefab/box-viewer-prefab.md)
