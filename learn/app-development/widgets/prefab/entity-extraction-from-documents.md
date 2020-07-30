@@ -17,7 +17,7 @@ There are many situations where data has to be extracted from a scanned recipt o
 
 ![/learn/assets/entity-extraction-from-document-picture1.png](/learn/assets/entity-extraction-from-document-picture1.png)
 
-4. Bind the “URL” and “Entities” (properties of prefab) on your page. URL is the path of the document to download and process. Entities are labels from the document whose values have to be extracted. For example, in a [W2 form](https://upload.wikimedia.org/wikipedia/en/1/10/Form_W-2%2C_2016.pdf) `Employee’s social security number` could be an entity.
+4. Bind the “URL” and “Entities” (properties of prefab) on your page. URL is the path of the document to download and process. In the screenshot below the output of fileupload widget is sent as input to this prefab. Entities are labels from the document whose values have to be extracted. For example, in a [W2 form](https://upload.wikimedia.org/wikipedia/en/1/10/Form_W-2%2C_2016.pdf) `Employee’s social security number` could be an entity.
 
 ![/learn/assets/entity-extraction-from-document-picture2.png](/learn/assets/entity-extraction-from-document-picture2.png)
 
