@@ -17,15 +17,15 @@ There are many situations where data has to be extracted from a scanned recipt o
 
 ![/learn/assets/entity-extraction-from-document-picture1.png](/learn/assets/entity-extraction-from-document-picture1.png)
 
-4. Bind the “URL” and “Entities” (properties of prefab) on your page. URL is the path of the document to download and process. In the screenshot below the output of fileupload widget is sent as input to this prefab. Entities are labels from the document whose values have to be extracted. For example, in a [W2 form](https://upload.wikimedia.org/wikipedia/en/1/10/Form_W-2%2C_2016.pdf) `Employee’s social security number` could be an entity.
+4. Bind the “URL” and “Entities” (properties of prefab) on your page. URL is the path of the document(Prefab v1.1 supports `.png` and `.jpg` formats) to download and process. You can bind URL property with [FileUpload](/learn/app-development/widgets/form-widgets/file-upload) widget's java service variable as shown in the below screen.  Entities are labels from the document whose values have to be extracted. For example, in a [W2 form](https://i0.wp.com/www.rgbrenner.com/wp-content/uploads/2015/02/W2.png) `Employee’s social security number` could be an entity.
 
 ![/learn/assets/entity-extraction-from-document-picture2.png](/learn/assets/entity-extraction-from-document-picture2.png)
 
-5. That’s it. Now you can bind prefab’s output(JSON object - key-value pair) back to different widgets (text, list, table, or form). The below example shows how to bind each individual entity-value to a text-widget.
+5. That’s it. Now you can bind prefab’s output(JSON object - key-value pair) back to different widgets (text, list, table, or form). The below example shows how to bind each individual entity-value to a `Text` widget.
 
 ![/learn/assets/entity-extraction-from-document-picture3.png](/learn/assets/entity-extraction-from-document-picture3.png)
 
-6. Once click on the prefab it can fill values automatically in text widgets as below.
+6. At the final, you can upload the document and then click on the prefab `extract_info`, It can fill values automatically in `Text` widgets as below.
 
 ![/learn/assets/entity-extraction-from-document-picture4.png](/learn/assets/entity-extraction-from-document-picture4.png)
 
