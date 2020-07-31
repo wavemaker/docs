@@ -9,7 +9,7 @@ There are many situations where data has to be extracted from a scanned recipt o
 
 ## How to use this prefab:
 
-1. Download the prefab [here](https://github.com/wavemaker/prefab-entity-extractor/releases/latest) and [import into your WaveMaker project](/learn/app-development/widgets/custom-widgets.md#importing-prefabs).
+1. Download the prefab [here](https://github.com/wavemaker/prefab-entity-extractor/releases/latest) and [import into your WaveMaker project](/learn/app-development/widgets/custom-widgets#importing-prefabs).
 
 2. Create AWS account and IAM user with policy `AmazonTextractFullAccess`.
 
@@ -32,4 +32,4 @@ There are many situations where data has to be extracted from a scanned recipt o
 ![/learn/assets/entity-extraction-from-document-picture4.png](/learn/assets/entity-extraction-from-document-picture4.png)
 
 ## Other Prefabs
-1. [Use Box Viewer to view Office documents in browser](/learn/app-development/widgets/prefab/box-viewer-prefab.md)
+1. [Use Box Viewer to view Office documents in browser](/learn/app-development/widgets/prefab/box-viewer-prefab)
