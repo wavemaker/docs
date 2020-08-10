@@ -58,22 +58,24 @@ Save the file to the project's home directory. The Docker automatically picks up
 
 ### Building Docker Image
 
-Build a Docker image by using the below Docker command with different build profiles. You can choose to build with the following build profiles including `development` and `deployment`. For more information, see [Development Profile](/learn/app-development/deployment/configuration-profiles#development-configuration-profile) and [Deployment Profile](/learn/app-development/deployment/configuration-profiles#deployment-configuration-profile).
+Build a Docker image by using the below Docker command with different build profiles. You can choose to build with the following build profiles including `development` and `deployment`.
 
 ```Docker
 docker image build --build-arg build_profile_name=<deployment-profile> -t <imagename:1.0>
 ```
 
+For more information, see [Development Profile](/learn/app-development/deployment/configuration-profiles#development-configuration-profile) and [Deployment Profile](/learn/app-development/deployment/configuration-profiles#deployment-configuration-profile). 
+
 ### Creating Docker Container
 
 For creating a Docker container, use the below Docker command.
 
-:::tip
-You can provide any host port. For example, `80`. Internal port of the container is fixed.
+:::note
+You can provide any `host_port`. For example, `80`. Internal port of the container is fixed and not changeable.
 :::
 
 ```Docker
 docker container run --name <containername> -d -p 80:8080 <imagename:1.0>
 ```
 
-You can access the application with `<IPaddress:host_port>`. For example, 127.1.0.0:80.
+You can access the application with `<IPaddress:host_port>`. For example, `127.1.0.0:80`.
