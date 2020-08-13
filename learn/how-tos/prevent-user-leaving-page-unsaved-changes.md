@@ -77,3 +77,8 @@ If the event is defined in `app.js` as well as on a page, then the following app
 - The event on the page will be invoked first before the one in `app.js`.
 - If the page event returns false, the navigation from the page will be prevented and the `app.js` event will not be invoked.
 :::
+
+## See Also
+
+[Page Navigation](/learn/app-development/ui-design/page-concepts/page-navigation)  
+[Page Events](/learn/app-development/ui-design/page-concepts/page-events)  

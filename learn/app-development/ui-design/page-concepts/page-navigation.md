@@ -44,3 +44,8 @@ Manually invoking the Navigation Action used when you want to validate the user 
        }
      };
 ```
+
+## See Also
+
+[Prevent Leaving Page with Unsaved Changes](/learn/how-tos/prevent-user-leaving-page-unsaved-changes)  
+[Page Events](/learn/app-development/ui-design/page-concepts/page-events)  
