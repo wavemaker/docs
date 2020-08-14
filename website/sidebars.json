@@ -283,6 +283,7 @@
         "app-development/dev-integration/developer-tools",
         "app-development/dev-integration/inspection-framework",
         "app-development/dev-integration/debugging",
+	"hybrid-mobile/mobile-automation-appium",
         {
           "type": "subcategory",
           "label": "Developer Integration",
