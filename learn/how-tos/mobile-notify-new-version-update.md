@@ -5,43 +5,45 @@ sidebar_label: "Notify users about new update"
 ---
 ---
 
-Every application we build requires time to time changes, new features and improvements to be released.
+Every application you build requires time-to-time changes, new features, and improvements you would release.
 
-## Problem
+## Use Case
 
-In case of mobile applications whenever there is a new version available in Play store/App Store, there must be a way to notify the user.
-Currently in WaveMaker, there is no such feature available and might be available in future releases.
+For mobile applications, when you release a new update to the PlayStore, or the AppStore, there should be a way to notify the user about the new update.
+
+However, this feature is not available out-of-the-box yet.
 
 ## Solution
 
-Still app developers can achieve this by comparing the current app version with the latest on play store or app store available to notify the app users with the latest version details.
-We suggest app developers to get the application latest version of PlayStore/AppStore and get the version of the application installed in the device from the getAppInfo Device variable, compare them and invoke a notification accordingly.
+You can still achieve this by comparing the current version of the app in your mobile with the latest version available in the PlayStore or the AppStore, and notify the app users about the latest version details. 
 
-**Here is the example on how to achieve the use case**
+For this, get the latest app version from PlayStore/AppStore, and get the app version that is installed in the device by using the `getAppInfo` device variable, and compare them and invoke a notification accordingly.
 
-1. Use a database entity to store the details of the application latest version.
+### How to Notify the user about the New Update
+
+1. Use a database entity to store the details of the application's latest version.
 
 ![MobApp-Version-Upgrade-Entity](/learn/assets/mobile-notify-new-version-entity.png)
 
-2. Before publishing the latest version of application to AppStore/PlayStore, Update the record in the entity of the database.
+2. Before publishing the latest version of the application to PlayStore/AppStore, Update the record in the entity of the database.
 
 ![MobApp-Version-Upgrade-Query](/learn/assets/mobile-notify-new-version-saved-query.png)
 
-3. Dnd a dialog in the ‘Common’ partial page with the details you want to notify the app users whenever a new version is available. 
+3. Drag-and-drop a dialog in the **Common** partial page with the details you want to notify the app users whenever a new version is available.
 
 ![MobApp-Version-Upgrade-DesignDialog](/learn/assets/mobile-notify-new-version-notification-design-dialog.png)
 
-4. To fetch the app version from the current application, we can use the ‘GetAppInfo’ device variable.
+4. To fetch the app version from the current application, you can use the `GetAppInfo` device variable.
 
 ![Mobile-Version-Upgrade-DeviceVarAppInfo](/learn/assets/mobile-notify-new-version-device-variable-appinfo.png)
 
-5. To fetch the latest version details stored in the database entity, create an application level Database CRUD variable of the entity.
+5. To fetch the latest version details stored in the database entity, create an application-level Database CRUD variable of the entity.
 
 ![MobApp-Version-Upgrade-DbCrudVar](/learn/assets/mobile-notify-new-version-database-crud-variable.png)
 
-6. Add compare logic in app.js file by adding a app-variables-data-loaded event.
+6. Add compare logic in the `app.js` file by adding an `app-variables-data-loaded` event.
 
-```
+```js
  App.subscribe("app-variables-data-loaded", function() {
     if (window['cordova'] && isLatest()) {
         App.Widgets.UpgradeNotifyDialog.open();
@@ -53,9 +55,9 @@ We suggest app developers to get the application latest version of PlayStore/App
 This event will be triggered when all the variables in the application are ready to use.
 :::
 
-The function isLatest() will determine whether the current app is latest and notify the app users accordingly.
+The `isLatest()` function determines whether the current app is the latest one and notify the app users accordingly.
 
-```
+```js
   function isLatest() {
 
    var latestAndroidVersion =    App.Variables.LatestAppVersionsData.dataSet[0].androidVersion;
@@ -68,9 +70,9 @@ The function isLatest() will determine whether the current app is latest and not
 }
 ```
 
-Here is sample logic to compare both the versions
+Following is a sample logic to compare both the versions.
 
-```
+```js
 //compare both versions
 function compare(ver1, ver2) {
     ver1 = ver1.split('.');
@@ -98,7 +100,7 @@ function addPadding(ver, lengthToPad) {
     return ver;
 }
 ```
-7. On launching the application when the latest version is available, notification dialog will be opened with the provided information. Depending on the
- underlying OS, show a corresponding link to download the latest version from PlayStore or App Store.
+
+7. On launching the application when the latest version is available, notification dialog opens with the information you provide. Depending on the underlying OS, show a corresponding link to download the latest version from the PlayStore or AppStore.
 
 ![MobApp-Version-Upgrade-Preview](/learn/assets/mobile-notify-new-version-notification-preview.png)
