@@ -1,16 +1,20 @@
 ---
-title: "Configure Pipeline (WME only)"
+title: "Configure Pipeline in WME"
 id: ""
 ---
 ---
 
-wavemaker support three phases pipeline for WME customers, are QA,Stage and Live.user can configure each phase with different profile configuratons and with other settings.with one click deployment application is deploy to the QA phase by default.Before pushing the application to the next phase user has to configure the phases in Launchapad at App Deployment section.
+:::note
+This documentation applies to WME users only.
+:::
 
-For WME customer need to configure pipeline before deploying application.visit [pipeline configuraton](../../on-premise/configure/config-pipeline.md) for App Deployment.
+WaveMaker Enterprise supports a three-phased pipeline configuration, which includes QA, Stage, and Live phases. You can configure each phase with different profile configuration settings.
 
-With one click deployment application is deploy to the QA phase by default.Before pushing the application to the next phase user has to configure the phases in Launchapad at App Deployment section for deploying into the Demo wavemaker cloud and wavemaker also support major cloud provicers AWS,AZURE ,GCP and Digital ocean kubernetes services.
+By using one-click deployment, the application deploys to the QA phase by default. You should configure the release pipeline before deploying the application. For more information, see [Pipeline Configuraton](learn/on-premise/configure/config-pipeline) for App Deployment.
 
-[![WME cloud providers](/learn/assets/manage_apps_live.png)](/learn/assets/manage_apps_live.png).
+Before pushing the application to the next phase, you have to configure the phases in the Launchpad in the App Deployment section. This allows deploying an application to the Demo phase hosted in WaveMaker cloud. WaveMaker supports all major cloud providers. You can choose to deploy it to any cloud providers including AWS, Azure, GCP, Digital Ocean, and Kubernetes Services.
+
+[![WME cloud providers](/learn/assets/manage_apps_live.png)](/learn/assets/manage_apps_live.png)
 
 After configuring the phase user just has to push the application from one phase to other for deploying application and user can configure each stage with profile and other options for depoying applications.for more details visit [profile configurations](configuration-profiles.md)
 

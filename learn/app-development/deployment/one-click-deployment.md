@@ -5,11 +5,28 @@ sidebar_label: "Overview"
 ---
 ---
 
-WaveMaker provides single-click app deployment to WaveMaker Demo cloud infrastructure. Using this option you can deploy your apps to cloud and make it public. This option is available only for Project Admins.
+One-click Deployment deploys an app to the cloud setup with just a single click. It deploys an app to the WaveMaker Demo cloud infrastructure to make the app public. You can further configure a private cloud with CI-CD pipelines in the next steps.
+
+With One-click Deployment, you can test or demo your application in the early stages of development, or also when you do not necessarily have to deploy the application to a private cloud provider or an on-premise environment for every small change.
+
+:::note
+One-click deployment is available for Project Admins only.
+:::
+
+WaveMaker apps follow a different deployment process for WaveMaker Enterprise (WME) and WaveMaker Online (WMO).
+
+For more information about deploying to WaveMaker demo cloud using one-click deployment, see [WaveMaker Demo Cloud](/learn/app-development/deployment/release-management#demo).
+
+
+
+## How it works
+
+There are a few steps to follow before you get started with one-click deployment.
+
 
 ## Checks before deployment
 
-Deployed apps will be hosted on WaveMaker [Demo](/learn/app-development/deployment/release-management#demo) cloud. For more information, see [CI/CD Pipeline in WaveMaker](/learn/app-development/deployment/release-management).
+Deployed apps host on WaveMaker [Demo](/learn/app-development/deployment/release-management#demo) cloud. For more information, see [CI/CD Pipeline in WaveMaker](/learn/app-development/deployment/release-management).
 
 ### Configuration profile settings
 
