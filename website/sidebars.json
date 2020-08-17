@@ -695,8 +695,11 @@
             "how-tos/app-migration-wavemaker-9x-10x",
             "how-tos/debug-monitor-performance-issues-using-fusion-reactor"
           ],
-
-          "Mobile gesture":
+         "Mobile App Solutions":
+          [
+            "how-tos/mobile-notify-new-version-update"
+          ],
+         "Mobile gesture":
           [
             "how-tos/setting-swipe-gestures-list-widget",
             "how-tos/working-pull-refresh"
