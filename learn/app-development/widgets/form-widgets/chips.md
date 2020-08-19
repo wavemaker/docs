@@ -182,7 +182,7 @@ where
 1. Import sample hrdb and create a CRUD Variable for the Employee table.
 2. Drag and drop Chips widget and bind the Dataset Value property to the HRDB employee variable
 3. Set Data field property to All Fields,
-4. From the Styles tab bind Chip item class name to the following expression: bind: item.datavalue.department.name === 'Engineering'? 'skyblue' : 'mustard' This will check if employee's department name is engineering applies "skyblue" class else applies "mustard" class (note: here "item" denotes the chip object.) [![](/learn/assets/chips_ex3_1.png)](/learn/assets/chips_ex3_1.png)[![](/learn/assets/chips_ex3_2.png)](/learn/assets/chips_ex3_2.png)
+4. From the Styles tab bind Chip item class name to the following expression: bind: item.value.department.name === 'Engineering'? 'skyblue' : 'mustard' This will check if employee's department name is engineering applies "skyblue" class else applies "mustard" class (note: here "item" denotes the chip object.) [![](/learn/assets/chips_ex3_1.png)](/learn/assets/chips_ex3_1.png)[![](/learn/assets/chips_ex3_2.png)](/learn/assets/chips_ex3_2.png)
 5. Add the following class to the app using the Style tab – for skyblue and mustard
 
 ```
