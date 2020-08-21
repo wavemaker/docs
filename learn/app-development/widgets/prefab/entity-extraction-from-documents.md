@@ -6,7 +6,7 @@ id: ""
 
 Automatically extract data from structured documents such as Invoices, Receipts.
 
-There are many situations where data has to be extracted from a scanned recipt or an screenshot taken from a mobile phone. Automatically extracting information from such documents will enable in building delighful user experiences. This prefab will help implement such extraction of data any structured document. Given the document as input, the prefab uploads to it to [AWS Textract](https://docs.aws.amazon.com/textract/latest/dg/what-is.html) to extract data from it. The extracted data is available as key-value pair and developer can pick the data they are interested in.
+There are many situations where specific data needs to be extracted from a scanned receipt or say, a screenshot taken from a mobile phone. To be able to automatically extract chosen information from such documents can help build delighful user experiences. This prefab helps implement this extraction of data from any structured document. With the document as the input, the prefab uploads it to [AWS Textract](https://docs.aws.amazon.com/textract/latest/dg/what-is.html) to extract data from it. This extracted data is available as key-value pair and developers can pick the data they are interested in.
 
 ## How to use this prefab
 
