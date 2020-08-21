@@ -1,5 +1,5 @@
 ---
-title: "Automate WaveMaker mobile apps using appium"
+title: "Automate testing of WaveMaker mobile apps using Appium"
 id: "mobile-automation-appium"
 sidebar_label: "WaveMaker Mobile Apps Automation"
 ---
