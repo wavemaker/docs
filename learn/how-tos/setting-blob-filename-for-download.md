@@ -1,50 +1,82 @@
 ---
-title: "How to Set the Filename for Downloading a Blob"
+title: "How to Set Uploaded Filename for Blob Downloads"
 id: ""
 sidebar_label: "Setting Blob Filename for Download"
 ---
 ---
 
-Learn how to set the filename for downloading a blob in a Data Table widget with the same name as the uploaded file.
+Learn how to set the filename for blob type when downloading a blob from a Data Table to have the same name when the file was uploaded.
 
 :::note
 In this example, we have created a simple table to describe this use-case.
 :::
 
-## Add an Extra Column in the Table
+## Insert New Column in the Table
 
 1. Go to the table which contains the blob file.
 
-2. Add an extra column in the table. For example, name the extra column as `filename`. This field stores the uploaded blob's filename.
+2. Add a new column in the table. For example, name the new column as `filename` with a `string` data type. This field stores the uploaded blob's filename.
 
-3. Once the filename column is added into the database, save the table and go to the Data Table.
+3. Once the filename column is added into the database, save the table and go to the Data Table page.
 
-## Filename settings in the Data Table
+## Configure the New Column Properties
 
-4. Drag and drop data table with Inline Editable layout and in the table, column section and uncheck the filename column. This hides the column and would not display in the Data Table.
+:::note
+Use an existing Data Table which contains the blob or drag and drop a new table on the canvas. In this example, we are creating a new Data Table with an **Inline Editable** layout.
+:::
 
-5. For data table widget "On Before Record Insert" and "On Before Record Update" event select javascript from the dropdown individually.
+1. In the table, go to the column section and uncheck the Blob filename column. Or when you create a Data Table, you do it by unchecking as below. By doing this, the new filename column hides and it would not display in the Data Table.
 
-6. Now, go to the script tab of the page and for the above-created events add the script as below:
+![uncheck filename column](/learn/assets/uncheck-filename-blob-download.png)
+
+
+## Configure Events
+
+:::note
+Blob file is named as `Profile`.
+The newly added column is named as `filename`.
+:::
+
+1. Go to the Data Table Events' tab and locate the `On Before Record Insert` event and select `Javascript` from the dropdown. Similarly, go to the `On Before Record Update` event and select `Javascript` from the dropdown.
+
+2. After this, go to the script tab of the page for the events `On Before Record Insert` and `On Before Record Update` and add the following script.
 
 ```js
-if (row.<BlobFieldName>) {row.<filenameFieldName> = row.<BlobFieldName>.name;}
+if (row.<BlobFieldName>) {
+    row.<blobfilenameFieldName> = row.<BlobFieldName>.name;
+    }
 ```
 
-7 Now, go to the Advanced settings of the datatable widget and navigate to columns tab. In columns tab, select blobtype column and for "Value Expression" change the hyperlink property as below and add the `download="true"` property to it and save.
+For example:
+
+```js
+Page.UserDetailsTable1Beforerowinsert = function($event, widget, row, options) {
+    if (row.profile) {
+        row.filename = row.profile.name;
+    }
+};
+```
+
+## Set Blob and Download Properties
+
+1. Now, go to the **Advanced settings** of the Data Table widget and navigate to the **Columns** tab. 
+2. In the columns tab, select the **Blob** type column. For example, the `Profile` column.
+3. Go to the **Value Expression** property for the blob column and change the `hyperlink` property as shown below.
 
 ```js
 hyperlink="bind:row.getProperty('<BlobFieldName>') + '?
 filename='+row.getProperty('<filenameFieldName>')"
 ```
 
-The completed-expression should look as shown below:
+4. In the same expression, add the `download="true"` property to it, and click **Save**.
+
+The entire expression for the **Value Expression** property would look as shown below.
 
 ```js
-<wm-anchor caption="" hyperlink="bind:row.getProperty('blobdata') + '?
+<wm-anchor caption="" hyperlink="bind:row.getProperty('profile') + '?
 filename='+row.getProperty('filename')" target="_blank" iconclass="wm-icon wm-icon24 
 wi wi-file" class="col-md-9" download="true" show="bind:row.getProperty('blobdata')!= null">
 </wm-anchor>
 ```
 
-8. Now, preview the application and check the functionality.
+Preview the application and check the functionality. This was when downloading a blob file from a Data Table will have the same name as when the file was uploaded.
