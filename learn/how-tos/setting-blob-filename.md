@@ -1,11 +1,11 @@
 ---
-title: "How to Set Uploaded Filename for Blob Downloads"
+title: "How to Set Name of Blob Type Downloaded from Data Table"
 id: ""
-sidebar_label: "Setting Blob Filename for Download"
+sidebar_label: "Setting Blob Filename"
 ---
 ---
 
-Learn how to set the filename for blob type when downloading a blob from a Data Table to have the same name when the file was uploaded.
+Learn how to set the name for a blob type when downloading it from a Data Table to have the same name when the blob was uploaded.
 
 :::note
 In this example, we have created a simple table to describe this use-case.
@@ -79,4 +79,4 @@ wi wi-file" class="col-md-9" download="true" show="bind:row.getProperty('blobdat
 </wm-anchor>
 ```
 
-Preview the application and check the functionality. This was when downloading a blob file from a Data Table will have the same name as when the file was uploaded.
+Preview the application and check the functionality. With this, when downloading a blob from a Data Table will have the same name when the file was uploaded.
