@@ -16,7 +16,7 @@ Uploading files from a mobile phone is a common use case that every mobile app h
   
 ## Solution
 
-A Cordova plugin was created (with open source license) by WaveMaker team to address the above problems. Please visit [github repo of the plugin](https://github.com/wavemaker/wm-filepicker-plugin) to know more about the plugin. 
+A Cordova plugin was created (with open source license) by WaveMaker team to address the above problems. Please visit [github repo of the plugin](https://github.com/wavemaker/wm-filepicker-plugin) to know more about the plugin. This plugin requires Swift 4.2 runtime, which was released in 2018. Since iOS13, Swift 4.2 runtime is part of the iOS. For earlier versions of iOS (10-12), Swift 4.2 runtime is added to [IPA bundle by the XCode](learn/wavemaker-release-notes/v10-5-0). Due to that addition, the size of IPA will increase (~70 MB). If your app doesnot need to support less iOS 13, changing deployment-target preference in config.xml to iOS 13 will reduce the IPA size.
   
 #### WavaMaker mobile apps automatically upgraded to use this file picker
 
