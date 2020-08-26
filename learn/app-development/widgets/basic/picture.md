@@ -1,10 +1,11 @@
 ---
-title: "Media - Picture Widget"
+title: "Picture Widget"
 id: ""
+sidebar_label: "Picture"
 ---
 ---
 
-Display an image with a Picture widget. Just drag and drop the **Picture** widget and bind it to the resource using the Property Panel.
+Display an image with a picture widget. Just drag and drop the **Picture** widget and bind it to the resource using the Property Panel.
 
 :::note
 **Picture widget** can be used by itself or within any widget like Live List, Data Grid, or Carousel and more. It can be bound to a database column containing the URL for the picture resource location. Example, the `picurl` field of Employee database from Sample DB.

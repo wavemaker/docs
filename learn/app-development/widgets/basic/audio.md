@@ -1,13 +1,14 @@
 ---
-title: "Media -  Audio Widget"
+title: "Audio Widget"
 id: ""
+sidebar_label: "Audio"
 ---
 ---
 
-WaveMaker supports audio files with an Audio widget. Just drag and drop the **Audio** widget and bind it to the resource using the Property Panel.
+WaveMaker supports audio media. To use an audio in your project, simply drag and drop the **Audio** widget and bind it to the resource using the Property Panel.
 
 :::note
-The following table gives the browser support for **audio** and **video** resources.
+The following table gives the browser support for **audio** and **video** resources. To learn more about video file support, see [Video Widget](/learn/app-development/widgets/basic/video).
 :::
 
 |Browser|MP4|WebM|Ogg|
@@ -32,7 +33,7 @@ The following features are available for all the **Audio** widget.
 
     [![media resource](/learn/assets/media_resources.png)](/learn/assets/media_resources.png)
 
-### Audio Customizations
+## Audio Customizations
 
 You can add customizations from the **Properties** panel.
 
@@ -41,7 +42,7 @@ You can add customizations from the **Properties** panel.
 3. **Controls** — a boolean specifying whether the browser should display its default media controls
 4. **Preload** — none/metadata/auto — where 'metadata' means preload just the metadata and 'auto' leaves the browser to decide whether to preload the whole file.
 
-### Audio Widget Properties
+## Audio Widget Properties
 
 | Property | Description |
 | --- | --- |
