@@ -992,13 +992,13 @@
     "Basic Widgets":
     [
       "app-development/widgets/basic/anchor",
-      "app-development/widgets/basic/media-widgets",
+      "app-development/widgets/basic/picture",
       "app-development/widgets/basic/html",
       "app-development/widgets/basic/icon",
       "app-development/widgets/basic/iframe",
       "app-development/widgets/basic/label",
       "app-development/widgets/basic/message",
-      "app-development/widgets/basic/media-widgets",
+      "app-development/widgets/basic/video",
       "app-development/widgets/basic/progress-bar",
       "app-development/widgets/progress-circle",
       "app-development/widgets/basic/richtext-editor",
@@ -1006,7 +1006,7 @@
       "app-development/widgets/basic/search-basic-usage",
       "app-development/widgets/basic/spinner",
       "app-development/widgets/basic/tree",
-      "app-development/widgets/basic/media-widgets"
+      "app-development/widgets/basic/audio"
     ],
 
     "Charts":
