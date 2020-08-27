@@ -14,7 +14,7 @@ Learn how to develop a simple hybrid mobile app in WaveMaker Studio. This app us
 |[Segmented Control](/learn/app-development/widgets/mobile-widgets/segmented-control) | Segments are vertical tabs used for mobile devices.|
 |[Grid Layout](/learn/app-development/widgets/container/grid-layout) | To align the contents of the app.|
 |[Camera](/learn/app-development/widgets/mobile-widgets/camera) | To access the mobile camera to take pictures.|
-|[Picture](/learn/app-development/widgets/basic/media-widgets) | To display the captured images.|
+|[Picture](/learn/app-development/widgets/basic/picture) | To display the captured images.|
 |[List](/learn/app-development/widgets/datalive/list) | To access and display the contacts from the mobile.|
 
 ## Creating a Mobile App

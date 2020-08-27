@@ -74,19 +74,19 @@ To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
 | Widget | Description | Overview | Reference |
 | --- | --- | --- | --- |
 |**Anchor**  | **Anchor** is used as a navigation link within the app or an external URL. |  [Overview](/learn/app-development/widgets/basic/anchor/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Anchor.html) |
-| **Audio** | **Audio** widget is to embed an audio player into the project. | [Overview](/learn/app-development/widgets/media-widgets/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Audio.html) |
+| **Audio** | **Audio** widget is to embed an audio player into the project. | [Overview](/learn/app-development/widgets/basic/audio) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Audio.html) |
 | **HTML** | **HTML** is a widget to display HTML content or to render the text content using HTML. | [Overview](/learn/app-development/widgets/datalive/form/html/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Html.html) |
 | **Icon** | **Icon** widget is for displaying a comprehensible symbol or graphic. | [Overview](/learn/app-development/widgets/basic/icon/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Icon.html) |
 | **Iframe** | **Iframe** is a widget to display a web page content in a separate frame, without affecting the current page content or styles. |  [Overview](/learn/app-development/widgets/datalive/form/iframe/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Iframe.html) |
 |  **Label** | **Label** is a uneditable text as a heading or to describe another widget. |  [Overview](/learn/app-development/widgets/basic/label/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Label.html) |
 | **Message** | **Message** is a widget to display success, info, loading, error or warning messages to the user. |  [Overview](/learn/app-development/widgets/basic/message/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Message.html) |
-|**Picture**  | **Picture** is a widget to display images in the project. | [Overview](/learn/app-development/widgets/media-widgets/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Picture.html) |
+|**Picture**  | **Picture** is a widget to display images in the project. | [Overview](/learn/app-development/widgets/basic/picture) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Picture.html) |
 |**Progress Bar**  | **Progress Bar** is an actual indicator of activity progress with time/percentage. |  [Overview](/learn/app-development/widgets/basic/progress-bar/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/ProgressBar.html) |
 | **Richtext Editor**  | **Richtext Editor** is an input control for formatted text content, optionally including media (WYSIWYG). |  [Overview](/learn/app-development/widgets/basic/richtext-editor/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/RichTextEditor.html) |
 |**Search**  | **Search** within a data source and give results. | [Overview](/learn/app-development/widgets/basic/search/) | [Reference](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Search.html) |
 | **Spinner**  | **Spinner** is a widget for a visual indicator of activity in progress. |  [Overview](/learn/app-development/widgets/basic/spinner/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Spinner.html) |
 | **Tree**  | **Tree** widget can be used to display data in a hierarchical format. | [Overview](/learn/app-development/widgets/basic/tree/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tree.html) |
-|**Video**  | **Video** is a widget to embed a media player into the project. | [Overview](/learn/app-development/widgets/media-widgets/) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Video.html) |
+|**Video**  | **Video** is a widget to embed a media player into the project. | [Overview](/learn/app-development/widgets/basic/video) | [API Docs](https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Video.html) |
 
 ## Chart Widgets
 ---
