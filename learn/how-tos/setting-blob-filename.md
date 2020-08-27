@@ -22,13 +22,16 @@ In this example, we have created a simple table to describe this use-case.
 ## Configure the New Column Properties
 
 :::note
-Use an existing Data Table which contains the blob or drag and drop a new table on the canvas. In this example, we are creating a new Data Table with an **Inline Editable** layout.
+You can use an existing Data Table which contains the blob, or drag and drop a new table on the canvas. In this example, we are creating a new Data Table with an **Inline Editable** layout.
 :::
 
-1. In the table, go to the column section and uncheck the Blob filename column. Or when you create a Data Table, you do it by unchecking as below. By doing this, the new filename column hides and it would not display in the Data Table.
+- When you create a Data Table, uncheck the column as below. By doing this, the new `filename` column hides and it would not display in the Data Table.
 
 ![uncheck filename column](/learn/assets/uncheck-filename-blob-download.png)
 
+- Or, when you are using an existing Data Table, click the table, go to the **Advanced Settings** of the Data Table and go to the **Columns** section. Uncheck the Blob filename column as shown in the image below.
+
+![hide data table column](/learn/assets/datatable-hide-column.png)
 
 ## Configure Events
 
