@@ -1,5 +1,5 @@
 ---
-title: "Building project with maven"
+title: "Building Project with Maven"
 id: ""
 ---
 ---

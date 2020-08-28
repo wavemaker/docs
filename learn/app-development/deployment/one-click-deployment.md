@@ -1,56 +1,33 @@
 ---
 title: "One-Click Deployment"
 id: "one-click-deployment"
-sidebar_label: "Overview"
+sidebar_label: "One-click Deployment"
 ---
 ---
 
-One-click Deployment deploys an app to the cloud setup with just a single click. It deploys an app to the WaveMaker Demo cloud infrastructure to make the app public. You can further configure a private cloud with CI-CD pipelines in the next steps.
-
-With One-click Deployment, you can test or demo your application in the early stages of development, or also when you do not necessarily have to deploy the application to a private cloud provider or an on-premise environment for every small change.
+One-click Deployment deploys an app to the cloud setup with just a single click. To deploy an app, you simply click the **Deploy** icon as shown in the image below.
 
 :::note
-One-click deployment is available for Project Admins only.
+Ensure to push your latest changes to VCS before **One-click deployment**. Also, if you are deploying the app for the first time, check the configuration profile settings. For more information, see [Deployment Overview](/learn/app-development/deployment/deployment-overview).
 :::
 
-WaveMaker apps follow a different deployment process for WaveMaker Enterprise (WME) and WaveMaker Online (WMO).
+[![deploy icon](/learn/assets/deploy.png)](/learn/assets/deploy.png)
 
-For more information about deploying to WaveMaker demo cloud using one-click deployment, see [WaveMaker Demo Cloud](/learn/app-development/deployment/release-management#demo).
-
-
-
-## How it works
-
-There are a few steps to follow before you get started with one-click deployment.
-
-
-## Checks before deployment
-
-Deployed apps host on WaveMaker [Demo](/learn/app-development/deployment/release-management#demo) cloud. For more information, see [CI/CD Pipeline in WaveMaker](/learn/app-development/deployment/release-management).
-
-### Configuration profile settings
-
-Deployment configuration profile uses various service configurations like the database, REST, SOAP, Web Socket, and Security. These settings can be modified from [Configuration Profiles](/learn/app-development/deployment/configuration-profiles/) under the **Project Settings** dialog. Check these settings before deploying an app.
-
-[![](/learn/assets/deploy.png)](/learn/assets/deploy.png)
-
-### Push to VCS
-
-Only apps under version control will be deployed. In case you have not pushed changes done to your app to VCS, you will be prompted to do so. You cannot proceed with deployment until you commit your changes.
+Deployed apps host on WaveMaker [Demo](/learn/app-development/deployment/release-management#demo) cloud. To learn more, see [CI/CD Pipeline in WaveMaker](/learn/app-development/deployment/release-management).
 
 ## Deployment Flow
 
-The Deployment is runs in the background. You can choose to ‘close’ the Deployment progress dialog and continue with operations if needed.
+The Deployment runs in the background. You can choose to ‘close’ the Deployment progress dialog and continue working with Studio.
 
 ### Deployment Status
 
-The user keeps informed about the status of the deployment through the `toaster UI`. If the user works on the same project, after the deployment, they get notified by an email.
+You can see the status of the deployment through the `toaster UI`. If you work on the same project, after the deployment, you get notified by an email.
 
 ### Deployment Progress
 
 The progress of the Deployment is indicated by the change of deployment icon on the header as shown below, and by clicking the icon, you can see an option to **Check Deployment Status** allowing you to open the dialog again.
 
-[![](/learn/assets/Check-deployment-status-Click-e1554896395542.png)](/learn/assets/Check-deployment-status-Click-e1554896395542.png)
+![deployment-status](/learn/assets/Check-deployment-status-Click-e1554896395542.png)
 
 ### Deployment Failed
 
@@ -80,5 +57,8 @@ Launches the app in a browser.
 
 You can push the deployed app to live and other phases. This option opens the [Apps Portal](/learn/app-development/deployment/manage-deployed-apps#deployed-apps-management) page.
 
-[![](/learn/assets/cloud_postdeploy.png)](/learn/assets/cloud_postdeploy.png)
+![cloud post deploy](/learn/assets/cloud_postdeploy.png)
 
+## See Also
+
+[One-click Deployment Flow](/learn/app-development/one-click-deployment-process)  

@@ -4,9 +4,13 @@ id: ""
 ---
 ---
 
-App Configuration is externalized at each service through configuration profiles. Configuration for DB, REST servers etc. can be separated for Development and Deployment environments through Profiles. The profile can be accessed from the Settings option in the Secondary Actions.
+App Configuration is externalized at each service through configuration profiles. Configuration for DB, REST servers, and more. can be separated for Development and Deployment environments through Profiles. The profile can be accessed from the Settings option in the Secondary Actions.
 
-[![](/learn/assets/config_settings.png)](/learn/assets/config_settings.png)
+:::note
+Before you select the environment, you should set the build option mode. For more information, see [Build Options in WaveMaker](/learn/app-development-deployment/build-options).
+:::
+
+[![config settings](/learn/assets/config_settings.png)](/learn/assets/config_settings.png)
 
 The **Configuration Profiles** allows one to run the same application under different environments with different configurations. This is in line with _[Maven Configuration Profiles](https://maven.apache.org/guides/mini/guide-building-for-different-environments.html)_. By default, two profiles are generated for every application - **Development** used with the **Run** option and **Deployment** for **Deploy** option.
 
