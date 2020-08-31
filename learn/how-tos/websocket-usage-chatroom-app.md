@@ -65,10 +65,11 @@ This variable will get employee details to be displayed against the chat message
     - Check the properties **Request data on page load**
     - From the **Events** tab, set **On Success** to trigger _JavaScript._ Enter the following code to retrieve the picurl of the employees:
         
-            $scope.employeeDataonSuccess = function(variable, data) {
-                for (var i = 0; i < data.length; i++) {
-                    $scope.picUrls[data[i].username] = data[i].picurl;
-                }
+         Page.employeeDataonSuccess = function(variable, data) {
+
+             for (var i = 0; i < data.length; i++) {
+              Page.picUrls[data[i].username] = data[i].picurl;
+              }
             };
         
 
