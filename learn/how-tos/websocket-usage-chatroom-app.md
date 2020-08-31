@@ -31,9 +31,10 @@ Chatroom App utilizes a WebSocket service to enable chat among multiple users.
 
 **Step 3:** Configure the Service and Import
 
-After successfully testing the service, click **Next** button to configure the service with any parameters if required.
+After successfully testing the service, click **Next** to configure the service with any parameters if required.
+
 - If the service requires query params, they will show up under the query params section. You can make the path of the URL dynamic by adding path params under the second tab.
-- Give a name to the service (in this case **chatroomservice**) and click on **Import** and the service will be successfully imported into the project.
+- Give a name to the service (in this case **chatroomservice**) and click **Import** and the service will be successfully imported into the project.
 
 ![chat config](/learn/assets/wschat_config.png)
 
@@ -41,7 +42,7 @@ After successfully testing the service, click **Next** button to configure the 
 
 **Step 4:** **Create a WebSocket Variable** against the service
 
-This variable is an interface between the client and server. Follow the below steps to create the variable:
+This variable is an interface between the client and the server. Follow the below steps to create the variable:
 
 - Open the page where you want to use the chat service
 - [Create a Web Service Variable](/learn/assets/var_sel.png)
