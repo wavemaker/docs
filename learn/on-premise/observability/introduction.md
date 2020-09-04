@@ -7,7 +7,7 @@ sidebar_label: "Introduction"
 
 Did you ever wonder how a Human body automatically responds to any negative inconvenience?
 
-The body fixes itself with a *Negative Feedback Loop*, which detects the anomalys and performs the required actions to maintain a stable, relatively constant
+The body fixes itself with a *Negative Feedback Loop*, which detects the anomalies and performs the required actions to maintain a stable, relatively constant
  internal environment.
  
  Example:
@@ -16,7 +16,7 @@ The body fixes itself with a *Negative Feedback Loop*, which detects the anomaly
 
 *Wouldn't it be great if you had an application with a similar mechanism?* 
 
-Well, we have engineered the WaveMaker Platform in a similar way.
+Well, we have Engineered the WaveMaker Platform to do the same.
 
 ![WaveMaker Negative Feedback Loop](/learn/assets/wme-setup/wme-observability/negative-feedback-loop-wavemaker.png)
 
@@ -28,7 +28,7 @@ All this is possible due to the WaveMaker's **Observability** module.
 > There are many more features offered by this module besides the one mentioned above.
 
 With the Observability module in place, we can proudly say that WaveMaker truly "owns" its product because it knows exactly what is happening inside the
- system at any point of time, the whole platform is under complete control.
+ system at any point in time, the whole platform is under complete control.
  
 WaveMaker's Observability module consists of the following components.
 

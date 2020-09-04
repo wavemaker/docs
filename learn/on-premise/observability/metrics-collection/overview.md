@@ -7,10 +7,10 @@ sidebar_label: "Overview"
 
 *Metrics* is needed to get realtime application performance insights.
 
-In WaveMaker Platform, we have integrated **Prometheus** monitoring tool. Prometheus is widely used and has a lot of opensource modules and tools which are
+In the WaveMaker Platform, we have integrated the **Prometheus** monitoring tool. Prometheus is widely used and has a lot of opensource modules and tools which are
  easy to integrate.
 
-The following tools are integrated with prometheus in WaveMaker Platform
+The following tools are integrated with Prometheus in WaveMaker Platform
 
 | tools      | Description |
 | ----------- | ----------- |
@@ -19,7 +19,7 @@ The following tools are integrated with prometheus in WaveMaker Platform
 | [jmeter](https://github.com/johrstrom/jmeter-prometheus-plugin) | Collects *jvm* level classloader,thread,heap,GC related metrics  |
 | [micrometer](https://github.com/micrometer-metrics/micrometer) | This is used to collect any custom metrics from the java web application deployed as a microservice in a container. | 
 
-With the help of above tools, all the data is aggregated at Prometheus. 
+With the help of the above tools, all the data is aggregated at Prometheus. 
 
 
 ### Architecture
@@ -30,8 +30,8 @@ The below image shows how *Prometheus* is integrated with the components in the 
 
 **node_exporter** : All the instances *10.0.0.1* - *10.0.0.N* contain a *node_exporter* container which collects the node (Instance) related metrics  
 
-**cadvisor** : Each and every instance contains a *cadvisor* which collects the container related metrics of all the containers present in the same
+**cadvisor** : Every instance contains a *cadvisor* which collects the metrics  related to all the containers present in the same
  instance
 
-**jmeter,micrometer** : Each and every jvm application deployed as a microservice in containers *A*-*Z* generates its own metrics.
+**JMeter, micrometer**: Each and every JVM application deployed as a microservice in containers *A*-*Z* generates its own metrics.
   

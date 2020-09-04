@@ -7,21 +7,20 @@ sidebar_label: "Kibana"
 
 ### Introduction
 It's is considered as a good practice for a *Backend Developer* to add log statements in his code. So, when the application is deployed he can go through the
-log statements to better understand the flow. This is helpful in building a stable feature. But, in some cases it is most important to check the log files of
- the application when a feature is not working.
+log statements to better understand the flow. This helps build a stable feature. But, in some cases, it is most important to check the log files of the application when a feature is not working.
 
-For this the *Backend Engineer* would have to do the following.
+For this, the *Backend Engineer* would have to do the following.
 
 - Obtain remote server access.
 - Know the required details to connect to the server
 - Access the container
 - Open the application logs file using a cli text editor
-- Search for the required log using basic string search provided by the cli text editor.  
+- Search for the required log using the basic string search provided by the cli text editor.  
 
 It gets more and more difficult if the logs are to shared across teams or if a developer wants to check the logs after few days.   
  
-Kibana solves all these problems by making the logs easily accessible. One can also be easily share the logs across the team with a single URL. The logs also
- secure as they can only be accessed by authenticated user.
+Kibana solves all these problems by making the logs easily accessible. One can also easily share the logs across the team with a single URL. The logs also
+ secure as they can only be accessed by authenticated users.
  
 > You can check Kibana's [Opensource repository](https://github.com/elastic/kibana) for more information.  
 
@@ -33,7 +32,7 @@ Kibana solves all these problems by making the logs easily accessible. One can a
 
 ---
 
-2) Then, in the dial menu the "**logs**" button is supposed to be clicked as shown below
+2) Then, in the dial menu, the "**logs**" button is supposed to be clicked as shown below
 
 ![Launchpad Logs Click](/learn/assets/wme-setup/wme-observability/kibana/launchpad-logs-click.png)
 
@@ -45,7 +44,7 @@ Kibana solves all these problems by making the logs easily accessible. One can a
 
 ---
 
-4) In order to search for logs using kibana one needs to click on the "**Discover**" button located in the left navigation bar.
+4) To search for logs using Kibana one needs to click on the "**Discover**" button located in the left navigation bar.
 
 ![Kibana Discover Click](/learn/assets/wme-setup/wme-observability/kibana/kibana-discover-click.png)
 
@@ -77,7 +76,7 @@ Application log filters
 | tag.keyword | The Platform microservice name | **remote-studio**, **jobs-service** , **jobs-worker**, etc
 | thread.keyword | The logs belonging to a particular java thread id  | http-nio-8008-exec-3 |
 
-The *Access logs* are also pushed to *Elasticsearch*, they can be accessed using the below filters in the same page.  
+Similarly, the *Access logs* are also pushed to *Elasticsearch*, they can be also be filtered using the below filters. 
 
 Access log filters
 
@@ -93,7 +92,7 @@ Access log filters
 The "**.keyword**" suffix mentioned in all the above filters is optional. Adding it will just help in auto-suggestion.   
 :::
 
-Besides, the above mentioned filters Kibana supports many more filters, but the above should be more than sufficient in most cases.  
+Apart from the filters mentioned above, Kibana supports many more filters, but the above should be more than sufficient in most cases.  
 
 ### How to apply filters
 
