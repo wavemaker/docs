@@ -4,8 +4,6 @@ id: "number"
 ---
 ---
 
-##### 10.0 release
-
 **Number widget** is an editor widget that accepts numeric input. 
 
 You can:
@@ -45,7 +43,7 @@ Number widget applies the number formatting as per the Locale automatically. In 
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. |
-| Allow Trailing Zeros | This property specifies whether to keep trailing zeros after decimal point or not.
+| Allow Trailing Zeros | This property specifies whether to keep trailing zeros after decimal point or not.|
 | Update value on | If the selected value is `blur`: data value will be updated on blur event, `default`: data value will be updated on key up. |
 
 ## Events
