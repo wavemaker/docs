@@ -7,9 +7,9 @@ sidebar_label: "Grafana"
 
 *Grafana* is a Dashboard creation and visualization tool. All the metrics from Prometheus can be accessed by Grafana and complex dashboards can be created from those metrics.
 
-This is very useful because we do not need to type in Prometheus queries every time. A *Dashboard* is created once and is accessed multiple times.   
+This is very useful because we do not need to type in Prometheus queries every time. A *Dashboard* is created once and is accessed multiple times.
 
-### How to access Grafana 
+### How to access Grafana
 
 1) After the WaveMaker login, we are supposed to open the *Launchpad* and click on the dial icon located on the top left as shown below
 
@@ -29,18 +29,17 @@ This is very useful because we do not need to type in Prometheus queries every t
 
 ---
 
-4) Then, we can access the dashboards by clicking on the "**home**" button at the top left 
+4) Then, we can access the dashboards by clicking on the "**home**" button at the top left
 
 ![Grafana Home Click](/learn/assets/wme-setup/wme-observability/prometheus/grafana-home-click.png)
 
 ---
 
-5) You should be able to see the list of dashboards as shown in the below image. 
+5) You should be able to see the list of dashboards as shown in the below image.
 
 ![Grafana Dashboard List](/learn/assets/wme-setup/wme-observability/prometheus/grafana-dashboards-list.png)
 
-
-### Available Dashboards 
+### Available Dashboards
 
 WaveMaker contains the following list of dashboards
 
@@ -60,4 +59,3 @@ WaveMaker contains the following list of dashboards
 | Studio Pages | Wavemaker app page creation and load summary  |
 | User Usage Stats | Seven days user platform usage trend |
 | VCS Summary | Wavemaker user VCS activity summary  |
-

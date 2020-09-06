@@ -5,7 +5,7 @@ sidebar_label: "Alerts"
 ---
 ---
 
-WaveMaker uses the **Prometheus AlertManager** to listen on the data accumulated at *Prometheus* and fire an alert based on the query included in the alert.
+WaveMaker uses the **Prometheus AlertManager** to listen to the data accumulated at *Prometheus* and fire an alert based on the query included in the alert.
 
 ### Accessing Alerts
 
@@ -13,8 +13,8 @@ The list of Alerts can be accessed from Prometheus UI by clicking on the "**Aler
 
 ![Prometheus UI Alert Button](/learn/assets/wme-setup/wme-observability/prometheus/prometheus-alert-button-click.png)
 
-
 ### Available Alerts
+
 Following are the list of alerts included in WaveMaker
 
 | Alerts Name | Description |
