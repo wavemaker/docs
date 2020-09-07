@@ -17,7 +17,9 @@ The list of Alerts can be accessed from Prometheus UI by clicking on the "**Aler
 
 Following are the list of alerts included in WaveMaker
 
-| Alerts Name | Description |
+#### Platform Health
+
+| Alert Name | Description |
 | ----------- | ----------- |
 | InstanceDown | Instance is down. |
 | RootDiskSpaceFull | Root Disk space on an instance is full |
@@ -29,22 +31,52 @@ Following are the list of alerts included in WaveMaker
 | ContainerDown | The container is not sending health signals |
 | UserContainerMemoryUsage | The User workspace container has Less Memory |
 | AppContainerMemoryUsage | The User Application container has Less Memory |
-| VcsPullFailed | A VCS pull operation Failed |
-| VcsPushFailed | A VCS push operation Failed |
 | TomcatDeploymentFailed | A Platform microservice has a deployment failure |
 | JvmThreadsDeadlocked | When a JVM thread encounters a deadlock |
-| TaskIdleTimeout | The *task* of a *job* submitted to jobs-service has not been served by the worker. More workers are probably needed |
-| TaskExecutionTimeout | The worker was unable to complete the *task* of a *job* submitted to jobs-service |
+| PlatformInstanceDown | An Instance in the Platform is not sending health signals |
+
+#### Slow APIs
+
+| Alert Name | Description |
+| ----------- | ----------- |
+| LongRunningUserAPICallDetected | An API call submitted by the user is taking a long time to process |
+| LongRunningPlatformAPICallDetected | An intercommunication API call is taking a long time to process |
+| PlatformBottleNeckDetected | A microservice has a lot of pending API calls. This will slow down the whole platform |
+
+#### API Failures
+
+| Alert Name | Description |
+| ----------- | ----------- |
+| TooManyExceptions | A huge number of exceptions are detected in a short period |
+| TooManyUnseenExceptions | A huge number of new exceptions are detected in a short period |
+
+#### Container Orchestration
+
+| Alert Name | Description |
+| ----------- | ----------- |
 | ContainerActivationFailed | The Container Activation failed |
 | ContainerPassivationFailed | The Container Passivation Failed|
 | ContainerHibernationFailed | The Container Hibernation Failed|
 | ContainerAllocationsFull | There is not enough space in the platform for a new user Container Allocation |
-| LongRunningUserAPICallDetected | An API call submitted by the user is taking a long time to process |
-| LongRunningPlatformAPICallDetected | An intercommunication API call is taking a long time to process |
-| PlatformBottleNeckDetected | A microservice has a lot pending API calls. This will slow down the whole platform |
-| TooManyExceptions | A huge number of exceptions are detected in a short period |
-| TooManyUnseenExceptions | A huge number of new exceptions are detected in a short period |
-| PlatformInstanceDown | An Instance in the Platform is not sending health signals |
+
+#### VCS operations
+
+| Alert Name | Description |
+| ----------- | ----------- |
+| VcsPullFailed | A VCS pull operation Failed |
+| VcsPushFailed | A VCS push operation Failed |
+
+#### Background Jobs
+
+| Alert Name | Description |
+| ----------- | ----------- |
+| TaskIdleTimeout | The *task* of a *job* submitted to jobs-service has not been served by the worker. More workers are probably needed |
+| TaskExecutionTimeout | The worker was unable to complete the *task* of a *job* submitted to jobs-service |
+
+#### Project failures
+
+| Alert Name | Description |
+| ----------- | ----------- |
 | ProjectCreationFailed | A User could not create a project in Studio |
 | ProjectImportFailed | A User could not import a project in Studio |
 | ProjectOpeningFailed | A User project opening Failed |

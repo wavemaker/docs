@@ -14,14 +14,13 @@ The body fixes itself with a *Negative Feedback Loop*, which detects the anomali
 
 ![Human Negative Feedback Loop](/learn/assets/wme-setup/wme-observability/negative-feedback-loop-human.png)
 
-*Wouldn't it be great if you had an application with a similar mechanism?* 
+*Wouldn't it be great if you had an application with a similar mechanism?*
 
 Well, we have engineered the WaveMaker Platform to do the same.
 
 ![WaveMaker Negative Feedback Loop](/learn/assets/wme-setup/wme-observability/negative-feedback-loop-wavemaker.png)
 
-With the right tools, WaveMaker Platform is smart enough to detect its internal failures and the engineers at WaveMaker are never blinded to anything which
- needs his attention.
+With the right tools, the WaveMaker Platform is smart enough to detect its internal failures. These failures can then be addressed by the *Enterprise Platform Administrator* or by any level of *Engineer*. The failures are not hidden, anyone proficient in resolving it will resolve it.
 
 All this is possible due to the WaveMaker's **Observability** module.
 
@@ -29,7 +28,9 @@ All this is possible due to the WaveMaker's **Observability** module.
 There are many more features offered by this module besides the one mentioned above.
 :::
 
-With the Observability module in place, we can stay in control of the running of the software on the cloud ensuring good health. 
+With the Observability module in place, we can stay in control of the running of the software on the cloud ensuring good health.
+
+### Observability Stack
 
 WaveMaker's Observability module consists of the following components.
 

@@ -43,19 +43,26 @@ This is very useful because we do not need to type in Prometheus queries every t
 
 WaveMaker contains the following list of dashboards
 
+#### Platform specific
+
 | Dashboard   | Description |
 | ----------- | ----------- |
-| Alert Manager | Alerts triggered in platform |
-| Container Activation | Container Activation summary |
-| Container Metrics | Container CPU, RAM and Network status |
-| Exceptions Summary | Exceptions seen across platform |
-| Instance Metrics | Dashboard showing Instance CPU, RAM, disk, etc |
-| Jobs Dashboard | Platform jobs summary |
-| JVM Metrics | JVM summary of all containers |
-| Login Summary | Platform login success and failure counts |
 | Platform Summary | Complete platform status |
+| Instance Metrics | Dashboard showing Instance CPU, RAM, disk, etc |
+| Container Metrics | Container CPU, RAM and Network status |
+| Alert Manager | Alerts triggered in platform |
+| JVM Metrics | JVM summary of all containers |
+
+#### WaveMaker specific
+
+| Dashboard   | Description |
+| ----------- | ----------- |
+| User Usage Stats | Seven days user platform usage trend |
+| Container Activation | Container Activation summary |
+| Exceptions Summary | Exceptions seen across platform |
+| Jobs Dashboard | Platform jobs summary |
+| Login Summary | Platform login success and failure counts |
 | Project Preview Summary | Project preview success and failure counts |
 | Projects Summary | Project usage summary |
 | Studio Pages | Wavemaker app page creation and load summary  |
-| User Usage Stats | Seven days user platform usage trend |
 | VCS Summary | Wavemaker user VCS activity summary  |
