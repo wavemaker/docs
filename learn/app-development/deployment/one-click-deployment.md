@@ -7,13 +7,28 @@ sidebar_label: "One-click Deployment"
 
 One-click Deployment deploys an app to the cloud setup with just a single click. To deploy an app, you simply click the **Deploy** icon as shown in the image below.
 
+[![deploy icon](/learn/assets/deploy.png)](/learn/assets/deploy.png)
+
+Before deploying an app, you should check for the following steps to ensure the process-time and security settings are taken care of.
+
+1. [Push to VCS](#push-to-vcs)
+2. [Configure Profile Settings](/learn/app-development/deployment/configuration-profiles/)
+
 :::note
 Ensure to push your latest changes to VCS before **One-click deployment**. Also, if you are deploying the app for the first time, check the configuration profile settings. For more information, see [Deployment Overview](/learn/app-development/deployment/deployment-overview).
 :::
 
-[![deploy icon](/learn/assets/deploy.png)](/learn/assets/deploy.png)
-
 Deployed apps host on WaveMaker [Demo](/learn/app-development/deployment/release-management#demo) cloud. To learn more, see [CI/CD Pipeline in WaveMaker](/learn/app-development/deployment/release-management).
+
+## Push to VCS
+
+Apps are deployed only under the version control system. If you have not pushed your apps changes to the VCS, you will be prompted to do so. You cannot proceed with deployment until you commit your changes.
+
+## Configuration profile settings
+
+Deployment configuration profile uses various service configurations like the database, REST, SOAP, Web Socket, and Security. These settings can be modified from [Configuration Profiles](/learn/app-development/deployment/configuration-profiles/) under the **Project Settings** dialog. Check these settings before deploying an app.
+
+
 
 ## Deployment Flow
 

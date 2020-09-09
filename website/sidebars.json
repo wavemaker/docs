@@ -311,8 +311,8 @@
           "label": "One-Click Deployment",
           "ids": [    
               "app-development/deployment/deployment-overview",
-              "app-development/deployment/build-options", 
               "app-development/deployment/configuration-profiles",
+              "app-development/deployment/build-options", 
               "app-development/deployment/one-click-deployment"
             ]
         },

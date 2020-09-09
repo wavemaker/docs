@@ -4,7 +4,9 @@ id: ""
 ---
 ---
 
-App Configuration is externalized at each service through configuration profiles. Configuration for DB, REST servers, and more. can be separated for Development and Deployment environments through Profiles. The profile can be accessed from the Settings option in the Secondary Actions.
+Configuration Profile allows you to store configuration information. If you need to configure profile to provide lots of custom environment settings, network settings, or certificates, configuration profiles are an easy way to do it.
+
+You can configure your app services for external consumption through Configuration Profiles. Configure for DB, REST servers, and more. Further, separate them for Development and Deployment environments or create a custom environment through **Profiles**. The profile can be accessed from the Settings option in the Secondary Actions.
 
 :::note
 Before you select the environment, you should set the build option mode. For more information, see [Build Options in WaveMaker](/learn/app-development-deployment/build-options).
