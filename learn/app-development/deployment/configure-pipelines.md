@@ -14,8 +14,8 @@ By using one-click deployment, the application deploys to the QA phase by defaul
 
 Before pushing the application to the next phase, you have to configure the phases in the Launchpad in the App Deployment section. This allows deploying an application to the Demo phase hosted in WaveMaker cloud. WaveMaker supports all major cloud providers. You can choose to deploy it to any cloud providers including AWS, Azure, GCP, Digital Ocean, and Kubernetes Services.
 
-[![WME cloud providers](/learn/assets/manage_apps_live.png)](/learn/assets/manage_apps_live.png)
+![WME cloud providers](/learn/assets/manage_apps_live.png)
 
-After configuring the phase user just has to push the application from one phase to other for deploying application and user can configure each stage with profile and other options for depoying applications.for more details visit [profile configurations](configuration-profiles.md)
+After configuring the phase, you push the application from one phase to another for deploying application and configure each stage with profile and other options for depoying applications. For more information, see [Configuration Profiles](/learn/app-development/deployment/configuration-profiles)
 
-[![WME phases](/learn/assets/ptl_cloud_done.png)](/learn/assets/ptl_cloud_done.png).
+![WME phases](/learn/assets/ptl_cloud_done.png)

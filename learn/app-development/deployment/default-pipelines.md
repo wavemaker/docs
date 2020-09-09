@@ -4,17 +4,16 @@ id: ""
 ---
 ---
 
-wavemaker provide two phase pipeline configuration for WMO users for deploying application,the phases are Demo and Live.
-for deploying in to Demo phase Wavemaker provisioned Instances by default for users.They just need to deploy the application using the [one click deployment](one-click-deployment.md).For the Live phase user has to provison their Instances for deploying the application.
+WaveMaker provide two phase-pipeline configuration for WMO users for deploying application. The phases include, **Demo** and **Live**. For deploying to a Demo phase, WaveMaker provisions instances by default. You just need to deploy the application using the [One-click deployment](/learn/app-development/deployment/one-click-deployment). For the **Live** phase, you have to provison your own Instances for deploying the application.
 
-After deploying the appication on Demo phase using one click deployment you can configure your Live phase by going to the Managed Deployed Apps .
-[![WMO Demo phase](/learn/assets/demo_phase_in_wmo.png)](/learn/assets/demo_phase_in_wmo.png)
+After deploying the appication to a **Demo** phase with One-click deployment, you can configure the **Live** phase by going to **[Managed Deployed Apps](/learn/app-development/deployment/manage-deployed-apps)**. 
 
-user can configure each stage with profile and other options for depoying applications.for more details visit [profile configurations](configuration-profiles.md)
+![WMO Demo phase](/learn/assets/demo_phase_in_wmo.png)  
 
-Live phase user can configure with different major cloud providers for deploying application to the Live phase.
-supported providers are AWS,AZUR,GCP and Digital ocean kubernetes.configure Live phase with any of the provider and push application from Demo to Live phase for deployment.
+You can configure each stage with profile and other options for depoying applications. For more information, see [Profile Configurations](/learn/app-development/deployment/configuration-profiles).
 
-[![WMO live phase providers](/learn/assets/wmo_live_phase_configure.png)](/learn/assets/wmo_live_phase_configure.png)
+For **Live** phase, you can configure with different major cloud providers. WaveMaker-supported providers are AWS, AZURE, GCP, and Digital Ocean kubernetes. Configure **Live** phase with any of the provider and push the application from Demo phase to the Live phase.
 
-After pushing application to the Live phase from Demo phase it automatically do build and deployment in respected cloud provider.
+![WMO live phase providers](/learn/assets/wmo_live_phase_configure.png)
+
+After pushing the application to the **Live** phase, it automatically builds and deploys in its respected cloud provider.

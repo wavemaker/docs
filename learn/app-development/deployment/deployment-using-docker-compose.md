@@ -4,11 +4,13 @@ id: ""
 ---
 ---
 
-Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services.for installation of docker compose visit ([docker-compose-instll](https://docs.docker.com/compose/install/))
+Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application services. For installation of docker compose, see [docker-compose-install](https://docs.docker.com/compose/install/).
 
-wavemaker application deployment required DB for its operation.for example deployment using mysqldb.
+## Application Deployment using DB
 
-- use the below Docker-compose file for deploying mulyi-container wavemaker application.
+WaveMaker application deployment requires DB for its operation. For example, deployment using `mysqldb`.
+
+- Use the below Docker-compose file for deploying multi-container WaveMaker application.
 
 ```Docker compose
 version: "3.3"
@@ -48,10 +50,11 @@ networks:
 
 ```
 
-- wavemaker-application folder consists of Dockerfile and application code for build wavemaker app .for Dockerfile visit [wavemaker Dockerfile](build-with-docker.md) and use the Dockerfile for building wavemaker application.
+- WaveMaker-application folder consists of Dockerfile and application code for building WaveMaker app. For Dockerfile, see [WaveMaker Dockerfile](/learn/app-development/deployment/build-with-docker), and use the Dockerfile for building WaveMaker application.
 
-- nginx folder consists of nginx Dockerfile and conf file for reverse proxy operations.
-nginx Dockerfile
+- The `nginx` folder consists of a `nginx` Dockerfile and a `conf` file for reverse proxy operations.
+
+## nginx Dockerfile
 
 ```Dockerfile
 FROM nginx:1.16
@@ -59,14 +62,13 @@ COPY ./default.conf /etc/nginx/conf.d/
 
 ```
 
-nginx default.conf file for reverse proxy.user can modify the conf file based on their requireents.
+The nginx `default.conf` file for reverse `proxy.user` can modify the `conf` file based on their requirements.
 
 ```conf
 upstream webapp_wm {
    server webapp:8080;
 
 }
-
 
 server {
    listen 80;
@@ -86,7 +88,7 @@ server {
 }
 ```
 
-- for creating multi-container wavemaker application using above configuration run the following command.
+- For creating multi-container WaveMaker application using above configuration, run the following command.
   
 ```shell
 docker-compose -f docker-composefile-name up -d
