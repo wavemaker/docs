@@ -4,17 +4,21 @@ id: ""
 ---
 ---
 
-Configuration Profile allows you to store configuration information. If you need to configure profile to provide lots of custom environment settings, network settings, or certificates, configuration profiles are an easy way to do it.
+**Configuration Profiles** allow you to run the same application under different environments with different settings, and this configuration information is stored in the form of profiles. 
 
-You can configure your app services for external consumption through Configuration Profiles. Configure for DB, REST servers, and more. Further, separate them for Development and Deployment environments or create a custom environment through **Profiles**. The profile can be accessed from the Settings option in the Secondary Actions.
+If you need to configure a profile to provide lots of custom settings to suit third-party tools, services, network settings, or certificates, you can do it with the help of **Config Profiles**. This is in line with _[Maven Configuration Profiles](https://maven.apache.org/guides/mini/guide-building-for-different-environments.html)_. The profile can be accessed from the **Settings** option as shown in the image below.
+
+[![config settings](/learn/assets/config_settings.png)](/learn/assets/config_settings.png)
+
+You can configure Database, REST Servers, and more. By default, two profiles are generated for every application.
+
+1. **Development**, which is used with the **Run** option,
+2. **Deployment**, which is used with the **Deploy** option,
+3. Or, Create a new **Custom** environment.
 
 :::note
 Before you select the environment, you should set the build option mode. For more information, see [Build Options in WaveMaker](/learn/app-development-deployment/build-options).
 :::
-
-[![config settings](/learn/assets/config_settings.png)](/learn/assets/config_settings.png)
-
-The **Configuration Profiles** allows one to run the same application under different environments with different configurations. This is in line with _[Maven Configuration Profiles](https://maven.apache.org/guides/mini/guide-building-for-different-environments.html)_. By default, two profiles are generated for every application - **Development** used with the **Run** option and **Deployment** for **Deploy** option.
 
 ## Development Configuration Profile
 
@@ -24,11 +28,11 @@ The **Development Configuration Profiles,** used with the **Run** option, are no
 
 - Under Security tab, Configuration SSL is disabled by default.
 - There is no provision to configure X-Frame options. It is by default set to “Same Origin”.
-- The App Environment properties can be added, deleted or modified. When you click on Save button, the properties get synchronized with all the profiles. [More on App Env property usage](/learn/how-tos/using-app-environment-properties/).
+- The App Environment properties can be added, deleted or modified. When you click on Save button, the properties get synchronized with all the profiles. For more information, see [Using App Environment Property](/learn/how-tos/using-app-environment-properties/).
 
 ## Deployment Configuration Profile
 
-The **Deployment Configuration Profiles,** used with the **Deploy**option, are editable. The values are set from the configuration of the underlying services at the time of import/creation. You can change them according to the Deployment Environment settings.
+The **Deployment Configuration Profiles,** used with the **Deploy** option, are editable. The values are set from the configuration of the underlying services at the time of import/creation. You can change them according to the Deployment Environment settings.
 
 [![](/learn/assets/config_deploy.png)](/learn/assets/config_deploy.png)
 

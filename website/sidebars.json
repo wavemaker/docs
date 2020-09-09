@@ -305,14 +305,14 @@
     ],
 
     "Deployment":
-    [   
+    [ 
+            "app-development/deployment/deployment-overview",
+            "app-development/deployment/configuration-profiles",
+            "app-development/deployment/build-options",  
         {
           "type": "subcategory",
           "label": "One-Click Deployment",
-          "ids": [    
-              "app-development/deployment/deployment-overview",
-              "app-development/deployment/configuration-profiles",
-              "app-development/deployment/build-options", 
+          "ids": [                  
               "app-development/deployment/one-click-deployment"
             ]
         },
