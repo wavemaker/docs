@@ -29,10 +29,10 @@ The below image shows how *Prometheus* is integrated with the components in the 
 
 Here, The **microservice** containers labeled **A**-**Z** are spread across instances **10.0.0.1** - **10.0.0.N**
 
-**node_exporter** : All the instances *10.0.0.1* - *10.0.0.N* contain a *node_exporter* container which collects the node (Instance) related metrics  
+**node_exporter**: All the instances *10.0.0.1* - *10.0.0.N* contain a *node_exporter* container which collects the node (Instance) related metrics  
 
-**cadvisor** : Every instance contains a *cadvisor* container which collects the container metrics  related to all the other containers present in the same
+**cadvisor**: Every instance contains a *cadvisor* container which collects the container metrics  related to all the other containers present in the same
  instance
 
-**JMeter, micrometer**: Each and every JVM application deployed as a microservice in containers *A*-*Z* generates its own metrics.
+**JMeter, micrometer**: Every JVM application deployed as a microservice in containers *A*-*Z* generates its own metrics.
   

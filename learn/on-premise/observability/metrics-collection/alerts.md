@@ -13,11 +13,11 @@ The list of Alerts can be accessed from Prometheus UI by clicking on the "**Aler
 
 ![Prometheus UI Alert Button](/learn/assets/wme-setup/wme-observability/prometheus/prometheus-alert-button-click.png)
 
-### Available Alerts
+## Available Alerts
 
 Following are the list of alerts included in WaveMaker
 
-#### Platform Health
+### Platform Health
 
 | Alert Name | Description |
 | ----------- | ----------- |
@@ -35,7 +35,7 @@ Following are the list of alerts included in WaveMaker
 | JvmThreadsDeadlocked | When a JVM thread encounters a deadlock |
 | PlatformInstanceDown | An Instance in the Platform is not sending health signals |
 
-#### Slow APIs
+### Slow APIs
 
 | Alert Name | Description |
 | ----------- | ----------- |
@@ -43,14 +43,14 @@ Following are the list of alerts included in WaveMaker
 | LongRunningPlatformAPICallDetected | An intercommunication API call is taking a long time to process |
 | PlatformBottleNeckDetected | A microservice has a lot of pending API calls. This will slow down the whole platform |
 
-#### API Failures
+### API Failures
 
 | Alert Name | Description |
 | ----------- | ----------- |
 | TooManyExceptions | A huge number of exceptions are detected in a short period |
 | TooManyUnseenExceptions | A huge number of new exceptions are detected in a short period |
 
-#### Container Orchestration
+### Container Orchestration
 
 | Alert Name | Description |
 | ----------- | ----------- |
@@ -59,21 +59,21 @@ Following are the list of alerts included in WaveMaker
 | ContainerHibernationFailed | The Container Hibernation Failed|
 | ContainerAllocationsFull | There is not enough space in the platform for a new user Container Allocation |
 
-#### VCS operations
+### VCS operations
 
 | Alert Name | Description |
 | ----------- | ----------- |
 | VcsPullFailed | A VCS pull operation Failed |
 | VcsPushFailed | A VCS push operation Failed |
 
-#### Background Jobs
+### Background Jobs
 
 | Alert Name | Description |
 | ----------- | ----------- |
 | TaskIdleTimeout | The *task* of a *job* submitted to jobs-service has not been served by the worker. More workers are probably needed |
 | TaskExecutionTimeout | The worker was unable to complete the *task* of a *job* submitted to jobs-service |
 
-#### Project failures
+### Project failures
 
 | Alert Name | Description |
 | ----------- | ----------- |

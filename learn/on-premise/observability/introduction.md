@@ -9,7 +9,7 @@ Did you ever wonder how a Human body automatically responds to any negative inco
 
 The body fixes itself with a *Negative Feedback Loop*, which detects the anomalies and performs the required actions to maintain a stable, relatively constant internal environment.
 
- Example:
+Example:
 
 ![Human Negative Feedback Loop](/learn/assets/wme-setup/wme-observability/negative-feedback-loop-human.png)
 
@@ -24,16 +24,16 @@ With the right tools, the WaveMaker Platform is smart enough to detect its inter
 All this is possible due to the WaveMaker's **Observability** module.
 
 :::note
-The above example refers to the *Alerts Component* included in the [Observability Stack](/learn/on-premise/observability/introduction#observability-stack)
+The above example refers to the *Alerts Component* included in the [Observability Stack](/learn/on-premise/observability/introduction#observability-stack).
 :::
 
-### Observability
+## Observability
 
 Observability helps in exposing the internal functioning of the Platform. This includes system logs and different metric values. By introducing the right metrics, the system's operational visibility is increased with Observability.
 
 The Observability helps in monitoring the platform by collecting the metrics in real-time. These metrics can then be used to generate alerts and create complex dashboards. WaveMaker includes the following components in its Observability module.  
 
-#### Observability Stack
+### Observability Stack
 
 - [Metrics collection](/learn/on-premise/observability/metrics-collection/overview)
   - [Prometheus](/learn/on-premise/observability/metrics-collection/prometheus)
@@ -42,7 +42,7 @@ The Observability helps in monitoring the platform by collecting the metrics in 
 - [Logs aggregation](/learn/on-premise/observability/logs-aggregation/overview)
   - [Kibana](/learn/on-premise/observability/metrics-collection/metrics-collection/kibana)
 
-### Observability in WME (WaveMaker Enterprise)
+## Observability in WME (WaveMaker Enterprise)
 
 WaveMaker aims to provide the Observability module as a solution in *WME setups (on-premise setups)* as this module has been very useful in detecting, analyzing, and resolving a lot of issues in the *WMO setup ([WaveMaker Online](https://www.wavemakeronline.com/))*.
 
