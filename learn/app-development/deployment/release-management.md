@@ -42,7 +42,7 @@ All of the above-mentioned release management tasks are facilitated within WaveM
 WaveMaker Platform offers a pre-defined set of App delivery phases which enables App progression through multiple phases. At each phase, App is accessible using a unique URL. Each App phase can be setup to use WaveMaker Cloud leveraging Docker containerization or for Stage and Live phases to run on a public cloud like AWS.
 
 :::note
-WME customers has to configure their Pipeline before doing deployment.for configure pipeline visit [pipeline configuration](../../on-premise/configure/config-pipeline.md) . WMO customers they will use [wavemaker inbuilt pipeline](default-pipelines.md) configuration with default phases Demo and Live.
+WME customers has to configure their Pipeline before doing deployment.for configure pipeline visit [pipeline configuration](../../on-premise/configure/config-pipeline.md) . WMO customers they will use [WaveMaker inbuilt pipeline](default-pipelines.md) configuration with default phases Demo and Live.
 :::
 
 ### Demo

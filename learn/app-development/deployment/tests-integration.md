@@ -8,6 +8,6 @@ Using the integration tests user can trigger test automations for the applicatio
 
 [![test integration](/learn/assets/test-integration.png)](/learn/assets/test-integration.png)
 
-for congigure the integrations select configure and add provider for providing Name, Url and API Token/password.wavemaker inbuilt support Ghost inspector and Jenkins integations
+for congigure the integrations select configure and add provider for providing Name, Url and API Token/password.WaveMaker inbuilt support Ghost inspector and Jenkins integations
 
 [![test integration configure](/learn/assets/test-integration-configure.png)](/learn/assets/test-integration-configure.png)
