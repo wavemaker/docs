@@ -16,7 +16,7 @@ The following tools are integrated with Prometheus in WaveMaker Platform
 | ----------- | ----------- |
 | [cadvisor](https://github.com/google/cadvisor) | Collects *container* level resource utilization, performance and health related metrics  |  
 | [node_exporter](https://github.com/prometheus/node_exporter) | Collects *node* (Instance) level resource utilization, performance and health related metrics  |  
-| [jmeter](https://github.com/johrstrom/jmeter-prometheus-plugin) | Collects *jvm* level classloader, thread,heap, GC related metrics  |
+| [jmx_exporter](https://github.com/prometheus/jmx_exporter) | Collects *jvm* level classloader, thread, heap, GC related metrics  |
 | [micrometer](https://github.com/micrometer-metrics/micrometer) | This is used to collect any custom metrics from the java web application deployed as a microservice in a container. |
 
 With the help of the above tools, all the data is aggregated at Prometheus.
@@ -34,5 +34,5 @@ Here, The **microservice** containers labeled **A**-**Z** are spread across inst
 **cadvisor**: Every instance contains a *cadvisor* container which collects the container metrics  related to all the other containers present in the same
  instance
 
-**JMeter, micrometer**: Every JVM application deployed as a microservice in containers *A*-*Z* generates its own metrics.
+**jmx_exporter, micrometer**: Every JVM application deployed as a microservice in containers *A*-*Z* generates its own metrics.
   
