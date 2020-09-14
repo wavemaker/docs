@@ -390,6 +390,11 @@
       }
     ],    
 
+    "Teams":
+    [
+      "teams/overview"
+    ],
+
     "Enterprise": 
     [
       "installation/wavemaker-enterprise-setup-guide",
