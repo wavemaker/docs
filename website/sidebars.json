@@ -520,8 +520,30 @@
         "on-premise/configure/add-apps-capacity",
         "on-premise/configure/config-pipeline",
         "on-premise/configure/config-ssl"
-      ],    
-   
+      ],
+
+  "Observability":
+  [
+    "on-premise/observability/introduction",
+    {
+      "type": "subcategory",
+      "label": "Logs Aggregation",
+      "ids": [
+        "on-premise/observability/logs-aggregation/overview",
+        "on-premise/observability/logs-aggregation/kibana"
+      ]
+    },
+    {
+      "type": "subcategory",
+      "label": "Metrics Collection",
+      "ids": [
+        "on-premise/observability/metrics-collection/overview",
+        "on-premise/observability/metrics-collection/prometheus",
+        "on-premise/observability/metrics-collection/alerts",
+        "on-premise/observability/metrics-collection/grafana"
+      ]
+    }
+  ],
 
   "Upgrade":
   [
@@ -1136,6 +1158,7 @@
         "label": "Versions: 10.5.x",
         "ids": 
           [ 
+            "wavemaker-release-notes/v10-5-5", 
             "wavemaker-release-notes/v10-5-4", 
             "wavemaker-release-notes/v10-5-3",
             "wavemaker-release-notes/v10-5-2",
