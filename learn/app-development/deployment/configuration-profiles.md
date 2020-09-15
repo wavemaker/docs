@@ -96,6 +96,12 @@ When changing the deployment profile in Studio for a deployed app, will not have
 ### OAuth 2.0
 - **OAuth 2.0** provider settings can be modified by changing the Access Token URL, Authorization URL, Client Id and Client Secret.
 
+### Build Options
+
+Build options are a part of configure profile settings. You can choose from the following build options to deploy your app. There are two build options you can choose from.
+
+WaveMaker Build (deprecated), Angular Build. For more information, see [Build Options](/learn/app-development/deployment/build-options).
+
 ## Prefab Configuration Profile
 
 If your app is using Prefab which has services imported, you can configure the same here. Same as with the app profiles, only Deployment Profile is configurable. Also, for Prefabs, you cannot change the Security settings.
@@ -112,3 +118,7 @@ This custom profile can be used when exporting the project as a WAR file.
 
 [![](/learn/assets/config_custom.png)](/learn/assets/config_custom.png)
 
+## See Also
+
+[One-Click Deployment](/learn/app-development/deployment/one-click-deployment)  
+[Building a War file from a WaveMaker Project](/learn/app-development/deployment/building-war-wavemaker-project/)

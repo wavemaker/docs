@@ -13,7 +13,7 @@ WaveMaker provides a quick and easy-to-deploy solution. You can deploy an app to
 
 ![deploy icon](/learn/assets/deploy-app.png)
 
-With One-click Deployment, you can test or demo your application in the early stages of the development when the application is not ready to deploy to a private cloud, or an on-premise environment.
+With One-click Deployment, you can test or demo your application in the early stages of the development. Also, this is the first step to deploy an application to the cloud when your app is in the process of setting up a private cloud or an on-premise environment.
 
 :::important
 One-click deployment is available for Project Admins only.
@@ -21,9 +21,9 @@ One-click deployment is available for Project Admins only.
 
 For more information, see [step-by-step instructions for One-click Deployment](/learn/app-development/deployment/one-click-deployment).
 
-## CI CD Pipelines
+## CI-CD Pipelines
 
-WaveMaker Release Pipeline enables setting up the App deployment phases for easier delivery by leveraging Docker containerization. Setting up an App deployment phases. There are different stages for the CI-CD pipeline process depending on the [WaveMaker Studio Editions](/learn/documentation-reference#wavemaker-studio-editions). 
+WaveMaker release pipeline enables you to setup application deployment phases for easy delivery of CI-CD process by leveraging Docker containerization. There are different stages for the release management process depending on the [WaveMaker Studio Editions](/learn/documentation-reference#wavemaker-studio-editions). 
 
 ### WaveMaker Enterprise
 
@@ -49,7 +49,7 @@ To learn more about how to configure these pipelines, see [Configure Pipeline fo
 
 ### Automatation
 
-Automate the CI-CD pipelines to configure a private cloud. For example, AWS (Amazon Web Services), Azure, GCP (Google Cloud Provider), Digital Ocean, or an on-premise environment like VMware or Hyper-V. To learn more about configuring your application to a CI-CD pipeline, see [WaveMaker Release Management](/learn/app-development/deployment/release-management).
+Automate the CI-CD pipelines to configure a private cloud provider, including AWS (Amazon Web Services), Azure, GCP (Google Cloud Provider), Digital Ocean, and on-premise environments like VMware or Hyper-V. To learn more about configuring your application to a CI-CD pipeline, see [WaveMaker Release Management](/learn/app-development/deployment/release-management).
 
 ![deploy to cloud](/learn/assets/deploy-to-cloud.png)
 
