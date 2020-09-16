@@ -36,7 +36,7 @@ The Observability helps in monitoring the platform by collecting the metrics in 
 ### Observability Stack
 
 - [Logs aggregation](/learn/on-premise/observability/logs-aggregation/overview)
-  - [Kibana](/learn/on-premise/observability/metrics-collection/metrics-collection/kibana)
+  - [Kibana](/learn/on-premise/observability/logs-aggregation/kibana)
 - [Metrics collection](/learn/on-premise/observability/metrics-collection/overview)
   - [Prometheus](/learn/on-premise/observability/metrics-collection/prometheus)
   - [Alerts](/learn/on-premise/observability/metrics-collection/alerts)
