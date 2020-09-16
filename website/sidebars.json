@@ -392,7 +392,14 @@
 
     "Teams":
     [
-      "teams/overview"
+      "teams/overview",
+      "teams/dashboard",
+      "teams/manage-users",
+      "teams/manage-projects",
+      "teams/manage-roles",
+      "teams/code-repository",
+      "teams/team-profile",
+      "teams/manage-subscription"
     ],
 
     "Enterprise": 
