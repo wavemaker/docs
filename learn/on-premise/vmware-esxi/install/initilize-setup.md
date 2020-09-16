@@ -19,3 +19,13 @@ sidebar_label: "Initialize Setup"
 - Go to  <http://Platform-Instance-IP:8080> as directed by the above command output to do the WME setup.
 
     [![setup initialization](/learn/assets/wme-setup/wavemaker-setup-initialization.jpg)](/learn/assets/wme-setup/wavemaker-setup-initialization.jpg)
+
+- From WME version 10.5.1 version users can use their own user for communication between Platform, Studio Workspace and Appdeployment Instances.for use custom user for communication and operations do [prerequisites](../install-prerequisites.md) as per given steps.
+- For using custom user for WME setup user need to provide username which is configured and a private key for validation, by providing **y** option for **do you want to configure your own ssh keys**.
+  
+  [![custom user setup initialization](/learn/assets/wme-setup/setup-with-custom-user.jpg)](/learn/assets/wme-setup/setup-with-custom-user.jpg)
+
+- If you don't want yo use custom user for WME setup provide **n** option for **do you want to configure your own ssh keys**.
+
+  [![privellaged user setup initialization](/learn/assets/wme-setup/wme-setup-with-privillaged-user.jpg)](/learn/assets/wme-setup/wme-setup-with-privillaged-user.jpg)
+
