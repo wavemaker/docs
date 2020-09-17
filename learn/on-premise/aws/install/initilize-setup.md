@@ -9,7 +9,7 @@ sidebar_label: "Initialize Setup"
 
 - WaveMaker platform requires a user; the user should have access to SSH to communicate between Platform, Studioworkspace, and AppDeployment instances, and for creating Docker containers.
 - For WME setup, you can provide your own user with fine-grained access or WaveMaker will create a user called `wavemaker` with its auto-generated keys.
-- If you want to provide your own user, create a user with specified [prerequisites](/learn/on-premise/install-prerequisites) and ensure that the user has SSH access.
+- If you want to provide your own user, create a user with specified [prerequisites](/learn/on-premise/prerequisites) and ensure that the user has SSH access.
 
 ### Running WME Installer
 
