@@ -6,6 +6,18 @@ id: ""
 
 One of the main features of **Team** is the ability to share projects and collaborate on them with other users. Sharing a project with team member is more powerful, as the only users who will be allowed to access the project are users who you have invited to collaborate on the project. You can even choose to restrict what type of access other users have to specific projects.
 
+It allows to have transparent project tracking across your team. This helps to make sure each member is handling his/her tasks accordingly, in order to stay on track.
+
+It is a central place that you can leverage and access. Project Admin role has all permissions for a particular project, as a Team admin, you can overrulr and assign/revoke this role to/from project members.
+
+If you want to collaborate with Tom today, You can readily invite him to work with you in the 'Test-Sample' project.
+
+Tom is leaving the company, you can remove him from the projects he is associated with and invite new members to these projects with specific roles.
+
+:::note
+- Members need to be part of Team before they can be invited to the projects.
+:::
+
 You can access the Manage Projects page in the administration area by clicking on the **Manage Projects** entry in the left panel.
 
 ![Manage projects](/learn/assets/TeamManageProjects.png)

@@ -36,12 +36,16 @@ You can change a single user’s role by using the **Change Role** icon located 
 
 ### Block a User
 
-You can block/unblock a user by using the **block/ublock** icon located in each row in the table
+Block a user account to limit or remove access to team resources. When you block a user account, the account status moves from **Active** to **Blocked**. Blocked users can no longer access their account. When you unblock a previously blocked user account, he will be able to access the resources which he earler had access to. If you're not sure of removing the user from Team and associated resources, you can **block** him from accessing the account.
+
+You can block/unblock a user by using the **block/unblock** icon located in each row in the table
 
 ![Add users](/learn/assets/TeamUserBlock.png)
 
 
-### Remove a User
+### Remove/Delete a User
+
+An account deletion cannot be undone. After the deletion, the user is not visible on the Users page and is removed from the resources he is associated with. When you again add a previously deleted user account, you'll need to reassign resources to the user.
 
 You can delete a user by using the **Delete** icon located in each row in the table
 

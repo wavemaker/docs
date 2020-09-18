@@ -4,7 +4,17 @@ id: ""
 ---
 ---
 
-**Teams** are groups of organization members that reflect your organization and organize your group’s work. Teams are designed and intended to be administered by one or more members. On a team's page, you can 
+**Teams** are groups of organization members that reflect your organization and organize your group’s work. Teams are designed and intended to be administered by one or more members. Visit for [pricing](https://www.wavemaker.com/pricing/ "WaveMaker's Pricing")
+
+What benefits one get when subscribed as Team against Enterprise set-up?
+
+-  **Immediate availability** Team setup is available as soon as you’ve paid for it, so you can start using a service right away. There’s no need to install and configure hardware and no time wasted in installation time.
+
+-  **Cost-effectiveness** Team removes hardware expenses. There’s no need to buy, install, configure, and maintain servers and other components of your runtime environment. 
+
+What benefits one get when subscribed as Team against Silo sign-up?
+
+Subscribed as a Team, you can 
 
 ## Simplify Access Management 
 
@@ -39,3 +49,7 @@ Cloud-hosted application platform as a service for small teams. We have restruct
 
 ![teams overview](/learn/assets/wavemaker-teams-overview.png)
 
+
+:::note
+- VPN access to team resources is not provided
+:::

@@ -36,4 +36,7 @@ From the Manage Role page, you can
 ![Edit Role Permissions](/learn/assets/TeamManageRoleDelete.png)
 
 
+:::note
+- Project roles are different from the user roles. User role defines the permissions a user has in the Team. Say, whether user is authorized to access Team portal or not. An user can be a Team admin or Studio user. Whereas, project role defines the permissions a project member has in a particular project. A project member can perform actions on a project based on their assigned role & permissions. Project member actions include view pages, edit pages, deploy application etc. You can only create custom project roles.
+:::
 
