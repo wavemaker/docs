@@ -389,7 +389,14 @@
         "hybrid-mobile/switching-offline-online-mode"]
       }
     ],    
-
+    "Connectors":
+    [
+        "connectors/connectors-introduction",        
+        "connectors/connectors-architecture",   
+        "connectors/connectors-how-it-works", 
+        "connectors/connectors-list", 
+        "connectors/connectors-building"
+      ],
     "Enterprise": 
     [
       "installation/wavemaker-enterprise-setup-guide",
