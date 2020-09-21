@@ -4,12 +4,14 @@ id: ""
 ---
 ---
 
-WaveMaker support two phases for WMO customers and three phases for WME customers.one click deployment defaluty deploy to Demo or QA phase.for deploy the application on different phases user has to push the application from one phase to other phase.For pushing application to next phases user has to configure the phase.first user need to select the respctive cloud provider and configure cloud provide for the phase.
+WaveMaker supports two phases for WMO and three phases for WME customers. One-click deployment by default deploys to Demo or QA phase. To deploy an application on different phases, you should push the application from one phase to the other phase. For pushing the application to the next phase, you have to configure the phases. Firstly, you should select a cloud provider and configure that for each phase.
 
-before configuring the phases user has to configure the pipeline.WMO users visit [WMO default pipeline configuration](default-pipelines.md).WME users visit [WME pipeline configurations](configure-pipelines.md).
+Before configuring the phases, you should configure the pipeline. For WMO, visit [WMO default pipeline configuration](/learn/app-deployment/depolyment/default-pipelines). For WME, visit [WME pipeline configurations](/learn/app-development/deployment/configure-pipelines).
 
-During process of pushing from phase to other phase user can configure different Databases for different phases and also configure Rest ,Soap and Web socket .[![phase Database configurations](/learn/assets/ptl_configure.png)](/learn/assets/ptl_configure.png).
+During the process of pushing from one phase to the other phase, you can configure different Databases for different phases and also configure Rest, Soap, and Web socket services.
 
-User can enable and disable SSL configuration ar security section and also configure different security options and also user can configure Outh2 ,Appenvironment and Build options.for different build option configurations visit [Build options](build-options.md)
+[![phase Database configurations](/learn/assets/ptl_configure.png)](/learn/assets/ptl_configure.png).
+
+You can enable and disable SSL configuration at the security settings page and also configure necessary security options. Additionally, you can configure Outh2, App Environment and Build options. For different build configurations, see [Build options](/learn/app-development/deployment/build-options)
 
 [![phase security configurations](/learn/assets/phase-security-config.png)](/learn/assets/phase-security-config.png).

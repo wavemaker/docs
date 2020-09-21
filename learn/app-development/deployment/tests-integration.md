@@ -4,10 +4,10 @@ id: ""
 ---
 ---
 
-Using the integration tests user can trigger test automations for the application.for configure test automation select Details at application phase and select Integration test section.
+Using the integration tests, you can trigger test automation for your application. To configure test automation, select **Details** at the application phase, and select the **Integration Test** tab.
 
 [![test integration](/learn/assets/test-integration.png)](/learn/assets/test-integration.png)
 
-for congigure the integrations select configure and add provider for providing Name, Url and API Token/password.WaveMaker inbuilt support Ghost inspector and Jenkins integations
+To configure the integration, select **Configure** and then select **Add Provider** for providing the Name, URL, and API token/password. WaveMaker inbuilt supports **Ghost Inspector** and **Jenkins** integration.
 
 [![test integration configure](/learn/assets/test-integration-configure.png)](/learn/assets/test-integration-configure.png)
