@@ -4,9 +4,9 @@ id: ""
 ---
 ---
 
-Dashboard organize and display important information from multiple data sources into one, easy-to-access place. You can view the team information like last logged-in user, last project created, application deployments success/failures, and the activities.
+Dashboard organizes and displays important information from multiple data sources into one place. You can view the team information like last logged-in user, newly-created project, application deployments status whether the deployment was successful or failed with errors, and more such activities.
 
-- In the left side panel click on Dashboard
+- In the left side panel, click **Dashboard** to access it.
 
 ![Dashboard](/learn/assets/TeamDashboard.png)
 

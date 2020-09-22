@@ -4,34 +4,30 @@ id: ""
 ---
 ---
 
-One of the main features of **Team** is the ability to share projects and collaborate on them with other users. Sharing a project with team member is more powerful, as the only users who will be allowed to access the project are users who you have invited to collaborate on the project. You can even choose to restrict what type of access other users have to specific projects.
+One of the main features of **Teams** is the ability to share projects and collaborate with other users. Sharing a project with a team member is so essential as the only users who will be allowed to access the project are the users you have invited to collaborate with. You can even choose to restrict what type of access other users have to specific projects.
 
-It allows to have transparent project tracking across your team. This helps to make sure each member is handling his/her tasks accordingly, in order to stay on track.
+**Manage Projects** allow you to have transparent project tracking across your team. This helps you to make sure each member is handling their tasks accordingly. It is a central place that you can leverage and access. **Project Admin** role has all the permissions for a particular project. Therefore, as an admin, you can overrule and assign or revoke the role from the project members.
 
-It is a central place that you can leverage and access. Project Admin role has all permissions for a particular project, as a Team admin, you can overrulr and assign/revoke this role to/from project members.
-
-If you want to collaborate with Tom today, You can readily invite him to work with you in the 'Test-Sample' project.
-
-Tom is leaving the company, you can remove him from the projects he is associated with and invite new members to these projects with specific roles.
+For example, Tom is a developer. If you want to collaborate with Tom, you can readily invite him to work with you in the `Test-Sample` project. If Tom is leaving the company, you can remove him from the projects he is associated with and invite new members to these projects with specific roles.
 
 :::note
-- Members need to be part of Team before they can be invited to the projects.
+Members should be registered with **Teams** before they can be invited to a project.
 :::
 
-You can access the Manage Projects page in the administration area by clicking on the **Manage Projects** entry in the left panel.
+You can access the Manage Projects page in the administration area by clicking **Manage Projects** from the left panel.
 
 ![Manage projects](/learn/assets/TeamManageProjects.png)
 
 From the projects list, you can
 
--  Add user to project  
--  View or edit a user’s role in a project  
--  View project information  
--  Remove a user from project   
+- Add user to a project  
+- View or edit a user’s role in a project  
+- View project information  
+- Remove a user from a project
 
 ### Add members
 
--  You can add members to the Project, these new members are assigned the Default role which gives them read access.You can also choose specific role for the user.   
+- You can add members to the Project, these new members are assigned the Default role which gives them read access.You can also choose specific role for the user.
 
 ![Add users](/learn/assets/TeamProjectAddUserButton.png)
 

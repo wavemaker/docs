@@ -4,39 +4,42 @@ id: ""
 ---
 ---
 
-It helps define custom roles (e.g. resource managers/developers) to give fine-grained access privileges to projects. And assign user roles like resource managers/developers to the members of your team's projects. Customize the access permissions for each role as you want. A user can perform actions on a project based on their assigned role & permissions.
+**Manage Roles** help you to define customized roles. For example, you can create resource managers, developers to give fine-grained access privileges to projects and assign those roles like resource managers or developers to the members of your projects. Customize the access permissions for each role however you want. Therefore, the user can then perform actions on a project based on their assigned role and permissions.
 
-
--  You can access the Manage Roles page in the administration area by clicking on the **Manage Roles** entry in the left panel.
+-  You can access the Manage Roles page in the administration area by clicking **Manage Roles** from the left panel.
 
 ![Manage Roles](/learn/assets/TeamManageRoles.png)
 
-From the Manage Role page, you can
+From the **Manage Roles** page, you can
 
--  Create custom role, granting permissions as you want  
--  View or edit a custom role  
--  Remove a role   
+- Create a custom role, granting permissions as per your needs
+- View or edit a custom role
+- Remove a role
 
-### Create role
+## Create role
 
--  Click on **Create Role** button, and provide the name and description of the role you want to create. Click on **Save** button.   
+- Click the **Create Role** button, and provide a name and description of the role you want to create. 
+- Click **Save** to complete the action.
 
 ![Create Role](/learn/assets/TeamCreateRole.png)
 
-
--  Select the role and assign permissions, click on **Save** on Top right corner
+- Select the role and assign permissions, click **Save** from the top right corner as shown in the image below.
 
 ![Edit Role Permissions](/learn/assets/TeamEditRolePermissions.png)
 
+## Delete role
 
-### Delete role
-
--  You can delete the custom role. Select the **role**, click on **delete** button.
+- To delete a custom role, select the **role** and click the **delete** button.
 
 ![Edit Role Permissions](/learn/assets/TeamManageRoleDelete.png)
 
+:::important
+**Project Roles** are different from **User Roles**. 
 
-:::note
-- Project roles are different from the user roles. User role defines the permissions a user has in the Team. Say, whether user is authorized to access Team portal or not. An user can be a Team admin or Studio user. Whereas, project role defines the permissions a project member has in a particular project. A project member can perform actions on a project based on their assigned role & permissions. Project member actions include view pages, edit pages, deploy application etc. You can only create custom project roles.
+A User role defines the permissions of a user in the Team. For example, whether the user is authorized to access the Team portal or not. A user can be a **Teams** admin or a **Studio** user. 
+
+Whereas, Project role defines the permissions of a project member in a particular project. A project member can perform actions on a project based on their assigned role and permissions. 
+
+A project member's actions include view pages, edit pages, deploy application, and more. You can only create custom project roles.
 :::
 
