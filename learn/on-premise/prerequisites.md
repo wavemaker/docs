@@ -18,7 +18,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
 ### WME Platform Instance
 
 <table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li><li>Intel Virtualization Technology (VT-x) enabled</li><li>Hyperthreading (HT) disabled</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;250 GB to be allocated</li><li>In case of volumes we recommend 3 disks<ul><li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 GB</li><li>/wm-data&nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li><li>/wm-runtime&nbsp; &nbsp;50 GB</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 16.04.6 LTS;  RHEL 7.x/8.x</li><li>Kernel 4.4 or latter</li></ul></td></tr>
-<tr><td><strong>Software</strong></td><td><ul><li>docker 18.06.2-ce</li><li>python 3.5 or higher</li><li>wget</li><li>container-selinux-2.9-4.el7.noarch.rpm(Only for RHEL)</li></ul></td></tr> <tr><td><strong>Network</strong></td><td><ul><li>Static IP with valid DNS</li><li>Ports 80, 443, 8080, 22(for ssh) to developer network range</li><li>Ports to be opened on Platform Instance for Access from StudioWorkspace Instance / AppDeployment Instance<ul><li>Ports : 5000, 8500, 8081, 2200, 9200, 8000-8020</li></ul></li></td></tr></tbody></table>
+<tr><td><strong>Software</strong></td><td><ul><li>docker 18.06.2-ce</li><li>python 3.5 or higher</li><li>wget</li><li>container-selinux-2.9-4.el7.noarch.rpm(Only for RHEL)</li></ul></td></tr> <tr><td><strong>Network</strong></td><td><ul><li>Static IP with valid DNS</li><li>Ports 80, 443, 8080, 22(for ssh) to developer network range</li><li>Ports to be opened on Platform Instance for Access from StudioWorkspace Instance / AppDeployment Instance<ul><li>Ports : 5000, 8500, 22, 8081, 2200, 9200, 8000-8020</li></ul></li></td></tr></tbody></table>
 
 ### WME StudioWorkspace Instance and AppDeployment Instance
 
@@ -97,6 +97,8 @@ In the preceding table, `[mycompany]` is used as an example. You may have to r
 
 ### Docker Container Access
 
-- An IP range to be assigned to the Docker containers internally.
+- An IP range to be assigned to the Docker containers internally. The Minimum [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) (Classless Inter-Domain Routing) range for Docker container network is 24.
 
-You will be needing to assign a /16 [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) to Docker during setup. This IP range should not be in use anywhere on your network and can be completely different from your network’s range. These IPs are assigned internally by Docker to containers and these IPs won’t be exposed on your network. For example, if your network is using a 10.x.x.x_range and the range_192.168.x.x is not used anywhere in your network, you may assign this 192.168.x.x range to Docker. See [here](https://en.wikipedia.org/wiki/Private_network#Private_IPv4_address_spaces) for the possible LAN IP ranges.
+You will be needing to assign a /24 CIDR to Docker during setup. This IP range should not be in use anywhere on your network and can be completely different from your network’s range. These IPs are assigned internally by Docker to containers and these IPs won’t be exposed on your network. 
+
+For example, if your network is using a 10.x.x.x_range and the range_192.168.x.x is not used anywhere in your network, you may assign this 192.168.x.x range to Docker. See [here](https://en.wikipedia.org/wiki/Private_network#Private_IPv4_address_spaces) for the possible LAN IP ranges.

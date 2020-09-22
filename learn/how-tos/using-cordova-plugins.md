@@ -44,7 +44,7 @@ An application has to be built to list the phone numbers of employees in an orga
 ### Solution
 
 1. [Import the sample hrdb](/learn/app-development/services/database-services/working-with-databases/) and [create a page](/learn/app-development/ui-design/page-creation/).
-2. Drag and drop a [list widget](/learn/app-development/widgets/list/)
+2. Drag and drop a [list widget](/learn/app-development/widgets/datalive/list/)
     - select Database CRUD service type, hrdb service and employees entity
     - choose a template of your choice, here we are using Action List with basic pagination
     - set Picture widget to the picurl field, the Name to firstname and leave JobTitle field empty. We will be using this to display the phone number.
