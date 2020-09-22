@@ -392,6 +392,7 @@
 
     "Teams":
     [
+      "teams/faqs",
       "teams/overview",
       "teams/dashboard",
       "teams/manage-users",
