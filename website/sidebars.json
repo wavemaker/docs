@@ -390,19 +390,19 @@
       }
     ],    
 
-    "Enterprise": 
+    "Teams":
     [
-      "installation/wavemaker-enterprise-setup-guide",
-      "installation/wme-setup-guide-launch-initialize",
-      "installation/wme-setup-using-deb-installer-private-ami",
-      "installation/wme-setup-guide-add-external-vcs-configuration",
-      "installation/wme-setup-guide-custom-apps-capacity",
-      "installation/wme-setup-guide-access-setting",
-      "installation/wme-setup-guide-configuration",
-      "installation/wme-setup-guide-adding-capacity",
-      "installation/wme-setup-guide-maintenance",
-      "installation/wme-setup-guide-upgrading"
+      "teams/overview",
+      "teams/faqs",
+      "teams/dashboard",
+      "teams/manage-users",
+      "teams/manage-projects",
+      "teams/manage-roles",
+      "teams/code-repository",
+      "teams/team-profile",
+      "teams/manage-subscription"
     ]
+
 
 },
 
