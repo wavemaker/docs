@@ -1,6 +1,7 @@
 ---
 title: "Teams FAQs"
 id: ""
+sidebar_label: "FAQs"
 ---
 ---
 
