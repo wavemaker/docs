@@ -31,7 +31,7 @@ At WaveMaker, we offer the following options including, Solo, Team, and On-Premi
 
 2. **Cost-effectiveness**
 
-With Teams, there are no hardware expenses involved. Therefore, there is no need to buy, install, configure, and maintain servers, or other components for your runtime environment.
+    With Teams, there are no hardware expenses involved. Therefore, there is no need to buy, install, configure, and maintain servers, or other components for your runtime environment.
 
 
 ### What benefits you get when you subscribe to Teams against the Solo sign-up?
@@ -42,10 +42,10 @@ When you subscribe as a Team, you can do the following.
 
 2. Projects Collaboration Seamlessly
 
-3. Code Repository
+3. Add Code Repository
 
-4. Role Management
+4. Customize Role Management
 
-5. Team profile
+5. Manage Team profile
 
 6. Priced Right for Small Teams
