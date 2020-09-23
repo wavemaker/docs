@@ -27,7 +27,7 @@ From the projects list, you can
 - View project information  
 - Remove a user from a project
 
-## Add members
+## Add Members
 
 You can add members to a Project. The new members assign with the default role which gives them only read access. You can also choose a specific role for the user. For more information, see [Manage Roles](/learn/teams/manage-roles)
 
@@ -57,7 +57,7 @@ Your collaborator receives an notification inviting them to join the project. On
 - It opens a confirmation dialog saying that the user role will be changed from the existing role to the new role.
 - Click **OK** to confirm.
 
-## Remove a member
+## Remove a Member
 
 - You can remove a member from the project using the **Remove Member** option as shown in the image below.
 

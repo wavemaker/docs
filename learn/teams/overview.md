@@ -24,7 +24,7 @@ Source code management is a critical part of the project lifecycle, allowing tea
 
 It provides clarity to your team with well-defined roles and permissions. You can control all roles, role permissions in an easy to customize central place. Customize the access permissions for each role as you want. A user can perform actions on a project based on their assigned role & permissions.
 
-## Team profile
+## Team Profile
 
 Your team's profile page shows basic information about your team. You can access and update the team's profile.
 

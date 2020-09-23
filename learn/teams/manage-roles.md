@@ -16,7 +16,7 @@ From the **Manage Roles** page, you can
 - View or edit a custom role
 - Remove a role
 
-## Create role
+## Create a Role
 
 - Click the **Create Role** button, and provide a name and description of the role you want to create. 
 - Click **Save** to complete the action.
@@ -27,7 +27,7 @@ From the **Manage Roles** page, you can
 
 ![Edit Role Permissions](/learn/assets/TeamEditRolePermissions.png)
 
-## Delete role
+## Delete a Role
 
 - To delete a custom role, select the **role** and click the **delete** button.
 
