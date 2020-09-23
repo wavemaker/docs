@@ -1,5 +1,5 @@
 ---
-title: "ConnectorsList"
+title: "Connectors List"
 id: "connectors-list"
 sidebar_label: "List Of Connectors"
 ---
@@ -29,14 +29,12 @@ Excel connector provides apis to parse the Excel filClick here to see How-to use
 
 The connector sources are hosted at: https://github.com/wavemaker/excel-connector
 
-[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/#docsNav)
 
 ### Azure File Storage Connector
 Azure File storage (https://azure.microsoft.com/en-in/services/storage/files/)  connector provides simplified APIs to work with azure file storage to store & retrieve files from Azure Storage Service. Using this connector, one can build the Upload, Download, List & Delete operations of files in Azure storage.
 
 The connector sources are hosted at: https://github.com/wavemaker/azure-file-storage-connector
 
-[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/#docsNav)
 
 ### Camunda Connector
 Camunda BPM is a lightweight, open source platform for Business Process Management. Camunda is used primarily to automate Business Process WorkFlows & Decision Modeling into the applications.
@@ -45,14 +43,10 @@ This connector will provide an easy API to interact with the Camunda business pr
 
 The connector is hosted at: https://github.com/wavemaker/camunda-connector
 
-[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/#docsNav)
-
 ### AWS S3 Connector
 AWS S3 connector provides simplified APIs to work with AWS S3 storage to store & retrieve files from it. Using this connector, one can build the Upload, Download, List & Delete operations of files in S3.
 
 The connector sources are hosted at: https://github.com/wavemaker/aws-s3-connector
-
-[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/#docsNav)
 
 ### MongoDB Connector
 
@@ -63,8 +57,6 @@ The MongoDB connector provides APIs to perform CRUD (Create, Read, Update, List)
 The connector sources is hosted at: https://github.com/wavemaker/mongodb-connector
 
 
-[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/#docsNav)
-
 ### Kafka Connector
 
 Apache Kafka (https://kafka.apache.org/) is an open-source, distributed publish-subscribe messaging system. Kafka is a fast, scalable, durable, fault-tolerant and distributed messaging system by design. It was originally developed by Linked later it became part of Apache project.
@@ -73,8 +65,6 @@ This connector works as both Publisher & Subscriber for the messages. Using this
 
 The connector sources are found at: https://github.com/wavemaker/kafka-connector
 
-[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/#docsNav)
-
 ### AWS Lambda Connector
 With AWS Lambda, you can run code without provisioning or managing servers. You pay only for the compute time that you consume—there’s no charge when your code isn’t running. You can run code for virtually any type of application or backend service—all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. You can set up your code to automatically trigger from other AWS services or call it directly from any web or mobile app.
 
@@ -82,13 +72,10 @@ This connector enables you to invoke the lambda function from a WaveMaker applic
 
 The connector sources are hosted at: https://github.com/wavemaker/aws-lambda-connector
 
-[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/#docsNav)
 
 ### AWS SNS Connector
 Amazon Simple Notification Service (Amazon SNS) is a web service that coordinates and manages the delivery or sending of messages to subscribing endpoints or clients. In Amazon SNS, there are two types of clients—publishers and subscribers—also referred to as producers and consumers. Publishers communicate asynchronously with subscribers by producing and sending a message to a topic. Subscribers (that is, web servers, email addresses, Amazon SQS queues, AWS Lambda functions) consume or receive the messages.
 The AWS SNS connector enables you to add Push Notifications capability to WaveMaker web & mobile applications. It leverages SNS service and uses the FCM (Firebase Cloud Messaging) to send the notification to Web Browsers, Android & iOS Devices.
 
 The connector sources are found at: https://github.com/wavemaker/aws-sns-connector
-
-[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/#docsNav)
 
