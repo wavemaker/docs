@@ -118,7 +118,7 @@ Send email with template
     }
 ```
     
-If we want use this method we should have a **template** with name **invitationtemplate.txt** in project resources folder.
+If we want use this method we should have a **template** with name **invitationtemplate.txt** in project services `${ServiceName}/src/templates`  folder.
     [![invitaion email template](/learn/assets/emailTemplateFileLocation.png)](/learn/assets/emailTemplateFileLocation.png)
     [![invitaion email template with content](/learn/assets/emailTemplate.png)](/learn/assets/emailTemplate.png)
     

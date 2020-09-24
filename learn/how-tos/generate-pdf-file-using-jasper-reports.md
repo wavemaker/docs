@@ -26,7 +26,7 @@ id: ""
 
 ### Example 1: Generating Jasper Report from a imported DataBase:
 
-  1. Build your report using [Jasper Studio](https://community.jaspersoft.com/), which enables you to build and customize look and feel of the report. Once you design the report export the reportxml(.jrxml) and import into WaveMaker project using [Import Resource](/learn/app-development/services/3rd-party-libraries) to the **${Service}/src/** folder
+  1. Build your report using [Jasper Studio](https://community.jaspersoft.com/), which enables you to build and customize look and feel of the report. Once you design the report export the reportxml(.jrxml) and import into WaveMaker project using [Import Resource](/learn/app-development/services/3rd-party-libraries) to the `${ServiceName}/src/` folder
     
   1. The following sample report jrxml is provided for your reference which loads the data from hrdb **Employee** table and generates the report.
 
