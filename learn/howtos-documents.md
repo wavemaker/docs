@@ -86,6 +86,8 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [Custom Query Syntax to access DB Service APIs from Java Service](/learn/app-development/services/database-services/orm-artifacts/#custom-query-syntax)
 *   [How to accomplish Pre-Post Processing for a DB Service APIs](/learn/how-tos/pre-post-processing-db-service-apis/)
 *   [How to design a workflow in Camunda BPM and integrate into a WaveMaker app](/learn/how-tos/camunda-wavemaker-app-integration/)
+*   [How to Integrate Azure File Storage into WaveMaker App](/learn/how-tos/azure-file-storage-connector)
+*   [How to Inserting data from Excel into the database in a WaveMaker app](/learn/how-tos/insert-data-from-excel)
 
 ## Variable Usage
 ---
@@ -104,7 +106,6 @@ Find the how to topics and look for sub-categories under each of the specified c
 
 *   [How to Synchronizing WaveMaker Apps with IDEs](/learn/how-tos/synchronizing-wavemaker-apps-ides-beta/)
 *   [How to integrate Amazon Cognito for User Authentication](/learn/how-tos/integrating-amazon-cognito-user-authentication/)
-*   [How to integrate Jasper Reports into a WaveMaker App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/)
 *   [How to generate PDF Files using Jasper Reports](/learn/how-tos/generate-pdf-file-using-jasper-reports/)
 
 
