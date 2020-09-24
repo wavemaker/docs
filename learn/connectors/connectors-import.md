@@ -5,6 +5,8 @@ sidebar_label: "Import Connectors"
 ---
 ---
 
+## Import a Connector into WaveMaker Studio
+
 We need a connector zip to import into WaveMaker application. <br>
 There are two ways to get the zip.
 - Go to Releases section in the WaveMaker's Connectors Github account and get the latest released version. 
