@@ -687,8 +687,10 @@
             "app-development/services/database-services/orm-artifacts",
             "how-tos/pre-post-processing-db-service-apis",
             "how-tos/accessing-loggedin-user-information-using-a-java-service",
-           "how-tos/camunda-wavemaker-app-integration",
-           "how-tos/azure-file-storage-connector"
+            "how-tos/camunda-wavemaker-app-integration",
+            "how-tos/azure-file-storage-connector",
+            "how-tos/insert-data-from-excel"
+
           ],
 
           "Variables":
