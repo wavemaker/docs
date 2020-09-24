@@ -4,6 +4,12 @@ id: ""
 ---
 ---
 
+:::note
+Content in this page was outdated. Use Connector approach instead writing Code.
+[Click here to see How-to use Jasper connector in WaveMaker  App](/learn/how-tos/generate-pdf-file-using-jasper-reports)
+:::
+
+
 Jasper Reports is an open source Java reporting tool that can write to a variety of targets, such as: screen, a printer, into PDF, HTML, Microsoft Excel, RTF, ODT, Comma-separated values or XML files. It can be used in Java-enabled applications, including Java EE or web applications, to generate dynamic content.
 
 -  To Integrate Jasper Reports in your WaveMaker application you will need to write the Java Service where by passing required parameters one can generate the report. [Refer the link for creating Java service](/learn/app-development/services/java-services/java-service/).

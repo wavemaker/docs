@@ -1,7 +1,7 @@
 ---
-title: "Building Connectors"
+title: "Building New Connectors"
 id: "connectors-building"
-sidebar_label: "Building Connectors"
+sidebar_label: "Building New Connectors"
 ---
 ---
 

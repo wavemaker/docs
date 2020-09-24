@@ -5,26 +5,22 @@ sidebar_label: "Architecture"
 ---
 ---
 
-# Connector Architecture
+## Connector Component view
 
-This page depicts connector design time architecture and runtime flow
+Basically connector project contains three Components.
 
-## Designtime Architecture
+1. **Connector API**: A connector interface and skeleton of connector APIs. 
+2. **Connector Impl**: Actual implantation of connector interfaces. External Libraries and Configuration Profiles are part of this.
+3. **Third Party Systems**: External services like Kafka, MongoDB, AWS, Azure services etc.
 
-Following are the building blocks of connector and where exactly connectors placed in WaveMaker application.
+[![lftr_sel](/learn/assets/connector/ConnectorArchitecture.png)](/learn/assets/connector/ConnectorArchitecture.png)
+<br>
 
-[![lftr_sel](/learn/assets/connector/connector-designtime-architecture.png)](/learn/assets/connector/connector-designtime-architecture.png)
+## Connector view inside WaveMaker App
+One or More Connectors can be used inside WaveMaker Application.
+Connectors are orchestrate through Java Services.
 
-## Runtime Flow
+[![lftr_sel](/learn/assets/connector/ConnectorInsideApp.png)](/learn/assets/connector/ConnectorInsideApp.png)
 
-Here is the runtime flow of connector.Basically application will loaded only with connector API module libraries and later on request of connector API; impl libaries are loaded to invoke connector API.On after connector api invocation, connector impl libraries are unloaded from the application class loader.
-
-[![lftr_sel](/learn/assets/connector/connector-runtime-high-level-flow.png)](/learn/assets/connector/connector-runtime-high-level-flow.png)
-
-## Connector Framework Lifecycle
-
-Here is the detailed end-to-end  connector framework flow.
-
-[![lftr_sel](/learn/assets/connector/connector-indetail-lifecycle.png)](/learn/assets/connector/connector-indetail-lifecycle.png)
 
 

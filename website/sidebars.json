@@ -393,7 +393,7 @@
     [
         "connectors/connectors-introduction",        
         "connectors/connectors-architecture",   
-        "connectors/connectors-how-it-works", 
+        "connectors/connectors-import", 
         "connectors/connectors-list", 
         "connectors/connectors-building"
       ],

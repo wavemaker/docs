@@ -21,7 +21,7 @@ Jasper Reports Connector provides APIs to execute the jasper reports and export 
 
 The connector is hosted at: https://github.com/wavemaker/jasper-reports-connector
 
-[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/integrating-sample-jasper-report-wavemaker-application/#docsNav)
+[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/generate-pdf-file-using-jasper-reports)
 
 
 ### Excel Connector
@@ -29,12 +29,14 @@ Excel connector provides apis to parse the Excel filClick here to see How-to use
 
 The connector sources are hosted at: https://github.com/wavemaker/excel-connector
 
+[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/insert-data-from-excel)
 
 ### Azure File Storage Connector
 Azure File storage (https://azure.microsoft.com/en-in/services/storage/files/)  connector provides simplified APIs to work with azure file storage to store & retrieve files from Azure Storage Service. Using this connector, one can build the Upload, Download, List & Delete operations of files in Azure storage.
 
 The connector sources are hosted at: https://github.com/wavemaker/azure-file-storage-connector
 
+[Click here to see How-to use this connector in WaveMaker  App](/learn/how-tos/azure-file-storage-connector)
 
 ### Camunda Connector
 Camunda BPM is a lightweight, open source platform for Business Process Management. Camunda is used primarily to automate Business Process WorkFlows & Decision Modeling into the applications.

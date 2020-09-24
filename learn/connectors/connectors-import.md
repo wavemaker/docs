@@ -1,15 +1,14 @@
 ---
-title: "How It Connectors"
-id: "connectors-how-it-works"
-sidebar_label: "How It Works"
+title: "Import Connectors"
+id: "connectors-import"
+sidebar_label: "Import Connectors"
 ---
 ---
-# How to use connector in WaveMaker application
 
-This page explaing about how to deploy connector and use in WaveMaker application.
-
-## Import Connector
-On after building connector you will be having a zip artifact in /dist/connector-name-version.zip
+We need a connector zip to import into WaveMaker application. <br>
+There are two ways to get the zip.
+- Go to Releases section in the WaveMaker's Connectors Github account and get the latest released version. 
+- After building connector you will be having a zip artifact in /dist/connector-name-version.zip. 
 
 In WaveMaker studio, import connector zip in the import resource dialogimport resource allow you to import connector zip artifact.
 

@@ -1,6 +1,7 @@
 ---
 title: "Inserting data from Excel into the database"
-id: ""
+id: "insert-data-from-excel"
+sidebar_label: "Insert Data from Excel into Database"
 ---
 ---
 
