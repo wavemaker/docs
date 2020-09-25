@@ -744,6 +744,7 @@
           [
             "how-tos/splashscreens-icons",
             "how-tos/using-cordova-plugins",
+            "how-tos/support-for-tablet-view-in-mobile",
             "how-tos/sliding-leftnav-mobile-app",
             "how-tos/mobile-app-using-bar-code"
           ],         
