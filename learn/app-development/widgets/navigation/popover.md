@@ -82,3 +82,6 @@ Popovers “pop-up” when the user performs a certain action or gets to a speci
 | --- | --- |
 | Horizontal Align | This property specifies how the elements should be aligned horizontally. |
 
+## See Also
+
+[Using Popover Widget](/learn/app-development/widgets/navigation/popover-basic-usage)

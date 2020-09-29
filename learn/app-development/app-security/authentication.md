@@ -159,7 +159,9 @@ WaveMaker allows you to authenticate your apps with OpenID. Setting the Security
 
 ### Service Provider Information
 - **Redirect URL** is pre-populated by WaveMaker and is not editable. You need to copy this link and use it to as the callback URL in Provider app settings page when you register the app.
-
+- If the application is deployed outside of WaveMaker then the redirect URL for the deployed applications will be in the below format. 
+  **"https://<domain_name>/<app_name>/oauth2/code/{providerid}"**.
+  
 ### Integration Information
 - Client Credentials issued once your app is registered with the Provider. It will be in the form of **Client ID** and **Client Secret**.
 - **Scopes** defines what the access token can do and what resources it can access. Check with the selected service provider to understand how to further configure this field, usually, it will be email, username, etc..
@@ -265,7 +267,7 @@ You can handle exceptions by throwing [subclasses of AuthenticationException](ht
 
 2. and returns a **WMUser** object which can be initialized by a call to the following constructor:
 ```
-public WMUser(String userId, String userName, Collection roles)
+public WMUser(String userName, String password, Collection<String> roles)
 ``` 
 
 For example, the following sample implementation extracts the **user** value from the **ticket** parameter from the Http header data and adds the roles of user and admin, accordingly. 
@@ -294,11 +296,11 @@ public class SecureService implements WMCustomAuthenticationManager {
         if(username.equals("John") && password.equals("John123")) {
             List roles = new ArrayList();
             roles.add("admin");
-            return new WMUser("John", username, roles);
+            return new WMUser(username,password,roles);
         } else if(username.equals("Jane") && password.equals("Jane123")) {
             List roles = new ArrayList();
             roles.add("user");
-            return new WMUser("Jane", username, roles);
+            return new WMUser(username,password,roles);
         }
         return null;
     }

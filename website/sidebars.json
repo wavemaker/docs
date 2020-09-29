@@ -283,6 +283,7 @@
         "app-development/dev-integration/developer-tools",
         "app-development/dev-integration/inspection-framework",
         "app-development/dev-integration/debugging",
+	"hybrid-mobile/mobile-automation-appium",
         {
           "type": "subcategory",
           "label": "Developer Integration",
@@ -443,21 +444,26 @@
         "hybrid-mobile/switching-offline-online-mode"]
       }
     ],    
-
-    "Enterprise": 
+    "Connectors":
     [
-      "installation/wavemaker-enterprise-setup-guide",
-      "installation/wme-setup-guide-launch-initialize",
-      "installation/wme-setup-using-deb-installer-private-ami",
-      "installation/wme-setup-guide-add-external-vcs-configuration",
-      "installation/wme-setup-guide-custom-apps-capacity",
-      "installation/wme-setup-guide-access-setting",
-      "installation/wme-setup-guide-configuration",
-      "installation/wme-setup-guide-adding-capacity",
-      "installation/wme-setup-guide-maintenance",
-      "installation/wme-setup-guide-upgrading"
+        "connectors/connectors-introduction",        
+        "connectors/connectors-architecture",   
+        "connectors/connectors-import", 
+        "connectors/connectors-list", 
+        "connectors/connectors-building"
+      ],
+    "Teams":
+    [
+      "teams/overview",
+      "teams/faqs",
+      "teams/dashboard",
+      "teams/manage-users",
+      "teams/manage-projects",
+      "teams/manage-roles",
+      "teams/code-repository",
+      "teams/team-profile",
+      "teams/manage-subscription"
     ]
-
 },
 
 "Enterprise":
@@ -574,8 +580,30 @@
         "on-premise/configure/add-apps-capacity",
         "on-premise/configure/config-pipeline",
         "on-premise/configure/config-ssl"
-      ],    
-   
+      ],
+
+  "Observability":
+  [
+    "on-premise/observability/introduction",
+    {
+      "type": "subcategory",
+      "label": "Logs Aggregation",
+      "ids": [
+        "on-premise/observability/logs-aggregation/overview",
+        "on-premise/observability/logs-aggregation/kibana"
+      ]
+    },
+    {
+      "type": "subcategory",
+      "label": "Metrics Collection",
+      "ids": [
+        "on-premise/observability/metrics-collection/overview",
+        "on-premise/observability/metrics-collection/prometheus",
+        "on-premise/observability/metrics-collection/alerts",
+        "on-premise/observability/metrics-collection/grafana"
+      ]
+    }
+  ],
 
   "Upgrade":
   [
@@ -659,6 +687,13 @@
             "how-tos/using-custom-formatter"
           ],
 
+          "Nav & Dropdown":
+          [
+            "how-tos/dynamic-menu-based-user-role",
+            "how-tos/restricting-menu-item-display-based-user-role",
+            "how-tos/implementing-localization-dropdown-menu"
+          ],
+
           "Localization":
           [
             "how-tos/localization-wavemaker-apps",
@@ -707,7 +742,9 @@
             "app-development/services/database-services/orm-artifacts",
             "how-tos/pre-post-processing-db-service-apis",
             "how-tos/accessing-loggedin-user-information-using-a-java-service",
-	         "how-tos/camunda-wavemaker-app-integration"
+            "how-tos/camunda-wavemaker-app-integration",
+            "how-tos/azure-file-storage-connector",
+            "how-tos/insert-data-from-excel"
 
           ],
 
@@ -742,8 +779,11 @@
             "how-tos/app-migration-wavemaker-9x-10x",
             "how-tos/debug-monitor-performance-issues-using-fusion-reactor"
           ],
-
-          "Mobile gesture":
+         "Mobile App Solutions":
+          [
+            "how-tos/mobile-notify-new-version-update"
+          ],
+         "Mobile gesture":
           [
             "how-tos/setting-swipe-gestures-list-widget",
             "how-tos/working-pull-refresh"
@@ -776,6 +816,7 @@
             "how-tos/add-master-detail-records-using-data-table",
             "how-tos/export-data-data-table",
             "how-tos/export-data-data-table-2",
+            "how-tos/setting-blob-filename",
             "how-tos/dynamic-data-tables",
             "how-tos/data-table-column-bound-query",
             "how-tos/combining-columns-data-table",
@@ -897,14 +938,6 @@
             "how-tos/tree-use-case-static-variable",
             "how-tos/tree-use-case-java-service",
             "how-tos/tree-use-case-dynamic-tree"
-          ],
-
-          "Nav & Dropdown":
-          [
-            "app-development/widgets/navigation/nav-basic-usage",
-            "how-tos/dynamic-menu-based-user-role",
-            "how-tos/restricting-menu-item-display-based-user-role",
-            "how-tos/implementing-localization-dropdown-menu"
           ],
 
           "Prefabs":
@@ -1042,22 +1075,22 @@
 
     "Basic Widgets":
     [
-      "app-development/widgets/basic/anchor",
-      "app-development/widgets/basic/media-widgets",
-      "app-development/widgets/basic/html",
-      "app-development/widgets/basic/icon",
-      "app-development/widgets/basic/iframe",
       "app-development/widgets/basic/label",
+      "app-development/widgets/basic/anchor",
+      "app-development/widgets/basic/icon",
+      "app-development/widgets/basic/picture",
+      "app-development/widgets/basic/tree",
+      "app-development/widgets/basic/video",
+      "app-development/widgets/basic/audio",
+      "app-development/widgets/basic/html",    
+      "app-development/widgets/basic/iframe",   
       "app-development/widgets/basic/message",
-      "app-development/widgets/basic/media-widgets",
-      "app-development/widgets/basic/progress-bar",
-      "app-development/widgets/progress-circle",
-      "app-development/widgets/basic/richtext-editor",
+      "app-development/widgets/basic/spinner",
       "app-development/widgets/basic/search",
       "app-development/widgets/basic/search-basic-usage",
-      "app-development/widgets/basic/spinner",
-      "app-development/widgets/basic/tree",
-      "app-development/widgets/basic/media-widgets"
+      "app-development/widgets/basic/richtext-editor",
+      "app-development/widgets/basic/progress-bar",
+      "app-development/widgets/progress-circle"
     ],
 
     "Charts":
@@ -1068,8 +1101,25 @@
 
     "Navigation":
     [
-      "app-development/widgets/navigation/nav",
-      "app-development/widgets/navigation/nav-bar",
+      {
+        "type": "subcategory",
+        "label": "Nav",
+        "ids": 
+          [
+            "app-development/widgets/navigation/nav",
+            "app-development/widgets/navigation/nav-basic-usage"
+          ]
+      },
+      
+      {
+        "type": "subcategory",
+        "label": "Nav Bar",
+        "ids": 
+          [
+            "app-development/widgets/navigation/nav-bar"
+          ]
+      },
+            
       {
         "type": "subcategory",
         "label": "Breadcrumb",
@@ -1101,18 +1151,18 @@
 
     "Advanced Widgets":
     [
-      "app-development/widgets/advanced/carousel",
       "app-development/widgets/advanced/login",
-      "app-development/widgets/advanced/marquee"
+      "app-development/widgets/advanced/marquee",
+      "app-development/widgets/advanced/carousel"
     ],
 
     "Dialog Widgets":
     [
       "app-development/widgets/modal-windows-dialogs",
+      "app-development/widgets/design-dialog",
       "app-development/widgets/alert-dialog",
       "app-development/widgets/confirm-dialog",
-      "app-development/widgets/iframe-dialog",
-      "app-development/widgets/design-dialog",
+      "app-development/widgets/iframe-dialog",   
       "app-development/widgets/page-dialog",
       "app-development/widgets/login-dialog"
     ],
@@ -1130,7 +1180,8 @@
       "app-development/widgets/prefab/youtube",
       "app-development/widgets/prefab/googlemaps",
       "app-development/widgets/prefab/qrcode", 
-      "app-development/widgets/prefab/box-viewer-prefab",  
+      "app-development/widgets/prefab/box-viewer-prefab",
+      "app-development/widgets/prefab/entity-extraction-from-documents", 
       "app-development/widgets/prefab/docusign",
       {
         "type": "subcategory",
@@ -1168,7 +1219,10 @@
         "type": "subcategory",
         "label": "Versions: 10.5.x",
         "ids": 
-          [  
+          [ 
+            "wavemaker-release-notes/v10-5-5", 
+            "wavemaker-release-notes/v10-5-4", 
+            "wavemaker-release-notes/v10-5-3",
             "wavemaker-release-notes/v10-5-2",
             "wavemaker-release-notes/v10-5-1",            
             "wavemaker-release-notes/v10-5-0"

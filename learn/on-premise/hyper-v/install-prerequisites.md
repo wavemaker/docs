@@ -61,9 +61,10 @@ sudo apt-get install python3 -y
 
     ```bash
         usermod -aG <user> docker
+        mkdir -p /etc/systemd/system/docker.service.d/
         chown -R <user>:<user> /etc/systemd/system/docker.service.d
         chown -R <user>:<user> /data
-        echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+        echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
         ```
 
 ## RHEL
@@ -74,33 +75,39 @@ Install below softwares on Platform Instance and StudioWorkspace Instance / AppD
 Use same version numbers as mentioned.
 :::
 
+- update cache
+
+```bash
+   yum update -y
+```
+
 - Install  wget
 
 ```bash
-sudo yum install wget  -y
+  yum install wget  -y
 ```
 
-- Install container-selinux
+- Install container-selinux for RHEL 7 version only
 
 ```bash
-yum install http://ftp.riken.jp/Linux/cern/centos/7/extras/x86_64/Packages/container-selinux-2.10-2.el7.noarch.rpm -y
+  yum install http://ftp.riken.jp/Linux/cern/centos/7/extras/x86_64/Packages/container-selinux-2.10-2.el7.noarch.rpm -y
 ```
 
 - Install docker 18.06.2-ce
 
 ```bash
-wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-18.06.2.ce-3.el7.x86_64.rpm
-yum install docker-ce-18.06.2.ce-3.el7.x86_64.rpm -y
+  wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-18.06.2.ce-3.el7.x86_64.rpm
+  yum install docker-ce-18.06.2.ce-3.el7.x86_64.rpm -y
 ```
 
 ```bash
-systemctl start docker
+  systemctl start docker
 ```
 
 - Install python3
 
 ```bash
-yum install python3 -y
+  yum install python3 -y
 ```
 
 ### Extra configurations on RHEL StudioWorkspace Instance / AppDeployment Instance

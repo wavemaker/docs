@@ -1,133 +1,218 @@
 ---
-title: "Sending eMail using Java Service"
+title: "Sending Email using WaveMaker Connector"
 id: ""
 ---
 ---
 
-We will see how to implement send email in Java Service using Java Mail API.
+Email Connector provides simplified APIs to integrate with any Email service provider. It provides methods for sending a plain text message, parameterized/templatized messages & also enables sending messages with attachments. 
 
-The process shows:
+This document explains the following 3 different ways to send the email message :
 
-1. How to create an Email client to send out emails.
-2. How to use Java Mail API in a Java Service to send out emails.
-3. How to parameterize the Java Service.
+1. Send an Email with text message.
+1. Send an Email with templatised message.
+1. Send an Email with attachments.
 
-## Step 1: Adding Mail.jar
+Steps involved in sending an email: 
 
-This can be done in two ways:
+## Step 1: Importing the email-connector to project
 
-### Method 1: Import JAR file
+1. Download the latest email-connector zip [here](https://github.com/wavemaker/email-connector/releases)
+1. Import the downloaded email-connector zip into your app using the [Import Resource](/learn/app-development/services/3rd-party-libraries) option to the **_Connector_** folder.
 
-Download and Import _mail.jar_ file of your choice into your app using the [Import Resource](/learn/app-development/services/3rd-party-libraries) option to the _lib_ folder.
+## Step 2: Confiure email connector properties in profiles.
+1. By default externalized connector properties are added in the project profiles.
+1. Connector externalized properties are prefixed with **connector.${connectorName}**.
+    
+    `
+    connector.email.default.email.server.host=
+    connector.email.default.email.server.password=
+    connector.email.default.email.server.port=
+    connector.email.default.email.server.username=`
 
-OR
+1. We need to specify the values for connector properties in profiles.
+1. These externalized properties are used in the connector, If required we can also read these properties in java service as below:
+  
+    ```Java  
+    @Value("${email.server.username}")
+    private String fromEmailAddress;    
 
-### Method 2: Add dependencies
-
-1. Open the project and access File Explorer
-1. Search for pom.xml
-1. The following dependency needs to be added to _pom.xml_ file under _dependencies_ section. Search for `javax.servlet` to find the right section in pom.xml where the following snippet should be inserted:
-
-   ```xml
-    <dependency>
-        <groupId>com.sun.mail</groupId>
-        <artifactId>javax.mail</artifactId>
-        <version>1.5.6</version>
-    </dependency>
     ```
 
-    Here is how the `pom.xml` should look after you added the above snippet.
 
-[![Screenshot showing pom.xml after change](/learn/assets/email_pom.png)](/learn/assets/email_pom.png)
-
-If you added the dependency at the right place in `pom.xml` you should see the the `javax.mail-1.5.6.jar` in the lib folder like this:
-
-[![Screenshot show mail jar file added to lib folder](/learn/assets/sending-email-using-java-service-lib-folder.png)](/learn/assets/sending-email-using-java-service-lib-folder.png)
-
-## Step 2: Creating Java Service
+## Step 3: Creating Java Service
 
 1. Create a [Java Service](/learn/app-development/services/java-services/java-service/#creating-a-java-service), named EmailService
-1. Add the following import statements in the Java service created in the above step.
-
-    ```Java
-    import javax.servlet.http.HttpServletRequest;
-    import javax.annotation.PostConstruct;
-    import org.slf4j.Logger;
-    import org.slf4j.LoggerFactory;
-    import org.springframework.beans.factory.annotation.Autowired;
-    import org.springframework.beans.factory.annotation.Value;
-    import java.util.Properties;
-    import javax.mail.Message;
-    import javax.mail.Authenticator;
-    import javax.mail.MessagingException;
-    import javax.mail.Session;
-    import javax.mail.Transport;
-    import javax.mail.internet.InternetAddress;
-    import javax.mail.internet.MimeMessage;
-    import javax.mail.PasswordAuthentication;
-    import com.wavemaker.runtime.security.SecurityService;
-    import com.wavemaker.runtime.service.annotations.ExposeToClient;
-    import com.wavemaker.runtime.service.annotations.HideFromClient;
+1. Add the import statement for the email connector api class.
+    ```java
+   import org.springframework.mail.SimpleMailMessage;
+   
+   import com.wavemaker.connector.email.EmailConnector;
+   
     ```
+1. Autowire the email connector api class.
+    ```java
+   @Autowired
+   private EmailConnector emailConnector;
+   
+    ```
+   
+1. Using this emailConnector 
+   
+   _Note_: Here we are setting default values for the properties like fromEmailAddress. required by the EmailService. To set them to Environment level values see the next section.
+### i. Send an Email with Text
 
-1. Add the following class definition for the EmailService _Note_: Here we are setting default values for the properties like username, password, etc. required by the EmailService. To set them to Environment level values see the next section.
+```java
+@ExposeToClient
+public class EmailService {
+    
+    private static final Logger logger = LoggerFactory.getLogger(EmailService.class);
 
-    ```Java
-    @ExposeToClient
-    public class EmailService {
-
-        private static final Logger logger = LoggerFactory.getLogger(EmailService.class);
-        private Session session;
-
-        private boolean authentication=true;
-        private boolean smtpServerTTLSEnabled = true;
-        private String host = "smtp.gmail.com";
-        private String port = "587";
-        private String username="<Username>";
-        private String password="<password>";
-
-        @PostConstruct
-        public void init() throws Exception {
-            Properties props = new Properties();
-            props.put("mail.smtp.auth", String.valueOf(authentication));
-            props.put("mail.smtp.starttls.enable",smtpServerTTLSEnabled);
-            props.put("mail.smtp.host", host);
-            props.put("mail.smtp.port", port);
-            session = Session.getInstance(props, new Authenticator() {
-                @Override
-                protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(username, password);
-                }
-            });
-        }
-
-        public void sendEmail(String toEmailAddress, String emailSubject, String emailMessage) {
-            logger.info("toEmailAddress {}, emailSubject {}, emailMessage {} ",
-            toEmailAddress,emailSubject,emailMessage);
-            try {
-                Message message = new MimeMessage(session);
-                message.setFrom(new InternetAddress(username));
-                String[] recipientList = toEmailAddress.split(",");
-                InternetAddress[] recipientAddresses = new InternetAddress[recipientList.length];
-                int counter = 0;
-                for (String recipient: recipientList) {
-                    recipientAddresses[counter] = new InternetAddress(recipient.trim());
-                    counter++;
-                    }
-                message.setRecipients(Message.RecipientType.TO, recipientAddresses);
-                message.setSubject(emailSubject);
-                message.setText(emailMessage);
-                Transport.send(message);
-                logger.info("Sent message successfully....");
-                 } catch (MessagingException e) {
-                    throw new RuntimeException(e);
-                }
-            }
+    @Autowired
+    private EmailConnector emailConnector;
+    
+    @Value("${email.server.username}")
+    private String fromEmailAddress;
+    
+    public void sendMailWithSimpleMessage(String toEmailAddress, String emailSubject, String emailMessage) {
+        logger.info("Sending the email to {} with subject {} and message {}", toEmailAddress, emailSubject, emailMessage);
+        
+        String[] recipientList = toEmailAddress.split(",");
+        SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
+        simpleMailMessage.setFrom(fromEmailAddress);
+        simpleMailMessage.setTo(recipientList);
+        simpleMailMessage.setSubject(emailSubject);
+        simpleMailMessage.setText(emailMessage);
+        
+        emailConnector.sendSimpleMailMessage(simpleMailMessage);
     }
+}
+```
 
-    ```
+### ii. Send an Email with templatised message. 
+   Required import statements
 
-## Step 3: Using the Java Service
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+import com.wavemaker.connector.exception.EmailTemplateNotFoundException;
+```
+Send email with template
+     
+```java
+    public void sendEmailWithTemplate(String toEmailAddress, String emailSubject) {
+        logger.info("Sending the email to {} with subject {} ", toEmailAddress, emailSubject);
+        
+        String[] recipientList = toEmailAddress.split(",");
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setSubject(emailSubject);
+        message.setTo(recipientList);
+        message.setFrom(fromEmailAddress);
+        Map<String, String> props = new HashMap<>();
+        props.put("user", "Mike");
+        try {
+            emailConnector.sendSimpleMailMessageWithTemplate(message, "templates/invitationtemplate", props);
+        } catch (EmailTemplateNotFoundException e) {
+            throw new RuntimeException("Email template not found", e);
+        }
+    }
+```
+    
+If we want use this method we should have a **template** with name **invitationtemplate.txt** in project services `${ServiceName}/src/templates`  folder.
+    [![invitaion email template](/learn/assets/emailTemplateFileLocation.png)](/learn/assets/emailTemplateFileLocation.png)
+    [![invitaion email template with content](/learn/assets/emailTemplate.png)](/learn/assets/emailTemplate.png)
+    
+### iii. Send an Email with attachments.
+        
+Required import statements
+        
+```java
+    import javax.mail.internet.MimeBodyPart;
+    import javax.mail.internet.MimeMessage;
+    import javax.mail.internet.MimeMultipart;
+    
+    import org.springframework.mail.javamail.MimeMessageHelper;
+    import org.springframework.mail.javamail.MimeMessagePreparator;
+```
+    
+Send Email with attachment
+        
+```java
+public void sendMailWithMessagePreparator(String toEmailAddress, String emailSubject, String emailMessage) {
+        logger.info("Sending email to {}, with subject : {}, message : {} and mimetype content", toEmailAddress, emailSubject, emailMessage);
+        emailConnector.sendMimeMail(new MimeMessagePreparator() {
+            @Override
+            public void prepare(final MimeMessage mimeMessage) throws Exception {
+                MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
+                mimeMessageHelper.addTo(toEmailAddress);
+                mimeMessageHelper.setFrom(fromEmailAddress);
+                mimeMessageHelper.setSubject(emailSubject);
+                mimeMessageHelper.setText(emailMessage);
+                mimeMessageHelper.addAttachment("myfile", new ClassPathResource("GitLabIcon.png"));
+            }
+        });
+    }
+```
+
+Send Email method with mime type
+        
+```java
+public void sendMimeMail(String toEmailAddress, String emailSubject) {
+    emailConnector.sendMimeMail(new MimeMessagePreparator() {
+        logger.info("Sending email to {}, with subject {} and mimetype content", toEmailAddress, emailSubject);
+        @Override
+        public void prepare(final MimeMessage mimeMessage) throws Exception {
+            MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
+            mimeMessageHelper.addTo(toEmailAddress);
+            mimeMessageHelper.setFrom(fromEmailAddress);
+            mimeMessageHelper.setSubject(emailSubject);
+            MimeBodyPart mimeBodyPart = new MimeBodyPart();
+            MimeMultipart mimeMultipart = new MimeMultipart();
+            String htmlContent = "<html><h1>Hi</h1><p>Nice to meet you!</p></html>";
+            mimeBodyPart.setContent(htmlContent, "text/html");
+            mimeMultipart.addBodyPart(mimeBodyPart);
+            mimeMessageHelper.getMimeMessage().setContent(mimeMultipart);
+        }
+    });
+}
+```
+   
+Send Email with attachment and mime message
+   
+   ```java
+   public void sendInlineMail(String toEmailAddress, String emailSubject) {
+       emailConnector.sendMimeMail(new MimeMessagePreparator() {
+           @Override
+           public void prepare(final MimeMessage mimeMessage) throws Exception {
+               MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
+               mimeMessageHelper.addTo(toEmailAddress);
+               mimeMessageHelper.setFrom(fromEmailAddress);
+               mimeMessageHelper.setSubject(emailSubject);
+
+               MimeMultipart mimeMultipart = new MimeMultipart();
+
+
+               MimeBodyPart htmlpart = new MimeBodyPart();
+               String htmlMessage = "<html>Hi there,<br>";
+               htmlMessage += "See this cool pic: <img src=\"cid:AbcXyz123\" />";
+               htmlMessage += "</html>";
+               htmlpart.setContent(htmlMessage, "text/html");
+
+
+               MimeBodyPart imagePart = new MimeBodyPart();
+               imagePart.setHeader("Content-ID", "<AbcXyz123>");
+               imagePart.setDisposition(MimeBodyPart.INLINE);
+               imagePart.attachFile(new ClassPathResource("GitLabIcon.png").getFile());
+
+               mimeMultipart.addBodyPart(htmlpart);
+               mimeMultipart.addBodyPart(imagePart);
+               mimeMessageHelper.getMimeMessage().setContent(mimeMultipart);
+           }
+       });
+   }
+   ```  
+
+## Step 3: Integrating with UI
 
 Create a [Java Service Variable](/learn/assets/var_sel.png) for the Java service created in the previous steps.
 
@@ -135,32 +220,6 @@ Create a [Java Service Variable](/learn/assets/var_sel.png) for the Java service
 
 You can now use this service variable in your application as per your business logic.
 
-## Parameterizing email Service
-
-1. In the above Java Service example, values of the mail server and credentials used are hardcoded. It is likely that these value change between development and production environment. We recommend that these values be injected into the Java Service from environment.
-1. For example, currently, in the above Java Service, we are using “ smtp.gmail.com ” as the SMTP host. Also the username, password fields are set to their values.
-1. You can set these properties at the environment level by adding the “@Value” annotation and remove the hardcoded values set onto the fields.
-1. After parameterizing the fields, the Java Service will look like below:
-  
-    ```Java  
-    @Value("${app.environment.authentication}")
-    private boolean authentication;
-    @Value("${app.environment.smtpServerTTLSEnabled}")
-    private boolean smtpServerTTLSEnabled;
-    @Value("${app.environment.host}")
-    private String host;
-    @Value("${app.environment.port}")
-    private String port;
-    @Value("${app.environment.username}")
-    private String username;
-    @Value("${app.environment.password}")
-    private String password;
-
-    ```
-
-1. From [Project Settings](/learn/app-development/wavemaker-overview/product-walkthrough#project-settings) navigate to the [Profile Configuration](/learn/app-development/deployment/configuration-profiles/).
-1. From Development section access the App Environment tab and add the values as per your needs: [![Screenshot showing app env variables](/learn/assets/email_app_env.png)](/learn/assets/email_app_env.png)
-1. This way the values for these properties can be different in each environment. [See here for more](/learn/how-tos/using-app-environment-properties/).
 
 Java Service Use Cases
 

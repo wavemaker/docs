@@ -44,3 +44,7 @@ WaveMaker supports multi-action event handling. This means you can assign a seri
 
 We have seen how Page Layouts, Navigation, and Events help in defining the flow of the app. Check out these [use cases](/learn/app-development/ui-design/use-cases-ui-design/) to further your experience.
 
+## See Also
+
+[Page Navigation](/learn/app-development/ui-design/page-concepts/page-navigation)  
+[Prevent Leaving Page with Unsaved Changes](/learn/how-tos/prevent-user-leaving-page-unsaved-changes)  
