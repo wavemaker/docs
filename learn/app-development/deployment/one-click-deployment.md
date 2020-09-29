@@ -7,12 +7,12 @@ sidebar_label: "One-click Deployment"
 
 One-click Deployment deploys an app to the cloud setup with just a single click which deploys to the WaveMaker demo cloud. Before you deploy an app, you should ensure the build and the application security settings are properly configured by following the below two checks.
 
-1. [Configure Profile Settings](/learn/app-development/deployment/configuration-profiles/)
+1. [Configure Deployment Profile](/learn/app-development/deployment/deployment-profile/)
 2. [Push to VCS](#push-to-vcs)
 
-## Configuration Profile Settings
+## Configure Deployment Profile
 
-Deployment configuration profile uses various service configurations like the database, REST, SOAP, Web Socket, and Security. These settings can be modified from [Configuration Profiles](/learn/app-development/deployment/configuration-profiles/) under the **Project Settings** dialog. Check these settings before deploying an app.
+Deployment configuration profile uses various service configurations like the database, REST, SOAP, Web Socket, and Security. These settings can be modified from [Deployment Profile](/learn/app-development/deployment/deployment-profile/) under the **Project Settings** dialog. Check these settings before deploying an app.
 
 ## Push to VCS
 
@@ -25,7 +25,7 @@ By clicking on the **Deploy** icon; it initiates the deployment process and star
 [![deploy icon](/learn/assets/deploy.png)](/learn/assets/deploy.png)
 
 :::note
-Ensure to push your latest changes to VCS before **One-click deployment**. Also, if you are deploying the app for the first time, check the configuration profile settings. For more information, see [Deployment Overview](/learn/app-development/deployment/deployment-overview).
+Ensure to push your latest changes to VCS before **One-click deployment**. Also, if you are deploying the app for the first time, check the configuration profile settings. For more information, see [Deployment Overview](/learn/app-development/deployment/configuration-profiles).
 :::
 
 ## Deployment Flow

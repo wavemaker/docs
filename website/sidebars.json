@@ -281,6 +281,7 @@
     "Developer options": 
     [
         "app-development/dev-integration/developer-tools",
+        "app-development/deployment/build-options",
         "app-development/dev-integration/inspection-framework",
         "app-development/dev-integration/debugging",
 	"hybrid-mobile/mobile-automation-appium",
@@ -308,20 +309,15 @@
     "Deployment":
     [ 
             "app-development/deployment/deployment-overview",
-            "app-development/deployment/configuration-profiles",
-            "app-development/deployment/build-options",  
+            "app-development/deployment/deployment-profile",                 
+            "app-development/deployment/one-click-deployment",
         {
           "type": "subcategory",
-          "label": "One-Click Deployment",
-          "ids": [                  
-              "app-development/deployment/one-click-deployment"
-            ]
-        },
-        {
-          "type": "subcategory",
-          "label": "Default CI/CD in WaveMaker",
+          "label": "WaveMaker CI/CD Pipeline",
           "ids": [
-            "app-development/deployment/release-management"                                                                              
+            "app-development/deployment/release-management",
+            "app-development/deployment/configuration-profiles",
+            "app-development/deployment/pipelines-phases"                                                                            
           ]
         },
 
@@ -348,7 +344,7 @@
 
         {
           "type": "subcategory",
-          "label": "Pipeline Configuration",
+          "label": "Pipeline Configuration cont.",
           "ids": [    
             "app-development/deployment/phase-configuration",
             "app-development/deployment/webhooks-integration",

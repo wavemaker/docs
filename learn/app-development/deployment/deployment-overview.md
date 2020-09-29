@@ -41,8 +41,7 @@ To learn more about how to configure these pipelines, see [Configure Pipeline fo
 WaveMaker Online (WMO) consists of the following three stages. 
 
 1. Demo
-2. Stage
-3. Live
+2. Live
 
 To learn more about how to configure these pipelines, see [Configure Pipeline for WMO](/learn/app-development/deployment/default-pipelines).
 
