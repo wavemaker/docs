@@ -8,88 +8,93 @@ Email Connector provides simplified APIs to integrate with any Email service pro
 
 This document explains the following 3 different ways to send the email message :
 
-1. Send an Email with text message.
-1. Send an Email with templatised message.
-1. Send an Email with attachments.
+- Send an Email with a text message.
+- Send an Email with a templatized message.
+- Send an Email with attachments.
 
-Steps involved in sending an email: 
+Steps involved in sending an email:
 
-## Step 1: Importing the email-connector to project
+## Importing the email-connector to project
 
-1. Download the latest email-connector zip [here](https://github.com/wavemaker/email-connector/releases)
-1. Import the downloaded email-connector zip into your app using the [Import Resource](/learn/app-development/services/3rd-party-libraries) option to the **_Connector_** folder.
+- Download the latest email-connector zip [here](https://github.com/wavemaker/email-connector/releases)
+- Import the downloaded email-connector zip into your app using the [Import Resource](/learn/app-development/services/3rd-party-libraries) option to the **Connector** folder.
 
-## Step 2: Confiure email connector properties in profiles.
-1. By default externalized connector properties are added in the project profiles.
-1. Connector externalized properties are prefixed with **connector.${connectorName}**.
-    
-    `
-    connector.email.default.email.server.host=
-    connector.email.default.email.server.password=
-    connector.email.default.email.server.port=
-    connector.email.default.email.server.username=`
+## Configure email connector properties in profiles
 
-1. We need to specify the values for connector properties in profiles.
-1. These externalized properties are used in the connector, If required we can also read these properties in java service as below:
+- By default externalized connector properties are added in the project profiles.
+- Connector externalized properties are prefixed with `connector.${connectorName}`.
+
+```java
+connector.email.default.email.server.host=
+connector.email.default.email.server.password=
+connector.email.default.email.server.port=
+connector.email.default.email.server.username=
+```
+
+- You should specify the values for connector properties in profiles.
+- These externalized properties are used in the connector, If required, you can also read these properties in java service as below:
   
-    ```Java  
-    @Value("${email.server.username}")
-    private String fromEmailAddress;    
+```Java  
+@Value("${email.server.username}")
+private String fromEmailAddress;
 
-    ```
+```
 
+## Creating Java Service
 
-## Step 3: Creating Java Service
+- Create a [Java Service](/learn/app-development/services/java-services/java-service/#creating-a-java-service), named EmailService
+- Add the import statement for the email connector api class.
 
-1. Create a [Java Service](/learn/app-development/services/java-services/java-service/#creating-a-java-service), named EmailService
-1. Add the import statement for the email connector api class.
-    ```java
-   import org.springframework.mail.SimpleMailMessage;
-   
-   import com.wavemaker.connector.email.EmailConnector;
-   
-    ```
-1. Autowire the email connector api class.
-    ```java
-   @Autowired
-   private EmailConnector emailConnector;
-   
-    ```
-   
-1. Using this emailConnector 
-   
-   _Note_: Here we are setting default values for the properties like fromEmailAddress. required by the EmailService. To set them to Environment level values see the next section.
-### i. Send an Email with Text
+```java
+import org.springframework.mail.SimpleMailMessage;
+import com.wavemaker.connector.email.EmailConnector;
+```
+
+- Autowire the email connector API class.
+
+```java
+@Autowired
+private EmailConnector emailConnector;
+
+```
+
+- Using the `emailConnector`
+
+:::note
+Here we are setting default values for the properties like fromEmailAddress. required by the EmailService. To set them to Environment level values see the next section.
+:::
+
+### Send an Email with Text
 
 ```java
 @ExposeToClient
 public class EmailService {
-    
+
     private static final Logger logger = LoggerFactory.getLogger(EmailService.class);
 
     @Autowired
     private EmailConnector emailConnector;
-    
+
     @Value("${email.server.username}")
     private String fromEmailAddress;
-    
+
     public void sendMailWithSimpleMessage(String toEmailAddress, String emailSubject, String emailMessage) {
         logger.info("Sending the email to {} with subject {} and message {}", toEmailAddress, emailSubject, emailMessage);
-        
+
         String[] recipientList = toEmailAddress.split(",");
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         simpleMailMessage.setFrom(fromEmailAddress);
         simpleMailMessage.setTo(recipientList);
         simpleMailMessage.setSubject(emailSubject);
         simpleMailMessage.setText(emailMessage);
-        
         emailConnector.sendSimpleMailMessage(simpleMailMessage);
     }
 }
 ```
 
-### ii. Send an Email with templatised message. 
-   Required import statements
+### Send an Email with a templatized message
+
+Required import statements
 
 ```java
 import java.util.HashMap;
@@ -97,12 +102,12 @@ import java.util.Map;
 
 import com.wavemaker.connector.exception.EmailTemplateNotFoundException;
 ```
-Send email with template
-     
+
+#### Sending an email with template
+
 ```java
     public void sendEmailWithTemplate(String toEmailAddress, String emailSubject) {
         logger.info("Sending the email to {} with subject {} ", toEmailAddress, emailSubject);
-        
         String[] recipientList = toEmailAddress.split(",");
         SimpleMailMessage message = new SimpleMailMessage();
         message.setSubject(emailSubject);
@@ -117,26 +122,27 @@ Send email with template
         }
     }
 ```
-    
-If we want use this method we should have a **template** with name **invitationtemplate.txt** in project resources `src/main/resources/templates`  folder.
-    [![invitaion email template](/learn/assets/emailTemplateFileLocation.png)](/learn/assets/emailTemplateFileLocation.png)
-    [![invitaion email template with content](/learn/assets/emailTemplate.png)](/learn/assets/emailTemplate.png)
-    
-### iii. Send an Email with attachments.
-        
+
+If you want to use the method, you should have a **template** with name **invitationtemplate.txt** in the project resources `src/main/resources/templates`  folder.
+
+[![invitaion email template](/learn/assets/emailTemplateFileLocation.png)](/learn/assets/emailTemplateFileLocation.png)
+
+[![invitaion email template with content](/learn/assets/emailTemplate.png)](/learn/assets/emailTemplate.png)
+
+### Send an Email with attachments
+
 Required import statements
-        
+
 ```java
     import javax.mail.internet.MimeBodyPart;
     import javax.mail.internet.MimeMessage;
     import javax.mail.internet.MimeMultipart;
-    
     import org.springframework.mail.javamail.MimeMessageHelper;
     import org.springframework.mail.javamail.MimeMessagePreparator;
 ```
-    
-Send Email with attachment
-        
+
+#### Send Email with attachment
+
 ```java
 public void sendMailWithMessagePreparator(String toEmailAddress, String emailSubject, String emailMessage) {
         logger.info("Sending email to {}, with subject : {}, message : {} and mimetype content", toEmailAddress, emailSubject, emailMessage);
@@ -154,8 +160,8 @@ public void sendMailWithMessagePreparator(String toEmailAddress, String emailSub
     }
 ```
 
-Send Email method with mime type
-        
+#### Send Email method with mime type
+
 ```java
 public void sendMimeMail(String toEmailAddress, String emailSubject) {
     emailConnector.sendMimeMail(new MimeMessagePreparator() {
@@ -176,43 +182,43 @@ public void sendMimeMail(String toEmailAddress, String emailSubject) {
     });
 }
 ```
-   
-Send Email with attachment and mime message
-   
-   ```java
-   public void sendInlineMail(String toEmailAddress, String emailSubject) {
-       emailConnector.sendMimeMail(new MimeMessagePreparator() {
-           @Override
-           public void prepare(final MimeMessage mimeMessage) throws Exception {
-               MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
-               mimeMessageHelper.addTo(toEmailAddress);
-               mimeMessageHelper.setFrom(fromEmailAddress);
-               mimeMessageHelper.setSubject(emailSubject);
 
-               MimeMultipart mimeMultipart = new MimeMultipart();
+#### Send Email with attachment and mime message
 
+```java
+public void sendInlineMail(String toEmailAddress, String emailSubject) {
+    emailConnector.sendMimeMail(new MimeMessagePreparator() {
+        @Override
+        public void prepare(final MimeMessage mimeMessage) throws Exception {
+            MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
+            mimeMessageHelper.addTo(toEmailAddress);
+            mimeMessageHelper.setFrom(fromEmailAddress);
+            mimeMessageHelper.setSubject(emailSubject);
 
-               MimeBodyPart htmlpart = new MimeBodyPart();
-               String htmlMessage = "<html>Hi there,<br>";
-               htmlMessage += "See this cool pic: <img src=\"cid:AbcXyz123\" />";
-               htmlMessage += "</html>";
-               htmlpart.setContent(htmlMessage, "text/html");
+            MimeMultipart mimeMultipart = new MimeMultipart();
 
 
-               MimeBodyPart imagePart = new MimeBodyPart();
-               imagePart.setHeader("Content-ID", "<AbcXyz123>");
-               imagePart.setDisposition(MimeBodyPart.INLINE);
-               imagePart.attachFile(new ClassPathResource("GitLabIcon.png").getFile());
+            MimeBodyPart htmlpart = new MimeBodyPart();
+            String htmlMessage = "<html>Hi there,<br>";
+            htmlMessage += "See this cool pic: <img src=\"cid:AbcXyz123\" />";
+            htmlMessage += "</html>";
+            htmlpart.setContent(htmlMessage, "text/html");
 
-               mimeMultipart.addBodyPart(htmlpart);
-               mimeMultipart.addBodyPart(imagePart);
-               mimeMessageHelper.getMimeMessage().setContent(mimeMultipart);
-           }
-       });
-   }
-   ```  
 
-## Step 3: Integrating with UI
+            MimeBodyPart imagePart = new MimeBodyPart();
+            imagePart.setHeader("Content-ID", "<AbcXyz123>");
+            imagePart.setDisposition(MimeBodyPart.INLINE);
+            imagePart.attachFile(new ClassPathResource("GitLabIcon.png").getFile());
+
+            mimeMultipart.addBodyPart(htmlpart);
+            mimeMultipart.addBodyPart(imagePart);
+            mimeMessageHelper.getMimeMessage().setContent(mimeMultipart);
+        }
+    });
+}
+```
+
+## Integrating with UI
 
 Create a [Java Service Variable](/learn/assets/var_sel.png) for the Java service created in the previous steps.
 
@@ -220,11 +226,9 @@ Create a [Java Service Variable](/learn/assets/var_sel.png) for the Java service
 
 You can now use this service variable in your application as per your business logic.
 
+## See Also
 
-Java Service Use Cases
-
-1. [How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)
-1. [How to implement forgot password feature using Java Service](/learn/how-tos/implementing-forgot-password-feature-using-java-service/)
-1. [How to access REST APIs from Java Service](/learn/how-tos/accessing-rest-apis-java-service/)
-1. [How to schedule a Java Service](/learn/how-tos/scheduling-java-service/)
-1. [How to accomplish Pre-Post Processing for a DB Service APIs](/learn/how-tos/pre-post-processing-db-service-apis/)
+[How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)  
+[How to implement forgot password feature using Java Service](/learn/how-tos/implementing-forgot-password-feature-using-java-service/)  
+[How to schedule a Java Service](/learn/how-tos/scheduling-java-service/)  
+[How to accomplish Pre-Post Processing for a DB Service APIs](/learn/how-tos/pre-post-processing-db-service-apis/)
