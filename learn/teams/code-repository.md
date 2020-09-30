@@ -9,7 +9,7 @@ Source code management is a critical part of the project lifecycle allowing team
 By default, WaveMaker provides a VCS which you can use when you have not configured your own code repository.
 
 :::note
-**Teams** will not have access to the default Version Control System provided by WaveMaker.
+You can pull, push, revert and merge changes back to the default VCS provided by WaveMaker. But, you will not have UI access to the default VCS and it cannot be used for Continuous Integration (CI) and Continuous Delivery (CD) streamlines.
 :::
 
 ## How it Works
