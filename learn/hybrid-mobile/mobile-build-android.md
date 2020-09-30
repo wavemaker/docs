@@ -9,7 +9,6 @@ The **Build** process for a mobile application can be performed through Automate
 WaveMaker Studio supports you to build mobile applications in the following ways:
 
 - **[Build for Android](#android)**: Through this build, you can generate APK files which can be signed and hosted on PlayStore.
-- [**Send to PhoneGap**](/learn/hybrid-mobile/mobile-build-phonegap/): Through this build, it provides you a complete package of building both apk/ipa files for Android and iOS platforms.
 - **[Manual Build](/learn/hybrid-mobile/mobile-build-manual/)**: Through this build, you can generate or download a .zip file which can be further developed to be hosted on any mobile platform.
 
 ## Android Build
@@ -63,5 +62,5 @@ These properties allow you to define platform specific icons. You can select or
 - After giving all the required properties, **Save** the configuration properties for a future build.
 - **Build** will display the status window and will trigger a build request to WaveMaker Build System, where we get the Cordova zip first and later generate the .apk file offline. Once the .apk file is ready, you will be receiving it through an email.
 
-- For creating release apk to **Publish** on Playstore use [Send to PhoneGap](/learn/hybrid-mobile/mobile-build-phonegap/) or [Manual Build](/learn/hybrid-mobile/mobile-build-manual/).
+- For creating release apk to **Publish** on Playstore use [Manual Build](/learn/hybrid-mobile/mobile-build-manual/).
 
