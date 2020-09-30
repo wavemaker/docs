@@ -16,7 +16,7 @@ In WaveMaker studio, import connector zip in the import resource dialogimport re
 
 [![lftr_sel](/learn/assets/connector/connector-import.png)](/learn/assets/connector/connector-import.png)
 
-## Profiling connector properties
+## Externalising connector properties
 On successful import of connector into WaveMaker application, connector externalizable properties are automatically profiled in WaveMaker application profiles. Format of the connector profiled property is
 
 ```Connector.<<connectorId>>.<<configurationId>>.property=value```
