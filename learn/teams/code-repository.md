@@ -23,7 +23,7 @@ Once a code repository is set as 'Default', all new applications created, thereo
 :::
 
 :::note
-A feature **Push to External Repo** provided in Studio is used to push changes to an external repository. It allows you to choose to have a copy of your project code in a different code Repository. This is different from the Team's code repository configuration. 
+A feature **Push to External Repo** provided in Studio is used to push changes to an external repository. It allows you to choose to have a copy of your project code in a different code Repository. This is different from the Team's code repository configuration.
 
 This option is available only to PUSH to the external repo, it does not update the project on WaveMaker with the code from the external repository.
 
@@ -38,14 +38,14 @@ You can access the code repository page in the administration area by clicking *
 
 From the Code Repository page, you can
 
-- Add code repository  
-- View or edit a code repository details  
-- Make **default** a specific code repository
-- Remove a code repository
+* Add code repository  
+* View or edit a code repository details  
+* Make **default** a specific code repository
+* Remove a code repository
 
 ## Add Code Repository
 
-- Click **Add Code Repository**, and provide your repository details.
+* Click **Add Code Repository**, and provide your repository details.
 
 ![Add Repository](/learn/assets/TeamAddVcsRep.png)
 
@@ -55,12 +55,12 @@ You need to explicitly make this VCS as "Default" to add new projects to this re
 
 ## Edit Code Repository
 
-- Select the code repository you want to edit, click the **Edit** icon and update the details.
+* Select the code repository you want to edit, click the **Edit** icon and update the details.
 
 ![Add Repository](/learn/assets/TeamAddVcsRep.png)
 
 ## Make Code Repository as Default
 
-- Select the Code Repository you want to make as default, and click the **Default** option.
+* Select the Code Repository you want to make as default, and click the **Default** option.
 
 ![Make Repository Default](/learn/assets/TeamMakeVcsDefault.png)

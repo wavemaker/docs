@@ -26,10 +26,10 @@ The **Team Admin** can promote any member of the team to team admin.
 
 From the user list, you can
 
-- Create a user or add an existing user
-- View or edit a user’s role  
-- Block a user, to prevent users from logging in to your team
-- Delete a user  
+* Create a user or add an existing user
+* View or edit a user’s role  
+* Block a user, to prevent users from logging in to your team
+* Delete a user  
 
 ## Creating Users
 
@@ -39,23 +39,23 @@ As an admin user, you can create new users or add an existing user by clicking t
 
 Below are fields required for adding an user in the Team
 
-- **Email**
+* **Email**
     
     Email of an user which will be used to login into the WaveMaker Team.
 
-- **First Name**
+* **First Name**
 
    First name of an user to be displayed in user profile and used across Team.
 
-- **Last Name**
+* **Last Name**
 
    Last name of an user to be displayed in user profile and used across Team
 
-- **Preferred Role**
+* **Preferred Role**
 
    Defines the role assigned to user in the Team. It defines access to resources and features in the Team. It can be changed later. 
 
-- **Password**
+* **Password**
 
   Password of the new user which will be used to login into the WaveMaker Team. Team Admin have to share **Password** with the user explicitly. 
 
@@ -64,16 +64,18 @@ Below are fields required for adding an user in the Team
 :::
 
 #### Adding a new user 
-- It opens the **Add User to Team** form to enter the new user’s details.
-- Provide a password that needs to be shared explicitly with the new user by Team admin.
-- Click **Add** to complete the action.
+
+* It opens the **Add User to Team** form to enter the new user’s details.
+* Provide a password that needs to be shared explicitly with the new user by Team admin.
+* Click **Add** to complete the action.
 
 ![Add users](/learn/assets/TeamAddUserForm.png)
 
 #### Adding an user who already has an account in WaveMaker 
-- It opens the **Add User to Team** form to select the existing user.
-- Auto fills the details of existing user
-- Click **Add** to complete the action.
+
+* It opens the **Add User to Team** form to select the existing user.
+* Auto fills the details of existing user
+* Click **Add** to complete the action.
 
 ![Add users](/learn/assets/TeamAddUserForm2.png)
 
