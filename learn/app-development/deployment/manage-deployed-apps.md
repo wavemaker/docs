@@ -63,50 +63,9 @@ At DB shell user can perform database operations.
 6. At **webhook** user can add integrate external tools like jenkins for ci/cd
 7. At **history** user can check the deployment history
 
-## Configure Stage and Live Phase
+## Release History
 
-Once the app is tested and ready to go live, you can push the app from Demo to Stage and Stage to Live. Before that, you need to set the configurations for the Stage and Live phases.
-
-### For WME users
-
-- WME users can use the same steps to configure both Stage and Live phases.
-- WME users need to add instances for Stage and Live phases _before_ configuration. ([see here for adding instances)](/learn/on-premise/configure/add-apps-capacity)
-
-[![](/learn/assets/ptl_noconfigure-1.png)](/learn/assets/ptl_noconfigure-1.png) 
-
-### Steps to Configure Stage and Live Phase
-
-1. Click the Configure button for the Live phase and select the Cloud Provider - you can choose between WaveMaker Demo Cloud or external provider like AWS, Azure, Google or DigitalOcean.
-2. Here we will show steps in **WaveMaker Demo Cloud**,
-    
-    - [click here for AWS configuration](/learn/app-development/deployment/deployment-to-aws/),
-    - [click here for Azure configuration](/learn/app-development/deployment/deployment-to-azure/),
-    - [click here for Google Cloud configuration](/learn/app-development/deployment/deployment-google-cloud/),
-    - [click here for DigitalOcean configuration](/learn/app-development/deployment/deployment-to-digital-ocean/).
-    
-    [![](/learn/assets/manage_apps_live.png)](/learn/assets/manage_apps_live.png)
-3. Selecting WaveMaker Demo Cloud will initiate Live Pipeline setup and will auto-configure the phase and you can push the app to the Live phase.
-
-## Push to Stage and Live
-
-Once the app is tested and live phase has been configured, you can push the app from Demo to Live. 
-
-[![](/learn/assets/MA_push_cloud.png)](/learn/assets/MA_push_cloud.png)
-
-### Steps to configure
-
-1. When you Push from Demo to Live, a dialog for configuration profiles will be displayed. The configuration settings from the Deployment phase is selected which can be modified or retained as it is to create the Live Configuration Profile.  
-
-[![](/learn/assets/ptl_configure.png)](/learn/assets/ptl_configure.png) 
-
-:::tip
-You can also mention the version number and release notes for tracking purposes.  
-:::
-
-[![](/learn/assets/ptl_version.png)](/learn/assets/ptl_version.png)
-
-2. Once the configuration is set, you can Push the app from Demo to Live.
-3. Once deployed, you can view the current release along with release notes and the latest history. You can view all releases/history.
+Once application is deployed, you can view the current release along with release notes and the latest history. You can view all releases/history.
 
 [![](/learn/assets/ptl_cloud_done.png)](/learn/assets/ptl_cloud_done.png)
 

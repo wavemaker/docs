@@ -1,72 +1,31 @@
 ---
 title: "Release Management"
 id: ""
+sidebar_label: "Overview"
 ---
 ---
 
-**Release management** is a software engineering process intended to oversee the development, testing, deployment and support of software releases. Release Management aims to plan, schedule and control the movement of releases to test and live environments. Release Management also needs to ensure the delivery of new and enhanced app services required by the business, while protecting the integrity of existing services.
+**Release management** is a software engineering process for managing the application development, testing, deployment, and support of the application version release. Release Management helps you to plan, schedule, and control the movement of releases to test and live environments. It ensures the delivery of the new enhanced app services while also protecting the integrity of the existing services.
 
 [![release_pipeline](/learn/assets/release_pipeline.png)](/learn/assets/release_pipeline.png)
 
-A typical App life cycle involves various phases i.e. development, testing, and deployment before the App goes live. A **Deployment** or **Release Pipeline** involves setting up these phases to the respective teams in order to prepare the App for delivery. These multiple phases involve different roles within an App engineering team for successful App delivery
+A typical app life cycle involves various phases including development, testing, and deployment before the App is live. A **Deployment** or **Release Pipeline** requires setting up these phases to the respective teams to prepare the app for the delivery process.
 
-1. **Dev** - Used by the developers while building the app for testing the app.
-2. **QA or Demo** – Normally used for integration testing allowing collaborators to add their integration pieces or to do a demo of App to stakeholders or to get an approval of the App features. It can also be used for end-to-end testing of the app by the QA team, verifying feature completeness, run automated tests etc.
-3. **Stage** – Used for pre-live demos, approvals from business teams, performance & user acceptance testing (UAT).
-4. **Live** – The environment where the App is accessible to the end users.
+The following phases involve different roles within an app engineering team for successful app delivery.
 
-Each App phase as depicted above requires its own infrastructure components to run the services, accessible to the different set of roles within the app development team. That is, each App phase requires different sets of configuration for databases, environment and varying sizing needs. These infrastructure needs are the responsibility of DevOps team and it is their responsibility to:
+1. **Dev** - Used by the developers while building the app for testing.
+2. **QA or Demo** – Normally used for integrating test cases allowing collaborators to add their integration pieces or to do a demo of an app to stakeholders or to get an approval of the application features. It can also be used for end-to-end testing of the app by the QA team, verifying feature completeness, run automated tests and more.
+3. **Stage** – Used for pre-live demos, approvals from business teams, performance, and User Acceptance Testing (UAT).
+4. **Live** – The environment where the App is accessible to the end-users.
 
-- set up an appropriate infrastructure for each phase,
-- set roles and access to each phase,
-- secure each phase,
-- ensure the smooth transition of the project between phases with minimum app changes,
-- control versioning during the transition.
+Each App phase as depicted above requires its own infrastructure components to run the services accessible to the different roles within the app development team. That is, each App phase requires different configuration for databases, environment, varying sizing needs, and more. These infrastructure needs are the responsibility of the DevOps team; therefore, it is their responsibility to set the following requirements.
 
-## How WaveMaker Implements Release Management
+- Set up an appropriate infrastructure for each phase
+- Set roles and have access to each phase
+- Secure each phase
+- Ensure the smooth transition of the project between phases with minimum app changes
+- Control versioning during the transition
 
-WaveMaker **Release Pipeline**enables setting up the App deployment phases for easier delivery by leveraging Docker containerization. Setting up an App deployment phase requires:
+## See Also
 
-- provisioning of infrastructure,
-- installing the required software components,
-- setting up the network,
-- configuring the services, and
-- scripts to automate the service startups and app deployment.
-
-Release Pipeline combines the power of Docker-based WaveMaker Cloud to configure app deployment phases, cutting down on the work involved in DevOps and making the App Delivery rapid.
-
-## Deployment Environment
-
-All of the above-mentioned release management tasks are facilitated within WaveMaker through a **Deployment Environment**. A deployment environment is provisioned with all the required services, such as Web Services, database services, and the dependent services, for the application to be fully functional and available. Each deployment environment requires a bunch of containers to be provisioned and setup.
-
-WaveMaker Platform offers a pre-defined set of App delivery phases which enables App progression through multiple phases. At each phase, App is accessible using a unique URL. Each App phase can be setup to use WaveMaker Cloud leveraging Docker containerization or for Stage and Live phases to run on a public cloud like AWS.
-
-### Demo
-
-***Aavailable as QA for WME users***
-
-This is the phase where the app gets deployed when you click Deploy from your Project Workspace. It uses the deployment configuration profile for the services set at the time of app development.
-
-### Stage
-
-***Available only for WME users***
-
-This phase can be set up as per your app requirements. It needs to be configured from Apps Portal before the app can be deployed/pushed to this phase.
-
-### Live
-
-This phase can be set up as per your app requirements and would ideally contain the live deployed app. It needs to be configured from Apps Portal before the app can be deployed/pushed.
-
-With **one-click deployment**, **apps portal** and **versioning of deployed apps** the various aspects of Release Pipeline mentioned in the above sections are made simple and easy to implement.
-
-## One-Click Deployment
-
-Using the Deploy option from Project Workspace, your app is deployed to WaveMaker Cloud (QA in WME). It takes care of the configuration for all required services needed for deployment to the Demo (QA) phase. [Know more](/learn/app-development/deployment/one-click-deployment/).
-
-## Apps Portal
-
-Apps Portal provides a platform for the user to manage the deployed apps. By default two phases - Demo and Live are provided for any WaveMaker App. WME users can utilize an additional Stage phase. Each phase can have its own infrastructure and versioning. Before pushing deployed app to a phase, the phase configuration profiles can be set, else the profiles from the previous phase are retained. [Apps Portal](/learn/app-development/deployment/manage-deployed-apps/#apps-portal).
-
-## App Versioning
-
-Most app development is incremental in nature, i.e. different phases will be hosting the app in various levels of development. The developer will be working on the latest version, while Live version would be at least one step behind. In such cases versioning system comes in handy. In WaveMaker, the app in Demo phase will be the last version deployed from Studio. When pushing from Demo to other phases, you have the option to change the version for better tracking and control. [App Versioning](/learn/app-development/deployment/manage-deployed-apps/#app-versioning).
+[Pipeline and Phases](/learn/app-development/deployment/pipelines-phases)
