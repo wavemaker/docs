@@ -18,10 +18,16 @@ You can choose to add one or more code repositories. **Teams** portal is a centr
 
 Once you add a new repository, to choose a code repository where your newly created application's source code should reside, you've to set that code repository to 'Default'. This will not have any effect on the earlier applications which were created when different code repository was set as 'Default', these applications will keep on referencing the code repository which was set as 'Default' at the time of creation of that particular application.
 
+:::important
 Once a code repository is set as 'Default', all new applications created, thereon, will have their source code reside in that code repository.
+:::
 
 :::note
-A feature **Push to External Repo** provided in Studio is used to push changes to an external repository. It allows you to choose to have a copy of your project code in a different code Repository. This is different from the Team's code repository configuration. In former, you have to provide credentials each time you want to push changes while in latter once configured and set as 'Default' all push/pull operations will use configured credentials.
+A feature **Push to External Repo** provided in Studio is used to push changes to an external repository. It allows you to choose to have a copy of your project code in a different code Repository. This is different from the Team's code repository configuration. 
+
+This option is available only to PUSH to the external repo, it does not update the project on WaveMaker with the code from the external repository.
+
+To work with the Git Repo Repository URL is mandatory, you have to create the repo and provide the URL.
 
 For more information, see [Push to External Repo](/learn/app-development/dev-integration/developer-collaboration/#push-to-external-repo)
 :::

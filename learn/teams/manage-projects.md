@@ -4,7 +4,7 @@ id: ""
 ---
 ---
 
-Sharing a project with a team member is so essential for collaborative work. **Teams** help you share projects and collaborate with other users. The only users who will be allowed to access the project are the users you have invited to collaborate with. You can even choose to restrict what type of access other users have to specific projects.
+Sharing a project with a team member is so essential for collaborative work. **Teams** help you share projects and collaborate with other users in the team. The only users who will be allowed to access the project are the users you have invited to collaborate with. You can even choose to restrict what type of access other users have to specific projects.
 
 **Manage Projects** allow you to have transparent project tracking across your team. This helps you to make sure each member is handling their tasks accordingly. It is a central place that you can leverage and access. **Project Admin** role has all the permissions for a particular project. Therefore, as an admin, you can override and assign or revoke the role from the project members.
 
@@ -29,7 +29,7 @@ From the projects list, you can
 
 ## Add Members
 
-You can add members to a Project. The new members assign with the default role which gives them only read access. You can also choose a specific role for the user. For more information, see [Manage Roles](/learn/teams/manage-roles)
+You can add members in the team to a Project. The new members assign with the default role which gives them only read access. You can also choose a specific role for the user. For more information, see [Manage Roles](/learn/teams/manage-roles)
 
 - To add a member, click the **Plus** button as shown in the image below.
 
@@ -43,6 +43,8 @@ You can add members to a Project. The new members assign with the default role w
 ![Add user](/learn/assets/TeamAddMemberToProject.png)
 
 Your collaborator receives an notification inviting them to join the project. Once they login to their account, they can accept the invite and collaborate on the project. The shared-project dialog will update if the collaborator has accepted the request and joined the project.
+
+![Project Invite](/learn/assets/projectSharingInvite.png)
 
 ## Change Roles
 
