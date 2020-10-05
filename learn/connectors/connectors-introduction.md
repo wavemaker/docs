@@ -4,17 +4,18 @@ id: "connectors-introduction"
 sidebar_label: "Introduction"
 ---
 ---
-## Connector Introduction
-Connector is a Java based backend extension for WaveMaker applications. Connectors are built as Java modules & exposes java based SDK to interact with the connector implementation.
 
-Each connector is built for a specific purpose and can be integrated with one of the external services. Connectors are imported & used in the WaveMaker application. Each connector runs on its own container thereby providing the ability to have it’s own version of the third party dependencies.
+A Connector is a reusable Java-based backend extension for WaveMaker applications. Connectors are built as Java modules to connect with third-party services. Each Connector exposes a set of APIs as Java SDKs to be invoked from a WaveMaker application.
 
-Multiple connectors can be orchestrated inside an WaveMaker application to implement business logic.
+For example, a Connector can accept an Excel file as an input, parse the data, and return the parsed response. 
+(Or)  
+A Connector could connect to an external service like Kafka, MongoDB, AWS, Azure services, etc., and provide the respective integration capabilities.
 
-## Highlights of a Connector
-- onnector is a java based extension which can be integrated with external services and reused in many WaveMaker applications.
-- Each connector can work as an SDK for an external system.
-- Connectors can be imported once in a WaveMaker application and used many times in the applications by creating multiple instances.
-- Connectors are executed in its own container in the WaveMaker application, as a result there are no dependency version conflict issues between connectors.
+## Highlights
 
-[![lftr_sel](/learn/assets/connector/connector-introduction.png)](/learn/assets/connector/connector-introduction.png)
+- Each Connector is built for a specific purpose and may integrate with one or more of the external services.
+- Each Connector exposes a set of APIs as Java SDKs.
+- Connectors are imported and used in the WaveMaker application.
+- Connector is built once and reused in multiple WaveMaker applications.
+- Each Connector runs in its own isolated container thereby providing the ability to have its own version of the third-party dependencies.
+- Multiple connectors can be orchestrated inside a WaveMaker application to implement the business logic.

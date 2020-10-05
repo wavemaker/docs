@@ -62,13 +62,13 @@ Hence, the markup should look as follows:
 8. For the onClick event of the anchor, choose JavaScript as operation. For the function generated in the Script tab of the page, place the below mentioned code snippet:
 
 ```js
-$scope.Click = function($event, $isolateScope) {
-        if ($scope.$parent.Widgets.leftnavColumn.class == "hidden") {
-            $scope.$parent.Widgets.leftnavColumn.class = "leftnavcolumn";
-        } else {
-            $scope.$parent.Widgets.leftnavColumn.class = "hidden";
-        }
-    };
+Partial.anchor5Click = function($event, widget) {
+    if(Partial.App.activePage.Widgets.leftnavColumn.class == "hidden") {
+        Partial.App.activePage.Widgets.leftnavColumn.class = "leftnavcolumn";
+    }else{
+        Partial.App.activePage.Widgets.leftnavColumn.class = "hidden";
+    }
+};
 ```
 
 :::note

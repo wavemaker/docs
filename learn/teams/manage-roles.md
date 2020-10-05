@@ -4,7 +4,22 @@ id: ""
 ---
 ---
 
-**Manage Roles** help you to define customized roles. For example, you can create resource managers, developers to give fine-grained access privileges to projects and assign those roles like resource managers or developers to the members of your projects. Customize the access permissions for each role however you want. Therefore, the user can then perform actions on a project based on their assigned role and permissions.
+**Manage Roles** help you to define customized roles. Customize the access permissions for each role however you want. Therefore, the user can then perform actions on a project based on their assigned role and permissions.
+
+:::tip
+For example, you can create a role **UI Developer** to give fine-grained access privileges like create pages, change theme etc and assign those roles like **UI Developer** to the members of your projects.
+Say, Tom is a UI developer. If you want to collaborate with Tom, you can readily invite him to work with you in the `Test-Sample` project with role **UI Developer**. Tom can then perform actions on a project based on assigned role and permissions.
+:::
+
+:::important
+**Project Roles** are different from **User Roles**. 
+
+A User role defines the permissions of a user in the Team. For example, whether the user is authorized to access the Team portal or not. A user can be a **Teams** admin or a **Studio** user. 
+
+Whereas, Project role defines the permissions of a project member in a particular project. A project member can perform actions on a project based on their assigned role and permissions. 
+
+A project member's actions include view pages, edit pages, deploy application, and more. You can only create custom project roles.
+:::
 
 -  You can access the Manage Roles page in the administration area by clicking **Manage Roles** from the left panel.
 
@@ -33,13 +48,4 @@ From the **Manage Roles** page, you can
 
 ![Edit Role Permissions](/learn/assets/TeamManageRoleDelete.png)
 
-:::important
-**Project Roles** are different from **User Roles**. 
-
-A User role defines the permissions of a user in the Team. For example, whether the user is authorized to access the Team portal or not. A user can be a **Teams** admin or a **Studio** user. 
-
-Whereas, Project role defines the permissions of a project member in a particular project. A project member can perform actions on a project based on their assigned role and permissions. 
-
-A project member's actions include view pages, edit pages, deploy application, and more. You can only create custom project roles.
-:::
 

@@ -5,7 +5,7 @@ sidebar_label: "Build Options"
 ---
 ---
 
-You can choose from the following build options to deploy your app. There are two build options you can choose from.
+Build options are a part of configure profile settings. You can choose from the following build options to deploy your app. There are two build options you can choose from.
 
 1. WaveMaker Build (deprecated)
 2. Angular Build
