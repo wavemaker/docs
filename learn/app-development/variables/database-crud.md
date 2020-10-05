@@ -151,7 +151,20 @@ lv.listRecords({}, function(data) {
 });
 
 var lv = Page.Variables.HrdbEmployeeData;
-// Example 2: Get data filtered on the table fields
+// Example 2: Set custom page and size
+lv.listRecords({
+     "page": 2,
+     "pagesize": 5
+     }, function(data) {
+       // Success Callback
+       console.log('success', data)
+     }, function(error) {
+       // Error Callback
+       console.error('error', error)
+ });
+
+var lv = Page.Variables.HrdbEmployeeData;
+// Example 3: Get data filtered on the table fields
 lv.listRecords({
      filterFields: {
                "city": {
@@ -304,15 +317,7 @@ This method returns the variable’s dataSet, i.e., the current data stored in t
 var result = Page.Variables.HrdbEmployeeData.getData();
         console.log("result", result);
         //  Output:
-        result : {
-          data: [Object, Object, Object], // data in the table
-          pagingOptions: {dataSize: 10, maxResults: 20, currentPage: 1} // pagination options
-       }
-
-// pagination options:
-// dataSize: number of records in a page
-// maxResults: total number of records in the table
-// currentPage: current page
+        result: [Object, Object, Object], // data in the table
 ```
 
 ### clearData()
