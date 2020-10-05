@@ -741,8 +741,8 @@
             "how-tos/accessing-loggedin-user-information-using-a-java-service",
             "how-tos/camunda-wavemaker-app-integration",
             "how-tos/azure-file-storage-connector",
-            "how-tos/insert-data-from-excel"
-
+            "how-tos/insert-data-from-excel",
+            "how-tos/aws-s3-connector"
           ],
 
           "Variables":
