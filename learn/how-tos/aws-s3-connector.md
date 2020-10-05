@@ -46,24 +46,20 @@ Uploads a new file object to the specified Amazon S3 bucket.
 Import statements required:
 ```Java
 import org.springframework.web.multipart.MultipartFile;
-import java.io.File;
 import java.io.IOException; 
 ```
 Source Code:
 ```Java
 public void uploadFile(MultipartFile file){
-    File fileObj=new File(file.getOriginalFilename());
     try{
-        file.transferTo(fileObj);    
-    }catch(IOException e){
-        throw new RuntimeException("Exception occurred while converting to file: "+e);
+        s3Connector.uploadFileToS3(file.getInputStream(),file.getOriginalFilename(), null);
+    } catch (IOException e) {
+        throw new RuntimeException("Exception occurred while uploading file: "+e);
     }
-    //Passing file object metadata as null.
-    s3Connector.uploadFileToS3(fileObj,null);
 }
 ```
 :::note
-The second param for upload API is the custom metadata. Add the key value pairs of the custom user-metadata for the associated file object. If the entry in the custom user-metadata map already contains the specified key, it will be replaced with these new contents.
+The third param for upload API is the custom metadata. Add the key value pairs of the custom user-metadata for the associated file object. If the entry in the custom user-metadata map already contains the specified key, it will be replaced with these new contents.
 :::
 ### 2. List files from Amazon S3.
 Returns a list of summary information about the objects in the specified bucket.
