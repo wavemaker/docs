@@ -416,7 +416,6 @@
         "hybrid-mobile/debugging-mobile-apps",        
         "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
         "hybrid-mobile/mobile-build-android",
-        "hybrid-mobile/mobile-build-phonegap",
         "hybrid-mobile/mobile-build-manual"
         ]
       },
@@ -1217,6 +1216,7 @@
         "label": "Versions: 10.5.x",
         "ids": 
           [ 
+            "wavemaker-release-notes/v10-5-6",
             "wavemaker-release-notes/v10-5-5", 
             "wavemaker-release-notes/v10-5-4", 
             "wavemaker-release-notes/v10-5-3",
