@@ -556,10 +556,42 @@
     "on-premise/upgrade/download-copy-patch",
     "on-premise/upgrade/extract-patch",
     "on-premise/upgrade/run-patch"
-  ]
+  ],
+  
+  "Backup And Restore":
+      [
+        "wme-backup-restore/wme-backup-restore-introduction",
+	{
+		"type": "subcategory",
+      "label": "Platform",
+      "ids": [
+        "wme-backup-restore/backup/platform/backup-esxi",
+        "wme-backup-restore/backup/platform/backup-aws",
+        "wme-backup-restore/backup/platform/backup-azure",
+        "wme-backup-restore/backup/platform/backup-gcloud",
+        "wme-backup-restore/restore/platform/restore-esxi",
+        "wme-backup-restore/restore/platform/restore-aws",
+        "wme-backup-restore/restore/platform/restore-azure",
+        "wme-backup-restore/restore/platform/restore-gcloud"
+      ]
+	},
+	{
+	  	"type": "subcategory",
+      "label": "External Instance",
+      "ids": [
+        "wme-backup-restore/backup/externalinstance/backup-esxi",
+        "wme-backup-restore/backup/externalinstance/backup-aws",
+        "wme-backup-restore/backup/externalinstance/backup-azure",
+        "wme-backup-restore/backup/externalinstance/backup-gcloud",
+	"wme-backup-restore/restore/externalinstance/restore-esxi",
+        "wme-backup-restore/restore/externalinstance/restore-aws",
+        "wme-backup-restore/restore/externalinstance/restore-azure",
+        "wme-backup-restore/restore/externalinstance/restore-gcloud"
+      ]
+
+	}
+      ]
 },
-
-
 
 "Tutorials": 
   {
