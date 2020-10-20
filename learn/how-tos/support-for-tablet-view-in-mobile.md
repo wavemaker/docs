@@ -1,33 +1,40 @@
 ---
-title: "Designing tablet views in Mobile Project"
+title: "Designing Tablet Views in Mobile Project"
 id: ""
 ---
 ---
-Developing tablet views is now supported in Mobile projects. From 10.6, tab screens are available inside studio.
 
-[![](/learn/assets/TabOptions.png)](/learn/assets/TabOptions.png)
+Developing tablet views is now supported in Mobile projects. From the [release 10.6](/learn/wavemaker-release-notes/v10-6-0), tab screens are available inside Studio.
 
-**showindevice** property defines on which type of devices the widget has to be displayed.
+[![Tab option](/learn/assets/TabOptions.png)](/learn/assets/TabOptions.png)
 
-[![](/learn/assets/showindeviceOptions.png)](/learn/assets/showindeviceOptions.png)
+### showindevice
 
-**Viewport API**
+The **showindevice** property allows you to display the widget only on specific devices.
+
+[![show in device](/learn/assets/showindeviceOptions.png)](/learn/assets/showindeviceOptions.png)
+
+### Viewport API
 
 This API provides the viewport details of the device in which the app is rendered.
 
-Properties:
+## Properties
 
-1. **isMobileType**
-If set to true then app is rendered on a mobile device
-2. **isTabletType**:
-If set to true then app is rendered on a tablet device
-3. **orientation**:
-this is an object containing isPortrait and isLandscape values.
-isPortrait is set to true when screen orientation is portrait. Similarly, isLandscape is set to true when screen orientation is landscape. 
+### `isMobileType`
 
-## Viewport API usage
+If set to true, the app renders on a mobile device.
 
-```js   
+### `isTabletType`
+
+If set to true, the app renders on a tablet device.
+
+### `orientation`
+
+This is an object containing the `isPortrait` and `isLandscape` values. Set the `isPortrait` property to true when the screen orientation is portrait. Similarly, you can set the `isLandscape` property to true when the screen orientation is landscape.
+
+## Viewport API Usage
+
+```js
 // Accessing properties on Viewport 
 var viewport = App.getDependency('Viewport');
 
@@ -39,54 +46,46 @@ console.log(viewport.orientation.isLandscape);
 };
 ```
 
-With the help of above properties, Let us develop an app with list of employees and their detail profile.
-The view is different for tablet and mobile as shown below.
+With the help of the properties above, develop an app with the list of employees and their detailed-profile. The view is different for the tablet and mobile as shown below.
 
-[![](/learn/assets/outputTabletMobileView.png)](/learn/assets/outputTabletMobileView.png)
+[![output tablet](/learn/assets/outputTabletMobileView.png)](/learn/assets/outputTabletMobileView.png)
 
-## Steps for designing the app
-1. select a tablet view from the choose screen list.
-2. drag and drop, grid layout with two columns. one columnWidth is 4 and other is 8.
-[![](/learn/assets/column-width.png)](/learn/assets/column-width.png)
+## Steps for Designing the App
 
-3. first column has list widget bound to employees.
-4. Add a container to the second column.
-5. Design a [partial page](learn/app-development/ui-design/page-concepts/partial-pages) that contains the employee profile in detail with employee id param. Bind this partial to the selected employee based on employee id partial param in order to display the employee profile. check [this](/learn/how-tos/how-to-configure-row-expansion-in-a-data-table#creating-a-partial) for creating partial.
-[![](/learn/assets/employeeProfilepartial.png)](/learn/assets/employeeProfilepartial.png)
+1. Select a tablet view from the choose screen list.
+2. Drag and drop the Grid layout with two columns. Set one `columnWidth` to 4 and the other to 8.
+
+    [![column](/learn/assets/column-width.png)](/learn/assets/column-width.png)
+
+3. The first column contains the List widget, which is bound to Employees.
+4. Add a Container to the second column.
+5. Design a [partial page](learn/app-development/ui-design/page-concepts/partial-pages) that contains the employee profile in detail with Employee ID Param. Bind this partial to the selected-employee based on the Employee ID Partial Param to display the Employee Profile. For more information, see [How to create a Partial](/learn/how-tos/how-to-configure-row-expansion-in-a-data-table#creating-a-partial).
+
+    ![profile partial](/learn/assets/partial_page_step1.png)
 
 6. Bind this partial to the above container that is within the second column.
-[![](/learn/assets/col1col2.png)](/learn/assets/col1col2.png)
 
-7. But this second column has to be displayed only in tablet view. Hence configure this by setting showindevice property to Tablet Protrait and Tablet Landscape.
-[![](/learn/assets/showindevice_container.png)](/learn/assets/showindevice_container.png)
+    [![columns](/learn/assets/col1col2.png)](/learn/assets/col1col2.png)
 
-8. Now, change the screen size to mobile device
-6. Bind this partial to the above container that is within the second column.
-[![](/learn/assets/col1col2.png)](/learn/assets/col1col2.png)
+7. But this second column should be displayed only in tablet view. Therefore, configure this by setting the **showindevice** property to Tablet Portrait and Tablet Landscape.
 
-7. But this second column has to be displayed only in tablet view. Hence configure this by setting showindevice property to Tablet Protrait and Tablet Landscape.
-[![](/learn/assets/showindevice_container.png)](/learn/assets/showindevice_container.png)
+    [![showindevice container](/learn/assets/showindevice_container.png)](/learn/assets/showindevice_container.png)
 
-8. Now, change the screen size to mobile device
+8. Now, change the screen size to the mobile device.
 
-[![](/learn/assets/twoviews-mobile.png)](/learn/assets/twoviews-mobile.png)
+9. The second column will not be displayed in the mobile preview as mentioned in step 7.
+10. Hence, in mobile, the first column width has to be set to 12 to occupy the device width.
 
-9. Second column will not be displayed in mobile preview as mentioned in step 7.
-10. Hence, in mobile, first column width has to be set to 12 to occupy the device width.
-[![](/learn/assets/isMobileFlag.png)](/learn/assets/isMobileFlag.png)
+    [![is mobile flag](/learn/assets/isMobileFlag.png)](/learn/assets/isMobileFlag.png)
 
-[![](/learn/assets/twoviews-mobile.png)](/learn/assets/twoviews-mobile.png)
-
-9. Second column will not be displayed in mobile preview as mentioned in step 7.
-10. Hence, in mobile, first column width has to be set to 12 to occupy the device width.
-[![](/learn/assets/isMobileFlag.png)](/learn/assets/isMobileFlag.png)
+    [![two views](/learn/assets/twoviews-mobile.png)](/learn/assets/twoviews-mobile.png)
 
 11. On list item click, navigate to new page containing the partial.
-[![](/learn/assets/onTapEvntonList.png)](/learn/assets/onTapEvntonList.png)
+
+    [![ontapevent](/learn/assets/onTapEvntonList.png)](/learn/assets/onTapEvntonList.png)
+
 12. Run to preview the output on mobile and tablet.
 
-[![](/learn/assets/output_mobile.png)](/learn/assets/output_mobile.png)
+    [![output mobile](/learn/assets/output_mobile.png)](/learn/assets/output_mobile.png)
 
-[![](/learn/assets/output_tablet.png)](/learn/assets/output_tablet.png)
-
-
+    [![output tablet](/learn/assets/output_tablet.png)](/learn/assets/output_tablet.png)
