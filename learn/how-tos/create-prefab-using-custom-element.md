@@ -8,7 +8,7 @@ In this section, you will learn how to use **Web Components** or **Custom Elemen
 * Using the Prefab in an project.
 
 ## Pre-Requisites
-* Download the <a href="/learn/assets/webcomponents/custom-elements.js" download> Movie Poster </a>  Custom Element artefacts & unzip the file.
+* Download the <a href="/learn/assets/webcomponents/custom-elements.js" download> Movie Poster </a>  Custom Element artefacts file.
 
 ## Sample Web Component :  Movie Poster 
 * In this example we will be using a Web Component named `app-movie-poster` 
