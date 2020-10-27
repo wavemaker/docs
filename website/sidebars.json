@@ -944,7 +944,8 @@
             "how-tos/create-prefab-using-d3-nvd3-charts",
             "how-tos/create-prefab-using-d3-library-datamaps",
             "how-tos/create-prefab-using-jquery-plugin",
-            "how-tos/create-prefab-using-angular-module"
+            "how-tos/create-prefab-using-angular-module",
+            "how-tos/create-prefab-using-custom-element"
           ]
         
   },

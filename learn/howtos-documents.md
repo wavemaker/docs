@@ -301,3 +301,4 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to create a Prefab Using D3 & NVD3 Charts](/learn/how-tos/create-prefab-using-d3-nvd3-charts/)
 *   [How to create Prefab Using D3 Library (DataMaps)](/learn/how-tos/create-prefab-using-d3-library-datamaps/)
 *   [How to create Prefab Using JQuery Plugin - showcases using Events and Methods](/learn/how-tos/create-prefab-using-jquery-plugin/)
+*   [How to create Prefab Using Web Components or Custom Elements](/learn/how-tos/create-prefab-using-custom-element/)
