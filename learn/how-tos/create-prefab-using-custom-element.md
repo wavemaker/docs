@@ -1,5 +1,5 @@
 ---
-title: "Create Prefab using React, Angular Components"
+title: "Create Prefab using Angular, React Components"
 id: ""
 ---
 ---
