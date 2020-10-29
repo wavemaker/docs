@@ -1,16 +1,38 @@
 ---
-title: "Create Prefab using Web Components or Custom Elements"
+title: "Create Prefab using React, Angular Components"
 id: ""
 ---
 ---
-In this section, you will learn how to use **Web Components** or **Custom Elements** inside the WaveMaker project through the use of **Prefabs**. We will use an example of integrating _Movie Poster_ Web Component in our application. It involves two steps 
+
+In this section, you will learn how to use components developed in javascript based frameworks such as [**React**](https://reactjs.org/), [**Angular**](https://angular.io/) etc.,. Even if the components are developed in various Javascript frameworks, the approach to integrate them & use it inside a WaveMaker project would be similar as you will discover by the time you finish reading this article.
+
+WaveMaker framework is a purely based on Javascript runtime, making it extensible to almost everything that can work with Javascript inside the browser. The developers can include the Jquery based UI plugins, Charting libs such as D3 & other JS based libraries to implement the required usecase or to complement the rich component library provided by the WaveMaker framework.
+
+With the invent of frameworks such as Angular, React etc., the development of UI Components became easy & lead to growth in the adoption of these frameworks as primary development means for UI development. So, what if users have components developed in one of such of frameworks & need to integrate them inside a WaveMaker project? 
+
+WaveMaker does have an option to address this requirement & it can be achieved through the means of [**Prefabs**](https://www.wavemaker.com/learn/app-development/custom-widgets/custom-widgets). Its highly recommended to refer to [Prefabs documentation](/learn/app-development/custom-widgets/creating-prefabs/#build-your-own-prefabs), if not done so far so that it helps in comprehending the rest of the process explained below.
+
+The Components developed in one framework are not compatible with another framework and cannot be directly used inside HTML markup as well. So, inorder to make these components work across framework we need to convert it into a standard which is compatible across frameworks, webapps without any dependency on the framework code. [**Web Components**](https://developer.mozilla.org/en-US/docs/Web/Web_Components) is such an open standard. It relies on standard browser APIs such as [CustomElements](https://developer.mozilla.org/en-US/docs/Web/API/Window/customElements), [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) enabling its supported across [browsers](https://caniuse.com/?search=web%20components).
+
+Most of the Modern Javascript frameworks have support for packaging the components as Web Components. WaveMaker has support for the use of Web Components inside its projects & recommends its integration through **Prefabs**. Hence, the developers with their components developed in Angular or React can use it in the WaveMaker project by exporting them as Web Components. 
+
+The below section covers the conversion of Framework Components into Web Components, Integrating Web Component as a Prefab element & Consuming a Prefab inside the WaveMaker project in detail.
+
+## Convert Angular Component into Web Components
+Angular Framework recommends usage of [**Angular Elements**](https://angular.io/guide/elements) to converts its components into WebComponenets. The [documentation](https://angular.io/guide/elements#transforming-components-to-custom-elements) covers the process of converting an Angular component into a Web Component in detail and has sample [code](https://angular.io/guide/elements#example-a-popup-service) as well.
+
+## Convert React Component into Web Components
+Unlike Angular, currently there is no official support from the React Framework to develop Web Components using react. However there are several community projects which can help you achieve it. Alternatively, you can develop your own Custom Element wrapper classes over existing react components. You can find lot of community blogs for either of the above mentioned solutions to validate.
+
+## Integrate WebComponents into Project using Prefab 
+
+Once the component developed in a specific framework is conveted to Web Component & artefacts are available, the below use-case covers the integrations steps using **Prefabs**. Inorder to simplify, We will use an example of integrating prebuilt _Movie Poster_ Web Component in our application. The process is explained in below mentioned steps,
+
 * Creating the Prefab
 * Using the Prefab in an project.
 
-## Pre-Requisites
+## Sample Web Component
 * Download the <a href="/learn/assets/webcomponents/custom-elements.js" download> Movie Poster </a>  Custom Element artefacts file.
-
-## Sample Web Component :  Movie Poster 
 * In this example we will be using a Web Component named `app-movie-poster` 
 * The component will display the poster for a given movie title
 * The component takes the movie title as an input through an attribute `moviename`
