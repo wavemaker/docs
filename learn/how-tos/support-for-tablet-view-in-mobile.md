@@ -76,11 +76,11 @@ With the help of the properties above, develop an app with the list of employees
 9. The second column will not be displayed in the mobile preview as mentioned in step 7.
 10. Hence, in mobile, the first column width has to be set to 12 to occupy the device width.
 
-    [![is mobile flag](/learn/assets/isMobileFlag.png)](/learn/assets/isMobileFlag.png)
+    [![is mobile flag](/learn/assets/isMobileFlag.png)](/learn/assets/isMobileFlag.png)  
 
     [![two views](/learn/assets/twoviews-mobile.png)](/learn/assets/twoviews-mobile.png)
 
-11. On list item click, navigate to new page containing the partial.
+11. On list item click, navigate to the new page containing the partial.
 
     [![ontapevent](/learn/assets/onTapEvntonList.png)](/learn/assets/onTapEvntonList.png)
 
