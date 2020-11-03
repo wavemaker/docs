@@ -113,7 +113,7 @@ Prefab.onPropertyChange = function(key, newVal, oldVal) {
             let widget_id = Prefab.Widgets.prefab_container1.widgetId;
             /* 
             Get the WebComponent instance & 
-            update the new property value to its "moviename" attribute
+            update the new property value to its "title" attribute
             */
             document.querySelector('div[widget-id="' + widget_id + '"]')
                 .querySelector('poster-widget-angular')
@@ -230,7 +230,7 @@ Prefab.onPropertyChange = function(key, newVal, oldVal) {
             let widget_id = Prefab.Widgets.prefab_container1.widgetId;
             /* 
             Get the WebComponent instance & 
-            update the new property value to its "moviename" attribute
+            update the new property value to its "title" attribute
             */
             document.querySelector('div[widget-id="' + widget_id + '"]')
                 .querySelector('poster-widget-react')
