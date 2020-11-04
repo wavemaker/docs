@@ -278,12 +278,21 @@ Prefab.onPropertyChange = function(key, newVal, oldVal) {
 ...
 ```
 
-* Import the `AngularElementPrefab`, `ReactElementPrefab` (names may vary depending on what users have saved their prefabs with) Prefabs from Artifacts listing dialog. 
+* Drag & Drop  `AngularElementPrefab`, `ReactElementPrefab` (names may vary depending on what users have saved their prefabs with) Prefabs onto the page. 
 
 [![](/learn/assets/howto_prefab_wc_17.png)](/learn/assets/howto_prefab_wc_17)
 
-* Bind values to `Title` property on the Prefab. 
+* Drag & Drop a _Select_ widget into the page, & provide static list of movie title as its _Dataset_ value. We will be binding the selected title as the input for Prefabs.
+
+[![](/learn/assets/howto_prefab_wc_18.png)](/learn/assets/howto_prefab_wc_18)
+
+* Bind `Title` property value on the Prefab to value from _Select_ widget.
+
+[![](/learn/assets/howto_prefab_wc_19.png)](/learn/assets/howto_prefab_wc_19)
+
 * **Preview** & **Deploy** the application to validate Prefabs created from Angular & React Components.
+
+[![](/learn/assets/howto_prefab_wc_20.png)](/learn/assets/howto_prefab_wc_20)
 
 
 ## See Also
