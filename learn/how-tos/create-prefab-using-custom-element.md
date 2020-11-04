@@ -275,7 +275,7 @@ Prefab.onPropertyChange = function(key, newVal, oldVal) {
 [![](/learn/assets/howto_prefab_wc_17.png)](/learn/assets/howto_prefab_wc_17)
 
 * Bind values to `Title` property on the Prefab. 
-* **Preview** & **Deploy** the application to valid Prefabs.
+* **Preview** & **Deploy** the application to validate Prefabs created from Angular & React Components.
 
 
 ## See Also
