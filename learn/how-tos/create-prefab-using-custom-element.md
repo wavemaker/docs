@@ -30,6 +30,10 @@ However, you can [download the artefacts](/learn/assets/webcomponents/poster-wid
 * styles-*.js
 * main-*.js
 
+:::note
+Before importing the Angular based Web Component into WaveMaker Prefabs/Projects, please validate that the components have no render issues or errors by including them in an plain HTML files.
+:::
+
 ### Create Prefab
 Once we have the [artefacts](/learn/assets/webcomponents/poster-widget-angular.zip), we can create a Prefab for it with the help of below steps,
 * Create a Prefab project using the **Prefab** tab of the Project Dashboard.
@@ -146,6 +150,10 @@ For this demonstration we will use a `PosterWidget` Component developed with Rea
 However, you can [download the artefacts](/learn/assets/webcomponents/poster-widget-react.zip) directly from here & continue with the rest of the steps. The artefact is a zip file & on extracting it provides following files,
 * `react-poster-widget.min.js`
 * `react-poster-custom-element-wrapper.min.js`
+
+:::note
+Before importing the React based Web Component into WaveMaker Prefabs/Projects, please validate that the components have no render issues or errors by including them in an plain HTML files.
+:::
 
 ### Create Prefab
 Once we have the [artefacts](/learn/assets/webcomponents/poster-widget-angular.zip), we can create a Prefab for it with the help of below steps,
