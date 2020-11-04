@@ -14,7 +14,7 @@ The developers with **Angular** or **React** based components can leverage them 
 
 
 :::note
-The shared _PosterWidget_ uses [OMDB]() API to fetch resources. If you are planning to try out the source code of component, please get the API key & replace in the source code before build.
+The shared _PosterWidget_ uses [OMDB](http://www.omdbapi.com/) API to fetch resources. If you are planning to try out the source code of component, please get the API key & replace in the source code before build.
 :::
  
 ## Convert Angular Component into Prefabs
