@@ -13,13 +13,9 @@ One can also build apk or ipa on their system from a cordova zip. To help the Wa
 5. wm-cordova-cli will log the destination build folder at the begining. When the build gets completed, wm-cordova-cli prints out the path at which the built artifact is present.
 
 
-## How to export cordova zip
-1. In the top right menu bar of WaveMaker Studio, export menu is present.  Click on 'Download Cordova zip' menu item.
-[![](/learn/assets/Cordova_Zip.png)](/learn/assets/Cordova_Zip.png)
-2. A dialog with all the cordova configuration will open.
-[![](/learn/assets/Build_Cordova_Zip.png)](/learn/assets/Build_Cordova_Zip.png) 
-3. Provide all necessary configuration and click on 'build' button. A job gets posted to prepare a cordova zip. This job is listed under jobs menu.
-4. When the job gets completed, a link is provided (in the job info) to download the cordova zip.
+## See Also
+
+[Export Cordova zip](/learn/hybrid-mobile/export-cordova-zip)
 
 
 
