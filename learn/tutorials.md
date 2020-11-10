@@ -1,7 +1,7 @@
 ---
 id: tutorials
 title: Welcome to WaveMaker Tutorials
-sidebar_label: Video Tutorials
+sidebar_label: Video Tutorials...
 ---
 Learn the essentials of WaveMaker app development. 
 
