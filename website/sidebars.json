@@ -366,7 +366,8 @@
         "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
         "hybrid-mobile/mobile-build-android",
         "hybrid-mobile/mobile-build-phonegap",
-        "hybrid-mobile/mobile-build-manual"
+        "hybrid-mobile/mobile-build-manual",
+        "hybrid-mobile/mobile-build-appchef"
         ]
       },
 
