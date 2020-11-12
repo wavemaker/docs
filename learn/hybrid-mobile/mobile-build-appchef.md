@@ -60,7 +60,7 @@ Provide the required options and click Save and Build to start building the appl
 
 During the build process, i.e., in the last step of the build, there is an Add icon to upload certificates for Android and iOS . Dialog will be shown specific to store android and iOS certificates.
 
-![mobile-build-appchef-submitted-build-options](/learn/assets/mobile-build-appchef-submitted-build-options.png)
+![mobile-build-appchef-upload-certificate-option](/learn/assets/mobile-build-appchef-upload-certificate-option.png)
 
 These are the options that are shown when you want to add an IOS certificate
 
