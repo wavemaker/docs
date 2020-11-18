@@ -11,6 +11,10 @@ Using the Group By property you can group the items together under a heading. Th
 
 [![](/learn/assets/checkboxset_group.png)](/learn/assets/checkboxset_group.png)
 
+## Items per Row
+
+**Items per row** determine the number to items that can be shown in each row. This can be specified independently for different target devices, from the _device_ tab of the _Properties panel_.
+
 ## Properties
 
 | **Property** | **Description** |
