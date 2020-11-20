@@ -717,7 +717,8 @@
             "how-tos/fetch-default-number100-records-database",
             "how-tos/one-many-relationship",
             "how-tos/working-with-temporals",
-            "how-tos/configuring-aws-redshiftdb"
+            "how-tos/configuring-aws-redshiftdb",
+            "how-tos/configuring-sap-hana-clouddb"
           ],
 
           "Web services":
