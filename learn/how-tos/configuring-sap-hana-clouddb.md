@@ -5,8 +5,7 @@ id: ""
 
 ## Introduction
 
-The document explains the steps to connect to an SAP HANA CLOUD database from the WaveMaker application. SAP HANA is an in-memory, column-oriented, relational database management system offered by SAP. The platform provides a storage system  to store and retrieve data as requested by the applications. In addition, it performs advanced analytics.
-
+The document explains the steps to connect to an SAP HANA CLOUD database from the WaveMaker application. SAP HANA is an in-memory, column-oriented, relational database management system offered by SAP. The platform provides a storage system to store and retrieve data as requested by the applications. In addition, it performs advanced analytics. But we will be able to configure only relational schemas in WaveMaker.
 ## Prerequisites
 
 - SAP HANA CLOUD connection details such as
