@@ -50,8 +50,6 @@ console.log(viewport.orientation.isLandscape);
 Any device with minimum dimension (i.e. width or height) value greater than 480px and maximum dimension (i.e. width or height) value greater than 768px, is considered as tablet.
 :::
 
-## Viewport API usage
-
 With the help of the properties above, develop an app with the list of employees and their detailed-profile. The view is different for the tablet and mobile as shown below.
 
 [![output tablet](/learn/assets/outputTabletMobileView.png)](/learn/assets/outputTabletMobileView.png)
