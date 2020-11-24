@@ -48,6 +48,8 @@ Page.addfileClick = function ($event, widget) {
 
         }
     }
+//tree1 is the tree widget name
+Page.Widgets.tree1.redraw();
 };
 
 Page.addfolderClick = function ($event, widget) {
@@ -62,6 +64,8 @@ Page.addfolderClick = function ($event, widget) {
 
         }
     }
+//tree1 is the tree widget name
+Page.Widgets.tree1.redraw();
 };
 ```
 
