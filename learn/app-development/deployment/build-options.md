@@ -53,4 +53,4 @@ This build option follows the classic WaveMaker build process which was used in 
 ## See Also
 
 [One-Click Deployment](/learn/app-development/deployment/one-click-deployment)  
-[Building a War file from a WaveMaker Project](/learn/app-development/deployment/building-war-wavemaker-project/)
+[Building a War file from a WaveMaker Project](/learn/app-development/deployment/building-with-maven)
