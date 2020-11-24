@@ -281,6 +281,7 @@
     "Developer options": 
     [
         "app-development/dev-integration/developer-tools",
+        "app-development/deployment/build-options",
         "app-development/dev-integration/inspection-framework",
         "app-development/dev-integration/debugging",
 	"hybrid-mobile/mobile-automation-appium",
@@ -306,34 +307,84 @@
     ],
 
     "Deployment":
-    [       
-      "app-development/deployment/configuration-profiles",
-      "app-development/deployment/build-options", 
-      "app-development/deployment/one-click-deployment",
+    [ 
+            "app-development/deployment/deployment-overview",
+            "app-development/deployment/deployment-profile",                 
+            "app-development/deployment/one-click-deployment",
         {
           "type": "subcategory",
-          "label": "CI/CD In-built",
+          "label": "WaveMaker CI/CD Pipeline",
           "ids": [
-            "app-development/deployment/release-management",  
-            "app-development/deployment/manage-deployed-apps", 
-            "app-development/deployment/deployment-to-aws",
-            "app-development/deployment/deployment-to-azure",
-            "app-development/deployment/deployment-google-cloud",
-            "app-development/deployment/deployment-to-digital-ocean"                                                                   
+            "app-development/deployment/release-management",
+            "app-development/deployment/configuration-profiles",
+            "app-development/deployment/pipelines-phases"                                                                            
           ]
         },
 
         {
+          "type": "subcategory",
+          "label": "Pipeline Configuration",
+          "ids": [    
+            "app-development/deployment/default-pipelines",
+            "app-development/deployment/configure-pipelines"
+           
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Deploy to Cloud Providers",
+          "ids": [    
+            "app-development/deployment/deployment-to-aws",
+            "app-development/deployment/deployment-to-azure",
+            "app-development/deployment/deployment-google-cloud",
+            "app-development/deployment/deployment-to-digital-ocean"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Pipeline Configuration cont.",
+          "ids": [    
+            "app-development/deployment/phase-configuration",
+            "app-development/deployment/webhooks-integration",
+            "app-development/deployment/tests-integration"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Manage Deployed Apps",
+          "ids": [    
+            "app-development/deployment/manage-deployed-apps"
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Integrate with your CI/CD Providers",
+          "ids": [    
+            "app-development/deployment/push-code-to-external-repo",
+            "app-development/deployment/integration-with-custom-vcs-provider",
+            "app-development/deployment/export-wavemaker-application",
+            "app-development/deployment/building-with-maven",
+            "app-development/deployment/build-with-docker",
+            "app-development/deployment/jenkins-integration",
+            "app-development/deployment/deployment-using-docker-compose",
+            "how-tos/deployment-to-heroku"
+            ]
+        },
+
+
+        {
             "type": "subcategory",
-            "label": "Deploy to Application Server",
+            "label": "Deployment to external web servers",
             "ids": [ 
             "app-development/deployment/deployment-web-server",
-            "app-development/deployment/building-war-wavemaker-project",
             "how-tos/wavemaker-application-deployment-tomcat",
             "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
             "how-tos/wavemaker-application-deployment-jboss",
-            "how-tos/wavemaker-application-deployment-weblogic-application-server",
-            "how-tos/deployment-to-heroku"
+            "how-tos/wavemaker-application-deployment-weblogic-application-server"
           ]
         }
   ],
@@ -401,14 +452,15 @@
     "Teams":
     [
       "teams/overview",
-      "teams/faqs",
+      "teams/team-setup",
       "teams/dashboard",
       "teams/manage-users",
       "teams/manage-projects",
       "teams/manage-roles",
       "teams/code-repository",
       "teams/team-profile",
-      "teams/manage-subscription"
+      "teams/manage-subscription",
+      "teams/faqs"
     ]
 },
 
@@ -666,7 +718,8 @@
             "app-development/services/database-services/download-jdbc-driver-jar",
             "how-tos/fetch-default-number100-records-database",
             "how-tos/one-many-relationship",
-            "how-tos/working-with-temporals"
+            "how-tos/working-with-temporals",
+            "how-tos/configuring-aws-redshiftdb"
           ],
 
           "Web services":
@@ -690,8 +743,8 @@
             "how-tos/accessing-loggedin-user-information-using-a-java-service",
             "how-tos/camunda-wavemaker-app-integration",
             "how-tos/azure-file-storage-connector",
-            "how-tos/insert-data-from-excel"
-
+            "how-tos/insert-data-from-excel",
+            "how-tos/aws-s3-connector"
           ],
 
           "Variables":
@@ -895,7 +948,8 @@
             "how-tos/create-prefab-using-d3-nvd3-charts",
             "how-tos/create-prefab-using-d3-library-datamaps",
             "how-tos/create-prefab-using-jquery-plugin",
-            "how-tos/create-prefab-using-angular-module"
+            "how-tos/create-prefab-using-angular-module",
+            "how-tos/create-prefab-using-custom-element"
           ]
         
   },
@@ -1176,6 +1230,7 @@
         "label": "Versions: 10.5.x",
         "ids": 
           [ 
+            "wavemaker-release-notes/v10-5-6",
             "wavemaker-release-notes/v10-5-5", 
             "wavemaker-release-notes/v10-5-4", 
             "wavemaker-release-notes/v10-5-3",

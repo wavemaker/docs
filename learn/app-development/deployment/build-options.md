@@ -5,14 +5,10 @@ sidebar_label: "Build Options"
 ---
 ---
 
-You can choose from the following build options to deploy your app. There are two build options you can choose from.
+Build options are a part of configure profile settings. You can choose from the following build options to deploy your app. There are two build options you can choose from.
 
-1. WaveMaker Build (deprecated)
-2. Angular Build
-
-## WaveMaker Build (deprecated)
-
-This build option follows the classic WaveMaker build process which was used in the earlier versions of WaveMaker; for example, WM 9.4. WaveMaker build follows Maven build process. For more information, see [WaveMaker profiles](/learn/app-development/deployment/configuration-profiles#development-configuration-profile)
+1. Angular Build
+2. WaveMaker Build (deprecated)
 
 ## Angular Build
 
@@ -49,6 +45,10 @@ The **Config Profiles** opens the **Profile Configuration** window. Go to the 
 [![build options](/learn/assets/Locate-build-options.png)](/learn/assets/Locate-build-options.png)
 
 The Build Options are Read-Only for ‘Development’ build profile of the WaveMaker build. For other profiles such as ‘Deployment’ or the custom ones, you can choose from the above-specified modes.
+
+## WaveMaker Build (deprecated)
+
+This build option follows the classic WaveMaker build process which was used in the earlier versions of WaveMaker; for example, WM 9.4. WaveMaker build follows Maven build process. For more information, see [WaveMaker profiles](/learn/app-development/deployment/configuration-profiles#development-configuration-profile)
 
 ## See Also
 

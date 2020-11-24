@@ -16,7 +16,7 @@ At WaveMaker, we offer the following options including, Solo, Team, and On-Premi
 
 2. **Teams**
 
-    Think of this as a Solo, but at scale. **Teams** provide the same functionality as our Solo but have additional capabilities to better serve enterprise organizations. It is for teams who are looking for more customization and control.
+    Think of this as a Solo, but at scale. **Teams** provide the same functionality as our Solo but have additional capabilities to better serve enterprise organizations and collaboration. It is for teams who are looking for more customization and control.
 
 3. **On-Premise**
 
@@ -49,3 +49,21 @@ When you subscribe as a Team, you can do the following.
 5. Manage Team profile
 
 6. Priced Right for Small Teams
+
+
+### How to migrate to Team from WME setup?
+
+1. WaveMaker support will create a Team for you and assign you role of Team Adminstrator.
+
+2. You will recive an mail with url from which you can access and configure the Team as you like.
+
+3. Resources like Projects, Members etc need to be explicitly added into the Team by Team Adminstrators.
+
+
+### What is workspace isolation?
+
+Team implicitly enables workspace isolation. Team's resources are confined to it's workspace. This means resources (Projects, Deployments, Settings, Members, Roles etc) belonging to a specific team cannot be accessed or shared by a user in different team. Any resource can only be shared among the users part of a particular team. An user can be part of mulitple teams and he/she can switch between different teams and access resources specific to that team.
+
+
+
+

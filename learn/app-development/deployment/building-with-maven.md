@@ -1,5 +1,5 @@
 ---
-title: "Building a War from a WaveMaker Project"
+title: "Building Project with Maven"
 id: ""
 ---
 ---
