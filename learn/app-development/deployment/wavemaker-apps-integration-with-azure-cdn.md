@@ -11,7 +11,7 @@ For Integrate WaveMaker apps with AZURE CDN Profile use the following steps
 - [Create Storage Account](#create-storage-account)
 - [Create Storage Containers](#create-storage-containers)
 - [Create Azure CDN profile](#create-azure-cdn-profile)
-- [Maven command for CDN integration](#maven-command-for-cdn-integration)
+- [WaveMaker App Build Process for CDN support](#wavemaker-app-build-process-for-cdn-support)
 
 ## Create Storage Account
 
@@ -59,7 +59,7 @@ For Integrate WaveMaker apps with AZURE CDN Profile use the following steps
 
 - WaveMaker app is consiting of frontend artifacts(html,css,js,images etc) and backend artififacts(Java Classes). It is suggest to host frontend artifacts in Static Content Servler like nginx,apache etc or Content Delivery Networt(CDN) and backend artificats can be hosted on any webserver like Tomcat etc.
 - To generate two differnet artifacts from WaveMaker application use below command. This command takes CDN_URL as input. Configure your CDN before executing this command.  
-- Rrefer [wavemaker app build with maven](/learn/app-development/deployment/building-with-maven) for more details on WaveMaker app building.
+- Rrefer [WaveMaker app build with maven](/learn/app-development/deployment/building-with-maven) for more details on WaveMaker app building.
 
 
 ```shell
