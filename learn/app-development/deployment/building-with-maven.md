@@ -46,7 +46,15 @@ example command: mvn clean install -Pdeployment
 
 ```shell
 mvn clen install -P<profile-name> -Dcdn-url=<cdn_url or domain_name>
-example command: mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net
+example command:
+AWS CDN
+    mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net
+    for optimal use
+    mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/<mys3-app-folder>/<build-no>/
+AZURE CDN profile
+    mvn clean install -Pdeployment -Dcdn-url=https://myuatcdn.azureedge.net/
+    for optimal use
+    mvn clean install -Pdeployment -Dcdn-url=https://myuatcdn.azureedge.net/mycontainer/<mycontainer-folder-name>/<build-no>
 ```
 
 :::note
