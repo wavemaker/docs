@@ -3,7 +3,7 @@ title: "Building Project with Maven"
 id: ""
 ---
 ---
-This guide helps to create a war file for deploying the project in your local machine or a web server like Apache Tomcat.
+This guide helps to create a war file for deploying the project in your local machine or a web server like Apache Tomcat. It also provide required information to host Static Content and WebApplication seperately. 
 
 ## System prerequisites
 
@@ -35,33 +35,27 @@ cd <location>
 
 5. Run the following command where `<ProfileName>` should either be **default_profile/cusotom_profile**.
   
-- Use below command for do the maven build with profile
+- Use below command for do the maven build with profile. This command will generate .war file in target directory. The .war file has both frontend artifacts(html,css,js,images etc) and backend artififacts(Java Classes).
 
 ```shell
 mvn clean install -P<ProfileName>
-example command: mvn clean install -Pdeployment
-```
-
-- Integrating CDN with wavemaker apps use the below maven command,for create CDN in AWS visit [wavemaker apps integration with AWS CDN](/learn/app-development/deployment/wavemaker-apps-integration-with-aws-cdn), for Create CDN Profile in AZURE visit [WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/wavemaker-apps-integration-with-azure-cdn)
-
-```shell
-mvn clen install -P<profile-name> -Dcdn-url=<cdn_url or domain_name>
-example command:
-AWS CDN
-    mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net
-    for optimal use
-    mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/<mys3-app-folder>/<build-no>/
-AZURE CDN profile
-    mvn clean install -Pdeployment -Dcdn-url=https://myuatcdn.azureedge.net/
-    for optimal use
-    mvn clean install -Pdeployment -Dcdn-url=https://myuatcdn.azureedge.net/mycontainer/<mycontainer-folder-name>/<build-no>
 ```
 
 :::note
 WaveMaker project has two default profiles, which are **development** and **deployment**. Prefix the profile name with a **P**. If you do not prefix the profile name; the system selects a **development** profile by default. You can add Custom Profiles from the **Config Profiles** section in the **Project Settings** options. To locate the existing profiles' path, go to Step-7.
 :::
 
-6. In the project folder, a new folder called **target** generates automatically with the `project war` file ans `ui-artifacts.zip` file in it.The `ui-artifacts.zip` file have static files of the application, we unzip the file and upload it to CDN origin example S3 bucket in AWS and storage container in AZURE.use the following commands for unzip and upload to CDN origins.
+- WaveMaker app is consiting of frontend artifacts(html,css,js,images etc) and backend artififacts(Java Classes). It is suggest to host frontend artifacts in Static Content Servler like nginx,apache etc or Content Delivery Networt(CDN) and backend artificats can be hosted on any webserver like Tomcat etc.
+- To generate two differnet artifacts from WaveMaker application use below command. This command takes CDN_URL as input. Configure your CDN before executing this command. Please check our docs to configure CDN in AWS[wavemaker apps integration with AWS CDN](/learn/app-development/deployment/wavemaker-apps-integration-with-aws-cdn) and Azure[WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/wavemaker-apps-integration-with-azure-cdn). 
+
+```shell
+mvn clen install -P<profile-name> -Dcdn-url=<CDN_URL>
+```
+```shell
+mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
+```
+
+6. In the project folder, a new folder called **target** generates automatically with the `project war` file ans `ui-artifacts.zip` file in it. The `ui-artifacts.zip` file have static files of the application, You can unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS Cloudfront case, storage container in AZURE CDN Profile case, or put it into nginx or apache). Use the following commands for unzip and upload to CDN origins.
 
 - For unzip the file to a specific folder
   
