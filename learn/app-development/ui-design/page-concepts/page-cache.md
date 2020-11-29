@@ -46,7 +46,7 @@ Lets take the case where an app has two pages, 1) Page1 and 2) Page2. Let us sup
 
 ## Events
 
-There are two events 'on attach' and 'on detach' are added. 'On Attach' event gets triggered when a page instance is retrieved from cache and added to the DOM tree. 'On Detach' event gets triggered when a page instance is removed from DOM and added to the cache.
+Two events, 'on attach' and 'on detach' are added. 'On Attach' event gets triggered when a page instance is retrieved from cache and added to the DOM tree. 'On Detach' event gets triggered when a page instance is removed from DOM and added to the cache.
 
 In Studio, these events are visible on page level, only if 'cache' is enabled. In case of partial or prefab, these events are always visible.
 
@@ -68,4 +68,4 @@ A cached page may have data that needs to refreshed. One can use the following o
 
 ## Recommended Usage
 
-As page instances are stored in memory, memory usgae of the app increases. Eventually, app may not respond and may crash. So, there is a limit of 10 (may be changed in future) page instances to store in cache. So, one has to enable cache, only on those pages that their app user frequently revisits. After enabling the cache, one has to check for data getting refreshed on revisit. If required, make appropriate changes as explained in data refresh section.
+As page instances are stored in memory, memory usage of the app increases. Eventually, app may not respond and may crash. So, there is a limit of 10 (may be changed in future) page instances to store in cache. So, one has to enable cache, only on those pages that their app user frequently revisits. After enabling the cache, one has to check about data getting refreshed on revisit. If required, make appropriate changes as explained in data refresh section.
