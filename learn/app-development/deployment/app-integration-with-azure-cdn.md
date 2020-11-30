@@ -1,6 +1,7 @@
 ---
 title: "WaveMaker Apps Integration with AZURE CDN Profile"
 id: ""
+sidebar_label: "App Integration with Azure CDN"
 ---
 ---
 

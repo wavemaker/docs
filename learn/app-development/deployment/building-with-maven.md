@@ -3,7 +3,7 @@ title: "Building Project with Maven"
 id: ""
 ---
 ---
-This guide helps to create a war file for deploying the project in your local machine or a web server like Apache Tomcat. It also provide required information to host Static Content and WebApplication seperately. 
+This guide helps to create a war file for deploying the project in your local machine or a web server like Apache Tomcat. It also provides required information to host static content and web applications seperately.
 
 ## System prerequisites
 
@@ -11,79 +11,96 @@ This guide helps to create a war file for deploying the project in your local m
 |---|---|
 |Java |1.8|
 |Node|10.15.0|
-|Maven| 3.3.9|
+|Maven| 3.6.3|
+|npm|6.4.1|
 |Ant|1.10.7|
 |Git| 2.26.2|
 
 
 ## Go to Source Location
-- WaveMaker Project sources can be featched in two ways.
-    ### Clone VCS Repository
-    - Clone Project into your pipeline or your local machine using git clone <repo_url>
-    - You can clone only if you configured custom VCS or Push to your Own Repo(in both WaveMaker Enterprise Setups, WaveMaker Online Teams). Checkout [Configure Custom VCS](/learn/app-development/deployment/build-options).
 
-    ### Download Zip from Studio
+- WaveMaker Project sources can be fetched in two ways.
 
-    - Export the project as zip.
+### Clone VCS Repository
 
-    [![](/learn/assets/ExportProjectasZip.png)](/learn/assets/ExportProjectasZip.png)
+- Clone Project into your pipeline or your local machine using git clone `<repo_url>`.
+- You can clone only if you have configured custom VCS or push to your own repo (in both WaveMaker Enterprise Setups, WaveMaker Online Teams). For more information, see [Configure Custom VCS](/learn/app-development/deployment/build-options).
 
-    - Extract the downloaded zip file.
+### Download Zip from Studio
 
-    - Get the project location path.  
+- Export the project as zip.
 
-    - In the command line, go to the project path. See the image below.
+[![export project](/learn/assets/ExportProjectasZip.png)](/learn/assets/ExportProjectasZip.png)
 
-    ```shell
-        cd <location>
-    ```
+- Extract the downloaded zip file.
 
-    [![](/learn/assets/LocateProjectIncmdline.png)](/learn/assets/LocateProjectIncmdline.png)
+- Get the project location path.  
 
-## Chose Profile to Build
-- WaveMaker project has two default profiles, which are **development** and **deployment**. Prefix the profile name with a **P**. If you do not prefix the profile name; the system selects a **development** profile by default. You can add Custom Profiles from the **Config Profiles** section in the **Project Settings** options. To locate the existing profiles' path, go to Step-7.
-- Use `<ProfileName>` in the next sections from  **default_profile/cusotom_profile**.
-  
+- In the command line, go to the project path. See the image below.
 
-## Build War file  
-- Use below command to do the maven build with profile. See above to choose a Build profile. 
+```shell
+cd <location>
+```
+
+[![locate project](/learn/assets/LocateProjectIncmdline.png)](/learn/assets/LocateProjectIncmdline.png)
+
+## Choose Profile to Build
+
+- WaveMaker project has two default profiles, including **development** and **deployment**. Prefix the profile name with a **P**. If you do not prefix the profile name; the system selects a **development** profile by default. You can add Custom Profiles from the **[Config Profiles](/learn/app-development/deployment/configuration-profiles)** section in the **Project Settings** options.
+- Use `<ProfileName>` in the next sections from  **default_profile/custom_profile**.
+
+## Build War file
+
+- Use the below command to do a maven build with the profile. 
 
 ```shell
 mvn clean install -P<ProfileName>
 ```
+
+**For example**
+
 ```shell
 mvn clean install -Pdeployment
 ```
-- This command will generate `project war`  file in target directory. The `project war`  file has both frontend artifacts(html,css,js,images etc) and backend artififacts(Java Classes). 
-- This war file can be deployed into any webserver like Tomcat. Checkout [App Deployment to Tomcat](/learn/how-tos/wavemaker-application-deployment-tomcat).
 
-## Build War file and Static Content to Deploy both seperately
+- This command will generate a `project war`  file in the target directory. The `project war`  file has both frontend artifacts (HTML, CSS, JS, images, etc), and backend artifacts (Java Classes).
+- This war file can be deployed into any webserver like Tomcat. For more information, see [App Deployment to Tomcat](/learn/how-tos/wavemaker-application-deployment-tomcat).
 
-- WaveMaker app is consiting of frontend artifacts(html,css,js,images etc) and backend artififacts(Java Classes). It is suggest to host frontend artifacts in Static Content Servler like nginx,apache etc or Content Delivery Networt(CDN). And backend artificats can be hosted on any webserver like Tomcat etc.
-- To generate two differnet artifacts from WaveMaker application use below command. This command takes CDN_URL as input. Configure your CDN before executing this command. Please check our docs to configure CDN in AWS ([WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/wavemaker-apps-integration-with-aws-cdn)) and Azure ([WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/wavemaker-apps-integration-with-azure-cdn)). 
+## Build War file and Static Content to Deploy them Separately
+
+- WaveMaker app is consists of frontend artifacts (HTML, CSS, JS, images, etc), and backend artifacts (Java Classes). It is recommended to host frontend artifacts in Static Content Servlet like nginx, apache, etc, or Content Delivery Network (CDN), and backend artifacts can be hosted on any web server like Tomcat.
+- To generate two different artifacts from a WaveMaker application, use the below command. This command takes CDN_URL as input. Configure your CDN before executing this command. Please check our docs to configure CDN.
+
+For more information, see [WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/app-integration-with-aws-cdn) to configure CDN in AWS, and for Azure, see [WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/app-integration-with-azure-cdn).
 
 ```shell
 mvn clen install -P<profile-name> -Dcdn-url=<CDN_URL>
 ```
+
+**For example**
+
 ```shell
 mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
 ```
-- In the project folder, a new folder called **target** generates automatically with the `project war` file ans `ui-artifacts.zip` file in it. The `ui-artifacts.zip` file have static files of the application, 
-- You can unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS Cloudfront case, storage container in AZURE CDN Profile case),  OR put it into nginx or apache).  
-- Please check our docs to configure and use CDN in AWS ([WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/wavemaker-apps-integration-with-aws-cdn)) and Azure ([WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/wavemaker-apps-integration-with-azure-cdn)).  
+
+- In the project folder, a new folder called **target** generates automatically with the `project war` file and `ui-artifacts.zip` file in it. The `ui-artifacts.zip` file contains static files of the application.
+- You can unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS Cloudfront case, storage container in AZURE CDN Profile case), or put it into nginx or apache).
+- Please check our docs to configure and use CDN.
+
+For more information, see [WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/app-integration-with-aws-cdn) to configure CDN in AWS, and for Azure, see [WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/app-integration-with-azure-cdn).
 
 ## Handling Build Failures
-- WaveMaker build may fails due to
-    - In sufficient memory to Node Process
-    - Compaliation Issues 
-- On build failure due to the out-of-memory error, the profile property called **build.ui.node.args** should be adjusted; this configures the build. Increase the **max-old-space-size** memory value where the default value is 1024 MB. The build should be triggered again after increasing the memory value. To do this, do the following steps.
-- Go to the project folder -> profiles -> open the file _<profilename.properties>_. As shown in the image below:
 
-[![](/learn/assets/profile-location.png)](/learn/assets/profile-location.png)
+- WaveMaker build may fail due to:
+    - Insufficient memory to Node Process
+    - Compilation issues
+- On build failure due to the out-of-memory error, the profile property called **`build.ui.node.args`** should be adjusted; this configures the build. Increase the **`max-old-space-size`** memory value where the default value is 1024 MB. The build should be triggered again after increasing the memory value. To do this, do the following steps.
+- Go to the project folder -> profiles -> open the file `<profilename.properties>`. As shown in the image below:
 
-- Adjust the value of **build.ui.node.args.** See the image below:
+[![profile location](/learn/assets/profile-location.png)](/learn/assets/profile-location.png)
 
-[![](/learn/assets/adjusting-space-on-failure.png)](/learn/assets/adjusting-space-on-failure.png)
+- Adjust the value of **`build.ui.node.args`**. See the image below:
+
+[![adjusting space on failure](/learn/assets/adjusting-space-on-failure.png)](/learn/assets/adjusting-space-on-failure.png)
 
 - Re-do build.
-

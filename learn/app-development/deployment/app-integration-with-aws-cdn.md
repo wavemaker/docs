@@ -1,6 +1,7 @@
 ---
 title: "WaveMaker Apps Integration with AWS CDN"
 id: ""
+sidebar_label: "App Integration with AWS CDN"
 ---
 ---
 
