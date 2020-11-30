@@ -60,7 +60,7 @@ mvn clean install -Pdeployment
 ## Build War file and Static Content to Deploy both seperately
 
 - WaveMaker app is consiting of frontend artifacts(html,css,js,images etc) and backend artififacts(Java Classes). It is suggest to host frontend artifacts in Static Content Servler like nginx,apache etc or Content Delivery Networt(CDN). And backend artificats can be hosted on any webserver like Tomcat etc.
-- To generate two differnet artifacts from WaveMaker application use below command. This command takes CDN_URL as input. Configure your CDN before executing this command. Please check our docs to configure CDN in AWS ([wavemaker apps integration with AWS CDN](/learn/app-development/deployment/wavemaker-apps-integration-with-aws-cdn)) and Azure ([WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/wavemaker-apps-integration-with-azure-cdn)). 
+- To generate two differnet artifacts from WaveMaker application use below command. This command takes CDN_URL as input. Configure your CDN before executing this command. Please check our docs to configure CDN in AWS ([WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/wavemaker-apps-integration-with-aws-cdn)) and Azure ([WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/wavemaker-apps-integration-with-azure-cdn)). 
 
 ```shell
 mvn clen install -P<profile-name> -Dcdn-url=<CDN_URL>
@@ -70,7 +70,7 @@ mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>
 ```
 - In the project folder, a new folder called **target** generates automatically with the `project war` file ans `ui-artifacts.zip` file in it. The `ui-artifacts.zip` file have static files of the application, 
 - You can unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS Cloudfront case, storage container in AZURE CDN Profile case),  OR put it into nginx or apache).  
-- Please check our docs to configure and use CDN in AWS ([wavemaker apps integration with AWS CDN](/learn/app-development/deployment/wavemaker-apps-integration-with-aws-cdn)) and Azure ([WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/wavemaker-apps-integration-with-azure-cdn)).  
+- Please check our docs to configure and use CDN in AWS ([WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/wavemaker-apps-integration-with-aws-cdn)) and Azure ([WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/wavemaker-apps-integration-with-azure-cdn)).  
 
 ## Handling Build Failures
 - WaveMaker build may fails due to
