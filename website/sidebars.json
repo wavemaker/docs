@@ -28,6 +28,7 @@
           "ids": 
             [
             "app-development/ui-design/page-artefacts",
+            "app-development/ui-design/page-concepts/page-cache",
             "app-development/ui-design/page-concepts/partial-pages",
             "app-development/ui-design/page-concepts/page-parameters",
             "app-development/ui-design/page-concepts/page-navigation",
@@ -1225,6 +1226,15 @@
           ]
       },
       
+      {
+        "type": "subcategory",
+        "label": "Versions: 10.6.x",
+        "ids": 
+          [ 
+            "wavemaker-release-notes/v10-6-0"
+          ]
+      },
+
       {
         "type": "subcategory",
         "label": "Versions: 10.5.x",
