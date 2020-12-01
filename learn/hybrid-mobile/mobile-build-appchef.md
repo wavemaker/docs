@@ -13,6 +13,7 @@ WaveMaker provides an option to export your mobile application to a Cordova zip.
 
 Using the Workspace Toolbar from Build task select **Go to AppChef**. It will navigate you to the AppChef application.
 
+![mobile-build-appchef-studio-option.png](/learn/assets/mobile-build-appchef-studio-option.png)
 
 To login, click **Login with WaveMaker**
 
@@ -101,6 +102,7 @@ Application build status has three stages
 3. **Success** - If build is successful from the server, status will be changed to success.
 4. **Failed** - If build is failed from the server, status will be changed to failed.
 5. **Timed-out** - If build time is more, status will be changed to timed-out and it is a failed job.
+6. **Cancelled** - If build is cancelled using cancel option, status will be changed to cancelled.
 
 ### Application Build Actions
 Every build has five actions. i.e.,
