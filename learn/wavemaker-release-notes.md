@@ -103,8 +103,3 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 
 - **[WaveMaker 9.x Documentation](https://www.wavemaker.com/9/learn/index.html)**  
 - **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)**  
-
-
-
-
-
