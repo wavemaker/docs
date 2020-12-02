@@ -37,6 +37,10 @@ For Integrate WaveMaker apps with AZURE CDN Profile use the following steps
 - Navigate to storage account in the Azure portal and in the left menu for the storage account, scroll to the Blob service section, then select Containers.
 - Select the **+ Container** button and provide name and at public access level select `Blob(anonymus read access for blobs only`.
 
+- Enable CORS if application running under one domain to access resources in another domain, in azure storage account select CORS under settings
+  
+  [![Blob CORS](/learn/assets/wme-setup/azure-blob-cors.png)](/learn/assets/wme-setup/azure-blob-cors.png)
+
 ## Create Azure CDN profile
 
 - select Create a resource (on the upper left),Search for CDN and select CDN Profile, then select **+ Add** for create.

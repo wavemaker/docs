@@ -22,7 +22,7 @@ For Integrate WaveMaker apps with AWS CDN use the following steps
 - Go to bucket properties, enable static website hosting.
 [![static website enable](/learn/assets/wme-setup/s3-static-website-enable.png)](/learn/assets/wme-setup/s3-static-website-enable.png)
 
-- If website content require CORS add CORS rules in the bucket permission section(optional).
+- If website content require CORS add CORS rules in the bucket permission section(optional).for more details visit [aws s3 cors](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html)
 
 ```json
 CORS example
@@ -34,12 +34,11 @@ CORS example
         ],
         "AllowedMethods": [
             "GET",
-            "PUT",
             "POST",
             "HEAD"
         ],
         "AllowedOrigins": [
-            "*"
+            "http://example.mydomain.com"
         ],
         "ExposeHeaders": [],
         "MaxAgeSeconds": 300000
@@ -76,10 +75,10 @@ CORS example
 - To generate two differnet artifacts from WaveMaker application use below command. This command takes CDN_URL as input. Configure your CDN before executing this command.
 - Rrefer [WaveMaker app build with maven](/learn/app-development/deployment/building-with-maven) for more details on WaveMaker app building.
 
-
 ```shell
 mvn clen install -P<profile-name> -Dcdn-url=<CDN_URL>
 ```
+
 ```shell
 mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
 ```
