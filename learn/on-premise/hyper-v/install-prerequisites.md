@@ -90,24 +90,30 @@ sudo apt-get install python3 -y
 
 ## RHEL
 
-### The ssh user has privileges(root/sudo) for install/upgrade utility softwares
+### The ssh user has privileges(root/sudo) or user don't have privileges for install/upgrade utility softwares
 
 #### Platform Instance
 
-- If given ssh user has privileges(root/sudo) to install/upgrade.
-- WME Installer will automatically install the required software.
-- Same applies for StudioWorkspace Instance / AppDeployment Instance as well.
-- Internet is not required for Installation in this case.
+- If given ssh user has privileges(root/sudo) or user don't have privileges to install/upgrade. WME Installer will automatically install the Docker software. Internet is not required for Installation in this case.
+- Install below prerequisites in Platform
 
-#### StudioWorkspace Instance / AppDeployment Instance
+- update cache
 
-- No need to do any configurations. Platform will do it automatically.
+```bash
+   yum update -y
+```
 
-### The ssh user don't have privileges install/upgrade utility software
+- Install  wget
 
-#### Platform Instance
+```bash
+  yum install wget  -y
+```
 
-- No need to do any configurations,WME Installer will automatically install required softwares.
+- Install python3
+
+```bash
+  yum install python3 -y
+```
 
 #### StudioWorkspace Instance / AppDeployment Instance
 
@@ -184,12 +190,13 @@ Use the same version numbers as mentioned.
   docker --version
   ```
 
-
 - Install python3
 
 ```bash
   yum install python3 -y
 ```
+
+### Extra configurations on RHEL StudioWorkspace Instance / AppDeployment Instance if ssh user don't have privileges(non sudo users)
 
 - If the user given to the Platform don't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
 - Have to execute these commands from a privileged user.
