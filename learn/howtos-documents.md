@@ -141,6 +141,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 
 *   [How to set Splashscreens & Icons](/learn/how-tos/splashscreens-icons/)
 *   [How to add and use additional Cordova Plugins](/learn/how-tos/using-cordova-plugins/)
+*   [How to design tablet applications](/learn/how-tos/support-for-tablet-view-in-mobile/)
 
 ## Mobile: Integrations
 ---
