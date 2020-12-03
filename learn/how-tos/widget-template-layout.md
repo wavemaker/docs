@@ -47,3 +47,4 @@ Similarly, you can apply a widget template for the **[Cards](/learn/app-developm
 
 4. Select the layout from the available list. The layout will be changed and the properties, events, and bindings of the widget remain the same.
 
+Similarly, you can apply a widget layout for the **[Breadcrumb](/learn/app-development/widgets/navigation/breadcrumb)** widget also.

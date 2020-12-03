@@ -28,6 +28,7 @@ Color Picker is available only for web responsive apps.
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. |
+| Auto Close | This property defines when to close the colorpicker popover. <br><br> **Outside Click**: picker popover will close when user clicks anywhere outside the picker area. <br><br> **Always**: picker popover will close when user clicks anywhere on the page. <br><br> **Disabled**: picker popover will close only when user press enter key on the picker input field.|
 
 ***Shortcut key**: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
 
