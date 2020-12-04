@@ -5,9 +5,7 @@ sidebar_label: "App Integration with AWS CDN"
 ---
 ---
 
-Content delivery network (CDN) service that securely delivers data to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.
-
-For Integrate WaveMaker apps with AWS CDN use the following steps
+The frontend code of any WaveMaker application can be configured to deploy onto a CDN. This improves the end user experience of the WaveMaker application because of dramatic gains made in the page load times. In this document, you will learn how to setup the deployment of WaveMaker frontend artifacts to CDN. While the instructions here deal with AWS, similar steps can be followed to deploy onto CDNs provided by any other cloud infrastructure providers.
 
 - [Create an Amazon S3 bucket](#create-an-amazon-s3-bucket)
 - [Configure Origin Access Identity](#configure-origin-access-identity)
@@ -22,14 +20,13 @@ For Integrate WaveMaker apps with AWS CDN use the following steps
 - Go to bucket properties, enable static website hosting.
 [![static website enable](/learn/assets/wme-setup/s3-static-website-enable.png)](/learn/assets/wme-setup/s3-static-website-enable.png)
 
-- If website content require CORS add CORS rules in the bucket permission section(optional).for more details visit [aws s3 cors](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html)
+- If the web application loaded in one domain and the frontend code in s3 loaded with a different CDN domain, the user will receive error No 'Access-Control-Allow-Origin' header is present on the requested resource.so to selectively allow cross-origin access to your Amazon S3 resources add CORS rules in the bucket permission section.for more details visit [aws s3 cors](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html)
 
 ```json
 CORS example
 [
     {
         "AllowedHeaders": [
-            "Authorization",
             "*"
         ],
         "AllowedMethods": [
@@ -48,8 +45,8 @@ CORS example
 
 ## Configure Origin Access Identity
 
-- To restrict access to content that you serve from Amazon S3 buckets,Create a special CloudFront user called an origin access identity (OAI) and associate it with your distribution.
-- Using Origin Access Identity users can only access files through CloudFront, not directly from the S3 bucket.
+- An Origin Access Identity (OAI) is used for sharing private content via CloudFront. The OAI is a special CloudFront user and OAI has read permissions to the bucket.CloudFront will use the OAI to access the files in your bucket and serve them to end-users.
+- When end-users access your Amazon S3 files through CloudFront, the CloudFront origin access identity gets the files on behalf of end-users. If end users request files directly by using Amazon S3 URLs, they're denied access. The origin access identity has permission to access files in your Amazon S3 bucket, but users don't.For more details visit [private content restriction in s3](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html)
 - Sign in to the AWS Management Console and open the [CloudFront console](https://console.aws.amazon.com/cloudfront/.), at security section select origin access identity and create Origin Access Identity by providing comment.
 
 ## Create an Amazon CloudFront distribution
@@ -61,7 +58,7 @@ CORS example
 - At Grant Read Permissions on Bucket select `yes` for update bucket policy ,it will provide read permission to the origin access identity when you create the distribution.
 [![CDN origin settings](/learn/assets/wme-setup/cdn-origin-setting.png)](/learn/assets/wme-setup/cdn-origin-setting.png)
 
-- Provide Cache behaviour configuration details
+- Provide Cache behavior configuration details
 [![CDN cache behaviour](/learn/assets/wme-setup/cdn-cache-behaviour-settings.png)](/learn/assets/wme-setup/cdn-cache-behaviour-settings.png)
 
 - At distribution settings select Default CloudFront certificate or import custom SSL certificate , then click on create distribution by providing required values for creation.
@@ -71,8 +68,8 @@ CORS example
 
 ## WaveMaker App Build Process for CDN support
 
-- WaveMaker app is consiting of frontend artifacts (html,css,js,images etc) and backend artififacts (Java Classes). The following approach helps you in generating separate artifacts for a WaveMaker application. The frontend artifact (static content) can be uploaded to Cloudfront for CDN and backend can be deployed to any web server.
-- To generate two different artifacts from WaveMaker application use below command. This command takes CDN_URL as input. Configure your CDN before executing this command.
+- WaveMaker app is consisting of frontend artifacts (HTML,CSS,js,images etc) and backend artifacts (Java Classes). The following approach helps you in generating separate artifacts for a WaveMaker application. The frontend artifact (static content) can be uploaded to Cloudfront for CDN and the backend can be deployed to any web server.
+- To generate two different artifacts from the WaveMaker application use the below command. This command takes CDN_URL as input. Configure your CDN before executing this command.
 - Refer [WaveMaker app build with maven](/learn/app-development/deployment/building-with-maven) for more details on WaveMaker app building.
 
 ```shell
@@ -83,15 +80,15 @@ mvn clean install -P<profile-name> -Dcdn-url=<CDN_URL>
 mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
 ```
 
-- The above command will generate a new folder called **target** in the project sources & generates `project.war` file and `ui-artifacts.zip` file in it. The `ui-artifacts.zip` file have static files of the application, You need to unzip the file `ui-artifacts.zip` and upload it to Amazon S3 bucket that we created in the previous steps. Use the following commands for unzip and upload to S3.
+- The above command generates two deployable artifacts: `ui-artifacts.zip`, `project.war`. Both these files can be found in the target folder.use the following commands to unzip and upload to S3.
 
-- For unzip the file to a specific folder
+- To unzip the file and store contents in a specific folder
   
 ```shell
 unzip ui-artifacts.zip -d <my-static-content-folder>
 ```
 
-- For upload files to AWS S3 bucket
+- Upload files to AWS S3 bucket
 
 ```shell
 aws s3 sync <my-static-content-folder>/ S3_BUCKET

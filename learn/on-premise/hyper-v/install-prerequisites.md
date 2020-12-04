@@ -12,13 +12,13 @@ sidebar_label: "Install Prerequisites Softwares"
 #### Platform Instance
 
 - If given ssh user has privileges(root/sudo) to install/upgrade.
-- WME Installer will automatically install required softwares.
+- WME Installer will automatically install the required softwares.
 - Same applies for StudioWorkspace Instance / AppDeployment Instance as well.
 - Internet is not required for Installation in this case.
 
 #### StudioWorkspace Instance / AppDeployment Instance
 
-- No need to do any configurations. Platform will do it automatically.
+- No need to do any configurations.The Platform will do it automatically.
 
 ### The ssh user don't have privileges install/upgrade utility software
 
@@ -58,8 +58,8 @@ sudo apt-get install python3 -y
     sudo apt-get install docker-ce=18.06.2~ce~3-0~ubuntu -y
 ```
 
-- For upgrade and install the latest version of Docker
-  - Run the following command for list available versions
+- To upgrade and install the latest version of Docker
+  - Run the following command to list available versions
 
   ```bash
     apt-cache madison docker-ce
@@ -90,11 +90,11 @@ sudo apt-get install python3 -y
 
 ## RHEL
 
-### The ssh user has privileges(root/sudo) or user don't have privileges for install/upgrade utility softwares
+### The ssh user has privileges(root/sudo) or user doesn't have privileges for install/upgrade utility softwares
 
 #### Platform Instance
 
-- If given ssh user has privileges(root/sudo) or user don't have privileges to install/upgrade. WME Installer will automatically install the Docker software. Internet is not required for Installation in this case.
+- If given ssh user has privileges(root/sudo) or user doesn't have privileges to install/upgrade. WME Installer will automatically install the Docker software.
 - Install below prerequisites in Platform
 
 - update cache
@@ -196,12 +196,12 @@ Use the same version numbers as mentioned.
   yum install python3 -y
 ```
 
-### Extra configurations on RHEL StudioWorkspace Instance / AppDeployment Instance if ssh user don't have privileges(non sudo users)
+### Extra configurations on RHEL StudioWorkspace Instance / AppDeployment Instance if ssh user doesn't have privileges(non sudo users)
 
-- If the user given to the Platform don't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
-- Have to execute these commands from a privileged user.
+- If the user given to the Platform doesn't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
+- Have to execute these commands as a privileged user.
   - Add user to the docker group.
-  - Make the user as a owner for the docker systemd process.
+  - Make a user the owner of the docker systemd process
   - data directory should be owned by the user.
   - Give permission to manage docker.service, systemctl daemon reload, iptable.
 

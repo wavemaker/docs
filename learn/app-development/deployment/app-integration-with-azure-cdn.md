@@ -5,9 +5,7 @@ sidebar_label: "App Integration with Azure CDN"
 ---
 ---
 
-Content delivery network (CDN) service that securely delivers data to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.
-
-For Integrate WaveMaker apps with AZURE CDN Profile use the following steps
+The frontend code of any WaveMaker application can be configured to deploy onto a CDN. This improves the end user experience of the WaveMaker application because of dramatic gains made in the page load times. In this document, you will learn how to setup the deployment of WaveMaker frontend artifacts to CDN. While the instructions here deal with AZURE, similar steps can be followed to deploy onto CDNs provided by any other cloud infrastructure providers.
 
 - [Create Storage Account](#create-storage-account)
 - [Create Storage Containers](#create-storage-containers)
@@ -34,10 +32,10 @@ For Integrate WaveMaker apps with AZURE CDN Profile use the following steps
 
 ## Create Storage Containers
 
-- Navigate to storage account in the Azure portal and in the left menu for the storage account, scroll to the Blob service section, then select Containers.
-- Select the **+ Container** button and provide name and at public access level select `Blob(anonymus read access for blobs only`.
+- Navigate to the storage account in the Azure portal and at the left menu for the storage account, scroll to the Blob service section, then select Containers.
+- Select the **+ Container** button and provide name and at the public access level select `Blob(anonymous read access for blobs only`.
 
-- Enable CORS if application running under one domain to access resources in another domain, in azure storage account select CORS under settings
+- Enable CORS If the web application is loaded in one domain and the frontend code in the Azure storage container is loaded with a different CDN domain.In the Azure storage account select CORS under settings to enable.
   
   [![Blob CORS](/learn/assets/wme-setup/azure-blob-cors.png)](/learn/assets/wme-setup/azure-blob-cors.png)
 
@@ -49,11 +47,11 @@ For Integrate WaveMaker apps with AZURE CDN Profile use the following steps
 [![CDN profile creation](/learn/assets/wme-setup/cdn-profile-creation.png)](/learn/assets/wme-setup/cdn-profile-creation.png)
 
 - On the CDN profile page, select **+ Endpoint** for create a CDN endpoint.
-- Next provide name , select origin type as storage and select previously created container for origin hostname. Provide orgin host header and click Add .
+- Next provide name , select origin type as storage and select a previously created container for origin hostname. Provide origin host header and click Add .
 
 [![CDN endpoint](/learn/assets/wme-setup/cdn-endpoint-creation.png)](/learn/assets/wme-setup/cdn-endpoint-creation.png)
 
-- Notedown the endpoint hostname to provide to maven command for integration
+- Note down the endpoint hostname to provide to maven command for integration
   - example endpoint hostname
 
     ```bash
@@ -62,27 +60,9 @@ For Integrate WaveMaker apps with AZURE CDN Profile use the following steps
 
 ## WaveMaker App Build Process for CDN support
 
-- WaveMaker app is consiting of frontend artifacts(html,css,js,images etc) and backend artififacts(Java Classes). It is suggest to host frontend artifacts in Static Content Servler like nginx,apache etc or Content Delivery Networt(CDN) and backend artificats can be hosted on any webserver like Tomcat etc.
-- To generate two differnet artifacts from WaveMaker application use below command. This command takes CDN_URL as input. Configure your CDN before executing this command.  
-- Rrefer [WaveMaker app build with maven](/learn/app-development/deployment/building-with-maven) for more details on WaveMaker app building.
+- WaveMaker app build process provide information about the maven build and build artifacts generation, for more details refer [WaveMaker app build process for CDN](/learn/app-development/deployment/app-integration-with-aws-cdn#wavemaker-app-build-process-for-cdn-support)
 
-
-```shell
-mvn clen install -P<profile-name> -Dcdn-url=<CDN_URL>
-```
-```shell
-mvn clean install -Pdeployment -Dcdn-url=https://myuatcdn.azureedge.net/my_app>/1234/
-```
-
-- In the project folder, a new folder called **target** generates automatically with the `project war` file ans `ui-artifacts.zip` file in it. The `ui-artifacts.zip` file have static files of the application, You can unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS Cloudfront case, storage container in AZURE CDN Profile case, or put it into nginx or apache). Use the following commands for unzip and upload to CDN origins.
-
-- For unzip the file to a specific folder
-  
-```shell
-unzip ui-artifacts.zip -d <my-static-content-folder>
-```
-
-- For upload files to AZURE storage container
+- upload unzipped ui-artifatcs.zip files to AZURE storage container
 
 ```shell
 az storage blob upload-batch -s <my-static-content-folder>/ -d <storage_container_name>  --account-name <storage_account_name>

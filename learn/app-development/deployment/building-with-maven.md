@@ -3,7 +3,7 @@ title: "Building Project with Maven"
 id: ""
 ---
 ---
-This guide helps to create a war file for deploying the project in your local machine or a web server like Apache Tomcat. It also provides required information to host static content and web applications seperately.
+This guide helps to create a war file for deploying the project in your local machine or a web server like Apache Tomcat. It also provides the required information to host static content and web applications separately.
 
 ## System prerequisites
 
@@ -15,7 +15,6 @@ This guide helps to create a war file for deploying the project in your local m
 |npm|6.4.1|
 |Ant|1.10.7|
 |Git| 2.26.2|
-
 
 ## Go to Source Location
 
@@ -51,7 +50,7 @@ cd <location>
 
 ## Build War file
 
-- Use the below command to do a maven build with the profile. 
+- Use the below command to do a maven build with the profile.
 
 ```shell
 mvn clean install -P<ProfileName>
@@ -68,7 +67,7 @@ mvn clean install -Pdeployment
 
 ## Build War file and Static Content to Deploy them Separately
 
-- WaveMaker app is consists of frontend artifacts (HTML, CSS, JS, images, etc), and backend artifacts (Java Classes). It is recommended to host frontend artifacts in Static Content Servlet like nginx, apache, etc, or Content Delivery Network (CDN), and backend artifacts can be hosted on any web server like Tomcat.
+- WaveMaker app consists of frontend artifacts (HTML, CSS, JS, images, etc), and backend artifacts (Java Classes). It is recommended to host frontend artifacts in Static Content Servers like Nginx, apache, etc, or Content Delivery Network (CDN), and backend artifacts can be hosted on any web server like Tomcat.
 - To generate two different artifacts from a WaveMaker application, use the below command. This command takes CDN_URL as input. Configure your CDN before executing this command. Please check our docs to configure CDN.
 
 For more information, see [WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/app-integration-with-aws-cdn) to configure CDN in AWS, and for Azure, see [WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/app-integration-with-azure-cdn).
@@ -84,7 +83,7 @@ mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>
 ```
 
 - In the project folder, a new folder called **target** generates automatically with the `project war` file and `ui-artifacts.zip` file in it. The `ui-artifacts.zip` file contains static files of the application.
-- You can unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS Cloudfront case, storage container in AZURE CDN Profile case), or put it into nginx or apache).
+- You can unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS Cloudfront case, storage container in AZURE CDN Profile case), or put it into Nginx or apache).
 - Please check our docs to configure and use CDN.
 
 For more information, see [WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/app-integration-with-aws-cdn) to configure CDN in AWS, and for Azure, see [WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/app-integration-with-azure-cdn).
@@ -92,8 +91,8 @@ For more information, see [WaveMaker apps integration with AWS CDN](/learn/app-d
 ## Handling Build Failures
 
 - WaveMaker build may fail due to:
-    - Insufficient memory to Node Process
-    - Compilation issues
+  - Insufficient memory to Node Process
+  - Compilation issues
 - On build failure due to the out-of-memory error, the profile property called **`build.ui.node.args`** should be adjusted; this configures the build. Increase the **`max-old-space-size`** memory value where the default value is 1024 MB. The build should be triggered again after increasing the memory value. To do this, do the following steps.
 - Go to the project folder -> profiles -> open the file `<profilename.properties>`. As shown in the image below:
 
