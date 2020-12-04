@@ -71,19 +71,19 @@ CORS example
 
 ## WaveMaker App Build Process for CDN support
 
-- WaveMaker app is consiting of frontend artifacts(html,css,js,images etc) and backend artififacts(Java Classes). It is suggest to host frontend artifacts in Static Content Servler like nginx,apache etc or Content Delivery Networt(CDN) and backend artificats can be hosted on any webserver like Tomcat etc.
-- To generate two differnet artifacts from WaveMaker application use below command. This command takes CDN_URL as input. Configure your CDN before executing this command.
-- Rrefer [WaveMaker app build with maven](/learn/app-development/deployment/building-with-maven) for more details on WaveMaker app building.
+- WaveMaker app is consiting of frontend artifacts (html,css,js,images etc) and backend artififacts (Java Classes). The following approach helps you in generating separate artifacts for a WaveMaker application. The frontend artifact (static content) can be uploaded to Cloudfront for CDN and backend can be deployed to any web server.
+- To generate two different artifacts from WaveMaker application use below command. This command takes CDN_URL as input. Configure your CDN before executing this command.
+- Refer [WaveMaker app build with maven](/learn/app-development/deployment/building-with-maven) for more details on WaveMaker app building.
 
 ```shell
-mvn clen install -P<profile-name> -Dcdn-url=<CDN_URL>
+mvn clean install -P<profile-name> -Dcdn-url=<CDN_URL>
 ```
 
 ```shell
 mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
 ```
 
-- In the project folder, a new folder called **target** generates automatically with the `project war` file ans `ui-artifacts.zip` file in it. The `ui-artifacts.zip` file have static files of the application, You can unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS Cloudfront case, storage container in AZURE CDN Profile case, or put it into nginx or apache). Use the following commands for unzip and upload to CDN origins.
+- The above command will generate a new folder called **target** in the project sources & generates `project.war` file and `ui-artifacts.zip` file in it. The `ui-artifacts.zip` file have static files of the application, You need to unzip the file `ui-artifacts.zip` and upload it to Amazon S3 bucket that we created in the previous steps. Use the following commands for unzip and upload to S3.
 
 - For unzip the file to a specific folder
   
