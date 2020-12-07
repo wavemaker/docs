@@ -20,7 +20,7 @@ The frontend code of any WaveMaker application can be configured to deploy onto 
 - Go to bucket properties, enable static website hosting.
 [![static website enable](/learn/assets/wme-setup/s3-static-website-enable.png)](/learn/assets/wme-setup/s3-static-website-enable.png)
 
-- If the web application loaded in one domain and the frontend code in s3 loaded with a different CDN domain, the user will receive error No 'Access-Control-Allow-Origin' header is present on the requested resource.so to selectively allow cross-origin access to your Amazon S3 resources add CORS rules in the bucket permission section.for more details visit [aws s3 cors](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html)
+- If the web application loaded in one domain and the frontend code in s3 loaded with a different CDN domain, then the end user will receive error No 'Access-Control-Allow-Origin' header is present on the requested resource. So to selectively allow cross-origin access to your Amazon S3 resources add CORS rules in the bucket permission section. If website content requires CORS, then add rules in the bucket permission section. For more details visit [aws s3 cors](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html)
 
 ```json
 CORS example
@@ -45,8 +45,8 @@ CORS example
 
 ## Configure Origin Access Identity
 
-- An Origin Access Identity (OAI) is used for sharing private content via CloudFront. The OAI is a special CloudFront user and OAI has read permissions to the bucket.CloudFront will use the OAI to access the files in your bucket and serve them to end-users.
-- When end-users access your Amazon S3 files through CloudFront, the CloudFront origin access identity gets the files on behalf of end-users. If end users request files directly by using Amazon S3 URLs, they're denied access. The origin access identity has permission to access files in your Amazon S3 bucket, but users don't.For more details visit [private content restriction in s3](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html)
+- An Origin Access Identity (OAI) is used for sharing private content via CloudFront. The OAI is a special CloudFront user and OAI has read permissions to the bucket. CloudFront will use the OAI to access the files in your bucket and serve them to end-users.
+- When end-users access your Amazon S3 files through CloudFront, the CloudFront origin access identity gets the files on behalf of end-users. If end users request files directly by using Amazon S3 URLs, they're denied access. The origin access identity has permission to access files in your Amazon S3 bucket, but users don't. For more details visit [private content restriction in s3](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html)
 - Sign in to the AWS Management Console and open the [CloudFront console](https://console.aws.amazon.com/cloudfront/.), at security section select origin access identity and create Origin Access Identity by providing comment.
 
 ## Create an Amazon CloudFront distribution
@@ -66,21 +66,17 @@ CORS example
 
 - Wait for few minutes for create distribution and after creating distribution note down the domain name of CloudFront distribution.
 
-## WaveMaker App Build Process for CDN support
+## Build and Deploy static Content to S3
 
-- WaveMaker app is consisting of frontend artifacts (HTML,CSS,js,images etc) and backend artifacts (Java Classes). The following approach helps you in generating separate artifacts for a WaveMaker application. The frontend artifact (static content) can be uploaded to Cloudfront for CDN and the backend can be deployed to any web server.
-- To generate two different artifacts from the WaveMaker application use the below command. This command takes CDN_URL as input. Configure your CDN before executing this command.
-- Refer [WaveMaker app build with maven](/learn/app-development/deployment/building-with-maven) for more details on WaveMaker app building.
+- Check Build Process  [Maven Build Process to Support CDN Deploy](/learn/app-development/deployment/building-with-maven#build-war-file-and-static-content-to-deploy-them-separately)
 
-```shell
-mvn clean install -P<profile-name> -Dcdn-url=<CDN_URL>
-```
 
 ```shell
 mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
 ```
 
-- The above command generates two deployable artifacts: `ui-artifacts.zip`, `project.war`. Both these files can be found in the target folder.use the following commands to unzip and upload to S3.
+- The above command generates two deployable artifacts: `ui-artifacts.zip`, `project.war`. Both these files can be found in the target folder. 
+- Use the following commands to unzip and upload to S3.
 
 - To unzip the file and store contents in a specific folder
   

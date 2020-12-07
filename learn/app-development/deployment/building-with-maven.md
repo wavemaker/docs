@@ -82,7 +82,7 @@ mvn clen install -P<profile-name> -Dcdn-url=<CDN_URL>
 mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
 ```
 
-- In the project folder, a new folder called **target** generates automatically with the `project war` file and `ui-artifacts.zip` file in it. The `ui-artifacts.zip` file contains static files of the application.
+- The above command generates two deployable artifacts: `ui-artifacts.zip`, `project.war`. Both these files can be found in the target folder. .
 - You can unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS Cloudfront case, storage container in AZURE CDN Profile case), or put it into Nginx or apache).
 - Please check our docs to configure and use CDN.
 
