@@ -4,8 +4,14 @@ id: ""
 ---
 ---
 
-A Cordova zip will be used to create a mobile application. WaveMaker allows you to export a Cordova zip from a *mobile project* so that
-you can use it to generate a *mobile application*.
+A Cordova zip in general will be used to create a platform specific installer.
+WaveMaker supports cordova feature to generate mobile native installers for Android & iOS devices.
+
+The Cordova zip is packed with all the UI specific files and images which will be needed to display the User Interface.
+These UI files in the cordova zip will be pointing to a *backend server* which contains the core business logic.
+This means, that the installers generated using Cordova have little to no business logic in it, and the whole business logic is in the backend server.
+
+WaveMaker Studio allows you to export a cordova zip from any *mobile project*.
 
 Following are the two approaches which can be followed to create a Cordova zip.
 
@@ -22,10 +28,20 @@ Following are the two approaches which can be followed to create a Cordova zip.
 
 [![](/learn/assets/Build_Cordova_Zip.png)](/learn/assets/Build_Cordova_Zip.png) 
 
-3. Provide all necessary configuration and click **Build**. A job gets posted to prepare a Cordova zip.
-This job is listed under the **Jobs** menu.
+| Configuration Name | Description |
+|---|---|
+|Application Name | The name of the application |
+|Server Path | The backend server url. *Dev* is used to prepopulate the application preview url. *Custom* is used to add the url of the application which is hosted somewhere else |
+|Config Profile | The build profile to use |
+    
+3. Make necessary changes to the configurations and click on **build** button. This will start a job as shown in the below image.
 
-4. When the job gets completed, a link will be provided in the **Job** info to download the Cordova zip.
+[![](/learn/assets/cordova_jobs_processing.png)](/learn/assets/cordova_jobs_processing.png)
+
+
+4. When the job gets completed, you can download the Cordova zip by clicking on the **download** icon as shown in the below image.
+
+[![](/learn/assets/cordova_jobs_completed.png)](/learn/assets/cordova_jobs_completed.png)
 
 
 ## Export Cordova using Maven Command
@@ -34,13 +50,26 @@ This job is listed under the **Jobs** menu.
 This an alternative of the above approach. This is useful if you are working outside WaveMaker Studio.
 :::
 
-1. Export and extract the WaveMaker project zip if you don't have it already.
+1. Get the WaveMaker project into your machine, if you don't have it already by following any of the below methods.
 
-2. Execute the command `mvn clean package -Dmobile.serverUrl="<url>"`. Here, **`<url>`** is the application server URL.
-The mobile application will generated from this Cordova will make backend calls to the URL specified. (*Refer the below image*)
+    1. Export the WaveMaker project zip and extract the zip.
+    2. You can also execute `git clone <repo_url>` command to get the project from a git repository which is commonly used across the development team.
 
-![maven command to generate cordova](/learn/assets/cordova_maven_command.png)
+2. Execute the below command
 
-3. After executing the above command, you can find the Cordova zip in the target folder. (*Refer the below image*)
+    >`mvn clean package -Dmobile.serverUrl="<url>"`
 
-![maven command cordova out file](/learn/assets/cordova_maven_output.png)
+    Here, **`<url>`** is the application server url. The mobile installer will be generated from this Cordova will make backend calls to the url specified.
+    (*Refer the below image*)
+    
+    Example : 
+    
+    ![maven command to generate cordova](/learn/assets/cordova_maven_command.png)
+
+3. After executing the above command, the Cordova zip can be found at 
+
+    > `<ProjectFolder>/target/<ProjectName>-cordova.zip`. 
+
+    Example : 
+    
+    ![maven command cordova out file](/learn/assets/cordova_maven_output.png)
