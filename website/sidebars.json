@@ -257,6 +257,7 @@
             "app-development/app-security/authorization",
             "app-development/app-security/access-levels-permissions",
             "app-development/app-security/login-configuration",
+            "app-development/app-security/session-persistence",
             "app-development/app-security/ssl-encryption",
             "app-development/app-security/xss-antisamy-policy-configuration",
             "app-development/app-security/owasp",
