@@ -377,6 +377,15 @@
             ]
         },
 
+        {
+          "type": "subcategory",
+          "label": "WaveMaker apps Interation with CDN",
+          "ids": [    
+            "app-development/deployment/app-integration-with-aws-cdn",
+            "app-development/deployment/app-integration-with-azure-cdn"
+            ]
+        },
+
 
         {
             "type": "subcategory",

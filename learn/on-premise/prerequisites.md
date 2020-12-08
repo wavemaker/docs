@@ -30,11 +30,11 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
 
 - Below diagram explain the network communication between the Platform Instance and StudioWorkspace Instance and AppDeployment Instance.
 
-[![network-communication-between-instances](/learn/assets/wme-setup/network-communication-between-instances.png)](/learn/assets/wme-setup/network-communication-between-instances.png)
+[![network-communication-between-instances](/learn/assets/wme-setup/network-communication-between-instances.jpg)](/learn/assets/wme-setup/network-communication-between-instances.jpg)
 
 ### Capacity Planning
 
-Adding an instance to either User workspace or Deployed Apps aids in the scalability of the WME setup in terms of application development and deployment, respectively. Each addedUser workspace or Deployed Apps instances would allow for a specific number of app developments and app deployments. These numbers will vary based on the WME version, refer to the table below for the exact numbers.
+Adding an instance to either User workspace or Deployed Apps aids in the scalability of the WME setup in terms of application development and deployment, respectively. Each added User workspace or Deployed Apps instances would allow for a specific number of app developments and app deployments. These numbers will vary based on the WME version, refer to the table below for the exact numbers.
 
 | WME Version | Developer logins per 16GB WaveMaker Studio Instance | App Deployments per 16GB WaveMaker AppDeployment Instance |
 | --- | --- | --- |
