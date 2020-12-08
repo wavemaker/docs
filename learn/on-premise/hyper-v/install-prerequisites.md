@@ -18,17 +18,17 @@ sidebar_label: "Install Prerequisites Softwares"
 
 #### StudioWorkspace Instance / AppDeployment Instance
 
-- No need to do any configurations.The Platform will do it automatically.
+- No need to do any configurations. The Platform will do it automatically.
 
-### The ssh user don't have privileges install/upgrade utility software
+### The ssh user does not have privileges install/upgrade utility software
 
 #### Platform Instance
 
-- No need to do any configurations,WME Installer will automatically install required softwares.
+- No need to do any configurations, WME Installer will automatically install the required software.
 
 #### StudioWorkspace Instance / AppDeployment Instance
 
-The given ssh user don't have permission to install software Then install below as per operating system.
+The given ssh user does not have permission to install software Then install below as per the operating system.
 
 - Install  wget
 
@@ -50,12 +50,6 @@ sudo apt-get install python3 -y
     echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable" > /etc/apt/sources.list.d/docker.list
     apt-get update  
     apt-get install iptables ca-certificates -y
-```
-
-- Install Docker Engine 18.06.2
-
-```bash
-    sudo apt-get install docker-ce=18.06.2~ce~3-0~ubuntu -y
 ```
 
 - To upgrade and install the latest version of Docker
@@ -90,11 +84,11 @@ sudo apt-get install python3 -y
 
 ## RHEL
 
-### The ssh user has privileges(root/sudo) or user doesn't have privileges for install/upgrade utility softwares
+### The ssh user has privileges (root/sudo) or user doesn't have privileges for install/upgrade utility softwares
 
 #### Platform Instance
 
-- If given ssh user has privileges(root/sudo) or user doesn't have privileges to install/upgrade. WME Installer will automatically install the Docker software.
+- If given ssh user has privileges (root/sudo) or the user doesn't have privileges to install/upgrade. WME Installer will automatically install the Docker software.
 - Install below prerequisites in Platform
 
 - update cache
@@ -139,18 +133,6 @@ Use the same version numbers as mentioned.
 
 ```bash
   yum install http://ftp.riken.jp/Linux/cern/centos/7/extras/x86_64/Packages/container-selinux-2.10-2.el7.noarch.rpm -y
-```
-
-- Install docker 18.06.2-ce
-
-```bash
-  wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-18.06.2.ce-3.el7.x86_64.rpm
-  yum install docker-ce-18.06.2.ce-3.el7.x86_64.rpm -y
-```
-
-```bash
-  systemctl enable docker
-  systemctl start docker
 ```
 
 - Upgrade or install a latest version of Docker
