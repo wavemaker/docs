@@ -31,7 +31,10 @@ id: ""
 [![](/learn/assets/loc_new_msg_entry.png)](/learn/assets/loc_new_msg_entry.png)
 
 7. You can also set the date and time formats specific to a required locale. This will ensure that the date and time pickers are properly aligned and set to the preferred format.
-You can also select the currency symbol. This symbol will be applicable to all the currency widgets across the app.
+
+:::tip
+You can also select the currency symbol from anywhere in the app. This symbol applies to all the currency widgets across the app.
+:::
 
 [![](/learn/assets/loc_edit_formats.png)](/learn/assets/loc_edit_formats.png)
 
