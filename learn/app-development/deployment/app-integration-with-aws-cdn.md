@@ -5,7 +5,7 @@ sidebar_label: "App Integration with AWS CDN"
 ---
 ---
 
-The frontend code of any WaveMaker application can be configured to deploy onto a CDN. This improves the end user experience of the WaveMaker application because of dramatic gains made in the page load times. In this document, you will learn how to setup the deployment of WaveMaker frontend artifacts to CDN. While the instructions here deal with AWS, similar steps can be followed to deploy onto CDNs provided by any other cloud infrastructure providers.
+The frontend code of any WaveMaker application can be configured to deploy onto a CDN. This improves the end-user experience of the WaveMaker application because of dramatic gains made in the page load times. In this document, you will learn how to setup the deployment of WaveMaker frontend artifacts to CDN. While the instructions here deal with AWS, similar steps can be followed to deploy onto CDNs provided by any other cloud infrastructure providers.
 
 - [Create an Amazon S3 bucket](#create-an-amazon-s3-bucket)
 - [Configure Origin Access Identity](#configure-origin-access-identity)
@@ -15,12 +15,12 @@ The frontend code of any WaveMaker application can be configured to deploy onto 
 ## Create an Amazon S3 bucket
 
 - Sign in to the AWS Management Console and open the [Amazon S3 console](https://console.aws.amazon.com/s3/.) .
-- Choose Create bucket, Next Enter Bucket Name and Select the region for the bucket.
+- Choose Create bucket, Next Enter Bucket Name, and Select the region for the bucket.
 - In Bucket settings for Block Public Access, choose the Block Public Access settings that you want to apply to the bucket.
 - Go to bucket properties, enable static website hosting.
 [![static website enable](/learn/assets/wme-setup/s3-static-website-enable.png)](/learn/assets/wme-setup/s3-static-website-enable.png)
 
-- If the web application loaded in one domain and the frontend code in s3 loaded with a different CDN domain, then the end user will receive error No 'Access-Control-Allow-Origin' header is present on the requested resource. So to selectively allow cross-origin access to your Amazon S3 resources add CORS rules in the bucket permission section. If website content requires CORS, then add rules in the bucket permission section. For more details visit [aws s3 cors](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html)
+- If the web application loaded in one domain and the frontend code in s3 loaded with a different CDN domain, then the end-user will receive error No 'Access-Control-Allow-Origin' header which is present on the requested resource. So, to selectively allow cross-origin access to your Amazon S3 resources, add CORS rules in the bucket permission section. If website content requires CORS, then add rules in the bucket permission section. For more details, visit [aws s3 cors](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html).
 
 ```json
 CORS example
@@ -64,7 +64,7 @@ CORS example
 - At distribution settings select Default CloudFront certificate or import custom SSL certificate , then click on create distribution by providing required values for creation.
 [![CDN distribution settings](/learn/assets/wme-setup/cdn-distribution-setting.png)](/learn/assets/wme-setup/cdn-distribution-setting.png)
 
-- Wait for few minutes for create distribution and after creating distribution note down the domain name of CloudFront distribution.
+- Wait for few minutes to create distribution and after creating distribution note down the domain name of CloudFront distribution.
 
 ## Build and Deploy static Content to S3
 
@@ -75,7 +75,8 @@ CORS example
 mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
 ```
 
-- The above command generates two deployable artifacts: `ui-artifacts.zip`, `project.war`. Both these files can be found in the target folder. 
+- The above command generates two deployable artifacts: `ui-artifacts.zip`, `project.war`. Both these files can be found in the `target` folder.
+
 - Use the following commands to unzip and upload to S3.
 
 - To unzip the file and store contents in a specific folder

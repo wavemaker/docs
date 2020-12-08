@@ -59,7 +59,8 @@ The frontend code of any WaveMaker application can be configured to deploy onto 
     ```
 
 ## Build and Deploy static Content to Azure Storage Container
-- Check Build Process  [Maven Build Process to Support CDN Deploy](/learn/app-development/deployment/building-with-maven#build-war-file-and-static-content-to-deploy-them-separately)
+
+- Check Build Process [Maven Build Process to Support CDN Deploy](/learn/app-development/deployment/building-with-maven#build-war-file-and-static-content-to-deploy-them-separately)
 
 ```shell
 mvn clean install -Pdeployment -Dcdn-url= https://wavemaker-app-cdn-integration.azureedge.net/my_app>/1234/

@@ -18,17 +18,17 @@ sidebar_label: "Install Prerequisites Softwares"
 
 #### StudioWorkspace Instance / AppDeployment Instance
 
-- No need to do any configurations.The Platform will do it automatically.
+- No need to do any configurations. The Platform will do it automatically.
 
-### The ssh user don't have privileges install/upgrade utility software
+### The ssh user does not have privileges install/upgrade utility software
 
 #### Platform Instance
 
-- No need to do any configurations,WME Installer will automatically install required softwares.
+- No need to do any configurations, WME Installer will automatically install the required software.
 
 #### StudioWorkspace Instance / AppDeployment Instance
 
-The given ssh user don't have permission to install software Then install below as per operating system.
+The given ssh user does not have permission to install software Then install below as per the operating system.
 
 - Install  wget
 
@@ -90,11 +90,11 @@ sudo apt-get install python3 -y
 
 ## RHEL
 
-### The ssh user has privileges(root/sudo) or user doesn't have privileges for install/upgrade utility softwares
+### The ssh user has privileges (root/sudo) or user doesn't have privileges for install/upgrade utility softwares
 
 #### Platform Instance
 
-- If given ssh user has privileges(root/sudo) or user doesn't have privileges to install/upgrade. WME Installer will automatically install the Docker software.
+- If given ssh user has privileges (root/sudo) or the user doesn't have privileges to install/upgrade. WME Installer will automatically install the Docker software.
 - Install below prerequisites in Platform
 
 - update cache
