@@ -55,7 +55,7 @@ Under the hood, WaveMaker handles all operations required for CDN deployment of 
 
 Thus ensuring the customers benefit from CDN advantages for every app developed with no additional effort.
 
-However, for deploying onto production, the customers may prefer their cloud service provider with the help of CI, CD pipelines. [Here is the documentation](learn/app-development/deployment/app-integration-with-aws-cdn) on how to configure your CI,CD pipeline to deploy to CDN. In the subsequent releases, we will also support one-click deployment to deploy on customer cloud providers. 
+However, for deploying onto production, the customers may prefer their cloud service provider with the help of CI, CD pipelines. [Here is the documentation](/learn/app-development/deployment/app-integration-with-aws-cdn) on how to configure your CI,CD pipeline to deploy to CDN. In the subsequent releases, we will also support one-click deployment to deploy on customer cloud providers. 
 
 ### Results
 
