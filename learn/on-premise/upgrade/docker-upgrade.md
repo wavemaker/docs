@@ -7,9 +7,9 @@ sidebar_label: "Docker Upgrade"
 
 ## Docker Upgrade
 
-The minimum docker version required for WaveMaker is docker 19.03.13, upgrade docker to the latest version on different types of operating systems follow the below steps.
+Manul docker upgrade required only when WaveMaker patch skip the upgrade.WaveMaker patch will automatically upgrades the docker if ssh-user has root/sudo privileges.
 
-## Docker upgrade in ubuntu
+### Docker upgrade in ubuntu
 
 - To upgrade and install the latest version of Docker
   - Run the following command to list available versions
@@ -41,9 +41,9 @@ The minimum docker version required for WaveMaker is docker 19.03.13, upgrade do
         echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/sbin/iptables" > /etc/sudoers.d/<sudoers-file-name>
     ```
 
-## Docker upgrade in RHEL
+### Docker upgrade in RHEL
 
-Upgrade or install the latest version of Docker
+Upgrade or Install the latest version of Docker
 
 - Stop the current Docker
 
@@ -94,3 +94,11 @@ Upgrade or install the latest version of Docker
         chown -R <user>:<user> /data
         echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
     ```
+
+### Upgrade Studio Workspace/AppDeploy Instances
+
+- Execute the Following command for upgrade the Studio Workspace/AppDeploy Instances.
+
+```bash
+    bash wme-installer.sh --upgrade-instances
+```

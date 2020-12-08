@@ -24,7 +24,16 @@ sidebar_label: "Install Prerequisites Softwares"
 
 #### Platform Instance
 
-- No need to do any configurations, WME Installer will automatically install the required software.
+- No need to do install any software, WME Installer will automatically install the required software, and execute the below commands to provide required permissions to the ssh nonprivileged user.
+
+```bash
+  usermod -aG docker <user>
+  mkdir -p /etc/systemd/system/docker.service.d/
+  chown -R <user>:<user> /wm-data
+  chown -R <user>:<user> /etc/systemd/system/docker.service.d
+  echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+```
+
 
 #### StudioWorkspace Instance / AppDeployment Instance
 
@@ -52,7 +61,7 @@ sudo apt-get install python3 -y
     apt-get install iptables ca-certificates -y
 ```
 
-- To upgrade and install the latest version of Docker
+- To upgrade or Install the latest version of Docker
   - Run the following command to list available versions
 
   ```bash
@@ -157,6 +166,16 @@ Use the same version numbers as mentioned.
 
 ```bash
   yum install python3 -y
+```
+
+### Extra configuration on RHEL Platform Instance if ssh user doesn't have privileges(non sudo users)
+
+- If the user doesn't have privileged access, then provide the below permissions to the user.
+
+```bash
+  chown -R <user>:<user> /wm-data
+  chown -R <user>:<user> /usr/lib/systemd/system
+  echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
 ```
 
 ### Extra configurations on RHEL StudioWorkspace Instance / AppDeployment Instance if ssh user doesn't have privileges(non sudo users)
