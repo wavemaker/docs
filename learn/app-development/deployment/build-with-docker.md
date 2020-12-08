@@ -6,7 +6,7 @@ id: ""
 
 WaveMaker supports micro-service enabled architecture. This allows you to build and deploy applications using a container-based technology. Docker is a platform as a service that uses virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files.
 
-For creating a Docker container, you create a Docker image by building a Dockerfile. For this, you require node and npm as prerequisites for building an application with maven and java. 
+For creating a Docker container, you create a Docker image by building a Dockerfile. For this, you require node and npm as prerequisites for building an application with maven and java.
 
 ## Prerequisites
 

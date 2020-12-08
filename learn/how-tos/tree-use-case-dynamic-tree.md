@@ -5,12 +5,15 @@ sidebar_label: "Tree using Dynamic Tree"
 ---
 ---
 
-If you have a requirement, whereby the user decides the structure of the tree. For example, you are building a folder-file structure and the user decides how many folders and files are to be present in a tree. This section deals with such a situation.
+Using the Tree widget, you can build a folder-file structure, and user can decide how many folder and files to include in a tree. 
 
-1. Drop a Tree widget and 2 buttons (Add File, Add Folder) onto the canvas.
-2. Select the Tree widget and specify a _Script Variable_ as **dataset** property, "_treeData_".
+1. Drag and drop a Tree widget, and add two buttons including **Add File** and **Add Folder**.
 
 [![](/learn/assets/tree_dynamic_design.png)](/learn/assets/tree_dynamic_design.png)
+
+2. Select the **Tree** widget. Go to **Value** property and click the bind icon under the **Dataset** section. Go to the **Use Expression** tab and set the script variable as `treeData`.
+
+[![](/learn/assets/tree_dynamic_use-expression.png)](/learn/assets/tree_dynamic_use-expression.png)
 
 3. From the Script tab, use the following script for treeData:
 
@@ -28,13 +31,13 @@ Page.treeData = [{
     }];
 ```    
 
-4. Select JavaScript for the onSelect event of the tree widget as:
+4. Select JavaScript for the `onSelect` event of the tree widget as following:
 
 ```js
 Page.activeTreeElement = $item;
 ```
 
-5. For the buttons addfile and add folder, select JavaScript for the onClick events and add the following code:
+5. For the buttons **Add File** and **Add Folder**, select JavaScript for the `onClick` events, and add the following code:
 
 ```js
 Page.addfileClick = function ($event, widget) {
@@ -48,6 +51,8 @@ Page.addfileClick = function ($event, widget) {
 
         }
     }
+//tree1 is the tree widget name
+Page.Widgets.tree1.redraw();
 };
 
 Page.addfolderClick = function ($event, widget) {
@@ -62,10 +67,12 @@ Page.addfolderClick = function ($event, widget) {
 
         }
     }
+//tree1 is the tree widget name
+Page.Widgets.tree1.redraw();
 };
 ```
 
-6. Preview the page and see two folders given by default. Select one node and click Add File to add files, or Add Folder to add folder.
+6. Preview the page and see two folders available by default. Select one node and click **Add File** to add files, or **Add Folder** to a add folder.
 
 ## See Also
 
