@@ -4,7 +4,9 @@ sidebar_label: "Session Persistence"
 ---
 ---
 
-Session Persistence is also known as Horizontal scaling. Basically, it replicates the application with multiple nodes and servers. With this approach, the load is distributed among these nodes. Typically, Horizontal scaling can serve more users and requests and there is no limit on the number of nodes that can serve the same application.
+Session persistence is a configuration where you can store sessions. You should configure session persistence to enable Horizontal Scaling.
+
+Horizontal Scaling replicates the application with multiple nodes and servers. With this approach, the load is distributed among these nodes. Typically, Horizontal scaling can serve more users and requests and there is no limit on the number of nodes that can serve the same application.
 
 ## How to Configure Session Persistence
 
