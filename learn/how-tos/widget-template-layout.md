@@ -5,7 +5,7 @@ sidebar_label: "Choose Widget Template and Layout"
 ---
 ---
 
-For [Cards](/learn/app-development/widgets/datalive/cards), [List](/learn/app-development/widgets/datalive/list), and [Wizard](/learn/app-development/widgets/container/wizard) widgets, you can choose and apply alternative UI representation while you can visually see the changes on the canvas as you click on the template.
+For [Cards](/learn/app-development/widgets/datalive/cards), [List](/learn/app-development/widgets/datalive/list), [Wizard](/learn/app-development/widgets/container/wizard), and [Breadcrumb](/learn/app-development/widgets/navigation/breadcrumb) widgets, you can choose and apply alternative UI representation while you can visually see the changes on the canvas as you click on the template.
 
 ![widget template](/learn/assets/widget-template.gif)
 
@@ -46,5 +46,3 @@ Similarly, you can apply a widget template for the **[Cards](/learn/app-developm
 ![wizard widget template](/learn/assets/wizard-widget-layout.png)
 
 4. Select the layout from the available list. The layout will be changed and the properties, events, and bindings of the widget remain the same.
-
-Similarly, you can apply a widget layout for the **[Breadcrumb](/learn/app-development/widgets/navigation/breadcrumb)** widget also.
