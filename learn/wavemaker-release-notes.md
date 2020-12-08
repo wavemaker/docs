@@ -48,7 +48,7 @@ WaveMaker is constantly working on bringing new features and improvements to the
 
 ## Technology Stack
 
-Last updated: [Release: v10.4.0](/learn/wavemaker-release-notes/v10-4-0)
+Last updated: [Release: v10.6.0](/learn/wavemaker-release-notes/v10-4-0)
 
 ---
 
