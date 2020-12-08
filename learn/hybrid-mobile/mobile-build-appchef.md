@@ -98,7 +98,7 @@ To secure the uploaded certificates, passwords will be saved in encrypted format
  
 A dialog will be shown to unlock certificate in two cases,
 
-1. In configure build step while uploading cordova zip
+1. In configure build step, while uploading cordova zip
  
     For iOS, you need to enter certificate password
 
