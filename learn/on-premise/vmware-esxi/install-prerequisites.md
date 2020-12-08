@@ -28,10 +28,7 @@ sidebar_label: "Install Prerequisites Softwares"
 
 ```bash
   usermod -aG docker <user>
-  mkdir -p /etc/systemd/system/docker.service.d/
-  chown -R <user>:<user> /wm-data
-  chown -R <user>:<user> /etc/systemd/system/docker.service.d
-  echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+  chown -R <user>:<user> /wm-data  
 ```
 
 
@@ -174,8 +171,7 @@ Use the same version numbers as mentioned.
 
 ```bash
   chown -R <user>:<user> /wm-data
-  chown -R <user>:<user> /usr/lib/systemd/system
-  echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+  usermod -aG docker <user>
 ```
 
 ### Extra configurations on RHEL StudioWorkspace Instance / AppDeployment Instance if ssh user doesn't have privileges(non sudo users)
