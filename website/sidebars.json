@@ -760,7 +760,8 @@
             "how-tos/camunda-wavemaker-app-integration",
             "how-tos/azure-file-storage-connector",
             "how-tos/insert-data-from-excel",
-            "how-tos/aws-s3-connector"
+            "how-tos/aws-s3-connector",
+            "how-tos/twilio-connector"
           ],
 
           "Variables":
