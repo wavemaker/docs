@@ -12,7 +12,7 @@ sidebar_label: "Install Prerequisites Softwares"
 #### Platform Instance
 
 - If given ssh user has privileges(root/sudo) to install/upgrade.
-- WME Installer will automatically install the required softwares.
+- WME Installer will automatically install the required software.
 - Same applies for StudioWorkspace Instance / AppDeployment Instance as well.
 - Internet is not required for Installation in this case.
 
@@ -52,12 +52,6 @@ sudo apt-get install python3 -y
     apt-get install iptables ca-certificates -y
 ```
 
-- Install Docker Engine 18.06.2
-
-```bash
-    sudo apt-get install docker-ce=18.06.2~ce~3-0~ubuntu -y
-```
-
 - To upgrade and install the latest version of Docker
   - Run the following command to list available versions
 
@@ -74,11 +68,11 @@ sudo apt-get install python3 -y
   ```
 
 - If the user given to the Platform don't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.  
-- Have to execute these commands from privileged user.
-  - Add user to docker group.  
-  - Make the user as owner for docker systemd process.
+- Have to execute these commands from privileged users.
+  - Add user to the docker group.  
+  - Make the user as an owner for the docker systemd process.
   - data directory should be owned by the user.
-  - Give permission to manage docker.service, systemctl daemon reload, iptable.
+  - Give permission to manage docker.service, systemctl daemon-reload, iptable.
 
     ```bash
         usermod -aG docker <user>
@@ -141,39 +135,8 @@ Use the same version numbers as mentioned.
   yum install http://ftp.riken.jp/Linux/cern/centos/7/extras/x86_64/Packages/container-selinux-2.10-2.el7.noarch.rpm -y
 ```
 
-- Install docker 18.06.2-ce
-
-```bash
-  wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-18.06.2.ce-3.el7.x86_64.rpm
-  yum install docker-ce-18.06.2.ce-3.el7.x86_64.rpm -y
-```
-
-```bash
-  systemctl enable docker
-  systemctl start docker
-```
-
-- Upgrade or install a latest version of Docker
-  - Stop the current Docker
-
-  ```bash
-    service docker stop
-  ```
-
-  - List the current Docker package version
-  
-  ```bash
-    yum list docker-ce
-  ```
-
-  - Remove the current Docker Engine
-
-  ```bash
-    rpm -e <installed-package>
-    example: rpm -e docker-ce.x86_64
-  ```
-  
-  - For Install Docker use the following commands
+- Install the latest version of Docker
+  - To Install Docker use the following commands
   
   ```bash
     wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el8.x86_64.rpm
@@ -203,7 +166,7 @@ Use the same version numbers as mentioned.
   - Add user to the docker group.
   - Make a user the owner of the docker systemd process
   - data directory should be owned by the user.
-  - Give permission to manage docker.service, systemctl daemon reload, iptable.
+  - Give permission to manage docker.service, systemctl daemon-reload, iptable.
 
     ```bash
         usermod -aG docker <user>
