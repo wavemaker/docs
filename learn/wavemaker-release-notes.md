@@ -13,6 +13,7 @@ WaveMaker is constantly working on bringing new features and improvements to the
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
+|**[WaveMaker v10.6.0](/learn/wavemaker-release-notes/v10-6-0)**|**New features + Bug fixes** |**08 December 2020** |**v10.6.0**|**08 December 2020**|
 |[WaveMaker v10.5.6](/learn/wavemaker-release-notes/v10-5-6)|Bug fixes |08 October 2020 |v10.5.6, v10.5.5, v10.5.4|28 October 2020|
 |[WaveMaker v10.5.5](/learn/wavemaker-release-notes/v10-5-5)|Bug fixes |14 September 2020 | -|-|
 |[WaveMaker v10.5.4](/learn/wavemaker-release-notes/v10-5-4)|Bug fixes |17 August 2020 | -|-|
@@ -57,9 +58,9 @@ Last updated: [Release: v10.4.0](/learn/wavemaker-release-notes/v10-4-0)
 | --- | --- | --- |
 | JS Binding | jquery | 3.3.1 |
 |  | jquery-ui* | 1.12.1 |
-| MVC Framework | angular | 7.2.2 |
+| MVC Framework | angular <td bgcolor="#44aaf4"> 7.2.2  -> 9.1.12 |
 |  | angular-ui-bootstrap | 3.3.6 |
-|  | ngx-bootstrap <td bgcolor="#44aaf4"> **3.0.1 -> 5.4**|
+|  | ngx-bootstrap | 5.4|
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
 |  | nvd3 | 1.8.6 |
@@ -94,7 +95,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
 | Tomcat | 8.5* |
-| Cordova (mobile apps) <br> Android <br> iOS <td bgcolor="#44aaf4"> 9.0.0 <br> 8.0.0   <br> **5.0.1 -> 5.1.1** |
+| Cordova (mobile apps) <br> Android <br> iOS <td bgcolor="#44aaf4"> 9.0.0 -> 10.0.0 <br> 8.0.0 -> 9.0.0   <br> 5.1.1 -> 6.1.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
@@ -102,8 +103,3 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 
 - **[WaveMaker 9.x Documentation](https://www.wavemaker.com/9/learn/index.html)**  
 - **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)**  
-
-
-
-
-

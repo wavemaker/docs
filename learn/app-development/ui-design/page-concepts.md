@@ -59,6 +59,7 @@ When the request for a page is made, it goes through the following life-cycle:
 
 ## See More
 [Creating a page](/learn/app-development/ui-design/page-creation/)  
+[Page Cache](/learn/app-development/ui-design/page-concepts/page-cache)  
 [Page layouts](/learn/app-development/ui-design/page-concepts/page-layouts/)  
 [Templates](/learn/app-development/ui-design/page-concepts/page-templates/)  
 
