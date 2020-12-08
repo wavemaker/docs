@@ -18,11 +18,8 @@ bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
 [![upgrading-wme](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-upgrade.jpg)](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-upgrade.jpg)
 
 - It takes 45-60 mins approximately. Please watch this terminal.
-- After completion of patch if docker version is older than 19.03.13 in UserWorkspaceInstance/AppDeployment Instance, then upgade the docker from [Docker Upgrade](/learn/on-premise/upgrade/docker-upgrade).
-- Execute the Following command for upgrade the Studio Workspace/AppDeploy Instances.
-
-```bash
-    bash wme-installer.sh --upgrade-instances
-```
-
-- After it showing Completed, go to launchpad.
+- After it showing Completed, go to Launchpad. 
+- Check all UserWorkspaceInstance/AppDeployment Instances Status in Launchpad. 
+- You can start working on Studio Once Instance Status came to STARTED. 
+- If Instance Status is UPGRADE_FAILED then there might be chances of docker version mismatch.  You can upgrade docker version using [Docker Upgrade Link](/learn/on-premise/upgrade/docker-upgrade). 
+- Please upgrade docker version if it is older than 19.03.13 in your UserWorkspaceInstance/AppDeployment Instances.

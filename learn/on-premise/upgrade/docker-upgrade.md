@@ -7,7 +7,9 @@ sidebar_label: "Docker Upgrade"
 
 ## Docker Upgrade
 
-Manul docker upgrade required only when WaveMaker patch skip the upgrade.WaveMaker patch will automatically upgrades the docker if ssh-user has root/sudo privileges.
+- Manul docker upgrade required only when WaveMaker patch skip the upgrade. 
+- WaveMaker patch will automatically upgrades the docker if ssh-user has root/sudo privileges. 
+- So follow below steps when you added StudioWorkspaceInstance / AppDeploymentInstance with non root/sudo user only.
 
 ### Docker upgrade in ubuntu
 
@@ -81,6 +83,12 @@ Upgrade or Install the latest version of Docker
     docker --version
 ```
 
+::: note
+- You can choose to install docker in any other way as per your company policy. 
+- Above commands depicts one of them. 
+- Make sure do below activities after the docker installation. 
+:::
+
 - If the user given to the Platform doesn't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
 - Have to execute these commands as a privileged user.
   - Add user to the docker group.
@@ -95,10 +103,13 @@ Upgrade or Install the latest version of Docker
         echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
     ```
 
-### Upgrade Studio Workspace/AppDeploy Instances
+### Sync Studio Workspace/AppDeploy Instances
 
-- Execute the Following command for upgrade the Studio Workspace/AppDeploy Instances.
-
+- Execute the Following command in Platform Instance to sync the StudioWorkspace/AppDeploy Instances. 
+  
 ```bash
+    cd <INSTALLER_LOCATION>
     bash wme-installer.sh --upgrade-instances
 ```
+- Go to Launchpad and see Instance Status. You can start working on Studio Once Instance Status came to STARTED.
+
