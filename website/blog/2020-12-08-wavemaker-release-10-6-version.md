@@ -16,9 +16,9 @@ Here are some highlights of what's in this release.
 
 2. [Spring Session Persistence - uses use the spring-session-core library for session management](/learn/wavemaker-release-notes/v10-6-0#spring-session-persistence)
 
-3. [Page Cache - A new flag called Cache is introduced on the Page tag](/learn/wavemaker-release-notes/v10-6-0#page-cache)
+3. [Page Cache - a new flag called Cache is introduced on the Page tag](/learn/wavemaker-release-notes/v10-6-0#page-cache)
 
-4. [Retain State for Widgets - To efficiently save and restore UI state](/learn/wavemaker-release-notes/v10-6-0#retain-state-for-widgets)
+4. [Retain State for Widgets - to efficiently save and restore UI state](/learn/wavemaker-release-notes/v10-6-0#retain-state-for-widgets)
 
 5. [Command-Line for Building Cordova Zip - generate it outside WaveMaker Studio](/learn/wavemaker-release-notes/v10-6-0#command-line-for-building-cordova-zip)
 
