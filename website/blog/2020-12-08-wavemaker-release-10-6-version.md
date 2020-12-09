@@ -60,7 +60,7 @@ Docker upgrades to the latest version i.e `19.03.13`. WaveMaker supports all ver
 
 ## See Also
 
-Some of the critical bugs have been fixed in the release. See the list of [bug fixes of 10.6](/learn/wavemaker-release-notes/v10-6-0/bug-fixes).
+Some of the critical bugs have been fixed in the release. See the list of [bug fixes of 10.6](/learn/wavemaker-release-notes/v10-6-0/#bug-fixes).
 
 - **[Release Notes 10.6](/learn/wavemaker-release-notes/v10-6-0/)**
 - **[Release Notes 10.5](/learn/wavemaker-release-notes/v10-5-0/)**
