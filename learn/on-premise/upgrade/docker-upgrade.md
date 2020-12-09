@@ -9,7 +9,7 @@ sidebar_label: "Docker Upgrade"
 
 - Manual Docker upgrade is required only when you miss or skip the WaveMaker patch upgrade.
 - WaveMaker patch automatically upgrades the Docker if ssh-user has root/sudo privileges.
-- So follow the steps below when you added StudioWorkspaceInstance / AppDeploymentInstance with non-root/sudo user only.
+- So follow the steps below when you added StudioWorkspaceInstance/AppDeploymentInstance with non-root/sudo user only.
 
 ### Docker Upgrade in Ubuntu
 
@@ -27,7 +27,7 @@ sidebar_label: "Docker Upgrade"
     example: sudo apt-get install docker-ce=5:19.03.13~3-0~ubuntu-xenial docker-ce-cli=5:19.03.13~3-0~ubuntu-xenial containerd.io
   ```
 
-- If the given platform user does not have privileged access, then provide the below permissions for the given user on StudioWorkspace Instance / AppDeployment Instance.  
+- If the given platform user does not have privileged access, then provide the below permissions for the given user on StudioWorkspace Instance/AppDeployment Instance.  
 - The user should be able to execute the following commands as a privileged user:
   - Add user to the Docker group.  
   - Make the user an owner of the Docker systemd process.
@@ -111,4 +111,4 @@ Upgrade or Install the latest version of Docker.
     bash wme-installer.sh --upgrade-instances
 ```
 
-- Go to Launchpad and see Instance Status. You can start working on Studio once the Instance Status gets started.
+- Go to Launchpad and see Instance status. You can start working on Studio once the Instance status has started.
