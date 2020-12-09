@@ -7,22 +7,19 @@ sidebar_label: "Run Patch"
 
 ## Running the Patch
 
-- Run the bash script for upgrading to desired version.
+- Run the bash script for upgrading to the desired version.
 
 ```shell
 bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
 ```
 
-- Enter config portal admin password for proceeding with the process.
+- Enter config portal admin password to proceed with the process.
 
 [![upgrading-wme](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-upgrade.jpg)](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-upgrade.jpg)
 
 - It takes 45-60 mins approximately. Please watch this terminal.
-- After completion of patch if docker has a old version please update the docker from [prerequisites](/learn/on-premise/aws/install-prerequisites).
-- Execute the Following command for upgrade the Studio Workspace/AppDeploy Instances
-
-```bash
-    bash wme-installer.sh --upgrade-instances
-```
-
-- After it showing Completed, go to launchpad.
+- After completing the patch, go to Launchpad.
+- Check all UserWorkspaceInstance/AppDeployment Instances status in Launchpad.
+- You can start working on Studio once the Instance status has started.
+- If the Instance status UPGRADE_FAILED, then there might be chances of docker version mismatch. You can upgrade docker version using [Manual Docker Upgrade](/learn/on-premise/upgrade/docker-upgrade).
+- Please upgrade the Docker version if it is older than 19.03.13 in your UserWorkspaceInstance/AppDeployment Instances.
