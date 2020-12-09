@@ -11,13 +11,17 @@ AppChef builds app installers including APK and IPA from a Cordova zip that can 
 To perform a Build using AppChef, you should have the application Cordova zip.
 WaveMaker provides an option to export your mobile application to a Cordova zip. For more information, see [download cordova zip](https://www.wavemaker.com/learn/hybrid-mobile/mobile-build-manual#how-to-export-cordova-zip).
 
-Using the Workspace Toolbar from Build task select **Go to AppChef**. It will navigate you to the AppChef application.
+Using the Workspace Toolbar from Build task select **Open AppChef**. It will navigate you to the AppChef application.
 
 ![mobile-build-appchef-studio-option.png](/learn/assets/mobile-build-appchef-studio-option.png)
 
 To login, click **Login with WaveMaker**
 
 ![mobile-build-appchef-login-screen](/learn/assets/mobile-build-appchef-login-screen.png)
+
+If there are no builds, a dialog will be shown to choose between Read documentation or Create new build.
+    
+![mobile-build-appchef-startup-dialog.png](/learn/assets/mobile-build-appchef-startup-dialog.png)
 
 ## Steps to build using AppChef
 
@@ -57,6 +61,11 @@ In this step, you can provide a distribution profile and choose certificates of 
 
 Provide the required options and click Save and Build to start building the application.
 
+:::note
+Uploaded certificates password will be cleared after every 24 hours, you need to provide password whenever prompted. To know more, click [here](#securing-certificates)
+:::
+
+
 ## Manage or Upload Certificates
 
 During the build process, i.e., in the last step of the build, there is an Add icon to upload certificates for Android and iOS . Dialog will be shown specific to store android and iOS certificates.
@@ -71,12 +80,39 @@ These are the options that are shown when you want to add an Android certificate
 
 ![/learn/assets/mobile-build-appchef-upload-android-certificate](/learn/assets/mobile-build-appchef-upload-android-certificate.png)
 
-
-:::note
-You always have an option to check the uploaded certificates and add a new one or delete the existing ones by opening the options from the application menu which is located at the right top corner.
+:::tip
+You always have an option to check the uploaded certificates where you can add a new one, lock or unlock the certificate and delete the existing ones by opening the options from the application menu which is located at the right top corner.
 :::
- 
+
 ![mobile-build-appchef-application-menu](/learn/assets/mobile-build-appchef-application-menu.png)
+
+![mobile-build-appchef-manage-certificates](/learn/assets/mobile-build-appchef-manage-certificates.png)
+
+
+
+### Securing certificates
+
+To secure the uploaded certificates, passwords will be saved in encrypted format. A Certificate with password is in unlocked state and builds can
+ only be triggered with unlocked certificates. Certificates will get automatically locked after 24 hours of unlocking, To unlock the certificate you have to
+  provide password again.
+ 
+A dialog will be shown to unlock certificate in two cases,
+
+1. In configure build step, while uploading cordova zip
+ 
+    For iOS, you need to enter certificate password
+
+    ![/learn/assets/mobile-build-appchef-unlock-ios-certificate](/learn/assets/mobile-build-appchef-unlock-ios-certificate.png)
+
+    For android, you need to enter Key password and Store password
+
+    ![/learn/assets/mobile-build-appchef-unlock-android-certificate](/learn/assets/mobile-build-appchef-unlock-android-certificate.png)
+ 
+2. While re-queuing the build in an existing application.
+  
+   ![/learn/assets/mobile-build-appchef-unlock-ios-certificate-in-requeue.png](/learn/assets/mobile-build-appchef-unlock-ios-certificate-in-requeue.png)
+  
+   ![/learn/assets/mobile-build-appchef-unlock-android-certificate-in-requeue.png](/learn/assets/mobile-build-appchef-unlock-android-certificate-in-requeue.png)
 
 
 ## Checking status of the submitted build request
@@ -95,7 +131,7 @@ These are the details that are shown for the submitted application.
 
 ### Application build stages
 
-Application build status has three stages
+Application build status has following stages
 
 1. **Queued** -  Server is waiting for the worker to pick up the job.
 2. **Processing** - Once a worker picks the job, status will be changed to processing.
@@ -120,7 +156,7 @@ To perform builds for the latest cordova zip of the existing application, you ha
 ![mobile-build-appchef-submitted-build-options](/learn/assets/mobile-build-appchef-submitted-build-options.png)
 
 :::note
-Only the last 10 builds are shown under the Builds section.
+Only the last 10 builds are shown under the Builds section. If build requests exceeds 10, a message will be shown to delete the existing builds.
 :::
 
 After the successful build, you can install the application in Android or iOS devices by scanning the QRcode which is located at the right corner as shown below.
@@ -130,6 +166,3 @@ After the successful build, you can install the application in Android or iOS de
 or, you can click on the platform (IOS, Android) under the build info to scan a particular build QRCode.
 
 ![/learn/assets/mobile-build-appchef-build-specific-qrcode](/learn/assets/mobile-build-appchef-build-specific-qrcode.png)
-
-
-
