@@ -22,6 +22,12 @@ With the Angular 9 upgrade, WaveMaker applications support AOT compilation by de
 With Angular 9 update, you can expect to see an increase in the application build time.
 :::
 
+### Up-to-date Libraries
+
+Libraries are hosted in the public npm registry (Angular library), and Maven (Jars). Therefore, all the required libraries are available to use without needing to import ZIP files manually.
+
+We upgraded the versions of Spring, Hibernate, Log4j to Log4j-2. To know our latest list of updated libraries, see [WaveMaker 10.6 Technology Stack](/learn/wavemaker-release-notes/v10-6-0#technology-stack).
+
 ### Mobile Updates
 
 #### Command-Line for building Cordova zip
@@ -47,12 +53,6 @@ As Phonegap has stopped supporting the platform, therefore we developed our very
 ### External CI-CD for Web and Mobile
 
 WaveMaker supports external CI/CD for both web and mobile apps from 10.6.0 onwards. It makes WaveMaker much more flexible to work with Studio or outside WaveMaker Studio.
-
-### Up-to-date Libraries
-
-Libraries are hosted in the public npm registry (Angular library), and Maven (Jars). Therefore, all the required libraries are available to use without needing to import ZIP files manually.
-
-We upgraded the versions of Spring, Hibernate, Log4j to Log4j-2. To know our latest list of updated libraries, see [WaveMaker 10.6 Technology Stack](/learn/wavemaker-release-notes/v10-6-0#technology-stack).
 
 ### Docker Upgrade
 
