@@ -29,7 +29,7 @@ Horizontal Scaling replicates the application with multiple nodes and servers. W
 
 ### In-Memory
 
-In-Memory is the default selected option; it does not scale the application.
+In-Memory is the default selected option; this will work fine for a single node application.
 
 ### REDIS
 
