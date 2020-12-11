@@ -60,8 +60,8 @@ import com.<project_name>.hrdb.User;
 public class MyJavaService {
     @Autowired
     public UserService userService;
-    public User getmyUser(int userid) {
-        User user = userService.getdById(userid);
+    public User getmyUser(Integer userid) {
+        User user = userService.getById(userid);
 return user;
     }
 ```
