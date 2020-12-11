@@ -966,6 +966,10 @@
             "how-tos/create-prefab-using-jquery-plugin",
             "how-tos/create-prefab-using-angular-module",
             "how-tos/create-prefab-using-custom-element"
+          ],
+          "Deployment":
+          [
+            "how-tos/ssl-offloading"
           ]
         
   },
