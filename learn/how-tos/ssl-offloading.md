@@ -50,7 +50,7 @@ portHeader="X-Forwarded-Port" />
 ### Test Headers in WebApp
 Follow below steps to test which headers are received by Webapp while hitting from browser.
 
-- Keep below content in `header_test.jsp` file. Upload `header_test.jsp` file under resources directory of WaveMaker application via Studio UI.
+- Keep below content in `header_test.jsp` file. Upload `header_test.jsp` file under `src/main/webapp/resources` directory of WaveMaker application using Studio Upload File UI.
 - You can hit `https://<your-app-domain>/<app-name>/resources/header_test.jsp`
 - Remove this file after testing, this could lead to potential security threat by leaking headers information of our system.
 
