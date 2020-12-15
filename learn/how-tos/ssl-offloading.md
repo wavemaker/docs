@@ -1,11 +1,11 @@
 ---
-title: "SSL Offloading in LoadBalancer"
+title: "SSL Termination in LoadBalancer"
 id: ""
 ---
 ---
 
 
-SSL offloading or SSL Termination is the process of removing the SSL based encryption from incoming traffic that a web server receives to relieve it from decryption of data. 
+SSL Termination or SSL offloading is the process of removing the SSL based encryption from incoming traffic that a web server receives to relieve it from decryption of data. 
 
 LoadBalancers will verify SSL and decrypt the data before sending to backend nodes.
 Backend nodes will always receive http trafic with few `X-Forwarded` headers. 
