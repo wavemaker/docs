@@ -5,22 +5,24 @@ id: ""
 ---
 
 
-SSL offloading is the process of removing the SSL based encryption from incoming traffic that a web server receives to relieve it from decryption of data. 
+SSL offloading or SSL Termination is the process of removing the SSL based encryption from incoming traffic that a web server receives to relieve it from decryption of data. 
 
 LoadBalancers will verify SSL and decrypt the data before sending to backend nodes.
 Backend nodes will always receive http trafic with few `X-Forwarded` headers. 
 
+![SSL Offloading](/learn/assets/SSL-Offloading.png)
+
 WaveMaker Apps can be deployed in various Web/Application Servers. 
 We will discuss here what needs to be taken care while Deploying WaveMaker App into Tomcat Server. Similar approach needs to be followed for other Servers.
 
-- LoadBalancers will offload ssl and sends http trafic to tomcat.
-- LoadBalancers will add below Headers to tomcat server.
+- LoadBalancers will offload ssl and sends http trafic to tomcat server.
+- LoadBalancers will add below Headers before sending request to tomcat server.
    - `X-Forwarded-Proto`
    - `X-Forwarded-For`
    - `X-Forwarded-Port`
 - Our WaveMaker app checks the request with request.isSecure() to validate whether it is https or not.
 - Tomcat should able to read this headers and trust that its https.
-- Default tomcat installation don't read these headers. So we have configure Tomcat valve to read all these headers.
+- Default tomcat installation don't honor these headers. So we have to configure Tomcat valve to read and honor all these headers.
 - Update server.xml with below snippet, just above  `<Valve>` tag. 
 - `/usr/local/tomcat/conf` is the defult location of `server.xml`.
 
@@ -35,7 +37,7 @@ portHeader="X-Forwarded-Port" />
 - `protocolHeader` will be considered only for few internal ip ranges. We can change them via internalProxies attribute of the Tomcat valve.
 - Default value for internalProxies="10\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|192\\.168\\.\\d{1,3}\\.\\d{1,3}|169\\.254\\.\\d{1,3}\\.\\d{1,3}|127\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|172\\.1[6-9]{1}\\.\\d{1,3}\\.\\d{1,3}|172\\.2[0-9]{1}\\.\\d{1,3}\\.\\d{1,3}|172\\.3[0-1]{1}\\.\\d{1,3}\\.\\d{1,3}|0:0:0:0:0:0:0:1|::1"
 
-- We can add to be allowed ip ranges like below.  
+- Add your allowed IP ranges in the above format to the internalProxies attribute value.  
 
 ```shell
 <Valve className="org.apache.catalina.valves.RemoteIpValve"
