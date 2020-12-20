@@ -34,7 +34,8 @@ protocolHeader="X-Forwarded-Proto"
 protocolHeaderHttpsValue="https"
 portHeader="X-Forwarded-Port" /> 
 ```
-- `protocolHeader` will be considered only for few internal ip ranges. We can change them via internalProxies attribute of the Tomcat valve.
+- `protocolHeader` will be considered only for few internal ip ranges. We can change them via internalProxies attribute of the Tomcat valve.  This is an Optional setting which required when request ip ranges are not fallen under default values.
+
 - Default value for internalProxies="10\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|192\\.168\\.\\d{1,3}\\.\\d{1,3}|169\\.254\\.\\d{1,3}\\.\\d{1,3}|127\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|172\\.1[6-9]{1}\\.\\d{1,3}\\.\\d{1,3}|172\\.2[0-9]{1}\\.\\d{1,3}\\.\\d{1,3}|172\\.3[0-1]{1}\\.\\d{1,3}\\.\\d{1,3}|0:0:0:0:0:0:0:1|::1"
 
 - Add your allowed IP ranges in the above format to the internalProxies attribute value.  
