@@ -9,6 +9,7 @@ A Wavemaker Application typically comprises of many pages, and each page consist
 * Selecting items in a List widget and navigating between different pages of the List(pagination).
 * Searching, Sorting, Row Selection, and Pagination in a Data Table widget.
 
+<!--truncate-->
 
 ## Problem
 
