@@ -11,7 +11,7 @@ A case study on certificate pinning.
 
 In HTTPS handshake, the server responds with a public certificate issued by Certificate Authority (CA) to establish a connection. If CA or Root certificate was compromised and issues a certificate without the domain owner's consent, the client may face the man-in-the-middle (MTM) attack. To protect users from this vulnerability, an app can employ SSL pinning.
 
-![MITM](/learn/assets/mitmdiagram.png)
+![MITM](/learn/assets/blog_certificate_pinning/mitmdiagram.png)
 
 Certificate Pinning is an additional layer of security which protects communication between client and server. The Standard HTTPS verifies whether the connection is secure but it cannot verify whether you are communicating with the actual server or an intercepted server.
 
@@ -21,7 +21,7 @@ Standard HTTPS checks only whether the connection is secure. Along with the HTTP
 
 The application contains the pinned certificates which are pre-defined "known" certificates. During the time of communication between the client and server, you expect that the server certificate should match with any one of the pinned certificates. If it does not match, we terminate the communication.
 
-![MITM](/learn/assets/nomitmdiagram.png)
+![Certificate Pinning](/learn/assets/blog_certificate_pinning/nomitmdiagram.png)
 
 ## Advantages of Certificate Pinning
 
