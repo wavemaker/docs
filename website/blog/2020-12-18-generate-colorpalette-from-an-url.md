@@ -16,16 +16,16 @@ Introduced a new flow to derive the colors from a given Input URL. To try out th
 1. Go to the Dashboard page [Theme builder](https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard)
 2. Click on the 2nd option, "Input URL and generate."
 
-![theme builder popover menu](/learn/assets/theme-builder-dashboard-tile2.png)
+![theme builder dashboard tile2](/learn/assets/theme-builder-dashboard-tile2.png)
 
 3. Enter a website Url for ex: google.com, and click search to generate a color palette.
 
-![theme builder popover menu](/learn/assets/theme-builder-import-theme.png)
+![theme builder import theme](/learn/assets/theme-builder-import-theme.png)
 
 4. There will be a prompting message on the Editor page, with the generated colors (a maximum of 6) highlighted. Default preselected colors for all the fields will come from the existing theme.
 
 
-![theme builder popover menu](/learn/assets/theme-builder-dynamic-color-list.png)
+![theme builder color list](/learn/assets/theme-builder-dynamic-color-list.png)
 
 5. You can further design the WM components with the new colors and preview and download the theme.
 6. The new generated colors will be available for all the input fields. Choose the colors from the dropdown list as per your need. 
