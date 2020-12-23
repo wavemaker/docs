@@ -1,5 +1,5 @@
 ---
-title: "Theme builder - Now generate color palette from an Input URL"
+title: "WaveMaker Theme builder - Automatically import your website's branding into a Theme"
 author: Lovin Ahmed
 ---
 
