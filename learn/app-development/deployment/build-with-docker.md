@@ -8,12 +8,15 @@ WaveMaker supports micro-service enabled architecture. This allows you to build 
 
 For creating a Docker container, you create a Docker image by building a Dockerfile. For this, you require node and npm as prerequisites for building an application with maven and java.
 
-## Prerequisites
+## System prerequisites
 
-- npm 6.4.1
-- node 10.12.0
-- maven 3.6.3
-- java 8
+|Description|Version|
+|---|---|
+|Java |1.8|
+|Node|10.15.0|
+|Maven| 3.6.3|
+|npm|6.4.1|
+|Ant|1.10.7|
 
 ## How to Build with Docker
 
@@ -34,12 +37,12 @@ FROM maven:3.6.3-jdk-8 as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 RUN mkdir -p /usr/local/content/node
 WORKDIR /usr/local/content/node
-ADD https://nodejs.org/dist/v10.12.0/node-v10.12.0-linux-x64.tar.gz .
-RUN tar -xzf node-v10.12.0-linux-x64.tar.gz \
-    && ln -s /usr/local/content/node/node-v10.12.0-linux-x64/bin/node /usr/local/bin/node \
-    && ln -s /usr/local/content/node/node-v10.12.0-linux-x64/bin/npm /usr/local/bin/npm \
+ADD https://nodejs.org/dist/v10.15.0/node-v10.15.0-linux-x64.tar.gz .
+RUN tar -xzf node-v10.15.0-linux-x64.tar.gz \
+    && ln -s /usr/local/content/node/node-v10.15.0-linux-x64/bin/node /usr/local/bin/node \
+    && ln -s /usr/local/content/node/node-v10.15.0-linux-x64/bin/npm /usr/local/bin/npm \
     && chown -R root:root /usr/local/content/node \
-    && rm -fR node-v10.12.0-linux-x64.tar.gz
+    && rm -fR node-v10.15.0-linux-x64.tar.gz
 
 FROM maven-java-node as webapp-artifact
 RUN mkdir -p /usr/local/content/app
@@ -65,6 +68,9 @@ docker image build --build-arg build_profile_name=<deployment-profile> -t <image
 ```
 
 For more information, see [Development Profile](/learn/app-development/deployment/configuration-profiles#development-configuration-profile) and [Deployment Profile](/learn/app-development/deployment/configuration-profiles#deployment-configuration-profile). 
+
+
+Check [Handling Build Failures](/learn/app-development/deployment/building-with-maven#handling-build-failures) if build failed.
 
 ### Creating Docker Container
 

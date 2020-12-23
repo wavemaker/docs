@@ -94,7 +94,9 @@ For more information, see [WaveMaker apps integration with AWS CDN](/learn/app-d
   - Insufficient memory to Node Process
   - Compilation issues
 - On build failure due to the out-of-memory error, the profile property called **`build.ui.node.args`** should be adjusted; this configures the build. Increase the **`max-old-space-size`** memory value where the default value is 1024 MB. The build should be triggered again after increasing the memory value. To do this, do the following steps.
-- Go to the project folder -> profiles -> open the file `<profilename.properties>`. As shown in the image below:
+Either 
+  - Go to Studio -> File Explorer -> profiles -> open the file `<profilename.properties>`
+  - Or Go to the Project folder -> profiles -> open the file `<profilename.properties>` As shown in the image below:
 
 [![profile location](/learn/assets/profile-location.png)](/learn/assets/profile-location.png)
 
