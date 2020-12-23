@@ -3,7 +3,7 @@ title: "Theme builder - Now generate color palette from an Input URL"
 author: Lovin Ahmed
 ---
 
-[Theme builder](https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard) app has introduced a new feature of generating theme color palette from a website URL. This new feature will help you generate a color palette based on the URL of the site provided by the user. The tool will then pick the generated colors and add them to the dropdown list in [Editor page](https://apps.wavemakeronline.com/Theme_Builder/#/Editor). You can further view and design the WM components based on the colors and download the theme. 
+[Theme builder](https://apps.wavemakeronline.com/Theme_Builder/#/Dashboard) app has introduced a new feature of recognising any website's color palette and using the discovered colors in the WaveMaker theme. This new feature will make building a WaveMaker theme easier by making the choices for color, font etc from your existing website. You can further view and design the WM components based on the colors and download the theme. 
 
 With the recent release, we have also fixed a few bugs. Know more.... 
 
@@ -29,9 +29,6 @@ Introduced a new flow to derive the colors from a given Input URL. To try out th
 
 5. You can further design the WM components with the new colors and preview and download the theme.
 6. The new generated colors will be available for all the input fields. Choose the colors from the dropdown list as per your need. 
-
-
-
 
 
 ## Bug Fixes
