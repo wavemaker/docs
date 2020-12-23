@@ -65,7 +65,7 @@ Follow below steps to test which headers are received by Webapp while hitting fr
    </head>
    <body>
       <h1>HTTP Request Headers Received</h1>
-      <h2>Is Secure  : <%= request.isSecure() %></h1>
+      <h2>Is Secure  : <%= request.isSecure() %></h2>
       <h2>Request URL: <%= request.getRequestURL() %></h2>
       <h2>Request URI: <%= request.getRequestURI() %></h2>
       <h2>Server Name: <%= request.getServerName() %></h2>
