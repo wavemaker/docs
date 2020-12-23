@@ -23,18 +23,18 @@ The application contains the pinned certificates which are pre-defined "known" c
 
 ![Certificate Pinning](/learn/assets/blog_certificate_pinning/nomitmdiagram.png)
 
-## Advantages of Certificate Pinning
-
-* Certificate Pinning protects data tampering even if the user installs a malicious CA with or without knowing.
-* If a trusted certificate authority gets compromised due to security [vulnerability](https://en.wikipedia.org/wiki/Certificate_authority#CA_compromise), our application will not get affected.
-
-## Web Certificate Pinning
+### Web Certificate Pinning
 
 Web Certificate Pinning is dynamic pinning. Certificates are pinned during the initial connection establishment. It was [introduced](https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning) in 2015 soon after it was deprecated in 2018 due to which it created a new set of vulnerabilities than resolving the actual [problem](https://scotthelme.co.uk/using-security-features-to-do-bad-things/).
 
-## Mobile Certificate Pinning
+### Mobile Certificate Pinning
 
 Mobile certificate pinning is static pinning, in which the certificate bundles with the app during the release and expects to deploy a new release on the certificate expiry.
+
+## Advantages of Certificate Pinning
+
+* Certificate Pinning protects data tampering even if the user installs a malicious CA with or without knowing.
+* If a trusted certificate authority gets compromised due to security [vulnerability](https://en.wikipedia.org/wiki/Certificate_authority#CA_compromise), the application will not get affected.
 
 ## Problem Associated with Certificate Pinning
 
@@ -53,6 +53,6 @@ CT in [OpenSSL](http://www.certificate-transparency.org/certificate-transparency
 
 Though CT is different from certificate pinning, it will effectively replace the certificate pinning without compromising the quality of service.
 
-We are always open to adapt to the latest technology trends. If there is anything in your mind that WaveMaker should have, do let us know [here](mailto:info@wavemaker.com).
+Have a great idea for what you'd like to see next? Let us know [here](mailto:info@wavemaker.com).
 
 
