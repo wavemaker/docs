@@ -17,7 +17,7 @@ Certificate Pinning is an additional layer of security which protects communicat
 
 ## What Certificate Pinning offers
 
-Standard HTTPS establishes secure connection and checks whether server's certificate was issued by a trusted CA, Certificate Pinning additionally forces client app to validate the server's certificate with a known copy of a certificate.
+Standard HTTPS establishes secure connection and checks whether the server's certificate was issued by a trusted CA, Certificate Pinning additionally forces client app to validate the server's certificate with a known copy of a certificate.
 
 The client application will contains the pinned certificates which are pre-defined "known" certificates. During the time of communication between the client and server, client expects the server's certificate to match with any one of the pinned certificates. If it does not match, client will terminate the connection.
 
