@@ -20,7 +20,7 @@ Following are the two approaches which can be followed to create a Cordova zip.
 
 ## Export Cordova using WaveMaker Studio
 
-1. In the top right menu bar of WaveMaker Studio, go to **Export** and click **Download Cordova zip**.
+1. In the top right menu bar of WaveMaker Studio, go to **Export** and click **Project as Cordova ZIP**.
 
 [![](/learn/assets/Cordova_Zip.png)](/learn/assets/Cordova_Zip.png)
 
