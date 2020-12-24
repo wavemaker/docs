@@ -44,7 +44,7 @@ A security researcher has [warned](https://scotthelme.co.uk/im-giving-up-on-hpkp
 * Domain hijacking - on Domain-hijacking, you can lose control of certificates, and hijackers can mishandle your certificates.
 
 
-**After carefully evaluating, very few sites/apps uses certificate pinning and developer needs to very careful handling the certificate pinning, At this point, we have not implemented support for certificate pinning in applications build using WaveMaker.**
+**After carefully evaluating, very few sites/apps uses certificate pinning and developer need to be very careful handling the certificate pinning, At this point, we have not implemented support for certificate pinning in applications build using WaveMaker.**
 ## What next?
 
 [Certificate Transparency (CT)](http://www.certificate-transparency.org/what-is-ct) was introduced in 2018 after deprecation of Web Certificate Pinning. CT is an open-source framework for monitoring and auditing certificates. This standard creates a public logger that records all the certificates issued by the trusted CA. You can monitor these loggers to detect mistakenly-issued certificates, compromised CAs, and CAs dishonesty.
