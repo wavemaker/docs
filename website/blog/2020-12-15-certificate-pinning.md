@@ -17,9 +17,9 @@ Certificate Pinning is an additional layer of security which protects communicat
 
 ## What Certificate Pinning offers
 
-Standard HTTPS establishes secure connection and checks whether server's certificate was issued by a trusted CA, Certificate Pinning additionally forces client app to validate the server's certificate with a known copy of certificate.
+Standard HTTPS establishes secure connection and checks whether server's certificate was issued by a trusted CA, Certificate Pinning additionally forces client app to validate the server's certificate with a known copy of a certificate.
 
-The client application will contains the pinned certificates which are pre-defined "known" certificates. During the time of communication between the client and server, client expects the server's certificate to match with any one of the pinned certificates. If it does not match, client will terminate the communication.
+The client application will contains the pinned certificates which are pre-defined "known" certificates. During the time of communication between the client and server, client expects the server's certificate to match with any one of the pinned certificates. If it does not match, client will terminate the connection.
 
 ![Certificate Pinning](/learn/assets/blog_certificate_pinning/nomitmdiagram.png)
 
@@ -43,9 +43,15 @@ A security researcher has [warned](https://scotthelme.co.uk/im-giving-up-on-hpkp
 * If the key was accidentally deleted, stolen, hacked, you may face serious application [downtime issues](https://www.smashingmagazine.com/be-afraid-of-public-key-pinning/).
 * Domain hijacking - on Domain-hijacking, you can lose control of certificates, and hijackers can mishandle your certificates.
 
+
+**After carefully evaluating, very few sites/apps uses certificate pinning and developer needs to very careful handling the certificate pinning, At this point, we have not implemented support for certificate pinning in applications build using WaveMaker.**
+
+I think we should add that very few sites actually use certificate pinning and one needs to be very careful in evaluating using this feature. After careful consideration, at this point, we have not yet implemented support for certificate pinning in applications build using WaveMaker.
+
+
 ## What next?
 
-[Certificate Transparency (CT)](http://www.certificate-transparency.org/what-is-ct) was introduced in 2018 after deprecation of Web Certificate Pinning. CT is an opensource framework for monitoring and auditing certificates. This standard creates a public logger that records all the issued certificates by the trusted CA. You can monitor these loggers to detect mistakenly-issued certificates, compromised CAs, and CAs dishonesty.
+[Certificate Transparency (CT)](http://www.certificate-transparency.org/what-is-ct) was introduced in 2018 after deprecation of Web Certificate Pinning. CT is an open-source framework for monitoring and auditing certificates. This standard creates a public logger that records all the certificates issued by the trusted CA. You can monitor these loggers to detect mistakenly-issued certificates, compromised CAs, and CAs dishonesty.
 
 CT in [OpenSSL](http://www.certificate-transparency.org/certificate-transparency-in-openssl), whenever a connection is initiated, SSL certificates' timestamp will be used to fetch the certificate from the CT log and compared to establish the connection.
 
@@ -54,5 +60,3 @@ CT in [OpenSSL](http://www.certificate-transparency.org/certificate-transparency
 Though CT is different from certificate pinning, it will effectively replace the certificate pinning without compromising the quality of service.
 
 Have a great idea for what you'd like to see next? Let us know [here](mailto:info@wavemaker.com).
-
-
