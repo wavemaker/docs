@@ -794,6 +794,12 @@
             "how-tos/app-migration-wavemaker-9x-10x",
             "how-tos/debug-monitor-performance-issues-using-fusion-reactor"
           ],
+
+          "Deployment":
+          [
+          "how-tos/ssl-offloading"
+          ],
+
          "Mobile App Solutions":
           [
             "how-tos/mobile-notify-new-version-update"

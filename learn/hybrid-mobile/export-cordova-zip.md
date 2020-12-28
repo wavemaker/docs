@@ -55,7 +55,17 @@ This an alternative of the above approach. This is useful if you are working out
     1. Export the WaveMaker project zip and extract the zip.
     2. You can also execute `git clone <repo_url>` command to get the project from a git repository which is commonly used across the development team.
 
-2. Execute the below command
+2. Install Prerequisites to support maven build.
+
+|Description|Version|
+|---|---|
+|Java |1.8|
+|Node|10.15.0|
+|Maven| 3.6.3|
+|npm|6.4.1|
+|Ant|1.10.7|
+
+3. Execute the below command.
 
     >`mvn clean package -Dmobile.serverUrl="<url>"`
 
@@ -66,7 +76,7 @@ This an alternative of the above approach. This is useful if you are working out
     
     ![maven command to generate cordova](/learn/assets/cordova_maven_command.png)
 
-3. After executing the above command, the Cordova zip can be found at 
+4. After executing the above command, the Cordova zip can be found at 
 
     > `<ProjectFolder>/target/<ProjectName>-cordova.zip`. 
 
