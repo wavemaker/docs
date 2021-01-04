@@ -22,11 +22,11 @@ Introduced a new flow to identify the colors of a website using the **Input URL*
 
 ![theme builder dashboard tile2](/learn/assets/theme-builder-dashboard-tile2.png)
 
-3. Enter a website Url. For example, `https://www.google.com/`, and click **Search URL** to generate the color palette of the website.
+3. Enter a website URL. For example, `https://www.google.com/`, and click **Search URL** to generate the color palette of the website.
 
 ![theme builder import theme](/learn/assets/theme-builder-import-theme.png)
 
-4. A prompting message displays on the Editor page with the generated colors with a maximum of six colors that are highlighted. However, the preview application continues to use the default preselected colors of the existing Material theme.
+4. A prompting message displays on the **Editor** page with the generated colors with a maximum of six colors that are highlighted. However, the preview application continues to use the default colors of the existing Material theme.
 
 
 ![theme builder color list](/learn/assets/theme-builder-dynamic-color-list.png)
