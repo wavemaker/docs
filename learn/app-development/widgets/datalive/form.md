@@ -5,13 +5,13 @@ sidebar_label: "Forms Overview"
 ---
 ---
 
-A form consists of a group of input fields that connects to a datasource such as a table or query. Using Form widget, you can enter, edit, or display data from the data source. For example, a simple contact form, registration form, login form, and more.
+A form consists of a group of input fields that connects to a datasource such as a table or a query. Using the Form widget, you can enter, edit, or display data from the data source. For example, a simple contact form, registration form, login form, and more.
 
 Based on your datasource, you can create forms to contain text fields, email, date, dropdown, checkboxes, and more. Plus, you can add validations to the form fields to capture quality and accurate information from the users.
 
 Additionally, build complex forms that contain multiple data widgets inside a single form, and form inside another form called repeated sections.
 
-[![](/learn/assets/Form_run.png)](/learn/assets/Form_run.png)
+[![form](/learn/assets/Form_run.png)](/learn/assets/Form_run.png)
 
 ## Forms Types
 
@@ -35,7 +35,7 @@ Form and Live Form are two different widgets that work similarly. Live Form is u
 
 ### Handling Form Submission Data
 
-Firstly, to build a form, you should have a dataset. You can use APIs for REST services, java service and database service. There are multiple ways to build and manage datasource in WaveMaker. 
+Firstly, to build a form, you should have a dataset. You can use APIs for REST services, java service, and database service. There are multiple ways to build and manage a datasource in WaveMaker.
 
 You can instantly create a form without even having a dataset ready using a model variable. This helps you to plan and design your form structure. For more information, see [Build a Form](/learn/app-development/widgets/datalive/form/form-usage-scenarios).
 
@@ -51,9 +51,9 @@ You can display form as a dialog. This means the form displays a pop-up when an 
 
 To display form inline with a page. This is the default option.
 
-#### Align 
+#### Align
 
-Set the alignment of the form. You can choose from left, center, right alignment.
+Set the alignment of the form. You can choose from the left, center, right, and floating alignments.
 
 #### Position
 
