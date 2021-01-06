@@ -11,7 +11,7 @@ Live Form **layouts** include:
 1. Column Form with left-aligned Captions
 2. Column Form with right-aligned Captions
 3. Column Form with top-aligned Captions
-4. Column Form with floating Captions
+4. Column Form with floating Captions (Angular material style)
 
 ### Types 
 The **Types** of live form can be set to the following:
@@ -46,7 +46,7 @@ For form fields, the **alignment of the caption** can be configured to place as 
     
 <iframe width="100%" height="450" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LiveFormwithThreeCol">3-column Form</iframe>
 
-### 4. Column Form with floating Captions 
+### 4. Column Form with floating Captions (Angular material style)
 
 [![](/learn/assets/liveFormWithThreeCol.png)](/learn/assets/liveFormWithThreeCol.png)
 

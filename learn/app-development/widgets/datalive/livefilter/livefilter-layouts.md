@@ -21,6 +21,6 @@ Live Filter **layout** can be _1-column_, _2-column_ or _3-column_. Apart from t
     
     <iframe width="100%" height="750" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LiveFilterwithThreeCol">3-column Filter</iframe>
 
-### 3-Column Filter with floating Captions 
+### 3-Column Filter with floating Captions (Angular material style)
     
 [![](/learn/assets/liveFilterWithThreeCol.png)](/learn/assets/liveFilterWithThreeCol.png)

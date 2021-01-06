@@ -10,5 +10,5 @@ Form **layout** can be _1-column_, _2-column_ or _3-column_. Apart from this, th
 1. 1-Column Form with left-aligned Captions
 2. 2-Column Form with right-aligned Captions
 3. 3-Column Form with top-aligned Captions
-4. 3-Column Form with floating Captions
+4. 3-Column Form with floating Captions (Angular material style)
 
