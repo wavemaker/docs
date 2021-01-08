@@ -25,11 +25,11 @@ The client application contains the pinned certificates which are pre-defined "k
 
 ### Web Certificate Pinning
 
-Web Certificate Pinning is dynamic pinning. Certificates are pinned during the initial connection establishment. It was [introduced](https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning) in 2015 soon after it was deprecated in 2018 due to which it created a new set of vulnerabilities than resolving the actual [problem](https://scotthelme.co.uk/using-security-features-to-do-bad-things/).
+Web Certificate Pinning is dynamic pinning. Certificates are pinned during the initial connection establishment. It was [introduced](https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning) in 2015 but was deprecated in 2018 due problems it created than resolving the actual [problem](https://scotthelme.co.uk/using-security-features-to-do-bad-things/).
 
 ### Mobile Certificate Pinning
 
-Mobile Certificate Pinning is static pinning, in which the certificate bundles with the app during the release and expects to deploy a new release on the certificate expiry.
+Mobile Certificate Pinning is static pinning, in which the certificate is bundled with the app. This means new app has to be installed on the certificate expiry.
 
 ## Advantages of Certificate Pinning
 
