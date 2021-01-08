@@ -11,7 +11,7 @@ Live Form **layouts** include:
 1. Column Form with left-aligned Captions
 2. Column Form with right-aligned Captions
 3. Column Form with top-aligned Captions
-4. Column Form with floating Captions (Angular material style)
+4. Column Form with floating Captions ([Angular material style](https://material.angular.io/components/form-field/examples))
 
 ### Types 
 The **Types** of live form can be set to the following:
