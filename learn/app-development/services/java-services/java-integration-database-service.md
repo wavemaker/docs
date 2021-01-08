@@ -5,7 +5,7 @@ sidebar_label: "DB Service Integration"
 ---
 ---
 
-We can invoke Database Service from Java by `@Autowired` the service files.In case if you want more control on database service methods or if you would like to extend or use the database service API's or methods based on business logic then you can `@Autowire` the Service class of that particular database entity. 
+WaveMaker generates REST API when a database is imported. However the lower level database access can be used inside a Java class to execute custom business logic. In case if you want more control on database service methods or if you would like to extend or use the database service API's or methods based on business logic then you can `@Autowire` the Service class of that particular database entity. 
 
 The **autowiring feature of spring framework** enables you to inject the object dependency implicitly. The advantage of autowiring is, it requires the less code because we don't need to write the code to inject the dependency explicitly. 
 
