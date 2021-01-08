@@ -53,7 +53,7 @@ For the Search widget you can set the following properties:
 | **Behavior** |
 | Read Only | Selecting this checkbox property prevents the user from being able to change the data value of a widget. |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
-| Show clear | On setting show clear to true, the user is provided with an option to clear the inputted value in the search field. |
+| Show clear | On setting `show clear` to true, the user is provided with an option to clear the input value in the search field. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred until the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. |
 | Min Chars  | The minimum number of characters to be entered by the user before the search query is triggered. The value should be greater than 0. The default value is 1. |
