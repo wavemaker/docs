@@ -53,8 +53,6 @@ With Horizontal scaling, the data gets distributed among the nodes, and each nod
 
 Accordingly, with Horizontal scaling, WaveMaker has integrated Spring Session Module to handle session management for the application.
 
-Therefore, with Horizontal scaling, WaveMaker has integrated Spring Session Module to handle session management for the application.
-
 ### Integrating Spring Session with WaveMaker
 
 Spring Session manages user-session information while supporting clustered sessions without being tied to an application container specific solution.
@@ -69,7 +67,7 @@ For this approach, WaveMaker uses `spring-session-core` as a runtime dependency.
 
 ### Spring-session based on External Store
 
-There are two ways for configuring external session stores depending on your requirements by choosing from Redis and JDBC. To configure with Redis as an external store, WaveMaker adds `spring-session-data-redis` along with `lettuce-core` dependency. Similarly, for JDBC, we add `spring-session-jdbc` dependency. WaveMaker adds these dependencies internally to scale applications and handle session management for the application.
+There are two ways for configuring external session stores depending on your requirements by choosing from Redis and JDBC. To configure with Redis as an external store, WaveMaker adds `spring-session-data-redis` along with `lettuce-core` dependency. Similarly, for JDBC, we add a `spring-session-jdbc` dependency. WaveMaker internally adds these dependencies to scale applications and handle session management for the application.
 
 With [release 10.6](/learn/wavemaker-release-notes/v10-6-0), all the WaveMaker applications provide an option to opt for Horizontal scaling by choosing from Redis, JDBC, along with `MapSessionRepository` as a Distributed Session Registry.
 
