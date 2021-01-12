@@ -3,7 +3,7 @@ title: "Understanding Scaling in WaveMaker Applications"
 author: Swetha Kundaram
 ---
 
-You have developed an exceptional application, and the demand for your application is increasing. You need to expand its accessibility and develop a plan to scale your application. Understanding how to scale an application means ensuring that your application can handle a larger number of users simultaneously.
+You have developed an exceptional application, and the demand for your application is increasing. You need to expand its accessibility and develop a plan to scale your application. Understanding how to scale an application means ensuring that your application can handle a larger number of users simultaneously. WaveMaker generates code based on open standards and brings best practices to the way applications should be architected. This makes scaling the application easy to understand and apply.
 
 What happens if you don't scale your application?
 
@@ -33,7 +33,7 @@ Horizontal scaling means it scales an application by adding more machines into t
 The decision depends on a number of factors, including the following.
 
 1. Is the application request volume steadily growing?
-2. Is the application's current growth experiencing [spikes](https://www.guru99.com/spike-testing.html) that lead to service degradation?
+2. Is the application's current growth experiencing [spikes](https://www.techopedia.com/definition/33767/spike-testing) that lead to service degradation?
 
 Combine these factors with the application's unique requirement to evaluate and determine the optimal scaling approach.
 
