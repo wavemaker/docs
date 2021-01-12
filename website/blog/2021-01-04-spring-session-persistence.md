@@ -1,5 +1,5 @@
 ---
-title: "Understanding Scaling in WaveMaker Applications"
+title: "Understanding Scaling of WaveMaker Applications"
 author: Swetha Kundaram
 ---
 
