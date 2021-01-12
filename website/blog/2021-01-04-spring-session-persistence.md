@@ -51,7 +51,7 @@ The following image shows a deployment architecture of Horizontal scaling.
 
 With Horizontal scaling, the data gets distributed among the nodes, and each node contains only a part of the data. Therefore, the user-session created by a node cannot be understood by the other node. In this case, when the user logins again, it rejects the request if the request goes to another node.
 
-Accordingly, with Horizontal scaling, WaveMaker has integrated Spring Session Module to handle session management for the application.
+WaveMaker generates open standards code based on Spring for the back end. So, for Horizontal scaling, [Spring Session Module](https://spring.io/projects/spring-session) implementation can be used, configured to handle session management for the application.
 
 ### Integrating Spring Session with WaveMaker
 
