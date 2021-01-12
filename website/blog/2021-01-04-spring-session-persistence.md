@@ -55,7 +55,7 @@ Accordingly, with Horizontal scaling, WaveMaker has integrated Spring Session Mo
 
 ### Integrating Spring Session with WaveMaker
 
-Spring Session manages user-session information while supporting clustered sessions without being tied to an application container specific solution.
+Spring Session manages user's http session information while supporting clustered sessions without being tied to an application container specific solution.
 
 In the following illustration, see how WaveMaker applications scale horizontally; specifically, storing user authenticated sessions when the requests are served by different nodes using the round-robin mechanism and without using any sticky sessions.
 
