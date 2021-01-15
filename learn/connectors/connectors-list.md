@@ -91,3 +91,18 @@ The AWS SNS Connector enables you to add Push Notifications capability to WaveMa
 
 The Connector sources are found at: https://github.com/wavemaker/aws-sns-connector
 
+## Twilio Connector
+
+Twilio is a cloud based communication platform which performs communication functions using its API's. Twilio lets you receive SMS, MMS, WhatsApp, Voice messages or even respond to the messages and many more services.
+
+This connector exposes API's to send messages to and receive messages from Twilio using WaveMaker application.
+
+The Connector sources are found at: https://github.com/wavemaker/twilio-connector
+
+[Click here to see How-to use this Connector in WaveMaker  App](/learn/how-tos/twilio-connector)
+
+## Google Cloud File Storage Connector
+
+Cloud Storage is a flexible, scalable, and durable storage option for your virtual machine instances. Google Cloud File Storage Connector provides simplified APIs to work with google cloud file storage to store and retrieve files from Cloud Storage buckets. Using this Connector, one can  Upload, Download, List and Delete operations of files in Google cloud storage. This connector exposes api to interact with Google cloud file storage from WaveMaker application. 
+
+The Connector sources are found at: https://github.com/wavemaker/google-cloud-file-storage-connector
