@@ -33,6 +33,11 @@ connector.email.default.email.server.username=
 
 - You should specify the values for connector properties in profiles.
 - These externalized properties are used in the connector, If required, you can also read these properties in java service as below:
+
+Import Statement:
+```Java
+import org.springframework.beans.factory.annotation.Value;
+```
   
 ```Java  
 @Value("${email.server.username}")
