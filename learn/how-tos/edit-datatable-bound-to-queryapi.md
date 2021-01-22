@@ -1,11 +1,11 @@
 ---
-title: "Configuring edit functionality for the datatable that is bound to Query API"
+title: "Configuring edit/update functionality for the datatable that is bound to Query API"
 id: ""
 sidebar_label: "Edit functionality for the datatable that is bound to Query API"
 ---
 ---
 
-When the datatable widget is bound to the query API, the records cannot be edited. Incase, you would like to add the edit funtionality, you can achive your requirement using this approach.
+When the datatable widget is bound to the query API, by default we do not support edit/update operation. But you can achive this by customizing the edit/update funtionality using this approach.
 
 :::note
 In this example, we are using Employee table of the HRDB sample database.
