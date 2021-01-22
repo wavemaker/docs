@@ -33,11 +33,21 @@ In this example, we are using an Employee table from the `HRDB` sample database.
 
 [![check edit action in datatable](/learn/assets/edit-action-check.png)](/learn/assets/edit-action-check.png)
 
-6. Ensure to click the Data Table and navigate to the Events tab from the Properties panel. Go to the **On Record Update** event, and select *Javascript* from the dropdown.
+### Create a Database CRUD Variable
+
+6. Create another variable for the Employee table to update the records. To create a **Database CRUD** variable, go to [Variables](/learn/app-development/variables/variables), select **New Variable** and click **Database CRUD**.
+
+7. Select the `HRDB` database from the dropdown and choose the **Employee** table (in this case). And, set the operation as **Update** from the dropdown. Name the variable and click **Done**.
+
+![update record database crud](/learn/assets/update-record-database-crud.png)
+
+### Configuring Events
+
+8. Ensure to click the Data Table and navigate to the Events tab from the Properties panel. Go to the **On Record Update** event, and select *Javascript* from the dropdown.
 
 [![onrecordupdate event](/learn/assets/onrecordupdate-event.png)](/learn/assets/onrecordupdate-event.png)
 
-7. Go to the **Script** tab of the page, and write the following script to update the record in the **On Record Update** method.
+9. Go to the **Script** tab of the page, and write the following script to update the record in the **On Record Update** method.
 
 :::note
 The following example code will update the record.
@@ -62,13 +72,5 @@ Page.executeGetempdataTable1Rowupdate = function($event, widget, row) {
 };
 
 ```
-
-### Create a Database CRUD Variable
-
-8. Create another variable for the Employee table to update the records. To create a **Database CRUD** variable, go to [Variables](/learn/app-development/variables/variables), select **New Variable** and click **Database CRUD**.
-
-9. Select the `HRDB` database from the dropdown and choose the **Employee** table (in this case). And, set the operation as **Update** from the dropdown. Name the variable and click **Done**.
-
-![update record database crud](/learn/assets/update-record-database-crud.png)
 
 This way, you can customize the update action of the Data Table bound to the query variable.
