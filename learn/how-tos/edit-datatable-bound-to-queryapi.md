@@ -1,7 +1,7 @@
 ---
 title: "Configuring edit functionality for the datatable that is bound to Query API"
 id: ""
-sidebar_label: "Setting Blob Filename"
+sidebar_label: "Edit functionality for the datatable that is bound to Query API"
 ---
 ---
 
