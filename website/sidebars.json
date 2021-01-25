@@ -1242,6 +1242,7 @@
     "Release Notes": 
       [
       "wavemaker-release-notes",
+      "wavemaker-known-issues",
 
       {
         "type": "subcategory",
