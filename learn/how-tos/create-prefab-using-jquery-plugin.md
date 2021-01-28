@@ -165,10 +165,11 @@ function initJStreeView() {
 
     /*
      * Method for selecting a node in the tree by id.
+     * preventOpen: If set to true parents of the selected node won't be opened
      */
-    Prefab.selectNode = function(node) {
+    Prefab.selectNode = function(node, preventOpen) {
         if (treeMapInstance) {
-            treeMapInstance.select_node(node);
+            treeMapInstance.select_node(node, false, preventOpen);
         }
     };
 
