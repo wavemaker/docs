@@ -85,3 +85,17 @@ Following are the list of alerts included in WaveMaker
 :::note
 The Alerts listed above keep changing as new things are discovered and might vary over time
 :::
+
+### Configure Notifications for Alerts
+Prometheus uses alert manager to send notifications.In WaveMaker WME Setup alerts are configured through Email channel. Below link explains configuration of alerts using various channels like Slack ,Pageduty etc.                                                             
+https://prometheus.io/docs/alerting/latest/configuration/                                                                                  
+### Configure Alerts using Email Channel.
+
+1) Connect to Platform Instance and edit the file /wm-runtime/conf/alertmanager/config/config.yml by replacing the below place holders                                                                                         
+   - ***@SMTP_HOST@ and @SMTP_PORT@*** with your Corporate SMTP Server Details.                 
+   - ***@SMPT_FROM_EMAIL@ and @SMTP_EMAIL@*** with Corportate EmailAddress ex: notifications@xyz.com                                                                        
+   - ***@SMTP_PASSWORD@*** with valid password.                                                    
+   - Change the Receivers EmailAddress  replace ***'devops-alerts@wavemaker.com'*** with your Corporate EmailAddress ex:devops@xyz.com
+2) Restart AlertManager Container using below commands.                                                                                       
+   - docker stop alertmanager                                                                       
+   - docker start alertmanager
