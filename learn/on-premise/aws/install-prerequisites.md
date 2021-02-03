@@ -9,14 +9,32 @@ sidebar_label: "Install Prerequisites Softwares"
 
 ### The ssh user has privileges(root/sudo) for install/upgrade utility softwares
 
+#### Platform Instance
+
 - If given ssh user has privileges(root/sudo) to install/upgrade.
-- WME Installer will automatically install required softwares.
+- WME Installer will automatically install the required software.
 - Same applies for StudioWorkspace Instance / AppDeployment Instance as well.
 - Internet is not required for Installation in this case.
 
-### The ssh user don't have privileges install/upgrade utility software
+#### StudioWorkspace Instance / AppDeployment Instance
 
-The given ssh user don't have permission to install software Then install below as per operating system.
+- No need to do any configurations. The Platform will do it automatically.
+
+### The ssh user does not have privileges install/upgrade utility software
+
+#### Platform Instance
+
+- No need to do install any software, WME Installer will automatically install the required software, and execute the below commands to provide required permissions to the ssh nonprivileged user.
+
+```bash
+  usermod -aG docker <user>
+  chown -R <user>:<user> /wm-data  
+```
+
+
+#### StudioWorkspace Instance / AppDeployment Instance
+
+The given ssh user does not have permission to install software Then install below as per the operating system.
 
 - Install  wget
 
@@ -30,37 +48,40 @@ sudo apt-get install wget  -y
 sudo apt-get install python3 -y
 ```
 
-- Install docker 18.06.2-ce
+- Install Docker repository
 
 ```bash
     apt-get install apt-transport-https
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
     echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable" > /etc/apt/sources.list.d/docker.list
     apt-get update  
-    apt-get install iptables ca-certificates
+    apt-get install iptables ca-certificates -y
 ```
 
-```bash
-    apt-get install docker-ce=18.06.2~ce~3-0~ubuntu
-```
+- To upgrade or Install the latest version of Docker
+  - Run the following command to list available versions
 
-### Extra configurations on Ubuntu StudioWorkspace Instance / AppDeployment Instance
+  ```bash
+    apt-cache madison docker-ce
+    apt-cache madison docker-ce-cli
+  ```
 
-#### The ssh user has privileges(root/sudo) on Ubuntu StudioWorkspace Instance / AppDeployment Instance
+  - Run the following command to Install the specific version of Docker
 
-- No need to do any configurations. Platform will do it automatically.
-
-#### The ssh user don't have privileges(non sudo users) Ubuntu StudioWorkspace Instance / AppDeployment Instance
+  ```bash
+    sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
+    example: sudo apt-get install docker-ce=5:19.03.13~3-0~ubuntu-xenial docker-ce-cli=5:19.03.13~3-0~ubuntu-xenial containerd.io
+  ```
 
 - If the user given to the Platform don't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.  
-- Have to execute these commands from privileged user.
-  - Add user to docker group.  
-  - Make the user as owner for docker systemd process.
+- Have to execute these commands from privileged users.
+  - Add user to the docker group.  
+  - Make the user as an owner for the docker systemd process.
   - data directory should be owned by the user.
-  - Give permission to manage docker.service, systemctl daemon reload, iptable.
+  - Give permission to manage docker.service, systemctl daemon-reload, iptable.
 
     ```bash
-        usermod -aG <user> docker
+        usermod -aG docker <user>
         mkdir -p /etc/systemd/system/docker.service.d/
         chown -R <user>:<user> /etc/systemd/system/docker.service.d
         chown -R <user>:<user> /data
@@ -69,10 +90,37 @@ sudo apt-get install python3 -y
 
 ## RHEL
 
-Install below softwares on Platform Instance and StudioWorkspace Instance / AppDeployment Instance
+### The ssh user has privileges (root/sudo) or user doesn't have privileges for install/upgrade utility softwares
+
+#### Platform Instance
+
+- If given ssh user has privileges (root/sudo) or the user doesn't have privileges to install/upgrade. WME Installer will automatically install the Docker software.
+- Install below prerequisites in Platform
+
+- update cache
+
+```bash
+   yum update -y
+```
+
+- Install  wget
+
+```bash
+  yum install wget  -y
+```
+
+- Install python3
+
+```bash
+  yum install python3 -y
+```
+
+#### StudioWorkspace Instance / AppDeployment Instance
+
+Install below software on StudioWorkspace Instance / AppDeployment Instance for unprivileged ssh user's
 
 :::note
-Use same version numbers as mentioned.
+Use the same version numbers as mentioned.
 :::
 
 - update cache
@@ -93,16 +141,23 @@ Use same version numbers as mentioned.
   yum install http://ftp.riken.jp/Linux/cern/centos/7/extras/x86_64/Packages/container-selinux-2.10-2.el7.noarch.rpm -y
 ```
 
-- Install docker 18.06.2-ce
+- Install the latest version of Docker
+  - To Install Docker use the following commands
+  
+  ```bash
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-19.03.13-3.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-19.03.13-3.el8.x86_64.rpm
+    sudo yum install docker-ce-cli-19.03.13-3.el8.x86_64.rpm -y
+    sudo yum install containerd.io-1.3.7-3.1.el8.x86_64.rpm -y
+    sudo yum install docker-ce-19.03.13-3.el8.x86_64.rpm -y
+  ```
 
-```bash
-  wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-18.06.2.ce-3.el7.x86_64.rpm
-  yum install docker-ce-18.06.2.ce-3.el7.x86_64.rpm -y
-```
-
-```bash
+  ```bash
+  systemctl enable docker
   systemctl start docker
-```
+  docker --version
+  ```
 
 - Install python3
 
@@ -110,24 +165,27 @@ Use same version numbers as mentioned.
   yum install python3 -y
 ```
 
-### Extra configurations on RHEL StudioWorkspace Instance / AppDeployment Instance
+### Extra configuration on RHEL Platform Instance if ssh user doesn't have privileges(non sudo users)
 
-#### The ssh user has privileges(root/sudo) on RHEL StudioWorkspace Instance / AppDeployment Instance
+- If the user doesn't have privileged access, then provide the below permissions to the user.
 
-- No need to do any configurations. Platform will do it automatically.
+```bash
+  chown -R <user>:<user> /wm-data
+  usermod -aG docker <user>
+```
 
-#### The ssh user don't have privileges(non sudo users) on RHEL StudioWorkspace Instance / AppDeployment Instance
+### Extra configurations on RHEL StudioWorkspace Instance / AppDeployment Instance if ssh user doesn't have privileges(non sudo users)
 
-- If the user given to the Platform don't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
-- Have to execute these commands from privileged user.
-  - Add user to docker group.
-  - Make the user as owner for docker systemd process.
+- If the user given to the Platform doesn't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
+- Have to execute these commands as a privileged user.
+  - Add user to the docker group.
+  - Make a user the owner of the docker systemd process
   - data directory should be owned by the user.
-  - Give permission to manage docker.service, systemctl daemon reload, iptable.
+  - Give permission to manage docker.service, systemctl daemon-reload, iptable.
 
     ```bash
-        usermod -aG <user> docker
+        usermod -aG docker <user>
         chown -R <user>:<user> /usr/lib/systemd/system
         chown -R <user>:<user> /data
         echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
-        ```
+    ```

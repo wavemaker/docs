@@ -11,7 +11,7 @@ Assuming you have already downloaded the patch and kept inside user home folder 
 
 ### Ubuntu
 
-- Execute the following command to extract debian package.
+- Execute the following command to extract Debian package.
 
 ```bash
 dpkg -i  <WME Patch filename>

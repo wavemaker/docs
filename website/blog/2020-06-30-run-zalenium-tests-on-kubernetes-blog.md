@@ -6,8 +6,10 @@ keywords: zalenium, selenium-grid, kubernetes, frequent-releases
 
 WaveMaker product team is able to make [weekly patch releases and, feature packed releases](/learn/wavemaker-release-notes) every alternate months. Typically product releases involve testing of several micro services, API’s and User interface, functionality etc. WaveMaker platform is composed of several such services, and functional testing can be only done by building apps using visual drag-n-drop studio. To ensure the best product quality for releases, our QA process involves building automation tests for APIs as well as UI functionality using Selenium.  
 
+<!--truncate-->
+
 1. UI Tests based on Selenium
-2. API Tests based on RestTemplate 
+2. API Tests based on RestTemplate
 
 We have multiple environments i.e., Development, Staging and Production for WMO and several on-premise WME environment setups for enterprise customer releases. Our development team uses feature branches and when they merge these branches onto the master branch, we have to make sure all the existing automation tests pass. On a regular basis when each feature team performs a merge, we run a full set of automation tests at their beck and call.
 
@@ -17,7 +19,6 @@ Previously, we used to have a handful of server machines where automation tests 
 
 Due to this, We wanted to build a scalable architecture which efficiently utilizes the infrastructure capacity and doesn’t require a lot of Devops effort to scale up and down our automation test setups.
 
-<!--truncate-->
 
 ## Solution
 
