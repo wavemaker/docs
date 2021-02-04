@@ -58,6 +58,7 @@ These are the properties that can be set from the front-end by the app developer
 Widgets to be displayed in the properties panel  - only for inbound properties
 - `Type`: of widget for display;
 - `Data Options`: list of values for user selection. 
+- `Show At`: If a prefab is used in another app or prefab, all UI properties of the prefab are shown when the prefab element is selected in studio design canvas (by default). If a widget is selected in 'Show At' list, then this UI property is shown only if that widget is selected.
 
 #### Data Options
 :::note
