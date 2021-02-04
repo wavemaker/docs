@@ -3,7 +3,7 @@ title: WaveMaker Known Issues
 id: ""
 sidebar_label: "WaveMaker Known Issues"
 ---
-Below is the list of known issues.
+Below is the list of known issues reported against various releases of WaveMaker.
 
 ## Current issues under progress
 
