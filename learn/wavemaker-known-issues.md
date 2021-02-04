@@ -3,7 +3,7 @@ title: WaveMaker Known Issues
 id: ""
 sidebar_label: "WaveMaker Known Issues"
 ---
-Find what's new in WaveMaker. See information related to bug fixes, new features, and improvements from WaveMaker.
+Below is the list of known issues.
 
 ## Current issues under progress
 
