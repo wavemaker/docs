@@ -4,9 +4,9 @@ id: ""
 sidebar_label: "WaveMaker Known Issues"
 ---
 ---
-Our team has been hard at work improving WaveMaker for you. We release updates every week with bug fixes and some great new features on major releases - learn more about them [here](/learn/wavemaker-release-notes).
+WaveMaker release updates every week with bug fixes, and add new features on major releases. Learn more about them [here](/learn/wavemaker-release-notes).
 
-Below is the list of known issues reported against the releases. We document the issues in an issue tracker, and we streamline them. In this area, learn about the issues we are currently working on with workarounds and expected release details.
+Below is the list of known issues reported against the releases. We document these issues, and we streamline them. Learn about the issues we are currently working on with workarounds and expected patch release details.
 
 ## Known Issue Tracker
 
