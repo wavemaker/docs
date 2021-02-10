@@ -134,18 +134,63 @@ Also add this Custom Filter in **general-options.json** file.
 ```
 Once this filter is added in **general-options.json** file, security custom-filter will be automatically added into **project-security.xml** file.
 
+:::note
+If the security **custom-filter** is not added in **project-security.xml** file then place the below code in **project-security.xml** file below the default **security:custom-filters**
+
+```Java
+<security:custom-filter position="LAST" ref="otpFilter"/>
+```
+:::
+
 2. Create Variable for the JavaService methods written in **Step2**(both *sendOTP* and *validateOTP* API's using twilio-connector).
 
 3. Create and design an **OTPPage** to send OTP to the device or email. 
 
 [![](/learn/assets/connector/otppage.png)](/learn/assets/connector/otppage.png)
 
-In the above image, *Send OTP* button triggeres the *sendOTP* variable created. OnSuccess of this variable open the dialog to accept OTP.
+In the above image, *Send OTP* button triggeres the *sendOTP* variable created. Bind the variable data parameters in the variable dialog. OnSuccess of this variable open the dialog to accept OTP.
+
+:::example
+Below code helps you to open the ValidateOTP dialog only when sendOTP response is true.
+```js
+Page.sendOTPCodeonSuccess = function(variable, data) {
+    //If the variable response is success then opening the OTP verification dialog.
+    if (data.value) {
+        Page.Widgets.dialog1.open();
+    } else {
+        App.Actions.appNotification.setMessage("Enter valid PhoneNumber");
+        App.Actions.appNotification.invoke();
+    }
+};
+```
+:::
 
 Also Design the dialog to accept OTP code and validate the OTP.
 
 [![](/learn/assets/connector/otpvalid.png)](/learn/assets/connector/otpvalid.png)
 
-In the above image, *Validate OTP* button triggeres the *validateOTP* variable created. OnSuccess of this variable close the dialog and check the *securityInfo.userAttributes.otpverification* if value is *success* then navigate to landing page.
+In the above image, *Validate OTP* button triggeres the *validateOTP* variable created. Bind the variable data parameters in the variable dialog. OnSuccess of this variable close the dialog and check the *securityInfo.userAttributes.otpverification* if value is *success* then navigate to landing page.
+
+:::example
+
+Below code helps you to close the ValidateOTP dialog and check the userAttribute, if success then navigates to the landing page.
+```js
+Page.validateOTPonSuccess = function(variable, data) {
+    if (data.value) {
+        Page.Widgets.dialog1.close();  //Close validate OTP dialog
+        //Invoking the security service getSecurityInfo variable and verifying the userAttribute
+        Page.Variables.getSecurityInfo.invoke({}, function(data) {
+            if (data.userInfo.userAttributes.otpverification == "success") {
+                //Reload the page once OTP is validated which will go to the landing page.
+                location.reload();      
+            }
+        });
+    } else {
+        App.Actions.appNotification.setMessage("Enter valid OTP");
+        App.Actions.appNotification.invoke();
+    }
+};
+```
+:::
 
 4. Now preview the app, enter login credentials in *Login* page. Once authentication is successful, it will be redirected to *OTPPage*. Enter phoneNumber or email and select the channel and then click on *Send OTP* button. A dialog will be popped up to validate OTP. Once OTP is validated you will be redirected to user landing page.
