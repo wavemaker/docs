@@ -122,7 +122,7 @@ Add the bean in **project-user-spring.xml** file.
 ```Java
 <bean id="otpFilter" name="otpFilter" class="com.security.service.filter.OTPFilter"/>
 ```
-Also add this Custom Filter in **general-options.json** file.
+Also add below Custom Filter in **general-options.json** file.
 ```Java
 "customFilterList": [
 		{
@@ -132,14 +132,13 @@ Also add this Custom Filter in **general-options.json** file.
 		}
 	]
 ```
-Once this filter is added in **general-options.json** file, security custom-filter will be automatically added into **project-security.xml** file.
-
-:::note
-If the security **custom-filter** is not added in **project-security.xml** file then place the below code in **project-security.xml** file below the default **security:custom-filters**
-
+Once this filter is added in **general-options.json** file, open security dialog and click on save. Once the save is clicked platform will automatically add below code in **project-security.xml** file.
 ```Java
 <security:custom-filter position="LAST" ref="otpFilter"/>
 ```
+
+:::note
+If you donot want to open and save the security settings then add the above code in **project-security.xml** below the default **security:custom-filter**.
 :::
 
 2. Create Variable for the JavaService methods written in **Step2**(both *sendOTP* and *validateOTP* API's using twilio-connector).
