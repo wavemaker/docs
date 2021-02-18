@@ -18,5 +18,5 @@ Below is the list of known issues reported against the release version. We docum
 |Issue description|Occured since|Expected to fix by|Status|Workaround|
 |---|---|---|---|---|
 |HQL grammar exception observed for queries with "Group by" clause when invoked using Java Service.|v10.6 | v10.6.5 <td bgcolor="FED788"> In-progress|-  |
-|When deploying an app with an Angular production profile, a few JS callings fail with a 403 error. This issue occurs when the app contains a Data Table widget.| v10.6|v10.6.5 <td bgcolor="FED788"> In Progress|-|
+|When deploying an app with an Angular production profile, a few JS calls fail with a 403 error. This issue occurs when the app contains a Data Table widget.| v10.6|v10.6.5 <td bgcolor="FED788"> In Progress|-|
 |Query API does not return Blob data.| v10.6|v10.6.4 <td bgcolor="82E0AA"> Fixed|-|
