@@ -5,7 +5,10 @@ id: ""
 Find what's new in WaveMaker. See information related to bug fixes, new features, and improvements from WaveMaker.
 
 ---
-WaveMaker constantly works on bringing new features and improvements to the product. Follow our [team blog](/learn/blog) to see what's happening in WaveMaker. If you notice a bug, report to us at [support](mailto:support@wavemaker.com). The fixes will be specified in the release notes.
+
+WaveMaker always works on bringing new features and improvements to the product. Follow our [team blog](/learn/blog) to see what's happening in WaveMaker.
+
+If you notice a bug and want to report it to us, please contact [support](mailto:support@wavemaker.com). We will mention your fixes in the release notes, and you can also track some of the known issues documented [here](/learn/wavemaker-known-issues).
 
 ## Current Release Details
 
@@ -13,6 +16,7 @@ WaveMaker constantly works on bringing new features and improvements to the prod
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
+|[WaveMaker v10.6.4](/learn/wavemaker-release-notes/v10-6-4)|Bug fixes |18 February 2021 | -|-|
 |[WaveMaker v10.6.3](/learn/wavemaker-release-notes/v10-6-3)|Bug fixes |04 February 2021 | -|-|
 |[WaveMaker v10.6.2](/learn/wavemaker-release-notes/v10-6-2)|Bug fixes |18 January 2021 | v10.6.2|25 January 2021|
 |[WaveMaker v10.6.1](/learn/wavemaker-release-notes/v10-6-1)|Bug fixes |21 December 2020 |v10.6.1, v10.6.0|24 December 2020|
