@@ -93,6 +93,31 @@ The following annotation needs to be added in `project-user-spring.xml` file:
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vRyRnyxwtJeQye7djWn32axB7krcI7l8v52snl8k9whVxm4Zt4ILILc0mprQW0Mor-gFQU7n9iLV1e0/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
+## Scheduling multiple Java Services to trigger at certain intervals
+
+
+In case we want to schedule multiple java services to trigger at certain intervals we should follow the below approach
+
+1. Create multiple java Services
+2. Inside project-user-spring.xml file add bean class for all the created java services
+3. Provide appropriate cron value for the created java services with appropriate method inside project-user-spring.xml file
+
+Refer below example
+
+```
+<bean class="com.testschedulerandemail.simplejavaservice.SimpleJavaService" scope="singleton" lazy-init="true" id="SimpleJavaService"/>
+<bean class="com.testschedulerandemail.simplejavaservice.controller.SimpleJavaController" id="SimpleJavaServiceController"/>
+<bean class="com.testschedulerandemail.testsimplejavaservice.TestSimpleJavaService" scope="singleton" lazy-init="true" id="TestSimpleJavaService"/>
+<bean class="com.testschedulerandemail.testsimplejavaservice.controller.TestSimpleJavaController" id="TestSimpleJavaServiceController"/>
+
+<task:scheduled-tasks >
+   <task:scheduled cron="*/10 * * * * ?" method="sampleJavaOperation" ref="SimpleJavaService"/>
+</task:scheduled-tasks>
+<task:scheduled-tasks>
+   <task:scheduled cron="*/20 * * * * ?" method="testOperation" ref="SimpleTestJavaService"/>
+</task:scheduled-tasks>
+```
+
 ## See Also
 
 [How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)  
