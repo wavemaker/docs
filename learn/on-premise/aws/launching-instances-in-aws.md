@@ -143,7 +143,7 @@ Example :
           mkfs -t ext4 /dev/xvdc
 ```
 
-- Use the mkdir command to create a mount point directory for the volume. The mount point is where the volume is located in the file system tree and where you read and write files to after you mount the volume. for wme-setup create two directories. Create directories using the following commands.
+- Use the `mkdir` command to create a mount point directory for the volume. The mount point is where the volume is located in the file system tree and where you read and write files after you mount the volume. For WME-Setup, create two directories using the following commands.
 
 ```bash
 mkdir /wm-data /wm-runtime

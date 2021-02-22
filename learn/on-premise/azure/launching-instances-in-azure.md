@@ -7,19 +7,19 @@ sidebar_label: "Prepare Infrastructure"
 
 ## Prerequisites
 
-- User have to an access in azure to create VM and other resources for more details refer [Azure resource documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview).
-- Assuming an Azure Virtual Network (VNet) is already created or existed. an Azure Virtual Network (VNet) is a representation of your own network in the cloud.for creation of virtual network visit [Azure virtual network creation](https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal).
+- Access to Azure to create VM and other resources. For more details, see [Azure resource documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview).
+- An Azure Virtual Network (VNet) represents your network in the cloud. We are assuming an Azure Virtual Network (VNet) is already built or existed. For the creation of a virtual network, see [Azure virtual network creation](https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal).
 
 ## Creation of Network Security Groups
 
-- For creating network security groups refer [creating NSG in Azure](https://docs.microsoft.com/en-us/azure/virtual-network/manage-network-security-group).
-- For WME setup in Azure require two security groups,are
+- For creating network security groups, see [Creating NSG in Azure](https://docs.microsoft.com/en-us/azure/virtual-network/manage-network-security-group).
+- For WME setup in Azure, it requires two security groups , including:
   - [WME-SG-Platform-Public-and-Internal](#creating-network-security-group-for-platform-virtual-machine)
-  - [WME-SG-Workspace-Internal](#creation-of-network-security-group-for-external-or-workspaceappdeployment-virtual-machine)
+  - [WME-SG-Workspace-Internal](#creation-of-network-security-group-for-external-virtual-machine)
 
 ### Creating network security group for platform virtual machine
 
-- Provide basic information name and region by selecting the resource group.
+- Provide necessary information, including name and region, by selecting the resource group.
 
 [![basic](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-basic-details.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-basic-details.png)
 
@@ -27,27 +27,27 @@ sidebar_label: "Prepare Infrastructure"
 
 [![tags](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-tags.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-tags.png)
 
-- Select Create for creating network security group for a platform virtual machine with the provided information.
+- Create a network security group for a platform virtual machine with the provided information.
 
 [![review](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-review-and-create.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-review-and-create.png)
 
-- After creating the network security group under settings select inbound security rules, create a rule for developer network access and select protocol TCP and add a rule to network security group.
+- After creating the network security group under settings, select inbound security rules, create a rule for developer network access and select protocol TCP and add a rule to a network security group.
 
 [![ports public access](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-for-public-access.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-for-public-access.png)
 
-- If you want ssh access to only desired networks create another rule and provide your network ips for ssh access.
+- If you want ssh access to only desired networks, create another rule and provide your network IPs for ssh access.
 
-- Create another rule to open additional ports for access Platform Virtual Machine from the Studio Workspace /App Deployment virtual machine. Next,select a destination.
+- Create another rule to open additional ports to access a Platform Virtual Machine from the Studio Workspace /App Deployment virtual machine. Next, select a destination.
 
-- If you select a destination as a virtual network the security rule is applied to virtual machines whatever in the virtual network of the platform virtual machine,or if you select destination as application security group, it applies to the only VMs which are connect to that application security group, or else if you select destination as Ip Addresses the rules are apply to respected IP address resource. for more details visit [filter network traffic in azure](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic).
+- If you select the destination as a virtual network, the security rule is applied to Virtual Machines irrespective of the virtual network of the platform Virtual Machine. If you choose the destination as an application security group, it applies only to the VMs connected to that application security group. If you select the destination as IP Addresses, the rules apply to the respected IP address resources. For more information, see [Filter Network Traffic in Azure](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic).
 
-- Next select protocol as TCP and select action allow. Provide priority is after the public access ports and select save and add the rule to the network security group.
+- Next, select protocol as TCP and select action allow. Provide priority is after the public access ports and select save and add the rule to the network security group.
 
 [![ports internal](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-internal-rule.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-internal-rule.png)
 
 ### Creation of network security group for Workspace/AppDeployment virtual machine
 
-- Provide basic information name and region by selecting the resource group.
+- Provide necessary information, including name and region, by selecting the resource group.
 
 [![basic](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-basic.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-basic.png)
 
@@ -55,12 +55,13 @@ sidebar_label: "Prepare Infrastructure"
 
 [![tags](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-tags.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-tags.png)
 
-- Select Create for creating network security group for a platform virtual machine with the provided information.
+- Create network security group for a platform virtual machine with the provided information.
 
 [![review](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-review-and-create.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-review-and-create.png)
 
 - Create a security rule to open additional ports for access from the Platform Virtual Machine. Select a destination.based on the destination it applies the rules to virtual machines.
-- If you select a destination as a virtual network the security rule is applied to virtual machines whatever in the virtual network of the platform virtual machine,or if you select destination as application security group, it applies to the only VMs which are connect to that application security group, or else if you select destination as Ip Addresses the rules are apply to respected IP address resource. for more details visit [filter network traffic in azure](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic).
+
+- If you select the destination as a virtual network, the security rule is applied to Virtual Machines irrespective of the virtual network of the platform Virtual Machine. If you choose the destination as an application security group, it applies only to the VMs connected to that application security group. If you select the destination as IP Addresses, the rules apply to the respected IP address resources. For more information, see [Filter Network Traffic in Azure](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic).
 
 [![ports internal](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-internal-rule.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-internal-rule.png)
 
@@ -68,7 +69,7 @@ sidebar_label: "Prepare Infrastructure"
 
 ## Create a Virtual Machine for WME Platform
 
-- Select ubuntu 16.04 image,4Vcpu, and 16 Gib memory for wme platform virtual machine select the same resource group and region of the virtual network and network security group.
+- Select Ubuntu 16.04 image, 4 vCPU, and 16 GiB (gigabyte) memory. For WME platform virtual machine, select the same resource group and region of the virtual network and network security group.
 
 [![region](/learn/assets/wme-setup/wme-setup-in-azure/vm-platform-basic.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-platform-basic.png)
 
@@ -102,9 +103,9 @@ sidebar_label: "Prepare Infrastructure"
 
 ## Create a Virtual Machine for Studio Workspace/App Deployment Virtual Machine
 
-Applies for workspace Virtual Machine/AppDeployment Virtual Machine
+Applies to workspace Virtual Machine/AppDeployment Virtual Machine
 
-- Select ubuntu 16.04 image,4Vcpu, and 16 Gib memory for wme platform virtual machine select the same resource group and region of the virtual network and network security group.
+- Select the Ubuntu 16.04 image, 4 vCPU, 16 GiB (gigabyte) memory for the WME platform virtual machine, and select the same resource group and region of the virtual network and network security group.
 
 [![region](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-basic.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-basic.png)
 
@@ -112,19 +113,19 @@ Applies for workspace Virtual Machine/AppDeployment Virtual Machine
 
 [![ssh](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-ssh.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-ssh.png)
 
-- At disk section create a disk for external usage provide minimum 100GB size with premium SSD disk type.
+- Create a disk for external usage at the disk section and provide a minimum of 100GB size with premium SSD disk type.
 
 [![disks](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-disks.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-disks.png)
 
-- At the networking section provide created virtual network details at the virtual network and at NIC network security group select advanced options provide network security group of the Studio Workspace Virtual Machine/App Deployment Virtual Machine.
+- At the networking section, provide the created-virtual network details for the virtual network. At the NIC network security group, select advanced options to give the network security group of Studio Workspace Virtual Machine/App Deployment Virtual Machine.
 
 [![networks](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-network.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-network.png)
 
-- Configure monitoring and management options for virtual machine.
+- Configure monitoring and management options for the virtual machine.
 
 [![monitor](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-monitoring.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-monitoring.png)
 
-- If required add additional configuration, agents or scripts for virtual machine.
+- If required, add additional configuration, agents, or scripts for the virtual machine.
 
 [![advanced](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-advanced.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-advanced.png)
 
@@ -132,7 +133,7 @@ Applies for workspace Virtual Machine/AppDeployment Virtual Machine
 
 [![tags](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-tags.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-tags.png)
 
-- After reviewing the virtual machine select creation option for creating a virtual machine.
+- After reviewing the virtual machine, select the creation option for creating a virtual machine.
 
 [![review](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-review-and-create.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-review-and-create.png)
 
@@ -140,14 +141,14 @@ Applies for workspace Virtual Machine/AppDeployment Virtual Machine
 
 ### Mounting Disk in Platform Virtual Machines
 
-- For ssh into the platform virtual machine use the following command.
-- If you using the ssh key method for login use the following command.
+- For ssh into the platform virtual machine, use the following command.
+- If you are using the ssh key method for login, use the following command.
 
 ```bash
 ssh -i /path/to/ssh-privatekey username@ipaddress
 ```
 
-- If you using the ssh username and password for login use the following command.
+- If you are using the ssh username and password for login, use the following command.
 
 ```bash
 ssh username@ipaddress
@@ -159,7 +160,7 @@ ssh username@ipaddress
 lsblk
 ```
 
-- New volumes are raw block devices, and you must create a file system on them before you can mount and use them. For creating file systems use following command.
+- New volumes are raw block devices, and you must create a file system on them before you can mount and use them. For creating file systems, use the following command.
 
 ```bash
 Command : mkfs -t ext4 /dev/<block-device-name_1>
@@ -169,7 +170,7 @@ Example :
       mkfs -t ext4 /dev/sdc
 ```
 
-- Use the mkdir command to create a mount point directory for the volume. The mount point is where the volume is located in the file system tree and where you read and write files to after you mount the volume. for wme-setup create two directories. create directories using the following commands.
+- Use the `mkdir` command to create a mount point directory for the volume. The mount point is where the volume is located in the file system tree and where you read and write files after you mount the volume. For WME-Setup, create two directories using the following commands.
 
 ```bash
 mkdir /wm-data /wm-runtime
@@ -195,7 +196,7 @@ Example :
 blkid
 ```
 
-- Entry the UUID of the disks in fstab.use the following format.
+- To enter the UUID of the disks in fstab, use the following format.
 
 ```bash
 UUID=your-block-device-UUID      /wm-data        ext4     defaults ,nofail  0  2
@@ -207,17 +208,17 @@ UUID=<block-device_1-UUID>       /wm-runtime     ext4     defaults ,nofail  0  2
 ### Mounting Disks in Studio Workspace Virtual Machine/App Deployment Virtual Machine
 
 :::note
-Applies for StudioWorkspace Virtual Machine/AppDeployment Virtual Machine
+Applies for StudioWorkspace Virtual Machine/AppDeployment Virtual Machine.
 :::
 
-- For ssh into the platform virtual machine use the following command.
-- If you using the ssh key method for login use the following command.
+- For ssh into the platform virtual machine, use the following command.
+- If you are using the ssh key method for login, use the following command.
 
 ```bash
 ssh -i /path/to/ssh-privatekey username@ipaddress
 ```
 
-- If you using the ssh username and password for login use the following command.
+- If you are using the ssh username and password for login, use the following command.
 
 ```bash
 ssh username@ipaddress
@@ -229,14 +230,14 @@ ssh username@ipaddress
 lsblk
 ```
 
-- New volumes are raw block devices, and you must create a file system on them before you can mount and use them. For creating file systems use following command.
+- New volumes are raw block devices, and you must create a file system on them before you can mount and use them. For creating file systems, use the following command.
 
 ```bash
 Command: mkfs -t ext4 /dev/< block-device-name >
 Example: mkfs -t ext4 /dev/sdc
 ```
 
-- Use the mkdir command to create a mount point directory for the volume. The mount point is where the volume is located in the file system tree and where you read and write files to after you mount the volume. for wme-setup create two directories. create directories using the following commands.
+- Use the `mkdir` command to create a mount point directory for the volume. The mount point is where the volume is located in the file system tree and where you read and write files after you mount the volume. For WME-Setup, create two directories using the following commands.
 
 ```bash
 mkdir /data
@@ -251,14 +252,14 @@ Example: mount /dev/sdc  /data
 
 [![volume mounting](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-mounting-volumes.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-mounting-volumes.png)
 
-- To mount an attached Azure Disks on every system reboot, add an entry for the device to the /etc/fstab file.
+- To mount an attached Azure Disks on every system reboot, add an entry for the device to the `/etc/fstab` file.
 - Take UUID of disks for identification by using the command.
 
 ```bash
 blkid
 ```
 
-- Entry the UUID of the disks in fstab. use the following format.
+- To entery the UUID of the disks in fstab, use the following format.
 
 ```bash
 UUID=your-block-device-UUID      /data     ext4     defaults ,nofail  0  2
