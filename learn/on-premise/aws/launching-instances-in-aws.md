@@ -69,7 +69,7 @@ sidebar_label: "Prepare Infrastructure"
     2. For Network, choose the same VPC that you created for security groups.
     3. For Subnet, select the desired Subnet in any Availability Zone.
 
-![instance configurations](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)
+[![instance configurations](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)
 
 - Add storage 50 GiB for the root volume.
 - 50 GiB for wm-runtime
@@ -109,7 +109,7 @@ sidebar_label: "Prepare Infrastructure"
     2. For Network, choose the same VPC that you created for security groups.
     3. For Subnet, select the desired Subnet in any Availability Zone.
 
-[!instance configuration[](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)
+[![instance configuration](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)
 
 - Add storage 150 GiB for data.
 
