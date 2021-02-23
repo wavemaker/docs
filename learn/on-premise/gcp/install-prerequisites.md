@@ -73,7 +73,7 @@ sudo apt-get install python3 -y
     example: sudo apt-get install docker-ce=5:19.03.13~3-0~ubuntu-xenial docker-ce-cli=5:19.03.13~3-0~ubuntu-xenial containerd.io
   ```
 
-- If the user given to the Platform don't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.  
+- If the user given to the Platform doesn't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.  
 - Have to execute these commands from privileged users.
   - Add user to the docker group.  
   - Make the user as an owner for the docker systemd process.
@@ -85,7 +85,7 @@ sudo apt-get install python3 -y
         mkdir -p /etc/systemd/system/docker.service.d/
         chown -R <user>:<user> /etc/systemd/system/docker.service.d
         chown -R <user>:<user> /data
-        echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+        echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
         ```
 
 ## RHEL
@@ -108,6 +108,31 @@ sudo apt-get install python3 -y
 ```bash
   yum install wget  -y
 ```
+
+- Install container-selinux for RHEL 7 version only
+
+```bash
+  yum install http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-1.el7_6.noarch.rpm -y
+```
+
+- Install the latest version of Docker
+
+  - To Install Docker in RHEL 7 use the following commands
+  
+  ```bash
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-19.03.13-3.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-19.03.13-3.el7.x86_64.rpm
+    sudo yum install docker-ce-cli-19.03.13-3.el7.x86_64.rpm -y
+    sudo yum install containerd.io-1.3.7-3.1.el7.x86_64.rpm -y
+    sudo yum install docker-ce-19.03.13-3.el7.x86_64.rpm -y
+  ```  
+
+  ```bash
+  systemctl enable docker
+  systemctl start docker
+  docker --version
+  ```
 
 - Install python3
 
@@ -142,7 +167,7 @@ Use the same version numbers as mentioned.
 ```
 
 - Install the latest version of Docker
-  - To Install Docker use the following commands
+  - To Install Docker in RHEL 8 use the following commands
   
   ```bash
     wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el8.x86_64.rpm
@@ -152,6 +177,17 @@ Use the same version numbers as mentioned.
     sudo yum install containerd.io-1.3.7-3.1.el8.x86_64.rpm -y
     sudo yum install docker-ce-19.03.13-3.el8.x86_64.rpm -y
   ```
+
+  - To Install Docker in RHEL 7 use the following commands
+  
+  ```bash
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-19.03.13-3.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-19.03.13-3.el7.x86_64.rpm
+    sudo yum install docker-ce-cli-19.03.13-3.el7.x86_64.rpm -y
+    sudo yum install containerd.io-1.3.7-3.1.el7.x86_64.rpm -y
+    sudo yum install docker-ce-19.03.13-3.el7.x86_64.rpm -y
+  ```  
 
   ```bash
   systemctl enable docker
@@ -187,5 +223,5 @@ Use the same version numbers as mentioned.
         usermod -aG docker <user>
         chown -R <user>:<user> /usr/lib/systemd/system
         chown -R <user>:<user> /data
-        echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+        echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
     ```

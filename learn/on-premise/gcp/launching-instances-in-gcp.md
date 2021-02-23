@@ -188,7 +188,7 @@ Command : mkfs -t ext4 /dev/<block-device-name>
 Example : mkfs -t ext4 /dev/sdc  
 ```
 
-- Use the mkdir command to create a mount point directory for the volume. The mount point is where the volume is located in the file system tree and where you read and write files to after you mount the volume. for wme-setup create two directories. create directories using the following commands.
+- Use the `mkdir` command to create a mount point directory for the volume. The mount point is where the volume is located in the file system tree and where you read and write files after you mount the volume. For WME-Setup, create two directories using the following commands.
 
 ```bash
 mkdir /data
