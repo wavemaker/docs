@@ -5,9 +5,10 @@ id: ""
 
 In this section we will be seeing how to validate Google Login using Custom Security within WaveMaker App and to access Gmail API. Steps to attain this include:
 
-1. Using OAuth Prefab for Google to get the access token for the Google user to access Google API – Gmail API
-2. To validate the login through Google, a Java Service will be created which will override WMCustomAuthenticationManager
-3. The access token from OAuth prefab will be used as an id in the WMUser object returned by the Java Service.
+1. Using OAuth Prefab for Google to get the access token for the Google user to access Google API – oauth2 API
+2. Use the spring-social-google dependency from springframework.   
+3. To validate the login through Google, a Java Service will be created which will override WMCustomAuthenticationManager
+4. The access token from OAuth prefab will be used as an id in the WMUser object returned by the Java Service.
 
 We have used the following Java code to accomplish this.
 
