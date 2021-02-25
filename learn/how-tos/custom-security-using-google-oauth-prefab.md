@@ -86,14 +86,13 @@ We have used the following Java code to accomplish this.
         }}
   ```
     
-- On Load JavaScript for Google Prefab
-    
-    Page.GoogleOAuth1Load = function (widget) {
-        angular.$watch('accesstoken', function (newVal) {
-            if (newVal) {
-                Page.Actions.googleLoginVar.invoke();
-            }
-        });
-    
-
+- Create an action Login variable. In our example we have named it  
+  "**googleLoginAction**".  In the JavaScript Onaccesstokenfetch event for Google Prefab, add the JS snippset below:
+  
+  ```
+  Page.GoogleOAuth1Accesstokenfetch = function($event, $data) {
+        console.log($data);
+        Page.Actions.googleLoginAction.invoke();
+  };
+  ```
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTo_CJ89BLzR9PRTdaB-ezz595YdJ6eswAl1_b5l2ZyFDJUC1AhJjf9AMypd62cdg4M-XQGe7dbP7O7/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="708" height="560" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
