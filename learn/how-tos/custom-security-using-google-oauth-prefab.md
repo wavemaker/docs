@@ -58,7 +58,7 @@ We have used the following Java code to accomplish this.
 
     
 - Java Class – Method Definition :
-    
+    ```
     @ExposeToClient
     public class MyAuthenticationManager implements WMCustomAuthenticationManager {
         private static final Logger logger = LoggerFactory.getLogger(MyAuthenticationManager.class);
@@ -81,6 +81,7 @@ We have used the following Java code to accomplish this.
             }
             return user;
         }}
+  ```
     
 - On Load JavaScript for Google Prefab
     
