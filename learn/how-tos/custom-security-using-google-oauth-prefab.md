@@ -63,21 +63,24 @@ We have used the following Java code to accomplish this.
     public class MyAuthenticationManager implements WMCustomAuthenticationManager {
         private static final Logger logger = LoggerFactory.getLogger(MyAuthenticationManager.class);
         @Autowired
-          private SecurityService securityService;
-          private static final String GOOGLE = "google”;
+        private SecurityService securityService;
+        private static final String GOOGLE = "google”;
         @Override
-         public WMUser authenticate(AuthRequestContext authRequestContext) {
+        public WMUser authenticate(AuthRequestContext authRequestContext) {
             HttpServletRequest httpServletRequest = authRequestContext.getHttpServletRequest();
+            // Here we check id requested URI is for Spring security check 
             boolean isSecurityUrl = httpServletRequest.getRequestURI().endsWith("j_spring_security_check");
             WMUser user = null;
-            //String securityProvider = httpServletRequest.getParameter("j_username");
+            // Token retrieved from Google is used as password in spring security framework
             String token = httpServletRequest.getParameter("j_password"); //getting the token from Prefab
-            logger.info(" --------- Token is "+token);
+            logger.info(" --------- Token from Google is is "+token);
             if (isSecurityUrl && token != null) {
-                   Google google = new GoogleTemplate(token); //passing the token to Google
-                   Person person = google.plusOperations().getGoogleProfile();
-                   logger.info("----------------- -- - --- -----------"+ person.getDisplayName());
-                   user = new WMUser(token, person.getDisplayName(), Arrays.asList("user")); // returning the logged in user object    
+                    Google google = new GoogleTemplate(token); //passing the token to Google
+                    UserInfo person = google.oauth2Operations().getUserinfo();
+                    logger.info("Google Person email" + person.getEmail());
+                    username= person.getEmail();                    
+                    user = new WMUser(person.getEmail(), roles);  // returning the logged in user object
+                    user.setUserId(token);    // set user id for WM user
             }
             return user;
         }}
