@@ -12,31 +12,50 @@ In this section we will be seeing how to validate Google Login using Custom Secu
 We have used the following Java code to accomplish this.
 
 - Dependency in _pom.xml_ file
-    
-    <dependency>
-                <groupId>org.springframework.social</groupId>
-                <artifactId>spring-social-google</artifactId>
-                <version>1.0.0.RELEASE</version>
-    </dependency>
+        
+        <dependency>
+            <groupId>com.github.spring-social</groupId>
+            <artifactId>spring-social-google</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-web</artifactId>
+            <version>1.1.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-core</artifactId>
+            <version>1.1.6.RELEASE</version>
+        </dependency>
     
 - Imports of Java Service – class definition:
-    
+
+```
     package com.customsecurityhowto.myauthenticationmanager;
-    import javax.servlet.http.HttpServletRequest;
+    import com.tgz_users.tecnogaz.models.query.CheckForValidUserResponse;
+    import com.tgz_users.tecnogaz.models.query.GetUserRolesResponse;
+    import com.tgz_users.tecnogaz.service.TecnogazQueryExecutorService;
+    import com.wavemaker.runtime.security.AuthRequestContext;
+    import com.wavemaker.runtime.security.SecurityService;
+    import com.wavemaker.runtime.security.WMCustomAuthenticationManager;
+    import com.wavemaker.runtime.security.WMUser;
+    import com.wavemaker.runtime.service.annotations.ExposeToClient;
     import org.slf4j.Logger;
     import org.slf4j.LoggerFactory;
     import org.springframework.beans.factory.annotation.Autowired;
-    import com.wavemaker.runtime.security.SecurityService;
-    import com.wavemaker.runtime.service.annotations.ExposeToClient;
-    import com.wavemaker.runtime.service.annotations.HideFromClient;
-    import javax.servlet.http.HttpServletRequest;
-    import java.util.Arrays;
-    import com.wavemaker.runtime.security.WMCustomAuthenticationManager;
-    import com.wavemaker.runtime.security.WMUser;
+    import org.springframework.data.domain.PageRequest;
+    import org.springframework.data.domain.Pageable;
     import org.springframework.social.google.api.Google;
     import org.springframework.social.google.api.impl.GoogleTemplate;
-    import org.springframework.social.google.api.plus.Person;
-    import com.wavemaker.runtime.security.AuthRequestContext;
+    import org.springframework.social.google.api.oauth2.UserInfo;import javax.servlet.http.HttpServletRequest;
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.List;   
+      
+```
+
+
     
 - Java Class – Method Definition :
     
