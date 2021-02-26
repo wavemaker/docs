@@ -65,16 +65,34 @@ Upgrade or Install the latest version of Docker.
   example: rpm -e docker-ce.x86_64
 ```
 
-- For installing Docker, use the following commands.
+- Install container-selinux for RHEL 7 version only
 
 ```bash
-  wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el8.x86_64.rpm
-  wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-19.03.13-3.el8.x86_64.rpm
-  wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-19.03.13-3.el8.x86_64.rpm
-  sudo yum install docker-ce-cli-19.03.13-3.el8.x86_64.rpm -y
-  sudo yum install containerd.io-1.3.7-3.1.el8.x86_64.rpm -y
-  sudo yum install docker-ce-19.03.13-3.el8.x86_64.rpm -y
+  yum install http://ftp.riken.jp/Linux/cern/centos/7/extras/x86_64/Packages/container-selinux-2.10-2.el7.noarch.rpm -y
 ```
+
+- Install the latest version of Docker
+  - To Install Docker in RHEL 8 use the following commands
+  
+  ```bash
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-19.03.13-3.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-19.03.13-3.el8.x86_64.rpm
+    sudo yum install docker-ce-cli-19.03.13-3.el8.x86_64.rpm -y
+    sudo yum install containerd.io-1.3.7-3.1.el8.x86_64.rpm -y
+    sudo yum install docker-ce-19.03.13-3.el8.x86_64.rpm -y
+  ```
+
+  - To Install Docker in RHEL 7 use the following commands
+  
+  ```bash
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-19.03.13-3.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-19.03.13-3.el7.x86_64.rpm
+    sudo yum install docker-ce-cli-19.03.13-3.el7.x86_64.rpm -y
+    sudo yum install containerd.io-1.3.7-3.1.el7.x86_64.rpm -y
+    sudo yum install docker-ce-19.03.13-3.el7.x86_64.rpm -y
+  ```  
 
 ```bash
     systemctl enable docker
