@@ -144,8 +144,8 @@ Now that we know the filters which can be applied, let us check how to apply the
 6) Finally, this is what it should look like.                                                   
 
     ![Kibana Home Page](/learn/assets/wme-setup/wme-observability/kibana/kibana-final.png)                                                                                        
-     **Usecases**                                                                               
-      1: Accessing Specific MicroService logs from Kibana.
+ ## Some Common Usecases                                                                           
+ 1: Accessing Specific MicroService logs from Kibana.
     - Select Discover from the Kibana and add the Filter by selecting  **tag.keyword** , an drop down with list of microservices is displayed, select the microservice ex:container-services and save to apply the filter.                                         
     ![Filter Icon](/learn/assets/wme-setup/wme-observability/kibana/micro-services.png)
 
@@ -154,7 +154,7 @@ Now that we know the filters which can be applied, let us check how to apply the
       ![Filter Icon](/learn/assets/wme-setup/wme-observability/kibana/container-services.png)   
                                                                                                                                                                             Similarly Filter can be applied to other services like Login,EDN-Services,Developer-Cloud,Studio,Launchpad etc.                                                            
 
-    2: Accessing all Microservices log from the Kibana Dashboard.
+ 2: Accessing all Microservices log from the Kibana Dashboard.
     - From the Kibana,Click on the Dashboard and Select **MicroServiceLogs** which is Predefined Dashboard in Kibana. 
     - Below screenshot displays logs of all the available microservices.
 
