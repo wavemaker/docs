@@ -986,8 +986,7 @@
   {
     "Widgets & Prefabs Library": [
       "app-development/widgets/widget-library",
-      "app-development/widgets/ui-elements",
-      "app-development/custom-widgets/custom-widgets"  
+      "app-development/widgets/ui-elements"
     ],
     
     "Cards": 
@@ -1205,12 +1204,22 @@
 
     "Prefabs": 
     [ 
+      "app-development/custom-widgets/custom-widgets",
+      "app-development/custom-widgets/creating-prefabs",
+      "app-development/widgets/use-cases-prefabs",
+      {
+        "type": "subcategory",
+        "label": "Prefabs Directory",
+        "ids": 
+          [
       "app-development/widgets/prefab/youtube",
       "app-development/widgets/prefab/googlemaps",
       "app-development/widgets/prefab/qrcode", 
       "app-development/widgets/prefab/box-viewer-prefab",
       "app-development/widgets/prefab/entity-extraction-from-documents", 
-      "app-development/widgets/prefab/docusign",
+      "app-development/widgets/prefab/docusign"
+          ]
+      },
       {
         "type": "subcategory",
         "label": "OAuth",
@@ -1223,16 +1232,6 @@
       "app-development/widgets/prefab/oauth-prefabs/instagram",
       "app-development/widgets/prefab/oauth-prefabs/linkedin"
           ]
-      },
-
-      {
-       "type": "subcategory",
-       "label": "Develop Prefab",
-       "ids": 
-          [
-      "app-development/custom-widgets/creating-prefabs",
-      "app-development/widgets/use-cases-prefabs"
-          ]
       }
     ]
   },
@@ -1243,7 +1242,6 @@
       [
       "wavemaker-release-notes",
       "wavemaker-known-issues",
-
       {
         "type": "subcategory",
         "label": "Versions: 10.6.x",
