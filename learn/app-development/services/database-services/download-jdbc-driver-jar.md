@@ -1,14 +1,12 @@
 ---
-title: "Recommended JDBC Driver versions for databases"
+title: "Recommended JDBC Driver Versions for Databases"
 id: ""
 ---
 ---
 
 This document provides you with the recommended Java Database Connectivity (JDBC) driver versions for the respective database versions supported for Studio integration.
 
-## Link for JDBC driver downloads
-
----
+## Download JDBC Drivers
 
 :::important
 - The following download URLs will redirect you to an external page, i.e., the JDBC driver download page for the respective database.
