@@ -1204,7 +1204,7 @@
 
     "Prefabs": 
     [ 
-      "app-development/custom-widgets/custom-widgets",
+      "app-development/custom-widgets/prefabs-overview",
       "app-development/custom-widgets/creating-prefabs",
       "app-development/widgets/use-cases-prefabs",
       {

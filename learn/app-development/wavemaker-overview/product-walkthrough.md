@@ -18,7 +18,7 @@ Following are some of the terms commonly used in Studio parlance.
 | **Template Bundle** | Custom templates built into a bundle.   |[Template Bundle](/learn/app-development/ui-design/page-concepts/#creating-template-bundles) |
 | **Widgets** | UI components for user interaction and responsive design.  |[Widgets Overview](/learn/app-development/widgets/ui-elements/) |
 ||List of Widgets.|[Widget Library](/learn/app-development/widgets/widget-library/) |
-| **Prefabs** |Collection of one or more widgets that are bound to API or services. <br> <details><summary>Read more</summary> Prefab is a reusable, API-integrated component that can be used across apps. It encapsulates functionality, interaction & data and as such can be used to build custom widgets. For example, GoogleMap Prefab, QRCode reader or Youtube Prefab. |[Prefab Basics](/learn/app-development/custom-widgets/custom-widgets/)|
+| **Prefabs** |Collection of one or more widgets that are bound to API or services. <br> <details><summary>Read more</summary> Prefab is a reusable, API-integrated component that can be used across apps. It encapsulates functionality, interaction & data and as such can be used to build custom widgets. For example, GoogleMap Prefab, QRCode reader or Youtube Prefab. |[Prefab Basics](/learn/app-development/custom-widgets/prefabs-overview)|
 ||List of prefabs that are already created.|[Predefined Prefabs](/learn/app-development/widgets/widget-library/#prefabs)|
 ||Build your own Prefab. |[Creating Prefabs](/learn/app-development/custom-widgets/creating-prefabs/) |
 | **Project Shell** | Foundation for multiple apps in an enterprise.  |[Project Shells](/learn/app-development/ui-design/project-shells/) |
