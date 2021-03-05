@@ -54,11 +54,11 @@ WaveMaker supports the following databases and versions and the same can be used
 
 | Database Name | Version | Driver Jar |
 | --- | --- | --- |
-|[![](/learn/assets/MariaDB.png)](/learn/assets/MariaDB.png)| 10.2 | Available in Maven Repo |
-|[![mysql](/learn/assets/mysql.png)](/learn/assets/mysql.png)|- 5.5<br>- 5.6<br>- 5.7 | Available in Maven Repo |
-|[![PostgreSQL](/learn/assets/PostgreSQL.png)](/learn/assets/PostgreSQL.png) PostgreSQL |- 9.4<br>- 9.5 | Available in Maven Repo |
-| [![Oracle](/learn/assets/Oracle.png)](/learn/assets/Oracle.png) |- 11.2 <br>- 12.1 <br>- 12.2 |- [download ojdbc6.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html) <br> - [download ojdbc7.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html) <br> - [download ojdbc8.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)|
-| [![SQLServer](/learn/assets/SQLServer.png)](/learn/assets/SQLServer.png) SQL Server | 2014 <br> Azure SQL Database [Connect to Azure](/learn/how-tos/connect-azure-sql-server/) | [Steps to Download sqljdbc4.2.jar](/learn/app-development/services/database-services/download-jdbc-driver-jar/) <br> (you can use JDBC driver 4.2, 6.0, 6.1 or 6.2, ensure that you import  **sqljdbc42.jar** or any Java ver 8 compatible jar file) |
-| [![DB2](/learn/assets/DB2.png)](/learn/assets/DB2.png) |- 10.1 <br> - 11.1| [db2jcc4.jar](http://www-01.ibm.com/support/docview.wss?uid=swg21363866) |
-| [![HSQLDB](/learn/assets/HSQLDB.png)](/learn/assets/HSQLDB.png) |- 2.3.3 <br> - 2.3.4| Available in Maven Repo |
+|[![](/learn/assets/MariaDB.png)](/learn/assets/MariaDB.png)| 10.2.8 | Available in Maven Repo. The dependency is automatically added in the pom.xml file. |
+|[![mysql](/learn/assets/mysql.png)](/learn/assets/mysql.png)|- 5.7<br>- 8.0.21 | Available in Maven Repo. The dependency is automatically added in the pom.xml file. |
+|[![PostgreSQL](/learn/assets/PostgreSQL.png)](/learn/assets/PostgreSQL.png) PostgreSQL |- 9.6<br>- 10 <br>- 11 <br>- 12 <br>- 13 | Available in Maven Repo. The dependency is automatically added in the pom.xml file. |
+| [![Oracle](/learn/assets/Oracle.png)](/learn/assets/Oracle.png) |- 12c <br>- 18c <br>- 19c |Refer [recommended JDBC driver versions here](/learn/app-development/services/database-services/download-jdbc-driver-jar#oracle).|
+| [![SQLServer](/learn/assets/SQLServer.png)](/learn/assets/SQLServer.png) SQL Server | - 2016 <br> - 2017 <br> - 2019 <br> - Azure SQL [Connect to Azure](/learn/how-tos/connect-azure-sql-server/) | Refer [recommended JDBC driver versions here](/learn/app-development/services/database-services/download-jdbc-driver-jar#sqlserver).|
+| [![DB2](/learn/assets/DB2.png)](/learn/assets/DB2.png) |- 10.5 <br> - 11.1 <br> - 11.5|Refer [recommended JDBC driver versions here](/learn/app-development/services/database-services/download-jdbc-driver-jar#db2).  |
+| [![HSQLDB](/learn/assets/HSQLDB.png)](/learn/assets/HSQLDB.png) |- 2.4.1 <br> - 2.5.1 | Available in Maven Repo. The dependency is automatically added in the pom.xml file.  |
 

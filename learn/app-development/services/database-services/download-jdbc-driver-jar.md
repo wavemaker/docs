@@ -1,24 +1,50 @@
 ---
-title: "Download JDBC Driver jar"
+title: "Recommended JDBC Driver Versions for Databases"
 id: ""
 ---
 ---
-Steps to download the JDBC Driver jar for SQL Server
 
-1. Navigate to [https://www.microsoft.com/en-us/download/details.aspx?id=54671&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True](https://www.microsoft.com/en-us/download/details.aspx?id=54671&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True) page, and click **Download JDBC Driver**. 
+This document provides you with the recommended Java Database Connectivity (JDBC) driver versions for the respective database versions supported for Studio integration.
 
-:::note
-- These download instructions are valid as of the day this document was prepared. Changes made by Microsoft at their website since might not be updated here.
-- From this site you can download JDBC driver 4.2. You can use JDBC driver 6.0, 6.1 or 6.2, ensure that you import **sqljdbc42.jar** or any Java ver 8 compatible jar file.
+## Download JDBC Drivers
+
+:::important
+- The following download URLs will redirect you to an external page, i.e., the JDBC driver download page for the respective database.
+- Please ensure that you import any Java 8 compatible jar file.
 :::
 
-2. Select language and click on **Download**.
-3. Select and download `sqljdbc_4.2.8112.100_enu.tar.gz`.
-4. Once the download is complete, extract the downloaded file. Select and upload `sqljdbc42.jar`   
-    Located : [your extract folder] `sqljdbc_4.2.8112.100_enu\sqljdbc_4.2\enu\jre8` 
+### Oracle
+
+| Oracle Database Versions | Download Driver   |
+| ---| --- |
+| Oracle 12c | [ojdbc7.jar](https://www.oracle.com/database/technologies/jdbc-drivers-12c-downloads.html)|
+| Oracle 18c | [ojdbc8.jar](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-183-downloads.html)|
+| Oracle 19c |[ojdbc8.jar](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-6-c-downloads.html) |
+
+### SQLServer
+ 
+| SQL Server Database Versions | Download Driver  |
+| --- | --- |
+| SQL Server 2016| [Driver 9.2](https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-2016)|
+| SQL Server 2017| [Driver 9.2](https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-2017) |
+| SQL Server 2019| [Driver 9.2](https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15) |
+| Azure SQL | [Driver 9.2](https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15) |
+
+
+### DB2
+
+|DB2 Database Versions| Download Driver   |
+| --- | --- |
+| v10.5 | [db2jcc4.jar](https://www.ibm.com/support/pages/db2-jdbc-driver-versions-and-downloads) |
+| v11.1 | [db2jcc4.jar](https://www.ibm.com/support/pages/db2-jdbc-driver-versions-and-downloads) |
+| v11.5 | [db2jcc4.jar](https://www.ibm.com/support/pages/db2-jdbc-driver-versions-and-downloads) |
 
 :::note
-It is recommended to use **`sqljdbc42.jar`** or any Java ver 8 compatible jar file. 
+- All the above download URLs will redirect you to an external page to download the respective driver zip.
+- Once you download them, extract the downloaded file.
+   
+For example, select and upload **`mssql-jdbc-9.2.1.jre8.jar`**
+Typically, located in: `<your extracted folder>/sqljdbc_9.2/enu/`
 :::
 
-[![](/learn/assets/jdbc_driver_step4.png)](/learn/assets/jdbc_driver_step4.png)
+Please see the [document](https://www.wavemaker.com/learn/app-development/services/database-services/database-services#supported-databases-and-versions) to learn about the supported database versions to integrate them into your application.
