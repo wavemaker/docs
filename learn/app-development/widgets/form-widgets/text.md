@@ -43,6 +43,7 @@ Using Text widget, you can do the following:
 | Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. |
 | Auto Complete | Checking this box turns on auto-completion in the editor. As the user types into the pull-down select editor, the choices change dynamically. |
 | Display Format | The keys in display format represent the special tokens/characters used to delimit acceptable ranges of inputs. For example, we use '9' here to accept any numeric values for a phone number: displayformat='(999) 999-9999'. The values associated with each token are regexen. Each regex defines the ranges of values that will be acceptable as inputs in the position of that token. When placeholder and default value are both provided for a widget, the default value takes precedence. Upon focusing on the widget, the display format will be shown to make the user input easy. Tokens: <br> - A Any letter. <br> - 9 Any number. <br> - * Any letter or number. <br> - ? Make any part of the mask optional. <br> |
+| Show Display Format On | This property decides when to show the display format on the widget. <br> **Always**: the provided display format will always be shown. <br> **On keypress**: the provided display format will be shown when user starts typing in the widget. |
 | Update value on | If the selected value is `blur`: data value will be updated on blur event, `default`: data value will be updated on key up. |
 | Update delay | The amount of delay in milliseconds to update the data value. |
 

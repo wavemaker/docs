@@ -16,6 +16,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
+|[WaveMaker v10.6.7](/learn/wavemaker-release-notes/v10-6-7)|Bug fixes |11 March 2021 | -|-|
 |[WaveMaker v10.6.6](/learn/wavemaker-release-notes/v10-6-6)|Bug fixes |04 March 2021 | -|-|
 |[WaveMaker v10.6.5](/learn/wavemaker-release-notes/v10-6-5)|Bug fixes |25 February 2021 | -|-|
 |[WaveMaker v10.6.4](/learn/wavemaker-release-notes/v10-6-4)|Bug fixes |18 February 2021 | -|-|
