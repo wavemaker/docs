@@ -145,17 +145,14 @@ Now that we know the filters which can be applied, let us check how to apply the
 
     ![Kibana Home Page](/learn/assets/wme-setup/wme-observability/kibana/kibana-final.png)                                                                                        
  ## Some Common Usecases                                                                           
- 1: Accessing Specific MicroService logs from Kibana.
-    - Select Discover from the Kibana and add the Filter by selecting  **tag.keyword** , an drop down with list of microservices is displayed, select the microservice ex:container-services and save to apply the filter.                                         
-    ![Filter Icon](/learn/assets/wme-setup/wme-observability/kibana/micro-services.png)
+ 1: Accessing Specific MicroService logs from Kibana.                                                                                                                                                                                                                            
+      - Select Discover from the Kibana and add the Filter by selecting  **tag.keyword** , an drop down with list of microservices is displayed, select the microservice ex:lbaccess log and save to apply the filter.                                                                                                                                                                                                                                                                                    
+        ![Filter Icon](/learn/assets/wme-setup/wme-observability/kibana/micro-services.png)                                                                                                                                                                                 
+     Below screenshot displays the searched filter results of lbaccess log.                                                                                                                                                                                                                                                          
+                                                                                                      ![Filter Icon](/learn/assets/wme-setup/wme-observability/kibana/lb-log.png)   
+                                                                                                    Similarly Filter can be applied to other services like Login,EDN-Services,Developer-Cloud,Studio,Launchpad etc.                                                            
 
-    - Below screenshot displays the searched filter results of container-services.
-      
-      ![Filter Icon](/learn/assets/wme-setup/wme-observability/kibana/container-services.png)   
-                                                                                                                                                                            Similarly Filter can be applied to other services like Login,EDN-Services,Developer-Cloud,Studio,Launchpad etc.                                                            
-
- 2: Accessing all Microservices log from the Kibana Dashboard.
-    - From the Kibana,Click on the Dashboard and Select **MicroServiceLogs** which is Predefined Dashboard in Kibana. 
-    - Below screenshot displays logs of all the available microservices.
-
-    ![Filter Icon](/learn/assets/wme-setup/wme-observability/kibana/micro-service.png)  
+ 2: Fetching logs based on the Status Code.                                                                                          
+    - Select Discover from the Kibana and apply the Filter by selecting **status.keyword** , an drop down with list of status code  gets displayed , select the status code and save to apply the filter.
+     Below screenshot displays the searched filter results of status code        200                                                                                                                                                                                                                                                                                                          
+        ![Filter Icon](/learn/assets/wme-setup/wme-observability/kibana/status-code.png)  
