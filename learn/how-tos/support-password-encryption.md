@@ -48,7 +48,7 @@ In case of **Random salt** which gets generated for every plain text, the hash c
 ```    
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
-public static String hashPassword(String password_plaintext) {
+public String hashPassword(String password_plaintext) {
     String salt = BCrypt.gensalt();
     logger.debug("Salt generated " + salt);
     String hashed_password = BCrypt.hashpw(password_plaintext, salt);
