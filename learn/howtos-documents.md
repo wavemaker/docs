@@ -298,6 +298,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 
 ## Prefab: Use Cases
 
+*   [Create a simple Prefab to compare two strings](/learn/how-tos/create-simple-prefab/)
 *   [How to create a Prefab using 3rd Party UI Widgets](/learn/how-tos/create-prefab-using-third-party-ui-widgets/)
 *   [How to create a Prefab Using D3 & NVD3 Charts](/learn/how-tos/create-prefab-using-d3-nvd3-charts/)
 *   [How to create Prefab Using D3 Library (DataMaps)](/learn/how-tos/create-prefab-using-d3-library-datamaps/)

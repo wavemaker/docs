@@ -50,3 +50,4 @@ We have seen the basics of the HTML/Bootstrap based widgets or UI Components and
 
 [Widgets Library](widget-library.md)   
 [Design Pages](/learn/app-development/ui-design/design-overview)  
+[Prefab - Custom Widgets](/learn/app-development/custom-widgets/custom-widgets)   

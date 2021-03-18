@@ -123,7 +123,7 @@ You can expose many properties and set the values as static or dynamic to be bou
 
 8. You can set the display icon and mention the group for Prefab from the Packaging tab
 9. You can publish the Prefab to a project for testing or publish it to EDN for making it available across the enterprise.
-10. Save and Publish the Prefab. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs).
+10. Save and Publish the Prefab. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/prefabs-overview#publishing-prefabs).
 11. Once approved by the EDN Admin, the Prefab will be available for use across the Projects. You can see the entry in the Artifacts list from the Developer Utilities on the [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace). Import it to see the same in the Widget Toolbox of any Project within your workspace.
 
 ## Using D3 Charts Prefab
@@ -232,7 +232,7 @@ You can expose many properties and set the values as static or dynamic to be bou
     [![](/learn/assets/nvd3_js1.png)](/learn/assets/nvd3_js1.png)
 
     - You can publish the Prefab to a project for testing or publish it to EDN for making it available across the enterprise.
-    - Save and Publish the Prefab. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs).
+    - Save and Publish the Prefab. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/prefabs-overview#publishing-prefabs).
     - Once approved by the EDN Admin, the Prefab will be available for use across the Projects. You can see the entry in the Artifacts list from the Developer Utilities on the [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace). Import it to see the same in the Widget Toolbox of any Project within your workspace.
 
 ## Using NVD3 Charts Prefab
