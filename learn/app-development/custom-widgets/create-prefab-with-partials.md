@@ -10,14 +10,11 @@ sidebar_label: "Create Prefab with Partials"
 
 ## Need for Partials within Prefabs
 
-Until now, we did not allow users to create [partials](/learn/app-development/ui-design/page-concepts/partial-pages) inside Prefabs. The only page you have access to is the Main Page where all code exists. Due to this, the following problems can be seen:
-* Difficulty in maintainability and collaboration with others due to conflicts as and when the Prefab size keeps increasing.
-* Same Prefab can be used in both Web and Mobile applications, so wouldn't it be better to have a clear segregation between both of them ?
-* Use cases like [Data Table with Row Expansion](/learn/how-tos/how-to-configure-row-expansion-in-a-data-table) and [Page Dialogs](/learn/app-development/widgets/modal-dialogs/modal-windows-dialogs#page-dialog) are not possible in Prefabs.
+Prefabs allow higher levels of abstraction to be created facilitating customers to reuse functionality across their projects - both web, mobile. Prefabs in such cases include implementation of UI in accordance with form factor. Partials allow such functionality to be implemented in a Prefab using different partials that include functionality targeted towards a particular form-factor. Also, use cases like [Data Table with Row Expansion](/learn/how-tos/how-to-configure-row-expansion-in-a-data-table) and [Page Dialogs](/learn/app-development/widgets/modal-dialogs/modal-windows-dialogs#page-dialog) are possible with partials.
 
 ## Creating Partials
 
-As of Wavemaker 10.6.9, we have added support for Partials to be created inside Prefab projects. This allows Users to create even more powerful Prefabs. The following types of Partial Pages can be created.
+As of Wavemaker 10.6.9, we have added support for Partials to be created inside Prefab projects. This allows Users to create even more powerful Prefabs. The following types of Partials can be created.
 
 ![PartialTypes](/learn/assets/partialTypes.png)
 
