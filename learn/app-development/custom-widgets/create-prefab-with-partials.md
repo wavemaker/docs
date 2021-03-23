@@ -4,9 +4,7 @@ id: ""
 sidebar_label: "Create Prefab with Partials"
 ---
 
-[Prefabs](/learn/app-development/custom-widgets/prefabs-overview) are reusable application parts that can be easily integrated into your applications. To learn how Prefabs can be created in WaveMaker, see [Creating Prefabs](/learn/app-development/custom-widgets/creating-prefabs).
-
-<!--truncate-->
+[Prefabs](/learn/app-development/custom-widgets/prefabs-overview) are reusable application parts that you can integrate into your applications easily. To learn how to create Prefabs in WaveMaker, see [Creating Prefabs](/learn/app-development/custom-widgets/creating-prefabs).
 
 ## Need for Partials within Prefabs
 
@@ -14,7 +12,7 @@ Prefabs allow higher levels of abstraction to be created facilitating customers 
 
 ## Creating Partials
 
-As of Wavemaker 10.6.9, we have added support for Partials to be created inside Prefab projects. This allows Users to create even more powerful Prefabs. The following types of Partials can be created.
+As of WaveMaker 10.6.9, we have added support for Partials to be created inside Prefab projects. This allows Users to create even more powerful Prefabs. The following types of Partials can be created.
 
 ![PartialTypes](/learn/assets/partialTypes.png)
 
