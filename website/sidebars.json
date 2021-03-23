@@ -1206,6 +1206,7 @@
     [ 
       "app-development/custom-widgets/prefabs-overview",
       "app-development/custom-widgets/creating-prefabs",
+      "app-development/custom-widgets/create-prefab-with-partials",
       "app-development/widgets/use-cases-prefabs",
       {
         "type": "subcategory",
