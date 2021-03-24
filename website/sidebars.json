@@ -836,6 +836,7 @@
           "DataTable":
           [
             "how-tos/data-table-actions",
+            "how-tos/how-to-configure-row-expansion-in-a-data-table",
             "how-tos/data-table-widget-representations",
             "how-tos/view-master-detail-data-records-using-data-table",
             "how-tos/add-master-detail-records-using-data-table",
@@ -970,6 +971,7 @@
           "Prefabs":
           [
             "how-tos/create-simple-prefab",
+            "how-tos/create-prefab-with-partials",
             "how-tos/create-prefab-using-third-party-ui-widgets",
             "how-tos/create-simple-prefab",
             "how-tos/create-prefab-using-d3-nvd3-charts",
@@ -1206,8 +1208,8 @@
     [ 
       "app-development/custom-widgets/prefabs-overview",
       "app-development/custom-widgets/creating-prefabs",
-      "app-development/custom-widgets/create-prefab-with-partials",
-      "app-development/widgets/use-cases-prefabs",
+      "app-development/custom-widgets/prefab-with-partials",
+      "aapp-development/custom-widgets/use-cases-prefabs",
       {
         "type": "subcategory",
         "label": "Prefabs Directory",
