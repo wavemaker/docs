@@ -21,23 +21,27 @@ You can create two types of partials, including **Partials** and **Widget Templa
 
 You can import [template bundles](/learn/app-development/ui-design/page-concepts/creating-template-bundles) of Partials and Widget Templates into a Prefab Project. Choose the **Platform Type** when using the **Import Template** option to import for web and mobile projects separately.
 
-## Prefab Properties inside Partials
+## Prefab Properties in Partial
 
-The Main page already has access to the Prefab properties. Let us see how Partials can access these properties.
+Access the general properties from the Main page by default. To access properties from a Partial, you add them from the **Config Prefab** section. Follow the steps below to achieve this.
 
-### Design Tab
-
-The following Prefab has two properties, Prop1 and Prop2.
+1. Go to **Settings** -> select **Config Prefab** -> switch to the **Properties** tab.
+2. From the **UI Properties**, add new properties. To learn more, see [How to add Prefab Properties](/learn/app-development/custom-widgets/creating-prefabs/#properties).
+3. The following Prefab example contains two properties, Prop1 and Prop2.
 
 ![PrefabPropertiesDialog](/learn/assets/prefabpropertiesdialog.png)
 
-These properties are available to be used in the Partials created inside the Prefab, as shown below.
+4. When you create a Partial, you can use these properties when binding it to an object.  
+
+For example, add a Label widget. From the **Properties** section, go to **Caption** and click *Bind Property* to open the following dialog, and find all the created **Prefab Properties**, as shown below.
 
 ![PartialBindDialog](/learn/assets/prefabpropertiesinsidepartial.png)
 
-### Script Tab
-Prefab Properties, Events and Methods can be accessed inside the Partial script as shown below.
-```js   
+## Script Tab
+
+Prefab Properties, Events, and Methods can be accessed inside the Partial script as shown below.
+
+```js
 
 Partial.onReady = function () {
     // Prefab object is exposed to the Partial as Partial.Prefab
@@ -49,7 +53,7 @@ Partial.onReady = function () {
 };
 ```
 
-### Use Cases
+## Use Cases
 
 Learn how to use partials in a Prefab.
 

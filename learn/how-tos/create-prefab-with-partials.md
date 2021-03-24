@@ -6,8 +6,8 @@ sidebar_label: "Creating Partials in a Prefab"
 ---
 In this document, the following two use cases explain how to use [Partials in a Prefab](/learn/app-development/custom-widgets/prefab-with-partials).
 
-1. Partials in Web and Mobile
-2. Using Partial for Data Table with Row Expansion
+1. [Partials in Web and Mobile](#partials-in-web-and-mobile)
+2. [Using Partial for Data Table with Row Expansion](#data-table-with-row-expansion)
 
 ## Partials in Web and Mobile
 
@@ -49,11 +49,9 @@ Creating a Web Partial.
 
 ![WebPartialDeviceConfiguration](/learn/assets/webPartialDeviceConfig.png)
 
-Preview the App. The Laptop view shows us the Data Table, which is inside `webPartial`.
+7. Preview the App. The Laptop view shows us the Data Table, which is inside `webPartial`.
 
 ![WebView](/learn/assets/webPartialPreview.png)
-
-You can have different partials for different viewports and keep your code segregated.
 
 ### Partial for Mobile
 
@@ -80,16 +78,14 @@ Creating the Mobile Partial.
 6. Go to the Device tab and choose **Show in device** as Mobile and Tablet Portrait.
 
 ![MobilePartialDeviceConfiguration](/learn/assets/mobilePartialDeviceConfig.png)
-
-Preview the App. You will see that the Laptop view shows us the Data Table, which is inside webPartial, and the Mobile view shows us the List which is inside mobilePartial.
     
-Preview the App. The Mobile view shows us the List which is inside `mobilePartial`.
+7. Preview the App. The Mobile view shows us the List which is inside `mobilePartial`.
    
 ![MobileView](/learn/assets/mobilePartialPreview.png)
 
 ## Data Table with Row Expansion
 
-Let us build a Prefab which shows Departments from HRDB in a Data Table. On expanding each Department, we see a list of Employees belonging to that particular Department.
+Let us build a Prefab that shows Departments from HRDB in a Data Table. On expanding each Department, we see a list of Employees belonging to that particular Department.
 
 1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](/learn/app-development/wavemaker-overview/product-walkthrough#dashboard-walkthrough])
 2. Enter a name and description for the Prefab
@@ -117,9 +113,11 @@ Let us build a Prefab which shows Departments from HRDB in a Data Table. On expa
    ![TableRowExpansion](/learn/assets/Bind_tablerow_value_RowExp.png)
 
 6. Preview the App. You'll see the Data Table showing the list of Departments. On expanding the Department, we can see the Employees belonging to that Department in a list.
+
 ![PrefabDataTableWithRowExpansion](/learn/assets/prefabDataTableWithRowExpansion.png)
 
 ## See Also
+
 [What are Prefabs](/learn/app-development/custom-widgets/prefabs-overview)  
 [How to Create Prefabs](/learn/app-development/custom-widgets/creating-prefabs)  
 [Prefab with Partials](/learn/app-development/custom-widgets/prefab-with-partials)  
