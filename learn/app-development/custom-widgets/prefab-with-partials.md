@@ -7,7 +7,7 @@ sidebar_label: "Prefab with Partials"
 
 [Prefabs](/learn/app-development/custom-widgets/prefabs-overview) are reusable application parts that you can integrate into applications easily. To learn how to create Prefabs in WaveMaker, see [Creating Prefabs](/learn/app-development/custom-widgets/creating-prefabs).
 
-With Partials inside a Prefab, you can create higher abstraction levels, and reuse functions across the web and mobile projects. You can use several other features, including organizing UI, using the form factor for enabling different screen size compositions. Additionally, benefit from using features like [Data Table with Row Expansion](/learn/how-tos/how-to-configure-row-expansion-in-a-data-table) and [Page Dialogs](/learn/app-development/widgets/modal-dialogs/modal-windows-dialogs#page-dialog) for on-demand content loading.
+With Partials inside a Prefab, you can create higher abstraction levels, and reuse functions across the web and mobile projects. You can use several other features, including organizing UI, using form-factor for enabling different screen size compositions. Additionally, benefit from using features like [Data Table with Row Expansion](/learn/how-tos/how-to-configure-row-expansion-in-a-data-table) and [Page Dialogs](/learn/app-development/widgets/modal-dialogs/modal-windows-dialogs#page-dialog) for on-demand content loading.
 
 ## Creating Partials
 
