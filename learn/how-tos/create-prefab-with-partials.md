@@ -85,13 +85,13 @@ Creating the Mobile Partial.
 
 ## Data Table with Row Expansion
 
-Let us build a Prefab that shows Departments from HRDB in a Data Table. On expanding each Department, we see a list of Employees belonging to that particular Department.
+Build a Prefab that shows Departments from a Data Table. On expanding each Department, see a list of Employees belonging to that particular Department.
 
-1. Click on **Create** from the _Prefab_ tab of the [Project Dashboard](/learn/app-development/wavemaker-overview/product-walkthrough#dashboard-walkthrough])
-2. Enter a name and description for the Prefab
-3. Import [HRDB Swagger](/learn/how-tos/consuming-existing-wm-api-into-another-wm-project) from a Project which uses HRDB so that we can use the Employees API.
+1. Click **Create** from the _Prefab_ tab of the [Project Dashboard](/learn/app-development/wavemaker-overview/product-walkthrough#dashboard-walkthrough]).
+2. Enter a name and description for the Prefab.
+3. Import [HRDB Swagger](/learn/how-tos/consuming-existing-wm-api-into-another-wm-project) from a Project which uses HRDB to use the Employees API.
 4. Creating a Partial for Row Expansion.
-    - Click on the **+** icon from the **Pages** tab and create a Partial called EmployeePartial.
+    - Click the **+** icon from the **Pages** tab and create a Partial called EmployeePartial.
     - Create a Page param **deptID** of type **integer** in the partial to bind the Department ID.
       ![PageParamPartial](/learn/assets/PageParam-Partial.png)
       
