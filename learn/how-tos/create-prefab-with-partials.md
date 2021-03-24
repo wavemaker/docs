@@ -27,7 +27,7 @@ To build a Prefab for the web and mobile, you develop different partials for dif
 
 Creating a Web Partial.
 
-1 Click **+** from the **Pages** tab and create a Partial called `webPartial`.
+1. Click **+** from the **Pages** tab and create a Partial called `webPartial`.
 
 ![WebPartial](/learn/assets/webPartial.png)  
 
