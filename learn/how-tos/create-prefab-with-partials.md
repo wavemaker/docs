@@ -11,7 +11,7 @@ In this document, the following two use cases explain how to use [Partials in a 
 
 ## Partials in Web and Mobile
 
-To build a Prefab for the web and mobile, you develop different partials for different viewports, and it segregates the code automatically.
+To build a Prefab for the web and mobile, you develop different partials for different viewports, which helps segregate the code.
 
 **For Web**: Display employees list in a *Data Table* when used in laptops, tablets, or large screens in the landscape mode.  
 

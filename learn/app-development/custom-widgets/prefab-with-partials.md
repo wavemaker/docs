@@ -23,7 +23,7 @@ You can import [template bundles](/learn/app-development/ui-design/page-concepts
 
 ## Prefab Properties in Partial
 
-Access the general properties from the Main page by default. To access properties from a Partial, you add them from the **Config Prefab** section. Follow the steps below to achieve this.
+Like how you can access Prefab properties from the Main Page, you can access them from Partials. To create a property, go to the Config Prefab section and add them, as shown below.
 
 1. Go to **Settings** -> select **Config Prefab** -> switch to the **Properties** tab.
 2. From the **UI Properties**, add new properties. To learn more, see [How to add Prefab Properties](/learn/app-development/custom-widgets/creating-prefabs/#properties).
