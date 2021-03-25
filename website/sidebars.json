@@ -1209,7 +1209,7 @@
       "app-development/custom-widgets/prefabs-overview",
       "app-development/custom-widgets/creating-prefabs",
       "app-development/custom-widgets/prefab-with-partials",
-      "aapp-development/custom-widgets/use-cases-prefabs",
+      "app-development/custom-widgets/use-cases-prefabs",
       {
         "type": "subcategory",
         "label": "Prefabs Directory",
