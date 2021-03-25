@@ -5,13 +5,13 @@ sidebar_label: "Prefab with Partials"
 ---
 ---
 
-[Prefabs](/learn/app-development/custom-widgets/prefabs-overview) are reusable application parts that you can integrate into applications easily. To learn how to create Prefabs in WaveMaker, see [Creating Prefabs](/learn/app-development/custom-widgets/creating-prefabs).
+[Prefabs](/learn/app-development/custom-widgets/prefabs-overview) are reusable application parts that you can integrate into applications easily. [Partials](/learn/app-development/ui-design/page-concepts/partial-pages) is a part of a page associated with components within a page. It can be implemented as a single Partial and used across all app pages. To learn how to create Prefabs, see [Creating Prefabs](/learn/app-development/custom-widgets/creating-prefabs).
 
 With Partials inside a Prefab, you can create higher abstraction levels, and reuse functions across the web and mobile projects. You can use several other features, including organizing UI, using form-factor for enabling different screen size compositions. Additionally, benefit from using features like [Data Table with Row Expansion](/learn/how-tos/how-to-configure-row-expansion-in-a-data-table) and [Page Dialogs](/learn/app-development/widgets/modal-dialogs/modal-windows-dialogs#page-dialog) for on-demand content loading.
 
 ## Creating Partials
 
-You can create two types of partials, including **Partials** and **Widget Templates**.
+You can create two types of Partials, including **Partials** and **Widget Templates**.
 
 1. **Partials**: Use widgets such as Containers, Popovers, Page Dialogs, and more.  
 
@@ -55,7 +55,7 @@ Partial.onReady = function () {
 
 ## Use Cases
 
-Learn how to use partials in a Prefab.
+Learn how to use Partials in a Prefab.
 
 1. [Partials in Web and Mobile](/learn/how-tos/create-prefab-with-partials#partials-in-web-and-mobile)  
 2. [Using Partial for Data Table with Row Expansion](/learn/how-tos/create-prefab-with-partials#data-table-with-row-expansion)
