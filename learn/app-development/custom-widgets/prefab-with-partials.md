@@ -53,6 +53,17 @@ Partial.onReady = function () {
 };
 ```
 
+## Use Expression Tab
+
+When you declare a JavaScript function in the `Main.js` file, access it from the **Use Expression** tab.
+
+```js
+Prefab.myJSFunction()
+```
+
+![prefab partial use expression](/learn/assets/use-expression-partial.png)
+
+
 ## Use Cases
 
 Learn how to use Partials in a Prefab.
