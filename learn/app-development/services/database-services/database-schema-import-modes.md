@@ -19,6 +19,10 @@ There are two modes in which the database schema can be imported:
 
 You can import the database in any mode according to the requirement. Read-Only is the default mode for all the newly imported databases. However, you have an option to set the mode at the time of DB import or change it at a later time from the settings tab.
 
+:::note
+The credentials (password) that is used while importing DB schema is encoded using WaveMaker specific algorithm and is saved to the development profile.
+:::
+
 ### Read-Only Mode
 
 Once the database is imported in this mode, the DB designer will be opened in the read-only and will not permit any schema changes that affect the database.
