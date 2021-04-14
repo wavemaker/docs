@@ -30,6 +30,7 @@ connector.email.default.email.server.password=
 connector.email.default.email.server.port=
 connector.email.default.email.server.username=
 connector.email.default.email.transport.protocol=smtp
+connector.email.default.email.server.sslenabled=true
 ```
 
 - You should specify the values for connector properties in profiles.
