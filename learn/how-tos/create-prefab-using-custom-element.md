@@ -136,7 +136,7 @@ Prefab.onPropertyChange = function(key, newVal, oldVal) {
 [![](/learn/assets/howto_prefab_wc_09.png)](/learn/assets/howto_prefab_wc_09)
 
 ### Publish Prefab
-* **Save** & **Publish** the Prefab. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs).
+* **Save** & **Publish** the Prefab. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/prefabs-overview#publishing-prefabs).
 * Once approved, the Prefab will be available for use across the Projects. An entry will appear in the Artefacts list from the Developer Utilities on the [Project Workspace.](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) The Prefab needs to be imported before it can be used from the Widget Toolbox.
 
 
@@ -257,7 +257,7 @@ Prefab.onPropertyChange = function(key, newVal, oldVal) {
 [![](/learn/assets/howto_prefab_wc_16.png)](/learn/assets/howto_prefab_wc_16)
 
 ### Publish Prefab
-* **Save** & **Publish** the Prefab. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs).
+* **Save** & **Publish** the Prefab. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/prefabs-overview#publishing-prefabs).
 * Once approved, the Prefab will be available for use across the Projects. An entry will appear in the Artefacts list from the Developer Utilities on the [Project Workspace.](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) The Prefab needs to be imported before it can be used from the Widget Toolbox.
 
 

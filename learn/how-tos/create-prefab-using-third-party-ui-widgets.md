@@ -65,7 +65,7 @@ Be aware that the names might change as per your app specifics.
 We will use the Prefab to display the image in an app.
 
 1. Save and Publish the Prefab.
-2. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/custom-widgets/#publishing-prefabs).
+2. You can set the version for the Prefab and Publish it. Know more about publishing Prefabs from [here](/learn/app-development/custom-widgets/prefabs-overview#publishing-prefabs).
 3. Once approved, the Prefab will be available for use across the Projects. An entry will appear in the Artefacts list from the Developer Utilities on the [Project Workspace.](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) The Prefab needs to be imported before it can be used from the Widget Toolbox.
 4. Open/Create a project to see the usage of the above Prefab. Import the Prefanb from Artifacts listing dialog. Drag and drop the _Imageviewer_ onto the canvas.
 5. Set the Title and Picture property. Here we are binding the Picture property to an image resource already imported into the app. 

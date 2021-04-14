@@ -836,6 +836,7 @@
           "DataTable":
           [
             "how-tos/data-table-actions",
+            "how-tos/how-to-configure-row-expansion-in-a-data-table",
             "how-tos/data-table-widget-representations",
             "how-tos/view-master-detail-data-records-using-data-table",
             "how-tos/add-master-detail-records-using-data-table",
@@ -843,6 +844,7 @@
             "how-tos/export-data-data-table-2",
             "how-tos/setting-blob-filename",
             "how-tos/dynamic-data-tables",
+            "how-tos/customize-dynamic-datatable",
             "how-tos/data-table-column-bound-query",
             "how-tos/combining-columns-data-table",
             "how-tos/data-table-styling",
@@ -970,6 +972,7 @@
           "Prefabs":
           [
             "how-tos/create-simple-prefab",
+            "how-tos/create-prefab-with-partials",
             "how-tos/create-prefab-using-third-party-ui-widgets",
             "how-tos/create-simple-prefab",
             "how-tos/create-prefab-using-d3-nvd3-charts",
@@ -986,8 +989,7 @@
   {
     "Widgets & Prefabs Library": [
       "app-development/widgets/widget-library",
-      "app-development/widgets/ui-elements",
-      "app-development/custom-widgets/custom-widgets"  
+      "app-development/widgets/ui-elements"
     ],
     
     "Cards": 
@@ -1205,12 +1207,23 @@
 
     "Prefabs": 
     [ 
+      "app-development/custom-widgets/prefabs-overview",
+      "app-development/custom-widgets/creating-prefabs",
+      "app-development/custom-widgets/prefab-with-partials",
+      "app-development/custom-widgets/use-cases-prefabs",
+      {
+        "type": "subcategory",
+        "label": "Prefabs Directory",
+        "ids": 
+          [
       "app-development/widgets/prefab/youtube",
       "app-development/widgets/prefab/googlemaps",
       "app-development/widgets/prefab/qrcode", 
       "app-development/widgets/prefab/box-viewer-prefab",
       "app-development/widgets/prefab/entity-extraction-from-documents", 
-      "app-development/widgets/prefab/docusign",
+      "app-development/widgets/prefab/docusign"
+          ]
+      },
       {
         "type": "subcategory",
         "label": "OAuth",
@@ -1223,16 +1236,6 @@
       "app-development/widgets/prefab/oauth-prefabs/instagram",
       "app-development/widgets/prefab/oauth-prefabs/linkedin"
           ]
-      },
-
-      {
-       "type": "subcategory",
-       "label": "Develop Prefab",
-       "ids": 
-          [
-      "app-development/custom-widgets/creating-prefabs",
-      "app-development/widgets/use-cases-prefabs"
-          ]
       }
     ]
   },
@@ -1243,12 +1246,12 @@
       [
       "wavemaker-release-notes",
       "wavemaker-known-issues",
-
       {
         "type": "subcategory",
         "label": "Versions: 10.6.x",
         "ids": 
           [ 
+            "wavemaker-release-notes/v10-6-9",         
             "wavemaker-release-notes/v10-6-7",
             "wavemaker-release-notes/v10-6-6",
             "wavemaker-release-notes/v10-6-5",

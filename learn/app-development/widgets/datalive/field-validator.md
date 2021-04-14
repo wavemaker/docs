@@ -189,15 +189,15 @@ In the following lines of code, we are defining validator for `confirmpassword` 
 #### Form
 
 ```js
-Page.Widgets.staticVariable2Table1.columns.confirmpassword.setValidators([confirmPasswordEval]);
-   Page.Widgets.staticVariable2Table1.columns.confirmpassword.observeOn(['password']);
+Page.Widgets.EmployeeForm1.formfields.confirmpassword.setValidators([confirmPasswordEval]);
+Page.Widgets.EmployeeForm1.formfields.confirmpassword.observeOn(['password']);
 ```
 
 In the following lines of code, it displays an error message if the password and confirm password does not match the values.
 
 ```js
-function confirmPasswordEval(field, table) {
-   if (field.value && table.columns.password.value != field.value) {
+function confirmPasswordEval(field, form) {
+   if (field.value && form.formfields.password.value != field.value) {
        return {
            errorMessage: "Password & ConfirmPassword are not the same value"
        };
@@ -209,7 +209,7 @@ function confirmPasswordEval(field, table) {
 
 ```js
 Page.Widgets.staticVariable2Table1.columns.confirmpassword.setValidators([confirmPasswordEval]);
-   Page.Widgets.staticVariable2Table1.columns.confirmpassword.observeOn(['password']);
+Page.Widgets.staticVariable2Table1.columns.confirmpassword.observeOn(['password']);
 ```
 
 In the following lines of code, it displays an error message if the password and confirm password does not match the values.

@@ -134,7 +134,7 @@ There are marginal differences in the various usage scenarios for the various 
 
 ## Prefabs - Custom Widgets & Extensions
 ---
-For an overview on Prefabs and how you can create Prefabs [see here](/learn/app-development/widgets/custom-widgets/).
+For an overview on Prefabs and how you can create Prefabs [see here](/learn/app-development/custom-widgets/custom-widgets).
 
 | Widget | Description | Document | Reference |
 | --- | --- | --- | --- |
