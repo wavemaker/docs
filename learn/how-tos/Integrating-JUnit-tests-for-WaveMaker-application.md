@@ -19,9 +19,9 @@ JUnit is a unit testing framework for the Java programming language. JUnit has b
 
 ### CONFIGURATION
 
-1. Export the WaveMaker application as a zip file.
+1. Export the WaveMaker application as a [zip file](/learn/app-development/dev-integration/import-export-update-apps#export-project).
 2. Import this zip file into IDE (Use [WaveMaker workspace sync plugin](/learn/how-tos/synchronizing-wavemaker-apps-ides-beta)).
-3. Add the following dependencies in pom.xml file.
+3. Add the following dependencies in pom.xml file under the dependencies tag.
 
 ```    
     <dependency>
@@ -67,7 +67,7 @@ JUnit is a unit testing framework for the Java programming language. JUnit has b
 </beans>
 ```
 
-6. Go to folder src/test/java and create a folder structure com/<appName>/test/core 
+6. Go to folder src/test/java and create a package namely com/{appName}/test/core 
 7. Add a file with name BaseTest.java
 8. Add code snippet to the file
 
@@ -113,11 +113,6 @@ public class MyJavaServiceTest extends BaseTest {
 }
 
 ```
-
-### To run unit tests before every commit
-
-11. Goto folder .git/hooks folder present in WaveMaker Project folder.
-12. Create/update pre-commit script file with the command ‘mvn clean test’
 
 ## See Also
 
