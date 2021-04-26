@@ -690,3 +690,39 @@ This rule ensures that the trailing semicolon is required within the decleration
 ```css
 .testClass {height: 200px; width: 100px;}
 ```
+
+## Handle script errors for Widgets configured with show in device
+
+This rule attempts to catch and prevent any usage of Widgets which have `showindevice` configured for them and are being accessed in script without checking if the element exists or not.
+
+### Rule Details
+
+As of 10.7, If a widget has showindevice configured as something other than `all`, then it won't be rendered in any other viewport other than the specified one. Hence, before accessing properties of that Widget, a sanity check is required to see if it exists or not. This has been done for performance optimization as it prevents unnecessary Network calls.
+
+#### Examples of incorrect code for this rule
+
+```js
+Page.Widgets.EmployeeTable.currentItem.name = "John Doe";
+
+var selectedItem = Page.Widgets.DepartmentList.selecteditem;
+Page.Variables.FilterDepartments.dataSet.filter(function(employeeObj) {
+    return employeeObj.id === selectedItem.empID
+});
+```
+
+#### Examples of correct code for this rule
+
+```js
+if (Page.Widgets.EmployeeTable) {
+    Page.Widgets.EmployeeTable.currentItem.name = "John Doe";
+}
+
+if (Page.Widgets.DepartmentList) {
+    var selectedItem = Page.Widgets.DepartmentList.selecteditem;
+    Page.Variables.FilterDepartments.dataSet.filter(function(employeeObj) {
+        return employeeObj.id === selectedItem.empID
+    });
+}
+```
+
+The above checks will ensure that there are no script errors when widgets which may not be present in the DOM are being accessed. Without the above check, `selectedItem.empID` in the return statement will throw a script error if we have configured `showindevice` as `Mobile` for DepartmentList and are trying to access it in a Web Application.
