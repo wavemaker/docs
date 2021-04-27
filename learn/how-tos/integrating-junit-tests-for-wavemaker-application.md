@@ -20,6 +20,8 @@ JUnit is a unit testing framework for the Java programming language. JUnit has b
 3. Git
 4. Maven
 
+## Integrating JUnit Tests into App
+
 ### Configuration
 
 1. Export the WaveMaker application as a [zip file](/learn/app-development/dev-integration/import-export-update-apps#export-project).
@@ -78,6 +80,8 @@ JUnit is a unit testing framework for the Java programming language. JUnit has b
 
 ```java
 
+package com.<appName>.test.core;
+
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -86,26 +90,31 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(loader = GenericXmlWebContextLoader.class,
-       locations = "classpath:project-springapp-test.xml")
+        locations = "classpath:project-springapp-test.xml")
 @WebAppConfiguration
 public abstract class BaseTest {
+
 }
+
 ```
 ### Writing Test Cases
 
-9. Now start writing test classes under src/test/java package with a class extending BaseTest.java and with annotation @Test
-10. Code snippet for a sample test
+9. Now start writing test classes under src/test/java package with a class extending BaseTest and with annotation @Test
+10. Code snippet for a sample test 
 
 ```java
+import com.<appName>.test.core.BaseTest;
+import com.<appName>.myjavaservice.MyJavaService; 
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.<appName>.test.core.BaseTest;
 
 public class MyJavaServiceTest extends BaseTest {
-   @Autowired
-   private MyJavaService myJavaService;
-   @Test
+
+    @Autowired
+    private MyJavaService myJavaService; // MyJavaService is the Java Service added in app
+    
+    @Test
    public void getJsonData() {
        Object jsonData = myJavaService.returnJSONData();
        Assert.assertNotNull(jsonData);
