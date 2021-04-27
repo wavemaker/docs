@@ -1,26 +1,26 @@
 ---
-title: "Integrating JUnit tests for WaveMaker application"
+title: "Integrating JUnit Tests for WaveMaker Application"
 id: ""
 ---
 ---
 
-### OVERVIEW
+### Overview
 
 JUnit is a unit testing framework for the Java programming language. JUnit has been important in the development of test-driven development. These tests are required whether imported services are working as expected or not, before proceeding to run/deployment of the application. This document demonstrates how to integrate JUnit tests in an application developed by WaveMaker RAD.
 
-### GOALS
+### Goals
 
 1. Integrate JUnit tests in the WaveMaker application
 2. Writing sample test cases for services.
 
-### PREREQUISITES 
+### Prerequisites
 
 1. IDE (IntelliJ IDEA, Eclipse)
 2. WaveMaker Application
 3. Git
 4. Maven
 
-### CONFIGURATION
+### Configuration
 
 1. Export the WaveMaker application as a [zip file](/learn/app-development/dev-integration/import-export-update-apps#export-project).
 2. Import this zip file into IDE (Use [WaveMaker workspace sync plugin](/learn/how-tos/synchronizing-wavemaker-apps-ides-beta)).
@@ -91,7 +91,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 public abstract class BaseTest {
 }
 ```
-### WRITING TEST CASES
+### Writing Test Cases
 
 9. Now start writing test classes under src/test/java package with a class extending BaseTest.java and with annotation @Test
 10. Code snippet for a sample test
