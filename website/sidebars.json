@@ -182,8 +182,7 @@
                     "app-development/services/java-services/java-integration-services",
                     "app-development/services/java-services/java-integration-database-service",
                     "app-development/services/java-services/variables",
-                    "app-development/services/java-services/generated-rest-apis-api-designer",
-                    "app-development/services/java-services/integrating-junit-tests-for-wavemaker-application"      
+                    "app-development/services/java-services/generated-rest-apis-api-designer"      
                     ]           
           },
           {
