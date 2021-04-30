@@ -73,7 +73,7 @@ mvn clean install -Pdeployment
 For more information, see [WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/app-integration-with-aws-cdn) to configure CDN in AWS, and for Azure, see [WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/app-integration-with-azure-cdn).
 
 ```shell
-mvn clen install -P<profile-name> -Dcdn-url=<CDN_URL>
+mvn clean install -P<profile-name> -Dcdn-url=<CDN_URL>
 ```
 
 **For example**
