@@ -13,7 +13,7 @@ This document provides the steps to connect to SAP HANA Cloud Database and confi
   - Host
   - DB name
   - DB Credentials
-- Allow connections from WaveMakerOnline (reach out to support@wavemaker.com for the Gateway IP)
+- Allow connections from WaveMakerOnline (reach out to [support](mailto:support@wavemaker.com) for the Gateway IP)
 
 ## Steps
 
@@ -33,7 +33,7 @@ This document provides the steps to connect to SAP HANA Cloud Database and confi
         - **Username and Password**: DB Credentials.
         - **Database Name**: Provide the name of the Database to connect.
         - **Host**: Hostname of the Database to connect.
-        - **Schema Filter**: List of schema names to be imported in the wavemaker.
+        - **Schema Filter**: List of schema names to be imported in the WaveMaker.
     - Advanced Settings:
         - **Port**: Port on which SAP HANA is configured (default is 443).
         - **JDBC URL**: JDBC connection string of the DB.
