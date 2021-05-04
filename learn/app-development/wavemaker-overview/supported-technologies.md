@@ -22,6 +22,7 @@ In this document, you will find a list of various technologies supported by Wave
 |  | Active Directory (AD) |
 |  | Single sign-on via Central Authentication System (CAS) |
 |  | SAML |
+|  | OpenID |
 |  | Custom Java Service |
 | Supported IDEs | All Maven supporting IDEs like Eclipse, IntelliJ IDEA etc. |
 
