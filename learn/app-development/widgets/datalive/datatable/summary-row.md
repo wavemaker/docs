@@ -156,6 +156,25 @@ Page.GroceriesTable1Beforedatarender = function(widget, data, columns) {
 ```
 [![](/learn/assets/datatable_summaryrow4.png)](/learn/assets/datatable_summaryrow4.png)
 
+We can also create CSS class with all the required CSS properties inside the styles tab and then use that class inside setSummaryRowData function in the script page.
+
+Refer below example
+
+```js
+.styleSummaryRow{
+color: red;
+font-weight: bold;
+}
+```
+
+```js
+columns.age.setSummaryRowData({
+        value: 'Total Salary',
+        class: 'styleSummaryRow'
+    })
+};
+```
+
 #### Summary Row Custom Asynchronous Function
 
 Javascript function that calculates the summary can invoke an API to return result of calculation executed on the server side. This API could be application's business logic. For example, when calculating Discount being applied, business logic may assign the discount value based on the loggedin user or amount money spent etc. In such a case, the javascript function will return a ```Promise``` after calling the API.
