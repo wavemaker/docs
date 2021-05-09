@@ -61,7 +61,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 ## Technology Stack
 
-Last updated: [Release: v10.6.0](/learn/wavemaker-release-notes/v10-6-0)
+Last updated: [Release: v10.7.0](/learn/wavemaker-release-notes/v10-7-0)
 
 ---
 
