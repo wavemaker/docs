@@ -182,7 +182,7 @@
                     "app-development/services/java-services/java-integration-services",
                     "app-development/services/java-services/java-integration-database-service",
                     "app-development/services/java-services/variables",
-                    "app-development/services/java-services/generated-rest-apis-api-designer"        
+                    "app-development/services/java-services/generated-rest-apis-api-designer"      
                     ]           
           },
           {
@@ -755,6 +755,7 @@
             "how-tos/implementing-forgot-password-feature-using-java-service",
             "how-tos/accessing-rest-apis-java-service",
             "how-tos/scheduling-java-service",
+            "how-tos/integrating-junit-tests-for-wavemaker-application",
             "app-development/services/database-services/orm-artifacts",
             "how-tos/pre-post-processing-db-service-apis",
             "how-tos/accessing-loggedin-user-information-using-a-java-service",
@@ -1219,6 +1220,7 @@
       "app-development/widgets/prefab/youtube",
       "app-development/widgets/prefab/googlemaps",
       "app-development/widgets/prefab/qrcode", 
+      "app-development/widgets/prefab/barcode-scanner-prefab",
       "app-development/widgets/prefab/box-viewer-prefab",
       "app-development/widgets/prefab/entity-extraction-from-documents", 
       "app-development/widgets/prefab/docusign"
@@ -1248,6 +1250,14 @@
       "wavemaker-known-issues",
       {
         "type": "subcategory",
+        "label": "Versions: 10.7.x",
+        "ids": 
+          [ 
+            "wavemaker-release-notes/v10-7-0"
+          ]
+      },
+      {
+        "type": "subcategory",
         "label": "Versions: 10.6.x",
         "ids": 
           [ 
@@ -1259,15 +1269,6 @@
             "wavemaker-release-notes/v10-6-3",
             "wavemaker-release-notes/v10-6-2",
             "wavemaker-release-notes/v10-6-1",
-            "wavemaker-release-notes/v10-6-0"
-          ]
-      },
-      
-      {
-        "type": "subcategory",
-        "label": "Versions: 10.6.x",
-        "ids": 
-          [ 
             "wavemaker-release-notes/v10-6-0"
           ]
       },

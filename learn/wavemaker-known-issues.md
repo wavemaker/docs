@@ -19,5 +19,4 @@ Below is the list of known issues reported against the release version. We docum
 |---|---|---|---|---|
 |Chips widget: When adding chips using ENTER key, duplicate chips are getting added in preview/deploy mode.|v10.6 | v10.6.6 <td bgcolor="FED788"> In-progress|-  |
 |When deploying an app with an Angular production profile, a few JS calls fail with a 403 error. This issue occurs when the app contains a Data Table widget.| v10.6|v10.6.6 <td bgcolor="FED788"> In Progress|-|
-|Query API does not return Blob data.| v10.6|v10.6.4 <td bgcolor="82E0AA"> Fixed|-|
 
