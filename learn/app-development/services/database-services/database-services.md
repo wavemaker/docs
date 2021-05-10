@@ -60,5 +60,7 @@ WaveMaker supports the following databases and versions and the same can be used
 | [![Oracle](/learn/assets/Oracle.png)](/learn/assets/Oracle.png) |- 12c <br>- 18c <br>- 19c |Refer [recommended JDBC driver versions here](/learn/app-development/services/database-services/download-jdbc-driver-jar#oracle).|
 | [![SQLServer](/learn/assets/SQLServer.png)](/learn/assets/SQLServer.png) SQL Server | - 2016 <br> - 2017 <br> - 2019 <br> - Azure SQL [Connect to Azure](/learn/how-tos/connect-azure-sql-server/) | Refer [recommended JDBC driver versions here](/learn/app-development/services/database-services/download-jdbc-driver-jar#sqlserver).|
 | [![DB2](/learn/assets/DB2.png)](/learn/assets/DB2.png) |- 10.5 <br> - 11.1 <br> - 11.5|Refer [recommended JDBC driver versions here](/learn/app-development/services/database-services/download-jdbc-driver-jar#db2).  |
+| [![Redshift](/learn/assets/Redshift.png)](/learn/assets/Redshift.png) |- 8.0.2 | Available in Maven Repo. The dependency is automatically added in the pom.xml file.  |
+| [![SAP HANA](/learn/assets/SAP_HANA.png)](/learn/assets/SAP_HANA.png) |- 4 | Available in Maven Repo. The dependency is automatically added in the pom.xml file.  |
 | [![HSQLDB](/learn/assets/HSQLDB.png)](/learn/assets/HSQLDB.png) |- 2.4.1 <br> - 2.5.1 | Available in Maven Repo. The dependency is automatically added in the pom.xml file.  |
 
