@@ -18,10 +18,10 @@ Take a peek into what's new in this release.
 - While support for branching requires enhancements to **[how VCS operates](/learn/wavemaker-release-notes/v10-7-0#vcs-enhancements)**, including how you manage projects, groups, and organizations. See how these changes your [current workflow](/learn/wavemaker-release-notes/v10-7-0#vcs-enhancements) if you are a member of WMO Teams.
 
 
-- Are you already a part of the Amazon ecosystem? In that case, we have good news for you. With the **[support of the Redshift database](/learn/wavemaker-release-notes/v10-7-0#support-for-red-shift-database)** in WaveMaker, get speedy, high performance, horizontally scalable, with the ability to add massive capacity storage - all in the cloud. 
+- Are you already a part of the Amazon ecosystem? In that case, we have good news for you. With the **[support of the Redshift database](/learn/wavemaker-release-notes/v10-7-0#support-for-red-shift-database)** in WaveMaker, get speedy, high performance, horizontally scalable, with the ability to add massive capacity storage—all in the cloud using clustering model.
 
 
-- Are you using **[SAP HANA](/learn/wavemaker-release-notes/v10-7-0#support-for-sap-hana-database)** in your SAP modules? With the introduction of SAP HANA, import the SAP HANA database into WaveMaker for seamless integration of column-based data model. It improves flexibility, performance and uses an in-memory store with the read and editable modes.
+- Are you using **[SAP HANA](/learn/wavemaker-release-notes/v10-7-0#support-for-sap-hana-database)** in your SAP modules? With SAP HANA implementation in WaveMaker, import the SAP HANA database into your WaveMaker application for seamless integration, supporting the columnar data model. It improves flexibility, performance and uses an in-memory store with the read and editable modes.
 
 - Limitations to access public servers apply to most organizations. We understand. **[UI Artifacts](/learn/wavemaker-release-notes/v10-7-0#ui-artifacts-now-published-to-npm)** publish to the npm package manager. Incorporate UI Artifacts and simplify CI-CD pipeline using standard npm repo without worrying about firewall restrictions safely. 
 
