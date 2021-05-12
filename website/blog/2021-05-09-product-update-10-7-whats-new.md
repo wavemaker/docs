@@ -12,7 +12,7 @@ Take a peek into what's new in this release.
 
 ## What's New
 
-- **[Working in branches](/learn/wavemaker-release-notes/v10-7-0#work-in-branches)** offers more than just tracking developers' changes. Organize branches to plan features and hotfixes simultaneously, independently. Applies to WMO Teams subscribed customers.  
+- **[Working in branches](/learn/wavemaker-release-notes/v10-7-0#work-in-branches)** offers the standard SDLC workflow for making fixes on already released version of your WaveMaker aoo while rest of the team continues sprinting on the next release. You can now create a branch for the released version of the app and make your hotfix on that branch from within WaveMaker. This feature is available in our "Teams" offering. 
 
 
 - While support for branching requires enhancements to **[how VCS operates](/learn/wavemaker-release-notes/v10-7-0#vcs-enhancements)**, including how you manage projects, groups, and organizations. See how these changes your [current workflow](/learn/wavemaker-release-notes/v10-7-0#vcs-enhancements) if you are a member of WMO Teams.
