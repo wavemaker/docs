@@ -25,7 +25,7 @@ Take a peek into what's new in this release.
 
 - Limitations to access public servers apply to most organizations. We understand. All the essential **[UI Artifacts](/learn/wavemaker-release-notes/v10-7-0#ui-artifacts-now-published-to-npm)**  to generate and build an Angular app are published to the npm central repository. Incorporate UI Artifacts and simplify your CI-CD pipeline using the standard npm repo without worrying about firewall restrictions safely.
 
-- When you go grocery shopping, you know where to find the items you need. A new property called **[Groupby](/learn/wavemaker-release-notes/v10-7-0#other-improvements)** helps you group and classify data to arrange things systematically. We introduced this property within several widgets, including Select, Search, Chip, Radioset, and Autocomplete. 
+- In the times before world changed, and you could go grocery shopping, you knew where to find the items you need as they are neatly classified into categories. A new property called **[Groupby](/learn/wavemaker-release-notes/v10-7-0#other-improvements)** helps you group and classify data to arrange things systematically. We introduced this property within several widgets, including Select, Search, Chip, Radioset, and Autocomplete. 
 
 ## Improvements and Bug Fixes 
 
