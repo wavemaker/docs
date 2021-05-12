@@ -31,7 +31,7 @@ Take a peek into what's new in this release.
 
 In addition to new features, strengthening the current ones is just as important. We dealt with some critical bug fixes and enhanced several existent features. See the full list of [bug fixes here](/learn/wavemaker-release-notes/v10-7-0/#bug-fixes) and [enhancements here](/learn/wavemaker-release-notes/v10-7-0#other-improvements).
 
-Do you have a great idea for what you'd like to see next? Let us know [here](mailto:info@wavemaker.com).
+Do you have a great idea of what you'd like to see next? Let us know [here](mailto:info@wavemaker.com).
 
 ## See Also
 
