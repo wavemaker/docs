@@ -23,13 +23,13 @@ Take a peek into what's new in this release.
 
 - Are you using **[SAP HANA](/learn/wavemaker-release-notes/v10-7-0#support-for-sap-hana-database)** in your SAP modules? With SAP HANA implementation in WaveMaker, import the SAP HANA database into your WaveMaker application for seamless integration, supporting the columnar data model. It improves flexibility, performance and uses an in-memory store with the read and editable modes.
 
-- Limitations to access public servers apply to most organizations. We understand. **[UI Artifacts](/learn/wavemaker-release-notes/v10-7-0#ui-artifacts-now-published-to-npm)** publish to the npm package manager. Incorporate UI Artifacts and simplify CI-CD pipeline using standard npm repo without worrying about firewall restrictions safely. 
+- Limitations to access public servers apply to most organizations. We understand. All the essential **[UI Artifacts](/learn/wavemaker-release-notes/v10-7-0#ui-artifacts-now-published-to-npm)**  to generate and build an Angular app are published to the npm central repository. Incorporate UI Artifacts and simplify your CI-CD pipeline using the standard npm repo without worrying about firewall restrictions safely.
 
 - When you go grocery shopping, you know where to find the items you need. A new property called **[Groupby](/learn/wavemaker-release-notes/v10-7-0#other-improvements)** helps you group and classify data to arrange things systematically. We introduced this property within several widgets, including Select, Search, Chip, Radioset, and Autocomplete. 
 
 ## Improvements and Bug Fixes 
 
-In addition to new features, strengthening the current ones is just as important. We dealt with some critical bug fixes and enhanced several existent features. See the full list of [bug fixes here](/learn/wavemaker-release-notes/v10-7-0/#bug-fixes) and [enhancements here](/learn/wavemaker-release-notes/v10-7-0#other-improvements).
+In addition to new features, improving the existing ones is just as important. We fixed some critical bug fixes and enhanced several features. See the full list of [bug fixes here](/learn/wavemaker-release-notes/v10-7-0/#bug-fixes) and [enhancements here](/learn/wavemaker-release-notes/v10-7-0#other-improvements).
 
 Do you have a great idea of what you'd like to see next? Let us know [here](mailto:info@wavemaker.com).
 
