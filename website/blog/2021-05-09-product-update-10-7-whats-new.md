@@ -10,7 +10,7 @@ Take a peek into what's new in this release.
 
 <!-- truncate -->
 
-## What's new
+## What's New
 
 - **[Working in branches](/learn/wavemaker-release-notes/v10-7-0#work-in-branches)** offers more than just tracking developers' changes. Organize branches to plan features and hotfixes simultaneously, independently. Applies to WMO Teams subscribed customers.  
 
