@@ -36,7 +36,7 @@ The document provides the steps to connect to an existing Database in AWS Redshi
         - **Host**: Hostname of the Database to connect.
         - **Schema Filter**: List of schema names to be imported in the WaveMaker.
     - Advanced Settings:
-        - **Port**: Port on which SAP HANA is configured (default is 443).
+        - **Port**: Port on which Redshift is configured (default is 443).
         - **JDBC URL**: JDBC connection string of the DB.
 
 [![](/learn/assets/redshift-provide-details.png)](/learn/assets/redshift-provide-details.png)
