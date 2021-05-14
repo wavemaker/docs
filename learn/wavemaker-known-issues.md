@@ -13,10 +13,16 @@ Below is the list of known issues reported against the release version. We docum
 
 ---
 
+### 10.7.x
+
+|Issue description|Occured since|Expected to fix by|Status|Workaround|
+|---|---|---|---|---|
+|Showing errors in the inspection framework when adding custom formatters with config params in the `formatter.js` file.  |v10.7 | v10.7.1 <td bgcolor="FED788"> In-progress|-  |
+
+
 ### 10.6.x
 
 |Issue description|Occured since|Expected to fix by|Status|Workaround|
 |---|---|---|---|---|
-|Chips widget: When adding chips using ENTER key, duplicate chips are getting added in preview/deploy mode.|v10.6 | v10.6.6 <td bgcolor="FED788"> In-progress|-  |
-|When deploying an app with an Angular production profile, a few JS calls fail with a 403 error. This issue occurs when the app contains a Data Table widget.| v10.6|v10.6.6 <td bgcolor="FED788"> In Progress|-|
-
+|When deploying an app with an Angular production profile, a few JS calls fail with a 403 error. This issue occurs when the app contains a Data Table widget.| v10.6|v10.7.x <td bgcolor="FED788"> In Progress|-|
+|Chips widget: When adding chips using ENTER key, duplicate chips are getting added in preview/deploy mode.|v10.6 | v10.7.0 <td bgcolor="82E0AA"> Fixed|-  |
