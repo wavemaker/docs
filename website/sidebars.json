@@ -871,7 +871,6 @@
           [
             "how-tos/using-live-form",
             "how-tos/how-tos-form",
-            "how-tos/using-wizard-cumulative-data-entry-form",
             "how-tos/live-form-tabbed-form",
             "how-tos/how-tos-live-form",            
             "how-tos/live-form-linking-another-widget",
@@ -879,15 +878,14 @@
             "how-tos/get-validation-messages-form",
             "how-tos/adding-master-detail-records-transaction",
             "how-tos/adding-parent-child-records-single-transaction",
+            "how-tos/adding-parent-child-using-form-datatable",
             "how-tos/using-cascading-select-autocomplete-live-form-fields",
             "how-tos/using-cascading-select-within-live-form",
             "how-tos/using-cascading-filter-populate-live-form",
             "how-tos/using-wizard-master-detail-live-form",
-            "how-tos/using-wizard-progressive-data-entry-live-form",
-            "how-tos/using-wizard-cumulative-data-entry-live-form",
-            "how-tos/using-wizard-progressive-data-entry-live-form",
-            "how-tos/copy-to-clipboard"
-            
+            "how-tos/copy-to-clipboard",
+            "how-tos/form-with-wizard",
+            "how-tos/form-conditional-flows"
           ],
 
           "Calendar":

@@ -18,5 +18,3 @@ We will be adding master/detail records using Live Forms in a Wizard.
 - [7. How to add master-detail records from the same Live Form](/learn/how-tos/adding-master-detail-records-transaction/)
 - [8. How to use cascaded Live Filter to populate Live Form](/learn/how-tos/using-cascading-filter-populate-live-form/)
 - [9. How to add master-detail records from Live Form using Wizard](/learn/how-tos/using-wizard-master-detail-live-form/)
-- [10. How to progressively add fields to a record using Wizard](/learn/how-tos/using-wizard-progressive-data-entry-live-form/)
-- [11. How to accumulate data over multiple steps in a Wizard and save at the last step](/learn/how-tos/using-wizard-cumulative-data-entry-live-form/)
