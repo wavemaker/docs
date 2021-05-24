@@ -18,6 +18,7 @@ Below is the list of known issues reported against the release version. We docum
 |Issue description|Occured since|Expected to fix by|Status|Workaround|
 |---|---|---|---|---|
 |Showing errors in the inspection framework when adding custom formatters with config params in the `formatter.js` file.  |v10.7 | v10.7.1 <td bgcolor="FED788"> In-progress|-  |
+|Build failure issues on Windows. | v10.7 |V10.7.1 <td bgcolor="FED788"> In-progress| - |
 
 
 ### 10.6.x
@@ -26,3 +27,4 @@ Below is the list of known issues reported against the release version. We docum
 |---|---|---|---|---|
 |When deploying an app with an Angular production profile, a few JS calls fail with a 403 error. This issue occurs when the app contains a Data Table widget.| v10.6|v10.7.x <td bgcolor="FED788"> In Progress|-|
 |Chips widget: When adding chips using ENTER key, duplicate chips are getting added in preview/deploy mode.|v10.6 | v10.7.0 <td bgcolor="82E0AA"> Fixed|-  |
+|Issues when building applications with dependencies with scope test| v10.6 | v10.7.1 <td bgcolor="FED788"> In-progress | 1. Remove "pre-compile" action from POM.xml 2. If connectors are being used, then change the scope of added dependency from test to compile | - |
