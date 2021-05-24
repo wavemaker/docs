@@ -51,6 +51,11 @@ For this, you need to write to [support@wavemaker.com](mailto:support@wavemaker.
     - Azure region where the app needs to be deployed
     - A new storage account at Azure will be created with the name you provide. Make sure you enter a unique name.
     - If you already have a storage account ([see here on how to create the same](https://docs.microsoft.com/en-us/azure/storage/storage-create-storage-account)) you can give the details, test the connection before proceeding to the next step.
-- Select the appropriate instance based on your app requirements. You can choose from the three options provided ([see here for size comparisons](https://docs.microsoft.com/en-in/azure/virtual-machines/windows/sizes-general#a-series)) and enter the [Username and Password](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/classic/tutorial#1-basics-blade) details. [See here](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq) for more information regarding setting up of Azure VM like username, password, etc.. [![](/learn/assets/deploy_azure_instance.png)](/learn/assets/deploy_azure_instance.png)
+- Select the appropriate instance based on your app requirements. You can choose from the three options provided ([see here for size comparisons](https://docs.microsoft.com/en-in/azure/virtual-machines/windows/sizes-general#a-series)) and enter the [Username and Password](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/classic/tutorial#1-basics-blade) details. [See here](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq) for more information regarding setting up of Azure VM like username, password, etc.. 
+[![](/learn/assets/deploy_azure_instance.png)](/learn/assets/deploy_azure_instance.png)
+
+:::note
+Please make sure your Azure subscription should allow launching an instance with Standard_A1, Standard_A2, and Standard_A3
+:::
 - Once the setup is done (this could take **upto 30 minutes** in case the storage account has to be created), you can push the app from Demo to Live ([Continue from here](/learn/app-development/deployment/manage-deployed-apps/#push-to-live)).
 
