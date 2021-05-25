@@ -18,7 +18,7 @@ Below is the list of known issues reported against the release version. We docum
 |Issue description|Occured since|Expected to fix by|Status|Workaround|
 |---|---|---|---|---|
 |Showing errors in the inspection framework when adding custom formatters with config params in the `formatter.js` file.  |v10.7 | v10.7.1 <td bgcolor="FED788"> In-progress|-  |
-|Build failure issues on Windows. | v10.7 |V10.7.1 <td bgcolor="FED788"> In-progress|1. Check [pre-requisites](/learn/app-development/deployment/building-with-maven#system-prerequisites). <br> 2. Run the maven command as an `Administrator`. |
+|Build failure issues on Windows. | v10.7 |V10.7.1 <td bgcolor="FED788"> In-progress|1. Check [pre-requisites](/learn/app-development/deployment/building-with-maven#system-prerequisites). <br> 2. Run the maven command as an Administrator. |
 
 
 ### 10.6.x
