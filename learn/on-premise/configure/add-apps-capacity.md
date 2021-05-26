@@ -41,7 +41,7 @@ Ssh credentials of the Instance either should have root privliges or provide req
 
 [![deployment capacity](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.png)](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.png)
 
-- During workspace instances configuration process wavemaker running commands with sudo , if user using any another name or command for sudo, user need to add that as alias in ~/.bash_aliases file and also need to provide that alias name during studio workspace/app deploy capicity adding at launchpad.
+- During workspace instances configuration process WaveMaker running commands with sudo , if user using any another name or command for sudo, user need to add that as alias in ~/.bash_aliases file and also need to provide that alias name during studio workspace/app deploy capicity adding at launchpad.
 - Example ~/.bash_aliases file
   
   ```bash
