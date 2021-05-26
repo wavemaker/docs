@@ -28,9 +28,10 @@ Ssh credentials of the Instance either should have root privliges or provide req
     ```bash
         usermod -aG <user> docker
         chown -R <user>:<user> /usr/lib/systemd/system (for RHEL)
-         chown -R <user>:<user> /etc/systemd/system/docker.service.d   (for ubuntu)
+        chown -R <user>:<user> /etc/systemd/system/docker.service.d   (for ubuntu)
         chown -R <user>:<user> /data
-        echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+        echo "%$<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name> (for RHEL)
+        echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>  (for ubuntu)
         ```
 
 ## Add Capacity to App Deployment
@@ -38,6 +39,14 @@ Ssh credentials of the Instance either should have root privliges or provide req
 - Select App Deployments section and at deployment capacity select add capacity for adding an Instance to deployment capacity.if Instance not created [launch instance with required prerequisites](/learn/on-premise/prerequisites)
 - Provide Instance details and authentication details to connect to the Instance,if you want you can test the connection and details of instance by selecting the test option.
 
-[![deployment capacity](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.jpg)](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.jpg)
+[![deployment capacity](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.png)](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.png)
+
+- During workspace instances configuration process wavemaker running commands with sudo , if user using any another name or command for sudo, user need to add that as alias in ~/.bash_aliases file and also need to provide that alias name during studio workspace/app deploy capicity adding at launchpad.
+- Example ~/.bash_aliases file
+  
+  ```bash
+  shopt -s expand_aliases
+  alias dzdo='sudo'
+  ```
 
 - Wait for a few moments for configure and get started.

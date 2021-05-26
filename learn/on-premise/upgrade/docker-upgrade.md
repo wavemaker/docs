@@ -24,7 +24,7 @@ sidebar_label: "Docker Upgrade"
 
   ```bash
     sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
-    example: sudo apt-get install docker-ce=5:19.03.13~3-0~ubuntu-xenial docker-ce-cli=5:19.03.13~3-0~ubuntu-xenial containerd.io
+    example: sudo apt-get install docker-ce=5:20.10.6~3-0~ubuntu-focal docker-ce-cli=5:20.10.6~3-0~ubuntu-focal containerd.io -y
   ```
 
 - If the given platform user does not have privileged access, then provide the below permissions for the given user on StudioWorkspace Instance/AppDeployment Instance.  
@@ -39,7 +39,7 @@ sidebar_label: "Docker Upgrade"
       mkdir -p /etc/systemd/system/docker.service.d/
       chown -R <user>:<user> /etc/systemd/system/docker.service.d
       chown -R <user>:<user> /data
-      echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/sbin/iptables" > /etc/sudoers.d/<sudoers-file-name>
+      echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" > /etc/sudoers.d/<sudoers-file-name>
   ```
 
 ### Docker Upgrade in RHEL
@@ -68,30 +68,45 @@ Upgrade or Install the latest version of Docker.
 - Install container-selinux for RHEL 7 version only
 
 ```bash
-  yum install http://ftp.riken.jp/Linux/cern/centos/7/extras/x86_64/Packages/container-selinux-2.10-2.el7.noarch.rpm -y
+  yum install http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-1.el7_6.noarch.rpm -y
 ```
 
 - Install the latest version of Docker
   - To Install Docker in RHEL 8 use the following commands
   
   ```bash
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-19.03.13-3.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-19.03.13-3.el8.x86_64.rpm
-    sudo yum install docker-ce-cli-19.03.13-3.el8.x86_64.rpm -y
-    sudo yum install containerd.io-1.3.7-3.1.el8.x86_64.rpm -y
-    sudo yum install docker-ce-19.03.13-3.el8.x86_64.rpm -y
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-20.10.6-3.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.4-3.1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-20.10.6-3.el8.x86_64.rpm
+    sudo yum install docker-ce-cli-20.10.6-3.el8.x86_64.rpm -y
+    sudo yum install containerd.io-1.4.4-3.1.el8.x86_64.rpm -y
+    sudo yum install docker-ce-20.10.6-3.el8.x86_64.rpm -y
   ```
+
+  - Install prerequissites to install Docker in RHEL7
+  
+   ```bash
+      yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+      wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/slirp4netns-0.4.3-4.el7_8.x86_64.rpm
+      wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/fuse3-devel-3.6.1-4.el7.x86_64.rpm
+      wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/fuse3-libs-3.6.1-4.el7.x86_64.rpm
+      wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/fuse-overlayfs-0.7.2-6.el7_8.x86_64.rpm
+      sudo yum install slirp4netns-0.4.3-4.el7_8.x86_64.rpm -y
+      sudo yum install fuse3-devel-3.6.1-4.el7.x86_64.rpm -y
+      sudo yum install fuse3-libs-3.6.1-4.el7.x86_64.rpm -y
+      sudo yum install fuse-overlayfs-0.7.2-6.el7_8.x86_64.rpm -y
+   ```
 
   - To Install Docker in RHEL 7 use the following commands
   
   ```bash
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-19.03.13-3.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-19.03.13-3.el7.x86_64.rpm
-    sudo yum install docker-ce-cli-19.03.13-3.el7.x86_64.rpm -y
-    sudo yum install containerd.io-1.3.7-3.1.el7.x86_64.rpm -y
-    sudo yum install docker-ce-19.03.13-3.el7.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-20.10.6-3.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.4.4-3.1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-20.10.6-3.el7.x86_64.rpm
+    sudo yum install docker-ce-cli-20.10.6-3.el7.x86_64.rpm -y
+    sudo yum install containerd.io-1.4.4-3.1.el7.x86_64.rpm -y
+    sudo yum install docker-ce-20.10.6-3.el7.x86_64.rpm -y
   ```  
 
 ```bash
@@ -101,6 +116,7 @@ Upgrade or Install the latest version of Docker.
 ```
 
 :::note
+
 - You can choose to install Docker in any other way as per your company policy.
 - Above commands depicts one of them.
 - Make sure to do the activities below after the Docker installation.
@@ -117,7 +133,7 @@ Upgrade or Install the latest version of Docker.
       usermod -aG docker <user>
       chown -R <user>:<user> /usr/lib/systemd/system
       chown -R <user>:<user> /data
-      echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker.service,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+      echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
   ```
 
 ### Sync Studio Workspace/AppDeploy Instances
