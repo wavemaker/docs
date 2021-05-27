@@ -16,6 +16,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
+|[WaveMaker v10.7.1](/learn/wavemaker-release-notes/v10-7-1)|Bug fixes | 27 May 2021 | -|-|
 |**[WaveMaker v10.7.0](/learn/wavemaker-release-notes/v10-7-0)**|**New features + Bug fixes** |**09 May 2021** | -|-|
 |[WaveMaker v10.6.9](/learn/wavemaker-release-notes/v10-6-9)|Bug fixes |22 March 2021 | -|-|
 |WaveMaker v10.6.8|Bug fix|15 March 2021 | -|-|
@@ -61,7 +62,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 ## Technology Stack
 
-Last updated: [Release: v10.7.0](/learn/wavemaker-release-notes/v10-7-0)
+Last updated: [Release: v10.7.1](/learn/wavemaker-release-notes/v10-7-1)
 
 ---
 
@@ -73,7 +74,7 @@ Last updated: [Release: v10.7.0](/learn/wavemaker-release-notes/v10-7-0)
 |  | jquery-ui* | 1.12.1 |
 | MVC Framework | angular | 9.1.12 |
 |  | angular-ui-bootstrap | 3.3.6 |
-|  | ngx-bootstrap <td bgcolor="#44aaf4"> 5.4 -> 6.2 |
+|  | ngx-bootstrap |6.2 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
 |  | nvd3 | 1.8.6 |
@@ -82,32 +83,33 @@ Last updated: [Release: v10.7.0](/learn/wavemaker-release-notes/v10-7-0)
 
 Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
-### Back-end Frameworks
+### Backend Frameworks
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework <td bgcolor="#44aaf4"> 5.2.9 -> 5.3.5|
-| Security framework | Spring Security <td bgcolor="#44aaf4"> 5.4.1 -> 5.4.5|
+|  | Spring Framework | 5.3.5|
+| Security framework | Spring Security | 5.4.5|
 | Java JSON utilities | Gson | 2.8.6|
 | DB Persistence library | Hibernate | 5.4.22.Final|
 | Sample database | HSQL | 2.5.1|
 | JSON library | Jackson | 2.11.3|
 | Logging framework | SLF4j | 1.7.30 |
-|  | Log4j | log4j2Version - 2.13.3 |
+|  | Log4j2 | 2.13.3 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
 | REST API annotations | Swagger | 1.3.10 |
 | Date Time Framework | Java 8 Date/Time API |  |
 | Json Libraries | com.tdunning |  1.8 |
 | Servlet Framework |  | 3.1 |
 
-### Run Time Environment
+### Runtime Environment
 
 | Description | Version |
 | --- | --- |
 | JDK | 1.8 |
-| WebSphere | 8.5.5 |
+| Weblogic <td bgcolor="#44aaf4"> 12c (12.1.3) |
+| WebSphere <td bgcolor="#44aaf4"> 8.5.5 -> 9.0.5 |
 | JBoss | 7.1.1 |
-| Tomcat | 8.5* |
+| Tomcat <td bgcolor="#44aaf4"> 8.5 -> 9.0 |
 | Cordova (mobile apps) <br> Android <br> iOS | 10.0.0 <br> 9.0.0  <br> 6.1.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
