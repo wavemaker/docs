@@ -31,6 +31,18 @@ Before proceeding with Build, you need to set the following properties:
 
 - **Application Name**: By default, it is set to the name of the WaveMaker application. You can set the name different from the app name.
 - **Server Path**: By default, it provides a server path where the app is being hosted. You can edit this field if you are hosting your app elsewhere like web server.
+  From 10.7.1 releae onwards, there is none option added to the serverPath.
+  
+  [![none serverpath](/learn/assets/noneoptn.png)](/learn/assets/noneoptn.png)
+  [![none serverpath selected](/learn/assets/pathnone.png)](/learn/assets/pathnone.png)
+  
+If none is selected, then that means there is no backend server to connect. Hence,
+- app will not ping for wmProperties and it will be picked up locally.
+- Wavemaker app security will not work
+- App cannot connect to any databases that are hosted
+- offline functionality will not be supported
+- Rest api variables without proxy would work 
+
 - **Application Information**: It displays information related to the app such as **Application ID** (by default, `com.appname`), **Version** (by default, 0.0.1) and you can edit the fields as per your requirements.
 - **Developer Information**: Provide details such as **Developer Name**, **Developer URL** and **Developer Email** (by default set to WaveMaker account email id).
 
