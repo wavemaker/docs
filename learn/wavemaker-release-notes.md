@@ -89,6 +89,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | --- | --- | --- |
 |  | Spring Framework | 5.3.5|
 | Security framework | Spring Security | 5.4.5|
+| XSS | Antisamy Framework <td bgcolor="#44aaf4"> 1.5.10 to 1.6.3 |
 | Java JSON utilities | Gson | 2.8.6|
 | DB Persistence library | Hibernate | 5.4.22.Final|
 | Sample database | HSQL | 2.5.1|
