@@ -39,7 +39,7 @@ sidebar_label: "Docker Upgrade"
       mkdir -p /etc/systemd/system/docker.service.d/
       chown -R <user>:<user> /etc/systemd/system/docker.service.d
       chown -R <user>:<user> /data
-      echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" > /etc/sudoers.d/<sudoers-file-name>
+      echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
   ```
 
 ### Docker Upgrade in RHEL
@@ -133,7 +133,7 @@ Upgrade or Install the latest version of Docker.
       usermod -aG docker <user>
       chown -R <user>:<user> /usr/lib/systemd/system
       chown -R <user>:<user> /data
-      echo "%${user} ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+      echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
   ```
 
 ### Sync Studio Workspace/AppDeploy Instances

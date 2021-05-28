@@ -54,19 +54,19 @@ sudo apt-get install python3 -y
       curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
   ```
 
-  - To add docker repository for ubuntu xenial
+  - To add docker repository for ubuntu xenial(16.04.6)
 
   ```bash
     echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable" > /etc/apt/sources.list.d/docker.list
   ```
 
-  - To add docker repository for ubuntu bionic
+  - To add docker repository for ubuntu bionic(18.04.5)
 
   ```bash
     echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" > /etc/apt/sources.list.d/docker.list
   ```
 
-  - To add docker repository for ubuntu focal
+  - To add docker repository for ubuntu focal(20.04.2.0)
 
   ```bash
     echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" > /etc/apt/sources.list.d/docker.list
