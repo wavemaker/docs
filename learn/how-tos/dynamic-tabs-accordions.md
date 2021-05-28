@@ -1,6 +1,7 @@
 ---
-title: "Implementing Dynamic Tabs and Accordions"
+title: "Using Dynamic Tabs and Accordions"
 id: ""
+sidebar_label: "Dynamics Tabs and Accordions"
 ---
 ---
 
@@ -10,47 +11,47 @@ Tab is an essential navigation element of every web application. WaveMaker provi
 
 Now you can bind the dataset to the tabs widget. Based on the dataset, a number of Tab panes are generated.
 
-### Implementing a Usecase
+### Tabs Usecase
 
-Dynamically open new tab pages based on user interaction. Whenever you click the “Add New Employee” or “edit” button beneath an existing record, the editing should occur in separate tab pages that get added dynamically.
+Dynamically open new tab pages based on user interaction. When you click the **Add New Employee** or **edit** button beneath the existing records, the editing should occur in separate tab pages that get added dynamically.
 
 [![tabs preview](/learn/assets/dynamicwidgets/tabspreview.gif)](/learn/assets/dynamicwidgets/tabspreview.gif)
 
 #### 1. Import DB
 
-Navigate to the Databases section and import **Sample HR database**. For more information, see [Working with Databases](/learn/app-development/services/database-services/working-with-databases/).
+- Navigate to the Databases section and import **Sample HR database**. For more information, see [Working with Databases](/learn/app-development/services/database-services/working-with-databases/).
 
 #### 2. Create a Partial and Configure Live Form
 
-1. Create a partial page with a name **PartialNewEmp**. 
-2. Drag and drop LiveForm and bind it to the **Employee** Entity present in the database. For more information, see [Configure LiveForm](/learn/app-development/widgets/datalive/live-form/live-form-basic-usage).
+- Create a [Partial](/learn/app-development/ui-design/page-concepts/partial-pages) page and name it **PartialNewEmp**.
+- Drag and drop LiveForm and bind it to the **Employee** Entity present in the database. For more information, see [Configure LiveForm](/learn/app-development/widgets/datalive/live-form/live-form-basic-usage).
 
 #### 3. Create a Model Variable
 
-Create a page and create a model variable with Entity type with the below dataset.
+Create a Page and create a Model Variable with an Entity type with the below dataset.
 
 [![](/learn/assets/dynamicwidgets/modelvar.png)](/learn/assets/dynamicwidgets/modelvar.png)
 
-#### 4. Drag and drop Tab Widget
+#### 4. Drag and Drop Tab Widget
 
-1. Drag and drop the tab widget.
-2. Under the Properties panel, change the **type** property to **dynamic**. 
-3. Now, bind the **dataset value** property under the properties panel to the model variable dataset (Variable created in Step3).
+- Drag and drop the Tab widget.
+- In the **Properties** panel, change the **Type** property to **Dynamic**.
+- Now, bind the **Dataset Value** property in the **Properties** panel to the Model Variable dataset (Variable created in Step3).
 
 #### 5. Select and Bind
 
-1. Select **Tab Pane** and set the **content** property to the created `modelVariable -> dataset -> tabcontent`.
-2. Bind **title** to the `modelVariable -> dataset -> tabtitle`.
+- Select **Tab Pane** and set the **Content** property to the created `modelVariable -> dataset -> tabcontent`.
+- Bind **Title** to the `modelVariable -> dataset -> tabtitle`.
 
-#### 6. Create another Partial
+#### 6. Create Another Partial
 
-1. Create another Partial with the name **PartialEmp**.
-2. Drag and drop the DataTable
-3. Configure the DataTable with the **Employee**. The Entity data source is present in the database. 
-4. Ad a button in the partial
-5. And, `onButton` click add another object to the model variable (created in Step3) to add the Tab Pane on button click.
+- Create another Partial with the name **PartialEmp**.
+- Drag and drop the DataTable.
+- Configure the DataTable with the **Employee**. The Entity data source is present in the database.
+- Add a button in the Partial.
+- And, `onButton` click add another object to the Model Variable (created in Step3) to add the Tab Pane on button click.
 
-For more information, see [AddItem in Model Variable](/learn/app-development/variables/model-variable#additemvalue-index)
+For more information, see [AddItem in Model Variable](/learn/app-development/variables/model-variable#additemvalue-index).
 
 ```js
 Partial.button1Click = function($event, widget) {
@@ -62,13 +63,13 @@ Partial.button1Click = function($event, widget) {
 ```
 
 :::note
-Adding above object at index 1 in the model variable.
+Adding the above object at index 1 in the Model Variable.
 :::
 
 #### 7. Preview the App
 
 - Click Preview.
-- When you click the **Add new Employee** button beneath an existing records, a separate Tab Pane gets added dynamically to add an Employee record.
+- When you click the **Add New Employee** button beneath the existing records, a separate Tab Pane gets added dynamically to add an Employee record.
 
 :::note
 You can also remove the Tab Panes added by removing the item from the Model Variable. For more information, see [Remove Item in Model Variable](/learn/app-development/variables/model-variable#removeitemindex).
@@ -78,55 +79,55 @@ You can also remove the Tab Panes added by removing the item from the Model Vari
 
 An Accordion is an interactive component consisting of panels with headers and content sections. You can click these panels to expand and collapse to show the description area.
 
-It is possible to create a fully dynamic and flexible Accordion without much effort. Now, you can bind the dataset to the Accordion widget. Based on the dataset, the number of Accordion Panes will generate.
+It is possible to create a fully dynamic and flexible Accordion without much effort. Now, you can bind the dataset to the Accordion widget. Based on the dataset, a number of Accordion Panes will generate.
 
-### Implementating a Usecase
+### Accordion Usecase
 
 Display list of departments as Accordion Panes and their respective employee details as the Accordion Pane content.
 
-[![](/learn/assets/dynamicwidgets/accordionpreview.gif)](/learn/assets/dynamicwidgets/accordionpreview.gif)
+[![preview](/learn/assets/dynamicwidgets/accordionpreview.gif)](/learn/assets/dynamicwidgets/accordionpreview.gif)
 
 #### 1. Import a DB
 
-Navigate to the Databases section and import **Sample HR database**. For more information, see [Working with Databases](/learn/app-development/services/database-services/working-with-databases/).
+- Navigate to the Databases section and import **Sample HR database**. For more information, see [Working with Databases](/learn/app-development/services/database-services/working-with-databases/).
 
 #### 2. Create a Partial
 
-1. Create a partial page.
-2. Create a variable for the **Employee** Entity present in the database. For more information, see [Creating Variable](/learn/app-development/variables/database-crud/).
+- Create a [Partial](/learn/app-development/ui-design/page-concepts/partial-pages) page.
+- Create a Variable for the **Employee** Entity present in the database. For more information, see [Creating Variable](/learn/app-development/variables/database-crud/).
 
 #### 3. Add a Page Parameter
 
-Add a page param to the partial page. See the below image for reference.
+Add a page param to the Partial page. See the below image for reference.
 
 [![partial page](/learn/assets/dynamicwidgets/partialpage.png)](/learn/assets/dynamicwidgets/partialpage.png)
 
 #### 4. Accessing Variable
 
-1. Open the variable created in Step2.
-2. Bind the deptId field in the variable to the added partial page param (the param added in Step3).
+- Open the Variable created in Step2.
+- Bind the `deptId` field in the Variable to the added Partial page param (the param added in Step3).
 
 [![variable binding](/learn/assets/dynamicwidgets/variablebind.png)](/learn/assets/dynamicwidgets/variablebind.png)
 
-#### 5. Create a page and Variable
+#### 5. Create a Page and Variable
 
-1. Create a page
-2. Create Variable for the **Department** Entity present in the database. For more information, see [Creating Variable](/learn/app-development/variables/database-crud/).
+- Create a Page.
+- Create Variable for the **Department** Entity present in the database. For more information, see [Creating Variable](/learn/app-development/variables/database-crud/).
 
-#### 6. Drag and drop accordion widget
+#### 6. Drag and Drop Accordion Widget
 
-1. Drag and drop accordion widget.
-2. Under the properties panel, change the **type** property to **dynamic**. 
-3. Bind the **dataset value** property under the properties panel to the department variable dataset (Variable created in Step2).
+- Drag and drop Accordion widget.
+- In the **Properties** panel, change the **Type** property to **Dynamic**.
+- Bind the **Dataset Value** property in the Properties panel to the Department Variable dataset (Variable created in Step2).
 
 #### 7. Select and Bind
 
-1. Select Accordion Pane and set the **content** property to the created partial page (the Partial created in Step2).
-2. Bind the partial param to the `deptId` of the Department variable dataset.
-3. Also, bind the **Title** property of the Tab Pane to the name of the Department Variable dataset.
+- Select Accordion Pane and set the **Content** property to the created Partial page (the Partial created in Step2).
+- Bind the Partial param to the `deptId` of the Department Variable dataset.
+- Also, bind the **Title** property of the Tab Pane to the name of the Department Variable dataset.
 
 #### 8. Preview the App
 
-1. Click Preview.
-2. You can see the all the departments are displayed as Accordion Pane titles, and the respective Employee's as the accordion pane content.
+- Click Preview.
+- You can see that all the departments are displayed as Accordion Pane titles, and the respective Employee's as the Accordion Pane content.
 
