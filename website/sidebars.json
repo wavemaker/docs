@@ -624,7 +624,8 @@
     "on-premise/upgrade/download-copy-patch",
     "on-premise/upgrade/extract-patch",
     "on-premise/upgrade/run-patch",
-    "on-premise/upgrade/docker-upgrade"
+    "on-premise/upgrade/docker-upgrade",
+    "on-premise/upgrade/ubuntu-os-upgrade"
   ]
 },
 
