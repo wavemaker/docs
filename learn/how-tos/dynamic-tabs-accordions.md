@@ -1,7 +1,7 @@
 ---
 title: "Using Dynamic Tabs and Accordions"
 id: ""
-sidebar_label: "Dynamics Tabs and Accordions"
+sidebar_label: "Dynamic Tabs and Accordions"
 ---
 ---
 
