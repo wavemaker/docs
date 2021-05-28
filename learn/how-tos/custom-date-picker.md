@@ -27,17 +27,29 @@ For a web project, a custom picker opens when it renders on a web browser, and i
 The above images were taken from android version 7.0 and iPhone version 14. Therefore, the date pickers may slightly vary depending on the device version. However, in mobile app, when you click date, the native picker will open.
 :::
 
-To display the custom date picker shown in web project above, enable the **Show Custom Picker** property from the properties panel.
+## How it works
 
-[![showcustompicker_prop](/learn/assets/iospicker.png)](/learn/assets/iospicker.png)
+To display the custom date picker shown in the web project above, enable the **Show Custom Picker** property from the properties panel.
 
-When setting the **`showcustompicker`** property to true, the **Show DatePicker On** property and **Date Entry Mode** property will enable. For more information, see [datetime properties](/learn/app-development/widgets/form-widgets/date-time-datetime).
+[![showcustompicker_prop](/learn/assets/show-custom-picker-properties.png)](/learn/assets/show-custom-picker-properties.png)
 
-<!--- Picture output view of showing custom picker instead of native. --->
+When setting the **Show Custom Picker** property to true, the **Show DatePicker On** property and **Date Entry Mode** property will enable. For more information, see [datetime properties](/learn/app-development/widgets/form-widgets/date-time-datetime).
 
-To show a custom picker instead of a native picker for a web app rendered in mobile view, set `showcustompicker` in the markup as shown below.
+### Custom Picker for Web Apps with Mobile View
+
+To show a custom picker instead of a native picker for a web app rendered in a mobile, set the `showcustompicker` property in the markup as shown below. This applies to Date, Time and Datetime widgets.
+
+:::note
+The markup extension is specifically for web apps to customize web projects to render mobile views with the custom date picker.
+:::
+
+```js
+<wm-date name="date1" showcustompicker="true"></wm-date>
+```
 
 [![output](/learn/assets/code_showcustompicker.png)](/learn/assets/code_showcustompicker.png)
+
+
 
 
 
