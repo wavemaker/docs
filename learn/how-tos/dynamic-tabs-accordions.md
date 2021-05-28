@@ -14,6 +14,8 @@ Now you can bind the dataset to the tabs widget. Based on the dataset, the numbe
 
 Dynamically open new tab pages based on user interaction. Whenever you click the “Add New Employee” or “edit” button beneath an existing record, the editing should occur in separate tab pages that get added dynamically.
 
+[![tabs preview](/learn/assets/dynamicwidgets/tabspreview.gif)](/learn/assets/dynamicwidgets/tabspreview.gif)
+
 #### 1. Import DB
 
 Navigate to the Databases section and import **Sample HR database**. For more information, see [Working with Databases](/learn/app-development/services/database-services/working-with-databases/).
@@ -68,8 +70,6 @@ Adding above object at index 1 in the model variable.
 - Click Preview.
 - When you click the **Add new Employee** button beneath an existing records, a separate Tab Pane gets added dynamically to add an Employee record.
 
-[![tabs preview](/learn/assets/dynamicwidgets/tabspreview.gif)](/learn/assets/dynamicwidgets/tabspreview.gif)
-
 :::note
 You can also remove the Tab Panes added by removing the item from the Model Variable. For more information, see [Remove Item in Model Variable](/learn/app-development/variables/model-variable#removeitemindex).
 :::
@@ -82,7 +82,9 @@ It is possible to create a fully dynamic and flexible Accordion without much eff
 
 ### Implementating a Usecase
 
-Display List of Departments as Accordion Panes and their respective employee details as the Accordion Pane content.
+Display list of departments as Accordion Panes and their respective employee details as the Accordion Pane content.
+
+[![](/learn/assets/dynamicwidgets/accordionpreview.gif)](/learn/assets/dynamicwidgets/accordionpreview.gif)
 
 #### 1. Import a DB
 
@@ -127,6 +129,4 @@ Add a page param to the partial page. See the below image for reference.
 
 1. Click Preview.
 2. You can see the all the departments are displayed as Accordion Pane titles, and the respective Employee's as the accordion pane content.
- 
-[![](/learn/assets/dynamicwidgets/accordionpreview.gif)](/learn/assets/dynamicwidgets/accordionpreview.gif)
 
