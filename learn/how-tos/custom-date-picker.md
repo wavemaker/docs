@@ -4,32 +4,33 @@ id: ""
 ---
 ---
 
-In this document, learn how how to show the custom date picker instead of native picker in a mobile project. 
+In this document, learn how to show the custom date picker instead of the native picker in a mobile project.
 
 Custom date picker works similar to the one that renders in the web project. You can use the web version of the date picker for the mobile projects as well. To do this, set the **Show Custom Picker** property from the properties panel of the Date and Datetime widgets from a mobile project.
 
-## Date Picker in Web
+## Date Pickers in Web and Mobile
 
-For a web project, a custom picker opens when it renders on a web browser, and it uses native picker when it renders on a mobile browser, as shown below.
+Typically for a web project, on clicking the date, a custom picker opens when it renders on a web browser, and it uses the native picker when it renders on a mobile browser, as shown below.
 
+:::note
+The following screenshots were taken from android version 7.0 and iPhone version 14. Therefore, the date pickers may vary slightly depending on the device version.
+:::
+
+### Date Picker in Web
 
 [![web custom picker](/learn/assets/webpicker.png)](/learn/assets/webpicker.png)
 
-## Date Picket in Android
+### Date Picker in Android
 
 [![mobile native picker](/learn/assets/androidpicker.png)](/learn/assets/androidpicker.png)
 
-## Date Picket in iOS
+### Date Picker in iOS
 
 [![mobile native picker](/learn/assets/iospicker.png)](/learn/assets/iospicker.png)
 
-:::note
-The above images were taken from android version 7.0 and iPhone version 14. Therefore, the date pickers may slightly vary depending on the device version. However, in mobile app, when you click date, the native picker will open.
-:::
+## How it Works
 
-## How it works
-
-To display the custom date picker shown in the web project above, enable the **Show Custom Picker** property from the properties panel.
+To display the custom date picker like the [web version](/learn/how-tos/custom-date-picker#date-picker-in-web) of it, enable the **Show Custom Picker** property from the properties panel.
 
 [![showcustompicker_prop](/learn/assets/show-custom-picker-properties.png)](/learn/assets/show-custom-picker-properties.png)
 
