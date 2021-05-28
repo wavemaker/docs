@@ -6,9 +6,9 @@ id: ""
 
 ## Dynamic Tabs
 
-A Tab component is an essential part of every web application. WaveMaker provides a really flexible and powerful Tab component. It is possible to create a fully dynamic and flexible tab component without much effort using a data source.
+Tab is an essential navigation element of every web application. WaveMaker provides a really flexible and powerful Tab component. It is possible to create a fully dynamic tab component using a data source.
 
-Now you can bind the dataset to the tabs widget. Based on the dataset, the number of Tab panes generate.
+Now you can bind the dataset to the tabs widget. Based on the dataset, a number of Tab panes are generated.
 
 ### Implementing a Usecase
 
