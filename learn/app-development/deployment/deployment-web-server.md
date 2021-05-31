@@ -18,10 +18,10 @@ This list is for reference purpose. Apart from these, you can use any standard J
     
 | **Web Server** | **Versions** | **Instructions** |
 | --- | --- | --- |
-|[![](/learn/assets/tomcat.jpg)](/learn/assets/tomcat.jpg)| 8.x, 9.x | [Deployment instructions for Tomcat](/learn/how-tos/wavemaker-application-deployment-tomcat/) |
-|[![](/learn/assets/websphere.png)](/learn/assets/websphere.png)| 17.0.0.2 Liberty | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-websphere-liberty-profile/) |
-|[![](/learn/assets/jboss.png)](/learn/assets/jboss.png) | WildFly 10.0, 11.0 | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-jboss/) |
-|[![](/learn/assets/weblogic.png)](/learn/assets/weblogic.png) WebLogic | 12c (12.2.1) | [deployment instructions](/learn/how-tos/wavemaker-application-deployment-weblogic-application-server/) |
+|[![](/learn/assets/tomcat.jpg)](/learn/assets/tomcat.jpg)| 8.5.x, 9.x | [Deployment Instructions](/learn/how-tos/wavemaker-application-deployment-tomcat/) |
+|[![](/learn/assets/websphere.png)](/learn/assets/websphere.png)| 9.0.5 Base, 17.0.0.2 Liberty| [Deployment Instructions](/learn/how-tos/wavemaker-application-deployment-websphere-liberty-profile/) |
+|[![](/learn/assets/jboss.png)](/learn/assets/jboss.png) | WildFly 10.0, 11.0 | [Deployment Instructions](/learn/how-tos/wavemaker-application-deployment-jboss/) |
+|[![](/learn/assets/weblogic.png)](/learn/assets/weblogic.png) WebLogic | 12c (12.2.1) | [Deployment Instructions](/learn/how-tos/wavemaker-application-deployment-weblogic-application-server/) |
 
 ## Profile Configuration
 

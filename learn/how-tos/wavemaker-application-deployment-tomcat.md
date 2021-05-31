@@ -21,7 +21,7 @@ The minimum required JDK version is 1.8.
 
 - Tomcat has to be installed & running
 - Tomcat user credential that has the role of
-    - `manager-gui` for Tomcat `v8.x` and `v9.x`
+    - `manager-gui` for Tomcat `v8.5.x` and `v9.x`
 - [WaveMaker application war file to be deployed](/learn/app-development/deployment/deployment-web-server/#generate-a-war-file).
 
 ### Typical Hardware Requirements
