@@ -14,21 +14,14 @@ This section walks through the steps to deploy WaveMaker app to Oracle WebLogic 
 1. WebLogic Server needs to installed in the system. For installation, see [Oracle WebLogic Server Installers](http://www.oracle.com/technetwork/middleware/weblogic/downloads/wls-main-097127.html). 
 
 :::note
-The following instructions are for deployment to **WebLogic Server 11g `10.3.6`**.
+The following instructions are for deployment to **WebLogic Server 12c `12.1.3`**.
 :::
-2. Prepare WebLogic XML for defining classloading policies and other instructions.
-3. WaveMaker application (war) file. The following instructions assume the war file is named `SampleApp.war`, change the name as per your use case.
+2. WaveMaker application (war) file. The following instructions assume the war file is named `SampleApp.war`, change the name as per your use case.
 
 ## Steps Involved
 
-1. Setting `WebLogic.xml` file in project
-2. Create Application War file for WaveMaker app
-3. Deploy Application (Deployment Process)
-
-## Setting WebLogic XML file in project
-
-1. Download the following [zip file](/learn/assets/weblogic.zip) and extract the WebLogic XML file.
-2. Open the WaveMaker app and [Import the extracted `weblogic.xml` file](/learn/app-development/services/3rd-party-libraries) into project. Make sure it is imported to the following location: [project_home]/src/main/webapp/web-inf[![](/learn/assets/weblogic1.png)](/learn/assets/weblogic1.png)
+1. Create Application War file for WaveMaker app
+2. Deploy Application (Deployment Process)
 
 ## Create Application War file
 
