@@ -53,23 +53,74 @@ Create JavaService and integrate twilio one-time passcode API's in the applicati
 Once the OTP is validated, change the *securityInfo.userAttribute*(added in *Step1* in security success handler) value to *success* from *pending*.
 
 ```Java
-public boolean validateOTP(String phoneNumber, String otpCode) {
-    VerificationResult result = twilioConnector.verifyOTP(phoneNumber, otpCode);
-    //Updating the added otpverification attribute to success once OTP is valid.
-    if(result.isValid()){
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        WMAuthentication wmAuthentication = (WMAuthentication) authentication;
-        wmAuthentication.addAttribute("otpverification", "success", Attribute.AttributeScope.ALL);
+import com.wavemaker.connector.twilio.TwilioConnector;
+import com.wavemaker.connector.twilio.constant.Channel;
+import com.wavemaker.connector.twilio.model.VerificationResult;
+import com.wavemaker.runtime.security.Attribute;
+import com.wavemaker.runtime.security.SecurityService;
+import com.wavemaker.runtime.security.WMAuthentication;
+
+@ExposeToClient
+public class TwilioAuthService {
+
+    private static final Logger logger = LoggerFactory.getLogger(TwilioAuthService.class);
+
+    @Autowired
+    private TwilioConnector twilioConnector;
+
+    @Autowired
+    private SecurityService securityService;
+
+    public boolean sendOTPCode(String phoneNumber, Integer channelId) {
+        switch (channelId) {
+            case 1:
+                return twilioConnector.sendOTP(phoneNumber, Channel.SMS).isValid();
+            case 2:
+                return twilioConnector.sendOTP(phoneNumber, Channel.CALL).isValid();
+            case 3:
+                return twilioConnector.sendOTP(phoneNumber, Channel.EMAIL).isValid();
+            default:
+                return false;
+        }
     }
-    return result.isValid();
+
+    public boolean validateOTP(String phoneNumber, String otpCode) {
+        VerificationResult result = twilioConnector.verifyOTP(phoneNumber, otpCode);
+        //Updating the added otpverification attribute to success from pending.
+        if(result.isValid()){
+            Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+            WMAuthentication wmAuthentication = (WMAuthentication) authentication;
+            wmAuthentication.addAttribute("otpverification", "success", Attribute.AttributeScope.ALL);
+        }
+        return result.isValid();
+    }
 }
 ```
 
 ### Step3: Integrate OTP into the application
 
+Add below filter under `src/main/java/com/security/service/filter`
+
 1. To prevent the user from navigating to *OTPPage* instead of user landing page after successful authentication without OTP verification, add a filter to check if the *securityInfo.userAttribute.otpverification* added is still pending. If yes then redirect to *OTPPage*.
 
 ```Java
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.wavemaker.runtime.security.SecurityService;
+
 public class OTPFilter implements Filter {
 
     private static final Logger logger = LoggerFactory.getLogger(OTPFilter.class);
@@ -114,7 +165,7 @@ public class OTPFilter implements Filter {
     public void destroy() {
         logger.info("Destroy filter: {}", getClass().getSimpleName());
     }
-
+}
 ```
 Add the bean in **project-user-spring.xml** file.
 
@@ -132,13 +183,13 @@ Also add below Custom Filter in **general-options.json** file.
 		}
 	]
 ```
-Once this filter is added in **general-options.json** file, open security dialog and click on save. Once the save is clicked platform will automatically add below code in **project-security.xml** file.
+Once this filter is added in **general-options.json** file, open security dialog and click on save to automatically add below code in **project-security.xml** file.
 ```Java
 <security:custom-filter position="LAST" ref="otpFilter"/>
 ```
 
 :::note
-If you donot want to open and save the security settings then add the above code in **project-security.xml** below the default **security:custom-filter**.
+If you donot want to open and save the security dialog then add the above code in **project-security.xml** below the default **security:custom-filter**.
 :::
 
 2. Create Variable for the JavaService methods written in **Step2**(both *sendOTP* and *validateOTP* API's using twilio-connector).
@@ -168,7 +219,7 @@ Also Design the dialog to accept OTP code and validate the OTP.
 
 [![](/learn/assets/connector/otpvalid.png)](/learn/assets/connector/otpvalid.png)
 
-In the above image, *Validate OTP* button triggeres the *validateOTP* variable created. Bind the variable data parameters in the variable dialog. OnSuccess of this variable close the dialog and check the *securityInfo.userAttributes.otpverification* if value is *success* then navigate to landing page.
+In the above image, *Validate OTP* button triggeres the *validateOTP* variable created. Bind the variable data parameters in the variable dialog. OnSuccess of this variable close the dialog and check the `securityInfo.userAttributes.otpverification` if value is *success* then navigate to landing page.
 
 :::example
 
