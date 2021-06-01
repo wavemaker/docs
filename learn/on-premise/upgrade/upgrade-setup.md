@@ -10,6 +10,7 @@ This document provides the instructions install a patch to upgrade the current W
 The following table is the compatibility matrix for upgrading the WME:
 
 ::: note
+
 The following list provides the currently supported versions for WME patching. Kindly contact our WaveMaker support team if you did not find the right version.
 
 [Check out full list of releases here.](/learn/wavemaker-release-notes#current-release-details)

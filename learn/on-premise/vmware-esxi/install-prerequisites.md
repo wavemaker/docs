@@ -99,13 +99,13 @@ sudo apt-get install python3 -y
   - data directory should be owned by the user.
   - Give permission to manage docker.service, systemctl daemon-reload, iptable.
 
-    ```bash
-        usermod -aG docker <user>
-        mkdir -p /etc/systemd/system/docker.service.d/
-        chown -R <user>:<user> /etc/systemd/system/docker.service.d
-        chown -R <user>:<user> /data
-        echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
-        ```
+  ```bash
+      usermod -aG docker <user>
+      mkdir -p /etc/systemd/system/docker.service.d/
+      chown -R <user>:<user> /etc/systemd/system/docker.service.d
+      chown -R <user>:<user> /data
+      echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+  ```
 
 ## RHEL
 

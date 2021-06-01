@@ -13,11 +13,11 @@ sidebar_label: "Ubuntu Upgrade"
    cat /etc/os-release
 ```
 
-[![get os version](/learn/assets/wme-setup/upgrade-wme-setup/get-os-details-initial.png)](/learn/assets/wme-setup/upgrade-wme-setup/get-os-details-initial.png) 
+[![get os version](/learn/assets/wme-setup/upgrade-wme-setup/get-os-details-initial.png)](/learn/assets/wme-setup/upgrade-wme-setup/get-os-details-initial.png)
 
 ## APT commands for Upgrade existing system
 
-- Use the apt command or apt-get command to upgrade existing system 
+- Use the apt command or apt-get command to upgrade existing system
 
 ```bash
    apt update && sudo apt upgrade
@@ -27,11 +27,11 @@ sidebar_label: "Ubuntu Upgrade"
 
 ## Reboot the system
 
-- You have to reboot the system if kernel was updated by using the following command 
+- You have to reboot the system if kernel was updated by using the following command
 
 ```bash
    reboot
-``` 
+```
 
 ## Stop Docker service in the system
 
@@ -51,15 +51,15 @@ sidebar_label: "Ubuntu Upgrade"
 
 [![do upgrade](/learn/assets/wme-setup/upgrade-wme-setup/do-release-upgrade.png)](/learn/assets/wme-setup/upgrade-wme-setup/do-release-upgrade.png)
 
-   - Open ssh port 1022 or use the prompted port, this is used to be able to ssh into instance in case of disaster
+- Open ssh port 1022 or use the prompted port, this is used to be able to ssh into instance in case of disaster
 
      [![SSH port](/learn/assets/wme-setup/upgrade-wme-setup/ssh-port-allocate.png)](/learn/assets/wme-setup/upgrade-wme-setup/ssh-port-allocate.png)
 
-   - We have to follow on-screen instructions for upgrade, during this you might be asked to replace existing grub or ssh config file. Do select to keep existing version to avoid further complications
+- We have to follow on-screen instructions for upgrade, during this you might be asked to replace existing grub or ssh config file. Do select to keep existing version to avoid further complications
 
      [![Grub update](/learn/assets/wme-setup/upgrade-wme-setup/grub-update.png)](/learn/assets/wme-setup/upgrade-wme-setup/grub-update.png)
 
-   - You will see this message System upgrade is complete and will ask to restart the system proceed with restart
+- You will see this message System upgrade is complete and will ask to restart the system proceed with restart
 
      [![Sucess Restart](/learn/assets/wme-setup/upgrade-wme-setup/success-restart.png)](/learn/assets/wme-setup/upgrade-wme-setup/success-restart.png)
 
@@ -68,9 +68,12 @@ sidebar_label: "Ubuntu Upgrade"
 ```bash
    cat /etc/os-release
 ```
-[![get os version final](/learn/assets/wme-setup/upgrade-wme-setup/get-os-details-final.png)](/learn/assets/wme-setup/upgrade-wme-setup/get-os-details-final.png) 
 
-    
-- Repeat the above process to further update the os versions 
+[![get os version final](/learn/assets/wme-setup/upgrade-wme-setup/get-os-details-final.png)](/learn/assets/wme-setup/upgrade-wme-setup/get-os-details-final.png)
 
-**Note: For 16.04 ubuntu user to upgrade to 20.04 version the above operations is done two times to reach destination version**  
+
+- Repeat the above process to further update the os versions.
+
+::: note
+
+For 16.04 ubuntu user to upgrade to 20.04 version the above operations is done two times to reach destination version**  
