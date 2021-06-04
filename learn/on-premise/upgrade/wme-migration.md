@@ -5,7 +5,7 @@ sidebar_label: "WME Migration"
 ---
 ---
 
-To Upgrade the operating system os by migrating Data or for Disastor and recovery process users can follow below steps.
+To Upgrade the operating system os by migrating Data or for Disaster and recovery process users can follow below steps.
 
 ## Prerequisites
 
@@ -28,10 +28,10 @@ To Upgrade the operating system os by migrating Data or for Disastor and recover
 
 ### ESXI
 
-- Use below steps for take /wm-data backup in Platform Instance
+- Use below steps for take /wm-data backup in Platform Instance, it will create data.tar in /wm-data location
   
 ```bash
-    bash wme-installer.sh --data-archive
+bash wme-installer.sh --data-archive
 ```
 
 ## Data restore
@@ -42,15 +42,15 @@ To Upgrade the operating system os by migrating Data or for Disastor and recover
 - Mount the volume to the platform Instance using following command
 
 ```bash
-    mount /dev/</wm-data disk> /wm-data
-    example: mount /dev/xvdh /wm-data
+mount /dev/</wm-data disk> /wm-data
+example: mount /dev/xvdh /wm-data
 ```
 
 - Update the fstab entry for volume on every system reboot, add an entry for the device to the /etc/fstab file.
 - Take UUID of disks for identification by using the following command.
 
 ```bash
-    blkid
+blkid
 ```
 
 - To entry the UUID of the disks in fstab, use the following format.
@@ -67,21 +67,23 @@ UUID=</wm-data block-device-UUID>  /wm-data   ext4   defaults ,nofail  0  2
 bash wme-installer.sh --data-untar
 ```  
 
+[![data_untar](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)
+
 ### Studio Workspace/AppDeploy Instances
 
 - Launch the instance or VM  and attach the /data to Studio Workspace/AppDeploy Instances.
 - Mount the volume to the Studio Workspace/AppDeploy Instances using following command
 
 ```bash
-    mount /dev/</data disk> /data
-    example: mount /dev/xvdh /data
+mount /dev/</data disk> /data
+example: mount /dev/xvdh /data
 ```
 
 - Update the fstab entry for volume on every system reboot, add an entry for the device to the /etc/fstab file.
 - Take UUID of disks for identification by using the following command.
 
 ```bash
-    blkid
+blkid
 ```
 
 - To entry the UUID of the disks in fstab, use the following format.
@@ -102,5 +104,5 @@ UUID=</data block-device-UUID>  /data   ext4   defaults ,nofail  0  2
 - Execute the following command in Platform Instance to sync the StudioWorkspace/AppDeploy Instances.
 
 ```bash
-	bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh --upgrade-instances
+bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh --upgrade-instances
 ```
