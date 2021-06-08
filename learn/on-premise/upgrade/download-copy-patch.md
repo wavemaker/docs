@@ -9,7 +9,7 @@ sidebar_label: "Download and Copy Patch"
 
 ### Ubuntu
 
-- Download debian package. The link will be shared by WaveMaker team.
+- Download the Debian package. The link will be shared by the WaveMaker team.
 
 ```bash
 wget  <WME-Patch-Link>
@@ -17,7 +17,7 @@ wget  <WME-Patch-Link>
 
 ### RHEL
 
-- Download tar package. The link will be shared by WaveMaker team.
+- Download tar package. The link will be shared by the WaveMaker team.
 
 ```bash
 wget  <WME-Patch-Link>
@@ -25,4 +25,4 @@ wget  <WME-Patch-Link>
 
 ## Copy Patch to Platform Machine
 
-- Copy downloaded patch file to home directory on the Platform Instance.
+- Copy downloaded patch file to the home directory on the Platform Instance.

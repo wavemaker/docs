@@ -625,8 +625,13 @@
     "on-premise/upgrade/extract-patch",
     "on-premise/upgrade/run-patch",
     "on-premise/upgrade/docker-upgrade",
-    "on-premise/upgrade/ubuntu-os-upgrade",
-    "on-premise/upgrade/wme-migration"
+    "on-premise/upgrade/ubuntu-os-upgrade"
+  ],
+  
+  "Disaster Recovery":
+  [
+    "on-premise/disaster-recovery/Dehydration-and-Rehydration",
+    "on-premise/disaster-recovery/backup-and-restore"
   ]
 },
 

@@ -25,7 +25,7 @@ sidebar_label: "Run Patch"
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
 ```
 
-- To redirect http traffic to https for accessing platform use enable-ssl option while running installer, to run with enable-ssl option please use following command.
+- To redirect HTTP traffics to HTTPS for accessing platform use enable-ssl option while running installer, to run with enable-ssl option please use following command.
 
 ```bash
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --enable-ssl
@@ -39,7 +39,7 @@ sidebar_label: "Run Patch"
 
 - It takes 45-60 mins approximately. Please watch this terminal.
 - After completing the patch, go to Launchpad.
-- Check all UserWorkspaceInstance/AppDeployment Instances status in Launchpad.
+- Check all User WorkspaceInstance/AppDeployment Instances status in Launchpad.
 - You can start working on Studio once the Instance status has started.
 - If the Instance status UPGRADE_FAILED, then there might be chances of docker version mismatch. You can upgrade docker version using [Manual Docker Upgrade](/learn/on-premise/upgrade/docker-upgrade).
-- Please upgrade the Docker version if it is older than 19.03.13 in your UserWorkspaceInstance/AppDeployment Instances.
+- Please upgrade the Docker version if it is older than 20.6 in your User WorkspaceInstance/AppDeployment Instances.

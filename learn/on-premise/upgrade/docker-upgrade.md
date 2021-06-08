@@ -9,9 +9,22 @@ sidebar_label: "Docker Upgrade"
 
 - Manual Docker upgrade is required only when you miss or skip the WaveMaker patch upgrade.
 - WaveMaker patch automatically upgrades the Docker if ssh-user has root/sudo privileges.
-- So follow the steps below when you added StudioWorkspaceInstance/AppDeploymentInstance with non-root/sudo user only.
+- Make sure Hibernate and passivate user containers and application containers from launchpad.use the following command to Hibernate and passivate containers.
+
+```bash
+python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd>
+example: python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d localhost -u test@wavemaker.com -p test-password -di False
+```
+
+- So follow the steps below when you added StudioWorkspaceInstance/AppDeploymentInstance.
 
 ### Docker Upgrade in Ubuntu
+
+- Stop the current Docker.
+
+```bash
+  service docker stop
+```
 
 - To upgrade and install the latest version of Docker, run the following command to list all the available versions:
 
@@ -84,7 +97,7 @@ Upgrade or Install the latest version of Docker.
     sudo yum install docker-ce-20.10.6-3.el8.x86_64.rpm -y
   ```
 
-  - Install prerequissites to install Docker in RHEL7
+  - Install prerequisites to install Docker in RHEL7
   
    ```bash
       yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
@@ -118,11 +131,11 @@ Upgrade or Install the latest version of Docker.
 :::note
 
 - You can choose to install Docker in any other way as per your company policy.
-- Above commands depicts one of them.
+- Above commands depict one of them.
 - Make sure to do the activities below after the Docker installation.
 :::
 
-- If the given platform user doesn't have privileged access, then provide below permissions for the given user on StudioWorkspace Instance / AppDeployment Instance.
+- If the given platform user doesn't have privileged access, then provide the below permissions for the given user on StudioWorkspace Instance / AppDeployment Instance.
 - The user should be able to execute the following commands as a privileged user:
   - Add user to the Docker group.  
   - Make the user an owner of the Docker system process.
