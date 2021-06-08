@@ -9,56 +9,69 @@ sidebar_label: "Dynamic Tabs and Accordions"
 
 Tab is an essential navigation element of every web application. WaveMaker provides a really flexible and powerful Tab component. It is possible to create a fully dynamic tab component using a data source.
 
-Now you can bind the dataset to the tabs widget. Based on the dataset, a number of Tab panes are generated.
+Now you can bind a dataset to the Tabs widget. Based on the dataset, a number of Tab panes are generated.
 
 :::note
-If static values are to be given for the **dataset value**(ex: comma seperated values) it is better to use static tab widget. For more information, see [Static Tabs](/learn/app-development/widgets/container/tabs)
+To provide static values for the **dataset value**, we recommend you use a static tab widget. For example, comma-separated values. For more information, see [Static Tabs](/learn/app-development/widgets/container/tabs).
 :::
 
-### Tabs Usecase
+## Tabs Usecase
 
-Dynamically open new tab pages based on user interaction. When you select a row in the  datatable, the details of respective department employees are displayed in separate tab pages that get added dynamically.
+Dynamically open new tab pages based on user interaction. When you select a row in a Datatable, the details of the respective department employees are displayed in separate tab pages that get added dynamically.
 
 [![tabs preview](/learn/assets/dynamicwidgets/tabspreview.gif)](/learn/assets/dynamicwidgets/tabspreview.gif)
 
-#### 1. Import DB
+### 1. Import DB
 
 - Navigate to the Databases section and import **Sample HR database**. For more information, see [Working with Databases](/learn/app-development/services/database-services/working-with-databases/).
 
-#### 2. Create a Partial and Configure Card Widget
+### 2. Create a Partial and Configure Card Widget
 
 - Create a [Partial](/learn/app-development/ui-design/page-concepts/partial-pages) page and name it **PartialEmployee**.
 
-- Drag and drop Card and bind it to the **Employee** Entity present in the database and configure Card Widget. For more information, see [Configure Card](/learn/app-development/widgets/datalive/cards/card-basic-usage).
+- Drag and drop the **Card** widget. Bind it to the **Employee** Entity from the [imported database](/learn/how-tos/dynamic-tabs-accordions#1-import-db) and configure the **Card** widget. For more information, see [Configure Card](/learn/app-development/widgets/datalive/cards/card-basic-usage).
 
-- Add partial param for the partial page as deptId with integer type.
+- Select Partial. Add a Partial param for the Partial page as **deptId** with an `integer` type.
+
 [![partial page](/learn/assets/dynamicwidgets/partialpage.png)](/learn/assets/dynamicwidgets/partialpage.png)
 
-- From the variable dialog, for the **Employee** variable under FilterCriteria bind the deptId to the `pageParams.deptId`.
+- Go to the Variable dialog. For the **Employee** variable under **FilterCriteria**, bind the **deptId** to the `pageParams.deptId`.
 
-#### 3. Create a Page and Model Variable
+[![partial bind](/learn/assets/partialbind.png)](/learn/assets/partialbind.png)
 
-- Create a Page and create a Model Variable with an Entity type with the below dataset.
+### 3. Create a Page and Model Variable
+
+- Create a Page and create a Model Variable with an Entity type of the below specified dataset.
 
 [![model variable](/learn/assets/dynamicwidgets/modelvar.png)](/learn/assets/dynamicwidgets/modelvar.png)
 
-#### 4. Configure Datatable
+### 4. Configure Datatable
 
-- Drag and drop datatable and set the datasource as **Department** Entity present in the database. For more information, see [Configure Datatable](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage)
+- Drag and drop Datatable and set the datasource as **Department** Entity from the [imported database](/learn/how-tos/dynamic-tabs-accordions#1-import-db). For more information, see [Configure Datatable](/learn/app-development/widgets/datalive/datatable/data-table-basic-usage).
 
-#### 5. Configure Dynamic Tab
+### 5. Configure Dynamic Tab
 
-- Drag and drop the Tab widget. Under **Properties** panel, change the **Type** property to **Dynamic**.
+- In a same page, drag and drop the **Tabs** widget.
 
-- Now, bind the **Dataset Value** property in the **Properties** panel to the Model Variable dataSet (Variable created in Step3). Also bind the **Default pane index** proeprty to the `Variables.DepartmentsInfo.dataSet.length`.
+- Select the **Tabs** widget and navigate to the **Properties** panel.
 
-- Select **Tab Pane** and bind the **Title** property to the model variable `Variables.DepartmentsInfo.dataSet[$i].name`
+- Change the **Type** property to the **Dynamic** type from the dropdown.
 
-- Set the **content** property of the tabpane to the created partial page (created in Step2) and also bind the **deptId** to `Variables.DepartmentsInfo.dataSet[$i].deptId`
+- From the **Dataset** section of the properties, bind the **Value** property to the Model Variable dataSet. The Variable created in [Step-3](/learn/how-tos/dynamic-tabs-accordions#3-create-a-page-and-model-variable).
 
-#### 6. Add selected department info to the model
+- From the **Behavior** section of the properties, bind the **Default Pane Index** property to `Variables.DepartmentsInfo.dataSet.length` using the **Use Expression** tab.
 
-- Select Department datatable present in the page and configure **onRowSelect** Event as JavaScript and add below code
+[![model variable](/learn/assets/use-expression-length.png)](/learn/assets/use-expression-length.png)
+
+- Select **Tab Pane** and bind the **Title** property to the [Model Variable](Variables.DepartmentsInfo.dataSet[$i].name) to `Variables.DepartmentsInfo.dataSet[$i].name`.
+
+- Set the **Content** property of the Tab Pane to the Partial page [created in Step-2](/learn/how-tos/dynamic-tabs-accordions#2-create-a-partial-and-configure-card-widget) by binding the **deptId** to `Variables.DepartmentsInfo.dataSet[$i].deptId`.
+
+### 6. Add Selected Department Info to the Model
+
+- Select the Department Datatable on the page.
+
+- Configure the **onRowSelect** Event as JavaScript, and add the below code.
 
 ```js
 Page.DepartmentTable1Rowselect = function($event, widget, row) {
@@ -78,7 +91,7 @@ Page.DepartmentTable1Rowselect = function($event, widget, row) {
 };
 ```
 
-#### 7. Preview the App
+### 7. Preview the App
 
 - Click Preview.
 
@@ -90,11 +103,11 @@ You can also remove the Tab Panes added by removing the item from the Model Vari
 
 ## Dynamic Accordion
 
-An Accordion is an interactive component consisting of panels with headers and content sections. You can click these panels to expand and collapse to show the description area.
+In the same way, you can create a fully dynamic and flexible Accordion without much efforts. Simply bind a dataset to the Accordion widget. Based on the dataset, a number of Accordion Panes will generate.
 
-It is possible to create a fully dynamic and flexible Accordion without much effort. Now, you can bind the dataset to the Accordion widget. Based on the dataset, a number of Accordion Panes will generate.
+An Accordion is an interactive component consisting of panels with headers and content sections. You can click these panels to expand and collapse to show the description area. 
 
 :::note
-The above usecase of dynamic tabs can be implemented for dynamic accordions as well.
+The same usecase of the Dynamic Tabs can be implemented for the Dynamic Accordions as well.
 :::
 
