@@ -625,7 +625,7 @@
     "on-premise/upgrade/extract-patch",
     "on-premise/upgrade/run-patch",
     "on-premise/upgrade/docker-upgrade",
-    "on-premise/upgrade/ubuntu-os-upgrade",
+    "on-premise/upgrade/os-upgrade",
     "on-premise/upgrade/wme-migration"
   ]
 },
