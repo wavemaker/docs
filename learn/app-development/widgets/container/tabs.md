@@ -124,7 +124,8 @@ Page.Widgets.EmployeesTab.goToTab(2); //Navigates to sales tab
 | **Property** | **Description** |
 | --- | --- |
 | Name | The name is a unique identifier of the Tab. |
-| Add Tab Pane | This action allows one to add multiple panes to the Tab. |
+| Type | This property specifies the type of Tabs widget. <br><br> - ***Static***: The Tab Panes will be static, which is the default behaviour of Tabs. <br> - ***Dynamic***: The Tab Panes will be generated based on the Dataset bound to the widget. |
+| Add Tab Pane | This action allows one to add multiple panes to the Tab. <br><br> **NOTE**: This property applies when you set the **Type** propety to `Static`.|
 | **Layout** |
 | Height | The height of the Tab can be specified in px or % (i.e 50px, 75%). |
 | Tab Position | This property determines if the Tabs should be displayed on the <br> - _left_, <br> - _top (default)_, <br> - _right_ or <br> - _bottom_ of the Tab content. |
