@@ -6,9 +6,15 @@ id: ""
 
 **Tabs** can be used when you need multiple containers within a single window. Tab-based navigation provides an easy and powerful mechanism to handle a large amount of content within a limited area by separating content into different panes where one pane is viewable at a time. The user can quickly access the content by switching between the panes without leaving the page.
 
-In interface design, a Tabbed Document Interface (TDI) or Tab is a graphical control element that allows multiple documents or panels to be contained within a single window,  using Tabs as a navigational widget for switching between sets of documents. It is an interface style most commonly associated with a web browser, web application and text-editor, and preference panes.
+In interface design, a Tabbed Document Interface (TDI) or Tab is a graphical control element that allows multiple documents or panels to contain within a single window. You can use these Tabs as a navigational widget for switching between sets of documents. It is an interface style most commonly associated with a web browser, web application and text-editor, and preference panes.
 
 [![tab run](/learn/assets/tab_run.png)](/learn/assets/tab_run.png)
+
+## Types of Tabs
+
+### Static Tabs
+
+Static Tabs do not need a dataset to add Tab Panes to the Tab bar. You add them using the **Add Tab Pane** button from the properties panel. The Static type is the default behavior of Tabs.
 
 ### Dynamic Tabs
 
@@ -124,7 +130,7 @@ Page.Widgets.EmployeesTab.goToTab(2); //Navigates to sales tab
 | **Property** | **Description** |
 | --- | --- |
 | Name | The name is a unique identifier of the Tab. |
-| Type | This property specifies the type of Tabs widget. <br><br> - ***Static***: The Tab Panes will be static, which is the default behaviour of Tabs. <br> - ***Dynamic***: The Tab Panes will be generated based on the Dataset bound to the widget. |
+| Type | This property specifies the type of Tabs widget. <br><br> - ***Static***: The Tab Panes will be static, which is the default behavior of Tabs. <br> - ***Dynamic***: The Tab Panes will be generated based on the Dataset bound to the widget. |
 | Add Tab Pane | This action allows one to add multiple panes to the Tab. <br><br> **NOTE**: This property applies when you set the **Type** propety to `Static`.|
 | **Layout** |
 | Height | The height of the Tab can be specified in px or % (i.e 50px, 75%). |
