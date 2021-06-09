@@ -47,4 +47,4 @@ For example, select and upload **`mssql-jdbc-9.2.1.jre8.jar`**
 Typically, located in: `<your extracted folder>/sqljdbc_9.2/enu/`
 :::
 
-Please see the [document](https://www.wavemaker.com/learn/app-development/services/database-services/database-services#supported-databases-and-versions) to learn about the supported database versions to integrate them into your application.
+Please see the [document](/learn/app-development/services/database-services/database-services#supported-databases-and-versions) to learn about the supported database versions to integrate them into your application.

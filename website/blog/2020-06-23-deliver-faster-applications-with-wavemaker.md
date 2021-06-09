@@ -43,7 +43,7 @@ To enable an application to make its artifacts served over CDN, the developer ne
 * Cache invalidations to ensure the user is served latest response
 * Additional operations based on CDN provider & more
 
-But we wanted our low code developer to have access to all the CDN goodness very easily. So WaveMaker has made it available on click of a button, literally. With the current release, when the user deploys the WaveMaker app by clicking the "Deploy" button, it is deployed on AWS with CDN support without any additional configuration. This convenience is only available in the first phase of the deployment pipelines of the application. Note that, applications are deployed to this phase so that the app can be tested by the team & only last for limited period of time. [See deploying to live phase](https://www.wavemaker.com/learn/app-development/deployment/manage-deployed-apps#configure-live-phase).
+But we wanted our low code developer to have access to all the CDN goodness very easily. So WaveMaker has made it available on click of a button, literally. With the current release, when the user deploys the WaveMaker app by clicking the "Deploy" button, it is deployed on AWS with CDN support without any additional configuration. This convenience is only available in the first phase of the deployment pipelines of the application. Note that, applications are deployed to this phase so that the app can be tested by the team & only last for limited period of time. [See deploying to live phase](/learn/app-development/deployment/manage-deployed-apps#configure-live-phase).
 
 ### CDN intergration with WaveMaker
 
