@@ -9,7 +9,7 @@ AppChef builds app installers including APK and IPA from a Cordova zip that can 
 ## Prerequisite to build using AppChef
 
 To perform a Build using AppChef, you should have the application Cordova zip.
-WaveMaker provides an option to export your mobile application to a Cordova zip. For more information, see [download cordova zip](https://www.wavemaker.com/learn/hybrid-mobile/mobile-build-manual#how-to-export-cordova-zip).
+WaveMaker provides an option to export your mobile application to a Cordova zip. For more information, see [download cordova zip](/learn/hybrid-mobile/mobile-build-manual#how-to-export-cordova-zip).
 
 Using the Workspace Toolbar from Build task select **Open AppChef**. It will navigate you to the AppChef application.
 

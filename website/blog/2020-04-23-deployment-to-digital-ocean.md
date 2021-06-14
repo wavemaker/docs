@@ -112,12 +112,9 @@ You can use the kubectl commands with the associated kubernetes cluster or debug
 Go ahead and try out your app's first ever kubernetes deployment and let us know your experience!!
 
 ### References
-* To know more about Kubernetes, please refer:
-  https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
-* To know more about DigitalOcean Kubernetes, please refer
-  https://www.digitalocean.com/docs/kubernetes/
-* Detailed process for deploying a WaveMaker application on DigitalOcean cluster
-  https://www.wavemaker.com/learn/app-development/deployment/deployment-to-digital-ocean
+* To know more about Kubernetes, see [here](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
+* To know more about DigitalOcean Kubernetes, see [here](https://www.digitalocean.com/docs/kubernetes/)
+* [Detailed process for deploying a WaveMaker application on DigitalOcean cluster](/learn/app-development/deployment/deployment-to-digital-ocean)
 
 
 

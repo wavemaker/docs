@@ -56,7 +56,7 @@ and developed pre-deployment validation for each. With these checks enabled prio
 
 ### Clear description of Errors
 * Each error includes details such as filename & exact line number which can cause deployment failure.
-* It also includes the [documentation](https://www.wavemaker.com/learn/app-development/dev-integration/inspection-framework#__docusaurus) link, to help the developer understand the issue better & help in looking for solutions.
+* It also includes the [documentation](/learn/app-development/dev-integration/inspection-framework#__docusaurus) link, to help the developer understand the issue better & help in looking for solutions.
 
 [![screenshot](/learn/assets/wm-blog-deploy-04-detail.png)](/learn/assets/wm-blog-deploy-04-detail.png)
 
