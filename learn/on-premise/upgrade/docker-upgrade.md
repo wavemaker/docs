@@ -8,8 +8,9 @@ sidebar_label: "Docker Upgrade"
 ## Docker Upgrade
 
 - Manual Docker upgrade is required only when you miss or skip the WaveMaker patch upgrade.
-- WaveMaker patch automatically upgrades the Docker if ssh-user has root/sudo privileges.
-- Make sure Hibernate and passivate user containers and application containers from launchpad.use the following command to Hibernate and passivate containers.
+- WaveMaker patch automatically upgrades the Docker if ssh-user has root/sudo privileges in Ubuntu and RHEL OS WME Platform Instance and if ssh-user have root/sudo privileges in Ubuntu StudioWorkspaceInstance/AppDeploymentInstance.
+- User needs to upgrade docker if ssh-user doesn't have root/sudo privileges in Ubuntu OS StudioWorkspaceInstance/AppDeploymentInstance and if ssh-user have or doesn't have root/sudo privileges in RHEL OS StudioWorkspaceInstance/AppDeploymentInstance.
+- Make sure Hibernate and passivate user containers and application containers from launchpad. use the following command to Hibernate and passivate containers.
 
 ```bash
 python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd>

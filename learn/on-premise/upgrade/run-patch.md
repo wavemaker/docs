@@ -25,13 +25,13 @@ sidebar_label: "Run Patch"
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
 ```
 
-- To redirect HTTP traffics to HTTPS for accessing platform use enable-ssl option while running installer, to run with enable-ssl option please use following command.
+- To redirect HTTP traffics to HTTPS for accessing the platform use enable-ssl option while running installer, to run with enable-ssl option please use the following command.
 
 ```bash
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --enable-ssl
 ```
 
-- To configure SSL for platform please refer [ssl configuration for platform](/learn/on-premise/configure/config-ssl)
+- To make https work, You need to add SSL certificates to Platform or router/dns level, to add SSL certificates please refer [ssl configuration for platform](/learn/on-premise/configure/config-ssl).
 
 - Enter config portal admin password to proceed with the process.
 

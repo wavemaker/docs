@@ -5,7 +5,7 @@ sidebar_label: "Dehydration and Rehydration"
 ---
 ---
 
-To Upgrade the operating system OS by migrating Data or for the Disaster and recovery process users can follow the below steps.
+This process is used to rotate instances periodically or disaster recovery when data the available but machines been corrupted. Here data means volumes/directories in WME Instances, make sure have to use the same WME version for the recovery process.
 
 ## Data Backup
 
@@ -44,11 +44,13 @@ example: python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/
 
 ### VMWARE ESXi and Hyper-V
 
-- Use the below steps for taking /wm-data backup in Platform Instance, it will create data.tar in /wm-data location.user can copy the data.tar any secure location for backup.
+- Use the below steps for taking /wm-data backup in Platform Instance, it will create data.tar in /wm-data location.
   
 ```bash
 bash wme-installer.sh --data-archive
 ```
+
+- Copy this data to some instance/your local machine.
 
 ## Data restore
 
@@ -77,7 +79,8 @@ UUID=</wm-data block-device-UUID>  /wm-data   ext4   defaults ,nofail  0  2
 
 #### VMWARE ESXi and Hyper-V
 
-- Use the below steps for restore /wm-data using data.tar in Platform Instance
+- Copy tar which was archived in the previous steps
+- Use the below steps for restore /wm-data using data.tar in Platform Instance,
 
 ```bash
 bash wme-installer.sh --data-untar
@@ -112,7 +115,7 @@ UUID=</data block-device-UUID>  /data   ext4   defaults ,nofail  0  2
 
 - For Download WaveMaker installation package please refer [WaveMaker package Installation](/learn/on-premise/aws/install/download-copy-installer).
 - Extract Package please refer [WaveMaker package extraction](/learn/on-premise/aws/install/extract-package).
-Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise/aws/install/initilize-setup). Make sure provide the same CIDR Range which is used in previous setup.
+Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise/aws/install/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
 - Setup using config wizard please refer [WaveMaker configwizard setup](/learn/on-premise/aws/install/setup-using-cw) and use same WaveMaker studio and built apps Domain names.
 
 ## Sync Studio Workspace/AppDeploy Instances

@@ -8,18 +8,18 @@ sidebar_label: "Add Apps Capacity"
 Every Deployed application allocated with a container. The infrastructure adding here will be used for this purpose.
 
 To add instances to Platform, you need to provide ssh credentials.
-Ssh credentials of the Instance either should have root privliges or provide required permissions as below.
+Ssh credentials of the Instance either should have root privileges or provide required permissions as below.
 
 ### Extra configurations on StudioWorkspace Instance / AppDeployment Instance
 
 #### The ssh user has privileges(root/sudo)
 
-- No need to do any configurations. Platform will do it automatically.
+- No need to do any configurations. The platform will do it automatically.
 
 #### The ssh user don't have privileges(non sudo users)
 
 - If the user given to the Platform don't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
-- Have to execute these commands from privileged user.
+- Have to execute these commands from the privileged user.
   - Add user to docker group.
   - Make the user as owner for docker systemd process.
   - data directory should be owned by the user.
@@ -37,11 +37,11 @@ Ssh credentials of the Instance either should have root privliges or provide req
 ## Add Capacity to App Deployment
 
 - Select App Deployments section and at deployment capacity select add capacity for adding an Instance to deployment capacity.if Instance not created [launch instance with required prerequisites](/learn/on-premise/prerequisites)
-- Provide Instance details and authentication details to connect to the Instance,if you want you can test the connection and details of instance by selecting the test option.
+- Provide Instance details and authentication details to connect to the Instance,if you want you can test the connection and details of the instance by selecting the test option.
 
 [![deployment capacity](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.png)](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.png)
 
-- During workspace instances configuration process WaveMaker running commands with sudo , if user using any another name or command for sudo, user need to add that as alias in ~/.bash_aliases file and also need to provide that alias name during studio workspace/app deploy capicity adding at launchpad.
+- During workspace instances configuration process WaveMaker running commands with sudo , if user using any another name or command for sudo, user need to add that as alias in ~/.bash_aliases file and also need to provide that alias name during studio workspace/app deploy capacity adding at launchpad.
 - Example ~/.bash_aliases file
   
   ```bash
@@ -49,4 +49,4 @@ Ssh credentials of the Instance either should have root privliges or provide req
   alias dzdo='sudo'
   ```
 
-- Wait for a few moments for configure and get started.
+- Wait for a few moments to configure and get started.

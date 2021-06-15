@@ -630,8 +630,8 @@
   
   "Disaster Recovery":
   [
-    "on-premise/disaster-recovery/Dehydration-and-Rehydration",
-    "on-premise/disaster-recovery/backup-and-restore"
+    "on-premise/disaster-recovery/backup-and-restore",
+    "on-premise/disaster-recovery/Dehydration-and-Rehydration"
   ]
 },
 
