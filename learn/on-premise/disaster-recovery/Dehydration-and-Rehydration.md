@@ -50,14 +50,35 @@ example: python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/
 bash wme-installer.sh --data-archive
 ```
 
-- Copy this data to some instance/your local machine.
+- Copy the generated data.tar to secure location in local or to any cloud storage services.
 
 ## Data restore
 
 ### Platform Instance
 
-- Launch the instance or VM with the same IP address and attach the /wm-data volume to Platform Instance.
-- Mount the volume to the platform Instance using the following command.
+- Launch the instance or VM with the same IP address with the latest AMI Image. To create WME Platform Instance in the different cloud and on-premise environments please follow the below steps attach the /wm-data volume to Platform Instance and Mount the volume to the platform Instance using the following command.
+
+#### AWS
+
+- To launch WME Platform instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
+  
+#### AZURE
+
+- To launch WME Platform virtual machines in AZURE cloud environmet please refer [WME Platform instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
+  
+#### GCP
+
+- To launch WME Platform virtual machines in GCP cloud environment please refer [WME Platform instance Infrastructure in GCP](/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp).
+  
+#### VMWARE ESXI
+
+- To create WME Platform virtual machines in VMware Esxi please refer [WME Platform instance Infrastructure in VMware Esxi](/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
+
+#### Hyper-V
+
+- To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
+
+#### Backup data mount in WME Platform Instance
 
 ```bash
 mount /dev/</wm-data disk> /wm-data
@@ -80,7 +101,7 @@ UUID=</wm-data block-device-UUID>  /wm-data   ext4   defaults ,nofail  0  2
 #### VMWARE ESXi and Hyper-V
 
 - Copy tar which was archived in the previous steps
-- Use the below steps for restore /wm-data using data.tar in Platform Instance,
+- Use the below steps for restore /wm-data using data.tar which was archived in previous steps in Platform Instance,
 
 ```bash
 bash wme-installer.sh --data-untar
@@ -90,7 +111,30 @@ bash wme-installer.sh --data-untar
 
 ### Studio Workspace/AppDeploy Instances
 
-- Launch the instance or VM and attach the /data to Studio Workspace/AppDeploy Instances.
+- Launch the instance or VM with the same IP address with the latest AMI Image.To create WME Studio Workspace/AppDeploy Instances in the different cloud and on-premise environments please follow the below steps and attach the /data to Studio Workspace/AppDeploy Instances.
+
+#### AWS
+
+- To launch WME Studio Workspace/AppDeploy Instances in AWS cloud environment please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
+  
+#### AZURE
+
+- To launch WME Studio Workspace/AppDeploy virtual machines in AZURE cloud environmet please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
+  
+#### GCP
+
+- To launch WME Studio Workspace/AppDeploy virtual machines in GCP cloud environment please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in GCP](/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp).
+  
+#### VMWARE ESXI
+
+- To create WME Studio Workspace/AppDeploy virtual machines in VMware Esxi please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in VMware Esxi](/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
+
+#### Hyper-V
+
+- To create WME Studio Workspace/AppDeploy virtual machines in Hyper-V please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
+
+#### Backup data mount in Studio Workspace/AppDeploy Instances
+
 - Mount the volume to the Studio Workspace/AppDeploy Instances using the following command.
 
 ```bash
