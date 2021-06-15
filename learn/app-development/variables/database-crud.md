@@ -179,6 +179,26 @@ lv.listRecords({
        console.error('error', error)
  });
 ```
+We can also specify the filterFields and orderBy options while invoking the variable. In the below example, the variable will get all the records satisfying the condition deptId==1 & empId>1, and also with the specified sort order. Please refer the [Filter Conditions doc](/learn/how-tos/using-filter-conditions-variable) for the list of available matchModes.
+
+**Example**:
+
+```
+lv.listRecords({
+     filterFields: {
+        "deptId": {
+                "value": 1,
+                "matchMode": "EQUALS"
+        },
+        "empId": {
+            "value": 1,
+            "matchMode": "GREATER_THAN"
+        }
+    },
+    orderBy: "empId desc, firstname desc"
+ });
+
+```
 ### updateRecord(object, success callback, error callback)
 
 This method makes a call to the Live Service to update the provided record in the target table. This is an asynchronous method that updates the record into the target table and updates it on the dataSet of the variable. The updated record is passed and can be accessed in the successCallback method as a parameter named "data". Error handling can be done in the errorCallback method.
