@@ -7,13 +7,13 @@ sidebar_label: "Run Patch"
 
 ## Running the Patch
 
-- When upgrading from 10.6.x to 10.7.x user need to download required content for migration process.for download migration tar please run the following command.
+- When upgrading from 10.6.x to 10.7.x user need to download required content for the migration process. to download migration tar please run the following command.
 
 ```bash
     wget https://s3.amazonaws.com/downloads.wavemaker.com/wme/wme.migration/wme_migrations.tar
 ```
 
-- Extract wme_migrations.tar to /usr/local/content/wme/wme-installer/< version>/resources folder, for extract content run the following command
+- Extract wme_migrations.tar to /usr/local/content/wme/wme-installer/< version>/resources folder, for extract the content run the following command
 
 ```bash
     sudo tar xvf wme_migrations.tar -C /usr/local/content/wme/wme-installer/<version>/resources/
@@ -25,13 +25,12 @@ sidebar_label: "Run Patch"
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
 ```
 
+- To make https work, You need to add SSL certificates to Platform or router/dns level, to add SSL certificates please refer [ssl configuration for platform](/learn/on-premise/configure/config-ssl).
 - To redirect HTTP traffics to HTTPS for accessing the platform use enable-ssl option while running installer, to run with enable-ssl option please use the following command.
 
 ```bash
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --enable-ssl
 ```
-
-- To make https work, You need to add SSL certificates to Platform or router/dns level, to add SSL certificates please refer [ssl configuration for platform](/learn/on-premise/configure/config-ssl).
 
 - Enter config portal admin password to proceed with the process.
 

@@ -13,17 +13,17 @@ sidebar_label: "OS Upgrade"
 - It can be done from launchpad, or you can execute the below command in platform instance
 
   ```bash
-  python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr ${protocol} -d ${domain} -u ${adminUser} -p ${adminPasswd}
+  python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd>
   ```
 
   - **protocol** represents what web protocol is used to connect to WaveMaker application (http/https)
   - **domain** represents the domain name in which WaveMaker application is running
-  - **adminUser** and **adminPasswd** refer to the admin user and admin password in the WaveMaker domain
+  - **adminUser** and **adminPasswd** refer to the admin credentials which are used to access launchpad.
 
   - Refer below mentioned example command for passivation
 
   ```bash
-  python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d localhost -u test@wavemaker.com -p test-password -di False
+  python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d wme-demo.wavemaker.com -u test@wavemaker.com -p test-password -di False
   ```
 
 ### Stop the WME Setup
@@ -50,7 +50,7 @@ sidebar_label: "OS Upgrade"
 - WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
 - WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in Studio Workspace/AppDeploy Instances.
 - Create an AMI or use the latest AMI of WME Instance or VM for creating AMI for different cloud providers follow the below steps.
-- We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of Developer/App Deployment instances.
+- We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
 
 #### AWS
 
@@ -79,7 +79,7 @@ sidebar_label: "OS Upgrade"
 
 ### Without Internet Enabled for Instances
 
-#### Platform Instance
+#### WME Platform Instance
 
 - Launch the instance or VM with the same IP address with the latest AMI Image. To create WME Platform Instance in the different cloud and on-premise environments please follow the below steps attach the /wm-data volume to Platform Instance and Mount the volume to the platform Instance using the following command.
 
@@ -134,7 +134,7 @@ bash wme-installer.sh --data-untar
 
 [![data_untar](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)
 
-#### Studio Workspace/AppDeploy Instances
+#### WME Studio Workspace/AppDeploy Instances
 
 - Launch the instance or VM with the same IP address with the latest AMI Image.To create WME Studio Workspace/AppDeploy Instances in the different cloud and on-premise environments please follow the below steps and attach the /data to Studio Workspace/AppDeploy Instances.
 

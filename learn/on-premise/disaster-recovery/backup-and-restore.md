@@ -5,14 +5,14 @@ sidebar_label: "Backup and Restore "
 ---
 ---
 
-The following document will help an organization to take backup data at unplanned incidents and minimizing the effects of a disaster by restoring, so an organization will continue to operate or quickly resume key operations. The organization has to use the same IP address as previous WME Instances for new WME Instances.
+The following document will help an organization to take backup data at unplanned incidents and minimizing the effects of a disaster by restoring, so an organization will continue to operate or quickly resume key operations. Make sure organization has to use the same IP address as previous WME Instances for new WME Instances.
 
 ## Data Backup
 
 - WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
-- WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in Studio Workspace/AppDeploy Instances.
+- WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in StudioWorkspace Instance / AppDeployment Instance.
 - Create an AMI or use the latest AMI of WME Instance or VM for creating AMI for different cloud providers follow the below steps.
-- We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of Developer/App Deployment instances.
+- We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
 
 ### AWS
 
@@ -71,33 +71,33 @@ The following document will help an organization to take backup data at unplanne
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --start
 ```
 
-### Studio Workspace/AppDeploy Instances
+### StudioWorkspace Instance / AppDeployment Instance
 
-- Launch the instance or VM with the same IP address with the latest AMI Image.To create WME Studio Workspace/AppDeploy Instances in the different cloud and on-premise environments please follow the below steps
+- Launch the instance or VM with the same IP address with the latest AMI Image.To create WME StudioWorkspace Instance / AppDeployment Instance in the different cloud and on-premise environments please follow the below steps
 
 #### AWS
 
-- To launch WME Studio Workspace/AppDeploy Instances in AWS cloud environment please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
+- To launch WME StudioWorkspace Instance / AppDeployment Instance in AWS cloud environment please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
   
 #### AZURE
 
-- To launch WME Studio Workspace/AppDeploy virtual machines in AZURE cloud environmet please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME StudioWorkspace Instance / AppDeployment Instance in AZURE cloud environmet please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
   
 #### GCP
 
-- To launch WME Studio Workspace/AppDeploy virtual machines in GCP cloud environment please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in GCP](/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp).
+- To launch WME StudioWorkspace Instance / AppDeployment Instance in GCP cloud environment please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in GCP](/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp).
   
 #### VMWARE ESXI
 
-- To create WME Studio Workspace/AppDeploy virtual machines in VMware Esxi please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in VMware Esxi](/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
+- To create WME StudioWorkspace Instance / AppDeployment Instance in VMware Esxi please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in VMware Esxi](/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
 
 #### Hyper-V
 
-- To create WME Studio Workspace/AppDeploy virtual machines in Hyper-V please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
+- To create WME StudioWorkspace Instance / AppDeployment Instance in Hyper-V please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
 
-## Sync Studio Workspace/AppDeploy Instances
+## Sync StudioWorkspace Instance / AppDeployment Instance
 
-- Execute the following command in Platform Instance to sync the StudioWorkspace/AppDeploy Instances.
+- Execute the following command in Platform Instance to sync the StudioWorkspace Instance / AppDeployment Instance.
 
 ```bash
 bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh --upgrade-instances

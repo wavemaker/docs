@@ -5,28 +5,31 @@ sidebar_label: "Dehydration and Rehydration"
 ---
 ---
 
-This process is used to rotate instances periodically or disaster recovery when data the available but machines been corrupted. Here data means volumes/directories in WME Instances, make sure have to use the same WME version for the recovery process.
+This process is used to rotate instances periodically or for disaster recovery when WME data(`/wm-data and /wm-runtime in directory/volumes Platform Instance and /data directory/volume in StudioWorkspace Instance / AppDeployment Instance`) is available but machines are corrupted and make sure have to use the same WME version for the recovery process.
 
 ## Data Backup
 
 - WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
-- WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in Studio Workspace/AppDeploy Instances.
-- Before applying the backup process do Hybernation and passivation for user and application containers using following command or do the process from launchpad.
+- WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in StudioWorkspace Instance / AppDeployment Instance.
 - We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of Developer/App Deployment instances.
+- Before applying the backup process do Hybernation and passivation for user and application containers using following command or do the process from launchpad.
 
-```bash
-python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd>
-example: python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d test-domain.wavemaker.com -u test@wavemaker.com -p test-password -di False
-```
+  ```bash
+  python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd>
+  ```
 
-- Stop WME setup using the following command.
+  - **protocol** represents what web protocol is used to connect to WaveMaker application (http/https)
+  - **domain** represents the domain name in which WaveMaker application is running
+  - **adminUser** and **adminPasswd** refer to the admin credentials which are used to access launchpad.
 
-```bash
-    bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --stop
-```
+  - Refer below mentioned example command for passivation
+
+  ```bash
+  python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d wme-demo.wavemaker.com -u test@wavemaker.com -p test-password -di False
+  ```
 
 - Take a backup of `/wm-data` directory of Platform Instance by taking a snapshot of a volume.
-- For the disaster and recovery process take a backup of `/data` directory of Studio Workspace/AppDeploy Instances by taking snapshots.
+- For the disaster and recovery process take a backup of `/data` directory of StudioWorkspace Instance / AppDeployment Instance by taking snapshots.
 
 ### AWS
 
@@ -110,33 +113,33 @@ bash wme-installer.sh --data-untar
 
 [![data_untar](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)
 
-### Studio Workspace/AppDeploy Instances
+### StudioWorkspace Instance / AppDeployment Instance
 
-- Launch the instance or VM with the same IP address with the latest AMI Image.To create WME Studio Workspace/AppDeploy Instances in the different cloud and on-premise environments please follow the below steps and attach the /data to Studio Workspace/AppDeploy Instances.
+- Launch the instance or VM with the same IP address with the latest AMI Image.To create WME StudioWorkspace Instance / AppDeployment Instance in the different cloud and on-premise environments please follow the below steps and attach the /data to StudioWorkspace Instance / AppDeployment Instance.
 
 #### AWS
 
-- To launch WME Studio Workspace/AppDeploy Instances in AWS cloud environment please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
+- To launch WME StudioWorkspace Instance / AppDeployment Instance in AWS cloud environment please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
   
 #### AZURE
 
-- To launch WME Studio Workspace/AppDeploy virtual machines in AZURE cloud environmet please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME Studio Workspace/AppDeploy virtual machines in AZURE cloud environmet please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
   
 #### GCP
 
-- To launch WME Studio Workspace/AppDeploy virtual machines in GCP cloud environment please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in GCP](/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp).
+- To launch WME Studio Workspace/AppDeploy virtual machines in GCP cloud environment please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in GCP](/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp).
   
 #### VMWARE ESXI
 
-- To create WME Studio Workspace/AppDeploy virtual machines in VMware Esxi please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in VMware Esxi](/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
+- To create WME Studio Workspace/AppDeploy virtual machines in VMware Esxi please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in VMware Esxi](/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
 
 #### Hyper-V
 
-- To create WME Studio Workspace/AppDeploy virtual machines in Hyper-V please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
+- To create WME Studio Workspace/AppDeploy virtual machines in Hyper-V please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
 
-#### Backup data mount in Studio Workspace/AppDeploy Instances
+#### Backup data mount in StudioWorkspace Instance / AppDeployment Instance
 
-- Mount the volume to the Studio Workspace/AppDeploy Instances using the following command.
+- Mount the volume to the StudioWorkspace Instance / AppDeployment Instance using the following command.
 
 ```bash
 mount /dev/</data disk> /data
@@ -163,7 +166,7 @@ UUID=</data block-device-UUID>  /data   ext4   defaults ,nofail  0  2
 Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise/aws/install/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
 - Setup using config wizard please refer [WaveMaker configwizard setup](/learn/on-premise/aws/install/setup-using-cw) and use same WaveMaker studio and built apps Domain names.
 
-## Sync Studio Workspace/AppDeploy Instances
+## Sync StudioWorkspace Instance / AppDeployment Instance
 
 - Execute the following command in Platform Instance to sync the StudioWorkspace/AppDeploy Instances.
 
