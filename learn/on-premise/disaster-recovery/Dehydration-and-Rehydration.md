@@ -12,10 +12,39 @@ This process is used to rotate instances periodically or for disaster recovery w
 - WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
 - WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in StudioWorkspace Instance / AppDeployment Instance.
 - We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of Developer/App Deployment instances.
-- Before applying the backup process do Hybernation and passivation for user and application containers using following command or do the process from launchpad.
+- Before applying the backup process do Hibernation and passivation for user and application containers, this can be done in either by executing command from command line or from launchpad.
+
+### Passivate Containers in StudioWorkspace/AppDeployment instances
+
+#### Launchpad
+
+- After logging into launchpad in WME setup go to Developer Workspace, and then go to container as shown in below image
+- Select the containers that are running, hibernate those containers one after the other by hitting stop button as shown in the image below and wait till state is changed to stopped.
+  
+  [![instances_verification](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)
+
+- After logging into launchpad in WME setup go to Developer Workspace, and then go to capacity as shown in below image
+  
+  [![developer_workspace](/learn/assets/wme-setup/upgrade-wme-setup/developer_workspace.png)](/learn/assets/wme-setup/upgrade-wme-setup/developer_workspace.png)
+  
+  - Here select all the StudioWorkspace instances one by one and do the below operations
+
+  - First hit the stop button present there, it will stop the instances from taking new user containers, wait till the state of instance is changed to **STOPPED**
+  - Then you need to hit the passivate button, this will passivate all the stopped containers in the instance selected, wait till there are no stopped instances present in the instance
+  - After this is done in all StudioWorkspace instances cross-check the running containers in containers tab, all the containers should be in passivated state
+  
+  - After making sure all containers are passivated come back to capacity and select one by one instances and hit delete icon as shown below, this will delete the instance from setup
+  
+  [![delete_instances](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)
+
+- After completed the above process in Developer Workspace, go to AppDeployments, and perform the same operation mentioned above in all AppDeployment Instances(Demo, Stage, Live)
+
+#### Command Line
+
+- You can execute the below command in platform instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment instances in the setup
 
   ```bash
-  python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd>
+  python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd> -di True
   ```
 
   - **protocol** represents what web protocol is used to connect to WaveMaker application (http/https)
@@ -25,7 +54,7 @@ This process is used to rotate instances periodically or for disaster recovery w
   - Refer below mentioned example command for passivation
 
   ```bash
-  python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d wme-demo.wavemaker.com -u test@wavemaker.com -p test-password -di False
+  python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d wme-demo.wavemaker.com -u test@wavemaker.com -p test-password -di True
   ```
 
 - Take a backup of `/wm-data` directory of Platform Instance by taking a snapshot of a volume.
@@ -69,7 +98,7 @@ bash wme-installer.sh --data-archive
   
 #### AZURE
 
-- To launch WME Platform virtual machines in AZURE cloud environmet please refer [WME Platform instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME Platform virtual machines in AZURE cloud environment please refer [WME Platform instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
   
 #### GCP
 
@@ -124,7 +153,7 @@ bash wme-installer.sh --data-untar
   
 #### AZURE
 
-- To launch WME Studio Workspace/AppDeploy virtual machines in AZURE cloud environmet please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME Studio Workspace/AppDeploy virtual machines in AZURE cloud environment please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
   
 #### GCP
 
