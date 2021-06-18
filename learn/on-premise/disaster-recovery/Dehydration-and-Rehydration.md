@@ -61,6 +61,7 @@ bash wme-installer.sh --data-archive
 ### Platform Instance
 
 - Launch the instance or VM with the same IP address with the latest AMI Image. To create WME Platform Instance in the different cloud and on-premise environments please follow the below steps attach the /wm-data volume to Platform Instance and Mount the volume to the platform Instance using the following command.
+- Make sure have to attach backup /wm-data volume to Platform Instance.
 
 #### AWS
 

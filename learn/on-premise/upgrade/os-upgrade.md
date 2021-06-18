@@ -5,7 +5,14 @@ sidebar_label: "OS Upgrade"
 ---
 ---
 
-## Prerequisites
+
+
+## Data Backup
+
+- WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
+- WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in StudioWorkspace Instance / AppDeployment Instance.
+- Create an AMI or use the latest AMI of WME Instance or VM for creating AMI for different cloud providers follow the below steps.
+- We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
 
 ### Passivate the running containers
 
@@ -46,13 +53,6 @@ sidebar_label: "OS Upgrade"
 
     [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)
 
-### Data Backup
-
-- WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
-- WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in Studio Workspace/AppDeploy Instances.
-- Create an AMI or use the latest AMI of WME Instance or VM for creating AMI for different cloud providers follow the below steps.
-- We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
-
 #### AWS
 
 - To create AMI of Instance in AWS cloud provider please refer [AMI creation in aws](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html).
@@ -80,7 +80,7 @@ Follow below three steps in PlatformInstance, StudioWorkspaceInstances, AppDeplo
 
 ## Stop Docker service in the system
 
-- After backup is completed we request you to stop Docker service in the instance
+- After backup is completed we request you to stop Docker service in the  WME Platform Instance and StudioWorkspace Instance / AppDeployment Instance.
 - Connect to Instance via SSH then execute below command
 
 ```bash
@@ -94,6 +94,7 @@ service docker stop
 #### WME Platform Instance
 
 - Launch the instance or VM with the same IP address with the latest AMI Image. To create WME Platform Instance in the different cloud and on-premise environments please follow the below steps attach the /wm-data volume to Platform Instance and Mount the volume to the platform Instance using the following command.
+- Make sure have to attach backup /wm-data volume to Platform Instance.
 
 ##### AWS
 
@@ -146,33 +147,33 @@ bash wme-installer.sh --data-untar
 
 [![data_untar](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)
 
-#### WME Studio Workspace/AppDeploy Instances
+#### WME StudioWorkspace Instance / AppDeployment Instance
 
-- Launch the instance or VM with the same IP address with the latest AMI Image.To create WME Studio Workspace/AppDeploy Instances in the different cloud and on-premise environments please follow the below steps and attach the /data to Studio Workspace/AppDeploy Instances.
+- Launch the instance or VM with the same IP address with the latest AMI Image.To create WME StudioWorkspace Instance / AppDeployment Instance in the different cloud and on-premise environments please follow the below steps and attach the /data to StudioWorkspace Instance / AppDeployment Instance.
 
 ##### AWS
 
-- To launch WME Studio Workspace/AppDeploy Instances in AWS cloud environment please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
+- To launch WME StudioWorkspace Instance / AppDeployment Instance in AWS cloud environment please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
   
 ##### AZURE
 
-- To launch WME Studio Workspace/AppDeploy virtual machines in AZURE cloud environmet please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME Studio Workspace/AppDeploy virtual machines in AZURE cloud environmet please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
   
 ##### GCP
 
-- To launch WME Studio Workspace/AppDeploy virtual machines in GCP cloud environment please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in GCP](/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp).
+- To launch WME Studio Workspace/AppDeploy virtual machines in GCP cloud environment please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in GCP](/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp).
   
 ##### VMWARE ESXI
 
-- To create WME Studio Workspace/AppDeploy virtual machines in VMware Esxi please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in VMware Esxi](/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
+- To create WME Studio Workspace/AppDeploy virtual machines in VMware Esxi please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in VMware Esxi](/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
 
 ##### Hyper-V
 
-- To create WME Studio Workspace/AppDeploy virtual machines in Hyper-V please refer [WME Studio Workspace/AppDeploy Instances Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
+- To create WME Studio Workspace/AppDeploy virtual machines in Hyper-V please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
 
-##### Backup data mount in Studio Workspace/AppDeploy Instances
+##### Backup data mount in StudioWorkspace Instance / AppDeployment Instance
 
-- Mount the volume to the Studio Workspace/AppDeploy Instances using the following command.
+- Mount the volume to the StudioWorkspace Instance / AppDeployment Instance using the following command.
 
 ```bash
 mount /dev/</data disk> /data
@@ -199,7 +200,7 @@ UUID=</data block-device-UUID>  /data   ext4   defaults ,nofail  0  2
 Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise/aws/install/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
 - Setup using config wizard please refer [WaveMaker configwizard setup](/learn/on-premise/aws/install/setup-using-cw) and use same WaveMaker studio and built apps Domain names.
 
-#### Sync Studio Workspace/AppDeploy Instances
+#### Sync StudioWorkspace Instance / AppDeployment Instance
 
 - Execute the following command in Platform Instance to sync the StudioWorkspace/AppDeploy Instances.
 
