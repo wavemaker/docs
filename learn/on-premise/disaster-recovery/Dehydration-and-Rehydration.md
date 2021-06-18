@@ -11,8 +11,8 @@ This process is used to rotate instances periodically or for disaster recovery w
 
 - WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
 - WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in StudioWorkspace Instance / AppDeployment Instance.
-- We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of Developer/App Deployment instances.
-- Before applying the backup process do Hibernation and passivation for user and application containers, this can be done in either by executing command from command line or from launchpad.
+- We move all the data to Platform Instance(/wm-data dir or volume) so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
+- Before applying the backup process do Hibernation and passivation for user and application containers, this can be done in either by executing a command from the command line or launchpad.
 
 ### Passivate Containers in StudioWorkspace/AppDeployment instances
 
@@ -41,7 +41,7 @@ This process is used to rotate instances periodically or for disaster recovery w
 
 #### Command Line
 
-- You can execute the below command in platform instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment instances in the setup
+- You can execute the below command in Platform Instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment instances in the setup
 
   ```bash
   python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd> -di True

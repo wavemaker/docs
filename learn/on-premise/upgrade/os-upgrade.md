@@ -7,8 +7,8 @@ sidebar_label: "OS Upgrade"
 
 ## Data Storage in WME
 
-- In WaveMaker Enterprise setup we have one platform instance where all the setup related services and data is stored, we have StudioWorkspace instances where all the data specific to user in the setup is stored, and we have AppDeployment instances where the data of the applications developed in wavemaker is stored
-- In Platform instance all the data is completely stored in **/wm-data** directory/volume
+- In WaveMaker Enterprise setup we have one platform instance where all the setup related services and data is stored, we have StudioWorkspace instances where all the data specific to user in the setup is stored, and we have AppDeployment instances where the data of the applications developed in WaveMaker is stored
+- In the Platform instance all the data is completely stored in **/wm-data** directory/volume
 - Coming to StudioWorkspace and AppDeployment Instances we store the data in **/data** directory
 
 ## Data Backup
@@ -16,7 +16,7 @@ sidebar_label: "OS Upgrade"
 - WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
 - WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in StudioWorkspace Instance / AppDeployment Instance.
 - Create an AMI or use the latest AMI of WME Instance or VM for creating AMI for different cloud providers follow the below steps.
-- We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
+- We move all the data to Platform Instance(/wm-data dir or volume) so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
 
 ### Passivate containers in StudioWorkspace/AppDeployment instances
 
@@ -26,7 +26,7 @@ sidebar_label: "OS Upgrade"
 #### Launchpad
 
 - After logging into launchpad in WME setup go to Developer Workspace, and then go to container as shown in below image
-- Select the containers that are running, hibernate those containers one after the other by hitting stop button as shown in the image below and wait till state is changed to stopped.
+- Select the containers that are running, hibernate those containers one after the other by hitting the stop button as shown in the image below and wait till the state is changed to stop.
   
   [![instances_verification](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)
 
@@ -113,8 +113,8 @@ Follow below three steps in PlatformInstance, StudioWorkspaceInstances, AppDeplo
 
 ## Stop Docker service in the system
 
-- After backup is completed we request you to stop Docker service in the  WME Platform Instance and StudioWorkspace Instance / AppDeployment Instance.
-- Connect to Instance via SSH then execute below command
+- After the backup is completed we request you to stop Docker service in the  WME Platform Instance and StudioWorkspace Instance / AppDeployment Instance.
+- Connect to Instance via SSH then execute the below command
 
 ```bash
 service docker stop
@@ -264,7 +264,7 @@ bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh 
 
 ## Start WME Setup
 
-- After the rebooting the platform instance, the config wizard will automatically start the WME setup, you can verify the startup process through CW portal and can use the setup post start up process
+- After the rebooting the platform instance, the config wizard will automatically start the WME setup, you can verify the startup process through CW portal and can use the setup post startup process
 
 ## Add StudioWorkspace/AppDeployment instances from launchpad
 
