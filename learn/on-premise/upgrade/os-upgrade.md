@@ -5,28 +5,41 @@ sidebar_label: "OS Upgrade"
 ---
 ---
 
+## Introduction
+
+### Why do we OS Upgrade ?
+
+- WME is completely running inside docker containers, this docker service is hosted on the Platform Instance's Operating System
+- Updated Docker versions are been introduced for every OS version, so inorder to maintain updated docker version we expect users to upgrade host OS
+- Beside these points by upgrading you will benefit by getting the latest software, including newly updated security patches
+- It also comes with the latest upgraded technology in different services along with docker, with every new release and bypasses having to resort to reinstalling and reconfiguring your system
+
+Below is the guide for upgrading the Operating system in the WME running Instances
+
 ## Data Storage in WME
 
-- In WaveMaker Enterprise setup we have one platform instance where all the setup related services and data is stored, we have StudioWorkspace instances where all the data specific to user in the setup is stored, and we have AppDeployment instances where the data of the applications developed in WaveMaker is stored
-- In the Platform instance all the data is completely stored in **/wm-data** directory/volume
-- Coming to StudioWorkspace and AppDeployment Instances we store the data in **/data** directory
+- WaveMaker Platform Stores it's state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
+- WaveMaker uses separate dedicated directory /wm-data in WaveMaker Platform Instance for storing data and /data in StudioWorkspace Instance / AppDeployment Instance.
 
-## Data Backup
+## What Data needs be Backed up
 
-- WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
-- WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in StudioWorkspace Instance / AppDeployment Instance.
-- Create an AMI or use the latest AMI of WME Instance or VM for creating AMI for different cloud providers follow the below steps.
-- We move all the data to Platform Instance(/wm-data dir or volume) so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
+- The `/wm-data` directory in Platform instance
+- The `/data` directory in all the StudioWorkspace/AppDeployment Instances are required to be backed up
 
-### Passivate containers in StudioWorkspace/AppDeployment instances
+## How to move all the data to a single location
 
-- Inorder to upgrade your operating system it is recommended to passivate the containers in StudioWorkspace/AppDeployment instances
+- We can move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
+- This moving of all data to the `/wm-data` directory is achieved by performing the following steps
+
+### Passivate containers in StudioWorkspace/AppDeployment Instances
+
+- Inorder to upgrade your operating system it is recommended to passivate the containers in StudioWorkspace/AppDeployment Instances
 - It can be done in two different ways
 
 #### Launchpad
 
 - After logging into launchpad in WME setup go to Developer Workspace, and then go to container as shown in below image
-- Select the containers that are running, hibernate those containers one after the other by hitting the stop button as shown in the image below and wait till the state is changed to stop.
+- Select the containers that are running, hibernate those containers one after the other by hitting stop button as shown in the image below and wait till state is changed to stopped.
   
   [![instances_verification](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)
 
@@ -34,13 +47,13 @@ sidebar_label: "OS Upgrade"
   
   [![developer_workspace](/learn/assets/wme-setup/upgrade-wme-setup/developer_workspace.png)](/learn/assets/wme-setup/upgrade-wme-setup/developer_workspace.png)
   
-  - Here select all the StudioWorkspace instances one by one and do the below operations
+- Here select all the StudioWorkspace Instances one by one and do the below operations
 
-  - First hit the stop button present there, it will stop the instances from taking new user containers, wait till the state of instance is changed to **STOPPED**
-  - Then you need to hit the passivate button, this will passivate all the stopped containers in the instance selected, wait till there are no stopped instances present in the instance
-  - After this is done in all StudioWorkspace instances cross-check the running containers in containers tab, all the containers should be in passivated state
-  
-  - After making sure all containers are passivated come back to capacity and select one by one instances and hit delete icon as shown below, this will delete the instance from setup
+- First hit the stop button present there, it will stop the Instances from taking new user containers, wait till the state of Instance is changed to **STOPPED**
+- Then you need to hit the passivate button, this will passivate all the stopped containers in the Instance selected, wait till there are no stopped Instances present in the Instance
+- After this is done in all StudioWorkspace Instances cross-check the running containers in containers tab, all the containers should be in passivated state
+
+- After making sure all containers are passivated come back to capacity and select one by one Instances and hit delete icon as shown below, this will delete the Instance from setup
   
   [![delete_instances](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)
 
@@ -48,7 +61,7 @@ sidebar_label: "OS Upgrade"
 
 #### Command Line
 
-- You can execute the below command in platform instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment instances in the setup
+- You can execute the below command in platform Instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment Instances in the setup
 
   ```bash
   python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd> -di True
@@ -71,7 +84,7 @@ sidebar_label: "OS Upgrade"
 
   - **Command Line**
 
-    - Use the following command to stop the WME setup in platform instance
+    - Use the following command to stop the WME setup in platform Instance
 
     ```bash
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --stop
@@ -83,29 +96,31 @@ sidebar_label: "OS Upgrade"
 
     [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)
 
-- Take a backup of `/wm-data` directory of Platform Instance by taking a snapshot of a volume.
-- For the disaster and recovery process take a backup of `/data` directory of StudioWorkspace Instance / AppDeployment Instance by taking snapshots.
+## How to take a backup of the data
 
-#### AWS
+- Take a backup of `/wm-data` directory of Platform Instance by taking a snapshot of a volume
+- You can find below, the steps of taking snapshot of a volume in different Infra providers
+
+### AWS
 
 - To create AMI of Instance in AWS cloud provider please refer [AMI creation in aws](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html).
 - Stop WME EC2 instance and detach eth1 network interface [follow the steps given here](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html#detach_eni), make a note of interface ID or ENI ID
   
-#### Azure
+### Azure
 
 - For creating an Image of Instance in AZURE cloud provider please refer [Image creation in azure](https://docs.microsoft.com/en-us/azure/virtual-machines/image-version-vm-cli).
 - Stop WME VM and detach network interface [follow the steps given here](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface-vm#remove-a-network-interface-from-a-vm), make a note of interface ID.
 
-#### GCP
+### GCP
 
 - For creating an Image of Instance in GCP cloud provider please refer [Image creation in GCP](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images).
 - Stop WME VM aESXietach IP address [follow the steps given here](https://cloud.google.com/compute/docs/ip-addresses/reserve-static-internal-ip-address#deleting_a_static_internal_ip_address), make a note of interface ID.
 
-#### VMWARE ESXi
+### VMWARE ESXi
 
 - For creating a snapshot of VM in VMware please refer [snapshot creation in vmware](https://www.vmware.com/support/ws5/doc/ws_preserve_sshot_taking.html).
   
-#### Hyper-V
+### Hyper-V
 
 - For creating a snapshot of VM in Hyper-V please refer [snapshot creation in Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/checkpoints)
 
@@ -113,8 +128,8 @@ Follow below three steps in PlatformInstance, StudioWorkspaceInstances, AppDeplo
 
 ## Stop Docker service in the system
 
-- After the backup is completed we request you to stop Docker service in the  WME Platform Instance and StudioWorkspace Instance / AppDeployment Instance.
-- Connect to Instance via SSH then execute the below command
+- After backup is completed we request you to stop Docker service in the  WME Platform Instance and StudioWorkspace Instance / AppDeployment Instance.
+- Connect to Instance via SSH then execute below command
 
 ```bash
 service docker stop
@@ -122,16 +137,17 @@ service docker stop
 
 ## Upgrade the Operating System
 
-### Without Internet Enabled for instances
+### Without Internet Enabled for Instances
 
-#### WME Platform Instance
+#### Launch WME Platform Instance
 
-- Launch the instance or VM with the same IP address with the latest AMI Image. To create WME Platform Instance in the different cloud and on-premise environments please follow the below steps attach the /wm-data volume to Platform Instance and Mount the volume to the platform Instance using the following command.
-- Make sure have to attach backup /wm-data volume to Platform Instance.
+- Launch the Instance or VM with the same IP address with the latest AMI Image. To create WME Platform Instance in the different cloud and on-premise environments please follow the below steps attach the /wm-data volume to Platform Instance and Mount the volume to the platform Instance using the following command.
+- Make sure to attach backup /wm-data volume to Platform Instance.
+- You can find below, the steps of launching a Platform Instance in different Infra providers
 
 ##### AWS
 
-- To launch WME Platform instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
+- To launch WME Platform Instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
   
 ##### AZURE
 
@@ -149,7 +165,7 @@ service docker stop
 
 - To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
 
-##### Backup data mount in WME Platform Instance
+#### Mount the backed up data in the new WME Platform Instance
 
 ```bash
 mount /dev/</wm-data disk> /wm-data
@@ -180,9 +196,10 @@ bash wme-installer.sh --data-untar
 
 [![data_untar](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)
 
-#### WME StudioWorkspace Instance / AppDeployment Instance
+#### Launch WME StudioWorkspace Instance/AppDeployment Instances
 
-- Launch the instance or VM with the same IP address with the latest AMI Image.To create WME StudioWorkspace Instance / AppDeployment Instance in the different cloud and on-premise environments please follow the below steps and attach the /data to StudioWorkspace Instance / AppDeployment Instance.
+- Launch the Instance or VM with the same IP address with the latest AMI Image.To create WME StudioWorkspace Instance / AppDeployment Instance in the different cloud and on-premise environments please follow the below steps and attach the /data to StudioWorkspace Instance / AppDeployment Instance.
+- You can find below, the steps of launching StudioWorkspace Instance/AppDeployment Instances in different Infra providers
 
 ##### AWS
 
@@ -204,7 +221,7 @@ bash wme-installer.sh --data-untar
 
 - To create WME Studio Workspace/AppDeploy virtual machines in Hyper-V please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
 
-##### Backup data mount in StudioWorkspace Instance / AppDeployment Instance
+#### Mount the backed up data in the new StudioWorkspace Instance / AppDeployment Instance
 
 - Mount the volume to the StudioWorkspace Instance / AppDeployment Instance using the following command.
 
@@ -241,7 +258,7 @@ Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise
 bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh --upgrade-instances
 ```
 
-### With Internet Enabled for instances
+### With Internet Enabled for Instances
 
 #### Ubuntu
 
@@ -259,14 +276,14 @@ bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh 
 
 #### Reboot the system post upgrade
 
-- Reboot StudioWorkspace and AppDeployment instances
-- Once it is done you have to reboot your platform instance after upgrading OS in that instance
+- Reboot StudioWorkspace and AppDeployment Instances
+- Once it is done you have to reboot your platform Instance after upgrading OS in that Instance
 
 ## Start WME Setup
 
-- After the rebooting the platform instance, the config wizard will automatically start the WME setup, you can verify the startup process through CW portal and can use the setup post startup process
+- After the rebooting the platform Instance, the config wizard will automatically start the WME setup, you can verify the startup process through CW portal and can use the setup post start up process
 
-## Add StudioWorkspace/AppDeployment instances from launchpad
+## Add StudioWorkspace/AppDeployment Instances from launchpad
 
-- For adding Developer instance you can refer [WME Add Developer Capacity](/learn/on-premise/configure/add-dev-capacity)
-- Similarly, for AppDeployment instances you can refer [WME Add Apps Capacity](/learn/on-premise/configure/add-apps-capacity)
+- For adding Developer Instance you can refer [WME Add Developer Capacity](/learn/on-premise/configure/add-dev-capacity)
+- Similarly, for AppDeployment Instances you can refer [WME Add Apps Capacity](/learn/on-premise/configure/add-apps-capacity)
