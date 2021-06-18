@@ -5,7 +5,11 @@ sidebar_label: "OS Upgrade"
 ---
 ---
 
+## Data Storage in WME
 
+- In WaveMaker Enterprise setup we have one platform instance where all the setup related services and data is stored, we have StudioWorkspace instances where all the data specific to user in the setup is stored, and we have AppDeployment instances where the data of the applications developed in WaveMaker is stored
+- In Platform instance all the data is completely stored in **/wm-data** directory/volume
+- Coming to StudioWorkspace and AppDeployment Instances we store the data in **/data** directory
 
 ## Data Backup
 
@@ -14,14 +18,40 @@ sidebar_label: "OS Upgrade"
 - Create an AMI or use the latest AMI of WME Instance or VM for creating AMI for different cloud providers follow the below steps.
 - We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
 
-### Passivate the running containers
+### Passivate containers in StudioWorkspace/AppDeployment instances
 
-- Before Upgrading operating system it is recommended to passivate the containers in Developer/App Deployment instances
-- It can be done from launchpad
-- If not you can also execute the below command in platform instance
+- Inorder to upgrade your operating system it is recommended to passivate the containers in StudioWorkspace/AppDeployment instances
+- It can be done in two different ways
+
+#### Launchpad
+
+- After logging into launchpad in WME setup go to Developer Workspace, and then go to container as shown in below image
+- Select the containers that are running, hibernate those containers one after the other by hitting stop button as shown in the image below and wait till state is changed to stopped.
+  
+  [![instances_verification](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)
+
+- After logging into launchpad in WME setup go to Developer Workspace, and then go to capacity as shown in below image
+  
+  [![developer_workspace](/learn/assets/wme-setup/upgrade-wme-setup/developer_workspace.png)](/learn/assets/wme-setup/upgrade-wme-setup/developer_workspace.png)
+  
+  - Here select all the StudioWorkspace instances one by one and do the below operations
+
+  - First hit the stop button present there, it will stop the instances from taking new user containers, wait till the state of instance is changed to **STOPPED**
+  - Then you need to hit the passivate button, this will passivate all the stopped containers in the instance selected, wait till there are no stopped instances present in the instance
+  - After this is done in all StudioWorkspace instances cross-check the running containers in containers tab, all the containers should be in passivated state
+  
+  - After making sure all containers are passivated come back to capacity and select one by one instances and hit delete icon as shown below, this will delete the instance from setup
+  
+  [![delete_instances](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)
+
+- After completed the above process in Developer Workspace, go to AppDeployments, and perform the same operation mentioned above in all AppDeployment Instances(Demo, Stage, Live)
+
+#### Command Line
+
+- You can execute the below command in platform instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment instances in the setup
 
   ```bash
-  python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd>
+  python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd> -di True
   ```
 
   - **protocol** represents what web protocol is used to connect to WaveMaker application (http/https)
@@ -31,13 +61,13 @@ sidebar_label: "OS Upgrade"
   - Refer below mentioned example command for passivation
 
   ```bash
-  python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d wme-demo.wavemaker.com -u test@wavemaker.com -p test-password -di False
+  python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d wme-demo.wavemaker.com -u test@wavemaker.com -p test-password -di True
   ```
 
 ### Stop the WME Setup
 
 - We recommend you to stop the WME setup before proceeding for further steps
-- You can stop the WME setup operation either at instance level or from config wizard portal
+- You can stop the WME setup operation either by executing commands at command line or from config wizard portal
 
   - **Command Line**
 
@@ -52,6 +82,9 @@ sidebar_label: "OS Upgrade"
     - Log in to CW portal, after login in home page you can see stop button as shown in the image below, hit stop button to stop the WME setup
 
     [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)
+
+- Take a backup of `/wm-data` directory of Platform Instance by taking a snapshot of a volume.
+- For the disaster and recovery process take a backup of `/data` directory of StudioWorkspace Instance / AppDeployment Instance by taking snapshots.
 
 #### AWS
 
@@ -89,7 +122,7 @@ service docker stop
 
 ## Upgrade the Operating System
 
-### Without Internet Enabled for Instances
+### Without Internet Enabled for instances
 
 #### WME Platform Instance
 
@@ -102,7 +135,7 @@ service docker stop
   
 ##### AZURE
 
-- To launch WME Platform virtual machines in AZURE cloud environmet please refer [WME Platform instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME Platform virtual machines in AZURE cloud environment please refer [WME Platform instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
   
 ##### GCP
 
@@ -157,7 +190,7 @@ bash wme-installer.sh --data-untar
   
 ##### AZURE
 
-- To launch WME Studio Workspace/AppDeploy virtual machines in AZURE cloud environmet please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME Studio Workspace/AppDeploy virtual machines in AZURE cloud environment please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
   
 ##### GCP
 
@@ -202,13 +235,13 @@ Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise
 
 #### Sync StudioWorkspace Instance / AppDeployment Instance
 
-- Execute the following command in Platform Instance to sync the StudioWorkspace/AppDeploy Instances.
+- Execute the following command in Platform Instance to sync the StudioWorkspace/AppDeploy instances.
 
 ```bash
 bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh --upgrade-instances
 ```
 
-### With Internet Enabled for Instances
+### With Internet Enabled for instances
 
 #### Ubuntu
 
@@ -224,10 +257,16 @@ bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh 
 
 - To upgrade RHEL 7 operating system to RHEL 8 operating system please refer [RHEL OS Upgrade](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/upgrading_from_rhel_7_to_rhel_8/index)
 
-## Reboot the system post upgrade
+#### Reboot the system post upgrade
 
-- Please reboot your system after upgrading OS in that instance
+- Reboot StudioWorkspace and AppDeployment instances
+- Once it is done you have to reboot your platform instance after upgrading OS in that instance
 
 ## Start WME Setup
 
 - After the rebooting the platform instance, the config wizard will automatically start the WME setup, you can verify the startup process through CW portal and can use the setup post start up process
+
+## Add StudioWorkspace/AppDeployment instances from launchpad
+
+- For adding Developer instance you can refer [WME Add Developer Capacity](/learn/on-premise/configure/add-dev-capacity)
+- Similarly, for AppDeployment instances you can refer [WME Add Apps Capacity](/learn/on-premise/configure/add-apps-capacity)
