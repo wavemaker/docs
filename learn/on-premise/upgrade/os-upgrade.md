@@ -10,7 +10,8 @@ sidebar_label: "OS Upgrade"
 ### Passivate the running containers
 
 - Before Upgrading operating system it is recommended to passivate the containers in Developer/App Deployment instances
-- It can be done from launchpad, or you can execute the below command in platform instance
+- It can be done from launchpad
+- If not you can also execute the below command in platform instance
 
   ```bash
   python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd>
@@ -31,7 +32,7 @@ sidebar_label: "OS Upgrade"
 - We recommend you to stop the WME setup before proceeding for further steps
 - You can stop the WME setup operation either at instance level or from config wizard portal
 
-  - **Instance Level**
+  - **Command Line**
 
     - Use the following command to stop the WME setup in platform instance
 
@@ -73,7 +74,18 @@ sidebar_label: "OS Upgrade"
   
 #### Hyper-V
 
-- for creating a snapshot of VM in Hyper-V please refer [snapshot creation in Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/checkpoints)
+- For creating a snapshot of VM in Hyper-V please refer [snapshot creation in Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/checkpoints)
+
+Follow below three steps in PlatformInstance, StudioWorkspaceInstances, AppDeploymentInstances.
+
+## Stop Docker service in the system
+
+- After backup is completed we request you to stop Docker service in the instance
+- Connect to Instance via SSH then execute below command
+
+```bash
+service docker stop
+```
 
 ## Upgrade the Operating System
 
