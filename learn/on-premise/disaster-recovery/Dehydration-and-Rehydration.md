@@ -54,7 +54,7 @@ This process is used to rotate instances periodically or for disaster recovery w
 bash wme-installer.sh --data-archive
 ```
 
-- Copy the generated data.tar to secure location in local or to any cloud storage services.
+- Copy the generated data.tar to secure location on new WME Platform Instance or to any cloud storage services.
 
 ## Data restore
 
@@ -115,7 +115,7 @@ bash wme-installer.sh --data-untar
 
 ### StudioWorkspace Instance / AppDeployment Instance
 
-- Launch the instance or VM with the same IP address with the latest AMI Image.To create WME StudioWorkspace Instance / AppDeployment Instance in the different cloud and on-premise environments please follow the below steps and attach the /data to StudioWorkspace Instance / AppDeployment Instance.
+- Launch the instance or VM with the latest AMI Image.To create WME StudioWorkspace Instance / AppDeployment Instance in the different cloud and on-premise environments please follow the below steps and attach the /data to StudioWorkspace Instance / AppDeployment Instance.
 
 #### AWS
 
