@@ -16,19 +16,19 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 
 ## How Data Storage in WME
 
-- WaveMaker Platform Stores it's state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
-- WaveMaker uses separate dedicated directory /wm-data in WaveMaker Platform Instance for storing data and /data direcotry in StudioWorkspace Instance / AppDeployment Instance.
+- WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
+- WaveMaker uses separate dedicated directory /wm-data in WaveMaker Platform Instance for storing data and /data directory in StudioWorkspace Instance / AppDeployment Instance.
 
-## What Data needs be Backed up
+## What Data needs to be Backed up
 
 - The `/wm-data` directory in Platform Instance.
 - The `/data` directory in all the StudioWorkspace/AppDeployment Instances are required to be backed up.
-- Take backup/snapshots above volume/directories periodically. 
+- Take backup/snapshots above volume/directories periodically.
 
 ## How to move all the data to a single location
 
 - We can move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. In that case, no need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
-- This moving of all data to the `/wm-data` directory is achieved by performing the following steps
+- This moving of all data to the `/wm-data` directory, is achieved by performing the following steps
 
 ### Passivate containers in StudioWorkspace/AppDeployment Instances
 
@@ -60,7 +60,7 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 
 #### Command Line
 
-- You can execute the below command in platform Instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment Instances in the setup. You need to ssh to the Instance and need to have root privileges to execute the below script. 
+- You can execute the below command in platform Instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment Instances in the setup. You need to ssh to the Instance and need to have root privileges to execute the below script.
 
   ```bash
   python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd> -di True
@@ -83,8 +83,7 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 
   - **Command Line**
 
-    - Use the following command to stop the WME setup in Platform Instance. You need to ssh to the Instance and need to have root privileges to execute the below script. 
-
+    - Use the following command to stop the WME setup in Platform Instance. You need to ssh to the Instance and need to have root privileges to execute the below script.
 
     ```bash
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --stop
@@ -119,7 +118,7 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 ### VMWARE ESXi
 
 - For creating a snapshot of VM in VMware please refer [snapshot creation in vmware](https://www.vmware.com/support/ws5/doc/ws_preserve_sshot_taking.html).
-- Alternatively you can take backup of data directory by executing the below command in the Platform Instance. Archived copy will be created in /wm-data directory with the name data.tar. 
+- Alternatively you can take backup of data directory by executing the below command in the Platform Instance. Archived copy will be created in /wm-data directory with the name data.tar.
 
 ```bash
 bash wme-installer.sh --data-archive
@@ -131,7 +130,6 @@ bash wme-installer.sh --data-archive
 
 - For creating a snapshot of VM in Hyper-V please refer [snapshot creation in Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/checkpoints)
 
-
 ## Stop Docker service in the system
 
 - After backup is completed we request you to stop Docker service in the  WME Platform Instance and StudioWorkspace Instance / AppDeployment Instance.
@@ -142,16 +140,17 @@ service docker stop
 ```
 
 ## Upgrade the Operating System
-There are two possibilities depends on your infrastructure. 
+
+There are two possibilities depends on your infrastructure.
 
 - You may have Predefined list of Operating System Images allowed by your organization and managed IT Team. i.e You are only Allowed to launch/request Instances with those images.
-- If you are allowed to execute Operating System upgrade Commands(like apt update, yum update) in given WME Instances. 
+- If you are allowed to execute Operating System upgrade Commands(like apt update, yum update) in given WME Instances.
 
 ### Instances with Managed Operating System
 
 #### Launch WME Platform Instance
 
-- Launch the Instance or VM with the same IP address with the latest AMI Image. To create WME Platform Instance in the different cloud or on-premise environments please follow the below steps. Attach the previously backedup /wm-data volume to Platform Instance and Mount the volume to the platform Instance using the following command.
+- Launch the Instance or VM with the same IP address with the latest AMI Image. To create WME Platform Instance in the different cloud or on-premise environments please follow the below steps. Attach the previously backed up /wm-data volume to Platform Instance and Mount the volume to the platform Instance using the following command.
 - Make sure to attach backup of /wm-data volume to Platform Instance.
 - You can find below, the steps of launching a Platform Instance with respective to different Infra providers.
 
@@ -175,7 +174,7 @@ There are two possibilities depends on your infrastructure.
 
 - To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
 
-#### Volumes Based Disks Resotring(AWS, GCP, Azure)
+#### Volumes Based Disks Restoring(AWS, GCP, Azure)
 
 - Mount the /wm-data backup disk to new Platform Instance
 
@@ -197,7 +196,7 @@ blkid
 UUID=</wm-data block-device-UUID>  /wm-data   ext4   defaults ,nofail  0  2
 ```
 
-#### Direcotry based Disks Restoring(VMWARE ESXi and Hyper-V)
+#### Directory based Disks Restoring(VMWARE ESXi and Hyper-V)
 
 - Copy tar to new Platform Instance which was archived in the previous steps.
 - Use the below steps for restore /wm-data using data.tar which was archived in previous steps in Platform Instance,
@@ -219,11 +218,11 @@ bash wme-installer.sh --data-untar
 Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise/aws/install/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
 - Setup using config wizard please refer [WaveMaker configwizard setup](/learn/on-premise/aws/install/setup-using-cw) and use same WaveMaker studio and built apps Domain names.
 
-
 ### Setups when allowed to execute Operating System Upgrade Commands
+
  ::: note
     Follow below steps in PlatformInstance, all StudioWorkspaceInstances and AppDeploymentInstances.
- ::: 
+ :::
 
 #### Ubuntu
 
@@ -250,6 +249,6 @@ Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise
 
 ## Add StudioWorkspace/AppDeployment Instances from launchpad
 
-- Add Newly launched Instances or Upgraded Instance to to Platform from Launchpad.
+- Add Newly launched Instances or Upgraded Instance to Platform from Launchpad.
 - For adding Developer Instance you can refer [WME Add Developer Capacity](/learn/on-premise/configure/add-dev-capacity)
 - Similarly, for AppDeployment Instances you can refer [WME Add Apps Capacity](/learn/on-premise/configure/add-apps-capacity)
