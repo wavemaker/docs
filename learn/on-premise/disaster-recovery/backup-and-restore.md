@@ -5,14 +5,14 @@ sidebar_label: "Backup and Restore "
 ---
 ---
 
-The following document will help an organization to take backup data at unplanned incidents and minimizing the effects of a disaster by restoring, so an organization will continue to operate or quickly resume key operations. Make sure organization has to use the same IP address as previous WME Instances for new WME Instances.
+The following document will help an organization to take backup data at unplanned incidents and minimizing the effects of a disaster by restoring, so an organization will continue to operate or quickly resume key operations. Make sure the organization has use the same IP address as previous WME Instances for new WME Instances.
 
 ## Data Backup
 
 - WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
 - WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in StudioWorkspace Instance / AppDeployment Instance.
 - Create an AMI or use the latest AMI of WME Instance or VM for creating AMI for different cloud providers follow the below steps.
-- We move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
+- We move all the data to Platform Instance(/wm-data dir or volume) so that backup will be easier. No need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
 
 ### AWS
 

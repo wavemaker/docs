@@ -8,7 +8,7 @@ sidebar_label: "OS Upgrade"
 ## Why do we OS Upgrade ?
 
 - WME is completely running inside docker containers, these docker containers are hosted on the Platform Instance's Operating System.
-- Updated Docker versions are been introduced for every OS version, so inorder to maintain updated docker version we expect users to upgrade host OS.
+- Updated Docker versions are been introduced for every OS version, so inorder to maintain an updated docker version we expect users to upgrade the host OS.
 - Beside these points by upgrading you will benefit by getting the latest software, including newly updated security patches.
 - It also comes with the latest upgraded technology in different services along with docker, with every new release and bypasses having to resort to reinstalling and reconfiguring your system.
 
@@ -27,7 +27,7 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 
 ## How to move all the data to a single location
 
-- We can move all the data to Platform Instance(/wm-data dir or volume), so that backup will be easier. In that case, no need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
+- We can move all the data to Platform Instance(/wm-data dir or volume) so that backup will be easier. In that case, no need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
 - This moving of all data to the `/wm-data` directory, is achieved by performing the following steps
 
 ### Passivate containers in StudioWorkspace/AppDeployment Instances
@@ -37,12 +37,12 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 
 #### Launchpad
 
-- After logging into launchpad in your WME setup go to Developer Workspace Tab, and then go to container as shown in below image
-- Select the containers that are running, hibernate those containers one after the other by hitting stop button as shown in the image below and wait till state is changed to stopped.
+- After logging into launchpad in your WME setup go to the Developer Workspace Tab, and then go to the container as shown in the below image
+- Select the containers that are running, hibernate those containers one after the other by hitting the stop button as shown in the image below, and wait till the state is changed to stop.
   
   [![instances_verification](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)
 
-- Go to Developer Workspace, and then go to capacity as shown in below image
+- Go to Developer Workspace, and then go to capacity as shown in the below image
   
   [![developer_workspace](/learn/assets/wme-setup/upgrade-wme-setup/developer_workspace.png)](/learn/assets/wme-setup/upgrade-wme-setup/developer_workspace.png)
   
@@ -50,9 +50,9 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 
 - First hit the stop button present there, it will stop the Instances from taking new user containers, wait till the state of Instance is changed to **STOPPED**
 - Then you need to hit the passivate button, this will passivate all the stopped containers in the Instance selected, wait till there are no stopped Instances present in the Instance
-- After this is done in all StudioWorkspace Instances cross-check the running containers in containers tab, all the containers should be in passivated state.
+- After this is done in all StudioWorkspace Instances cross-check the running containers in the containers tab, all the containers should be in the passivated state.
 
-- After making sure all containers are passivated come back to capacity and select one by one Instances and hit delete icon as shown below, this will delete the Instance from setup.
+- After making sure all containers are passivated come back to capacity and select one by one Instances and hit the delete icon as shown below, this will delete the Instance from setup.
   
   [![delete_instances](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)
 
@@ -60,7 +60,7 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 
 #### Command Line
 
-- You can execute the below command in platform Instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment Instances in the setup. You need to ssh to the Instance and need to have root privileges to execute the below script.
+- You can execute the below command in Platform Instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment Instances in the setup. You need to ssh to the Instance and need to have root privileges to execute the below script.
 
   ```bash
   python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd> -di True
@@ -118,13 +118,13 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 ### VMWARE ESXi
 
 - For creating a snapshot of VM in VMware please refer [snapshot creation in vmware](https://www.vmware.com/support/ws5/doc/ws_preserve_sshot_taking.html).
-- Alternatively you can take backup of data directory by executing the below command in the Platform Instance. Archived copy will be created in /wm-data directory with the name data.tar.
+- Alternatively, you can take backup of the data directory by executing the below command in the Platform Instance. Archived copy will be created in /wm-data directory with the name data.tar.
 
 ```bash
 bash wme-installer.sh --data-archive
 ```  
 
-- Copy the generated data.tar to secure location either on to new WME Platform Instance or to any cloud storage services or your local machine. This data.tar will be used for the restoring purpose.
+- Copy the generated data.tar to secure location either on to new WME Platform Instance or to any cloud storage services or your local machine. This data.tar will be used for restoring purposes.
 
 ### Hyper-V
 
@@ -132,8 +132,8 @@ bash wme-installer.sh --data-archive
 
 ## Stop Docker service in the system
 
-- After backup is completed we request you to stop Docker service in the  WME Platform Instance and StudioWorkspace Instance / AppDeployment Instance.
-- Connect to each Instance via SSH then execute below command
+- After the backup is completed we request you to stop Docker service in the  WME Platform Instance and StudioWorkspace Instance / AppDeployment Instance.
+- Connect to each Instance via SSH then execute the below command
 
 ```bash
 service docker stop
@@ -143,7 +143,7 @@ service docker stop
 
 There are two possibilities depends on your infrastructure.
 
-- You may have Predefined list of Operating System Images allowed by your organization and managed IT Team. i.e You are only Allowed to launch/request Instances with those images.
+- You may have a Predefined list of Operating System Images allowed by your organization and managed IT Team. i.e You are only Allowed to launch/request Instances with those images.
 - If you are allowed to execute Operating System upgrade Commands(like apt update, yum update) in given WME Instances.
 
 ### Instances with Managed Operating System
@@ -221,7 +221,7 @@ Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise
 ### Setups when allowed to execute Operating System Upgrade Commands
 
  ::: note
-    Follow below steps in PlatformInstance, all StudioWorkspaceInstances and AppDeploymentInstances.
+    Follow the below steps in PlatformInstance, all StudioWorkspaceInstances and AppDeploymentInstances.
  :::
 
 #### Ubuntu
@@ -245,10 +245,10 @@ Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise
 
 ## Start WME Setup
 
-- After the rebooting the platform Instance, the config wizard will automatically start the WME setup, you can verify the startup process through CW portal and can use the setup post start up process.
+- After rebooting the platform Instance, the config wizard will automatically start the WME setup, you can verify the startup process through CW portal and can use the setup post start up process.
 
 ## Add StudioWorkspace/AppDeployment Instances from launchpad
 
-- Add Newly launched Instances or Upgraded Instance to Platform from Launchpad.
+- Add Newly launched Instances or Upgraded Instances to Platform from Launchpad.
 - For adding Developer Instance you can refer [WME Add Developer Capacity](/learn/on-premise/configure/add-dev-capacity)
 - Similarly, for AppDeployment Instances you can refer [WME Add Apps Capacity](/learn/on-premise/configure/add-apps-capacity)
