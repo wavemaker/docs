@@ -9,7 +9,7 @@ author: Swetha Kundaram
 
 As a part of brand unification, our digital team has been working hard to create a better online experience for our customers. For this reason, we are moving to a new domain for WaveMaker Documentation.
 
-Starting June 17, 2021, our new domain for Documentation will be **[docs.wavemaker.com/learn](https://docs.wavemaker.com/learn/)**. 
+Starting June 21, 2021, our new domain for Documentation will be **[docs.wavemaker.com/learn](https://docs.wavemaker.com/learn/)**. 
 
 ### RSS Feed
 
