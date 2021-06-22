@@ -5,7 +5,7 @@ sidebar_label: "OS Upgrade"
 ---
 ---
 
-## Why do we OS Upgrade ?
+## Why do we need Operating System Upgrade ?
 
 - WME is completely running inside docker containers, these docker containers are hosted on the Platform Instance's Operating System.
 - Updated Docker versions are been introduced for every OS version, so inorder to maintain an updated docker version we expect users to upgrade the host OS.
@@ -14,7 +14,7 @@ sidebar_label: "OS Upgrade"
 
 Below is the guide for upgrading the Operating system in the WME running Instances.
 
-## How Data Storage in WME
+## How Data Stored in WME
 
 - WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
 - WaveMaker uses separate dedicated directory /wm-data in WaveMaker Platform Instance for storing data and /data directory in StudioWorkspace Instance / AppDeployment Instance.

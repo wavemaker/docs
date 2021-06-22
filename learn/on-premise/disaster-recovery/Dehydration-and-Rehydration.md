@@ -12,10 +12,10 @@ This process is used to rotate instances periodically or for disaster recovery w
 - WaveMaker Platform Stores its state into the disk. WaveMaker Platform administrators can take backups of those disk/directories and can restore them to any previous state.
 - WaveMaker uses separate dedicated directory `/wm-data` in WaveMaker Platform Instance for storing data and `/data` in StudioWorkspace Instance / AppDeployment Instance.
 
-### What Data needs to be Backed up in WME Instances
+### What Data needs to be Backup in WME Instances
 
 - The `/wm-data` directory in Platform Instance.
-- The `/data` directory in all the StudioWorkspace/AppDeployment Instances are required to be backed up.
+- The `/data` directory in all the StudioWorkspace/AppDeployment Instances are required to be backup.
 - Take backup/snapshots above volume/directories periodically.
 
 ## How to move all the data to a single location
@@ -23,7 +23,7 @@ This process is used to rotate instances periodically or for disaster recovery w
 - We can move all the data to Platform Instance(/wm-data dir or volume) so that backup will be easier. In that case, no need to take backups of any (volume/dir) in any of StudioWorkspace Instance / AppDeployment Instance.
 - Before applying the backup process do Hibernation and passivation for user and application containers, this can be done in either by executing a command from the command line or launchpad.
 
-### Passivate Containers in StudioWorkspace/AppDeployment instances
+### Passivate Containers in StudioWorkspace/AppDeployment Instances
 
 - To upgrade your operating system it is recommended to passivate the containers in StudioWorkspace/AppDeployment Instances
 - It can be done in two different ways
