@@ -16,8 +16,16 @@ sidebar_label: "Initialize Setup"
 - After downloading and extracting the WME installer, run the bash script which is displayed at the terminal as shown in the command below.
 
 ```bash
-bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
+    bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh 
 ```
+
+- To Enable SSL for Platform please run following command
+
+```bash
+    bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --enable-ssl
+```
+
+- To configure SSL for platform please refer [ssl configuration for platform](/learn/on-premise/configure/config-ssl)
 
 - When prompted, enter the interface name. For example, eth0, ens5; and confirm the IP Address.
 - Provide the CIDR (Classless Inter-Domain Routing) range; CIDR is a network range allocation to a particular network address; it will tell you how many network IP addresses are available in a given network.

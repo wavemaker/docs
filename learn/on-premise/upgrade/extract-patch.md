@@ -24,5 +24,7 @@ dpkg -i  <WME Patch filename>
 - Execute the following command to untar the file.
 
 ```bash
-tar -xvf  <WME Patch Filename>
+    sudo mkdir -p  /usr/local/content/wme/wme-installer/<version>/
+    sudo tar -xvf  <WME Patch Filename> -C /usr/local/content/wme/wme-installer/<version>/
+    cd /usr/local/content/wme/wme-installer/<version>/
 ```

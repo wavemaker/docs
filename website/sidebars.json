@@ -625,7 +625,14 @@
     "on-premise/upgrade/download-copy-patch",
     "on-premise/upgrade/extract-patch",
     "on-premise/upgrade/run-patch",
-    "on-premise/upgrade/docker-upgrade"
+    "on-premise/upgrade/docker-upgrade",
+    "on-premise/upgrade/os-upgrade"
+  ],
+  
+  "Disaster Recovery":
+  [
+    "on-premise/disaster-recovery/backup-and-restore",
+    "on-premise/disaster-recovery/Dehydration-and-Rehydration"
   ]
 },
 
