@@ -65,7 +65,7 @@ You'll need the following details for enabling security for WaveMaker applicatio
 
 You can upload certificates and related information in the **Manage** section of app settings under the **Certificates & Secrets** option.
 
-- Click **New client secret**, and select the **Duration**; for example, *Expires in 1 year*. Note the generated secret value.
+- Click **New client secret**, and select the **Duration**; for example, *Expires in 1 year*. Note the generated secret value.([see here for details](https://docs.microsoft.com/en-gb/azure/active-directory/develop/howto-create-service-principal-portal#option-2-create-a-new-application-secret))
 
 ## Open ID Configuration Setup in WaveMaker
 
@@ -103,7 +103,7 @@ You'll need the the Endpoints from [OpenID Connect metadata document](#endpoints
 ![service provider and integration](/learn/assets/service-provider-integration.png)
 
 - **Client ID**:  Paste the [Client ID](#client-id) of the app created in Azure AD.
-- **Client Secret**: Paste the **Client Secret** ID generated in [Certificates and Secrets](#certificates-and-secrets).
+- **Client Secret**: Paste the **Client Secret** Value generated in [Certificates and Secrets](#certificates-and-secrets).
 
 ### 4. Role Mapping
 
