@@ -1,5 +1,5 @@
 ---
-title: "Adding custom fonts to the Richtext Editor"
+title: "Adding Custom Fonts to Richtext Editor"
 id: ""
 ---
 ---
