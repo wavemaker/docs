@@ -957,10 +957,12 @@
             "how-tos/charts-handling-dynamic-data",
             "how-tos/charts-custom-data"
           ],
+
           "Richtext Editor" :
           [
-            "how-tos/adding-custom-fonts-RTE"
+            "how-tos/adding-custom-fonts-richtext-editor"
           ],
+          
           "Live filter":
           [
             "how-tos/live-filter-applying",
