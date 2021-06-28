@@ -958,6 +958,11 @@
             "how-tos/charts-custom-data"
           ],
 
+          "Richtext Editor" :
+          [
+            "how-tos/adding-custom-fonts-richtext-editor"
+          ],
+          
           "Live filter":
           [
             "how-tos/live-filter-applying",
