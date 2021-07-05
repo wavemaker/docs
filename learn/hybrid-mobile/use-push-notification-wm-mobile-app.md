@@ -302,7 +302,7 @@ App.loginActiononSuccess = function(variable, data, options) {
 
 [![](/learn/assets/push_plugin.png)](/learn/assets/push_plugin.png)
 
-- Mention ‘git’ as source, ‘phonegap-plugin-push’ as plugin name and ‘[https://github.com/wavemaker/phonegap-plugin-push.git#3314a4b](https://github.com/wavemaker/phonegap-plugin-push.git#3314a4b)’ as spec. Then, click **`Add`** button and **`Save`** button.
+- Mention ‘git’ as source, ‘phonegap-plugin-push’ as plugin name and ‘[https://github.com/wavemaker/phonegap-plugin-push#eadcc0c](https://github.com/wavemaker/phonegap-plugin-push#eadcc0c)’ as spec. Then, click **`Add`** button and **`Save`** button.
 
 ## App Usage
 
