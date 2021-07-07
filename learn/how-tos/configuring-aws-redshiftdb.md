@@ -2,6 +2,7 @@
 title: "Connect To AWS Redshift Database"
 id: ""
 ---
+---
 
 ## Introduction
 
