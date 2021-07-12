@@ -4,12 +4,11 @@ id: ""
 ---
 ---
 
-At WaveMaker, we constantly bring ways to make applications more secure. Allowing you to configure login settings to avoid any potential security gaps by using concurrent sessions. Thereby, taking advantage of the Spring framework in WaveMaker generated application code, Spring Security prevents app users from concurrently authenticating to the same application more than a specified number of times.
-
+At WaveMaker, we constantly bring ways to make applications more secure. Configure application login settings to add an extra security layer by using concurrent sessions. By taking advantage of the Spring framework in WaveMaker generated application code, Spring Security prevents app users from concurrently authenticating to the same application more than a specified number of times.
 
 ## How it works
 
-WaveMaker developer can easily enable maximum concurrent sessions for Spring framework to impose this setting and restrict their application users. A policy on what happens when max concurrent sessions has reached can be chosen. One of the policies is to invalidate least recently used session.
+WaveMaker developers can easily enable maximum concurrent sessions in the Spring framework. It allows you to impose a setting and restrict their application users. You can create a policy to choose what happens when max concurrent sessions have reached. One of the policies is to invalidate the least recently used session.
 
 Max Concurrent sessions can be any positive number or -1 (for unlimited concurrent sessions) but not a zero.
 
