@@ -265,7 +265,9 @@
             "app-development/app-security/central-authentication-system",
             "app-development/app-security/token-based-authentication",
             "app-development/app-security/saml-integration",
-            "app-development/app-security/secure-connection-deployed-apps"
+            "app-development/app-security/secure-connection-deployed-apps",
+            "app-development/app-security/concurrent-sessions",
+            "app-development/app-security/hostheader-injection"
           ]
         },     
         {
