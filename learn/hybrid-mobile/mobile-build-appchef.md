@@ -53,11 +53,12 @@ In this step, you can provide a distribution profile and choose certificates of 
 | Options | Description |
 |---|---|
 |Cordova | This is the cordova version that is required by the uploaded app. This cannot be modified.|
-|Package Type | There are two options, 1) Development and 2) Production. Choose ‘Development’ to create a debuggable app -- typically for testing. Choose ‘Production’ to create an apk or ipa to distribute on play store or app store.|
+|Build Type | There are two options, 1) Development and 2) Production. Choose ‘Development’ to create a debuggable app -- typically for testing. Choose ‘Production’ to create an apk or ipa to distribute on play store or app store.|
 |Cordova IOS | This is the cordova-ios version that is required by the uploaded app. This cannot be modified.|
-|IOS Certificate | In this option, either you have to choose already uploaded certificates or you can [upload a new one](#manage-or-upload-certificates). Choose the right certificate that supports ‘Package Type’ selected.|
+|IOS Certificate | In this option, either you have to choose already uploaded certificates or you can [upload a new one](#manage-or-upload-certificates). Choose the right certificate that supports ‘Build Type’ selected.|
 |Cordova Android | This is the cordova-android version that is required by the uploaded app. This cannot be modified|
-|Android Certificate | In this option, A default  _DEBUG certificate is available to generate an android application. _DEBUG certificate can only support ‘Development’ package type. You can either choose already uploaded certificates or you can [upload a new one](#manage-or-upload-certificates). Choose the right certificate that supports ‘Package Type’ selected.|
+|Android Certificate | In this option, A default  _DEBUG certificate is available to generate an android application. _DEBUG certificate can only support ‘Development’ build type. You can either choose already uploaded certificates or you can [upload a new one](#manage-or-upload-certificates). Choose the right certificate that supports ‘Build Type’ selected.|
+|Android Package | This option will be visible only if Android certificate is selected. This dropdown has only two options (aab and apk). If the build type is development, then Android package is set as apk. If the build type is production, then Android package is set as aab. Users can override the default behaviour with their choice.|
 
 Provide the required options and click Save and Build to start building the application.
 
