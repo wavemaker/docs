@@ -10,7 +10,7 @@ There are many situations where specific data needs to be extracted from a scann
 
 ## How to use this prefab
 
-1. Download the [prefab](https://github.com/wavemaker/prefab-entity-extractor/releases/latest) and [import](/learn/app-development/widgets/custom-widget/prefabs-overview#importing-prefabs) into your WaveMaker project.
+1. Download the [prefab](https://github.com/wavemaker/prefab-entity-extractor/releases/latest) and [import](/learn/app-development/custom-widgets/prefabs-overview#importing-prefabs) into your WaveMaker project.
 
     1. [Click to download the Prefab ZIP](https://github.com/wavemaker/prefab-entity-extractor/raw/1.3/prefab.zip).
 
