@@ -10,7 +10,9 @@ There are many situations where specific data needs to be extracted from a scann
 
 ## How to use this prefab
 
-1. Download the prefab [here](https://github.com/wavemaker/prefab-entity-extractor/releases/latest) and [import into your WaveMaker project](/learn/app-development/widgets/custom-widgets#importing-prefabs).
+1. Download the [prefab](https://github.com/wavemaker/prefab-entity-extractor/releases/latest) and [import](/learn/app-development/custom-widgets/prefabs-overview#importing-prefabs) into your WaveMaker project.
+
+    1. [Click to download the Prefab ZIP](https://github.com/wavemaker/prefab-entity-extractor/raw/1.3/prefab.zip).
 
 2. Create AWS account and IAM user with policy `AmazonTextractFullAccess`.
 
