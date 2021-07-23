@@ -140,8 +140,8 @@ Command :
 mount /dev/<block-device-name_1>    /wm-data
 mount /dev/<block-device-name_2>    /wm-runtime  
 Example :
-mount /dev/sdd    /wm-data
-mount /dev/sdc    /wm-runtime
+mount /dev/sdc    /wm-data
+mount /dev/sdd    /wm-runtime
 ```
 
 [![volume mounting](/learn/assets/wme-setup/wme-setup-in-gcp/mounting-volumes-platform.png)](/learn/assets/wme-setup/wme-setup-in-gcp/mounting-volumes-platform.png)

@@ -26,7 +26,7 @@ Export the project to your local or you can directly clone from a repository. Yo
 
 To create a Dockerfile, use the following command.
 
-```Dockerfile
+```bash
 vi Dockerfile
 ```
 
@@ -54,7 +54,6 @@ RUN  mvn clean install -P${profile}
 
 FROM tomcat:8.5.50
 COPY --from=webapp-artifact /usr/local/content/app/target/*.war /usr/local/tomcat/webapps/
-RUN apt-get update && apt-get install vim -y
 ```
 
 Save the file to the project's home directory. The Docker automatically picks up the file.
@@ -64,11 +63,14 @@ Save the file to the project's home directory. The Docker automatically picks up
 Build a Docker image by using the below Docker command with different build profiles. You can choose to build with the following build profiles including `development` and `deployment`.
 
 ```Docker
-docker image build --build-arg build_profile_name=<deployment-profile> -t <imagename:1.0>
+docker image build --build-arg build_profile_name=<deployment-profile> -t <imagename:version> <Dockerfile_location>
 ```
 
-For more information, see [Development Profile](/learn/app-development/deployment/configuration-profiles#development-configuration-profile) and [Deployment Profile](/learn/app-development/deployment/configuration-profiles#deployment-configuration-profile). 
+```bash
+Example: docker image build --build-arg build_profile_name=deployment -t wmimage:1.0 .
+```
 
+For more information, see [Development Profile](/learn/app-development/deployment/configuration-profiles#development-configuration-profile) and [Deployment Profile](/learn/app-development/deployment/configuration-profiles#deployment-configuration-profile).
 
 Check [Handling Build Failures](/learn/app-development/deployment/building-with-maven#handling-build-failures) if build failed.
 
@@ -81,7 +83,17 @@ You can provide any `host_port`. For example, `80`. Internal port of the contain
 :::
 
 ```Docker
-docker container run --name <containername> -d -p 80:8080 <imagename:1.0>
+docker container run --name <containername> -d -p <host_port>:8080 <imagename:version>
 ```
 
-You can access the application with `<IPaddress:host_port>`. For example, `127.1.0.0:80`.
+```bash
+example: docker container run --name wmapp -d -p 80:8080 wmimage:1.0
+```
+
+- Get Instance IP Address using following command to access the application on web.
+
+```bash
+ifconfig
+```
+
+- Above command will provide the network interfaces and their respective IP Address in Instance, please use the respective IP Address to access the Application in web,You can access the application with `<IPaddress:host_port>`.

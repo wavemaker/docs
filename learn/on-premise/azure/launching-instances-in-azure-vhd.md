@@ -164,8 +164,8 @@ Command :
 mount /dev/<block-device-name_1>    /wm-data
 mount /dev/<block-device-name_2>    /wm-runtime  
 Example :
-mount /dev/sdd    /wm-data
-mount /dev/sdc    /wm-runtime  
+mount /dev/sdc    /wm-data
+mount /dev/sdd    /wm-runtime  
 ```
 
 [![mounting volumes](/learn/assets/wme-setup/wme-setup-in-azure/platform-instance-mounting-volumes.png)](/learn/assets/wme-setup/wme-setup-in-azure/platform-instance-mounting-volumes.png)
