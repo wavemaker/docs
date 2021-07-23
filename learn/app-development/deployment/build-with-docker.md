@@ -90,7 +90,7 @@ docker container run --name <containername> -d -p <host_port>:8080 <imagename:ve
 example: docker container run --name wmapp -d -p 80:8080 wmimage:1.0
 ```
 
-- Get Instance IP Address using following command to access the application on web.
+- Get Instance IP Address using following command to access the application on web.Pleaes run the below command in web application hosting Instance.
 
 ```bash
 ifconfig
