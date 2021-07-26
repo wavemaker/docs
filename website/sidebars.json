@@ -125,6 +125,7 @@
           [
             "app-development/services/web-services/rest-services",
             "app-development/app-security/securing-server-side-properties-rest-services",
+            "app-development/services/web-services/rest-request-timeouts",
             "app-development/services/web-services/oauth-2-0-rest-services"                 
           ]       
         },
@@ -1269,6 +1270,7 @@
         "label": "Versions: 10.7.x",
         "ids": 
           [ 
+            "wavemaker-release-notes/v10-7-5",
             "wavemaker-release-notes/v10-7-4",
             "wavemaker-release-notes/v10-7-3",
             "wavemaker-release-notes/v10-7-2",
