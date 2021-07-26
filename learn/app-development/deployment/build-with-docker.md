@@ -127,7 +127,8 @@ RUN tar -xzf node-v10.15.0-linux-x64.tar.gz \
 
 # stage for build the code
 FROM maven-java-node
-RUN mkdir -p /usr/local/content/app
+RUN mkdir -p /usr/local/content/app \
+    && chown -R root:root /usr/local/content/app
 WORKDIR /usr/local/content/app
 CMD  mvn clean install -P${profile} && mkdir -p dist && cp -fr target/*.war dist/
 ```
@@ -147,7 +148,7 @@ example: docker image build -t wavemaker/wm-app-builder:1.0 -f Dockerfile.build 
 ```
 
 ### Creating Docker Container for generating war file
-
+<!--  -->
 Create a Docker container for generate a war , please use the below command.
 
 ```bash
