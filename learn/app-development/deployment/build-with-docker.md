@@ -56,7 +56,7 @@ FROM tomcat:8.5.50
 COPY --from=webapp-artifact /usr/local/content/app/target/*.war /usr/local/tomcat/webapps/
 ```
 
-Save the file to the project's home directory. The Docker automatically picks up the file.
+Save the above Docker file.
 
 ### Building Docker Image
 
@@ -133,7 +133,7 @@ WORKDIR /usr/local/content/app
 CMD  mvn clean install -P${profile} && mkdir -p dist && cp -fr target/*.war dist/
 ```
 
-Save the file to the project's home directory.
+Save the above Docker file.
 
 ### Building Docker Image
 
