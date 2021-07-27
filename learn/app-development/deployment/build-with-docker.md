@@ -79,7 +79,7 @@ Check [Handling Build Failures](/learn/app-development/deployment/building-with-
 For creating a Docker container, use the below Docker command.
 
 :::note
-You can provide any `host_port`. For example, `80`. Internal port of the container is fixed and not changeable.
+You can provide any `host_port`. For example, `80`. The internal port of the container is fixed and not changeable.
 :::
 
 ```Docker
@@ -90,7 +90,7 @@ docker container run --name <containername> -d -p <host_port>:8080 <imagename:ve
 example: docker container run --name wmapp -d -p 80:8080 wmimage:1.0
 ```
 
-- Get an Instance IP Address using the following command to access the application on the web.Pleaes run the below command in the web application hosting Instance.
+- Get an Instance IP Address using the following command to access the application on the web. Please run the below command in the web application hosting Instance.
 
 ```bash
 ifconfig
@@ -110,7 +110,7 @@ To create a wm app builder Dockerfile, use the following command.
 vi Dockerfile.build
 ```
 
-You can use the following Dockerfile for building Docker image and create Docker containers for creating war file.
+You can use the following Dockerfile for building Docker image and create Docker containers for creating project war file.
 
 ```Dockerfile
 FROM maven:3.6.3-jdk-8 as maven-java-node
@@ -148,21 +148,15 @@ example: docker image build -t wavemaker/wm-app-builder:1.0 -f Dockerfile.build 
 ```
 
 ### Creating Docker Container for generating war file
-<!--  -->
+
 Create a Docker container for generate a war , please use the below command.
 
 ```bash
-docker container run -d --name <container-name> -v $HOME/.m2:$HOME/.m2 -v $HOME/.npm:$HOME/.npm -v <project-location>:/usr/local/content/app -e profile=<deployment-profile> -e MAVEN_CONFIG=$HOME/.m2 <image-name>
+docker container run --rm -it --name <container-name> -v $HOME/.m2:$HOME/.m2 -v $HOME/.npm:$HOME/.npm -v <project-location>:/usr/local/content/app -e profile=<deployment-profile> -e MAVEN_CONFIG=$HOME/.m2 <image-name>
 ```
 
 ```bash
-docker container run -d --name wmapp -v $HOME/.m2:/root/.m2 -v $HOME/.npm:$HOME/.npm -v /home/user/Downloads/myapplication/:/usr/local/content/app -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 wavemaker/wm-app-builder:1.0
-```
-
-- Monitor the build process using the below command
-
-```bash
-docker logs -f <container-name>
+docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $HOME/.npm:$HOME/.npm -v /home/user/Downloads/myapplication/:/usr/local/content/app -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 wavemaker/wm-app-builder:1.0
 ```
 
 - After Completing the build it will create a project war file in `<project-location>/dist` folder, user can use the war file to deploy in Host tomcat or in Tomcat Docker container.
@@ -176,7 +170,7 @@ docker container run -d --name <container-name> -v <project-location>/dist/:/usr
 example: docker container run -d --name wm-app -v /home/user/Downloads/myapplication/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:8.5
 ```
 
-- Get an Instance IP Address using the following command to access the application on the web. Pleaes run the below command in the web application hosting Instance.
+- Get an Instance IP Address using the following command to access the application on the web. Please run the below command in the web application hosting Instance.
 
 ```bash
 ifconfig
