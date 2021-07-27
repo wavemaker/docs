@@ -27,4 +27,3 @@ This document covers the Live Phase configuration for your AWS account and is a 
     - the region hosting your AWS account
 - Select the appropriate instance size based upon the resources and database utilized by your app and enter the [key-value instance tags](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) ([see here for best practices for instance tagging](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-resource-tags/)) [![](/learn/assets/deploy_aws_instance.png)](/learn/assets/deploy_aws_instance.png)
 - Once the setup is done, you can push the app from Demo to Live. ([Continue from here](/learn/app-development/deployment/manage-deployed-apps/#push-to-live))
-

@@ -10,7 +10,7 @@ The frontend code of any WaveMaker application can be configured to deploy onto 
 - [Create an Amazon S3 bucket](#create-an-amazon-s3-bucket)
 - [Configure Origin Access Identity](#configure-origin-access-identity)
 - [Create an Amazon CloudFront distribution](#create-an-amazon-cloudfront-distribution)
-- [WaveMaker App Build Process for CDN support](#wavemaker-app-build-process-for-cdn-support)
+- [Build and Deploy static Content to S3](#build-and-deploy-static-content-to-s3)
 
 ## Create an Amazon S3 bucket
 
@@ -69,7 +69,6 @@ CORS example
 ## Build and Deploy static Content to S3
 
 - Check Build Process  [Maven Build Process to Support CDN Deploy](/learn/app-development/deployment/building-with-maven#build-war-file-and-static-content-to-deploy-them-separately)
-
 
 ```shell
 mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
