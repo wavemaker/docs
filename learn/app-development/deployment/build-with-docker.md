@@ -18,7 +18,7 @@ For creating a Docker container, you create a Docker image by building a Dockerf
 |npm|6.4|
 |Ant|1.10|
 
-## Build Docker Image (Create Docker File, Create Docker Image, Run Container)
+## Build Docker Image 
 
 Export the project to your local or you can directly clone from a repository. You should keep the Dockerfile in the root directory of the project.
 
@@ -58,7 +58,7 @@ COPY --from=webapp-artifact /usr/local/content/app/target/*.war /usr/local/tomca
 
 Save the above Docker file.
 
-### Building Docker Image
+### Create Docker Image
 
 Build a Docker image by using the below Docker command with different build profiles. You can choose to build with the following build profiles including `development` and `deployment`.
 
@@ -74,7 +74,7 @@ For more information, see [Development Profile](/learn/app-development/deploymen
 
 Check [Handling Build Failures](/learn/app-development/deployment/building-with-maven#handling-build-failures) if build failed.
 
-### Creating Docker Container
+### Run Docker Container
 
 For creating a Docker container, use the below Docker command.
 
@@ -100,11 +100,11 @@ ifconfig
 
 - Above command will provide the network interfaces and their respective IP Address in Instance, please use the respective IP Address to access the Application in the web,You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.
 
-## Build War File Using Docker (Create Docker File, Create Docker Image, Build War, Run Container)
+## Build War File Using Docker 
 
 - Export the project to your local or you can directly clone from a repository. You should keep the Dockerfile in the root directory of the project and we will mount the application directory location to `/usr/local/content/app` during container creation for generating application war.
 
-### Creating wm app builder Dockerfile
+### Create Docker File
 
 To create a wm app builder Dockerfile, use the following command.
 
@@ -137,7 +137,7 @@ CMD  mvn clean install -P${profile} && mkdir -p dist && cp -fr target/*.war dist
 
 Save the above Dockerfile.build.
 
-### Building Docker Image
+### Create Docker Image
 
 Build the Docker image using the below command
 
@@ -149,7 +149,7 @@ docker image build -t <image-name>:1.0 -f Dockerfile.build <project_location>
 example: docker image build -t wavemaker/wm-app-builder:1.0 -f Dockerfile.build .
 ```
 
-### Creating Docker Container for generating war file
+### Build Project war
 
 Create a Docker container for generate a war , please use the below command.
 
@@ -160,6 +160,8 @@ docker container run --rm -it --name <container-name> -v $HOME/.m2:$HOME/.m2 -v 
 ```bash
 docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $HOME/.npm:$HOME/.npm -v /home/user/MySampleApp:/usr/local/content/app -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 wavemaker/wm-app-builder:1.0
 ```
+
+### Run Container
 
 - After Completing the build it will create a project war file in `<project-location>/dist` folder, user can use the war file to deploy in Host tomcat or in Tomcat Docker container.
 - For deploying project war using Tomcat Docker container , please use the below command.
