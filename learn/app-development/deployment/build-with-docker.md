@@ -4,7 +4,7 @@ id: ""
 ---
 ---
 
-WaveMaker supports micro-service enabled architecture. This allows you to build and deploy applications using a container-based technology. Docker is a platform as a service that uses virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files.
+WaveMaker supports micro-service enabled architecture. This allows you to build and deploy applications using container-based technology. Docker is a platform as a service that uses virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files.
 
 For creating a Docker container, you create a Docker image by building a Dockerfile. For this, you require node and npm as prerequisites for building an application with maven and java.
 
@@ -13,12 +13,12 @@ For creating a Docker container, you create a Docker image by building a Dockerf
 |Description|Version|
 |---|---|
 |Java |1.8|
-|Node|10.15.0|
-|Maven| 3.6.3|
-|npm|6.4.1|
-|Ant|1.10.7|
+|Node|10.15|
+|Maven| 3.6|
+|npm|6.4|
+|Ant|1.10|
 
-## How to Build with Docker
+## Build Docker Image (Create Docker File, Create Docker Image, Run Container)
 
 Export the project to your local or you can directly clone from a repository. You should keep the Dockerfile in the root directory of the project.
 
@@ -90,15 +90,17 @@ docker container run --name <containername> -d -p <host_port>:8080 <imagename:ve
 example: docker container run --name wmapp -d -p 80:8080 wmimage:1.0
 ```
 
-- Get an Instance IP Address using the following command to access the application on the web. Please run the below command in the web application hosting Instance.
+### Access Application
+
+If Docker Running on Host network, use Host IP address for acess Application on the web.Get an Instance IP Address using the following command to access the application on the web. Please run the below command in the web application hosting Instance.
 
 ```bash
 ifconfig
 ```
 
-- Above command will provide the network interfaces and their respective IP Address in Instance, please use the respective IP Address to access the Application in the web,You can access the application with `<IPaddress:host_port>`.
+- Above command will provide the network interfaces and their respective IP Address in Instance, please use the respective IP Address to access the Application in the web,You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.
 
-## How to build with Docker using Volume
+## Build War File Using Docker (Create Docker File, Create Docker Image, Build War, Run Container)
 
 - Export the project to your local or you can directly clone from a repository. You should keep the Dockerfile in the root directory of the project and we will mount the application directory location to `/usr/local/content/app` during container creation for generating application war.
 
@@ -133,7 +135,7 @@ WORKDIR /usr/local/content/app
 CMD  mvn clean install -P${profile} && mkdir -p dist && cp -fr target/*.war dist/
 ```
 
-Save the above Docker file.
+Save the above Dockerfile.build.
 
 ### Building Docker Image
 
@@ -156,7 +158,7 @@ docker container run --rm -it --name <container-name> -v $HOME/.m2:$HOME/.m2 -v 
 ```
 
 ```bash
-docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $HOME/.npm:$HOME/.npm -v /home/user/Downloads/myapplication/:/usr/local/content/app -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 wavemaker/wm-app-builder:1.0
+docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $HOME/.npm:$HOME/.npm -v /home/user/MySampleApp:/usr/local/content/app -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 wavemaker/wm-app-builder:1.0
 ```
 
 - After Completing the build it will create a project war file in `<project-location>/dist` folder, user can use the war file to deploy in Host tomcat or in Tomcat Docker container.
@@ -167,13 +169,15 @@ docker container run -d --name <container-name> -v <project-location>/dist/:/usr
 ```
 
 ```bash
-example: docker container run -d --name wm-app -v /home/user/Downloads/myapplication/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:8.5
+example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:8.5
 ```
 
-- Get an Instance IP Address using the following command to access the application on the web. Please run the below command in the web application hosting Instance.
+### Access Application
+
+If Docker Running on Host network, use Host IP address for acess Application on the web.Get an Instance IP Address using the following command to access the application on the web. Please run the below command in the web application hosting Instance.
 
 ```bash
 ifconfig
 ```
 
-- Above command will provide the network interfaces and their respective IP Address in Instance, please use the respective IP Address to access the Application in the web,You can access the application with `<IPaddress:host_port>`.
+- Above command will provide the network interfaces and their respective IP Address in Instance, please use the respective IP Address to access the Application in the web,You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.

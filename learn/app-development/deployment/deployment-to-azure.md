@@ -3,7 +3,7 @@ title: "Configuring for Azure Deployment"
 id: ""
 sidebar_label: Azure
 ---
-Learn how to deploy your app to Azure server. 
+Learn how to deploy your app to Azure server.
 
 ---
 
@@ -58,4 +58,3 @@ For this, you need to write to [support@wavemaker.com](mailto:support@wavemaker.
 Please make sure your Azure subscription should allow launching an instance with Standard_A1, Standard_A2, and Standard_A3
 :::
 - Once the setup is done (this could take **upto 30 minutes** in case the storage account has to be created), you can push the app from Demo to Live ([Continue from here](/learn/app-development/deployment/manage-deployed-apps/#push-to-live)).
-

@@ -48,7 +48,7 @@ Security settings allow enabling SSL encryption, XSS Protection, and X-Frame-Opt
 
 ### X-Frame-Options
 
-X-Frame-Options is an HTTP response header, that indicates how the browser should handle rendering of embedded pages within frame or iframe or as objects. 
+X-Frame-Options is an HTTP response header, that indicates how the browser should handle rendering of embedded pages within frame or iframe or as objects.
 
 With **X-Frame-Options**, you can do the following:
 
@@ -70,7 +70,7 @@ By selecting **Enable**, you get the following three options:
 Token-based Authentication is an authentication mechanism, that authenticates API request. The user is issued an API access token upon successful authentication, which will be used while invoking any API request. For more information on generating a Token [see here](/learn/app-development/app-security/token-based-authentication/). 
 
 To modify token related details, click on Security tab. Under deployment check for Token-Based Authentication. Token Based Authentication consists of three options:
-        
+
 1. **Enable Tokens:** This option enables the token parameter and token validity options.
 2. **Token Parameter:** The API's can be accessed once the token is issued. It is done by passing the token in the Request Header or Parameter.
 3. **Token validity:** Default valid time for a token is 1800 sec (30 mins). However, you can customize the token valid time as required.
