@@ -15,7 +15,7 @@ Following 31 Dec 2021, we shall not be supporting project migrations. Therefore,
 
 ## Why is WaveMaker ending support for the 9.x version?
 
-Here is a glance at the progress of WaveMaker Studio and what you've been missing out on in addition to recommended security updates.
+Take a glance at the progress of WaveMaker Studio and what you've been missing out on in addition to recommended security updates.
 
 ![end of support](/learn/assets/end-of-support.png)
 
