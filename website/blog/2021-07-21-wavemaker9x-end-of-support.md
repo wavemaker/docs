@@ -3,25 +3,41 @@ title: "Annoucement about Ending Support of WaveMaker 9.x Projects"
 author: Swetha Kundaram
 ---
 
-The end of Support (EOS) stage marks the official withdrawal of support for projects of WaveMaker 9.x versions. 
+The End of Support (EOS) stage marks the official withdrawal of support for projects of WaveMaker 9.x versions. 
 
 ## What does the end of support for WaveMaker 9.x entail?
 
-WaveMaker will end support of WaveMaker 9.x projects by 31 Dec 2021, and this means if you are using 9.x projects, WaveMaker will automatically update to the latest version of WaveMaker. Please note that this update can break explicitly on projects that contain custom code. 
+WaveMaker will end support of WaveMaker 9.x projects by 31 Dec 2021, which means if you are using 9.x projects, WaveMaker will automatically update to the latest version of WaveMaker. Please note that this update can break explicitly on projects that contain custom code. We have covered some essential FAQs in this document to help you understand how you can migrate to the latest version of WaveMaker Studio.
 
 Following 31 Dec 2021, we shall not be supporting project migrations. Therefore, we highly recommend you update your projects to receive support before the established deadline.
 
 <!-- truncate -->
 
-## What does end of support mean for your customers?
+## Why is WaveMaker ending support for the 9.x version?
 
-The deployed apps will not be affected by the change to the end-users.
+Here is a glance at the progress of WaveMaker Studio and what you've been missing out on in addition to recommended security updates.
 
-## How WaveMaker will help with the update?
+![end of support](/learn/assets/end-of-support.png)
 
-Updating Angular is not relatively straightforward. However, our developers at WaveMaker have worked hard to make it a little easier for you. When you initiate an update, WaveMaker takes care of the vast part behind the scenes smoothly and effortlessly. 
+- Outdated application stack: AngularJS ends the support by 31 Dec 2021, including security issues. [Learn more about AngularJS version support status](https://docs.angularjs.org/misc/version-support-status)
+- Latest angular stack Angular 10
+- Several performance improvements
+- Security vulnerabilities in the dependent third party libraries to reap the benefits of [up to date technology stack](/learn/wavemaker-release-notes#technology-stack)
+- Support for new [compression technique](/learn/wavemaker-release-notes/v10-2-0#enhancements)
+- Enabling [micro frontend enablement](/learn/wavemaker-release-notes/v10-5-0/#support-for-microfrontend-single-spa-framework)
+- Wavemaker-generated code is now [Veracode certificated](weaving-security-into-low-code-development/)
+- [ngx-bootstrap upgrade](/learn/wavemaker-release-notes/v10-4-0/#upgrade-to-latest-version-of-ngx---bootstrap) with enhanced features
 
-Even so, if you have included customizations, i.e., adding custom code, you'll then have to check and accept changes manually by verifying every single customization that runs through the process. This approach is taken care of by the inspection framework that we explicitly developed to guide you through the migration process. Further to this, you can reach out to our support team for more assistance. 
+
+### Other UI Enchancements
+
+- Enhanced DSL APIs exposed on various widgets
+- Advanced client side and server side validations on Form fields
+- Custom Data formatters for UI widgets
+- Summary row in Datatable widget
+- Ability to add multiple views in a prefab through partials
+- Ability to provide widget level properties in a prefab
+- Adding tablet view support to Mobile apps
 
 ## How do I know if I have WaveMaker 9.x apps?
 
@@ -33,10 +49,19 @@ When you start the project update, the project card converts into a folder. The 
 
 For more information and a guide to update, see [Upgrading an App from WaveMaker 9.x to WaveMaker 10.0](/learn/how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0/).
 
+## How WaveMaker will help with the update?
+
+Updating Angular is not relatively straightforward. However, our developers at WaveMaker have worked hard to make it a little easier for you. When you initiate an update, WaveMaker takes care of the vast part behind the scenes. 
+
+Even so, if you have included customizations, i.e., adding custom code, you'll have to check and accept changes manually by verifying every single customization that runs through the process. This approach is taken care of by the [inspection framework](/learn/app-development/dev-integration/inspection-framework/) that we explicitly developed to guide you through the migration process. Further to this, you can reach out to our support team for more assistance. 
+
+## What does end of support mean for your customers?
+
+The deployed apps will not be affected by the change to the end-users.
 
 ## What happens if you do not upgrade to WaveMaker 10?
 
-If you have already deployed the 9.x WaveMaker application, it will not be affected by the change. However, making alterations would no longer be possible for the app. 
+If you have already deployed the 9.x WaveMaker applications, the change will not affect it. However, making alterations would no longer be possible for the app. 
 
 ### WaveMaker Online (WMO)
 
@@ -46,19 +71,27 @@ The application projects will automatically upgrade to the latest version of the
 
 You will no longer receive support and we cannot offer licence extension.
 
-## Why is WaveMaker ending support for the 9.x version?
+## WaveMaker 10 Releases
 
-- Outdated application stack: AngularJS has ended the support, including security issues (31 Dec 2021). https://docs.angularjs.org/misc/version-support-status
-- Performance improvements: 
-- Security vulnerabilities in the dependent third party libraries
-- Enabling micro frontend enablement
-- Support for new compression technique - https://docs.wavemaker.com/learn/wavemaker-release-notes/v10-2-0#enhancements
-- Wavemaker-generated code is Veracode certificated.
-- Latest angular stack, which is Angular 10
+- [WaveMaker 10 Preview](/learn/wavemaker-release-notes/v10-0-preview)
+- [WaveMaker 10.GA](/learn/wavemaker-release-notes/v10-0-ga)
+- [WaveMaker 10.1](/learn/wavemaker-release-notes/v10-1-0)
+- [WaveMaker 10.2](/learn/wavemaker-release-notes/v10-2-0)
+- [WaveMaker 10.3](/learn/wavemaker-release-notes/v10-3-0)
+- [WaveMaker 10.4](/learn/wavemaker-release-notes/v10-4-0)
+- [WaveMaker 10.5](/learn/wavemaker-release-notes/v10-5-0)
+- [WaveMaker 10.6](/learn/wavemaker-release-notes/v10-6-0)
+- [WaveMaker 10.7](/learn/wavemaker-release-notes/v10-7-0)
 
-## What is changing? 
+For the detailed list of releases, including biweekly ones, see [WaveMaker Release Notes](/learn/wavemaker-release-notes).
 
-![end of support](/learn/assets/end-of-support.png)
+
+
+
+
+
+
+
 
 
 
