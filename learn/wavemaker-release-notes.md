@@ -99,12 +99,10 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | Sample database | HSQL | 2.5.1|
 | JSON library | Jackson  <td bgcolor="#44aaf4"> 2.11.3->2.12.4|
 | Logging framework | SLF4j  <td bgcolor="#44aaf4"> 1.7.30->1.7.32 |
-|  | Log4j2  <td bgcolor="#44aaf4"> 2.13.3->2.14.1 |
+| Logging Implementation | Log4j2  <td bgcolor="#44aaf4"> 2.13.3->2.14.1 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
-| REST API annotations | Swagger | 1.3.10 |
-| Date Time Framework | Java 8 Date/Time API |
 | Servlet Framework |  | 3.1.0 |
-| Hiraki | <td bgcolor="#44aaf4"> 3.4.5 -> 4.0.3 |
+|Database Connection Pooling | HikariCP <td bgcolor="#44aaf4"> 3.4.5 -> 4.0.3 |
 
 ### Runtime Environment
 
