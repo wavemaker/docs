@@ -7,7 +7,9 @@ sidebar_label: "CRUD Event Listeners"
 
 When you create a new database or import an existing database in WaveMaker, the WaveMaker platform generates the database service inside the WaveMaker application.
 
-The database service code that gets generated inside the application is layered as shown below.
+The database service code that gets generated inside the application is layered, as shown below.
+
+![layered architecture](/learn/assets/event-listeners.png)
 
 
 ## Layered Architecture
@@ -52,43 +54,43 @@ To address all the above use-cases, WaveMaker introduces Event Listeners for the
 
 ## Listen and Handle Events
 
-WaveMaker’s application runtime framework publishes the entity CRUD event during the respective database operation. Each of the operations, aka Create, Read, Update and Delete, publishes two events - they are pre and post operation events. The WaveMaker application developer should listen to the “interested” events and handle the respective events in a Java Service.
+WaveMaker’s application runtime framework publishes the entity CRUD event during the respective database operation. Each of the operations, aka Create, Read, Update and Delete, publishes two events - they are pre and post-operation events. The WaveMaker application developer should listen to the “interested” events and handle the respective events in a Java Service.
 
-Each event extends [EntityCRUDEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityCRUDEvent.java). These have methods to get the serviceId and entityClass for which the event is generated.
+Each event extends [EntityCRUDEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityCRUDEvent.java). The class has methods to get the serviceId and entityClass for which the event is generated.
 
 The events can be listened to using the @EventListener or @TransactionalEventListener annotations.
 
 ## List of Events for CRUD Operations
 
-### EntityPreCreateEvent
+### [EntityPreCreateEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPreCreateEvent.java)
 
 Published before creating an entity in the database. This event will get the handle of the entity object being created. 
 
-### EntityPostCreateEvent
+### [EntityPostCreateEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostCreateEvent.java)
 
 Published after creating the entity in the database. This event will get the handle of the entity object created. 
 
-### EntityPreUpdateEvent
+### [EntityPreUpdateEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPreUpdateEvent.java)
 
 Published before updating the entity in the database. This event will get the handle of the entity object being updated.
 
-### EntityPostUpdateEvent
+### [EntityPostUpdateEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostUpdateEvent.java)
 
 Published after updating the entity in the database. This event will get the handle of the updated entity object.
 
-### EntityPreDeleteEvent
+### [EntityPreDeleteEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPreDeleteEvent.java)
 
 Published before deleting an entity from the database. This event will get the handle of entityid, which is to be deleted.
 
-### EntityPostDeleteEvent
+### [EntityPostDeleteEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostDeleteEvent.java)
 
 Published after deleting the entity from the database. This event will get the handle of the entity that is deleted.
 
-### EntityPreFetchEvent
+### [EntityPreFetchEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPreFetchEvent.java)
 
 Published before fetching the records from the database. This event will get the handle of the query string used for filtering the entities.
 
-### EntityPostFetchEvent
+### [EntityPostFetchEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostFetchEvent.java)
 
 Published after retrieving the records from the database. This event will get the handle of the pageable response.
 
@@ -96,29 +98,29 @@ Published after retrieving the records from the database. This event will get th
 
 Below are some of the class imports used in the examples shown below
 
-import org.springframework.context.event.EventListener;
-import org.springframework.transaction.event.TransactionEventListener;
-import org.springframework.transaction.event.TransactionPhase;
-import com.wavemaker.commons.WMRuntimeException;
-import com.wavemaker.commons.MessageResource;
+import [org.springframework.context.event.EventListener;](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/event/EventListener.html)  
+import [org.springframework.transaction.event.TransactionEventListener;](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/transaction/event/TransactionalEventListener.html)  
+import [org.springframework.transaction.event.TransactionPhase;](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/transaction/event/TransactionPhase.html)  
+import [com.wavemaker.commons.WMRuntimeException;](https://github.com/wavemaker/wavemaker-commons/blob/master/wavemaker-commons-util/src/main/java/com/wavemaker/commons/WMRuntimeException.java)  
+import [com.wavemaker.commons.MessageResource;](https://github.com/wavemaker/wavemaker-commons/blob/master/wavemaker-commons-util/src/main/java/com/wavemaker/commons/MessageResource.java)  
 
-## Events Listerns with Examples
+## Events Listeners with Examples
 
-Below are some examples of listening to events, assuming sample hrdb is added into the project, with four tables, including User, Department, Employee, and Vacation. You can include the code snippet given below in any of the Java services in the application.
+Below are some examples of listening to events, assuming sample HRDB is added into the project, with four tables, including User, Department, Employee, and Vacation. You can include the code snippet given below in any of the Java services in the application.
 
 ### Handling Business Logic During User Creation Process
 
 ```java
-    @EventListener
-    public void beforeUserEntityCreate(EntityPreCreateEvent<User> entityPreCreateEvent) {
-        User user = entityPreCreateEvent.getEntity();
-        if (user.getRole().equals("0")) { // validations
-            throw new WMRuntimeException(MessageResource.create("invalid_role")); //invalid_role is a key added in project 18n list
-        }
-        if (StringUtils.isBlank(user.getPassword())) { 
-            user.setPassword("wavemaker123"); // Updating entity values
-        }
-        logger.info("Inside user {} pre create event listener for {}", user, entityPreCreateEvent.getEntityClass()); //Logging
+@EventListener
+public void beforeUserEntityCreate(EntityPreCreateEvent<User> entityPreCreateEvent) {
+    User user = entityPreCreateEvent.getEntity();
+    if (user.getRole().equals("0")) { // validations
+        throw new WMRuntimeException(MessageResource.create("invalid_role")); //invalid_role is a key added in project 18n list
+    }
+    if (StringUtils.isBlank(user.getPassword())) { 
+        user.setPassword("wavemaker123"); // Updating entity values
+    }
+    logger.info("Inside user {} pre create event listener for {}", user, entityPreCreateEvent.getEntityClass()); //Logging
     }
 ```
 
@@ -130,26 +132,26 @@ Below are some examples of listening to events, assuming sample hrdb is added in
 ### Listen to User Post Creation Event
 
 ```java
-    @EventListener
-    public void afterUserEntityCreate(EntityPostCreateEvent<User> entityPostCreateEvent) {
-        User user = entityPostCreateEvent.getEntity();
-        logger.info("Inside user {} post create event listener for {}", user, entityPostCreateEvent.getEntityClass()); //Logging
-    }
+@EventListener
+public void afterUserEntityCreate(EntityPostCreateEvent<User> entityPostCreateEvent) {
+    User user = entityPostCreateEvent.getEntity();
+    logger.info("Inside user {} post create event listener for {}", user, entityPostCreateEvent.getEntityClass()); //Logging
+}
 ```
 
 :::important
-1. To listen to each entity you need to write a separate method using the respective Generic as the parameter in the method.
+1. To listen to each entity, you need to write a separate method using the respective Generic as the parameter in the method.
 2. The code written in the EventListener for postCreateEvent will participate in the same transaction as the create operation. Hence any exception thrown from this method will roll back the create operation, and the exception message will be sent to the caller.
 :::
 
 ### Listen to User Creation Event only on Successful Transaction Commit
 
 ```java
-    @TransactionEventListener(phase = TransactionPhase.AFTER_COMMIT)
-    public void afterUserEntityCreate(EntityPostCreateEvent<User> entityPostCreateEvent) {
-        User user = entityPostCreateEvent.getEntity();
-	emailService.sendMailWithSimpleMessage("<emailid>","new user", "new user joined"); // Calling other services in the project
-    }
+@TransactionEventListener(phase = TransactionPhase.AFTER_COMMIT)
+public void afterUserEntityCreate(EntityPostCreateEvent<User> entityPostCreateEvent) {
+    User user = entityPostCreateEvent.getEntity();
+emailService.sendMailWithSimpleMessage("<emailid>","new user", "new user joined"); // Calling other services in the project
+}
 ```
 
 :::important
@@ -160,25 +162,25 @@ Below are some examples of listening to events, assuming sample hrdb is added in
 
 ### Listen to All Entities Creating Event Listeners with Exception for Generic Types
 
-To listen on all entities creating event listeners, remove the generic type in the Event Listener’s method declaration. This can be helpful to achieve cross cutting concerns like operations logging or metrics collection or common validations across all entities. 
+To listen on all entities creating event listeners, remove the generic type in the Event Listener’s method declaration. This can be helpful to achieve cross-cutting concerns like operations logging or metrics collection or common validations across all entities. 
 
 ```java
-    @EventListener
-    public void beforeEntityCreate(EntityPreCreateEvent entityPreCreateEvent) {
-        logger.info("Inside generic pre create event listener for {}", entityPreCreateEvent.getEntityClass(), entityPreCreateEvent);
-    }
+@EventListener
+public void beforeEntityCreate(EntityPreCreateEvent entityPreCreateEvent) {
+    logger.info("Inside generic pre create event listener for {}", entityPreCreateEvent.getEntityClass(), entityPreCreateEvent);
+}
 ```
 
 :::important
 1. This listener will be called when an entity of any type is created in the database.
 2. In case if there are multiple databases imported, this method will be called for all those entities across all the imported databases.
-3. It is recommended to use the respective entity specific events unless you want to handle the common logic same across all entities.
+3. It is recommended to use the respective entity-specific events unless you want to handle the common logic same across all entities.
 4. Any exception thrown from this method will stop the create operation and the exception message will be sent to the caller.
 :::
 
 ### Listen to Events with Different Event Listener Annotation Declaration
 
-If you have multiple database services in the application and want to listen to only one of the service’s all entity events, that has only different event listener annotation declaration. You can add a new condition attribute to event listener annotation.
+Suppose you have multiple database services in the application and want to listen to only one of the service’s all entity events with only different event listener annotation declarations. In that case, you can add a new condition attribute to event listener annotation.
 
 ```java
 @EventListener(condition = "#entityPreFetchEvent.serviceId eq 'hrdb'")
@@ -191,7 +193,7 @@ Any exception thrown from this method will stop the create operation, and the ex
 :::
 
 :::note
-Update and delete events work similarly with update having the entity information in its event object and deleting entityId information in its pre-event object. 
+Update and delete events work similarly with update having the entity information in its event object and deleting the entityId information in its pre-event object. 
 
 EntityPreFetch event has the query string passed to it, which you can modify in the event listeners. EntityPostFetchEvent can be used to modify the outgoing data.
 :::
