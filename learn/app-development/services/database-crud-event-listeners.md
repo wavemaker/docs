@@ -86,11 +86,13 @@ Published before deleting an entity from the database. This event will get the h
 
 Published after deleting the entity from the database. This event will get the handle of the entity that is deleted.
 
+<!--
 ### [EntityPreFetchEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPreFetchEvent.java)
 
 Published before fetching the records from the database. This event will get the handle of the query string used for filtering the entities.
 
 ### [EntityPostFetchEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostFetchEvent.java)
+-->
 
 Published after retrieving the records from the database. This event will get the handle of the pageable response.
 
@@ -183,7 +185,7 @@ public void beforeEntityCreate(EntityPreCreateEvent entityPreCreateEvent) {
 Suppose you have multiple database services in the application and want to listen to only one of the service’s all entity events with only different event listener annotation declarations. In that case, you can add a new condition attribute to event listener annotation.
 
 ```java
-@EventListener(condition = "#entityPreFetchEvent.serviceId eq 'hrdb'")
+@EventListener(condition = "#entityPreCreateEvent.serviceId eq 'hrdb'")
 ```
 
 :::important
@@ -195,7 +197,9 @@ Any exception thrown from this method will stop the create operation, and the ex
 :::note
 Update and delete events work similarly with update having the entity information in its event object and deleting the entityId information in its pre-event object. 
 
+<!--
 EntityPreFetch event has the query string passed to it, which you can modify in the event listeners. EntityPostFetchEvent can be used to modify the outgoing data.
 :::
+-->
 
 
