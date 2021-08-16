@@ -92,7 +92,7 @@ Published after deleting the entity from the database. This event will get the h
 
 <!-- ### [EntityPostFetchEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostFetchEvent.java) -->
 
-Published after retrieving the records from the database. This event will get the handle of the pageable response.
+<!-- Published after retrieving the records from the database. This event will get the handle of the pageable response. -->
 
 ## Imports
 
