@@ -108,6 +108,7 @@
           "ids": 
             [            
             "app-development/variables/database-crud",
+            "app-development/services/database-crud-event-listeners",
             "app-development/variables/database-apis",
             "app-development/services/api-designer/database-service-apis"         
             ]
