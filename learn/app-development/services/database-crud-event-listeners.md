@@ -58,7 +58,7 @@ WaveMaker’s application runtime framework publishes the entity CRUD event duri
 
 Each event extends [EntityCRUDEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityCRUDEvent.java). The class has methods to get the serviceId and entityClass for which the event is generated.
 
-The events can be listened to using the @EventListener or @TransactionalEventListener annotations.
+The events can be listened to using the [@EventListener](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/event/EventListener.html) or [@TransactionalEventListener](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/transaction/event/TransactionalEventListener.html) annotations.
 
 ## List of Events for CRUD Operations
 
