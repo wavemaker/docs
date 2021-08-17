@@ -324,6 +324,7 @@
           "ids": [
             "app-development/deployment/release-management",
             "app-development/deployment/configuration-profiles",
+            "app-development/deployment/configuration-management",
             "app-development/deployment/pipelines-phases"                                                                            
           ]
         },
