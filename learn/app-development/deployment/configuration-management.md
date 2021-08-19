@@ -6,67 +6,85 @@ id: ""
 
 ## Introduction
 
-Each service in a WaveMaker application externalizes its configuration properties through [Config Profiles](/learn/app-development/deployment/configuration-profiles/). This externalized configuration helps isolate the code from the configuration. Thus, without changing the code, the application/service configuration can be updated. 
+Each service in a WaveMaker application externalizes its configuration properties through [Config Profiles](/learn/app-development/deployment/configuration-profiles/). This externalized configuration helps isolate the code from the configuration. Therefore, the application/service configuration can be updated without changing the code.
 
-For example, the configuration of a DB service includes the hostname, DB credentials, etc., while the configuration of a REST service could be the hostname, context path, etc.
+For example, the configuration of a DB service includes the hostname, DB credentials. In contrast, the configuration of a REST service can include hostname, context path, and more.
+
+In this section, learn how you can externalize configuration through Config Profiles, which works out of the Maven Profile concept. You provide the configuration values during the application build time through the maven profile property, i.e., when generating the war file. For more information about managing the config profiles, see [Configuration Profiles](/learn/app-development/deployment/configuration-profiles/).
 
 ### Background
 
-The externalized configuration through Config Profiles works out of the Maven Profile Concept wherein the configuration values will be provided during the application build time (through maven profile property) i.e., while the war file is being generated. For more information about managing the config profiles, see [Configuration Profiles](/learn/app-development/deployment/configuration-profiles/).
-
-In a typical scenario, the users maintain multiple profiles aka development, QA, stage, and production with different configuration values and build the war file for the respective environment by passing the profile that is to be used for the configuration values.
+In a typical scenario, the users maintain multiple profiles, including Development, QA, Stage, and Production, containing different configuration values. You build a war file for the respective environment by passing the profile to use for the configuration values.
 
 :::important
-There are following concerns with this approach.
+However, there are some concerns with this approach.
 
 1. The war file has to be rebuilt for every environment using a different profile file.
 
 2. The secrets, such as DB password, API keys, etc., are checked in the source code, which ideally should be managed only by Ops teams.
 :::
 
-### New Approach
+## Configuration Profile Management
 
 :::note
-The new approach is applicable from the [release 10.8.0](/learn/wavemaker-release-notes/v10.8.0).
+This is a new approach applicable from the [release 10.8.0](/learn/wavemaker-release-notes/v10.8.0).
 :::
 
-The new generation of DevOps follows the cloud-native strategy [12-factor app](https://12factor.net/) wherein the war file is built only once, called an immutable war file. The immutable war file does not have the configuration values packaged in it. Instead, they will have placeholders which should be provided during the deployment. This enables the use of Docker Images and versioning them based on the application version.
+The new generation of DevOps follows the cloud-native strategy [12-factor app](https://12factor.net/) wherein the war file is built only once, called an immutable war file. The immutable war file does not have the configuration values packaged in it. Instead, they will have placeholders that should be provided at the time of deployment; this enables the use of Docker images and versioning them based on the application version. 
 
-## Building an Immutable war
+### Building an Immutable war
 
-To build an immutable war file, you need one of the profile names as an input to the maven command, as shown below.
+To build an immutable war file, you need the profile name to input the maven command, as shown below.
 
 ```
 shell>mvn clean install -P<profile-name>
 ```
 
-### How it works
+## Ways to Build an Immutable War
 
 Here you have multiple options:
 
-**Use the existing deployment profile** - deployment, the default profile that comes with the application can be used to build the immutable war file. In this approach, the default values for all properties are already defined in the profile. These profiles will be used if the configuration values are not provided during the deployment. This case leaves users confused about whether configured values are being picked up during the application start.
+### Using an Existing Deployment Profile
 
-**Create a new profile named “immutable”** and use it to build the war file. We recommend that you create a new profile and make the configuration values (properties that have the secrets information) empty in the profile file. That way, you control all the other non-secrets configuration values through the profile and the secret values through deployment.
+Use an existing deployment profile, called Deployment. It is the default profile that comes with the application. You can use it to build the immutable war file. In this approach, the default values for all properties are already defined in the profile. These profiles will be used if the configuration values are not provided during the Deployment time. 
 
-**Using custom placeholders in the profile file**. For example, if the profile property name is `DB.hrdb.password`, you can map the property name to your own custom property name such as `db_password`, you should mention the same as `${db_password}`. 
+:::note
+However, using this approach can leave users confused about whether configured values are picked up during the application start.
+:::
 
-Example:
+### Create a new Immutable Profile
+
+:::note
+We recommended using this approach.
+:::
+
+Create a new profile called “immutable” and use it to build the war file. We recommend that you create a new profile and make the configuration values, including properties containing secrets information, empty in the profile file. This way, you control all the other non-secret configuration values through the profile and the secret values through Deployment.
+
+### Using Custom Placeholders
+
+You can use custom placeholders in the profile file. For example, if the profile property name is `DB.hrdb.password`, you can map the property name to your own custom property name such as `db_password`, you should mention the same as `${db_password}`. 
+
+:::note
+Assuing you are using the sample `HRDB` database in the following example.
+:::
+
+**Example**:
 
 ```
 db.hrdb.password=${db_password}
 ```
 
-During the application start, the WaveMaker application will try to resolve the “db_password” from one of the options explained below.
+During the application start, the WaveMaker application will try to resolve the `db_password` by applying one of the options explained below.
 
-### Deploying an Immutable war
+## Deploying an Immutable war
 
-When the immutable war file gets deployed with placeholders, the placeholder values should be resolved to actual values. This can be done in multiple ways as given below.
+When the immutable war file gets deployed with placeholders, the placeholder values should be resolved to actual values. You can achieve this in multiple ways, as given below.
 
 - Using Environment Properties
 - Using System Properties
 - Using Custom Property Sources
 
-## Using Environment Properties
+### Using Environment Properties
 
 The configuration values for the property placeholders can be provided using the Operating System specific environment properties. This will override the property values already present in the war file. 
 
@@ -75,7 +93,9 @@ For example, if you want to set the database password through the environment pr
 ```
 db.<database-service-name>.password=<db-password>
 ```
-For hrdb:
+
+For HRDB database:
+
 ```
 db.hrdb.password=mypassword
 ```
@@ -83,10 +103,10 @@ db.hrdb.password=mypassword
 However, the environment property names cannot contain a dot (“.”) in its name. Hence we need to normalize the key before setting it on the environment. So it can be written as `db_hrdb_password` or `DB-hrdb-password`.
 
 :::note
-As of version 10.8, the `prefix db_` is not required while setting the environment variable.
+As of [version 10.8](/learn/wavemaker-release-notes/v10-8-0), the `prefix db_` is not required when setting the environment variable.
 :::
 
-So it can be written as following:
+So, it can be written as specified below:
 
 For Windows:
 
@@ -100,7 +120,7 @@ For Linux:
 EXPORT hrdb.password=mypassword
 ```
 
-## Using System Properties
+### Using System Properties
 
 The configuration values for the property placeholders can be provided using the Java System properties using the “-Dkey=value” pairs. This will override the property values already present in the war file. 
 
@@ -109,23 +129,36 @@ For example, if you want to set the database password through the system propert
 ```
 -Ddb.<database-name>.password=<db-password>
 ```
-For hrdb:
+
+For HRDB:
 
 ```
 shell>java -Ddb.hrdb.password=mypassword <rest-of-command-for-web-server-start>
 ```
 
-## Using Custom Property Sources
+### Using Custom Property Sources
 
-The use of Environment Properties or System properties makes your war file immutable and achieves compliance with 12-factor app deployment. But it is not suitable for use-cases where you want to programmatically retrieve the configuration from external sources during the application start.
+The use of Environment Properties or System Properties makes your war file immutable and can achieve compliance with 12-factor app deployment. However, it is not suitable for cases, particularly where you want to programmatically retrieve the configuration from external sources when the application starts.
 
-### Use cases not supported with Environment/System properties
+## Cases Not Supported with Environment Properties and System Properties
 
-1. Configuration managed in a database - During the application start, the developer may want to retrieve the configuration from a database and use it as an application configuration.
-2. Configuration through an API - There are cases where you need to call an external API to retrieve the configuration to be used in the application.
-3. Encrypted sensitive information / Control over encryption - the encrypted values provided over profile properties, environment variables or system properties need to be decrypted based on the customer needs.
-4. Control over refreshing the properties - There are few properties that you would like to refresh over a periodical interval without redeploying the application.
-5. Configuration based on logged-in user’s context - There are few use-cases related to multi-tenancy where you want to provide different configuration values based on the caller context.
+### Configuration Managed in a Database 
+
+The developer may want to retrieve the configuration from a database and use it as an application configuration when the application starts.
+
+### Configuration through an API 
+
+In some cases, you may have to call an external API to retrieve the application's configuration.
+
+### Encrypted Sensitive Information or Control via Encryption
+
+Decrypting the encrypted values provided via profile properties, environment variables, or system properties based on the customer's requirements.
+
+### Controlling the Refreshing Properties
+
+There are few properties that you would like to refresh at periodic intervals without redeploying the application.
+
+### Contextual Configuration based on Logged-in User
 
 To address all the above use-cases, WaveMaker introduces Custom Property Sources - such as BootStrap Property Source and Dynamic Property Source.
 
