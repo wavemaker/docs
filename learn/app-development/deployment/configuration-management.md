@@ -74,7 +74,7 @@ Assuing you are using the sample `HRDB` database in the following example.
 db.hrdb.password=${db_password}
 ```
 
-During the application start, the WaveMaker application will try to resolve the `db_password` by applying one of the options explained below.
+When the application starts, the WaveMaker application will try to resolve the `db_password` by applying one of the options when deploying an Immutable war.
 
 ## Deploying an Immutable war
 
@@ -140,11 +140,17 @@ shell>java -Ddb.hrdb.password=mypassword <rest-of-command-for-web-server-start>
 
 The use of Environment Properties or System Properties makes your war file immutable and can achieve compliance with 12-factor app deployment. However, it is not suitable for cases, particularly where you want to programmatically retrieve the configuration from external sources when the application starts.
 
-## Cases Not Supported with Environment Properties and System Properties
+## What's Not Supported by Environment Properties and System Properties
+
+:::important
+To address the following cases, WaveMaker introduced Custom Property Sources, such as [BootStrap Property Source](#bootstrap-property-source) and [Dynamic Property Source](#dynamic-property-source) explained in the next section.
+:::
+
+Note that the following cases are not supported by Environment Properties and System Properties.
 
 ### Configuration Managed in a Database 
 
-The developer may want to retrieve the configuration from a database and use it as an application configuration when the application starts.
+In cases, when the developer want to retrieve the configuration from a database and use it as an application configuration when the application starts.
 
 ### Configuration through an API 
 
@@ -152,19 +158,19 @@ In some cases, you may have to call an external API to retrieve the application'
 
 ### Encrypted Sensitive Information or Control via Encryption
 
-Decrypting the encrypted values provided via profile properties, environment variables, or system properties based on the customer's requirements.
+When you want to decrypt the encrypted values provided via profile properties, environment variables, or system properties based on the customer's requirements.
 
 ### Controlling the Refreshing Properties
 
-There are few properties that you would like to refresh at periodic intervals without redeploying the application.
+There are few properties that you would like to refresh periodically without redeploying the application.
 
 ### Contextual Configuration based on Logged-in User
 
-To address all the above use-cases, WaveMaker introduces Custom Property Sources - such as BootStrap Property Source and Dynamic Property Source.
+When you want to add configuration based on the logged-in user's context, for example, related to multi-tenancy, provide different configuration values based on the caller context.
 
 ## BootStrap Property Source
 
-WaveMaker introduced a class named [AbstractBootstrapPropertySource](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/core/props/AbstractBootstrapPropertySource.java) which has to be extended, and the implementation for getProperty() should be provided.
+WaveMaker introduced a class called [AbstractBootstrapPropertySource](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/core/props/AbstractBootstrapPropertySource.java) which should be extended and should provide the implementation for `getProperty()`.
 
 ### Sample snippet
 
@@ -183,7 +189,7 @@ public Object getProperty(String key) {
 }
 ```
 
-The name of the class should be added as context param to the user-web.xml file as given file:
+The name of the class should be added as context param to the `user-web.xml` file as given file:
 
 ```xml
     <context-param>
@@ -192,19 +198,19 @@ The name of the class should be added as context param to the user-web.xml file 
 </context-param>
 ```
 
-### Points to note
+### Points to Note
 
-If configured, this property source is registered as the first property source in the spring environment, and this property source will be called during the Bootstrap of the application.
-The property source’s getProperty() may be called multiple times for the same property key (every time there is a usage of it). Hence you need to cache the properties in case the property values are retrieved using a database or an API request.
-Since this property source is started/called even before spring context is initialized, we cannot use any spring beans inside this implementation.
+1. When configured, this property source is registered as the first property source in the spring environment and this property source will be called during the bootstrap of the application.
+2. The property source's `getProperty()` may be called multiple times for the same property key every time it uses it. Hence it would be best if you cached the properties in case the property values are retrieved using a database or an API request.
+3. Since this property source is started or called even before spring context is initialized, you cannot use any spring beans inside this implementation.
 
 ## Dynamic Property Source
 
-WaveMaker introduces another property source called Dynamic Property Source, which is to be used to provide the configuration based on application runtime context such as Logged in user’s context.
+WaveMaker introduced another property source called Dynamic Property Source, which provides the configuration based on application runtime context such as Logged in user's context.
 
-This is useful to multi-tenant applications where you want to route the user to different rest API servers based on the logged-in user’s tenant or role. However, not all properties can be multi-tenantable. As of the 10.8 release, only the REST service-based properties can be provided through this property source.
+Dynamic Property Source is useful to multi-tenant applications where you want to route the user to different REST API servers based on the logged-in user's tenant or role. However, not all properties can be multi-tenantable. As of the [10.8 release](/learn/wavemaker-release-notes/v10.8.0), only the REST service-based properties can be provided through this property source.
 
-One needs to extend the [AbstractDynamicPropertySource](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/core/props/AbstractDynamicPropertySource.java) and provide the implementation for the getProperty() method as given below.
+You should extend the [AbstractDynamicPropertySource](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/core/props/AbstractDynamicPropertySource.java) and provide the implementation for the `getProperty()` method as given below.
 
 ```java
 public class MyAppDynamicPropertySource extends AbstractDynamicPropertySource {
@@ -230,40 +236,45 @@ public Object getProperty(String key) {
 ```
 
 :::note
-In the above sample implementation, we override the property value for the keys myRestService.host and app.environment.key1. For other keys, it will fall back to other property sources defined in the environment.
+In the above sample implementation, we override the property value for the keys `myRestService.host` and `app.environment.key1`. For other keys, it will fall back to other property sources defined in the environment.
 :::
 
-Define the bean user-spring.xml file as given below:
+Define the bean `user-spring.xml` file as given below:
 
 ```java
 <bean class=”my.app.package.MyAppDynamicPropertySource ” />
 ```
 
-### Points to note
+### Points to Note
 
-1. If configured, this property source is registered as the first property source in the spring environment and this property source. 
-2. The property source’s getProperty() may be called multiple times for the same property key (every time there is a usage of it). Hence you need to cache the properties in case the property values are retrieved using a database or an API request.
-3. Since this property source is started after the spring context is initialized, you can Autowire any of the spring-managed beans and use it in your implementation.
-4. Since this property source is started after the spring context is initialized, we will not be called for properties required in the Bootstrap process.
+1. When configured, this property source is registered as the first property source in the spring environment and this property source. 
+2. The property source's `getProperty()` may be called multiple times for the same property key every time it uses it. Hence it would be best if you cached the properties in case the property values are retrieved using a database or an API request.
+3. Since this property source starts after the spring context is initialized, you can Autowire any spring-managed beans and use them in your implementation.
+4. Since this property source is started or called after the spring context is initialized, you will not be called for properties required in the Bootstrap process.
 
-## Bootstrap vs Dynamic Property source
+## Bootstrap vs Dynamic Property Source
 
 Both the property sources will help in dynamically assigning the configuration values to the application. However, you need to understand the following differences.
 
-1. Bootstrap should be used to pass the values required during the application start, whereas the Dynamic property source should be used only in cases where the configuration values could be different based on the caller context.
-2. Both of these property sources will be invoked multiple times for the same property key. Hence you need to cache those values and use them in subsequent calls.
-3. If both the property sources are configured, then the priority will be given to the Dynamic property source, then to the Bootstrap, then system and environment variables.
-4. If the property source is not aware of the key, then it should “return null” for the given property to check the property in the next available source such as in the following order - Dynamic Property Source, then BootStrap, then System property, and then Environment variable.
+1. Bootstrap should be used to pass the values required when the application starts. In contrast, the Dynamic property source should be used only when the configuration values could be different based on the caller context.
+2. Both of these property sources can be invoked multiple times for the same property key. Hence you need to cache those values and use them in subsequent calls.
+3. When both property sources are configured, the priority is given to the Dynamic Property Source rather than the Bootstrap. Following that, precedence is given to the System and Environment Variables, respectively.
+4. If the property source is unaware of the key, it should `return null` for the given property to check the property in the next available source, similar to the following order. 
+    1. Dynamic Property Source
+    2. BootStrap
+    3. System Property
+    4. Environment Variable.
 
 ## Consuming Properties in Java Services
 
-In this section, we will understand how to use configuration properties in the application java code. 
+In this section, you will understand how to use configuration properties in the application Java code. 
+
 There are two ways to do it.
 
 1. Using [@Value](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Value.html)
 Using @Value for fields is a convenient way to read configuration properties. These values are set during application bootstrap, so they cannot be used for reloadable or dynamic properties.
 
-E.g., If you need a configuration property to read numberOfWorkerThreads, it can be read using the below code.
+For example, if you need a configuration property to read numberOfWorkerThreads, it can be read using the code below.
 
 ```java
 @Value(“app.environment.numberOfWorkerThreads”)
@@ -272,9 +283,9 @@ private int numberOfWorkerThreads;  // This value is not going to change even if
 
 2. Using the [PropertyResolver](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/env/PropertyResolver.html) methods. PropertyResolver is the superclass of the environment.
 
-For reloadable or dynamic properties, which are supported using the above bootstrapPropertySource or dynamicPropertySources, the configuration property can be fetched every time on-demand using the environment.getProperty methods.
+For reloadable or dynamic properties supported using the above **bootstrapPropertySource** or **dynamicPropertySources**, the configuration property can be fetched every time on-demand using the `environment.getProperty` methods.
 
-E.g., for reading from the [environment](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/env/Environment.html).
+For example, reading from the [environment](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/env/Environment.html).
 
 ```java
 @Autowired
