@@ -100,7 +100,7 @@ For HRDB database:
 db.hrdb.password=mypassword
 ```
 
-However, the environment property names cannot contain a dot (“.”) in its name. Hence we need to normalize the key before setting it on the environment. So it can be written as `db_hrdb_password` or `DB-hrdb-password`.
+However, the environment property names cannot contain a dot (“.”) in its name. Hence you need to normalize the key before setting it on the environment. So it can be written as `db_hrdb_password` or `DB-hrdb-password`.
 
 :::note
 As of [version 10.8](/learn/wavemaker-release-notes/v10-8-0), the `prefix db_` is not required when setting the environment variable.
@@ -236,7 +236,7 @@ public Object getProperty(String key) {
 ```
 
 :::note
-In the above sample implementation, we override the property value for the keys `myRestService.host` and `app.environment.key1`. For other keys, it will fall back to other property sources defined in the environment.
+In the above sample implementation, you override the property value for the keys `myRestService.host` and `app.environment.key1`. For other keys, it will fall back to other property sources defined in the environment.
 :::
 
 Define the bean `user-spring.xml` file as given below:
@@ -258,7 +258,7 @@ Both the property sources will help in dynamically assigning the configuration v
 
 1. Bootstrap should be used to pass the values required when the application starts. In contrast, the Dynamic property source should be used only when the configuration values could be different based on the caller context.
 2. Both of these property sources can be invoked multiple times for the same property key. Hence you need to cache those values and use them in subsequent calls.
-3. When both property sources are configured, the priority is given to the Dynamic Property Source rather than the Bootstrap. Following that, precedence is given to the System and Environment Variables, respectively.
+3. When both property sources are configured, the priority is given to the Dynamic Property Source, then the Bootstrap. Following that, precedence is given to the System and Environment Variables, respectively.
 4. If the property source is unaware of the key, it should `return null` for the given property to check the property in the next available source, similar to the following order. 
     1. Dynamic Property Source
     2. BootStrap
@@ -271,8 +271,7 @@ In this section, you will understand how to use configuration properties in the 
 
 There are two ways to do it.
 
-1. Using [@Value](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Value.html)
-Using @Value for fields is a convenient way to read configuration properties. These values are set during application bootstrap, so they cannot be used for reloadable or dynamic properties.
+1. Using [@Value](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Value.html) for fields is a convenient way to read configuration properties. These values are set during application bootstrap, so they cannot be used for reloadable or dynamic properties.
 
 For example, if you need a configuration property to read numberOfWorkerThreads, it can be read using the code below.
 
