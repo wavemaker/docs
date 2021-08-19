@@ -11,12 +11,12 @@ Using the Group By property you can group the items together under a heading. Th
 
 [![](/learn/assets/checkboxset_group.png)](/learn/assets/checkboxset_group.png)
 
-## Change the layout of RadioSet - Align them all horizontall or group them by specific number
+## Change the layout of CheckboxSet - Vertical or Horizontal
 
-You can easily change the layout of the options inside the RadioSet, so that they are aligned vertifically or horizontal or grouped by a specific number.
-**Items per row** determine the number to items that can be shown in each row. This can be specified independently for different target devices, from the _device_ tab of the _Properties panel_.
+You can easily change the layout of the options inside the CheckboxSet, so that they are aligned vertifically, horizontally or grouped by a specific number.
+**Items per row** determine the number of items that can be shown in each row. This can be specified independently for different target devices, from the _device_ tab of the _Properties panel_.
 
-[![radioset layout](/learn/assets/checkboxset_horizontal.png)](/learn/assets/checkboxset_horizontal.png)
+[![checkboxset layout](/learn/assets/checkboxset_horizontal.png)](/learn/assets/checkboxset_horizontal.png)
 
 ## Properties
 
