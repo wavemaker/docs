@@ -177,10 +177,10 @@ WaveMaker introduced a class called [AbstractBootstrapPropertySource](https://gi
 ### Sample Snippet
 
 ```java
-public class MyAppBootStrapPropertySource extends AbstractBootStrapPropertySource {
+public class MyAppBootstrapPropertySource extends AbstractBootstrapPropertySource {
 @Override
 public Object getProperty(String key) {
-      if(key.equals(“hrdb.password”) {
+      if(key.equals(“hrdb.password”)) {
 	//read the password from system properties and decrypt the value
 	String encPassword = System.getProperty(“hrdb.password”);
             String password  = MyEncryptionUtils.decrypt(encPassword);
@@ -196,7 +196,7 @@ The name of the class should be added as context param to the `user-web.xml` fil
 ```xml
     <context-param>
     <param-name>bootstrapPropertySource</param-name>
-    <param-value>com.myapp.core.props.MyAppBootStrapPropertySource</param-value>
+    <param-value>com.myapp.core.props.MyAppBootstrapPropertySource</param-value>
 </context-param>
 ```
 
