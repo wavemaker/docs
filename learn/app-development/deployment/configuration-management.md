@@ -32,7 +32,7 @@ This is a new approach applicable from the [release 10.8.0](/learn/wavemaker-rel
 
 The new generation of DevOps follows the cloud-native strategy [12-factor app](https://12factor.net/) wherein the war file is built only once, called an immutable war file. The immutable war file does not have the configuration values packaged in it. Instead, they will have placeholders that should be provided at the time of deployment; this enables the use of Docker images and versioning them based on the application version. 
 
-### Building an Immutable war
+## Building an Immutable War
 
 To build an immutable war file, you need the profile name to input the maven command, as shown below.
 
@@ -52,7 +52,7 @@ Use an existing deployment profile, called Deployment. It is the default profile
 However, using this approach can leave users confused about whether configured values are picked up during the application start.
 :::
 
-### Create a new Immutable Profile
+### Create a New Immutable Profile
 
 :::note
 We recommended using this approach.
@@ -76,7 +76,7 @@ db.hrdb.password=${db_password}
 
 When the application starts, the WaveMaker application will try to resolve the `db_password` by applying one of the options when deploying an Immutable war.
 
-## Deploying an Immutable war
+## Deploying an Immutable War
 
 When the immutable war file gets deployed with placeholders, the placeholder values should be resolved to actual values. You can achieve this in multiple ways, as given below.
 
@@ -100,7 +100,9 @@ For HRDB database:
 db.hrdb.password=mypassword
 ```
 
-However, the environment property names cannot contain a dot (“.”) in its name. Hence you need to normalize the key before setting it on the environment. So it can be written as `db_hrdb_password` or `DB-hrdb-password`.
+:::important
+The environment property names cannot contain a dot (“.”) in its name, and it should be full lower case or completely upper case. Hence you need to normalize the key before setting it on the environment. So It can be written as `db_hrdb_password`, or `DB_HRDB_PASSWORD`.
+:::
 
 :::note
 As of [version 10.8](/learn/wavemaker-release-notes/v10-8-0), the `prefix db_` is not required when setting the environment variable.
@@ -146,11 +148,11 @@ The use of Environment Properties or System Properties makes your war file immut
 To address the following cases, WaveMaker introduced Custom Property Sources, such as [BootStrap Property Source](#bootstrap-property-source) and [Dynamic Property Source](#dynamic-property-source) explained in the next section.
 :::
 
-Note that the following cases are not supported by Environment Properties and System Properties.
+Note that Environment Properties and System Properties do not support the following cases.
 
 ### Configuration Managed in a Database 
 
-In cases, when the developer want to retrieve the configuration from a database and use it as an application configuration when the application starts.
+In some cases, the developer wants to retrieve the configuration from a database and use it as an application configuration when the application starts.
 
 ### Configuration through an API 
 
@@ -158,7 +160,7 @@ In some cases, you may have to call an external API to retrieve the application'
 
 ### Encrypted Sensitive Information or Control via Encryption
 
-When you want to decrypt the encrypted values provided via profile properties, environment variables, or system properties based on the customer's requirements.
+In some cases, you want to decrypt the encrypted values provided via profile properties, environment variables, or system properties based on the customer's requirements.
 
 ### Controlling the Refreshing Properties
 
@@ -166,13 +168,13 @@ There are few properties that you would like to refresh periodically without red
 
 ### Contextual Configuration based on Logged-in User
 
-When you want to add configuration based on the logged-in user's context, for example, related to multi-tenancy, provide different configuration values based on the caller context.
+When you want to add configuration based on the logged-in user's context, such as multi-tenancy, provide different configuration values based on the caller context.
 
 ## BootStrap Property Source
 
 WaveMaker introduced a class called [AbstractBootstrapPropertySource](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/core/props/AbstractBootstrapPropertySource.java) which should be extended and should provide the implementation for `getProperty()`.
 
-### Sample snippet
+### Sample Snippet
 
 ```java
 public class MyAppBootStrapPropertySource extends AbstractBootStrapPropertySource {
@@ -258,7 +260,7 @@ Both the property sources will help in dynamically assigning the configuration v
 
 1. Bootstrap should be used to pass the values required when the application starts. In contrast, the Dynamic property source should be used only when the configuration values could be different based on the caller context.
 2. Both of these property sources can be invoked multiple times for the same property key. Hence you need to cache those values and use them in subsequent calls.
-3. When both property sources are configured, the priority is given to the Dynamic Property Source, then the Bootstrap. Following that, precedence is given to the System and Environment Variables, respectively.
+3. When both property sources are configured, the priority is given to the Dynamic Property Source, then the Bootstrap Property. Following that, precedence is given to the System and Environment Variables, respectively.
 4. If the property source is unaware of the key, it should `return null` for the given property to check the property in the next available source, similar to the following order. 
     1. Dynamic Property Source
     2. BootStrap
