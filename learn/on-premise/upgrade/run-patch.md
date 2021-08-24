@@ -7,7 +7,8 @@ sidebar_label: "Run Patch"
 
 ## Running the Patch
 
-- When upgrading from 10.x.x to 10.7.x user need to download required content for the migration process. to download migration tar please run the following command.
+- When upgrading from 10.x.x to 10.8.x user needs to download the required content for the migration process, **when the user already upgraded to 10.7.x WME Version no need to download migration tar**.
+- To download migration tar please run the following command.
 
 ```bash
     wget https://s3.amazonaws.com/downloads.wavemaker.com/wme/wme.migration/wme_migrations.tar
