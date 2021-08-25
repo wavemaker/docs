@@ -158,7 +158,7 @@ docker container run --rm -it --name <container-name> -v $HOME/.m2:$HOME/.m2 -v 
 ```
 
 ```bash
-docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $HOME/.npm:$HOME/.npm -v /home/user/MySampleApp:/usr/local/content/app -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 wavemaker/wm-app-builder:1.0
+example: docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $HOME/.npm:/root/.npm -v /home/user/MySampleApp:/usr/local/content/app -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 wavemaker/wm-app-builder:1.0
 ```
 
 ### Run Container
