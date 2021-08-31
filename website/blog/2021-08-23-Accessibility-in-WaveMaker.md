@@ -1,63 +1,54 @@
 ---
-title: "Accessibility support in WaveMaker"
+title: "Accessibility Support in WaveMaker"
 author: Lovin Ahmed
 ---
 
-**Accessibility** is essential for individuals and organizations that want to create high-quality websites and applications. It enables people with disabilities to use different Assistive Technologies and Adaptive Strategies, for the business benefits of Web Accessibility. WaveMaker also focuses on enabling their product with international standards for Web Accessibility from W3C - including **Web Content Accessibility Guidelines(WCAG)**, and **WAI-ARIA** for **Accessible Rich Internet Applications**  - and the first step in applying them. 
-
-
+**Accessibility** is essential for individuals and organizations that want to create high-quality websites and applications. It enables people with disabilities to use different Assistive Technologies (AT) and Adaptive Strategies for the business benefits of Web Accessibility. WaveMaker also focuses on enabling their product with international standards for Web Accessibility from World Wide Web Consortium (W3C), including Web Content Accessibility Guidelines (WCAG) and Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) as the first step in applying them. 
 
 <!-- truncate -->
 
 ## Why Accessibility?
 
-Accessibility though is designed for people with disabilities but it does help nearly everyone. Accessibility promotes usability generally: everyone benefits from clear instructions, opportunities to correct form errors, simple visual layouts, high color contrast, and the option to read a transcript or captions to a video or audio recording.
+Although Accessibility is designed for people with disabilities, it helps everyone in general. Accessibility promotes usability. Everyone, in general, can benefit from clear instructions, opportunities to correct form errors, simple visual layouts, high color contrast, and the option to read a transcript or captions to a video or audio recording.
 
-In the IT world, accessibility often describes hardware and software designed to help those who experience disabilities. 
-
-
-**Features of Accessibility Websites**
-
-* Good use of HTML headings.
-* Accessible with keyboard.
-* Accessible images.
-* Accessible menus.
-* Accessible forms.
-* Accessible tables.
-* Effective use of color.
-* Meaningful link text.
+In the IT world, Accessibility often describes hardware and software designed to help those who experience disabilities. 
 
 
+### Features of Accessibility Websites
+
+* Good use of HTML headings
+* Accessible with the keyboard
+* Accessible images
+* Accessible menus
+* Accessible forms
+* Accessible tables
+* Effective use of color
+* Meaningful link text
+
+## How it Works
+
+To make components accessible, all the text on the web page must be unique, along with its captions and roles. To make it possible, we have introduced **aria-labels** attributes for all the `wm-widgets` which are configurable and certain [Role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) to identify every component as per their standard behavior. This ARIA "roles" and "attributes" will benefit the group of people using Assistive Technology Readers (ATR) to read the text and the purpose of the widget aloud to the users. 
+
+WaveMaker Accessibility enhancements will cover Web Content Accessibility Guidelines (WCAG) "A" and "AA" compliance for all non-text content, including the following.
+
+Name Role & Value, Info, Relationships, Meaning Sequence, Sensory Characteristics, Identify Input Purpose, Non-Text Contrast, Page Titled, Headings and Labels, Label in Name, Language of Page, Status Messages, Error Prevention.
 
 
-## How does it work?
-
-To make components accessible it is important that all the text on a web page should be unique with its captions and roles. To make it possible we have introduced **aria-abels** attributes for all the *wm-widgets* which are configurable and certain [Role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) to identify each and every component as per their standard behavior. This ARIA "roles" and "attributes" will benefit the group of people using Assistive Technology Readers to read the text and the purpose of the widget loud for the users.  
-
-WaveMaker Accessibility enhancements will cover **WCAG “A” and “AA”** compliance for all non-text content, including:
-
-Name Role & Value, Info and Relationships, Meaning Sequence, Sensory Characteristics, Identify Input Purpose, Non-Text Contrast, Page Titled, Headings and Labels, , Label in Name, Language of Page, Status Messages, Error Prevention.
-
-
-
-
-### **Steps to follow:**
+### Steps to Follow
 
 **Labels**
 
-* On Every Drag & Drop of widget check for the Accessibility section. 
-* Copy or Bind the captions of the label widgets to the **Hint** property in the properties tab below Accessibility Section. 
+* On every drag and drop of a widget, check for the Accessibility section. 
+* Copy or Bind the captions of the label widgets to the **Hint** property from the properties tab below the Accessibility section. 
 
 ![Accessibility Section](/learn/assets/accessibility-section.png)
 
 :::note
-All labels and texts will have a default hint value as "Label text" already added from the system. 
+All labels and texts will have a default hint value specified as "Label text", which you can edit. 
 :::
 
-* Manipulating the *hint* will result in a "tooltip text" onhover and "**aria-label**" attribute visible in the browser preview URL that only AT screen readers can understand.
-* The "**aria-label**" attribute will be added to all the widgets wherever text is binded from the *hint* property.
-
-
+* Manipulating the *Hint* will result in a "tooltip text" on-hover and "**aria-label**" attribute visible in the browser preview URL that only AT screen readers can understand.
+* The "**aria-label**" attribute will be added to all widgets wherever text is bound from the **Hint** property.
 
 **Images**
 
@@ -65,13 +56,13 @@ All labels and texts will have a default hint value as "Label text" already adde
 * Modifying *hint* property with meaningful caption will add **aria-label** to make it accessible.
 
 
-There are other widgets which are taken care off to make them accessible easier and faster with "aria-labels" like, **Page layouts**, **Dialogs**, **Form Fields**, **Anchors** & **Live Forms**, etc.
+Other widgets are taken care of to make them accessible easier and faster with "aria-labels" like, **Page layouts**, **Dialogs**, **Form Fields**, **Anchors** and **Live Forms**, etc.
 
 
 
-### Good use of Headings
+### Good Use of Headings
 
-To make a good use of headings on a page, add CSS classname from the *Style properties tab*, for example .h1, .h2, .h3,  etc. On using any of the above heading classname an attribute **"aria-level"** will be assigned to the HTML Structure to make the Screen readers understand the text specificty while scanning a page. The heading caption can be copied to the *hint* property to make it ARIA accessible.
+To make good use of headings on a page, add CSS class name from the **Style** properties tab, for example .h1, .h2, .h3, etc. Using any of the above headings class name, an attribute **"area-level"** will be assigned to the HTML structure to make the screen readers understand the text specificity while scanning a page. You can copy the heading caption to the *hint* property to make it ARIA accessible.
  
 
 :::note
@@ -79,24 +70,17 @@ Classname with .h1 will set the *aria-level="1"*, and .h2 will set *aria-level="
 :::
 
 
-### Keyboard navigation
+### Keyboard Navigation
 
-To navigate well within a form make use of **Tab Index** property from the *Properties Tab*.
+To navigate well within a form, use the **Tab Index** property from the *Properties* tab.
 
 ![Tab Index property](/learn/assets/tab-index-property.png)
 
 
 :::warning 
-For form inputs in a live form the *hint* text will not only add **"aria-label"** attribute but also a "Help Text" below the input field. 
+For form inputs in a live form, the *hint* text will not only add an **aria-label** attribute but also a *Help Text* below the input field. 
 :::
-
-
 
 ### Others
 
-Effective use of color contrast is also an important aspect to make your app accessible. WCAG 2.0 level "AA" requires a contrast ratio of at least **4.5:1** for normal text and **3:1** for large text. WCAG 2.1 requires a contrast ratio of at least **3:1** for graphics and user interface components (such as form input borders). WCAG Level "AAA" requires a contrast ratio of at least **7:1** for normal text and **4.5:1** for large text. [Check](https://webaim.org/resources/contrastchecker/) the color contrast ratio before designing or developing any application.
-
-
-
-
-
+Effective use of color contrast is also an important aspect of making your app accessible. WCAG 2.0 level "AA" requires a contrast ratio of at least **4.5:1** for normal text and **3:1** for large text. WCAG 2.1 requires a contrast ratio of at least **3:1** for graphics and user interface components (such as form input borders). WCAG Level "AAA" requires a contrast ratio of at least **7:1** for normal text and **4.5:1** for large text. [Check](https://webaim.org/resources/contrastchecker/) the color contrast ratio before designing or developing any application.
