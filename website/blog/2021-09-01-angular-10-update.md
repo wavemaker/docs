@@ -3,12 +3,12 @@ title: "Important Announcement about Angular 10 Update"
 author: Swetha Kundaram
 ---
 
-WaveMaker currently uses Angular 9 for building applications. With the announcement on the ending support of Angular 9, we take small steps to update to the next Angular version 10. For this, WaveMaker has developed an approach to update the platform. WaveMaker plans to release another major update on the 6th of September 2021, including the Angular 10 update. Therefore, to avoid any breaking of code, we have recommended the following approach. 
+WaveMaker currently generates code based on Angular 9 for applications. With the announcement on the ending support of Angular 9, we are upgrading to the next Angular version 10.2.5.  WaveMaker plans to release another major update on the 6th of September 2021, including the Angular 10 update. If you are a WaveMaker application developer who uses your own infrastrucutre to build and deploy the application, you need to read this note.
 
 <!--truncate-->
 
 :::note
-Please note that this Angular update does not include Ivy Engine but covers some critical bug fixes. As part of the process, we continue to use View Engine to move forward.
+Please note that this Angular update does not include Ivy Engine but covers some critical bug fixes. As part of the process, we continue to use View Engine and will move to using Ivy in the subsequent versions.
 :::
 
 ## What's in the Update
