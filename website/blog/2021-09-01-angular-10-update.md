@@ -3,48 +3,67 @@ title: "Important Announcement about Angular 10 Update"
 author: Swetha Kundaram
 ---
 
-WaveMaker currently generates code based on Angular 9 for applications. With the announcement on the ending support of Angular 9, we are upgrading to the next Angular version 10.2.5.  WaveMaker plans to release another major update on the 6th of September 2021, including the Angular 10 update. If you are a WaveMaker application developer who uses your own infrastrucutre to build and deploy the application, you need to read this note.
+WaveMaker currently generates code based on Angular 9 for applications. With the announcement on ending support of Angular 9, we are upgrading to the next Angular version, 10.2.5. 
+
+Consequently, we have developed a roadmap to update the platform with the **Release 10.9** scheduled for the 6th of September 2021, which includes the Angular 10 update. If you are a WaveMaker application developer who uses your own infrastructure to build and deploy the application, you need to read further.
+
+This update requires you to take action, i.e., updating the Node and NPM versions. To avoid breaking changes, we have recommended the following steps described in this blog post. 
 
 <!--truncate-->
 
 :::note
-Please note that this Angular update does not include Ivy Engine but covers some critical bug fixes. As part of the process, we continue to use View Engine and will move to using Ivy in the subsequent versions.
+Please note that this Angular update does not include Ivy Engine but covers some critical bug fixes. As part of the process, we continue to use View Engine and will move to use Ivy in the subsequent versions.
 :::
 
 ## What's in the Update
+
+This update impacts building WaveMaker apps outside WaveMaker using your own CI/CD system. 
 
 |Description| Current Version | Moving to|
 |---|---|---|
 |**Node** | 10.15 | 12.22.3 |
 | **NPM**| 6.4 | 6.14.13 |
 
-
 :::important
-**Update Node JS Version**: Angular 10 requires Node JS version 12.2.0 or higher. Therefore, you must update the Node version from 10 to 12 to avoid any breaking of code.
+**Update Node JS Version**: Angular 10 requires Node JS version 12.2.0 or higher. So you must upgrade Node and NPM on your build infrastructure with the versions mentioned above.
 :::
 
 ## How WaveMaker can Help
 
-There are two ways to upgrade to Angular 10.
+There are two ways to upgrade to the platform with Angular 10.
 
-1. Download and install in the build system
-2. Use Docker images
+1. Download and install Node and NPM in the build system.
+2. Use resources provided by the WaveMaker on demand. WaveMaker team will publish the Docker file and Docker image.
 
-### Docker Images
+### Using Docker Option
 
- If you are using Docker images, you can do them in the following two ways:
+If you are using Docker images, you can use them in the following ways:
 
-- Using them from the public repo containing pre-built Docker image developed by wavemaker
-- Using Docker files to build the docker images. Follow this document for more details. 
+- Using them from the public repo containing pre-built Docker image developed by WaveMaker.
+- Using Docker files to build the docker images. For more information, see [Build with Docker](/learn/app-development/deployment/build-with-docker). 
 
-:::tip
-We can share the beta link to test your application before the update. Please reach out to our [support team](mailto:support@wavemaker.com) for more information. 
+:::note
+#### Docker Contents
+
+1. **Docker File**
+    - Have commands to install required software utilities for building WaveMaker inside the container.
+    - Instructions to build docker image out of this file and use docker image to build WaveMaker App.
+    - Link to Docker Github and Dockerhub
+2. **Docker Image**
+    - PreBaked Docker Image developed by the WaveMaker team.
+    - You can utilize this to build a WaveMaker app by passing source code as volume while running containers out of this image.
+    - Docker Image URL on Docker hub
+3. Docker Image with NPM and Maven dependencies.
+4. PreBaked Docker Image provided by WaveMaker team.
+5. Same as point #2, but with Maven and NPM dependencies are prebaked.
+6. You can utilize this image to build WaveMaker apps without contacting Maven or NPM repositories.
+7. Docker hub URL.
 :::
 
 ### Testing your Application
 
-We recommend you test the application to see if the build is successful. For this, you must:
+:::tip
+To make the transition smooth, we can provide the beta link on demand to test your application. Please reach out to the [support team](mailto:support@wavemaker.com) for more details. 
+:::
 
-- Test Angular build
-
-If the build fails, we request you to contact our support team with logs. 
+We recommend you test the application to see if the build is successful. For this, you must test the application using the [Angular Build](/learn/app-development/deployment/build-options#angular-build). If the build fails, we request you to contact our support team with logs. 
