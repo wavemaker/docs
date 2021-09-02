@@ -30,35 +30,17 @@ This update impacts building WaveMaker apps using your own [CI/CD pipeline](/lea
 
 ## How WaveMaker can Help
 
-There are two ways to upgrade to the platform with Angular 10.
+There are two ways to upgrade to your build system with Angular 10.
 
-1. Download and install Node and NPM in the build system.
-2. Use resources provided by the WaveMaker on demand. WaveMaker team will publish the Docker file and Docker image.
+1. Download and install Node and NPM in the build system with the versions specified above.
+2. Use resources provided by WaveMaker team.
 
 ### Using Docker Option
 
-If you are using Docker images, you can use them in the following ways:
+If you are using Docker images for building WaveMaker application, you can use them in the following ways:
 
-- Using them from the public repo containing pre-built Docker image developed by WaveMaker.
-- Using Docker files to build the docker images. For more information, see [Build with Docker](/learn/app-development/deployment/build-with-docker). 
-
-:::note
-#### Docker Contents
-
-1. **Docker File**
-    - Have commands to install required software utilities for building WaveMaker inside the container.
-    - Instructions to build docker image out of this file and use docker image to build WaveMaker App.
-    - Link to Docker Github and Dockerhub
-2. **Docker Image**
-    - PreBaked Docker Image developed by the WaveMaker team.
-    - You can utilize this to build a WaveMaker app by passing source code as volume while running containers out of this image.
-    - Docker Image URL on Docker hub
-3. Docker Image with NPM and Maven dependencies.
-4. PreBaked Docker Image provided by WaveMaker team.
-5. Same as point #2, but with Maven and NPM dependencies are prebaked.
-6. You can utilize this image to build WaveMaker apps without contacting Maven or NPM repositories.
-7. Docker hub URL.
-:::
+- Using them from the public repo containing pre-built Docker image developed and published by WaveMaker.
+- Using Docker files to build the Docker images. For more information, see [Build with Docker](/learn/app-development/deployment/build-with-docker). 
 
 ### Testing your Application
 
