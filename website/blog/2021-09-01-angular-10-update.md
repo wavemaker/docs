@@ -17,7 +17,7 @@ Please note that this Angular update does not include Ivy Engine but covers some
 
 ## What's in the Update
 
-This update impacts building WaveMaker apps outside WaveMaker using your own CI/CD system. 
+This update impacts building WaveMaker apps using your own [CI/CD pipeline](/learn/app-development/deployment/deployment-overview) using the [Angular Build](/learn/app-development/deployment/build-options#angular-build). 
 
 |Description| Current Version | Moving to|
 |---|---|---|
