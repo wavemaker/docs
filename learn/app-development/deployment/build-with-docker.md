@@ -100,7 +100,7 @@ ifconfig
 
 - Above command will provide the network interfaces and their respective IP Address in Instance, please use the respective IP Address to access the Application in the web,You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.
 
-## Build War File Using Docker 
+## Build War File Using Docker
 
 - Export the project to your local or you can directly clone from a repository. You should keep the Dockerfile in the root directory of the project and we will mount the application directory location to `/usr/local/content/app` during container creation for generating application war.
 
@@ -117,15 +117,15 @@ You can use the following Dockerfile for building Docker image and create Docker
 ```Dockerfile
 FROM maven:3.6.3-jdk-8 as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
-# installing node 10.15 and npm 6.4.1 in docker container
+# installing node 12.22 and npm 6.14 in docker container
 RUN mkdir -p /usr/local/content/node
 WORKDIR /usr/local/content/node
-ADD https://nodejs.org/dist/v10.15.0/node-v10.15.0-linux-x64.tar.gz .
-RUN tar -xzf node-v10.15.0-linux-x64.tar.gz \
-    && ln -s /usr/local/content/node/node-v10.15.0-linux-x64/bin/node /usr/local/bin/node \
-    && ln -s /usr/local/content/node/node-v10.15.0-linux-x64/bin/npm /usr/local/bin/npm \
+ADD https://nodejs.org/dist/v12.22.3/node-v12.22.3-linux-x64.tar.gz .
+RUN tar -xzf node-v12.22.3-linux-x64.tar.gz \
+    && ln -s /usr/local/content/node/node-v12.22.3-linux-x64/bin/node /usr/local/bin/node \
+    && ln -s /usr/local/content/node/node-v12.22.3-linux-x64/bin/npm /usr/local/bin/npm \
     && chown -R root:root /usr/local/content/node \
-    && rm -fR node-v10.15.0-linux-x64.tar.gz
+    && rm -fR node-v12.22.3-linux-x64.tar.gz
 
 # stage for build the code
 FROM maven-java-node
