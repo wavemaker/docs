@@ -25,7 +25,7 @@ This update impacts building WaveMaker apps using your own [CI/CD pipeline](/lea
 | **NPM**| 6.4 | 6.14.13 |
 
 :::important
-**Update Node JS Version**: Angular 10 requires Node JS version 12.2.0 or higher. So you must upgrade Node and NPM on your build infrastructure with the versions mentioned above.
+**Update Node JS Version**: Angular 10 requires Node JS version 12.22.3. So you must upgrade Node and NPM on your build infrastructure with the versions mentioned above.
 :::
 
 ## How WaveMaker can Help
