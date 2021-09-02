@@ -13,12 +13,12 @@ For creating a Docker container, you create a Docker image by building a Dockerf
 |Description|Version|
 |---|---|
 |Java |1.8|
-|Node|10.15|
+|Node|12.22|
 |Maven| 3.6|
-|npm|6.4|
+|npm|6.14|
 |Ant|1.10|
 
-## Build Docker Image 
+## Build Docker Image
 
 Export the project to your local or you can directly clone from a repository. You should keep the Dockerfile in the root directory of the project.
 
@@ -37,12 +37,12 @@ FROM maven:3.6.3-jdk-8 as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 RUN mkdir -p /usr/local/content/node
 WORKDIR /usr/local/content/node
-ADD https://nodejs.org/dist/v10.15.0/node-v10.15.0-linux-x64.tar.gz .
-RUN tar -xzf node-v10.15.0-linux-x64.tar.gz \
-    && ln -s /usr/local/content/node/node-v10.15.0-linux-x64/bin/node /usr/local/bin/node \
-    && ln -s /usr/local/content/node/node-v10.15.0-linux-x64/bin/npm /usr/local/bin/npm \
+ADD https://nodejs.org/dist/v12.22.3/node-v12.22.3-linux-x64.tar.gz .
+RUN tar -xzf node-v12.22.3-linux-x64.tar.gz \
+    && ln -s /usr/local/content/node/node-v12.22.3-linux-x64/bin/node /usr/local/bin/node \
+    && ln -s /usr/local/content/node/node-v12.22.3-linux-x64/bin/npm /usr/local/bin/npm \
     && chown -R root:root /usr/local/content/node \
-    && rm -fR node-v10.15.0-linux-x64.tar.gz
+    && rm -fR node-v12.22.3-linux-x64.tar.gz
 
 FROM maven-java-node as webapp-artifact
 RUN mkdir -p /usr/local/content/app
