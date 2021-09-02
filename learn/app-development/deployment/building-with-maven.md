@@ -10,9 +10,9 @@ This guide helps to create a war file for deploying the project in your local m
 |Description|Version|
 |---|---|
 |Java |1.8|
-|Node|10.15|
+|Node|12.22|
 |Maven| 3.8.1|
-|npm|6.4|
+|npm|6.14|
 |Ant|1.10.11|
 |Git| 2.26|
 
