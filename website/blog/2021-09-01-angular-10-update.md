@@ -3,7 +3,7 @@ title: "Important Announcement about Angular 10 Update"
 author: Swetha Kundaram
 ---
 
-WaveMaker currently uses Angular 9 for building applications. With the announcement on ending support of Angular 9, we move forward by taking small steps to update to the next Angular version 10. For this, WaveMaker has developed an approach to update the platform. WaveMaker plans to release another major update on the 6th of September 2021 that includes the Angular 10 update. Therefore, to avoid any breaking of code, we have recommended the following approach. 
+WaveMaker currently uses Angular 9 for building applications. With the announcement on the ending support of Angular 9, we take small steps to update to the next Angular version 10. For this, WaveMaker has developed an approach to update the platform. WaveMaker plans to release another major update on the 6th of September 2021, including the Angular 10 update. Therefore, to avoid any breaking of code, we have recommended the following approach. 
 
 <!--truncate-->
 
@@ -25,18 +25,26 @@ Please note that this Angular update does not include Ivy Engine but covers some
 
 ## How WaveMaker can Help
 
-There are two to ways upgrade to Angular 10.
+There are two ways to upgrade to Angular 10.
 
-- Download and install in the build system
-- Use the Docker image that WaveMaker provides
+1. Download and install in the build system
+2. Use Docker images
 
 ### Docker Images
 
-If you are using Docker image, WaveMaker can provide two Docker images to ease the process.
+ If you are using Docker images, you can do them in the following two ways:
 
-- Node update image
-- Node update plus WaveMaker dependencies
+- Using them from the public repo containing pre-built Docker image developed by wavemaker
+- Using Docker files to build the docker images. Follow this document for more details. 
 
 :::tip
-We can share the staging link to test your application before the update. Please reach out to our [support team](mailto:support@wavemaker.com) for more details. 
+We can share the beta link to test your application before the update. Please reach out to our [support team](mailto:support@wavemaker.com) for more information. 
 :::
+
+### Testing your Application
+
+We recommend you test the application to see if the build is successful. For this, you must:
+
+- Test Angular build
+
+If the build fails, we request you to contact our support team with logs. 
