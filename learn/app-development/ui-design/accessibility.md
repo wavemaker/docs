@@ -17,10 +17,12 @@ To make components accessible, all the text on the web page must be unique, alon
 
 WaveMaker Accessibility enhancements will cover Web Content Accessibility Guidelines (WCAG) "A" and "AA" compliance for all non-text content, including the following.
 
-Name Role & Value, Info, Relationships, Meaning Sequence, Sensory Characteristics, Identify Input Purpose, Non-Text Contrast, Page Titled, Headings and Labels, Label in Name, Language of Page, Status Messages, Error Prevention.
+Name Role & Value, Info & Relationships, Meaning Sequence, Sensory Characteristics, Identify Input Purpose, Non-Text Contrast, Page Titled, Headings and Labels, Label in Name, Language of Page, Status Messages, Error Prevention.
+
 
 
 ### Steps to Follow
+
 
 **Labels**
 
@@ -34,21 +36,92 @@ All labels and texts will have a default hint value specified as "Label text", w
 :::
 
 * Manipulating the *Hint* will result in a "tooltip text" on-hover and "**aria-label**" attribute visible in the browser preview URL that only AT screen readers can understand.
+
+![ARIA Example](/learn/assets/accessibility-labels.png)
+
 * The "**aria-label**" attribute will be added to all widgets wherever text is bound from the **Hint** property.
+
+
 
 **Images**
 
 * Add proper description for the images used on a page under the **Hint** parameter. 
-* Modifying *hint* property with meaningful caption will add **aria-label** to make it accessible.
+* Modifying *hint* property with meaningful caption will make the image/picture more accessible.
 
 
 Other widgets are taken care of to make them accessible easier and faster with "aria-labels" like, **Page layouts**, **Dialogs**, **Form Fields**, **Anchors**, and **Live Forms**, etc.
 
 
 
+---
+
+### Predefined ARIA Attributes
+
+
+| Components | Aria Labels | Role |
+| --- | --- | --- |
+| App logo | aria-label="Image" |  |
+| Header | aria-label="Page header" | banner |
+| Page | aria-label="Main page content" |  |
+| Mobile Navbar | aria-label="Title" | link |
+| Mobile Tabbar | aria-label="Home" | link |
+| Heading | aria-label="Label text" | heading |
+|  | aria-level="1" | |
+| Login Input | aria-label="Text field" |  |
+| Login button | aria-label="Login" |  |
+| Validation Errors | aria-label="error message" | alert |
+|  | aria-hidden="true" | |
+|  | aria-live="polite" | |
+| Anchors | aria-label="Link" |  |
+| Button | aria-label="Button" |  |
+| Checkbox | aria-label="Checkbox" | checkbox |
+|  | aria-checked="false" | |
+| Toggle switch | aria-label="Toggle" |  |
+|  | aria-checked="false" | |
+| Rating | aria-label="1 out of 5 ratings" | radio |
+|  | aria-checked="true" | |
+|  | aria-multiselectable="true" | |
+| Currency | aria-label="country currency" |  |
+| Datetime | aria-label="Date and time field" |  |
+| Time input | aria-label="Time field" | timer |
+|  | aria-atomic="true" | |
+| Pagination | aria-label="Page 1" |  |
+| Calendar View | aria-label="Month view" |  |
+| Search input | aria-label="search field" |  |
+| Slider | aria-label="slider" | slider |
+|  | aria-orientation="Vertical/horizontal" | |
+| Selectbox | aria-label="Select options" | listbox |
+|  | aria-expanded="false" | |
+|  | aria-hashpop="true" | |
+| Selectbox options |  | option |
+| Accordion tabs | aria-expanded="true/false" | tab |
+| List |  | list, listitem |
+| Datatable |  | table |
+| Panel | aria-label="panel" |  |
+|  | aria-label="panel-header" | |
+|  | aria-label="panel-content" | |
+|  | aria-label="panel-footer" | |
+| Charts | aria-label="pie chart" |  |
+| Left panel | aria-label="Left navigation" | navigation |
+| Right panel | aria-label="Right navigation" | complementary |
+| Top nav | aria-label="Second level navigation" | navigation |
+| Footer | aria-label="Page footer" | contentinfo |
+| Partials |  | complementary |
+| Spinner | aria-label="Loading..." | alert |
+|  | aria-live="assertive | |
+|  | aria-busy="true" | |
+| Picture | aria-label="Placeholder Image" |  |
+| Icon | aria-label="user icon" |  |
+| Popover | aria-label="user icon" | menubar |
+| Dialog | aria-modal="true" | dialog |
+| Audio |  | application |
+
+
+
+
 ### Appropriate Use of Headings
 
-To make good use of headings on a page, add CSS class name from the **Style** properties tab, for example .h1, .h2, .h3, etc. Using any of the above headings class name, an attribute **"area-level"** will be assigned to the HTML structure to make the screen readers understand the text specificity while scanning a page. You can copy the heading caption to the *hint* property to make it ARIA accessible.
+To make good use of headings on a page, add CSS class name from the **Style** properties tab, for example .h1, .h2, .h3, etc. Using any of the above headings class name, an attribute **"aria-level"** will be assigned to the HTML structure to make the screen readers understand the text specificity while scanning a page. You can copy the heading caption to the *hint* property to make it ARIA accessible.
  
 
 :::note
@@ -66,6 +139,8 @@ To navigate well within a form, use the **Tab Index** property from the *Propert
 :::warning 
 For form inputs in a live form, the *hint* text will not only add an **aria-label** attribute but also a *Help Text* below the input field. 
 :::
+
+
 
 ### Good Practices
 
