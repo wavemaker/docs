@@ -37,9 +37,9 @@ public class MyJavaService {
     
     @EventListener
     public void beforeUserCreate(EntityPreCreateEvent<User> entityPreCreateEvent){
-    String input_username = entityPreCreateEvent.getEntity().getUsername();
-    logger.info("Inside [EntityPreCreateEvent], username {}",input_username);
-    String query="username='"+input_username+"'";
+    String inputUsername = entityPreCreateEvent.getEntity().getUsername();
+    logger.info("Inside [EntityPreCreateEvent], username {}",inputUsername);
+    String query="username='"+inputUsername+"'";
     if(userService.count(query) > 0) {
         throw new WMRuntimeException(MessageResource.create("Username Not Available"));
     } } 
