@@ -30,7 +30,7 @@ Disclaimer: The screenshots from the Azure website were current at the time of w
 
 [![](/learn/assets/azure_oauth_new_appreg.png)](/learn/assets/azure_oauth_new_appreg.png)
 
-4. In the left panel of the under App Registration click on **Certificates & secrets** and Creare New client secret & copy the secret value.
+4. In the left panel of the under App Registration click on **Certificates & secrets** then **Creare New client secret** and copy the secret value.
 
 [![](/learn/assets/azure_oauth_client_secret.png)](/learn/assets/azure_oauth_client_secret.png)
 
@@ -84,50 +84,60 @@ Disclaimer: The screenshots from the Azure website were current at the time of w
 [![](/learn/assets/azure_oauth_studio_1.png)](/learn/assets/azure_oauth_studio_1.png)
 
 3. Set Login Mode 
-    Auto - Auto Login right after initialization 
-    Manual - On Click of Prefab Login Button
+
+    - Auto - Auto Login right after initialization 
+    - Manual - On Click of Prefab Login Button
+
 4. Set Server properties
-    Scope - openid
-    AppID - Application ID from azure registered application
-    Secret - Client secret to the respective application
-    AuthReqURL - Authentication Request URL 
-    TokenReqURL - Token Request URL
+
+    - Scope - openid
+    - AppID - Application ID from azure registered application
+    - Secret - Client secret to the respective application
+    - AuthReqURL - Authentication Request URL 
+    - TokenReqURL - Token Request URL
+
+
+[![](/learn/assets/azure_oauth_studio_2.png)](/learn/assets/azure_oauth_studio_2.png)
+
+
 
 5. Azure OAuth prefab -> Events -> Onaccesstokenfetch 
+
     It is a callback action on successful fetch of accesstoken, Invoke login variable, with j_username as ‘ADAUTH’ and j_password as accesstoken (outbound param).
 
         Page.AzureOAuth2Accesstokenfetch = function($event, $data) {
             App.Actions.loginAction.dataBinding.j_username = "ADAUTH";
             App.Actions.loginAction.dataBinding.j_password = $data.accesstoken;
             App.Actions.loginAction.invoke();
-    };
+        };
+
 ### Server Side Configuration
 1. Create a java service MyAuthenticationManager by implementing WMCustomAuthenticationManager interface.
 
-    import javax.servlet.http.HttpServletRequest;
-    import org.slf4j.Logger;
-    import org.slf4j.LoggerFactory;
-    import org.springframework.beans.factory.annotation.Autowired;
-    import com.wavemaker.runtime.security.SecurityService;
-    import com.wavemaker.runtime.service.annotations.ExposeToClient;
-    import com.wavemaker.runtime.service.annotations.HideFromClient;
-    import java.io.IOException;
-    import java.net.HttpURLConnection;
-    import java.net.URL;
-    import java.util.Arrays;
-    import java.util.HashMap;
-    import java.util.List;
-    import java.util.Map;
-    import java.util.Set;
-    import java.util.HashSet;
-    import com.wavemaker.runtime.security.AuthRequestContext;
-    import com.wavemaker.runtime.security.WMCustomAuthenticationManager;
-    import com.wavemaker.runtime.security.WMUser;
-    import org.json.JSONArray;
-    import org.json.JSONObject;
-    import org.json.JSONException;
-    import java.io.InputStreamReader;
-    import java.io.BufferedReader;
+        import javax.servlet.http.HttpServletRequest;
+        import org.slf4j.Logger;
+        import org.slf4j.LoggerFactory;
+        import org.springframework.beans.factory.annotation.Autowired;
+        import com.wavemaker.runtime.security.SecurityService;
+        import com.wavemaker.runtime.service.annotations.ExposeToClient;
+        import com.wavemaker.runtime.service.annotations.HideFromClient;
+        import java.io.IOException;
+        import java.net.HttpURLConnection;
+        import java.net.URL;
+        import java.util.Arrays;
+        import java.util.HashMap;
+        import java.util.List;
+        import java.util.Map;
+        import java.util.Set;
+        import java.util.HashSet;
+        import com.wavemaker.runtime.security.AuthRequestContext;
+        import com.wavemaker.runtime.security.WMCustomAuthenticationManager;
+        import com.wavemaker.runtime.security.WMUser;
+        import org.json.JSONArray;
+        import org.json.JSONObject;
+        import org.json.JSONException;
+        import java.io.InputStreamReader;
+        import java.io.BufferedReader;
     
     Override authenticate method as below
 
@@ -248,3 +258,8 @@ Disclaimer: The screenshots from the Azure website were current at the time of w
 
 4. Once consent is accepted, the user will be logged in and redirected to the application.
 
+
+## See Also
+
+[How custom authentication works](/learn/app-development/app-security/authentication#custom/)  
+[Wavemaker OAuth Prefabs](/learn/learn/app-development/widgets/prefab/oauth-prefabs)  
