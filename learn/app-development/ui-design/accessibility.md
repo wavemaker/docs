@@ -22,10 +22,10 @@ Name Role & Value, Info, Relationships, Meaning Sequence, Sensory Characteristic
 
 ### Steps to Follow
 
-**Labels**
+#### Labels
 
-* On every drag and drop of a widget, check for the Accessibility section. 
-* Copy or Bind the captions of the label widgets to the **Hint** property from the properties tab below the Accessibility section. 
+- On every drag and drop of a widget, check for the Accessibility section. 
+- Copy or Bind the captions of the label widgets to the **Hint** property from the properties tab below the Accessibility section. 
 
 ![Accessibility Section](/learn/assets/accessibility-section.png)
 
@@ -33,13 +33,13 @@ Name Role & Value, Info, Relationships, Meaning Sequence, Sensory Characteristic
 All labels and texts will have a default hint value specified as "Label text", which you can edit. 
 :::
 
-* Manipulating the *Hint* will result in a "tooltip text" on-hover and "**aria-label**" attribute visible in the browser preview URL that only AT screen readers can understand.
-* The "**aria-label**" attribute will be added to all widgets wherever text is bound from the **Hint** property.
+- Manipulating the *Hint* will result in a "tooltip text" on-hover and "**aria-label**" attribute visible in the browser preview URL that only AT screen readers can understand.
+- The "**aria-label**" attribute will be added to all widgets wherever text is bound from the **Hint** property.
 
-**Images**
+#### Images
 
-* Add proper description for the images used on a page under the **Hint** parameter. 
-* Modifying *hint* property with meaningful caption will add **aria-label** to make it accessible.
+- Add proper description for the images used on a page under the **Hint** parameter. 
+- Modifying *hint* property with meaningful caption will add **aria-label** to make it accessible.
 
 
 Other widgets are taken care of to make them accessible easier and faster with "aria-labels" like, **Page layouts**, **Dialogs**, **Form Fields**, **Anchors**, and **Live Forms**, etc.
@@ -61,7 +61,6 @@ Classname with .h1 will set the *aria-level="1"*, and .h2 will set *aria-level="
 To navigate well within a form, use the **Tab Index** property from the *Properties* tab.
 
 ![Tab Index property](/learn/assets/tab-index-property.png)
-
 
 :::warning 
 For form inputs in a live form, the *hint* text will not only add an **aria-label** attribute but also a *Help Text* below the input field. 
