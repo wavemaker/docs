@@ -8,7 +8,7 @@ sidebar_label: "Accessibility"
 Accessibility is essential for individuals and organizations that want to create high-quality websites and applications. It enables people with disabilities to use different Assistive Technologies (AT) and Adaptive Strategies for the business benefits of Web Accessibility. WaveMaker also focuses on enabling their product with international standards for Web Accessibility from World Wide Web Consortium (W3C), including Web Content Accessibility Guidelines (WCAG) and Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) as the first step in applying them. 
 
 :::note
-For more information, see our announcement blog on [Accessibility in WaveMaker](/learn/blog/2021-08023-accessibility-in-wavemaker).
+For more information, see our announcement blog on [Accessibility in WaveMaker](/learn/blog/2021-08-23-accessibility-feature).
 :::
 
 ## How it Works
