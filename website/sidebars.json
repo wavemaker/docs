@@ -749,7 +749,8 @@
             "how-tos/one-many-relationship",
             "how-tos/working-with-temporals",
             "how-tos/configuring-aws-redshiftdb",
-            "how-tos/configuring-sap-hana-clouddb"
+            "how-tos/configuring-sap-hana-clouddb",
+            "how-tos/validations-using-crudListeners"
           ],
 
           "Web services":
