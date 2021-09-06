@@ -16,7 +16,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
-|**[WaveMaker v10.9.0](/learn/wavemaker-release-notes/v10-9-0)**|**New features + Bug fixes** | **06 September 2021** | - | - |
+|**[WaveMaker v10.9.0](/learn/wavemaker-release-notes/v10-9-0)**|**New features + Bug fixes** | **13 September 2021** | - | - |
 |[WaveMaker v10.8.2](/learn/wavemaker-release-notes/v10-8-2)|Bug fixes | 16 August 2021 | -|-|
 |WaveMaker v10.8.1| Bug fix: GoogleMaps Prefab update failure | 11 August 2021 |-|-|
 |**[WaveMaker v10.8.0](/learn/wavemaker-release-notes/v10-8-0)**|**New features + Bug fixes** | **11 August 2021** | **v10.8.0** | **16 August 2021** |
