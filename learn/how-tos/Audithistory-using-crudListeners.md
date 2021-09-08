@@ -81,8 +81,9 @@ public void PostEntityDelete(EntityPostDeleteEvent<Employee> entityPostDeleteEve
      
  ```
 
-- Go to the pages and in any page, drag and drop a data table widget and bind it to the EMPLOYEE CRUD variable and preview the application. In preview, perform some CRUD operations using this data table.
+- Go to the pages and in any page, drag and drop a data table widget and bind it to the EMPLOYEE CRUD variable. 
 
-- Now, you can observe that the transactional details are inserted into the "EMPLOYEE_DETAILS_LOG" table.
+- Also, drag and drop one more data table widget and bind it to the EMPLOYEE_DETAILS_LOG CRUD variable and invoke this variable in onsuccess event of the above created EMPLOYEE CRUD variable.
 
-![/learn/assets/Audithistory-using-crudListeners/EMPLOYEE_DETAILS_LOG.png](/learn/assets/Audithistory-using-crudListeners/EMPLOYEE_DETAILS_LOG.png)
+- In preview, perform some CRUD operations in the Employee table. You can observe that the transactional details are inserted into the EMPLOYEE_DETAILS_LOG table.
+
