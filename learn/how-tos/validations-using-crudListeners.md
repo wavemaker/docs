@@ -5,14 +5,22 @@ id: ""
 ---
 ## Introduction
 
-In this document we will learn how we can use [DB CRUD listeners](/learn/app-development/services/database-crud-event-listeners) to perform dynamic validations. The WaveMaker runtime framework publishes pre & post events for each CRUD operation (create, read, update and delete) performed on the table. Here, in our example, we will use the pre-create event to check if the username already exists in the table or not. We will also use hrdb USER table for this purpose. 
+In this document, learn how we can use [DB CRUD listeners](/learn/app-development/services/database-crud-event-listeners) to perform dynamic validations. The WaveMaker runtime framework publishes pre and post-events for each CRUD operation (Create, Read, Update and Delete) performed on the table. Here, in the following example, we use the pre-create event to check if the username already exists in the table. For this, we use the HRDB USER table to demonstrate. 
 
 ![/learn/assets/validations-crudlisteners/userSchema.png](/learn/assets/validations-crudlisteners/userSchema.png)
 
-## Steps
+:::note
+Configure an HRDB database in the project from WaveMaker sample databases.
+:::
 
-- Configure HRDB database in the project
-- Create a javaservice in the project and add the preCreate event listener for the User entity as shown below. The 'beforeUserCreate' method added will be invoked everytime before the new User is created in the table. We can get the user object inside the listener by using the expression  `entityPreCreateEvent.getEntity()` . In the next lines, we are then using `UserService` to check if the username is already present in the table or not. If it is present we are throwing an error message "Username Not Available".
+## Create a Java Service
+
+Create a Java Service in the project and add the `preCreate` event listener for the user entity, as shown below. 
+
+- The `beforeUserCreate` method gets invoked before a new user is created. 
+- We can get the user object inside the listener by using the expression  `entityPreCreateEvent.getEntity()`. 
+- In the next lines of code, we are then using `UserService` to check if the username is present in the table or not. If the user is already present, we throw an error message saying `"Username Not Available"`.
+
  ```java
 package com.sample.myjavaservice;
 
@@ -46,6 +54,11 @@ public class MyJavaService {
     
     }
  ```
-- Drag and drop a datatable widget and bind it to the User CRUD variable. We will now try to insert a new record with the already existing username 'admin', and after submitting the record we can see that the error 'Username not available' is thrown back. 
+## Create a Data Table
+
+1. Drag and drop a Data Table widget.
+2. Bind the Data Table to the User CRUD variable. 
+3. Insert a new record with an existing username For example, `admin`, and submit. 
+    - Once submitting the record, see that an error is shown "`Username not available`", see the image below. 
  
  ![/learn/assets/validations-crudlisteners/errorMsg.png](/learn/assets/validations-crudlisteners/errorMsg.png)
