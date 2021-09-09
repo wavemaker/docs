@@ -16,6 +16,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
+|**[WaveMaker v10.9.0](/learn/wavemaker-release-notes/v10-9-0)**|**New features + Bug fixes** | **13 September 2021** | - | - |
 |[WaveMaker v10.8.2](/learn/wavemaker-release-notes/v10-8-2)|Bug fixes | 16 August 2021 | -|-|
 |WaveMaker v10.8.1| Bug fix: GoogleMaps Prefab update failure | 11 August 2021 |-|-|
 |**[WaveMaker v10.8.0](/learn/wavemaker-release-notes/v10-8-0)**|**New features + Bug fixes** | **11 August 2021** | **v10.8.0** | **16 August 2021** |
@@ -69,7 +70,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 ## Technology Stack
 
-Last updated: [Release: v10.8.0](/learn/wavemaker-release-notes/v10-8-0)
+Last updated: [Release: v10.9.0](/learn/wavemaker-release-notes/v10-9-0)
 
 ---
 
@@ -94,17 +95,17 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework  <td bgcolor="#44aaf4"> 5.3.5->5.3.9|
-| Security framework | Spring Security  <td bgcolor="#44aaf4"> 5.4.5->5.5.1|
-| Java JSON utilities | Gson  <td bgcolor="#44aaf4"> 2.8.6->2.8.7|
-| DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 5.4.22.Final->5.5.5.Final|
+|  | Spring Framework  | 5.3.5->5.3.9|
+| Security framework | Spring Security  <td bgcolor="#44aaf4"> 5.5.1->5.5.2|
+| Java JSON utilities | Gson  <td bgcolor="#44aaf4"> 2.8.7 -> 2.8.8|
+| DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 5.5.5.Final -> 5.5.7.Final|
 | Sample database | HSQL | 2.5.1|
-| JSON library | Jackson  <td bgcolor="#44aaf4"> 2.11.3->2.12.4|
-| Logging framework | SLF4j  <td bgcolor="#44aaf4"> 1.7.30->1.7.32 |
-| Logging Implementation | Log4j2  <td bgcolor="#44aaf4"> 2.13.3->2.14.1 |
+| JSON library | Jackson  <td bgcolor="#44aaf4"> 2.12.4 -> 2.12.5|
+| Logging framework | SLF4j  |1.7.32 |
+| Logging Implementation | Log4j2  |2.14.1 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
 | Servlet Framework |  | 3.1.0 |
-|Database Connection Pooling | HikariCP <td bgcolor="#44aaf4"> 3.4.5 -> 4.0.3 |
+|Database Connection Pooling | HikariCP | 4.0.3 |
 
 ### Runtime Environment
 
