@@ -7,8 +7,7 @@ id: ""
 ## Introduction
 
 In this document, we will learn how we can use [DB CRUD listeners](/learn/app-development/services/database-crud-event-listeners) to record the history(data change related details) of a specific entity/table in the logger table.
-Here, in our example, we use three EventListeners such as [EntityPostCreateEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostCreateEvent.java), [EntityPostUpdateEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostUpdateEvent.java) and [EntityPostDeleteEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostDeleteEvent.java) with [@TransactionalEventListener](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/transaction/event/TransactionalEventListener.html) annotation.
-
+Here, in our example, we use three EventListeners such as [EntityPostCreateEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostCreateEvent.java), [EntityPostUpdateEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostUpdateEvent.java) and [EntityPostDeleteEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostDeleteEvent.java).
 ## Steps
 
 - Download the [EmployeeDB](/learn/assets/Audithistory-using-crudListeners/EmployeeDB_dump.sql) SQL file here and import this file in [DBTools](/learn/app-development/services/database-tools#db-scripts).
@@ -30,15 +29,13 @@ import com.<project_name>.employeedb.service.EmployeeDetailsLogService;
 import java.time.*;
 import com.<project_name>.employeedb.Employee;
 import com.wavemaker.runtime.data.exception.EntityNotFoundException;
-import org.springframework.transaction.event.TransactionalEventListener; 
-import org.springframework.transaction.event.TransactionPhase;
 ```
 
 - Add below three methods into your java service. In this method, we get the logged-in user details from the security service and employee details from the event and insert them into the EMPLOYEE_DETAILS_LOG table.
 
 ```java
 
-@TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
+@EventListener
 public void PostEntityCreate(EntityPostCreateEvent<Employee> entityPostCreateEvent) {
     String userName = securityService.getLoggedInUser().getUserName();
     LocalDateTime localDateTime = LocalDateTime.now();
@@ -52,7 +49,7 @@ public void PostEntityCreate(EntityPostCreateEvent<Employee> entityPostCreateEve
 }
 
 
-@TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
+@EventListener
 public void PostEntityUpdate(EntityPostUpdateEvent<Employee> entityPostUpdateEvent) {
     String userName = securityService.getLoggedInUser().getUserName();
     LocalDateTime localDateTime = LocalDateTime.now();
@@ -65,7 +62,7 @@ public void PostEntityUpdate(EntityPostUpdateEvent<Employee> entityPostUpdateEve
     employeeDetailsLogService.create(employeeDetailsLog);
 }
 
-@TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
+@EventListener
 public void PostEntityDelete(EntityPostDeleteEvent<Employee> entityPostDeleteEvent) {
     String userName = securityService.getLoggedInUser().getUserName();
     LocalDateTime localDateTime = LocalDateTime.now();
