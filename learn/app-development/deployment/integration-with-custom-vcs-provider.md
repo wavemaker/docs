@@ -1,16 +1,17 @@
 ---
 title: "Integration with Custom VCS provider"
 id: ""
+sidebar_label: "Custom VCS Integration"
 ---
 ---
 
 :::note
-Integration with custom VSC provider is only available for [WaveMaker Online Teams](/learn/teams/overview) (WMOT) and WaveMaker Enterprise (WME) users, it is not available for WaveMaker Online (WMO) single users.
+Integration with custom VCS provider is only available for [WaveMaker Online Teams](/learn/teams/overview) (WMOT) and WaveMaker Enterprise (WME) users. It is not available for WaveMaker Online (WMO) single users.
 :::
 
-## Custom VSC integration in WMO Teams
+## Custom VCS integration in WMO Teams
 
-In WMO, the custom VCS integration is available for [WMOT plan](/pricing/). During the time of app development in collaborative-development, tracking code changes, and synchronizing the changes are essential. WaveMaker provides Version Control Services for this purpose. By default, WaveMaker Studio comes with a version control system that is based on Gitlab. In WMOT, you can integrate your Own VCS as Code Repository. For adding custom VCS at code repository section, select **Add Code Repository**.
+In WMO, the custom VCS integration is available for [WMOT plan](/pricing/). During the time of app development in collaborative-development, tracking code changes and synchronizing the changes are essential. WaveMaker provides Version Control Services for this purpose. By default, WaveMaker Studio comes with a version control system that is based on Gitlab. In WMOT, you can integrate your Own VCS as Code Repository. For adding custom VCS in the code repository section, select **Add Code Repository**.
 
 ## Supported Providers
 
@@ -20,7 +21,7 @@ In WMO, the custom VCS integration is available for [WMOT plan](/pricing/). Duri
 
 [![wmo vcs](/learn/assets/wmo-teams-vcs.png)](/learn/assets/wmo-teams-vcs.png).
 
-After selecting **Add Code Repository**, select the repository type, and provide the required details for adding the repository. As default providers, WaveMaker supports Gitlab, Bitbucket, and Github for external VCS configuration.
+After selecting **Add Code Repository**, select the repository type and provide the required details for adding the repository. As default providers, WaveMaker supports Gitlab, Bitbucket, and Github for external VCS configuration.
 
 [![wmo vcs configurations](/learn/assets/wmo-team-vcs-config.png)](/learn/assets/wmo-team-vcs-config.png).
 

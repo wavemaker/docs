@@ -5,7 +5,7 @@ author: Swetha Kundaram
 
 WaveMaker currently generates code based on Angular 9 for applications. With the announcement on ending support of Angular 9, we are upgrading to the next Angular version, 10.2.5. 
 
-Consequently, we have developed a roadmap to update the platform with the **Release 10.9** scheduled for the 6th of September 2021, which includes the Angular 10 update. If you are a WaveMaker application developer who uses your own infrastructure to build and deploy the application, you need to read further.
+Consequently, we have developed a roadmap to update the platform with the **Release 10.9** scheduled for the 13th of September 2021, which includes the Angular 10 update. If you are a WaveMaker application developer who uses your own infrastructure to build and deploy the application, you need to read further.
 
 This update requires you to take action, i.e., updating the Node and NPM versions. To avoid breaking changes, we have recommended the following steps described in this blog post. 
 
