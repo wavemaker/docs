@@ -751,7 +751,7 @@
             "how-tos/working-with-temporals",
             "how-tos/configuring-aws-redshiftdb",
             "how-tos/configuring-sap-hana-clouddb",
-            "how-tos/audithistory-using-crudlisteners",
+            "how-tos/audit-history-using-crud-listeners",
             "how-tos/validations-using-crudListeners"
           ],
 
