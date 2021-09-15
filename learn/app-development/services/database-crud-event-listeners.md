@@ -86,13 +86,22 @@ Published before deleting an entity from the database. This event will get the h
 
 Published after deleting the entity from the database. This event will get the handle of the entity that is deleted.
 
-<!-- ### [EntityPreFetchEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPreFetchEvent.java) -->
+### [EntityPreFetchListEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPreFetchListEvent.java)
 
-<!-- Published before fetching the records from the database. This event will get the handle of the query string used for filtering the entities. -->
+Published before fetching the list of records from the database. This event will get the handle of the query string used for filtering the entities.
 
-<!-- ### [EntityPostFetchEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostFetchEvent.java) -->
+### [EntityPostFetchListEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostFetchListEvent.java)
 
-<!-- Published after retrieving the records from the database. This event will get the handle of the pageable response. -->
+Published after retrieving the list of records from the database. This event will get the handle of the pageable response.
+
+### [EntityPreFetchEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPreFetchEvent.java)
+
+Published before fetching a record from the database. This event will get the handle of the entity ID.
+
+### [EntityPostFetchEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostFetchEvent.java)
+
+Published after fetching a record from the database. This event will get the handle of the entity object.
+
 
 ## Imports
 
