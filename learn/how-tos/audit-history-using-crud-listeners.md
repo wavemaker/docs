@@ -13,10 +13,10 @@ In the following example, we use three Event Listeners, including:
 2. [EntityPostUpdateEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostUpdateEvent.java)
 3. [EntityPostDeleteEvent](https://github.com/wavemaker/wavemaker-app-runtime-services/blob/master/wavemaker-app-runtime-core/src/main/java/com/wavemaker/runtime/data/event/EntityPostDeleteEvent.java)
 
-## Download and Import Database Files
+## Download and Import Database File
 
 1. Download the [EmployeeDB](/learn/assets/Audithistory-using-crudListeners/EmployeeDB_dump.sql) SQL file. 
-2. Import this file in [DB Tools](/learn/app-development/services/database-tools#db-scripts).
+2. Import the file in [DB Tools](/learn/app-development/services/database-tools#db-scripts).
 3. Connect to the Database from your application. 
 
 ## Create a Java Service to Insert Transactional Details
@@ -42,11 +42,11 @@ import com.wavemaker.runtime.data.exception.EntityNotFoundException;
 
 ### Add Methods to the Java Service
 
-Add the following three methods into the Java service. 
+Add the following three methods into the Java service that perform the below operations:
 
-1. In this method, get the logged-in user details from the security service,
+1. Get the logged-in user details from the security service,
 2. Get employee details from the event, and
-3. Insert employee details into the `EMPLOYEE_DETAILS_LOG` table, respectively.
+3. Insert employee details into the `EMPLOYEE_DETAILS_LOG` table.
 
 ```java
 @EventListener
@@ -91,13 +91,15 @@ public void PostEntityDelete(EntityPostDeleteEvent<Employee> entityPostDeleteEve
 }     
 ```
 
-## Binding the Variable to a Data Table Widget
+## Configure the Variable to Data Table
 
 1. Go to a page, and drag-and-drop a Data Table widget.
-2. Create and bind the Data Table to the `EMPLOYEE` CRUD variable when configuring the widget. 
+2. Create an `EMPLOYEE` CRUD variable and bind it to the Data Table at the time of configuring the widget. 
 3. Drag and drop another Data Table widget.
-4. Create and bind the Data Table to the `EMPLOYEE_DETAILS_LOG` CRUD variable when configuring the widget.
+4. Create an `EMPLOYEE_DETAILS_LOG` CRUD variable and bind it to the Data Table when configuring it.
 5. Invoke the `EMPLOYEE_DETAILS_LOG` CRUD variable using the `onSuccess` event of the `EMPLOYEE` CRUD variable created in step-2.
+
+![on success event](/learn/assets/crud-on-success-event.png)
 
 ## Preview the Application
 
