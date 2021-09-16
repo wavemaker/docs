@@ -30,3 +30,6 @@ website/cypress/videos
 website/cypress/report
 website/cypress/screenshots
 website/cypress/fixtures/changedFiles.json
+
+.vscode
+package-lock.json
