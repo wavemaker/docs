@@ -14,7 +14,7 @@ For creating a Docker container, you create a Docker image by building a Dockerf
 |---|---|
 |Java |1.8|
 |Node|12.22|
-|Maven| 3.6|
+|Maven| 3.8|
 |npm|6.14|
 |Ant|1.10|
 
@@ -33,7 +33,7 @@ vi Dockerfile
 You can use the following Dockerfile for building Docker image and create Docker containers by using multi-stage Dockerfile. You can decrease the size of the Docker image and can create light-weight containers as well.
 
 ```Dockerfile
-FROM maven:3.6.3-jdk-8 as maven-java-node
+FROM maven:3.8.1-jdk-8 as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 RUN mkdir -p /usr/local/content/node
 WORKDIR /usr/local/content/node
@@ -115,7 +115,7 @@ vi Dockerfile.build
 You can use the following Dockerfile for building Docker image and create Docker containers for creating project war file.
 
 ```Dockerfile
-FROM maven:3.6.3-jdk-8 as maven-java-node
+FROM maven:3.8.1-jdk-8 as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 # installing node 12.22 and npm 6.14 in docker container
 RUN mkdir -p /usr/local/content/node
@@ -183,3 +183,10 @@ ifconfig
 ```
 
 - Above command will provide the network interfaces and their respective IP Address in Instance, please use the respective IP Address to access the Application in the web,You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.
+
+## Build War File Using wm-app-builder Docker Image
+
+The wm-app-builder Docker image is packed with required software packages and libraries to deploy WaveMaker Application in Docker containers.
+
+- using the wm-app-builder Docker image users can generate war file for WaveMaker Applications.
+- Find WaveMaker wm-app-builder Docker image at [wm-app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/wm-app-builder) .
