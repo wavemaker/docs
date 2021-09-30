@@ -4,7 +4,7 @@ id: ""
 ---
 ---
 
-WaveMaker supports micro-service enabled architecture. This allows you to build and deploy applications using container-based technology. Docker is a platform as a service that uses virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files.
+WaveMaker supports micro-service-enabled architecture. This allows you to build and deploy applications using container-based technology. Docker is a platform as a service that uses virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files.
 
 For creating a Docker container, you create a Docker image by building a Dockerfile. For this, you require node and npm as prerequisites for building an application with maven and java.
 
@@ -20,7 +20,7 @@ For creating a Docker container, you create a Docker image by building a Dockerf
 
 ## Build Docker Image
 
-Export the project to your local or you can directly clone from a repository. You should keep the Dockerfile in the root directory of the project.
+Export the project to your local, or you can directly clone from a repository. You should keep the Dockerfile in the root directory of the project.
 
 ### Creating a Dockerfile
 
@@ -30,7 +30,7 @@ To create a Dockerfile, use the following command.
 vi Dockerfile
 ```
 
-You can use the following Dockerfile for building Docker image and create Docker containers by using multi-stage Dockerfile. You can decrease the size of the Docker image and can create light-weight containers as well.
+You can use the following Dockerfile for building Docker images and create Docker containers by using multi-stage Dockerfile. You can decrease the size of the Docker image and can create lightweight containers as well.
 
 ```Dockerfile
 FROM maven:3.8.1-jdk-8 as maven-java-node
@@ -60,7 +60,7 @@ Save the above Docker file.
 
 ### Create Docker Image
 
-Build a Docker image by using the below Docker command with different build profiles. You can choose to build with the following build profiles including `development` and `deployment`.
+Build a Docker image by using the below Docker command with different build profiles. You can choose to build with the following build profiles, including `development` and `deployment`.
 
 ```Docker
 docker image build --build-arg build_profile_name=<deployment-profile> -t <imagename:version> <project_location>
@@ -92,17 +92,17 @@ example: docker container run --name wmapp -d -p 80:8080 wmimage:1.0
 
 ### Access Application
 
-If Docker Running on Host network, use Host IP address for acess Application on the web.Get an Instance IP Address using the following command to access the application on the web. Please run the below command in the web application hosting Instance.
+If Docker is running on the Host network, use the Host IP address to access the application on the web. Get an Instance IP Address using the following command to access the application on the web. Please run the below command in the web application hosting Instance.
 
 ```bash
 ifconfig
 ```
 
-- Above command will provide the network interfaces and their respective IP Address in Instance, please use the respective IP Address to access the Application in the web,You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.
+- Above command will provide the network interfaces and their respective IP Address in Instance. Please use the respective IP Address to access the application on the web. You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.
 
 ## Build War File Using Docker
 
-- Export the project to your local or you can directly clone from a repository. You should keep the Dockerfile in the root directory of the project and we will mount the application directory location to `/usr/local/content/app` during container creation for generating application war.
+- Export the project to your local, or you can directly clone from a repository. You should keep the Dockerfile in the project's root directory and mount the application directory location to `/usr/local/content/app` during container creation for generating application war.
 
 ### Create Docker File
 
@@ -112,7 +112,7 @@ To create a wm app builder Dockerfile, use the following command.
 vi Dockerfile.build
 ```
 
-You can use the following Dockerfile for building Docker image and create Docker containers for creating project war file.
+You can use the following Dockerfile to build Docker images and create Docker containers for creating project war files.
 
 ```Dockerfile
 FROM maven:3.8.1-jdk-8 as maven-java-node
@@ -151,7 +151,7 @@ example: docker image build -t wavemaker/wm-app-builder:1.0 -f Dockerfile.build 
 
 ### Build Project war
 
-Create a Docker container for generate a war , please use the below command.
+Create a Docker container to generate a war. Please use the below command.
 
 ```bash
 docker container run --rm -it --name <container-name> -v $HOME/.m2:$HOME/.m2 -v $HOME/.npm:$HOME/.npm -v <project-location>:/usr/local/content/app -e profile=<deployment-profile> -e MAVEN_CONFIG=$HOME/.m2 <image-name>
@@ -163,8 +163,8 @@ example: docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $H
 
 ### Run Container
 
-- After Completing the build it will create a project war file in `<project-location>/dist` folder, user can use the war file to deploy in Host tomcat or in Tomcat Docker container.
-- For deploying project war using Tomcat Docker container , please use the below command.
+- After Completing the build, it will create a project war file in the `<project-location>/dist` folder. Users can use the war file to deploy in the Host tomcat or Tomcat Docker container.
+- For deploying project war using Tomcat Docker container, please use the below command.
 
 ```bash
 docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 tomcat:8.5
@@ -176,17 +176,17 @@ example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/
 
 ### Access Application
 
-If Docker Running on Host network, use Host IP address for acess Application on the web.Get an Instance IP Address using the following command to access the application on the web. Please run the below command in the web application hosting Instance.
+If Docker is running on the Host network, use the Host IP address to access the application on the web. Get an Instance IP Address using the following command to access the application on the web. Please run the below command in the web application hosting Instance.
 
 ```bash
 ifconfig
 ```
 
-- Above command will provide the network interfaces and their respective IP Address in Instance, please use the respective IP Address to access the Application in the web,You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.
+- Above command will provide the network interfaces and their respective IP Address in Instance. Please use the respective IP Address to access the application on the web. You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.
 
 ## Build War File Using wm-app-builder Docker Image
 
 The wm-app-builder Docker image is packed with required software packages and libraries to deploy WaveMaker Application in Docker containers.
 
-- using the wm-app-builder Docker image users can generate war file for WaveMaker Applications.
-- Find WaveMaker wm-app-builder Docker image at [wm-app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/wm-app-builder) .
+- Using the wm-app-builder Docker image, users can generate war files for WaveMaker applications.
+- Find WaveMaker wm-app-builder Docker image at [wm-app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/wm-app-builder).
