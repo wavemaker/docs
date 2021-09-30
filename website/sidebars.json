@@ -811,8 +811,7 @@
             "how-tos/generate-pdf-file-using-jasper-reports",
             "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
             "how-tos/app-migration-wavemaker-9x-10x",
-            "how-tos/debug-monitor-performance-issues-using-fusion-reactor",
-			"how-tos/integrating-azure-oauth-prefab"
+            "how-tos/debug-monitor-performance-issues-using-fusion-reactor"
           ],
 
           "Deployment":
@@ -1002,7 +1001,8 @@
             "how-tos/create-prefab-using-d3-library-datamaps",
             "how-tos/create-prefab-using-jquery-plugin",
             "how-tos/create-prefab-using-angular-module",
-            "how-tos/create-prefab-using-custom-element"
+            "how-tos/create-prefab-using-custom-element",
+            "how-tos/integrating-azure-oauth-prefab"
           ]
         
   },
