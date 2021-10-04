@@ -686,7 +686,8 @@
             "how-tos/creating-registration-page",
             "how-tos/support-password-encryption",
             "how-tos/error-handling-wavemaker-app",
-            "how-tos/prevent-user-leaving-page-unsaved-changes"
+            "how-tos/prevent-user-leaving-page-unsaved-changes",
+            "how-tos/microfrontends-iframe"
           ],
 
           "UI design":
