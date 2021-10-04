@@ -4,9 +4,11 @@ id: ""
 ---
 ---
 
+## Introduction
+
 In this document we will learn how we can use iframes to load different micro apps inside a single host application. The approach is shown without using any microfrontend framework. 
 
-One of the simplest approaches of loading multiple applications inside the browser is by using iframes. By their nature, iframes makes it easy to build a page out of independent sub-pages. They offer a good degree of isolation in terms of styles, scripts etc., not interfering with each other.
+One of the simplest ways of loading multiple applications inside the browser is by using iframes. By their nature, iframes makes it easy to build a page out of independent sub-pages. They offer a good degree of isolation in terms of styles, scripts etc., not interfering with each other.
 
 
 In this example we will create three apps:
@@ -15,20 +17,20 @@ In this example we will create three apps:
 - **department app** (micro app 2)
 
 
-### HR App
+## HR App
 
-In this app import hrdb and create two pages employee & department. On each page place an iframe with the src set to "/employee" and "/department" respectively. Please make sure that the paths are relative. Also add navigation to these pages in the left-nav bar. Configure DB security with JDBC (or) Redis session persistence. 
+In this app import hrdb and create two pages employee & department. On each page place an iframe with the src property set to the value "/employee" and "/department" respectively. Also make sure that the paths specified are relative. Also add navigation to these pages in the left-nav bar. Configure DB security with JDBC (or) Redis session persistence. 
 
 ![/learn/assets/microfrontends-iframes/hr-app.png](/learn/assets/microfrontends-iframes/hr-app.png)
 
-### Employee APP
+### Employee App
 
 The app will have widgets representing the employees details and operations. On the Main page, modify the default layout to blank, and drag & drop widgets that represents the data from the employee table (hrdb). This app should also be configured with DB Security and with JDBC or Redis session persistence.
 
 ![/learn/assets/microfrontends-iframes/employee-app.png](/learn/assets/microfrontends-iframes/employee-app.png)
 
 
-### Department APP
+### Department App
 
 The app will have widgets representing the department details. On the Main page, modify the default layout to blank, and drag & drop widgets that represents the data from the department table (hrdb). The app should also be configured with DB Security and also with JDBC or Redis session persistence.
 
@@ -36,7 +38,7 @@ The app will have widgets representing the department details. On the Main page,
 
 ## Approach
 
-All the apps (including host) are served from the same domain (say http://localhost) using a load balancer. They are however deployed on different contexts, and served over different paths. For example, the HR app is accessible at root (localhost/), and employee & department are accessible over "localhost/employee" and "localhost/department" respectively. As the domain is same for the apps, the cookie set by the outer app after login will be passed to all the apps. Therefore whenever user logins into the outer app he'll be automatically loggedIn into the employee & department apps. In the host app, we can have iframes with the relative src "/employee" and it'll load the employee app directly.  
+All the apps (including host) are served from the same domain (say http://localhost) using a load balancer. They are however deployed on different contexts, and served over different paths. For example, the HR app is accessible at root (http://localhost/), and employee & department apps are accessible over http://localhost/employee and http://localhost/department respectively. As the domain is same for the apps, the cookies set by the host app after login is passed automatically to all the micro apps. As the session persistence is also enabled, the user will be automatically loggedIn into the employee & department apps.  
 
 ## Steps
 
@@ -70,7 +72,7 @@ All the apps (including host) are served from the same domain (say http://localh
 
     }
     ```
-4. At runtime, access the localhost and navigate to the department page, we will see that the department app gets loaded as expected.  
+4. At runtime, access the localhost and navigate to the department page, we will see that the iframe loads the department as expected.  
 
  ![/learn/assets/microfrontends-iframes/hr-final-app.png](/learn/assets/microfrontends-iframes/hr-final-app.png)
 
