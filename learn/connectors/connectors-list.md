@@ -69,7 +69,7 @@ The Connector sources is hosted at: https://github.com/wavemaker/mongodb-connect
 
 ## Kafka Connector
 
-Apache Kafka (https://kafka.apache.org/) is an open-source, distributed publish-subscribe messaging system. Kafka is a fast, scalable, durable, fault-tolerant, and distributed messaging system by design. It was originally developed by Linked, later, it became a part of the Apache project.
+Apache Kafka (https://kafka.apache.org/) is an open-source, distributed publish-subscribe messaging system. Kafka is a fast, scalable, durable, fault-tolerant, and distributed messaging system by design. It was originally developed by LinkedIn, later, it became a part of the Apache project.
 
 This Connector works as both Publisher and Subscriber for the messages. Using this Connector, you can send messages to Kafka Queue and also register a callback listener to receive messages from a Kafka Queue as and when a new message is published.
 
