@@ -1,117 +1,123 @@
 ---
-title: "Enabling PWA in wavemaker Beta"
-id: "building-pwa"
-sidebar_label: "Enabling PWA in wavemaker"
+title: "Enabling PWA - Beta"
+id: "building-pwa-app"
+sidebar_label: "Enabling PWA"
 ---
 ---
 
-## Introduction
+## What is PWA (Progressive Web Application)
 
-### What is progressive Web application?
+PWA (Progressive Web Application) are web applications that provide a native mobile app experience. These applications combine great functionalities and enhanced user experience based on the browser’s capabilities, and works on any platform, including desktop and mobile devices. You can develop PWA using web technologies such as JavaScript, HTML, and CSS.
 
-PWA is a type of application software delivered through the web, which looks and feels like using native mobile applications. PWA are developed using web technologies such as JS, HTML, and CSS. These applications combine great user experience and functionality like innate mobile apps. PWA’s are intended to work on any platform including both desktop and mobile devices.
+### Advantages of Using PWA
 
-### Features & Benefits of using PWA
-PWA’s have many key features and benefit that a user requires, and these features make them more unique from traditional web and native apps:
+PWAs have many features and benefits that make them more unique compared to traditional web and native apps, including:
 
-- Full responsive and Browser compatibility.
-- Connectivity independence.
-- App-like Interface.
-- Push notifications.
-- Self-Updates.
-- Safety.
-- Discoverability and easy installation.
+- Fully responsive apps and compatible with browsers
+- Connectivity independence
+- App-like interface
+- Push notifications
+- Automatic updates
+- More secure
+- Discoverability and easy installation
 
 These features make PWA unique from native mobile applications and provide more robust features on any platform using any device.
 
 [![](/learn/assets/pwa/advantages.PNG)](/learn/assets/pwa/advantages.PNG)
 
+## PWA Features Supported by WaveMaker
 
-### PWA features supported by Wavemaker
+Currently, the follwoing features are implemented in WaveMaker; that includes:
 
-Currently implemented Features in Wavemaker are:
-
-- Add to home screen.
-- Offline capabilities.
-
-Allowing users to select native applications as per their requirement.
+- Add to the home screen
+- Offline capabilities
 
 ### Prerequisites
 
-To work with pwa features the user has to enable SSL and deploy the application over secure connection using the available providers.
+You must enable SSL and deploy the application using a secure connection to work with PWA features.
 
-### Steps to Enable PWA capabilities:
+## Steps to Enable PWA Capabilities
 
-- Create a project and add the PWA flag and set the value as “true” (app.pwa.enabled=true.)in the properties file.  
-- In case the flag is unavailable the feature is considered disabled by default.
+Create a project, add the PWA flag, and set the value as “true”. For example, `app.pwa.enabled=true` from the properties file. 
+
+- The default behavior of the PWA feature is disabled. Therefore, if the PWA flag is not set or not available, it is considered disabled.
 
 [![](/learn/assets/pwa/flagproperty.png)](/learn/assets/pwa/flagproperty.png)
 
-- Deploy the app and launch the deployed app on any browser as per requirement and usability(this can be opened in any browser using the deployed url).
-- Once the app loads an install icon shows up in the address-bar of the browser.
-
-App can be installed by clicking on the icon as highlighted below.
+- Deploy the app and launch the deployed app on any browser using the deployed URL.
+- Once the app loads, an install icon shows up in the address bar of the browser.
+- You can install the app by clicking on the icon highlighted below.
 
 [![](/learn/assets/pwa/install.png)](/learn/assets/pwa/install.png)
 
-Once the icon is clicked, a pop-up shows up which allows the user to  install the application or cancel the installation.
+- When you click the icon, a pop-up shows up, allowing you to install the application or cancel the installation.
 
 [![](/learn/assets/pwa/installDialog.png)](/learn/assets/pwa/installDialog.png)
 
-Upon installing the application, app opens up as a standalone application
+- After installing the application, the app opens up as a standalone application.
 
 [![](/learn/assets/pwa/launchedApp.png)](/learn/assets/pwa/launchedApp.png)
 
-**To enable pwa feature in old applications**, along with the above step(i.e. enabling pwa flag) user has to do the following
+### Enable PWA in Old Applications
 
-- ***Projects without Authentication enabled:*** Manifest pattern has to add by the user in project-security.xml. i.e., Add the following lines in project-security.xml file
+To enable the PWA feature in old applications, along with the above step i.e., enabling PWA flag, do the following.
 
-```Java 
+- ***Projects without Authentication enabled:*** Add Manifest pattern in `project-security.xml`, i.e., add the following lines in the `project-security.xml` file.
+
+```java 
 <security:http pattern="/manifest.json" security="none"/>
 <security:http pattern="/ngsw.json" security="none"/>
 ```
 
-- ***Projects with Authentication enabled:*** Just resave the security config from studio which would regenerate the project-security.xml with the manifest pattern
+- ***Projects with Authentication enabled:*** Resave the security config from the Studio, which would regenerate the `project-security.xml` with the manifest pattern.
 
-## Steps to set App icon:
+## Steps to Set App Icon
 
-We can set the app icon as a user provided icon for pwa in wavemaker. Please find below instructions to add the required app icon
+You can set the app icon as a user-provided icon for PWA in WaveMaker. Please find the steps below to add the app icon.
 
-1. Create a folder named “pwa-icons” in the root directory of a project.
-2. Whatever the icon you wish to set for the app should place in the above folder with the following sizes 512x512, 384x384, 192x192, 152x152, 144x144, 128x128, 96x96, 72x72
-3. Image file naming should be icon-<size>.png. For ex: icon-384x384.png
+1. Create a folder named “PWA-icons” in the root directory of a project.
+2. Place the icon in the “PWA-icons” folder with either of the sizes:
+    - 512x512 
+    - 384x384
+    - 192x192
+    - 152x152
+    - 144x144
+    - 128x128
+    - 96x96
+    - 72x72
+3. Image file naming should be an icon-<size>.png. For example, icon-384x384.png
 
 [![](/learn/assets/pwa/pwaIconsFolder.png)](/learn/assets/pwa/pwaIconsFolder.png)
 
-Above changes can be reflected on re-deploying the app.
+4. Re-deploying the app can reflect the above changes.
 
-:::Please note:
+:::note
+- In case of any missing icon(s), the nearest resolution will be used from the “pwa-icons” directory. 
 
-- Incase of any missing icon(s), the nearest resolution will be used from the "pwa-icons " directory. 
 **Example:** 
-In the above image we have uploaded two different size images. But chrome browser uses 128x128 which is missing. So while pwa generation it will use 384x384 size as app icon.
-- If no icon present in the "pwa-icons" directory, wm default icons will be used
-- As of now only PNG format images are supported.
 
-## Steps to install PWA in mobile devices
+In the above image, we have uploaded two different image sizes. But the chrome browser uses 128x128, which is missing, while PWA generation will use 384x384 size as the app icon.
+- If no icon is present in the “pwa-icons” directory, WaveMaker default icons will be used.
+- As of now, only PNG format images are supported.
+:::
 
-Above features can be applicable in mobile as well(android & iPhone). To install the app in mobile just load the deployed  app Url in chrome browser and add app to home screen/install the app.
+## Steps to Install PWA in Mobile Devices
+
+The above features can be applied in mobile as well (Android and iPhone). To install the app on mobile, load the deployed app URL in Chrome browser and add the app to the home screen/install the app.
 
 [![](/learn/assets/pwa/mobileInstall.png)](/learn/assets/pwa/mobileInstall.png)
 
-
 [![](/learn/assets/pwa/installDialog_mobile.png)](/learn/assets/pwa/installDialog_mobile.png)
 
- You can observe the app in the app drawer 
+You can observe the app in the app drawer. 
 
 [![](/learn/assets/pwa/appdrawer.png)](/learn/assets/pwa/appdrawer.png)
 
-and once you open the app it will be opened as native mobile application.
+And once you open the app, it will be opened as a native mobile application.
 
 [![](/learn/assets/pwa/applaunched.png)](/learn/assets/pwa/applaunched.png)
 
 ### Browser Support for PWAs
-All browsers do not support all the features of PWA. 
 
-Please load this [URL](https://tomayac.github.io/pwa-feature-detector/) on any browser to know the PWA features it supports.
- 
+- All browsers do not support all the features of PWA. 
+- Please load this [URL](https://tomayac.github.io/pwa-feature-detector/) on any browser to know the PWA features it supports.
