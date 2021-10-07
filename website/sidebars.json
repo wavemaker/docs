@@ -1245,7 +1245,8 @@
       "app-development/widgets/prefab/barcode-scanner-prefab",
       "app-development/widgets/prefab/box-viewer-prefab",
       "app-development/widgets/prefab/entity-extraction-from-documents", 
-      "app-development/widgets/prefab/docusign"
+      "app-development/widgets/prefab/docusign",
+      "app-development/widgets/prefab/drag-and-drop-prefab-usage"
           ]
       },
       {
