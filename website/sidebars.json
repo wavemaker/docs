@@ -739,7 +739,8 @@
             "how-tos/sso-openid-azure-active-directory",
             "how-tos/custom-security-using-google-oauth-prefab",
             "how-tos/multiple-security-provider-implementation",
-            "how-tos/customizing-post-authentication-handlers"
+            "how-tos/customizing-post-authentication-handlers",
+            "how-tos/user-driven-dynamic-roles"
           ],
 
           "Databases":
