@@ -31,10 +31,14 @@ These features make PWA unique from native mobile applications and provide more 
 
 ## PWA Features Supported by WaveMaker
 
-Currently, the follwoing features are implemented in WaveMaker; that includes:
+Currently, the following features are implemented in WaveMaker; that includes:
 
 - Add to the home screen
 - Offline capabilities - storing of application code on mobile 
+
+## What happens when new version of app is deployed?
+
+When PWA is installed on mobile phone, the application's code - its javascript, css and other artifacts are stored in mobile file storage and are served from there. This decreases the application startup time. WaveMaker build process configures the service worker manifest file to make this happen and you don't have to do anything else. When a new version of the web application is deployed on the cloud, PWA upon startup performs the up-to-date check to realise that its cached contents are invalid. So then the new version of the deployed code is downloaded before the application starts.
 
 ### Prerequisites
 
@@ -42,7 +46,7 @@ You must enable SSL and deploy the application using a secure connection to work
 
 ## Steps to Enable PWA Capabilities
 
-This feature is under active developement and hence to enable it you need to turn the feature flag on per project.
+This feature is under active development and hence to enable it you need to turn the feature flag on per project.
 Create a project, add the PWA flag, and set the value as “true”. For example, `app.pwa.enabled=true` from the corresponding profile properties file. 
 
 - The default behavior of the PWA feature is disabled. Therefore, if the PWA flag is not set or not available, it is considered disabled.
@@ -74,7 +78,7 @@ To enable the PWA feature in old applications, along with the above step i.e., e
 <security:http pattern="/ngsw.json" security="none"/>
 ```
 
-- ***Projects with Authentication enabled:*** Resave the security config from the Studio, which would regenerate the `project-security.xml` with the manifest pattern.
+- ***Projects with Authentication enabled:*** Re-save the security config from the Studio, which would regenerate the `project-security.xml` with the manifest pattern.
 
 ## Steps to Set App Icon
 
