@@ -9,6 +9,10 @@ sidebar_label: "Enabling PWA"
 
 PWA (Progressive Web Application) are web applications that provide a native mobile app experience. These applications combine great functionalities and enhanced user experience based on the browser’s capabilities, and works on any platform, including desktop and mobile devices. You can develop PWA using web technologies such as JavaScript, HTML, and CSS.
 
+## When should you use PWA vs Mobile app
+
+WaveMaker offers creation of two project types: 1) web application and 2) mobile application. PWA feature is offered in a web application allowing it to behave closer to native application. However, if you like to build a mobile app and get it listed on Google Play or Apple Stores you should create mobile application project instead. 
+
 ### Advantages of Using PWA
 
 PWAs have many features and benefits that make them more unique compared to traditional web and native apps, including:
@@ -19,7 +23,7 @@ PWAs have many features and benefits that make them more unique compared to trad
 - Push notifications
 - Automatic updates
 - More secure
-- Discoverability and easy installation
+- Discoverability and easy installation without going through app store approval cycles
 
 These features make PWA unique from native mobile applications and provide more robust features on any platform using any device.
 
@@ -30,15 +34,16 @@ These features make PWA unique from native mobile applications and provide more 
 Currently, the follwoing features are implemented in WaveMaker; that includes:
 
 - Add to the home screen
-- Offline capabilities
+- Offline capabilities - storing of application code on mobile 
 
 ### Prerequisites
 
-You must enable SSL and deploy the application using a secure connection to work with PWA features.
+You must enable SSL and deploy the application using a secure connection to work with PWA features. When developing your application in WaveMaker goto Security dialog and enable SSL. Then make sure you deploy the application on a domain with a valid SSL certificate.
 
 ## Steps to Enable PWA Capabilities
 
-Create a project, add the PWA flag, and set the value as “true”. For example, `app.pwa.enabled=true` from the properties file. 
+This feature is under active developement and hence to enable it you need to turn the feature flag on per project.
+Create a project, add the PWA flag, and set the value as “true”. For example, `app.pwa.enabled=true` from the corresponding profile properties file. 
 
 - The default behavior of the PWA feature is disabled. Therefore, if the PWA flag is not set or not available, it is considered disabled.
 
@@ -73,6 +78,7 @@ To enable the PWA feature in old applications, along with the above step i.e., e
 
 ## Steps to Set App Icon
 
+When PWA is installed on mobile phone if you provide an app icon, then that icon will be shown in the the mobile home screen.
 You can set the app icon as a user-provided icon for PWA in WaveMaker. Please find the steps below to add the app icon.
 
 1. Create a folder named “PWA-icons” in the root directory of a project.
