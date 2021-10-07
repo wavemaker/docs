@@ -82,16 +82,7 @@ You will no longer receive support and we cannot offer licence extension.
 - [WaveMaker 10.5](/learn/wavemaker-release-notes/v10-5-0)
 - [WaveMaker 10.6](/learn/wavemaker-release-notes/v10-6-0)
 - [WaveMaker 10.7](/learn/wavemaker-release-notes/v10-7-0)
+- [WaveMaker 10.8](/learn/wavemaker-release-notes/v10-8-0)
+- [WaveMaker 10.9](/learn/wavemaker-release-notes/v10-9-0)
 
 For the detailed list of releases, including biweekly ones, see [WaveMaker Release Notes](/learn/wavemaker-release-notes).
-
-
-
-
-
-
-
-
-
-
-
