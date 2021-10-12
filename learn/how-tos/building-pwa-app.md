@@ -7,11 +7,18 @@ sidebar_label: "Enabling PWA"
 
 ## What is PWA (Progressive Web Application)
 
-PWA (Progressive Web Application) are web applications that provide a native mobile app experience. These applications combine great functionalities and enhanced user experience based on the browser’s capabilities, and works on any platform, including desktop and mobile devices. You can develop PWA using web technologies such as JavaScript, HTML, and CSS.
+PWA (Progressive Web Application) are web applications that provide a native mobile app experience. These applications combine great functionalities and enhanced user experience based on the browser’s capabilities, and works on any platform, including desktop and mobile devices. You can develop PWA using web technologies such as JavaScript, HTML, and CSS. 
 
-## When should you use PWA vs Mobile app
+WaveMaker web applications are already responsive and ready to be converted to Progressive Web App. In this document, learn how to turn any WaveMaker web application into a PWA.
 
-WaveMaker offers creation of two project types: 1) web application and 2) mobile application. PWA feature is offered in a web application allowing it to behave closer to native application. However, if you like to build a mobile app and get it listed on Google Play or Apple Stores you should create mobile application project instead. 
+## When to Use PWA vs Mobile App
+
+WaveMaker Studio allows you to create two types of projects: 
+
+1. Web application 
+2. Mobile application
+
+PWA applies explicitly to web applications, allowing them to behave closer to native mobile apps. However, to list a mobile app on Google Play or App Store, you should create a Mobile application project instead.
 
 ### Advantages of Using PWA
 
@@ -36,20 +43,26 @@ Currently, the following features are implemented in WaveMaker; that includes:
 - Add to the home screen
 - Offline capabilities - storing of application code on mobile 
 
-## What happens when new version of app is deployed?
+### Deploying a New Version of the App
 
-When PWA is installed on mobile phone, the application's code - its javascript, css and other artifacts are stored in mobile file storage and are served from there. This decreases the application startup time. WaveMaker build process configures the service worker manifest file to make this happen and you don't have to do anything else. When a new version of the web application is deployed on the cloud, PWA upon startup performs the up-to-date check to realise that its cached contents are invalid. So then the new version of the deployed code is downloaded before the application starts.
+**Understanding PWA**: When PWA is installed on a mobile device, the application's code, including JavaScript, CSS, and other artifacts, is stored in mobile file storage and served. Thus, it decreases the application startup time. 
+
+**What happens when a new version is deployed**: WaveMaker build process configures the service worker manifest file to make this happen without having to do anything. When a new version of the web application is deployed on the cloud during the PWA startup, it performs the up-to-date check to verify if its cached contents are valid. If cached content is not valid, the new version of the deployed code is downloaded before starting the application.
+
 
 ### Prerequisites
 
-You must enable SSL and deploy the application using a secure connection to work with PWA features. When developing your application in WaveMaker goto Security dialog and enable SSL. Then make sure you deploy the application on a domain with a valid SSL certificate.
+You must enable SSL and deploy the application using a secure connection to work with PWA features. When developing your application in WaveMaker, go to Security dialog and enable SSL. Then make sure you deploy the application on a domain with a valid SSL certificate.
 
 ## Steps to Enable PWA Capabilities
 
-This feature is under active development and hence to enable it you need to turn the feature flag on per project.
 Create a project, add the PWA flag, and set the value as “true”. For example, `app.pwa.enabled=true` from the corresponding profile properties file. 
 
 - The default behavior of the PWA feature is disabled. Therefore, if the PWA flag is not set or not available, it is considered disabled.
+
+:::note
+This feature is under active development, and hence to enable it, you need to turn the feature flag on for every project.
+:::
 
 [![](/learn/assets/pwa/flagproperty.png)](/learn/assets/pwa/flagproperty.png)
 
@@ -95,25 +108,25 @@ You can set the app icon as a user-provided icon for PWA in WaveMaker. Please fi
     - 128x128
     - 96x96
     - 72x72
-3. Image file naming should be an icon-<size>.png. For example, icon-384x384.png
+3. Image file naming should be an icon-<size>.png. For example, `icon-384x384.png`.
 
 [![](/learn/assets/pwa/pwaIconsFolder.png)](/learn/assets/pwa/pwaIconsFolder.png)
 
-4. Re-deploying the app can reflect the above changes.
+4. Re-deploying the app reflects the above changes.
 
 :::note
 - In case of any missing icon(s), the nearest resolution will be used from the “pwa-icons” directory. 
 
 **Example:** 
 
-In the above image, we have uploaded two different image sizes. But the chrome browser uses 128x128, which is missing, while PWA generation will use 384x384 size as the app icon.
+In the above image, we have uploaded two different image sizes. But the chrome browser uses 128x128, which is not present, while PWA generation will use 384x384 size as the app icon.
 - If no icon is present in the “pwa-icons” directory, WaveMaker default icons will be used.
 - As of now, only PNG format images are supported.
 :::
 
 ## Steps to Install PWA in Mobile Devices
 
-The above features can be applied in mobile as well (Android and iPhone). To install the app on mobile, load the deployed app URL in Chrome browser and add the app to the home screen/install the app.
+The above features can be applied in mobile, including, Android and iPhone. To install the app on mobile, load the deployed app URL in Chrome browser and add the app to the home screen/install the app.
 
 [![](/learn/assets/pwa/mobileInstall.png)](/learn/assets/pwa/mobileInstall.png)
 
@@ -127,7 +140,7 @@ And once you open the app, it will be opened as a native mobile application.
 
 [![](/learn/assets/pwa/applaunched.png)](/learn/assets/pwa/applaunched.png)
 
-### Browser Support for PWAs
+### Browser Support for PWA
 
 - All browsers do not support all the features of PWA. 
 - Please load this [URL](https://tomayac.github.io/pwa-feature-detector/) on any browser to know the PWA features it supports.
