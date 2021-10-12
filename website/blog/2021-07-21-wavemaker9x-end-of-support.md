@@ -13,13 +13,13 @@ We have covered some essential FAQs to help you understand how you can migrate t
 
 ## What does the end of support for WaveMaker 9.x entail? 
 
-Suppose you are using 9.x projects. In that case, WaveMaker will automatically update to the latest version of WaveMaker. The update can break applications that contain custom JavaScript code because of the Angular breaking changes. We have created a guide to help you update to the current version used by WaveMaker, which is Angular 10.
+Suppose you are using 9.x projects. In that case, WaveMaker will automatically update to the latest version of WaveMaker. The update can break applications that contain custom JavaScript code because of the Angular breaking changes. We have created a guide to help you update to the current version used by WaveMaker, Angular 10.
 
 Please note that following 31 Dec 2021, we will not be supporting project migrations. Therefore, we recommend you plan to update your WaveMaker 9 projects to receive support before the established deadline for a smooth migration process.
 
 ## Why is WaveMaker ending support for the 9.x version?
 
-End of previous version system means moving on to a newer and better systems. Even though some updates are not entirely responsible for security vulnerabilities, they might impact stability and usability. Other updates address bug fixes and customer requested features.
+End of previous version system means moving on to newer and better systems. Even though some updates are not entirely responsible for security vulnerabilities, they might impact stability and usability. Other updates address bug fixes and customer-requested features.
 
 View the progress of WaveMaker features and fixes in Studio in addition to security updates.
 
@@ -46,7 +46,7 @@ View the progress of WaveMaker features and fixes in Studio in addition to secur
 - Ability to provide widget level properties in a prefab
 - Adding tablet view support to Mobile apps
 
-And so much more. Read [WaveMaker release notes](/learn/wavemaker-release-notes) to get better idea of the features and fixes.
+And so much more. Read [WaveMaker release notes](/learn/wavemaker-release-notes) to understand the features and fixes better.
 
 ## How do I know if I have WaveMaker 9.x apps?
 
@@ -95,14 +95,3 @@ You will no longer receive support, and we cannot offer the license extension.
 - [WaveMaker 10.9](/learn/wavemaker-release-notes/v10-9-0)
 
 For the detailed list of releases, including biweekly ones, see [WaveMaker Release Notes](/learn/wavemaker-release-notes).
-
-
-
-
-
-
-
-
-
-
-
