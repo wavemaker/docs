@@ -7,16 +7,16 @@ sidebar_label: "Enabling PWA"
 
 ## What is PWA (Progressive Web Application)
 
-PWA (Progressive Web Application) are web applications that provide a native mobile app experience. These applications combine great functionalities and enhanced user experience based on the browser’s capabilities, and works on any platform, including desktop and mobile devices. You can develop PWA using web technologies such as JavaScript, HTML, and CSS. 
+PWA (Progressive Web Application) are web applications that provide a native mobile app experience. These applications combine great functionalities and enhanced user experience based on the browser's capabilities and work on any platform, including desktop and mobile devices. You can develop PWA using web technologies such as JavaScript, HTML, and CSS. 
 
 WaveMaker web applications are already responsive and ready to be converted to Progressive Web App. In this document, learn how to turn any WaveMaker web application into a PWA.
 
-## When to Use PWA vs Mobile App
+## When to Use PWA vs. Mobile App
 
 WaveMaker Studio allows you to create two types of projects: 
 
-1. Web application 
-2. Mobile application
+1. Web Application 
+2. Mobile Application
 
 PWA applies explicitly to web applications, allowing them to behave closer to native mobile apps. However, to list a mobile app on Google Play or App Store, you should create a Mobile application project instead.
 
@@ -45,7 +45,7 @@ Currently, the following features are implemented in WaveMaker; that includes:
 
 ### Deploying a New Version of the App
 
-**Understanding PWA**: When PWA is installed on a mobile device, the application's code, including JavaScript, CSS, and other artifacts, is stored in mobile file storage and served. Thus, it decreases the application startup time. 
+**Understanding PWA**: When PWA is installed on a mobile device, the application's code, including JavaScript, CSS, and other artifacts, is stored and served from mobile file storage. Thus, it decreases the application startup time. 
 
 **What happens when a new version is deployed**: WaveMaker build process configures the service worker manifest file to make this happen without having to do anything. When a new version of the web application is deployed on the cloud during the PWA startup, it performs the up-to-date check to verify if its cached contents are valid. If cached content is not valid, the new version of the deployed code is downloaded before starting the application.
 
@@ -82,20 +82,21 @@ This feature is under active development, and hence to enable it, you need to tu
 
 ### Enable PWA in Old Applications
 
-To enable the PWA feature in old applications, along with the above step i.e., enabling PWA flag, do the following.
+To enable the PWA feature in old applications, along with the above step, i.e., enabling PWA flag, do the following.
 
-- ***Projects without Authentication enabled:*** Add Manifest pattern in `project-security.xml`, i.e., add the following lines in the `project-security.xml` file.
+- **Projects without Authentication enabled:** Add Manifest pattern in `project-security.xml`, i.e., add the following lines in the `project-security.xml` file.
 
 ```java 
 <security:http pattern="/manifest.json" security="none"/>
 <security:http pattern="/ngsw.json" security="none"/>
 ```
 
-- ***Projects with Authentication enabled:*** Re-save the security config from the Studio, which would regenerate the `project-security.xml` with the manifest pattern.
+- **Projects with Authentication enabled:** Re-save the security config from the Studio, which would regenerate the `project-security.xml` with the manifest pattern.
 
 ## Steps to Set App Icon
 
-When PWA is installed on mobile phone if you provide an app icon, then that icon will be shown in the the mobile home screen.
+When PWA is installed on a mobile device, the icon you provide for the app will show on the mobile home screen.
+
 You can set the app icon as a user-provided icon for PWA in WaveMaker. Please find the steps below to add the app icon.
 
 1. Create a folder named “PWA-icons” in the root directory of a project.
@@ -119,14 +120,14 @@ You can set the app icon as a user-provided icon for PWA in WaveMaker. Please fi
 
 **Example:** 
 
-In the above image, we have uploaded two different image sizes. But the chrome browser uses 128x128, which is not present, while PWA generation will use 384x384 size as the app icon.
-- If no icon is present in the “pwa-icons” directory, WaveMaker default icons will be used.
+In the above image, we have uploaded two different image sizes. But the chrome browser uses 128x128, which is not present in the upload list; therefore, the PWA generation uses 384x384 size as the app icon.
+- If no icons are present in the "pwa-icons" directory, PWA will use the WaveMaker default icons.
 - As of now, only PNG format images are supported.
 :::
 
 ## Steps to Install PWA in Mobile Devices
 
-The above features can be applied in mobile, including, Android and iPhone. To install the app on mobile, load the deployed app URL in Chrome browser and add the app to the home screen/install the app.
+The above features can be applied in mobile, including Android and iPhone. To install the app on mobile, load the deployed app URL in Chrome browser and add the app to the home screen/install the app.
 
 [![](/learn/assets/pwa/mobileInstall.png)](/learn/assets/pwa/mobileInstall.png)
 
