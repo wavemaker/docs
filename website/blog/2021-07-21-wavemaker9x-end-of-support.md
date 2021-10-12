@@ -1,5 +1,5 @@
 ---
-title: "Annoucement about Ending Support of WaveMaker 9.x Projects"
+title: "Announcement about Ending Support of WaveMaker 9.x Projects"
 author: Swetha Kundaram
 ---
 
@@ -7,15 +7,21 @@ The End of Support (EOS) stage marks the official withdrawal of support for proj
 
 ## What does the end of support for WaveMaker 9.x entail?
 
-WaveMaker will end support of WaveMaker 9.x projects by 31 Dec 2021, which means if you are using 9.x projects, WaveMaker will automatically update to the latest version of WaveMaker. Please note that this update can break explicitly on projects that contain custom code. We have covered some essential FAQs in this document to help you understand how you can migrate to the latest version of WaveMaker Studio.
+WaveMaker generates Angular code, as Angular marks the official withdrawal of previous Angular versions. WaveMaker will end support of WaveMaker 9.x projects by 31 Dec 2021. The update is primarily geared towards improving performance, security, and bug fixes. 
 
-Following 31 Dec 2021, we shall not be supporting project migrations. Therefore, we highly recommend you update your projects to receive support before the established deadline.
+Suppose you are using 9.x projects. In that case, WaveMaker will automatically update to the latest version of WaveMaker. The update can break projects that contain custom JavaScript code because of the Angular update. 
+
+Plan your WaveMaker 9 End of support. We have covered some essential FAQs to help you understand how you can migrate to the latest version of WaveMaker Studio.
+
+Please note that following 31 Dec 2021, we shall not be supporting project migrations. Therefore, we recommend you plan to update your WaveMaker 9 projects to receive support before the established deadline.
 
 <!-- truncate -->
 
 ## Why is WaveMaker ending support for the 9.x version?
 
-Take a glance at the progress of WaveMaker Studio and what you've been missing out on in addition to recommended security updates.
+End of previous version system means moving on to a newer and better system. Even though they are not entirely responsible for security vulnerabilities, they might impact stability and usability. Other updates address other bugs and issues. Even though they are not responsible for security vulnerabilities, they might impact the stability of the projects.
+
+In addition to the recommended security updates, view the progress of WaveMaker Studio and what you've been missing.
 
 ![end of support](/learn/assets/end-of-support.png)
 
@@ -28,12 +34,11 @@ Take a glance at the progress of WaveMaker Studio and what you've been missing o
 - Wavemaker-generated code is now [Veracode certificated](weaving-security-into-low-code-development/)
 - [ngx-bootstrap upgrade](/learn/wavemaker-release-notes/v10-4-0/#upgrade-to-latest-version-of-ngx---bootstrap) with enhanced features
 
-
-### Other UI Enchancements
+### Other UI Enhancements
 
 - Enhanced DSL APIs exposed on various widgets
-- Advanced client side and server side validations on Form fields
-- Custom Data formatters for UI widgets
+- Advanced client-side and server-side validations on Form fields
+- Custom Data Formatters for UI widgets
 - Summary row in Datatable widget
 - Ability to add multiple views in a prefab through partials
 - Ability to provide widget level properties in a prefab
@@ -43,9 +48,9 @@ Take a glance at the progress of WaveMaker Studio and what you've been missing o
 
 When you launch WaveMaker Studio, you can see the orange bar at the top indicating you are using 9.x projects. 
 
-When you start the project update, the project card converts into a folder. The folder contains all the versions of the app including WM 9.x and WM 10.0. You can independently work on both versions.
+When you start the project update, the project card converts into a folder. The folder contains all the versions of the app, including WM 9.x and WM 10.0. You can independently work on both versions.
 
-![two versions of project](/learn/assets/two-versions-9-10-apps.png)
+![two versions of the project](/learn/assets/two-versions-9-10-apps.png)
 
 For more information and a guide to update, see [Upgrading an App from WaveMaker 9.x to WaveMaker 10.0](/learn/how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0/).
 
@@ -69,7 +74,7 @@ The application projects will automatically upgrade to the latest version of the
 
 ### WaveMaker Enterprise (WME)
 
-You will no longer receive support and we cannot offer licence extension.
+You will no longer receive support, and we cannot offer the license extension.
 
 ## WaveMaker 10 Releases
 
@@ -86,3 +91,14 @@ You will no longer receive support and we cannot offer licence extension.
 - [WaveMaker 10.9](/learn/wavemaker-release-notes/v10-9-0)
 
 For the detailed list of releases, including biweekly ones, see [WaveMaker Release Notes](/learn/wavemaker-release-notes).
+
+
+
+
+
+
+
+
+
+
+
