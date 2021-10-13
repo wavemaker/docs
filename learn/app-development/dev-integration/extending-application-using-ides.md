@@ -38,7 +38,7 @@ This war file can be deployed to any web server like Apache Tomcat.
 6. Now change directory to the Tomcat bin folder from terminal and type the below command (catalina.sh for Mac/Linux or catalina.bat for Windows) to Start Tomcat in debug mode:
 
  `./catalina.sh jpda start`
- 
+
  [![](/learn/assets/tomcat_start_cmd.png)](/learn/assets/tomcat_start_cmd.png) 
 
  We can see from tomcat logs:  `Listening for transport dt_socket at address: 8000`
@@ -46,9 +46,9 @@ This war file can be deployed to any web server like Apache Tomcat.
 Note: Using the option “jpda” starts Tomcat in debug mode with all options set to default values and By default `JPDA_ADDRESS` is defined as "localhost:8000" in catalina.sh
 Change to a different port as need. 
 
-7.After the successful deploy, open the IDE which you need to import ex: `IntelliJ` and click on import project and set as Maven.  
+7. After the successful deploy, open the IDE which you need to import ex: `IntelliJ` and click on import project and set as Maven.  
     
-7. In IntelliJ IDE,Set Run or Debug configurations as follows: 
+8. In IntelliJ IDE,Set Run or Debug configurations as follows: 
 
    Click Run > Edit Configurations
 
@@ -68,16 +68,16 @@ Change to a different port as need.
 
     Refer to below doc for more information: https://cwiki.apache.org/confluence/display/TOMCAT/Developing#Developing-Q1
 
-8. Now launch the deployed application in  browser.
-9. To debug any DB/Java service used in the app you need enable debug point in service and run it. 
+9. Now launch the deployed application in  browser.
+10. To debug any DB/Java service used in the app you need enable debug point in service and run it. 
 
 [![](/learn/assets/debug_IDE.png)](/learn/assets/debug_IDE.png)
 
-10. Once you are done with all the changes, run Maven Clean Install which will generate a ZIP file in _target/exports_ folder. 
+11. Once you are done with all the changes, run Maven Clean Install which will generate a ZIP file in _target/exports_ folder. 
 
 [![](/learn/assets/Maven_Export_Target.png)](/learn/assets/Maven_Export_Target.png)
 
-11. This file can be re-imported into Studio using the **Update Source** option from the project **Developer Utilities** Menu. The changes will be incorporated into your Studio application.
+12. This file can be re-imported into Studio using the **Update Source** option from the project **Developer Utilities** Menu. The changes will be incorporated into your Studio application.
 
 ## Integration with Jenkins
 
