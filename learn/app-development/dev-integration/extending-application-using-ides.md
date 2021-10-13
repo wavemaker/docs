@@ -34,25 +34,44 @@ You need to have Maven and Java installed in the system. This downloads all exte
 
 This war file can be deployed to any web server like Apache Tomcat. 
 
-[![](/learn/assets/Maven_tomcat_deploy.png)](/learn/assets/Maven_tomcat_deploy.png)
+5. Copy the above generated war file into the Tomcat folder “webapps“.
+6. Now change directory to the Tomcat bin folder from terminal and type the below command (catalina.sh for Mac/Linux or catalina.bat for Windows) to Start Tomcat in debug mode:
 
-5. After the successful build, open the IDE which you need to import ex: `IntelliJ` and click on import project and set as Maven.  
-    Ref:- [https://www.jetbrains.com/idea/help/importing-project-from-maven-model.html](https://www.jetbrains.com/idea/help/importing-project-from-maven-model.html)   
-    Ref:- [http://www.eclipse.org/webtools/jst/components/j2ee/scenarios/MavenEclipseIntegration.html](http://www.eclipse.org/webtools/jst/components/j2ee/scenarios/MavenEclipseIntegration.html)
-6. Set Run or Debug configurations as follows: Name: Maven Tomcat Working directory as project directory.
+ `./catalina.sh jpda start`
+ 
+ [![](/learn/assets/tomcat_start_cmd.png)](/learn/assets/tomcat_start_cmd.png) 
 
-    **Command Line as:** clean package org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run -Dmaven.tomcat.port=8181 
+ We can see from tomcat logs:  `Listening for transport dt_socket at address: 8000`
+
+Note: Using the option “jpda” starts Tomcat in debug mode with all options set to default values and By default `JPDA_ADDRESS` is defined as "localhost:8000" in catalina.sh
+Change to a different port as need. 
+
+7.After the successful deploy, open the IDE which you need to import ex: `IntelliJ` and click on import project and set as Maven.  
     
-    [![](/learn/assets/IDEDebugging.png)](/learn/assets/IDEDebugging.png)
+7. In IntelliJ IDE,Set Run or Debug configurations as follows: 
 
-7. Once you run the project in IntelliJ you will get console logs for required maven dependencies and so on. After everything is done you will observe a message as: 
-`
-[INFO] --- tomcat7-maven-plugin:2.2:run (default-cli) @ SampleApp --- [INFO] Running war on http://localhost:8181/SampleApp
-`
-8. Now open in browser with URL as `http://localhost:8181/ProjectName/services/myJava/sampleJavaOperation`
-9. To debug any DB/Java service used in the app you need set src folder of DB or Java service which is located in the services section of your project as Mark directory as source root. Similarly, for any service, you need to set src directory as source root and enable debug point and run it. 
+   Click Run > Edit Configurations
 
-[![](/learn/assets/IDE_debug.png)](/learn/assets/IDE_debug.png)
+   Click + icon on the top-left toolbar
+
+   Click Remote
+
+   Enter a name you want in Name input box.
+
+   Enter 8000 in Port input box under Settings section.
+
+   Click Apply, then OK.
+
+   Run > Debug..., Click the configuration you just created
+
+    [![](/learn/assets/run_debug_configrations.gif)](/learn/assets/run_debug_configrations.gif)
+
+    Refer to below doc for more information: https://cwiki.apache.org/confluence/display/TOMCAT/Developing#Developing-Q1
+
+8. Now launch the deployed application in  browser.
+9. To debug any DB/Java service used in the app you need enable debug point in service and run it. 
+
+[![](/learn/assets/debug_IDE.png)](/learn/assets/debug_IDE.png)
 
 10. Once you are done with all the changes, run Maven Clean Install which will generate a ZIP file in _target/exports_ folder. 
 
