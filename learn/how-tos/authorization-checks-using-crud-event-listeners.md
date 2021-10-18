@@ -52,7 +52,7 @@ import com.wavemaker.runtime.data.model.FetchQuery;
 @ExposeToClient
 public class PreFetchVacationService {
 
-  private static final Logger logger = LoggerFactory.getLogger(MyJavaService.class);
+  private static final Logger logger = LoggerFactory.getLogger(PreFetchVacationService.class);
 
     @Autowired
     private SecurityService securityService;
