@@ -36,63 +36,55 @@ Create a Java Service in the project and add the `PreFetchListEvent` event liste
 package com.employeeproject.prefetchvacation;
 
 import java.util.*;
-import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.wavemaker.runtime.service.annotations.ExposeToClient;
-import com.wavemaker.runtime.service.annotations.HideFromClient;
 import org.springframework.context.event.EventListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.wavemaker.runtime.security.SecurityService;
-
 import com.<project_name>.hrdb.Vacation;
-
 import com.wavemaker.commons.WMRuntimeException;
 import com.wavemaker.runtime.data.event.EntityPreFetchListEvent;
 import com.wavemaker.commons.MessageResource;
-import com.wavemaker.commons.MessageResource;
+import com.wavemaker.runtime.data.model.FetchQuery;
 
 @ExposeToClient
 public class PreFetchVacationService {
 
-    private static final Logger logger = LoggerFactory.getLogger(PreFetchVacationService.class);
-   @Autowired
+  private static final Logger logger = LoggerFactory.getLogger(MyJavaService.class);
+
+    @Autowired
     private SecurityService securityService;
-     @EventListener
-    public void beforeVacationFetch(EntityPreFetchListEvent<Vacation> entityPreFetchEvent){
+
+    @EventListener
+    public void beforeVacationFetch(EntityPreFetchListEvent<Vacation> entityPreFetchEvent) {
         logger.info("Inside generic pre fetch event listener for {}", entityPreFetchEvent.getEntityClass(), entityPreFetchEvent);
-        
         final List userRoles = (List) Arrays.asList(securityService.getUserRoles());
-        FetchQuery fetchquery= entityPreFetchEvent.getFetchQuery();
-        
-      if (userRoles.contains("user")&&fetchquery.getQuery() == null) {
-          
-        fetchquery.setQuery("employee.empId"+"="+securityService.getUserId());
-        
-       }else if(!userRoles.contains("admin")&&fetchquery.getQuery()!= null)
-          {
-              
-          if(fetchquery.getQuery().contains("employee.empId"))
-          {
-           
-           List<String> filterData =Arrays.asList(fetchquery.getQuery().split(" "));
-           boolean result = filterData.stream().anyMatch(x -> x.equals("employee.empId"+"="+securityService.getUserId()));
-           if(!result)
-           {
-             fetchquery.setQuery("employee.empId"+"="+securityService.getUserId());
-             throw new WMRuntimeException(MessageResource.create("You are not authorized to access this resource!"));
-           }
-        
-          }else{
-         fetchquery.setQuery(fetchquery.getQuery()+" AND "+"employee.empId"+"="+securityService.getUserId()); 
-          }
-      }else{
-          logger.info("Query search Success");
-      }
-        
-    }   
+        FetchQuery fetchquery = entityPreFetchEvent.getFetchQuery();
+        if (userRoles.contains("user") && fetchquery.getQuery() == null) {
+
+            fetchquery.setQuery("employee.empId" + "=" + securityService.getUserId());
+
+        } else if (!userRoles.contains("admin") && fetchquery.getQuery() != null) {
+            if (fetchquery.getQuery().contains("employee.empId")) {
+
+                List<String> filterData = Arrays.asList(fetchquery.getQuery().split(" "));
+                boolean result = filterData.stream().anyMatch(x -> x.equals("employee.empId" + "=" + securityService.getUserId()));
+                if (!result) {
+                    fetchquery.setQuery("employee.empId" + "=" + securityService.getUserId());
+                    throw new WMRuntimeException(MessageResource.create("You are not authorized to access this resource!"));
+                }
+
+            } else {
+                fetchquery.setQuery(fetchquery.getQuery() + " AND " + "employee.empId" + "=" + securityService.getUserId());
+            }
+        } else {
+            logger.info("Query search Success");
+        }
+
+    }
+
 }
 ```
 
