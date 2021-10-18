@@ -983,7 +983,8 @@
           [
             "how-tos/setting-partial-page-content-accordion-within-list",
             "how-tos/setting-partial-page-content-panel-within-list-using-javascript",
-            "how-tos/how-tos-wizard"
+            "how-tos/how-tos-wizard",
+            "how-tos/dynamic-tabs-accordions"
           ],
 
           "Tree":
