@@ -29,14 +29,14 @@ Below is a short insight about the approaches taken to fine tune the queries for
 
 ### How does it impact the Studio developer?
 
-As a result of this enhancement, the application developer would be able to see an enriched and optimised experience when working with databases in the application. 
-The import/re-import operations for database in the application should ideally be quicker than the earlier times.
+As a result of this enhancement, the WaveMaker developer will have a better experience when working with databases while building the application. 
+The import/re-import operations of database in the application will be quicker than the earlier times.
 
-On performing QA at our end with multiple database types, we observed that the optimised metadata queries executed at almost 600x faster as compared to the previous queries. 
+From the tests we did, the some of the queries used in database import operation are 600x faster. 
 As a result, the time taken for the entire process of code generation for database entities during database import operation and the respective API generation powered by WaveMaker, is almost cut by half approximately.
 
 Note: The performance improvement ratio is proportional to the number of constraints and relations defined for the tables in the database. 
 
 Based on the statistics generated at our end during the QA phase, the metadata for a database with around 800+ tables and heavy constraints for the entities was read in less than 4 seconds due to the optimised metadata queries. 
 
-We hope, you too, have an enriched database import experience in the application. Do try out our database import feature and let us know your feedback. 
+Do try out our database import feature and let us know your feedback. 
