@@ -41,9 +41,9 @@ To use the **Azure** OAuth prefab, please follow the steps below:
 ### Pre-requisites
 
 1. [Azure OAuth Prefab](https://github.com/nageshl/prefab-azureoauth)
-2. Azure Active Directory Setup
-3. Azure App Registration Portal
-4. Graph API Access
+2. Access to Azure Active Directory Setup
+3. Access to Azure App Registration Portal
+4. Microsoft Graph API Access
 
 ### Configure Azure Portal
 
