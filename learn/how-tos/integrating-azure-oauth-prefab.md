@@ -6,17 +6,17 @@ id: ""
 
 **Prefab**: **[Azure OAuth Prefab](https://github.com/nageshl/prefab-azureoauth)**
 
-OAuth 2.0 is an authorization framework that was updated after the original OAuth protocol created in 2006. OAuth 2.0 is a standard protocol, which provides delegated secured access for web, mobile, and desktop applications. To know more about the working of WaveMaker OAuth Prefabs [click here](/learn/app-development/widgets/prefab/oauth-prefabs/).
+OAuth 2.0 is an open-standard authorization protocol or framework that provides the ability to securely allow access to the web, mobile, and desktop applications. To learn more about the working of WaveMaker OAuth Prefabs, [click here](/learn/app-development/widgets/prefab/oauth-prefabs/).
 
 ## Azure OAuth Prefab Properties
 
 | Attribute Name      | Attribute Type | Description | Remarks/sample values  |
 |---------------------|----------------|-------------|------------------------|
-| loginmode           | UI             | Inbound parameter This property sets the login mode, auto login or manual login | auto/manual|
+| loginmode           | UI             | Inbound parameter. This property sets the login mode, auto login or manual login | auto/manual|
 | buttoncaption       | UI             | Inbound parameter                                                               | Login With Azure|
-|                     |                | This property sets the caption onto the azure login button.                     |                                                                     |
+|                     |                | This property sets the caption onto the Azure login button.                     |                                                                     |
 | buttonclass         | UI             | Inbound parameter                                                               | btn-primary                                                         |
-|                     |                | This property sets the custom class onto the azure login button                 |                                                                     |
+|                     |                | This property sets the custom class onto the Azure login button                 |                                                                     |
 | loginsuccessmessage | UI             | Inbound parameter                                                               | Azure Login Success                                                 |
 |                     |                | This property will set the text for the toaster after successful authorization  |                                                                     |
 | accesstoken         | UI             | Outbound parameter                                                              |                                                                     |
@@ -25,8 +25,8 @@ OAuth 2.0 is an authorization framework that was updated after the original OA
 |                     |                | Callback url                                                                    |                                                                     |
 | authorizationheader | UI             | Outbound parameter                                                              |                                                                     |
 |                     |                | Authorization header to pass on along with request                              |                                                                     |
-| Appid               | Server         | Application ID of azure registered application                                  |                                                                     |
-| Secret              | Server         | Secret of azure registered application                                          |                                                                     |
+| Appid               | Server         | Application ID of Azure registered application                                  |                                                                     |
+| Secret              | Server         | Secret of Azure registered application                                          |                                                                     |
 | Page                | Server         | Landing page after login                                                        | Main                                                                |
 | Scope               | Server         | Scopes required to access/retrieve data of user                                 | openid                                                              |
 | AuthReqURL          | Server         | Authentication request URL                                                      | https://login.microsoftonline.com/TENNANTID/oauth2/v2.0/authorize |
@@ -37,9 +37,6 @@ OAuth 2.0 is an authorization framework that was updated after the original OA
 
 To use the **Azure** OAuth prefab, please follow the steps below:
 
-:::note
-The screenshots from the Azure website were current at the time of writing this document. The actual screens might differ.
-:::
 
 ### Pre-requisites
 
@@ -48,9 +45,9 @@ The screenshots from the Azure website were current at the time of writing this 
 3. Azure App Registration Portal
 4. Graph API Access
 
-### Azure Portal Configuration 
+### Configure Azure Portal
 
-1. Log on to [https://portal.azure.com](https://portal.azure.com) and enter your credentials. You will be redirected to  **Azure Portal Home** page.
+1. Log on to [https://portal.azure.com](https://portal.azure.com) and enter your credentials. It redirects to the **Azure Portal Home** page.
 
 2. Search for **App Registrations** from the top navigation bar and click it. 
 
@@ -73,7 +70,7 @@ The screenshots from the Azure website were current at the time of writing this 
 
 [![](/learn/assets/azure_oauth_redirecturi.png)](/learn/assets/azure_oauth_redirecturi.png)   
 
-### UI Configuration
+### Using Azure OAuth Prefab in WaveMaker
 
 1. Download the prefab from Git repository [Azure OAuth Prefab](https://github.com/nageshl/prefab-azureoauth) and import it as a prefab on your WaveMaker Studio. 
 
@@ -85,17 +82,17 @@ The screenshots from the Azure website were current at the time of writing this 
   - Auto - Auto Login right after initialization 
   - Manual - On Click of Prefab Login Button
 
-4. Set Server properties.
+4. Set Server Properties, as below:
   - Scope - openid
-  - AppID - Application ID from azure registered application
-  - Secret - Client secret to the respective application
-  - AuthReqURL - Authentication Request URL 
-  - TokenReqURL - Token Request URL
+  - AppID - It is an application ID from Azure registered application
+  - Secret - It is a client secret to the respective application
+  - AuthReqURL - Provide Authentication Request URL 
+  - TokenReqURL - Provide Token Request URL
 
 
 [![](/learn/assets/azure_oauth_studio_2.png)](/learn/assets/azure_oauth_studio_2.png)
 
-5. Azure OAuth prefab -> Events -> Onaccesstokenfetch 
+5. Azure OAuth prefab -> Events -> onAccesstokenfetch 
 
 It is a callback action. To fetch an accesstoken successfully, invoke login variable, with j_username as ‘ADAUTH’ and j_password as an accesstoken (outbound param).
 
@@ -109,7 +106,7 @@ Page.AzureOAuth2Accesstokenfetch = function($event, $data) {
 
 ### Server Side Configuration
 
-1. Create a java service MyAuthenticationManager by implementing WMCustomAuthenticationManager interface.
+1. Create a Java Service MyAuthenticationManager by implementing a WMCustomAuthenticationManager interface.
 
 ```java
     import javax.servlet.http.HttpServletRequest;
@@ -246,11 +243,11 @@ Override authenticate method as below
 
 [![](/learn/assets/azure_oauth_login_screen.png)](/learn/assets/azure_oauth_login_screen.png)
 
-2. Click on Login with Azure Oauth. It will be redirected to Microsoft login. Here, provide the username and password.
+2. Click **Login With Azure AD**. It will be redirected to Microsoft login. Here, provide the username and password.
 
 [![](/learn/assets/azure_oauth_login_ms.png)](/learn/assets/azure_oauth_login_ms.png)
 
-3. Read and Provide User consent to the application.
+3. Read and provide user consent to the application.
 
 [![](/learn/assets/azure_oauth_login_ms_consent.png)](/learn/assets/azure_oauth_login_ms_consent.png)
 
