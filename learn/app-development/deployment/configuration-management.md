@@ -104,10 +104,6 @@ db.hrdb.password=mypassword
 The environment property names cannot contain a dot (“.”) in its name, and it should be full lower case or completely upper case. Hence you need to normalize the key before setting it on the environment. So It can be written as `db_hrdb_password`, or `DB_HRDB_PASSWORD`.
 :::
 
-:::note
-As of [version 10.8](/learn/wavemaker-release-notes/v10-8-0), the `prefix db_` is not required when setting the environment variable.
-:::
-
 So, it can be written as specified below:
 
 For Windows:
