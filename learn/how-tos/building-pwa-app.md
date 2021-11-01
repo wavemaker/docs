@@ -42,6 +42,7 @@ Currently, the following features are implemented in WaveMaker; that includes:
 
 - Add to the home screen
 - Offline capabilities - storing of application code on mobile 
+- Push notifications
 
 ### Deploying a New Version of the App
 
