@@ -1277,7 +1277,8 @@
         "type": "subcategory",
         "label": "Versions: 10.9.x",
         "ids": 
-          [ 
+          [             
+            "wavemaker-release-notes/v10-9-2",
             "wavemaker-release-notes/v10-9-1",
             "wavemaker-release-notes/v10-9-0"
           ]
