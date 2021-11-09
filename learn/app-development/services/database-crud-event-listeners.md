@@ -207,4 +207,8 @@ Update and delete events work similarly with update having the entity informatio
 <!-- EntityPreFetch event has the query string passed to it, which you can modify in the event listeners. EntityPostFetchEvent can be used to modify the outgoing data. -->
 :::
 
+## Use Cases
 
+[Record Transactional History of an Entity](/learn/how-tos/audit-history-using-crud-listeners)  
+[Performing Dynamic Validations using CRUD Listeners](/learn/how-tos/validations-using-crudListeners)  
+[Custom Business Logic using DB CRUD Event Listeners](/learn/how-tos/custom-business-logic-using-crud-event-listeners)  
