@@ -35,7 +35,7 @@ Configure an HRDB database in the project from WaveMaker sample databases.
 
 ## Create a Java Service
 
-Create a Java Service in the project and add the `PreFetchListEvent` event listener for the employee entity, as shown below. 
+Create a Java Service in the project and add the `PreFetchListEvent` event listener for the vacation entity, as shown below. 
 
 - The `beforeVacationFetch` method gets invoked before fetching the list of records from the vacation table. 
 - You can fetch the logged-in user details from the security service. 
