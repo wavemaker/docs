@@ -95,4 +95,6 @@ To test the application, insert a new record by selecting a birth date that is l
 
 ## See Also
 
-[Validations using CRUD Listeners](/learn/how-tos/validations-using-crudListeners)
+[Database CRUD Operations Event Listeners](/learn/app-development/services/database-crud-event-listeners)  
+[Record Transactional History of an Entity](/learn/how-tos/audit-history-using-crud-listeners)  
+[Dynamic Validations using CRUD Listeners](/learn/how-tos/validations-using-crudListeners)   

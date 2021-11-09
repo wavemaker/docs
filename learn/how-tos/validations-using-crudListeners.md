@@ -1,8 +1,10 @@
 ---
-title: "Performing dynamic validations using CRUD listeners "
+title: "Dynamic Validations using CRUD Listeners"
 id: ""
+sidebar_label: "Validations using CRUD Listeners"
 ---
 ---
+
 ## Introduction
 
 In this document, learn how we can use [DB CRUD listeners](/learn/app-development/services/database-crud-event-listeners) to perform dynamic validations. The WaveMaker runtime framework publishes pre and post-events for each CRUD operation (Create, Read, Update and Delete) performed on the table. Here, in the following example, we use the pre-create event to check if the username already exists in the table. For this, we use the HRDB USER table to demonstrate. 
@@ -21,7 +23,7 @@ Create a Java Service in the project and add the `preCreate` event listener for 
 - We can get the user object inside the listener by using the expression  `entityPreCreateEvent.getEntity()`. 
 - In the next lines of code, we are then using `UserService` to check if the username is present in the table or not. If the user is already present, we throw an error message saying `"Username Not Available"`.
 
- ```java
+```java
 package com.sample.myjavaservice;
 
 import org.slf4j.Logger;
@@ -53,7 +55,8 @@ public class MyJavaService {
     } } 
     
     }
- ```
+```
+
 ## Create a Data Table
 
 1. Drag and drop a Data Table widget.
@@ -61,4 +64,10 @@ public class MyJavaService {
 3. Insert a new record with an existing username For example, `admin`, and submit. 
     - Once submitting the record, see that an error is shown "`Username not available`", see the image below. 
  
- ![/learn/assets/validations-crudlisteners/errorMsg.png](/learn/assets/validations-crudlisteners/errorMsg.png)
+![/learn/assets/validations-crudlisteners/errorMsg.png](/learn/assets/validations-crudlisteners/errorMsg.png)
+
+## See Also
+
+[Database CRUD Operations Event Listeners](/learn/app-development/services/database-crud-event-listeners)  
+[Record Transactional History of an Entity](/learn/how-tos/audit-history-using-crud-listeners)  
+[Custom Business Logic using DB CRUD Event Listeners](/learn/how-tos/custom-business-logic-using-crud-event-listeners)  

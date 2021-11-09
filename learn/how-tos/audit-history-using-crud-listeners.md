@@ -105,3 +105,8 @@ public void PostEntityDelete(EntityPostDeleteEvent<Employee> entityPostDeleteEve
 
 In preview, perform some CRUD operations in the Employee table and notice the transactional details insert into the `EMPLOYEE_DETAILS_LOG` table.
 
+## See Also
+
+[Database CRUD Operations Event Listeners](/learn/app-development/services/database-crud-event-listeners)  
+[Dynamic Validations using CRUD Listeners](/learn/how-tos/validations-using-crudListeners)  
+[Custom Business Logic using DB CRUD Event Listeners](/learn/how-tos/custom-business-logic-using-crud-event-listeners)  
