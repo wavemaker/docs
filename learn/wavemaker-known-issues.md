@@ -13,6 +13,13 @@ Below is the list of known issues reported against the release version. We docum
 
 ---
 
+### 10.10.x
+
+|Issue description|Occured since|Expected to fix by|Status|Workaround|
+|---|---|---|---|---|
+|In the latest version of the Cordova-camera plugin, the edit flag functionality is not working in Android. | 10.10 |  10.10.x| [Issue details](https://github.com/apache/cordova-plugin-camera/issues/718) | -|
+|Audio and video widgets fail to play audio and video that require cookie-based authentication. | 10.10 | 10.10.x | -| - |
+
 ### 10.7.x
 
 |Issue description|Occured since|Expected to fix by|Status|Workaround|
