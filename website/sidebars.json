@@ -1275,6 +1275,14 @@
       "wavemaker-known-issues",
       {
         "type": "subcategory",
+        "label": "Versions: 10.10.x",
+        "ids": 
+          [             
+            "wavemaker-release-notes/v10-10-0"
+          ]
+      },
+      {
+        "type": "subcategory",
         "label": "Versions: 10.9.x",
         "ids": 
           [             
