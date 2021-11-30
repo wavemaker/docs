@@ -164,10 +164,12 @@ A provisioning profile has to be created for the app id created above:
     - Import `google-services.json` (downloaded earlier) to the `webapp` folder. 
     
     [![](/learn/assets/push_resources1.png)](/learn/assets/push_resources1.png)
-
+    
+    - Add the below script in project config.xml (i.e <project>/src/main/webapp/config.xml) file under <platform name="android">.
+      <resource-file src="www/google-services.json" target="/app/google-services.json"/>
     - Import ‘`FCM-admin-service-key.json`’ (downloaded earlier) to `/project/src/main/resources`.
     - Import `.p12` Certificate to `/project/src/main/resources`.
-
+    
 3. [Create a db](/learn/app-development/services/database-services/working-with-databases/) named `DeviceDetails`, which will store all the `deviceIds`, `username` and device type i.e. OS (Android or iOS). Mark these columns as unique. 
 
 [![](/learn/assets/push_db-1.png)](/learn/assets/push_db-1.png)
@@ -302,7 +304,7 @@ App.loginActiononSuccess = function(variable, data, options) {
 
 [![](/learn/assets/push_plugin.png)](/learn/assets/push_plugin.png)
 
-- Mention ‘git’ as source, ‘phonegap-plugin-push’ as plugin name and ‘[https://github.com/wavemaker/phonegap-plugin-push.git#eadcc0c](https://github.com/wavemaker/phonegap-plugin-push.git#eadcc0c)’ as spec. Then, click **`Add`** button and **`Save`** button.
+- Mention ‘git’ as source, ‘@havesource/cordova-plugin-push’ as plugin name and ‘[https://github.com/wavemaker/phonegap-plugin-push.git#85bd7da](https://github.com/wavemaker/phonegap-plugin-push.git#85bd7da)’ as spec. Then, click **`Add`** button and **`Save`** button.
 
 ## App Usage
 
