@@ -98,5 +98,5 @@ Prometheus uses an alert manager to send notifications. In WaveMaker Enterprise 
    - ***@SMTP_PASSWORD@*** with valid password.
    - Change the Receivers EmailAddress  replace ***'devops-alerts@wavemaker.com'*** with your Corporate EmailAddress ex:devops@xyz.com
 2) Restart AlertManager Container using the below commands.
-   - docker stop alertmanager
-   - docker start alertmanager
+   - docker exec -it alertmanager supervisorctl stop alertmanager
+   - docker exec -it alertmanager supervisorctl start alertmanager
