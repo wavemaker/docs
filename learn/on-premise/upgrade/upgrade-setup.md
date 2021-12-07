@@ -32,7 +32,7 @@ The following list provides the currently supported versions for WME patching. K
 
 ## Patch Inventory
 
-Following are the patch files you will need in order to install the patch on WME setup running on your host machine.
+Following are the patch files you will need in order to install the patch on the WME setup running on your host machine.
 
 - **Ubuntu**
   - patch file in deb format
