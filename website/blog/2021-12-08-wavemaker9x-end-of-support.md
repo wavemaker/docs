@@ -1,9 +1,9 @@
 ---
-title: "Announcement about Ending Support of WaveMaker 9.x Projects"
+title: "Announcement about Ending Support of WaveMaker 9 Projects"
 author: Swetha Kundaram
 ---
 
-The End of Support (EOS) stage marks the official withdrawal of support for projects of WaveMaker 9.x versions. 
+The End of Support (EOS) stage marks the official withdrawal of support for WaveMaker 9.x projects. 
 
 WaveMaker app development generates Angular code, as Angular marks the official withdrawal of the previous Angular versions, including AngularJS and Angular 1.x. Therefore, WaveMaker will be ending the support of WaveMaker 9.x projects that use AngularJS and Angular 1.x by 31 Dec 2021, as [Angular announced](https://docs.angularjs.org/misc/version-support-status). The update is primarily focused on improving performance, security, and bug fixes.
 
@@ -21,11 +21,11 @@ Please note that following 31 Dec 2021, we will not be supporting project migrat
 
 End of previous version system means moving on to newer and better systems. Even though some updates are not entirely responsible for security vulnerabilities, they might impact stability and usability. Other updates address bug fixes and customer-requested features.
 
-View the progress of WaveMaker features and fixes in Studio in addition to security updates.
+View the progress of WaveMaker features and fixes in Studio.
 
 ![end of support](/learn/assets/end-of-support.png)
 
-**The update include**:
+**A glimpse of the updates**:
 
 - Outdated application stack: AngularJS ends the support by 31 Dec 2021, including security issues. [Learn more about AngularJS version support status](https://docs.angularjs.org/misc/version-support-status)
 - Latest angular stack Angular 10
@@ -60,7 +60,7 @@ For more information and a guide to update, see [Upgrading an App from WaveMaker
 
 ## How WaveMaker will help you with the update?
 
-Updating Angular is not relatively straightforward. However, our developers at WaveMaker have worked hard to make it a little easier for you. When you initiate an update, WaveMaker takes care of the major part behind the scenes. 
+Updating Angular is not relatively straightforward. However, our developers at WaveMaker have made it a little easier for you. When you initiate an update, WaveMaker takes care of the major part behind the scenes. 
 
 Even so, if you have included customizations, i.e., adding custom JavaScript code, you'll have to check and accept changes manually by verifying every single customization that runs through the process. This approach is taken care of by the [inspection framework](/learn/app-development/dev-integration/inspection-framework/) that we explicitly developed to guide you through the migration process. Further to this, you can reach out to our support team for more assistance. 
 
@@ -93,5 +93,6 @@ You will no longer receive support, and we cannot offer the license extension.
 - [WaveMaker 10.7](/learn/wavemaker-release-notes/v10-7-0)
 - [WaveMaker 10.8](/learn/wavemaker-release-notes/v10-8-0)
 - [WaveMaker 10.9](/learn/wavemaker-release-notes/v10-9-0)
+- [WaveMaker 10.10](/learn/wavemaker-release-notes/v10-10-0)
 
 For the detailed list of releases, including biweekly ones, see [WaveMaker Release Notes](/learn/wavemaker-release-notes).
