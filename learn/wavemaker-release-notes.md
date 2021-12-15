@@ -112,7 +112,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | Servlet Framework |  | 3.1.0 |
 |Database Connection Pooling | HikariCP | 4.0.3 |
 
-### RunTime Environment
+### Runtime Environment
 
 | Description | Version |
 | --- | --- |
