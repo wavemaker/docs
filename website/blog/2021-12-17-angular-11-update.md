@@ -4,7 +4,7 @@ author: Swetha Kundaram
 ---
 ---
 
-WaveMaker generates code for applications based on Angular 10. As part of the continuous improvement efforts, we update the next major Angular version, 11.2.x, in the **release 10.11**, scheduled for the 23rd Dec 2021. 
+WaveMaker generates code for applications based on Angular 10. As part of the continuous improvement efforts, we update WaveMaker to the next major Angular version, 11.2.x, in the **release 10.11**, scheduled for the 23rd Dec 2021. 
 
 :::note
 Angular 10 is scheduled to reach the end of its support on 24th Dec 2021
