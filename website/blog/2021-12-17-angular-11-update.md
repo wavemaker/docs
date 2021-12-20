@@ -4,7 +4,7 @@ author: Swetha Kundaram
 ---
 ---
 
-WaveMaker generates code for applications based on Angular 10. As part of the continuous improvement efforts, we upgrade WaveMaker to the next major Angular version, 11, in the **release 10.11**, scheduled for the 23rd Dec 2021. 
+WaveMaker generates code for applications based on Angular. As part of the continuous improvement efforts, we upgrade WaveMaker to the next major Angular version, 11, in the **release 10.11**, scheduled for the last week in December 2021. 
 
 | Current version | Updating to | 
 |---|---|
@@ -22,7 +22,7 @@ Angular 10 is scheduled to end its support by 24th Dec 2021. For more informatio
 
 We invite you to test your applications on the WaveMaker 10.11 beta before officially releasing the 10.11 version. This service is exclusively provided on request. Please get in touch with our [support](mailto:support@wavemaker.com) team to access the WaveMaker 10.11 beta service.
 
-Test the applications containing [Prefabs](/learn/app-development/custom-widgets/creating-prefabs) and [Partials](/learn/app-development/ui-design/page-concepts/partial-pages) in particular. 
+The areas change in WaveMaker has been with how lazy loading of JS artefacts work. Our QA team has tested this area and the release candidate build is now deployed on staging. While testing your applications, pay closer attention to the areas of your application that may be using [Prefabs](/learn/app-development/custom-widgets/creating-prefabs) and [Partials](/learn/app-development/ui-design/page-concepts/partial-pages) in particular. 
 
 #### To do
 
