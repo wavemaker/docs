@@ -1,37 +1,31 @@
 ---
-title: "Invite: Test your WaveMaker Application on the latest UI Framework Angular 11"
+title: "Announcement about Angular 11 Update"
 author: Swetha Kundaram
 ---
 ---
 
-As part of the continuous improvement efforts, we are updating all our front-end frameworks to the Angular major release version 11 in the next WaveMaker release 10.11 (coming soon). 
+WaveMaker generates code for applications based on Angular 10. As part of the continuous improvement efforts, we update the next major Angular version, 11.2.x, in the **release 10.11**, scheduled for the 23rd Dec 2021. 
 
-We invite our customers to test their applications on a staging server to smooth the upgrade process. Please get in touch with our [support](mailto:support@wavemaker.com) team to get stage access. 
+:::note
+Angular 10 is scheduled to reach the end of its support on 24th Dec 2021
+:::
+
+We invite our customers to test their applications on the WM 10.11 beta. The service is provided on request to smooth the upgrade process. Please get in touch with our [support](mailto:support@wavemaker.com) team to access the WM 10.11 beta.
 
 <!--truncate-->
 
-## What's new in WaveMaker Angular 11
+### What's Deprecated?
 
-Some of the significant changes in Angular 11 are as follows:
+Support of IE 9 and 10 was deprecated in Angular 10 and removed entirely in Angular 11. 
 
-- Angular 11 uses Typescript 4.0 and above instead of 3.9. This introduces changes like:
-    - No public variables inside classes. Use of getters and setters instead.
-    - No async keyword for abstract functions
-    - Strict typing for promises
-- The Angular router does not use routes with String syntax for `loadChildren`. `loadChildren` is a function and uses dynamic imports to load modules. It changes the routes array for applications.
+### What Should you Test? 
 
-For example: 
-```
-```
-- Lazy module loading shifted from `NgModuleFactoryLoader` and `SystemJsNgModuleLoader` and relies on dynamic imports, and are a similar pattern to the `loadChildren` in the router, used to identify lazy modules. It has effects in a couple of places, including:
-    - Attribute lazyModules removed from `angular.json`.
-    - The lazy module loader service now uses dynamic imports.
-- The Async function in tests has been deprecated. It is changed to waitForAsync to avoid confusion with the async keyword.
-- IE 9 and 10 support was deprecated in Angular 10 and removed entirely in Angular 11.
+We have taken care of everything in the backend to make the change effortless. However, we suggest you test applications containing Prefabs and Partials in particular. 
 
-## Performance Improvements 
+1. Run and test applications containing Prefabs
+2. Run and test applications containing Partials
 
-- Automatic font inlining during build time.
-- Improvement in testing components.
-- Reporting and logging file sizes after the build.
+:::note
+This Angular update does not include Ivy Engine but covers performance improvements. As part of the process, we continue to use View Engine and will move to use Ivy in the subsequent major release.
+:::
 
