@@ -10,17 +10,17 @@ WaveMaker generates code for applications based on Angular 10. As part of the co
 |---|---|
 | Angular 10.2.5  | 11.2.14 |
 
-To learn more, see [Angular Version 11 - what's in the release?](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7).
+To learn more, see [Angular Version 11 - what's in the release](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7).
+
+<!--truncate-->
 
 :::note
 Angular 10 is scheduled to end its support by 24th Dec 2021. For more information, see [Angular Support Details](https://angular.io/guide/releases#support-policy-and-schedule).
 :::
 
-<!--truncate-->
+### Testing Apps on WaveMaker 10.11 Beta
 
-### Testing Apps on WM 10.11 Beta
-
-We invite you to test your applications on the WM 10.11 beta before officially releasing the WM10.11 version. This service is exclusively provided on request. Please get in touch with our [support](mailto:support@wavemaker.com) team to access the WM 10.11 beta service.
+We invite you to test your applications on the WaveMaker 10.11 beta before officially releasing the 10.11 version. This service is exclusively provided on request. Please get in touch with our [support](mailto:support@wavemaker.com) team to access the WaveMaker 10.11 beta service.
 
 Test the applications containing [Prefabs](/learn/app-development/custom-widgets/creating-prefabs) and [Partials](/learn/app-development/ui-design/page-concepts/partial-pages) in particular. 
 
