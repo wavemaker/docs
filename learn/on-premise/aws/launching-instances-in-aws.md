@@ -170,8 +170,8 @@ Command :
           mount /dev/<block-device-name_1>    /wm-data
           mount /dev/<block-device-name_2>    /wm-runtime  
 Example :
-          mount /dev/xvdb    /wm-data
-          mount /dev/xvdc    /wm-runtime  
+          mount /dev/xvdc    /wm-data
+          mount /dev/xvdb    /wm-runtime  
 ```
 
 [![mounting volumes](/learn/assets/wme-setup/wme-setup-in-aws/mounting-platform-instance-volumes.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/mounting-platform-instance-volumes.jpg)

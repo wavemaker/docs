@@ -82,7 +82,7 @@ An application has to be built to list the phone numbers of employees in an orga
 ```javascript
 Page.EmployeeList1Tap = function($event, widget) {
     var phoneNumber = '+14084352700' + widget.item.empId,
-    bypassAppChooser = true;
+    var bypassAppChooser = true;
     if (!Utils.hasCordova()) {
     return;
     }

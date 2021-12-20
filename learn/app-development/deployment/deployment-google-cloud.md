@@ -18,10 +18,10 @@ This document covers the Live Phase configuration for your AWS account and is a 
 2. You need to create a [Service Account](https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account) with the following settings:
     - Role set to Project Owner i.e. full access to all resources,
     - From the API Dashboard ensure that the following APIs are Enabled:
-        
+
         - Google Compute Engine API and
         - Google Cloud Resource Manager API
-        
+
         (**following shows the screen from the Google Developer Console dialog. This dialog might differ from the actual one**) [![](/learn/assets/google_account_enable.png)](/learn/assets/google_account_enable.png)
     - A downloaded file containing Private Key in JSON format (**following shows the setting from the Google Create Service Account dialog. This dialog might differ from the actual one**) [![](/learn/assets/google_account_settings.png)](/learn/assets/google_account_settings.png)
 
@@ -38,4 +38,3 @@ This document covers the Live Phase configuration for your AWS account and is a 
 5. Select the appropriate instance size based upon the resources and database utilized by your app ([see here for pricing details](https://cloud.google.com/compute/pricing))
 6. and enter the key-value instance tags ([see here for best practices for instance tagging](https://cloud.google.com/compute/docs/storing-retrieving-metadata)) [![](/learn/assets/deploy_google_instance.png)](/learn/assets/deploy_google_instance.png)
 7. Once the setup is done, you can push the app from Demo to Live. ([Continue from here](/learn/app-development/deployment/manage-deployed-apps/#push-to-live))
-

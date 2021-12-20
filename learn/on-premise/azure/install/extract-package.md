@@ -23,6 +23,7 @@ sidebar_label: "Extract Package"
   - Execute the following command to untar the file and go extracted directory.
 
     ```bash
-     tar -xvf  <WME-Installer-Filename>
-     cd /usr/local/content/wme/
-     ```
+     sudo mkdir -p  /usr/local/content/wme/wme-installer/<version>/
+     tar -xvf  <WME-Installer-Filename> -C /usr/local/content/wme/wme-installer/<version>/
+     cd /usr/local/content/wme/wme-installer/<version>/
+    ```

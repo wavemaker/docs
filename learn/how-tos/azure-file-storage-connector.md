@@ -147,3 +147,39 @@ public void deleteFile(String shareName, String filePath){
 :::note
  The filepath should be specified as '/' if the file is inside the directory. If the file is present in the share then give the file name directly.
 :::
+
+## Also see how to upload file to Azure storage using File upload widget.
+The below process shows how to upload the file using file upload widget to the azure storage.
+1. Drop File upload widget.
+2. Create Variable for uploadFile added in the Javaservice in Step 3, point 2.
+3. Invoke created Variable.
+
+### 1. Drop File upload Widget.
+Drag 'n' drop file upload widget on to the canvas.
+
+:::note
+ Remove the **FileServiceUploadFile** from the **onSelect** event default added to the file upload widget (removing this because we just want to select the file and upload to azure storage).
+:::
+
+### 2. Create Variable for the uploadFile method.
+1. Create JavaService variable for the **uploadFile** method (added in Step3, point number2). Uncheck the properties **Update data on input change** and **Request data on page load**.
+
+2. Switch to **Data** tab and bind the required inputs needed for the variable.
+    1. click on **file** input bind icon and select the file upload widget selectedFiles.(File upload selectedFiles gives info about the list of selected files)
+
+    **Example:**
+    ```Js
+    Widgets.fileupload1.selectedFiles[0]
+    ```
+    2. click on bind icon of the **filePath** input and give the upload directory path of the azure storage along with fileName.
+
+    **Example:**
+    ```JS
+    "qadir/"+Widgets.fileupload1.selectedFiles[0].name
+    ```
+    where **qadir** is the directory path in the azure storage.
+
+### 3. Invoke Created Variable.
+Drop a button on the canvas and **onClick** event of the button call the created variable.
+
+Now preview the app and select any file, the selected file will be uploaded in the directory of the azure storage.

@@ -18,6 +18,9 @@ The following list provides the currently supported versions for WME patching. K
 
 | **WME Patch release** | **Supported WME versions** |
 | --- | --- |
+| v10.10.x |  v10.6.x or higher |
+| v10.9.x  |  v10.6.x or higher |
+| v10.8.x  |  v10.6.x or higher |
 | v10.7.x  |  v10.6.x or higher |
 | v10.6.x  |  v10.5.3 or higher |
 | v10.5.3  |  v10.x.x or higher |
@@ -29,7 +32,7 @@ The following list provides the currently supported versions for WME patching. K
 
 ## Patch Inventory
 
-Following are the patch files you will need in order to install the patch on WME setup running on your host machine.
+Following are the patch files you will need in order to install the patch on the WME setup running on your host machine.
 
 - **Ubuntu**
   - patch file in deb format

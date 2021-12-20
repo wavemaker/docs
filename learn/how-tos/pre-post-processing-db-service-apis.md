@@ -4,9 +4,14 @@ id: ""
 ---
 ---
 
+:::note
+The following procedure specified in this document will no longer work. We recommend you follow [Database CRUD Operations Event Listeners](/learn/app-development/services/database-crud-event-listeners) instead.
+:::
+
+
 ## Introduction
 
-This document will go through the steps in adding pre and post processing for generated APIs in an imported Database service.
+This document will go through the steps in adding pre and post-processing for generated APIs in an imported Database service.
 
 ## Pre-requisites
 

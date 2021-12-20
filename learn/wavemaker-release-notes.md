@@ -16,9 +16,20 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
+|[WaveMaker v10.10.2](/learn/wavemaker-release-notes/v10-10-2)|Bug fixes | 16 December 2021 | -|-|
+|[WaveMaker v10.10.1](/learn/wavemaker-release-notes/v10-10-1)|Bug fixes | 29 Novemeber 2021 | -|-|
+|**[WaveMaker v10.10.0](/learn/wavemaker-release-notes/v10-10-0)**|**New features + Bug fixes** | **22 November 2021** |**v10.10.0**|**22 November 2021**   |
+|[WaveMaker v10.9.2](/learn/wavemaker-release-notes/v10-9-2)|Bug fixes | 01 November 2021 | -|-|
+|[WaveMaker v10.9.1](/learn/wavemaker-release-notes/v10-9-1)|Bug fixes | 25 October 2021 | -|-|
+|**[WaveMaker v10.9.0](/learn/wavemaker-release-notes/v10-9-0)**|**New features + Bug fixes** | **14 September 2021** | - | - |
+|[WaveMaker v10.8.2](/learn/wavemaker-release-notes/v10-8-2)|Bug fixes | 16 August 2021 | -|-|
+|WaveMaker v10.8.1| Bug fix: GoogleMaps Prefab update failure | 11 August 2021 |-|-|
+|**[WaveMaker v10.8.0](/learn/wavemaker-release-notes/v10-8-0)**|**New features + Bug fixes** | **11 August 2021** | **v10.8.0** | **16 August 2021** |
+|[WaveMaker v10.7.5](/learn/wavemaker-release-notes/v10-7-5)|Bug fixes | 26 July 2021 | -|-|
+|[WaveMaker v10.7.4](/learn/wavemaker-release-notes/v10-7-4)|Bug fixes | 19 July 2021 | -|-|
 |[WaveMaker v10.7.3](/learn/wavemaker-release-notes/v10-7-3)|Bug fixes | 12 July 2021 | -|-|
 |[WaveMaker v10.7.2](/learn/wavemaker-release-notes/v10-7-2)|Bug fixes | 21 June 2021 | -|-|
-|[WaveMaker v10.7.1](/learn/wavemaker-release-notes/v10-7-1)|Bug fixes | 27 May 2021 | -|-|
+|[WaveMaker v10.7.1](/learn/wavemaker-release-notes/v10-7-1)|Bug fixes | 27 May 2021 | v10.7.1|04 June 2021|
 |**[WaveMaker v10.7.0](/learn/wavemaker-release-notes/v10-7-0)**|**New features + Bug fixes** |**09 May 2021** | -|-|
 |[WaveMaker v10.6.9](/learn/wavemaker-release-notes/v10-6-9)|Bug fixes |22 March 2021 | -|-|
 |WaveMaker v10.6.8|Bug fix|15 March 2021 | -|-|
@@ -64,7 +75,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 ## Technology Stack
 
-Last updated: [Release: v10.7.1](/learn/wavemaker-release-notes/v10-7-1)
+Last updated: [Release: v10.10.2](/learn/wavemaker-release-notes/v10-10-2)
 
 ---
 
@@ -72,15 +83,15 @@ Last updated: [Release: v10.7.1](/learn/wavemaker-release-notes/v10-7-1)
 
 | Description | JS Library | Version |
 | --- | --- | --- |
-| JS Binding | jquery | 3.3.1 |
+| JS Binding | jquery | 3.4.1 |
 |  | jquery-ui* | 1.12.1 |
-| MVC Framework | angular | 9.1.12 |
+| MVC Framework | angular | 10.2.5 |
 |  | angular-ui-bootstrap | 3.3.6 |
-|  | ngx-bootstrap |6.2 |
+|  | ngx-bootstrap | 6.2 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
 |  | nvd3 | 1.8.6 |
-| Built-in functions | lodash | 4.17.11 |
+| Built-in functions | lodash | 4.17.19|
 | Device support, gestures | hammerjs | 2.0.8 |
 
 Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
@@ -89,31 +100,27 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | 5.3.5|
-| Security framework | Spring Security | 5.4.5|
-| XSS | Antisamy Framework <td bgcolor="#44aaf4"> 1.5.10 to 1.6.3 |
-| Java JSON utilities | Gson | 2.8.6|
-| DB Persistence library | Hibernate | 5.4.22.Final|
+|  | Spring Framework  <td bgcolor="#44aaf4"> 5.3.9 -> 5.3.13|
+| Security framework | Spring Security  | 5.5.2|
+| Java JSON utilities | Gson  |  2.8.8|
+| DB Persistence library | Hibernate | 5.5.7.Final|
 | Sample database | HSQL | 2.5.1|
-| JSON library | Jackson | 2.11.3|
-| Logging framework | SLF4j | 1.7.30 |
-|  | Log4j2 | 2.13.3 |
+| JSON library | Jackson  |  2.12.5|
+| Logging framework | SLF4j  |1.7.32 |
+| Logging Implementation | Log4j2  <td bgcolor="#44aaf4">  2.14.1 -> 2.16.0|
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
-| REST API annotations | Swagger | 1.3.10 |
-| Date Time Framework | Java 8 Date/Time API |  |
-| Json Libraries | com.tdunning |  1.8 |
-| Servlet Framework |  | 3.1 |
+| Servlet Framework |  | 3.1.0 |
+|Database Connection Pooling | HikariCP | 4.0.3 |
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
 | JDK | 1.8 |
-| Weblogic <td bgcolor="#44aaf4"> 12c (12.1.3) |
-| WebSphere <td bgcolor="#44aaf4"> 8.5.5 -> 9.0.5 |
+| WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
-| Tomcat <td bgcolor="#44aaf4"> 8.5 -> 9.0 |
-| Cordova (mobile apps) <br> Android <br> iOS | 10.0.0 <br> 9.0.0  <br> 6.1.0 |
+| Tomcat | 8.5* |
+| Cordova (mobile apps) <br> Android <br> iOS | 10.0.0 <br> 10.1.0  <br> 6.1.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 

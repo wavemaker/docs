@@ -18,7 +18,8 @@
             [     
               "app-development/ui-design/page-concepts/page-layouts",
               "app-development/ui-design/page-concepts/page-templates",
-              "app-development/ui-design/themes"            
+              "app-development/ui-design/themes",
+              "app-development/ui-design/accessibility"            
             ]
         },           
 
@@ -108,6 +109,7 @@
           "ids": 
             [            
             "app-development/variables/database-crud",
+            "app-development/services/database-crud-event-listeners",
             "app-development/variables/database-apis",
             "app-development/services/api-designer/database-service-apis"         
             ]
@@ -125,6 +127,7 @@
           [
             "app-development/services/web-services/rest-services",
             "app-development/app-security/securing-server-side-properties-rest-services",
+            "app-development/services/web-services/rest-request-timeouts",
             "app-development/services/web-services/oauth-2-0-rest-services"                 
           ]       
         },
@@ -322,6 +325,7 @@
           "ids": [
             "app-development/deployment/release-management",
             "app-development/deployment/configuration-profiles",
+            "app-development/deployment/configuration-management",
             "app-development/deployment/pipelines-phases"                                                                            
           ]
         },
@@ -682,7 +686,9 @@
             "how-tos/creating-registration-page",
             "how-tos/support-password-encryption",
             "how-tos/error-handling-wavemaker-app",
-            "how-tos/prevent-user-leaving-page-unsaved-changes"
+            "how-tos/prevent-user-leaving-page-unsaved-changes",
+            "how-tos/microfrontends-iframe",
+            "how-tos/building-pwa-app"
           ],
 
           "UI design":
@@ -746,7 +752,10 @@
             "how-tos/one-many-relationship",
             "how-tos/working-with-temporals",
             "how-tos/configuring-aws-redshiftdb",
-            "how-tos/configuring-sap-hana-clouddb"
+            "how-tos/configuring-sap-hana-clouddb",
+            "how-tos/audit-history-using-crud-listeners",
+            "how-tos/validations-using-crudListeners",
+            "how-tos/custom-business-logic-using-crud-event-listeners"
           ],
 
           "Web services":
@@ -881,7 +890,6 @@
           [
             "how-tos/using-live-form",
             "how-tos/how-tos-form",
-            "how-tos/using-wizard-cumulative-data-entry-form",
             "how-tos/live-form-tabbed-form",
             "how-tos/how-tos-live-form",            
             "how-tos/live-form-linking-another-widget",
@@ -889,15 +897,14 @@
             "how-tos/get-validation-messages-form",
             "how-tos/adding-master-detail-records-transaction",
             "how-tos/adding-parent-child-records-single-transaction",
+            "how-tos/adding-parent-child-using-form-datatable",
             "how-tos/using-cascading-select-autocomplete-live-form-fields",
             "how-tos/using-cascading-select-within-live-form",
             "how-tos/using-cascading-filter-populate-live-form",
             "how-tos/using-wizard-master-detail-live-form",
-            "how-tos/using-wizard-progressive-data-entry-live-form",
-            "how-tos/using-wizard-cumulative-data-entry-live-form",
-            "how-tos/using-wizard-progressive-data-entry-live-form",
-            "how-tos/copy-to-clipboard"
-            
+            "how-tos/copy-to-clipboard",
+            "how-tos/form-with-wizard",
+            "how-tos/form-conditional-flows"
           ],
 
           "Calendar":
@@ -976,7 +983,8 @@
           [
             "how-tos/setting-partial-page-content-accordion-within-list",
             "how-tos/setting-partial-page-content-panel-within-list-using-javascript",
-            "how-tos/how-tos-wizard"
+            "how-tos/how-tos-wizard",
+            "how-tos/dynamic-tabs-accordions"
           ],
 
           "Tree":
@@ -996,7 +1004,8 @@
             "how-tos/create-prefab-using-d3-library-datamaps",
             "how-tos/create-prefab-using-jquery-plugin",
             "how-tos/create-prefab-using-angular-module",
-            "how-tos/create-prefab-using-custom-element"
+            "how-tos/create-prefab-using-custom-element",
+            "how-tos/integrating-azure-oauth-prefab"
           ]
         
   },
@@ -1266,9 +1275,40 @@
       "wavemaker-known-issues",
       {
         "type": "subcategory",
+        "label": "Versions: 10.10.x",
+        "ids": 
+          [ 
+            "wavemaker-release-notes/v10-10-2",            
+            "wavemaker-release-notes/v10-10-1",
+            "wavemaker-release-notes/v10-10-0"
+          ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Versions: 10.9.x",
+        "ids": 
+          [             
+            "wavemaker-release-notes/v10-9-2",
+            "wavemaker-release-notes/v10-9-1",
+            "wavemaker-release-notes/v10-9-0"
+          ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Versions: 10.8.x",
+        "ids": 
+          [ 
+            "wavemaker-release-notes/v10-8-2",
+            "wavemaker-release-notes/v10-8-0"
+          ]
+      },
+      {
+        "type": "subcategory",
         "label": "Versions: 10.7.x",
         "ids": 
           [ 
+            "wavemaker-release-notes/v10-7-5",
+            "wavemaker-release-notes/v10-7-4",
             "wavemaker-release-notes/v10-7-3",
             "wavemaker-release-notes/v10-7-2",
             "wavemaker-release-notes/v10-7-1",

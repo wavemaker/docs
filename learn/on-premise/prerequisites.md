@@ -13,17 +13,17 @@ This document uses words like **VM**, **Instance** to refer a machine.
 
 ## WME Setup System Requirements
 
-WaveMaker Enterprise can be installed on any machine with the below requirements. Before you start setting up the WaveMaker Enterprise, here is a list of a minimum and recommended system requirements for the each type of Instance.
+WaveMaker Enterprise can be installed on any machine with the below requirements. Before you start setting up the WaveMaker Enterprise, here is a list of minimum and recommended system requirements for each type of Instance.
 
 ### WME Platform Instance
 
-<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;250 GB to be allocated</li><li>In case of volumes we recommend 3 disks<ul><li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 GB</li><li>/wm-data&nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li><li>/wm-runtime&nbsp; &nbsp;50 GB</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 16.04.6/18.04.5/20.04.2.0 LTS;  RHEL 7.x/8.x</li><li>Kernel 4.4 or latter</li></ul></td></tr>
+<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;250 GB to be allocated</li><li>In case of volumes we recommend 3 disks<ul><li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 GB</li><li>/wm-data&nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li><li>/wm-runtime&nbsp; &nbsp;50 GB</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 18.04.5/20.04.2.0 LTS;  RHEL 7.x/8.x</li><li>Kernel 4.4 or latter</li></ul></td></tr>
 <tr><td><strong>Software</strong></td><td><ul><li>docker 20.10.6</li><li>python 3.5 or higher</li><li>wget</li><li>container-selinux-2.107-1.el7.noarch.rpm(Only for RHEL7)</li></ul></td></tr> <tr><td><strong>Network</strong></td><td><ul><li>Static IP with valid DNS</li><li>Ports 80, 443, 8080, 22(for ssh) to developer network range</li><li>Ports to be opened on Platform Instance for Access from StudioWorkspace Instance / AppDeployment Instance<ul><li>Ports : 5000, 8500, 22, 8081, 2200, 9200, 8000-8020</li></ul></li></td></tr></tbody></table>
 
 
 ### WME StudioWorkspace Instance and AppDeployment Instance
 
-<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;200 GB to be allocated</li><li>In case of volumes we recommend 3 disks<ul><li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 GB</li><li>/data&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 16.04.6/18.04.5/20.04.2.0 LTS; RHEL 7.x, 8.x</li><li>Kernel 4.4 or 4.15</li></ul></td></tr>
+<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;200 GB to be allocated</li><li>In case of volumes we recommend 3 disks<ul><li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 GB</li><li>/data&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 18.04.5/20.04.2.0 LTS; RHEL 7.x, 8.x</li><li>Kernel 4.4 or 4.15</li></ul></td></tr>
 <tr><td><strong>Software</strong></td><td><ul><li>docker 20.10.6</li><li>python 3.5 or higher</li><li>wget</li><li>container-selinux-2.107-1.el7.noarch.rpm(only for RHEL7)</li></ul></td></tr><tr><td><strong>Network</strong></td><td><ul><li>Static IP</li><li>Ports to be Opened on StudioWorkspace Instance / AppDeployment Instance for Access from Platform Instance <ul><li>Ports: 22, 2375, 80, 5000, 9101, 9102, 9100, 9404,2200-2299, 8001-8099, 3300-3399, 9500-9599</li></ul></td></tr></tbody></table>
 
 ### Network Communication
@@ -69,7 +69,7 @@ Depending on your setup type, WaveMaker team will send one of the following.
 - Use WaveMaker Images(OVA/VHD/AMI)
   - Platform Instance OVA for Esxi 6.5 or higher
   - StudioWorkspace Instance / AppDeployment Instance OVA for Esxi 6.5 or higher
-- Checksum(sha1sum) file for each of above files.
+- Checksum(sha1sum) file for each of the above files.
 - License Key (.zip format) issued by WaveMaker, communicated to you by the WaveMaker team.
 
 ## IP Addressing and DNS Mapping
@@ -79,8 +79,8 @@ You will be needing IP Addresses for the following.
 ### IP Address
 
 - One static IP for accessing the platform machine from your developer's network.
-- Machine Static IP: This is the IP assigned to machine during setup and should be accessible on your network, or
-  - In case of VM, it will be the local IP address, which should be rout table from in your LAN.
+- Machine Static IP: This is the IP assigned to the machine during setup and should be accessible on your network, or
+  - In the case of VM, it will be the local IP address, which should be rout table from in your LAN.
   - In case of AWS instance: Private static IP for the instance within your VPC (assigned via eth0 or via ENI on eth1,ens5)
 
 ### DNS Mapping
@@ -100,6 +100,6 @@ In the preceding table, `[mycompany]` is used as an example. You may have to r
 
 - An IP range to be assigned to the Docker containers internally. The Minimum [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) (Classless Inter-Domain Routing) range for Docker container network is 24.
 
-You will be needing to assign a /24 CIDR to Docker during setup. This IP range should not be in use anywhere on your network and can be completely different from your network’s range. These IPs are assigned internally by Docker to containers and these IPs won’t be exposed on your network. 
+You will be needing to assign a /24 CIDR to Docker during setup. This IP range should not be in use anywhere on your network and can be completely different from your network’s range. These IPs are assigned internally by Docker to containers and these IPs won’t be exposed on your network.
 
 For example, if your network is using a 10.x.x.x_range and the range_192.168.x.x is not used anywhere in your network, you may assign this 192.168.x.x range to Docker. See [here](https://en.wikipedia.org/wiki/Private_network#Private_IPv4_address_spaces) for the possible LAN IP ranges.
