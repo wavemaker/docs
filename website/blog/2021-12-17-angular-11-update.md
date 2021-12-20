@@ -10,7 +10,7 @@ WaveMaker generates code for applications based on Angular 10. As part of the co
 Angular 10 is scheduled to reach the end of its support on 24th Dec 2021
 :::
 
-We invite our customers to test their applications on the WM 10.11 beta. The service is provided on request to smooth the upgrade process. Please get in touch with our [support](mailto:support@wavemaker.com) team to access the WM 10.11 beta.
+We invite our customers to test their applications on the WM 10.11 beta. The service is provided on request to smooth the upgrade process. Please get in touch with our [support](mailto:support@wavemaker.com) team to access the WM 10.11 beta service.
 
 <!--truncate-->
 
