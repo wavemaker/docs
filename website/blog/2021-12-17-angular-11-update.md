@@ -4,28 +4,29 @@ author: Swetha Kundaram
 ---
 ---
 
-WaveMaker generates code for applications based on Angular 10. As part of the continuous improvement efforts, we update WaveMaker to the next major Angular version, 11.2.x, in the **release 10.11**, scheduled for the 23rd Dec 2021. 
+WaveMaker generates code for applications based on Angular 10. As part of the continuous improvement efforts, we upgrade WaveMaker to the next major Angular version, 11, in the **release 10.11**, scheduled for the 23rd Dec 2021. 
+
+To learn more, see [Angular Version 11 - what's in the release?](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7).
 
 :::note
-Angular 10 is scheduled to reach the end of its support on 24th Dec 2021
+Angular 10 is scheduled to end its support by 24th Dec 2021. For more information, see [Angular Support Details](https://angular.io/guide/releases#support-policy-and-schedule).
 :::
 
-We invite our customers to test their applications on the WM 10.11 beta. The service is provided on request to smooth the upgrade process. Please get in touch with our [support](mailto:support@wavemaker.com) team to access the WM 10.11 beta service.
-
 <!--truncate-->
+
+### Testing Apps on WM 10.11 Beta
+
+We invite you to test your applications on the WM 10.11 beta before officially releasing the WM10.11 version. This service is exclusively provided on request to smooth the upgrade process. Please get in touch with our [support](mailto:support@wavemaker.com) team to access the WM 10.11 beta service.
+
+Test the applications containing Prefabs and Partials in particular. 
+
+- [ ] Run and test applications containing Prefabs
+- [ ] Run and test applications containing Partials
 
 ### What's Deprecated?
 
 Support of IE 9 and 10 was deprecated in Angular 10 and removed entirely in Angular 11. 
 
-### What Should you Test? 
-
-We have taken care of everything in the backend to make the change effortless. However, we suggest you test applications containing Prefabs and Partials in particular. 
-
-1. Run and test applications containing Prefabs
-2. Run and test applications containing Partials
-
 :::note
-This Angular update does not include Ivy Engine but covers performance improvements. As part of the process, we continue to use View Engine and will move to use Ivy in the subsequent major release.
+This Angular update does not include Ivy Engine but covers critical bug fixes and performance improvements. As part of the process, we continue to use View Engine and will move to use Ivy in the subsequent major release.
 :::
-
