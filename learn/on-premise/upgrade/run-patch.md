@@ -7,7 +7,7 @@ sidebar_label: "Run Patch"
 
 ## Running the Patch
 
-- When upgrading from 10.x.x to 10.10.x user needs to download the required content for the migration process. **When the user has already upgraded to 10.7.x WME Version, in that case, there is no need to download migration tar**.
+- When upgrading from 10.x.x to 10.11.x user needs to download the required content for the migration process. **When the user has already upgraded to 10.7.x WME Version, in that case, there is no need to download migration tar**.
 
 - To download migration tar please run the following command.
 
