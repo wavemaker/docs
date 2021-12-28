@@ -1,11 +1,11 @@
 ---
-title: "Announcement about Ending Support of WaveMaker 9 Projects"
+title: "Ending Support of WaveMaker 9 Projects"
 author: Swetha Kundaram
 ---
 
 The End of Support (EOS) stage marks the official withdrawal of support for WaveMaker 9.x projects. 
 
-WaveMaker app development generates Angular code, as Angular marks the official withdrawal of the previous Angular versions, including AngularJS and Angular 1.x. Therefore, WaveMaker will be ending the support of WaveMaker 9.x projects that use AngularJS and Angular 1.x by 31 Dec 2021, as [Angular announced](https://docs.angularjs.org/misc/version-support-status). The update is primarily focused on improving performance, security, and bug fixes.
+WaveMaker app development generates Angular code, as Angular marks the official withdrawal of the previous Angular versions, including AngularJS and Angular 1.x. Therefore, WaveMaker will be ending the support of WaveMaker 9.x projects that use AngularJS and Angular 1.x by 31 Jan 2022, as [Angular announced](https://docs.angularjs.org/misc/version-support-status). The update is primarily focused on improving performance, security, and bug fixes.
 
 We have covered some essential FAQs to help you understand how you can migrate to the latest version of WaveMaker Studio.
 
@@ -15,7 +15,7 @@ We have covered some essential FAQs to help you understand how you can migrate t
 
 Suppose you are using 9.x projects. In that case, WaveMaker will automatically update to the latest version of WaveMaker. The update can break applications that contain custom JavaScript code because of the Angular breaking changes. We have created a guide to help you update to the current version used by WaveMaker, Angular 10.
 
-Please note that following 31 Dec 2021, we will not be supporting project migrations. Therefore, we recommend you plan to update your WaveMaker 9 projects to receive support before the established deadline for a smooth migration process.
+Please note that following 31 Jan 2022, we will not be supporting project migrations. Therefore, we recommend you plan to update your WaveMaker 9 projects to receive support before the established deadline for a smooth migration process.
 
 ## Why is WaveMaker ending support for the 9.x version?
 
@@ -27,7 +27,7 @@ View the progress of WaveMaker features and fixes in Studio.
 
 **A glimpse of the updates**:
 
-- Outdated application stack: AngularJS ends the support by 31 Dec 2021, including security issues. [Learn more about AngularJS version support status](https://docs.angularjs.org/misc/version-support-status)
+- Outdated application stack: AngularJS ends the support by 31 Jan 2022, including security issues. [Learn more about AngularJS version support status](https://docs.angularjs.org/misc/version-support-status)
 - Latest angular stack Angular 10
 - Several performance improvements
 - Security vulnerabilities in the dependent third party libraries to get the benefits of [up to date technology stack](/learn/wavemaker-release-notes#technology-stack)
@@ -94,5 +94,6 @@ You will no longer receive support, and we cannot offer the license extension.
 - [WaveMaker 10.8](/learn/wavemaker-release-notes/v10-8-0)
 - [WaveMaker 10.9](/learn/wavemaker-release-notes/v10-9-0)
 - [WaveMaker 10.10](/learn/wavemaker-release-notes/v10-10-0)
+- [WM 10.10.3 - Log4j2 Dependency Vulnerability](/learn/wavemaker-release-notes/v10-10-3)
 
 For the detailed list of releases, including biweekly ones, see [WaveMaker Release Notes](/learn/wavemaker-release-notes).
