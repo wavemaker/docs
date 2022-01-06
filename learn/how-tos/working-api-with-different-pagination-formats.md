@@ -1,5 +1,5 @@
 ---
-title: "Importing webservice with a different pagination format"
+title: "Working with API with different pagination formats"
 id: ""
 ---
 ---
