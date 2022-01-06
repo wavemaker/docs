@@ -4,11 +4,11 @@ id: ""
 ---
 ---
 
-In this document we will learn how we can import a webservice that has pagination different from the one supported in WM. 
+In this document we will learn how we can import a webservice that has pagination different from the one supported [Spring framework] (https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Page.html). 
 
 ## Introduction
 
-If a webservice has request/response parameters as below, then the widgets (like datatable, list etc.,) will be able to detect pagination and the server side pagination will work out of the box for the widgets. The below response is a spring's [Page](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Page.html) object. But, if the request/response parameters differs from the below, then the server side pagination will not work. We will have to invoke the API inside a javaservice and explicitly return a Page object from the javaservice.
+If a webservice has request/response parameters as below, then the widgets (like datatable, list etc.,) will be able to detect pagination and the server side pagination will work out of the box for the widgets. The below response is a spring's [Page](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Page.html) object. 
 
 **Request**:
 
@@ -16,10 +16,10 @@ If a webservice has request/response parameters as below, then the widgets (like
 
 **Response**:
 
-```
+```json
 {
     "content" : [
-        // list of the resources
+        
     ],
     "empty" : false,
     "first" : false,
@@ -33,11 +33,12 @@ If a webservice has request/response parameters as below, then the widgets (like
 }
 ```
 
-The above response here is spring's [
+But, if the request/response parameters differs from above pattern, then the server side pagination will *not* work. We will have to invoke the API inside a javaservice and explicitly return a Page object conforming to the pattern that is recognised by WaveMaker.
 
 ## Steps to Create the JavaService
 
 In this example, we will assume an API accepting limit (instead of size) and page parameters, ex: `GET /employee?page=1&limit=2`, and the response in below format. 
+
 ```
 { 
 	"records" : [
