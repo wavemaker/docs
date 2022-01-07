@@ -4,7 +4,7 @@ id: ""
 ---
 ---
 
-In this document we will learn how we can import a webservice that has pagination different from the one supported [Spring framework] (https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Page.html). 
+In this document we will learn how we can import a webservice that has pagination different from the one supported in [Spring framework](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Page.html). 
 
 ## Introduction
 
