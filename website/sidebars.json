@@ -766,7 +766,7 @@
             "how-tos/request-response-processing-rest-services",
             "how-tos/intercept-requests-responses-api-calls-one-place",
             "how-tos/websocket-usage-chatroom-app",
-            "how-tos/importing-webservice-with-different-pagination-type"
+            "how-tos/working-api-with-different-pagination-formats"
           ],
 
           "Java services":
