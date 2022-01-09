@@ -16,6 +16,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
+|[WaveMaker v10.10.3](/learn/wavemaker-release-notes/v10-10-3)|Bug fixes | 23 December 2021 | -|-|
 |[WaveMaker v10.10.2](/learn/wavemaker-release-notes/v10-10-2)|Bug fixes | 16 December 2021 | -|-|
 |[WaveMaker v10.10.1](/learn/wavemaker-release-notes/v10-10-1)|Bug fixes | 29 Novemeber 2021 | -|-|
 |**[WaveMaker v10.10.0](/learn/wavemaker-release-notes/v10-10-0)**|**New features + Bug fixes** | **22 November 2021** |**v10.10.0**|**22 November 2021**   |
@@ -75,7 +76,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 ## Technology Stack
 
-Last updated: [Release: v10.10.2](/learn/wavemaker-release-notes/v10-10-2)
+Last updated: [Release: v10.10.3](/learn/wavemaker-release-notes/v10-10-3)
 
 ---
 
@@ -100,14 +101,14 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework  <td bgcolor="#44aaf4"> 5.3.9 -> 5.3.13|
+|  | Spring Framework  | 5.3.13|
 | Security framework | Spring Security  | 5.5.2|
 | Java JSON utilities | Gson  |  2.8.8|
 | DB Persistence library | Hibernate | 5.5.7.Final|
 | Sample database | HSQL | 2.5.1|
 | JSON library | Jackson  |  2.12.5|
 | Logging framework | SLF4j  |1.7.32 |
-| Logging Implementation | Log4j2  <td bgcolor="#44aaf4">  2.14.1 -> 2.16.0|
+| Logging Implementation | Log4j2  <td bgcolor="#44aaf4">  2.16.0 -> 2.17.0|
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
 | Servlet Framework |  | 3.1.0 |
 |Database Connection Pooling | HikariCP | 4.0.3 |
