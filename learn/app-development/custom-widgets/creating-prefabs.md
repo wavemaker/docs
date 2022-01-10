@@ -142,7 +142,17 @@ Publishing a Prefab has the following options:
 
 - **Publish to Project:** Prefab can be made available to a specific project in your project workspace or network for testing purpose only.
     - The Prefab will only appear in the specified project's widgets panel for use
-    - The Project which is using a test Prefab cannot be pushed to VCS
+    - The Project which is using a test Prefab cannot be pushed to VCS. Inorder to push changes to VCS, the test prefab needs to be either [published to Team](#publish-prefab-to-team) or [published to EDN](#publish-prefab-to-edn)(for Enterprise Version).
+    - If the test prefab is already published to Team or EDN earlier, when you open that project you will be prompted either to choose a version and click **update/revert** for getting a published version in the project or continue with the modified, unpublished version.
+  
+      [![](/learn/assets/update-test-prefab-case1.png)](/learn/assets/update-test-prefab-case1.png)
+
+    - If the test prefab is not published to Team or EDN, it should be **imported** into the selected project from Prefabs dialog under Artifacts dropdown. Once imported, refresh the project.
+      
+      [![](/learn/assets/import_team_prefab_step1.png)](/learn/assets/import_team_prefab_step1.png)
+    
+
+
 - **Publish to Workspace** (non-enterprise version):
     - The Prefab will appear in the Widget Panel for all projects within your workspace [![](/learn/assets/prefab_publish_ws.png)](/learn/assets/prefab_publish_ws.png)
 - **Publish to EDN** (enterprise version)**: **Approval needed by EDN Admin
@@ -184,6 +194,22 @@ You need to remember the following:
     - You have published the Prefab directly to the project, or,
     - You have imported a project zip file and it uses a Prefab that does not exist in your workspace, or,
     - You have deleted the Prefab from the Artifacts dialog.
+
+## Publish Prefab to Team
+- You can publish the Prefab to Team, and make it available to the entire team.
+  [![](/learn/assets/prefab_publish_team.png)](/learn/assets/prefab_publish_team.png)
+
+- Select a category and fill the required details and publish.
+  [![](/learn/assets/prefab_publish_team1.png)](/learn/assets/prefab_publish_team1.png)
+
+- Once the prefab is published, it needs to be approved by the Team Admin from Team Portal.
+  [![](/learn/assets/prefab_publish_team2.png)](/learn/assets/prefab_publish_team2.png)
+
+- After the Admin's approval, these Prefabs will be available for import from Prefabs dialog under Artifacts dropdown.
+  [![](/learn/assets/import_team_prefab_step1.png)](/learn/assets/import_team_prefab_step1.png)
+  
+  [![](/learn/assets/import_team_prefab_step2.png)](/learn/assets/import_team_prefab_step2.png)
+
 
 ## Update Prefab
 
