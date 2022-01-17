@@ -23,7 +23,7 @@ Go to **APIs** section, and select **Imported APIs**.
 
 Import Swagger from a URL or a File.
 
-- **File**: Supports `.json`  
+- **File**: Supports `.json`,`.yaml`  
 - **URL**: The service URL that hosts the REST service.  
 
 For example, see [Swagger Petstore Project](http://petstore.swagger.io/).  
