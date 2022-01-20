@@ -140,14 +140,14 @@ The preview option on Prefab allows you to test your Prefab. The following optio
 
 Publishing a Prefab has the following options:
 
-- **Publish to Project:** Prefab can be made available to a specific project in your project workspace or network for testing purpose only.
+- **Publish to Project:** Prefab can be made available to a specific project in your project workspace or network for testing purposes only.
     - The Prefab will only appear in the specified project's widgets panel for use
-    - The Project which is using a test Prefab cannot be pushed to VCS. Inorder to push changes to VCS, the test prefab needs to be either [published to Team](#publish-prefab-to-team) or [published to EDN](#publish-prefab-to-edn)(for Enterprise Version).
-    - If the test prefab is already published to Team or EDN earlier, when you open that project you will be prompted either to choose a version and click **update/revert** for getting a published version in the project or continue with the modified, unpublished version.
+    - The Project which is using a test Prefab cannot be pushed to VCS. In order to push changes to VCS, the test prefab needs to be either [published to Teams](#publish-prefab-to-team) or [published to EDN](#publish-prefab-to-edn) (for Enterprise Version).
+    - When a published test Prefab releases a newer version, which is already published to Team or EDN earlier, opening that project will be prompt you with the following dialog. You can choose a version and click **update/revert** for using a published version in the project or continue with the modified, unpublished version.
   
       [![](/learn/assets/update-test-prefab-case1.png)](/learn/assets/update-test-prefab-case1.png)
 
-    - If the test prefab is not published to Team or EDN, it should be **imported** into the selected project from Prefabs dialog under Artifacts dropdown. Once imported, refresh the project.
+    - If the test prefab is not published to Team or EDN, it should be **imported** into the selected project from Prefabs dialog. Go to **Artifacts** dropdown and click **Prefabs**. Once imported, refresh the project.
       
       [![](/learn/assets/import_team_prefab_step1.png)](/learn/assets/import_team_prefab_step1.png)
     
