@@ -309,7 +309,8 @@
           "label": "Add-ons",
           "ids": [
             "app-development/wavemaker-overview/localization",
-            "app-development/wavemaker-overview/artifacts-repository"
+            "app-development/wavemaker-overview/artifacts-repository",
+            "app-development/wavemaker-overview/team-artifacts"
           ]
         }
     ],
