@@ -2,7 +2,7 @@
 title: WaveMaker Release Notes
 id: ""
 ---
-Find what's new in WaveMaker. See information related to bug fixes, new features, and improvements from WaveMaker.
+Find what's new in WaveMaker. See information about bug fixes, new features, and improvements from WaveMaker.
 
 ---
 
@@ -16,6 +16,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
+|[WaveMaker v10.11.1](/learn/wavemaker-release-notes/v10-11-1)|Bug fixes| 24 January 2022 |Bug fixes|12 January 2021 |
 |[WaveMaker v10.11.0](/learn/wavemaker-release-notes/v10-11-0)|New features + Bug fixes| 10 January 2022 |New features + Bug fixes|24 December 2021 |
 |[WaveMaker v10.10.3](/learn/wavemaker-release-notes/v10-10-3)|Bug fixes | 23 December 2021 | -|-|
 |[WaveMaker v10.10.2](/learn/wavemaker-release-notes/v10-10-2)|Bug fixes | 16 December 2021 | -|-|
@@ -77,7 +78,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 ## Technology Stack
 
-Last updated: [Release: v10.10.3](/learn/wavemaker-release-notes/v10-10-3)
+Last updated: [Release: v10.11.1](/learn/wavemaker-release-notes/v10-11-1)
 
 ---
 
@@ -87,7 +88,7 @@ Last updated: [Release: v10.10.3](/learn/wavemaker-release-notes/v10-10-3)
 | --- | --- | --- |
 | JS Binding | jquery | 3.4.1 |
 |  | jquery-ui* | 1.12.1 |
-| MVC Framework | angular | 10.2.5 |
+| MVC Framework | angular| 11.2.14 |
 |  | angular-ui-bootstrap | 3.3.6 |
 |  | ngx-bootstrap | 6.2 |
 | Styles | bootstrap | 3.3.7 |
@@ -102,14 +103,14 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework  | 5.3.13|
+|  | Spring Framework  |5.3.13|
 | Security framework | Spring Security  | 5.5.2|
 | Java JSON utilities | Gson  |  2.8.8|
 | DB Persistence library | Hibernate | 5.5.7.Final|
 | Sample database | HSQL | 2.5.1|
 | JSON library | Jackson  |  2.12.5|
 | Logging framework | SLF4j  |1.7.32 |
-| Logging Implementation | Log4j2  <td bgcolor="#44aaf4">  2.16.0 -> 2.17.0|
+| Logging Implementation | Log4j2  <td bgcolor="#44aaf4">  2.17.0 -> 2.17.1 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
 | Servlet Framework |  | 3.1.0 |
 |Database Connection Pooling | HikariCP | 4.0.3 |
