@@ -309,8 +309,7 @@
           "label": "Add-ons",
           "ids": [
             "app-development/wavemaker-overview/localization",
-            "app-development/wavemaker-overview/artifacts-repository",
-            "app-development/wavemaker-overview/team-artifacts"
+            "app-development/wavemaker-overview/artifacts-repository"
           ]
         }
     ],
@@ -478,6 +477,7 @@
       "teams/dashboard",
       "teams/manage-users",
       "teams/manage-projects",
+      "teams/manage-prefabs",
       "teams/project-branch",
       "teams/manage-roles",
       "teams/code-repository",
