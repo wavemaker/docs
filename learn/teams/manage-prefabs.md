@@ -10,9 +10,9 @@ In this document, learn how to
 
 1. [Publish Prefab to Teams](#publish-prefab-to-teams)
 2. [Versioning Prefab](#versioning-prefab)
-3. [Using Version-specific Prefab](#using-version-specific-prefab)
-4. [Enable Prefab sharing across Team members](#prefab-administration)
-5. [Import Prefab from WaveMaker Studio](#consuming-prefab-by-team-members)
+3. [Prefab Administration](#prefab-administration)
+4. [Using Prefab by Team Members](#using-prefab-by-team-members)
+5. [Using Version-specific Prefab](#using-version-specific-prefab)
 
 ## Publish Prefab to Teams
 
@@ -42,7 +42,7 @@ Set the following properties in the **Publish Prefab to Team** dialog.
 **Configuration**
 
 5. **Metadata**: Displays current WaveMaker platform version details.
-6. **Tags**: Add tags to search Prefabs easily.
+6. **Tags**: Add tags to enable Prefab search optimization.
 
 **Documentation**
 
@@ -55,6 +55,58 @@ Set the following properties in the **Publish Prefab to Team** dialog.
 **Summary**
 
 Verify the details in the configuration summary of the Prefab and click **Publish**. The published Prefab will be queued for [approval by administrator](#prefab-administration). 
+
+## Prefab Administration
+
+Enable Prefab sharing across Team members.
+
+- Log in to the Team Portal as an administrator.
+
+![Prefabs administration](/learn/assets/admin-prefabs.png)
+
+- Go to **Manage Prefabs** and click **Pending Approvals**. A list of Prefabs displays that are ready for review.
+
+### Approve Prefab
+
+- Select the Prefab to evaluate it. You can edit the Category, Tags, and more. 
+
+![approve prefab](/learn/assets/approve-prefab.png)
+
+- Click **Approve**. 
+
+![prefab approved](/learn/assets/prefab-approved.png)
+
+- You can view the approved ones under the **Approved Prefabs** tab.
+
+:::note
+When a Prefab is approved, the team members can view approved Prefabs in the **[Team Prefabs](/learn/teams/manage-prefabs#using-prefab-by-team-members)** tab. Team members can start using them.
+:::
+
+### Reject Prefab
+
+- When you **Reject**, you can add remarks. 
+
+![reject prefab](/learn/assets/reject-prefab.png)
+
+- You can view the unapproved Prefabs under the **Rejected** tab.
+
+![rejected prefabs](/learn/assets/prefab-rejected.png)
+
+## Using Prefab by Team Members
+
+You can start using the Prefab in WaveMaker Studio once the admin approves the Prefab. However, you must import the approved Prefab from **Team Prefabs** to access it from the left nav Prefab section. 
+
+- Go to **Artifacts** -> **Prefabs** -> **Team Prefabs**.
+
+![locate prefab versions](/learn/assets/artifacts-prefabs.png)
+
+- Select the Prefab and its version and click **Import**.
+
+![import prefab](/learn/assets/import-prefab.png)
+
+- **Project Prefabs** are Prefabs that are used in the project.
+- **Team Prefabs** are the team-developed Prefab that only the team members of the authorized group can access and use. 
+- **System Prefabs** are the default ones that come with WaveMaker.
 
 ## Using Version-specific Prefab
 
@@ -72,37 +124,3 @@ Update a Prefab used in your application to a specific version instead of straig
 - Choose the version from the dropdown and click **Update**.
 
 ![Prefab Version update 2](/learn/assets/artifact-prefab-choose-version.png)
-
-## Prefab Administration
-
-1. Log in to the team portal as an administrator. 
-
-![Prefabs administration](/learn/assets/admin-prefabs.png)
-
-2. Go to **Manage Prefabs** and click **Pending Approvals**. A list of Prefabs displays that are ready for review.
-
-![approve or reject](/learn/assets/approve-or-reject-prefab.png)
-
-3. Select the Prefab to evaluate it. You can edit the Category, Tags, and more. 
-4. Choose **Approve or Reject** the Prefab. 
-4. When you reject, you can add remarks. 
-
-:::note
-When an Artifact is approved, all team members can view approved Artifacts in the approval tab of Team Prefabs. 
-:::
-
-## Consuming Prefab by Team Members
-
-You can start using the Prefab in WaveMaker Studio once the admin approves the Prefab. However, you must import the approved Prefab from **Team Prefabs** to access it from the left nav Prefab section. 
-
-- Go to **Artifacts** -> **Prefabs** -> **Team Prefabs**.
-
-![locate prefab versions](/learn/assets/artifacts-prefabs.png)
-
-- Select the Prefab and its version and click **Import**.
-
-![import prefab](/learn/assets/import-prefab.png)
-
-- **Project Prefabs** are Prefabs that are used in the project.
-- **Team Prefabs** are the team-developed Prefab that only the team members of the authorized group can access and use. 
-- **System Prefabs** are the default ones that come with WaveMaker.
