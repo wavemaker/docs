@@ -8,9 +8,11 @@ id: ""
 
 In this document, learn how to
 
-1. [Publish Prefab to Teams and Versioning](#publish-prefab-to-teams)
-2. [Enable Prefab sharing across Team members](#prefab-administration)
-3. [Import Prefab from WaveMaker Studio](#consuming-prefab-by-team-members)
+1. [Publish Prefab to Teams](#publish-prefab-to-teams)
+2. [Versioning Prefab](#versioning-prefab)
+3. [Using Version-specific Prefab](#using-version-specific-prefab)
+4. [Enable Prefab sharing across Team members](#prefab-administration)
+5. [Import Prefab from WaveMaker Studio](#consuming-prefab-by-team-members)
 
 ## Publish Prefab to Teams
 
@@ -22,7 +24,7 @@ Publish a Prefab to enable team members to access from within WaveMaker Studio. 
 
 ![publish to team](/learn/assets/prefab-publish-to-team.png)
 
-### Versioning Prefab
+## Versioning Prefab
 
 Set the following properties in the **Publish Prefab to Team** dialog.
 
@@ -44,9 +46,9 @@ Set the following properties in the **Publish Prefab to Team** dialog.
 
 **Documentation**
 
-7. **Properties**: It describes when you configure Config Profile Prefab properties.
-8. **Methods**: 
-9. **Events**: 
+7. **Properties**: [Configure Properties](/learn/app-development/custom-widgets/creating-prefabs#properties) of the Prefab from **Settings** -> **Config Profile**.
+8. **Methods**: [Configure Methods](/learn/app-development/custom-widgets/creating-prefabs#methods) of the Prefab from **Settings** -> **Config Profile**.
+9. **Events**: [Configure Events](/learn/app-development/custom-widgets/creating-prefabs#events) of the Prefab from **Settings** -> **Config Profile**.
 
 ![](/learn/assets/publish-prefab.png)
 
@@ -54,7 +56,7 @@ Set the following properties in the **Publish Prefab to Team** dialog.
 
 Verify the details in the configuration summary of the Prefab and click **Publish**. The published Prefab will be queued for [approval by administrator](#prefab-administration). 
 
-### Choose Version-specific Prefab
+## Using Version-specific Prefab
 
 Update a Prefab used in your application to a specific version instead of straight upgrading to the latest one. There are two ways to update versions of a Prefab. 
 
