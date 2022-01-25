@@ -477,6 +477,7 @@
       "teams/dashboard",
       "teams/manage-users",
       "teams/manage-projects",
+      "teams/manage-prefabs",
       "teams/project-branch",
       "teams/manage-roles",
       "teams/code-repository",
