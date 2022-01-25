@@ -94,7 +94,7 @@ When a Prefab is approved, the team members can view approved Prefabs in the **[
 
 ## Using Prefab by Team Members
 
-You can start using the Prefab in WaveMaker Studio once the admin approves the Prefab. However, you must import the approved Prefab from **Team Prefabs** to access it from the left nav Prefab section. 
+You can start using approved Prefabs in WaveMaker Studio. However, you must import the approved Prefab from **Team Prefabs** to access it from the left nav section of **Widgets and Prefabs**. 
 
 - Go to **Artifacts** -> **Prefabs** -> **Team Prefabs**.
 
