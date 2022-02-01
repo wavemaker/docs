@@ -10,13 +10,13 @@ WaveMaker always works on bringing new features and improvements to the product.
 
 If you notice a bug and want to report it to us, please contact [support](mailto:support@wavemaker.com). We will mention your fixes in the release notes, and you can also track some of the known issues documented [here](/learn/wavemaker-known-issues).
 
-## Current Release Details
+## Release History
 
 ---
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
-|[WaveMaker v10.12.0](/learn/wavemaker-release-notes/v10-12-0)|Bug fixes | 01 Feburary 2022 | -|-|
+|[WaveMaker v10.12.0](/learn/wavemaker-release-notes/v10-12-0)|Bug fixes | 02 Feburary 2022 | -|-|
 |[WaveMaker v10.11.1](/learn/wavemaker-release-notes/v10-11-1)|Bug fixes| 24 January 2022 |Bug fixes|12 January 2021 |
 |[WaveMaker v10.11.0](/learn/wavemaker-release-notes/v10-11-0)|New features + Bug fixes| 10 January 2022 |New features + Bug fixes|24 December 2021 |
 |[WaveMaker v10.10.3](/learn/wavemaker-release-notes/v10-10-3)|Bug fixes | 23 December 2021 | -|-|
