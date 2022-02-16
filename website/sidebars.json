@@ -313,6 +313,11 @@
           ]
         }
     ],
+   
+    "Developer Tool":
+    [
+      "app-development/chrome-developer-tool"
+    ],
 
     "Deployment":
     [ 
