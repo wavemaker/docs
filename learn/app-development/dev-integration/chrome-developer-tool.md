@@ -18,20 +18,16 @@ All WaveMaker users who use Google Chrome to preview the application can install
 
 ## Why WaveMaker Devtool
 
-Typical challenges that WaveMaker application developers experience while debugging.
+Typical challenges that WaveMaker application developers experience while debugging. 
 
 1. Developers go through many application logs when an issue is observed; for example, when adding new changes to the application, the page does not load. 
 2. Developers often miss out on immediate details of the issue to determine which variables are responsible for the request and fix the encountered issue. 
 
-### How Devtool can help
-
-WaveMaker has developed the **WaveMaker Devtool** Chrome extension to ease the debugging process and improve the application performance. You can easily identify duplicate requests triggered on the page and check which requests take more time to respond to.
-
 [![](/learn/assets/extension.png)](/learn/assets/extension.png)
 
-## Using the WaveMaker Devtool 
+## How Devtool can help
 
-Once you install the extension and preview a WaveMaker application on Preview mode, you can:
+WaveMaker Devtool Chrome extension helps ease the debugging process and improve the application performance. Once you install the extension and preview a WaveMaker application on Preview mode, you can:
 
 1. View the duplicate requests triggered on the page using the **Show only duplicates** option. 
 2. Find the **Variable** associated with each request along with the request URL. 
