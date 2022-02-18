@@ -289,6 +289,7 @@
     "Developer options": 
     [
         "app-development/dev-integration/developer-tools",
+        "app-development/dev-integration/chrome-developer-tool",
         "app-development/deployment/build-options",
         "app-development/dev-integration/inspection-framework",
         "app-development/dev-integration/debugging",
