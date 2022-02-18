@@ -23,6 +23,8 @@ Typical challenges that WaveMaker application developers experience while debugg
 
 WaveMaker has developed the **WaveMaker Devtool** Chrome extension to ease the debugging process and improve the application performance. You can easily identify duplicate requests triggered on the page and check which requests take more time to respond to.
 
+[![](/learn/assets/extension.png)](/learn/assets/extension.png)
+
 ## Who can use WaveMaker Devtool 
 
 All WaveMaker users who use Google Chrome to preview the application can install the **WaveMaker Devtool** extension and use it. 
@@ -34,3 +36,5 @@ Once you install the extension and preview a WaveMaker application on Preview mo
 1. View the duplicate requests triggered on the page using the **Show only duplicates** option. 
 2. Find the variable associated with each request along with the request URL. 
 3. Switch to **All APIs** to view all the requests triggered by the page. By default, the **Core APIs** of the page are shown. 
+
+[![](/learn/assets/show-only-duplicates.png)](/learn/assets/show-only-duplicates.png)
