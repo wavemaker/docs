@@ -12,6 +12,10 @@ sidebar_label: "Chrome Extension: Devtool"
 - Google Chrome browser
 - Be Logged into WaveMaker to view the logs
 
+### Who can use WaveMaker Devtool 
+
+All WaveMaker users who use Google Chrome to preview the application can install the **WaveMaker Devtool** extension and use it. 
+
 ## Why WaveMaker Devtool
 
 Typical challenges that WaveMaker application developers experience while debugging.
@@ -25,16 +29,12 @@ WaveMaker has developed the **WaveMaker Devtool** Chrome extension to ease the d
 
 [![](/learn/assets/extension.png)](/learn/assets/extension.png)
 
-## Who can use WaveMaker Devtool 
-
-All WaveMaker users who use Google Chrome to preview the application can install the **WaveMaker Devtool** extension and use it. 
-
 ## Using the WaveMaker Devtool 
 
 Once you install the extension and preview a WaveMaker application on Preview mode, you can:
 
 1. View the duplicate requests triggered on the page using the **Show only duplicates** option. 
-2. Find the variable associated with each request along with the request URL. 
-3. Switch to **All APIs** to view all the requests triggered by the page. By default, the **Core APIs** of the page are shown. 
+2. Find the **Variable** associated with each request along with the request URL. 
+3. You can switch to **All APIs** to view all the requests triggered by the page. By default, the page shows **Core APIs**. 
 
 [![](/learn/assets/show-only-duplicates.png)](/learn/assets/show-only-duplicates.png)
