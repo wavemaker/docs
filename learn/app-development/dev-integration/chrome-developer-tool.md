@@ -1,5 +1,5 @@
 ---
-title: "Devtool Google Chrome Extension"
+title: "Google Chrome Extension: WaveMaker Devtool"
 id: "chrome-developer-tool"
 sidebar_label: "Chrome Extension: Devtool"
 ---
