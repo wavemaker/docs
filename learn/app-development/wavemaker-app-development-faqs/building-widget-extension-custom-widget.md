@@ -27,5 +27,5 @@ Prefabs can be used:
 
 ## See Also
 [FAQs](/learn/app-development/wavemaker-app-development-faqs)  
-[Prefab - Custom Widgets](/learn/app-development/custom-widgets/custom-widgets)   
+[Prefab - Custom Widgets](/learn/app-development/custom-widgets/prefabs-overview)   
 
