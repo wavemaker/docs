@@ -93,6 +93,12 @@ sudo apt-get install python3 -y
   ```
 
 - If the user given to the Platform doesn't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.  
+- Create a user group if not present in system
+  
+  ```bash
+    sudo groupadd <user>
+  ```
+
 - Have to execute these commands from privileged users.
   - Add user to the docker group.  
   - Make the user as an owner for the docker systemd process.
@@ -223,6 +229,12 @@ Use the same version numbers as mentioned.
 ### Extra configurations on RHEL StudioWorkspace Instance / AppDeployment Instance if ssh user doesn't have privileges(non sudo users)
 
 - If the user given to the Platform doesn't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
+- Create a user group if not present in StudioWorkspace Instance / AppDeployment Instance .
+  
+  ```bash
+    sudo groupadd <user>
+  ```
+
 - Have to execute these commands as a privileged user.
   - Add user to the docker group.
   - Make a user the owner of the docker systemd process
