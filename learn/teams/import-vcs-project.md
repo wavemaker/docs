@@ -5,7 +5,7 @@ sidebar_label: "Import VCS Project"
 ---
 ---
 
-Create a WaveMaker project using existing repository URL from VCS (Version Control Systems). For this, you will need VCS clone URL to create a project in WaveMaker Studio. 
+Create a WaveMaker project using the existing repository URL from VCS (Version Control Systems). For this, you will need VCS clone URL to create a project in WaveMaker Studio. 
 
 **Supported VCS providers**: GitHub and GitLab
 
@@ -14,7 +14,7 @@ Create a WaveMaker project using existing repository URL from VCS (Version Contr
 Typically, you may use this feature in the following scenarios:
 
 - To transfer projects from one VCS provider to another. 
-- To change group/organization name of an existing repository.
+- To change the group/organization name of an existing repository.
 
 :::note
 The repository clone URL should contain WaveMaker code for the project to be imported.
@@ -23,10 +23,6 @@ The repository clone URL should contain WaveMaker code for the project to be imp
 ### Configure VCS Provider in Teams
 
 The repository clone URL should be of the default VCS. For more information, see [Code Repository Setup](/learn/teams/code-repository#add-code-repository).
-
-:::note
-If the VCS branch is not provided, it picks the branch which is configured as default in the VCS.
-:::
 
 ### Get the VCS Clone URL
 
@@ -40,11 +36,14 @@ Invoke the API for GitHub and GitLab providers using services like Postman, Curl
 
 ### GitHub
 
+Following is a sample API request.
+
 POST
 ```
-https://stage-studio.wavemakeronline.com/edn-services/rest/projects
+https://www.wavemakeronline.com/edn-services/rest/projects
 ```
-```
+
+```json
 Sample Request Body
 {
     "name": "temporarytwo",
@@ -53,21 +52,27 @@ Sample Request Body
     "projectType": "APPLICATION",
     "platformType": "WEB",
     "icon": "default.png",
-    "vcsRepoURL": "https://github.com/sports-apps/ukraine.git",
-    "vcsBranch": "developer",
+    "vcsRepoURL": "https://github.com/sports-apps/temporarytwo.git",
+    "vcsBranch": "developer", // this is optional - see note below
     "artifactVersion": {
     "artifactId": ""
     }
 }
 ``` 
+
+:::note
+If the VCS branch is not provided, it picks the branch which is configured as default in the VCS configuration.
+:::
  
 ### GitLab
 
+Following is a sample API request.
+
 POST
 ```
-https://stage-studio.wavemakeronline.com/edn-services/rest/projects
+https://www.wavemakeronline.com/edn-services/rest/projects
 ```
-```
+```json
 Sample Request Body
 {
     "name": "gitlabsports",
@@ -76,12 +81,15 @@ Sample Request Body
     "projectType": "APPLICATION",
     "platformType": "WEB",
     "icon": "default.png",
-    "vcsRepoURL": "https://gitlab.wavemaker.com/wm-test/Sports.git",
-    "vcsRepoId": 317,
-    "vcsBranch": "developer",
+    "vcsRepoURL": "https://gitlab.wavemaker.com/wm-test/gitlabsports.git",
+    "vcsRepoId": 317, //Provide GitLab projectId
+    "vcsBranch": "developer", // this is optional - see note below
     "artifactVersion": {
     "artifactId": ""
     }
-
 }
 ```
+
+:::note
+If the VCS branch is not provided, it picks the branch which is configured as default in the VCS configuration.
+:::
