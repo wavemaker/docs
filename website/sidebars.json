@@ -482,6 +482,7 @@
       "teams/project-branch",
       "teams/manage-roles",
       "teams/code-repository",
+      "teams/import-vcs-project",
       "teams/team-profile",
       "teams/manage-subscription",
       "teams/faqs"
