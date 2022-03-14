@@ -3,7 +3,7 @@ title: "XSS in WaveMaker Apps"
 author: V N P Sairama Krishna Bonala
 --- 
 ---
-
+---
 ## Cross Site Scripting (XSS)
 [XSS](https://owasp.org/www-community/attacks/xss/) is a type of security attack in which malicious scripts are injected into web applications to execute, generally in the form of a browser side script to an end-user.
 
