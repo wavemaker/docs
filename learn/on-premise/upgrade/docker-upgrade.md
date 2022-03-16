@@ -75,7 +75,7 @@ Upgrade or Install the latest version of Docker.
 - Remove the current Docker Engine.
 
 ```bash
-  rpm -e <installed-package> or yum remove docker-ce docker-ce-cli containerd.io -y
+  rpm -e <installed-package>
   example: rpm -e docker-ce.x86_64
 ```
 
