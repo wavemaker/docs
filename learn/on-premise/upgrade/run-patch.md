@@ -7,7 +7,7 @@ sidebar_label: "Run Patch"
 
 ## Running the Patch
 
-- When upgrading from 10.x.x to 10.10.x user needs to download the required content for the migration process. **When the user has already upgraded to 10.7.x WME Version, in that case, there is no need to download migration tar**.
+- When upgrading from 10.x.x to 10.13.x user needs to download the required content for the migration process. **When the user has already upgraded to 10.7.x WME Version, in that case, there is no need to download migration tar**.
 
 - To download migration tar please run the following command.
 
@@ -43,7 +43,7 @@ sidebar_label: "Run Patch"
 - Check all User WorkspaceInstance/AppDeployment Instances status in Launchpad.
 - You can start working on Studio once the Instance status has started.
 - If the Instance status UPGRADE_FAILED, then there might be chances of docker version mismatch. You can upgrade docker version using [Manual Docker Upgrade](/learn/on-premise/upgrade/docker-upgrade).
-- Please upgrade the Docker version if it is older than 20.6 in your User WorkspaceInstance/AppDeployment Instances.
+- Please upgrade the Docker version if it is older than 20.10.7 in your User WorkspaceInstance/AppDeployment Instances.
 
 ## Running the UI Patch
 
