@@ -35,7 +35,7 @@ Access at http://apimock.wavemakeronline.com
 
 - The API Mock Service starts running within seconds and a Mock API URL is accessible
 
-[![](/learn/assets/running-mock-service.png)](/learn/assets/running-mock-service.png)
+[![](/learn/assets/running-mock-services.png)](/learn/assets/running-mock-services.png)
 
 #### Step 3: Import API in Wavemaker Studio
 - Copy Mock API URL
