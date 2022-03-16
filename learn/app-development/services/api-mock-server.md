@@ -22,13 +22,13 @@ Getting quick and consistent feedback while testing a front end development is i
 
 ## Setting up a Mock Server
 #### Step 1: Access API Mock Server
-Visit http://apimock.wavemakeronline.com
+Access at http://apimock.wavemakeronline.com
 
 [![](/learn/assets/create-mock-api.png)](/learn/assets/create-mock-api.png)
 
 #### Step 2: Create Mock API
 - Click Create Mock API
-- Upload Swagger Schema File and Add service name
+- Upload or Drag and Drop Swagger Schema file and Add service name
 - Choose a Locale for locale-specific mock data and Click Create
 
 [![](/learn/assets/upload-swagger-json-for-mock-api.png)](/learn/assets/upload-swagger-json-for-mock-api.png)
