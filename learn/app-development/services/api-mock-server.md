@@ -41,7 +41,7 @@ Access at http://apimock.wavemakeronline.com
 - Copy Mock API URL
 - In Wavemaker Studio, Click on APIs and Imported APIs.
 
-[![](/learn/assets/import-apis-screen.png)](/learn/assets/rimport-apis-screen.png)
+[![](/learn/assets/import-api-screen.png)](/learn/assets/import-api-screen.png)
 
 - Paste the Mock API URL and Click next
 
@@ -53,5 +53,5 @@ Access at http://apimock.wavemakeronline.com
 
 - The mocked API is now accessible in Wavemaker Studio.
 
-[![](/learn/assets/successful-mock-api-import.png)](/learn/assets/successful-mock-api-import.png)
+[![](/learn/assets/successful-mocked-service.png)](/learn/assets/successful-mocked-service.png)
 
