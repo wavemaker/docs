@@ -24,13 +24,17 @@ Getting quick and consistent feedback while testing a front end development is i
 #### Step 1: Access API Mock Server
 Visit http://apimock.wavemakeronline.com
 
-
+[![](/learn/assets/create-mock-api.png)](/learn/assets/create-mock-api.png)
 #### Step 2: Create Mock API
 - Click Create Mock API
 - Upload Swagger Schema File and Add service name
-- Choose a Locale for locale-specific mock data
+- Choose a Locale for locale-specific mock data and Click Create
 
-##### Mock URL is accessible as soon as APIMock Service starts running
+[![](/learn/assets/upload-swagger-json-for-mock-api.png)](/learn/assets/upload-swagger-json-for-mock-api.png)
+
+- The API Mock Service starts running within seconds and a Mock API URL is accessible
+
+[![](/learn/assets/running-mock-service.png)](/learn/assets/running-mock-service.png)
 
 #### Step 3: Import API in Wavemaker Studio
 - Copy Mock URL
