@@ -241,9 +241,9 @@ Use the same version numbers as mentioned.
   - data directory should be owned by the user.
   - Give permission to manage docker.service, systemctl daemon-reload, iptable.
 
-    ```bash
-        usermod -aG docker <user>
-        chown -R <user>:<user> /usr/lib/systemd/system
-        chown -R <user>:<user> /data
-        echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
-    ```
+  ```bash
+      usermod -aG docker <user>
+      chown -R <user>:<user> /usr/lib/systemd/system
+      chown -R <user>:<user> /data
+      echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+  ```
