@@ -1,5 +1,5 @@
 ---
-title: "XSS Prevention in WaveMaker Apps"
+title: "XSS Prevention"
 id: ""
 sidebar_label: "XSS Prevention"
 ---
@@ -7,9 +7,9 @@ sidebar_label: "XSS Prevention"
 
 [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/) is a type of security attack, which injects malicious scripts into web applications to execute, generally in the form of a browser side script to an end-user.
 
-Typically, WaveMaker handles all XSS attacks using [Angular Sanitization](https://angular.io/api/platform-browser/DomSanitizer). Therefore, the apps are not vulnerable to XSS attacks by default. Sanitization handles untrusted values, turning them into a safe value to insert into the generated code. However, in some cases, developers may want to include executable code, such as HTML content, giving developers the flexibility to bypass the code.
+Typically, WaveMaker handles all XSS attacks using [Angular Sanitization](https://angular.io/api/platform-browser/DomSanitizer). Therefore, the apps are not vulnerable to XSS attacks by default. Sanitization handles untrusted values turning them into a safe value to insert into the generated code. However, in some cases, developers may want to include executable code, such as HTML (Hypertext Markup Language) content, giving developers the flexibility to bypass the code.
 
-Depending on your requirements, you can configure UI (User Interface) to render data in HTML, or plain text while understanding the risk of XSS.
+In this document, you will learn how to configure UI (User Interface) to render data in HTML, or plain text while understanding the risk of XSS. 
 
 - Rendering HTML in Data Table
 - Using Formatters, such as trustAs in widgets
@@ -20,13 +20,15 @@ Depending on your requirements, you can configure UI (User Interface) to render 
 From [WaveMaker 10.13.0](/learn/wavemaker-release-notes/v10-13-0), Data Table columns render plain text to prevent XSS attacks. Before this change, the content was rendering HTML format.
 :::
 
-Considering a scenario of Datatable with employee details and their status, the **status** column uses HTML (Hypertext Markup Language), which includes all the formatting and styles, posing a potential XSS attack threat. Therefore, the **status** column data is sanitized; as a result, it renders plain text (see the image below).
+In the following example, Datatable contains employee details and their current status. The **status** column uses HTML with inline styles, posing a potential XSS attack threat. 
+
+WaveMaker sanitizes the Datatable widget, and when HTML is found in any column, it renders plain text as a result (see the image below).
 
 [![](/learn/assets/xss_datatable1.png)](/learn/assets/xss_datatable1.png)
 
 ### Rendering HTML in Data Table
 
-WaveMaker applies sanitization to the Label widget, making it safe to render HTML. Hence, we suggest using the Label widget for the **status** column. 
+In order to render HTML content in Datatable, we recommend configuring the Label widget for the **status** column, making it safe to render HTML.
 
 ### How-to Steps
 
@@ -36,15 +38,15 @@ WaveMaker applies sanitization to the Label widget, making it safe to render HTM
 
 [![](/learn/assets/xss_datatable3.png)](/learn/assets/xss_datatable3.png)
 
-The data renders HTML without displaying inline styles to the **status** column as WaveMaker applies default sanitization to the Label widget (see the image below). 
+Once configured, the **status** column renders HTML, however, without diplaying inline styles to the column; this is because WaveMaker applies sanitization to the Label widget. 
 
 [![](/learn/assets/xss_datatable2.png)](/learn/assets/xss_datatable2.png)
 
 ## Using Formatters
 
-The default behavior of WaveMaker UI widgets is to sanitize the content rendered inside them, preventing any possibility of an XSS vulnerability in the app. However, if the developer wants to bypass sanitization in WaveMaker widgets, the new Formatters `trustAs` can be used at the time of binding data to the widgets.
+The default behavior of WaveMaker UI widgets is to sanitize the content rendered inside them, preventing any possibility of an XSS vulnerability in the app. However, if the developer wants to bypass sanitization in the widgets, the Formatters `trustAs` can be used at the time of binding data to the widgets.
 
-Accessing Formatters:
+You can access Formatters from:
 
 1. Use Expression dialog
 2. Value Expression dialog
@@ -57,7 +59,7 @@ Configure the **trustAs** and **sanitize** flag from the **Use Expression** tab 
 
 ### Value Expression
 
-Configure the **trustAs** and **sanitize** flag from the **Value Expression** dailog of Data Table's **Advanced Settings**. 
+Configure the **trustAs** and **sanitize** flag from the **Value Expression** dailog of the Data Table's **Advanced Settings**. 
 
 ## trustAs
 
@@ -78,14 +80,14 @@ This action can be malicious and introduce security risks to your app. Use this 
 
 ### How-to Steps
 
-Considering the same example used to [render Richtext](#rendering-richtext) in Data Table. 
+In the following example, we are looking at the same example used for Datatable to render HTML, which is [employee's current **status**](#sanitization-in-data-table-widget). 
 
 1. Go to **Advanced Settings** of the Datatable -> **Columns** tab.
 2. Select the **Status** column.
 3. Go to the **Basic** tab and navigate to the **Value Expression** field. 
 4. Add the **trustAs** formatter with `html` context to bypass sanitization.
 
-Following is an example content used in the **Value Expression** field for the status column.
+Following example shows the **Value Expression** field configuring `trustAs` formatter for the **status** column.
 
 ```html
 <wm-label caption="bind:row.getProperty('status') | 
@@ -94,38 +96,10 @@ trustAs: 'html'"></wm-label>
 
 [![](/learn/assets/xss_datatable4.png)](/learn/assets/xss_datatable4.png)
 
-After adding the **trustAs** formatter, the inline styles render Richtext while also disabling the default sanitization that platform performs (see the image below).
+When you add the **trustAs** formatter, it renders HTML with the inline styles while disabling the sanitization for the **status** column (see the image below).
 
 [![](/learn/assets/xss_datatable5.png)](/learn/assets/xss_datatable5.png)
 
 :::warning
 When using this flag, ensure you thoroughly follow [security context](https://angular.io/guide/security#sanitization-and-security-contexts). Else, the content may not render appropriately. Plus, it can put your app at risk of XSS vulnerability.
 :::
-
-## Sanitize
-
-WaveMaker, by default, sanitizes the content and handles XSS attacks. Considering a scenario when a developer wants to apply sanitization to widgets, you can still use **sanitize** formatter.
-
-The Sanitize flag examines the value passed with the given [security context](https://angular.io/guide/security#sanitization-and-security-contexts), helping to prevent XSS attacks by sanitizing untrusted content.
-
-### How-to Steps
-
-Considering the same example used to [render Richtext](#rendering-richtext) in Data Table. 
-
-1. Go to **Advanced Settings** of the Datatable -> **Columns** tab.
-2. Select the **Status** column.
-3. Go to the **Basic** tab and navigate to the **Value Expression** field. 
-4. Add the **sanitize** formatter with `html` context to sanitize content.
-
-Following is an example content used in the **Value Expression** field for the status column.
-
-```html
-<wm-label caption="bind:row.getProperty('status') | 
-sanitize: 'html'"></wm-label>
-```
-
-[![](/learn/assets/xss_datatable6.png)](/learn/assets/xss_datatable6.png)
-
-After adding the **sanitize** formatter, inline styles are not applied; therefore, rendering plain text.
-
-[![](/learn/assets/xss_datatable2.png)](/learn/assets/xss_datatable2.png)
