@@ -27,7 +27,7 @@ Have you been in a situation where a single test scenario consumes more time to 
 **[API Mock Server](http://apimock.wavemakeronline.com)**   
 URL: http://apimock.wavemakeronline.com
 
-[![](/learn/assets/create-mock-api.png)](/learn/assets/create-mock-api.png)
+![create mock api](/learn/assets/create-mock-api.png)
 
 ### Step 2: Create Mock API
 
@@ -35,28 +35,28 @@ URL: http://apimock.wavemakeronline.com
 - Upload or drag-and-drop a Swagger schema file and provide a service name.
 - Choose a **Locale** for locale-specific mock data and click **Create**.
 
-[![](/learn/assets/upload-swagger-json-for-mock-api.png)](/learn/assets/upload-swagger-json-for-mock-api.png)
+![swagger json](/learn/assets/upload-swagger-json-for-mock-api.png)
 
 - The API Mock Service starts running, and a Mock API URL is ready.
 - Copy the **Mock API URL**.
 
-[![](/learn/assets/running-mock-services.png)](/learn/assets/running-mock-services.png)
+![running mock](/learn/assets/running-mock-services.png)
 
 ### Step 3: Import API in WaveMaker Studio
 
 - Go to WaveMaker Studio, Click **APIs** and **Imported APIs**.
 
-[![](/learn/assets/import-api-screen.png)](/learn/assets/import-api-screen.png)
+![import api](/learn/assets/import-api-screen.png)
 
 - Paste the **Mock API URL** and click **Next**.
 
-[![](/learn/assets/paste-mock-api-url.png)](/learn/assets/paste-mock-api-url.png)
+![paste mock api](/learn/assets/paste-mock-api-url.png)
 
 - Click **Import**.
 
-[![](/learn/assets/click-import-api.png)](/learn/assets/click-import-api.png)
+![click import](/learn/assets/click-import-api.png)
 
 - Access the mocked API in WaveMaker Studio.
 
-[![](/learn/assets/successful-mocked-service.png)](/learn/assets/successful-mocked-service.png)
+![mocked service](/learn/assets/successful-mocked-service.png)
 
