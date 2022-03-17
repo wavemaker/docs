@@ -11,13 +11,13 @@ Typically, WaveMaker handles all XSS attacks using [Angular Sanitization](https:
 
 In this document, you will learn how to configure UI (User Interface) to render data in HTML, or plain text while understanding the risk of XSS. 
 
-- Rendering HTML in Data Table
+- Rendering HTML in Datatable
 - Using Formatters, such as trustAs in widgets
 
-## Sanitization in Data Table widget
+## Sanitization in Datatable widget
 
 :::note
-From [WaveMaker 10.13.0](/learn/wavemaker-release-notes/v10-13-0), Data Table columns render plain text to prevent XSS attacks. Before this change, the content was rendering HTML format.
+From [WaveMaker 10.13.0](/learn/wavemaker-release-notes/v10-13-0), Datatable columns render plain text to prevent XSS attacks. Before this change, the content was rendering HTML format.
 :::
 
 In the following example, Datatable contains employee details and their current status. The **status** column uses HTML with inline styles, posing a potential XSS attack threat. 
@@ -26,9 +26,9 @@ WaveMaker sanitizes the Datatable widget, and when HTML is found in any column, 
 
 [![](/learn/assets/xss_datatable1.png)](/learn/assets/xss_datatable1.png)
 
-### Rendering HTML in Data Table
+### Rendering HTML in Datatable
 
-In order to render HTML content in Datatable, we recommend configuring the Label widget for the **status** column, making it safe to render HTML.
+To render HTML content in Datatable, we recommend configuring the **status** column to view as Label, making it safe to render HTML in Datatable.
 
 ### How-to Steps
 
@@ -38,7 +38,7 @@ In order to render HTML content in Datatable, we recommend configuring the Label
 
 [![](/learn/assets/xss_datatable3.png)](/learn/assets/xss_datatable3.png)
 
-Once configured, the **status** column renders HTML, however, without diplaying inline styles to the column; this is because WaveMaker applies sanitization to the Label widget. 
+The **status** column renders HTML without displaying inline styles to the column data; this is because WaveMaker applies sanitization to the Label widget. 
 
 [![](/learn/assets/xss_datatable2.png)](/learn/assets/xss_datatable2.png)
 
@@ -53,13 +53,13 @@ You can access Formatters from:
 
 ### Use Expression
 
-Configure the **trustAs** and **sanitize** flag from the **Use Expression** tab of the Variable binding dialog. 
+Configure the **trustAs** flag from the **Use Expression** tab of the Variable binding dialog. 
 
 [![](/learn/assets/xss_datatable7.png)](/learn/assets/xss_datatable7.png)
 
 ### Value Expression
 
-Configure the **trustAs** and **sanitize** flag from the **Value Expression** dailog of the Data Table's **Advanced Settings**. 
+Configure the **trustAs** flag from the **Value Expression** dailog of the Datatable's **Advanced Settings**. 
 
 ## trustAs
 
