@@ -46,24 +46,26 @@ The **status** column renders HTML without displaying inline styles to the colum
 
 The default behavior of WaveMaker UI widgets is to sanitize the content rendered inside them, preventing any possibility of an XSS vulnerability in the app. However, if the developer wants to bypass sanitization in the widgets, the Formatters `trustAs` can be used at the time of binding data to the widgets.
 
-You can access Formatters from:
+### trustAs
+
+**trustAs** flag disables built-in sanitization for the values that pass through the widget, given the [security context](https://angular.io/guide/security#sanitization-and-security-contexts). 
+
+You can access **trustAs** Formatters from:
 
 1. Use Expression dialog
 2. Value Expression dialog
 
-### Use Expression
+#### Use Expression
 
 Configure the **trustAs** flag from the **Use Expression** tab of the Variable binding dialog. 
 
 [![](/learn/assets/xss_datatable7.png)](/learn/assets/xss_datatable7.png)
 
-### Value Expression
+#### Value Expression
 
 Configure the **trustAs** flag from the **Value Expression** dailog of the Datatable's **Advanced Settings**. 
 
-## trustAs
-
-**trustAs** flag disables built-in sanitization for the values that pass through the widget, given the [security context](https://angular.io/guide/security#sanitization-and-security-contexts). 
+### Supported Widgets
 
 **trustAs** formatter with `html` context can be applied to the following widget properties.
 
