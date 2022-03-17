@@ -1,6 +1,6 @@
 ---
 title: "API Mock Server"
-id: "api-mock-server"
+id: ""
 sidebar_label: "Mocking APIs"
 ---
 ---
