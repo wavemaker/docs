@@ -43,6 +43,7 @@ const siteConfig = {
         {languages: true},
 		{doc: 'documentation-reference', label: 'Get started'},
         {doc: 'app-development/widgets/widget-library', label: 'Widgets'},
+        {doc: 'react-native/welcome', label: 'Mobile'},
 		{doc: 'howtos-documents', label: 'How-to'},
 		{doc: 'on-premise/welcome', label: 'Enterprise'},
 		{doc: 'wavemaker-release-notes', label: 'Releases'},

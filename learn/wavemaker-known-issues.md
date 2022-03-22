@@ -13,6 +13,12 @@ Below is the list of known issues reported against the release version. We docum
 
 ---
 
+### 11.0.x
+
+|Issue description|Occured since|Expected to fix by|Status|Workaround|
+|---|---|---|---|---|
+
+
 ### 10.10.x
 
 |Issue description|Occured since|Expected to fix by|Status|Workaround|
