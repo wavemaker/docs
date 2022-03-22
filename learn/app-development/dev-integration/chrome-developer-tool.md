@@ -14,7 +14,7 @@ sidebar_label: "Chrome Extension: Devtool"
 
 ### Who can use WaveMaker Devtool 
 
-All WaveMaker users who use Google Chrome to preview the application can install the **WaveMaker Devtool** extension and use it. 
+All WaveMaker users who use Google Chrome to preview the application can install the **WaveMaker Devtool** extension from [here](https://chrome.google.com/webstore/detail/wavemaker-devtool/niakeolhkmomhekokhdbfiaebkganjnk) and use it. 
 
 ## Why WaveMaker Devtool
 
