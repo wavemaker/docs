@@ -265,6 +265,7 @@
             "app-development/app-security/ssl-encryption",
             "app-development/app-security/xss-antisamy-policy-configuration",
             "app-development/app-security/owasp",
+            "app-development/app-security/xss-prevention",
             "app-development/app-security/central-authentication-system",
             "app-development/app-security/token-based-authentication",
             "app-development/app-security/saml-integration",
