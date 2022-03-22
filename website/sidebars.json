@@ -408,62 +408,7 @@
         }
   ],
 
-  "Mobile development":
-    [
-        "hybrid-mobile/building-hybrid-mobile-apps",        
-        "hybrid-mobile/native-device-support",   
-        "hybrid-mobile/first-mobile-app",       
-
-      {
-        "type": "subcategory",
-        "label": "Mobile Design",
-        "ids": 
-        [
-        "hybrid-mobile/mobile-page-concepts",
-        "hybrid-mobile/gesture-support",
-        "hybrid-mobile/mobile-tabbar",
-        "hybrid-mobile/mobile-navbar"    
-        ]
-      },
-
-      {
-        "type": "subcategory",
-        "label": "Mobile Installer",
-        "ids": 
-        [
-        "hybrid-mobile/test-run",
-        "hybrid-mobile/debugging-mobile-apps",        
-        "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
-        "hybrid-mobile/mobile-build-android",
-        "hybrid-mobile/mobile-build-manual",
-        "hybrid-mobile/mobile-ios-android-distribution-certificates",
-        "hybrid-mobile/export-cordova-zip",
-        "hybrid-mobile/mobile-build-phonegap",
-        "hybrid-mobile/mobile-build-manual",
-        "hybrid-mobile/mobile-build-appchef"
-        ]
-      },
-
-      {
-        "type": "subcategory",
-        "label": "Mobile Integrations",
-        "ids": [
-        "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",        
-        "hybrid-mobile/mobile-integrations-amazon-sns",
-        "hybrid-mobile/use-push-notification-wm-mobile-app",
-        "hybrid-mobile/invoking-web-app-apis-mobile-apps"]
-      },
-
-      {
-        "type": "subcategory",
-        "label": "Offline Features",
-        "ids": [
-        "hybrid-mobile/offline-data-support",
-        "hybrid-mobile/offline-data-support-implementation",
-        "hybrid-mobile/switching-offline-online-mode"]
-      }
-    ],    
-    "Connectors":
+  "Connectors":
     [
         "connectors/connectors-introduction",        
         "connectors/connectors-architecture",   
@@ -645,7 +590,69 @@
   ]
 },
 
+"Mobile":
+{
+  "React Native": 
+  [
+     "react-native/welcome"
+  ],
 
+"Hybrid Mobile":
+    [
+        "hybrid-mobile/building-hybrid-mobile-apps",        
+        "hybrid-mobile/native-device-support",   
+        "hybrid-mobile/first-mobile-app",       
+
+      {
+        "type": "subcategory",
+        "label": "Mobile Design",
+        "ids": 
+        [
+        "hybrid-mobile/mobile-page-concepts",
+        "hybrid-mobile/gesture-support",
+        "hybrid-mobile/mobile-tabbar",
+        "hybrid-mobile/mobile-navbar"    
+        ]
+      },
+
+      {
+        "type": "subcategory",
+        "label": "Mobile Installer",
+        "ids": 
+        [
+        "hybrid-mobile/test-run",
+        "hybrid-mobile/debugging-mobile-apps",        
+        "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
+        "hybrid-mobile/mobile-build-android",
+        "hybrid-mobile/mobile-build-manual",
+        "hybrid-mobile/mobile-ios-android-distribution-certificates",
+        "hybrid-mobile/export-cordova-zip",
+        "hybrid-mobile/mobile-build-phonegap",
+        "hybrid-mobile/mobile-build-manual",
+        "hybrid-mobile/mobile-build-appchef"
+        ]
+      },
+
+      {
+        "type": "subcategory",
+        "label": "Mobile Integrations",
+        "ids": [
+        "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",        
+        "hybrid-mobile/mobile-integrations-amazon-sns",
+        "hybrid-mobile/use-push-notification-wm-mobile-app",
+        "hybrid-mobile/invoking-web-app-apis-mobile-apps"]
+      },
+
+      {
+        "type": "subcategory",
+        "label": "Offline Features",
+        "ids": [
+        "hybrid-mobile/offline-data-support",
+        "hybrid-mobile/offline-data-support-implementation",
+        "hybrid-mobile/switching-offline-online-mode"]
+      }
+    ]   
+},
 
 "Tutorials": 
   {
@@ -1271,12 +1278,32 @@
     ]
   },
 
-  "Release Notes": 
+  "Release Notes":
   {
     "Release Notes": 
       [
-      "wavemaker-release-notes",
-      "wavemaker-known-issues",
+        "wavemaker-release-notes",
+        "wavemaker-known-issues",
+        {
+          "type": "subcategory",
+          "label": "Versions: 11.0.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v11-0-beta"              
+            ]
+        }
+      ],   
+    
+    "Release v10.x": 
+      [
+            {
+        "type": "subcategory",
+        "label": "WaveMaker 10",
+        "ids": 
+          [ 
+            "wavemaker-release-notes/v10-release-summary"
+          ]
+      },
       {
         "type": "subcategory",
         "label": "Versions: 10.13.x",
