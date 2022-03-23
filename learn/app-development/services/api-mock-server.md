@@ -13,14 +13,6 @@ You need a Swagger file to set up a running API mock server, which delivers a UR
 
 Accessing App: **[API Mock Server](http://apimock.wavemakeronline.com)**   
 
-Mocked API provides you with the following properties:
- 
-| Property | Example values |
-|---|---|
-|Scheme |https |
-|Host | |
-|Basepath |   |
-
 ### How it works in WaveMaker Studio
 
 Like any REST service, when you create a variable and bind it with widgets, the mocked API service produces dynamic data into widgets, giving the application a real feel with refreshed responses every time. 
