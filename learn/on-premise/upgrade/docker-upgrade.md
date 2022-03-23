@@ -14,7 +14,7 @@ sidebar_label: "Docker Upgrade"
 
 ```bash
 python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd>
-example: python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d localhost -u test@wavemaker.com -p test-password -di False
+example: python3 /usr/local/content/wme/wme-installer/10.13.0/resources/python/3/passivation_deletion.py -pr http -d localhost -u test@wavemaker.com -p test-password -di False
 ```
 
 - So follow the steps below when you added StudioWorkspaceInstance/AppDeploymentInstance.
@@ -38,7 +38,7 @@ example: python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/
 
   ```bash
     sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
-    example: sudo apt-get install docker-ce=5:20.10.6~3-0~ubuntu-focal docker-ce-cli=5:20.10.6~3-0~ubuntu-focal containerd.io -y
+    example: sudo apt-get install docker-ce=5:20.10.7~3-0~ubuntu-focal docker-ce-cli=5:20.10.7~3-0~ubuntu-focal containerd.io -y
   ```
 
 - If the given platform user does not have privileged access, then provide the below permissions for the given user on StudioWorkspace Instance/AppDeployment Instance.  
@@ -90,12 +90,12 @@ Upgrade or Install the latest version of Docker.
   
   ```bash
     yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-20.10.6-3.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.4-3.1.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-20.10.6-3.el8.x86_64.rpm
-    sudo yum install docker-ce-cli-20.10.6-3.el8.x86_64.rpm -y
-    sudo yum install containerd.io-1.4.4-3.1.el8.x86_64.rpm -y
-    sudo yum install docker-ce-20.10.6-3.el8.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-20.10.7-3.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.6-3.1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-20.10.7-3.el8.x86_64.rpm
+    sudo yum install docker-ce-cli-20.10.7-3.el8.x86_64.rpm -y
+    sudo yum install containerd.io-1.4.6-3.1.el8.x86_64.rpm -y
+    sudo yum install docker-ce-20.10.7-3.el8.x86_64.rpm -y
   ```
 
   - Install prerequisites to install Docker in RHEL7
@@ -115,12 +115,12 @@ Upgrade or Install the latest version of Docker.
   - To Install Docker in RHEL 7 use the following commands
   
   ```bash
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-20.10.6-3.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.4.4-3.1.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-20.10.6-3.el7.x86_64.rpm
-    sudo yum install docker-ce-cli-20.10.6-3.el7.x86_64.rpm -y
-    sudo yum install containerd.io-1.4.4-3.1.el7.x86_64.rpm -y
-    sudo yum install docker-ce-20.10.6-3.el7.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-20.10.7-3.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.4.6-3.1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-20.10.7-3.el7.x86_64.rpm
+    sudo yum install docker-ce-cli-20.10.7-3.el7.x86_64.rpm -y
+    sudo yum install containerd.io-1.4.6-3.1.el7.x86_64.rpm -y
+    sudo yum install docker-ce-20.10.7-3.el7.x86_64.rpm -y
   ```  
 
 ```bash
