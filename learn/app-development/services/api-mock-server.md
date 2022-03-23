@@ -13,13 +13,13 @@ You need a Swagger file to set up a running API mock server, which delivers a UR
 
 Accessing App: **[API Mock Server](http://apimock.wavemakeronline.com)**   
 
-Mocked API provides you with the following attributes:
+Mocked API provides you with the following properties:
  
-| Attributes | Define | Example values |
-|---|---|---|
-|URL | | |
-|Host | | |
-|Basepath | |   |
+| Property | Example values |
+|---|---|
+|Scheme |https |
+|Host | |
+|Basepath |   |
 
 ### How it works in WaveMaker Studio
 
