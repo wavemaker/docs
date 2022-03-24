@@ -16,6 +16,21 @@ sidebar_label: "Chrome Extension: Devtool"
 
 All WaveMaker users who use Google Chrome to preview the application can install the **WaveMaker Devtool** extension from [here](https://chrome.google.com/webstore/detail/wavemaker-devtool/niakeolhkmomhekokhdbfiaebkganjnk) and use it. 
 
+To enable logs include the following code snippet in the log4j2.xml available in the src folder under FileExplorer panel.
+
+```js
+  <!-- log sql queries -->
+  <logger name="org.hibernate.SQL" level="DEBUG"/>
+
+  <!-- external api related logging -->
+  <logger name="org.apache.http.wire" level="TRACE"/>
+
+  <!-- security -->
+  <logger name="org.springframework.security" level="DEBUG"/>
+```
+
+[![](/learn/assets/log4j2.png)](/learn/assets/log4j2.png)
+
 ## Why WaveMaker Devtool
 
 Typical challenges that WaveMaker application developers experience while debugging. 
