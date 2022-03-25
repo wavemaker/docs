@@ -17,13 +17,13 @@
     "cypress:e2e": "npm run cypress:prepare-prod && npm run cypress:prod && npm run cypress:prep-report"
   },
   "devDependencies": {
-    "@wavemaker.com/wm-remarkjs-theme": "github:wavemaker/wm-remarkjs-theme",
+    "@wavemaker.com/wm-remarkjs-theme": "git+https://github.com/wavemaker/wm-remarkjs-theme.git",
     "concurrently": "5.1.0",
     "copy-files-from-to": "^2.3.0",
     "cypress": "^3.8.3",
     "docusaurus": "^1.14.4",
     "dotenv": "^8.2.0",
-    "markdown-to-slides": "github:wavemaker/markdown-to-slides",
+    "markdown-to-slides": "git+https://github.com/wavemaker/markdown-to-slides.git",
     "markdownlint": "^0.20.3",
     "markdownlint-cli": "^0.19.0",
     "mocha": "^5.2.0",
