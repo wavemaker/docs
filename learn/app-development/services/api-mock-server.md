@@ -17,10 +17,6 @@ Accessing App: **[API Mock Server](http://apimock.wavemakeronline.com)**
 
 Like any REST service, when you create a variable and bind it with widgets, the mocked API service produces dynamic data into widgets, giving the application a real feel with refreshed responses every time. 
 
-:::note
-Currently, the hosted Mocked APIs expire in 24 hours, therefore, the dummy data gets removed from the app, throwing a 404 error. 
-:::
-
 ## Why API Mock Server
 
 The URL can be imported into WaveMaker Studio as a backend service, allowing developers to create an application faster by focusing on the frontend development. 
@@ -40,7 +36,7 @@ The URL can be imported into WaveMaker Studio as a backend service, allowing dev
 
 Accessing API Mock Server to host a mocked API.
 
-- Go to the **Server**: http://apimock.wavemakeronline.com
+- Go to the **Server**: https://apimock.wavemakeronline.com
 
 [![create mock api](/learn/assets/create-mock-api.png)](/learn/assets/create-mock-api.png)
 
