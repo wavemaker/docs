@@ -5,7 +5,7 @@ sidebar_label: "Chrome Extension: Devtool"
 ---
 ---
 
-**WaveMaker Devtool** is a Google Chrome extension, an addition to the existing Google Chrome developer tools that allow you to debug and monitor WaveMaker applications in preview mode. Accessible via the **Inspect** option.
+**WaveMaker Devtool** is a Google Chrome extension, an addition to the existing Google Chrome developer tools that allow you to debug and monitor WaveMaker applications in preview mode. Accessible via the **Inspect** option. WaveMaker Devtool supports WaveMaker v11 and later.
 
 ## Prerequisites
 
@@ -15,6 +15,21 @@ sidebar_label: "Chrome Extension: Devtool"
 ### Who can use WaveMaker Devtool 
 
 All WaveMaker users who use Google Chrome to preview the application can install the **WaveMaker Devtool** extension from [here](https://chrome.google.com/webstore/detail/wavemaker-devtool/niakeolhkmomhekokhdbfiaebkganjnk) and use it. 
+
+To enable logs include the following code snippet in the log4j2.xml available in the src folder under FileExplorer panel.
+
+```js
+  <!-- log sql queries -->
+  <logger name="org.hibernate.SQL" level="DEBUG"/>
+
+  <!-- external api related logging -->
+  <logger name="org.apache.http.wire" level="TRACE"/>
+
+  <!-- security -->
+  <logger name="org.springframework.security" level="DEBUG"/>
+```
+
+[![](/learn/assets/log4j2.png)](/learn/assets/log4j2.png)
 
 ## Why WaveMaker Devtool
 
