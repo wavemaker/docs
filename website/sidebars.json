@@ -596,7 +596,12 @@
 {
   "React Native": 
   [
-     "react-native/welcome"
+     "react-native/welcome",
+     "react-native/react-native",
+     "react-native/feature-support",
+     "react-native/supported-widgets",
+     "react-native/supported-variables",
+     "react-native/build-installers"
   ],
 
 "Hybrid Mobile":
