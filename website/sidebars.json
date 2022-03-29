@@ -60,9 +60,13 @@
             ]
           }
 
-      ],      
+      ],
+    
+  "SSPA": [
+          "app-development/sspa/micro-frontend"
+  ],      
 
-   "Databases": 
+  "Databases": 
       [
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
