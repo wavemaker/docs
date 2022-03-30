@@ -70,7 +70,7 @@ The artifacts generated include:
 1. Once the artifacts are generated, you can use the artifacts to register it as an application in the **Single-spa** shell.
 2. Validate the changes using the [**Single-spa shell project**](https://github.com/joeldenning/coexisting-angular-microfrontends).
 
-### Adding Script
+### Configure Script
 
 1. Once the project is downloaded, open the `index.html` in the folder *[folder-location]/root-html-file*
 2. Include the script below in the head section of the `index.html`.
@@ -99,7 +99,7 @@ The artifacts generated include:
  </script>
 ```
 
-4. Add `.wm-app` class to parent element for the route in `index.html`.
+4. Add a `.wm-app` class to the parent element of the route in `index.html`.
 
 ```html
  <template id="single-spa-layout">
@@ -115,7 +115,6 @@ The artifacts generated include:
       </single-spa-router>
     </template>
 ```
-
 
 Once the changes are done in `index.html`, follow the instructions in the `README.md` of the [**Single-spa shell project link**](https://github.com/joeldenning/coexisting-angular-microfrontends) to start.
 
