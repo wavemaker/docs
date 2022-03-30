@@ -594,17 +594,7 @@
 
 "Mobile":
 {
-  "React Native": 
-  [
-     "react-native/welcome",
-     "react-native/react-native",
-     "react-native/feature-support",
-     "react-native/supported-widgets",
-     "react-native/supported-variables",
-     "react-native/build-installers"
-  ],
-
-"Hybrid Mobile":
+"Cordova":
     [
         "hybrid-mobile/building-hybrid-mobile-apps",        
         "hybrid-mobile/native-device-support",   
@@ -658,7 +648,16 @@
         "hybrid-mobile/offline-data-support-implementation",
         "hybrid-mobile/switching-offline-online-mode"]
       }
-    ]   
+    ], 
+    
+    "React Native": 
+    [
+       "react-native/react-native",
+       "react-native/feature-support",
+       "react-native/supported-widgets",
+       "react-native/supported-variables",
+       "react-native/build-installers"
+    ]
 },
 
 "Tutorials": 

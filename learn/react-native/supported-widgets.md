@@ -1,11 +1,10 @@
 ---
-title: Widgets
-layout: default
-parent: Docs
-nav_order: 3
+title: Supported Widgets
+id: ""
+---
 ---
 
-# {{ page.title }}
+Currently, the following Widgets are supported to develop a React Native app. 
 
 
  | <img src="../../assets/supported.png" class="yes-no-image">  Supported |

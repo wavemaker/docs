@@ -1,8 +1,17 @@
 ---
-title: React Native
+title: "Welcome to React Native Studio"
 id: ""
+sidebar_label: "Welcome"
 ---
 ---
+
+React Native is a cross-platform development framework for developing native mobile applications, including iOS and Android apps. The framework is open-sourced and is supported by a developer community, hosting a number of React Native plugins that you can use. For example, Expo go. 
+
+React Native runs on a native environment using a JavaScript engine, making cross-platform mobile applications truly native. 
+
+To develop fully Native apps, you do not need additional programming skills for iOS or Android or maintain two different codebases. React Native provides platform-specific versions of components such that a single codebase can be shared across platforms. 
+
+## Architecture
 
 React Native is a mobile app framework from Facebook. It is based on ReactJS priniciples (Virtual DOM). Developers define app UI using the React Native markup (and extensions) in JavaScript. In runtime, based on this UI definition, React Native will render UI using native UI controls (similar to native apps).
 
