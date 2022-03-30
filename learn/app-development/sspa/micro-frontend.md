@@ -62,7 +62,6 @@ The artifacts generated include:
 
  - **main.[hash].js** : the application code and need to be used for app registration.
  - **scripts.[hash].js**: the global scripts modules required for the WaveMaker app.
- - **styles.[hash].js**: the styles required for the WaveMaker app.
 
 :::note
 **Single-spa** needs the deployed location of all the artifacts, so ensure the files are hosted.
@@ -84,7 +83,6 @@ The artifacts generated include:
 -->
  <script src="[APP_DEPLOYED_URL]/services/application/wmProperties.js"></script>
  <script src="[ARTIFACTS_DEPLOYED_URL]/scripts.[HASH].js"></script>
- <link href="[ARTIFACTS_DEPLOYED_URL]/styles.[HASH].css">
 ```
 
 3. Update one of the app target URLs in import maps as highlighted below in `index.html`.
@@ -100,6 +98,24 @@ The artifacts generated include:
  }
  </script>
 ```
+
+4. Add `.wm-app` class to parent element for the route in `index.html`.
+
+```html
+ <template id="single-spa-layout">
+      <single-spa-router>
+         ---
+          <div class="wm-app">
+            <route path="app2" >
+              <application name="app2"></application>
+            </route>
+          </div>
+         
+        ---
+      </single-spa-router>
+    </template>
+```
+
 
 Once the changes are done in `index.html`, follow the instructions in the `README.md` of the [**Single-spa shell project link**](https://github.com/joeldenning/coexisting-angular-microfrontends) to start.
 
