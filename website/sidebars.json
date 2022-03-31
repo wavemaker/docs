@@ -763,6 +763,7 @@
             "how-tos/configuring-aws-redshiftdb",
             "how-tos/configuring-sap-hana-clouddb",
             "how-tos/audit-history-using-crud-listeners",
+            "how-tos/rowlevel-security-using-crud-event-listeners",
             "how-tos/validations-using-crudListeners",
             "how-tos/custom-business-logic-using-crud-event-listeners"
           ],
