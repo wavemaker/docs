@@ -60,9 +60,13 @@
             ]
           }
 
-      ],      
+      ],
+    
+  "SSPA": [
+        "app-development/sspa/micro-frontend"
+  ],      
 
-   "Databases": 
+  "Databases": 
       [
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
@@ -1284,6 +1288,7 @@
         "label": "Versions: 10.13.x",
         "ids": 
           [ 
+            "wavemaker-release-notes/v10-13-1",
             "wavemaker-release-notes/v10-13-0"
           ]
       },
