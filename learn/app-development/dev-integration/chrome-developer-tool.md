@@ -58,9 +58,10 @@ To enable logs, include the following code snippet in the `log4j2.xml` file in t
 
 ## Enabling WaveMaker Devtool in Incognito mode
 
+WaveMaker Devtool can be accessed in Incognito mode with simple 2 steps
+
 1. To enable Incognito mode at extension level, refer [here](https://support.google.com/chrome/a/thread/140546132?hl=en&msgid=141422566)
 
 2. To enable WaveMaker Platform cookie for WaveMaker Devtool, refer **Allow or block cookies for a specific site** section [here](https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Callow-or-block-cookies-for-a-specific-site)
 
-You can now access the WaveMaker Devtool in Incognito mode.
 
