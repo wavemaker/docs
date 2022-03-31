@@ -60,9 +60,13 @@
             ]
           }
 
-      ],      
+      ],
+    
+  "SSPA": [
+        "app-development/sspa/micro-frontend"
+  ],      
 
-   "Databases": 
+  "Databases": 
       [
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
@@ -292,10 +296,10 @@
     [
         "app-development/dev-integration/developer-tools",
         "app-development/dev-integration/chrome-developer-tool",
-        "app-development/deployment/build-options",
-        "app-development/dev-integration/inspection-framework",
         "app-development/dev-integration/debugging",
-	"hybrid-mobile/mobile-automation-appium",
+        "app-development/dev-integration/inspection-framework",
+        "app-development/deployment/build-options", 
+        "hybrid-mobile/mobile-automation-appium",  
         {
           "type": "subcategory",
           "label": "Developer Integration",
@@ -1315,6 +1319,7 @@
         "label": "Versions: 10.13.x",
         "ids": 
           [ 
+            "wavemaker-release-notes/v10-13-1",
             "wavemaker-release-notes/v10-13-0"
           ]
       },
