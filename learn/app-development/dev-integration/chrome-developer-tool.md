@@ -58,29 +58,9 @@ To enable logs, include the following code snippet in the `log4j2.xml` file in t
 
 ## Enabling WaveMaker Devtool in Incognito mode
 
-### Enabling Incognito mode at extension level
+1. To enable Incognito mode at extension level, refer [here](https://support.google.com/chrome/a/thread/140546132?hl=en&msgid=141422566)
 
-Google Chrome disallows extension in incognito mode by default. In order to use the WaveMaker Devtool in the incognito mode, go to extensions page by clicking on the three dots present in the top right of the address bar, click on the **Extensions** option present under **More Tools** option.
-
-[![](/learn/assets/chrome-extensions-page-navigation.png)](/learn/assets/chrome-extensions-page-navigation.png)
-
-In the Chrome extensions page, click on the **Details** button of WaveMaker Devtool extension, you will be navigated to the extension's details page where you will find **Allow in Incognito** option which is turned off by default. Turn on the option to enable WaveMaker Devtool in incognito mode.
-
-[![](/learn/assets/chrome-extensions.png)](/learn/assets/chrome-extensions.png)
-[![](/learn/assets/allow-in-incognito.png)](/learn/assets/allow-in-incognito.png)
-
-### Enabling the third party cookies for WaveMaker Domains
-
-Google Chrome blocks third-party cookies in incognito mode by default. Allow WaveMaker domains to always use cookies in order to view logs for WaveMaker application in incognito mode. 
-
-Steps to enable third-party cookies
-
-1. Go to Google Chrome **Settings** page
-2. Navigate to **Cookies and other site data** under **Security and privacy** section
-3. You will find **Block third-party cookies in Incognito** enabled, scroll to find **Sites that can always use cookies** section in the same page. Add WaveMaker domains in this section. 
-
-[![](/learn/assets/chrome-security-privacy.png)](/learn/assets/chrome-security-privacy.png)
-[![](/learn/assets/chrome-add-site.png)](/learn/assets/chrome-add-site.png)
+2. To enable WaveMaker Platform cookie for WaveMaker Devtool, refer **Allow or block cookies for a specific site** section [here](https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Callow-or-block-cookies-for-a-specific-site)
 
 You can now access the WaveMaker Devtool in Incognito mode.
 
