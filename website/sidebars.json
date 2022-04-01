@@ -656,7 +656,10 @@
        "react-native/feature-support",
        "react-native/supported-widgets",
        "react-native/supported-variables",
-       "react-native/build-installers"
+       "react-native/build-installers",
+       "react-native/web-preview-debug",
+       "react-native/expo-debug",
+       "react-native/styles"
     ]
 },
 
