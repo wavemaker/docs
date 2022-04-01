@@ -7,11 +7,111 @@ Inspection framework is available since WaveMaker 10.0. Inspection Framework he
 
 ## How to use Inspection Framework
 
-You can locate Inspection framework from the More options menu located on the bottom-left corner when you open a project. See the image below:
+You can locate **Inspection framework** from the More options menu of the project. See the image below:
 
 ![](/learn/assets/inspectionframeworklowcode.png)
 
 To initiate the inspection framework, you click the More options menu and click Run. When you run the inspection framework from your project, if there are any unsupported methods or errors in your code, it shows them on the screen immediately. The following guide helps you with each rule that the Inspection Framework will help you identify and fix the issues in your project.
+
+## Handle Script errors for Widgets Configured with Show in device
+
+This rule attempts to catch and prevent any usage of Widgets that have `showindevice` configured for them and are being accessed in the script without checking if the element exists or not.
+
+### Rule Details
+
+As of 10.7, If a widget has `showindevice` configured as something other than `all`, then it won't be rendered in any other viewport other than the specified one. Hence, before accessing properties of that Widget, a sanity check is required to see if it exists or not. This has been done for performance optimization as it prevents unnecessary Network calls.
+
+#### Examples of incorrect code for this rule
+
+```js
+Page.Widgets.EmployeeTable.currentItem.name = "John Doe";
+
+var selectedItem = Page.Widgets.DepartmentList.selecteditem;
+Page.Variables.FilterDepartments.dataSet.filter(function(employeeObj) {
+    return employeeObj.id === selectedItem.empID
+});
+```
+
+#### Examples of correct code for this rule
+
+```js
+if (Page.Widgets.EmployeeTable) {
+    Page.Widgets.EmployeeTable.currentItem.name = "John Doe";
+}
+
+if (Page.Widgets.DepartmentList) {
+    var selectedItem = Page.Widgets.DepartmentList.selecteditem;
+    Page.Variables.FilterDepartments.dataSet.filter(function(employeeObj) {
+        return employeeObj.id === selectedItem.empID
+    });
+}
+```
+
+The above checks will ensure that there are no script errors when widgets which may not be present in the DOM are being accessed. Without the above check, `selectedItem.empID` in the return statement will throw a script error if we have configured `showindevice` as `Mobile` for DepartmentList and are trying to access it in a Web Application.
+
+## No Missing Page Elements
+
+This rule attempts to validate all the Pages & Partial elements.
+
+### Rule Details
+
+Each Page or Partial in WaveMaker is composed of Markup, Style, Scripts, Variables and each of it is stored as seperate file in the filesystem as HTML,CSS, JS & JSON files respectively. 
+
+![](/learn/assets/inspection-no-missing-page-elements-details.png)
+
+If any of the files is deleted, the page cannot be formed completely & will cause Deployment failure. Inorder to resolve this error, the user can revert the changes causing the deletion of reported file.
+
+## No Invalid Partials
+
+This rule attempts to validate all the Partial references in the project code.
+
+### Rule Details
+
+If the Page or Partial needs to load another partial as it's content, the markup needs to have a partial container widget with its `content` attribute set to partial name. There are couple of usecases where such partial references can be invalid as listed below,
+
+* If the partial referred in the markup is deleted, the deployment can fail citing the invalid reference.
+* If a given partial trying to load itself as its content, the deployment can fail citing recursive reference.
+
+	eg: Partial named `testPartial` can have markup as below,
+
+	```html
+	<wm-container name="container1" content="testPartial"></wm-container>
+	```
+
+Inorder to resolve errors caused by above listed cases, the user can update the markup to set `content` attribute with valid partial references.
+
+## No Invalid Fontpath
+
+This rule attempts to validate font paths updated in the project CSS files.
+
+### Rule Details
+
+If the project needs to use specific fonts, it can be achieved by adding `@font-face` entry in the `CSS` files. The path of source font file is updated in the `src` property as shown below,
+
+```css
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+```
+
+if the path mentioned in the `src` property is not resolved relatively to the `CSS` file, the deployment can fail citing invalid path error. Inorder to fix this issue, the user needs to update the `src` with valid path.
+
+## No Declaration Block Trailing Semicolon
+
+This rule attempts to validate CSS files for trailing Semicolons
+
+### Rule Details
+
+This rule ensures that the trailing semicolon is required within the decleration block as shown below
+
+```css
+.testClass {height: 200px; width: 100px;}
+```
+
+# Inspecting No AngulaJS
+---
 
 ## No AngularJS Service
 
@@ -630,99 +730,3 @@ Application.controller('aboutCtrl', function($routeParams) {
 
 Not supported in WaveMaker 10.x
 
-## No Missing Page Elements
-
-This rule attempts to validate all the Pages & Partial elements.
-
-### Rule Details
-
-Each Page or Partial in WaveMaker is composed of Markup, Style, Scripts, Variables and each of it is stored as seperate file in the filesystem as HTML,CSS, JS & JSON files respectively. 
-
-![](/learn/assets/inspection-no-missing-page-elements-details.png)
-
-If any of the files is deleted, the page cannot be formed completely & will cause Deployment failure. Inorder to resolve this error, the user can revert the changes causing the deletion of reported file.
-
-## No Invalid Partials
-
-This rule attempts to validate all the Partial references in the project code.
-
-### Rule Details
-
-If the Page or Partial needs to load another partial as it's content, the markup needs to have a partial container widget with its `content` attribute set to partial name. There are couple of usecases where such partial references can be invalid as listed below,
-
-* If the partial referred in the markup is deleted, the deployment can fail citing the invalid reference.
-* If a given partial trying to load itself as its content, the deployment can fail citing recursive reference.
-
-	eg: Partial named `testPartial` can have markup as below,
-
-	```html
-	<wm-container name="container1" content="testPartial"></wm-container>
-	```
-
-Inorder to resolve errors caused by above listed cases, the user can update the markup to set `content` attribute with valid partial references.
-
-## No Invalid Fontpath
-
-This rule attempts to validate font paths updated in the project CSS files.
-
-### Rule Details
-
-If the project needs to use specific fonts, it can be achieved by adding `@font-face` entry in the `CSS` files. The path of source font file is updated in the `src` property as shown below,
-
-```css
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('fonts/glyphicons-halflings-regular.eot');
-  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
-```
-
-if the path mentioned in the `src` property is not resolved relatively to the `CSS` file, the deployment can fail citing invalid path error. Inorder to fix this issue, the user needs to update the `src` with valid path.
-
-## No Declaration Block Trailing Semicolon
-
-This rule attempts to validate CSS files for trailing Semicolons
-
-### Rule Details
-
-This rule ensures that the trailing semicolon is required within the decleration block as shown below
-
-```css
-.testClass {height: 200px; width: 100px;}
-```
-
-## Handle script errors for Widgets configured with show in device
-
-This rule attempts to catch and prevent any usage of Widgets which have `showindevice` configured for them and are being accessed in script without checking if the element exists or not.
-
-### Rule Details
-
-As of 10.7, If a widget has showindevice configured as something other than `all`, then it won't be rendered in any other viewport other than the specified one. Hence, before accessing properties of that Widget, a sanity check is required to see if it exists or not. This has been done for performance optimization as it prevents unnecessary Network calls.
-
-#### Examples of incorrect code for this rule
-
-```js
-Page.Widgets.EmployeeTable.currentItem.name = "John Doe";
-
-var selectedItem = Page.Widgets.DepartmentList.selecteditem;
-Page.Variables.FilterDepartments.dataSet.filter(function(employeeObj) {
-    return employeeObj.id === selectedItem.empID
-});
-```
-
-#### Examples of correct code for this rule
-
-```js
-if (Page.Widgets.EmployeeTable) {
-    Page.Widgets.EmployeeTable.currentItem.name = "John Doe";
-}
-
-if (Page.Widgets.DepartmentList) {
-    var selectedItem = Page.Widgets.DepartmentList.selecteditem;
-    Page.Variables.FilterDepartments.dataSet.filter(function(employeeObj) {
-        return employeeObj.id === selectedItem.empID
-    });
-}
-```
-
-The above checks will ensure that there are no script errors when widgets which may not be present in the DOM are being accessed. Without the above check, `selectedItem.empID` in the return statement will throw a script error if we have configured `showindevice` as `Mobile` for DepartmentList and are trying to access it in a Web Application.

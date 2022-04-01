@@ -5,9 +5,13 @@ sidebar_label: "Chrome Extension: Devtool"
 ---
 ---
 
-**WaveMaker Devtool** is a Google Chrome extension, an addition to the existing Google Chrome developer tools that allow you to debug and monitor WaveMaker applications in preview mode. Accessible via the **Inspect** option. WaveMaker Devtool supports WaveMaker v11 and later.
+**WaveMaker Devtool** is a Google Chrome extension, an addition to the existing Google Chrome developer tools that allow you to debug and monitor WaveMaker applications in preview mode. Accessible via the **Inspect** option.
 
-## Prerequisites
+## Accessing Devtool 
+
+**Devtool Extension: [Devtool](https://chrome.google.com/webstore/detail/wavemaker-devtool/niakeolhkmomhekokhdbfiaebkganjnk)**
+
+### Prerequisites
 
 - Google Chrome browser
 - Be Logged into WaveMaker to view the logs
@@ -16,27 +20,12 @@ sidebar_label: "Chrome Extension: Devtool"
 
 All WaveMaker users who use Google Chrome to preview the application can install the **WaveMaker Devtool** extension from [here](https://chrome.google.com/webstore/detail/wavemaker-devtool/niakeolhkmomhekokhdbfiaebkganjnk) and use it. 
 
-To enable logs include the following code snippet in the log4j2.xml available in the src folder under FileExplorer panel.
-
-```js
-  <!-- log sql queries -->
-  <logger name="org.hibernate.SQL" level="DEBUG"/>
-
-  <!-- external api related logging -->
-  <logger name="org.apache.http.wire" level="TRACE"/>
-
-  <!-- security -->
-  <logger name="org.springframework.security" level="DEBUG"/>
-```
-
-[![](/learn/assets/log4j2.png)](/learn/assets/log4j2.png)
-
 ## Why WaveMaker Devtool
 
-Typical challenges that WaveMaker application developers experience while debugging. 
+Typical challenges that WaveMaker application developers experience while debugging include: 
 
-1. Developers go through many application logs when an issue is observed; for example, when adding new changes to the application, the page does not load. 
-2. Developers often miss out on immediate details of the issue to determine which variables are responsible for the request and fix the encountered issue. 
+1. Developers have to go through many application logs when an issue is observed; for example, when adding new changes to the application, the page does not load. 
+2. Developers often miss immediate details of the issue to determine which variables are responsible for the request and fix the encountered issue. 
 
 [![](/learn/assets/extension.png)](/learn/assets/extension.png)
 
@@ -49,3 +38,20 @@ WaveMaker Devtool Chrome extension helps ease the debugging process and improve 
 3. You can switch to **All APIs** to view all the requests triggered by the page. By default, the page shows **Core APIs**. 
 
 [![](/learn/assets/show-only-duplicates.png)](/learn/assets/show-only-duplicates.png)
+
+## Enabling Logs
+
+To enable logs, include the following code snippet in the `log4j2.xml` file in the src folder under the **FileExplorer** panel.
+
+```js
+<!-- log sql queries -->
+<logger name="org.hibernate.SQL" level="DEBUG"/>
+
+<!-- external api related logging -->
+<logger name="org.apache.http.wire" level="TRACE"/>
+
+<!-- security -->
+<logger name="org.springframework.security" level="DEBUG"/>
+```
+
+[![](/learn/assets/log4j2.png)](/learn/assets/log4j2.png)
