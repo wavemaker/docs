@@ -7,94 +7,136 @@ id: ""
 Currently, the following Widgets are supported to develop a React Native app. 
 
 
- | <img src="../../assets/supported.png" class="yes-no-image">  Supported |
- | <img src="../../assets/unsupported.png" class="yes-no-image">  Not supported |
+|Shows as  | Support Status|
+|---|---|
+|![Supported React Native Features](/learn/assets/supported.png)| Supported
+|![Unsupported React Native Features](/learn/assets/unsupported.png)| Not Supported|
 
+## Supported Widgets
 
- | <span class="title">Data Widgets<span> | |
- | <img src="../../assets/supported.png" class="yes-no-image"> Form | [Style Document](./widgets/data/form.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> List  | [Style Document](./widgets/data/list.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Cards  | [Style Document](./widgets/data/card.style.html) | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Live Form | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Live Filter | 
- | <span class="title">Layout Widgets<span> | |
- | <img src="../../assets/supported.png" class="yes-no-image"> Accordion  | [Style Document](./widgets/container/accordion.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Tabs  | [Style Document](./widgets/container/tabs.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Wizard  | [Style Document](./widgets/container/wizard.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Panel  | [Style Document](./widgets/container/panel.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Grid Layout  | [Style Document](./widgets/container/layoutgrid.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> [Linear Layout (**See this video**)](https://drive.google.com/file/d/1QSu-Gwy6UhkVrtqdajseG-ISzPgcpjv4/view?usp=sharing)   | [Style Document](./widgets/container/linearlayout.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Container  | [Style Document](./widgets/container.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Tile  | [Style Document](./widgets/container/tile.style.html) | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Segmented Content | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Media list |
- | <span class="title">Form Widgets<span> | |
- | <img src="../../assets/supported.png" class="yes-no-image"> Button  | [Style Document](./widgets/basic/button.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Button Group  | [Style Document](./widgets/basic/buttongroup.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Text  | [Style Document](./widgets/input/text.style.html) | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Rich text editor | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Number  | [Style Document](./widgets/input/number.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> TextArea  | [Style Document](./widgets/input/textarea.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Select  | [Style Document](./widgets/input/select.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Chips  | [Style Document](./widgets/input/chips.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Currency  | [Style Document](./widgets/input/currency.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Radioset  | [Style Document](./widgets/input/radioset.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Checkbox  | [Style Document](./widgets/input/checkbox.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Checkbox set  | [Style Document](./widgets/input/checkboxset.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Toggle  | [Style Document](./widgets/input/toggle.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Switch  | [Style Document](./widgets/input/switch.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Date  | [Style Document](./widgets/input/epoch/date.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Calendar  | [Style Document](./widgets/input/calendar.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Time  | [Style Document](./widgets/input/epoch/time.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> DateTime  | [Style Document](./widgets/input/epoch/datetime.style.html) | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Fileupload | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Slider  | [Style Document](./widgets/input/slider.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Rating  | [Style Document](./widgets/input/rating.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Select Locale  | [Style Document](./widgets/input/select.style.html) | 
- | <span class="title">Basic Widgets<span> | |
- | <img src="../../assets/supported.png" class="yes-no-image"> Label  | [Style Document](./widgets/basic/label.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Anchor  | [Style Document](./widgets/basic/anchor.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Icon  | [Style Document](./widgets/basic/icon.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Picture  | [Style Document](./widgets/basic/picture.style.html) | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Tree | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Video | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Audio | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> html | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Message  | [Style Document](./widgets/basic/message.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Spinner  | [Style Document](./widgets/basic/spinner.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Search   | [Style Document](./widgets/basic/search.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Progress Bar  | [Style Document](./widgets/basic/progress-bar.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Progress Circle  | [Style Document](./widgets/basic/progress-circle.style.html) | 
- | <span class="title">Chart Widgets<span> | |
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Line | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Column | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Area | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Pie | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Bar | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Cumulative Line | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Donut | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Bubble | 
- | <span class="title">Navigation Widgets<span> | |
- | <img src="../../assets/supported.png" class="yes-no-image"> Nav  | [Style Document](./widgets/navigation/navbar.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Dropdown Menu  | [Style Document](./widgets/navigation/menu.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Popover   | [Style Document](./widgets/navigation/popover.style.html) | 
- | <span class="title">Advanced Widgets<span> | |
- | <img src="../../assets/supported.png" class="yes-no-image"> Login  | [Style Document](./widgets/advanced/login.style.html) | 
- | <img src="../../assets/unsupported.png" class="yes-no-image"> Marquee | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Carousel  | [Style Document](./widgets/advanced/carousel.style.html) | 
- | <span class="title">Dialog Widgets<span> | |
- | <img src="../../assets/supported.png" class="yes-no-image"> Design Dialog  | [Style Document](./widgets/dialogs/dialog.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Alert Dialog  | [Style Document](./widgets/dialogs/alertdialog.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Confirm Dialog  | [Style Document](./widgets/dialogs/confirmdialog.style.html) | 
- | <span class="title">Device Widgets<span> | |
- | <img src="../../assets/supported.png" class="yes-no-image"> Camera  | [Style Document](./widgets/device/camera.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Barcode Scanner  | [Style Document](./widgets/device/barcodescanner.style.html) | 
- | <span class="title">Page Layout Widgets<span> | |
- | <img src="../../assets/supported.png" class="yes-no-image"> App Nav bar  | [Style Document](./widgets/navigation/appnavbar.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Left Panel  | [Style Document](./widgets/page/left-panel.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Page  | [Style Document](./widgets/page.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Page Content  | [Style Document](./widgets/page/page-content.style.html) | 
- | <img src="../../assets/supported.png" class="yes-no-image"> Tab bar  | [Style Document](./widgets/page/tabbar.style.html) | 
+### Data Widgets 
+
+|Support|Data Widgets|Reference|
+|---|---|---|
+| ![](/learn/assets/supported.png) | Form | [Style Document](./widgets/data/form.style) | 
+| ![](/learn/assets/supported.png) |List  | [Style Document](./widgets/data/list.style) | 
+| ![](/learn/assets/supported.png) |Cards  | [Style Document](./widgets/data/card.style) | 
+| ![](/learn/assets/unsupported.png) |Live Form | |
+| ![](/learn/assets/unsupported.png) |Live Filter |  |
+
+### Layout Widgets
+
+|Support|Layout Widgets|Reference|
+|---|---|---|
+| ![](/learn/assets/supported.png) |Accordion  | [Style Document](./widgets/container/accordion.style) | 
+| ![](/learn/assets/supported.png) |Tabs  | [Style Document](./widgets/container/tabs.style) | 
+| ![](/learn/assets/supported.png) |Wizard  | [Style Document](./widgets/container/wizard.style) | 
+| ![](/learn/assets/supported.png) |Panel  | [Style Document](./widgets/container/panel.style) | 
+| ![](/learn/assets/supported.png) |Grid Layout  | [Style Document](./widgets/container/layoutgrid.style) | 
+| ![](/learn/assets/supported.png) |[Linear Layout (**See this video**)](https://drive.google.com/file/d/1QSu-Gwy6UhkVrtqdajseG-ISzPgcpjv4/view?usp=sharing)   | [Style Document](./widgets/container/linearlayout.style) | 
+| ![](/learn/assets/supported.png) |Container  | [Style Document](./widgets/container.style) | 
+| ![](/learn/assets/supported.png) |Tile  | [Style Document](./widgets/container/tile.style) | 
+| ![](/learn/assets/unsupported.png) |Segmented Content | |
+| ![](/learn/assets/unsupported.png) |Media list | |
+
+### Form Widgets
+
+|Support|Form Widgets|Reference|
+|---|---|---|
+| ![](/learn/assets/supported.png) |Button  | [Style Document](./widgets/basic/button.style) | 
+| ![](/learn/assets/supported.png) |Button Group  | [Style Document](./widgets/basic/buttongroup.style) | 
+| ![](/learn/assets/supported.png) |Text  | [Style Document](./widgets/input/text.style) | 
+| ![](/learn/assets/unsupported.png) |Rich text editor | |
+| ![](/learn/assets/supported.png) |Number  | [Style Document](./widgets/input/number.style) | 
+| ![](/learn/assets/supported.png) |TextArea  | [Style Document](./widgets/input/textarea.style) | 
+| ![](/learn/assets/supported.png) |Select  | [Style Document](./widgets/input/select.style) | 
+| ![](/learn/assets/supported.png) |Chips  | [Style Document](./widgets/input/chips.style) | 
+| ![](/learn/assets/supported.png) |Currency  | [Style Document](./widgets/input/currency.style) | 
+| ![](/learn/assets/supported.png) |Radioset  | [Style Document](./widgets/input/radioset.style) | 
+| ![](/learn/assets/supported.png) |Checkbox  | [Style Document](./widgets/input/checkbox.style) | 
+| ![](/learn/assets/supported.png) |Checkbox set  | [Style Document](./widgets/input/checkboxset.style) | 
+| ![](/learn/assets/supported.png) |Toggle  | [Style Document](./widgets/input/toggle.style) | 
+| ![](/learn/assets/supported.png) |Switch  | [Style Document](./widgets/input/switch.style) | 
+| ![](/learn/assets/supported.png) |Date  | [Style Document](./widgets/input/epoch/date.style) | 
+| ![](/learn/assets/supported.png) |Calendar  | [Style Document](./widgets/input/calendar.style) | 
+| ![](/learn/assets/supported.png) |Time  | [Style Document](./widgets/input/epoch/time.style) | 
+| ![](/learn/assets/supported.png) |DateTime  | [Style Document](./widgets/input/epoch/datetime.style) | 
+| ![](/learn/assets/unsupported.png) |Fileupload | |
+| ![](/learn/assets/supported.png) |Slider  | [Style Document](./widgets/input/slider.style) | 
+| ![](/learn/assets/supported.png) |Rating  | [Style Document](./widgets/input/rating.style) | 
+| ![](/learn/assets/supported.png) |Select Locale  | [Style Document](./widgets/input/select.style) | 
+
+### Basic Widgets
+
+|Support| Basic Widgets|Reference|
+|---|---|---|
+| ![](/learn/assets/supported.png) |Label  | [Style Document](./widgets/basic/label.style) | 
+| ![](/learn/assets/supported.png) |Anchor  | [Style Document](./widgets/basic/anchor.style) | 
+| ![](/learn/assets/supported.png) |Icon  | [Style Document](./widgets/basic/icon.style) | 
+| ![](/learn/assets/supported.png) |Picture  | [Style Document](./widgets/basic/picture.style) | 
+| ![](/learn/assets/unsupported.png) |Tree | |
+| ![](/learn/assets/unsupported.png) |Video | |
+| ![](/learn/assets/unsupported.png) |Audio | |
+| ![](/learn/assets/unsupported.png) |html | |
+| ![](/learn/assets/supported.png) |Message  | [Style Document](./widgets/basic/message.style) | 
+| ![](/learn/assets/supported.png) |Spinner  | [Style Document](./widgets/basic/spinner.style) | 
+| ![](/learn/assets/supported.png) |Search   | [Style Document](./widgets/basic/search.style) | 
+| ![](/learn/assets/supported.png) |Progress Bar  | [Style Document](./widgets/basic/progress-bar.style) | 
+| ![](/learn/assets/supported.png) |Progress Circle  | [Style Document](./widgets/basic/progress-circle.style) | 
+
+### Chart Widgets
+
+|Support|Chart Widgets|Reference|
+|---|---|---|
+| ![](/learn/assets/unsupported.png) |Line | |
+| ![](/learn/assets/unsupported.png) |Column || 
+| ![](/learn/assets/unsupported.png) |Area | |
+| ![](/learn/assets/unsupported.png) |Pie | |
+| ![](/learn/assets/unsupported.png) |Bar | |
+| ![](/learn/assets/unsupported.png) |Cumulative Line || 
+| ![](/learn/assets/unsupported.png) |Donut | |
+| ![](/learn/assets/unsupported.png) |Bubble | |
+
+### Navigation Widgets
+
+|Support| Navigation Widgets|Reference|
+|---|---|---|
+| ![](/learn/assets/supported.png) |Nav  | [Style Document](./widgets/navigation/navbar.style) | 
+| ![](/learn/assets/supported.png) |Dropdown Menu  | [Style Document](./widgets/navigation/menu.style) | 
+| ![](/learn/assets/supported.png) |Popover   | [Style Document](./widgets/navigation/popover.style) | 
+
+### Advanced Widgets
+
+|Support| Advanced Widgets|Reference|
+|---|---|---|
+| ![](/learn/assets/supported.png) |Login  | [Style Document](./widgets/advanced/login.style) | 
+| ![](/learn/assets/unsupported.png) |Marquee | |
+| ![](/learn/assets/supported.png) |Carousel  | [Style Document](./widgets/advanced/carousel.style) | 
+
+### Dialog Widgets
+
+|Support | Dialog Widgets|Reference|
+|---|---|---|
+| ![](/learn/assets/supported.png) |Design Dialog  | [Style Document](./widgets/dialogs/dialog.style) | 
+| ![](/learn/assets/supported.png) |Alert Dialog  | [Style Document](./widgets/dialogs/alertdialog.style) | 
+| ![](/learn/assets/supported.png) |Confirm Dialog  | [Style Document](./widgets/dialogs/confirmdialog.style) | 
+
+### Device Widgets
+
+|Support| Device Widgetss|Reference|
+|---|---|---|
+| ![](/learn/assets/supported.png) |Camera  | [Style Document](./widgets/device/camera.style) | 
+| ![](/learn/assets/supported.png) |Barcode Scanner  | [Style Document](./widgets/device/barcodescanner.style) | 
+
+### Page Layout Widgets
+
+|Support| Page Layout Widgets|Reference|
+|---|---|---|
+| ![](/learn/assets/supported.png) |App Nav bar  | [Style Document](./widgets/navigation/appnavbar.style) | 
+| ![](/learn/assets/supported.png) |Left Panel  | [Style Document](./widgets/page/left-panel.style) | 
+| ![](/learn/assets/supported.png) |Page  | [Style Document](./widgets/page.style) | 
+| ![](/learn/assets/supported.png) |Page Content  | [Style Document](./widgets/page/page-content.style) | 
+| ![](/learn/assets/supported.png) |Tab bar  | [Style Document](./widgets/page/tabbar.style) | 
 
 ## Widgets Properties
 Some of the existing properties of widgets are not supported. Those details are <a href="https://docs.google.com/spreadsheets/d/1U2spfuSDqmAP5oGipR-jK6CcvrQC49WfHRame5Fsb4w/edit#gid=0" target="_blank">available here</a>

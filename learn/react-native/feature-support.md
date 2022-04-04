@@ -6,10 +6,11 @@ id: ""
 
 With WaveMaker 11 Beta release, React Native supports the following features. In the coming releases, you can expect more features to be added to React Native Studio.
 
-|Displays as  | Support Status|
+|Shows as  | Support Status|
 |---|---|
 |![Supported React Native Features](/learn/assets/supported.png)| Supported
 |![Unsupported React Native Features](/learn/assets/unsupported.png)| Not Supported|
+
 ## Data Sources
 
 | Status|Data Source Type | Learn more |
