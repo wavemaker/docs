@@ -9,20 +9,46 @@ Mobile app developers can preview their apps using the Preview button. To see th
 
 ## Pre-requisitess
 
-1. If you are using windows machine, Install [Git Bash](https://gitforwindows.org/) and use it as terminal window. 
-2. Make sure you have node 12 and npm 7 installed in your machine
-3. Install wm-reactnative-cli in your machine using below command
- ```npm install -g https://github.com/wavemaker/wm-reactnative-cli```
-4. Install Expo Go app on your mobile phone from [Playstore](https://play.google.com/store/apps/details?id=host.exp.exponent) or [App Store](https://apps.apple.com/us/app/expo-go/id982107779)
-5. Install React Dev Tools `npm i -g react-devtools@4.14.0`.
+1. For Windows, install [Git Bash](https://gitforwindows.org/) and use it as the terminal window. 
+2. Install Node 12
+3. Install npm 7
+4. Install wm-reactnative-cli in your machine using below command
+
+```shell
+npm install -g https://github.com/wavemaker/wm-reactnative-cli
+```
+
+### Expo Go 
+
+Install Expo Go app on your mobile phone
+
+1. [Playstore](https://play.google.com/store/apps/details?id=host.exp.exponent) 
+2. [App Store](https://apps.apple.com/us/app/expo-go/id982107779)
+
+### React Dev Tool
+
+- Install React Dev Tools 
+
+```shell
+npm i -g react-devtools@4.14.0.
+```
 
 ## Debugging Procedure
 
-1. Open project and preview the application.
-2. copy the preview url. Ex: ```https://wm11.wavemakeronline.com/…../{Project_Name}```
+1. Open the project and preview the application.
+2. Copy the preview URL. For example:
+
+```shell
+https://wm11.wavemakeronline.com/…../{Project_Name}
+```
+
 3. Execute the following command in your machine terminal
-   ```wm-reactnative run expo ${APP_PREVIEW_URL}```
-4. Once command gets executed successfully, open [http://localhost:19002/](http://localhost:19002/) in your chrome browser
+
+```shell
+wm-reactnative run expo ${APP_PREVIEW_URL}
+```
+
+4. Once the command gets executed successfully, open [http://localhost:19002/](http://localhost:19002/) in your chrome browser
 5. If  you have Android, open the Expo Go app and scan the QR code that appears at the left bottom of [http://localhost:19002/](http://localhost:19002/)  
 
 ![expo portal](/learn/assets/expo-portal-qr-code.png)
@@ -31,7 +57,7 @@ Mobile app developers can preview their apps using the Preview button. To see th
 
 ![expo portal ios url](/learn/assets/expo-portal-ios-link.png)
 
-7. When you shake the phone, the expo developer menu opens up. In the developer menu, click on `Debug Remote JS` option to debug the JavaScript of the app. You can stop debugging by tapping on the `Stop Debug` in developer menu. An active debugging session will make the app to run slower.
+7. When you shake the phone, the expo developer menu opens up. In the developer menu, click on `Debug Remote JS` option to debug the JavaScript of the app. You can stop debugging by tapping on the `Stop Debug` in developer menu. An active debugging session will make the app run slower.
 
 <img src="../../assets/expo-developer-menu.png" style="height:480px">
 
