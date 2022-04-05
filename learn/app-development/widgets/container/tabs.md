@@ -137,6 +137,7 @@ Page.Widgets.EmployeesTab.goToTab(2); //Navigates to sales tab
 | Tab Position | This property determines if the Tabs should be displayed on the <br> - _left_, <br> - _top (default)_, <br> - _right_ or <br> - _bottom_ of the Tab content. |
 | **Behavior** |
 | Default Pane Index | This property sets the default active pane on a load of the widget based on the provided index. The Tab Index is an integer starting from 0, 1, 2, and so on. That is, setting this property to 0 will display the first Tab pane; setting to 1 will display the second Tab pane. |
+| Retain State  | This property will allow users to maintain widget states using state handling on the URL, Local Storage or Session Storage. <br> This property, that is enabled by default enables applications that are using Tabs to deep link specific tabs using URL rewriting approach. If state information being visible in URL is not desired, other approaches to linking to specific tab includes localStorage & sessionStorage. <br> - _URL_ : The state information will be stored in the app URL(This is the default option selected by the platform). <br> - _Local Storage_ : The widget state information will be stored in the browser local storage. <br> - _Session Storage_ : The state information will be stored in the browser session storage. <br> - _None_ : No state information will be applied to the widget.|
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When the show property is not bound, the widget will be initialized immediately. |
 | Transition | This property defines the transition effect to be applied when switching Tabs. You can choose from _none_ or _slide_. When the transition property is `slide`, the selected Tab will be animated into the viewport. `Swipe events` will work only when the transition value is `slide`. |
@@ -172,6 +173,20 @@ SubWidget of Tabs, to hold the Tab content.
 | **Callback Events** |
 | On select | This event handler is called when the Tab is selected. |
 | On deselect | This event handler is called when the Tab is deselected. |
+
+## Apply Retain State
+
+When we perform actions on tab widget like switching between different tabpanes and navigate to the another page, on navigating to the previous page using Browser back button, the previous state is lost. The widget will go back to the initial state. There should be a way to retain the state such that even when the user refreshes the page or shares the URL with someone else, they land on the page at a particular state.
+
+To overcome the above problem **Retain State** is provided by the platform which will store the state information either in the browser URL or in local or session storages of the browser.
+
+A reserved query param called **wm_state** is appended to the URL which contains the state information.
+
+**Example:**
+
+```code
+https://www.wavemakeronline.com/run-x2zq8pwbhy/ent1d52def3436/ExcelDemo_master/#/Main?wm_state=('ws'~('tabs1'~'tabpane2'))
+```
 
 ## See Also
 
