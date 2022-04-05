@@ -176,11 +176,9 @@ SubWidget of Tabs, to hold the Tab content.
 
 ## Apply Retain State
 
-When we perform actions on tab widget like switching between different tabpanes and navigate to the another page, on navigating to the previous page using Browser back button, the previous state is lost. The widget will go back to the initial state. There should be a way to retain the state such that even when the user refreshes the page or shares the URL with someone else, they land on the page at a particular state.
+When application uses Tabs, it is possible to deep link to specific tab in the tab list as user selects them. Deep linking is a way to retain the state such that even when the user refreshes the page or shares the URL with someone else, they land on the page at a particular tab.
 
-To overcome the above problem **Retain State** is provided by the platform which will store the state information either in the browser URL or in local or session storages of the browser.
-
-A reserved query param called **wm_state** is appended to the URL which contains the state information.
+**Retain State** will store the state information either in the browser URL or in local or session storages of the browser. Query param called **wm_state** is appended to the URL which contains the state information.
 
 **Example:**
 
