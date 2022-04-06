@@ -10,16 +10,16 @@ Role-based Access Control (RBAC) is essential to restrict end-users from accessi
 
  1. Generally, the roles are managed and assigned during the application design time on WaveMaker.
  2. Any new role that needs to be added to the application code needs to be changed and re-deploy.
- 3. For instance, when working with large Enterprise applications where typically app administrators have to manage multiple app users and roles.
+ 3. For instance, when working with large Enterprise applications, app administrators typically have to manage multiple app users and roles.
 
 ### How this document helps 
 
-1. Handling complex application permissions by defining application roles dynamically without much of code changes.
+1. Handling complex application permissions by defining application roles dynamically without many code changes.
 2. Helps developers design and manage the roles and allow role-based actions dynamically with your Proof of Concept (PoC).
 
 ## Implementation
 
-To enable this approach in a WaveMaker application, start with adding a few tables to the database.
+To enable this approach in a WaveMaker application, add the following tables to the database.
 
 ### Add the below Tables to the DB Schema 
 
@@ -47,9 +47,9 @@ To enable this approach in a WaveMaker application, start with adding a few tabl
 
 **Problem:** User Roles on WaveMaker are tightly coupled with the Studio. It is not possible to add or remove permissions during runtime.
 
-**Proposed Solution**: Consider app roles on WaveMaker security as User Permissions (P1, P2) have an additional layer Roles (Role-A, Role-B). 
+**Proposed Solution**: Consider app roles on WaveMaker security as User Permissions (P1, P2) have an additional layer of Roles (Role-A, Role-B). 
 
-Using the following approach admin can manage role-permission mapping as well as user-role mapping.
+Using the following approach admin can manage role-permission mapping and user-role mapping.
 
 1. The user can have one or more roles. 
 2. Each role can have one or more permissions. 
@@ -67,7 +67,7 @@ Using the following approach admin can manage role-permission mapping as well as
 7. Set the permissions to the logged-in user object. 
 8. Admin can change the role-permission mapping from the User Role Management page, which allows you to modify permissions to the respective user. 
 9. If the application requires new permission, you can define it on the WaveMaker security tab. 
-10. Insert the same permission on the Permissions table, and admin can map the new permission on the User Role Management page.
+10. Insert the same permission on the Permissions table, and the admin can map the new permission on the User Role Management page.
 
 ### Example
 
