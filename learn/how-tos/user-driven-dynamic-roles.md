@@ -1,6 +1,7 @@
 ---
-title: "User-Driven Dynamic Roles"
+title: "How to Create Dynamic Role-based Access Control"
 id: ""
+sidebar_label: "Creating Dynamic Access Roles"
 ---
 ---
 
@@ -9,7 +10,7 @@ Role-based Access Control (RBAC) is essential to restrict end-users from accessi
 ## Key RBAC Challenges
 
 1. Generally, the roles are managed and assigned during the application design time on WaveMaker.
-2. To add a new role to the application, the code needs to be ch  anged and re-deploy.
+2. To add a new role to the application, the code needs to be changed and re-deploy.
 3. For instance, when working with large Enterprise applications, app administrators typically have to manage multiple app users and roles.
 
 ### How this document helps 
