@@ -115,7 +115,7 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 | Java JSON utilities | Gson | 2.8.9 |
 | DB Persistence library | Hibernate | 5.5.7.Final|
 | Sample database | HSQL | 2.5.1|
-| JSON library | Jackson | 2.12.5|
+| JSON library | Jackson <td bgcolor="#44aaf4"> 2.12.5 -> 2.12.6.20220326|
 | Logging framework | SLF4j |1.7.32 |
 | Logging Implementation | Log4j2 | 2.17.1 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
