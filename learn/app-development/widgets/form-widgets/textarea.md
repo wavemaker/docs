@@ -6,6 +6,9 @@ id: "textarea"
 
 **Textarea widget** represents a multi-line plain-text editing control. It can be used in a web application for adding comments and feedback forms as a plain text editor.
 
+**Help text property:** In this property we display the number of characters entered or left to enter out of the maximum number of characters in a text area. This property will be shown only when there is a value greater than 0 given to maximum characters, otherwise it is hidden. We are giving three default ways in which we can display the help text property. <br> 1. 0 characters filled out of 100 <br> 2. 100 characters left out of 100 <br> 3. 0/100 <br> Here, the first value shown is the number of characters entered or the number of characters left and the second value is the maximum characters which can be entered. If the user wants to show this property in any other way then these default values, the user can click on the bind expression button where we can change the value of this help text property. we also provide the charlength and maxchars property for binding in the user expression dialog. 
+
+
 ## Properties
 
 | Property | Description |
@@ -24,6 +27,7 @@ id: "textarea"
 | **Validation** |
 | Required | A required editor in wm.LiveForm may refuse to save without a required field. |
 | Maximum characters | Defines the maximum number of characters that can be entered in the editor. |
+| Help text (character count) | Displays the number of characters entered or left to enter out of the maximum number of characters in a text area. This property is only shown when the we provide the maximum characters property. |
 | **Behavior** |
 | Auto Focus | This property makes the element get focused automatically when the page loads. |
 | Read Only | Selecting this checkbox property prevents the user from being able to change the data value of a widget. |
