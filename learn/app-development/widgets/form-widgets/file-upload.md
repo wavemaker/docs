@@ -24,13 +24,13 @@ Following properties can be set for a **FileUpload** widget:
 
 Clear the list of uploaded files from the UI (user interface). For this, you can add the following properties:
 1. Choose an icon or use a default one.
-2. Write a hint description on mouse over.
+2. Write a hint description on mouse-over.
 
-**cleariconclass**: Set the class name for the Clear icon, choosing from [icons](/learn/app-development/widgets/basic/icon). The default value of the property is `wi wi-clear`. To change the default icon, configure the property from the **Markup** tab or by using the exposed method `setClearIconClass`.
+**cleariconclass**: Set the class name for the Clear icon, choosing from the [icons](/learn/app-development/widgets/basic/icon). The default value of the property is `wi wi-clear`. To change the default icon, configure the property from the **Markup** tab or by using the exposed method `setClearIconClass`.
 
-**cleariconhint**: You can set the hint property to show a text message when you mouse-hover the icon. The default value is set to a text *Clear*. To change the default hint text, configure the property from the **Markup** tab or by using the exposed method `setClearIconHint(hint)`.
+**cleariconhint**: You can set the hint property to show a text message when you mouse-over the icon. The default value is set to the text *`Clear`*. To change the default hint text, configure the property from the **Markup** tab or by using the exposed method `setClearIconHint(hint)`.
 
-**clear()**: Call this method clear() to remove all the uploaded files from the UI at once.
+**clear()**: Call the `clear()` method to remove the uploaded files from the UI - all at once.
 
 ![file upload clear](/learn/assets/file-upload-clear.png)
 
