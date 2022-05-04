@@ -27,7 +27,7 @@ For WME, [Configure Pipeline](learn/on-premise/configure/config-pipeline) before
 
 ### SSL Enabled Demo Cloud
 
-Demo and QA deployments in WaveMaker use secure protocol HTTPS, which is SSL enabled, and therefore, the app is accessible with URL patterns as follows. 
+Demo and QA deployments in WaveMaker use secure protocol HTTPS, which is SSL enabled, and therefore, the app is accessible with a URL pattern as follows. 
 
 **SILO workspace (WMO Personal workspace)**
 
