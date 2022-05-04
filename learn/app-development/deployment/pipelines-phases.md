@@ -25,9 +25,9 @@ WaveMaker Platform offers a pre-defined set of App delivery phases which enables
 For WME, [Configure Pipeline](learn/on-premise/configure/config-pipeline) before doing deploying an app. For WMO, use [WaveMaker Inbuilt Pipeline](/learn/app-development/deployment/default-pipelines) configuration with default phases including **Demo** and **Live**.
 :::
 
-### SSL Enabled Demo and QA URLs
+### SSL Enabled Demo Cloud
 
-At each phase, the app is accessible using a unique URL.
+Demo and QA deployments in WaveMaker use secure protocol HTTPS, which is SSL enabled, and therefore, the app is accessible with URL patterns as follows. 
 
 **SILO workspace (WMO Personal workspace)**
 
