@@ -33,6 +33,30 @@ By selecting **Manage Deployed Apps** button from the Project Dashboard, you wi
     - if live, the version that is live and the date it was deployed to live
 - you can select any app from the listing for management for more details.[know more](#manage-deployed-app).
 
+### SSL Enabled Demo Cloud
+
+:::note
+From [10.14.0 release](/learn/wavemaker-release-notes/v10-14-0), WaveMaker introduced SSL for Deployed Apps to [Demo Cloud](/learn/app-development/deployment/pipelines-phases#deployment-environment).
+:::
+
+Demo and QA deployments in WaveMaker use secure protocol HTTPS, which is SSL enabled, and therefore, the app is accessible with a URL pattern as follows. 
+
+### SILO workspace (WMO Personal workspace)
+
+**URL**: `http://cloud.wavemakeronline.com/pk8888888n45/TestApp`  
+
+**Updated to**: In the URL, `pk8888888n45` is a Project key.
+
+### Teams and Enterprise (WMO/WME)
+
+**URL**: `http://cloud.wavemakeronline.com/wmshowcase/TestApp`  
+
+**Updated to**: `wmshowcase` is the WaveMaker Online team's name and WaveMaker Enterprise's name in the URL.
+
+:::important
+**Impact**: With this change, the existing app URLs do not work. Thus, the users can get updated URL from the Apps portal or deployed apps. You are required to update app URL in all the places where it is used for redirection. For example, when configured as OAuth redirect URL, or when used in other apps as API URL.
+:::
+
 ### Manage App
 
 By using the **Manage App** option under Deploy from the Project Workspace Main Menu - this will open the app for management.
