@@ -5,7 +5,7 @@ sidebar_label: "Chrome Extension: Devtool"
 ---
 ---
 
-**WaveMaker Devtool** is a Google Chrome extension, an addition to the existing Google Chrome developer tools that allow you to debug and monitor WaveMaker applications in preview mode. Accessible via the **Inspect** option.
+**WaveMaker Devtool** is a Google Chrome extension, an addition to the existing Google Chrome developer tools that allow you to debug and monitor WaveMaker applications in preview mode. Accessible via the **Inspect** option. WaveMaker DevTool supports WaveMaker v10.14.0 and later.
 
 ## Devtool Installation
 
