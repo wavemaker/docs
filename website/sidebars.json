@@ -777,6 +777,7 @@
             "how-tos/configuring-aws-redshiftdb",
             "how-tos/configuring-sap-hana-clouddb",
             "how-tos/audit-history-using-crud-listeners",
+            "how-tos/rowlevel-security-using-crud-event-listeners",
             "how-tos/validations-using-crudListeners",
             "how-tos/custom-business-logic-using-crud-event-listeners"
           ],
@@ -1319,9 +1320,18 @@
       },
       {
         "type": "subcategory",
+        "label": "Versions: 10.14.x",
+        "ids": 
+          [ 
+            "wavemaker-release-notes/v10-14-0"
+          ]
+      },
+      {
+        "type": "subcategory",
         "label": "Versions: 10.13.x",
         "ids": 
           [ 
+            "wavemaker-release-notes/v10-13-2",
             "wavemaker-release-notes/v10-13-1",
             "wavemaker-release-notes/v10-13-0"
           ]

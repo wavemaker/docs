@@ -24,6 +24,7 @@ id: "textarea"
 | **Validation** |
 | Required | A required editor in wm.LiveForm may refuse to save without a required field. |
 | Maximum characters | Defines the maximum number of characters that can be entered in the editor. |
+| Help text (character count) | Display the number of characters entered or left to enter by comparing it with the value you have set in the **Maximum characters** in the text area. <br><br> There are three default ways to display the help text property in runtime, including: <br> 1. 0 characters filled out of 100 <br> 2. 100 characters left out of 100 <br> 3. 0/100 <br> <br> If you want to show this property other than the default values, you can use the bind expression button and change the value of this help text property. You can also provide the `charlength` and `maxchars` properties for binding in the **Use Expression** dialog. <br> <br>**NOTE:** This property will only show when you set the Maximum characters property. <br> |
 | **Behavior** |
 | Auto Focus | This property makes the element get focused automatically when the page loads. |
 | Read Only | Selecting this checkbox property prevents the user from being able to change the data value of a widget. |
