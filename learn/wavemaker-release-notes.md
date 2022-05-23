@@ -1,6 +1,8 @@
 ---
 title: WaveMaker Release Notes
 id: ""
+sidebar_label: "Release History"
+
 ---
 Find what's new in WaveMaker. See information about bug fixes, new features, and improvements from WaveMaker.
 
@@ -22,6 +24,8 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 ### WaveMaker 10
 
+|Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
+|---|---|---|---|---|
 |[WaveMaker v10.14.0](/learn/wavemaker-release-notes/v10-14-0)|Bug fixes | 1 May 2022 | -|-|
 |[WaveMaker v10.13.2](/learn/wavemaker-release-notes/v10-13-2)|Bug fixes | 11 April 2022 | New features + Bug fixes|12 April 2022|
 |[WaveMaker v10.13.1](/learn/wavemaker-release-notes/v10-13-1)|Bug fixes | 23 March 2022 | -|-|

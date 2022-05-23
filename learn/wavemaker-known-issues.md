@@ -1,7 +1,7 @@
 ---
 title: WaveMaker Known Issues
 id: ""
-sidebar_label: "WaveMaker Known Issues"
+sidebar_label: "Known Issues"
 ---
 ---
 

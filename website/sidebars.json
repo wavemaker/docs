@@ -701,7 +701,8 @@
         "How-to-documents": 
           [
             "howtos-documents",
-            "app-development/wavemaker-overview/wavemaker-best-practices"                                                                     
+            "app-development/wavemaker-overview/wavemaker-best-practices",
+            "app-development/wavemaker-overview/wavemaker-11-beta"                                                               
           ],
           
           "App solution":
@@ -1300,7 +1301,7 @@
         "wavemaker-known-issues",
         {
           "type": "subcategory",
-          "label": "Versions: 11.0.x",
+          "label": "WaveMaker 11",
           "ids": 
             [
               "wavemaker-release-notes/v11-0-beta"              
