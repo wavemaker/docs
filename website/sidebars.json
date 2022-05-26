@@ -3,8 +3,8 @@
   {
     "Getting started": 
       [
-        "documentation-reference",                
-        "app-development/wavemaker-overview/product-walkthrough"                  
+        "documentation-reference",
+        "app-development/wavemaker-overview/product-walkthrough"
       ],
 
     "Pages": 
@@ -701,8 +701,7 @@
         "How-to-documents": 
           [
             "howtos-documents",
-            "app-development/wavemaker-overview/wavemaker-best-practices",
-            "app-development/wavemaker-overview/wavemaker-11-beta"                                                               
+            "app-development/wavemaker-overview/wavemaker-best-practices"                                                               
           ],
           
           "App solution":
@@ -1295,10 +1294,21 @@
 
   "Release Notes":
   {
-    "Release Notes": 
+    "Overview":
+    [
+      "wavemaker-release-notes",
+      {
+        "type": "subcategory",
+        "label": "What's new",
+        "ids": 
+          [
+          "app-development/wavemaker-overview/wavemaker-11-beta" 
+          ]
+        }
+    ], 
+
+    "Current v11.x": 
       [
-        "wavemaker-release-notes",
-        "wavemaker-known-issues",
         {
           "type": "subcategory",
           "label": "WaveMaker 11",
@@ -1581,7 +1591,12 @@
             ]
         }
 
-      ]  
+      ],
+
+      "Known Issues":
+      [
+        "wavemaker-known-issues"
+      ] 
   },
 
   "FAQs":

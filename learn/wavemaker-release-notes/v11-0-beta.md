@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker 11 Beta - Release date: 00 April 2022"
 id: ""
-sidebar_label: "Current v11.Beta"
+sidebar_label: "Release v11.beta"
 ---
 *WaveMaker released another version update with new features and bug fixes.*
 
