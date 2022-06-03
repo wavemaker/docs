@@ -40,4 +40,4 @@ Java 11 version brings along a few break changes and version bumps. If you build
 
 ## Parallel Versioning: Multi-studio
 
-We ship multi-studio versions to make the migration process smooth. The project card converts into a folder that contains two versions of the same project, including versions 10 and 11. For more information, see [Updating an App from WaveMaker 10 WaveMaker 11](/learn/how-tos/upgrade-guide-wavemaker-10-to-11).
+We bring in multi-studio versions to help the project migration complete smoothly at your convenience. With Multi-studio, the project card converts into a folder that contains two versions of the same project, including versions 10 and 11. You can work on both versions of the projects, meaning you can push your critical planned fixes on WaveMaker 10 while planning your upgrade to WaveMaker 11 in its project cards, respectively. For more information, see [Updating an App from WaveMaker 10 WaveMaker 11](/learn/how-tos/upgrade-guide-wavemaker-10-to-11).
