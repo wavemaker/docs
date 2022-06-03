@@ -7,9 +7,9 @@ sidebar_label: "WaveMaker 11 Beta"
 
 We are back with a new release, and we can't wait to share all the great features and updates waiting for you in WaveMaker 11 beta.
 
-With every new release, our goal is consistent. It is to simplify a low-code platform for developers and consultants to bring your app ideas to life faster. Also, remain sustainable and reusable. While we are at it, we continue to provide great flexibility to customize components and services as a solution at its core and take advantage of several open-source integrations on our way. Let's see what we got this year.
+With every new release, our goal is consistent. It is to simplify the low-code platform for developers and consultants to bring app ideas to life faster. While we are at it, we continue to provide great flexibility to customize app components and services that are completely reusable at their core—and take advantage of several open-source integrations on our way. Let's see what we got this year.
 
-WaveMaker 11 beta release features significant advancements shaping the practicality of the low-code development in a big way, especially for mobile consumers this time. Additionally, we touched all security points and covered you with extensive tooling capabilities, keeping the low code roots in mind and staying up-to-date with the tech demands.
+WaveMaker 11 beta release features significant advancements shaping the practicality of the low-code development for mobile consumers in a big way. Additionally, we touched all security points and covered you with extensive tooling capabilities, keeping the low code roots in mind.
 
 
 ## Introducing React Native in WaveMaker
@@ -30,13 +30,13 @@ API composer toolkit can be your playground to compose an object using multiple 
 
 ## API Mock Server
 
-Simulate a backend API with close-to-accurate responses for developing the UI even if you do not already have a ready-to-use backend service. 
+API Mock Server is our own WaveMaker Studio extension. It simulates a backend API with responses that are close to accurate for developing the UI design even if you do not already have a backend service to use. This is great for the app designing phase, while the backend team can develop the APIs simultaneously. For more information, see [API Mock Server](/learn/app-development/services/api-mock-server).
+
 
 ## Java 11 Updates Tech Stack But Brings a few breaking changes
 
 Java 11 version brings along a few break changes and version bumps. If you build and deploy apps outside WaveMaker, you must upgrade your build infrastructure and verify the deployment setup to support Java 11. For this reason, we introduced parallel versioning of Studio so you can test your application before you upgrade to WaveMaker 11 beta. 
 
-What should you do?
 
 ## Parallel Versioning: Multi-studio
 
