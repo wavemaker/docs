@@ -67,7 +67,7 @@ This step initiates upgrading the project to WaveMaker 11, and you will notice t
 
 ## Multi-version Studio
 
-The project card converts into a folder which contains two versions of the same project including version 10 and 11.
+The project card converts into a folder that contains two versions of the same project, including versions 10 and 11.
 
 ![](/learn/assets/converts-into-two-project-cards.png)
 
@@ -98,6 +98,8 @@ From the project card, you will access the app in 10 version. You can continue m
 ### To do
 
 The change you're making in the WM 10 version should be done again on WM 11 manually after you finish upgrading the project.
+
+
 
 :::important
 We are providing approximately three months time to complete the project update. If your app currently runs on WM 10 or lower versions, you must start updating your project to WaveMaker 11. This also allows you to take complete control of the upgrade process. 
