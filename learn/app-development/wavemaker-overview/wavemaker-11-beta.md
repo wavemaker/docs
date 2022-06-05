@@ -23,28 +23,37 @@ We introduce React Native, a new platform for developing native apps, including 
 
 Although our emphasis at this point is to prioritize React Native, even so, we do not plan to deprecate Cordova anytime sooner. We will continue to support Cordova app development and provide an up-to-date tech stack whenever a new update is available. 
 
-## New Widgets in Studio
+## New Flex Layout Widget
 
 We are persistent in producing rich studio tools that enable you to design great-looking apps using our new Linearlayout Flex widget. This widget allows you to display data in list format, giving developers complete control of vertical and horizontal layout adjustments. This feature is exclusive to React Native users for now. 
 
 ![flex widget](/learn/assets/flex-layout-widget.gif)
-
-##
-
-## API Composer Toolkit
-
-API composer toolkit can be your playground to compose an object using multiple API endpoints. This means you can combine many REST APIs in Java Service and write custom business logic that you can use as a variable and bind to any UI widget. 
-
-## API Mock Server
-
-API Mock Server is our own WaveMaker Studio extension. It simulates a backend API with responses that are close to accurate for developing the UI design even if you do not already have a backend service to use. This is great for the app designing phase, while the backend team can develop the APIs simultaneously. For more information, see [API Mock Server](/learn/app-development/services/api-mock-server).
 
 
 ## Java 11 Update
 
 The Java 11 version updates the tech stack but brings a few break changes and version bumps. If you build and deploy apps outside WaveMaker, you must upgrade your build infrastructure and verify the deployment setup to support Java 11. For this reason, we introduced parallel versioning of Studio so you can test your application before you upgrade to WaveMaker 11 beta. Learn more about [upgrading deployment infrastructure](/learn/how-tos/upgrade-guide-wavemaker-10-to-11#upgrade-deployment-infrastructure) before you upgrade to WaveMaker 11. 
 
+## API Composer Toolkit
 
-## Parallel Versioning: Multi-version Studio
+API composer toolkit can be your playground to compose an object using multiple API endpoints. This means you can combine many REST APIs in Java Service and write custom business logic that you can use as a variable and bind to any UI widget. 
 
-We bring in multi-studio versions to help the project migration complete smoothly at your convenience. With Multi-studio, the project card converts into a folder that contains two versions of the same project, including versions 10 and 11. You can work on both versions of the projects, meaning you can push your critical planned fixes on WaveMaker 10 while planning your upgrade to WaveMaker 11 in its project cards, respectively. For more information, see [Updating an App from WaveMaker 10 WaveMaker 11](/learn/how-tos/upgrade-guide-wavemaker-10-to-11).
+![](/learn/assets/api-composer.png)
+
+## API Mock Server
+
+API Mock Server is our own WaveMaker Studio extension. It simulates a backend API with responses that are close to accurate for developing the UI design even if you do not already have a backend service to use. This is great for the app designing phase, while the backend team can develop the APIs simultaneously. For more information, see [API Mock Server](/learn/app-development/services/api-mock-server).
+
+
+## Multi-version Studio
+
+We bring in parallel versioning of Studio to help perform project migration smoothly at your convenience. With Multi-version Studion, the project card converts into a folder that contains two versions of the same project, including versions 10 and 11. You can work on both versions of the projects, meaning you can push your critical planned fixes on WaveMaker 10 while planning your upgrade to WaveMaker 11 in its project cards, respectively. 
+
+![multi-version studio](/learn/assets/multi-version-studio.png)
+
+For more information, see [Updating an App from WaveMaker 10 WaveMaker 11](/learn/how-tos/upgrade-guide-wavemaker-10-to-11).
+
+## Teams for Enterprise
+
+Teams is a collaborative development environment, which comes as a standard for WaveMaker Enterprise packed solution. Manage projects, roles, code repositories, add or remove team members, grant permissions, and more using [Teams Portal](/learn/teams/overview). 
+
