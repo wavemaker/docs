@@ -7,13 +7,13 @@ sidebar_label: "Upgrade Guide 11 beta"
 
 This guide helps you follow step-by-step instructions for upgrading your projects to WaveMaker 11 beta. Follow these steps carefully and ensure you test the project thoroughly to complete the version upgrade. After finishing the upgrade, access all the amazing tools and features of WaveMaker 11 beta. See [WaveMaker 11 Beta Features](/learn/app-development/wavemaker-overview/wavemaker-11-beta) to learn what's new.
 
-When you log in to WaveMaker Studio, you can see the following prompt. Acknowledge it, and you're ready to go.
+When you log in to WaveMaker Studio, you will see the following prompt welcoming you to WaveMaker 11.
 
 ![WaveMaker 11 beta](/learn/assets/wavemaker-11-beta.png)
 
 ## Project Upgrade Flow
 
-The project dashboard displays alerts to indicate that a newer version, WaveMaker 11, is available and will prepare you for the upgrade. 
+The project dashboard alerts you that a newer version, WaveMaker 11, is available and will prepare you for the upgrade. 
 
 :::note
 Only the project owners can initiate the upgrade, and the contributors do not have permission to upgrade the project.
@@ -38,7 +38,7 @@ Immediately, you will see the following [contextual help guide](#in-studio-upgra
 
 ## In-studio Upgrade Help
 
-Use the right arrow to go through the illustrative help guide, and keep note of the checklist before going to the next steps. See the image below and follow the orange tag.
+Use the right arrow to go through the illustrative help guide, and keep a note of the checklist before going to the next steps. See the image below and follow the orange tag.
 
 ### Start Upgrade
 
@@ -66,7 +66,7 @@ The project card converts into a folder that contains two versions of the same p
 1. **WaveMaker 11**
 2. **WaveMaker 10**
 
-While the WaveMaker 11 project is a work in progress, you can continue developing and running your application on WaveMaker 10; this means you can work on both versions simultaneously.
+While the WaveMaker 11 project is a work in progress, you can continue developing and running your application on WaveMaker 10 simultaneously.
 
 ## WaveMaker 11
 
@@ -82,6 +82,8 @@ Follow this checklist to complete the infrastructure upgrade. It applies if you 
 Action required: update infrastructure from Java 8 to Java 11 if you use your own CI-CD pipeline. 
 :::
 
+#### Steps
+
 1. Upgrade the build infrastructure to support Java 11 instead of Java 8.
 2. Similarly, update deployment setup to use Java 11 and web server supporting Servlet 4.0, such as Tomcat 9. 
 
@@ -95,14 +97,14 @@ At this stage, verify the Java 11 upgrade by testing your application thoroughly
 
 ### Deploy and Test Application
 
-To test the app, go to **Preview** and verify if the project previews as expected, and check for all the following:
+To test the app, go to **Preview** and verify the functionality of features released, and check for all the following:
 
 1. Preview all the pages.
 2. Test typical breakage cases.
 3. Using the inspection framework, run checks and ensure there are no console errors.
 4. Follow your QA cycle. Deploy the project and let your QA team test the deployed app; run automation test scenarios, if any.
 
-If the preview fails, you must check the logs and fix any issues. Contact support if needed.
+If the Preview fails, you must check the logs and fix any issues. Contact support if needed.
 
 ### Finish Upgrade
 
@@ -110,22 +112,24 @@ If the preview fails, you must check the logs and fix any issues. Contact suppor
 
 After testing your application, complete the following checklist. 
 
-- Push everything to VCS, including your and your team members' changes. 
-- Click **Finish Upgrade**.
+- Push all your updates to the VCS, including your team members' changes. 
+- Click **Proceed**.
 
 ![](/learn/assets/push-to-vcs-upgrade.png)
+
+- Click **Finish Upgrade**.
 
 ![](/learn/assets/finish-upgrade-wavemaker-11.png)
 
 ## WaveMaker 10
 
-From the project card, you will access the app in WaveMaker 10. You can continue making critical fixes supporting your already released application running in WaveMaker 10.
+From the project card, you will access the app in WaveMaker 10. You can continue making critical fixes supporting your released application running in WaveMaker 10.
 
 ![](/learn/assets/project-card-wavemaker-10.png)
 
 ### To do
 
-When working in multi-version Studio, any changes you're making in the WaveMaker 10 project should be done on WaveMaker 11 manually once you finish completing the project upgrade.
+When working in Multi-version Studio, any changes you're making in the WaveMaker 10 project should be redone on WaveMaker 11 manually after the project upgrade.
 
 ## Upgrade Complete
 
@@ -133,5 +137,6 @@ When working in multi-version Studio, any changes you're making in the WaveMaker
 
 ### Archived Projects
 
-Once you complete the upgrading of the project, WaveMaker 10 project gets archived. You can access and download the older projects if needed.
+Once you complete the upgrading of the project, WaveMaker 10 project gets archived. If needed, you can access and download the older projects from the **Archived Apps** tab.
 
+![](/learn/assets/upgraded-project-archived.png)
