@@ -1,8 +1,7 @@
 ---
-title: WaveMaker Release Notes
+title: WaveMaker 10
 id: ""
 sidebar_label: "Release History"
-
 ---
 Find what's new in WaveMaker. See information about bug fixes, new features, and improvements from WaveMaker.
 
@@ -15,14 +14,6 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 ## Release History
 
 ---
-
-### WaveMaker 11
-
-|Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
-|---|---|---|---|---|
-|[WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1)|New features + Bug fixes | 06 June 2022 | -|-|
-
-### WaveMaker 10
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
@@ -96,7 +87,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 ## Technology Stack
 
-Last updated: [Release: v11.0.beta](/learn/wavemaker-release-notes/v11-0-beta)
+Last updated: [Release: v10.12.0](/learn/wavemaker-release-notes/v10-12-0)
 
 ---
 
@@ -105,32 +96,32 @@ Last updated: [Release: v11.0.beta](/learn/wavemaker-release-notes/v11-0-beta)
 | Description | JS Library | Version |
 | --- | --- | --- |
 | JS Binding | jquery | 3.4.1 |
-| | jquery-ui* | 1.12.1 |
+|  | jquery-ui* | 1.12.1 |
 | MVC Framework | angular| 11.2.14 |
-| | angular-ui-bootstrap | 3.3.6 |
-| | ngx-bootstrap | 6.2 |
+|  | angular-ui-bootstrap | 3.3.6 |
+|  | ngx-bootstrap | 6.2 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
-| | nvd3 | 1.8.6 |
+|  | nvd3 | 1.8.6 |
 | Built-in functions | lodash | 4.17.19|
 | Device support, gestures | hammerjs | 2.0.8 |
 
-Optimized jQuery-UI library, excluding unwanted components like an accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
+Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
 ### Backend Frameworks
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-| | Spring Framework | 5.3.18 |
-| Security framework | Spring Security | 5.5.2|
-| Java JSON utilities | Gson | 2.8.9 |
+|  | Spring Framework  <td bgcolor="#44aaf4"> 5.3.13 - 5.3.15 |
+| Security framework | Spring Security  | 5.5.2|
+| Java JSON utilities | Gson  <td bgcolor="#44aaf4">  2.8.8 -> 2.8.9 |
 | DB Persistence library | Hibernate | 5.5.7.Final|
 | Sample database | HSQL | 2.5.1|
-| JSON library | Jackson | 2.12.6.20220326|
-| Logging framework | SLF4j |1.7.32 |
-| Logging Implementation | Log4j2 | 2.17.1 |
+| JSON library | Jackson  |  2.12.5|
+| Logging framework | SLF4j  |1.7.32 |
+| Logging Implementation | Log4j2  | 2.17.1 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
-| Servlet Framework | | 3.1.0 |
+| Servlet Framework |  | 3.1.0 |
 |Database Connection Pooling | HikariCP | 4.0.3 |
 
 ### Runtime Environment
@@ -141,7 +132,7 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
 | Tomcat | 8.5* |
-| Cordova (mobile apps) <br> Android <br> iOS <td bgcolor="#44aaf4"> 10.0.0 -> 11.0.0 <br> 10.1.0 -> 10.1.2 <br> 6.1.0 |
+| Cordova (mobile apps) <br> Android <br> iOS | 10.0.0 <br> 10.1.0  <br> 6.1.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 

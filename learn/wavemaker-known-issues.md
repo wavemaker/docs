@@ -1,7 +1,7 @@
 ---
 title: WaveMaker Known Issues
 id: ""
-sidebar_label: "WaveMaker Known Issues"
+sidebar_label: "Known Issues"
 ---
 ---
 
@@ -12,6 +12,12 @@ Below is the list of known issues reported against the release version. We docum
 ## Known Issue Tracker
 
 ---
+
+### 11.0.x
+
+|Issue description|Occured since|Expected to fix by|Status|Workaround|
+|---|---|---|---|---|
+
 
 ### 10.10.x
 
