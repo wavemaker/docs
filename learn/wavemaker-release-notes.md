@@ -20,7 +20,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 |Version Update|WMO details| WMO: Released on |WME details| WME: Released on |
 |---|---|---|---|---|
-|[WaveMaker v11.0.beta](/learn/wavemaker-release-notes/v11-0-1)|New features + Bug fixes | 06 June 2022 | -|-|
+|[WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1)|New features + Bug fixes | 06 June 2022 | -|-|
 
 ### WaveMaker 10
 
