@@ -96,7 +96,7 @@ If you notice a bug and want to report it to us, please contact [support](mailto
 
 ## Technology Stack
 
-Last updated: [Release: v11.0.beta](/learn/wavemaker-release-notes/v11-0-beta)
+Last updated: [WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1)
 
 ---
 
@@ -121,17 +121,17 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-| | Spring Framework | 5.3.18 |
-| Security framework | Spring Security | 5.5.2|
-| Java JSON utilities | Gson | 2.8.9 |
-| DB Persistence library | Hibernate | 5.5.7.Final|
-| Sample database | HSQL | 2.5.1|
-| JSON library | Jackson | 2.12.6.20220326|
-| Logging framework | SLF4j |1.7.32 |
-| Logging Implementation | Log4j2 | 2.17.1 |
+|  | Spring Framework  <td bgcolor="#44aaf4"> 5.3.15 -> 5.3.20|
+| Security framework | Spring Security  <td bgcolor="#44aaf4"> 5.5.2 -> 5.6.3|
+| Java JSON utilities | Gson  <td bgcolor="#44aaf4"> 2.8.9 -> 2.9.0|
+| DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 5.5.7.Final -> 5.6.9.Final|
+| Sample database | HSQL <td bgcolor="#44aaf4"> 2.5.1 -> 2.6.1|
+| JSON library | Jackson  <td bgcolor="#44aaf4">  2.12.5 -> 2.13.3|
+| Logging framework | SLF4j  <td bgcolor="#44aaf4"> 1.7.32 -> 1.7.36 |
+| Logging Implementation | Log4j2  <td bgcolor="#44aaf4"> 2.17.1 -> 2.17.2 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
-| Servlet Framework | | 3.1.0 |
-|Database Connection Pooling | HikariCP | 4.0.3 |
+| Servlet Framework |  <td bgcolor="#44aaf4"> 3.1.0 -> 4.0.1 |
+|Database Connection Pooling | HikariCP <td bgcolor="#44aaf4"> 4.0.3 -> 5.0.1 |
 
 ### Runtime Environment
 
@@ -141,7 +141,7 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
 | Tomcat | 8.5* |
-| Cordova (mobile apps) <br> Android <br> iOS <td bgcolor="#44aaf4"> 10.0.0 -> 11.0.0 <br> 10.1.0 -> 10.1.2 <br> 6.1.0 |
+| Cordova (mobile apps) <br> Android <br> iOS |11.0.0 <br> 10.1.2  <br> 6.1.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
