@@ -9,7 +9,7 @@ We are back with a new release, and we can't wait to share all the great feature
 
 With every new release, our goal is consistent. It is to simplify the low-code platform to bring app ideas to life faster. While we are at it, we continue to provide a broad canvas to customize app components and services that are completely reusable at their core—and take advantage of several open-source integrations on our way. Let's see what we got this year.
 
-WaveMaker 11 beta release features significant advancements shaping the practicality of the low-code development for mobile consumers in a big way. Nevertheless, we covered you with extensive tooling capabilities, keeping the low code roots in mind.
+WaveMaker 11 beta release features significant advancements shaping the practicality of the low-code development for mobile consumers in a big way. And we covered you with extensive tooling capabilities, keeping the low code roots in mind.
 
 ![React Native Studio](/learn/assets/react-native-studio.png)
 
@@ -42,18 +42,25 @@ API composer toolkit can be your playground to compose an object using multiple 
 
 ## API Mock Server
 
-API Mock Server is our own WaveMaker Studio extension. It simulates a backend API with responses that are close to accurate for developing the UI design even if you do not already have a backend service to use. This is great for the app designing phase, while the backend team can develop the APIs simultaneously. For more information, see [API Mock Server](/learn/app-development/services/api-mock-server).
+API Mock Server is our own WaveMaker Studio extension. It simulates a backend API with responses that are close to accurate, which are useful for developing the UI design even if you do not have a backend service ready to consume. This is great for the app designing phase, while the backend team can develop the APIs simultaneously. For more information, see [API Mock Server](/learn/app-development/services/api-mock-server).
 
+## Pagination for Imported APIs
+
+WaveMaker now supports server-side pagination out of the box when importing API with pagination. It works seamlessly with all widgets, including tables, lists, searches, etc. You can configure these pagination parameters while importing the API. 
 
 ## Multi-version Studio
 
-We bring in parallel versioning of Studio to help perform project migration smoothly at your convenience. With Multi-version Studion, the project card converts into a folder that contains two versions of the same project, including versions 10 and 11. You can work on both versions of the projects, meaning you can push your critical planned fixes on WaveMaker 10 while planning your upgrade to WaveMaker 11 in its project cards, respectively. 
+We bring in parallel versioning of Studio to help perform project migration smoothly at your convenience. With Multi-version Studio, the project card converts into a folder that contains two versions of the same project, including versions 10 and 11. You can work on both versions of the projects, meaning you can push your critical planned fixes on WaveMaker 10 while planning your upgrade to WaveMaker 11 in its project cards, respectively. 
 
 ![multi-version studio](/learn/assets/multi-version-studio.png)
 
 For more information, see [Updating an App from WaveMaker 10 WaveMaker 11](/learn/how-tos/upgrade-guide-wavemaker-10-to-11).
 
+## POM Hierarchy Remodeled to Inheritance Model
+
+A generated WaveMaker application encloses a pom.xml containing build resources, such as filters, profiles, repositories, plugin management, dependencies, and user customizations. The pom structure has been remodeled to inherit from the parent pom, making it easy to read the code. 
+
 ## Teams for Enterprise
 
-Teams is a collaborative development environment, which comes as a standard for WaveMaker Enterprise packed solution. Manage projects, roles, code repositories, add or remove team members, grant permissions, and more using [Teams Portal](/learn/teams/overview). 
+Teams is a collaborative development environment, which comes as a standard for WaveMaker Enterprise users. Manage projects, roles, code repositories, add or remove team members, grant permissions, and more using [Teams Portal](/learn/teams/overview). 
 
