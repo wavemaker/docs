@@ -29,10 +29,18 @@ We are persistent in producing rich studio tools that enable you to design great
 
 ![flex widget](/learn/assets/flex-layout-widget.gif)
 
-
 ## Java 11 Update
 
 The Java 11 version updates the tech stack but brings a few break changes and version bumps. If you build and deploy apps outside WaveMaker, you must upgrade your build infrastructure and verify the deployment setup to support Java 11. For this reason, we introduced parallel versioning of Studio so you can test your application before you upgrade to WaveMaker 11 beta. Learn more about [upgrading deployment infrastructure](/learn/how-tos/upgrade-guide-wavemaker-10-to-11#upgrade-deployment-infrastructure) before you upgrade to WaveMaker 11. 
+
+## Upgrading SAML to new Library
+
+All WaveMaker projects using SAML (saml2-core) as a security provider have reached their end of life and, therefore, will be migrated to a new version of SAML (saml2-service-provider). The new library saml2-service-provider is a part of spring security which was not the case for saml2-core. 
+
+:::note
+**To do**:
+After upgrading to WaveMaker 11 using saml2-service-provider, the users will have to update the new URLs in their respective security providers. For example, Okta, One login, and more. For more information, see [Configure IdP](/learn/app-development/app-security/saml-integration/#configure-idp-with-wavemaker-application) and [Deployment of Application Configured with SAML](/learn/app-development/app-security/saml-integration/#deployment-of-application-that-is-configured-with-saml)
+:::
 
 ## API Composer Toolkit
 
@@ -63,4 +71,3 @@ A generated WaveMaker application encloses a pom.xml containing build resources,
 ## Teams for Enterprise
 
 Teams is a collaborative development environment, which comes as a standard for WaveMaker Enterprise users. Manage projects, roles, code repositories, add or remove team members, grant permissions, and more using [Teams Portal](/learn/teams/overview). 
-
