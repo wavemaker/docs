@@ -38,7 +38,7 @@ Accessing API Mock Server to host a mocked API.
 
 - Go to the **Server**: https://apimock.wavemakeronline.com
 
-[![create mock api](/learn/assets/create-mock-api.png)](/learn/assets/create-mock-api.png)
+[![create mock api](/learn/assets/first-user-page.png)](/learn/assets/first-user-page.png)
 
 ### Step 2: Create a Mock API
 
@@ -47,14 +47,14 @@ Accessing API Mock Server to host a mocked API.
 - Provide a service **Name**. For example, *petstore*.
 - Choose a **Locale** for locale-specific mock data and click **Create**.
 
-[![swagger json](/learn/assets/upload-swagger-json-for-mock-api.png)](/learn/assets/upload-swagger-json-for-mock-api.png)
+[![swagger json](/learn/assets/create-api-mock-page.png)](/learn/assets/create-api-mock-page.png)
 
 ### Step 3: Copy the Mocked  API
 
 - The API Mock Service starts running, and creates a **Mock API URL**.
 - Copy the **Mock API URL**.
 
-[![running mock](/learn/assets/running-mock-services.png)](/learn/assets/running-mock-services.png)
+[![running mock](/learn/assets/list-mock-servers.png)](/learn/assets/list-mock-servers.png)
 
 ## Import Mocked API in WaveMaker Studio
 
@@ -64,7 +64,7 @@ Accessing API Mock Server to host a mocked API.
 
 - Paste the **Mock API URL** and click **Next**.
 
-[![paste mock api](/learn/assets/paste-mock-api-url.png)](/learn/assets/paste-mock-api-url.png)
+[![paste mock api](/learn/assets/wavemakerimportapi-screen.png)](/learn/assets/wavemakerimportapi-screen.png)
 
 - Click **Import**.
 
@@ -72,5 +72,19 @@ Accessing API Mock Server to host a mocked API.
 
 - Access the mocked API in WaveMaker Studio.
 
-[![mocked service](/learn/assets/successful-mocked-service.png)](/learn/assets/successful-mocked-service.png)   
+[![mocked service](/learn/assets/editconf-wavemaker.png)](/learn/assets/editconf-wavemaker.png)   
+
+## Updating the Basic configuration
+- Copy **Host Name** and **Base Path**.
+
+
+  [![list mock servers](/learn/assets/list-mock-servers-edited.png)](/learn/assets/list-mock-servers-edited.png)
+
+
+- Edit the **Host Name** and **Base Path** in the **Basic Configuration** section and save the changes.
+
+
+[![list mock servers](/learn/assets/edit-conf-screen-wavemaker-edited.png)](/learn/assets/edit-conf-screen-wavemaker-edited.png)
+
+
 
