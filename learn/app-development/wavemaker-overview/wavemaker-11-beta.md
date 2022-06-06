@@ -39,7 +39,7 @@ All WaveMaker projects using SAML (saml2-core) as a security provider have reach
 
 :::note
 **To do**:
-After upgrading to WaveMaker 11 which uses saml2-service-provider, the users will have to update the new URLs in their respective security providers. For example, Okta, One login, and more. For more information, see [Configure IdP](/learn/app-development/app-security/saml-integration/#configure-idp-with-wavemaker-application) and [Deployment of Application Configured with SAML](/learn/app-development/app-security/saml-integration/#deployment-of-application-that-is-configured-with-saml)
+After upgrading to WaveMaker 11 using saml2-service-provider, the users will have to update the new URLs in their respective security providers. For example, Okta, One login, and more. For more information, see [Configure IdP](/learn/app-development/app-security/saml-integration/#configure-idp-with-wavemaker-application) and [Deployment of Application Configured with SAML](/learn/app-development/app-security/saml-integration/#deployment-of-application-that-is-configured-with-saml)
 :::
 
 ## API Composer Toolkit
