@@ -5,30 +5,39 @@ parent: Docs
 nav_order: 4
 ---
 
-# {{ page.title }}
+Currently, the following Variables are supported for developing a React Native app. 
 
-<img src="../../assets/supported.png" class="yes-no-image"> Supported
-<img src="../../assets/unsupported.png" class="yes-no-image"> Not supported
+
+|Shows as  | Support Status|
+|---|---|
+|![Supported React Native Features](/learn/assets/supported.png)| Supported
+|![Unsupported React Native Features](/learn/assets/unsupported.png)| Not Supported|
 
 ## Data Variables
-<img src="../../assets/unsupported.png" class="yes-no-image">Database CRUD<br>
-<img src="../../assets/unsupported.png" class="yes-no-image">Database API<br>
-<img src="../../assets/supported.png" class="yes-no-image">Web Services<br>
-<img src="../../assets/supported.png" class="yes-no-image">Java Service<br>
-<img src="../../assets/supported.png" class="yes-no-image">Security Service<br>
-<img src="../../assets/unsupported.png" class="yes-no-image">Web Sockets<br>
-<img src="../../assets/supported.png" class="yes-no-image">Imported APIs<br>
-<img src="../../assets/supported.png" class="yes-no-image">Model Variables<br>
+
+|Support|Service Type|
+|---|---|
+|![](/learn/assets/unsupported.png)|Database CRUD|
+|![](/learn/assets/unsupported.png)|Database API|
+| ![](/learn/assets/supported.png) | Web Services|
+| ![](/learn/assets/supported.png) | Java Service|
+| ![](/learn/assets/supported.png) | Security Service|
+|![](/learn/assets/unsupported.png)| Web Sockets|
+| ![](/learn/assets/supported.png) | Imported APIs|
+| ![](/learn/assets/supported.png) | Model Variables|
 
 ## Device Variables
-<img src="../../assets/supported.png" class="yes-no-image">Calendar<br>
-<img src="../../assets/supported.png" class="yes-no-image">Contacts<br>
-<img src="../../assets/unsupported.png" class="yes-no-image">Data Sync or offline<br>
-<img src="../../assets/supported.png" class="yes-no-image">Camera<br>
-<img src="../../assets/supported.png" class="yes-no-image">Barcode Scan<br>
-<img src="../../assets/supported.png" class="yes-no-image">File Upload<br>
-<img src="../../assets/unsupported.png" class="yes-no-image">Open File<br>
-<img src="../../assets/supported.png" class="yes-no-image">Geo Location<br>
-<img src="../../assets/supported.png" class="yes-no-image">Network<br>
-<img src="../../assets/supported.png" class="yes-no-image">Device<br>
+
+|Support| Service|
+|---|---|
+| ![](/learn/assets/supported.png) | Calendar|
+| ![](/learn/assets/supported.png) | Contacts|
+|![](/learn/assets/unsupported.png)|Data Sync or offline|
+| ![](/learn/assets/supported.png) | Camera|
+| ![](/learn/assets/supported.png) | Barcode Scan|
+| ![](/learn/assets/supported.png) | File Upload|
+|![](/learn/assets/unsupported.png)|Open File|
+| ![](/learn/assets/supported.png) | Geo Location|
+| ![](/learn/assets/supported.png) | Network|
+| ![](/learn/assets/supported.png) | Device|
 

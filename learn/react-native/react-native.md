@@ -52,6 +52,4 @@ Prefabs are supported. But, following limitations are applicable
 ## Additional Resources
 
 [React JS](https://reactjs.org/)  
-[React Native](https://reactnative.dev/)  
-[Native Studio Introduction Video - 1](https://drive.google.com/file/d/1ZeVc6bR_GbsIosm8YlW_8LfoJNGjXZ7n/view?usp=sharing)  
-[Native Studio Introduction Video - 2](https://drive.google.com/file/d/1OsouVnNFQWEJEgmTXKjggS4Ft8Zaod3A/view?usp=sharing)  
+[React Native](https://reactnative.dev/)    
