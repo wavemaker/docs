@@ -74,3 +74,17 @@ Accessing API Mock Server to host a mocked API.
 
 [![mocked service](/learn/assets/successful-mocked-service.png)](/learn/assets/successful-mocked-service.png)   
 
+
+## Updating the Basic configuration
+- Copy **Host Name** and **Base Path**.
+
+
+[![list mock servers](/learn/assets/list-mock-servers-edited.png)](/learn/assets/list-mock-servers-edited.png)
+
+
+- Edit the **Host Name** and **Base Path** in the **Basic Configuration** section and save the changes.
+
+
+[![list mock servers](/learn/assets/edit-conf-screen-wavemaker-edited.png)](/learn/assets/edit-conf-screen-wavemaker-edited.png)
+
+
