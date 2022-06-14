@@ -5,7 +5,7 @@ sidebar_label: "FAQs 11 Beta"
 ---
 ---
 
-WaveMaker 11 is now available as WaveMaker 11 beta. Since the release, we have received many questions about the release and have tried our best to cover the most popular ones here. If you still have more questions, write to us at support@wavemaker.com.
+WaveMaker Stuido is now available as WaveMaker 11 beta. Since the release, we have received many questions about the release and have tried our best to cover the some of the frequently asked questions here. If you still have more questions, write to us at support@wavemaker.com.
 
 ## General 
 
@@ -13,58 +13,62 @@ WaveMaker 11 is now available as WaveMaker 11 beta. Since the release, we have r
 
 ### Why is WaveMaker 11 released as a Beta?
 
-We Introduced React native Mobile Apps as part of this release.
+We Introduced React Native framework as part of this release.
  
-- React Native is currently in an early stage, so we marked it as Beta
-- However, please note that Web and Cordova Mobile are stable and working just like in the earlier versions. 
+- React Native is currently in an early stage, so we marked it as Beta.
+- However, please note that Web and Cordova Mobile frameworks are stable and working just like in the earlier versions. 
 
 ### What is Multi-version Studio?
 
-Multiple versions of Studio in a single environment allow you to build applications in either of the Studio versions. This release provides the ability to build applications in 10.x and 11.x simultaneously. Application cards in Studio show Platform Version.
+Multiple versions of Studio in a single environment allow you to build applications in either of the Studio versions, including WaveMaker 10.x and WaveMaker 11.x simultaneously. Application cards in Studio show Platform Version.
 
 ### Why do we include Multi-versioned Studio?
 
-With this release, we moved to Java 11 from Java 8, which majorly impacts the CI/CD pipelines of your apps.
+With the WaveMaker 11 beta release, we moved to Java 11 from Java 8, which majorly impacts the CI/CD pipelines of your apps.
 
 Therefore, your CI/CD infrastructure must be migrated to Java 11 to build and deploy WaveMaker 11 apps.
 
-For this reason, we introduced a multi-version Studio to give you the time it may take from your end. So we are giving an explicit option to Migrate Apps to 11.x
+For this reason, we introduced a multi-version Studio to give you the time it may take from your end, giving you an explicit option to Migrate Apps to 11.x.
 
 ### Can we start building Web and Cordova App in 11.x?
 
-Yes, this release is as stable as other releases of web and Cordova mobile Apps.
+Yes. WaveMaker 11 beta is as stable as other releases of Web and Cordova mobile app development platform.
 
 ### How can we migrate our projects to the 11.x version?
 
 Follow this migration guide: 
 https://docs.wavemaker.com/learn/how-tos/upgrade-guide-wavemaker-10-to-11
 
-### Can multiple Developers work on migration?
+### Can multiple developers work on migration?
 
-Yes, the migration project can be shared with Contributors, and any of your team members can fix migration issues.
-However, actions like **Start Migration** and **Finish Upgrade** can only be done by Project Admins.
+Yes. The migration project can be shared with contributors, and any of your team members can fix migration issues.
+However, actions like **Start Migration** and **Finish Upgrade** can only be done by **Project Admins**.
 
 ## Projects and Applications
 
 ---
 
-Will the WM 11 Beta release impact the existing projects?
-No, it will not impact, and it will still run on Java 8.
-Migration has to be initiated explicitly. Follow the migration guide for more information.
-Your existing Deployments (Demo, Phase) will continue to work like before.
+### Will the WaveMaker 11 beta release impact the existing projects?
+
+No, it will not impact, but the projects will still be running on Java 8. Migration has to be initiated explicitly. Your existing deployments, including Demo and Phase will continue to work like before.
+
+Follow the migration guide for more information.
 
 ### Which version project gets created when creating a new project? 
 
-From WaveMaker 11 beta, it creates an 11.x project by default.
-Default Mobile Apps are React Native.
-You can create Cordova-based apps by using the link in the project creation dialogue. 
+From WaveMaker 11 beta onwards when you create a new project:
+
+1. It creates a WaveMaker 11.x project by default.
+2. Default Mobile Apps are React Native.
+3. You can create Cordova-based apps by using the link in the project creation dialogue. 
+
 ### Can we create 10-version projects? 
 
-No, you can use the existing 10.x apps, but you can't create a new 10.x app.
+No. You can use the existing WaveMaker 10.x apps, but you can't create a new 10.x app.
 
-### What happens when you import 10.x application zip?
+### What happens when you import WaveMaker 10.x application zip?
 
-10.x application imports as 10.x project only. Migration to 11.x has to be initiated explicitly. 
+WaveMaker 10.x application imports as 10.x project only. Migration to 11.x has to be initiated explicitly. 
 
 
 ## Prefabs and Template Bundles and Project Shells
@@ -75,19 +79,19 @@ No, you can use the existing 10.x apps, but you can't create a new 10.x app.
 
 Yes, just like any application. 
 
-### Can I use 10.x published prefabs in 11.x Applications?
+### Can I use WaveMaker 10.x published prefabs in 11.x applications?
 
-Yes, 11.x apps can consume 10.x prefabs. But not vice versa.
+Yes, 11.x apps can consume 10.x prefabs, but not vice versa.
 
-### Should I migrate Prefab Projects first or applications?
+### Should I migrate Prefab projects first or applications?
 
-We would suggest migrating applications first and then Prefabs. This is because you can use 10.x prefabs in 11.x app projects.
+We suggest migrating applications first and then Prefabs. This is because you can use 10.x prefabs in WaveMaker 11.x app projects.
 
-### What version should I use when Publishing a Prefab from an ongoing Migration Project?
+### Naming versions when publishing a Prefab from an ongoing Migration project?
 
-The Studio will prompt an incremental version always. Plus, we recommend starting with a new Major version. 
+The Studio will prompt an incremental version always. So, we recommend starting with a new Major version for an ongoing migration project. 
 
-For example, if 10.x latest published version is 1.6, we suggest using 2.0 when publishing from the ongoing Migration project.
+For example, if 10.x latest published version is 1.6, we suggest using 2.0 when publishing from the ongoing migration project.
 
 ### Should you continue to publish Prefabs to the Team from 10.x Project while Migration is going on?
 
