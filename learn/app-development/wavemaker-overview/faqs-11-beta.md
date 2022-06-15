@@ -5,7 +5,7 @@ sidebar_label: "FAQs 11 Beta"
 ---
 ---
 
-WaveMaker Stuido is now available as WaveMaker 11 beta. Since the release, we have received many questions about the release and have tried our best to cover the some of the frequently asked questions here. If you still have more questions, write to us at support@wavemaker.com.
+WaveMaker Studio is now available as WaveMaker 11 beta. Since the release, we have received many questions about the release. We have tried our best to cover some frequently asked questions here. If you still have more questions, write to us at support@wavemaker.com.
 
 ## General 
 
@@ -20,13 +20,13 @@ We Introduced React Native framework as part of this release.
 
 ### What is Multi-version Studio?
 
-Multiple versions of Studio in a single environment allow you to build applications in either of the Studio versions, including WaveMaker 10.x and WaveMaker 11.x simultaneously. Application cards in Studio show Platform Version.
+Multiple versions of Studio in a single environment allow you to simultaneously build applications in either of the Studio versions, including WaveMaker 10.x and WaveMaker 11.x. Application cards in Studio show Platform Version.
 
 ![multi-version studio](/learn/assets/converts-into-two-project-cards.png)
 
 ### Why do we include Multi-versioned Studio?
 
-With the WaveMaker 11 beta release, we moved to Java 11 from Java 8, which majorly impacts the CI/CD pipelines of your apps.
+With the WaveMaker 11 beta release, we moved to Java 11 from Java 8, which impacts your apps' CI/CD pipelines.
 
 Therefore, your CI/CD infrastructure must be migrated to Java 11 to build and deploy WaveMaker 11 apps.
 
@@ -34,7 +34,7 @@ For this reason, we introduced a multi-version Studio to give you the time it ma
 
 ### Can we start building Web and Cordova App in 11.x?
 
-Yes. WaveMaker 11 beta is as stable as other releases of Web and Cordova mobile app development platform.
+Yes. WaveMaker 11 beta is as stable as other releases of Web and Cordova mobile app development platforms.
 
 ### How can we migrate our projects to the 11.x version?
 
@@ -52,13 +52,13 @@ However, actions like **Start Migration** and **Finish Upgrade** can only be don
 
 ### Will the WaveMaker 11 beta release impact the existing projects?
 
-No, it will not impact, but the projects will still be running on Java 8. Migration has to be initiated explicitly. Your existing deployments, including Demo and Phase will continue to work like before.
+No, it will not impact, but the projects will still run on Java 8. Migration has to be initiated explicitly. Your existing deployments, including Demo and Phase, will continue to work like before.
 
 Follow the migration guide for more information.
 
 ### Which version project gets created when creating a new project? 
 
-From WaveMaker 11 beta onwards when you create a new project:
+From WaveMaker 11 beta onwards, when you create a new project:
 
 1. It creates a WaveMaker 11.x project by default.
 2. Default Mobile Apps are React Native.
@@ -66,7 +66,7 @@ From WaveMaker 11 beta onwards when you create a new project:
 
 ### Can we create 10-version projects? 
 
-No. You can use the existing WaveMaker 10.x apps, but you can't create a new 10.x app.
+No. You can use the existing WaveMaker 10.x apps but can't create a new 10.x app.
 
 ### What happens when you import WaveMaker 10.x application zip?
 
@@ -99,9 +99,9 @@ For example, if 10.x latest published version is 1.6, we suggest using 2.0 when 
 
 Yes, however, implicitly provide different versions for both 10.x and 11.x published Prefabs as specified in the [previous point](#naming-versions-when-publishing-a-prefab-from-an-ongoing-migration-project).
 
-For example: if the latest published version of 10.x app is 1.6, continue as 1.7 for 10.x Prefabs.
+For example: if the latest published version of the 10.x app is 1.6, continue as 1.7 for 10.x Prefabs.
 
-### How to use a migrated Prefabs into the project?
+### How to use migrated Prefabs in the project?
 
 A new version will be published in Teams.
 
@@ -127,7 +127,7 @@ Ensure merging all feature branches into master before initiating the project mi
 
 ### I have the Prefab project branch for a hotfix. What happens to it?
 
-Similar to applications, you can continue to patch it by pushing fixes from Studio. But, we recommended merge/recreate after migration of master Project.
+Similar to applications, you can continue to patch it by pushing fixes from Studio. But, we recommended merging/recreating after the migration of the master Project.
 
 ## Deployments
 
