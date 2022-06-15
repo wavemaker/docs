@@ -22,6 +22,8 @@ We Introduced React Native framework as part of this release.
 
 Multiple versions of Studio in a single environment allow you to build applications in either of the Studio versions, including WaveMaker 10.x and WaveMaker 11.x simultaneously. Application cards in Studio show Platform Version.
 
+![multi-version studio](/learn/assets/converts-into-two-project-cards.png)
+
 ### Why do we include Multi-versioned Studio?
 
 With the WaveMaker 11 beta release, we moved to Java 11 from Java 8, which majorly impacts the CI/CD pipelines of your apps.
@@ -81,7 +83,7 @@ Yes, just like any application.
 
 ### Can I use WaveMaker 10.x published prefabs in 11.x applications?
 
-Yes, 11.x apps can consume 10.x prefabs, but not vice versa.
+Yes, WaveMaker 11 apps can consume 10.x prefabs, but not vice versa.
 
 ### Should I migrate Prefab projects first or applications?
 
@@ -95,39 +97,45 @@ For example, if 10.x latest published version is 1.6, we suggest using 2.0 when 
 
 ### Should you continue to publish Prefabs to the Team from 10.x Project while Migration is going on?
 
-Yes, however, implicitly provide different versions for both 10.x and 11.x published Prefabs as specified in the [above point]().
+Yes, however, implicitly provide different versions for both 10.x and 11.x published Prefabs as specified in the [previous point](#naming-versions-when-publishing-a-prefab-from-an-ongoing-migration-project).
 
 For example: if the latest published version of 10.x app is 1.6, continue as 1.7 for 10.x Prefabs.
 
-### What is the process of consuming migrated Prefabs into the project?
+### How to use a migrated Prefabs into the project?
 
 A new version will be published in Teams.
 
-Project Opening Dialogue will show a new version option to upgrade.
-Or, in Studio, go to **Prefabs** -> **Import** dialogue. 
+- When opening a project, the dialogue will show a new version option to upgrade.
+- Or, in Studio, go to **Prefabs** -> **Import** dialogue. 
 
 ## Project Branches
 
 ---
 
-### What is the Impact on Project Branches?
+### What is the impact on Project Branches?
 
-Nothing. Project branches will remain on the same platform version (10.x). 
-Migration can be initiated for the Master branch project only. 
+Nothing. 
+
+- Project branches will remain on the same platform version, 10.x. 
+- Migration can be initiated for the Master branch project only. 
+
+:::note
 Ensure merging all feature branches into master before initiating the project migration. 
+:::
 
-Once the migration is completed, recreate project branches or merge branches outside Studio.
+- Once the migration is completed, recreate project branches or merge branches outside Studio.
 
 ### I have the Prefab project branch for a hotfix. What happens to it?
 
-Similar to Applications, you can continue to patch it by pushing fixes from Studio. But, as we recommended above, merge/recreate after migration of master Project.
+Similar to applications, you can continue to patch it by pushing fixes from Studio. But, we recommended merge/recreate after migration of master Project.
 
 ## Deployments
 
 ---
 
-### What happens to the existing deployments (Demo/QA/External Cloud)?
-They will continue to work like before. The same will be connected post-migration completed.
+### What happens to the existing deployments Demo/QA/External Cloud?
+
+They will continue to work like before. The same will be connected after the migration is complete.
 
 ### Can I deploy an application to Demo/A Phase during migration?
 
