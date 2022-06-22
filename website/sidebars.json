@@ -1302,6 +1302,7 @@
     "Overview":
     [
       "wavemaker-release-notes",
+      "enterprise-release-notes",
       {
         "type": "subcategory",
         "label": "What's new",
