@@ -1,5 +1,5 @@
 ---
-title: "How to Create Dynamic Role-based Access Control"
+title: "Creating Custom Roles and Assigning Access Control"
 id: ""
 sidebar_label: "Creating Dynamic Access Roles"
 ---
@@ -15,7 +15,7 @@ Role-based Access Control (RBAC) is essential to restrict end-users from accessi
 
 ### How this document helps 
 
-1. Handling complex application permissions by defining application roles dynamically without many code changes.
+1. Handling custom application permissions by defining application roles dynamically without many code changes.
 2. Helps developers design and manage the roles and allow role-based actions dynamically with a Proof of Concept (PoC).
 
 ## Implementation
@@ -46,7 +46,7 @@ To enable this approach in a WaveMaker application, add the following tables to 
 
 ## Use Case
 
-### Indentifying Problem
+### Identifying Problem
 
 User roles on WaveMaker are tightly coupled with the Studio. It is not possible to add or remove permissions during runtime.
 
