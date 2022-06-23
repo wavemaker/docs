@@ -1,20 +1,17 @@
 ---
-title: WaveMaker Online Releases
+title: WaveMaker Online Release
 id: ""
-sidebar_label: "Online Releases (WMO)"
+sidebar_label: "Online Release (WMO)"
 
 ---
-Find what's new in WaveMaker here. See latest information about bug fixes, new features, and improvements for WaveMaker.
 
 :::note
-The release details in this document are specific to WaveMaker Online (WMO) users. If you are an Enterprise user, see [WaveMaker Enterprise Release](/learn/enterprise-release-notes).
+This document applies to WaveMaker Online (WMO) users. If you are an Enterprise user, see [WaveMaker Enterprise Release](/learn/enterprise-release-notes).
 :::
 
----
+See what's new in WaveMaker—including new features, enhancements, and bug fixes in named versions. If you experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com). We mention your fixes in release notes, and you can track some critical known issues [here](/learn/wavemaker-known-issues).
 
-WaveMaker always works on bringing new features and improvements to the product. Follow our [team blog](/learn/blog) to see what's happening in WaveMaker.
-
-If you notice a bug and want to report it to us, please contact [support](mailto:support@wavemaker.com). We will mention your fixes in the release notes, and you can also track some of the known issues documented [here](/learn/wavemaker-known-issues).
+Follow our [team blog](/learn/blog) to learn product updates from the engineers who develop it. 
 
 ## Release History
 
@@ -119,22 +116,22 @@ Last updated: [WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1)
 | Built-in functions | lodash | 4.17.19|
 | Device support, gestures | hammerjs | 2.0.8 |
 
-Optimized jQuery-UI library, excluding unwanted components like an accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
+Optimized jQuery-UI library, excluding unwanted components like an accordion, date picker, dialog, progress bar, spinner, tabs, and all jQuery-UI Effects.
 
 ### Backend Frameworks
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework  <td bgcolor="#44aaf4"> 5.3.15 -> 5.3.20|
-| Security framework | Spring Security  <td bgcolor="#44aaf4"> 5.5.2 -> 5.6.3|
-| Java JSON utilities | Gson  <td bgcolor="#44aaf4"> 2.8.9 -> 2.9.0|
+| | Spring Framework <td bgcolor="#44aaf4"> 5.3.15 -> 5.3.20|
+| Security framework | Spring Security <td bgcolor="#44aaf4"> 5.5.2 -> 5.6.3|
+| Java JSON utilities | Gson <td bgcolor="#44aaf4"> 2.8.9 -> 2.9.0|
 | DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 5.5.7.Final -> 5.6.9.Final|
 | Sample database | HSQL <td bgcolor="#44aaf4"> 2.5.1 -> 2.6.1|
-| JSON library | Jackson  <td bgcolor="#44aaf4">  2.12.5 -> 2.13.3|
-| Logging framework | SLF4j  <td bgcolor="#44aaf4"> 1.7.32 -> 1.7.36 |
-| Logging Implementation | Log4j2  <td bgcolor="#44aaf4"> 2.17.1 -> 2.17.2 |
+| JSON library | Jackson <td bgcolor="#44aaf4"> 2.12.5 -> 2.13.3|
+| Logging framework | SLF4j <td bgcolor="#44aaf4"> 1.7.32 -> 1.7.36 |
+| Logging Implementation | Log4j2 <td bgcolor="#44aaf4"> 2.17.1 -> 2.17.2 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
-| Servlet Framework |  <td bgcolor="#44aaf4"> 3.1.0 -> 4.0.1 |
+| Servlet Framework | <td bgcolor="#44aaf4"> 3.1.0 -> 4.0.1 |
 |Database Connection Pooling | HikariCP <td bgcolor="#44aaf4"> 4.0.3 -> 5.0.1 |
 
 ### Runtime Environment
@@ -145,11 +142,11 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
 | Tomcat <td bgcolor="#44aaf4"> 9.0* |
-| Cordova (mobile apps) <br> Android <br> iOS |11.0.0 <br> 10.1.2  <br> 6.1.0 |
+| Cordova (mobile apps) <br> Android <br> iOS |11.0.0 <br> 10.1.2 <br> 6.1.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
 ## Older Releases
 
 - **[WaveMaker 9.x Documentation](https://www.wavemaker.com/9/learn/index.html)**  
-- **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)**  
+- **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)** 
