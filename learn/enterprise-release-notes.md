@@ -9,7 +9,7 @@ sidebar_label: "Enterprise Release (WME)"
 This document applies to Enterprise users only. If you are a WaveMaker Online (WMO) user, see [WaveMaker Online Release](/learn/wavemaker-release-notes).
 :::
 
-See what's new in WaveMaker—including new features, enhancements, and bug fixes in named versions. If you experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com). We mention your fixes in release notes and you can track some critical known issues [here](/learn/wavemaker-known-issues).
+See what's new in WaveMaker—including new features, enhancements, and bug fixes in named versions. If you experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com). We mention your fixes in release notes, and you can track some critical known issues [here](/learn/wavemaker-known-issues).
 
 Follow our [team blog](/learn/blog) to learn product updates from the engineers who develop it. 
 
@@ -22,10 +22,10 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v10.13.2**|- [v10.13.2](/learn/wavemaker-release-notes/v10-13-2) <br> - [v10.13.1](/learn/wavemaker-release-notes/v10-13-1) <br> - [v10.13.0](/learn/wavemaker-release-notes/v10-13-0) <br> - [v10.12.2](/learn/wavemaker-release-notes/v10-12-2) <br> - [v10.12.1](/learn/wavemaker-release-notes/v10-12-1) <br> - [v10.12.0](/learn/wavemaker-release-notes/v10-12-0) <br> | New features and Bug fixes|12 April 2022|
+|**v10.13.2**|- [v10.13.2](/learn/wavemaker-release-notes/v10-13-2) <br> - [v10.13.1](/learn/wavemaker-release-notes/v10-13-1) <br> - [v10.13.0](/learn/wavemaker-release-notes/v10-13-0) <br> - [v10.12.2](/learn/wavemaker-release-notes/v10-12-2) <br> - [v10.12.1](/learn/wavemaker-release-notes/v10-12-1) <br> - [v10.12.0](/learn/wavemaker-release-notes/v10-12-0) <br> | New features and bug fixes|12 April 2022|
 |**v10.11.2**|- [v10.11.2](/learn/wavemaker-release-notes/v10-11-2)|UI fixes and bug fixes|24 January 2022 |
 | **v10.11.1** |- [v10.11.1](/learn/wavemaker-release-notes/v10-11-1)|Bug fixes|12 January 2022 |
-| **v10.11.0** |- [v10.11.0](/learn/wavemaker-release-notes/v10-11-0) <br> - [v10.10.3](/learn/wavemaker-release-notes/v10-10-3) <br> - [v10.10.2](/learn/wavemaker-release-notes/v10-10-2) <br> - [v10.10.1](/learn/wavemaker-release-notes/v10-10-1) |New features and Bug fixes|24 December 2021 |
+| **v10.11.0** |- [v10.11.0](/learn/wavemaker-release-notes/v10-11-0) <br> - [v10.10.3](/learn/wavemaker-release-notes/v10-10-3) <br> - [v10.10.2](/learn/wavemaker-release-notes/v10-10-2) <br> - [v10.10.1](/learn/wavemaker-release-notes/v10-10-1) |New features and bug fixes|24 December 2021 |
 |**v10.10.0**|- [v10.10.0](/learn/wavemaker-release-notes/v10-10-0) <br> - [v10.9.2](/learn/wavemaker-release-notes/v10-9-2) <br> - [v10.9.1](/learn/wavemaker-release-notes/v10-9-1) <br> - [v10.9.0](/learn/wavemaker-release-notes/v10-9-0) <br> - [v10.8.2](/learn/wavemaker-release-notes/v10-8-2) <br> - v10.8.1| New features and bug fixes <br><br> - v10.8.1: GoogleMaps Prefab update failure |22 November 2021 |
 |**v10.8.0** |- [v10.8.0](/learn/wavemaker-release-notes/v10-8-0) <br> - [v10.7.5](/learn/wavemaker-release-notes/v10-7-5) <br> - [v10.7.4](/learn/wavemaker-release-notes/v10-7-4) <br> - [v10.7.3](/learn/wavemaker-release-notes/v10-7-3) <br> - [v10.7.2](/learn/wavemaker-release-notes/v10-7-2) |New features and bug fixes | 16 August 2021|
 |**v10.7.1** |- [v10.7.1](/learn/wavemaker-release-notes/v10-7-1) <br> - [v10.7.0](/learn/wavemaker-release-notes/v10-7-0) <br> - [v10.6.9](/learn/wavemaker-release-notes/v10-6-9) <br> - [v10.6.7](/learn/wavemaker-release-notes/v10-6-7) <br> - [v10.6.6](/learn/wavemaker-release-notes/v10-6-6) <br> - [v10.6.5](/learn/wavemaker-release-notes/v10-6-5) <br> - [v10.6.4](/learn/wavemaker-release-notes/v10-6-4) <br> - [v10.6.3](/learn/wavemaker-release-notes/v10-6-3) |New features and bug fixes |04 June 2021|
