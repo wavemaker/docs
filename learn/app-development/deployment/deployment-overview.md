@@ -45,7 +45,7 @@ WaveMaker Online (WMO) consists of the following three stages.
 
 To learn more about how to configure these pipelines, see [Configure Pipeline for WMO](/learn/app-development/deployment/default-pipelines).
 
-### Automatation
+### Automation
 
 Automate the CI-CD pipelines to configure a private cloud provider, including AWS (Amazon Web Services), Azure, GCP (Google Cloud Provider), Digital Ocean, and on-premise environments like VMware or Hyper-V. To learn more about configuring your application to a CI-CD pipeline, see [WaveMaker Release Management](/learn/app-development/deployment/release-management).
 
