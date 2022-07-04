@@ -88,12 +88,13 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 ||v10.2.8|Bug fixes | 08 January 2020 | 
 |**v10.1**|**[v10.1.0](/learn/wavemaker-release-notes/v10-1-0)**|**New features and bug fixes** |**19 August 2019** |
 ||v10.1.2 |Bug fixes |16 September 2019 |
+|**v10 Beta**|**[Preview: v10](/learn/wavemaker-release-notes/v10-0-preview)**|**Try new features and enhancements** <br> before 10.GA release|**20 November, 2018**|
 |**v10 GA**|**[v10.0.0 GA](/learn/wavemaker-release-notes/v10-0-ga)**|**New features and bug fixes** |**10 April, 2019** |
 ||[v10.0.1](/learn/wavemaker-release-notes/v10-0-1)|Migration bug fixes |15 April, 2019| 
 ||[v10.0.2](/learn/wavemaker-release-notes/v10-0-2)|New features and bug fixes |24 April, 2019 | 
 ||[v10.0.3](/learn/wavemaker-release-notes/v10-0-3)|New features and bug fixes |29 May, 2019 |
 ||[v10.0.4](/learn/wavemaker-release-notes/v10-0-4)|Bug fixes |11 July, 2019 |
-|**v10 Beta**|**[Preview: v10](/learn/wavemaker-release-notes/v10-0-preview)**|**Try new features and enhancements** <br> before 10.GA release|**20 November, 2018**|
+
 
 
 ## Technology Stack
