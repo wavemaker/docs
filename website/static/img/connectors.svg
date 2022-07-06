@@ -1,0 +1,10 @@
+<svg width="68" height="67" viewBox="0 0 68 67" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M35 13a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM35 66a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM61 39a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM7 39a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" fill="#E4BCDC" fill-rule="nonzero"/>
+        <path stroke="#00303E" stroke-linecap="round" stroke-linejoin="round" d="M34.5 12v42M14 33.5h42"/>
+        <path d="M53 59a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM15 20a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" fill="#E4BCDC" fill-rule="nonzero"/>
+        <path stroke="#00303E" stroke-linecap="round" stroke-linejoin="round" d="m19 19 9 9M40 39l9 9"/>
+        <path d="M53 20a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM15 59a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" fill="#E4BCDC" fill-rule="nonzero"/>
+        <path stroke="#00303E" stroke-linecap="round" stroke-linejoin="round" d="m40 28 9-9M19 48l9-9M35 13a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM35 66a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM61 39a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM7 39a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM53 59a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM15 20a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM53 20a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM15 59a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/>
+    </g>
+</svg>

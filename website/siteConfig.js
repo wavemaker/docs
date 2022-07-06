@@ -40,15 +40,15 @@ const siteConfig = {
 
     // For no header links in the top nav bar -> headerLinks: [],
     headerLinks: [
-        {languages: true},
-		{doc: 'documentation-reference', label: 'Get started'},
-        {doc: 'app-development/widgets/widget-library', label: 'Widgets'},
-        {doc: 'react-native/react-native', label: 'Mobile'},
-		{doc: 'howtos-documents', label: 'How-to'},
-		{doc: 'on-premise/welcome', label: 'Enterprise'},
-		{doc: 'wavemaker-release-notes', label: 'Releases'},
-        {blog: true, label:'Blog'},
-		{href: 'https://www.wavemaker.com/get-started/', label: 'Sign-in', external: true}
+        { languages: true },
+        { doc: 'documentation-reference', label: 'Get started' },
+        // { doc: 'app-development/widgets/widget-library', label: 'Widgets' },
+        // { doc: 'react-native/react-native', label: 'Mobile' },
+        { doc: 'howtos-documents', label: 'How-to' },
+        // { doc: 'on-premise/welcome', label: 'Enterprise' },
+        { doc: 'wavemaker-release-notes', label: 'Releases' },
+        { blog: true, label: 'Blog' },
+        { href: 'https://www.wavemaker.com/get-started/', label: 'Sign In', external: true },
     ],
 
     /* Algolia DocSearch */
@@ -60,7 +60,7 @@ const siteConfig = {
     // If you have users set above, you add it here:
     users,
 
-    /* Google Analytics */	
+    /* Google Analytics */
     gaTrackingId: process.env.GA_TRACKING_ID,
 
     /* path to images for header/footer */
@@ -123,8 +123,8 @@ const siteConfig = {
     onPageNav: 'separate',
     // No .html extensions for paths.
     cleanUrl: true,
-	
-	scrollToTop: true,
+
+    scrollToTop: true,
 
     editUrl: 'https://github.com/wavemaker/docs/tree/master/learn/',
 
@@ -137,11 +137,11 @@ const siteConfig = {
 
     // Show documentation's last update time.
     enableUpdateTime: true,
-	
-	blogSidebarCount: 'ALL',
+
+    blogSidebarCount: 'ALL',
 
     markdownPlugins: [
-        require('remarkable-admonitions')({icon: 'svg-inline'})
+        require('remarkable-admonitions')({ icon: 'svg-inline' })
     ]
 
 };

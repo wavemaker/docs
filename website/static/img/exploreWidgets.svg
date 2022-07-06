@@ -1,0 +1,27 @@
+<svg width="95" height="92" viewBox="0 0 95 92" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="0%" y1="5.775%" x2="121.336%" y2="105.947%" id="hpdu5ywd0a">
+            <stop stop-color="#FFF" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="0%" y1="49.887%" x2="121.336%" y2="50.143%" id="yqny0o5beb">
+            <stop stop-color="#FFF" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="121.336%" y2="113.253%" id="124h1cz9wc">
+            <stop stop-color="#FFF" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g opacity=".1" stroke-width="1.875">
+            <path d="M84 30.385V6.077C84 2.72 81.314 0 78 0H6C2.686 0 0 2.72 0 6.077v66.846C0 76.28 2.686 79 6 79h24" stroke="url(#hpdu5ywd0a)" transform="translate(1 1)"/>
+            <path stroke="url(#yqny0o5beb)" d="M0 17h84" transform="translate(1 1)"/>
+            <path stroke="url(#124h1cz9wc)" d="M73 73h17v17H73zM42 73h17v17H42zM61 42h17v17H61z" transform="translate(1 1)"/>
+        </g>
+        <g stroke="#FFF" stroke-width="2">
+            <path d="M90.936 38.105V25.22A3.215 3.215 0 0 0 87.726 22H49.21A3.215 3.215 0 0 0 46 25.22v35.431a3.215 3.215 0 0 0 3.21 3.221h12.839M46 31.191h44.936M84.809 60.809H94V70h-9.191zM68.468 60.809h9.192V70h-9.192z"/>
+            <path d="M78.68 44.468h9.192v9.192h-9.191z"/>
+        </g>
+    </g>
+</svg>
