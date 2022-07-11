@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1)|New features and bug fixes | 06 June 2022 |
+|[WaveMaker 11 Beta (11.0.1)](/learn/wavemaker-release-notes/v11-0-1)|Includes new features like React Native, API composer toolkit, API Mock Server extension, pagination for imported APIs, Java 11 and SAML library updates. [Read more.](/learn/app-development/wavemaker-overview/wavemaker-11-beta) | 06 June 2022 |
+|[WaveMaker 11.0.2 Beta](/learn/wavemaker-release-notes/v11-0-2)|Issues related to importing Web Services with OAuth 2.0 and previewing applications with Prefabs and more such bug fixes are addressed. | 11 July 2022 |
 
 ### WaveMaker Online v10.x
 
@@ -99,7 +100,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1)
+Last updated: [WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-2)
 
 ---
 
@@ -108,43 +109,73 @@ Last updated: [WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1)
 | Description | JS Library | Version |
 | --- | --- | --- |
 | JS Binding | jquery | 3.4.1 |
-| | jquery-ui* | 1.12.1 |
+|  | jquery-ui* | 1.12.1 |
 | MVC Framework | angular| 11.2.14 |
-| | angular-ui-bootstrap | 3.3.6 |
-| | ngx-bootstrap | 6.2 |
+|  | angular-ui-bootstrap | 3.3.6 |
+|  | ngx-bootstrap | 6.2 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
-| | nvd3 | 1.8.6 |
+|  | nvd3 | 1.8.6 |
 | Built-in functions | lodash | 4.17.19|
 | Device support, gestures | hammerjs | 2.0.8 |
 
-Optimized jQuery-UI library, excluding unwanted components like an accordion, date picker, dialog, progress bar, spinner, tabs, and all jQuery-UI Effects.
+Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
 ### Backend Frameworks
 
+
 | Description | Java Library | Version |
 | --- | --- | --- |
-| | Spring Framework <td bgcolor="#44aaf4"> 5.3.15 -> 5.3.20|
-| Security framework | Spring Security <td bgcolor="#44aaf4"> 5.5.2 -> 5.6.3|
-| Java JSON utilities | Gson <td bgcolor="#44aaf4"> 2.8.9 -> 2.9.0|
-| DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 5.5.7.Final -> 5.6.9.Final|
-| Sample database | HSQL <td bgcolor="#44aaf4"> 2.5.1 -> 2.6.1|
-| JSON library | Jackson <td bgcolor="#44aaf4"> 2.12.5 -> 2.13.3|
-| Logging framework | SLF4j <td bgcolor="#44aaf4"> 1.7.32 -> 1.7.36 |
-| Logging Implementation | Log4j2 <td bgcolor="#44aaf4"> 2.17.1 -> 2.17.2 |
+|  | Spring Framework  <td bgcolor="#44aaf4"> 5.3.20 to 5.3.21|
+| Security framework | Spring Security <td bgcolor="#44aaf4"> 5.6.3 to 5.6.6|
+| Java JSON utilities | Gson  | 2.9.0|
+| DB Persistence library | Hibernate | 5.6.9.Final|
+| Sample database | HSQL | 2.6.1|
+| JSON library | Jackson | 2.13.3|
+| Logging framework | SLF4j | 1.7.36 |
+| Logging Implementation | Log4j2 | 2.17.2 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
-| Servlet Framework | <td bgcolor="#44aaf4"> 3.1.0 -> 4.0.1 |
-|Database Connection Pooling | HikariCP <td bgcolor="#44aaf4"> 4.0.3 -> 5.0.1 |
+| Servlet Framework |  | 4.0.1 |
+|Database Connection Pooling | HikariCP | 5.0.1 |
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
-| JDK <td bgcolor="#44aaf4"> 11 |
+| JDK | 11 |
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
-| Tomcat <td bgcolor="#44aaf4"> 9.0* |
-| Cordova (mobile apps) <br> Android <br> iOS |11.0.0 <br> 10.1.2 <br> 6.1.0 |
+| Tomcat | 9.0* |
+| Cordova (mobile apps) <br> Android <br> iOS |11.0.0 <br> 10.1.2  <br> 6.1.0 |
+
+
+This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
+
+## Build Environment
+
+For more information about building project with Maven, see [here](/learn/app-development/deployment/building-with-maven).
+
+### React Native Build Environment
+
+|Description|	Version|
+|---|---|
+|Java <td bgcolor="#44aaf4">	1.8 to 11 |
+|Node <td bgcolor="#44aaf4"> 12.22 to  14.15.5|
+|Maven|	3.8.1|
+|npm <td bgcolor="#44aaf4">	6.14 to 7.20.3|
+|Ant|	1.10.11|
+|Git|	2.26| 
+
+### Angular Web and Mobile Build Environment
+
+|Description|	Version|
+|---|---|
+|Java <td bgcolor="#44aaf4"> 1.8 to 11 |
+|Node <td bgcolor="#44aaf4"> 12.22 to 12.22.3|
+|Maven|	3.8.1|
+|npm <td bgcolor="#44aaf4"> 6.14 to	6.14.13|
+|Ant|	1.10.11|
+|Git|	2.26| 
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
