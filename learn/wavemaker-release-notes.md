@@ -9,7 +9,7 @@ sidebar_label: "Online Release (WMO)"
 This document applies to WaveMaker Online (WMO) users. If you are an Enterprise user, see [WaveMaker Enterprise Release](/learn/enterprise-release-notes).
 :::
 
-See what's new in WaveMaker—including new features, enhancements, and bug fixes in named versions. If you experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com). We mention your fixes in release notes, and you can track some critical known issues [here](/learn/wavemaker-known-issues).
+See what's new in WaveMaker—including new features, enhancements, and bug fixes. If you experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com). We mention your fixes in release notes, and you can track some [critical known issues](/learn/wavemaker-known-issues).
 
 Follow our [team blog](/learn/blog) to learn product updates from the engineers who develop it. 
 
@@ -100,7 +100,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-2)
+Last updated: [WaveMaker 11.0.2 Beta](/learn/wavemaker-release-notes/v11-0-2)
 
 ---
 
@@ -154,16 +154,16 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 # Build Environment for Multi-version Studio
 ---
 
-## Build Environment for WaveMaker 11 
+## Build Environment 11 
 
 ### React Native 11
 
 |Description|	Version|
 |---|---|
-|Java <td bgcolor="#44aaf4">	1.8 to 11 |
-|Node <td bgcolor="#44aaf4"> 12.22 to  14.15.5|
+|Java |11 |
+|Node|14.15.5|
 |Maven|	3.8.1|
-|npm <td bgcolor="#44aaf4">	6.14 to 7.20.3|
+|npm | 7.20.3|
 |Ant|	1.10.11|
 |Git|	2.26| 
 
@@ -171,25 +171,25 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 
 |Description|	Version|
 |---|---|
-|Java <td bgcolor="#44aaf4"> 1.8 to 11 |
-|Node <td bgcolor="#44aaf4"> 12.22 to 12.22.3|
+|Java | 11 |
+|Node | 12.22.3|
 |Maven|	3.8.1|
-|npm <td bgcolor="#44aaf4"> 6.14 to	6.14.13|
+|npm |	6.14.13|
 |Ant|	1.10.11|
 |Git|	2.26| 
 
 For more information about building project with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
-## Build Environment for WaveMaker 10
+## Build Environment 10
 
 ### Angular Web and Mobile 10
 
 |Description|	Version|
 |---|---|
 |Java |1.8 |
-|Node <td bgcolor="#44aaf4"> 12.22 to 12.22.3|
+|Node | 12.22.3|
 |Maven|	3.8.1|
-|npm <td bgcolor="#44aaf4"> 6.14 to	6.14.13|
+|npm |	6.14.13|
 |Ant|	1.10.11|
 |Git|	2.26| 
 
