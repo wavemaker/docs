@@ -1299,7 +1299,7 @@
 
   "Release Notes":
   {
-    "Overview":
+    "New Releases":
     [
       "wavemaker-release-notes",
       "enterprise-release-notes",
@@ -1312,17 +1312,15 @@
           "app-development/wavemaker-overview/faqs-11-beta",
           "how-tos/upgrade-guide-wavemaker-10-to-11" 
           ]
-        }
-    ], 
+        },
 
-    "Current v11.x": 
-      [
         {
           "type": "subcategory",
-          "label": "WaveMaker 11",
+          "label": "Release Notes: v11.0.x",
           "ids": 
             [
-              "wavemaker-release-notes/v11-0-1"              
+              "wavemaker-release-notes/v11-0-1",
+              "wavemaker-release-notes/v11-0-2"
             ]
         }
       ],   
