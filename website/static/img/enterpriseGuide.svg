@@ -1,0 +1,57 @@
+<svg width="100" height="84" viewBox="0 0 100 84" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="0%" y1="18%" x2="121.336%" y2="90.482%" id="bbv591pyea">
+            <stop stop-color="#FFF" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="32.541%" y1="0%" x2="74.909%" y2="113.253%" id="kq3br3k0zb">
+            <stop stop-color="#FFF" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="0%" y1="44.272%" x2="121.336%" y2="57.246%" id="qqvm5xf33c">
+            <stop stop-color="#FFF" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="0%" y1="43.903%" x2="121.336%" y2="57.713%" id="1kethl5pid">
+            <stop stop-color="#FFF" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="2.247%" y1="0%" x2="118.13%" y2="113.253%" id="9z7bncbcae">
+            <stop stop-color="#FFF" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="0%" y1="21.875%" x2="121.336%" y2="85.58%" id="0cdmr8dmkf">
+            <stop stop-color="#FFF" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="121.336%" y2="113.253%" id="wh5f3va2rg">
+            <stop stop-color="#FFF" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g stroke-width="1.875" fill="none" fill-rule="evenodd">
+        <g stroke="#FFF">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M70.595 24.4h3.156M80.063 24.4h3.156M70.595 37.2h3.156M59.548 56.4h7.89V43.6M89.532 24.4a6.445 6.445 0 0 1-1.85 4.525A6.269 6.269 0 0 1 83.22 30.8H57.97a6.269 6.269 0 0 1-4.463-1.875 6.445 6.445 0 0 1-1.848-4.525c0-1.697.665-3.325 1.848-4.525A6.269 6.269 0 0 1 57.97 18h25.25c1.673 0 3.279.674 4.463 1.875a6.446 6.446 0 0 1 1.849 4.525h0z"/>
+            <path d="M70.55 43.6H57.97a6.269 6.269 0 0 1-4.464-1.874 6.446 6.446 0 0 1-1.848-4.526c0-1.697.665-3.325 1.848-4.525A6.269 6.269 0 0 1 57.97 30.8h25.25c1.108 0 2.197.295 3.158.856A6.358 6.358 0 0 1 88.69 34M86.375 66C93.348 66 99 60.27 99 53.2s-5.652-12.8-12.625-12.8c-6.972 0-12.624 5.73-12.624 12.8S79.403 66 86.375 66z" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="m92.002 49.48-6.113 8.262a1.585 1.585 0 0 1-1.15.635 1.562 1.562 0 0 1-1.23-.462l-3.156-3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M59.546 25.2a.795.795 0 0 1-.79-.8c0-.442.354-.8.79-.8"/>
+            <path d="M59.546 25.2a.795.795 0 0 0 .789-.8c0-.442-.353-.8-.79-.8M59.546 38a.794.794 0 0 1-.79-.8c0-.442.354-.8.79-.8"/>
+            <path d="M59.546 38a.794.794 0 0 0 .789-.8c0-.442-.353-.8-.79-.8M52.447 56.4a.794.794 0 0 1-.79-.8c0-.442.354-.8.79-.8"/>
+            <path d="M52.447 56.4a.794.794 0 0 0 .789-.8c0-.442-.354-.8-.79-.8"/>
+        </g>
+        <g opacity=".1">
+            <path stroke="url(#bbv591pyea)" stroke-linecap="round" stroke-linejoin="round" d="M34 11h5M50 11h5M34 33h5" transform="translate(0 1)"/>
+            <path stroke="url(#kq3br3k0zb)" stroke-linecap="round" stroke-linejoin="round" d="M15 66h13V44" transform="translate(0 1)"/>
+            <path d="M66 11c0 2.917-1.141 5.715-3.173 7.778A10.75 10.75 0 0 1 55.167 22H11.833a10.75 10.75 0 0 1-7.66-3.222A11.086 11.086 0 0 1 1 11c0-2.917 1.141-5.715 3.173-7.778A10.75 10.75 0 0 1 11.833 0h43.334a10.75 10.75 0 0 1 7.66 3.222A11.087 11.087 0 0 1 66 11h0z" stroke="url(#qqvm5xf33c)" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 1)"/>
+            <path d="M33.14 44H11.74a10.61 10.61 0 0 1-7.594-3.222A11.138 11.138 0 0 1 1 33c0-2.917 1.131-5.715 3.145-7.778A10.611 10.611 0 0 1 11.74 22h42.954c1.886-.001 3.74.506 5.373 1.472A10.874 10.874 0 0 1 64 27.5" stroke="url(#1kethl5pid)" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 1)"/>
+            <path d="M60.5 82C72.374 82 82 72.15 82 60s-9.626-22-21.5-22S39 47.85 39 60s9.626 22 21.5 22z" stroke="url(#9z7bncbcae)" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 1)"/>
+            <path d="M70 54 59.505 67.923a2.72 2.72 0 0 1-3.116.908 2.716 2.716 0 0 1-.97-.617L50 62.822" stroke="url(#0cdmr8dmkf)" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 1)"/>
+            <path d="M14.75 12.5a1.5 1.5 0 1 1 0-3" stroke="url(#wh5f3va2rg)" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 1)"/>
+            <path d="M14.25 12.5a1.5 1.5 0 1 0 0-3M14.75 34.5a1.5 1.5 0 1 1 0-3" stroke="url(#wh5f3va2rg)" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 1)"/>
+            <path d="M14.25 34.5a1.5 1.5 0 1 0 0-3" stroke="url(#wh5f3va2rg)" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 1)"/>
+            <g stroke="#FFF">
+                <path d="M2.5 66.5c-.753 0-1.364-.671-1.364-1.5 0-.828.61-1.5 1.364-1.5M2.5 66.5c.753 0 1.364-.671 1.364-1.5 0-.828-.61-1.5-1.364-1.5"/>
+            </g>
+        </g>
+    </g>
+</svg>
