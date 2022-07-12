@@ -21,8 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11 Beta (11.0.1)](/learn/wavemaker-release-notes/v11-0-1)|Includes new features like React Native, API composer toolkit, API Mock Server extension, pagination for imported APIs, Java 11 and SAML library updates. [Read more.](/learn/app-development/wavemaker-overview/wavemaker-11-beta) | 06 June 2022 |
-|[WaveMaker 11.0.2 Beta](/learn/wavemaker-release-notes/v11-0-2)|Issues related to importing Web Services with OAuth 2.0 and previewing applications with Prefabs and more such bug fixes are addressed. | 11 July 2022 |
+|[WaveMaker 11 Beta (11.0.1)](/learn/wavemaker-release-notes/v11-0-1)|Includes new features like React Native, Multi-version Studio, API composer toolkit, API Mock Server extension, pagination for imported APIs, Java 11 and SAML library updates. [Read more.](/learn/app-development/wavemaker-overview/wavemaker-11-beta) | 06 June 2022 |
+|[WaveMaker 11.0.2 Beta](/learn/wavemaker-release-notes/v11-0-2) <p style="color:red;">*New*</p>  |Issues related to importing Web Services with OAuth 2.0 and previewing applications with Prefabs and more such bug fixes are addressed. | 11 July 2022 |
 
 ### WaveMaker Online v10.x
 
@@ -151,11 +151,12 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
-## Build Environment
+# Build Environment for Multi-version Studio
+---
 
-For more information about building project with Maven, see [here](/learn/app-development/deployment/building-with-maven).
+## Build Environment for WaveMaker 11 
 
-### React Native Build Environment
+### React Native 11
 
 |Description|	Version|
 |---|---|
@@ -166,7 +167,7 @@ For more information about building project with Maven, see [here](/learn/app-de
 |Ant|	1.10.11|
 |Git|	2.26| 
 
-### Angular Web and Mobile Build Environment
+### Angular Web and Mobile 11
 
 |Description|	Version|
 |---|---|
@@ -177,7 +178,20 @@ For more information about building project with Maven, see [here](/learn/app-de
 |Ant|	1.10.11|
 |Git|	2.26| 
 
-This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
+For more information about building project with Maven, see [here](/learn/app-development/deployment/building-with-maven).
+
+## Build Environment for WaveMaker 10
+
+### Angular Web and Mobile 10
+
+|Description|	Version|
+|---|---|
+|Java |1.8 |
+|Node <td bgcolor="#44aaf4"> 12.22 to 12.22.3|
+|Maven|	3.8.1|
+|npm <td bgcolor="#44aaf4"> 6.14 to	6.14.13|
+|Ant|	1.10.11|
+|Git|	2.26| 
 
 ## Older Releases
 
