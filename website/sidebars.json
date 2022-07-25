@@ -769,7 +769,7 @@
             "how-tos/custom-security-using-google-oauth-prefab",
             "how-tos/multiple-security-provider-implementation",
             "how-tos/customizing-post-authentication-handlers",
-            "how-tos/configuring-content-security-policy.md"
+            "how-tos/configuring-content-security-policy"
           ],
 
           "Databases":
