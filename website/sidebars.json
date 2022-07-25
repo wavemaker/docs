@@ -768,7 +768,8 @@
             "how-tos/sso-openid-azure-active-directory",
             "how-tos/custom-security-using-google-oauth-prefab",
             "how-tos/multiple-security-provider-implementation",
-            "how-tos/customizing-post-authentication-handlers"
+            "how-tos/customizing-post-authentication-handlers",
+            "how-tos/configuring-content-security-policy"
           ],
 
           "Databases":
@@ -1312,18 +1313,21 @@
           "app-development/wavemaker-overview/faqs-11-beta",
           "how-tos/upgrade-guide-wavemaker-10-to-11" 
           ]
-        },
-
+        }
+    ],
+    "Current v11.x - beta": 
+    [
         {
           "type": "subcategory",
-          "label": "Release Notes: v11.0.x",
+          "label": "Versions: 11.0.x",
           "ids": 
             [
-              "wavemaker-release-notes/v11-0-1",
-              "wavemaker-release-notes/v11-0-2"
+              "wavemaker-release-notes/v11-0-3",
+              "wavemaker-release-notes/v11-0-2",
+              "wavemaker-release-notes/v11-0-1"              
             ]
         }
-      ],   
+    ],   
     
     "Release v10.x": 
       [
