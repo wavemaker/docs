@@ -1319,8 +1319,9 @@
           "label": "Release Notes: v11.0.x",
           "ids": 
             [
-              "wavemaker-release-notes/v11-0-1",
-              "wavemaker-release-notes/v11-0-2"
+              "wavemaker-release-notes/v11-0-3",
+              "wavemaker-release-notes/v11-0-2",
+              "wavemaker-release-notes/v11-0-1"              
             ]
         }
       ],   
