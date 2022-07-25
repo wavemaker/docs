@@ -7,12 +7,12 @@ sidebar_label: "Run Patch"
 
 ## Running the Patch
 
-- When upgrading from 10.x.x to 10.13.x user needs to download the required content for the migration process. **When the user has already upgraded to 10.7.x WME Version, in that case, there is no need to download migration tar**.
+- When upgrading from 10.7.x to 11.x.x user needs to download the required content for the migration process. **When the user has already upgraded to 11.x.x WME Version, in that case, there is no need to download migration tar**.
 
 - To download migration tar please run the following command.
 
 ```bash
-    wget https://s3.amazonaws.com/downloads.wavemaker.com/wme/wme.migration/wme_migrations.tar
+    wget https://s3.amazonaws.com/downloads.wavemaker.com/wme/wme.migration/wme-migrations-11.tar
 ```
 
 - Extract wme_migrations.tar to /usr/local/content/wme/wme-installer/< version>/resources folder, for extract the content run the following command
@@ -28,11 +28,6 @@ sidebar_label: "Run Patch"
 ```
 
 - To make https work, You need to add SSL certificates to Platform or router/dns level, to add SSL certificates please refer [ssl configuration for platform](/learn/on-premise/configure/config-ssl).
-- To redirect HTTP traffics to HTTPS for accessing the platform use enable-ssl option while running installer, to run with enable-ssl option please use the following command.
-
-```bash
-    bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --enable-ssl
-```
 
 - Enter config portal admin password to proceed with the process.
 

@@ -19,11 +19,6 @@ sidebar_label: "Initialize Setup"
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh 
 ```
 
-- To redirect http traffic to https for accessing platform use enable-ssl option while running installer, to run with enable-ssl option please use following command.
-
-```bash
-    bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --enable-ssl
-```
 
 - To configure SSL for platform please refer [ssl configuration for platform](/learn/on-premise/configure/config-ssl)
 
