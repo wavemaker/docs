@@ -141,32 +141,58 @@ Another advantage that works is by introducing trace ID in the response payload 
 
 Every time when a hit to service endpoint of an application is made a trace is captured at Zipkin, to see something like this at Zipkin dashboard by accessing url **http://your_host:9411**,  here are few WaveMaker application request traces.
 
-Click on the show button to see WaveMaker API Composer call details
+<br/>
+<br/>
+<br/>
+
 ![Zipkin-APIComposer](/learn/assets/Zipkin-APIComposer.png)
+Click on the show button to see WaveMaker API Composer call details
+
+<br/>
+<br/>
+<br/>
 
 
-WaveMaker API Composer call trace info with its status code(500) and Server response time details.
 ![Zipkin-APIComposerList](/learn/assets/Zipkin-APIComposerList.png)
+WaveMaker API Composer call trace info with its status code(500) and Server response time details.
+
+<br/>
+<br/>
+<br/>
 
 
-WaveMaker API Composer first GET call with its status code(200) and response time details.
 ![Zipkin-APIComposerSuccess](/learn/assets/Zipkin-APIComposerSuccess.png)
+WaveMaker API Composer first GET call with its status code(200) and response time details.
 
+<br/>
+<br/>
+<br/>
 
-WaveMaker API Composer second GET call with its status code(404) and response time details.
 ![Zipkin-APIComposerfailed](/learn/assets/Zipkin-APIComposerfailed.png)
+WaveMaker API Composer second GET call with its status code(404) and response time details.
+
+<br/>
+<br/>
+<br/>
 
 
-Click on show button for WaveMaker DataBase call details
 ![Zipkin-DBCall](/learn/assets/Zipkin-DBCall.png)
+Click on show button for WaveMaker DataBase call details
+
+<br/>
+<br/>
+<br/>
 
 
-WaveMaker DB call trace info along with its status code(200) and response time details.
 ![Zipkin-DBList](/learn/assets/Zipkin-DBList.png)
+WaveMaker DB call trace info along with its status code(200) and response time details.
 
-    
-WaveMaker DB call with query and response time details.
+<br/>
+<br/>
+<br/>
+
 ![Zipkin-DBtable](/learn/assets/Zipkin-DBtable.png)
+WaveMaker DB call with query and response time details.
 
 
 
