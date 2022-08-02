@@ -4,15 +4,15 @@ author: Deepika Srimanthula
 ---
 ---
 
-In this blog we talk about how to make any WaveMaker application Observable by applying OpenTelemetry, Zipkin.  While accelerating application development, WaveMaker's generated code allows easy integration with best of the breed tools and makes applying devops best practices in operating the app in production a cinch. 
+In this blog we talk about how to make any WaveMaker application Observable by applying OpenTelemetry, Zipkin.  While accelerating application development, WaveMaker's generated code allows easy integration with best of the breed tools and applying devops best practices while operating the app in production a cinch. 
+
+<!-- truncate -->
 
 ## About Open Telemetry
 
 Open telemetry is an opensource tool enabling Observability. Observability lets a developer understand an application from the outside without knowing its inner workings and helps in troubleshooting degradations in service quality. To achieve this, a developer should instrument the application. By instrumenting code to emit traces and metrics, and collecting such data developers make the application observable. 
 
 Once instrumented, the end user flows become traceable across different microservices. This data can be sent to Zipkin - a popular open source tool. 
-
-<!-- truncate -->
 
 ## Benefits of implementing observability
 Metrics, Logs and Traces make up the [golden triangle of Observability](https://devops.com/metrics-logs-and-traces-the-golden-triangle-of-observability-in-monitoring/) of any application. WaveMaker built applications can also easily be set up for tracing.
