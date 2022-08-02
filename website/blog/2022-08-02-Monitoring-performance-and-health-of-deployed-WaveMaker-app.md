@@ -55,7 +55,7 @@ OpenTelemetry code instrumentation is supported for Java based applications, her
 	export JAVA_OPTS=”$JAVA_OPTS $CATALINA_OPTS $OTEL_TRACES_EXPORTER $OTEL_EXPORTER_ZIPKIN_ENDPOINT $OTEL_SERVICE_NAME”
 ```
 
-:::warning
+:::note
 Here Zipkin server should be accessible to the tomcat server.
 :::
 
