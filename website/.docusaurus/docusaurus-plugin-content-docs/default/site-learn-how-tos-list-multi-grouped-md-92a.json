@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/list-multi-grouped",
+  "id": "how-tos/list-multi-grouped",
+  "title": "Creating an Employee List grouped by Birth Month and City",
+  "description": "Scenario: To display list grouped by multiple fields like City and State they reside in",
+  "source": "@site/../learn/how-tos/list-multi-grouped.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/list-multi-grouped",
+  "permalink": "/learn/docs/how-tos/list-multi-grouped",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/list-multi-grouped.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Creating an Employee List grouped by Birth Month and City",
+    "id": "list-multi-grouped"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Creating an Employee List grouped by City",
+    "permalink": "/learn/docs/how-tos/list-grouped"
+  },
+  "next": {
+    "title": "OnRender Event",
+    "permalink": "/learn/docs/how-tos/onrender-event-list-widget"
+  }
+}

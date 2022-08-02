@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/using-post-method-send-data-rest-api",
+  "id": "learn/how-tos/using-post-method-send-data-rest-api",
+  "title": "Using POST method to send data to a REST API",
+  "description": "We will see how a POST method can be used to send data to REST API.",
+  "source": "@site/../learn/learn/how-tos/using-post-method-send-data-rest-api.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/using-post-method-send-data-rest-api",
+  "permalink": "/learn/docs/learn/how-tos/using-post-method-send-data-rest-api",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/using-post-method-send-data-rest-api.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using POST method to send data to a REST API",
+    "id": "using-post-method-send-data-rest-api"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/app-security/login-configuration",
+  "id": "learn/app-development/app-security/login-configuration",
+  "title": "Login Configuration",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/app-security/login-configuration.md",
+  "sourceDirName": "learn/app-development/app-security",
+  "slug": "/learn/app-development/app-security/login-configuration",
+  "permalink": "/learn/docs/learn/app-development/app-security/login-configuration",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/app-security/login-configuration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Login Configuration",
+    "id": "login-configuration"
+  }
+}

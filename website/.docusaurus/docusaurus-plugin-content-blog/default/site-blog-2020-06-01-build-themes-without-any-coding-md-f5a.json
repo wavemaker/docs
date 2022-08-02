@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/06/01/build-themes-without-any-coding",
+  "source": "@site/blog/2020-06-01-build-themes-without-any-coding.md",
+  "title": "Build Themes for WaveMaker Apps Without Any Coding",
+  "description": "Creating and customizing the look and feel of WaveMaker applications is just a few clicks away now. We have introduced a theme building tool for changing color schemes and creating branding specs. Theme-builder brings the benefit of codeless theme creation in a few simple steps. With a built-in code editor, one can make changes and see custom styles instantly applied to the web components.",
+  "date": "2020-06-01T00:00:00.000Z",
+  "formattedDate": "June 1, 2020",
+  "tags": [],
+  "readingTime": 2.815,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Lovin Ahmed"
+    }
+  ],
+  "frontMatter": {
+    "title": "Build Themes for WaveMaker Apps Without Any Coding",
+    "author": "Lovin Ahmed"
+  },
+  "prevItem": {
+    "title": "GraphQL in a Micro Services Architecture",
+    "permalink": "/learn/blog/2020/06/11/graphql-microservice-architecture"
+  },
+  "nextItem": {
+    "title": "COVID-19 Visualization using WaveMaker - Part 2",
+    "permalink": "/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2"
+  }
+}

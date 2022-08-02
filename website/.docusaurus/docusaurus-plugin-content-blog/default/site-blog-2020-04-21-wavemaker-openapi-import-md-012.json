@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/04/21/wavemaker-openapi-import",
+  "source": "@site/blog/2020-04-21-wavemaker-openapi-import.md",
+  "title": "OpenAPI support in WaveMaker",
+  "description": "WaveMaker now supports integration with OpenAPIs. If you have an OpenAPI definition document for your REST APIs, it can be easily integrated with a WaveMaker app. The OpenAPI Specification, originally known as the Swagger Specification, is a specification for machine-readable interface files for describing, producing, consuming, and visualizing RESTful web services.",
+  "date": "2020-04-21T00:00:00.000Z",
+  "formattedDate": "April 21, 2020",
+  "tags": [],
+  "readingTime": 4.96,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Vibhu Singhal"
+    }
+  ],
+  "frontMatter": {
+    "title": "OpenAPI support in WaveMaker",
+    "author": "Vibhu Singhal"
+  },
+  "prevItem": {
+    "title": "Deployment Experience made better!",
+    "permalink": "/learn/blog/2020/04/22/deployments-made-better"
+  },
+  "nextItem": {
+    "title": " WaveMaker platform is updated to use WKWebView.",
+    "permalink": "/learn/blog/2020/04/20/wavemaker-wkwebview-upgrade"
+  }
+}

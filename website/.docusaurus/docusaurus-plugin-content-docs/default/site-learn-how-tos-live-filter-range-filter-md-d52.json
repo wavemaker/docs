@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/live-filter-range-filter",
+  "id": "how-tos/live-filter-range-filter",
+  "title": "Building a Range Live Filter",
+  "description": "To filter data between given two values, Show Range Selector property from the Advanced Settings can be used. For example, we will how to filter the vacation details of employees between to Start Dates. We are using the hrdb Vacation table for this example.",
+  "source": "@site/../learn/how-tos/live-filter-range-filter.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/live-filter-range-filter",
+  "permalink": "/learn/docs/how-tos/live-filter-range-filter",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/live-filter-range-filter.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Building a Range Live Filter",
+    "id": "live-filter-range-filter"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Building a Multiple Selection Live Filter",
+    "permalink": "/learn/docs/how-tos/live-filter-multiple-values"
+  },
+  "next": {
+    "title": "Setting partial page content for Accordion within a List",
+    "permalink": "/learn/docs/how-tos/setting-partial-page-content-accordion-within-list"
+  }
+}

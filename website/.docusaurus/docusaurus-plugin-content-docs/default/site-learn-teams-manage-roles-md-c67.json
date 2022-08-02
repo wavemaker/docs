@@ -1,0 +1,30 @@
+{
+  "unversionedId": "teams/manage-roles",
+  "id": "teams/manage-roles",
+  "title": "Manage Roles",
+  "description": "---",
+  "source": "@site/../learn/teams/manage-roles.md",
+  "sourceDirName": "teams",
+  "slug": "/teams/manage-roles",
+  "permalink": "/learn/docs/teams/manage-roles",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/teams/manage-roles.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Manage Roles",
+    "id": "manage-roles"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Project Branches",
+    "permalink": "/learn/docs/teams/project-branch"
+  },
+  "next": {
+    "title": "Code Repository",
+    "permalink": "/learn/docs/teams/code-repository"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/accessing-rest-apis-java-service",
+  "id": "how-tos/accessing-rest-apis-java-service",
+  "title": "Accessing REST APIs from Java Service",
+  "description": "---",
+  "source": "@site/../learn/how-tos/accessing-rest-apis-java-service.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/accessing-rest-apis-java-service",
+  "permalink": "/learn/docs/how-tos/accessing-rest-apis-java-service",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/accessing-rest-apis-java-service.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Accessing REST APIs from Java Service",
+    "id": "accessing-rest-apis-java-service"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Implementing Forgot Password feature using Java Service",
+    "permalink": "/learn/docs/how-tos/implementing-forgot-password-feature-using-java-service"
+  },
+  "next": {
+    "title": "Scheduling a Java Service",
+    "permalink": "/learn/docs/how-tos/scheduling-java-service"
+  }
+}

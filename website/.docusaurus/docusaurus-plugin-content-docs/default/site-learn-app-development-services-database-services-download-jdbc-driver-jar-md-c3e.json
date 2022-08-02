@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/services/database-services/download-jdbc-driver-jar",
+  "id": "app-development/services/database-services/download-jdbc-driver-jar",
+  "title": "Recommended JDBC Driver Versions for Databases",
+  "description": "---",
+  "source": "@site/../learn/app-development/services/database-services/download-jdbc-driver-jar.md",
+  "sourceDirName": "app-development/services/database-services",
+  "slug": "/app-development/services/database-services/download-jdbc-driver-jar",
+  "permalink": "/learn/docs/app-development/services/database-services/download-jdbc-driver-jar",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/database-services/download-jdbc-driver-jar.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Recommended JDBC Driver Versions for Databases",
+    "id": "download-jdbc-driver-jar"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Connect To Azure SQL Server",
+    "permalink": "/learn/docs/how-tos/connect-azure-sql-server"
+  },
+  "next": {
+    "title": "How to fetch more than the default number(100) of records from database?",
+    "permalink": "/learn/docs/how-tos/fetch-default-number100-records-database"
+  }
+}

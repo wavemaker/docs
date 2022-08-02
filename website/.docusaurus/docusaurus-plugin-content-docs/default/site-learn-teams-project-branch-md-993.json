@@ -1,0 +1,30 @@
+{
+  "unversionedId": "teams/project-branch",
+  "id": "teams/project-branch",
+  "title": "Project Branches",
+  "description": "---",
+  "source": "@site/../learn/teams/project-branch.md",
+  "sourceDirName": "teams",
+  "slug": "/teams/project-branch",
+  "permalink": "/learn/docs/teams/project-branch",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/teams/project-branch.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Project Branches",
+    "id": "project-branch"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Manage Prefabs",
+    "permalink": "/learn/docs/teams/manage-prefabs"
+  },
+  "next": {
+    "title": "Manage Roles",
+    "permalink": "/learn/docs/teams/manage-roles"
+  }
+}

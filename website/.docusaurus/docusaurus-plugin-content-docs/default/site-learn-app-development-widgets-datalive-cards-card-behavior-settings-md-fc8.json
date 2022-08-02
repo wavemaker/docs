@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/cards/card-behavior-settings",
+  "id": "app-development/widgets/datalive/cards/card-behavior-settings",
+  "title": "Cards - Behavior Settings",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/cards/card-behavior-settings.md",
+  "sourceDirName": "app-development/widgets/datalive/cards",
+  "slug": "/app-development/widgets/datalive/cards/card-behavior-settings",
+  "permalink": "/learn/docs/app-development/widgets/datalive/cards/card-behavior-settings",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/cards/card-behavior-settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Cards - Behavior Settings",
+    "id": "card-behavior-settings",
+    "sidebar_label": "Behavior Settings"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/learn/docs/app-development/widgets/datalive/cards/card-configuration"
+  },
+  "next": {
+    "title": "Properties, Events & Methods",
+    "permalink": "/learn/docs/app-development/widgets/datalive/cards/cards-properties-events-methods"
+  }
+}

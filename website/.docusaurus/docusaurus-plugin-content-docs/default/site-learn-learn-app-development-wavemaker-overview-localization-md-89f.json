@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/wavemaker-overview/localization",
+  "id": "learn/app-development/wavemaker-overview/localization",
+  "title": "Localization",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/wavemaker-overview/localization.md",
+  "sourceDirName": "learn/app-development/wavemaker-overview",
+  "slug": "/learn/app-development/wavemaker-overview/localization",
+  "permalink": "/learn/docs/learn/app-development/wavemaker-overview/localization",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/wavemaker-overview/localization.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Localization",
+    "id": "localization"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/copy-to-clipboard",
+  "id": "how-tos/copy-to-clipboard",
+  "title": "Copy to Clipboard",
+  "description": "---",
+  "source": "@site/../learn/how-tos/copy-to-clipboard.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/copy-to-clipboard",
+  "permalink": "/learn/docs/how-tos/copy-to-clipboard",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/copy-to-clipboard.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Copy to Clipboard",
+    "id": "copy-to-clipboard"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Using Wizard for Master-Detail Live Form",
+    "permalink": "/learn/docs/how-tos/using-wizard-master-detail-live-form"
+  },
+  "next": {
+    "title": "Create a form with multiple wizard steps",
+    "permalink": "/learn/docs/how-tos/form-with-wizard"
+  }
+}

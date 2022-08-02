@@ -1,6 +1,6 @@
 ---
 title: "Dropdown Menu"
-id: ""
+id: "dropdown-menu"
 ---
 ---
 
@@ -58,14 +58,14 @@ Item link has priority over _onSelect_ actions i.e. when the link is selected th
 
 |  | |
 | --- | --- |
-| Action Task | Task for menu items generated dynamically. This is the action that will be triggered when the user clicks on the Menu Item. It can be a script like: `Widgets.label1.show` or `Variables.v1.invoke()` <br> <br> Execution order on click of Node: <br> 1. If provided _onSelect_ will be executed first. <br> 2. If provided _Action_ will be executed next. <br> 3. If provided _Action link_ will be executed last. |
+| Action Task | Task for menu items generated dynamically. This is the action that will be triggered when the user clicks on the Menu Item. It can be a script like: `Widgets.label1.show` or `Variables.v1.invoke()`     Execution order on click of Node:   1. If provided _onSelect_ will be executed first.   2. If provided _Action_ will be executed next.   3. If provided _Action link_ will be executed last. |
 | User Role | Role for menu items generated dynamically. You can assign the property to 'userrole' which contains comma separated user roles. Each item will be evaluated with given 'userrole' for that item to that of the logged in user roles, from security. If any of the user roles bound to 'userrole' property matches then that menu item will be shown else will be hidden. |
 | Sub Actions | When a menu widget is required the sub-items can be mentioned in the children. It can be bound to a variable or set to a field from the Dataset Value variable. |
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
-| Link Target | This defines the app behavior on click of the Item Link.  <br> - `_blank` Opens the linked document in a new window or tab; <br> - `_self` Opens the linked document in the same frame as it was clicked (this is the default value); <br> - `_parent` Opens the linked document in the parent frame; <br> - `_top` Opens the linked document in the full body of the window. |
-| Auto Close | This property defines the behavior of menu closing, it can be: <br><br> - outsideClick - close the menu when clicked outside of the menu, <br> - always - when a menu item is selected or on click outside menu, or <br> - disabled - do not close once opened.  |
+| Link Target | This defines the app behavior on click of the Item Link.    - `_blank` Opens the linked document in a new window or tab;   - `_self` Opens the linked document in the same frame as it was clicked (this is the default value);   - `_parent` Opens the linked document in the parent frame;   - `_top` Opens the linked document in the full body of the window. |
+| Auto Close | This property defines the behavior of menu closing, it can be:    - outsideClick - close the menu when clicked outside of the menu,   - always - when a menu item is selected or on click outside menu, or   - disabled - do not close once opened.  |
 | Animation on to content | This property controls the animation of the menu items. It can be set to _slide, fade, or scale_. Note: This feature works only in the run mode. |
 | **Graphics** |
 | Icon Class | This bindable property defines the class of the icon that is applied to the button. |

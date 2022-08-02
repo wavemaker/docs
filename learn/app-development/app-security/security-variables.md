@@ -1,6 +1,6 @@
 ---
 title: "Security Variables"
-id: ""
+id: "security-variables"
 ---
 ---
 

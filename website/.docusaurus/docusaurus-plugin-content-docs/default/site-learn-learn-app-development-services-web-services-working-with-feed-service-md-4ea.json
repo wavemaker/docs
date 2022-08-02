@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/services/web-services/working-with-feed-service",
+  "id": "learn/app-development/services/web-services/working-with-feed-service",
+  "title": "Working with Feed service",
+  "description": "A web feed is a document (often XML-based) whose discrete content items include web links to the source of the content. News websites and blogs are common sources for web feeds, but feeds are also used to deliver structured information ranging from weather data to top-ten lists of hit tunes to search results. The two main web feed formats are RSS and Atom.",
+  "source": "@site/../learn/learn/app-development/services/web-services/working-with-feed-service.md",
+  "sourceDirName": "learn/app-development/services/web-services",
+  "slug": "/learn/app-development/services/web-services/working-with-feed-service",
+  "permalink": "/learn/docs/learn/app-development/services/web-services/working-with-feed-service",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/web-services/working-with-feed-service.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Working with Feed service",
+    "id": "working-with-feed-service"
+  }
+}

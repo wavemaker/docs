@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/change-icon-global-spinner",
+  "id": "learn/how-tos/change-icon-global-spinner",
+  "title": "Change Icon for the Global Spinner",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/change-icon-global-spinner.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/change-icon-global-spinner",
+  "permalink": "/learn/docs/learn/how-tos/change-icon-global-spinner",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/change-icon-global-spinner.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Change Icon for the Global Spinner",
+    "id": "change-icon-global-spinner"
+  }
+}

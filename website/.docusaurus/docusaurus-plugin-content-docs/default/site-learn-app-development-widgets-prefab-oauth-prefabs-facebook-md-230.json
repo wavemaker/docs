@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/prefab/oauth-prefabs/facebook",
+  "id": "app-development/widgets/prefab/oauth-prefabs/facebook",
+  "title": "Facebook",
+  "description": "Introduction",
+  "source": "@site/../learn/app-development/widgets/prefab/oauth-prefabs/facebook.md",
+  "sourceDirName": "app-development/widgets/prefab/oauth-prefabs",
+  "slug": "/app-development/widgets/prefab/oauth-prefabs/facebook",
+  "permalink": "/learn/docs/app-development/widgets/prefab/oauth-prefabs/facebook",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/prefab/oauth-prefabs/facebook.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Facebook",
+    "id": "facebook"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Box",
+    "permalink": "/learn/docs/app-development/widgets/prefab/oauth-prefabs/box"
+  },
+  "next": {
+    "title": "Google",
+    "permalink": "/learn/docs/app-development/widgets/prefab/oauth-prefabs/google"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/app-security/secure-connection-deployed-apps",
+  "id": "learn/app-development/app-security/secure-connection-deployed-apps",
+  "title": "Secure Connection for Deployed Apps",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/app-security/secure-connection-deployed-apps.md",
+  "sourceDirName": "learn/app-development/app-security",
+  "slug": "/learn/app-development/app-security/secure-connection-deployed-apps",
+  "permalink": "/learn/docs/learn/app-development/app-security/secure-connection-deployed-apps",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/app-security/secure-connection-deployed-apps.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Secure Connection for Deployed Apps",
+    "id": "secure-connection-deployed-apps"
+  }
+}

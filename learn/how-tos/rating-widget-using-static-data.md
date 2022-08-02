@@ -1,6 +1,6 @@
 ---
 title: "Building Rating Widget using Static Data"
-id: ""
+id: "rating-widget-using-static-data"
 ---
 
 1. Drag and drop a **rating** widget on the canvas.

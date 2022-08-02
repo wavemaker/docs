@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/sspa/micro-frontend",
+  "id": "app-development/sspa/micro-frontend",
+  "title": "WaveMaker App as Micro Frontend Module",
+  "description": "---",
+  "source": "@site/../learn/app-development/sspa/micro-frontend.md",
+  "sourceDirName": "app-development/sspa",
+  "slug": "/app-development/sspa/micro-frontend",
+  "permalink": "/learn/docs/app-development/sspa/micro-frontend",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/sspa/micro-frontend.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker App as Micro Frontend Module",
+    "id": "micro-frontend",
+    "sidebar_label": "Micro Frontend App"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Create Template",
+    "permalink": "/learn/docs/app-development/ui-design/page-concepts/creating-template-bundles"
+  },
+  "next": {
+    "title": "Database Services Overview",
+    "permalink": "/learn/docs/app-development/services/database-services/"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/design-dialog",
+  "id": "app-development/widgets/design-dialog",
+  "title": "Design Dialog",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/design-dialog.md",
+  "sourceDirName": "app-development/widgets",
+  "slug": "/app-development/widgets/design-dialog",
+  "permalink": "/learn/docs/app-development/widgets/design-dialog",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/design-dialog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Design Dialog",
+    "id": "design-dialog"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Modal Windows/ Dialogs",
+    "permalink": "/learn/docs/app-development/widgets/modal-windows-dialogs"
+  },
+  "next": {
+    "title": "Alert Dialog",
+    "permalink": "/learn/docs/app-development/widgets/alert-dialog"
+  }
+}

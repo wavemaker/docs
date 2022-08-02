@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/ui-elements",
+  "id": "app-development/widgets/ui-elements",
+  "title": "Composing Widgets",
+  "description": "Learn about widgets and how it works.",
+  "source": "@site/../learn/app-development/widgets/ui-elements.md",
+  "sourceDirName": "app-development/widgets",
+  "slug": "/app-development/widgets/ui-elements",
+  "permalink": "/learn/docs/app-development/widgets/ui-elements",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/ui-elements.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Composing Widgets",
+    "id": "ui-elements",
+    "sidebar_label": "Widgets Composition"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Widgets Library",
+    "permalink": "/learn/docs/app-development/widgets/widget-library"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/learn/docs/app-development/widgets/datalive/cards"
+  }
+}

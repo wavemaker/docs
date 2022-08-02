@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/sso-openid-azure-active-directory",
+  "id": "how-tos/sso-openid-azure-active-directory",
+  "title": "SSO Azure Active Directory Open ID Integration",
+  "description": "---",
+  "source": "@site/../learn/how-tos/sso-openid-azure-active-directory.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/sso-openid-azure-active-directory",
+  "permalink": "/learn/docs/how-tos/sso-openid-azure-active-directory",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/sso-openid-azure-active-directory.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "SSO Azure Active Directory Open ID Integration",
+    "id": "sso-openid-azure-active-directory",
+    "sidebar_label": "OpenID Integration - Azure AD"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "SAML Integration - ADFS",
+    "permalink": "/learn/docs/how-tos/saml-integration-adfs"
+  },
+  "next": {
+    "title": "Custom Security using Google OAuth Prefab",
+    "permalink": "/learn/docs/how-tos/custom-security-using-google-oauth-prefab"
+  }
+}

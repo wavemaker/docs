@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/services/database-services/download-jdbc-driver-jar",
+  "id": "learn/app-development/services/database-services/download-jdbc-driver-jar",
+  "title": "Recommended JDBC Driver Versions for Databases",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/services/database-services/download-jdbc-driver-jar.md",
+  "sourceDirName": "learn/app-development/services/database-services",
+  "slug": "/learn/app-development/services/database-services/download-jdbc-driver-jar",
+  "permalink": "/learn/docs/learn/app-development/services/database-services/download-jdbc-driver-jar",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/database-services/download-jdbc-driver-jar.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Recommended JDBC Driver Versions for Databases",
+    "id": "download-jdbc-driver-jar"
+  }
+}

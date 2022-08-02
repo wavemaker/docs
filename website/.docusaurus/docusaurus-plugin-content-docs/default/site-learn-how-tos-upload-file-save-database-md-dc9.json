@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/upload-file-save-database",
+  "id": "how-tos/upload-file-save-database",
+  "title": "Upload File & Save in Database",
+  "description": "We will be seeing how to upload a file and save the same in a Database:",
+  "source": "@site/../learn/how-tos/upload-file-save-database.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/upload-file-save-database",
+  "permalink": "/learn/docs/how-tos/upload-file-save-database",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/upload-file-save-database.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Upload File & Save in Database",
+    "id": "upload-file-save-database"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "File Upload Widget Operations",
+    "permalink": "/learn/docs/how-tos/file-upload-widget-operations"
+  },
+  "next": {
+    "title": "File Upload & Blob Data",
+    "permalink": "/learn/docs/how-tos/file-upload-blob-data"
+  }
+}

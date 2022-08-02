@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/wavemaker-overview/supported-technologies",
+  "id": "app-development/wavemaker-overview/supported-technologies",
+  "title": "Supported Technologies",
+  "description": "Find the list of technologies supported by WaveMaker.",
+  "source": "@site/../learn/app-development/wavemaker-overview/supported-technologies.md",
+  "sourceDirName": "app-development/wavemaker-overview",
+  "slug": "/app-development/wavemaker-overview/supported-technologies",
+  "permalink": "/learn/docs/app-development/wavemaker-overview/supported-technologies",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/wavemaker-overview/supported-technologies.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Supported Technologies",
+    "id": "supported-technologies"
+  },
+  "sidebar": "FAQs",
+  "previous": {
+    "title": "Pre-requisites",
+    "permalink": "/learn/docs/app-development/wavemaker-overview/pre-requisites"
+  },
+  "next": {
+    "title": "WaveMaker Online Setup",
+    "permalink": "/learn/docs/wmo-setup"
+  }
+}

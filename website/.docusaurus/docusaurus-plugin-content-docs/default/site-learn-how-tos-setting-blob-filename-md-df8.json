@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/setting-blob-filename",
+  "id": "how-tos/setting-blob-filename",
+  "title": "How to Set Name of Blob Type Downloaded from Data Table",
+  "description": "---",
+  "source": "@site/../learn/how-tos/setting-blob-filename.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/setting-blob-filename",
+  "permalink": "/learn/docs/how-tos/setting-blob-filename",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/setting-blob-filename.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to Set Name of Blob Type Downloaded from Data Table",
+    "id": "setting-blob-filename",
+    "sidebar_label": "Setting Blob Filename"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Export Data from Data Table - 2",
+    "permalink": "/learn/docs/how-tos/export-data-data-table-2"
+  },
+  "next": {
+    "title": "Dynamic Data Tables",
+    "permalink": "/learn/docs/how-tos/dynamic-data-tables"
+  }
+}

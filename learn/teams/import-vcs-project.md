@@ -1,6 +1,6 @@
 ---
 title: Import a WaveMaker Project using VCS URL
-id: ""
+id: "import-vcs-project"
 sidebar_label: "Import VCS Project"
 ---
 ---

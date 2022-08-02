@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/ui-design/theme-builder",
+  "id": "app-development/ui-design/theme-builder",
+  "title": "Creating Themes using the Editor Tool",
+  "description": "---",
+  "source": "@site/../learn/app-development/ui-design/theme-builder.md",
+  "sourceDirName": "app-development/ui-design",
+  "slug": "/app-development/ui-design/theme-builder",
+  "permalink": "/learn/docs/app-development/ui-design/theme-builder",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/ui-design/theme-builder.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Creating Themes using the Editor Tool",
+    "id": "theme-builder",
+    "sidebar_label": "Theme Editor"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Events",
+    "permalink": "/learn/docs/app-development/ui-design/page-concepts/page-events"
+  },
+  "next": {
+    "title": "Manual Theme",
+    "permalink": "/learn/docs/app-development/ui-design/creating-themes"
+  }
+}

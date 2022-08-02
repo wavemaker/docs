@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/07/19/aab-support",
+  "source": "@site/blog/2021-07-19-aab-support.md",
+  "title": "Generating .aab files using wm-cordova-cli or AppChef",
+  "description": "Android App Bundle (aab) is a new and an alternate to Android application package (apk).",
+  "date": "2021-07-19T00:00:00.000Z",
+  "formattedDate": "July 19, 2021",
+  "tags": [],
+  "readingTime": 1.84,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Srinivasa Rao Boyina"
+    }
+  ],
+  "frontMatter": {
+    "title": "Generating .aab files using wm-cordova-cli or AppChef",
+    "author": "Srinivasa Rao Boyina"
+  },
+  "prevItem": {
+    "title": "Accessibility Support in WaveMaker",
+    "permalink": "/learn/blog/2021/08/23/accessibility-feature"
+  },
+  "nextItem": {
+    "title": "WaveMaker Studio enables faster database imports",
+    "permalink": "/learn/blog/2021/06/24/faster-database-imports-in-studio"
+  }
+}

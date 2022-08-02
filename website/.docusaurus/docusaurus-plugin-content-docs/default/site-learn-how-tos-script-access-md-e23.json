@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/script-access",
+  "id": "how-tos/script-access",
+  "title": "Accessing Script",
+  "description": "Partial from Parent Page",
+  "source": "@site/../learn/how-tos/script-access.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/script-access",
+  "permalink": "/learn/docs/how-tos/script-access",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/script-access.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Accessing Script",
+    "id": "script-access"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Passing Parameters to Partial Page",
+    "permalink": "/learn/docs/how-tos/passing-parameters-partial-page"
+  },
+  "next": {
+    "title": "Use Static Variable to pass data between pages",
+    "permalink": "/learn/docs/how-tos/use-static-variable-pass-data-pages"
+  }
+}

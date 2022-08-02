@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/container/container",
+  "id": "app-development/widgets/container/container",
+  "title": "Container",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/container/container.md",
+  "sourceDirName": "app-development/widgets/container",
+  "slug": "/app-development/widgets/container/",
+  "permalink": "/learn/docs/app-development/widgets/container/",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/container/container.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Container",
+    "id": "container"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Accordion",
+    "permalink": "/learn/docs/app-development/widgets/container/accordion"
+  },
+  "next": {
+    "title": "Panel",
+    "permalink": "/learn/docs/app-development/widgets/container/panel"
+  }
+}

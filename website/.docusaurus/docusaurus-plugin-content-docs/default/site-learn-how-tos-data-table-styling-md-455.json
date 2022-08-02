@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/data-table-styling",
+  "id": "how-tos/data-table-styling",
+  "title": "Custom Styling Data Table Columns & Rows",
+  "description": "Scenario",
+  "source": "@site/../learn/how-tos/data-table-styling.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/data-table-styling",
+  "permalink": "/learn/docs/how-tos/data-table-styling",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/data-table-styling.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Custom Styling Data Table Columns & Rows",
+    "id": "data-table-styling"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Combining Columns in Data Table",
+    "permalink": "/learn/docs/how-tos/combining-columns-data-table"
+  },
+  "next": {
+    "title": "Formatting Data Table Columns",
+    "permalink": "/learn/docs/how-tos/data-table-format-options"
+  }
+}

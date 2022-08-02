@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/how-tos/mobile-notify-new-version-update",
+  "id": "learn/how-tos/mobile-notify-new-version-update",
+  "title": "How to notify users about the availability of a new update",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/mobile-notify-new-version-update.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/mobile-notify-new-version-update",
+  "permalink": "/learn/docs/learn/how-tos/mobile-notify-new-version-update",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/mobile-notify-new-version-update.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to notify users about the availability of a new update",
+    "id": "mobile-notify-new-version-update",
+    "sidebar_label": "Notify users about new update"
+  }
+}

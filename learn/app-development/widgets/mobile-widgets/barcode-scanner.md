@@ -1,6 +1,6 @@
 ---
 title: "Barcode Scanner"
-id: ""
+id: "barcode-scanner"
 ---
 ---
 
@@ -26,7 +26,7 @@ Barcode scanner has two main properties.
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
-| Bar Code Format | You can restrict the format of the barcode to scan based on your app requirement.<br><br> The format can be: <br><br> - CODABAR (not supported in iOS), <br> - CODE_39, <br> - CODE_93 (not supported in iOS), <br> - CODE_128, <br> - DATA_MATRIX, <br> - EAN_8, <br> - EAN_13, <br> - ITF <br> - PDF_417 (not supported in iOS), <br> - QR_CODE, <br> - RSS14 (not supported in iOS), <br> - RSS_EXPANDED (not supported in iOS), <br> - UPC_E, <br> - UPC_A, <br> - ALL is the default setting. This option can be used to scan any barcode format listed above except PDF_417 and RSS_EXPANDED.  |
+| Bar Code Format | You can restrict the format of the barcode to scan based on your app requirement.   The format can be:    - CODABAR (not supported in iOS),   - CODE_39,   - CODE_93 (not supported in iOS),   - CODE_128,   - DATA_MATRIX,   - EAN_8,   - EAN_13,   - ITF   - PDF_417 (not supported in iOS),   - QR_CODE,   - RSS14 (not supported in iOS),   - RSS_EXPANDED (not supported in iOS),   - UPC_E,   - UPC_A,   - ALL is the default setting. This option can be used to scan any barcode format listed above except PDF_417 and RSS_EXPANDED.  |
 | **Graphics** |
 | Icon Class | This bindable property defines the class of the icon that is applied to the button. |
 | Icon Size | This property defines the size of the icon. Value has to be specified along with the units (em or px). |

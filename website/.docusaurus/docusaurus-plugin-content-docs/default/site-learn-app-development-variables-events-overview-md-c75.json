@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/variables/events-overview",
+  "id": "app-development/variables/events-overview",
+  "title": "Events life cycle in WaveMaker",
+  "description": "---",
+  "source": "@site/../learn/app-development/variables/events-overview.md",
+  "sourceDirName": "app-development/variables",
+  "slug": "/app-development/variables/events-overview",
+  "permalink": "/learn/docs/app-development/variables/events-overview",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/variables/events-overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Events life cycle in WaveMaker",
+    "id": "events-overview"
+  },
+  "sidebar": "FAQs",
+  "previous": {
+    "title": "Backend Services Architecture",
+    "permalink": "/learn/docs/app-development/services/backend-architecture"
+  },
+  "next": {
+    "title": "Integration - Binding Overview",
+    "permalink": "/learn/docs/app-development/variables/integration-binding-layer"
+  }
+}

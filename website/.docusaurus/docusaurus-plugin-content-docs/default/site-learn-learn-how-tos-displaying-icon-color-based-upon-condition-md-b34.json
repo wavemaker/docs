@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/displaying-icon-color-based-upon-condition",
+  "id": "learn/how-tos/displaying-icon-color-based-upon-condition",
+  "title": "Change Icon Color on Condition",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/displaying-icon-color-based-upon-condition.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/displaying-icon-color-based-upon-condition",
+  "permalink": "/learn/docs/learn/how-tos/displaying-icon-color-based-upon-condition",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/displaying-icon-color-based-upon-condition.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Change Icon Color on Condition",
+    "id": "displaying-icon-color-based-upon-condition"
+  }
+}

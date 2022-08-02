@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/configure/config-users-auth-providers",
+  "id": "learn/on-premise/configure/config-users-auth-providers",
+  "title": "WME Add Users and Authentication Provider",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/configure/config-users-auth-providers.md",
+  "sourceDirName": "learn/on-premise/configure",
+  "slug": "/learn/on-premise/configure/config-users-auth-providers",
+  "permalink": "/learn/docs/learn/on-premise/configure/config-users-auth-providers",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/configure/config-users-auth-providers.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WME Add Users and Authentication Provider",
+    "id": "config-users-auth-providers",
+    "sidebar_label": "Users Onboarding"
+  }
+}

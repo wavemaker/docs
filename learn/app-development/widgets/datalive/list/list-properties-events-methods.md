@@ -1,6 +1,6 @@
 ---
 title: "List - Properties, Events & Methods"
-id: ""
+id: "list-properties-events-methods"
 sidebar_label: "Properties, Events & Methods"
 ---
 ---
@@ -12,7 +12,7 @@ sidebar_label: "Properties, Events & Methods"
 | Sub Heading | This bindable property defines the subheading or title for the list. |
 | Name | The name is a unique identifier for the list. |
 | **Accessibility** |
-| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br> <br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.     NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** |
 | Width | The width of list can be specified in em, pt, px or % (i.e 50px, 75%). |
 | Height | The height of list can be specified in em, pt, px or % (i.e 50px, 75%). |

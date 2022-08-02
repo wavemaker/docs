@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/how-tos-calendar",
+  "id": "how-tos/how-tos-calendar",
+  "title": "How Tos: Calendar",
+  "description": "---",
+  "source": "@site/../learn/how-tos/how-tos-calendar.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/how-tos-calendar",
+  "permalink": "/learn/docs/how-tos/how-tos-calendar",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/how-tos-calendar.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How Tos: Calendar",
+    "id": "how-tos-calendar"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Smart Forms: Conditional Flows for form Widget",
+    "permalink": "/learn/docs/how-tos/form-conditional-flows"
+  },
+  "next": {
+    "title": "Calendar Usage - Create an Event",
+    "permalink": "/learn/docs/how-tos/calendar-usage-create-event"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/widgets/basic/video",
+  "id": "learn/app-development/widgets/basic/video",
+  "title": "Video Widget",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/widgets/basic/video.md",
+  "sourceDirName": "learn/app-development/widgets/basic",
+  "slug": "/learn/app-development/widgets/basic/video",
+  "permalink": "/learn/docs/learn/app-development/widgets/basic/video",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/basic/video.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Video Widget",
+    "id": "video",
+    "sidebar_label": "Video"
+  }
+}

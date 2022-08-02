@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/queries-dynamic-clause",
+  "id": "learn/how-tos/queries-dynamic-clause",
+  "title": "Queries with Dynamic Where Clause",
+  "description": "Use Case",
+  "source": "@site/../learn/learn/how-tos/queries-dynamic-clause.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/queries-dynamic-clause",
+  "permalink": "/learn/docs/learn/how-tos/queries-dynamic-clause",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/queries-dynamic-clause.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Queries with Dynamic Where Clause",
+    "id": "queries-dynamic-clause"
+  }
+}

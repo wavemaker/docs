@@ -1,6 +1,6 @@
 ---
 title: "Jump Start – WaveMaker DB Essentials"
-id: ""
+id: "jump-start-db-essentials"
 sidebar_label: "Database Essentials"
 ---
 

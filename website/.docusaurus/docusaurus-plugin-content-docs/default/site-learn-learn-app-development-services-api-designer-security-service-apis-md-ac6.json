@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/services/api-designer/security-service-apis",
+  "id": "learn/app-development/services/api-designer/security-service-apis",
+  "title": "Security Service APIs",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/services/api-designer/security-service-apis.md",
+  "sourceDirName": "learn/app-development/services/api-designer",
+  "slug": "/learn/app-development/services/api-designer/security-service-apis",
+  "permalink": "/learn/docs/learn/app-development/services/api-designer/security-service-apis",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/api-designer/security-service-apis.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Security Service APIs",
+    "id": "security-service-apis"
+  }
+}

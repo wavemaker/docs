@@ -1,6 +1,6 @@
 ---
 title: "Working with Database Schema"
-id: ""
+id: "working-database-schema"
 sidebar_label: "Working with DB Schema"
 ---
 ---
@@ -219,7 +219,7 @@ There may be situations where you might want to set validations for user-defined
 
 | Validator | Column Data Type | Description | Values |
 | --- | --- | --- | --- |
-| Length | String | It defines the number (minimum and maximum) of input characters that are allowed for the column. | It expects two integer values: <br> - Min<br>- Max >br>  |
+| Length | String | It defines the number (minimum and maximum) of input characters that are allowed for the column. | It expects two integer values:   - Min - Max >br>  |
 | Email | String | If email validator is given, the value given to that column tested for default email pattern. You can enhance the validation by specifying a regular expression, for example, allow emails for a specific domain. | RegExp: optional |
 | Credit Cart Number | String | This column expects 16 digits numeric number. Basic mod 10 checksum validation is performed. |  |
 | Pattern | String | It checks for the particular pattern present in that column value else throws a validation error. | RegExp |
@@ -227,10 +227,10 @@ There may be situations where you might want to set validations for user-defined
 | AssertFalse | Boolean | The value of that column must be provided as false. |  |
 | Min | Byte, Integer, Long, Short, BigInteger | The minimum value allowed. |  |
 | Max | Byte, Integer, Long, Short, BigInteger | The maximum value allowed. |  |
-| Range | Byte, Integer, Long, Short, BigInteger | The value of the column should be between a minimum and maximum values. | It expects two integer values: <br> - Min<br> - Max <br>  |
+| Range | Byte, Integer, Long, Short, BigInteger | The value of the column should be between a minimum and maximum values. | It expects two integer values:   - Min  - Max    |
 | DecimalMin | Double, BigDecimal | The minimum value allowed. |  |
 | DecimalMax | Double, BigDecimal | The maximum value allowed. |  |
-| DecimalRange | Double, BigDecimal | The value of the column should be between a minimum and maximum values. | It expects two integer values: <br> - Min <br>- Max <br>  |
+| DecimalRange | Double, BigDecimal | The value of the column should be between a minimum and maximum values. | It expects two integer values:   - Min  - Max    |
 | Future |  Date, Time, Timestamp | The value in this column should be ahead of current (runtime) date/time/timestamp |  |
 | Past |  Date, Time, Timestamp | The value in this column should be behind current (runtime) date/time/timestamp |  |
 

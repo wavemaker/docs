@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/12/09/cordova-10-0-0-upgrade",
+  "source": "@site/blog/2020-12-09-cordova-10-0-0-upgrade.md",
+  "title": "Cordova 10.0.0 Upgrade ",
+  "description": "In 10.6.0 release, WaveMaker platform is upgraded to use cordova@10.0.0 and cordova-ios@6.1.0.",
+  "date": "2020-12-09T00:00:00.000Z",
+  "formattedDate": "December 9, 2020",
+  "tags": [],
+  "readingTime": 0.375,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Srinivasa Rao Boyina"
+    }
+  ],
+  "frontMatter": {
+    "title": "Cordova 10.0.0 Upgrade ",
+    "author": "Srinivasa Rao Boyina"
+  },
+  "prevItem": {
+    "title": "Certificate Pinning Case Study",
+    "permalink": "/learn/blog/2020/12/15/certificate-pinning"
+  },
+  "nextItem": {
+    "title": "WaveMaker Releases 10.6 Version",
+    "permalink": "/learn/blog/2020/12/08/wavemaker-release-10-6-version"
+  }
+}

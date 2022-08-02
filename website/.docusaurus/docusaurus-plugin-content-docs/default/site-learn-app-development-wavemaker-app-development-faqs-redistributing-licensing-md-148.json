@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/wavemaker-app-development-faqs/redistributing-licensing",
+  "id": "app-development/wavemaker-app-development-faqs/redistributing-licensing",
+  "title": "Are there any licensing restrictions in re-distributing WaveMaker apps?",
+  "description": "See the FAQs for WaveMaker app development.",
+  "source": "@site/../learn/app-development/wavemaker-app-development-faqs/redistributing-licensing.md",
+  "sourceDirName": "app-development/wavemaker-app-development-faqs",
+  "slug": "/app-development/wavemaker-app-development-faqs/redistributing-licensing",
+  "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/redistributing-licensing",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/wavemaker-app-development-faqs/redistributing-licensing.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Are there any licensing restrictions in re-distributing WaveMaker apps?",
+    "id": "redistributing-licensing",
+    "sidebar_label": "Licensing Restrictions for re-distributing"
+  },
+  "sidebar": "FAQs",
+  "previous": {
+    "title": "Maintaining Platform Generated Code",
+    "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/platform-generated-code"
+  },
+  "next": {
+    "title": "Application Stack Upgrades",
+    "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/application-stack-upgrades"
+  }
+}

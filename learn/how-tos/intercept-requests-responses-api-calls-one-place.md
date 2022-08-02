@@ -1,6 +1,6 @@
 ---
 title: "How to Intercept Request and Response of all API Calls in One Place"
-id: ""
+id: "intercept-requests-responses-api-calls-one-place"
 ---
 
 In this article, you will learn how to intercept request and responses of all the API calls of the app at one place. The following three functions explain the application service and usage examples.

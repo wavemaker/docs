@@ -1,6 +1,6 @@
 ---
 title: "Modal Windows/ Dialogs"
-id: ""
+id: "modal-windows-dialogs"
 ---
 
 WaveMaker provides the facility to add pop-up windows to your project through the **Dialog widgets**. Pop-up windows are a way to give additional information to users without cluttering your project space. This can be for alerts, getting additional information like user name, or for login purposes. There are six types of Dialog widgets provided by WaveMaker.
@@ -192,7 +192,7 @@ Check this if you want the provided URL to be encoded at the run time.
 | Name | The name is a unique identifier for iframe dialog. |
 | Ok Text | This widget gives a pop-up window. It can be used to provide contextual information from an HTML source to the user. For example, here is a sample from the source. |
 | **Accessibility** |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |

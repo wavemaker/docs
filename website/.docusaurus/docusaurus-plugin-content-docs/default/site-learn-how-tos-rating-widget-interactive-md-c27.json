@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/rating-widget-interactive",
+  "id": "how-tos/rating-widget-interactive",
+  "title": "Building an Interactive Rating Widget",
+  "description": "---",
+  "source": "@site/../learn/how-tos/rating-widget-interactive.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/rating-widget-interactive",
+  "permalink": "/learn/docs/how-tos/rating-widget-interactive",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/rating-widget-interactive.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Building an Interactive Rating Widget",
+    "id": "rating-widget-interactive"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Build Rating Widget using Model Variable",
+    "permalink": "/learn/docs/how-tos/building-rating-widget-using-variable"
+  },
+  "next": {
+    "title": "Configuring Select Widget from a Static List of Values",
+    "permalink": "/learn/docs/how-tos/configuring-select-widget-static-list-values"
+  }
+}

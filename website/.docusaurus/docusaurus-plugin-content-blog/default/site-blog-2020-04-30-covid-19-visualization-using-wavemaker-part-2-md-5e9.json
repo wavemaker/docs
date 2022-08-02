@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2",
+  "source": "@site/blog/2020-04-30-covid19-visualization-using-wavemaker-part-2.md",
+  "title": "COVID-19 Visualization using WaveMaker - Part 2",
+  "description": "In my last blog post, we saw how the Corona Tracker app works and we discussed how to build a dashboard using WaveMaker. I recommend you to read the part-1 of the blog first. In this post, we will see how to build visualization for charts and visualization for maps.",
+  "date": "2020-04-30T00:00:00.000Z",
+  "formattedDate": "April 30, 2020",
+  "tags": [],
+  "readingTime": 3.465,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Deepak Anupalli"
+    }
+  ],
+  "frontMatter": {
+    "title": "COVID-19 Visualization using WaveMaker - Part 2",
+    "author": "Deepak Anupalli"
+  },
+  "prevItem": {
+    "title": "Build Themes for WaveMaker Apps Without Any Coding",
+    "permalink": "/learn/blog/2020/06/01/build-themes-without-any-coding"
+  },
+  "nextItem": {
+    "title": "COVID-19 Visualization using WaveMaker - Part 1",
+    "permalink": "/learn/blog/2020/04/27/covid19-visualization-using-wavemaker"
+  }
+}

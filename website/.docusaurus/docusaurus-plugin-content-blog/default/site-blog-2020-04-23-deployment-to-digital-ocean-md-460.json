@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/04/23/deployment-to-digital-ocean",
+  "source": "@site/blog/2020-04-23-deployment-to-digital-ocean.md",
+  "title": "WaveMaker Integrates with DigitalOcean Kubernetes for App Deployments",
+  "description": "WaveMaker platform's one-click deploy feature now enables applications to be deployed to Kubernetes clusters on Digital Ocean cloud.",
+  "date": "2020-04-23T00:00:00.000Z",
+  "formattedDate": "April 23, 2020",
+  "tags": [],
+  "readingTime": 4.805,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Sanjana Raheja"
+    }
+  ],
+  "frontMatter": {
+    "title": "WaveMaker Integrates with DigitalOcean Kubernetes for App Deployments",
+    "author": "Sanjana Raheja"
+  },
+  "prevItem": {
+    "title": "COVID-19 Visualization using WaveMaker - Part 1",
+    "permalink": "/learn/blog/2020/04/27/covid19-visualization-using-wavemaker"
+  },
+  "nextItem": {
+    "title": "Deployment Experience made better!",
+    "permalink": "/learn/blog/2020/04/22/deployments-made-better"
+  }
+}

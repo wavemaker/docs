@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/integrating-sample-jasper-report-wavemaker-application",
+  "id": "how-tos/integrating-sample-jasper-report-wavemaker-application",
+  "title": "Integrating Sample Jasper Report in WaveMaker Application",
+  "description": "---",
+  "source": "@site/../learn/how-tos/integrating-sample-jasper-report-wavemaker-application.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/integrating-sample-jasper-report-wavemaker-application",
+  "permalink": "/learn/docs/how-tos/integrating-sample-jasper-report-wavemaker-application",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/integrating-sample-jasper-report-wavemaker-application.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Integrating Sample Jasper Report in WaveMaker Application",
+    "id": "integrating-sample-jasper-report-wavemaker-application"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Integrating Amazon Cognito for User Authentication",
+    "permalink": "/learn/docs/how-tos/integrating-amazon-cognito-user-authentication"
+  },
+  "next": {
+    "title": "How to generate PDF File using Jasper Reports",
+    "permalink": "/learn/docs/how-tos/generate-pdf-file-using-jasper-reports"
+  }
+}

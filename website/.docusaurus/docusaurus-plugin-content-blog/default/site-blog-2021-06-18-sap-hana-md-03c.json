@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/06/18/sap-hana",
+  "source": "@site/blog/2021-06-18-sap-hana.md",
+  "title": "Integrate SAP HANA Database with WaveMaker",
+  "description": "With constantly changing business needs, WaveMaker puts forward a seamless integration with the SAP HANA database. Develop personalized, intelligent solutions and customer experiences end to end by enabling CRUD (Create, Read, Update and Delete) operations across WaveMaker applications.",
+  "date": "2021-06-18T00:00:00.000Z",
+  "formattedDate": "June 18, 2021",
+  "tags": [],
+  "readingTime": 2.35,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Praveen Chandra"
+    }
+  ],
+  "frontMatter": {
+    "title": "Integrate SAP HANA Database with WaveMaker",
+    "author": "Praveen Chandra"
+  },
+  "prevItem": {
+    "title": "Redshift Database Integration",
+    "permalink": "/learn/blog/2021/06/18/redshift"
+  },
+  "nextItem": {
+    "title": "Important Announcement about Changes to Documentation Domain",
+    "permalink": "/learn/blog/2021/06/15/announcement-documentation-hostname-update"
+  }
+}

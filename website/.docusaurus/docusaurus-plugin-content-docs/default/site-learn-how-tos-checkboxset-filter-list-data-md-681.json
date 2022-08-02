@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/checkboxset-filter-list-data",
+  "id": "how-tos/checkboxset-filter-list-data",
+  "title": "CheckboxSet to Filter List data",
+  "description": "WaveMaker offers three ways of allowing user to choose from given options:",
+  "source": "@site/../learn/how-tos/checkboxset-filter-list-data.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/checkboxset-filter-list-data",
+  "permalink": "/learn/docs/how-tos/checkboxset-filter-list-data",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/checkboxset-filter-list-data.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "CheckboxSet to Filter List data",
+    "id": "checkboxset-filter-list-data"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Calender Usage - Google Calendar Integration",
+    "permalink": "/learn/docs/how-tos/calender-usage-google-calendar-integration"
+  },
+  "next": {
+    "title": "FileUpload - Basic Usage",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/file-upload-basic-usage"
+  }
+}

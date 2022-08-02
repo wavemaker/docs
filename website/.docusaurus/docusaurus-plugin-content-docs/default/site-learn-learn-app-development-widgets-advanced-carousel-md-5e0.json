@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/advanced/carousel",
+  "id": "learn/app-development/widgets/advanced/carousel",
+  "title": "Carousel",
+  "description": "Carousel widget is a flexible, responsive way to add a slider to your site. In addition to being responsive, the content is flexible enough to allow images, iframes, videos, or just about any type of content that you might want.",
+  "source": "@site/../learn/learn/app-development/widgets/advanced/carousel.md",
+  "sourceDirName": "learn/app-development/widgets/advanced",
+  "slug": "/learn/app-development/widgets/advanced/carousel",
+  "permalink": "/learn/docs/learn/app-development/widgets/advanced/carousel",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/advanced/carousel.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Carousel",
+    "id": "carousel"
+  }
+}

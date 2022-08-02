@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/synchronizing-wavemaker-apps-ides-beta",
+  "id": "learn/how-tos/synchronizing-wavemaker-apps-ides-beta",
+  "title": "Synchronizing WaveMaker Apps with IDEs",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/synchronizing-wavemaker-apps-ides-beta.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/synchronizing-wavemaker-apps-ides-beta",
+  "permalink": "/learn/docs/learn/how-tos/synchronizing-wavemaker-apps-ides-beta",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/synchronizing-wavemaker-apps-ides-beta.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Synchronizing WaveMaker Apps with IDEs",
+    "id": "synchronizing-wavemaker-apps-ides-beta"
+  }
+}

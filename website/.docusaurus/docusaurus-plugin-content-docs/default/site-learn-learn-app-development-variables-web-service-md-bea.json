@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/variables/web-service",
+  "id": "learn/app-development/variables/web-service",
+  "title": "Service Variable",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/variables/web-service.md",
+  "sourceDirName": "learn/app-development/variables",
+  "slug": "/learn/app-development/variables/web-service",
+  "permalink": "/learn/docs/learn/app-development/variables/web-service",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/variables/web-service.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Service Variable",
+    "id": "web-service",
+    "sidebar_label": "Service Variable"
+  }
+}

@@ -83,16 +83,16 @@ mvn archetype:generate –DgroupId=com.wavemaker.connector -DartifactId=mongodb 
 
 Above archetype will execute interactively. As a result it will ask the end-user to provide values for few properties and note these properties have default values if the user does not provide any value then default value will be considered.
 
-- Define value for property 'package' <<groupId>>: :
-- Define value for property 'connector-name' <<artifactId>>: :
-- Define value for property 'connector-description': A simple Connector <<connector-name>> that can be used in WaveMaker application: :
-- Define value for property 'connector-java-class-name' WaveMaker<<connector-name>>Connector: : 
+- Define value for property 'package' &lt;&lt;groupId&gt;&gt;: :
+- Define value for property 'connector-name' &lt;&lt;artifactId&gt;&gt;: :
+- Define value for property 'connector-description': A simple Connector &lt;&lt;connector-name&gt;&gt; that can be used in WaveMaker application: :
+- Define value for property 'connector-java-class-name' WaveMaker&lt;&lt;connector-name&gt;&gt;Connector: : 
 
 For the above properties will have default values such as 
 
 **package:** default value is groupId given in mvn command
 **connector-name:** default value is artifactId given in the mvn command
-**connector-java-class-name:** default value is Wavemaker<<connectorName>>Connector
+**connector-java-class-name:** default value is Wavemaker &lt;&lt;connectorName&gt;&gt;Connector
 
 #### Example-1
 

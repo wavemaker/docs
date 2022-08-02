@@ -1,6 +1,6 @@
 ---
 title: "Working with Pull to Refresh"
-id: ""
+id: "working-pull-refresh"
 ---
 ---
 A gesture of swiping the screen down the page content refreshes the list. WaveMaker uses the PullToRefresh event to achieve this functionality.

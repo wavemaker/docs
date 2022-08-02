@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/hybrid-mobile/export-cordova-zip",
+  "id": "learn/hybrid-mobile/export-cordova-zip",
+  "title": "Export Cordova zip",
+  "description": "---",
+  "source": "@site/../learn/learn/hybrid-mobile/export-cordova-zip.md",
+  "sourceDirName": "learn/hybrid-mobile",
+  "slug": "/learn/hybrid-mobile/export-cordova-zip",
+  "permalink": "/learn/docs/learn/hybrid-mobile/export-cordova-zip",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/hybrid-mobile/export-cordova-zip.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Export Cordova zip",
+    "id": "export-cordova-zip"
+  }
+}

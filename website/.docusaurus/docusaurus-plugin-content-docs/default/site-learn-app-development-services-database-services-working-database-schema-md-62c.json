@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/services/database-services/working-database-schema",
+  "id": "app-development/services/database-services/working-database-schema",
+  "title": "Working with Database Schema",
+  "description": "---",
+  "source": "@site/../learn/app-development/services/database-services/working-database-schema.md",
+  "sourceDirName": "app-development/services/database-services",
+  "slug": "/app-development/services/database-services/working-database-schema",
+  "permalink": "/learn/docs/app-development/services/database-services/working-database-schema",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/database-services/working-database-schema.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Working with Database Schema",
+    "id": "working-database-schema",
+    "sidebar_label": "Working with DB Schema"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "DataBase Schema Modes",
+    "permalink": "/learn/docs/app-development/services/database-services/database-schema-import-modes"
+  },
+  "next": {
+    "title": "Database Views",
+    "permalink": "/learn/docs/app-development/services/database-services/database-views"
+  }
+}

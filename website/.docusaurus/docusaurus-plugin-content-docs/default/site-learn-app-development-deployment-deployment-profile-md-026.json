@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/deployment/deployment-profile",
+  "id": "app-development/deployment/deployment-profile",
+  "title": "Configure Deployment Profile",
+  "description": "---",
+  "source": "@site/../learn/app-development/deployment/deployment-profile.md",
+  "sourceDirName": "app-development/deployment",
+  "slug": "/app-development/deployment/deployment-profile",
+  "permalink": "/learn/docs/app-development/deployment/deployment-profile",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/deployment/deployment-profile.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Configure Deployment Profile",
+    "id": "deployment-profile",
+    "sidebar_label": "Deployment Profile"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/learn/docs/app-development/deployment/deployment-overview"
+  },
+  "next": {
+    "title": "One-click Deployment",
+    "permalink": "/learn/docs/app-development/deployment/one-click-deployment"
+  }
+}

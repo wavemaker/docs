@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/form/file-upload",
+  "id": "learn/app-development/widgets/form/file-upload",
+  "title": "FileUpload",
+  "description": "The FileUpload widget can be used to let users upload files to your apps. WaveMaker FileUpload widget generates a Java Service to enable additional file processing functionality.",
+  "source": "@site/../learn/learn/app-development/widgets/form/file-upload.md",
+  "sourceDirName": "learn/app-development/widgets/form",
+  "slug": "/learn/app-development/widgets/form/file-upload",
+  "permalink": "/learn/docs/learn/app-development/widgets/form/file-upload",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/form/file-upload.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "FileUpload",
+    "id": "file-upload"
+  }
+}

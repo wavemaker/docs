@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Upgrade"
-id: ""
+id: "upgrade-setup"
 sidebar_label: "Upgrade Overview"
 ---
 ---

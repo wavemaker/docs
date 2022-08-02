@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/configuring-select-widget-display-data-fields",
+  "id": "learn/how-tos/configuring-select-widget-display-data-fields",
+  "title": "Configuring Select Widget using Display and Data Fields",
+  "description": "A Select widget can be used in various ways based on the source of data. Each type of data source needs a different approach. WaveMaker Select widget works in any one of the following ways:",
+  "source": "@site/../learn/learn/how-tos/configuring-select-widget-display-data-fields.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/configuring-select-widget-display-data-fields",
+  "permalink": "/learn/docs/learn/how-tos/configuring-select-widget-display-data-fields",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/configuring-select-widget-display-data-fields.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Configuring Select Widget using Display and Data Fields",
+    "id": "configuring-select-widget-display-data-fields"
+  }
+}

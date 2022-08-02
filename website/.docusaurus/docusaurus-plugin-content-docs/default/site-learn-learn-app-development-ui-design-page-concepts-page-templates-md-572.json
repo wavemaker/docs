@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/ui-design/page-concepts/page-templates",
+  "id": "learn/app-development/ui-design/page-concepts/page-templates",
+  "title": "Templates",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/ui-design/page-concepts/page-templates.md",
+  "sourceDirName": "learn/app-development/ui-design/page-concepts",
+  "slug": "/learn/app-development/ui-design/page-concepts/page-templates",
+  "permalink": "/learn/docs/learn/app-development/ui-design/page-concepts/page-templates",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/ui-design/page-concepts/page-templates.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Templates",
+    "id": "page-templates",
+    "sidebar_label": "Templates"
+  }
+}

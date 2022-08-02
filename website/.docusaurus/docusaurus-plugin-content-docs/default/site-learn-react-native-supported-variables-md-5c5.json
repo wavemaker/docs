@@ -1,0 +1,32 @@
+{
+  "unversionedId": "react-native/supported-variables",
+  "id": "react-native/supported-variables",
+  "title": "Variables",
+  "description": "Currently, the following Variables are supported for developing a React Native app.",
+  "source": "@site/../learn/react-native/supported-variables.md",
+  "sourceDirName": "react-native",
+  "slug": "/react-native/supported-variables",
+  "permalink": "/learn/docs/react-native/supported-variables",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/react-native/supported-variables.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Variables",
+    "layout": "default",
+    "parent": "Docs",
+    "nav_order": 4
+  },
+  "sidebar": "Mobile",
+  "previous": {
+    "title": "Supported Widgets",
+    "permalink": "/learn/docs/react-native/supported-widgets"
+  },
+  "next": {
+    "title": "Build Installers",
+    "permalink": "/learn/docs/react-native/build-installers"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: "Database Tools"
-id: ""
+id: "database-tools"
 ---
 Learn what database tools you can use to work with database services in WaveMaker. 
 

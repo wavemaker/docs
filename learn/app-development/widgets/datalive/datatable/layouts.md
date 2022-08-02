@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Layouts"
-id: ""
+id: "layouts"
 sidebar_label: "Layouts"
 ---
 ---

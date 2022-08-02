@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/dev-integration/developer-collaboration",
+  "id": "app-development/dev-integration/developer-collaboration",
+  "title": "Developer Collaboration",
+  "description": "---",
+  "source": "@site/../learn/app-development/dev-integration/developer-collaboration.md",
+  "sourceDirName": "app-development/dev-integration",
+  "slug": "/app-development/dev-integration/developer-collaboration",
+  "permalink": "/learn/docs/app-development/dev-integration/developer-collaboration",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/dev-integration/developer-collaboration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Developer Collaboration",
+    "id": "developer-collaboration"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Project User Management",
+    "permalink": "/learn/docs/app-development/wavemaker-overview/project-user-management"
+  },
+  "next": {
+    "title": "Extending the Application using IDEs",
+    "permalink": "/learn/docs/app-development/dev-integration/extending-application-using-ides"
+  }
+}

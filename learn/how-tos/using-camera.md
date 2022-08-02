@@ -1,6 +1,6 @@
 ---
 title: "Using Camera"
-id: ""
+id: "using-camera"
 ---
 
 ### Overview

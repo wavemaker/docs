@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/deployment/push-code-to-external-repo",
+  "id": "app-development/deployment/push-code-to-external-repo",
+  "title": "Push Code to External repo",
+  "description": "---",
+  "source": "@site/../learn/app-development/deployment/push-code-to-external-repo.md",
+  "sourceDirName": "app-development/deployment",
+  "slug": "/app-development/deployment/push-code-to-external-repo",
+  "permalink": "/learn/docs/app-development/deployment/push-code-to-external-repo",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/deployment/push-code-to-external-repo.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Push Code to External repo",
+    "id": "push-code-to-external-repo"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Manage Deployed Apps",
+    "permalink": "/learn/docs/app-development/deployment/manage-deployed-apps"
+  },
+  "next": {
+    "title": "Custom VCS Integration",
+    "permalink": "/learn/docs/app-development/deployment/integration-with-custom-vcs-provider"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/iframe-dialog",
+  "id": "app-development/widgets/iframe-dialog",
+  "title": "IFrame Dialog",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/iframe-dialog.md",
+  "sourceDirName": "app-development/widgets",
+  "slug": "/app-development/widgets/iframe-dialog",
+  "permalink": "/learn/docs/app-development/widgets/iframe-dialog",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/iframe-dialog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "IFrame Dialog",
+    "id": "iframe-dialog"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Confirm Dialog",
+    "permalink": "/learn/docs/app-development/widgets/confirm-dialog"
+  },
+  "next": {
+    "title": "Page Dialog",
+    "permalink": "/learn/docs/app-development/widgets/page-dialog"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/widgets/datalive/cards/cards-data-source",
+  "id": "learn/app-development/widgets/datalive/cards/cards-data-source",
+  "title": "Cards Data Source",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/widgets/datalive/cards/cards-data-source.md",
+  "sourceDirName": "learn/app-development/widgets/datalive/cards",
+  "slug": "/learn/app-development/widgets/datalive/cards/cards-data-source",
+  "permalink": "/learn/docs/learn/app-development/widgets/datalive/cards/cards-data-source",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/datalive/cards/cards-data-source.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Cards Data Source",
+    "id": "cards-data-source",
+    "sidebar_label": "Data Source"
+  }
+}

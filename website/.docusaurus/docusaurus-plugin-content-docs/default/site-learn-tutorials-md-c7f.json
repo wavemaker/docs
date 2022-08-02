@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tutorials",
+  "id": "tutorials",
+  "title": "Welcome to WaveMaker Tutorials",
+  "description": "Learn the essentials of WaveMaker app development.",
+  "source": "@site/../learn/tutorials.md",
+  "sourceDirName": ".",
+  "slug": "/tutorials",
+  "permalink": "/learn/docs/tutorials",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/tutorials.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "id": "tutorials",
+    "title": "Welcome to WaveMaker Tutorials",
+    "sidebar_label": "Video Tutorials"
+  },
+  "sidebar": "Tutorials",
+  "next": {
+    "title": "App Demo",
+    "permalink": "/learn/docs/tutorials/build-app-in-5-minutes/app-demo"
+  }
+}

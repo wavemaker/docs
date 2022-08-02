@@ -1,6 +1,6 @@
 ---
 title: "WME Add Apps Capacity"
-id: ""
+id: "add-apps-capacity"
 sidebar_label: "Add Apps Capacity"
 ---
 ---

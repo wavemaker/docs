@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/app-security/hostheader-injection",
+  "id": "app-development/app-security/hostheader-injection",
+  "title": "Prevent HostHeader Injection",
+  "description": "---",
+  "source": "@site/../learn/app-development/app-security/hostheader-injection.md",
+  "sourceDirName": "app-development/app-security",
+  "slug": "/app-development/app-security/hostheader-injection",
+  "permalink": "/learn/docs/app-development/app-security/hostheader-injection",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/app-security/hostheader-injection.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Prevent HostHeader Injection",
+    "id": "hostheader-injection",
+    "sidebar_label": "HostHeader Injection"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Concurrent Sessions",
+    "permalink": "/learn/docs/app-development/app-security/concurrent-sessions"
+  },
+  "next": {
+    "title": "Security Variables",
+    "permalink": "/learn/docs/app-development/app-security/security-variables"
+  }
+}

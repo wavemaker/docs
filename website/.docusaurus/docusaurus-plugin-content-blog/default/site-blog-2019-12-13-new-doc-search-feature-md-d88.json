@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2019/12/13/new-doc-search-feature",
+  "source": "@site/blog/2019-12-13-new-doc-search-feature.md",
+  "title": "All-new WaveMaker docs with a powerful Search",
+  "description": "We released the new WaveMaker Docs site on the 14 November 2019. We migrated from WordPress to Docusaurus with easy-to-edit markdown files. This change has also increased the contributions from our team members.",
+  "date": "2019-12-13T00:00:00.000Z",
+  "formattedDate": "December 13, 2019",
+  "tags": [],
+  "readingTime": 3.145,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Swetha Kundaram"
+    }
+  ],
+  "frontMatter": {
+    "title": "All-new WaveMaker docs with a powerful Search",
+    "author": "Swetha Kundaram"
+  },
+  "prevItem": {
+    "title": "Deliver WaveMaker Apps as Micro Frontend Modules",
+    "permalink": "/learn/blog/2020/02/25/wavemaker-micro-front-end-support"
+  },
+  "nextItem": {
+    "title": "Welcome to the WaveMaker Developers Blog",
+    "permalink": "/learn/blog/2019/11/01/developers-team-blog"
+  }
+}

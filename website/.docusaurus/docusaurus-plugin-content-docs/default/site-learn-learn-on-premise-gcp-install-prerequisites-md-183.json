@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/gcp/install-prerequisites",
+  "id": "learn/on-premise/gcp/install-prerequisites",
+  "title": "Install Prerequisites Softwares",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/gcp/install-prerequisites.md",
+  "sourceDirName": "learn/on-premise/gcp",
+  "slug": "/learn/on-premise/gcp/install-prerequisites",
+  "permalink": "/learn/docs/learn/on-premise/gcp/install-prerequisites",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/gcp/install-prerequisites.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Install Prerequisites Softwares",
+    "id": "install-prerequisites",
+    "sidebar_label": "Install Prerequisites Softwares"
+  }
+}

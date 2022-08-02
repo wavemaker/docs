@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/live-filter-multiple-values",
+  "id": "how-tos/live-filter-multiple-values",
+  "title": "Building a Multiple Selection Live Filter",
+  "description": "---",
+  "source": "@site/../learn/how-tos/live-filter-multiple-values.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/live-filter-multiple-values",
+  "permalink": "/learn/docs/how-tos/live-filter-multiple-values",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/live-filter-multiple-values.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Building a Multiple Selection Live Filter",
+    "id": "live-filter-multiple-values"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Applying Live Filter to a Data Table or a Chart",
+    "permalink": "/learn/docs/how-tos/live-filter-applying"
+  },
+  "next": {
+    "title": "Building a Range Live Filter",
+    "permalink": "/learn/docs/how-tos/live-filter-range-filter"
+  }
+}

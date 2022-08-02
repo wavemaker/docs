@@ -1,6 +1,6 @@
 ---
 title: "Setting Swipe Gestures on a List Widget"
-id: ""
+id: "setting-swipe-gestures-list-widget"
 ---
 ---
 

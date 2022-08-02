@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/integrating-junit-tests-for-wavemaker-application",
+  "id": "learn/how-tos/integrating-junit-tests-for-wavemaker-application",
+  "title": "Integrating JUnit Tests for WaveMaker Application",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/integrating-junit-tests-for-wavemaker-application.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/integrating-junit-tests-for-wavemaker-application",
+  "permalink": "/learn/docs/learn/how-tos/integrating-junit-tests-for-wavemaker-application",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/integrating-junit-tests-for-wavemaker-application.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Integrating JUnit Tests for WaveMaker Application",
+    "id": "integrating-junit-tests-for-wavemaker-application"
+  }
+}

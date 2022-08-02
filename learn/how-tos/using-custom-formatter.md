@@ -1,6 +1,6 @@
 ---
 title: "How to apply Custom Formatter for widgets"
-id: ""
+id: "using-custom-formatter"
 sidebar_label: "Apply Custom Data Formatter"
 ---
 ---

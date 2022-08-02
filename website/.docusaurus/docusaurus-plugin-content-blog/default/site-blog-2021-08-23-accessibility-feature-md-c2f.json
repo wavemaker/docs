@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/08/23/accessibility-feature",
+  "source": "@site/blog/2021-08-23-accessibility-feature.md",
+  "title": "Accessibility Support in WaveMaker",
+  "description": "Accessibility is essential for individuals and organizations that want to create high-quality websites and applications. It enables people with disabilities to use different Assistive Technologies (AT) and Adaptive Strategies for the business benefits of Web Accessibility. WaveMaker also focuses on enabling their product with international standards for Web Accessibility from World Wide Web Consortium (W3C), including Web Content Accessibility Guidelines (WCAG) and Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) as the first step in applying them.",
+  "date": "2021-08-23T00:00:00.000Z",
+  "formattedDate": "August 23, 2021",
+  "tags": [],
+  "readingTime": 2.04,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Lovin Ahmed"
+    }
+  ],
+  "frontMatter": {
+    "title": "Accessibility Support in WaveMaker",
+    "author": "Lovin Ahmed"
+  },
+  "prevItem": {
+    "title": "Important Announcement about Angular 10 Update",
+    "permalink": "/learn/blog/2021/09/01/angular-10-update"
+  },
+  "nextItem": {
+    "title": "Generating .aab files using wm-cordova-cli or AppChef",
+    "permalink": "/learn/blog/2021/07/19/aab-support"
+  }
+}

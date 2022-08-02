@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/advanced/marquee",
+  "id": "learn/app-development/widgets/advanced/marquee",
+  "title": "Marquee",
+  "description": "Marquee widget is used to display the content in marquee styles, any widget can be dropped into it.",
+  "source": "@site/../learn/learn/app-development/widgets/advanced/marquee.md",
+  "sourceDirName": "learn/app-development/widgets/advanced",
+  "slug": "/learn/app-development/widgets/advanced/marquee",
+  "permalink": "/learn/docs/learn/app-development/widgets/advanced/marquee",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/advanced/marquee.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Marquee",
+    "id": "marquee"
+  }
+}

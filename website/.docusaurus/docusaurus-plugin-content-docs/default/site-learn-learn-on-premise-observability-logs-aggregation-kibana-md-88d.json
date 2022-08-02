@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/observability/logs-aggregation/kibana",
+  "id": "learn/on-premise/observability/logs-aggregation/kibana",
+  "title": "Kibana",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/observability/logs-aggregation/kibana.md",
+  "sourceDirName": "learn/on-premise/observability/logs-aggregation",
+  "slug": "/learn/on-premise/observability/logs-aggregation/kibana",
+  "permalink": "/learn/docs/learn/on-premise/observability/logs-aggregation/kibana",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/observability/logs-aggregation/kibana.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Kibana",
+    "id": "kibana",
+    "sidebar_label": "Kibana"
+  }
+}

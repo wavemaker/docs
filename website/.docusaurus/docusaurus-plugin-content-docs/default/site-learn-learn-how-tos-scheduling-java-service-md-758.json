@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/scheduling-java-service",
+  "id": "learn/how-tos/scheduling-java-service",
+  "title": "Scheduling a Java Service",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/scheduling-java-service.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/scheduling-java-service",
+  "permalink": "/learn/docs/learn/how-tos/scheduling-java-service",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/scheduling-java-service.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Scheduling a Java Service",
+    "id": "scheduling-java-service"
+  }
+}

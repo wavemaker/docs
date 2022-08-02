@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/form/form-data-source",
+  "id": "app-development/widgets/datalive/form/form-data-source",
+  "title": "Form - Data Source",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/form/form-data-source.md",
+  "sourceDirName": "app-development/widgets/datalive/form",
+  "slug": "/app-development/widgets/datalive/form/form-data-source",
+  "permalink": "/learn/docs/app-development/widgets/datalive/form/form-data-source",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/form/form-data-source.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Form - Data Source",
+    "id": "form-data-source",
+    "sidebar_label": "Data Source"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Creating a Form",
+    "permalink": "/learn/docs/app-development/widgets/datalive/form/form-usage-scenarios"
+  },
+  "next": {
+    "title": "Layouts",
+    "permalink": "/learn/docs/app-development/widgets/datalive/form/form-layouts"
+  }
+}

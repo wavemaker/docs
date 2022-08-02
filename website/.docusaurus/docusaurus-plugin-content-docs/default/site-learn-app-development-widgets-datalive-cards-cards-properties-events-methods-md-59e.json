@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/cards/cards-properties-events-methods",
+  "id": "app-development/widgets/datalive/cards/cards-properties-events-methods",
+  "title": "Cards - Properties, Events & Methods",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/cards/cards-properties-events-methods.md",
+  "sourceDirName": "app-development/widgets/datalive/cards",
+  "slug": "/app-development/widgets/datalive/cards/cards-properties-events-methods",
+  "permalink": "/learn/docs/app-development/widgets/datalive/cards/cards-properties-events-methods",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/cards/cards-properties-events-methods.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Cards - Properties, Events & Methods",
+    "id": "cards-properties-events-methods",
+    "sidebar_label": "Properties, Events & Methods"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Behavior Settings",
+    "permalink": "/learn/docs/app-development/widgets/datalive/cards/card-behavior-settings"
+  },
+  "next": {
+    "title": "Use Cases",
+    "permalink": "/learn/docs/app-development/widgets/datalive/cards/card-use-cases"
+  }
+}

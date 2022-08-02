@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/app-migration-wavemaker-9x-10x",
+  "id": "learn/how-tos/app-migration-wavemaker-9x-10x",
+  "title": "App Migration from WaveMaker 9x to 10x",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/app-migration-wavemaker-9x-10x.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/app-migration-wavemaker-9x-10x",
+  "permalink": "/learn/docs/learn/how-tos/app-migration-wavemaker-9x-10x",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/app-migration-wavemaker-9x-10x.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "App Migration from WaveMaker 9x to 10x",
+    "id": "app-migration-wavemaker-9x-10x"
+  }
+}

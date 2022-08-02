@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/wavemaker-app-development-faqs/platform-generated-code",
+  "id": "learn/app-development/wavemaker-app-development-faqs/platform-generated-code",
+  "title": "Is the platform generated code readable and maintainable?",
+  "description": "See the FAQs for WaveMaker app development.",
+  "source": "@site/../learn/learn/app-development/wavemaker-app-development-faqs/platform-generated-code.md",
+  "sourceDirName": "learn/app-development/wavemaker-app-development-faqs",
+  "slug": "/learn/app-development/wavemaker-app-development-faqs/platform-generated-code",
+  "permalink": "/learn/docs/learn/app-development/wavemaker-app-development-faqs/platform-generated-code",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/wavemaker-app-development-faqs/platform-generated-code.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Is the platform generated code readable and maintainable?",
+    "id": "platform-generated-code",
+    "sidebar_label": "Maintaining Platform Generated Code"
+  }
+}

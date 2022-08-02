@@ -1,0 +1,24 @@
+{
+  "permalink": "/learn/blog/2019/11/01/developers-team-blog",
+  "source": "@site/blog/2019-11-01-developers-team-blog.md",
+  "title": "Welcome to the WaveMaker Developers Blog",
+  "description": "WaveMaker is evolving with new changes and updates to the product frequently. We are trilled to introduce the team blog feed for more specific and detailed technical stuff directly from the developers.",
+  "date": "2019-11-01T00:00:00.000Z",
+  "formattedDate": "November 1, 2019",
+  "tags": [],
+  "readingTime": 0.265,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Swetha Kundaram"
+    }
+  ],
+  "frontMatter": {
+    "title": "Welcome to the WaveMaker Developers Blog",
+    "author": "Swetha Kundaram"
+  },
+  "prevItem": {
+    "title": "All-new WaveMaker docs with a powerful Search",
+    "permalink": "/learn/blog/2019/12/13/new-doc-search-feature"
+  }
+}

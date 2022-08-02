@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/using-javascript-external-url",
+  "id": "how-tos/using-javascript-external-url",
+  "title": "Using JavaScript from External URL",
+  "description": "---",
+  "source": "@site/../learn/how-tos/using-javascript-external-url.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/using-javascript-external-url",
+  "permalink": "/learn/docs/how-tos/using-javascript-external-url",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/using-javascript-external-url.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using JavaScript from External URL",
+    "id": "using-javascript-external-url"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Using JavaScript in Binding",
+    "permalink": "/learn/docs/how-tos/using-javascript-binding"
+  },
+  "next": {
+    "title": "Using JavaScript to loop a command",
+    "permalink": "/learn/docs/how-tos/using-javascript-loop-command"
+  }
+}

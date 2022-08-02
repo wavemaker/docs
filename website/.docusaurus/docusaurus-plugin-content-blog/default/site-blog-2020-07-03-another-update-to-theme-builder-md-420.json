@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/07/03/Another-update-to-theme-builder",
+  "source": "@site/blog/2020-07-03-Another-update-to-theme-builder.md",
+  "title": "Theme builder is ready with a new update",
+  "description": "Here is another update on the Theme builder app. After the first release of theme builder, we thought of adding few more features and enhancements to enable our users to create great themes to get their web, mobile applications looking well finished.",
+  "date": "2020-07-03T00:00:00.000Z",
+  "formattedDate": "July 3, 2020",
+  "tags": [],
+  "readingTime": 2.08,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Lovin Ahmed"
+    }
+  ],
+  "frontMatter": {
+    "title": "Theme builder is ready with a new update",
+    "author": "Lovin Ahmed"
+  },
+  "prevItem": {
+    "title": "Retain UI State in WaveMaker Apps",
+    "permalink": "/learn/blog/2020/11/09/Retain-UI-State-on-Wavemaker-Apps"
+  },
+  "nextItem": {
+    "title": "PostgREST OpenAPI support in WaveMaker",
+    "permalink": "/learn/blog/2020/07/01/wavemaker-openapi-postgrest-support"
+  }
+}

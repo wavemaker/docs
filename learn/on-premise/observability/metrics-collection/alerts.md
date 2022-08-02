@@ -1,6 +1,6 @@
 ---
 title: "Alerts"
-id: ""
+id: "alerts"
 sidebar_label: "Alerts"
 ---
 ---

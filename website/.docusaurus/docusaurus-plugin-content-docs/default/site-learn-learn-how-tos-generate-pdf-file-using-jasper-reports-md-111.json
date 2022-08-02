@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/generate-pdf-file-using-jasper-reports",
+  "id": "learn/how-tos/generate-pdf-file-using-jasper-reports",
+  "title": "How to generate PDF File using Jasper Reports",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/generate-pdf-file-using-jasper-reports.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/generate-pdf-file-using-jasper-reports",
+  "permalink": "/learn/docs/learn/how-tos/generate-pdf-file-using-jasper-reports",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/generate-pdf-file-using-jasper-reports.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to generate PDF File using Jasper Reports",
+    "id": "generate-pdf-file-using-jasper-reports"
+  }
+}

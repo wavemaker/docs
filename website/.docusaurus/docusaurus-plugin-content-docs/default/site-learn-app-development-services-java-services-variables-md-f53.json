@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/services/java-services/variables",
+  "id": "app-development/services/java-services/variables",
+  "title": "Variables for Invocation",
+  "description": "---",
+  "source": "@site/../learn/app-development/services/java-services/variables.md",
+  "sourceDirName": "app-development/services/java-services",
+  "slug": "/app-development/services/java-services/variables",
+  "permalink": "/learn/docs/app-development/services/java-services/variables",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/java-services/variables.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Variables for Invocation",
+    "id": "variables"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "DB Service Integration",
+    "permalink": "/learn/docs/app-development/services/java-services/java-integration-database-service"
+  },
+  "next": {
+    "title": "Generated REST APIs (API Designer)",
+    "permalink": "/learn/docs/app-development/services/java-services/generated-rest-apis-api-designer"
+  }
+}

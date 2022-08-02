@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/modal-windows-dialogs",
+  "id": "app-development/widgets/modal-windows-dialogs",
+  "title": "Modal Windows/ Dialogs",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/modal-windows-dialogs.md",
+  "sourceDirName": "app-development/widgets",
+  "slug": "/app-development/widgets/modal-windows-dialogs",
+  "permalink": "/learn/docs/app-development/widgets/modal-windows-dialogs",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/modal-windows-dialogs.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Modal Windows/ Dialogs",
+    "id": "modal-windows-dialogs"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Carousel",
+    "permalink": "/learn/docs/app-development/widgets/advanced/carousel"
+  },
+  "next": {
+    "title": "Design Dialog",
+    "permalink": "/learn/docs/app-development/widgets/design-dialog"
+  }
+}

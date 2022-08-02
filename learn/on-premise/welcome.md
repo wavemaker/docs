@@ -1,6 +1,6 @@
 ---
 title: "Welcome to WaveMaker Enterprise Guide"
-id: ""
+id: "welcome"
 sidebar_label: "Welcome"
 ---
 ---

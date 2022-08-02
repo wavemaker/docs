@@ -1,6 +1,6 @@
 ---
 title: "LinkedIn"
-id: ""
+id: "linkedin"
 ---
 
 ## Introduction

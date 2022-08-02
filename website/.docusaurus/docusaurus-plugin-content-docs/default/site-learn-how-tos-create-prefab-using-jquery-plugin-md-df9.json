@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/create-prefab-using-jquery-plugin",
+  "id": "how-tos/create-prefab-using-jquery-plugin",
+  "title": "Create Prefab using JQuery Plugin",
+  "description": "---",
+  "source": "@site/../learn/how-tos/create-prefab-using-jquery-plugin.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/create-prefab-using-jquery-plugin",
+  "permalink": "/learn/docs/how-tos/create-prefab-using-jquery-plugin",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/create-prefab-using-jquery-plugin.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Create Prefab using JQuery Plugin",
+    "id": "create-prefab-using-jquery-plugin"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Create Prefab Using  D3 Library DataMaps",
+    "permalink": "/learn/docs/how-tos/create-prefab-using-d3-library-datamaps"
+  },
+  "next": {
+    "title": "Create Prefab using Angular Module",
+    "permalink": "/learn/docs/how-tos/create-prefab-using-angular-module"
+  }
+}

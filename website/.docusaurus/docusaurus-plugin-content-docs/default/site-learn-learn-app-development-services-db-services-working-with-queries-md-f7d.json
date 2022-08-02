@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/services/db-services/working-with-queries",
+  "id": "learn/app-development/services/db-services/working-with-queries",
+  "title": "Working with Queries",
+  "description": "There will be times when you want to display data from multiple tables or update/insert values into multiple tables. Queries and Stored Procedures come in handy in such instances. WaveMaker provides editors for Queries & Procedures for integrating them with the WaveMaker applications. Each query & procedure used in the WaveMaker application will be exposed as a REST API for the UI to consume and render the data.",
+  "source": "@site/../learn/learn/app-development/services/db-services/working-with-queries.md",
+  "sourceDirName": "learn/app-development/services/db-services",
+  "slug": "/learn/app-development/services/db-services/working-with-queries",
+  "permalink": "/learn/docs/learn/app-development/services/db-services/working-with-queries",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/db-services/working-with-queries.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Working with Queries",
+    "id": "working-with-queries"
+  }
+}

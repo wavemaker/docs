@@ -1,6 +1,6 @@
 ---
 title: "Working with SOAP Services"
-id: ""
+id: "working-with-soap-services"
 ---
 
 SOAP (Simple Object Access Protocol) is a standard XML protocol for exposing and calling web services. A SOAP service is described by a Web Services Definition Language (WSDL) document, often available through a URL from the service itself.
@@ -80,7 +80,7 @@ While importing the SOAP service you can upload the zip file that contains the W
 
 ## Package Name Customization
 
-By default package name is set to the project base package name by the platform as <project-base-package-name>.services.<service-id-of-soap-being-imported>. You can provide an optional package name so that the generated sources will be created in that package.
+By default package name is set to the project base package name by the platform as &lt;project-base-package-name&gt;.services.&lt;service-id-of-soap-being-imported&gt;. You can provide an optional package name so that the generated sources will be created in that package.
 
 ## Avoiding Name Collisions
 

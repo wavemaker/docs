@@ -1,6 +1,6 @@
 ---
 title: "Apply License"
-id: ""
+id: "apply-license"
 sidebar_label: "Apply License"
 ---
 ---

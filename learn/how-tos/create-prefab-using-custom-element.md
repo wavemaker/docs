@@ -1,6 +1,6 @@
 ---
 title: "Create Prefab using Angular, React Components"
-id: ""
+id: "create-prefab-using-custom-element"
 ---
 ---
 

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/form-widgets/textarea",
+  "id": "learn/app-development/widgets/form-widgets/textarea",
+  "title": "Textarea",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/widgets/form-widgets/textarea.md",
+  "sourceDirName": "learn/app-development/widgets/form-widgets",
+  "slug": "/learn/app-development/widgets/form-widgets/textarea",
+  "permalink": "/learn/docs/learn/app-development/widgets/form-widgets/textarea",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/form-widgets/textarea.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Textarea",
+    "id": "textarea"
+  }
+}

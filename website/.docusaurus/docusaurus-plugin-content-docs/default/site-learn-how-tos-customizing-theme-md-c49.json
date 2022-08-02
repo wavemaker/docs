@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/customizing-theme",
+  "id": "how-tos/customizing-theme",
+  "title": "Customizing Theme",
+  "description": "---",
+  "source": "@site/../learn/how-tos/customizing-theme.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/customizing-theme",
+  "permalink": "/learn/docs/how-tos/customizing-theme",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/customizing-theme.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Customizing Theme",
+    "id": "customizing-theme"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Adjust Left Navigation Width",
+    "permalink": "/learn/docs/how-tos/adjust-leftnav-width"
+  },
+  "next": {
+    "title": "Choose Widget Template and Layout",
+    "permalink": "/learn/docs/how-tos/widget-template-layout"
+  }
+}

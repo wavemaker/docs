@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/ui-design/page-concepts/page-parameters",
+  "id": "app-development/ui-design/page-concepts/page-parameters",
+  "title": "Page Parameters",
+  "description": "Page parameters is an important concept. It helps passing data across pages.",
+  "source": "@site/../learn/app-development/ui-design/page-concepts/page-parameters.md",
+  "sourceDirName": "app-development/ui-design/page-concepts",
+  "slug": "/app-development/ui-design/page-concepts/page-parameters",
+  "permalink": "/learn/docs/app-development/ui-design/page-concepts/page-parameters",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/ui-design/page-concepts/page-parameters.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Page Parameters",
+    "id": "page-parameters",
+    "sidebar_label": "Page Parameters"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Partial Page",
+    "permalink": "/learn/docs/app-development/ui-design/page-concepts/partial-pages"
+  },
+  "next": {
+    "title": "Navigation",
+    "permalink": "/learn/docs/app-development/ui-design/page-concepts/page-navigation"
+  }
+}

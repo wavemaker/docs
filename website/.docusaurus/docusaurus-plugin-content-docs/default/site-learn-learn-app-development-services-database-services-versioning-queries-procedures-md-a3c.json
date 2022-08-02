@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/services/database-services/versioning-queries-procedures",
+  "id": "learn/app-development/services/database-services/versioning-queries-procedures",
+  "title": "Versioning of Queries and Procedures",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/services/database-services/versioning-queries-procedures.md",
+  "sourceDirName": "learn/app-development/services/database-services",
+  "slug": "/learn/app-development/services/database-services/versioning-queries-procedures",
+  "permalink": "/learn/docs/learn/app-development/services/database-services/versioning-queries-procedures",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/database-services/versioning-queries-procedures.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Versioning of Queries and Procedures",
+    "id": "versioning-queries-procedures",
+    "sidebar_label": "Version Queries & Procedures"
+  }
+}

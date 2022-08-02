@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/insert-data-from-excel",
+  "id": "how-tos/insert-data-from-excel",
+  "title": "Inserting data from Excel into the database",
+  "description": "---",
+  "source": "@site/../learn/how-tos/insert-data-from-excel.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/insert-data-from-excel",
+  "permalink": "/learn/docs/how-tos/insert-data-from-excel",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/insert-data-from-excel.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Inserting data from Excel into the database",
+    "id": "insert-data-from-excel",
+    "sidebar_label": "Insert Data from Excel into Database"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Integrate Azure File Storage",
+    "permalink": "/learn/docs/how-tos/azure-file-storage-connector"
+  },
+  "next": {
+    "title": "Integrate Amazon S3 into WaveMaker App",
+    "permalink": "/learn/docs/how-tos/aws-s3-connector"
+  }
+}

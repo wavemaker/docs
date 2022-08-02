@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/variables/variables-actions",
+  "id": "learn/app-development/variables/variables-actions",
+  "title": "Actions",
+  "description": "Introduction to Actions in WaveMaker. Learn how to implement actions.",
+  "source": "@site/../learn/learn/app-development/variables/variables-actions.md",
+  "sourceDirName": "learn/app-development/variables",
+  "slug": "/learn/app-development/variables/variables-actions",
+  "permalink": "/learn/docs/learn/app-development/variables/variables-actions",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/variables/variables-actions.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Actions",
+    "id": "variables-actions"
+  }
+}

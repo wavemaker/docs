@@ -24,7 +24,7 @@ App.changeLocale({'datavalue': 'en'})
 | Placeholder | A placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user. |
 | **Accessibility** |
 | Hint | Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (*[See below for details](#shortcut)) |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
@@ -51,7 +51,7 @@ App.changeLocale({'datavalue': 'en'})
 
 | Event | Description |
 | --- | --- |
-| Change | This event handler is called each time your element's value changes. By default, it is set to invoke <br><br> 1. _changeAppLocale_ which would change the language rendered in the application; and <br> 2. _reloadApp_ event which will reload the app to enable rendering. _If you do not want the app to reload whenever the locale changes remove the reloadApp event._  |
+| Change | This event handler is called each time your element's value changes. By default, it is set to invoke    1. _changeAppLocale_ which would change the language rendered in the application; and   2. _reloadApp_ event which will reload the app to enable rendering. _If you do not want the app to reload whenever the locale changes remove the reloadApp event._  |
 | On focus | This event handler is called each time your element is focused. |
 | On blur | This event handler is called each time your focus leaves your element. |
 | **Mouse Events** |

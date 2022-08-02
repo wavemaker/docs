@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/06/24/faster-database-imports-in-studio",
+  "source": "@site/blog/2021-06-24-faster-database-imports-in-studio.md",
+  "title": "WaveMaker Studio enables faster database imports",
+  "description": "WaveMaker platform offers the feature for applications to integrate with external databases like MySQL, SQLServer, Oracle, IBM DB2, PostgreSQL, Amazon Redshift, SAP HANA.",
+  "date": "2021-06-24T00:00:00.000Z",
+  "formattedDate": "June 24, 2021",
+  "tags": [],
+  "readingTime": 2.105,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Sanjana Raheja"
+    }
+  ],
+  "frontMatter": {
+    "title": "WaveMaker Studio enables faster database imports",
+    "author": "Sanjana Raheja"
+  },
+  "prevItem": {
+    "title": "Generating .aab files using wm-cordova-cli or AppChef",
+    "permalink": "/learn/blog/2021/07/19/aab-support"
+  },
+  "nextItem": {
+    "title": "Redshift Database Integration",
+    "permalink": "/learn/blog/2021/06/18/redshift"
+  }
+}

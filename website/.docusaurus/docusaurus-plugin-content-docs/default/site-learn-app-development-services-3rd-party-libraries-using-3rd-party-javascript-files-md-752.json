@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
+  "id": "app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
+  "title": "Using 3rd party JavaScript files",
+  "description": "---",
+  "source": "@site/../learn/app-development/services/3rd-party-libraries/using-3rd-party-javascript-files.md",
+  "sourceDirName": "app-development/services/3rd-party-libraries",
+  "slug": "/app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
+  "permalink": "/learn/docs/app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/3rd-party-libraries/using-3rd-party-javascript-files.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using 3rd party JavaScript files",
+    "id": "using-3rd-party-javascript-files"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Resources and Third-party Libraries",
+    "permalink": "/learn/docs/app-development/services/3rd-party-libraries"
+  },
+  "next": {
+    "title": "Using 3rd party jar files",
+    "permalink": "/learn/docs/app-development/services/3rd-party-libraries/using-3rd-party-jar-files"
+  }
+}

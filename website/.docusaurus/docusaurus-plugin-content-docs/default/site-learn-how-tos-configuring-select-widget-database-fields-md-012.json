@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/configuring-select-widget-database-fields",
+  "id": "how-tos/configuring-select-widget-database-fields",
+  "title": "Configuring Select Widget from Database Fields",
+  "description": "A Select widget can be used in various ways based on the source of data. Each type of data source needs a different approach. WaveMaker Select widget works in any one of the following ways:",
+  "source": "@site/../learn/how-tos/configuring-select-widget-database-fields.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/configuring-select-widget-database-fields",
+  "permalink": "/learn/docs/how-tos/configuring-select-widget-database-fields",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/configuring-select-widget-database-fields.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Configuring Select Widget from Database Fields",
+    "id": "configuring-select-widget-database-fields"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Configuring Select Widget using Display and Data Fields",
+    "permalink": "/learn/docs/how-tos/configuring-select-widget-display-data-fields"
+  },
+  "next": {
+    "title": "Configuring Cascading Select",
+    "permalink": "/learn/docs/how-tos/configuring-cascading-select"
+  }
+}

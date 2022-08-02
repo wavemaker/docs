@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/setting-partial-page-content-accordion-within-list",
+  "id": "learn/how-tos/setting-partial-page-content-accordion-within-list",
+  "title": "Setting partial page content for Accordion within a List",
+  "description": "We will see how the content of an Accordion can be set to a Partial Page. We will be embedding the Accordion within a List.",
+  "source": "@site/../learn/learn/how-tos/setting-partial-page-content-accordion-within-list.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/setting-partial-page-content-accordion-within-list",
+  "permalink": "/learn/docs/learn/how-tos/setting-partial-page-content-accordion-within-list",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/setting-partial-page-content-accordion-within-list.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Setting partial page content for Accordion within a List",
+    "id": "setting-partial-page-content-accordion-within-list"
+  }
+}

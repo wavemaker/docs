@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/sliding-leftnav-mobile-app",
+  "id": "how-tos/sliding-leftnav-mobile-app",
+  "title": "Sliding left navigation for Mobile App",
+  "description": "---",
+  "source": "@site/../learn/how-tos/sliding-leftnav-mobile-app.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/sliding-leftnav-mobile-app",
+  "permalink": "/learn/docs/how-tos/sliding-leftnav-mobile-app",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/sliding-leftnav-mobile-app.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Sliding left navigation for Mobile App",
+    "id": "sliding-leftnav-mobile-app"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Designing Tablet Views in Mobile Project",
+    "permalink": "/learn/docs/how-tos/support-for-tablet-view-in-mobile"
+  },
+  "next": {
+    "title": "Mobile App using Bar code",
+    "permalink": "/learn/docs/how-tos/mobile-app-using-bar-code"
+  }
+}

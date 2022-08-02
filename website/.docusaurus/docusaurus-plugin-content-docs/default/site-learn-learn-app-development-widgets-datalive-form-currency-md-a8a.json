@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/datalive/form/currency",
+  "id": "learn/app-development/widgets/datalive/form/currency",
+  "title": "Currency",
+  "description": "Currency widget is a special text widget to input the currency type data. This widget will change the display format based on the currency type.",
+  "source": "@site/../learn/learn/app-development/widgets/datalive/form/currency.md",
+  "sourceDirName": "learn/app-development/widgets/datalive/form",
+  "slug": "/learn/app-development/widgets/datalive/form/currency",
+  "permalink": "/learn/docs/learn/app-development/widgets/datalive/form/currency",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/datalive/form/currency.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Currency",
+    "id": "currency"
+  }
+}

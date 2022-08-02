@@ -1,0 +1,31 @@
+{
+  "unversionedId": "teams/overview",
+  "id": "teams/overview",
+  "title": "Teams Overview",
+  "description": "---",
+  "source": "@site/../learn/teams/overview.md",
+  "sourceDirName": "teams",
+  "slug": "/teams/overview",
+  "permalink": "/learn/docs/teams/overview",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/teams/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Teams Overview",
+    "id": "overview",
+    "sidebar_label": "Overview"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Build a New Connector",
+    "permalink": "/learn/docs/connectors/connectors-building"
+  },
+  "next": {
+    "title": "Team Setup",
+    "permalink": "/learn/docs/teams/team-setup"
+  }
+}

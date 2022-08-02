@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/using-function-evaluating-conditions",
+  "id": "learn/how-tos/using-function-evaluating-conditions",
+  "title": "Using function for evaluating conditions",
+  "description": "While binding a widget to an expression using Use Expression option, in case expressions becoming complex, it is advisable to write an evaluation function for clarity and reusability. We will show how it can be done with the help of an example.",
+  "source": "@site/../learn/learn/how-tos/using-function-evaluating-conditions.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/using-function-evaluating-conditions",
+  "permalink": "/learn/docs/learn/how-tos/using-function-evaluating-conditions",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/using-function-evaluating-conditions.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using function for evaluating conditions",
+    "id": "using-function-evaluating-conditions"
+  }
+}

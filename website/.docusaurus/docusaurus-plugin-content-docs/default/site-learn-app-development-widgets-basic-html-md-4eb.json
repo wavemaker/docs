@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/basic/html",
+  "id": "app-development/widgets/basic/html",
+  "title": "HTML",
+  "description": "HTML widget can be used to display HTML content.",
+  "source": "@site/../learn/app-development/widgets/basic/html.md",
+  "sourceDirName": "app-development/widgets/basic",
+  "slug": "/app-development/widgets/basic/html",
+  "permalink": "/learn/docs/app-development/widgets/basic/html",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/basic/html.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "HTML",
+    "id": "html"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Audio",
+    "permalink": "/learn/docs/app-development/widgets/basic/audio"
+  },
+  "next": {
+    "title": "Iframe",
+    "permalink": "/learn/docs/app-development/widgets/basic/iframe"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: "Working with Charts"
-id: ""
+id: "working-with-charts"
 ---
 ---
 

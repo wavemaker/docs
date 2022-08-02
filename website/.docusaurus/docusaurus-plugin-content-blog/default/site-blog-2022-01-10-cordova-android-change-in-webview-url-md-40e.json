@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2022/01/10/cordova-android-change-in-webview-url",
+  "source": "@site/blog/2022-01-10-cordova-android-change-in-webview-url.md",
+  "title": "URL Change in WaveMaker Android WebView",
+  "description": "---",
+  "date": "2022-01-10T00:00:00.000Z",
+  "formattedDate": "January 10, 2022",
+  "tags": [],
+  "readingTime": 1.43,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Srinivasa Rao Boyina"
+    }
+  ],
+  "frontMatter": {
+    "title": "URL Change in WaveMaker Android WebView",
+    "author": "Srinivasa Rao Boyina"
+  },
+  "prevItem": {
+    "title": "Archiving WaveMaker 9 Projects",
+    "permalink": "/learn/blog/2022/02/01/archiving-9-projects"
+  },
+  "nextItem": {
+    "title": "Announcement about Angular 11 Update",
+    "permalink": "/learn/blog/2021/12/17/angular-11-update"
+  }
+}

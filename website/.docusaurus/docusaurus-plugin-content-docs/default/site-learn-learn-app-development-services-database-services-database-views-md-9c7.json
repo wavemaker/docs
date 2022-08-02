@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/services/database-services/database-views",
+  "id": "learn/app-development/services/database-services/database-views",
+  "title": "Database Views",
+  "description": "WaveMaker provides support for importing Database Views into WaveMaker applications with some limitations.",
+  "source": "@site/../learn/learn/app-development/services/database-services/database-views.md",
+  "sourceDirName": "learn/app-development/services/database-services",
+  "slug": "/learn/app-development/services/database-services/database-views",
+  "permalink": "/learn/docs/learn/app-development/services/database-services/database-views",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/database-services/database-views.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Database Views",
+    "id": "database-views"
+  }
+}

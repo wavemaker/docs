@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/04/27/covid19-visualization-using-wavemaker",
+  "source": "@site/blog/2020-04-27-covid19-visualization-using-wavemaker.md",
+  "title": "COVID-19 Visualization using WaveMaker - Part 1",
+  "description": "Alongside the crisis that COVID-19 had brought to the world, there has never been so much prominence for the numbers. Almost every household, governments, businesses, media etc. are contemplating these numbers, creating models for prediction, taking measures to flatten these curves. That’s when we immediately jumped on to create an application using our own low-code platform.",
+  "date": "2020-04-27T00:00:00.000Z",
+  "formattedDate": "April 27, 2020",
+  "tags": [],
+  "readingTime": 3.3,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Deepak Anupalli"
+    }
+  ],
+  "frontMatter": {
+    "title": "COVID-19 Visualization using WaveMaker - Part 1",
+    "author": "Deepak Anupalli"
+  },
+  "prevItem": {
+    "title": "COVID-19 Visualization using WaveMaker - Part 2",
+    "permalink": "/learn/blog/2020/04/30/covid19-visualization-using-wavemaker-part-2"
+  },
+  "nextItem": {
+    "title": "WaveMaker Integrates with DigitalOcean Kubernetes for App Deployments",
+    "permalink": "/learn/blog/2020/04/23/deployment-to-digital-ocean"
+  }
+}

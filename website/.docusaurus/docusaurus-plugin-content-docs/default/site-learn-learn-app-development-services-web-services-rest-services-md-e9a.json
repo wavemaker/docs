@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/services/web-services/rest-services",
+  "id": "learn/app-development/services/web-services/rest-services",
+  "title": "3rd Party REST Services",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/services/web-services/rest-services.md",
+  "sourceDirName": "learn/app-development/services/web-services",
+  "slug": "/learn/app-development/services/web-services/rest-services",
+  "permalink": "/learn/docs/learn/app-development/services/web-services/rest-services",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/web-services/rest-services.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "3rd Party REST Services",
+    "id": "rest-services",
+    "sidebar_label": "REST Services"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/services/3rd-party-libraries",
+  "id": "learn/app-development/services/3rd-party-libraries",
+  "title": "Resources and Third-party Libraries",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/services/3rd-party-libraries.md",
+  "sourceDirName": "learn/app-development/services",
+  "slug": "/learn/app-development/services/3rd-party-libraries",
+  "permalink": "/learn/docs/learn/app-development/services/3rd-party-libraries",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/3rd-party-libraries.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Resources and Third-party Libraries",
+    "id": "3rd-party-libraries"
+  }
+}

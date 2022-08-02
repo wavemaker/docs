@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/deployment/pipelines-phases",
+  "id": "app-development/deployment/pipelines-phases",
+  "title": "Pipelines and Phases",
+  "description": "---",
+  "source": "@site/../learn/app-development/deployment/pipelines-phases.md",
+  "sourceDirName": "app-development/deployment",
+  "slug": "/app-development/deployment/pipelines-phases",
+  "permalink": "/learn/docs/app-development/deployment/pipelines-phases",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/deployment/pipelines-phases.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Pipelines and Phases",
+    "id": "pipelines-phases",
+    "sidebar_label": "Pipelines and Phases"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Configuration Management",
+    "permalink": "/learn/docs/app-development/deployment/configuration-management"
+  },
+  "next": {
+    "title": "Default Pipelines in WMO",
+    "permalink": "/learn/docs/app-development/deployment/default-pipelines"
+  }
+}

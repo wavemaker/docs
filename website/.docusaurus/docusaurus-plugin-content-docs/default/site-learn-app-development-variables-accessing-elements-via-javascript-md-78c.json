@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/variables/accessing-elements-via-javascript",
+  "id": "app-development/variables/accessing-elements-via-javascript",
+  "title": "Accessing Elements via JavaScript",
+  "description": "---",
+  "source": "@site/../learn/app-development/variables/accessing-elements-via-javascript.md",
+  "sourceDirName": "app-development/variables",
+  "slug": "/app-development/variables/accessing-elements-via-javascript",
+  "permalink": "/learn/docs/app-development/variables/accessing-elements-via-javascript",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/variables/accessing-elements-via-javascript.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Accessing Elements via JavaScript",
+    "id": "accessing-elements-via-javascript",
+    "sidebar_label": "JavaScript Access"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Events",
+    "permalink": "/learn/docs/app-development/variables/events"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/learn/docs/app-development/app-security/"
+  }
+}

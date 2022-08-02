@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/09/01/angular-10-update",
+  "source": "@site/blog/2021-09-01-angular-10-update.md",
+  "title": "Important Announcement about Angular 10 Update",
+  "description": "WaveMaker currently generates code based on Angular 9 for applications. With the announcement on ending support of Angular 9, we are upgrading to the next Angular version, 10.2.5.",
+  "date": "2021-09-01T00:00:00.000Z",
+  "formattedDate": "September 1, 2021",
+  "tags": [],
+  "readingTime": 1.91,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Swetha Kundaram"
+    }
+  ],
+  "frontMatter": {
+    "title": "Important Announcement about Angular 10 Update",
+    "author": "Swetha Kundaram"
+  },
+  "prevItem": {
+    "title": "Git Branching Strategy",
+    "permalink": "/learn/blog/2021/09/17/git-branching-strategy"
+  },
+  "nextItem": {
+    "title": "Accessibility Support in WaveMaker",
+    "permalink": "/learn/blog/2021/08/23/accessibility-feature"
+  }
+}

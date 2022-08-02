@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/use-static-variable-pass-data-pages",
+  "id": "how-tos/use-static-variable-pass-data-pages",
+  "title": "Use Static Variable to pass data between pages",
+  "description": "---",
+  "source": "@site/../learn/how-tos/use-static-variable-pass-data-pages.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/use-static-variable-pass-data-pages",
+  "permalink": "/learn/docs/how-tos/use-static-variable-pass-data-pages",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/use-static-variable-pass-data-pages.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Use Static Variable to pass data between pages",
+    "id": "use-static-variable-pass-data-pages"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Accessing Script",
+    "permalink": "/learn/docs/how-tos/script-access"
+  },
+  "next": {
+    "title": "Customise Login Page",
+    "permalink": "/learn/docs/how-tos/customise-login-page"
+  }
+}

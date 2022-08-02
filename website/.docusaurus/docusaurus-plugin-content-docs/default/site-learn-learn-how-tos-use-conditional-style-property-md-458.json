@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/use-conditional-style-property",
+  "id": "learn/how-tos/use-conditional-style-property",
+  "title": "How to use Conditional Style Property",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/use-conditional-style-property.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/use-conditional-style-property",
+  "permalink": "/learn/docs/learn/how-tos/use-conditional-style-property",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/use-conditional-style-property.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to use Conditional Style Property",
+    "id": "use-conditional-style-property"
+  }
+}

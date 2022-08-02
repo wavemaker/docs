@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/container/panel",
+  "id": "app-development/widgets/container/panel",
+  "title": "Panel",
+  "description": "A panel can be used to group a set of widgets together. It has a collapsible title bar and you can add multiple panels and any number of multiple panes can be open at any given point of time.",
+  "source": "@site/../learn/app-development/widgets/container/panel.md",
+  "sourceDirName": "app-development/widgets/container",
+  "slug": "/app-development/widgets/container/panel",
+  "permalink": "/learn/docs/app-development/widgets/container/panel",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/container/panel.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Panel",
+    "id": "panel"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Container",
+    "permalink": "/learn/docs/app-development/widgets/container/"
+  },
+  "next": {
+    "title": "Tabs",
+    "permalink": "/learn/docs/app-development/widgets/container/tabs"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/services/web-services/oauth-2-0-rest-services",
+  "id": "app-development/services/web-services/oauth-2-0-rest-services",
+  "title": "REST Services using OAuth 2.0",
+  "description": "---",
+  "source": "@site/../learn/app-development/services/web-services/oauth-2-0-rest-services.md",
+  "sourceDirName": "app-development/services/web-services",
+  "slug": "/app-development/services/web-services/oauth-2-0-rest-services",
+  "permalink": "/learn/docs/app-development/services/web-services/oauth-2-0-rest-services",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/web-services/oauth-2-0-rest-services.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "REST Services using OAuth 2.0",
+    "id": "oauth-2-0-rest-services"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "REST Request Timeouts",
+    "permalink": "/learn/docs/app-development/services/web-services/rest-request-timeouts"
+  },
+  "next": {
+    "title": "Working with SOAP Services",
+    "permalink": "/learn/docs/app-development/services/web-services/working-with-soap-services"
+  }
+}

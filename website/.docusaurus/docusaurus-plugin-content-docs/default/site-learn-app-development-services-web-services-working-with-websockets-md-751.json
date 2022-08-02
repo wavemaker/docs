@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/services/web-services/working-with-websockets",
+  "id": "app-development/services/web-services/working-with-websockets",
+  "title": "Working with WebSockets",
+  "description": "---",
+  "source": "@site/../learn/app-development/services/web-services/working-with-websockets.md",
+  "sourceDirName": "app-development/services/web-services",
+  "slug": "/app-development/services/web-services/working-with-websockets",
+  "permalink": "/learn/docs/app-development/services/web-services/working-with-websockets",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/web-services/working-with-websockets.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Working with WebSockets",
+    "id": "working-with-websockets"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Imported SOAP APIs",
+    "permalink": "/learn/docs/app-development/services/api-designer/web-service-apis"
+  },
+  "next": {
+    "title": "API Designer",
+    "permalink": "/learn/docs/app-development/services/api-designer/api"
+  }
+}

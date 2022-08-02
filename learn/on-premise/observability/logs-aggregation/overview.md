@@ -1,6 +1,6 @@
 ---
 title: "Logs Aggregation"
-id: ""
+id: "overview"
 sidebar_label: "Overview"
 ---
 ---

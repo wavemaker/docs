@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/data-table-column-bound-query",
+  "id": "learn/how-tos/data-table-column-bound-query",
+  "title": "Data Table Column bound to Query",
+  "description": "Data Table is build using a single table from an imported Database. You might want to enable user selection for one column of the Data Table from values of a query result.",
+  "source": "@site/../learn/learn/how-tos/data-table-column-bound-query.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/data-table-column-bound-query",
+  "permalink": "/learn/docs/learn/how-tos/data-table-column-bound-query",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/data-table-column-bound-query.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Data Table Column bound to Query",
+    "id": "data-table-column-bound-query"
+  }
+}

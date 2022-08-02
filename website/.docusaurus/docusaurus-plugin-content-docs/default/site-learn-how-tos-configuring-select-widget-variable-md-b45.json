@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/configuring-select-widget-variable",
+  "id": "how-tos/configuring-select-widget-variable",
+  "title": "Configuring Select Widget from a Variable",
+  "description": "A Select widget can be used in various ways based on the source of data. Each type of data source needs a different approach. WaveMaker Select widget works in any one of the following ways:",
+  "source": "@site/../learn/how-tos/configuring-select-widget-variable.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/configuring-select-widget-variable",
+  "permalink": "/learn/docs/how-tos/configuring-select-widget-variable",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/configuring-select-widget-variable.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Configuring Select Widget from a Variable",
+    "id": "configuring-select-widget-variable"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Configuring Select Widget from a Static Variable",
+    "permalink": "/learn/docs/how-tos/configuring-select-widget-static-variable"
+  },
+  "next": {
+    "title": "Configuring Select Widget using Display and Data Fields",
+    "permalink": "/learn/docs/how-tos/configuring-select-widget-display-data-fields"
+  }
+}

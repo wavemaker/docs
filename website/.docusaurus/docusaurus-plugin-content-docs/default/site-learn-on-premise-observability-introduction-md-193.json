@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/observability/introduction",
+  "id": "on-premise/observability/introduction",
+  "title": "Observability",
+  "description": "---",
+  "source": "@site/../learn/on-premise/observability/introduction.md",
+  "sourceDirName": "on-premise/observability",
+  "slug": "/on-premise/observability/introduction",
+  "permalink": "/learn/docs/on-premise/observability/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/observability/introduction.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Observability",
+    "id": "introduction",
+    "sidebar_label": "Introduction"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Configure SSL",
+    "permalink": "/learn/docs/on-premise/configure/config-ssl"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/learn/docs/on-premise/observability/logs-aggregation/overview"
+  }
+}

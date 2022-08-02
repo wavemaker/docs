@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/configuring-select-widget-static-variable",
+  "id": "learn/how-tos/configuring-select-widget-static-variable",
+  "title": "Configuring Select Widget from a Static Variable",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/configuring-select-widget-static-variable.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/configuring-select-widget-static-variable",
+  "permalink": "/learn/docs/learn/how-tos/configuring-select-widget-static-variable",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/configuring-select-widget-static-variable.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Configuring Select Widget from a Static Variable",
+    "id": "configuring-select-widget-static-variable"
+  }
+}

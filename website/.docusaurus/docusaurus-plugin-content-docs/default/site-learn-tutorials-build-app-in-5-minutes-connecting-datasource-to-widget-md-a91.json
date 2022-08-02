@@ -1,0 +1,30 @@
+{
+  "unversionedId": "tutorials/build-app-in-5-minutes/connecting-datasource-to-widget",
+  "id": "tutorials/build-app-in-5-minutes/connecting-datasource-to-widget",
+  "title": "Connecting Datasource to Widget",
+  "description": "---",
+  "source": "@site/../learn/tutorials/build-app-in-5-minutes/connecting-datasource-to-widget.md",
+  "sourceDirName": "tutorials/build-app-in-5-minutes",
+  "slug": "/tutorials/build-app-in-5-minutes/connecting-datasource-to-widget",
+  "permalink": "/learn/docs/tutorials/build-app-in-5-minutes/connecting-datasource-to-widget",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/tutorials/build-app-in-5-minutes/connecting-datasource-to-widget.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Connecting Datasource to Widget",
+    "id": "connecting-datasource-to-widget"
+  },
+  "sidebar": "Tutorials",
+  "previous": {
+    "title": "Drag and Drop Widget",
+    "permalink": "/learn/docs/tutorials/build-app-in-5-minutes/drag-and-drop-widget"
+  },
+  "next": {
+    "title": "Preview and Test App",
+    "permalink": "/learn/docs/tutorials/build-app-in-5-minutes/preview-test-app"
+  }
+}

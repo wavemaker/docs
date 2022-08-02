@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/prefab/youtube",
+  "id": "app-development/widgets/prefab/youtube",
+  "title": "Youtube",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/prefab/youtube.md",
+  "sourceDirName": "app-development/widgets/prefab",
+  "slug": "/app-development/widgets/prefab/youtube",
+  "permalink": "/learn/docs/app-development/widgets/prefab/youtube",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/prefab/youtube.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Youtube",
+    "id": "youtube"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Use Cases - Prefabs",
+    "permalink": "/learn/docs/app-development/custom-widgets/use-cases-prefabs"
+  },
+  "next": {
+    "title": "Googlemaps",
+    "permalink": "/learn/docs/app-development/widgets/prefab/googlemaps"
+  }
+}

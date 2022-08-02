@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/use-conditional-style-property",
+  "id": "how-tos/use-conditional-style-property",
+  "title": "How to use Conditional Style Property",
+  "description": "---",
+  "source": "@site/../learn/how-tos/use-conditional-style-property.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/use-conditional-style-property",
+  "permalink": "/learn/docs/how-tos/use-conditional-style-property",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/use-conditional-style-property.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to use Conditional Style Property",
+    "id": "use-conditional-style-property"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "How to use Conditional Class Property",
+    "permalink": "/learn/docs/how-tos/use-conditional-class-property"
+  },
+  "next": {
+    "title": "Customize an Existing Theme",
+    "permalink": "/learn/docs/how-tos/customize-existing-theme"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/users-roles",
+  "id": "learn/on-premise/users-roles",
+  "title": "Users and Roles",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/users-roles.md",
+  "sourceDirName": "learn/on-premise",
+  "slug": "/learn/on-premise/users-roles",
+  "permalink": "/learn/docs/learn/on-premise/users-roles",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/users-roles.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Users and Roles",
+    "id": "users-roles",
+    "sidebar_label": "Users & Roles"
+  }
+}

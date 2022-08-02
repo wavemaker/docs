@@ -1,0 +1,22 @@
+{
+  "unversionedId": "app-development/widgets/datalive/datatable/events-methods",
+  "id": "app-development/widgets/datalive/datatable/events-methods",
+  "title": "Live Form - Events & Methods",
+  "description": "Live Form behavior can be customized with the help of the call-back events. These events can be accessed from the events tab on the Properties panel. The trigger for the event can be JavaScript, another Variable call etc..",
+  "source": "@site/../learn/app-development/widgets/datalive/datatable/events-methods.md",
+  "sourceDirName": "app-development/widgets/datalive/datatable",
+  "slug": "/app-development/widgets/datalive/datatable/events-methods",
+  "permalink": "/learn/docs/app-development/widgets/datalive/datatable/events-methods",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/datatable/events-methods.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Live Form - Events & Methods",
+    "id": "events-methods",
+    "sidebar_label": "Events & Methods"
+  }
+}

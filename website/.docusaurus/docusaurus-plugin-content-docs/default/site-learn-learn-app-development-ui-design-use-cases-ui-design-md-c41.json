@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/ui-design/use-cases-ui-design",
+  "id": "learn/app-development/ui-design/use-cases-ui-design",
+  "title": "Examples - UI Design",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/ui-design/use-cases-ui-design.md",
+  "sourceDirName": "learn/app-development/ui-design",
+  "slug": "/learn/app-development/ui-design/use-cases-ui-design",
+  "permalink": "/learn/docs/learn/app-development/ui-design/use-cases-ui-design",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/ui-design/use-cases-ui-design.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Examples - UI Design",
+    "id": "use-cases-ui-design",
+    "sidebar_label": "Examples"
+  }
+}

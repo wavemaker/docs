@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/file-upload-widget-operations",
+  "id": "learn/how-tos/file-upload-widget-operations",
+  "title": "File Upload Widget Operations",
+  "description": "The uploaded files will be available in the upload folder and can be referred to using the listFiles and deleteFiles methods.",
+  "source": "@site/../learn/learn/how-tos/file-upload-widget-operations.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/file-upload-widget-operations",
+  "permalink": "/learn/docs/learn/how-tos/file-upload-widget-operations",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/file-upload-widget-operations.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "File Upload Widget Operations",
+    "id": "file-upload-widget-operations"
+  }
+}

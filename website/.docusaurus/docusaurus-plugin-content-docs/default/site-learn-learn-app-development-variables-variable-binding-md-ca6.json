@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/variables/variable-binding",
+  "id": "learn/app-development/variables/variable-binding",
+  "title": "Variable Binding",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/variables/variable-binding.md",
+  "sourceDirName": "learn/app-development/variables",
+  "slug": "/learn/app-development/variables/variable-binding",
+  "permalink": "/learn/docs/learn/app-development/variables/variable-binding",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/variables/variable-binding.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Variable Binding",
+    "id": "variable-binding"
+  }
+}

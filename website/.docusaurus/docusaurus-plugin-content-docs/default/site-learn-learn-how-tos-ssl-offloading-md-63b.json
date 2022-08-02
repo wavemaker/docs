@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/ssl-offloading",
+  "id": "learn/how-tos/ssl-offloading",
+  "title": "SSL Termination in LoadBalancer",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/ssl-offloading.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/ssl-offloading",
+  "permalink": "/learn/docs/learn/how-tos/ssl-offloading",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/ssl-offloading.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "SSL Termination in LoadBalancer",
+    "id": "ssl-offloading"
+  }
+}

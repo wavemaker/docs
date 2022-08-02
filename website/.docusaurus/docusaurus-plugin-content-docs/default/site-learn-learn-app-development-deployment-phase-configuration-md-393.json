@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/deployment/phase-configuration",
+  "id": "learn/app-development/deployment/phase-configuration",
+  "title": "Phase configurations",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/deployment/phase-configuration.md",
+  "sourceDirName": "learn/app-development/deployment",
+  "slug": "/learn/app-development/deployment/phase-configuration",
+  "permalink": "/learn/docs/learn/app-development/deployment/phase-configuration",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/deployment/phase-configuration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Phase configurations",
+    "id": "phase-configuration"
+  }
+}

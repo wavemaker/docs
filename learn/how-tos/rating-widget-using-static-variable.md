@@ -1,6 +1,6 @@
 ---
 title: "Building Rating Widget using Static Variable"
-id: ""
+id: "rating-widget-using-static-variable"
 ---
 ---
 

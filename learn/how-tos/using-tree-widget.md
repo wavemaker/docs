@@ -1,6 +1,6 @@
 ---
 title: "Using Tree Widget"
-id: ""
+id: "using-tree-widget"
 ---
 
 We will build a tree using a simple static structure
@@ -169,20 +169,15 @@ public List<TreeData> sampleJavaOperation(String name) {
 
 1. [Create a Service Variable](/learn/app-development/variables/variables) using the Java Service created in the earlier step 
 
-[![tree_JSvar](/learn/assets/tree_JSvar.png)](/learn/assets/tree_JSvar.png)
 
-2. Drag and drop a tree widget onto the canvas and bind the dataset value to the Service Variable created in the above step [![tree_JSbind](/learn/assets/tree_JSbind.png)](/learn/assets/tree_JSbind.png)
+2. Drag and drop a tree widget onto the canvas and bind the dataset value to the Service Variable created in the above step 
 3. Set the properties of Node Label, Icon and Children respectively 
 
-[![tree_JSprops](/learn/assets/tree_JSprops.png)](/learn/assets/tree_JSprops.png)
 
 ## Step 3: Test Run
 
 1. Run the app and see the tree in action.
 
-[![tree_JSrun](/learn/assets/tree_JSrun.png)](/learn/assets/tree_JSrun.png)
-
-[![tree_JSrun2](/learn/assets/tree_JSrun2.png)](/learn/assets/tree_JSrun2.png)
 
 If you have a requirement, whereby the user decides the structure of the tree. For example, you are building a folder-file structure and the user decides how many folders and files are to be present in a tree. This section deals with such a situation.
 
@@ -254,5 +249,3 @@ $scope.addFolder = function($event, $isolateScope) {
 ## Step 3: Test Run
 
 1. Run the application and see the tree in action.
-
-[![tree_dynamic_run](/learn/assets/tree_dynamic_run.png)](/learn/assets/tree_dynamic_run.png)

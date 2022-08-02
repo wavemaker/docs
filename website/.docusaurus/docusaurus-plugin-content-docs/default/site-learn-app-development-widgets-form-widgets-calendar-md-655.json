@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/form-widgets/calendar",
+  "id": "app-development/widgets/form-widgets/calendar",
+  "title": "Calendar",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/form-widgets/calendar.md",
+  "sourceDirName": "app-development/widgets/form-widgets",
+  "slug": "/app-development/widgets/form-widgets/calendar",
+  "permalink": "/learn/docs/app-development/widgets/form-widgets/calendar",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/form-widgets/calendar.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Calendar",
+    "id": "calendar"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Date,  Time and  Datetime",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/date-time-datetime"
+  },
+  "next": {
+    "title": "FileUpload",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/file-upload"
+  }
+}

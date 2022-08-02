@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/charts-custom-data",
+  "id": "how-tos/charts-custom-data",
+  "title": "Charts - Custom Data",
+  "description": "---",
+  "source": "@site/../learn/how-tos/charts-custom-data.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/charts-custom-data",
+  "permalink": "/learn/docs/how-tos/charts-custom-data",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/charts-custom-data.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Charts - Custom Data",
+    "id": "charts-custom-data",
+    "sidebar_label": "Custom Data"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Handling Dynamic Data",
+    "permalink": "/learn/docs/how-tos/charts-handling-dynamic-data"
+  },
+  "next": {
+    "title": "Adding Custom Fonts to Richtext Editor",
+    "permalink": "/learn/docs/how-tos/adding-custom-fonts-richtext-editor"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/debug-monitor-performance-issues-using-fusion-reactor",
+  "id": "how-tos/debug-monitor-performance-issues-using-fusion-reactor",
+  "title": "Debug Performance Issues using Fusion Reactor",
+  "description": "Learn how to setup Fusion Reactor tool for WaveMaker Application Performance Monitoring.",
+  "source": "@site/../learn/how-tos/debug-monitor-performance-issues-using-fusion-reactor.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/debug-monitor-performance-issues-using-fusion-reactor",
+  "permalink": "/learn/docs/how-tos/debug-monitor-performance-issues-using-fusion-reactor",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/debug-monitor-performance-issues-using-fusion-reactor.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Debug Performance Issues using Fusion Reactor",
+    "id": "debug-monitor-performance-issues-using-fusion-reactor",
+    "sidebar_label": "Setup Fusion Reactor for Debugging Issues"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "App Migration from WaveMaker 9x to 10x",
+    "permalink": "/learn/docs/how-tos/app-migration-wavemaker-9x-10x"
+  },
+  "next": {
+    "title": "SSL Termination in LoadBalancer",
+    "permalink": "/learn/docs/how-tos/ssl-offloading"
+  }
+}

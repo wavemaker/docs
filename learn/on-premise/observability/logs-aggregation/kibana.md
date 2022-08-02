@@ -1,6 +1,6 @@
 ---
 title: "Kibana"
-id: ""
+id: "kibana"
 sidebar_label: "Kibana"
 ---
 ---

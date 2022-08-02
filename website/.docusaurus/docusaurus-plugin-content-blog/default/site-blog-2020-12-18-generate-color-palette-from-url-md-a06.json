@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/12/18/generate-color-palette-from-url",
+  "source": "@site/blog/2020-12-18-generate-color-palette-from-url.md",
+  "title": "Automatically Import your Website Branding Styles into a Theme",
+  "description": "Theme Builder app has introduced a new feature for recognizing a website color palette by inserting the website URL. With this, you can discover the colors used in a website and use them to build a theme. It will essentially make the theme-building process much easier by allowing you to choose the discovered colors, fonts, and more from an existing website. Furthermore, you can preview and design WaveMaker components by assigning colors, and download the theme when ready. For more information about creating a theme without any coding, see Creating a Theme using Theme Builder.",
+  "date": "2020-12-18T00:00:00.000Z",
+  "formattedDate": "December 18, 2020",
+  "tags": [],
+  "readingTime": 2.335,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Lovin Ahmed"
+    }
+  ],
+  "frontMatter": {
+    "title": "Automatically Import your Website Branding Styles into a Theme",
+    "author": "Lovin Ahmed"
+  },
+  "prevItem": {
+    "title": "Understanding Scaling of WaveMaker Applications",
+    "permalink": "/learn/blog/2021/01/04/spring-session-persistence"
+  },
+  "nextItem": {
+    "title": "Certificate Pinning Case Study",
+    "permalink": "/learn/blog/2020/12/15/certificate-pinning"
+  }
+}

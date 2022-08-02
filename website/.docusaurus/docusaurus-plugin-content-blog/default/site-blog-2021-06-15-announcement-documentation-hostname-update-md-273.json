@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/06/15/announcement-documentation-hostname-update",
+  "source": "@site/blog/2021-06-15-announcement-documentation-hostname-update.md",
+  "title": "Important Announcement about Changes to Documentation Domain",
+  "description": "docs hostname announcement",
+  "date": "2021-06-15T00:00:00.000Z",
+  "formattedDate": "June 15, 2021",
+  "tags": [],
+  "readingTime": 0.725,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Swetha Kundaram"
+    }
+  ],
+  "frontMatter": {
+    "title": "Important Announcement about Changes to Documentation Domain",
+    "author": "Swetha Kundaram"
+  },
+  "prevItem": {
+    "title": "Integrate SAP HANA Database with WaveMaker",
+    "permalink": "/learn/blog/2021/06/18/sap-hana"
+  },
+  "nextItem": {
+    "title": "WaveMaker Releases 10.7 Version",
+    "permalink": "/learn/blog/2021/05/09/product-update-10-7-whats-new"
+  }
+}

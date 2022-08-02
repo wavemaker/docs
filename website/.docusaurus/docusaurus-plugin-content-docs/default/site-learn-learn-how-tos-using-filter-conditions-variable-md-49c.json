@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/using-filter-conditions-variable",
+  "id": "learn/how-tos/using-filter-conditions-variable",
+  "title": "Using Filter Conditions on Variable",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/using-filter-conditions-variable.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/using-filter-conditions-variable",
+  "permalink": "/learn/docs/learn/how-tos/using-filter-conditions-variable",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/using-filter-conditions-variable.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using Filter Conditions on Variable",
+    "id": "using-filter-conditions-variable"
+  }
+}

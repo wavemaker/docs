@@ -1,6 +1,6 @@
 ---
 title: "Cards - Templates"
-id: ""
+id: "cards-templates"
 sidebar_label: "Templates"
 ---
 ---

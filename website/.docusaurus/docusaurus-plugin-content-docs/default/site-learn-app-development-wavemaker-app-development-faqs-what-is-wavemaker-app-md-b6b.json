@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/wavemaker-app-development-faqs/what-is-wavemaker-app",
+  "id": "app-development/wavemaker-app-development-faqs/what-is-wavemaker-app",
+  "title": "What is a WaveMaker App?",
+  "description": "See the FAQs section for WaveMaker app development.",
+  "source": "@site/../learn/app-development/wavemaker-app-development-faqs/what-is-wavemaker-app.md",
+  "sourceDirName": "app-development/wavemaker-app-development-faqs",
+  "slug": "/app-development/wavemaker-app-development-faqs/what-is-wavemaker-app",
+  "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/what-is-wavemaker-app",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/wavemaker-app-development-faqs/what-is-wavemaker-app.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "What is a WaveMaker App?",
+    "id": "what-is-wavemaker-app"
+  },
+  "sidebar": "FAQs",
+  "previous": {
+    "title": "WaveMaker Online Setup",
+    "permalink": "/learn/docs/wmo-setup"
+  },
+  "next": {
+    "title": "What skills you need to build a WaveMaker app?",
+    "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/skills-need-to-build-wavemaker-app"
+  }
+}

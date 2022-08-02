@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/customise-app-style",
+  "id": "learn/how-tos/customise-app-style",
+  "title": "Customise App Style",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/customise-app-style.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/customise-app-style",
+  "permalink": "/learn/docs/learn/how-tos/customise-app-style",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/customise-app-style.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Customise App Style",
+    "id": "customise-app-style"
+  }
+}

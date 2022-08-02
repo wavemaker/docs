@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/configure/config-users-auth-providers",
+  "id": "on-premise/configure/config-users-auth-providers",
+  "title": "WME Add Users and Authentication Provider",
+  "description": "---",
+  "source": "@site/../learn/on-premise/configure/config-users-auth-providers.md",
+  "sourceDirName": "on-premise/configure",
+  "slug": "/on-premise/configure/config-users-auth-providers",
+  "permalink": "/learn/docs/on-premise/configure/config-users-auth-providers",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/configure/config-users-auth-providers.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WME Add Users and Authentication Provider",
+    "id": "config-users-auth-providers",
+    "sidebar_label": "Users Onboarding"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Apply License",
+    "permalink": "/learn/docs/on-premise/aws/install/apply-license"
+  },
+  "next": {
+    "title": "Configure VCS",
+    "permalink": "/learn/docs/on-premise/configure/config-vcs"
+  }
+}

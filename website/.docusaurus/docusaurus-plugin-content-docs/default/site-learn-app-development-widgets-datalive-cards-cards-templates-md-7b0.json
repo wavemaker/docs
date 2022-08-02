@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/cards/cards-templates",
+  "id": "app-development/widgets/datalive/cards/cards-templates",
+  "title": "Cards - Templates",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/cards/cards-templates.md",
+  "sourceDirName": "app-development/widgets/datalive/cards",
+  "slug": "/app-development/widgets/datalive/cards/cards-templates",
+  "permalink": "/learn/docs/app-development/widgets/datalive/cards/cards-templates",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/cards/cards-templates.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Cards - Templates",
+    "id": "cards-templates",
+    "sidebar_label": "Templates"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Data Source",
+    "permalink": "/learn/docs/app-development/widgets/datalive/cards/cards-data-source"
+  },
+  "next": {
+    "title": "Configuration",
+    "permalink": "/learn/docs/app-development/widgets/datalive/cards/card-configuration"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: "Integration with Custom VCS provider"
-id: ""
+id: "integration-with-custom-vcs-provider"
 sidebar_label: "Custom VCS Integration"
 ---
 ---

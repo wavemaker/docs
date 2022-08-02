@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/setting-language-date-format",
+  "id": "how-tos/setting-language-date-format",
+  "title": "Setting Language and Date Format",
+  "description": "---",
+  "source": "@site/../learn/how-tos/setting-language-date-format.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/setting-language-date-format",
+  "permalink": "/learn/docs/how-tos/setting-language-date-format",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/setting-language-date-format.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Setting Language and Date Format",
+    "id": "setting-language-date-format"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Localization in WaveMaker Apps",
+    "permalink": "/learn/docs/how-tos/localization-wavemaker-apps"
+  },
+  "next": {
+    "title": "Localization Using Select Locale",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/select-locale-usage"
+  }
+}

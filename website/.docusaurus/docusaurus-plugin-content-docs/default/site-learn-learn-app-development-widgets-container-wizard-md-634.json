@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/container/wizard",
+  "id": "learn/app-development/widgets/container/wizard",
+  "title": "Wizard",
+  "description": "Wizards UI are suitable for tasks that have multiple independent steps, wherein the user is taken through each step to comprehend the task in a structured manner. Wizards have steps with a specific UI style that facilitates easy navigation. Wizards provide previous and next step buttons for the user to confirm their selections/actions in each of these steps. Users can also cancel the task at any step. Wizards also provide Done or Finish button at the end of the final step, to indicate that all the steps are finished.",
+  "source": "@site/../learn/learn/app-development/widgets/container/wizard.md",
+  "sourceDirName": "learn/app-development/widgets/container",
+  "slug": "/learn/app-development/widgets/container/wizard",
+  "permalink": "/learn/docs/learn/app-development/widgets/container/wizard",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/container/wizard.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Wizard",
+    "id": "wizard"
+  }
+}

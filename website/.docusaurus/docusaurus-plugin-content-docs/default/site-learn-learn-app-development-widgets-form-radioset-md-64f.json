@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/form/radioset",
+  "id": "learn/app-development/widgets/form/radioset",
+  "title": "Radioset",
+  "description": "Radioset allows you to group a set of radio buttons under a common heading. You need to bind to a dataset to display a radio button for each value.",
+  "source": "@site/../learn/learn/app-development/widgets/form/radioset.md",
+  "sourceDirName": "learn/app-development/widgets/form",
+  "slug": "/learn/app-development/widgets/form/radioset",
+  "permalink": "/learn/docs/learn/app-development/widgets/form/radioset",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/form/radioset.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Radioset",
+    "id": "radioset"
+  }
+}

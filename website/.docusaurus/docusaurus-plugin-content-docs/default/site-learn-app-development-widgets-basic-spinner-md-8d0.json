@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/basic/spinner",
+  "id": "app-development/widgets/basic/spinner",
+  "title": "Spinner",
+  "description": "Spinner widget controls the user interaction while the browser is performing some work in the background. It gives a feedback if the page is processing or, frozen, or just not working. This widget displays a loading icon with text.",
+  "source": "@site/../learn/app-development/widgets/basic/spinner.md",
+  "sourceDirName": "app-development/widgets/basic",
+  "slug": "/app-development/widgets/basic/spinner",
+  "permalink": "/learn/docs/app-development/widgets/basic/spinner",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/basic/spinner.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Spinner",
+    "id": "spinner"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Message",
+    "permalink": "/learn/docs/app-development/widgets/basic/message"
+  },
+  "next": {
+    "title": "Search",
+    "permalink": "/learn/docs/app-development/widgets/basic/search"
+  }
+}

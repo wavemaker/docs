@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/wavemaker-release-notes/v10-release-summary",
+  "id": "learn/wavemaker-release-notes/v10-release-summary",
+  "title": "WaveMaker 10",
+  "description": "Find what's new in WaveMaker. See information about bug fixes, new features, and improvements from WaveMaker.",
+  "source": "@site/../learn/learn/wavemaker-release-notes/v10-release-summary.md",
+  "sourceDirName": "learn/wavemaker-release-notes",
+  "slug": "/learn/wavemaker-release-notes/v10-release-summary",
+  "permalink": "/learn/docs/learn/wavemaker-release-notes/v10-release-summary",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/wavemaker-release-notes/v10-release-summary.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker 10",
+    "id": "v10-release-summary",
+    "sidebar_label": "Release History"
+  }
+}

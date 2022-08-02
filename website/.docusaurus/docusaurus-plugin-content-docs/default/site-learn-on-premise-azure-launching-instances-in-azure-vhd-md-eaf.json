@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/azure/launching-instances-in-azure-vhd",
+  "id": "on-premise/azure/launching-instances-in-azure-vhd",
+  "title": "WaveMaker Enterprise Setup on AzureCloud using VHD",
+  "description": "---",
+  "source": "@site/../learn/on-premise/azure/launching-instances-in-azure-vhd.md",
+  "sourceDirName": "on-premise/azure",
+  "slug": "/on-premise/azure/launching-instances-in-azure-vhd",
+  "permalink": "/learn/docs/on-premise/azure/launching-instances-in-azure-vhd",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/azure/launching-instances-in-azure-vhd.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker Enterprise Setup on AzureCloud using VHD",
+    "id": "launching-instances-in-azure-vhd",
+    "sidebar_label": "Prepare Infrastructure using VHD"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Prepare Infrastructure",
+    "permalink": "/learn/docs/on-premise/azure/launching-instances-in-azure"
+  },
+  "next": {
+    "title": "Install Prerequisites Softwares",
+    "permalink": "/learn/docs/on-premise/azure/install-prerequisites"
+  }
+}

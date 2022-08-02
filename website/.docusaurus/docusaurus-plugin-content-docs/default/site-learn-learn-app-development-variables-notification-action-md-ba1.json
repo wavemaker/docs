@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/variables/notification-action",
+  "id": "learn/app-development/variables/notification-action",
+  "title": "Notification Action",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/variables/notification-action.md",
+  "sourceDirName": "learn/app-development/variables",
+  "slug": "/learn/app-development/variables/notification-action",
+  "permalink": "/learn/docs/learn/app-development/variables/notification-action",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/variables/notification-action.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Notification Action",
+    "id": "notification-action"
+  }
+}

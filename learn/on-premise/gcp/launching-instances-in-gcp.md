@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup on Google Cloud Platform"
-id: ""
+id: "launching-instances-in-gcp"
 sidebar_label: "Prepare Infrastructure"
 ---
 ---

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/connectors/connectors-introduction",
+  "id": "learn/connectors/connectors-introduction",
+  "title": "Connectors",
+  "description": "---",
+  "source": "@site/../learn/learn/connectors/connectors-introduction.md",
+  "sourceDirName": "learn/connectors",
+  "slug": "/learn/connectors/connectors-introduction",
+  "permalink": "/learn/docs/learn/connectors/connectors-introduction",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/connectors/connectors-introduction.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Connectors",
+    "id": "connectors-introduction",
+    "sidebar_label": "Introduction"
+  }
+}

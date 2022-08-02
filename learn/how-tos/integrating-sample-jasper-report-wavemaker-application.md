@@ -1,6 +1,6 @@
 ---
 title: "Integrating Sample Jasper Report in WaveMaker Application"
-id: ""
+id: "integrating-sample-jasper-report-wavemaker-application"
 ---
 ---
 

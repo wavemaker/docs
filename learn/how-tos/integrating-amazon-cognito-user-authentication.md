@@ -1,6 +1,6 @@
 ---
 title: "Integrating Amazon Cognito for User Authentication"
-id: ""
+id: "integrating-amazon-cognito-user-authentication"
 ---
 ---
 
@@ -17,7 +17,7 @@ Amazon Cognito is a service that enables you to create unique identities for you
 [![](/learn/assets/AC_poolid.png)](/learn/assets/AC_poolid.png)
 
 4. From the Apps tab, create an application with following configuration, make sure that “Generate Client Secret” is unchecked [![](/learn/assets/AC_poolapp.png)](/learn/assets/AC_poolapp.png)
-5. Create the application and note down the App client ID [![](/learn/assets/AC_poolappid.png)](/learn/assets/AC_poolappid.png)
+5. Create the application and note down the App client ID 
 
 ## Configuring JS Libraries in WaveMaker
 
@@ -40,7 +40,6 @@ The Amazon Cognito AWS SDK for JavaScript is a slimmed down version of the AWS J
 Ensure the path is correct. 
 :::
 
-[![](/learn/assets/AC_index.png)](/learn/assets/AC_index.png)
 
 At this point, we’ve integrated the Amazon JavaScript SDK into our project.
 

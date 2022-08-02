@@ -1,6 +1,6 @@
 ---
 title: "Chart Widgets"
-id: ""
+id: "chart-widget"
 ---
 ---
 

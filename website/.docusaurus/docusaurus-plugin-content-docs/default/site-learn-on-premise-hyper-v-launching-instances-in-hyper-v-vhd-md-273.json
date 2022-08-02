@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
+  "id": "on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
+  "title": "WaveMaker Enterprise Setup on Hyper-V using VHD",
+  "description": "---",
+  "source": "@site/../learn/on-premise/hyper-v/launching-instances-in-hyper-v-vhd.md",
+  "sourceDirName": "on-premise/hyper-v",
+  "slug": "/on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
+  "permalink": "/learn/docs/on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/hyper-v/launching-instances-in-hyper-v-vhd.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker Enterprise Setup on Hyper-V using VHD",
+    "id": "launching-instances-in-hyper-v-vhd",
+    "sidebar_label": "Prepare Infrastructure using VHD"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/learn/docs/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv"
+  },
+  "next": {
+    "title": "Install Prerequisites Softwares",
+    "permalink": "/learn/docs/on-premise/hyper-v/install-prerequisites"
+  }
+}

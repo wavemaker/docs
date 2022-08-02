@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/wavemaker-release-notes/v10-6-4",
+  "id": "learn/wavemaker-release-notes/v10-6-4",
+  "title": "WaveMaker 10.6.4 - Release date: 18 February 2021",
+  "description": "WaveMaker released a new update version with some bug fixes.",
+  "source": "@site/../learn/learn/wavemaker-release-notes/v10-6-4.md",
+  "sourceDirName": "learn/wavemaker-release-notes",
+  "slug": "/learn/wavemaker-release-notes/v10-6-4",
+  "permalink": "/learn/docs/learn/wavemaker-release-notes/v10-6-4",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/wavemaker-release-notes/v10-6-4.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker 10.6.4 - Release date: 18 February 2021",
+    "id": "v10-6-4",
+    "sidebar_label": "Release v10.6.4"
+  }
+}

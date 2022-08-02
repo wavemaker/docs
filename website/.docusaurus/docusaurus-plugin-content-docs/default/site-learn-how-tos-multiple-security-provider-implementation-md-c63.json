@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/multiple-security-provider-implementation",
+  "id": "how-tos/multiple-security-provider-implementation",
+  "title": "Multiple Security Provider Implementation",
+  "description": "---",
+  "source": "@site/../learn/how-tos/multiple-security-provider-implementation.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/multiple-security-provider-implementation",
+  "permalink": "/learn/docs/how-tos/multiple-security-provider-implementation",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/multiple-security-provider-implementation.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Multiple Security Provider Implementation",
+    "id": "multiple-security-provider-implementation"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Custom Security using Google OAuth Prefab",
+    "permalink": "/learn/docs/how-tos/custom-security-using-google-oauth-prefab"
+  },
+  "next": {
+    "title": "Customizing Post Authentication Handlers",
+    "permalink": "/learn/docs/how-tos/customizing-post-authentication-handlers"
+  }
+}

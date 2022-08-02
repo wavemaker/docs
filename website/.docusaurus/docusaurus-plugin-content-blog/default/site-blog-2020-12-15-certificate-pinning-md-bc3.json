@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/12/15/certificate-pinning",
+  "source": "@site/blog/2020-12-15-certificate-pinning.md",
+  "title": "Certificate Pinning Case Study",
+  "description": "A case study on Certificate Pinning.",
+  "date": "2020-12-15T00:00:00.000Z",
+  "formattedDate": "December 15, 2020",
+  "tags": [],
+  "readingTime": 2.615,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Radhakrishnan Asokan"
+    }
+  ],
+  "frontMatter": {
+    "title": "Certificate Pinning Case Study",
+    "author": "Radhakrishnan Asokan"
+  },
+  "prevItem": {
+    "title": "Automatically Import your Website Branding Styles into a Theme",
+    "permalink": "/learn/blog/2020/12/18/generate-color-palette-from-url"
+  },
+  "nextItem": {
+    "title": "Cordova 10.0.0 Upgrade ",
+    "permalink": "/learn/blog/2020/12/09/cordova-10-0-0-upgrade"
+  }
+}

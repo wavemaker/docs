@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/file-upload-blob-data",
+  "id": "how-tos/file-upload-blob-data",
+  "title": "File Upload & Blob Data",
+  "description": "This section showcases the usage of Fileupload Widget and Java Service to save blob data into the database.",
+  "source": "@site/../learn/how-tos/file-upload-blob-data.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/file-upload-blob-data",
+  "permalink": "/learn/docs/how-tos/file-upload-blob-data",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/file-upload-blob-data.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "File Upload & Blob Data",
+    "id": "file-upload-blob-data"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Upload File & Save in Database",
+    "permalink": "/learn/docs/how-tos/upload-file-save-database"
+  },
+  "next": {
+    "title": "File Upload - Custom Directory",
+    "permalink": "/learn/docs/how-tos/file-upload-custom-directory"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/services/api-designer/import-rest-apis-swagger",
+  "id": "learn/app-development/services/api-designer/import-rest-apis-swagger",
+  "title": "Import REST APIs via Swagger",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/services/api-designer/import-rest-apis-swagger.md",
+  "sourceDirName": "learn/app-development/services/api-designer",
+  "slug": "/learn/app-development/services/api-designer/import-rest-apis-swagger",
+  "permalink": "/learn/docs/learn/app-development/services/api-designer/import-rest-apis-swagger",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/api-designer/import-rest-apis-swagger.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Import REST APIs via Swagger",
+    "id": "import-rest-apis-swagger",
+    "sidebar_label": "Swagger Import"
+  }
+}

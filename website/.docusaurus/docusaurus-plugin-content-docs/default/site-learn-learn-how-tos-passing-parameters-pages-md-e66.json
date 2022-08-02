@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/passing-parameters-pages",
+  "id": "learn/how-tos/passing-parameters-pages",
+  "title": "Passing Parameters to Pages",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/passing-parameters-pages.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/passing-parameters-pages",
+  "permalink": "/learn/docs/learn/how-tos/passing-parameters-pages",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/passing-parameters-pages.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Passing Parameters to Pages",
+    "id": "passing-parameters-pages"
+  }
+}

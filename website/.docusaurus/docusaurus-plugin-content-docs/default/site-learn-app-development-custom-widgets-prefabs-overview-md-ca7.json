@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/custom-widgets/prefabs-overview",
+  "id": "app-development/custom-widgets/prefabs-overview",
+  "title": "Prefabs - Custom Widgets & Extensions",
+  "description": "---",
+  "source": "@site/../learn/app-development/custom-widgets/prefabs-overview.md",
+  "sourceDirName": "app-development/custom-widgets",
+  "slug": "/app-development/custom-widgets/prefabs-overview",
+  "permalink": "/learn/docs/app-development/custom-widgets/prefabs-overview",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/custom-widgets/prefabs-overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Prefabs - Custom Widgets & Extensions",
+    "id": "prefabs-overview",
+    "sidebar_label": "Prefabs Overview"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Barcode Scanner",
+    "permalink": "/learn/docs/app-development/widgets/mobile-widgets/barcode-scanner"
+  },
+  "next": {
+    "title": "Create Prefab",
+    "permalink": "/learn/docs/app-development/custom-widgets/creating-prefabs"
+  }
+}

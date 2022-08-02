@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/dev-integration/developer-collaboration",
+  "id": "learn/app-development/dev-integration/developer-collaboration",
+  "title": "Developer Collaboration",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/dev-integration/developer-collaboration.md",
+  "sourceDirName": "learn/app-development/dev-integration",
+  "slug": "/learn/app-development/dev-integration/developer-collaboration",
+  "permalink": "/learn/docs/learn/app-development/dev-integration/developer-collaboration",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/dev-integration/developer-collaboration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Developer Collaboration",
+    "id": "developer-collaboration"
+  }
+}

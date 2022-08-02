@@ -1,6 +1,6 @@
 ---
 title: "Configuring for Azure Deployment"
-id: ""
+id: "deployment-to-azure"
 sidebar_label: Azure
 ---
 Learn how to deploy your app to Azure server.

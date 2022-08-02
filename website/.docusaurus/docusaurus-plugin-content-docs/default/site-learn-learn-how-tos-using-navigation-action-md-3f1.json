@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/using-navigation-action",
+  "id": "learn/how-tos/using-navigation-action",
+  "title": "Using Navigation Action",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/using-navigation-action.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/using-navigation-action",
+  "permalink": "/learn/docs/learn/how-tos/using-navigation-action",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/using-navigation-action.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using Navigation Action",
+    "id": "using-navigation-action"
+  }
+}

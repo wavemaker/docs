@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/widgets/datalive/datatable/styles",
+  "id": "learn/app-development/widgets/datalive/datatable/styles",
+  "title": "Data Table Styles",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/widgets/datalive/datatable/styles.md",
+  "sourceDirName": "learn/app-development/widgets/datalive/datatable",
+  "slug": "/learn/app-development/widgets/datalive/datatable/styles",
+  "permalink": "/learn/docs/learn/app-development/widgets/datalive/datatable/styles",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/datalive/datatable/styles.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Data Table Styles",
+    "id": "styles",
+    "sidebar_label": "Styles"
+  }
+}

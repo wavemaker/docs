@@ -1,6 +1,6 @@
 ---
 title: "React Native or Cordova to Develop a Mobile app in WaveMaker"
-id: ""
+id: "react-native-and-cordova"
 sidebar_label: "React Native or Cordova"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Tests Integration"
-id: ""
+id: "tests-integration"
 ---
 ---
 

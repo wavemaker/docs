@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/deployment/export-wavemaker-application",
+  "id": "app-development/deployment/export-wavemaker-application",
+  "title": "Export WaveMaker Application",
+  "description": "---",
+  "source": "@site/../learn/app-development/deployment/export-wavemaker-application.md",
+  "sourceDirName": "app-development/deployment",
+  "slug": "/app-development/deployment/export-wavemaker-application",
+  "permalink": "/learn/docs/app-development/deployment/export-wavemaker-application",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/deployment/export-wavemaker-application.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Export WaveMaker Application",
+    "id": "export-wavemaker-application"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Custom VCS Integration",
+    "permalink": "/learn/docs/app-development/deployment/integration-with-custom-vcs-provider"
+  },
+  "next": {
+    "title": "Building Project with Maven",
+    "permalink": "/learn/docs/app-development/deployment/building-with-maven"
+  }
+}

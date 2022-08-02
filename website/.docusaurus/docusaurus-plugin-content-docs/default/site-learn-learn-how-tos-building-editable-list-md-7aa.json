@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/building-editable-list",
+  "id": "learn/how-tos/building-editable-list",
+  "title": "Building an Editable List",
+  "description": "Scenario: To make List editable.",
+  "source": "@site/../learn/learn/how-tos/building-editable-list.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/building-editable-list",
+  "permalink": "/learn/docs/learn/how-tos/building-editable-list",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/building-editable-list.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Building an Editable List",
+    "id": "building-editable-list"
+  }
+}

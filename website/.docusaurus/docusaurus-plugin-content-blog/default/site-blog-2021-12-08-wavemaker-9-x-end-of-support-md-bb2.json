@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/12/08/wavemaker9x-end-of-support",
+  "source": "@site/blog/2021-12-08-wavemaker9x-end-of-support.md",
+  "title": "Ending Support of WaveMaker 9 Projects",
+  "description": "The End of Support (EOS) stage marks the official withdrawal of support for WaveMaker 9.x projects.",
+  "date": "2021-12-08T00:00:00.000Z",
+  "formattedDate": "December 8, 2021",
+  "tags": [],
+  "readingTime": 3.86,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Swetha Kundaram"
+    }
+  ],
+  "frontMatter": {
+    "title": "Ending Support of WaveMaker 9 Projects",
+    "author": "Swetha Kundaram"
+  },
+  "prevItem": {
+    "title": "Mitigating Log4J 2 Vulnerability CVE 2021 44228",
+    "permalink": "/learn/blog/2021/12/13/zero-day-vulnerability"
+  },
+  "nextItem": {
+    "title": "Git Branching Strategy",
+    "permalink": "/learn/blog/2021/09/17/git-branching-strategy"
+  }
+}

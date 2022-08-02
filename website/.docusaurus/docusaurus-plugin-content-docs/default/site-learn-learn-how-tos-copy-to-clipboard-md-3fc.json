@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/copy-to-clipboard",
+  "id": "learn/how-tos/copy-to-clipboard",
+  "title": "Copy to Clipboard",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/copy-to-clipboard.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/copy-to-clipboard",
+  "permalink": "/learn/docs/learn/how-tos/copy-to-clipboard",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/copy-to-clipboard.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Copy to Clipboard",
+    "id": "copy-to-clipboard"
+  }
+}

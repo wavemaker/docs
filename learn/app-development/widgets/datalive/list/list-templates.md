@@ -1,6 +1,6 @@
 ---
 title: "List - Templates"
-id: ""
+id: "list-templates"
 sidebar_label: "Templates"
 ---
 ---

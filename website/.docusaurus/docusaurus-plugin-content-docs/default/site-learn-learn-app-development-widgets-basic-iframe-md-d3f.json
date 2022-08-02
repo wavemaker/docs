@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/basic/iframe",
+  "id": "learn/app-development/widgets/basic/iframe",
+  "title": "Iframe",
+  "description": "NOTE: Iframe is available only for web responsive apps.",
+  "source": "@site/../learn/learn/app-development/widgets/basic/iframe.md",
+  "sourceDirName": "learn/app-development/widgets/basic",
+  "slug": "/learn/app-development/widgets/basic/iframe",
+  "permalink": "/learn/docs/learn/app-development/widgets/basic/iframe",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/basic/iframe.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Iframe",
+    "id": "iframe"
+  }
+}

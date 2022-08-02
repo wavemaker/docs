@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/custom-security-using-google-oauth-prefab",
+  "id": "learn/how-tos/custom-security-using-google-oauth-prefab",
+  "title": "Custom Security using Google OAuth Prefab",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/custom-security-using-google-oauth-prefab.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/custom-security-using-google-oauth-prefab",
+  "permalink": "/learn/docs/learn/how-tos/custom-security-using-google-oauth-prefab",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/custom-security-using-google-oauth-prefab.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Custom Security using Google OAuth Prefab",
+    "id": "custom-security-using-google-oauth-prefab"
+  }
+}

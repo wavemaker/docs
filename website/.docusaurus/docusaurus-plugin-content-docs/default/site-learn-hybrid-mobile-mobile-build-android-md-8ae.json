@@ -1,0 +1,30 @@
+{
+  "unversionedId": "hybrid-mobile/mobile-build-android",
+  "id": "hybrid-mobile/mobile-build-android",
+  "title": "Mobile Build - Android",
+  "description": "---",
+  "source": "@site/../learn/hybrid-mobile/mobile-build-android.md",
+  "sourceDirName": "hybrid-mobile",
+  "slug": "/hybrid-mobile/mobile-build-android",
+  "permalink": "/learn/docs/hybrid-mobile/mobile-build-android",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/hybrid-mobile/mobile-build-android.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Mobile Build - Android",
+    "id": "mobile-build-android"
+  },
+  "sidebar": "Mobile",
+  "previous": {
+    "title": "Testing Hybrid Mobile Apps using WaveLens",
+    "permalink": "/learn/docs/hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens"
+  },
+  "next": {
+    "title": "Mobile Build - Manual",
+    "permalink": "/learn/docs/hybrid-mobile/mobile-build-manual"
+  }
+}

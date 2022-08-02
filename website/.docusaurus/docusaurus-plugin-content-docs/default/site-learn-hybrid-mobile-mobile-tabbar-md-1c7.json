@@ -1,0 +1,30 @@
+{
+  "unversionedId": "hybrid-mobile/mobile-tabbar",
+  "id": "hybrid-mobile/mobile-tabbar",
+  "title": "Mobile Tabbar",
+  "description": "---",
+  "source": "@site/../learn/hybrid-mobile/mobile-tabbar.md",
+  "sourceDirName": "hybrid-mobile",
+  "slug": "/hybrid-mobile/mobile-tabbar",
+  "permalink": "/learn/docs/hybrid-mobile/mobile-tabbar",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/hybrid-mobile/mobile-tabbar.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Mobile Tabbar",
+    "id": "mobile-tabbar"
+  },
+  "sidebar": "Mobile",
+  "previous": {
+    "title": "Gesture Support",
+    "permalink": "/learn/docs/hybrid-mobile/gesture-support"
+  },
+  "next": {
+    "title": "Mobile Navbar",
+    "permalink": "/learn/docs/hybrid-mobile/mobile-navbar"
+  }
+}

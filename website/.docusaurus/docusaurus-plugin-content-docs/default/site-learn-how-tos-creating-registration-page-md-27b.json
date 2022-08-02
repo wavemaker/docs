@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/creating-registration-page",
+  "id": "how-tos/creating-registration-page",
+  "title": "Creating a Registration Page",
+  "description": "---",
+  "source": "@site/../learn/how-tos/creating-registration-page.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/creating-registration-page",
+  "permalink": "/learn/docs/how-tos/creating-registration-page",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/creating-registration-page.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Creating a Registration Page",
+    "id": "creating-registration-page"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "WaveMaker Best Practices",
+    "permalink": "/learn/docs/app-development/wavemaker-overview/wavemaker-best-practices"
+  },
+  "next": {
+    "title": "Support for Password Encryption",
+    "permalink": "/learn/docs/how-tos/support-password-encryption"
+  }
+}

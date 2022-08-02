@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Events & Methods"
-id: ""
+id: "datatable-events-methods"
 sidebar_label: "Events & Methods"
 ---
 ---
@@ -10,7 +10,7 @@ Data Table behavior can be customized with the help of the call-back events. The
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-|**On Row Click** | This event will be called when a row in Data Table is clicked. <br> **Note**: This event can happen when selecting or deselecting a row. |
+|**On Row Click** | This event will be called when a row in Data Table is clicked.   **Note**: This event can happen when selecting or deselecting a row. |
 
 ```js
 Page.[DataTableName]Rowclick = function($event, widget, row) {
@@ -90,7 +90,7 @@ Page.[dataTableName]Beforerowdelete = function ($event, widget, row, options) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| **On Column Select** | This event will be called when a column in Data Table is selected. <br><br> **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
+| **On Column Select** | This event will be called when a column in Data Table is selected.    **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
 
 ```js
 Page.[dataTableName]Columnselect = function($event, widget, $data) {
@@ -105,7 +105,7 @@ Page.[dataTableName]Columnselect = function($event, widget, $data) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| **On Column Deselect** | This event will be called when a column in Data Table is deselected. <br><br> **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
+| **On Column Deselect** | This event will be called when a column in Data Table is deselected.    **Note**: This event is accessible if you enable `Column Section` property from **Advanced Settings**. |
 
 ```js
 Page.[dataTableName]Columndeselect = function($event, widget, $data) {
@@ -221,7 +221,7 @@ Page.[dataTableName]Rowupdate = function($event, widget, row) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| **On Before Data Render** | This event will be called the before the data is rendered in the Data Table. <br><br> **Note**: The data accessible is restricted to the current page of the Data Table. Use Case: If you want to change the display value based on the values of a column |
+| **On Before Data Render** | This event will be called the before the data is rendered in the Data Table.    **Note**: The data accessible is restricted to the current page of the Data Table. Use Case: If you want to change the display value based on the values of a column |
 
 ```js
 Page.[dataTableName]Setrecord = function($event, data, columns) {
@@ -241,7 +241,7 @@ Page.[dataTableName]Setrecord = function($event, data, columns) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| **On Before Form Render** | (Only for Data Table with Quick-Edit and Inline-Edit) <br> This event is fired on the edit of a row and before the inline form is rendered. |
+| **On Before Form Render** | (Only for Data Table with Quick-Edit and Inline-Edit)   This event is fired on the edit of a row and before the inline form is rendered. |
 
 :::note 
 This gives access to data to be displayed in the form Use Case: You can use this event to edit values to be displayed in the form. Edit also can be prevented in form based on some condition. 
@@ -270,7 +270,7 @@ widget, row, $operation) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| **On Form Render** | This event is accessible for Data Table with `Quick-Edit` and `Inline-Edit` templates. <br> This event is called after the inline form is rendered. |
+| **On Form Render** | This event is accessible for Data Table with `Quick-Edit` and `Inline-Edit` templates.   This event is called after the inline form is rendered. |
 
 :::note
 This gives access to the widgets in the form. Use Case: Individual widget can be disabled based on a condition.
@@ -288,7 +288,7 @@ formWidgets, $operation) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| **On Error** | (ONLY for Data Table with Quick-Edit and Inline-Edit) <br> This event will be called after the edit/insert/delete operation returns a failure response |
+| **On Error** | (ONLY for Data Table with Quick-Edit and Inline-Edit)   This event will be called after the edit/insert/delete operation returns a failure response |
 
 ```js
 Page.[gridName]Error = function($event, widget,
@@ -300,7 +300,7 @@ $data, $operation) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-| **On Before Export** | (ONLY for Data Table with Export Format selected) <br> This event will be called before downloading the file. Any data changes like file format changes, field expression, size changes etc can be performed here. Returning false from the script will stop the file download. |
+| **On Before Export** | (ONLY for Data Table with Export Format selected)   This event will be called before downloading the file. Any data changes like file format changes, field expression, size changes etc can be performed here. Returning false from the script will stop the file download. |
 
 ```js
 Page.hrdbDeptTable1Beforeexport = function (widget, $data) { 
@@ -334,7 +334,7 @@ Page.[dataTableName]Beforefilter = function($event, widget, columns) {
 
 | Event | Trigger and JavaScript Usage |
 | --- | --- |
-|**On Data Render** | This event will be called when the data is rendered in the Data Table. <br> **Note**: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to add a class to a particular row. |
+|**On Data Render** | This event will be called when the data is rendered in the Data Table.   **Note**: This gives access to data displayed on the current page of the Data Table Use Case: You can use this event to add a class to a particular row. |
 
 ```js
 Page.[dataTableName]Datarender = function(widget, data) {
@@ -366,18 +366,18 @@ Following is the flow of events for each action triggered on the Data Table.
 
 | Action | Flow |
 | --- | --- |
-| On Row Select | Single select [![](/learn/assets/rowclick_event1.png)](/learn/assets/rowclick_event1.png) <br> Row deselect will be called only if previously a row was selected |
-|| Multi-Select If a selected row is clicked: [![](/learn/assets/rowclick_event2a.png)](/learn/assets/rowclick_event2a.png) <br> If an unselected row is clicked: <br> [![](/learn/assets/rowclick_event2b.png)](/learn/assets/rowclick_event2b.png) |
-| On Header click | Column selection is enabled If a selected column is clicked: [![](/learn/assets/headerclick_event1a.png)](/learn/assets/headerclick_event1a.png) <br> If an unselected column is clicked: [![](/learn/assets/headerclick_event1b.png)](/learn/assets/headerclick_event1b.png) |
+| On Row Select | Single select [![](/learn/assets/rowclick_event1.png)](/learn/assets/rowclick_event1.png)   Row deselect will be called only if previously a row was selected |
+|| Multi-Select If a selected row is clicked: [![](/learn/assets/rowclick_event2a.png)](/learn/assets/rowclick_event2a.png)   If an unselected row is clicked:   [![](/learn/assets/rowclick_event2b.png)](/learn/assets/rowclick_event2b.png) |
+| On Header click | Column selection is enabled If a selected column is clicked: [![](/learn/assets/headerclick_event1a.png)](/learn/assets/headerclick_event1a.png)   If an unselected column is clicked: [![](/learn/assets/headerclick_event1b.png)](/learn/assets/headerclick_event1b.png) |
 || Column selection is disabled & sort is enabled [![](/learn/assets/headerclick_event2.png)](/learn/assets/headerclick_event2.png) On Row Select row is triggered if select first record is enabled |
-| On Page Load | [![](/learn/assets/pageload_event1.png)](/learn/assets/pageload_event1.png) <br><br> If ‘Select first record’ is enabled: <br><br> [![](/learn/assets/pageload_event2.png)](/learn/assets/pageload_event2.png) |
+| On Page Load | [![](/learn/assets/pageload_event1.png)](/learn/assets/pageload_event1.png)    If ‘Select first record’ is enabled:    [![](/learn/assets/pageload_event2.png)](/learn/assets/pageload_event2.png) |
 | On Filter | [![](/learn/assets/filter_event1.png)](/learn/assets/filter_event1.png) On Row Select row is triggered if select first record is enabled. |
 | On Export | [![](/learn/assets/export_event1.png)](/learn/assets/export_event1.png) |
 | On Pagination | [![](/learn/assets/pagination_event1.png)](/learn/assets/pagination_event1.png) |
 | On Click of edit or new buttons | [![](/learn/assets/editnew_event1.png)](/learn/assets/editnew_event1.png) |
-| On Click of save in edit mode | [![](/learn/assets/saveedit_event1.png)](/learn/assets/saveedit_event1.png) <br> If before row update returns false, operation is stopped and next events are not fired |
-| On Click of save in insert mode | [![](/learn/assets/saveinsert_event1.png)](/learn/assets/saveinsert_event1.png) <br> If before row insert returns false, operation is stopped and next events are not fired |
-| On Click of delete button | [![](/learn/assets/delete_event1.png)](/learn/assets/delete_event1.png) <br> If before row delete returns false, operation is stopped and next events are not fired |
+| On Click of save in edit mode | [![](/learn/assets/saveedit_event1.png)](/learn/assets/saveedit_event1.png)   If before row update returns false, operation is stopped and next events are not fired |
+| On Click of save in insert mode | [![](/learn/assets/saveinsert_event1.png)](/learn/assets/saveinsert_event1.png)   If before row insert returns false, operation is stopped and next events are not fired |
+| On Click of delete button | [![](/learn/assets/delete_event1.png)](/learn/assets/delete_event1.png)   If before row delete returns false, operation is stopped and next events are not fired |
 
 ## Methods
 ---

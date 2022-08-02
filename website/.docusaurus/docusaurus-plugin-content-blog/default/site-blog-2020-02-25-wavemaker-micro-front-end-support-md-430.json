@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/02/25/wavemaker-micro-front-end-support",
+  "source": "@site/blog/2020-02-25-wavemaker-micro-front-end-support.md",
+  "title": "Deliver WaveMaker Apps as Micro Frontend Modules",
+  "description": "A real-world application is composed of multiple modules. Changes or upgrades to a given module can impact other modules and add more testing effort to the development timeline. Including a new technology into the existing app might be challenging as the existing app might not include all support, such as the build process.",
+  "date": "2020-02-25T00:00:00.000Z",
+  "formattedDate": "February 25, 2020",
+  "tags": [],
+  "readingTime": 4.2,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Subodh Kumar"
+    }
+  ],
+  "frontMatter": {
+    "title": "Deliver WaveMaker Apps as Micro Frontend Modules",
+    "author": "Subodh Kumar"
+  },
+  "prevItem": {
+    "title": " WaveMaker platform is updated to use WKWebView.",
+    "permalink": "/learn/blog/2020/04/20/wavemaker-wkwebview-upgrade"
+  },
+  "nextItem": {
+    "title": "All-new WaveMaker docs with a powerful Search",
+    "permalink": "/learn/blog/2019/12/13/new-doc-search-feature"
+  }
+}

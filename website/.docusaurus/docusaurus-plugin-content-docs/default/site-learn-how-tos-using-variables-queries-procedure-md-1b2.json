@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/using-variables-queries-procedure",
+  "id": "how-tos/using-variables-queries-procedure",
+  "title": "Using Variables for Queries and Procedure",
+  "description": "---",
+  "source": "@site/../learn/how-tos/using-variables-queries-procedure.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/using-variables-queries-procedure",
+  "permalink": "/learn/docs/how-tos/using-variables-queries-procedure",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/using-variables-queries-procedure.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using Variables for Queries and Procedure",
+    "id": "using-variables-queries-procedure"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Using Navigation Action",
+    "permalink": "/learn/docs/how-tos/using-navigation-action"
+  },
+  "next": {
+    "title": "Using Service Variable in a Form",
+    "permalink": "/learn/docs/how-tos/using-service-variable-form"
+  }
+}

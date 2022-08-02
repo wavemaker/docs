@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker App as Micro Frontend Module"
-id: ""
+id: "micro-frontend"
 sidebar_label: "Micro Frontend App"
 ---
 ---

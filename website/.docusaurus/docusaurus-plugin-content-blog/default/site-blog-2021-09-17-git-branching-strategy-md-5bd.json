@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/09/17/git-branching-strategy",
+  "source": "@site/blog/2021-09-17-git-branching-strategy.md",
+  "title": "Git Branching Strategy",
+  "description": "Project branching allows developers to checkout code from the existing git branch and isolates their work from others. If you are a member of WaveMaker Teams, read further to understand best practices for managing branches in WaveMaker.",
+  "date": "2021-09-17T00:00:00.000Z",
+  "formattedDate": "September 17, 2021",
+  "tags": [],
+  "readingTime": 3.5,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Tarun Dubey"
+    }
+  ],
+  "frontMatter": {
+    "title": "Git Branching Strategy",
+    "author": "Tarun Dubey"
+  },
+  "prevItem": {
+    "title": "Ending Support of WaveMaker 9 Projects",
+    "permalink": "/learn/blog/2021/12/08/wavemaker9x-end-of-support"
+  },
+  "nextItem": {
+    "title": "Important Announcement about Angular 10 Update",
+    "permalink": "/learn/blog/2021/09/01/angular-10-update"
+  }
+}

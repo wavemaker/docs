@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/using-javascript-loop-command",
+  "id": "how-tos/using-javascript-loop-command",
+  "title": "Using JavaScript to loop a command",
+  "description": "---",
+  "source": "@site/../learn/how-tos/using-javascript-loop-command.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/using-javascript-loop-command",
+  "permalink": "/learn/docs/how-tos/using-javascript-loop-command",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/using-javascript-loop-command.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using JavaScript to loop a command",
+    "id": "using-javascript-loop-command"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Using JavaScript from External URL",
+    "permalink": "/learn/docs/how-tos/using-javascript-external-url"
+  },
+  "next": {
+    "title": "Using function for evaluating conditions",
+    "permalink": "/learn/docs/how-tos/using-function-evaluating-conditions"
+  }
+}

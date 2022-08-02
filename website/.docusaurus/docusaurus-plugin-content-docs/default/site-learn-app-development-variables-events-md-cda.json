@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/variables/events",
+  "id": "app-development/variables/events",
+  "title": "Events",
+  "description": "Introducing Variable Events. Learn how it works in WaveMaker.",
+  "source": "@site/../learn/app-development/variables/events.md",
+  "sourceDirName": "app-development/variables",
+  "slug": "/app-development/variables/events",
+  "permalink": "/learn/docs/app-development/variables/events",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/variables/events.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Events",
+    "id": "events"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Notification Action",
+    "permalink": "/learn/docs/app-development/variables/notification-action"
+  },
+  "next": {
+    "title": "JavaScript Access",
+    "permalink": "/learn/docs/app-development/variables/accessing-elements-via-javascript"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "hybrid-mobile/mobile-build-appchef",
+  "id": "hybrid-mobile/mobile-build-appchef",
+  "title": "Mobile Build - AppChef",
+  "description": "---",
+  "source": "@site/../learn/hybrid-mobile/mobile-build-appchef.md",
+  "sourceDirName": "hybrid-mobile",
+  "slug": "/hybrid-mobile/mobile-build-appchef",
+  "permalink": "/learn/docs/hybrid-mobile/mobile-build-appchef",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/hybrid-mobile/mobile-build-appchef.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Mobile Build - AppChef",
+    "id": "mobile-build-appchef"
+  },
+  "sidebar": "Mobile",
+  "previous": {
+    "title": "Mobile Build - Manual",
+    "permalink": "/learn/docs/hybrid-mobile/mobile-build-manual"
+  },
+  "next": {
+    "title": "Mobile Integrations - Amazon Mobile Analytics",
+    "permalink": "/learn/docs/hybrid-mobile/mobile-integrations-amazon-mobile-analytics"
+  }
+}

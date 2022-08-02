@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/onrender-event-list-widget",
+  "id": "how-tos/onrender-event-list-widget",
+  "title": "OnRender Event for List widget",
+  "description": "---",
+  "source": "@site/../learn/how-tos/onrender-event-list-widget.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/onrender-event-list-widget",
+  "permalink": "/learn/docs/how-tos/onrender-event-list-widget",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/onrender-event-list-widget.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "OnRender Event for List widget",
+    "id": "onrender-event-list-widget",
+    "sidebar_label": "OnRender Event"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Creating an Employee List grouped by Birth Month and City",
+    "permalink": "/learn/docs/how-tos/list-multi-grouped"
+  },
+  "next": {
+    "title": "Including a Data Table within a List",
+    "permalink": "/learn/docs/how-tos/list-data-table"
+  }
+}

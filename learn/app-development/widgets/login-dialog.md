@@ -1,6 +1,6 @@
 ---
 title: "Login Dialog"
-id: ""
+id: "login-dialog"
 ---
 ---
 

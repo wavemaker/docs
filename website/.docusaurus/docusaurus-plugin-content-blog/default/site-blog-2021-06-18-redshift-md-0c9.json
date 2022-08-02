@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/06/18/redshift",
+  "source": "@site/blog/2021-06-18-redshift.md",
+  "title": "Redshift Database Integration",
+  "description": "WaveMaker supports Redshift architecture to develop WaveMaker apps by importing the Redshift database into the Studio. You can customize tables and perform queries like any other databases supported by WaveMaker to present data in the UI.",
+  "date": "2021-06-18T00:00:00.000Z",
+  "formattedDate": "June 18, 2021",
+  "tags": [],
+  "readingTime": 3.155,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Praveen Chandra"
+    }
+  ],
+  "frontMatter": {
+    "title": "Redshift Database Integration",
+    "author": "Praveen Chandra"
+  },
+  "prevItem": {
+    "title": "WaveMaker Studio enables faster database imports",
+    "permalink": "/learn/blog/2021/06/24/faster-database-imports-in-studio"
+  },
+  "nextItem": {
+    "title": "Integrate SAP HANA Database with WaveMaker",
+    "permalink": "/learn/blog/2021/06/18/sap-hana"
+  }
+}

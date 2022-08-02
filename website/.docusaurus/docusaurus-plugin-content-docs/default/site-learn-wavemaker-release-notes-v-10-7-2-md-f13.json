@@ -1,0 +1,31 @@
+{
+  "unversionedId": "wavemaker-release-notes/v10-7-2",
+  "id": "wavemaker-release-notes/v10-7-2",
+  "title": "WaveMaker 10.7.2 - Release date: 21 June 2021",
+  "description": "WaveMaker releases an update with bug fixes.",
+  "source": "@site/../learn/wavemaker-release-notes/v10-7-2.md",
+  "sourceDirName": "wavemaker-release-notes",
+  "slug": "/wavemaker-release-notes/v10-7-2",
+  "permalink": "/learn/docs/wavemaker-release-notes/v10-7-2",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/wavemaker-release-notes/v10-7-2.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker 10.7.2 - Release date: 21 June 2021",
+    "id": "v10-7-2",
+    "sidebar_label": "Release v10.7.2"
+  },
+  "sidebar": "Release Notes",
+  "previous": {
+    "title": "Release v10.7.1",
+    "permalink": "/learn/docs/wavemaker-release-notes/v10-7-1"
+  },
+  "next": {
+    "title": "Release v10.7.3",
+    "permalink": "/learn/docs/wavemaker-release-notes/v10-7-3"
+  }
+}

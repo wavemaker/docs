@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/observability/metrics-collection/prometheus",
+  "id": "learn/on-premise/observability/metrics-collection/prometheus",
+  "title": "Prometheus",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/observability/metrics-collection/prometheus.md",
+  "sourceDirName": "learn/on-premise/observability/metrics-collection",
+  "slug": "/learn/on-premise/observability/metrics-collection/prometheus",
+  "permalink": "/learn/docs/learn/on-premise/observability/metrics-collection/prometheus",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/observability/metrics-collection/prometheus.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Prometheus",
+    "id": "prometheus",
+    "sidebar_label": "Prometheus"
+  }
+}

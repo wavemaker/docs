@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/hyper-v/install/apply-license",
+  "id": "learn/on-premise/hyper-v/install/apply-license",
+  "title": "Apply License",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/hyper-v/install/apply-license.md",
+  "sourceDirName": "learn/on-premise/hyper-v/install",
+  "slug": "/learn/on-premise/hyper-v/install/apply-license",
+  "permalink": "/learn/docs/learn/on-premise/hyper-v/install/apply-license",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/hyper-v/install/apply-license.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Apply License",
+    "id": "apply-license",
+    "sidebar_label": "Apply License"
+  }
+}

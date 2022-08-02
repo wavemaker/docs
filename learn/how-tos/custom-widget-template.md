@@ -1,6 +1,6 @@
 ---
 title: "How to apply Custom Template for Widgets"
-id: ""
+id: "custom-widget-template"
 sidebar_label: "Custom Template for Widgets"
 ---
 ---

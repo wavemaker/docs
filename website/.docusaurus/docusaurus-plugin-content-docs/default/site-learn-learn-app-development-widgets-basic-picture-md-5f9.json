@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/widgets/basic/picture",
+  "id": "learn/app-development/widgets/basic/picture",
+  "title": "Picture Widget",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/widgets/basic/picture.md",
+  "sourceDirName": "learn/app-development/widgets/basic",
+  "slug": "/learn/app-development/widgets/basic/picture",
+  "permalink": "/learn/docs/learn/app-development/widgets/basic/picture",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/basic/picture.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Picture Widget",
+    "id": "picture",
+    "sidebar_label": "Picture"
+  }
+}

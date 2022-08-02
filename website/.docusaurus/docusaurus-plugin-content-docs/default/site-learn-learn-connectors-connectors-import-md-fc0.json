@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/connectors/connectors-import",
+  "id": "learn/connectors/connectors-import",
+  "title": "Import Connectors",
+  "description": "---",
+  "source": "@site/../learn/learn/connectors/connectors-import.md",
+  "sourceDirName": "learn/connectors",
+  "slug": "/learn/connectors/connectors-import",
+  "permalink": "/learn/docs/learn/connectors/connectors-import",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/connectors/connectors-import.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Import Connectors",
+    "id": "connectors-import",
+    "sidebar_label": "Import Connectors"
+  }
+}

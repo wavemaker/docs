@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/architecture",
+  "id": "on-premise/architecture",
+  "title": "WaveMaker Enterprise Architecture",
+  "description": "---",
+  "source": "@site/../learn/on-premise/architecture.md",
+  "sourceDirName": "on-premise",
+  "slug": "/on-premise/architecture",
+  "permalink": "/learn/docs/on-premise/architecture",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/architecture.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker Enterprise Architecture",
+    "id": "architecture",
+    "sidebar_label": "Architecture"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Welcome",
+    "permalink": "/learn/docs/on-premise/welcome"
+  },
+  "next": {
+    "title": "Enterprise Setup Process",
+    "permalink": "/learn/docs/on-premise/getting-started"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/using-app-environment-properties",
+  "id": "learn/how-tos/using-app-environment-properties",
+  "title": "Using App Environment Properties",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/using-app-environment-properties.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/using-app-environment-properties",
+  "permalink": "/learn/docs/learn/how-tos/using-app-environment-properties",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/using-app-environment-properties.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using App Environment Properties",
+    "id": "using-app-environment-properties"
+  }
+}

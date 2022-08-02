@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/app-security/app-security",
+  "id": "app-development/app-security/app-security",
+  "title": "App Security",
+  "description": "---",
+  "source": "@site/../learn/app-development/app-security/app-security.md",
+  "sourceDirName": "app-development/app-security",
+  "slug": "/app-development/app-security/",
+  "permalink": "/learn/docs/app-development/app-security/",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/app-security/app-security.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "App Security",
+    "id": "app-security",
+    "sidebar_label": "Overview"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "JavaScript Access",
+    "permalink": "/learn/docs/app-development/variables/accessing-elements-via-javascript"
+  },
+  "next": {
+    "title": "Authentication",
+    "permalink": "/learn/docs/app-development/app-security/authentication"
+  }
+}

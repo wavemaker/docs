@@ -1,6 +1,6 @@
 ---
 title: "Setup Using ConfigPortal"
-id: ""
+id: "setup-using-cw"
 sidebar_label: "Setup Using ConfigPortal"
 ---
 ---

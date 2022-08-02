@@ -1,6 +1,6 @@
 ---
 title: Supported Widgets
-id: ""
+id: "supported-widgets"
 ---
 ---
 

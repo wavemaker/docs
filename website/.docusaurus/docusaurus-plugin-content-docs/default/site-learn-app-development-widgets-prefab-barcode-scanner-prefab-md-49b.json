@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/prefab/barcode-scanner-prefab",
+  "id": "app-development/widgets/prefab/barcode-scanner-prefab",
+  "title": "Barcode Scanner Prefab",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/prefab/barcode-scanner-prefab.md",
+  "sourceDirName": "app-development/widgets/prefab",
+  "slug": "/app-development/widgets/prefab/barcode-scanner-prefab",
+  "permalink": "/learn/docs/app-development/widgets/prefab/barcode-scanner-prefab",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/prefab/barcode-scanner-prefab.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Barcode Scanner Prefab",
+    "id": "barcode-scanner-prefab"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "QRCode",
+    "permalink": "/learn/docs/app-development/widgets/prefab/qrcode"
+  },
+  "next": {
+    "title": "Box Viewer Prefab",
+    "permalink": "/learn/docs/app-development/widgets/prefab/box-viewer-prefab"
+  }
+}

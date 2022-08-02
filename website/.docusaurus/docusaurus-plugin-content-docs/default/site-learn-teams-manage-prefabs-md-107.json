@@ -1,0 +1,30 @@
+{
+  "unversionedId": "teams/manage-prefabs",
+  "id": "teams/manage-prefabs",
+  "title": "Manage Prefabs",
+  "description": "---",
+  "source": "@site/../learn/teams/manage-prefabs.md",
+  "sourceDirName": "teams",
+  "slug": "/teams/manage-prefabs",
+  "permalink": "/learn/docs/teams/manage-prefabs",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/teams/manage-prefabs.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Manage Prefabs",
+    "id": "manage-prefabs"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Manage Projects",
+    "permalink": "/learn/docs/teams/manage-projects"
+  },
+  "next": {
+    "title": "Project Branches",
+    "permalink": "/learn/docs/teams/project-branch"
+  }
+}

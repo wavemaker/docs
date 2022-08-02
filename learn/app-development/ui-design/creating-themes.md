@@ -1,6 +1,6 @@
 ---
 title: "Creating Themes using the Manual Setup"
-id: ""
+id: "creating-themes"
 sidebar_label: "Manual Theme"
 ---
 ---

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/dev-integration/developer-tools",
+  "id": "learn/app-development/dev-integration/developer-tools",
+  "title": "Test and Run (Preview) Apps",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/dev-integration/developer-tools.md",
+  "sourceDirName": "learn/app-development/dev-integration",
+  "slug": "/learn/app-development/dev-integration/developer-tools",
+  "permalink": "/learn/docs/learn/app-development/dev-integration/developer-tools",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/dev-integration/developer-tools.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Test and Run (Preview) Apps",
+    "id": "developer-tools"
+  }
+}

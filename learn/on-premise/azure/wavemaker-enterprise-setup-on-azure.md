@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup on AZURE"
-id: ""
+id: "wavemaker-enterprise-setup-on-azure"
 sidebar_label: "Overview"
 ---
 ---

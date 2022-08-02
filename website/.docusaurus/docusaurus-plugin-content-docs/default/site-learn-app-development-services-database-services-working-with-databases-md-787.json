@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/services/database-services/working-with-databases",
+  "id": "app-development/services/database-services/working-with-databases",
+  "title": "Working with Databases",
+  "description": "---",
+  "source": "@site/../learn/app-development/services/database-services/working-with-databases.md",
+  "sourceDirName": "app-development/services/database-services",
+  "slug": "/app-development/services/database-services/working-with-databases",
+  "permalink": "/learn/docs/app-development/services/database-services/working-with-databases",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/database-services/working-with-databases.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Working with Databases",
+    "id": "working-with-databases"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Database Tools",
+    "permalink": "/learn/docs/app-development/services/database-tools"
+  },
+  "next": {
+    "title": "Data Modelling",
+    "permalink": "/learn/docs/app-development/services/database-services/data-modelling"
+  }
+}

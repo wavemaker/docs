@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/services/web-services/rest-request-timeouts",
+  "id": "learn/app-development/services/web-services/rest-request-timeouts",
+  "title": "REST Request Timeouts",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/services/web-services/rest-request-timeouts.md",
+  "sourceDirName": "learn/app-development/services/web-services",
+  "slug": "/learn/app-development/services/web-services/rest-request-timeouts",
+  "permalink": "/learn/docs/learn/app-development/services/web-services/rest-request-timeouts",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/web-services/rest-request-timeouts.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "REST Request Timeouts",
+    "id": "rest-request-timeouts"
+  }
+}

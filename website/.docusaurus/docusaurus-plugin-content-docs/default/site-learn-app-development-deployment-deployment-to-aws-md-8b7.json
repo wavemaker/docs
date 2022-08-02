@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/deployment/deployment-to-aws",
+  "id": "app-development/deployment/deployment-to-aws",
+  "title": "Configuring for AWS Deployment",
+  "description": "---",
+  "source": "@site/../learn/app-development/deployment/deployment-to-aws.md",
+  "sourceDirName": "app-development/deployment",
+  "slug": "/app-development/deployment/deployment-to-aws",
+  "permalink": "/learn/docs/app-development/deployment/deployment-to-aws",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/deployment/deployment-to-aws.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Configuring for AWS Deployment",
+    "id": "deployment-to-aws",
+    "sidebar_label": "AWS"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Configure Pipeline in WME",
+    "permalink": "/learn/docs/app-development/deployment/configure-pipelines"
+  },
+  "next": {
+    "title": "Azure",
+    "permalink": "/learn/docs/app-development/deployment/deployment-to-azure"
+  }
+}

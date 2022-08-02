@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/wavemaker-release-notes/wavemaker-studio-beta-release-notes",
+  "id": "learn/wavemaker-release-notes/wavemaker-studio-beta-release-notes",
+  "title": "WaveMaker Studio BETA Release Notes",
+  "description": "Studio 7.0 BETA-6 Release Released Date 7.0.0-BETA-6-341",
+  "source": "@site/../learn/learn/wavemaker-release-notes/wavemaker-studio-beta-release-notes.md",
+  "sourceDirName": "learn/wavemaker-release-notes",
+  "slug": "/learn/wavemaker-release-notes/wavemaker-studio-beta-release-notes",
+  "permalink": "/learn/docs/learn/wavemaker-release-notes/wavemaker-studio-beta-release-notes",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/wavemaker-release-notes/wavemaker-studio-beta-release-notes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker Studio BETA Release Notes",
+    "id": "wavemaker-studio-beta-release-notes"
+  }
+}

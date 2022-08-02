@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/how-tos/export-data-data-table-2",
+  "id": "learn/how-tos/export-data-data-table-2",
+  "title": "Export Data from Data Table",
+  "description": "9.4 release",
+  "source": "@site/../learn/learn/how-tos/export-data-data-table-2.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/export-data-data-table-2",
+  "permalink": "/learn/docs/learn/how-tos/export-data-data-table-2",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/export-data-data-table-2.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Export Data from Data Table",
+    "id": "export-data-data-table-2",
+    "sidebar_label": "Export Data from Data Table - 2"
+  }
+}

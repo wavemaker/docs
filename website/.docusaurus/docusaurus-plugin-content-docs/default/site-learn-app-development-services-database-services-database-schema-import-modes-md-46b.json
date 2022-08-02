@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/services/database-services/database-schema-import-modes",
+  "id": "app-development/services/database-services/database-schema-import-modes",
+  "title": "DataBase Schema Import Modes",
+  "description": "---",
+  "source": "@site/../learn/app-development/services/database-services/database-schema-import-modes.md",
+  "sourceDirName": "app-development/services/database-services",
+  "slug": "/app-development/services/database-services/database-schema-import-modes",
+  "permalink": "/learn/docs/app-development/services/database-services/database-schema-import-modes",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/database-services/database-schema-import-modes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "DataBase Schema Import Modes",
+    "id": "database-schema-import-modes",
+    "sidebar_label": "DataBase Schema Modes"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Data Modelling",
+    "permalink": "/learn/docs/app-development/services/database-services/data-modelling"
+  },
+  "next": {
+    "title": "Working with DB Schema",
+    "permalink": "/learn/docs/app-development/services/database-services/working-database-schema"
+  }
+}

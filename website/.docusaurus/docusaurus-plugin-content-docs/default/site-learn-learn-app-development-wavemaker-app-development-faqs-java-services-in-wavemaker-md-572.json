@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/wavemaker-app-development-faqs/java-services-in-wavemaker",
+  "id": "learn/app-development/wavemaker-app-development-faqs/java-services-in-wavemaker",
+  "title": "How Java Services work in WaveMaker?",
+  "description": "See the FAQs section for WaveMaker app development.",
+  "source": "@site/../learn/learn/app-development/wavemaker-app-development-faqs/java-services-in-wavemaker.md",
+  "sourceDirName": "learn/app-development/wavemaker-app-development-faqs",
+  "slug": "/learn/app-development/wavemaker-app-development-faqs/java-services-in-wavemaker",
+  "permalink": "/learn/docs/learn/app-development/wavemaker-app-development-faqs/java-services-in-wavemaker",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/wavemaker-app-development-faqs/java-services-in-wavemaker.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How Java Services work in WaveMaker?",
+    "id": "java-services-in-wavemaker",
+    "sidebar_label": "Java Services in WaveMaker"
+  }
+}

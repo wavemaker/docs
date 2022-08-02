@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/variables/websocket-variable",
+  "id": "learn/app-development/variables/websocket-variable",
+  "title": "WebSocket Variable",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/variables/websocket-variable.md",
+  "sourceDirName": "learn/app-development/variables",
+  "slug": "/learn/app-development/variables/websocket-variable",
+  "permalink": "/learn/docs/learn/app-development/variables/websocket-variable",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/variables/websocket-variable.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WebSocket Variable",
+    "id": "websocket-variable"
+  }
+}

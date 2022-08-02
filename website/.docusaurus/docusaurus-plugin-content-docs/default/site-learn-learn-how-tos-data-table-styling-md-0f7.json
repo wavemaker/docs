@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/data-table-styling",
+  "id": "learn/how-tos/data-table-styling",
+  "title": "Custom Styling Data Table Columns & Rows",
+  "description": "Scenario",
+  "source": "@site/../learn/learn/how-tos/data-table-styling.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/data-table-styling",
+  "permalink": "/learn/docs/learn/how-tos/data-table-styling",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/data-table-styling.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Custom Styling Data Table Columns & Rows",
+    "id": "data-table-styling"
+  }
+}

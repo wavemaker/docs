@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/enterprise-release-notes",
+  "id": "learn/enterprise-release-notes",
+  "title": "Enterprise Release",
+  "description": "This document applies to Enterprise users only. If you are a WaveMaker Online (WMO) user, see WaveMaker Online Release.",
+  "source": "@site/../learn/learn/enterprise-release-notes.md",
+  "sourceDirName": "learn",
+  "slug": "/learn/enterprise-release-notes",
+  "permalink": "/learn/docs/learn/enterprise-release-notes",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/enterprise-release-notes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Enterprise Release",
+    "id": "enterprise-release-notes",
+    "sidebar_label": "Enterprise Release (WME)"
+  }
+}

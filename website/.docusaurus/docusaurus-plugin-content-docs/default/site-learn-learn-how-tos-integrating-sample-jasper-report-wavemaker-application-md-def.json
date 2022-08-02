@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/integrating-sample-jasper-report-wavemaker-application",
+  "id": "learn/how-tos/integrating-sample-jasper-report-wavemaker-application",
+  "title": "Integrating Sample Jasper Report in WaveMaker Application",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/integrating-sample-jasper-report-wavemaker-application.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/integrating-sample-jasper-report-wavemaker-application",
+  "permalink": "/learn/docs/learn/how-tos/integrating-sample-jasper-report-wavemaker-application",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/integrating-sample-jasper-report-wavemaker-application.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Integrating Sample Jasper Report in WaveMaker Application",
+    "id": "integrating-sample-jasper-report-wavemaker-application"
+  }
+}

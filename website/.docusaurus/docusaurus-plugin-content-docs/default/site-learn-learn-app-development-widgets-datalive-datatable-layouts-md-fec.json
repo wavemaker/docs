@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/widgets/datalive/datatable/layouts",
+  "id": "learn/app-development/widgets/datalive/datatable/layouts",
+  "title": "Data Table - Layouts",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/widgets/datalive/datatable/layouts.md",
+  "sourceDirName": "learn/app-development/widgets/datalive/datatable",
+  "slug": "/learn/app-development/widgets/datalive/datatable/layouts",
+  "permalink": "/learn/docs/learn/app-development/widgets/datalive/datatable/layouts",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/datalive/datatable/layouts.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Data Table - Layouts",
+    "id": "layouts",
+    "sidebar_label": "Layouts"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "react-native/build-installers",
+  "id": "react-native/build-installers",
+  "title": "Build React Native app installers using AppChef",
+  "description": "---",
+  "source": "@site/../learn/react-native/build-installers.md",
+  "sourceDirName": "react-native",
+  "slug": "/react-native/build-installers",
+  "permalink": "/learn/docs/react-native/build-installers",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/react-native/build-installers.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Build React Native app installers using AppChef",
+    "sidebar_label": "Build Installers",
+    "id": "build-installers"
+  },
+  "sidebar": "Mobile",
+  "previous": {
+    "title": "Variables",
+    "permalink": "/learn/docs/react-native/supported-variables"
+  },
+  "next": {
+    "title": "Debug Web Preview",
+    "permalink": "/learn/docs/react-native/web-preview-debug"
+  }
+}

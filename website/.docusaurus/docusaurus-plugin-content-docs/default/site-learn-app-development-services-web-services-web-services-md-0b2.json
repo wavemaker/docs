@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/services/web-services/web-services",
+  "id": "app-development/services/web-services/web-services",
+  "title": "Web Services",
+  "description": "Introduction to web services in WaveMaker. Learn how to implement web services in this section.",
+  "source": "@site/../learn/app-development/services/web-services/web-services.md",
+  "sourceDirName": "app-development/services/web-services",
+  "slug": "/app-development/services/web-services/",
+  "permalink": "/learn/docs/app-development/services/web-services/",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/web-services/web-services.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Web Services",
+    "id": "web-services",
+    "sidebar_label": "Web Services Overview"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Database Service APIs",
+    "permalink": "/learn/docs/app-development/services/api-designer/database-service-apis"
+  },
+  "next": {
+    "title": "REST Services",
+    "permalink": "/learn/docs/app-development/services/web-services/rest-services"
+  }
+}

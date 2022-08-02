@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/dev-integration/extending-application-using-ides",
+  "id": "app-development/dev-integration/extending-application-using-ides",
+  "title": "Extending the Application using IDEs",
+  "description": "---",
+  "source": "@site/../learn/app-development/dev-integration/extending-application-using-ides.md",
+  "sourceDirName": "app-development/dev-integration",
+  "slug": "/app-development/dev-integration/extending-application-using-ides",
+  "permalink": "/learn/docs/app-development/dev-integration/extending-application-using-ides",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/dev-integration/extending-application-using-ides.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Extending the Application using IDEs",
+    "id": "extending-application-using-ides"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Developer Collaboration",
+    "permalink": "/learn/docs/app-development/dev-integration/developer-collaboration"
+  },
+  "next": {
+    "title": "Import, Export & Update Apps",
+    "permalink": "/learn/docs/app-development/dev-integration/import-export-update-apps"
+  }
+}

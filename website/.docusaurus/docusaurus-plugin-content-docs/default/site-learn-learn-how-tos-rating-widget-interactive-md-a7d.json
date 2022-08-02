@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/rating-widget-interactive",
+  "id": "learn/how-tos/rating-widget-interactive",
+  "title": "Building an Interactive Rating Widget",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/rating-widget-interactive.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/rating-widget-interactive",
+  "permalink": "/learn/docs/learn/how-tos/rating-widget-interactive",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/rating-widget-interactive.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Building an Interactive Rating Widget",
+    "id": "rating-widget-interactive"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/widgets/datalive/datatable/row-expansion-data-table",
+  "id": "learn/app-development/widgets/datalive/datatable/row-expansion-data-table",
+  "title": "Row Expansion in Data Table",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/widgets/datalive/datatable/row-expansion-data-table.md",
+  "sourceDirName": "learn/app-development/widgets/datalive/datatable",
+  "slug": "/learn/app-development/widgets/datalive/datatable/row-expansion-data-table",
+  "permalink": "/learn/docs/learn/app-development/widgets/datalive/datatable/row-expansion-data-table",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/datalive/datatable/row-expansion-data-table.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Row Expansion in Data Table",
+    "id": "row-expansion-data-table",
+    "sidebar_label": "Row Expansion"
+  }
+}

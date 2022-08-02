@@ -1,0 +1,31 @@
+{
+  "unversionedId": "hybrid-mobile/offline-data-support-implementation",
+  "id": "hybrid-mobile/offline-data-support-implementation",
+  "title": "Offline Data Support - Implementation",
+  "description": "---",
+  "source": "@site/../learn/hybrid-mobile/offline-data-support-implementation.md",
+  "sourceDirName": "hybrid-mobile",
+  "slug": "/hybrid-mobile/offline-data-support-implementation",
+  "permalink": "/learn/docs/hybrid-mobile/offline-data-support-implementation",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/hybrid-mobile/offline-data-support-implementation.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Offline Data Support - Implementation",
+    "id": "offline-data-support-implementation",
+    "sidebar_label": "Implementation"
+  },
+  "sidebar": "Mobile",
+  "previous": {
+    "title": "Offline Data Support",
+    "permalink": "/learn/docs/hybrid-mobile/offline-data-support"
+  },
+  "next": {
+    "title": "Switching between Offline and Online Mode",
+    "permalink": "/learn/docs/hybrid-mobile/switching-offline-online-mode"
+  }
+}

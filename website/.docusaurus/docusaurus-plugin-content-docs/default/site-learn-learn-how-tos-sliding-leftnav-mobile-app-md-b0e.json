@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/sliding-leftnav-mobile-app",
+  "id": "learn/how-tos/sliding-leftnav-mobile-app",
+  "title": "Sliding left navigation for Mobile App",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/sliding-leftnav-mobile-app.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/sliding-leftnav-mobile-app",
+  "permalink": "/learn/docs/learn/how-tos/sliding-leftnav-mobile-app",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/sliding-leftnav-mobile-app.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Sliding left navigation for Mobile App",
+    "id": "sliding-leftnav-mobile-app"
+  }
+}

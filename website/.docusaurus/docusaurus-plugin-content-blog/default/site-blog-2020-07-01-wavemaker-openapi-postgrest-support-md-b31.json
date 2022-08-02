@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/07/01/wavemaker-openapi-postgrest-support",
+  "source": "@site/blog/2020-07-01-wavemaker-openapi-postgrest-support.md",
+  "title": "PostgREST OpenAPI support in WaveMaker",
+  "description": "WaveMaker has added support for importing API that are documented using OpenAPIs, Swagger specification in 10.4. However building a robust OpenAPI support is very important as different API while using OpenAPI/Swagger document their endpoints in subtly different ways. We tried importing OpenAPI documents from different API sources. One such example is when we tested an OpenAPI document generated through PostgREST. In this blog we'll discuss what changes we have made in 10.5 in order to support OpenAPI documents generated from such sources.",
+  "date": "2020-07-01T00:00:00.000Z",
+  "formattedDate": "July 1, 2020",
+  "tags": [],
+  "readingTime": 2.7,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Nikhilesh K V"
+    }
+  ],
+  "frontMatter": {
+    "title": "PostgREST OpenAPI support in WaveMaker",
+    "author": "Nikhilesh K V"
+  },
+  "prevItem": {
+    "title": "Theme builder is ready with a new update",
+    "permalink": "/learn/blog/2020/07/03/Another-update-to-theme-builder"
+  },
+  "nextItem": {
+    "title": "Fully automated and scalable test execution using k8s",
+    "permalink": "/learn/blog/2020/06/30/run-zalenium-tests-on-kubernetes-blog"
+  }
+}

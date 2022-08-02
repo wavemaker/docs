@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/ui-design/page-concepts/partial-pages",
+  "id": "learn/app-development/ui-design/page-concepts/partial-pages",
+  "title": "Partial Page",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/ui-design/page-concepts/partial-pages.md",
+  "sourceDirName": "learn/app-development/ui-design/page-concepts",
+  "slug": "/learn/app-development/ui-design/page-concepts/partial-pages",
+  "permalink": "/learn/docs/learn/app-development/ui-design/page-concepts/partial-pages",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/ui-design/page-concepts/partial-pages.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Partial Page",
+    "id": "partial-pages"
+  }
+}

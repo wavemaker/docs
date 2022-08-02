@@ -1,6 +1,6 @@
 ---
 title: "Building Project with Maven"
-id: ""
+id: "building-with-maven"
 ---
 ---
 This guide helps to create a war file for deploying the project in your local machine or a web server like Apache Tomcat. It also provides the required information to host static content and web applications separately.

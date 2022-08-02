@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/wavemaker-overview/wavemaker-best-practices",
+  "id": "learn/app-development/wavemaker-overview/wavemaker-best-practices",
+  "title": "WaveMaker Best Practices",
+  "description": "Best Practices to follow while building apps using WaveMaker.   Responsive Web Apps",
+  "source": "@site/../learn/learn/app-development/wavemaker-overview/wavemaker-best-practices.md",
+  "sourceDirName": "learn/app-development/wavemaker-overview",
+  "slug": "/learn/app-development/wavemaker-overview/wavemaker-best-practices",
+  "permalink": "/learn/docs/learn/app-development/wavemaker-overview/wavemaker-best-practices",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/wavemaker-overview/wavemaker-best-practices.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker Best Practices",
+    "id": "wavemaker-best-practices"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/building-cascading-lists",
+  "id": "how-tos/building-cascading-lists",
+  "title": "Building Cascading Lists",
+  "description": "Scenario: To show Master-Detail records using List",
+  "source": "@site/../learn/how-tos/building-cascading-lists.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/building-cascading-lists",
+  "permalink": "/learn/docs/how-tos/building-cascading-lists",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/building-cascading-lists.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Building Cascading Lists",
+    "id": "building-cascading-lists"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Building an Editable List",
+    "permalink": "/learn/docs/how-tos/building-editable-list"
+  },
+  "next": {
+    "title": "Accessing List Items",
+    "permalink": "/learn/docs/how-tos/list-item-access"
+  }
+}

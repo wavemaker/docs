@@ -1,6 +1,6 @@
 ---
 title: Manage Projects
-id: ""
+id: "manage-projects"
 ---
 ---
 

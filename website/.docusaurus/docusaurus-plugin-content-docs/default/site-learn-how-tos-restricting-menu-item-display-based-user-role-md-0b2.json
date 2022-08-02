@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/restricting-menu-item-display-based-user-role",
+  "id": "how-tos/restricting-menu-item-display-based-user-role",
+  "title": "Restricting Menu Items based on the User Role",
+  "description": "---",
+  "source": "@site/../learn/how-tos/restricting-menu-item-display-based-user-role.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/restricting-menu-item-display-based-user-role",
+  "permalink": "/learn/docs/how-tos/restricting-menu-item-display-based-user-role",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/restricting-menu-item-display-based-user-role.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Restricting Menu Items based on the User Role",
+    "id": "restricting-menu-item-display-based-user-role",
+    "sidebar_label": "Restricting Menu Items based on the User Role"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Dynamic Menu based on User Role",
+    "permalink": "/learn/docs/how-tos/dynamic-menu-based-user-role"
+  },
+  "next": {
+    "title": "Localization for Dropdown Menu",
+    "permalink": "/learn/docs/how-tos/implementing-localization-dropdown-menu"
+  }
+}

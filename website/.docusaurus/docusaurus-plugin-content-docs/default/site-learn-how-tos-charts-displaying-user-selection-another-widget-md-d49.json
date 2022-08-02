@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/charts-displaying-user-selection-another-widget",
+  "id": "how-tos/charts-displaying-user-selection-another-widget",
+  "title": "Charts - Displaying User Selection in another Widget",
+  "description": "---",
+  "source": "@site/../learn/how-tos/charts-displaying-user-selection-another-widget.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/charts-displaying-user-selection-another-widget",
+  "permalink": "/learn/docs/how-tos/charts-displaying-user-selection-another-widget",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/charts-displaying-user-selection-another-widget.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Charts - Displaying User Selection in another Widget",
+    "id": "charts-displaying-user-selection-another-widget",
+    "sidebar_label": "Display User Selection in another Widget"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Working with Charts",
+    "permalink": "/learn/docs/how-tos/working-with-charts"
+  },
+  "next": {
+    "title": "Handling Dynamic Data",
+    "permalink": "/learn/docs/how-tos/charts-handling-dynamic-data"
+  }
+}

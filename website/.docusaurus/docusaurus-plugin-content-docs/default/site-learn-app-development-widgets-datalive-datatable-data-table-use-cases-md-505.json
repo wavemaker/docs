@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/datatable/data-table-use-cases",
+  "id": "app-development/widgets/datalive/datatable/data-table-use-cases",
+  "title": "Data Table - Use Cases",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/datatable/data-table-use-cases.md",
+  "sourceDirName": "app-development/widgets/datalive/datatable",
+  "slug": "/app-development/widgets/datalive/datatable/data-table-use-cases",
+  "permalink": "/learn/docs/app-development/widgets/datalive/datatable/data-table-use-cases",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/datatable/data-table-use-cases.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Data Table - Use Cases",
+    "id": "data-table-use-cases",
+    "sidebar_label": "Use Cases"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Events & Methods",
+    "permalink": "/learn/docs/app-development/widgets/datalive/datatable/datatable-events-methods"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/learn/docs/app-development/widgets/datalive/list"
+  }
+}

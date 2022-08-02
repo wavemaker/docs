@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/vmware-esxi/install/apply-license",
+  "id": "on-premise/vmware-esxi/install/apply-license",
+  "title": "Apply License",
+  "description": "---",
+  "source": "@site/../learn/on-premise/vmware-esxi/install/apply-license.md",
+  "sourceDirName": "on-premise/vmware-esxi/install",
+  "slug": "/on-premise/vmware-esxi/install/apply-license",
+  "permalink": "/learn/docs/on-premise/vmware-esxi/install/apply-license",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/vmware-esxi/install/apply-license.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Apply License",
+    "id": "apply-license",
+    "sidebar_label": "Apply License"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Setup Using ConfigPortal",
+    "permalink": "/learn/docs/on-premise/vmware-esxi/install/setup-using-cw"
+  },
+  "next": {
+    "title": "Users Onboarding",
+    "permalink": "/learn/docs/on-premise/configure/config-users-auth-providers"
+  }
+}

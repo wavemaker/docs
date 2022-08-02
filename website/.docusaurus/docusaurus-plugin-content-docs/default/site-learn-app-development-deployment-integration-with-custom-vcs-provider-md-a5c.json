@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/deployment/integration-with-custom-vcs-provider",
+  "id": "app-development/deployment/integration-with-custom-vcs-provider",
+  "title": "Integration with Custom VCS provider",
+  "description": "---",
+  "source": "@site/../learn/app-development/deployment/integration-with-custom-vcs-provider.md",
+  "sourceDirName": "app-development/deployment",
+  "slug": "/app-development/deployment/integration-with-custom-vcs-provider",
+  "permalink": "/learn/docs/app-development/deployment/integration-with-custom-vcs-provider",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/deployment/integration-with-custom-vcs-provider.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Integration with Custom VCS provider",
+    "id": "integration-with-custom-vcs-provider",
+    "sidebar_label": "Custom VCS Integration"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Push Code to External repo",
+    "permalink": "/learn/docs/app-development/deployment/push-code-to-external-repo"
+  },
+  "next": {
+    "title": "Export WaveMaker Application",
+    "permalink": "/learn/docs/app-development/deployment/export-wavemaker-application"
+  }
+}

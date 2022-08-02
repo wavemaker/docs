@@ -1,0 +1,21 @@
+{
+  "unversionedId": "app-development/widgets/form-widgets/fileupload-use-cases",
+  "id": "app-development/widgets/form-widgets/fileupload-use-cases",
+  "title": "FileUpload - Use Cases",
+  "description": "FileUpload widget can be used to let users upload files to your apps. WaveMaker FileUpload widget generates a Java Service to enable additional file processing functionality. It exposes few methods like uploadFile, listFiles, and deleteFile.",
+  "source": "@site/../learn/app-development/widgets/form-widgets/fileupload-use-cases.md",
+  "sourceDirName": "app-development/widgets/form-widgets",
+  "slug": "/app-development/widgets/form-widgets/fileupload-use-cases",
+  "permalink": "/learn/docs/app-development/widgets/form-widgets/fileupload-use-cases",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/form-widgets/fileupload-use-cases.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "FileUpload - Use Cases",
+    "id": "fileupload-use-cases"
+  }
+}

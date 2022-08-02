@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/variables/database-crud",
+  "id": "app-development/variables/database-crud",
+  "title": "Variable for Database CRUD",
+  "description": "---",
+  "source": "@site/../learn/app-development/variables/database-crud.md",
+  "sourceDirName": "app-development/variables",
+  "slug": "/app-development/variables/database-crud",
+  "permalink": "/learn/docs/app-development/variables/database-crud",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/variables/database-crud.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Variable for Database CRUD",
+    "id": "database-crud",
+    "sidebar_label": "Database CRUD"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Queries & Procedures - Java Services",
+    "permalink": "/learn/docs/app-development/services/database-services/invoking-queriesprocedures-java-services"
+  },
+  "next": {
+    "title": "CRUD Event Listeners",
+    "permalink": "/learn/docs/app-development/services/database-crud-event-listeners"
+  }
+}

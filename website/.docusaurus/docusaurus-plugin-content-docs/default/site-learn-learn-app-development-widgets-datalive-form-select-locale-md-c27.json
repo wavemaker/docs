@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/datalive/form/select-locale",
+  "id": "learn/app-development/widgets/datalive/form/select-locale",
+  "title": "Select Locale",
+  "description": "Localization refers to the tools, techniques, and steps taken to enable your application to run in other languages. WaveMaker allows you to create a  dictionary of localized messages so that users can change the language of the application to experience the application in their language.",
+  "source": "@site/../learn/learn/app-development/widgets/datalive/form/select-locale.md",
+  "sourceDirName": "learn/app-development/widgets/datalive/form",
+  "slug": "/learn/app-development/widgets/datalive/form/select-locale",
+  "permalink": "/learn/docs/learn/app-development/widgets/datalive/form/select-locale",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/datalive/form/select-locale.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Select Locale",
+    "id": "select-locale"
+  }
+}

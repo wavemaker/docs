@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/livefilter/live-filter-data-source",
+  "id": "app-development/widgets/datalive/livefilter/live-filter-data-source",
+  "title": "Live Filter - Data Source",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/livefilter/live-filter-data-source.md",
+  "sourceDirName": "app-development/widgets/datalive/livefilter",
+  "slug": "/app-development/widgets/datalive/livefilter/live-filter-data-source",
+  "permalink": "/learn/docs/app-development/widgets/datalive/livefilter/live-filter-data-source",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/livefilter/live-filter-data-source.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Live Filter - Data Source",
+    "id": "live-filter-data-source",
+    "sidebar_label": "Data Source"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Creating a Live Filter",
+    "permalink": "/learn/docs/app-development/widgets/datalive/livefilter/live-filter-basic-usage"
+  },
+  "next": {
+    "title": "Layouts",
+    "permalink": "/learn/docs/app-development/widgets/datalive/livefilter/livefilter-layouts"
+  }
+}

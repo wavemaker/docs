@@ -16,7 +16,7 @@ id: "currency"
 | Currency | Currency determines which currency symbol should be shown for the currency widget. Choose from the available list. |
 | **Accessibility** |
 | Hint | Any text you enter for this property will be shown as a tooltip when the mouse hovers over this widget for _1.5 seconds. _It can be bound to a variable or another widget. |
-| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | Shortcut Key | The shortcut key property specifies a shortcut key to activate/focus an element. (*[See below for details](#shortcut)) |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |

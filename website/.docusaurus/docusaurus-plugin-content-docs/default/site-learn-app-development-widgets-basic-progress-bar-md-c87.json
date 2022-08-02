@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/basic/progress-bar",
+  "id": "app-development/widgets/basic/progress-bar",
+  "title": "Progress Bar",
+  "description": "Progress Bar widget can be used to show the status of any given event. It can be used to represent the completion progress of a task. Progress may be either indeterminate — meaning it is unclear how much work remains before the task is complete (e.g., the task is waiting for a response from a remote host) — or a numeric value between 0 and a given maximum, explicitly specifying the fraction of work that has so far been completed",
+  "source": "@site/../learn/app-development/widgets/basic/progress-bar.md",
+  "sourceDirName": "app-development/widgets/basic",
+  "slug": "/app-development/widgets/basic/progress-bar",
+  "permalink": "/learn/docs/app-development/widgets/basic/progress-bar",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/basic/progress-bar.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Progress Bar",
+    "id": "progress-bar"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Richtext Editor",
+    "permalink": "/learn/docs/app-development/widgets/basic/richtext-editor"
+  },
+  "next": {
+    "title": "Progress Circle",
+    "permalink": "/learn/docs/app-development/widgets/progress-circle"
+  }
+}

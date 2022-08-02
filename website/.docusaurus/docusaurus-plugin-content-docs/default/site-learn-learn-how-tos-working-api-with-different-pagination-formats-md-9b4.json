@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/working-api-with-different-pagination-formats",
+  "id": "learn/how-tos/working-api-with-different-pagination-formats",
+  "title": "Working with API with different pagination formats",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/working-api-with-different-pagination-formats.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/working-api-with-different-pagination-formats",
+  "permalink": "/learn/docs/learn/how-tos/working-api-with-different-pagination-formats",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/working-api-with-different-pagination-formats.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Working with API with different pagination formats",
+    "id": "working-api-with-different-pagination-formats"
+  }
+}

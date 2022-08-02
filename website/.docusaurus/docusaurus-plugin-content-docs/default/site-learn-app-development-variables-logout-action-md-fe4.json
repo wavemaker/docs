@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/variables/logout-action",
+  "id": "app-development/variables/logout-action",
+  "title": "Logout Action",
+  "description": "---",
+  "source": "@site/../learn/app-development/variables/logout-action.md",
+  "sourceDirName": "app-development/variables",
+  "slug": "/app-development/variables/logout-action",
+  "permalink": "/learn/docs/app-development/variables/logout-action",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/variables/logout-action.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Logout Action",
+    "id": "logout-action"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Login Action",
+    "permalink": "/learn/docs/app-development/variables/login-action"
+  },
+  "next": {
+    "title": "Timer Action",
+    "permalink": "/learn/docs/app-development/variables/timer-action"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "wavemaker-release-notes/v11-0-1",
+  "id": "wavemaker-release-notes/v11-0-1",
+  "title": "WaveMaker 11 Beta - Release date: 06 June 2022",
+  "description": "WaveMaker released another version update with new features and bug fixes.",
+  "source": "@site/../learn/wavemaker-release-notes/v11-0-1.md",
+  "sourceDirName": "wavemaker-release-notes",
+  "slug": "/wavemaker-release-notes/v11-0-1",
+  "permalink": "/learn/docs/wavemaker-release-notes/v11-0-1",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/wavemaker-release-notes/v11-0-1.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker 11 Beta - Release date: 06 June 2022",
+    "id": "v11-0-1",
+    "sidebar_label": "Release v11.beta"
+  },
+  "sidebar": "Release Notes",
+  "previous": {
+    "title": "Upgrade Guide 11 beta",
+    "permalink": "/learn/docs/how-tos/upgrade-guide-wavemaker-10-to-11"
+  },
+  "next": {
+    "title": "Release History",
+    "permalink": "/learn/docs/wavemaker-release-notes/v10-release-summary"
+  }
+}

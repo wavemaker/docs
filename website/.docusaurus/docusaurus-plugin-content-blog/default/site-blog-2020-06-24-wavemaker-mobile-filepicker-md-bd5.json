@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/06/24/wavemaker-mobile-filepicker",
+  "source": "@site/blog/2020-06-24-wavemaker-mobile-filepicker.md",
+  "title": "New file picker for mobile apps - Improvements in UI to select files in mobile",
+  "description": "Uploading files from a mobile phone is a common use case that every mobile app has. Until last release, WaveMaker UI to select files had the following problems.",
+  "date": "2020-06-24T00:00:00.000Z",
+  "formattedDate": "June 24, 2020",
+  "tags": [],
+  "readingTime": 1.545,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Srinivasa Rao Boyina"
+    }
+  ],
+  "frontMatter": {
+    "title": "New file picker for mobile apps - Improvements in UI to select files in mobile",
+    "author": "Srinivasa Rao Boyina"
+  },
+  "prevItem": {
+    "title": "Fully automated and scalable test execution using k8s",
+    "permalink": "/learn/blog/2020/06/30/run-zalenium-tests-on-kubernetes-blog"
+  },
+  "nextItem": {
+    "title": "Deliver faster applications with WaveMaker!",
+    "permalink": "/learn/blog/2020/06/23/deliver-faster-applications-with-wavemaker"
+  }
+}

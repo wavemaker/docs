@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/localization-data-table-column-headings",
+  "id": "how-tos/localization-data-table-column-headings",
+  "title": "Localization of Data Table Column Headings",
+  "description": "App Localization is the process of rendering your app in multiple languages. WaveMaker allows you to create a dictionary of localized messages so that users can change the language of the application to experience the application in their language.",
+  "source": "@site/../learn/how-tos/localization-data-table-column-headings.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/localization-data-table-column-headings",
+  "permalink": "/learn/docs/how-tos/localization-data-table-column-headings",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/localization-data-table-column-headings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Localization of Data Table Column Headings",
+    "id": "localization-data-table-column-headings"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Localization of Error Messages",
+    "permalink": "/learn/docs/how-tos/localization-error-messages"
+  },
+  "next": {
+    "title": "SAML Integration - OneLogin",
+    "permalink": "/learn/docs/how-tos/saml-integration-onelogin"
+  }
+}

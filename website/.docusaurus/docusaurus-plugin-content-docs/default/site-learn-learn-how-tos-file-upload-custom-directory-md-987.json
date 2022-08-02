@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/file-upload-custom-directory",
+  "id": "learn/how-tos/file-upload-custom-directory",
+  "title": "File Upload - Custom Directory",
+  "description": "This section showcases using FileUpload widget to :",
+  "source": "@site/../learn/learn/how-tos/file-upload-custom-directory.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/file-upload-custom-directory",
+  "permalink": "/learn/docs/learn/how-tos/file-upload-custom-directory",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/file-upload-custom-directory.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "File Upload - Custom Directory",
+    "id": "file-upload-custom-directory"
+  }
+}

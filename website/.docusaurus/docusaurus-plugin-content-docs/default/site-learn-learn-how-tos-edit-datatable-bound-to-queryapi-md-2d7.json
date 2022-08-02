@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/how-tos/edit-datatable-bound-to-queryapi",
+  "id": "learn/how-tos/edit-datatable-bound-to-queryapi",
+  "title": "Edit DataTable records bound to Query API",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/edit-datatable-bound-to-queryapi.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/edit-datatable-bound-to-queryapi",
+  "permalink": "/learn/docs/learn/how-tos/edit-datatable-bound-to-queryapi",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/edit-datatable-bound-to-queryapi.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Edit DataTable records bound to Query API",
+    "id": "edit-datatable-bound-to-queryapi",
+    "sidebar_label": "Edit DataTable records bound to Query API"
+  }
+}

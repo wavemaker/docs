@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/services/database-tools",
+  "id": "app-development/services/database-tools",
+  "title": "Database Tools",
+  "description": "Learn what database tools you can use to work with database services in WaveMaker.",
+  "source": "@site/../learn/app-development/services/database-tools.md",
+  "sourceDirName": "app-development/services",
+  "slug": "/app-development/services/database-tools",
+  "permalink": "/learn/docs/app-development/services/database-tools",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/database-tools.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Database Tools",
+    "id": "database-tools"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Database Services Overview",
+    "permalink": "/learn/docs/app-development/services/database-services/"
+  },
+  "next": {
+    "title": "Working with Databases",
+    "permalink": "/learn/docs/app-development/services/database-services/working-with-databases"
+  }
+}

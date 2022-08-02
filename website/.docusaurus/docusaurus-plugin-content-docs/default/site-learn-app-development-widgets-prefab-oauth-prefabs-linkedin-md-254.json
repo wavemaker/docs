@@ -1,0 +1,26 @@
+{
+  "unversionedId": "app-development/widgets/prefab/oauth-prefabs/linkedin",
+  "id": "app-development/widgets/prefab/oauth-prefabs/linkedin",
+  "title": "LinkedIn",
+  "description": "Introduction",
+  "source": "@site/../learn/app-development/widgets/prefab/oauth-prefabs/linkedin.md",
+  "sourceDirName": "app-development/widgets/prefab/oauth-prefabs",
+  "slug": "/app-development/widgets/prefab/oauth-prefabs/linkedin",
+  "permalink": "/learn/docs/app-development/widgets/prefab/oauth-prefabs/linkedin",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/prefab/oauth-prefabs/linkedin.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "LinkedIn",
+    "id": "linkedin"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Instagram",
+    "permalink": "/learn/docs/app-development/widgets/prefab/oauth-prefabs/instagram"
+  }
+}

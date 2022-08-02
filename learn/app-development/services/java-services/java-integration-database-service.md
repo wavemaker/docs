@@ -1,6 +1,6 @@
 ---
 title: "Integrate Database Service in JavaServices"
-id: ""
+id: "java-integration-database-service"
 sidebar_label: "DB Service Integration"
 ---
 ---

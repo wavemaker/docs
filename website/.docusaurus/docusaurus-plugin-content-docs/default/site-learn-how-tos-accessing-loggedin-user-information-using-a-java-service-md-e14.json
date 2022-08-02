@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/accessing-loggedin-user-information-using-a-java-service",
+  "id": "how-tos/accessing-loggedin-user-information-using-a-java-service",
+  "title": "Accessing Logged-in User Details using Java Service",
+  "description": "---",
+  "source": "@site/../learn/how-tos/accessing-loggedin-user-information-using-a-java-service.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/accessing-loggedin-user-information-using-a-java-service",
+  "permalink": "/learn/docs/how-tos/accessing-loggedin-user-information-using-a-java-service",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/accessing-loggedin-user-information-using-a-java-service.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Accessing Logged-in User Details using Java Service",
+    "id": "accessing-loggedin-user-information-using-a-java-service"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Pre-Post Processing for Database Service APIs",
+    "permalink": "/learn/docs/how-tos/pre-post-processing-db-service-apis"
+  },
+  "next": {
+    "title": "Design a workflow in Camunda BPM and integrate into a WaveMaker app",
+    "permalink": "/learn/docs/how-tos/camunda-wavemaker-app-integration"
+  }
+}

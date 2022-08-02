@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/connect-azure-sql-server",
+  "id": "learn/how-tos/connect-azure-sql-server",
+  "title": "Connect To Azure SQL Server",
+  "description": "Prerequisites",
+  "source": "@site/../learn/learn/how-tos/connect-azure-sql-server.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/connect-azure-sql-server",
+  "permalink": "/learn/docs/learn/how-tos/connect-azure-sql-server",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/connect-azure-sql-server.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Connect To Azure SQL Server",
+    "id": "connect-azure-sql-server"
+  }
+}

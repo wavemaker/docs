@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/aws-s3-connector",
+  "id": "how-tos/aws-s3-connector",
+  "title": "Integrate Amazon S3(Simple Storage Service) into WaveMaker App",
+  "description": "---",
+  "source": "@site/../learn/how-tos/aws-s3-connector.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/aws-s3-connector",
+  "permalink": "/learn/docs/how-tos/aws-s3-connector",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/aws-s3-connector.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Integrate Amazon S3(Simple Storage Service) into WaveMaker App",
+    "id": "aws-s3-connector",
+    "sidebar_label": "Integrate Amazon S3 into WaveMaker App"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Insert Data from Excel into Database",
+    "permalink": "/learn/docs/how-tos/insert-data-from-excel"
+  },
+  "next": {
+    "title": "Integrate Twilio Connector",
+    "permalink": "/learn/docs/how-tos/twilio-connector"
+  }
+}

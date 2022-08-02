@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/01/04/spring-session-persistence",
+  "source": "@site/blog/2021-01-04-spring-session-persistence.md",
+  "title": "Understanding Scaling of WaveMaker Applications",
+  "description": "You have developed an exceptional application, and the demand for your application is increasing. You need to expand its accessibility and develop a plan to scale your application. Understanding how to scale an application means ensuring that your application can handle a larger number of users simultaneously. WaveMaker generates code based on open standards and brings best practices to the way applications should be architected. This makes scaling the application easy to understand and apply.",
+  "date": "2021-01-04T00:00:00.000Z",
+  "formattedDate": "January 4, 2021",
+  "tags": [],
+  "readingTime": 4.115,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Swetha Kundaram"
+    }
+  ],
+  "frontMatter": {
+    "title": "Understanding Scaling of WaveMaker Applications",
+    "author": "Swetha Kundaram"
+  },
+  "prevItem": {
+    "title": "Theme Builder with some coding (Build + Edit)",
+    "permalink": "/learn/blog/2021/04/19/Build-theme-and-edit"
+  },
+  "nextItem": {
+    "title": "Automatically Import your Website Branding Styles into a Theme",
+    "permalink": "/learn/blog/2020/12/18/generate-color-palette-from-url"
+  }
+}

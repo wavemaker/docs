@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/setting-swipe-gestures-list-widget",
+  "id": "how-tos/setting-swipe-gestures-list-widget",
+  "title": "Setting Swipe Gestures on a List Widget",
+  "description": "---",
+  "source": "@site/../learn/how-tos/setting-swipe-gestures-list-widget.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/setting-swipe-gestures-list-widget",
+  "permalink": "/learn/docs/how-tos/setting-swipe-gestures-list-widget",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/setting-swipe-gestures-list-widget.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Setting Swipe Gestures on a List Widget",
+    "id": "setting-swipe-gestures-list-widget"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Notify users about new update",
+    "permalink": "/learn/docs/how-tos/mobile-notify-new-version-update"
+  },
+  "next": {
+    "title": "Working with Pull to Refresh",
+    "permalink": "/learn/docs/how-tos/working-pull-refresh"
+  }
+}

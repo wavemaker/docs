@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/deployment/phase-configuration",
+  "id": "app-development/deployment/phase-configuration",
+  "title": "Phase configurations",
+  "description": "---",
+  "source": "@site/../learn/app-development/deployment/phase-configuration.md",
+  "sourceDirName": "app-development/deployment",
+  "slug": "/app-development/deployment/phase-configuration",
+  "permalink": "/learn/docs/app-development/deployment/phase-configuration",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/deployment/phase-configuration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Phase configurations",
+    "id": "phase-configuration"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "DigitalOcean",
+    "permalink": "/learn/docs/app-development/deployment/deployment-to-digital-ocean"
+  },
+  "next": {
+    "title": "Webhooks Integration",
+    "permalink": "/learn/docs/app-development/deployment/webhooks-integration"
+  }
+}

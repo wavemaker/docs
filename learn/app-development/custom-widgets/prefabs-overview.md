@@ -1,6 +1,6 @@
 ---
 title: "Prefabs - Custom Widgets & Extensions"
-id: ""
+id: "prefabs-overview"
 sidebar_label: "Prefabs Overview"
 ---
 ---

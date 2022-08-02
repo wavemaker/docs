@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/capturing-card-items",
+  "id": "how-tos/capturing-card-items",
+  "title": "Capturing Card Items",
+  "description": "1. currentItem & currentItemWidgets",
+  "source": "@site/../learn/how-tos/capturing-card-items.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/capturing-card-items",
+  "permalink": "/learn/docs/how-tos/capturing-card-items",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/capturing-card-items.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Capturing Card Items",
+    "id": "capturing-card-items"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Custom Date Picker in Mobile",
+    "permalink": "/learn/docs/how-tos/custom-date-picker"
+  },
+  "next": {
+    "title": "Customising Data Table Row Action",
+    "permalink": "/learn/docs/how-tos/data-table-actions"
+  }
+}

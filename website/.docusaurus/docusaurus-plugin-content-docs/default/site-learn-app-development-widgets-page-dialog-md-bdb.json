@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/page-dialog",
+  "id": "app-development/widgets/page-dialog",
+  "title": "Page Dialog",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/page-dialog.md",
+  "sourceDirName": "app-development/widgets",
+  "slug": "/app-development/widgets/page-dialog",
+  "permalink": "/learn/docs/app-development/widgets/page-dialog",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/page-dialog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Page Dialog",
+    "id": "page-dialog"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "IFrame Dialog",
+    "permalink": "/learn/docs/app-development/widgets/iframe-dialog"
+  },
+  "next": {
+    "title": "Login Dialog",
+    "permalink": "/learn/docs/app-development/widgets/login-dialog"
+  }
+}

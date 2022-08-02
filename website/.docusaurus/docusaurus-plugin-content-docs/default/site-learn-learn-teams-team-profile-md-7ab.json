@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/teams/team-profile",
+  "id": "learn/teams/team-profile",
+  "title": "Team Profile",
+  "description": "---",
+  "source": "@site/../learn/learn/teams/team-profile.md",
+  "sourceDirName": "learn/teams",
+  "slug": "/learn/teams/team-profile",
+  "permalink": "/learn/docs/learn/teams/team-profile",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/teams/team-profile.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Team Profile",
+    "id": "team-profile"
+  }
+}

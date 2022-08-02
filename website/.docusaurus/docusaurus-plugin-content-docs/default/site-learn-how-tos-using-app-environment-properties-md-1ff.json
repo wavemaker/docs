@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/using-app-environment-properties",
+  "id": "how-tos/using-app-environment-properties",
+  "title": "Using App Environment Properties",
+  "description": "---",
+  "source": "@site/../learn/how-tos/using-app-environment-properties.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/using-app-environment-properties",
+  "permalink": "/learn/docs/how-tos/using-app-environment-properties",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/using-app-environment-properties.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using App Environment Properties",
+    "id": "using-app-environment-properties"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Custom Logic DB Event Listeners",
+    "permalink": "/learn/docs/how-tos/custom-business-logic-using-crud-event-listeners"
+  },
+  "next": {
+    "title": "Consuming an Existing WaveMaker API",
+    "permalink": "/learn/docs/how-tos/consuming-existing-wm-api-into-another-wm-project"
+  }
+}

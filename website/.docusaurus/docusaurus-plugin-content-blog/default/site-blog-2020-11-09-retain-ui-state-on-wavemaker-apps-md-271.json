@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/11/09/Retain-UI-State-on-Wavemaker-Apps",
+  "source": "@site/blog/2020-11-09-Retain-UI-State-on-Wavemaker-Apps.md",
+  "title": "Retain UI State in WaveMaker Apps",
+  "description": "A Wavemaker Application typically comprises of many pages, and each page consists of various widgets. When certain actions are performed on the page, it results in changes to the state of the application. Some of the examples are:",
+  "date": "2020-11-09T00:00:00.000Z",
+  "formattedDate": "November 9, 2020",
+  "tags": [],
+  "readingTime": 3.11,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Nikhilesh K V"
+    }
+  ],
+  "frontMatter": {
+    "title": "Retain UI State in WaveMaker Apps",
+    "author": "Nikhilesh K V"
+  },
+  "prevItem": {
+    "title": "WaveMaker Releases 10.6 Version",
+    "permalink": "/learn/blog/2020/12/08/wavemaker-release-10-6-version"
+  },
+  "nextItem": {
+    "title": "Theme builder is ready with a new update",
+    "permalink": "/learn/blog/2020/07/03/Another-update-to-theme-builder"
+  }
+}

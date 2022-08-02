@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/calendar-usage-create-event",
+  "id": "learn/how-tos/calendar-usage-create-event",
+  "title": "Calendar Usage - Create an Event",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/calendar-usage-create-event.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/calendar-usage-create-event",
+  "permalink": "/learn/docs/learn/how-tos/calendar-usage-create-event",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/calendar-usage-create-event.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Calendar Usage - Create an Event",
+    "id": "calendar-usage-create-event"
+  }
+}

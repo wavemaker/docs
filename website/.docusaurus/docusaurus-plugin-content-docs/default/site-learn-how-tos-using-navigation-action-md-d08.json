@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/using-navigation-action",
+  "id": "how-tos/using-navigation-action",
+  "title": "Using Navigation Action",
+  "description": "---",
+  "source": "@site/../learn/how-tos/using-navigation-action.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/using-navigation-action",
+  "permalink": "/learn/docs/how-tos/using-navigation-action",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/using-navigation-action.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using Navigation Action",
+    "id": "using-navigation-action"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Using Notification Actions",
+    "permalink": "/learn/docs/how-tos/using-notification-actions"
+  },
+  "next": {
+    "title": "Using Variables for Queries and Procedure",
+    "permalink": "/learn/docs/how-tos/using-variables-queries-procedure"
+  }
+}

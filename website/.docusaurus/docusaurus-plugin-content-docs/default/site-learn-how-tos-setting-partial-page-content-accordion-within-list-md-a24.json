@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/setting-partial-page-content-accordion-within-list",
+  "id": "how-tos/setting-partial-page-content-accordion-within-list",
+  "title": "Setting partial page content for Accordion within a List",
+  "description": "We will see how the content of an Accordion can be set to a Partial Page. We will be embedding the Accordion within a List.",
+  "source": "@site/../learn/how-tos/setting-partial-page-content-accordion-within-list.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/setting-partial-page-content-accordion-within-list",
+  "permalink": "/learn/docs/how-tos/setting-partial-page-content-accordion-within-list",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/setting-partial-page-content-accordion-within-list.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Setting partial page content for Accordion within a List",
+    "id": "setting-partial-page-content-accordion-within-list"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Building a Range Live Filter",
+    "permalink": "/learn/docs/how-tos/live-filter-range-filter"
+  },
+  "next": {
+    "title": "Setting partial page content for Panel within a List using JavaScript",
+    "permalink": "/learn/docs/how-tos/setting-partial-page-content-panel-within-list-using-javascript"
+  }
+}

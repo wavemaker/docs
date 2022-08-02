@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/ui-design/page-concepts/page-events",
+  "id": "learn/app-development/ui-design/page-concepts/page-events",
+  "title": "Page Events",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/ui-design/page-concepts/page-events.md",
+  "sourceDirName": "learn/app-development/ui-design/page-concepts",
+  "slug": "/learn/app-development/ui-design/page-concepts/page-events",
+  "permalink": "/learn/docs/learn/app-development/ui-design/page-concepts/page-events",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/ui-design/page-concepts/page-events.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Page Events",
+    "id": "page-events",
+    "sidebar_label": "Events"
+  }
+}

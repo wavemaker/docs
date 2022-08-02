@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/custom-security-using-google-oauth-prefab",
+  "id": "how-tos/custom-security-using-google-oauth-prefab",
+  "title": "Custom Security using Google OAuth Prefab",
+  "description": "---",
+  "source": "@site/../learn/how-tos/custom-security-using-google-oauth-prefab.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/custom-security-using-google-oauth-prefab",
+  "permalink": "/learn/docs/how-tos/custom-security-using-google-oauth-prefab",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/custom-security-using-google-oauth-prefab.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Custom Security using Google OAuth Prefab",
+    "id": "custom-security-using-google-oauth-prefab"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "OpenID Integration - Azure AD",
+    "permalink": "/learn/docs/how-tos/sso-openid-azure-active-directory"
+  },
+  "next": {
+    "title": "Multiple Security Provider Implementation",
+    "permalink": "/learn/docs/how-tos/multiple-security-provider-implementation"
+  }
+}

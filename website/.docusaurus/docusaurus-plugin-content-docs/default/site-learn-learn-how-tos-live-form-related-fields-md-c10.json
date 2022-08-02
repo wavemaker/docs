@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/live-form-related-fields",
+  "id": "learn/how-tos/live-form-related-fields",
+  "title": "Handling Related Fields in a Live Form",
+  "description": "Live Form deals with Database CRUD Variables with the underlying data source as Database. Database tables are usually related with each other through Foreign keys. We will see here how to handle data for these related fields within a table.",
+  "source": "@site/../learn/learn/how-tos/live-form-related-fields.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/live-form-related-fields",
+  "permalink": "/learn/docs/learn/how-tos/live-form-related-fields",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/live-form-related-fields.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Handling Related Fields in a Live Form",
+    "id": "live-form-related-fields"
+  }
+}

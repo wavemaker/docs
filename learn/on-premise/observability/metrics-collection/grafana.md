@@ -1,6 +1,6 @@
 ---
 title: "Grafana"
-id: ""
+id: "grafana"
 sidebar_label: "Grafana"
 ---
 ---

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/configure/add-dev-capacity",
+  "id": "on-premise/configure/add-dev-capacity",
+  "title": "WME Add Developer Capacity",
+  "description": "---",
+  "source": "@site/../learn/on-premise/configure/add-dev-capacity.md",
+  "sourceDirName": "on-premise/configure",
+  "slug": "/on-premise/configure/add-dev-capacity",
+  "permalink": "/learn/docs/on-premise/configure/add-dev-capacity",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/configure/add-dev-capacity.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WME Add Developer Capacity",
+    "id": "add-dev-capacity",
+    "sidebar_label": "Add Developer Capacity"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Configure VCS",
+    "permalink": "/learn/docs/on-premise/configure/config-vcs"
+  },
+  "next": {
+    "title": "Add Apps Capacity",
+    "permalink": "/learn/docs/on-premise/configure/add-apps-capacity"
+  }
+}

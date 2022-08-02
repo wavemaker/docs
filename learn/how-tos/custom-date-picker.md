@@ -1,6 +1,6 @@
 ---
 title: "Custom Date Picker in Mobile"
-id: ""
+id: "custom-date-picker"
 ---
 ---
 

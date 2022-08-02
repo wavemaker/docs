@@ -1,7 +1,7 @@
 ---
 title: "Build React Native app installers using AppChef"
 sidebar_label: "Build Installers"
-id: ""
+id: "build-installers"
 ---
 ---
 
@@ -44,7 +44,6 @@ Click on create React Native build option, drag and drop or browse your files to
 
 2. Click **Next** to configure the Build options.
 
-![mobile-build-appchef-appInfo](/learn/assets/mobile-build-appchef-appinfo-rn.png)
 
 ### Configure Build
 

@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/04/22/deployments-made-better",
+  "source": "@site/blog/2020-04-22-deployments-made-better.md",
+  "title": "Deployment Experience made better!",
+  "description": "Deployment is a process which enables the developers to serve the apps to users.",
+  "date": "2020-04-22T00:00:00.000Z",
+  "formattedDate": "April 22, 2020",
+  "tags": [],
+  "readingTime": 2.985,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Subodh Kumar"
+    }
+  ],
+  "frontMatter": {
+    "title": "Deployment Experience made better!",
+    "author": "Subodh Kumar"
+  },
+  "prevItem": {
+    "title": "WaveMaker Integrates with DigitalOcean Kubernetes for App Deployments",
+    "permalink": "/learn/blog/2020/04/23/deployment-to-digital-ocean"
+  },
+  "nextItem": {
+    "title": "OpenAPI support in WaveMaker",
+    "permalink": "/learn/blog/2020/04/21/wavemaker-openapi-import"
+  }
+}

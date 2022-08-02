@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps",
+  "id": "app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps",
+  "title": "What type of security is provided for WaveMaker Apps?",
+  "description": "See the FAQs for WaveMaker app development.",
+  "source": "@site/../learn/app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps.md",
+  "sourceDirName": "app-development/wavemaker-app-development-faqs",
+  "slug": "/app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps",
+  "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "What type of security is provided for WaveMaker Apps?",
+    "id": "security-provided-for-wavemaker-apps",
+    "sidebar_label": "Security Provided for WaveMaker Apps"
+  },
+  "sidebar": "FAQs",
+  "previous": {
+    "title": "Enabling security for WaveMaker apps",
+    "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/security-in-wavemaker"
+  },
+  "next": {
+    "title": "Build Responsive UI using Visual RAD Approach",
+    "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach"
+  }
+}

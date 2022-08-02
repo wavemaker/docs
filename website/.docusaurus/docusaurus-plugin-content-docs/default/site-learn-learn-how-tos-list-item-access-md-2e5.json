@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/list-item-access",
+  "id": "learn/how-tos/list-item-access",
+  "title": "Accessing List Items",
+  "description": "1. currentItem & currentItemWidgets",
+  "source": "@site/../learn/learn/how-tos/list-item-access.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/list-item-access",
+  "permalink": "/learn/docs/learn/how-tos/list-item-access",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/list-item-access.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Accessing List Items",
+    "id": "list-item-access"
+  }
+}

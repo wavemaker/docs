@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/setting-partial-page-content-panel-within-list-using-javascript",
+  "id": "learn/how-tos/setting-partial-page-content-panel-within-list-using-javascript",
+  "title": "Setting partial page content for Panel within a List using JavaScript",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/setting-partial-page-content-panel-within-list-using-javascript.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/setting-partial-page-content-panel-within-list-using-javascript",
+  "permalink": "/learn/docs/learn/how-tos/setting-partial-page-content-panel-within-list-using-javascript",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/setting-partial-page-content-panel-within-list-using-javascript.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Setting partial page content for Panel within a List using JavaScript",
+    "id": "setting-partial-page-content-panel-within-list-using-javascript"
+  }
+}

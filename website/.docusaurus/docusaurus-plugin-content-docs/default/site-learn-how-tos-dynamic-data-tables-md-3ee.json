@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/dynamic-data-tables",
+  "id": "how-tos/dynamic-data-tables",
+  "title": "Dynamic Data Tables",
+  "description": "Dynamic Data Tables can be created in the following ways:",
+  "source": "@site/../learn/how-tos/dynamic-data-tables.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/dynamic-data-tables",
+  "permalink": "/learn/docs/how-tos/dynamic-data-tables",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/dynamic-data-tables.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Dynamic Data Tables",
+    "id": "dynamic-data-tables"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Setting Blob Filename",
+    "permalink": "/learn/docs/how-tos/setting-blob-filename"
+  },
+  "next": {
+    "title": "Customize Dynamic Datatable",
+    "permalink": "/learn/docs/how-tos/customize-dynamic-datatable"
+  }
+}

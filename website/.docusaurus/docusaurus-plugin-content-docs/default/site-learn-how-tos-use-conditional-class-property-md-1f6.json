@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/use-conditional-class-property",
+  "id": "how-tos/use-conditional-class-property",
+  "title": "How to use Conditional Class Property",
+  "description": "---",
+  "source": "@site/../learn/how-tos/use-conditional-class-property.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/use-conditional-class-property",
+  "permalink": "/learn/docs/how-tos/use-conditional-class-property",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/use-conditional-class-property.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to use Conditional Class Property",
+    "id": "use-conditional-class-property"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Customise App Style",
+    "permalink": "/learn/docs/how-tos/customise-app-style"
+  },
+  "next": {
+    "title": "How to use Conditional Style Property",
+    "permalink": "/learn/docs/how-tos/use-conditional-style-property"
+  }
+}

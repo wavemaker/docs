@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/06/23/product-update-10-5-whats-new",
+  "source": "@site/blog/2020-06-23-product-update-10-5-whats-new.md",
+  "title": "WaveMaker releases 10.5 version",
+  "description": "With working from home as a new normal, we have released yet another major update with some of the most interesting features in it. To learn about our detailed list of features and fixes, see WaveMaker Release Notes 10.5.",
+  "date": "2020-06-23T00:00:00.000Z",
+  "formattedDate": "June 23, 2020",
+  "tags": [],
+  "readingTime": 2.76,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Swetha Kundaram"
+    }
+  ],
+  "frontMatter": {
+    "title": "WaveMaker releases 10.5 version",
+    "author": "Swetha Kundaram"
+  },
+  "prevItem": {
+    "title": "Deliver faster applications with WaveMaker!",
+    "permalink": "/learn/blog/2020/06/23/deliver-faster-applications-with-wavemaker"
+  },
+  "nextItem": {
+    "title": "GraphQL in a Micro Services Architecture",
+    "permalink": "/learn/blog/2020/06/11/graphql-microservice-architecture"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "mobile-app-integrated-database",
+  "id": "mobile-app-integrated-database",
+  "title": "Mobile App Integrated with Database",
+  "description": "---",
+  "source": "@site/../learn/mobile-app-integrated-database.md",
+  "sourceDirName": ".",
+  "slug": "/mobile-app-integrated-database",
+  "permalink": "/learn/docs/mobile-app-integrated-database",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/mobile-app-integrated-database.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Mobile App Integrated with Database",
+    "id": "mobile-app-integrated-database"
+  }
+}

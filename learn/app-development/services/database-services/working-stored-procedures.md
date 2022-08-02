@@ -1,6 +1,6 @@
 ---
 title: "Working with Stored Procedures"
-id: ""
+id: "working-stored-procedures"
 ---
 ---
 There will be times when you want to display data from multiple tables or update/insert values into multiple tables. Queries and Stored Procedures come in handy in such instances. WaveMaker provides editors for Queries & Procedures for integrating them with the WaveMaker applications. Each query & procedure used in the WaveMaker application will be exposed as a REST API for the UI to consume and render the data.
@@ -28,7 +28,7 @@ Some data types might be specific to the underlying database being implemented, 
 :::
 - You can also set the parameter type as one of **Server Side Properties**.  
 When you select this option while executing the procedure, the appropriate value is taken from the application rather than from user.   
-<br>
+ 
 Currently supported server defined properties are:
     - Logged in User Id
     - Logged in User Name
@@ -148,10 +148,10 @@ Both _Request_ and _Response_ POJO classes are generated as: `<procedureName>Re
 
 #### 4. For Procedures returning Cursor(s)
 - For each cursor, new POJO class gets generated with name Response.  
-<br>
+ 
 **Example**:  
     procedure with name `getStudents` with cursor parameter `marks`, the POJO generated will be `GetStudentsResponseMarks`.  
-    <br>
+     
     The generated type will be used in `<procedureResponse>` class with given property name. In the above-mentioned case, it will be marked with type `GetStudentsReponseMarks`.
 - In the case of Undefined cursor returned i.e cursor not specified in parameters section.
     - using the field as `content` the POJO class will be generated as per the above case.  
@@ -167,11 +167,11 @@ This layer exposes the methods related to the configured query and procedures. C
 We recommend using methods from this layer in custom Java services.
 
 - Class with name ProcedureExecutorService is generated in the .service package. For eg: for service hrdb, class name will be HrdbProcedureExecutorService.
-- Method with name execute<procedureName> will be generated for all configured procedures.
+- Method with name execute &lt;procedureName&gt; will be generated for all configured procedures.
 
 :::important
 - As mentioned in Models -> Procedures naming convention, if Request type generated for that procedure it will expected as argument otherwise all IN parameters expects as arguments.
-- Response type will be <procedureName>Response. In case of procedure not returning any properties it uses Void
+- Response type will be &lt;procedureName&gt; Response. In case of procedure not returning any properties it uses Void
 :::
 
 [![](/learn/assets/proc_services.png)](/learn/assets/proc_services.png)

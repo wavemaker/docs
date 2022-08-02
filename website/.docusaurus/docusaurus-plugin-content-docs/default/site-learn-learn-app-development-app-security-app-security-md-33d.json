@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/app-security/app-security",
+  "id": "learn/app-development/app-security/app-security",
+  "title": "App Security",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/app-security/app-security.md",
+  "sourceDirName": "learn/app-development/app-security",
+  "slug": "/learn/app-development/app-security/",
+  "permalink": "/learn/docs/learn/app-development/app-security/",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/app-security/app-security.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "App Security",
+    "id": "app-security",
+    "sidebar_label": "Overview"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/wavemaker-app-development-faqs/publishing-app-to-app-store",
+  "id": "app-development/wavemaker-app-development-faqs/publishing-app-to-app-store",
+  "title": "Can I build a mobile app with installer using WaveMaker and publish it to any App Store?",
+  "description": "See the FAQs for WaveMaker app development.",
+  "source": "@site/../learn/app-development/wavemaker-app-development-faqs/publishing-app-to-app-store.md",
+  "sourceDirName": "app-development/wavemaker-app-development-faqs",
+  "slug": "/app-development/wavemaker-app-development-faqs/publishing-app-to-app-store",
+  "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/publishing-app-to-app-store",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/wavemaker-app-development-faqs/publishing-app-to-app-store.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Can I build a mobile app with installer using WaveMaker and publish it to any App Store?",
+    "id": "publishing-app-to-app-store",
+    "sidebar_label": "Publishing an app to App Store"
+  },
+  "sidebar": "FAQs",
+  "previous": {
+    "title": "Build Responsive UI using Visual RAD Approach",
+    "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach"
+  },
+  "next": {
+    "title": "Can I Publish to App Store without any Limitations?",
+    "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/publish-to-app-store-without-any-limitations"
+  }
+}

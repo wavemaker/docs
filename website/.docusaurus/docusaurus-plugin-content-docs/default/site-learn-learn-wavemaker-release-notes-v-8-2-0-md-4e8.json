@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/wavemaker-release-notes/v8-2-0",
+  "id": "learn/wavemaker-release-notes/v8-2-0",
+  "title": "WaveMaker 8.2.0 - Release date: 7 June 2016",
+  "description": "Here is a summary of key features, known issues and bug fixes offered in 8.2 Release.",
+  "source": "@site/../learn/learn/wavemaker-release-notes/v8-2-0.md",
+  "sourceDirName": "learn/wavemaker-release-notes",
+  "slug": "/learn/wavemaker-release-notes/v8-2-0",
+  "permalink": "/learn/docs/learn/wavemaker-release-notes/v8-2-0",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/wavemaker-release-notes/v8-2-0.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker 8.2.0 - Release date: 7 June 2016",
+    "id": "v8-2-0",
+    "sidebar_label": "Release v8.2.0"
+  }
+}

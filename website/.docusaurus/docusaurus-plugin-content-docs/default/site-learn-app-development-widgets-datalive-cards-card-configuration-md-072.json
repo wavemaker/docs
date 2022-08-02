@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/cards/card-configuration",
+  "id": "app-development/widgets/datalive/cards/card-configuration",
+  "title": "Cards - Configuration",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/cards/card-configuration.md",
+  "sourceDirName": "app-development/widgets/datalive/cards",
+  "slug": "/app-development/widgets/datalive/cards/card-configuration",
+  "permalink": "/learn/docs/app-development/widgets/datalive/cards/card-configuration",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/cards/card-configuration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Cards - Configuration",
+    "id": "card-configuration",
+    "sidebar_label": "Configuration"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Templates",
+    "permalink": "/learn/docs/app-development/widgets/datalive/cards/cards-templates"
+  },
+  "next": {
+    "title": "Behavior Settings",
+    "permalink": "/learn/docs/app-development/widgets/datalive/cards/card-behavior-settings"
+  }
+}

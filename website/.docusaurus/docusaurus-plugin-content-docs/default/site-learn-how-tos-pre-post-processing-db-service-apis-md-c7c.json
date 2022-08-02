@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/pre-post-processing-db-service-apis",
+  "id": "how-tos/pre-post-processing-db-service-apis",
+  "title": "Pre-Post Processing for Database Service APIs",
+  "description": "---",
+  "source": "@site/../learn/how-tos/pre-post-processing-db-service-apis.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/pre-post-processing-db-service-apis",
+  "permalink": "/learn/docs/how-tos/pre-post-processing-db-service-apis",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/pre-post-processing-db-service-apis.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Pre-Post Processing for Database Service APIs",
+    "id": "pre-post-processing-db-service-apis"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "ORM Artifacts",
+    "permalink": "/learn/docs/app-development/services/database-services/orm-artifacts"
+  },
+  "next": {
+    "title": "Accessing Logged-in User Details using Java Service",
+    "permalink": "/learn/docs/how-tos/accessing-loggedin-user-information-using-a-java-service"
+  }
+}

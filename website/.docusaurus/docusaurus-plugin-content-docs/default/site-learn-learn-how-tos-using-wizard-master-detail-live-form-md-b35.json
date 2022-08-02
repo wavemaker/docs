@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/using-wizard-master-detail-live-form",
+  "id": "learn/how-tos/using-wizard-master-detail-live-form",
+  "title": "Using Wizard for Master-Detail Live Form",
+  "description": "We will be adding master/detail records using Live Forms in a Wizard.",
+  "source": "@site/../learn/learn/how-tos/using-wizard-master-detail-live-form.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/using-wizard-master-detail-live-form",
+  "permalink": "/learn/docs/learn/how-tos/using-wizard-master-detail-live-form",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/using-wizard-master-detail-live-form.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using Wizard for Master-Detail Live Form",
+    "id": "using-wizard-master-detail-live-form"
+  }
+}

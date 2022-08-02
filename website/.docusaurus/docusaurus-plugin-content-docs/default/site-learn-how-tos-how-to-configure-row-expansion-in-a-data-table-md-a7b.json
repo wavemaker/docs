@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/how-to-configure-row-expansion-in-a-data-table",
+  "id": "how-tos/how-to-configure-row-expansion-in-a-data-table",
+  "title": "How to Configure Row Expansion in a Data Table",
+  "description": "In this article, you will learn how to configure row expansion on a data table. To use the row expansion feature, you create a data table and a partial; you configure the partial to contain related information of the table item. A partial is a semi page which is a reusable object, and a data table is a data widget configured as a variable. You add page params in the partial page and bind it through the data table settings.",
+  "source": "@site/../learn/how-tos/how-to-configure-row-expansion-in-a-data-table.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/how-to-configure-row-expansion-in-a-data-table",
+  "permalink": "/learn/docs/how-tos/how-to-configure-row-expansion-in-a-data-table",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/how-to-configure-row-expansion-in-a-data-table.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to Configure Row Expansion in a Data Table",
+    "id": "how-to-configure-row-expansion-in-a-data-table"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Customising Data Table Row Action",
+    "permalink": "/learn/docs/how-tos/data-table-actions"
+  },
+  "next": {
+    "title": "Using Widgets to represent Data Table Columns",
+    "permalink": "/learn/docs/how-tos/data-table-widget-representations"
+  }
+}

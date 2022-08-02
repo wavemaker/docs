@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/04/19/Build-theme-and-edit",
+  "source": "@site/blog/2021-04-19-Build-theme-and-edit.md",
+  "title": "Theme Builder with some coding (Build + Edit)",
+  "description": "Theme builder app is expanding its capability of creating a theme with an Edit feature to customize advanced changes. This feature will extend the ability to develop themes beyond the basics and add more advanced styling based on projects. This will also help to preview applied changes and test the theme's overall look and feel.",
+  "date": "2021-04-19T00:00:00.000Z",
+  "formattedDate": "April 19, 2021",
+  "tags": [],
+  "readingTime": 3.285,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Lovin Ahmed"
+    }
+  ],
+  "frontMatter": {
+    "title": "Theme Builder with some coding (Build + Edit)",
+    "author": "Lovin Ahmed"
+  },
+  "prevItem": {
+    "title": "WaveMaker Releases 10.7 Version",
+    "permalink": "/learn/blog/2021/05/09/product-update-10-7-whats-new"
+  },
+  "nextItem": {
+    "title": "Understanding Scaling of WaveMaker Applications",
+    "permalink": "/learn/blog/2021/01/04/spring-session-persistence"
+  }
+}

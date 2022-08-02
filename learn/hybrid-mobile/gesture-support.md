@@ -1,6 +1,6 @@
 ---
 title: "Gesture Support Beta"
-id: ""
+id: "gesture-support"
 sidebar_label: "Gesture Support"
 ---
 ---

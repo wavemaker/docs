@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/livefilter/livefilter-use-cases",
+  "id": "app-development/widgets/datalive/livefilter/livefilter-use-cases",
+  "title": "Live Filter - Use Cases",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/livefilter/livefilter-use-cases.md",
+  "sourceDirName": "app-development/widgets/datalive/livefilter",
+  "slug": "/app-development/widgets/datalive/livefilter/livefilter-use-cases",
+  "permalink": "/learn/docs/app-development/widgets/datalive/livefilter/livefilter-use-cases",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/livefilter/livefilter-use-cases.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Live Filter - Use Cases",
+    "id": "livefilter-use-cases",
+    "sidebar_label": "Use Cases"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Events & Methods",
+    "permalink": "/learn/docs/app-development/widgets/datalive/livefilter/livefilter-events-methods"
+  },
+  "next": {
+    "title": "Grid Layout",
+    "permalink": "/learn/docs/app-development/widgets/container/grid-layout"
+  }
+}

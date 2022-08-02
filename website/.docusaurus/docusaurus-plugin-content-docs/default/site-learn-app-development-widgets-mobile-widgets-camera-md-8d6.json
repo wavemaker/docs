@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/mobile-widgets/camera",
+  "id": "app-development/widgets/mobile-widgets/camera",
+  "title": "Camera",
+  "description": "The camera is abutton based widget that opens device camera for taking photos or videos. The path of the photo or video captured is exposed as outbound property ‘localFilePath’.",
+  "source": "@site/../learn/app-development/widgets/mobile-widgets/camera.md",
+  "sourceDirName": "app-development/widgets/mobile-widgets",
+  "slug": "/app-development/widgets/mobile-widgets/camera",
+  "permalink": "/learn/docs/app-development/widgets/mobile-widgets/camera",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/mobile-widgets/camera.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Camera",
+    "id": "camera"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Login Dialog",
+    "permalink": "/learn/docs/app-development/widgets/login-dialog"
+  },
+  "next": {
+    "title": "Media List",
+    "permalink": "/learn/docs/app-development/widgets/mobile-widgets/media-list"
+  }
+}

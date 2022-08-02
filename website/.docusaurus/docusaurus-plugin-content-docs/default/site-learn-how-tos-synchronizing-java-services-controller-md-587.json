@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/synchronizing-java-services-controller",
+  "id": "how-tos/synchronizing-java-services-controller",
+  "title": "Synchronizing Java Services Controller",
+  "description": "---",
+  "source": "@site/../learn/how-tos/synchronizing-java-services-controller.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/synchronizing-java-services-controller",
+  "permalink": "/learn/docs/how-tos/synchronizing-java-services-controller",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/synchronizing-java-services-controller.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Synchronizing Java Services Controller",
+    "id": "synchronizing-java-services-controller"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Synchronizing WaveMaker Apps with IDEs",
+    "permalink": "/learn/docs/how-tos/synchronizing-wavemaker-apps-ides-beta"
+  },
+  "next": {
+    "title": "Integrating Amazon Cognito for User Authentication",
+    "permalink": "/learn/docs/how-tos/integrating-amazon-cognito-user-authentication"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/tree-use-case-static-variable",
+  "id": "how-tos/tree-use-case-static-variable",
+  "title": "Tree Use Case - from Static Variable",
+  "description": "---",
+  "source": "@site/../learn/how-tos/tree-use-case-static-variable.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/tree-use-case-static-variable",
+  "permalink": "/learn/docs/how-tos/tree-use-case-static-variable",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/tree-use-case-static-variable.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Tree Use Case - from Static Variable",
+    "id": "tree-use-case-static-variable",
+    "sidebar_label": "Tree using Static Variable"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Dynamic Tabs and Accordions",
+    "permalink": "/learn/docs/how-tos/dynamic-tabs-accordions"
+  },
+  "next": {
+    "title": "Tree using Java Service",
+    "permalink": "/learn/docs/how-tos/tree-use-case-java-service"
+  }
+}

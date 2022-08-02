@@ -1,6 +1,6 @@
 ---
 title: "Preview React Native Apps in Mobile without Building Installers"
-id: ""
+id: "expo-debug"
 sidebar_label: "Expo Debug"
 ---
 ---
@@ -59,7 +59,7 @@ wm-reactnative run expo ${APP_PREVIEW_URL}
 
 7. When you shake the phone, the expo developer menu opens up. In the developer menu, click on `Debug Remote JS` option to debug the JavaScript of the app. You can stop debugging by tapping on the `Stop Debug` in developer menu. An active debugging session will make the app run slower.
 
-<img src="../../assets/expo-developer-menu.png" style="height:480px">
+<img src="../../assets/expo-developer-menu.png" style="height:480px"/>
 
 8. Open [http://localhost:19000/debugger-ui/](http://localhost:19000/debugger-ui/) in your system. If there are many tabs with the same URL, close all except anyone.
 

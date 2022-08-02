@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/basic/tree",
+  "id": "app-development/widgets/basic/tree",
+  "title": "Tree",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/basic/tree.md",
+  "sourceDirName": "app-development/widgets/basic",
+  "slug": "/app-development/widgets/basic/tree",
+  "permalink": "/learn/docs/app-development/widgets/basic/tree",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/basic/tree.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Tree",
+    "id": "tree"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Picture",
+    "permalink": "/learn/docs/app-development/widgets/basic/picture"
+  },
+  "next": {
+    "title": "Video",
+    "permalink": "/learn/docs/app-development/widgets/basic/video"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/tree-use-case-java-service",
+  "id": "how-tos/tree-use-case-java-service",
+  "title": "Tree Use Case - from Java Service",
+  "description": "---",
+  "source": "@site/../learn/how-tos/tree-use-case-java-service.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/tree-use-case-java-service",
+  "permalink": "/learn/docs/how-tos/tree-use-case-java-service",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/tree-use-case-java-service.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Tree Use Case - from Java Service",
+    "id": "tree-use-case-java-service",
+    "sidebar_label": "Tree using Java Service"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Tree using Static Variable",
+    "permalink": "/learn/docs/how-tos/tree-use-case-static-variable"
+  },
+  "next": {
+    "title": "Tree using Dynamic Tree",
+    "permalink": "/learn/docs/how-tos/tree-use-case-dynamic-tree"
+  }
+}

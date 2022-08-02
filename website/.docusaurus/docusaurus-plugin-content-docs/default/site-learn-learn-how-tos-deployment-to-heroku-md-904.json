@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/deployment-to-heroku",
+  "id": "learn/how-tos/deployment-to-heroku",
+  "title": "Deployment to Heroku",
+  "description": "Heroku is a platform as a service (PaaS) that enables developers to build, run, and manage applications entirely in the cloud. Developers can setup a Continuous Integration pipeline for a wide range of technologies.",
+  "source": "@site/../learn/learn/how-tos/deployment-to-heroku.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/deployment-to-heroku",
+  "permalink": "/learn/docs/learn/how-tos/deployment-to-heroku",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/deployment-to-heroku.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Deployment to Heroku",
+    "id": "deployment-to-heroku"
+  }
+}

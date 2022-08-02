@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/azure/wavemaker-enterprise-setup-on-azure",
+  "id": "on-premise/azure/wavemaker-enterprise-setup-on-azure",
+  "title": "WaveMaker Enterprise Setup on AZURE",
+  "description": "---",
+  "source": "@site/../learn/on-premise/azure/wavemaker-enterprise-setup-on-azure.md",
+  "sourceDirName": "on-premise/azure",
+  "slug": "/on-premise/azure/wavemaker-enterprise-setup-on-azure",
+  "permalink": "/learn/docs/on-premise/azure/wavemaker-enterprise-setup-on-azure",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/azure/wavemaker-enterprise-setup-on-azure.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker Enterprise Setup on AZURE",
+    "id": "wavemaker-enterprise-setup-on-azure",
+    "sidebar_label": "Overview"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Configure Pipeline",
+    "permalink": "/learn/docs/on-premise/configure/config-pipeline"
+  },
+  "next": {
+    "title": "Prepare Infrastructure",
+    "permalink": "/learn/docs/on-premise/azure/launching-instances-in-azure"
+  }
+}

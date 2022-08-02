@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/wavemaker-app-development-faqs/application-stack-upgrades",
+  "id": "app-development/wavemaker-app-development-faqs/application-stack-upgrades",
+  "title": "How are the application stack upgrades done?",
+  "description": "See the FAQs for WaveMaker app development.",
+  "source": "@site/../learn/app-development/wavemaker-app-development-faqs/application-stack-upgrades.md",
+  "sourceDirName": "app-development/wavemaker-app-development-faqs",
+  "slug": "/app-development/wavemaker-app-development-faqs/application-stack-upgrades",
+  "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/application-stack-upgrades",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/wavemaker-app-development-faqs/application-stack-upgrades.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How are the application stack upgrades done?",
+    "id": "application-stack-upgrades",
+    "sidebar_label": "Application Stack Upgrades"
+  },
+  "sidebar": "FAQs",
+  "previous": {
+    "title": "Licensing Restrictions for re-distributing",
+    "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/redistributing-licensing"
+  },
+  "next": {
+    "title": "Is WaveMaker App scalable",
+    "permalink": "/learn/docs/app-development/wavemaker-app-development-faqs/is-wavemaker-app-scalable"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/using-notification-actions",
+  "id": "learn/how-tos/using-notification-actions",
+  "title": "Using Notification Actions",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/using-notification-actions.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/using-notification-actions",
+  "permalink": "/learn/docs/learn/how-tos/using-notification-actions",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/using-notification-actions.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using Notification Actions",
+    "id": "using-notification-actions"
+  }
+}

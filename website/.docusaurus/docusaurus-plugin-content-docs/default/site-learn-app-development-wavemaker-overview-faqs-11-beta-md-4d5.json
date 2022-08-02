@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/wavemaker-overview/faqs-11-beta",
+  "id": "app-development/wavemaker-overview/faqs-11-beta",
+  "title": "FAQs of WaveMaker 11 Beta",
+  "description": "---",
+  "source": "@site/../learn/app-development/wavemaker-overview/faqs-11-beta.md",
+  "sourceDirName": "app-development/wavemaker-overview",
+  "slug": "/app-development/wavemaker-overview/faqs-11-beta",
+  "permalink": "/learn/docs/app-development/wavemaker-overview/faqs-11-beta",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/wavemaker-overview/faqs-11-beta.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "FAQs of WaveMaker 11 Beta",
+    "id": "faqs-11-beta",
+    "sidebar_label": "FAQs 11 Beta"
+  },
+  "sidebar": "Release Notes",
+  "previous": {
+    "title": "WaveMaker 11 Beta",
+    "permalink": "/learn/docs/app-development/wavemaker-overview/wavemaker-11-beta"
+  },
+  "next": {
+    "title": "Upgrade Guide 11 beta",
+    "permalink": "/learn/docs/how-tos/upgrade-guide-wavemaker-10-to-11"
+  }
+}

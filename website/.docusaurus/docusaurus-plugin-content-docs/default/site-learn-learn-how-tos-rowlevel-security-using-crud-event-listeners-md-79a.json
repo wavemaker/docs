@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/how-tos/rowlevel-security-using-crud-event-listeners",
+  "id": "learn/how-tos/rowlevel-security-using-crud-event-listeners",
+  "title": "Row-Level Security: Display Table Contents using CRUD Listeners",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/rowlevel-security-using-crud-event-listeners.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/rowlevel-security-using-crud-event-listeners",
+  "permalink": "/learn/docs/learn/how-tos/rowlevel-security-using-crud-event-listeners",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/rowlevel-security-using-crud-event-listeners.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Row-Level Security: Display Table Contents using CRUD Listeners",
+    "id": "rowlevel-security-using-crud-event-listeners",
+    "sidebar_label": "Row-Level Security using DB Event Listeners"
+  }
+}

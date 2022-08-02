@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/form-widgets/slider",
+  "id": "app-development/widgets/form-widgets/slider",
+  "title": "Slider",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/form-widgets/slider.md",
+  "sourceDirName": "app-development/widgets/form-widgets",
+  "slug": "/app-development/widgets/form-widgets/slider",
+  "permalink": "/learn/docs/app-development/widgets/form-widgets/slider",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/form-widgets/slider.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Slider",
+    "id": "slider"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Color Picker",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/color-picker"
+  },
+  "next": {
+    "title": "Rating Widget",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/rating-widget"
+  }
+}

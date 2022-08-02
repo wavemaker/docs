@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/integrating-amazon-cognito-user-authentication",
+  "id": "learn/how-tos/integrating-amazon-cognito-user-authentication",
+  "title": "Integrating Amazon Cognito for User Authentication",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/integrating-amazon-cognito-user-authentication.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/integrating-amazon-cognito-user-authentication",
+  "permalink": "/learn/docs/learn/how-tos/integrating-amazon-cognito-user-authentication",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/integrating-amazon-cognito-user-authentication.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Integrating Amazon Cognito for User Authentication",
+    "id": "integrating-amazon-cognito-user-authentication"
+  }
+}

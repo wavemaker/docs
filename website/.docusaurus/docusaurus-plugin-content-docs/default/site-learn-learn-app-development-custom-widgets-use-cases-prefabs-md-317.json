@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/custom-widgets/use-cases-prefabs",
+  "id": "learn/app-development/custom-widgets/use-cases-prefabs",
+  "title": "Use Cases - Prefabs",
+  "description": "The following Use Cases explain in detail how to create Prefabs:",
+  "source": "@site/../learn/learn/app-development/custom-widgets/use-cases-prefabs.md",
+  "sourceDirName": "learn/app-development/custom-widgets",
+  "slug": "/learn/app-development/custom-widgets/use-cases-prefabs",
+  "permalink": "/learn/docs/learn/app-development/custom-widgets/use-cases-prefabs",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/custom-widgets/use-cases-prefabs.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Use Cases - Prefabs",
+    "id": "use-cases-prefabs"
+  }
+}

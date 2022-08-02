@@ -1,6 +1,6 @@
 ---
 title: "ORM Artifacts"
-id: ""
+id: "orm-artifacts"
 ---
 ---
 
@@ -265,9 +265,9 @@ Supported value expression types are listed in below table
 
 | **Operation** | **Expression** | **Supported Value Types** | **Result** | **Examples** |
 | --- | --- | --- | --- | --- |
-| equals | = | Number or String | Values that equals to given value | - `empId=1` <br> - `firstname=’Eric’` |
-| not equals | `!=` <br> (or) <br> `< >` | Number or String | Values that are not equal to given value | - `zip!=02127` <br> - `jobTitle< >‘Engineer’`  |
-| between | between | Date or Number | Values between given range |  <br> - birthdate between '1973-10-21' and '1986-06-18' (using date format - YYYY-MM-DD) <br> - zip between 14231 and 15922  |
+| equals | = | Number or String | Values that equals to given value | - `empId=1`   - `firstname=’Eric’` |
+| not equals | `!=`   (or)   `< >` | Number or String | Values that are not equal to given value | - `zip!=02127`   - `jobTitle< >‘Engineer’`  |
+| between | between | Date or Number | Values between given range |    - birthdate between '1973-10-21' and '1986-06-18' (using date format - YYYY-MM-DD)   - zip between 14231 and 15922  |
 | less than | < | Number | Values less than given value | - empId<6  |
 | greater than | > | Number | Values greater than given value |  - deptId>10 |
 | less than or equal to | <= | Number | Values less or equal to given value | - empId<=4 |
@@ -276,11 +276,11 @@ Supported value expression types are listed in below table
 | starts with | like | String | Values starting with the given string | - firstname like ‘E%’ |
 | ends with | like | String | Values ending with the given string | - lastname like ‘%e’ |
 | containing | like | String | Values containing the given string | - lastname like ‘%e%’ |
-| in | in | Number or Date or String | Values in the given set | - zip in (‘14231’, ‘02127’, ‘11212’) <br> - birthdate in ('1973-10-21' ,'1986-06-18') <br> - firstname in ( 'Sally' , 'William' , ‘Amanda’ ) |
+| in | in | Number or Date or String | Values in the given set | - zip in (‘14231’, ‘02127’, ‘11212’)   - birthdate in ('1973-10-21' ,'1986-06-18')   - firstname in ( 'Sally' , 'William' , ‘Amanda’ ) |
 | null | is null | String | Values satisfying given condition | - role is null |
 | not null | is not null | String | Values satisfying given condition | - date is not null |
 | empty | = | String | Values satisfying given condition | - lastname = ‘’ |
-| not empty | != (or) <> | String | Values satisfying given condition | - lastname <> ‘’ <br> - lastname != ‘’ |
+| not empty | != (or) &lt;&gt; | String | Values satisfying given condition | - lastname &lt;&gt; ‘’   - lastname != ‘’ |
 
 ### Value parameter
 The “Value” parameter is the comparison value for the given field name. The value should be single quoted for non-numeric types. The format for the value of type date is ‘YYYY-MM-DD’.

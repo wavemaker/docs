@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/wavemaker-overview/project-user-management",
+  "id": "app-development/wavemaker-overview/project-user-management",
+  "title": "Project User Management",
+  "description": "---",
+  "source": "@site/../learn/app-development/wavemaker-overview/project-user-management.md",
+  "sourceDirName": "app-development/wavemaker-overview",
+  "slug": "/app-development/wavemaker-overview/project-user-management",
+  "permalink": "/learn/docs/app-development/wavemaker-overview/project-user-management",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/wavemaker-overview/project-user-management.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Project User Management",
+    "id": "project-user-management"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "WaveMaker Mobile Apps Automation",
+    "permalink": "/learn/docs/hybrid-mobile/mobile-automation-appium"
+  },
+  "next": {
+    "title": "Developer Collaboration",
+    "permalink": "/learn/docs/app-development/dev-integration/developer-collaboration"
+  }
+}

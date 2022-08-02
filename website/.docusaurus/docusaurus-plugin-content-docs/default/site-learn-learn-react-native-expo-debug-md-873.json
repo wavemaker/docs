@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/react-native/expo-debug",
+  "id": "learn/react-native/expo-debug",
+  "title": "Preview React Native Apps in Mobile without Building Installers",
+  "description": "---",
+  "source": "@site/../learn/learn/react-native/expo-debug.md",
+  "sourceDirName": "learn/react-native",
+  "slug": "/learn/react-native/expo-debug",
+  "permalink": "/learn/docs/learn/react-native/expo-debug",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/react-native/expo-debug.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Preview React Native Apps in Mobile without Building Installers",
+    "id": "expo-debug",
+    "sidebar_label": "Expo Debug"
+  }
+}

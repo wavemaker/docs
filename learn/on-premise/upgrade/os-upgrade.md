@@ -1,6 +1,6 @@
 ---
 title: "OS Upgrade"
-id: ""
+id: "os-upgrade"
 sidebar_label: "OS Upgrade"
 ---
 ---

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/custom-date-picker",
+  "id": "how-tos/custom-date-picker",
+  "title": "Custom Date Picker in Mobile",
+  "description": "---",
+  "source": "@site/../learn/how-tos/custom-date-picker.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/custom-date-picker",
+  "permalink": "/learn/docs/how-tos/custom-date-picker",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/custom-date-picker.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Custom Date Picker in Mobile",
+    "id": "custom-date-picker"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Mobile App using Bar code",
+    "permalink": "/learn/docs/how-tos/mobile-app-using-bar-code"
+  },
+  "next": {
+    "title": "Capturing Card Items",
+    "permalink": "/learn/docs/how-tos/capturing-card-items"
+  }
+}

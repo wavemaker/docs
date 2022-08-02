@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/deployment/deployment-web-server",
+  "id": "learn/app-development/deployment/deployment-web-server",
+  "title": "Deployment to Application Server",
+  "description": "Overview document for deploying your app to a web server.",
+  "source": "@site/../learn/learn/app-development/deployment/deployment-web-server.md",
+  "sourceDirName": "learn/app-development/deployment",
+  "slug": "/learn/app-development/deployment/deployment-web-server",
+  "permalink": "/learn/docs/learn/app-development/deployment/deployment-web-server",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/deployment/deployment-web-server.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Deployment to Application Server",
+    "id": "deployment-web-server",
+    "sidebar_label": "Application Server Overview"
+  }
+}

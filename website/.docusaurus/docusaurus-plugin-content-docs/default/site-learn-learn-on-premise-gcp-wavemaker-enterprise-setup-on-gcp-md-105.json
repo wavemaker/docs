@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
+  "id": "learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
+  "title": "WaveMaker Enterprise Setup on GCP",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp.md",
+  "sourceDirName": "learn/on-premise/gcp",
+  "slug": "/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
+  "permalink": "/learn/docs/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker Enterprise Setup on GCP",
+    "id": "wavemaker-enterprise-setup-on-gcp",
+    "sidebar_label": "Overview"
+  }
+}

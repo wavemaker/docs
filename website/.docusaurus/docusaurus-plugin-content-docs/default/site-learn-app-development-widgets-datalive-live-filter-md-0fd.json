@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/live-filter",
+  "id": "app-development/widgets/datalive/live-filter",
+  "title": "Live Filter Widget",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/live-filter.md",
+  "sourceDirName": "app-development/widgets/datalive",
+  "slug": "/app-development/widgets/datalive/live-filter",
+  "permalink": "/learn/docs/app-development/widgets/datalive/live-filter",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/live-filter.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Live Filter Widget",
+    "id": "live-filter",
+    "sidebar_label": "Overview"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Select Locale",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/select-locale"
+  },
+  "next": {
+    "title": "Creating a Live Filter",
+    "permalink": "/learn/docs/app-development/widgets/datalive/livefilter/live-filter-basic-usage"
+  }
+}

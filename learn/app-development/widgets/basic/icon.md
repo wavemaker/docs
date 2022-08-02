@@ -1,6 +1,6 @@
 ---
 title: "Icon"
-id: ""
+id: "icon"
 ---
 
 Many widgets like Panel, Button etc. have a way to display an icon. You can choose the icons from the list of **wavicon** (thin fonts that abide the iOS and Android mobile style guidelines) or **font-awesome** icons.

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
+  "id": "on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
+  "title": "WaveMaker Enterprise Setup on GCP",
+  "description": "---",
+  "source": "@site/../learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp.md",
+  "sourceDirName": "on-premise/gcp",
+  "slug": "/on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
+  "permalink": "/learn/docs/on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker Enterprise Setup on GCP",
+    "id": "wavemaker-enterprise-setup-on-gcp",
+    "sidebar_label": "Overview"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Configure Pipeline",
+    "permalink": "/learn/docs/on-premise/configure/config-pipeline"
+  },
+  "next": {
+    "title": "Prepare Infrastructure",
+    "permalink": "/learn/docs/on-premise/gcp/launching-instances-in-gcp"
+  }
+}

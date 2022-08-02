@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/jump-start/jump-start-app-essentials",
+  "id": "learn/jump-start/jump-start-app-essentials",
+  "title": "Jump Start - WaveMaker App Building Essentials",
+  "description": "In this Jump Start guide, you will be learning the concepts behind WaveMaker and apply them to building an app.",
+  "source": "@site/../learn/learn/jump-start/jump-start-app-essentials.md",
+  "sourceDirName": "learn/jump-start",
+  "slug": "/learn/jump-start/jump-start-app-essentials",
+  "permalink": "/learn/docs/learn/jump-start/jump-start-app-essentials",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/jump-start/jump-start-app-essentials.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Jump Start - WaveMaker App Building Essentials",
+    "id": "jump-start-app-essentials",
+    "sidebar_label": "App Building Essentials"
+  }
+}

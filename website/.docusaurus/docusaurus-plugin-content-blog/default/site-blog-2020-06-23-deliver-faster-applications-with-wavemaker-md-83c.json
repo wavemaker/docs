@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/06/23/deliver-faster-applications-with-wavemaker",
+  "source": "@site/blog/2020-06-23-deliver-faster-applications-with-wavemaker.md",
+  "title": "Deliver faster applications with WaveMaker!",
+  "description": "Performance is key to the success of any application. Even though an app is feature-rich if it's not responsive to user actions it might lose its userbase. WaveMaker is a platform enables our users to develop web, mobile applications. We strive to enable top notch performance of these apps. Towards this goal, with each release, WaveMaker introduces changes aiding in optimization of generated apps in terms of code, build outputs & serving of the apps. The optimizations are made available to the customers out of the box. It requires minimal or no changes to be done by low code developers while building an app in WaveMaker, thus easing the process of building faster apps.",
+  "date": "2020-06-23T00:00:00.000Z",
+  "formattedDate": "June 23, 2020",
+  "tags": [],
+  "readingTime": 5.03,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Subodh Kumar"
+    }
+  ],
+  "frontMatter": {
+    "title": "Deliver faster applications with WaveMaker!",
+    "author": "Subodh Kumar"
+  },
+  "prevItem": {
+    "title": "New file picker for mobile apps - Improvements in UI to select files in mobile",
+    "permalink": "/learn/blog/2020/06/24/wavemaker-mobile-filepicker"
+  },
+  "nextItem": {
+    "title": "WaveMaker releases 10.5 version",
+    "permalink": "/learn/blog/2020/06/23/product-update-10-5-whats-new"
+  }
+}

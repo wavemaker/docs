@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/configure/config-vcs",
+  "id": "on-premise/configure/config-vcs",
+  "title": "WaveMaker Enterprise Configure VCS",
+  "description": "---",
+  "source": "@site/../learn/on-premise/configure/config-vcs.md",
+  "sourceDirName": "on-premise/configure",
+  "slug": "/on-premise/configure/config-vcs",
+  "permalink": "/learn/docs/on-premise/configure/config-vcs",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/configure/config-vcs.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker Enterprise Configure VCS",
+    "id": "config-vcs",
+    "sidebar_label": "Configure VCS"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Users Onboarding",
+    "permalink": "/learn/docs/on-premise/configure/config-users-auth-providers"
+  },
+  "next": {
+    "title": "Add Developer Capacity",
+    "permalink": "/learn/docs/on-premise/configure/add-dev-capacity"
+  }
+}

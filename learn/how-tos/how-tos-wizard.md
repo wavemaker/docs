@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Wizard"
-id: ""
+id: "how-tos-wizard"
 ---
 ---
 
@@ -20,8 +20,8 @@ This is the set-up of an existing page - Getting Basic Details from the User f
 1. **Create a Page** named **WizardBasic** in WaveMaker App
 2. Drag and Drop a wizard on the canvas
 3. Once the Wizard is dropped on to the canvas, you will see the UI as shown below. By default only one step with the Title as Step Title is created. Note there are two action buttons – Cancel and Done respectively [![wz_usage_design](/learn/assets/WZ_usage_design.png)](/learn/assets/WZ_usage_design.png)
-4. Edit the **Title** of the Step: Click on the step and in the properties panel change the Title to _Personal Data_. [![wz_usage_titleprops](/learn/assets/WZ_usage_titleprops.png)](/learn/assets/WZ_usage_titleprops.png)
-5. **Adding More Steps to the Wizard**: Add one more step – click on the wizard canvas and click on **Add Step**. Change Step **Title** to _Professional Data_ by using the Title property of the step. [![wz_usage_addsteps](/learn/assets/WZ_usage_addsteps.png)](/learn/assets/WZ_usage_addsteps.png)
+4. Edit the **Title** of the Step: Click on the step and in the properties panel change the Title to _Personal Data_. 
+5. **Adding More Steps to the Wizard**: Add one more step – click on the wizard canvas and click on **Add Step**. Change Step **Title** to _Professional Data_ by using the Title property of the step. 
 
 **Design the UI for Personal Data Step:** Live Form bound to the Personal entity, using 3-column layout. [![WZ_usage_step1design](/learn/assets/WZ_usage_step1design.png)](/learn/assets/WZ_usage_step1design.png) **Design UI for Professional Data Step**: Live Form bound to the Professional entity, using 1-column layout. [![WZ_usage_step2design](/learn/assets/WZ_usage_step2design.png)](/learn/assets/WZ_usage_step2design.png)
 

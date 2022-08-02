@@ -1,6 +1,6 @@
 ---
 title: "Connecting Datasource to Widget"
-id: ""
+id: "connecting-datasource-to-widget"
 ---
 ---
 

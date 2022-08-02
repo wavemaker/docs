@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/view-master-detail-data-records-using-data-table",
+  "id": "learn/how-tos/view-master-detail-data-records-using-data-table",
+  "title": "View Master-Detail Data Records using Data Table",
+  "description": "Scenario: In a Master-Detail relationship, display the details record for a selected row of Master table. We will see the implementation of this scenario using Data Table widget.",
+  "source": "@site/../learn/learn/how-tos/view-master-detail-data-records-using-data-table.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/view-master-detail-data-records-using-data-table",
+  "permalink": "/learn/docs/learn/how-tos/view-master-detail-data-records-using-data-table",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/view-master-detail-data-records-using-data-table.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "View Master-Detail Data Records using Data Table",
+    "id": "view-master-detail-data-records-using-data-table"
+  }
+}

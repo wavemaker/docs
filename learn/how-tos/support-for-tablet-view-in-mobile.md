@@ -1,6 +1,6 @@
 ---
 title: "Designing Tablet Views in Mobile Project"
-id: ""
+id: "support-for-tablet-view-in-mobile"
 ---
 ---
 

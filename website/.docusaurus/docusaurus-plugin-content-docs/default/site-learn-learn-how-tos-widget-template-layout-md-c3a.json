@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/how-tos/widget-template-layout",
+  "id": "learn/how-tos/widget-template-layout",
+  "title": "How to apply Smart Template and Layout for Widgets",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/widget-template-layout.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/widget-template-layout",
+  "permalink": "/learn/docs/learn/how-tos/widget-template-layout",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/widget-template-layout.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to apply Smart Template and Layout for Widgets",
+    "id": "widget-template-layout",
+    "sidebar_label": "Choose Widget Template and Layout"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/users-roles",
+  "id": "on-premise/users-roles",
+  "title": "Users and Roles",
+  "description": "---",
+  "source": "@site/../learn/on-premise/users-roles.md",
+  "sourceDirName": "on-premise",
+  "slug": "/on-premise/users-roles",
+  "permalink": "/learn/docs/on-premise/users-roles",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/users-roles.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Users and Roles",
+    "id": "users-roles",
+    "sidebar_label": "Users & Roles"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Enterprise Setup Process",
+    "permalink": "/learn/docs/on-premise/getting-started"
+  },
+  "next": {
+    "title": "What you'll need",
+    "permalink": "/learn/docs/on-premise/prerequisites"
+  }
+}

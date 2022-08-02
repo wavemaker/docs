@@ -1,6 +1,6 @@
 ---
 title: "Customizing Post Authentication Handlers"
-id: ""
+id: "customizing-post-authentication-handlers"
 ---
 
 In a Security enabled WaveMaker app, post-authentication the following actions are performed.

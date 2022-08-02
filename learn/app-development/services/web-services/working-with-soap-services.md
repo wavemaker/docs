@@ -1,6 +1,6 @@
 ---
 title: "Working with SOAP Services"
-id: ""
+id: "working-with-soap-services"
 ---
 ---
 

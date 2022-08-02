@@ -1,6 +1,6 @@
 ---
 title: "Drag and Drop Widget"
-id: ""
+id: "drag-and-drop-widget"
 ---
 ---
 

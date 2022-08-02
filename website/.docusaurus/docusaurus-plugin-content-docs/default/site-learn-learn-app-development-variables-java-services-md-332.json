@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/variables/java-services",
+  "id": "learn/app-development/variables/java-services",
+  "title": "Variable for Java Service",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/variables/java-services.md",
+  "sourceDirName": "learn/app-development/variables",
+  "slug": "/learn/app-development/variables/java-services",
+  "permalink": "/learn/docs/learn/app-development/variables/java-services",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/variables/java-services.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Variable for Java Service",
+    "id": "java-services"
+  }
+}

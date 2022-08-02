@@ -1,6 +1,6 @@
 ---
 title: "Micro frontend using iframes"
-id: ""
+id: "microfrontends-iframe"
 ---
 ---
 

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/get-validation-messages-form",
+  "id": "learn/how-tos/get-validation-messages-form",
+  "title": "How to Get Validation Messages from a Form",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/get-validation-messages-form.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/get-validation-messages-form",
+  "permalink": "/learn/docs/learn/how-tos/get-validation-messages-form",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/get-validation-messages-form.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to Get Validation Messages from a Form",
+    "id": "get-validation-messages-form"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: "Variables Overview"
-id: ""
+id: "variables"
 sidebar_label: "Variables Overview"
 ---
 Learn about Variables in WaveMaker low-code platform. See how it works and how to use them as services.
@@ -35,8 +35,8 @@ Variables can be categorized based on the target action:
 |No.|Variable Types|See|
 |---|---|---|
 |1.|**Database CRUD** | [Database CRUD](/learn/app-development/variables/database-crud/) |
-|2.|**APIs** |- [Database APIs](/learn/app-development/variables/database-apis/)<br> - [Web Services](/learn/app-development/variables/web-service/)<br> - [Java Services](/learn/app-development/variables/java-services/) <br> - [Security Services](/learn/app-development/variables/security-service/)|
-|3.|**Other Services**|- [Model Variable](/learn/app-development/variables/model-variable/) <br> - [Device Variable](/learn/hybrid-mobile/device-variables/)|
+|2.|**APIs** |- [Database APIs](/learn/app-development/variables/database-apis/)  - [Web Services](/learn/app-development/variables/web-service/)  - [Java Services](/learn/app-development/variables/java-services/)   - [Security Services](/learn/app-development/variables/security-service/)|
+|3.|**Other Services**|- [Model Variable](/learn/app-development/variables/model-variable/)   - [Device Variable](/learn/hybrid-mobile/device-variables/)|
 
 
 ## 1. Database CRUD

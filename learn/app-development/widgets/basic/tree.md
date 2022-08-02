@@ -1,6 +1,6 @@
 ---
 title: "Tree"
-id: ""
+id: "tree"
 ---
 ---
 
@@ -21,25 +21,25 @@ You can set various properties
 | --- | --- |
 | Name | The name is a unique identifier for your widget. |
 | **Accessibility** |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
-| Tree Icons | This property sets expand-collapse icons on the tree. One can choose from: <br><br> - _folder_, <br> - _plus-minus_, <br> - _circle-plus-minus_, <br> - _chevron_, <br> - _menu_, <br> - _triangle_ (default selection) or <br> - _expand-collapse_.  |
+| Tree Icons | This property sets expand-collapse icons on the tree. One can choose from:    - _folder_,   - _plus-minus_,   - _circle-plus-minus_,   - _chevron_,   - _menu_,   - _triangle_ (default selection) or   - _expand-collapse_.  |
 | **Dataset** |
 | Value | Set this property to a variable to populate the list of values to display. |
-| Order by  | Set the order of the content.<br> (available only when the above Dataset Value is bound to a variable) |
-| Node Label  | Property of the object (bound to the value property above) for node label binding, default value is label. <br> (available only when the above Dataset Value is bound to a variable)|
-| Node Icon  | Property of the object (bound to the value property above) for node icon binding, default value is icon.<br> (available only when the above Dataset Value is bound to a variable) |
-| Node Children  | Property of the object (bound to the value property above) for node children binding, the default value is children. The property where the nested object is present. <br> (available only when the above Dataset Value is bound to a variable) |
-| Node Id  | Property of the object (bound to the value property above) used to identify a node. The default value property can be set to a value of the node id for initial selection. <br> (available only when the above Dataset Value is bound to a variable) |
-| Node Action  | This property sets the actions for the widget. <br> (available only when the above Dataset Value is bound to a variable) |
-| Node Id  | Set this property to expand the node when it is clicked options being Do Nothing or Expand Node. <br> (available only when the above Dataset Value is bound to a variable) |
+| Order by  | Set the order of the content.  (available only when the above Dataset Value is bound to a variable) |
+| Node Label  | Property of the object (bound to the value property above) for node label binding, default value is label.   (available only when the above Dataset Value is bound to a variable)|
+| Node Icon  | Property of the object (bound to the value property above) for node icon binding, default value is icon.  (available only when the above Dataset Value is bound to a variable) |
+| Node Children  | Property of the object (bound to the value property above) for node children binding, the default value is children. The property where the nested object is present.   (available only when the above Dataset Value is bound to a variable) |
+| Node Id  | Property of the object (bound to the value property above) used to identify a node. The default value property can be set to a value of the node id for initial selection.   (available only when the above Dataset Value is bound to a variable) |
+| Node Action  | This property sets the actions for the widget.   (available only when the above Dataset Value is bound to a variable) |
+| Node Id  | Set this property to expand the node when it is clicked options being Do Nothing or Expand Node.   (available only when the above Dataset Value is bound to a variable) |
 | **Default Value** |
-| Value | The default value to be set at runtime. Can be: <br><br> - none, <br> - FirstNode or SecondNode, <br> - value for the Node Id property. <br> When `datavalue` is `FirstNode`, the First Node of the tree will be selected. When `datavalue` is `LastNode`, the Last Node of the tree will be selected. When `datavalue` is bound to a condition (eg, datavalue="role === 'admin'"), The condition is evaluated for each node of the tree until the condition is satisfied. The first node which satisfies the given condition will be selected. |
+| Value | The default value to be set at runtime. Can be:    - none,   - FirstNode or SecondNode,   - value for the Node Id property.   When `datavalue` is `FirstNode`, the First Node of the tree will be selected. When `datavalue` is `LastNode`, the Last Node of the tree will be selected. When `datavalue` is bound to a condition (eg, datavalue="role === 'admin'"), The condition is evaluated for each node of the tree until the condition is satisfied. The first node which satisfies the given condition will be selected. |
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
-| Load on Demand <br> (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| Load on Demand   (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | **Format** |
 | Horizontal Align | This property specifies how the elements should be aligned horizontally. |
 
@@ -56,8 +56,8 @@ The tree widget has a few methods exposed on widget scope which can be accessed 
 
 | Purpose | Usage |
 | --- | --- |
-| Select a node | ```Page.Widgets.[treeName].selectById(dataValue);``` <br> ```//This method selects the node in the tree rendered.``` <br> ```//This method accepts datavalue of the node to be selected.``` <br> ```//Datavalue of the node is the `Node Id` field value``` <br> ```//mapped in the property panel for the tree widget. ``` |
-| Deselect a node | ```Page.Widgets.[treeName].deselectById();``` <br> ```//This method clears the selectedNode.``` <br> ```//Doesn’t require any parameters``` |
+| Select a node | ```Page.Widgets.[treeName].selectById(dataValue);```   ```//This method selects the node in the tree rendered.```   ```//This method accepts datavalue of the node to be selected.```   ```//Datavalue of the node is the `Node Id` field value```   ```//mapped in the property panel for the tree widget. ``` |
+| Deselect a node | ```Page.Widgets.[treeName].deselectById();```   ```//This method clears the selectedNode.```   ```//Doesn’t require any parameters``` |
 
 ## Use Cases
 

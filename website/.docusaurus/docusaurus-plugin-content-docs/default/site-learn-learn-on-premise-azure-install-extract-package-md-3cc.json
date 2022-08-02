@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/azure/install/extract-package",
+  "id": "learn/on-premise/azure/install/extract-package",
+  "title": "Extract Package",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/azure/install/extract-package.md",
+  "sourceDirName": "learn/on-premise/azure/install",
+  "slug": "/learn/on-premise/azure/install/extract-package",
+  "permalink": "/learn/docs/learn/on-premise/azure/install/extract-package",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/azure/install/extract-package.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Extract Package",
+    "id": "extract-package",
+    "sidebar_label": "Extract Package"
+  }
+}

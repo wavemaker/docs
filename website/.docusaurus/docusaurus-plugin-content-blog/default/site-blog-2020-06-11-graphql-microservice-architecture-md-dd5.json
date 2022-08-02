@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/06/11/graphql-microservice-architecture",
+  "source": "@site/blog/2020-06-11-graphql-microservice-architecture.md",
+  "title": "GraphQL in a Micro Services Architecture",
+  "description": "Today it is becoming more and more common to break down a monolithic architecture into micro services, thereby you get many small APIs that work independently. In micro services architecture, a bunch of services are broken down into independent smaller services which expose standard REST APIs to interact with.",
+  "date": "2020-06-11T00:00:00.000Z",
+  "formattedDate": "June 11, 2020",
+  "tags": [],
+  "readingTime": 6.185,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Vibhu Singhal"
+    }
+  ],
+  "frontMatter": {
+    "title": "GraphQL in a Micro Services Architecture",
+    "author": "Vibhu Singhal"
+  },
+  "prevItem": {
+    "title": "WaveMaker releases 10.5 version",
+    "permalink": "/learn/blog/2020/06/23/product-update-10-5-whats-new"
+  },
+  "nextItem": {
+    "title": "Build Themes for WaveMaker Apps Without Any Coding",
+    "permalink": "/learn/blog/2020/06/01/build-themes-without-any-coding"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/upgrade/docker-upgrade",
+  "id": "learn/on-premise/upgrade/docker-upgrade",
+  "title": "Docker Upgrade",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/upgrade/docker-upgrade.md",
+  "sourceDirName": "learn/on-premise/upgrade",
+  "slug": "/learn/on-premise/upgrade/docker-upgrade",
+  "permalink": "/learn/docs/learn/on-premise/upgrade/docker-upgrade",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/upgrade/docker-upgrade.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Docker Upgrade",
+    "id": "docker-upgrade",
+    "sidebar_label": "Docker Upgrade"
+  }
+}

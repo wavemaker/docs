@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/ui-design/page-concepts/page-cache",
+  "id": "app-development/ui-design/page-concepts/page-cache",
+  "title": "Page Cache",
+  "description": "---",
+  "source": "@site/../learn/app-development/ui-design/page-concepts/page-cache.md",
+  "sourceDirName": "app-development/ui-design/page-concepts",
+  "slug": "/app-development/ui-design/page-concepts/page-cache",
+  "permalink": "/learn/docs/app-development/ui-design/page-concepts/page-cache",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/ui-design/page-concepts/page-cache.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Page Cache",
+    "id": "page-cache"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Page Artefacts",
+    "permalink": "/learn/docs/app-development/ui-design/page-artefacts"
+  },
+  "next": {
+    "title": "Partial Page",
+    "permalink": "/learn/docs/app-development/ui-design/page-concepts/partial-pages"
+  }
+}

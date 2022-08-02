@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/using-cordova-plugins",
+  "id": "how-tos/using-cordova-plugins",
+  "title": "Using Cordova Plugins",
+  "description": "---",
+  "source": "@site/../learn/how-tos/using-cordova-plugins.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/using-cordova-plugins",
+  "permalink": "/learn/docs/how-tos/using-cordova-plugins",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/using-cordova-plugins.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using Cordova Plugins",
+    "id": "using-cordova-plugins"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Setting Splashscreen Images and App Icons",
+    "permalink": "/learn/docs/how-tos/splashscreens-icons"
+  },
+  "next": {
+    "title": "Designing Tablet Views in Mobile Project",
+    "permalink": "/learn/docs/how-tos/support-for-tablet-view-in-mobile"
+  }
+}

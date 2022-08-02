@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/configuring-sap-hana-clouddb",
+  "id": "learn/how-tos/configuring-sap-hana-clouddb",
+  "title": "Connect To SAP Hana Cloud Database",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/configuring-sap-hana-clouddb.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/configuring-sap-hana-clouddb",
+  "permalink": "/learn/docs/learn/how-tos/configuring-sap-hana-clouddb",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/configuring-sap-hana-clouddb.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Connect To SAP Hana Cloud Database",
+    "id": "configuring-sap-hana-clouddb"
+  }
+}

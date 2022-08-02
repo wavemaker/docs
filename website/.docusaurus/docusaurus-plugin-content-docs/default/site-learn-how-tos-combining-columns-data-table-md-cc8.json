@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/combining-columns-data-table",
+  "id": "how-tos/combining-columns-data-table",
+  "title": "Combining Columns in Data Table",
+  "description": "---",
+  "source": "@site/../learn/how-tos/combining-columns-data-table.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/combining-columns-data-table",
+  "permalink": "/learn/docs/how-tos/combining-columns-data-table",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/combining-columns-data-table.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Combining Columns in Data Table",
+    "id": "combining-columns-data-table"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Data Table Column bound to Query",
+    "permalink": "/learn/docs/how-tos/data-table-column-bound-query"
+  },
+  "next": {
+    "title": "Custom Styling Data Table Columns & Rows",
+    "permalink": "/learn/docs/how-tos/data-table-styling"
+  }
+}

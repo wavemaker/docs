@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/wavemaker-release-notes/v10-5-6",
+  "id": "learn/wavemaker-release-notes/v10-5-6",
+  "title": "WaveMaker 10.5.6 - Release date: 08 October 2020",
+  "description": "WaveMaker released a new update version with bug fixes.",
+  "source": "@site/../learn/learn/wavemaker-release-notes/v10-5-6.md",
+  "sourceDirName": "learn/wavemaker-release-notes",
+  "slug": "/learn/wavemaker-release-notes/v10-5-6",
+  "permalink": "/learn/docs/learn/wavemaker-release-notes/v10-5-6",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/wavemaker-release-notes/v10-5-6.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker 10.5.6 - Release date: 08 October 2020",
+    "id": "v10-5-6",
+    "sidebar_label": "Release v10.5.6"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/websocket-usage-chatroom-app",
+  "id": "how-tos/websocket-usage-chatroom-app",
+  "title": "WebSocket Usage - Chatroom App",
+  "description": "---",
+  "source": "@site/../learn/how-tos/websocket-usage-chatroom-app.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/websocket-usage-chatroom-app",
+  "permalink": "/learn/docs/how-tos/websocket-usage-chatroom-app",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/websocket-usage-chatroom-app.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WebSocket Usage - Chatroom App",
+    "id": "websocket-usage-chatroom-app"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "How to Intercept Request and Response of all API Calls in One Place",
+    "permalink": "/learn/docs/how-tos/intercept-requests-responses-api-calls-one-place"
+  },
+  "next": {
+    "title": "Working with API with different pagination formats",
+    "permalink": "/learn/docs/how-tos/working-api-with-different-pagination-formats"
+  }
+}

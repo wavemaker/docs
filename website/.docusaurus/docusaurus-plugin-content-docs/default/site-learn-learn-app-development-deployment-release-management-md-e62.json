@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/deployment/release-management",
+  "id": "learn/app-development/deployment/release-management",
+  "title": "Release Management",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/deployment/release-management.md",
+  "sourceDirName": "learn/app-development/deployment",
+  "slug": "/learn/app-development/deployment/release-management",
+  "permalink": "/learn/docs/learn/app-development/deployment/release-management",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/deployment/release-management.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Release Management",
+    "id": "release-management",
+    "sidebar_label": "Overview"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/list-grouped",
+  "id": "learn/how-tos/list-grouped",
+  "title": "Creating an Employee List grouped by City",
+  "description": "You can use the List widget to list data from a database. There are various flavors to the List. Here we will be using the Group by property to categorize the List Items based upon a field. We will be building a page to list Employee list grouped by city they live in.",
+  "source": "@site/../learn/learn/how-tos/list-grouped.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/list-grouped",
+  "permalink": "/learn/docs/learn/how-tos/list-grouped",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/list-grouped.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Creating an Employee List grouped by City",
+    "id": "list-grouped"
+  }
+}

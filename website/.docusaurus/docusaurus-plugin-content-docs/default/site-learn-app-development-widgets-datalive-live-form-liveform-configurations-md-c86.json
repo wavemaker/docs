@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/live-form/liveform-configurations",
+  "id": "app-development/widgets/datalive/live-form/liveform-configurations",
+  "title": "Live Form - Configurations",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/live-form/liveform-configurations.md",
+  "sourceDirName": "app-development/widgets/datalive/live-form",
+  "slug": "/app-development/widgets/datalive/live-form/liveform-configurations",
+  "permalink": "/learn/docs/app-development/widgets/datalive/live-form/liveform-configurations",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/live-form/liveform-configurations.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Live Form - Configurations",
+    "id": "liveform-configurations",
+    "sidebar_label": "Configuration"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Layouts",
+    "permalink": "/learn/docs/app-development/widgets/datalive/live-form/liveform-layouts"
+  },
+  "next": {
+    "title": "Fields Configuration",
+    "permalink": "/learn/docs/app-development/widgets/datalive/live-form/fields-configuration"
+  }
+}

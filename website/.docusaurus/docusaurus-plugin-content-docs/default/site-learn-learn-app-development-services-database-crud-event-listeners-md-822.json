@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/services/database-crud-event-listeners",
+  "id": "learn/app-development/services/database-crud-event-listeners",
+  "title": "Database CRUD Operations Event Listeners",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/services/database-crud-event-listeners.md",
+  "sourceDirName": "learn/app-development/services",
+  "slug": "/learn/app-development/services/database-crud-event-listeners",
+  "permalink": "/learn/docs/learn/app-development/services/database-crud-event-listeners",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/services/database-crud-event-listeners.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Database CRUD Operations Event Listeners",
+    "id": "database-crud-event-listeners",
+    "sidebar_label": "CRUD Event Listeners"
+  }
+}

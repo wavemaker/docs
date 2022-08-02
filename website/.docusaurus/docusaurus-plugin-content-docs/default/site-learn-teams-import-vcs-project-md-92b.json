@@ -1,0 +1,31 @@
+{
+  "unversionedId": "teams/import-vcs-project",
+  "id": "teams/import-vcs-project",
+  "title": "Import a WaveMaker Project using VCS URL",
+  "description": "---",
+  "source": "@site/../learn/teams/import-vcs-project.md",
+  "sourceDirName": "teams",
+  "slug": "/teams/import-vcs-project",
+  "permalink": "/learn/docs/teams/import-vcs-project",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/teams/import-vcs-project.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Import a WaveMaker Project using VCS URL",
+    "id": "import-vcs-project",
+    "sidebar_label": "Import VCS Project"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Code Repository",
+    "permalink": "/learn/docs/teams/code-repository"
+  },
+  "next": {
+    "title": "Team Profile",
+    "permalink": "/learn/docs/teams/team-profile"
+  }
+}

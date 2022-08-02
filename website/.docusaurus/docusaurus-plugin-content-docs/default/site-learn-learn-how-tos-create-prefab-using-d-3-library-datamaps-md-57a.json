@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/create-prefab-using-d3-library-datamaps",
+  "id": "learn/how-tos/create-prefab-using-d3-library-datamaps",
+  "title": "Create Prefab Using  D3 Library DataMaps",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/create-prefab-using-d3-library-datamaps.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/create-prefab-using-d3-library-datamaps",
+  "permalink": "/learn/docs/learn/how-tos/create-prefab-using-d3-library-datamaps",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/create-prefab-using-d3-library-datamaps.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Create Prefab Using  D3 Library DataMaps",
+    "id": "create-prefab-using-d3-library-datamaps"
+  }
+}

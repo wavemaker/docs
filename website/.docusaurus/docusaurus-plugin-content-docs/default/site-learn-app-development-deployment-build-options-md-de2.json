@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/deployment/build-options",
+  "id": "app-development/deployment/build-options",
+  "title": "Build Options for App Deployment",
+  "description": "---",
+  "source": "@site/../learn/app-development/deployment/build-options.md",
+  "sourceDirName": "app-development/deployment",
+  "slug": "/app-development/deployment/build-options",
+  "permalink": "/learn/docs/app-development/deployment/build-options",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/deployment/build-options.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Build Options for App Deployment",
+    "id": "build-options",
+    "sidebar_label": "Build Options"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Inspection Framework",
+    "permalink": "/learn/docs/app-development/dev-integration/inspection-framework"
+  },
+  "next": {
+    "title": "WaveMaker Mobile Apps Automation",
+    "permalink": "/learn/docs/hybrid-mobile/mobile-automation-appium"
+  }
+}

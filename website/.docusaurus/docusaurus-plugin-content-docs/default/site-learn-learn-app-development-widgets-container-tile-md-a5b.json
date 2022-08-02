@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/container/tile",
+  "id": "learn/app-development/widgets/container/tile",
+  "title": "Tile",
+  "description": "Tile is a container for other widgets used to present a set of objects. Tile widget lets you to directly add an image, text box, video, or web code to user dashboard. Functions similar to the container but it comes with some default styling which makes it different from a container. Users cannot create partials using tile.",
+  "source": "@site/../learn/learn/app-development/widgets/container/tile.md",
+  "sourceDirName": "learn/app-development/widgets/container",
+  "slug": "/learn/app-development/widgets/container/tile",
+  "permalink": "/learn/docs/learn/app-development/widgets/container/tile",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/container/tile.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Tile",
+    "id": "tile"
+  }
+}

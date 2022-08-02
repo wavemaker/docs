@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/tutorials/build-app-in-5-minutes/drag-and-drop-widget",
+  "id": "learn/tutorials/build-app-in-5-minutes/drag-and-drop-widget",
+  "title": "Drag and Drop Widget",
+  "description": "---",
+  "source": "@site/../learn/learn/tutorials/build-app-in-5-minutes/drag-and-drop-widget.md",
+  "sourceDirName": "learn/tutorials/build-app-in-5-minutes",
+  "slug": "/learn/tutorials/build-app-in-5-minutes/drag-and-drop-widget",
+  "permalink": "/learn/docs/learn/tutorials/build-app-in-5-minutes/drag-and-drop-widget",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/tutorials/build-app-in-5-minutes/drag-and-drop-widget.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Drag and Drop Widget",
+    "id": "drag-and-drop-widget"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/widgets/datalive/live-form/live-form-basic-usage",
+  "id": "learn/app-development/widgets/datalive/live-form/live-form-basic-usage",
+  "title": "Creating Live Form",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/widgets/datalive/live-form/live-form-basic-usage.md",
+  "sourceDirName": "learn/app-development/widgets/datalive/live-form",
+  "slug": "/learn/app-development/widgets/datalive/live-form/live-form-basic-usage",
+  "permalink": "/learn/docs/learn/app-development/widgets/datalive/live-form/live-form-basic-usage",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/datalive/live-form/live-form-basic-usage.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Creating Live Form",
+    "id": "live-form-basic-usage",
+    "sidebar_label": "Creating a Live Form"
+  }
+}

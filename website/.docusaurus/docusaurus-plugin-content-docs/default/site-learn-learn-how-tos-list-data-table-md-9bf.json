@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/list-data-table",
+  "id": "learn/how-tos/list-data-table",
+  "title": "Including a Data Table within a List",
+  "description": "In this section we will build a custom list with a Data Table.",
+  "source": "@site/../learn/learn/how-tos/list-data-table.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/list-data-table",
+  "permalink": "/learn/docs/learn/how-tos/list-data-table",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/list-data-table.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Including a Data Table within a List",
+    "id": "list-data-table"
+  }
+}

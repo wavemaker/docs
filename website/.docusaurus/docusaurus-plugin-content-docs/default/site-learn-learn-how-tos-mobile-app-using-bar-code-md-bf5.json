@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/mobile-app-using-bar-code",
+  "id": "learn/how-tos/mobile-app-using-bar-code",
+  "title": "Mobile App using Bar code",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/mobile-app-using-bar-code.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/mobile-app-using-bar-code",
+  "permalink": "/learn/docs/learn/how-tos/mobile-app-using-bar-code",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/mobile-app-using-bar-code.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Mobile App using Bar code",
+    "id": "mobile-app-using-bar-code"
+  }
+}

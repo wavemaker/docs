@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/variables/security-service",
+  "id": "learn/app-development/variables/security-service",
+  "title": "Variable for Security Service",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/variables/security-service.md",
+  "sourceDirName": "learn/app-development/variables",
+  "slug": "/learn/app-development/variables/security-service",
+  "permalink": "/learn/docs/learn/app-development/variables/security-service",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/variables/security-service.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Variable for Security Service",
+    "id": "security-service"
+  }
+}

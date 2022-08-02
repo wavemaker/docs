@@ -1,6 +1,6 @@
 ---
 title: "Initialize Setup"
-id: ""
+id: "initilize-setup"
 sidebar_label: "Initialize Setup"
 ---
 ---

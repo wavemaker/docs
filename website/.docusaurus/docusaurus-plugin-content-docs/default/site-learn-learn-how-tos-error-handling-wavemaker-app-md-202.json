@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/error-handling-wavemaker-app",
+  "id": "learn/how-tos/error-handling-wavemaker-app",
+  "title": "Error Handling in WaveMaker App",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/error-handling-wavemaker-app.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/error-handling-wavemaker-app",
+  "permalink": "/learn/docs/learn/how-tos/error-handling-wavemaker-app",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/error-handling-wavemaker-app.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Error Handling in WaveMaker App",
+    "id": "error-handling-wavemaker-app"
+  }
+}

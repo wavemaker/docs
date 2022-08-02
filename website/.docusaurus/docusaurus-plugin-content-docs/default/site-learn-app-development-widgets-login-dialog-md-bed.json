@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/login-dialog",
+  "id": "app-development/widgets/login-dialog",
+  "title": "Login Dialog",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/login-dialog.md",
+  "sourceDirName": "app-development/widgets",
+  "slug": "/app-development/widgets/login-dialog",
+  "permalink": "/learn/docs/app-development/widgets/login-dialog",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/login-dialog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Login Dialog",
+    "id": "login-dialog"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Page Dialog",
+    "permalink": "/learn/docs/app-development/widgets/page-dialog"
+  },
+  "next": {
+    "title": "Camera",
+    "permalink": "/learn/docs/app-development/widgets/mobile-widgets/camera"
+  }
+}

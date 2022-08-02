@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2020/04/20/wavemaker-wkwebview-upgrade",
+  "source": "@site/blog/2020-04-20-wavemaker-wkwebview-upgrade.md",
+  "title": " WaveMaker platform is updated to use WKWebView.",
+  "description": "Problem",
+  "date": "2020-04-20T00:00:00.000Z",
+  "formattedDate": "April 20, 2020",
+  "tags": [],
+  "readingTime": 2.5,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Srinivasa Rao Boyina"
+    }
+  ],
+  "frontMatter": {
+    "title": " WaveMaker platform is updated to use WKWebView.",
+    "author": "Srinivasa Rao Boyina"
+  },
+  "prevItem": {
+    "title": "OpenAPI support in WaveMaker",
+    "permalink": "/learn/blog/2020/04/21/wavemaker-openapi-import"
+  },
+  "nextItem": {
+    "title": "Deliver WaveMaker Apps as Micro Frontend Modules",
+    "permalink": "/learn/blog/2020/02/25/wavemaker-micro-front-end-support"
+  }
+}

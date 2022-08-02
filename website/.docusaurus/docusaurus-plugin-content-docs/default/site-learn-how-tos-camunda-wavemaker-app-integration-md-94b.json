@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/camunda-wavemaker-app-integration",
+  "id": "how-tos/camunda-wavemaker-app-integration",
+  "title": "How to Design a workflow in Camunda BPM and integrate into a WaveMaker app",
+  "description": "---",
+  "source": "@site/../learn/how-tos/camunda-wavemaker-app-integration.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/camunda-wavemaker-app-integration",
+  "permalink": "/learn/docs/how-tos/camunda-wavemaker-app-integration",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/camunda-wavemaker-app-integration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to Design a workflow in Camunda BPM and integrate into a WaveMaker app",
+    "id": "camunda-wavemaker-app-integration",
+    "sidebar_label": "Design a workflow in Camunda BPM and integrate into a WaveMaker app"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Accessing Logged-in User Details using Java Service",
+    "permalink": "/learn/docs/how-tos/accessing-loggedin-user-information-using-a-java-service"
+  },
+  "next": {
+    "title": "Integrate Azure File Storage",
+    "permalink": "/learn/docs/how-tos/azure-file-storage-connector"
+  }
+}

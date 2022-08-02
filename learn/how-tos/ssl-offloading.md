@@ -1,6 +1,6 @@
 ---
 title: "SSL Termination in LoadBalancer"
-id: ""
+id: "ssl-offloading"
 ---
 ---
 
@@ -93,7 +93,7 @@ Follow the below steps to test which headers are received by WebApp while hittin
          char c = value.charAt(i);
          sb.append(c);
          if (c == ';')
-            sb.append("<br>");
+            sb.append(" ");
       }
       return sb.toString();
    }

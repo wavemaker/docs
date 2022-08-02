@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/custom-widget-template",
+  "id": "how-tos/custom-widget-template",
+  "title": "How to apply Custom Template for Widgets",
+  "description": "---",
+  "source": "@site/../learn/how-tos/custom-widget-template.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/custom-widget-template",
+  "permalink": "/learn/docs/how-tos/custom-widget-template",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/custom-widget-template.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "How to apply Custom Template for Widgets",
+    "id": "custom-widget-template",
+    "sidebar_label": "Custom Template for Widgets"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Choose Widget Template and Layout",
+    "permalink": "/learn/docs/how-tos/widget-template-layout"
+  },
+  "next": {
+    "title": "Apply Custom Data Formatter",
+    "permalink": "/learn/docs/how-tos/using-custom-formatter"
+  }
+}

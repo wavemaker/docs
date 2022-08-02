@@ -1,6 +1,6 @@
 ---
 title: "Deploy using Docker Compose"
-id: ""
+id: "deployment-using-docker-compose"
 ---
 ---
 

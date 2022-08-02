@@ -1,0 +1,31 @@
+{
+  "unversionedId": "connectors/connectors-building",
+  "id": "connectors/connectors-building",
+  "title": "Build a New Connector",
+  "description": "---",
+  "source": "@site/../learn/connectors/connectors-building.md",
+  "sourceDirName": "connectors",
+  "slug": "/connectors/connectors-building",
+  "permalink": "/learn/docs/connectors/connectors-building",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/connectors/connectors-building.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Build a New Connector",
+    "id": "connectors-building",
+    "sidebar_label": "Build a New Connector"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "List of Connectors",
+    "permalink": "/learn/docs/connectors/connectors-list"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/learn/docs/teams/overview"
+  }
+}

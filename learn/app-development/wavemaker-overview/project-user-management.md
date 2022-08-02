@@ -50,7 +50,7 @@ The list of roles and permissions are provided for project admin, default and co
 |SOAP Services | Import, Edit, Delete, and View |
 |Websocket Services | Import, Edit, Delete, and View|
 | Java Services | Import, Edit, Delete, and View |
-| Database Services | Create or Import, Edit, Delete, and View; <br> Queries - Create, Edit, Delete, and View; <br> Procedures - Create, Edit, Delete, and View. |
+| Database Services | Create or Import, Edit, Delete, and View;   Queries - Create, Edit, Delete, and View;   Procedures - Create, Edit, Delete, and View. |
 | Themes | View, Import, and Change |
 | Prefabs | Import, and Delete |
 | Artifacts | View, and Import |
@@ -82,7 +82,7 @@ The list of roles and permissions are provided for project admin, default and co
 | SOAP Services | Import, Edit, Delete, and View |
 | Websocket Services | Import, Edit, Delete, and View |
 | Java Services | Import, Edit, Delete, and View |
-| Database Services | Create or Import, Edit, Delete, and View; <br> Queries - Create, Edit, Delete, and View; <br>Procedures - Create, Edit, Delete, and View.|
+| Database Services | Create or Import, Edit, Delete, and View;   Queries - Create, Edit, Delete, and View;  Procedures - Create, Edit, Delete, and View.|
 | Themes | View, Import, and Change |
 | Prefabs | Import, and Delete |
 | Artifacts | View | 

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/variables/custom-formatter",
+  "id": "learn/app-development/variables/custom-formatter",
+  "title": "Custom Formatter",
+  "description": "With Custom Formatter, customize data more specific to your audience.",
+  "source": "@site/../learn/learn/app-development/variables/custom-formatter.md",
+  "sourceDirName": "learn/app-development/variables",
+  "slug": "/learn/app-development/variables/custom-formatter",
+  "permalink": "/learn/docs/learn/app-development/variables/custom-formatter",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/variables/custom-formatter.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Custom Formatter",
+    "id": "custom-formatter",
+    "sidebar_label": "Custom Formatter"
+  }
+}

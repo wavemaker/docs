@@ -1,6 +1,6 @@
 ---
 title: "Export WaveMaker Application"
-id: ""
+id: "export-wavemaker-application"
 ---
 ---
 

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/adding-parent-child-records-single-transaction",
+  "id": "how-tos/adding-parent-child-records-single-transaction",
+  "title": "Submit Parent and Child Records in a Single Transaction",
+  "description": "---",
+  "source": "@site/../learn/how-tos/adding-parent-child-records-single-transaction.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/adding-parent-child-records-single-transaction",
+  "permalink": "/learn/docs/how-tos/adding-parent-child-records-single-transaction",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/adding-parent-child-records-single-transaction.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Submit Parent and Child Records in a Single Transaction",
+    "id": "adding-parent-child-records-single-transaction"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Adding Master-Detail records in the same transaction",
+    "permalink": "/learn/docs/how-tos/adding-master-detail-records-transaction"
+  },
+  "next": {
+    "title": "Submit Parent and Child Records in a Single Transaction using Form and Data Table",
+    "permalink": "/learn/docs/how-tos/adding-parent-child-using-form-datatable"
+  }
+}

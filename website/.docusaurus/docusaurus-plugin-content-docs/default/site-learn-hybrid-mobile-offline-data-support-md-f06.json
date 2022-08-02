@@ -1,0 +1,30 @@
+{
+  "unversionedId": "hybrid-mobile/offline-data-support",
+  "id": "hybrid-mobile/offline-data-support",
+  "title": "Offline Data Support",
+  "description": "---",
+  "source": "@site/../learn/hybrid-mobile/offline-data-support.md",
+  "sourceDirName": "hybrid-mobile",
+  "slug": "/hybrid-mobile/offline-data-support",
+  "permalink": "/learn/docs/hybrid-mobile/offline-data-support",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/hybrid-mobile/offline-data-support.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Offline Data Support",
+    "id": "offline-data-support"
+  },
+  "sidebar": "Mobile",
+  "previous": {
+    "title": "Invoking Web App APIs in Mobile Apps",
+    "permalink": "/learn/docs/hybrid-mobile/invoking-web-app-apis-mobile-apps"
+  },
+  "next": {
+    "title": "Implementation",
+    "permalink": "/learn/docs/hybrid-mobile/offline-data-support-implementation"
+  }
+}

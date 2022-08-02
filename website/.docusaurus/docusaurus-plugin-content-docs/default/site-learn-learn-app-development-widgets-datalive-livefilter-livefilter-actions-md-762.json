@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/widgets/datalive/livefilter/livefilter-actions",
+  "id": "learn/app-development/widgets/datalive/livefilter/livefilter-actions",
+  "title": "Live Filter - Actions",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/widgets/datalive/livefilter/livefilter-actions.md",
+  "sourceDirName": "learn/app-development/widgets/datalive/livefilter",
+  "slug": "/learn/app-development/widgets/datalive/livefilter/livefilter-actions",
+  "permalink": "/learn/docs/learn/app-development/widgets/datalive/livefilter/livefilter-actions",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/datalive/livefilter/livefilter-actions.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Live Filter - Actions",
+    "id": "livefilter-actions",
+    "sidebar_label": "Actions"
+  }
+}

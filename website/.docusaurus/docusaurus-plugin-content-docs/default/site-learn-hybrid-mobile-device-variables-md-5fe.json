@@ -1,0 +1,30 @@
+{
+  "unversionedId": "hybrid-mobile/device-variables",
+  "id": "hybrid-mobile/device-variables",
+  "title": "Device Variables",
+  "description": "---",
+  "source": "@site/../learn/hybrid-mobile/device-variables.md",
+  "sourceDirName": "hybrid-mobile",
+  "slug": "/hybrid-mobile/device-variables",
+  "permalink": "/learn/docs/hybrid-mobile/device-variables",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/hybrid-mobile/device-variables.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Device Variables",
+    "id": "device-variables"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Model Variable",
+    "permalink": "/learn/docs/app-development/variables/model-variable"
+  },
+  "next": {
+    "title": "Variable Binding",
+    "permalink": "/learn/docs/app-development/variables/variable-binding"
+  }
+}

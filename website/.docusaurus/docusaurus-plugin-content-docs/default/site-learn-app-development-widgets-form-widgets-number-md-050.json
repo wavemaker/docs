@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/form-widgets/number",
+  "id": "app-development/widgets/form-widgets/number",
+  "title": "Number",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/form-widgets/number.md",
+  "sourceDirName": "app-development/widgets/form-widgets",
+  "slug": "/app-development/widgets/form-widgets/number",
+  "permalink": "/learn/docs/app-development/widgets/form-widgets/number",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/form-widgets/number.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Number",
+    "id": "number"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Text",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/text"
+  },
+  "next": {
+    "title": "Textarea",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/textarea"
+  }
+}

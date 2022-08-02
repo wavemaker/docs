@@ -1,0 +1,21 @@
+{
+  "unversionedId": "app-development/widgets/form-widgets/select-use-cases",
+  "id": "app-development/widgets/form-widgets/select-use-cases",
+  "title": "Select - Use Cases",
+  "description": "WaveMaker offers various ways to use the Select widget. This section elaborates on all the options available. These various options pertain to how the data displayed in the drop down list is set. Running the app will display the select widgets with the label showing the selection.",
+  "source": "@site/../learn/app-development/widgets/form-widgets/select-use-cases.md",
+  "sourceDirName": "app-development/widgets/form-widgets",
+  "slug": "/app-development/widgets/form-widgets/select-use-cases",
+  "permalink": "/learn/docs/app-development/widgets/form-widgets/select-use-cases",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/form-widgets/select-use-cases.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Select - Use Cases",
+    "id": "select-use-cases"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/hybrid-mobile/switching-offline-online-mode",
+  "id": "learn/hybrid-mobile/switching-offline-online-mode",
+  "title": "Switching between Offline and Online Mode",
+  "description": "---",
+  "source": "@site/../learn/learn/hybrid-mobile/switching-offline-online-mode.md",
+  "sourceDirName": "learn/hybrid-mobile",
+  "slug": "/learn/hybrid-mobile/switching-offline-online-mode",
+  "permalink": "/learn/docs/learn/hybrid-mobile/switching-offline-online-mode",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/hybrid-mobile/switching-offline-online-mode.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Switching between Offline and Online Mode",
+    "id": "switching-offline-online-mode"
+  }
+}

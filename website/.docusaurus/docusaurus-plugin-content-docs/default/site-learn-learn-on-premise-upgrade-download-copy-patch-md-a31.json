@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/upgrade/download-copy-patch",
+  "id": "learn/on-premise/upgrade/download-copy-patch",
+  "title": "Download and Copy Patch",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/upgrade/download-copy-patch.md",
+  "sourceDirName": "learn/on-premise/upgrade",
+  "slug": "/learn/on-premise/upgrade/download-copy-patch",
+  "permalink": "/learn/docs/learn/on-premise/upgrade/download-copy-patch",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/upgrade/download-copy-patch.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Download and Copy Patch",
+    "id": "download-copy-patch",
+    "sidebar_label": "Download and Copy Patch"
+  }
+}

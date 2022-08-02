@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/how-tos/wavemaker-application-deployment-jboss",
+  "id": "learn/how-tos/wavemaker-application-deployment-jboss",
+  "title": "Application deployment to JBoss",
+  "description": "Learn how to deploy your WaveMaker app to JBoss server.",
+  "source": "@site/../learn/learn/how-tos/wavemaker-application-deployment-jboss.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/wavemaker-application-deployment-jboss",
+  "permalink": "/learn/docs/learn/how-tos/wavemaker-application-deployment-jboss",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/wavemaker-application-deployment-jboss.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Application deployment to JBoss",
+    "id": "wavemaker-application-deployment-jboss",
+    "sidebar_label": "JBoss - WildFly"
+  }
+}

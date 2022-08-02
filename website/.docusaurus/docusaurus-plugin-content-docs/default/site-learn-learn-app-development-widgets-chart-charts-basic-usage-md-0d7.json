@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/chart/charts-basic-usage",
+  "id": "learn/app-development/widgets/chart/charts-basic-usage",
+  "title": "Charts - Basic Usage",
+  "description": "Step 1: Datasource & Type",
+  "source": "@site/../learn/learn/app-development/widgets/chart/charts-basic-usage.md",
+  "sourceDirName": "learn/app-development/widgets/chart",
+  "slug": "/learn/app-development/widgets/chart/charts-basic-usage",
+  "permalink": "/learn/docs/learn/app-development/widgets/chart/charts-basic-usage",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/chart/charts-basic-usage.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Charts - Basic Usage",
+    "id": "charts-basic-usage"
+  }
+}

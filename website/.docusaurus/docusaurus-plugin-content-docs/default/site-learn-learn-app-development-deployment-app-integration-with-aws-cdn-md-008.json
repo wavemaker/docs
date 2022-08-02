@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/deployment/app-integration-with-aws-cdn",
+  "id": "learn/app-development/deployment/app-integration-with-aws-cdn",
+  "title": "Deploy static content to AWS CDN for WaveMaker Apps",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/deployment/app-integration-with-aws-cdn.md",
+  "sourceDirName": "learn/app-development/deployment",
+  "slug": "/learn/app-development/deployment/app-integration-with-aws-cdn",
+  "permalink": "/learn/docs/learn/app-development/deployment/app-integration-with-aws-cdn",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/deployment/app-integration-with-aws-cdn.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Deploy static content to AWS CDN for WaveMaker Apps",
+    "id": "app-integration-with-aws-cdn",
+    "sidebar_label": "App Integration with AWS CDN"
+  }
+}

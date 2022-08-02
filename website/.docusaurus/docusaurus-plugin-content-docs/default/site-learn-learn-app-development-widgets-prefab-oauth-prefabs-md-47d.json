@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/prefab/oauth-prefabs",
+  "id": "learn/app-development/widgets/prefab/oauth-prefabs",
+  "title": "OAuth Prefabs",
+  "description": "Introduction",
+  "source": "@site/../learn/learn/app-development/widgets/prefab/oauth-prefabs.md",
+  "sourceDirName": "learn/app-development/widgets/prefab",
+  "slug": "/learn/app-development/widgets/prefab/oauth-prefabs",
+  "permalink": "/learn/docs/learn/app-development/widgets/prefab/oauth-prefabs",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/prefab/oauth-prefabs.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "OAuth Prefabs",
+    "id": "oauth-prefabs"
+  }
+}

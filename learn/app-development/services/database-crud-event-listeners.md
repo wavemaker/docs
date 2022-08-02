@@ -1,6 +1,6 @@
 ---
 title: "Database CRUD Operations Event Listeners"
-id: ""
+id: "database-crud-event-listeners"
 sidebar_label: "CRUD Event Listeners"
 ---
 ---
@@ -107,11 +107,13 @@ Published after fetching a record from the database. This event will get the han
 
 Below are some of the class imports used in the examples shown below
 
+```
 import [org.springframework.context.event.EventListener;](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/event/EventListener.html)  
 import [org.springframework.transaction.event.TransactionEventListener;](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/transaction/event/TransactionalEventListener.html)  
 import [org.springframework.transaction.event.TransactionPhase;](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/transaction/event/TransactionPhase.html)  
 import [com.wavemaker.commons.WMRuntimeException;](https://github.com/wavemaker/wavemaker-commons/blob/master/wavemaker-commons-util/src/main/java/com/wavemaker/commons/WMRuntimeException.java)  
 import [com.wavemaker.commons.MessageResource;](https://github.com/wavemaker/wavemaker-commons/blob/master/wavemaker-commons-util/src/main/java/com/wavemaker/commons/MessageResource.java)  
+```
 
 ## Events Listeners with Examples
 

@@ -1,0 +1,28 @@
+{
+  "permalink": "/learn/blog/2021/12/17/angular-11-update",
+  "source": "@site/blog/2021-12-17-angular-11-update.md",
+  "title": "Announcement about Angular 11 Update",
+  "description": "---",
+  "date": "2021-12-17T00:00:00.000Z",
+  "formattedDate": "December 17, 2021",
+  "tags": [],
+  "readingTime": 1.4,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Swetha Kundaram"
+    }
+  ],
+  "frontMatter": {
+    "title": "Announcement about Angular 11 Update",
+    "author": "Swetha Kundaram"
+  },
+  "prevItem": {
+    "title": "URL Change in WaveMaker Android WebView",
+    "permalink": "/learn/blog/2022/01/10/cordova-android-change-in-webview-url"
+  },
+  "nextItem": {
+    "title": "Mitigating Log4J 2 Vulnerability CVE 2021 44228",
+    "permalink": "/learn/blog/2021/12/13/zero-day-vulnerability"
+  }
+}

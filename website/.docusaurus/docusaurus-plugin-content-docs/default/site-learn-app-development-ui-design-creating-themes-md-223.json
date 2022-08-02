@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/ui-design/creating-themes",
+  "id": "app-development/ui-design/creating-themes",
+  "title": "Creating Themes using the Manual Setup",
+  "description": "---",
+  "source": "@site/../learn/app-development/ui-design/creating-themes.md",
+  "sourceDirName": "app-development/ui-design",
+  "slug": "/app-development/ui-design/creating-themes",
+  "permalink": "/learn/docs/app-development/ui-design/creating-themes",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/ui-design/creating-themes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Creating Themes using the Manual Setup",
+    "id": "creating-themes",
+    "sidebar_label": "Manual Theme"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Theme Editor",
+    "permalink": "/learn/docs/app-development/ui-design/theme-builder"
+  },
+  "next": {
+    "title": "Create Template",
+    "permalink": "/learn/docs/app-development/ui-design/page-concepts/creating-template-bundles"
+  }
+}

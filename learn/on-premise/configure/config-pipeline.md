@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Configure Pipeline"
-id: ""
+id: "config-pipeline"
 sidebar_label: "Configure Pipeline"
 ---
 ---

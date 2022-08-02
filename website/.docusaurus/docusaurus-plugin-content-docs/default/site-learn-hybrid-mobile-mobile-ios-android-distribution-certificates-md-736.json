@@ -1,0 +1,31 @@
+{
+  "unversionedId": "hybrid-mobile/mobile-ios-android-distribution-certificates",
+  "id": "hybrid-mobile/mobile-ios-android-distribution-certificates",
+  "title": "Generating iOS and Android Distribution Certificates",
+  "description": "---",
+  "source": "@site/../learn/hybrid-mobile/mobile-ios-android-distribution-certificates.md",
+  "sourceDirName": "hybrid-mobile",
+  "slug": "/hybrid-mobile/mobile-ios-android-distribution-certificates",
+  "permalink": "/learn/docs/hybrid-mobile/mobile-ios-android-distribution-certificates",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/hybrid-mobile/mobile-ios-android-distribution-certificates.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Generating iOS and Android Distribution Certificates",
+    "id": "mobile-ios-android-distribution-certificates",
+    "sidebar_label": "Generating iOS and Android Distribution Certificates"
+  },
+  "sidebar": "Mobile",
+  "previous": {
+    "title": "Mobile Build - Manual",
+    "permalink": "/learn/docs/hybrid-mobile/mobile-build-manual"
+  },
+  "next": {
+    "title": "Export Cordova zip",
+    "permalink": "/learn/docs/hybrid-mobile/export-cordova-zip"
+  }
+}

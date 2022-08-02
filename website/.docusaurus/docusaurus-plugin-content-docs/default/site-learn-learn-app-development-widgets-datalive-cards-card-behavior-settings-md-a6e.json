@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/widgets/datalive/cards/card-behavior-settings",
+  "id": "learn/app-development/widgets/datalive/cards/card-behavior-settings",
+  "title": "Cards - Behavior Settings",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/widgets/datalive/cards/card-behavior-settings.md",
+  "sourceDirName": "learn/app-development/widgets/datalive/cards",
+  "slug": "/learn/app-development/widgets/datalive/cards/card-behavior-settings",
+  "permalink": "/learn/docs/learn/app-development/widgets/datalive/cards/card-behavior-settings",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/datalive/cards/card-behavior-settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Cards - Behavior Settings",
+    "id": "card-behavior-settings",
+    "sidebar_label": "Behavior Settings"
+  }
+}

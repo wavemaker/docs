@@ -13,7 +13,7 @@ A checkbox is a specific type of two-states button that can be either checked or
 | Name | The name is a unique identifier for the button. Special characters and spaces are not allowed in widget name. |
 | **Accessibility** |
 | Hint | Any text you enter for this property will be shown as a tooltip when the mouse hovers over this widget for _1.5 seconds. _It can be bound to a variable or another widget. |
-| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | Shortcut Key | Alphabet to act as a Shortcut key. The shortcut key property specifies a key to click the button. The way to activate the shortcut key varies from browser to browser ([see below for details](#shortcut)). |
 | **Layout** |
 | Width | The width of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._ |

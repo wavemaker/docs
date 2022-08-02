@@ -1,6 +1,6 @@
 ---
 title: "Creating Data Table"
-id: ""
+id: "data-table-basic-usage"
 sidebar_label: "Creating a Data Table"
 ---
 ---

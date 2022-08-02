@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/howtos-documents",
+  "id": "learn/howtos-documents",
+  "title": "How-to Wiki",
+  "description": "Find the how to topics and look for sub-categories under each of the specified category.",
+  "source": "@site/../learn/learn/howtos-documents.md",
+  "sourceDirName": "learn",
+  "slug": "/learn/howtos-documents",
+  "permalink": "/learn/docs/learn/howtos-documents",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/howtos-documents.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "id": "howtos-documents",
+    "title": "How-to Wiki"
+  }
+}

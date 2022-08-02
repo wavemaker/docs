@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/configuring-cascading-select",
+  "id": "how-tos/configuring-cascading-select",
+  "title": "Configuring Cascading Select",
+  "description": "One can drive the content of a Select widget based upon the selection of another Select widget. For example, a user is provided with a list of Countries and based upon the selection, a list of Cities is displayed for selection from a second list. Let us see how to achieve this in WaveMaker. Note: We are using a dataset CityListing which contains the country and city details.",
+  "source": "@site/../learn/how-tos/configuring-cascading-select.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/configuring-cascading-select",
+  "permalink": "/learn/docs/how-tos/configuring-cascading-select",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/configuring-cascading-select.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Configuring Cascading Select",
+    "id": "configuring-cascading-select"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Configuring Select Widget from Database Fields",
+    "permalink": "/learn/docs/how-tos/configuring-select-widget-database-fields"
+  },
+  "next": {
+    "title": "Selection Widgets - Use Case",
+    "permalink": "/learn/docs/how-tos/selection-widgets-use-case"
+  }
+}

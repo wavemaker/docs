@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/cards",
+  "id": "app-development/widgets/datalive/cards",
+  "title": "Cards Widget",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/cards.md",
+  "sourceDirName": "app-development/widgets/datalive",
+  "slug": "/app-development/widgets/datalive/cards",
+  "permalink": "/learn/docs/app-development/widgets/datalive/cards",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/cards.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Cards Widget",
+    "id": "cards",
+    "sidebar_label": "Overview"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Widgets Composition",
+    "permalink": "/learn/docs/app-development/widgets/ui-elements"
+  },
+  "next": {
+    "title": "Creating a Card",
+    "permalink": "/learn/docs/app-development/widgets/datalive/cards/card-basic-usage"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/react-native/react-native",
+  "id": "learn/react-native/react-native",
+  "title": "Welcome to React Native Studio",
+  "description": "---",
+  "source": "@site/../learn/learn/react-native/react-native.md",
+  "sourceDirName": "learn/react-native",
+  "slug": "/learn/react-native/",
+  "permalink": "/learn/docs/learn/react-native/",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/react-native/react-native.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Welcome to React Native Studio",
+    "id": "react-native",
+    "sidebar_label": "Welcome"
+  }
+}

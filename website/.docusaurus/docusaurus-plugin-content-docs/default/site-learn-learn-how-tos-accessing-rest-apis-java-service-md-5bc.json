@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/accessing-rest-apis-java-service",
+  "id": "learn/how-tos/accessing-rest-apis-java-service",
+  "title": "Accessing REST APIs from Java Service",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/accessing-rest-apis-java-service.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/accessing-rest-apis-java-service",
+  "permalink": "/learn/docs/learn/how-tos/accessing-rest-apis-java-service",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/accessing-rest-apis-java-service.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Accessing REST APIs from Java Service",
+    "id": "accessing-rest-apis-java-service"
+  }
+}

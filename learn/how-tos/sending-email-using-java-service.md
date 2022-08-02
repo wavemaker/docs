@@ -1,6 +1,6 @@
 ---
 title: "Sending Email using WaveMaker Connector"
-id: ""
+id: "sending-email-using-java-service"
 ---
 ---
 
@@ -206,7 +206,7 @@ public void sendInlineMail(String toEmailAddress, String emailSubject) {
 
 
             MimeBodyPart htmlpart = new MimeBodyPart();
-            String htmlMessage = "<html>Hi there,<br>";
+            String htmlMessage = "<html>Hi there, ";
             htmlMessage += "See this cool pic: <img src=\"cid:AbcXyz123\" />";
             htmlMessage += "</html>";
             htmlpart.setContent(htmlMessage, "text/html");

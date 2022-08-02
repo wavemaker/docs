@@ -1,6 +1,6 @@
 ---
 title: "Creating Themes using the Editor Tool"
-id: ""
+id: "theme-builder"
 sidebar_label: "Theme Editor"
 ---
 ---

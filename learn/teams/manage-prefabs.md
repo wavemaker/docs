@@ -1,6 +1,6 @@
 ---
 title: Manage Prefabs
-id: ""
+id: "manage-prefabs"
 ---
 ---
 

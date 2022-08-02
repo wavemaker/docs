@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/datatable/datatable-events-methods",
+  "id": "app-development/widgets/datalive/datatable/datatable-events-methods",
+  "title": "Data Table - Events & Methods",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/datatable/datatable-events-methods.md",
+  "sourceDirName": "app-development/widgets/datalive/datatable",
+  "slug": "/app-development/widgets/datalive/datatable/datatable-events-methods",
+  "permalink": "/learn/docs/app-development/widgets/datalive/datatable/datatable-events-methods",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/datatable/datatable-events-methods.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Data Table - Events & Methods",
+    "id": "datatable-events-methods",
+    "sidebar_label": "Events & Methods"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Actions",
+    "permalink": "/learn/docs/app-development/widgets/datalive/datatable/actions"
+  },
+  "next": {
+    "title": "Use Cases",
+    "permalink": "/learn/docs/app-development/widgets/datalive/datatable/data-table-use-cases"
+  }
+}

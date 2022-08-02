@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/how-tos/custom-business-logic-using-crud-event-listeners",
+  "id": "learn/how-tos/custom-business-logic-using-crud-event-listeners",
+  "title": "Custom Business Logic using DB CRUD Event Listeners",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/custom-business-logic-using-crud-event-listeners.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/custom-business-logic-using-crud-event-listeners",
+  "permalink": "/learn/docs/learn/how-tos/custom-business-logic-using-crud-event-listeners",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/custom-business-logic-using-crud-event-listeners.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Custom Business Logic using DB CRUD Event Listeners",
+    "id": "custom-business-logic-using-crud-event-listeners",
+    "sidebar_label": "Custom Logic DB Event Listeners"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "wavemaker-release-notes/v10-6-5",
+  "id": "wavemaker-release-notes/v10-6-5",
+  "title": "WaveMaker 10.6.5 - Release date: 25 February 2021",
+  "description": "WaveMaker released a new update version with some bug fixes.",
+  "source": "@site/../learn/wavemaker-release-notes/v10-6-5.md",
+  "sourceDirName": "wavemaker-release-notes",
+  "slug": "/wavemaker-release-notes/v10-6-5",
+  "permalink": "/learn/docs/wavemaker-release-notes/v10-6-5",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/wavemaker-release-notes/v10-6-5.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker 10.6.5 - Release date: 25 February 2021",
+    "id": "v10-6-5",
+    "sidebar_label": "Release v10.6.5"
+  },
+  "sidebar": "Release Notes",
+  "previous": {
+    "title": "Release v10.6.4",
+    "permalink": "/learn/docs/wavemaker-release-notes/v10-6-4"
+  },
+  "next": {
+    "title": "Release v10.6.6",
+    "permalink": "/learn/docs/wavemaker-release-notes/v10-6-6"
+  }
+}

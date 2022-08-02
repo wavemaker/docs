@@ -1,0 +1,30 @@
+{
+  "unversionedId": "teams/manage-users",
+  "id": "teams/manage-users",
+  "title": "Manage Users",
+  "description": "---",
+  "source": "@site/../learn/teams/manage-users.md",
+  "sourceDirName": "teams",
+  "slug": "/teams/manage-users",
+  "permalink": "/learn/docs/teams/manage-users",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/teams/manage-users.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Manage Users",
+    "id": "manage-users"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dashboard",
+    "permalink": "/learn/docs/teams/dashboard"
+  },
+  "next": {
+    "title": "Manage Projects",
+    "permalink": "/learn/docs/teams/manage-projects"
+  }
+}

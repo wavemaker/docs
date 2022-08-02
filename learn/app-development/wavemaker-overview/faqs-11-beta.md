@@ -1,6 +1,6 @@
 ---
 title: "FAQs of WaveMaker 11 Beta"
-id: ""
+id: "faqs-11-beta"
 sidebar_label: "FAQs 11 Beta"
 ---
 ---

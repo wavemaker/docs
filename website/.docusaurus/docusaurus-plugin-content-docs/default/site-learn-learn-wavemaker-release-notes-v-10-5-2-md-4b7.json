@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/wavemaker-release-notes/v10-5-2",
+  "id": "learn/wavemaker-release-notes/v10-5-2",
+  "title": "WaveMaker 10.5.2 - Release date: 10 July 2020",
+  "description": "WaveMaker released a new update version with bug fixes.",
+  "source": "@site/../learn/learn/wavemaker-release-notes/v10-5-2.md",
+  "sourceDirName": "learn/wavemaker-release-notes",
+  "slug": "/learn/wavemaker-release-notes/v10-5-2",
+  "permalink": "/learn/docs/learn/wavemaker-release-notes/v10-5-2",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/wavemaker-release-notes/v10-5-2.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker 10.5.2 - Release date: 10 July 2020",
+    "id": "v10-5-2",
+    "sidebar_label": "Release v10.5.2"
+  }
+}

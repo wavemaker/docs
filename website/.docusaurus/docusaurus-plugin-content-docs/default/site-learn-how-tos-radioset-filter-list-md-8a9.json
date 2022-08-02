@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/radioset-filter-list",
+  "id": "how-tos/radioset-filter-list",
+  "title": "Radioset to Filter a List",
+  "description": "WaveMaker offers three ways of allowing user to choose from given options:",
+  "source": "@site/../learn/how-tos/radioset-filter-list.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/radioset-filter-list",
+  "permalink": "/learn/docs/how-tos/radioset-filter-list",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/radioset-filter-list.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Radioset to Filter a List",
+    "id": "radioset-filter-list"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Upload Files from Live Form & Form",
+    "permalink": "/learn/docs/how-tos/upload-files-from-live-form-form"
+  },
+  "next": {
+    "title": "Building Rating Widget using Static Data",
+    "permalink": "/learn/docs/how-tos/rating-widget-using-static-data"
+  }
+}

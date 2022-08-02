@@ -1,6 +1,6 @@
 ---
 title: "WME Add Users and Authentication Provider"
-id: ""
+id: "config-users-auth-providers"
 sidebar_label: "Users Onboarding"
 ---
 ---

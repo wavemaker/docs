@@ -1,6 +1,6 @@
 ---
 title: "Create a form with multiple wizard steps"
-id: ""
+id: "form-with-wizard"
 ---
 
 Form with Wizard steps assists with the creation of forms with some sort of form flow. For example, if you had a large form for entering user data, you could use a form with wizard to divide it into a series of related steps. This has the advantage of not overwhelming users with a really long form and also giving them some indication of their progress as they enter their information.

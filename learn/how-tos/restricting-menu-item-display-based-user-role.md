@@ -1,6 +1,6 @@
 ---
 title: "Restricting Menu Items based on the User Role"
-id: ""
+id: "restricting-menu-item-display-based-user-role"
 sidebar_label: "Restricting Menu Items based on the User Role"
 ---
 ---

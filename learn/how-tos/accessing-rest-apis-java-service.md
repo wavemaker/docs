@@ -1,6 +1,6 @@
 ---
 title: "Accessing REST APIs from Java Service"
-id: ""
+id: "accessing-rest-apis-java-service"
 ---
 ---
 

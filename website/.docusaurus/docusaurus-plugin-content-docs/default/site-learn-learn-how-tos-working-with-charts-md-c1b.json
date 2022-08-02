@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/working-with-charts",
+  "id": "learn/how-tos/working-with-charts",
+  "title": "Working with Charts",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/working-with-charts.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/working-with-charts",
+  "permalink": "/learn/docs/learn/how-tos/working-with-charts",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/working-with-charts.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Working with Charts",
+    "id": "working-with-charts"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/form-widgets/rating-widget",
+  "id": "app-development/widgets/form-widgets/rating-widget",
+  "title": "Rating Widget",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/form-widgets/rating-widget.md",
+  "sourceDirName": "app-development/widgets/form-widgets",
+  "slug": "/app-development/widgets/form-widgets/rating-widget",
+  "permalink": "/learn/docs/app-development/widgets/form-widgets/rating-widget",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/form-widgets/rating-widget.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Rating Widget",
+    "id": "rating-widget"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Slider",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/slider"
+  },
+  "next": {
+    "title": "Select Locale",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/select-locale"
+  }
+}

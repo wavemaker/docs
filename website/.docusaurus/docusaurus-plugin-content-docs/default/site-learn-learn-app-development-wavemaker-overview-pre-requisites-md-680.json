@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/wavemaker-overview/pre-requisites",
+  "id": "learn/app-development/wavemaker-overview/pre-requisites",
+  "title": "Pre-requisites for App Development",
+  "description": "What skills you need to develop web and hybrid mobile apps using WaveMaker.",
+  "source": "@site/../learn/learn/app-development/wavemaker-overview/pre-requisites.md",
+  "sourceDirName": "learn/app-development/wavemaker-overview",
+  "slug": "/learn/app-development/wavemaker-overview/pre-requisites",
+  "permalink": "/learn/docs/learn/app-development/wavemaker-overview/pre-requisites",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/wavemaker-overview/pre-requisites.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Pre-requisites for App Development",
+    "id": "pre-requisites",
+    "sidebar_label": "Pre-requisites"
+  }
+}

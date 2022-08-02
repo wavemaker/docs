@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/changing-default-favicon",
+  "id": "learn/how-tos/changing-default-favicon",
+  "title": "Changing Default Favicon",
+  "description": "---",
+  "source": "@site/../learn/learn/how-tos/changing-default-favicon.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/changing-default-favicon",
+  "permalink": "/learn/docs/learn/how-tos/changing-default-favicon",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/changing-default-favicon.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Changing Default Favicon",
+    "id": "changing-default-favicon"
+  }
+}

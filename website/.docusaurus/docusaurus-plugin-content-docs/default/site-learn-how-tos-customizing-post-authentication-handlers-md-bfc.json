@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/customizing-post-authentication-handlers",
+  "id": "how-tos/customizing-post-authentication-handlers",
+  "title": "Customizing Post Authentication Handlers",
+  "description": "In a Security enabled WaveMaker app, post-authentication the following actions are performed.",
+  "source": "@site/../learn/how-tos/customizing-post-authentication-handlers.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/customizing-post-authentication-handlers",
+  "permalink": "/learn/docs/how-tos/customizing-post-authentication-handlers",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/customizing-post-authentication-handlers.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Customizing Post Authentication Handlers",
+    "id": "customizing-post-authentication-handlers"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Multiple Security Provider Implementation",
+    "permalink": "/learn/docs/how-tos/multiple-security-provider-implementation"
+  },
+  "next": {
+    "title": "Queries with Dynamic Where Clause",
+    "permalink": "/learn/docs/how-tos/queries-dynamic-clause"
+  }
+}

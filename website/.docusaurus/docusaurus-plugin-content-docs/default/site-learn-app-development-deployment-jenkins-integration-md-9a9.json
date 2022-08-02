@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/deployment/jenkins-integration",
+  "id": "app-development/deployment/jenkins-integration",
+  "title": "Jenkins Integration",
+  "description": "---",
+  "source": "@site/../learn/app-development/deployment/jenkins-integration.md",
+  "sourceDirName": "app-development/deployment",
+  "slug": "/app-development/deployment/jenkins-integration",
+  "permalink": "/learn/docs/app-development/deployment/jenkins-integration",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/deployment/jenkins-integration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Jenkins Integration",
+    "id": "jenkins-integration"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Build with Docker",
+    "permalink": "/learn/docs/app-development/deployment/build-with-docker"
+  },
+  "next": {
+    "title": "Deploy using Docker Compose",
+    "permalink": "/learn/docs/app-development/deployment/deployment-using-docker-compose"
+  }
+}

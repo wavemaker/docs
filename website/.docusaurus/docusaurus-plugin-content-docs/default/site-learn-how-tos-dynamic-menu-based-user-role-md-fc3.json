@@ -1,0 +1,31 @@
+{
+  "unversionedId": "how-tos/dynamic-menu-based-user-role",
+  "id": "how-tos/dynamic-menu-based-user-role",
+  "title": "Dynamic Menu based on the User Role",
+  "description": "---",
+  "source": "@site/../learn/how-tos/dynamic-menu-based-user-role.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/dynamic-menu-based-user-role",
+  "permalink": "/learn/docs/how-tos/dynamic-menu-based-user-role",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/dynamic-menu-based-user-role.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Dynamic Menu based on the User Role",
+    "id": "dynamic-menu-based-user-role",
+    "sidebar_label": "Dynamic Menu based on User Role"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Apply Custom Data Formatter",
+    "permalink": "/learn/docs/how-tos/using-custom-formatter"
+  },
+  "next": {
+    "title": "Restricting Menu Items based on the User Role",
+    "permalink": "/learn/docs/how-tos/restricting-menu-item-display-based-user-role"
+  }
+}

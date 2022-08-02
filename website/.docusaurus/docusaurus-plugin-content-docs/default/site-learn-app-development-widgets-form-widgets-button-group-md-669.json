@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/form-widgets/button-group",
+  "id": "app-development/widgets/form-widgets/button-group",
+  "title": "Button Group",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/form-widgets/button-group.md",
+  "sourceDirName": "app-development/widgets/form-widgets",
+  "slug": "/app-development/widgets/form-widgets/button-group",
+  "permalink": "/learn/docs/app-development/widgets/form-widgets/button-group",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/form-widgets/button-group.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Button Group",
+    "id": "button-group"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Button",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/button"
+  },
+  "next": {
+    "title": "Text",
+    "permalink": "/learn/docs/app-development/widgets/form-widgets/text"
+  }
+}

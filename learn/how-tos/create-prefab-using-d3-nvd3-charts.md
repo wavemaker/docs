@@ -1,6 +1,6 @@
 ---
 title: "Create Prefab Using D3 & NVD3 Charts"
-id: ""
+id: "create-prefab-using-d3-nvd3-charts"
 ---
 ---
 
@@ -178,7 +178,7 @@ his implementation is for NVD3 version: 1.8.4 charts.
     
     OR, You can instead include http url in place of script and style files: https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.css https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.min.js 
     
-    [![](/learn/assets/nv_d3_library_url.png)](/learn/assets/nv_d3_library_url.png) 
+    
     
 :::note
 You can expose many properties and set the values as static or dynamic to be bound. For details of the properties that can be exposed refer to the [NVD3 website](http://nvd3.org/).

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware",
+  "id": "learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware",
+  "title": "WaveMaker Enterprise Setup on VMWare Esxi",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware.md",
+  "sourceDirName": "learn/on-premise/vmware-esxi",
+  "slug": "/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware",
+  "permalink": "/learn/docs/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "WaveMaker Enterprise Setup on VMWare Esxi",
+    "id": "wavemaker-enterprise-setup-on-vmware",
+    "sidebar_label": "Overview"
+  }
+}

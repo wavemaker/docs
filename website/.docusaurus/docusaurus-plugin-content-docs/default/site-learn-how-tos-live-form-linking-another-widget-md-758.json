@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/live-form-linking-another-widget",
+  "id": "how-tos/live-form-linking-another-widget",
+  "title": "Linking Live Form with another Widget for Input",
+  "description": "To use form for updating the table, it needs to be bound to a Data Table or a List widget's Selected row property. Here we will see linking Data Table to a Live Form, the same can be replicated for a List. Another easy way to achieve this would be to use the Editable Data Table with Live Form layout.",
+  "source": "@site/../learn/how-tos/live-form-linking-another-widget.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/live-form-linking-another-widget",
+  "permalink": "/learn/docs/how-tos/live-form-linking-another-widget",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/live-form-linking-another-widget.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Linking Live Form with another Widget for Input",
+    "id": "live-form-linking-another-widget"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "How Tos: Live Form",
+    "permalink": "/learn/docs/how-tos/how-tos-live-form"
+  },
+  "next": {
+    "title": "Handling Related Fields in a Live Form",
+    "permalink": "/learn/docs/how-tos/live-form-related-fields"
+  }
+}

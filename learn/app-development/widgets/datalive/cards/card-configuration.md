@@ -1,6 +1,6 @@
 ---
 title: "Cards - Configuration"
-id: ""
+id: "card-configuration"
 sidebar_label: "Configuration"
 ---
 ---

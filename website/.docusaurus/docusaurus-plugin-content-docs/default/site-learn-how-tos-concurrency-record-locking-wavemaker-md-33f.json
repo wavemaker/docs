@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/concurrency-record-locking-wavemaker",
+  "id": "how-tos/concurrency-record-locking-wavemaker",
+  "title": "Concurrency and Record Locking in WaveMaker",
+  "description": "---",
+  "source": "@site/../learn/how-tos/concurrency-record-locking-wavemaker.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/concurrency-record-locking-wavemaker",
+  "permalink": "/learn/docs/how-tos/concurrency-record-locking-wavemaker",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/concurrency-record-locking-wavemaker.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Concurrency and Record Locking in WaveMaker",
+    "id": "concurrency-record-locking-wavemaker"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Formatting Data Table Columns",
+    "permalink": "/learn/docs/how-tos/data-table-format-options"
+  },
+  "next": {
+    "title": "Edit DataTable records bound to Query API",
+    "permalink": "/learn/docs/how-tos/edit-datatable-bound-to-queryapi"
+  }
+}

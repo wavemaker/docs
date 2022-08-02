@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/tutorials/build-app-in-5-minutes/preview-test-app",
+  "id": "learn/tutorials/build-app-in-5-minutes/preview-test-app",
+  "title": "Preview and Test App",
+  "description": "---",
+  "source": "@site/../learn/learn/tutorials/build-app-in-5-minutes/preview-test-app.md",
+  "sourceDirName": "learn/tutorials/build-app-in-5-minutes",
+  "slug": "/learn/tutorials/build-app-in-5-minutes/preview-test-app",
+  "permalink": "/learn/docs/learn/tutorials/build-app-in-5-minutes/preview-test-app",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/tutorials/build-app-in-5-minutes/preview-test-app.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Preview and Test App",
+    "id": "preview-test-app"
+  }
+}

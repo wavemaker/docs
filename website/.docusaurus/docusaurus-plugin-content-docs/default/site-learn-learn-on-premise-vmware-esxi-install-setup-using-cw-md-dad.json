@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/on-premise/vmware-esxi/install/setup-using-cw",
+  "id": "learn/on-premise/vmware-esxi/install/setup-using-cw",
+  "title": "Setup Using ConfigPortal",
+  "description": "---",
+  "source": "@site/../learn/learn/on-premise/vmware-esxi/install/setup-using-cw.md",
+  "sourceDirName": "learn/on-premise/vmware-esxi/install",
+  "slug": "/learn/on-premise/vmware-esxi/install/setup-using-cw",
+  "permalink": "/learn/docs/learn/on-premise/vmware-esxi/install/setup-using-cw",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/on-premise/vmware-esxi/install/setup-using-cw.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Setup Using ConfigPortal",
+    "id": "setup-using-cw",
+    "sidebar_label": "Setup Using ConfigPortal"
+  }
+}

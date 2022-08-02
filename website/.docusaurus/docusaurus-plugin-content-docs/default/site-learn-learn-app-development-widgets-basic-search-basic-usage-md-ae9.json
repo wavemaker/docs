@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/widgets/basic/search-basic-usage",
+  "id": "learn/app-development/widgets/basic/search-basic-usage",
+  "title": "Search - Basic Usage",
+  "description": "WaveMaker allows you to add search capability via the search widget. Following are the steps in using the same. We will use the search widget to search the Department database from the sample HRDB imported earlier and display the department id and name.",
+  "source": "@site/../learn/learn/app-development/widgets/basic/search-basic-usage.md",
+  "sourceDirName": "learn/app-development/widgets/basic",
+  "slug": "/learn/app-development/widgets/basic/search-basic-usage",
+  "permalink": "/learn/docs/learn/app-development/widgets/basic/search-basic-usage",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/widgets/basic/search-basic-usage.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Search - Basic Usage",
+    "id": "search-basic-usage"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: "Install Prerequisites Softwares"
-id: ""
+id: "install-prerequisites"
 sidebar_label: "Install Prerequisites Softwares"
 ---
 ---

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "on-premise/hyper-v/install/download-copy-installer",
+  "id": "on-premise/hyper-v/install/download-copy-installer",
+  "title": "Download and Copy Installer",
+  "description": "---",
+  "source": "@site/../learn/on-premise/hyper-v/install/download-copy-installer.md",
+  "sourceDirName": "on-premise/hyper-v/install",
+  "slug": "/on-premise/hyper-v/install/download-copy-installer",
+  "permalink": "/learn/docs/on-premise/hyper-v/install/download-copy-installer",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/on-premise/hyper-v/install/download-copy-installer.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Download and Copy Installer",
+    "id": "download-copy-installer",
+    "sidebar_label": "Download and Copy Installer"
+  },
+  "sidebar": "Enterprise",
+  "previous": {
+    "title": "Install Prerequisites Softwares",
+    "permalink": "/learn/docs/on-premise/hyper-v/install-prerequisites"
+  },
+  "next": {
+    "title": "Extract Package",
+    "permalink": "/learn/docs/on-premise/hyper-v/install/extract-package"
+  }
+}

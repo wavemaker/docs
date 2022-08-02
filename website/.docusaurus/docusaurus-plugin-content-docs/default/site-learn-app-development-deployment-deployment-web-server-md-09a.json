@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/deployment/deployment-web-server",
+  "id": "app-development/deployment/deployment-web-server",
+  "title": "Deployment to Application Server",
+  "description": "Overview document for deploying your app to a web server.",
+  "source": "@site/../learn/app-development/deployment/deployment-web-server.md",
+  "sourceDirName": "app-development/deployment",
+  "slug": "/app-development/deployment/deployment-web-server",
+  "permalink": "/learn/docs/app-development/deployment/deployment-web-server",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/deployment/deployment-web-server.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Deployment to Application Server",
+    "id": "deployment-web-server",
+    "sidebar_label": "Application Server Overview"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "App Integration with Azure CDN",
+    "permalink": "/learn/docs/app-development/deployment/app-integration-with-azure-cdn"
+  },
+  "next": {
+    "title": "Deploy to Tomcat",
+    "permalink": "/learn/docs/how-tos/wavemaker-application-deployment-tomcat"
+  }
+}

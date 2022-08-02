@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/splashscreens-icons",
+  "id": "how-tos/splashscreens-icons",
+  "title": "Setting Splashscreen Images and App Icons",
+  "description": "---",
+  "source": "@site/../learn/how-tos/splashscreens-icons.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/splashscreens-icons",
+  "permalink": "/learn/docs/how-tos/splashscreens-icons",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/splashscreens-icons.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Setting Splashscreen Images and App Icons",
+    "id": "splashscreens-icons"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Barcode Scanner",
+    "permalink": "/learn/docs/app-development/widgets/mobile-widgets/barcode-scanner"
+  },
+  "next": {
+    "title": "Using Cordova Plugins",
+    "permalink": "/learn/docs/how-tos/using-cordova-plugins"
+  }
+}

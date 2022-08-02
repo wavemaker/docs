@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/app-development/wavemaker-overview/product-walkthrough",
+  "id": "learn/app-development/wavemaker-overview/product-walkthrough",
+  "title": "Product Walkthrough",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/wavemaker-overview/product-walkthrough.md",
+  "sourceDirName": "learn/app-development/wavemaker-overview",
+  "slug": "/learn/app-development/wavemaker-overview/product-walkthrough",
+  "permalink": "/learn/docs/learn/app-development/wavemaker-overview/product-walkthrough",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/wavemaker-overview/product-walkthrough.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Product Walkthrough",
+    "id": "product-walkthrough",
+    "sidebar_label": "Walkthrough"
+  }
+}

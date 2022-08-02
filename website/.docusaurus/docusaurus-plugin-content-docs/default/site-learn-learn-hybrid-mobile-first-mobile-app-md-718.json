@@ -1,0 +1,22 @@
+{
+  "unversionedId": "learn/hybrid-mobile/first-mobile-app",
+  "id": "learn/hybrid-mobile/first-mobile-app",
+  "title": "Build your First Mobile App",
+  "description": "---",
+  "source": "@site/../learn/learn/hybrid-mobile/first-mobile-app.md",
+  "sourceDirName": "learn/hybrid-mobile",
+  "slug": "/learn/hybrid-mobile/first-mobile-app",
+  "permalink": "/learn/docs/learn/hybrid-mobile/first-mobile-app",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/hybrid-mobile/first-mobile-app.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Build your First Mobile App",
+    "id": "first-mobile-app",
+    "sidebar_label": "First Mobile App"
+  }
+}

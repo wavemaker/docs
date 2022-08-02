@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/customize-existing-theme",
+  "id": "how-tos/customize-existing-theme",
+  "title": "Customize an Existing Theme",
+  "description": "---",
+  "source": "@site/../learn/how-tos/customize-existing-theme.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/customize-existing-theme",
+  "permalink": "/learn/docs/how-tos/customize-existing-theme",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/customize-existing-theme.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Customize an Existing Theme",
+    "id": "customize-existing-theme"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "How to use Conditional Style Property",
+    "permalink": "/learn/docs/how-tos/use-conditional-style-property"
+  },
+  "next": {
+    "title": "Adjust Left Navigation Width",
+    "permalink": "/learn/docs/how-tos/adjust-leftnav-width"
+  }
+}

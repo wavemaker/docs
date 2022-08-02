@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/app-development/ui-design/page-artefacts",
+  "id": "learn/app-development/ui-design/page-artefacts",
+  "title": "Page Artefacts",
+  "description": "---",
+  "source": "@site/../learn/learn/app-development/ui-design/page-artefacts.md",
+  "sourceDirName": "learn/app-development/ui-design",
+  "slug": "/learn/app-development/ui-design/page-artefacts",
+  "permalink": "/learn/docs/learn/app-development/ui-design/page-artefacts",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/app-development/ui-design/page-artefacts.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Page Artefacts",
+    "id": "page-artefacts"
+  }
+}

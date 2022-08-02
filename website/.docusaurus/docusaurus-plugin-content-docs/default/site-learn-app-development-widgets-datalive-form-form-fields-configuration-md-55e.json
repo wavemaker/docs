@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/widgets/datalive/form/form-fields-configuration",
+  "id": "app-development/widgets/datalive/form/form-fields-configuration",
+  "title": "Form Fields Configuration",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/datalive/form/form-fields-configuration.md",
+  "sourceDirName": "app-development/widgets/datalive/form",
+  "slug": "/app-development/widgets/datalive/form/form-fields-configuration",
+  "permalink": "/learn/docs/app-development/widgets/datalive/form/form-fields-configuration",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/datalive/form/form-fields-configuration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Form Fields Configuration",
+    "id": "form-fields-configuration",
+    "sidebar_label": "Fields Configuration"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/learn/docs/app-development/widgets/datalive/form/form-configurations"
+  },
+  "next": {
+    "title": "Field Validations",
+    "permalink": "/learn/docs/app-development/widgets/datalive/field-validator"
+  }
+}

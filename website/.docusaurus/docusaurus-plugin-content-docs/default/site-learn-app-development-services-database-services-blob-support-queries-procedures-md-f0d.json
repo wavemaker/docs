@@ -1,0 +1,31 @@
+{
+  "unversionedId": "app-development/services/database-services/blob-support-queries-procedures",
+  "id": "app-development/services/database-services/blob-support-queries-procedures",
+  "title": "Blob Support for Queries and Procedures",
+  "description": "---",
+  "source": "@site/../learn/app-development/services/database-services/blob-support-queries-procedures.md",
+  "sourceDirName": "app-development/services/database-services",
+  "slug": "/app-development/services/database-services/blob-support-queries-procedures",
+  "permalink": "/learn/docs/app-development/services/database-services/blob-support-queries-procedures",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/services/database-services/blob-support-queries-procedures.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Blob Support for Queries and Procedures",
+    "id": "blob-support-queries-procedures",
+    "sidebar_label": "Blob Queries and Procedures"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Version Queries & Procedures",
+    "permalink": "/learn/docs/app-development/services/database-services/versioning-queries-procedures"
+  },
+  "next": {
+    "title": "Queries & Procedures - Java Services",
+    "permalink": "/learn/docs/app-development/services/database-services/invoking-queriesprocedures-java-services"
+  }
+}

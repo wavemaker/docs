@@ -1,0 +1,30 @@
+{
+  "unversionedId": "app-development/widgets/prefab/qrcode",
+  "id": "app-development/widgets/prefab/qrcode",
+  "title": "QRCode",
+  "description": "---",
+  "source": "@site/../learn/app-development/widgets/prefab/qrcode.md",
+  "sourceDirName": "app-development/widgets/prefab",
+  "slug": "/app-development/widgets/prefab/qrcode",
+  "permalink": "/learn/docs/app-development/widgets/prefab/qrcode",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/app-development/widgets/prefab/qrcode.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "QRCode",
+    "id": "qrcode"
+  },
+  "sidebar": "Widgets",
+  "previous": {
+    "title": "Googlemaps",
+    "permalink": "/learn/docs/app-development/widgets/prefab/googlemaps"
+  },
+  "next": {
+    "title": "Barcode Scanner Prefab",
+    "permalink": "/learn/docs/app-development/widgets/prefab/barcode-scanner-prefab"
+  }
+}

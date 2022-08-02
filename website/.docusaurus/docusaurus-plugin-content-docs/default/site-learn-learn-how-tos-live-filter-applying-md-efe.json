@@ -1,0 +1,21 @@
+{
+  "unversionedId": "learn/how-tos/live-filter-applying",
+  "id": "learn/how-tos/live-filter-applying",
+  "title": "Applying Live Filter to a Data Table or a Chart",
+  "description": "1. Drag and drop a filter onto the canvas, setting the Service Type to Database CRUD, using hrdb Service and Department entity. Select Name for the Filter Fields.",
+  "source": "@site/../learn/learn/how-tos/live-filter-applying.md",
+  "sourceDirName": "learn/how-tos",
+  "slug": "/learn/how-tos/live-filter-applying",
+  "permalink": "/learn/docs/learn/how-tos/live-filter-applying",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/learn/how-tos/live-filter-applying.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Applying Live Filter to a Data Table or a Chart",
+    "id": "live-filter-applying"
+  }
+}

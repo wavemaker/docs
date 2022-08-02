@@ -1,0 +1,30 @@
+{
+  "unversionedId": "how-tos/using-live-form",
+  "id": "how-tos/using-live-form",
+  "title": "Using Live Form",
+  "description": "---",
+  "source": "@site/../learn/how-tos/using-live-form.md",
+  "sourceDirName": "how-tos",
+  "slug": "/how-tos/using-live-form",
+  "permalink": "/learn/docs/how-tos/using-live-form",
+  "draft": false,
+  "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/../learn/how-tos/using-live-form.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "title": "Using Live Form",
+    "id": "using-live-form"
+  },
+  "sidebar": "How to Docs",
+  "previous": {
+    "title": "Localization of Data Table Column Headings",
+    "permalink": "/learn/docs/how-tos/localization-data-table-column-headings"
+  },
+  "next": {
+    "title": "How Tos: Form",
+    "permalink": "/learn/docs/how-tos/how-tos-form"
+  }
+}
