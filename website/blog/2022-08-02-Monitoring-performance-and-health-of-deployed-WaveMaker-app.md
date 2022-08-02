@@ -32,8 +32,10 @@ How to use OpenTelemetry integration to have complete visibility of the applicat
     
   1. Install Zipkin as default data collector and tracing dashboard. Once the following docker command is run, browse to **http://your_host:9411** to find traces. Dashbord will be empty initially. 
   
+  ```
             docker run -d -p 9411:9411 openzipkin/zipkin
-          
+  ```        
+  
   2. WaveMaker application can be deployed on specific versions of Apache Tomcat. Install Tomcat by following [installation instructions](https://docs.wavemaker.com/learn/how-tos/wavemaker-application-deployment-tomcat) and then copy step 1 downloaded opentelemetry-javaagent.jar to tomcat lib directory(**$TOMCAT_HOME/lib/**)
   
 ### Instrument application code
@@ -45,17 +47,17 @@ OpenTelemetry code instrumentation is supported for Java based applications, her
 
 `$TOMCAT_HOME/bin/setenv.sh`
 
-          export CATALINA_OPTS="$CATALINA_OPTS -javaagent:/usr/local/tomcat/lib/opentelemetry-javaagent.jar”
+```         
+	export CATALINA_OPTS="$CATALINA_OPTS -javaagent:/usr/local/tomcat/lib/opentelemetry-javaagent.jar”
+	export OTEL_TRACES_EXPORTER=“-Dotel.traces.exporter=zipkin”
+	export  OTEL_EXPORTER_ZIPKIN_ENDPOINT=“-Dotel.exporter.zipkin.endpoint=http://<zipkin-host-ip>:<zipkin-port>/api/v2/spans”
+	export OTEL_SERVICE_NAME=”-Dotel.service.name=<App/service name>”
+	export JAVA_OPTS=”$JAVA_OPTS $CATALINA_OPTS $OTEL_TRACES_EXPORTER $OTEL_EXPORTER_ZIPKIN_ENDPOINT $OTEL_SERVICE_NAME”
+```
 
-          export OTEL_TRACES_EXPORTER=“-Dotel.traces.exporter=zipkin”
-
-          export  OTEL_EXPORTER_ZIPKIN_ENDPOINT=“-Dotel.exporter.zipkin.endpoint=http://<zipkin-host-ip>:<zipkin-port>/api/v2/spans”
-
-          export OTEL_SERVICE_NAME=”-Dotel.service.name=<App/service name>”
-
-          export JAVA_OPTS=”$JAVA_OPTS $CATALINA_OPTS $OTEL_TRACES_EXPORTER $OTEL_EXPORTER_ZIPKIN_ENDPOINT $OTEL_SERVICE_NAME”
-		  
-**Note:** Here Zipkin server should be accessible to the tomcat server.
+:::warning
+Here Zipkin server should be accessible to the tomcat server.
+:::
 
   3. Introduce tracing code:
     To introduce tracing and create correlations Spring AOP(Aspect Oriented Programming) code changes needed, this code can also be introduced by using the [IDE](https://docs.wavemaker.com/learn/app-development/dev-integration/extending-application-using-ides/#steps-in-working-with-ides) at WaveMaker application.  
@@ -77,7 +79,8 @@ Navigate to the `project-user-spring.xml` in the below path and add the given sn
 
 
 `$WMAPP_HOME -----> src/main/webapp/WEB-INF/project-user-spring.xml`
-    
+
+```    
           <beans xmlns="http://www.springframework.org/schema/beans"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xmlns:aop="http://www.springframework.org/schema/aop"
@@ -95,11 +98,13 @@ Navigate to the `project-user-spring.xml` in the below path and add the given sn
                 </aop:aspect>  
               </aop:config>  
           </beans>
+```
 
 Create a new java file with given package structure and copy code to the created Java source file
 
 `$WMAPP_HOME ----->src/main/java/com/aop/aspect/LogAspect.java`
 
+```
           package com.aop.aspect;
 
           import org.aspectj.lang.JoinPoint;
@@ -120,6 +125,8 @@ Create a new java file with given package structure and copy code to the created
                   currentSpan.setAttribute("x-wm-request-track-id", response.getHeader("x-wm-request-track-id"));
               }
           }
+```
+
 ### Build and Deploy application
 Build and Deploy application to reflect above instrumentation code change
 
