@@ -137,20 +137,26 @@ Every time when a hit to service endpoint of an application is made a trace is c
 Click on the show button to see WaveMaker API Composer call details
 ![Zipkin-APIComposer](/learn/assets/Zipkin-APIComposer.png)
 
+
 WaveMaker API Composer call trace info with its status code(500) and Server response time details.
 ![Zipkin-APIComposerList](/learn/assets/Zipkin-APIComposerList.png)
+
 
 WaveMaker API Composer first GET call with its status code(200) and response time details.
 ![Zipkin-APIComposerSuccess](/learn/assets/Zipkin-APIComposerSuccess.png)
 
+
 WaveMaker API Composer second GET call with its status code(404) and response time details.
 ![Zipkin-APIComposerfailed](/learn/assets/Zipkin-APIComposerfailed.png)
+
 
 Click on show button for WaveMaker DataBase call details
 ![Zipkin-DBCall](/learn/assets/Zipkin-DBCall.png)
 
+
 WaveMaker DB call trace info along with its status code(200) and response time details.
 ![Zipkin-DBList](/learn/assets/Zipkin-DBList.png)
+
     
 WaveMaker DB call with query and response time details.
 ![Zipkin-DBtable](/learn/assets/Zipkin-DBtable.png)
