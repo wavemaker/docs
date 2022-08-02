@@ -11,7 +11,7 @@ Once instrumented, the user flows become traceable across different microservice
 <!-- truncate -->
 
 ## Benefits of implementing observability
-Metrics, Logs and Traces make up the golden triangle of Observability (https://devops.com/metrics-logs-and-traces-the-golden-triangle-of-observability-in-monitoring/) of any application. WaveMaker built applications can also easily be set up for tracing.
+Metrics, Logs and Traces make up the [golden triangle of Observability](https://devops.com/metrics-logs-and-traces-the-golden-triangle-of-observability-in-monitoring/) of any application. WaveMaker built applications can also easily be set up for tracing.
 
   1. What if all of a sudden, one of the applications has slowed down.
   2. What if the API the application code is showing 500 as a status code and no clue what went wrong inside.
@@ -28,18 +28,18 @@ Instrumenting WaveMaker applications code and getting traces for each request ei
   4. Accessing request traces
   
 ### Install and Setup tools
-    How to use OpenTelemetry integration to have complete visibility of the application, Here in this first step explains details to **Install and Setup tools** and integrate OpenTelemetry and Zipkin with the application deployed at Apache Tomcat.
+How to use OpenTelemetry integration to have complete visibility of the application, Here in this first step explains details to Install and Setup tools and integrate OpenTelemetry and Zipkin with the application deployed at Apache Tomcat.
     
   1. Install Zipkin as default data collector and tracing dashboard. Once the following docker command is run, browse to **http://your_host:9411** to find traces. Dashbord will be empty initially. 
   
             docker run -d -p 9411:9411 openzipkin/zipkin
           
-  2. WaveMaker application can be deployed on specific versions of Apache Tomcat. Install Tomcat by following installation instructions and then copy step 1 downloaded opentelemetry-javaagent.jar to tomcat lib directory(**$TOMCAT_HOME/lib/**)
+  2. WaveMaker application can be deployed on specific versions of Apache Tomcat. Install Tomcat by following [installation instructions](https://docs.wavemaker.com/learn/how-tos/wavemaker-application-deployment-tomcat) and then copy step 1 downloaded opentelemetry-javaagent.jar to tomcat lib directory(**$TOMCAT_HOME/lib/**)
   
 ### Instrument application code
-    OpenTelemetry code instrumentation is supported for Java based applications, here are the steps  to  Instrument application code.
+OpenTelemetry code instrumentation is supported for Java based applications, here are the steps  to  Instrument application code.
   
-   1. Download latest open telemetry opentelemetry-javaagent.jar from the Open Telemetry repo and place the JAR at preferred directory and launch it with tomcat.
+   1. Download latest open telemetry [opentelemetry-javaagent.jar](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar) from the Open Telemetry repo and place the JAR at preferred directory and launch it with tomcat.
    
    2. Set environment variables by adding the `setenv.sh` file above the installed tomcat bin directory.
 
@@ -58,7 +58,7 @@ Instrumenting WaveMaker applications code and getting traces for each request ei
 **Note:** Here Zipkin server should be accessible to the tomcat server.
 
   3. Introduce tracing code:
-    To introduce tracing and create correlations Spring AOP(Aspect Oriented Programming) code changes needed, this code can also be introduced by using the IDE at WaveMaker application.  
+    To introduce tracing and create correlations Spring AOP(Aspect Oriented Programming) code changes needed, this code can also be introduced by using the [IDE](https://docs.wavemaker.com/learn/app-development/dev-integration/extending-application-using-ides/#steps-in-working-with-ides) at WaveMaker application.  
     Download WaveMaker Application Zip from Studio, extract the downloaded zip file to a directory and call it as `$WMAPP_HOME`
     Navigate to the maven `pom.xml` file to add following dependencies code snippet
     
@@ -132,7 +132,7 @@ Accessing request traces with Use Cases
 Here is the introduced sample use case at WaveMaker application to imitate calls to other external services, or another microservice and a call to database engine into the application. Following are the Zipkin screenshots where time taken by application request is spent in each function, to pin where the problem is with the call to the microservice and focus on reducing the latency in a service considering the time details exposed. Or, These traces can be used to understand what the workflow of a request is. 
 Another advantage that works is by introducing trace ID in the response payload of the WaveMaker application and using that ID to correlate with other dependency calls.
 
-Every time when a hit to service endpoint of an application is made a trace is captured at Zipkin, to see something like this at Zipkin dashboard by accessing url http://your_host:9411,  here are few WaveMaker application request traces.
+Every time when a hit to service endpoint of an application is made a trace is captured at Zipkin, to see something like this at Zipkin dashboard by accessing url **http://your_host:9411**,  here are few WaveMaker application request traces.
     
     
 
