@@ -543,31 +543,7 @@ h3 {
 .navigation>ul>li>a:hover {
     color: #1794ef;
 }
-.navigationSlider .slidingNav {
-    bottom: auto;
-    box-sizing: border-box;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-}
-.navigationSlider .slidingNav ul {
-    background: #097FD5;
-    box-sizing: border-box;
-    color: #fff;
-    display: flex;
-    flex-wrap: nowrap;
-    list-style: none;
-    margin-top: 50px;
-    padding: 0;
-    width: 100%;
-}
-.navigationSlider .slidingNav ul li {
-    flex: 1 1 auto;
-    margin: 0;
-    text-align: center;
-    white-space: nowrap;
-}
+
 .navigationSlider .slidingNav ul li a {
     font-size: 15px;
 }
@@ -704,30 +680,15 @@ h3 {
     font-size: 14px;
     text-decoration: none;
 }
-.fixedHeaderContainer header {
-    display: flex;
-    flex-flow: row nowrap;
-    position: relative;
-    text-align: left;
-}
 
 .fixedHeaderContainer {
+    /* //background-color: #097FD5; */
     background-color: #fff;
-    box-shadow: 0 1px 6px 1px rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
 }
 
-.fixedHeaderContainer header img {
-    height: 100%;
-    margin-right: 10px;
-}
-
-.fixedHeaderContainer header .headerTitleWithLogo {
-    display: block;
-    font-size: 1.25em;
-    line-height: 18px;
-    margin: 0;
-    position: relative;
-    z-index: 9999;
+.headerTitleWithLogo {
+    color: #202b4c;
 }
 
 .toc .toggleNav .navGroup .navGroupCategoryTitle {
@@ -1143,13 +1104,7 @@ h3 {
     }
 
     .fixedHeaderContainer a {
-        align-items: center;
-        border: 0;
-        color: #fff;
-        display: flex;
-        flex-flow: row nowrap;
-        height: 34px;
-        z-index: 10000;
+        display: none;
     }
 
     .navigationSlider .slidingNav ul {
@@ -1181,27 +1136,6 @@ h3 {
 }
 
 @media only screen and (min-width: 1024px) {
-    .navigationSlider {
-        height: 34px;
-        margin-left: auto;
-        position: relative;
-    }
-    .navigationSlider nav.slidingNav {
-        background: none;
-        height: auto;
-        position: relative;
-        right: auto;
-        top: auto;
-        width: auto;
-    }
-    .navigationSlider .slidingNav ul {
-        background: none;
-        display: flex;
-        flex-flow: row nowrap;
-        margin: 0;
-        padding: 0;
-        width: auto;
-    }
     .navigationSlider .slidingNav ul li a {
         color: #24292e;
         font-weight: 400;

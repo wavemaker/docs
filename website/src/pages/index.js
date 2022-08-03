@@ -1,5 +1,11 @@
-import React from 'react';
-import Header from './header';
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+const React = require('react');
 
 export default class Index extends React.Component {
     constructor(props) {
@@ -17,7 +23,7 @@ export default class Index extends React.Component {
             { href: '/learn/docs/on-premise/welcome', backgroundImage: 'linear-gradient(to left, #f6cfed, #c68bbf)', icon: '/learn/img/enterpriseGuide.svg', label: 'Enterprise Guide' }]
         categories.forEach((category) => {
             categoryComponents.push(
-                <div className="column">
+                <div className="column" key={categories.indexOf(category)}>
                     <div className='content-wrapper'>
                         <a href={category.href}>
                             <div className='category' style={{ backgroundImage: category.backgroundImage }}>
@@ -46,7 +52,7 @@ export default class Index extends React.Component {
             { href: '/learn/docs/connectors/connectors-introduction', icon: '/learn/img/connectors.svg', label: 'Connectors' },
         ]
         extensions.forEach((extension) => {
-            extensionComponents.push(<div className='column'>
+            extensionComponents.push(<div className='column' key={extensions.indexOf(extension)}>
                 <div className='content-wrapper'>
                     <div className='extension'>
                         <img height="60px" src={extension.icon}></img>
@@ -92,10 +98,10 @@ export default class Index extends React.Component {
                                     <div>
                                         <span><img style={{ margin: "0 0.5em" }} src='/learn/img/speaker.svg' />Learn more about WaveMaker 11 beta and see what's new.</span>
                                     </div>
-                                    <a style={{ margin: "0 0.5em" }} href='https://docs.wavemaker.com/learn/docs/app-development/wavemaker-overview/wavemaker-11-beta'>Read more</a>
+                                    <a style={{ margin: "0 0.5em" }} href='https://docs.wavemaker.com/learn/app-development/wavemaker-overview/wavemaker-11-beta'>Read more</a>
                                 </div>
                                 <div className='column'>
-                                    <a onClick={() => { this.setState({ displayInfoFooter: false }); console.log(this.state.displayInfoFooter); }}><img className="bannerFooterCloseImg" src='/learn/img/closeIcon.svg' /></a>
+                                    <a onClick={() => { this.setState({ displayInfoFooter: false }); }}><img className="bannerFooterCloseImg" src='/learn/img/closeIcon.svg' /></a>
                                 </div>
                             </div>}
                         </div>
@@ -210,11 +216,6 @@ export default class Index extends React.Component {
 
         return (
             <div>
-                <div className="fixedHeaderContainer">
-                    <div className="headerWrapper wrapper">
-                        <Header />
-                    </div>
-                </div>
                 <Main />
             </div>
         );
