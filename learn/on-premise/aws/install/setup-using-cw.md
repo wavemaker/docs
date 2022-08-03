@@ -13,7 +13,7 @@ sidebar_label: "Setup Using ConfigPortal"
 
     [![setting up username and password](/learn/assets/wme-setup/wme-portal-setup/setting-username-and-password.png)](/learn/assets/wme-setup/wme-portal-setup/setting-username-and-password.png)
 
-- Select the services required for the setup. Here, the Developer Studio Platform is a default service and it is responsible for the functionality of running the wavemaker studio. The Deployments service can be disable if the developer want to use their own CI/CD pipeline to build and deploy their application. The Source Code Repo service can be disable if the developer have their own Git server. By default wavemaker uses Github as a Source Code Repo. The Monitoring serivice is responsible for monitoing the platform and Deployed apps. This can be disable if dont want to monitor the logs.
+- Select the services required for the setup. Here, the Developer Studio Platform is a default service and it is responsible for the functionality of running the WaveMaker studio. The Deployments service can be disable if the developer want to use their own CI/CD pipeline to build and deploy their application. The Source Code Repo service can be disable if the developer have their own Git server. By default WaveMaker uses Github as a Source Code Repo. The Monitoring serivice is responsible for monitoing the platform and Deployed apps. This can be disable if dont want to monitor the logs.
 
     [![select-services](/learn/assets/wme-setup/wme-portal-setup/select-services.png)](/learn/assets/wme-setup/wme-portal-setup/select-services.png)
 
