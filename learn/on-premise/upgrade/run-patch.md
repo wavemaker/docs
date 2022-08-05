@@ -31,7 +31,7 @@ sidebar_label: "Run Patch"
 
 - Enter config portal admin password to proceed with the process.
 
-[![upgrading-wme](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-upgrade.jpg)](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-upgrade.jpg)
+[![upgrading-wme](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-process.png)](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-process.png)
 
 - It takes 45-60 mins approximately. Please watch this terminal.
 - After completing the patch, go to Launchpad.
