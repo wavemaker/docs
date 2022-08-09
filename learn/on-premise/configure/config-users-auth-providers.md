@@ -32,6 +32,7 @@ Following are the steps to add Users to the network by the SuperAdmin from WaveM
 
 [![user creation](/learn/assets/wme-setup/configuring-wme/user-creation.png)](/learn/assets/wme-setup/configuring-wme/user-creation.png)
 
+
 ## Make User as a Super Admin
 
 - A Super Admin is a User who can Access the Launchpad and Studio.
