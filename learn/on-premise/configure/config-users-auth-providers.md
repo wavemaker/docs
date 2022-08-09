@@ -54,4 +54,5 @@ Following are the steps to add Users to the network by the SuperAdmin from WaveM
 - Select type of provider and Provide name and fill the required fields respect to that provider.
 - Make Default after adding it.
 
+
 [![authentication provider](/learn/assets/wme-setup/configuring-wme/adding-authorization-provider.png)](/learn/assets/wme-setup/configuring-wme/adding-authorization-provider.png)
