@@ -5,11 +5,11 @@ sidebar_label: "Users Onboarding"
 ---
 ---
 
-Configure Users and Authentication Providers. There are two ways to onboard users.
+Configure Users and Authentication Providers.
 
 ## Add Users from Launchpad
 
-- Add from User On-boarding -> Create User Section.
+- Add from Users -> Add New User Section.
 - Authentication will be taken care by Platform.
 
 ## Add Authentication Provider
@@ -24,24 +24,33 @@ The number of users that can be added is limited by the terms in License and the
 
 Following are the steps to add Users to the network by the SuperAdmin from WaveMaker Launchpad:
 
-- Select User on-boarding section at the left side of Launchpad.
-- At users section select Create User for creating the user.
-- Create a user by providing basic details like name ,email and password and select the prefer role for a user.
-- Roles
-- Super Admin - Access to Launchpad, Enterprise Network, Studio.
-- Enterprise Admin - Access to Enterprise Network and Studio.
-- Studio User - Access to Studio. All Developers will come under this.
+- Select Users on-boarding section at the left side of Launchpad.
+- At users section select Add New User for creating the user.
+- Create a user by providing basic details like name ,email and password.
+- The User created here will consider as a Studio User who can Access to Studio. All Developers will come under this.
+
 
 [![user creation](/learn/assets/wme-setup/configuring-wme/user-creation.png)](/learn/assets/wme-setup/configuring-wme/user-creation.png)
+
+## Make User as a Super Admin
+
+- A Super Admin is a User who can Access the Launchpad and Studio.
+- You can only Create a Super Admin from the existing Users.
+- To Make an User as a Super Admin, select Add Super Admin from the users on-boarding section.
+- Make the user as a Super Admin here by Selecting them and by Selecting on Map Users to Role.
+
+
+[![Super Admin creation](/learn/assets/wme-setup/configuring-wme/super-admin.png)](/learn/assets/wme-setup/configuring-wme/super-admin.png)
+
 
 ## Configure Authentication Providers
 
 - Supported Protocols
-- LDAP
-- CAS
 - OpenIdConnect
-- Select the Add Authorization Provider option at user on-boarding section.
-- Provide name and select type of provider and fill the required fields respect to that provider.
+- CAS
+- LDAP
+- Select the Add Configuration option at user Identity Providers section.
+- Select type of provider and Provide name and fill the required fields respect to that provider.
 - Make Default after adding it.
 
 [![authentication provider](/learn/assets/wme-setup/configuring-wme/adding-authorization-provider.png)](/learn/assets/wme-setup/configuring-wme/adding-authorization-provider.png)

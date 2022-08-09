@@ -61,6 +61,16 @@ sudo apt-get install python3 -y
     sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
     example: sudo apt-get install docker-ce=5:20.10.12~3-0~ubuntu-focal docker-ce-cli=5:20.10.12~3-0~ubuntu-focal containerd.io -y
   ```
+  
+#### Install Docker using WaveMaker Script
+
+- To install Docker to the latest version, the user need to use their own approach or WaveMaker provides a script to install.
+
+  - Run the following command to install the Docker.
+
+```bash 
+   sudo bash wme-utility.sh --docker-upgrade 
+  ```  
 
 #### StudioWorkspace Instance / AppDeployment Instance
 

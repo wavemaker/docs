@@ -150,6 +150,16 @@ Upgrade or Install the latest version of Docker.
       echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
   ```
 
+### Upgrade Docker using WaveMaker Script
+
+- You need to upgrade the Docker by using above steps or by with your own approach or by WaveMaker provides you a Script to Upgrade to the latest version.
+
+   - Run the Following command  to Upgrade to latest version.
+
+```bash
+    bash bash wme-utility.sh --docker-upgrade
+```       
+
 ### Sync Studio Workspace/AppDeploy Instances
 
 - Execute the following command in Platform Instance to sync the StudioWorkspace/AppDeploy Instances.
