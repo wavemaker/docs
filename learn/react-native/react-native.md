@@ -17,19 +17,19 @@ React Native is a mobile app framework from Facebook. It is based on ReactJS pri
 
 ### WaveMaker Hybrid Mobile 
 
-When developing Hybrid mobile apps in WaveMaker,  Cordova apps display HTML-based UI using a browser component. So, you can use HTML and CSS along with JavaScript in Cordova apps. 
+When developing Hybrid mobile apps in WaveMaker, Cordova apps display HTML-based UI using a browser component. So, you can use HTML and CSS along with JavaScript in Cordova apps. 
 
 ### WaveMaker React Native
 
-React Native apps run JavaScript in JavaScript runtime, including JSC and Hermes. React Native bridge amends native UI based on the response Virtual DOM from JavaScript—consequently, not allowing you to use **CSS and HTML in React Native apps**. You must define JSX Markup, styles, and logic in JavaScript for React Native apps.
+React Native apps run JavaScript in JavaScript runtime, including JSC and Hermes. React Native bridge amends native UI based on the response Virtual DOM from JavaScript—consequently, not allowing you to use **CSS and HTML in React Native apps**. You must define JSX Markup, styles, and logic in JavaScript.
 
 ## Things to be noted
 
-In WaveMaker, apps are developed with WaveMaker Markup, Variables, JavaScript, and Styles defined in CSS. Let's see how it works for t Native app development.
+In WaveMaker, apps are developed with WaveMaker Markup, Variables, JavaScript, and Styles defined in CSS. Let's see how it works for React Native app development.
 
 ### Markup
 
-During the build, the WaveMaker platform convert the [WaveMaker markup](/learn/app-development/ui-design/page-artefacts#page-markup) to React Native markup. But, not all Widgets and their properties are supported. See [Supported Widgets](/learn/react-native/supported-widgets) to know more. 
+During the build, platform converts [WaveMaker markup](/learn/app-development/ui-design/page-artefacts#page-markup) to React Native markup. But, not all Widgets and their properties are supported. See [Supported Widgets](/learn/react-native/supported-widgets) to know more. 
 
 ### Variables
 
