@@ -46,14 +46,14 @@ Most of the WaveMaker app development capabilities are available in both WMO and
 
 ## Quick Start Guide
 
-|To | See |
-|----|----|
-|Start with beginner's guide | [Video Tutorials](/learn/tutorials) |
-|For installation related information, On-premise Setup |[Pre-requisites to Develop App in WaveMaker](/learn/app-development/wavemaker-overview/pre-requisites)|
-|Get the WaveMaker Studio walkthrough |[Product Terminology and Dashboard Walkthrough](/learn/app-development/wavemaker-overview/product-walkthrough)|
-|Explore Widgets and play around|[Widgets Library](/learn/app-development/widgets/widget-library)|
-|Build an app in 5 mins | [Build a WaveMaker App in 5 Minutes](https://www.youtube.com/watch?list=PLNlIJ337WpshRs-8eCubDm2vilhsloiqs&v=tLjGGJbrZ2Q)|
-|Jumpstart to app building process and create a simple app.|[WaveMaker App Building Essentials](/learn/jump-start/jump-start-app-essentials/)|
+| To                                                         | See                                                                                                                       |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Start with beginner's guide                                | [Video Tutorials](/learn/tutorials)                                                                                       |
+| For installation related information, On-premise Setup     | [Pre-requisites to Develop App in WaveMaker](/learn/app-development/wavemaker-overview/pre-requisites)                    |
+| Get the WaveMaker Studio walkthrough                       | [Product Terminology and Dashboard Walkthrough](/learn/app-development/wavemaker-overview/product-walkthrough)            |
+| Explore Widgets and play around                            | [Widgets Library](/learn/app-development/widgets/widget-library)                                                          |
+| Build an app in 5 mins                                     | [Build a WaveMaker App in 5 Minutes](https://www.youtube.com/watch?list=PLNlIJ337WpshRs-8eCubDm2vilhsloiqs&v=tLjGGJbrZ2Q) |
+| Jumpstart to app building process and create a simple app. | [WaveMaker App Building Essentials](/learn/jump-start/jump-start-app-essentials/)                                         |
 
 
 ## [Start a free trial!](https://www.wavemaker.com/get-started/)

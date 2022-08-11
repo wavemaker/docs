@@ -119,24 +119,9 @@ export default {
       ],
       "hideOnScroll": false
     },
-    "image": "img/WM_blue_logo.png",
     "footer": {
-      "links": [
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Twitter",
-              "to": "https://twitter.com/WaveMaker"
-            }
-          ]
-        }
-      ],
-      "copyright": "Copyright © 2013-2022 WaveMaker, Inc. All rights reserved.",
-      "logo": {
-        "src": "img/WM_blue_logo.png"
-      },
-      "style": "light"
+      "style": "light",
+      "links": []
     },
     "colorMode": {
       "defaultMode": "light",

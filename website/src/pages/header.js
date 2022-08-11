@@ -1,44 +1,51 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 const React = require('react');
 
 export default class Header extends React.Component {
     render() {
         return (
-            <header id="header" className="header">
-                <div className="row">
-                    <div id="logo-navigation" className="column logo-col">
-                        <div id="logo">
-                            <a href="https://www.wavemaker.com/rapid-application-development-platform/"><img src="/learn/img//WM_logo-final-grey-04.svg" alt="WaveMaker" /></a>
+            <header className="header">
+                <nav className="navbar navbar--fixed-top">
+                    <div className="navbar__inner">
+                        <div className="navbar__items">
+                            <button aria-label="Navigation bar toggle" className="navbar__toggle clean-btn" type="button" tabindex="0">
+                                <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22">
+                                    </path>
+                                </svg>
+                            </button>
+                            <a className="navbar__brand" href="/learn/">
+                                <div className="navbar__logo">
+                                    <img src="/learn/img/WM_blue_logo.png" alt="" className="themedImage_node_modules-@docusaurus-theme-classic-lib-theme-ThemedImage-styles-module themedImage--light_node_modules-@docusaurus-theme-classic-lib-theme-ThemedImage-styles-module" />
+                                </div>
+                                <span className="navbar__title text--truncate">WaveMaker Docs</span>
+                            </a>
+                            <a className="navbar__item navbar__link" href="/learn/docs/documentation-reference">Guide</a>
+                            <a className="navbar__item navbar__link" href="/learn/docs/app-development/widgets/widget-library">Widgets</a>
+                            <a className="navbar__item navbar__link" href="/learn/docs/wavemaker-release-notes">Releases</a>
+                            <a className="navbar__item navbar__link" href="/learn/docs/on-premise/welcome">Blog</a>
+                            <a href="https://www.wavemaker.com/get-started/" target="_blank" rel="noopener noreferrer" className="navbar__item navbar__link headerSignIn">Sign In</a>
                         </div>
                     </div>
-                    <div className="column navigation nav-menu">
-                        <ul id="nav">
-                            <li class="dropdown">
-                                <a href="#" role="button" id="dropdown">Docs</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="/learn/documentation-reference" target="_self">Docs</a>
-                                    <a class="dropdown-item" href="/learn/app-development/widgets/widget-library" target="_self">Widgets</a>
-                                    <a class="dropdown-item" href="/learn/howtos-documents" target="_self">How-to</a>
-                                    <a class="dropdown-item" href="/learn/wavemaker-release-notes" target="_self">Releases</a>
-                                    <a class="dropdown-item" href="https://www.wavemakeronline.com/login/login" target="_blank">Login</a>
-                                    <a class="dropdown-item" href="https://www.wavemaker.com/get-started/" target="_blank">Start free trial</a>
+                    <div className='navbar-sidebar'>
+                        <div className='navbar-sidebar__brand'>
+                            <a className="navbar__brand" href="/learn/">
+                                <div className="navbar__logo">
+                                    <img src="/learn/img/WM_blue_logo.png" alt="" className="themedImage_node_modules-@docusaurus-theme-classic-lib-theme-ThemedImage-styles-module themedImage--light_node_modules-@docusaurus-theme-classic-lib-theme-ThemedImage-styles-module" />
                                 </div>
-                            </li>
-                            <li><a href="/learn/docs">DOCS</a></li>
-                            <li><a href="http://www.wavemaker.com/partners">PARTNERS</a></li>
-                            <li><a href="http://www.wavemaker.com/customers">CUSTOMERS</a></li>
-                            <li><a href="http://www.wavemaker.com/about">ABOUT US</a></li>
-                            <li><a href="http://www.wavemaker.com/contact">CONTACT US</a></li>
-                        </ul>
+                                <span className="navbar__title text--truncate">WaveMaker Docs</span>
+                            </a>
+                        </div>
+                        <button type="button" className="clean-btn navbar-sidebar__close">
+                            <svg viewBox="0 0 15 15" width="21" height="21">
+                                <g stroke="var(--ifm-color-emphasis-600)" stroke-width="1.2">
+                                    <path d="M.75.75l13.5 13.5M14.25.75L.75 14.25">
+                                    </path>
+                                </g>
+                            </svg>
+                        </button>
                     </div>
-                </div>
-            </header>
+                </nav>
+            </header >
         );
     }
 }

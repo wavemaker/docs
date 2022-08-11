@@ -6,6 +6,8 @@
  */
 
 const React = require('react');
+import Footer from './Footer';
+import Header from './header';
 
 export default class Index extends React.Component {
     constructor(props) {
@@ -17,25 +19,23 @@ export default class Index extends React.Component {
     getCategories() {
         let categoryComponents = [];
         let categories = [
-            { href: '/learn/docs/app-development/widgets/widget-library', backgroundImage: 'linear-gradient(to left, rgba(131, 195, 250, 0.51), #4c90f2)', icon: '/learn/img/exploreWidgets.svg', label: 'Comprehensive How-to\'s' },
-            { href: '/learn/docs/app-development/custom-widgets/prefabs-overview', backgroundImage: 'linear-gradient(to left, #addce7, #62b9a0)', icon: '/learn/img/tailorPrefabs.svg', label: 'Tailor Made Prefabs.' },
-            { href: '/learn/docs/react-native/react-native', backgroundImage: 'linear-gradient(to left, #f1cfb5, #f6a191)', icon: '/learn/img/reactNativeMobileApp.svg', label: 'React Native Mobile Apps.' },
-            { href: '/learn/docs/on-premise/welcome', backgroundImage: 'linear-gradient(to left, #f6cfed, #c68bbf)', icon: '/learn/img/enterpriseGuide.svg', label: 'Enterprise Guide' }]
+            { href: '/learn/docs/app-development/widgets/widget-library', icon: '/learn/img/exploreWidgets.svg', label: 'Comprehensive How-to\'s' },
+            { href: '/learn/docs/app-development/custom-widgets/prefabs-overview', icon: '/learn/img/tailorPrefabs.svg', label: 'Tailor Made Prefabs' },
+            { href: '/learn/docs/react-native/react-native', icon: '/learn/img/reactNativeMobileApp.svg', label: 'React Native Mobile Apps' },
+            { href: '/learn/docs/on-premise/welcome', icon: '/learn/img/enterpriseGuide.svg', label: 'Enterprise Guide' }]
         categories.forEach((category) => {
             categoryComponents.push(
                 <div className="column" key={categories.indexOf(category)}>
-                    <div className='content-wrapper'>
-                        <a href={category.href}>
-                            <div className='category' style={{ backgroundImage: category.backgroundImage }}>
-                                <div className='column'>
-                                    <span>{category.label}</span>
-                                </div>
-                                <div className='column'>
-                                    <img height="98px" src={category.icon}></img>
-                                </div>
+                    <a href={category.href}>
+                        <div className='category'>
+                            <div className='column'>
+                                <img src={category.icon}></img>
                             </div>
-                        </a>
-                    </div>
+                            <div className='column'>
+                                <span>{category.label}</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             )
         })
@@ -75,8 +75,10 @@ export default class Index extends React.Component {
                         <div className='column'>
                             <div className='row bannerContent'>
                                 <div className='column'>
-                                    <span className='bannerTitle'>How can we help?</span>
-                                    <div className='bannerSearch'>
+                                    <div className='row'>
+                                        <span className='bannerTitle'>How can I <span style={{ color: '#1794ef' }}>help</span> you?</span>
+                                    </div>
+                                    <div className='row bannerSearch'>
                                         <li className="navSearchWrapper reactNavSearchWrapper" key="search">
                                             <input
                                                 className='searchInput'
@@ -86,11 +88,7 @@ export default class Index extends React.Component {
                                                 title='Type here'
                                             />
                                         </li>
-                                        {/* <button className='bannerSearchButton'>Search</button> */}
                                     </div>
-                                </div>
-                                <div className='column'>
-                                    <img className='bannerImg' src='/learn/img/bannerImage.svg' />
                                 </div>
                             </div>
                             {this.state.displayInfoFooter && <div className='row bannerFooter'>
@@ -118,6 +116,9 @@ export default class Index extends React.Component {
                         {this.getExtensions()}
                     </div>
                     <div className='indexFooter'>
+                        <div className='column'>
+                            <span>Helpful Resources</span>
+                        </div>
                         <div className='column'>
                             <div className='row indexFooterLinks'>
                                 <div className='column'>
@@ -178,36 +179,6 @@ export default class Index extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className='row'>
-                                <div className='column'>
-                                    <p></p>
-                                </div>
-                                <div className="column navigation">
-                                    <ul id="nav">
-                                        <li><a href="https://www.wavemaker.com/get-started" target="_blank" >PRICING</a> </li>
-                                        <li><a href="https://www.wavemaker.com/partners" target="_blank" >PARTNERS</a> </li>
-                                        <li><a href="https://www.wavemaker.com/customer-stories" target="_blank" >CUSTOMERS</a> </li>
-                                        <li><a href="https://www.wavemaker.com/about" target="_blank" >ABOUT US</a> </li>
-                                        <li><a href="https://www.wavemaker.com/contact" target="_blank" >CONTACT US</a> </li>
-                                    </ul>
-                                </div>
-                                <div className="column social-media-list">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/wavemakersoftware" target="_blank" title="Facebook"><i className="fa fa-facebook"></i></a> </li>
-                                        <li><a href="https://www.youtube.com/c/WaveMaker" target="_blank" title="YouTube"> <i className="fa fa-youtube-play"></i></a> </li>
-                                        <li><a href="https://twitter.com/WaveMaker" target="_blank" title="Twitter"><i className="fa fa-twitter"></i></a> </li>
-                                        <li><a href="http://www.linkedin.com/company/wavemaker" target="_blank" title="LinkedIn"><i className="fa fa-linkedin" style={{ 'fontSize': '22px' }}></i></a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className='row'>
-                                <div id="copyright">
-                                    <div className="container">
-                                        <div className="copyright-text"> <a href="//www.wavemaker.com/legal/terms-of-use/">Terms of Use </a>| {this.props.config.copyright} </div>
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
                     </div>
                 </main>
@@ -215,8 +186,10 @@ export default class Index extends React.Component {
         };
 
         return (
-            <div>
+            <div className='index'>
+                <Header />
                 <Main />
+                <Footer />
             </div>
         );
     }

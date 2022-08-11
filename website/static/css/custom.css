@@ -75,7 +75,7 @@ h3 {
 }
 
 .header {
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
+    border: none;
 }
 
 .header .nav-menu ul li a {
@@ -103,50 +103,56 @@ h3 {
 }
 
 
-.headerSignIn a {
+.headerSignIn {
+    color: #fff;
+    font-size: 15px;
+    width: 111px;
+    height: 38px;
+    margin: 0 0 0 31px;
     border-radius: 4px;
     background-color: #ff6221;
-    color: #fff !important;
-    width: 91px;
-    height: 38px;
-    font-size: 15px !important;
+    text-align: center;
+}
 
+.headerSignIn:hover {
+    color: #fff;
 }
 
 /* Added Style for Banner */
 .banner {
-    background-image: linear-gradient(107deg, #d7f1ff 1%, #f1f8fc 98%, #f1f8fc 98%);
+    background-image: url(../img/bannerImage.svg);
     border-radius: 10px;
-    min-height: 250px;
-    height: 320px;
-    margin: 0px 0px 25px;
-    width: 100%;
-    padding: 13px 0 0;
+    height: 386px;
+    margin: 20px 32px 25px;
     position: relative;
-}
-
-.banner .bannerTitle {
-    margin-left: 25px;
 }
 
 .banner .bannerContent {
     height: 290px;
 }
 
+.banner .row {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .banner .bannerContent span {
-    font-family: AirbnbCerealApp;
-    font-size: 50px;
+    font-family: Roboto;
+    font-size: 42px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.8;
+    line-height: 2.14;
     letter-spacing: normal;
-    color: #152839;
+    text-align: center;
+    color: #000;
 }
 
 .banner .bannerSearch {
-    position: relative;
-    width: 500px;
+    /* position: relative; */
+    width: 499px;
 }
 
 .banner .bannerSearch .navSearchWrapper {
@@ -160,38 +166,20 @@ h3 {
 .banner .bannerSearch input#search_input_react {
     width: 100%;
     height: 58px;
-    padding: 2px 2px 2px 23px;
+    padding: 18px 419px 17px 23px;
     border-radius: 29px;
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.06);
     background-color: #fff;
-    color: #152839;
+    color: #000;
+    border: none;
 }
 
 
 .banner .bannerSearch .navSearchWrapper::before,
-.banner .bannerSearch .navSearchWrapper::after {
+.banner .bannerSearch .navSearchWrapper::after,
+.banner .bannerSearch .navSearchWrapper::marker {
     display: none;
 }
-
-.bannerSearchButton {
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    width: 146px;
-    height: 54px;
-    padding: 15px 45px 16px 44px;
-    border-radius: 26.5px;
-    border-width: 0px;
-    color: #fff;
-    background-color: #1794ef;
-}
-
-.banner .bannerContent .bannerImg {
-    object-fit: contain;
-    width: 293px;
-    height: 276px;
-    margin: -60px 0 0 6em;
-}
-
 
 .banner .bannerFooter {
     width: 100%;
@@ -199,9 +187,9 @@ h3 {
     bottom: 1px;
     left: 1px;
     height: 44px;
-    border-radius: 8px;
+    border-radius: 0px 0px 8px 8px;
     backdrop-filter: blur(4px);
-    background-color: rgba(213, 237, 249, 0.57);
+    background-image: linear-gradient(93deg, rgba(215, 241, 255, 0.34) 1%, #f1f8fc 82%, rgba(241, 248, 252, 0.6) 82%);
     align-items: center;
 }
 
@@ -310,26 +298,47 @@ h3 {
 
 
 .categories {
-    margin: 40px 25px;
+    margin: 40px auto;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.category .column {
+    text-decoration: none;
+}
+
+.category img {
+    width: 41px;
+    height: 40px;
+}
+
+.category .column {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .category {
-    color: #ffffff;
+    color: #000;
     display: inline-flex;
-    padding: 12px 30px;
+    width: 263px;
+    height: 170px;
+    margin: 0;
     font-size: 16px;
     line-height: 1.5;
     font-weight: bold;
-    box-shadow: 0 2px 620px 0 rgba(27, 29, 50, 0.28);
-    border-radius: 12px;
-    min-height: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    object-fit: contain;
     align-items: center;
-    transition: top ease 0.5s;
+    transition: top ease 2s;
 }
 
 .category:hover {
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.06);
     transform: translate(0, -10px);
 }
+
 
 .extensions {
     margin: 55px 25px;
@@ -340,6 +349,57 @@ h3 {
     width: 100%;
 }
 
+.widget-container .row {
+    max-width: 600px;
+    margin: 0px;
+}
+
+.first-widget {
+    height: 400px;
+}
+
+.widget {
+    height: 198px;
+    padding: 37px 23px 30px;
+}
+
+.first-widget,
+.widget {
+    margin: 2px;
+    min-height: 100px;
+    max-width: 300px;
+    object-fit: contain;
+    position: relative;
+    background-color: #ffffff;
+    align-items: flex-start;
+    border-radius: 15px;
+    border: solid 1px rgba(131, 143, 162, 0.3);
+    box-shadow: 0 40px 300px 0 rgba(181, 190, 199, 0.3);
+    text-align: left;
+    transition: top ease 0.5s;
+    flex-direction: column;
+}
+
+.first-widget img {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.widget img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 100%;
+}
+
+.widget-container .content{
+    padding: 37px 23px 30px;
+}
 .extensionInfo {
     align-items: center;
     text-align: center;
@@ -366,7 +426,7 @@ h3 {
     border: solid 1px rgba(131, 143, 162, 0.3);
     box-shadow: 0 40px 300px 0 rgba(181, 190, 199, 0.3);
     text-align: center;
-    transition: top ease 0.5s;
+    transition: top ease 2s;
 
 }
 
@@ -383,9 +443,24 @@ h3 {
     content: url("/img/combined-shape.svg");
 }
 
+.index footer {
+    background-color: #4f5761;
+}
+
+.index #copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #4E5761;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.index #copyright a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
 .indexFooter {
     margin-top: 25px;
-    background-color: #4E5761;
 }
 
 .indexFooter .row {
@@ -845,13 +920,20 @@ h3 {
     }
 
     .banner {
-        margin: 25px 10px;
-        height: 380px;
+        margin: 20px 32px 25px;
+        height: 386px;
+        position: relative;
     }
 
     .banner .bannerContent span {
-        font-size: 6vw;
+        font-size: 42px;
+    }
 
+    .banner .row {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .banner .bannerContent .column {
@@ -861,11 +943,6 @@ h3 {
     .banner .bannerFooter .column {
         align-items: center;
         flex: auto;
-    }
-
-
-    .banner .bannerContent .column:last-child {
-        display: none;
     }
 
     .banner .bannerFooterNotification {
@@ -884,24 +961,11 @@ h3 {
     }
 
     .banner .bannerSearch {
-        position: relative;
-        width: 100%;
+        width: 499px;
     }
 
     .banner .bannerSearch .navSearchWrapper {
         width: 100%;
-    }
-
-    .banner .bannerSearch input#search_input_react {
-        height: 7vw;
-    }
-
-    .banner .bannerSearch .bannerSearchButton {
-        top: 1.25vw;
-        right: 1.25vw;
-        width: 32vw;
-        height: 7vw;
-        font-size: 1.25vw;
     }
 
     .categories {
@@ -983,28 +1047,33 @@ h3 {
 
 
     .banner {
-        margin: 25px 10px;
-        min-height: 45vh;
+        position: relative;
+        margin: 20px 10px 25px;
         height: 65vh;
-        max-height: 328px;
+        max-height: 326px;
+    }
+
+    .banner .row {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .banner .bannerContent span {
-        font-size: 6vw;
-
+        font-size: 6vmin;
     }
 
     .banner .bannerContent .column {
         align-items: center;
     }
 
-    .banner .bannerFooter .column {
-        flex: auto;
+    .banner .bannerFooter {
+        display: none;
     }
 
-
-    .banner .bannerContent .column:last-child {
-        display: none;
+    .banner .bannerFooter .column {
+        flex: auto;
     }
 
     .banner .bannerFooterNotification {
@@ -1023,8 +1092,8 @@ h3 {
     }
 
     .banner .bannerSearch {
-        position: relative;
         width: 100%;
+        max-width: 400px;
     }
 
     .banner .bannerSearch .navSearchWrapper {
@@ -1032,15 +1101,14 @@ h3 {
     }
 
     .banner .bannerSearch input#search_input_react {
-        height: 10vw;
-    }
-
-    .banner .bannerSearch .bannerSearchButton {
-        top: 10px;
-        right: 10px;
-        width: 32vw;
-        height: 10vw;
-        font-size: 1.25vw;
+        width: 100%;
+        height: 58px;
+        padding: 8px 20px 8px 20px;
+        border-radius: 29px;
+        box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.06);
+        background-color: #fff;
+        color: #000;
+        border: none;
     }
 
     .categories {
