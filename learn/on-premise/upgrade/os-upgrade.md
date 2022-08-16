@@ -48,15 +48,16 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
   
 - Here select all the StudioWorkspace Instances one by one and do the below operations.
 
-- First hit the stop button present there, it will stop the Instances from taking new user containers, wait till the state of Instance is changed to **STOPPED**
+- First hit the **stop** button present there, it will stop the Instances from taking new user containers, wait till the state of Instance is changed to **STOPPED**
 - Then you need to hit the passivate button, this will passivate all the stopped containers in the Instance selected, wait till there are no stopped Instances present in the Instance
 - After this is done in all StudioWorkspace Instances cross-check the running containers in the containers tab, all the containers should be in the passivated state.
 
-- After making sure all containers are passivated come back to capacity and select one by one Instances and hit the delete icon as shown below, this will delete the Instance from setup.
+- After making sure all containers are passivated come back to capacity and select one by one Instances by clicking the   ***":"***  icon and hit the delete icon as shown below, this will delete the Instance from setup.
   
   [![delete_instances](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)
 
 - After completed the above process in Developer Workspace, go to AppDeployments, and perform the same operation mentioned above in all AppDeployment Instances(Demo, Stage, Live)
+
 
 #### Command Line
 
@@ -91,9 +92,15 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 
   - **CW Portal**
 
-    - Log in to CW portal, after login in home page you can see stop button as shown in the image below, hit stop button to stop the WME setup
+    - Login into the CW portal, after login in home page you can see settings icon on the top right as marked below.
+    
+    [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop-settings.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop-settings.png)    
+    
+    - Click on Stop Installation button as shown in the image below, hit to stop the WME setup.
 
     [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)
+
+    - From here also,  you can start the CW process, can be perform Sync and Cleanup Operations.
 
 ## How to take a backup of the data
 

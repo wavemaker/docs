@@ -102,3 +102,10 @@ The following document will help an organization to take backup data at unplanne
 ```bash
 bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh --upgrade-instances
 ```
+
+- You can also do this from the Launchpad.
+
+- To Apply, go to the Launchpad and Navigate to the Developer Workspace or App Deployements.
+- On the Capacity, you can see the Workspace/AppDeploy Instance details. On the Icons Shown, you can find the sync option.
+
+  [![Sync_and_patch](/learn/assets/wme-setup/upgrade-wme-setup/Sync-and-Patch.png)](/learn/assets/wme-setup/upgrade-wme-setup/Sync-and-Patch.png)
