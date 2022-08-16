@@ -613,7 +613,8 @@
      "react-native/build-installers",
      "react-native/web-preview-debug",
      "react-native/expo-debug",
-     "react-native/styles"
+     "react-native/styles",
+     "react-native/theme"
 ],
 
 "Cordova":
