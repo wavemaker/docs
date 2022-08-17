@@ -642,6 +642,7 @@
         [
         "hybrid-mobile/test-run",
         "hybrid-mobile/debugging-mobile-apps",        
+        "hybrid-mobile/testing-hybrid-mobile-apps-using-live-sync",
         "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
         "hybrid-mobile/mobile-build-android",
         "hybrid-mobile/mobile-build-manual",
