@@ -1,7 +1,7 @@
 ---
-title: "APK: Debugging React Native Android App"
+title: "APK: Debugging React Native Android App Installed in Mobile"
 id: ""
-sidebar_label: "Debug APK Files"
+sidebar_label: "Debug APK"
 ---
 ---
 
@@ -30,7 +30,7 @@ npm i -g react-devtools@4.14.0.
 ```
 
 
-## Preparing for Debugging Android
+## Preparing for Debugging Android App
 
 1. Make sure that the Android phone is connected to your system with a USB.
 2. Execute **adb devices** and check whether your phone is in the command output. 

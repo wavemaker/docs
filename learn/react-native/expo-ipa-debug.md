@@ -1,14 +1,14 @@
 ---
-title: "IPA: Debugging React Native Apps Installed in Mobile"
+title: "IPA: Debugging React Native iOS App Installed in Mobile"
 id: ""
-sidebar_label: "Debug IPA Files"
+sidebar_label: "Debug IPA"
 ---
 ---
 
 You can install a WaveMaker-developed React Native app on your mobile device and debug the application. In this document, we use IPA files to debug an iOS application. 
 
 
-### Pre-requisites
+## Pre-requisites
 
 1. A Mac book with the latest Mac OS.
 2. iPhone with iOS 13 or later
@@ -22,7 +22,7 @@ You can install a WaveMaker-developed React Native app on your mobile device and
 npm install -g https://github.com/wavemaker/wm-reactnative-cli
 ```
 
-## Preparing for Debugging iOS
+## Preparing for Debugging iOS App
 
 
 1. Ensure the iPhone is connected to your system with a USB.
@@ -31,7 +31,7 @@ npm install -g https://github.com/wavemaker/wm-reactnative-cli
 4. Open ${build_destination}/ios folder.
 5. Open the file with workspace as an extension in Xcode.
 6. Connect your iPhone to the Mac.
-7. Select your iPhone or simulator and click on the Build button.
+7. Select your iPhone or simulator and click on the **Build** button.
 
 ![Xcode_build](/learn/assets/xcode_build.png)
 
