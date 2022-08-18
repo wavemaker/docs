@@ -5,9 +5,7 @@ sidebar_label: "Export as Zip"
 ---
 ---
 
-A ReactNative zip, in general, will be used to create a platform-specific installer. WaveMaker supports generating React Native installers for Android & iOS devices.
-
-When you develop an app in React Native Studio, you can export a zip from that project.
+A ReactNative zip is used to create a platform-specific installer. WaveMaker supports generating React Native installers for Android and iOS devices. When you develop an app in React Native Studio, you can export a zip from that project.
 
 ## Export ReactNative Zip using WaveMaker Studio
 
