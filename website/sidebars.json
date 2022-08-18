@@ -610,10 +610,14 @@
      "react-native/feature-support",
      "react-native/supported-widgets",
      "react-native/supported-variables",
-     "react-native/build-installers",
+     "react-native/styles",
+     "react-native/test-run",
      "react-native/web-preview-debug",
      "react-native/expo-debug",
-     "react-native/styles"
+     "react-native/export-react-native-zip",
+     "react-native/build-installers",
+     "react-native/expo-apk-debug",
+     "react-native/expo-ipa-debug"
 ],
 
 "Cordova":
