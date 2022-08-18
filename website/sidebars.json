@@ -616,7 +616,8 @@
      "react-native/expo-debug",
      "react-native/export-react-native-zip",
      "react-native/build-installers",
-     "react-native/expo-apk-ipa-debug"
+     "react-native/expo-apk-debug",
+     "react-native/expo-ipa-debug"
 ],
 
 "Cordova":
