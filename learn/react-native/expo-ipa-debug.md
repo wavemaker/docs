@@ -13,35 +13,53 @@ You can install a WaveMaker-developed React Native app on your mobile device and
 1. A Mac book with the latest Mac OS.
 2. iPhone with iOS 13 or later
 3. Chrome or Firefox browser
-4. Expo: `npm install -g expo-cli`
-5. React-native: `npm install -g react-native`
-6. React Dev Tools: `npm install -g react-devtools`
-7. Install `wm-reactnative-cli` using the below command
+
+### Installation
+
+1. Install **Expo**
+
+```shell
+npm install -g expo-cli
+```
+
+2. Install **React Native**
+
+```shell
+npm install -g react-native
+```
+
+3. Install **React Dev Tools**
+
+```shell
+npm install -g react-devtools
+```
+
+4. Install **`wm-reactnative-cli`**
 
 ```shell
 npm install -g https://github.com/wavemaker/wm-reactnative-cli
 ```
 
-## Preparing for Debugging iOS App
+## Preparing for Debugging an iOS App
 
 
 1. Ensure the iPhone is connected to your system with a USB.
 2. Export and download the React Native zip from WaveMaker Studio.
 3. Perform an iOS build using [wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli).
-4. Open ${build_destination}/ios folder.
-5. Open the file with workspace as an extension in Xcode.
+4. Open `${build_destination}/ios` folder.
+5. Open the file with workspace as an extension in **Xcode**.
 6. Connect your iPhone to the Mac.
 7. Select your iPhone or simulator and click on the **Build** button.
 
 ![Xcode_build](/learn/assets/xcode_build.png)
 
-## Procedure
+## Step-by-step Instructions 
 
 :::tip
 The following procedure is the same for Android and iOS apps.
 :::
 
-1. Shake the phone until the following screen pops out.
+1. Shake the phone until the following screen pops up.
  
  ![expo developer menu](/learn/assets/expo-developer-menu.png)
 
