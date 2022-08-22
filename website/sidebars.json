@@ -615,7 +615,7 @@
      "react-native/web-preview-debug",
      "react-native/expo-debug",
      "react-native/styles",
-     "react-native/theme"
+     "react-native/theme",
      "react-native/export-react-native-zip",
      "react-native/build-installers",
      "react-native/expo-apk-debug",
