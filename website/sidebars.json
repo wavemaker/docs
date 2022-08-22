@@ -564,7 +564,8 @@
       "label": "Logs Aggregation",
       "ids": [
         "on-premise/observability/logs-aggregation/overview",
-        "on-premise/observability/logs-aggregation/kibana"
+        "on-premise/observability/logs-aggregation/kibana",
+        "on-premise/observability/logs-aggregation/fluentd"
       ]
     },
     {
