@@ -614,6 +614,8 @@
      "react-native/test-run",
      "react-native/web-preview-debug",
      "react-native/expo-debug",
+     "react-native/styles",
+     "react-native/theme"
      "react-native/export-react-native-zip",
      "react-native/build-installers",
      "react-native/expo-apk-debug",
@@ -645,6 +647,7 @@
         [
         "hybrid-mobile/test-run",
         "hybrid-mobile/debugging-mobile-apps",        
+        "hybrid-mobile/testing-hybrid-mobile-apps-using-live-sync",
         "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
         "hybrid-mobile/mobile-build-android",
         "hybrid-mobile/mobile-build-manual",
