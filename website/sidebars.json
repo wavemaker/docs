@@ -770,7 +770,8 @@
             "how-tos/custom-security-using-google-oauth-prefab",
             "how-tos/multiple-security-provider-implementation",
             "how-tos/customizing-post-authentication-handlers",
-            "how-tos/configuring-content-security-policy"
+            "how-tos/configuring-content-security-policy",
+            "how-tos/configure-mtls-in-wmapp"
           ],
 
           "Databases":
@@ -786,7 +787,8 @@
             "how-tos/audit-history-using-crud-listeners",
             "how-tos/rowlevel-security-using-crud-event-listeners",
             "how-tos/validations-using-crudListeners",
-            "how-tos/custom-business-logic-using-crud-event-listeners"
+            "how-tos/custom-business-logic-using-crud-event-listeners",
+            "how-tos/mysql-connection-using-ssl"
           ],
 
           "Web services":
