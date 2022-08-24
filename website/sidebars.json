@@ -1038,6 +1038,10 @@
             "how-tos/create-prefab-using-angular-module",
             "how-tos/create-prefab-using-custom-element",
             "how-tos/integrating-azure-oauth-prefab"
+          ],
+          "Temporal Configure Vcs":
+          [
+            "how-tos/azure-repos-vcs"
           ]
         
   },
