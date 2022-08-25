@@ -187,7 +187,7 @@ public Object getProperty(String key) {
 }
 ```
 
-The name of the class should be added as context param to the `user-web.xml` file as given file:
+The name of the class should be added as context param to the `web.xml` file as given file:
 
 ```xml
     <context-param>
