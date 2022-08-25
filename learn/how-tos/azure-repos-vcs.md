@@ -3,11 +3,11 @@ title: "Configure Azure Repos In CodeRepository"
 id: "azure-repos-vcs"
 ---
 
-WaveMaker supports Azure Repos under the Code Repository page. Azure contains Git and Tfvc repositories but WaveMaker supports only Git Repositories all the WaveMaker projects created in Azure Repos will be Git repositories.
+WaveMaker Team offering lets Team admins to configure the version control system where project source code is stored. From WaveMaker 11 GA version Team admins can configure Azure Repos under the Code Repository page. Although Azure contains Git and Tfvc repositories, WaveMaker supports Git Repositories. All the WaveMaker projects created in Azure Repos will be Git repositories.
 
 ![azure form](/learn/assets/azure-repos-image1.png)
 
-following are the instructions to fill the Azure form
+Following are the instructions to fill the Azure form
 
 ## Base Url
 
@@ -17,10 +17,10 @@ https://dev.azure.com/{organizationName}
 
 ![azure organization settings](/learn/assets/azure-repos-image2.png)
 
-In the above image make sure that Use the new URL is enabled.
+Make sure to enable ``Use the new URL``.
 
 ## User Name
-It must be the account user name.
+Must be the account user name.
 
 ## Private AccessToken
 Access token for azure repos must contain Full access to the user.
