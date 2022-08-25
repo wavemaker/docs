@@ -191,6 +191,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to add master-detail records from Live Form using Wizard](/learn/how-tos/using-wizard-master-detail-live-form/)
 *   [How to progressively add fields to a record using Wizard](/learn/how-tos/using-wizard-progressive-data-entry-live-form/)
 *   [How to accumulate data over multiple steps in a Wizard and save at the last step](/learn/how-tos/using-wizard-cumulative-data-entry-live-form/)
+*   [How to select widget template and set Icon for wizard steps](/learn/how-tos/wizard-layout)
 
 ## Widget: Live Filter
 
