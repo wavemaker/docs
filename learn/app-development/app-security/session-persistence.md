@@ -65,8 +65,8 @@ Ensure the selected database should be in editable mode and not read-only.
 You can configure a MongoDB database for storing sessions. 
 
 1. From the Security window, choose **Session Persistence**
-2. Choose Type `MONGODB`.
-3. Provide all the required details, such as Database name, port, host, username, and password. 
+2. Choose the **Type** `MONGODB` from the dropdown.
+3. Provide all the required details, such as Database name, Port, Host, Username, and Password. 
 4. Click **Save**.
 
 The required driver and files get imported into the project, and the application can connect to MongoDB.  
