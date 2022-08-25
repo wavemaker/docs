@@ -304,3 +304,9 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to create Prefab Using D3 Library (DataMaps)](/learn/how-tos/create-prefab-using-d3-library-datamaps/)
 *   [How to create Prefab Using JQuery Plugin - showcases using Events and Methods](/learn/how-tos/create-prefab-using-jquery-plugin/)
 *   [How to create Prefab Using Angular, React Components](/learn/how-tos/create-prefab-using-custom-element/)
+
+# Team Portal : Configure Vcs
+---
+
+## Azure Repos : Vcs
+*   [How to configure Azure Repos as Vcs](/learn/how-tos/azure-repos-vcs/)
