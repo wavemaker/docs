@@ -26,6 +26,7 @@ Horizontal Scaling replicates the application with multiple nodes and servers. W
     1. **In-Memory**
     2. **REDIS**
     3. **JDBC**
+    4. **MONGODB**
 
 ### In-Memory
 
@@ -69,6 +70,6 @@ You can configure a MongoDB database for storing sessions.
 3. Provide all the required details, such as Database name, Port, Host, Username, and Password. 
 4. Click **Save**.
 
-The required driver and files get imported into the project, and the application can connect to MongoDB.  
+The required driver and the configuration files gets automatically imported into the project, and the application can connect to MongoDB.
 
 ![mongodb security configuration](/learn/assets/session-persistence/mongodb-security-window.png)
