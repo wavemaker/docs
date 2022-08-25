@@ -5,20 +5,17 @@ sidebar_label: "Choose Widget Template"
 ---
 ---
 
-This feature is used to change the template, or the layout of the widget. We have four different types of templates number, iconstepper, dottedstepper and classic. And in these we have horizontal and vertical alignment for number, iconstepper, dottedstepper templates.
+This feature is used to change the template, or the layout of the widget. There are four different types of templates number, icons-tepper, dotted-stepper and classic. In each of these both horizontal and vertical alignment is supported.
 
 ## Choosing Widget Template from Canvas
 
 1. Drag and drop a Wizard widget.
 
-2. When you select the **Wizard** widget on the canvas, you can see the layout icon on the toolbar. Click the **layout** icon.
+2. Select **Wizard** widget on the canvas, and then expand the layout icon on the toolbar. Click the **layout** icon.
 
 ![widget template icon on toolbar](/learn/assets/widget-template-icon.png)
 
-3. It opens a dropdown, which displays the list of available widget templates.
-
-
-4. For the number and dottedstepper wizard template, we get numbers and dots respectively in the place of wizard steps. 
+3. A dropdown displaying the list of available widget templates appears. 
 
 **Number Widget Template**
 
@@ -28,13 +25,13 @@ This feature is used to change the template, or the layout of the widget. We hav
 
 ![Dotted Stepper template for wizard](/learn/assets/dotted_stepper_wizard.png)
 
-In the number template the wizard steps are idenitifed using the numbers where the first step would be 1 , second would be 2 and so on. Where as in the dottedstepper we would get a dot in the place of wizard step. 
+Wizard steps in Number template are idenitifed by numbers starting with 1. Where as the dotted-stepper places a dot in each of wizard step. 
 
-Upon visiting a certain step the step style would change from number or dot to done icon.
+Upon visiting a certain step the step style changes from number or dot to done icon.
 
 ![Done State for wizard](/learn/assets/done_state_wizard.png)
 
-There is an iconstepper wizard which has two proeprties which we can choose from. One is the Title icon class property and the other is the Done icon class property. 
+There is an icon-stepper wizard with two proeprties to choose from. One is the Title icon class property and the other is the Done icon class property. 
 
  **Title Icon Class Property**
 
