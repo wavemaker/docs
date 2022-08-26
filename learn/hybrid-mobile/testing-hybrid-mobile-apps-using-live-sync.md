@@ -1,15 +1,16 @@
 ---
 title: "Testing Hybrid Mobile Apps using Live Sync"
 id: ""
+sidebar_label: "Test via Live Sync"
 ---
 ---
 
-Live Sync is a feature that brings App UI changes in Studio to the mobile app without needing a new build. This reduces the number of mobile builds required and tremendously saving developers' time.
+Live Sync is a feature that brings App UI changes in Studio to the mobile app without needing a new build. This reduces the number of mobile builds required, tremendously saving developers time.
 
 
 ## Configuring Live Sync
 
-1. Open **Export as Cordova zip** dialog.
+1. Open the **Export as Cordova zip** dialog.
 2. Select server path as **dev** and profile as **development**.
 
 ![](/learn/assets/live-sync/cordova-export.png)
@@ -18,19 +19,19 @@ Live Sync is a feature that brings App UI changes in Studio to the mobile app wi
 4. Download the Cordova zip and run a mobile build using **wm-cordova-cli** or **AppChef**.
 5. Download and install the app on mobile and open the app.
 
-The following popup will be shown. This popup is shown after every app restart.
+The following popup displays. This popup displays after every app restart.
 
 ![](/learn/assets/live-sync/live-sync-screen-confirmation.png)
 
 ### Enabling Live Sync
 
-To switch on Live Sync, press the **Yes** button. You can see the Live Sync button at the bottom right corner.
+You can see the **Live Sync** button at the bottom right corner. To switch on Live Sync, press the **Yes** button. 
 
 ![](/learn/assets/live-sync/live-sync-screen-refresh.png)
 
 ### Disabling Live Sync
 
-If you do not need Live Sync, press **No**. 
+If you do not need the Live Sync option, simply press **No**. 
 
 :::note
 If you wish to enable Live Sync later, you can either restart the app or press and hold anywhere for 5 seconds, and the screen should show the Live Sync Popup again.
@@ -44,8 +45,8 @@ If you wish to enable Live Sync later, you can either restart the app or press a
 
 ![](/learn/assets/live-sync/live-sync-screen-refresh.png)
 
-- Except for offline functionality, rest of the functionalities should work as they do.
-- Whenever plugins are added in WaveMaker Studio, a new build is required to add the plugin into the app to function. When Live Sync observes plugin addition, you will notice the following warnings and it is recommended to have a new build when such warning is shown. 
+- Except for offline functionality, the rest of the functionalities should work as they do.
+- Whenever plugins are added in WaveMaker Studio, a new build is required to add the plugin into the app to function. When Live Sync observes plugin addition, you will notice the following warnings, and it is recommended to have a new build when such warning is shown. 
 
 :::note
 When a device variable or widget is added, plugins required for that variable or widget are added automatically.
@@ -57,3 +58,4 @@ When a device variable or widget is added, plugins required for that variable or
 ## Limitations
 
 - Offline functionality is not supported.
+

@@ -17,7 +17,11 @@ You can style React Native apps using a theme. Common (theme) styles will greatl
 ## Required Software
 
 - Node (14.x)
-- npm install -g @wavemaker/rn-codegen 
+- React Native Codegen:
+
+```shell
+npm install -g @wavemaker/rn-codegen
+```
 
 ## 1. Creating a Theme
 
@@ -37,35 +41,35 @@ wm-rn-codegen theme generate ${theme-name}
 
 Following is the folder structure of a theme project.
 
-- **$ThemeProject**
-    - **src**
-        - **android** - theme customizations specific to Android
-        - **ios**  - theme customizations specific to iOS
-        - **common** - theme customizations that are common to both Android and iOS
-    - **theme.png** - a picture that represents this theme
-    - **wavemaker** - This folder contains all the default styles provided by WaveMaker React Native Framework. The WaveMaker platform maintains the contents of this folder. Therefore, avoid any modifications in this folder.
+- **`$ThemeProject`**
+    - **`src`**
+        - **`android`** - theme customizations specific to Android
+        - **`ios`**  - theme customizations specific to iOS
+        - **`common`** - theme customizations that are common to both Android and iOS
+    - **`theme.png`** - a picture that represents this theme
+    - **`wavemaker`** - This folder contains all the default styles provided by WaveMaker React Native Framework. The WaveMaker platform maintains the contents of this folder. Therefore, avoid any modifications in this folder.
 
-    - **.wmproject.properties** - information about the theme
+    - **`.wmproject.properties`** - information about the theme
 
 ## 3. Customize Theme
 
 To understand customization, let's take the button as an example.
 
-- Go to $ThemeProject/wavemaker
-- For each widget, there is a `less` file inside the `wavemaker` folder. Copy `button.less` from **wavemaker/components/basic/button.less** to **src/common/components/basic/button.less**  
+- Go to `$ThemeProject/wavemaker`
+- For each widget, there is a `less` file inside the `wavemaker` folder. Copy `button.less` from **`wavemaker/components/basic/button.less`** to **`src/common/components/basic/button.less`** 
 
 :::note
-Path structure should be the same in both **wavemaker** and **src/common** folders. If you need customizations for a specific platform, copy the file into src/platform_name
+Path structure should be the same in both **`wavemaker`** and **src/common** folders. If you need customizations for a specific platform, copy the file into src/platform_name
 :::
 
 - Open the copied file and change or add styles
 
 ### Customizing theme colors
 
-- Open **wavemaker/variables.less**
+- Open **`wavemaker/variables.less`**
 - Select the color that requires change.
-- Open **src/common/variables.less**. For a platform-specific change, open corresponding **variables.less** of that platform folder.
-- If **@platformColor** has to be changed, add a less variable with the name **@_platformColor** and assign the desired value. The new variable name must have an underscore between @ and variable name. For example, @_primaryColor will override the value of @primaryColor.
+- Open **`src/common/variables.less`**. For a platform-specific change, open corresponding **`variables.less`** of that platform folder.
+- If **`@platformColor`** has to be changed, add a less variable with the name **`@_platformColor`** and assign the desired value. The new variable name must have an underscore between @ and variable name. For example, `@_primaryColor` will override the value of @primaryColor.
 
 ![](/learn/assets/rn_theme_variables.png)
 
@@ -91,12 +95,13 @@ wm-rn-codegen theme compile
 wm-rn-codegen theme update
 ```
 
-- Theme project: contents of the **wavemaker** folder migrates.  
+- Theme project: contents of the **wavemaker** folder migrates. 
 
 :::note
-When **@wavemaker/rn-codegen** is updated, run theme update on the existing theme projects.
+When **`@wavemaker/rn-codegen`** is updated, run theme update on the existing theme projects.
 :::
 
 ## 6. Import Theme into a Project
 
 - You can import the zip generated in the compiled step into a React Native project. For more information, see [import and apply a theme](/learn/app-development/ui-design/themes#import-theme).
+
