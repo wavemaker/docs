@@ -95,7 +95,7 @@ wm-rn-codegen theme compile
 wm-rn-codegen theme update
 ```
 
-- Theme project: contents of the **wavemaker** folder migrates. 
+- Theme project: contents of the **`wavemaker`** folder migrates. 
 
 :::note
 When **`@wavemaker/rn-codegen`** is updated, run theme update on the existing theme projects.
