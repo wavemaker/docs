@@ -1,20 +1,12 @@
 ---
-title: Supported Widgets
+title: React Native Supported Widgets
 id: ""
 ---
 ---
 
-Currently, the following Widgets are supported to develop a React Native app. 
+In WaveMaker, the following [Widgets](/learn/app-development/widgets/widget-library) are supported to develop a React Native app. 
 
-
-|Shows as  | Support Status|
-|---|---|
-|![Supported React Native Features](/learn/assets/supported.png)| Supported
-|![Unsupported React Native Features](/learn/assets/unsupported.png)| Not Supported|
-
-## Supported Widgets
-
-### Data Widgets 
+## Data Widgets 
 
 |Support|Data Widgets|Reference|
 |---|---|---|
@@ -24,7 +16,7 @@ Currently, the following Widgets are supported to develop a React Native app.
 | ![](/learn/assets/unsupported.png) |Live Form | |
 | ![](/learn/assets/unsupported.png) |Live Filter |  |
 
-### Layout Widgets
+## Layout Widgets
 
 |Support|Layout Widgets|Reference|
 |---|---|---|
@@ -39,7 +31,7 @@ Currently, the following Widgets are supported to develop a React Native app.
 | ![](/learn/assets/unsupported.png) |Segmented Content | |
 | ![](/learn/assets/unsupported.png) |Media list | |
 
-### Form Widgets
+## Form Widgets
 
 |Support|Form Widgets|Reference|
 |---|---|---|
@@ -66,7 +58,7 @@ Currently, the following Widgets are supported to develop a React Native app.
 | ![](/learn/assets/supported.png) |Rating  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/rating/) | 
 | ![](/learn/assets/supported.png) |Select Locale  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/select/) | 
 
-### Basic Widgets
+## Basic Widgets
 
 |Support| Basic Widgets|Reference|
 |---|---|---|
@@ -84,7 +76,7 @@ Currently, the following Widgets are supported to develop a React Native app.
 | ![](/learn/assets/supported.png) |Progress Bar  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/progress-bar/) | 
 | ![](/learn/assets/supported.png) |Progress Circle  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/progress-circle/) | 
 
-### Chart Widgets
+## Chart Widgets
 
 |Support|Chart Widgets|Reference|
 |---|---|---|
@@ -97,7 +89,7 @@ Currently, the following Widgets are supported to develop a React Native app.
 | ![](/learn/assets/supported.png) |Donut | |
 | ![](/learn/assets/supported.png) |Bubble | |
 
-### Navigation Widgets
+## Navigation Widgets
 
 |Support| Navigation Widgets|Reference|
 |---|---|---|
@@ -105,7 +97,7 @@ Currently, the following Widgets are supported to develop a React Native app.
 | ![](/learn/assets/supported.png) |Dropdown Menu  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/navigation/menu/) | 
 | ![](/learn/assets/supported.png) |Popover   | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/navigation/popover/) | 
 
-### Advanced Widgets
+## Advanced Widgets
 
 |Support| Advanced Widgets|Reference|
 |---|---|---|
@@ -113,7 +105,7 @@ Currently, the following Widgets are supported to develop a React Native app.
 | ![](/learn/assets/unsupported.png) |Marquee | |
 | ![](/learn/assets/supported.png) |Carousel  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/advanced/carousel/) | 
 
-### Dialog Widgets
+## Dialog Widgets
 
 |Support | Dialog Widgets|Reference|
 |---|---|---|
@@ -121,14 +113,14 @@ Currently, the following Widgets are supported to develop a React Native app.
 | ![](/learn/assets/supported.png) |Alert Dialog  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/dialogs/alertdialog/) | 
 | ![](/learn/assets/supported.png) |Confirm Dialog  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/dialogs/confirmdialog/) | 
 
-### Device Widgets
+## Device Widgets
 
 |Support| Device Widgetss|Reference|
 |---|---|---|
 | ![](/learn/assets/supported.png) |Camera  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/device/camera/) | 
 | ![](/learn/assets/supported.png) |Barcode Scanner  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/device/barcodescanner/) | 
 
-### Page Layout Widgets
+## Page Layout Widgets
 
 |Support| Page Layout Widgets|Reference|
 |---|---|---|
