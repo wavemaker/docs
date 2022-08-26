@@ -61,7 +61,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to customize security to use Google OAuth Prefab](/learn/how-tos/custom-security-using-google-oauth-prefab/)
 *   [How to customize security to use Google OAuth Prefab and Database as Security Provider](/learn/how-tos/multiple-security-provider-implementation/)
 *   [Customizing Post Authentication Handlers](/learn/how-tos/customizing-post-authentication-handlers)
-
+*   [How to configure MTLS for REST API's](/learn/how-tos/configure-mtls-in-wmapp/)
 
 ## Database Services
 ---
@@ -70,6 +70,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to connect to Azure SQL Server](/learn/how-tos/connect-azure-sql-server/)
 *   [How to download JDBC driver jar for SQL server](/learn/app-development/services/database-services/download-jdbc-driver-jar/)
 *   [How to fetch more than the default number(100) of records from Database ?](/learn/how-tos/fetch-default-number100-records-database/)
+*   [How to connect to MySQL database using SSL](/learn/how-tos/mysql-connection-using-ssl/)
 
 ## Web Services
 ---
