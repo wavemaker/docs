@@ -1,17 +1,23 @@
 ---
-title: "Configure MTLS in WaveMaker application"
+title: "Configure MTLS in WaveMaker Application"
 id: "configure-mtls-in-wmapp"
+sidebar_label: "Configuring MTLS"
 ---
 ---
 
-WaveMaker supports importing REST API as a service which can be used to bind it to a widget in the UI. When the REST API is hit in the design time or runtime, a SSL connection is established between the client and server where the communication takes place in which the sensitive information is encrypted.
-The SSL connection can also be configured to enable server and client authentication which is mutual TLS. This can now be achieved in WaveMaker.
+WaveMaker supports importing [REST API](/learn/app-development/services/web-services/rest-services) as a Service which you can bind it to a widget in the UI (User Interface). When the REST API is hit in the design time or runtime, an SSL (Secure Sockets Layer) connection is established between the client and server. When this communication takes place, the sensitive information is encrypted.
 
-MTLS configuration is done at the application level, so it applies to all the rest services imported, new rest services that are yet to be imported and the API’s that are imported using swagger. MTLS configuration applies only to the REST API’s with proxy enabled as the backend receives the request only when proxy is enabled.
+You can also configure the SSL connection to enable server and client authentication, which is Mutual TLS. You can achieve this in WaveMaker applications now.
 
-### Server Authentication
+MTLS (Mutual Transport Layer Security) configuration can be done at the application level. Therefore, it applies to all the Rest Services that are imported and yet to be imported. Also, it applies to the APIs that you have imported using Swagger. 
 
-The properties to configure server authentication as shown below can be found in the profile properties.
+:::note
+MTLS configuration applies only to the REST APIs with proxy enabled, as the backend receives the request only when the proxy is enabled.
+:::
+
+## Server Authentication
+
+You can find the properties to configure server authentication as shown below in the Profile properties.
 
 ```
 security.general.truststore.config=SYSTEM_ONLY
@@ -20,26 +26,29 @@ security.general.truststore.fileType=
 security.general.truststore.password=
 ```
 
-#### Truststore Configuration
+## Truststore Configuration
 
-- **SYSTEM_ONLY** 
+### SYSTEM_ONLY
 
-    Default java trust store is used. Does not require any additional truststore file.
-- **APPLICATION_ONLY**
+Default java trust store is used. It does not require any additional truststore file.
 
-    The custom truststore is used. It requires a trust store file, file type and password of the truststore. If the truststore is in the classpath prefix **classpath:** or if it is in a system file directory prefix **file:** 
-- **APPLICATION_AND_SYSTEM**
+### APPLICATION_ONLY
 
-    Both custom and default java truststore are used here.
-- **NO_CHECK**
+The custom truststore is used. It requires a trust store file, file type and password of the truststore. If the truststore is in the classpath prefix **classpath:** or if it is in a system file directory prefix **file:** 
 
-    There is no server authentication enabled here.
+### APPLICATION_AND_SYSTEM
+
+Both custom and default java truststore are used here.
+
+### NO_CHECK
+
+There is no server authentication enabled here.
 
 If truststore configuration is set as NO_CHECK or SYSTEM_ONLY truststore file is not required. If truststore configuration is set as APPLICATION_ONLY or APPLICATION_AND_SYSTEM then it requires the truststore file, file type and truststore password.
 
-### Client Authentication
+## Client Authentication
 
-The properties to configure client authentication as shown below can be found in the profile properties.
+The properties to configure client authentication can be found in the **Profile** properties.
 
 ```
 security.general.mtls.enabled=false
@@ -48,14 +57,15 @@ security.general.mtls.keystore.fileType=
 security.general.mtls.keystore.password=
 ```
 
-If mtls enabled is false then the client authentication is disabled. If it is true then it requires the keystore file, file type and keystore password.
+If MTLS enabled is false, the client authentication is disabled. If it is true then it requires the keystore file, file type, and the keystore password.
 
-The truststore or keystore can be uploaded into the src/main/resources directory using the import resource option as shown below.
+The Truststore or Keystore can be uploaded into the `src/main/resources` directory using the import resource option as shown below.
 
 ![Import-Resource](/learn/assets/import-resource.png)
 
 :::note
-If the keystore or truststore is in the classpath prefix **classpath:** or if it is in a system file directory prefix **file:** to the file property as shown below 
+If the Keystore or Truststore is in the classpath prefix **classpath:** or if it is in a system file directory prefix **file:** to the file property as shown below:
+
 ```
 security.general.truststore.file=classpath:truststore.jks
 security.general.truststore.fileType=JKS
@@ -71,6 +81,7 @@ Hostname verification matches the hostname that client is trying to connect and 
 The SSL connection is established only if the hostname matches. By default hostname verification is true and can be disabled in the profile properties.
 
 Below is the property to configure hostname verification.
+
 ```
 security.general.client.ssl.hostNameVerification.enabled=true
 ```

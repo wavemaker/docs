@@ -1,10 +1,14 @@
 ---
-title: "WaveMaker support for Mutual TLS in REST API's"
+title: "Mutual TLS Support in REST APIs"
 author: Praveen Chandra
 ---
 ---
 
-TLS (Transport Layer Security) is an encryption protocol that encrypts all the information communicated between the client and the server. Mutual TLS is an additional configuration in which the server and client authenticate each other, and only then is the connection established. This blog explains in detail what MTLS is and why it is used.
+TLS (Transport Layer Security) is an encryption protocol that encrypts all the information communicated between the client and the server. Mutual TLS is an additional configuration in which the server and client authenticate each other, and only then is the connection established. This blog explains in detail what MTLS (Mutual Transport Layer Security) is and why it is used.
+
+:::note
+WaveMaker supports MTLS from WaveMaker 11 GA onwards. For more information, see how to [Configure MTLS in WaveMaker application](/learn/how-tos/configure-mtls-in-wmapp).
+:::
 
 <!-- truncate -->
 
@@ -40,7 +44,7 @@ The client presents its certificate to the server, and the server authenticates 
 
 ## Why is Mutual TLS used?
 
-Typically, TLS protocol only proves the server's identity to the client, but the server cannot authenticate the client. MTLS (Mutual Transport Layer Security) provides an additional layer of security in which the server should authenticate the client and prevent unauthorized access. 
+Typically, TLS protocol only proves the server's identity to the client, but the server cannot authenticate the client. MTLS provides an additional layer of security in which the server should authenticate the client and prevent unauthorized access. 
 
 ## Configure Mutual TLS in a Webserver
 
