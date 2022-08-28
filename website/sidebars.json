@@ -1330,8 +1330,16 @@
           ]
         }
     ],
-    "Current v11.x - beta": 
+    "Current v11.x - GA": 
     [
+        {
+          "type": "subcategory",
+          "label": "Versions: 11.1.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v11-1-0"              
+            ]
+        },
         {
           "type": "subcategory",
           "label": "Versions: 11.0.x",
