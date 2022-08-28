@@ -1166,6 +1166,8 @@
 
     "Container":
     [
+        "app-development/widgets/container/layout",
+        "app-development/widgets/container/flex-layout",
         "app-development/widgets/container/grid-layout",   
         "app-development/widgets/container/accordion",
         "app-development/widgets/container/container", 
