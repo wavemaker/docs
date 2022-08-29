@@ -25,30 +25,29 @@ security.general.truststore.file=
 security.general.truststore.fileType=
 security.general.truststore.password=
 ```
-
 ## Truststore Configuration
 
 ### SYSTEM_ONLY
 
-Default java trust store is used. It does not require any additional truststore file.
+Default java trust store is used. It does not require any additional Truststore file.
 
 ### APPLICATION_ONLY
 
-The custom truststore is used. It requires a trust store file, file type and password of the truststore. If the truststore is in the classpath prefix **classpath:** or if it is in a system file directory prefix **file:** 
+The custom Truststore is used. It requires a trust store file, file type, and password of the Truststore. If the Truststore is in the classpath prefix **classpath:** or if it is in a system file directory prefix **file:** 
 
 ### APPLICATION_AND_SYSTEM
 
-Both custom and default java truststore are used here.
+Both custom and default Java Truststore are used here.
 
 ### NO_CHECK
 
 There is no server authentication enabled here.
 
-If truststore configuration is set as NO_CHECK or SYSTEM_ONLY truststore file is not required. If truststore configuration is set as APPLICATION_ONLY or APPLICATION_AND_SYSTEM then it requires the truststore file, file type and truststore password.
+If Truststore configuration is set as `NO_CHECK` or `SYSTEM_ONLY`, the truststore file is not required. If the truststore configuration is set as `APPLICATION_ONLY` or `APPLICATION_AND_SYSTEM`, then it requires the truststore file, the file type, and truststore password.
 
 ## Client Authentication
 
-The properties to configure client authentication can be found in the **Profile** properties.
+The properties to configure client authentication can be found in the **Profile** properties, as shown below.
 
 ```
 security.general.mtls.enabled=false
@@ -57,9 +56,9 @@ security.general.mtls.keystore.fileType=
 security.general.mtls.keystore.password=
 ```
 
-If MTLS enabled is false, the client authentication is disabled. If it is true then it requires the keystore file, file type, and the keystore password.
+If MTLS enabled is false, the client authentication is disabled. If it is true, it requires the Keystore file, file type, and Keystore password.
 
-The Truststore or Keystore can be uploaded into the `src/main/resources` directory using the import resource option as shown below.
+The Truststore or Keystore can be uploaded into the `src/main/resources` directory using the import resource option, as shown below.
 
 ![Import-Resource](/learn/assets/import-resource.png)
 
@@ -72,13 +71,13 @@ security.general.truststore.fileType=JKS
 security.general.mtls.keystore.file=classpath:keystore.p12
 security.general.mtls.keystore.fileType=PKCS12
 ```
-In both keystore and truststore file types can be JKS, PKCS12 etc or any other supported file types.
+Both Keystore and Truststore file types can be JKS, PKCS12, or any other supported file types.
 :::
 
 ## Hostname Verification
 
-Hostname verification matches the hostname that client is trying to connect and the hostname that is present in the certificate provided by the server.
-The SSL connection is established only if the hostname matches. By default hostname verification is true and can be disabled in the profile properties.
+Hostname verification matches the hostname that the client is trying to connect to and the hostname that is present in the certificate provided by the server.
+The SSL connection is established only if the hostname matches. By default, hostname verification is true and can be disabled in the profile properties.
 
 Below is the property to configure hostname verification.
 
