@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.0.3 Beta](/learn/wavemaker-release-notes/v11-0-3) <p style="color:red;">*latest*</p>  |Issues related to Content Security Policy, Chips widget and Teams Portal configuration.| 25 July 2022 |
+|[WaveMaker 11 GA](/learn/wavemaker-release-notes/v11-1-0) <p style="color:red;">*latest*</p>  |Feature-packed with Angular 12 update, React Native improvements, Azure Repos, MTLS for REST APIs, and more.| 29 August 2022 |
+|[WaveMaker 11.0.3 Beta](/learn/wavemaker-release-notes/v11-0-3) |Issues related to Content Security Policy, Chips widget and Teams Portal configuration.| 25 July 2022 |
 |[WaveMaker 11.0.2 Beta](/learn/wavemaker-release-notes/v11-0-2) |Issues related to importing Web Services with OAuth 2.0 and previewing applications with Prefabs and more such bug fixes are addressed. | 11 July 2022 |
 |[WaveMaker 11 Beta (11.0.1)](/learn/wavemaker-release-notes/v11-0-1)|Includes new features like React Native, Multi-version Studio, API composer toolkit, API Mock Server extension, pagination for imported APIs, Java 11 and SAML library updates. [Read more.](/learn/app-development/wavemaker-overview/wavemaker-11-beta) | 06 June 2022 |
 

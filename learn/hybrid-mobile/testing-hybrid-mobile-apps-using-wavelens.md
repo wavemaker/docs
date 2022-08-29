@@ -4,6 +4,11 @@ id: ""
 ---
 ---
 
+
+:::warning
+WaveLens is not supported from WaveMaker 11. Use [Live Sync](/learn/hybrid-mobile/testing-hybrid-mobile-apps-using-live-sync) instead. Live Sync supports third party plugins as well.
+:::
+
 Mobile app developers can preview their apps using Preview button. However, web preview lacks native capabilities (like camera, calendar etc.,). To see the complete app along with their native capabilities, developers have to build the installer (apk or ipa) for respective OS. This build step consumes 10 mins of developer time. To improve your productivity, WaveMaker introduces a mobile app called ‘**WaveLens**’. 
 
 :::tip

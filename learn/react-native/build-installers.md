@@ -34,7 +34,7 @@ To Build with AppChef, follow the three-step process as described below.
 
 ### Upload React Native Zip
 
-Click on create React Native build option, drag and drop or browse your files to upload cordova zip.
+Click on create React Native build option, drag and drop or browse your files to upload Cordova zip.
 
 ![mobile-build-appchef-upload-native-zip](/learn/assets/mobile-build-upload-react-native-zip.png)
 
@@ -44,7 +44,7 @@ Click on create React Native build option, drag and drop or browse your files to
 
 2. Click **Next** to configure the Build options.
 
-![mobile-build-appchef-appInfo](/learn/assets/mobile-build-appchef-appinfo-rn.png)
+![mobile-build-appchef-app-info-zip](/learn/assets/mobile-build-appchef-appinfo-rn.png)
 
 ### Configure Build
 

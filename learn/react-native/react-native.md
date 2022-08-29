@@ -15,13 +15,15 @@ To develop fully Native apps, you do not need to learn additional programming sk
 
 React Native is a mobile app framework from Facebook. It is based on ReactJS principles (Virtual DOM). You can define app UI using the React Native markup and extensions in JavaScript. React Native will render UI using native UI controls similar to native apps based on the UI definition in runtime.
 
-### WaveMaker Hybrid Mobile 
-
-When developing Hybrid mobile apps in WaveMaker, Cordova apps display HTML-based UI using a browser component. So, you can use HTML and CSS along with JavaScript in Cordova apps. 
+![React Native Architecture](/learn/assets/react-native-architecture.png)
 
 ### WaveMaker React Native
 
 React Native apps run JavaScript in JavaScript runtime, including JSC and Hermes. React Native bridge amends native UI based on the response Virtual DOM from JavaScript—consequently, not allowing you to use **CSS and HTML in React Native apps**. You must define JSX Markup, styles, and logic in JavaScript.
+
+### WaveMaker Hybrid Mobile 
+
+When developing Hybrid mobile apps in WaveMaker, Cordova apps display HTML-based UI using a browser component. So, you can use HTML and CSS along with JavaScript in Cordova apps. 
 
 ## Things to be noted
 
@@ -43,11 +45,11 @@ All UI and [Variable event callbacks](/learn/app-development/variables/accessing
 
 In WaveMaker, styles are typically defined in CSS but React Native does not support CSS. Therefore, you define React Native styles in JavaScript.
 
-We included partial support for CSS usage so that WaveMaker developers can define styles in CSS. Do not add CSS classes copied from the web preview HTML DOM tree. For more information, see [found here](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/anchor/).
+We included partial support for CSS usage so that WaveMaker developers can define styles in CSS. Do not add CSS classes copied from the web preview HTML DOM tree. For more information, see [React Native Style API Documentation](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/anchor/).
 
 ### Theme
 
-Themes are supported. Click here to learn about how to generate themes.
+React Native supports Themes. For more information,learn about how to [generate themes](/learn/react-native/theme).
 
 ### Prefabs
 
@@ -59,9 +61,9 @@ A Prefab can be used in a web app, a Cordova-based mobile app, or a React Native
 
 - After the above line, you can place styles for React Native environment.
 - Adding a JS file is not supported.
-- Widgets that are not supported by WaveMaker React Native runtime are discarded.
+- [Widgets that are not supported](/learn/react-native/supported-widgets) by WaveMaker React Native runtime are discarded.
 
-## Additional Resources
+## See Also
 
 [React JS](https://reactjs.org/)  
 [React Native](https://reactnative.dev/)    

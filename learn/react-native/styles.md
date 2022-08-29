@@ -5,7 +5,7 @@ sidebar_label: "Styles"
 ---
 ---
 
-In React Native app, styles are expressed as a JavaScript object. Refer [https://reactnative.dev/docs/style](https://reactnative.dev/docs/style). These styles are similar to CSS styles but with different names. When compared to CSS properties, reactnative style properties are very limited. Check the list of [View Style](../features/widgets/view.style.html), [Text Style](../features/widgets/text.style.html) and [Image Style](../features/widgets/image.style.html).
+In React Native app, styles are expressed as a JavaScript object. Refer [https://reactnative.dev/docs/style](https://reactnative.dev/docs/style). These styles are similar to CSS styles but with different names. When compared to CSS properties, reactnative style properties are very limited. Check the list of [View Style](http://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/view/), [Text Style](http://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/text/) and [Image Style](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/image/).
 
 ## Styling
 

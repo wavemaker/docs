@@ -610,10 +610,16 @@
      "react-native/feature-support",
      "react-native/supported-widgets",
      "react-native/supported-variables",
-     "react-native/build-installers",
+     "react-native/styles",
+     "react-native/test-run",
      "react-native/web-preview-debug",
      "react-native/expo-debug",
-     "react-native/styles"
+     "react-native/styles",
+     "react-native/theme",
+     "react-native/export-react-native-zip",
+     "react-native/build-installers",
+     "react-native/expo-apk-debug",
+     "react-native/expo-ipa-debug"
 ],
 
 "Cordova":
@@ -641,6 +647,7 @@
         [
         "hybrid-mobile/test-run",
         "hybrid-mobile/debugging-mobile-apps",        
+        "hybrid-mobile/testing-hybrid-mobile-apps-using-live-sync",
         "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
         "hybrid-mobile/mobile-build-android",
         "hybrid-mobile/mobile-build-manual",
@@ -742,6 +749,7 @@
             "how-tos/adjust-leftnav-width",
             "how-tos/customizing-theme",
             "how-tos/widget-template-layout",
+            "how-tos/wizard-layout",
             "how-tos/custom-widget-template",
             "how-tos/using-custom-formatter"
           ],
@@ -770,7 +778,8 @@
             "how-tos/custom-security-using-google-oauth-prefab",
             "how-tos/multiple-security-provider-implementation",
             "how-tos/customizing-post-authentication-handlers",
-            "how-tos/configuring-content-security-policy"
+            "how-tos/configuring-content-security-policy",
+            "how-tos/configure-mtls-in-wmapp"
           ],
 
           "Databases":
@@ -786,7 +795,8 @@
             "how-tos/audit-history-using-crud-listeners",
             "how-tos/rowlevel-security-using-crud-event-listeners",
             "how-tos/validations-using-crudListeners",
-            "how-tos/custom-business-logic-using-crud-event-listeners"
+            "how-tos/custom-business-logic-using-crud-event-listeners",
+            "how-tos/mysql-connection-using-ssl"
           ],
 
           "Web services":
@@ -1038,6 +1048,10 @@
             "how-tos/create-prefab-using-angular-module",
             "how-tos/create-prefab-using-custom-element",
             "how-tos/integrating-azure-oauth-prefab"
+          ],
+          "Team Poral Configure Vcs":
+          [
+            "how-tos/azure-repos-vcs"
           ]
         
   },
@@ -1152,6 +1166,8 @@
 
     "Container":
     [
+        "app-development/widgets/container/layout",
+        "app-development/widgets/container/flex-layout",
         "app-development/widgets/container/grid-layout",   
         "app-development/widgets/container/accordion",
         "app-development/widgets/container/container", 
@@ -1316,8 +1332,16 @@
           ]
         }
     ],
-    "Current v11.x - beta": 
+    "Current v11.x - GA": 
     [
+        {
+          "type": "subcategory",
+          "label": "Versions: 11.1.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v11-1-0"              
+            ]
+        },
         {
           "type": "subcategory",
           "label": "Versions: 11.0.x",
