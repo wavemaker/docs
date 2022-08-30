@@ -1,9 +1,13 @@
 ---
 title: "WaveMaker 11 Beta"
 id: ""
-sidebar_label: "WaveMaker 11 Beta"
+sidebar_label: "WaveMaker 11"
 ---
 ---
+
+:::note
+This document contains information about WaveMaker 11 Beta. We provided fixes and improvements to the features since we released 11 Beta—now outdated. Follow our [release notes page](/learn/wavemaker-release-notes) for up-to-date information. Learn more about [WaveMaker 11.1](/learn/wavemaker-release-notes/v11-1-0) (latest).
+:::
 
 We are back with a new release, and we can't wait to share all the great features and updates waiting for you in WaveMaker 11 beta.
 
