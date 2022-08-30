@@ -104,3 +104,6 @@ Once you have your app integrated with a database, schema information will be pe
 |**Update Database**  | Update Database will update the db with the changes from your workspace and incorporate changes made by any other collaborator (provided they have exported the changes). <br> This option is available after you make changes to the database schema from the design tab of the database designer. |
 |**Revert Database**  | Revert Database will revert the db and delete the changes from your workspace. This option is available after you make changes to the database schema from the design tab of the database designer. |
 
+## Increasing Database Transaction Timeout
+
+We have a property inside development.properties file called db.databasename.transactionTimeout. For increasing the timeout for database we can set the value for this property accordingly
