@@ -5,7 +5,7 @@ sidebar_label: "Micro Frontend App"
 ---
 ---
 
-[WaveMaker](https://www.wavemakeronline.com/) is a low-code platform enabling users to develop high-quality apps swiftly. Micro Frontends is a design practice that enables the users to scale their development and produce composable independent modules that can serve in building a new app or progressively integrating features into an existing app. 
+[WaveMaker](https://www.wavemakeronline.com/) is a low-code platform enabling users to develop high-quality apps swiftly. Micro Frontends is a design practice that enables users to scale their development and produce composable independent modules that can serve in building a new app or progressively integrating features into an existing app. 
 
 To support our customers' phased modernization methods, we wanted to build support for this cutting-edge design pattern in the microservices world.
  
@@ -21,7 +21,7 @@ Read our developer's blog about how [Micro Frontend modules work and how it fits
 
 WaveMaker has developed a node-based CLI to generate **Single-spa** compatible artifacts for a WaveMaker app.
 
-The CLI requires the exported project location and deployed URL as its input. The CLI and details are available in the below link.
+The CLI requires the exported project location and deployed URL as its input. The CLI and details are available in the link below.
 
 :::note
 #### [**@wavemaker/wm-sspa-cli**](https://www.npmjs.com/package/@wavemaker/wm-sspa-cli)
@@ -40,7 +40,7 @@ Follow the steps below to generate the **Single-spa** artifacts for a WaveMaker 
 
 ## Invoke CLI
 
-1. Open the terminal and invoke CLI using the below command
+1. Open the terminal and invoke CLI using the command below.
 
 ```js
  npx @wavemaker/wm-sspa-cli
@@ -64,11 +64,11 @@ Follow the steps below to generate the **Single-spa** artifacts for a WaveMaker 
 
 ### Additional Parameters
 
-WaveMaker SSPA CLI provides additional optional parameters for more appropriate artifact customization. The following shows how parameters can be passed to the CLI command besides the above specified ones. 
+WaveMaker SSPA CLI provides additional optional parameters for more detailed artifact customization. The following shows how parameters can be passed to the CLI command besides the above-specified commands. 
 
 ```js
  npx @wavemaker/wm-sspa-cli -p <project_path> -d <deployed_url> -s <sspa_deployed_url> -l <library_target> -c <true/false> -m <true/false> -r <true/false>
- ```
+```
 
 #### Library Target
 
@@ -94,12 +94,12 @@ If you want to handle the mounting or unmounting of styles on your own, then set
 
 If this parameter is set to `true`, it will enable hashing for **JS** and **CSS** files in the generated artifacts. By default, it is set to `false`.
 
-### Generated Artifacts
+## Generated Artifacts
 
 The artifacts generated include: 
 
- - **main.[hash].js** : the application code and need to be used for app registration.
- - **scripts.[hash].js**: the global scripts modules required for the WaveMaker app.
+- **main.[hash].js** : the application code and need to be used for app registration.
+- **scripts.[hash].js**: the global scripts modules required for the WaveMaker app.
 
 :::note
 **Single-spa** needs the deployed location of all the artifacts, so ensure the files are hosted.
@@ -108,7 +108,7 @@ The artifacts generated include:
 1. Once the artifacts are generated, you can use the artifacts to register it as an application in the **Single-spa** shell.
 2. Validate the changes using the [**Single-spa shell project**](https://github.com/joeldenning/coexisting-angular-microfrontends).
 
-### Configure Script
+## Configure Script
 
 1. Once the project is downloaded, open the `index.html` in the folder *[folder-location]/root-html-file*
 2. Include the script below in the head section of the `index.html`.
