@@ -41,20 +41,29 @@ Follow the steps below to generate the **Single-spa** artifacts for a WaveMaker 
 
 1. Open the terminal and invoke CLI from the below command
 
- ```js
+```js
  npx @wavemaker/wm-sspa-cli
- ```
+ ``` 
 
-- npx downloads the CLI and prompts for the location of the WaveMaker project and deployed URL.
+- npx downloads the CLI and prompts for the location of the WaveMaker project, deployed URL and SSPA deployed URL.
 - The usage of npx ensures the execution of the latest version of CLI.
 - You can also provide the above info as parameters.
 
 ```js
- npx @wavemaker/wm-sspa-cli -p <project_path> -d <deployed-url>
+ npx @wavemaker/wm-sspa-cli -p <project_path> -d <deployed_url> -s <sspa_deployed_url>
 ```
 
-- The CLI validates both the inputs before triggering the process. 
+- The CLI validates the inputs before triggering the process. 
 - Once the valid params are provided, the CLI generates **Single-spa** compatible artifacts and presents users with its location.
+- Apart from the above params, wavemaker sspa cli provides few more custom params with which we can avail more customizations on the artifacts.
+
+```js
+   npx @wavemaker/wm-sspa-cli -p <project_path> -d <deployed_url> -s <sspa_deployed_url> -l <library_target> -c <true/false> -m <true/false> -r <true/false>
+  ```
+- **Library Target(-l)**: This parameter helps in building library with specified module format. By default **umd** format is considered while generating artifacts. Wavemaker sspa cli supports **umd** and **system** formats.
+- **Split Styles(-c)**: This parameter when set to **true** will generate **Base**, **Theme** & **App styles** separately(styles,wm-theme-styles,wm-app-styles). By default **false** is set on this parameter.
+- **Mount Styles(-m)**: If you want to handle the mounting/unmounting of styles then set **false** value for the parameter. By default **true** is set on this parameter.
+- **Resource Hashing(-r)**: If this parameter is set to **true**, it will enable hashing for **js** and **css** files in generated artifacts. By default **false** is set on this parameter.
 
 ### Generated Artifacts
 
@@ -81,7 +90,6 @@ The artifacts generated include:
  [APP_DEPLOYED_URL]: http://localhost:8080/TestProject 
  [ARTIFACTS_DEPLOYED_URL]: http://localhost:8081/
 -->
- <script src="[APP_DEPLOYED_URL]/services/application/wmProperties.js"></script>
  <script src="[ARTIFACTS_DEPLOYED_URL]/scripts.[HASH].js"></script>
 ```
 
