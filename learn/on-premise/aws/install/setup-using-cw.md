@@ -21,7 +21,7 @@ sidebar_label: "Setup Using ConfigPortal"
 
     [![domain-setup](/learn/assets/wme-setup/wme-portal-setup/domain-setup.png)](/learn/assets/wme-setup/wme-portal-setup/domain-setup.png)
 
-- To access the Platform with the secure connection via https, it is required to upload the ssl certificates by uploading teh bundle certificate and pemfile.
+- To access the Platform with the secure connection via https, it is required to upload the ssl certificates by uploading the bundle certificate and pemfile.
 
     [![ssl for platform](/learn/assets/wme-setup/wme-portal-setup/ssl-for-platform.png)](/learn/assets/wme-setup/wme-portal-setup/ssl-for-platform.png)
     
@@ -38,7 +38,7 @@ sidebar_label: "Setup Using ConfigPortal"
   
     [![creating admin user](/learn/assets/wme-setup/wme-portal-setup/creating-admin-user.png)](/learn/assets/wme-setup/wme-portal-setup/creating-admin-user.png)
 
-- Installation may take 45 mins to 60 mins. Please wait and watch on this page for the status until it reached 100%. You can tail teh logs by selecting on the logs icon and also can download the logs.
+- Installation may take 45 mins to 60 mins. Please wait and watch on this page for the status until it reached 100%. You can tail the logs by selecting on the logs icon and also can download the logs.
   
     [![installation process](/learn/assets/wme-setup/wme-portal-setup/installation.png)](/learn/assets/wme-setup/wme-portal-setup/installation.png)
 

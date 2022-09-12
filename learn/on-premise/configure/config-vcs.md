@@ -32,7 +32,7 @@ During the course of app development, tracking code changes and synchronizing th
 
 [![configure-code-repo](/learn/assets/wme-setup/configuring-wme/configure-code-repo.png)](/learn/assets/wme-setup/configuring-wme/configure-code-repo.png)
 
-- Add VCS Repository to code repository.
+- After selecting **Add Code Repository**, select the repository type and provide the required details for adding the repository. As default providers, WaveMaker supports Gitlab, Bitbucket, Github and Azure for external VCS configuration. Select Save to save the changes. 
 
 [![vcs](/learn/assets/wme-setup/configuring-wme/adding-vcs-repo.png)](/learn/assets/wme-setup/configuring-wme/adding-vcs-repo.png)
 
