@@ -1,6 +1,7 @@
 ---
 title: React Native Variables Support
-id ""
+id: ""
+sidebar_label: "Supported Variables"
 ---
 ---
 
