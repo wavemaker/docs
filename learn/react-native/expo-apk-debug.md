@@ -36,7 +36,7 @@ npm install -g react-devtools
 4. Install **`wm-reactnative-cli`**
 
 ```shell
-npm install -g https://github.com/wavemaker/wm-reactnative-cli
+npm install -g @wavemaker/wm-reactnative-cli
 ```
 
 
@@ -47,7 +47,7 @@ npm install -g https://github.com/wavemaker/wm-reactnative-cli
 3. Execute **adb reverse tcp:8081 tcp:8081**; this for debugger.
 4. Execute **adb reverse tcp:8097 tcp:8097**; this is for React Dev Tools.
 5. Export and download the React Native zip from WaveMaker Studio.
-6. Build apk using [wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli). 
+6. Build apk using [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli). 
 7. Navigate to the build destination, including parent of the output folder in a terminal. 
 8. Execute **react-native run-android** at the build folder.
 9. Follow the procedural steps mentioned below. 

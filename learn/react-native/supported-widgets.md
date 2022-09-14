@@ -1,6 +1,7 @@
 ---
 title: React Native Supported Widgets
 id: ""
+sidebar_label: "Supported Widgets"
 ---
 ---
 

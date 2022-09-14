@@ -37,7 +37,7 @@ npm install -g react-devtools
 4. Install **`wm-reactnative-cli`**
 
 ```shell
-npm install -g https://github.com/wavemaker/wm-reactnative-cli
+npm install -g @wavemaker/wm-reactnative-cli
 ```
 
 ## Preparing for Debugging an iOS App
@@ -45,7 +45,7 @@ npm install -g https://github.com/wavemaker/wm-reactnative-cli
 
 1. Ensure the iPhone is connected to your system with a USB.
 2. Export and download the React Native zip from WaveMaker Studio.
-3. Perform an iOS build using [wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli).
+3. Perform an iOS build using [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli).
 4. Open `${build_destination}/ios` folder.
 5. Open the file with workspace as an extension in **Xcode**.
 6. Connect your iPhone to the Mac.
