@@ -7,15 +7,10 @@ sidebar_label: "Docker Upgrade"
 
 ## Docker Upgrade
 
-- Manual Docker upgrade is required only when you miss or skip the WaveMaker patch upgrade.
-- WaveMaker patch automatically upgrades the Docker if ssh-user has root/sudo privileges in Ubuntu and RHEL OS WME Platform Instance and if ssh-user have root/sudo privileges in Ubuntu StudioWorkspaceInstance/AppDeploymentInstance.
-- User needs to upgrade docker if ssh-user doesn't have root/sudo privileges in Ubuntu OS StudioWorkspaceInstance/AppDeploymentInstance and if ssh-user have or doesn't have root/sudo privileges in RHEL OS StudioWorkspaceInstance/AppDeploymentInstance.
-- Make sure Hibernate and passivate user containers and application containers from launchpad. use the following command to Hibernate and passivate containers.
 
-```bash
-python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd>
-example: python3 /usr/local/content/wme/wme-installer/11.0.3/resources/python/3/passivation_deletion.py -pr http -d localhost -u test@wavemaker.com -p test-password -di False
-```
+- Docker upgrade is required when you have docker version below 20.10.12.
+- User needs to upgrade docker if ssh-user doesn't have root/sudo privileges in Ubuntu OS StudioWorkspaceInstance/AppDeploymentInstance and if ssh-user have or doesn't have root/sudo privileges in RHEL OS StudioWorkspaceInstance/AppDeploymentInstance.
+- Make sure Hibernate and passivate user containers and application containers from launchpad. 
 
 - So follow the steps below when you added StudioWorkspaceInstance/AppDeploymentInstance.
 
@@ -24,6 +19,7 @@ example: python3 /usr/local/content/wme/wme-installer/11.0.3/resources/python/3/
 - Stop the current Docker.
 
 ```bash
+  service docker.socket stop
   service docker stop
 ```
 
@@ -63,6 +59,7 @@ Upgrade or Install the latest version of Docker.
 - Stop the current Docker.
 
 ```bash
+  service docker.socket stop
   service docker stop
 ```
 
@@ -76,7 +73,7 @@ Upgrade or Install the latest version of Docker.
 
 ```bash
   rpm -e <installed-package>
-  example: rpm -e docker-ce.x86_64
+  example: rpm -e docker-ce.x86_64 docker-ce-rootless-extras.x86_64
 ```
 
 - Install container-selinux for RHEL 7 version only
@@ -160,14 +157,6 @@ Upgrade or Install the latest version of Docker.
     bash bash wme-utility.sh --docker-upgrade
 ```       
 
-### Sync Studio Workspace/AppDeploy Instances
-
-- Execute the following command in Platform Instance to sync the StudioWorkspace/AppDeploy Instances.
-  
-```bash
-    cd <INSTALLER_LOCATION>
-    bash wme-installer.sh --upgrade-instances
-```
 
 ### Studio Workspace/AppDeploy Instances Sync and Patch using Launchpad
 

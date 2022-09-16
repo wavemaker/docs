@@ -33,7 +33,7 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 ### Passivate containers in StudioWorkspace/AppDeployment Instances
 
 - Inorder to upgrade your operating system it is recommended to passivate the containers in StudioWorkspace/AppDeployment Instances
-- It can be done in two different ways
+- It can be done in following way:
 
 #### Launchpad
 
@@ -49,7 +49,7 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 - Here select all the StudioWorkspace Instances one by one and do the below operations.
 
 - First hit the **stop** button present there, it will stop the Instances from taking new user containers, wait till the state of Instance is changed to **STOPPED**
-- Then you need to hit the passivate button, this will passivate all the stopped containers in the Instance selected, wait till there are no stopped Instances present in the Instance
+- Then you need to hit the **passivate** button, this will passivate all the stopped containers in the Instance selected, wait till there are no stopped Instances present in the Instance
 - After this is done in all StudioWorkspace Instances cross-check the running containers in the containers tab, all the containers should be in the passivated state.
 
 - After making sure all containers are passivated come back to capacity and select one by one Instances by clicking the   ***":"***  icon and hit the delete icon as shown below, this will delete the Instance from setup.
@@ -59,36 +59,12 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 - After completed the above process in Developer Workspace, go to AppDeployments, and perform the same operation mentioned above in all AppDeployment Instances(Demo, Stage, Live)
 
 
-#### Command Line
-
-- You can execute the below command in Platform Instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment Instances in the setup. You need to ssh to the Instance and need to have root privileges to execute the below script.
-
-  ```bash
-  python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd> -di True
-  ```
-
-  - **protocol** represents what web protocol is used to connect to WaveMaker application (http/https)
-  - **domain** represents the domain name in which WaveMaker application is running
-  - **adminUser** and **adminPasswd** refer to the admin credentials which are used to access launchpad.
-
-  - Refer below mentioned example command for passivation
-
-  ```bash
-  python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d wme-demo.wavemaker.com -u test@wavemaker.com -p test-password -di True
-  ```
 
 ### Stop the WME Setup
 
 - We recommend you to stop the WME setup before proceeding for further steps
-- You can stop the WME setup operation either by executing commands at command line or from config wizard portal
+- You can stop the WME setup operation from the config wizard portal
 
-  - **Command Line**
-
-    - Use the following command to stop the WME setup in Platform Instance. You need to ssh to the Instance and need to have root privileges to execute the below script.
-
-    ```bash
-    bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --stop
-    ```
 
   - **CW Portal**
 

@@ -33,6 +33,21 @@ Following are the steps to add Users to the network by the SuperAdmin from WaveM
 [![user creation](/learn/assets/wme-setup/configuring-wme/user-creation.png)](/learn/assets/wme-setup/configuring-wme/user-creation.png)
 
 
+## Map the User to the Teams
+
+The User should be mapped with a respective team to access the studio. Following are the steps to Map user to the teams from the WaveMaker Launchpad:
+
+- Navigate to the Teams section and Select the required team that user need to be added.
+- Select the **Add Member** and give their Email id which provided while adding the user from the  Users section.
+
+ [![teams](/learn/assets/wme-setup/configuring-wme/teams.png)](/learn/assets/wme-setup/configuring-wme/user-creation.png)
+
+- Select the Role and proceed with Adding.
+
+ [![add member](/learn/assets/wme-setup/configuring-wme/add-team-member.png)](/learn/assets/wme-setup/configuring-wme/add-team-member.png)
+
+ The user can now able to access the studio after being mapped in the teams.
+
 ## Make User as a Super Admin
 
 - A Super Admin is a User who can Access the Launchpad and Studio.

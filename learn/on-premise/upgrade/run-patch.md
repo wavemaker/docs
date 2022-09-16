@@ -20,16 +20,14 @@ sidebar_label: "Run Patch"
 ```bash
     sudo tar xvf wme_migrations.tar -C /usr/local/content/wme/wme-installer/<version>/resources/
  ```
-
+- Before proceed with the bash script, it is highly recommended to check whether the containers **config_wizard** or **consul** are not in excited state.
 - Run the bash script for upgrading to the desired version.
-
 ```shell
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
 ```
 
-- To make https work, You need to add SSL certificates to Platform or router/dns level, to add SSL certificates please refer [ssl configuration for platform](/learn/on-premise/configure/config-ssl).
+- To make https work, You need to add SSL certificates to Platform or router/dns level while configuring the setup using ConfigWizard after the Ugrade process completes in terminal, to add SSL certificates please refer [ssl configuration for platform](/learn/on-premise/configure/config-ssl).
 
-- Enter config portal admin password to proceed with the process.
 
 [![upgrading-wme](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-process.png)](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-process.png)
 
@@ -38,7 +36,7 @@ sidebar_label: "Run Patch"
 - Check all User WorkspaceInstance/AppDeployment Instances status in Launchpad.
 - You can start working on Studio once the Instance status has started.
 - If the Instance status UPGRADE_FAILED, then there might be chances of docker version mismatch. You can upgrade docker version using [Manual Docker Upgrade](/learn/on-premise/upgrade/docker-upgrade).
-- Please upgrade the Docker version if it is older than 20.10.7 in your User WorkspaceInstance/AppDeployment Instances.
+- Please upgrade the Docker version if it is older than 20.10.12 in your User WorkspaceInstance/AppDeployment Instances.
 
 ## Running the UI Patch
 
