@@ -155,18 +155,8 @@ Upgrade or Install the latest version of Docker.
   - Run the Following command to update the configuration file.
 
 ```bash
-    bash bash docker_configure.sh
-```       
-
-### Upgrade Docker using WaveMaker Script
-
-- You need to upgrade the Docker by using above steps or by with your own approach or by WaveMaker provides you a Script to Upgrade to the latest version.
-
-   - Run the Following command  to Upgrade to latest version.
-
-```bash
-    bash bash wme-utility.sh --docker-upgrade
-```       
+    bash  docker_configure.sh
+```          
 
 
 ### Studio Workspace/AppDeploy Instances Sync and Patch using Launchpad
