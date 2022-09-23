@@ -57,6 +57,8 @@ Ssh credentials of the Instance either should have root privileges or provide re
 
 [![app deployement health status check](/learn/assets/wme-setup/configuring-wme/app-deployement-health-status.png)](/learn/assets/wme-setup/configuring-wme/app-deployement-health-status.png)
 
+- You can verify them by copying them to clipboard and pasting on a Notepad.
+
 
 
 

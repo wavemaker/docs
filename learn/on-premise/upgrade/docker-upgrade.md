@@ -147,6 +147,17 @@ Upgrade or Install the latest version of Docker.
       echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
   ```
 
+
+### Configure Docker
+
+- After upgrading docker successfully, you need to update docker configuration file to match with WaveMaker platform configuration.
+
+  - Run the Following command to update the configuration file.
+
+```bash
+    bash bash docker_configure.sh
+```       
+
 ### Upgrade Docker using WaveMaker Script
 
 - You need to upgrade the Docker by using above steps or by with your own approach or by WaveMaker provides you a Script to Upgrade to the latest version.
@@ -160,7 +171,7 @@ Upgrade or Install the latest version of Docker.
 
 ### Studio Workspace/AppDeploy Instances Sync and Patch using Launchpad
 
-- You can also aplply the Sync or Patch using the Launchpad. To Apply, go to the Launchpad and Navigate to the Developer Workspace or App Deployements.
+- You can also apply the Sync or Patch using the Launchpad. To Apply, go to the Launchpad and Navigate to the Developer Workspace or App Deployements.
 - On the Capacity, you can see the Workspace/AppDeploy Instance details. On the Icons Shown, you can find the patch and the sync option.
 
   [![Sync_and_patch](/learn/assets/wme-setup/upgrade-wme-setup/Sync-and-Patch.png)](/learn/assets/wme-setup/upgrade-wme-setup/Sync-and-Patch.png)
