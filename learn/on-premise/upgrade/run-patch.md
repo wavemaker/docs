@@ -20,7 +20,7 @@ sidebar_label: "Run Patch"
 ```bash
     sudo tar xvf wme_migrations.tar -C /usr/local/content/wme/wme-installer/<version>/resources/
  ```
-- Before proceed with the bash script, it is highly recommended to check whether the containers **config_wizard** or **consul** are not in excited state.
+
 - Run the bash script for upgrading to the desired version.
 ```shell
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
@@ -35,6 +35,8 @@ sidebar_label: "Run Patch"
 
 - After successful upgrade, the script will display a URL to perform the rest of the WME setup upgrade process.
 - Go to http://Platform-Instance-IP:8080 as directed by the above command output to do the WME setup upgrade.
+
+## Upgrade From the Configwizard
 
 - Select the Required services to upgrade.
 
