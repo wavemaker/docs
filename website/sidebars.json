@@ -1339,6 +1339,7 @@
           "label": "Versions: 11.1.x",
           "ids": 
             [
+              "wavemaker-release-notes/v11-1-2",
               "wavemaker-release-notes/v11-1-1",              
               "wavemaker-release-notes/v11-1-0"              
             ]
