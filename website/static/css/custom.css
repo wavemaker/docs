@@ -1232,7 +1232,7 @@ h3 {
 
 @media only screen and (min-width: 1280px) {
     .row {
-        width: 1200px;
+        /* width: 1200px; */
     }
 
     .footer .navigation {
