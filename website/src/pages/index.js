@@ -110,7 +110,7 @@ export default class Index extends React.Component {
                         </div>
                     </div>
                     <div className='container padding-vert--lg'>
-                        <h1 className='text--center'>Helpful Resources</h1>
+                        <h1 className='text--center'>Helpful Resources Title</h1>
                         <div className='indexFooter'>
                             <div className='column'>
                                 <div className='row indexFooterLinks'>
