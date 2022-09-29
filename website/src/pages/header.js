@@ -3,8 +3,7 @@ const React = require('react');
 export default class Header extends React.Component {
     render() {
         return (
-            <header className="header">
-                <nav className="navbar navbar--fixed-top">
+            <nav className="navbar navbar--fixed-top no-border">
                     <div className="navbar__inner">
                         <div className="navbar__items">
                             <button aria-label="Navigation bar toggle" className="navbar__toggle clean-btn" type="button" tabindex="0">
@@ -34,18 +33,17 @@ export default class Header extends React.Component {
                                 </div>
                                 <span className="navbar__title text--truncate">WaveMaker Docs</span>
                             </a>
+                            <button type="button" className="clean-btn navbar-sidebar__close">
+                                <svg viewBox="0 0 15 15" width="21" height="21">
+                                    <g stroke="var(--ifm-color-emphasis-600)" stroke-width="1.2">
+                                        <path d="M.75.75l13.5 13.5M14.25.75L.75 14.25">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
                         </div>
-                        <button type="button" className="clean-btn navbar-sidebar__close">
-                            <svg viewBox="0 0 15 15" width="21" height="21">
-                                <g stroke="var(--ifm-color-emphasis-600)" stroke-width="1.2">
-                                    <path d="M.75.75l13.5 13.5M14.25.75L.75 14.25">
-                                    </path>
-                                </g>
-                            </svg>
-                        </button>
                     </div>
                 </nav>
-            </header >
         );
     }
 }

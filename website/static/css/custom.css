@@ -1,11 +1,10 @@
 /* your custom css */
 body {
     margin: 0;
-
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 48px;
 }
 
 h2 {
@@ -16,17 +15,24 @@ h3 {
     font-size: 22px;
 }
 
+.no-border{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
 .headerWrapper.wrapper {
     max-width: 1200px;
 }
 
-.row {
+/* .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
-}
+} */
 
 .column {
     display: flex;
@@ -121,9 +127,11 @@ h3 {
 /* Added Style for Banner */
 .banner {
     background-image: url(../img/bannerImage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
     height: 386px;
-    margin: 20px 32px 25px;
     position: relative;
 }
 
@@ -132,10 +140,10 @@ h3 {
 }
 
 .banner .row {
-    width: 100%;
+    /* width: 100%;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
 }
 
 .banner .bannerContent span {
@@ -303,55 +311,46 @@ h3 {
     font-size: 16px;
 }
 
-.category .column {
-    text-decoration: none;
-}
-
-.category img {
-    width: 41px;
-    height: 40px;
-}
-
-.category .column {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .category {
+    text-decoration: none;
     color: #000;
-    display: inline-flex;
-    width: 263px;
+    display: flex;
+    flex-wrap: nowrap;
     height: 170px;
+    padding: 20px 15px;
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.5px;
     font-weight: bold;
+    text-transform: uppercase;
     background-color: #fff;
     border-radius: 8px;
     object-fit: contain;
     align-items: center;
-    transition: top ease 2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .category:hover {
     box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.06);
-    transform: translate(0, -10px);
+    /* transform: translate(0, -10px); */
+    text-decoration: none;
+    color: #000;
 }
 
-
-.extensions {
-    margin: 55px 25px;
+.category .icon {
+    width: 41px;
+    height: 40px;
+    margin: 0 11px;
+}
+.category .caption{
+    margin: 0 11px;
 }
 
-.extesionsContent {
-    background-image: url(../img/wave-lines.svg);
-    width: 100%;
-}
 
 .widget-container .row {
-    max-width: 600px;
-    margin: 0px;
+    /* max-width: 600px;
+    margin: 0px; */
 }
 
 .first-widget {
@@ -400,19 +399,6 @@ h3 {
 .widget-container .content{
     padding: 37px 23px 30px;
 }
-.extensionInfo {
-    align-items: center;
-    text-align: center;
-    font-size: 48px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.77;
-    letter-spacing: normal;
-    text-align: center;
-    color: #152839;
-    margin: 55px 25px;
-}
 
 .extension {
     height: 248px;
@@ -423,16 +409,14 @@ h3 {
     background-color: #ffffff;
     align-items: center;
     border-radius: 15px;
-    border: solid 1px rgba(131, 143, 162, 0.3);
-    box-shadow: 0 40px 300px 0 rgba(181, 190, 199, 0.3);
+    box-shadow: inset 0 0 0 1px rgba(131, 143, 162, 0.3);
     text-align: center;
-    transition: top ease 2s;
-
+    transition: all 0.2s ease-in-out;
 }
 
 .extension:hover {
-    transform: translate(0, -10px);
-    border: solid 1.5px #1794ef;
+    transform: translate(0, -15px);
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.06);
 }
 
 .extension:hover a {
@@ -464,7 +448,7 @@ h3 {
 }
 
 .indexFooter .row {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .indexFooter .indexFooterLinks {
@@ -916,7 +900,7 @@ h3 {
 
 @media only screen and (min-width: 736px) and (max-width: 1152px) {
     .row {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .banner {
@@ -930,10 +914,10 @@ h3 {
     }
 
     .banner .row {
-        width: 100%;
+        /* width: 100%;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: center; */
     }
 
     .banner .bannerContent .column {
@@ -1033,7 +1017,7 @@ h3 {
 
 @media only screen and (min-width: 320px) and (max-width: 736px) {
     .row {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .footer .column,
@@ -1054,10 +1038,10 @@ h3 {
     }
 
     .banner .row {
-        width: 100%;
+        /* width: 100%;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: center; */
     }
 
     .banner .bannerContent span {
