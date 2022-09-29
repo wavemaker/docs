@@ -1,7 +1,7 @@
 ---
 title: "Updating an App from WaveMaker 10 WaveMaker 11"
-id: "upgrade-guide-wavemaker-10-to-11"
-sidebar_label: "Upgrade Guide 11 beta"
+id: ""
+sidebar_label: "Upgrade Guide 11"
 ---
 ---
 

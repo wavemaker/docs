@@ -1,6 +1,6 @@
 ---
 title: "Preview React Native Apps in Mobile without Building Installers"
-id: "expo-debug"
+id: ""
 sidebar_label: "Expo Debug"
 ---
 ---
@@ -15,7 +15,7 @@ Mobile app developers can preview their apps using the Preview button. To see th
 4. Install wm-reactnative-cli in your machine using below command
 
 ```shell
-npm install -g https://github.com/wavemaker/wm-reactnative-cli
+npm install -g @wavemaker/wm-reactnative-cli
 ```
 
 ### Expo Go 
@@ -39,7 +39,7 @@ npm i -g react-devtools@4.14.0.
 2. Copy the preview URL. For example:
 
 ```shell
-https://wm11.wavemakeronline.com/…../{Project_Name}
+https://wavemakeronline.com/…../{Project_Name}
 ```
 
 3. Execute the following command in your machine terminal
@@ -59,7 +59,7 @@ wm-reactnative run expo ${APP_PREVIEW_URL}
 
 7. When you shake the phone, the expo developer menu opens up. In the developer menu, click on `Debug Remote JS` option to debug the JavaScript of the app. You can stop debugging by tapping on the `Stop Debug` in developer menu. An active debugging session will make the app run slower.
 
-<img src="../../assets/expo-developer-menu.png" style="height:480px"/>
+![expo developer menu](/learn/assets/expo-developer-menu.png)
 
 8. Open [http://localhost:19000/debugger-ui/](http://localhost:19000/debugger-ui/) in your system. If there are many tabs with the same URL, close all except anyone.
 

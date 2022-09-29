@@ -1,5 +1,5 @@
 ---
-id: "howtos-documents"
+id: ""
 title: "How-to Wiki"
 ---
 Find the how to topics and look for sub-categories under each of the specified category. 
@@ -61,7 +61,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to customize security to use Google OAuth Prefab](/learn/how-tos/custom-security-using-google-oauth-prefab/)
 *   [How to customize security to use Google OAuth Prefab and Database as Security Provider](/learn/how-tos/multiple-security-provider-implementation/)
 *   [Customizing Post Authentication Handlers](/learn/how-tos/customizing-post-authentication-handlers)
-
+*   [How to configure MTLS for REST API's](/learn/how-tos/configure-mtls-in-wmapp/)
 
 ## Database Services
 ---
@@ -70,6 +70,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to connect to Azure SQL Server](/learn/how-tos/connect-azure-sql-server/)
 *   [How to download JDBC driver jar for SQL server](/learn/app-development/services/database-services/download-jdbc-driver-jar/)
 *   [How to fetch more than the default number(100) of records from Database ?](/learn/how-tos/fetch-default-number100-records-database/)
+*   [How to connect to MySQL database using SSL](/learn/how-tos/mysql-connection-using-ssl/)
 
 ## Web Services
 ---
@@ -191,6 +192,7 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to add master-detail records from Live Form using Wizard](/learn/how-tos/using-wizard-master-detail-live-form/)
 *   [How to progressively add fields to a record using Wizard](/learn/how-tos/using-wizard-progressive-data-entry-live-form/)
 *   [How to accumulate data over multiple steps in a Wizard and save at the last step](/learn/how-tos/using-wizard-cumulative-data-entry-live-form/)
+*   [How to select widget template and set Icon for wizard steps](/learn/how-tos/wizard-layout)
 
 ## Widget: Live Filter
 
@@ -304,3 +306,9 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to create Prefab Using D3 Library (DataMaps)](/learn/how-tos/create-prefab-using-d3-library-datamaps/)
 *   [How to create Prefab Using JQuery Plugin - showcases using Events and Methods](/learn/how-tos/create-prefab-using-jquery-plugin/)
 *   [How to create Prefab Using Angular, React Components](/learn/how-tos/create-prefab-using-custom-element/)
+
+# Team Portal : Configure Vcs
+---
+
+## Azure Repos : Vcs
+*   [How to configure Azure Repos as Vcs](/learn/how-tos/azure-repos-vcs/)

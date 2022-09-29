@@ -1,142 +1,132 @@
 ---
-title: Supported Widgets
-id: "supported-widgets"
+title: React Native Supported Widgets
+id: ""
+sidebar_label: "Supported Widgets"
 ---
 ---
 
-Currently, the following Widgets are supported to develop a React Native app. 
+In WaveMaker, the following [Widgets](/learn/app-development/widgets/widget-library) are supported to develop a React Native app. 
 
-
-|Shows as  | Support Status|
-|---|---|
-|![Supported React Native Features](/learn/assets/supported.png)| Supported
-|![Unsupported React Native Features](/learn/assets/unsupported.png)| Not Supported|
-
-## Supported Widgets
-
-### Data Widgets 
+## Data Widgets 
 
 |Support|Data Widgets|Reference|
 |---|---|---|
-| ![](/learn/assets/supported.png) | Form | [Style Document](./widgets/data/form.style) | 
-| ![](/learn/assets/supported.png) |List  | [Style Document](./widgets/data/list.style) | 
-| ![](/learn/assets/supported.png) |Cards  | [Style Document](./widgets/data/card.style) | 
+| ![](/learn/assets/supported.png) | Form | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/data/form/) | 
+| ![](/learn/assets/supported.png) |List  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/data/list/) | 
+| ![](/learn/assets/supported.png) |Cards  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/data/card/) | 
 | ![](/learn/assets/unsupported.png) |Live Form | |
 | ![](/learn/assets/unsupported.png) |Live Filter |  |
 
-### Layout Widgets
+## Layout Widgets
 
 |Support|Layout Widgets|Reference|
 |---|---|---|
-| ![](/learn/assets/supported.png) |Accordion  | [Style Document](./widgets/container/accordion.style) | 
-| ![](/learn/assets/supported.png) |Tabs  | [Style Document](./widgets/container/tabs.style) | 
-| ![](/learn/assets/supported.png) |Wizard  | [Style Document](./widgets/container/wizard.style) | 
-| ![](/learn/assets/supported.png) |Panel  | [Style Document](./widgets/container/panel.style) | 
-| ![](/learn/assets/supported.png) |Grid Layout  | [Style Document](./widgets/container/layoutgrid.style) | 
+| ![](/learn/assets/supported.png) |Accordion  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/layout/accordion/) | 
+| ![](/learn/assets/supported.png) |Tabs  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/layout/tabs/) | 
+| ![](/learn/assets/supported.png) |Wizard  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/layout/wizard/) | 
+| ![](/learn/assets/supported.png) |Panel  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/layout/panel/) | 
+| ![](/learn/assets/supported.png) |Grid Layout  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/layout/layoutgrid/) | 
 | ![](/learn/assets/supported.png) |[Linear Layout (**See this video**)](https://drive.google.com/file/d/1QSu-Gwy6UhkVrtqdajseG-ISzPgcpjv4/view?usp=sharing)   | [Style Document](./widgets/container/linearlayout.style) | 
-| ![](/learn/assets/supported.png) |Container  | [Style Document](./widgets/container.style) | 
-| ![](/learn/assets/supported.png) |Tile  | [Style Document](./widgets/container/tile.style) | 
+| ![](/learn/assets/supported.png) |Container  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/layout/container/) | 
+| ![](/learn/assets/supported.png) |Tile  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/layout/tile/) | 
 | ![](/learn/assets/unsupported.png) |Segmented Content | |
 | ![](/learn/assets/unsupported.png) |Media list | |
 
-### Form Widgets
+## Form Widgets
 
 |Support|Form Widgets|Reference|
 |---|---|---|
-| ![](/learn/assets/supported.png) |Button  | [Style Document](./widgets/basic/button.style) | 
-| ![](/learn/assets/supported.png) |Button Group  | [Style Document](./widgets/basic/buttongroup.style) | 
-| ![](/learn/assets/supported.png) |Text  | [Style Document](./widgets/input/text.style) | 
+| ![](/learn/assets/supported.png) |Button  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/button/) | 
+| ![](/learn/assets/supported.png) |Button Group  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/buttongroup/) | 
+| ![](/learn/assets/supported.png) |Text  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/text/) | 
 | ![](/learn/assets/unsupported.png) |Rich text editor | |
-| ![](/learn/assets/supported.png) |Number  | [Style Document](./widgets/input/number.style) | 
-| ![](/learn/assets/supported.png) |TextArea  | [Style Document](./widgets/input/textarea.style) | 
-| ![](/learn/assets/supported.png) |Select  | [Style Document](./widgets/input/select.style) | 
-| ![](/learn/assets/supported.png) |Chips  | [Style Document](./widgets/input/chips.style) | 
-| ![](/learn/assets/supported.png) |Currency  | [Style Document](./widgets/input/currency.style) | 
-| ![](/learn/assets/supported.png) |Radioset  | [Style Document](./widgets/input/radioset.style) | 
-| ![](/learn/assets/supported.png) |Checkbox  | [Style Document](./widgets/input/checkbox.style) | 
-| ![](/learn/assets/supported.png) |Checkbox set  | [Style Document](./widgets/input/checkboxset.style) | 
-| ![](/learn/assets/supported.png) |Toggle  | [Style Document](./widgets/input/toggle.style) | 
-| ![](/learn/assets/supported.png) |Switch  | [Style Document](./widgets/input/switch.style) | 
-| ![](/learn/assets/supported.png) |Date  | [Style Document](./widgets/input/epoch/date.style) | 
-| ![](/learn/assets/supported.png) |Calendar  | [Style Document](./widgets/input/calendar.style) | 
-| ![](/learn/assets/supported.png) |Time  | [Style Document](./widgets/input/epoch/time.style) | 
-| ![](/learn/assets/supported.png) |DateTime  | [Style Document](./widgets/input/epoch/datetime.style) | 
-| ![](/learn/assets/unsupported.png) |Fileupload | |
-| ![](/learn/assets/supported.png) |Slider  | [Style Document](./widgets/input/slider.style) | 
-| ![](/learn/assets/supported.png) |Rating  | [Style Document](./widgets/input/rating.style) | 
-| ![](/learn/assets/supported.png) |Select Locale  | [Style Document](./widgets/input/select.style) | 
+| ![](/learn/assets/supported.png) |Number  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/number/) | 
+| ![](/learn/assets/supported.png) |TextArea  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/textarea/) | 
+| ![](/learn/assets/supported.png) |Select  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/select/) | 
+| ![](/learn/assets/supported.png) |Chips  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/chips/) | 
+| ![](/learn/assets/supported.png) |Currency  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/currency/) | 
+| ![](/learn/assets/supported.png) |Radioset  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/radioset/) | 
+| ![](/learn/assets/supported.png) |Checkbox  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/checkbox/) | 
+| ![](/learn/assets/supported.png) |Checkbox set  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/checkboxset/) | 
+| ![](/learn/assets/supported.png) |Toggle  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/toggle/) | 
+| ![](/learn/assets/supported.png) |Switch  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/switch/) | 
+| ![](/learn/assets/supported.png) |Date  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/epoch/date/) | 
+| ![](/learn/assets/supported.png) |Calendar  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/calendar/) | 
+| ![](/learn/assets/supported.png) |Time  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/epoch/time/) | 
+| ![](/learn/assets/supported.png) |DateTime  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/epoch/datetime/) | 
+| ![](/learn/assets/supported.png) |Fileupload | |
+| ![](/learn/assets/supported.png) |Slider  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/slider/) | 
+| ![](/learn/assets/supported.png) |Rating  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/rating/) | 
+| ![](/learn/assets/supported.png) |Select Locale  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/input/select/) | 
 
-### Basic Widgets
+## Basic Widgets
 
 |Support| Basic Widgets|Reference|
 |---|---|---|
-| ![](/learn/assets/supported.png) |Label  | [Style Document](./widgets/basic/label.style) | 
-| ![](/learn/assets/supported.png) |Anchor  | [Style Document](./widgets/basic/anchor.style) | 
-| ![](/learn/assets/supported.png) |Icon  | [Style Document](./widgets/basic/icon.style) | 
-| ![](/learn/assets/supported.png) |Picture  | [Style Document](./widgets/basic/picture.style) | 
+| ![](/learn/assets/supported.png) |Label  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/label/) | 
+| ![](/learn/assets/supported.png) |Anchor  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/anchor/) | 
+| ![](/learn/assets/supported.png) |Icon  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/icon/) | 
+| ![](/learn/assets/supported.png) |Picture  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/picture/) | 
 | ![](/learn/assets/unsupported.png) |Tree | |
 | ![](/learn/assets/unsupported.png) |Video | |
 | ![](/learn/assets/unsupported.png) |Audio | |
 | ![](/learn/assets/unsupported.png) |html | |
-| ![](/learn/assets/supported.png) |Message  | [Style Document](./widgets/basic/message.style) | 
-| ![](/learn/assets/supported.png) |Spinner  | [Style Document](./widgets/basic/spinner.style) | 
-| ![](/learn/assets/supported.png) |Search   | [Style Document](./widgets/basic/search.style) | 
-| ![](/learn/assets/supported.png) |Progress Bar  | [Style Document](./widgets/basic/progress-bar.style) | 
-| ![](/learn/assets/supported.png) |Progress Circle  | [Style Document](./widgets/basic/progress-circle.style) | 
+| ![](/learn/assets/supported.png) |Message  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/message/) | 
+| ![](/learn/assets/supported.png) |Spinner  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/spinner/) | 
+| ![](/learn/assets/supported.png) |Search   | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/search/) | 
+| ![](/learn/assets/supported.png) |Progress Bar  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/progress-bar/) | 
+| ![](/learn/assets/supported.png) |Progress Circle  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/progress-circle/) | 
 
-### Chart Widgets
+## Chart Widgets
 
 |Support|Chart Widgets|Reference|
 |---|---|---|
-| ![](/learn/assets/unsupported.png) |Line | |
-| ![](/learn/assets/unsupported.png) |Column || 
-| ![](/learn/assets/unsupported.png) |Area | |
-| ![](/learn/assets/unsupported.png) |Pie | |
-| ![](/learn/assets/unsupported.png) |Bar | |
-| ![](/learn/assets/unsupported.png) |Cumulative Line || 
-| ![](/learn/assets/unsupported.png) |Donut | |
-| ![](/learn/assets/unsupported.png) |Bubble | |
+| ![](/learn/assets/supported.png) |Line | |
+| ![](/learn/assets/supported.png) |Column || 
+| ![](/learn/assets/supported.png) |Area | |
+| ![](/learn/assets/supported.png) |Pie | |
+| ![](/learn/assets/supported.png) |Bar | |
+| ![](/learn/assets/unsupported.png) |Cumulative Line | Use Line chart to achieve |
+| ![](/learn/assets/supported.png) |Donut | |
+| ![](/learn/assets/supported.png) |Bubble | |
 
-### Navigation Widgets
+## Navigation Widgets
 
 |Support| Navigation Widgets|Reference|
 |---|---|---|
-| ![](/learn/assets/supported.png) |Nav  | [Style Document](./widgets/navigation/navbar.style) | 
-| ![](/learn/assets/supported.png) |Dropdown Menu  | [Style Document](./widgets/navigation/menu.style) | 
-| ![](/learn/assets/supported.png) |Popover   | [Style Document](./widgets/navigation/popover.style) | 
+| ![](/learn/assets/supported.png) |Nav  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/navigation/navbar/) | 
+| ![](/learn/assets/supported.png) |Dropdown Menu  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/navigation/menu/) | 
+| ![](/learn/assets/supported.png) |Popover   | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/navigation/popover/) | 
 
-### Advanced Widgets
+## Advanced Widgets
 
 |Support| Advanced Widgets|Reference|
 |---|---|---|
-| ![](/learn/assets/supported.png) |Login  | [Style Document](./widgets/advanced/login.style) | 
+| ![](/learn/assets/supported.png) |Login  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/advanced/login/) | 
 | ![](/learn/assets/unsupported.png) |Marquee | |
-| ![](/learn/assets/supported.png) |Carousel  | [Style Document](./widgets/advanced/carousel.style) | 
+| ![](/learn/assets/supported.png) |Carousel  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/advanced/carousel/) | 
 
-### Dialog Widgets
+## Dialog Widgets
 
 |Support | Dialog Widgets|Reference|
 |---|---|---|
-| ![](/learn/assets/supported.png) |Design Dialog  | [Style Document](./widgets/dialogs/dialog.style) | 
-| ![](/learn/assets/supported.png) |Alert Dialog  | [Style Document](./widgets/dialogs/alertdialog.style) | 
-| ![](/learn/assets/supported.png) |Confirm Dialog  | [Style Document](./widgets/dialogs/confirmdialog.style) | 
+| ![](/learn/assets/supported.png) |Design Dialog  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/dialogs/dialog/) | 
+| ![](/learn/assets/supported.png) |Alert Dialog  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/dialogs/alertdialog/) | 
+| ![](/learn/assets/supported.png) |Confirm Dialog  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/dialogs/confirmdialog/) | 
 
-### Device Widgets
+## Device Widgets
 
 |Support| Device Widgetss|Reference|
 |---|---|---|
-| ![](/learn/assets/supported.png) |Camera  | [Style Document](./widgets/device/camera.style) | 
-| ![](/learn/assets/supported.png) |Barcode Scanner  | [Style Document](./widgets/device/barcodescanner.style) | 
+| ![](/learn/assets/supported.png) |Camera  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/device/camera/) | 
+| ![](/learn/assets/supported.png) |Barcode Scanner  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/device/barcodescanner/) | 
 
-### Page Layout Widgets
+## Page Layout Widgets
 
 |Support| Page Layout Widgets|Reference|
 |---|---|---|
-| ![](/learn/assets/supported.png) |App Nav bar  | [Style Document](./widgets/navigation/appnavbar.style) | 
-| ![](/learn/assets/supported.png) |Left Panel  | [Style Document](./widgets/page/left-panel.style) | 
-| ![](/learn/assets/supported.png) |Page  | [Style Document](./widgets/page.style) | 
-| ![](/learn/assets/supported.png) |Page Content  | [Style Document](./widgets/page/page-content.style) | 
-| ![](/learn/assets/supported.png) |Tab bar  | [Style Document](./widgets/page/tabbar.style) | 
-
-## Widgets Properties
-Some of the existing properties of widgets are not supported. Those details are <a href="https://docs.google.com/spreadsheets/d/1U2spfuSDqmAP5oGipR-jK6CcvrQC49WfHRame5Fsb4w/edit#gid=0" target="_blank">available here</a>
+| ![](/learn/assets/supported.png) |App Nav bar  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/navigation/appnavbar/) | 
+| ![](/learn/assets/supported.png) |Left Panel  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/page-layout/left-panel/) | 
+| ![](/learn/assets/supported.png) |Page  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/page-layout/page/) | 
+| ![](/learn/assets/supported.png) |Page Content  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/page-layout/page-content/) | 
+| ![](/learn/assets/supported.png) |Tab bar  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/page-layout/tabbar/) | 

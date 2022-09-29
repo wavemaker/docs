@@ -1,17 +1,12 @@
 ---
-title: Variables
-layout: default
-parent: Docs
-nav_order: 4
+title: React Native Variables Support
+id: ""
+sidebar_label: "Supported Variables"
+---
 ---
 
-Currently, the following Variables are supported for developing a React Native app. 
+In WaveMaker, the following [Variables](/learn/app-development/variables/variables) are supported for developing a React Native app. 
 
-
-|Shows as  | Support Status|
-|---|---|
-|![Supported React Native Features](/learn/assets/supported.png)| Supported
-|![Unsupported React Native Features](/learn/assets/unsupported.png)| Not Supported|
 
 ## Data Variables
 

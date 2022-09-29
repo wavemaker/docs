@@ -1,55 +1,69 @@
 ---
 title: "Welcome to React Native Studio"
-id: "react-native"
+id: ""
 sidebar_label: "Welcome"
 ---
 ---
 
-React Native is a cross-platform development framework for developing native mobile applications, including iOS and Android apps. The framework is open-sourced and is supported by a developer community, hosting a number of React Native plugins that you can use. For example, Expo go. 
+React Native is a cross-platform framework for developing native mobile applications, including iOS and Android. The framework is open-sourced and is supported by a developer community, hosting a number of React Native plugins that you can use. For example, [Expo go](https://expo.dev/client). 
 
 React Native runs on a native environment using a JavaScript engine, making cross-platform mobile applications truly native. 
 
-To develop fully Native apps, you do not need additional programming skills for iOS or Android or maintain two different codebases. React Native provides platform-specific versions of components such that a single codebase can be shared across platforms. 
+To develop fully Native apps, you do not need to learn additional programming skills for iOS or Android or maintain two different codebases. React Native provides platform-specific versions of components such that a single codebase can be shared across platforms. 
 
 ## Architecture
 
-React Native is a mobile app framework from Facebook. It is based on ReactJS priniciples (Virtual DOM). Developers define app UI using the React Native markup (and extensions) in JavaScript. In runtime, based on this UI definition, React Native will render UI using native UI controls (similar to native apps).
+React Native is a mobile app framework from Facebook. It is based on ReactJS principles (Virtual DOM). You can define app UI using the React Native markup and extensions in JavaScript. React Native will render UI using native UI controls similar to native apps based on the UI definition in runtime.
 
-In mobile devices, Cordova apps displays HTML based UI using a browser component. So, developers can use HTML, CSS along with JavaScript in Cordova apps. React native apps will run JavaScript in JavaScript runtime (jsc and hermes). React Native bridge manipulates native UI based on the response (Virtual DOM) from javascript. So, **CSS and HTML cannot be used in React Native apps**. Markup (jsx), styles, and logic have to be defined in JavaScript for React Native apps.
+![React Native Architecture](/learn/assets/react-native-architecture.png)
+
+### WaveMaker React Native
+
+React Native apps run JavaScript in JavaScript runtime, including JSC and Hermes. React Native bridge amends native UI based on the response Virtual DOM from JavaScript—consequently, not allowing you to use **CSS and HTML in React Native apps**. You must define JSX Markup, styles, and logic in JavaScript.
+
+### WaveMaker Hybrid Mobile 
+
+When developing Hybrid mobile apps in WaveMaker, Cordova apps display HTML-based UI using a browser component. So, you can use HTML and CSS along with JavaScript in Cordova apps. 
 
 ## Things to be noted
 
-In WaveMaker, apps are developed with WaveMaker markup, variables, Javascript and styles defined in CSS. Let see the changes in the platform and the required learnings.
+In WaveMaker, apps are developed with WaveMaker Markup, Variables, JavaScript, and Styles defined in CSS. Let's see how it works for React Native app development.
 
 ### Markup
 
-During build, WaveMaker platform will convert the WaveMaker markup to React Native markup. So, there is no change in the existing WaveMaker markup. But, not all widgets and widgets properties are supported. [Click here](./widgets.html) to check widget support. 
+During the build, platform converts [WaveMaker markup](/learn/app-development/ui-design/page-artefacts#page-markup) to React Native markup. But, not all Widgets and their properties are supported. See [Supported Widgets](/learn/react-native/supported-widgets) to know more. 
 
 ### Variables
 
-There is no change in the way of defining variables. Databases and corresponding variables are not supported. [Click here](./variables.html), to check the Variable support.
+Variable acts like a glue between the frontend UI and the backend services, integrating data and services with the Widgets. Learn more about the supporting [React Native Variables here](/learn/react-native/supported-variables).
 
 ### Script
 
-All UI and Variable event callbacks work as it is. Web browser APIs are not supported. HTML DOM manipulating JS libraries (jQuery etc.,) will not work when app is installed in a phone. Adding a JS library is not supported.
+All UI and [Variable event callbacks](/learn/app-development/variables/accessing-elements-via-javascript) work as they do, but web browser APIs are not supported. HTML DOM amending JS libraries (jQuery etc.) does not work when the app is installed on the phone. In addition, adding a JS library is not supported.
 
 ### Styles
 
-React Native styles have to be defined in JavaScript. CSS is not supported in React Native. But, in WaveMaker styles are defined in CSS. A partial CSS support is added so that WaveMaker developer can define styles in CSS. Donot add CSS classes copied from web preview HTML DOM tree. More details can be [found here](../how_to/styles.html).
+In WaveMaker, styles are typically defined in CSS but React Native does not support CSS. Therefore, you define React Native styles in JavaScript.
+
+We included partial support for CSS usage so that WaveMaker developers can define styles in CSS. Do not add CSS classes copied from the web preview HTML DOM tree. For more information, see [React Native Style API Documentation](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/anchor/).
 
 ### Theme
 
-Themes are supported. Click here to learn about how to generate themes.
+React Native supports Themes. For more information,learn about how to [generate themes](/learn/react-native/theme).
 
 ### Prefabs
 
-Prefabs are supported. But, following limitations are applicable
-- HTML DOM and API to manipulate it, should not be used.
-- As a prefab can be used in a web app, Cordova based mobile app or a React Native based mobile app. Stylsheet of a prefab has to be divided into two parts by the line ``` /*REACT_NATIVE_STYLES*/ ```. After this line, styles for React Native environment can be placed.
-- Adding a JS file is not supported
-- Widgets that are not supportetd by WaveMaker React Native runtime, are discarded.
+A Prefab can be used in a web app, a Cordova-based mobile app, or a React Native-based mobile app. Follow the guidelines below for developing a Prefab so that the prefab renders properly in the web app, Cordova, and React Native mobile apps.
 
-## Additional Resources
+- The stylesheet of a prefab should be divided into two parts by the line:
+
+``` /*REACT_NATIVE_STYLES*/ ```
+
+- After the above line, you can place styles for React Native environment.
+- Adding a JS file is not supported.
+- [Widgets that are not supported](/learn/react-native/supported-widgets) by WaveMaker React Native runtime are discarded.
+
+## See Also
 
 [React JS](https://reactjs.org/)  
 [React Native](https://reactnative.dev/)    

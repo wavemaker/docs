@@ -1,6 +1,6 @@
 ---
 title: WaveMaker Online Release
-id: "wavemaker-release-notes"
+id: ""
 sidebar_label: "Online Release (WMO)"
 
 ---
@@ -9,7 +9,7 @@ sidebar_label: "Online Release (WMO)"
 This document applies to WaveMaker Online (WMO) users. If you are an Enterprise user, see [WaveMaker Enterprise Release](/learn/enterprise-release-notes).
 :::
 
-See what's new in WaveMaker—including new features, enhancements, and bug fixes in named versions. If you experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com). We mention your fixes in release notes, and you can track some critical known issues [here](/learn/wavemaker-known-issues).
+See what's new in WaveMaker—including new features, enhancements, and bug fixes. If you experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com). We mention your fixes in release notes, and you can track some [critical known issues](/learn/wavemaker-known-issues).
 
 Follow our [team blog](/learn/blog) to learn product updates from the engineers who develop it. 
 
@@ -21,12 +21,20 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1)|New features and bug fixes | 06 June 2022 |
+|[WaveMaker 11.1.2](/learn/wavemaker-release-notes/v11-1-2) <p style="color:red;">*latest*</p>  |Layout and Flex in Cordova, React Native fixes, including Style, Form and Chart and other bug fixes. | 26 September 2022 |
+|[v11.1.0](/learn/wavemaker-release-notes/v11-1-0) <br> known issue: <br> [wm-sspa-cli](/learn/wavemaker-release-notes/v11-1-0#known-issues)|**wm-sspa-cli** is now supported. <br> [Read updated commands for invoking CLI](/learn/app-development/sspa/micro-frontend#invoke-cli). | 12 September 2022 |
+|[WaveMaker 11.1.1](/learn/wavemaker-release-notes/v11-1-1) |Bug fixes include authentication issues in React Native, Teams Portal navigation, and more.| 5 September 2022 |
+|[WaveMaker 11.1.0](/learn/wavemaker-release-notes/v11-1-0)  |Feature-packed with Angular 12 update, React Native improvements, Azure Repos, MTLS for REST APIs, and more.| 29 August 2022 |
+|[WaveMaker 11.0.3 Beta](/learn/wavemaker-release-notes/v11-0-3) |Issues related to Content Security Policy, Chips widget and Teams Portal configuration.| 25 July 2022 |
+|[WaveMaker 11.0.2 Beta](/learn/wavemaker-release-notes/v11-0-2) |Issues related to importing Web Services with OAuth 2.0 and previewing applications with Prefabs and more such bug fixes are addressed. | 11 July 2022 |
+|[WaveMaker 11 Beta (11.0.1)](/learn/wavemaker-release-notes/v11-0-1)|Includes new features like React Native, Multi-version Studio, API composer toolkit, API Mock Server extension, pagination for imported APIs, Java 11 and SAML library updates. [Read more.](/learn/app-development/wavemaker-overview/wavemaker-11-beta) | 06 June 2022 |
+
 
 ### WaveMaker Online v10.x
 
 |Major Releases|Named Version|What's in it| Release Date|
 |---|---|---|---|
+|**v10.15**|**[v10.15.0](/learn/wavemaker-release-notes/v10-15-0)**|**Fixes include issues related to Content Security Policy (CSP).** | **25 July 2022** |
 |**v10.14**|**[v10.14.0](/learn/wavemaker-release-notes/v10-14-0)**|**Bug fixes** | **1 May 2022** |
 |**v10.13**|**[v10.13.0](/learn/wavemaker-release-notes/v10-13-0)**|**New features and bug fixes** | **14 March 2022** | 
 ||[v10.13.1](/learn/wavemaker-release-notes/v10-13-1)|Bug fixes | 23 March 2022 | 
@@ -88,7 +96,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 ||v10.2.8|Bug fixes | 08 January 2020 | 
 |**v10.1**|**[v10.1.0](/learn/wavemaker-release-notes/v10-1-0)**|**New features and bug fixes** |**19 August 2019** |
 ||v10.1.2 |Bug fixes |16 September 2019 |
-|**v10 Beta**|**[Preview: v10](/learn/wavemaker-release-notes/v10-0-preview)**|**Try new features and enhancements**   before 10.GA release|**20 November, 2018**|
+|**v10 Beta**|**[Preview: v10](/learn/wavemaker-release-notes/v10-0-preview)**|**Try new features and enhancements** <br> before 10.GA release|**20 November, 2018**|
 |**v10 GA**|**[v10.0.0 GA](/learn/wavemaker-release-notes/v10-0-ga)**|**New features and bug fixes** |**10 April, 2019** |
 ||[v10.0.1](/learn/wavemaker-release-notes/v10-0-1)|Migration bug fixes |15 April, 2019| 
 ||[v10.0.2](/learn/wavemaker-release-notes/v10-0-2)|New features and bug fixes |24 April, 2019 | 
@@ -99,7 +107,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1)
+Last updated: [WaveMaker 11 GA](/learn/wavemaker-release-notes/v11-1-0)
 
 ---
 
@@ -108,45 +116,87 @@ Last updated: [WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1)
 | Description | JS Library | Version |
 | --- | --- | --- |
 | JS Binding | jquery | 3.4.1 |
-| | jquery-ui* | 1.12.1 |
+|  | jquery-ui* | 1.12.1 |
 | MVC Framework | angular| 11.2.14 |
-| | angular-ui-bootstrap | 3.3.6 |
-| | ngx-bootstrap | 6.2 |
+|  | angular-ui-bootstrap | 3.3.6 |
+|  | ngx-bootstrap | 6.2 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
-| | nvd3 | 1.8.6 |
+|  | nvd3 | 1.8.6 |
 | Built-in functions | lodash | 4.17.19|
 | Device support, gestures | hammerjs | 2.0.8 |
 
-Optimized jQuery-UI library, excluding unwanted components like an accordion, date picker, dialog, progress bar, spinner, tabs, and all jQuery-UI Effects.
+Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
 ### Backend Frameworks
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-| | Spring Framework <td bgcolor="#44aaf4"> 5.3.15 -> 5.3.20</td>|
-| Security framework | Spring Security <td bgcolor="#44aaf4"> 5.5.2 -> 5.6.3</td>|
-| Java JSON utilities | Gson <td bgcolor="#44aaf4"> 2.8.9 -> 2.9.0</td>|
-| DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 5.5.7.Final -> 5.6.9.Final</td>|
-| Sample database | HSQL <td bgcolor="#44aaf4"> 2.5.1 -> 2.6.1</td>|
-| JSON library | Jackson <td bgcolor="#44aaf4"> 2.12.5 -> 2.13.3</td>|
-| Logging framework | SLF4j <td bgcolor="#44aaf4"> 1.7.32 -> 1.7.36 </td>|
-| Logging Implementation | Log4j2 <td bgcolor="#44aaf4"> 2.17.1 -> 2.17.2 </td>|
-| Http client library | HttpComponents | httpclient- 4.5.13   httpmime- 4.5.6 |
-| Servlet Framework | <td bgcolor="#44aaf4"> 3.1.0 -> 4.0.1 </td>|
-|Database Connection Pooling | HikariCP <td bgcolor="#44aaf4"> 4.0.3 -> 5.0.1 </td>|
+|  | Spring Framework  | 5.3.21|
+| Security framework | Spring Security <td bgcolor="#44aaf4"> 5.6.6 to 5.7.3|
+| Java JSON utilities | Gson   <td bgcolor="#44aaf4"> 2.9.0 to 2.9.1|
+| DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 5.6.9.Final to 5.6.10.Final|
+| Sample database | HSQL <td bgcolor="#44aaf4"> 2.6.1 to 2.7.0|
+| JSON library | Jackson | 2.13.3|
+| Logging framework | SLF4j | 1.7.36 |
+| Logging Implementation | Log4j2 <td bgcolor="#44aaf4"> 2.17.2 to 2.18.0|
+| Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
+| Servlet Framework |  | 4.0.1 |
+|Database Connection Pooling | HikariCP | 5.0.1 |
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
-| JDK <td bgcolor="#44aaf4"> 11 </td>|
+| JDK | 11 |
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
-| Tomcat <td bgcolor="#44aaf4"> 9.0* </td>|
-| Cordova (mobile apps)   Android   iOS |11.0.0   10.1.2   6.1.0 |
+| Tomcat | 9.0* |
+| Cordova (mobile apps) <br> Android <br> iOS |11.0.0 <br> 10.1.2  <br> 6.1.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
+
+# Build Environment for Multi-version Studio
+---
+
+## Build Environment 11 
+
+### React Native 11
+
+|Description|	Version|
+|---|---|
+|Java |11 |
+|Node|14.15.5|
+|Maven <td bgcolor="#44aaf4">	3.8.1 to 3.8.6|
+|npm | 7.20.3|
+|Ant|	1.10.11|
+|Git|	2.26| 
+
+### Angular Web and Mobile 11
+
+|Description|	Version|
+|---|---|
+|Java | 11 |
+|Node | 12.22.3|
+|Maven <td bgcolor="#44aaf4"> 3.8.1 to 3.8.6|
+|npm |	6.14.13|
+|Ant|	1.10.11|
+|Git|	2.26| 
+
+For more information about building project with Maven, see [here](/learn/app-development/deployment/building-with-maven).
+
+## Build Environment 10
+
+### Angular Web and Mobile 10
+
+|Description|	Version|
+|---|---|
+|Java |1.8 |
+|Node | 12.22.3|
+|Maven|	3.8.1|
+|npm |	6.14.13|
+|Ant|	1.10.11|
+|Git|	2.26| 
 
 ## Older Releases
 
