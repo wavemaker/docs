@@ -1,6 +1,6 @@
 ---
 title: "APK: Debugging React Native Android App Installed in Mobile"
-id: ""
+id: "expo-apk-debug"
 sidebar_label: "Debug APK"
 ---
 ---

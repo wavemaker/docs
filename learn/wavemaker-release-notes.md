@@ -1,6 +1,6 @@
 ---
 title: WaveMaker Online Release
-id: ""
+id: "wavemaker-release-notes"
 sidebar_label: "Online Release (WMO)"
 
 ---

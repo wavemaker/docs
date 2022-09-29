@@ -12,9 +12,9 @@
             "app-development/ui-design/designing-app",
             "app-development/ui-design/page-creation",                 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Layout and Styles",
-          "ids": 
+          "items": 
             [     
               "app-development/ui-design/page-concepts/page-layouts",
               "app-development/ui-design/page-concepts/page-templates",
@@ -24,9 +24,9 @@
         },           
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Page Configure",
-          "ids": 
+          "items": 
             [
             "app-development/ui-design/page-artefacts",
             "app-development/ui-design/page-concepts/page-cache",
@@ -39,9 +39,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Page Actions",
-          "ids": 
+          "items": 
             [
             "app-development/ui-design/page-concepts/page-navigation",
             "app-development/ui-design/page-concepts/page-events"     
@@ -49,9 +49,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Custom Development",
-          "ids":
+          "items":
         
             [
               "app-development/ui-design/theme-builder",
@@ -71,9 +71,9 @@
         "app-development/services/database-services/database-services",
         "app-development/services/database-tools",        
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Database Designing",
-          "ids": 
+          "items": 
           [                        
             "app-development/services/database-services/working-with-databases",            
             "app-development/services/database-services/data-modelling",
@@ -85,9 +85,9 @@
           },
 
           {
-            "type": "subcategory",
+            "type": "category",
             "label": "Accessing Database",
-            "ids": 
+            "items": 
             [  
             "app-development/services/database-access",
             "app-development/services/database-services/orm-artifacts"
@@ -95,9 +95,9 @@
           },
 
           {
-            "type": "subcategory",
+            "type": "category",
             "label": "Queries and Procedures",
-            "ids": 
+            "items": 
             [ 
             "app-development/services/database-services/working-with-queries",
             "app-development/services/database-services/working-stored-procedures",
@@ -108,9 +108,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Database Variables & API",
-          "ids": 
+          "items": 
             [            
             "app-development/variables/database-crud",
             "app-development/services/database-crud-event-listeners",
@@ -125,9 +125,9 @@
       [   
           "app-development/services/web-services/web-services",                                     
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Restful",
-          "ids": 
+          "items": 
           [
             "app-development/services/web-services/rest-services",
             "app-development/app-security/securing-server-side-properties-rest-services",
@@ -137,9 +137,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "SOAP",
-          "ids": 
+          "items": 
           [
             "app-development/services/web-services/working-with-soap-services",
             "app-development/services/api-designer/web-service-apis"                         
@@ -147,18 +147,18 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Websocket",
-          "ids": 
+          "items": 
           [            
             "app-development/services/web-services/working-with-websockets"                 
           ]      
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "APIs",
-          "ids": 
+          "items": 
           [
             "app-development/services/api-designer/api",
 		        "app-development/services/api-mock-server",
@@ -167,9 +167,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Variables",
-          "ids": 
+          "items": 
             [ 
             "app-development/variables/crud-variable",
             "app-development/variables/web-service",
@@ -184,9 +184,9 @@
       [   
           "app-development/services/java-services/java-service",     
           {
-            "type": "subcategory",
+            "type": "category",
             "label": "Java Services",
-            "ids": [
+            "items": [
                     "app-development/services/java-services/java-integration-services",
                     "app-development/services/java-services/java-integration-database-service",
                     "app-development/services/java-services/variables",
@@ -194,18 +194,18 @@
                     ]           
           },
           {
-            "type": "subcategory",
+            "type": "category",
             "label": "Java Services Variables & API",
-            "ids": [ 
+            "items": [ 
               "app-development/variables/java-services",
               "app-development/services/api-designer/java-service-apis"         
               ]
           },  
 
           {
-            "type": "subcategory",
+            "type": "category",
             "label": "Source Files",
-            "ids": [
+            "items": [
               "app-development/services/3rd-party-libraries",
               "app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
               "app-development/services/3rd-party-libraries/using-3rd-party-jar-files"]           
@@ -215,9 +215,9 @@
       "Variables & Actions":
       [                             
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Variables",
-          "ids": [
+          "items": [
           "app-development/variables/variables",                                          
           "app-development/variables/model-variable",
           "hybrid-mobile/device-variables"
@@ -225,18 +225,18 @@
         }, 
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Binding",
-          "ids": [        
+          "items": [        
           "app-development/variables/variable-binding",
           "app-development/variables/custom-formatter"
           ]
         },
          
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Actions",
-          "ids": [
+          "items": [
             "app-development/variables/variables-actions",
             "app-development/variables/navigation-action",
             "app-development/variables/login-action",
@@ -246,9 +246,9 @@
           ]           
         }, 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Events",
-          "ids": [
+          "items": [
             "app-development/variables/events",
             "app-development/variables/accessing-elements-via-javascript"
           ]
@@ -258,9 +258,9 @@
       "Security": 
       [
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "App Security",
-          "ids": [
+          "items": [
             "app-development/app-security/app-security",
             "app-development/app-security/authentication",        
             "app-development/app-security/authorization",
@@ -280,9 +280,9 @@
           ]
         },     
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Security Variable and API",
-          "ids": 
+          "items": 
           [
           "app-development/app-security/security-variables",
           "app-development/app-security/remember-me",
@@ -301,9 +301,9 @@
         "app-development/deployment/build-options", 
         "hybrid-mobile/mobile-automation-appium",  
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Developer Integration",
-          "ids": [ 
+          "items": [ 
             "app-development/wavemaker-overview/project-user-management",       
             "app-development/dev-integration/developer-collaboration",
             "app-development/dev-integration/extending-application-using-ides",
@@ -312,9 +312,9 @@
           ]
         },
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Add-ons",
-          "ids": [
+          "items": [
             "app-development/wavemaker-overview/localization",
             "app-development/wavemaker-overview/artifacts-repository"
           ]
@@ -327,9 +327,9 @@
             "app-development/deployment/deployment-profile",                 
             "app-development/deployment/one-click-deployment",
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "WaveMaker CI/CD Pipeline",
-          "ids": [
+          "items": [
             "app-development/deployment/release-management",
             "app-development/deployment/configuration-profiles",
             "app-development/deployment/configuration-management",
@@ -338,9 +338,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Pipeline Configuration",
-          "ids": [    
+          "items": [    
             "app-development/deployment/default-pipelines",
             "app-development/deployment/configure-pipelines"
            
@@ -348,9 +348,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Deploy to Cloud Providers",
-          "ids": [    
+          "items": [    
             "app-development/deployment/deployment-to-aws",
             "app-development/deployment/deployment-to-azure",
             "app-development/deployment/deployment-google-cloud",
@@ -359,9 +359,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Pipeline Configuration cont.",
-          "ids": [    
+          "items": [    
             "app-development/deployment/phase-configuration",
             "app-development/deployment/webhooks-integration",
             "app-development/deployment/tests-integration"
@@ -369,17 +369,17 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Manage Deployed Apps",
-          "ids": [    
+          "items": [    
             "app-development/deployment/manage-deployed-apps"
             ]
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Integrate with your CI/CD Providers",
-          "ids": [    
+          "items": [    
             "app-development/deployment/push-code-to-external-repo",
             "app-development/deployment/integration-with-custom-vcs-provider",
             "app-development/deployment/export-wavemaker-application",
@@ -392,9 +392,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "WaveMaker apps Interation with CDN",
-          "ids": [    
+          "items": [    
             "app-development/deployment/app-integration-with-aws-cdn",
             "app-development/deployment/app-integration-with-azure-cdn"
             ]
@@ -402,9 +402,9 @@
 
 
         {
-            "type": "subcategory",
+            "type": "category",
             "label": "Deployment to external web servers",
-            "ids": [ 
+            "items": [ 
             "app-development/deployment/deployment-web-server",
             "how-tos/wavemaker-application-deployment-tomcat",
             "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
@@ -560,17 +560,17 @@
   [
     "on-premise/observability/introduction",
     {
-      "type": "subcategory",
+      "type": "category",
       "label": "Logs Aggregation",
-      "ids": [
+      "items": [
         "on-premise/observability/logs-aggregation/overview",
         "on-premise/observability/logs-aggregation/kibana"
       ]
     },
     {
-      "type": "subcategory",
+      "type": "category",
       "label": "Metrics Collection",
-      "ids": [
+      "items": [
         "on-premise/observability/metrics-collection/overview",
         "on-premise/observability/metrics-collection/prometheus",
         "on-premise/observability/metrics-collection/alerts",
@@ -629,9 +629,9 @@
         "hybrid-mobile/first-mobile-app",       
 
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Mobile Design",
-        "ids": 
+        "items": 
         [
         "hybrid-mobile/mobile-page-concepts",
         "hybrid-mobile/gesture-support",
@@ -641,9 +641,9 @@
       },
 
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Mobile Installer",
-        "ids": 
+        "items": 
         [
         "hybrid-mobile/test-run",
         "hybrid-mobile/debugging-mobile-apps",        
@@ -653,16 +653,15 @@
         "hybrid-mobile/mobile-build-manual",
         "hybrid-mobile/mobile-ios-android-distribution-certificates",
         "hybrid-mobile/export-cordova-zip",
-        "hybrid-mobile/mobile-build-phonegap",
         "hybrid-mobile/mobile-build-manual",
         "hybrid-mobile/mobile-build-appchef"
         ]
       },
 
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Mobile Integrations",
-        "ids": [
+        "items": [
         "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",        
         "hybrid-mobile/mobile-integrations-amazon-sns",
         "hybrid-mobile/use-push-notification-wm-mobile-app",
@@ -670,9 +669,9 @@
       },
 
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Offline Features",
-        "ids": [
+        "items": [
         "hybrid-mobile/offline-data-support",
         "hybrid-mobile/offline-data-support-implementation",
         "hybrid-mobile/switching-offline-online-mode"]
@@ -729,8 +728,6 @@
 
           "UI design":
           [                       
-            "how-to-app-development",
-            "how-to-widgets",
             "how-tos/passing-parameters-pages",
             "how-tos/passing-parameters-partial-page",
             "how-tos/script-access",
@@ -1206,9 +1203,9 @@
     "Navigation":
     [
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Nav",
-        "ids": 
+        "items": 
           [
             "app-development/widgets/navigation/nav",
             "app-development/widgets/navigation/nav-basic-usage"
@@ -1216,36 +1213,36 @@
       },
       
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Nav Bar",
-        "ids": 
+        "items": 
           [
             "app-development/widgets/navigation/nav-bar"
           ]
       },
             
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Breadcrumb",
-        "ids": 
+        "items": 
           [
             "app-development/widgets/navigation/breadcrumb",
             "app-development/widgets/navigation/breadcrumb-use-cases"
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Dropdown Menu",
-        "ids": 
+        "items": 
           [
             "app-development/widgets/navigation/dropdown-menu",
             "app-development/widgets/navigation/dropdown-menu-use-cases"
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Popover",
-        "ids": 
+        "items": 
           [                 
           "app-development/widgets/navigation/popover",
           "app-development/widgets/navigation/popover-basic-usage"
@@ -1286,9 +1283,9 @@
       "app-development/custom-widgets/prefab-with-partials",
       "app-development/custom-widgets/use-cases-prefabs",
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Prefabs Directory",
-        "ids": 
+        "items": 
           [
       "app-development/widgets/prefab/youtube",
       "app-development/widgets/prefab/googlemaps",
@@ -1300,9 +1297,9 @@
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "OAuth",
-        "ids": 
+        "items": 
           [
       "app-development/widgets/prefab/oauth-prefabs",
       "app-development/widgets/prefab/oauth-prefabs/box",
@@ -1322,9 +1319,9 @@
       "wavemaker-release-notes",
       "enterprise-release-notes",
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "What's new",
-        "ids": 
+        "items": 
           [
           "app-development/wavemaker-overview/wavemaker-11-beta",
           "app-development/wavemaker-overview/faqs-11",
@@ -1335,9 +1332,9 @@
     "Current v11.x": 
     [
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 11.1.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v11-1-2",
               "wavemaker-release-notes/v11-1-1",              
@@ -1345,9 +1342,9 @@
             ]
         },
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 11.0.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v11-0-3",
               "wavemaker-release-notes/v11-0-2",
@@ -1359,33 +1356,33 @@
     "Release v10.x": 
       [
             {
-        "type": "subcategory",
+        "type": "category",
         "label": "WaveMaker 10",
-        "ids": 
+        "items": 
           [ 
             "wavemaker-release-notes/v10-release-summary"
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.15.x",
-        "ids": 
+        "items": 
           [ 
             "wavemaker-release-notes/v10-15-0"
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.14.x",
-        "ids": 
+        "items": 
           [ 
             "wavemaker-release-notes/v10-14-0"
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.13.x",
-        "ids": 
+        "items": 
           [ 
             "wavemaker-release-notes/v10-13-0",
             "wavemaker-release-notes/v10-13-1",
@@ -1393,9 +1390,9 @@
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.12.x",
-        "ids": 
+        "items": 
           [                       
             "wavemaker-release-notes/v10-12-0",
             "wavemaker-release-notes/v10-12-1",
@@ -1403,9 +1400,9 @@
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.11.x",
-        "ids": 
+        "items": 
           [ 
             "wavemaker-release-notes/v10-11-0",
             "wavemaker-release-notes/v10-11-1",
@@ -1413,9 +1410,9 @@
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.10.x",
-        "ids": 
+        "items": 
           [ 
             "wavemaker-release-notes/v10-10-0",
             "wavemaker-release-notes/v10-10-1",            
@@ -1424,9 +1421,9 @@
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.9.x",
-        "ids": 
+        "items": 
           [             
             "wavemaker-release-notes/v10-9-0",
             "wavemaker-release-notes/v10-9-1",
@@ -1434,18 +1431,18 @@
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.8.x",
-        "ids": 
+        "items": 
           [ 
             "wavemaker-release-notes/v10-8-0",
             "wavemaker-release-notes/v10-8-2"
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.7.x",
-        "ids": 
+        "items": 
           [ 
             "wavemaker-release-notes/v10-7-0",
             "wavemaker-release-notes/v10-7-1",
@@ -1456,9 +1453,9 @@
           ]
       },
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.6.x",
-        "ids": 
+        "items": 
           [ 
             "wavemaker-release-notes/v10-6-0",         
             "wavemaker-release-notes/v10-6-1",
@@ -1473,9 +1470,9 @@
       },
 
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.5.x",
-        "ids": 
+        "items": 
           [ 
             "wavemaker-release-notes/v10-5-0",
             "wavemaker-release-notes/v10-5-1", 
@@ -1488,9 +1485,9 @@
       },
 
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.4.x",
-        "ids": 
+        "items": 
           [              
             "wavemaker-release-notes/v10-4-0",
             "wavemaker-release-notes/v10-4-1",
@@ -1499,9 +1496,9 @@
       },
       
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.3.x",
-        "ids": 
+        "items": 
           [              
             "wavemaker-release-notes/v10-3-0",
             "wavemaker-release-notes/v10-3-1",
@@ -1511,9 +1508,9 @@
       },
 
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Versions: 10.2.x",
-        "ids": 
+        "items": 
           [
             "wavemaker-release-notes/v10-2-0",
             "wavemaker-release-notes/v10-2-1",
@@ -1526,18 +1523,18 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 10.1.x",
-          "ids": 
+          "items": 
             [              
               "wavemaker-release-notes/v10-1-0"
             ]
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 10.0.x",
-          "ids": 
+          "items": 
             [              
               "wavemaker-release-notes/v10-0-preview",
               "wavemaker-release-notes/v10-0-ga",
@@ -1552,44 +1549,44 @@
       "Release v9.x": 
       [
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 9.4.x",
-          "ids": 
+          "items": 
             [ 
               "wavemaker-release-notes/v9-4-0"
             ]
 
         },
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 9.3.x",
-          "ids": 
+          "items": 
             [ 
               "wavemaker-release-notes/v9-3-0"
             ]
               
         },
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 9.2.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v9-2-0",
               "wavemaker-release-notes/v9-2-1"              
             ]
         },
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 9.1.x",
-          "ids": 
+          "items": 
             [
         "wavemaker-release-notes/v9-1-0"
             ]
         },
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 9.0.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v9-0-ga",
               "wavemaker-release-notes/v9-0-1",
@@ -1601,17 +1598,17 @@
       "Release v8.x": 
       [
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 8.5.x",
-          "ids": 
+          "items": 
             [
             "wavemaker-release-notes/v8-5-0"
             ]
         },        
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 8.4.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v8-4-0",  
               "wavemaker-release-notes/v8-4-1",
@@ -1621,9 +1618,9 @@
             ]
         },        
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 8.3.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v8-3-0",
               "wavemaker-release-notes/v8-3-1",
@@ -1632,9 +1629,9 @@
             ]
         },
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 8.2.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v8-2-0",
               "wavemaker-release-notes/v8-2-3"                     
@@ -1642,9 +1639,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 8.1.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v8-1-0",
               "wavemaker-release-notes/v8-1-1"                     
@@ -1652,9 +1649,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 8.0.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v8-0-beta",
               "wavemaker-release-notes/v8-0-ga",
@@ -1685,9 +1682,9 @@
       "wmo-setup",      
 
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "General",
-        "ids": 
+        "items": 
           [
           "app-development/wavemaker-app-development-faqs/what-is-wavemaker-app", 
           "app-development/wavemaker-app-development-faqs/skills-need-to-build-wavemaker-app", 
@@ -1699,9 +1696,9 @@
         },
  
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Architecture",
-          "ids": 
+          "items": 
             [
               "app-development/wavemaker-app-development-faqs/wavemaker-application-architecture",
               "app-development/wavemaker-app-development-faqs/wavemaker-architecture",
@@ -1710,9 +1707,9 @@
         },
         
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Widgets and Services",
-          "ids": 
+          "items": 
             [   
               "app-development/wavemaker-app-development-faqs/widgets-in-wavemaker",     
               "app-development/wavemaker-app-development-faqs/building-widget-extension-custom-widget",    
@@ -1726,9 +1723,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Security",
-          "ids": 
+          "items": 
             [             
               "app-development/wavemaker-app-development-faqs/security-in-wavemaker",
               "app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps"
@@ -1736,9 +1733,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Mobile App",
-          "ids": 
+          "items": 
             [ 
               "app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach",              
               "app-development/wavemaker-app-development-faqs/publishing-app-to-app-store",
@@ -1747,9 +1744,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Development and Code",
-          "ids": 
+          "items": 
             [ 
               "app-development/wavemaker-app-development-faqs/working-with-multiple-developers",
               "app-development/wavemaker-app-development-faqs/libraries-used-app-runtime",
@@ -1759,9 +1756,9 @@
         },
 
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Licenses and other",
-          "ids": 
+          "items": 
             [ 
               "app-development/wavemaker-app-development-faqs/redistributing-licensing",     
               "app-development/wavemaker-app-development-faqs/application-stack-upgrades",

@@ -1,7 +1,7 @@
 ---
 title: "Build React Native app installers using AppChef"
 sidebar_label: "Build Installers"
-id: ""
+id: "build-installers"
 ---
 ---
 

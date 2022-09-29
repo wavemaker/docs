@@ -1,6 +1,6 @@
 ---
 title: "Layout"
-id: ""
+id: "layout"
 ---
 
 As the name suggests, **Layout** widget is used to build scaffold to hold widgets. Underlyingly, this widget uses wm-linearlayout and wm-linearlayoutitem components. Let us understand these components first.

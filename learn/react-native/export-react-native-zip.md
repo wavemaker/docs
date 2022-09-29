@@ -1,6 +1,6 @@
 ---
 title: "Export React Native Project as Zip"
-id: ""
+id: "export-react-native-zip"
 sidebar_label: "Export as Zip"
 ---
 ---
