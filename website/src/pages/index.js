@@ -91,7 +91,7 @@ export default class Index extends React.Component {
                             {this.getExtensions()}
                         </div>
                     </div>
-                    <div className='container-fluid'>
+                    <div className='container-fluid helpfull-resources'>
                         <div className='container padding-vert--xl'>
                             <h1 className='text--center'>Helpful Resources</h1>
                             <div className='row padding--md'>
@@ -112,43 +112,65 @@ export default class Index extends React.Component {
                                     </ul>
                                 </div>
                                 <div className='col'>
-                                    <div className='content-wrapper'>
-                                        <div className='footerContent'>
+                                    <ul>
+                                        <li>
                                             <a href='/learn/docs/app-development/wavemaker-overview/platform-overview'>Platform</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/connectors/connectors-architecture#docsNav'>Architecture</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/app-development/wavemaker-overview/faqs-11-beta'>FAQs</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/app-development/wavemaker-overview/product-walkthrough'>Studio Walkthrough</a>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div className='col'>
-                                    <div className='content-wrapper'>
-                                        <div className='footerContent'>
+                                    <ul>
+                                        <li>
                                             <a href='/learn/docs/blog/2020/04/21/wavemaker-openapi-import'>API References</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/app-development/wavemaker-app-development-faqs/widgets-in-wavemaker'>Widgets API</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/react-native/styles'>React Native Styles</a>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div className='col'>
-                                    <div className='content-wrapper'>
-                                        <div className='footerContent'>
+                                    <ul>
+                                        <li>
                                             <a href='/learn/docs/documentation-reference#quick-start-guide'>Quick Topics</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/how-tos/localization-wavemaker-apps'>Localization</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/how-tos/building-pwa-app#what-is-pwa-progressive-web-application'>PWA</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/blog/2020/02/25/wavemaker-micro-front-end-support'>Micro Frontend</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/app-development/sspa/micro-frontend'>SSPA</a>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div className='col'>
-                                    <div className='content-wrapper'>
-                                        <div className='footerContent'>
+                                    <ul>
+                                        <li>
                                             <a href=''>Community</a>
+                                        </li>
+                                        <li>
                                             <a href=''>Forum</a>
+                                        </li>
+                                        <li>
                                             <a href='https://github.com/wavemaker'>Github</a>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
