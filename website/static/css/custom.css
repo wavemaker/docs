@@ -11,6 +11,25 @@ body {
     margin-bottom: -5px;
     margin-right: 2px;
 }
+.spl-icon{
+    position: relative;
+}
+.spl-icon::before{
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 24px;
+    background-image: url("/img/cube.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.header-right::before{
+    opacity: 0.5;
+    top: 0;
+    right: 5%;
+}
 
 .footer{
     background-color: #4f5761;
@@ -99,6 +118,12 @@ h3 {
     border-radius: 10px;
     height: 386px;
     position: relative;
+}
+.banner.spl-icon.footer-left::before{
+    width: 34px;
+    height: 30px;
+    bottom: 17px;
+    left: 5%;
 }
 
 .banner .banner-content {

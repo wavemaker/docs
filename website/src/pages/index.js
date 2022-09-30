@@ -63,7 +63,7 @@ export default class Index extends React.Component {
         const Main = () => {
             return (
                 <main className="main-container">
-                    <div className='container banner'>
+                    <div className='container banner spl-icon footer-left'>
                         <div className='row banner-content margin-vert--md'>
                             <div className='col'>
                                 <h1 className='text--center text--semibold banner-Title'>How can I <span className='text--primary'>help</span> you?</h1>
@@ -85,7 +85,7 @@ export default class Index extends React.Component {
                             {this.getCategories()}
                         </div>
                     </div>
-                    <div className='container text--center padding-vert--lg'>
+                    <div className='container text--center padding-vert--lg spl-icon header-right'>
                         <h1>Studio Extensions</h1>
                         <div className='row margin-vert--lg'>
                             {this.getExtensions()}
