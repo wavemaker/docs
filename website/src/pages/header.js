@@ -3,7 +3,7 @@ const React = require('react');
 export default class Header extends React.Component {
     render() {
         return (
-            <nav className="navbar navbar--fixed-top box-shadow--none">
+            <nav className="navbar navbar--fixed-top">
                     <div className="navbar__inner">
                         <div className="navbar__items">
                             <button aria-label="Navigation bar toggle" className="navbar__toggle clean-btn" type="button" tabindex="0">
@@ -25,7 +25,7 @@ export default class Header extends React.Component {
                             <a className="navbar__item navbar__link" href="/learn/docs/wavemaker-release-notes">Releases</a>
                             <a className="navbar__item navbar__link" href="/learn/docs/on-premise/welcome">Blog</a>
                             <div className='navbar__item'>
-                                <a href="https://www.wavemaker.com/get-started/" target="_blank" rel="noopener noreferrer" className="navbar__link button button--warning">Sign In</a>
+                                <a href="https://www.wavemaker.com/get-started/" target="_blank" rel="noopener noreferrer" className="navbar__link button button--warning headerSignIn">Sign In</a>
                             </div>
                         </div>
                     </div>

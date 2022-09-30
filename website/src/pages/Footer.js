@@ -23,41 +23,68 @@ export default class Footer extends React.Component {
 
   render() {
     return (
-      <div>
-        <footer id="footer" className="footer">
-          <div className="row">
-            <div className="column logo-col">
-              <div id="logo">
-                <a href="https://www.wavemaker.com/" target="_blank" >
-                  <img src="/learn/img/WM_logo-final-grey-04.svg" alt="WaveMaker" />
-                </a>
+      <footer /*id="footer"*/ className="footer">
+        <div className='container padding-horiz--lg'>
+          <div className='row footer-actions'>
+            <div className='col col--3'>
+              <a href="https://www.wavemaker.com/" target="_blank" className='logo-name'>
+                <img src="/learn/img/WM_blue_logo.png" alt="WaveMaker" height="32px" />
+                Wavemaker Docs
+              </a>
+            </div>
+            <div className='col col--6 extra-links'>
+              <ul>
+                <li>
+                  <a href="https://www.wavemaker.com/get-started" target="_blank" >Pricing</a>
+                </li>
+                <li>
+                  <a href="https://www.wavemaker.com/partners" target="_blank" >Partners</a>
+                </li>
+                <li>
+                  <a href="https://www.wavemaker.com/customer-stories" target="_blank" >Customers</a>
+                </li>
+                <li>
+                  <a href="https://www.wavemaker.com/about" target="_blank" >About Us</a>
+                </li>
+                <li>
+                  <a href="https://www.wavemaker.com/contact" target="_blank" >Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div className='col col--3 social-media-links'>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/wavemakersoftware" target="_blank" title="Facebook">
+                    <i className="fa fa-facebook fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/c/WaveMaker" target="_blank" title="YouTube">
+                    <i className="fa fa-youtube-play fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/WaveMaker" target="_blank" title="Twitter">
+                    <i className="fa fa-twitter fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/company/wavemaker" target="_blank" title="LinkedIn">
+                    <i className="fa fa-linkedin fa-lg" style={{ 'fontSize': '22px' }}></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className='row copyright text--center'>
+            <div className='col'>
+              <div className='container copyright-text'>
+                <span>Copyright © 2013-2022 WaveMaker, Inc. All rights reserved. </span>
               </div>
             </div>
-            <div className="column navigation">
-              <ul id="nav">
-                <li><a href="https://www.wavemaker.com/get-started" target="_blank" >PRICING</a> </li>
-                <li><a href="https://www.wavemaker.com/partners" target="_blank" >PARTNERS</a> </li>
-                <li><a href="https://www.wavemaker.com/customer-stories" target="_blank" >CUSTOMERS</a> </li>
-                <li><a href="https://www.wavemaker.com/about" target="_blank" >ABOUT US</a> </li>
-                <li><a href="https://www.wavemaker.com/contact" target="_blank" >CONTACT US</a> </li>
-              </ul>
-            </div>
-            <div className="column social-media-list">
-              <ul>
-                <li><a href="https://www.facebook.com/wavemakersoftware" target="_blank" title="Facebook"><i className="fa fa-facebook"></i></a> </li>
-                <li><a href="https://www.youtube.com/c/WaveMaker" target="_blank" title="YouTube"> <i className="fa fa-youtube-play"></i></a> </li>
-                <li><a href="https://twitter.com/WaveMaker" target="_blank" title="Twitter"><i className="fa fa-twitter"></i></a> </li>
-                <li><a href="http://www.linkedin.com/company/wavemaker" target="_blank" title="LinkedIn"><i className="fa fa-linkedin" style={{ 'fontSize': '22px' }}></i></a> </li>
-              </ul>
-            </div>
-          </div>
-        </footer>
-        <div id="copyright">
-          <div className="container">
-            <div className="copyright-text">Copyright © 2013-2022 WaveMaker, Inc. All rights reserved. </div>
           </div>
         </div>
-      </div>
+      </footer>
     );
   }
 }
