@@ -17,6 +17,13 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ---
 
+### WaveMaker Enterprise v11.x
+
+
+|Named Version|Releases Include|What's in it| Release Date|
+|---|---|---|---|
+|**v11.1.3**|- [v10.13.2](/learn/wavemaker-release-notes/v10-13-2) <br> - [v10.15.0](/learn/wavemaker-release-notes/v10-13-1) | New features and bug fixes|03 October 2022|
+
 
 ### WaveMaker Enterprise v10.x
 

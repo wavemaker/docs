@@ -7,15 +7,18 @@ sidebar_label: "Users Onboarding"
 
 Configure Users and Authentication Providers.
 
-## Add Users from Launchpad
+## Add User from the Launchpad
 
-- Add from Users -> Add New User Section.
+- Add from User -> Add New User Section.
+- Add User to Specific Team from Launchpad Teams section
 - Authentication will be taken care by Platform.
 
 ## Add Authentication Provider
 
 - Add from User On-boarding -> Add Authorization Provider section.
 - Authentication will be dedicated to SSO.
+- User will be part of Default/First Team automatically.
+- You can Add/Remove from the Teams as needed.
 - User will get created by Platform automatically upon first login of any User.
 
 The number of users that can be added is limited by the terms in License and the Developer Capacity of WME.
@@ -62,9 +65,9 @@ The User should be mapped with a respective team to access the studio. Following
 ## Configure Authentication Providers
 
 - Supported Protocols
-- OpenIdConnect
-- CAS
-- LDAP
+  - OpenIdConnect
+  - CAS
+  - LDAP
 - Select the Add Configuration option at user Identity Providers section.
 - Select type of provider and Provide name and fill the required fields respect to that provider.
 - Make Default after adding it.

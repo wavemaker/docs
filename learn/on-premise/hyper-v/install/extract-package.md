@@ -8,13 +8,22 @@ sidebar_label: "Extract Package"
 
 ### Extract Package for WME installer
 
-  - Execute the following command to untar the file and go extracted directory.
+  - Execute the following commands to untar the file and go extracted directory.
 
-    ```bash
-     sudo mkdir -p  /usr/local/content/wme/wme-installer/<version>/
-     sudo tar -xvf  <WME-Installer-Filename> -C /usr/local/content/wme/wme-installer/<version>/
-     cd /usr/local/content/wme/wme-installer/<version>/
-     ```
+    - Make a WME installation directory in the platform. 
+      ```bash
+      sudo mkdir -p  /usr/local/content/wme/wme-installer/<version>/
+      ``` 
+
+    - Extract the Patch packgae file into the installation directory.
+      ```bash
+      sudo tar -xvf  <WME-Installer-Filename> -C /usr/local/content/wme/wme-installer/<version>/
+      ```
+
+    - Go to the extracted directory.
+      ```bash
+      cd /usr/local/content/wme/wme-installer/<version>/
+      ```
   
 [![extract package](/learn/assets/wme-setup/download-and-extract-package.png)](/learn/assets/wme-setup/download-and-extract-package.png)
 
