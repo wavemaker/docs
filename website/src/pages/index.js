@@ -26,7 +26,7 @@ export default class Index extends React.Component {
         categories.forEach((category) => {
             categoryComponents.push(
                 <div className="col" key={categories.indexOf(category)}>
-                    <a href={category.href} className='row category'>
+                    <a href={category.href} className='category'>
                         <img src={category.icon} className='icon'></img>
                         <span className='caption'>{category.label}</span>
                     </a>
@@ -63,7 +63,7 @@ export default class Index extends React.Component {
         const Main = () => {
             return (
                 <main className="main-container">
-                    <div className='container banner'>
+                    <div className='container banner spl-icon footer-left'>
                         <div className='row banner-content margin-vert--md'>
                             <div className='col'>
                                 <h1 className='text--center text--semibold banner-Title'>How can I <span className='text--primary'>help</span> you?</h1>
@@ -77,24 +77,24 @@ export default class Index extends React.Component {
                         {this.state.displayInfoFooter && <div className='banner-footer'>
                             <span className='banner-footer-msg'><img src='/learn/img/speaker.svg' />Learn more about WaveMaker 11 beta and see what's new.</span>
                             <a className='banner-footer-action' href='https://docs.wavemaker.com/learn/app-development/wavemaker-overview/wavemaker-11-beta'>Read more</a>
-                            <a className="banner-footer-closeAction" onClick={() => { this.setState({ displayInfoFooter: false }); }}><img src='/learn/img/closeIcon-black.svg' /></a>
+                            <a className="banner-footer-closeAction" href="javascript:void(0)" onClick={() => { this.setState({ displayInfoFooter: false }); }}><img src='/learn/img/closeIcon-black.svg' /></a>
                         </div>}
                     </div>
                     <div className='container'>
-                        <div className='row margin-vert--xl padding-horiz--lg'>
+                        <div className='row margin-vert--lg padding-horiz--lg'>
                             {this.getCategories()}
                         </div>
                     </div>
-                    <div className='container text--center padding-vert--lg'>
+                    <div className='container text--center padding-vert--lg spl-icon header-right'>
                         <h1>Studio Extensions</h1>
                         <div className='row margin-vert--lg'>
                             {this.getExtensions()}
                         </div>
                     </div>
-                    <div className='container-fluid'>
-                        <div className='container padding-vert--xl'>
+                    <div className='container-fluid helpfull-resources'>
+                        <div className='container margin-top--lg padding-bottom--xl'>
                             <h1 className='text--center'>Helpful Resources</h1>
-                            <div className='row padding--md'>
+                            <div className='row margin-top--lg padding--md'>
                                 <div className='col'>
                                     <ul>
                                         <li>
@@ -112,43 +112,65 @@ export default class Index extends React.Component {
                                     </ul>
                                 </div>
                                 <div className='col'>
-                                    <div className='content-wrapper'>
-                                        <div className='footerContent'>
+                                    <ul>
+                                        <li>
                                             <a href='/learn/docs/app-development/wavemaker-overview/platform-overview'>Platform</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/connectors/connectors-architecture#docsNav'>Architecture</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/app-development/wavemaker-overview/faqs-11-beta'>FAQs</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/app-development/wavemaker-overview/product-walkthrough'>Studio Walkthrough</a>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div className='col'>
-                                    <div className='content-wrapper'>
-                                        <div className='footerContent'>
+                                    <ul>
+                                        <li>
                                             <a href='/learn/docs/blog/2020/04/21/wavemaker-openapi-import'>API References</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/app-development/wavemaker-app-development-faqs/widgets-in-wavemaker'>Widgets API</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/react-native/styles'>React Native Styles</a>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div className='col'>
-                                    <div className='content-wrapper'>
-                                        <div className='footerContent'>
+                                    <ul>
+                                        <li>
                                             <a href='/learn/docs/documentation-reference#quick-start-guide'>Quick Topics</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/how-tos/localization-wavemaker-apps'>Localization</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/how-tos/building-pwa-app#what-is-pwa-progressive-web-application'>PWA</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/blog/2020/02/25/wavemaker-micro-front-end-support'>Micro Frontend</a>
+                                        </li>
+                                        <li>
                                             <a href='/learn/docs/app-development/sspa/micro-frontend'>SSPA</a>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div className='col'>
-                                    <div className='content-wrapper'>
-                                        <div className='footerContent'>
+                                    <ul>
+                                        <li>
                                             <a href=''>Community</a>
+                                        </li>
+                                        <li>
                                             <a href=''>Forum</a>
+                                        </li>
+                                        <li>
                                             <a href='https://github.com/wavemaker'>Github</a>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
