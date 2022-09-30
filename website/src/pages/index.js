@@ -26,7 +26,7 @@ export default class Index extends React.Component {
         categories.forEach((category) => {
             categoryComponents.push(
                 <div className="col" key={categories.indexOf(category)}>
-                    <a href={category.href} className='row category'>
+                    <a href={category.href} className='category'>
                         <img src={category.icon} className='icon'></img>
                         <span className='caption'>{category.label}</span>
                     </a>
@@ -81,7 +81,7 @@ export default class Index extends React.Component {
                         </div>}
                     </div>
                     <div className='container'>
-                        <div className='row margin-vert--xl padding-horiz--lg'>
+                        <div className='row margin-vert--lg padding-horiz--lg'>
                             {this.getCategories()}
                         </div>
                     </div>
@@ -92,9 +92,9 @@ export default class Index extends React.Component {
                         </div>
                     </div>
                     <div className='container-fluid helpfull-resources'>
-                        <div className='container padding-vert--xl'>
+                        <div className='container margin-top--lg padding-bottom--xl'>
                             <h1 className='text--center'>Helpful Resources</h1>
-                            <div className='row padding--md'>
+                            <div className='row margin-top--lg padding--md'>
                                 <div className='col'>
                                     <ul>
                                         <li>

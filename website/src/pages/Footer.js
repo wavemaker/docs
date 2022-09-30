@@ -70,7 +70,7 @@ export default class Footer extends React.Component {
                 </li>
                 <li>
                   <a href="http://www.linkedin.com/company/wavemaker" target="_blank" title="LinkedIn">
-                    <i className="fa fa-linkedin fa-lg" style={{ 'fontSize': '22px' }}></i>
+                    <i className="fa fa-linkedin fa-lg"></i>
                   </a>
                 </li>
               </ul>
