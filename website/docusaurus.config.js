@@ -54,6 +54,7 @@ module.exports = {
       {
         "docs": {
           "path": "../learn",
+          "routeBasePath": "/",
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
           "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/",
@@ -77,32 +78,32 @@ module.exports = {
       },
       "items": [
         {
-          "to": "docs/documentation-reference",
+          "to": "documentation-reference",
           "label": "Get started",
           "position": "left"
         },
         {
-          "to": "docs/app-development/widgets/widget-library",
+          "to": "app-development/widgets/widget-library",
           "label": "Widgets",
           "position": "left"
         },
         {
-          "to": "docs/react-native/react-native",
+          "to": "/react-native",
           "label": "Mobile",
           "position": "left"
         },
         {
-          "to": "docs/howtos-documents",
+          "to": "/howtos-documents",
           "label": "How-to",
           "position": "left"
         },
         {
-          "to": "docs/on-premise/welcome",
+          "to": "/on-premise/welcome",
           "label": "Enterprise",
           "position": "left"
         },
         {
-          "to": "docs/wavemaker-release-notes",
+          "to": "/wavemaker-release-notes",
           "label": "Releases",
           "position": "left"
         },
