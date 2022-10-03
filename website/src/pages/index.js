@@ -19,10 +19,10 @@ export default class Index extends React.Component {
     getCategories() {
         let categoryComponents = [];
         let categories = [
-            { href: '/learn/docs/app-development/widgets/widget-library', icon: '/learn/img/exploreWidgets.svg', label: 'Comprehensive How-to\'s' },
-            { href: '/learn/docs/app-development/custom-widgets/prefabs-overview', icon: '/learn/img/tailorPrefabs.svg', label: 'Tailor Made Prefabs' },
-            { href: '/learn/docs/react-native/react-native', icon: '/learn/img/reactNativeMobileApp.svg', label: 'React Native Mobile Apps' },
-            { href: '/learn/docs/on-premise/welcome', icon: '/learn/img/enterpriseGuide.svg', label: 'Enterprise Guide' }]
+            { href: '/learn/app-development/widgets/widget-library', icon: '/learn/img/exploreWidgets.svg', label: 'Comprehensive How-to\'s' },
+            { href: '/learn/app-development/custom-widgets/prefabs-overview', icon: '/learn/img/tailorPrefabs.svg', label: 'Tailor Made Prefabs' },
+            { href: '/learn/react-native', icon: '/learn/img/reactNativeMobileApp.svg', label: 'React Native Mobile Apps' },
+            { href: '/learn/on-premise/welcome', icon: '/learn/img/enterpriseGuide.svg', label: 'Enterprise Guide' }]
         categories.forEach((category) => {
             categoryComponents.push(
                 <div className="col" key={categories.indexOf(category)}>
@@ -39,11 +39,11 @@ export default class Index extends React.Component {
     getExtensions() {
         let extensionComponents = [];
         let extensions = [
-            { href: '/learn/docs/app-development/ui-design/theme-builder', icon: '/learn/img/themeBuilder.svg', label: 'Theme Builder' },
-            { href: '/learn/docs/app-development/services/api-mock-server', icon: '/learn/img/apiMocking.svg', label: 'API Mocking' },
-            { href: '/learn/docs/app-development/dev-integration/chrome-developer-tool', icon: '/learn/img/devTool.svg', label: 'Dev Tool' },
-            { href: '/learn/docs/teams/overview', icon: '/learn/img/teamPortal.svg', label: 'Teams Portal' },
-            { href: '/learn/docs/connectors/connectors-introduction', icon: '/learn/img/connectors.svg', label: 'Connectors' },
+            { href: '/learn/app-development/ui-design/theme-builder', icon: '/learn/img/themeBuilder.svg', label: 'Theme Builder' },
+            { href: '/learn/app-development/services/api-mock-server', icon: '/learn/img/apiMocking.svg', label: 'API Mocking' },
+            { href: '/learn/app-development/dev-integration/chrome-developer-tool', icon: '/learn/img/devTool.svg', label: 'Dev Tool' },
+            { href: '/learn/teams/overview', icon: '/learn/img/teamPortal.svg', label: 'Teams Portal' },
+            { href: '/learn/connectors/connectors-introduction', icon: '/learn/img/connectors.svg', label: 'Connectors' },
         ]
         extensions.forEach((extension) => {
             extensionComponents.push(<div className='col padding-horiz--sm' key={extensions.indexOf(extension)}>
@@ -98,13 +98,13 @@ export default class Index extends React.Component {
                                 <div className='col'>
                                     <ul>
                                         <li>
-                                            <a href='/learn/docs/'>Learn</a>
+                                            <a href='/learn/'>Learn</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/docs/tutorials'>Tutorial</a>
+                                            <a href='/learn/tutorials'>Tutorial</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/docs/tutorials/leave-management-app'>Exercises</a>
+                                            <a href='/learn/tutorials/leave-management-app'>Exercises</a>
                                         </li>
                                         <li>
                                             <a href=''>Get Training</a>
@@ -114,48 +114,48 @@ export default class Index extends React.Component {
                                 <div className='col'>
                                     <ul>
                                         <li>
-                                            <a href='/learn/docs/app-development/wavemaker-overview/platform-overview'>Platform</a>
+                                            <a href='/learn/app-development/wavemaker-overview/platform-overview'>Platform</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/docs/connectors/connectors-architecture#docsNav'>Architecture</a>
+                                            <a href='/learn/connectors/connectors-architecture#docsNav'>Architecture</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/docs/app-development/wavemaker-overview/faqs-11-beta'>FAQs</a>
+                                            <a href='/learn/app-development/wavemaker-overview/faqs-11'>FAQs</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/docs/app-development/wavemaker-overview/product-walkthrough'>Studio Walkthrough</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href='/learn/docs/blog/2020/04/21/wavemaker-openapi-import'>API References</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/docs/app-development/wavemaker-app-development-faqs/widgets-in-wavemaker'>Widgets API</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/docs/react-native/styles'>React Native Styles</a>
+                                            <a href='/learn/app-development/wavemaker-overview/product-walkthrough'>Studio Walkthrough</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className='col'>
                                     <ul>
                                         <li>
-                                            <a href='/learn/docs/documentation-reference#quick-start-guide'>Quick Topics</a>
+                                            <a href='/learn/blog/2020/04/21/wavemaker-openapi-import'>API References</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/docs/how-tos/localization-wavemaker-apps'>Localization</a>
+                                            <a href='/learn/app-development/wavemaker-app-development-faqs/widgets-in-wavemaker'>Widgets API</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/docs/how-tos/building-pwa-app#what-is-pwa-progressive-web-application'>PWA</a>
+                                            <a href='/learn/react-native/styles'>React Native Styles</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className='col'>
+                                    <ul>
+                                        <li>
+                                            <a href='/learn/documentation-reference#quick-start-guide'>Quick Topics</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/docs/blog/2020/02/25/wavemaker-micro-front-end-support'>Micro Frontend</a>
+                                            <a href='/learn/how-tos/localization-wavemaker-apps'>Localization</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/docs/app-development/sspa/micro-frontend'>SSPA</a>
+                                            <a href='/learn/how-tos/building-pwa-app#what-is-pwa-progressive-web-application'>PWA</a>
+                                        </li>
+                                        <li>
+                                            <a href='/learn/blog/2020/02/25/wavemaker-micro-front-end-support'>Micro Frontend</a>
+                                        </li>
+                                        <li>
+                                            <a href='/learn/app-development/sspa/micro-frontend'>SSPA</a>
                                         </li>
                                     </ul>
                                 </div>
