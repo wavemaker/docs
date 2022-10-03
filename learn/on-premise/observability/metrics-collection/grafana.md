@@ -11,25 +11,25 @@ This is very useful because you do not need to type in Prometheus queries every 
 
 ## How to access Grafana
 
-1) After the WaveMaker login, open the *Launchpad* and click the dial icon located on the top left as shown below
+1) After the WaveMaker login, open the Launchpad and click the Troubleshoot located on the bottom left as shown below.
 
-    ![Launchpad Dial Click](/learn/assets/wme-setup/wme-observability/kibana/launchpad-dial-open.png)
+    [![Launchpad Dial Click](/learn/assets/wme-setup/wme-observability/kibana/launchpad-dial-open.png)](/learn/assets/wme-setup/wme-observability/kibana/launchpad-dial-open.png)
 
 2) In the dial menu, click the "**grafana**" button as shown below
 
-    ![Launchpad Grafana Click](/learn/assets/wme-setup/wme-observability/prometheus/launchpad-grafana-click.png)
+    [![Launchpad Grafana Click](/learn/assets/wme-setup/wme-observability/prometheus/launchpad-grafana-click.png)](/learn/assets/wme-setup/wme-observability/prometheus/launchpad-grafana-click.png)
 
 3) It opens the grafana home page, which should look like the below image
 
-    ![Grafana Home Page](/learn/assets/wme-setup/wme-observability/prometheus/grafana-home-page.png)
+    [![Grafana Home Page](/learn/assets/wme-setup/wme-observability/prometheus/grafana-home-page.png)](/learn/assets/wme-setup/wme-observability/prometheus/grafana-home-page.png)
 
 4) You can access the dashboards by clicking the "**home**" button at the top left
 
-    ![Grafana Home Click](/learn/assets/wme-setup/wme-observability/prometheus/grafana-home-click.png)
+    [![Grafana Home Click](/learn/assets/wme-setup/wme-observability/prometheus/grafana-home-click.png)](/learn/assets/wme-setup/wme-observability/prometheus/grafana-home-click.png)
 
 5) You should be able to see the list of dashboards as shown in the below image.
 
-    ![Grafana Dashboard List](/learn/assets/wme-setup/wme-observability/prometheus/grafana-dashboards-list.png)
+    [![Grafana Dashboard List](/learn/assets/wme-setup/wme-observability/prometheus/grafana-dashboards-list.png)](/learn/assets/wme-setup/wme-observability/prometheus/grafana-dashboards-list.png)
 
 ## Available Dashboards
 
