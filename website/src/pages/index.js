@@ -6,7 +6,7 @@
  */
 
 const React = require('react');
-import Footer from './Footer';
+import Footer from '../theme/Footer/index';
 import Header from './header';
 
 export default class Index extends React.Component {

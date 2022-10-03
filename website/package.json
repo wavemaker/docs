@@ -1,12 +1,13 @@
 {
   "scripts": {
     "examples": "docusaurus examples",
-    "start": "copy-files-from-to && concurrently \"docusaurus start\" \"npx build-slides --watch\"",
-    "start:nw": "concurrently \"docusaurus start --no-watch\" \"npx build-slides\"",
-    "build": "copy-files-from-to && npx build-slides && docusaurus build",
+    "start": "copy-files-from-to && concurrently \"docusaurus start\"",
+    "start:nw": "concurrently \"docusaurus start --no-watch\" ",
+    "build": "copy-files-from-to && docusaurus build",
     "publish-gh-pages": "docusaurus publish",
     "write-translations": "docusaurus write-translations",
-    "version": "docusaurus version",
+    "version": "docusaurus docs:version",
+    "swizzle": "docusaurus swizzle",
     "rename-version": "docusaurus rename-version",
     "test:mdlint": "npx markdownlint ../learn",
     "test:brandlint": "textlint  --rule terminology ../learn/**",
