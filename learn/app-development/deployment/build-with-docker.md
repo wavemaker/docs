@@ -12,9 +12,9 @@ For creating a Docker container, you create a Docker image by building a Dockerf
 
 |Description|Version|
 |---|---|
-|Java |1.8|
+|Java |11|
 |Node|12.22|
-|Maven| 3.8|
+|Maven| 3.8.6|
 |npm|6.14|
 |Ant|1.10|
 
@@ -33,7 +33,7 @@ vi Dockerfile
 You can use the following Dockerfile for building Docker images and create Docker containers by using multi-stage Dockerfile. You can decrease the size of the Docker image and can create lightweight containers as well.
 
 ```Dockerfile
-FROM maven:3.8.1-jdk-8 as maven-java-node
+FROM maven:3.8.6-jdk-11 as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 RUN mkdir -p /usr/local/content/node
 WORKDIR /usr/local/content/node
@@ -52,7 +52,7 @@ ARG build_profile_name
 ENV profile=${build_profile_name}
 RUN  mvn clean install -P${profile}
 
-FROM tomcat:8.5.50
+FROM tomcat:9.0.64
 COPY --from=webapp-artifact /usr/local/content/app/target/*.war /usr/local/tomcat/webapps/
 ```
 
@@ -115,7 +115,7 @@ vi Dockerfile.build
 You can use the following Dockerfile to build Docker images and create Docker containers for creating project war files.
 
 ```Dockerfile
-FROM maven:3.8.1-jdk-8 as maven-java-node
+FROM maven:3.8.6-jdk-11  as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 # installing node 12.22 and npm 6.14 in docker container
 RUN mkdir -p /usr/local/content/node

@@ -37,10 +37,7 @@ The following list provides the currently supported versions for WME patching. K
 
 Following are the patch files you will need in order to install the patch on the WME setup running on your host machine.
 
-- **Ubuntu**
-  - patch file in deb format
-  - corresponding checksum (sha1sum) files
-- **RHEL**
+- **Ubuntu & RHEL**
   - patch file in tar format.
   - corresponding checksum (sha1sum) files
 
