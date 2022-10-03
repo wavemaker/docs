@@ -17,7 +17,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
 
 ### WME Platform Instance
 
-<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 16GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;250 GB to be allocated</li><li>In case of volumes we recommend 3 disks<ul><li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 GB</li><li>/wm-data&nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li><li>/wm-runtime&nbsp; &nbsp;50 GB</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 18.04.5/20.04.2.0 LTS;  RHEL 7.x/8.x</li><li>Kernel 4.4 or latter</li><li>Architecture x86</li></ul></td></tr>
+<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 32GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>4-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;350 GB to be allocated</li><li>In case of volumes we recommend 3 disks<ul><li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 100 GB</li><li>/wm-data&nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li><li>/wm-runtime&nbsp; &nbsp;100 GB</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 18.04.5/20.04.2.0 LTS;  RHEL 7.x/8.x</li><li>Kernel 4.4 or latter</li><li>Architecture x86</li></ul></td></tr>
 <tr><td><strong>Software</strong></td><td><ul><li>docker 20.10.12</li><li>python 3.5 or higher</li><li>wget</li><li>container-selinux-2.107-1.el7.noarch.rpm(Only for RHEL7)</li></ul></td></tr> <tr><td><strong>Network</strong></td><td><ul><li>Static IP with valid DNS</li><li>Ports 80, 443, 8080, 22(for ssh) to developer network range</li><li>Ports to be opened on Platform Instance for Access from StudioWorkspace Instance / AppDeployment Instance<ul><li>Ports : 5000, 8500, 22, 8081, 2200, 8100, 9200, 8000-8020</li></ul></li></td></tr></tbody></table>
 
 
@@ -38,6 +38,7 @@ Adding an instance to either User workspace or Deployed Apps aids in the scala
 
 | WME Version | Developer logins per 16GB WaveMaker Studio Instance | App Deployments per 16GB WaveMaker AppDeployment Instance |
 | --- | --- | --- |
+| v11.x | 12 | 20 |  
 | v10.x | 12 | 20 |
 | v9.4.0 | 14 | 22 |
 
