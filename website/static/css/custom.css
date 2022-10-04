@@ -261,6 +261,7 @@ h3 {
 }
 .category .caption{
     margin: 0 11px;
+    word-break: break-word;
 }
 
 
@@ -376,12 +377,12 @@ h3 {
 }
 
 .helpfull-resources .col{
-
-}
-
-.helpfull-resources .col + .col {
     border: 1px dashed rgb(151 151 151 / 50%);
     border-width: 0 0 0 1px;
+}
+
+.helpfull-resources .col:first-child {
+    border-width: 0;
 }
 
 .helpfull-resources ul{
@@ -625,18 +626,8 @@ h3 {
 /* End - 404 page styles */
 
 @media only screen and (min-width: 736px) and (max-width: 1152px) {
-    .footer-actions{
-        text-align: center;
-    }
-    .extra-links{
-        margin: 1.5rem 0;
-    }
-    .social-media-links{
-        text-align: center;
-    }
-    
     .banner {
-        margin: 20px 32px 25px;
+        /* margin: 20px 32px 25px; */
         height: 386px;
         position: relative;
     }
@@ -648,24 +639,67 @@ h3 {
     .banner .banner-search .navSearchWrapper {
         width: 100%;
     }
-    
-    .helpfull-resources .col + .col {
-        border-width: 1px 0 0 0;
+    .categories .col{
+        padding: 0 2rem;
+        --ifm-col-width: 50%;
+        flex: auto;
     }
-
-    .helpfull-resources ul{
-        padding: 1em;
-    }
-
     .category {
         margin: 10px 0;
         height: 120px;
     }
-
+    .extensions .col{
+        --ifm-col-width: 33.33%;
+        flex: auto;
+    }
+    .extensions{
+        padding: 2rem;
+    }
+    .extensions .row{
+        justify-content: center;
+    }
+    .extensions .col{
+        padding: 0.5rem 1rem !important;
+    }
     .extension {
         margin: 10px 0;
         width: 100%;
     }
+    
+    
+    .helpfull-resources .row{
+        /* justify-content: center; */
+    }
+    .helpfull-resources ul{
+        padding: 1em;
+    }
+    .helpfull-resources .col{
+        border-width: 0 0 1px 0;
+        --ifm-col-width: 33.33%;
+        flex: auto;
+    }
+    .helpfull-resources .col:nth-child(2){
+        border-width: 0 1px;
+    }
+    .helpfull-resources .col:nth-child(4){
+        border-width: 1px 0 0 0;
+    }
+    
+    .helpfull-resources .col:nth-child(5){
+        border-width: 1px 0 0 1px;
+    }
+    
+    .footer-actions{
+        text-align: center;
+        align-items: center;
+    }
+    .extra-links{
+        margin: 1.5rem 0;
+    }
+    .social-media-links{
+        text-align: center;
+    }
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 736px) {
@@ -681,7 +715,7 @@ h3 {
 
     .banner {
         position: relative;
-        margin: 20px 10px 25px;
+        /* margin: 20px 10px 25px; */
         height: 65vh;
         max-height: 326px;
     }
@@ -714,6 +748,10 @@ h3 {
     .extension {
         margin: 10px 20px;
     }
+    .helpfull-resources {
+        background-size: auto;
+    }
+
     .helpfull-resources .col + .col {
         border-width: 1px 0 0 0;
     }
@@ -771,13 +809,6 @@ h3 {
 }
 
 @media only screen and (max-width: 1023px) {
-
-    .reactNavSearchWrapper input#search_input_react,
-    .reactNavSearchWrapper input#search_input_react:focus,
-    .reactNavSearchWrapper input#search_input_react:active {
-        background-color: rgb(244, 244, 244);
-        color: #333;
-    }
 
 }
 

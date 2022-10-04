@@ -80,12 +80,12 @@ export default class Index extends React.Component {
                             <a className="banner-footer-closeAction" href="javascript:void(0)" onClick={() => { this.setState({ displayInfoFooter: false }); }}><img src='/learn/img/closeIcon-black.svg' /></a>
                         </div>}
                     </div>
-                    <div className='container'>
+                    <div className='container categories'>
                         <div className='row margin-vert--lg padding-horiz--lg'>
                             {this.getCategories()}
                         </div>
                     </div>
-                    <div className='container text--center padding-vert--lg spl-icon header-right'>
+                    <div className='container extensions text--center padding-vert--lg spl-icon header-right'>
                         <h1>Studio Extensions</h1>
                         <div className='row margin-vert--lg'>
                             {this.getExtensions()}
