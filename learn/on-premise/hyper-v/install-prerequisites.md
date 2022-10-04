@@ -7,33 +7,9 @@ sidebar_label: "Install Prerequisites Softwares"
 
 ## Ubuntu
 
-### The ssh user has privileges(root/sudo) for install/upgrade utility softwares
+### The ssh user has privileges(root/sudo) user doesn't have privileges for install/upgrade utility softwares
 
 #### Platform Instance
-
-- If given ssh user has privileges(root/sudo) to install/upgrade.
-- WME Installer will automatically install the required software.
-- Same applies for StudioWorkspace Instance / AppDeployment Instance as well.
-- Internet is not required for Installation in this case.
-
-#### StudioWorkspace Instance / AppDeployment Instance
-
-- No need to do any configurations. The Platform will do it automatically.
-
-### The ssh user does not have privileges install/upgrade utility software
-
-#### Platform Instance
-
-- No need to do install any software, WME Installer will automatically install the required software, and execute the below commands to provide required permissions to the ssh nonprivileged user.
-
-```bash
-  usermod -aG docker <user>
-  chown -R <user>:<user> /wm-data  
-```
-
-#### StudioWorkspace Instance / AppDeployment Instance
-
-The given ssh user does not have permission to install software Then install below as per the operating system.
 
 - Install  wget
 
@@ -52,12 +28,6 @@ sudo apt-get install python3 -y
   ```bash
       apt-get install apt-transport-https
       curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-  ```
-
-  - To add docker repository for ubuntu xenial(16.04.6)
-
-  ```bash
-    echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable" > /etc/apt/sources.list.d/docker.list
   ```
 
   - To add docker repository for ubuntu bionic(18.04.5)
@@ -89,10 +59,37 @@ sudo apt-get install python3 -y
 
   ```bash
     sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
-    example: sudo apt-get install docker-ce=5:20.10.7~3-0~ubuntu-focal docker-ce-cli=5:20.10.7~3-0~ubuntu-focal containerd.io -y
+    example: sudo apt-get install docker-ce=5:20.10.12~3-0~ubuntu-focal docker-ce-cli=5:20.10.12~3-0~ubuntu-focal containerd.io -y
   ```
 
-- If the user given to the Platform doesn't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.  
+#### Install Docker using WaveMaker Script
+
+- To install Docker to the latest version, the user need to use their own approach or WaveMaker provides a script to install.
+
+  - Run the following command to install the Docker.
+
+```bash 
+   sudo bash wme-utility.sh --docker-upgrade 
+  ```  
+
+#### StudioWorkspace Instance / AppDeployment Instance
+
+- No need to do any configurations. The Platform will do it automatically.
+
+### The ssh user does not have privileges install/upgrade utility software
+
+#### Platform Instance
+
+```bash
+  usermod -aG docker <user>
+  chown -R <user>:<user> /wm-data  
+```
+
+#### StudioWorkspace Instance / AppDeployment Instance
+
+The given ssh user does not have permission to install software Then install below as per the operating system.
+
+- If the user given to the Platform doesn't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
 - Create a user group if not present in StudioWorkspace Instance / AppDeployment Instance .
   
   ```bash
@@ -117,36 +114,10 @@ sudo apt-get install python3 -y
 
 ### The ssh user has privileges (root/sudo) or user doesn't have privileges for install/upgrade utility softwares
 
-#### Platform Instance
+#### Platform Instance and StudioWorkspace Instance / AppDeployment Instance
 
 - If given ssh user has privileges (root/sudo) or the user doesn't have privileges to install/upgrade. WME Installer will automatically install the Docker software.
 - Install below prerequisites in Platform
-
-- update cache
-
-```bash
-   yum update -y
-```
-
-- Install  wget
-
-```bash
-  yum install wget  -y
-```
-
-- Install python3
-
-```bash
-  yum install python3 -y
-```
-
-#### StudioWorkspace Instance / AppDeployment Instance
-
-Install below software on StudioWorkspace Instance / AppDeployment Instance for unprivileged ssh user's
-
-:::note
-Use the same version numbers as mentioned.
-:::
 
 - update cache
 
@@ -185,24 +156,24 @@ Use the same version numbers as mentioned.
   - To Install Docker in RHEL 7 use the following commands
   
   ```bash
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-20.10.7-3.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.4.6-3.1.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-20.10.7-3.el7.x86_64.rpm
-    sudo yum install docker-ce-cli-20.10.7-3.el7.x86_64.rpm -y
-    sudo yum install containerd.io-1.4.6-3.1.el7.x86_64.rpm -y
-    sudo yum install docker-ce-20.10.7-3.el7.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-20.10.12-3.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.4.9-3.1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-20.10.12-3.el7.x86_64.rpm
+    sudo yum install docker-ce-cli-20.10.12-3.el7.x86_64.rpm -y
+    sudo yum install containerd.io-1.4.9-3.1.el7.x86_64.rpm -y
+    sudo yum install docker-ce-20.10.12-3.el7.x86_64.rpm -y
   ```  
 
   - To Install Docker in RHEL 8 use the following commands
   
   ```bash
     yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-20.10.7-3.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.6-3.1.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-20.10.7-3.el8.x86_64.rpm
-    sudo yum install docker-ce-cli-20.10.7-3.el8.x86_64.rpm -y
-    sudo yum install containerd.io-1.4.6-3.1.el8.x86_64.rpm -y
-    sudo yum install docker-ce-20.10.7-3.el8.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-20.10.12-3.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.9-3.1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-20.10.12-3.el8.x86_64.rpm
+    sudo yum install docker-ce-cli-20.10.12-3.el8.x86_64.rpm -y
+    sudo yum install containerd.io-1.4.9-3.1.el8.x86_64.rpm -y
+    sudo yum install docker-ce-20.10.12-3.el8.x86_64.rpm -y
   ```
 
   ```bash
@@ -216,6 +187,7 @@ Use the same version numbers as mentioned.
 ```bash
   yum install python3 -y
 ```
+
 
 ### Extra configuration on RHEL Platform Instance if ssh user doesn't have privileges(non sudo users)
 
