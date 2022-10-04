@@ -10,13 +10,8 @@ For creating a Docker container, you create a Docker image by building a Dockerf
 
 ## System prerequisites
 
-|Description|Version|
-|---|---|
-|Java |11|
-|Node|12.22.3|
-|Maven| 3.8.6|
-|npm|6.14.13|
-|Ant|1.10.11|
+- You can find the System prerequisites from [Angular Web and Mobile 11](/learn/wavemaker-release-notes/v11-1-2#angular-web-and-mobile-11)
+
 
 ## Build Docker Image
 
