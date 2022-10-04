@@ -45,11 +45,4 @@ Following are the patch files you will need in order to install the patch on th
 Links for WME Patch and the corresponding checksum (sha1sum) files will be provided to you by the WaveMaker team through an email. You need to download the files before starting the installation.
 :::
 
-## Prerequisites
 
-Following are the prerequisites for applying the patch on WME:
-
-- While applying the patches, the WME and services should be in the running state.
-- Ensure that users are not accessing the platform when applying either of the patches.
-- Before applying the patches, take a snapshot/backup of the virtual machine’s current state.
-- While applying the patch, the deployed apps are not accessible.

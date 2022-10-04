@@ -13,10 +13,10 @@ For creating a Docker container, you create a Docker image by building a Dockerf
 |Description|Version|
 |---|---|
 |Java |11|
-|Node|12.22|
+|Node|12.22.3|
 |Maven| 3.8.6|
-|npm|6.14|
-|Ant|1.10|
+|npm|6.14.13|
+|Ant|1.10.11|
 
 ## Build Docker Image
 
@@ -167,11 +167,11 @@ example: docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $H
 - For deploying project war using Tomcat Docker container, please use the below command.
 
 ```bash
-docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 tomcat:8.5
+docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 tomcat:9.0.64
 ```
 
 ```bash
-example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:8.5
+example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:9.0.64
 ```
 
 ### Access Application

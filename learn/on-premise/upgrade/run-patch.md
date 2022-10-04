@@ -9,13 +9,13 @@ sidebar_label: "Run Patch"
 
 - When upgrading from 10.7.x to 11.x.x user needs to download the required content for the migration process. **When the user has already upgraded to 11.x.x WME Version, in that case, there is no need to download migration tar**.
 
-- To download migration tar please run the following command.
+- To download migration tar which will be shared by the WaveMaker team, please run the following command.
 
 ```bash
-    wget https://s3.amazonaws.com/downloads.wavemaker.com/wme/wme.migration/wme-migrations-11.tar
+    wget <WME-Migration-Link>
 ```
 
-- Extract wme_migrations.tar to /usr/local/content/wme/wme-installer/< version>/resources folder, for extract the content run the following command
+- Extract wme_migrations to /usr/local/content/wme/wme-installer/< version>/resources folder, for extract the content run the following command
 
 ```bash
     sudo tar xvf wme_migrations.tar -C /usr/local/content/wme/wme-installer/<version>/resources/
@@ -67,7 +67,6 @@ sidebar_label: "Run Patch"
 - You can start working on Studio once the Instance status has started.
 - If the Instance status UPGRADE_FAILED, then there might be chances of docker version mismatch. You can upgrade docker version using [Manual Docker Upgrade](/learn/on-premise/upgrade/docker-upgrade).
 - Please upgrade the Docker version if it is older than 20.10.12 in your User WorkspaceInstance/AppDeployment Instances.
-
 
 ## Running the UI Patch
 
