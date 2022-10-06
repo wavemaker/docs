@@ -79,7 +79,7 @@ module.exports = {
       "items": [
         {
           "to": "documentation-reference",
-          "label": "Get started",
+          "label": "Guide",
           "position": "left"
         },
         {
@@ -88,29 +88,20 @@ module.exports = {
           "position": "left"
         },
         {
-          "to": "/react-native",
-          "label": "Mobile",
-          "position": "left"
-        },
-        {
-          "to": "/howtos-documents",
-          "label": "How-to",
-          "position": "left"
+          "to": "/wavemaker-release-notes",
+          "label": "Releases",
+          "position": "right"
         },
         {
           "to": "/on-premise/welcome",
-          "label": "Enterprise",
-          "position": "left"
+          "label": "Blog",
+          "position": "right"
         },
         {
-          "to": "/wavemaker-release-notes",
-          "label": "Releases",
-          "position": "left"
-        },
-        {
-          "href": "https://www.wavemaker.com/get-started/",
-          "label": "Sign-in",
-          "position": "left"
+          "to": "https://www.wavemaker.com/get-started/",
+          "label": "Sign In",
+          "position": "right",
+          "className": "navbar__link button button--warning headerSignIn"
         }
       ]
     },
