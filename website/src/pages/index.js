@@ -7,8 +7,6 @@
 
 const React = require('react');
 import Layout from '@theme/Layout';
-import Footer from '../theme/Footer/index';
-import Header from './header';
 
 export default class Index extends React.Component {
     constructor(props) {
