@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.1.2](/learn/wavemaker-release-notes/v11-1-2) <p style="color:red;">*latest*</p>  |Layout and Flex in Cordova, React Native fixes, including Style, Form and Chart and other bug fixes. | 26 September 2022 |
+|[WaveMaker 11.1.3](/learn/wavemaker-release-notes/v11-1-3) <p style="color:red;">*latest*</p>  |This release includes internal platform fixes only. | 03 October 2022 |
+|[WaveMaker 11.1.2](/learn/wavemaker-release-notes/v11-1-2) |Layout and Flex in Cordova, React Native fixes, including Style, Form and Chart and other bug fixes. | 26 September 2022 |
 |[v11.1.0](/learn/wavemaker-release-notes/v11-1-0) <br> known issue: <br> [wm-sspa-cli](/learn/wavemaker-release-notes/v11-1-0#known-issues)|**wm-sspa-cli** is now supported. <br> [Read updated commands for invoking CLI](/learn/app-development/sspa/micro-frontend#invoke-cli). | 12 September 2022 |
 |[WaveMaker 11.1.1](/learn/wavemaker-release-notes/v11-1-1) |Bug fixes include authentication issues in React Native, Teams Portal navigation, and more.| 5 September 2022 |
 |[WaveMaker 11.1.0](/learn/wavemaker-release-notes/v11-1-0)  |Feature-packed with Angular 12 update, React Native improvements, Azure Repos, MTLS for REST APIs, and more.| 29 August 2022 |
