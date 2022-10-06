@@ -170,17 +170,6 @@ Upgrade or Install the latest version of Docker.
   ```
 
 
-### Configure Docker
-
-- After upgrading docker successfully, you need to update docker configuration file to match with WaveMaker platform configuration.
-
-  - Run the Following command to update the configuration file.
-
-```bash
-    bash  docker_configure.sh
-```          
-
-
 ### Studio Workspace/AppDeploy Instances Sync and Patch using Launchpad
 
 - You can also apply the Sync or Patch using the Launchpad. To Apply, go to the Launchpad and Navigate to the Developer Workspace or App Deployements.

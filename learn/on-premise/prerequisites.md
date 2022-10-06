@@ -65,8 +65,7 @@ WaveMaker team will share the following files. You should download the below fil
 Depending on your setup type, WaveMaker team will send one of the following.
 
 - Operating System Pre-Installed.
-  - Deb installer if you choose Ubuntu.
-  - Tar ball if you choose RHEL.
+  - Tar ball if you choose RHEL or Ubuntu.
 - Use WaveMaker Images(OVA/VHD/AMI)
   - Platform Instance OVA for Esxi 6.5 or higher
   - StudioWorkspace Instance / AppDeployment Instance OVA for Esxi 6.5 or higher
