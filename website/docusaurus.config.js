@@ -64,7 +64,9 @@ module.exports = {
           "sidebarPath": "../website/sidebars.json"
         },
         "blog": {
-          "path": "blog"
+          "path": "../website/blog/",
+          "blogSidebarTitle": 'All posts',
+          "blogSidebarCount": 'ALL',
         },
         "theme": {
           "customCss": "/css/custom.css"
@@ -91,12 +93,12 @@ module.exports = {
           "position": "left"
         },
         {
-          "to": "/wavemaker-release-notes",
+          "to": "wavemaker-release-notes",
           "label": "Releases",
           "position": "right"
         },
         {
-          "to": "/on-premise/welcome",
+          "to": "blog",
           "label": "Blog",
           "position": "right"
         },

@@ -24,10 +24,11 @@ function NavbarItems({ items }) {
     </>
   );
 }
-function NavbarContentLayout({ left, right }) {
+function NavbarContentLayout({ left, center, right }) {
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
+      <div className="navbar__items">{center}</div>
       <div className="navbar__items navbar__items--right">{right}</div>
     </div>
   );
@@ -48,17 +49,21 @@ export default function NavbarContent() {
           <NavbarItems items={leftItems} />
         </>
       }
+      center={
+        <div className='header-searchBar'>
+          {!searchBarItem && url[url.length - 1] != "" && (
+            <NavbarSearch>
+              <SearchBar />
+            </NavbarSearch>
+          )}
+        </div>
+      }
       right={
         // TODO stop hardcoding items?
         // Ask the user to add the respective navbar items => more flexible
         <>
           <NavbarItems items={rightItems} />
           <NavbarColorModeToggle className={styles.colorModeToggle} />
-          {!searchBarItem && url[url.length - 1] != "" && (
-            <NavbarSearch>
-              <SearchBar />
-            </NavbarSearch>
-          )}
         </>
       }
     />

@@ -7,6 +7,8 @@
 
 const React = require('react');
 import Layout from '@theme/Layout';
+import SearchBar from '@theme/SearchBar';
+import NavbarSearch from '@theme/Navbar/Search';
 
 export default class Index extends React.Component {
     constructor(props) {
@@ -67,9 +69,9 @@ export default class Index extends React.Component {
                             <div className='col'>
                                 <h1 className='text--center text--semibold banner-Title'>How can I <span className='text--primary'>help</span> you?</h1>
                                 <div className='banner-search'>
-                                    <div className='navSearchWrapper reactNavSearchWrapper' key="search">
-                                        <input className='searchInput' id="search_input_react" type="text" placeholder='Search' title='Type here' />
-                                    </div>
+                                    <NavbarSearch>
+                                        <SearchBar />
+                                    </NavbarSearch>
                                 </div>
                             </div>
                         </div>
