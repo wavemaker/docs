@@ -11,6 +11,8 @@ import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
 import styles from './styles.module.css';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
   return useThemeConfig().navbar.items;
@@ -38,7 +40,6 @@ export default function NavbarContent() {
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
   const searchBarItem = items.find((item) => item.type === 'search');
-  const url = document ? document.URL.split('/') : [];
   return (
     <NavbarContentLayout
       left={
@@ -51,11 +52,15 @@ export default function NavbarContent() {
       }
       center={
         <div className='header-searchBar'>
-          {!searchBarItem && url[url.length - 1] != "" && (
-            <NavbarSearch>
-              <SearchBar />
-            </NavbarSearch>
-          )}
+          <BrowserOnly>
+            {() => {
+              return !searchBarItem && document.URL.split('/').slice(-1)[0] != "" && (
+                <NavbarSearch>
+                  <SearchBar />
+                </NavbarSearch>
+              )
+            }}
+          </BrowserOnly>
         </div>
       }
       right={
