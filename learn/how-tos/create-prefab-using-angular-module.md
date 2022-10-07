@@ -127,7 +127,7 @@ $templateCache.put('nodes_renderer.html',
     '<a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)">' +
     '<span class="glyphicon glyphicon-remove"></span>' +
     '</a>' +
-    '<a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style="margin-right: 8px;">' +
+    '<a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style={marginRight: "8px"}}>' +
     '<span class="glyphicon glyphicon-plus"></span>' +
     '</a>' +
     '</div>' +

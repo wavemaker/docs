@@ -40,13 +40,13 @@ Image icons are applied via the imageUrl property and are displayed as an img el
 
 From the Style tab of Properties panel,  you can set the button style. You can also use the Conditional Class property to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/). 
 
-<iframe width="100%" height="450" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Buttons">Button Types</iframe>
+<iframe width="100%" height="450" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Buttons">Button Types</iframe>
 
 ## Button Size
 
 From the Style tab of Properties panel, you can also set the button size along with the style as btn-primary btn-xs 
 
-<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ButtonSizes">Button Sizes</iframe>
+<iframe width="100%" height="400" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ButtonSizes">Button Sizes</iframe>
 
 
 ## Button Properties

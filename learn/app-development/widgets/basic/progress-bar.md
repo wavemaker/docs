@@ -7,7 +7,7 @@ id: "progress-bar"
 
 ## Features
 
-<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ProgressBar">Progress Bar</iframe>
+<iframe width="100%" height="400" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ProgressBar">Progress Bar</iframe>
 
 ## Properties
 

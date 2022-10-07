@@ -42,15 +42,15 @@ The following are the outbound properties of a Calendar widget that can be captu
 
 - The _Month_ view of the Calendar displays all the days in the month. 
     
-<iframe width="100%" height="715" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarMonthView">Calendar Month View</iframe>
+<iframe width="100%" height="715" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarMonthView">Calendar Month View</iframe>
     
 - The _Week_ view of the Calendar displays all the days in the week. 
     
-<iframe width="100%" height="715" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarWeekView">Calendar Week View</iframe>
+<iframe width="100%" height="715" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarWeekView">Calendar Week View</iframe>
     
 - The _Day_ view of the Calendar displays all the events on the day. 
     
-<iframe width="100%" height="715" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarDayView">Calendar Day View</iframe>
+<iframe width="100%" height="715" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/CalendarDayView">Calendar Day View</iframe>
     
 
 ## Properties
@@ -119,10 +119,10 @@ Other properties which can be set using the similar methods: For more informatio
 | slotEventOverlap | Determines if timed events in agenda view should visually overlap. default: true. When set to true (the default), events will overlap each other. At the most half of each event will be obscured. When set to false, there will be absolutely no overlapping. |
 | selectDate() | It highlights the default date given for the calendar.
 ```
-<table class="reference notranslate"><tbody><tr><td><p style="text-align: left;"><em>Case 1 - datavalue (data/string):</em> If the default value is date object, then that particular date will be highlighted. For example: To select 1st June 2017</p><div></div><pre class="lang:js decode:true">Page.Widgets.calendar.datavalue = '01/0/2017';
+<table class="reference notranslate"><tbody><tr><td><p style={{textAlign: "left"}}><em>Case 1 - datavalue (data/string):</em> If the default value is date object, then that particular date will be highlighted. For example: To select 1st June 2017</p><div></div><pre class="lang:js decode:true">Page.Widgets.calendar.datavalue = '01/0/2017';
 Page.Widgets.calendar.selectDate();</pre></td></tr></tbody></table>
 
-<table class="reference notranslate"><tbody><tr><td><p style="text-align: left;"><em>Case 2 - datavalue (Object): </em>If the default value is Object, then the particular dates from start to end date will be highlighted. For example: To select dates from 1st Jan to 10th Jan 2017</p><div></div><pre class="lang:js decode:true">Page.Widgets.calendar.datavalue = {start:'01/01/2017', end:'10/01/2017'};
+<table class="reference notranslate"><tbody><tr><td><p style={{textAlign: "left"}}><em>Case 2 - datavalue (Object): </em>If the default value is Object, then the particular dates from start to end date will be highlighted. For example: To select dates from 1st Jan to 10th Jan 2017</p><div></div><pre class="lang:js decode:true">Page.Widgets.calendar.datavalue = {start:'01/01/2017', end:'10/01/2017'};
 Page.Widgets.calendar.selectDate();</pre></td></tr></tbody></table>
 ```
  |

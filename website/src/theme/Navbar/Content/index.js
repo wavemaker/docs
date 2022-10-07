@@ -38,7 +38,7 @@ export default function NavbarContent() {
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
   const searchBarItem = items.find((item) => item.type === 'search');
-  const url = document.URL.split('/');
+  const url = document ? document.URL.split('/') : [];
   return (
     <NavbarContentLayout
       left={

@@ -31,7 +31,7 @@ When you drag and drop an Accordion, by default three accordion panes are provid
 
 ### Accordion Types
 
-<iframe width="100%" height="600" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Accordion">Accordion</iframe>
+<iframe width="100%" height="600" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Accordion">Accordion</iframe>
 
 ## Usage
 

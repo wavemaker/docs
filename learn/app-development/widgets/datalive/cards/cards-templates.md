@@ -12,25 +12,25 @@ Cards elements can be displayed using various templates:
 
 Business Card can be used to give the employee profile with name, designation and organization details. 
 
-<iframe width="100%" height="500" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/BusinessCard">Business Card</iframe>
+<iframe width="100%" height="500" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/BusinessCard">Business Card</iframe>
 
 ### Contact Card
 
 Contact Card can be used to give the personal profile with name, address, phone number and email details. 
 
-<iframe width="100%" height="350" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ContactCard">Contact Card</iframe>
+<iframe width="100%" height="350" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ContactCard">Contact Card</iframe>
 
 ### Designation Card
 
 Designation Card can be used to give the employee profile with name and designation details. 
 
-<iframe width="100%" height="450" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/DesignationCard">Contact Card</iframe>
+<iframe width="100%" height="450" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/DesignationCard">Contact Card</iframe>
 
 ### I Card
 
 I Card can be used to give the personal profile with name, address, phone number and email details. 
 
-<iframe width="100%" height="550" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ICard">I Card</iframe>
+<iframe width="100%" height="550" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ICard">I Card</iframe>
 
 ## Feed Cards
 
@@ -38,19 +38,19 @@ I Card can be used to give the personal profile with name, address, phone number
 
 This template can be used for posting infographic. Shows Summary information with an option to Read More. For example, Technology Infographic – Infographic on Mobile Networks; Product Development Landscape; Time Line Charts; Site Maps, etc. 
 
-<iframe width="100%" height="650" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/MediaPostCard">Media Post Card</iframe>
+<iframe width="100%" height="650" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/MediaPostCard">Media Post Card</iframe>
 
 ### News Post
 
 This template can be used for news feeds where you can post summary information and give a Link for Read More. You can have actions like share, like or call etc. Examples include Used in Social Media Apps like Twitter, Facebook; Corporate Social Networks like Yammer; Corporate News Letters 
 
-<iframe width="100%" height="600" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/NewPostCard">News Post Card</iframe>
+<iframe width="100%" height="600" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/NewPostCard">News Post Card</iframe>
 
 ### Personal Spotlight
 
 This template can be used to highlight information about a single personality and can be used to highlight their contributions etc. For example, Sports Personalities; Politicians; Top 10 CEOs; Top Women Professionals; Top 10 Employees; University Exam Toppers, etc. 
 
-<iframe width="100%" height="600" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PersonalSpotLight">Personal Spotlight Card</iframe>
+<iframe width="100%" height="600" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PersonalSpotLight">Personal Spotlight Card</iframe>
 
 ## Product Cards
 

@@ -27,13 +27,13 @@ A panel has designated sections such as header, body, and footer. [![](/learn/a
 
 ### Usage
 
-<iframe width="60%" height="350" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Panels">Panel</iframe>
+<iframe width="60%" height="350" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Panels">Panel</iframe>
 
 ### Panel Styles
 
 Panel style can be set by using the **Class Name** option from the **Styles** tab of the **Properties** panel. You can also use the Conditional Class property to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/).
 
-<iframe width="100%" height="800" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PanelStyle">Panel Style</iframe>
+<iframe width="100%" height="800" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PanelStyle">Panel Style</iframe>
 
 # Methods
 

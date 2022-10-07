@@ -24,7 +24,7 @@ Provides widget to be added to the nav panels such as Anchor, Menu, Popover, But
 
 From the Properties panel,  you can set the Nav Types and Layout 
 
-<iframe width="100%" height="600" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Nav">Nav Types</iframe>
+<iframe width="100%" height="600" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Nav">Nav Types</iframe>
 
 ## Properties
 

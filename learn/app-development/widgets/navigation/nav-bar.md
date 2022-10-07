@@ -12,7 +12,7 @@ Nav Bar is available only for web responsive apps.
 
 You can also create different variations of the navbar such as navbars with drop-down menus and search boxes as well as fixed positioned navbar with much less effort.
 
-<iframe width="100%" height="100" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Navbar">Navbar</iframe>
+<iframe width="100%" height="100" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Navbar">Navbar</iframe>
 
 **WaveMaker Nav Bar** widget is used in the implementation of the default _topnav_ when the [page layout](/learn/app-development/ui-design/page-concepts/page-layouts/) is chosen to include the same. Following features are available:
 

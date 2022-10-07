@@ -20,7 +20,7 @@ A Data Table Layout for data viewing and a Dialog Form for User Data Entry
 - A blank Dialog Form will show up on click of NEW button to add new record and will have a Save button to save
 - When edit button is clicked in a row, the selected row values will be shown in the Dialog Form where you can make the changes and save the data.
 
-<iframe width="100%" height="500" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Main">Example of Grid with dialog form</iframe>
+<iframe width="100%" height="500" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Main">Example of Grid with dialog form</iframe>
 
 ### Editable with Form given below the Table
 
@@ -28,7 +28,7 @@ A Data Table Layout for data viewing and a Dialog Form for User Data Entry
 - Select any row for editing
 - The Data Table here again provides Edit/Delete and New options
 
-<iframe width="100%" height="925" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/EditableDataGridWithInline">Example of Editable Grid with inline form</iframe>
+<iframe width="100%" height="925" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/EditableDataGridWithInline">Example of Editable Grid with inline form</iframe>
 
 ## Editable Data Table
 ---
@@ -38,7 +38,7 @@ A Data Table Layout for data viewing and a Dialog Form for User Data Entry
 - A Table Layout with Edit/Delete/New option
 - By default when NEW is clicked to add a new row, the new row will be appended to the bottom of the table. You can change this setting from ADVANCED SETTINGS and set the Form Position property to Top.
 
-<iframe width="100%" height="525" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/EditableDataGrid">Example of Editable Grid</iframe>
+<iframe width="100%" height="525" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/EditableDataGrid">Example of Editable Grid</iframe>
 
 ### Quick Edit
 
@@ -63,5 +63,5 @@ A Data Table Layout for data viewing and a Dialog Form for User Data Entry
 
 - This Data Table provides for Read Only View of the existing Data
 
-<iframe width="100%" height="450" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ReadOnlyDataGrid">Example of Read-only Grid</iframe>
+<iframe width="100%" height="450" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ReadOnlyDataGrid">Example of Read-only Grid</iframe>
 
