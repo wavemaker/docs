@@ -1,5 +1,5 @@
 ---
-title: Enterprise Release
+title: "Enterprise Release"
 id: ""
 sidebar_label: "Enterprise Release (WME)"
 
