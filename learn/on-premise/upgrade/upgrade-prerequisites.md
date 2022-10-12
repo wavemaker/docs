@@ -34,7 +34,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
 
 
 :::note
-While upgrading form 10.13.x to 11.x or higer version, it is required **8100** port to be opened on StudioWorkspace Instance.
+To upgrade form 10.13.x to 11.x or higer version, you must open the port **8100** on the StudioWorkspace Instance.
 :::
 
 
