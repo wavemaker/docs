@@ -616,6 +616,7 @@
      "react-native/styles",
      "react-native/test-run",
      "react-native/web-preview-debug",
+     "react-native/inspection-framework-react-native",
      "react-native/expo-debug",
      "react-native/styles",
      "react-native/theme",
