@@ -1,7 +1,7 @@
 ---
 title: "Preview React Native Apps in Mobile without Building Installers"
 id: ""
-sidebar_label: "Expo Debug"
+sidebar_label: "Mobile Preview"
 ---
 ---
 
