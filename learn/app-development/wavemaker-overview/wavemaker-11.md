@@ -21,7 +21,7 @@ Since 11.1, newer updates were released with more features and bug fixes. Read t
 
 The upgrade is not flagged as a risky migration. There is minimal to no impact involved when migrating from WaveMaker 10 to WaveMaker 11.1 or later. The upgrade process is designed to transit as smoothly as possible, so you can instantly benefit from all the new features we deliver in the [newer versions](/learn/wavemaker-release-notes#wavemaker-online-v11x) of the WaveMaker 11 Studio. It includes library updates, including a Java update, needing an action to do.
 
-## Java Update
+### Java Update
 
 The Java 11 version is one update among the WaveMaker Studio's [latest tech stack](/learn/wavemaker-release-notes#technology-stack). A small action is required from your end to complete the update, specifically if you build and deploy your apps outside WaveMaker. For example, Tomcat. 
 
@@ -35,15 +35,17 @@ Angular 12 includes JQuery library upgrades as a standard. In addition, it offer
 Note that the Angular 12 update addresses vulnerabilities. Updating to the latest version of WaveMaker Studio helps keep your application secure against critical security threats. 
 :::
 
-## More Features in React Native Studio
+## Features of WaveMaker 11.1: GA
+
+### React Native Studio
 
 In June, we introduced an all-new **React Native Studio** beta with essential features to launch native app development in WaveMaker. With the 11.1 release, the React Native Studio gets more updates, comes feature-packed and ready to consume for production with integrations, such as OpenID authentication and Expo plugin support, in addition to standard plugins, Form validation, Charts, and more. See our [React Native documentation](/learn/react-native/react-native) to start developing native applications in WaveMaker.
 
-## Layout and Flex Layout Widgets
+### Layout and Flex Layout Widgets
 
 [Layout](/learn/app-development/widgets/container/layout) and [Flex Layout](/learn/app-development/widgets/container/flex-layout) widgets were first introduced for React Native apps. With the [11.1.2](/learn/wavemaker-release-notes/v11-1-2) update, we support **Layout** and **Flex Layout** widgets in Web and Cordova apps.
 
-## Features of WaveMaker 11.1: GA
+### Other New Features of 11.1: GAs
 
 Several other new features were added to WaveMaker Studio in 11.1 and later, including: 
 
@@ -55,17 +57,13 @@ Several other new features were added to WaveMaker Studio in 11.1 and later, inc
 
 See the complete list of features in the [11.1 release notes](/learn/wavemaker-release-notes/v11-1-0).
 
-## Recap - Features of WaveMaker 11 Beta
+## Recap - Features of [WaveMaker 11 Beta](/learn/app-development/wavemaker-overview/wavemaker-11-beta)
 
-- React Native Beta
-- API Composer Toolkit
-- API Mock Server
+- [React Native Beta](/learn/app-development/wavemaker-overview/wavemaker-11-beta#introducing-react-native-in-wavemaker)
+- [API Composer Toolkit](/learn/app-development/wavemaker-overview/wavemaker-11-beta#api-composer-toolkit)
+- [API Mock Server](/learn/app-development/services/api-mock-server)
 - Pagination for Imported APIs, including Offset and Curser types
 - POM Hierarchy Remodeled to Inheritance Model
 - Team for Enterprise as a standard
-- Upgrading SAML to the new library
-
-## See Also
-
-For more information, see [WaveMaker 11 beta](/learn/app-development/wavemaker-overview/wavemaker-11-beta) and WaveMaker [11.1.0](/learn/wavemaker-release-notes/v11-1-0), and [11.1.2](/learn/wavemaker-release-notes/v11-1-2) release notes for more added features list.
+- [Upgrading SAML to the new library](/learn/app-development/wavemaker-overview/wavemaker-11-beta#upgrading-saml-to-new-library)
 
