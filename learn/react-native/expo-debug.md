@@ -30,7 +30,7 @@ Install Expo Go app on your mobile phone
 - Install React Dev Tools 
 
 ```shell
-npm i -g react-devtools@4.14.0.
+npm i -g react-devtools@4.26.0
 ```
 
 ## Debugging Procedure
