@@ -5,18 +5,11 @@ sidebar_label: "FAQs 11"
 ---
 ---
 
-WaveMaker Studio is now available as WaveMaker 11 beta. Since the release, we have received many questions about the release. We have tried our best to cover some frequently asked questions here. If you still have more questions, write to us at support@wavemaker.com.
+WaveMaker Studio is now available as WaveMaker 11 GA. Since the release, we have received many questions about the release. We have tried our best to cover some frequently asked questions here. If you still have more questions, write to us at support@wavemaker.com.
 
 ## General 
 
 ---
-
-### Why is WaveMaker 11 released as a Beta?
-
-We Introduced React Native framework as part of this release.
- 
-- React Native is currently in an early stage, so we marked it as Beta.
-- However, please note that Web and Cordova Mobile frameworks are stable and working just like in the earlier versions. 
 
 ### What is Multi-version Studio?
 
@@ -26,15 +19,19 @@ Multiple versions of Studio in a single environment allow you to simultaneously 
 
 ### Why do we include Multi-versioned Studio?
 
-With the WaveMaker 11 beta release, we moved to Java 11 from Java 8, which impacts your apps' CI/CD pipelines.
+With the WaveMaker 11 release, we moved to Java 11 from Java 8, which impacts your apps' CI/CD pipelines.
 
 Therefore, your CI/CD infrastructure must be migrated to Java 11 to build and deploy WaveMaker 11 apps.
 
 For this reason, we introduced a multi-version Studio to give you the time it may take from your end, giving you an explicit option to Migrate Apps to 11.x.
 
+### Did WaveMaker stop supporting Cordova apps?
+
+We Introduced React Native framework as part of the WaveMaker 11 release. However, please note that Web and Cordova Mobile frameworks are stable and working just like in the earlier versions and we continue to support them. 
+
 ### Can we start building Web and Cordova App in 11.x?
 
-Yes. WaveMaker 11 beta is as stable as other releases of Web and Cordova mobile app development platforms.
+Yes. WaveMaker 11 is as stable as other releases of Web and Cordova mobile app development platforms.
 
 ### How can we migrate our projects to the 11.x version?
 
@@ -50,7 +47,7 @@ However, actions like **Start Migration** and **Finish Upgrade** can only be don
 
 ---
 
-### Will the WaveMaker 11 beta release impact the existing projects?
+### Will the WaveMaker 11 release impact the existing projects?
 
 No, it will not impact, but the projects will still run on Java 8. Migration has to be initiated explicitly. Your existing deployments, including Demo and Phase, will continue to work like before.
 
@@ -58,7 +55,7 @@ Follow the migration guide for more information.
 
 ### Which version project gets created when creating a new project? 
 
-From WaveMaker 11 beta onwards, when you create a new project:
+From WaveMaker 11 onwards, when you create a new project:
 
 1. It creates a WaveMaker 11.x project by default.
 2. Default Mobile Apps are React Native.
