@@ -5,7 +5,7 @@ sidebar_label: "Pagination for Imported APIs"
 ---
 ---
 
-Server-side pagination controls how the portion of records are fetched from the server. It is useful when your application does not want to display All records at once but requests data with specific sorting order or filtering criteria that the API sets out.
+Pagination is a process that separates data into sets. Server-side pagination controls how these sets are retrieved from the database. It is useful when your application does not want to display All records at once. Instead, request data with a specific order or filter criteria the API sets out—for example, an Instagram feed. You can configure it with a timestamp of when a post was published, retrieving a set of five recent posts when you keep scrolling.
 
 In WaveMaker, you can do this by configuring the DSL (Domain Specific Language) method to the imported API, allowing you to seamlessly work with data widgets. 
 
@@ -35,7 +35,7 @@ Types of server-side pagination supported:
 
 ## Offset
 
-APIs that use offset based pagination will use offset and limit query parameters to paginate through the data. This is most suitable when the list of items is fixed and that are predetermined length.
+This method uses **offset** and **limit** query parameters, most suitable for using explicit, static data that you toggle through. 
 
 ### Code snippet
 
