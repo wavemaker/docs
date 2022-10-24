@@ -12,6 +12,13 @@ import { useAlgoliaContextualFacetFilters } from '@docusaurus/theme-search-algol
 import Translate from '@docusaurus/Translate';
 import translations from '@theme/SearchTranslations';
 let DocSearchModal = null;
+Promise.all([
+  import('../SearchModal/index'),
+  import('@docsearch/react/style'),
+  import('./styles.css'),
+]).then(([{ DocSearchModal: Modal }]) => {
+  DocSearchModal = Modal;
+});
 function Hit({ hit, children }) {
   return <Link to={hit.url}>{children}</Link>;
 }
@@ -148,42 +155,27 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
           crossOrigin="anonymous"
         />
       </Head>
-
-      <DocSearchButton
-        onTouchStart={importDocSearchModalIfNeeded}
-        onFocus={importDocSearchModalIfNeeded}
-        onMouseOver={importDocSearchModalIfNeeded}
-        onClick={onOpen}
-        ref={searchButtonRef}
-        translations={translations.button}
+      <DocSearchModal
+        autoFocus={props.autoFocus}
+        onClose={onClose}
+        initialScrollY={window.scrollY}
+        initialQuery={initialQuery}
+        navigator={navigator}
+        transformItems={transformItems}
+        hitComponent={Hit}
+        transformSearchClient={transformSearchClient}
+        {...(props.searchPagePath && {
+          resultsFooterComponent,
+        })}
+        {...props}
+        searchParameters={searchParameters}
+        placeholder={translations.placeholder}
+        translations={translations.modal}
       />
-
-      {isOpen &&
-        DocSearchModal &&
-        searchContainer.current &&
-        createPortal(
-          <DocSearchModal
-            onClose={onClose}
-            initialScrollY={window.scrollY}
-            initialQuery={initialQuery}
-            navigator={navigator}
-            transformItems={transformItems}
-            hitComponent={Hit}
-            transformSearchClient={transformSearchClient}
-            {...(props.searchPagePath && {
-              resultsFooterComponent,
-            })}
-            {...props}
-            searchParameters={searchParameters}
-            placeholder={translations.placeholder}
-            translations={translations.modal}
-          />,
-          searchContainer.current,
-        )}
     </>
   );
 }
 export default function SearchBar(props) {
   const { siteConfig } = useDocusaurusContext();
-  return <DocSearch {...siteConfig.themeConfig.algolia} elementId={props.elementId} />;
+  return <DocSearch {...siteConfig.themeConfig.algolia} elementId={props.elementId} autoFocus={props.autoFocus} />;
 }

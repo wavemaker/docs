@@ -33,7 +33,7 @@ function NavbarContentLayout({ left, center, right }) {
       <div className="navbar__items">
         {!searchBarItem && (document.URL.split('/').slice(-1)[0] != "" || document.URL.split('/').slice(-2)[0] != "learn") && (
           <div id="header-search">
-            <SearchBar elementId="header-search" />
+            <SearchBar elementId="header-search" autoFocus={false}/>
           </div>
         )}
       </div>

@@ -30,7 +30,7 @@ import { MAX_QUERY_SIZE } from '@docsearch/react/dist/esm/constants';
 import { Footer } from '@docsearch/react/dist/esm/Footer';
 import { Hit } from '@docsearch/react/dist/esm/Hit';
 import { ScreenState } from '@docsearch/react/dist/esm/ScreenState';
-import { SearchBox } from '@docsearch/react/dist/esm/SearchBox';
+import { SearchBox } from '../SearchBox';
 import { createStoredSearches } from '@docsearch/react/dist/esm/stored-searches';
 import { useSearchClient } from '@docsearch/react/dist/esm/useSearchClient';
 import { useTouchEvents } from '@docsearch/react/dist/esm/useTouchEvents';
@@ -331,7 +331,7 @@ export function DocSearchModal(_ref) {
         ref: formElementRef
     }, /*#__PURE__*/React.createElement(SearchBox, _extends({}, autocomplete, {
         state: state,
-        autoFocus: initialQuery.length === 0,
+        autoFocus: _ref.autoFocus,
         inputRef: inputRef,
         isFromSelection: Boolean(initialQuery) && initialQuery === initialQueryFromSelection,
         translations: searchBoxTranslations,
@@ -354,9 +354,5 @@ export function DocSearchModal(_ref) {
             saveRecentSearch(item);
             onClose();
         }
-    }))), /*#__PURE__*/React.createElement("footer", {
-        className: "DocSearch-Footer"
-    }, /*#__PURE__*/React.createElement(Footer, {
-        translations: footerTranslations
-    })));
+    }))));
 }
