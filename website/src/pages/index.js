@@ -7,8 +7,7 @@
 
 const React = require('react');
 import Layout from '@theme/Layout';
-import SearchBar from '@theme/SearchBar';
-import NavbarSearch from '@theme/Navbar/Search';
+import SearchBar from '../theme/SearchBar';
 
 export default class Index extends React.Component {
     constructor(props) {
@@ -68,10 +67,8 @@ export default class Index extends React.Component {
                         <div className='row banner-content margin-vert--md'>
                             <div className='col'>
                                 <h1 className='text--center text--semibold banner-Title'>How can I <span className='text--primary'>help</span> you?</h1>
-                                <div className='banner-search'>
-                                    <NavbarSearch>
-                                        <SearchBar />
-                                    </NavbarSearch>
+                                <div className='banner-search' id="home-search">
+                                    <SearchBar autoFocus={true} elementId="home-search" />
                                 </div>
                             </div>
                         </div>

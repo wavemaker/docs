@@ -6,12 +6,10 @@ import {
 } from '@docusaurus/theme-common/internal';
 import NavbarItem from '@theme/NavbarItem';
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
-import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
-import NavbarSearch from '@theme/Navbar/Search';
 import styles from './styles.module.css';
-import BrowserOnly from '@docusaurus/BrowserOnly';
+import SearchBar from '../../SearchBar';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -27,10 +25,18 @@ function NavbarItems({ items }) {
   );
 }
 function NavbarContentLayout({ left, center, right }) {
+  const items = useNavbarItems();
+  const searchBarItem = items.find((item) => item.type === 'search');
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
-      <div className="navbar__items">{center}</div>
+      <div className="navbar__items">
+        {!searchBarItem && (document.URL.split('/').slice(-1)[0] != "" || document.URL.split('/').slice(-2)[0] != "learn") && (
+          <div id="header-search">
+            <SearchBar elementId="header-search" />
+          </div>
+        )}
+      </div>
       <div className="navbar__items navbar__items--right">{right}</div>
     </div>
   );
@@ -49,19 +55,6 @@ export default function NavbarContent() {
           <NavbarLogo />
           <NavbarItems items={leftItems} />
         </>
-      }
-      center={
-        <div className='header-searchBar'>
-          <BrowserOnly>
-            {() => {
-              return !searchBarItem && document.URL.split('/').slice(-1)[0] != "" && (
-                <NavbarSearch>
-                  <SearchBar />
-                </NavbarSearch>
-              )
-            }}
-          </BrowserOnly>
-        </div>
       }
       right={
         // TODO stop hardcoding items?

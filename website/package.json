@@ -30,20 +30,20 @@
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.2.1",
     "mochawesome-report-generator": "^6.2.0",
-    "optimist": "^0.6.1",
+    "optimist": "^0.5.2",
     "remarkable-admonitions": "^0.2.2",
     "textlint": "^12.2.2",
     "textlint-plugin-html": "^0.3.0",
     "textlint-rule-terminology": "^3.0.3",
-    "update": "^0.7.4",
+    "update": "^0.4.2",
     "wait-on": "^6.0.1"
   },
   "dependencies": {
     "@docusaurus/core": "2.1.0",
     "@docusaurus/preset-classic": "2.1.0",
     "clsx": "^1.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "url-parse": "^1.5.10"
   }
 }
