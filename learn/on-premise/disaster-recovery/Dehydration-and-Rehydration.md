@@ -154,6 +154,33 @@ bash wme-installer.sh --data-untar
 
 - Launch StudioWorkspace Instance/AppDeployment Instance in different Infra providers from Link [WaveMaker Launch Instances](/learn/on-premise/prerequisites).
 
+
+## Download and Extract Migrations
+
+- To download migration tar which will be shared by the WaveMaker team, please run the following command
+
+```bash
+    wget <WME-Migration-Link>
+```
+
+- Extract wme_migrations to /usr/local/content/wme/wme-installer/< version>/resources folder, for extract the content run the following command
+
+```bash
+    sudo tar xvf <WME-Migration-Filename> -C /usr/local/content/wme/wme-installer/<version>/resources/
+```    
+
+- To Rotate the Instances, it is required some Rotation related files and to download these which will be shared by the WaveMaker team, please run the following command
+
+```bash
+    wget <WME-Rotate-Scripts-link>
+```
+
+- Extract the wme_rotations to /usr/local/content/wme/wme-installer/< version >/resources folder, for extract the content run the following command
+
+```bash
+    sudo tar -xvf  <WME-Rotate-sCripts-Filename> -C /usr/local/content/wme/wme-installer/<version>/resources/
+```
+
 ## Installing WME on New Instance
 
 - For Download WaveMaker installation package please refer [WaveMaker package Installation](/learn/on-premise/aws/install/download-copy-installer).
@@ -164,25 +191,26 @@ Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise
 After Completing the ***WaveMaker Initialization*** process, please go with the ***migrations*** step which is given below before proceeding with the ***Configwizard***
 :::
 
+
 ### Run the required migrations
 
 - As we we migrating from WME 10.13.x to WME 11.x, we have to run few migrations on gitlab and postgres
-- Execute Below command to run Gitlab Migration
+- Execute Below command to copy wme rotation script to installer location
 
 ```bash 
-wget <WME-Gitlab-Migration-Link>
+    cp /usr/local/content/wme/wme-installer/<version>/resources/wme-rotate.sh /usr/local/content/wme/wme-installer/<version>/ 
 ```
 
-- Execute Below command to run Postgres Migration
+- Execute Below command to run Gitlab and Postgres Migration
 
 ```bash
-wget <WME-postgres-Migration-Link>
+    bash /usr/local/content/wme/wme-installer/<version>/wme-rotate.sh –migrate
 ```
 
 ### Run Sync Operation
 
 - After completing the above steps, run the **Sync** from the configwizard portal by following steps
-  - Login to the cw portal using the same password that was used in earlier setup 
+  - Login to the config portal using the same password that was used in earlier setup 
   - After login in home page you can see settings icon on the top right as marked below, it takes you to the CW settings place
 
   [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop-settings.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop-settings.png)    
