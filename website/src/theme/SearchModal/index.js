@@ -339,7 +339,7 @@ export function DocSearchModal(_ref) {
     }))), /*#__PURE__*/React.createElement("div", {
         className: "DocSearch-Dropdown",
         ref: dropdownRef
-    }, /*#__PURE__*/React.createElement(ScreenState, _extends({}, autocomplete, {
+    }, /*#__PURE__*/state.query != '' && state.collections.length > 0 ? React.createElement(ScreenState, _extends({}, autocomplete, {
         indexName: indexName,
         state: state,
         hitComponent: hitComponent,
@@ -354,5 +354,5 @@ export function DocSearchModal(_ref) {
             saveRecentSearch(item);
             onClose();
         }
-    }))));
+    })) : React.createElement("div", null)));
 }
