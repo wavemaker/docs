@@ -270,17 +270,6 @@ export function DocSearchModal(_ref) {
         container: containerRef.current
     });
     React.useEffect(function () {
-        document.body.classList.add('DocSearch--active');
-        return function () {
-            var _window$scrollTo, _window;
-
-            document.body.classList.remove('DocSearch--active'); // IE11 doesn't support `scrollTo` so we check that the method exists
-            // first.
-
-            (_window$scrollTo = (_window = window).scrollTo) === null || _window$scrollTo === void 0 ? void 0 : _window$scrollTo.call(_window, 0, initialScrollY);
-        }; // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    React.useEffect(function () {
         var isMobileMediaQuery = window.matchMedia('(max-width: 768px)');
 
         if (isMobileMediaQuery.matches) {
