@@ -11,14 +11,8 @@ import { DocSearchButton, useDocSearchKeyboardEvents } from '@docsearch/react';
 import { useAlgoliaContextualFacetFilters } from '@docusaurus/theme-search-algolia/client';
 import Translate from '@docusaurus/Translate';
 import translations from '@theme/SearchTranslations';
-let DocSearchModal = null;
-Promise.all([
-  import('../SearchModal/index'),
-  import('@docsearch/react/style'),
-  import('./styles.css'),
-]).then(([{ DocSearchModal: Modal }]) => {
-  DocSearchModal = Modal;
-});
+import { DocSearchModal as Modal } from '../SearchModal/index';
+let DocSearchModal = Modal;
 function Hit({ hit, children }) {
   return <Link to={hit.url}>{children}</Link>;
 }
