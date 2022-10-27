@@ -29,7 +29,7 @@ import React from 'react';
 import { MAX_QUERY_SIZE } from '@docsearch/react/dist/esm/constants';
 import { Footer } from '@docsearch/react/dist/esm/Footer';
 import { Hit } from '@docsearch/react/dist/esm/Hit';
-import { ScreenState } from '@docsearch/react/dist/esm/ScreenState';
+import { ScreenState } from '../SearchPage/ScreenState';
 import { SearchBox } from '../SearchBox';
 import { createStoredSearches } from '@docsearch/react/dist/esm/stored-searches';
 import { useSearchClient } from '@docsearch/react/dist/esm/useSearchClient';
@@ -185,14 +185,7 @@ export function DocSearchModal(_ref) {
                 return searchClient.search([{
                     query: query,
                     indexName: indexName,
-                    params: _objectSpread({
-                        attributesToRetrieve: ['hierarchy.lvl0', 'hierarchy.lvl1', 'hierarchy.lvl2', 'hierarchy.lvl3', 'hierarchy.lvl4', 'hierarchy.lvl5', 'hierarchy.lvl6', 'content', 'type', 'url'],
-                        attributesToSnippet: ["hierarchy.lvl1:".concat(snippetLength.current), "hierarchy.lvl2:".concat(snippetLength.current), "hierarchy.lvl3:".concat(snippetLength.current), "hierarchy.lvl4:".concat(snippetLength.current), "hierarchy.lvl5:".concat(snippetLength.current), "hierarchy.lvl6:".concat(snippetLength.current), "content:".concat(snippetLength.current)],
-                        snippetEllipsisText: '…',
-                        highlightPreTag: '<mark>',
-                        highlightPostTag: '</mark>',
-                        hitsPerPage: 20
-                    }, searchParameters)
+                    hitsPerPage: 5
                 }]).catch(function (error) {
                     // The Algolia `RetryError` happens when all the servers have
                     // failed, meaning that there's no chance the response comes
