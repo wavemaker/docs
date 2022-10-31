@@ -12,7 +12,11 @@ module.exports = {
     "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
     "/learn/js/code-block-buttons.js",
     "/learn/js/error-reporting.js",
-    "/learn/js/inject-stylesheets.js"
+    "/learn/js/inject-stylesheets.js",
+    {
+      src: 'https://app.happyreact.com/widget/reactions.js',
+      defer: true,
+    },
   ],
   "stylesheets": [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
@@ -78,6 +82,12 @@ module.exports = {
   ],
   "plugins": [],
   "themeConfig": {
+    "docs": {
+      "sidebar": {
+        "hideable": true,
+        "autoCollapseCategories": true,
+      },
+    },
     "navbar": {
       "title": "WaveMaker Docs",
       "logo": {
@@ -121,6 +131,9 @@ module.exports = {
       "appId": process.env.ALGOLIA_DS_APP_ID,
       "apiKey": process.env.ALGOLIA_DS_API_KEY,
       "indexName": process.env.ALGOLIA_DS_INDEX_NAME
+    },
+    "happyreact": {
+      "token": process.env.HAPPY_REACT_TOKEN,
     },
     "footer": {}
   }
