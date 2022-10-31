@@ -95,6 +95,11 @@ module.exports = {
           "position": "left"
         },
         {
+          "to": "howtos-documents",
+          "label": "How-to",
+          "position": "left"
+        },
+        {
           "to": "wavemaker-release-notes",
           "label": "Releases",
           "position": "right"

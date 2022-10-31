@@ -19,9 +19,9 @@ export default class Index extends React.Component {
     getCategories() {
         let categoryComponents = [];
         let categories = [
-            { href: '/learn/app-development/widgets/widget-library', icon: '/learn/img/exploreWidgets.svg', label: 'Comprehensive How-to\'s' },
-            { href: '/learn/app-development/custom-widgets/prefabs-overview', icon: '/learn/img/tailorPrefabs.svg', label: 'Tailor Made Prefabs' },
-            { href: '/learn/react-native', icon: '/learn/img/reactNativeMobileApp.svg', label: 'React Native Mobile Apps' },
+            { href: '/learn/tutorials', icon: '/learn/img/exploreWidgets.svg', label: 'Tutorials' },
+            { href: '/learn/app-development/custom-widgets/prefabs-overview', icon: '/learn/img/tailorPrefabs.svg', label: 'Develop Prefab' },
+            { href: '/learn/react-native', icon: '/learn/img/reactNativeMobileApp.svg', label: 'Develop Native App' },
             { href: '/learn/on-premise/welcome', icon: '/learn/img/enterpriseGuide.svg', label: 'Enterprise Guide' }]
         categories.forEach((category) => {
             categoryComponents.push(
@@ -96,16 +96,16 @@ export default class Index extends React.Component {
                                 <div className='col'>
                                     <ul>
                                         <li>
-                                            <a href='/learn/'>Learn</a>
+                                            <a href='/learn/'>What's new?</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/tutorials'>Tutorial</a>
+                                            <a href='/learn/react-native'>React Native Studio</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/tutorials/leave-management-app'>Exercises</a>
+                                            <a href='/learn/tutorials'>API Orchestration</a>
                                         </li>
                                         <li>
-                                            <a href=''>Get Training</a>
+                                            <a href='/learn/tutorials'>Server-side Pagination</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -115,13 +115,16 @@ export default class Index extends React.Component {
                                             <a href='/learn/app-development/wavemaker-overview/platform-overview'>Platform</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/connectors/connectors-architecture#docsNav'>Architecture</a>
+                                            <a href='/learn/connectors/connectors-architecture'>Architecture</a>
                                         </li>
                                         <li>
                                             <a href='/learn/app-development/wavemaker-overview/faqs-11'>FAQs</a>
                                         </li>
                                         <li>
                                             <a href='/learn/app-development/wavemaker-overview/product-walkthrough'>Studio Walkthrough</a>
+                                        </li>
+                                        <li>
+                                            <a href='/learn/tutorials/leave-management-app'>Exercises</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -163,7 +166,7 @@ export default class Index extends React.Component {
                                             <a href=''>Community</a>
                                         </li>
                                         <li>
-                                            <a href=''>Forum</a>
+                                            <a href=''>Get Training</a>
                                         </li>
                                         <li>
                                             <a href='https://github.com/wavemaker'>Github</a>
