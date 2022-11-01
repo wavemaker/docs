@@ -11,7 +11,10 @@ In addition, you can use the **Search** widget for flexibility and control.
 For the Search widget you can set the following properties:
 
 - Bind the **Value** dataset property of the search widget to the variable created from a Database or Web Service.
-- Set the **Search key** and **Label Value** properties to the column name you want to search by. **Note**: The Search Key, Label Value, and Image Source are bindable. For example, the Label Value can be bound to a field 'deptcode' or to a combination such as 'deptcode+name', using the expression option from the binding dialog.
+- Set the **Search key** and **Label Value** properties to the column name you want to search by. 
+:::note
+The Label Value, and Image Source are bindable. For example, the Label Value can be bound to a field 'deptcode' or to a combination such as 'deptcode+name', using the expression option from the binding dialog.
+:::
 - Set the **Type** as:
     - _autocomplete_ which would present a dropdown list of values for the user to select from; or
     - _search_ (the default setting) where the filtered list of values is presented based on the user entry
