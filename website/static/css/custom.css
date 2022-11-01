@@ -882,6 +882,34 @@ h3 {
     }
 }
 
+.theme-doc-sidebar-container{
+    background-color: #f3f5f7;
+}
+#header-search{
+
+}
+#header-search .DocSearch-Modal{
+    margin:0;
+    background-color: transparent;
+    box-shadow: none;
+}
+#header-search .DocSearch-Modal > *{
+    padding:0;
+}
+
+#header-search .DocSearch-Modal .DocSearch-Dropdown{
+    display: none;
+}
+
+#header-search .DocSearch-Modal .DocSearch-SearchBar .DocSearch-Form{
+    height: 40px;
+    border-radius: 20px;
+}
+
+#header-search .DocSearch-Modal .DocSearch-SearchBar .DocSearch-Form .DocSearch-Input{
+    font-size: 1em;
+}
+
 @media only screen and (max-width: 1023px) {}
 
 @media only screen and (min-width: 1280px) {}
