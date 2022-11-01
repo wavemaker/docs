@@ -25,7 +25,5 @@ export function ResultsScreen(props) {
     }));
   }), props.resultsFooterComponent && /*#__PURE__*/React.createElement("section", {
     className: "DocSearch-HitsFooter"
-  }, /*#__PURE__*/React.createElement(props.resultsFooterComponent, {
-    state: props.state
-  })));
+  }));
 }
