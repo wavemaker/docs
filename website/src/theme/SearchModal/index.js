@@ -131,6 +131,11 @@ export function DocSearchModal(_ref) {
             navigator: navigator,
             onStateChange: function onStateChange(props) {
                 setState(props.state);
+                if (props.state.query != '')
+                    document.getElementById("header-search") ? document.getElementById("header-search").classList.add("active") : document.getElementById("home-search").classList.add("active");
+                else
+                    document.getElementById("header-search") ? document.getElementById("header-search").classList.remove("active") : document.getElementById("home-search").classList.remove("active");
+
             },
             getSources: function getSources(_ref2) {
                 var query = _ref2.query,

@@ -84,11 +84,11 @@ function Result(_ref) {
   }, item.hierarchy['lvl1'] && React.createElement("div", {
     className: "DocSearch-Hit-content-wrapper"
   }, /*#__PURE__*/React.createElement("span", {
-    className: "search",
-  }, item.hierarchy['lvl1']),/*#__PURE__*/React.createElement("span", {
-    className: "search",
+    className: "search-value",
     dangerouslySetInnerHTML: { __html: highlightContent },
-  }), React.createElement(Snippet, {
+  }), React.createElement("span", {
+    className: "search-info",
+  }, item.hierarchy['lvl1']),/*#__PURE__*/ React.createElement(Snippet, {
     className: "DocSearch-Hit-path",
     hit: item,
     attribute: "content"
