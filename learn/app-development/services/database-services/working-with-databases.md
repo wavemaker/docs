@@ -106,4 +106,4 @@ Once you have your app integrated with a database, schema information will be pe
 
 ## Increasing Database Transaction Timeout
 
-We have a property inside development.properties file called db.databasename.transactionTimeout. For increasing the timeout for database we can set the value for this property accordingly
+Property in profile profiles - development.properties called ``db.databasename.transactionTimeout`` can be used to increase the timeout for database transaction
