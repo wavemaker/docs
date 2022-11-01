@@ -20,7 +20,7 @@ export default class Index extends React.Component {
         let categoryComponents = [];
         let categories = [
             { href: '/learn/tutorials', icon: '/learn/img/exploreWidgets.svg', label: 'Tutorials' },
-            { href: '/learn/app-development/custom-widgets/prefabs-overview', icon: '/learn/img/tailorPrefabs.svg', label: 'Develop Prefab' },
+            { href: '/learn/app-development/custom-widgets/prefabs-overview', icon: '/learn/img/tailorPrefabs.svg', label: 'Build Prefabs' },
             { href: '/learn/react-native', icon: '/learn/img/reactNativeMobileApp.svg', label: 'Develop Native App' },
             { href: '/learn/on-premise/welcome', icon: '/learn/img/enterpriseGuide.svg', label: 'Enterprise Guide' }]
         categories.forEach((category) => {
@@ -66,7 +66,7 @@ export default class Index extends React.Component {
                     <div className='container banner spl-icon footer-left'>
                         <div className='row banner-content margin-vert--md'>
                             <div className='col'>
-                                <h1 className='text--center text--semibold banner-Title'>How can I <span className='text--primary'>help</span> you?</h1>
+                                <h1 className='text--center text--semibold banner-Title'>how can we <span className='text--primary'>help</span>?</h1>
                                 <div className='banner-search' id="home-search">
                                     <SearchBar autoFocus={true} elementId="home-search" />
                                 </div>
