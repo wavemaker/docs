@@ -5,13 +5,13 @@ sidebar_label: "Pagination for Imported APIs"
 ---
 ---
 
-Pagination is a process that separates data into sets. Server-side pagination controls how these sets are retrieved from the database. It is useful when your application does not want to display All records at once. Instead, request data with a specific order or filter criteria the API sets out, such as Offset, Page and Cursor types. For example, an Instagram feed using a cursor pagination; it retrieves a set of five latest posts based on a timestamp, as you scroll.
+Pagination is a process that separates data into sets. Server-side pagination controls how these sets are retrieved from the database. It is useful when your application does not want to display All records at once. Instead, request data with a specific order or filter criteria the API sets out, such as Offset, Page and Cursor types. For example, Instagram feed with a Cursor pagination; it retrieves a set of five latest posts based on a timestamp, as you scroll.
 
-In WaveMaker, you can use the DSL (Domain Specific Language) method to the imported APIs to work seamlessly with the data widgets. 
+In WaveMaker, you can achieve Server-side pagination using the DSL (Domain Specific Language) method to the imported APIs, which works seamlessly with the data widgets. 
 
 ## Types of Pagination
 
-Types of server-side pagination WaveMaker supports:
+Types of Server-side pagination WaveMaker supports:
 
 - Offset
 - Page 
@@ -24,7 +24,7 @@ Types of server-side pagination WaveMaker supports:
 
 ## Configuring Pagination Parameters
 
-Configure pagination parameters for imported API using the setPagination method. The platform renders Widget's data, ensuring the UI is paging through data, and making the API calls with appropriate input parameters.
+Configure pagination parameters for imported API using the setPagination method. It renders Widget's data, ensuring the UI is paging through data, and making the API calls with appropriate input parameters.
 
 ### Set Pagination
 
@@ -41,6 +41,11 @@ You can set the pagination on a variable:
 This method uses **offset** and **limit** query parameters, most suitable for using explicit or fixed data that you toggle through. 
 
 ### How to Configure
+
+- Create a Service Variable.
+- Drag-n-drop a data widget; for example, Data table.
+- Bind the Data Table to Service Variable.
+- Go to Script tab, configure Offset pagination as described below. 
 
 The following the code snippet describes how to configure the offset based pagination.
 
@@ -62,28 +67,26 @@ Page.Variables.serviceVariable2.setPagination({
 }
 ```
 
-### Offset Input Configuration
+:::note
 
-- **type**: Type of pagination should be provided (offset / page / cursor)
-- **input**: Contains information of the input parameters that needs to be sent in the API
-- **input.offset**: Number of records that needs to be skipped 
-- **offset-value**: Should provide the parameter’s name in the request which will have offset information. If the value resides inside an object, developers should provide the parameter name followed by the path.
-- **input.size**: Number of records that needs to be fetched in the response of API. 
-- **size-value**: Should provide the parameter’s name in the request which will have size information. If the value resides inside an object, developers should provide the parameter name followed by the path.
+#### Offset Input Configuration Explained
 
-### Offset Output Configuration
+- **type**: Provide type of pagination, Offset, Page, Cursor.
+- **input**: Contains input parameters to send in the API.
+- **input.offset**: Number of records to skip.
+- **offset-value**: Provide the parameter’s name containing offset information. If the value resides inside an object, provide the parameter name followed by the path.
+- **input.size**: Number of records to fetch in the API response. 
+- **size-value**: Provide the parameter’s name with size information. If the value resides inside an object, provide the parameter name followed by the path.
 
-output.size: Will contain information about the size of records that should be fetched in the subsequent request. 
+#### Offset Output Configuration
 
-output.totalElements: Will contain information about the total dataset length. If the developer wants to provide a predefined length if the total dataset length is not known to display the pages , can configure a variable called $minValue as a value to the totalElements key and provide an integer as a value.
-
-
-output.hasMoreItems: Will contain information where there are records that can be fetched in next request or not
-
-Output.page: Will contain information about the next page number 
+- **output.size**: Contains the size of records to fetch in the subsequent request. 
+- **output.totalElements**: Contains the total dataset length. If you want to provide a predefined length when the total dataset length is not known to display the pages, you can configure a variable called $minValue as a value to the totalElements key and provide an integer value.
+- **output.hasMoreItems**: Contains where the records are to fetch in next request or not.
+- **Output.page**: Contains the next page number details.
+:::
 
 The above keys are optional, if not provided the values are calculated from the platform.
-
 
 ### Example
 
