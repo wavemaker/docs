@@ -67,15 +67,15 @@ After enabling Security and on selecting SAML as the Security Provider for your 
     
     - Metadata URL – the metadata URL of the service provider which gives information about the service provider.
     ```    
-    {app-hosted-url} + /saml/metadata
+    {app-hosted-url} + /saml2/service-provider-metadata/saml
     ```   
     - Audience URL – the service provider endpoint where the assertions are received.
     ```    
-    {app-hosted-url} + /saml/SSO
+    {app-hosted-url} + /login/saml2/sso/saml
     ```    
     - Single Logout URL – This logs out the user from the IdP i.e global log out.
     ```    
-    {app-hosted-url} + /saml/SingleLogout
+    {app-hosted-url} + /logout/saml2/slo
     ```    
     
 [![](/learn/assets/saml_config.png)](/learn/assets/saml_config.png)
@@ -94,7 +94,11 @@ After enabling Security and on selecting SAML as the Security Provider for your 
 3. In the 3rd section: the service provider configuration options are shown:
 
 #### Configure Keystore 
-The SAML message exchange requires a public/private key pair for every participating entity in the message exchange. The Idp key pair is maintained by the IdP provider, but the Service Provider’s key pair should be maintained by the service provider, in this case, the WaveMaker application. In most of the production deployments, a valid key pair is recommended to be used, but during application development, WaveMaker helps in auto-generating a key pair for you which should be used only for demo purposes, but not for actual deployment. Below configuration gives information about configuring key pair for your application. In this, the user is prompted to choose auto-generate option or upload a valid key pair in JKS format.
+
+The SAML message exchange requires a public/private key pair for every participating entity in the message exchange. The Idp key pair is maintained by the IdP provider, but the Service Provider’s key pair should be maintained by the service provider, in this case, the WaveMaker application. In most of the production deployments, a valid key pair is recommended to be used, but during application development, WaveMaker helps in auto-generating a key pair for you which should be used only for demo purposes, but not for actual deployment. 
+
+Below configuration gives information about configuring key pair for your application. In this, the user is prompted to choose auto-generate option or upload a valid key pair in JKS format.
+
 - The user can auto-generate or import a Java KeyStore (JKS).
 - Auto-Generate - If the user chooses to auto-generate a keystore, WaveMaker will generate a self-signed private-public key pair and store it in the keystore with the following details as input       
     - Alias - This is required for the self-signed public key which is generated and imported into the keystore
@@ -123,33 +127,33 @@ The keystore.jks file is also available in the project option under the files ta
 
 Once the configuration is done you can run the app and you will be logged into your app. You will see the message “Redirecting to sso login…”
 
-## Deployment of Application that is configured with SAML
+## Deployment of Application that is Configured with SAML
 
 During the app development in WaveMaker, application URLs like Metadata, Audience and Single Signout URL are configured with any of the Identity Provider (for instance- Okta, Onelogin, ADFS, Pingone, etc.). However, these URLs being run URLs are temporary in nature, as such cannot be used for the deployed application. When the WaveMaker application is deployed in the container, the hostname/tenant_id changes and therefore, the URLs that are to be _configured/registered in the SAML IdP_ should change. For Example, in WaveMaker Studio,
 
 - the **Metadata URL** during development would look like this:
-    
-    https://wavemakeronline.com/studio/services/saml/metadata
+
+    https://wavemakeronline.com/studio/services/saml2/service-provider-metadata/saml
     
     whereas, for deployment app, the URL should typically look like:
     
-    (http/https)://{hostname}/{appname}/saml/metadata
+    (http/https)://{hostname}/{appname}/saml2/service-provider-metadata/saml
     
 - the **Audience URL** during development would look like this:
     
-    https://wavemakeronline.com/{tenantid}/{appname}/saml/SSO
+    https://wavemakeronline.com/{tenantid}/{appname}/login/saml2/sso/saml
     
     whereas, for deployment app, the URL should typically look like:
     
-    (http/https)://{hostname}/{appname}/saml/SSO
+    (http/https)://{hostname}/{appname}/login/saml2/sso/saml
     
 - the Single Signout URL during development would look like this:
     
-    https://wavemakeronline.com/studio/services/saml/SingleLogout
+    https://wavemakeronline.com/studio/services/logout/saml2/slo
     
     whereas, for deployment app, the URL should typically look like:
     
-    (http/https)://{hostname}/{appname}/saml/SingleLogout
+    (http/https)://{hostname}/{appname}/logout/saml2/slo
     
 
 :::note

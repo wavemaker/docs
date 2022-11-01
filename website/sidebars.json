@@ -3,8 +3,8 @@
   {
     "Getting started": 
       [
-        "documentation-reference",                
-        "app-development/wavemaker-overview/product-walkthrough"                  
+        "documentation-reference",
+        "app-development/wavemaker-overview/product-walkthrough"
       ],
 
     "Pages": 
@@ -414,62 +414,7 @@
         }
   ],
 
-  "Mobile development":
-    [
-        "hybrid-mobile/building-hybrid-mobile-apps",        
-        "hybrid-mobile/native-device-support",   
-        "hybrid-mobile/first-mobile-app",       
-
-      {
-        "type": "subcategory",
-        "label": "Mobile Design",
-        "ids": 
-        [
-        "hybrid-mobile/mobile-page-concepts",
-        "hybrid-mobile/gesture-support",
-        "hybrid-mobile/mobile-tabbar",
-        "hybrid-mobile/mobile-navbar"    
-        ]
-      },
-
-      {
-        "type": "subcategory",
-        "label": "Mobile Installer",
-        "ids": 
-        [
-        "hybrid-mobile/test-run",
-        "hybrid-mobile/debugging-mobile-apps",        
-        "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
-        "hybrid-mobile/mobile-build-android",
-        "hybrid-mobile/mobile-build-manual",
-        "hybrid-mobile/mobile-ios-android-distribution-certificates",
-        "hybrid-mobile/export-cordova-zip",
-        "hybrid-mobile/mobile-build-phonegap",
-        "hybrid-mobile/mobile-build-manual",
-        "hybrid-mobile/mobile-build-appchef"
-        ]
-      },
-
-      {
-        "type": "subcategory",
-        "label": "Mobile Integrations",
-        "ids": [
-        "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",        
-        "hybrid-mobile/mobile-integrations-amazon-sns",
-        "hybrid-mobile/use-push-notification-wm-mobile-app",
-        "hybrid-mobile/invoking-web-app-apis-mobile-apps"]
-      },
-
-      {
-        "type": "subcategory",
-        "label": "Offline Features",
-        "ids": [
-        "hybrid-mobile/offline-data-support",
-        "hybrid-mobile/offline-data-support-implementation",
-        "hybrid-mobile/switching-offline-online-mode"]
-      }
-    ],    
-    "Connectors":
+  "Connectors":
     [
         "connectors/connectors-introduction",        
         "connectors/connectors-architecture",   
@@ -619,7 +564,8 @@
       "label": "Logs Aggregation",
       "ids": [
         "on-premise/observability/logs-aggregation/overview",
-        "on-premise/observability/logs-aggregation/kibana"
+        "on-premise/observability/logs-aggregation/kibana",
+        "on-premise/observability/logs-aggregation/fluentd"
       ]
     },
     {
@@ -637,8 +583,10 @@
   "Upgrade":
   [
     "on-premise/upgrade/upgrade-setup",
+    "on-premise/upgrade/upgrade-prerequisites",
     "on-premise/upgrade/download-copy-patch",
     "on-premise/upgrade/extract-patch",
+    "on-premise/upgrade/passivate-containers",
     "on-premise/upgrade/run-patch",
     "on-premise/upgrade/docker-upgrade",
     "on-premise/upgrade/os-upgrade"
@@ -651,7 +599,90 @@
   ]
 },
 
+"Mobile":
+{
 
+"Mobile Development":
+  [
+    "app-development/wavemaker-overview/react-native-and-cordova"
+  ],
+  
+"React Native": 
+[
+     "react-native/react-native",
+     "react-native/feature-support",
+     "react-native/supported-widgets",
+     "react-native/supported-variables",
+     "react-native/styles",
+     "react-native/test-run",
+     "react-native/web-preview-debug",
+     "react-native/inspection-framework-react-native",
+     "react-native/expo-debug",
+     "react-native/styles",
+     "react-native/theme",
+     "react-native/export-react-native-zip",
+     "react-native/build-installers",
+     "react-native/expo-apk-debug",
+     "react-native/expo-ipa-debug"
+],
+
+"Cordova":
+    [
+        "hybrid-mobile/building-hybrid-mobile-apps",        
+        "hybrid-mobile/native-device-support",   
+        "hybrid-mobile/first-mobile-app",       
+
+      {
+        "type": "subcategory",
+        "label": "Mobile Design",
+        "ids": 
+        [
+        "hybrid-mobile/mobile-page-concepts",
+        "hybrid-mobile/gesture-support",
+        "hybrid-mobile/mobile-tabbar",
+        "hybrid-mobile/mobile-navbar"    
+        ]
+      },
+
+      {
+        "type": "subcategory",
+        "label": "Mobile Installer",
+        "ids": 
+        [
+        "hybrid-mobile/test-run",
+        "hybrid-mobile/debugging-mobile-apps",        
+        "hybrid-mobile/testing-hybrid-mobile-apps-using-live-sync",
+        "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
+        "hybrid-mobile/mobile-build-android",
+        "hybrid-mobile/mobile-build-manual",
+        "hybrid-mobile/mobile-ios-android-distribution-certificates",
+        "hybrid-mobile/export-cordova-zip",
+        "hybrid-mobile/mobile-build-phonegap",
+        "hybrid-mobile/mobile-build-manual",
+        "hybrid-mobile/mobile-build-appchef"
+        ]
+      },
+
+      {
+        "type": "subcategory",
+        "label": "Mobile Integrations",
+        "ids": [
+        "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",        
+        "hybrid-mobile/mobile-integrations-amazon-sns",
+        "hybrid-mobile/use-push-notification-wm-mobile-app",
+        "hybrid-mobile/invoking-web-app-apis-mobile-apps"]
+      },
+
+      {
+        "type": "subcategory",
+        "label": "Offline Features",
+        "ids": [
+        "hybrid-mobile/offline-data-support",
+        "hybrid-mobile/offline-data-support-implementation",
+        "hybrid-mobile/switching-offline-online-mode"]
+      }
+    ]
+},
 
 "Tutorials": 
   {
@@ -687,7 +718,7 @@
         "How-to-documents": 
           [
             "howtos-documents",
-            "app-development/wavemaker-overview/wavemaker-best-practices"                                                                     
+            "app-development/wavemaker-overview/wavemaker-best-practices"                                                               
           ],
           
           "App solution":
@@ -722,6 +753,7 @@
             "how-tos/adjust-leftnav-width",
             "how-tos/customizing-theme",
             "how-tos/widget-template-layout",
+            "how-tos/wizard-layout",
             "how-tos/custom-widget-template",
             "how-tos/using-custom-formatter"
           ],
@@ -750,7 +782,9 @@
             "how-tos/custom-security-using-google-oauth-prefab",
             "how-tos/multiple-security-provider-implementation",
             "how-tos/customizing-post-authentication-handlers",
-            "how-tos/user-driven-dynamic-roles"
+            "how-tos/user-driven-dynamic-roles",
+            "how-tos/configuring-content-security-policy",
+            "how-tos/configure-mtls-in-wmapp"
           ],
 
           "Databases":
@@ -766,7 +800,8 @@
             "how-tos/audit-history-using-crud-listeners",
             "how-tos/rowlevel-security-using-crud-event-listeners",
             "how-tos/validations-using-crudListeners",
-            "how-tos/custom-business-logic-using-crud-event-listeners"
+            "how-tos/custom-business-logic-using-crud-event-listeners",
+            "how-tos/mysql-connection-using-ssl"
           ],
 
           "Web services":
@@ -1018,6 +1053,10 @@
             "how-tos/create-prefab-using-angular-module",
             "how-tos/create-prefab-using-custom-element",
             "how-tos/integrating-azure-oauth-prefab"
+          ],
+          "Team Poral Configure Vcs":
+          [
+            "how-tos/azure-repos-vcs"
           ]
         
   },
@@ -1132,6 +1171,8 @@
 
     "Container":
     [
+        "app-development/widgets/container/layout",
+        "app-development/widgets/container/flex-layout",
         "app-development/widgets/container/grid-layout",   
         "app-development/widgets/container/accordion",
         "app-development/widgets/container/container", 
@@ -1279,38 +1320,103 @@
     ]
   },
 
-  "Release Notes": 
+  "Release Notes":
   {
-    "Release Notes": 
-      [
+    "New Releases":
+    [
       "wavemaker-release-notes",
-      "wavemaker-known-issues",
+      "enterprise-release-notes",
+      {
+        "type": "subcategory",
+        "label": "What's new",
+        "ids": 
+          [
+          "app-development/wavemaker-overview/wavemaker-11",
+          "app-development/wavemaker-overview/wavemaker-11-beta",
+          "app-development/wavemaker-overview/faqs-11",
+          "how-tos/upgrade-guide-wavemaker-10-to-11" 
+          ]
+        }
+    ],
+    "Current v11.x": 
+    [
+        {
+          "type": "subcategory",
+          "label": "Versions: 11.1.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v11-1-3",
+              "wavemaker-release-notes/v11-1-2",
+              "wavemaker-release-notes/v11-1-1",              
+              "wavemaker-release-notes/v11-1-0"              
+            ]
+        },
+        {
+          "type": "subcategory",
+          "label": "Versions: 11.0.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v11-0-3",
+              "wavemaker-release-notes/v11-0-2",
+              "wavemaker-release-notes/v11-0-1"              
+            ]
+        }
+    ],   
+    
+    "Release v10.x": 
+      [
+            {
+        "type": "subcategory",
+        "label": "WaveMaker 10",
+        "ids": 
+          [ 
+            "wavemaker-release-notes/v10-release-summary"
+          ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Versions: 10.15.x",
+        "ids": 
+          [ 
+            "wavemaker-release-notes/v10-15-0"
+          ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Versions: 10.14.x",
+        "ids": 
+          [ 
+            "wavemaker-release-notes/v10-14-0"
+          ]
+      },
       {
         "type": "subcategory",
         "label": "Versions: 10.13.x",
         "ids": 
           [ 
+            "wavemaker-release-notes/v10-13-0",
             "wavemaker-release-notes/v10-13-1",
-            "wavemaker-release-notes/v10-13-0"
+            "wavemaker-release-notes/v10-13-2"
           ]
       },
       {
         "type": "subcategory",
         "label": "Versions: 10.12.x",
         "ids": 
-          [ 
-            "wavemaker-release-notes/v10-12-2",
+          [                       
+            "wavemaker-release-notes/v10-12-0",
             "wavemaker-release-notes/v10-12-1",
-            "wavemaker-release-notes/v10-12-0"
+            "wavemaker-release-notes/v10-12-2"
           ]
       },
       {
         "type": "subcategory",
         "label": "Versions: 10.11.x",
         "ids": 
-          [ "wavemaker-release-notes/v10-11-2",
+          [ 
+            "wavemaker-release-notes/v10-11-0",
             "wavemaker-release-notes/v10-11-1",
-            "wavemaker-release-notes/v10-11-0"
+            "wavemaker-release-notes/v10-11-2"            
           ]
       },
       {
@@ -1318,10 +1424,10 @@
         "label": "Versions: 10.10.x",
         "ids": 
           [ 
-            "wavemaker-release-notes/v10-10-3",
-            "wavemaker-release-notes/v10-10-2",            
-            "wavemaker-release-notes/v10-10-1",
-            "wavemaker-release-notes/v10-10-0"
+            "wavemaker-release-notes/v10-10-0",
+            "wavemaker-release-notes/v10-10-1",            
+            "wavemaker-release-notes/v10-10-2",
+            "wavemaker-release-notes/v10-10-3"
           ]
       },
       {
@@ -1329,9 +1435,9 @@
         "label": "Versions: 10.9.x",
         "ids": 
           [             
-            "wavemaker-release-notes/v10-9-2",
+            "wavemaker-release-notes/v10-9-0",
             "wavemaker-release-notes/v10-9-1",
-            "wavemaker-release-notes/v10-9-0"
+            "wavemaker-release-notes/v10-9-2"
           ]
       },
       {
@@ -1339,8 +1445,8 @@
         "label": "Versions: 10.8.x",
         "ids": 
           [ 
-            "wavemaker-release-notes/v10-8-2",
-            "wavemaker-release-notes/v10-8-0"
+            "wavemaker-release-notes/v10-8-0",
+            "wavemaker-release-notes/v10-8-2"
           ]
       },
       {
@@ -1348,12 +1454,12 @@
         "label": "Versions: 10.7.x",
         "ids": 
           [ 
-            "wavemaker-release-notes/v10-7-5",
-            "wavemaker-release-notes/v10-7-4",
-            "wavemaker-release-notes/v10-7-3",
-            "wavemaker-release-notes/v10-7-2",
+            "wavemaker-release-notes/v10-7-0",
             "wavemaker-release-notes/v10-7-1",
-            "wavemaker-release-notes/v10-7-0"
+            "wavemaker-release-notes/v10-7-2",
+            "wavemaker-release-notes/v10-7-3",
+            "wavemaker-release-notes/v10-7-4",
+            "wavemaker-release-notes/v10-7-5"
           ]
       },
       {
@@ -1361,15 +1467,15 @@
         "label": "Versions: 10.6.x",
         "ids": 
           [ 
-            "wavemaker-release-notes/v10-6-9",         
-            "wavemaker-release-notes/v10-6-7",
-            "wavemaker-release-notes/v10-6-6",
-            "wavemaker-release-notes/v10-6-5",
-            "wavemaker-release-notes/v10-6-4",
-            "wavemaker-release-notes/v10-6-3",
-            "wavemaker-release-notes/v10-6-2",
+            "wavemaker-release-notes/v10-6-0",         
             "wavemaker-release-notes/v10-6-1",
-            "wavemaker-release-notes/v10-6-0"
+            "wavemaker-release-notes/v10-6-2",
+            "wavemaker-release-notes/v10-6-3",
+            "wavemaker-release-notes/v10-6-4",
+            "wavemaker-release-notes/v10-6-5",
+            "wavemaker-release-notes/v10-6-6",
+            "wavemaker-release-notes/v10-6-7",
+            "wavemaker-release-notes/v10-6-9"
           ]
       },
 
@@ -1378,13 +1484,13 @@
         "label": "Versions: 10.5.x",
         "ids": 
           [ 
-            "wavemaker-release-notes/v10-5-6",
-            "wavemaker-release-notes/v10-5-5", 
-            "wavemaker-release-notes/v10-5-4", 
+            "wavemaker-release-notes/v10-5-0",
+            "wavemaker-release-notes/v10-5-1", 
+            "wavemaker-release-notes/v10-5-2", 
             "wavemaker-release-notes/v10-5-3",
-            "wavemaker-release-notes/v10-5-2",
-            "wavemaker-release-notes/v10-5-1",            
-            "wavemaker-release-notes/v10-5-0"
+            "wavemaker-release-notes/v10-5-4",
+            "wavemaker-release-notes/v10-5-5",            
+            "wavemaker-release-notes/v10-5-6"
           ]
       },
 
@@ -1393,9 +1499,9 @@
         "label": "Versions: 10.4.x",
         "ids": 
           [              
-            "wavemaker-release-notes/v10-4-2",
+            "wavemaker-release-notes/v10-4-0",
             "wavemaker-release-notes/v10-4-1",
-            "wavemaker-release-notes/v10-4-0"
+            "wavemaker-release-notes/v10-4-2"
           ]
       },
       
@@ -1404,10 +1510,10 @@
         "label": "Versions: 10.3.x",
         "ids": 
           [              
-            "wavemaker-release-notes/v10-3-3",
-            "wavemaker-release-notes/v10-3-2",
+            "wavemaker-release-notes/v10-3-0",
             "wavemaker-release-notes/v10-3-1",
-            "wavemaker-release-notes/v10-3-0"
+            "wavemaker-release-notes/v10-3-2",
+            "wavemaker-release-notes/v10-3-3"
           ]
       },
 
@@ -1416,13 +1522,13 @@
         "label": "Versions: 10.2.x",
         "ids": 
           [
-            "wavemaker-release-notes/v10-2-7",
-            "wavemaker-release-notes/v10-2-6",
-            "wavemaker-release-notes/v10-2-4",
-            "wavemaker-release-notes/v10-2-3",
-            "wavemaker-release-notes/v10-2-2",
+            "wavemaker-release-notes/v10-2-0",
             "wavemaker-release-notes/v10-2-1",
-            "wavemaker-release-notes/v10-2-0"            
+            "wavemaker-release-notes/v10-2-2",
+            "wavemaker-release-notes/v10-2-3",
+            "wavemaker-release-notes/v10-2-4",
+            "wavemaker-release-notes/v10-2-6",
+            "wavemaker-release-notes/v10-2-7"            
           ]
         },
 
@@ -1440,20 +1546,36 @@
           "label": "Versions: 10.0.x",
           "ids": 
             [              
-              "wavemaker-release-notes/v10-0-4",
-              "wavemaker-release-notes/v10-0-3",
-              "wavemaker-release-notes/v10-0-2",
-              "wavemaker-release-notes/v10-0-1",
+              "wavemaker-release-notes/v10-0-preview",
               "wavemaker-release-notes/v10-0-ga",
-              "wavemaker-release-notes/v10-0-preview" 
+              "wavemaker-release-notes/v10-0-1",
+              "wavemaker-release-notes/v10-0-2",
+              "wavemaker-release-notes/v10-0-3",
+              "wavemaker-release-notes/v10-0-4" 
             ]
           }                         
       ],
 
       "Release v9.x": 
       [
-        "wavemaker-release-notes/v9-4-0",
-        "wavemaker-release-notes/v9-3-0", 
+        {
+          "type": "subcategory",
+          "label": "Versions: 9.4.x",
+          "ids": 
+            [ 
+              "wavemaker-release-notes/v9-4-0"
+            ]
+
+        },
+        {
+          "type": "subcategory",
+          "label": "Versions: 9.3.x",
+          "ids": 
+            [ 
+              "wavemaker-release-notes/v9-3-0"
+            ]
+              
+        },
         {
           "type": "subcategory",
           "label": "Versions: 9.2.x",
@@ -1463,82 +1585,101 @@
               "wavemaker-release-notes/v9-2-1"              
             ]
         },
-        "wavemaker-release-notes/v9-1-0",
+        {
+          "type": "subcategory",
+          "label": "Versions: 9.1.x",
+          "ids": 
+            [
+        "wavemaker-release-notes/v9-1-0"
+            ]
+        },
         {
           "type": "subcategory",
           "label": "Versions: 9.0.x",
           "ids": 
             [
-              "wavemaker-release-notes/v9-0-2",
+              "wavemaker-release-notes/v9-0-ga",
               "wavemaker-release-notes/v9-0-1",
-              "wavemaker-release-notes/v9-0-ga"              
+              "wavemaker-release-notes/v9-0-2"              
             ]
         }
       ], 
       
       "Release v8.x": 
       [
-        "wavemaker-release-notes/v8-5-0",        
+        {
+          "type": "subcategory",
+          "label": "Versions: 8.5.x",
+          "ids": 
+            [
+            "wavemaker-release-notes/v8-5-0"
+            ]
+        },        
         {
           "type": "subcategory",
           "label": "Versions: 8.4.x",
           "ids": 
             [
-              "wavemaker-release-notes/v8-4-2-2",
-              "wavemaker-release-notes/v8-4-2-1",
-              "wavemaker-release-notes/v8-4-2",
+              "wavemaker-release-notes/v8-4-0",  
               "wavemaker-release-notes/v8-4-1",
-              "wavemaker-release-notes/v8-4-0"                
+              "wavemaker-release-notes/v8-4-2",
+              "wavemaker-release-notes/v8-4-2-1",
+              "wavemaker-release-notes/v8-4-2-2"                                       
             ]
         },        
         {
           "type": "subcategory",
-          "label": "Versions: v8.3.x",
+          "label": "Versions: 8.3.x",
           "ids": 
             [
-              "wavemaker-release-notes/v8-3-3",
-              "wavemaker-release-notes/v8-3-2",
+              "wavemaker-release-notes/v8-3-0",
               "wavemaker-release-notes/v8-3-1",
-              "wavemaker-release-notes/v8-3-0"              
+              "wavemaker-release-notes/v8-3-2",
+              "wavemaker-release-notes/v8-3-3"              
             ]
         },
         {
           "type": "subcategory",
-          "label": "Versions: v8.2.x",
+          "label": "Versions: 8.2.x",
           "ids": 
             [
-              "wavemaker-release-notes/v8-2-3",
-              "wavemaker-release-notes/v8-2-0"                     
-            ]
-        },
-
-        {
-          "type": "subcategory",
-          "label": "Versions: v8.1.x",
-          "ids": 
-            [
-              "wavemaker-release-notes/v8-1-1",
-              "wavemaker-release-notes/v8-1-0"                     
+              "wavemaker-release-notes/v8-2-0",
+              "wavemaker-release-notes/v8-2-3"                     
             ]
         },
 
         {
           "type": "subcategory",
-          "label": "Versions: v8.0.x",
+          "label": "Versions: 8.1.x",
           "ids": 
             [
-              "wavemaker-release-notes/v8-0-6",
-              "wavemaker-release-notes/v8-0-5",
-              "wavemaker-release-notes/v8-0-4",
-              "wavemaker-release-notes/v8-0-3",
-              "wavemaker-release-notes/v8-0-2",
-              "wavemaker-release-notes/v8-0-1",
+              "wavemaker-release-notes/v8-1-0",
+              "wavemaker-release-notes/v8-1-1"                     
+            ]
+        },
+
+        {
+          "type": "subcategory",
+          "label": "Versions: 8.0.x",
+          "ids": 
+            [
+              "wavemaker-release-notes/v8-0-beta",
               "wavemaker-release-notes/v8-0-ga",
-              "wavemaker-release-notes/v8-0-beta"
+              "wavemaker-release-notes/v8-0-1",
+              "wavemaker-release-notes/v8-0-2",
+              "wavemaker-release-notes/v8-0-3",
+              "wavemaker-release-notes/v8-0-4",
+              "wavemaker-release-notes/v8-0-5",
+              "wavemaker-release-notes/v8-0-6"
             ]
         }
 
-      ]  
+      ],
+
+      "Known Issues":
+      [
+        "wavemaker-known-issues"
+      ] 
   },
 
   "FAQs":

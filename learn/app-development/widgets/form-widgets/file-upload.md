@@ -20,20 +20,33 @@ Following properties can be set for a **FileUpload** widget:
 
 [![](/learn/assets/fu_feats.png)](/learn/assets/fu_feats.png)
 
+### Clear Uploaded Files from UI
+
+Clear the list of uploaded files from the UI (user interface). For this, you can add the following properties:
+1. Choose an icon or use a default one.
+2. Write a hint description on mouse-over.
+
+**cleariconclass**: Set the class name for the Clear icon, choosing from the [icons](/learn/app-development/widgets/basic/icon). The default value of the property is `wi wi-clear`. To change the default icon, configure the property from the **Markup** tab or by using the exposed method `setClearIconClass`.
+
+**cleariconhint**: You can set the hint property to show a text message when you mouse-over the icon. The default value is set to the text *`Clear`*. To change the default hint text, configure the property from the **Markup** tab or by using the exposed method `setClearIconHint(hint)`.
+
+**clear()**: Call the `clear()` method to remove the uploaded files from the UI - all at once.
+
+![file upload clear](/learn/assets/file-upload-clear.png)
+
 ## Properties
 
 | Property | Description |
 | --- | --- |
 | Caption | The caption is the text that the end user sees on your label. |
 | Name | The name is a unique identifier for FileUpload widget. |
-| **Accessibility** |
+| **Accessibility** ||
 | Hint | Any text or html you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
-NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
-| **Layout** |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| **Layout** ||
 | Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
-| **Behavior** |
+| **Behavior** ||
 | Multiple | Enable/Disable to switch between Multiple/Single FileUpload Widget. |
 | Message | Message text for file upload while in multi-select mode |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
@@ -49,7 +62,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 
 | Event | Description |
 | --- | --- |
-| **Callback Events** |
+| **Callback Events** ||
 | On Before Select | This event handler is called before the upload of the file. It can be used to perform any validations before the file is further processed. |
 | On Select | This event handler is called when the files are selected. By default, it invokes the Service Variable to upload the selected files. Deleting this variable will set the FileUpload to act as a file selector. |
 
@@ -57,8 +70,8 @@ Apart from the above events attached to the FileUpload widget, the following Ser
 
 | Event | Description |
 | --- | --- |
-| **Callback Events** |
-| On Abort These events will appear only for the Service Variables targeting an upload service. |  |
+| **Callback Events** ||
+| On Abort | These events will appear only for the Service Variables targeting an upload service. |  
 | On Before Update | These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place. |
 | On Result | This event is triggered as soon as the variable receives a response from the target service. onResult is called whether or not there was an error generated. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
 | On Progress These events will appear only for the Service Variables targeting an upload service. | A progress bar is displayed below the file selector, this is handled by file widget. User can perform actions on the onProgress event. However, the default progress bar shown is not hidden on providing a handler to this event. |

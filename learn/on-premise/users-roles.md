@@ -11,5 +11,4 @@ Learn how roles and activities are defined in WME.
 |---|---|
 |**Setup Admin**| - Procure infrastructure and prerequisites <br> - Setup WaveMaker Enterprise <br> - Creates Super-admin <br> - Manages the setup and upgrades |
 |**Super Admin** | - Onboarding Users <br> - Adding VCS to WaveMaker Enterprise Platform <br> - Add Instances <br> - Configure Pipelines |
-|**Enterprise Admin** | - Project Management <br> - Artifact Management |
 |**Studio User** | - Developer who builds WaveMaker apps using Studio |

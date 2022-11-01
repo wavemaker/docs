@@ -49,4 +49,16 @@ Ssh credentials of the Instance either should have root privileges or provide re
   alias dzdo='sudo'
   ```
 
-- Wait for a few moments to configure and get started.
+- Wait for a few moments to configure and get started. You can check the Health status by clicking on the check mark(shown in the below picture).
+
+[![status check](/learn/assets/wme-setup/configuring-wme/status-check.png)](/learn/assets/wme-setup/configuring-wme/status-check.png)
+
+- It will gives you the Health status.
+
+[![app deployement health status check](/learn/assets/wme-setup/configuring-wme/app-deployement-health-status.png)](/learn/assets/wme-setup/configuring-wme/app-deployement-health-status.png)
+
+- You can verify them by copying them to clipboard and pasting on a Notepad.
+
+
+
+
