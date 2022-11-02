@@ -6,7 +6,6 @@ import LastUpdated from '@theme/LastUpdated';
 import EditThisPage from '@theme/EditThisPage';
 import TagsListInline from '@theme/TagsListInline';
 import styles from './styles.module.css';
-import Feedback from '../../Feedback';
 function TagsRow(props) {
   return (
     <div
@@ -66,7 +65,6 @@ export default function DocItemFooter() {
         />
       )}
       {canDisplayTagsRow && <TagsRow tags={tags} />}
-      <Feedback resource={editUrl.split('/').pop()} />
     </footer>
   );
 }
