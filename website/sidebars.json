@@ -1341,6 +1341,14 @@
     [
         {
           "type": "subcategory",
+          "label": "Versions: 11.2.x",
+          "ids": 
+            [             
+              "wavemaker-release-notes/v11-2-0"              
+            ]
+        },
+        {
+          "type": "subcategory",
           "label": "Versions: 11.1.x",
           "ids": 
             [
