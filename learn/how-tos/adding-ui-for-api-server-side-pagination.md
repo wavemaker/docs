@@ -1,13 +1,13 @@
 ---
-title: "Integrating Pagination for Imported APIs"
-id: "integrating-server-side-pagination"
-sidebar_label: "Pagination for Imported APIs"
+title: "Adding UI Pagination for API Server-side Pagination"
+id: "adding-ui-for-api-server-side-pagination"
+sidebar_label: "UI for API Server-side Pagination"
 ---
 ---
 
-Pagination is a process that separates data into sets. Server-side pagination controls how these sets are retrieved from the database. It is useful when your application does not want to display All records at once. Instead, request data with a specific order or filter criteria the API sets out, such as Offset, Page and Cursor types. For example, Instagram feed with a Cursor pagination; it retrieves a set of five latest posts based on a timestamp, as you scroll.
+Pagination is a way to represent data in sets of pages. Server-side pagination controls how these sets are retrieved from the API. It is useful when your application wants to display records with a specific order or filter criteria the API sets out, including Offset, Page, and Cursor types. For example, an Instagram feed with a Cursor pagination; it retrieves a set of five latest posts based on a timestamp as you scroll.
 
-In WaveMaker, you can achieve Server-side pagination using the DSL (Domain Specific Language) method to the imported APIs, which works seamlessly with the data widgets. 
+You can add UI pagination for representing APIs supporting Server-side pagination using a bit of JavaScript API exposed on the widgets such as List, Table, and more.
 
 ## Types of Pagination
 
@@ -19,16 +19,16 @@ Types of Server-side pagination WaveMaker supports:
 
 ### Widgets and Services Support
 
-- **Supported Widgets**: Data widgets, including, Data Table, List, Cards
+- **Supported Widgets**: Data widgets, including Data Table, List, Cards
 - **Supported Services**: Web Services and Imported APIs  
 
 ## Configuring Pagination Parameters
 
-Configure pagination parameters for imported API using the setPagination method. It renders Widget's data, ensuring the UI is paging through data, and making the API calls with appropriate input parameters.
+Configure pagination parameters for imported API using the setPagination method. It renders Widget's data, ensuring the UI is paging through data and making the API calls with appropriate input parameters.
 
 ### Set Pagination
 
-The **setPagination** method is exposed on all service variables to support server-side pagination. 
+The **setPagination** method is exposed on all service variables to support Server-side pagination. 
 
 You can set the pagination on a variable:
 
@@ -42,12 +42,12 @@ This method uses **offset** and **limit** query parameters, most suitable for us
 
 ### Configuring Offset
 
-The following the code snippet describes how to configure the offset based pagination.
+The following code snippet describes how to configure Offset pagination.
 
 - Create a [Service Variable](/learn/app-development/variables/web-service#how-to-create-a-service-variable).
-- Drag-n-drop a data widget; for example, Data table.
+- Drag-n-drop a data widget, for example, Data table.
 - Bind the Data Table to Service Variable.
-- Go to Script tab, configure Offset pagination as described below. 
+- Go to the Script tab, and configure Offset pagination as described below. 
 
 ```js
 Page.onReady = function() {
@@ -92,12 +92,12 @@ Page divides set into pages. The API accepts a page parameter of an integer type
 
 ### Configuring Page
 
-The following the code snippet describes how to configure the Page pagination.
+The following code snippet describes how to configure Cursor pagination.
 
 - Create a [Service Variable](/learn/app-development/variables/web-service#how-to-create-a-service-variable).
-- Drag-n-drop a data widget; for example, Data table.
+- Drag-n-drop a data widget, for example, Data table.
 - Bind the Data Table to Service Variable.
-- Go to Script tab, configure Page pagination as described below. 
+- Go to the Script tab, and configure Cursor pagination as described below. 
 
 ```js
 {
@@ -127,7 +127,7 @@ totalPages: 7376
 
 ## Cursor Pagination
 
-Cursor works by returning a pointer to a specific item in the set of data. On subsequent requests, the database returns results after the given pointer.
+Cursor works by returning a pointer to a specific item in the set of data. On subsequent requests, the API returns results after the given pointer.
 
 ### Configuring Cursor
 
@@ -170,18 +170,19 @@ x-pagination-total: 2751
 
 ## JMES Library
 
+Pagination controls can be sent both as the body of an HTTP Request or an HTTP Header. The following example shows how to send these in an HTTP header.
+
 While providing values for keys to the input and output parameters, you must follow JMES guidelines.
 
-JMESPath  allows you to declaratively specify how to extract elements from a JSON document. It is a query language for JSON. Define paths using JMES as below. Using “jmespath” library to evaluate JMES expressions. For more information on JMES visit the following link:  https://jmespath.org/
+JMESPath allows you to specify how to extract elements from a JSON document declaratively. It is a query language for JSON. Define paths using JMES as below. Using the “jmespath” library to evaluate JMES expressions. For more information, see on [more about JMES](https://jmespath.org/)
 
 ### Example
 
 **Response headers**:
 
 ```
-{	   "status":{"message":[{"message_TYPE":"SU","messageDesc":"SUCCESS","messageCode":"0000"}]},
+{ "status":{"message":[{"message_TYPE":"SU","messageDesc":"SUCCESS","messageCode":"0000"}]},
 "X-WM-pagination":{"totalRecordCount":"75","nextStartIndex":"11","hasMoreRecords":"Y","numRecReturned":"2"}}
 ```
 
 **hasMoreItems**: '$header."X-WM-pagination".hasMoreRecords == Y'
-
