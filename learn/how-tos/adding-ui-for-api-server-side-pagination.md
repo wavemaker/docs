@@ -5,9 +5,9 @@ sidebar_label: "UI for API Server-side Pagination"
 ---
 ---
 
-Pagination is a way to represent data in sets of pages. Server-side pagination controls how these sets are retrieved from the API. It is useful when your application wants to display records with a specific order or filter criteria the API sets out, including Offset, Page, and Cursor types. For example, an Instagram feed with a Cursor pagination; it retrieves a set of five latest posts based on a timestamp as you scroll.
+Pagination is a way to represent data in sets of pages. Server-side pagination controls how these sets are retrieved from the API. It is useful when your application wants to display records with a specific order or filter criteria the API sets out. For example, an Instagram feed with a Cursor pagination; it retrieves a set of five latest posts based on a timestamp as you scroll.
 
-You can add UI pagination for representing APIs supporting Server-side pagination using a bit of JavaScript API exposed on the widgets such as List, Table, and more.
+In WaveMaker, add UI pagination for representing APIs supporting Server-side pagination using a bit of JavaScript API exposed on the widgets such as List, Table, and more.
 
 ## Types of Pagination
 
@@ -172,7 +172,9 @@ x-pagination-total: 2751
 
 Pagination controls can be sent both as the body of an HTTP Request or an HTTP Header. The following example shows how to send these in an HTTP header.
 
-While providing values for keys to the input and output parameters, you must follow JMES guidelines.
+:::note
+When providing values for keys to the input and output parameters, you must follow JMES guidelines.
+:::
 
 JMESPath allows you to specify how to extract elements from a JSON document declaratively. It is a query language for JSON. Define paths using JMES as below. Using the “jmespath” library to evaluate JMES expressions. For more information, see on [more about JMES](https://jmespath.org/)
 
