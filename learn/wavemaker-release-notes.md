@@ -108,7 +108,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11 GA](/learn/wavemaker-release-notes/v11-1-0)
+Last updated: [WaveMaker 11.1](/learn/wavemaker-release-notes/v11-1-0)
 
 ---
 
@@ -118,7 +118,7 @@ Last updated: [WaveMaker 11 GA](/learn/wavemaker-release-notes/v11-1-0)
 | --- | --- | --- |
 | JS Binding | jquery | 3.4.1 |
 |  | jquery-ui* | 1.12.1 |
-| MVC Framework | angular| 11.2.14 |
+| MVC Framework | angular <td bgcolor="#44aaf4"> 11.2.14 to 12.2.16 |
 |  | angular-ui-bootstrap | 3.3.6 |
 |  | ngx-bootstrap | 6.2 |
 | Styles | bootstrap | 3.3.7 |
