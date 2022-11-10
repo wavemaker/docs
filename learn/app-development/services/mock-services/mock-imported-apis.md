@@ -20,7 +20,7 @@ With WaveMaker MockingBird API feature, you don’t have to rely on API being av
 - Once mock server is created successfully, you will see mock tag attached to the imported API as shown below
 [![create mock api](/learn/assets/moked-apis.png)](/learn/assets/moked-apis.png)
 - Now all the variables associated with this imported API will be pointing to the mocked service. To point it to the original service toggle Use MockData button
-[![create mock api](/learn/assets/enebled-moked-apis.png)](/learn/assets/enabled-moked-apis.png)
+[![create mock api](/learn/assets/enabled-moked-apis.png)](/learn/assets/enabled-moked-apis.png)
 - After disabling mocking this is how Imported APIs look, it's a click away to mock the service back again.
 [![create mock api](/learn/assets/diable-moked-apis.png)](/learn/assets/diable-moked-apis.png)
 
