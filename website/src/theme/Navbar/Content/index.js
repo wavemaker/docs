@@ -30,8 +30,8 @@ function NavbarContentLayout({ left, center, right }) {
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
-      <div className="navbar__items">{center}
-      </div>
+      {/* <div className="navbar__items">{center}
+      </div> */}
       <div className="navbar__items navbar__items--right">
         {!searchBarItem && (document.URL.split('/').slice(-1)[0] != "" || document.URL.split('/').slice(-2)[0] != "learn") && !document.URL.split('/').slice(-1)[0].includes("search") && (
           <div id="header-search">
