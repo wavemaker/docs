@@ -6,7 +6,6 @@ import LastUpdated from '@theme/LastUpdated';
 import EditThisPage from '@theme/EditThisPage';
 import TagsListInline from '@theme/TagsListInline';
 import styles from './styles.module.css';
-import Feedback from '../../Feedback';
 function TagsRow(props) {
   return (
     <div
@@ -19,6 +18,17 @@ function TagsRow(props) {
       </div>
     </div>
   );
+}
+function Feedback(props) {
+  let url = "https://github.com/wavemaker/docs/issues/new?title=&amp;body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A*%20Document URL%3A%20" + props.url.replace('../learn/', '') + "%0A*%20Document PATH%3A%20" + props.url.replace('../learn/', '').slice(props.url.indexOf('/learn/'), props.url.length) + "%0A";
+  return (
+    <div className='feedback-container'>
+      <a className="github-link" aria-label="Send feedback about this page" data-bi-name="create-issue-on-github" href={url}>
+        <img src='/learn/img/GitHub.png'></img>
+        <span>This page</span>
+      </a>
+    </div>
+  )
 }
 function EditMetaRow({
   editUrl,
@@ -66,7 +76,7 @@ export default function DocItemFooter() {
         />
       )}
       {canDisplayTagsRow && <TagsRow tags={tags} />}
-      <Feedback resource={editUrl.split('/').pop()} />
+      <Feedback url={editUrl} />
     </footer>
   );
 }

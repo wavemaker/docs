@@ -132,9 +132,6 @@ module.exports = {
       "apiKey": process.env.ALGOLIA_DS_API_KEY,
       "indexName": process.env.ALGOLIA_DS_INDEX_NAME
     },
-    "happyreact": {
-      "token": process.env.HAPPY_REACT_TOKEN,
-    },
     "footer": {}
   }
 }
