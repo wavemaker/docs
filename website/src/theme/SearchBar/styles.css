@@ -12,3 +12,22 @@
 .DocSearch-Container {
   z-index: calc(var(--ifm-z-index-fixed) + 1);
 }
+
+.DocSearch-Modal{
+  background-color: transparent;
+  box-shadow: none;
+  margin-top: 2em;
+}
+
+.DocSearch-SearchBar{
+  padding: 0;
+}
+
+.DocSearch-Form{
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 50px;
+}
+
+.DocSearch-Dropdown{
+  padding: 0;
+}
