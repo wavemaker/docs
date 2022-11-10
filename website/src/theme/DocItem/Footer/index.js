@@ -25,7 +25,7 @@ function Feedback(props) {
     <div className='feedback-container'>
       <a className="github-link" aria-label="Send feedback about this page" data-bi-name="create-issue-on-github" href={url}>
         <img src='/learn/img/GitHub.png'></img>
-        <span>This page</span>
+        <span> Submit Feedback for This Page</span>
       </a>
     </div>
   )
