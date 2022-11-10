@@ -94,7 +94,7 @@ export function DocSearchModal(_ref) {
     var searchClient = useSearchClient(appId, apiKey, transformSearchClient);
     var favoriteSearches = React.useRef(createStoredSearches({
         key: "__DOCSEARCH_FAVORITE_SEARCHES__".concat(indexName),
-        limit: 10
+        limit: 5
     })).current;
     var recentSearches = React.useRef(createStoredSearches({
         key: "__DOCSEARCH_RECENT_SEARCHES__".concat(indexName),
@@ -132,10 +132,9 @@ export function DocSearchModal(_ref) {
             onStateChange: function onStateChange(props) {
                 setState(props.state);
                 if (props.state.query != '')
-                    document.getElementById("header-search") ? document.getElementById("header-search").classList.add("active") : document.getElementById("home-search").classList.add("active");
+                    document.body.classList.add("search-active")
                 else
-                    document.getElementById("header-search") ? document.getElementById("header-search").classList.remove("active") : document.getElementById("home-search").classList.remove("active");
-
+                    document.body.classList.remove("search-active")
             },
             getSources: function getSources(_ref2) {
                 var query = _ref2.query,

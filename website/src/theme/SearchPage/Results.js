@@ -86,9 +86,10 @@ function Result(_ref) {
   }, /*#__PURE__*/React.createElement("span", {
     className: "search-value",
     dangerouslySetInnerHTML: { __html: highlightContent },
-  }), React.createElement("span", {
+  }), /*#__PURE__*/React.createElement("span", {
     className: "search-info",
-  }, item.hierarchy['lvl1']),/*#__PURE__*/ React.createElement(Snippet, {
+    dangerouslySetInnerHTML: { __html: highlightContent },
+  }),/*#__PURE__*/ React.createElement(Snippet, {
     className: "DocSearch-Hit-path",
     hit: item,
     attribute: "content"

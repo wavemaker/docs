@@ -12,7 +12,7 @@ export function ResultsScreen(props) {
       return null;
     }
 
-    var title = removeHighlightTags(collection.items[0]);
+    var title = collection.items[0]["hierarchy"]["lvl0"];
     return /*#__PURE__*/React.createElement(Results, _extends({}, props, {
       key: collection.source.sourceId,
       title: title,
