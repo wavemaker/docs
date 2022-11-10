@@ -1,6 +1,13 @@
 :root {
     /* --ifm-color-primary: #1794ef; */
     --ifm-font-family-base: 'IBM Plex Sans', sans-serif;
+    --ifm-font-color-base: #3b454e;
+    --ifm-h1-font-size: 2.5rem;
+    --ifm-h2-font-size: 1.5rem;
+    --ifm-h3-font-size: 1.25rem;
+    /* --ifm-h4-font-size: 1rem;
+    --ifm-h5-font-size: 0.875rem;
+    --ifm-h6-font-size: 0.85rem; */
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 /* your custom css */
@@ -94,7 +101,13 @@ body {
     text-align: right;
 }
 
-h1 {
+.markdown h1:first-child{
+    --ifm-h1-font-size: 2.5rem;
+}
+.markdown > h2{
+    --ifm-h2-font-size: 1.5rem;
+}
+/* h1 {
     font-size: 48px;
 }
 
@@ -104,7 +117,7 @@ h2 {
 
 h3 {
     font-size: 22px;
-}
+} */
 
 .box-shadow--none {
     -webkit-box-shadow: none;
@@ -158,7 +171,7 @@ h3 {
     width: 499px;
     margin: 2em auto;
 }
-/* .banner-search.active{
+.banner-search.active{
     position: fixed;
     top: 0;
     z-index: 9999;
@@ -167,7 +180,7 @@ h3 {
     margin: 0;
     left: 0;
     background-color: rgba(0,0,0,0.25);
-} */
+}
 
 .header-searchBar {
     align-items: center;
@@ -933,6 +946,24 @@ h3 {
 .docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Main-styles-module{
     padding: 0 var(--ifm-spacing-horizontal);
 }
+.navbar__items--right > :last-child{
+    margin-left: 0.5rem;
+}
+.menu__list-item-collapsible .menu__link:hover,
+.menu__list-item-collapsible .menu__link--active{
+    background-color: var(--ifm-menu-color-background-active) !important;
+}
+
+button[aria-label="Collapse sidebar"] svg{
+    transform: scale(0.75) rotate(180deg);
+}
+button[aria-label="Collapse sidebar"] svg > g,[aria-label="Expand sidebar"] svg > g{
+    fill: var(--ifm-color-primary);
+}
+[aria-label="Expand sidebar"] svg{
+    transform: scale(0.75) rotate(0deg);
+}
+
 
 @media only screen and (max-width: 1023px) {}
 
