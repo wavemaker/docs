@@ -145,8 +145,8 @@ The following the code snippet describes how to configure the Cursor pagination.
        page: 'page'
    },
    output: {
-       next: '$header.X-WM-X-Links-Next',
-       prev: '$header.X-WM-X-Links-Previous'
+       next: '$header.x-links-next',
+       prev: '$header.x-links-previous'
    }
 }
 ```
@@ -159,9 +159,9 @@ API: https://sampleapi.com/v2/users?page=1
 Sample Response: [.....{}]
 Sample Response Headers:
 
-x-links-current: https://gorest.co.in/public/v2/users?page=1
-x-links-next: https://gorest.co.in/public/v2/users?page=2
-x-links-previous: 
+x-links-current: https://gorest.co.in/public/v2/users?page=2
+x-links-next: https://gorest.co.in/public/v2/users?page=3
+x-links-previous: https://gorest.co.in/public/v2/users?page=1
 x-pagination-limit: 20
 x-pagination-page: 1
 x-pagination-pages: 138
