@@ -170,8 +170,6 @@ x-pagination-total: 2751
 
 ## JMES Library
 
-Pagination controls can be sent both as the body of an HTTP Request or an HTTP Header. The following example shows how to send these in an HTTP header.
-
 :::note
 When providing values for keys to the input and output parameters, you must follow JMES guidelines.
 :::
@@ -179,6 +177,8 @@ When providing values for keys to the input and output parameters, you must foll
 JMESPath allows you to specify how to extract elements from a JSON document declaratively. It is a query language for JSON. Define paths using JMES as below. Using the “jmespath” library to evaluate JMES expressions. For more information, see on [more about JMES](https://jmespath.org/)
 
 ### Example
+
+Pagination controls can be sent both as the body of an HTTP Request or an HTTP Header. The following example shows how to send these in an HTTP header.
 
 **Response headers**:
 
