@@ -47,7 +47,7 @@ ARG build_profile_name
 ENV profile=${build_profile_name}
 RUN  mvn clean install -P${profile}
 
-FROM tomcat:9.0.64
+FROM tomcat:9-jdk11-temurin
 COPY --from=webapp-artifact /usr/local/content/app/target/*.war /usr/local/tomcat/webapps/
 ```
 
@@ -162,11 +162,11 @@ example: docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $H
 - For deploying project war using Tomcat Docker container, please use the below command.
 
 ```bash
-docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 tomcat:9.0.64
+docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 tomcat:9-jdk11-temurin
 ```
 
 ```bash
-example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:9.0.64
+example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:9-jdk11-temurin
 ```
 
 ### Access Application
