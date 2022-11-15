@@ -162,6 +162,7 @@
           [
             "app-development/services/api-designer/api",
 		        "app-development/services/api-mock-server",
+            "app-development/services/mock-services/mock-imported-apis",
             "app-development/services/api-designer/import-rest-apis-swagger"  
           ]       
         },
