@@ -21,10 +21,10 @@ export default class Index extends React.Component {
         const { isDarkTheme } = useColorMode();
         let categoryComponents = [];
         let categories = [
-            { href: '/learn/tutorials', lightIcon: '/learn/img/tutorials.svg', darkIcon: '/learn/img/tutorialsDark.svg', label: 'Tutorials' },
-            { href: '/learn/app-development/custom-widgets/prefabs-overview', lightIcon: '/learn/img/tailorPrefabs.svg', darkIcon: '/learn/img/tailorPrefabsDark.svg', label: 'Build Prefabs' },
-            { href: '/learn/react-native', lightIcon: '/learn/img/reactNativeMobileApp.svg', darkIcon: '/learn/img/reactNativeMobileAppDark.svg', label: 'Develop Native App' },
-            { href: '/learn/on-premise/welcome', lightIcon: '/learn/img/enterpriseGuide.svg', darkIcon: '/learn/img/enterpriseGuideDark.svg', label: 'Enterprise Guide' }]
+            { href: '/learn/v11.0/tutorials', lightIcon: '/learn/img/tutorials.svg', darkIcon: '/learn/img/tutorialsDark.svg', label: 'Tutorials' },
+            { href: '/learn/v11.0/app-development/custom-widgets/prefabs-overview', lightIcon: '/learn/img/tailorPrefabs.svg', darkIcon: '/learn/img/tailorPrefabsDark.svg', label: 'Build Prefabs' },
+            { href: '/learn/v11.0/react-native', lightIcon: '/learn/img/reactNativeMobileApp.svg', darkIcon: '/learn/img/reactNativeMobileAppDark.svg', label: 'Develop Native App' },
+            { href: '/learn/v11.0/on-premise/welcome', lightIcon: '/learn/img/enterpriseGuide.svg', darkIcon: '/learn/img/enterpriseGuideDark.svg', label: 'Enterprise Guide' }]
         categories.forEach((category) => {
             categoryComponents.push(
                 <div className="col" key={categories.indexOf(category)}>
@@ -42,11 +42,11 @@ export default class Index extends React.Component {
         const { isDarkTheme } = useColorMode();
         let extensionComponents = [];
         let extensions = [
-            { href: '/learn/app-development/ui-design/theme-builder', lightIcon: '/learn/img/themeBuilder.svg', darkIcon: '/learn/img/themeBuilderDark.svg', label: 'Theme Builder' },
-            { href: '/learn/app-development/services/api-mock-server', lightIcon: '/learn/img/apiMocking.svg', darkIcon: '/learn/img/apiMockingDark.svg', label: 'API Mocking' },
-            { href: '/learn/app-development/dev-integration/chrome-developer-tool', lightIcon: '/learn/img/devTool.svg', darkIcon: '/learn/img/devToolDark.svg', label: 'Dev Tool' },
-            { href: '/learn/teams/overview', lightIcon: '/learn/img/teamPortal.svg', darkIcon: '/learn/img/teamPortalDark.svg', label: 'Teams Portal' },
-            { href: '/learn/connectors/connectors-introduction', lightIcon: '/learn/img/connectors.svg', darkIcon: '/learn/img/connectorsDark.svg', label: 'Connectors' },
+            { href: '/learn/v11.0/app-development/ui-design/theme-builder', lightIcon: '/learn/img/themeBuilder.svg', darkIcon: '/learn/img/themeBuilderDark.svg', label: 'Theme Builder' },
+            { href: '/learn/v11.0/app-development/services/api-mock-server', lightIcon: '/learn/img/apiMocking.svg', darkIcon: '/learn/img/apiMockingDark.svg', label: 'API Mocking' },
+            { href: '/learn/v11.0/app-development/dev-integration/chrome-developer-tool', lightIcon: '/learn/img/devTool.svg', darkIcon: '/learn/img/devToolDark.svg', label: 'Dev Tool' },
+            { href: '/learn/v11.0/teams/overview', lightIcon: '/learn/img/teamPortal.svg', darkIcon: '/learn/img/teamPortalDark.svg', label: 'Teams Portal' },
+            { href: '/learn/v11.0/connectors/connectors-introduction', lightIcon: '/learn/img/connectors.svg', darkIcon: '/learn/img/connectorsDark.svg', label: 'Connectors' },
         ]
         extensions.forEach((extension) => {
             extensionComponents.push(<div className='col padding-horiz--sm' key={extensions.indexOf(extension)}>

@@ -67,7 +67,14 @@ module.exports = {
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
           "editUrl": "https://github.com/wavemaker/docs/tree/master/learn/",
-          "sidebarPath": "../website/sidebars.json"
+          "sidebarPath": "../website/sidebars.json",
+          "lastVersion": 'current',
+          "versions": {
+            "current": {
+              "label": 'v11.0',
+              "path": 'v11.0',
+            },
+          },
         },
         "blog": {
           "path": "../website/blog/",
@@ -95,22 +102,26 @@ module.exports = {
       },
       "items": [
         {
-          "to": "documentation-reference",
+          "type": 'docsVersionDropdown',
+          "position": 'left',
+        },
+        {
+          "to": "/learn/v11.0/documentation-reference",
           "label": "Guide",
           "position": "left"
         },
         {
-          "to": "app-development/widgets/widget-library",
+          "to": "/learn/v11.0/app-development/widgets/widget-library",
           "label": "Widgets",
           "position": "left"
         },
         {
-          "to": "howtos-documents",
+          "to": "/learn/v11.0/howtos-documents",
           "label": "How-to",
           "position": "left"
         },
         {
-          "to": "wavemaker-release-notes",
+          "to": "/learn/v11.0/wavemaker-release-notes",
           "label": "Releases",
           "position": "right"
         },
