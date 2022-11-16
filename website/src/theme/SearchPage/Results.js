@@ -33,9 +33,6 @@ export function Results(props) {
 
 function Result(_ref) {
   var item = _ref.item,
-    index = _ref.index,
-    renderIcon = _ref.renderIcon,
-    renderAction = _ref.renderAction,
     getItemProps = _ref.getItemProps,
     onItemClick = _ref.onItemClick,
     collection = _ref.collection,
@@ -53,16 +50,6 @@ function Result(_ref) {
 
   var action = React.useRef(null);
   var Hit = hitComponent;
-
-  function runDeleteTransition(cb) {
-    setIsDeleting(true);
-    action.current = cb;
-  }
-
-  function runFavoriteTransition(cb) {
-    setIsFavoriting(true);
-    action.current = cb;
-  }
   let highlightContent = item["_highlightResult"] ? item["_highlightResult"].hierarchy["lvl1"].value : item.hierarchy["lvl1"];
   return /*#__PURE__*/React.createElement("li", _extends({
     className: ['DocSearch-Hit', item.__docsearch_parent && 'DocSearch-Hit--Child', isDeleting && 'DocSearch-Hit--deleting', isFavoriting && 'DocSearch-Hit--favoriting'].filter(Boolean).join(' '),

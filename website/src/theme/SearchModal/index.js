@@ -146,44 +146,7 @@ export function DocSearchModal(_ref) {
                     if (disableUserPersonalization) {
                         return [];
                     }
-
-                    return [{
-                        sourceId: 'recentSearches',
-                        onSelect: function onSelect(_ref3) {
-                            var item = _ref3.item,
-                                event = _ref3.event;
-                            saveRecentSearch(item);
-
-                            if (!event.shiftKey && !event.ctrlKey && !event.metaKey) {
-                                onClose();
-                            }
-                        },
-                        getItemUrl: function getItemUrl(_ref4) {
-                            var item = _ref4.item;
-                            return item.url;
-                        },
-                        getItems: function getItems() {
-                            return recentSearches.getAll();
-                        }
-                    }, {
-                        sourceId: 'favoriteSearches',
-                        onSelect: function onSelect(_ref5) {
-                            var item = _ref5.item,
-                                event = _ref5.event;
-                            saveRecentSearch(item);
-
-                            if (!event.shiftKey && !event.ctrlKey && !event.metaKey) {
-                                onClose();
-                            }
-                        },
-                        getItemUrl: function getItemUrl(_ref6) {
-                            var item = _ref6.item;
-                            return item.url;
-                        },
-                        getItems: function getItems() {
-                            return favoriteSearches.getAll();
-                        }
-                    }];
+                    return [];
                 }
 
                 return searchClient.search([{

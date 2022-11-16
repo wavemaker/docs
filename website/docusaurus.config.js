@@ -72,7 +72,7 @@ module.exports = {
           "versions": {
             "current": {
               "label": 'v11.0',
-              "path": 'v11.0',
+              "path": '',
             },
           },
         },
@@ -102,26 +102,27 @@ module.exports = {
       },
       "items": [
         {
-          "type": 'docsVersionDropdown',
-          "position": 'left',
-        },
-        {
-          "to": "/learn/v11.0/documentation-reference",
+          "to": "documentation-reference",
           "label": "Guide",
           "position": "left"
         },
         {
-          "to": "/learn/v11.0/app-development/widgets/widget-library",
+          "to": "app-development/widgets/widget-library",
           "label": "Widgets",
           "position": "left"
         },
         {
-          "to": "/learn/v11.0/howtos-documents",
+          "to": "howtos-documents",
           "label": "How-to",
           "position": "left"
         },
         {
-          "to": "/learn/v11.0/wavemaker-release-notes",
+          "type": 'docsVersionDropdown',
+          "position": 'right',
+          "className": "version-dropdown"
+        },
+        {
+          "to": "wavemaker-release-notes",
           "label": "Releases",
           "position": "right"
         },
