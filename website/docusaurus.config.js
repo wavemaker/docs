@@ -58,9 +58,9 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
-        // "googleAnalytics": {
-        //   "trackingID": process.env.GA_TRACKING_ID,
-        // },
+        "googleAnalytics": {
+          "trackingID": process.env.GA_TRACKING_ID,
+        },
         "docs": {
           "path": "../learn",
           "routeBasePath": "/",
@@ -139,16 +139,10 @@ module.exports = {
       ]
     },
     "algolia": {
-      "appId": "BH4D9OD16A",
-      "apiKey": "e8b42d5d2b0d945ef393598f0ca271c6",
-      "indexName": "wavemaker",
-      "contextualSearch": true
+      "appId": process.env.ALGOLIA_DS_APP_ID,
+      "apiKey": process.env.ALGOLIA_DS_API_KEY,
+      "indexName": process.env.ALGOLIA_DS_INDEX_NAME
     },
-    // "algolia": {
-    //   "appId": process.env.ALGOLIA_DS_APP_ID,
-    //   "apiKey": process.env.ALGOLIA_DS_API_KEY,
-    //   "indexName": process.env.ALGOLIA_DS_INDEX_NAME
-    // },
     "footer": {}
   }
 }
