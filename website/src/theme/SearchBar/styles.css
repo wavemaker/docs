@@ -1,6 +1,14 @@
 :root {
   --docsearch-primary-color: var(--ifm-color-primary);
   --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-container-background: #ffffff;
+  /* --ifm-font-color-base: #3b454e; */
+}
+
+html[data-theme="dark"] {
+  --docsearch-container-background: #ffffff;
+  /* --ifm-font-color-base: #3b454e; */
+  --docsearch-text-color: #3b454e;
 }
 
 .DocSearch-Button {
@@ -26,6 +34,8 @@
 .DocSearch-Form{
   box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.06);
   border-radius: 50px;
+  background-color: var(--docsearch-container-background);
+  color: var(--ifm-font-color-base);
 }
 
 .DocSearch-Dropdown{

@@ -22,7 +22,7 @@ function TagsRow(props) {
 function Feedback(props) {
   let url = "https://github.com/wavemaker/docs/issues/new?title=&amp;body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A*%20Document URL%3A%20" + props.url.replace('../learn/', '') + "%0A*%20Document PATH%3A%20" + props.url.replace('../learn/', '').slice(props.url.indexOf('/learn/'), props.url.length) + "%0A";
   return (
-    <div className='feedback-container'>
+    <div className='feedback-container margin-top--lg'>
       <a className="github-link" aria-label="Send feedback about this page" data-bi-name="create-issue-on-github" href={url}>
         <img src='/learn/img/GitHub.png'></img>
         <span> Submit Feedback for This Page</span>
