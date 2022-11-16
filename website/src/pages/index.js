@@ -8,6 +8,7 @@
 const React = require('react');
 import Layout from '@theme/Layout';
 import SearchBar from '../theme/SearchBar';
+import { useColorMode } from '@docusaurus/theme-common';
 
 export default class Index extends React.Component {
     constructor(props) {
@@ -17,17 +18,18 @@ export default class Index extends React.Component {
         }
     }
     getCategories() {
+        const { isDarkTheme } = useColorMode();
         let categoryComponents = [];
         let categories = [
-            { href: '/learn/tutorials', icon: '/learn/img/exploreWidgets.svg', label: 'Tutorials' },
-            { href: '/learn/app-development/custom-widgets/prefabs-overview', icon: '/learn/img/tailorPrefabs.svg', label: 'Build Prefabs' },
-            { href: '/learn/react-native', icon: '/learn/img/reactNativeMobileApp.svg', label: 'Develop Native App' },
-            { href: '/learn/on-premise/welcome', icon: '/learn/img/enterpriseGuide.svg', label: 'Enterprise Guide' }]
+            { href: '/learn/tutorials', lightIcon: '/learn/img/tutorials.svg', darkIcon: '/learn/img/tutorialsDark.svg', label: 'Tutorials' },
+            { href: '/learn/app-development/custom-widgets/prefabs-overview', lightIcon: '/learn/img/tailorPrefabs.svg', darkIcon: '/learn/img/tailorPrefabsDark.svg', label: 'Build Prefabs' },
+            { href: '/learn/react-native', lightIcon: '/learn/img/reactNativeMobileApp.svg', darkIcon: '/learn/img/reactNativeMobileAppDark.svg', label: 'Develop Native App' },
+            { href: '/learn/on-premise/welcome', lightIcon: '/learn/img/enterpriseGuide.svg', darkIcon: '/learn/img/enterpriseGuideDark.svg', label: 'Enterprise Guide' }]
         categories.forEach((category) => {
             categoryComponents.push(
                 <div className="col" key={categories.indexOf(category)}>
                     <a href={category.href} className='category'>
-                        <img src={category.icon} className='icon'></img>
+                        <img src={!isDarkTheme ? category.lightIcon : category.darkIcon} className='icon'></img>
                         <span className='caption'>{category.label}</span>
                     </a>
                 </div>
@@ -37,18 +39,19 @@ export default class Index extends React.Component {
     }
 
     getExtensions() {
+        const { isDarkTheme } = useColorMode();
         let extensionComponents = [];
         let extensions = [
-            { href: '/learn/app-development/ui-design/theme-builder', icon: '/learn/img/themeBuilder.svg', label: 'Theme Builder' },
-            { href: '/learn/app-development/services/api-mock-server', icon: '/learn/img/apiMocking.svg', label: 'API Mocking' },
-            { href: '/learn/app-development/dev-integration/chrome-developer-tool', icon: '/learn/img/devTool.svg', label: 'Dev Tool' },
-            { href: '/learn/teams/overview', icon: '/learn/img/teamPortal.svg', label: 'Teams Portal' },
-            { href: '/learn/connectors/connectors-introduction', icon: '/learn/img/connectors.svg', label: 'Connectors' },
+            { href: '/learn/app-development/ui-design/theme-builder', lightIcon: '/learn/img/themeBuilder.svg', darkIcon: '/learn/img/themeBuilderDark.svg', label: 'Theme Builder' },
+            { href: '/learn/app-development/services/api-mock-server', lightIcon: '/learn/img/apiMocking.svg', darkIcon: '/learn/img/apiMockingDark.svg', label: 'API Mocking' },
+            { href: '/learn/app-development/dev-integration/chrome-developer-tool', lightIcon: '/learn/img/devTool.svg', darkIcon: '/learn/img/devToolDark.svg', label: 'Dev Tool' },
+            { href: '/learn/teams/overview', lightIcon: '/learn/img/teamPortal.svg', darkIcon: '/learn/img/teamPortalDark.svg', label: 'Teams Portal' },
+            { href: '/learn/connectors/connectors-introduction', lightIcon: '/learn/img/connectors.svg', darkIcon: '/learn/img/connectorsDark.svg', label: 'Connectors' },
         ]
         extensions.forEach((extension) => {
             extensionComponents.push(<div className='col padding-horiz--sm' key={extensions.indexOf(extension)}>
                 <a className='extension row' href={extension.href}>
-                    <img src={extension.icon} className='icon'></img>
+                    <img src={!isDarkTheme ? extension.lightIcon : extension.darkIcon} className='icon'></img>
                     <p className='caption'>{extension.label}</p>
                     <span className='link'>Explore <img src="/learn/img/combined-shape-black.svg" /></span>
                 </a>

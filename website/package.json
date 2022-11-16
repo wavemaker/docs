@@ -39,8 +39,8 @@
     "wait-on": "^6.0.1"
   },
   "dependencies": {
-    "@docusaurus/core": "2.1.0",
-    "@docusaurus/preset-classic": "2.1.0",
+    "@docusaurus/core": "2.2.0",
+    "@docusaurus/preset-classic": "2.2.0",
     "clsx": "^1.2.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
