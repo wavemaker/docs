@@ -71,7 +71,7 @@ module.exports = {
           "lastVersion": 'current',
           "versions": {
             "current": {
-              "label": 'v11.0',
+              "label": 'v11.2',
               "path": '',
             },
           },
@@ -132,8 +132,14 @@ module.exports = {
           "position": "right"
         },
         {
+          "to": "https://www.wavemakeronline.com/login/login",
+          "label": "Login",
+          "position": "right",
+          "className": "button button--secondary"
+        },
+        {
           "to": "https://www.wavemaker.com/get-started/",
-          "label": "Sign In",
+          "label": "Get Started",
           "position": "right",
           "className": "navbar__link button button--warning headerSignIn"
         }

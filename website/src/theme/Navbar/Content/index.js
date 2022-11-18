@@ -24,9 +24,11 @@ function NavbarItems({ items }) {
     </>
   );
 }
-function NavbarContentLayout({ left, center, right }) {
+function NavbarContentLayout({ left, right }) {
   const items = useNavbarItems();
   const searchBarItem = items.find((item) => item.type === 'search');
+  const rightItems = items.filter((item) => item.position === 'right' && ((item["className"] && !item["className"].includes('button')) || item["className"] === undefined))
+  const rightEndItems = items.filter((item) => item.position === 'right' && item["className"] && item["className"].includes('button'))
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
@@ -38,7 +40,13 @@ function NavbarContentLayout({ left, center, right }) {
             <SearchBar elementId="header-search" autoFocus={false} />
           </div>
         )}
-        {right}
+        <NavbarItems items={rightItems} />
+      </div>
+      <div>
+        <NavbarColorModeToggle className={styles.colorModeToggle} />
+      </div>
+      <div>
+        <NavbarItems items={rightEndItems} />
       </div>
     </div>
   );
@@ -47,7 +55,6 @@ export default function NavbarContent() {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
-  const searchBarItem = items.find((item) => item.type === 'search');
   return (
     <NavbarContentLayout
       left={
@@ -63,7 +70,6 @@ export default function NavbarContent() {
         // Ask the user to add the respective navbar items => more flexible
         <>
           <NavbarItems items={rightItems} />
-          <NavbarColorModeToggle className={styles.colorModeToggle} />
         </>
       }
     />
