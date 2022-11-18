@@ -1607,24 +1607,15 @@
     }
   ],
   "Release Notes": [
+    "wavemaker-release-notes",
+    "enterprise-release-notes",
     {
       "type": "category",
-      "label": "New Releases",
-      "link": {
-        "type": "generated-index"
-      },
+      "label": "What's new",
       "items": [
-        "wavemaker-release-notes",
-        "enterprise-release-notes",
-        {
-          "type": "category",
-          "label": "What's new",
-          "items": [
-            "app-development/wavemaker-overview/wavemaker-11-beta",
-            "app-development/wavemaker-overview/faqs-11",
-            "how-tos/upgrade-guide-wavemaker-10-to-11"
-          ]
-        }
+        "app-development/wavemaker-overview/wavemaker-11-beta",
+        "app-development/wavemaker-overview/faqs-11",
+        "how-tos/upgrade-guide-wavemaker-10-to-11"
       ]
     },
     {

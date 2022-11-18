@@ -1561,6 +1561,8 @@
     }
   ],
   "Release Notes": [
+    "wavemaker-release-notes",
+    "wavemaker-known-issues",
     {
       "type": "category",
       "label": "Release Notes",
@@ -1568,8 +1570,6 @@
         "type": "generated-index"
       },
       "items": [
-        "wavemaker-release-notes",
-        "wavemaker-known-issues",
         {
           "type": "category",
           "label": "Versions: 10.14.x",

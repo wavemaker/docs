@@ -117,6 +117,11 @@ module.exports = {
           "position": "left"
         },
         {
+          "to": "blog",
+          "label": "Blog",
+          "position": "left"
+        },
+        {
           "type": 'docsVersionDropdown',
           "position": 'right',
           "className": "version-dropdown"
@@ -124,11 +129,6 @@ module.exports = {
         {
           "to": "wavemaker-release-notes",
           "label": "Releases",
-          "position": "right"
-        },
-        {
-          "to": "blog",
-          "label": "Blog",
           "position": "right"
         },
         {
