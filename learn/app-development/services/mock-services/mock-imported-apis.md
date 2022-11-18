@@ -1,39 +1,48 @@
 ---
 title: "Mocking Imported REST APIs"
-id:"  "
-sidebar_label: "Mocking REST APIs"
+id: ""
+sidebar_label: "Mocking REST API"
 ---
 ---
 
 API Mockingbird can be a very practical feature when you need live data during the development and testing phase. It is useful in cases when the API is not ready, unavailable, or unreliable, especially when the API breaks in the time zone when developers may not be reachable. 
 
-You can use mock APIs to work concurrently on the front-end and back-end to develop the application in the initial stages. When the API contract is made, all it needs is to import the OpenAPI/Swagger spec to create a mock API implementation in WaveMaker Studio.
+Using API Mockingbird, you can mock APIs to work concurrently on the front-end and back-end to develop the application. When the API contract is made, it must import the OpenAPI/Swagger spec to create a mock API implementation.
 
 ## How it works
 
-Mock the imported REST API within the Studio when importing them using a flag, enabling API Mockingbird. It simulates actual APIs where you can generate requests and get realistic responses the actual API would return. It is smart enough to understand the data types of each field in your API response and choose mock data intelligently. This recognizes 100s of data types starting from First Name, Last name, Address, ZipCode, and Credit Card number for the mock data.
+In Wavemaker Studio, mock API at the time of importing the REST API using a flag: enable API Mockingbird. It simulates actual APIs where you can generate requests and get realistic responses the actual API would return. 
+
+API Mockingbird is smart to understand the data types of each field in your API response and choose mock data intelligently. This recognizes 100s of data types starting from First Name, Last name, Address, ZipCode, and Credit Card number for mocking the data.
 
 ## Create Mock Server for Imported API
 
-1. A swagger should be successfully imported into the Importing APIs section.
-2. Mock Imported APIs
+1. A Swagger should be successfully imported into the Importing APIs section.
+2. Mock Imported APIs.
 
-- After the Importing APIs, go to the APIs section and select imported APIs which are to be mocked.
+### Enabling API Mocking
+
+1. After importing the API, go to **APIs** resources and select **Imported APIs** to be mocked.
 
 [![create mock api](/learn/assets/imported-apis.png)](/learn/assets/imported-apis.png)
 
-- Navigate to the settings tab and click the 'Create Mock Server' button to create a mock server for the first time.
+3. Navigate to the **Settings** tab and click **Create Mock Server** to create a mock server for the first time.
 
 [![create mock api](/learn/assets/apis-settings.png)](/learn/assets/apis-settings.png)
 
-- Once the mock server is created successfully, you will see the mock tag attached to the imported API, as shown below.
+4. Once the mock server is created successfully, you will see a **Mock** tag attached to the imported API, as shown below.
 
 [![create mock api](/learn/assets/moked-apis.png)](/learn/assets/moked-apis.png)
 
-- Now, all the variables associated with this imported API will be pointing to the mocked service. Point it to the original service toggle MockAPIs button.
+5. All the variables associated with this imported API will be pointing to the mocked service. 
+
+### Disabling API Mocking
+
+1. Select the mocked API, which displays a Mock tag. 
+2. Navigate to the **Settings** tab, and toggle the **Mock APIs** button to disable.
 
 [![create mock api](/learn/assets/enabled-moked-apis.png)](/learn/assets/enabled-moked-apis.png)
 
-- After disabling mocking, this is how Imported APIs look. It's a click away to mock the service back again.
+3. After disabling API mocking, the Imported APIs look as shown below. It is a click away to mock the service back again.
 
 [![create mock api](/learn/assets/diable-moked-apis.png)](/learn/assets/diable-moked-apis.png)
