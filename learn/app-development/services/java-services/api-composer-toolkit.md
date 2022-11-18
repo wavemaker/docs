@@ -65,5 +65,5 @@ For existing projects or after creating a project, you can go to the **Project S
 After changing these settings, you would require to reload the project and perform the action on the Project Update dialog. 
 
 :::warning
-When you already depend on the service, you will get compilation errors if you disable the API Composition. 
+If you disable API Composition and already depend on the service, you will get compilation errors.
 :::
