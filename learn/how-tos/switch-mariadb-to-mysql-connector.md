@@ -1,5 +1,5 @@
 ---
-title: "Switch MariaDB to MySQL connector"
+title: "How to Switch MariaDB to MySQL Connector"
 id: "switch-mariadb-to-mysql-connector"
 ---
 ---
@@ -15,7 +15,7 @@ This change is introduced in [v11.2](/learn/wavemaker-release-notes/v11-2-0).
 - New apps will get Maria DB connectors, including workspace and MySQL databases.
 :::
 
-To use MySQL drivers in the backend, you should configure the MySQL connector instead of the default MariaDB connector.
+If you require MySQL drivers in the backend, you can configure it to use the MySQL connector instead of the default MariaDB connector.
 
 ## Changing MySql Connector for Workspace DB
 
