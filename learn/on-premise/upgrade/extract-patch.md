@@ -9,22 +9,17 @@ Assuming you have already downloaded the patch and kept inside user home folder 
 
 ## Extract the package of the patch
 
-### Ubuntu
 
-- Execute the following command to extract Debian package.
+- Execute the following commands to untar the file.
 
-```bash
-dpkg -i  <WME Patch filename>
-```
+    - Make a WME installation directory in the platform. 
 
-[![patch extraction](/learn/assets/wme-setup/upgrade-wme-setup/extract-the-patch-package.jpg)](/learn/assets/wme-setup/upgrade-wme-setup/extract-the-patch-package.jpg)
+    ```bash
+        sudo mkdir -p  /usr/local/content/wme/wme-installer/<version>/
+    ```
 
-### RHEL
+    - Extract the Patch packgae file which is already downloaded and kept inside the home folder into the installation directory.
 
-- Execute the following command to untar the file.
-
-```bash
-    sudo mkdir -p  /usr/local/content/wme/wme-installer/<version>/
-    sudo tar -xvf  <WME Patch Filename> -C /usr/local/content/wme/wme-installer/<version>/
-    cd /usr/local/content/wme/wme-installer/<version>/
-```
+    ```bash
+        sudo tar -xvf  <WME Patch Filename> -C /usr/local/content/wme/wme-installer/<version>//
+    ```

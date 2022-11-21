@@ -1,7 +1,7 @@
 ---
 title: "Preview React Native Apps in Mobile without Building Installers"
 id: ""
-sidebar_label: "Expo Debug"
+sidebar_label: "Mobile Preview"
 ---
 ---
 
@@ -15,7 +15,7 @@ Mobile app developers can preview their apps using the Preview button. To see th
 4. Install wm-reactnative-cli in your machine using below command
 
 ```shell
-npm install -g https://github.com/wavemaker/wm-reactnative-cli
+npm install -g @wavemaker/wm-reactnative-cli
 ```
 
 ### Expo Go 
@@ -30,7 +30,7 @@ Install Expo Go app on your mobile phone
 - Install React Dev Tools 
 
 ```shell
-npm i -g react-devtools@4.14.0.
+npm i -g react-devtools@4.26.0
 ```
 
 ## Debugging Procedure

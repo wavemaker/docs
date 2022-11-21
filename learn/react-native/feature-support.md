@@ -1,6 +1,7 @@
 ---
 title: "React Native Features"
 id: ""
+sidebar_label: "Features"
 ---
 ---
 

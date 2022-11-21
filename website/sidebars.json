@@ -564,7 +564,8 @@
       "label": "Logs Aggregation",
       "ids": [
         "on-premise/observability/logs-aggregation/overview",
-        "on-premise/observability/logs-aggregation/kibana"
+        "on-premise/observability/logs-aggregation/kibana",
+        "on-premise/observability/logs-aggregation/fluentd"
       ]
     },
     {
@@ -582,8 +583,10 @@
   "Upgrade":
   [
     "on-premise/upgrade/upgrade-setup",
+    "on-premise/upgrade/upgrade-prerequisites",
     "on-premise/upgrade/download-copy-patch",
     "on-premise/upgrade/extract-patch",
+    "on-premise/upgrade/passivate-containers",
     "on-premise/upgrade/run-patch",
     "on-premise/upgrade/docker-upgrade",
     "on-premise/upgrade/os-upgrade"
@@ -613,6 +616,7 @@
      "react-native/styles",
      "react-native/test-run",
      "react-native/web-preview-debug",
+     "react-native/inspection-framework-react-native",
      "react-native/expo-debug",
      "react-native/styles",
      "react-native/theme",
@@ -1326,6 +1330,7 @@
         "label": "What's new",
         "ids": 
           [
+          "app-development/wavemaker-overview/wavemaker-11",
           "app-development/wavemaker-overview/wavemaker-11-beta",
           "app-development/wavemaker-overview/faqs-11",
           "how-tos/upgrade-guide-wavemaker-10-to-11" 
@@ -1339,6 +1344,8 @@
           "label": "Versions: 11.1.x",
           "ids": 
             [
+              "wavemaker-release-notes/v11-1-3",
+              "wavemaker-release-notes/v11-1-2",
               "wavemaker-release-notes/v11-1-1",              
               "wavemaker-release-notes/v11-1-0"              
             ]

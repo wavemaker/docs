@@ -17,6 +17,13 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ---
 
+### WaveMaker Enterprise v11.x
+
+
+|Named Version|Releases Include|What's in it| Release Date|
+|---|---|---|---|
+|**v11.1.3**|- [v11.1.3](/learn/wavemaker-release-notes/v11-1-3) <br> - [v11.1.2](/learn/wavemaker-release-notes/v11-1-2) <br> - [v11.1.1](/learn/wavemaker-release-notes/v11-1-1) <br> - [v11.1.0](/learn/wavemaker-release-notes/v11-1-0) <br> - [v11.0.3](/learn/wavemaker-release-notes/v11-0-3) <br> - [v11.0.2](/learn/wavemaker-release-notes/v11-0-2) <br> - [v11.0.1](/learn/wavemaker-release-notes/v11-0-1) <br> - [v10.15.0](/learn/wavemaker-release-notes/v10-15-0) <br> - [v10.14.0](/learn/wavemaker-release-notes/v10-14-0) | Includes new features like React Native, Layout and Flex Widget in Cordova, Multi-version Studio, API composer toolkit, API Mock Server extension, pagination for imported APIs, Java 11, SAML library updates, Azure Repos, MTLS for REST APIs, and more. [Read more.](/learn/app-development/wavemaker-overview/wavemaker-11-beta) |03 October 2022|
+
 
 ### WaveMaker Enterprise v10.x
 

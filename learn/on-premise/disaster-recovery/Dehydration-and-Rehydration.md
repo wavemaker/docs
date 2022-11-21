@@ -26,7 +26,7 @@ This process is used to rotate instances periodically or for disaster recovery w
 ### Passivate Containers in StudioWorkspace/AppDeployment Instances
 
 - To upgrade your operating system it is recommended to passivate the containers in StudioWorkspace/AppDeployment Instances
-- It can be done in two different ways
+- It can be done in following way.
 
 #### Launchpad
 
@@ -51,40 +51,18 @@ This process is used to rotate instances periodically or for disaster recovery w
 
 - After completed the above process in Developer Workspace, go to AppDeployments, and perform the same operation mentioned above in all AppDeployment Instances(Demo, Stage, Live)
 
-#### Command Line
 
-- You can execute the below command in Platform Instance, it will passivate all the container and will delete StudioWorkspace/AppDeployment instances in the setup
-
-  ```bash
-  python3 /usr/local/content/wme/wme-installer/<version>/resources/python/3/passivation_deletion.py -pr <protocol> -d <domain> -u <adminUser> -p <adminPasswd> -di True
-  ```
-
-  - **protocol** represents what web protocol is used to connect to WaveMaker application (http/https)
-  - **domain** represents the domain name in which WaveMaker application is running
-  - **adminUser** and **adminPasswd** refer to the admin credentials which are used to access launchpad.
-
-  - Refer below mentioned example command for passivation
-
-  ```bash
-  python3 /usr/local/content/wme/wme-installer/10.7.1/resources/python/3/passivation_deletion.py -pr http -d wme-demo.wavemaker.com -u test@wavemaker.com -p test-password -di True
-  ```
 
 ### Stop the WME Setup
 
 - We recommend you to stop the WME setup before proceeding for further steps
-- You can stop the WME setup operation either by executing commands at the command line or from the config wizard portal
+- You can stop the WME setup operation from the config wizard portal
 
-  - **Command Line**
-
-    - Use the following command to stop the WME setup in Platform Instance. You need to ssh to the Instance and need to have root privileges to execute the below script.
-
-    ```bash
-    bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --stop
-    ```
 
   - **CW Portal**
 
-    - Log in to the CW portal, after login in home page you can see the stop button as shown in the image below, hit the stop button to stop the WME setup
+    - Log in to the CW portal, after login in home page you can see the settings icon and under **configuration** at the bottom, you can see **Danger Zone**
+    - You can Stop by hitting **stop** button as shown in the image below, hit the button to stop the WME setup
 
     [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)
 

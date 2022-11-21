@@ -7,14 +7,9 @@ This guide helps to create a war file for deploying the project in your local m
 
 ## System prerequisites
 
-|Description|Version|
-|---|---|
-|Java |1.8|
-|Node|12.22|
-|Maven| 3.8.1|
-|npm|6.14|
-|Ant|1.10.11|
-|Git| 2.26|
+
+- You can find the System prerequisites from [Angular Web and Mobile 11](/learn/wavemaker-release-notes/v11-1-2#angular-web-and-mobile-11)
+
 
 ## Go to Source Location
 

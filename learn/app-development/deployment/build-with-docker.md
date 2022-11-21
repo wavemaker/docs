@@ -10,13 +10,8 @@ For creating a Docker container, you create a Docker image by building a Dockerf
 
 ## System prerequisites
 
-|Description|Version|
-|---|---|
-|Java |1.8|
-|Node|12.22|
-|Maven| 3.8|
-|npm|6.14|
-|Ant|1.10|
+- You can find the System prerequisites from [Angular Web and Mobile 11](/learn/wavemaker-release-notes/v11-1-2#angular-web-and-mobile-11)
+
 
 ## Build Docker Image
 
@@ -33,7 +28,7 @@ vi Dockerfile
 You can use the following Dockerfile for building Docker images and create Docker containers by using multi-stage Dockerfile. You can decrease the size of the Docker image and can create lightweight containers as well.
 
 ```Dockerfile
-FROM maven:3.8.1-jdk-8 as maven-java-node
+FROM maven:3.8.6-jdk-11 as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 RUN mkdir -p /usr/local/content/node
 WORKDIR /usr/local/content/node
@@ -52,7 +47,7 @@ ARG build_profile_name
 ENV profile=${build_profile_name}
 RUN  mvn clean install -P${profile}
 
-FROM tomcat:8.5.50
+FROM tomcat:9-jdk11-temurin
 COPY --from=webapp-artifact /usr/local/content/app/target/*.war /usr/local/tomcat/webapps/
 ```
 
@@ -115,7 +110,7 @@ vi Dockerfile.build
 You can use the following Dockerfile to build Docker images and create Docker containers for creating project war files.
 
 ```Dockerfile
-FROM maven:3.8.1-jdk-8 as maven-java-node
+FROM maven:3.8.6-jdk-11  as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 # installing node 12.22 and npm 6.14 in docker container
 RUN mkdir -p /usr/local/content/node
@@ -167,11 +162,11 @@ example: docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $H
 - For deploying project war using Tomcat Docker container, please use the below command.
 
 ```bash
-docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 tomcat:8.5
+docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 tomcat:9-jdk11-temurin
 ```
 
 ```bash
-example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:8.5
+example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:9-jdk11-temurin
 ```
 
 ### Access Application
