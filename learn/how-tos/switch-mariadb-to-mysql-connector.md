@@ -44,20 +44,18 @@ db.userdb.driverClass=com.mysql.jdbc.Driver
 
 - Navigate to the Database section, import a database, and before the test connection, click on advanced settings and edit the Connection(JDBC) URL and DriverClass as shown below.
 
-#### Change Connection URL 
+### Change Connection URL 
  
 ```
 jdbc:mysql://<HOST>:<PORT>/<DB_NAME>?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
 ```
 
-#### Change Driver Class
+### Change Driver Class
 
 ```
 com.mysql.jdbc.Driver
 ```
 
-### Test Connection 
+## Test Connection 
 
 [![](/learn/assets/advanced-settings.png)](/learn/assets/advanced-settings.png)
-
-
