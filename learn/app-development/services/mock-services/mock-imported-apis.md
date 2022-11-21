@@ -11,7 +11,7 @@ For this, when the API contract is made, it must import the OpenAPI/Swagger spec
 
 ## How it works
 
-In Wavemaker Studio, mock API at the time of importing the REST API by enabling the API Mockingbird flag. It simulates actual APIs where you can generate requests and get realistic responses the actual API would return. 
+In WaveMaker Studio, mock API at the time of importing the REST API by enabling the API Mockingbird flag. It simulates actual APIs where you can generate requests and get realistic responses the actual API would return. 
 
 API Mockingbird is smart to understand the data types of each field in your API response and choose mock data intelligently. This recognizes 100s of data types starting from First Name, Last name, Address, ZipCode, and Credit Card number for mocking the data.
 
