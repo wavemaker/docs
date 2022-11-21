@@ -1,17 +1,17 @@
 ---
 title: "Mocking Imported REST APIs"
-id: ""
+id: "mock-imported-apis"
 sidebar_label: "Mocking REST API"
 ---
 ---
 
-API Mockingbird can be a very practical feature when you need live data during the development and testing phase. It is useful in cases when the API is not ready, unavailable, or unreliable, especially when the API breaks in the time zone when developers may not be reachable. 
+API Mockingbird can mock APIs to work concurrently on the front-end, while the back-end can develop APIs. It is a very functional and convenient way to get going with development flow when you need live data during the UI development or testing phase; in cases when the API is not ready, unavailable, or unreliable, especially when the API breaks in the time zone when the back-end developer may not be reachable. 
 
-Using API Mockingbird, you can mock APIs to work concurrently on the front-end and back-end to develop the application. When the API contract is made, it must import the OpenAPI/Swagger spec to create a mock API implementation.
+For this, when the API contract is made, it must import the OpenAPI/Swagger spec to create a mock API implementation.
 
 ## How it works
 
-In Wavemaker Studio, mock API at the time of importing the REST API using a flag: enable API Mockingbird. It simulates actual APIs where you can generate requests and get realistic responses the actual API would return. 
+In Wavemaker Studio, mock API at the time of importing the REST API by enabling the API Mockingbird flag. It simulates actual APIs where you can generate requests and get realistic responses the actual API would return. 
 
 API Mockingbird is smart to understand the data types of each field in your API response and choose mock data intelligently. This recognizes 100s of data types starting from First Name, Last name, Address, ZipCode, and Credit Card number for mocking the data.
 
