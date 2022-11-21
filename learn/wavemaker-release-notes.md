@@ -109,7 +109,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.1](/learn/wavemaker-release-notes/v11-1-0)
+Last updated: [WaveMaker 11.2](/learn/wavemaker-release-notes/v11-3-0)
 
 ---
 
@@ -169,7 +169,7 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |---|---|
 |Java |11 |
 |Node|14.15.5|
-|Maven <td bgcolor="#44aaf4">	3.8.1 to 3.8.6|
+|Maven | 3.8.6|
 |npm | 7.20.3|
 |Ant|	1.10.11|
 |Git|	2.26| 
@@ -180,7 +180,7 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |---|---|
 |Java | 11 |
 |Node | 12.22.3|
-|Maven <td bgcolor="#44aaf4"> 3.8.1 to 3.8.6|
+|Maven| 3.8.6|
 |npm |	6.14.13|
 |Ant|	1.10.11|
 |Git|	2.26| 
