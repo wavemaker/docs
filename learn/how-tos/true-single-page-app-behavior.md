@@ -1,26 +1,41 @@
 ---
-title: "True SPA behaviour on WM apps"
+title: "True Single Page Behavior" 
 id: ""
-sidebar_label: "Enable true SPA behaviour "
-
+sidebar_label: "Enable True SPA Behavior"
 ---
-**True SPA behaviors that can be identified:**
-- Dynamically generates and updates content, without the need to refresh the page.
-- When user navigates between pages, only the content area is rendered again and the static area like header, leftnav, footer, etc remains untouched.
-It is to Improve the performance and page load experience of apps built with WaveMaker. 
-It is believed that this change will make page load experience more delightful.
-Navigating between pages that have same layout, now does not require page refresh.
-True spa will only function for deployed apps. There is no SPA for preview as of now.
-## Setting true SPA behaviour
-Step-1 You need to enable the recently introduced flag that is located under File Explorer to view the true spa behaviour in any WM application.
- Currently this is set to‘false’ by default.
- [![](/learn/assets/spa_enableFlag_1.png)](/learn/assets/spa_enableFlag_1.png)
- 
- Set the flag as true and save (app.build.ui.spa.enabled=true)
- 
- Step-2 In Profiles Configuration go for below settings for deployment.
- [![](/learn/assets/spa_configProfile_2.png)](/learn/assets/spa_configProfile_2.png)
- 
- Step-3 Now deploy the app and see the true SPA behaviour enabled for the application.
- 
+---
 
+TrueSPA in a way contributes to how the application UI renders. It behaves close to Single Page App functionality. When you navigate across pages, it only affects the content part, and the rendering of static areas, such as the header, leftnav, footer, etc., remains unchanged, which delivers smoother page transitions and a better user experience. 
+
+:::note
+TrueSPA is released in [v11.2](/learn/wavemaker-release-notes/v11-2-0) as beta; therefore, it is not enabled by default.
+:::
+
+## How it helps User Experience
+
+- It improves the performance and page load experience of apps. 
+- Navigating between pages with the same layout does not require a page refresh.
+
+:::important
+TrueSPA will only function for deployed apps. There is no SPA for preview as of now.
+:::
+
+## Enabling TrueSPA Behaviour
+
+To enable the feature, you must configure the TrueSPA flag to **True** from File Explorer. The default is set to **False**.
+
+1. Go to File Explorer. Go to Project path -> Profiles -> Deployment Properties. 
+
+[![](/learn/assets/true-spa-enable-flag.png)](/learn/assets/true-spa-enable-flag.png)
+ 
+2. Set the flag to `true` and **Save**. 
+
+```
+app.build.ui.spa.enabled=true
+```
+ 
+3. In **Profiles Configuration**, go to the below settings for the deployment.
+
+[![](/learn/assets/true-spa-config-profile.png)](/learn/assets/true-spa-config-profile.png)
+ 
+4. Now deploy the app and see how the app renders with the true SPA behavior enabled.
