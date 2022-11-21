@@ -12,13 +12,12 @@ We introduced the MariaDB JDBC connector in place of the MySQL Connector: MariaD
 This change is introduced in [v11.2](/learn/wavemaker-release-notes/v11-2-0).
 
 - Existing Apps will continue to use MySQL Connector
-- New apps will get Maria DB connector for both
-- Workspace database and MySQL database
+- New apps will get Maria DB connectors, including workspace and MySQL databases.
 :::
 
 To use MySQL drivers in the backend, you should configure the MySQL connector instead of the default MariaDB connector.
 
-## Steps for Changing MySql Connector for workspace DB
+## Changing MySql Connector for Workspace DB
 
 - Navigate to File explorer and modify the following properties in the **properties files**.
 
@@ -27,12 +26,12 @@ db.userdb.url=jdbc:mysql://<HOST>:<PORT>/<DB_NAME>?useUnicode=yes&characterEncod
 db.userdb.driverClass=com.mysql.jdbc.Driver
 ```
 
-## Steps for Changing the connector for the MySql database
+## Changing the Connector for the MySql Database
 
-- Change while importing new database
-- Change for existing Imported database
-- Add  MySql Connector Dependency to **pom.xml**
-- Navigate to the **pom.xml** file. Under the **<dependencies>** section Add the following dependencies as specified below.
+You can change connectors when importing a new database and an existing imported database. For this, you must add a MySql Connector Dependency to **pom.xml**.
+
+- Go to the **pom.xml** file. 
+- Under the **<dependencies>** section, add the following dependencies, as specified below.
 
 ```
 <dependency>
@@ -42,7 +41,10 @@ db.userdb.driverClass=com.mysql.jdbc.Driver
 </dependency>
 ```
 
-- Navigate to the Database section, import a database, and before the test connection, click on advanced settings and edit the Connection(JDBC) URL and DriverClass as shown below.
+- Go to the Database section. Import a database.
+- Before testing the connection, click **Advanced Settings**, and edit the **Connection URL** (JDBC) and **DriverClass**, as shown in the image below.
+
+[![](/learn/assets/advanced-settings.png)](/learn/assets/advanced-settings.png)
 
 ### Change Connection URL 
  
@@ -55,7 +57,5 @@ jdbc:mysql://<HOST>:<PORT>/<DB_NAME>?useUnicode=yes&characterEncoding=UTF-8&zero
 ```
 com.mysql.jdbc.Driver
 ```
+- Test Connection. 
 
-## Test Connection 
-
-[![](/learn/assets/advanced-settings.png)](/learn/assets/advanced-settings.png)
