@@ -11,7 +11,9 @@ Import from Code repository option is avilable in **Manage Projects** page In **
 
 ![import project button](/learn/assets/import-from-code-repository-button.png)
 
+:::note
 **Supported VCS providers**: GitHub, GitLab, Bitbucket, Azure
+:::
 
 ## Importing VCS Project to WaveMaker Studio
 
@@ -46,9 +48,9 @@ WaveMaker Project exists in Team Default Code Repository(i.e, VCS account should
 - **Username** and **AccessToken** is for authentication.
 - **Repository Url**(clone url) to import project.
 - **Repository Branch** to import and link specific Branch.
-- Repository Id is required only in case of Gitlab.
+- Project ID is required only in case of Gitlab.
 
-Enter above details and click on Next will validate details and next page will show project details of which you will be importing, and on clicking import button project will be imported.The imported project will also have the same name as Repository name.
+Enter above details and click on Next. It will validate details and next page will show the project details of which you will be importing. Verify them and click on import button. This action will import project. The imported project will also have the same name as Repository name. You can go to studio and see the project.
 
 
 ![Linked project Details](/learn/assets/Linked-project-details.png)
@@ -73,11 +75,18 @@ Import project by cloning it from External VCS to current Team VCS and create pr
 ![External project details](/learn/assets/external-project-details.png)
 
 
-enter the project name and description for imported project to create in Team Default VCS and import project by clicking on Import Button.
+Change ProjectName, and Description. Click on Import.
+This action will import project into Studio and link to existing Team Code Repository.
 
-### Get the VCS Clone URL
+### How to get Project ID
 
-- Go to the VCS provider. For example, GitHub. 
+- Go to the VCS provider. Gitlab UI.
+- Go to the Repository Page under Repository Name u will find the Project Id.
+- Copy it to use in case of Gitlab.
+
+### How to Get Repository URL
+
+- Go to the VCS provider. For example, GitHub, Gitlab, Bitbucket UI. 
 - Copy the clone URL of the repository. For example, https://github.com/sports-apps/BankManagement.git 
-- Using the Clone URL, you create the project in WaveMaker. 
+- This Clone URL has to be provided in the above wizards. 
  
