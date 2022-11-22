@@ -190,6 +190,7 @@
             "ids": [
                     "app-development/services/java-services/java-integration-services",
                     "app-development/services/java-services/java-integration-database-service",
+                    "app-development/services/java-services/api-composer-toolkit",
                     "app-development/services/java-services/variables",
                     "app-development/services/java-services/generated-rest-apis-api-designer"      
                     ]           
@@ -753,6 +754,7 @@
             "how-tos/customize-existing-theme",
             "how-tos/adjust-leftnav-width",
             "how-tos/customizing-theme",
+            "how-tos/single-page-app",
             "how-tos/widget-template-layout",
             "how-tos/wizard-layout",
             "how-tos/custom-widget-template",
@@ -801,7 +803,8 @@
             "how-tos/rowlevel-security-using-crud-event-listeners",
             "how-tos/validations-using-crudListeners",
             "how-tos/custom-business-logic-using-crud-event-listeners",
-            "how-tos/mysql-connection-using-ssl"
+            "how-tos/mysql-connection-using-ssl",
+            "how-tos/switch-mariadb-to-mysql-connector"
           ],
 
           "Web services":
@@ -1340,6 +1343,14 @@
     ],
     "Current v11.x": 
     [
+        {
+          "type": "subcategory",
+          "label": "Versions: 11.2.x",
+          "ids": 
+            [             
+              "wavemaker-release-notes/v11-2-0"              
+            ]
+        },
         {
           "type": "subcategory",
           "label": "Versions: 11.1.x",

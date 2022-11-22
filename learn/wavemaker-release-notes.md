@@ -19,16 +19,17 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ### WaveMaker Online v11.x
 
-|Named Version|What's in it| Release Date|
+|Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.1.3](/learn/wavemaker-release-notes/v11-1-3) <p style="color:red;">*latest*</p>  |This release includes internal platform fixes only. | 03 October 2022 |
-|[WaveMaker 11.1.2](/learn/wavemaker-release-notes/v11-1-2) |Layout and Flex in Cordova, React Native fixes, including Style, Form and Chart and other bug fixes. | 26 September 2022 |
-|[v11.1.0](/learn/wavemaker-release-notes/v11-1-0) <br> known issue: <br> [wm-sspa-cli](/learn/wavemaker-release-notes/v11-1-0)|**wm-sspa-cli** is now supported. <br> [Read updated commands for invoking CLI](/learn/app-development/sspa/micro-frontend#invoke-cli). | 12 September 2022 |
-|[WaveMaker 11.1.1](/learn/wavemaker-release-notes/v11-1-1) |Bug fixes include authentication issues in React Native, Teams Portal navigation, and more.| 5 September 2022 |
-|[WaveMaker 11.1.0](/learn/wavemaker-release-notes/v11-1-0)  |Feature-packed with Angular 12 update, React Native improvements, Azure Repos, MTLS for REST APIs, and more.| 29 August 2022 |
-|[WaveMaker 11.0.3 Beta](/learn/wavemaker-release-notes/v11-0-3) |Issues related to Content Security Policy, Chips widget and Teams Portal configuration.| 25 July 2022 |
-|[WaveMaker 11.0.2 Beta](/learn/wavemaker-release-notes/v11-0-2) |Issues related to importing Web Services with OAuth 2.0 and previewing applications with Prefabs and more such bug fixes are addressed. | 11 July 2022 |
-|[WaveMaker 11 Beta (11.0.1)](/learn/wavemaker-release-notes/v11-0-1)|Includes new features like React Native, Multi-version Studio, API composer toolkit, API Mock Server extension, pagination for imported APIs, Java 11 and SAML library updates. [Read more.](/learn/app-development/wavemaker-overview/wavemaker-11-beta) | 06 June 2022 |
+|[WaveMaker 11.2.0](/learn/wavemaker-release-notes/v11-2-0) <p style="color:red;">*latest*</p>  |  This release includes several new features, including One-click enabling of API Mocking in Studio, the easy discovery of dependencies of services and methods to compose Java API, Single Page App behavior for UI, the Ability to create new projects from VCS repo for Teams users, Update timezones at Pages and Widget level, changes in JDBC connectors, Cordova Android updates, bug fixes, and more.| 21 November 2022 |
+|[WaveMaker 11.1.3](/learn/wavemaker-release-notes/v11-1-3) | This release includes internal platform fixes only.  | 03 October 2022 |
+|[WaveMaker 11.1.2](/learn/wavemaker-release-notes/v11-1-2) | Layout and Flex in Cordova, React Native fixes, including Style, Form and Chart and other bug fixes. | 26 September 2022 |
+|[v11.1.0](/learn/wavemaker-release-notes/v11-1-0) <br> known issue: <br> [wm-sspa-cli](/learn/wavemaker-release-notes/v11-1-0)| **wm-sspa-cli** is now supported. <br> [Read updated commands for invoking CLI](/learn/app-development/sspa/micro-frontend#invoke-cli) | 12 September 2022 |
+|[WaveMaker 11.1.1](/learn/wavemaker-release-notes/v11-1-1) | Bug fixes include authentication issues in React Native, Teams Portal navigation, and more.  | 5 September 2022 |
+|[WaveMaker 11.1.0](/learn/wavemaker-release-notes/v11-1-0)  | Feature-packed with Angular 12 update, React Native improvements, Azure Repos, MTLS for REST APIs, and more.| 29 August 2022 |
+|[WaveMaker 11.0.3 Beta](/learn/wavemaker-release-notes/v11-0-3) | Issues related to Content Security Policy, Chips widget and Teams Portal configuration.  | 25 July 2022 |
+|[WaveMaker 11.0.2 Beta](/learn/wavemaker-release-notes/v11-0-2) | Issues related to importing Web Services with OAuth 2.0 and previewing applications with Prefabs and more such bug fixes are addressed.                                                                                                                                                                                              | 11 July 2022 |
+|[WaveMaker 11 Beta (11.0.1)](/learn/wavemaker-release-notes/v11-0-1)| Includes new features like React Native, Multi-version Studio, API composer toolkit, API Mock Server extension, pagination for imported APIs, Java 11 and SAML library updates. [Read more.](/learn/app-development/wavemaker-overview/wavemaker-11-beta)                                                                            | 06 June 2022 |
 
 
 ### WaveMaker Online v10.x
@@ -108,7 +109,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.1](/learn/wavemaker-release-notes/v11-1-0)
+Last updated: [WaveMaker 11.2](/learn/wavemaker-release-notes/v11-3-0)
 
 ---
 
@@ -133,14 +134,14 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework  | 5.3.21|
-| Security framework | Spring Security <td bgcolor="#44aaf4"> 5.6.6 to 5.7.3|
-| Java JSON utilities | Gson   <td bgcolor="#44aaf4"> 2.9.0 to 2.9.1|
-| DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 5.6.9.Final to 5.6.10.Final|
-| Sample database | HSQL <td bgcolor="#44aaf4"> 2.6.1 to 2.7.0|
-| JSON library | Jackson | 2.13.3|
+|  | Spring Framework  | <span style="background: #44aaf4; color: #fff"> 5.3.22 -> 5.3.23|
+| Security framework | Spring Security | <span style="background: #44aaf4; color: #fff"> 5.7.3 -> 5.7.5|
+| Java JSON utilities | Gson  | <span style="background: #44aaf4; color: #fff"> 2.9.1 -> 2.10 |
+| DB Persistence library | Hibernate | <span style="background: #44aaf4; color: #fff"> 5.6.10.Final -> 5.6.12.Final|
+| Sample database | HSQL |<span style="background: #44aaf4; color: #fff"> 2.7.0 -> 2.7.1 |
+| JSON library | Jackson |<span style="background: #44aaf4; color: #fff"> 2.13.3 -> 2.14|
 | Logging framework | SLF4j | 1.7.36 |
-| Logging Implementation | Log4j2 <td bgcolor="#44aaf4"> 2.17.2 to 2.18.0|
+| Logging Implementation | Log4j2 | 2.18.0|
 | Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
 | Servlet Framework |  | 4.0.1 |
 |Database Connection Pooling | HikariCP | 5.0.1 |
@@ -153,7 +154,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
 | Tomcat | 9.0* |
-| Cordova (mobile apps) <br> Android <br> iOS |11.0.0 <br> 10.1.2  <br> 6.1.0 |
+| Cordova (mobile apps) <br> Android <br> iOS |11.0.0 <br> <span style="background: #44aaf4; color: #fff">10.1.2 -> 11.0.0</span>  <br> 6.2.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
@@ -168,7 +169,7 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |---|---|
 |Java |11 |
 |Node|14.15.5|
-|Maven <td bgcolor="#44aaf4">	3.8.1 to 3.8.6|
+|Maven | 3.8.6|
 |npm | 7.20.3|
 |Ant|	1.10.11|
 |Git|	2.26| 
@@ -179,7 +180,7 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |---|---|
 |Java | 11 |
 |Node | 12.22.3|
-|Maven <td bgcolor="#44aaf4"> 3.8.1 to 3.8.6|
+|Maven| 3.8.6|
 |npm |	6.14.13|
 |Ant|	1.10.11|
 |Git|	2.26| 

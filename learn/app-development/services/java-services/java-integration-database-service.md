@@ -11,52 +11,26 @@ The **autowiring feature of spring framework** enables you to inject the object 
 
 ## Accessing Database services using Java Service
 
-To access a database table from a [Database Integrated](/learn/app-development/services/database-services/working-with-databases/) into your app, you need to access the **Java Service** file corresponding to the table from the Services tab in the left panel. For example, to access the User table from hrdb, you need to access the `UserService.java` file from the services folder available under FileExplorer panel.
+To access a database table from a [Database Integrated](/learn/app-development/services/database-services/working-with-databases/) into your app, In 
+the JavaService Navigate to the Dependencies panel on the right side expand the service you would like to use click on any of its methods and select 
+add particular service to this Java Service as shown below.
 
+[![](/learn/assets/database-service-import.png)](/learn/assets/database-service-import.png)
 
 ### Where to find DB Services
 
-You can find a list of methods for User table in `userservice.java` like `create`, `delete`, `find`, `update`, query service, procedure service, and more.
-
-[![](/learn/assets/dbservices.png)](/learn/assets/dbservices.png)
+You can find a list of methods for User table on expanding  `UserService` like `create`, `delete`, `find`, `update`, query service, procedure service, and 
+more.
 
 ### Accessing DB Services
 
-For working with the **Database table operations** such as insert, get, update in Java Service, the following generic code can be used. 
+For working with the **Database table operations** such as insert, get, update in Java Service, from the dependencies dialogue select the service method and
+click on add particular service to this Java Service, so that the required import and autowired will be added we can make use of the autowired variable and 
+call any of its methods 
 
-Here we are trying to access the User table from the sample `hrdb`:
+[![](/learn/assets/database-service-add.png)](/learn/assets/database-service-add.png)
 
-```Java
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.<project_name>.hrdb.service.UserService;
-import com.<project_name>.hrdb.User;
-
-@ExposeToClient
-public class MyJavaService {
-
-    @Autowired
-    public UserService userService;
-    
-    //This method returns the User object based on given userid
-    public User getUserById(Integer userid) {
-        User user = userService.getById(userid);
-        return user;
-    }
-
-    //The below method returns the List of User objects that matches your query String
-    public Page<User> getAllUsers(String query,Pageable pageable){
-        return userService.findAll(query,pageable);
-    }
-}
-```
-
-:::note
-In the above example, the value for the parameter `query` for findAll method in the service should be an HQL query string.
-
-**Example:** role='adminrole' and tenantId=1
-:::
-
+Here we are trying to access the User table from the sample `hrdb`
 ### Accessing different DB Services with the same name
 
 If there are two or more beans for same class type, you need to use `@Qualifier` annotation along with `@Autowired` annotation and pass the bean name in annotation parameter. 
