@@ -1,28 +1,28 @@
 ---
-title: "True Single Page Behavior" 
+title: "Single Page App" 
 id: ""
-sidebar_label: "Enable True SPA Behavior"
+sidebar_label: "Enable SPA"
 ---
 ---
 
-TrueSPA in a way contributes to how the application UI renders. It behaves close to Single Page App functionality. When you navigate across pages, it only affects the content part, and the rendering of static areas, such as the header, leftnav, footer, etc., remains unchanged, which delivers smoother page transitions and a better user experience. 
+Single Page App (SPA) in a way contributes to how the application UI renders. It behaves close to Single Page App functionality. When you navigate across pages, it only affects the content part, and the rendering of static areas, such as the header, leftnav, footer, etc., remains unchanged, which delivers smoother page transitions and a better user experience. 
 
 :::note
-TrueSPA is released in [v11.2](/learn/wavemaker-release-notes/v11-2-0) as beta; therefore, it is not enabled by default.
+SPA is released in [v11.2](/learn/wavemaker-release-notes/v11-2-0) as beta; therefore, it is not enabled by default.
 :::
 
-## How it helps User Experience
+## How it Helps User Experience
 
 - It improves the performance and page load experience of apps. 
 - Navigating between pages with the same layout does not require a page refresh.
 
 :::important
-TrueSPA will only function for deployed apps. There is no SPA for preview as of now.
+SPA will only function for deployed apps. There is no SPA for preview as of now.
 :::
 
-## Enabling TrueSPA Behaviour
+## Enabling SPA Behavior
 
-To enable the feature, you must configure the TrueSPA flag to **True** from File Explorer. The default is set to **False**.
+To enable the feature, you must configure the SPA flag to **True** from File Explorer. The default is set to **False**.
 
 1. Go to File Explorer. Go to Project path -> Profiles -> Deployment Properties. 
 
