@@ -35,7 +35,20 @@ Typically, you may use this feature in the following scenarios:
 The repository clone URL should contain WaveMaker code to import the project.
 :::
 
-### Link Project to Teams Default Code Repository
+## How to Get Project ID
+
+- Go to the VCS provider -> Gitlab UI.
+- Go to the repository page. You will find the Project Id under the repository name.
+- Copy it to use in case of Gitlab.
+
+## How to Get Repository URL
+
+- Go to the VCS provider. For example, GitHub, Gitlab, Bitbucket UI. 
+- Copy the clone URL of the repository. For example, https://github.com/sports-apps/BankManagement.git
+- This Clone URL should be provided in the above wizards. 
+
+
+## Link Project to Teams Default Code Repository
 
 WaveMaker Project exists in Team default code repository i.e., the VCS account should be configured as Team's default, and the repository must be in the same group. Create a project in Studio and link it to the existing repository in Team VCS.
 
@@ -46,10 +59,10 @@ WaveMaker Project exists in Team default code repository i.e., the VCS account s
 - **Repository Branch** to import and link specific branch.
 - **ProjectId** is required only in the case of Gitlab.
 
-### Steps to Import Project
+### Steps
 
-1. Enter the above details, and click **Next**. It validates the details and the next page will display the project details you will be importing. 
-2. Click **Import**. The project will be imported and the imported project will also have the same name as the repository name.
+1. Enter the above details, and click **Next**. It validates the details and the next page will display the project details you will be importing. This action will import project.
+2. Verify the details and click **Import**. The imported project will also have the same name as Repository name. You can go to studio and see the project.
 
 ![Linked project Details](/learn/assets/Linked-project-details.png)
 
@@ -57,7 +70,7 @@ WaveMaker Project exists in Team default code repository i.e., the VCS account s
 In the above page, project details are not editable.
 :::
 
-### Import Project from External Code Repository
+## Import Project from External Code Repository
 
 Import project by cloning it from External VCS to current Team VCS and create a project in the Studio.
 
@@ -69,10 +82,9 @@ Import project by cloning it from External VCS to current Team VCS and create a 
 
 ![External project details](/learn/assets/external-project-details.png)
 
-Enter the project name and description for the imported project to create in Team's default VCS and import the project by clicking the **Import** button.
+### Steps
 
-### Get the VCS Clone URL
+1. Change project name, and description. 
+2. Click **Import**. This action will import project into Studio and link to existing Team Code Repository.
 
-- Go to the VCS provider. For example, GitHub. 
-- Copy the clone URL of the repository. For example, https://github.com/sports-apps/BankManagement.git 
-- Using the Clone URL, you create the project in WaveMaker. 
+
