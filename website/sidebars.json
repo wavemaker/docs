@@ -598,7 +598,14 @@
   [
     "on-premise/disaster-recovery/backup-and-restore",
     "on-premise/disaster-recovery/Dehydration-and-Rehydration"
+  ],
+  
+  "Enterprise Extension Setups":
+  [
+    "on-premise/extensions/devtool-setup",
+    "on-premise/extensions/mockingbird"
   ]
+	
 },
 
 "Mobile":
