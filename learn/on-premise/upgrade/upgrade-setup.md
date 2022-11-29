@@ -18,6 +18,7 @@ The following list provides the currently supported versions for WME patching. K
 
 | **WME Patch release** | **Supported WME versions** |
 | --- | --- |
+| v11.2.x  |  v10.13.x or higher|
 | v11.1.x  |  v10.13.x or higher|
 | v10.13.x |  v10.6.x or higher |
 | v10.11.x |  v10.6.x or higher |
@@ -44,5 +45,4 @@ Following are the patch files you will need in order to install the patch on th
 ::: note
 Links for WME Patch and the corresponding checksum (sha1sum) files will be provided to you by the WaveMaker team through an email. You need to download the files before starting the installation.
 :::
-
 

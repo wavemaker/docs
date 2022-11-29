@@ -56,11 +56,11 @@ sidebar_label: "Prepare Infrastructure"
 ## Launch Platform Instance
 
 - Open the Amazon EC2 console at <https://console.aws.amazon.com/ec2/.>
-- Choose Launch Instance, choose an ubuntu 16.04 Amazon Machine Image (AMI), or if you have any ubuntu 16.04 AMI, select it.
+- Choose Launch Instance, choose an ubuntu 20.04 Amazon Machine Image (AMI), or if you have any ubuntu 20.04 AMI, select it.
 
 [![ami](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)
 
-- Choose 16 GiB memory instance types from desired family and type.
+- Choose 32 GiB memory instance types from desired family and type.
 
 [![instance type](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)
 
@@ -71,8 +71,8 @@ sidebar_label: "Prepare Infrastructure"
 
 [![instance configurations](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)
 
-- Add storage 50 GiB for the root volume.
-- 50 GiB for wm-runtime
+- Add storage 100 GiB for the root volume.
+- 100 GiB for wm-runtime
 - 150 GiB for wm-data.
 
 [![storage](/learn/assets/wme-setup/wme-setup-in-aws/platform-instance-storage.png)](/learn/assets/wme-setup/wme-setup-in-aws/platform-instance-storage.png)  
@@ -96,7 +96,7 @@ sidebar_label: "Prepare Infrastructure"
 ## Launch Studio Workspace Instance / AppDeployment Instance
 
 - Open the Amazon EC2 console at <https://console.aws.amazon.com/ec2/.>
-- Choose Launch Instance, choose an ubuntu 16.04 Amazon Machine Image (AMI), or if you have any ubuntu 16.04 AMI, select it.
+- Choose Launch Instance, choose an ubuntu 16.04 Amazon Machine Image (AMI), or if you have any ubuntu 20.04 AMI, select it.
 
 [![ami](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)
 
