@@ -6,7 +6,48 @@ In this document we will be describing about the Open ID authentication via gmai
 
 ---
 
-OpenID Auth is a type of authentication protocol to log into the application. Users can use the login credentials provided by an OpenID provider, to establish a session with another application. OpenID providers are the third-party authentication servers that provide the authenticated ID to user, allowing them to use multiple applications without creating a separate account and password for each. 
+OpenID Auth is a type of authentication protocol to log into the application. Users can use the login credentials provided by an OpenID provider, to establish a session with another application. OpenID providers are the third-party authentication servers that provide the authenticated ID to user, allowing them to use multiple applications without creating a separate account and password for each. List of few OpenID providers is provided below:
+* Google
+* Okta
+ 
+
+## Stateless Authentication Session establishment using OpenID
+
+1. User initiates the process by accessing an application.	
+2. Application provides User with options to choose the desired identity provider via authentication request as soon as the User tries to login to the application.
+3. User gets directed to the identity provider to provide necessary details for authentication and authorization purposes.
+4. Identity provider successfully verifies the user’s identity and returns the required user details.
+5. User successfully logs into the application and the role is assigned to the user
+6. Session gets established between user and application.
+
+
+
+[![](/learn/assets/OpenID_Architecture.png)](/learn/assets/OpenID_Architecture.png)
+
+
+### Example
+
+Twitter is a well-known social media application. This application also uses OpenID authentication. As soon as the user tries to login, user is provided with few identity providers like Gmail and Apple. User can then choose a desired identity provider to log into Twitter.
+
+
+## Steps to start OpenID Configuration (Navigation)
+
+1. Select a project, click on the security option.
+[![](/learn/assets/wm_openid_1_f.png)](/learn/assets/wm_openid_1_f.png)
+
+2. Go to Authentication & Authorization option.
+[![](/learn/assets/wm_openid_2_f.png)](/learn/assets/wm_openid_2_f.png)
+
+3. Switch on the Authentication option.
+[![](/learn/assets/wm_openid_3_f.png)](/learn/assets/wm_openid_3_f.png)
+
+4. Under Security Providers, select the OpenID option from the drop down menu of Security Provider.
+[![](/learn/assets/wm_openid_4_f.png)](/learn/assets/wm_openid_4_f.png)
+[![](/learn/assets/wm_openid_5_f.png)](/learn/assets/wm_openid_5_f.png)
+
+5. Select the provider ID from the drop down menu of Provider ID option.
+[![](/learn/assets/wm_openid_6_f.png)](/learn/assets/wm_openid_6_f.png)
+
 
 ## Why OpenID Authentication?
 
@@ -14,32 +55,19 @@ OpenID Authentication comes with many advantages. Some important reasons to choo
 
 ### Simple Sign-up process
 
-User is provided with few secure identities by OpenID providers like Google, Facebook and so on, that allows the user to login with a single click. This removes the efforts and time that user spends to feed the redundant information to use an application.
- 
-### Minimum efforts to maintain usernames and passwords
+In Wavemaker user is provided with few secure identities by OpenID providers like Google, Facebook and so on, that allows the user to login with a single click. This removes the efforts and time that user spends to feed the redundant information to use an application.
+
+
+### Minimum efforts to maintain usernames and passwords:
 
 Users do not have to invest much of their efforts in keeping track of multiple usernames and passwords. Developers also find it beneficial as they are not required to design additional logic to store and maintain the usernames and passwords, specific to any application.
+
 
 ### Lower Password security risks
 
 Users tend to have same passwords and usernames for many applications. This may pose a huge security risk as it becomes easy to hack into the user's account in every application. Instead, if the user is provided with an identity by OpenID provider, it reduces the risk of hacking into all the accounts. If the security is anyhow compromised, the user has to only change password to the identity provider and the data stays secure.
 
-## Example
 
-Twitter is a well-known social media application. This application also uses OpenID authentication. As soon as the user tries to login, user is provided with few identity providers like Gmail and Apple. User can then choose a desired identity provider to log into Twitter.
-
-## OpenID Architecture
-
-1. Application sends an authentication request to the identity provider as soon as the User tries to login to the application using desired identity provider.
-2.	User gets directed to the identity provider to provide necessary details for authentication and authorization purposes.
-3.	Identity provider verifies the user's identity and sends the authorization code to the application.
-4.	Application communicates the authorization code to generate a token request that the application passes to the token endpoint of identity provider.
-5.	Identity provider verifies the code associated with the token request and sends the ID token, access token and refresh token to the application.
-6.	ID token contains the user details, this allows application to establish a session with the user.
-
-
-[![](/learn/assets/OpenID_Architecture.png)](/learn/assets/OpenID_Architecture.png)
- 
 
 ## OpenID Authentication Security Configurations
 
@@ -55,7 +83,8 @@ OpenID Authentication security configurations facilitate communication between t
 | JWKS Url | Json Web Key Set (JWKS) endpoint stores the information on public keys used to verify the Json Web tokens |
 | User Info Endpoint | User Info endpoint allows the client application to fetch the required claims about the authenticated end user |
 | Logout Url | This endpoint is used by the client application to erase provider-side session and related cookies |
-		
+
+
 
 ### Service Provider Information
 
@@ -116,5 +145,5 @@ OpenID Authentication security configurations facilitate communication between t
 | Query Type | This option provides the platform where user can use either HQL or SQL queries to customise the end user roles |
 
 
-
+ 
 
