@@ -602,19 +602,19 @@
   
   "Enterprise Extension Setups":
   [
-    "on-premise/extensions/mockingbird"
+    "on-premise/extensions/mb-getting-started"
     {
       "type": "subcategory",
       "label": "Intall
       "ids": [
-        "on-premise/extensions/mockingbird-install"
+        "on-premise/extensions/mb-install"
       ]
     },
     {
       "type": "subcategory",
       "label": "Integrate",
       "ids": [
-        "on-premise/extensions/mockingbird-integration"
+        "on-premise/extensions/mb-integrate"
       ]
     }
     "on-premise/extensions/devtool-setup"
