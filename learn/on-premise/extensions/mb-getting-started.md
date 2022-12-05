@@ -27,7 +27,7 @@ MockingBird platform can be setup at any of the following Kubernetes clusters
 1. [GKE](https://cloud.google.com/learn/what-is-kubernetes)
 2. [EKS](https://aws.amazon.com/eks/)
 3. [AKS](https://learn.microsoft.com/en-us/azure/aks/)
-4. [Minikube] (https://minikube.sigs.k8s.io/docs/start/)
+4. [Minikube](https://minikube.sigs.k8s.io/docs/start/)
 
 ### Step-3: Install 
 
