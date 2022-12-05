@@ -204,7 +204,7 @@ Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise
 ### Setups when allowed to execute Operating System Upgrade Commands
 
  ::: note
-    Follow the below steps in PlatformInstance, all StudioWorkspaceInstances and AppDeploymentInstances.
+  Follow the below steps in PlatformInstance, all StudioWorkspaceInstances and AppDeploymentInstances.
  :::
 
 #### Ubuntu

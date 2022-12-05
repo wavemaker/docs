@@ -7,7 +7,11 @@ sidebar_label: "Run Patch"
 
 ## Running the Patch
 
-- When upgrading from 10.7.x to 11.x.x user needs to download the required content for the migration process. **When the user has already upgraded to 11.x.x WME Version, in that case, there is no need to download migration tar**.
+- When upgrading from 10.7.x to 11.x.x user needs to download the required content for the migration process.
+
+::: note
+When the user has already upgraded the WME setup to WME 11.x.x Version, in that case, there is no need to download the migration tar
+:::    
 
 - To download migration tar which will be shared by the WaveMaker team, please run the following command.
 
@@ -67,6 +71,17 @@ sidebar_label: "Run Patch"
 - You can start working on Studio once the Instance status has started.
 - If the Instance status UPGRADE_FAILED, then there might be chances of docker version mismatch. You can upgrade docker version using [Manual Docker Upgrade](/learn/on-premise/upgrade/docker-upgrade).
 - Please upgrade the Docker version if it is older than 20.10.12 in your User WorkspaceInstance/AppDeployment Instances.
+
+
+### Merge Maven Repositories
+
+- If the user want to retain their artifacts which are in their **.m2** folder that are already present, please run the patch with the below command.
+- This will not effect their **.m2** folder artifacts. Instead of removing old **.m2** folder, the new artifacts will be ammended.
+
+```bash
+    bash /usr/local/wme/wme-installer/<version>/wme-installer.sh --merge_m2
+```
+
 
 ## Running the UI Patch
 

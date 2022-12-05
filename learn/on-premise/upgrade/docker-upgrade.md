@@ -7,8 +7,11 @@ sidebar_label: "Docker Upgrade"
 
 ## Docker Upgrade
 
+:::note
+  It is not required to upgrade Docker when the WME setup already running with 11.x.x version or if Docker is running with the minimum required version of 20.10.12.
+:::
 
-- Docker upgrade is required when you have docker version below 20.10.12.
+- Docker upgrade is required when you have docker running with the version below 20.10.12 while in upgrading WME setup to 11.x.x version.
 - User needs to upgrade docker if ssh-user doesn't have root/sudo privileges in Ubuntu OS StudioWorkspaceInstance/AppDeploymentInstance and if ssh-user have or doesn't have root/sudo privileges in RHEL OS StudioWorkspaceInstance/AppDeploymentInstance.
 - Make sure Hibernate and passivate user containers and application containers from launchpad. 
 
