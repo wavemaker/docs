@@ -5,7 +5,7 @@ sidebar_label: "What you'll need"
 ---
 ---
 
-You can setup MockingBird on any K8s Platform.
+You can setup MockingBird on any K8s Cluster, but verified on EKS, AKS and GKE.
 
 :::note
 This document uses words like **VM**, **Nodes**, **Instance** to refer a machine.
@@ -20,12 +20,12 @@ GCR/GCP Artifact repo key shipped by support team
 Domain name for MockingBird platform(mockingbird.<domainname>.com)
 SSL Certificate for above MockingBird domain
 
-### MockingBird Platform setup instance configuration
+### MockingBird Platform setup instance configuration(JumpBox)
 
 <table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 2GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>1-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;50 GB to be allocated</li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 18.04.5/20.04.2.0 LTS;  RHEL 7.x/8.x</li><li>Kernel 4.4 or latter</li><li>Architecture x86</li></ul></td></tr>
 <tr><td><strong>Software</strong></td><td><ul><li>Kubctl v1.24.0 or higher</li><li>Heml v3.8.0 or higher</li></ul></li></td></tr></tbody></table>
 
-### MockingBird K8s Cluster Master/Worker nodes configuration
+### MockingBird K8s Cluster Master & Worker nodes configuration
 
 <table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 8GB RAM</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>2-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;200 GB to be allocated</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 18.04.5/20.04.2.0 LTS</li><li>Kernel 4.4 or 4.15</li><li>Architecture x86</li></ul></td></tr>
 </ul></td></tr></tbody></table>
@@ -40,20 +40,12 @@ SSL Certificate for above MockingBird domain
 
 Adding an instance to k8s workspace aids in the scalability of the mocking services. 
 
-## WME Setup Artifacts
-
-WaveMaker will share the required artifacts (package file and keys) to do the setup.
-
-2. **Use WaveMaker Machine Images(OVA/VHD/AMI)**.  
-    Backed with Operating System, prerequisite, Installer.
-    Launch machines from hypervisors or cloud consoles.
-
 ### Helm Package 
 
 WaveMaker team will share the following packages along with access keys. You should download the below package and be ready with keys before starting the installation at setup instance.
 
 - Helm Package zip
-- Checksum(sha1sum) file for above zip.
+- Checksum(sha1sum) file for above package.
 
 ## IP Addressing and DNS Mapping
 
@@ -62,7 +54,7 @@ You will be needing IP Addresses for the following.
 ### IP Address
 
 - One static IP for accessing the MockingBird platform machine from WaveMaker Platform network.
-- For all clouf managed K8s Static IP will be generated provided access to K8s API's and after success helm setup Static IP is generated and showed at console.
+- For all cloud managed K8s Cluster Static IP will be generated provided, access to K8s API's and after success helm setup generated Static IP can be picked up from console.
 - The above static IP should be accessible on WME network, or
 
 ### DNS Mapping

@@ -602,10 +602,30 @@
   
   "Enterprise Extension Setups":
   [
-    "on-premise/extensions/devtool-setup",
     "on-premise/extensions/mockingbird"
+    {
+      "type": "subcategory",
+      "label": "Intall
+      "ids": [
+        "on-premise/extensions/mockingbird-install"
+      ]
+    },
+    {
+      "type": "subcategory",
+      "label": "Integrate",
+      "ids": [
+        "on-premise/extensions/mockingbird-integration"
+      ]
+    }
+    "on-premise/extensions/devtool-setup"
+	{
+      "type": "subcategory",
+      "label": "Enabling DevTool",
+      "ids": [
+        "on-premise/extensions/devtool-enabling"
+      ]
+	},
   ]
-	
 },
 
 "Mobile":
