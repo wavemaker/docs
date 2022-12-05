@@ -13,12 +13,10 @@ This document uses words like **VM**, **Nodes**, **Instance** to refer a machin
 
 ## MockingBird Setup System Requirements
 
-K8s Cluster - v1.24.0 and above
-
-MokingBird Helm Chart: v0.7.0 and above
-GCR/GCP Artifact repo key shipped by support team
-Domain name for MockingBird platform(mockingbird.<domainname>.com)
-SSL Certificate for above MockingBird domain
+- K8s Cluster - v1.24.0 and above
+- MokingBird Helm Chart: v0.7.0 and above GCR/GCP Artifact repo key shipped by support team
+- Domain name for MockingBird platform(mockingbird.<domainname>.com)
+- SSL Certificate for above MockingBird domain
 
 ### MockingBird Platform setup instance configuration(JumpBox)
 
