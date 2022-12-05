@@ -55,7 +55,7 @@ OpenID Authentication comes with many advantages. Some important reasons to choo
 
 ### Simple Sign-up process
 
-In Wavemaker user is provided with few secure identities by OpenID providers like Google, Facebook and so on, that allows the user to login with a single click. This removes the efforts and time that user spends to feed the redundant information to use an application.
+In WaveMaker user is provided with few secure identities by OpenID providers like Google, Facebook and so on, that allows the user to login with a single click. This removes the efforts and time that user spends to feed the redundant information to use an application.
 
 
 ### Minimum efforts to maintain usernames and passwords:
