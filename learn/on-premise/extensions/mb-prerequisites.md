@@ -18,19 +18,20 @@ This document uses words like **VM**, **Nodes**, **Instance** to refer a machin
 
 ### MockingBird Platform setup instance (JumpBox)
 
-- Any instance with folowing packages installed can be used as JumpBox.
-- JumpBox should be configures with access to Kubernetes Cluster where MockingBird to be installed and all the kubectl and helm commands must get run from the same machine.
+- JumpBox should be configures with Kubernetes Cluster access and all the kubectl, helm and docker commands must get run from the same machine.
 - Make sure JumpBox in a secure zone.
-- Here is the list of software packages to be installed at the same JumpBox where K8s Cluster is accessible
+- Here is the list of software packages to be installed at the JumpBox where K8s Cluster is accessible
 
 <table>
 <tbody>
 	<tr><td>
 	<strong>Software</strong>
 	</td><td>
-	<ul><li>Kubctl v1.24.0 or higher</li>
-	<li>Heml v3.8.0 or higher</li></ul>
-	<li>Docker 20.x or higher</li></ul>
+	<ul>
+	<li>Kubctl v1.24.0 or higher</li>
+	<li>Heml v3.8.0 or higher</li>
+	<li>Docker 20.x or higher</li>
+	</ul>
 	</li>
 	</td></tr>
 </tbody>
@@ -39,11 +40,23 @@ This document uses words like **VM**, **Nodes**, **Instance** to refer a machin
 ### Persistent Volume creation
 
 - Make sure following PVC's are ready before you start the setup
-	-- pv-claim-k8s-mbe-redis-data
-	-- pv-claim-k8s-mbe-swagger-json-data
-	-- pv-claim-k8s-mbe-tomcat-logs-data
-	
-- If you are new to Kubernetes and not ready with above PVC's, refer this document [Volume Creation](/learn/on-premise/extensions/mb-Persistentvolumes.md).
+
+<table>
+<tbody>
+	<tr><td>
+	<strong>Persistent Volume Claims</strong>
+	</td><td>
+	<ul>
+	<li>pv-claim-k8s-mbe-redis-data</li>
+	<li>pv-claim-k8s-mbe-swagger-json-data</li>
+	<li>pv-claim-k8s-mbe-tomcat-logs-data</li>
+	</ul>
+	</li>
+	</td></tr>
+</tbody>
+</table>
+
+- If you are new to Kubernetes and not ready with above PVC's, refer this document [Volume Creation](/learn/on-premise/extensions/mb-prerequisites.md).
 
 ### Capacity Planning
 
@@ -51,7 +64,7 @@ Adding an instance to k8s workspace aids in the scalability of the mocking ser
 
 ### Deliverables 
 
-WaveMaker team will share the following packages along with access keys. You should download the below package and be ready with keys before starting the installation at setup instance.
+WaveMaker team will share the following packages along with access keys. You should be ready by downloading below package and key files before starting the installation at JumpBox
 
 - MockingBird Helm Package
 - SHA1SUM file of MockingBird Helm Package
@@ -80,6 +93,6 @@ In the preceding table, `[mycompany]` is used as an example. You may have to r
 ### Network Communication
 
 - Before you start installing MockingBird make sure WME setup is ready.
-- Below diagram explain's the network Integration between the WaveMaker Platform Instance and MockingBird k8s Platform. Make sure MockingBird Platform domain is only accessible to WME Platform
+- Below diagram explain's the network Integration between the WaveMaker Platform Instance and MockingBird k8s Platform. Make sure MockingBird Platform domain is only accessible to WME Platform domain.
 
 [![network-communication-between-instances](/learn/assets/wme-setup/network-communication-between-mbe-wme.jpg)](/learn/assets/wme-setup/network-communication-between-mbe-wme.jpg)

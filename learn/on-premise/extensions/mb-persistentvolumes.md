@@ -5,21 +5,37 @@ sidebar_label: "Creating Persisted Volumes"
 ---
 ---
 
-## PD, StorageClass and PV creation at GKE
+## Storage Disks Creation
 
-### Storage Disks Creation
-- Create Storage Disks with following names from respective cloud computing with 50GB storage
+- Create Storage Disks with following names from respective cloud computing with 50GB storage each and type as HDD
+
+<table>
+<tbody>
+	<tr><td>
+	<strong>Storage Disks</strong>
+	</td><td>
+	<ul>
+	<li>k8s-mbe-redis-data</li>
+	<li>k8s-mbe-swagger-json-data</li>
+	<li>k8s-mbe-tomcat-logs-data</li>
+	</ul>
+	</li>
+	</td></tr>
+</tbody>
+</table>
+
 :::note
-Make sure these storage disks at at same region as K8s cluster.
+Make sure these storage disks are at same region as K8s cluster.
 :::
-	k8s-mbe-redis-data
-	k8s-mbe-swagger-json-data
-	k8s-mbe-tomcat-logs-data
+	
+## StorageClass and PV creation for GKE
 	
 ### StorageClass Creation
-- Create StorageClass
+- Create StorageClass yaml file with this code snippet
 
 storageclass.yaml
+
+```bash
 	apiVersion: storage.k8s.io/v1
 	kind: StorageClass
 	metadata:
@@ -30,17 +46,21 @@ storageclass.yaml
 	allowVolumeExpansion: true
 	reclaimPolicy: Retain
 	volumeBindingMode: WaitForFirstConsumer
+```
+
+- Create StorageClass with this command
 
 ```bash
 kubectl apply -f storageclass.yaml  -n mockingbird
 ```
 
 ### PV's and PVC's creation
-- PV and PVC's creation for MockingBird services
 
-- Create PV's PVC's using 
+- Create servicestorage yaml file  
 
 servicestorage.yaml
+
+```bash
 		apiVersion: v1
 		kind: PersistentVolume
 		metadata:
@@ -131,22 +151,11 @@ servicestorage.yaml
 		  resources:
 			requests:
 			  storage: 50Gi
+```
 			  
+- Create PV's and PVC's with this command
+
 ```bash
 kubectl apply -f servicestorage.yaml  -n mockingbird
 ```
-
-## StorageClass and PV creation at EKS
-### StorageClass creation
-### PV creation
-
-
-## StorageClass and PV creation at AKS
-### StorageClass creation
-### PV creation
-
-## StorageClass and PV creation at KOPS
-### StorageClass creation
-### PV creation
-
 
