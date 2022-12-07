@@ -5,24 +5,23 @@ sidebar_label: "What you'll need"
 ---
 ---
 
-You can setup MockingBird on any K8s Cluster, but verified on EKS, AKS and GKE.
+You can setup MockingBird on any K8s Cluster, but verified on GKE.
 
 :::note
 This document uses words like **VM**, **Nodes**, **Instance** to refer a machine.
 :::
 
-## MockingBird Setup System Requirements
+## MockingBird Setup Requirements
 
+### Kubernetes Cluster
 - K8s Cluster - v1.24.0 and above
-- MokingBird Helm Chart: v0.7.0 and above GCR/GCP Artifact repo key shipped by support team
-- Domain name for MockingBird platform(mockingbird.[mycompany].com)
-- SSL Certificate for above MockingBird domain
 
-### MockingBird Platform setup instance configuration(JumpBox)
+### MockingBird Platform setup instance (JumpBox)
 
 - Any instance with folowing packages installed can be used as JumpBox.
-- JumpBox will have access to Kubernetes Cluster and all the kubectl and helm commands must get run from the same machine.
+- JumpBox should be configures with access to Kubernetes Cluster where MockingBird to be installed and all the kubectl and helm commands must get run from the same machine.
 - Make sure JumpBox in a secure zone.
+- Here is the list of software packages to be installed at the same JumpBox where K8s Cluster is accessible
 
 <table>
 <tbody>
@@ -31,6 +30,7 @@ This document uses words like **VM**, **Nodes**, **Instance** to refer a machin
 	</td><td>
 	<ul><li>Kubctl v1.24.0 or higher</li>
 	<li>Heml v3.8.0 or higher</li></ul>
+	<li>Docker 20.x or higher</li></ul>
 	</li>
 	</td></tr>
 </tbody>
@@ -42,18 +42,20 @@ This document uses words like **VM**, **Nodes**, **Instance** to refer a machin
 	-- pv-claim-k8s-mbe-redis-data
 	-- pv-claim-k8s-mbe-swagger-json-data
 	-- pv-claim-k8s-mbe-tomcat-logs-data
+	
 - If you are new to Kubernetes and not ready with above PVC's, refer this document [Volume Creation](/learn/on-premise/extensions/mb-Persistentvolumes.md).
 
 ### Capacity Planning
 
-Adding an instance to k8s workspace aids in the scalability of the mocking services. 
+Adding an instance to k8s workspace aids in the scalability of the mocking services.
 
-### Helm Package 
+### Deliverables 
 
 WaveMaker team will share the following packages along with access keys. You should download the below package and be ready with keys before starting the installation at setup instance.
 
-- Helm Package zip
-- Checksum(sha1sum) file for above package.
+- MockingBird Helm Package
+- SHA1SUM file of MockingBird Helm Package
+- Artifact Registry access key file
 
 ## IP Address and DNS Mapping
 
@@ -77,6 +79,7 @@ In the preceding table, `[mycompany]` is used as an example. You may have to r
 
 ### Network Communication
 
-- Below diagram explain's the network communication between the WaveMaker Platform Instance and MockingBird k8s Platform integration. Make sure MockingBird Platform domain is only accessible to WME Platform
+- Before you start installing MockingBird make sure WME setup is ready.
+- Below diagram explain's the network Integration between the WaveMaker Platform Instance and MockingBird k8s Platform. Make sure MockingBird Platform domain is only accessible to WME Platform
 
 [![network-communication-between-instances](/learn/assets/wme-setup/network-communication-between-mbe-wme.jpg)](/learn/assets/wme-setup/network-communication-between-mbe-wme.jpg)
