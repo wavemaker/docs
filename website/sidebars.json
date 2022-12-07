@@ -1,7 +1,24 @@
 {
   "docs": [
     "documentation-reference",
-    "app-development/wavemaker-overview/product-walkthrough",
+      {
+        "type": "category",
+        "label": "Get started",
+        "items": [
+            "app-development/wavemaker-overview/product-walkthrough",
+            {
+              "type": "category",
+              "label": "Administration",
+              "items": [
+                "app-development/wavemaker-overview/project-user-management",
+                "app-development/dev-integration/developer-collaboration",
+                "app-development/dev-integration/extending-application-using-ides",
+                "app-development/dev-integration/import-export-update-apps",
+                "app-development/wavemaker-overview/artifacts-repository"
+                ]
+            }
+          ]
+      },  
       {
         "type": "category",
         "label": "Development",
@@ -31,20 +48,21 @@
               "type": "category",
               "label": "Designing",
               "items": [
+                "app-development/widgets/ui-elements",
                 "app-development/ui-design/page-artefacts",
                 "app-development/ui-design/page-concepts/page-navigation",
                 "app-development/ui-design/page-concepts/page-events",
-                "app-development/ui-design/page-concepts/partial-pages"
+                "app-development/ui-design/page-concepts/partial-pages",
+                "app-development/ui-design/use-cases-ui-design"
               ]
             },
             {
               "type": "category",
-              "label": "Concepts",
+              "label": "Configure",
               "items": [
                 "app-development/ui-design/project-shells",
                 "app-development/ui-design/page-concepts/page-parameters",
-                "app-development/ui-design/page-concepts/page-cache",
-                "app-development/ui-design/use-cases-ui-design"
+                "app-development/ui-design/page-concepts/page-cache"
               ]
             }, 
             {
@@ -250,6 +268,44 @@
         },
         {
           "type": "category",
+          "label": "Security",
+          "items": [
+            {
+              "type": "category",
+              "label": "App Security",
+              "items": [
+                "app-development/app-security/app-security",
+                "app-development/app-security/authentication",
+                "app-development/app-security/authorization",
+                "app-development/app-security/access-levels-permissions",
+                "app-development/app-security/login-configuration",
+                "app-development/app-security/session-persistence",
+                "app-development/app-security/ssl-encryption",
+                "app-development/app-security/xss-antisamy-policy-configuration",
+                "app-development/app-security/owasp",
+                "app-development/app-security/xss-prevention",
+                "app-development/app-security/central-authentication-system",
+                "app-development/app-security/token-based-authentication",
+                "app-development/app-security/saml-integration",
+                "app-development/app-security/secure-connection-deployed-apps",
+                "app-development/app-security/concurrent-sessions",
+                "app-development/app-security/hostheader-injection"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Security Variable and API",
+              "items": [
+                "app-development/app-security/security-variables",
+                "app-development/app-security/remember-me",
+                "app-development/variables/security-service",
+                "app-development/services/api-designer/security-service-apis"
+              ]
+            }
+          ]
+        },     
+        {
+          "type": "category",
           "label": "Accessibility & Internationalization",
           "items": [
             "app-development/ui-design/accessibility",
@@ -257,7 +313,7 @@
           ]
         }  
       ]
-    },     
+    },
     {
       "type": "category",
       "label": "Testing and Debugging",
@@ -271,140 +327,91 @@
     },
     {
       "type": "category",
-      "label": "Security",
+      "label": "Deployment",
       "items": [
+        "app-development/deployment/deployment-overview",
+        "app-development/deployment/deployment-profile",
+        "app-development/deployment/build-options",
+        "app-development/deployment/one-click-deployment",
         {
           "type": "category",
-          "label": "App Security",
+          "label": "WaveMaker CI/CD Pipeline",
           "items": [
-            "app-development/app-security/app-security",
-            "app-development/app-security/authentication",
-            "app-development/app-security/authorization",
-            "app-development/app-security/access-levels-permissions",
-            "app-development/app-security/login-configuration",
-            "app-development/app-security/session-persistence",
-            "app-development/app-security/ssl-encryption",
-            "app-development/app-security/xss-antisamy-policy-configuration",
-            "app-development/app-security/owasp",
-            "app-development/app-security/xss-prevention",
-            "app-development/app-security/central-authentication-system",
-            "app-development/app-security/token-based-authentication",
-            "app-development/app-security/saml-integration",
-            "app-development/app-security/secure-connection-deployed-apps",
-            "app-development/app-security/concurrent-sessions",
-            "app-development/app-security/hostheader-injection"
+            "app-development/deployment/release-management",
+            "app-development/deployment/configuration-profiles",
+            "app-development/deployment/configuration-management",
+            "app-development/deployment/pipelines-phases"
           ]
         },
         {
           "type": "category",
-          "label": "Security Variable and API",
+          "label": "Pipeline Configuration",
           "items": [
-            "app-development/app-security/security-variables",
-            "app-development/app-security/remember-me",
-            "app-development/variables/security-service",
-            "app-development/services/api-designer/security-service-apis"
+            "app-development/deployment/default-pipelines",
+            "app-development/deployment/configure-pipelines"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Deploy to Cloud Providers",
+          "items": [
+            "app-development/deployment/deployment-to-aws",
+            "app-development/deployment/deployment-to-azure",
+            "app-development/deployment/deployment-google-cloud",
+            "app-development/deployment/deployment-to-digital-ocean"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Pipeline Configuration cont.",
+          "items": [
+            "app-development/deployment/phase-configuration",
+            "app-development/deployment/webhooks-integration",
+            "app-development/deployment/tests-integration"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Manage Deployed Apps",
+          "items": [
+            "app-development/deployment/manage-deployed-apps"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Integrate with your CI/CD Providers",
+          "items": [
+            "app-development/deployment/push-code-to-external-repo",
+            "app-development/deployment/integration-with-custom-vcs-provider",
+            "app-development/deployment/export-wavemaker-application",
+            "app-development/deployment/building-with-maven",
+            "app-development/deployment/build-with-docker",
+            "app-development/deployment/jenkins-integration",
+            "app-development/deployment/deployment-using-docker-compose",
+            "how-tos/deployment-to-heroku"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "WaveMaker apps Interation with CDN",
+          "items": [
+            "app-development/deployment/app-integration-with-aws-cdn",
+            "app-development/deployment/app-integration-with-azure-cdn"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Deployment to external web servers",
+          "items": [
+            "app-development/deployment/deployment-web-server",
+            "how-tos/wavemaker-application-deployment-tomcat",
+            "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
+            "how-tos/wavemaker-application-deployment-jboss",
+            "how-tos/wavemaker-application-deployment-weblogic-application-server"
           ]
         }
       ]
-    },
-        {
-          "type": "category",
-          "label": "Deployment",
-          "items": [
-            "app-development/deployment/deployment-overview",
-            "app-development/deployment/deployment-profile",
-            "app-development/deployment/build-options",
-            "app-development/deployment/one-click-deployment",
-            {
-              "type": "category",
-              "label": "WaveMaker CI/CD Pipeline",
-              "items": [
-                "app-development/deployment/release-management",
-                "app-development/deployment/configuration-profiles",
-                "app-development/deployment/configuration-management",
-                "app-development/deployment/pipelines-phases"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Pipeline Configuration",
-              "items": [
-                "app-development/deployment/default-pipelines",
-                "app-development/deployment/configure-pipelines"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Deploy to Cloud Providers",
-              "items": [
-                "app-development/deployment/deployment-to-aws",
-                "app-development/deployment/deployment-to-azure",
-                "app-development/deployment/deployment-google-cloud",
-                "app-development/deployment/deployment-to-digital-ocean"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Pipeline Configuration cont.",
-              "items": [
-                "app-development/deployment/phase-configuration",
-                "app-development/deployment/webhooks-integration",
-                "app-development/deployment/tests-integration"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Manage Deployed Apps",
-              "items": [
-                "app-development/deployment/manage-deployed-apps"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Integrate with your CI/CD Providers",
-              "items": [
-                "app-development/deployment/push-code-to-external-repo",
-                "app-development/deployment/integration-with-custom-vcs-provider",
-                "app-development/deployment/export-wavemaker-application",
-                "app-development/deployment/building-with-maven",
-                "app-development/deployment/build-with-docker",
-                "app-development/deployment/jenkins-integration",
-                "app-development/deployment/deployment-using-docker-compose",
-                "how-tos/deployment-to-heroku"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "WaveMaker apps Interation with CDN",
-              "items": [
-                "app-development/deployment/app-integration-with-aws-cdn",
-                "app-development/deployment/app-integration-with-azure-cdn"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Deployment to external web servers",
-              "items": [
-                "app-development/deployment/deployment-web-server",
-                "how-tos/wavemaker-application-deployment-tomcat",
-                "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
-                "how-tos/wavemaker-application-deployment-jboss",
-                "how-tos/wavemaker-application-deployment-weblogic-application-server"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Dev Integration",
-          "items": [
-            "app-development/wavemaker-overview/project-user-management",
-            "app-development/dev-integration/developer-collaboration",
-            "app-development/dev-integration/extending-application-using-ides",
-            "app-development/dev-integration/import-export-update-apps",
-            "app-development/wavemaker-overview/artifacts-repository"
-            ]
-        } 
+    }
   ],
   "Connectors": [
     "connectors/connectors-introduction",
@@ -423,6 +430,7 @@
         "teams/project-branch",
         "teams/manage-roles",
         "teams/code-repository",
+        "how-tos/azure-repos-vcs",
         "teams/import-vcs-project",
         "teams/team-profile",
         "teams/manage-subscription",
@@ -443,7 +451,6 @@
     {
       "type": "category",
       "label": "Install on AWS",
-
       "items": [
         "on-premise/aws/wavemaker-enterprise-setup-on-aws",
         "on-premise/aws/launching-instances-in-aws",
@@ -463,7 +470,6 @@
     {
       "type": "category",
       "label": "Install on Azure",
-
       "items": [
         "on-premise/azure/wavemaker-enterprise-setup-on-azure",
         "on-premise/azure/launching-instances-in-azure",
@@ -484,7 +490,6 @@
     {
       "type": "category",
       "label": "Install on GCP",
-
       "items": [
         "on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
         "on-premise/gcp/launching-instances-in-gcp",
@@ -504,7 +509,6 @@
     {
       "type": "category",
       "label": "Install on VMware ESXi",
-
       "items": [
         "on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware",
         "on-premise/vmware-esxi/launching-instances-in-esxi-ova",
@@ -525,7 +529,6 @@
     {
       "type": "category",
       "label": "Install on Hyper-V",
-
       "items": [
         "on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv",
         "on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
@@ -545,7 +548,6 @@
     {
       "type": "category",
       "label": "Configure",
-
       "items": [
         "on-premise/configure/config-users-auth-providers",
         "on-premise/configure/config-vcs",
@@ -558,7 +560,6 @@
     {
       "type": "category",
       "label": "Observability",
-
       "items": [
         "on-premise/observability/introduction",
         {
@@ -584,7 +585,6 @@
     {
       "type": "category",
       "label": "Upgrade",
-
       "items": [
         "on-premise/upgrade/upgrade-setup",
         "on-premise/upgrade/download-copy-patch",
@@ -597,7 +597,6 @@
     {
       "type": "category",
       "label": "Disaster Recovery",
-
       "items": [
         "on-premise/disaster-recovery/backup-and-restore",
         "on-premise/disaster-recovery/Dehydration-and-Rehydration"
@@ -609,7 +608,6 @@
     {
       "type": "category",
       "label": "React Native",
-
       "items": [
         "react-native/react-native",
         "react-native/feature-support",
@@ -630,7 +628,6 @@
     {
       "type": "category",
       "label": "Cordova",
-
       "items": [
         "hybrid-mobile/building-hybrid-mobile-apps",
         "hybrid-mobile/native-device-support",
@@ -688,7 +685,6 @@
     {
       "type": "category",
       "label": "Build an app in 5 Minutes",
-
       "items": [
         "tutorials/build-app-in-5-minutes/app-demo",
         "tutorials/build-app-in-5-minutes/import-database",
@@ -697,10 +693,10 @@
         "tutorials/build-app-in-5-minutes/preview-test-app"
       ]
     },
+    "app-development/wavemaker-overview/wavemaker-best-practices",  
     {
       "type": "category",
       "label": "Essentials",
-
       "items": [
         "jump-start/jump-start-app-essentials",
         "jump-start/jump-start-db-essentials"
@@ -709,7 +705,6 @@
     {
       "type": "category",
       "label": "App Building Exercises",
-
       "items": [
         "tutorials/leave-management-app",
         "tutorials/asset-management-app"
@@ -718,11 +713,9 @@
   ],
   "How to Docs": [
     "howtos-documents",
-    "app-development/wavemaker-overview/wavemaker-best-practices",
     {
       "type": "category",
       "label": "App solution",
-
       "items": [
         "how-tos/creating-registration-page",
         "how-tos/support-password-encryption",
@@ -734,8 +727,7 @@
     },
     {
       "type": "category",
-      "label": "UI design",
-
+      "label": "UI Development",
       "items": [
         "how-tos/passing-parameters-pages",
         "how-tos/passing-parameters-partial-page",
@@ -752,30 +744,28 @@
         "how-tos/use-conditional-class-property",
         "how-tos/use-conditional-style-property",
         "how-tos/customize-existing-theme",
-        "how-tos/adjust-leftnav-width",
         "how-tos/customizing-theme",
         "how-tos/widget-template-layout",
         "how-tos/wizard-layout",
         "how-tos/custom-widget-template",
-        "how-tos/using-custom-formatter"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Nav & Dropdown",
-
-      "items": [
-        "how-tos/dynamic-menu-based-user-role",
-        "how-tos/restricting-menu-item-display-based-user-role",
-        "how-tos/implementing-localization-dropdown-menu"
+        "how-tos/using-custom-formatter",
+        {
+          "type": "category",
+          "label": "Nav & Dropdown",
+          "items": [
+            "how-tos/adjust-leftnav-width",
+            "how-tos/dynamic-menu-based-user-role",
+            "how-tos/restricting-menu-item-display-based-user-role"
+          ]
+        }
       ]
     },
     {
       "type": "category",
       "label": "Localization",
-
       "items": [
         "how-tos/localization-wavemaker-apps",
+        "how-tos/implementing-localization-dropdown-menu",
         "how-tos/setting-language-date-format",
         "app-development/widgets/form-widgets/select-locale-usage",
         "how-tos/localization-error-messages",
@@ -785,7 +775,6 @@
     {
       "type": "category",
       "label": "Security",
-
       "items": [
         "how-tos/saml-integration-onelogin",
         "how-tos/saml-integration-adfs",
@@ -800,7 +789,6 @@
     {
       "type": "category",
       "label": "Databases",
-
       "items": [
         "how-tos/queries-dynamic-clause",
         "how-tos/connect-azure-sql-server",
@@ -820,7 +808,6 @@
     {
       "type": "category",
       "label": "Web services",
-
       "items": [
         "how-tos/using-app-environment-properties",
         "how-tos/consuming-existing-wm-api-into-another-wm-project",
@@ -834,14 +821,16 @@
     {
       "type": "category",
       "label": "Java services",
-
       "items": [
         "how-tos/sending-email-using-java-service",
         "how-tos/implementing-forgot-password-feature-using-java-service",
         "how-tos/accessing-rest-apis-java-service",
         "how-tos/scheduling-java-service",
+        "how-tos/synchronizing-java-services-controller",
+        "how-tos/integrating-amazon-cognito-user-authentication",
+        "how-tos/integrating-sample-jasper-report-wavemaker-application",
+        "how-tos/generate-pdf-file-using-jasper-reports",
         "how-tos/integrating-junit-tests-for-wavemaker-application",
-        "app-development/services/database-services/orm-artifacts",
         "how-tos/pre-post-processing-db-service-apis",
         "how-tos/accessing-loggedin-user-information-using-a-java-service",
         "how-tos/camunda-wavemaker-app-integration",
@@ -855,7 +844,6 @@
     {
       "type": "category",
       "label": "Variables",
-
       "items": [
         "how-tos/using-filter-conditions-variable",
         "how-tos/using-live-variable-apis",
@@ -870,7 +858,6 @@
     {
       "type": "category",
       "label": "JavaScript",
-
       "items": [
         "how-tos/using-javascript-binding",
         "how-tos/using-javascript-external-url",
@@ -880,438 +867,367 @@
     },
     {
       "type": "category",
-      "label": "Developer options",
-
+      "label": "Development",
       "items": [
         "how-tos/synchronizing-wavemaker-apps-ides-beta",
-        "how-tos/synchronizing-java-services-controller",
-        "how-tos/integrating-amazon-cognito-user-authentication",
-        "how-tos/integrating-sample-jasper-report-wavemaker-application",
-        "how-tos/generate-pdf-file-using-jasper-reports",
-        "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
-        "how-tos/app-migration-wavemaker-9x-10x",
         "how-tos/debug-monitor-performance-issues-using-fusion-reactor"
       ]
     },
     {
       "type": "category",
       "label": "Deployment",
-
       "items": [
         "how-tos/ssl-offloading"
       ]
     },
-    {
+        {
       "type": "category",
-      "label": "Mobile App Solutions",
-
+      "label": "Updating Project",
       "items": [
-        "how-tos/mobile-notify-new-version-update"
+        "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
+        "how-tos/app-migration-wavemaker-9x-10x"
       ]
     },
     {
-      "type": "category",
-      "label": "Mobile gesture",
-
-      "items": [
+    "type": "category",
+      "label": "Mobile",
+      "items": [       
+        "how-tos/mobile-notify-new-version-update",
         "how-tos/setting-swipe-gestures-list-widget",
-        "how-tos/working-pull-refresh"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Mobile widgets",
-
-      "items": [
+        "how-tos/working-pull-refresh",
         "how-tos/using-search-widget-within-navbar",
-        "app-development/widgets/mobile-widgets/barcode-scanner"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Mobile UI design",
-
-      "items": [
-        "how-tos/splashscreens-icons",
-        "how-tos/using-cordova-plugins",
-        "how-tos/support-for-tablet-view-in-mobile",
-        "how-tos/sliding-leftnav-mobile-app",
-        "how-tos/mobile-app-using-bar-code",
-        "how-tos/custom-date-picker"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Cards",
-
-      "items": [
-        "how-tos/capturing-card-items"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "DataTable",
-
-      "items": [
-        "how-tos/data-table-actions",
-        "how-tos/how-to-configure-row-expansion-in-a-data-table",
-        "how-tos/data-table-widget-representations",
-        "how-tos/view-master-detail-data-records-using-data-table",
-        "how-tos/add-master-detail-records-using-data-table",
-        "how-tos/export-data-data-table",
-        "how-tos/export-data-data-table-2",
-        "how-tos/setting-blob-filename",
-        "how-tos/dynamic-data-tables",
-        "how-tos/customize-dynamic-datatable",
-        "how-tos/data-table-column-bound-query",
-        "how-tos/combining-columns-data-table",
-        "how-tos/data-table-styling",
-        "how-tos/data-table-format-options",
-        "how-tos/concurrency-record-locking-wavemaker",
-        "how-tos/edit-datatable-bound-to-queryapi"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "List",
-
-      "items": [
-        "how-tos/list-grouped",
-        "how-tos/list-multi-grouped",
-        "how-tos/onrender-event-list-widget",
-        "how-tos/list-data-table",
-        "how-tos/building-editable-list",
-        "how-tos/building-cascading-lists",
-        "how-tos/list-item-access",
-        "how-tos/localization-data-table-column-headings"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Forms",
-
-      "items": [
-        "how-tos/using-live-form",
-        "how-tos/how-tos-form",
-        "how-tos/live-form-tabbed-form",
-        "how-tos/how-tos-live-form",
-        "how-tos/live-form-linking-another-widget",
-        "how-tos/live-form-related-fields",
-        "how-tos/get-validation-messages-form",
-        "how-tos/adding-master-detail-records-transaction",
-        "how-tos/adding-parent-child-records-single-transaction",
-        "how-tos/adding-parent-child-using-form-datatable",
-        "how-tos/using-cascading-select-autocomplete-live-form-fields",
-        "how-tos/using-cascading-select-within-live-form",
-        "how-tos/using-cascading-filter-populate-live-form",
-        "how-tos/using-wizard-master-detail-live-form",
-        "how-tos/copy-to-clipboard",
-        "how-tos/form-with-wizard",
-        "how-tos/form-conditional-flows"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Calendar",
-
-      "items": [
-        "how-tos/how-tos-calendar",
-        "how-tos/calendar-usage-create-event",
-        "how-tos/calender-usage-google-calendar-integration"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "CheckboxSet",
-
-      "items": [
-        "how-tos/checkboxset-filter-list-data"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "FileUpload",
-
-      "items": [
-        "app-development/widgets/form-widgets/file-upload-basic-usage",
-        "how-tos/file-upload-widget-operations",
-        "how-tos/upload-file-save-database",
-        "how-tos/file-upload-blob-data",
-        "how-tos/file-upload-custom-directory",
-        "how-tos/accessing-file-upload-java-code",
-        "how-tos/upload-files-from-live-form-form"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Radioset",
-
-      "items": [
-        "how-tos/radioset-filter-list"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Rating",
-
-      "items": [
-        "how-tos/rating-widget-using-static-data",
-        "how-tos/rating-widget-using-static-variable",
-        "how-tos/building-rating-widget-using-variable",
-        "how-tos/rating-widget-interactive"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Select",
-
-      "items": [
-        "how-tos/configuring-select-widget-static-list-values",
-        "how-tos/configuring-select-widget-static-variable",
-        "how-tos/configuring-select-widget-variable",
-        "how-tos/configuring-select-widget-display-data-fields",
-        "how-tos/configuring-select-widget-database-fields",
-        "how-tos/configuring-cascading-select",
-        "how-tos/selection-widgets-use-case"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Progress Circle",
-
-      "items": [
-        "how-tos/using-progress-circle-widget"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Charts",
-
-      "items": [
-        "how-tos/working-with-charts",
-        "how-tos/charts-displaying-user-selection-another-widget",
-        "how-tos/charts-handling-dynamic-data",
-        "how-tos/charts-custom-data"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Richtext Editor",
-
-      "items": [
-        "how-tos/adding-custom-fonts-richtext-editor"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Live filter",
-
-      "items": [
-        "how-tos/live-filter-applying",
-        "how-tos/live-filter-multiple-values",
-        "how-tos/live-filter-range-filter"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Container",
-
-      "items": [
-        "how-tos/setting-partial-page-content-accordion-within-list",
-        "how-tos/setting-partial-page-content-panel-within-list-using-javascript",
-        "how-tos/how-tos-wizard",
-        "how-tos/dynamic-tabs-accordions"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Tree",
-
-      "items": [
-        "how-tos/tree-use-case-static-variable",
-        "how-tos/tree-use-case-java-service",
-        "how-tos/tree-use-case-dynamic-tree"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Prefabs",
-
-      "items": [
-        "how-tos/create-simple-prefab",
-        "how-tos/create-prefab-with-partials",
-        "how-tos/create-prefab-using-third-party-ui-widgets",
-        "how-tos/create-simple-prefab",
-        "how-tos/create-prefab-using-d3-nvd3-charts",
-        "how-tos/create-prefab-using-d3-library-datamaps",
-        "how-tos/create-prefab-using-jquery-plugin",
-        "how-tos/create-prefab-using-angular-module",
-        "how-tos/create-prefab-using-custom-element",
-        "how-tos/integrating-azure-oauth-prefab"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Team Poral Configure Vcs",
-
-      "items": [
-        "how-tos/azure-repos-vcs"
+        "app-development/widgets/mobile-widgets/barcode-scanner",
+        {
+          "type": "category",
+          "label": "Mobile UI Design",
+          "items": [
+            "how-tos/splashscreens-icons",
+            "how-tos/using-cordova-plugins",
+            "how-tos/support-for-tablet-view-in-mobile",
+            "how-tos/sliding-leftnav-mobile-app",
+            "how-tos/mobile-app-using-bar-code",
+            "how-tos/custom-date-picker"
+          ]
+        }
       ]
     }
   ],
   "Widgets": [
     "app-development/widgets/widget-library",
-    "app-development/widgets/ui-elements",
     {
       "type": "category",
-      "label": "Cards",
-
+      "label": "Data widgets",
       "items": [
-        "app-development/widgets/datalive/cards",
-        "app-development/widgets/datalive/cards/card-basic-usage",
-        "app-development/widgets/datalive/cards/cards-data-source",
-        "app-development/widgets/datalive/cards/cards-templates",
-        "app-development/widgets/datalive/cards/card-configuration",
-        "app-development/widgets/datalive/cards/card-behavior-settings",
-        "app-development/widgets/datalive/cards/cards-properties-events-methods",
-        "app-development/widgets/datalive/cards/card-use-cases"
-      ]
+          {
+            "type": "category",
+            "label": "Data Table",
+            "items": [
+              "app-development/widgets/datalive/data-table",
+              "app-development/widgets/datalive/datatable/data-table-basic-usage",
+              "app-development/widgets/datalive/datatable/data-source",
+              "app-development/widgets/datalive/datatable/layouts",
+              "app-development/widgets/datalive/datatable/styles",
+              "app-development/widgets/datalive/datatable/table-configuration",
+              "app-development/widgets/datalive/datatable/field-configuration",
+              "app-development/widgets/datalive/field-validator",
+              "app-development/widgets/datalive/datatable/summary-row",
+              "app-development/widgets/datalive/datatable/row-expansion-data-table",
+              "app-development/widgets/datalive/datatable/actions",
+              "app-development/widgets/datalive/datatable/datatable-events-methods",
+              {
+                "type": "category",
+                "label": "How-tos",
+                "items": [
+                  "app-development/widgets/datalive/datatable/data-table-use-cases",
+                  "how-tos/data-table-actions",
+                  "how-tos/how-to-configure-row-expansion-in-a-data-table",
+                  "how-tos/data-table-widget-representations",
+                  "how-tos/view-master-detail-data-records-using-data-table",
+                  "how-tos/adding-parent-child-using-form-datatable",
+                  "how-tos/add-master-detail-records-using-data-table",
+                  "how-tos/export-data-data-table",
+                  "how-tos/export-data-data-table-2",
+                  "how-tos/setting-blob-filename",
+                  "how-tos/dynamic-data-tables",
+                  "how-tos/customize-dynamic-datatable",
+                  "how-tos/data-table-column-bound-query",
+                  "how-tos/combining-columns-data-table",
+                  "how-tos/data-table-styling",
+                  "how-tos/data-table-format-options",
+                  "how-tos/concurrency-record-locking-wavemaker",
+                  "how-tos/edit-datatable-bound-to-queryapi"       
+                ]
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "Form",
+            "items": [
+              "app-development/widgets/datalive/form",
+              "app-development/widgets/datalive/form/form-usage-scenarios",
+              "app-development/widgets/datalive/form/form-data-source",
+              "app-development/widgets/datalive/form/form-layouts",
+              "app-development/widgets/datalive/form/form-configurations",
+              "app-development/widgets/datalive/form/form-fields-configuration",
+              "app-development/widgets/datalive/field-validator",
+              "app-development/widgets/datalive/form/form-events-methods",
+              {
+                "type": "category",
+                "label": "How-tos",
+                "items": [
+                  "how-tos/how-tos-form",
+                  "how-tos/form-with-wizard",
+                  "how-tos/get-validation-messages-form",
+                  "how-tos/form-conditional-flows",
+                  "how-tos/adding-master-detail-records-transaction",
+                  "how-tos/adding-parent-child-records-single-transaction"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "List",
+            "items": [
+              "app-development/widgets/datalive/list",
+              "how-tos/list-basic-usage",
+              "app-development/widgets/datalive/list/list-data-source",
+              "app-development/widgets/datalive/list/list-templates",
+              "app-development/widgets/datalive/list/configuration",
+              "app-development/widgets/datalive/list/behavior-settings",
+              "app-development/widgets/datalive/list/list-properties-events-methods",
+              {
+                "type": "category",
+                "label": "How-tos",
+                "items": [
+                      "app-development/widgets/datalive/list/list-use-cases",
+                      "how-tos/list-grouped",
+                      "how-tos/list-multi-grouped",
+                      "how-tos/setting-partial-page-content-panel-within-list-using-javascript",
+                      "how-tos/onrender-event-list-widget",
+                      "how-tos/list-data-table",
+                      "how-tos/building-editable-list",
+                      "how-tos/building-cascading-lists",
+                      "how-tos/list-item-access",
+                      "how-tos/localization-data-table-column-headings"
+                    ]
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "Cards",
+            "items": [
+              "app-development/widgets/datalive/cards",
+              "app-development/widgets/datalive/cards/card-basic-usage",
+              "app-development/widgets/datalive/cards/cards-data-source",
+              "app-development/widgets/datalive/cards/cards-templates",
+              "app-development/widgets/datalive/cards/card-configuration",
+              "app-development/widgets/datalive/cards/card-behavior-settings",
+              "app-development/widgets/datalive/cards/cards-properties-events-methods",
+              {
+                "type": "category",
+                "label": "How-tos",
+                "items": [
+                  "app-development/widgets/datalive/cards/card-use-cases",
+                  "how-tos/capturing-card-items"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "Live Form",
+            "items": [
+              "app-development/widgets/datalive/live-form",
+              "app-development/widgets/datalive/live-form/live-form-basic-usage",
+              "app-development/widgets/datalive/live-form/live-form-data-source",
+              "app-development/widgets/datalive/live-form/liveform-layouts",
+              "app-development/widgets/datalive/live-form/liveform-configurations",
+              "app-development/widgets/datalive/live-form/fields-configuration",
+              "app-development/widgets/datalive/live-form/liveform-actions",
+              "app-development/widgets/datalive/live-form/events-methods",
+              {
+                "type": "category",
+                "label": "How-tos",
+                "items": [
+                  "app-development/widgets/datalive/live-form/liveform-use-cases",
+                  "how-tos/live-form-tabbed-form",
+                  "how-tos/how-tos-live-form",
+                  "how-tos/using-live-form",
+                  "how-tos/live-form-linking-another-widget",
+                  "how-tos/live-form-related-fields",
+                  "how-tos/using-cascading-select-autocomplete-live-form-fields",
+                  "how-tos/using-cascading-select-within-live-form",
+                  "how-tos/using-cascading-filter-populate-live-form",
+                  "how-tos/using-wizard-master-detail-live-form"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "Live Filter",
+      
+            "items": [
+              "app-development/widgets/datalive/live-filter",
+              "app-development/widgets/datalive/livefilter/live-filter-basic-usage",
+              "app-development/widgets/datalive/livefilter/live-filter-data-source",
+              "app-development/widgets/datalive/livefilter/livefilter-layouts",
+              "app-development/widgets/datalive/livefilter/filter-configurations",
+              "app-development/widgets/datalive/livefilter/livefilter-field-configuration",
+              "app-development/widgets/datalive/livefilter/livefilter-actions",
+              "app-development/widgets/datalive/livefilter/livefilter-events-methods",
+              "app-development/widgets/datalive/livefilter/livefilter-use-cases",
+              {
+                "type": "category",
+                "label": "How-tos",
+                "items": [
+                  "how-tos/live-filter-applying",
+                  "how-tos/live-filter-multiple-values",
+                  "how-tos/live-filter-range-filter"
+                ]
+              }
+            ]
+          }
+       ]
     },
     {
       "type": "category",
-      "label": "Data Table",
-
+      "label": "Container",
       "items": [
-        "app-development/widgets/datalive/data-table",
-        "app-development/widgets/datalive/datatable/data-table-basic-usage",
-        "app-development/widgets/datalive/datatable/data-source",
-        "app-development/widgets/datalive/datatable/layouts",
-        "app-development/widgets/datalive/datatable/styles",
-        "app-development/widgets/datalive/datatable/table-configuration",
-        "app-development/widgets/datalive/datatable/field-configuration",
-        "app-development/widgets/datalive/field-validator",
-        "app-development/widgets/datalive/datatable/summary-row",
-        "app-development/widgets/datalive/datatable/row-expansion-data-table",
-        "app-development/widgets/datalive/datatable/actions",
-        "app-development/widgets/datalive/datatable/datatable-events-methods",
-        "app-development/widgets/datalive/datatable/data-table-use-cases"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "List",
+        "app-development/widgets/container/layout",
+        "app-development/widgets/container/flex-layout",
+        "app-development/widgets/container/grid-layout",
+        {
+          "type": "category",
+          "label": "Accordion",
+          "items": [
+            "app-development/widgets/container/accordion",
+            "how-tos/setting-partial-page-content-accordion-within-list",
+            "how-tos/dynamic-tabs-accordions"
+          ]
+        },
+        "app-development/widgets/container/container",
+        "app-development/widgets/container/panel",
+        "app-development/widgets/container/tabs",
+        "app-development/widgets/container/tile",
 
-      "items": [
-        "app-development/widgets/datalive/list",
-        "how-tos/list-basic-usage",
-        "app-development/widgets/datalive/list/list-data-source",
-        "app-development/widgets/datalive/list/list-templates",
-        "app-development/widgets/datalive/list/configuration",
-        "app-development/widgets/datalive/list/behavior-settings",
-        "app-development/widgets/datalive/list/list-properties-events-methods",
-        "app-development/widgets/datalive/list/list-use-cases"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Form",
-
-      "items": [
-        "app-development/widgets/datalive/form",
-        "app-development/widgets/datalive/form/form-usage-scenarios",
-        "app-development/widgets/datalive/form/form-data-source",
-        "app-development/widgets/datalive/form/form-layouts",
-        "app-development/widgets/datalive/form/form-configurations",
-        "app-development/widgets/datalive/form/form-fields-configuration",
-        "app-development/widgets/datalive/field-validator",
-        "app-development/widgets/datalive/form/form-events-methods"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Live Form",
-
-      "items": [
-        "app-development/widgets/datalive/live-form",
-        "app-development/widgets/datalive/live-form/live-form-basic-usage",
-        "app-development/widgets/datalive/live-form/live-form-data-source",
-        "app-development/widgets/datalive/live-form/liveform-layouts",
-        "app-development/widgets/datalive/live-form/liveform-configurations",
-        "app-development/widgets/datalive/live-form/fields-configuration",
-        "app-development/widgets/datalive/live-form/liveform-actions",
-        "app-development/widgets/datalive/live-form/events-methods",
-        "app-development/widgets/datalive/live-form/liveform-use-cases"
+        {
+          "type": "category",
+          "label": "Wizard",
+          "items": [
+            "app-development/widgets/container/wizard",
+            "how-tos/how-tos-wizard"
+          ]
+        }       
       ]
     },
     {
       "type": "category",
       "label": "Form Widgets",
-
       "items": [
         "app-development/widgets/form-widgets/button",
         "app-development/widgets/form-widgets/button-group",
         "app-development/widgets/form-widgets/text",
+        "how-tos/copy-to-clipboard",
         "app-development/widgets/form-widgets/number",
         "app-development/widgets/form-widgets/textarea",
-        "app-development/widgets/form-widgets/select",
+        {
+          "type": "category",
+          "label": "Select",
+          "items": [
+            "app-development/widgets/form-widgets/select",
+            "how-tos/configuring-select-widget-static-list-values",
+            "how-tos/configuring-select-widget-static-variable",
+            "how-tos/configuring-select-widget-variable",
+            "how-tos/configuring-select-widget-display-data-fields",
+            "how-tos/configuring-select-widget-database-fields",
+            "how-tos/configuring-cascading-select",
+            "how-tos/selection-widgets-use-case"
+          ]
+        },
         "app-development/widgets/form-widgets/chips",
         "app-development/widgets/form-widgets/currency",
-        "app-development/widgets/form-widgets/radioset",
+        {
+          "type": "category",
+          "label": "Radioset",
+          "items": [
+            "app-development/widgets/form-widgets/radioset",
+            "how-tos/radioset-filter-list"
+          ]
+        },
         "app-development/widgets/form-widgets/checkbox",
-        "app-development/widgets/form-widgets/checkboxset",
+        {
+          "type": "category",
+          "label": "CheckboxSet",
+          "items": [
+            "app-development/widgets/form-widgets/checkboxset",
+            "how-tos/checkboxset-filter-list-data"
+          ]
+        },
         "app-development/widgets/form-widgets/toggle",
         "app-development/widgets/form-widgets/switch",
         "app-development/widgets/form-widgets/date-time-datetime",
-        "app-development/widgets/form-widgets/calendar",
-        "app-development/widgets/form-widgets/file-upload",
+        {
+          "type": "category",
+          "label": "Calendar",
+          "items": [
+            "app-development/widgets/form-widgets/calendar",
+            "how-tos/how-tos-calendar",
+            "how-tos/calendar-usage-create-event",
+            "how-tos/calender-usage-google-calendar-integration"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "FileUpload",
+          "items": [
+            "app-development/widgets/form-widgets/file-upload",
+            "app-development/widgets/form-widgets/file-upload-basic-usage",
+            "how-tos/file-upload-widget-operations",
+            "how-tos/upload-file-save-database",
+            "how-tos/file-upload-blob-data",
+            "how-tos/file-upload-custom-directory",
+            "how-tos/accessing-file-upload-java-code",
+            "how-tos/upload-files-from-live-form-form"
+          ]
+        },
         "app-development/widgets/form-widgets/color-picker",
         "app-development/widgets/form-widgets/slider",
-        "app-development/widgets/form-widgets/rating-widget",
+        {
+          "type": "category",
+          "label": "Rating",
+          "items": [
+            "app-development/widgets/form-widgets/rating-widget",
+            "how-tos/rating-widget-using-static-data",
+            "how-tos/rating-widget-using-static-variable",
+            "how-tos/building-rating-widget-using-variable",
+            "how-tos/rating-widget-interactive"
+          ]
+        },
         "app-development/widgets/form-widgets/select-locale"
       ]
     },
     {
       "type": "category",
-      "label": "Live Filter",
-
-      "items": [
-        "app-development/widgets/datalive/live-filter",
-        "app-development/widgets/datalive/livefilter/live-filter-basic-usage",
-        "app-development/widgets/datalive/livefilter/live-filter-data-source",
-        "app-development/widgets/datalive/livefilter/livefilter-layouts",
-        "app-development/widgets/datalive/livefilter/filter-configurations",
-        "app-development/widgets/datalive/livefilter/livefilter-field-configuration",
-        "app-development/widgets/datalive/livefilter/livefilter-actions",
-        "app-development/widgets/datalive/livefilter/livefilter-events-methods",
-        "app-development/widgets/datalive/livefilter/livefilter-use-cases"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Container",
-
-      "items": [
-        "app-development/widgets/container/layout",
-        "app-development/widgets/container/flex-layout",
-        "app-development/widgets/container/grid-layout",
-        "app-development/widgets/container/accordion",
-        "app-development/widgets/container/container",
-        "app-development/widgets/container/panel",
-        "app-development/widgets/container/tabs",
-        "app-development/widgets/container/tile",
-        "app-development/widgets/container/wizard"
-      ]
-    },
-    {
-      "type": "category",
       "label": "Basic Widgets",
-
       "items": [
         "app-development/widgets/basic/label",
         "app-development/widgets/basic/anchor",
         "app-development/widgets/basic/icon",
         "app-development/widgets/basic/picture",
-        "app-development/widgets/basic/tree",
+        {
+          "type": "category",
+          "label": "Tree",
+          "items": [
+            "app-development/widgets/basic/tree",
+            "how-tos/tree-use-case-static-variable",
+            "how-tos/tree-use-case-java-service",
+            "how-tos/tree-use-case-dynamic-tree"
+          ]
+        },
         "app-development/widgets/basic/video",
         "app-development/widgets/basic/audio",
         "app-development/widgets/basic/html",
@@ -1320,9 +1236,23 @@
         "app-development/widgets/basic/spinner",
         "app-development/widgets/basic/search",
         "app-development/widgets/basic/search-basic-usage",
-        "app-development/widgets/basic/richtext-editor",
+        {
+          "type": "category",
+          "label": "Richtext Editor",
+          "items": [
+            "app-development/widgets/basic/richtext-editor",
+            "how-tos/adding-custom-fonts-richtext-editor"
+          ]
+        },
         "app-development/widgets/basic/progress-bar",
-        "app-development/widgets/progress-circle"
+        {
+          "type": "category",
+          "label": "Progress Circle",
+          "items": [
+            "app-development/widgets/progress-circle",
+            "how-tos/using-progress-circle-widget"
+          ]
+        }
       ]
     },
     {
@@ -1331,7 +1261,17 @@
 
       "items": [
         "app-development/widgets/chart/chart-widget",
-        "app-development/widgets/chart/onbeforerender"
+        "app-development/widgets/chart/onbeforerender",
+        {
+          "type": "category",
+          "label": "How-tos",
+          "items": [
+            "how-tos/working-with-charts",
+            "how-tos/charts-displaying-user-selection-another-widget",
+            "how-tos/charts-handling-dynamic-data",
+            "how-tos/charts-custom-data"
+          ]
+        }
       ]
     },
     {
@@ -1392,8 +1332,7 @@
     },
     {
       "type": "category",
-      "label": "Dialog Widgets",
-
+      "label": "Modal Windows & Dialog",
       "items": [
         "app-development/widgets/modal-windows-dialogs",
         "app-development/widgets/design-dialog",
@@ -1447,6 +1386,22 @@
             "app-development/widgets/prefab/oauth-prefabs/google",
             "app-development/widgets/prefab/oauth-prefabs/instagram",
             "app-development/widgets/prefab/oauth-prefabs/linkedin"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "How-tos",
+          "items": [
+            "how-tos/create-simple-prefab",
+            "how-tos/create-prefab-with-partials",
+            "how-tos/create-prefab-using-third-party-ui-widgets",
+            "how-tos/create-simple-prefab",
+            "how-tos/create-prefab-using-d3-nvd3-charts",
+            "how-tos/create-prefab-using-d3-library-datamaps",
+            "how-tos/create-prefab-using-jquery-plugin",
+            "how-tos/create-prefab-using-angular-module",
+            "how-tos/create-prefab-using-custom-element",
+            "how-tos/integrating-azure-oauth-prefab"
           ]
         }
       ]
