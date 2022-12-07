@@ -5,6 +5,14 @@ sidebar_label: "Install MockingBird Platform"
 ---
 ---
 
+## Setting up cluster access at JumpBox
+
+- Once K8s is ready verify K8s using following command
+
+```bash
+kubectl config view
+```
+
 ## Download deliverables
 
 - Downnload helm package shared by WaveMaker support team.
@@ -21,17 +29,13 @@ helm command //TODO
 sha1sum command //TODO
 ```
 
-## K8s cluster verification Setup for installation
-
-- Once K8s is ready verify K8s using following command
-
-```bash
-//TODO few commands to if JumpBox has k8s cluster access
-//TODO few commands to verify PVC's status
-```
 ### Namespace creation
 
 - Create a new namespace named(mockingbird) to deploy MockingBird APIs- 'mockingbird'
+
+```bash
+kubectl create ns mockingbird
+```
 
 ### Login to docker
 
@@ -44,9 +48,9 @@ sha1sum command //TODO
 ### Create K8s secrets
 
 - Create image pull secrets
-  ```bash Command
-  //TODO
-  ```
+```bash Command
+kubectl create secret generic mb-image-pull-secret --from-file=.dockerconfigjson=[Directory-Path-to-CONFIG-JSON]/config.json --type=kubernetes.io/dockerconfigjson -n mockingbird
+```
 
 - Create SSL cert secret
   ```bash

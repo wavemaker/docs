@@ -15,24 +15,34 @@ This document uses words like **VM**, **Nodes**, **Instance** to refer a machin
 
 - K8s Cluster - v1.24.0 and above
 - MokingBird Helm Chart: v0.7.0 and above GCR/GCP Artifact repo key shipped by support team
-- Domain name for MockingBird platform(mockingbird.<domainname>.com)
+- Domain name for MockingBird platform(mockingbird.[mycompany].com)
 - SSL Certificate for above MockingBird domain
 
 ### MockingBird Platform setup instance configuration(JumpBox)
 
-<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 2GB</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>1-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;50 GB to be allocated</li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 18.04.5/20.04.2.0 LTS;  RHEL 7.x/8.x</li><li>Kernel 4.4 or latter</li><li>Architecture x86</li></ul></td></tr>
-<tr><td><strong>Software</strong></td><td><ul><li>Kubctl v1.24.0 or higher</li><li>Heml v3.8.0 or higher</li></ul></li></td></tr></tbody></table>
+- Any instance with folowing packages installed can be used as JumpBox.
+- JumpBox will have access to Kubernetes Cluster and all the kubectl and helm commands must get run from the same machine.
+- Make sure JumpBox in a secure zone.
 
-### MockingBird K8s Cluster Master & Worker nodes configuration
+<table>
+<tbody>
+	<tr><td>
+	<strong>Software</strong>
+	</td><td>
+	<ul><li>Kubctl v1.24.0 or higher</li>
+	<li>Heml v3.8.0 or higher</li></ul>
+	</li>
+	</td></tr>
+</tbody>
+</table>
 
-<table><tbody><tr><td><strong>Memory</strong></td><td><ul><li>Minimum 8GB RAM</li></ul></td></tr><tr><td><strong>CPU</strong></td><td><ul><li>2-cores, single CPU system</li></ul></td></tr><tr><td><strong>Hard Disk</strong></td><td><ul><li>Minimum&nbsp;200 GB to be allocated</li></ul></li></td></tr><tr><td><strong>Host OS</strong></td><td><ul><li>Ubuntu 18.04.5/20.04.2.0 LTS</li><li>Kernel 4.4 or 4.15</li><li>Architecture x86</li></ul></td></tr>
-</ul></td></tr></tbody></table>
+### Persistent Volume creation
 
-### Network Communication
-
-- Below diagram explain the network communication between the WaveMaker Platform Instance and MockingBird k8s Platform integration.
-
-[![network-communication-between-instances](/learn/assets/wme-setup/network-communication-between-mbe-wme.jpg)](/learn/assets/wme-setup/network-communication-between-mbe-wme.jpg)
+- Make sure following PVC's are ready before you start the setup
+	-- pv-claim-k8s-mbe-redis-data
+	-- pv-claim-k8s-mbe-swagger-json-data
+	-- pv-claim-k8s-mbe-tomcat-logs-data
+- If you are new to Kubernetes and not ready with above PVC's, refer this document [Volume Creation](/learn/on-premise/extensions/mb-Persistentvolumes.md).
 
 ### Capacity Planning
 
@@ -45,15 +55,13 @@ WaveMaker team will share the following packages along with access keys. You sho
 - Helm Package zip
 - Checksum(sha1sum) file for above package.
 
-## IP Addressing and DNS Mapping
+## IP Address and DNS Mapping
 
-You will be needing IP Addresses for the following.
+You will be needing IP Address for the following.
 
 ### IP Address
 
 - One static IP for accessing the MockingBird platform machine from WaveMaker Platform network.
-- For all cloud managed K8s Cluster Static IP will be generated provided, access to K8s API's and after success helm setup generated Static IP can be picked up from console.
-- The above static IP should be accessible on WME network, or
 
 ### DNS Mapping
 
@@ -67,3 +75,8 @@ Map a domain to the above IP for easy access.
 In the preceding table, `[mycompany]` is used as an example. You may have to replace `[mycompany]` with your appropriate domain name.
 :::
 
+### Network Communication
+
+- Below diagram explain's the network communication between the WaveMaker Platform Instance and MockingBird k8s Platform integration. Make sure MockingBird Platform domain is only accessible to WME Platform
+
+[![network-communication-between-instances](/learn/assets/wme-setup/network-communication-between-mbe-wme.jpg)](/learn/assets/wme-setup/network-communication-between-mbe-wme.jpg)

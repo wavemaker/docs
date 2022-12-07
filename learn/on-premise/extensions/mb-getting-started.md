@@ -36,7 +36,7 @@ Start installing, using the HELM package [Install Helm](/learn/on-premise/extens
 
 ### Step-4: Integrating with WME platform
 
-Once MockingBird setup is successfully installed follow these steps to integrate to WME Platform
+Once MockingBird setup is successfully installed, follow these steps to integrate to WME Platform
 
 Integrate above installed MockingBird platform with WME [Integrate](/learn/on-premise/extensions/mb-integrate.md).
 
