@@ -602,7 +602,7 @@
   
   "Enterprise MockingBird Setup":
   [
-    "on-premise/extensions/mb-getting-started"
+    "on-premise/extensions/mb-getting-started",
     {
       "type": "subcategory",
       "label": "Intall MockingBird",
@@ -617,7 +617,7 @@
         "on-premise/extensions/mb-upgrade"
       ]
     }
-      ]
+   ]
 },
 
 "Mobile":
