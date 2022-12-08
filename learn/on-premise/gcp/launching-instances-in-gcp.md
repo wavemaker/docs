@@ -20,13 +20,25 @@ Applies for Workspace Instance/App Deployment Instance
   - [wme-sg-platform-internal](#create-a-firewall-rule-for-platform-instance)
   - [wme-sg-workspace-internal](#create-firewall-rule-for-studio-workspace-instanceapp-deployment-instance)
 
+
+### Firewall Rules 
+
+- Please follow the firewall rules below and for more information please refer to [prerequisites](/learn/on-premise/prerequisites) section.
+
+
+| Firewall Rule      | Description | Ports |
+| ----------- | ----------- | ----------- | 
+| wme-sg-platform-public | Opens the ports in platform instance for public access | 80, 443, 8080, 22(for ssh) to developer network range | 
+| wme-sg-platform-internal | Opens the ports for accessing the platfrom instance from the external or workspace/Appdeployement instance | 5000, 8500, 22, 8081, 2200, 8100, 9200, 8000-8020 |   
+| wme-sg-workspace-internal | Opens the ports on external or workspace/Appdeployement instance to access from the platform instance | 22, 2375, 80, 5000, 8100, 9101, 9102, 9100, 9404,2200-2299, 8001-8099, 3300-3399, 9500-9599 | 
+
 ### Create firewall rules for developer network access to the Platform Instance
 
 - Provide basic details name and network details for firewall.
 
 [![network details](/learn/assets/wme-setup/wme-setup-in-gcp/platform-public-firewall-name-and-network.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-public-firewall-name-and-network.png)
 
-- Select target type and source filter type.by using the target we can connect the firewall rule to Instance. example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the ports will be open to that Instance. we provide this tags at network section during the Instance creation.or else you can select your own Target and Source methods.
+- Select target type and source filter type. By using the target we can connect the firewall rule to Instance. Example, which the Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. The Instance which have a source tag the ports will be open to that Instance. We provide this tags at network section during the Instance creation or else you can select your own Target and Source methods.
 
 [![ports details](/learn/assets/wme-setup/wme-setup-in-gcp/platform-public-firewall-targets-and-ports.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-public-firewall-targets-and-ports.png)
 
@@ -38,7 +50,7 @@ Applies for access from the StudioWorkspace Instance / AppDeployment Instance
 
 [![network details](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-name-and-network.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-name-and-network.png)
 
-- Select target type and source filter type.by using the target we can connect the firewall rule to Instance.  example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the ports will be open to that Instance. we provide this tags at network section during the Instance creation.or else you can select your own Target and Source methods.
+- Select target type and source filter type.by using the target we can connect the firewall rule to Instance.  Example,  which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. The Instance which have a source tag, the ports will be open to that Instance. We provide this tags at network section during the Instance creation or else you can select your own Target and Source methods.
 
 [![ports details](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-target-and-ports.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-internal-firewall-target-and-ports.png)
 
@@ -50,41 +62,41 @@ Applies for access from the Platform Instance
 
 [![network details](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-firewall-name-and-network.png)](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-firewall-name-and-network.png)
 
-- Select target type and source filter type. by using the target we can connect the firewall rule to Instance. example the which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. example the which Instance have a source tag the ports will be open to that Instance.we provide this tags at network section during the Instance creation.or else you can select your own Target and Source methods.
+- Select target type and source filter type.by using the target we can connect the firewall rule to Instance.  Example,  which Instance have target tag the firewall is connect to that Instance and by using the source we can open ports to specific Instance. The Instance which have a source tag, the ports will be open to that Instance. We provide this tags at network section during the Instance creation or else you can select your own Target and Source methods.
 
 [![port details](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-firewall-target-and-ports.png)](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-firewall-target-and-ports.png)
 
 ## Creating a Platform Instance
 
-- Select region,zone and provide name for Instance.select machine type with minimum 16 GB memory.
+- Select region,zone and provide name for Instance. Select machine type with minimum 32 GB memory.
 
 [![instance region](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-region-and-zone.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-region-and-zone.png)
 
-- Select image or snapshot for creating boot disk.select operating system as ubuntu and version as ubuntu 16.04 LTS.
+- Select image or snapshot for creating boot disk. Select operating system as ubuntu and version as 20.04 LTS with size of 100 GB.
 
-[![boot disk](/learn/assets/wme-setup/wme-setup-in-gcp/instance-boot-disk.png)](/learn/assets/wme-setup/wme-setup-in-gcp/instance-boot-disk.png)
+[![boot disk](/learn/assets/wme-setup/wme-setup-in-gcp/platfrom-instance-boot-disk.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platfrom-instance-boot-disk.png)
 
 - Provide ssh key details in security for accessing the Instance.
 
 [![ssh details](/learn/assets/wme-setup/wme-setup-in-gcp/instance-ssh-security.png)](/learn/assets/wme-setup/wme-setup-in-gcp/instance-ssh-security.png)
 
-- At disk section create disks for wm-data and wm-runtime with 150 and 50 GiB.
+- At disk section create disks for wm-data and wm-runtime with 150 and 100 GiB.
 
 [![disk](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-disk.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-disk.png)
 
 - At network section provide respected network tags of your firewall if you using source and target tags at firewall rules and create Instance.
 
-[![network](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-networking.jpg)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-networking.jpg)
+[![network](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-networking.png)](/learn/assets/wme-setup/wme-setup-in-gcp/platform-instance-networking.png)
 
 ## Creating a StudioWorkspace Instance / AppDeployment Instance
 
 Applies for Studio Instance/App Deployment Instance
 
-- Select region,zone and provide name for Instance.select machine type.
+- Select region, zone and provide name for Instance. Select machine type.
 
 [![region](/learn/assets/wme-setup/wme-setup-in-gcp/external-region-and-zone.png)](/learn/assets/wme-setup/wme-setup-in-gcp/external-region-and-zone.png)
 
-- Select image or snapshot for creating boot disk.select operating system as ubuntu and version as ubuntu 16.04 LTS.
+- Select image or snapshot for creating boot disk. Select operating system as ubuntu and version as ubuntu 20.04 LTS with size of 50 GB.
 
 [![boot disk](/learn/assets/wme-setup/wme-setup-in-gcp/instance-boot-disk.png)](/learn/assets/wme-setup/wme-setup-in-gcp/instance-boot-disk.png)
 
@@ -92,7 +104,7 @@ Applies for Studio Instance/App Deployment Instance
 
 [![ssh](/learn/assets/wme-setup/wme-setup-in-gcp/instance-ssh-security.png)](/learn/assets/wme-setup/wme-setup-in-gcp/instance-ssh-security.png)
 
-- At disk section create disk for StudioWorkspace Instance / AppDeployment Instance usage with minimum of 100 GiB.
+- At disk section create disk for StudioWorkspace Instance / AppDeployment Instance usage with minimum of 150 GiB.
 
 [![disk](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-disk.png)](/learn/assets/wme-setup/wme-setup-in-gcp/external-instance-disk.png)
 
