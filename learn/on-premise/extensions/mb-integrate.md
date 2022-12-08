@@ -9,8 +9,9 @@ sidebar_label: "Integrate MockingBird Platform with WME"
 
 Integrate Mockingbird with WME Platform
 
-- Make sure WME setup IP/IP's are whitelisted at MockingBird by running given command. Replace [WHITELIST-IP-RANGE]proper IP/IP's
+- Make sure MockingBird domain is accessible with in developers and WME networks by running given command. Replace [WHITELIST-IP-RANGE] property with concern network CIDR ranges
+- Example ["1.2.3.4/32", "1.2.3.5/24"]
 
 ```bash
-helm upgrade mockingbird [HELM-PACKAGE] -n mockingbird --set "apimock-orchestration.ingress.annotations.nginx.ingress.kubernetes.io/whitelist-source-range=[WHITELIST-IP-RANGE]" --reuse-values
+apimock-ingress-nginx.controller.service.loadBalancerSourceRanges: [WHITELIST-IP-RANGE] --reuse-values
 ```  
