@@ -717,12 +717,22 @@
       "type": "category",
       "label": "App solution",
       "items": [
-        "how-tos/creating-registration-page",
-        "how-tos/support-password-encryption",
         "how-tos/error-handling-wavemaker-app",
         "how-tos/prevent-user-leaving-page-unsaved-changes",
         "how-tos/microfrontends-iframe",
-        "how-tos/building-pwa-app"
+        "how-tos/building-pwa-app",
+        {
+          "type": "category",
+          "label": "Localization",
+          "items": [
+            "how-tos/localization-wavemaker-apps",
+            "how-tos/implementing-localization-dropdown-menu",
+            "how-tos/setting-language-date-format",
+            "app-development/widgets/form-widgets/select-locale-usage",
+            "how-tos/localization-error-messages",
+            "how-tos/localization-data-table-column-headings"
+          ]
+        }
       ]
     },
     {
@@ -762,85 +772,91 @@
     },
     {
       "type": "category",
-      "label": "Localization",
+      "label": "JavaScript",
       "items": [
-        "how-tos/localization-wavemaker-apps",
-        "how-tos/implementing-localization-dropdown-menu",
-        "how-tos/setting-language-date-format",
-        "app-development/widgets/form-widgets/select-locale-usage",
-        "how-tos/localization-error-messages",
-        "how-tos/localization-data-table-column-headings"
+        "how-tos/using-javascript-binding",
+        "how-tos/using-javascript-external-url",
+        "how-tos/using-javascript-loop-command",
+        "how-tos/using-function-evaluating-conditions"
       ]
     },
     {
       "type": "category",
-      "label": "Security",
+      "label": "Services",
       "items": [
-        "how-tos/saml-integration-onelogin",
-        "how-tos/saml-integration-adfs",
-        "how-tos/sso-openid-azure-active-directory",
-        "how-tos/custom-security-using-google-oauth-prefab",
-        "how-tos/multiple-security-provider-implementation",
-        "how-tos/customizing-post-authentication-handlers",
-        "how-tos/configuring-content-security-policy",
-        "how-tos/configure-mtls-in-wmapp"
+            {
+              "type": "category",
+              "label": "Databases",
+              "items": [
+                "how-tos/queries-dynamic-clause",
+                "how-tos/connect-azure-sql-server",
+                "app-development/services/database-services/download-jdbc-driver-jar",
+                "how-tos/fetch-default-number100-records-database",
+                "how-tos/one-many-relationship",
+                "how-tos/working-with-temporals",
+                "how-tos/configuring-aws-redshiftdb",
+                "how-tos/configuring-sap-hana-clouddb",
+                "how-tos/audit-history-using-crud-listeners",
+                "how-tos/rowlevel-security-using-crud-event-listeners",
+                "how-tos/validations-using-crudListeners",
+                "how-tos/custom-business-logic-using-crud-event-listeners",
+                "how-tos/mysql-connection-using-ssl"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Web services",
+              "items": [
+                "how-tos/using-app-environment-properties",
+                "how-tos/consuming-existing-wm-api-into-another-wm-project",
+                "how-tos/using-post-method-send-data-rest-api",
+                "how-tos/request-response-processing-rest-services",
+                "how-tos/intercept-requests-responses-api-calls-one-place",
+                "how-tos/websocket-usage-chatroom-app",
+                "how-tos/working-api-with-different-pagination-formats"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Java services",
+              "items": [
+                "how-tos/sending-email-using-java-service",
+                "how-tos/implementing-forgot-password-feature-using-java-service",
+                "how-tos/accessing-rest-apis-java-service",
+                "how-tos/scheduling-java-service",
+                "how-tos/synchronizing-java-services-controller",
+                "how-tos/integrating-amazon-cognito-user-authentication",
+                "how-tos/integrating-sample-jasper-report-wavemaker-application",
+                "how-tos/generate-pdf-file-using-jasper-reports",
+                "how-tos/integrating-junit-tests-for-wavemaker-application",
+                "how-tos/pre-post-processing-db-service-apis",
+                "how-tos/accessing-loggedin-user-information-using-a-java-service",
+                "how-tos/camunda-wavemaker-app-integration",
+                "how-tos/azure-file-storage-connector",
+                "how-tos/insert-data-from-excel",
+                "how-tos/aws-s3-connector",
+                "how-tos/twilio-connector",
+                "how-tos/twilio-otp-integration"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Security",
+              "items": [
+                "how-tos/creating-registration-page",
+                "how-tos/support-password-encryption",
+                "how-tos/saml-integration-onelogin",
+                "how-tos/saml-integration-adfs",
+                "how-tos/sso-openid-azure-active-directory",
+                "how-tos/custom-security-using-google-oauth-prefab",
+                "how-tos/multiple-security-provider-implementation",
+                "how-tos/customizing-post-authentication-handlers",
+                "how-tos/configuring-content-security-policy",
+                "how-tos/configure-mtls-in-wmapp"
+              ]
+            }
       ]
-    },
-    {
-      "type": "category",
-      "label": "Databases",
-      "items": [
-        "how-tos/queries-dynamic-clause",
-        "how-tos/connect-azure-sql-server",
-        "app-development/services/database-services/download-jdbc-driver-jar",
-        "how-tos/fetch-default-number100-records-database",
-        "how-tos/one-many-relationship",
-        "how-tos/working-with-temporals",
-        "how-tos/configuring-aws-redshiftdb",
-        "how-tos/configuring-sap-hana-clouddb",
-        "how-tos/audit-history-using-crud-listeners",
-        "how-tos/rowlevel-security-using-crud-event-listeners",
-        "how-tos/validations-using-crudListeners",
-        "how-tos/custom-business-logic-using-crud-event-listeners",
-        "how-tos/mysql-connection-using-ssl"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Web services",
-      "items": [
-        "how-tos/using-app-environment-properties",
-        "how-tos/consuming-existing-wm-api-into-another-wm-project",
-        "how-tos/using-post-method-send-data-rest-api",
-        "how-tos/request-response-processing-rest-services",
-        "how-tos/intercept-requests-responses-api-calls-one-place",
-        "how-tos/websocket-usage-chatroom-app",
-        "how-tos/working-api-with-different-pagination-formats"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Java services",
-      "items": [
-        "how-tos/sending-email-using-java-service",
-        "how-tos/implementing-forgot-password-feature-using-java-service",
-        "how-tos/accessing-rest-apis-java-service",
-        "how-tos/scheduling-java-service",
-        "how-tos/synchronizing-java-services-controller",
-        "how-tos/integrating-amazon-cognito-user-authentication",
-        "how-tos/integrating-sample-jasper-report-wavemaker-application",
-        "how-tos/generate-pdf-file-using-jasper-reports",
-        "how-tos/integrating-junit-tests-for-wavemaker-application",
-        "how-tos/pre-post-processing-db-service-apis",
-        "how-tos/accessing-loggedin-user-information-using-a-java-service",
-        "how-tos/camunda-wavemaker-app-integration",
-        "how-tos/azure-file-storage-connector",
-        "how-tos/insert-data-from-excel",
-        "how-tos/aws-s3-connector",
-        "how-tos/twilio-connector",
-        "how-tos/twilio-otp-integration"
-      ]
-    },
+    }, 
     {
       "type": "category",
       "label": "Variables",
@@ -857,35 +873,31 @@
     },
     {
       "type": "category",
-      "label": "JavaScript",
+      "label": "Manage",
       "items": [
-        "how-tos/using-javascript-binding",
-        "how-tos/using-javascript-external-url",
-        "how-tos/using-javascript-loop-command",
-        "how-tos/using-function-evaluating-conditions"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Development",
-      "items": [
-        "how-tos/synchronizing-wavemaker-apps-ides-beta",
-        "how-tos/debug-monitor-performance-issues-using-fusion-reactor"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Deployment",
-      "items": [
-        "how-tos/ssl-offloading"
-      ]
-    },
-        {
-      "type": "category",
-      "label": "Updating Project",
-      "items": [
-        "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
-        "how-tos/app-migration-wavemaker-9x-10x"
+          {
+            "type": "category",
+            "label": "Performance",
+            "items": [
+              "how-tos/debug-monitor-performance-issues-using-fusion-reactor"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "Deployment",
+            "items": [
+              "how-tos/ssl-offloading",
+              "how-tos/synchronizing-wavemaker-apps-ides-beta"
+            ]
+          },
+              {
+            "type": "category",
+            "label": "Project Update",
+            "items": [
+              "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
+              "how-tos/app-migration-wavemaker-9x-10x"
+            ]
+          }
       ]
     },
     {
