@@ -2,7 +2,8 @@
     /* --ifm-color-primary: #1794ef; */
     --ifm-font-family-base: 'IBM Plex Sans', sans-serif;
     --ifm-font-color-base: #3b454e;
-    --ifm-color-primary: #1794ef;
+    --ifm-heading-color: #000000;
+    --ifm-color-primary: #1889df;
     --wm-bg-text-color: #fff;
     --ifm-h1-font-size: 2.5rem;
     --ifm-h2-font-size: 1.5rem;
@@ -11,11 +12,23 @@
     --wm-helfull-resources-title-color: #000;
     --wm-banner-readmore-background: linear-gradient(93deg, rgba(215, 241, 255, 0.34) 1%, #f1f8fc 82%, rgba(241, 248, 252, 0.6) 82%);
     --wm-secondary-text-color: #61676c;
+    --wm-secondary-bg-color: rgb(253, 253, 254);
+    --wm-secondary-border-color: rgb(212 213 216);
+    --wm-card-bg: #fff;
+    --wm-card-bg-hover: #fff;
+    --wm-card-text: #000;
+    --wm-card-text-hover: #000;
     --ifm-footer-background-color: #4f5761;
-    --wm-aside-left-background-color: #f3f5f7;
+    --wm-aside-left-background-color: #f6f8fd;
+    --ifm-menu-color-active: #000000;
+    --ifm-menu-color-background-active: #c2e7ff;
     /* --ifm-h4-font-size: 1rem;
     --ifm-h5-font-size: 0.875rem;
     --ifm-h6-font-size: 0.85rem; */
+    --ifm-heading-font-weight: normal;
+    --ifm-button-font-weight: var(--ifm-font-weight-semibold);
+    --ifm-color-success-dark: #00875a;
+    --ifm-alert-background-color-highlight: rgba(0, 135, 90, 5%);
 }
 html[data-theme="dark"] {
     --ifm-font-color-base: #b3d4ff;
@@ -26,7 +39,13 @@ html[data-theme="dark"] {
     --wm-helfull-resources-title-color: rgba(255, 255, 255, 0.8);
     --wm-banner-readmore-background: linear-gradient(to bottom, rgba(72, 100, 137, 0.11) -56%, #12223f 1835%, #273951 1835%);
     --wm-secondary-text-color: #b1d2fd;
+    --wm-secondary-bg-color: #12223f;
+    --wm-secondary-border-color: rgb(212 213 216);
     --wm-aside-left-background-color: #273951;
+    --wm-card-bg: #12223f;
+    --wm-card-bg-hover: #26395a;
+    --wm-card-text: #b3d4ff;
+    --wm-card-text-hover: #ffffff;
     --ifm-footer-background-color: #0f1d36;
     --ifm-color-scheme: dark;
     --ifm-color-emphasis-0: var(--ifm-color-gray-1000);
@@ -72,16 +91,18 @@ body {
     /* font-family: 'Roboto', sans-serif; */
 }
 
+.button.button--secondary {
+    color: var(--wm-secondary-text-color);
+    background-color:var(--wm-secondary-bg-color);
+    border-color: var(--wm-secondary-border-color);
+}
+.button.button--secondary:hover{
+    color: var(--ifm-color-primary);
+}
+
 .logo-name img {
     margin-bottom: -5px;
     margin-right: 2px;
-}
-
-.menu__link{
-    font-size: 0.8rem;
-}
-.menu__link--sublist-caret:after{
-    background: var(--ifm-menu-link-sublist-icon) 50% / 1.25rem 1.25rem;
 }
 
 .spl-icon {
@@ -350,10 +371,10 @@ html[data-theme="dark"] .banner{
 
 .category {
     text-decoration: none;
-    color: #000;
+    color: var(--wm-card-text);
     display: flex;
     flex-wrap: nowrap;
-    height: 170px;
+    height: 150px;
     padding: 20px 15px;
     margin: 0;
     font-size: 16px;
@@ -361,7 +382,7 @@ html[data-theme="dark"] .banner{
     letter-spacing: 0.5px;
     font-weight: bold;
     text-transform: uppercase;
-    background-color: #fff;
+    background-color: var(--wm-card-bg);
     border-radius: 8px;
     object-fit: contain;
     align-items: center;
@@ -392,7 +413,8 @@ html[data-theme="dark"] .banner{
     box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.06);
     /* transform: translate(0, -10px); */
     text-decoration: none;
-    color: #000;
+    background-color: var(--wm-card-bg-hover);
+    color: var(--wm-card-text-hover);
 }
 
 .category:hover::before,
@@ -400,6 +422,12 @@ html[data-theme="dark"] .banner{
 .category:focus::before,
 .category:focus::after {
     display: inline-block;
+    filter: brightness(0) contrast(0);
+}
+
+.category:hover *,
+.category:focus *{
+    filter: contrast(2);
 }
 
 .category .icon {
@@ -410,6 +438,8 @@ html[data-theme="dark"] .banner{
 .category .caption {
     margin: 0 11px;
     word-break: break-word;
+    font-weight: normal;
+    max-width: 120px;
 }
 
 
@@ -535,7 +565,7 @@ html[data-theme="dark"] .banner{
 
 .helpfull-resources ul {
     margin: 0;
-    padding: 1em 1em 0 3em;
+    padding: 1em 1em 0 1em;
     list-style: none;
 }
 
@@ -560,14 +590,15 @@ html[data-theme="dark"] .banner{
     display: flex;
     color: var(--wm-helfull-resources-color);
     position: relative;
-    padding-right: 15px;
+    font-size: 0.8em;
+    /* padding-right: 15px; */
 }
 
 .helpfull-resources a:after {
     display: none;
     content: "";
     position: absolute;
-    top: 6px;
+    top: 4px;
     right: 0px;
     height: 14px;
     width: 8px;
@@ -977,6 +1008,9 @@ html[data-theme="dark"] .banner{
 
 .theme-doc-sidebar-container{
     background-color: var(--wm-aside-left-background-color);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background-image: linear-gradient(171deg, rgba(244, 246, 252, 0.56) 4%, #f4f6fc 127%, rgba(241, 248, 252, 0.6) 127%);
 }
 #header-search{
 
@@ -988,7 +1022,7 @@ body:not(.search-active) #header-search .DocSearch-Modal{
 }
 
 body:not(.search-active) #header-search .DocSearch-LoadingIndicator svg, body:not(.search-active) #header-search .DocSearch-MagnifierLabel svg{
-    width: 18px !important;
+    width: 20px !important;
 }
 body:not(.search-active) #header-search .DocSearch-Modal > *{
     padding:0;
@@ -1002,9 +1036,11 @@ body:not(.search-active) #header-search .DocSearch-Modal .DocSearch-SearchBar .D
     height: 40px;
     border-radius: 20px;
     box-shadow: none;
-    border: 1px solid #dbdde1;
+    /* border: 1px solid #dbdde1; */
+    border: none;
     max-width: 160px;
-    margin-right: 0.5rem;
+    margin: 0 0.5rem;
+    /* margin-right: 0.5rem; */
 }
 
 body:not(.search-active) #header-search .DocSearch-Modal .DocSearch-SearchBar .DocSearch-Form .DocSearch-Input{
@@ -1015,12 +1051,47 @@ body:not(.search-active) #header-search .DocSearch-Modal .DocSearch-SearchBar .D
     padding: 0 var(--ifm-spacing-horizontal);
 }
 
-.navbar__items--right > :last-child{
+.navbar{
+    box-shadow: 0 1px 0 0px rgb(219 222 228 / 30%);
+}
+
+.navbar__items--right > .navbar__item:last-child{
+    /* margin-left: 0.5rem; */
+    padding-right: var(--ifm-navbar-item-padding-horizontal);
+}
+.navbar__items--right > .button{
     margin-left: 0.5rem;
 }
-.menu__list-item-collapsible .menu__link:hover,
+.menu__link{
+    font-size: 0.8rem;
+}
+.menu__link--sublist-caret:after{
+    background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
+}
+.menu__caret:before{
+    background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
+}
+.menu__link--active:not(.menu__link--sublist){
+    /* background-color: transparent; */
+    /* color: var(--ifm-color-primary); */
+}
+.menu__list-item-collapsible .menu__link{
+    /* border-top-right-radius: 0; */
+    /* border-bottom-right-radius: 0; */
+}
+.menu__list-item-collapsible .menu__link+.menu__caret{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;   
+    margin-left: -44px;
+    /* //-0.5rem; */
+}
+.menu__list-item-collapsible .menu__link--active:hover,
 .menu__list-item-collapsible .menu__link--active{
     background-color: var(--ifm-menu-color-background-active) !important;
+}
+/* .menu__list-item-collapsible .menu__link:hover+.menu__caret, */
+.menu__list-item-collapsible .menu__link--active+.menu__caret{
+    /* background-color: var(--ifm-menu-color-background-active); */
 }
 
 button[aria-label="Collapse sidebar"] svg{
@@ -1197,3 +1268,12 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
 @media only screen and (min-width: 1400px) {}
 
 @media only screen and (min-width: 1500px) {}
+
+@media (min-width: 997px){
+    @supports (scrollbar-gutter: stable){
+        .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
+            padding: 1rem !important;
+            scrollbar-gutter: stable;
+        }
+    }
+}

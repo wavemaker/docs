@@ -82,7 +82,7 @@ export default class Index extends React.Component {
                         </div>}
                     </div>
                     <div className='container categories'>
-                        <div className='row margin-vert--lg padding-horiz--lg'>
+                        <div className='row margin-vert--xl padding-horiz--lg'>
                             {this.getCategories()}
                         </div>
                     </div>

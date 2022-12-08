@@ -150,6 +150,12 @@ module.exports = {
       "apiKey": process.env.ALGOLIA_DS_API_KEY,
       "indexName": process.env.ALGOLIA_DS_INDEX_NAME
     },
+    // "algolia": {
+    //   "appId": "BH4D9OD16A",
+    //   "apiKey": "e8b42d5d2b0d945ef393598f0ca271c6",
+    //   "indexName": "wavemaker",
+    //   "contextualSearch": true
+    // },
     "footer": {}
   }
 }

@@ -24,7 +24,7 @@ function NavbarItems({ items }) {
     </>
   );
 }
-function NavbarContentLayout({ left, right }) {
+function NavbarContentLayout({ left, center, right }) {
   const items = useNavbarItems();
   const searchBarItem = items.find((item) => item.type === 'search');
   const rightItems = items.filter((item) => item.position === 'right' && ((item["className"] && !item["className"].includes('button')) || item["className"] === undefined))
@@ -32,21 +32,24 @@ function NavbarContentLayout({ left, right }) {
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
-      {/* <div className="navbar__items">{center}
-      </div> */}
-      <div className="navbar__items navbar__items--right">
-        {!searchBarItem && (document.URL.split('/').slice(-1)[0] != "" || document.URL.split('/').slice(-2)[0] != "learn") && !document.URL.split('/').slice(-1)[0].includes("search") && (
+      <div className="navbar__items navbar__items--center">{center}
+      {!searchBarItem && (document.URL.split('/').slice(-1)[0] != "" || document.URL.split('/').slice(-2)[0] != "learn") && !document.URL.split('/').slice(-1)[0].includes("search") && (
           <div id="header-search">
             <SearchBar elementId="header-search" autoFocus={false} />
           </div>
         )}
+      </div>
+      <div className="navbar__items navbar__items--right">
+        
         <NavbarItems items={rightItems} />
-      </div>
-      <div>
         <NavbarColorModeToggle className={styles.colorModeToggle} />
+        <NavbarItems items={rightEndItems} />
       </div>
       <div>
-        <NavbarItems items={rightEndItems} />
+        
+      </div>
+      <div>
+        
       </div>
     </div>
   );
