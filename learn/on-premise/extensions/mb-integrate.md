@@ -24,8 +24,20 @@ apimock-ingress-nginx.controller.service.loadBalancerSourceRanges: [WHITELIST-IP
 bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --register_mocking_bird
 ```  
 
-[Console](/learn/on-premise/extensions/mb-wme-consul-integration.md)
+![mb](/learn/assets/consul_mb_props.png)](/learn/assets/consul_mb_props.png)
 
 ### Enable Mocking feature from WME Platform Launchpad team portal
 
-- //TODO add steps
+1) Go to http://PLATFORM_DOMAIN/launchpad, select the "Teams" tab on the right nav and click on the permissions icon for the team that you want to enable APIMock server access as shown in the below screen.
+
+![mb](/learn/assets/launchpad_mb_permission.png)](/learn/assets/launchpad_mb_permission.png)
+
+2) Select the project role for which the API Mock Server feature need to be enabled.
+
+![mb](/learn/assets/launchpad_mb_enable.png)](/learn/assets/launchpad_mb_enable.png)
+
+3) Save the above changes as shown below.
+
+![mb](/learn/assets/launchpad_mb_save.png)](/learn/assets/launchpad_mb_save.png)
+
+
