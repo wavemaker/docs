@@ -1,6 +1,7 @@
 ---
 title: "Configuring Open ID authentication using SSO"
 id: "openid-auth"
+sidebar_label: "Open ID Authentication"
 ---
 In this document we will be describing about the Open ID authentication via gmail.
 
@@ -145,5 +146,5 @@ OpenID Authentication security configurations facilitate communication between t
 | Query Type | This option provides the platform where user can use either HQL or SQL queries to customise the end user roles |
 
 
- 
+
 
