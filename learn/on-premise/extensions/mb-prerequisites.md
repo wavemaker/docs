@@ -56,7 +56,7 @@ This document uses words like **VM**, **Nodes**, **Instance** to refer a machin
 </tbody>
 </table>
 
-- If you are new to Kubernetes and not ready with above PVC's, refer this document [Volume Creation](/learn/on-premise/extensions/mb-prerequisites.md).
+- If you are new to Kubernetes and not ready with above PVC's, refer this document [Volume Creation](/learn/on-premise/extensions/mb-persistentvolumes.md).
 
 ### Capacity Planning
 
