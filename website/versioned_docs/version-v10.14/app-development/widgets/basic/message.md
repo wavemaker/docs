@@ -7,7 +7,7 @@ id: "message"
 
 ## Features
 
-<iframe width="100%" height="350" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Messages">Messages</iframe>
+<iframe width="100%" height="350" style={{backgroundColor:'snow'}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Messages">Messages</iframe>
 
 ## Properties
 

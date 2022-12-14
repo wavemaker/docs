@@ -40,7 +40,7 @@ The following features are available for anchor widget:
 
 From the Style tab of Properties panel,  you can set the Anchor style. You can also use the Conditional Class property to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/). 
 
-<iframe width="100%" height="300" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Anchors">Anchor Classes</iframe>
+<iframe width="100%" height="300" style={{backgroundColor:'snow'}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Anchors">Anchor Classes</iframe>
 
 ## Properties
 

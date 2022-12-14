@@ -50,6 +50,12 @@ function Result(_ref) {
 
   var action = React.useRef(null);
   var Hit = hitComponent;
+  let breadcrumbData = Object.values(item["hierarchy"]).filter(ele => ele)
+  let breadcrumb = '<ul>'
+  for (let ind in breadcrumbData) {
+    breadcrumb += '<li>' + breadcrumbData[ind] + '</li>'
+  }
+  breadcrumb += '</ul>'
   let highlightContent = item["_highlightResult"] ? item["_highlightResult"].hierarchy["lvl1"].value : item.hierarchy["lvl1"];
   return /*#__PURE__*/React.createElement("li", _extends({
     className: ['DocSearch-Hit', item.__docsearch_parent && 'DocSearch-Hit--Child', isDeleting && 'DocSearch-Hit--deleting', isFavoriting && 'DocSearch-Hit--favoriting'].filter(Boolean).join(' '),
@@ -72,7 +78,7 @@ function Result(_ref) {
     className: "DocSearch-Hit-content-wrapper"
   }, /*#__PURE__*/React.createElement("span", {
     className: "search-value",
-    dangerouslySetInnerHTML: { __html: highlightContent },
+    dangerouslySetInnerHTML: { __html: breadcrumb },
   }), /*#__PURE__*/React.createElement("span", {
     className: "search-info",
     dangerouslySetInnerHTML: { __html: highlightContent },

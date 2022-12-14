@@ -16,15 +16,15 @@ Three types of maps can be plotted using Googlemaps Prefab:
 
 Heat map 
 
-<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/HeatMap">Example of Heat Map</iframe>
+<iframe width="100%" height="400" style={{backgroundColor:'snow'}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/HeatMap">Example of Heat Map</iframe>
 
 Location map 
 
-<iframe width="100%" height="500" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PrefabGMapMarker">Example of Marker Map</iframe>
+<iframe width="100%" height="500" style={{backgroundColor:'snow'}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PrefabGMapMarker">Example of Marker Map</iframe>
 
 Route map 
 
-<iframe width="100%" height="500" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/RouteGMaps">Example of Route Map</iframe>
+<iframe width="100%" height="500" style={{backgroundColor:'snow'}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/RouteGMaps">Example of Route Map</iframe>
 
 ## Features
 

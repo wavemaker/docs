@@ -1270,7 +1270,6 @@
     {
       "type": "category",
       "label": "Charts",
-
       "items": [
         "app-development/widgets/chart/chart-widget",
         "app-development/widgets/chart/onbeforerender",

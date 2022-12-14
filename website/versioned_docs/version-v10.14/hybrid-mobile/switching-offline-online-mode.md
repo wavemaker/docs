@@ -12,21 +12,21 @@ Mobile Apps switch between online and offline modes based on the network connec
 
 Following are the network scenarios and the state of WaveMaker apps:
 
-<table><tbody><tr><td><p style="text-align: left;">The network is available</p><p style="text-align: left;">The app connected to the&nbsp;backend server</p></td><td>The app is in&nbsp;online mode.</td></tr><tr><td style="text-align: left;">The network is not available</td><td>The app is in&nbsp;offline mode.</td></tr><tr><td><p style="text-align: left;">The network is available</p><p style="text-align: left;">The&nbsp;backend server is not available</p></td><td>The app is in&nbsp;offline mode.</td></tr><tr><td><p style="text-align: left;">Network and backend server is available</p><p style="text-align: left;">The&nbsp;app is not connected</p></td><td>The app is in&nbsp;offline mode.<div></div>(The app goes into this state&nbsp;when ‘goOffline’ operation is invoked.)</td></tr><tr><td style="text-align: left;">The app is trying to connect to backend server</td><td>This is an intermediate state and app will be online or offline based on the success of the&nbsp;operation.</td></tr></tbody></table>
+<table><tbody><tr><td><p style={{textAlign: 'left'}}>The network is available</p><p style={{textAlign: 'left'}}>The app connected to the&nbsp;backend server</p></td><td>The app is in&nbsp;online mode.</td></tr><tr><td style={{textAlign: 'left'}}>The network is not available</td><td>The app is in&nbsp;offline mode.</td></tr><tr><td><p style={{textAlign: 'left'}}>The network is available</p><p style={{textAlign: 'left'}}>The&nbsp;backend server is not available</p></td><td>The app is in&nbsp;offline mode.</td></tr><tr><td><p style={{textAlign: 'left'}}>Network and backend server is available</p><p style={{textAlign: 'left'}}>The&nbsp;app is not connected</p></td><td>The app is in&nbsp;offline mode.<div></div>(The app goes into this state&nbsp;when ‘goOffline’ operation is invoked.)</td></tr><tr><td style={{textAlign: 'left'}}>The app is trying to connect to backend server</td><td>This is an intermediate state and app will be online or offline based on the success of the&nbsp;operation.</td></tr></tbody></table>
 
 ### Implementation
 
 A tag in _index.html_ called ‘**wm-network-info-toaster**’ will display the network info toaster when there is app network status change. Messages shown in the toaster are part of the app’s localized messages. Following are the keys to these messages.
 
-| Key | Message |
-| --- | --- |
-| LABEL_HIDE_NETWORK_INFO | Hide |
-| LABEL_CONNECT_TO_SERVICE | Connect |
+| Key                           | Message                   |
+| ----------------------------- | ------------------------- |
+| LABEL_HIDE_NETWORK_INFO       | Hide                      |
+| LABEL_CONNECT_TO_SERVICE      | Connect                   |
 | MESSAGE_SERVICE_NOT_AVAILABLE | Service is not reachable. |
-| MESSAGE_NETWORK_NOT_AVAILABLE | Network not available. |
-| MESSAGE_SERVICE_AVAILABLE | Service is available. |
-| MESSAGE_SERVICE_CONNECTING | Connecting to server. |
-| MESSAGE_SERVICE_CONNECTED | You are online. |
+| MESSAGE_NETWORK_NOT_AVAILABLE | Network not available.    |
+| MESSAGE_SERVICE_AVAILABLE     | Service is available.     |
+| MESSAGE_SERVICE_CONNECTING    | Connecting to server.     |
+| MESSAGE_SERVICE_CONNECTED     | You are online.           |
 
 **NOTES**:
 

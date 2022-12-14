@@ -36,15 +36,15 @@ For form fields, the **alignment of the caption** can be configured to place as 
 
 ### 1. Column Form with left-aligned Captions
     
-<iframe width="100%" height="450" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LiveForm">1-column Form</iframe>
+<iframe width="100%" height="450" style={{backgroundColor:'snow'}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LiveForm">1-column Form</iframe>
     
 ### 2. Column Form with right-aligned Captions
     
-<iframe width="100%" height="450" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LiveFormwithTwoCol">2-column Form</iframe>
+<iframe width="100%" height="450" style={{backgroundColor:'snow'}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LiveFormwithTwoCol">2-column Form</iframe>
     
 ### 3. Column Form with top-aligned Captions 
     
-<iframe width="100%" height="450" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LiveFormwithThreeCol">3-column Form</iframe>
+<iframe width="100%" height="450" style={{backgroundColor:'snow'}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LiveFormwithThreeCol">3-column Form</iframe>
 
 ### 4. Column Form with floating Captions (Angular material style)
 

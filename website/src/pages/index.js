@@ -9,6 +9,7 @@ const React = require('react');
 import Layout from '@theme/Layout';
 import SearchBar from '../theme/SearchBar';
 import { useColorMode } from '@docusaurus/theme-common';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export default class Index extends React.Component {
     constructor(props) {
@@ -71,7 +72,9 @@ export default class Index extends React.Component {
                             <div className='col'>
                                 <h1 className='text--center text--semibold banner-Title'>how can we <span className='text--primary'>help</span>?</h1>
                                 <div className='banner-search' id="home-search">
-                                    <SearchBar autoFocus={true} elementId="home-search" />
+                                    <BrowserOnly>
+                                        {()=><SearchBar autoFocus={true} elementId="home-search" />}
+                                    </BrowserOnly>
                                 </div>
                             </div>
                         </div>

@@ -10,6 +10,7 @@ import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import styles from './styles.module.css';
 import SearchBar from '../../SearchBar';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -33,23 +34,18 @@ function NavbarContentLayout({ left, center, right }) {
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
       <div className="navbar__items navbar__items--center">{center}
-      {!searchBarItem && (document.URL.split('/').slice(-1)[0] != "" || document.URL.split('/').slice(-2)[0] != "learn") && !document.URL.split('/').slice(-1)[0].includes("search") && (
-          <div id="header-search">
-            <SearchBar elementId="header-search" autoFocus={false} />
-          </div>
-        )}
+        <BrowserOnly>
+          {() => !searchBarItem && (document.URL.split('/').slice(-1)[0] != "" || document.URL.split('/').slice(-2)[0] != "learn") && !document.URL.split('/').slice(-1)[0].includes("search") && (
+            <div id="header-search">
+              <SearchBar elementId="header-search" autoFocus={false} />
+            </div>
+          )}
+        </BrowserOnly>
       </div>
       <div className="navbar__items navbar__items--right">
-        
         <NavbarItems items={rightItems} />
         <NavbarColorModeToggle className={styles.colorModeToggle} />
         <NavbarItems items={rightEndItems} />
-      </div>
-      <div>
-        
-      </div>
-      <div>
-        
       </div>
     </div>
   );
