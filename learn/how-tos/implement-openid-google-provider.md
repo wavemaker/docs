@@ -12,7 +12,8 @@ In this document we discuss the steps to implement different open ID providers.
 1. Select the openID provider as Google from the drop-down menu of Provider ID.
 2. Provide the required details in the Identity Provider Information section.
 **Note**: Fields available in Identity provider section gets automatically occupied with the respective urls.
-3. Set up user account in the google console.
+3. Set up user account in the google console. This is to create an OAuth application to fetch the Client ID and Client secret.
+
 4. Create a new project in google console.
 [![](/learn/assets/wm_openid_gc1.png)](/learn/assets/wm_openid_gc1.png)
 
@@ -59,3 +60,18 @@ In this document we discuss the steps to implement different open ID providers.
 16. Collect the Client Id and Client secret by clicking on the Download Json option.
 [![](/learn/assets/wm_openid_gc18.png)](/learn/assets/wm_openid_gc18.png)
 
+
+### Gsuite domain restrictions:
+
+**Gsuite domain**: Gsuite provides enterprise package which gives access to all the tools via respective organization email addresses. 
+
+While creating the [OAuth application in google console](#google-as-openid-provider), you enter the list of authorized domains that allows only the domain specific mail ids to access the application. You have to then select the domain type as **Internal**. It allows associated organization accounts for the authorized domains to display at the time of SSO. **External** type includes all the available google accounts and is not restricted to any domain.
+
+### Steps to restrict Gsuite domain:
+
+1. Click on Add domains and enter the authorized domains. This step is to restrict the domains to access the application.
+[![](/learn/assets/wm_openid_gc20.png)](/learn/assets/wm_openid_gc20.png)
+2. Select the **Internal** option to allow the enterprise oriented google accounts of the authorized domains to be displayed during the time of SSO.
+[![](/learn/assets/wm_openid_gc19.png)](/learn/assets/wm_openid_gc19.png)
+2. Click on Create to implement the end user type who can access the application.
+[![](/learn/assets/wm_openid_gc7.png)](/learn/assets/wm_openid_gc7.png)
