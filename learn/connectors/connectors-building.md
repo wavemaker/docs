@@ -92,7 +92,7 @@ For the above properties will have default values such as
 
 **package:** default value is groupId given in mvn command
 **connector-name:** default value is artifactId given in the mvn command
-**connector-java-class-name:** default value is Wavemaker &lt;&lt;connectorName&gt;&gt;Connector
+**connector-java-class-name:** default value is WaveMaker &lt;&lt;connectorName&gt;&gt;Connector
 
 #### Example-1
 
