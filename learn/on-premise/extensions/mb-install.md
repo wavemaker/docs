@@ -23,7 +23,11 @@ kubectl version
 - Downnload helm package from the given link shared by WaveMaker support team.
 
 ```bash
-helm command //TODO
+cat <Service-Account-File> | helm registry login -u _json_key_base64 --password-stdin https://us-east4-docker.pkg.dev
+```
+
+```bash
+helm pull oci://us-east4-docker.pkg.dev/api-mock-server-332212/mockingbird/helm-charts/api-mock-server --version [MOCKINGBIRD-VERSION]
 ```
 
 
@@ -32,7 +36,7 @@ helm command //TODO
 - Verify SHA1SUM of downloaded file with the SHA1SUM given by WaveMaker support
 
 ```bash
-sha1sum command //TODO
+sha1sum api-mock-server-[MOCKINGBIRD-VERSION].tgz 
 ```
 
 ### Namespace creation
@@ -48,22 +52,47 @@ kubectl create ns mockingbird
 - Login to docker with JSON Key provided by WaveMaker support
 
 ```bash
-//TODO command
+cat <Service-Account> | docker login -u KEY-TYPE --password-stdin https://us-east4-docker.pkg.dev
 ```
+
 
 ### Create K8s secrets
 
-- Create image pull secrets after replacing Directory-Path-to-CONFIG-JSON path //TODO
+- Create image pull secrets after replacing DIR-PATH-TO-CONFIG-JSON path, by default path is $HOME/.docker/config.json
+
 ```bash Command
-kubectl create secret generic mb-image-pull-secret --from-file=.dockerconfigjson=[Directory-Path-to-CONFIG-JSON]/config.json --type=kubernetes.io/dockerconfigjson -n mockingbird
+kubectl create secret generic mb-image-pull-secret --from-file=.dockerconfigjson=[DIR-PATH-TO-CONFIG-JSON]/config.json --type=kubernetes.io/dockerconfigjson -n mockingbird
 ```
 
 - Create SSL cert secret with CERT_PRIVATE_KEY_FILE and CERT_FILE replaced with path values.
+
 ```bash
 kubectl create secret tls mb-ssl-secret --key ${CERT_PRIVATE_KEY_FILE} --cert ${CERT_FILE}
 ```
+### Create ConfigMap
 
-#### Install Helm Chart
+- Create ConfigMap for domain and Static IP by replacing [MOCKINGBIRD-DOMAIN] and [MOCKINGBIRD-STATIC-IP] with respective values
+
+- Create mb-configmap.yaml file
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mockingbird-cm
+  namespace: mockingbird
+data:
+  domainName=[MOCKINGBIRD-DOMAIN]
+  loadBalancerIP=[MOCKINGBIRD-STATIC-IP]
+```
+
+- Create the configmap with this command
+
+```bash
+kubectl apply -f mb-configmap.yaml  -n mockingbird
+```
+
+### Install Helm Chart
 
 - Run helm command to install chart for MockingBird Platform by replacing HELM-PACKAGE and MOCKINGBIRD-DOMAIN
 
