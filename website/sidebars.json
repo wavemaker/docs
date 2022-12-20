@@ -605,14 +605,12 @@
     "on-premise/extensions/mb-getting-started",
     {
       "type": "subcategory",
-      "label": "Intall MockingBird",
-      "ids": [
+       "ids": [
         "on-premise/extensions/mb-install"
       ]
     },
     {
       "type": "subcategory",
-      "label": "Upgrade MockingBird",
       "ids": [
         "on-premise/extensions/mb-upgrade"
       ]
