@@ -13,7 +13,7 @@ sidebar_label: "Integrate MockingBird Platform with WME"
 - Replace [HELM-PATCH-PACKAGE] with the helm package name of new release or patch release after download
 
 ```bash 
-helm upgrade mockingbird [HELM-PATCH-PACKAGE] -n mockingbird --reuse-values"
+helm upgrade mockingbird [HELM-PATCH-PACKAGE] -n mockingbird -f one-time-setup-values.yaml
 ```  
 
 ### RoleBack MockingBird setup
@@ -21,5 +21,5 @@ helm upgrade mockingbird [HELM-PATCH-PACKAGE] -n mockingbird --reuse-values"
 - Here is the command to rollback previously installed patch/upgrade
 
 ```bash 
-helm rollback mockingbird [HELM-PATCH-PACKAGE] -n mockingbird --reuse-values //TODO verify rollback command
+helm rollback mockingbird -n mockingbird
 ```  
