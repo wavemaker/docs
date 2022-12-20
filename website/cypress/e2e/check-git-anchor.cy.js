@@ -12,8 +12,9 @@ describe('Check for anchors', function() {
             return;
         }
         it('Broken url check for: ' + link, function() {
-			cy.visit(link)
-				.get('a')
+			cy.visit(link);
+			Cypress.on('uncaught:exception', (err, runnable) => { return false; })
+			cy.get('a')
 				.not('.navItem') 
 				.not('.dropdown-item')
         .not('#dropdown')

@@ -7,22 +7,24 @@ describe('Check for nav', () => {
 		throw error;
 	});
 
-	after(function() {
+	after(function () {
 		cy.writeFile('broken-navs-git.json', brokenNavs);
 	});
 
 	let urlJson = require('../fixtures/changedFiles.json');
 	urlJson.forEach(link => {
-        //skip if it is from slides directory.
-        if(link.startsWith("slides")) {
-            return;
-        }
-        it('Verifies left nav in: ' + link, () => {
+		//skip if it is from slides directory.
+		if (link.startsWith("slides")) {
+			return;
+		}
+		it('Verifies left nav in: ' + link, () => {
+			cy.viewport("iphone-6");
 			cy.visit(link);
+			Cypress.on('uncaught:exception', (err, runnable) => { return false; })
 			cy.get('nav')
-				.should('have.class', 'toc')
+				.should('have.class', 'navbar')
 				.within(() => {
-					cy.get('div').should('have.class', 'toggleNav');
+					cy.get('*[class^="navbar__toggle"]').end();
 				});
 		});
 	});

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 url_array=()
 while IFS= read -r line; do
   url_array+=("$line")
