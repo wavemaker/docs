@@ -92,12 +92,26 @@ data:
 kubectl apply -f mb-configmap.yaml  -n mockingbird
 ```
 
+### Create one time setup values yaml
+- Create values yaml file with this code snippet by replacing these placeholders with proper values [MOCKINGBIRD-DOMAIN] and [MOCKINGBIRD-STATIC-IP]
+
+one-time-setup-values.yaml
+
+```yaml
+global:
+  domainName: [MOCKINGBIRD-DOMAIN]
+apimock-ingress-nginx:
+  controller:
+    service:
+      loadBalancerIP: [MOCKINGBIRD-STATIC-IP]
+```
+
 ### Install Helm Chart
 
 - Run helm command to install chart for MockingBird Platform by replacing HELM-PACKAGE and MOCKINGBIRD-DOMAIN
 
 ```bash 
-helm install mockingbird [HELM-PACKAGE] -n mockingbird --set "global.domainName=[MOCKINGBIRD-DOMAIN]" --set "apimock-ingress-nginx.controller.service.loadBalancerIP=[MOCKINGBIRD-STATIC-IP]"
+helm install mockingbird [HELM-PACKAGE] -n mockingbird -f one-time-setup-values.yaml
 ```  
 
 ### Map domain to Static IP reserved for MockingBird
