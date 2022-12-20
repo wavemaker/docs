@@ -1,7 +1,6 @@
 ---
 title: "Upgrade and Rollback"
 id: ""
-sidebar_label: "Upgrade and Rollback"
 ---
 ---
 
