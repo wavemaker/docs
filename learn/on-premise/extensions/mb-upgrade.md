@@ -1,7 +1,7 @@
 ---
-title: "Integrate MockingBird Platform with WME"
+title: "Upgrade and Rollback"
 id: ""
-sidebar_label: "Integrate MockingBird Platform with WME"
+sidebar_label: "Upgrade and Rollback"
 ---
 ---
 
