@@ -7,7 +7,7 @@ sidebar_label: "Install MockingBird Platform"
 
 ## Setting up cluster access at JumpBox
 
-- Once K8s Cluster is ready verify configuration using the given command
+- Once K8s Cluster is ready verify k8s access using the given command
 
 ```bash
 kubectl config view
