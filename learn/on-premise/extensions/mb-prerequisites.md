@@ -8,7 +8,7 @@ sidebar_label: "What you'll need"
 You can setup MockingBird on any K8s Cluster, but verified on GKE.
 
 :::note
-This document uses words like **VM**, **Nodes**, **Instance** to refer a machine.
+This document uses words like **VM**, **Nodes**, **Instance** to refer a machine, Cluster to Kubernete Cluster and K8s to Kubernetes.
 :::
 
 ## MockingBird Setup Requirements
@@ -18,8 +18,8 @@ This document uses words like **VM**, **Nodes**, **Instance** to refer a machin
 
 ### MockingBird Platform setup instance (JumpBox)
 
-- JumpBox should be configures with Kubernetes Cluster access and all the kubectl, helm and docker commands must get run from the same machine.
-- Make sure JumpBox in a secure zone.
+- JumpBox should be configures with Kubernetes Cluster access.
+- Secure JumpBox to access your network infra, specially access to only K8s cluster.
 - Here is the list of software packages to be installed at the JumpBox where K8s Cluster is accessible
 
 <table>
