@@ -69,7 +69,7 @@ While creating the [OAuth application in google console](#google-as-openid-provi
 
 ### Steps to restrict Gsuite domain:
 
-1. Click on Add domains and enter the authorized domains. This step is to restrict the domains to access the application.
+1. Click on Add domain and enter the authorized domains. This step is to restrict the domains to access the application.
 [![](/learn/assets/wm_openid_gc20.png)](/learn/assets/wm_openid_gc20.png)
 2. Select the **Internal** option to allow the enterprise oriented google accounts of the authorized domains to be displayed during the time of SSO.
 [![](/learn/assets/wm_openid_gc19.png)](/learn/assets/wm_openid_gc19.png)
