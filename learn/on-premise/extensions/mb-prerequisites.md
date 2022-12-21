@@ -31,6 +31,8 @@ This document uses words like **VM**, **Nodes**, **Instance** to refer a machin
 	<li>Kubctl v1.24.0 or higher</li>
 	<li>Heml v3.8.0 or higher</li>
 	<li>Docker 20.x or higher</li>
+	<li>sha1sum</li>
+	<li>Basic linux commands like cat</li>
 	</ul>
 	</li>
 	</td></tr>
