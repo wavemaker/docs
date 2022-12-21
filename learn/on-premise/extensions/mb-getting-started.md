@@ -5,7 +5,7 @@ sidebar_label: "MockingBird Setup Process"
 ---
 ---
 
-MockingBird is a Backend API Platform to make WaveMaker platform work with API Mocking feature from Studio. This documentation describes the process for setting up MockingBird and integrate with WaveMaker Enterprise.
+MockingBird is a Backend API Platform for WaveMaker platform to work with API Mocking feature from Studio. This documentation describes the process for setting up MockingBird and integrate with WaveMaker Enterprise.
 
 - MockingBird Platform to be installed on K8s Cluster, it can be hosted and managed by an organization on their own K8s Cluster
 
