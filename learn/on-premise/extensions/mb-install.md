@@ -52,7 +52,7 @@ kubectl create ns mockingbird
 - Login to docker with JSON Key provided by WaveMaker support
 
 ```bash
-cat <Service-Account> | docker login -u KEY-TYPE --password-stdin https://us-east4-docker.pkg.dev
+cat <Service-Account> | docker login -u _json_key_base64 --password-stdin https://us-east4-docker.pkg.dev
 ```
 
 
@@ -67,30 +67,9 @@ kubectl create secret generic mb-image-pull-secret --from-file=.dockerconfigjson
 - Create SSL cert secret with CERT_PRIVATE_KEY_FILE and CERT_FILE replaced with path values.
 
 ```bash
-kubectl create secret tls mb-ssl-secret --key ${CERT_PRIVATE_KEY_FILE} --cert ${CERT_FILE}
-```
-### Create ConfigMap
-
-- Create ConfigMap for domain and Static IP by replacing [MOCKINGBIRD-DOMAIN] and [MOCKINGBIRD-STATIC-IP] with respective values
-
-- Create mb-configmap.yaml file
-
-```yaml
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: mockingbird-cm
-  namespace: mockingbird
-data:
-  domainName=[MOCKINGBIRD-DOMAIN]
-  loadBalancerIP=[MOCKINGBIRD-STATIC-IP]
+kubectl create secret tls mb-ssl-secret --key ${CERT_PRIVATE_KEY_FILE} --cert ${CERT_FILE} -n mockingbird
 ```
 
-- Create the configmap with this command
-
-```bash
-kubectl apply -f mb-configmap.yaml  -n mockingbird
-```
 
 ### Create one time setup values yaml
 - Create values yaml file with this code snippet by replacing these placeholders with proper values [MOCKINGBIRD-DOMAIN] and [MOCKINGBIRD-STATIC-IP]
