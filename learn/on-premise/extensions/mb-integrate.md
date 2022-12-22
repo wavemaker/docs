@@ -8,12 +8,24 @@ id: ""
 
 ### Integrate Mockingbird with WME Platform
 
-- Make sure MockingBird domain is accessible with in developers and WME networks by running given command. Replace [WHITELIST-IP-RANGE] property with concern network CIDR ranges
-- Example ["1.2.3.4/32", "1.2.3.5/24"]
+- Make sure MockingBird domain is accessible with in developers and WME networks.
+- Add the **loadBalancerSourceRanges** key in the **one-time-setup-values.yaml** file and replace [WHITELIST-IP-RANGE] property with concern network CIDR ranges
+  - Example ["1.2.3.4/32", "1.2.3.5/24"]
+- Make sure that [MOCKINGBIRD-DOMAIN], [MOCKINGBIRD-STATIC-IP] as replaced with proper values.
+
+```yaml
+global:
+  domainName: [MOCKINGBIRD-DOMAIN]
+apimock-ingress-nginx:
+  controller:
+    service:
+      loadBalancerIP: [MOCKINGBIRD-STATIC-IP]
+      loadBalancerSourceRanges: [WHITELIST-IP-RANGE]
+```
 
 ```bash
-apimock-ingress-nginx.controller.service.loadBalancerSourceRanges: [WHITELIST-IP-RANGE]
-```  
+helm upgrade mockingbird [HELM-PATCH-PACKAGE] -n mockingbird -f one-time-setup-values.yaml
+``` 
 
 ### Pairing up WME Platform and MockingBird Platform
 
