@@ -226,8 +226,12 @@ id: ""
       import com.wavemaker.runtime.service.annotations.HideFromClient;
 
 
-      import com.wavemaker.runtime.file.model.DownloadResponse;
-      import com.wavemaker.runtime.file.model.Downloadable;
+      //import com.wavemaker.runtime.file.model.DownloadResponse;
+      //import com.wavemaker.runtime.file.model.Downloadable;
+      
+      import com.wavemaker.runtime.commons.file.model.DownloadResponse;
+      import com.wavemaker.runtime.commons.file.model.Downloadable;
+      
 
       import com.wavemaker.connector.jasper.JasperConnector;
       import com.wavemaker.connector.jasper.JasperExportType;
