@@ -28,8 +28,8 @@ This document uses words like **VM**, **Nodes**, **Instance** to refer a machin
 	<strong>Software</strong>
 	</td><td>
 	<ul>
-	<li>Kubctl v1.24.0 or higher</li>
-	<li>Heml v3.8.0 or higher</li>
+	<li>Kubectl v1.24.0 or higher</li>
+	<li>Helm v3.8.0 or higher</li>
 	<li>Docker 20.x or higher</li>
 	<li>sha1sum</li>
 	<li>Basic linux commands like cat</li>
@@ -66,11 +66,11 @@ Adding an instance to k8s workspace aids in the scalability of the mocking ser
 
 ### Deliverables 
 
-WaveMaker team will share the following packages along with access keys. You should be ready by downloading below package and key files before starting the installation at JumpBox
+WaveMaker team will share the following GCP Service-Account file and SHA1SUM file of MockingBird Helm Package.
 
-- MockingBird Helm Package
+- GCP service account file
 - SHA1SUM file of MockingBird Helm Package
-- Artifact Registry access key file
+- MockingBird Version 
 
 ## IP Address and DNS Mapping
 
