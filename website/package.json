@@ -21,7 +21,7 @@
     "concurrently": "5.1.0",
     "copy-files-from-to": "^2.3.0",
     "cypress": "^3.8.3",
-    "docusaurus": "^1.14.4",
+    "docusaurus": "^1.14.7",
     "dotenv": "^8.2.0",
     "markdown-to-slides": "git+https://github.com/wavemaker/markdown-to-slides.git",
     "markdownlint": "^0.20.3",
