@@ -18,7 +18,14 @@
     --wm-card-bg-hover: #fff;
     --wm-card-text: #000;
     --wm-card-text-hover: #000;
+    --wm-card-bg-gradient: #fff;
+    /* linear-gradient(to bottom, rgba(85, 117, 175, 0.3), rgba(43, 64, 119, 0.3)); */
+    --wm-card-bg-gradient-hover: #fff;
+    /* linear-gradient(to bottom, rgba(32, 122, 213, 0.5), rgba(35, 96, 185, 0.5)); */
+    --wm-card-bg-text: #000;
+    --wm-card-bg-text-hover: #000;
     --ifm-footer-background-color: #4f5761;
+    --wm-aside-left-background: linear-gradient(170deg, rgba(244, 246, 252, 0.56) 4%, #f4f6fc 126%, rgba(241, 248, 252, 0.6) 126%);
     --wm-aside-left-background-color: #f6f8fd;
     --ifm-menu-color-active: #000000;
     --ifm-menu-color-background-active: #c2e7ff;
@@ -28,7 +35,11 @@
     --ifm-heading-font-weight: normal;
     --ifm-button-font-weight: var(--ifm-font-weight-semibold);
     --ifm-color-success-dark: #00875a;
-    --ifm-alert-background-color-highlight: rgba(0, 135, 90, 5%);
+    /* --ifm-alert-background-color-highlight: rgba(0, 135, 90, 5%); */
+    --ifm-color-success-contrast-background:    rgba(0, 135, 90, 5%);
+    --ifm-color-danger-dark: #de350b;
+    /* --ifm-alert-background-color-highlight: rgba(222, 53, 11, 5%); */
+    --ifm-color-danger-contrast-background:rgba(222, 53, 11, 5%);
 }
 html[data-theme="dark"] {
     --ifm-font-color-base: #b3d4ff;
@@ -41,7 +52,8 @@ html[data-theme="dark"] {
     --wm-secondary-text-color: #b1d2fd;
     --wm-secondary-bg-color: #12223f;
     --wm-secondary-border-color: rgb(212 213 216);
-    --wm-aside-left-background-color: #273951;
+    --wm-aside-left-background: linear-gradient(to bottom, rgba(72, 100, 137, 0.11) -56%, #12223f 1835%, #273951 1835%);
+    --wm-aside-left-background-color:#273951;
     --wm-card-bg: #12223f;
     --wm-card-bg-hover: #26395a;
     --wm-card-text: #b3d4ff;
@@ -118,6 +130,10 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
+}
+
+.alert{
+    box-shadow: none;
 }
 
 .header-right::before {
@@ -499,8 +515,8 @@ html[data-theme="dark"] .banner{
     position: relative;
     padding: 20px;
     font-size: 14px;
-    color: #000;
-    background-color: #ffffff;
+    color: var(--wm-card-bg-text);
+    background-image: var(--wm-card-bg-gradient);
     align-items: center;
     border-radius: 15px;
     box-shadow: inset 0 0 0 1px rgba(131, 143, 162, 0.3);
@@ -510,7 +526,8 @@ html[data-theme="dark"] .banner{
 
 .extension:hover,
 .extension:focus {
-    color: #000;
+    color: var(--wm-card-bg-text-hover);
+    background-image: var(--wm-card-bg-gradient-hover);
     text-decoration: none;
     transform: translate(0, -15px);
     box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.06);
@@ -524,8 +541,13 @@ html[data-theme="dark"] .banner{
 
 .extension .caption {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: normal;
     margin: 0.5em 0 1em;
+}
+
+.extension:hover .caption,
+.extension:focus .caption {
+    font-weight: bold;
 }
 
 .extension .link {
@@ -539,7 +561,7 @@ html[data-theme="dark"] .banner{
 
 .extension:hover .link,
 .extension:focus .link {
-    color: #1794ef;
+    color: var(--wm-card-text-hover);
 }
 
 .extension:hover .link img,
@@ -1010,7 +1032,8 @@ html[data-theme="dark"] .banner{
     background-color: var(--wm-aside-left-background-color);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    background-image: linear-gradient(171deg, rgba(244, 246, 252, 0.56) 4%, #f4f6fc 127%, rgba(241, 248, 252, 0.6) 127%);
+    background-image: var(--wm-aside-left-background);
+    /* linear-gradient(171deg, rgba(244, 246, 252, 0.56) 4%, #f4f6fc 127%, rgba(241, 248, 252, 0.6) 127%); */
 }
 #header-search{
 
@@ -1088,6 +1111,7 @@ body:not(.search-active) #header-search .DocSearch-Modal .DocSearch-SearchBar .D
 .menu__list-item-collapsible .menu__link--active:hover,
 .menu__list-item-collapsible .menu__link--active{
     background-color: var(--ifm-menu-color-background-active) !important;
+    opacity: 0.65;
 }
 /* .menu__list-item-collapsible .menu__link:hover+.menu__caret, */
 .menu__list-item-collapsible .menu__link--active+.menu__caret{
