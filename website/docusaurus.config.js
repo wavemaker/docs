@@ -82,7 +82,7 @@ module.exports = {
           "blogSidebarCount": 'ALL',
         },
         "theme": {
-          "customCss": "/css/custom.css"
+          "customCss": "../website/static/css/custom.css"
         }
       }
     ]

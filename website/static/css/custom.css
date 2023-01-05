@@ -4,7 +4,7 @@
     --ifm-font-color-base: #3b454e;
     --ifm-heading-color: #000000;
     --ifm-color-primary: #1889df;
-    --wm-bg-text-color: #fff;
+    --wm-bg-text-color: #1794ef;
     --ifm-h1-font-size: 2.5rem;
     --ifm-h2-font-size: 1.5rem;
     --ifm-h3-font-size: 1.25rem;
@@ -40,6 +40,9 @@
     --ifm-color-danger-dark: #de350b;
     /* --ifm-alert-background-color-highlight: rgba(222, 53, 11, 5%); */
     --ifm-color-danger-contrast-background:rgba(222, 53, 11, 5%);
+    --wm-search-highlight-color:#f4f6fc;
+    --wm-search-modal-background:#ffffff;
+    --wm-search-hit-background:#ffffff;
 }
 html[data-theme="dark"] {
     --ifm-font-color-base: #b3d4ff;
@@ -95,6 +98,11 @@ html[data-theme="dark"] {
     --ifm-color-warning-contrast-foreground: rgb(255, 248, 230);
     --ifm-color-danger-contrast-background: rgb(75, 17, 19);
     --ifm-color-danger-contrast-foreground: rgb(255, 235, 236);
+    --docsearch-container-background: #12223f;
+    --wm-search-highlight-color:#f4f6fc;
+    --wm-search-modal-background:#ffffff;
+     --wm-search-hit-background:#ffffff;
+
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 /* your custom css */
@@ -515,7 +523,7 @@ html[data-theme="dark"] .banner{
     position: relative;
     padding: 20px;
     font-size: 14px;
-    color: var(--wm-card-bg-text);
+    color: var(--wm-card-text);
     background-image: var(--wm-card-bg-gradient);
     align-items: center;
     border-radius: 15px;
@@ -526,7 +534,7 @@ html[data-theme="dark"] .banner{
 
 .extension:hover,
 .extension:focus {
-    color: var(--wm-card-bg-text-hover);
+    color: var(--wm-card-text-hover);
     background-image: var(--wm-card-bg-gradient-hover);
     text-decoration: none;
     transform: translate(0, -15px);
@@ -1010,6 +1018,12 @@ html[data-theme="dark"] .banner{
     .navigationSlider .slidingNav ul li.navSearchWrapper {
         width: 77%;
     }
+#header-search .DocSearch-Modal{
+    height:auto !important;
+}
+.navbar--fixed-top .navbar__items{
+    height:100%;
+}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1198,6 +1212,7 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--wm-secondary-text-color) !important;
+    background:var(--wm-search-modal-background)!important;
 }
 .DocSearch-Hit{
     padding-bottom: 1px !important;
@@ -1243,6 +1258,7 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
 }
 .DocSearch-Hit a{
     border-radius: 0 !important;
+    background-color:var(--wm-search-hit-background) !important;
 }
 .DocSearch-Hit-Container{
     height: auto !important;
@@ -1252,9 +1268,10 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
 .DocSearch-Hit[aria-selected=true] a{
     box-shadow: 0 3px 3px 0 rgb(0 0 0 / 25%);
     z-index: 11 !important;
+    background-color:var(--wm-search-highlight-color) !important;
 }
-.DocSearch-Hit[aria-selected=true] .DocSearch-Hit-Container{
-    color: var(--wm-bg-text-color);
+.DocSearch-Hit[aria-selected=true] .DocSearch-Hit-Container,.DocSearch-Hit[aria-selected=true] .DocSearch-Hit-Container .DocSearch-Hit-path{
+    color: var(--wm-bg-text-color) !important;
 }
 
 .DocSearch-Hit[aria-selected=true] .algolia-docsearch-suggestion--highlight{
@@ -1300,4 +1317,7 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
             scrollbar-gutter: stable;
         }
     }
+}
+#header-search .DocSearch-Modal .DocSearch-SearchBar .DocSearch-Form{
+    border-bottom:1px solid #f2f2f2;
 }
