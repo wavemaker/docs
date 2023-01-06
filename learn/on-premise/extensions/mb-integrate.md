@@ -8,7 +8,7 @@ id: ""
 
 ### Integrate Mockingbird with WME Platform
 
-- Make sure MockingBird domain is accessible with in developers and WME networks.
+- Make sure MockingBird domain is accessible to WME setup.
 - Add the **loadBalancerSourceRanges** key in the **one-time-setup-values.yaml** file and replace [WHITELIST-IP-RANGE] property with concern network CIDR ranges
   - Example ["1.2.3.4/32", "1.2.3.5/24"]
 - Make sure that [MOCKINGBIRD-DOMAIN], [MOCKINGBIRD-STATIC-IP] as replaced with proper values.
