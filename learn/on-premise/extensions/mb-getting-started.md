@@ -20,9 +20,9 @@ MockingBird setup requires you to follow the steps below.
 
 Understand and procure the [Prerequisites](/learn/on-premise/extensions/mb-prerequisites.md).
 
-### Step-2: Install 
+### Step-2: Install MockingBird Platform
 
-Start installing [Install Helm](/learn/on-premise/extensions/mb-install.md).
+Start installing[Install Helm Charts](/learn/on-premise/extensions/mb-install.md).
 
 
 ### Step-3: Integrating with WME platform
