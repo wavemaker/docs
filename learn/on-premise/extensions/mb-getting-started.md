@@ -20,20 +20,12 @@ MockingBird setup requires you to follow the steps below.
 
 Understand and procure the [Prerequisites](/learn/on-premise/extensions/mb-prerequisites.md).
 
-### Step-2: Choose an Kubernetes Cluster
-
-MockingBird platform can be setup at any of the following Kubernetes clusters, but verified on GKE cluster.
-
-1. [GKE](https://cloud.google.com/learn/what-is-kubernetes)
-2. [EKS](https://aws.amazon.com/eks/)
-3. [AKS](https://learn.microsoft.com/en-us/azure/aks/)
-
-### Step-3: Install 
+### Step-2: Install 
 
 Start installing [Install Helm](/learn/on-premise/extensions/mb-install.md).
 
 
-### Step-4: Integrating with WME platform
+### Step-3: Integrating with WME platform
 
 Once MockingBird setup is successfully installed, follow these steps to integrate to WME Platform
 
