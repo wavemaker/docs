@@ -46,6 +46,7 @@
     --wm-table-bg-color:rgba(143, 146, 161,5%);
     --wm-table-border:none;
     --wm-table-tr-color:#ffffff;
+    --wm-table-tr-bg-image:none
 }
 html[data-theme="dark"] {
     --ifm-font-color-base: #b3d4ff;
@@ -105,6 +106,8 @@ html[data-theme="dark"] {
     --wm-search-highlight-color:#f4f6fc;
     --wm-search-modal-background:#ffffff;
      --wm-search-hit-background:#ffffff;
+     --wm-table-tr-color:transparent;
+     --wm-table-tr-bg-image: linear-gradient(to bottom, rgba(85, 117, 175, 0.3), rgba(43, 64, 119, 0.3));
 
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
@@ -1217,9 +1220,9 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
     color: var(--wm-secondary-text-color) !important;
     background:var(--wm-search-modal-background)!important;
 }
-.DocSearch-Hit{
+/* .DocSearch-Hit{
     padding-bottom: 1px !important;
-}
+} */
 
 .DocSearch-Hits:last-of-type {
     margin-bottom: 0 !important;
@@ -1345,6 +1348,7 @@ table th,table td{
 }
 table tbody tr,table tr:nth-child(2n){
     background-color:var(--wm-table-tr-color);
+    background-image: var(--wm-table-tr-bg-image);
 }
 table thead{
     background-color:transparent;
@@ -1362,8 +1366,4 @@ table tr td:last-child{
     border-bottom-right-radius: 10px; 
 
 }
-/* tr:first-child td:first-child { border-top-left-radius: 10px; }
-tr:first-child td:last-child { border-top-right-radius: 10px; }
 
-tr:last-child td:first-child { border-bottom-left-radius: 10px; }
-tr:last-child td:last-child { border-bottom-right-radius: 10px; } */
