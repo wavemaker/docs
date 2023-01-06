@@ -39,7 +39,8 @@ bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --register_
 
 ### Enable Mocking feature from WME Platform Launchpad team portal
 
-1) Go to http://PLATFORM_DOMAIN/launchpad, select the "Teams" tab on the right nav and click on the permissions icon for the team that you want to enable APIMock server access as shown in the below screen.
+Open WME launchpad page
+1) Select the "Teams" tab on the right nav and click on the permissions icon for the team that you want to enable APIMock server access as shown in the below screen.
 
 ![mb](/learn/assets/launchpad_mb_permission.png)](/learn/assets/launchpad_mb_permission.png)
 
