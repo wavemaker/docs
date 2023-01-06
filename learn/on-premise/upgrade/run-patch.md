@@ -42,7 +42,7 @@ sidebar_label: "Run Patch"
 
 [![upgrade-services](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-wme-services.png)](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-wme-services.png)
 
-- You can customize the WwaveMaker studio and App Domain URLs.
+- You can customize the WaveMaker studio and App Domain URLs.
 
 [![upgrade-domain-urls](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-domain-name.png)](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-domain-name.png)
 
