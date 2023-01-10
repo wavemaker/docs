@@ -4,15 +4,13 @@ author: Prasanth Reddy
 ---
 ---
 
-Cordova is open source framework that is used to develop cross platform applications using web technologies. React Native is one of the latest UI framework used to develop native mobile applications. It provides better perfomance and user interface that makes it a preferrable technology over Cordova, to create applications. 
-
-<!-- truncate -->
-
 ## Deprecation notice for Cordova project type
 
 WaveMaker’s support for developing mobile applications was launched in 2015 with Cordova as the underlying framework. Since then, we have added many features across multiple releases enabling customers to build mobile applications. In 2022, we released support for creating React Native mobile applications. The capabilities in React Native project type now match that of Cordova. We continue to innovate the developer experience by adding new features as well. Refer to this link for the most up-to-date comparison.
 
 In order for us to serve our customers better, we would like to move our mobile focus to React Native only. Consequently, we are now announcing our plans to discontinue support for Cordova.
+
+<!-- truncate -->
 
 | Support stage | Timing | Details |
 | ------ | ------ | ------ |
