@@ -20,6 +20,45 @@ To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
 
 ## Data Widgets
 ---
+<div class="row margin-vert--lg">
+<div class="col padding-horiz-sm">
+   <div class="card-content row">
+   <p>image</p>
+   <label>Cards</label>
+   
+   
+   <p>Card is a single unit to connect or functionality, presented in a concise visual package, to easily update,maintain, and personalize content area.</p>
+   <div class="card_links">
+   <a href="#">Overview,</a>
+   <a href="#">&nbsp;API Docs</a>
+   </div>
+   </div>
+   
+</div>
+<div class="col padding-horiz-sm">
+   <div class="card-content row">
+   <p>image</p>
+   <label>Cards</label>
+   <p>Card is a single unit to connect or functionality, presented in a concise visual package, to easily update,maintain, and personalize content area.</p>
+   <div class="card_links">
+   <a href="#">Overview,</a>
+   <a href="#">&nbsp;API Docs</a>
+   </div>
+   </div>
+</div>
+<div class="col padding-horiz-sm">
+   <div class="card-content row">
+   <p>image</p>
+   <label>Cards</label>
+   <p>Card is a single unit to connect or functionality, presented in a concise visual package, to easily update,maintain, and personalize content area.</p>
+   <div class="card_links">
+   <a href="#">Overview,</a>
+   <a href="#">&nbsp;API Docs</a>
+   </div>
+   </div>
+</div>
+
+</div>
 
 | Widget | Description | Document | Reference |
 | --- | --- | --- | --- |

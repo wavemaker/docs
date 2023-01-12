@@ -10,7 +10,7 @@ html[data-theme="dark"] {
   /* --ifm-font-color-base: #3b454e; */
   --docsearch-text-color: #ffffff;
   --docsearch-hit-shadow:0 1px 3px 0 #d4d9e1;
-  --wm-secondary-text-color:#61676c;
+  /* --wm-secondary-text-color:#61676c; */
   --docsearch-hit-color:#444950;
 }
 
