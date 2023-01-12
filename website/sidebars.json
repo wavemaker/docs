@@ -781,6 +781,7 @@
             "how-tos/saml-integration-adfs",
             "how-tos/sso-openid-azure-active-directory",
             "how-tos/implement-openid-google-provider",
+            "how-tos/implement-openid-okta-provider",
             "how-tos/custom-security-using-google-oauth-prefab",
             "how-tos/multiple-security-provider-implementation",
             "how-tos/customizing-post-authentication-handlers",

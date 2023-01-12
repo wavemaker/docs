@@ -3,7 +3,7 @@ title: "Configuring Open ID using Google provider"
 id: "implement-openid-google-provider"
 sidebar_label: "Open ID using Google provider"
 ---
-In this document we discuss the steps to implement different open ID providers.
+In this document we discuss the steps to implement Google as open ID provider.
 
 ---
 
@@ -75,3 +75,4 @@ While creating the [OAuth application in google console](#google-as-openid-provi
 [![](/learn/assets/wm_openid_gc19.png)](/learn/assets/wm_openid_gc19.png)
 2. Click on Create to implement the end user type who can access the application.
 [![](/learn/assets/wm_openid_gc7.png)](/learn/assets/wm_openid_gc7.png)
+
