@@ -28,7 +28,7 @@ In this document we discuss the steps to implement Okta as open ID provider.
 10. Enter the sign-in redirect url.
 
 :::note
-Sign-in redirect url is available in Wavemaker authentication and authorization page.
+Sign-in redirect url is available in WaveMaker authentication and authorization page.
 ::: 
 [![](/learn/assets/wm_openid_ok10.png)](/learn/assets/wm_openid_ok10.png)
 11. Enter sign-out redirect url.

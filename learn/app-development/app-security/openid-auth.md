@@ -162,7 +162,7 @@ OpenID Authentication security configurations facilitate communication between t
 
 ## Retrieve and Bind user information
 
-Below are the steps that are to be followed to retrieve and bind the user information using wavemaker, after the user successfully logs into the application.
+Below are the steps that are to be followed to retrieve and bind the user information using WaveMaker, after the user successfully logs into the application.
 
 1. Go to Variables and select Variables from the drop-down menu.
 [![](/learn/assets/wm_openid_Bind1.png)](/learn/assets/wm_openid_Bind1.png)
