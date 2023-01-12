@@ -27,7 +27,7 @@ Widgets are UI elements, which make your app functional without coding. Explore 
 **Step-4**: Build your apps with the [one-click deployment](/learn/app-development/deployment/one-click-deployment/). 
 
 ### See in action 
- 
+  
 View the short video to see how WaveMaker apps work in a three-layered architecture, which includes, UI, binding, and backend services.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNlIJ337WpsjTAfNsPE-16_jaNEEJW-5L" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>

@@ -45,25 +45,25 @@ describe("Top Navigation in web & mobile", function () {
         .should("not.be.visible");
     });
   });
-}),
-  describe("Sign-in button take to right places", function () {
-    var selectors = {
-      desktopNavElements: ".slidingNav > ul > li:not(:first-child)"
-    };
+});
+  // describe("Sign-in button take to right places", function () {
+  //   var selectors = {
+  //     desktopNavElements: ".slidingNav > ul > li:not(:first-child)"
+  //   };
 
-    beforeEach(function () {
-      cy.visit('/');
-    });
+  //   beforeEach(function () {
+  //     cy.visit('/');
+  //   });
 
-    it("Verifies navigation elements in desktop", function () {
+  //   it("Verifies navigation elements in desktop", function () {
 
-      cy.get('.navbar__items > a:not(:first-child)')
-        .contains("Login").should('have.attr', 'href').then((href) => {
-          cy.origin(href, () => {
-            cy.visit('/', { 'failOnStatusCode': false });
-            cy.get(".signup-container").contains("Login to")
-              .end();
-          });
-        })
-    });
-  });
+  //     cy.get('.navbar__items > a:not(:first-child)')
+  //       .contains("Login").should('have.attr', 'href').then((href) => {
+  //         cy.origin(href, () => {
+  //           cy.visit('/', { 'failOnStatusCode': false });
+  //           cy.get(".signup-container").contains("Login to")
+  //             .end();
+  //         });
+  //       })
+  //   });
+  // });

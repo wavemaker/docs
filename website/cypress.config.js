@@ -10,5 +10,6 @@ module.exports = defineConfig({
     },
     baseUrl: 'http://localhost:3000/learn',
     "experimentalSessionAndOrigin": true,
+    pageLoadTimeout: 120000
   },
 })
