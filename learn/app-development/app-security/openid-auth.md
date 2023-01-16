@@ -1,3 +1,4 @@
+@@ -0,0 +1,192 @@
 ---
 title: "Configuring Open ID authentication using SSO"
 id: "openid-auth"
@@ -82,6 +83,36 @@ Users tend to have same passwords and usernames for many applications. This may 
 ::: 
 
 
+## Retrieve and Bind user information
+
+Below are the steps that are to be followed to retrieve and bind the user information using WaveMaker, after the user successfully logs into the application.
+
+1. Go to Variables and select Variables from the drop-down menu.
+[![](/learn/assets/wm_openid_Bind1.png)](/learn/assets/wm_openid_Bind1.png)
+2. Click on New Variable to create a variable to fetch the user information.
+[![](/learn/assets/wm_openid_Bind2.png)](/learn/assets/wm_openid_Bind2.png)
+3. Go to Security Service option.
+[![](/learn/assets/wm_openid_Bind3.png)](/learn/assets/wm_openid_Bind3.png)
+4. Select getLoggedInUser as method from the drop-down menu as this method retrieves the details of the users who have logged in.
+[![](/learn/assets/wm_openid_Bind4.png)](/learn/assets/wm_openid_Bind4.png)
+5. Select appropriate option as Owner from the drop-down menu where, Page restricts to the respective page and Application restricts to the complete application. Click on Done.
+[![](/learn/assets/wm_openid_Bind5.png)](/learn/assets/wm_openid_Bind5.png)
+6. Enter the name of the variable and check Request data on page load option. Click on Save & Close option to successfully create the variable.
+[![](/learn/assets/wm_openid_Bind6.png)](/learn/assets/wm_openid_Bind6.png)
+7. Drag and drop the required widget onto the screen.
+[![](/learn/assets/wm_openid_Bind7.png)](/learn/assets/wm_openid_Bind7.png)
+8. Click on the link icon under Caption option.
+[![](/learn/assets/wm_openid_Bind8.png)](/learn/assets/wm_openid_Bind8.png)
+9. Go to the dataset of the required variable.
+[![](/learn/assets/wm_openid_Bind9.png)](/learn/assets/wm_openid_Bind9.png)
+10. Click on Bind to update the label with the values associated with the dataset arguments.
+[![](/learn/assets/wm_openid_Bind10.png)](/learn/assets/wm_openid_Bind10.png)
+[![](/learn/assets/wm_openid_Bind11.png)](/learn/assets/wm_openid_Bind11.png)
+11. To view the applied changes to the application, click on Preview button.
+[![](/learn/assets/wm_openid_Bind12.png)](/learn/assets/wm_openid_Bind12.png)
+12. Enter the required details to login. After successful login, user can access the application.
+[![](/learn/assets/wm_openid_Bind13.png)](/learn/assets/wm_openid_Bind13.png)
+
 
 
 ## OpenID Authentication Security Configurations
@@ -158,37 +189,4 @@ OpenID Authentication security configurations facilitate communication between t
 | Field | Description |
 | ---- | -----------|
 | Query Type | This option provides the platform where user can use either HQL or SQL queries to customise the end user roles |
-
-
-## Retrieve and Bind user information
-
-Below are the steps that are to be followed to retrieve and bind the user information using WaveMaker, after the user successfully logs into the application.
-
-1. Go to Variables and select Variables from the drop-down menu.
-[![](/learn/assets/wm_openid_Bind1.png)](/learn/assets/wm_openid_Bind1.png)
-2. Click on New Variable to create a variable to fetch the user information.
-[![](/learn/assets/wm_openid_Bind2.png)](/learn/assets/wm_openid_Bind2.png)
-3. Go to Security Service option.
-[![](/learn/assets/wm_openid_Bind3.png)](/learn/assets/wm_openid_Bind3.png)
-4. Select getLoggedInUser as method from the drop-down menu as this method retrieves the details of the users who have logged in.
-[![](/learn/assets/wm_openid_Bind4.png)](/learn/assets/wm_openid_Bind4.png)
-5. Select appropriate option as Owner from the drop-down menu where, Page restricts to the respective page and Application restricts to the complete application. Click on Done.
-[![](/learn/assets/wm_openid_Bind5.png)](/learn/assets/wm_openid_Bind5.png)
-6. Enter the name of the variable and check Request data on page load option. Click on Save & Close option to successfully create the variable.
-[![](/learn/assets/wm_openid_Bind6.png)](/learn/assets/wm_openid_Bind6.png)
-7. Drag and drop the required widget onto the screen.
-[![](/learn/assets/wm_openid_Bind7.png)](/learn/assets/wm_openid_Bind7.png)
-8. Click on the link icon under Caption option.
-[![](/learn/assets/wm_openid_Bind8.png)](/learn/assets/wm_openid_Bind8.png)
-9. Go to the dataset of the required variable.
-[![](/learn/assets/wm_openid_Bind9.png)](/learn/assets/wm_openid_Bind9.png)
-10. Click on Bind to update the label with the values associated with the dataset arguments.
-[![](/learn/assets/wm_openid_Bind10.png)](/learn/assets/wm_openid_Bind10.png)
-[![](/learn/assets/wm_openid_Bind11.png)](/learn/assets/wm_openid_Bind11.png)
-11. To view the applied changes to the application, click on Preview button.
-[![](/learn/assets/wm_openid_Bind12.png)](/learn/assets/wm_openid_Bind12.png)
-12. Enter the required details to login. After successful login, user can access the application.
-[![](/learn/assets/wm_openid_Bind13.png)](/learn/assets/wm_openid_Bind13.png)
-
-
 
