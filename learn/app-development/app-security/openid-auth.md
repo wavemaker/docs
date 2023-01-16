@@ -1,17 +1,16 @@
-
 ---
 title: "Configuring Open ID authentication using SSO"
 id: "openid-auth"
 sidebar_label: "Open ID Authentication"
 ---
-In this document we will be describing about the Open ID authentication using Identity providers.
+In this document, we will be describing about the Open ID authentication using Identity providers.
 
 ---
 
-OpenID Auth is a type of authentication protocol to log into the application. Users can use the login credentials provided by an OpenID provider, to establish a session with another application. OpenID providers are the third-party authentication servers that provide the authenticated ID to user, allowing them to use multiple applications without creating a separate account and password for each. List of few OpenID providers is provided below:
+OpenID Auth is a type of authentication protocol to log into the application. Users can use the login credentials provided by an OpenID provider to establish a session with another application. OpenID providers are the third-party authentication servers that provide the authenticated ID to users, allowing them to use multiple applications without creating a separate account and password for each. List of a few OpenID providers is provided below:
+
 * Google
 * Okta
- 
 
 ## Stateless Authentication Session establishment using OpenID
 
@@ -28,7 +27,6 @@ Stateless authentication, also known as Token-based authentication, includes tok
 6. Session gets established between user and application.
 
 
-
 [![](/learn/assets/OpenID_Architecture.png)](/learn/assets/OpenID_Architecture.png)
 
 
@@ -37,7 +35,7 @@ Stateless authentication, also known as Token-based authentication, includes tok
 Twitter is a well-known social media application. This application also uses OpenID authentication. As soon as the user tries to login, user is provided with few identity providers like Gmail and Apple. User can then choose a desired identity provider to log into Twitter.
 
 
-# Why OpenID Authentication?
+## Why OpenID Authentication?
 
 OpenID Authentication comes with many advantages. Some important reasons to choose OpenID authentication are:
 
@@ -67,7 +65,7 @@ Users tend to have same passwords and usernames for many applications. This may 
 3. Switch on the Authentication option.
 [![](/learn/assets/wm_openid_3_f.png)](/learn/assets/wm_openid_3_f.png)
 
-4. Under Security Providers, select the OpenID option from the drop down menu of Security Provider.
+4. Under Security Providers, select the OpenID option from the drop-down menu of Security Provider.
 [![](/learn/assets/wm_openid_4_f.png)](/learn/assets/wm_openid_4_f.png)
 [![](/learn/assets/wm_openid_5_f.png)](/learn/assets/wm_openid_5_f.png)
 
@@ -114,7 +112,6 @@ Below are the steps that are to be followed to retrieve and bind the user inform
 [![](/learn/assets/wm_openid_Bind13.png)](/learn/assets/wm_openid_Bind13.png)
 
 
-
 ## OpenID Authentication Security Configurations
 
 OpenID Authentication security configurations facilitate communication between the application and Identity provider.
@@ -129,7 +126,6 @@ OpenID Authentication security configurations facilitate communication between t
 | JWKS Url | Json Web Key Set (JWKS) endpoint stores the information on public keys used to verify the Json Web tokens |
 | User Info Endpoint | User Info endpoint allows the client application to fetch the required claims about the authenticated end user |
 | Logout Url | This endpoint is used by the client application to erase provider-side session and related cookies |
-
 
 
 ### Service Provider Information
