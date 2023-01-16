@@ -1,4 +1,4 @@
-@@ -0,0 +1,192 @@
+
 ---
 title: "Configuring Open ID authentication using SSO"
 id: "openid-auth"
