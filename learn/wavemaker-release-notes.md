@@ -21,7 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.2.2](/learn/wavemaker-release-notes/v11-2-2) <p style="color:red;">*latest*</p> | This release includes fomatting fixes and fixing user account log out issue. | 16 December 2022 |
+|[WaveMaker 11.2.2](/learn/wavemaker-release-notes/v11-2-2) <p style="color:red;">*latest*</p> | This release includes formatting fixes and fixing user account log out issue. | 16 January 2023 |
 |[WaveMaker 11.2.1](/learn/wavemaker-release-notes/v11-2-1) | This release includes bug fixes for the Calendar widget accessibility and icon rendering. | 06 December 2022 |
 |[WaveMaker 11.2.0](/learn/wavemaker-release-notes/v11-2-0)  |  This release includes several new features, including One-click enabling of API Mocking in Studio, the easy discovery of dependencies of services and methods to compose Java API, Single Page App behavior for UI, the Ability to create new projects from VCS repo for Teams users, Update timezones at Pages and Widget level, changes in JDBC connectors, Cordova Android updates, bug fixes, and more.| 21 November 2022 |
 |[WaveMaker 11.1.3](/learn/wavemaker-release-notes/v11-1-3) | This release includes internal platform fixes only.  | 03 October 2022 |
