@@ -24,7 +24,7 @@ function Feedback(props) {
   return (
     <div className='feedback-container margin-top--lg'>
       <a className="github-link" aria-label="Send feedback about this page" data-bi-name="create-issue-on-github" href={url}>
-        <img src='/learn/img/GitHub.png'></img>
+        <img className="submit-btn" src='/learn/img/submit_btn.svg'></img>
         <span> Submit Feedback for This Page</span>
       </a>
     </div>
@@ -39,7 +39,8 @@ function EditMetaRow({
   return (
     <React.Fragment>
       <div className={clsx(ThemeClassNames.docs.docFooterEditMetaRow, 'row')}>
-        <div className="col">{editUrl && <EditThisPage editUrl={editUrl} />}</div>
+        <div className="col">{editUrl && <EditThisPage editUrl={editUrl} />}<Feedback url={editUrl} /></div>
+        
         <div className={clsx('col', styles.lastUpdated)}>
           {(lastUpdatedAt || lastUpdatedBy) && (
             <LastUpdated
@@ -76,7 +77,7 @@ export default function DocItemFooter() {
         />
       )}
       {canDisplayTagsRow && <TagsRow tags={tags} />}
-      <Feedback url={editUrl} />
+      
     </footer>
   );
 }

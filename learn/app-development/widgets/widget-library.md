@@ -18,9 +18,13 @@ Pages are designed as a composition of widgets. See [Design Pages](/learn/app-de
 To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
 :::
 
-## Data Widgets
----
-<div class="row margin-vert--lg">
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="apple" label="Apple" default>
+  <div class="row margin-vert--lg">
 <div class="col padding-horiz-sm">
    <div class="card-content row">
    <p>image</p>
@@ -59,6 +63,19 @@ To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
 </div>
 
 </div>
+
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    This is an orange 🍊
+  </TabItem>
+  <TabItem value="banana" label="Banana">
+    This is a banana 🍌
+  </TabItem>
+</Tabs>
+
+## Data Widgets
+---
+
 
 | Widget | Description | Document | Reference |
 | --- | --- | --- | --- |
