@@ -27,7 +27,7 @@ import TabItem from '@theme/TabItem';
   <div class="row margin-vert--lg">
 <div class="col padding-horiz-sm">
    <div class="card-content row">
-   <p>image</p>
+   <p>image </p>
    <label>Cards</label>
    
    
