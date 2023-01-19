@@ -815,6 +815,7 @@
             "how-tos/request-response-processing-rest-services",
             "how-tos/intercept-requests-responses-api-calls-one-place",
             "how-tos/websocket-usage-chatroom-app",
+            "how-tos/adding-ui-for-api-server-side-pagination",
             "how-tos/working-api-with-different-pagination-formats"
           ],
 
