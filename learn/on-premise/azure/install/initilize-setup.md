@@ -34,7 +34,7 @@ For providing your own user in WME setup, follow the steps below:
 
 [![custom user setup initialization](/learn/assets/wme-setup/setup-with-custom-user.png)](/learn/assets/wme-setup/setup-with-custom-user.png)
 
-### WME Setpup with WaveMaker User
+### WME Setup with WaveMaker User
 
 For WaveMaker user, follow the steps below:
 

@@ -14,7 +14,7 @@ React Native apps perform better compared to Cordova apps. We tested a few typic
 
 ## Feature Parity
 
-Comparatively, features supported in WaveMaker Studio for React Native apps are less than the full-fledged Cordova. But, React Native is relatively new in WaveMaker Studio and the features will be gradually added to React Native as we advance. For now, check the [available features](/learn/react-native/feature-support) and [supported widgets](/learn/react-native/supported-widgets) of React Native apps.
+Check the [available features](/learn/react-native/feature-support) and [supported widgets](/learn/react-native/supported-widgets) of React Native apps.
 
 ## Technology
 
@@ -37,4 +37,4 @@ CSS is very powerful and flexible. So, WaveMaker allows developers to define Rea
 
 ## Final thoughts
 
-If performance is an important criterion for your app, then React Native should be your first choice over Cordova. However, identify the features required for your app and check if they are [supported in React Native Studio](/learn/react-native/supported-widgets). 
+WaveMaker React Native studio should be a preferred choice for any new mobile application development.
