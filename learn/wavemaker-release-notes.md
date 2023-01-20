@@ -111,7 +111,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.2](/learn/wavemaker-release-notes/v11-3-0)
+Last updated: [WaveMaker 11.2](/learn/wavemaker-release-notes/v11-2-0)
 
 ---
 
@@ -119,15 +119,15 @@ Last updated: [WaveMaker 11.2](/learn/wavemaker-release-notes/v11-3-0)
 
 | Description | JS Library | Version |
 | --- | --- | --- |
-| JS Binding | jquery | 3.4.1 |
-|  | jquery-ui* | 1.12.1 |
+| JS Binding | jquery | 3.6.0 |
+|  | jquery-ui* <td bgcolor="#44aaf4"> 1.13.0 to 1.13.2 |
 | MVC Framework | angular <td bgcolor="#44aaf4"> 11.2.14 to 12.2.16 |
 |  | angular-ui-bootstrap | 3.3.6 |
 |  | ngx-bootstrap | 6.2 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
 |  | nvd3 | 1.8.6 |
-| Built-in functions | lodash | 4.17.19|
+| Built-in functions | lodash | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
 Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
