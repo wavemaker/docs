@@ -16,19 +16,19 @@ MockingBird is a Backend API Platform for WaveMaker platform to work with API Mo
 MockingBird setup requires you to follow the steps below.
 
 
-### Step-1: Understand and setting up prerequisites
+### 1. Understand and setting up prerequisites
 
 Understand and procure the [Prerequisites](/learn/on-premise/extensions/mb-prerequisites.md).
 
-### Step-2: Install MockingBird Platform
+### 2. Install MockingBird Platform
 
 Start installing[Install Helm Charts](/learn/on-premise/extensions/mb-install.md).
 
 
-### Step-3: Integrating with WME platform
+### 3. Integrating with WaveMaker Enterprise platform
 
-Once MockingBird setup is successfully installed, follow these steps to integrate to WME Platform
+Once MockingBird setup is successfully installed, follow these steps to integrate to WaveMaker Enterprise Platform
 
-Integrate above installed MockingBird platform with WME [Integrate](/learn/on-premise/extensions/mb-integrate.md).
+Integrate above installed MockingBird platform with WaveMaker Enterprise [Integrate](/learn/on-premise/extensions/mb-integrate.md).
 
 
