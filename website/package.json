@@ -3,7 +3,7 @@
     "examples": "docusaurus examples",
     "start": "copy-files-from-to && concurrently \"docusaurus start\"",
     "start:nw": "concurrently \"docusaurus start\" ",
-    "build": "copy-files-from-to && docusaurus build --out-dir build/",
+    "build": "copy-files-from-to && docusaurus build --out-dir build/learn/",
     "publish-gh-pages": "docusaurus publish",
     "write-translations": "docusaurus write-translations",
     "version": "docusaurus docs:version",
