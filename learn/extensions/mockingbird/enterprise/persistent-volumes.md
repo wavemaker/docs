@@ -1,7 +1,7 @@
 ---
 title: "Creating Persisted Volumes"
 id: ""
-sidebar_label: "Creating Persisted Volumes"
+sidebar_label: "Volume Creation"
 ---
 ---
 

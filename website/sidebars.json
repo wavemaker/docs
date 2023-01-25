@@ -600,21 +600,14 @@
     "on-premise/disaster-recovery/Dehydration-and-Rehydration"
   ],
   
-  "Enterprise MockingBird Setup":
+  "MockingBird WME":
   [
-    "on-premise/extensions/mb-getting-started",
-    {
-      "type": "subcategory",
-       "ids": [
-        "on-premise/extensions/mb-install"
-      ]
-    },
-    {
-      "type": "subcategory",
-      "ids": [
-        "on-premise/extensions/mb-upgrade"
-      ]
-    }
+    "extensions/mockingbird/enterprise/getting-started",
+    "extensions/mockingbird/enterprise/prerequisites",
+    "extensions/mockingbird/enterprise/persistent-volumes",
+    "extensions/mockingbird/enterprise/install",
+    "extensions/mockingbird/enterprise/integrate",
+    "extensions/mockingbird/enterprise/upgrade"
    ]
 },
 

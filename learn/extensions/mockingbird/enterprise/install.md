@@ -1,18 +1,18 @@
 ---
 title: "Install MockingBird Platform"
 id: ""
-sidebar_label: "Install MockingBird Platform"
+sidebar_label: "Install"
 ---
 ---
 
 ## Setting up cluster access at JumpBox
 
-- Once K8s Cluster is ready verify k8s access using the given command
+- Once K8s Cluster is ready, verify K8s access using the following command
 
 ```bash
 kubectl config view
 ```
-- Cross verify both K8s server and Kubctl versions with this command
+- Cross-verify both K8s server and Kubctl versions using the following command
 
 ```bash
 kubectl version
@@ -20,7 +20,7 @@ kubectl version
 
 ## Download deliverables
 
-- Downnload helm package from the given link shared by WaveMaker support team.
+- Download the helm package from the link shared by WaveMaker support team.
 
 ```bash
 cat <Service-Account-File> | helm registry login -u _json_key_base64 --password-stdin https://us-east4-docker.pkg.dev
@@ -39,7 +39,7 @@ helm pull oci://us-east4-docker.pkg.dev/api-mock-server-332212/mockingbird/helm-
 sha1sum api-mock-server-[MOCKINGBIRD-VERSION].tgz 
 ```
 
-### Namespace creation
+### Namespace Creation
 
 - Create a new namespace 
 
@@ -47,7 +47,7 @@ sha1sum api-mock-server-[MOCKINGBIRD-VERSION].tgz
 kubectl create ns mockingbird
 ```
 
-### Login to docker
+### Login to Docker
 
 - Login to docker with JSON Key provided by WaveMaker support
 
@@ -56,9 +56,9 @@ cat <Service-Account> | docker login -u _json_key_base64 --password-stdin https:
 ```
 
 
-### Create K8s secrets
+### Create K8s Secrets
 
-- Create image pull secrets after replacing DIR-PATH-TO-CONFIG-JSON path, by default path is $HOME/.docker/config.json
+- Create image pull secrets after replacing DIR-PATH-TO-CONFIG-JSON path. By default, the path is $HOME/.docker/config.json
 
 ```bash Command
 kubectl create secret generic mb-image-pull-secret --from-file=.dockerconfigjson=[DIR-PATH-TO-CONFIG-JSON]/config.json --type=kubernetes.io/dockerconfigjson -n mockingbird
@@ -71,7 +71,8 @@ kubectl create secret tls mb-ssl-secret --key ${CERT_PRIVATE_KEY_FILE} --cert ${
 ```
 
 
-### Create one time setup values yaml
+### Create One time Setup Values YAML
+
 - Create values yaml file with this code snippet by replacing these placeholders with proper values [MOCKINGBIRD-DOMAIN] and [MOCKINGBIRD-STATIC-IP]
 
 one-time-setup-values.yaml
@@ -93,7 +94,7 @@ apimock-ingress-nginx:
 helm install mockingbird [HELM-PACKAGE] -n mockingbird -f one-time-setup-values.yaml
 ```  
 
-### Map domain to Static IP reserved for MockingBird
+### Map Domain to Static IP Reserved for MockingBird
 
 - Map Static IP to MockingBird Domain
 
