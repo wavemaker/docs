@@ -79,14 +79,8 @@ sidebar_label: "Run Patch"
 
 ## Running the UI Patch
 
-- To run the UI upgrade in the WME setup below 11.2.x version, please use the below command.
+- To run the UI upgrade in the WME setup, please use the below command.
 
 ```bash
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --upgrade-studioui
-```
-
-- To run the UI upgrade in the WME setup on and above 11.2.x version, please use the below command.
-
-```bash
-    bash /usr/local/content/wme/wme-installer/<version>/wme-installer-ui.sh
-```    
+``` 
