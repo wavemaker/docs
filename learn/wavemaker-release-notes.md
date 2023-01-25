@@ -21,7 +21,10 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.2.0](/learn/wavemaker-release-notes/v11-2-0) <p style="color:red;">*latest*</p>  |  This release includes several new features, including One-click enabling of API Mocking in Studio, the easy discovery of dependencies of services and methods to compose Java API, Single Page App behavior for UI, the Ability to create new projects from VCS repo for Teams users, Update timezones at Pages and Widget level, changes in JDBC connectors, Cordova Android updates, bug fixes, and more.| 21 November 2022 |
+|WaveMaker 11.2.3 <p style="color:red;">*latest*</p> | Fixed the Connectors artifact import issue, which earlier failed and could not run existing connectors. | 23 January 2023 |
+|[WaveMaker 11.2.2](/learn/wavemaker-release-notes/v11-2-2) | This release includes formatting fixes and fixing user account log out issue. | 16 January 2023 |
+|[WaveMaker 11.2.1](/learn/wavemaker-release-notes/v11-2-1) | This release includes bug fixes for the Calendar widget accessibility and icon rendering. | 06 December 2022 |
+|[WaveMaker 11.2.0](/learn/wavemaker-release-notes/v11-2-0)  |  This release includes several new features, including One-click enabling of API Mocking in Studio, the easy discovery of dependencies of services and methods to compose Java API, Single Page App behavior for UI, the Ability to create new projects from VCS repo for Teams users, Update timezones at Pages and Widget level, changes in JDBC connectors, Cordova Android updates, bug fixes, and more.| 21 November 2022 |
 |[WaveMaker 11.1.3](/learn/wavemaker-release-notes/v11-1-3) | This release includes internal platform fixes only.  | 03 October 2022 |
 |[WaveMaker 11.1.2](/learn/wavemaker-release-notes/v11-1-2) | Layout and Flex in Cordova, React Native fixes, including Style, Form and Chart and other bug fixes. | 26 September 2022 |
 |[v11.1.0](/learn/wavemaker-release-notes/v11-1-0) <br> known issue: <br> [wm-sspa-cli](/learn/wavemaker-release-notes/v11-1-0)| **wm-sspa-cli** is now supported. <br> [Read updated commands for invoking CLI](/learn/app-development/sspa/micro-frontend#invoke-cli) | 12 September 2022 |
@@ -109,7 +112,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.2](/learn/wavemaker-release-notes/v11-3-0)
+Last updated: [WaveMaker 11.2](/learn/wavemaker-release-notes/v11-2-0)
 
 ---
 
@@ -117,15 +120,15 @@ Last updated: [WaveMaker 11.2](/learn/wavemaker-release-notes/v11-3-0)
 
 | Description | JS Library | Version |
 | --- | --- | --- |
-| JS Binding | jquery | 3.4.1 |
-|  | jquery-ui* | 1.12.1 |
+| JS Binding | jquery | 3.6.0 |
+|  | jquery-ui* <td bgcolor="#44aaf4"> 1.13.0 to 1.13.2 |
 | MVC Framework | angular <td bgcolor="#44aaf4"> 11.2.14 to 12.2.16 |
 |  | angular-ui-bootstrap | 3.3.6 |
 |  | ngx-bootstrap | 6.2 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
 |  | nvd3 | 1.8.6 |
-| Built-in functions | lodash | 4.17.19|
+| Built-in functions | lodash | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
 Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.

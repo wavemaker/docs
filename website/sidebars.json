@@ -815,6 +815,7 @@
             "how-tos/request-response-processing-rest-services",
             "how-tos/intercept-requests-responses-api-calls-one-place",
             "how-tos/websocket-usage-chatroom-app",
+            "how-tos/adding-ui-for-api-server-side-pagination",
             "how-tos/working-api-with-different-pagination-formats"
           ],
 
@@ -1347,7 +1348,9 @@
           "type": "subcategory",
           "label": "Versions: 11.2.x",
           "ids": 
-            [             
+            [   
+              "wavemaker-release-notes/v11-2-2",  
+              "wavemaker-release-notes/v11-2-1",                        
               "wavemaker-release-notes/v11-2-0"              
             ]
         },

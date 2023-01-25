@@ -82,11 +82,10 @@ When the user has already upgraded the WME setup to WME 11.x.x Version, in that 
     bash /usr/local/wme/wme-installer/<version>/wme-installer.sh --merge_m2
 ```
 
-
 ## Running the UI Patch
 
-- To run the UI upgrade in the WME setup , please use the below command.
+- To run the UI upgrade in the WME setup, please use the below command.
 
 ```bash
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --upgrade-studioui
-```
+``` 

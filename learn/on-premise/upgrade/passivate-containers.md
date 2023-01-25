@@ -10,6 +10,7 @@ sidebar_label: "Passivate Containers"
 ## Passivate containers in StudioWorkspace/AppDeployment Instances from the launchpad
 
 - In order to upgrade WME, it is mandatory to passivate the containers in StudioWorkspaceInstance and AppDeploymentInstance.
+- If the user upgrading from WME 11.2.x to the latest version of WME , then there is **no need** to passivate the containers in StudioWorkspace/AppDeployment Instances.
 
 ### Upgrading from version 10.x.x to 11.x.x
 
@@ -42,8 +43,9 @@ sidebar_label: "Passivate Containers"
     - Check the container status and wait till their state changes to **Passivated**.
 
     [![conatiners_passivated](/learn/assets/wme-setup/upgrade-wme-setup/containers-passivate.png)](/learn/assets/wme-setup/upgrade-wme-setup/containers-passivate.png)
+   
 
-### Upgrading from version 11.x.x to 11.x.x   
+### Upgrading WME 11.1.x to WME 11.2.x or higher   
 
 
 - Following are the steps to passivate the containers before running patch.

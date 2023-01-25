@@ -37,7 +37,7 @@ You can change connectors when importing a new database and an existing imported
 ```
 <dependency>
  <groupId>com.mysql</groupId>
- <artifactId>mysql-connector-j</artifactId>
+ <artifactId>mysql-connector-java</artifactId>
  <version>8.0.30</version>
 </dependency>
 ```
