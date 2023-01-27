@@ -140,8 +140,8 @@ function TabsComponent(props) {
   };
   return (
     <div className={clsx('tabs-container', styles.tabList)}>
-      <button onClick={handleTabChange} id="prev" className='prevBtn'>back</button>
-      <button onClick={handleTabChange} id="next" className='nextBtn'>next</button>
+      <button onClick={handleTabChange} id="prev" className='prevBtn'></button>
+      <button onClick={handleTabChange} id="next" className='nextBtn'></button>
       <ul
         role="tablist"
         aria-orientation="horizontal"

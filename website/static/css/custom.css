@@ -76,6 +76,8 @@
     --ifm-color-danger-dark:  #de130b;
     --ifm-tabs-color:#3b454e;
     --ifm-tabs-color-active:#1794ef;
+    --ifm-tabs-next-button-image:url("/img/nextArrow.svg");
+    --ifm-tabs-prev-button-image:url("/img/prevArrow.svg");
 
 }
 html[data-theme="dark"] {
@@ -156,6 +158,8 @@ html[data-theme="dark"] {
      --wm-close-image:url("/img/closeIcon-blue.svg");
      --ifm-tabs-color:#b3d4ff;
      --ifm-tabs-color-active:#ffffff;
+     --ifm-tabs-next-button-image:url("/img/nextArrow_dark.svg");
+     --ifm-tabs-prev-button-image:url("/img/prevArrow_dark.svg");
      
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
@@ -1405,6 +1409,7 @@ table{
     border-spacing:0 6px;
     padding:0px 15px 10px 15px;
     border-radius:10px;
+    width:fit-content;
 }
 table tr{
     border-top:var(--wm-table-border);
@@ -1437,6 +1442,20 @@ table tr td:last-child{
 }
 
 /* cards design */
+.card-group .col{
+    flex:0 0 33.33%;
+    padding-bottom:30px;
+}
+@media (max-width: 1000px) {
+    .card-group .col{
+        flex:0 0 50%;
+    }
+}
+@media (max-width: 700px) {
+    .card-group .col{
+        flex:0 0 100%;
+    }
+}
 .card-content{
     border-radius: 12px;
   box-shadow:inset 0 0 0 1px rgb(131 143 162 / 30%);
@@ -1444,6 +1463,10 @@ table tr td:last-child{
   padding: 20px;
   margin:0;
   font-size:13px;
+  min-height:200px;
+}
+.card-content p{
+    margin-bottom:10px;
 }
 .card-content label{
     color:var( --ifm-heading-color);
@@ -1456,6 +1479,10 @@ table tr td:last-child{
     font-weight:500;
     text-align:right;
     flex:1;
+}
+.card-content .card-body{
+    height:65px;
+    overflow-y:auto;
 }
 .navbar__item.navbar__link.button.button--secondary{
     color:var(--wm-button-text-color);
@@ -1482,4 +1509,40 @@ table tr td:last-child{
 }
 .tabs{
     font-weight:normal;
+    position:relative;
+    margin:0 30px;
+}
+.tabs .tabs__item{
+    flex:none;
+}
+.tabs::-webkit-scrollbar{
+    display: none;
+}
+.tabs-container {
+    position:relative;
+}
+.tabs-container .nextBtn, .tabs-container .prevBtn{
+    border:none;
+    width:35px;
+    height:35px;
+    position:absolute;
+    top:13px;
+    z-index:2;
+    
+}
+.tabs-container .nextBtn{
+    background:var(--ifm-tabs-next-button-image) no-repeat;
+    right:-3px;
+    
+}
+ .tabs-container .prevBtn{
+    background:var(--ifm-tabs-prev-button-image) no-repeat;
+    left:-3px;
+    
+}
+@media (min-width: 997px)
+{
+.col.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    max-width: 100% !important;
+}
 }
