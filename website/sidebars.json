@@ -598,7 +598,17 @@
   [
     "on-premise/disaster-recovery/backup-and-restore",
     "on-premise/disaster-recovery/Dehydration-and-Rehydration"
-  ]
+  ],
+  
+  "MockingBird WME":
+  [
+    "extensions/mockingbird/enterprise/getting-started",
+    "extensions/mockingbird/enterprise/prerequisites",
+    "extensions/mockingbird/enterprise/persistent-volumes",
+    "extensions/mockingbird/enterprise/install",
+    "extensions/mockingbird/enterprise/integrate",
+    "extensions/mockingbird/enterprise/upgrade"
+   ]
 },
 
 "Mobile":
