@@ -1528,6 +1528,7 @@ table tr td:last-child{
     position:absolute;
     top:13px;
     z-index:2;
+    cursor:pointer;
     
 }
 .tabs-container .nextBtn{
