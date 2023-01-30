@@ -116,6 +116,7 @@ Below are the steps that are to be followed to retrieve and bind the user inform
 OpenID Authentication security configurations facilitate communication between the application and Identity provider.
 
 ### Identity Provider Information
+
 This section contains configuration details for identity provider. 
 
 | Field | Description |
@@ -129,6 +130,7 @@ This section contains configuration details for identity provider.
 
 
 ### Service Provider Information
+
 This section contains configuration details for service provider. 
 
 | Field | Description |
@@ -137,6 +139,7 @@ This section contains configuration details for service provider.
 	
 
 ### Integration Information
+
 This section contains configuration details for integration between service provider and identity provider. 
 
 | Field | Description |
@@ -151,10 +154,13 @@ This section contains configuration details for integration between service prov
 
 Role Mapping for logged in users can come from the configured openID security provider or an imported Database.
 
-- **Search User Role**: Check this box to select the user role provider - Database or OpenId.
-    - If you select _**OpenId**_ then both authentication and authorization (roles) will be retrieved from the OpenId security provider. You need to provide:
-        - **Role Attribute**: This allows to assign user the required role.
-    - If you select _**Database**_ then authentication is performed using OpenId and authorization (roles) content is retrieved from the database. This allows you to use username and password credentials from OpenId while retrieving role content from a separate database. For role configuration using database [see here](/learn/app-development/app-security/authorization/#user-onboarding).
+**Search User Role**: Enable this option to select the user role provider. You are provided with two options- OpenID and Database.
+
+**OpenId**: If you select _**OpenId**_ then both authentication and authorization will be retrieved from the OpenId security provider. You need to provide:
+
+- **Role Attribute**: This field allows you to assign the required role.
+
+**Database**: If you select _**Database**_ then authentication is performed using OpenId and authorization content is retrieved from the database. This allows you to use username and password credentials from OpenId while retrieving role content from a separate database. For role configuration using database [see here](/learn/app-development/app-security/authorization/#user-onboarding).
 
 
 
