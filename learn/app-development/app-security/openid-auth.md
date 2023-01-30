@@ -116,6 +116,7 @@ Below are the steps that are to be followed to retrieve and bind the user inform
 OpenID Authentication security configurations facilitate communication between the application and Identity provider.
 
 ### Identity Provider Information
+This section contains configuration details for identity provider. 
 
 | Field | Description |
 | ---- | -----------|
@@ -128,6 +129,7 @@ OpenID Authentication security configurations facilitate communication between t
 
 
 ### Service Provider Information
+This section contains configuration details for service provider. 
 
 | Field | Description |
 | ---- | -----------|
@@ -135,6 +137,7 @@ OpenID Authentication security configurations facilitate communication between t
 	
 
 ### Integration Information
+This section contains configuration details for integration between service provider and identity provider. 
 
 | Field | Description |
 | ---- | -----------|
@@ -146,42 +149,12 @@ OpenID Authentication security configurations facilitate communication between t
 
 ### Role Mapping
 
-**Prerequisite:** User must switch in the Search User Role mapping option.
-| Field | Description |
-| ---- | -----------|
-| Select User Role Provider | This option allows to select the type of database containing user details |
+Role Mapping for logged in users can come from the configured openID security provider or an imported Database.
+
+- **Search User Role**: Check this box to select the user role provider - Database or OpenId.
+    - If you select _**OpenId**_ then both authentication and authorization (roles) will be retrieved from the OpenId security provider. You need to provide:
+        - **Role Attribute**: This allows to assign user the required role.
+    - If you select _**Database**_ then authentication is performed using OpenId and authorization (roles) content is retrieved from the database. This allows you to use username and password credentials from OpenId while retrieving role content from a separate database. For role configuration using database [see here](/learn/app-development/app-security/authorization/#user-onboarding).
 
 
-**Prerequisite:** User must select "OpenId" option as User Role Provider.
-| Field | Description |
-| ---- | -----------|
-| Role Attribute | This allows to assign user the required role |
-
-
-**Prerequisite:** User must select "Database" in the Search User Role mapping option.
-#### Database Configuration
-| Field | Description |
-| ---- | -----------|
-| Database | This field must contain hrdb as database |
-| User Table | This option lets the user decide the table type from the selected database |
-	
-
-#### User
-| Field | Description |
-| ---- | -----------|
-| Username Column | This field stores the username of the end user that is fetched from the configured database provider |
-
-
-#### Role Mapping
-
-**Prerequisite:**  User must select "Basic" in the Role configuration option.
-| Field | Description |
-| ---- | -----------|
-| Role column | This allows to assign user the required role |
-
-
-**Prerequisite:** User must select "Custom" in the Role configuration option.
-| Field | Description |
-| ---- | -----------|
-| Query Type | This option provides the platform where user can use either HQL or SQL queries to customise the end user roles |
 
