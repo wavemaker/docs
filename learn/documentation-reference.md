@@ -3,28 +3,38 @@ id: "documentation-reference"
 title: "WaveMaker Developers Guide"
 sidebar_label: "Introduction"
 ---
-Introduction to WaveMaker. Find a complete developer's guide to build an app with Low-code solution.
+Introduction to WaveMaker. Find a complete developer's guide to build an app with Low-code approach.
 
 ---
-[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing a modern end-to-end application. It is a rich design studio with over [80 widgets](/learn/app-development/widgets/widget-library) that work out-of-the-box. In this section, you can find a complete developers' guide for building apps with RAD solution using WaveMaker Studio.
+[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing modern and secured end-to-end applications, including native and web apps. The Studio provides rich design experience with over [80 out-of-the-box widgets](/learn/app-development/widgets/widget-library) ready to consume APIs. 
+
+WaveMaker provides extensive development tools and service integration support for Database, REST, and Java Services to create APIs with custom business logic. You can create your own custom widgets called [Prefabs](/learn/app-development/custom-widgets/prefabs-overview) that are API-integrated, containing functionality, interaction and data; allowing you to develop once and edit and reuse as many times. 
+
+Find a complete developers' guide for building production-ready applications with regulated deployment process.
 
 ## WaveMaker App Development Flow 
 
-**Step-1**: Create or import a backend service. It can be a data service, web service, java service, security service, or use a third party API.  
+Develop apps with a design-first approach or API-first approach. For a general idea, see the flow chart below.
 
-:::tip
-WaveMaker provides a few ready-to-use sample databases and services. To learn more, see [Backend Services](/learn/app-development/services/creating-backend-services).
-:::
+![steps flow chart](/learn/assets/flow-chart-steps.png)
 
-**Step-2**: Design your app by simply dragging-and-dropping widgets on a page. 
+### Create an App
+
+**Step-1**: WaveMaker app is a collection of pages. Design your app by dragging-and-dropping widgets on the page. 
 
 :::tip
 Widgets are UI elements, which make your app functional without coding. Explore the [widgets library](/learn/app-development/widgets/widget-library). 
 :::
 
+**Step-2**: Create or import a backend service. It can be a data service, web service, java service, security service, or use a third-party API.  
+
+:::tip
+WaveMaker provides a few ready-to-use sample databases and services. To learn more, see [Backend Services](/learn/app-development/services/creating-backend-services).
+:::
+
 **Step-3**: In a few simple clicks, using [variables](/learn/app-development/variables/variables), integrate the backend service with the widgets. 
 
-**Step-4**: Build your apps with the [one-click deployment](/learn/app-development/deployment/one-click-deployment/). 
+**Step-4**: Deploy application with the [one-click deployment](/learn/app-development/deployment/one-click-deployment/) process. 
 
 ### See in action 
   
@@ -33,15 +43,17 @@ View the short video to see how WaveMaker apps work in a three-layered architect
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNlIJ337WpsjTAfNsPE-16_jaNEEJW-5L" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
 ## WaveMaker Studio Editions
-WaveMaker offers 2 variants of Studio, for cloud-based and on-premise development respectively.
+
+WaveMaker offers two variants of Studio. For cloud-based and on-premise development, respectively.
+
 ### 1. WaveMaker Online (WMO)
-WMO is a cloud-based product - no installation required. For more information on the pre-requisites and setup guide, see [WaveMaker Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites) and [Online Setup Guide](/learn/wmo-setup).
+WMO is a cloud-based product - no installation is required. For more information on the pre-requisites and setup guide, see [WaveMaker Pre-requisites](/learn/app-development/wavemaker-overview/pre-requisites) and [Online Setup Guide](/learn/wmo-setup).
 
 ### 2. WaveMaker Enterprise (WME)
 WME is an on-premise product. For WME installation, see [WaveMaker Enterprise Setup Guide](/learn/on-premise/welcome).
 
 :::note
-Most of the WaveMaker app development capabilities are available in both WMO and WME editions, except for Enterprise edition which offers very specific enterprise integrations like Git Enterprise, behind the firewall services, Single sign-on for platform logins etc.
+Most of the WaveMaker app development capabilities are available in WMO and WME editions. Even so, Enterprise edition offers more specific business integrations like Git Enterprise, behind the firewall services, Single sign-on for platform logins, and more.
 :::
 
 ## Quick Start Guide
