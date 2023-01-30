@@ -1,23 +1,13 @@
 ---
-title: "Widgets & Prefabs"
+title: "Widgets Library"
 id: "widget-library"
 sidebar_label: "Widgets Library"
 ---
-Find everything about Widgets and Prefabs. Navigate to Widgets' list below and access relative docs and API docs.
-
----
-[![](/learn/assets/widgets-overview.gif)](/learn/assets/widgets-overview.gif)  
-
-Widgets are HTML/Bootstrap based UI components with rich interaction and designed for responsiveness. View the entire list of Widgets in this page. 
+Widgets are HTML/Bootstrap based UI components with rich interaction and designed for responsiveness. View the entire list of Widgets in this page.
 
 :::note
-Pages are designed as a composition of widgets. See [Design Pages](/app-development/ui-design/design-overview) before getting started with widgets. 
+Pages are designed as a composition of widgets. See [Design Pages](/app-development/ui-design/design-overview) and learn about widgets workflow. For more information, see [Widgets Overview](ui-elements.md).
 :::
-
-:::tip
-To learn about widgets workflow, see [Widgets Overview](ui-elements.md).
-:::
-
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
