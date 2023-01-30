@@ -600,7 +600,7 @@
     "on-premise/disaster-recovery/Dehydration-and-Rehydration"
   ],
   
-  "MockingBird WME":
+  "MockingBird Setup":
   [
     "extensions/mockingbird/enterprise/getting-started",
     "extensions/mockingbird/enterprise/prerequisites",
