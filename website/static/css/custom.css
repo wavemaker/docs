@@ -661,9 +661,6 @@ html[data-theme="dark"] .extension .link img{
     padding: 1em 1em 0 1em;
     list-style: none;
 }
-
-.helpfull-resources ul li {}
-
 .helpfull-resources ul li:first-child a {
     font-size: 20px;
     color: var(--wm-helfull-resources-title-color);
@@ -1086,6 +1083,9 @@ html[data-theme="dark"] .extension .link img{
 }
 .navbar--fixed-top .navbar__items{
     height:100%;
+}
+.navbar__title.text--truncate{
+    display:none;
 }
 }
 
@@ -1555,7 +1555,13 @@ table tr td:last-child{
 @media (min-width: 997px)
 
 {
-.col.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    main .container .row .col:first-child{
     max-width: 100% !important;
 }
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}   
