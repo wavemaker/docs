@@ -30,29 +30,41 @@ In this document we discuss the steps to implement Okta as open ID provider.
 :::note
 Sign-in redirect url is available in WaveMaker authentication and authorization page.
 ::: 
+
 [![](/learn/assets/wm_openid_ok10.png)](/learn/assets/wm_openid_ok10.png)
+
 11. Enter sign-out redirect url.
 
 :::note
 Add v1/logout to the end of sign-in redirect url and enter it as Sign-out redirect url.
 ::: 
+
 [![](/learn/assets/wm_openid_ok11.png)](/learn/assets/wm_openid_ok11.png)
+
 12. Select the appropriate access restriction and click on save.
 [![](/learn/assets/wm_openid_ok12.png)](/learn/assets/wm_openid_ok12.png)
+
 13. Click on the Copy icon to copy the client Id to the clipboard.
 [![](/learn/assets/wm_openid_ok13.png)](/learn/assets/wm_openid_ok13.png)
+
 14. Click on the Copy icon to copy the client secret to the clipboard.
 [![](/learn/assets/wm_openid_ok14.png)](/learn/assets/wm_openid_ok14.png)
+
 15. Go to Okta API Scopes and click on Grant to include it as scope.
 [![](/learn/assets/wm_openid_ok15.png)](/learn/assets/wm_openid_ok15.png)
+
 16. Click on Security from the menu in dashboard.
 [![](/learn/assets/wm_openid_ok16.png)](/learn/assets/wm_openid_ok16.png)
+
 17. Go to API option in the drop-down menu of Security.
 [![](/learn/assets/wm_openid_ok17.png)](/learn/assets/wm_openid_ok17.png)
+
 18. Click on default.
 [![](/learn/assets/wm_openid_ok18.png)](/learn/assets/wm_openid_ok18.png)
+
 19. Click on Metadata url that redirects to the page which contains authorization endpoint, token endpoint, JWKS endpoint and User info endpoint.
 [![](/learn/assets/wm_openid_ok19.png)](/learn/assets/wm_openid_ok19.png)
+
 20. Get the endpoints and client details to provide in the security configuration page in WaveMaker.
 
 

@@ -10,9 +10,15 @@ In this document we discuss the steps to implement Google as open ID provider.
 ## Google as OpenID provider
 
 1. Select the openID provider as Google from the drop-down menu of Provider ID.
+[![](/learn/assets/wm_openid_8_f.png)](/learn/assets/wm_openid_8_f.png)
+
 2. Provide the required details in the Identity Provider Information section.
-**Note**: Fields available in Identity provider section gets automatically occupied with the respective urls.
-3. Set up user account in the google console. This is to create an OAuth application to fetch the Client ID and Client secret.
+
+:::note
+Fields available in Identity provider section gets automatically occupied with the respective urls.
+::: 
+
+3. Set up user account in the [Google console](https://console.cloud.google.com). This is to create an OAuth application to fetch the Client ID and Client secret.
 
 4. Create a new project in google console.
 [![](/learn/assets/wm_openid_gc1.png)](/learn/assets/wm_openid_gc1.png)
@@ -60,14 +66,16 @@ In this document we discuss the steps to implement Google as open ID provider.
 16. Collect the Client Id and Client secret by clicking on the Download Json option.
 [![](/learn/assets/wm_openid_gc18.png)](/learn/assets/wm_openid_gc18.png)
 
+17. Get the endpoints and client details to provide in the security configuration page in WaveMaker.
 
-### Gsuite domain restrictions:
+
+### Gsuite domain restrictions
 
 **Gsuite domain**: Gsuite provides enterprise package which gives access to all the tools via respective organization email addresses. 
 
 While creating the [OAuth application in google console](#google-as-openid-provider), you enter the list of authorized domains that allows only the domain specific mail ids to access the application. You have to then select the domain type as **Internal**. It allows associated organization accounts for the authorized domains to display at the time of SSO. **External** type includes all the available google accounts and is not restricted to any domain.
 
-### Steps to restrict Gsuite domain:
+### Steps to restrict Gsuite domain
 
 1. Click on Add domain and enter the authorized domains. This step is to restrict the domains to access the application.
 [![](/learn/assets/wm_openid_gc20.png)](/learn/assets/wm_openid_gc20.png)
