@@ -1,13 +1,13 @@
-<svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="40" height="41" viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <rect id="5hyb69h3ya" x="0" y="0" width="40" height="40" rx="6"/>
+        <rect id="2c74f0erra" x="0" y="0" width="40" height="40" rx="6"/>
     </defs>
-    <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
-        <mask id="lasbheo8ab" fill="#fff">
-            <use xlink:href="#5hyb69h3ya"/>
+    <g transform="translate(0 .333)" fill="none" fill-rule="evenodd">
+        <mask id="rjirxb5zcb" fill="#fff">
+            <use xlink:href="#2c74f0erra"/>
         </mask>
-        <rect stroke="#DEE3EA" x="-.5" y="-.5" width="41" height="41" rx="6"/>
-        <g mask="url(#lasbheo8ab)">
+        <rect stroke="#445C9B" x=".5" y=".5" width="39" height="39" rx="6"/>
+        <g mask="url(#rjirxb5zcb)">
             <g transform="translate(7 10.619)">
                 <rect stroke="#7DB0FF" fill="#7DB0FF" x=".5" y=".5" width="25" height="18" rx="2"/>
                 <g stroke="#FFF">

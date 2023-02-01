@@ -10,48 +10,48 @@ const WidgetTabItems = () => {
       "value": "dataWidgets",
       "content": [
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/cards.svg",
+          "darkIcon": "/learn/img/cardsDark.svg",
           "label": "Cards",
           "body": "Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area. ",
           "overview": "/learn/app-development/widgets/datalive/cards/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/datatable.svg",
+          "darkIcon": "/learn/img/datatableDark.svg",
           "label": "Data Table",
           "body": " Data Table is a widget that presents a tabular view of data and allows actions. ",
           "overview": "/learn/app-development/widgets/datalive/data-table/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveTable.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/form.svg",
+          "darkIcon": "/learn/img/formDark.svg",
           "label": "Form ",
           "body": " Form is a group of input elements put together to post data, typically updating data through a web service call ",
           "overview": "/learn/app-development/widgets/datalive/form/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Form.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/list.svg",
+          "darkIcon": "/learn/img/listDark.svg",
           "label": "List",
           "body": " List is a widget that presents a list view of data, which contains a template for designing each list item ",
           "overview": "/learn/app-development/widgets/datalive/list/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/List.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/livefilter.svg",
+          "darkIcon": "/learn/img/livefilterDark.svg",
           "label": "Live Filter",
           "body": " Live Filter is a widget that allows user to filter the database results, usually used in combination with List or Data Table to display the filtered results ",
           "overview": "/learn/app-development/widgets/datalive/live-filter/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveFilter.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/liveform.svg",
+          "darkIcon": "/learn/img/liveformDark.svg",
           "label": "Live Form",
           "body": " Live Form is a group of input elements put together to submit data, typically resulting in creating or updating a database row ",
           "overview": "/learn/app-development/widgets/datalive/live-form/",
@@ -64,56 +64,56 @@ const WidgetTabItems = () => {
       "value": "containerWidgets",
       "content": [
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/accordian.svg",
+          "darkIcon": "/learn/img/accordianDark.svg",
           "label": "Accordion",
           "body": " Accordion is a stacked list of UI components, with only one component expanded or viewed at any point in time, and the rest collapsed ",
           "overview": "/learn/app-development/widgets/container/accordion/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Accordion.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/container.svg",
+          "darkIcon": "/learn/img/containerDark.svg",
           "label": "Container",
           "body": " Container is an enclosing element that wraps the widgets placed within, mostly used for embedding partial pages ",
           "overview": "/learn/app-development/widgets/container/container/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Container.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/grid.svg",
+          "darkIcon": "/learn/img/gridDark.svg",
           "label": "Grid Layout",
           "body": " Grid Layout helps division of pages or content area into cells or grids based on the 12-column fluid grid system, which helps in proper placement of the widgets for responsive design. ",
           "overview": "/learn/app-development/widgets/container/grid-layout/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Layoutgrid.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/panel.svg",
+          "darkIcon": "/learn/img/panelDark.svg",
           "label": "Panel",
           "body": " Panel has designated sections such as header, body, and footer and can be used to group a set of widgets together. ",
           "overview": "/learn/app-development/widgets/container/panel/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Panel.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/tabs.svg",
+          "darkIcon": "/learn/img/tabsDark.svg",
           "label": "Tabs",
           "body": " Tabs are Multiple UI components placed in a single window, with only one active component and headings allowing navigation to other components ",
           "overview": "/learn/app-development/widgets/container/tabs/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tabs.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/title.svg",
+          "darkIcon": "/learn/img/titleDark.svg",
           "label": "Tile",
           "body": " Tile is a form of UI components to group a set of widgets together and to apply a uniform style to the content ",
           "overview": "/learn/app-development/widgets/container/tile/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tile.html"
         },
         {
-          "lightIcon": "",
-          "darkIcon": "",
+          "lightIcon": "/learn/img/wizard.svg",
+          "darkIcon": "/learn/img/wizardDark.svg",
           "label": "Wizard",
           "body": " Wizard is a form of UI components to group a set of widgets together and to apply a uniform style to the content ",
           "overview": "/learn/app-development/widgets/container/wizard/",

@@ -1442,30 +1442,27 @@ table tr td:last-child{
 }
 
 /* cards design */
-.card-group .col{
-    flex:0 0 33.33%;
-    padding-bottom:30px;
-}
-
-.card-content{
+.widget-cards .card-content{
     border-radius: 12px;
   box-shadow:inset 0 0 0 1px rgb(131 143 162 / 30%);
   background-image: var(--wm-content-bg-image);
   padding: 20px;
   margin:0;
   font-size:13px;
-  min-height:200px;
+  height:100%;
+  display:flex;
+  flex-direction: column;
 }
-.card-content p{
-    margin-bottom:10px;
+.widget-cards .card-header{
+    display: flex;
 }
-.card-content label{
+
+.widget-cards .card-content label{
     color:var( --ifm-heading-color);
     padding-left:10px;
     font-size:16px;
     font-weight: 500;
     display: flex;
-    justify-content: center;
     align-items: center;
     
 }
@@ -1474,11 +1471,11 @@ table tr td:last-child{
     text-align:right;
     flex:1;
 }
-.card-content .card-body{
-    height:65px;
-    overflow-y:auto;
+.widget-cards .card-body{
+    height:100%;
     margin-top:10px;
 }
+
 .navbar__item.navbar__link.button.button--secondary{
     color:var(--wm-button-text-color);
 }
