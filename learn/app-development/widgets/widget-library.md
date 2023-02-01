@@ -14,8 +14,31 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="dataWidgets" label="Data Widgets" default>
-  <div className="row margin-vert--lg card-group card-group">
-    <div className="col padding-horiz-sm"><div className="card-content row"><img src="/learn/img/cards.svg"/><label> Cards</label><p className="card-body"> Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area.  </p><div className="card_links"><a href='/app-development/widgets/datalive/cards/'>Overview,</a>&nbsp;&nbsp;<a href='https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html'>API Docs</a></div></div></div>
+  <div className="row margin-vert--lg card-group widget-cards">
+    <div className="col padding-horiz-sm">
+    <div className="card-content">
+    <div className="card-header">
+    <img src="/learn/img/cards.svg"/><label> Cards</label>
+    </div>
+    <div className="card-body"> Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area.  </div>
+    <div className="card-footer card_links">
+    <a href='/app-development/widgets/datalive/cards/'>Overview,</a>&nbsp;&nbsp;<a href='https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html'>API Docs</a></div></div></div>
+    <div className="col padding-horiz-sm">
+    <div className="card-content">
+    <div className="card-header">
+    <img src="/learn/img/cards.svg"/><label> Cards</label>
+    </div>
+    <div className="card-body"> Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area. Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area. Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area.  </div>
+    <div className="card-footer card_links">
+    <a href='/app-development/widgets/datalive/cards/'>Overview,</a>&nbsp;&nbsp;<a href='https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html'>API Docs</a></div></div></div>
+    <div className="col padding-horiz-sm">
+    <div className="card-content">
+    <div className="card-header">
+    <img src="/learn/img/cards.svg"/><label> Cards</label>
+    </div>
+    <div className="card-body"> Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area.  </div>
+    <div className="card-footer card_links">
+    <a href='/app-development/widgets/datalive/cards/'>Overview,</a>&nbsp;&nbsp;<a href='https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html'>API Docs</a></div></div></div>
     <div className="col padding-horiz-sm"><div className="card-content row"><img src="/learn/img/datatable.svg"/><label> Data Table  </label><p className="card-body"> Data Table is a widget that presents a tabular view of data and allows actions. </p><div className="card_links"><a href='/app-development/widgets/datalive/data-table/'>Overview,</a>&nbsp;&nbsp;<a href='https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveTable.html'>API Docs</a></div></div></div>
     <div className="col padding-horiz-sm"><div className="card-content row"><img src="/learn/img/form.svg"/><label> Form </label><p className="card-body"> Form is a group of input elements put together to post data, typically updating data through a web service call    </p><div className="card_links"><a href='/app-development/widgets/datalive/form/'>Overview,</a>&nbsp;&nbsp;<a href='https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Form.html'>API Docs</a></div></div></div>
     <div className="col padding-horiz-sm"><div className="card-content row"><img src="/learn/img/list.svg"/><label> List </label><p className="card-body"> List is a widget that presents a list view of data, which contains a template for designing each list item  </p><div className="card_links"><a href='/app-development/widgets/datalive/list/'>Overview,</a>&nbsp;&nbsp;<a href='https://www.wavemakeronline.com/app-runtime/latest/docs/classes/List.html'>API Docs</a></div></div></div>
