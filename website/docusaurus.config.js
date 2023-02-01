@@ -5,6 +5,10 @@ module.exports = {
   "baseUrl": "/learn/",
   "organizationName": "WaveMaker, Inc.",
   "projectName": "learn",
+  "markdown": {
+    "mermaid": true,
+  },
+  "themes": ['@docusaurus/theme-mermaid'],
   "onBrokenLinks": 'warn',
   "onBrokenMarkdownLinks": 'warn',
   "scripts": [
@@ -149,6 +153,9 @@ module.exports = {
       "appId": process.env.ALGOLIA_DS_APP_ID,
       "apiKey": process.env.ALGOLIA_DS_API_KEY,
       "indexName": process.env.ALGOLIA_DS_INDEX_NAME
+    },
+    "mermaid": {
+      "theme": { "light": 'neutral', "dark": 'forest' },
     },
     "footer": {}
   }
