@@ -1559,9 +1559,4 @@ table tr td:last-child{
     max-width: 100% !important;
 }
 }
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: white;
-    }
-}   
+   
