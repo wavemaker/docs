@@ -1388,7 +1388,7 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
     .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Sidebar-styles-module{
         border-right:var(--ifm-toc-border-color)!important;
     }
-    .collapseSidebarButton_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-CollapseButton-styles-module.button{
+    aside div button[title="Collapse sidebar"]{
         background-color:transparent!important;
         box-shadow:0px 1px 0px inset var(--wm-navbar-bottom-border);
         border-color:transparent !important;
@@ -1555,7 +1555,7 @@ table tr td:last-child{
 @media (min-width: 997px)
 
 {
-    main .container .row .col:first-child{
+    html.docs-doc-id-app-development\/widgets\/widget-library body main .container .row .col:first-child{
     max-width: 100% !important;
 }
 }
