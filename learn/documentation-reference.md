@@ -6,17 +6,23 @@ sidebar_label: "Introduction"
 Introduction to WaveMaker. Find a complete developer's guide to build an app with Low-code approach.
 
 ---
-[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing modern and secured end-to-end applications, including native and web apps. The Studio provides rich design experience with over [80 out-of-the-box widgets](/learn/app-development/widgets/widget-library) ready to consume APIs. 
+[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing modern and secured end-to-end applications, including native mobile and web apps. The Studio provides rich design experience with over [80 out-of-the-box widgets](/learn/app-development/widgets/widget-library) ready to consume APIs. 
 
-WaveMaker provides extensive development tools and service integration support for Database, REST, and Java Services to create APIs with custom business logic. You can create your own custom widgets called [Prefabs](/learn/app-development/custom-widgets/prefabs-overview) that are API-integrated, containing functionality, interaction and data; allowing you to develop once and edit and reuse as many times. 
+WaveMaker provides extensive development tooling capabilities and integration services to convert complex problems into simplified solutions, inluding orchestrating Databases, REST services, and Java services. You can create your own custom widgets called [Prefabs](/learn/app-development/custom-widgets/prefabs-overview) that are API-integrated, encapsulating functionality, interaction and data; allowing you to develop once and edit and reuse as many times. 
 
-Find a complete developers' guide for building production-ready applications with regulated deployment process.
+The platform provides you with everything you need for development and building production-ready applications with faster and streamlined deployment processes. Find complete developers' guide for building low-code apps using WaveMaker.
 
 ## WaveMaker App Development Flow 
 
 Develop apps with a design-first approach or API-first approach. For a general idea, see the flow chart below.
 
-![steps flow chart](/learn/assets/flow-chart-steps.png)
+graph TD;
+A[Create Page]-->B(Drag and drop Widgets)
+B-->C{API Existing}
+C-->|Yes| D[fa:fa-link Bind Service]
+C-->|No| E[Import/Create Service]
+E-->|Creates Variable | F[Preview App]
+D-->|Uses Variable | F[Preview App]
 
 ### Create an App
 
