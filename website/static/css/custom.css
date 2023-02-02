@@ -1442,6 +1442,11 @@ table tr td:last-child{
 }
 
 /* cards design */
+.widget-cards .col{
+    flex:0 0 33.33%;
+    padding-bottom:30px;
+}
+
 .widget-cards .card-content{
     border-radius: 12px;
   box-shadow:inset 0 0 0 1px rgb(131 143 162 / 30%);
@@ -1473,7 +1478,7 @@ table tr td:last-child{
 }
 .widget-cards .card-body{
     height:100%;
-    margin-top:10px;
+    margin:10px 0;
 }
 
 .navbar__item.navbar__link.button.button--secondary{
