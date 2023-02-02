@@ -6,23 +6,27 @@ sidebar_label: "Introduction"
 Introduction to WaveMaker. Find a complete developer's guide to build an app with Low-code approach.
 
 ---
-[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing modern and secured end-to-end applications, including native mobile and web apps. The Studio provides rich design experience with over [80 out-of-the-box widgets](/learn/app-development/widgets/widget-library) ready to consume APIs. 
+[WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing modern and secured applications, including native mobile apps and scalable web apps. The Studio offers rich design experience with over [80 out-of-the-box widgets](/learn/app-development/widgets/widget-library), ready to consume APIs. Import or design APIs for Databases, REST services, Java services, and more. 
 
-WaveMaker provides extensive development tooling capabilities and integration services to convert complex problems into simplified solutions, inluding orchestrating Databases, REST services, and Java services. You can create your own custom widgets called [Prefabs](/learn/app-development/custom-widgets/prefabs-overview) that are API-integrated, encapsulating functionality, interaction and data; allowing you to develop once and edit and reuse as many times. 
+WaveMaker lays down extensive developer tooling capabilities and integration services. You can customize complex solutions to simpler format, such as variables. Bind them to the user interface to function simply.
 
-The platform provides you with everything you need for development and building production-ready applications with faster and streamlined deployment processes. Find complete developers' guide for building low-code apps using WaveMaker.
+In addition, create your own custom widgets called [Prefabs](/learn/app-development/custom-widgets/prefabs-overview) that are API-integrated, encapsulating functionality, interaction and data, allowing you to develop once and edit and reuse as many times. 
+
+The platform provides you with everything you need for developing and building production-ready applications with faster and streamlined deployment process. Find complete developers' guide for building low-code apps using WaveMaker.
 
 ## WaveMaker App Development Flow 
 
 Develop apps with a design-first approach or API-first approach. For a general idea, see the flow chart below.
 
+```mermaid
 graph TD;
 A[Create Page]-->B(Drag and drop Widgets)
 B-->C{API Existing}
 C-->|Yes| D[fa:fa-link Bind Service]
 C-->|No| E[Import/Create Service]
 E-->|Creates Variable | F[Preview App]
-D-->|Uses Variable | F[Preview App]
+D-->|Customize Variable | F[Preview App]
+```
 
 ### Create an App
 
