@@ -1577,6 +1577,12 @@ table tr td:last-child{
 .docusaurus-mermaid-container span{
     color:var(--ifm-font-color-base) !important;
 }
+ .docusaurus-mermaid-container .flowchart-link{
+    stroke:var(--ifm-heading-color)
+}
+.docusaurus-mermaid-container .marker{
+    fill:var(--ifm-heading-color)
+}
 h2.widget-header{
     margin-top:1.5em !important;
     margin-bottom:0px !important;
