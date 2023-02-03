@@ -6,7 +6,7 @@
     --ifm-color-primary: #1889df;
     --wm-bg-text-color: #1794ef;
     --ifm-h1-font-size: 2.5rem;
-    --ifm-h2-font-size: 1.5rem;
+    --ifm-h2-font-size: 2rem;
     --ifm-h3-font-size: 1.25rem;
     --wm-helfull-resources-color: #555967;
     --wm-helfull-resources-title-color: #000;
@@ -78,6 +78,8 @@
     --ifm-tabs-color-active:#1794ef;
     --ifm-tabs-next-button-image:url("/img/nextArrow.svg");
     --ifm-tabs-prev-button-image:url("/img/prevArrow.svg");
+    --mermaid-background-color:#c2e7ff;
+    --mermaid-border-color:#f6f8fd;
 
 }
 html[data-theme="dark"] {
@@ -92,7 +94,7 @@ html[data-theme="dark"] {
     --wm-secondary-bg-color: #12223f;
     --wm-secondary-border-color: rgb(212 213 216);
     --wm-aside-left-background: linear-gradient(to bottom, rgba(72, 100, 137, 0.11) -56%, #12223f 1835%, #273951 1835%);
-    --wm-aside-left-background-color:#273951;
+    --wm-aside-left-background-color:#172a47;
     --wm-card-bg: #12223f;
     --wm-card-bg-hover: #26395a;
     --wm-card-text: #b3d4ff;
@@ -160,6 +162,8 @@ html[data-theme="dark"] {
      --ifm-tabs-color-active:#ffffff;
      --ifm-tabs-next-button-image:url("/img/nextArrow_dark.svg");
      --ifm-tabs-prev-button-image:url("/img/prevArrow_dark.svg");
+     --mermaid-background-color:#172a47;
+     --mermaid-border-color:#c2e7ff;
      
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
@@ -1444,7 +1448,7 @@ table tr td:last-child{
 /* cards design */
 .widget-cards .col{
     flex:0 0 33.33%;
-    padding-bottom:30px;
+    padding:30px 15px 0;
 }
 
 .widget-cards .card-content{
@@ -1559,6 +1563,27 @@ table tr td:last-child{
 {
     html.docs-doc-id-app-development\/widgets\/widget-library body main .container .row .col:first-child{
     max-width: 100% !important;
+
 }
 }
+/* Mermaid css */
+.docusaurus-mermaid-container .node rect, .docusaurus-mermaid-container .node polygon{
+    fill: var(  --mermaid-background-color) !important;
+    stroke: var(--mermaid-border-color) !important;
+}
+.docusaurus-mermaid-container .edgeLabel{
+    background-color: var(--wm-aside-left-background-color) !important;
+}
+.docusaurus-mermaid-container span{
+    color:var(--ifm-font-color-base) !important;
+}
+h2.widget-header{
+    margin-top:1.5em !important;
+    margin-bottom:0px !important;
+}
+
+
+
+
+
    

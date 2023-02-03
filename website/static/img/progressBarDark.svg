@@ -1,0 +1,16 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="aowpy09mta">
+            <stop stop-color="#5575AF" stop-opacity=".3" offset="0%"/>
+            <stop stop-color="#2B4077" stop-opacity=".3" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect stroke="#445C9B" fill="url(#aowpy09mta)" x=".5" y=".5" width="39" height="39" rx="6"/>
+        <g fill="#79D499" fill-rule="nonzero">
+            <path d="M33 23.713H7a1 1 0 0 1-1-1V17a1 1 0 0 1 1-1h26a1 1 0 0 1 1 1v5.713a1 1 0 0 1-1 1zM7.244 22.469h25.511v-5.224H7.245v5.224z"/>
+            <path d="M8.162 18.365h2.983v2.983H8.163zM12.3 18.365h2.983v2.983h-2.982zM16.44 18.365h2.982v2.983H16.44z"/>
+            <path opacity=".3" d="M20.578 18.365h2.983v2.983h-2.983zM24.716 18.365h2.983v2.983h-2.983zM28.855 18.365h2.983v2.983h-2.983z"/>
+        </g>
+    </g>
+</svg>
