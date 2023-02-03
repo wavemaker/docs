@@ -1578,10 +1578,10 @@ table tr td:last-child{
     color:var(--ifm-font-color-base) !important;
 }
  .docusaurus-mermaid-container .flowchart-link{
-    stroke:var(--ifm-heading-color)
+    stroke:var(--ifm-heading-color) !important;
 }
 .docusaurus-mermaid-container .marker{
-    fill:var(--ifm-heading-color)
+    fill:var(--ifm-heading-color) !important;
 }
 h2.widget-header{
     margin-top:1.5em !important;
