@@ -1,6 +1,6 @@
 ---
 title: "How to generate PDF File using Jasper Reports"
-id: "generate-pdf-file-using-jasper-reports"
+id: ""
 ---
 ---
 ## Step 1:  Import the jasper-report-connector to project
@@ -226,8 +226,12 @@ id: "generate-pdf-file-using-jasper-reports"
       import com.wavemaker.runtime.service.annotations.HideFromClient;
 
 
-      import com.wavemaker.runtime.file.model.DownloadResponse;
-      import com.wavemaker.runtime.file.model.Downloadable;
+      //import com.wavemaker.runtime.file.model.DownloadResponse;
+      //import com.wavemaker.runtime.file.model.Downloadable;
+      
+      import com.wavemaker.runtime.commons.file.model.DownloadResponse;
+      import com.wavemaker.runtime.commons.file.model.Downloadable;
+      
 
       import com.wavemaker.connector.jasper.JasperConnector;
       import com.wavemaker.connector.jasper.JasperExportType;

@@ -1,6 +1,6 @@
 ---
 title: "WME Add Developer Capacity"
-id: "add-dev-capacity"
+id: ""
 sidebar_label: "Add Developer Capacity"
 ---
 ---
@@ -54,4 +54,13 @@ Ssh credentials of the Instance either should have root privliges or provide req
   alias dzdo='sudo'
   ```
 
-- Wait for few moments for configure and get started.
+- Wait for a few moments to configure and get started. You can check the Health status by clicking on the check mark(shown in the below picture).
+
+[![status check](/learn/assets/wme-setup/configuring-wme/status-check.png)](/learn/assets/wme-setup/configuring-wme/status-check.png)
+
+- It will gives you the Health status.
+
+[![user deployement health status check](/learn/assets/wme-setup/configuring-wme/user-deployement-health-status.png)](/learn/assets/wme-setup/configuring-wme/user-deployement-health-status.png)
+
+- You can verify them by copying them to clipboard and pasting on a Notepad.
+

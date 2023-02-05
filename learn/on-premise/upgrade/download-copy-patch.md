@@ -1,21 +1,13 @@
 ---
 title: "Download and Copy Patch"
-id: "download-copy-patch"
+id: ""
 sidebar_label: "Download and Copy Patch"
 ---
 ---
 
 ## Download Patch
 
-### Ubuntu
-
-- Download the Debian package. The link will be shared by the WaveMaker team.
-
-```bash
-wget  <WME-Patch-Link>
-```
-
-### RHEL
+### Ubuntu & RHEL
 
 - Download tar package. The link will be shared by the WaveMaker team.
 

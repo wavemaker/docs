@@ -1,6 +1,6 @@
 ---
 title: "Search"
-id: "search"
+id: ""
 ---
 ---
 
@@ -11,7 +11,12 @@ In addition, you can use the **Search** widget for flexibility and control.
 For the Search widget you can set the following properties:
 
 - Bind the **Value** dataset property of the search widget to the variable created from a Database or Web Service.
-- Set the **Search key** and **Label Value** properties to the column name you want to search by. **Note**: The Search Key, Label Value, and Image Source are bindable. For example, the Label Value can be bound to a field 'deptcode' or to a combination such as 'deptcode+name', using the expression option from the binding dialog.
+- Set the **Search key** and **Label Value** properties to the column name you want to search by. 
+
+:::note
+The Label Value, and Image Source are bindable. For example, the Label Value can be bound to a field 'deptcode' or to a combination such as 'deptcode+name', using the expression option from the binding dialog.
+:::
+
 - Set the **Type** as:
     - _autocomplete_ which would present a dropdown list of values for the user to select from; or
     - _search_ (the default setting) where the filtered list of values is presented based on the user entry
@@ -27,11 +32,11 @@ For the Search widget you can set the following properties:
 | **Property** | **Description** |
 | --- | --- |
 | Name | The name is a unique identifier for your widget. |
-| Type | Type of the widget can be set to    - _autocomplete_ which would present a dropdown list of values for the user to select from; or   - _search_ (the default setting) where the filtered list of values is presented based on the user entry    **Note**: All the properties are the same for both types. |
+| Type | Type of the widget can be set to <br><br> - _autocomplete_ which would present a dropdown list of values for the user to select from; or <br> - _search_ (the default setting) where the filtered list of values is presented based on the user entry <br><br> **Note**: All the properties are the same for both types. |
 | Placeholder | A placeholder is a text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user. |
 | **Accessibility** |
 | Hint | Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.     **Note**: In Safari browsers, by default, Tab highlights only text fields.    To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br> <br> **Note**: In Safari browsers, by default, Tab highlights only text fields. <br><br> To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | Shortcut Key | The shortcut key property specifies a shortcut key to activate/focus an element. The way of accessing the shortcut key is varying in different browsers Internet Explorer - [Alt] + shortcutkey, Chrome - [Alt] + shortcutkey (Windows/Linux) [Control] [Alt] + shortcutkey (MAC), Firefox - [Alt] [Shift] + shortcutkey (Windows/Linux) [Control] [Alt] + shortcutkey (MAC), Safari - [Alt] + shortcutkey (Windows) [Control] [Alt] + shortcutkey (MAC) |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
@@ -43,7 +48,7 @@ For the Search widget you can set the following properties:
 | Picture Source | An image which displays along with the Label Value |
 | Data field | This property sets the dataValue to be returned by a select editor when the list is populated using the dataSet property. |
 | Order by | Field order |
-| Match Mode | Specifies how to apply the filter on fields. For examples, match the query anywhere (or start or end) in the string.    Options: startignorecase, start, endignorecase, end, anywhereignorecase, anywhere, exactignorecase and exact.    Default matchmode: startignorecase    Examples:   1. start: "Wa" would match "WaveMaker"   2. end: "Maker" would match "WaveMaker"   3. anywhere: "ve" would match "WaveMaker"   |
+| Match Mode | Specifies how to apply the filter on fields. For examples, match the query anywhere (or start or end) in the string. <br><br> Options: startignorecase, start, endignorecase, end, anywhereignorecase, anywhere, exactignorecase and exact. <br><br> Default matchmode: startignorecase <br><br> Examples: <br> 1. start: "Wa" would match "WaveMaker" <br> 2. end: "Maker" would match "WaveMaker" <br> 3. anywhere: "ve" would match "WaveMaker" <br> |
 | **Default Value** |
 | Value | This is the default value to display value for an editor widget. Note that the display value is just what the user sees initially, and is not always the data value returned by the widget. |
 | **Display Format** |

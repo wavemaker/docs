@@ -1,6 +1,6 @@
 ---
 title: "Integration with Custom VCS provider"
-id: "integration-with-custom-vcs-provider"
+id: ""
 sidebar_label: "Custom VCS Integration"
 ---
 ---
@@ -18,12 +18,28 @@ In WMO, the custom VCS integration is available for [WMOT plan](/pricing/). Duri
 - [Gitlab](https://about.gitlab.com/)
 - [Bitbucket](https://bitbucket.org/product)
 - [Github](https://github.com/)
+- [Azure](https://azure.microsoft.com/en-us/services/devops/repos/)
 
-[![wmo vcs](/learn/assets/wmo-teams-vcs.png)](/learn/assets/wmo-teams-vcs.png).
+- Select the TEAM PORTAL section on the top right corner.  
 
-After selecting **Add Code Repository**, select the repository type and provide the required details for adding the repository. As default providers, WaveMaker supports Gitlab, Bitbucket, and Github for external VCS configuration.
+[![wmo-launchpad-teams](/learn/assets/wmo-launchpad-teams.png)](/learn/assets/wmo-launchpad-teams.png)
 
-[![wmo vcs configurations](/learn/assets/wmo-team-vcs-config.png)](/learn/assets/wmo-team-vcs-config.png).
+- Select on Setup Team.
+
+[![wmo-wavemaker-team-portal](/learn/assets/wmo-wavemaker-team-portal.png)](/learn/assets/wmo-wavemaker-team-portal.png)
+
+- Select on Next.
+
+[![wmo-launchpad-team-profile-configure](/learn/assets/wmo-launchpad-team-profile-configure.png)](/learn/assets/wmo-launchpad-team-profile-configure.png)
+
+
+- Select Code Repository that you want to store all your code and provide the required details. Select Save to save the changes. 
+
+[![wmo-configure-code-repo](/learn/assets/wmo-configure-code-repo.png)](/learn/assets/wmo-configure-code-repo.png)
+
+- After selecting **Add Code Repository**, select the repository type and provide the required details for adding the repository. As default providers, WaveMaker supports Gitlab, Bitbucket, Github and Azure for external VCS configuration. Select Save to save the changes. 
+
+[![wmo vcs](/learn/assets/wmo-adding-vcs-repo.png)](/learn/assets/wmo-adding-vcs-repo.png)
 
 ## Custom VCS configuration in WME
 

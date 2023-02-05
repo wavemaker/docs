@@ -1,6 +1,6 @@
 ---
 title: "Extract Package"
-id: "extract-package"
+id: ""
 sidebar_label: "Extract Package"
 ---
 ---
@@ -8,22 +8,27 @@ sidebar_label: "Extract Package"
 
 ### Extract Package for WME installer
 
-- #### Ubuntu
+ - Execute the following commands to untar the file and go extracted directory.
 
-  - Install debian package using following command.
+    - Make a WME installation directory in the platform. 
+      ```bash
+      sudo mkdir -p  /usr/local/content/wme/wme-installer/<version>/
+      ``` 
 
-    ```bash
-     dpkg -i  <WME-Installer-Filename>
-     ```
+    - Extract the Patch packgae file into the installation directory.
+      ```bash
+      sudo tar -xvf  <WME-Installer-Filename> -C /usr/local/content/wme/wme-installer/<version>/
+      ```
 
-    [![extract package](/learn/assets/wme-setup/download-and-extract-package.jpg)](/learn/assets/wme-setup/download-and-extract-package.jpg)
+    - Go to the extracted directory.
+      ```bash
+      cd /usr/local/content/wme/wme-installer/<version>/
+      ```
 
-- #### RHEL
 
-  - Execute the following command to untar the file and go extracted directory.
+[![extract package](/learn/assets/wme-setup/download-and-extract-package.png)](/learn/assets/wme-setup/download-and-extract-package.png)
 
-    ```bash
-     sudo mkdir -p  /usr/local/content/wme/wme-installer/<version>/
-     tar -xvf  <WME-Installer-Filename> -C /usr/local/content/wme/wme-installer/<version>/
-     cd /usr/local/content/wme/wme-installer/<version>/
-    ```
+
+
+
+

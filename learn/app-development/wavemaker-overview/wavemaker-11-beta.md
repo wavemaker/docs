@@ -1,7 +1,7 @@
 ---
 title: "WaveMaker 11 Beta"
-id: "wavemaker-11-beta"
-sidebar_label: "WaveMaker 11"
+id: ""
+sidebar_label: "11 beta"
 ---
 ---
 

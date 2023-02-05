@@ -71,6 +71,8 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to download JDBC driver jar for SQL server](/learn/app-development/services/database-services/download-jdbc-driver-jar/)
 *   [How to fetch more than the default number(100) of records from Database ?](/learn/how-tos/fetch-default-number100-records-database/)
 *   [How to connect to MySQL database using SSL](/learn/how-tos/mysql-connection-using-ssl/)
+*   [How to switch MariaDB to MySQL connector](/learn/how-tos/switch-mariadb-to-mysql-connector/)
+
 
 ## Web Services
 ---

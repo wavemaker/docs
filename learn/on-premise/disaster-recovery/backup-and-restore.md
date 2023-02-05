@@ -1,6 +1,6 @@
 ---
 title: "Backup and Restore "
-id: "backup-and-restore"
+id: ""
 sidebar_label: "Backup and Restore "
 ---
 ---
@@ -65,11 +65,14 @@ The following document will help an organization to take backup data at unplanne
 
 #### Starting WME setup
 
-- Run the following command to start the WME setup process
+- Following are the steps to start the WME setup process from the configwizard
 
-```bash
-    bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --start
-```
+  - **CW Portal**
+
+    - Log in to the CW portal, after login in home page you can see the settings icon and under **configuration** at the bottom, you can see **Danger Zone**
+    - You can start by hitting **start** button as shown in the image below, hit the button to start the WME setup
+
+    [![cw_start](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)
 
 ### StudioWorkspace Instance / AppDeployment Instance
 
@@ -97,8 +100,10 @@ The following document will help an organization to take backup data at unplanne
 
 ## Sync StudioWorkspace Instance / AppDeployment Instance
 
-- Execute the following command in Platform Instance to sync the StudioWorkspace Instance / AppDeployment Instance.
 
-```bash
-bash /usr/local/content/wme/wme-installer/<installler-version>/wme-installer.sh --upgrade-instances
-```
+- You can do this from the Launchpad.
+
+- To Apply, go to the Launchpad and Navigate to the Developer Workspace or App Deployements.
+- On the Capacity, you can see the Workspace/AppDeploy Instance details. On the Icons Shown, you can find the sync option.
+
+  [![Sync_and_patch](/learn/assets/wme-setup/upgrade-wme-setup/Sync-and-Patch.png)](/learn/assets/wme-setup/upgrade-wme-setup/Sync-and-Patch.png)

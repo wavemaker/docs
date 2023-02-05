@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Configure SSL for Platform"
-id: "config-ssl"
+id: ""
 sidebar_label: "Configure SSL"
 ---
 ---
@@ -15,55 +15,25 @@ To start this process you need 3 files.
 
 If you have .pem file, you can extract these files from pem file.
 
-### Upload Bundle file to LB via LB Admin Console
+### Upload files during the setup process
 
-- Login to LB admin console `http://<Platform-Machine-IP>/local/admin`
-  - user name : root
-  - Take the password from lb container.
-    - Login to Platform machine using ssh
-    - Go to lb container and get the password
+- While configuring the setup during the ConfigWizard process you can directly upload the bundle certificate and pemfile from this setp number 3.
 
-    ```bash
-          docker exec -it lb bash
-          cat /usr/local/content/secrets/lb/password
-    ```
+[![ssl for platform](/learn/assets/wme-setup/wme-portal-setup/ssl-for-platform.png)](/learn/assets/wme-setup/wme-portal-setup/ssl-for-platform.png)
 
-- Go to Configure -> Security Certificates from Left Nav
-- Delete the old test keystore from Server Certificates section.
-- Upload bundle file in Certification Authorities trusted by Server Section.
 
-### Copy certificate files to LB Container
+### Upload files from the configwizard
 
-- Login into platform machine using ssh.
-- Copy crt, private key file to /tmp/ of platform machine.
-- Copy  crt, private key file to lb container.
-  
-  ```bash
-    docker cp <crt-file-name> lb:/tmp/
-    docker cp <private-key-file-name> lb:/tmp/
-   ```
+- Alternatively, ConfigWizard allows you to upload the required certifiacates if you have missed to upload during setup process. 
 
-### Import certificates in LB Container
+- Login into the CW portal, after login in home page you can see settings icon on the top right as marked below.
+    
+    [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop-settings.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop-settings.png) 
 
-- Connect to LB Container
-- Go to /usr/local/content/pserver/pserver70GA/server/nodes/lb/config and backup servercerts.
-- Export private key and crt file into one certificate bundle. It prompts for passwords.
-  - Your own Source password required to enter if exists.
-  - Destination password is pramati.
-- Import certificate bundle using key tool.
-  - Enter your own source password if exists. If not enter as pramati
-  - Destination password as pramati.
-- Restart LB process.
+- Navigate to **Update SSL Certificates** and Upload your certs.
 
-```bash
-    docker exec -it lb bash
-    cd /usr/local/content/pserver/pserver70GA/server/nodes/lb/config
-    cp -fR servercerts servercerts.bak
-    cd /tmp/
-    openssl pkcs12 -export -in <crt-file-name> -inkey <private-key-file-name> -out <out-file-name>.out -name <bundle-alias>
-    keytool -importkeystore -srckeystore <out-file-name> -srcstoretype PKCS12 -destkeystore /usr/local/content/pserver/pserver70GA/server/nodes/lb/config/servercerts -alias <bundle-alias>
-    supervisorctl restart lb
-   ```
+    [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/Update-SSL-Cert.png)](/learn/assets/wme-setup/upgrade-wme-setup/Update-SSL-Cert.png)
+
 
 ### Access Studio using https
 

@@ -1,6 +1,6 @@
 ---
 title: "Download and Copy Installer"
-id: "download-copy-installer"
+id: ""
 sidebar_label: "Download and Copy Installer"
 ---
 ---
@@ -12,15 +12,7 @@ sidebar_label: "Download and Copy Installer"
   - No need to download the WME installer.
   - OVA/VHD/AMI will have it already.
 
-- #### Ubuntu
-
-  - Download debian package. The link will be shared by WaveMaker team.
-
-  ```bash
-    wget  <WME-Installer-Link>
-  ```
-  
-- #### RHEL
+- #### Ubuntu & RHEL
 
   - Download tar package. The link will be shared by WaveMaker team.
 
@@ -34,17 +26,17 @@ sidebar_label: "Download and Copy Installer"
 
 ### Verifying Checksum
 
-You need to verify the WME Installer/OVA/License file (.deb/.ova file communicated to you by the WaveMaker team) using checksum command before installing it.
+You need to verify the WME Installer/OVA/License file (.ova file communicated to you by the WaveMaker team) using checksum command before installing it.
 
 To verify on Linux
 
-- Using the following command, go to the directory where installer file(deb/tar/ova/vhd) and checksum files are downloaded.
+- Using the following command, go to the directory where installer file(tar/ova/vhd) and checksum files are downloaded.
 
  ``` bash
   cd  <file-location>
  ```
 
-- To verify the file integrity of the deb/tar/ova/vhd, run the following checksum command.
+- To verify the file integrity of the tar/ova/vhd, run the following checksum command.
 
  ```bash
   sha1sum -c [checksum-filename]
