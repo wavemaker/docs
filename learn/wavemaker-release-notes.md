@@ -21,7 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|WaveMaker 11.2.3 <p style="color:red;">*latest*</p> | Fixed the Connectors artifact import issue, which earlier failed and could not run existing connectors. | 23 January 2023 |
+|WaveMaker 11.2.3 <p style={{color:"red"}}>*latest*</p> | Fixed the Connectors artifact import issue, which earlier failed and could not run existing connectors. | 23 January 2023 |
 |[WaveMaker 11.2.2](/learn/wavemaker-release-notes/v11-2-2) | This release includes formatting fixes and fixing user account log out issue. | 16 January 2023 |
 |[WaveMaker 11.2.1](/learn/wavemaker-release-notes/v11-2-1) | This release includes bug fixes for the Calendar widget accessibility and icon rendering. | 06 December 2022 |
 |[WaveMaker 11.2.0](/learn/wavemaker-release-notes/v11-2-0)  |  This release includes several new features, including One-click enabling of API Mocking in Studio, the easy discovery of dependencies of services and methods to compose Java API, Single Page App behavior for UI, the Ability to create new projects from VCS repo for Teams users, Update timezones at Pages and Widget level, changes in JDBC connectors, Cordova Android updates, bug fixes, and more.| 21 November 2022 |
@@ -137,12 +137,12 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework  | <span style="background: #44aaf4; color: #fff"> 5.3.22 -> 5.3.23</span>|
-| Security framework | Spring Security | <span style="background: #44aaf4; color: #fff"> 5.7.3 -> 5.7.5</span>|
-| Java JSON utilities | Gson  | <span style="background: #44aaf4; color: #fff"> 2.9.1 -> 2.10 </span>|
-| DB Persistence library | Hibernate | <span style="background: #44aaf4; color: #fff"> 5.6.10.Final -> 5.6.12.Final</span>|
-| Sample database | HSQL |<span style="background: #44aaf4; color: #fff"> 2.7.0 -> 2.7.1 </span>|
-| JSON library | Jackson |<span style="background: #44aaf4; color: #fff"> 2.13.3 -> 2.14</span>|
+|  | Spring Framework  | <span style={{background: "#44aaf4", color: "#fff"}}> 5.3.22 -> 5.3.23</span>|
+| Security framework | Spring Security | <span style={{background: "#44aaf4", color: "#fff"}}> 5.7.3 -> 5.7.5</span>|
+| Java JSON utilities | Gson  | <span style={{background: "#44aaf4", color: "#fff"}}> 2.9.1 -> 2.10 </span>|
+| DB Persistence library | Hibernate | <span style={{background: "#44aaf4", color: "#fff"}}> 5.6.10.Final -> 5.6.12.Final</span>|
+| Sample database | HSQL |<span style={{background: "#44aaf4", color: "#fff"}}> 2.7.0 -> 2.7.1 </span>|
+| JSON library | Jackson |<span style={{background: "#44aaf4", color: "#fff"}}> 2.13.3 -> 2.14</span>|
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library | HttpComponents | httpclient- 4.5.13 <br/> httpmime- 4.5.6 |
@@ -157,7 +157,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
 | Tomcat | 9.0* |
-| Cordova (mobile apps) <br/> Android <br/> iOS |11.0.0 <br/> <span style="background: #44aaf4; color: #fff">10.1.2 -> 11.0.0</span>  <br/> 6.2.0 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |11.0.0 <br/> <span style={{background: "#44aaf4", color: "#fff"}}>10.1.2 -> 11.0.0</span>  <br/> 6.2.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
