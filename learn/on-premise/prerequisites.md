@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Prerequisites"
-id: ""
+id: "prerequisites"
 sidebar_label: "What you'll need"
 ---
 ---

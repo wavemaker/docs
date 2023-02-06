@@ -1,6 +1,6 @@
 ---
 title: "Extract Package"
-id: ""
+id: "extract-package"
 sidebar_label: "Extract Package"
 ---
 ---

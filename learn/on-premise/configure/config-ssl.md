@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Configure SSL for Platform"
-id: ""
+id: "config-ssl"
 sidebar_label: "Configure SSL"
 ---
 ---

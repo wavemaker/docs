@@ -1,6 +1,6 @@
 ---
 title: Enterprise Release
-id: ""
+id: "enterprise-release-notes"
 sidebar_label: "Enterprise Release (WME)"
 
 ---

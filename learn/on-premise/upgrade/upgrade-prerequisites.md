@@ -1,6 +1,6 @@
 ---
 title: "Upgrade Prerequisites"
-id: ""
+id: "upgrade-prerequisites"
 sidebar_label: "Upgrade Prerequisites"
 ---
 ---

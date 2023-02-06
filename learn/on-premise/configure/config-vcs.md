@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Configure VCS"
-id: ""
+id: "config-vcs"
 sidebar_label: "Configure VCS"
 ---
 ---

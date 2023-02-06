@@ -1,6 +1,6 @@
 ---
 title: "MockingBird Prerequisites"
-id: ""
+id: "prerequisites"
 sidebar_label: "What you'll need"
 ---
 ---

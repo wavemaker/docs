@@ -1,6 +1,6 @@
 ---
 title: "Creating Prefabs"
-id: ""
+id: "creating-prefabs"
 sidebar_label: "Create Prefab"
 ---
 ---

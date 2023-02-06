@@ -1,6 +1,6 @@
 ---
 title: "Fluentd Tags"
-id: ""
+id: "fluentd"
 sidebar_label: "fluentd tags"
 ---
 ---

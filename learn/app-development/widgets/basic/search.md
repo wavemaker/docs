@@ -1,6 +1,6 @@
 ---
 title: "Search"
-id: ""
+id: "search"
 ---
 ---
 
