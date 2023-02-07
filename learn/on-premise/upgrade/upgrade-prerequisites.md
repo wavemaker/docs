@@ -34,13 +34,19 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
 
 
 :::note
-To upgrade form 10.13.x to 11.x or higer version, you must open the port **8100** on the StudioWorkspace Instance.
+To upgrade WME setup from 10.13.x to 11.x.x or higer version, you must open the port **8100** on the StudioWorkspace Instance.
 :::
 
 
 ## Configure Docker
 
-- After upgrading docker successfully, you need to update docker configuration file to match with WaveMaker platform configuration.
+:::note
+To upgrade WME setup from 10.x.x to 11.x.x or higer version, you must upgrade the Docker to the minimum required version. To upgrade from 11.x to 11.x it is not required to upgrade the Docker.
+:::
+
+- After [upgrading docker](/learn/on-premise/upgrade/docker-upgrade) successfully to the minimum required version of 20.10.12, it is required to update docker configuration file to match with the WaveMaker platform configuration.
+
+- To update the docker configuration, run the following script after [extracting package](/learn/on-premise/upgrade/extract-patch) in the platform instance, navigate to the installation directory.
 
   - Run the Following command to update the configuration in platform.
 
@@ -50,7 +56,7 @@ To upgrade form 10.13.x to 11.x or higer version, you must open the port **8100*
 
 - After running the above command, it is highly recommended to check the upgraded docker version and the docker platform containers.
 
-   - Run the Following command to check the docker version.
+   - Run the Following command to check the docker version and it is to be minimum version of ***20.10.12***.
    ```bash
         sudo docker version
    ```
