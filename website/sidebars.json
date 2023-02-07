@@ -1126,9 +1126,9 @@
     "Latest v11.x": 
     [
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 11.2.x",
-          "ids": 
+          "items": 
             [  
               "wavemaker-release-notes/v11-2-4",   
               "wavemaker-release-notes/v11-2-2",  
@@ -1137,9 +1137,9 @@
             ]
         },
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 11.1.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v11-1-3",
               "wavemaker-release-notes/v11-1-2",
@@ -1148,9 +1148,9 @@
             ]
         },
         {
-          "type": "subcategory",
+          "type": "category",
           "label": "Versions: 11.0.x",
-          "ids": 
+          "items": 
             [
               "wavemaker-release-notes/v11-0-3",
               "wavemaker-release-notes/v11-0-2",
@@ -1162,7 +1162,7 @@
     "Release v10.x": 
       [
             {
-        "type": "subcategory",
+        "type": "category",
         "label": "WaveMaker 10",
         "items": [
           "wavemaker-release-notes/v10-release-summary"
