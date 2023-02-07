@@ -32,9 +32,9 @@
     "mochawesome-report-generator": "^4.1.0",
     "optimist": "^0.6.1",
     "remarkable-admonitions": "^0.2.2",
-    "textlint": "^11.6.3",
-    "textlint-plugin-html": "^0.2.0",
-    "textlint-rule-terminology": "^2.1.4",
+    "textlint": "^13.2.0",
+    "textlint-plugin-html": "^1.0.0",
+    "textlint-rule-terminology": "^3.0.4",
     "update": "^0.7.4",
     "wait-on": "^3.3.0"  
   },
