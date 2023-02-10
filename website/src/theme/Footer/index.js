@@ -27,7 +27,7 @@ export default class Footer extends React.Component {
         <div className='container padding-horiz--lg'>
           <div className='row footer-actions'>
             <div className='col col--3'>
-              <a href="https://www.wavemaker.com/" target="_blank" className='logo-name'>
+              <a href="#" target="_blank" className='logo-name'>
                 <img src="/learn/img/WM_blue_logo.png" alt="WaveMaker" height="32px" />
                 Wavemaker Docs
               </a>
@@ -35,13 +35,13 @@ export default class Footer extends React.Component {
             <div className='col col--6 extra-links'>
               <ul>
                 <li>
-                  <a href="https://www.wavemaker.com/get-started" target="_blank" >Pricing</a>
+                  <a href="https://www.wavemaker.com/talk-to-us-for-pricing" target="_blank" >Pricing</a>
                 </li>
                 <li>
-                  <a href="https://www.wavemaker.com/partners" target="_blank" >Partners</a>
+                  <a href="https://www.wavemaker.com/partner" target="_blank" >Partners</a>
                 </li>
                 <li>
-                  <a href="https://www.wavemaker.com/customer-stories" target="_blank" >Customers</a>
+                  <a href="https://www.wavemaker.com/case-studies" target="_blank" >Customers</a>
                 </li>
                 <li>
                   <a href="https://www.wavemaker.com/about" target="_blank" >About Us</a>
