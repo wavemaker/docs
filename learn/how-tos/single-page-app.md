@@ -1,6 +1,6 @@
 ---
 title: "Single Page App" 
-id: ""
+id: "single-page-app"
 sidebar_label: "Enable SPA"
 ---
 ---

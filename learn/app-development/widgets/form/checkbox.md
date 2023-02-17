@@ -1,6 +1,6 @@
 ---
 title: "Checkbox"
-id: ""
+id: "checkbox"
 ---
 
 A checkbox is a specific type of two-states button that can be either checked or unchecked. Checkboxes let a user select an option. Examples: "_I agree to terms and conditions"_ etc. checked and unchecked options.

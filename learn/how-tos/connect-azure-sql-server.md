@@ -1,6 +1,6 @@
 ---
 title: "Connect To Azure SQL Server"
-id: ""
+id: "connect-azure-sql-server"
 ---
 
 ## Prerequisites
@@ -40,5 +40,5 @@ Your Database is imported and ready to use in the application.
 
 1. While Testing Connection with MS SQL Server, it may fail to connect as the firewall does not allow incoming connections from WaveMaker by displaying the message as shown below. [![](/learn/assets/azure_firewall.png)](/learn/assets/azure_firewall.png)
 2. From the error message, you can **extract the IP of WaveMaker** and enable firewall for that IP. **Beware**: This IP address is common to _all WaveMakeronline_ users and as such any WaveMakerOnline user will be able to access your server once you enable firewall for the IP. You are strongly advised to take appropriate measures to protect your server.
-3. To set up firewall in Azure SQL navigate to _Sql Servers-> <your-database-server> -> settings -> firewall settings_
+3. To set up firewall in Azure SQL navigate to _Sql Servers-> &lt;your-database-server&gt; -> settings -> firewall settings_
 4. Add _Rule name_, _Start IP (the IP of WaveMaker, obtained from the error message)_ and _End IP (the IP of WaveMaker, obtained from the error message)_ and save [![](/learn/assets/azure_firewall1.png)](/learn/assets/azure_firewall1.png)

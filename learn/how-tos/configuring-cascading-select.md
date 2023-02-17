@@ -1,6 +1,6 @@
 ---
 title: "Configuring Cascading Select"
-id: ""
+id: "configuring-cascading-select"
 ---
 
 One can drive the content of a Select widget based upon the selection of another Select widget. For example, a user is provided with a list of Countries and based upon the selection, a list of Cities is displayed for selection from a second list. Let us see how to achieve this in WaveMaker. **Note**: We are using a dataset CityListing which contains the country and city details. [![](/learn/assets/sel_cs_db.png)](/learn/assets/sel_cs_db.png)

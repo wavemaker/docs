@@ -1,6 +1,6 @@
 ---
 title: "Form Configurations"
-id: ""
+id: "form-configurations"
 sidebar_label: "Configuration"
 ---
 ---

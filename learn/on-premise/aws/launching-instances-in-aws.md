@@ -1,6 +1,6 @@
 ---
 title: "Preparing Infrastructure on AWS"
-id: ""
+id: "launching-instances-in-aws"
 sidebar_label: "Prepare Infrastructure"
 ---
 ---

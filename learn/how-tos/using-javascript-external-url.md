@@ -1,6 +1,6 @@
 ---
 title: "Using JavaScript from External URL"
-id: ""
+id: "using-javascript-external-url"
 ---
 ---
 

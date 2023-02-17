@@ -1,6 +1,6 @@
 ---
 title: "Style App using app.css and Page Styles"
-id: ""
+id: "styles"
 sidebar_label: "Styles"
 ---
 ---

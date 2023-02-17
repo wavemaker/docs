@@ -1,6 +1,6 @@
 ---
 title: "Variable for Database CRUD"
-id: ""
+id: "database-crud"
 sidebar_label: "Database CRUD"
 ---
 ---
@@ -76,8 +76,8 @@ If you have not imported any database or web service in your application, you wi
 3. Once you have imported the data source, choose _Database CRUD_ from the list of **service type**
 4. Set the **service** to the desired _database_ and then select a **Table/Entity** from the list of entities of tables within the selected database. [![](/learn/assets/dbcrud_varcr_dt.png)](/learn/assets/dbcrud_varcr_dt.png)
 5. Once you have selected the service type and the service you can change the **name of the variable** generated.  
-<br> 
-**Data Configuration** includes:  <br> 
+  
+**Data Configuration** includes:    
     - You also have the option choose a particular data node.
     - **Records per request** to be fetched, default set to 20
     - **Update data on input change** will ensure that the data content of the variable is refreshed when the value of the input parameter changes
@@ -103,15 +103,15 @@ Variables created for Database CRUD are special variables that store the results
 | **Property** | **Description** |
 | --- | --- |
 | **Server Options** |
-| **Match Mode** | This property specifies how to apply the filter on fields under the Data tab. <br><br> The options are: <br><br> - **start**: match characters at the front of the string. For example, "Wa" would match "WaveMaker". <br> - **end**: match characters at the end of the string. For example, "Maker" would match "WaveMaker". <br> - **anywhere**: match characters anywhere in the string. For example, "ve" would match "WaveMaker". <br> - **exact**: match all characters the string. For example, only "WaveMaker" would match "WaveMaker".|
-| **Records per request** | This property sets the number of records to be fetched at runtime. It can be set to a value with 100 being maximum allowed value. 0 is invalid and entering the same will reset it to the default value. The default value is 20. <br><br> In the Development profile, the maximum limit is set to 100 records for optimized performance. For Deployment profile, you can change this limit by changing the change the “Records per Request” for the Database from the Config Profiles for Deployment Profile. |
+| **Match Mode** | This property specifies how to apply the filter on fields under the Data tab.    The options are:    - **start**: match characters at the front of the string. For example, "Wa" would match "WaveMaker".   - **end**: match characters at the end of the string. For example, "Maker" would match "WaveMaker".   - **anywhere**: match characters anywhere in the string. For example, "ve" would match "WaveMaker".   - **exact**: match all characters the string. For example, only "WaveMaker" would match "WaveMaker".|
+| **Records per request** | This property sets the number of records to be fetched at runtime. It can be set to a value with 100 being maximum allowed value. 0 is invalid and entering the same will reset it to the default value. The default value is 20.    In the Development profile, the maximum limit is set to 100 records for optimized performance. For Deployment profile, you can change this limit by changing the change the “Records per Request” for the Database from the Config Profiles for Deployment Profile. |
 | **Design Max. Results** | The number of records that are returned when viewing data at design time. |
-| **Order by** | Property to use for ordering the data. Sorting can be in ascending or descending order. By default, it is set to the Primary Key Field ascending order. You can add more fields, or delete this setting. <br><br> **Usage**: You can select the fields to which you want the data to be ordered from a drop-down list and click on + to add new order by field. By default, the order is set to descending which can be changed by a simple click operation. |
+| **Order by** | Property to use for ordering the data. Sorting can be in ascending or descending order. By default, it is set to the Primary Key Field ascending order. You can add more fields, or delete this setting.    **Usage**: You can select the fields to which you want the data to be ordered from a drop-down list and click on + to add new order by field. By default, the order is set to descending which can be changed by a simple click operation. |
 | **Ignore Case** | If checked, the filter will ignore case. For example, "wa" will match "WaveMaker". |
 | **Behavior** |
 | **Update data on input change** | If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable. |
 | **Request data on page load** | If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load. |
-| **In Flight Behavior** | This property determines the behavior when a call is fired through the variable with the previous call still pending. Variable queues all these calls, waits for the previous call completion and then based on the value of the _inFlightBehavior_ property, decides what to do with all the queued calls: <br> <br> - `doNotExecute` - all the queued calls will be discarded, <br> - `executeAll` - all the calls will be triggered one by one, or <br> - `executeLast` - only the last call is triggered and the rest are discarded, this is the default behavior  |
+| **In Flight Behavior** | This property determines the behavior when a call is fired through the variable with the previous call still pending. Variable queues all these calls, waits for the previous call completion and then based on the value of the _inFlightBehavior_ property, decides what to do with all the queued calls:     - `doNotExecute` - all the queued calls will be discarded,   - `executeAll` - all the calls will be triggered one by one, or   - `executeLast` - only the last call is triggered and the rest are discarded, this is the default behavior  |
 | **Spinner** |
 | **Spinner Context** | This property specifies the UI widget on which the spinner should show. Leave empty if no spinner required. |
 | **Spinner Message** | The message to be displayed below the spinner. Leave empty if no message is required below the spinner. Note: If multiple variables are fired then the spinner messages will be displayed as a list below a single spinner. |

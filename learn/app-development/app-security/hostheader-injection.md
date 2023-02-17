@@ -1,6 +1,6 @@
 ---
 title: "Prevent HostHeader Injection"
-id: ""
+id: "hostheader-injection"
 sidebar_label: "HostHeader Injection"
 ---
 ---

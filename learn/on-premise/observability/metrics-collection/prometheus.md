@@ -1,6 +1,6 @@
 ---
 title: "Prometheus"
-id: ""
+id: "prometheus"
 sidebar_label: "Prometheus"
 ---
 ---

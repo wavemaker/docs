@@ -1,6 +1,6 @@
 ---
 title: "Observability"
-id: ""
+id: "introduction"
 sidebar_label: "Introduction"
 ---
 ---

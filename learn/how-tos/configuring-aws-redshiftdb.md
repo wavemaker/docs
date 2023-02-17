@@ -1,6 +1,6 @@
 ---
 title: "Connect To AWS Redshift Database"
-id: ""
+id: "configuring-aws-redshiftdb"
 ---
 ---
 

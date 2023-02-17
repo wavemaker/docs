@@ -1,6 +1,6 @@
 ---
 title: "Design Dialog"
-id: ""
+id: "design-dialog"
 ---
 
 ---
@@ -43,7 +43,7 @@ For hiding dialog:
 | Title | Set the title of the design dialog. |
 | Name | The name is a unique identifier for design dialog. |
 | **Accessibility** |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.   **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** ||
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |

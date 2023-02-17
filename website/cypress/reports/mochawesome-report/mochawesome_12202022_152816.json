@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-20T09:58:06.745Z",
+    "end": "2022-12-20T09:58:16.262Z",
+    "duration": 9517,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "17c536bb-5f89-47d2-83b1-e665ee49e3cb",
+      "title": "",
+      "fullFile": "cypress/e2e/check-git-anchor.cy.js",
+      "file": "cypress/e2e/check-git-anchor.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5d538105-c12b-48f5-8c37-044254a88b5b",
+          "title": "Check for anchors",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Broken url check for: connectors/connectors-building",
+              "fullTitle": "Check for anchors Broken url check for: connectors/connectors-building",
+              "timedOut": null,
+              "duration": 9186,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(link);\nCypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.get('a').not('.navItem').not('.dropdown-item').not('#dropdown').each($element => {\n  if ($element[0].href.startsWith(Cypress.config().baseUrl)) {\n    cy.request({\n      url: $element[0].href,\n      failOnStatusCode: false\n    }).then(response => {\n      if (response.status === 404 || response.status === 500) {\n        let brokenLinksObj = {};\n        brokenLinksObj.url = $element[0].href;\n        brokenLinksObj.pageUrl = link;\n        brokenLinksObj.text = $element[0].textContent;\n        brokenLink.push(brokenLinksObj);\n      }\n    });\n  }\n});",
+              "err": {},
+              "uuid": "9455f548-37c5-4087-aadb-fd91bdfd9361",
+              "parentUUID": "5d538105-c12b-48f5-8c37-044254a88b5b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9455f548-37c5-4087-aadb-fd91bdfd9361"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9186,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

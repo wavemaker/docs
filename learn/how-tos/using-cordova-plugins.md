@@ -1,6 +1,6 @@
 ---
 title: "Using Cordova Plugins"
-id: ""
+id: "using-cordova-plugins"
 ---
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Creating Persisted Volumes"
-id: ""
+id: "persistent-volumes"
 sidebar_label: "Volume Creation"
 ---
 ---
@@ -13,13 +13,11 @@ sidebar_label: "Volume Creation"
 <tbody>
 	<tr><td>
 	<strong>Storage Disks</strong>
-	</td><td>
 	<ul>
 	<li>k8s-mbe-redis-data</li>
 	<li>k8s-mbe-swagger-json-data</li>
 	<li>k8s-mbe-tomcat-logs-data</li>
 	</ul>
-	</li>
 	</td></tr>
 </tbody>
 </table>

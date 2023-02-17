@@ -1,6 +1,6 @@
 ---
 title: "Login Action"
-id: ""
+id: "login-action"
 ---
 ---
 
@@ -42,7 +42,7 @@ You can edit the **Properties**, **Data** and **Events** of the **Login Action**
 | Use default success handler | If checked, on successful login, the logged in user will be redirected to the Landing Page configured against the user role (refer to [Login Configuration](/learn/app-development/app-security/login-configuration/) under Security for more info). If a custom logic is required, uncheck this property and implement the logic under the onSuccess event of the Action. |
 | Update data on input change | If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the Action. |
 | Request data on page load | If checked, 'Page' scoped will be triggered on page load while 'Application' scoped will be triggered on application load. |
-| In Flight Behavior | This property determines the behavior when a call is fired through the action with the previous call still pending. Action queues all these calls, waits for the previous call completion and then based on the value of the _inFlightBehavior_ property, decides what to do with all the queued calls: <br> - doNotExecute - all the queued calls will be discarded, <br> - executeAll - all the calls will be triggered one by one, or <br> - executeLast - only the last call is triggered and the rest are discarded, this is the default behavior |
+| In Flight Behavior | This property determines the behavior when a call is fired through the action with the previous call still pending. Action queues all these calls, waits for the previous call completion and then based on the value of the _inFlightBehavior_ property, decides what to do with all the queued calls:   - doNotExecute - all the queued calls will be discarded,   - executeAll - all the calls will be triggered one by one, or   - executeLast - only the last call is triggered and the rest are discarded, this is the default behavior |
 | **Spinner** ||
 | Spinner Context | This property specifies on which UI widget the spinner should show. Leave empty if no spinner required. |
 | Spinner Message | The message to be displayed below the spinner. Leave empty if no message is required below the spinner. Note: If multiple actions are fired then the spinner messages will be displayed as a list below a single spinner. |

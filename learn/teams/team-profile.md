@@ -1,6 +1,6 @@
 ---
 title: Team Profile
-id: ""
+id: "team-profile"
 ---
 ---
 

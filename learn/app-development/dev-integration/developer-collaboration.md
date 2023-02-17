@@ -1,6 +1,6 @@
 ---
 title: "Developer Collaboration"
-id: ""
+id: "developer-collaboration"
 ---
 ---
 

@@ -1,0 +1,93 @@
+/* Start - DocSearch Styles */
+
+.algolia-docsearch-footer .algolia-docsearch-footer--logo {
+    background-color: initial !important;
+}
+
+input#search_input_react {
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    color: #333;
+}
+input#search_input_react:focus, input#search_input_react:active {
+    color: #333;
+}
+
+.navSearchWrapper ::-webkit-input-placeholder { /* Edge */
+  color: #a9a9a9;
+}
+
+.navSearchWrapper :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #a9a9a9;
+}
+
+.navSearchWrapper ::placeholder {
+  color: #a9a9a9;
+}
+
+.navSearchWrapper::before {
+    border: 2px solid #a9a9a9;
+    height: 8px;
+    width: 8px;
+}
+.navSearchWrapper::after{
+    background: #a9a9a9;
+    height: 7px;
+    width:2px;
+}
+.navSearchWrapper .aa-dropdown-menu {
+    padding: 1.2em 1.5em;
+    box-shadow: 0 1px 6px 1px rgba(0,0,0,.1);
+    border: 1px solid #ddd;
+}
+.navSearchWrapper .aa-dropdown-menu [class^='ds-dataset-'] {
+   border: solid 1px #d9d9d9;
+   background: #fff;
+   border-radius: 4px;
+   overflow: auto;
+   padding: 0 8px 8px;
+}
+.navSearchWrapper .aa-dropdown-menu .algolia-docsearch-suggestion--highlight  {
+    color: #174d8c;
+    background: rgba(143, 187, 237, 0.1);
+    padding: 0 0.05em;
+}
+.navSearchWrapper .aa-dropdown-menu .suggestion-layout-simple.algolia-docsearch-suggestion {
+    border-bottom: 1px solid #eee;
+}
+.navSearchWrapper .aa-dropdown-menu .algolia-docsearch-suggestion--subcategory-column {
+    background-color: transparent;
+    color: #a4a7ae;
+    line-height: 1.2;
+    padding: 5px 10px;
+    text-align: left;
+    margin: 10px 0;
+    font-size: .93em;
+    font-weight: 300;
+}
+
+.navSearchWrapper .aa-dropdown-menu .algolia-docsearch-suggestion--category-header {
+    color: #33363d;
+    background-color: transparent;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    margin-top: 8px;
+    padding: 4px 0;
+    font-size: 1.2em;
+}
+.navSearchWrapper .aa-dropdown-menu .algolia-docsearch-suggestion--wrapper {
+    padding: 8px 0;
+}
+
+.navSearchWrapper .aa-dropdown-menu .algolia-docsearch-suggestion--text {
+  display: block;
+  line-height: 1.7;
+  font-size: 0.85em;
+  color: #63676d;
+}
+.navSearchWrapper .aa-dropdown-menu .algolia-docsearch-suggestion--content {
+    border-top: 0;
+}
+
+
+/* End - DocSearch Styles */

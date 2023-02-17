@@ -1,6 +1,6 @@
 ---
 title: "Entity Extraction Prefab"
-id: ""
+id: "entity-extraction-from-documents"
 ---
 ---
 

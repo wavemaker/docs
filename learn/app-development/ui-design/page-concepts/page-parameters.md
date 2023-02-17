@@ -1,6 +1,6 @@
 ---
 title: "Page Parameters"
-id: ""
+id: "page-parameters"
 sidebar_label: "Page Parameters"
 ---
 Page parameters is an important concept. It helps passing data across pages.

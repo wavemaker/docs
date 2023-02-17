@@ -1,6 +1,6 @@
 ---
 title: "Download and Copy Installer"
-id: ""
+id: "download-copy-installer"
 sidebar_label: "Download and Copy Installer"
 ---
 ---

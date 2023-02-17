@@ -1,6 +1,6 @@
 ---
 title: "DataBase Schema Import Modes"
-id: ""
+id: "database-schema-import-modes"
 sidebar_label: "DataBase Schema Modes"
 ---
 ---

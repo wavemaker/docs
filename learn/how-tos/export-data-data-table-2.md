@@ -1,6 +1,6 @@
 ---
 title: "Export Data from Data Table"
-id: ""
+id: "export-data-data-table-2"
 sidebar_label: "Export Data from Data Table - 2"
 ---
 

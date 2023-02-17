@@ -1,6 +1,6 @@
 ---
 title: "Change Icon for the Global Spinner"
-id: ""
+id: "change-icon-global-spinner"
 ---
 ---
 

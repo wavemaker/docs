@@ -1,6 +1,6 @@
 ---
 title: "Submit Parent and Child Records in a Single Transaction"
-id: ""
+id: "adding-parent-child-records-single-transaction"
 ---
 ---
 
@@ -81,8 +81,6 @@ Preview the App. You will see Employee LiveForm fields along with the button as 
 [![preview](/learn/assets/form/Preview1.png)](/learn/assets/form/Preview1.png)
 
 Click the Add Address Details button; the List items and the Form will be added here. If you want to add another address details, click the button to add the same List using Form. Likewise, you can add any number of address details (List with Forms).
-
-[![parent-child](/learn/assets/form/Parent-child.png)](/learn/assets/form/Parent-child.png)
 
 The final object structure will be as shown in the image below along with the employee details, i.e., two address object details, including, one residential and permanent addresses.
 

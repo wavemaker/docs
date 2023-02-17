@@ -1,6 +1,6 @@
 ---
 title: "Queries with Dynamic Where Clause"
-id: ""
+id: "queries-dynamic-clause"
 ---
 
 ## Use Case

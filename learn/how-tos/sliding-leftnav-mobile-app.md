@@ -1,6 +1,6 @@
 ---
 title: "Sliding left navigation for Mobile App"
-id: ""
+id: "sliding-leftnav-mobile-app"
 ---
 ---
 In this section we will see how to add a sliding navigation to your Mobile App. We will be adding an anchor widget to the topnav and the click event of this will slide open the navigation bar.

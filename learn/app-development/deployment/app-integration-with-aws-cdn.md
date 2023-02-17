@@ -1,6 +1,6 @@
 ---
 title: "Deploy static content to AWS CDN for WaveMaker Apps"
-id: ""
+id: "app-integration-with-aws-cdn"
 sidebar_label: "App Integration with AWS CDN"
 ---
 ---

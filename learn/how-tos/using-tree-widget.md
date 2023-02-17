@@ -1,11 +1,11 @@
 ---
 title: "Using Tree Widget"
-id: ""
+id: "using-tree-widget"
 ---
 
 We will build a tree using a simple static structure
 
-1. Drag and drop a tree widget in your canvas. Tree widget comes with multiple nodes [![tree_dnd](/learn/assets/tree_dnd-1024x576.png)](/learn/assets/tree_dnd.png)
+1. Drag and drop a tree widget in your canvas. Tree widget comes with multiple nodes [![tree_dnd]
 2. [Create a static variable](/learn/app-development/variables/variables) giving the structure of the data to be displayed in the tree. Ensure that the _IsList_ check box is selected.
 3. In the _Text Editor_ enter the following code:
 
@@ -51,11 +51,11 @@ If you follow this structure, the label, icon, link and children tags are picked
 
 [![tree_statvar](/learn/assets/tree_statvar.png)](/learn/assets/tree_statvar.png)
 
-4. Next, bind the dataset value property of the tree widget to the dataset under the static variable created in the previous step. [![tree_bind](/learn/assets/tree_bind.png)](/learn/assets/tree_bind.png) You can see the preview on the canvas. 
+1. Next, bind the dataset value property of the tree widget to the dataset under the static variable created in the previous step. [![tree_bind] You can see the preview on the canvas. 
 
-[![tree_design](/learn/assets/tree_design-1024x576.png)](/learn/assets/tree_design.png)
+[![tree_design]](/learn/assets/tree_design.png)
 
-5. Run the application and see the menu in action. 
+1. Run the application and see the menu in action. 
 
 [![tree_run1](/learn/assets/tree_run1.png)](/learn/assets/tree_run1.png)
 
@@ -65,10 +65,10 @@ Tree can be bound to a Java Service which returns an arraylist of Label, icon an
 
 ## Step 1: Create Source - Java Service
 
-1. Create a **Java Service** by name _TreeData_ [![tree_JS](/learn/assets/tree_JS.png)](/learn/assets/tree_JS.png)
+1. Create a **Java Service** by name _TreeData_ [![tree_JS]
 2. The following code needs to be added to the Java service:
 
-1. import the ArrayList utility:
+3. import the ArrayList utility:
 
 ```java        
 import java.util.ArrayList;
@@ -169,20 +169,15 @@ public List<TreeData> sampleJavaOperation(String name) {
 
 1. [Create a Service Variable](/learn/app-development/variables/variables) using the Java Service created in the earlier step 
 
-[![tree_JSvar](/learn/assets/tree_JSvar.png)](/learn/assets/tree_JSvar.png)
 
-2. Drag and drop a tree widget onto the canvas and bind the dataset value to the Service Variable created in the above step [![tree_JSbind](/learn/assets/tree_JSbind.png)](/learn/assets/tree_JSbind.png)
+2. Drag and drop a tree widget onto the canvas and bind the dataset value to the Service Variable created in the above step 
 3. Set the properties of Node Label, Icon and Children respectively 
 
-[![tree_JSprops](/learn/assets/tree_JSprops.png)](/learn/assets/tree_JSprops.png)
 
 ## Step 3: Test Run
 
 1. Run the app and see the tree in action.
 
-[![tree_JSrun](/learn/assets/tree_JSrun.png)](/learn/assets/tree_JSrun.png)
-
-[![tree_JSrun2](/learn/assets/tree_JSrun2.png)](/learn/assets/tree_JSrun2.png)
 
 If you have a requirement, whereby the user decides the structure of the tree. For example, you are building a folder-file structure and the user decides how many folders and files are to be present in a tree. This section deals with such a situation.
 
@@ -254,5 +249,3 @@ $scope.addFolder = function($event, $isolateScope) {
 ## Step 3: Test Run
 
 1. Run the application and see the tree in action.
-
-[![tree_dynamic_run](/learn/assets/tree_dynamic_run.png)](/learn/assets/tree_dynamic_run.png)

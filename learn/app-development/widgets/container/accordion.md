@@ -1,6 +1,6 @@
 ---
 title: "Accordion"
-id: ""
+id: "accordion"
 ---
 
 An **accordion** is a stacked list of UI components, with only one focused component expanded at any point of time and the rest collapsed.
@@ -31,7 +31,7 @@ When you drag and drop an Accordion, by default three accordion panes are provid
 
 ### Accordion Types
 
-<iframe width="100%" height="600" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Accordion">Accordion</iframe>
+<iframe width="100%" height="600" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Accordion">Accordion</iframe>
 
 ## Usage
 
@@ -110,7 +110,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Sub Heading | This bindable property defines the subheading for the accordion pane. It is displayed right below the Title of the Pane. |
 | Name | The name is a unique identifier for the accordion pane. Special characters and spaces are not allowed in widget name. |
 | Badge Value | Value to be displayed in the badge area on the right edge of title next to the expand/collapse button. It is a bindable property. |
-| Badge Type | This bindable property controls the color of the badge. The values are: <br>  - _default_, <br> - _primary_, <br> - _success_, <br>  - _info_, <br> - _warning_, <br> - _danger_. <br>  |
+| Badge Type | This bindable property controls the color of the badge. The values are:    - _default_,   - _primary_,   - _success_,    - _info_,   - _warning_,   - _danger_.    |
 | **Accessibility** |
 | Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.
 
@@ -118,7 +118,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Layout** |
 | Height | The height of the widget can be specified in px or % (i.e 50px, 75%). |
 | **Content** |
-| Content | Bindable property, specifies the content to be displayed within the Accordion Pane: <br> <br> - Inline Content - HTML content or any widget. <br> - Page Content - in the form of Partial pages created within the app, choose from the available list. <br> |
+| Content | Bindable property, specifies the content to be displayed within the Accordion Pane:     - Inline Content - HTML content or any widget.   - Page Content - in the form of Partial pages created within the app, choose from the available list.   |
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is bindable. |
 | Is Default Pane | This bindable property determines if this pane is the default pane. |

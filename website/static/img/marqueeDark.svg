@@ -1,0 +1,17 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="patovdkz1a">
+            <stop stop-color="#5575AF" stop-opacity=".3" offset="0%"/>
+            <stop stop-color="#2B4077" stop-opacity=".3" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect stroke="#445C9B" fill="url(#patovdkz1a)" x=".5" y=".5" width="39" height="39" rx="6"/>
+        <g fill="#F28686" fill-rule="nonzero">
+            <path d="M28 8H12a5.005 5.005 0 0 0-5 5v14a5.005 5.005 0 0 0 5 5h16a5.005 5.005 0 0 0 5-5V13a5.005 5.005 0 0 0-5-5zM9 13a3 3 0 0 1 3-3h16a3 3 0 0 1 3 3v1H9v-1zm19 17H12a3 3 0 0 1-3-3V16h22v11a3 3 0 0 1-3 3z" opacity=".402"/>
+            <path d="M13 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0M16 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0" opacity=".402"/>
+            <path d="M11.5 27.25h2a.75.75 0 1 0 0-1.5h-2a.75.75 0 1 0 0 1.5zm4 0h2a.75.75 0 1 0 0-1.5h-2a.75.75 0 1 0 0 1.5zm4 0h2a.75.75 0 1 0 0-1.5h-2a.75.75 0 1 0 0 1.5zm4 0h2a.75.75 0 1 0 0-1.5h-2a.75.75 0 1 0 0 1.5zm4 0h1a.75.75 0 1 0 0-1.5h-1a.75.75 0 1 0 0 1.5z"/>
+            <path d="M19 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0" opacity=".402"/>
+        </g>
+    </g>
+</svg>

@@ -1,6 +1,6 @@
 ---
 title: "Testing Hybrid Mobile Apps using Live Sync"
-id: ""
+id: "testing-hybrid-mobile-apps-using-live-sync"
 sidebar_label: "Test via Live Sync"
 ---
 ---

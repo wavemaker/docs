@@ -1,6 +1,6 @@
 ---
 title: "Dehydration and Rehydration"
-id: ""
+id: "dehydration-and-rehydration"
 sidebar_label: "Dehydration and Rehydration"
 ---
 ---

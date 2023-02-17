@@ -1,6 +1,6 @@
 ---
 title: "Accessing Elements via JavaScript"
-id: ""
+id: "accessing-elements-via-javascript"
 sidebar_label: "JavaScript Access"
 ---
 ---

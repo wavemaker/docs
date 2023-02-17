@@ -1,6 +1,6 @@
 ---
 title: "Events life cycle in WaveMaker"
-id: ""
+id: "events-overview"
 ---
 ---
 

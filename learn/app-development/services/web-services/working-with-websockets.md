@@ -1,6 +1,6 @@
 ---
 title: "Working with WebSockets"
-id: ""
+id: "working-with-websockets"
 ---
 ---
 

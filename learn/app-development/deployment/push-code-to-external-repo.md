@@ -1,6 +1,6 @@
 ---
 title: "Push Code to External repo"
-id: ""
+id: "push-code-to-external-repo"
 ---
 ---
 

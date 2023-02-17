@@ -1,6 +1,6 @@
 ---
 title: "Integrating JUnit Tests for WaveMaker Application"
-id: ""
+id: "integrating-junit-tests-for-wavemaker-application"
 ---
 ---
 

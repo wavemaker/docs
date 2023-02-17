@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker MockingBird Setup Process"
-id: ""
+id: "getting-started"
 sidebar_label: "Overview"
 ---
 ---

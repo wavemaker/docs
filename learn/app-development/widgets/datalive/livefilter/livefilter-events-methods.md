@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Events & Methods"
-id: ""
+id: "livefilter-events-methods"
 sidebar_label: "Events & Methods"
 ---
 ---

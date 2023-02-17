@@ -1,6 +1,6 @@
 ---
 title: "Live Filter - Basic Usage"
-id: ""
+id: "live-filter-basic-usage"
 sidebar_label: "Creating a Live Filter"
 ---
 ---

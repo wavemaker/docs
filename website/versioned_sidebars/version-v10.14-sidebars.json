@@ -1,0 +1,1919 @@
+{
+  "docs": [
+    "documentation-reference",
+    "app-development/wavemaker-overview/product-walkthrough",
+    {
+      "type": "category",
+      "label": "Pages",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/ui-design/designing-app",
+        "app-development/ui-design/page-creation",
+        {
+          "type": "category",
+          "label": "Layout and Styles",
+          "items": [
+            "app-development/ui-design/page-concepts/page-layouts",
+            "app-development/ui-design/page-concepts/page-templates",
+            "app-development/ui-design/themes",
+            "app-development/ui-design/accessibility"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Page Configure",
+          "items": [
+            "app-development/ui-design/page-artefacts",
+            "app-development/ui-design/page-concepts/page-cache",
+            "app-development/ui-design/page-concepts/partial-pages",
+            "app-development/ui-design/page-concepts/page-parameters",
+            "app-development/ui-design/page-concepts/page-navigation",
+            "app-development/ui-design/page-concepts/page-events",
+            "app-development/ui-design/use-cases-ui-design"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Page Actions",
+          "items": [
+            "app-development/ui-design/page-concepts/page-navigation",
+            "app-development/ui-design/page-concepts/page-events"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Custom Development",
+          "items": [
+            "app-development/ui-design/theme-builder",
+            "app-development/ui-design/creating-themes",
+            "app-development/ui-design/page-concepts/creating-template-bundles"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "SSPA",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/sspa/micro-frontend"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Databases",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/services/database-services/database-services",
+        "app-development/services/database-tools",
+        {
+          "type": "category",
+          "label": "Database Designing",
+          "items": [
+            "app-development/services/database-services/working-with-databases",
+            "app-development/services/database-services/data-modelling",
+            "app-development/services/database-services/database-schema-import-modes",
+            "app-development/services/database-services/working-database-schema",
+            "app-development/services/database-services/database-views",
+            "app-development/services/database-services/temporal-support"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Accessing Database",
+          "items": [
+            "app-development/services/database-access",
+            "app-development/services/database-services/orm-artifacts"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Queries and Procedures",
+          "items": [
+            "app-development/services/database-services/working-with-queries",
+            "app-development/services/database-services/working-stored-procedures",
+            "app-development/services/database-services/versioning-queries-procedures",
+            "app-development/services/database-services/blob-support-queries-procedures",
+            "app-development/services/database-services/invoking-queriesprocedures-java-services"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Database Variables & API",
+          "items": [
+            "app-development/variables/database-crud",
+            "app-development/services/database-crud-event-listeners",
+            "app-development/variables/database-apis",
+            "app-development/services/api-designer/database-service-apis"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "REST & SOAP",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/services/web-services/web-services",
+        {
+          "type": "category",
+          "label": "Restful",
+          "items": [
+            "app-development/services/web-services/rest-services",
+            "app-development/app-security/securing-server-side-properties-rest-services",
+            "app-development/services/web-services/rest-request-timeouts",
+            "app-development/services/web-services/oauth-2-0-rest-services"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "SOAP",
+          "items": [
+            "app-development/services/web-services/working-with-soap-services",
+            "app-development/services/api-designer/web-service-apis"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Websocket",
+          "items": [
+            "app-development/services/web-services/working-with-websockets"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "APIs",
+          "items": [
+            "app-development/services/api-designer/api",
+            "app-development/services/api-mock-server",
+            "app-development/services/api-designer/import-rest-apis-swagger"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Variables",
+          "items": [
+            "app-development/variables/crud-variable",
+            "app-development/variables/web-service",
+            "app-development/variables/websocket-variable"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Java Services",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/services/java-services/java-service",
+        {
+          "type": "category",
+          "label": "Java Services",
+          "items": [
+            "app-development/services/java-services/java-integration-services",
+            "app-development/services/java-services/java-integration-database-service",
+            "app-development/services/java-services/variables",
+            "app-development/services/java-services/generated-rest-apis-api-designer"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Java Services Variables & API",
+          "items": [
+            "app-development/variables/java-services",
+            "app-development/services/api-designer/java-service-apis"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Source Files",
+          "items": [
+            "app-development/services/3rd-party-libraries",
+            "app-development/services/3rd-party-libraries/using-3rd-party-javascript-files",
+            "app-development/services/3rd-party-libraries/using-3rd-party-jar-files"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Variables & Actions",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        {
+          "type": "category",
+          "label": "Variables",
+          "items": [
+            "app-development/variables/variables",
+            "app-development/variables/model-variable",
+            "hybrid-mobile/device-variables"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Binding",
+          "items": [
+            "app-development/variables/variable-binding",
+            "app-development/variables/custom-formatter"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Actions",
+          "items": [
+            "app-development/variables/variables-actions",
+            "app-development/variables/navigation-action",
+            "app-development/variables/login-action",
+            "app-development/variables/logout-action",
+            "app-development/variables/timer-action",
+            "app-development/variables/notification-action"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Events",
+          "items": [
+            "app-development/variables/events",
+            "app-development/variables/accessing-elements-via-javascript"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Security",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        {
+          "type": "category",
+          "label": "App Security",
+          "items": [
+            "app-development/app-security/app-security",
+            "app-development/app-security/authentication",
+            "app-development/app-security/authorization",
+            "app-development/app-security/access-levels-permissions",
+            "app-development/app-security/login-configuration",
+            "app-development/app-security/session-persistence",
+            "app-development/app-security/ssl-encryption",
+            "app-development/app-security/xss-antisamy-policy-configuration",
+            "app-development/app-security/owasp",
+            "app-development/app-security/xss-prevention",
+            "app-development/app-security/central-authentication-system",
+            "app-development/app-security/token-based-authentication",
+            "app-development/app-security/saml-integration",
+            "app-development/app-security/secure-connection-deployed-apps",
+            "app-development/app-security/concurrent-sessions",
+            "app-development/app-security/hostheader-injection"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Security Variable and API",
+          "items": [
+            "app-development/app-security/security-variables",
+            "app-development/app-security/remember-me",
+            "app-development/variables/security-service",
+            "app-development/services/api-designer/security-service-apis"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Developer options",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/dev-integration/developer-tools",
+        "app-development/dev-integration/chrome-developer-tool",
+        "app-development/dev-integration/debugging",
+        "app-development/dev-integration/inspection-framework",
+        "app-development/deployment/build-options",
+        "hybrid-mobile/mobile-automation-appium",
+        {
+          "type": "category",
+          "label": "Developer Integration",
+          "items": [
+            "app-development/wavemaker-overview/project-user-management",
+            "app-development/dev-integration/developer-collaboration",
+            "app-development/dev-integration/extending-application-using-ides",
+            "app-development/dev-integration/import-export-update-apps",
+            "app-development/ui-design/project-shells"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Add-ons",
+          "items": [
+            "app-development/wavemaker-overview/localization",
+            "app-development/wavemaker-overview/artifacts-repository"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Deployment",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/deployment/deployment-overview",
+        "app-development/deployment/deployment-profile",
+        "app-development/deployment/one-click-deployment",
+        {
+          "type": "category",
+          "label": "WaveMaker CI/CD Pipeline",
+          "items": [
+            "app-development/deployment/release-management",
+            "app-development/deployment/configuration-profiles",
+            "app-development/deployment/configuration-management",
+            "app-development/deployment/pipelines-phases"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Pipeline Configuration",
+          "items": [
+            "app-development/deployment/default-pipelines",
+            "app-development/deployment/configure-pipelines"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Deploy to Cloud Providers",
+          "items": [
+            "app-development/deployment/deployment-to-aws",
+            "app-development/deployment/deployment-to-azure",
+            "app-development/deployment/deployment-google-cloud",
+            "app-development/deployment/deployment-to-digital-ocean"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Pipeline Configuration cont.",
+          "items": [
+            "app-development/deployment/phase-configuration",
+            "app-development/deployment/webhooks-integration",
+            "app-development/deployment/tests-integration"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Manage Deployed Apps",
+          "items": [
+            "app-development/deployment/manage-deployed-apps"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Integrate with your CI/CD Providers",
+          "items": [
+            "app-development/deployment/push-code-to-external-repo",
+            "app-development/deployment/integration-with-custom-vcs-provider",
+            "app-development/deployment/export-wavemaker-application",
+            "app-development/deployment/building-with-maven",
+            "app-development/deployment/build-with-docker",
+            "app-development/deployment/jenkins-integration",
+            "app-development/deployment/deployment-using-docker-compose",
+            "how-tos/deployment-to-heroku"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "WaveMaker apps Interation with CDN",
+          "items": [
+            "app-development/deployment/app-integration-with-aws-cdn",
+            "app-development/deployment/app-integration-with-azure-cdn"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Deployment to external web servers",
+          "items": [
+            "app-development/deployment/deployment-web-server",
+            "how-tos/wavemaker-application-deployment-tomcat",
+            "how-tos/wavemaker-application-deployment-websphere-liberty-profile",
+            "how-tos/wavemaker-application-deployment-jboss",
+            "how-tos/wavemaker-application-deployment-weblogic-application-server"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Mobile development",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "hybrid-mobile/building-hybrid-mobile-apps",
+        "hybrid-mobile/native-device-support",
+        "hybrid-mobile/first-mobile-app",
+        {
+          "type": "category",
+          "label": "Mobile Design",
+          "items": [
+            "hybrid-mobile/mobile-page-concepts",
+            "hybrid-mobile/gesture-support",
+            "hybrid-mobile/mobile-tabbar",
+            "hybrid-mobile/mobile-navbar"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Mobile Installer",
+          "items": [
+            "hybrid-mobile/test-run",
+            "hybrid-mobile/debugging-mobile-apps",
+            "hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
+            "hybrid-mobile/mobile-build-android",
+            "hybrid-mobile/mobile-build-manual",
+            "hybrid-mobile/mobile-ios-android-distribution-certificates",
+            "hybrid-mobile/export-cordova-zip",
+            "hybrid-mobile/mobile-build-manual",
+            "hybrid-mobile/mobile-build-appchef"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Mobile Integrations",
+          "items": [
+            "hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
+            "hybrid-mobile/mobile-integrations-amazon-sns",
+            "hybrid-mobile/use-push-notification-wm-mobile-app",
+            "hybrid-mobile/invoking-web-app-apis-mobile-apps"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Offline Features",
+          "items": [
+            "hybrid-mobile/offline-data-support",
+            "hybrid-mobile/offline-data-support-implementation",
+            "hybrid-mobile/switching-offline-online-mode"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Connectors",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "connectors/connectors-introduction",
+        "connectors/connectors-architecture",
+        "connectors/connectors-import",
+        "connectors/connectors-list",
+        "connectors/connectors-building"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Teams",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "teams/overview",
+        "teams/team-setup",
+        "teams/dashboard",
+        "teams/manage-users",
+        "teams/manage-projects",
+        "teams/manage-prefabs",
+        "teams/project-branch",
+        "teams/manage-roles",
+        "teams/code-repository",
+        "teams/import-vcs-project",
+        "teams/team-profile",
+        "teams/manage-subscription",
+        "teams/faqs"
+      ]
+    }
+  ],
+  "Enterprise": [
+    "on-premise/welcome",
+    "on-premise/architecture",
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "on-premise/getting-started",
+        "on-premise/users-roles",
+        "on-premise/prerequisites"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Install on AWS",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "on-premise/aws/wavemaker-enterprise-setup-on-aws",
+        "on-premise/aws/launching-instances-in-aws",
+        "on-premise/aws/install-prerequisites",
+        "on-premise/aws/install/download-copy-installer",
+        "on-premise/aws/install/extract-package",
+        "on-premise/aws/install/initilize-setup",
+        "on-premise/aws/install/setup-using-cw",
+        "on-premise/aws/install/apply-license",
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Install on Azure",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "on-premise/azure/wavemaker-enterprise-setup-on-azure",
+        "on-premise/azure/launching-instances-in-azure",
+        "on-premise/azure/launching-instances-in-azure-vhd",
+        "on-premise/azure/install-prerequisites",
+        "on-premise/azure/install/download-copy-installer",
+        "on-premise/azure/install/extract-package",
+        "on-premise/azure/install/initilize-setup",
+        "on-premise/azure/install/setup-using-cw",
+        "on-premise/azure/install/apply-license",
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Install on GCP",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
+        "on-premise/gcp/launching-instances-in-gcp",
+        "on-premise/gcp/install-prerequisites",
+        "on-premise/gcp/install/download-copy-installer",
+        "on-premise/gcp/install/extract-package",
+        "on-premise/gcp/install/initilize-setup",
+        "on-premise/gcp/install/setup-using-cw",
+        "on-premise/gcp/install/apply-license",
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Install on VMware ESXi",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware",
+        "on-premise/vmware-esxi/launching-instances-in-esxi-ova",
+        "on-premise/vmware-esxi/launching-instances-in-esxi-iso",
+        "on-premise/vmware-esxi/install-prerequisites",
+        "on-premise/vmware-esxi/install/download-copy-installer",
+        "on-premise/vmware-esxi/install/extract-package",
+        "on-premise/vmware-esxi/install/initilize-setup",
+        "on-premise/vmware-esxi/install/setup-using-cw",
+        "on-premise/vmware-esxi/install/apply-license",
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Install on Hyper-V",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv",
+        "on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
+        "on-premise/hyper-v/install-prerequisites",
+        "on-premise/hyper-v/install/download-copy-installer",
+        "on-premise/hyper-v/install/extract-package",
+        "on-premise/hyper-v/install/initilize-setup",
+        "on-premise/hyper-v/install/setup-using-cw",
+        "on-premise/hyper-v/install/apply-license",
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Configure",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "on-premise/configure/config-users-auth-providers",
+        "on-premise/configure/config-vcs",
+        "on-premise/configure/add-dev-capacity",
+        "on-premise/configure/add-apps-capacity",
+        "on-premise/configure/config-pipeline",
+        "on-premise/configure/config-ssl"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Observability",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "on-premise/observability/introduction",
+        {
+          "type": "category",
+          "label": "Logs Aggregation",
+          "items": [
+            "on-premise/observability/logs-aggregation/overview",
+            "on-premise/observability/logs-aggregation/kibana"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Metrics Collection",
+          "items": [
+            "on-premise/observability/metrics-collection/overview",
+            "on-premise/observability/metrics-collection/prometheus",
+            "on-premise/observability/metrics-collection/alerts",
+            "on-premise/observability/metrics-collection/grafana"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Upgrade",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "on-premise/upgrade/upgrade-setup",
+        "on-premise/upgrade/download-copy-patch",
+        "on-premise/upgrade/extract-patch",
+        "on-premise/upgrade/run-patch",
+        "on-premise/upgrade/docker-upgrade",
+        "on-premise/upgrade/os-upgrade"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Disaster Recovery",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "on-premise/disaster-recovery/backup-and-restore"
+      ]
+    }
+  ],
+  "Tutorials": [
+    "tutorials",
+    {
+      "type": "category",
+      "label": "Build an app in 5 Minutes",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "tutorials/build-app-in-5-minutes/app-demo",
+        "tutorials/build-app-in-5-minutes/import-database",
+        "tutorials/build-app-in-5-minutes/drag-and-drop-widget",
+        "tutorials/build-app-in-5-minutes/connecting-datasource-to-widget",
+        "tutorials/build-app-in-5-minutes/preview-test-app"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Essentials",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "jump-start/jump-start-app-essentials",
+        "jump-start/jump-start-db-essentials"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "App Building Exercises",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "tutorials/leave-management-app",
+        "tutorials/asset-management-app"
+      ]
+    }
+  ],
+  "How to Docs": [
+    "howtos-documents",
+    "app-development/wavemaker-overview/wavemaker-best-practices",
+    {
+      "type": "category",
+      "label": "App solution",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/creating-registration-page",
+        "how-tos/support-password-encryption",
+        "how-tos/error-handling-wavemaker-app",
+        "how-tos/prevent-user-leaving-page-unsaved-changes",
+        "how-tos/microfrontends-iframe",
+        "how-tos/building-pwa-app"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "UI design",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/passing-parameters-pages",
+        "how-tos/passing-parameters-partial-page",
+        "how-tos/script-access",
+        "how-tos/use-static-variable-pass-data-pages",
+        "how-tos/customise-login-page",
+        "how-tos/incorporating-additional-icons",
+        "how-tos/displaying-icon-color-based-upon-condition",
+        "how-tos/change-icon-global-spinner",
+        "how-tos/changing-default-favicon",
+        "how-tos/changing-app-logo",
+        "how-tos/changing-page-title",
+        "how-tos/customise-app-style",
+        "how-tos/use-conditional-class-property",
+        "how-tos/use-conditional-style-property",
+        "how-tos/customize-existing-theme",
+        "how-tos/adjust-leftnav-width",
+        "how-tos/customizing-theme",
+        "how-tos/widget-template-layout",
+        "how-tos/custom-widget-template",
+        "how-tos/using-custom-formatter"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Nav & Dropdown",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/dynamic-menu-based-user-role",
+        "how-tos/restricting-menu-item-display-based-user-role",
+        "how-tos/implementing-localization-dropdown-menu"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Localization",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/localization-wavemaker-apps",
+        "how-tos/setting-language-date-format",
+        "app-development/widgets/form-widgets/select-locale-usage",
+        "how-tos/localization-error-messages",
+        "how-tos/localization-data-table-column-headings"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Security",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/saml-integration-onelogin",
+        "how-tos/saml-integration-adfs",
+        "how-tos/sso-openid-azure-active-directory",
+        "how-tos/custom-security-using-google-oauth-prefab",
+        "how-tos/multiple-security-provider-implementation",
+        "how-tos/customizing-post-authentication-handlers"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Databases",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/queries-dynamic-clause",
+        "how-tos/connect-azure-sql-server",
+        "app-development/services/database-services/download-jdbc-driver-jar",
+        "how-tos/fetch-default-number100-records-database",
+        "how-tos/one-many-relationship",
+        "how-tos/working-with-temporals",
+        "how-tos/configuring-aws-redshiftdb",
+        "how-tos/configuring-sap-hana-clouddb",
+        "how-tos/audit-history-using-crud-listeners",
+        "how-tos/rowlevel-security-using-crud-event-listeners",
+        "how-tos/custom-business-logic-using-crud-event-listeners"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Web services",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/using-app-environment-properties",
+        "how-tos/consuming-existing-wm-api-into-another-wm-project",
+        "how-tos/using-post-method-send-data-rest-api",
+        "how-tos/request-response-processing-rest-services",
+        "how-tos/intercept-requests-responses-api-calls-one-place",
+        "how-tos/websocket-usage-chatroom-app",
+        "how-tos/working-api-with-different-pagination-formats"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Java services",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/sending-email-using-java-service",
+        "how-tos/implementing-forgot-password-feature-using-java-service",
+        "how-tos/accessing-rest-apis-java-service",
+        "how-tos/scheduling-java-service",
+        "how-tos/integrating-junit-tests-for-wavemaker-application",
+        "app-development/services/database-services/orm-artifacts",
+        "how-tos/pre-post-processing-db-service-apis",
+        "how-tos/accessing-loggedin-user-information-using-a-java-service",
+        "how-tos/camunda-wavemaker-app-integration",
+        "how-tos/azure-file-storage-connector",
+        "how-tos/insert-data-from-excel",
+        "how-tos/aws-s3-connector",
+        "how-tos/twilio-connector",
+        "how-tos/twilio-otp-integration"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Variables",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/using-filter-conditions-variable",
+        "how-tos/using-live-variable-apis",
+        "how-tos/using-notification-actions",
+        "how-tos/using-navigation-action",
+        "how-tos/using-variables-queries-procedure",
+        "how-tos/using-service-variable-form",
+        "how-tos/using-filter-criteria-data-live-widgets",
+        "how-tos/using-filter-criteria-database-crud-variable"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "JavaScript",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/using-javascript-binding",
+        "how-tos/using-javascript-external-url",
+        "how-tos/using-javascript-loop-command",
+        "how-tos/using-function-evaluating-conditions"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Developer options",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/synchronizing-wavemaker-apps-ides-beta",
+        "how-tos/synchronizing-java-services-controller",
+        "how-tos/integrating-amazon-cognito-user-authentication",
+        "how-tos/integrating-sample-jasper-report-wavemaker-application",
+        "how-tos/generate-pdf-file-using-jasper-reports",
+        "how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
+        "how-tos/app-migration-wavemaker-9x-10x",
+        "how-tos/debug-monitor-performance-issues-using-fusion-reactor"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Deployment",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/ssl-offloading"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Mobile App Solutions",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/mobile-notify-new-version-update"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Mobile gesture",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/setting-swipe-gestures-list-widget",
+        "how-tos/working-pull-refresh"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Mobile widgets",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/using-search-widget-within-navbar",
+        "app-development/widgets/mobile-widgets/barcode-scanner"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Mobile UI design",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/splashscreens-icons",
+        "how-tos/using-cordova-plugins",
+        "how-tos/support-for-tablet-view-in-mobile",
+        "how-tos/sliding-leftnav-mobile-app",
+        "how-tos/mobile-app-using-bar-code",
+        "how-tos/custom-date-picker"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Cards",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/capturing-card-items"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "DataTable",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/data-table-actions",
+        "how-tos/how-to-configure-row-expansion-in-a-data-table",
+        "how-tos/data-table-widget-representations",
+        "how-tos/view-master-detail-data-records-using-data-table",
+        "how-tos/add-master-detail-records-using-data-table",
+        "how-tos/export-data-data-table",
+        "how-tos/export-data-data-table-2",
+        "how-tos/setting-blob-filename",
+        "how-tos/dynamic-data-tables",
+        "how-tos/customize-dynamic-datatable",
+        "how-tos/data-table-column-bound-query",
+        "how-tos/combining-columns-data-table",
+        "how-tos/data-table-styling",
+        "how-tos/data-table-format-options",
+        "how-tos/concurrency-record-locking-wavemaker",
+        "how-tos/edit-datatable-bound-to-queryapi"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "List",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/list-grouped",
+        "how-tos/list-multi-grouped",
+        "how-tos/onrender-event-list-widget",
+        "how-tos/list-data-table",
+        "how-tos/building-editable-list",
+        "how-tos/building-cascading-lists",
+        "how-tos/list-item-access",
+        "how-tos/localization-data-table-column-headings"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Forms",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/using-live-form",
+        "how-tos/how-tos-form",
+        "how-tos/live-form-tabbed-form",
+        "how-tos/how-tos-live-form",
+        "how-tos/live-form-linking-another-widget",
+        "how-tos/live-form-related-fields",
+        "how-tos/get-validation-messages-form",
+        "how-tos/adding-master-detail-records-transaction",
+        "how-tos/adding-parent-child-records-single-transaction",
+        "how-tos/adding-parent-child-using-form-datatable",
+        "how-tos/using-cascading-select-autocomplete-live-form-fields",
+        "how-tos/using-cascading-select-within-live-form",
+        "how-tos/using-cascading-filter-populate-live-form",
+        "how-tos/using-wizard-master-detail-live-form",
+        "how-tos/copy-to-clipboard",
+        "how-tos/form-with-wizard",
+        "how-tos/form-conditional-flows"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Calendar",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/how-tos-calendar",
+        "how-tos/calendar-usage-create-event",
+        "how-tos/calender-usage-google-calendar-integration"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "CheckboxSet",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/checkboxset-filter-list-data"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "FileUpload",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/form-widgets/file-upload-basic-usage",
+        "how-tos/file-upload-widget-operations",
+        "how-tos/upload-file-save-database",
+        "how-tos/file-upload-blob-data",
+        "how-tos/file-upload-custom-directory",
+        "how-tos/accessing-file-upload-java-code",
+        "how-tos/upload-files-from-live-form-form"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Radioset",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/radioset-filter-list"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Rating",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/rating-widget-using-static-data",
+        "how-tos/rating-widget-using-static-variable",
+        "how-tos/building-rating-widget-using-variable",
+        "how-tos/rating-widget-interactive"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Select",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/configuring-select-widget-static-list-values",
+        "how-tos/configuring-select-widget-static-variable",
+        "how-tos/configuring-select-widget-variable",
+        "how-tos/configuring-select-widget-display-data-fields",
+        "how-tos/configuring-select-widget-database-fields",
+        "how-tos/configuring-cascading-select",
+        "how-tos/selection-widgets-use-case"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Progress Circle",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/using-progress-circle-widget"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Charts",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/working-with-charts",
+        "how-tos/charts-displaying-user-selection-another-widget",
+        "how-tos/charts-handling-dynamic-data",
+        "how-tos/charts-custom-data"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Richtext Editor",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/adding-custom-fonts-richtext-editor"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Live filter",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/live-filter-applying",
+        "how-tos/live-filter-multiple-values",
+        "how-tos/live-filter-range-filter"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Container",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/setting-partial-page-content-accordion-within-list",
+        "how-tos/setting-partial-page-content-panel-within-list-using-javascript",
+        "how-tos/how-tos-wizard",
+        "how-tos/dynamic-tabs-accordions"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Tree",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/tree-use-case-static-variable",
+        "how-tos/tree-use-case-java-service",
+        "how-tos/tree-use-case-dynamic-tree"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Prefabs",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "how-tos/create-simple-prefab",
+        "how-tos/create-prefab-with-partials",
+        "how-tos/create-prefab-using-third-party-ui-widgets",
+        "how-tos/create-simple-prefab",
+        "how-tos/create-prefab-using-d3-nvd3-charts",
+        "how-tos/create-prefab-using-d3-library-datamaps",
+        "how-tos/create-prefab-using-jquery-plugin",
+        "how-tos/create-prefab-using-angular-module",
+        "how-tos/create-prefab-using-custom-element",
+        "how-tos/integrating-azure-oauth-prefab"
+      ]
+    }
+  ],
+  "Widgets": [
+    "app-development/widgets/widget-library",
+    "app-development/widgets/ui-elements",
+    {
+      "type": "category",
+      "label": "Cards",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/datalive/cards",
+        "app-development/widgets/datalive/cards/card-basic-usage",
+        "app-development/widgets/datalive/cards/cards-data-source",
+        "app-development/widgets/datalive/cards/cards-templates",
+        "app-development/widgets/datalive/cards/card-configuration",
+        "app-development/widgets/datalive/cards/card-behavior-settings",
+        "app-development/widgets/datalive/cards/cards-properties-events-methods",
+        "app-development/widgets/datalive/cards/card-use-cases"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Data Table",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/datalive/data-table",
+        "app-development/widgets/datalive/datatable/data-table-basic-usage",
+        "app-development/widgets/datalive/datatable/data-source",
+        "app-development/widgets/datalive/datatable/layouts",
+        "app-development/widgets/datalive/datatable/styles",
+        "app-development/widgets/datalive/datatable/table-configuration",
+        "app-development/widgets/datalive/datatable/field-configuration",
+        "app-development/widgets/datalive/field-validator",
+        "app-development/widgets/datalive/datatable/summary-row",
+        "app-development/widgets/datalive/datatable/row-expansion-data-table",
+        "app-development/widgets/datalive/datatable/actions",
+        "app-development/widgets/datalive/datatable/datatable-events-methods",
+        "app-development/widgets/datalive/datatable/data-table-use-cases"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "List",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/datalive/list",
+        "how-tos/list-basic-usage",
+        "app-development/widgets/datalive/list/list-data-source",
+        "app-development/widgets/datalive/list/list-templates",
+        "app-development/widgets/datalive/list/configuration",
+        "app-development/widgets/datalive/list/behavior-settings",
+        "app-development/widgets/datalive/list/list-properties-events-methods",
+        "app-development/widgets/datalive/list/list-use-cases"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Form",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/datalive/form",
+        "app-development/widgets/datalive/form/form-usage-scenarios",
+        "app-development/widgets/datalive/form/form-data-source",
+        "app-development/widgets/datalive/form/form-layouts",
+        "app-development/widgets/datalive/form/form-configurations",
+        "app-development/widgets/datalive/form/form-fields-configuration",
+        "app-development/widgets/datalive/field-validator",
+        "app-development/widgets/datalive/form/form-events-methods"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Live Form",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/datalive/live-form",
+        "app-development/widgets/datalive/live-form/live-form-basic-usage",
+        "app-development/widgets/datalive/live-form/live-form-data-source",
+        "app-development/widgets/datalive/live-form/liveform-layouts",
+        "app-development/widgets/datalive/live-form/liveform-configurations",
+        "app-development/widgets/datalive/live-form/fields-configuration",
+        "app-development/widgets/datalive/live-form/liveform-actions",
+        "app-development/widgets/datalive/live-form/events-methods",
+        "app-development/widgets/datalive/live-form/liveform-use-cases"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Form Widgets",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/form-widgets/button",
+        "app-development/widgets/form-widgets/button-group",
+        "app-development/widgets/form-widgets/text",
+        "app-development/widgets/form-widgets/number",
+        "app-development/widgets/form-widgets/textarea",
+        "app-development/widgets/form-widgets/select",
+        "app-development/widgets/form-widgets/chips",
+        "app-development/widgets/form-widgets/currency",
+        "app-development/widgets/form-widgets/radioset",
+        "app-development/widgets/form-widgets/checkbox",
+        "app-development/widgets/form-widgets/checkboxset",
+        "app-development/widgets/form-widgets/toggle",
+        "app-development/widgets/form-widgets/switch",
+        "app-development/widgets/form-widgets/date-time-datetime",
+        "app-development/widgets/form-widgets/calendar",
+        "app-development/widgets/form-widgets/file-upload",
+        "app-development/widgets/form-widgets/color-picker",
+        "app-development/widgets/form-widgets/slider",
+        "app-development/widgets/form-widgets/rating-widget",
+        "app-development/widgets/form-widgets/select-locale"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Live Filter",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/datalive/live-filter",
+        "app-development/widgets/datalive/livefilter/live-filter-basic-usage",
+        "app-development/widgets/datalive/livefilter/live-filter-data-source",
+        "app-development/widgets/datalive/livefilter/livefilter-layouts",
+        "app-development/widgets/datalive/livefilter/filter-configurations",
+        "app-development/widgets/datalive/livefilter/livefilter-field-configuration",
+        "app-development/widgets/datalive/livefilter/livefilter-actions",
+        "app-development/widgets/datalive/livefilter/livefilter-events-methods",
+        "app-development/widgets/datalive/livefilter/livefilter-use-cases"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Container",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/container/grid-layout",
+        "app-development/widgets/container/accordion",
+        "app-development/widgets/container/container",
+        "app-development/widgets/container/panel",
+        "app-development/widgets/container/tabs",
+        "app-development/widgets/container/tile",
+        "app-development/widgets/container/wizard"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Basic Widgets",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/basic/label",
+        "app-development/widgets/basic/anchor",
+        "app-development/widgets/basic/icon",
+        "app-development/widgets/basic/picture",
+        "app-development/widgets/basic/tree",
+        "app-development/widgets/basic/video",
+        "app-development/widgets/basic/audio",
+        "app-development/widgets/basic/html",
+        "app-development/widgets/basic/iframe",
+        "app-development/widgets/basic/message",
+        "app-development/widgets/basic/spinner",
+        "app-development/widgets/basic/search",
+        "app-development/widgets/basic/search-basic-usage",
+        "app-development/widgets/basic/richtext-editor",
+        "app-development/widgets/basic/progress-bar",
+        "app-development/widgets/progress-circle"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Charts",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/chart/chart-widget",
+        "app-development/widgets/chart/onbeforerender"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Navigation",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        {
+          "type": "category",
+          "label": "Nav",
+          "items": [
+            "app-development/widgets/navigation/nav",
+            "app-development/widgets/navigation/nav-basic-usage"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Nav Bar",
+          "items": [
+            "app-development/widgets/navigation/nav-bar"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Breadcrumb",
+          "items": [
+            "app-development/widgets/navigation/breadcrumb",
+            "app-development/widgets/navigation/breadcrumb-use-cases"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Dropdown Menu",
+          "items": [
+            "app-development/widgets/navigation/dropdown-menu",
+            "app-development/widgets/navigation/dropdown-menu-use-cases"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Popover",
+          "items": [
+            "app-development/widgets/navigation/popover",
+            "app-development/widgets/navigation/popover-basic-usage"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Advanced Widgets",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/advanced/login",
+        "app-development/widgets/advanced/marquee",
+        "app-development/widgets/advanced/carousel"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Dialog Widgets",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/modal-windows-dialogs",
+        "app-development/widgets/design-dialog",
+        "app-development/widgets/alert-dialog",
+        "app-development/widgets/confirm-dialog",
+        "app-development/widgets/iframe-dialog",
+        "app-development/widgets/page-dialog",
+        "app-development/widgets/login-dialog"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Mobile & Device Widgets",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/widgets/mobile-widgets/camera",
+        "app-development/widgets/mobile-widgets/media-list",
+        "app-development/widgets/mobile-widgets/segmented-control",
+        "app-development/widgets/mobile-widgets/barcode-scanner"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Prefabs",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/custom-widgets/prefabs-overview",
+        "app-development/custom-widgets/creating-prefabs",
+        "app-development/custom-widgets/prefab-with-partials",
+        "app-development/custom-widgets/use-cases-prefabs",
+        {
+          "type": "category",
+          "label": "Prefabs Directory",
+          "items": [
+            "app-development/widgets/prefab/youtube",
+            "app-development/widgets/prefab/googlemaps",
+            "app-development/widgets/prefab/qrcode",
+            "app-development/widgets/prefab/barcode-scanner-prefab",
+            "app-development/widgets/prefab/box-viewer-prefab",
+            "app-development/widgets/prefab/entity-extraction-from-documents",
+            "app-development/widgets/prefab/docusign"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "OAuth",
+          "items": [
+            "app-development/widgets/prefab/oauth-prefabs",
+            "app-development/widgets/prefab/oauth-prefabs/box",
+            "app-development/widgets/prefab/oauth-prefabs/facebook",
+            "app-development/widgets/prefab/oauth-prefabs/google",
+            "app-development/widgets/prefab/oauth-prefabs/instagram",
+            "app-development/widgets/prefab/oauth-prefabs/linkedin"
+          ]
+        }
+      ]
+    }
+  ],
+  "Release Notes": [
+    "wavemaker-release-notes",
+    "wavemaker-known-issues",
+    {
+      "type": "category",
+      "label": "Release Notes",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        {
+          "type": "category",
+          "label": "Versions: 10.14.x",
+          "items": [
+            "wavemaker-release-notes/v10-14-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.13.x",
+          "items": [
+            "wavemaker-release-notes/v10-13-2",
+            "wavemaker-release-notes/v10-13-1",
+            "wavemaker-release-notes/v10-13-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.12.x",
+          "items": [
+            "wavemaker-release-notes/v10-12-2",
+            "wavemaker-release-notes/v10-12-1",
+            "wavemaker-release-notes/v10-12-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.11.x",
+          "items": [
+            "wavemaker-release-notes/v10-11-2",
+            "wavemaker-release-notes/v10-11-1",
+            "wavemaker-release-notes/v10-11-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.10.x",
+          "items": [
+            "wavemaker-release-notes/v10-10-3",
+            "wavemaker-release-notes/v10-10-2",
+            "wavemaker-release-notes/v10-10-1",
+            "wavemaker-release-notes/v10-10-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.9.x",
+          "items": [
+            "wavemaker-release-notes/v10-9-2",
+            "wavemaker-release-notes/v10-9-1",
+            "wavemaker-release-notes/v10-9-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.8.x",
+          "items": [
+            "wavemaker-release-notes/v10-8-2",
+            "wavemaker-release-notes/v10-8-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.7.x",
+          "items": [
+            "wavemaker-release-notes/v10-7-5",
+            "wavemaker-release-notes/v10-7-4",
+            "wavemaker-release-notes/v10-7-3",
+            "wavemaker-release-notes/v10-7-2",
+            "wavemaker-release-notes/v10-7-1",
+            "wavemaker-release-notes/v10-7-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.6.x",
+          "items": [
+            "wavemaker-release-notes/v10-6-9",
+            "wavemaker-release-notes/v10-6-7",
+            "wavemaker-release-notes/v10-6-6",
+            "wavemaker-release-notes/v10-6-5",
+            "wavemaker-release-notes/v10-6-4",
+            "wavemaker-release-notes/v10-6-3",
+            "wavemaker-release-notes/v10-6-2",
+            "wavemaker-release-notes/v10-6-1",
+            "wavemaker-release-notes/v10-6-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.5.x",
+          "items": [
+            "wavemaker-release-notes/v10-5-6",
+            "wavemaker-release-notes/v10-5-5",
+            "wavemaker-release-notes/v10-5-4",
+            "wavemaker-release-notes/v10-5-3",
+            "wavemaker-release-notes/v10-5-2",
+            "wavemaker-release-notes/v10-5-1",
+            "wavemaker-release-notes/v10-5-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.4.x",
+          "items": [
+            "wavemaker-release-notes/v10-4-2",
+            "wavemaker-release-notes/v10-4-1",
+            "wavemaker-release-notes/v10-4-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.3.x",
+          "items": [
+            "wavemaker-release-notes/v10-3-3",
+            "wavemaker-release-notes/v10-3-2",
+            "wavemaker-release-notes/v10-3-1",
+            "wavemaker-release-notes/v10-3-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.2.x",
+          "items": [
+            "wavemaker-release-notes/v10-2-7",
+            "wavemaker-release-notes/v10-2-6",
+            "wavemaker-release-notes/v10-2-4",
+            "wavemaker-release-notes/v10-2-3",
+            "wavemaker-release-notes/v10-2-2",
+            "wavemaker-release-notes/v10-2-1",
+            "wavemaker-release-notes/v10-2-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.1.x",
+          "items": [
+            "wavemaker-release-notes/v10-1-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: 10.0.x",
+          "items": [
+            "wavemaker-release-notes/v10-0-4",
+            "wavemaker-release-notes/v10-0-3",
+            "wavemaker-release-notes/v10-0-2",
+            "wavemaker-release-notes/v10-0-1",
+            "wavemaker-release-notes/v10-0-ga",
+            "wavemaker-release-notes/v10-0-preview"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Release v9.x",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "wavemaker-release-notes/v9-4-0",
+        "wavemaker-release-notes/v9-3-0",
+        {
+          "type": "category",
+          "label": "Versions: 9.2.x",
+          "items": [
+            "wavemaker-release-notes/v9-2-0",
+            "wavemaker-release-notes/v9-2-1"
+          ]
+        },
+        "wavemaker-release-notes/v9-1-0",
+        {
+          "type": "category",
+          "label": "Versions: 9.0.x",
+          "items": [
+            "wavemaker-release-notes/v9-0-2",
+            "wavemaker-release-notes/v9-0-1",
+            "wavemaker-release-notes/v9-0-ga"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Release v8.x",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "wavemaker-release-notes/v8-5-0",
+        {
+          "type": "category",
+          "label": "Versions: 8.4.x",
+          "items": [
+            "wavemaker-release-notes/v8-4-2-2",
+            "wavemaker-release-notes/v8-4-2-1",
+            "wavemaker-release-notes/v8-4-2",
+            "wavemaker-release-notes/v8-4-1",
+            "wavemaker-release-notes/v8-4-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: v8.3.x",
+          "items": [
+            "wavemaker-release-notes/v8-3-3",
+            "wavemaker-release-notes/v8-3-2",
+            "wavemaker-release-notes/v8-3-1",
+            "wavemaker-release-notes/v8-3-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: v8.2.x",
+          "items": [
+            "wavemaker-release-notes/v8-2-3",
+            "wavemaker-release-notes/v8-2-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: v8.1.x",
+          "items": [
+            "wavemaker-release-notes/v8-1-1",
+            "wavemaker-release-notes/v8-1-0"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Versions: v8.0.x",
+          "items": [
+            "wavemaker-release-notes/v8-0-6",
+            "wavemaker-release-notes/v8-0-5",
+            "wavemaker-release-notes/v8-0-4",
+            "wavemaker-release-notes/v8-0-3",
+            "wavemaker-release-notes/v8-0-2",
+            "wavemaker-release-notes/v8-0-1",
+            "wavemaker-release-notes/v8-0-ga",
+            "wavemaker-release-notes/v8-0-beta"
+          ]
+        }
+      ]
+    }
+  ],
+  "FAQs": [
+    {
+      "type": "category",
+      "label": "Frequently Asked Questions",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/wavemaker-app-development-faqs/index",
+        "app-development/wavemaker-overview/pre-requisites",
+        "app-development/wavemaker-overview/supported-technologies",
+        "wmo-setup",
+        {
+          "type": "category",
+          "label": "General",
+          "items": [
+            "app-development/wavemaker-app-development-faqs/what-is-wavemaker-app",
+            "app-development/wavemaker-app-development-faqs/skills-need-to-build-wavemaker-app",
+            "app-development/wavemaker-app-development-faqs/app-development-using-rad",
+            "app-development/wavemaker-app-development-faqs/build-app-using-low-code-approach",
+            "app-development/wavemaker-app-development-faqs/model-first-or-UI-first-rad-development",
+            "app-development/wavemaker-app-development-faqs/customizing-app-to-your-own-branding"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Architecture",
+          "items": [
+            "app-development/wavemaker-app-development-faqs/wavemaker-application-architecture",
+            "app-development/wavemaker-app-development-faqs/wavemaker-architecture",
+            "app-development/wavemaker-app-development-faqs/micro-services-enabled-architecture"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Widgets and Services",
+          "items": [
+            "app-development/wavemaker-app-development-faqs/widgets-in-wavemaker",
+            "app-development/wavemaker-app-development-faqs/building-widget-extension-custom-widget",
+            "app-development/services/creating-backend-services",
+            "app-development/variables/data-integration",
+            "app-development/wavemaker-app-development-faqs/database-in-wavemaker",
+            "app-development/wavemaker-app-development-faqs/databases-supported-by-wavemaker-platform",
+            "app-development/wavemaker-app-development-faqs/web-services",
+            "app-development/wavemaker-app-development-faqs/java-services-in-wavemaker"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Security",
+          "items": [
+            "app-development/wavemaker-app-development-faqs/security-in-wavemaker",
+            "app-development/wavemaker-app-development-faqs/security-provided-for-wavemaker-apps"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Mobile App",
+          "items": [
+            "app-development/wavemaker-app-development-faqs/build-responsive-ui-using-visual-rad-approach",
+            "app-development/wavemaker-app-development-faqs/publishing-app-to-app-store",
+            "app-development/wavemaker-app-development-faqs/publish-to-app-store-without-any-limitations"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Development and Code",
+          "items": [
+            "app-development/wavemaker-app-development-faqs/working-with-multiple-developers",
+            "app-development/wavemaker-app-development-faqs/libraries-used-app-runtime",
+            "app-development/wavemaker-app-development-faqs/editing-generated-code-outside-platform",
+            "app-development/wavemaker-app-development-faqs/platform-generated-code"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Licenses and other",
+          "items": [
+            "app-development/wavemaker-app-development-faqs/redistributing-licensing",
+            "app-development/wavemaker-app-development-faqs/application-stack-upgrades",
+            "app-development/wavemaker-app-development-faqs/is-wavemaker-app-scalable"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Platform Concepts",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "app-development/wavemaker-overview/platform-overview",
+        "app-development/ui-design/page-concepts",
+        "app-development/ui-design/design-overview",
+        "app-development/services/backend-architecture",
+        "app-development/variables/events-overview",
+        "app-development/variables/integration-binding-layer"
+      ]
+    }
+  ]
+}

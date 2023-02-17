@@ -1,6 +1,6 @@
 ---
 title: "Mobile Navbar"
-id: ""
+id: "mobile-navbar"
 ---
 ---
 

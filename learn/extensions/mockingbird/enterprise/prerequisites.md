@@ -1,6 +1,6 @@
 ---
 title: "MockingBird Prerequisites"
-id: ""
+id: "prerequisites"
 sidebar_label: "What you'll need"
 ---
 ---
@@ -32,7 +32,6 @@ You can setup MockingBird on any K8s Cluster, but we verified on Google Kuberne
 <tbody>
 	<tr><td>
 	<strong>Software</strong>
-	</td><td>
 	<ul>
 	<li>Kubectl v1.24.0 or higher</li>
 	<li>Helm v3.8.0 or higher</li>
@@ -40,7 +39,6 @@ You can setup MockingBird on any K8s Cluster, but we verified on Google Kuberne
 	<li>sha1sum</li>
 	<li>Basic linux commands like cat</li>
 	</ul>
-	</li>
 	</td></tr>
 </tbody>
 </table>
@@ -53,13 +51,11 @@ You can setup MockingBird on any K8s Cluster, but we verified on Google Kuberne
 <tbody>
 	<tr><td>
 	<strong>Persistent Volume Claims</strong>
-	</td><td>
 	<ul>
 	<li>pv-claim-k8s-mbe-redis-data</li>
 	<li>pv-claim-k8s-mbe-swagger-json-data</li>
 	<li>pv-claim-k8s-mbe-tomcat-logs-data</li>
 	</ul>
-	</li>
 	</td></tr>
 </tbody>
 </table>

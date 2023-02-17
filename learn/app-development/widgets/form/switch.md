@@ -1,6 +1,6 @@
 ---
 title: "Switch"
-id: ""
+id: "switch"
 ---
 
 **Switch widget** can help switching between 3 or more different options by pressing a single key.

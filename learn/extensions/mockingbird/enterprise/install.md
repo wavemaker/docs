@@ -1,6 +1,6 @@
 ---
 title: "Install MockingBird Platform"
-id: ""
+id: "install"
 sidebar_label: "Install"
 ---
 ---

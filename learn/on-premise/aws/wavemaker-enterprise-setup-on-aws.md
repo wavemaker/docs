@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup Process on AWS"
-id: ""
+id: "wavemaker-enterprise-setup-on-aws"
 sidebar_label: "Overview"
 ---
 ---

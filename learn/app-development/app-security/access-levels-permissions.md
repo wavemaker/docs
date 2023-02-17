@@ -1,6 +1,6 @@
 ---
 title: "Access Levels & Permissions"
-id: ""
+id: "access-levels-permissions"
 ---
 ---
 
@@ -78,8 +78,8 @@ Once you create roles in a project, you can enable **role-based access** for a w
 
 1. Select the widget in the **Design** mode.
 2. Click on the **Security** tab on the **Properties Panel**.
-3. You will find that the _Widget Access_ property is set with the User Role Group as _Everyone_ by default.  <br><br>
-You can set the User Role Group as: <br>
+3. You will find that the _Widget Access_ property is set with the User Role Group as _Everyone_ by default.    
+You can set the User Role Group as:  
     - **Everyone** - access is granted to all users irrespective of whether they are logged in or not. This setting would be used for an About or Contact Us pages which can be viewed by anyone.
     - **Anonymous** - access is granted only to users who are not logged in. An example would be the login button on the About page
     - **Authenticated** - access is granted only to users who are logged in. For example the logout button.

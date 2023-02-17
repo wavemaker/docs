@@ -1,6 +1,6 @@
 ---
 title: "Submit Parent and Child Records in a Single Transaction using Form and Data Table"
-id: ""
+id: "adding-parent-child-using-form-datatable"
 ---
 ---
 

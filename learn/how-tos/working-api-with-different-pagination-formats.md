@@ -1,6 +1,6 @@
 ---
 title: "Working with API with different pagination formats"
-id: ""
+id: "working-api-with-different-pagination-formats"
 ---
 ---
 

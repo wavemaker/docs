@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker 9.GA - Release date: 20 September 2017"
-id: ""
+id: "v9-0-ga"
 sidebar_label: "Release v9.GA"
 ---
 *This release includes enhancements to the product.*
@@ -129,14 +129,14 @@ For more information, see [Working with Database Schema](/learn/app-development/
 | --- | --- | --- |
 | JS Binding | jquery | 2.2.3 |
 |  | jquery-ui* | 1.11.4 |
-| MVC Framework | angular <td bgcolor="#44aaf4"> 1.6.4 -> 1.6.5 |
+| MVC Framework | angular <td bgcolor="#44aaf4"> 1.6.4 -> 1.6.5 </td>|
 |  | angular-ui-bootstrap | 2.5.0 |
 | Editor | ace-editor | 1.2.2 |
 | Styles | bootstrap | 3.3.6 |
 | Charting | d3 | 3.5.17 |
 |  | nvd3 | 1.8.3 |
 | CORS support, prefabs | xdomain | 0.7.5 |
-| Built-in functions | lodash <td bgcolor="#44aaf4"> 4.16.4 -> 4.17.4 |
+| Built-in functions | lodash <td bgcolor="#44aaf4"> 4.16.4 -> 4.17.4 </td>|
 | Device support, gestures | hammerjs | 2.0.8 |
 
 *Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
@@ -145,21 +145,21 @@ For more information, see [Working with Database Schema](/learn/app-development/
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework <td bgcolor="#44aaf4"> 4.2.0 -> 4.3.9 |
+|  | Spring Framework <td bgcolor="#44aaf4"> 4.2.0 -> 4.3.9 </td>|
 | Security framework | Spring Security | 4.1.2 |
 | Java JSON utilities | Gson | 2.2.4 |
-| DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 4.3.11 -> 5.2.10 |
+| DB Persistence library | Hibernate <td bgcolor="#44aaf4"> 4.3.11 -> 5.2.10 </td>|
 | Sample database | HSQL | 2.3.3 |
 | JSON library | Jackson | 2.6.3 |
 | Logging framework | SLF4j | 1.7.12 |
-| Http client library | HttpComponents | client-4.5.2, <br> core-4.3.2, <br> mime-4.5.2 |
+| Http client library | HttpComponents | client-4.5.2,   core-4.3.2,   mime-4.5.2 |
 | REST API annotations | Swagger | 1.3.10 |
 | Logging framework | Log4j | 1.2.17 |
 
 ### Run Time Environment
 | Description | Version |
 | --- | --- |
-| JDK <td bgcolor="#44aaf4"> 1.8** |
+| JDK <td bgcolor="#44aaf4"> 1.8** </td>|
 | Tomcat | 8.5* |
 | WebSphere | 8.5.5 |
 | JBOSS | 7.1.1 |

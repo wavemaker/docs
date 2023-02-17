@@ -1,6 +1,6 @@
 ---
 title: "Create Prefab using Angular Module"
-id: ""
+id: "create-prefab-using-angular-module"
 ---
 ---
 In this section, we will list the steps in creating a Prefab using an AngularJS module. For this we will be using the AngularJS tree module provided [here](http://jimliu.github.io/angular-ui-tree/). Below example is based on [v2.15.0](https://github.com/angular-ui-tree/angular-ui-tree/releases/tag/v2.15.0). We need to download the css and js files.
@@ -127,7 +127,7 @@ $templateCache.put('nodes_renderer.html',
     '<a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)">' +
     '<span class="glyphicon glyphicon-remove"></span>' +
     '</a>' +
-    '<a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style="margin-right: 8px;">' +
+    '<a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style={marginRight: "8px"}}>' +
     '<span class="glyphicon glyphicon-plus"></span>' +
     '</a>' +
     '</div>' +
@@ -195,7 +195,6 @@ Add required **styles**:
 
 9. **Publish** the Prefab. 
 
-[![](/learn/assets/prefab_publish_old.png)](/learn/assets/prefab_publish_old.png)
 
 ## Using Prefab
 

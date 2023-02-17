@@ -1,6 +1,6 @@
 ---
 title: "Creating Template Bundles"
-id: ""
+id: "creating-template-bundles"
 sidebar_label: "Create Template"
 ---
 ---

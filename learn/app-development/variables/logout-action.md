@@ -1,6 +1,6 @@
 ---
 title: "Logout Action"
-id: ""
+id: "logout-action"
 ---
 ---
 
@@ -32,8 +32,8 @@ A **Logout Action** is automatically created when you [implement Security](/le
 | **Property** | **Description** |
 | --- | --- |
 | **Behavior** | | 
-| Use default success handler | If checked, on successful logout, the user is redirected to the Home/Login page as configured. If custom logic is required, uncheck this property and implement the logic under the onSuccess event of the Action <br> <br> **NOTE**: If the property is checked, the configured events will not be triggered. |
-| In Flight Behavior | This property determines the behavior when a call is fired through the variable with the previous call still pending. Action queues all these calls, waits for the previous call completion and then based on the value of the _inFlightBehavior_ property, decides what to do with all the queued calls: <br> <br>  - doNotExecute - all the queued calls will be discarded, <br> - executeAll - all the calls will be triggered one by one, or <br> - executeLast - only the last call is triggered and the rest are discarded, this is the default behavior  |
+| Use default success handler | If checked, on successful logout, the user is redirected to the Home/Login page as configured. If custom logic is required, uncheck this property and implement the logic under the onSuccess event of the Action     **NOTE**: If the property is checked, the configured events will not be triggered. |
+| In Flight Behavior | This property determines the behavior when a call is fired through the variable with the previous call still pending. Action queues all these calls, waits for the previous call completion and then based on the value of the _inFlightBehavior_ property, decides what to do with all the queued calls:      - doNotExecute - all the queued calls will be discarded,   - executeAll - all the calls will be triggered one by one, or   - executeLast - only the last call is triggered and the rest are discarded, this is the default behavior  |
 | Redirect To | Page to be displayed after logout, can be the main page or the login page |
 | **Spinner** | |
 | Spinner Context | This property specifies on which UI widget the spinner should show. Leave empty if no spinner required. |

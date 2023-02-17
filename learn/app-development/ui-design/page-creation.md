@@ -1,6 +1,6 @@
 ---
 title: "Create a Page"
-id: ""
+id: "page-creation"
 sidebar_label: "Creating a Page"
 ---
 WaveMaker app is a collection of pages. Learn how to create a page.

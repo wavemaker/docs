@@ -1,6 +1,6 @@
 ---
 title: "Azure OAuth Prefab Integration"
-id: ""
+id: "integrating-azure-oauth-prefab"
 ---
 ---
 

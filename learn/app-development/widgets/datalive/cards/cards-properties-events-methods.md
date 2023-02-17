@@ -1,6 +1,6 @@
 ---
 title: "Cards - Properties, Events & Methods"
-id: ""
+id: "cards-properties-events-methods"
 sidebar_label: "Properties, Events & Methods"
 ---
 ---

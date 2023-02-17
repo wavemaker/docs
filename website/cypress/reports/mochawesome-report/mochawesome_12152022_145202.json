@@ -1,0 +1,192 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-12-15T09:21:14.203Z",
+    "end": "2022-12-15T09:22:02.369Z",
+    "duration": 48166,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "29391b53-7a3a-416e-9468-48f1105d9c0b",
+      "title": "",
+      "fullFile": "cypress/e2e/basic.cy.js",
+      "file": "cypress/e2e/basic.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "54b969c2-a145-4187-bc3b-5b388144e475",
+          "title": "Top Navigation in web & mobile",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifies top nav has 4 options in desktop browser",
+              "fullTitle": "Top Navigation in web & mobile Verifies top nav has 4 options in desktop browser",
+              "timedOut": null,
+              "duration": 44238,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"header>a\").should(\"have.attr\", \"href\").and(\"include\", \"/learn\").get(\"h2.headerTitleWithLogo\").contains(\"WaveMaker Docs\").end();\nvar navElements = [\"Get started\", \"Widgets\", \"How-to\", \"Releases\"];\nnavElements.forEach(function (navItem) {\n  cy.get(selectors.desktopNavElements).contains(navItem).should(\"be.visible\");\n});\ncy.get(selectors.navElements).get(selectors.navSearchWrapper).should(\"be.visible\");\ncy.get(selectors.navElementsFirstChild).get(\".dropdown\").should(\"not.be.visible\");",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'insertBefore')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Top Navigation in web & mobile`",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'insertBefore')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Top Navigation in web & mobile`\n    at HTMLDocument.<anonymous> (http://localhost:3000/learn/js/inject-stylesheets.js:32:18)",
+                "diff": null
+              },
+              "uuid": "55e76708-80cf-4de4-bcdc-a3e1f0d9376f",
+              "parentUUID": "54b969c2-a145-4187-bc3b-5b388144e475",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifies that only Docs, Search is visible in the navbar in mobile",
+              "fullTitle": "Top Navigation in web & mobile Verifies that only Docs, Search is visible in the navbar in mobile",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(\"iphone-6\");\ncy.get(selectors.mobileNavDropDown).contains(\"Docs\").should(\"be.visible\");\ncy.get(selectors.navElements).get(selectors.navSearchWrapper).should(\"be.visible\");\nvar hiddenNavElements = [\"Widgets\", \"How-to\", \"Releases\"];\nhiddenNavElements.forEach(function (navItem) {\n  cy.get(selectors.desktopNavElements).contains(navItem).should(\"not.be.visible\");\n});",
+              "err": {},
+              "uuid": "a99e9109-e6d8-4626-8959-40e466a9e873",
+              "parentUUID": "54b969c2-a145-4187-bc3b-5b388144e475",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verifies that hamburger menu is visible in mobile",
+              "fullTitle": "Top Navigation in web & mobile Verifies that hamburger menu is visible in mobile",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(\"iphone-6\");\ncy.get(selectors.mobileNavDropDown).click();\ncy.get(selectors.mobileNavDropDownFirstChild).click().end();\ncy.get(selectors.hamburgerMenu).should(\"be.visible\");",
+              "err": {},
+              "uuid": "665e94d1-632b-46a2-8fb2-6953669cae31",
+              "parentUUID": "54b969c2-a145-4187-bc3b-5b388144e475",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "55e76708-80cf-4de4-bcdc-a3e1f0d9376f"
+          ],
+          "pending": [],
+          "skipped": [
+            "a99e9109-e6d8-4626-8959-40e466a9e873",
+            "665e94d1-632b-46a2-8fb2-6953669cae31"
+          ],
+          "duration": 44238,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2cced160-19f5-4794-a01b-08861dee2ee7",
+          "title": "Sign-in button take to right places",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifies navigation elements in desktop",
+              "fullTitle": "Sign-in button take to right places Verifies navigation elements in desktop",
+              "timedOut": null,
+              "duration": 3355,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var nav = selectors.desktopNavElements;\ncy.get(nav).contains(\"Sign-in\").click().end(); //cy.get(\".main-container\").contains(\"PLATFORM\").click();",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'insertBefore')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Sign-in button take to righ...`",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'insertBefore')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Sign-in button take to righ...`\n    at HTMLDocument.<anonymous> (http://localhost:3000/learn/js/inject-stylesheets.js:32:18)",
+                "diff": null
+              },
+              "uuid": "e9f77ae0-d7d8-4ad2-819e-8853c7c22a26",
+              "parentUUID": "2cced160-19f5-4794-a01b-08861dee2ee7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e9f77ae0-d7d8-4ad2-819e-8853c7c22a26"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3355,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

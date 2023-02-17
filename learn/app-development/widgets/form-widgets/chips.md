@@ -56,11 +56,11 @@ Chips Widget is one of the Form Widgets. It is available to be used as a standal
 | Name | The name is a unique identifier for the chips. Special characters and spaces are not allowed in widget name. |
 | Placeholder | A placeholder is a text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the you starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple to enter. |
 | **Accessibility** ||
-| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** ||
 | Width | The width of Chip widget can be specified in em, pt, px or % (i.e 50px, 75%). |
 | Height | The height of Chip widget can be specified in em, pt, px or % (i.e 50px, 75%). |
-| Input Width | Use this property to set the width of the chip item input box. <br> You can select from: <br><br> - Default – which is the normal Chip widget size, 170px, or <br> - Full – 100% width of the container |
+| Input Width | Use this property to set the width of the chip item input box.   You can select from:    - Default – which is the normal Chip widget size, 170px, or   - Full – 100% width of the container |
 | **Dataset** ||
 | Value | Set this property to a variable to populate the list of values to display. Can be bound to a Variable. |
 | Search Key | The field from the above Value dataset is based on which the search needs to be performed for fetching Chip Elements for the selection. |
@@ -70,12 +70,12 @@ Chips Widget is one of the Form Widgets. It is available to be used as a standal
 | Display Expression | This is an advanced property that gives more control over what is displayed in the drop-down select list. A Display Expression uses a Javascript expression to format exactly what is shown. |
 | Order by | This allows for multiple selections for ordering the display of rows based on fields in asc or desc order - up arrow for asc and down arrow for desc. |
 | **Default Value** ||
-| Value | This is the default value to display value for an editor widget. <br><br> **NOTE**: the display value is just what the you see initially, and is not the dataValue returned by the widget. |
+| Value | This is the default value to display value for an editor widget.    **NOTE**: the display value is just what the you see initially, and is not the dataValue returned by the widget. |
 | **Behavior** ||
 | Auto Focus | This property makes the Chip to get focus automatically when the page loads. |
 | Read only | Selecting this property prevents you from changing the data value of a widget. This property can be bound to a boolean value. |
 | Max Size | If the max size is set, chips will restrict adding more than the max size. |
-| Input Position | Use this property to change the position of the newly added chip item as <br><br> - _First_ - The input box appears in the beginning followed by the selected chips <br> - _Last_ – The input box appears at the end of the chip item list, this is the default setting  |
+| Input Position | Use this property to change the position of the newly added chip item as    - _First_ - The input box appears in the beginning followed by the selected chips   - _Last_ – The input box appears at the end of the chip item list, this is the default setting  |
 | Allow Only Select | If Allow Only Select is set to true, chips will restrict adding values other than in the selection. By default, there is no restriction. |
 | Enable Reorder | This property will allow you to reorder the Chip Elements at runtime. This is a bindable property. |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
@@ -91,13 +91,13 @@ Chips Widget is one of the Form Widgets. It is available to be used as a standal
 | **Mouse Events** |
 | On Chip Click | This event handler is called each time the chip item is clicked. |
 | **Callback Events** |
-| On Before Add | This event gives handle to user whether to continue or abort to add current chip item <br> 1. If the function does not return anything the chip item will be added <br> 2. If the function returns false, then chip item will not be added <br> 3. If the function returns anything other than false, chip item will be added  |
+| On Before Add | This event gives handle to user whether to continue or abort to add current chip item   1. If the function does not return anything the chip item will be added   2. If the function returns false, then chip item will not be added   3. If the function returns anything other than false, chip item will be added  |
 | On Add | This event gives a handle on the successful addition of the Chip item. |
-| On Before Remove | This event gives handle to user whether to continue or abort removing current chip item <br> 1. If the function does not return anything the chip item will be removed <br> 2. If the function returns false, then chip item will not be removed <br> 3. If the function returns anything other than false, chip item will be removed <br>  |
+| On Before Remove | This event gives handle to user whether to continue or abort removing current chip item   1. If the function does not return anything the chip item will be removed   2. If the function returns false, then chip item will not be removed   3. If the function returns anything other than false, chip item will be removed    |
 | On Remove | This event gives handle to user on successful removal |
 | On Chip Select | This event handler is called each time the chip item is selected. |
 | On Before Service Call | This event is triggered before sending the service call for fetching the search results. |
-| On Before Reorder | This event gives handle to user whether to continue or abort reordering current chip item <br> 1. If the function does not return anything the chip item will be reordered <br> 2. If the function returns false, then chip item will not be reordered <br> 3. If the function returns anything other than false, chip item will be reordered <br>  |
+| On Before Reorder | This event gives handle to user whether to continue or abort reordering current chip item   1. If the function does not return anything the chip item will be reordered   2. If the function returns false, then chip item will not be reordered   3. If the function returns anything other than false, chip item will be reordered    |
 | On Reorder | This event gives a handle on successful reordered in the following form:|
 
 ```js

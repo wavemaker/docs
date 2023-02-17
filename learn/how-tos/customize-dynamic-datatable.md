@@ -1,6 +1,6 @@
 ---
 title: "Customize Dynamic Data Table"
-id: ""
+id: "customize-dynamic-datatable"
 sidebar_label: "Customize Dynamic Datatable" 
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Phase configurations"
-id: ""
+id: "phase-configuration"
 ---
 ---
 

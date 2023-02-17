@@ -1,6 +1,6 @@
 ---
 title: "Box Viewer Prefab"
-id: ""
+id: "box-viewer-prefab"
 ---
 ---
 
@@ -19,7 +19,7 @@ The Box preview prefab enables preview of hundreds of different file formats inc
 
 4. Download the App Settings as json.
 
-![](/learn/assets/Screenshot-2018-12-06-at-2.15.55-PM-1.png)
+
 
 ![](/learn/assets/skitch.png)
 

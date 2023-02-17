@@ -1,6 +1,6 @@
 ---
 title: "Configuring Content-Security-Policy"
-id: ""
+id: "configuring-content-security-policy"
 ---
 ---
 

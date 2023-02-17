@@ -1,6 +1,6 @@
 ---
 title: "Barcode Scanner Prefab"
-id: ""
+id: "barcode-scanner-prefab"
 ---
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "How to Set Name of Blob Type Downloaded from Data Table"
-id: ""
+id: "setting-blob-filename"
 sidebar_label: "Setting Blob Filename"
 ---
 ---

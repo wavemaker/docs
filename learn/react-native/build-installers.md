@@ -1,7 +1,7 @@
 ---
 title: "Build React Native app installers using AppChef"
 sidebar_label: "Build Installers"
-id: ""
+id: "build-installers"
 ---
 ---
 
@@ -28,9 +28,12 @@ Go to the Appchef application using the URL below:
 
 To Build with AppChef, follow the three-step process as described below.
 
-1. [Upload React Native Zip](#upload-react-native-zip)
-2. [Configure AppInfo](#configure-appinfo)
-3. [Configure Build](#configure-build)
+- [Prerequisite to Build using AppChef](#prerequisite-to-build-using-appchef)
+- [Steps to build using AppChef](#steps-to-build-using-appchef)
+  - [Upload React Native Zip](#upload-react-native-zip)
+  - [Configure AppInfo](#configure-appinfo)
+  - [Configure Build](#configure-build)
+  - [About AppChef](#about-appchef)
 
 ### Upload React Native Zip
 
@@ -44,7 +47,7 @@ Click on create React Native build option, drag and drop or browse your files to
 
 2. Click **Next** to configure the Build options.
 
-![mobile-build-appchef-app-info-zip](/learn/assets/mobile-build-appchef-appinfo-rn.png)
+![mobile-build-appchef-app-info-zip](/learn/assets/mobile-build-appchef-appInfo-rn.png)
 
 ### Configure Build
 

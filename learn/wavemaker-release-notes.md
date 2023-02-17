@@ -1,6 +1,6 @@
 ---
 title: WaveMaker Online Release
-id: ""
+id: "wavemaker-release-notes"
 sidebar_label: "Online Release (WMO)"
 
 ---
@@ -21,14 +21,14 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.2.4](/learn/wavemaker-release-notes/v11-2-4) <p style="color:red;">*latest*</p> | This release includes bug fixes for Dynamic Data Table infinite scroll pagination and keyboard date picker. | 06 February 2023 |
+|[WaveMaker 11.2.4](/learn/wavemaker-release-notes/v11-2-4) <p style={{color:"red"}}>*latest*</p> | This release includes bug fixes for Dynamic Data Table infinite scroll pagination and keyboard date picker. | 06 February 2023 |
 |WaveMaker 11.2.3 | Fixed the Connectors artifact import issue, which earlier failed and could not run existing connectors. | 23 January 2023 |
 |[WaveMaker 11.2.2](/learn/wavemaker-release-notes/v11-2-2) | This release includes formatting fixes and fixing user account log out issue. | 16 January 2023 |
 |[WaveMaker 11.2.1](/learn/wavemaker-release-notes/v11-2-1) | This release includes bug fixes for the Calendar widget accessibility and icon rendering. | 06 December 2022 |
 |[WaveMaker 11.2.0](/learn/wavemaker-release-notes/v11-2-0)  |  This release includes several new features, including One-click enabling of API Mocking in Studio, the easy discovery of dependencies of services and methods to compose Java API, Single Page App behavior for UI, the Ability to create new projects from VCS repo for Teams users, Update timezones at Pages and Widget level, changes in JDBC connectors, Cordova Android updates, bug fixes, and more.| 21 November 2022 |
 |[WaveMaker 11.1.3](/learn/wavemaker-release-notes/v11-1-3) | This release includes internal platform fixes only.  | 03 October 2022 |
 |[WaveMaker 11.1.2](/learn/wavemaker-release-notes/v11-1-2) | Layout and Flex in Cordova, React Native fixes, including Style, Form and Chart and other bug fixes. | 26 September 2022 |
-|[v11.1.0](/learn/wavemaker-release-notes/v11-1-0) <br> known issue: <br> [wm-sspa-cli](/learn/wavemaker-release-notes/v11-1-0)| **wm-sspa-cli** is now supported. <br> [Read updated commands for invoking CLI](/learn/app-development/sspa/micro-frontend#invoke-cli) | 12 September 2022 |
+|[v11.1.0](/learn/wavemaker-release-notes/v11-1-0) <br/> known issue: <br/> [wm-sspa-cli](/learn/wavemaker-release-notes/v11-1-0)| **wm-sspa-cli** is now supported. <br/> [Read updated commands for invoking CLI](/learn/app-development/sspa/micro-frontend#invoke-cli) | 12 September 2022 |
 |[WaveMaker 11.1.1](/learn/wavemaker-release-notes/v11-1-1) | Bug fixes include authentication issues in React Native, Teams Portal navigation, and more.  | 5 September 2022 |
 |[WaveMaker 11.1.0](/learn/wavemaker-release-notes/v11-1-0)  | Feature-packed with Angular 12 update, React Native improvements, Azure Repos, MTLS for REST APIs, and more.| 29 August 2022 |
 |[WaveMaker 11.0.3 Beta](/learn/wavemaker-release-notes/v11-0-3) | Issues related to Content Security Policy, Chips widget and Teams Portal configuration.  | 25 July 2022 |
@@ -102,7 +102,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 ||v10.2.8|Bug fixes | 08 January 2020 | 
 |**v10.1**|**[v10.1.0](/learn/wavemaker-release-notes/v10-1-0)**|**New features and bug fixes** |**19 August 2019** |
 ||v10.1.2 |Bug fixes |16 September 2019 |
-|**v10 Beta**|**[Preview: v10](/learn/wavemaker-release-notes/v10-0-preview)**|**Try new features and enhancements** <br> before 10.GA release|**20 November, 2018**|
+|**v10 Beta**|**[Preview: v10](/learn/wavemaker-release-notes/v10-0-preview)**|**Try new features and enhancements** <br/> before 10.GA release|**20 November, 2018**|
 |**v10 GA**|**[v10.0.0 GA](/learn/wavemaker-release-notes/v10-0-ga)**|**New features and bug fixes** |**10 April, 2019** |
 ||[v10.0.1](/learn/wavemaker-release-notes/v10-0-1)|Migration bug fixes |15 April, 2019| 
 ||[v10.0.2](/learn/wavemaker-release-notes/v10-0-2)|New features and bug fixes |24 April, 2019 | 
@@ -122,8 +122,8 @@ Last updated: [WaveMaker 11.2](/learn/wavemaker-release-notes/v11-2-0)
 | Description | JS Library | Version |
 | --- | --- | --- |
 | JS Binding | jquery | 3.6.0 |
-|  | jquery-ui* <td bgcolor="#44aaf4"> 1.13.0 to 1.13.2 |
-| MVC Framework | angular <td bgcolor="#44aaf4"> 11.2.14 to 12.2.16 |
+|  | jquery-ui* <td bgcolor="#44aaf4"> 1.13.0 to 1.13.2 </td>|
+| MVC Framework | angular <td bgcolor="#44aaf4"> 11.2.14 to 12.2.16 </td>|
 |  | angular-ui-bootstrap | 3.3.6 |
 |  | ngx-bootstrap | 6.2 |
 | Styles | bootstrap | 3.3.7 |
@@ -138,15 +138,15 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework  | <span style="background: #44aaf4; color: #fff"> 5.3.22 -> 5.3.23|
-| Security framework | Spring Security | <span style="background: #44aaf4; color: #fff"> 5.7.3 -> 5.7.5|
-| Java JSON utilities | Gson  | <span style="background: #44aaf4; color: #fff"> 2.9.1 -> 2.10 |
-| DB Persistence library | Hibernate | <span style="background: #44aaf4; color: #fff"> 5.6.10.Final -> 5.6.12.Final|
-| Sample database | HSQL |<span style="background: #44aaf4; color: #fff"> 2.7.0 -> 2.7.1 |
-| JSON library | Jackson |<span style="background: #44aaf4; color: #fff"> 2.13.3 -> 2.14|
+|  | Spring Framework  | <span style={{background: "#44aaf4", color: "#fff"}}> 5.3.22 -> 5.3.23</span>|
+| Security framework | Spring Security | <span style={{background: "#44aaf4", color: "#fff"}}> 5.7.3 -> 5.7.5</span>|
+| Java JSON utilities | Gson  | <span style={{background: "#44aaf4", color: "#fff"}}> 2.9.1 -> 2.10 </span>|
+| DB Persistence library | Hibernate | <span style={{background: "#44aaf4", color: "#fff"}}> 5.6.10.Final -> 5.6.12.Final</span>|
+| Sample database | HSQL |<span style={{background: "#44aaf4", color: "#fff"}}> 2.7.0 -> 2.7.1 </span>|
+| JSON library | Jackson |<span style={{background: "#44aaf4", color: "#fff"}}> 2.13.3 -> 2.14</span>|
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
-| Http client library | HttpComponents | httpclient- 4.5.13 <br> httpmime- 4.5.6 |
+| Http client library | HttpComponents | httpclient- 4.5.13 <br/> httpmime- 4.5.6 |
 | Servlet Framework |  | 4.0.1 |
 |Database Connection Pooling | HikariCP | 5.0.1 |
 
@@ -158,7 +158,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
 | Tomcat | 9.0* |
-| Cordova (mobile apps) <br> Android <br> iOS |11.0.0 <br> <span style="background: #44aaf4; color: #fff">10.1.2 -> 11.0.0</span>  <br> 6.2.0 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |11.0.0 <br/> <span style={{background: "#44aaf4", color: "#fff"}}>10.1.2 -> 11.0.0</span>  <br/> 6.2.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-20T09:58:19.428Z",
+    "end": "2022-12-20T09:58:24.073Z",
+    "duration": 4645,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "202885b9-9acc-48d1-a3ff-09d4e569cf2b",
+      "title": "",
+      "fullFile": "cypress/e2e/check-git-navs.cy.js",
+      "file": "cypress/e2e/check-git-navs.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "14974156-6f2b-44fd-8e1d-7672fb63d515",
+          "title": "Check for nav",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifies left nav in: connectors/connectors-building",
+              "fullTitle": "Check for nav Verifies left nav in: connectors/connectors-building",
+              "timedOut": null,
+              "duration": 4465,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(\"iphone-6\");\ncy.visit(link);\nCypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.get('nav').should('have.class', 'navbar').within(() => {\n  cy.get('*[class^=\"navbar__toggle\"]').end();\n});",
+              "err": {},
+              "uuid": "918cf29b-baeb-4e24-9051-3b182e0d5f3c",
+              "parentUUID": "14974156-6f2b-44fd-8e1d-7672fb63d515",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "918cf29b-baeb-4e24-9051-3b182e0d5f3c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4465,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

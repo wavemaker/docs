@@ -1,6 +1,6 @@
 ---
 title: "Data Table Styles"
-id: ""
+id: "styles"
 sidebar_label: "Styles"
 ---
 ---

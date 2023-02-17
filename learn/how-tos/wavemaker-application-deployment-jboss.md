@@ -1,6 +1,6 @@
 ---
 title: "Application deployment to JBoss"
-id: ""
+id: "wavemaker-application-deployment-jboss"
 sidebar_label: "JBoss - WildFly"
 ---
 Learn how to deploy your WaveMaker app to JBoss server.

@@ -1,6 +1,6 @@
 ---
 title: "Working with Queries"
-id: ""
+id: "working-with-queries"
 ---
 
 There will be times when you want to display data from multiple tables or update/insert values into multiple tables. Queries and Stored Procedures come in handy in such instances. WaveMaker provides editors for Queries & Procedures for integrating them with the WaveMaker applications. Each query & procedure used in the WaveMaker application will be exposed as a REST API for the UI to consume and render the data.
@@ -157,7 +157,7 @@ Incorrect way:
 
 For all queries and procedures, there will be a Rest API generated with the Service layer. Along with the API, depending on the query or procedure type, request and response POJO classes are generated.
 
-**Understanding generated Code** _File structure_ [![](/learn/assets/queryproc_files.png)](/learn/assets/queryproc_files.png)_Models_: Both _Request_ and _Response_ POJO classes are generated as: <queryName>Request/Response
+**Understanding generated Code** _File structure_ [![](/learn/assets/queryproc_files.png)](/learn/assets/queryproc_files.png)_Models_: Both _Request_ and _Response_ POJO classes are generated as: &lt;queryName&gt; Request/Response
 
 - These classes are generated in a package: <service_package>.models.query
 - Response class is generated only for SELECT queries. The return type for Non-Select queries will be integer hence POJO class is not generated. Eg: query with name **getAllEmployees** will generate **GetAllEmployeesResponse** class with all returned columns.
@@ -165,19 +165,19 @@ For all queries and procedures, there will be a Rest API generated with the Serv
     - Eg: query `from Employee;`
         - will return only Employee object hence it will use the existing Employee type (as generated for Data table) instead of creating a new one.
     - Eg2: `select e.empId, e.department from Employee`
-        - In this case, the response contains different fields so a new type will be created as <queryName>Response with fields _empId_ and _department_. **Note**: Here, _department_ is a related field with type Department, so generated POJO uses existing Department type.
+        - In this case, the response contains different fields so a new type will be created as &lt;queryName&gt; Response with fields _empId_ and _department_. **Note**: Here, _department_ is a related field with type Department, so generated POJO uses existing Department type.
 - Request class is generated only for INSERT and UPDATE queries.
 
 _Services_: This layer exposes the methods related to the configured query and procedures. Controller layer uses these methods to complete the user requests. We recommend using methods from this layer in custom Java services.
 
 - Class with name QueryExecutorService is generated in the package <service_package>.service For eg: for Service **hrdb**, class name will be **HrdbQueryExecutorService**
-- Method with name **execute<queryName>** will be generated for all configured queries
+- Method with name **execute&lt;queryName&gt;** will be generated for all configured queries
     - For SELECT and DELETE queries, all parameters are configured as arguments for that method. In the case of Paginated request Pageable argument is added to the method signature.
-    - For INSERT and UPDATE queries, **<queryName>Request** is the argument.
-    - For all SELECT queries **<queryName>Response** object is returned. In case of Paginated, returns **Page<<queryName>Response>**.
+    - For INSERT and UPDATE queries, **&lt;queryName&gt;Request** is the argument.
+    - For all SELECT queries **&lt;queryName&gt;Response** object is returned. In case of Paginated, returns **Page<&lt;queryName&gt;Response>**.
     - In the case of HQL query and queries returning existing types, the return type will be the existing type.
     - For non-select queries, it returns INT.
-- Export API is added for queries which will return Paginated data. Method name will be **export<queryName>** and which takes same arguments as execute method (as mentioned above).
+- Export API is added for queries which will return Paginated data. Method name will be **export&lt;queryName&gt;** and which takes same arguments as execute method (as mentioned above).
 
 [![](/learn/assets/query_files_service.png)](/learn/assets/query_files_service.png)_Controllers_:
 

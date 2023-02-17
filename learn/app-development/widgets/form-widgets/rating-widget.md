@@ -1,6 +1,6 @@
 ---
 title: "Rating Widget"
-id: ""
+id: "rating-widget"
 ---
 ---
 
@@ -26,7 +26,7 @@ id: ""
 | --- | --- |
 | Name | The name is a unique identifier for Rating widget. |
 | **Accessibility** |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.   **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Default Value** |
 | Value | Default value (number of active stars) of Rating.It should always be less than or equal to the maximum value of Rating. |
 | Maximum Value | Maximum value (number of stars) of Rating.It should be less than or equal to 10. |

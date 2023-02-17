@@ -1,6 +1,6 @@
 ---
 title: "Implementing Localization for Dropdown Menu"
-id: ""
+id: "implementing-localization-dropdown-menu"
 sidebar_label: "Localization for Dropdown Menu"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "List - Configuration"
-id: ""
+id: "configuration"
 sidebar_label: "Configuration"
 ---
 ---

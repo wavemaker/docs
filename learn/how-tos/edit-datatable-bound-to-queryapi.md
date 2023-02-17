@@ -1,6 +1,6 @@
 ---
 title: "Edit DataTable records bound to Query API"
-id: ""
+id: "edit-datatable-bound-to-queryapi"
 sidebar_label: "Edit DataTable records bound to Query API"
 ---
 ---

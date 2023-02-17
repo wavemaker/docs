@@ -1,6 +1,6 @@
 ---
 title: "How to Consume a WaveMaker API into another WaveMaker App using Open API/Swagger"
-id: ""
+id: "consuming-existing-wm-api-into-another-wm-project"
 sidebar_label: "Consuming an Existing WaveMaker API"
 ---
 ---

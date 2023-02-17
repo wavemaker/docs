@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Field Configuration"
-id: ""
+id: "field-configuration"
 sidebar_label: "Field Configuration" 
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Picture Widget"
-id: ""
+id: "picture"
 sidebar_label: "Picture"
 ---
 ---
@@ -36,12 +36,12 @@ You can add customizations from the **Properties** panel such as **Width** and *
 | Name | The name is a unique identifier for the picture widget. |
 | **Accessibility** |
 | Hint | Any text or HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> **NOTE:** In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    **NOTE:** In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Picture** |
-| Source | This property specifies the source for the picture. The source can be either a file or a URL <br><br> - **File**: enter the directory and filename for the image to display (supported file types include .jpg, .gif and .png). By default, WaveMaker looks for images in the src/main/webapp directory of the project. Every WaveMaker project has a data directory under src/main/webapp, so this is a good place to put pictures. <br><br> - **URL**: enter a URL to any internet-accessible image. To display the file, foo.jpg, in the project directory src/main/webapp/resources/images/imagelists/, enter the following into the source property:resources/images/imagelists/foo.jpg or simply foo.jpg |
+| Source | This property specifies the source for the picture. The source can be either a file or a URL    - **File**: enter the directory and filename for the image to display (supported file types include .jpg, .gif and .png). By default, WaveMaker looks for images in the src/main/webapp directory of the project. Every WaveMaker project has a data directory under src/main/webapp, so this is a good place to put pictures.    - **URL**: enter a URL to any internet-accessible image. To display the file, foo.jpg, in the project directory src/main/webapp/resources/images/imagelists/, enter the following into the source property:resources/images/imagelists/foo.jpg or simply foo.jpg |
 | Placeholder | This property will act as placeholder image for the picture. When the picture from the Source value is not provided or not available then placeholder picture will be shown. |
-| Aspect | This property can automatically size an image to the height or width of the picture widget. The options are: <br><br> - _none_: the image is displayed at its default size <br> - _h_: the image is resized so that the width of the image is the same as the width of the picture widget <br> - _v_: the image is resized so that the height of the image is the same as the height of the picture widget <br> - the image is resized so that the height and width of the image is the same as the height of the picture widget  |
-| Shape | This property controls the shape of the data point. Can be: <br><br> - rounded, <br> - circle, or <br> - thumbnail  |
+| Aspect | This property can automatically size an image to the height or width of the picture widget. The options are:    - _none_: the image is displayed at its default size   - _h_: the image is resized so that the width of the image is the same as the width of the picture widget   - _v_: the image is resized so that the height of the image is the same as the height of the picture widget   - the image is resized so that the height and width of the image is the same as the height of the picture widget  |
+| Shape | This property controls the shape of the data point. Can be:    - rounded,   - circle, or   - thumbnail  |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |

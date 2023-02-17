@@ -1,6 +1,6 @@
 ---
 title: "IPA: Debugging React Native iOS App Installed in Mobile"
-id: ""
+id: "expo-ipa-debug"
 sidebar_label: "Debug IPA"
 ---
 ---

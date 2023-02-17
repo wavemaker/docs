@@ -40,13 +40,13 @@ Image icons are applied via the imageUrl property and are displayed as an img el
 
 From the Style tab of Properties panel,  you can set the button style. You can also use the Conditional Class property to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/). 
 
-<iframe width="100%" height="450" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Buttons">Button Types</iframe>
+<iframe width="100%" height="450" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Buttons">Button Types</iframe>
 
 ## Button Size
 
 From the Style tab of Properties panel, you can also set the button size along with the style as btn-primary btn-xs 
 
-<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ButtonSizes">Button Sizes</iframe>
+<iframe width="100%" height="400" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ButtonSizes">Button Sizes</iframe>
 
 
 ## Button Properties
@@ -56,11 +56,11 @@ From the Style tab of Properties panel, you can also set the button size along w
 | --- | --- |
 | Caption | The caption is the text that the end user sees on the button. This property can be bound to any variable or another widget. |
 | Name | The name is a unique identifier for the button. Special characters and spaces are not allowed in widget name. |
-| Type | Specify the type of button: </br>- Button: for most click events,</br>- Reset or Submit: for customizing the Form reset and submit functionality |
+| Type | Specify the type of button:  - Button: for most click events,  - Reset or Submit: for customizing the Form reset and submit functionality |
 | Badge Value | Value to be displayed in the badge span for anchor and button. |
 | **Accessibility** |
 | Hint | Any text you enter for this property will be shown as a tooltip when the mouse hovers over this widget for _1.5 seconds. _It can be bound to a variable or another widget. |
-| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.</br> **NOTE:** In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from ```Preferences -> Advanced -> Accessibility``` set the option "Press Tab to highlight each item on a webpage". |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.  **NOTE:** In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from ```Preferences -> Advanced -> Accessibility``` set the option "Press Tab to highlight each item on a webpage". |
 | Shortcut Key | Alphabet to act as the Shortcut key. The shortcut key property specifies a key to click the button. The way to activate the shortcut key varies from browser to browser. |
 | **Layout** |
 | Width | The width of your widget can be specified in _em, pt, px_ or _% (_i.e _50px, 75%)._ |

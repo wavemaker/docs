@@ -1,6 +1,6 @@
 ---
 title: "Data Table Configuration"
-id: ""
+id: "table-configuration"
 sidebar_label: "Configuration" 
 ---
 ---
