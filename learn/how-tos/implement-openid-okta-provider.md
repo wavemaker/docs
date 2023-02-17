@@ -8,20 +8,20 @@ In this document we discuss the steps to implement Okta as open ID provider.
 ---
 
 ## Okta as OpenID provider
-1. Select the openID provider as **Custom** from the drop-down menu and enter the **Provider ID** name as **Okta**.
+1. Select **Custom** as openID provider from the drop-down menu and enter **Okta** as **Provider ID**.
 [![](/learn/assets/wm_openid_ok1.png)](/learn/assets/wm_openid_ok1.png)
 
-2. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account in the Developer console of Okta. This is to create an OAuth application to fetch the **Client ID** and **Client secret**.
+2. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account. This is to create an OAuth application to fetch the **Client ID** and **Client secret**.
 
-3. Go to the dashboard available at the top left corner of the page.
+3. Go to **Dashboard**.
 
 [![](/learn/assets/wm_openid_ok2.png)](/learn/assets/wm_openid_ok2.png)
 
-4. Click on **Applications** from the menu and again go to **Applications**.
+4. Go to **Applications** > **Applications**.
 
 [![](/learn/assets/wm_openid_ok3.png)](/learn/assets/wm_openid_ok3.png)
 
-5. Click on **Create App Integration** option to start creating an application.
+5. Click **Create App Integration** to start creating an application.
 
 [![](/learn/assets/wm_openid_ok4.png)](/learn/assets/wm_openid_ok4.png)
 
@@ -29,19 +29,19 @@ In this document we discuss the steps to implement Okta as open ID provider.
 
 [![](/learn/assets/wm_openid_ok6.png)](/learn/assets/wm_openid_ok6.png)
 
-7. Select **Web Application** as the Application type and click on **Next**.
+7. Select **Web Application** as Application type and click **Next**.
 
 [![](/learn/assets/wm_openid_ok7.png)](/learn/assets/wm_openid_ok7.png)
 
-8. Enter the **App Integration Name** and check the **Client credentials** option as **Grant type**.
+8. Enter the **App Integration Name** and check **Client credentials** as **Grant type**.
 
 [![](/learn/assets/wm_openid_ok8.png)](/learn/assets/wm_openid_ok8.png)
 
-9. Click on **Add Url** to add new redirect urls.
+9. Click **Add Url** to add new redirect urls.
 
 [![](/learn/assets/wm_openid_ok9.png)](/learn/assets/wm_openid_ok9.png)
 
-10. Enter the **sign-in redirect url**.
+10. Enter **sign-in redirect url**.
 
 :::note
 Sign-in redirect url is available in WaveMaker authentication and authorization page.
@@ -57,35 +57,35 @@ Add v1/logout to the end of sign-in redirect url and enter it as sign-out redire
 
 [![](/learn/assets/wm_openid_ok11.png)](/learn/assets/wm_openid_ok11.png)
 
-12. Select the appropriate access restriction and click on save.
+12. Select the appropriate access restriction and click **Save**.
 
 [![](/learn/assets/wm_openid_ok12.png)](/learn/assets/wm_openid_ok12.png)
 
-13. Click on **Copy** to copy the client Id to the clipboard.
+13. Click **Copy** to copy the client Id to clipboard.
 
 [![](/learn/assets/wm_openid_ok13.png)](/learn/assets/wm_openid_ok13.png)
 
-14. Click on **Copy** icon to copy the client secret to the clipboard.
+14. Click **Copy** icon to copy the client secret to clipboard.
 
 [![](/learn/assets/wm_openid_ok14.png)](/learn/assets/wm_openid_ok14.png)
 
-15. Go to **Okta API Scopes** and click on **Grant** to include it as scope.
+15. Go to **Okta API Scopes** and click **Grant** to include it as scope.
 
 [![](/learn/assets/wm_openid_ok15.png)](/learn/assets/wm_openid_ok15.png)
 
-16. Click on **Security** from the menu.
+16. Click **Security** from the menu.
 
 [![](/learn/assets/wm_openid_ok16.png)](/learn/assets/wm_openid_ok16.png)
 
-17. Go to **API** in the drop-down menu of **Security**.
+17. Go to **API** in the drop-down menu.
 
 [![](/learn/assets/wm_openid_ok17.png)](/learn/assets/wm_openid_ok17.png)
 
-18. Click on **default**.
+18. Click **default**.
 
 [![](/learn/assets/wm_openid_ok18.png)](/learn/assets/wm_openid_ok18.png)
 
-19. Click on **Metadata url** that redirects to the page which contains authorization endpoint, token endpoint, JWKS endpoint and User info endpoint.
+19. Click **Metadata url** that redirects to the page which contains authorization endpoint, token endpoint, JWKS endpoint and User info endpoint.
 
 [![](/learn/assets/wm_openid_ok19.png)](/learn/assets/wm_openid_ok19.png)
 
@@ -105,7 +105,7 @@ Add v1/logout to the end of sign-in redirect url and enter it as sign-out redire
 
 [![](/learn/assets/wm_okta_role2.png)](/learn/assets/wm_okta_role2.png)
 
-6. Click on **Add Attribute** and fill in the required attribute details.
+6. Click **Add Attribute** and fill in the required attribute details.
 
 [![](/learn/assets/wm_okta_role3.png)](/learn/assets/wm_okta_role3.png)
 

@@ -11,7 +11,7 @@ OpenID Auth is a protocol that allows you to log into applications with the help
 
 ### Example
 
-Twitter is a well-known social media application that uses OpenID authentication. As soon as the user tries to login, user is provided with few identity providers like Google and Apple. User can then choose a desired identity provider to log into Twitter.
+Twitter is a well-known social media application that uses OpenID authentication. As soon as you try to login, you are provided with few identity providers like Google and Apple. You can then choose a desired identity provider to log into Twitter.
 
 
 ## Why OpenID Authentication
@@ -20,16 +20,16 @@ OpenID Authentication comes with many advantages. Important reasons to choose Op
 
 ### Easy maintainance of usernames and passwords
 
-Users do not have to invest much of their efforts in keeping track of multiple usernames and passwords. Developers also find it beneficial as they are not required to design additional logic to store and maintain the usernames and passwords, specific to any application.
+OpenID helps us to reduce efforts in keeping track of multiple usernames and passwords. Developers also find it beneficial as they are not required to design additional logic to store and maintain the usernames and passwords, specific to any application.
 
 
 ### Lower Password security risks
 
-Users tend to have same passwords and usernames for many applications. This may pose a huge security risk. Applications that delegate identity verification to an OpenID provider, negate this risk. 
+We try to maintain same passwords and usernames for many applications. This may pose a huge security risk. Applications that delegate identity verification to an OpenID provider, negate this risk. 
 
 ### Simple Sign-up process
 
-WaveMaker developer is provided with ability to delegate authentication to OpenID providers like Google, Facebook, Okta, Auth0 or any other OpenID standards based provider. This allows application users to login with a single click. This removes the efforts and time that user spends to feed the redundant information to use an application.
+WaveMaker developer is provided with ability to delegate authentication to OpenID providers like Google, Facebook, Okta, Auth0 or any other OpenID standards based provider. This allows application users to login with a single click. This removes the efforts and time that you spend to feed the redundant information to use an application.
 
 Here is more information on OpenID Authentication
 
@@ -46,7 +46,7 @@ Here is more information on OpenID Authentication
 
 ## Initial OpenID Configuration in WaveMaker
 
-1. Select **Project**, click **Security**.
+1. Go to **Project** > **Security**.
 
 [![](/learn/assets/wm_openid_1_f.png)](/learn/assets/wm_openid_1_f.png)
 
@@ -54,11 +54,11 @@ Here is more information on OpenID Authentication
 
 [![](/learn/assets/wm_openid_2_f.png)](/learn/assets/wm_openid_2_f.png)
 
-3. Enable the **Authentication** option.
+3. Enable **Authentication**.
 
 [![](/learn/assets/wm_openid_3_f.png)](/learn/assets/wm_openid_3_f.png)
 
-4. Under **Security Providers**, select **OpenID** from the drop-down menu.
+4. Go to **Security Providers** > **OpenID**.
 
 [![](/learn/assets/wm_openid_4_f.png)](/learn/assets/wm_openid_4_f.png)
 
@@ -80,11 +80,11 @@ Here is more information on OpenID Authentication
 
 User details are retrieved after successful login. Next, the information is bind using WaveMaker.
 
-1. Go to **Variables** and select **Variables** from the drop-down menu.
+1. Go to **Variables** > **Variables**.
 
 [![](/learn/assets/wm_openid_Bind1.png)](/learn/assets/wm_openid_Bind1.png)
 
-2. Click on **New Variable** to create a variable to fetch the user information.
+2. Click **New Variable** to create a variable to fetch the user information.
 
 [![](/learn/assets/wm_openid_Bind2.png)](/learn/assets/wm_openid_Bind2.png)
 
@@ -92,7 +92,7 @@ User details are retrieved after successful login. Next, the information is bind
 
 [![](/learn/assets/wm_openid_Bind3.png)](/learn/assets/wm_openid_Bind3.png)
 
-4. Select **getLoggedInUser** as method from the drop-down menu as this method retrieves the details of the users who have logged in.
+4. Select **getLoggedInUser** method from the drop-down menu as this method retrieves the logged in user details.
 
 [![](/learn/assets/wm_openid_Bind4.png)](/learn/assets/wm_openid_Bind4.png)
 
@@ -100,32 +100,32 @@ User details are retrieved after successful login. Next, the information is bind
 
 [![](/learn/assets/wm_openid_Bind5.png)](/learn/assets/wm_openid_Bind5.png)
 
-6. Enter variable name and check **Request data on page load** option. Click **Save & Close** to successfully create the variable.
+6. Enter variable name and enable  **Request data on page load**. Click **Save & Close**.
 
 [![](/learn/assets/wm_openid_Bind6.png)](/learn/assets/wm_openid_Bind6.png)
 
-7. Drag and drop the required widget onto the screen.
+7. Drag and drop the required widget.
 
 [![](/learn/assets/wm_openid_Bind7.png)](/learn/assets/wm_openid_Bind7.png)
 
-8. Click link icon under **Caption** option.
+8. Click link icon under **Caption**.
 
 [![](/learn/assets/wm_openid_Bind8.png)](/learn/assets/wm_openid_Bind8.png)
 
-9. Go to dataset of the required variable.
+9. Go to dataset of required variable.
 
 [![](/learn/assets/wm_openid_Bind9.png)](/learn/assets/wm_openid_Bind9.png)
 
-10. Click on **Bind** to update the label with the values associated with the dataset arguments.
+10. Click on **Bind** to update the label with dataset argument values.
 
 [![](/learn/assets/wm_openid_Bind10.png)](/learn/assets/wm_openid_Bind10.png)
 
 [![](/learn/assets/wm_openid_Bind11.png)](/learn/assets/wm_openid_Bind11.png)
 
-11. To view the applied changes to the application, click on **Preview**.
+11. Click on **Preview** to view the applied changes.
 [![](/learn/assets/wm_openid_Bind12.png)](/learn/assets/wm_openid_Bind12.png)
 
-12. Enter the required details to login. After successful login, user can access the application.
+12. Enter necessary details to login. After successful login, user can access the application.
 [![](/learn/assets/wm_openid_Bind13.png)](/learn/assets/wm_openid_Bind13.png)
 
 
