@@ -70,7 +70,7 @@ export default class Index extends React.Component {
                     <div className='container banner spl-icon footer-left'>
                         <div className='row banner-content'>
                             <div className='col'>
-                                <h1 className='text--center text--semibold banner-Title'>how can we <span className='text--primary'>help</span>?</h1>
+                                <h1 className='text--center text--semibold banner-Title'>How can we <span className='text--primary'>help</span>?</h1>
                                 <div className='banner-search' id="home-search">
                                 <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                                     <BrowserOnly>
@@ -80,8 +80,8 @@ export default class Index extends React.Component {
                             </div>
                         </div>
                         {this.state.displayInfoFooter && <div className='banner-footer'>
-                            <span className='banner-footer-msg'><img src='/learn/img/speaker.svg' />WaveMaker released several new features in WM11.2. See what's new.</span>
-                            <a className='banner-footer-action' href='/learn/wavemaker-release-notes'>Read more</a>
+                            <span className='banner-footer-msg'><img src='/learn/img/speaker.svg' />WaveMaker released several new features in WM11.2 See what's new.</span>
+                            <a className='banner-footer-action' href='/learn/wavemaker-release-notes/v11-2-0'>Read more</a>
                             <a className="banner-footer-closeAction" href="javascript:void(0)" onClick={() => { this.setState({ displayInfoFooter: false }); }}><img src='/learn/img/closeIcon-black.svg' /></a>
                         </div>}
                     </div>
@@ -109,10 +109,10 @@ export default class Index extends React.Component {
                                             <a href='/learn/react-native'>React Native Studio</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/tutorials'>API Orchestration</a>
+                                            <a href='/learn/app-development/services/java-services/api-composer-toolkit'>API Orchestration</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/tutorials'>Server-side Pagination</a>
+                                            <a href='/learn/how-tos/adding-ui-for-api-server-side-pagination'>Server-side Pagination</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -138,13 +138,13 @@ export default class Index extends React.Component {
                                 <div className='col'>
                                     <ul>
                                         <li>
-                                            <a href='/learn/blog/2020/04/21/wavemaker-openapi-import'>API References</a>
+                                            <a href=''>API References</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/app-development/wavemaker-app-development-faqs/widgets-in-wavemaker'>Widgets API</a>
+                                            <a href='https://www.wavemakeronline.com/app-runtime/latest/docs/index.html'>Widgets API</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/react-native/styles'>React Native Styles</a>
+                                            <a href='https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/advanced/carousel/'>React Native Styles</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -173,7 +173,7 @@ export default class Index extends React.Component {
                                             <a href=''>Community</a>
                                         </li>
                                         <li>
-                                            <a href=''>Get Training</a>
+                                            <a href='https://www.wavemaker.com/training/'>Get Training</a>
                                         </li>
                                         <li>
                                             <a href='https://github.com/wavemaker'>Github</a>
