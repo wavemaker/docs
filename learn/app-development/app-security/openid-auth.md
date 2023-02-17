@@ -7,11 +7,11 @@ In this document, we will be describing about the OpenID authentication using Id
 
 ---
 
-OpenID Auth is a protocol that allows you to log into applications with the help of credentials, provided by an OpenID provider. Authenticated IDs of users let them use multiple applications without creating a separate account and password for each. Well-known OpenID providers are Google, Okta, AuthO and so on.
+OpenID Auth is a protocol that allows you to log into applications with the help of credentials, provided by an OpenID provider. Authenticated user IDs allow to use multiple applications without creating a separate account and password for each. Well-known OpenID providers are Google, Okta, AuthO and so on.
 
 ### Example
 
-Twitter is a well-known social media application that uses OpenID authentication. As soon as you try to login, you are provided with few identity providers like Google and Apple. You can then choose a desired identity provider to log into Twitter.
+Twitter is a well-known social media application that uses OpenID authentication. You can select one of the identity providers like Google and Apple to log in.
 
 
 ## Why OpenID Authentication
@@ -20,27 +20,28 @@ OpenID Authentication comes with many advantages. Important reasons to choose Op
 
 ### Easy maintainance of usernames and passwords
 
-OpenID helps us to reduce efforts in keeping track of multiple usernames and passwords. Developers also find it beneficial as they are not required to design additional logic to store and maintain the usernames and passwords, specific to any application.
+OpenID stops proliferation of username, passwords enabling reuse of identify from providers such as Google, Apple & Facebook. Developers also benefit from not needing store usernames and passwords.
 
 
 ### Lower Password security risks
 
-We try to maintain same passwords and usernames for many applications. This may pose a huge security risk. Applications that delegate identity verification to an OpenID provider, negate this risk. 
+Security risks can be encountered while maintaining same credentials for multiple applications. Applications that delegate identity verification to an OpenID provider, negate this risk. 
 
 ### Simple Sign-up process
 
-WaveMaker developer is provided with ability to delegate authentication to OpenID providers like Google, Facebook, Okta, Auth0 or any other OpenID standards based provider. This allows application users to login with a single click. This removes the efforts and time that you spend to feed the redundant information to use an application.
+With WaveMaker, developer delegates authentication to OpenID providers like Google, Facebook, Okta, Auth0 or any other OpenID standards. This allows application users to login with a single click, removing the efforts and time to feed the redundant information to use an application.
 
 Here is more information on OpenID Authentication
 
 ## OpenID Authentication Workflow: 
 
-1. User initiates the process by accessing an application.	
-2. Application provides User with options to choose the desired identity provider via authentication request as soon as the User tries to login to the application.
-3. User gets directed to the identity provider to provide necessary details for authentication and authorization purposes.
-4. Identity provider successfully verifies the user’s identity and returns the required user details.
-5. User successfully logs into the application and the role is assigned to the user
-6. Session gets established between user and application.
+1. **User** accesses the **Application**.
+2. **Application** displays options to choose from available **identity providers**.
+3. **User** gets directed to the **identity provider** to provide necessary details for authentication and authorization.
+4. **Identity provider** verifies the user’s identity and validates the user details. 
+5. **User** successfully logs into the application and the role is assigned to the user
+6. Session gets established between **User** and **Application**.
+
 
 [![](/learn/assets/OpenID_Architecture.png)](/learn/assets/OpenID_Architecture.png)
 
@@ -84,7 +85,7 @@ User details are retrieved after successful login. Next, the information is bind
 
 [![](/learn/assets/wm_openid_Bind1.png)](/learn/assets/wm_openid_Bind1.png)
 
-2. Click **New Variable** to create a variable to fetch the user information.
+2. Click **New Variable**. It creates a variable to fetch the user information.
 
 [![](/learn/assets/wm_openid_Bind2.png)](/learn/assets/wm_openid_Bind2.png)
 
