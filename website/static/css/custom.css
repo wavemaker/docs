@@ -80,6 +80,7 @@
     --ifm-tabs-prev-button-image:url("/img/prevArrow.svg");
     --mermaid-background-color:#c2e7ff;
     --mermaid-border-color:#f6f8fd;
+    --wm-category-arrow-image:url("/img/chevron-right-category.svg");
 
 }
 html[data-theme="dark"] {
@@ -164,6 +165,7 @@ html[data-theme="dark"] {
      --ifm-tabs-prev-button-image:url("/img/prevArrow_dark.svg");
      --mermaid-background-color:#172a47;
      --mermaid-border-color:#c2e7ff;
+     --wm-category-arrow-image:url("/img/chevron-right-category-dark.svg");
      
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
@@ -478,18 +480,17 @@ html[data-theme="dark"] .banner{
     position: relative;
 }
 
-.category::before,
 .category::after {
     display: none;
     content: "";
     position: absolute;
     bottom: 20px;
-    right: 30px;
+    right: 25px;
     height: 16px;
-    width: 10px;
-    background-image: url("/img/chevron-right.svg");
+    width: 15px;
+    background-image:var(--wm-category-arrow-image); 
     background-repeat: no-repeat;
-    background-size: 10px 16px;
+    background-size: 15px 16px;
 }
 
 .category::before {
@@ -510,7 +511,6 @@ html[data-theme="dark"] .banner{
 .category:focus::before,
 .category:focus::after {
     display: inline-block;
-    filter: brightness(0) contrast(0);
 }
 
 .category:hover *,
@@ -1586,6 +1586,13 @@ table tr td:last-child{
 h2.widget-header{
     margin-top:1.5em !important;
     margin-bottom:0px !important;
+}
+.DocSearch-MagnifierLabel .DocSearch-Search-Icon{
+    display: block;
+    margin-left:8px;
+}
+.DocSearch-MagnifierLabel .DocSearch-Search-Icon path{
+    stroke:rgb(118,118,118,0.6);
 }
 
 
