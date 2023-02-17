@@ -6,19 +6,20 @@ To access the WaveMaker documentation, see [WaveMaker Docs](https://wavemaker.co
 
 ### Pre requisites 
 
-1.	Node >= 8.x 
+1.	Node >= 16.x 
 2.	Git
 
 ### Other things to have
 3.	GitHub account. [Sign up](https://github.com/join?), if you do not have an account with GitHub. 
 4.	See [Markdown cheat sheet](https://guides.github.com/features/mastering-markdown/) to get familiar with the editor. 
+5. See [Mermaid Diagramming Tool](https://mermaid.js.org/intro/)
 
 
 ## Getting Started 
 1.	Go to https://github.com/wavemaker/docs
 
 > **Note**  
-> If you are already a member of WaveMaker organization, you can skip the Fork step and directly clone the repo. 
+> If you are already a member of WaveMaker organization, you can skip the Fork step and clone the repo. 
 
 2.	Fork the repo. For more information, see [Fork a repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo). 
 
@@ -42,7 +43,7 @@ To access the WaveMaker documentation, see [WaveMaker Docs](https://wavemaker.co
     ```
     npm start
     ```
-    The **step-c** launches the website on the local machine automatically with the following url:
+    The **step-c** launches the website on the local machine automatically with the following URL:
 
     `http://localhost:3000/learn`
 
@@ -52,13 +53,17 @@ To access the WaveMaker documentation, see [WaveMaker Docs](https://wavemaker.co
 
 1. Locate the file from the file explorer by navigating to `learn/` to edit the `doc-to-be-edited.md` in your local machine.
 
+> **Note**  
+> Ensure the filename is specified against the line `id` (see below example). This information is used to map in sidebar.json.
+
 2. Open the `doc-to-be-edited.md` in any markdown editor. For example, [Visual Studio Code](https://code.visualstudio.com/download). 
 
 
 ```markdown
 ---
-id: page-needs-edit
-title: This Doc Needs To Be Edited
+id: "doc-to-be-edited"
+title: "Edit this Document"
+sidebar_label: "Editing"
 ---
 
 Edit me...
@@ -93,7 +98,7 @@ My new content here..
     "Getting started": 
     [
         "documentation-reference", 
-        "newly-created-doc" // new doc here  
+        "newly-created-doc" // new doc is mapped here  
         {
           "type": "subcategory",
           "label": "App Design",
