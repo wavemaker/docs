@@ -13,7 +13,7 @@
     "test:brandlint": "textlint  --rule terminology ../learn/**",
     "cypress:local": "cypress open",
     "changedFiles": "bash changed_md_files.sh",
-    "cypress:prepare-prod": "npm run start:nw & npx wait-on http://localhost:3000/learn",
+    "cypress:prepare-prod": "npm run start:nw & npx wait-on http://localhost:3000/learn && bash changed_md_files.sh",
     "cypress:prod": "cypress run --reporter mochawesome --reporter-options 'reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss'",
     "cypress:prep-report": "npx mochawesome-merge --reportDir cypress/report/mochawesome-report > cypress/report/mochawesome.json && ps -ef | grep docusaurus-start | grep -v grep | awk '{print $2}' | xargs kill -l KILL",
     "cypress:e2e": "npm run cypress:prepare-prod && npm run cypress:prod && npm run cypress:prep-report"
