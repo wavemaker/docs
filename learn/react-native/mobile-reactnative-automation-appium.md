@@ -1,24 +1,22 @@
 ---
-title: "Automate testing of WaveMaker react native mobile apps using Appium"
+title: "Automated testing of WaveMaker mobile apps using Appium"
 id: "mobile-reactnative-automation-appium"
 sidebar_label: "WaveMaker ReactNative Mobile Apps Automation"
 ---
 ---
 
-How to use Appium to automate testing of WaveMaker react native mobile app
+How to use Appium to automate testing of WaveMaker mobile app
 
 ## Introduction
 
 Appium is an open-source tool for automating testing of native, mobile web, and hybrid applications on iOS mobile, Android mobile, and Windows desktop
 platforms.
-- Native apps are those written using the iOS, Android, or Windows SDKs.
+- Native apps are those written using the iOS, Android.
 - Mobile web apps are web apps accessed using a mobile browser (Appium supports Safari on iOS and Chrome or the built-in 'Browser' app on Android).
 - Hybrid apps have a wrapper around a "webview" -- a native control that enables interaction with web content. Projects like Apache Cordova make it easy to
   build apps using web technologies that are then bundled into a native wrapper, creating a hybrid app.
 
-React Native is a mobile app framework from Facebook. It is based on ReactJS principles (Virtual DOM). You can define app UI using the React Native markup and extensions in JavaScript. React Native will render UI using native UI controls similar to native apps based on the UI definition in runtime.
-
-WaveMaker react native mobile applicationscan be easily tested using Appium. This How-To document explains how to do this.
+WaveMaker generates React Native code mobile apps and these native apps can be installed on mobile phones. Apps can be tested using Appium. This document explains how to do this.
 
 ## Generate APK of the WM react native mobile application.
 
@@ -33,11 +31,11 @@ Refer [documentation](https://docs.wavemaker.com/learn/react-native/build-instal
 
 An appium driver has two contexts to choose locators.
 
-**Native_APP** : This is the driver context where we choose locators from uiautomatorviewer tool.
+**Native_APP** : This is the driver context where we choose locators from ``uiautomatorviewer`` tool.
 
 **WebView** : This is another driver context where we choose locators from mobile debug browser.
 
-For the WM react native mobile applications, to find locators we use uiautomator viewer
+For the WM react native mobile applications, to find locators we use ``uiautomator`` viewer
 
 **Here is the example how to choose locators for a sample react native mobile application built in WaveMaker.**
 
@@ -63,7 +61,7 @@ i.e.,
 
 ## Register appium driver by providing required desired capabilities as shown below.
 
-```
+```java
  @BeforeMethod
     public void setup() throws MalformedURLException, UnexpectedException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -100,5 +98,3 @@ adb shell dumpsys window | grep -E 'mCurrentFocus'
 [![](/learn/assets/wm-rn-mobile-automation-appium-execution.gif)](/learn/assets/wm-rn-mobile-automation-appium-execution.gif)
 
 
-Link for Reference:
-https://www.swtestacademy.com/appium-tutorial/
