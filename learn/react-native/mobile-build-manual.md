@@ -4,7 +4,7 @@ id: "mobile-build-manual"
 ---
 ---
 
-One can also build apk or ipa on their system from a react-native zip. To help the WaveMaker developers in this manual process, ```wm-reactnative-cli``` is created. ```wm-reactnative-cli``` combines multiple react-native commands into a single command. Please follow the below procedure.
+You can build apk or ipa on your system from a react-native zip. To help the WaveMaker developers in this manual process, ```wm-reactnative-cli``` is created. ```wm-reactnative-cli``` combines multiple react-native commands into a single command. Please follow the below procedure.
 
 1. Go through the documentation of wm-reactnative-cli. [https://github.com/wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli)
 2. Make sure that all the hardware and software required by wm-reactnative-cli are present.
