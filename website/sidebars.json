@@ -535,6 +535,7 @@
       "react-native/styles",
       "react-native/theme",
       "react-native/export-react-native-zip",
+      "react-native/mobile-build-manual",
       "react-native/build-installers",
       "react-native/expo-apk-debug",
       "react-native/expo-ipa-debug"
