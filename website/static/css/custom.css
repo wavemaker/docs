@@ -166,6 +166,7 @@ html[data-theme="dark"] {
      --mermaid-background-color:#172a47;
      --mermaid-border-color:#c2e7ff;
      --wm-category-arrow-image:url("/img/chevron-right-category-dark.svg");
+     --ifm-toc-link-color:#000000;
      
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
@@ -1091,6 +1092,10 @@ html[data-theme="dark"] .extension .link img{
 .navbar__title.text--truncate{
     display:none;
 }
+.navbar-sidebar__back, article .clean-btn{
+    color:var(--ifm-menu-color-active);
+}
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1584,7 +1589,7 @@ table tr td:last-child{
     fill:var(--ifm-heading-color) !important;
 }
 h2.widget-header{
-    margin-top:1.5em !important;
+    margin-top:2em !important;
     margin-bottom:0px !important;
 }
 .DocSearch-MagnifierLabel .DocSearch-Search-Icon{
@@ -1593,6 +1598,12 @@ h2.widget-header{
 }
 .DocSearch-MagnifierLabel .DocSearch-Search-Icon path{
     stroke:rgb(118,118,118,0.6);
+}
+.main-wrapper main{
+    padding:0 var(--ifm-spacing-horizontal);
+}
+.menu__link--active.menu__link--sublist-caret:after,.tocCollapsibleButton_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-CollapseButton-styles-module::after{
+    filter:invert(100%) sepia(94%) saturate(17%) hue-rotate(223deg) brightness(0%) contrast(98%) !important;
 }
 
 
