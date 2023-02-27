@@ -162,7 +162,7 @@ This section contains configuration details for integration between service prov
 
 ### Role Mapping
 
-Role Mapping for logged in users can come from the configured openID security provider or an imported Database.
+If your application has multuple roles, then the role for logged in users can come from the configured openID security provider or application Database.
 
 **Search User Role**: Enable this option to select the user role provider. You are provided with two options- OpenID and Database.
 
