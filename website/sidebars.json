@@ -221,6 +221,7 @@
           "app-development/app-security/app-security",
           "app-development/app-security/authentication",
           "app-development/app-security/authorization",
+          "app-development/app-security/openid-auth",
           "app-development/app-security/access-levels-permissions",
           "app-development/app-security/login-configuration",
           "app-development/app-security/session-persistence",
@@ -662,6 +663,9 @@
     "Security": [
       "how-tos/saml-integration-onelogin",
       "how-tos/saml-integration-adfs",
+      "how-tos/sso-openid-azure-active-directory",
+      "how-tos/implement-openid-google-provider",
+      "how-tos/implement-openid-okta-provider",
       "how-tos/sso-openid-azure-active-directory",
       "how-tos/custom-security-using-google-oauth-prefab",
       "how-tos/multiple-security-provider-implementation",
