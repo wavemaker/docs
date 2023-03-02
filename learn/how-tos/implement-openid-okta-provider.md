@@ -3,12 +3,12 @@ title: "Configuring Open ID using Okta provider"
 id: "implement-openid-okta-provider"
 sidebar_label: "Open ID using Okta provider"
 ---
-In this document we discuss the steps to implement Okta as open ID provider.
+In this document we discuss the steps to implement Okta as Open ID provider.
 
 ---
 
 ## Okta as OpenID provider
-1. Select **Custom** as openID provider from the drop-down menu and enter **Okta** as **Provider ID**.
+1. Select **Custom** as Open ID provider from the drop-down menu and enter **Okta** as **Provider ID**.
 [![](/learn/assets/wm_openid_ok1.png)](/learn/assets/wm_openid_ok1.png)
 
 2. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account. This is to create an OAuth application to fetch the **Client ID** and **Client secret**.
@@ -25,7 +25,7 @@ In this document we discuss the steps to implement Okta as open ID provider.
 
 [![](/learn/assets/wm_openid_ok4.png)](/learn/assets/wm_openid_ok4.png)
 
-6. Select **OpenID Connect** option as Sign-in method.
+6. Select **Open ID Connect** option as Sign-in method.
 
 [![](/learn/assets/wm_openid_ok6.png)](/learn/assets/wm_openid_ok6.png)
 

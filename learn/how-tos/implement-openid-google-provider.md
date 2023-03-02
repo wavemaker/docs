@@ -3,13 +3,13 @@ title: "Configuring Open ID using Google provider"
 id: "implement-openid-google-provider"
 sidebar_label: "Open ID using Google provider"
 ---
-In this document we discuss the steps to implement Google as open ID provider.
+In this document we discuss the steps to implement Google as Open ID provider.
 
 ---
 
-## Google as OpenID provider
+## Google as Open ID provider
 
-1. Select the openID provider as Google from the drop-down menu of Provider ID.
+1. Select the Open ID provider as Google from the drop-down menu of Provider ID.
 [![](/learn/assets/wm_openid_8_f.png)](/learn/assets/wm_openid_8_f.png)
 
 2. Provide the required details in the Identity Provider Information section.
@@ -71,7 +71,7 @@ Fields available in Identity provider section gets automatically occupied with t
 
 ### Gsuite domain restrictions
 
-**Gsuite domain**: Gsuite provides enterprise package which gives access to all the tools via respective organization email addresses. 
+**Gsuite domain**: Gsuite provides enterprise package which gives access to all the tools via respective organization email addresses. With this process, application disallows login using personal google accounts.  
 
 While creating the [OAuth application in google console](#google-as-openid-provider), you enter the list of authorized domains that allows only the domain specific mail ids to access the application. You have to then select the domain type as **Internal**. It allows associated organization accounts for the authorized domains to display at the time of SSO. **External** type includes all the available google accounts and is not restricted to any domain.
 

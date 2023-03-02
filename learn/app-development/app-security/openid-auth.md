@@ -16,7 +16,7 @@ Open ID Authentication helps verify the user identity with the identity provider
 
 - **Easy maintainance of usernames and passwords**: Open ID stops proliferation of username, passwords enabling reuse of identify from providers such as Google, Apple & Facebook. Developers also benefit from not needing store usernames and passwords.
 
-- **Lower Password security risks**: Open ID providers do not share passwords with any website and protect online identity. You can easily change open ID password in case of any security compromise. 
+- **Lower Password security risks**: Open ID providers do not share passwords with any website and protect online identity. You can easily change Open ID password in case of any security compromise. 
 
 - **Simple Sign-up process**: With WaveMaker, developer delegates authentication to Open ID providers like Google, Facebook, Okta, Auth0 or any other Open ID standards. You login with a single click, avoiding the efforts and time to feed the redundant information to use an application.
 
@@ -36,7 +36,6 @@ Here is more information on Open ID Authentication
 ## Configuring Open ID
 
 1. Go to **Project** > **Security**.
-
 [![Open ID security](/learn/assets/wm_openid_f_1.png)](/learn/assets/wm_openid_f_1.png)
 
 2. Go to **Authentication & Authorization**.
@@ -92,7 +91,7 @@ This section contains configuration details for integration between service prov
 
 ### Role Mapping
 
-Role Mapping for logged in users can come from the configured open ID security provider or an imported Database.
+Role Mapping for logged in users can come from the configured Open ID security provider or an imported Database.
 
 **Search User Role**: Enable this option to select the user role provider. You are provided with two options- Open ID and Database.
 
