@@ -1,14 +1,14 @@
 ---
-title: "Configuring Open ID authentication using SSO"
+title: "Configuring Open ID authentication providers - Google, Okta, Auth0"
 id: "openid-auth"
 sidebar_label: "Open ID Authentication"
 ---
 
-In this document, we will be describing about the OpenID authentication using Identity providers.
+In this document, we will be describing about how to use OpenID authentication in WaveMaker application.
 
 ---
 
-Open ID is an authentication protocol that allows you to log into applications using SSO (Single Sign-On). SSO allows you to use multiple applications securely without creating a separate account and password for the application. Some well-known Open ID providers include Google, Okta, and AuthO. For example, Twitter uses Open ID authentication where you can select identity provider like Google to log in.
+Using OpenId, WaveMaker applications can let their customers login using their already existing identity such as Google Account, Okta, or AuthO. It is also possible to implement SSO by setting up multiple applications use the same OpenId provider. Some well-known Open ID providers include Google, Okta, and AuthO. For example, Twitter uses Open ID authentication where you can select identity provider like Google to login.
 
 ## How Open ID Authentication Helps
 
