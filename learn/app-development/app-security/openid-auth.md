@@ -10,16 +10,13 @@ In this document, we will be describing about the OpenID authentication using Id
 
 Open ID is an authentication protocol that allows you to log into applications using SSO (Single Sign-On). SSO allows you to use multiple applications securely without creating a separate account and password for the application. Some well-known Open ID providers include Google, Okta, and AuthO. For example, Twitter uses Open ID authentication where you can select identity provider like Google to log in.
 
-
 ## How Open ID Authentication Helps
- 
+
 Open ID Authentication helps verify the user identity with the identity providers. Following are some points how it helps:
 
 - **Easy maintainance of usernames and passwords**: Open ID stops proliferation of username, passwords enabling reuse of identify from providers such as Google, Apple & Facebook. Developers also benefit from not needing store usernames and passwords.
 
-
 - **Lower Password security risks**: Open ID providers do not share passwords with any website and protect online identity. You can easily change open ID password in case of any security compromise. 
-
 
 - **Simple Sign-up process**: With WaveMaker, developer delegates authentication to Open ID providers like Google, Facebook, Okta, Auth0 or any other Open ID standards. You login with a single click, avoiding the efforts and time to feed the redundant information to use an application.
 
@@ -34,14 +31,13 @@ Here is more information on Open ID Authentication
 5. **User** successfully logs into the application and the role is assigned to the user
 6. Session gets established between **User** and **Application**.
 
-
-[![](/learn/assets/OpenID_Architecture.png)](/learn/assets/OpenID_Architecture.png)
+[![Open ID architecture](/learn/assets/OpenID_Architecture.png)](/learn/assets/OpenID_Architecture.png)
 
 ## Configuring Open ID
 
 1. Go to **Project** > **Security**.
 
-[![](/learn/assets/wm_openid_f_1.png)](/learn/assets/wm_openid_f_1.png)
+[![Open ID security](/learn/assets/wm_openid_f_1.png)](/learn/assets/wm_openid_f_1.png)
 
 2. Go to **Authentication & Authorization**.
 
@@ -53,24 +49,24 @@ Here is more information on Open ID Authentication
 
 6. Choose the provider. For example Google or Custom (Okta, AuthO).
 
-[![](/learn/assets/wm_openid_f_2.png)](/learn/assets/wm_openid_f_2.png)
-
+[![Open ID configuration](/learn/assets/wm_openid_f_2.png)](/learn/assets/wm_openid_f_2.png)
 
 :::note
+
 - For more information on using [Google as provider](/learn/how-tos/implement-openid-google-provider) 
 - For more information on using [Okta as provider](/learn/how-tos/implement-openid-okta-provider)
-::: 
 
+::: 
 
 ## Open ID Properties
 
 Open ID Authentication security configurations allow communication between the application and Identity provider.
 
-[![](/learn/assets/wm_openid_f_3.png)](/learn/assets/wm_openid_f_3.png)
+[![Open ID properties](/learn/assets/wm_openid_f_3.png)](/learn/assets/wm_openid_f_3.png)
 
 ### Identity Provider Information
 
-This section contains configuration details for identity provider. 
+This section contains configuration details for identity provider.
 
 - **Provider ID:** Allows User to select the Identity Provider
 - **Authorization URL:** Endpoint that initiates the authentication of the end user
@@ -104,8 +100,4 @@ Role Mapping for logged in users can come from the configured open ID security p
 
 - **Role Attribute**: This field allows you to assign the required role.
 
-**Database**: If you select **Database** then authentication is performed using Open Id and authorization content is retrieved from the database. This allows you to use username and password credentials from Open 
-Id while retrieving role content from a separate database. For role configuration using database [see here](/learn/app-development/app-security/authorization/#user-onboarding).
-
-
-
+**Database**: If you select **Database** then authentication is performed using Open Id and authorization content is retrieved from the database. This allows you to use username and password credentials from Open ID while retrieving role content from a separate database. For role configuration using database [see here](https://docs.wavemaker.com/learn/app-development/app-security/authorization/#useronboarding).
