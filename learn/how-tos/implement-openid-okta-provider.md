@@ -98,8 +98,6 @@ Add v1/logout to the end of sign-in redirect url and enter it as sign-out redire
 2. Go to **Applications** > **Applications**.
 3. Check if we have the required web application else we create a new web application.
 
-[![](/learn/assets/wm_okta_role1.png)](/learn/assets/wm_okta_role1.png)
-
 4. Go to **Directory** > **Profile Editor**.
 5. Click on the **Profile** created by you.
 
