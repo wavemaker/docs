@@ -85,7 +85,7 @@ This section contains configuration details for service provider.
 This section contains configuration details for integration between service provider and identity provider. 
 
 - **Client ID:** Unique identity for the registered client
-- **Client Secrets:** Client specific information that is only known to application and the authorization server. This is application's password
+- **Client Secret:** Client specific information that is only known to application and the authorization server. This is application's password
 - **Scopes:** Scope parameter is used to authorize access to user information
 - **User Name Attribute:** Allows to configure the attribute value associated with user name fetched from identity provider
 
