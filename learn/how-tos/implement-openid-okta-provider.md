@@ -9,12 +9,12 @@ In this document, we discuss the steps to implement Okta as Open ID provider.
 
 ## Okta as Open ID provider
 
-**Selecting Okta as Open ID provider**
+### Selecting Okta as Open ID provider
 
 1. Select **Custom** as Open ID provider from the drop-down menu and enter **Okta** as **Provider ID**.
 [![](/learn/assets/wm_openid_ok1.png)](/learn/assets/wm_openid_ok1.png)
 
-**Creating the application in Okta preview**
+### Creating the application in Okta preview
 
 2. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account. This is to create an OAuth application to fetch the **Client ID** and **Client Secret**.
 
@@ -44,13 +44,16 @@ In this document, we discuss the steps to implement Okta as Open ID provider.
 
 9. Click **Add URL** to add new redirect URLs.
 
+:::note
+- **Redirect URL:** Redirect endpoint is the URL to which the client receives the response
+:::
+
 [![](/learn/assets/wm_openid_ok9.png)](/learn/assets/wm_openid_ok9.png)
 
 10. Enter **sign-in redirect URL**.
 
 :::note
 - Sign-in redirect URL is available in WaveMaker authentication and authorization page.
-- **Redirect URL:** Redirect endpoint is the URL to which the client receives the response
 ::: 
 
 [![](/learn/assets/wm_openid_ok10.png)](/learn/assets/wm_openid_ok10.png)
@@ -63,7 +66,7 @@ Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redire
 
 [![](/learn/assets/wm_openid_ok11.png)](/learn/assets/wm_openid_ok11.png)
 
-12. Select the appropriate access restriction and click **Save**.
+12. Select the appropriate access restriction and click **Save**. This steps ensures domain restrictions to access the application.
 
 [![](/learn/assets/wm_openid_ok12.png)](/learn/assets/wm_openid_ok12.png)
 
@@ -98,9 +101,10 @@ Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redire
 Get the endpoints and client details to provide in the security configuration page in WaveMaker.
 
 
-## Role Mapping using Okta provider:
+## Role Mapping using Okta provider
 
-**Adding Role Attribute**
+### Adding Role Attribute
+
 1. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account in the Developer console of Okta.
 2. Go to **Applications** > **Applications**.
 3. Check if we have the required web application else we create a new web application.
@@ -118,11 +122,13 @@ Get the endpoints and client details to provide in the security configuration pa
 
 [![](/learn/assets/wm_okta_role4.png)](/learn/assets/wm_okta_role4.png)
 
-8. Go to **Profile** and click on edit to provide the value for the role attribute.
+8. Go to **Profile** and click on **Edit** to provide the value for the role attribute.
 
 [![](/learn/assets/wm_okta_role5.png)](/learn/assets/wm_okta_role5.png)
 
-**Creating a custom server as custom claim like role attribute is not allowed in the default server**
+### Creating a custom server
+
+Custom server is created as custom claim like role attribute is not allowed in the default server. The below steps are to configure the custom server.
 
 9. Go to **Security** > **API** > **Add Authorization Server**.
 
