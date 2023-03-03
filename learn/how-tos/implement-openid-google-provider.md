@@ -9,6 +9,8 @@ In this document, we discuss the steps to implement Google as Open ID provider.
 
 ## Google as Open ID provider
 
+**Selecting Google as Open ID provider**
+
 1. Select the Open ID provider as **Google** from the drop-down menu.
 [![](/learn/assets/wm_openid_8_f.png)](/learn/assets/wm_openid_8_f.png)
 
@@ -18,7 +20,7 @@ In this document, we discuss the steps to implement Google as Open ID provider.
 Fields available in the **Identity Provider** section gets automatically occupied with the respective URLs.
 ::: 
 
-You have selected Google as Open ID provider in Wavemaker.
+**Creating the application in Google Console**
 
 3. Set up user account in the [Google Console](https://console.cloud.google.com). This is to create an OAuth application to fetch the Client ID and Client Secret.
 
@@ -67,8 +69,6 @@ You have selected Google as Open ID provider in Wavemaker.
 
 14. In **Summary**, review the provided information and click **Back to Dashboard**. You can review and edit the previously given information and return to the dashboard once reviewed.
 [![](/learn/assets/wm_openid_gc15.png)](/learn/assets/wm_openid_gc15.png)
-
-You have succefully created the application in Google Console.
 
 15. In the **Credentials** section, enter the **Authorized redirect URIs** and click **Save**.
 [![](/learn/assets/wm_openid_gc16.png)](/learn/assets/wm_openid_gc16.png)

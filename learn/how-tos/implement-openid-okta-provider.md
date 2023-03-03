@@ -9,10 +9,12 @@ In this document, we discuss the steps to implement Okta as Open ID provider.
 
 ## Okta as Open ID provider
 
+**Selecting Okta as Open ID provider**
+
 1. Select **Custom** as Open ID provider from the drop-down menu and enter **Okta** as **Provider ID**.
 [![](/learn/assets/wm_openid_ok1.png)](/learn/assets/wm_openid_ok1.png)
 
-You have selected Okta as Open ID provider in Wavemaker.
+**Creating the application in Okta preview**
 
 2. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account. This is to create an OAuth application to fetch the **Client ID** and **Client Secret**.
 
@@ -65,8 +67,6 @@ Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redire
 
 [![](/learn/assets/wm_openid_ok12.png)](/learn/assets/wm_openid_ok12.png)
 
-You have successfully created the application in Okta preview.
-
 13. Click **Copy** to copy the Client ID to clipboard. Later, provide this information in wavemaker security configurations. 
 
 [![](/learn/assets/wm_openid_ok13.png)](/learn/assets/wm_openid_ok13.png)
@@ -100,6 +100,7 @@ Get the endpoints and client details to provide in the security configuration pa
 
 ## Role Mapping using Okta provider:
 
+**Adding Role Attribute**
 1. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account in the Developer console of Okta.
 2. Go to **Applications** > **Applications**.
 3. Check if we have the required web application else we create a new web application.
@@ -113,8 +114,6 @@ Get the endpoints and client details to provide in the security configuration pa
 
 [![](/learn/assets/wm_okta_role3.png)](/learn/assets/wm_okta_role3.png)
 
-You have added the role attribute.
-
 7. Go to **People** > **Username**.
 
 [![](/learn/assets/wm_okta_role4.png)](/learn/assets/wm_okta_role4.png)
@@ -123,9 +122,7 @@ You have added the role attribute.
 
 [![](/learn/assets/wm_okta_role5.png)](/learn/assets/wm_okta_role5.png)
 
-You have created your profile.
-
-We create a custom server as custom claim like role attribute is not allowed in the default server.
+**Creating a custom server as custom claim like role attribute is not allowed in the default server**
 
 9. Go to **Security** > **API** > **Add Authorization Server**.
 
