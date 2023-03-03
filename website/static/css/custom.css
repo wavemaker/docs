@@ -1419,6 +1419,7 @@ table{
     padding:0px 15px 10px 15px;
     border-radius:10px;
     width:fit-content;
+    word-break: break-word;
 }
 table tr{
     border-top:var(--wm-table-border);
