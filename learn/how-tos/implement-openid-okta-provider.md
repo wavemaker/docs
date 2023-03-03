@@ -67,11 +67,11 @@ Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redire
 
 [![](/learn/assets/wm_openid_ok12.png)](/learn/assets/wm_openid_ok12.png)
 
-13. Click **Copy** to copy the Client ID to clipboard. Later, provide this information in wavemaker security configurations. 
+13. Click **Copy** to copy the Client ID to clipboard. Later, provide this information in WaveMaker security configurations. 
 
 [![](/learn/assets/wm_openid_ok13.png)](/learn/assets/wm_openid_ok13.png)
 
-14. Click **Copy** icon to copy the Client Secret to clipboard. Later, provide this information in wavemaker security configurations. 
+14. Click **Copy** icon to copy the Client Secret to clipboard. Later, provide this information in WaveMaker security configurations. 
 
 [![](/learn/assets/wm_openid_ok14.png)](/learn/assets/wm_openid_ok14.png)
 
