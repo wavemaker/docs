@@ -1418,7 +1418,7 @@ table{
     border-spacing:0 6px;
     padding:0px 15px 10px 15px;
     border-radius:10px;
-    width:fit-content;
+    width:fit-content; 
     word-break: break-word;
 }
 table tr{
