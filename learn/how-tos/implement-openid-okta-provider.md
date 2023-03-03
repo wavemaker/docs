@@ -3,15 +3,18 @@ title: "Configuring Open ID using Okta provider"
 id: "implement-openid-okta-provider"
 sidebar_label: "Open ID using Okta provider"
 ---
-In this document we discuss the steps to implement Okta as Open ID provider.
+In this document, we discuss the steps to implement Okta as Open ID provider.
 
 ---
 
-## Okta as OpenID provider
+## Okta as Open ID provider
+
 1. Select **Custom** as Open ID provider from the drop-down menu and enter **Okta** as **Provider ID**.
 [![](/learn/assets/wm_openid_ok1.png)](/learn/assets/wm_openid_ok1.png)
 
-2. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account. This is to create an OAuth application to fetch the **Client ID** and **Client secret**.
+You have selected Okta as Open ID provider in Wavemaker.
+
+2. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account. This is to create an OAuth application to fetch the **Client ID** and **Client Secret**.
 
 3. Go to **Dashboard**.
 
@@ -37,22 +40,23 @@ In this document we discuss the steps to implement Okta as Open ID provider.
 
 [![](/learn/assets/wm_openid_ok8.png)](/learn/assets/wm_openid_ok8.png)
 
-9. Click **Add Url** to add new redirect urls.
+9. Click **Add URL** to add new redirect URLs.
 
 [![](/learn/assets/wm_openid_ok9.png)](/learn/assets/wm_openid_ok9.png)
 
-10. Enter **sign-in redirect url**.
+10. Enter **sign-in redirect URL**.
 
 :::note
-Sign-in redirect url is available in WaveMaker authentication and authorization page.
+- Sign-in redirect URL is available in WaveMaker authentication and authorization page.
+- **Redirect URL:** Redirect endpoint is the URL to which the client receives the response
 ::: 
 
 [![](/learn/assets/wm_openid_ok10.png)](/learn/assets/wm_openid_ok10.png)
 
-11. Enter **sign-out redirect url**.
+11. Enter **sign-out redirect URL**.
 
 :::note
-Add v1/logout to the end of sign-in redirect url and enter it as sign-out redirect url.
+Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redirect URL.
 ::: 
 
 [![](/learn/assets/wm_openid_ok11.png)](/learn/assets/wm_openid_ok11.png)
@@ -61,11 +65,13 @@ Add v1/logout to the end of sign-in redirect url and enter it as sign-out redire
 
 [![](/learn/assets/wm_openid_ok12.png)](/learn/assets/wm_openid_ok12.png)
 
-13. Click **Copy** to copy the client Id to clipboard.
+You have successfully created the application in Okta preview.
+
+13. Click **Copy** to copy the Client ID to clipboard. Later, provide this information in wavemaker security configurations. 
 
 [![](/learn/assets/wm_openid_ok13.png)](/learn/assets/wm_openid_ok13.png)
 
-14. Click **Copy** icon to copy the client secret to clipboard.
+14. Click **Copy** icon to copy the Client Secret to clipboard. Later, provide this information in wavemaker security configurations. 
 
 [![](/learn/assets/wm_openid_ok14.png)](/learn/assets/wm_openid_ok14.png)
 
@@ -85,11 +91,11 @@ Add v1/logout to the end of sign-in redirect url and enter it as sign-out redire
 
 [![](/learn/assets/wm_openid_ok18.png)](/learn/assets/wm_openid_ok18.png)
 
-19. Click **Metadata url** that redirects to the page which contains authorization endpoint, token endpoint, JWKS endpoint and User info endpoint.
+19. Click **Metadata URL** that redirects to the page which contains authorization endpoint, token endpoint, JWKS endpoint and User info endpoint.
 
 [![](/learn/assets/wm_openid_ok19.png)](/learn/assets/wm_openid_ok19.png)
 
-20. Get the endpoints and client details to provide in the security configuration page in WaveMaker.
+Get the endpoints and client details to provide in the security configuration page in WaveMaker.
 
 
 ## Role Mapping using Okta provider:
@@ -107,6 +113,8 @@ Add v1/logout to the end of sign-in redirect url and enter it as sign-out redire
 
 [![](/learn/assets/wm_okta_role3.png)](/learn/assets/wm_okta_role3.png)
 
+You have added the role attribute.
+
 7. Go to **People** > **Username**.
 
 [![](/learn/assets/wm_okta_role4.png)](/learn/assets/wm_okta_role4.png)
@@ -114,6 +122,10 @@ Add v1/logout to the end of sign-in redirect url and enter it as sign-out redire
 8. Go to **Profile** and click on edit to provide the value for the role attribute.
 
 [![](/learn/assets/wm_okta_role5.png)](/learn/assets/wm_okta_role5.png)
+
+You have created your profile.
+
+We create a custom server as custom claim like role attribute is not allowed in the default server.
 
 9. Go to **Security** > **API** > **Add Authorization Server**.
 

@@ -3,7 +3,7 @@ title: "Configuring Open ID using Google provider"
 id: "implement-openid-google-provider"
 sidebar_label: "Open ID using Google provider"
 ---
-In this document we discuss the steps to implement Google as Open ID provider.
+In this document, we discuss the steps to implement Google as Open ID provider.
 
 ---
 
@@ -17,6 +17,8 @@ In this document we discuss the steps to implement Google as Open ID provider.
 :::note
 Fields available in the **Identity Provider** section gets automatically occupied with the respective URLs.
 ::: 
+
+You have selected Google as Open ID provider in Wavemaker.
 
 3. Set up user account in the [Google Console](https://console.cloud.google.com). This is to create an OAuth application to fetch the Client ID and Client Secret.
 
@@ -36,13 +38,13 @@ Fields available in the **Identity Provider** section gets automatically occupie
 6. Click **Create Credentials**.
 [![](/learn/assets/wm_openid_gc3.png)](/learn/assets/wm_openid_gc3.png)
 
-7. Select **OAuth client ID** from the drop down menu.
+7. Select **OAuth client ID** from the drop-down menu.
 [![](/learn/assets/wm_openid_gc4.png)](/learn/assets/wm_openid_gc4.png)
 
-8. Click **Configure Consent** screen.
+8. Click **Configure Consent screen** to get directed to **OAuth consent screen** where we add user type, scope and developer details.
 [![](/learn/assets/wm_openid_gc5.png)](/learn/assets/wm_openid_gc5.png)
 
-9. In **OAuth consent screen**, select the user type to restrict the user accounts to access the application.
+9. In **OAuth consent screen**, select the **User Type** to restrict the user accounts to access the application.
 [![](/learn/assets/wm_openid_gc6.png)](/learn/assets/wm_openid_gc6.png)
 
 10. Click **Create** to save the given information.
@@ -63,31 +65,32 @@ Fields available in the **Identity Provider** section gets automatically occupie
 [![](/learn/assets/wm_openid_gc14.png)](/learn/assets/wm_openid_gc14.png)
 
 
-14. In **Summary**, review the provided information and click **Back to Dashboard**.
+14. In **Summary**, review the provided information and click **Back to Dashboard**. You can review and edit the previously given information and return to the dashboard once reviewed.
 [![](/learn/assets/wm_openid_gc15.png)](/learn/assets/wm_openid_gc15.png)
+
+You have succefully created the application in Google Console.
 
 15. In the **Credentials** section, enter the **Authorized redirect URIs** and click **Save**.
 [![](/learn/assets/wm_openid_gc16.png)](/learn/assets/wm_openid_gc16.png)
 [![](/learn/assets/wm_openid_gc17.png)](/learn/assets/wm_openid_gc17.png)
 
-16. Collect the **Client Id** and **Client Secret** by clicking **Download Json**.
+16. Collect the **Client ID** and **Client Secret** by clicking **Download Json**.
 [![](/learn/assets/wm_openid_gc18.png)](/learn/assets/wm_openid_gc18.png)
 
-17. Get the endpoints and client details to provide in the security configuration page in WaveMaker.
+Get the endpoints and client details to provide in the security configuration page in WaveMaker to integrate Service Provider and Identity Provider.
 
 
 ### Gsuite domain restrictions
 
-**Gsuite domain**: Gsuite provides enterprise package which gives access to all the tools via respective organization email addresses. With this process, application restricts login using personal google accounts.  
+**Gsuite domain**: Gsuite provides enterprise package which gives access to all the tools via respective organization email addresses. With this process, application restricts login using personal Google accounts.  
 
-While creating the [OAuth application in google console](#google-as-openid-provider), you enter the list of authorized domains that allows only the domain specific mail ids to access the application. You have to then select the domain type as **Internal**. It allows associated organization accounts for the authorized domains to display at the time of SSO. **External** type includes all the available google accounts and is not restricted to any domain.
+While creating the [OAuth application in Google Console](#google-as-openid-provider), you enter the list of authorized domains that allows only the domain specific mail ids to access the application. You have to then select the domain type as **Internal**. It allows associated organization accounts for the authorized domains to display at the time of SSO. **External** type includes all the available Google accounts and is not restricted to any domain.
 
 ### Steps to restrict Gsuite domain
 
 1. Click **Add Domain** and enter the authorized domains. This step is to restrict the domains to access the application.
 [![](/learn/assets/wm_openid_gc20.png)](/learn/assets/wm_openid_gc20.png)
-2. Select the **Internal** option to allow the enterprise oriented google accounts of the authorized domains to be displayed during the time of SSO.
+2. Select the **Internal** option to allow the enterprise oriented Google accounts of the authorized domains to be displayed during the time of SSO.
 [![](/learn/assets/wm_openid_gc19.png)](/learn/assets/wm_openid_gc19.png)
-2. Click **Create** to implement the end user type who can access the application.
+2. Click **Create**. This step successfully sets the end user type who can access the application.
 [![](/learn/assets/wm_openid_gc7.png)](/learn/assets/wm_openid_gc7.png)
-
