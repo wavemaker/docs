@@ -14,13 +14,13 @@ Below are steps to choose Okta as Open ID provider in WaveMaker.
 1. Select **Custom** as Open ID provider from the drop-down menu and enter **Okta** as **Provider ID**.
 [![](/learn/assets/wm_openid_ok1.png)](/learn/assets/wm_openid_ok1.png)
 
-## Application in Okta preview
+## Application in Okta Developer
 
-Below are the steps to create an application in Okta preview.
+Below are the steps to create an application in Okta Developer.
 
 ### Creating a new application
 
-1. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account. This is to create an OAuth application to fetch the **Client ID** and **Client Secret**.
+1. Go to [Okta Developer](https://developer.okta.com/login/) and set up user account. This is to create an OAuth application to fetch the **Client ID** and **Client Secret**.
 
 2. Go to **Dashboard**.
 
@@ -117,11 +117,11 @@ Get the endpoints and client details to provide in the security configuration pa
 
 ## Role Mapping using Okta provider
 
-Below are the steps to assign you the role in Okta preview.
+Below are the steps to assign you the role in Okta Developer.
 
 ### Adding Role Attribute
 
-1. Go to [Okta Preview](https://developer.okta.com/login/) and set up user account in the Developer console of Okta.
+1. Go to [Okta Developer](https://developer.okta.com/login/) and set up user account in the Developer console of Okta.
 2. Go to **Applications** > **Applications**.
 3. Check if we have the required web application else we create a new web application.
 
