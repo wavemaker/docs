@@ -56,21 +56,17 @@ Below are the steps to create an application in Okta Developer.
 
 [![](/learn/assets/wm_openid_ok9.png)](/learn/assets/wm_openid_ok9.png)
 
-5. Enter **sign-in redirect URL**.
+5. Enter **sign-in redirect URL** and **sign-out redirect URL**. 
 
 :::note
 - Sign-in redirect URL is available in WaveMaker authentication and authorization page.
+- Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redirect URL.
+**Example:** 
+Sign-in redirect URL: https://example.com/okta
+Sign-out redirect URL: https://example.com/okta/v1/logout
 ::: 
 
 [![](/learn/assets/wm_openid_ok10.png)](/learn/assets/wm_openid_ok10.png)
-
-6. Enter **sign-out redirect URL**.
-
-:::note
-Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redirect URL.
-::: 
-
-[![](/learn/assets/wm_openid_ok11.png)](/learn/assets/wm_openid_ok11.png)
 
 ### Restricting domain
 
