@@ -1,5 +1,6 @@
 :root {
     /* --ifm-color-primary: #1794ef; */
+    /* --doc-sidebar-width: 250px;  */
     --ifm-font-family-base: 'IBM Plex Sans', sans-serif;
     --ifm-font-color-base: #3b454e;
     --ifm-heading-color: #000000;
@@ -1418,7 +1419,7 @@ table{
     border-spacing:0 6px;
     padding:0px 15px 10px 15px;
     border-radius:10px;
-    width:fit-content; 
+    width:100%; 
     word-break: break-word;
 }
 table tr{
@@ -1429,6 +1430,8 @@ table thead tr{
 }
 table th,table td{
     border: var(--wm-table-border);
+    min-width: 140px;
+    max-width: 100%;
 }
 table tbody tr,table tr:nth-child(2n){
     background-color:var(--wm-table-tr-color);
