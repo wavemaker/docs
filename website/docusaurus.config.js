@@ -106,17 +106,20 @@ module.exports = {
       },
       "items": [
         {
-          "to": "documentation-reference",
+          "type": "doc",
+          "docId": "documentation-reference",
           "label": "Guide",
           "position": "left"
         },
         {
-          "to": "app-development/widgets/widget-library",
+          "type": "doc",
+          "docId": "app-development/widgets/widget-library",
           "label": "Widgets",
           "position": "left"
         },
         {
-          "to": "howtos-documents",
+          "type": "doc",
+          "docId": "howtos-documents",
           "label": "How-to",
           "position": "left"
         },
@@ -131,7 +134,8 @@ module.exports = {
           "className": "version-dropdown"
         },
         {
-          "to": "wavemaker-release-notes",
+          "type": "doc",
+          "docId": "wavemaker-release-notes",
           "label": "Releases",
           "position": "right"
         },
