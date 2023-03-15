@@ -24,7 +24,7 @@ Fields available in the **Identity Provider** section gets automatically occupie
 
 Below are the steps to create an application in Google Console.
 
-### Creating a new project in Google Console
+### Creating New Project in Google Console
 
 1. Set up user account in the [Google Console](https://console.cloud.google.com). This is to create an OAuth application to fetch the Client ID and Client Secret.
 
@@ -41,7 +41,7 @@ Below are the steps to create an application in Google Console.
 3. Enter the **Project** name, **Organization** name, and **Location**. Click **Create** to launch a new project.
 [![](/learn/assets/wm_openid_gc2.png)](/learn/assets/wm_openid_gc2.png)
 
-### Choosing the type of Credentials
+### Choosing Credentials
 
 1. Click **Create Credentials** to select the type of credentials to access the application.
 [![](/learn/assets/wm_openid_gc3.png)](/learn/assets/wm_openid_gc3.png)
@@ -52,7 +52,7 @@ Below are the steps to create an application in Google Console.
 3. Click **Configure Consent screen** to get directed to **OAuth consent screen** where we add user type, scope and developer details.
 [![](/learn/assets/wm_openid_gc5.png)](/learn/assets/wm_openid_gc5.png)
 
-### Configuring the application in Google Console
+### Configuring Application in Google Console
 
 1. In **OAuth consent screen**, select the **User Type** to restrict the user accounts to access the application.
 [![](/learn/assets/wm_openid_gc6.png)](/learn/assets/wm_openid_gc6.png)
@@ -77,7 +77,7 @@ Below are the steps to create an application in Google Console.
 7. In **Summary**, review the provided information and click **Back to Dashboard**. You can review and edit the previously given information and return to the dashboard once reviewed.
 [![](/learn/assets/wm_openid_gc15.png)](/learn/assets/wm_openid_gc15.png)
 
-### Fetching the Client details in Google Console
+### Fetching Client Details in Google Console
 
 1. In the **Credentials** section, enter the **Authorized redirect URIs** and click **Save**.
 [![](/learn/assets/wm_openid_gc16.png)](/learn/assets/wm_openid_gc16.png)
@@ -89,13 +89,13 @@ Below are the steps to create an application in Google Console.
 Get the endpoints and client details to provide in the security configuration page in WaveMaker to integrate Service Provider and Identity Provider.
 
 
-## Gsuite domain restrictions
+## Gsuite Domain Restrictions
 
 **Gsuite domain**: Gsuite provides enterprise package which gives access to all the tools via respective organization email addresses. With this process, application restricts login using personal Google accounts.  
 
 While creating the [OAuth application in Google Console](#google-as-openid-provider), you enter the list of authorized domains that allows only the domain specific mail ids to access the application. You have to then select the domain type as **Internal**. It allows associated organization accounts for the authorized domains to display at the time of SSO. **External** type includes all the available Google accounts and is not restricted to any domain.
 
-### Restricting Gsuite domain
+### Restricting Gsuite Domain
 
 1. Click **Add Domain** and enter the authorized domains. This step is to restrict the domains to access the application.
 [![](/learn/assets/wm_openid_gc20.png)](/learn/assets/wm_openid_gc20.png)

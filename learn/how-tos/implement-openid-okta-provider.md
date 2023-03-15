@@ -7,7 +7,7 @@ In this document, we discuss the steps to implement Okta as Open ID provider.
 
 ---
 
-## Okta as Open ID provider
+## Okta as Open ID Provider
 
 Below are steps to choose Okta as Open ID provider in WaveMaker.
 
@@ -18,7 +18,7 @@ Below are steps to choose Okta as Open ID provider in WaveMaker.
 
 Below are the steps to create an application in Okta Developer.
 
-### Creating a new application
+### Creating New Application
 
 1. Go to [Okta Developer](https://developer.okta.com/login/) and set up user account. This is to create an OAuth application to fetch the **Client ID** and **Client Secret**.
 
@@ -34,7 +34,7 @@ Below are the steps to create an application in Okta Developer.
 
 [![](/learn/assets/wm_openid_ok4.png)](/learn/assets/wm_openid_ok4.png)
 
-### Configuring the application
+### Configuring Application
 
 1. Select **Open ID Connect** option as Sign-in method.
 
@@ -56,29 +56,25 @@ Below are the steps to create an application in Okta Developer.
 
 [![](/learn/assets/wm_openid_ok9.png)](/learn/assets/wm_openid_ok9.png)
 
-5. Enter **sign-in redirect URL**.
+5. Enter **sign-in redirect URL** and **sign-out redirect URL**. 
 
 :::note
 - Sign-in redirect URL is available in WaveMaker authentication and authorization page.
+- Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redirect URL.
+**Example:** 
+Sign-in redirect URL: https://example.com/okta
+Sign-out redirect URL: https://example.com/okta/v1/logout
 ::: 
 
 [![](/learn/assets/wm_openid_ok10.png)](/learn/assets/wm_openid_ok10.png)
 
-6. Enter **sign-out redirect URL**.
-
-:::note
-Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redirect URL.
-::: 
-
-[![](/learn/assets/wm_openid_ok11.png)](/learn/assets/wm_openid_ok11.png)
-
-### Restricting domain
+### Restricting Domain
 
 1. Select the appropriate access restriction and click **Save**. This steps ensures domain restrictions to access the application.
 
 [![](/learn/assets/wm_openid_ok12.png)](/learn/assets/wm_openid_ok12.png)
 
-### Fetching the Client details
+### Fetching Client Details
 
 1. Click **Copy** to copy the Client ID to clipboard. Later, provide this information in WaveMaker security configurations. 
 
@@ -88,13 +84,13 @@ Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redire
 
 [![](/learn/assets/wm_openid_ok14.png)](/learn/assets/wm_openid_ok14.png)
 
-### Granting the scopes
+### Enabling Scopes
 
 1. Go to **Okta API Scopes** and click **Grant** to include it as scope.
 
 [![](/learn/assets/wm_openid_ok15.png)](/learn/assets/wm_openid_ok15.png)
 
-### Fetching security endpoints
+### Fetching Security Endpoints
 
 1. Click **Security** from the menu.
 
@@ -115,7 +111,7 @@ Add v1/logout to the end of sign-in redirect URL and enter it as sign-out redire
 Get the endpoints and client details to provide in the security configuration page in WaveMaker.
 
 
-## Role Mapping using Okta provider
+## Role Mapping using Okta Provider
 
 Below are the steps to assign you the role in Okta Developer.
 
@@ -142,7 +138,7 @@ Below are the steps to assign you the role in Okta Developer.
 
 [![](/learn/assets/wm_okta_role5.png)](/learn/assets/wm_okta_role5.png)
 
-### Creating a custom server
+### Creating Custom Server
 
 Custom server is created as custom claim like role attribute is not allowed in the default server. The below steps are to configure the custom server.
 
