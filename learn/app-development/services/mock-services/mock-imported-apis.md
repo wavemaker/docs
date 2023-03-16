@@ -1,23 +1,25 @@
 ---
-title: "Mocking Imported REST APIs"
+title: "MockingBird - Mock REST APIs"
 id: "mock-imported-apis"
 sidebar_label: "Mocking REST API"
 ---
 ---
 
-API Mockingbird can mock APIs to work concurrently on the front-end, while the back-end can develop APIs. It is a very functional and convenient way to get going with development flow when you need live data during the UI development or testing phase; in cases when the API is not ready, unavailable, or unreliable, especially when the API breaks in the time zone when the back-end developer may not be reachable. 
+API Mockingbird can mock REST APIs with live authentic responses, allowing you to simultaneously develop the application frontend, while the backend team can design and develop the APIs. Mockingbird provides a convenient way to switch between mocked API and the orginal API within the Studio. 
 
-For this, when the API contract is made, it must import the OpenAPI/Swagger spec to create a mock API implementation.
+Mockingbird helps you keep the development flow continuous when you need APIs with live data during the UI development or testing phase. Also, in cases when the API breaks often in the time zone when the backend developer may not be able to support it. 
+
+To get started with MockingBird, when the API contract is made, a WaveMaker developer can then import the OpenAPI/Swagger spec to mock APIs.
 
 ## How it works
 
-In WaveMaker Studio, mock API at the time of importing the REST API by enabling the API Mockingbird flag. It simulates actual APIs where you can generate requests and get realistic responses the actual API would return. 
+In WaveMaker Studio, you can mock API at the time of importing the REST API by simply enabling the API MockingBird flag. It simulates actual APIs where MockingBird can generate requests and get realistic responses that an actual API would return. 
 
-API Mockingbird is smart to understand the data types of each field in your API response and choose mock data intelligently. This recognizes 100s of data types starting from First Name, Last name, Address, ZipCode, and Credit Card number for mocking the data.
+API MockingBird is smart to understand the data types of each field in your API response and choose mock data intelligently. This recognizes 100s of data types starting from First Name, Last name, Address, zip code, and Credit Card number for mocking the API data.
 
 ## Create Mock Server for Imported API
 
-1. A Swagger should be successfully imported into the Importing APIs section.
+1. A Swagger should be successfully imported into the **Importing APIs** section.
 2. Mock Imported APIs.
 
 ### Enabling API Mocking
