@@ -1462,6 +1462,7 @@
               "label": "Versions: 11.2.x",
               "items": 
                 [  
+                  "wavemaker-release-notes/v11-3-0", 
                   "wavemaker-release-notes/v11-2-4",   
                   "wavemaker-release-notes/v11-2-2",  
                   "wavemaker-release-notes/v11-2-1",                        
