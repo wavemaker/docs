@@ -1,13 +1,13 @@
 ---
 title: "MockingBird - Mock REST APIs"
 id: "mock-imported-apis"
-sidebar_label: "Mocking REST API"
+sidebar_label: "Mock REST API"
 ---
 ---
 
-API Mockingbird can mock REST APIs with live authentic responses, allowing you to simultaneously develop the application frontend, while the backend team can design and develop the APIs. Mockingbird provides a convenient way to switch between mocked API and the orginal API within the Studio. 
+API MockingBird can mock REST APIs with live authentic responses, allowing you to simultaneously develop the application frontend, while the backend team can design and develop the APIs. MockingBird provides a convenient way to switch between mocked API and the orginal API within the Studio. 
 
-Mockingbird helps you keep the development flow continuous when you need APIs with live data during the UI development or testing phase. Also, in cases when the API breaks often in the time zone when the backend developer may not be able to support it. 
+MockingBird helps you keep the development flow continuous when you need APIs with live data during the UI development or testing phase. Also, in cases when the API breaks often in the time zone when the backend developer may not be able to support it. 
 
 To get started with MockingBird, when the API contract is made, a WaveMaker developer can then import the OpenAPI/Swagger spec to mock APIs.
 
