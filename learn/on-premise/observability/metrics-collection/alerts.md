@@ -92,11 +92,14 @@ Prometheus uses an alert manager to send notifications. In WaveMaker Enterprise 
 
 ### Configure Alert Notifications using Email Channel
 
-1) SSH to Platform Instance and edit the file /wm-runtime/conf/alertmanager/config/config.yml by replacing the below place holders
-   - ***@SMTP_HOST@ and @SMTP_PORT@*** with your Corporate SMTP Server Details.
-   - ***@SMPT_FROM_EMAIL@ and @SMTP_EMAIL@*** with Corportate EmailAddress ex: notifications@xyz.com
-   - ***@SMTP_PASSWORD@*** with valid password.
-   - Change the Receivers EmailAddress  replace ***'devops-alerts@wavemaker.com'*** with your Corporate EmailAddress ex:devops@xyz.com
-2) Restart AlertManager Container using the below commands.
-   - docker exec -it alertmanager supervisorctl stop alertmanager
-   - docker exec -it alertmanager supervisorctl start alertmanager
+1) SSH to Platform Instance and use the following command to access the alertmanager container 'docker exec -it alertmanager bash'.
+2) Configure the 'config.yml' inside the alertmanager container located at '/etc/alertmanager' and '/scripts/alertmanager/config/'.
+3) Modify the mentioned fields as per requirement.
+global:
+  smtp_smarthost: '@SMTP_HOST@:@SMTP_PORT@'
+  smtp_from: '@SMPT_FROM_EMAIL@'
+  smtp_auth_username: '@SMTP_EMAIL@'
+  smtp_auth_password: '@SMTP_PASSWORD@'
+4) To configure the alert receiver email id change the email id from 'devops-alerts@wavemaker.com' to required email id on line number 26 (  - to: 'devops-alerts@wavemaker.com').
+5) Add the tls configuration on line number 28 as 'require_tls: false'.
+6) Restart the alertmanager services inside the container use the following commands 'supervisorctl stop alertmanager ; sleep 15; supervisorctl start alertmanager'.
