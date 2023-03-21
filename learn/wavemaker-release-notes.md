@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.2.4](/learn/wavemaker-release-notes/v11-2-4) <p style={{color:"red"}}>*latest*</p> | This release includes bug fixes for Dynamic Data Table infinite scroll pagination and keyboard date picker. | 06 February 2023 |
+|[WaveMaker 11.2.5](/learn/wavemaker-release-notes/v11-2-5) <p style={{color:"red"}}>*latest*</p> | This release includes bug fixes for accessiblity in widgets and In-memory sessions | 20 March 2023 |
+|[WaveMaker 11.2.4](/learn/wavemaker-release-notes/v11-2-4)| This release includes bug fixes for Dynamic Data Table infinite scroll pagination and keyboard date picker. | 06 February 2023 |
 |WaveMaker 11.2.3 | Fixed the Connectors artifact import issue, which earlier failed and could not run existing connectors. | 23 January 2023 |
 |[WaveMaker 11.2.2](/learn/wavemaker-release-notes/v11-2-2) | This release includes formatting fixes and fixing user account log out issue. | 16 January 2023 |
 |[WaveMaker 11.2.1](/learn/wavemaker-release-notes/v11-2-1) | This release includes bug fixes for the Calendar widget accessibility and icon rendering. | 06 December 2022 |
