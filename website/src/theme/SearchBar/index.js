@@ -10,7 +10,7 @@ import { useSearchPage } from '@docusaurus/theme-common/internal';
 import { DocSearchButton, useDocSearchKeyboardEvents } from '@docsearch/react';
 import { useAlgoliaContextualFacetFilters } from '@docusaurus/theme-search-algolia/client';
 import Translate from '@docusaurus/Translate';
-import translations from '@theme/SearchTranslations';
+// import translations from '@theme/SearchTranslations';
 import { DocSearchModal as Modal } from '../SearchModal/index';
 let DocSearchModal = Modal;
 function Hit({ hit, children }) {
@@ -163,8 +163,8 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
         })}
         {...props}
         searchParameters={searchParameters}
-        placeholder={translations.placeholder}
-        translations={translations.modal}
+        // placeholder={translations.placeholder}
+        // translations={translations.modal}
       />
     </>
   );

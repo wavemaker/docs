@@ -62,9 +62,6 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
-        "googleAnalytics": {
-          "trackingID": process.env.GA_TRACKING_ID,
-        },
         "docs": {
           "path": "../learn",
           "routeBasePath": "/",
@@ -152,11 +149,6 @@ module.exports = {
           "className": "navbar__link button button--warning headerSignIn"
         }
       ]
-    },
-    "algolia": {
-      "appId": process.env.ALGOLIA_DS_APP_ID,
-      "apiKey": process.env.ALGOLIA_DS_API_KEY,
-      "indexName": process.env.ALGOLIA_DS_INDEX_NAME
     },
     "mermaid": {
       "theme": { "light": 'neutral', "dark": 'forest' },
