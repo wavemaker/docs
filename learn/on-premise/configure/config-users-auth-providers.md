@@ -74,3 +74,16 @@ The User should be mapped with a respective team to access the studio. Following
 
 
 [![authentication provider](/learn/assets/wme-setup/configuring-wme/adding-authorization-provider.png)](/learn/assets/wme-setup/configuring-wme/adding-authorization-provider.png)
+
+### Restricting Login for all users
+
+You can restrict the users from logging into WaveMaker studio by enabling Restrict Login for all users option. Once enabled, all active users get logged out of the platform within three minutes. Only the super admin who enables this restriction stays logged in.
+
+[![Login restriction](/learn/assets/wme-setup/configuring-wme/wm_logout_users_1f.png)](/learn/assets/wme-setup/configuring-wme/wm_logout_users_1f.png)
+
+### Steps to Restrict Users
+
+1. Go to **Launchpad**.
+2. Go to **Identity Providers**.
+3. Enable **Restrict Login for all users** option and click on **Confirm**.
+
