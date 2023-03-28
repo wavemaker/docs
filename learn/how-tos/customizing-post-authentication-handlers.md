@@ -143,6 +143,13 @@ public void addAttribute(String key, Object value, Attribute.AttributeScope scop
     attributes.put(key, new Attribute(scope, value));
 }
 ```
+You can set custom authorities using the `setAuthorities` method. This method can be called in `MyCustomAuthenticationSuccessHandler` class.
+```
+public void setAuthorities(Collection<GrantedAuthority> authorities) {
+    this.authorities = authorities;
+}
+```
+
 ### Adding Custom Attributes
 
 You can attach additional information to the logged in user using the custom attribute. These attribute are made available in the logged-in user context and they can be retrieved in both UI & backend as per your needs.
