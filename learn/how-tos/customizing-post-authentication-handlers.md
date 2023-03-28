@@ -137,16 +137,16 @@ public class WMAuthentication extends AbstractMutableAuthoritiesAuthenticationTo
    }
 }
 ```
-You can add custom attributes using the `addAttribute` method. You need to implement methods in the `WMAuthenticationSuccessHandler` interface and call the below method of `WMAuthentication` object to add any custom attributes.
-```
-public void addAttribute(String key, Object value, Attribute.AttributeScope scope) {
-    attributes.put(key, new Attribute(scope, value));
-}
-```
 You can set custom authorities using the `setAuthorities` method. This method can be called in `MyCustomAuthenticationSuccessHandler` class.
 ```
 public void setAuthorities(Collection<GrantedAuthority> authorities) {
     this.authorities = authorities;
+}
+```
+You can add custom attributes using the `addAttribute` method. You need to implement methods in the `WMAuthenticationSuccessHandler` interface and call the below method of `WMAuthentication` object to add any custom attributes.
+```
+public void addAttribute(String key, Object value, Attribute.AttributeScope scope) {
+    attributes.put(key, new Attribute(scope, value));
 }
 ```
 
