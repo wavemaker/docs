@@ -96,7 +96,7 @@ At app runtime, WaveMaker will automatically trigger these custom handlers. Foll
 
 `WMAuthentication` wrapper class holds authentication information like `principal`, `loginTime`, `userId` and the original authentication object. This wrapper class has the following structure.
 ```
-public class WMAuthentication extends AbstractAuthenticationToken {
+public class WMAuthentication extends AbstractMutableAuthoritiesAuthenticationToken {
    private Map<String, Attribute> attributes = new HashMap<>();
    private String principal;    
    private long loginTime;
