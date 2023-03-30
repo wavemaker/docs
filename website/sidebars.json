@@ -1450,11 +1450,19 @@
 		{
 			"type": "category",
 			"label": "Latest v11.x",
-			"items": [{
+			"items": [
+      {
+					"type": "category",
+					"label": "Versions: 11.3.x",
+					"items": [
+            "wavemaker-release-notes/v11-3-0",
+					]
+				},
+        {
 					"type": "category",
 					"label": "Versions: 11.2.x",
 					"items": [
-            "wavemaker-release-notes/v11-3-0",
+						"wavemaker-release-notes/v11-2-5",
 						"wavemaker-release-notes/v11-2-4",
 						"wavemaker-release-notes/v11-2-2",
 						"wavemaker-release-notes/v11-2-1",
