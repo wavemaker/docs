@@ -34,33 +34,54 @@ For more information, see [Push to External Repo](/learn/app-development/dev-int
 
 You can access the code repository page in the administration area by clicking **Code Repository** from the left panel.
 
-![Code Repository](/learn/assets/TeamCodeRepository.png)
+![Code Repository](/learn/assets/wm_coderep_1_f.png)
 
-From the Code Repository page, you can
+From the **Code Repository** page, you can
 
-* Add code repository  
-* View or edit a code repository details  
-* Make **default** a specific code repository
+* Add a code repository  
+* View or edit a code repository details
+* Add **Access type**
+* Delete a repository when project is deleted in WaveMaker Studio
+* Set a default branch in a code repository
+* Make a specific code repository as **default**
 * Remove a code repository
 
 ## Add Code Repository
 
-* Click **Add Code Repository**, and provide your repository details.
+Click **Add Code Repository**, and provide your repository details.
 
-![Add Repository](/learn/assets/TeamAddVcsRep.png)
+![Add Repository](/learn/assets/wm_coderep_2_f.png)
 
 :::note
 You need to explicitly make this VCS as "Default" to add new projects to this repository.
 :::
 
+## Add Access Type
+
+This field restricts the VCS access to the members of the team. With this, admin allows the members to use necessary VCS operations. Two types of access options are provided for a code repository
+
+- **Service Account:** In this type, all project members access the repository with same credentials as the team admin.
+- **Developer Credentials:** In this type, every member of the project use individual credentials to access the project and its VCS operations are allowed based on member respective permissions to VCS.
+
+![Add Access Type](/learn/assets/wm_coderep_3_f.png)
+
+## Delete Repository from VCS
+
+This field is to enable deletion of a repository from VCS when deleting the project from WaveMaker Studio. Third party users can disable this option and store the project details over VCS without any dependency on studio.
+
+![Delete Repository](/learn/assets/wm_coderep_4_f.png)
+
 ## Edit Code Repository
 
-* Select the code repository you want to edit, click the **Edit** icon and update the details.
+- **Credentials:** To update the access type for code repository
+- **Make Default:** To make the code repository as default VCS.
+- **Settings:** To update the default branch and enabling the delete repository when project deleted option.
+- **Delete:** To delete the VCS details from Code Repository page.
 
-![Add Repository](/learn/assets/TeamAddVcsRep.png)
+![Edit Repository](/learn/assets/wm_coderep_6_f.png)
 
-## Make Code Repository as Default
+## Set Branch as Default
 
-* Select the Code Repository you want to make as default, and click the **Default** option.
+In this field you add the branch name that is to be added as default branch while creating repository. With this, you can avoid setting the master branch as default and add desired branch as default.
 
-![Make Repository Default](/learn/assets/TeamMakeVcsDefault.png)
+![Set Repository Default](/learn/assets/wm_coderep_5_f.png)
