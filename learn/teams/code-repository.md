@@ -38,13 +38,13 @@ You can access the code repository page in the administration area by clicking *
 
 From the **Code Repository** page, you can
 
-* Add a code repository  
-* View or edit a code repository details
-* Add **Access type**
-* Delete a repository when project is deleted in WaveMaker Studio
-* Set a default branch in a code repository
-* Make a specific code repository as **default**
-* Remove a code repository
+- Add a code repository  
+- View or edit a code repository details
+- Add **Access type**
+- Delete a repository when project is deleted in WaveMaker Studio
+- Set a default branch in a code repository
+- Make a specific code repository as **default**
+- Remove a code repository
 
 ## Add Code Repository
 
@@ -58,10 +58,10 @@ You need to explicitly make this VCS as "Default" to add new projects to this re
 
 ## Add Access Type
 
-This field restricts the VCS access to the members of the team. With this, admin allows the members to use necessary VCS operations. Two types of access options are provided for a code repository
+This field restricts the VCS access to the members of the team. With this, admin allows the members to use necessary VCS operations. Two types of access options are provided for a code repository.
 
-* Service Account: In this type, all project members access the repository with same credentials as the team admin.
-* Developer Credentials: In this type, every member of the project use individual credentials to access the project and its VCS operations are allowed based on member respective permissions to VCS.
+- **Service Account**: In this type, all project members access the repository with same credentials as the team admin.
+- **Developer Credentials**: In this type, every member of the project use individual credentials to access the project and its VCS operations are allowed based on member respective permissions to VCS.
 
 ![Add Access Type](/learn/assets/wm_coderep_3_f.png)
 
@@ -73,10 +73,10 @@ This field is to enable deletion of a repository from VCS when deleting the proj
 
 ## Edit Code Repository
 
-* Credentials: To update the access type for code repository
-* Make Default: To make the code repository as default VCS.
-* Settings: To update the default branch and enabling the delete repository when project deleted option.
-* Delete: To delete the VCS details from Code Repository page.
+- **Credentials**: To update the access type for code repository.
+- **Make Default**: To make the code repository as default VCS.
+- **Settings**: To update the default branch and enabling the delete repository when project deleted option.
+- **Delete**: To delete the VCS details from Code Repository page.
 
 ![Edit Repository](/learn/assets/wm_coderep_6_f.png)
 
