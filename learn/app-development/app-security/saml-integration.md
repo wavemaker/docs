@@ -210,6 +210,6 @@ For more information, see [Shibboleth](https://shibboleth.atlassian.net/wiki/spa
 </repositories>
 ```
 
-- Add the property opensaml.version in the pom.xml (in properties section) as: <opensaml.version>3.4.6</opensaml.version>.
+- Add the property opensaml.version in the pom.xml (in properties section) as: `<opensaml.version>3.4.6</opensaml.version>`.
 - Add the property **security.providers.saml.useOpenSaml3=true** in the development.properties file.
 - Add the property **security.providers.saml.useOpenSaml3=${security.providers.saml.useOpenSaml3}**.
