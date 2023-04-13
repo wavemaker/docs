@@ -1,7 +1,7 @@
 ---
 title: "Application Loader"
 id: "app-loader"
-sidebar_label: App Loader
+sidebar_label: "App Loader"
 ---
 ---
 
