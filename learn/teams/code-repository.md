@@ -63,6 +63,13 @@ This field restricts the VCS access to the members of the team. With this, admin
 - **Service Account**: In this type, all project members access the repository with same credentials as the team admin.
 - **Developer Credentials**: In this type, every member of the project use individual credentials to access the project and its VCS operations are allowed based on member respective permissions to VCS.
 
+:::important
+When Developer Credentials is selected as Access type for the Code Repository, authentication credentials are required to perform any VCS operation. If you do not have the credentials or expired the credentials, then below screen is displayed to update your credentials.
+
+![Add Access Type](/learn/assets/wm_coderep_7_f.png)
+
+:::
+
 ![Add Access Type](/learn/assets/wm_coderep_3_f.png)
 
 ## Delete Repository from VCS

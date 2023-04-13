@@ -21,7 +21,7 @@ React Native is a mobile app framework from Facebook. It is based on ReactJS pri
 
 React Native apps run JavaScript in JavaScript runtime, including JSC and Hermes. React Native bridge amends native UI based on the response Virtual DOM from JavaScript—consequently, not allowing you to use **CSS and HTML in React Native apps**. You must define JSX Markup, styles, and logic in JavaScript.
 
-### WaveMaker Hybrid Mobile 
+### WaveMaker Hybrid Mobile
 
 When developing Hybrid mobile apps in WaveMaker, Cordova apps display HTML-based UI using a browser component. So, you can use HTML and CSS along with JavaScript in Cordova apps. 
 
@@ -36,6 +36,10 @@ During the build, platform converts [WaveMaker markup](/learn/app-development/ui
 ### Variables
 
 Variable acts like a glue between the frontend UI and the backend services, integrating data and services with the Widgets. Learn more about the supporting [React Native Variables here](/learn/react-native/supported-variables).
+
+:::note
+React native now supports customization of data using Custom Formatter. For more information, see [Custom Formatter](/learn/app-development/variables/custom-formatter)
+:::
 
 ### Script
 

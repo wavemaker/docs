@@ -18,14 +18,32 @@ Members should be registered with **Teams** before they can be invited to a proj
 
 You can access the Manage Projects page in the administration area by clicking **Manage Projects** from the left panel.
 
-![Manage projects](/learn/assets/TeamManageProjects.png)
+![Manage projects](/learn/assets/wm_restructureMP_1_f.png)
 
 From the projects list, you can
 
+- Import project from code repository
+- Export project details
 - Add user to a project  
-- View or edit a user’s role in a project  
-- View project information  
-- Remove a user from a project
+- View or edit user’s role in a project  
+- Add and view project information  
+- Remove a user from project
+
+## Import Project from Code Repository
+
+You can import a project available on Version Control Systems (VCS) like GitHub, GitLab, Bitbucket and Azure. It also imports commit history and specified branches of the project.
+
+![Manage projects](/learn/assets/wm_restructureMP_2_f.png)
+
+:::note
+For more information, see [Import Project from Code Repository](/learn/teams/import-vcs-project)
+:::
+
+## Export project details
+
+Export project details is an option provided to download details like Project, Project type, Username, User role, Platform version and VCS branch, as an excel document. You can use this option to share, maintain, and use the project details offline.
+
+![Manage projects](/learn/assets/wm_restructureMP_3_f.png)
 
 ## Add Members
 
@@ -33,14 +51,14 @@ You can add members in the team to a Project. The new members assign with the de
 
 - To add a member, click the **Plus** button as shown in the image below.
 
-![Add users](/learn/assets/TeamProjectAddUserButton.png)
+![Add users](/learn/assets/wm_restructureMP_4_f.png)
 
-- It open the **Add User** Form. 
+- It open the **Add User** Form.
 - Enter the email address of the user you would like to share the project with
 - Select the role(s)
 - Click **Add**.  
 
-![Add user](/learn/assets/TeamAddMemberToProject.png)
+![Add user](/learn/assets/wm_restructureMP_5_f.png)
 
 Your collaborator receives an notification inviting them to join the project. Once they login to their account, they can accept the invite and collaborate on the project. The shared-project dialog will update if the collaborator has accepted the request and joined the project.
 
@@ -50,11 +68,11 @@ Your collaborator receives an notification inviting them to join the project. On
 
 - Once the user is added to the project, the role can be changed. To change the role of the existing member, click the **User** icon.
 
-![Change user role](/learn/assets/TeamProjectChangeRole.png)
+![Change user role](/learn/assets/wm_restructureMP_6_f.png)
 
 - Edit the roles by clicking on the desired roles to assign as shown in the image below.
 
-![Change user role](/learn/assets/TeamProjectChangeRoleConfirm.png)
+![Change user role](/learn/assets/wm_restructureMP_7_f.png)
 
 - It opens a confirmation dialog saying that the user role will be changed from the existing role to the new role.
 - Click **OK** to confirm.
@@ -63,9 +81,9 @@ Your collaborator receives an notification inviting them to join the project. On
 
 - You can remove a member from the project using the **Remove Member** option as shown in the image below.
 
-![Remove user](/learn/assets/TeamProjectChangeRole.png)
+![Remove user](/learn/assets/wm_restructureMP_8_f.png)
 
 - It displays a confirmation dialog saying whether the user should be removed from the project.
 - Click **Remove Member** to confirm.
 
-![Remove user](/learn/assets/TeamRemoveUserFromProjectConfirm.png)
+![Remove user](/learn/assets/wm_restructureMP_9_f.png)
