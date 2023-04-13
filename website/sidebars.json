@@ -644,7 +644,13 @@
 				"react-native/export-react-native-zip",
 				"react-native/build-installers",
 				"react-native/expo-apk-debug",
-				"react-native/expo-ipa-debug"
+				"react-native/expo-ipa-debug",
+				"react-native/app-loader",
+				"react-native/third-party-expo-plugins",
+				"react-native/splash-screen",
+				"react-native/web-view",
+				"react-native/flipper",
+				"react-native/react-native-embed"
 			]
 		},
 		{
