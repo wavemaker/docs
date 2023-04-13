@@ -1,7 +1,7 @@
 ---
 title: "Application Loader"
 id: "app-loader"
-author: Raajvamsy
+sidebar_label: App Loader
 ---
 ---
 
