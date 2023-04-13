@@ -33,7 +33,7 @@ From the projects list, you can
 
 You can import a project available on Version Control Systems (VCS) like GitHub, GitLab, Bitbucket and Azure. It also imports commit history and specified branches of the project.
 
-![Manage projects](/learn/assets/wm_restructureMP_2_f.png)
+![Import Project](/learn/assets/wm_restructureMP_2_f.png)
 
 :::note
 For more information, see [Import Project from Code Repository](/learn/teams/import-vcs-project)
@@ -43,7 +43,7 @@ For more information, see [Import Project from Code Repository](/learn/teams/imp
 
 Export project details is an option provided to download details like Project, Project type, Username, User role, Platform version and VCS branch, as an excel document. You can use this option to share, maintain, and use the project details offline.
 
-![Manage projects](/learn/assets/wm_restructureMP_3_f.png)
+![Export Project](/learn/assets/wm_restructureMP_3_f.png)
 
 ## Add Members
 
