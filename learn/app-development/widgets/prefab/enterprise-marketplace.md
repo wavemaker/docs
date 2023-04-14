@@ -6,7 +6,7 @@ id: "enterprise-marketplace"
 
 ## Enterprise Marketplace
 
-Enterprise Marketplace lets you use published artifacts across multiple teams to reduce efforts to create an available artifact and improve collaboration. You create artifacts and team admin publishes the required version of artifact to Marketplace via Teamportal. 
+Enterprise Marketplace lets teams published artifacts for reuse across the team. Developer create artifacts and team admin approves and publishes the version of artifact to Marketplace via Teamportal. 
 
 ![Enterprise Marketplace](/learn/assets/wm_enterprisemarketplace.png)
 
