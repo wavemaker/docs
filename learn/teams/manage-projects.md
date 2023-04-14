@@ -31,7 +31,7 @@ From the projects list, you can
 
 ## Import Project from Code Repository
 
-You can import a project available on Version Control Systems (VCS) like GitHub, GitLab, Bitbucket and Azure. It also imports commit history and specified branches of the project.
+You can import a project available on Version Control Systems (VCS) like GitHub, GitLab, Bitbucket and Azure. Commit history of the specified branch carries over when imported.
 
 ![Import Project](/learn/assets/wm_restructureMP_2_f.png)
 

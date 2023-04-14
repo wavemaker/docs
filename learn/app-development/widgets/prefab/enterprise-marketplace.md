@@ -6,7 +6,7 @@ id: "enterprise-marketplace"
 
 ## Enterprise Marketplace
 
-Enterprise Marketplace lets teams published artifacts for reuse across the team. Developer create artifacts and team admin approves and publishes the version of artifact to Marketplace via Teamportal. 
+Enterprise Marketplace lets you use published artifacts across multiple teams to reduce efforts to create an available artifact and improve collaboration. You create artifacts and team admin publishes the required version of artifact to Marketplace via Teamportal.
 
 ![Enterprise Marketplace](/learn/assets/wm_enterprisemarketplace.png)
 
@@ -15,16 +15,12 @@ You can view the list of prefabs to be published to Enterprise Marketplace in Ma
 ![Enterprise Marketplace](/learn/assets/wm_marketplaceprefabs.png)
 
 :::note
-Any team that has been given access by the super admin can publish the artifacts to Enterprise Marketplace where super admin has complete access over platform.
-:::
-
-:::note
 To know more about publishing **Artifacts**, see [Artifacts Repository](/learn/teams/import-vcs-project)
 :::
 
 ## Publisher Information
 
-Publishing artifacts allow multiple teams access the artifacts published in **Marketplace**. Publisher information includes the publishing team name. Every artifact is associated with publisher information.
+Publisher information displays the team details that has published the artifact, such as team name, domain details, origin, host, etc. Publisher information can be unique identity of the artifact publsiher when similar artifact names are used.
 
 ![Publisher Information](/learn/assets/wm_artifactpublisherdetails.png)
 
@@ -34,7 +30,9 @@ You can only publish an artifact using semantic versioning to mention the versio
 
 ## Semantic Versioning
 
-Semantic versioning is the standard three digit versioning system to publish an artifact that includes, Major.Minor.Patch details of respective artifact. Every project branch can have its own sequence of versioning in ascending order. Versions within the project are unique across branches and are validated by WaveMaker.
+WaveMaker supports versioning system to name the releases. Semantic versioning is a univerally accepted approach, and allows you to track version compatibility. With WaveMaker 11.3, the support extends to follow semantic versioning for Artifacts, including Prefabs.
+
+An example of semantic versioning is as shown below.
 
 ![Semantic Versioning](/learn/assets/wm_semanticversion.png)
 

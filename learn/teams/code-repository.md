@@ -40,9 +40,6 @@ From the **Code Repository** page, you can
 
 - Add a code repository  
 - View or edit a code repository details
-- Add **Access type**
-- Delete a repository when project is deleted in WaveMaker Studio
-- Set a default branch in a code repository
 - Make a specific code repository as **default**
 - Remove a code repository
 
@@ -56,27 +53,47 @@ Click **Add Code Repository**, and provide your repository details.
 You need to explicitly make this VCS as "Default" to add new projects to this repository.
 :::
 
-## Add Access Type
+### Access Type
 
 This field restricts the VCS access to the members of the team. With this, admin allows the members to use necessary VCS operations. Two types of access options are provided for a code repository.
 
-- **Service Account**: In this type, all project members access the repository with same credentials as the team admin.
-- **Developer Credentials**: In this type, every member of the project use individual credentials to access the project and its VCS operations are allowed based on member respective permissions to VCS.
+- Service Account
+- Developer Credentials
+
+#### Service Account 
+
+In this type, the project members have access to all the VCS operations.
+
+#### Developer Credentials
+
+In this type, every member of the project use their respective credentials to access the project and perform VCS operations based on the permissions set by the admin.
 
 :::important
-When Developer Credentials is selected as Access type for the Code Repository, authentication credentials are required to perform any VCS operation. If you do not have the credentials or expired the credentials, then below screen is displayed to update your credentials.
-
-![Add Access Type](/learn/assets/wm_coderep_7_f.png)
+When you select **Developer Credentials** as Access type for the Code Repository, you will need credentials to perform any VCS operation. If you do not have the credentials or expired the credentials, then refer to the below screen to update your credentials.
 
 :::
 
+![Add Access Type](/learn/assets/wm_coderep_7_f.png)
+
 ![Add Access Type](/learn/assets/wm_coderep_3_f.png)
 
-## Delete Repository from VCS
+### Delete Repo When Project Deleted
 
-This field is to enable deletion of a repository from VCS when deleting the project from WaveMaker Studio. Third party users can disable this option and store the project details over VCS without any dependency on studio.
+#### Enabled
+
+It allows you to delete the repository in VCS when deleting the project from WaveMaker Studio.
+
+#### Disabled
+
+It allows you to store the project sourcecode in VCS without any dependency on Studio even if the project is deleted from WaveMaker Studio.
 
 ![Delete Repository](/learn/assets/wm_coderep_4_f.png)
+
+### Set Branch as Default
+
+When you create a project, the code of the current project and the projects you create in the future pushes to the repo's branch you set as default here.
+
+![Set Repository Default](/learn/assets/wm_coderep_5_f.png)
 
 ## Edit Code Repository
 
@@ -86,9 +103,3 @@ This field is to enable deletion of a repository from VCS when deleting the proj
 - **Delete**: To delete the VCS details from Code Repository page.
 
 ![Edit Repository](/learn/assets/wm_coderep_6_f.png)
-
-## Set Branch as Default
-
-In this field you add the branch name that is to be added as default branch while creating repository. With this, you can avoid setting the master branch as default and add desired branch as default.
-
-![Set Repository Default](/learn/assets/wm_coderep_5_f.png)
