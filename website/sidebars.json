@@ -1389,6 +1389,7 @@
 				"app-development/custom-widgets/prefabs-overview",
 				"app-development/custom-widgets/creating-prefabs",
 				"app-development/custom-widgets/prefab-with-partials",
+				"app-development/custom-widgets/enterprise-marketplace",
 				"app-development/custom-widgets/use-cases-prefabs",
 				{
 					"type": "category",
