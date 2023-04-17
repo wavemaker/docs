@@ -18,7 +18,7 @@ Members should be registered with **Teams** before they can be invited to a proj
 
 You can access the Manage Projects page in the administration area by clicking **Manage Projects** from the left panel.
 
-![Manage projects](/learn/assets/wm_restructureMP_1_f.png)
+![Manage projects](/learn/assets/TeamManageProjects.png)
 
 From the projects list, you can
 
@@ -55,14 +55,14 @@ You can add members in the team to a Project. The new members assign with the de
 
 - To add a member, click the **Plus** button as shown in the image below.
 
-![Add users](/learn/assets/wm_restructureMP_4_f.png)
+![Add users](/learn/assets/TeamProjectAddUserButton.png)
 
 - It open the **Add User** Form.
 - Enter the email address of the user you would like to share the project with
 - Select the role(s)
 - Click **Add**.  
 
-![Add user](/learn/assets/wm_restructureMP_5_f.png)
+![Add user](/learn/assets/TeamAddMemberToProject.png)
 
 Your collaborator receives an notification inviting them to join the project. Once they login to their account, they can accept the invite and collaborate on the project. The shared-project dialog will update if the collaborator has accepted the request and joined the project.
 
@@ -72,11 +72,11 @@ Your collaborator receives an notification inviting them to join the project. On
 
 - Once the user is added to the project, the role can be changed. To change the role of the existing member, click the **User** icon.
 
-![Change user role](/learn/assets/wm_restructureMP_6_f.png)
+![Change user role](/learn/assets/TeamProjectChangeRole.png)
 
 - Edit the roles by clicking on the desired roles to assign as shown in the image below.
 
-![Change user role](/learn/assets/wm_restructureMP_7_f.png)
+![Change user role](/learn/assets/TeamProjectChangeRoleConfirm.png)
 
 - It opens a confirmation dialog saying that the user role will be changed from the existing role to the new role.
 - Click **OK** to confirm.
@@ -85,9 +85,9 @@ Your collaborator receives an notification inviting them to join the project. On
 
 - You can remove a member from the project using the **Remove Member** option as shown in the image below.
 
-![Remove user](/learn/assets/wm_restructureMP_8_f.png)
+![Remove user](/learn/assets/TeamProjectRemoveMember.png)
 
 - It displays a confirmation dialog saying whether the user should be removed from the project.
 - Click **Remove Member** to confirm.
 
-![Remove user](/learn/assets/wm_restructureMP_9_f.png)
+![Remove user](/learn/assets/TeamRemoveUserFromProjectConfirm.png)
