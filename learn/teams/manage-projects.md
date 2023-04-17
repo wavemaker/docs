@@ -41,9 +41,13 @@ For more information, see [Import Project from Code Repository](/learn/teams/imp
 
 ## Export project details
 
-Export project details is an option provided to download details like Project, Project type, Username, User role, Platform version and VCS branch, as an excel document. You can use this option to share, maintain, and use the project details offline.
+Project metadata such as name, developers working on each project can be exported as CSV file for offline usage. The CSV file includes developers and their role in the project as well.
 
-![Export Project](/learn/assets/wm_restructureMP_3_f.png)
+![Export Project](/learn/assets/wm_exportProjectdata.png)
+
+Refer to below screenshot to view the CSV file format that gets exported:
+
+![Export Project](/learn/assets/wm_exportedCSVfile.png)
 
 ## Add Members
 
