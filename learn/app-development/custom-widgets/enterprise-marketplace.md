@@ -1,6 +1,7 @@
 ---
 title: "Enterprise Marketplace"
 id: "enterprise-marketplace"
+sidebar_label: "Enterprise Marketplace"
 ---
 ---
 

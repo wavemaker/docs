@@ -38,7 +38,7 @@ During the build, platform converts [WaveMaker markup](/learn/app-development/ui
 Variable acts like a glue between the frontend UI and the backend services, integrating data and services with the Widgets. Learn more about the supporting [React Native Variables here](/learn/react-native/supported-variables).
 
 :::note
-React native has started supporting customization of data using Custom Formatter from release 11.3. For more information, see [Custom Formatter](/learn/app-development/variables/custom-formatter).
+React native has started supporting customization of data using Custom Formatter from [Release 11.3](/learn/wavemaker-release-notes/v11-3-0). For more information, see [Custom Formatter](/learn/app-development/variables/custom-formatter).
 :::
 
 ### Script
