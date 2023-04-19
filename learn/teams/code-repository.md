@@ -34,7 +34,7 @@ For more information, see [Push to External Repo](/learn/app-development/dev-int
 
 You can access the code repository page in the administration area by clicking **Code Repository** from the left panel.
 
-![Code Repository](/learn/assets/wm_coderep_1_f.png)
+![Code Repository](/learn/assets/TeamCodeRepository.png)
 
 From the **Code Repository** page, you can
 
@@ -47,7 +47,7 @@ From the **Code Repository** page, you can
 
 Click **Add Code Repository**, and provide your repository details.
 
-![Add Repository](/learn/assets/wm_coderep_2_f.png)
+![Add Repository](/learn/assets/TeamAddVcsRep.png)
 
 :::note
 You need to explicitly make this VCS as "Default" to add new projects to this repository.
@@ -74,14 +74,14 @@ In this type, every member of the project uses their VCS credentials to access t
 
 Here is how team portal admin can choose this option when adding the Code Repository. This setting is also available when you choose to edit already added Code Repositories.
 
-![Add Access Type](/learn/assets/wm_coderep_3_f.png)
+![Add Access Type](/learn/assets/TeamSelectAccesstype.png)
 
 :::important
 When you select **Developer Credentials** as Access type for the Code Repository, developers will need credentials to perform any VCS operation. Refer to the screenshot below to learn how developers can setup their VCS credentials in WaveMaker.
 
 :::
 
-![Add Access Type](/learn/assets/wm_coderep_7_f.png)
+![Add Access Type](/learn/assets/TeamUpdateCredentials.png)
 
 ### Delete Repo When Project Deleted
 
@@ -93,13 +93,13 @@ If this options is enabled, then whenever a project is deleted in WaveMaker stud
 
 If ``Disabled``option is selected then deletion of projects in Studio does not delete code repository in the VCS. This is the default option.
 
-![Delete Repository](/learn/assets/wm_coderep_4_f.png)
+![Delete Repository](/learn/assets/TeamDeleteRepository.png)
 
 ### Set Branch as Default
 
 When you create a project, the code of any projects created is pushed to the repo's branch you set as default here. Normally the value is ``master``. However, with this setting, it can be set to a different branch name as well.
 
-![Set Repository Default](/learn/assets/wm_coderep_5_f.png)
+![Set Repository Default](/learn/assets/TeamSetDefaultRepo.png)
 
 ## Edit Code Repository
 
@@ -108,4 +108,4 @@ When you create a project, the code of any projects created is pushed to the rep
 - **Settings**: To update the default branch and enabling the delete repository when project deleted option.
 - **Delete**: To delete the VCS details from Code Repository page.
 
-![Edit Repository](/learn/assets/wm_coderep_6_f.png)
+![Edit Repository](/learn/assets/TeamEditRepo.png)

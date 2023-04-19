@@ -33,7 +33,7 @@ From the projects list, you can
 
 You can import a project available on Version Control Systems (VCS) like GitHub, GitLab, Bitbucket and Azure. Commit history of the specified branch carries over when imported.
 
-![Import Project](/learn/assets/wm_restructureMP_2_f.png)
+![Import Project](/learn/assets/wm_importProjectdata.png)
 
 :::note
 For more information, see [Import Project from Code Repository](/learn/teams/import-vcs-project)
@@ -53,11 +53,10 @@ Refer to below screenshot to view the CSV file format that gets exported:
 
 You can add members in the team to a Project. The new members assign with the default role which gives them only read access. You can also choose a specific role for the user. For more information, see [Manage Roles](/learn/teams/manage-roles)
 
-- To add a member, click the **Plus** button as shown in the image below.
+- To add a member, click the **Plus** button as shown in the image below. This opens the **Add User** Form.
 
 ![Add users](/learn/assets/TeamProjectAddUserButton.png)
 
-- It open the **Add User** Form.
 - Enter the email address of the user you would like to share the project with
 - Select the role(s)
 - Click **Add**.  
