@@ -6,7 +6,7 @@ sidebar_label: "Enterprise Marketplace"
 ---
 
 
-Enterprise marketplace allows artifacts to be published by teams to be used across multiple teams. WaveMaker already has the feature to publish artifacts within the team where the members of the team can share and use the published artifacts. Now, with this feature teams will be able to share any artifact over marketplace and improve collaboration, reusability, while using new or existing prefabs.
+Enterprise marketplace allows artifacts to be published by teams to be used across multiple teams. WaveMaker already has the feature to publish artifacts within the team where the members of the team can share and use the published artifacts. Now, with this feature teams will be able to share any artifact over marketplace and improve collaboration, reusability, while using new or existing Prefabs.
 
 :::note
 Enterprise Marketplace is available only with WaveMaker Enterprise version of the product and not available on wavemakeronline.com
@@ -70,7 +70,7 @@ Developers can consume Prefab from WaveMaker Studio.
 
 - Go to a project.
 - To consume a Prefab published to Marketplace, go to the Pages tab.
-- Locate **Prefabs** and click the '+' icon. This opens a dialog, listing all the prefabs that are ready to consume.
+- Locate **Prefabs** and click the '+' icon. This opens a dialog, listing all the Prefabs that are ready to consume.
 - Go to the **Marketplace** tab. Select the Prefab and click **Import**.
 
 ![Enterprise Marketplace](/learn/assets/wm_enterprisemarketplace.png)
