@@ -1389,6 +1389,7 @@
 				"app-development/custom-widgets/prefabs-overview",
 				"app-development/custom-widgets/creating-prefabs",
 				"app-development/custom-widgets/prefab-with-partials",
+				"app-development/custom-widgets/enterprise-marketplace",
 				"app-development/custom-widgets/use-cases-prefabs",
 				{
 					"type": "category",
@@ -1451,14 +1452,14 @@
 			"type": "category",
 			"label": "Latest v11.x",
 			"items": [
-				{
+      			{
 					"type": "category",
 					"label": "Versions: 11.3.x",
 					"items": [
-						"wavemaker-release-notes/v11-3-0"
+            			"wavemaker-release-notes/v11-3-0"
 					]
 				},
-				{
+        		{
 					"type": "category",
 					"label": "Versions: 11.2.x",
 					"items": [
