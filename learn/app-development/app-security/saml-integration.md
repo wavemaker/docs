@@ -179,10 +179,13 @@ Here you can find steps for SAML integration with:
 When the app is run with SSO configuration, assuming that there is no session present with third-party identity providers, the third-party IdP login dialog will show up. As our WaveMaker Run Toolbar is within iframe which may not be safe for third parties, we remove the toolbar before the Login dialog of the third-party identity provider appears.
 :::
 
-:::note
-At present, the SAML implementation internally utilizes the Opensaml 4 library, which necessitates configuration of the third-party repository (Shibboleth) in the pom.xml file. However, if required, users have the option to remove the repository and revert to Opensaml 3 version by following the steps below:
-- remove the below repository from the pom.xml
-    ```
+## Using SAML 3 Version
+
+Applies from [release 11.3](/learn/wavemaker-release-notes/v11-3-0), SAML uses the OpenSAML 4 libraries in WaveMaker, which necessitates configuration of the third-party repository (Shibboleth) in the pom.xml file. However, if required, users have the option to remove the repository and revert to the OpenSAML 3 version by following the steps below:
+
+1. Remove the below repository from the pom.xml.
+
+```xml
     <repositories>
         <repository>
         <id>Shibboleth</id>
@@ -190,10 +193,13 @@ At present, the SAML implementation internally utilizes the Opensaml 4 library, 
         <url>https://build.shibboleth.net/nexus/content/repositories/releases/</url>
         </repository>
   </repositories>
-    ```
-- Add the property `opensaml.version` in the pom.xml (in properties section) as: 
-    ```<opensaml.version>3.4.6</opensaml.version>```
-- Add the property `security.providers.saml.useOpenSaml3=true` in the development.properties file
-- Add the property `security.providers.saml.useOpenSaml3=${security.providers.saml.useOpenSaml3}`
-:::
+```
 
+2. Add the `opensaml.version` property in the pom.xml in the properties section, as shown below.
+
+```xml
+<opensaml.version>3.4.6</opensaml.version>
+```
+
+3. Add the property `security.providers.saml.useOpenSaml3=true` in the `development.properties` file.
+4. Add the property `security.providers.saml.useOpenSaml3=${security.providers.saml.useOpenSaml3}`
