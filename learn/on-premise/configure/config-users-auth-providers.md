@@ -72,5 +72,17 @@ The User should be mapped with a respective team to access the studio. Following
 - Select type of provider and Provide name and fill the required fields respect to that provider.
 - Make Default after adding it.
 
-
 [![authentication provider](/learn/assets/wme-setup/configuring-wme/adding-authorization-provider.png)](/learn/assets/wme-setup/configuring-wme/adding-authorization-provider.png)
+
+### Restricting Login for all users
+
+For WaveMaker enterprise customers that are performing platform maintenance this option can be used to restrict access to WaveMaker until the maintenance has finished successfully. Once enabled, all active users get logged out of the platform within three minutes except the current admin.  
+
+[![Login restriction](/learn/assets/wme-setup/configuring-wme/RestrictingLoginAllUsers.png)](/learn/assets/wme-setup/configuring-wme/RestrictingLoginAllUsers.png)
+
+### Steps to Restrict Users
+
+1. Go to **Launchpad**.
+2. Go to **Identity Providers**.
+3. Enable **Restrict Login for all users** option and click on **Confirm**.
+

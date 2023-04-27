@@ -13,7 +13,7 @@ To perform a Build using AppChef, you should have the application React Native z
 
 Go to the Appchef application using the URL below:
 
-[https://www.wavemakeronline.com/AppChef#/Main?enabledReactNative=true](https://www.wavemakeronline.com/AppChef#/Main?enabledReactNative=true)
+[https://www.wavemakeronline.com/AppChef/#/Main](https://www.wavemakeronline.com/AppChef/#/Main)
 
 1. To log in, click **Login with WaveMaker**.
 

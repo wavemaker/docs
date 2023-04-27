@@ -306,5 +306,3 @@ public class SecureService implements WMCustomAuthenticationManager {
     }
 }
 ```
-    
-

@@ -22,20 +22,41 @@ You can access the Manage Projects page in the administration area by clicking *
 
 From the projects list, you can
 
+- Import project from code repository
+- Export project details
 - Add user to a project  
-- View or edit a user’s role in a project  
-- View project information  
-- Remove a user from a project
+- View or edit user’s role in a project  
+- Add and view project information  
+- Remove a user from project
+
+## Import Project from Code Repository
+
+You can import a project available on Version Control Systems (VCS) like GitHub, GitLab, Bitbucket and Azure. Commit history of the specified branch carries over when imported.
+
+![Import Project](/learn/assets/wm_importProjectdata.png)
+
+:::note
+For more information, see [Import Project from Code Repository](/learn/teams/import-vcs-project)
+:::
+
+## Export project details
+
+Project metadata such as name, developers working on each project can be exported as CSV file for offline usage. The CSV file includes developers and their role in the project as well.
+
+![Export Project](/learn/assets/wm_exportProjectdata.png)
+
+Refer to below screenshot to view the CSV file format that gets exported:
+
+![Export Project](/learn/assets/wm_exportedCSVfile.png)
 
 ## Add Members
 
 You can add members in the team to a Project. The new members assign with the default role which gives them only read access. You can also choose a specific role for the user. For more information, see [Manage Roles](/learn/teams/manage-roles)
 
-- To add a member, click the **Plus** button as shown in the image below.
+- To add a member, click the **Plus** button as shown in the image below. This opens the **Add User** Form.
 
 ![Add users](/learn/assets/TeamProjectAddUserButton.png)
 
-- It open the **Add User** Form. 
 - Enter the email address of the user you would like to share the project with
 - Select the role(s)
 - Click **Add**.  
@@ -63,7 +84,7 @@ Your collaborator receives an notification inviting them to join the project. On
 
 - You can remove a member from the project using the **Remove Member** option as shown in the image below.
 
-![Remove user](/learn/assets/TeamProjectChangeRole.png)
+![Remove user](/learn/assets/TeamProjectRemoveMember.png)
 
 - It displays a confirmation dialog saying whether the user should be removed from the project.
 - Click **Remove Member** to confirm.

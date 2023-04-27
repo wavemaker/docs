@@ -5,6 +5,7 @@ frontend:
       commands:
         - cd website
         - npm install
+        - bash addSearch.sh
    build:
      commands:
         - npm run build

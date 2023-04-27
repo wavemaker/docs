@@ -44,7 +44,7 @@ Note that a principal (or an administrator terminating a principal's session) ma
 
 ## SAML Integration with WaveMaker App
 
-### Steps Involved:
+### Steps Involved
 
 1. Register WaveMaker application with Identity Provider
 2. Configure the Identity Provider information in WaveMaker application
@@ -66,14 +66,19 @@ After enabling Security and on selecting SAML as the Security Provider for your 
 1. In the 1st section, Service Provider (Application) Information, three read-only URLs are displayed which are required for application registration with IdP (as mentioned in the above section). They are:
     
     - Metadata URL – the metadata URL of the service provider which gives information about the service provider.
-    ```    
+
+    ```  
     {app-hosted-url} + /saml2/service-provider-metadata/saml
     ```   
+
     - Audience URL – the service provider endpoint where the assertions are received.
+
     ```    
     {app-hosted-url} + /login/saml2/sso/saml
-    ```    
+    ```   
+
     - Single Logout URL – This logs out the user from the IdP i.e global log out.
+    
     ```    
     {app-hosted-url} + /logout/saml2/slo
     ```    
@@ -113,7 +118,11 @@ Below configuration gives information about configuring key pair for your applic
             
 [![](/learn/assets/saml_config3_import.png)](/learn/assets/saml_config3_import.png)
 
-4. In the 4th section - Role Mapping: The roles of an application user logged in through SAML SSO can be mapped using a SAML attribute or database-backed roles. A SAML attribute that maintains the roles can be configured by selecting the SAML as the user role provider as shown below. [![](/learn/assets/saml_config4.png)](/learn/assets/saml_config4.png) In case if the DB is selected as the user role provider, then each and every SAML user must pre-exist in the specified user’s table with the roles. You can follow the [steps given here](/learn/app-development/app-security/authorization/#user-onboarding) for the same.
+4. In the 4th section - Role Mapping: The roles of an application user logged in through SAML SSO can be mapped using a SAML attribute or database-backed roles. A SAML attribute that maintains the roles can be configured by selecting the SAML as the user role provider as shown below. 
+
+[![](/learn/assets/saml_config4.png)](/learn/assets/saml_config4.png) 
+
+In case if the DB is selected as the user role provider, then each and every SAML user must pre-exist in the specified user’s table with the roles. You can follow the [steps given here](/learn/app-development/app-security/authorization/#user-onboarding) for the same.
 
 ## Configuration Files
 
@@ -131,29 +140,29 @@ Once the configuration is done you can run the app and you will be logged into y
 
 During the app development in WaveMaker, application URLs like Metadata, Audience and Single Signout URL are configured with any of the Identity Provider (for instance- Okta, Onelogin, ADFS, Pingone, etc.). However, these URLs being run URLs are temporary in nature, as such cannot be used for the deployed application. When the WaveMaker application is deployed in the container, the hostname/tenant_id changes and therefore, the URLs that are to be _configured/registered in the SAML IdP_ should change. For Example, in WaveMaker Studio,
 
-- the **Metadata URL** during development would look like this:
+- The **Metadata URL** during development would look like this:
 
-    https://wavemakeronline.com/studio/services/saml2/service-provider-metadata/saml
+    ```https://wavemakeronline.com/studio/services/saml2/service-provider-metadata/saml```
     
     whereas, for deployment app, the URL should typically look like:
     
-    (http/https)://{hostname}/{appname}/saml2/service-provider-metadata/saml
+    ```(http/https)://{hostname}/{appname}/saml2/service-provider-metadata/saml```
     
-- the **Audience URL** during development would look like this:
+- The **Audience URL** during development would look like this:
     
-    https://wavemakeronline.com/{tenantid}/{appname}/login/saml2/sso/saml
-    
-    whereas, for deployment app, the URL should typically look like:
-    
-    (http/https)://{hostname}/{appname}/login/saml2/sso/saml
-    
-- the Single Signout URL during development would look like this:
-    
-    https://wavemakeronline.com/studio/services/logout/saml2/slo
+    ```https://wavemakeronline.com/{tenantid}/{appname}/login/saml2/sso/saml```
     
     whereas, for deployment app, the URL should typically look like:
     
-    (http/https)://{hostname}/{appname}/logout/saml2/slo
+    ```(http/https)://{hostname}/{appname}/login/saml2/sso/saml```
+    
+- The Single Signout URL during development would look like this:
+    
+    ```https://wavemakeronline.com/studio/services/logout/saml2/slo```
+    
+    whereas, for deployment app, the URL should typically look like:
+    
+    ```(http/https)://{hostname}/{appname}/logout/saml2/slo```
     
 
 :::note
@@ -179,3 +188,28 @@ Here you can find steps for SAML integration with:
 When the app is run with SSO configuration, assuming that there is no session present with third-party identity providers, the third-party IdP login dialog will show up. As our WaveMaker Run Toolbar is within iframe which may not be safe for third parties, we remove the toolbar before the Login dialog of the third-party identity provider appears.
 :::
 
+## Reverting to Opensaml version 3
+
+SAML implementation is currently using the Opensaml 4 library internally, which necessitates configuration of the third-party repository, **Shibboleth**, in the pom.xml file. However, if required, you can remove the repository and revert to Opensaml 3 version.
+
+:::note
+For more information, see [Shibboleth](https://shibboleth.atlassian.net/wiki/spaces/IDP4/overview).
+:::
+
+### Steps to revert Opensaml version
+
+- Remove the below repository from the pom.xml.
+
+```xml
+<repositories>
+    <repository>
+    <id>Shibboleth</id>
+    <name>Shibboleth</name>
+    <url>https://build.shibboleth.net/nexus/content/repositories/releases/</url>
+    </repository>
+</repositories>
+```
+
+- Add the property opensaml.version in the pom.xml (in properties section) as: `<opensaml.version>3.4.6</opensaml.version>`.
+- Add the property **security.providers.saml.useOpenSaml3=true** in the development.properties file.
+- Add the property **security.providers.saml.useOpenSaml3=${security.providers.saml.useOpenSaml3}**.

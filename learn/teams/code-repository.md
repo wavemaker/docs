@@ -36,16 +36,16 @@ You can access the code repository page in the administration area by clicking *
 
 ![Code Repository](/learn/assets/TeamCodeRepository.png)
 
-From the Code Repository page, you can
+From the **Code Repository** page, you can
 
-* Add code repository  
-* View or edit a code repository details  
-* Make **default** a specific code repository
-* Remove a code repository
+- Add a code repository  
+- View or edit a code repository details
+- Make a specific code repository as **default**
+- Remove a code repository
 
 ## Add Code Repository
 
-* Click **Add Code Repository**, and provide your repository details.
+Click **Add Code Repository**, and provide your repository details.
 
 ![Add Repository](/learn/assets/TeamAddVcsRep.png)
 
@@ -53,14 +53,59 @@ From the Code Repository page, you can
 You need to explicitly make this VCS as "Default" to add new projects to this repository.
 :::
 
+### Access Type
+
+WaveMaker commits code to the added code repository. Using "Access Type" team admin can configure whether to use service account or force individual team members to setup their VCS identity in WaveMaker. The second mode of "Access Type" is called "Developer Credentials". 
+
+:::note
+Access Type is introduced new in 11.3
+:::
+
+- Service Account
+- Developer Credentials
+
+#### Service Account 
+
+In this type, the WaveMaker service account impersonates developers when they commit code.
+
+#### Developer Credentials
+
+In this type, every member of the project uses their VCS credentials to access the project and perform VCS operations. In this mode VCS accounts must be available for all the team members. 
+
+Here is how team portal admin can choose this option when adding the Code Repository. This setting is also available when you choose to edit already added Code Repositories.
+
+![Add Access Type](/learn/assets/TeamSelectAccesstype.png)
+
+:::important
+When you select **Developer Credentials** as Access type for the Code Repository, developers will need credentials to perform any VCS operation. Refer to the screenshot below to learn how developers can setup their VCS credentials in WaveMaker.
+
+:::
+
+![Add Access Type](/learn/assets/TeamUpdateCredentials.png)
+
+### Delete Repo When Project Deleted
+
+#### Enabled
+
+If this options is enabled, then whenever a project is deleted in WaveMaker studio that action cascades to deleting the code repo in the VCS as well.
+
+#### Disabled 
+
+If ``Disabled``option is selected then deletion of projects in Studio does not delete code repository in the VCS. This is the default option.
+
+![Delete Repository](/learn/assets/TeamDeleteRepository.png)
+
+### Set Branch as Default
+
+When you create a project, the code of any projects created is pushed to the repo's branch you set as default here. Normally the value is ``master``. However, with this setting, it can be set to a different branch name as well.
+
+![Set Repository Default](/learn/assets/TeamSetDefaultRepo.png)
+
 ## Edit Code Repository
 
-* Select the code repository you want to edit, click the **Edit** icon and update the details.
+- **Credentials**: To update the access type for code repository.
+- **Make Default**: To make the code repository as default VCS.
+- **Settings**: To update the default branch and enabling the delete repository when project deleted option.
+- **Delete**: To delete the VCS details from Code Repository page.
 
-![Add Repository](/learn/assets/TeamAddVcsRep.png)
-
-## Make Code Repository as Default
-
-* Select the Code Repository you want to make as default, and click the **Default** option.
-
-![Make Repository Default](/learn/assets/TeamMakeVcsDefault.png)
+![Edit Repository](/learn/assets/TeamEditRepo.png)
