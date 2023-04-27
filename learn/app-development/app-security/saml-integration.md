@@ -188,7 +188,7 @@ Here you can find steps for SAML integration with:
 When the app is run with SSO configuration, assuming that there is no session present with third-party identity providers, the third-party IdP login dialog will show up. As our WaveMaker Run Toolbar is within iframe which may not be safe for third parties, we remove the toolbar before the Login dialog of the third-party identity provider appears.
 :::
 
-## Reverting to SAML 3
+## Reverting to OpenSAML 3
 
 SAML upgraded to use OpenSAML 4.3.0 library from [WaveMaker 11.3](/learn/wavemaker-release-notes/v11-3-0), which includes a third-party repository **[Shibboleth](https://shibboleth.atlassian.net/wiki/spaces/IDP4/overview)** in the pom.xml file. 
 
