@@ -132,6 +132,8 @@ In WaveMaker service calls, to fetch data, these are abstracted as [Variables](/
 
 When the **Variable Spinner** context is selected as a Page.
 
+![variable spinner context](/learn/assets/variable-spinner-context.png)
+
 For Skeleton, all Widgets on the page show a Skelton Loader.
 For Progress, the selected animation will show on top of a while overlay.
 
