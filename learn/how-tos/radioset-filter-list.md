@@ -12,12 +12,14 @@ Here we will see how to Filter a List using a Radioset Widget
 
 The following is the JavaScript function used as the callback event for on before update:
 
- Page.NorthwindProductsDataonBeforeUpdate = function(variable, data) {
+```js
+Page.NorthwindProductsDataonBeforeUpdate = function(variable, dataFilter, options) {
         data.standardCost = {
             'value': Page.Widgets.radioset1.datavalue,
             'filterCondition': 'LESS_THAN_OR_EQUALS',
             'type': 'INTEGER'
         }
-    };
+    }; 
+```
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vT1qf-jqh1-M6cdn4hWduOxlMKpvoRwzLTz5luQf6LG-vktjB4vcL7II09YOuSIDH32p7V9F-VlvHnc/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
