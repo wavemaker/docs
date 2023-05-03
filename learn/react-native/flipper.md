@@ -5,47 +5,64 @@ sidebar_label: "Flipper"
 ---
 ---
 
-Flipper is a platform for debugging iOS, Android and React Native apps. Visualize, inspect, and control your apps from a simple desktop interface. We have integrating flipper using wm-reactnative-cli.
+Flipper is a tool for debugging iOS, Android, and React Native apps to access applications from a desktop interface where you can visualize and inspect the code. WaveMaker has integrated Flipper using CLI **`wm-reactnative-cli`**.
 
-### Setup
+## Steps to Setup
 
-Downlaod [Flipper](https://fbflipper.com/)
-
-After installing Flipper, please select settings option from left menu
+1. Download [Flipper](https://fbflipper.com/).
+2. After installing Flipper, select the **Settings** option from the left menu.
 
 ![Flipper-Settings](/learn/assets/flipper-settings.png)
 
-Add android sdk location for Android development and IDB location for IOS development
+3. For **Android development**, add **Android SDK location** and for **iOS Development**, add **IDB binary location**, as shown in the image below.
 
 ![Flipper-Settings-Dialog](/learn/assets/flipper-settings-dialog.png)
 
-Check the requirements to run Flipper from setup-doctor option
+4. Check the requirements to run Flipper from the **Setup Doctor** option.
 
 ![Flipper-Setup-Doctor](/learn/assets/flipper-setup-doctor.png)
 
-make sure the requriements are met for respective development environment
+5. Ensure that the requirements are met for each respective development environments. If the requirements fail or show warning, you can expand the item and address the issues and perform **re-run**.
 
 ![Flipper-Setup-Dialog](/learn/assets/flipper-setup-doctor-dialog.png)
 
-### Debug
+## Debug Android
 
-For Android, we need run the follow command. clean option can be ignored after the initial run.
+For Android, run the follow command. 
 
-    wm-reactnative run android "preview-link" --clean
+```
+wm-reactnative run android "preview-link" --clean
+```
 
-For Ios, we need run the follow command. clean option can be ignored after the initial run.
+:::note
+You can skip the `clean` option after the initial run.
+:::
 
-    wm-reactnative run ios "preview-link" --clean
+## Debug iOS
+
+For iOS, run the follow command.
+
+```
+wm-reactnative run ios "preview-link" --clean
+```
+
+:::note
+You can skip the `clean` option after the initial run.
+:::
 
 <!-- ![Flipper-preview](/learn/assets/flipper-setup-doctor-dialog.png) -->
 
-### Plugins
+## Access Flipper Plugins
 
-We can add react native plugins in market place or custom plugins from plugin manager option.
+You can access to Flipper plugins for debugging the application and for develepment ease.
 
 ![Flipper-Plugin-Manager](/learn/assets/flipper-plugin-manager.png)
 
-From the Plugins Status tab we can check all the active plugins and install Plugins tab will allow us to add plugins
+To access, go to the **Plugin Manager** option, as shown in the image below.
 
 ![Flipper-Plugin-Manager-Dialog](/learn/assets/flipper-plugin-manager-dialog.png)
+
+From the **Install Plugins** tab, you can install required plugin, 
+
+From the **Plugins Status** tab, you can check all the active plugins.
 

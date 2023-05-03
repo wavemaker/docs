@@ -24,12 +24,6 @@ Skeleton Loader is enabled by default when creating an application. To change th
 
 ![Application-Loader](/learn/assets/appLoaders.gif)
 
-### Variable Settings
-
-When the Variable Spinner context is selected as a Page, all Widgets on the page show a Skeleton Loader type. 
-
-Initially, the feature displays animation for variables used on the Main Page . Thereafter, pages will show animation for the Page-level Variables spinner context option. 
-
 ### Adding Skeleton Loader to a Widget
 
 You can apply Skeleton Loader for only a Specific widget instead of applying it to the whole page. For this, use the **`showskeleton`** property.
@@ -40,7 +34,7 @@ You can apply Skeleton Loader for only a Specific widget instead of applying it 
 
 In the following documentation, find code examples explaining multiple scenarios that you can use for Skeleton Loader.
 
-#### Skeleton Loader Timeout Setting
+#### Set Time for Skeleton Loader 
 
 In the following example, apply child Widgets of `widgetName` to show the Skeleton Loader and hide it in 5 seconds.
 
@@ -53,11 +47,15 @@ In the following example, apply child Widgets of `widgetName` to show the Skelet
 
 #### Change Skeleton Colors
 
-You can control Skeleton Loader colors using styles.
+You can control Skeleton Loader colors using styles. There are three style properties as following: 
+
+1. skeleton
+2. skeleton-gradient
+3. skeleton-gradient-foreground
 
 ![Skeleton-Loader-Gradient](/learn/assets/skeleton.png)
 
-#### Page 
+#### Apply Style to Page 
 
 In the following example, you can apply style on the page.
 
@@ -75,7 +73,7 @@ In the following example, you can apply style on the page.
 }
 ```
 
-#### Widget 
+#### Apply Style to Widget 
 
 - Using the following example, apply style for a specific Widget on the Page.
 
@@ -93,6 +91,8 @@ In the following example, you can apply style on the page.
     background-color: #292753;
 }
 ```
+
+#### Apply Style to Class Name
 
 - You can use a class name of the widget for a specific widget if needed.
 
@@ -116,11 +116,24 @@ className: headerLabel
 
 Use Progress Loaders such as spinners while the app data is being fetched from an API. WaveMaker provides four types of Progress Loaders to choose. The styling for the progress loader is generated from the default theme or the applied theme.
 
-
-This will show the selected spinner animation, while the data is loading (It will create an overlay on top of the page) and the colors of the spinner are changed based on the theme.
-
-:::note
-If Page cache is enabled then it will show the spinner for the first load only.
-:::
+This will show the selected spinner animation, while the data is loading, which creates an overlay on top of the page and the colors of the spinner change based on the theme.
 
 ![Progress-Loader](/learn/assets/progressLoaders.gif)
+
+:::note
+If the **Cache** property is enabled, the app will show the Progress Loader for the first load only because the app will load data from the cache instead of the server.
+:::
+
+![](/learn/assets/page-cache-rn.png)
+
+### Variable Settings
+
+In WaveMaker service calls, to fetch data, these are abstracted as [Variables](/learn/app-development/variables/), when these calls are made the [App Loaders](#application-loader) will show.
+
+When the **Variable Spinner** context is selected as a Page.
+
+For Skeleton, all Widgets on the page show a Skelton Loader.
+For Progress, the selected animation will show on top of a while overlay.
+
+
+
