@@ -34,7 +34,9 @@ To send data from webview to React Native ()
 
 Execute the below code in webview to send string data to React Native app
 
-    window.ReactNativeWebView && window.ReactNativeWebView.postMessage('Message from web');
+```
+window.ReactNativeWebView && window.ReactNativeWebView.postMessage('Message from web');
+```
 
 In React Native app, add a javascript function for onMessage event, Then handle the data that is send from webview
 

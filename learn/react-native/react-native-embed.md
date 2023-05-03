@@ -30,31 +30,30 @@ To embed React native apps into native apps, changes are required in both react 
 
 - Add below line in project level build.gradle
 
-```
-apply from:'./rnApp/root.build.gradle'
-```
+
+    apply from:'./rnApp/root.build.gradle'
+
 
 - Add the below line in project level settings..gradle
 
-```
-apply from:'./rnApp/root.settings.gradle'
-```
+
+    apply from:'./rnApp/root.settings.gradle'
+
 
 - Add rnApp as dependency in app module build.gradle.
 
-```
-implementation (project(':rnApp'))
-```
+
+    implementation (project(':rnApp'))
+
 
 - Make the MainApplication class to inherit React Native Application Class
 
 - Add below code to start React native app.
 
-```
-Intent intent = new Intent(getActivity(), ${REACT_ACTIVITY_MAIN_CLASS});
-    
-startActivity(intent);
-```
+    Intent intent = new Intent(getActivity(), ${REACT_ACTIVITY_MAIN_CLASS});
+        
+    startActivity(intent);
+
 
 - Fix dependency issues.
 
@@ -88,38 +87,38 @@ startActivity(intent);
 
 - Include the following as dependency into the module.
 
-```
-implementation (project(':wavemaker-expo-native-module'))
-```
+
+    implementation (project(':wavemaker-expo-native-module'))
+
 
 - Import package
 
-```
-import com.wavemaker.reactnative.embed.CommunicationService;
-```
+
+    import com.wavemaker.reactnative.embed.CommunicationService;
+
 
 - Implement action
 
-```
-CommunicationService.Companion.getINSTANCE().process("action-name",(data, promise) -> {
-// your implementation goes here.
-});
-```
+
+    CommunicationService.Companion.getINSTANCE().process("action-name",(data, promise) -> {
+    // your implementation goes here.
+    });
+
 
 #### Implementing actions in iOS project
 
 - Import package
 
-```
-import EmbedCommModule
-```
+
+    import EmbedCommModule
+
 
 - Implement action
 
-```
-CommunicationService.INSTANCE.process(
-messageType: "action-name",
-processor: {(message: NSDictionary?, promise: Promise?) in
-// your implementation goes here
-});
-```
+
+    CommunicationService.INSTANCE.process(
+    messageType: "action-name",
+    processor: {(message: NSDictionary?, promise: Promise?) in
+    // your implementation goes here
+    });
+
