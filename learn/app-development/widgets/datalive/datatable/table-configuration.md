@@ -35,7 +35,7 @@ End-user can also be provided with a way to select rows and columns of a table.
 - Column selection needs to be further configured using the On Column Select and On Column Deselect events.
 - For Quick Edit and Inline Edit, New row position can be specified to be at the bottom or at the top of the Data Table.
 
-[![](/learn/assets/table-config1.png)](/learn/assets/table-config1.png)
+![image](/learn/assets/table-config1.png)
 
 ### Pagination
 
