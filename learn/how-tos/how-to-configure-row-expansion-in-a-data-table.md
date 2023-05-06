@@ -67,6 +67,8 @@ Now, set filter criteria in the variables for _HrdbEmployeeData_ to _deptId_
 
 Binding deptID PageParam
 
+![image](/learn/assets/rowexpansion-pageparam.png)
+
 ![image](/learn/assets/rowexpansion-pageparam-image.png)
 
 [![](/learn/assets/employeeparambindingdeptid.png)](/learn/assets/employeeparambindingdeptid.png)In the department page, you bind the Employee (partial) and Page Params and set the row expansion property.
