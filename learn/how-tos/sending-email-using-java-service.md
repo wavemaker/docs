@@ -34,6 +34,37 @@ connector.email.default.email.server.sslenabled=true
 ```
 
 - You should specify the values for connector properties in profiles.
+- Once you are done with importing an connector Zip into the Wavemaker Studio,It will automatically provide the above properties in development.properties file.
+- If you want to provide other than the above properties for connector you can do it by using Java services.
+- Add the below Import statement to the your Javaservice.
+
+```java
+import javax.annotation.PostConstruct;
+```
+
+- Add the below code snippet to your javaservice
+
+```java
+ @PostConstruct
+    public void settingEmailProperties() {
+
+        Properties properties = new Properties();
+        
+        properties.setProperty(KeyProperty, keyValue);
+        /*
+        keyProperty - KeyProperty which you want to provide for your connector.
+        KeyValue - keyValue for your connector.
+        you can refer the below example
+        properties.setProperty("mail.smtp.starttls.enable", "false");
+
+        */
+        
+        emailConnector.setEmailProperties(properties);
+        
+    }
+    
+```
+
 - These externalized properties are used in the connector, If required, you can also read these properties in java service as below:
 
 Import Statement:
