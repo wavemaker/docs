@@ -5,33 +5,57 @@ sidebar_label: "Splash Screen"
 ---
 ---
 
-A splash screen is a graphical control element consisting of a window containing an image, a logo, an Animation and the current version of the software. It is the introduction page of the Application.
+A Splash Screen is a screen that displays an image or animation when the app is loading when you launch the app. You can add brand logo or a plain background. WaveMaker allows you to add lively animation that supports Lottie files, which is a JSON-based animation file format, allowing you to incorporate animation as a static asset.
 
-we can customize splash screen of the application from Build ReactNative Zip dialog (export -> project as ReactNative zip).
+Splash Screen provides you with two types of screens to configure:
+
+1. Background
+2. Logo
+
+Learn how to configure these screens in the following sections.
+
+## Accessing Splash Screen
+
+1. Go to the **Export** option.
+2. Choose **Project as ReactNative Zip**. This opens the **Build ReactNative Zip** dialog. 
+3. Go to the **Splash Screen** tab, displays as below.
 
 ![SplashScreen](/learn/assets/splash-screen.png)
 
-#### Image as a SplashScreen
+## Background 
 
-With this option we can upload Images only with resoulution **1284x2778** for splash screen.
+:::note
+This is the default Splash Screen applied to the application when no configuration is provided.
+:::
 
-![SplashScreen-Image](/learn/assets/splash-screen-image.png)
+In Background, there are following two options.
+
+- **[Color](#color)**
+- **[Image](#image)**
 
 
-#### Background Color as a SplashScreen
- 
-With this option we can use color selector, to select a color and use it as a Splash screen image.
+### Color 
+
+With this option, you can use the color selector to select a color and use it as a Splash Screen image.
 
 ![SplashScreen-BgColor](/learn/assets/splash-screen-bgcolor.png)
 
-If there is already a Splash Image selected, then this option will replace it with the selected color and vice versa.
+:::note
+If there is already a Splash Screen image selected, then the option will replace it with the selected color or vice versa between **Color** and **Image** properties.
+:::
 
-#### Animation as a SplashScreen
+### Image
 
-With this option we can use [Lottie animations](https://lottiefiles.com/) as a SplashScreen. we can only upload lottie json files through this option.
+With this option, you can upload images only with the resolution of **1284x2778** for the Splash Screen.
 
-When selecting this option, we also need to use either color(same background color as animation) or an image(first frame of the animation).
+![SplashScreen-Image](/learn/assets/splash-screen-image.png)
 
-**Note:** without using color or image app will show a blank screen initially then plays the animation.
+## Logo
+
+Choosing this option allows you to use [Lottie Animations](https://lottiefiles.com/) as Splash Screen. You can only upload Lottie JSON files through this option.
 
 ![SplashScreen-Animation](/learn/assets/splash-screen-animation.gif)
+
+:::important
+When selecting **Logo**, you can configure the **Background Color** or **Image** too as a Splash image to load as the first frame. You can apply color to match with the Lottie animation you use. By applying the **Background** property, it helps apply smoother transition when the animation loads. 
+:::

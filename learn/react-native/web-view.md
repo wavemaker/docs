@@ -1,13 +1,15 @@
 ---
 title: "Web View"
 id: "web-view"
-sidebar_label: "Web View"
+sidebar_label: "WebView"
 ---
 ---
 
-WebView in React Native should support api that Cordova inAppBrpwser supports.
+WebView renders web content in a native view, such as In-app-browser. This allows you to communicate between the WaveMaker app and third-party apps. You can add script and CSS to third-party services too.
 
-To execute javascript in webview (executeScript) and receive the result.
+## Add Script to WebView
+
+To execute JavaScript in WebView, call `executeScript` function and receive the result.
 
 ```
 Page.Widgets.webview1.executeScript(`function() {
@@ -20,7 +22,9 @@ Page.Widgets.webview1.executeScript(`function() {
     });
 ```
 
-To inject CSS into webview (injectCSS)
+## Styling WebView
+
+To inject CSS into WebView, call `injectCSS` function, as shown below.
 
 ```
  Page.Widgets.webview1.insertCSS(`
@@ -30,15 +34,20 @@ To inject CSS into webview (injectCSS)
         }
     `);
 ```
-To send data from webview to React Native ()
 
-Execute the below code in webview to send string data to React Native app
+## Communicate between WebView and React Native
+
+Execute the below code in WebView to send the string data to React Native app, wherein React Native is a WaveMaker app, and WebView is a third-party service. 
+
+### Script to add in Webview
 
 ```
 window.ReactNativeWebView && window.ReactNativeWebView.postMessage('Message from web');
 ```
 
-In React Native app, add a javascript function for onMessage event, Then handle the data that is send from webview
+### Scrip to add in React Native
+
+In React Native app, add a JavaScript function for `onMessage` event, then handle the data that is send from WebView.
 
 ```
 Page.webview1Message = function(event, widget) {
