@@ -15,7 +15,10 @@ We will use the popover to display the list of employees of a particular departm
 
 ## 2. Create a **popover page**
 
-Create a popover page and select a blank template.
+Create a popover partial page and select a blank template.
+
+![image](/learn/assets/popoverpartialpage.png)
+
 - Drag and drop a **List** onto the canvas space, select the _data source_ to the _dataset_ of the _Emp_Picurl_ query variable created in the first step and set the _layout_ to _Media List_.
 
 [![](/learn/assets/popover_configurelist.png)](/learn/assets/popover_configurelist.png)
