@@ -131,7 +131,7 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
 | Tomcat | 8.5* |
-| Cordova (mobile apps)   Android   iOS <td bgcolor="#44aaf4"> 10.0.0 -> 11.0.0   10.1.0 -> 10.1.2   6.1.0 </td>|
+| Cordova (mobile apps)   Android   iOS <td className="versiontdbgcolor"> 10.0.0 -> 11.0.0   10.1.0 -> 10.1.2   6.1.0 </td>|
 
 ### App Build Environment
 
