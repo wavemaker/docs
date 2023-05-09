@@ -34,32 +34,6 @@ connector.email.default.email.server.sslenabled=true
 ```
 
 - You should specify the values for connector properties in profiles.
-- Once you are done with importing an emailconnector Zip into the Wavemaker Studio,It will automatically provide the above properties in development.properties file.
-
-:::note 
-If you want to provide other than the above properties for emailconnector you can do it through Java services.
-:::
-- Add the below Import statement to the your Javaservice.
-
-```java
-import javax.annotation.PostConstruct;
-```
-
-- Add the below code snippet to your javaservice.Here we are setting "mail.smtp.starttls.enable" property of emailconnector to false.
-
-```java
- @PostConstruct
-    public void settingEmailProperties() {
-
-        Properties properties = new Properties();
-               
-        properties.setProperty("mail.smtp.starttls.enable", "false");
-        
-        emailConnector.setEmailProperties(properties);
-        
-    }
-    
-```
 
 - These externalized properties are used in the connector, If required, you can also read these properties in java service as below:
 
@@ -259,6 +233,34 @@ Create a [Java Service Variable](/learn/assets/var_sel.png) for the Java service
 [![Screenshot showing variable for EmailService](/learn/assets/email_java_var.png)](/learn/assets/email_java_var.png)
 
 You can now use this service variable in your application as per your business logic.
+
+## Customizing email properties
+
+:::note  
+If you want to add or customize any other existing email properties (other than the above properties) you can do it through Java services as mentioned below.
+:::
+
+- Add the below Import statement to the your Javaservice.
+
+```java
+import javax.annotation.PostConstruct;
+```
+
+- Add the below code snippet to your javaservice. Here we are setting "mail.smtp.starttls.enable" property of emailconnector to false.
+
+```java
+ @PostConstruct
+    public void settingEmailProperties() {
+
+        Properties properties = new Properties();
+               
+        properties.setProperty("mail.smtp.starttls.enable", "false");
+        
+        emailConnector.setEmailProperties(properties);
+        
+    }
+    
+```
 
 ## See Also
 
