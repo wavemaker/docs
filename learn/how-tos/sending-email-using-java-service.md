@@ -35,14 +35,17 @@ connector.email.default.email.server.sslenabled=true
 
 - You should specify the values for connector properties in profiles.
 - Once you are done with importing an emailconnector Zip into the Wavemaker Studio,It will automatically provide the above properties in development.properties file.
-- If you want to provide other than the above properties for emailconnector you can do it through Java services.
+
+:::note 
+If you want to provide other than the above properties for emailconnector you can do it through Java services.
+:::
 - Add the below Import statement to the your Javaservice.
 
 ```java
 import javax.annotation.PostConstruct;
 ```
 
-- Add the below code snippet to your javaservice
+- Add the below code snippet to your javaservice.Here we are setting "mail.smtp.starttls.enable" property of emailconnector to false.
 
 ```java
  @PostConstruct
