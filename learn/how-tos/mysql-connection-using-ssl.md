@@ -29,6 +29,21 @@ jdbc:mysql://host:3306/{dbname}?useUnicode=yes&characterEncoding=UTF-8&zeroDateT
 &clientCertificateKeyStorePassword={client-keystore-password}
 ```
 
+:::note
+
+If you want to connect to Postgres database using SSL, follow the same steps as mentioned for MySQL, you just needed to change the jbdc url as mentioned below.
+:::
+
+```
+
+jdbc:postgresql://host:3306/{dbname}?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&sslMode={sslMode}
+&trustCertificateKeyStoreUrl={truststore}
+&trustCertificateKeyStorePassword={truststore-password}
+&clientCertificateKeyStoreUrl={client-keystore}
+&sslfactory=org.postgresql.ssl.SingleCertValidatingFactory
+&clientCertificateKeyStorePassword={client-keystore-password}
+
+```
 ### SSL Mode
 
 MySQL provides 5 options for configuring SSL as shown below
