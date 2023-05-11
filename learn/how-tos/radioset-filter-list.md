@@ -25,7 +25,7 @@ Add a [Page](/learn/app-development/ui-design/designing-app), import the [HRDB](
 ## Binding Radioset widget datavalue to variable
 - Drag and drop a RadioSet widget into the canvas.
 - Bind the datavalue of radioset widget to the databasecrud variable radioSetDataValue which is created in above step.
-- From Radioset properties panel set **datafield** value to deptId and also **displayfield** value to deptId as shown below.
+- From Radioset properties panel set **datafield** value to deptId and also **displayfield** value to name as shown below.
 
 ![radio_setfiltervariable_properties](/learn/assets/radio_setfiltervariable_properties.png)
 
@@ -35,7 +35,7 @@ Add a [Page](/learn/app-development/ui-design/designing-app), import the [HRDB](
 
 ![hrdb_listvariable](/learn/assets/hrdb_listvariable.png)
 
-## Filtering the List records based on the input taken from Radioset
+## Filter Records from Radioset
 
 - Now go to events tab of Radioset widget and set the onchange event to Javascript as shown below.
 
@@ -53,7 +53,7 @@ Page.radioset1Change = function($event, widget, newVal, oldVal) {
             "deptId": {
                 "value": radioSetdataValue,
 
-                "matchMode": "LESS_THAN_OR_EQUALS"
+                "matchMode": "EQUALS_TO"
             }
         }
     });
@@ -63,7 +63,8 @@ Page.radioset1Change = function($event, widget, newVal, oldVal) {
 
 ## preview the page
 - preview the app.
-- If you select deptId from radioset this will filter and display the employee records in a list whos deptId is lessthanorequalsto selected deptId.
+
+- When you select the department name from the Radioset, employee records will display in the List below, which are filtered based on the condition set in the [radioset1Change method](#filter-records-from-radioset).
 
 Sample output when deptId selected as 1
 
@@ -73,4 +74,3 @@ sample output when deptId selected as2
 
 ![radioset-output-image2](/learn/assets/radioset-output-image2.png)
 
-<iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vT1qf-jqh1-M6cdn4hWduOxlMKpvoRwzLTz5luQf6LG-vktjB4vcL7II09YOuSIDH32p7V9F-VlvHnc/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
