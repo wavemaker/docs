@@ -98,12 +98,11 @@ Identity provider endpoints are provided in WaveMaker's security configuration p
 
 ## Adding User
 
-1. Go to [Auth0](https://auth0.com/) and set up user account. This is to create an Auth0 application.
-2. Go to **User Management** > **Users**.
+1. Go to **User Management** > **Users**.
 
 [![](/learn/assets/auth0-users.png)](/learn/assets/auth0-users.png)
 
-3. Click **Create User**. Enter email address and password and save the details to create a new user.
+2. Click **Create User**. Enter email address and password and save the details to create a new user.
 
 [![](/learn/assets/auth0-create-user.png)](/learn/assets/auth0-create-user.png)
 
