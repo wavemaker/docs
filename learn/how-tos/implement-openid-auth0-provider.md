@@ -56,13 +56,15 @@ Below are the steps to create an application in Auth0 Developer.
 
 [![](/learn/assets/auth0-application-savechanges.png)](/learn/assets/auth0-application-savechanges.png)\
 
-With above steps auth0 application is configured.
+With above steps Auth0 application is configured.
 
 ### Restricting Domain
 
 You can add specific domains that can restrict access to the application. For more information on how to restrict domain in Auth0, see [Custom Domain in Auth0](https://auth0.com/docs/customize/custom-domains).
 
-### Fetching Client Details
+### Configuring Client ID and Client Secret
+
+Client ID and Client Secret are provided in the WaveMaker's security configuration page as it is required to confirm the application's identity to provider.
 
 1. Go to **Applications** > **Applications**.
 
@@ -76,7 +78,9 @@ You can add specific domains that can restrict access to the application. For mo
 
 [![](/learn/assets/auth0-client-details.png)](/learn/assets/auth0-client-details.png)
 
-### Fetching Security Endpoints
+### Configuring Identity Provider Endpoints
+
+Identity provider endpoints are provided in WaveMaker's security configuration page to establish communication between provider and application during user authentication.
 
 1. Go to **Applications** > **Applications**.
 
@@ -92,11 +96,7 @@ You can add specific domains that can restrict access to the application. For mo
 
 [![](/learn/assets/auth0-endpoints.png)](/learn/assets/auth0-endpoints.png)
 
-## Role Mapping using Auth0 Provider
-
-Below are the steps to assign you the role.
-
-### Adding User
+## Adding User
 
 1. Go to [Auth0](https://auth0.com/) and set up user account. This is to create an Auth0 application.
 2. Go to **User Management** > **Users**.
@@ -109,29 +109,6 @@ Below are the steps to assign you the role.
 
 With above steps, new user is created.
 
-### Adding Role Attribute
+## Adding Role Attribute as Custom Claim
 
-1. Go to **User Management** > **Roles**.
-
-[![](/learn/assets/auth0-roles.png)](/learn/assets/auth0-roles.png)
-
-2. Click **Create Role**.
-3. Enter Name and Description. Click **Create** to create the role.
-
-[![](/learn/assets/auth0-create-role.png)](/learn/assets/auth0-create-role.png)
-
-### Assigning Role
-
-4. Go to **Users** and click the user to assign role.
-
-[![](/learn/assets/auth0-users-user.png)](/learn/assets/auth0-users-user.png)
-
-5. Go to **Roles** and click **Assign Roles**.
-
-[![](/learn/assets/auth0-assign-role.png)](/learn/assets/auth0-assign-role.png)
-
-6. Select the role and click **Assign** to assign the specific role to the user.
-
-[![](/learn/assets/auth0-role-confirm.png)](/learn/assets/auth0-role-confirm.png)
-
-With above steps, role attribute is created and assigned to user.
+To configure role mapping in WaveMaker, a custom claim for role is created in Auth0 which can be mapped in WaveMaker's security configuration page under Role Mapping section. For more information on how to create a custom attribute in Auth0, refer [Custom Claims in Auth0](https://auth0.com/docs/secure/tokens/json-web-tokens/create-custom-claims).
