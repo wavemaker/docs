@@ -9,7 +9,7 @@ sidebar_label: "Upgrade Non Root WME Execution"
 
  
 :::note
- Make sure for Patch case the  <bold>non-root-execution-user-name</bold> is same as previously executed platform user, by default it is wavemaker if no custom user is selected , if selected make sure to use that custom user for non-root execution.
+ Make sure for Patch case the **non-root-execution-user-name** is same as previously executed platform user, by default it is WaveMaker if no custom user is selected , if selected make sure to use that custom user for non-root execution.
 :::
 
 #### Platform Instance

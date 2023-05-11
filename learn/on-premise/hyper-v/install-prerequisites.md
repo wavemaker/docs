@@ -33,10 +33,10 @@ sudo apt-get install python3 -y
 
 - Install Docker repository
 
-  ```bash
-      apt-get install apt-transport-https
-      curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-  ```
+```bash
+    apt-get install apt-transport-https
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
 
   - To add docker repository for ubuntu bionic(18.04.5)
 
@@ -77,7 +77,7 @@ sudo apt-get install python3 -y
 
   - Run the following command to install the Docker.
 
-```bash 
+  ```bash 
    sudo bash wme-utility.sh --docker-upgrade 
   ```  
 
@@ -101,9 +101,9 @@ The given ssh user does not have permission to install software Then install bel
 - If the user given to the Platform doesn't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
 - Create a user group if not present in StudioWorkspace Instance / AppDeployment Instance .
   
-  ```bash
-    sudo groupadd <user>
-  ```
+```bash
+  sudo groupadd <user>
+```
 
 - Have to execute these commands from privileged users.
   - Add user to the docker group.  
@@ -111,13 +111,14 @@ The given ssh user does not have permission to install software Then install bel
   - data directory should be owned by the user.
   - Give permission to manage docker.service, systemctl daemon-reload, iptable.
 
-    ```bash
-        usermod -aG docker <user>
-        mkdir -p /etc/systemd/system/docker.service.d/
-        chown -R <user>:<user> /etc/systemd/system/docker.service.d
-        chown -R <user>:<user> /data
-        echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
-        ```
+  ```bash
+      usermod -aG docker <user>
+      mkdir -p /etc/systemd/system/docker.service.d/
+      chown -R <user>:<user> /etc/systemd/system/docker.service.d
+      chown -R <user>:<user> /data
+      echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+  ```
+
 ## RHEL
 
 ### The ssh user has privileges (root/sudo) or user doesn't have privileges for install/upgrade utility softwares
@@ -149,7 +150,7 @@ The given ssh user does not have permission to install software Then install bel
   
   - Install prerequissites to install Docker in RHEL7
   
-   ```bash
+  ```bash
       yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
       wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/slirp4netns-0.4.3-4.el7_8.x86_64.rpm
       wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/fuse3-devel-3.6.1-4.el7.x86_64.rpm
@@ -159,7 +160,7 @@ The given ssh user does not have permission to install software Then install bel
       sudo yum install fuse3-devel-3.6.1-4.el7.x86_64.rpm -y
       sudo yum install fuse3-libs-3.6.1-4.el7.x86_64.rpm -y
       sudo yum install fuse-overlayfs-0.7.2-6.el7_8.x86_64.rpm -y
-   ```
+  ```
 
   - To Install Docker in RHEL 7 use the following commands
   
@@ -221,23 +222,23 @@ The given ssh user does not have permission to install software Then install bel
   - data directory should be owned by the user.
   - Give permission to manage docker.service, systemctl daemon-reload, iptable.
 
-    ```bash
+  ```bash
         usermod -aG docker <user>
         chown -R <user>:<user> /usr/lib/systemd/system
         chown -R <user>:<user> /data
         echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
-    ```
+  ```
 
 #### Make sure to Run below command after installation of docker completes to have WaveMaker docker configuration to your installed docker
 
 - For Ubuntu
 
-  ```bash 
+```bash 
       bash docker_configure.sh
-  ```
+```
 
 - For RHEL
 
-  ```bash
+```bash
       bash docker_setup_rhel.sh
-  ```
+```
