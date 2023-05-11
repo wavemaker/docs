@@ -41,12 +41,12 @@ sidebar_label: "Non Root WME Execution"
   - Give permission for non-root user to manage docker services, system management, /wm-runtime and /wm-data directories after docker installation/upgrade.
 
     ```bash
-        usermod -aG docker <user>
-        chown -R <user>:<user> /usr/lib/systemd/system/
-        chown -R <user>:<user> /etc/sysconfig/
-        chown -R <user>:<user> /etc/systemd/system/
-	      chown -R <user>:<user> /wm-runtime
-        chown -R <user>:<user> /wm-data
+    usermod -aG docker <user>
+    chown -R <user>:<user> /usr/lib/systemd/system/
+    chown -R <user>:<user> /etc/sysconfig/
+    chown -R <user>:<user> /etc/systemd/system/
+    chown -R <user>:<user> /wm-runtime
+    chown -R <user>:<user> /wm-data
     ```
 
 
