@@ -1,6 +1,6 @@
 ---
 title: "Develop Employee Directory App"
-id: ""
+id: "app-demo"
 sidebar_label: "App Demo"
 ---
 ---

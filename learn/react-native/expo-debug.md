@@ -1,6 +1,6 @@
 ---
 title: "Preview React Native Apps in Mobile without Building Installers"
-id: ""
+id: "expo-debug"
 sidebar_label: "Mobile Preview"
 ---
 ---
@@ -51,11 +51,11 @@ wm-reactnative run expo ${APP_PREVIEW_URL}
 4. Once the command gets executed successfully, open [http://localhost:19002/](http://localhost:19002/) in your chrome browser
 5. If  you have Android, open the Expo Go app and scan the QR code that appears at the left bottom of [http://localhost:19002/](http://localhost:19002/)  
 
-![expo portal](/learn/assets/expo-portal-qr-code.png)
+![expo portal](/learn/assets/expo-portal-qr-code.11.2.2.png)
 
 6. If you have iOS, open the Safari browser in your iPhone and type the exp url that appears on top of the QR code. Expo Go will open automatically.
 
-![expo portal ios url](/learn/assets/expo-portal-ios-link.png)
+![expo portal ios url](/learn/assets/expo-portal-ios-link.11.2.2.png)
 
 7. When you shake the phone, the expo developer menu opens up. In the developer menu, click on `Debug Remote JS` option to debug the JavaScript of the app. You can stop debugging by tapping on the `Stop Debug` in developer menu. An active debugging session will make the app run slower.
 

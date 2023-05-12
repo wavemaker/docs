@@ -1,6 +1,6 @@
 ---
 title: "Adjust Left Navigation Width"
-id: ""
+id: "adjust-leftnav-width"
 ---
 ---
 

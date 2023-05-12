@@ -1,6 +1,6 @@
 ---
 title: "Working with Queries"
-id: ""
+id: "working-with-queries"
 ---
 ---
 
@@ -186,7 +186,7 @@ Both _Request_ and _Response_ POJO classes are generated as: `<queryName>Reques
     This will return only Employee object hence it will use the existing Employee type (as generated for Data table) instead of creating a new one.  
     - **Example-2**  
     `select e.empId, e.department from Employee`  
-    In this case, the response contains different fields so a new type will be created as <queryName>Response with fields `empId` and `department`. 
+    In this case, the response contains different fields so a new type will be created as &lt;queryName&gt;Response with fields `empId` and `department`. 
     
 :::note
 Here, `department` is a related field with type Department, so generated POJO uses existing Department type.

@@ -1,6 +1,6 @@
 ---
 title: "Invoking Queries/Procedures from Java Services"
-id: ""
+id: "invoking-queriesprocedures-java-services"
 sidebar_label: "Queries & Procedures - Java Services"
 ---
 ---

@@ -1,0 +1,12 @@
+:root{
+  --ifm-color-primary-lightest: #2BA0F6;
+  --ifm-color-primary-lighter: #0B92F5;
+  --ifm-color-primary-light: #0A8CEA;
+  --ifm-color-primary: #097FD5;
+  --ifm-color-primary-dark: #0872C0;
+  --ifm-color-primary-darker: #086CB5;
+  --ifm-color-primary-darkest: #065995;
+  --ifm-color-warning: #ff6221;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');

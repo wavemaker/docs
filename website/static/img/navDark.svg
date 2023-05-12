@@ -1,0 +1,24 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="l0xqn8nh7a">
+            <stop stop-color="#5575AF" stop-opacity=".3" offset="0%"/>
+            <stop stop-color="#2B4077" stop-opacity=".3" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect stroke="#445C9B" fill="url(#l0xqn8nh7a)" x=".5" y=".5" width="39" height="39" rx="6"/>
+        <path d="M34 15a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h28zm-.302 1.469H6.368a1 1 0 0 0-.992.883l-.007.117v6.25a1 1 0 0 0 .883.992l.117.007h27.33a1 1 0 0 0 .993-.883l.006-.117V17.47a1 1 0 0 0-.883-.993l-.117-.007z" fill="#F28686" fill-rule="nonzero"/>
+        <g transform="translate(15.66 17.315)">
+            <path d="M.7 0h6.917a.7.7 0 0 1 .7.7v5.032a.7.7 0 0 1-.7.7H.7a.7.7 0 0 1-.7-.7V.7A.7.7 0 0 1 .7 0z" fill="#F28686"/>
+            <rect fill="#FFF" transform="matrix(1 0 0 -1 0 6.7)" x="1.184" y="2.85" width="6" height="1" rx=".5"/>
+        </g>
+        <g transform="translate(6.344 17.315)">
+            <path d="M.7 0h6.917a.7.7 0 0 1 .7.7v5.032a.7.7 0 0 1-.7.7H.7a.7.7 0 0 1-.7-.7V.7A.7.7 0 0 1 .7 0z" fill="#F28686"/>
+            <rect fill="#FFF" transform="matrix(1 0 0 -1 0 6.7)" x="1.212" y="2.85" width="6" height="1" rx=".5"/>
+        </g>
+        <g transform="translate(24.977 17.315)">
+            <path d="M.7 0h6.917a.7.7 0 0 1 .7.7v5.032a.7.7 0 0 1-.7.7H.7a.7.7 0 0 1-.7-.7V.7A.7.7 0 0 1 .7 0z" fill="#F28686"/>
+            <rect fill="#FFF" transform="matrix(1 0 0 -1 0 6.7)" x="1.138" y="2.85" width="6" height="1" rx=".5"/>
+        </g>
+    </g>
+</svg>

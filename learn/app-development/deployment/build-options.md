@@ -1,6 +1,6 @@
 ---
 title: "Build Options for App Deployment"
-id: ""
+id: "build-options"
 sidebar_label: "Build Options"
 ---
 ---

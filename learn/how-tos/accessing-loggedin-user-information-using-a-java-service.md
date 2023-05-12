@@ -1,6 +1,6 @@
 ---
 title: "Accessing Logged-in User Details using Java Service"
-id: ""
+id: "accessing-loggedin-user-information-using-a-java-service"
 ---
 ---
 

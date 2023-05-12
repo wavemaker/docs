@@ -1,6 +1,6 @@
 ---
 title: "Export React Native Project as Zip"
-id: ""
+id: "export-react-native-zip"
 sidebar_label: "Export as Zip"
 ---
 ---
@@ -20,7 +20,7 @@ A ReactNative zip is used to create a platform-specific installer. WaveMaker sup
 | Configuration Name | Description |
 |---|---|
 |Application Name | The name of the application |
-|Server Path | The backend server URL. *Dev* is used to prepopulate the application preview URL. <br><br> *Custom* is used to add the URL of the application which is hosted somewhere else |
+|Server Path | The backend server URL. *Dev* is used to prepopulate the application preview URL. <br/><br/> *Custom* is used to add the URL of the application which is hosted somewhere else |
 |Config Profile | The build profile to use |
 
 3. Make necessary changes to the configurations and click on the **Build** button. This action starts a job, as shown below.

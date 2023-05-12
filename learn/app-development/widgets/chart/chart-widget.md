@@ -1,6 +1,6 @@
 ---
 title: "Chart Widgets"
-id: ""
+id: "chart-widget"
 ---
 ---
 
@@ -16,31 +16,31 @@ This documentation page and charts may take a few seconds longer to load. Wait f
 
 ### 1. Line Chart
 
-<iframe width="100%" height="375" style="background-color: snow;" id="line" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Charts">Line Chart</iframe>
+<iframe width="100%" height="375" style={{backgroundColor: "snow"}} id="line" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Charts">Line Chart</iframe>
 
 ### 2. Area Chart
 
-<iframe width="100%" height="375" style="background-color: snow;" id="area" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/AreaChart">Area Chart</iframe>
+<iframe width="100%" height="375" style={{backgroundColor: "snow"}} id="area" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/AreaChart">Area Chart</iframe>
 
 ### 3. Column Chart
 
-<iframe width="100%" height="375" style="background-color: snow;" id="column" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ChartsColBar">Column Chart</iframe>
+<iframe width="100%" height="375" style={{backgroundColor: "snow"}} id="column" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ChartsColBar">Column Chart</iframe>
 
 ### 4. Bar Chart
 
-<iframe width="100%" height="375" style="background-color: snow;" id="bar" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/BarChart">Bar Chart</iframe>
+<iframe width="100%" height="375" style={{backgroundColor: "snow"}} id="bar" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/BarChart">Bar Chart</iframe>
 
 ### 5. Pie Chart
 
-<iframe width="100%" height="375" style="background-color: snow;" id="pie" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PieChart">Pie Chart</iframe>
+<iframe width="100%" height="375" style={{backgroundColor: "snow"}} id="pie" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PieChart">Pie Chart</iframe>
 
 ### 6. Donut Chart
 
-<iframe width="100%" height="325" style="background-color: snow;" id="donut" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/DonutChart">Donut Chart</iframe>
+<iframe width="100%" height="325" style={{backgroundColor: "snow"}} id="donut" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/DonutChart">Donut Chart</iframe>
 
 ### 7. Bubble Chart
 
-<iframe width="100%" height="575" style="background-color: snow;" id="bubble" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/BubbleChart">Bubble Chart</iframe>
+<iframe width="100%" height="575" style={{backgroundColor: "snow"}} id="bubble" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/BubbleChart">Bubble Chart</iframe>
 
 
 ## Chart Comparison
@@ -107,7 +107,7 @@ In the case, when the data source is from Web Services or Web Socket, you can ch
 
 These options are available from the Advanced Settings of the chart. Apart from these properties, a **Title**, **Sub Heading**, and **Icon** can be assigned for the chart as a whole to be displayed on the top left corner of the Chart. 
 
-<iframe width="100%" height="1150" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ChartsThemes">Chart Themes</iframe>
+<iframe width="100%" height="1150" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/ChartsThemes">Chart Themes</iframe>
 
 ## Data Representation
 

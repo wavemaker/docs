@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Form"
-id: ""
+id: "how-tos-form"
 ---
 
 Using Form to trigger an Insert QueryWe will be seeing how to use a Form to insert values into a Employee table of hrdb database using Insert Query:
@@ -16,7 +16,6 @@ VALUES (:firstname, :lastname, :street, :city, :state, :zip, :birthdate, :picurl
 2. Provide test values and run and save the query (as InsertEmp).
 3. Create a variable by dragging and dropping Form widget and using Create new functionality or by using this query operation from variable dialog. 
 
-[![form_query_var](/learn/assets/form_query_var.png)](/learn/assets/form_query_var.png)
 
 4. Select Layout and Configure Fields changing the display name and widget type if needed. Note that if the Service Variable undelying the Form, has to have some input fields the same should be done using the Data tab of the Service Variable.
 5. Your page will look like this in design mode 
@@ -38,7 +37,6 @@ SELECT * FROM EMPLOYEE WHERE CITY = :city
 2. Provide test values and run and save the query (as EmpByCity).
 3. Create a variable using this query operation from variable dialog or dragging and dropping Form widget and using Create new functionality. 
 
-[![form_filter_var](/learn/assets/form_filter_var.png)](/learn/assets/form_filter_var.png)
 
 4. Select Layout and Configure Fields changing the display name and widget type if needed.
 5. Drag and drop a Data Table onto the canvas and bind it to the Service Variable created when configuring Form. Your page will look like this in design mode Note: We have changed the name of the SAVE button to FILTER 

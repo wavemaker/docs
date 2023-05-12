@@ -1,6 +1,6 @@
 ---
 title: "OAuth Prefabs"
-id: ""
+id: "oauth-prefabs"
 ---
 
 ## Introduction

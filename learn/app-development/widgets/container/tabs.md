@@ -1,6 +1,6 @@
 ---
 title: "Tabs"
-id: ""
+id: "tabs"
 ---
 ---
 
@@ -130,14 +130,14 @@ Page.Widgets.EmployeesTab.goToTab(2); //Navigates to sales tab
 | **Property** | **Description** |
 | --- | --- |
 | Name | The name is a unique identifier of the Tab. |
-| Type | This property specifies the type of Tabs widget. <br><br> - ***Static***: The Tab Panes will be static, which is the default behavior of Tabs. <br> - ***Dynamic***: The Tab Panes will be generated based on the Dataset bound to the widget. |
-| Add Tab Pane | This action allows one to add multiple panes to the Tab. <br><br> **NOTE**: This property applies when you set the **Type** propety to `Static`.|
+| Type | This property specifies the type of Tabs widget.    - ***Static***: The Tab Panes will be static, which is the default behavior of Tabs.   - ***Dynamic***: The Tab Panes will be generated based on the Dataset bound to the widget. |
+| Add Tab Pane | This action allows one to add multiple panes to the Tab.    **NOTE**: This property applies when you set the **Type** propety to `Static`.|
 | **Layout** |
 | Height | The height of the Tab can be specified in px or % (i.e 50px, 75%). |
-| Tab Position | This property determines if the Tabs should be displayed on the <br> - _left_, <br> - _top (default)_, <br> - _right_ or <br> - _bottom_ of the Tab content. |
+| Tab Position | This property determines if the Tabs should be displayed on the   - _left_,   - _top (default)_,   - _right_ or   - _bottom_ of the Tab content. |
 | **Behavior** |
 | Default Pane Index | This property sets the default active pane on a load of the widget based on the provided index. The Tab Index is an integer starting from 0, 1, 2, and so on. That is, setting this property to 0 will display the first Tab pane; setting to 1 will display the second Tab pane. |
-| Retain State  | This property will allow users to maintain widget states using state handling on the URL, Local Storage or Session Storage. <br> This property, that is enabled by default enables applications that are using Tabs to deep link specific tabs using URL rewriting approach. If state information being visible in URL is not desired, other approaches to linking to specific tab includes localStorage & sessionStorage. <br> - _URL_ : The state information will be stored in the app URL(This is the default option selected by the platform). <br> - _Local Storage_ : The widget state information will be stored in the browser local storage. <br> - _Session Storage_ : The state information will be stored in the browser session storage. <br> - _None_ : No state information will be applied to the widget.|
+| Retain State  | This property will allow users to maintain widget states using state handling on the URL, Local Storage or Session Storage.   This property, that is enabled by default enables applications that are using Tabs to deep link specific tabs using URL rewriting approach. If state information being visible in URL is not desired, other approaches to linking to specific tab includes localStorage & sessionStorage.   - _URL_ : The state information will be stored in the app URL(This is the default option selected by the platform).   - _Local Storage_ : The widget state information will be stored in the browser local storage.   - _Session Storage_ : The state information will be stored in the browser session storage.   - _None_ : No state information will be applied to the widget.|
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When the show property is not bound, the widget will be initialized immediately. |
 | Transition | This property defines the transition effect to be applied when switching Tabs. You can choose from _none_ or _slide_. When the transition property is `slide`, the selected Tab will be animated into the viewport. `Swipe events` will work only when the transition value is `slide`. |
@@ -154,9 +154,9 @@ SubWidget of Tabs, to hold the Tab content.
 | Title | This property defines the heading or title for the Tab panes. |
 | Name | The name is a unique identifier of the Tab pane. |
 | Badge Value | Value to be displayed in the badge span for the Tab pane |
-| Badge Type | The property controls the color of the badge. These values are: <br> - default, <br> - primary, <br> - success, <br> - info, <br> - warning, or <br> - danger  |
+| Badge Type | The property controls the color of the badge. These values are:   - default,   - primary,   - success,   - info,   - warning, or   - danger  |
 | **Accessibility** |
-| Tab Index | The Tab Index attribute specifies the Tab order of an element. You can use this property to change the default tabbing order for widget access using the Tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br> <br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab Index | The Tab Index attribute specifies the Tab order of an element. You can use this property to change the default tabbing order for widget access using the Tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.     **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Content** |
 | Content | Inline content or Partial page's content to be included in the widget. |
 | **Behavior** |

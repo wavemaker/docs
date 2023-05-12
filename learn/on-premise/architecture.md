@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Architecture"
-id: ""
+id: "architecture"
 sidebar_label: "Architecture"
 ---
 ---
@@ -15,7 +15,7 @@ WaveMaker On-Premise Platform consists of multiple internal services to run Wave
 
 ![platform architecture](/learn/assets/wme-setup/platform-architecture.png)
 
-<br>
+ 
 
 Platform Containers work to make calls to the Docker engine to perform operations like starting a new user container, starting or stopping a container, and more.
 

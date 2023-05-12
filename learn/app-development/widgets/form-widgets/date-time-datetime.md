@@ -33,7 +33,7 @@ _Datetime Patterns_: [![](/learn/assets/datetime_patterns.png)](/learn/assets/da
 | Placeholder | A placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user. |
 | **Accessibility** |
 | Hint | Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br>**NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.   **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (*[See below for details](#shortcut)) |
 | **Layout** |
 | Width | The width of your widget can be specified in _px_ or _% (_i.e _50px, 75%)._ |
@@ -50,7 +50,7 @@ _Datetime Patterns_: [![](/learn/assets/datetime_patterns.png)](/learn/assets/da
 | Exclude Days | Select days which are to be excluded from the selection from the date picker. |
 | Exclude Dates | Accepts string and a variable containing dates which will be excluded from the selection from the date picker. |
 | **Behavior** |
-| Show DatePicker on | Using this property you can control the visibility of the Date Picker. You can choose to open it on: <br><br> - input click and button click (default setting), or <br> - only on button click. |
+| Show DatePicker on | Using this property you can control the visibility of the Date Picker. You can choose to open it on:    - input click and button click (default setting), or   - only on button click. |
 | Show Week Number | When set, week number will be displayed in the date picker UI. |
 | Auto Focus | This property makes the element get focused automatically when the page loads. |
 | Read Only | Selecting this checkbox property prevents the user from being able to change the data value of a widget. |
@@ -66,7 +66,7 @@ _Datetime Patterns_: [![](/learn/assets/datetime_patterns.png)](/learn/assets/da
 | Placeholder | A placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user. |
 | **Accessibility** |
 | Hint | Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (*[See below for details](#shortcut)) |
 | **Layout** |
 | Width | The width of your widget can be specified in _px_ or _% (_i.e _50px, 75%)._ |
@@ -85,7 +85,7 @@ _Datetime Patterns_: [![](/learn/assets/datetime_patterns.png)](/learn/assets/da
 | Exclude Days | Select days which are to be excluded from the selection from the date picker. |
 | Exclude Dates | Accepts string and a variable containing dates which will be excluded from the selection from the date picker. |
 | **Behavior** |
-| Show DateTimePicker on | Using this property you can control the visibility of the DateTime picker. You can choose to open it on: <br><br> - input click and button click (default setting), or <br> - only on button click.  |
+| Show DateTimePicker on | Using this property you can control the visibility of the DateTime picker. You can choose to open it on:    - input click and button click (default setting), or   - only on button click.  |
 | Show Week Number | When set, week number will be displayed in the date picker UI. |
 | Auto Focus | This property makes the element get focused automatically when the page loads. |
 | Read Only | Selecting this checkbox property prevents the user from being able to change the data value of a widget. |
@@ -101,7 +101,7 @@ _Datetime Patterns_: [![](/learn/assets/datetime_patterns.png)](/learn/assets/da
 | Placeholder | A placeholder is text to show in the editor when there is no value. A common use of this is a search box that says in faint gray italicized text "Search..." which disappears as soon as the user starts to edit the text box. This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user. |
 | **Accessibility** |
 | Hint | Any text or an HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | Shortcut key | The shortcut key property specifies a shortcut key to activate/focus an element. (*[See below for details](#shortcut)) |
 | **Default Value** |
 | Value | This is the default value to display value for an editor widget, it can be set to current date. Note that the display value is just what the user sees initially, and is not always the dataValue returned by the widget. |
@@ -114,7 +114,7 @@ _Datetime Patterns_: [![](/learn/assets/datetime_patterns.png)](/learn/assets/da
 | **Validation** |
 | Required | A required editor in wm.LiveForm may refuse to save without a required field. |
 | **Behavior** |
-| Show TimePicker on | Using this property you can control the visibility of the Time picker. You can choose to open it on: <br> <br> - input click and button click (default setting), or <br> - only on button click. |
+| Show TimePicker on | Using this property you can control the visibility of the Time picker. You can choose to open it on:     - input click and button click (default setting), or   - only on button click. |
 | Auto Focus | This property makes the element get focused automatically when the page loads. |
 | Read Only | Selecting this checkbox property prevents the user from being able to change the data value of a widget. |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |

@@ -1,6 +1,6 @@
 ---
 title: "Customizing Theme"
-id: ""
+id: "customizing-theme"
 ---
 ---
 

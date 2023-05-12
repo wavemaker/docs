@@ -1,6 +1,6 @@
 ---
 title: "Data Table Column bound to Query"
-id: ""
+id: "data-table-column-bound-query"
 ---
 
 # Scenario

@@ -1,6 +1,6 @@
 ---
 title: "Configuring for Google Cloud Deployment"
-id: ""
+id: "deployment-google-cloud"
 sidebar_label: "Google Cloud"
 ---
 ---

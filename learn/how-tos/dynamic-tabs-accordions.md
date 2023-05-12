@@ -1,6 +1,6 @@
 ---
 title: "Using Dynamic Tabs and Accordions"
-id: ""
+id: "dynamic-tabs-accordions"
 sidebar_label: "Dynamic Tabs and Accordions"
 ---
 ---

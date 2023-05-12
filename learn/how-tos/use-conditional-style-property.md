@@ -1,6 +1,6 @@
 ---
 title: "How to use Conditional Style Property"
-id: ""
+id: "use-conditional-style-property"
 ---
 ---
 The conditional style settings allow you to bind expressions to the style property. The conditional property applies to the widgets specified below, and it is similar to the Conditional Class property.

@@ -1,6 +1,6 @@
 ---
 title: "Artifacts Repository"
-id: ""
+id: "artifacts-repository"
 ---
 ---
 

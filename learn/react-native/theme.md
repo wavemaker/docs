@@ -1,6 +1,6 @@
 ---
 title: "Working with Themes for WaveMaker React Native apps."
-id: ""
+id: "theme"
 sidebar_label: "Theme"
 ---
 ---

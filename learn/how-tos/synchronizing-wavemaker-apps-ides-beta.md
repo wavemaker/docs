@@ -1,6 +1,6 @@
 ---
 title: "Synchronizing WaveMaker Apps with IDEs"
-id: ""
+id: "synchronizing-wavemaker-apps-ides-beta"
 ---
 ---
 

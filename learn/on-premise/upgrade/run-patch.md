@@ -1,6 +1,6 @@
 ---
 title: "WME Run Patch"
-id: ""
+id: "run-patch"
 sidebar_label: "Run Patch"
 ---
 ---
@@ -68,10 +68,19 @@ sidebar_label: "Run Patch"
 - If the Instance status UPGRADE_FAILED, then there might be chances of docker version mismatch. You can upgrade docker version using [Manual Docker Upgrade](/learn/on-premise/upgrade/docker-upgrade).
 - Please upgrade the Docker version if it is older than 20.10.12 in your User WorkspaceInstance/AppDeployment Instances.
 
+## Running the patch by skipping Gitlab Migration
+
+- Whenever user using their own VCS and do not want to Upgrade the WME Gitlab, user can skip this step.
+- To Upgrade the WME setup by skipping the Gitlab Migration , please use the below command.
+
+```bash
+    bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --skip_gitlab
+```    
+
 ## Running the UI Patch
 
-- To run the UI upgrade in the WME setup , please use the below command.
+- To run the UI upgrade in the WME setup, please use the below command.
 
 ```bash
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --upgrade-studioui
-```
+``` 

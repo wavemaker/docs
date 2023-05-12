@@ -1,6 +1,6 @@
 ---
 title: "Prefabs with Partials"
-id: ""
+id: "prefab-with-partials"
 sidebar_label: "Prefab with Partials"
 ---
 ---

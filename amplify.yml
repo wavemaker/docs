@@ -5,6 +5,7 @@ frontend:
       commands:
         - cd website
         - npm install
+        - bash addSearch.sh
    build:
      commands:
         - npm run build
@@ -27,7 +28,7 @@ frontend:
 test:
   artifacts:
     baseDirectory: /website/cypress
-    configFilePath: "**/mochawesome.json"
+    configFilePath: "/report/mochawesome.json"
     files:
       - "**/*.png"
       - "**/*.mp4"

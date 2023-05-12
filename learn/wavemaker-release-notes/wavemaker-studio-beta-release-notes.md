@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Studio BETA Release Notes"
-id: ""
+id: "wavemaker-studio-beta-release-notes"
 ---
 
 ## Studio 7.0 BETA-6 Release Released Date: 06 September 2014Build Number: 7.0.0-BETA-6-341

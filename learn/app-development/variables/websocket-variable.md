@@ -1,6 +1,6 @@
 ---
 title: "WebSocket Variable"
-id: ""
+id: "websocket-variable"
 ---
 ---
 
@@ -45,9 +45,9 @@ WebSocket Variables are special variables that interact with the imported Web S
 | **Service** |
 | Service | The WebSocket service targeted for the Variable. |
 | **Behavior** |
-| Connect on page load | If set to true, the variable will open the connection between the client and target WebSocket service on: <br> - page load, for a page variable <br> - app load, for an app variable. |
+| Connect on page load | If set to true, the variable will open the connection between the client and target WebSocket service on:   - page load, for a page variable   - app load, for an app variable. |
 | **Dataset** |
-| On New Data | A client once connected to a WebSocket service, can receive messages at any point in time and can receive many messages sequentially. This property determines what to do with data received from the variable. <br> - **Refresh dataSet**: dataSet will be updated with the data received. <br> - **Add as last record**: data will be appended at the end of dataSet. The latest data will be the last record in dataSet. <br> - **Add as first record**: data will be prepended at the beginning of dataSet. The latest data will be the first record in dataSet. <br> In the latter two cases, dataSet will always be a list of messages. |
+| On New Data | A client once connected to a WebSocket service, can receive messages at any point in time and can receive many messages sequentially. This property determines what to do with data received from the variable.   - **Refresh dataSet**: dataSet will be updated with the data received.   - **Add as last record**: data will be appended at the end of dataSet. The latest data will be the last record in dataSet.   - **Add as first record**: data will be prepended at the beginning of dataSet. The latest data will be the first record in dataSet.   In the latter two cases, dataSet will always be a list of messages. |
 | Data Limit | Maximum number of messages that dataSet will hold. This is applicable only if “On New Data” property is set to other than “Refresh”. E.g. if set to 10, dataSet will hold a maximum of 10 message received from the server. When a new message is received, the first message is removed from the dataSet and the new one is appended to the end. Set it to 0 if no such upper limit is required. |
 
 ## Events

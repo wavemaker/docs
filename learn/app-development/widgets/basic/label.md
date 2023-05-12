@@ -1,6 +1,6 @@
 ---
 title: "Label"
-id: ""
+id: "label"
 ---
 
 The **label** represents a caption in a user interface. The label displays text on the page. Common use cases include
@@ -18,11 +18,11 @@ The following features for Label can be set in the **Class** property from the *
 
 ### Label Types
 
-<iframe width="100%" height="400" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LabelStyles">Label Types</iframe>
+<iframe width="100%" height="400" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/LabelStyles">Label Types</iframe>
 
 ### Label Styles
 
-<iframe width="100%" height="700" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Labels">LabelStyles</iframe>
+<iframe width="100%" height="700" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Labels">LabelStyles</iframe>
 
 # Properties
 

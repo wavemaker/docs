@@ -1,6 +1,6 @@
 ---
 title: "How to Create Partials in a Prefab"
-id: ""
+id: "create-prefab-with-partials"
 sidebar_label: "Creating Partials in a Prefab"
 ---
 ---

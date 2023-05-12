@@ -1,6 +1,6 @@
 ---
 title: "Metrics Collection"
-id: ""
+id: "overview"
 sidebar_label: "Overview"
 ---
 ---

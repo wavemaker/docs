@@ -1,6 +1,6 @@
 ---
 title: "Events"
-id: ""
+id: "events"
 ---
 Introducing Variable Events. Learn how it works in WaveMaker.
 
@@ -33,7 +33,7 @@ The onBeforeUpdate event in the above diagram differs based upon the type of var
 | Events | Description |
 | --- | --- |
 | **onCanUpdate** | This event is called as soon as the variable is ready to be triggered to hit the target service. |
-| **onBeforeListRecords** (for READ operation of Database CRUD variable) | This event is called just before the variable is triggered to hit the target service. “dataFilter” contains an object based on the filter criteria set (that appear under the “Filter Criteria” tab of Variable definition dialog). Each criteria contains the following information - Field Name, Condition, and Value. You can retrieve the criteria using the following method: dataFilter.getCriteria(“field-name”) and make any changes. Allowed actions on the criteria are:<br> - Retrieve/Validate data of a particular field. <br> - Change the value of a particular field.  |
+| **onBeforeListRecords** (for READ operation of Database CRUD variable) | This event is called just before the variable is triggered to hit the target service. “dataFilter” contains an object based on the filter criteria set (that appear under the “Filter Criteria” tab of Variable definition dialog). Each criteria contains the following information - Field Name, Condition, and Value. You can retrieve the criteria using the following method: dataFilter.getCriteria(“field-name”) and make any changes. Allowed actions on the criteria are:  - Retrieve/Validate data of a particular field.   - Change the value of a particular field.  |
 
 ### Example 1: Filter 
 Change filter criteria as per your use case.
@@ -68,7 +68,7 @@ Page.HrdbEmployeeDataonBeforeListRecords = function(variable, dataFilter, option
 | Events | Description |
 | --- | --- |
 | For Database CRUD Variables  |
-|**onBeforeUpdateRecord** (for Update operation) <br> **onBeforeInsertRecord** (for Insert operation) <br> **onBeforeDeleteRecord** (for Delete operation) | These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place. |
+|**onBeforeUpdateRecord** (for Update operation)   **onBeforeInsertRecord** (for Insert operation)   **onBeforeDeleteRecord** (for Delete operation) | These events are called just before the variable is triggered to hit the target service. “inputData” contains an object having key-value pairs of input fields (that appear under the “Data” tab of Variable definition dialog). The call to the target service from the variable can be prevented by assigning a JavaScript function to this event and returning false from this function. If input data needs modification or validation, it should be done at this place. |
 
 ### Example 1
 Input data can be modified by simply modifying the “inputData” parameter passed to the function. Please note, calling setInput on the Variable from this event is not valid. “inputData” param should directly be modified.

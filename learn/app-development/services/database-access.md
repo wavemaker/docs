@@ -1,6 +1,6 @@
 ---
 title: "Database Access"
-id: ""
+id: "database-access"
 sidebar_label: "Accessing Database"
 ---
 ---

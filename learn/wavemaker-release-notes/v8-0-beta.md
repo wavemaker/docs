@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker 8.0.Beta - Release date: 23 September 2015"
-id: ""
+id: "v8-0-beta"
 sidebar_label: "Release v8.0.beta"
 ---
 *Here is a summary of key features, known issues and bug fixes offered in Studio 8.0.Beta Release.*

@@ -1,6 +1,6 @@
 ---
 title: "Using Wizard for Master-Detail Live Form"
-id: ""
+id: "using-wizard-master-detail-live-form"
 ---
 
 We will be adding master/detail records using Live Forms in a Wizard.

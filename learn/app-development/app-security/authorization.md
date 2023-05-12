@@ -1,6 +1,6 @@
 ---
 title: "Authorization"
-id: ""
+id: "authorization"
 ---
 ---
 

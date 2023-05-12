@@ -1,6 +1,6 @@
 ---
 title: Manage Subscription
-id: ""
+id: "manage-subscription"
 ---
 ---
 

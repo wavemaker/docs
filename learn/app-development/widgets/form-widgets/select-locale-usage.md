@@ -1,6 +1,6 @@
 ---
 title: "Localization Using Select Locale"
-id: ""
+id: "select-locale-usage"
 ---
 ---
 

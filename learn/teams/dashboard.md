@@ -1,6 +1,6 @@
 ---
 title: Dashboard
-id: ""
+id: "dashboard"
 ---
 ---
 

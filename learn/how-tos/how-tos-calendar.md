@@ -1,6 +1,6 @@
 ---
 title: "How Tos: Calendar"
-id: ""
+id: "how-tos-calendar"
 ---
 ---
 
@@ -8,22 +8,19 @@ id: ""
 
 You can use Calendar widget to create an event when user clicks on a date. We will be using a Database table to store the created event. We will be using a Design Dialog to capture the event details. We are using a database table with the following structure: 
 
-[![event_schema](/learn/assets/event_schema.png)](/learn/assets/event_schema.png) 
 
 and the Live Variable created for this table: 
 
-[![event_livevar](/learn/assets/event_livevar.png)](/learn/assets/event_livevar.png)
 
 1. Create or open a web responsive app
 2. Add a page for the Calendar event, we have used a blank template and layout for the page
 3. Drag and drop a Calendar widget onto the page
-4. Bind the Dataset Value property to the Live Variable and set the Events Data to the corresponding fields of the Live Variable (event_var) [![event_cal_bind](/learn/assets/event_cal_bind.png)](/learn/assets/event_cal_bind.png)
+4. Bind the Dataset Value property to the Live Variable and set the Events Data to the corresponding fields of the Live Variable (event_var) 
 5. Drag and drop a Design Dialog on the same page. Note: Design Dialog will be placed in a page view and you can switch between the page and page view using the tab at the bottom of the page.
-6. We will be using the Design Dialog to capture the Title, Description and All Day Event data for the event being created. Add two text widgets and a radio button to the dialog. [![event_dialog](/learn/assets/event_dialog.png)](/learn/assets/event_dialog.png)
-7. The Save of Design Dialog should update the database with the event details. For this we will be using a Service Variable triggering the createEvents operation. [![event_create](/learn/assets/event_create.png)](/learn/assets/event_create.png) The data for create event will be taken from the Calendar and Design Dialog [![event_create_bind](/learn/assets/event_create_bind.png)](/learn/assets/event_create_bind.png) The On Success event of this service variable should close the design dialog and refresh the Calendar which is achieved by calling the Live Variable bound to the Calendar. [![event_create_event](/learn/assets/event_create_event.png)](/learn/assets/event_create_event.png)
-8. Selecting a date should display the dialog created above. Switch to Page view (from the bottom of the canvas) and select the Event tab from the Calendar Properties panel. For On select event, choose dialog1.open method. [![event_cal_event](/learn/assets/event_cal_event.png)](/learn/assets/event_cal_event.png)
-9. Run the app, [![event_run1](/learn/assets/event_run1.png)](/learn/assets/event_run1.png) click on any date (or multiple dates if Multiselect was checked in the Calendar properties) and the dialog will pop, [![event_run2](/learn/assets/event_run2.png)](/learn/assets/event_run2.png) enter the details and click on save. You will see the new entry in you calendar. [![event_run3](/learn/assets/event_run3.png)](/learn/assets/event_run3.png)
-
+6. We will be using the Design Dialog to capture the Title, Description and All Day Event data for the event being created. Add two text widgets and a radio button to the dialog. 
+7. The Save of Design Dialog should update the database with the event details. For this we will be using a Service Variable triggering the createEvents operation.  The data for create event will be taken from the Calendar and Design Dialog  The On Success event of this service variable should close the design dialog and refresh the Calendar which is achieved by calling the Live Variable bound to the Calendar. 
+8. Selecting a date should display the dialog created above. Switch to Page view (from the bottom of the canvas) and select the Event tab from the Calendar Properties panel. For On select event, choose dialog1.open method. 
+9. Run the app, click on any date (or multiple dates if Multiselect was checked in the Calendar properties) and the dialog will pop, enter the details and click on save. You will see the new entry in you calendar. 
 ## Script Access
 
 To set the properties of the calendar widget through script, access the properties on the calendar as (consider the calendar with name ‘wmcalendar’) $scope.Widgets.wmcalendar.propertyname and change or assign the values accordingly. For example:

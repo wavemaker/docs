@@ -1,6 +1,6 @@
 ---
 title: "Combining Columns in Data Table"
-id: ""
+id: "combining-columns-data-table"
 ---
 ---
 

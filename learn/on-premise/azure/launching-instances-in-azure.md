@@ -1,6 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup on Azure "
-id: ""
+id: "launching-instances-in-azure"
 sidebar_label: "Prepare Infrastructure"
 ---
 ---

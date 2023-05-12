@@ -1,6 +1,6 @@
 ---
 title: "WebSocket Usage - Heartrate Monitor"
-id: ""
+id: "websocket-usage-heartrate-monitor"
 ---
 
 ##### 8.4 Release
@@ -18,7 +18,7 @@ Heartrate Monitor App utilizes a WebSocket service that returns a patient’s h
 - Provide the **service URL** (Use the wss:// url eg. here we are using `wss://websocket-demos.wavemakeronline.com:443/websocket/heartrate`)
 - Enter message body (if it requires),
 - Click **Test**.
-- Once connection is established successfully with the service, client will start receiving messages from the service and display it under the **MESSAGES** section. [![wshr_import](/learn/assets/wshr_import.png)](/learn/assets/wshr_import.png)
+- Once connection is established successfully with the service, client will start receiving messages from the service and display it under the **MESSAGES** section. 
 - Select one of the response messages by clicking on radio button on the left. This will help the platform to generate metadata info against the service. This metadata will be helpful while binding the corresponding WebSocket Variable with widgets. [![wshr_response](/learn/assets/wshr_response.png)](/learn/assets/wshr_response.png)
 - If the server does not respond with any message or the message you are expecting at run time is different, you can provide the same manually in the editor under the SAMPLE RESPONSE section. Please note providing Sample Response is useful only if the target WebSocket service returns homogenous data. If the data is heterogeneous, selecting a sample response is not going to be much of a use as you will end up writing JavaScript code to deal with different data structures returned by the service.
 

@@ -1,11 +1,11 @@
 ---
 title: "Currency"
-id: ""
+id: "currency"
 ---
 
 **Currency **widget is a special text widget to input the currency type data. This widget will change the display format based on the currency type.
 
-<iframe width="100%" height="250" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Currency">Currency</iframe>
+<iframe width="100%" height="250" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Currency">Currency</iframe>
 
 # Properties
 

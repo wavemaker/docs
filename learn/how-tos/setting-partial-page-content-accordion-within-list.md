@@ -1,6 +1,6 @@
 ---
 title: "Setting partial page content for Accordion within a List"
-id: ""
+id: "setting-partial-page-content-accordion-within-list"
 ---
 
 We will see how the content of an Accordion can be set to a Partial Page. We will be embedding the Accordion within a List.

@@ -1,11 +1,11 @@
 ---
 title: "Teams Overview"
-id: ""
+id: "overview"
 sidebar_label: "Overview"
 ---
 ---
 
-**Teams** is a collaborative development environment on [WaveMakerOnline](https://www.wavemakeronline.com/). <br>
+**Teams** is a collaborative development environment on [WaveMakerOnline](https://www.wavemakeronline.com/).  
 **Team Portal** is an admin console where you can manage projects, add or remove team members, manage roles, grant permissions, manage code repositories, and more. With Teams, you can choose to administer the organization data either by a single person, or have it managed by multiple administrators. To learn more about the subscription plans, see the [pricing table](https://www.wavemaker.com/pricing/ "WaveMaker Teams Pricing").
 
 With Teams, you can do the following.

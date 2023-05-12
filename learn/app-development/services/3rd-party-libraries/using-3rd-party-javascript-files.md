@@ -1,6 +1,6 @@
 ---
 title: "Using 3rd party JavaScript files"
-id: ""
+id: "using-3rd-party-javascript-files"
 ---
 ---
 

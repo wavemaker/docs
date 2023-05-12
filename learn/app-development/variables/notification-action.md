@@ -1,6 +1,6 @@
 ---
 title: "Notification Action"
-id: ""
+id: "notification-action"
 ---
 ---
 
@@ -69,7 +69,7 @@ Click **Done** to complete the action creation process
 
 | Property | Description |
 | --- | --- |
-| Operation | The type of notification to be performed through the Action. Options are: <br> - _alert_ - a dialog with a message and button; <br> - _confirm_ - a dialog with a message and two buttons (for positive and negative confirmations); <br> - _toast_ - a toaster box with a message  <br> _Based upon the operation selected following properties are available_: |
+| Operation | The type of notification to be performed through the Action. Options are:   - _alert_ - a dialog with a message and button;   - _confirm_ - a dialog with a message and two buttons (for positive and negative confirmations);   - _toast_ - a toaster box with a message    _Based upon the operation selected following properties are available_: |
 | **Alert operation** |
 | Text | The text message to be shown in the dialog. It can be a static text or can be bound to a component for dynamic behavior. |
 | Title | Dialog’s header title |
@@ -81,7 +81,7 @@ Click **Done** to complete the action creation process
 | Ok button text | Text to be displayed on the OK button of the dialog. This button is to receive the positive response from the end user. E.g. “YES”, “YES, I AGREE”, “CONTINUE”, etc. |
 | Cancel button text | Text to be displayed on the CANCEL button of the dialog. This button is to receive the negative response from the end user. E.g. “NO”, “NO, I DON’T AGREE”, “GO BACK”, etc. |
 | **Toast operation** ||
-| Content | Type of content to be displayed in the toaster. It can be: <br> - inline – plain text can be provided or bound for dynamic text; <br> - page – a partial page can be loaded into the toaster area. This is for more customized display. <br> |
+| Content | Type of content to be displayed in the toaster. It can be:   - inline – plain text can be provided or bound for dynamic text;   - page – a partial page can be loaded into the toaster area. This is for more customized display.   |
 | Text | Available if “Content” property is selected as inline. Text to be displayed in the toaster |
 | Page | Available if “Content” property is selected as the page. Partial page to be loaded into the toaster area. |
 | Duration | The time period (in milliseconds) after which the toaster should fade away once it is shown. Select 0 if the toaster should stay. |

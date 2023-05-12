@@ -1,6 +1,6 @@
 ---
 title: "WebSocket Usage - Chatroom App"
-id: ""
+id: "websocket-usage-chatroom-app"
 ---
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "XSS Prevention"
-id: ""
+id: "xss-prevention"
 sidebar_label: "XSS Prevention"
 ---
 ---
@@ -71,9 +71,9 @@ Configure the **trustAs** flag from the **Value Expression** dailog of the Datat
 
 | Widget Properties | Widgets | 
 |---|---|
-|**Caption** of | Label <br> Anchor <br> Button Message <br> Checkbox <br> File upload <br> Spinner |
+|**Caption** of | Label   Anchor   Button Message   Checkbox   File upload   Spinner |
 | **Title** of | Form-field |
-|**Title** and **Sub Heading** of | Panel <br> Charts <br> Datatable <br> Form <br> Accordion-pane <br> List |
+|**Title** and **Sub Heading** of | Panel   Charts   Datatable   Form   Accordion-pane   List |
 | **Content** of | HTML |
 
 :::caution

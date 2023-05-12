@@ -1,6 +1,6 @@
 ---
 title: Team Setup
-id: ""
+id: "team-setup"
 ---
 ---
 

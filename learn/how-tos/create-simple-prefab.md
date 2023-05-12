@@ -1,6 +1,6 @@
 ---
 title: "Create a Simple Prefab"
-id: ""
+id: "create-simple-prefab"
 ---
 ---
 This post walks you through the creation and usage of a simple Prefab. We will be creating a Prefab which _compares two text strings_ and returns the result. For string comparison, we will be writing a _simple Java_ code.

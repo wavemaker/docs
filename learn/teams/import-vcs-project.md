@@ -1,6 +1,6 @@
 ---
 title: Import Project from Code Repository
-id: ""
+id: "import-vcs-project"
 sidebar_label: "Import VCS Project"
 ---
 ---

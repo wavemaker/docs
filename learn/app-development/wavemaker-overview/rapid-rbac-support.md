@@ -1,6 +1,6 @@
 ---
 title: "Rapid RBAC Support (Enterprise Version)"
-id: ""
+id: "rapid-rbac-support"
 ---
 
 ##### Enterprise Version post 10.0 release
@@ -83,7 +83,7 @@ By default, only Project Admin can create projects and members added will be ass
 1. Login to EDN.
 2. Select the Project tab.
 3. Search and open the Project for which the admin role has to be changed.
-4. EDN Admin can - Revoke Admin, Make Admin or delete the user. [![](/learn/assets/project_roles_revoke_lp.png)](/learn/assets/project_roles_revoke_lp.png)
+4. EDN Admin can - Revoke Admin, Make Admin or delete the user. 
 
 ---
 

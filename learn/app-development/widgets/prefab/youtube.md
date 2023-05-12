@@ -1,6 +1,6 @@
 ---
 title: "Youtube"
-id: ""
+id: "youtube"
 ---
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "How Tos: UI Layouts"
-id: ""
+id: "howtos-ui"
 ---
 ---
 ## Adding Pages
@@ -9,19 +9,15 @@ Most of the Projects need to have multiple pages and your Application needs to n
 
 - You can add more **Pages** by clicking on the **+** next to the _Main Page_ tab. 
 
-[![add_page](/learn/assets/add_page.png)](/learn/assets/add_page.png)
 
 - Give a name to the page and choose the type of the page. You can choose from page, partial, popover, header, topnav, leftnav, rightnav or footer. 
 
-![new_page_type](/learn/assets/new_page_type.png)
 
 - Choose the page template and the page layout you want to use. Depending upon the type of the page being added the options are presented. See here for more details on the [Page Layouts](/learn/app-development/ui-design/page-concepts/page-layouts) and [Page Templates](/learn/app-development/ui-design/page-concepts/page-templates). 
 
-![New_Page](/learn/assets/New_Page.png)
 
 - Once you have created the new page, an entry is created in the **Files** section of the **Files and Services** panel. 
 
-![New_Page1](/learn/assets/New_Page1.png)
 
 - You can work on the new page just as we worked on the Main Page - drag and drop widgets, arrange them.
 - You can delete a page by clicking on the delete icon on the far right hand side of the screen.
@@ -34,9 +30,8 @@ WaveMaker Studio allows you to create partial pages, akin to page fragments, to 
 - You can create a partial page by selecting the type as partial while creating a page
 - When creating content, partial pages are just like regular pages. You can drag and drop widgets and arrange them using layouts. Once the partial page is created, it will available in the _Content_ property of the supported widgets and layouts for you to embed. 
 
-![1652_EmbedPartialPage](/learn/assets/1652_EmbedPartialPage.png)
 
-- You can later edit the partial page just like a regular page by opening it from the **Files** section of the **Files and Services Panel**. Alternatively, you can also edit the partial page from any of the pages where it is embedded by clicking the **Edit** icon, as shown in the image below, on the section or container where the partial page is embedded. ![1652_EditPartialPage](/learn/assets/1652_EditPartialPage.png) 
+- You can later edit the partial page just like a regular page by opening it from the **Files** section of the **Files and Services Panel**. Alternatively, you can also edit the partial page from any of the pages where it is embedded by clicking the **Edit** icon, as shown in the image below, on the section or container where the partial page is embedded. !
 
 :::note
 Changes that you make to a partial page impact all the pages where it is embedded.

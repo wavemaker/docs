@@ -1,6 +1,6 @@
 ---
 title: "Upload File & Save in Database"
-id: ""
+id: "upload-file-save-database"
 ---
 
 We will be seeing how to upload a file and save the same in a Database:

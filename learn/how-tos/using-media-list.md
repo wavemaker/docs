@@ -1,6 +1,6 @@
 ---
 title: "Using Media List"
-id: ""
+id: "using-media-list"
 ---
 
 ### Overview

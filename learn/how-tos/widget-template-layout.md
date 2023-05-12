@@ -1,6 +1,6 @@
 ---
 title: "How to apply Smart Template and Layout for Widgets"
-id: ""
+id: "widget-template-layout"
 sidebar_label: "Choose Widget Template and Layout"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Building Project with Maven"
-id: ""
+id: "building-with-maven"
 ---
 ---
 This guide helps to create a war file for deploying the project in your local machine or a web server like Apache Tomcat. It also provides the required information to host static content and web applications separately.
@@ -64,8 +64,9 @@ mvn clean install -Pdeployment
 
 - WaveMaker app consists of frontend artifacts (HTML, CSS, JS, images, etc), and backend artifacts (Java Classes). It is recommended to host frontend artifacts in Static Content Server like Nginx, apache, etc, or Content Delivery Network (CDN), and backend artifacts can be hosted on any web server like Tomcat.
 - To generate two different artifacts from a WaveMaker application, use the below command. This command takes CDN_URL as input. Configure your CDN before executing this command. Please check our docs to configure CDN.
+- Both the WAR file and static content can be seperately deployed, but both must be deployed for the app to work. Just deploying the frontend artifacts on CDN is not enough.
 
-For more information, see [WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/app-integration-with-aws-cdn) to configure CDN in AWS, and for Azure, see [WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/app-integration-with-azure-cdn).
+For specific instructions on how to use different CDNs, see [WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/app-integration-with-aws-cdn) to configure CDN in AWS, and for Azure, see [WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/app-integration-with-azure-cdn).
 
 ```shell
 mvn clean install -P<profile-name> -Dcdn-url=<CDN_URL>

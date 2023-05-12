@@ -1,6 +1,6 @@
 ---
 title: "Alert Dialog"
-id: ""
+id: "alert-dialog"
 ---
 ---
 
@@ -49,7 +49,7 @@ For hiding dialog:
 | Ok Text | This widget gives a pop-up window. It can be used to give a warning message to the user. For example, you are about to leave this page. |
 | Alert Type | This property will help in identifying the type of alert in the alert box. Can be set to error (default), information, success, and warning. |
 | **Accessibility** |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br> **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.   **NOTE**: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |

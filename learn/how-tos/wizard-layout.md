@@ -1,6 +1,6 @@
 ---
 title: "How to Select Widget Template and Set Icon for Wizard Steps"
-id: ""
+id: "wizard-layout"
 sidebar_label: "Widget Template and Icons"
 ---
 ---

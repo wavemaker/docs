@@ -1,6 +1,6 @@
 ---
 title: "XSS antisamy policy configuration"
-id: ""
+id: "xss-antisamy-policy-configuration"
 ---
 ---
 
@@ -169,7 +169,7 @@ You can define parsing rules here that will be used for each tag individually. T
 
 ### Default
 
-Behavior when the tag is not listed in <tag-rules> 
+Behavior when the tag is not listed in &lt;tag-rules&gt; 
 
 **Input**:
 ```

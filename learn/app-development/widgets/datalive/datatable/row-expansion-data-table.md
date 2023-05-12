@@ -1,6 +1,6 @@
 ---
 title: "Row Expansion in Data Table"
-id: ""
+id: "row-expansion-data-table"
 sidebar_label: "Row Expansion" 
 ---
 ---

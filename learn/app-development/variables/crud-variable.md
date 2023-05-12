@@ -1,6 +1,6 @@
 ---
 title: "CRUD Variable for REST Services"
-id: ""
+id: "crud-variable"
 sidebar_label: "CRUD Variable"
 ---
 ---
@@ -98,7 +98,7 @@ You will be directed to the Variables page, with the new variable listed. You ca
 | **Behavior** ||
 | Update data on input change | If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable. |
 | Request data on page load | If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load. |
-| In Flight Behavior | This property determines the behavior when a call is fired through the variable with the previous call still pending. Variable queues all these calls, waits for the previous call completion and then based on the value of the `inFlightBehavior` property, decides what to do with all the queued calls:<br> <br>- doNotExecute - all the queued calls will be discarded, <br>- executeAll - all the calls will be triggered one by one, or <br>- executeLast - only the last call is triggered and the rest are discarded, this is the default behavior|
+| In Flight Behavior | This property determines the behavior when a call is fired through the variable with the previous call still pending. Variable queues all these calls, waits for the previous call completion and then based on the value of the `inFlightBehavior` property, decides what to do with all the queued calls:   - doNotExecute - all the queued calls will be discarded,  - executeAll - all the calls will be triggered one by one, or  - executeLast - only the last call is triggered and the rest are discarded, this is the default behavior|
 | **Spinner** |
 | Spinner Context | This property specifies on which UI widget the spinner should show. Leave empty if no spinner required. |
 | Spinner Message | The message to be displayed below the spinner. Leave empty if no message is required below the spinner. Note: If multiple variables are fired then the spinner messages will be displayed as a list below a single spinner. |

@@ -1,6 +1,6 @@
 ---
 title: "Central Authentication System"
-id: ""
+id: "central-authentication-system"
 ---
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Use Cases"
-id: ""
+id: "data-table-use-cases"
 sidebar_label: "Use Cases"
 ---
 ---

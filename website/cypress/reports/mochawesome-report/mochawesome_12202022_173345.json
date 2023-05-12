@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-20T12:03:11.782Z",
+    "end": "2022-12-20T12:03:45.490Z",
+    "duration": 33708,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5d994336-8e05-40fb-a357-41d91280c5ca",
+      "title": "",
+      "fullFile": "cypress/e2e/basic.cy.js",
+      "file": "cypress/e2e/basic.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59448e99-0b58-4c8f-81d9-e8aec3b62154",
+          "title": "Top Navigation in web & mobile",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifies top nav has 4 options in desktop browser",
+              "fullTitle": "Top Navigation in web & mobile Verifies top nav has 4 options in desktop browser",
+              "timedOut": null,
+              "duration": 6879,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".navbar__items > a\").should(\"have.attr\", \"href\").and(\"include\", \"/learn\").get(\".navbar__title\").contains(\"WaveMaker Docs\").end();\nvar navElements = [\"Guide\", \"Widgets\", \"How-to\", \"Blog\", \"Releases\"];\nnavElements.forEach(function (navItem) {\n  cy.get(selectors.desktopNavElements).contains(navItem).should(\"be.visible\");\n});\ncy.get(\".navbar__toggle\").should(\"not.be.visible\");",
+              "err": {},
+              "uuid": "2cc1b79d-6219-487d-a131-00aef7d21ab8",
+              "parentUUID": "59448e99-0b58-4c8f-81d9-e8aec3b62154",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifies that only Docs, Search is visible in the navbar in mobile",
+              "fullTitle": "Top Navigation in web & mobile Verifies that only Docs, Search is visible in the navbar in mobile",
+              "timedOut": null,
+              "duration": 2231,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(\"iphone-6\");\nvar hiddenNavElements = [\"Guide\", \"Widgets\", \"How-to\", \"Blog\", \"Releases\"];\nhiddenNavElements.forEach(function (navItem) {\n  cy.get(selectors.desktopNavElements).contains(navItem).should(\"not.be.visible\");\n});",
+              "err": {},
+              "uuid": "152dc1d9-32cb-40d1-81b9-e7f647c50400",
+              "parentUUID": "59448e99-0b58-4c8f-81d9-e8aec3b62154",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2cc1b79d-6219-487d-a131-00aef7d21ab8",
+            "152dc1d9-32cb-40d1-81b9-e7f647c50400"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9110,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3f571ea5-7129-4849-b68e-b82435f8592a",
+          "title": "Sign-in button take to right places",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifies navigation elements in desktop",
+              "fullTitle": "Sign-in button take to right places Verifies navigation elements in desktop",
+              "timedOut": null,
+              "duration": 24009,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.navbar__items > a:not(:first-child)').contains(\"Login\").should('have.attr', 'href').then(href => {\n  cy.origin(href, () => {\n    cy.visit('/', {\n      'failOnStatusCode': false\n    });\n    cy.get(\".signup-container\").contains(\"Login to\").end();\n  });\n});",
+              "err": {},
+              "uuid": "8d28c457-a0d3-4d3c-9a91-685198af32b1",
+              "parentUUID": "3f571ea5-7129-4849-b68e-b82435f8592a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8d28c457-a0d3-4d3c-9a91-685198af32b1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24009,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

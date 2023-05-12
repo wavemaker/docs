@@ -1,6 +1,6 @@
 ---
 title: "Working with Databases"
-id: ""
+id: "working-with-databases"
 ---
 ---
 
@@ -101,7 +101,7 @@ Once you have your app integrated with a database, schema information will be pe
 | **Re-Import Database** |Re-Import Database will rewrite the db in your workspace with the actual db thus reverting any changes. It deletes the draft and generates the data model with given database details. |
 |**Export Database**  |Export Database will update the db with the changes from your workspace ie the draft database. |
 |**Save Database**  |Save Database will save the db in your app workspace, this is the draft copy of the database solely available to your app. |
-|**Update Database**  | Update Database will update the db with the changes from your workspace and incorporate changes made by any other collaborator (provided they have exported the changes). <br> This option is available after you make changes to the database schema from the design tab of the database designer. |
+|**Update Database**  | Update Database will update the db with the changes from your workspace and incorporate changes made by any other collaborator (provided they have exported the changes). <br/> This option is available after you make changes to the database schema from the design tab of the database designer. |
 |**Revert Database**  | Revert Database will revert the db and delete the changes from your workspace. This option is available after you make changes to the database schema from the design tab of the database designer. |
 
 ## Increasing Database Transaction Timeout

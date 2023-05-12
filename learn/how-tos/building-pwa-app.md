@@ -110,7 +110,7 @@ You can set the app icon as a user-provided icon for PWA in WaveMaker. Please fi
     - 128x128
     - 96x96
     - 72x72
-3. Image file naming should be an icon-<size>.png. For example, `icon-384x384.png`.
+3. Image file naming should be an icon-&lt;size&gt;.png. For example, `icon-384x384.png`.
 
 [![](/learn/assets/pwa/pwaIconsFolder.png)](/learn/assets/pwa/pwaIconsFolder.png)
 

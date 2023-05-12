@@ -1,6 +1,6 @@
 ---
 title: "Create Prefab using Angular, React Components"
-id: ""
+id: "create-prefab-using-custom-element"
 ---
 ---
 
@@ -80,7 +80,7 @@ Once we have the [artefacts](/learn/assets/webcomponents/poster-widget-angular.z
 ```html
 <!-- PREFAB MARKUP -->
 <wm-prefab-container name="prefab_container1">
-    <div style="height:200px; width:200px">
+    <div style={{height:"200px", width:"200px"}}>
         <!-- 
         Initialize the webComponent with attributes either in the markup & in the script, 
         The OnPropertyChange can be used to bind the value to attributes
@@ -200,7 +200,7 @@ Once we have the [artefacts](/learn/assets/webcomponents/poster-widget-angular.z
 ```html
 <!-- PREFAB MARKUP -->
 <wm-prefab-container name="prefab_container1">
-    <div style="height:200px; width:200px">
+    <div style={{height:"200px", width:"200px"}}>
         <!-- 
         Initialize the webComponent with attributes either in the markup & in the script, 
         The OnPropertyChange can be used to bind the value to attributes

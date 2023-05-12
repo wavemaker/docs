@@ -24,7 +24,7 @@ You can easily change the layout of the options inside the CheckboxSet, so that 
 | --- | --- |
 | Name | The name is a unique identifier for the button. Special characters and spaces are not allowed in widget name. |
 | **Accessibility** |
-| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab Index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** |
 | Width | The width of your widget can be specified in _`em, pt, px`_ or _`% (_i.e _50px, 75%)`._ |
 | Height | The height of your widget can be specified in _`em, pt, px`_ or _`% (_i.e _50px, 75%)`._ |

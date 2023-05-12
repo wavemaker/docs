@@ -1,6 +1,6 @@
 ---
 title: "Carousel"
-id: ""
+id: "carousel"
 ---
 
 **Carousel** widget is a flexible, responsive way to add a slider to your site. In addition to being responsive, the content is flexible enough to allow images, iframes, videos, or just about any type of content that you might want.
@@ -26,8 +26,8 @@ WaveMaker provides you with two types of Carousel:
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
-| Enable Controls | This property allows you to enable the controls in the form of: <br> - navs - arrows on either side of the images, <br> - indicators - dots at the bottom of the images, <br> - both - default or <br> - none |
-| Animation | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. Can be set to: <br> <br> - auto <br> - default or <br> - none. <br>  |
+| Enable Controls | This property allows you to enable the controls in the form of:   - navs - arrows on either side of the images,   - indicators - dots at the bottom of the images,   - both - default or   - none |
+| Animation | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. Can be set to:     - auto   - default or   - none.    |
 | Animation Interval | This property defines the animation interval in seconds. |
 
 **Carousel Content** (only for Static Carousel) SubWidget of Carousel to hold a slide content. By default, Carousel comes with three carousel contents each with a picture widget. You can add more using the Add Carousel action button.

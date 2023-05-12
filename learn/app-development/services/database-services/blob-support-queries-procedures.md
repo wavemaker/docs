@@ -1,6 +1,6 @@
 ---
 title: "Blob Support for Queries and Procedures"
-id: ""
+id: "blob-support-queries-procedures"
 sidebar_label: "Blob Queries and Procedures"
 ---
 ---
@@ -72,5 +72,5 @@ You cannot save the query without Identifier.
 
 - Procedures returning more than one response field and simultaneously containing BLOB field are not supported. In other words, if Blob exists in response, then no other fields should be returned.
 - Blob response is supported only for OUT parameters. If Blob field exists in Cursor data, then it is ignored.
-- If procedure consists of BLOB field in OUT param, then the generated API will return _Downloadable_ response otherwise <procedureName>Response object.
+- If procedure consists of BLOB field in OUT param, then the generated API will return _Downloadable_ response otherwise &lt;procedureName&gt; Response object.
 

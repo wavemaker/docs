@@ -1,6 +1,6 @@
 ---
 title: "Configure Pipeline in WME"
-id: ""
+id: "configure-pipelines"
 ---
 ---
 

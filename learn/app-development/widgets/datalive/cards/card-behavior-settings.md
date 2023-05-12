@@ -1,6 +1,6 @@
 ---
 title: "Cards - Behavior Settings"
-id: ""
+id: "card-behavior-settings"
 sidebar_label: "Behavior Settings"
 ---
 ---

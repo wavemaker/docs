@@ -1,6 +1,6 @@
 ---
 title: "App Deployment to Tomcat"
-id: ""
+id: "wavemaker-application-deployment-tomcat"
 sidebar_label: "Deploy to Tomcat"
 ---
 Learn how to deploy a WaveMaker app to the Tomcat server.

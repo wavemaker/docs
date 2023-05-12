@@ -1,6 +1,6 @@
 ---
 title: "Accessibility Support in WaveMaker"
-id: ""
+id: "accessibility"
 sidebar_label: "Accessibility"
 ---
 ---

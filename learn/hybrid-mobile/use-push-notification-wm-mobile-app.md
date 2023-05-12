@@ -165,7 +165,7 @@ A provisioning profile has to be created for the app id created above:
     
     [![](/learn/assets/push_resources1.png)](/learn/assets/push_resources1.png)
     
-    - Add the below script in project config.xml (i.e <project>/src/main/webapp/config.xml) file under ```<platform name="android">```.
+    - Add the below script in project config.xml (i.e &lt;project&gt;/src/main/webapp/config.xml) file under ```<platform name="android">```.
       ```<resource-file src="www/google-services.json" target="/app/google-services.json"/>```
     - Import ‘`FCM-admin-service-key.json`’ (downloaded earlier) to `/project/src/main/resources`.
     - Import `.p12` Certificate to `/project/src/main/resources`.

@@ -1,6 +1,6 @@
 ---
 title: "Configure Deployment Profile"
-id: ""
+id: "deployment-profile"
 sidebar_label: "Deployment Profile"
 ---
 ---

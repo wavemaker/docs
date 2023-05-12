@@ -1,19 +1,18 @@
 ---
 title: "How To: One-to-Many Relationship"
-id: ""
+id: "one-many-relationship"
 ---
 ---
 
 ## Parent-Child Relationship
 
-Handling one-to-many relation scenarios is very easy within WaveMaker. Going with the example of sample database, we will see how to display Employee details for a selected Department. [![run](/learn/assets/run-1024x576.png)](/learn/assets/run.png)
+Handling one-to-many relation scenarios is very easy within WaveMaker. Going with the example of sample database, we will see how to display Employee details for a selected Department. 
 
 1. [Import the Sample HRDB](/learn/app-development/services/database-services/working-with-databases)
 
 2. Drag and drop a [Data Table](/learn/app-development/services/database-services/working-with-databases)
     1. CREATE NEW Variable with **hrdb** as service and **Department** as the **Operation/Type** 
     
-    [![dt1_dept_data](/learn/assets/dt1_dept_data.png)](/learn/assets/dt1_dept_data.png)
 
     2. Select any **layout** of your choice, here we have selected _Read-only_ 
     
@@ -29,9 +28,6 @@ Handling one-to-many relation scenarios is very easy within WaveMaker. Going wit
     3. Select the **Firstname**, **Lastname** and **Picurl**. Set the Widget to Image for Picurl column.
 4. From the canvas, select the second grid and open the hrdbemployee variable. From the Data tab, set the Filter Field on department to the deptid field of the selecteditem of the first grid 
 
-[![dt2_emp_data_data](/learn/assets/dt2_emp_data_data-1024x576.png)](/learn/assets/dt2_emp_data_data.png) 
-
-[![dt2_emp_data_bind](/learn/assets/dt2_emp_data_bind-1024x548.png)](/learn/assets/dt2_emp_data_bind.png)
 
 5. Run the app, click on a department and see the table with employee details displayed
 
@@ -51,12 +47,9 @@ We will extend the [previous related tables use-case](/learn/one-many-relationsh
 5. From the canvas, select the second grid and open the hrdbemployee variable. From the Data tab, set the Filter Field on department to the deptid field of the selecteditem of the first grid.
 6. Select the department field of the form, for this use the widget tree on the left Files Panel.
 
-[![dt3_emp_fdept_prop](/learn/assets/dt3_emp_fdept_prop-1024x576.png)](/learn/assets/dt3_emp_fdept_prop.png)
-
 - bind the default value to the selecteditem of first grid
 - bind the dataset value to hrdbEmployee variable
 - set data fields to all fields and display field to name
 - Run the app, click on a department and see the table with employee details displayed
 - Click ADD to add a new row, a form dialog will be displayed. Note that the Department is set to the selected department. 
 
-[![run2](/learn/assets/run2-1024x576.png)](/learn/assets/run2.png)

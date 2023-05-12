@@ -1,6 +1,6 @@
 ---
 title: "Configuring Select Widget from a Static Variable"
-id: ""
+id: "configuring-select-widget-static-variable"
 ---
 ---
 

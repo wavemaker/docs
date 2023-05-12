@@ -1,6 +1,6 @@
 ---
 title: "Debug Performance Issues using Fusion Reactor"
-id: ""
+id: "debug-monitor-performance-issues-using-fusion-reactor"
 sidebar_label: "Setup Fusion Reactor for Debugging Issues"
 ---
 Learn how to setup Fusion Reactor tool for WaveMaker Application Performance Monitoring.

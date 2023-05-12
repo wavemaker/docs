@@ -1,6 +1,6 @@
 ---
 title: "Callback Event for Charts Widget"
-id: ""
+id: "onbeforerender"
 sidebar_label: "Callback Event"
 ---
 ---

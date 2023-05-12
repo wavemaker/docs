@@ -1,6 +1,6 @@
 ---
 title: "Using POST method to send data to a REST API"
-id: ""
+id: "using-post-method-send-data-rest-api"
 ---
 
 We will see how a POST method can be used to send data to REST API.

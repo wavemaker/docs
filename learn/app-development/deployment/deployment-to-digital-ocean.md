@@ -1,6 +1,6 @@
 ---
 title: "Configuring DigitalOcean Deployment"
-id: ""
+id: "deployment-to-digital-ocean"
 sidebar_label: "DigitalOcean"
 ---
 ---

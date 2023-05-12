@@ -1,6 +1,6 @@
 ---
 title: "Panel"
-id: ""
+id: "panel"
 ---
 
 **A panel** can be used to group a set of widgets together. It has a collapsible title bar and you can add multiple panels and any number of multiple panes can be open at any given point of time.
@@ -27,13 +27,13 @@ A panel has designated sections such as header, body, and footer. [![](/learn/a
 
 ### Usage
 
-<iframe width="60%" height="350" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Panels">Panel</iframe>
+<iframe width="60%" height="350" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Panels">Panel</iframe>
 
 ### Panel Styles
 
 Panel style can be set by using the **Class Name** option from the **Styles** tab of the **Properties** panel. You can also use the Conditional Class property to set the class based upon a condition. See here for [How to](/learn/how-tos/use-conditional-class-property/).
 
-<iframe width="100%" height="800" style="background-color: snow;" allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PanelStyle">Panel Style</iframe>
+<iframe width="100%" height="800" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/PanelStyle">Panel Style</iframe>
 
 # Methods
 
@@ -133,11 +133,11 @@ The panel has few methods exposed on widget scope which can be accessed via Jav
 | Menu Actions | This bindable property sets the actions for the widget. To set the data and events see [dropdown menu widget](/learn/app-development/widgets/navigation/dropdown-menu-use-cases/). |
 | Action Label
 (available only when the above Menu Actions is bound to a variable) | Label for anchor or menu tags generated dynamically. |
-| Action Icon <br> (available only when the above Menu Actions is bound to a variable) | Class for the action. Example- 'fa fa-ban' or 'glyphicon glyphicon-cloud'. |
-| Action Link <br> (available only when the above Menu Actions is bound to a variable) | Link for the action item. |
-| Action Task <br> (available only when the above Menu Actions is bound to a variable) | Task for menu items generated dynamically. This is the action that will be triggered when the user clicks on the Menu Item. It can be a script like: Widgets.label1.show or Variables.v1.invoke() Execution order on click of Node: <br> 1. If provided _onSelect_ will be executed first. <br> 2. If provided _Action_ will be executed next. <br> 3. If provided _Action link_ will be executed last. <br>  |
-| User Role <br> (available only when the above Menu Actions is bound to a variable) | Role for menu items generated dynamically. You can assign the property to 'userrole' which contains comma separated user roles. Each item will be evaluated with given 'userrole' for that item to that of the logged in user roles, from security. If any of the user roles bound to 'userrole' property matches then that menu item will be shown else will be hidden. | 
-| Sub Actions <br> (available only when the above Menu Actions is bound to a variable) | When an action is required the sub-items can be mentioned in the children. |
+| Action Icon   (available only when the above Menu Actions is bound to a variable) | Class for the action. Example- 'fa fa-ban' or 'glyphicon glyphicon-cloud'. |
+| Action Link   (available only when the above Menu Actions is bound to a variable) | Link for the action item. |
+| Action Task   (available only when the above Menu Actions is bound to a variable) | Task for menu items generated dynamically. This is the action that will be triggered when the user clicks on the Menu Item. It can be a script like: Widgets.label1.show or Variables.v1.invoke() Execution order on click of Node:   1. If provided _onSelect_ will be executed first.   2. If provided _Action_ will be executed next.   3. If provided _Action link_ will be executed last.    |
+| User Role   (available only when the above Menu Actions is bound to a variable) | Role for menu items generated dynamically. You can assign the property to 'userrole' which contains comma separated user roles. Each item will be evaluated with given 'userrole' for that item to that of the logged in user roles, from security. If any of the user roles bound to 'userrole' property matches then that menu item will be shown else will be hidden. | 
+| Sub Actions   (available only when the above Menu Actions is bound to a variable) | When an action is required the sub-items can be mentioned in the children. |
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
@@ -145,7 +145,7 @@ The panel has few methods exposed on widget scope which can be accessed via Jav
 | Enable full screen | Enable control for making the panel full screen. |
 | Closable | This property defines if the panel should be allowed to be closed. |
 | Expanded | Set the default state of the panel whether it is expanded or collapsed. |
-| Auto Close | This property defines the behavior of menu closing, it can be: <br> - outsideClick - close the menu when clicked outside of the menu, <br> - always - when a menu item is selected or on click outside menu, or <br> - disabled - do not close once opened. <br>  |
+| Auto Close | This property defines the behavior of menu closing, it can be:   - outsideClick - close the menu when clicked outside of the menu,   - always - when a menu item is selected or on click outside menu, or   - disabled - do not close once opened.    |
 | Animation | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. |
 | **Graphics** |
 | Icon Class | This property defines the class of the icon that is applied to the button. |

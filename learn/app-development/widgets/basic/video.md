@@ -1,6 +1,6 @@
 ---
 title: "Video Widget"
-id: ""
+id: "video"
 sidebar_label: "Video"
 ---
 ---
@@ -58,7 +58,7 @@ You can add customizations from the **Properties** panel.
 | Name | The name is a unique identifier for the video widget. |
 | **Accessibility** |
 | Hint | Any text or HTML you enter for this property will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. |
-| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable. <br><br> **NOTE:** In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
+| Tab index | The tab index attribute specifies the tab order of an element. You can use this property to change the default tabbing order for widget access using the tab key. The value can range from 0 to 32767. The default is 0 and -1 makes the element non-focusable.    **NOTE:** In Safari browsers, by default, Tab highlights only text fields. To enable Tab functionality, in Safari Browser from Preferences -> Advanced -> Accessibility set the option "Press Tab to highlight each item on a webpage". |
 | **Layout** |
 | Width | The width of your widget can be specified in px or % (i.e 50px, 75%). |
 | Height | The height of your widget can be specified in px or % (i.e 50px, 75%). |
@@ -67,7 +67,7 @@ You can add customizations from the **Properties** panel.
 | MP4 Source Path | This property allows you to set an video/mp4 format of the video. |
 | OGG Source Path | This property allows you to set an video/Ogg source of the video. |
 | WEBM Source Path | This property allows you to set an video/WebM source of the video. |
-| Video Preload | This property allows if and how the author thinks the video should be loaded when the page loads. Can be set to: <br><br> - none - default <br> - metadata, or <br> - auto |
+| Video Preload | This property allows if and how the author thinks the video should be loaded when the page loads. Can be set to:    - none - default   - metadata, or   - auto |
 | Support Message | This property allows setting the message when Html 5 video is not supported. |
 | Subtitle Source | This property allows setting the source URL for the subtitle in the .vtt format. |
 | Subtitle Language | This property allows setting the language for the subtitle. |

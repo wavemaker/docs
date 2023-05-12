@@ -1,6 +1,6 @@
 ---
 title: "Jump Start - WaveMaker App Building Essentials"
-id: ""
+id: "jump-start-app-essentials"
 sidebar_label: "App Building Essentials"
 ---
 

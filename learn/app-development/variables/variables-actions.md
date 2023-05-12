@@ -1,6 +1,6 @@
 ---
 title: "Actions"
-id: ""
+id: "variables-actions"
 ---
 Introduction to Actions in WaveMaker. Learn how to implement actions. 
 

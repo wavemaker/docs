@@ -1,6 +1,6 @@
 ---
 title: "Custom Formatter"
-id: ""
+id: "custom-formatter"
 sidebar_label: "Custom Formatter"
 ---
 With Custom Formatter, customize data more specific to your audience.

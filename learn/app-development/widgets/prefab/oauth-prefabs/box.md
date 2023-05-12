@@ -1,6 +1,6 @@
 ---
 title: "Box"
-id: ""
+id: "box"
 ---
 
 ## Introduction

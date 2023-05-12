@@ -1,6 +1,6 @@
 ---
 title: "Accessing Script"
-id: ""
+id: "script-access"
 ---
 
 ## Partial from Parent Page

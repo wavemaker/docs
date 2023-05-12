@@ -1,0 +1,15 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="3zrcx61ata">
+            <stop stop-color="#5575AF" stop-opacity=".3" offset="0%"/>
+            <stop stop-color="#2B4077" stop-opacity=".3" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect stroke="#445C9B" fill="url(#3zrcx61ata)" x=".5" y=".5" width="39" height="39" rx="6"/>
+        <g fill="#7D89FF">
+            <path d="M29.308 29.308V26.77H31V31h-4.23v-1.692h2.538zm-18.616 0h2.538V31H9v-4.23h1.692v2.538zM31 10.692v2.538h-1.692v-2.538H26.77V9H31v1.692zm-20.308 0v2.538H9V9h4.23v1.692h-2.538zM15.77 9h3.385v1.692h-3.385V9zm0 20.308h3.385V31h-3.385v-1.692zM20.846 9h3.385v1.692h-3.385V9zm0 20.308h3.385V31h-3.385v-1.692zM10.692 15.769v3.385H9v-3.385h1.692zm20.308 0v3.385h-1.692v-3.385H31zm-20.308 5.077v3.385H9v-3.385h1.692zm20.308 0v3.385h-1.692v-3.385H31z" fill-rule="nonzero"/>
+            <path d="M12.385 13.385h15.231v4.385H12.385z"/>
+        </g>
+    </g>
+</svg>

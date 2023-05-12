@@ -1,6 +1,6 @@
 ---
 title: "Setting partial page content for Panel within a List using JavaScript"
-id: ""
+id: "setting-partial-page-content-panel-within-list-using-javascript"
 ---
 ---
 

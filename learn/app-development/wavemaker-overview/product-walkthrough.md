@@ -14,17 +14,17 @@ Following are some of the terms commonly used in Studio parlance.
 | --- | --- | --- |
 | **Pages** | Pages contain app components. You can organize data by using widgets and define a workflow by interlinking them. | [Creating a Page](/learn/app-development/ui-design/page-creation/)|
 | **Layouts** |  Demarcating the page into sections.  | [Page Layouts](/learn/app-development/ui-design/page-concepts/page-layouts) |
-| **Templates** | Re-usable arrangement of one or more widgets in the page content put together. <br>  | [Templates](/learn/app-development/ui-design/page-concepts/page-templates/) |
+| **Templates** | Re-usable arrangement of one or more widgets in the page content put together.    | [Templates](/learn/app-development/ui-design/page-concepts/page-templates/) |
 | **Template Bundle** | Custom templates built into a bundle.   |[Template Bundle](/learn/app-development/ui-design/page-concepts/#creating-template-bundles) |
 | **Widgets** | UI components for user interaction and responsive design.  |[Widgets Overview](/learn/app-development/widgets/ui-elements/) |
 ||List of Widgets.|[Widget Library](/learn/app-development/widgets/widget-library/) |
-| **Prefabs** |Collection of one or more widgets that are bound to API or services. <br> <details><summary>Read more</summary> Prefab is a reusable, API-integrated component that can be used across apps. It encapsulates functionality, interaction & data and as such can be used to build custom widgets. For example, GoogleMap Prefab, QRCode reader or Youtube Prefab. |[Prefab Basics](/learn/app-development/custom-widgets/prefabs-overview)|
+| **Prefabs** |Collection of one or more widgets that are bound to API or services.   &lt;details&gt;<summary>Read more</summary> Prefab is a reusable, API-integrated component that can be used across apps. It encapsulates functionality, interaction & data and as such can be used to build custom widgets. For example, GoogleMap Prefab, QRCode reader or Youtube Prefab. |[Prefab Basics](/learn/app-development/custom-widgets/prefabs-overview)|
 ||List of prefabs that are already created.|[Predefined Prefabs](/learn/app-development/widgets/widget-library/#prefabs)|
 ||Build your own Prefab. |[Creating Prefabs](/learn/app-development/custom-widgets/creating-prefabs/) |
 | **Project Shell** | Foundation for multiple apps in an enterprise.  |[Project Shells](/learn/app-development/ui-design/project-shells/) |
 | **Theme** | Colors, fonts, and branding elements (CSS & images) that is applied to all pages within an app.  |[Themes Overview](/learn/app-development/ui-design/themes/)|
 ||Create your own custom theme.|[Creating Themes](/learn/app-development/ui-design/themes/#create-theme) |
-| **Variable** | Provides data integration for the widgets. <br> <details><summary>Read more</summary>  Variable holds the actual data to be rendered by the widgets. It is based on a data model obtained from the API source (from services like database and web-based) and renders the same in the form of a data structure used for binding, with attributes and related objects. |[Variables Overview](/learn/app-development/variables/variables/) |
+| **Variable** | Provides data integration for the widgets.   &lt;details&gt;<summary>Read more</summary>  Variable holds the actual data to be rendered by the widgets. It is based on a data model obtained from the API source (from services like database and web-based) and renders the same in the form of a data structure used for binding, with attributes and related objects. |[Variables Overview](/learn/app-development/variables/variables/) |
 |  |**Variable Types**|| 
 |**Database CRUD** | For the basic insert, read and update operation on the Database tables. |[Database CRUD](/learn/app-development/variables/database-crud/) |
 | **Database API** | For accessing the queries and procedures and additional Database functionality. | [Database API](/learn/app-development/variables/database-apis/) |
@@ -34,8 +34,8 @@ Following are some of the terms commonly used in Studio parlance.
 |**Security Services**|Service API from Security for the service APIs exposed by the Security services.|[Security Service](/learn/app-development/variables/security-service/) |
 |**Model Variable**| It can be used as storage model to store data in the client-side. |[Model Variable](/learn/app-development/variables/model-variable/) |
 |**Device Variable**|  To access device features in case of mobile applications. |[Device Variable](/learn/hybrid-mobile/device-variables/) |
-| **Actions** | Implement the business logic, rules and data flow. <br> <details><summary>Read more</summary>  Actions assist in invoking a backend API, Database operation or navigation to another page when a UI event occurs. Events can be either user-initiated, notification response or as a result of another task being performed. |[Actions](/learn/app-development/variables/variables-actions) |
-| **Binding** | Connecting variables and widgets. <br> <details><summary>Read more</summary>  Binding of the Variables to Widgets helps in capturing the data from the user or fetching data from the backend services. |[Variable Binding](/learn/app-development/variables/variable-binding/) |
+| **Actions** | Implement the business logic, rules and data flow.   &lt;details&gt;<summary>Read more</summary>  Actions assist in invoking a backend API, Database operation or navigation to another page when a UI event occurs. Events can be either user-initiated, notification response or as a result of another task being performed. |[Actions](/learn/app-development/variables/variables-actions) |
+| **Binding** | Connecting variables and widgets.   &lt;details&gt;<summary>Read more</summary>  Binding of the Variables to Widgets helps in capturing the data from the user or fetching data from the backend services. |[Variable Binding](/learn/app-development/variables/variable-binding/) |
 
 ## Dashboard Walkthrough
 

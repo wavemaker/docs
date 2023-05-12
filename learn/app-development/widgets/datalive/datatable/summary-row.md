@@ -1,6 +1,6 @@
 ---
 title: "Data Table - Summary Row Function"
-id: ""
+id: "summary-row"
 sidebar_label: "Summary Row" 
 ---
 ---
