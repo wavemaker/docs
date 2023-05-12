@@ -16,7 +16,7 @@ From WaveMaker 11.3 onwards, you can embed React Native apps into the native app
 - wm-reactnative-cli and its requirements
 
 
-When using this feature, you can add WM app to an existing native application, such as a small component or an SPA, or even a micro application. 
+When using this feature, you can add WaveMaker app to an existing native application, such as a small component or an SPA, or even a micro application. 
 
 ## How it works
 
@@ -24,9 +24,9 @@ Once the code is converted to native app, you can continue to make changes to th
 
 ## WaveMaker Embed Command
 
+### Android
 
-
-##  Android
+Follow the command below.
 
 ```
 wm-reactnative embed android –mp="${NATIVE_ANDROID_PROJECT_PATH}" "${REACT_NATIVE_ZIP_PATH}"
@@ -38,9 +38,7 @@ wm-reactnative embed android –mp="${NATIVE_ANDROID_PROJECT_PATH}" "${REACT_NAT
 
 To embed React native apps into native apps, changes are required in both React Native project and Native project.
 
-[@wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli) will take care of the react native project changes. In order for changes in native project, follow the steps below:
-
-## Android
+[@wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli) will handle the react native project changes. In order for changes in Native project, follow the steps below:
 
 - Add the following line in project-level build.gradle
 
@@ -71,7 +69,7 @@ startActivity(intent);
 
 - Fix dependency issues.
 
-## iOS
+### iOS
 
 Execute the following command to embed the application.
 
@@ -113,15 +111,15 @@ This rnApp folder acts a placeholder and gets replaced with the actual content d
 
 - Using ReactNativePageView or ReactNativeHostingController, React Native app can be launched.
 
-## Communicate from react native js to native layer 
+## Communicate from React Native JS to Native Layer 
 
 ```
 const promise = App.invokeNativeApi('action-name', {...params})
 ```
 
-## Implementing actions in Android project
+## Implementing Actions in Android Project
 
-- Include the following as dependency into the module.
+- Include the following as a dependency into the module.
 
 ```
 implementation (project(':wavemaker-expo-native-module'))
