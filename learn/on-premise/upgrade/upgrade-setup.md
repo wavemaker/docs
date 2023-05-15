@@ -18,6 +18,7 @@ The following list provides the currently supported versions for WME patching. K
 
 | **WME Patch release** | **Supported WME versions** |
 | --- | --- |
+| v11.3.x  |  v10.13.x or higher|
 | v11.2.x  |  v10.13.x or higher|
 | v11.1.x  |  v10.13.x or higher|
 | v10.13.x |  v10.6.x or higher |
