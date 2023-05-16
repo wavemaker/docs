@@ -14,9 +14,7 @@ sidebar_label: "Upgrade Non Root WME Execution"
 
 #### Platform Instance
 
-- If the user given to the Platform who does not have privileged access, then provide the below permssions for the user on Platform Instance.
-
-- Give permission to manage docker services, chown, and other required commands by adding the following content in sudoers file.
+- Please add below content in sudoers file so that the non-root-user can excute the commands mentioned in the below content as a previliged user. 
 
   ```bash
       sudo echo "<non-root-execution-user-name> ALL=(ALL) NOPASSWD: /bin/systemctl daemon-reload, /bin/systemctl restart docker, /bin/systemctl status docker, /bin/systemctl stop docker, /bin/systemctl start docker, /usr/sbin/service docker restart, /usr/sbin/service docker start, /usr/sbin/service docker stop, /usr/sbin/service docker status, /sbin/ip link set docker0 down, /sbin/ip link del dev docker0 type bridge, /usr/bin/chown" >> /etc/sudoers
@@ -38,7 +36,7 @@ sidebar_label: "Upgrade Non Root WME Execution"
 For external no new prerequisites required please follow old steps it self
 :::
 
-#### Once this is done switch to your not root user where you can  execute the WaveMaker installer for fresh setup/patch 
+#### Once this is done switch to your not root user where you can  execute the WaveMaker Upgrade for fresh setup/patch 
 
 
 
