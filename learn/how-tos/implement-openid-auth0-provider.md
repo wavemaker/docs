@@ -1,14 +1,10 @@
 ---
-title: "Configuring Open ID using Auth0 provider"
+title: "Configuring Open ID using Auth0 Provider"
 id: "implement-openid-auth0-provider"
-sidebar_label: "Open ID using Auth0 provider"
+sidebar_label: "Open ID Integration - Auth0"
 ---
 
-Auth0 is an identity platform, used to implement Single Sign On. This helps you to authenticate and authorize users who try to access to access the application. Below are the steps to configure it
-
-In this document, we discuss the steps to implement Auth0 as Open ID provider.
-
----
+Auth0 is an identity and access management platform used to implement Single Sign On. This helps you authenticate and authorize users who access the application. Below are the steps to configure Open ID using Auth0. 
 
 ## Auth0 as Open ID Provider
 
