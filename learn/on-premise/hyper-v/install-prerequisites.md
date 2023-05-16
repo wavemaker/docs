@@ -5,6 +5,14 @@ sidebar_label: "Install Prerequisites Softwares"
 ---
 ---
 
+:::note
+ Before Proceeding with installing the softwares, Check the [Requirements here](/learn/on-premise/prerequisites).
+:::
+
+:::note
+ The following docker installation steps are for reference only, you can use your own approach.
+:::  
+
 ## Ubuntu
 
 ### The ssh user has privileges(root/sudo) user doesn't have privileges for install/upgrade utility softwares
@@ -25,10 +33,10 @@ sudo apt-get install python3 -y
 
 - Install Docker repository
 
-  ```bash
-      apt-get install apt-transport-https
-      curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-  ```
+```bash
+    apt-get install apt-transport-https
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
 
   - To add docker repository for ubuntu bionic(18.04.5)
 
@@ -51,6 +59,7 @@ sudo apt-get install python3 -y
   - Run the following command to list available versions
 
   ```bash
+    apt-get update
     apt-cache madison docker-ce
     apt-cache madison docker-ce-cli
   ```
@@ -59,16 +68,16 @@ sudo apt-get install python3 -y
 
   ```bash
     sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
-    example: sudo apt-get install docker-ce=5:20.10.12~3-0~ubuntu-focal docker-ce-cli=5:20.10.12~3-0~ubuntu-focal containerd.io -y
+    example: sudo apt-get install docker-ce=5:23.0.1-1~ubuntu.20.04~focal docker-ce-cli=5:23.0.1-1~ubuntu.20.04~focal containerd.io -y
   ```
 
 #### Install Docker using WaveMaker Script
 
-- To install Docker to the latest version, the user need to use their own approach or WaveMaker provides a script to install.
+- For the Ubuntu users, to install Docker to the latest version, the user need to use their own approach or WaveMaker provides a script to install.
 
   - Run the following command to install the Docker.
 
-```bash 
+  ```bash 
    sudo bash wme-utility.sh --docker-upgrade 
   ```  
 
@@ -92,9 +101,9 @@ The given ssh user does not have permission to install software Then install bel
 - If the user given to the Platform doesn't have privileged access, then provide below permission for the user given on StudioWorkspace Instance / AppDeployment Instance.
 - Create a user group if not present in StudioWorkspace Instance / AppDeployment Instance .
   
-  ```bash
-    sudo groupadd <user>
-  ```
+```bash
+  sudo groupadd <user>
+```
 
 - Have to execute these commands from privileged users.
   - Add user to the docker group.  
@@ -102,13 +111,13 @@ The given ssh user does not have permission to install software Then install bel
   - data directory should be owned by the user.
   - Give permission to manage docker.service, systemctl daemon-reload, iptable.
 
-    ```bash
-        usermod -aG docker <user>
-        mkdir -p /etc/systemd/system/docker.service.d/
-        chown -R <user>:<user> /etc/systemd/system/docker.service.d
-        chown -R <user>:<user> /data
-        echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
-        ```
+  ```bash
+      usermod -aG docker <user>
+      mkdir -p /etc/systemd/system/docker.service.d/
+      chown -R <user>:<user> /etc/systemd/system/docker.service.d
+      chown -R <user>:<user> /data
+      echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
+  ```
 
 ## RHEL
 
@@ -141,7 +150,7 @@ The given ssh user does not have permission to install software Then install bel
   
   - Install prerequissites to install Docker in RHEL7
   
-   ```bash
+  ```bash
       yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
       wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/slirp4netns-0.4.3-4.el7_8.x86_64.rpm
       wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/fuse3-devel-3.6.1-4.el7.x86_64.rpm
@@ -151,29 +160,29 @@ The given ssh user does not have permission to install software Then install bel
       sudo yum install fuse3-devel-3.6.1-4.el7.x86_64.rpm -y
       sudo yum install fuse3-libs-3.6.1-4.el7.x86_64.rpm -y
       sudo yum install fuse-overlayfs-0.7.2-6.el7_8.x86_64.rpm -y
-   ```
+  ```
 
   - To Install Docker in RHEL 7 use the following commands
   
   ```bash
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-20.10.12-3.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.4.9-3.1.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-20.10.12-3.el7.x86_64.rpm
-    sudo yum install docker-ce-cli-20.10.12-3.el7.x86_64.rpm -y
-    sudo yum install containerd.io-1.4.9-3.1.el7.x86_64.rpm -y
-    sudo yum install docker-ce-20.10.12-3.el7.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-23.0.1-1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.6.18-3.1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-23.0.1-1.el8.x86_64.rpm
+    sudo yum install docker-ce-cli-23.0.1-1.el8.x86_64.rpm -y
+    sudo yum install containerd.io-1.6.18-3.1.el8.x86_64.rpm -y
+    sudo yum install docker-ce-23.0.1-1.el8.x86_64.rpm -y
   ```  
 
   - To Install Docker in RHEL 8 use the following commands
   
   ```bash
     yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-20.10.12-3.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.9-3.1.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-20.10.12-3.el8.x86_64.rpm
-    sudo yum install docker-ce-cli-20.10.12-3.el8.x86_64.rpm -y
-    sudo yum install containerd.io-1.4.9-3.1.el8.x86_64.rpm -y
-    sudo yum install docker-ce-20.10.12-3.el8.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-23.0.1-1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.6.18-3.1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-23.0.1-1.el8.x86_64.rpm
+    sudo yum install docker-ce-cli-23.0.1-1.el8.x86_64.rpm -y
+    sudo yum install containerd.io-1.6.18-3.1.el8.x86_64.rpm -y
+    sudo yum install docker-ce-23.0.1-1.el8.x86_64.rpm -y
   ```
 
   ```bash
@@ -213,9 +222,23 @@ The given ssh user does not have permission to install software Then install bel
   - data directory should be owned by the user.
   - Give permission to manage docker.service, systemctl daemon-reload, iptable.
 
-    ```bash
+  ```bash
         usermod -aG docker <user>
         chown -R <user>:<user> /usr/lib/systemd/system
         chown -R <user>:<user> /data
         echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
-    ```
+  ```
+
+#### Make sure to Run below command after installation of docker completes to have WaveMaker docker configuration to your installed docker
+
+- For Ubuntu
+
+```bash 
+      bash docker_configure.sh
+```
+
+- For RHEL
+
+```bash
+      bash docker_setup_rhel.sh
+```

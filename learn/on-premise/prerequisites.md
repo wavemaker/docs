@@ -71,7 +71,8 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
       </td>
       <td>
         <ul>
-          <li>docker 20.10.12</li>
+          <li>docker 20.10.12 (supports for WME platform versions 11.2.x)</li>
+          <li>docker 23.0.1 (supports for WME platform versions 11.3.x)</li>
           <li>python 3.5 or higher</li>
           <li>wget</li>
           <li>container-selinux-2.107-1.el7.noarch.rpm(Only for RHEL7)</li>
@@ -150,7 +151,8 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
       </td>
       <td>
         <ul>
-          <li>docker 20.10.12</li>
+          <li>docker 20.10.12 (supports for WME platform versions 11.2.x)</li>
+          <li>docker 23.0.1 (supports for WME platform versions 11.3.x)</li>
           <li>python 3.5 or higher</li>
           <li>wget</li>
           <li>container-selinux-2.107-1.el7.noarch.rpm(only for RHEL7)</li>
