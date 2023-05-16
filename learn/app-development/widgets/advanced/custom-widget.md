@@ -9,7 +9,7 @@ import customWidgetProperties from "/learn/assets/widgets/advanced/customWidgetP
 import customWidgetAddProperty from "/learn/assets/widgets/advanced/customWidgetAddProperty.png"
 import customWidgetBindProperty from "/learn/assets/widgets/advanced/customWidgetBindProperty.png"
 
-**Custom Widget** is used to add third party Native libraries to the project, Any Native functional component can be added using this widget. This widget can be used only in Prefabs, and using Prefab properties and Events we can expose the Native Libraty properties and callback functions so that this can be used in React Native applications.
+**Custom Widget** is used to add third party React Native Components to the project. This widget can be used only in Prefabs. By using Prefab properties and Events, Component properties and callback functions can be exposed and this prefab can be used in React Native applications.
 
 :::warning
 Custom Widget is available only in Prefabs for React Native apps.
@@ -33,7 +33,7 @@ Custom Widget is available only in Prefabs for React Native apps.
 
 ## Adding Third party Native Libraries
 
-To add Native Libraries, inside **Config Prefab** write the packange name and version as follows and add it to the scripts
+To add React Native Components, inside **Config Prefab** write the packange name and version as follows and add it to the scripts
 
 ```
 npm://package_name@package_version
@@ -41,18 +41,17 @@ npm://package_name@package_version
 
 ![Custom Widget Add Package](/learn/assets/widgets/advanced/customWidgetAddPackage.png)
 
-## Adding the Library Functional Component
+## Adding the React Native Component as a Functional Component
 
-To add the functional component, In Script tab we need to write the component using javascript (i.e by using **react.createElement**) and return the component.
+In Script tab, components can be written as functional component using javascript (i.e by using **react.createElement**) which returns the component.
 
-Initiall we need write require statements to import the libraries
-
+require statements should be written inside the function, to import the Components 
 ```
 const react = require('react');
 const calendar = require('react-native-swipeable-weekly-calendar');
 ```
 
-Since **Custom Widget** will be available after **Prefab.onReady**, we need to pass the functional component written to the renderview property of the Custom Widget.
+Since **Custom Widget** will be available after **Prefab.onReady**, the component written should be passed to the renderview property of the Custom Widget.
 
 ```
 Prefab.onReady = function() {
@@ -60,28 +59,30 @@ Prefab.onReady = function() {
 };
 ```
 
-We can write the function component inside Script tab using **React.createElement()** function, and we can pass the properties added to Custom Widget using **Add Property** with a parameter(eg: **prop** as shown below).
+Component can be written inside Script tab using **React.createElement()** function, and the properties can be added to Custom Widget using **Add Property** with a parameter(eg: **prop** as shown below).
 
 ```
 syntax:
 react.createElement(*FunctionalComponent*, {*Props*}, *ChildComponent*);
 ```
 
-We can expose the properties of the imported library, by using the Prefab Property. In the code shown below **props.date** is a property added to Custom Widget using **Add Property** and bound it's value with **Prefab.date** which is a Prefab property.
+Properties of the imported Component can be exposed, by using the Prefab Property. In the code shown below **props.date** is a property added to Custom Widget using **Add Property** and bound it's value with **Prefab.date** which is a Prefab property.
 
 <div style={{flex:1, flexDirection:"row"}}>
     <img src={customWidgetAddProperty} style={{width:200, height:200, margin:10}} alt="Custom Widget Add Property"/>
     <img src={customWidgetBindProperty} style={{width:200, height:200, margin:10}} alt="Custom Widget Bind Property"/>
 </div>
 
-We can also implement library **Callback** functions, In the code shown below **onPressDate** is the callback function to expose it, here we are triggering **Prefab.onChange** function which is Prefab Event.
+Component **Callback** functions can also be implemented, In the code shown below **onPressDate** is the callback function which is exposed by triggering **Prefab.onChange** function which is Prefab Event.
 
 :::note
-Since the call back function executes inside the imported Native library, to update the changes inside Prefab we need to use **refresh()** function as shown below
+Since the call back function executes inside the imported component, to update the changes inside Prefab **refresh()** function need to be used as shown below
 :::
 
 ```
 function renderCalendar(props) {
+    const react = require('react');
+    const calendar = require('react-native-swipeable-weekly-calendar');
     return react.createElement(calendar.default, {
         date: props.date,
         onPressDate: (date) => {
@@ -96,4 +97,4 @@ function renderCalendar(props) {
 }
 ```
 
-Now we can implements this Prefab in any React Native applications and use Prefab properties to control the Component.
+Now this Prefab can be implemented in any React Native applications and use Prefab properties to control the Component.
