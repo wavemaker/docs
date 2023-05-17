@@ -112,6 +112,13 @@ Page.Widgets.wmcalendar.calendarOptions.calendar.allDaySlot= false;
 Page.Widgets.wmcalendar.calendarOptions.calendar.allDayText= ‘all-day’;
 ```
 
+- To set the Calendar language to English (en) and rerender the Calendar widget. Similarly, you can apply the same code snippet to Internationalize (i18n) by replacing `en` with other i18n codes, such as `es` for the Spanish language. 
+
+```js
+Page.Widgets.calendar2.applyCalendarOptions('option', 'locale','en');
+Page.Widgets.calendar2.applyCalendarOptions('render');
+```
+
 Other properties which can be set using the similar methods: For more information on Calendar, properties [see here.](https://fullcalendar.io/docs/)
 
 | Method | Description |
