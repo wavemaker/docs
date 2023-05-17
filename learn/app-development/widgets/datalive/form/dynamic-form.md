@@ -5,7 +5,9 @@ sidebar_label: "Dynamic Form"
 ---
 ---
 
-Dynamic Form is a form that renders the fields and layout based on received Metadata where, Metadata is the data regarding the Form fields. In this case, no information about the fields or layout is available and can only be determined with the Metadata. Dynamic forms are most appropriate when the metadata changes frequently based on business models and are driven by another user role. For example, a Business Analyst can determine the fields in a form for targeted customer.
+Dynamic Form is a form that renders the fields and layout based on received metadata where, metadata is an API that holds data related to the Form fields. In this case, no information about the fields or layout is available and can only be determined with the metadata. Dynamic forms are most appropriate when the metadata changes frequently based on business models and are driven by another user role. For example, a Business Analyst can determine the fields in a form for targeted customer.
+
+Following are the differences described to understand which type of Form is appropriate to use
 
 |   Form   |   Dynamic Form   |
 |--------|----------|
@@ -16,15 +18,35 @@ Dynamic Form is a form that renders the fields and layout based on received Meta
 
 ### Provides Business Users more configuration/customization capabilities
 
-Dynamic forms are metadata-driven, which allows business users to configure the fields to be displayed, in what order, and how to be displayed, in real time. These forms are created with simple UI that takes inputs from business users regarding the fields.
+Business Users can Control the Fields to Display. Dynamic forms are metadata-driven, which allows business users to configure the fields to be displayed, including in what order, and how to be displayed, in real-time. These forms are created with a simple UI that takes form fields as inputs from business users.
 
 ### Update forms without frequent deployments
 
-Dynamic form are constructed over metadata, where they provide necessary details about the data such as name, type, widget type, validation rules which helps in avoiding repeated deployments to add new field details as it is done in static forms. Fields can be added in real-time by Admin as per the requirement, as the metadata already contains the field details.
+Dynamic form are constructed over metadata, where they provide necessary details about the data such as name, type, widget type, validation rules which helps in avoiding repeated deployments to add new field details as it is done in static forms. Fields can be added in real-time by business user as per the requirement, as the metadata already contains the field details.
 
 ## How to configure Dynamic Form
 
-You can either create or import a service where service is the API created against the Metadata database.
+You can either create or import a service where service is the API created against the metadata database.
+
+:::important
+WaveMaker accepts metadata in the following format:
+
+Example: 
+```markup
+[{
+“name”: “” //name of the field
+“displayname”: “” //name to be displayed for the field
+“type”: “” //type of the field
+“required”: “” //isRequired
+“widget”: “” //widget type for the field
+“dataset”: “” //dataset for the field, if the widget is accepting the dataset
+}]
+```
+
+If the metadata service returns some other structure than mentioned above, use the
+[on-beforerender event](#modifying-dynamic-form-metadata) on the form to modify the data accordingly. 
+
+:::
 
 :::note
 
@@ -44,20 +66,25 @@ You can either create or import a service where service is the API created again
 [![](/learn/assets/confirm-importedservicedetails-dynamicform.png)](/learn/assets/confirm-importedservicedetails-dynamicform.png)
 
 
-3. Enter the Service Name and click **Import** to confirm the given details and import the service.
+3. Enter the Service Name and click **Import** to confirm the given details and import the service. Change the image
 
 [![](/learn/assets/import-webservice-dynamicform.png)](/learn/assets/import-webservice-dynamicform.png)
 
-Service API containing the Metadata is imported sucessfully.
-
 ### Creating Variable
 
-Create a variable to fetch the Metadata. To know how to create a variable, see [Creating Service Variable](https://docs.wavemaker.com/learn/app-development/variables/web-service#how-to-create-a-service-variable).
+Create a variable to fetch the metadata . To know how to create a variable, see [Creating Service Variable](https://docs.wavemaker.com/learn/app-development/variables/web-service#how-to-create-a-service-variable).
+
+The created variable should be used in the **Markup** tab to [bind the metadata with the form](#binding-variable-with-form).
+
+[![](/learn/assets/variable-markup-dynamicform.png)](/learn/assets/variable-markup-dynamicform.png)
 
 ### Creating Dynamic Form
 
 1. Go to pages and create a new page. To create a new page, see [Creating Page](https://docs.wavemaker.com/learn/app-development/ui-design/page-creation).
-2. Go to Markup section and enter the following code snippet in the 'content' section.
+
+#### Binding Variable with Form
+
+2. Go to Markup tab and enter the following code snippet in the 'content' section.
 
 ```markup
 
@@ -86,7 +113,9 @@ metadata="bind:Variables.<Variable Name>.dataSet"
 
 [![](/learn/assets/confirm-formcode-dynamicform.png)](/learn/assets/confirm-formcode-dynamicform.png)
 
-4. If the form fields do not render as desired, on-beforerender event is used that tranforms the provided field details into WaveMaker accepted format.
+#### Modifying Dynamic Form Metadata
+
+1. If the form fields do not render as desired, on-beforerender event is used that tranforms the provided field details into WaveMaker accepted format.
 
 [![](/learn/assets/add-formcode-onbeforerender-dynamicform.png)](/learn/assets/add-formcode-onbeforerender-dynamicform.png)
 
