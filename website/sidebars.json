@@ -575,7 +575,7 @@
 					"items": [
 						"on-premise/observability/logs-aggregation/overview",
 						"on-premise/observability/logs-aggregation/kibana",
-						"learn/on-premise/observability/logs-aggregation/fluentd"
+						"on-premise/observability/logs-aggregation/fluentd"
 					]
 				},
 				{
