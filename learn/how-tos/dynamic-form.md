@@ -5,9 +5,9 @@ sidebar_label: "Dynamic Form"
 ---
 ---
 
-Dynamic Form is a type of Form that renders the fields and layout based on received metadata where, metadata is an API that holds data related to the Form fields. In this case, no information about the fields or layout is available and can only be determined with the metadata. Dynamic Forms are most appropriate when the metadata changes frequently based on business models and are driven by another user role. For example, a Business Analyst can determine the fields in a Form for targeted customer.
+Dynamic Form is a type of Form that renders the fields and layout based on received metadata where metadata is an API that holds data related to the Form fields. In this case, no information about the fields or layout is available and can only be determined with the metadata. Dynamic Forms are most appropriate when the metadata changes frequently based on business models and are driven by another user role. For example, a Business Analyst can determine the fields in a Form for the targeted customer.
 
-Following are the differences described to understand which type of Form is appropriate to use
+Following are the differences described to understand which type of Form is appropriate to use.
 
 |   Form   |   Dynamic Form   |
 |--------|----------|
@@ -16,17 +16,17 @@ Following are the differences described to understand which type of Form is appr
 
 ## Benefits of Dynamic Form
 
-### Provides Business Users more configuration/customization capabilities
+### Business Users can Control the Fields to Display
 
-Business Users can Control the Fields to Display. Dynamic Forms are metadata-driven, which allows business users to configure the fields to be displayed, including in what order, and how to be displayed, in real-time. These Forms are created with a simple UI that takes Form fields as inputs from business users.
+Dynamic Forms are metadata-driven, which allows business users to configure the fields to be displayed, including in what order, and how to be displayed, in real-time. These Forms are created with a simple UI that takes Form fields as inputs from business users.
 
 ### Update Forms without frequent deployments
 
-Dynamic Form are constructed over metadata, where they provide necessary details about the data such as name, type, widget type, validation rules which helps in avoiding repeated deployments to add new field details as it is done in Static Forms. Fields can be added in real-time by business user as per the requirement, as the metadata already contains the field details.
+Dynamic Form is constructed over metadata, where they provide necessary details about the data such as name, type, widget type, and validation rules which help in avoiding repeated deployments to add new field details as it is done in Static Forms. Fields can be added in real-time by business users as per the requirement, as the metadata already contains the field details.
 
 ## How to configure Dynamic Form
 
-You can create or import a service where service is metadata. For example, WaveMaker accepts metadata in the following format.
+You can create or import a service where the service is metadata. For example, WaveMaker accepts metadata in the following format.
 
 ```markup
 [{
@@ -40,7 +40,7 @@ You can create or import a service where service is metadata. For example, WaveM
 ```
 
 :::note
-**Metadata**: It contains information like name, type, widget type, validation rules and other required details about the field.
+**Metadata**: It contains information like name, type, widget type, validation rules, and other required details about the field.
 :::
 
 :::important
@@ -50,13 +50,13 @@ If the metadata service returns some other structure than the one mentioned abov
 
 ### Importing Service
 
-Go to Web Services. Click **Import Web Service** to import new web service. To know how to import REST Web Service, see [Import REST Services](https://docs.wavemaker.com/learn/app-development/services/web-services/rest-services#test-rest-service-api).
+Go to Web Services. Click **Import Web Service** to import a new web service. To know how to import REST Web Service, see [Import REST Services](https://docs.wavemaker.com/learn/app-development/services/web-services/rest-services#test-rest-service-api).
 
 ### Creating Variable
 
-Create a variable to fetch the metadata . To know how to create a variable, see [Creating Service Variable](https://docs.wavemaker.com/learn/app-development/variables/web-service#how-to-create-a-service-variable).
+Create a variable `MetadataVariable` to fetch the metadata. To know how to create a variable, see [Creating Service Variable](https://docs.wavemaker.com/learn/app-development/variables/web-service#how-to-create-a-service-variable).
 
-The created variable should be used in the **Markup** tab to [bind the metadata with the Form](#binding-variable-with-form).
+The created variable should be used in the **Markup** tab to [bind the metadata with the Form](#binding-variable-with-form).  
 
 [![](/learn/assets/variable-markup-dynamicform.png)](/learn/assets/variable-markup-dynamicform.png)
 
@@ -66,7 +66,7 @@ The created variable should be used in the **Markup** tab to [bind the metadata 
 
 #### Binding Variable with Form
 
-1. Go to Markup tab and enter the following code snippet to create Dynamic Form. Add metadata property in the markup with the created variable. For example, the accepted value for metadata is `metadata="bind:Variables.<Variable Name>.dataSet"`. 
+1. Go to the Markup tab and enter the following code snippet to create a Dynamic Form. Add metadata property in the markup with the created variable. For example, the accepted value for metadata is `metadata="bind:Variables.<Variable Name>.dataSet"`.
 
 ```markup
 
@@ -79,8 +79,7 @@ The created variable should be used in the **Markup** tab to [bind the metadata 
 
 [![](/learn/assets/add-formcode-dynamicform.png)](/learn/assets/add-formcode-dynamicform.png)
 
-
-3. Click save to save the changes in Markup section. Click on Preview to view the created Dynamic Form.
+2. Click **Save** to save the changes in the Markup tab. Click Preview to view the created Dynamic Form.
 
 [![](/learn/assets/confirm-formcode-dynamicform.png)](/learn/assets/confirm-formcode-dynamicform.png)
 
@@ -94,23 +93,23 @@ You can preview the Dynamic Form.
 
 ## Create Business User Form
 
-To create Business User (BU) Form, you can create Static Form only in cases when BU want to add or edit fields through WaveMaker.
+To create Business User (BU) Form, you can create Static Form only in cases when BU wants to add or edit fields through WaveMaker.
 
 1. Create a new page. To create a new page, see [Creating Page](https://docs.wavemaker.com/learn/app-development/ui-design/page-creation).
 
-2. Drag and drop **Data Table** widget onto the page.
+2. Drag and drop the **Data Table** widget onto the page.
 
 [![](/learn/assets/drop-datatable-dynamicform.png)](/learn/assets/drop-datatable-dynamicform.png)
 
-3. Configure the Data by selecting the service type as Database CRUD and enter the Service, Table Name, and Variable Name. Click **Next** to confirm the details.
+3. Configure the Data by selecting the service type as Database CRUD and provide the Service, Table Name, and Variable Name. Click **Next** to confirm the details.
 
 [![](/learn/assets/configure-liveform-admindynamic.png)](/learn/assets/configure-liveform-admindynamic.png)
 
 4. Configure the Layout, Table Columns, Form Layout, and Form Fields. To configure a data table widget, see [Data Table Configuration](https://docs.wavemaker.com/learn/app-development/widgets/datalive/datatable/data-table-basic-usage).
 
-5. Once the datatable is configured, click Preview.
+5. Once the **Data Table** is configured, click Preview.
 
-6. Click on **New** and enter Name, Displayname, Type, and Widget as given in the metadata. Click **Save** to save the field details in the Form.
+6. Click **New** and enter Name, Displayname, Type, and Widget as given in the metadata. Click **Save** to save the field details in the Form.
 
 [![](/learn/assets/enter-field-adminform.png)](/learn/assets/enter-field-adminform.png)
 

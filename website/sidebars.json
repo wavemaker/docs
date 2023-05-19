@@ -843,11 +843,13 @@
 			"items": [
 				"how-tos/using-app-environment-properties",
 				"how-tos/consuming-existing-wm-api-into-another-wm-project",
+				"how-tos/dynamic-form",
 				"how-tos/using-post-method-send-data-rest-api",
 				"how-tos/request-response-processing-rest-services",
 				"how-tos/intercept-requests-responses-api-calls-one-place",
 				"how-tos/websocket-usage-chatroom-app",
-				"how-tos/working-api-with-different-pagination-formats"
+				"how-tos/working-api-with-different-pagination-formats",
+				"how-tos/adding-ui-for-api-server-side-pagination"
 			]
 		},
 		{
