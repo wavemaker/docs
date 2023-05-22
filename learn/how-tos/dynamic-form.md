@@ -16,31 +16,31 @@ Following are the differences described to understand which type of Form is appr
 
 ```mermaid
 graph LR
-    A[Third Party <br> Backend Developer] -.- G((1))-.-> B[CircleCreates a service/API to fetch form metadata]
-    B[CircleCreates a service/API to fetch form metadata] --> C[Builds a dynamic form with the API]
-    D[WaveMaker <br> User Interface Developer ]  -.- H((2))-.-> C[Builds a dynamic form with the API]
-    C[Builds a dynamic form with the API] --> E[Enters the data through the dynamic form]
-    F[End User]  -.- I((3))-.-> E[Enters the data through the dynamic form]
+    A[Third-party/Backend Developer] -.- G((1))-.-> B[Creates Metadata and API] 
+    B[Creates Metadata and API] --> C[Builds Dynamic Form with the API]
+    D[WaveMaker Developer ]  -.- H((2))-.-> C[Builds Dynamic Form with the API]
+    C[Builds Dynamic Form with the API] --> E[Enters Data through the Dynamic Form]
+    F[End User]  -.- I((3))-.-> E[Enters Data through the Dynamic Form]
     
 ```
 
 ## Dynamic Form Workflow
 
-1. Business Users (Third Party), work on the backend source code to create the API containing the metadata and share it with WaveMaker Platform to create a Dynamic Form.
+1. Business Users (Third Party), work on the backend source code to create the metadata and API. It is shared with WaveMaker developers to create a Dynamic Form.
 2. WaveMaker developers work on User Interface (UI) to create the required Dynamic Form with the received metadata.
 3. The end user can use the created Dynamic Form to provide the responses.
 
 ## Benefits of Dynamic Form
 
-### Business Users can Control the Fields to Display
+### Business Users can Control Fields to Display
 
 Dynamic Forms are metadata-driven, which allows business users to configure the fields to be displayed, including in what order, and how to be displayed, in real-time. These Forms are created with a simple UI that takes Form fields as inputs from business users.
 
-### Update Forms without frequent deployments
+### Update Forms without Frequent Deployments
 
 Dynamic Form is constructed over metadata, where they provide necessary details about the data such as name, type, widget type, and validation rules which help in avoiding repeated deployments to add new field details as it is done in Static Forms. Fields can be added in real-time by business users as per the requirement, as the metadata already contains the field details.
 
-## How to configure Dynamic Form
+## How to Configure Dynamic Form
 
 You can create or import a service where the service is metadata. For example, WaveMaker accepts metadata in the following format.
 
