@@ -746,7 +746,7 @@ const WidgetTabItems = () => {
   let data = []
   for (let props in widgetsData) {
     data.push(<>
-      <h2 class="widget-header" key={props}>{widgetsData[props].tab}</h2>
+      <h2 className="widget-header" key={props}>{widgetsData[props].tab}</h2>
       <Widgets content={widgetsData[props].content} />
     </>);
   }
