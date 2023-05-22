@@ -10,9 +10,7 @@ sidebar_label: "Non Root WME Execution"
 
 #### Platform Instance
 
-- If the user given to the Platform who does not have privileged access, then provide the below permssions for the user on Platform Instance after installing the required softwares.
-
-- Give permission to manage docker services, chown, and other for required commands by adding the following content in sudoers file.
+- Please add below content in sudoers file so that the non-root-user can excute the commands mentioned in the below content as a previliged user. 
 
 ```bash
 sudo echo "<non-root-execution-user-name> ALL=(ALL) NOPASSWD: /bin/systemctl daemon-reload, /bin/systemctl restart docker, /bin/systemctl status docker, /bin/systemctl stop docker, /bin/systemctl start docker, /usr/sbin/service docker restart, /usr/sbin/service docker start, /usr/sbin/service docker stop, /usr/sbin/service docker status, /sbin/ip link set docker0 down, /sbin/ip link del dev docker0 type bridge, /usr/bin/chown" >> /etc/sudoers
@@ -21,9 +19,9 @@ sudo echo "<non-root-execution-user-name> ALL=(ALL) NOPASSWD: /bin/systemctl dae
 
   ```bash
   sudo usermod -aG docker <user>
-  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /usr/lib/systemd/system/
-  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/sysconfig/
-  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/systemd/system/
+  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /usr/lib/systemd/system
+  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/sysconfig
+  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/systemd/system
   sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /wm-runtime
   sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /wm-data
   ```
@@ -36,4 +34,4 @@ For external no new prerequisites required please follow steps mentioned in prev
 :::
 
 
-#### Once This is done switch to your not root user where you can  execute the WaveMaker installer for fresh setup/patch 
+#### Once This is done switch to your not root user where you can  execute the WaveMaker installation for fresh setup/patch 

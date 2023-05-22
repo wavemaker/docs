@@ -164,12 +164,12 @@ yum install http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-s
   - To Install Docker in RHEL 7 use the following commands
   
   ```bash
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-23.0.1-1.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.6.18-3.1.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-23.0.1-1.el8.x86_64.rpm
-    sudo yum install docker-ce-cli-23.0.1-1.el8.x86_64.rpm -y
-    sudo yum install containerd.io-1.6.18-3.1.el8.x86_64.rpm -y
-    sudo yum install docker-ce-23.0.1-1.el8.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-23.0.1-1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.6.18-3.1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-23.0.1-1.el7.x86_64.rpm
+    sudo yum install docker-ce-cli-23.0.1-1.el7.x86_64.rpm -y
+    sudo yum install containerd.io-1.6.18-3.1.el7.x86_64.rpm -y
+    sudo yum install docker-ce-23.0.1-1.el7.x86_64.rpm -y
   ```  
 
   - To Install Docker in RHEL 8 use the following commands
