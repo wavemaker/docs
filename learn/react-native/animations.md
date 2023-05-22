@@ -1,5 +1,5 @@
 ---
-title: "Running Animations in React Native App"
+title: "Apply Animations"
 sidebar_label: "Animations"
 id: "animations"
 ---
