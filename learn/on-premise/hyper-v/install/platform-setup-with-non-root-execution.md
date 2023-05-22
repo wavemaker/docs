@@ -19,9 +19,9 @@ sudo echo "<non-root-execution-user-name> ALL=(ALL) NOPASSWD: /bin/systemctl dae
 
   ```bash
   sudo usermod -aG docker <user>
-  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /usr/lib/systemd/system/
-  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/sysconfig/
-  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/systemd/system/
+  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /usr/lib/systemd/system
+  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/sysconfig
+  sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/systemd/system
   sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /wm-runtime
   sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /wm-data
   ```

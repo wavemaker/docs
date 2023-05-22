@@ -22,10 +22,10 @@ sidebar_label: "Upgrade Non Root WME Execution"
 - Change permission for few directories to non-root user after docker installation/upgrade
 
     ```bash
-        sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /usr/lib/systemd/system/
-        sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/sysconfig/
-        sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/systemd/system/
-        sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /wm-runtime/setup/setup-registry-server/registry/
+        sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /usr/lib/systemd/system
+        sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/sysconfig
+        sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /etc/systemd/system
+        sudo chown -R <non-root-execution-user-name>:<non-root-execution-user-name> /wm-runtime/setup/setup-registry-server/registry
     ```
 
 
