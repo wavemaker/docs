@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.3.0](/learn/wavemaker-release-notes/v11-3-0) <p style={{color:"red"}}>*latest*</p> | This release includes new features, including Publish to Marketplace and consume, Semantic Versioning support, React Native Lottie file support, loaders and more. | 17 April 2023 |
+|[WaveMaker 11.3.2](/learn/wavemaker-release-notes/v11-3-2) <p style={{color:"red"}}>*latest*</p> | This release includes enhancements related to mobile and bug fixes related to Summary Row, Material 2.0 theme, assigning server port, and more. | 22 May 2023 |
+|[WaveMaker 11.3.0](/learn/wavemaker-release-notes/v11-3-0) | This release includes new features, including Publish to Marketplace and consume, Semantic Versioning support, React Native Lottie file support, loaders and more. | 17 April 2023 |
 |[WaveMaker 11.2.5](/learn/wavemaker-release-notes/v11-2-5) | This release includes bug fixes for accessibility in widgets and In-memory sessions. | 20 March 2023 |
 |[WaveMaker 11.2.4](/learn/wavemaker-release-notes/v11-2-4) | This release includes bug fixes for Dynamic Data Table infinite scroll pagination and keyboard date picker. | 06 February 2023 |
 |WaveMaker 11.2.3 | Fixed the Connectors artifact import issue, which earlier failed and could not run existing connectors. | 23 January 2023 |
