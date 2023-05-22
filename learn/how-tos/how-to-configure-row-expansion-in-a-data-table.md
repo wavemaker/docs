@@ -65,6 +65,24 @@ You created a partial which contains employee information and page params.
 
 Now, set filter criteria in the variables for _HrdbEmployeeData_ to _deptId_ **Is equal to** _bind.pageParams.deptID, _as shown in the image below:
 
+## Binding deptID with Page Param
+
+Here, we are binding deptId with the page param to filter the records for List based on the filter condition.
+
+- Go to Variables Dialog.
+- Select to **HrdbEmployeeData** variable.
+- Go to the **Filter Criteria** tab
+- Select **deptId** and set condition **is equal to**, as shown in the image below.
+
+![rowexpansion-pageparam](/learn/assets/rowexpansion-pageparam.png)
+
+- Click Bind, the below dialog will open.
+- Go to the **Page Params** tab and then select **deptId** and click **Bind**.
+
+![rowexpansion-pageparam-image](/learn/assets/rowexpansion-pageparam-image.png)
+
+- Click on **Save & Close**.
+
 [![](/learn/assets/employeeparambindingdeptid.png)](/learn/assets/employeeparambindingdeptid.png)In the department page, you bind the Employee (partial) and Page Params and set the row expansion property.
 
 ## Configure row expansion property

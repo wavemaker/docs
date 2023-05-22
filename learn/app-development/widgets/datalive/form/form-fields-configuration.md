@@ -27,6 +27,7 @@ If a custom column is not selected on the left panel, it will be deleted when th
 
 [![](/learn/assets/Form_Fields.png)](/learn/assets/Form_Fields.png)
 
+![image](/learn/assets/form_field_properties.png)
 ## Form Validations
 
 There are various ways in which Form fields can be validated depending upon the underlying data type. You can see these options in the properties panel for the selected field on the canvas.

@@ -14,13 +14,15 @@ The document provides steps for connecting to a MySQL database using SSL in Wave
 - Truststore ( Required if server authentication is enabled)
 - Client Keystore ( Required if client authentication is enabled)
 
-## Steps to connect to MySQL using SSL
+
+## Steps to Connect to MySQL using SSL
 
 1. Navigate to the Database section, import a database and before test connection click on advanced settings and edit the Connection(JDBC) URL as shown below.
 
 [![](/learn/assets/advanced-settings.png)](/learn/assets/advanced-settings.png)
 
 Below is the sample JDBC URL with SSL properties.
+
 ```
 jdbc:mysql://host:3306/{dbname}?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&sslMode={sslMode}
 &trustCertificateKeyStoreUrl={truststore}
@@ -29,24 +31,43 @@ jdbc:mysql://host:3306/{dbname}?useUnicode=yes&characterEncoding=UTF-8&zeroDateT
 &clientCertificateKeyStorePassword={client-keystore-password}
 ```
 
+#### Connect to PostgreSQL using SSL
+
+If you want to connect to PostgreSQL database using SSL, follow the same steps specified for [MySQL](#steps-to-connect-to-mysql-using-ssl). Change the JDBC URL as mentioned below.
+
+
+```url
+jdbc:postgresql://host:3306/{dbname}?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&sslMode={sslMode}
+&trustCertificateKeyStoreUrl={truststore}
+&trustCertificateKeyStorePassword={truststore-password}
+&clientCertificateKeyStoreUrl={client-keystore}
+&sslfactory=org.postgresql.ssl.SingleCertValidatingFactory
+&clientCertificateKeyStorePassword={client-keystore-password}
+```
+
 ### SSL Mode
 
 MySQL provides 5 options for configuring SSL as shown below
-- **DISABLED**
 
-    Creates connection without SSL.
+- **DISABLED**
+    
+Creates connection without SSL.
+
 - **PREFERRED**
 
-	Tries to connect using SSL, if the database does not support SSL it connects with a regular connection.
+Tries to connect using SSL, if the database does not support SSL it connects with a regular connection.
+
 - **REQUIRED**
 
-	Tries to connect using SSL, if the database does not support SSL connection is not established. Certificate Authority(CA) and hostname are not verified here. 
+Tries to connect using SSL, if the database does not support SSL connection is not established. Certificate Authority(CA) and hostname are not verified here.
+
 - **VERIFY_CA**
 
-	Always connect with SSL. Verifies CA, but allows connection even if Hostname does not match.
+Always connect with SSL. Verifies CA, but allows connection even if Hostname does not match.
+
 - **VERIFY_IDENTITY**
 
-	Always connect with SSL. Verifies both CA and Hostname.
+Always connect with SSL. Verifies both CA and Hostname.
 
 ### Trust certificate KeyStore (Server authentication)
 
@@ -75,7 +96,6 @@ If the key store file is uploaded, the connector also requires a key store  pass
 If the database is already imported click on advanced settings in the database section and edit the JDBC URL and save the details.
 
 :::note
-The jdbc properties mentioned above are for MySQL version 8.0.30. If you are using a different version please refer to the MySQL documentation for the properties. 
+The JDBC properties mentioned above are for MySQL version 8.0.30. If you are using a different version please refer to the MySQL documentation for the properties. 
 Please refer [MySQL documentation](https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-reference-using-ssl.html) to enable SSL, generate truststore and keystore.
-
 :::
