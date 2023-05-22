@@ -574,7 +574,8 @@
 					"label": "Logs Aggregation",
 					"items": [
 						"on-premise/observability/logs-aggregation/overview",
-						"on-premise/observability/logs-aggregation/kibana"
+						"on-premise/observability/logs-aggregation/kibana",
+						"on-premise/observability/logs-aggregation/fluentd"
 					]
 				},
 				{
@@ -595,8 +596,10 @@
 
 			"items": [
 				"on-premise/upgrade/upgrade-setup",
+				"on-premise/upgrade/upgrade-prerequisites",
 				"on-premise/upgrade/download-copy-patch",
 				"on-premise/upgrade/extract-patch",
+				"on-premise/upgrade/passivate-containers",
 				"on-premise/upgrade/run-patch",
 				"on-premise/upgrade/docker-upgrade",
 				"on-premise/upgrade/os-upgrade"
