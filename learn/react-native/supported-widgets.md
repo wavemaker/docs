@@ -68,7 +68,7 @@ In WaveMaker, the following [Widgets](/learn/app-development/widgets/widget-libr
 | ![](/learn/assets/supported.png) |Icon  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/icon/) | 
 | ![](/learn/assets/supported.png) |Picture  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/picture/) | 
 | ![](/learn/assets/unsupported.png) |Tree | |
-| ![](/learn/assets/unsupported.png) |Video | |
+| ![](/learn/assets/supported.png) |Video | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/video/) |
 | ![](/learn/assets/unsupported.png) |Audio | |
 | ![](/learn/assets/unsupported.png) |html | |
 | ![](/learn/assets/supported.png) |Message  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/message/) | 
@@ -105,6 +105,7 @@ In WaveMaker, the following [Widgets](/learn/app-development/widgets/widget-libr
 | ![](/learn/assets/supported.png) |Login  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/advanced/login/) | 
 | ![](/learn/assets/unsupported.png) |Marquee | |
 | ![](/learn/assets/supported.png) |Carousel  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/advanced/carousel/) | 
+| ![](/learn/assets/supported.png) | Web View | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/advanced/webview/) |
 
 ## Dialog Widgets
 
