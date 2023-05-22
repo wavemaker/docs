@@ -5,15 +5,15 @@ id: "animations"
 ---
 ---
 
-Include animations on a widget using an **Animate** method. WaveMaker platform uses the [react-native-animatable](https://github.com/oblador/react-native-animatable) library to enable the **Animate** method, and `react-native-animatable` is similar to CSS animation. However, you should animation in JavaScript. 
+Add animations to a widget using an **Animate** method. WaveMaker platform uses the [react-native-animatable](https://github.com/oblador/react-native-animatable) library to enable the **Animate** method, and `react-native-animatable` is similar to CSS animation. However, animation should be written in JavaScript.
 
 In the following documentation, learn how to define animations in React Native projects.
 
 ## How to Animate 
 
-The **Animate** method is available for all WaveMaker Widgets. In the following example, see referencing of the WaveMaker widget and invoke the Animate method.
+The **Animate** method is available for all WaveMaker Widgets. In the following example, see the reference for a WaveMaker widget, which invokes the Animate method.
 
-```
+```js
 Page.Widgets.container1.animate({
   animation: {
     0 : {
@@ -85,7 +85,7 @@ In this example, a toggle is going to be created using containers. Using this to
 
 ### Script
 
-```
+```js
 Page.light = false;
 Page.onReady = function() {
     toggleLight();
@@ -146,7 +146,7 @@ Page.indicatorTap = function($event, widget) {
 
 ### Styles
 
-```
+```css
 .day .app-container,
 .day .app-page-content {
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
