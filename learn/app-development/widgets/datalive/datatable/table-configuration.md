@@ -35,7 +35,7 @@ End-user can also be provided with a way to select rows and columns of a table.
 - Column selection needs to be further configured using the On Column Select and On Column Deselect events.
 - For Quick Edit and Inline Edit, New row position can be specified to be at the bottom or at the top of the Data Table.
 
-[![](/learn/assets/table-config1.png)](/learn/assets/table-config1.png)
+![table-config1](/learn/assets/table-config1.png)
 
 ### Pagination
 
@@ -53,7 +53,7 @@ The user can Export the Data Table to an Excel or CSV format. This option is ava
 
 Only the contents displayed in the Data Table will be exported, as opposed to the contents of the entire underlying database table. For each column selected for display, you can customize the export value using Value Expressions. Value Expression **has** to be set for custom fields.
 
-[![](/learn/assets/table-config2.png)](/learn/assets/table-config2.png)
+![table-config2](/learn/assets/table-config2.png)
 
 ### Message
 
