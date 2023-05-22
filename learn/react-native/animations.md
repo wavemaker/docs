@@ -5,11 +5,13 @@ id: "animations"
 ---
 ---
 
-Include animations on a widget using an **s** method. WaveMaker internally uses the [react-native-animatable](https://github.com/oblador/react-native-animatable) library to enable the animate method, and `react-native-animatable` is comparable to CSS animation. However, animation should be written in JavaScript. In the following documentation, learn how to define animations in React Native projects.
+Include animations on a widget using an **Animate** method. WaveMaker platform uses the [react-native-animatable](https://github.com/oblador/react-native-animatable) library to enable the **Animate** method, and `react-native-animatable` is similar to CSS animation. However, you should animation in JavaScript. 
+
+In the following documentation, learn how to define animations in React Native projects.
 
 ## How to Animate 
 
-The **Animate** method is available for all WaveMaker Widgets. Get reference of the WaveMaker widget and invoke the Animate method.
+The **Animate** method is available for all WaveMaker Widgets. In the following example, see referencing of the WaveMaker widget and invoke the Animate method.
 
 ```
 Page.Widgets.container1.animate({
@@ -27,10 +29,11 @@ Page.Widgets.container1.animate({
   iterationCount: 'infinite'
 });
 ```
-## Properties to pass to animate method
+
+## Properties to Pass to Animate method
 
 :::note
-Other properties will be passed down to underlying component.
+Other properties will be passed down to the underlying component.
 :::
 
 | Prop | Description | Default |
@@ -52,6 +55,7 @@ Other properties will be passed down to underlying component.
 
 
 ## Example
+
 In this example, a toggle is going to be created using containers. Using this toggle, background of the page content can be changed. First create a new page.
 
 ### Markup
