@@ -14,6 +14,22 @@ Following are the differences described to understand which type of Form is appr
 | Static display with Fixed fields and labels | Interactive display No fixed fields and labels |
 | Upfront knowledge about fields i.e Validation, layout, widget type, formatting etc | No configuration is done upfront, only metadata is available |
 
+```mermaid
+graph LR
+    A[Third Party <br> Backend Developer] -.- G((1))-.-> B[CircleCreates a service/API to fetch form metadata]
+    B[CircleCreates a service/API to fetch form metadata] --> C[Builds a dynamic form with the API]
+    D[WaveMaker <br> User Interface Developer ]  -.- H((2))-.-> C[Builds a dynamic form with the API]
+    C[Builds a dynamic form with the API] --> E[Enters the data through the dynamic form]
+    F[End User]  -.- I((3))-.-> E[Enters the data through the dynamic form]
+    
+```
+
+## Dynamic Form Workflow
+
+1. Business Users (Third Party), work on the backend source code to create the API containing the metadata and share it with WaveMaker Platform to create a Dynamic Form.
+2. WaveMaker developers work on User Interface (UI) to create the required Dynamic Form with the received metadata.
+3. The end user can use the created Dynamic Form to provide the responses.
+
 ## Benefits of Dynamic Form
 
 ### Business Users can Control the Fields to Display
@@ -116,3 +132,4 @@ To create Business User (BU) Form, you can create Static Form only in cases when
 You can manage the fields in the Form.
 
 [![](/learn/assets/adminform-entry-dynamicform.png)](/learn/assets/adminform-entry-dynamicform.png)
+
