@@ -23,9 +23,9 @@ export default class Index extends React.Component {
         let categoryComponents = [];
         let categories = [
             { href: '/learn/tutorials', lightIcon: '/learn/img/tutorials.svg', darkIcon: '/learn/img/tutorialsDark.svg', label: 'Tutorials' },
-            { href: '/learn/react-native', lightIcon: '/learn/img/reactNativeMobileApp.svg', darkIcon: '/learn/img/reactNativeMobileAppDark.svg', label: 'Develop Mobile App' },
+            { href: '/learn/react-native', lightIcon: '/learn/img/reactNativeMobileApp.svg', darkIcon: '/learn/img/reactNativeMobileAppDark.svg', label: 'Mobile App Development' },
             { href: '/learn/on-premise/welcome', lightIcon: '/learn/img/enterpriseGuide.svg', darkIcon: '/learn/img/enterpriseGuideDark.svg', label: 'Enterprise Guide' },
-            { href: '/learn/app-development/custom-widgets/prefabs-overview', lightIcon: '/learn/img/tailorPrefabs.svg', darkIcon: '/learn/img/tailorPrefabsDark.svg', label: 'Build Prefabs' }]
+            { href: '/learn/app-development/custom-widgets/prefabs-overview', lightIcon: '/learn/img/tailorPrefabs.svg', darkIcon: '/learn/img/tailorPrefabsDark.svg', label: 'Prefab Building' }]
         categories.forEach((category) => {
             categoryComponents.push(
                 <div className="col" key={categories.indexOf(category)}>
@@ -106,7 +106,10 @@ export default class Index extends React.Component {
                                             <a href='/learn/'>What's new?</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/react-native'>React Native Studio</a>
+                                            <a href='/learn/app-development/custom-widgets/enterprise-marketplace/'>Prefab Marketplace</a>
+                                        </li>
+                                        <li>
+                                            <a href='/learn/react-native/react-native-overview'>React Native Studio</a>
                                         </li>
                                         <li>
                                             <a href='/learn/app-development/services/java-services/api-composer-toolkit'>API Orchestration</a>
