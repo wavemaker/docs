@@ -19,7 +19,7 @@ WaveMaker 11 beta release features significant advancements shaping the practica
 
 ## Introducing React Native in WaveMaker
 
-We introduce React Native, a new platform for developing native apps, including iOS and Android app development, all within WaveMaker Studio. The best part is that it requires almost no learning curve if you are already a WaveMaker developer. It offers platform-specific versions of components so that a single codebase can share code across Android and iOS stores. [Read more](/learn/react-native/react-native).
+We introduce React Native, a new platform for developing native apps, including iOS and Android app development, all within WaveMaker Studio. The best part is that it requires almost no learning curve if you are already a WaveMaker developer. It offers platform-specific versions of components so that a single codebase can share code across Android and iOS stores. [Read more](/learn/react-native/react-native-overview).
 
 ![react native project creation](/learn/assets/react-native-project-creation.png)
 
