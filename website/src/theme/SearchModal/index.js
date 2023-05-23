@@ -38,6 +38,10 @@ import { useTrapFocus } from '@docsearch/react/dist/esm/useTrapFocus';
 import { groupBy, identity, noop, removeHighlightTags } from '@docsearch/react/dist/esm/utils';
 export function DocSearchModal(_ref) {
     var appId = _ref.appId,
+        filters = _ref.filters,
+        autoFocus = _ref.autoFocus,
+        _ref$onOpen = _ref.onOpen,
+        onOpen = _ref$onOpen === void 0 ? noop : _ref$onOpen,
         apiKey = _ref.apiKey,
         indexName = _ref.indexName,
         _ref$placeholder = _ref.placeholder,
@@ -131,10 +135,22 @@ export function DocSearchModal(_ref) {
             navigator: navigator,
             onStateChange: function onStateChange(props) {
                 setState(props.state);
-                if (props.state.query != '')
-                    document.body.classList.add("search-active")
-                else
-                    document.body.classList.remove("search-active")
+                if (!props.prevState.isOpen && props.state.query != '') {
+                    onOpen();
+                    document.querySelector('.DocSearch-Input').value = props.state.query;
+                }
+                if (!props.state.isOpen && props.prevState.isOpen) {
+                    setState({
+                        query: '',
+                        collections: [],
+                        completion: null,
+                        context: {},
+                        isOpen: false,
+                        activeItemId: null,
+                        status: 'idle'
+                    })
+                    document.querySelector('.DocSearch-Input').value = '';
+                }
             },
             getSources: function getSources(_ref2) {
                 var query = _ref2.query,
@@ -152,7 +168,8 @@ export function DocSearchModal(_ref) {
                 return searchClient.search([{
                     query: query,
                     indexName: indexName,
-                    hitsPerPage: 5
+                    hitsPerPage: 5,
+                    filters: filters
                 }]).catch(function (error) {
                     // The Algolia `RetryError` happens when all the servers have
                     // failed, meaning that there's no chance the response comes
@@ -245,7 +262,9 @@ export function DocSearchModal(_ref) {
     // keyboard appearing.
     // We therefore need to refresh the autocomplete instance to load all the
     // results, which is usually triggered on focus.
-
+    React.useEffect(function () {
+        inputRef.current.value = state.query;
+    }, [state])
     React.useEffect(function () {
         if (initialQuery.length > 0) {
             refresh();
@@ -280,7 +299,7 @@ export function DocSearchModal(_ref) {
         ref: formElementRef
     }, /*#__PURE__*/React.createElement(SearchBox, _extends({}, autocomplete, {
         state: state,
-        autoFocus: _ref.autoFocus,
+        autoFocus: autoFocus,
         inputRef: inputRef,
         isFromSelection: Boolean(initialQuery) && initialQuery === initialQueryFromSelection,
         translations: searchBoxTranslations,
