@@ -5,7 +5,7 @@ sidebar_label: "React Native or Cordova"
 ---
 ---
 
-WaveMaker supports [React Native](/learn/react-native/react-native) from [WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1) onwards and [Cordova](/learn/hybrid-mobile/building-hybrid-mobile-apps) framework from quite some time. But the decision of which framework to use has several considerations, which are discussed in this document. The following details can help you choose whether to use Cordova or React Native to develop a new mobile application in WaveMaker Studio.
+WaveMaker supports [React Native](/learn/react-native/react-native-overview) from [WaveMaker 11 Beta](/learn/wavemaker-release-notes/v11-0-1) onwards and [Cordova](/learn/hybrid-mobile/building-hybrid-mobile-apps) framework from quite some time. But the decision of which framework to use has several considerations, which are discussed in this document. The following details can help you choose whether to use Cordova or React Native to develop a new mobile application in WaveMaker Studio.
 
 ## Performance
 

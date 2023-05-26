@@ -634,7 +634,7 @@
 			"label": "React Native",
 
 			"items": [
-				"react-native/react-native",
+				"react-native/react-native-overview",
 				"react-native/feature-support",
 				"react-native/supported-widgets",
 				"react-native/supported-variables",

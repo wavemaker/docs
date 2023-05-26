@@ -1,6 +1,6 @@
 ---
 title: "Welcome to React Native Studio"
-id: "react-native"
+id: "react-native-overview"
 sidebar_label: "Welcome"
 ---
 ---
