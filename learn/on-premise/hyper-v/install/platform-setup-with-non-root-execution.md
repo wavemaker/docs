@@ -15,6 +15,13 @@ sidebar_label: "Non Root WME Execution"
 ```bash
 sudo echo "<non-root-execution-user-name> ALL=(ALL) NOPASSWD: /bin/systemctl daemon-reload, /bin/systemctl restart docker, /bin/systemctl status docker, /bin/systemctl stop docker, /bin/systemctl start docker, /usr/sbin/service docker restart, /usr/sbin/service docker start, /usr/sbin/service docker stop, /usr/sbin/service docker status, /sbin/ip link set docker0 down, /sbin/ip link del dev docker0 type bridge, /usr/bin/chown" >> /etc/sudoers
 ```
+
+#### For an Example
+
+```bash
+sudo echo "non-root-username ALL=(ALL) NOPASSWD: /bin/systemctl daemon-reload, /bin/systemctl restart docker, /bin/systemctl status docker, /bin/systemctl stop docker, /bin/systemctl start docker, /usr/sbin/service docker restart, /usr/sbin/service docker start, /usr/sbin/service docker stop, /usr/sbin/service docker status, /sbin/ip link set docker0 down, /sbin/ip link del dev docker0 type bridge, /usr/bin/chown" >> /etc/sudoers
+```
+
 - Change permission for few directories to non-root user after docker installation/upgrade
 
   ```bash
