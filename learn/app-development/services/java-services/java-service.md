@@ -49,5 +49,64 @@ MyJavaController.java, in this example - This file contains the details related 
 `MyJavaService_API.json`, in this example - contains the file structure and details as used by the API Documentation. This is available only during the design time.
 
 ### Spring Bean Configuration File
+
 `MyJavaService.spring.xml`, in this example - Bean classes for service/method lookup
 
+## Status Code
+
+HTTP status code is received as a response that indicates if the HTTP request is successful. For example, `404` is a status code to show that the requested resource is unavailable but may be available in the future.
+
+### To Set Custom Status Code in Java Service
+
+In Java Service, you can customize the status code to be thrown as the response to any request.
+
+**Required Import Statements:**
+
+```Java
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+```
+
+**Example to Set Status Code:**
+
+```Java
+public String sampleJavaOperation(String name, HttpServletRequest request, HttpServletResponse response) {
+        logger.info("Starting sample operation with request url " + request.getRequestURL().toString());
+        response.setStatus(400);
+        return null;
+}
+```
+
+### To Set Custom Error Message in Java Service
+
+In Java Service, you can customize the error message to be displayed when the request fails.
+
+**Required import statements:**
+
+```Java
+import com.wavemaker.commons.MessageResource; 
+import com.wavemaker.commons.WMRuntimeException;
+
+```
+
+**Example to set error message:**
+
+```Java
+
+public User getUserById(Integer userid) 
+{        
+    try        
+    {          
+        User user = userService.getById(userid);         
+        return user;                
+        }        
+        catch(Exception e)        
+        {        
+            //Customized error message.         
+            throw new WMRuntimeException(MessageResource.create("MESSAGE_USER_NOT_FOUND"));        
+            }     
+}
+
+```
