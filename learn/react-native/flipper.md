@@ -26,21 +26,22 @@ Flipper is a tool for debugging iOS, Android, and React Native apps to access ap
 
 ![Flipper-Setup-Dialog](/learn/assets/flipper-setup-doctor-dialog.png)
 
-## Debug Android
+## Debug 
 
-For Android, run the follow command. 
+1. Open the project and preview the application
+
+2. Copy the preview URL. For example
+
+```
+https://wavemakeronline.com/…../{Project_Name}
+```
+For Android, run the following command.
 
 ```
 wm-reactnative run android "preview-link" --clean
 ```
 
-:::note
-You can skip the `clean` option after the initial run.
-:::
-
-## Debug iOS
-
-For iOS, run the follow command.
+For iOS, run the following command.
 
 ```
 wm-reactnative run ios "preview-link" --clean
@@ -50,7 +51,44 @@ wm-reactnative run ios "preview-link" --clean
 You can skip the `clean` option after the initial run.
 :::
 
-<!-- ![Flipper-preview](/learn/assets/flipper-setup-doctor-dialog.png) -->
+3. Once app is launched in the emulator or device open Flipper to debug the application.
+
+4. Select the Emulator/Device from App Inspect option
+
+![Flipper-Select-Device](/learn/assets/flipper-device-selection.png)
+
+5. For React Native applications, by default we can use the following plugins
+
+![Flipper-Select-Device](/learn/assets/flipper-default-plugins.png)
+
+### Crash Reporter
+
+The Crash Reporter plugin shows a notification in Flipper whenever an app crashes. The notification shows the crash information such as stacktrace and other metadata.
+
+### Logs
+
+The Logs plugin shows device logs without any additional setup, there are plugins for both Device and App Logs.
+
+![Flipper-Select-Device](/learn/assets/flipper-logs-plugins.png)
+
+### React DevTools
+
+The React DevTools shows the React Native Component Tree, which can be used to edit the component properties.
+
+![Flipper-Select-Device](/learn/assets/flipper-devtools-plugins.png)
+
+:::note
+run the following command if flipper fails to connect to device
+```
+adb reverse tcp:8097 tcp:8097
+```
+:::
+
+### Network
+
+The Network plugin provides the Network Inspector, which is used to inspect outgoing network traffic in your apps. You can easily browse all requests being made and their responses. The plugin also supports gzipped responses.
+
+![Flipper-Select-Device](/learn/assets/flipper-network-plugins.png)
 
 ## Access Flipper Plugins
 

@@ -3,10 +3,14 @@ title: "IPA: Debugging React Native iOS App Installed in Mobile"
 id: "expo-ipa-debug"
 sidebar_label: "Debug IPA"
 ---
+
 ---
 
-You can install a WaveMaker-developed React Native app on your mobile device and debug the application. In this document, we use IPA files to debug an iOS application. 
+You can install a WaveMaker-developed React Native app on your mobile device and debug the application. In this document, we use IPA files to debug an iOS application.
 
+:::warning
+This is deprecated please check [Flipper](/learn/react-native/flipper) to debug applications
+:::
 
 ## Pre-requisites
 
@@ -42,7 +46,6 @@ npm install -g @wavemaker/wm-reactnative-cli
 
 ## Preparing for Debugging an iOS App
 
-
 1. Ensure the iPhone is connected to your system with a USB.
 2. Export and download the React Native zip from WaveMaker Studio.
 3. Perform an iOS build using [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli).
@@ -53,22 +56,22 @@ npm install -g @wavemaker/wm-reactnative-cli
 
 ![Xcode_build](/learn/assets/xcode_build.png)
 
-## Step-by-step Instructions 
+## Step-by-step Instructions
 
 :::tip
 The following procedure is the same for Android and iOS apps.
 :::
 
 1. Shake the phone until the following screen pops up.
- 
- ![expo developer menu](/learn/assets/expo-developer-menu.png)
+
+![expo developer menu](/learn/assets/expo-developer-menu.png)
 
 2. In the developer menu, click on the `Debug Remote JS` option to debug the JavaScript of the app. The following window should open in the Chrome browser.
 
- ![debugger-ui](/learn/assets/debugger-ui.png)
+![debugger-ui](/learn/assets/debugger-ui.png)
 
 3. Open developer tools on this page. You can perform JS debugging.
-4. Execute react-devtools on a terminal. 
+4. Execute react-devtools on a terminal.
 
 :::note
 If the installed react-devtools are incompatible, install the suggested tools when the react-devtools are opened and follow this step again.
@@ -78,4 +81,3 @@ If the installed react-devtools are incompatible, install the suggested tools wh
 6. Now, react-devtools should show the component tree.
 
 ![React Dev Tools](/learn/assets/react-dev-tools.png)
-

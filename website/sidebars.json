@@ -639,8 +639,6 @@
 				"react-native/theme",
 				"react-native/export-react-native-zip",
 				"react-native/build-installers",
-				"react-native/expo-apk-debug",
-				"react-native/expo-ipa-debug",
 				"react-native/third-party-expo-plugins",
 				"react-native/splash-screen",
 				"react-native/web-view",				
@@ -1348,8 +1346,7 @@
 			"items": [
 				"app-development/widgets/advanced/login",
 				"app-development/widgets/advanced/marquee",
-				"app-development/widgets/advanced/carousel",
-				"app-development/widgets/advanced/custom"
+				"app-development/widgets/advanced/carousel"
 			]
 		},
 		{

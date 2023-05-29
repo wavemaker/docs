@@ -7,6 +7,10 @@ sidebar_label: "Debug APK"
 
 You can install a WaveMaker-developed React Native app on your mobile device and debug the application. In this document, we use APK files to debug an Android application. 
 
+:::warning
+This is deprecated please check [Flipper](/learn/react-native/flipper) to debug applications
+:::
+
 ## Pre-requisites
 
 1. A laptop or desktop with Linux, Windows, or macOS is recommended with the latest OS installed.
