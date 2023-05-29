@@ -52,6 +52,29 @@ MyJavaController.java, in this example - This file contains the details related 
 
 `MyJavaService.spring.xml`, in this example - Bean classes for service/method lookup
 
+## How to Print Logger Statement
+
+**Required Import Statements:**
+
+```Java
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+```
+
+When a Java service is created, it by default has the logger statement in the Java code. But to print a logger statement in a log file, you can make any one of the following changes.
+
+- Include `<logger name="PackageName.JavaServiceName" level="DEBUG"/>` in the `log4j2.xml` file.
+
+[![](/learn/assets/log4j2-add-statement.png)](/learn/assets/log4j2-add-statement.png)
+
+To know more about the `log4j2.xml` file, see [Enabling logs](https://docs.wavemaker.com/learn/app-development/dev-integration/chrome-developer-tool/#enabling-logs)
+
+- Replace `logger.debug("Statement")` with `logger.info("Statement")` in the Java service.
+
+[![](/learn/assets/logger.info-javaservice.png)](/learn/assets/logger.info-javaservice.png)
+
 ## Status Code
 
 HTTP status code is received as a response that indicates if the HTTP request is successful. For example, `404` is a status code to show that the requested resource is unavailable but may be available in the future.
