@@ -6,11 +6,11 @@ sidebar_label: "WebView"
 ---
 import webviewInject from '/learn/assets/webview-inject.gif';
 
-WebView renders web content in a native view, such as In-app-browser. This allows to communicate between the WaveMaker app and Web Apps, and also inject Script and CSS to Web Apps.
+WebView renders web content in a native view, such as In-app-browser. This allows communication between the WaveMaker app and Web Apps. Also, inject Script and CSS to Web Apps.
 
 ## Add Script to WebView
 
-To execute JavaScript in WebView, call `executeScript` function and receive the result.
+To execute JavaScript in WebView, call the `executeScript` function and receive the result.
 
 ```
 Page.Widgets.webview1.executeScript(`function() {
@@ -25,7 +25,7 @@ Page.Widgets.webview1.executeScript(`function() {
 
 ## Styling WebView
 
-To inject CSS into WebView, call `injectCSS` function, as shown below.
+To inject CSS into WebView, call the `injectCSS` function, as shown below.
 
 ```
  Page.Widgets.webview1.insertCSS(`
@@ -46,7 +46,7 @@ Execute the below code in WebView to send the string data to React Native app, w
 window.ReactNativeWebView && window.ReactNativeWebView.postMessage('Message from web');
 ```
 
-### Scrip to add in React Native
+### Script to add in React Native
 
 In React Native app, add a JavaScript function for `onMessage` event, then handle the data that is sent from WebView.
 
@@ -59,7 +59,7 @@ Page.webview1Message = function(event, widget) {
 
 ## Example
 
-Below example shows Adding Script and CSS to Web App and Communication from Web App to React Native App.
+The following example shows adding script and CSS to Web App. It also shows how to communicate from Web App to React Native App.
 
 ### Web App
 
@@ -82,7 +82,9 @@ Below example shows Adding Script and CSS to Web App and Communication from Web 
     <wm-footer name="footer" content="footer"></wm-footer>
 </wm-page>
 ```
+
 #### Script
+
 ```js
 Page.onReady = function() {};
 

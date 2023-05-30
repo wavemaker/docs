@@ -40,7 +40,7 @@ wm-reactnative embed android –mp="${NATIVE_ANDROID_PROJECT_PATH}" "${REACT_NAT
 
 - After the command is executed, embed should get generated in the following path **dest_path/android-embed**.
 
-- Add the following line in project-level build.gradle.s
+- Add the following line in project-level build.gradle.
 
 ```
 apply from:'./rnApp/root.build.gradle'
@@ -91,7 +91,7 @@ The rnApp folder acts a placeholder and gets replaced with the actual content du
 
 - In project info.list, set `UIViewControllerBasedStatusBarAppearance` as **false**.
 
-- In the project bridge header, add `#import "ReactNativeView.h"`.
+- In the project bridge header, add `#import "ReactNativeView.h"`.    
 
 - Pod file changes required to React Native app are given by WaveMaker.
 
@@ -176,7 +176,7 @@ Add `android:name=".MainApplication"` to `application` tag in `rnApp/src/main/An
 
 ##### Activity Main Xml
 
-Add buttom to `app/src/main/res/layout/activity_main.xml`
+Add button to `app/src/main/res/layout/activity_main.xml`
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

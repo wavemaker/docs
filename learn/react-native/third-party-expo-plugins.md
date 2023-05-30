@@ -38,19 +38,22 @@ You'll need to pass the GitHub URL: `https://github.com/sboyina/my-expo-battery/
 
 This option allows users to upload their own customized plugin using tarball file (.tgz file).
 
-You can get the tarball(.tgz file) of expo-plugins by visiting `https://registry.npmjs.org/expo-plugin-name/expo-plugin-version` (you can find the tarball under dist key).
+You can get the tarball (.tgz file) of expo-plugins by visiting https://registry.npmjs.org/expo-plugin-name/expo-plugin-version 
+
+You can find the tarball under the dist key.
 
 ![Expo-plugins-local](/learn/assets/expo-plugins-local.png)
 
 ## Example
 
-1. Please import expo-battery plugin 
+1. Please import the **expo-battery** plugin.
 
 ![Expo Battery Import](/learn/assets/expo-plugins-import-example.png)
 
-2. In Script Tab, add the following code
+2. In the Script Tab, add the following code.
 
 ### Markup
+
 ```
 <wm-page name="mainpage">
     <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
@@ -81,6 +84,7 @@ You can get the tarball(.tgz file) of expo-plugins by visiting `https://registry
 ```
 
 ### Script
+
 ```js
 const battery = require('expo-battery');
 
@@ -93,6 +97,7 @@ Page.batteryLevel = async function() {
     Page.Widgets.label3.caption = batteryLevel;
 }
 ```
+
 3. Preview will show the Battery Level using `getBatteryLevelAsync` API.
 
 
@@ -100,7 +105,7 @@ Page.batteryLevel = async function() {
 
 ### Platform
 
-Third party plugins which are only supported on specific platforms can be implemented by using `Platform.OS`, As shown in the example below by importing `react-native` a condition to check platform can be added.
+Third-party plugins are supported only on specific platforms and these can be implemented by using `Platform.OS`. By importing `react-native` a condition to check the platform can be added. See the example below.
 
 ```js
 const Battery = require('expo-battery');
