@@ -9,7 +9,7 @@ sidebar_label: "Debug IPA"
 You can install a WaveMaker-developed React Native app on your mobile device and debug the application. In this document, we use IPA files to debug an iOS application.
 
 :::warning
-This is deprecated please check [Flipper](/learn/react-native/flipper) to debug applications
+This is deprecated. Please check [Flipper](/learn/react-native/flipper) to debug applications.
 :::
 
 ## Pre-requisites

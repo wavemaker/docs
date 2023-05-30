@@ -4,9 +4,10 @@ id: "third-party-expo-plugins"
 sidebar_label: "Third-party expo plugins"
 ---
 ---
+
 import pluginExample from '/learn/assets/expo-plugins-example.png';
 
-Add third-party plugins to your React Native projects.  WaveMaker extended support for npm, git, and local, in addition to Expo plugins. You can import plugins from the **Export as ReactNative Zip** Dialog.  
+Add third-party plugins to your React Native projects. WaveMaker extended support for npm, git, and local, in addition to Expo plugins. You can import plugins from the **Export as ReactNative Zip** Dialog.  
 
 ## Expo
 
@@ -20,14 +21,15 @@ This option will allow users to add a specified version of the plugin from the [
 
 ![Expo-plugins-npm](/learn/assets/expo-plugins-npm.png)
 
-## Github
-This option allows users to upload custom expo plugins from their git repo, we need to provide the plugin name and the git repository ("github:username/repository") and it will be added to the project.
+## GitHub
+
+This option allows you to upload custom expo plugins from the Git repo. For this, provide the plugin name and the Git repository details, such as `github:username/repository` and it will get added to the project.
+
+### GitHub Example
  
-``` 
-example:
 Git Repo URL - https://github.com/sboyina/my-expo-battery
-then we need to pass github url as "https://github.com/sboyina/my-expo-battery/tarball/main"
-```
+
+You'll need to pass the GitHub URL: `https://github.com/sboyina/my-expo-battery/tarball/main`
 
 ![Expo-plugins-git](/learn/assets/expo-plugins-git.png)
 

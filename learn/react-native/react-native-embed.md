@@ -24,11 +24,11 @@ When using this feature, you can add WaveMaker app to an existing native applica
 
 ## How it works
 
-Once the code is converted to native app, By running the CLI commands React Native code inside Embedded Application can updated. However, for the first time, The following changes must be implemented.
+Once the code is converted to a native app, by running the CLI commands, React Native code inside the Embedded Application can be updated. However, for the first time, you must implement the following setup.
 
 ## WaveMaker Embed Command
 
-To embed React native apps into native apps, changes are required in both React Native project and Native project.[@wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli) will handle the react native project changes. In order for changes in Native project, follow the steps below
+To embed React native apps into native apps, changes are required in both React Native project and the Native project. [@wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli) will handle the react native project requirements. In order for changes in the Native project, follow the steps below.
 
 ### Android
 
@@ -40,13 +40,13 @@ wm-reactnative embed android –mp="${NATIVE_ANDROID_PROJECT_PATH}" "${REACT_NAT
 
 - After the command is executed, embed should get generated in the following path **dest_path/android-embed**.
 
-- Add the following line in project-level build.gradle
+- Add the following line in project-level build.gradle.s
 
 ```
 apply from:'./rnApp/root.build.gradle'
 ```
 
-- Add the below line in project-level settings.gradle
+- Add the below line in project-level settings.gradle.
 
 ```
 apply from:'./rnApp/root.settings.gradle'
@@ -58,7 +58,7 @@ apply from:'./rnApp/root.settings.gradle'
 implementation (project(':rnApp'))
 ```
 
-- Make the MainApplication class inherit React Native Application Class
+- Make the MainApplication class inherit React Native Application Class.
 
 - Add the below code to start React native app.
 
@@ -71,13 +71,13 @@ startActivity(intent);
 
 ### iOS
 
-For changes in Native project, follow the steps below:
+For changes in the Native project, follow the steps below:
 
-1. Extract rnApp.zip, provided by WaveMaker. Copy the rnApp folder to iOS project.
+1. Extract **rnApp.zip**, provided by WaveMaker. Copy the **rnApp** folder to the iOS project.
 
 2. Open the Native project in Xcode.
 
-3. Add rnApp folder to the project in a new group.
+3. Add the **rnApp** folder to the project in a new group.
 
 ![Add Files](/learn/assets/xcode-addFiles.png)
 
@@ -86,12 +86,12 @@ For changes in Native project, follow the steps below:
 4. Add main.jsbundle and assets folder files to the project folder.
 
 :::note
-This rnApp folder acts a placeholder and gets replaced with the actual content during embed process.
+The rnApp folder acts a placeholder and gets replaced with the actual content during the embed process.
 :::
 
 - In project info.list, set `UIViewControllerBasedStatusBarAppearance` as **false**.
 
-- In project bridge header, add `#import "ReactNativeView.h"`
+- In the project bridge header, add `#import "ReactNativeView.h"`.
 
 - Pod file changes required to React Native app are given by WaveMaker.
 

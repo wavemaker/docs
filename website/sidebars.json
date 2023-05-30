@@ -635,6 +635,8 @@
 				"react-native/test-run",
 				"react-native/web-preview-debug",
 				"react-native/expo-debug",
+				"react-native/expo-apk-debug",
+				"react-native/expo-ipa-debug",
 				"react-native/flipper",
 				"react-native/theme",
 				"react-native/export-react-native-zip",
