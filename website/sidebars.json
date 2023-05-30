@@ -626,25 +626,55 @@
 			"label": "React Native",
 			"items": [
 				"react-native/react-native-overview",
-				"react-native/feature-support",
-				"react-native/supported-widgets",
-				"react-native/supported-variables",
-				"react-native/app-loader",
-				"react-native/styles",
-				"react-native/animations",
-				"react-native/test-run",
-				"react-native/web-preview-debug",
-				"react-native/expo-debug",
-				"react-native/expo-apk-debug",
-				"react-native/expo-ipa-debug",
-				"react-native/flipper",
-				"react-native/theme",
-				"react-native/export-react-native-zip",
-				"react-native/build-installers",
-				"react-native/third-party-expo-plugins",
-				"react-native/splash-screen",
-				"react-native/web-view",				
-				"react-native/react-native-embed"
+				{
+					"type": "category",
+					"label": "Features",
+					"items": [
+						"react-native/feature-support",
+						"react-native/supported-widgets",
+						"react-native/supported-variables"
+					]
+				},
+				{
+					"type": "category",
+					"label": "Style and Animation",
+					"items": [
+						"react-native/styles",
+						"react-native/theme",
+						"react-native/app-loader",
+						"react-native/animations",
+						"react-native/splash-screen"
+					]
+				},
+				{
+					"type": "category",
+					"label": "Test and Debug",
+					"items": [
+						"react-native/test-run",
+						"react-native/web-preview-debug",
+						"react-native/expo-debug",
+						"react-native/flipper",
+						"react-native/expo-apk-debug",
+						"react-native/expo-ipa-debug"
+					]
+				},
+				{
+					"type": "category",
+					"label": "Build",
+					"items": [	
+						"react-native/export-react-native-zip",
+						"react-native/build-installers",
+						"react-native/third-party-expo-plugins"
+					]
+				},
+				{
+					"type": "category",
+					"label": "App Integration",
+					"items": [	
+						"react-native/web-view",				
+						"react-native/react-native-embed"
+					]
+				}
 			]
 		},
 		{

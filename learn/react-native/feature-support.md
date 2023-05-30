@@ -1,7 +1,7 @@
 ---
 title: "React Native Features"
 id: "feature-support"
-sidebar_label: "Features"
+sidebar_label: "Supported Features"
 ---
 ---
 
