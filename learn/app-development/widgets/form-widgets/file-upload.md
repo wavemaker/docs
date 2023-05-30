@@ -80,3 +80,18 @@ Apart from the above events attached to the FileUpload widget, the following Ser
 | On Can Update | This event is triggered just before the variable’s dataSet property is updated with the data received from the target service (after onResult). This event handler gives you the opportunity to manipulate the data before your variable’s dataSet property is assigned this value. If you want to add rows to a Grid or List or Select, this is a good way to add in extra items into your results before your variable is set and your widget is updated. The new data can be returned from here in order to update the Variable’s dataSet. |
 | On Success | Allows you to trigger an action when the Variable has completed its life cycle. Any component bound to the resultant dataSet of this Variable will be updated just before this event is triggered. So, If you want to trigger another Variable which is dependent on the dataSet of this Variable, the Variable should be triggered by this event. An additional last argument as the “operation-name” that holds the invoked operation is present for Database CRUD Variables. |
 
+## Uploading File to a Specific Folder
+
+Files can be uploaded to a specific folder created using the Import Resource option
+1. Create a folder using the Import Resouce option.
+2. Navigate to the file FileService.java using the File Explorer
+3. Replace the protected method getUploadDir() with the below method
+```js
+protected File getUploadDir() {
+    String uploadDir = WMAppContext.getInstance().getContext().getRealPath("/resources/images/uploads");
+    File f = new File(uploadDir);
+    f.mkdirs();
+    return f;
+    }
+```
+where **images and uploads** are names of folders and sub folders under the resources folder 
