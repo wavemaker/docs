@@ -5,7 +5,21 @@ sidebar_label: "Dynamic Form"
 ---
 ---
 
-Dynamic Form is a type of Form that renders the fields and layout based on received metadata where metadata is an API that holds data related to the Form fields. In this case, no information about the fields or layout is available and can only be determined with the metadata. Dynamic Forms are most appropriate when the metadata changes frequently based on business models and are driven by another user role. For example, a Business Analyst can determine the fields in a Form for the targeted customer.
+A Dynamic Form is a type of service Form that adapts its fields and layout based on metadata received from an API. The metadata contains information about the form fields, such as their field names, data types, validation rules, and more.
+
+In the case of Dynamic Forms, the specific fields and their arrangement are not predetermined or hard-coded. Instead, they are determined dynamically at runtime based on the metadata received from the API. This flexibility allows for the creation of customizable forms that can change frequently based on business requirements or user roles.
+
+For example, a Business Analyst can use their expertise to define the form fields for a targeted customer. By manipulating the metadata, they can determine which fields should be included in the Form, what types of data they should accept, and any additional validation rules, if needed.
+
+Dynamic Forms are beneficial in scenarios when:
+
+- the Form requirements change frequently
+- driven by business models, or 
+- the Form is determined by different user roles
+
+By relying on metadata and an API, Dynamic Forms provide a flexible and adaptable solution that can accommodate these dynamic requirements without requiring code changes or redeployment of the Form.
+
+## Understanding Form Types
 
 Following are the differences described to understand which type of Form is appropriate to use.
 
