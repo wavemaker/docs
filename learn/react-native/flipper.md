@@ -26,21 +26,23 @@ Flipper is a tool for debugging iOS, Android, and React Native apps to access ap
 
 ![Flipper-Setup-Dialog](/learn/assets/flipper-setup-doctor-dialog.png)
 
-## Debug Android
+## Debug 
 
-For Android, run the follow command. 
+1. Open the project and preview the application.
+
+2. Copy the preview URL. For example:
+
+```
+https://wavemakeronline.com/…../{Project_Name}
+```
+
+For Android, run the following command.
 
 ```
 wm-reactnative run android "preview-link" --clean
 ```
 
-:::note
-You can skip the `clean` option after the initial run.
-:::
-
-## Debug iOS
-
-For iOS, run the follow command.
+For iOS, run the following command.
 
 ```
 wm-reactnative run ios "preview-link" --clean
@@ -50,19 +52,58 @@ wm-reactnative run ios "preview-link" --clean
 You can skip the `clean` option after the initial run.
 :::
 
-<!-- ![Flipper-preview](/learn/assets/flipper-setup-doctor-dialog.png) -->
+3. Once app is launched in the emulator or device, open Flipper to debug the application.
 
-## Access Flipper Plugins
+4. Select the Emulator/Device from the App Inspect option.
 
-You can access to Flipper plugins for debugging the application and for develepment ease.
+![Flipper-Select-Device](/learn/assets/flipper-device-selection.png)
+
+## Flipper Plugins
+
+You can access Flipper plugins for debugging the application and for development ease.
 
 ![Flipper-Plugin-Manager](/learn/assets/flipper-plugin-manager.png)
 
-To access, go to the **Plugin Manager** option, as shown in the image below.
+Go to the **Plugin Manager** option to access plugins, as shown in the image below.
 
 ![Flipper-Plugin-Manager-Dialog](/learn/assets/flipper-plugin-manager-dialog.png)
 
-From the **Install Plugins** tab, you can install required plugin, 
+From the **Install Plugins** tab, you can install the required plugin, 
 
 From the **Plugins Status** tab, you can check all the active plugins.
+
+## Flipper Default Plugins
+
+For React Native applications, you can use some plugins by default, including Crash Reporter, Logs, React DevTools, and Network.
+
+![Flipper-Select-Device](/learn/assets/flipper-default-plugins.png)
+
+### Crash Reporter
+
+The Crash Reporter plugin shows a notification in Flipper when the app crashes. The notification shows the crash informationm, such as stacktrace and other metadata.
+
+### Logs
+
+The Logs plugin shows device logs without any additional setup. There are plugins for both Device and App Logs.
+
+![Flipper-Select-Device](/learn/assets/flipper-logs-plugins.png)
+
+### React DevTools
+
+The React DevTools shows the React Native Component Tree, which can be used to edit the component properties.
+
+![Flipper-Select-Device](/learn/assets/flipper-devtools-plugins.png)
+
+:::note
+Run the following command if Flipper fails to connect to the device.
+
+`adb reverse tcp:8097 tcp:8097`
+:::
+
+### Network
+
+The Network plugin provides the Network Inspector, which is used to inspect outgoing network traffic in your apps. You can easily browse all requests being made and their responses. The plugin also supports gzipped responses.
+
+![Flipper-Select-Device](/learn/assets/flipper-network-plugins.png)
+
 

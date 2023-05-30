@@ -120,11 +120,6 @@ This will show the selected spinner animation, while the data is loading, which 
 
 ![Progress-Loader](/learn/assets/progressLoaders.gif)
 
-:::note
-If the **Cache** property is enabled, the app will show the Progress Loader for the first load only because the app will load data from the cache instead of the server.
-:::
-
-![](/learn/assets/page-cache-rn.png)
 
 ### Variable Settings
 
