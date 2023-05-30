@@ -637,7 +637,7 @@
 				},
 				{
 					"type": "category",
-					"label": "Style and Animation",
+					"label": "App Design",
 					"items": [
 						"react-native/styles",
 						"react-native/theme",
