@@ -5,7 +5,9 @@ sidebar_label: "Dynamic Form"
 ---
 ---
 
-A Dynamic Form is a type of service Form that adapts its fields and layout based on metadata received from an API. The metadata contains information about the form fields, such as their field names, data types, validation rules, and more.
+A Form is a set of fields used to collect responses from users. These Forms are generally static where the input fields are fixed and are known to the Form developers during design time. Now, to render forms with varying fields, Dynamic Forms come into use.
+
+Dynamic Form is a type of service Form that adapts its fields and layout based on metadata received from an API. The metadata contains information about the form fields, such as their field names, data types, validation rules, and more.
 
 In the case of Dynamic Forms, the specific fields and their arrangement are not predetermined or hard-coded. Instead, they are determined dynamically at runtime based on the metadata received from the API. This flexibility allows for the creation of customizable forms that can change frequently based on business requirements or user roles.
 
@@ -14,7 +16,7 @@ For example, a Business Analyst can use their expertise to define the form field
 Dynamic Forms are beneficial in scenarios when:
 
 - the Form requirements change frequently
-- driven by business models, or 
+- driven by business models, or
 - the Form is determined by different user roles
 
 By relying on metadata and an API, Dynamic Forms provide a flexible and adaptable solution that can accommodate these dynamic requirements without requiring code changes or redeployment of the Form.
@@ -28,6 +30,21 @@ Following are the differences described to understand which type of Form is appr
 | Static display with Fixed fields and labels | Interactive display No fixed fields and labels |
 | Upfront knowledge about fields i.e Validation, layout, widget type, formatting etc | No configuration is done upfront, only metadata is available |
 
+## Dynamic Forms in WaveMaker
+
+WaveMaker expects metadata to render fields inside a dynamic form. This metadata is an array of objects where each object represents a field inside the form. A typical field object could be something as follows
+
+```markup
+[{
+“name”: “” //name of the field
+“displayname”: “” //name to be displayed for the field
+“type”: “” //type of the field
+“required”: “” //isRequired
+“widget”: “” //widget type for the field
+“dataset”: “” //dataset for the field, if the widget is accepting the dataset
+}]
+```
+
 ```mermaid
 graph LR
     A[Third-party/Backend Developer] -.- G((1))-.-> B[Creates Metadata and API] 
@@ -40,7 +57,7 @@ graph LR
 
 ## Dynamic Form Workflow
 
-1. Business Users (Third Party), work on the backend source code to create the metadata and API. It is shared with WaveMaker developers to create a Dynamic Form.
+1. Third-party/Backend Developers, create the API that returns the metadata for a form. It is shared with WaveMaker developers to create a Dynamic Form.
 2. WaveMaker developers work on User Interface (UI) to create the required Dynamic Form with the received metadata.
 3. The end user can use the created Dynamic Form to provide the responses.
 
@@ -56,18 +73,7 @@ Dynamic Form is constructed over metadata, where they provide necessary details 
 
 ## How to Configure Dynamic Form
 
-You can create or import a service where the service is metadata. For example, WaveMaker accepts metadata in the following format.
-
-```markup
-[{
-“name”: “” //name of the field
-“displayname”: “” //name to be displayed for the field
-“type”: “” //type of the field
-“required”: “” //isRequired
-“widget”: “” //widget type for the field
-“dataset”: “” //dataset for the field, if the widget is accepting the dataset
-}]
-```
+You can create or import a service where the service is created against the metadata.
 
 :::note
 **Metadata**: It contains information like name, type, widget type, validation rules, and other required details about the field.

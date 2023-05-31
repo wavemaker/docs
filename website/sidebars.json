@@ -1007,6 +1007,8 @@
 						"app-development/widgets/datalive/form/form-fields-configuration",
 						"app-development/widgets/datalive/field-validator",
 						"app-development/widgets/datalive/form/form-events-methods",
+						"app-development/widgets/datalive/dynamic-form",
+
 						{
 							"type": "category",
 							"label": "How-tos",
