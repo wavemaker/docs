@@ -1000,6 +1000,7 @@
 					"label": "Form",
 					"items": [
 						"app-development/widgets/datalive/form",
+						"how-tos/dynamic-form",
 						"app-development/widgets/datalive/form/form-usage-scenarios",
 						"app-development/widgets/datalive/form/form-data-source",
 						"app-development/widgets/datalive/form/form-layouts",
@@ -1007,8 +1008,6 @@
 						"app-development/widgets/datalive/form/form-fields-configuration",
 						"app-development/widgets/datalive/field-validator",
 						"app-development/widgets/datalive/form/form-events-methods",
-						"app-development/widgets/datalive/dynamic-form",
-
 						{
 							"type": "category",
 							"label": "How-tos",
