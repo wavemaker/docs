@@ -27,7 +27,7 @@ import org.slf4j.LoggerFactory;
 private static final Logger logger = LoggerFactory.getLogger(MyJavaService.class);
 ```
 
-[![](/learn/assets/log4j2-add-statement.png)](/learn/assets/log4j2-add-statement.png)
+[![](/learn/assets/logger-declaration.png)](/learn/assets/logger-declaration.png)
 
 ### Printing Logger Statement
 

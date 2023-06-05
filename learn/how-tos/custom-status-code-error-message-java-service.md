@@ -1,10 +1,10 @@
 ---
-title: "Customizations in Java Service"
-id: "customizations-java-service"
+title: "Set Custom Status Code and Custom Error Message in Java Service"
+id: "custom-status-code-error-message-java-service"
 ---
 ---
 
-Java Services provide server-side code customization of an application. These customizations help to meet specific requirements, integrate well with external systems, and extend the application's capabilities. Below are the steps to set a customized status code and error message.
+Java Services provide code customization of an application. These customizations help to meet specific requirements, integrate well with external systems, and extend the application's capabilities. Below are the steps to set a customized status code and error message.
 
 ### To Set Custom Status Code in Java Service
 
