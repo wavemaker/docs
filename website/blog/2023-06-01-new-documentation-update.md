@@ -3,21 +3,35 @@ title: "Upgraded Documentation Site with Improved Navigation and User Experience
 author: "Swetha Kundaram"
 ---
 
-WaveMaker is thrilled to announce the upgrade of its documentation website at [docs.wavemaker.com/learn](https://docs.wavemaker.com/learn/). Here is a small video summarizing the website update.
+WaveMaker is thrilled to announce the upgrade of its documentation website at [docs.wavemaker.com/learn](https://docs.wavemaker.com/learn/). 
+
+### A journey of dedication to going live
+
+One significant milestone in this journey was the long pull request, which encapsulated countless hours of effort and attention to detail. We are grateful to our team members who contributed to the pull request, making it a collaborative masterpiece.
+
+If you're interested in the nitty-gritty details of our documentation site update, we invite you to explore the details of this significant update on our GitHub repository at the following link: [Documentation Site Update Pull Request #621](https://github.com/wavemaker/docs/pull/621). There, you can delve into the discussions, changes, and improvements that were made to bring our documentation site to its current state.
+
+We couldn't be prouder of the result and are excited to present an enhanced user experience with improved navigation. 
+
+Read further to know more about what's new in the updated documentation site.
+
+<!-- truncate -->
+
+Here is a small video summarizing the website update.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-r8uLPYdjSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<!-- truncate -->
+### Docsascode documentation framework
+
+WaveMaker documentation site powered by [Docusaurus](https://docusaurus.io/), a popular documentation framework that follows docsascode (Documentation as Code) method. Docusaurus is an open-source tool that enables easy documentation creation and maintenance. WaveMaker has chosen docsascode method as the framework to power its documentation website for easy collebration with developers and writers. 
+
+In this update, we migrated from Docusaurus V1 to V2, which automatically brings some exciting features out of the box. However, this migration wasn't without its challenges. Migrating a project of this scale required thorough testing. We conducted comprehensive reviews, addressing any issues and fine-tuning the codebase to ensure a seamless transition.
 
 ### Brand new design and refreshed look
 
 The website has undergone a complete transformation, featuring a brand-new design and a clean refreshed look. The updated website delivers a seamless user experience with enriched content and improved accessibility. 
 
 ![wavemaker docs](/learn/assets/docs-homepage.png)
-
-### Developers code, tech writers decode
-
-WaveMaker documentation site powered by [Docusaurus](https://docusaurus.io/), a popular documentation framework that follows docsascode (Documentation as Code) method. Docusaurus is an open-source tool that enables easy documentation creation and maintenance. WaveMaker has chosen docsascode method as the framework to power its documentation website for easy collebration with developers and writers. 
 
 ### Quicker search functionality
 
