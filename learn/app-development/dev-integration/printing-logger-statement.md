@@ -39,6 +39,6 @@ When a Java service is created, it by default has the logger statement in the Ja
 
 To know more about the `log4j2.xml` file, see [Enabling logs](https://docs.wavemaker.com/learn/app-development/dev-integration/chrome-developer-tool/#enabling-logs)
 
-- Replace `logger.debug("Statement")` with `logger.info("Statement")` in the Java service.
+- Replace `logger.debug("Statement")` with `logger.info("Statement")` in the Java service as the **Root level** in `log4j2`, which determines the level of logs to be printed, is set to `info`. To know more about `log4j2` and Log levels, see [Log4j2](https://logging.apache.org/log4j/2.x/index.html).
 
 [![](/learn/assets/logger.info-javaservice.png)](/learn/assets/logger.info-javaservice.png)

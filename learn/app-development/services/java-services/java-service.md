@@ -51,7 +51,3 @@ MyJavaController.java, in this example - This file contains the details related 
 ### Spring Bean Configuration File
 
 `MyJavaService.spring.xml`, in this example - Bean classes for service/method lookup
-
-## Status Code
-
-HTTP status code is received as a response from the server after the HTTP request is made. For example, `404` is a status code to show that the requested resource is unavailable but may be available in the future.
