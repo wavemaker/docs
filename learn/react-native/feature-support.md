@@ -1,7 +1,7 @@
 ---
 title: "React Native Features"
 id: "feature-support"
-sidebar_label: "Features"
+sidebar_label: "Supported Features"
 ---
 ---
 
@@ -34,7 +34,7 @@ From WaveMaker 11 release, React Native supports the following features. In the 
 
 | Status| Feature | Learn more  | 
 |---|---|---|
-| ![Supported React Native Features](/learn/assets/supported.png)|Prefabs [see limitations here](/learn/react-native/react-native#prefabs)| Developing Custom Reusable Component  | 
+| ![Supported React Native Features](/learn/assets/supported.png)|Prefabs [see limitations here](/learn/react-native/react-native-overview#prefabs)| Developing Custom Reusable Component  | 
 | ![Supported React Native Features](/learn/assets/supported.png)|I18n | [I18n Support](/learn/app-development/wavemaker-overview/localization) |  
 | ![Supported React Native Features](/learn/assets/supported.png)|Theme | Developing and Importing Themes |
 | ![Supported React Native Features](/learn/assets/supported.png)|Deploy | [Deploying App](/learn/app-development/deployment/one-click-deployment#deploying-an-app) |

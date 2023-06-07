@@ -46,13 +46,13 @@ For more information, see [Localization](/learn/app-development/wavemaker-overvi
 | Description | JS Library | Version |
 | --- | --- | --- |
 | JS Binding | jquery | 3.3.1 |
-|  | jquery-ui* <td bgcolor="#44aaf4"> 1.11.4 -> 1.12.1 </td>|
-| MVC Framework | angular <td bgcolor="#44aaf4"> 1.6.9 -> 7.0.1 </td>|
-|  | angular-ui-bootstrap <td bgcolor="#44aaf4"> 2.5.0 -> 3.3.6 </td>|
+|  | jquery-ui* <td className="versiontdbgcolor"> 1.11.4 -> 1.12.1 </td>|
+| MVC Framework | angular <td className="versiontdbgcolor"> 1.6.9 -> 7.0.1 </td>|
+|  | angular-ui-bootstrap <td className="versiontdbgcolor"> 2.5.0 -> 3.3.6 </td>|
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
-|  | nvd3 <td bgcolor="#44aaf4">1.8.4 -> 1.8.6 </td>|
-| Built-in functions | lodash <td bgcolor="#44aaf4">4.17.5 -> 4.17.11</td>|
+|  | nvd3 <td className="versiontdbgcolor">1.8.4 -> 1.8.6 </td>|
+| Built-in functions | lodash <td className="versiontdbgcolor">4.17.5 -> 4.17.11</td>|
 | Device support, gestures | hammerjs | 2.0.8 |
 
 Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
@@ -61,12 +61,12 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework <td bgcolor="#44aaf4"> 4.3.14 -> 4.3.19 </td>|
-| Security framework | Spring Security <td bgcolor="#44aaf4"> 4.2.4 -> 5.0.8 </td>|
+|  | Spring Framework <td className="versiontdbgcolor"> 4.3.14 -> 4.3.19 </td>|
+| Security framework | Spring Security <td className="versiontdbgcolor"> 4.2.4 -> 5.0.8 </td>|
 | Java JSON utilities | Gson | 2.2.4 |
 | DB Persistence library | Hibernate | 5.2.10 |
 | Sample database | HSQL | 2.4.0 |
-| JSON library | Jackson <td bgcolor="#44aaf4"> 2.6.3 -> 2.9.7 </td>|
+| JSON library | Jackson <td className="versiontdbgcolor"> 2.6.3 -> 2.9.7 </td>|
 | Logging framework | SLF4j | 1.7.25 |
 | Http client library | HttpComponents | client-4.5.5 core-4.3.2  mime-4.5.5 |
 | REST API annotations | Swagger | 1.3.10 |

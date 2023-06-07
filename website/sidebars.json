@@ -22,10 +22,12 @@
 		{
 			"type": "category",
 			"label": "Development",
-			"items": [{
+			"items": [
+				{
 					"type": "category",
 					"label": "User Interface",
-					"items": [{
+					"items": [
+						{
 							"type": "category",
 							"label": "Pages",
 							"items": [
@@ -84,7 +86,8 @@
 				{
 					"type": "category",
 					"label": "Data & APIs",
-					"items": [{
+					"items": [
+						{
 							"type": "category",
 							"label": "Databases",
 							"items": [
@@ -183,7 +186,6 @@
 								}
 							]
 						},
-
 						{
 							"type": "category",
 							"label": "Java Services",
@@ -225,7 +227,7 @@
 					"type": "category",
 					"label": "Integration",
 					"items": [
-          {
+						{
 							"type": "category",
 							"label": "Variables",
 							"items": [
@@ -268,7 +270,7 @@
 					"type": "category",
 					"label": "Security",
 					"items": [
-          {
+						{
 							"type": "category",
 							"label": "App Security",
 							"items": [
@@ -358,7 +360,6 @@
 						"app-development/deployment/deployment-to-azure",
 						"app-development/deployment/deployment-google-cloud",
 						"app-development/deployment/deployment-to-digital-ocean"
-
 					]
 				},
 				{
@@ -451,7 +452,6 @@
 		{
 			"type": "category",
 			"label": "Install on AWS",
-
 			"items": [
 				"on-premise/aws/wavemaker-enterprise-setup-on-aws",
 				"on-premise/aws/launching-instances-in-aws",
@@ -471,7 +471,6 @@
 		{
 			"type": "category",
 			"label": "Install on Azure",
-
 			"items": [
 				"on-premise/azure/wavemaker-enterprise-setup-on-azure",
 				"on-premise/azure/launching-instances-in-azure",
@@ -492,7 +491,6 @@
 		{
 			"type": "category",
 			"label": "Install on GCP",
-
 			"items": [
 				"on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
 				"on-premise/gcp/launching-instances-in-gcp",
@@ -512,7 +510,6 @@
 		{
 			"type": "category",
 			"label": "Install on VMware ESXi",
-
 			"items": [
 				"on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware",
 				"on-premise/vmware-esxi/launching-instances-in-esxi-ova",
@@ -533,7 +530,6 @@
 		{
 			"type": "category",
 			"label": "Install on Hyper-V",
-
 			"items": [
 				"on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv",
 				"on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
@@ -553,7 +549,6 @@
 		{
 			"type": "category",
 			"label": "Configure",
-
 			"items": [
 				"on-premise/configure/config-users-auth-providers",
 				"on-premise/configure/config-vcs",
@@ -566,7 +561,6 @@
 		{
 			"type": "category",
 			"label": "Observability",
-
 			"items": [
 				"on-premise/observability/introduction",
 				{
@@ -574,7 +568,8 @@
 					"label": "Logs Aggregation",
 					"items": [
 						"on-premise/observability/logs-aggregation/overview",
-						"on-premise/observability/logs-aggregation/kibana"
+						"on-premise/observability/logs-aggregation/kibana",
+						"on-premise/observability/logs-aggregation/fluentd"
 					]
 				},
 				{
@@ -592,11 +587,12 @@
 		{
 			"type": "category",
 			"label": "Upgrade",
-
 			"items": [
 				"on-premise/upgrade/upgrade-setup",
+				"on-premise/upgrade/upgrade-prerequisites",
 				"on-premise/upgrade/download-copy-patch",
 				"on-premise/upgrade/extract-patch",
+				"on-premise/upgrade/passivate-containers",
 				"on-premise/upgrade/run-patch",
 				"on-premise/upgrade/docker-upgrade",
 				"on-premise/upgrade/os-upgrade"
@@ -605,7 +601,6 @@
 		{
 			"type": "category",
 			"label": "Disaster Recovery",
-
 			"items": [
 				"on-premise/disaster-recovery/backup-and-restore",
 				"on-premise/disaster-recovery/dehydration-and-rehydration"
@@ -629,30 +624,63 @@
 		{
 			"type": "category",
 			"label": "React Native",
-
 			"items": [
-				"react-native/react-native",
-				"react-native/feature-support",
-				"react-native/supported-widgets",
-				"react-native/supported-variables",
-				"react-native/styles",
-				"react-native/animations",
-				"react-native/test-run",
-				"react-native/web-preview-debug",
-				"react-native/expo-debug",
-				"react-native/styles",
-				"react-native/theme",
-				"react-native/ssl-pinning",
-				"react-native/export-react-native-zip",
-				"react-native/build-installers",
-				"react-native/expo-apk-debug",
-				"react-native/expo-ipa-debug"
+				"react-native/react-native-overview",
+				{
+					"type": "category",
+					"label": "Features",
+					"items": [
+						"react-native/feature-support",
+						"react-native/supported-widgets",
+						"react-native/supported-variables"
+					]
+				},
+				{
+					"type": "category",
+					"label": "App Design",
+					"items": [
+						"react-native/styles",
+						"react-native/theme",
+						"react-native/app-loader",
+						"react-native/animations",
+						"react-native/splash-screen"
+					]
+				},
+				{
+					"type": "category",
+					"label": "Test and Debug",
+					"items": [
+						"react-native/test-run",
+						"react-native/web-preview-debug",
+						"react-native/expo-debug",
+						"react-native/flipper",
+            "react-native/ssl-pinning",
+						"react-native/expo-apk-debug",
+						"react-native/expo-ipa-debug"
+					]
+				},
+				{
+					"type": "category",
+					"label": "Build",
+					"items": [	
+						"react-native/export-react-native-zip",
+						"react-native/build-installers",
+						"react-native/third-party-expo-plugins"
+					]
+				},
+				{
+					"type": "category",
+					"label": "App Integration",
+					"items": [	
+						"react-native/web-view",				
+						"react-native/react-native-embed"
+					]
+				}
 			]
 		},
 		{
 			"type": "category",
 			"label": "Cordova",
-
 			"items": [
 				"hybrid-mobile/building-hybrid-mobile-apps",
 				"hybrid-mobile/native-device-support",
@@ -710,7 +738,6 @@
 		{
 			"type": "category",
 			"label": "Build an app in 5 Minutes",
-
 			"items": [
 				"tutorials/build-app-in-5-minutes/app-demo",
 				"tutorials/build-app-in-5-minutes/import-database",
@@ -723,7 +750,6 @@
 		{
 			"type": "category",
 			"label": "Essentials",
-
 			"items": [
 				"jump-start/jump-start-app-essentials",
 				"jump-start/jump-start-db-essentials"
@@ -732,7 +758,6 @@
 		{
 			"type": "category",
 			"label": "App Building Exercises",
-
 			"items": [
 				"tutorials/leave-management-app",
 				"tutorials/asset-management-app"
@@ -744,7 +769,6 @@
 		{
 			"type": "category",
 			"label": "App solution",
-
 			"items": [
 				"how-tos/creating-registration-page",
 				"how-tos/support-password-encryption",
@@ -793,7 +817,6 @@
 		{
 			"type": "category",
 			"label": "Localization",
-
 			"items": [
 				"how-tos/localization-wavemaker-apps",
 				"how-tos/implementing-localization-dropdown-menu",
@@ -849,7 +872,8 @@
 				"how-tos/request-response-processing-rest-services",
 				"how-tos/intercept-requests-responses-api-calls-one-place",
 				"how-tos/websocket-usage-chatroom-app",
-				"how-tos/working-api-with-different-pagination-formats"
+				"how-tos/working-api-with-different-pagination-formats",
+				"how-tos/adding-ui-for-api-server-side-pagination"
 			]
 		},
 		{
@@ -910,7 +934,6 @@
 		{
 			"type": "category",
 			"label": "Deployment",
-
 			"items": [
 				"how-tos/ssl-offloading"
 			]
@@ -953,7 +976,7 @@
 			"type": "category",
 			"label": "Data widgets",
 			"items": [
-      {
+				{
 					"type": "category",
 					"label": "Data Table",
 					"items": [
@@ -1104,7 +1127,6 @@
 				{
 					"type": "category",
 					"label": "Live Filter",
-
 					"items": [
 						"app-development/widgets/datalive/live-filter",
 						"app-development/widgets/datalive/livefilter/live-filter-basic-usage",
@@ -1311,7 +1333,8 @@
 		{
 			"type": "category",
 			"label": "Navigation",
-			"items": [{
+			"items": [
+				{
 					"type": "category",
 					"label": "Nav",
 					"items": [
@@ -1387,7 +1410,6 @@
 		{
 			"type": "category",
 			"label": "Prefabs",
-
 			"items": [
 				"app-development/custom-widgets/prefabs-overview",
 				"app-development/custom-widgets/creating-prefabs",
@@ -1455,14 +1477,16 @@
 			"type": "category",
 			"label": "Latest v11.x",
 			"items": [
-      			{
+				{
 					"type": "category",
 					"label": "Versions: 11.3.x",
 					"items": [
+						"wavemaker-release-notes/v11-3-3",
+						"wavemaker-release-notes/v11-3-2",
             			"wavemaker-release-notes/v11-3-0"
 					]
 				},
-        		{
+				{
 					"type": "category",
 					"label": "Versions: 11.2.x",
 					"items": [
@@ -1497,7 +1521,8 @@
 		{
 			"type": "category",
 			"label": "Release v10.x",
-			"items": [{
+			"items": [
+				{
 					"type": "category",
 					"label": "WaveMaker 10",
 					"items": [
@@ -1668,7 +1693,8 @@
 		{
 			"type": "category",
 			"label": "Release v9.x",
-			"items": [{
+			"items": [
+				{
 					"type": "category",
 					"label": "Versions: 9.4.x",
 					"items": [
@@ -1711,7 +1737,8 @@
 		{
 			"type": "category",
 			"label": "Release v8.x",
-			"items": [{
+			"items": [
+				{
 					"type": "category",
 					"label": "Versions: 8.5.x",
 					"items": [
@@ -1779,7 +1806,8 @@
 			]
 		}
 	],
-	"FAQs": [{
+	"FAQs": [
+		{
 			"type": "category",
 			"label": "Frequently Asked Questions",
 			"items": [

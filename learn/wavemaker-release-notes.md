@@ -21,7 +21,9 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.3.0](/learn/wavemaker-release-notes/v11-3-0) <p style={{color:"red"}}>*latest*</p> | This release includes new features, including Publish to Marketplace and consume, Semantic Versioning support, React Native Lottie file support, loaders and more. | 17 April 2023 |
+|[WaveMaker 11.3.3](/learn/wavemaker-release-notes/v11-3-3) <p style={{color:"red"}}>*latest*</p> | This release includes new React Native features and bug fixes, and more. | 7 June 2023 |
+|[WaveMaker 11.3.2](/learn/wavemaker-release-notes/v11-3-2)| This release includes enhancements related to mobile and bug fixes related to Summary Row, Material 2.0 theme, assigning server port, and more. | 22 May 2023 |
+|[WaveMaker 11.3.0](/learn/wavemaker-release-notes/v11-3-0) | This release includes new features, including Publish to Marketplace and consume, Semantic Versioning support, React Native Lottie file support, loaders and more. | 17 April 2023 |
 |[WaveMaker 11.2.5](/learn/wavemaker-release-notes/v11-2-5) | This release includes bug fixes for accessibility in widgets and In-memory sessions. | 20 March 2023 |
 |[WaveMaker 11.2.4](/learn/wavemaker-release-notes/v11-2-4) | This release includes bug fixes for Dynamic Data Table infinite scroll pagination and keyboard date picker. | 06 February 2023 |
 |WaveMaker 11.2.3 | Fixed the Connectors artifact import issue, which earlier failed and could not run existing connectors. | 23 January 2023 |
@@ -140,15 +142,15 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td bgcolor="#44aaf4">  5.3.23 -> 5.3.26 </td>|
-| Security framework | Spring Security | <td bgcolor="#44aaf4">  5.7.5 -> 5.8.2 </td>|
-| Java JSON utilities | Gson  | <td bgcolor="#44aaf4"> 2.10.0 -> 2.10.1 </td>|
-| DB Persistence library | Hibernate | <td bgcolor="#44aaf4"> 5.6.12.Final -> 5.6.15.Final </td> |
+|  | Spring Framework | <td className="versiontdbgcolor">  5.3.23 -> 5.3.26 </td>|
+| Security framework | Spring Security | <td className="versiontdbgcolor">  5.7.5 -> 5.8.2 </td>|
+| Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.10.0 -> 2.10.1 </td>|
+| DB Persistence library | Hibernate | <td className="versiontdbgcolor"> 5.6.12.Final -> 5.6.15.Final </td> |
 | Sample database | HSQL |  2.7.1 |
-| JSON library | Jackson | <td bgcolor="#44aaf4"> 2.14 -> 2.14.2 </td> |
+| JSON library | Jackson | <td className="versiontdbgcolor"> 2.14 -> 2.14.2 </td> |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
-| Http client library  | HttpComponents -  httpclient |  <td   bgcolor="#44aaf4"> 4.5.13 -> 4.5.14 </td>|
+| Http client library  | HttpComponents -  httpclient |  <td   className="versiontdbgcolor"> 4.5.13 -> 4.5.14 </td>|
 | Servlet Framework |  | 4.0.1 |
 |Database Connection Pooling | HikariCP | 5.0.1 |
 

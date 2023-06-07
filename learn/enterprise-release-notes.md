@@ -22,7 +22,10 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.2.2** <p style={{color:"red"}}>*latest*</p> | - [v11.2.2](/learn/wavemaker-release-notes/v11-2-2) <br/> - [v11.2.1](/learn/wavemaker-release-notes/v11-2-1) | This release includes support to mock imported APIs using MockingBird Server Extension, formatting fixes, Calendar widget accessibility and icon rendering fixes, and user account log out related issues. | 19 January 2023 |
+|**v11.3.1** <p style={{color:"red"}}>*latest*</p> | - v11.3.1 <br/> - [v11.3.0](/learn/wavemaker-release-notes/v11-3-0) | This release includes new features, including Publish to Marketplace and consume, Semantic Versioning support, React Native Lottie file support, loaders and more. | 04 May 2023 |
+|**v11.2.5** | - [v11.2.5](/learn/wavemaker-release-notes/v11-2-5) | This release includes bug fixes for accessibility in widgets and In-memory sessions.  <br/> Includes UI fixes | 20 March 2023 |
+|**v11.2.4** | - [v11.2.4](/learn/wavemaker-release-notes/v11-2-4) <br/> - v11.2.3 | This release includes bug fixes for Dynamic Data Table infinite scroll pagination and keyboard date picker and along with Fixed the Connectors artifact import issue, which earlier failed and could not run existing connectors.  <br/> Includes UI fixes | 13 Febraury 2023 |
+|**v11.2.2**  | - [v11.2.2](/learn/wavemaker-release-notes/v11-2-2) <br/> - [v11.2.1](/learn/wavemaker-release-notes/v11-2-1) | This release includes support to mock imported APIs using MockingBird Server Extension, formatting fixes, Calendar widget accessibility and icon rendering fixes, and user account log out related issues. | 19 January 2023 |
 |**v11.2.0**   | - [v11.2.0](/learn/wavemaker-release-notes/v11-2-0)    |  This release includes several new features, including One-click enabling of API Mocking in Studio, the easy discovery of dependencies of services and methods to compose Java API, Single Page App behavior for UI, the Ability to create new projects from VCS repo for Teams users, Update timezones at Pages and Widget level, changes in JDBC connectors, Cordova Android updates, bug fixes, and more.|28 November 2022|
 |**v11.1.3**|- [v11.1.3](/learn/wavemaker-release-notes/v11-1-3) <br/> - [v11.1.2](/learn/wavemaker-release-notes/v11-1-2) <br/> - [v11.1.1](/learn/wavemaker-release-notes/v11-1-1) <br/> - [v11.1.0](/learn/wavemaker-release-notes/v11-1-0) <br/> - [v11.0.3](/learn/wavemaker-release-notes/v11-0-3) <br/> - [v11.0.2](/learn/wavemaker-release-notes/v11-0-2) <br/> - [v11.0.1](/learn/wavemaker-release-notes/v11-0-1) <br/> - [v10.15.0](/learn/wavemaker-release-notes/v10-15-0) <br/> - [v10.14.0](/learn/wavemaker-release-notes/v10-14-0) | Includes new features like React Native, Layout and Flex Widget in Cordova, Multi-version Studio, API composer toolkit, API Mock Server extension, pagination for imported APIs, Java 11, SAML library updates, Azure Repos, MTLS for REST APIs, and more. [Read more.](/learn/app-development/wavemaker-overview/wavemaker-11-beta) |03 October 2022|
 
@@ -77,12 +80,12 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-| | Spring Framework <td bgcolor="#44aaf4"> 5.3.15 -> 5.3.18 </td>|
+| | Spring Framework <td className="versiontdbgcolor"> 5.3.15 -> 5.3.18 </td>|
 | Security framework | Spring Security | 5.5.2|
 | Java JSON utilities | Gson | 2.8.9 |
 | DB Persistence library | Hibernate | 5.5.7.Final|
 | Sample database | HSQL | 2.5.1|
-| JSON library | Jackson <td bgcolor="#44aaf4"> 2.12.5 -> 2.12.6.20220326</td>|
+| JSON library | Jackson <td className="versiontdbgcolor"> 2.12.5 -> 2.12.6.20220326</td>|
 | Logging framework | SLF4j |1.7.32 |
 | Logging Implementation | Log4j2 | 2.17.1 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br/> httpmime- 4.5.6 |

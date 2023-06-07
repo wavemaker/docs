@@ -1,17 +1,19 @@
 ---
-title: "Running animations in React Native app"
+title: "Apply Animations"
 sidebar_label: "Animations"
 id: "animations"
 ---
 ---
 
-# Introduction
-Animations can be defined on a widget, using animate method on the widget. Internally, animate method uses the library  [react-native-animatable](https://github.com/oblador/react-native-animatable). react-native-animatable is close to CSS animation. But, animation has to be wriiten in JavaScript. Below, how to define animations in React Native projects is explained.
+Add animations to a widget using an **Animate** method. WaveMaker platform uses the [react-native-animatable](https://github.com/oblador/react-native-animatable) library to enable the **Animate** method, and `react-native-animatable` is similar to CSS animation. However, animation should be written in JavaScript.
 
-## How to animate 
-Animate method is available on all WaveMaker Widgets. So, get reference of WaveMaker widget and invoke the animate method.
+In the following documentation, learn how to define animations in React Native projects.
 
-```
+## How to Animate 
+
+The **Animate** method is available for all WaveMaker Widgets. In the following example, see the reference for a WaveMaker widget, which invokes the Animate method.
+
+```js
 Page.Widgets.container1.animate({
   animation: {
     0 : {
@@ -27,8 +29,12 @@ Page.Widgets.container1.animate({
   iterationCount: 'infinite'
 });
 ```
-## Properties to pass to animate method
-*Note: Other properties will be passed down to underlying component.*
+
+## Properties to Pass to Animate method
+
+:::note
+Other properties will be passed down to the underlying component.
+:::
 
 | Prop | Description | Default |
 |---|---|---|
@@ -49,9 +55,11 @@ Page.Widgets.container1.animate({
 
 
 ## Example
+
 In this example, a toggle is going to be created using containers. Using this toggle, background of the page content can be changed. First create a new page.
 
 ### Markup
+
 ```
 <wm-page name="page1">
     <wm-mobile-navbar name="mobile_navbar1" title="Animation">
@@ -76,7 +84,8 @@ In this example, a toggle is going to be created using containers. Using this to
 ```
 
 ### Script
-```
+
+```js
 Page.light = false;
 Page.onReady = function() {
     toggleLight();
@@ -136,7 +145,8 @@ Page.indicatorTap = function($event, widget) {
 ```
 
 ### Styles
-```
+
+```css
 .day .app-container,
 .day .app-page-content {
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
@@ -156,6 +166,9 @@ Page.indicatorTap = function($event, widget) {
     background-color: #fff;
 }
 ```
+
 ### Preview
-Preview the app and tap on toggle to change the page background.<br></br>
+
+Preview the app and tap on toggle to change the page background.  
+
 ![React Native Animations](/learn/assets/react-native-animation.gif)

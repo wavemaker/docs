@@ -12,6 +12,7 @@ import { useAlgoliaContextualFacetFilters } from '@docusaurus/theme-search-algol
 import Translate from '@docusaurus/Translate';
 // import translations from '@theme/SearchTranslations';
 import { DocSearchModal as Modal } from '../SearchModal/index';
+import { useActivePluginAndVersion } from '@docusaurus/plugin-content-docs/lib/client/index';
 let DocSearchModal = Modal;
 function Hit({ hit, children }) {
   return <Link to={hit.url}>{children}</Link>;
@@ -65,27 +66,31 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
     });
   }, []);
   const onOpen = useCallback(() => {
-    importDocSearchModalIfNeeded().then(() => {
-      searchContainer.current = document.createElement('div');
-      document.getElementById(props.elementId).insertBefore(
-        searchContainer.current,
-        document.getElementById(props.elementId).firstChild,
-      );
-      setIsOpen(true);
-    });
+    importDocSearchModalIfNeeded().then(() => { });
+    searchContainer.current = document.createElement('div');
+    document.querySelector('.DocSearch-Input').focus()
+    document.body.classList.add("search-active")
+    document.body.classList.add("DocSearch--active")
+    setIsOpen(true);
   }, [importDocSearchModalIfNeeded, setIsOpen]);
   const onClose = useCallback(() => {
+    document.querySelector('.DocSearch-Input').blur()
+    document.querySelector('.DocSearch-Input').value = '';
     setIsOpen(false);
+    document.body.classList.remove("DocSearch--active")
+    document.body.classList.remove("search-active")
+    if (document.querySelector('.DocSearch-Reset'))
+      document.querySelector('.DocSearch-Reset').innerHTML = ''
+    if (props.elementId == "home-search" && document.querySelector('.DocSearch-Dropdown-Container')) {
+      document.querySelector('.DocSearch-Dropdown-Container').innerHTML = ''
+    }
     searchContainer.current?.remove();
   }, [setIsOpen]);
   const onInput = useCallback(
     (event) => {
-      importDocSearchModalIfNeeded().then(() => {
-        setIsOpen(true);
-        setInitialQuery(event.key);
-      });
+      setInitialQuery(event.key);
     },
-    [importDocSearchModalIfNeeded, setIsOpen, setInitialQuery],
+    [setInitialQuery],
   );
   const navigator = useRef({
     navigate({ itemUrl }) {
@@ -152,6 +157,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
       <DocSearchModal
         autoFocus={props.autoFocus}
         onClose={onClose}
+        onOpen={onOpen}
         initialScrollY={window.scrollY}
         initialQuery={initialQuery}
         navigator={navigator}
@@ -163,6 +169,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
         })}
         {...props}
         searchParameters={searchParameters}
+        filters={'version:' + useActivePluginAndVersion().activeVersion.name}
         // placeholder={translations.placeholder}
         // translations={translations.modal}
       />

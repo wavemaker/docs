@@ -167,7 +167,7 @@ html[data-theme="dark"] {
      --mermaid-background-color:#172a47;
      --mermaid-border-color:#c2e7ff;
      --wm-category-arrow-image:url("/img/chevron-right-category-dark.svg");
-     --ifm-toc-link-color:#000000;
+     --ifm-toc-link-color-dark:#000000;
      
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
@@ -272,7 +272,7 @@ body {
     --ifm-h1-font-size: 2.5rem;
 }
 .markdown > h2{
-    --ifm-h2-font-size: 1.5rem;
+    --ifm-h2-font-size: 2rem;
 }
 /* h1 {
     font-size: 48px;
@@ -1558,6 +1558,9 @@ table tr td:last-child{
     .card-group .col{
         flex:0 0 50%;
     }
+    .table-of-contents__link {
+        color: var(--ifm-toc-link-color-dark);
+    }
 }
 @media (max-width: 700px) {
     .card-group .col{
@@ -1609,7 +1612,9 @@ h2.widget-header{
 .menu__link--active.menu__link--sublist-caret:after,.tocCollapsibleButton_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-CollapseButton-styles-module::after{
     filter:invert(100%) sepia(94%) saturate(17%) hue-rotate(223deg) brightness(0%) contrast(98%) !important;
 }
-
+.versiontdbgcolor{
+    background-color: #44aaf4;
+}
 
 
 

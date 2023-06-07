@@ -14,12 +14,12 @@ This document explains the following 3 different ways to send the email message 
 
 Steps involved in sending an email:
 
-## Importing the email-connector to project
+## Importing the Email-connector to Project
 
 - Download the latest email-connector zip [here](https://github.com/wavemaker/email-connector/releases)
 - Import the downloaded email-connector zip into your app using the [Import Resource](/learn/app-development/services/3rd-party-libraries) option to the **Connector** folder.
 
-## Configure email connector properties in profiles
+## Configure Email Connector Properties in Profiles
 
 - By default externalized connector properties are added in the project profiles.
 - Connector externalized properties are prefixed with `connector.${connectorName}`.
@@ -34,6 +34,7 @@ connector.email.default.email.server.sslenabled=true
 ```
 
 - You should specify the values for connector properties in profiles.
+
 - These externalized properties are used in the connector, If required, you can also read these properties in java service as below:
 
 Import Statement:
@@ -136,7 +137,7 @@ If you want to use the method, you should have a **template** with name **invita
 
 [![invitaion email template with content](/learn/assets/emailTemplate.png)](/learn/assets/emailTemplate.png)
 
-### Send an Email with attachments
+### Send an Email with Attachments
 
 Required import statements
 
@@ -148,7 +149,7 @@ Required import statements
     import org.springframework.mail.javamail.MimeMessagePreparator;
 ```
 
-#### Send Email with attachment
+#### Send Email with Attachment
 
 ```java
 public void sendMailWithMessagePreparator(String toEmailAddress, String emailSubject, String emailMessage) {
@@ -167,7 +168,7 @@ public void sendMailWithMessagePreparator(String toEmailAddress, String emailSub
     }
 ```
 
-#### Send Email method with mime type
+#### Send Email Method with Mime Type
 
 ```java
 public void sendMimeMail(String toEmailAddress, String emailSubject) {
@@ -190,7 +191,7 @@ public void sendMimeMail(String toEmailAddress, String emailSubject) {
 }
 ```
 
-#### Send Email with attachment and mime message
+#### Send Email with Attachment and Mime Message
 
 ```java
 public void sendInlineMail(String toEmailAddress, String emailSubject) {
@@ -232,6 +233,29 @@ Create a [Java Service Variable](/learn/assets/var_sel.png) for the Java service
 [![Screenshot showing variable for EmailService](/learn/assets/email_java_var.png)](/learn/assets/email_java_var.png)
 
 You can now use this service variable in your application as per your business logic.
+
+## Customizing Email Properties
+
+:::note  
+If you want to add or customize any other existing email properties in addition to the [properties discussed above](#configure-email-connector-properties-in-profiles), you can do it through Java Services.
+:::
+
+- Add the below Import statement to the Java Service.
+
+```java
+import javax.annotation.PostConstruct;
+```
+
+- Add the below code snippet to your Java Service. Here, we are setting the `mail.smtp.starttls.enable` property of **emailconnector** to false.
+
+```java
+ @PostConstruct
+    public void settingEmailProperties() {
+        Properties properties = new Properties();       
+        properties.setProperty("mail.smtp.starttls.enable", "false");
+        emailConnector.setEmailProperties(properties);  
+    }   
+```
 
 ## See Also
 
