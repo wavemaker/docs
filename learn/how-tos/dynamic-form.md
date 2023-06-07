@@ -5,13 +5,13 @@ sidebar_label: "Dynamic Form"
 ---
 ---
 
-A Form is a set of fields used to collect responses from users. These Forms are generally static where the input fields are fixed and are known to the Form developers during design time. Now, to render forms with varying fields, Dynamic Forms come into use.
+A Form is a set of fields used to collect responses from users. These Forms are generally static but to render Forms with varying fields, Dynamic Forms come into use.
 
 Dynamic Form is a type of service Form that adapts its fields and layout based on metadata received from an API. The metadata contains information about the form fields, such as their field names, data types, validation rules, and more.
 
-In the case of Dynamic Forms, the specific fields and their arrangement are not predetermined or hard-coded. Instead, they are determined dynamically at runtime based on the metadata received from the API. This flexibility allows for the creation of customizable forms that can change frequently based on business requirements or user roles.
+In the case of Dynamic Forms, the specific fields and their arrangement are determined dynamically at runtime and this flexibility allows for the creation of customizable forms that can change frequently based on business requirements or user roles.
 
-For example, a Business Analyst can use their expertise to define the form fields for a targeted customer. By manipulating the metadata, they can determine which fields should be included in the Form, what types of data they should accept, and any additional validation rules, if needed.
+For example, a Business Analyst can use their expertise to define the form fields for a targeted customer without manipulating the metadata.
 
 Dynamic Forms are beneficial in scenarios when:
 
@@ -32,7 +32,7 @@ Following are the differences described to understand which type of Form is appr
 
 ## Dynamic Forms in WaveMaker
 
-WaveMaker expects metadata to render fields inside a dynamic form. This metadata is an array of objects where each object represents a field inside the form. A typical field object could be something as follows
+WaveMaker expects metadata to render fields inside a Dynamic Form. This metadata is an array of objects where each object represents a field inside the form. A typical field object could be something as follows
 
 ```markup
 [{
@@ -44,6 +44,10 @@ WaveMaker expects metadata to render fields inside a dynamic form. This metadata
 “dataset”: “” //dataset for the field, if the widget is accepting the dataset
 }]
 ```
+
+:::important
+If the metadata service returns some other structure than the one mentioned above, use the [on-beforerender event](#modifying-dynamic-form-metadata) on the Form to modify the data accordingly.
+:::
 
 ```mermaid
 graph LR
@@ -57,7 +61,7 @@ graph LR
 
 ## Dynamic Form Workflow
 
-1. Third-party/Backend Developers, create the API that returns the metadata for a form. It is shared with WaveMaker developers to create a Dynamic Form.
+1. Third-party/Backend Developers, create the API that returns the metadata for a Form. It is shared with WaveMaker developers to create a Dynamic Form.
 2. WaveMaker developers work on User Interface (UI) to create the required Dynamic Form with the received metadata.
 3. The end user can use the created Dynamic Form to provide the responses.
 
@@ -73,47 +77,41 @@ Dynamic Form is constructed over metadata, where they provide necessary details 
 
 ## How to Configure Dynamic Form
 
-You can create or import a service where the service is created against the metadata.
+To configure a Dynamic Form in WaveMaker, you start by creating or importing a service where the service is created against the metadata.
 
 :::note
 **Metadata**: It contains information like name, type, widget type, validation rules, and other required details about the field.
 :::
 
-:::important
-If the metadata service returns some other structure than the one mentioned above, use the
-[on-beforerender event](#modifying-dynamic-form-metadata) on the Form to modify the data accordingly.
-:::
+### Importing Metadata Service
 
-### Importing Service
+As explained, a Dynamic Form requires metadata to render fields inside it. The metadata can come from an API exposed by a service. You can either create the service for this API in WaveMaker using Java Services or use an existing API that provides metadata for the Form. This API can be directly imported into the WaveMaker project.
 
-Go to Web Services. Click **Import Web Service** to import a new web service. To know how to import REST Web Service, see [Import REST Services](https://docs.wavemaker.com/learn/app-development/services/web-services/rest-services#test-rest-service-api).
+To know how to import REST Web Service, see [Import REST Services](https://docs.wavemaker.com/learn/app-development/services/web-services/rest-services#test-rest-service-api).
+
+### Creating Page
+
+Dynamic Form is created on a newly created Page. To create a Page, see [Create a Page](https://docs.wavemaker.com/learn/app-development/ui-design/page-creation/). The variable created in [Creating Variable](#creating-variable) section is created inside this Page.
 
 ### Creating Variable
 
-Create a variable `MetadataVariable` to fetch the metadata. To know how to create a variable, see [Creating Service Variable](https://docs.wavemaker.com/learn/app-development/variables/web-service#how-to-create-a-service-variable).
+The imported API holding the metadata is fetched and stored using a variable.
 
-The created variable should be used in the **Markup** tab to [bind the metadata with the Form](#binding-variable-with-form).  
+1. Create a variable `MetadataVariable`. To know how to create a variable, see [Creating Service Variable](https://docs.wavemaker.com/learn/app-development/variables/web-service#how-to-create-a-service-variable). The created variable should be used in the **Markup** tab to [bind the metadata with the Form](#binding-variable-with-form).
 
 [![](/learn/assets/variable-markup-dynamicform.png)](/learn/assets/variable-markup-dynamicform.png)
 
 ### Creating Dynamic Form
 
-1. Go to pages and create a new page. To create a new page, see [Creating Page](https://docs.wavemaker.com/learn/app-development/ui-design/page-creation).
+#### Creating Form
+
+1. [Create a Form](https://docs.wavemaker.com/learn/app-development/widgets/datalive/form/form-usage-scenarios) with an existing variable as "supportedLocale" and uncheck the Fields as you are creating a Dynamic Form.
 
 #### Binding Variable with Form
 
-1. Go to the Markup tab and enter the following code snippet to create a Dynamic Form. Add metadata property in the markup with the created variable. For example, the accepted value for metadata is `metadata="bind:Variables.<Variable Name>.dataSet"`.
+1. Go to the Markup tab and add metadata property in the markup with the created variable to bind the variable holding metadata with the Form. For example, replace `dataset="bind:Variables.supportedLocale.dataSet"` with the accepted value for metadata, `metadata="bind:Variables.<Variable Name>.dataSet"`.
 
-```markup
-
-<wm-form errormessage="" captionposition="top" title="Form" enctype="application/x-www-form-urlencoded" method="post" metadata="bind:Variables.createMetadata.dataSet" captionalign="left" name="form1" on-beforerender="form1BeforeRender($metadata, widget)">
-                <wm-form-action key="reset" class="form-reset btn-secondary" iconclass="wi wi-refresh" display-name="Reset" type="reset"></wm-form-action>
-                <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" type="submit"></wm-form-action>
-            </wm-form>
-
-```
-
-[![](/learn/assets/add-formcode-dynamicform.png)](/learn/assets/add-formcode-dynamicform.png)
+[![](/learn/assets/add-formcode-metadata-dynamicform.png)](/learn/assets/add-formcode-metadata-dynamicform.png)
 
 2. Click **Save** to save the changes in the Markup tab. Click Preview to view the created Dynamic Form.
 
@@ -121,7 +119,7 @@ The created variable should be used in the **Markup** tab to [bind the metadata 
 
 #### Modifying Dynamic Form Metadata
 
-1. If the Form fields do not render as expected, use the **on-beforerender** event to modify the provided field details into WaveMaker accepted format. For example, use the following format `on-beforerender="<Form_Widget_Name>Beforerender($metadata, $isolateScope)"` where `$isolateScope` is the accepted widget type.
+1. In WaveMaker Studio, Form expects the metadata in a particular format given in [Dynamic Forms in WaveMaker](#dynamic-forms-in-wavemaker). When the metadata returned by an existing API is not the same as the Form expects, use **on-beforerender** event to transform the metadata returned from API into the metadata the Form expects. For example, use the following format `on-beforerender="<Form_Widget_Name>Beforerender($metadata, $isolateScope)"`.
 
 [![](/learn/assets/add-formcode-onbeforerender-dynamicform.png)](/learn/assets/add-formcode-onbeforerender-dynamicform.png)
 
@@ -129,27 +127,4 @@ You can preview the Dynamic Form.
 
 ## Create Business User Form
 
-To create Business User (BU) Form, you can create Static Form only in cases when BU wants to add or edit fields through WaveMaker.
-
-1. Create a new page. To create a new page, see [Creating Page](https://docs.wavemaker.com/learn/app-development/ui-design/page-creation).
-
-2. Drag and drop the **Data Table** widget onto the page.
-
-[![](/learn/assets/drop-datatable-dynamicform.png)](/learn/assets/drop-datatable-dynamicform.png)
-
-3. Configure the Data by selecting the service type as Database CRUD and provide the Service, Table Name, and Variable Name. Click **Next** to confirm the details.
-
-[![](/learn/assets/configure-liveform-admindynamic.png)](/learn/assets/configure-liveform-admindynamic.png)
-
-4. Configure the Layout, Table Columns, Form Layout, and Form Fields. To configure a data table widget, see [Data Table Configuration](https://docs.wavemaker.com/learn/app-development/widgets/datalive/datatable/data-table-basic-usage).
-
-5. Once the **Data Table** is configured, click Preview.
-
-6. Click **New** and enter Name, Displayname, Type, and Widget as given in the metadata. Click **Save** to save the field details in the Form.
-
-[![](/learn/assets/enter-field-adminform.png)](/learn/assets/enter-field-adminform.png)
-
-You can manage the fields in the Form.
-
-[![](/learn/assets/adminform-entry-dynamicform.png)](/learn/assets/adminform-entry-dynamicform.png)
-
+The metadata can be configured by a Business User (BU) through another Static Form only in cases when BU wants to add or edit fields through WaveMaker. To create a Static Form, see [Creating Form](https://docs.wavemaker.com/learn/app-development/widgets/datalive/form/form-usage-scenarios/).
