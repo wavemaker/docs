@@ -5,25 +5,32 @@ sidebar_label: "SSL Pinning (Beta)"
 ---
 ---
 
-## Introduction
+SSL-based security can be compromised if the root certificate on the user's device is compromised. To prevent data leaks in such cases, SSL pinning is employed. You can find more details in the case explained [here](../blog/2020/12/15/certificate-pinning).
 
-Security based on SSL mechanism, can be compromised if the root certificate on the User's device is compromised. When this happens, SSL pinning helps in preventing data leaks. For more details, please go through the [case explained here](../blog/2020/12/15/certificate-pinning).
-
-In SSL pinning, hash of SSL public key is added in mobile app. When a call is made (like XMLHttpRequest) to remote server, hash of public key from server is checked against from the ones added in mobile app. If the hash is present, then only the call will be allowed. SSL pinning in WaveMaker is implemented with the use of a React Native plugin called [react-native-ssl-public-key-pinning](https://github.com/frw/react-native-ssl-public-key-pinning). 
+In SSL pinning, the hash of the SSL public key is included in the mobile app. When making a call (such as XMLHttpRequest) to a remote server, the hash of the server's public key is verified against the hashes stored in the mobile app. Only if the hash is present, the call is allowed to proceed. In WaveMaker, SSL pinning is implemented using the React Native plugin called [react-native-ssl-public-key-pinning](https://github.com/frw/react-native-ssl-public-key-pinning).
 
 ## Setup
 
-- Open **Export React Native Dialog** and navigate to SSL Pinning section.
-![SSL Pinning section](/learn/assets/react-native-ssl-pinning/ssl-pinning.png)
-- Turn on SSL Pinning.
-![Enable SSL Pinning](/learn/assets/react-native-ssl-pinning/enable-ssl-pinning.png)
-- Identify the domains that your app will access and add the hashes of public keys of all those domains should be added.
-![Enable SSL Pinning](/learn/assets/react-native-ssl-pinning/ssl-pinning-add-domains.png)
-- Save and Build.
+1. Open **Export React Native Dialog** and navigate to the SSL Pinning section.
 
-## How to get hash of SSL public key from url
-- Install [openssl](https://www.openssl.org/source/)
-- Execute the following command. Replace **DOMAIN_NAME** with your target domain.
+![SSL Pinning section](/learn/assets/react-native-ssl-pinning/ssl-pinning.png)
+
+2. Enable SSL Pinning, as shown below.
+
+![Enable SSL Pinning](/learn/assets/react-native-ssl-pinning/enable-ssl-pinning.png)
+
+3. Identify the domains that your app will access.
+4. Include the hashes of the public keys for all the identified domains.
+
+![Enable SSL Pinning](/learn/assets/react-native-ssl-pinning/ssl-pinning-add-domains.png)
+
+5. Save and Build.
+
+## How to get Hash of SSL Public Key from URL
+
+1. Install [OpenSSL](https://www.openssl.org/source/).
+2. Execute the following command. Replace **DOMAIN_NAME** with your target domain.
+
 ```
 openssl s_client -connect DOMAIN_NAME:443 |\
 openssl x509  -pubkey -noout |\
@@ -31,15 +38,20 @@ openssl pkey -pubin -outform der |\
 openssl dgst -sha256 -binary |\
 openssl enc -base64
 ```
-- Hash will be at the end of output.
 
-Following is the command for www.wavemaker.com. Hash is at the last and is highlighted in yellow color.
+3. Hash will be at the end of the output and is highlighted in yellow color.
+
+:::note
+Following is the command for `www.wavemaker.com` as reference. 
+:::
 
 ![wavemaker hash](/learn/assets/react-native-ssl-pinning/hash-gen.png)
 
 ## Caution
 
-Let us suppose the SSL public key is expired after some period. A new SSL certificate is deployed on the server. As new one doesnot match with the ones in the app, SSL pinning mechanism will block all calls from app to the server. This makes the app not to function. So, it is advised to have multiple (backup) keys as well. Please read [this document](https://github.com/datatheorem/TrustKit/blob/master/docs/getting-started.md#always-provide-at-least-one-backup-pin) from the Trust Kit library author. Trust Kit library is used internally by WaveMaker.
+In situations where the SSL public key expires and a new SSL certificate is deployed on the server, the SSL pinning mechanism can block all app-to-server calls since the new certificate doesn't match the one stored in the app. Consequently, the app becomes non-functional. To mitigate this issue, it is recommended to have multiple backup keys available. 
+
+For more detailed information on this topic, please refer to [this document](https://github.com/datatheorem/TrustKit/blob/master/docs/getting-started.md#always-provide-at-least-one-backup-pin) authored by the Trust Kit library, which is internally utilized by WaveMaker.
 
 ## Additional Resources
 

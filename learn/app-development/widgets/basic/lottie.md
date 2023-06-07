@@ -29,20 +29,30 @@ Lottie Widget is supported only in React Native applications in WaveMaker.
 
 ## Methods
 
-The Lottie widget has few methods exposed on widget scope which can be accessed via JavaScript. See below for usage example.
+### Lottie Widget Methods for Animation Control
 
-- to start/resume an animation:
-    ```
-    Page.Widgets.lottie1.play();
-    ```
-- to stop/pause the animation:
-    ```
-    Page.Widgets.lottie1.pause();
-    ```
-- to play the animation from the start:
-    ```
-    Page.Widgets.lottie1.reset();
-    ```
+The following methods are available to interact with the Lottie widget using JavaScript.
+
+
+1. Start/Resume Animation:
+
+```javascript
+Page.Widgets.lottie1.play();
+```
+
+2. Stop/Pause Animation:
+
+```javascript
+Page.Widgets.lottie1.pause();
+```
+
+3. Restart Animation:
+
+```javascript
+Page.Widgets.lottie1.reset();
+```
+
+These methods provide control over the playback of the animation using the Lottie widget.
 
 ## Events
 
