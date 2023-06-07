@@ -5,6 +5,11 @@ sidebar_label: "Online Release (WMO)"
 
 ---
 
+**Search for releases**: [#react-native](/learn/tags/react-native) [#widgets](/learn/tags/widgets)
+
+
+See what's new in WaveMaker, including new features, enhancements, and bug fixes. To report bugs or issues, contact [support](mailto:support@wavemaker.com). You can track [critical known issues here](/learn/wavemaker-known-issues).
+
 :::note
 This document applies to WaveMaker Online (WMO) users. If you are an Enterprise user, see [WaveMaker Enterprise Release](/learn/enterprise-release-notes).
 :::

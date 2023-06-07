@@ -11,7 +11,7 @@ function TagsRow(props) {
     <div
       className={clsx(
         ThemeClassNames.docs.docFooterTagsRow,
-        'row margin-bottom--sm',
+        'row margin-bottom--sm margin-top--lg',
       )}>
       <div className="col">
         <TagsListInline {...props} />
