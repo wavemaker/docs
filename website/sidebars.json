@@ -665,7 +665,8 @@
 					"items": [	
 						"react-native/export-react-native-zip",
 						"react-native/build-installers",
-						"react-native/third-party-expo-plugins"
+						"react-native/third-party-expo-plugins",
+						"react-native/custom-widget"
 					]
 				},
 				{
