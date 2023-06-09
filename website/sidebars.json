@@ -665,6 +665,7 @@
 					"items": [	
 						"react-native/export-react-native-zip",
 						"react-native/build-installers",
+						"react-native/mobile-build-manual",
 						"react-native/third-party-expo-plugins"
 					]
 				},
