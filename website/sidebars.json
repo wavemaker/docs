@@ -648,6 +648,13 @@
 				},
 				{
 					"type": "category",
+					"label": "Development",
+					"items": [
+						"react-native/custom-widget"
+					]
+				},
+				{
+					"type": "category",
 					"label": "Test and Debug",
 					"items": [
 						"react-native/test-run",
