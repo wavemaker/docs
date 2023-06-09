@@ -648,6 +648,13 @@
 				},
 				{
 					"type": "category",
+					"label": "Development",
+					"items": [
+						"react-native/custom-widget"
+					]
+				},
+				{
+					"type": "category",
 					"label": "Test and Debug",
 					"items": [
 						"react-native/test-run",
@@ -665,7 +672,8 @@
 					"items": [	
 						"react-native/export-react-native-zip",
 						"react-native/build-installers",
-						"react-native/third-party-expo-plugins"
+						"react-native/third-party-expo-plugins",
+						"react-native/custom-widget"
 					]
 				},
 				{
