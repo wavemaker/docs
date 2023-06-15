@@ -103,7 +103,7 @@ The created variable will be used in the **Markup** tab to [bind the metadata wi
 
 ### Creating Form
 
-1. [Create a Form](https://docs.wavemaker.com/learn/app-development/widgets/datalive/form/form-usage-scenarios) with an existing variable as "supportedLocale" and uncheck the Fields as you are creating a Dynamic Form.
+1. Drag and drop the Form widget with an existing variable as "supportedLocale" and uncheck the Fields as you are creating a Dynamic Form.
 
 [![](/learn/assets/existing-variable-form-creation.png)](/learn/assets/existing-variable-form-creation.png)
 
