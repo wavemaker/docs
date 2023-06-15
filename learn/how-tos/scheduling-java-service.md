@@ -80,7 +80,11 @@ The task details include:
 
 The time interval specified is in the UNIX cron format ([refer here](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html)). 
 
-[![](/learn/assets/cronformat.png?v=10)](/learn/assets/cronformat.png)
+![cronformat](/learn/assets/cronformat.png)
+
+Example Expressions:
+
+![cron-example](/learn/assets/cron-example.png)
 
 - _`method`_ refers to the Java method to be invoked at the above-mentioned time intervals
 - _`id`_ refers to the id given to the bean class for the Java controller
