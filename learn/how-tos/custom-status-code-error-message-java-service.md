@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 
 In this example, we can modify the response properties by using the **`HttpServletResponse`** object.
 
-```Java
+```java
 public String sampleJavaOperation(String name, HttpServletRequest request, HttpServletResponse response) {
         logger.info("Starting sample operation with request url " + request.getRequestURL().toString());
         response.setStatus(400);
@@ -41,7 +41,9 @@ In Java Service, you can customize the error message to be displayed when the re
 
 ### Import the Necessary Classes
 
-To set a custom error message, you will need to import the following classes:
+In the Java service method, you can handle exceptions and throw a `WMRuntimeException` with a customized error message. The `MessageResource.create()` method allows you to create a message resource with the desired error message.
+
+To set a custom error message, import the following classes:
 
 ```java
 import com.wavemaker.commons.MessageResource;
@@ -49,8 +51,6 @@ import com.wavemaker.commons.WMRuntimeException;
 ```
 
 ### Example to Set Custom Error Message
-
-In the Java service method, you can handle exceptions and throw a `WMRuntimeException` with a customized error message. The `MessageResource.create()` method allows you to create a message resource with the desired error message.
 
 Here's an example that demonstrates how to set a custom error message:
 

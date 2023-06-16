@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 
 ### Declare Logger Object in Java Service
 
-```Java
+```java
 private static final Logger logger = LoggerFactory.getLogger(MyJavaService.class);
 ```
 
