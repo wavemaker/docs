@@ -1,11 +1,24 @@
 ---
 title: "React Native - Mobile Manual Build"
 id: "mobile-build-manual"
-sidebar id: "mobile-build-manual"
+sidebar_label: "Manual Build"
 ---
 ---
 
-In the manual build process using React Native Command Line Interface (CLI), you can generate the WaveMaker studio project in the local environment where additional customization and debugging of project code can be performed. The React Native CLI commands are also used to preview the application.
+You can generate the WaveMaker studio project in the local environment where additional customization and debugging of project code can be performed in the manual build process using React Native Command Line Interface (CLI). The React Native CLI commands are also used to preview the application.
+
+In general, WaveMaker Studio builds the iOS Package App Store (IPA) and Android Package Kit (APK) files automatically using [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers) and the manual process outlined in this document is for teams that want to implement a Continuous Integration (CI) and Continuous Deployment (CD) pipeline themselves.
+
+:::note
+CI/CD pipeline includes practices and tools used to automate the processes of building, testing, and deploying software applications.
+:::
+
+
+## IPA and APK Files
+
+After the code customization, the files are compiled to generate IPA and APK files, used to deploy the application in App Store.
+
+IPA and APK files contain the application source code, assets, resources, and all other information about the application. These are used to distribute and install the application on iOS and Android devices respectively.
 
 ## How to use React Native CLI in Build Process
 
@@ -21,31 +34,28 @@ The commands available in [https://github.com/wavemaker/wm-reactnative-cli](http
 
 2. [Export React Native zip](/learn/hybrid-mobile/export-react-native-zip) from WaveMaker Studio. This zip file helps store the React Native studio project in your local environment and is used to build the IPA or APK files.
 
-## IPA and APK Files
 
-After the code customization, the files are compiled to generate iOS Package App Store (IPA) and Android Package Kit (APK) files, used to deploy the application in App Store.
+### Android
 
-IPA and APK files contain the application source code, assets, resources, and all other information about the application. These are used to distribute and install the application on iOS and Android devices respectively.
+While using the manual build process for the Android platform, APK file is generated.
 
-### Build Commands to Generate APK File
+#### Build Commands to Generate APK File
 
-1. Execute the `wm-react-native` command with Android platform-related arguments. This step decides the purpose of the build i.e., Production or Debug. To find the commands and examples, see [https://github.com/wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli).
-
-:::note
-
-If the build is for Production, the application cannot be further tested and is directly deployed. In case the build is for Debugging, the application can be tested further before deployment.
-
-:::
+1. Execute the `wm-react-native` command with Android platform-related arguments. To find the commands and examples, see [https://github.com/wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli).
 
 For example, use the following commands:
 
-#### To Build For Debug
+##### To Build For Debug
+
+If the build is for Debugging, the application can be tested further before deployment.
 
 ```
 wm-reactnative build android "/path/to/src"
 ```
 
-#### To Build For Production
+##### To Build For Production
+
+If the build is for Production, the application cannot be further tested and is directly deployed.
 
 ```
 wm-reactnative build android "/path/to/src" \
@@ -64,19 +74,19 @@ wm-reactnative build android "/path/to/src" \
 APK file is the generated artifact.
 :::
 
-### Build Commands to Generate IPA File
+### iOS
 
-1. Execute the `wm-react-native` command with iOS platform-related arguments. This step decides the purpose of the build i.e., Production or Debug. To find the commands and examples, see [https://github.com/wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli).
+While using the manual build process for the iOS platform, IPA file is generated.
 
-:::note
+#### Build Commands to Generate IPA File
 
-If the build is for Production, the application cannot be further tested and is directly deployed. In case the build is for Debugging, the application can be tested further before deployment.
-
-:::
+1. Execute the `wm-react-native` command with iOS platform-related arguments. To find the commands and examples, see [https://github.com/wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli).
 
 For example, use the following commands:
 
-#### To Build For Production
+##### To Build For Production
+
+If the build is for Production, the application cannot be further tested and is directly deployed.
 
 ```
 wm-reactnative build ios "/path/to/src" \
