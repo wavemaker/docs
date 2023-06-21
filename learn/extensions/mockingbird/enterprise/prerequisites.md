@@ -15,7 +15,7 @@ You can setup MockingBird on any K8s Cluster, but we verified on Google Kuberne
 
 ### Kubernetes Cluster
 
-1. K8s Cluster - v1.24.0 and above
+1. K8s Cluster - v1.26 and above
 
 2. MockingBird platform can be setup at any of the following Kubernetes Clusters, including:
 	1. [Google Kubernetes Engine (GKE)](https://cloud.google.com/learn/what-is-kubernetes)
