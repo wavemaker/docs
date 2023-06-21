@@ -125,10 +125,10 @@ export default class Index extends React.Component {
                                             <a href='/learn/app-development/wavemaker-overview/platform-overview'>Platform</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/connectors/connectors-architecture'>Architecture</a>
+                                            <a href='/learn/app-development/wavemaker-app-development-faqs/what-is-wavemaker-app'>Architecture</a>
                                         </li>
                                         <li>
-                                            <a href='/learn/app-development/wavemaker-overview/faqs-11'>FAQs</a>
+                                            <a href='/learn/app-development/wavemaker-app-development-faqs/'>FAQs</a>
                                         </li>
                                         <li>
                                             <a href='/learn/app-development/wavemaker-overview/product-walkthrough'>Studio Walkthrough</a>
