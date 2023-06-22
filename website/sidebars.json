@@ -322,6 +322,7 @@
 				"app-development/dev-integration/developer-tools",
 				"app-development/dev-integration/chrome-developer-tool",
 				"app-development/dev-integration/debugging",
+				"app-development/dev-integration/printing-logger-statement",
 				"app-development/dev-integration/inspection-framework",
 				"hybrid-mobile/mobile-automation-appium"
 			]
@@ -910,7 +911,8 @@
 				"how-tos/insert-data-from-excel",
 				"how-tos/aws-s3-connector",
 				"how-tos/twilio-connector",
-				"how-tos/twilio-otp-integration"
+				"how-tos/twilio-otp-integration",
+				"how-tos/custom-status-code-error-message-java-service"
 			]
 		},
 		{

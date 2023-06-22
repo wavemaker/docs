@@ -49,5 +49,5 @@ MyJavaController.java, in this example - This file contains the details related 
 `MyJavaService_API.json`, in this example - contains the file structure and details as used by the API Documentation. This is available only during the design time.
 
 ### Spring Bean Configuration File
-`MyJavaService.spring.xml`, in this example - Bean classes for service/method lookup
 
+`MyJavaService.spring.xml`, in this example - Bean classes for service/method lookup
