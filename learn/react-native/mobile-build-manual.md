@@ -35,17 +35,17 @@ The commands available in [https://github.com/wavemaker/wm-reactnative-cli](http
 2. [Export React Native zip](/learn/hybrid-mobile/export-react-native-zip) from WaveMaker Studio. This zip file helps store the React Native studio project in your local environment and is used to build the IPA or APK files.
 
 
-### Android
+## Android
 
 While using the manual build process for the Android platform, an APK file is generated.
 
-#### Build Commands to Generate APK File
+### Build Commands to Generate APK File
 
 1. Execute the `wm-react-native` command with Android platform-related arguments. To find the commands and examples, see [https://github.com/wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli).
 
 For example, use the following commands:
 
-##### To Build For Debug
+#### To Build For Debug
 
 If the build is for Debugging, the application can be tested further before deployment.
 
@@ -53,7 +53,7 @@ If the build is for Debugging, the application can be tested further before depl
 wm-reactnative build android "/path/to/src"
 ```
 
-##### To Build For Production
+#### To Build For Production
 
 If the build is for Production, the application cannot be further tested and is directly deployed.
 
@@ -77,17 +77,17 @@ When the build gets completed, `wm-reactnative-cli` prints out the path at which
 [![](/learn/assets/reactnative-command-final-file.png)](/learn/assets/reactnative-command-final-file.png)
 
 
-### iOS
+## iOS
 
 While using the manual build process for the iOS platform, an IPA file is generated.
 
-#### Build Commands to Generate IPA File
+### Build Commands to Generate IPA File
 
 1. Execute the `wm-react-native` command with iOS platform-related arguments. To find the commands and examples, see [https://github.com/wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli).
 
 For example, use the following commands:
 
-##### To Build For Production
+#### To Build For Production
 
 If the build is for Production, the application cannot be further tested and is directly deployed.
 
