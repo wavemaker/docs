@@ -831,7 +831,8 @@
 				"how-tos/setting-language-date-format",
 				"app-development/widgets/form-widgets/select-locale-usage",
 				"how-tos/localization-error-messages",
-				"how-tos/localization-data-table-column-headings"
+				"how-tos/localization-data-table-column-headings",
+				"how-tos/dynamic-locale-messageselection"
 			]
 		},
 		{
