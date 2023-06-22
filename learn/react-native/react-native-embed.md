@@ -16,7 +16,7 @@ From WaveMaker 11.3 onwards, React Native apps can be embeded into the native ap
 
 - JDK 11
 - Apache Maven 3.8.2
-- Node 14.15.1
+- Node 14.15.5
 - npm 7.20.1
 - wm-reactnative-cli and its requirements
 
