@@ -883,6 +883,7 @@
 			"items": [
 				"how-tos/using-app-environment-properties",
 				"how-tos/consuming-existing-wm-api-into-another-wm-project",
+				"how-tos/dynamic-form",
 				"how-tos/using-post-method-send-data-rest-api",
 				"how-tos/request-response-processing-rest-services",
 				"how-tos/intercept-requests-responses-api-calls-one-place",
@@ -1039,6 +1040,7 @@
 					"label": "Form",
 					"items": [
 						"app-development/widgets/datalive/form",
+						"how-tos/dynamic-form",
 						"app-development/widgets/datalive/form/form-usage-scenarios",
 						"app-development/widgets/datalive/form/form-data-source",
 						"app-development/widgets/datalive/form/form-layouts",
