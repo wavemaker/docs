@@ -7,7 +7,7 @@ sidebar_label: "Manual Build"
 
 You can generate the WaveMaker studio project in the local environment where additional customization and debugging of project code can be performed in the manual build process using React Native Command Line Interface (CLI). The React Native CLI commands are also used to preview the application.
 
-In general, WaveMaker Studio builds the iOS Package App Store (IPA) and Android Package Kit (APK) files automatically using [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers) and the manual process outlined in this document is for teams that want to implement a Continuous Integration (CI) and Continuous Deployment (CD) pipeline themselves.
+In general, WaveMaker Studio builds the iOS Package App Store (IPA) and Android Package Kit (APK) files automatically using [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers) and the manual process outlined in this document is for teams that want to implement a Continuous Integration and Continuous Deployment (CI/CD) pipeline themselves.
 
 :::note
 CI/CD pipeline includes practices and tools used to automate the processes of building, testing, and deploying software applications.
@@ -37,7 +37,7 @@ The commands available in [https://github.com/wavemaker/wm-reactnative-cli](http
 
 ### Android
 
-While using the manual build process for the Android platform, APK file is generated.
+While using the manual build process for the Android platform, an APK file is generated.
 
 #### Build Commands to Generate APK File
 
@@ -68,15 +68,18 @@ wm-reactnative build android "/path/to/src" \
 --auto-eject=true
 ```
 
-2. `wm-reactnative-cli` will log the destination build folder at the beginning. When the build gets completed, `wm-reactnative-cli` prints out the path at which the built artifact is present.
+`wm-reactnative-cli` command prints the destination build folder at the beginning of build logs. 
 
-:::note
-APK file is the generated artifact.
-:::
+[![](/learn/assets/reactnative-command-destination-folder.png)](/learn/assets/reactnative-command-destination-folder.png)
+
+When the build gets completed, `wm-reactnative-cli` prints out the path at which the generated APK is present.
+
+[![](/learn/assets/reactnative-command-final-file.png)](/learn/assets/reactnative-command-final-file.png)
+
 
 ### iOS
 
-While using the manual build process for the iOS platform, IPA file is generated.
+While using the manual build process for the iOS platform, an IPA file is generated.
 
 #### Build Commands to Generate IPA File
 
@@ -97,8 +100,6 @@ wm-reactnative build ios "/path/to/src" \
 --buildType="production"
 ```
 
-2. `wm-reactnative-cli` will log the destination build folder at the beginning. When the build gets completed, `wm-reactnative-cli` prints out the path at which the built artifact is present.
 
-:::note
-IPA is the generated artifact.
-:::
+`wm-reactnative-cli` command prints the destination build folder at the beginning of build logs.
+When the build gets completed, `wm-reactnative-cli` prints out the path at which the generated IPA is present.
