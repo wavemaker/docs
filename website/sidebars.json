@@ -657,7 +657,8 @@
 					"type": "category",
 					"label": "Development",
 					"items": [
-						"react-native/custom-widget"
+						"react-native/custom-widget",
+            			"react-native/ssl-pinning"
 					]
 				},
 				{
@@ -665,12 +666,10 @@
 					"label": "Test and Debug",
 					"items": [
 						"react-native/test-run",
+						"react-native/generate-web-preview-locally",
 						"react-native/web-preview-debug",
 						"react-native/expo-debug",
-						"react-native/flipper",
-            "react-native/ssl-pinning",
-						"react-native/expo-apk-debug",
-						"react-native/expo-ipa-debug"
+						"react-native/flipper"
 					]
 				},
 				{
@@ -679,8 +678,7 @@
 					"items": [	
 						"react-native/export-react-native-zip",
 						"react-native/build-installers",
-						"react-native/third-party-expo-plugins",
-						"react-native/custom-widget"
+						"react-native/third-party-expo-plugins"
 					]
 				},
 				{
