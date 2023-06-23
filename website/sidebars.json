@@ -666,7 +666,7 @@
 					"label": "Test and Debug",
 					"items": [
 						"react-native/test-run",
-						"react-native/generate-webpreview-locally",
+						"react-native/generate-web-preview-locally",
 						"react-native/web-preview-debug",
 						"react-native/expo-debug",
 						"react-native/flipper"
