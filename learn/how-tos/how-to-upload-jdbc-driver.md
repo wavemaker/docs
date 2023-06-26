@@ -1,6 +1,7 @@
 ---
 title: "How to Upload JDBC Driver"
 id: "how-to-upload-jdbc-driver"
+sidebar_label: "How to Upload JDBC Driver"
 ---
 
 Java Database Connectivity (JDBC) drivers are the set of classes and methods used in Java applications to connect and interact with databases.

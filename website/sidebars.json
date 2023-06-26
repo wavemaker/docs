@@ -864,6 +864,7 @@
 				"how-tos/queries-dynamic-clause",
 				"how-tos/connect-azure-sql-server",
 				"app-development/services/database-services/download-jdbc-driver-jar",
+				"how-tos/how-to-upload-jdbc-driver",
 				"how-tos/fetch-default-number100-records-database",
 				"how-tos/one-many-relationship",
 				"how-tos/working-with-temporals",
