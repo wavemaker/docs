@@ -9,7 +9,7 @@ Java Database Connectivity (JDBC) drivers are the set of classes and methods use
 
 In WaveMaker, various databases like MySQL, Oracle, Microsoft SQL Server, etc., are supported. Different databases have unique features and use database-specific SQL queries and syntax to perform, retrieve, update, insert, and delete operations on the database within the application.
 
-JDBC driver is uploaded to allow WaveMaker integration with the necessary database where the JDBC driver version details ensure that the driver contains the required classes and methods to maintain the compatibility of the chosen database with WaveMaker studio.
+JDBC driver is uploaded to allow WaveMaker integration with the necessary database. JDBC driver version details ensure that the driver contains the required classes and methods to maintain the compatibility of the chosen database with WaveMaker studio.
 
 To find the recommended version of the JDBC driver for your database, see [Recommended JDBC Driver Versions for Databases](https://docs.wavemaker.com/learn/app-development/services/database-services/download-jdbc-driver-jar/).
 
