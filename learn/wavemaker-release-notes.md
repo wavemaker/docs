@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.3.4](/learn/wavemaker-release-notes/v11-3-4) <p style={{color:"red"}}>*latest*</p> | WaveMaker has released a version, 11.3.4, containing bug fixes related to access denied pop-ups and slow loading of the project listing page. | 12 June 2023 |
+|[WaveMaker 11.3.5](/learn/wavemaker-release-notes/v11-3-5) <p style={{color:"red"}}>*latest*</p> | WaveMaker has released version 11.3.5, which includes enhancements for the Googlemap Prefab, pagination, as well as bug fixes for nested menus, app crashing, and database queries and procedures. | 26 June 2023 |
+|[WaveMaker 11.3.4](/learn/wavemaker-release-notes/v11-3-4) | WaveMaker has released a version, 11.3.4, containing bug fixes related to access denied pop-ups and slow loading of the project listing page. | 12 June 2023 |
 |[WaveMaker 11.3.3](/learn/wavemaker-release-notes/v11-3-3) | WaveMaker has released a version 11.3.3, containing new features in React Native, such as Lottie widget, SSL pinning, supporting third-party React Native UI components, developer UX changes, and other bug fixes. | 7 June 2023 |
 |[WaveMaker 11.3.2](/learn/wavemaker-release-notes/v11-3-2)| This release includes enhancements related to mobile and bug fixes related to Summary Row, Material 2.0 theme, assigning server port, and more. | 22 May 2023 |
 |[WaveMaker 11.3.0](/learn/wavemaker-release-notes/v11-3-0) | This release includes new features, including Publish to Marketplace and consume, Semantic Versioning support, React Native Lottie file support, loaders and more. | 17 April 2023 |
