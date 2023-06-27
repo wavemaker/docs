@@ -20,9 +20,9 @@ The following are key features of the LocalAuthentication plugin:
 - Determine if the user has set up biometric authentication.
 - Authenticate the user with biometric authentication.
 
-## Adding LocalAuthentication to your Wavemaker React Native App
+## Adding LocalAuthentication to your WaveMaker React Native App
 
-LocalAuthentication plugin can be installed in few steps in wavemaker. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo) 
+LocalAuthentication plugin can be installed in few steps in WaveMaker. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo) 
 on how to install a plugin.
 
 Once the plugin is added, you'll be seeing something similar to this in your screen.
