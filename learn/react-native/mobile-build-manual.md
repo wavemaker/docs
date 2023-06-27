@@ -5,20 +5,24 @@ sidebar_label: "Manual Build"
 ---
 ---
 
-You can generate the WaveMaker studio project in the local environment where additional customization and debugging of project code can be performed in the manual build process using React Native Command Line Interface (CLI). The React Native CLI commands are also used to preview the application.
+In the manual build process, you can run the build commands provided by the WaveMaker React Native CLI in your local environment. The manual build process is opted when
 
-In general, WaveMaker Studio builds the iOS Package App Store (IPA) and Android Package Kit (APK) files automatically using [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers) and the manual process outlined in this document is for teams that want to implement a Continuous Integration and Continuous Deployment (CI/CD) pipeline themselves.
+- You want to use Continuous Integration and Continuous Deployment (CI/CD) pipeline for application development.
+- WaveMaker Enterprise Users want to use CLi to build artifacts as they do not have access to Appchef
+- You do not want to use certificates in Appchef to build the artifacts. To know more about certificates in AppChef, see [Build Configuration using AppChef](https://docs.wavemaker.com/learn/hybrid-mobile/mobile-build-appchef#configure-build).
 
 :::note
 CI/CD pipeline includes practices and tools used to automate the processes of building, testing, and deploying software applications.
 :::
 
+In general, WaveMaker Studio builds the iOS Package App Store (IPA) and Android Package Kit (APK) files automatically using [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers) and the manual process outlined in this document is for teams that want to implement a CI/CD pipeline themselves.
+
 
 ## IPA and APK Files
 
-After the code customization, the files are compiled to generate IPA and APK files, used to deploy the application in App Store.
+After the application development, the files are compiled to generate IPA and APK files, used to deploy the application in App Store.
 
-IPA and APK files contain the application source code, assets, resources, and all other information about the application. These are used to distribute and install the application on iOS and Android devices respectively.
+IPA and APK files contain the application source binary, assets, resources, and all other information about the application. These are used to distribute and install the application on iOS and Android devices respectively.
 
 ## How to use React Native CLI in Build Process
 
@@ -32,7 +36,7 @@ The commands available in [https://github.com/wavemaker/wm-reactnative-cli](http
 
 :::
 
-2. [Export React Native zip](/learn/hybrid-mobile/export-react-native-zip) from WaveMaker Studio. This zip file helps store the React Native studio project in your local environment and is used to build the IPA or APK files.
+2. [Export React Native zip](https://docs.wavemaker.com/learn/react-native/export-react-native-zip) from WaveMaker Studio. This zip file helps store the React Native studio project in your local environment and is used to build the IPA or APK files.
 
 
 ## Android
