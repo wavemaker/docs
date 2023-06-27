@@ -690,6 +690,13 @@
 						"react-native/web-view",				
 						"react-native/react-native-embed"
 					]
+				},
+				{
+					"type": "category",
+					"label": "Examples/Use-Case",
+					"items": [
+						"react-native/device-biometric-authentication"
+					]
 				}
 			]
 		},
