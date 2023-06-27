@@ -1,16 +1,16 @@
 ---
 title: "Preview React Native Apps in Mobile without Building Installers"
 id: "expo-debug"
-sidebar_label: "Mobile Preview"
+sidebar_label: "Expo Go Preview"
 ---
 ---
 
-Mobile app developers can preview their apps using the Preview button. To see the complete app along with their native capabilities, developers have to build the installer (apk or ipa) for respective OS. This build step consumes 10 mins of developer time. To improve your productivity, we will be use Expo Go app to see an instant preview of the app without building the installer
+Mobile app developers can web preview their apps using the Preview button. To see the complete app along with its native capabilities, developers have to build the installer (apk or ipa) for respective OS. This build step consumes 10 mins of developer time. To improve your productivity, we will be use Expo Go app to see an instant preview of the app without building the installer
 
-## Pre-requisitess
+## Prerequisites
 
 1. For Windows, install [Git Bash](https://gitforwindows.org/) and use it as the terminal window. 
-2. Install Node 12
+2. Install Node 14.5.5
 3. Install npm 7
 4. Install wm-reactnative-cli in your machine using below command
 

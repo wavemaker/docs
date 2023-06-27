@@ -21,17 +21,18 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.3.4](/learn/wavemaker-release-notes/v11-3-4) <p style={{color:"red"}}>*latest*</p> | WaveMaker has released a version, 11.3.4, containing bug fixes related to access denied pop-ups and slow loading of the project listing page. | 12 June 2023 |
-|[WaveMaker 11.3.3](/learn/wavemaker-release-notes/v11-3-3) | WaveMaker has released a version 11.3.3, containing new features in React Native, such as Lottie widget, SSL pinning, supporting third-party React Native UI components, developer UX changes, and other bug fixes. | 7 June 2023 |
-|[WaveMaker 11.3.2](/learn/wavemaker-release-notes/v11-3-2)| This release includes enhancements related to mobile and bug fixes related to Summary Row, Material 2.0 theme, assigning server port, and more. | 22 May 2023 |
-|[WaveMaker 11.3.0](/learn/wavemaker-release-notes/v11-3-0) | This release includes new features, including Publish to Marketplace and consume, Semantic Versioning support, React Native Lottie file support, loaders and more. | 17 April 2023 |
-|[WaveMaker 11.2.5](/learn/wavemaker-release-notes/v11-2-5) | This release includes bug fixes for accessibility in widgets and In-memory sessions. | 20 March 2023 |
-|[WaveMaker 11.2.4](/learn/wavemaker-release-notes/v11-2-4) | This release includes bug fixes for Dynamic Data Table infinite scroll pagination and keyboard date picker. | 06 February 2023 |
+|[WaveMaker 11.3.5](/learn/wavemaker-release-notes/v11-3-5) <p style={{color:"red"}}>*latest*</p> | Enhancements for the Googlemap Prefab, pagination, as well as bug fixes for nested menus, app crashing, and database queries and procedures. | 26 June 2023 |
+|[WaveMaker 11.3.4](/learn/wavemaker-release-notes/v11-3-4) | Bug fixes related to access denied pop-ups and slow loading of the project listing page. | 12 June 2023 |
+|[WaveMaker 11.3.3](/learn/wavemaker-release-notes/v11-3-3) | New features in React Native, such as Lottie widget, SSL pinning, supporting third-party React Native UI components, developer UX changes, and other bug fixes. | 7 June 2023 |
+|[WaveMaker 11.3.2](/learn/wavemaker-release-notes/v11-3-2)| Enhancements related to mobile and bug fixes related to Summary Row, Material 2.0 theme, assigning server port, and more. | 22 May 2023 |
+|[WaveMaker 11.3.0](/learn/wavemaker-release-notes/v11-3-0) | New features, including Publish to Marketplace and consume, Semantic Versioning support, React Native Lottie file support, loaders and more. | 17 April 2023 |
+|[WaveMaker 11.2.5](/learn/wavemaker-release-notes/v11-2-5) | Bug fixes for accessibility in widgets and In-memory sessions. | 20 March 2023 |
+|[WaveMaker 11.2.4](/learn/wavemaker-release-notes/v11-2-4) | Bug fixes for Dynamic Data Table infinite scroll pagination and keyboard date picker. | 06 February 2023 |
 |WaveMaker 11.2.3 | Fixed the Connectors artifact import issue, which earlier failed and could not run existing connectors. | 23 January 2023 |
-|[WaveMaker 11.2.2](/learn/wavemaker-release-notes/v11-2-2) | This release includes formatting fixes and fixing user account log out issue. | 16 January 2023 |
-|[WaveMaker 11.2.1](/learn/wavemaker-release-notes/v11-2-1) | This release includes bug fixes for the Calendar widget accessibility and icon rendering. | 06 December 2022 |
-|[WaveMaker 11.2.0](/learn/wavemaker-release-notes/v11-2-0)  |  This release includes several new features, including One-click enabling of API Mocking in Studio, the easy discovery of dependencies of services and methods to compose Java API, Single Page App behavior for UI, the Ability to create new projects from VCS repo for Teams users, Update timezones at Pages and Widget level, changes in JDBC connectors, Cordova Android updates, bug fixes, and more.| 21 November 2022 |
-|[WaveMaker 11.1.3](/learn/wavemaker-release-notes/v11-1-3) | This release includes internal platform fixes only.  | 03 October 2022 |
+|[WaveMaker 11.2.2](/learn/wavemaker-release-notes/v11-2-2) | Formatting fixes and fixing user account log out issue. | 16 January 2023 |
+|[WaveMaker 11.2.1](/learn/wavemaker-release-notes/v11-2-1) | Bug fixes for the Calendar widget accessibility and icon rendering. | 06 December 2022 |
+|[WaveMaker 11.2.0](/learn/wavemaker-release-notes/v11-2-0)  |  New features, including One-click enabling of API Mocking in Studio, the easy discovery of dependencies of services and methods to compose Java API, Single Page App behavior for UI, the Ability to create new projects from VCS repo for Teams users, Update timezones at Pages and Widget level, changes in JDBC connectors, Cordova Android updates, bug fixes, and more.| 21 November 2022 |
+|[WaveMaker 11.1.3](/learn/wavemaker-release-notes/v11-1-3) | Internal platform fixes only.  | 03 October 2022 |
 |[WaveMaker 11.1.2](/learn/wavemaker-release-notes/v11-1-2) | Layout and Flex in Cordova, React Native fixes, including Style, Form and Chart and other bug fixes. | 26 September 2022 |
 |[v11.1.0](/learn/wavemaker-release-notes/v11-1-0) <br/> known issue: <br/> [wm-sspa-cli](/learn/wavemaker-release-notes/v11-1-0)| **wm-sspa-cli** is now supported. <br/> [Read updated commands for invoking CLI](/learn/app-development/sspa/micro-frontend#invoke-cli) | 12 September 2022 |
 |[WaveMaker 11.1.1](/learn/wavemaker-release-notes/v11-1-1) | Bug fixes include authentication issues in React Native, Teams Portal navigation, and more.  | 5 September 2022 |

@@ -1,13 +1,12 @@
 ---
-title: "Configuring Open ID using Google provider"
+title: "Configuring Open ID using Google Provider"
 id: "implement-openid-google-provider"
-sidebar_label: "Open ID using Google provider"
----
-In this document, we discuss the steps to implement Google as Open ID provider.
-
+sidebar_label: "Open ID Integration - Google"
 ---
 
-## Google as Open ID provider
+Google Identity Platform allows you to manage application access by providing authentication and authorization services. With this, you can add user identity, restrict application access, and protect user accounts. Below are the steps to configure Open ID using Google.
+
+## Google as Open ID Provider
 
 Below are steps to choose Google as Open ID provider in WaveMaker.
 

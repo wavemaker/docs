@@ -1,11 +1,14 @@
 ---
-title: "API Composition Toolkit"
+title: "API Orchestration using API Composition Toolkit"
 id: "api-composer-toolkit"
-sidebar_label: "API Composition"
----
+sidebar_label: "API Orchestration"
 ---
 
-API Composition toolkit can be your playground to compose an object using multiple API endpoints. This means you can combine any Service in [Java Service](/learn/app-development/services/java-services/java-service) and write custom business logic that you can use as a variable and bind to any UI widget.
+Backend for Frontend Empowered API Orchestration with the API Composition Toolkit
+
+---
+
+API Composition toolkit can be your playground to compose an API or an object using multiple API endpoints. This means you can combine any Service in [Java Service](/learn/app-development/services/java-services/java-service) and write custom business logic that you can use as a variable and bind to any UI widget.
 
 It generates Java code for each imported service, which contains services and its methods into a package that Java understands, i.e., Service and Model (see image below). WaveMaker makes it easy to access these generated packages: service and model into the backend API designer. 
 

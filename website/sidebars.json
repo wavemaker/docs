@@ -322,6 +322,7 @@
 				"app-development/dev-integration/developer-tools",
 				"app-development/dev-integration/chrome-developer-tool",
 				"app-development/dev-integration/debugging",
+				"app-development/dev-integration/printing-logger-statement",
 				"app-development/dev-integration/inspection-framework",
 				"hybrid-mobile/mobile-automation-appium"
 			]
@@ -456,6 +457,7 @@
 				"on-premise/aws/wavemaker-enterprise-setup-on-aws",
 				"on-premise/aws/launching-instances-in-aws",
 				"on-premise/aws/install-prerequisites",
+				"on-premise/aws/non-root-execution",		
 				"on-premise/aws/install/download-copy-installer",
 				"on-premise/aws/install/extract-package",
 				"on-premise/aws/install/initilize-setup",
@@ -476,6 +478,7 @@
 				"on-premise/azure/launching-instances-in-azure",
 				"on-premise/azure/launching-instances-in-azure-vhd",
 				"on-premise/azure/install-prerequisites",
+				"on-premise/aws/non-root-execution",		
 				"on-premise/azure/install/download-copy-installer",
 				"on-premise/azure/install/extract-package",
 				"on-premise/azure/install/initilize-setup",
@@ -495,6 +498,7 @@
 				"on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
 				"on-premise/gcp/launching-instances-in-gcp",
 				"on-premise/gcp/install-prerequisites",
+				"on-premise/aws/non-root-execution",		
 				"on-premise/gcp/install/download-copy-installer",
 				"on-premise/gcp/install/extract-package",
 				"on-premise/gcp/install/initilize-setup",
@@ -515,6 +519,7 @@
 				"on-premise/vmware-esxi/launching-instances-in-esxi-ova",
 				"on-premise/vmware-esxi/launching-instances-in-esxi-iso",
 				"on-premise/vmware-esxi/install-prerequisites",
+				"on-premise/aws/non-root-execution",		
 				"on-premise/vmware-esxi/install/download-copy-installer",
 				"on-premise/vmware-esxi/install/extract-package",
 				"on-premise/vmware-esxi/install/initilize-setup",
@@ -534,6 +539,7 @@
 				"on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv",
 				"on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
 				"on-premise/hyper-v/install-prerequisites",
+				"on-premise/aws/non-root-execution",		
 				"on-premise/hyper-v/install/download-copy-installer",
 				"on-premise/hyper-v/install/extract-package",
 				"on-premise/hyper-v/install/initilize-setup",
@@ -595,6 +601,7 @@
 				"on-premise/upgrade/passivate-containers",
 				"on-premise/upgrade/run-patch",
 				"on-premise/upgrade/docker-upgrade",
+				"on-premise/upgrade/upgrade-non-root-execution",
 				"on-premise/upgrade/os-upgrade"
 			]
 		},
@@ -650,7 +657,8 @@
 					"type": "category",
 					"label": "Development",
 					"items": [
-						"react-native/custom-widget"
+						"react-native/custom-widget",
+            			"react-native/ssl-pinning"
 					]
 				},
 				{
@@ -658,12 +666,10 @@
 					"label": "Test and Debug",
 					"items": [
 						"react-native/test-run",
+						"react-native/generate-web-preview-locally",
 						"react-native/web-preview-debug",
 						"react-native/expo-debug",
-						"react-native/flipper",
-            "react-native/ssl-pinning",
-						"react-native/expo-apk-debug",
-						"react-native/expo-ipa-debug"
+						"react-native/flipper"
 					]
 				},
 				{
@@ -844,7 +850,7 @@
 				"how-tos/sso-openid-azure-active-directory",
 				"how-tos/implement-openid-google-provider",
 				"how-tos/implement-openid-okta-provider",
-				"how-tos/sso-openid-azure-active-directory",
+				"how-tos/implement-openid-auth0-provider",
 				"how-tos/custom-security-using-google-oauth-prefab",
 				"how-tos/multiple-security-provider-implementation",
 				"how-tos/customizing-post-authentication-handlers",
@@ -877,6 +883,7 @@
 			"items": [
 				"how-tos/using-app-environment-properties",
 				"how-tos/consuming-existing-wm-api-into-another-wm-project",
+				"how-tos/dynamic-form",
 				"how-tos/using-post-method-send-data-rest-api",
 				"how-tos/request-response-processing-rest-services",
 				"how-tos/intercept-requests-responses-api-calls-one-place",
@@ -905,7 +912,8 @@
 				"how-tos/insert-data-from-excel",
 				"how-tos/aws-s3-connector",
 				"how-tos/twilio-connector",
-				"how-tos/twilio-otp-integration"
+				"how-tos/twilio-otp-integration",
+				"how-tos/custom-status-code-error-message-java-service"
 			]
 		},
 		{
@@ -1032,6 +1040,7 @@
 					"label": "Form",
 					"items": [
 						"app-development/widgets/datalive/form",
+						"how-tos/dynamic-form",
 						"app-development/widgets/datalive/form/form-usage-scenarios",
 						"app-development/widgets/datalive/form/form-data-source",
 						"app-development/widgets/datalive/form/form-layouts",
@@ -1490,6 +1499,7 @@
 					"type": "category",
 					"label": "Versions: 11.3.x",
 					"items": [
+						"wavemaker-release-notes/v11-3-5",
 						"wavemaker-release-notes/v11-3-4",
 						"wavemaker-release-notes/v11-3-3",
 						"wavemaker-release-notes/v11-3-2",

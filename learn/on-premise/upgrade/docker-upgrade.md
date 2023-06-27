@@ -8,7 +8,7 @@ sidebar_label: "Docker Upgrade"
 ## Docker Upgrade
 
 
-- Docker upgrade is required when you have docker version below 20.10.12.
+- Docker upgrade is required when you have docker version below 23.0.1 .
 - User needs to upgrade docker if ssh-user doesn't have root/sudo privileges in Ubuntu OS StudioWorkspaceInstance/AppDeploymentInstance and if ssh-user have or doesn't have root/sudo privileges in RHEL OS StudioWorkspaceInstance/AppDeploymentInstance.
 - Make sure Hibernate and passivate user containers and application containers from launchpad. 
 
@@ -48,6 +48,7 @@ sidebar_label: "Docker Upgrade"
 - To upgrade and install the latest version of Docker, run the following command to list all the available versions:
 
   ```bash
+    sudo apt-get update
     apt-cache madison docker-ce
     apt-cache madison docker-ce-cli
   ```
@@ -56,9 +57,19 @@ sidebar_label: "Docker Upgrade"
 
   ```bash
     sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
-    example: sudo apt-get install docker-ce=5:20.10.12~3-0~ubuntu-focal docker-ce-cli=5:20.10.12~3-0~ubuntu-focal containerd.io -y
+    example: sudo apt-get install docker-ce=5:23.0.1-1~ubuntu.20.04~focal docker-ce-cli=5:23.0.1-1~ubuntu.20.04~focal containerd.io -y
   ```
 
+#### Upgrade Docker using WaveMaker Script
+
+- To Upgrade Docker to the latest version, the user need to use their own approach or WaveMaker provides a script to install.
+
+  - Run the following command to install the Docker.
+
+    ```bash 
+        sudo bash wme-utility.sh --docker-upgrade 
+    ```
+    
 - If the given platform user does not have privileged access, then provide the below permissions for the given user on StudioWorkspace Instance/AppDeployment Instance.  
 - The user should be able to execute the following commands as a privileged user:
   - Add user to the Docker group.  
@@ -109,12 +120,12 @@ Upgrade or Install the latest version of Docker.
   
   ```bash
     yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-20.10.12-3.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.9-3.1.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-20.10.12-3.el8.x86_64.rpm
-    sudo yum install docker-ce-cli-20.10.12-3.el8.x86_64.rpm -y
-    sudo yum install containerd.io-1.4.9-3.1.el8.x86_64.rpm -y
-    sudo yum install docker-ce-20.10.12-3.el8.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-23.0.1-1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.6.18-3.1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-23.0.1-1.el8.x86_64.rpm
+    sudo yum install docker-ce-cli-23.0.1-1.el8.x86_64.rpm -y
+    sudo yum install containerd.io-1.6.18-3.1.el8.x86_64.rpm -y
+    sudo yum install docker-ce-23.0.1-1.el8.x86_64.rpm -y
   ```
 
   - Install prerequisites to install Docker in RHEL7
@@ -134,12 +145,12 @@ Upgrade or Install the latest version of Docker.
   - To Install Docker in RHEL 7 use the following commands
   
   ```bash
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-20.10.12-3.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.4.9-3.1.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-20.10.12-3.el7.x86_64.rpm
-    sudo yum install docker-ce-cli-20.10.12-3.el7.x86_64.rpm -y
-    sudo yum install containerd.io-1.4.9-3.1.el7.x86_64.rpm -y
-    sudo yum install docker-ce-20.10.12-3.el7.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-23.0.1-1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.6.18-3.1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-23.0.1-1.el7.x86_64.rpm
+    sudo yum install docker-ce-cli-23.0.1-1.el7.x86_64.rpm -y
+    sudo yum install containerd.io-1.6.18-3.1.el7.x86_64.rpm -y
+    sudo yum install docker-ce-23.0.1-1.el7.x86_64.rpm -y
   ```  
 
 ```bash
@@ -168,6 +179,25 @@ Upgrade or Install the latest version of Docker.
       chown -R <user>:<user> /data
       echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
   ```
+
+
+### Make sure to Run below command after installation of docker completes to have WaveMaker docker configuration to your installed docker
+
+- For Ubuntu
+
+  ```bash 
+      bash docker_configure.sh
+  ```
+
+- For RHEL
+
+  ```bash
+      bash docker_setup_rhel.sh
+  ```
+
+:::note 
+  Excute the above configuration files only after giving the permissions if it in the case of non-root execution., which the steps are given in the next page.
+:::
 
 
 ### Studio Workspace/AppDeploy Instances Sync and Patch using Launchpad
