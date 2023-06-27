@@ -102,4 +102,9 @@ wm-reactnative build ios "/path/to/src" \
 
 
 `wm-reactnative-cli` command prints the destination build folder at the beginning of build logs.
+
+[![](/learn/assets/reactnative-command-destination-folder-ios.png)](/learn/assets/reactnative-command-destination-folder-ios.png)
+
 When the build gets completed, `wm-reactnative-cli` prints out the path at which the generated IPA is present.
+
+[![](/learn/assets/reactnative-command-final-file-ios.png)](/learn/assets/reactnative-command-final-file-ios.png)
