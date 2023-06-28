@@ -9,7 +9,7 @@ that the app may handle, such as personal details, financial data, or private me
 unauthorized users are prevented from capturing and potentially misusing this sensitive information. Secondly, it safeguards 
 intellectual property by preventing users from easily capturing and distributing proprietary or copyrighted content without permission. 
 This is particularly relevant for apps that offer paid content, as it helps prevent content piracy. Additionally, 
-disabling screenshots ensures user privacy by preventing accidental or intentional sharing of sensitive content, conversations, or activities. 
+disabling screenshots ensures user privacy by preventing accidental or unintentional sharing of sensitive content, conversations, or activities. 
 It also helps app developers comply with industry regulations regarding data security and privacy, especially in fields 
 like finance or healthcare. By implementing measures to protect user data and privacy, such as disabling screenshots, 
 app developers can enhance user trust and confidence. It's important to note that disabling screenshots alone is not 
