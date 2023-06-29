@@ -4,6 +4,8 @@ id: "disable-device-screencapture"
 sidebar_label: "Disable Screen Capture"
 ---
 ---
+import pluginExample from '/learn/assets/ScreeCaptureOnDemand.png';
+
 Restricting screenshots in a mobile app can provide several important benefits. 
 
 Firstly, it helps protect sensitive information that the app may handle, such as personal details, financial data, or private messages. By disabling screenshots, 
@@ -49,7 +51,7 @@ content that requires a paid subscription.
 For our example, we will create a simple app that allows users to enable or disable screenshots on click of a button. 
 The following is the mockup of the app:
 
-![ScreenCaptureOnDemand](/learn/assets/ScreeCaptureOnDemand.png)
+<img src={pluginExample} style={{width:"100%"}} />
 
 The following is the code snippet for the above mockup:
 
