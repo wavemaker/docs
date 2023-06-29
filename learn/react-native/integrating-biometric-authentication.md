@@ -1,7 +1,7 @@
 ---
 title: "Integrating Biometric Authentication"
 id: "integrating-biometric-authentication"
-sidebar_label: "Integrating Biometric Authentication"
+sidebar_label: "Biometric Authentication"
 ---
 ---
 Embracing biometric authentication in mobile apps, such as facial recognition and fingerprint scanning, 
