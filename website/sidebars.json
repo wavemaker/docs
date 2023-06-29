@@ -691,7 +691,7 @@
 				},
 				{
 					"type": "category",
-					"label": "Examples/Use-Case",
+					"label": "How-to",
 					"items": [
 						"react-native/disable-device-screencapture"
 					]
