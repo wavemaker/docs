@@ -51,7 +51,7 @@ content that requires a paid subscription.
 For our example, we will create a simple app that allows users to enable or disable screenshots on click of a button. 
 The following is the mockup of the app:
 
-<img src={pluginExample} style={{width:"100%"}} />
+<img src={pluginExample} style={{width:"35%"}} />
 
 The following is the code snippet for the above mockup:
 
