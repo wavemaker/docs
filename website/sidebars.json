@@ -693,9 +693,9 @@
 				},
 				{
 					"type": "category",
-					"label": "Examples/Use-Case",
+					"label": "How-to",
 					"items": [
-						"react-native/device-biometric-authentication"
+						"react-native/integrating-biometric-authentication"
 					]
 				}
 			]

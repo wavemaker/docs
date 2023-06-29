@@ -1,7 +1,7 @@
 ---
-title: "Device Biometric Authentication"
-id: "device-biometric-authentication"
-sidebar_label: "Device Biometric Authentication"
+title: "Integrating Biometric Authentication"
+id: "integrating-biometric-authentication"
+sidebar_label: "Integrating Biometric Authentication"
 ---
 ---
 Embracing biometric authentication in mobile apps, such as facial recognition and fingerprint scanning, 
@@ -12,7 +12,7 @@ making it a preferred choice for many applications in our ever-evolving digital 
 
 ## Expo's LocalAuthentication Plugin
 
-Expo's [LocalAuthentication](https://docs.expo.io/versions/latest/sdk/local-authentication/) plugin provides an API to authenticate with the device's local authentication hardware, such as Touch ID, Face ID, or the Fingerprint API on Android.
+Expo's [LocalAuthentication](https://docs.expo.io/versions/latest/sdk/local-authentication/) plugin provides an API to authenticate with the device's local authentication hardware, such as Touch ID, Face ID, or the Fingerprint API in both Android and iOS.
 This plugin can also be used to determine whether biometric hardware is available on the device, if biometric records are enrolled, and to authenticate users using the available biometrics.
 The following are key features of the LocalAuthentication plugin:
 
@@ -36,7 +36,7 @@ This API returns a promise that resolves to an array of strings, each of which i
 
 ## How to invoke any local authentication
 
-'authenticateAsync()' API is used to invoke any local authentication. This API returns a promise that resolves to a boolean value indicating whether or not the authentication was successful.
+`authenticateAsync()` API is used to invoke any local authentication. This API returns a promise that resolves to a boolean value indicating whether or not the authentication was successful.
 
 ```javascript
 Page.authenticateTap = async function($event, widget) {
@@ -77,7 +77,7 @@ Page.authenticateTap = async function($event, widget) {
 We can restrict the authentication to only biometric authentication by passing the [`options`](https://docs.expo.dev/versions/latest/sdk/local-authentication/#localauthenticationauthenticateasyncoptions) parameter to the `authenticateAsync()` API.
 
 - `disableDeviceFallback` -- If set to true, the user will be unable to authenticate with biometrics (Touch ID or Face ID) and will be asked for their passcode instead. Defaults to false.
-- `requireConfirmation` -- Whether to show a dialog after successful biometric authentication. Defaults to true on Android.
+- `requireConfirmation` -- Whether to show a dialog after successful biometric authentication. Defaults to true on Android. `Note: requireConfirmation applies to Android only, and the default value sets to true.`
 
 The following code snippet shows how to invoke only biometric authentication.
 
