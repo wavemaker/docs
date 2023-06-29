@@ -77,7 +77,11 @@ Page.authenticateTap = async function($event, widget) {
 We can restrict the authentication to only biometric authentication by passing the [`options`](https://docs.expo.dev/versions/latest/sdk/local-authentication/#localauthenticationauthenticateasyncoptions) parameter to the `authenticateAsync()` API.
 
 - `disableDeviceFallback` -- If set to true, the user will be unable to authenticate with biometrics (Touch ID or Face ID) and will be asked for their passcode instead. Defaults to false.
-- `requireConfirmation` -- Whether to show a dialog after successful biometric authentication. Defaults to true on Android. `Note: requireConfirmation applies to Android only, and the default value sets to true.`
+- `requireConfirmation` -- Whether to show a dialog after successful biometric authentication. Defaults to true on Android.
+
+:::note
+requireConfirmation applies to Android only, and the default value sets to true.
+:::
 
 The following code snippet shows how to invoke only biometric authentication.
 
