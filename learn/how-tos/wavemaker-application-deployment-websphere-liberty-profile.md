@@ -5,12 +5,13 @@ sidebar_label: "WebSphere"
 ---
 ---
 
-WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 1.8. This section walks through the steps to deploy WaveMaker app to IBM Websphere (Liberty Profile). You can know more about [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/) from here.
+WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 11. This section walks through the steps to deploy WaveMaker app to IBM Websphere (Liberty Profile). You can know more about [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/) from here.
 
 ## Pre-requisites
 
 1. WaveMaker application (war) file named **SampleApp.war**
-2. You need to configure IBM Websphere (Liberty Profile).
+2. Websphere version should be **19.0.0.1** or more.
+3. You need to configure IBM Websphere (Liberty Profile) and update server.xml with servlet-4.0 feature.
 
 ## WebSphere Setup
 
