@@ -16,7 +16,7 @@ You can style React Native apps using a theme. Common (theme) styles will greatl
 
 ## Required Software
 
-- Node (14.x)
+- Node (14.15.5)
 - React Native Codegen:
 
 ```shell
