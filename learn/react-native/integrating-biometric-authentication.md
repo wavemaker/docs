@@ -77,7 +77,7 @@ We can restrict the authentication to only biometric authentication by passing t
 - `requireConfirmation` -- Whether to show a dialog after successful biometric authentication. Defaults to true on Android.
 
 :::note
-requireConfirmation applies to Android only, and the default value sets to true.
+`requireConfirmation` applies to Android only, and the default value sets to true.
 :::
 
 The following code snippet shows how to invoke only biometric authentication.
