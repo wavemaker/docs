@@ -13,7 +13,7 @@ WaveMaker Apps can be exported as a WAR file. This generated file can be deploye
 
 #### JBoss Server setup
 
-- Minimum required version is 15 which supports jdk 11.
+- Minimum required JBoss version is 15 which supports jdk 11.
 - You need to configure JBoss server. [Learn more](http://wildfly.org/downloads/). 
 
 - Login to JBoss server with valid username and password.
