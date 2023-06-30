@@ -16,7 +16,7 @@ To find the recommended version of the JDBC driver for your database, see [Recom
 
 ## How to Upload JDBC Driver
 
-For example, to upload JDBC driver for ORACLE DATABASE, find the following steps.
+For example, to upload the JDBC driver for ORACLE DATABASE, find the following steps.
 
 1. Go to **Databases** and click on '+' to add a new database.
 
@@ -35,4 +35,3 @@ For example, to upload JDBC driver for ORACLE DATABASE, find the following steps
 [![](/learn/assets/jdbc-import-driver.png)](/learn/assets/jdbc-import-driver.png)
 
 5. Upload the Driver Jar and click **Next**. For further configuration details, see [Connect to Database](https://docs.wavemaker.com/learn/jump-start/jump-start-db-essentials/#connect-to-database).
-
