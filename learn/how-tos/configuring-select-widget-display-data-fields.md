@@ -14,11 +14,17 @@ Usually, when giving options to the user, one would want the option to make sens
 
 1. Drag and drop a Select and Label widget onto the canvas.
 2. [Create a Model Variable](/learn/assets/var_sel.png), choose Entry Type
-3. Select the Is List and add the list values. you can also use the text editor to enter the values in JSON format: [![](/learn/assets/sel_vals.png)](/learn/assets/sel_vals.png)
+3. Select the Is List and add the list values. you can also use the text editor to enter the values in JSON format:![select_widget_values](/learn/assets/select_widget_values.png)
 4. Bind the dataset of the Model Variable to the select widget
-5. Set the Datafield property to the dataValue and Display Field to the name fields of the static variable. Set the Default Value, note the default value should correspond to the dataValue and not the name field of the static variable. [![](/learn/assets/sel_vals_props.png)](/learn/assets/sel_vals_props.png)
-6. The selection made by the user is displayed in a Label widget, by binding the select datavalue to it. [![](/learn/assets/sel_list_res.png)](/learn/assets/sel_list_res.png)
+5. Set the Datafield property to the dataValue and Display Field to the name fields of the static variable. Set the Default Value, note the default value should correspond to the dataValue and not the name field of the static variable. ![select_widget_ValueProperties](/learn/assets/select_widget_ValueProperties.png)
+6. Drag and drop two label widgets and bind them using the below user expression as shown below to show the Data value and display values.
+
+    ![select_widget_displayValue](/learn/assets/select_widget_displayValue.png)
+
+    ![select_widget_dataValue](/learn/assets/select_widget_dataValue.png)
 7. Preview the app and see the selected item from the Select widget displayed in the label.
+
+     ![select_widget_ListResult](/learn/assets/select_widget_ListResult.png)
 
 [Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)
 
