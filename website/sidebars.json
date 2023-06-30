@@ -693,6 +693,7 @@
 					"type": "category",
 					"label": "How-to",
 					"items": [
+						"react-native/integrating-biometric-authentication",
 						"react-native/disable-device-screencapture"
 					]
 				}
