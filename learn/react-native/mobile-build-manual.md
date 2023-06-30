@@ -5,10 +5,10 @@ sidebar_label: "Manual Build"
 ---
 ---
 
-In the manual build process, you can run the build commands provided by the WaveMaker React Native CLI in your local environment. The manual build process is opted when
+In the manual build process, you can run the build commands provided by the WaveMaker React Native CLI in your local environment. The manual build process is used when,
 
 - You want to use Continuous Integration and Continuous Deployment (CI/CD) pipeline for application development.
-- WaveMaker Enterprise Users want to use CLi to build artifacts as they do not have access to Appchef
+- WaveMaker Enterprise Users want to use CLi to build artifacts as they do not have access to Appchef.
 - You do not want to use certificates in Appchef to build the artifacts. To know more about certificates in AppChef, see [Build Configuration using AppChef](https://docs.wavemaker.com/learn/hybrid-mobile/mobile-build-appchef#configure-build).
 
 :::note
@@ -16,7 +16,6 @@ CI/CD pipeline includes practices and tools used to automate the processes of bu
 :::
 
 In general, WaveMaker Studio builds the iOS Package App Store (IPA) and Android Package Kit (APK) files automatically using [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers) and the manual process outlined in this document is for teams that want to implement a CI/CD pipeline themselves.
-
 
 ## IPA and APK Files
 
