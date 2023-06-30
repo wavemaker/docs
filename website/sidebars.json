@@ -688,6 +688,13 @@
 						"react-native/web-view",				
 						"react-native/react-native-embed"
 					]
+				},
+				{
+					"type": "category",
+					"label": "How-to",
+					"items": [
+						"react-native/disable-device-screencapture"
+					]
 				}
 			]
 		},
