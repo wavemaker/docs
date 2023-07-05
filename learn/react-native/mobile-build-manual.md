@@ -1,21 +1,21 @@
 ---
-title: "React Native - Mobile Manual Build"
+title: "React Native - Mobile Build using the command line or for integrating with automated build tools"
 id: "mobile-build-manual"
 sidebar_label: "Manual Build"
 ---
 ---
 
-In the manual build process, you can run the build commands provided by the WaveMaker React Native CLI in your local environment. The manual build process is used when,
+To build the mobile app so that it can be listed on the app stores, you can run the build commands provided by the WaveMaker React Native CLI in your local environment. This build process is used when,
 
-- You want to use Continuous Integration and Continuous Deployment (CI/CD) pipeline for application development.
-- WaveMaker Enterprise Users want to use CLi to build artifacts as they do not have access to Appchef.
+- You want to use Continuous Integration and Continuous Deployment (CI/CD) pipeline for building the mobile application.
+- WaveMaker Enterprise Users want to use CLi to build artifacts as they do not have access to [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers).
 - You do not want to use certificates in Appchef to build the artifacts. To know more about certificates in AppChef, see [Build Configuration using AppChef](https://docs.wavemaker.com/learn/hybrid-mobile/mobile-build-appchef#configure-build).
 
 :::note
 CI/CD pipeline includes practices and tools used to automate the processes of building, testing, and deploying software applications.
 :::
 
-In general, WaveMaker Studio builds the iOS Package App Store (IPA) and Android Package Kit (APK) files automatically using [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers) and the manual process outlined in this document is for teams that want to implement a CI/CD pipeline themselves.
+In general, WaveMaker Studio builds the iOS Package App Store (IPA) and Android Package Kit (APK) files online using our cloud infrastructure namely [AppChef](https://docs.wavemaker.com/learn/react-native/build-installers) and the process outlined in this document is for teams that want to implement a CI/CD pipeline themselves.
 
 ## IPA and APK Files
 
@@ -25,7 +25,7 @@ IPA and APK files contain the application source binary, assets, resources, and 
 
 ## How to use React Native CLI in Build Process
 
-WaveMaker developers use `wm-reactnative-cli` in this manual process where `wm-reactnative-cli` combines multiple React Native commands into a single command. Follow the below procedure.
+WaveMaker developers use `wm-reactnative-cli` in this process where `wm-reactnative-cli` combines multiple React Native commands into a single command. Follow the below procedure.
 
 1. Ensure that the hardware and software required by `wm-reactnative-cli` are available. To find the list of requirements, see [https://github.com/wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli)
 
@@ -40,7 +40,7 @@ The commands available in [https://github.com/wavemaker/wm-reactnative-cli](http
 
 ## Android
 
-While using the manual build process for the Android platform, an APK file is generated.
+While using the build process for the Android platform, an APK file is generated.
 
 ### Build Commands to Generate APK File
 
@@ -48,7 +48,7 @@ While using the manual build process for the Android platform, an APK file is ge
 
 For example, use the following commands:
 
-#### To Build For Debug
+#### To Build the App for Debugging
 
 If the build is for Debugging, the application can be tested further before deployment.
 
@@ -82,7 +82,7 @@ When the build gets completed, `wm-reactnative-cli` prints out the path at which
 
 ## iOS
 
-While using the manual build process for the iOS platform, an IPA file is generated.
+While using the build process for the iOS platform, an IPA file is generated.
 
 ### Build Commands to Generate IPA File
 
