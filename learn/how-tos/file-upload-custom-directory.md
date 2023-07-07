@@ -3,9 +3,25 @@ title: "File Upload - Custom Directory"
 id: "file-upload-custom-directory"
 ---
 
-This section showcases using FileUpload widget to :
+FileUpload widget enables uploading files to the application. You can now upload the file to a custom folder which provides flexibility to cater to specific requirements. 
 
-1. use apache tomcat bin folder to upload files
+As discussed in [FileUpload](https://docs.wavemaker.com/learn/app-development/widgets/form-widgets/file-upload#features), a Java service against the FileUpload widget gets created automatically. You can upload a file to a custom directory by providing the path to the custom folder in the Java service.
+
+1. Drag and drop the FileUpload widget. To know more, see [FileUpload Basic Usage](https://docs.wavemaker.com/learn/app-development/widgets/form-widgets/file-upload-basic-usage).
+
+2. Go to Java services and inside `getUploadDir` replace the upload directory path.
+
+[![](/learn/assets/getUploadDir.png)](/learn/assets/getUploadDir.png)
+
+The uploaded file is available in the **Import Resource** window under **Resources** in the path mentioned in the Java Service. You can view the created directory and file in the below image.
+
+[![](/learn/assets/uploadedImage.png)](/learn/assets/uploadedImage.png)
+
+## Uploading File using Apache Tomcat
+
+This section showcases using the FileUpload widget to :
+
+1. use the apache tomcat bin folder to upload files
 2. to package the files in the application
 
 <iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vRZNrR4NddPLUrPz4asRRs6qbNtG_vO2gz4lZjsjujJnMLxsTrzLWf-NKZC8lMyUPSQpgS12Ld79TV3/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
@@ -19,3 +35,4 @@ This section showcases using FileUpload widget to :
 - [5. How to upload file to custom directory](/learn/how-tos/file-upload-custom-directory/)
 - [6. How to uploaded files from Java code](/learn/how-tos/accessing-file-upload-java-code/)
 - [7. How to use file upload in Form and Live Form](/learn/how-tos/upload-files-from-live-form-form/)
+
