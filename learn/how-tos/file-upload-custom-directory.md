@@ -9,7 +9,7 @@ As discussed in [FileUpload](https://docs.wavemaker.com/learn/app-development/wi
 
 1. Drag and drop the FileUpload widget. To know more, see [FileUpload Basic Usage](https://docs.wavemaker.com/learn/app-development/widgets/form-widgets/file-upload-basic-usage).
 
-2. Go to Java services and inside `getUploadDir` replace the upload directory path.
+2. Go to Java services and inside `getUploadDir` method replace the upload directory path.
 
 [![](/learn/assets/getuploaddir.png)](/learn/assets/getuploaddir.png)
 
