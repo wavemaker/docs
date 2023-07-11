@@ -104,7 +104,6 @@ const SecureStore = require('expo-secure-store');
 To retrieve data from the secure store in WaveMaker project when page is ready, add the following code snippet
 
 ```javascript
-
 Page.onReady = async function() {
     const res = await SecureStore.getItemAsync('auth');
 
