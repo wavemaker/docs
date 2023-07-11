@@ -41,16 +41,17 @@ const SecureStore = require('expo-secure-store')
 
 ### Add a Key-Value pair
 
-To add a value to the secure store in React Native, you can use the Expo SecureStore, which provides a built-in secure storage solution. Here's an example of how you can add a value to the secure store:
+Employing the Expo SecureStore enables you to effortlessly add values to a secure store. Here's a demonstration of its usage:
 
 ```javascript
 async function save() {
-  await SecureStore.setItemAsync('key', 'value');
+  await SecureStore.setItemAsync('superHero', 'Batman');
 }
 ```
 
-In this example, the value "value" is stored in the secure store with the key "key".
-If you want to store object data in SecureStore you can use `JSON.stringify` to convert an object into a JSON string before storing it.
+In the above example, the value "Batman" is stored in the secure store with the key "superHero".
+Suppose if you want to store an object data in SecureStore you can use `JSON.stringify` to convert an object into a JSON 
+string(as shown in the following example) before storing it.
 
 ```javascript
 async function saveObjectData() {
@@ -62,7 +63,8 @@ async function saveObjectData() {
 
 ### Retrieve a Key-Value pair
 
-To retrieve a value from the SecureStore in React Native, you can use the appropriate method provided by the secure store library you are using. Here's an example of how you can get value from the secure store:
+Similar to adding value to the secure store, retrieving a value from the secure store is also pretty much straightforward. 
+The following is an example of how you can get value from the secure store:
 
 ```javascript
 async function getValue() {
@@ -70,7 +72,7 @@ async function getValue() {
 }
 ```
 
-In this example, retrieve the JSON string from SecureStore and use `JSON.parse` to convert the JSON string back into an object when retrieving it from the secure store.
+Similarly to retrieve the JSON string from SecureStore and use `JSON.parse` to convert the JSON string back into an object when retrieving it from the secure store.
 
 ```javascript
 async function getJSONString() {
@@ -81,7 +83,7 @@ async function getJSONString() {
 
 ### Delete a Key-Value pair
 
-To delete data from the SecureStore in React Native, you can use the appropriate method provided by the secure store library you are using. Here's an example using the Expo SecureStore API:
+Like storing and retrival APIs we also have methods for deleting data from the SecureStore. Follow the example below for deleting data from SecureStore:
 
 ```javascript
 const deleteData = async () => {
@@ -89,30 +91,30 @@ const deleteData = async () => {
 }
 ```
 
-## Store user credentials in SecureStore in Login Page
+## Use-Case: Use SecureStore to Remember Credentials in Login Screen
 
-When implementing a login page in a React Native application with a "Remember Me" checkbox, you can utilize the secure store to store data securely based on the user's preference.
+### Requirement
+
+* A login page with a "Remember Me" checkbox
+* Credentials should be stored in the secure store when the user checks the "Remember Me" checkbox
+
+### Assumptions
+* Your WaveMaker project has a login page with username and password input fields.
+
+### Implementation
+
+In your WaveMaker project, navigate to the `Pages/Login` page.
 
 First, include a checkbox in your login page that allows the user to indicate whether they want their login information to be remembered. 
 
-In your WaveMaker project, navigate to the `Pages/Login` file and add the following code snippet, which imports the plugin into the app.
+```javascript
+<wm-checkbox caption="Remember me" name="rememberme" on-change="remembermeChange($event, widget, newVal, oldVal)">
+</wm-checkbox>
+```
+Add the following code snippet in `Script` tab, to imports the plugin into the app.
 
 ```javascript
 const SecureStore = require('expo-secure-store');
-```
-
-To retrieve data from the secure store in WaveMaker project when page is ready, add the following code snippet
-
-```javascript
-Page.onReady = async function() {
-    const res = await SecureStore.getItemAsync('auth');
-
-    const auth = JSON.parse(res)
-    if (auth.username && auth.password) {
-        Page.Widgets.loggedInUserForm1.formWidgets.j_username.datavalue = auth.username;
-        Page.Widgets.loggedInUserForm1.formWidgets.j_password.datavalue = auth.password;
-    }
-};
 ```
 
 Create a function that will be triggered when the user checked the "Remember Me" checkbox. This function will retrieve the login credentials (e.g., username and password) from the input fields and save them to the secure store using the library's appropriate method. For example:
@@ -135,3 +137,18 @@ Page.remembermeChange = async function($event, widget, newVal, oldVal) {
     }
 };
 ```
+
+To retrieve data from the secure store in WaveMaker project when page is ready, add the following code snippet
+
+```javascript
+Page.onReady = async function() {
+    const res = await SecureStore.getItemAsync('auth');
+
+    const auth = JSON.parse(res)
+    if (auth.username && auth.password) {
+        Page.Widgets.loggedInUserForm1.formWidgets.j_username.datavalue = auth.username;
+        Page.Widgets.loggedInUserForm1.formWidgets.j_password.datavalue = auth.password;
+    }
+};
+```
+
