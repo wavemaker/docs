@@ -95,11 +95,11 @@ const deleteData = async () => {
 
 ### Requirement
 
-* A login page with a "Remember Me" checkbox
-* Credentials should be stored in the secure store when the user checks the "Remember Me" checkbox
+- A login page with a "Remember Me" checkbox
+- Credentials should be stored in the secure store when the user checks the "Remember Me" checkbox
 
 ### Assumptions
-* Your WaveMaker project has a login page with username and password input fields.
+- Your WaveMaker project has a login page with username and password input fields.
 
 ### Implementation
 
