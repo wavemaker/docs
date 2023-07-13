@@ -173,6 +173,48 @@ Here we have used the _On select_ event of the chart:
 
 [![](/learn/assets/chart_events.png)](/learn/assets/chart_events.png)
 
+## Chart Legend Captions
+
+- Inorder to populate the chart legend captions, you need to add below specified JavaScript snippet on chart "On Before Render" Event.
+
+- Wavemaker internally using nvd3 library to load the charts. Right now, with the nvd3 1.0.3 version, you would face legend caption issues where the captions are not populating as expected. So, currently, we would suggest using the nvd3 1.8.1 version. 
+Below are the steps outlined for the same:
+This version upgrade will be taken care of in the upcoming releases of Wavemaker. 
+
+1.You need to upgrade your nvd3 library version to 1.8.1 , for this you need to add the below script in index.html file
+
+```js
+<script data-require="nvd3@1.8.1" data-semver="1.8.1" src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.js"></script>
+```
+2. set pie chart "On Before Render" property to JavaScript and add the below code snippet in it.
+
+```js 
+Page.chart4_1Beforerender = function(widget, chartInstance) {
+    var tooltip = nv.models.tooltip();
+    tooltip.duration(0);
+    chartInstance.legend.dispatch.legendMouseover = function(o) {
+        console.log(o);
+        if (tooltip.hidden()) {
+            var data = {
+                series: {
+                    key: o.x,
+                    value: o.y,
+                    color: o.color
+                }
+            };
+            tooltip.data(data)
+                .hidden(false);
+        }
+        tooltip.position({
+            top: d3.event.pageY,
+            left: d3.event.pageX
+        })();
+    };
+    chartInstance.legend.dispatch.legendMouseout = function(o) {
+        tooltip.hidden(true);
+    }
+};
+```
 ## Use Cases
 
 - [Basic Usage](/learn/app-development/widgets/chart/charts-basic-usage/)
