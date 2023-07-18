@@ -10,21 +10,37 @@ A Select widget can be used in various ways based on the source of data. Each ty
 - Using display and data value fields from a Variable
 - [Using database fields](/learn/how-tos/configuring-select-widget-database-fields/)
 
-Usually, when giving options to the user, one would want the option to make sense to the user while using a totally different value internally within the application. For example, the user may select Male/Female but the value stored could be M/F or 0/1. To cater for such needs, WaveMaker Studio offers an Entry type while creating a Model Variable. Using this option, the developer can specify different fields for the variable – one called dataValue and other called name. For example, you want the user to select gender as Male or Female, but want to use M or F internally.
+Usually, when giving options to the user, one would want the option to make sense to the user while using a different value internally within the application. For example, the user may select Male/Female but the value stored could be M/F or 0/1. To cater to such needs, WaveMaker Studio offers an Entry type while creating a Model Variable. Using this option, the developer can specify different fields for the variable – one called dataValue and the other called name. For example, you want the user to select gender as Male or Female but want to use M or F internally.
 
 1. Drag and drop a Select and Label widget onto the canvas.
-2. [Create a Model Variable](/learn/assets/var_sel.png), choose Entry Type
-3. Select the Is List and add the list values. you can also use the text editor to enter the values in JSON format:![select_widget_values](/learn/assets/select_widget_values.png)
-4. Bind the dataset of the Model Variable to the select widget
-5. Set the Datafield property to the dataValue and Display Field to the name fields of the static variable. Set the Default Value, note the default value should correspond to the dataValue and not the name field of the static variable. ![select_widget_ValueProperties](/learn/assets/select_widget_ValueProperties.png)
-6. Drag and drop two label widgets and bind them using the below user expression as shown below to show the Data value and display values.
+2. [Create a variable](https://docs.wavemaker.com/learn/app-development/variables/), and choose the variable type as the **Model**.
 
-    ![select_widget_displayValue](/learn/assets/select_widget_displayValue.png)
+![Model Variable](/learn/assets/select-model-variable.png)
 
-    ![select_widget_dataValue](/learn/assets/select_widget_dataValue.png)
-7. Preview the app and see the selected item from the Select widget displayed in the label.
+3. Select **Entry** as Type. Check the **Is List** property to confirm that the variable is storing the list and add the list values. You can use the text editor to enter the values in JSON format.
+
+![select_widget_values](/learn/assets/configure-variable.png)
+
+## Binding Select Widget with Variable
+
+1. Bind the dataset of the **Model** variable to the **Select** widget.
+
+![select_widget_values](/learn/assets/bind-model-variable.png)
+
+2. Set the **Data field** property to the **dataValue** and **Display Field** to the **name** of the static variable.
+
+![select_widget_ValueProperties](/learn/assets/select_widget_ValueProperties.png)
+
+3. Drag and drop two **Label** widgets and bind them using the below **Use Expression** as shown below to show the Data value and display values.
+
+    ![select_widget_displayValue](/learn/assets/display-value.png)
+
+    ![select_widget_dataValue](/learn/assets/select-widget-datavalue.png)
+
+4. Preview the app and see the Display Value and Data Value of the selected item from the **Select** widget displayed on the screen with the use of the **Label** widget.
 
      ![select_widget_ListResult](/learn/assets/select_widget_ListResult.png)
+
 
 [Select Use Cases](/learn/app-development/widgets/form-widgets/select-use-cases/)
 

@@ -196,7 +196,7 @@ To upgrade the nvd3 library version to 1.8.1 you need to provide the below in th
 1. Create a [Pie Chart](#5-pie-chart).
 2. Set the Pie Chart's "On Before Render" property to JavaScript.
 
-[![](/learn/assets/setjavascript.png)](/learn/assets/setjavascript.png)
+[![](/learn/assets/set-javascript.png)](/learn/assets/set-javascript.png)
 
 3. Go to the Script and add the below code snippet in it.
 
