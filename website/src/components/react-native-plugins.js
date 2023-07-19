@@ -9,7 +9,7 @@ const WidgetTabItems = () => {
         {
           "lightIcon": "/learn/img/cards.svg",
           "darkIcon": "/learn/img/cardsDark.svg",
-          "label": "LocalAuthentication",
+          "label": "Local Authentication",
           "body": "Integrating Biometric Authentication such as facial recognition and fingerprint scanning for imporved security and user convenience. ",
           "overview": "/learn/react-native/integrating-biometric-authentication",
           "Plugin": "https://docs.expo.dev/versions/latest/sdk/local-authentication/"
