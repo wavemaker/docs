@@ -693,12 +693,19 @@
 				},
 				{
 					"type": "category",
-					"label": "How-to",
+					"label": "React Native Plugins",
 					"items": [
+						"react-native/plugins",
+						{
+							"type": "category",
+							"label": "Security Plugins",
+							"items": [
 						"react-native/integrating-biometric-authentication",
 						"react-native/disable-device-screencapture",
 						"react-native/detect-rooted-device",
 						"react-native/integrating-secure-store"
+							]
+						}
 					]
 				}
 			]
