@@ -369,9 +369,9 @@ html[data-theme="dark"] .banner{
     border: none;
 }
 
-.header-searchBar .DocSearch-Button-Keys {
+/* .header-searchBar .DocSearch-Button-Keys {
     display: none;
-}
+} */
 
 .banner-search .DocSearch {
     width: 100%;
@@ -389,9 +389,9 @@ html[data-theme="dark"] .banner{
     display: none;
 }
 
-.banner-search .DocSearch-Button-Keys {
+/* .banner-search .DocSearch-Button-Keys {
     display: none;
-}
+} */
 
 .banner-search .navSearchWrapper {
     padding-left: 0;

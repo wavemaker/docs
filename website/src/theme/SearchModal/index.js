@@ -291,7 +291,16 @@ export function DocSearchModal(_ref) {
             window.removeEventListener('resize', setFullViewportHeight);
         };
     }, []);
-    return /*#__PURE__*/React.createElement("div", {
+    return React.createElement("div", _extends({
+        ref: containerRef,
+        style: {width: '100%', height:'100%'}
+    }, {
+        onMouseDown: function onMouseDown(event) {
+            if (event.target === event.currentTarget) {
+                onClose();
+            }
+        }
+    }), /*#__PURE__*/React.createElement("div", {
         className: "DocSearch-Modal",
         ref: modalRef
     }, /*#__PURE__*/React.createElement("header", {
@@ -322,5 +331,5 @@ export function DocSearchModal(_ref) {
             saveRecentSearch(item);
             onClose();
         }
-    })) : React.createElement("div", null)));
+    })) : React.createElement("div", null))));
 }
