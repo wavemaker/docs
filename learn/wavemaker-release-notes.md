@@ -165,7 +165,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
 | Tomcat | 9.0* |
-| Cordova (mobile apps) <br/> Android <br/> iOS |11.0.0 <br/> 11.0.0  <br/> 6.2.0 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 11.0.0  <br/> 6.2.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
