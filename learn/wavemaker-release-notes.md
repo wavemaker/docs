@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.3.6](/learn/wavemaker-release-notes/v11-3-5) <p style={{color:"red"}}>*latest*</p> | New features in React Native, such as Multi-theme support, Touch events, Audio widget, and Multiple selection in List Widget. | July 2023 |
+|[WaveMaker 11.3.6](/learn/wavemaker-release-notes/v11-3-5) <p style={{color:"red"}}>*latest*</p> | New features in React Native, such as Multi-theme support, Touch events, Audio widget, RTL Layout, Multiple selections in the List widget, React Native feature enhancements, and other bug fixes.
+ | 31 July 2023 |
 |[WaveMaker 11.3.5](/learn/wavemaker-release-notes/v11-3-5) | Enhancements for the Googlemap Prefab, pagination, as well as bug fixes for nested menus, app crashing, and database queries and procedures. | 26 June 2023 |
 |[WaveMaker 11.3.4](/learn/wavemaker-release-notes/v11-3-4) | Bug fixes related to access denied pop-ups and slow loading of the project listing page. | 12 June 2023 |
 |[WaveMaker 11.3.3](/learn/wavemaker-release-notes/v11-3-3) | New features in React Native, such as Lottie widget, SSL pinning, supporting third-party React Native UI components, developer UX changes, and other bug fixes. | 7 June 2023 |
@@ -165,7 +166,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
 | Tomcat | 9.0* |
-| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 11.0.0  <br/> 6.2.0 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.0  <br/> 6.3.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
