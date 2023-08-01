@@ -21,7 +21,9 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.3.5](/learn/wavemaker-release-notes/v11-3-5) <p style={{color:"red"}}>*latest*</p> | Enhancements for the Googlemap Prefab, pagination, as well as bug fixes for nested menus, app crashing, and database queries and procedures. | 26 June 2023 |
+|[WaveMaker 11.3.6](/learn/wavemaker-release-notes/v11-3-5) <p style={{color:"red"}}>*latest*</p> | New features in React Native, such as Multi-theme support, Touch events, Audio widget, RTL Layout, Multiple selections in the List widget, React Native feature enhancements, and other bug fixes.
+ | 31 July 2023 |
+|[WaveMaker 11.3.5](/learn/wavemaker-release-notes/v11-3-5) | Enhancements for the Googlemap Prefab, pagination, as well as bug fixes for nested menus, app crashing, and database queries and procedures. | 26 June 2023 |
 |[WaveMaker 11.3.4](/learn/wavemaker-release-notes/v11-3-4) | Bug fixes related to access denied pop-ups and slow loading of the project listing page. | 12 June 2023 |
 |[WaveMaker 11.3.3](/learn/wavemaker-release-notes/v11-3-3) | New features in React Native, such as Lottie widget, SSL pinning, supporting third-party React Native UI components, developer UX changes, and other bug fixes. | 7 June 2023 |
 |[WaveMaker 11.3.2](/learn/wavemaker-release-notes/v11-3-2)| Enhancements related to mobile and bug fixes related to Summary Row, Material 2.0 theme, assigning server port, and more. | 22 May 2023 |
@@ -144,12 +146,12 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor">  5.3.23 -> 5.3.26 </td>|
-| Security framework | Spring Security | <td className="versiontdbgcolor">  5.7.5 -> 5.8.2 </td>|
+|  | Spring Framework | <td className="versiontdbgcolor">  5.3.27 -> 5.3.29 </td>|
+| Security framework | Spring Security | <td className="versiontdbgcolor">  5.8.2 -> 5.8.5 </td>|
 | Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.10.0 -> 2.10.1 </td>|
-| DB Persistence library | Hibernate | <td className="versiontdbgcolor"> 5.6.12.Final -> 5.6.15.Final </td> |
+| DB Persistence library | Hibernate | <td className="versiontdbgcolor"> 5.6.15.Final </td> |
 | Sample database | HSQL |  2.7.1 |
-| JSON library | Jackson | <td className="versiontdbgcolor"> 2.14 -> 2.14.2 </td> |
+| JSON library | Jackson | <td className="versiontdbgcolor"> 2.14.2 -> 2.15.2 </td> |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  <td   className="versiontdbgcolor"> 4.5.13 -> 4.5.14 </td>|
@@ -164,7 +166,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
 | Tomcat | 9.0* |
-| Cordova (mobile apps) <br/> Android <br/> iOS |11.0.0 <br/> 11.0.0  <br/> 6.2.0 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.0  <br/> 6.3.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
