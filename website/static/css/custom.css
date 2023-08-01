@@ -11,7 +11,7 @@
     --ifm-h3-font-size: 1.25rem;
     --wm-helfull-resources-color: #555967;
     --wm-helfull-resources-title-color: #000;
-    --wm-banner-readmore-background: linear-gradient(93deg, rgba(215, 241, 255, 0.34) 1%, #f1f8fc 82%, rgba(241, 248, 252, 0.6) 82%);
+    --wm-banner-readmore-background: linear-gradient(93deg, rgba(215, 241, 255, 0.34) 6%, #f1f8fc 82%, rgba(241, 248, 252, 0.6) 82%);
     --wm-secondary-text-color: #61676c;
     --wm-secondary-bg-color: rgb(253, 253, 254);
     --wm-secondary-border-color: rgb(212 213 216);
@@ -286,6 +286,10 @@ h3 {
     font-size: 22px;
 } */
 
+/*brand-logo text color change as per the new screen designs*/
+.navbar__brand {
+    color: var(--ifm-link-color);
+}
 .box-shadow--none {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -308,12 +312,12 @@ h3 {
 
 /* Added Style for Banner */
 .banner {
-    background-image: url(../img/bannerImage.svg);
+    //background-image: url(../img/bannerImage.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 0 0 10px 10px;
-    height: 386px;
+    height: 350px;
     position: relative;
 }
 
@@ -330,17 +334,22 @@ html[data-theme="dark"] .banner{
 
 .banner .banner-content {
     height: 100%;
-    align-items: center;
+    align-items: flex-start;
+    padding:5rem var(--ifm-spacing-horizontal) 1rem;
+    background: radial-gradient(82.1% 67.69% at 52.01% 55.6%, #819ECB 0%, #759CE3 57.58%, #4782D9 84.9%); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    margin: 1rem 0;
+    border-radius: 20px;
 }
 
 .banner .banner-content .banner-Title {
     font-size: 42px;
+    color: #fff;
 }
 
 .banner .banner-search {
     /* position: relative; */
-    width: 499px;
-    margin: 2em auto;
+    width: 60%;
+    margin: 0 auto 1rem;
 }
 .banner-search.active{
     position: fixed;
@@ -415,8 +424,8 @@ html[data-theme="dark"] .banner{
 
 .banner-footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    //position: absolute;
+    top: 0;
     left: 0;
     margin: 0;
     min-height: 44px;
@@ -451,7 +460,7 @@ html[data-theme="dark"] .banner{
 
 .banner-footer-closeAction {
     position: absolute;
-    right: 15px;
+    right: 45px;
     top: calc(50% - 7px);
     display: inline-flex;
 }
@@ -583,14 +592,14 @@ html[data-theme="dark"] .banner{
 .extension {
     flex-direction: column;
     margin: 0;
-    height: 248px;
+    height: 260px;
     min-height: 100px;
     object-fit: contain;
     position: relative;
     padding: 20px;
     font-size: 14px;
     color: var(--wm-card-text);
-    background-image: var(--wm-content-bg-image);
+    background: var(--wm-card-bg);
     align-items: center;
     border-radius: 15px;
     box-shadow: inset 0 0 0 1px rgba(131, 143, 162, 0.3);
@@ -642,6 +651,11 @@ html[data-theme="dark"] .banner{
 .extension:hover .link img,
 .extension:focus .link img {
     content: var(--wm-card-arrow-image-hover)!important;
+}
+
+/*extensions margin with new screen design*/
+.extensions {
+    margin-top: 2rem;
 }
 html[data-theme="dark"] .extension .link img{
     content: url("/img/arrow_blue.svg");
@@ -935,11 +949,16 @@ html[data-theme="dark"] .extension .link img{
     }
 
     .extensions {
-        padding: 2rem;
+        padding: 0 2rem;
+        //margin-top: -4rem;
     }
 
     .extensions .row {
         justify-content: center;
+    }
+
+    .extension .row {
+        background-color: var(--wm-card-bg);
     }
 
     .extensions .col {
@@ -1281,6 +1300,11 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
     height: 100%;
 }
 
+/********Overriding search modal spacing to fit into the initial load page******/
+.DocSearch-Form {
+    box-shadow: -10px 6px 30px 0 rgba(0, 0, 0, 0.08);
+}
+
 .DocSearch-Hit-source{
     margin: 0 !important;
     padding: 10px 20px 0px 20px !important;
@@ -1381,7 +1405,12 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
     }
 }
 
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+    .DocSearch-Modal {
+            margin-top: 0 !important;
+            max-width: 100% !important;
+        }
+}
 
 
 @media only screen and (min-width: 1400px) {}
@@ -1607,13 +1636,18 @@ h2.widget-header{
     stroke:rgb(118,118,118,0.6);
 }
 .main-wrapper main{
-    padding:0 var(--ifm-spacing-horizontal);
+    //padding:0 var(--ifm-spacing-horizontal);
 }
 .menu__link--active.menu__link--sublist-caret:after,.tocCollapsibleButton_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-CollapseButton-styles-module::after{
     filter:invert(100%) sepia(94%) saturate(17%) hue-rotate(223deg) brightness(0%) contrast(98%) !important;
 }
 .versiontdbgcolor{
     background-color: #44aaf4;
+}
+
+.padding-horiz-sm {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
 }
 
 

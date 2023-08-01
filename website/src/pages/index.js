@@ -67,6 +67,11 @@ export default class Index extends React.Component {
         const Main = () => {
             return (
                 <main className="main-container">
+                    {this.state.displayInfoFooter && <div className='banner-footer'>
+                        <span className='banner-footer-msg'><img src='/learn/img/speaker.svg' />WaveMaker released several new features in WM11.3 See what's new.</span>
+                        <a className='banner-footer-action' href='/learn/wavemaker-release-notes/v11-3-0'>Read more</a>
+                        <a className="banner-footer-closeAction" href="javascript:void(0)" onClick={() => { this.setState({ displayInfoFooter: false }); }}><img src='/learn/img/closeIcon-black.svg' /></a>
+                    </div>}
                     <div className='container banner spl-icon footer-left'>
                         <div className='row banner-content'>
                             <div className='col'>
@@ -79,20 +84,10 @@ export default class Index extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        {this.state.displayInfoFooter && <div className='banner-footer'>
-                            <span className='banner-footer-msg'><img src='/learn/img/speaker.svg' />WaveMaker released new features and updates in WM11.3.6. See what's new.</span>
-                            <a className='banner-footer-action' href='/learn/wavemaker-release-notes/v11-3-6'>Read more</a>
-                            <a className="banner-footer-closeAction" href="javascript:void(0)" onClick={() => { this.setState({ displayInfoFooter: false }); }}><img src='/learn/img/closeIcon-black.svg' /></a>
-                        </div>}
                     </div>
-                    <div className='container categories'>
-                        <div className='row margin-vert--xl padding-horiz--lg'>
-                            {this.getCategories()}
-                        </div>
-                    </div>
-                    <div className='container extensions text--center padding-vert--lg spl-icon header-right'>
-                        <h1>Studio Extensions</h1>
-                        <div className='row margin-vert--lg'>
+
+                    <div className='container extensions text--center  spl-icon header-right'>
+                        <div className='row '>
                             {this.getExtensions()}
                         </div>
                     </div>
