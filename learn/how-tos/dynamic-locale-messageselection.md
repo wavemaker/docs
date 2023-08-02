@@ -2,21 +2,30 @@
 title: "Passing i18n messages dynamically"
 id: "dynamic-locale-messageselection"
 ---
-In this document we will be walking through the steps to pass i18n Loacalization messages dynamically.
+i18N Localized Messages enable multilingual support, improve user experience, expand the application's reach, and provide a more personalized user interface across the globe.
 
-- You have to create a service or an API that returns the dynamic i18n messages, then you can write a custom locale filter which will set the dynamic messages.
-- The filter which intercepts the requests to localization files and calls the external rest service and the response from the external service will be sent to the caller.
-- You can write your customization in the filter as per your requirement. Make sure that the external service should pass the messages in the same JSON format as our default Json file like en.json.
+WaveMaker has predefined localized label messages in i18N, you can now set the locale messages dynamically that can take the response from the APIs and set the local messages automatically.
 
-To pass an i18n Localization messages dynamically in the App follow the steps mentioned below:
+## Dynamic Localization Messages 
 
-Step 1:
-Import a mock api in app evnironment whose response is same as the message in the same JSON format as our default Json file like language json(ex:en.json).
+With Dynamic local message responses from APIs, you can avoid the need of defining the content as labels in the Localized Messages section in WaveMaker and directly import the API into WaveMaker and use the response for translation.
 
-![selectLocale-Image3](/learn/assets/selectLocale-Image3.png)
+To fetch the response from APIs and pass it for translation,
 
-Step2:
-Create a custom java file in src/main/java directory and add the below java code.
+1. Import a mock API. This helps to print the selected multilingual messages received from any API in the same `en.json` created in the **i18N** folder.
+
+:::note
+
+The API response needs to be the same as the message in the default language JSON file, `en.json`.
+
+:::
+
+[![](/learn/assets/mock-api.png)](/learn/assets/mock-api.png)
+
+2. Create a custom Java file in the src/main/java directory and add the below Java code. `Filter` class calls the external APIs and the response from external APIs is sent to the `Filter` class that gets printed in the UI.
+
+For example, create a file for the `Filter` class named **CustomLocaleFilter.java**
+
 ``` java
 //FilePathProject:Externalizelocalesrc/main/java/com/wm/customlocalefilter/CustomLocaleFilter.java
 
@@ -69,8 +78,11 @@ public class CustomLocaleFilter implements Filter{
   public void destroy() {}
 }
 ```
-Step3:
-Create a custom xml file in src/main/webapp/WEB-INF directory as shown in the below and add below xml code.
+
+[![](/learn/assets/filter-class.png)](/learn/assets/filter-class.png)
+
+3. Create a custom XML file in the src/main/webapp/WEB-INF directory.
+
 ```
 <!--File Path: Project: Externalizelocale > src/main/webapp/WEB-INF/user-web.xml-->
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,6 +92,11 @@ Entries from this file will be combined with the default WaveMaker web.xml;
 the order is not guaranteed.
 Content changes must go between the two tags below.
 -->
+```
+
+4. Add the below XML code to initiate the `Filter` class. The `Filter` intercepts the requests to localization files and calls the external rest service and the response from the external service will be sent to the caller.
+
+```xml
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
@@ -103,5 +120,7 @@ Content changes must go between the two tags below.
 
 </web-app>
 ```
-Step 4:
-Preview the App.
+
+[![](/learn/assets/xmlcode-filter-initiate.png)](/learn/assets/xmlcode-filter-initiate.png)
+
+5. You can now preview the application and find the translated message.
