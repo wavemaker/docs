@@ -33,9 +33,9 @@ Usually, when giving options to the user, one would want the option to make sens
 
 3. Drag and drop two **Label** widgets and bind them using the below **Use Expression** as shown below to show the Data value and display values.
 
-    ![select_widget_displayValue](/learn/assets/display-value.png)
+    ![select_widget_displayvalue](/learn/assets/display-value.png)
 
-    ![select_widget_dataValue](/learn/assets/select-widget-datavalue.png)
+    ![select_widget_datavalue](/learn/assets/select-widget-datavalue.png)
 
 4. Preview the app and see the Display Value and Data Value of the selected item from the **Select** widget displayed on the screen with the use of the **Label** widget.
 
