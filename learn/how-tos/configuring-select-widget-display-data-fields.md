@@ -31,7 +31,7 @@ Usually, when giving options to the user, one would want the option to make sens
 
 ![select_widget_ValueProperties](/learn/assets/select_widget_ValueProperties.png)
 
-3. Drag and drop two **Label** widgets and bind them using the below **Use Expression** as shown below to show the Data value and display values.
+3. Drag and drop two **Label** widgets and bind them using the below **Use Expression** to show the Data value and display values.
 
     ![select_widget_displayvalue](/learn/assets/display-value.png)
 

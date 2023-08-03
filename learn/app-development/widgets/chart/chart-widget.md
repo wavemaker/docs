@@ -175,7 +175,7 @@ Here we have used the _On select_ event of the chart:
 
 ## Chart Legend Captions
 
-Chart legend caption is the label or description that gets displayed against the legend item in the chart. These labels help you in interpreting the chart by associating each data series or category with a descriptive label.
+Chart legend caption is the label or description that gets displayed when you hover over the chart legend item in the chart. These labels help you in interpreting the chart by associating each data series or category with a descriptive label.
 
 ### Populating Chart Legend Captions
 
