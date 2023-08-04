@@ -177,13 +177,11 @@ Here we have used the _On select_ event of the chart:
 
 Chart legend caption is the label or description that gets displayed when you hover over the chart legend item in the chart. These labels help you in interpreting the chart by associating each data series or category with a descriptive label.
 
-### Populating Chart Legend Captions
-
-In WaveMaker studio, to populate the chart legend captions, you need to add the below specified JavaScript snippet on the chart **On Before Render** event.
-
 :::note
 
 WaveMaker internally uses the nvd3 library to load the charts. But with the nvd3 1.0.3 version, the captions are not populating as expected in the chart. You can upgrade to the nvd3 1.8.1 version to fix the caption issues.
+
+:::
 
 To upgrade the nvd3 library version to 1.8.1 you need to provide the below in the **index.html** file.
 
@@ -191,7 +189,9 @@ To upgrade the nvd3 library version to 1.8.1 you need to provide the below in th
 <script data-require="nvd3@1.8.1" data-semver="1.8.1" src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.js"></script>
 ```
 
-:::
+### Populating Chart Legend Captions
+
+In WaveMaker studio, to populate the chart legend captions, you need to add the below specified JavaScript snippet on the chart **On Before Render** event.
 
 1. Create a [Pie Chart](#5-pie-chart).
 2. Set the Pie Chart's "On Before Render" property to JavaScript.

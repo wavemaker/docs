@@ -1,5 +1,5 @@
 ---
-title: "Passing i18n messages dynamically"
+title: "Passing i18n Messages Dynamically"
 id: "dynamic-locale-messageselection"
 ---
 i18N Localized Messages enable multilingual support, improve user experience, expand the application's reach, and provide a more personalized user interface across the globe.
@@ -12,7 +12,7 @@ With Dynamic local message responses from APIs, you can avoid the need of defini
 
 To fetch the response from APIs and pass it for translation,
 
-1. Import a mock API. This helps to print the selected multilingual messages received from any API in the same `en.json` created in the **i18N** folder.
+1. Import an API. This helps to print the selected multilingual messages received from any API in the same `en.json` created in the **i18N** folder.
 
 :::note
 
@@ -22,7 +22,9 @@ The API response needs to be the same as the message in the default language JSO
 
 [![](/learn/assets/mock-api.png)](/learn/assets/mock-api.png)
 
-2. Create a custom Java file in the src/main/java directory and add the below Java code. `Filter` class calls the external APIs and the response from external APIs is sent to the `Filter` class that gets printed in the UI.
+### Create Filter Class
+
+1. [Create a custom Java file](https://docs.wavemaker.com/learn/app-development/services/java-services/java-service)  in the **src/main/java** directory and add the below Java code. `Filter` class calls the external APIs and the response from external APIs is sent to the `Filter` class that gets printed in the UI.
 
 For example, create a file for the `Filter` class named **CustomLocaleFilter.java**
 
@@ -81,7 +83,7 @@ public class CustomLocaleFilter implements Filter{
 
 [![](/learn/assets/filter-class.png)](/learn/assets/filter-class.png)
 
-3. Create a custom XML file in the src/main/webapp/WEB-INF directory.
+2. Create a custom XML file in the src/main/webapp/WEB-INF directory.
 
 ```
 <!--File Path: Project: Externalizelocale > src/main/webapp/WEB-INF/user-web.xml-->
@@ -94,7 +96,7 @@ Content changes must go between the two tags below.
 -->
 ```
 
-4. Add the below XML code to initiate the `Filter` class. The `Filter` intercepts the requests to localization files and calls the external rest service and the response from the external service will be sent to the caller.
+3. Add the below XML code to initiate the `Filter` class. The `Filter` intercepts the requests to localization files and calls the external rest service and the response from the external service will be sent to the caller.
 
 ```xml
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
@@ -123,4 +125,4 @@ Content changes must go between the two tags below.
 
 [![](/learn/assets/xmlcode-filter-initiate.png)](/learn/assets/xmlcode-filter-initiate.png)
 
-5. You can now preview the application and find the translated message.
+4. You can now preview the application and find the translated message.
