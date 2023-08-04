@@ -83,32 +83,13 @@ public class CustomLocaleFilter implements Filter{
 
 [![](/learn/assets/filter-class.png)](/learn/assets/filter-class.png)
 
-2. Create a custom XML file in the src/main/webapp/WEB-INF directory.
+2. Go to File Explorer and search **web.xml** file. 
 
-```
-<!--File Path: Project: Externalizelocale > src/main/webapp/WEB-INF/user-web.xml-->
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-This is an appropriate place for user modifications to the web.xml.
-Entries from this file will be combined with the default WaveMaker web.xml;
-the order is not guaranteed.
-Content changes must go between the two tags below.
--->
-```
+[![](/learn/assets/fileexplorer-webxml.png)](/learn/assets/fileexplorer-webxml.png)
 
 3. Add the below XML code to initiate the `Filter` class. The `Filter` intercepts the requests to localization files and calls the external rest service and the response from the external service will be sent to the caller.
-
-```xml
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
-                         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
-        <display-name>Externalizelocale</display-name>
-
-        </welcome-file-list>
-            <welcome-file>index.html</welcome-file>
-        </welcome-file-list>
-    
+   
+```xml    
 <filter>
     <filter-name>localeFilter</filter-name>
     <filter-class>com.wm.customlocalefilter.CustomLocaleFilter</filter-class>
@@ -119,8 +100,6 @@ Content changes must go between the two tags below.
     <url-pattern>/resources/i18n/*</url-pattern>
 </filter-mapping>
 
-
-</web-app>
 ```
 
 [![](/learn/assets/xmlcode-filter-initiate.png)](/learn/assets/xmlcode-filter-initiate.png)
