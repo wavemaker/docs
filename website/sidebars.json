@@ -698,7 +698,8 @@
 						"react-native/integrating-biometric-authentication",
 						"react-native/disable-device-screencapture",
 						"react-native/detect-rooted-device",
-						"react-native/integrating-secure-store"
+						"react-native/integrating-secure-store",
+						"react-native/create-expo-module-and-use"
 					]
 				}
 			]
