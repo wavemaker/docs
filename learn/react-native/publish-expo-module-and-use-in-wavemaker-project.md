@@ -109,7 +109,7 @@ Start the TypeScript compiler to watch for changes and rebuild the JavaScript mo
 
 ## Publish the Module
 
-Before publishing your package to npm, you must have an npm account. If you don't have one yet, you can easily create it on the npm website. Once you have successfully registered, log in to your npm account to proceed with the package publishing process.
+Before publishing your package to npm, you must have an npm account. If you don't have one yet, you can easily create it on the npm [website](https://www.npmjs.com/). Once you have successfully registered, log in to your npm account to proceed with the package publishing process.
 
 To login from terminal use the following command:
 
@@ -144,7 +144,7 @@ Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-
 
 ### Enabling and Disabling App Preview on Demand
 
-Some apps may require the ability to enable or disable screen capture only in certain situations i.e. on demand.
+Some apps may require the ability to enable or disable app preview only in certain situations i.e. on demand. For example, some users may want to disable app previews when their device is locked or when the app is in the background to prevent sensitive information from being displayed.
 
 The following is the code snippet for the above mockup:
 
