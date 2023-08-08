@@ -699,7 +699,7 @@
 						"react-native/disable-device-screencapture",
 						"react-native/detect-rooted-device",
 						"react-native/integrating-secure-store",
-						"react-native/create-expo-module-and-use"
+						"react-native/publish-expo-module-and-use-in-wavemaker-project"
 					]
 				}
 			]

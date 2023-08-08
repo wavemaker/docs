@@ -1,7 +1,7 @@
 ---
-title: "Create expo module and use"
-id: "create-expo-module-and-use"
-sidebar_label: "Create expo module and use"
+title: "Publish Expo Module and Use in WaveMaker Project"
+id: "publish-expo-module-and-use-in-wavemaker-project"
+sidebar_label: "Publish Expo Module"
 ---
 ---
 Expanding the capabilities of your app goes beyond merely installing Expo packages or third-party libraries. When you need to tap into native platform APIs or leverage existing Android or iOS dependencies, you can write custom native code. Fortunately, Expo offers excellent support for this through Expo Modules.
@@ -10,30 +10,32 @@ With Expo Modules, you can write native code in a way that feels natural and str
 
 In this How-to series we’ll walk you through the following:
 1. How to create an Expo Module
-2. Publish the Module and
-3. Use the Module in WM project
+2. Publish the Expo Module and
+3. Use the Module in WaveMaker project
 
 ## How to create an Expo Module
 
-To begin using the Expo Modules API, you have two options: You can either start by creating a new module from scratch or integrate the Expo Modules API into an existing module. Both approaches allow you to harness the power of Expo Modules and access native device features in a seamless and consistent manner for your Expo and React Native projects. In this section of How-to we’ll show you how-to create an Expo module in Isolation and we’ll be walking you through on how to use the same in the WM project in a couple of sections.
+To begin using the Expo Modules API, you have two options: You can either start by creating a new module from scratch or integrate the Expo Modules API into an existing module. Both approaches allow you to harness the power of Expo Modules and access native device features in a seamless and consistent manner for your Expo and React Native projects. In this section of How-to we’ll show you how-to create an Expo module in Isolation and we’ll be walking you through on how to use the same in the WaveMaker project in a couple of sections.
 
 For this demonstration, we’ll be creating an Expo Module for Android to show a blank screen in Recent Tasks.
 
 ### 1. Initialize a new module
 
-First, we'll create a new module. On this page we will use the name expo-flagsecure/ExpoFlagsecure. You can name it whatever you like, just adjust the instructions accordingly:
+First, we'll create a new module. On this page we will use the name `expo-flagsecure`. You can name it whatever you like, just adjust the instructions accordingly:
 
 ```javascript
 npx create-expo-module expo-flagsecure
 ```
-> **_Tips:_** Since you aren't going to actually ship this library, you can hit `return` for all of the prompts to accept the default values.
+> **_Tips:_** If you aren't going to actually ship this library, you can hit `return` for all of the prompts to accept the default values.
 
 > **_NOTE:_** The above command internally relies on pipenv and has restrictions in using them in PowerShell. Request readers to an use appropriate system (Linux/Mac)
 
 
-### 2. Set up our workspace
+### 2. Set up your workspace
 
-Now let's clean up the default module a little bit so we have more of a clean slate and delete the view module that we won't use in this guide.
+`create-expo-module` bootstraps your module with number of files that might not be actually required.  
+So, it's good clean up the default module a little for a clean slate. We're deleting the view module as we'll be not covering Expo's view here.
+
 
 ```javascript
 - cd expo-flagsecure
@@ -43,13 +45,13 @@ Now let's clean up the default module a little bit so we have more of a clean sl
 - rm src/ExpoFlagsecureView.web.tsx src/ExpoFlagsecureModule.web.ts
 ```
 
-### 3. Update files
+### 3. Core File Changes 
 
 Find the following files and replace them with the provided minimal boilerplate:
 
 `android/src/main/java/expo/modules/flagsecure/ExpoFlagsecureModule.kt`
 
-```javascript
+```kotlin
 package expo.modules.flagsecure
 
 import expo.modules.kotlin.modules.Module
@@ -96,7 +98,7 @@ export function deactivate(){
 }
 ```
 
-### Build / Compile the Module
+### 4. Build / Compile the Module
 
 Start the TypeScript compiler to watch for changes and rebuild the JavaScript module.
 
@@ -129,9 +131,13 @@ In addition to publishing your module to npm, there are alternative ways to util
 
 3. Consider publishing a private package or using a private registry in conjunction with EAS Builds, a service provided by Expo. This option allows you to manage and use your proprietary packages securely in your projects.
 
-## Use the Module in WM Project:
+## Use the Module in WaveMaker Project:
 
-Flagsecure plugin can be leveraged in your WaveMaker app through the following ways:
+The published plugin can be installed in a few steps in WaveMaker. 
+Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo) on how to install a plugin.
+
+`ExpoFlagSecure` can be leveraged in your WaveMaker app through the following ways:
+
 
 - Enabling and Disabling App Preview on Demand
 - Disabling App Preview on App Launch
