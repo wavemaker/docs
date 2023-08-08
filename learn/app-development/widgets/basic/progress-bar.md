@@ -46,6 +46,7 @@ id: "progress-bar"
 | **Touch Events** |
 | On tap | This event handler is called whenever the tab event is triggered on a widget. |
 | On double tap | This event handler is called whenever the double tap event is triggered on a widget. |
+| On long tap | This event handler is called whenever the long tap event is triggered on a widget. |
 | **Callback Events** |
 | On start | This event handler is called on start of the progress. |
 | On complete | This event handler is called on complete of the progress. |

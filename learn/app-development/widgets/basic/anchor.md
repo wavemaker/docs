@@ -88,4 +88,5 @@ From the Style tab of Properties panel,  you can set the Anchor style. You can 
 | **Touch Events** |
 | On Tap | This event handler is called whenever the widget is tapped. |
 | On Double Tap | This event handler is called whenever the widget is double tapped. |
+| On long tap | This event handler is called whenever the long tap event is triggered on a widget. |
 

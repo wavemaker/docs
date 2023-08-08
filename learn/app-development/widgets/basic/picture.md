@@ -63,3 +63,4 @@ You can add customizations from the **Properties** panel such as **Width** and *
 | **Touch Events** |
 | On tap | This event handler is called whenever the tap event is triggered on a widget. |
 | On double tap | This event handler is called whenever the double tap event is triggered on a widget. |
+| On long tap | This event handler is called whenever the long tap event is triggered on a widget. |

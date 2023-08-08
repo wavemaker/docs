@@ -56,4 +56,5 @@ The following features for Label can be set in the **Class** property from the *
 | **Touch Events** |
 | On tap | This event handler is called whenever the tap event is triggered on a widget. |
 | On double tap | This event handler is called whenever the double tap event is triggered on a widget. |
+| On long tap | This event handler is called whenever the long tap event is triggered on a widget. |
 

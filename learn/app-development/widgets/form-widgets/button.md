@@ -94,6 +94,7 @@ From the Style tab of Properties panel, you can also set the button size along w
 | **Touch Events** |
 | On tap | This event handler is called whenever the widget is tapped. |
 | On double tap | This event handler is called whenever the widget is double tapped. |
+| On long tap | This event handler is called whenever the long tap event is triggered on a widget. |
 | **Keyboard Events** |
 | On key down | This event handler is called when the widget is in focus and a key is pressed. |
 | On key press | This event handler is called when the widget is in focus and a key is pressed. This event will relay the character pressed |

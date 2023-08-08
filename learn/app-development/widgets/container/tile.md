@@ -44,6 +44,7 @@ You can also use the Conditional Class property from the Style tab to set the cl
 | **Touch Events** |
 | On tap | This event handler is called whenever the tap event is triggered on a widget. |
 | On double tap | This event handler is called whenever the double tap event is triggered on a widget. |
+| On long tap | This event handler is called whenever the long tap event is triggered on a widget. |
 | On swipe up | This event handler is called whenever a swipeup event is triggered. |
 | On swipe down | This event handler is called whenever a swipe down event is triggered. |
 | On swipe left | This event handler is called whenever a swipeleft event is triggered. |
