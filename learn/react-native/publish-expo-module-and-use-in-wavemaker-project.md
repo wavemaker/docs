@@ -4,6 +4,8 @@ id: "publish-expo-module-and-use-in-wavemaker-project"
 sidebar_label: "Publish Expo Module"
 ---
 ---
+import pluginExample from '/learn/assets/SecureFlagOnDemand.png';
+
 Expanding the capabilities of your app goes beyond merely installing Expo packages or third-party libraries. When you need to tap into native platform APIs or leverage existing Android or iOS dependencies, you can write custom native code. Fortunately, Expo offers excellent support for this through Expo Modules.
 
 With Expo Modules, you can write native code in a way that feels natural and straightforward, with minimal boilerplate. It ensures consistency across both iOS and Android platforms and provides a set of APIs and utilities specifically designed to streamline the development of native modules for Expo and React Native. This empowers you to enhance your app's functionalities and take advantage of native device features effectively.
@@ -145,6 +147,11 @@ Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-
 ### Enabling and Disabling App Preview on Demand
 
 Some apps may require the ability to enable or disable app preview only in certain situations i.e. on demand. For example, some users may want to disable app previews when their device is locked or when the app is in the background to prevent sensitive information from being displayed.
+
+For our example, we will create a simple app that allows users to enable or disable app preview on click of a button. 
+The following is the mockup of the app:
+
+<img src={pluginExample} style={{width:"35%"}} />
 
 The following is the code snippet for the above mockup:
 
