@@ -1036,12 +1036,14 @@
 								"how-tos/setting-blob-filename",
 								"how-tos/dynamic-data-tables",
 								"how-tos/customize-dynamic-datatable",
+								"how-tos/dynamic-data-table-edit",
 								"how-tos/data-table-column-bound-query",
 								"how-tos/combining-columns-data-table",
 								"how-tos/data-table-styling",
 								"how-tos/data-table-format-options",
 								"how-tos/concurrency-record-locking-wavemaker",
 								"how-tos/edit-datatable-bound-to-queryapi"
+								
 							]
 						}
 					]
