@@ -4,6 +4,7 @@ id: "publish-expo-module-and-use-in-wavemaker-project"
 sidebar_label: "Publish Expo Module"
 ---
 ---
+
 import pluginExample from '/learn/assets/SecureFlagOnDemand.png';
 
 Expanding the capabilities of your app goes beyond merely installing Expo packages or third-party libraries. When you need to tap into native platform APIs or leverage existing Android or iOS dependencies, you can write custom native code. Fortunately, Expo offers excellent support for this through Expo Modules.
@@ -11,6 +12,7 @@ Expanding the capabilities of your app goes beyond merely installing Expo packag
 With Expo Modules, you can write native code in a way that feels natural and straightforward, with minimal boilerplate. It ensures consistency across both iOS and Android platforms and provides a set of APIs and utilities specifically designed to streamline the development of native modules for Expo and React Native. This empowers you to enhance your app's functionalities and take advantage of native device features effectively.
 
 In this How-to series we’ll walk you through the following:
+
 1. How to create an Expo Module
 2. Publish the Expo Module and
 3. Use the Module in WaveMaker project
@@ -21,19 +23,23 @@ To begin using the Expo Modules API, you have two options: You can either start 
 
 For this demonstration, we’ll be creating an Expo Module for Android to show a blank screen in Recent Tasks.
 
-### 1. Initialize a new module
+### Initialize a new module
 
 First, we'll create a new module. On this page we will use the name `expo-flagsecure`. You can name it whatever you like, just adjust the instructions accordingly:
 
 ```javascript
 npx create-expo-module expo-flagsecure
 ```
-> **_Tips:_** If you aren't going to actually ship this library, you can hit `return` for all of the prompts to accept the default values.
+:::tip
+If you aren't going to actually ship this library, you can hit `return` for all of the prompts to accept the default values.
+:::
 
-> **_NOTE:_** The above command internally relies on pipenv and has restrictions in using them in PowerShell. Request readers to an use appropriate system (Linux/Mac)
+:::note
+The above command internally relies on pipenv and has restrictions in using them in PowerShell. Request readers to an use appropriate system (Linux/Mac).
+:::
 
 
-### 2. Set up your workspace
+### Set up your workspace
 
 `create-expo-module` bootstraps your module with number of files that might not be actually required.  
 So, it's good clean up the default module a little for a clean slate. We're deleting the view module as we'll be not covering Expo's view here.
@@ -47,7 +53,7 @@ So, it's good clean up the default module a little for a clean slate. We're dele
 - rm src/ExpoFlagsecureView.web.tsx src/ExpoFlagsecureModule.web.ts
 ```
 
-### 3. Core File Changes 
+### Core File Changes 
 
 Find the following files and replace them with the provided minimal boilerplate:
 
@@ -100,14 +106,13 @@ export function deactivate(){
 }
 ```
 
-### 4. Build / Compile the Module
+### Build Compile the Module
 
 Start the TypeScript compiler to watch for changes and rebuild the JavaScript module.
 
 ```javascript
 - npm run build
 ```
-
 
 ## Publish the Module
 
@@ -139,7 +144,6 @@ The published plugin can be installed in a few steps in WaveMaker.
 Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo) on how to install a plugin.
 
 `ExpoFlagSecure` can be leveraged in your WaveMaker app through the following ways:
-
 
 - Enabling and Disabling App Preview on Demand
 - Disabling App Preview on App Launch
