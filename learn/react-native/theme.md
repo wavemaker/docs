@@ -19,6 +19,7 @@ You can style React Native apps using a theme. Common (theme) styles will greatl
 
 - Node (14.15.5)
 - React Native Codegen:
+  Run the below command in the terminal to install React Native Codegen.
 
 ```shell
 npm install -g @wavemaker/rn-codegen
@@ -108,11 +109,13 @@ When **`@wavemaker/rn-codegen`** is updated, run theme update on the existing th
 
 ## 7. Multiple Themes
 
-- In Studio theme dialog, select multiple themes to be part of the app.
+- In WaveMaker Studio after [importing themes](#6-import-theme-into-a-project) using the Theme dialog.
+- Select multiple themes from the themes available in the Themes window to be part of the application.
 ![Theme dialog](/learn/assets/react-native/theme/theme-dialog.png)
-- Names of themes available in an App can be read from **App.themes** .
-- Name of active theme can be read using **App.activeTheme**.
-- Theme Selector UI can be constructed using the above values. Following is a simple select UI for the end-user to choose the theme that they want.
+- To know the names of the themes available in an application, use `App.themes`.
+- To check the name of the active theme in an application, use `App.activeTheme`.
+- For example, use the below code to construct a Select UI using the above values
+
 #### Markup
 ```
 <wm-select name="select1" 
