@@ -13,6 +13,7 @@ You can style React Native apps using a theme. Common (theme) styles will greatl
 4. Compile a theme
 5. Update a theme
 6. Import a theme
+7. Multiple themes
 
 ## Required Software
 
@@ -104,4 +105,26 @@ When **`@wavemaker/rn-codegen`** is updated, run theme update on the existing th
 ## 6. Import Theme into a Project
 
 - You can import the zip generated in the compiled step into a React Native project. For more information, see [import and apply a theme](/learn/app-development/ui-design/themes#import-theme).
+
+## 7. Multiple Themes
+
+- In Studio theme dialog, select multiple themes to be part of the app.
+![Theme dialog](/learn/assets/react-native/theme/theme-dialog.png)
+- Names of themes available in an App can be read from **App.themes** .
+- Name of active theme can be read using **App.activeTheme**.
+- Theme Selector UI can be constructed using the above values. Following is a simple select UI for the end-user to choose the theme that they want.
+#### Markup
+```
+<wm-select name="select1" 
+    dataset="bind:App.themes" datafield="All Fields" 
+    datavalue="bind:App.activeTheme" 
+    on-change="select1Change($event, widget, newVal, oldVal)">
+</wm-select>
+```
+#### Script
+```
+Page.select1Change = function($event, widget, newVal, oldVal) {
+    App.activeTheme = newVal;
+};
+```
 
