@@ -39,7 +39,7 @@ id: "progress-circle"
 | **Touch Events** |
 | On-tap | This event handler is called whenever the tab event is triggered on a widget. |
 | On-double tap | This event handler is called whenever the double tap event is triggered on a widget. |
-| On-long tap | This event handler is called whenever the long tap event is triggered on a widget. <br> Note: Long Tap event is only supported in React Native applications|
+| On-long tap | This event handler is called whenever the long tap event is triggered on a widget.<br/>Note: Long Tap event is only supported in React Native applications.|
 | **Callback Events** |
 | On-start | This event handler is called on the start of the progress. |
 | On-complete | This event handler is called on complete of the progress. |

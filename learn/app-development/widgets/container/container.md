@@ -41,7 +41,7 @@ You can also use the Conditional Class property from the Style tab to set the cl
 | **Touch Events** |
 | On Tap | This event handler is called whenever the tap event is triggered on a widget. |
 | On Double Tap | This event handler is called whenever the double tap event is triggered on a widget. |
-| On Long Tap | This event handler is called whenever the long tap event is triggered on a widget. <br> Note: Long Tap event is only supported in React Native applications|
+| On Long Tap | This event handler is called whenever the long tap event is triggered on a widget. <br/>Note: Long Tap event is only supported in React Native applications.|
 | On swipe up | This event handler is called whenever the swipeup event is triggered. |
 | On swipe down | This event handler is called whenever swipe down event is triggered. |
 | On swipe left | This event handler is called whenever a swipeleft event is triggered. |

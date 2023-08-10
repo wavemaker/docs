@@ -63,4 +63,4 @@ You can add customizations from the **Properties** panel such as **Width** and *
 | **Touch Events** |
 | On Tap | This event handler is called whenever the tap event is triggered on a widget. |
 | On Double Tap | This event handler is called whenever the double tap event is triggered on a widget. |
-| On Long Tap | This event handler is called whenever the long tap event is triggered on a widget. <br> Note: Long Tap event is only supported in React Native applications|
+| On Long Tap | This event handler is called whenever the long tap event is triggered on a widget. <br/>Note: Long Tap event is only supported in React Native applications.|
