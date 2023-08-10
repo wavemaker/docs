@@ -92,9 +92,9 @@ From the Style tab of Properties panel, you can also set the button size along w
 | On mouse enter | This event handler is called whenever the mouse enters the widget. |
 | On mouse leave | This event handler is called whenever the mouse leaves the widget. |
 | **Touch Events** |
-| On tap | This event handler is called whenever the widget is tapped. |
-| On double tap | This event handler is called whenever the widget is double tapped. |
-| On long tap | This event handler is called whenever the long tap event is triggered on a widget. |
+| On Tap | This event handler is called whenever the widget is tapped. |
+| On Double Tap | This event handler is called whenever the widget is double tapped. |
+| On Long Tap | This event handler is called whenever the long tap event is triggered on a widget. <br> Note: Long Tap event is only supported in React Native applications|
 | **Keyboard Events** |
 | On key down | This event handler is called when the widget is in focus and a key is pressed. |
 | On key press | This event handler is called when the widget is in focus and a key is pressed. This event will relay the character pressed |

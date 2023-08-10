@@ -102,12 +102,6 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately, irrespective of this property setting. |
 | Close Others | This property specifies whether, on clicking of an accordion panel, other panels should close or not. |
 
-:::note
-
-You can view the content in multiple Accordion panes at the same time while using the **Close Others** property in the Accordion widget.
-
-:::
-
 **Accordion Pane** SubWidget of Accordion, to hold the accordion header and content.
 
 | **Property** | **Description** |

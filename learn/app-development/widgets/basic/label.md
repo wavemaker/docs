@@ -54,7 +54,7 @@ The following features for Label can be set in the **Class** property from the *
 | On mouse enter | This event handler is called whenever the mouse enters the widget. |
 | On mouse leave | This event handler is called whenever the mouse leaves the widget. |
 | **Touch Events** |
-| On tap | This event handler is called whenever the tap event is triggered on a widget. |
-| On double tap | This event handler is called whenever the double tap event is triggered on a widget. |
-| On long tap | This event handler is called whenever the long tap event is triggered on a widget. |
+| On Tap | This event handler is called whenever the tap event is triggered on a widget. |
+| On Double Tap | This event handler is called whenever the double tap event is triggered on a widget. |
+| On Long Tap | This event handler is called whenever the long tap event is triggered on a widget. <br> Note: Long Tap event is only supported in React Native applications|
 
