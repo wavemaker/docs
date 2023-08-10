@@ -25,7 +25,7 @@ You can style React Native apps using a theme. Common (theme) styles will greatl
 npm install -g @wavemaker/rn-codegen
 ```
 
-## 1. Creating a Theme
+## Creating a Theme
 
 - Open a terminal
 - Navigate to a directory where you wish to create a theme project
@@ -39,7 +39,7 @@ wm-rn-codegen theme generate ${theme-name}
 - Provide value to name (required) and other metadata.
 - Push the theme project to your VCS (optional).
 
-## 2. Theme Project Structure
+## Theme Project Structure
 
 Following is the folder structure of a theme project.
 
@@ -53,7 +53,7 @@ Following is the folder structure of a theme project.
 
     - **`.wmproject.properties`** - information about the theme
 
-## 3. Customize Theme
+## Customize Theme
 
 To understand customization, let's take the button as an example.
 
@@ -75,7 +75,7 @@ Path structure should be the same in both **`wavemaker`** and **src/common** fol
 
 ![](/learn/assets/rn_theme_variables.png)
 
-## 4. Compile Theme
+## Compile Theme
 
 - Open a terminal
 - Navigate to the directory where the theme project is.
@@ -87,7 +87,7 @@ wm-rn-codegen theme compile
 
 - Under the dist folder, the **theme.zip** file should get created after successful compilation.
 
-## 5. Update Theme Project
+## Update Theme Project
 
 - Open a terminal
 - Navigate to the directory where the theme project is.
@@ -103,29 +103,39 @@ wm-rn-codegen theme update
 When **`@wavemaker/rn-codegen`** is updated, run theme update on the existing theme projects.
 :::
 
-## 6. Import Theme into a Project
+## Import Theme into a Project
 
 - You can import the zip generated in the compiled step into a React Native project. For more information, see [import and apply a theme](/learn/app-development/ui-design/themes#import-theme).
 
-## 7. Multiple Themes
+## Multi-theme Support
 
-- In WaveMaker Studio after [importing themes](#6-import-theme-into-a-project) using the Theme dialog.
-- Select multiple themes from the themes available in the Themes window to be part of the application.
+With Multi-theme support, you can choose multiple themes at the same time for an application using the Theme dialog, setting one theme as the default.
+
+### How to Apply Multiple Themes
+
+1. In WaveMaker Studio after [importing themes](#6-import-theme-into-a-project) using the Theme dialog.
+2. Select multiple themes from the themes available in the Themes window to be part of the application.
 ![Theme dialog](/learn/assets/react-native/theme/theme-dialog.png)
+
+### Get Theme Information
+
 - To know the names of the themes available in an application, use `App.themes`.
 - To check the name of the active theme in an application, use `App.activeTheme`.
 - For example, use the below code to construct a Select UI using the above values
 
-#### Markup
-```
+### Markup
+
+```xml
 <wm-select name="select1" 
     dataset="bind:App.themes" datafield="All Fields" 
     datavalue="bind:App.activeTheme" 
     on-change="select1Change($event, widget, newVal, oldVal)">
 </wm-select>
 ```
-#### Script
-```
+
+### Script
+
+```javascript
 Page.select1Change = function($event, widget, newVal, oldVal) {
     App.activeTheme = newVal;
 };
