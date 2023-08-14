@@ -109,7 +109,7 @@ module.exports = {
         {
           "type": "doc",
           "docId": "documentation-reference",
-          "label": "Guide",
+          "label": "Get started",
           "position": "left"
         },
         {
@@ -136,15 +136,15 @@ module.exports = {
         },
         {
           "type": "doc",
-          "docId": "wavemaker-release-notes",
-          "label": "Releases",
+          "docId": "tutorials",
+          "label": "Tutorials",
           "position": "right"
         },
         {
-          "to": "https://www.wavemakeronline.com/login/login",
-          "label": "Login",
-          "position": "right",
-          "className": "button button--secondary"
+          "type": "doc",
+          "docId": "wavemaker-release-notes",
+          "label": "Releases",
+          "position": "right"
         },
         {
           "to": "https://www.wavemaker.com/get-started/",

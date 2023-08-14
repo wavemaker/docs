@@ -18,25 +18,23 @@ export default class Index extends React.Component {
             displayInfoFooter: true
         }
     }
-    getCategories() {
-        const { colorMode } = useColorMode();
-        let categoryComponents = [];
-        let categories = [
-            { href: '/learn/tutorials', lightIcon: '/learn/img/tutorials.svg', darkIcon: '/learn/img/tutorialsDark.svg', label: 'Tutorials' },
-            { href: '/learn/react-native/react-native-overview', lightIcon: '/learn/img/reactNativeMobileApp.svg', darkIcon: '/learn/img/reactNativeMobileAppDark.svg', label: 'Mobile App Development' },
-            { href: '/learn/on-premise/welcome', lightIcon: '/learn/img/enterpriseGuide.svg', darkIcon: '/learn/img/enterpriseGuideDark.svg', label: 'Enterprise Guide' },
-            { href: '/learn/app-development/custom-widgets/prefabs-overview', lightIcon: '/learn/img/tailorPrefabs.svg', darkIcon: '/learn/img/tailorPrefabsDark.svg', label: 'Prefab Building' }]
-        categories.forEach((category) => {
-            categoryComponents.push(
-                <div className="col" key={categories.indexOf(category)}>
-                    <a href={category.href} className='category'>
-                        <img src={colorMode != "dark" ? category.lightIcon : category.darkIcon} className='icon'></img>
-                        <span className='caption'>{category.label}</span>
-                    </a>
+    getFeatures() {
+        let featureComponents = [];
+        let features = [
+            { href: '/learn/app-development/custom-widgets/enterprise-marketplace/', title: 'Prefab MarketPlace', description:"Enterprise marketplace allows artifacts to be published by teams to be used across multiple teams..." },
+            { href: '/learn/how-tos/adding-ui-for-api-server-side-pagination/',  title: 'Server side Pagination', description:"Pagination is a way to represent data in sets of pages. Server-side pagination controls how these..." },
+            { href: '/learn/react-native/react-native-overview/', title: 'React Native Studio', description:"React Native is a cross-platform framework for developing native mobile applications..." },
+            { href: '/learn/app-development/services/java-services/api-composer-toolkit/', title: 'API Orchestration', description:"API Composition toolkit can be your playground to compose an API or an object using multiple API endpoints. This..." }]
+        features.forEach((feature) => {
+            featureComponents.push(
+                <div className='col' key={features.indexOf(feature)}>
+                        <h4 className='title'>{feature.title}</h4>
+                        <span className='description'>{feature.description}</span>
+                            <span className='link'>Know More <img src="/learn/img/combined-shape-black.svg" /></span>
                 </div>
             )
         })
-        return categoryComponents;
+        return featureComponents;
     }
 
     getExtensions() {
@@ -93,91 +91,9 @@ export default class Index extends React.Component {
                     </div>
                     <div className='container-fluid helpfull-resources'>
                         <div className='container margin-top--lg padding-bottom--xl'>
-                            <h1 className='text--center'>Helpful Resources</h1>
-                            <div className='row margin-top--lg padding--md'>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href='/learn/'>What's new?</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/custom-widgets/enterprise-marketplace/'>Prefab Marketplace</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/react-native/react-native-overview'>React Native Studio</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/services/java-services/api-composer-toolkit'>API Orchestration</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/how-tos/adding-ui-for-api-server-side-pagination'>Server-side Pagination</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href='/learn/app-development/wavemaker-overview/platform-overview'>Platform</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/wavemaker-app-development-faqs/what-is-wavemaker-app'>Architecture</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/wavemaker-app-development-faqs/'>FAQs</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/wavemaker-overview/product-walkthrough'>Studio Walkthrough</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/tutorials/leave-management-app'>Exercises</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href=''>API References</a>
-                                        </li>
-                                        <li>
-                                            <a href='https://www.wavemakeronline.com/app-runtime/latest/docs/index.html'>Widgets API</a>
-                                        </li>
-                                        <li>
-                                            <a href='https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/advanced/carousel/'>React Native Styles</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href='/learn/documentation-reference#quick-start-guide'>Quick Topics</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/how-tos/localization-wavemaker-apps'>Localization</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/how-tos/building-pwa-app#what-is-pwa-progressive-web-application'>PWA</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/blog/2020/02/25/wavemaker-micro-front-end-support'>Micro Frontend</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/sspa/micro-frontend'>SSPA</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href=''>Community</a>
-                                        </li>
-                                        <li>
-                                            <a href='https://www.wavemaker.com/training/'>Get Training</a>
-                                        </li>
-                                        <li>
-                                            <a href='https://github.com/wavemaker'>Github</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <h1 className='text--center'>Feature Highlight</h1>
+                            <div className='row'>
+                                {this.getFeatures()}
                             </div>
                         </div>
                     </div>
