@@ -10,7 +10,7 @@ Upon launching WaveMaker 11.0 on June 6th, 2022, our users were provided with th
 
 <!-- truncate -->
 
-Upon the launch of WaveMaker 11.0 on June 6th, 2023, our users were provided with the flexibility to work on WaveMaker 10 projects while undertaking the upgrade process to WaveMaker 11. This facility will not be offered with the 11.4 release. 
+<!-- truncate -->
 
 ## What will happen?
 
