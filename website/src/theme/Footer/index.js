@@ -35,19 +35,19 @@ export default class Footer extends React.Component {
             <div className='col col--6 extra-links'>
               <ul>
                 <li>
+                  <a href="https://www.wavemaker.com/" target="_blank" >WaveMaker</a>
+                </li>
+                <li>
+                  <a href="https://www.wavemaker.com/training/" target="_blank" >Get Training</a>
+                </li>
+                <li>
                   <a href="https://www.wavemaker.com/talk-to-us-for-pricing" target="_blank" >Pricing</a>
                 </li>
                 <li>
-                  <a href="https://www.wavemaker.com/partner" target="_blank" >Partners</a>
+                  <a href="https://www.wavemaker.com/partner/" target="_blank" >Partners</a>
                 </li>
                 <li>
-                  <a href="https://www.wavemaker.com/case-studies" target="_blank" >Customers</a>
-                </li>
-                <li>
-                  <a href="https://www.wavemaker.com/about" target="_blank" >About Us</a>
-                </li>
-                <li>
-                  <a href="https://www.wavemaker.com/contact" target="_blank" >Contact Us</a>
+                  <a href="https://www.wavemaker.com/partner/" target="_blank" >FAQs</a>
                 </li>
               </ul>
             </div>
@@ -73,14 +73,29 @@ export default class Footer extends React.Component {
                     <i className="fa fa-linkedin fa-lg"></i>
                   </a>
                 </li>
+                <li>
+                  <a href="#" target="_blank" title="Github">
+                    <i className="fa fa-github fa-lg"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
           <div className='row copyright text--center'>
             <div className='col'>
               <div className='container copyright-text'>
-                <span>Copyright © 2013-2022 WaveMaker, Inc. All rights reserved. </span>
+                <span> © Copyright © 2023 WaveMaker, Inc. Built with Docusaurus. </span>
               </div>
+            </div>
+            <div className='col col--6 extra-links'>
+              <ul>
+                <li>
+                  <a href="https://www.wavemaker.com/privacy-policy/" target="_blank" >Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="https://www.wavemaker.com/terms-of-use/" target="_blank" >Terms & Conditions</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

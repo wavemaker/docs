@@ -23,11 +23,12 @@ export var DocSearchButton = React.forwardRef(function (_ref, ref) {
       isAppleDevice() ? setKey(ACTION_KEY_APPLE) : setKey(ACTION_KEY_DEFAULT);
     }
   }, []);
-  return /*#__PURE__*/React.createElement("span", {
+  var isSearchActive = document.getElementsByClassName('search-active').length > 0;
+  return /*#__PURE__*/!isSearchActive ? React.createElement("span", {
     className: "DocSearch-Button-Keys"
   }, key !== null && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("kbd", {
     className: "DocSearch-Button-Key"
   }, key === ACTION_KEY_DEFAULT ? /*#__PURE__*/React.createElement(ControlKeyIcon, null) : key), /*#__PURE__*/React.createElement("kbd", {
     className: "DocSearch-Button-Key"
-  }, "K")));
+  }, "K"))): null;
 });
