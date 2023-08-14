@@ -8,9 +8,17 @@ WaveMaker strives to provide the best possible experience to all our users by re
 
 See what’s in [WaveMaker 11](https://docs.wavemaker.com/learn/app-development/wavemaker-overview/wavemaker-11).
 
+Upon the launch of WaveMaker 11.0 on June 6th, 2023, our users were provided with the flexibility to work on WaveMaker 10 projects while undertaking the upgrade process to WaveMaker 11. This facility will not be offered with the 11.4 release. 
+
 ## What will happen?
 
 However, with the release of Version 11.4, we will officially discontinue support for WaveMaker Version 10 projects. This decision is aligned with our commitment to delivering the latest technology and ensuring that our users can benefit from the most up-to-date and secure features. As part of this transition, we will be ending support for WaveMaker 10.x projects by September 4, 2023.
+
+:::note
+
+Forced migration from WaveMaker 10 to WaveMaker 11 is exclusively applicable to WaveMaker Online customers.
+
+:::
 
 ## What Should You Do?
 
