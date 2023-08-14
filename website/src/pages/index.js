@@ -21,16 +21,18 @@ export default class Index extends React.Component {
     getFeatures() {
         let featureComponents = [];
         let features = [
-            { href: '/learn/app-development/custom-widgets/enterprise-marketplace/', title: 'Prefab MarketPlace', description:"Enterprise marketplace allows artifacts to be published by teams to be used across multiple teams..." },
-            { href: '/learn/how-tos/adding-ui-for-api-server-side-pagination/',  title: 'Server side Pagination', description:"Pagination is a way to represent data in sets of pages. Server-side pagination controls how these..." },
-            { href: '/learn/react-native/react-native-overview/', title: 'React Native Studio', description:"React Native is a cross-platform framework for developing native mobile applications..." },
-            { href: '/learn/app-development/services/java-services/api-composer-toolkit/', title: 'API Orchestration', description:"API Composition toolkit can be your playground to compose an API or an object using multiple API endpoints. This..." }]
+            { href: '/learn/app-development/custom-widgets/enterprise-marketplace/', title: 'Prefab MarketPlace', description: "Enterprise marketplace allows artifacts to be published by teams to be used across multiple teams..." },
+            { href: '/learn/how-tos/adding-ui-for-api-server-side-pagination/', title: 'Server side Pagination', description: "Pagination is a way to represent data in sets of pages. Server-side pagination controls how these..." },
+            { href: '/learn/react-native/react-native-overview/', title: 'React Native Studio', description: "React Native is a cross-platform framework for developing native mobile applications..." },
+            { href: '/learn/app-development/services/java-services/api-composer-toolkit/', title: 'API Orchestration', description: "API Composition toolkit can be your playground to compose an API or an object using multiple API endpoints. This..." }]
         features.forEach((feature) => {
             featureComponents.push(
                 <div className='col' key={features.indexOf(feature)}>
+                    <a className='extension row' href={feature.href}>
                         <h4 className='title'>{feature.title}</h4>
-                        <span className='description'>{feature.description}</span>
-                            <span className='link'>Know More <img src="/learn/img/combined-shape-black.svg" /></span>
+                        <p className='description'>{feature.description}</p>
+                        <span className='link'>Know More <img src="/learn/img/combined-shape-black.svg" /></span>
+                    </a>
                 </div>
             )
         })
@@ -75,9 +77,9 @@ export default class Index extends React.Component {
                             <div className='col'>
                                 <h1 className='text--center text--semibold banner-Title'>How can we help?</h1>
                                 <div className='banner-search' id="home-search">
-                                <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                                     <BrowserOnly>
-                                        {()=><SearchBar autoFocus={true} elementId="home-search" />}
+                                        {() => <SearchBar autoFocus={true} elementId="home-search" />}
                                     </BrowserOnly>
                                 </div>
                             </div>
