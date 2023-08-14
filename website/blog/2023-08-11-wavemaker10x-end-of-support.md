@@ -4,11 +4,11 @@ author: Ritupurna Lenka
 ---
 ---
 
-WaveMaker strives to provide the best possible experience to all our users by regularly enhancing and upgrading our products. With this in mind, we are excited to announce the upcoming release of WaveMaker Version 11.4, which will introduce various new features and improvements, such as React Native features, tightly-coupled team collaboration, and reimport of backend APIs, and more exciting features. 
+We are excited to announce the upcoming release of WaveMaker Version 11.4, which will introduce various new features and improvements. With this release, we end our support for WaveMaker 10 projects. 
 
-See what’s in [WaveMaker 11](https://docs.wavemaker.com/learn/app-development/wavemaker-overview/wavemaker-11).
+Upon launching WaveMaker 11.0 on June 6th, 2022, our users were provided with the flexibility to work on WaveMaker 10 projects while undertaking the upgrade process to WaveMaker 11, using our [Multi-version Studio](https://docs.wavemaker.com/learn/app-development/wavemaker-overview/faqs-11/#what-is-multi-version-studio). With 11.4 release, we are disabling the support for the above facility and auto-upgrading the projects to WaveMaker 11. 
 
-Upon the launch of WaveMaker 11.0 on June 6th, 2023, our users were provided with the flexibility to work on WaveMaker 10 projects while undertaking the upgrade process to WaveMaker 11. This facility will not be offered with the 11.4 release. 
+<!-- truncate -->
 
 ## What will happen?
 
@@ -16,7 +16,7 @@ However, with the release of Version 11.4, we will officially discontinue suppor
 
 :::note
 
-Forced migration from WaveMaker 10 to WaveMaker 11 is exclusively applicable to WaveMaker Online customers.
+Once the 11.4 release is deployed on [wavemakeronline.com](https://www.wavemakeronline.com/studio/#/projects), WaveMaker 10 projects will undergo an automatic upgrade to 11.4.
 
 :::
 
@@ -36,21 +36,27 @@ To aid you in the process of migration, we have prepared detailed documentation 
 
 ### Upgrade In-progress: Archived Apps
 
-It is recommended to complete the migration from WaveMaker 10 to WaveMaker 11.x before the 11.4 release, in case you do not update the project before the planned migration date of 11.4, two things will happen:
+It is recommended to complete the migration from WaveMaker 10 to WaveMaker 11.x before the 11.4 release. To perform smooth migration, WaveMaker has provided the ability to use the multi-studio projects, this enables you to initiate migration and continue working on WaveMaker 10 projects while you simultaneously implement WaveMaker 11 upgrade. In the process of migration,
 
-1. WaveMaker 10 projects that have not been migrated will be force-migrated to 11.4.
-2. WaveMaker 11 Migration in-progress projects will be moved to the Archived apps.
+#### WaveMaker 10 projects 
+  
+WaveMaker 10 projects that have not been migrated will be automatically migrated to 11.4. Users might face some issues as it is migrated without their interference. 
+
+#### WaveMaker 11 Projects
+
+For the WaveMaker 10 projects for which the migration process has been initiated, WaveMaker 11 version will be moved to the Archived apps, and the WaveMaker 10 version of the project will be auto-migrated to WaveMaker 11.4.
+
 
 ```mermaid
 flowchart TD
     A[WM-10 Project] -->|upgrade in progress| B(WaveMaker 11)
     A[WM-10 Project] -->|stable-version| C(WaveMaker 10)
     B --> D(Archieved Project)
-    C --> E(Force-migrated to 11.4)
+    C --> E(Auto-migrated to 11.4)
     
 ```
 
-To avoid forced migration from WaveMaker 10 to WaveMaker 11, complete the process before 4th September 2023. In case of any assistance, reach out to our **support team**.
+To avoid auto-migration from WaveMaker 10 to WaveMaker 11, complete the process before 4th September 2023. In case of any assistance, reach out to our support team.
 
 
 
