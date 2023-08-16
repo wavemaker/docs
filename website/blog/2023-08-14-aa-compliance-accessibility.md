@@ -3,7 +3,7 @@ title: "AA Compliant Website Accessibility through WaveMaker Platform"
 author: Bhargavi Gunda
 ---
 
-Enabling AA Compliance for web apps built with WaveMaker,it requires a concerted effort to implement various accessibility standards and best practices. By following WCAG guidelines, using semantic markup, prioritizing keyboard accessibility, ensuring color contrast, providing alternative text for images, and implementing ARIA attributes, developers can create an inclusive and accessible platform for users of all abilities. Continuous testing, documentation, and training further contribute to the platform's commitment to accessibility and enable a seamless and enriching experience for all users.
+Enabling AA Compliance for web apps built with WaveMaker requires a concerted effort to implement various accessibility standards across our 100+ widget collection. By following WCAG guidelines, using semantic markup, prioritizing keyboard accessibility, ensuring color contrast, providing alternative text for images, and implementing ARIA attributes, developers can create an inclusive and accessible platform for users of all abilities. Continuous testing, documentation, and training further contribute to the platform's commitment to accessibility and enable a seamless and enriching experience for all users.
 
 Although Accessibility is designed for people with disabilities, it helps everyone in general. Accessibility promotes usability. Everyone, in general, can benefit from clear instructions, opportunities to correct form errors, simple visual layouts, high color contrast, and the option to read a transcript or captions to a video or audio recording.
 Accessibility often describes hardware and software designed to help those who experience disabilities.
