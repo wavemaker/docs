@@ -1,12 +1,9 @@
 ---
-title: "AA Compliant Website Accessibility through Wavemaker Platform"
+title: "AA Compliant Website Accessibility through WaveMaker Platform"
 author: Bhargavi Gunda
 ---
 
-On a low-code platform, achieving AA compliance requires a concerted effort to implement various accessibility standards and best practices. By following WCAG guidelines, using semantic markup, prioritizing keyboard accessibility, ensuring color contrast, providing alternative text for images, and implementing ARIA attributes, developers can create an inclusive and accessible platform for users of all abilities. Continuous testing, documentation, and training further contribute to the platform's commitment to accessibility and enable a seamless and enriching experience for all users.
-
-In the digital age, inclusivity and accessibility are no longer just buzzwords; they are crucial pillars of a successful online presence. Understanding the diverse needs of our audience, we embarked on a transformative journey to ensure our low-code platform is not just AA compliant but also embraces the power of semantic/native markup.
-Achieving AA compliance on a low-code platform requires careful consideration of various accessibility standards and guidelines. 
+Enabling AA Compliance for web apps built with WaveMaker,it requires a concerted effort to implement various accessibility standards and best practices. By following WCAG guidelines, using semantic markup, prioritizing keyboard accessibility, ensuring color contrast, providing alternative text for images, and implementing ARIA attributes, developers can create an inclusive and accessible platform for users of all abilities. Continuous testing, documentation, and training further contribute to the platform's commitment to accessibility and enable a seamless and enriching experience for all users.
 
 Although Accessibility is designed for people with disabilities, it helps everyone in general. Accessibility promotes usability. Everyone, in general, can benefit from clear instructions, opportunities to correct form errors, simple visual layouts, high color contrast, and the option to read a transcript or captions to a video or audio recording.
 Accessibility often describes hardware and software designed to help those who experience disabilities.
@@ -18,25 +15,30 @@ Accessibility often describes hardware and software designed to help those who e
 **WCAG 2.1 Guidelines**: The Web Content Accessibility Guidelines (WCAG) 2.1 provide the most widely recognized and accepted accessibility standards. These guidelines define criteria for making web content more accessible to users with disabilities.
 
 **Keyboard Accessibility**: All components and interactions should be operable and fully functional using only the keyboard. This ensures that users who rely on keyboard navigation or assistive devices can access all functionalities without barriers.
-Focus Management: Proper focus management is crucial for keyboard accessibility. Ensuring that focus is clearly visible and moves in a logical order through interactive elements improves the overall accessibility of the platform.
+Proper focus management is crucial for keyboard accessibility. 
+
+Ensuring that focus is clearly visible and moves in a logical order through interactive elements improves the overall accessibility web apps built with the platform.
+All modals/dialogs with custom HTML or widgets like date, datetime made accessible by trapping the focus inside them i..e, when a user hits _Tab_ or _Shift+Tab_ or clicks around, they can't escape a certain cycle of focusable elements like anchor/button/input inside the dialog.
+The only way to escape the focus on dialog is to close it or press _Escape_ key.
+
 
 **Semantic/native HTML**: Using these HTML elements is essential to create a well-structured and accessible user interface. This includes using proper heading tags, lists, form elements, and semantic roles to convey the meaning and relationships of content to assistive technologies.
 
 **Form Accessibility**: Forms on the platform should be designed with clear labels, error messages, and properly associated input fields. This ensures that users can understand and complete forms using assistive technologies.
-ARIA (Accessible Rich Internet Applications): Implementing ARIA attributes can enhance the accessibility of dynamic and interactive components on the platform. ARIA roles and properties provide additional context and information to assistive technologies.
+ARIA (Accessible Rich Internet Applications): Implementing ARIA attributes can enhance the accessibility of dynamic and interactive components on the website. ARIA roles and properties provide additional context and information to assistive technologies.
 
 **Testing and Validation**: Regular accessibility testing and validation should be conducted during the development process. Automated testing tools, as well as manual testing with users with disabilities, can help identify and address potential accessibility issues.
 
-**Documentation and Training**: Providing comprehensive accessibility documentation and training for platform developers and users helps ensure that accessibility is consistently maintained throughout the development lifecycle.
+**Documentation and Training**: Providing comprehensive accessibility documentation and training for web app developers and users helps ensure that accessibility is consistently maintained throughout the development lifecycle.
 
-### A Holistic Approach to Embracing AA Compliance: 
+### A Holistic Approach to Embrace AA Compliance: 
 
-Accessibility is not an afterthought; it's an integral part of our Wavemaker’s DNA. From the initial planning stages to the final implementation, we adopted a holistic approach to accessibility, ensuring every aspect of our platform caters to users with disabilities.
+Accessibility is not an afterthought; it's an integral part of our WaveMaker’s DNA. From the initial planning stages to the final implementation, we adopted a holistic approach to accessibility, ensuring every aspect of our platform caters to users with disabilities.
 Aligning with the Web Content Accessibility Guidelines (WCAG) 2.1 AA standards, our team worked tirelessly to address the specific needs of users with disabilities. Clear and consistent navigation, keyboard operability, and color contrast optimization were among the many key aspects we prioritized to create a seamless browsing experience.
 
 **1.The Power of Semantic Markup**: Recognizing that an accessible website goes beyond mere compliance, we fully embraced the potential of semantic markup. By using appropriate HTML elements with meaningful structure, we enable all users, including those with assistive technologies, to comprehend the content's context and organization effortlessly.
 
-**2.Empowering Users with Semantic Elements**: Semantic headings play a crucial role in guiding users through our platform’s content. By employing a logical heading hierarchy, we empower screen readers to provide users with a comprehensive outline of the information, ensuring easy navigation and comprehension.
+**2.Empowering Users with Semantic Elements**: Semantic headings play a crucial role in guiding users through our website’s content. By employing a logical heading hierarchy, we empower screen readers to provide users with a comprehensive outline of the information, ensuring easy navigation and comprehension.
 
 **3.Enhanced Interactive Elements**: Our commitment to inclusivity extended to interactive elements, which received special attention. Every button, link, and form field is equipped with descriptive labels, ensuring that users, irrespective of their abilities, can fully grasp the purpose and functionality of each element.
 
@@ -47,9 +49,9 @@ Aligning with the Web Content Accessibility Guidelines (WCAG) 2.1 AA standards, 
 **6.Form Filling Made Accessible**: We understood the importance of form accessibility, as it directly affects users' ability to interact with our services. With clear validation messages and error handling, we created a smooth form filling experience for everyone
 
 
-### Accessibility attributes added to different widgets in Wavemaker
+### Accessibility attributes added to different widgets in WaveMaker
 
-By incorporating these diverse widget items with a focus on accessibility and semantic markup, we aim to create a seamless and inclusive browsing experience for all users, regardless of their abilities or disabilities. Our commitment to accessibility extends across all aspects of our platform , ensuring that everyone can engage with our content, services, and functionalities with ease and confidence.
+By incorporating these diverse widget items with a focus on accessibility and semantic markup, we aim to create a seamless and inclusive browsing experience for all users, regardless of their abilities or disabilities. Our commitment to accessibility extends across all aspects of our platform, ensuring that everyone can engage with our content, services, and functionalities with ease and confidence.
 
 **Data Table**:
 Implemented proper table headers and captions for screen readers to interpret data correctly.
@@ -123,7 +125,7 @@ Provided proper labeling and ARIA attributes for enhanced screen reader support.
 
 
 ### Different tools used to test Accessibility
-In our quest to ensure accessibility compliance across our Wavemaker’s diverse range of widgets, we employ various tools and techniques to test and validate the accessibility of each element. Below are some of the tools we leverage to ensure that every widget on our platform is accessible to all users:
+In our quest to ensure accessibility compliance across our WaveMaker’s diverse range of widgets, we employ various tools and techniques to test and validate the accessibility of each element. Below are some of the tools we leverage to ensure that every widget on our platform is accessible to all users:
 
 **Screen Readers (e.g., NVDA/AssistiveLabs and VoiceOver)**: We test all widgets using popular screen readers like NVDA (NonVisual Desktop Access) and VoiceOver to experience the website as users with visual impairments would. This helps us identify issues and optimize our widgets for smooth navigation and comprehension.
 
@@ -139,7 +141,7 @@ In our quest to ensure accessibility compliance across our Wavemaker’s diverse
 
 **User Testing and Feedback**: Real-world testing by users with disabilities is a crucial aspect of our accessibility evaluation process. We seek feedback from diverse user groups to gain valuable insights and address any usability challenges.
 
-**Continuous Monitoring**: We continuously monitor our Wavemaker’s accessibility to ensure that any new updates or content additions maintain the same high level of accessibility compliance.
+**Continuous Monitoring**: We continuously monitor our WaveMaker’s accessibility to ensure that any new updates or content additions maintain the same high level of accessibility compliance.
 
-By combining these testing methods and tools, we can confidently offer a Wavemaker with widgets that are accessible, inclusive, and easy to use for all users, regardless of their abilities or assistive technologies. Our commitment to accessibility remains an ongoing journey, and we are dedicated to providing an inclusive experience for every visitor to our website built through our platform.
+By combining these testing methods and tools, we offer excellent platform to build rich web applications that are accessible, inclusive, and easy to use for all users, regardless of their abilities or assistive technologies. Our commitment to accessibility remains an ongoing journey, and we are dedicated to providing an inclusive experience for every visitor to our website built through our platform.
 
