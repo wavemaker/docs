@@ -33,10 +33,10 @@ ARIA (Accessible Rich Internet Applications): Implementing ARIA attributes can e
 
 ### A Holistic Approach to Embrace AA Compliance: 
 
-Accessibility is not an afterthought; it's an integral part of our WaveMaker’s DNA. From the initial planning stages to the final implementation, we adopted a holistic approach to accessibility, ensuring every aspect of our platform caters to users with disabilities.
-Aligning with the Web Content Accessibility Guidelines (WCAG) 2.1 AA standards, our team worked tirelessly to address the specific needs of users with disabilities. Clear and consistent navigation, keyboard operability, and color contrast optimization were among the many key aspects we prioritized to create a seamless browsing experience.
+Accessibility is not an afterthought; it's an integral part of our WaveMaker’s DNA. From the initial planning stages to the final implementation, we adopted a holistic approach to accessibility, ensuring that apps built with WaveMaker cater to everyone.
+Aligning with the Web Content Accessibility Guidelines (WCAG) 2.1 AA standards, our team worked tirelessly to address host of issues with AA compliance in our widgets. Clear and consistent navigation, keyboard operability, and color contrast optimization were among the many key aspects we prioritized to create a seamless browsing experience.
 
-**1.The Power of Semantic Markup**: Recognizing that an accessible website goes beyond mere compliance, we fully embraced the potential of semantic markup. By using appropriate HTML elements with meaningful structure, we enable all users, including those with assistive technologies, to comprehend the content's context and organization effortlessly.
+**1.The Power of Semantic Markup**: Recognizing that an accessible app goes beyond mere compliance, we fully embraced the potential of semantic markup. By using appropriate HTML elements with meaningful structure, we enable all users, including those with assistive technologies, to comprehend the content's context and organization effortlessly.
 
 **2.Empowering Users with Semantic Elements**: Semantic headings play a crucial role in guiding users through our website’s content. By employing a logical heading hierarchy, we empower screen readers to provide users with a comprehensive outline of the information, ensuring easy navigation and comprehension.
 
@@ -51,7 +51,7 @@ Aligning with the Web Content Accessibility Guidelines (WCAG) 2.1 AA standards, 
 
 ### Accessibility attributes added to different widgets in WaveMaker
 
-By incorporating these diverse widget items with a focus on accessibility and semantic markup, we aim to create a seamless and inclusive browsing experience for all users, regardless of their abilities or disabilities. Our commitment to accessibility extends across all aspects of our platform, ensuring that everyone can engage with our content, services, and functionalities with ease and confidence.
+By incorporating many of these recommendations with a focus on accessibility and semantic markup, we aim to create a seamless and inclusive browsing experience for all users, regardless of their abilities. 
 
 **Data Table**:
 Implemented proper table headers and captions for screen readers to interpret data correctly.
@@ -143,5 +143,5 @@ In our quest to ensure accessibility compliance across our WaveMaker’s diverse
 
 **Continuous Monitoring**: We continuously monitor our WaveMaker’s accessibility to ensure that any new updates or content additions maintain the same high level of accessibility compliance.
 
-By combining these testing methods and tools, we offer excellent platform to build rich web applications that are accessible, inclusive, and easy to use for all users, regardless of their abilities or assistive technologies. Our commitment to accessibility remains an ongoing journey, and we are dedicated to providing an inclusive experience for every visitor to our website built through our platform.
+By combining these testing methods and tools, we offer excellent platform to build rich web applications that are accessible, inclusive, and easy to use for all users, regardless of their abilities or assistive technologies. Our commitment to accessibility remains an ongoing journey, and we are dedicated to providing an inclusive experience for users of every app built using WaveMaker.
 
