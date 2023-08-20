@@ -40,13 +40,13 @@ export default class Index extends React.Component {
     }
 
     getRecentSearch() {
-        let recentSearch = JSON.parse(localStorage.getItem('recentSearch'));
+        let recentSearch = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('recentSearch')): null;
         let output = [];
         if (recentSearch) {
             recentSearch.forEach((search) => {
                 output.push(<div className='text--center recentSearchItem'>
-                        <p>{search}</p>
-                    </div>)
+                    <p>{search}</p>
+                </div>)
             })
             return (<div className='container'>
                 <p>Recently Visited:</p>{output}
@@ -99,7 +99,9 @@ export default class Index extends React.Component {
                                     </BrowserOnly>
                                 </div>
                                 <div className='row recentSearch text--center'>
-                                    {this.getRecentSearch()}
+                                    <BrowserOnly>
+                                        {this.getRecentSearch()}
+                                    </BrowserOnly>
                                 </div>
                             </div>
                         </div>
