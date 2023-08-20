@@ -39,6 +39,22 @@ export default class Index extends React.Component {
         return featureComponents;
     }
 
+    getRecentSearch() {
+        let recentSearch = JSON.parse(localStorage.getItem('recentSearch'));
+        let output = [];
+        if (recentSearch) {
+            recentSearch.forEach((search) => {
+                output.push(<div className='text--center recentSearchItem'>
+                        <p>{search}</p>
+                    </div>)
+            })
+            return (<div className='container'>
+                <p>Recently Visited:</p>{output}
+            </div>);
+        }
+        return null;
+    }
+
     getExtensions() {
         const { colorMode } = useColorMode();
         let extensionComponents = [];
@@ -81,6 +97,9 @@ export default class Index extends React.Component {
                                     <BrowserOnly>
                                         {() => <SearchBar autoFocus={true} elementId="home-search" />}
                                     </BrowserOnly>
+                                </div>
+                                <div className='row recentSearch text--center'>
+                                    {this.getRecentSearch()}
                                 </div>
                             </div>
                         </div>
