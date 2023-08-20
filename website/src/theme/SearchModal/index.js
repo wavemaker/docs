@@ -112,21 +112,23 @@ export function DocSearchModal(_ref) {
             return x.objectID === search.objectID;
         }) === -1) {
             let output = search.hierarchy["lvl1"];
-            if(localStorage.getItem('recentSearch')){
-                let recentSearch = JSON.parse(localStorage.getItem('recentSearch'));
-                if(!recentSearch.includes(output)){
-                    if(recentSearch.length == 1){
-                        recentSearch.push(output);
+            if (typeof window !== 'undefined') {
+                if (localStorage.getItem('recentSearch')) {
+                    let recentSearch = JSON.parse(localStorage.getItem('recentSearch'));
+                    if (!recentSearch.includes(output)) {
+                        if (recentSearch.length == 1) {
+                            recentSearch.push(output);
+                        }
+                        else if (recentSearch.length == 2) {
+                            recentSearch.push(output);
+                            recentSearch.shift();
+                        }
+                        localStorage.setItem('recentSearch', JSON.stringify(recentSearch));
                     }
-                    else if(recentSearch.length == 2){
-                        recentSearch.push(output);
-                        recentSearch.shift();    
-                    }    
-                    localStorage.setItem('recentSearch', JSON.stringify(recentSearch));
                 }
-            }
-            else{
-                localStorage.setItem('recentSearch', JSON.stringify([output]));
+                else {
+                    localStorage.setItem('recentSearch', JSON.stringify([output]));
+                }
             }
         }
     }, [favoriteSearches, disableUserPersonalization]);
