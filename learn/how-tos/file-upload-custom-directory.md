@@ -11,7 +11,7 @@ As discussed in [FileUpload](https://docs.wavemaker.com/learn/app-development/wi
 
 2. Go to Java services and inside `getUploadDir` method replace the upload directory path.
 
-[![](/learn/assets/getuploaddir.png)](/learn/assets/getuploaddir.png)
+[![](/learn/assets/get-upload-dir.png)](/learn/assets/get-upload-dir.png)
 
 The uploaded file is available in the **Import Resource** window under **Resources** in the path mentioned in the Java Service. You can view the created directory and file in the below image.
 
@@ -24,7 +24,7 @@ This section showcases using the FileUpload widget to :
 1. use the apache tomcat bin folder to upload files
 2. to package the files in the application
 
-<iframe width="708" height="560" src="https://docs.google.com/presentation/d/e/2PACX-1vRZNrR4NddPLUrPz4asRRs6qbNtG_vO2gz4lZjsjujJnMLxsTrzLWf-NKZC8lMyUPSQpgS12Ld79TV3/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+<iframe width="508" height="360" src="https://docs.google.com/presentation/d/e/2PACX-1vRZNrR4NddPLUrPz4asRRs6qbNtG_vO2gz4lZjsjujJnMLxsTrzLWf-NKZC8lMyUPSQpgS12Ld79TV3/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
 
 [File Upload Use Cases](/learn/app-development/widgets/basic/fileupload-use-cases/)
 
