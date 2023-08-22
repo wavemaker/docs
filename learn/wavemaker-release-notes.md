@@ -21,7 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.3.6](/learn/wavemaker-release-notes/v11-3-5) <p style={{color:"red"}}>*latest*</p> | New features in React Native, such as Multi-theme support, Touch events, Audio widget, RTL Layout, Multiple selections in the List widget, React Native feature enhancements, and other bug fixes.| 31 July 2023 |
+|[WaveMaker 11.3.6](/learn/wavemaker-release-notes/v11-3-5) <p style={{color:"red"}}>*latest*</p> | New features in React Native, such as Multi-theme support, Touch events, Audio widget, RTL Layout, Multiple selections in the List widget, React Native feature enhancements, and other bug fixes.|31 July 2023 |
 |[WaveMaker 11.3.5](/learn/wavemaker-release-notes/v11-3-5) | Enhancements for the Googlemap Prefab, pagination, as well as bug fixes for nested menus, app crashing, and database queries and procedures. | 26 June 2023 |
 |[WaveMaker 11.3.4](/learn/wavemaker-release-notes/v11-3-4) | Bug fixes related to access denied pop-ups and slow loading of the project listing page. | 12 June 2023 |
 |[WaveMaker 11.3.3](/learn/wavemaker-release-notes/v11-3-3) | New features in React Native, such as Lottie widget, SSL pinning, supporting third-party React Native UI components, developer UX changes, and other bug fixes. | 7 June 2023 |
