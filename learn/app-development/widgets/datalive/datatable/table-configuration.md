@@ -46,6 +46,11 @@ Pagination is dividing the set of data rows into discrete pages that will allow 
 - _Basic_ – This option gives a next and previous arrow along with the page numbers at the right bottom of the page.
 - _Classic_ - A bar with the total number of pages and number of items on the current page will be displayed along with arrows for pagination.
 - _Pager_ – This option gives the next and previous buttons at the bottom of the page which when clicked goes forward or backward one row.
+- _On Demand_ –  This option gives flexibility to visualize a large dataset in smaller manageable pages with size configured are displayed at a time and the next page is shown on click of View More button at the end of the table.On the last page, View Less button can also be configured to return to the first page.
+                 This approach is particularly useful when dealing with datasets that are too large to be displayed all at once, as it helps improve performance, user experience, and readability.
+![table-config2](/learn/assets/table-config1-2.png)
+- _Infinite Scroll_ - This option is similar to on demand type in all terms except that next page is shown on scroll event not on a button click.
+- _None_ - No pagination is applied, whole dataset is shown in table at once.
 
 ### Export Data
 
@@ -58,6 +63,8 @@ Only the contents displayed in the Data Table will be exported, as opposed to th
 ### Message
 
 Various messages to be displayed at various stages of Data Table rendering can be configured. For example, a message to be displayed when No Data is found or while Data loading etc.. Depending upon they layout type selected the message list will vary.
+
+Messages can also be configured for View More and View Less buttons shown in data table with On-Demand and Infinite Scroll paginations.
 
 Message On Error, Message On Add and Message On Update can be configured for CRUD operations in editable grids.
 
