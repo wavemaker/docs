@@ -1337,7 +1337,7 @@
 					"type": "category",
 					"label": "Progress Circle",
 					"items": [
-						"app-development/widgets/progress-circle",
+						"app-development/widgets/basic/progress-circle",
 						"how-tos/using-progress-circle-widget"
 					]
 				}

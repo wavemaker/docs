@@ -18,3 +18,11 @@ Multiselect will enable users to select multiple list items at runtime. These it
 This property will disable all the events on the item and other widgets present it.
 
 [![](/learn/assets/cards_behav1.png)](/learn/assets/cards_behav1.png)
+
+## Touch Events
+
+Tap, Double Tap, and Long Tap events allow you to set actions associated with the touch events.
+
+## Selection Limit Exceed
+
+This event is bound with the **Selection Limit** property that gets invoked when you exceed the count of the maximum items that can be selected in the list.  
