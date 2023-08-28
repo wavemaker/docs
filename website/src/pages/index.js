@@ -40,11 +40,11 @@ export default class Index extends React.Component {
     }
 
     getRecentSearch() {
-        let recentSearch = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('recentSearch')): null;
+        let recentSearch = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('recentSearch')) : null;
         let output = [];
         if (recentSearch) {
-            recentSearch.forEach((search) => {
-                output.push(<div className='text--center recentSearchItem'>
+            recentSearch.forEach((search, index) => {
+                output.push(<div key={"" + index} className='text--center recentSearchItem'>
                     <p>{search}</p>
                 </div>)
             })
@@ -52,18 +52,18 @@ export default class Index extends React.Component {
                 <p>Recently Visited:</p>{output}
             </div>);
         }
-        return null;
+        return <div></div>;
     }
 
     getExtensions() {
         const { colorMode } = useColorMode();
         let extensionComponents = [];
         let extensions = [
-            { href: '/learn/app-development/ui-design/theme-builder', lightIcon: '/learn/img/themeBuilder.svg', darkIcon: '/learn/img/themeBuilderDark.svg', label: 'Theme Builder' },
-            { href: '/learn/app-development/services/mock-services/mock-imported-apis/', lightIcon: '/learn/img/apiMocking.svg', darkIcon: '/learn/img/apiMockingDark.svg', label: 'MockingBird' },
-            { href: '/learn/app-development/dev-integration/chrome-developer-tool', lightIcon: '/learn/img/devTool.svg', darkIcon: '/learn/img/devToolDark.svg', label: 'Dev Tool' },
-            { href: '/learn/teams/overview', lightIcon: '/learn/img/teamPortal.svg', darkIcon: '/learn/img/teamPortalDark.svg', label: 'Teams Portal' },
-            { href: '/learn/connectors/connectors-introduction', lightIcon: '/learn/img/connectors.svg', darkIcon: '/learn/img/connectorsDark.svg', label: 'Connectors' },
+            { href: '/learn/react-native/react-native-overview/', lightIcon: '/learn/img/themeBuilder.svg', darkIcon: '/learn/img/themeBuilderDark.svg', label: 'Mobile App Development' },
+            { href: '/learn/app-development/services/mock-services/mock-imported-apis/', lightIcon: '/learn/img/apiMocking.svg', darkIcon: '/learn/img/apiMockingDark.svg', label: 'Mock API Responses' },
+            { href: '/learn/app-development/custom-widgets/prefab-with-partials/#creating-partials', lightIcon: '/learn/img/devTool.svg', darkIcon: '/learn/img/devToolDark.svg', label: 'Prefabs Design & Develop' },
+            { href: '/learn/teams/overview', lightIcon: '/learn/img/teamPortal.svg', darkIcon: '/learn/img/teamPortalDark.svg', label: 'Administration Teams Portal' },
+            { href: '/learn/on-premise/welcome/', lightIcon: '/learn/img/connectors.svg', darkIcon: '/learn/img/connectorsDark.svg', label: 'Enterprise Install & Setup' },
         ]
         extensions.forEach((extension) => {
             extensionComponents.push(<div className='col padding-horiz--sm' key={extensions.indexOf(extension)}>
@@ -93,14 +93,14 @@ export default class Index extends React.Component {
                             <div className='col'>
                                 <h1 className='text--center text--semibold banner-Title'>How can we help?</h1>
                                 <div className='banner-search' id="home-search">
-                                    <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    <svg width="20" height="20" className="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                                     <BrowserOnly>
                                         {() => <SearchBar autoFocus={true} elementId="home-search" />}
                                     </BrowserOnly>
                                 </div>
                                 <div className='row recentSearch text--center'>
                                     <BrowserOnly>
-                                        {this.getRecentSearch()}
+                                        {() => this.getRecentSearch()}
                                     </BrowserOnly>
                                 </div>
                             </div>

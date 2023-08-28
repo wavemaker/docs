@@ -2,7 +2,9 @@
 title: "Page Artefacts"
 id: "page-artefacts"
 ---
+
 ---
+
 You would have witnessed by now that you can accomplish most of the tasks of creating an application in the **Design** mode itself - using intuitive drag and drop options and properties. However, some situations may require you to edit the code of your application pages. Also, some advanced users and experienced developers may prefer to code. Thus, WaveMaker provides different **Page Modes** - [**Markup**](#page-markup), [**Scripting**](#page-script), and [**Styles**](#page-style) - apart from the default **Design** mode. We will look at each of these modes separately.
 
 [![Screenshot showing page modes](/learn/assets/page_modes.png)](/learn/assets/page_modes.png)
@@ -15,13 +17,19 @@ The **Markup** mode gives the user an option to add widgets and customize the wi
 
 Each of the directives represents an element that has to exist at that point of time in the canvas. So for example, if you select a 3-column layout for your App, you will notice the following directives under the Markup tab - wm-page, wm-header, wm-top-nav, wm-content, wm-left-panel, wm-page-content, wm-right-panel, wm-footer.
 
-Custom markup can be added as needed directly in the code (if you are familiar with it). If not, WaveMaker automatically generates code when the elements are dragged on the canvas. This mode shows the styles that are associated with the particular widget. For instance, consider the **Button** widget. In the **Design** mode, drag and drop a **Button** widget and name it _formSubmitButton_. Set some of the properties of the _button_, say **Left Margin**, **Right Margin** and **Top Margin**, using the **Properties Panel**.
+Custom markup can be added as needed directly in the code (if you are familiar with it). If not, WaveMaker automatically generates code when the elements are dragged on the canvas. This mode shows the styles that are associated with the particular widget. For instance, consider the **Button** widget. In the **Design** mode, drag and drop a **Button** widget and name it *formSubmitButton*. Set some of the properties of the *button*, say **Left Margin**, **Right Margin** and **Top Margin**, using the **Properties Panel**.
 
 Now, switch to **Markup** mode. You can see the corresponding markup for the _button _as shown below.
 
 ```html
- <wm-button class="btn-default" caption="Button" type="button" margin="unset 0.5em"
-name="formSubmitButton" on-click="formSubmitButtonClick($event, widget)">
+<wm-button
+  className="btn-default"
+  caption="Button"
+  type="button"
+  margin="unset 0.5em"
+  name="formSubmitButton"
+  on-click="formSubmitButtonClick($event, widget)"
+>
 </wm-button>
 ```
 
@@ -42,8 +50,8 @@ Here is an example to illustrate the process. Suppose you have a button named 
 - Call the _alert_ function to display an alert when the user clicks _formSubmitButton_ as shown below.
 
 ```javascript
-Page.formSubmitButtonClick = function($event, widget) {
-    alert('Here is an alert from JavaScript');
+Page.formSubmitButtonClick = function ($event, widget) {
+  alert("Here is an alert from JavaScript");
 };
 ```
 
@@ -63,20 +71,20 @@ A comprehensive list of the available classes can be [wm-widgets](/learn/assets/
 
 ### Style editor
 
-In the **Style** mode, you can create and edit styles for the page using CSS. Let us create a CSS class for a button _formSubmitButton_.
+In the **Style** mode, you can create and edit styles for the page using CSS. Let us create a CSS class for a button *formSubmitButton*.
 
-- In the **Design** mode, select the button named _formSubmitButton_.
+- In the **Design** mode, select the button named *formSubmitButton*.
 - In the **Properties Panel** on the right side, click on **Styles**.
 - Enter the class name, say _buttonSample_, for the property **ButtonClass**. This property defines the CSS class that is supposed to be associated _formSubmitButton_.
 - Switch to **Style** mode and enter the following:
 
-```css  
+```css
 .wm-app .buttonSample {
-    color: red
-};
+  color: red;
+}
 ```
 
-- This would make the _formSubmitButton_ appear red due to the properties mentioned in the _buttonSample_ CSS class.
+- This would make the _formSubmitButton_ appear red due to the properties mentioned in the *buttonSample* CSS class.
 
 These style changes can be made at two levels:
 

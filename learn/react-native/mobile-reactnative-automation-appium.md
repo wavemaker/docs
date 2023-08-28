@@ -3,6 +3,7 @@ title: "Automated testing of WaveMaker mobile apps using Appium"
 id: "mobile-reactnative-automation-appium"
 sidebar_label: "WaveMaker ReactNative Mobile Apps Automation"
 ---
+
 ---
 
 How to use Appium to automate testing of WaveMaker mobile app
@@ -11,6 +12,7 @@ How to use Appium to automate testing of WaveMaker mobile app
 
 Appium is an open-source tool for automating testing of native, mobile web, and hybrid applications on iOS mobile, Android mobile, and Windows desktop
 platforms.
+
 - Native apps are those written using the iOS, Android.
 - Mobile web apps are web apps accessed using a mobile browser (Appium supports Safari on iOS and Chrome or the built-in 'Browser' app on Android).
 - Hybrid apps have a wrapper around a "webview" -- a native control that enables interaction with web content. Projects like Apache Cordova make it easy to
@@ -31,11 +33,11 @@ Refer [documentation](https://docs.wavemaker.com/learn/react-native/build-instal
 
 An appium driver has two contexts to choose locators.
 
-**Native_APP** : This is the driver context where we choose locators from ``uiautomatorviewer`` tool.
+**Native_APP** : This is the driver context where we choose locators from `uiautomatorviewer` tool.
 
 **WebView** : This is another driver context where we choose locators from mobile debug browser.
 
-For the WM react native mobile applications, to find locators we use ``uiautomator`` viewer
+For the WM react native mobile applications, to find locators we use `uiautomator` viewer
 
 **Here is the example how to choose locators for a sample react native mobile application built in WaveMaker.**
 
@@ -47,16 +49,15 @@ successful.
 
 [![](/learn/assets/wm_rn_mobile_automation_locators.png)](/learn/assets/wm_rn_mobile_automation_locators.png)
 
-
 Get the locators of the Username, Password, Login button and verify login locators.
 i.e.,
 
 ```
 
- By userNameTxt = By.xpath("//*[@class='android.widget.EditText' and @text='Enter username']");
- By passwordTxt = By.xpath("//*[@class='android.widget.EditText' and @text='Enter password']");
+ By userNameTxt = By.xpath("//*[@className='android.widget.EditText' and @text='Enter username']");
+ By passwordTxt = By.xpath("//*[@className='android.widget.EditText' and @text='Enter password']");
  By loginButton = By.xpath("//android.view.ViewGroup[@index=4]");
- By labellocator = By.xpath("//*[@class='android.widget.TextView' and @text='Hello! admin']");
+ By labellocator = By.xpath("//*[@className='android.widget.TextView' and @text='Hello! admin']");
 ```
 
 ## Register appium driver by providing required desired capabilities as shown below.
@@ -83,6 +84,7 @@ i.e.,
         wait = new WebDriverWait(driver, 1000);
     }
 ```
+
 :::note
 In the above snippet, capability ‘app’ is the location of the app, ‘appPackage’ is the applicationId and ‘appActivity’ is used to launch the application in the
 emulator.
@@ -95,6 +97,5 @@ adb shell dumpsys window | grep -E 'mCurrentFocus'
 :::
 
 ## Prepare your test scripts to execute test cases.
+
 [![](/learn/assets/wm-rn-mobile-automation-appium-execution.gif)](/learn/assets/wm-rn-mobile-automation-appium-execution.gif)
-
-

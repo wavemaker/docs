@@ -2,6 +2,7 @@
 title: "Configuration Management"
 id: "configuration-management"
 ---
+
 ---
 
 ## Introduction
@@ -22,7 +23,7 @@ However, there are some concerns with this approach.
 1. The war file has to be rebuilt for every environment using a different profile file.
 
 2. The secrets, such as DB password, API keys, etc., are checked in the source code, which ideally should be managed only by Ops teams.
-:::
+   :::
 
 ## Configuration Profile Management
 
@@ -30,7 +31,7 @@ However, there are some concerns with this approach.
 This is a new approach applicable from the [release 10.8.0](/learn/wavemaker-release-notes/v10.8.0).
 :::
 
-The new generation of DevOps follows the cloud-native strategy [12-factor app](https://12factor.net/) wherein the war file is built only once, called an immutable war file. The immutable war file does not have the configuration values packaged in it. Instead, they will have placeholders that should be provided at the time of deployment; this enables the use of Docker images and versioning them based on the application version. 
+The new generation of DevOps follows the cloud-native strategy [12-factor app](https://12factor.net/) wherein the war file is built only once, called an immutable war file. The immutable war file does not have the configuration values packaged in it. Instead, they will have placeholders that should be provided at the time of deployment; this enables the use of Docker images and versioning them based on the application version.
 
 ## Building an Immutable War
 
@@ -46,7 +47,7 @@ Here you have multiple options:
 
 ### Using an Existing Deployment Profile
 
-Use an existing deployment profile, called Deployment. It is the default profile that comes with the application. You can use it to build the immutable war file. In this approach, the default values for all properties are already defined in the profile. These profiles will be used if the configuration values are not provided during the Deployment time. 
+Use an existing deployment profile, called Deployment. It is the default profile that comes with the application. You can use it to build the immutable war file. In this approach, the default values for all properties are already defined in the profile. These profiles will be used if the configuration values are not provided during the Deployment time.
 
 :::note
 However, using this approach can leave users confused about whether configured values are picked up during the application start.
@@ -62,7 +63,7 @@ Create a new profile called “immutable” and use it to build the war file. We
 
 ### Using Custom Placeholders
 
-You can use custom placeholders in the profile file. For example, if the profile property name is `DB.hrdb.password`, you can map the property name to your own custom property name such as `db_password`, you should mention the same as `${db_password}`. 
+You can use custom placeholders in the profile file. For example, if the profile property name is `DB.hrdb.password`, you can map the property name to your own custom property name such as `db_password`, you should mention the same as `${db_password}`.
 
 :::note
 Assuing you are using the sample `HRDB` database in the following example.
@@ -86,7 +87,7 @@ When the immutable war file gets deployed with placeholders, the placeholder val
 
 ### Using Environment Properties
 
-The configuration values for the property placeholders can be provided using the Operating System specific environment properties. This will override the property values already present in the war file. 
+The configuration values for the property placeholders can be provided using the Operating System specific environment properties. This will override the property values already present in the war file.
 
 For example, if you want to set the database password through the environment property, you need to add the following property to the OS Environment.
 
@@ -120,7 +121,7 @@ EXPORT hrdb.password=mypassword
 
 ### Using System Properties
 
-The configuration values for the property placeholders can be provided using the Java System properties using the “-Dkey=value” pairs. This will override the property values already present in the war file. 
+The configuration values for the property placeholders can be provided using the Java System properties using the “-Dkey=value” pairs. This will override the property values already present in the war file.
 
 For example, if you want to set the database password through the system property, you need to add the following property to the Java command of the respective web server.
 
@@ -146,11 +147,11 @@ To address the following cases, WaveMaker introduced Custom Property Sources, su
 
 Note that Environment Properties and System Properties do not support the following cases.
 
-### Configuration Managed in a Database 
+### Configuration Managed in a Database
 
 In some cases, the developer wants to retrieve the configuration from a database and use it as an application configuration when the application starts.
 
-### Configuration through an API 
+### Configuration through an API
 
 In some cases, you may have to call an external API to retrieve the application's configuration.
 
@@ -180,7 +181,7 @@ public Object getProperty(String key) {
 	//read the password from system properties and decrypt the value
 	String encPassword = System.getProperty(“hrdb.password”);
             String password  = MyEncryptionUtils.decrypt(encPassword);
-	return password;	
+	return password;
                   }
       return null; //return null if you cannot handle a property...
 }
@@ -240,12 +241,12 @@ In the above sample implementation, you override the property value for the keys
 Define the bean `user-spring.xml` file as given below:
 
 ```java
-<bean class=”my.app.package.MyAppDynamicPropertySource ” />
+<bean className=”my.app.package.MyAppDynamicPropertySource ” />
 ```
 
 ### Points to Note
 
-1. When configured, this property source is registered as the first property source in the spring environment and this property source. 
+1. When configured, this property source is registered as the first property source in the spring environment and this property source.
 2. The property source's `getProperty()` may be called multiple times for the same property key every time it uses it. Hence it would be best if you cached the properties in case the property values are retrieved using a database or an API request.
 3. Since this property source starts after the spring context is initialized, you can Autowire any spring-managed beans and use them in your implementation.
 4. Since this property source is started or called after the spring context is initialized, you will not be called for properties required in the Bootstrap process.
@@ -257,15 +258,15 @@ Both the property sources will help in dynamically assigning the configuration v
 1. Bootstrap should be used to pass the values required when the application starts. In contrast, the Dynamic property source should be used only when the configuration values could be different based on the caller context.
 2. Both of these property sources can be invoked multiple times for the same property key. Hence you need to cache those values and use them in subsequent calls.
 3. When both property sources are configured, the priority is given to the Dynamic Property Source, then the Bootstrap Property. Following that, precedence is given to the System and Environment Variables, respectively.
-4. If the property source is unaware of the key, it should `return null` for the given property to check the property in the next available source, similar to the following order. 
-    1. Dynamic Property Source
-    2. BootStrap
-    3. System Property
-    4. Environment Variable.
+4. If the property source is unaware of the key, it should `return null` for the given property to check the property in the next available source, similar to the following order.
+   1. Dynamic Property Source
+   2. BootStrap
+   3. System Property
+   4. Environment Variable.
 
 ## Consuming Properties in Java Services
 
-In this section, you will understand how to use configuration properties in the application Java code. 
+In this section, you will understand how to use configuration properties in the application Java code.
 
 There are two ways to do it.
 

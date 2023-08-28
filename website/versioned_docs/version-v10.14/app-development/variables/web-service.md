@@ -3,6 +3,7 @@ title: "Service Variable"
 id: "web-service"
 sidebar_label: "Service Variable"
 ---
+
 ---
 
 For every service imported into the app, the APIs exposed by the service can be accessed to perform many operations with it. A variable needs to be created to invoke the service and store the results of that invocation. The Variable operations are restricted by the offerings of the underlying service.
@@ -99,15 +100,15 @@ You will be directed to the Variables page, with the new variable listed. You ca
 
 ## Properties
 
-| **Property** | **Description** |
-| --- | --- |
-| **Behavior** |
-| Update data on input change | If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable. |
-| Request data on page load | If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load. |
-| In Flight Behavior | This property determines the behavior when a call is fired through the variable with the previous call still pending. Variable queues all these calls, waits for the previous call completion and then based on the value of the `inFlightBehavior` property, decides what to do with all the queued calls:   - doNotExecute - all the queued calls will be discarded,  - executeAll - all the calls will be triggered one by one, or  - executeLast - only the last call is triggered and the rest are discarded, this is the default behavior|
-| **Spinner** |
-| Spinner Context | This property specifies on which UI widget the spinner should show. Leave empty if no spinner required. |
-| Spinner Message | The message to be displayed below the spinner. Leave empty if no message is required below the spinner. Note: If multiple variables are fired then the spinner messages will be displayed as a list below a single spinner. |
+| **Property**                | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Behavior**                |
+| Update data on input change | If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable.                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Request data on page load   | If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load.                                                                                                                                                                                                                                                                                                                                                                                                              |
+| In Flight Behavior          | This property determines the behavior when a call is fired through the variable with the previous call still pending. Variable queues all these calls, waits for the previous call completion and then based on the value of the `inFlightBehavior` property, decides what to do with all the queued calls: - doNotExecute - all the queued calls will be discarded, - executeAll - all the calls will be triggered one by one, or - executeLast - only the last call is triggered and the rest are discarded, this is the default behavior |
+| **Spinner**                 |
+| Spinner Context             | This property specifies on which UI widget the spinner should show. Leave empty if no spinner required.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Spinner Message             | The message to be displayed below the spinner. Leave empty if no message is required below the spinner. Note: If multiple variables are fired then the spinner messages will be displayed as a list below a single spinner.                                                                                                                                                                                                                                                                                                                 |
 
 ## Events
 
@@ -126,7 +127,7 @@ To learn how to implement Events, see [Events Documentation](/learn/app-developm
 
 Few Methods are exposed for Variables which can be used for achieving more control and accessing extra functionality. Listed here are the same.
 
-<table class="reference notranslate"><tbody><tr><td><a href="#invoke">invoke</a></td><td><a href="#cancel">cancel</a></td></tr><tr><td><a href="#getData">getData</a></td><td><a href="#clearData">clearData</a></td><td><a href="#setInput">setInput</a></td></tr></tbody></table>
+<table className="reference notranslate"><tbody><tr><td><a href="#invoke">invoke</a></td><td><a href="#cancel">cancel</a></td></tr><tr><td><a href="#getData">getData</a></td><td><a href="#clearData">clearData</a></td><td><a href="#setInput">setInput</a></td></tr></tbody></table>
 
 ## `invoke()`
 
@@ -135,6 +136,7 @@ This method updates the Variable’s dataSet with new data by making a call to t
 #### `Parameters`
 
 **options** (object) - It can have fields as
+
 - `inputFields` (key-value pair of inputData)
 - `page` (pagination for Query Service Variable)
 - `size` (pagination for Query Service Variable)
@@ -145,9 +147,11 @@ This method updates the Variable’s dataSet with new data by making a call to t
 **error** (callback)
 
 #### `Return Value`
+
 none
 
 #### Example
+
 ```
 var sv = Page.Variables.[variable_name];
     sv.invoke({
@@ -166,16 +170,18 @@ var sv = Page.Variables.[variable_name];
 
 ## `cancel()`
 
-
 This method aborts the current inflight variable request.
 
 #### `Parameters`
-none 
+
+none
 
 #### `Return Value`
+
 none
 
 #### Example
+
 ```
 Page.Variables.[variable_name].cancel();
 ```
@@ -185,9 +191,11 @@ Page.Variables.[variable_name].cancel();
 This method returns the variable’s dataSet, i.e., the current data stored in the variable through the listrecords method.
 
 #### `Parameters`
+
 none
 
 #### `Return Value`
+
 Array of record objects
 
 #### Example
@@ -195,7 +203,7 @@ Array of record objects
 ```
 var result = Page.Variables.[variable_name].getData();
 console.log("result:", result);
-// Output: 
+// Output:
 // result: {data in the variable}
 ```
 
@@ -204,9 +212,11 @@ console.log("result:", result);
 This method clears the variable dataSet.
 
 #### Parameters
+
 none
 
 #### Return Value
+
 Updated(empty) dataSet of the variable
 
 #### Example
@@ -214,7 +224,7 @@ Updated(empty) dataSet of the variable
 ```
 var result = Page.Variables.[variable_name].clearData();
 console.log("result:", result);
-// Output: 
+// Output:
 // result: {}
 ```
 
@@ -225,31 +235,38 @@ This method sets the input field value against the specified field(key).
 #### Parameters
 
 - **key**(string): name of the input field
-- **value**(*): value for the input field
+- **value**(\*): value for the input field
 
 #### Return Value
+
 Updated inputFields object
 
 #### Example
+
 ```
 var sv = Page.Variables.[variable_name];
     sv.setInput("fname", "Peter");
     sv.setInput("lname", "Parker");
     sv.invoke();
 ```
+
 ## `setInput(object)`
 
 This method can also be used to set all the specified key-value pairs as input fields in the variable.
 
 #### `Parameters`
+
 ```
-inputData(object) object, or 
+inputData(object) object, or
 key-value pairs {“key”: “value”,…}
 ```
+
 #### `Return Value`
+
 Updated `inputFields` object
 
 #### Example
+
 ```
 var sv = Page.Variables.[variable_name];
     sv.setInput({

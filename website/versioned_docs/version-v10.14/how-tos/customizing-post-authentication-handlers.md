@@ -37,10 +37,11 @@ After creating the package structure, the following interface needs to be imple
 
 ```
 public interface WMAuthenticationSuccessHandler {
-void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, 
+void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                              WMAuthentication authentication) throws IOException, ServletException;
 }
 ```
+
 For example, the following `MyCustomAuthenticationSuccessHandler` fetches `lastAccessedTime` of the authenticated user and sets it in the custom attributes.
 
 Change the package name according to your requirements.
@@ -54,16 +55,16 @@ import com.wavemaker.runtime.security.WMAuthentication;
 public class MyCustomAuthenticationSuccessHandler implements WMAuthenticationSuccessHandler {
 
  /**
-  *It's a database service, which contains user information. 
+  *It's a database service, which contains user information.
   */
   @Autowired
-  private UserInfoService userInfoService; 
+  private UserInfoService userInfoService;
 
   @Override
-   public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, 
+   public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                                        WMAuthentication authentication) throws IOException, ServletException {
 
-        UsernamePasswordAuthenticationToken authenticationToken = 
+        UsernamePasswordAuthenticationToken authenticationToken =
                (UsernamePasswordAuthenticationToken)authentication.getAuthenticationSource();
 
         String username = authenticationToken .getPrincipal();
@@ -77,28 +78,32 @@ public class MyCustomAuthenticationSuccessHandler implements WMAuthenticationSuc
        /**
         * Adding one more attribute which with scope SERVER_ONLY
         */
-        authentication.addAttribute(“lastValidatedTime” , System.currentTimeMillis() , 
+        authentication.addAttribute(“lastValidatedTime” , System.currentTimeMillis() ,
                                 Attribute.AttributeScope.SERVER_ONLY);
 
    }
 }
 ```
+
 ### Custom Handler Declaration
 
 Declare the above-created custom post-authentication success handler implementation (along with the package name) in `project-user-spring.xml`.
+
 ```
-<bean id="customAuthenticationSuccessHandler" 
-      class="<package_name>.MyCustomAuthenticationSuccessHandler"/>
+<bean id="customAuthenticationSuccessHandler"
+      className="<package_name>.MyCustomAuthenticationSuccessHandler"/>
 ```
+
 At app runtime, WaveMaker will automatically trigger these custom handlers. Follow the above approach for adding multiple success handlers.
 
 ## WMAuthentication Class
 
 `WMAuthentication` wrapper class holds authentication information like `principal`, `loginTime`, `userId` and the original authentication object. This wrapper class has the following structure.
+
 ```
 public class WMAuthentication extends AbstractAuthenticationToken {
    private Map<String, Attribute> attributes = new HashMap<>();
-   private String principal;    
+   private String principal;
    private long loginTime;
    private String userId;
    @JsonIgnore
@@ -137,12 +142,15 @@ public class WMAuthentication extends AbstractAuthenticationToken {
    }
 }
 ```
+
 You can add custom attributes using the `addAttribute` method. You need to implement methods in the `WMAuthenticationSuccessHandler` interface and call the below method of `WMAuthentication` object to add any custom attributes.
+
 ```
 public void addAttribute(String key, Object value, Attribute.AttributeScope scope) {
     attributes.put(key, new Attribute(scope, value));
 }
 ```
+
 ### Adding Custom Attributes
 
 You can attach additional information to the logged in user using the custom attribute. These attribute are made available in the logged-in user context and they can be retrieved in both UI & backend as per your needs.
@@ -150,6 +158,7 @@ You can attach additional information to the logged in user using the custom att
 ### Attribute Class
 
 Each attribute is associated with a key, value, and scope.
+
 ```
 public class Attribute implements Serializable{
    private AttributeScope scope;
@@ -176,9 +185,11 @@ public class Attribute implements Serializable{
    }
 }
 ```
+
 ### Attribute Scope
 
 `AttributeScope` determines whether the attribute is server only property or can be visible to both client and server. You can filter out the custom attributes from being visible to the client by setting `Attribute.AttributeScope` property.
+
 ```
 public enum AttributeScope {
    /*
@@ -191,14 +202,17 @@ public enum AttributeScope {
    SERVER_ONLY;
 }
 ```
+
 ### Attaching to the Logged-in User
 
 You can add custom attributes using the `addAttribute` method. You need to implement methods in the `WMAuthenticationSuccessHandler` interface and call the below method of `WMAuthentication` object to add any custom attributes.
+
 ```
 public void addAttribute(String key, Object value, Attribute.AttributeScope scope) {
     attributes.put(key, new Attribute(scope, value));
 }
 ```
+
 ## Post-Authentication Redirection Handler
 
 Post authentication, the default Redirection Handler redirects to the appropriate [landing page](/learn/app-development/app-security/login-configuration/#setting-landing-page) based upon the logged-in users' role.
@@ -206,16 +220,19 @@ Post authentication, the default Redirection Handler redirects to the appropriat
 To customize the redirection, implement the following interface and declare as a bean with id: `wmAuthenticationSuccessRedirectionHandler` in `project-user-spring.xml`.
 
 ### Interface to implement
+
 ```
 public interface WMAuthenticationRedirectionHandler {
-void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, 
+void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                              WMAuthentication authentication) throws IOException, ServletException;
 }
 ```
+
 ### Handler declaration
 
 Declare the following bean in the `project-user-spring.xml`.
+
 ```
-<bean id="wmAuthenticationSuccessRedirectionHandler" 
-      class="<package_name>.MyAuthenticationRedirectionHandler"/>
+<bean id="wmAuthenticationSuccessRedirectionHandler"
+      className="<package_name>.MyAuthenticationRedirectionHandler"/>
 ```

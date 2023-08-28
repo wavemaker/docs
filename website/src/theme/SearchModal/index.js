@@ -305,7 +305,7 @@ export function DocSearchModal(_ref) {
     }, []);
     return React.createElement("div", _extends({
         ref: containerRef,
-        style: {width: '100%', height:'100%'}
+        style: { width: '100%', height: '100%' }
     }, {
         onMouseDown: function onMouseDown(event) {
             if (event.target === event.currentTarget) {
@@ -328,9 +328,10 @@ export function DocSearchModal(_ref) {
     }))), /*#__PURE__*/React.createElement("div", {
         className: "DocSearch-Dropdown",
         ref: dropdownRef
-    }, /*#__PURE__*/state.query != '' && state.collections.length > 0 ? React.createElement(ScreenState, _extends({}, autocomplete, {
+    }, /*#__PURE__*/React.createElement(ScreenState, _extends({}, autocomplete, {
         indexName: indexName,
         state: state,
+        isOpen: _ref.isOpen,
         hitComponent: hitComponent,
         resultsFooterComponent: resultsFooterComponent,
         disableUserPersonalization: disableUserPersonalization,
@@ -342,5 +343,5 @@ export function DocSearchModal(_ref) {
             saveRecentSearch(item);
             onClose();
         }
-    })) : React.createElement("div", null))));
+    })))));
 }

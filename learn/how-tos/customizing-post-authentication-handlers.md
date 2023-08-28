@@ -37,7 +37,7 @@ After creating the package structure, the following interface needs to be imple
 
 ```java
 public interface WMAuthenticationSuccessHandler {
-void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, 
+void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                              WMAuthentication authentication) throws IOException, ServletException;
 }
 ```
@@ -55,16 +55,16 @@ import com.wavemaker.runtime.security.WMAuthentication;
 public class MyCustomAuthenticationSuccessHandler implements WMAuthenticationSuccessHandler {
 
  /**
-  *It's a database service, which contains user information. 
+  *It's a database service, which contains user information.
   */
   @Autowired
-  private UserInfoService userInfoService; 
+  private UserInfoService userInfoService;
 
   @Override
-   public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, 
+   public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                                        WMAuthentication authentication) throws IOException, ServletException {
 
-        UsernamePasswordAuthenticationToken authenticationToken = 
+        UsernamePasswordAuthenticationToken authenticationToken =
                (UsernamePasswordAuthenticationToken)authentication.getAuthenticationSource();
 
         String username = authenticationToken .getPrincipal();
@@ -78,20 +78,22 @@ public class MyCustomAuthenticationSuccessHandler implements WMAuthenticationSuc
        /**
         * Adding one more attribute which with scope SERVER_ONLY
         */
-        authentication.addAttribute(“lastValidatedTime” , System.currentTimeMillis() , 
+        authentication.addAttribute(“lastValidatedTime” , System.currentTimeMillis() ,
                                 Attribute.AttributeScope.SERVER_ONLY);
 
    }
 }
 ```
+
 ### Custom Handler Declaration
 
 Declare the above-created custom post-authentication success handler implementation (along with the package name) in `project-user-spring.xml`.
 
 ```java
-<bean id="customAuthenticationSuccessHandler" 
-      class="<package_name>.MyCustomAuthenticationSuccessHandler"/>
+<bean id="customAuthenticationSuccessHandler"
+      className="<package_name>.MyCustomAuthenticationSuccessHandler"/>
 ```
+
 At app runtime, WaveMaker will automatically trigger these custom handlers. Follow the above approach for adding multiple success handlers.
 
 ## WMAuthentication Class
@@ -101,7 +103,7 @@ At app runtime, WaveMaker will automatically trigger these custom handlers. Foll
 ```java
 public class WMAuthentication extends AbstractMutableAuthoritiesAuthenticationToken {
    private Map<String, Attribute> attributes = new HashMap<>();
-   private String principal;    
+   private String principal;
    private long loginTime;
    private String userId;
    @JsonIgnore
@@ -229,15 +231,16 @@ To customize the redirection, implement the following interface and declare as a
 
 ```java
 public interface WMAuthenticationRedirectionHandler {
-void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, 
+void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                              WMAuthentication authentication) throws IOException, ServletException;
 }
 ```
+
 ### Handler declaration
 
 Declare the following bean in the `project-user-spring.xml`.
 
 ```xml
-<bean id="wmAuthenticationSuccessRedirectionHandler" 
-      class="<package_name>.MyAuthenticationRedirectionHandler"/>
+<bean id="wmAuthenticationSuccessRedirectionHandler"
+      className="<package_name>.MyAuthenticationRedirectionHandler"/>
 ```

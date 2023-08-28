@@ -13,45 +13,50 @@ document.addEventListener('DOMContentLoaded', function () {
     head.appendChild(link);
 
     /* Create and Parse a HTML string that to be injected into the header */
-    let dropdown_element = new DOMParser().parseFromString(`<li class="dropdown">
+    let dropdown_element = new DOMParser().parseFromString(`<li className="dropdown">
         <a href="#" role="button" id="dropdown">Docs</a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="/learn/documentation-reference" target="_self">Get started</a>
-            <a class="dropdown-item" href="/learn/app-development/widgets/widget-library" target="_self">Widgets</a>
-            <a class="dropdown-item" href="/learn/howtos-documents" target="_self">How-to</a>
-            <a class="dropdown-item" href="/learn/on-premise/welcome" target="_self">Enterprise</a>
-            <a class="dropdown-item" href="/learn/wavemaker-release-notes" target="_self">Releases</a>
-            <a class="dropdown-item" href="/learn/blog/" target="_self">Blog</a>
-            <a class="dropdown-item" href="https://www.wavemaker.com/get-started/" target="_blank">Sign-in</a>
+        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a className="dropdown-item" href="/learn/documentation-reference" target="_self">Get started</a>
+            <a className="dropdown-item" href="/learn/app-development/widgets/widget-library" target="_self">Widgets</a>
+            <a className="dropdown-item" href="/learn/howtos-documents" target="_self">How-to</a>
+            <a className="dropdown-item" href="/learn/on-premise/welcome" target="_self">Enterprise</a>
+            <a className="dropdown-item" href="/learn/wavemaker-release-notes" target="_self">Releases</a>
+            <a className="dropdown-item" href="/learn/blog/" target="_self">Blog</a>
+            <a className="dropdown-item" href="https://www.wavemaker.com/get-started/" target="_blank">Sign-in</a>
         </div>
     </li>`, 'text/html').body.firstChild;
 
     let host_element = document.querySelector('ul.nav-site.nav-site-internal');
 
     /* Append the HTML as first child into the unordered list */
-    host_element.insertBefore(dropdown_element, host_element.childNodes[0]);
+    host_element && host_element.insertBefore(dropdown_element, host_element.childNodes[0]);
 
     /* Add click event to the element to toggle the dropdown options */
-    host_element.childNodes[0].addEventListener('click', function(e){
+    host_element && host_element.childNodes[0].addEventListener('click', function (e) {
         e.stopPropagation();
         let dropdown_container = document.querySelector('.dropdown .dropdown-menu');
-        if(e.target.attributes.id && e.target.attributes.id.value === 'dropdown'){
-            if(window.getComputedStyle(dropdown_container, null).getPropertyValue('display') === 'none'){
-                dropdown_container.style.display = 'block';
-            }else{
+        if (dropdown_container) {
+            if (e.target.attributes.id && e.target.attributes.id.value === 'dropdown') {
+                if (window.getComputedStyle(dropdown_container, null).getPropertyValue('display') === 'none') {
+                    dropdown_container.style.display = 'block';
+                } else {
+                    dropdown_container.style.display = 'none';
+                }
+            } else {
                 dropdown_container.style.display = 'none';
             }
-        }else{
-            dropdown_container.style.display = 'none';
         }
     });
 
     /* Add click event to the document to hide the dropdown when clicked outside of it */
-    document.addEventListener('click', function(e){
-        document.querySelector('.dropdown .dropdown-menu').style.display = 'none';
+    document.addEventListener('click', function (e) {
+        let menu = document.querySelector('.dropdown .dropdown-menu');
+        if (menu) {
+            menu.style.display = 'none';
+        }
     });
 
-    if(window.location.pathname.indexOf("/learn/blog") !== -1) {
-        $(".navGroup h3.navGroupCategoryTitle").html('<h3 class="navGroupCategoryTitle" style="display: inline-block">All Blog Posts</h3><a style="padding-left: 10px;" href="https://docs.wavemaker.com/learn/blog/feed.xml" title="WaveMaker Docs Blog RSS Feed" target="_blank"><i class="fa fa-2x fa-rss" aria-hidden="true"></i></a>');
+    if (window.location.pathname.indexOf("/learn/blog") !== -1) {
+        $(".navGroup h3.navGroupCategoryTitle").html('<h3 className="navGroupCategoryTitle" style="display: inline-block">All Blog Posts</h3><a style="padding-left: 10px;" href="https://docs.wavemaker.com/learn/blog/feed.xml" title="WaveMaker Docs Blog RSS Feed" target="_blank"><i className="fa fa-2x fa-rss" aria-hidden="true"></i></a>');
     }
 });
