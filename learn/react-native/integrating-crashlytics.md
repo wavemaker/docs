@@ -1,7 +1,7 @@
 ---
-title: "Integrating Crashlystics"
-id: "integrating-crashlystics"
-sidebar_label: "Crashlystics"
+title: "Integrating Crashlytics"
+id: "integrating-crashlytics"
+sidebar_label: "Crashlytics"
 ---
 ---
 import crashLogs from '/learn/assets/CrashLogsAttributesAndErrorReports.png';
