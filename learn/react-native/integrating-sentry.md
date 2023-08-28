@@ -8,15 +8,27 @@ import crashLogs from '/learn/assets/CrashLogsAndErrors.png';
 
 Sentry is a real-time error tracking and monitoring platform used by software developers to identify and diagnose issues in their applications. It's designed to help development teams catch and resolve errors, exceptions, and other issues that can occur in software systems. By tracking errors and providing insights into their causes, Sentry enables developers to improve the stability and reliability of their applications.
 
-Here's a more detailed breakdown of what Sentry does:
+Here is what Sentry can do:
 
-**1. Error Tracking:** Sentry captures errors, exceptions, and crashes that occur within applications. It collects detailed information about the error, including stack traces, user context, environment details, and more.
+- Identify and fix bugs quickly and efficiently.
+- Prioritize their efforts and focus on the most critical problems.
+- Improve the user experience by reducing the number of crashes and errors.
+- Collect feedback from users about their experiences with the app.
 
-**2. Real-time Alerts:** When an error occurs, Sentry can send real-time alerts to developers, notifying them of the issue. This enables quick responses to critical errors, helping to reduce downtime and improve the user experience.
+#### Crash Reporting
+Sentry offers a robust crash reporting solution that helps developers track and analyze crashes, errors, and exceptions occurring in their applications. This feature is crucial for identifying and addressing issues that can negatively impact user experience and application stability. 
 
-**3. Contextual Information:** Sentry provides context around errors by capturing data such as user actions leading up to the error, the version of the application being used, and other relevant session information. This context is crucial for understanding the circumstances in which the error occurred.
+#### Error Tracking
+Sentry captures errors, exceptions, and crashes that occur within applications. It collects detailed information about the error, including stack traces, user context, environment details, and more.
 
-**4. Performance Monitoring:** In addition to error tracking, Sentry offers performance monitoring capabilities. It helps identify performance bottlenecks, slow transactions, and other issues that could affect the application's responsiveness and user experience.
+#### Real-time Alerts
+When an error occurs, Sentry can send real-time alerts to developers, notifying them of the issue. This enables quick responses to critical errors, helping to reduce downtime and improve the user experience.
+
+#### Contextual Information
+Sentry provides context around errors by capturing data such as user actions leading up to the error, the version of the application being used, and other relevant session information. This context is crucial for understanding the circumstances in which the error occurred.
+
+#### Performance Monitoring
+In addition to error tracking, Sentry offers performance monitoring capabilities. It helps identify performance bottlenecks, slow transactions, and other issues that could affect the application's responsiveness and user experience.
 
 
 ## Why sentry-expo?
@@ -104,7 +116,7 @@ Here, we created two buttons, one for the test log and another for crashing the 
 The following is the code snippet for the above mockup:
 
 ```javascript
-const Sentry = App.getDependency('sentry-expo')
+const Sentry = require('sentry-expo')
 Page.onReady = function() {
     Sentry.init({
         enabled: true,
