@@ -6,44 +6,53 @@ sidebar_label: "Crashlystics"
 ---
 import crashLogs from '/learn/assets/CrashLogsAttributesAndErrorReports.png';
 
-Crash reporting services like Crashlytics are essential tools for modern app development. They provide real-time error monitoring, insightful crash reports, and streamlined debugging processes. By monitoring for issues and proactively addressing them, developers can create a more stable and reliable app environment, leading to higher user satisfaction and increased app success.
+Crashlytics is a crash reporting and analysis tool provided by Firebase. Crashlytics helps developers track and understand crashes that occur in their mobile applications. It provides insights into the causes of crashes and allows developers to take action to improve the stability of their apps, which essentially contributes to higher user satisfaction and increased app success.
 
-Here are some of the benefits of using crash reporting services:
+Here is what Crashlytics can do:
 
-- Identify and fix bugs quickly and efficiently.
-- Prioritize their efforts and focus on the most critical problems.
-- Improve the user experience by reducing the number of crashes and errors.
-- Collect feedback from users about their experiences with the app.
+#### Crash Reporting
 
-## What does it do
+Crashlytics monitors your mobile app in real-time and captures crash reports when the app encounters an unexpected error or crashes. When a crash occurs, Crashlytics collects information about the crash, including the stack trace, device information, app version, and more.
 
-Crashlytics is a crash reporting and analysis tool provided by Firebase. Crashlytics helps developers track and understand crashes that occur in their mobile applications. It provides insights into the causes of crashes and allows developers to take action to improve the stability of their apps. Here's what Crashlytics does:
+#### Error Insights
 
-**1. Crash Reporting:** Crashlytics monitors your mobile app in real-time and captures crash reports when the app encounters an unexpected error or crashes. When a crash occurs, Crashlytics collects information about the crash, including the stack trace, device information, app version, and more.
+Crashlytics provides detailed crash reports that help you understand the circumstances under which the crash occurred. This includes information about the sequence of events leading up to the crash, the specific lines of code that were executing, and any variables involved.
 
-**2. Error Insights:** Crashlytics provides detailed crash reports that help you understand the circumstances under which the crash occurred. This includes information about the sequence of events leading up to the crash, the specific lines of code that were executing, and any variables involved.
+#### Real time Alerts
 
-**3. Real time Alerts:** Crashlytics can send you real-time alerts when new crashes are detected in your app. This allows you to be aware of issues as they arise and respond quickly to minimize the impact on users.
+Crashlytics can send you real-time alerts when new crashes are detected in your app. This allows you to be aware of issues as they arise and respond quickly to minimize the impact on users.
 
-**4. Custom Logs:** In addition to crash reports, Crashlytics allows you to log custom events and data. This can be helpful for tracking user actions, debugging, and gaining insights into the usage patterns of your app.
+#### Custom Logs
+
+In addition to crash reports, Crashlytics allows you to log custom events and data. This can be helpful for tracking user actions, debugging, and gaining insights into the usage patterns of your app.
+
+## Using Firebase Crashlytics
+
+Follow the steps below to integrate Crashlytics into a WaveMaker application.
+
+### Adding Crashlytics Plugin to an App​
+
+Crashlytics plugins can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
+on how to install the plugin.
 
 
-## How to use Firebase Crashlytics in WaveMaker
+1. Install and setup the app module.
 
-### Adding Crashlytics Plugins to your WaveMaker App​
-
-Crashlytics plugins can be installed in few steps in WaveMaker. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
-on how to install a plugins.
-
-```javascript
-# Install & setup the app module
+```
 npm i @react-native-firebase/app
+```
 
-# Install the Crashlytics module
+2. Install the Crashlytics module
+
+```
 npm i @react-native-firebase/crashlytics
 ```
 
-Once installed, you need to add the  `@react-native-firebase/app`  and  `@react-native-firebase/crashlytics` config plugin to your `app.json` or `app.config.json`.
+3. Once installed, you need to add the following config plugin to your `app.json` or `app.config.json`.
+    - `@react-native-firebase/app`
+    - `@react-native-firebase/crashlytics` 
+
+### Adding Plugin to App JSON
 
 **`app.json`**
 
@@ -59,7 +68,9 @@ Once installed, you need to add the  `@react-native-firebase/app`  and  `@react-
 }
 ```
 
-Also, you need to create `firebase.json` file in the root directory of your expo app, with these Crashlytics-related keys set to these specific values: 
+### Create Firebase JSON in Expo
+
+Create `firebase.json` file in the root directory of your Expo app with the Crashlytics-related keys set to the following values: 
 
 **`firebase.json`**
 
@@ -75,7 +86,9 @@ Also, you need to create `firebase.json` file in the root directory of your expo
 }
 ```
 
-Now, add `prebuild` script to `package.json`
+### Add PreBuild Script
+
+Add `prebuild` script to `package.json`.
 
 ```javascript
 {
@@ -86,11 +99,11 @@ Now, add `prebuild` script to `package.json`
 }
 ```
 
-## Integrating Crashlytics plugin in WaveMaker app
+## Integrating Crashlytics Plugin in App
 
-### Crash Logs,  Attributes and Error Reports
+### Crash Logs Attributes and Error Reports
 
-There are various methods to set attributes for the crash report, in order to provide analytics for crashes and help you review them. Even if you catch unexpected errors, you can report that error to  Crashlytics using the `recordError`.
+You can use methods to set attributes for the crash report, which enables analytic data when crash occurs. This helps you review them. In addition, you can report errors to Crashlytics using the `recordError` when you catch unexpected errors.
 
 <img src={crashLogs} style={{width:"35%"}} />
 
@@ -126,13 +139,15 @@ Page.errorreportsTap = function ($event, widget) {
 };
 ```
 
-To run your app locally, run the prebuild command and then compile the app
+### Run App
+
+To run your app locally, run the prebuild command.
 
 ```javascript
 npm run prebuild
 ```
 
-Then,
+Then, compile the app using the following command.
 
 ```javascript
 npm run android
