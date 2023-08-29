@@ -1,0 +1,46 @@
+---
+title: "How to customise breakpoints for widths of devices listed in show in devices of each widget"
+id: "customise-breakpoints-for-widths-of-show-in-devices"
+sidebar_label: "Customise breakpoints for show in devices"
+---
+---
+### Configure a widget in different devices 
+1. Drag and drop a Data Table widget on the canvas.
+
+![WebPartialContainer](/learn/assets/webPartialContainer.png)
+
+2. For web view, go to the Device tab and choose a **Show in device** property as **Laptop\Tablet Landscape** and **Large Screen**.
+
+![WebPartialDeviceConfiguration](/learn/assets/webPartialDeviceConfig.png)
+
+3. Preview the App. The Laptop view shows us the Data Table.
+
+![WebView](/learn/assets/webPartialPreview.png)
+
+4.For mobile view, go to the Device tab and choose **Show in device** as Mobile and Tablet Portrait.
+
+![MobilePartialDeviceConfiguration](/learn/assets/mobilePartialDeviceConfig.png)
+    
+7. Preview the App. The Mobile view shows us the Data Table.
+   
+![MobileView](/learn/assets/mobilePartialPreview.png)
+
+8. Current default values for the breakpoints of the devices.
+
+![WebConfig](/learn/assets/breakpoints.png)
+
+### Customize the breakpoints
+
+1. The breakpoint widths of these devices can be configured through css variables in app.css file or in the variable.less file of the theme folder.
+This block of css needs to be added at the beginning of the file as this applies on the root element(html tag).
+
+```css  
+:root {
+–screen-xs: 400px;
+–screen-sm: 500px;
+–screen-md: 992px;
+–screen-lg: 1250px;
+–screen-lg-tab-landscape: 1050px;
+–screen-lg-tab-portrait: 900px;
+}
+```
