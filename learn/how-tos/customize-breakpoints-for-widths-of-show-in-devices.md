@@ -1,7 +1,7 @@
 ---
-title: "How to customise breakpoints for widths of devices listed in show in devices of each widget"
-id: "customise-breakpoints-for-widths-of-show-in-devices"
-sidebar_label: "Customise breakpoints for show in devices"
+title: "How to customize breakpoints for widths of devices listed in show in devices of each widget"
+id: "customize-breakpoints-for-widths-of-show-in-devices"
+sidebar_label: "Customize breakpoints for show in devices"
 ---
 ---
 ### Configure a widget in different devices 
