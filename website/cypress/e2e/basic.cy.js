@@ -69,32 +69,8 @@ describe("Sign-in button take to right places", function () {
   it("Verifies Get Started navigation ", function () {
     cy.get('.navbar__items > a:last-child')
       .contains("Get Started").should('have.attr', 'href').then((href) => {
-        cy.origin(href, () => {
-          cy.visit('/', { 'failOnStatusCode': false });
-          cy.get(".ct-headline").contains("Start your free trial now")
-            .end();
-        });
-      })
+        cy.request(href).its('body').should('include', 'Start your free trial now').end();
+      });
   })
 
-  // it("Verifies Footer navigation ", function () {
-  //   let footer = cy.get('.extra-links > ul > li')
-  //   footer.each((ele, index) => {
-  //     cy.get('.extra-links > ul > li')[index].find('a').should('have.attr', 'href').then((href) => {
-  //       cy.window().then((win) => {
-  //         cy.stub(win, 'open').as('windowOpen');
-  //         cy.origin(href, () => {
-  //           cy.visit('/', { 'failOnStatusCode': false });
-  //           cy.get("h1[class^='ct-headline']").each((element, ind) => {
-  //             if (ind == 1) {
-  //               cy.wrap(element).should('be.visible').contains("Talk To Us for Pricing")
-  //                 .end();
-  //             }
-  //           });
-  //           cy.go('back');
-  //         })
-  //       })
-  //     })
-  //   })
-  // })
 });
