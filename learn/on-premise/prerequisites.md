@@ -167,7 +167,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
         <ul>
           <li>Static IP</li>
           <li>Ports to be Opened on StudioWorkspace Instance / AppDeployment Instance for Access from Platform Instance </li>
-              <li>Ports: 22, 2375, 80, 5000, 8100, 9101, 9102, 9100, 9404,2200-2299, 8001-8099, 3300-3399, 9500-9599</li>
+              <li>Ports: 22, 2375, 80, 5000, 8100, 8888, 9101, 9102, 9100, 9404,2200-2299, 8001-8099, 3300-3399, 9500-9599</li>
             </ul>
       </td>
     </tr>
