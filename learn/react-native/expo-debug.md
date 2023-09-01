@@ -10,8 +10,8 @@ Mobile app developers can web preview their apps using the Preview button. To se
 ## Prerequisites
 
 1. For Windows, install [Git Bash](https://gitforwindows.org/) and use it as the terminal window. 
-2. Install Node 14.5.5
-3. Install npm 7
+2. Install Node 18.16.1
+3. Install npm 9.5.1
 4. Install wm-reactnative-cli in your machine using below command
 
 ```shell
@@ -53,7 +53,7 @@ wm-reactnative run expo ${APP_PREVIEW_URL}
 
 ![expo portal](/learn/assets/expo-portal-qr-code.11.2.2.png)
 
-6. If you have iOS, open the Safari browser in your iPhone and type the exp url that appears on top of the QR code. Expo Go will open automatically.
+6. If you have iOS, open the Safari browser in your iPhone and type the exp url that appears on bottom of the QR code. Expo Go will open automatically.
 
 ![expo portal ios url](/learn/assets/expo-portal-ios-link.11.2.2.png)
 
