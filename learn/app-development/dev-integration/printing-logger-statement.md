@@ -8,7 +8,7 @@ Logs are statements written to record events or any activity in an application. 
 
 ## Printing Logger Statement in Java Service using SLF4J
 
-The SLF4J (Simple Logging Facade for Java) logging framework, with its simple and consistent API, provides a flexible and efficient way to print logger statements in Java services. It acts as a facade, allowing developers to choose from various logging implementations (e.g., Logback, Log4j2) without modifying the application's code. This decoupling ensures portability and simplifies the process of switching or configuring logging frameworks based on specific requirements or deployment environments.
+The SLF4J (Simple Logging Facade for Java) logging framework, with its simple and consistent API, provides a flexible and efficient way to print logger statements in Java services. It acts as a facade, allowing developers to choose from various logging implementations (example: Logback, Log4j2) without modifying the application's code. This decoupling ensures portability and simplifies the process of switching or configuring logging frameworks based on specific requirements or deployment environments.
 
 Below are the steps to print logger statements in a Java service using the SLF4J logging framework. 
 
