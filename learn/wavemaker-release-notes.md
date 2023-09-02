@@ -121,7 +121,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.3](/learn/wavemaker-release-notes/v11-3-0)
+Last updated: [WaveMaker 11.4](/learn/wavemaker-release-notes/v11-4-0)
 
 ---
 
@@ -147,10 +147,10 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | Description | Java Library | Version |
 | --- | --- | --- |
 |  | Spring Framework | <td className="versiontdbgcolor">  5.3.27 -> 5.3.29 </td>|
-| Security framework | Spring Security | <td className="versiontdbgcolor">  5.8.2 -> 5.8.5 </td>|
+| Security framework | Spring Security | <td className="versiontdbgcolor">  5.8.5 -> 5.8.6 </td>|
 | Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.10.0 -> 2.10.1 </td>|
-| DB Persistence library | Hibernate | <td className="versiontdbgcolor"> 5.6.15.Final </td> |
-| Sample database | HSQL |  2.7.1 |
+| DB Persistence library | Hibernate | <td className="versiontdbgcolor"> 5.6.12.Final -> 5.6.15.Final </td> |
+| Sample database | HSQL |  2.7.1 -> 2.7.2 |
 | JSON library | Jackson | <td className="versiontdbgcolor"> 2.14.2 -> 2.15.2 </td> |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
@@ -168,6 +168,10 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | Tomcat | 9.0* |
 | Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.0  <br/> 6.3.0 |
 
+:::note
+Cordova-Android supports Android SDK 24.
+:::
+
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
 # Build Environment for Multi-version Studio
@@ -180,9 +184,9 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |Description|	Version|
 |---|---|
 |Java |11 |
-|Node|14.15.5|
-|Maven | 3.8.6|
-|npm | 7.20.3|
+|Node|18.16.1|
+|Maven| <td className="versiontdbgcolor"> 3.8.6 -> 3.9.4 </td>|
+|npm | 9.5.1|
 |Ant|	1.10.11|
 |Git|	2.26| 
 
@@ -191,26 +195,13 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |Description|	Version|
 |---|---|
 |Java | 11 |
-|Node | 12.22.3|
-|Maven| 3.8.6|
+|Node| 12.22.3|
+|Maven| <td className="versiontdbgcolor"> 3.8.6 -> 3.9.4 </td>|
 |npm |	6.14.13|
 |Ant|	1.10.11|
 |Git|	2.26| 
 
-For more information about building project with Maven, see [here](/learn/app-development/deployment/building-with-maven).
-
-## Build Environment 10
-
-### Angular Web and Mobile 10
-
-|Description|	Version|
-|---|---|
-|Java |1.8 |
-|Node | 12.22.3|
-|Maven|	3.8.1|
-|npm |	6.14.13|
-|Ant|	1.10.11|
-|Git|	2.26| 
+For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
 ## Older Releases
 
