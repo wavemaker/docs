@@ -4,6 +4,13 @@ id: "customize-breakpoints-for-widths-of-show-in-devices"
 sidebar_label: "Customize breakpoints for show in devices"
 ---
 ---
+
+The objective of a web design project is to provide a versatile and user-friendly interface for presenting data. Wavemaker platform provides
+customization options to display the same dataset in two different formats: as a table and as a list. 
+The choice of presentation format adapts to various form factors, which encompass different devices like desktop computers,
+laptops, tablets, and mobile phones. By tailoring the data's appearance to suit the user's device and preferences, 
+this approach aims to enhance user experience and accessibility across diverse web platforms.
+
 ### Configure a widget in different devices 
 1. Drag and drop a Data Table widget on the canvas.
 
@@ -17,15 +24,17 @@ sidebar_label: "Customize breakpoints for show in devices"
 
 ![WebView](/learn/assets/webPartialPreview.png)
 
-4.For mobile view, go to the Device tab and choose **Show in device** as Mobile and Tablet Portrait.
+4. For mobile view, Drag and drop a list widget on the canvas.
+
+5. Go to the Device tab and choose **Show in device** as Mobile and Tablet Portrait.
 
 ![MobilePartialDeviceConfiguration](/learn/assets/mobilePartialDeviceConfig.png)
     
-7. Preview the App. The Mobile view shows us the Data Table.
+6. Preview the App. The Mobile view shows us the list
    
 ![MobileView](/learn/assets/mobilePartialPreview.png)
 
-8. Current default values for the breakpoints of the devices.
+7. Current default values for the breakpoints of the devices.
 
 ![WebConfig](/learn/assets/breakpoints.png)
 
