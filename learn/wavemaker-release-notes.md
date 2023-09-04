@@ -121,8 +121,6 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.4](/learn/wavemaker-release-notes/v11-4-0)
-
 ---
 
 ### UI Frameworks
@@ -149,14 +147,14 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Spring Framework | <td className="versiontdbgcolor">  5.3.27 -> 5.3.29 </td>|
 | Security framework | Spring Security | <td className="versiontdbgcolor">  5.8.5 -> 5.8.6 </td>|
 | Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.10.0 -> 2.10.1 </td>|
-| DB Persistence library | Hibernate | <td className="versiontdbgcolor"> 5.6.12.Final -> 5.6.15.Final </td> |
+| DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL |  2.7.1 -> 2.7.2 |
 | JSON library | Jackson | <td className="versiontdbgcolor"> 2.14.2 -> 2.15.2 </td> |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
-| Http client library  | HttpComponents -  httpclient |  <td   className="versiontdbgcolor"> 4.5.13 -> 4.5.14 </td>|
+| Http client library  | HttpComponents -  httpclient |  4.5.14 |
 | Servlet Framework |  | 4.0.1 |
-|Database Connection Pooling | HikariCP | 5.0.1 |
+| Database Connection Pooling | HikariCP | 5.0.1 |
 
 ### Runtime Environment
 
@@ -174,8 +172,13 @@ Cordova-Android supports Android SDK 24.
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
-# Build Environment for Multi-version Studio
+# Build Environment for Studio
 ---
+
+:::important
+With the release of 11.4, we have ended our support for WaveMaker 10 projects. To know more, see [Ending Support to WaveMaker 10 Projects](/learn/blog/2023/08/11/wavemaker10x-end-of-support).
+:::
+
 
 ## Build Environment 11 
 
@@ -188,7 +191,7 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |Maven| <td className="versiontdbgcolor"> 3.8.6 -> 3.9.4 </td>|
 |npm | 9.5.1|
 |Ant|	1.10.11|
-|Git|	2.26| 
+|Git|	2.42| 
 
 ### Angular Web and Mobile 11
 
@@ -199,11 +202,6 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |Maven| <td className="versiontdbgcolor"> 3.8.6 -> 3.9.4 </td>|
 |npm |	6.14.13|
 |Ant|	1.10.11|
-|Git|	2.26| 
+|Git|	2.42| 
 
 For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
-
-## Older Releases
-
-- **[WaveMaker 9.x Documentation](https://www.wavemaker.com/9/learn/index.html)**  
-- **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)** 
