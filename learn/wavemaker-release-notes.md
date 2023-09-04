@@ -21,7 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.4.0](/learn/wavemaker-release-notes/v11-4-0) <p style={{color:"red"}}>*latest*</p> | New features like Core project and few React Native features, such as a toggle option in Web Preview, Live Form, and Database Variables. This release has many enhancements like support for language fonts, indication mark in the Select widget, and so on along with bug fixes.|04 September 2023 |
+|[WaveMaker 11.4.0](/learn/wavemaker-release-notes/v11-4-0) <p style={{color:"red"}}>*latest*</p> | New features to improve developer collaboration, including the Core project, API reimport analysis report, and a few React Native features, Live Form, and Database Variables, and more. Also, included enhancements, such as support for language fonts, indication mark in the Select widget, and bug fixes.|04 September 2023 |
 |[WaveMaker 11.3.6](/learn/wavemaker-release-notes/v11-3-6) | New features in React Native, such as Multi-theme support, Touch events, Audio widget, RTL Layout, Multiple selections in the List widget, React Native feature enhancements, and other bug fixes.|31 July 2023 |
 |[WaveMaker 11.3.5](/learn/wavemaker-release-notes/v11-3-5) | Enhancements for the Googlemap Prefab, pagination, as well as bug fixes for nested menus, app crashing, and database queries and procedures. | 26 June 2023 |
 |[WaveMaker 11.3.4](/learn/wavemaker-release-notes/v11-3-4) | Bug fixes related to access denied pop-ups and slow loading of the project listing page. | 12 June 2023 |
