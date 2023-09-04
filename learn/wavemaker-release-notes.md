@@ -121,6 +121,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
+Last updated: [WaveMaker 11.4](/learn/wavemaker-release-notes/v11-4-0)
+
 ---
 
 ### UI Frameworks
@@ -167,7 +169,7 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.0  <br/> 6.3.0 |
 
 :::note
-Cordova-Android supports Android SDK 24.
+Cordova-Android supports from Android 24 (Nougat).
 :::
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
@@ -191,7 +193,6 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |Maven| <td className="versiontdbgcolor"> 3.8.6 -> 3.9.4 </td>|
 |npm | 9.5.1|
 |Ant|	1.10.11|
-|Git|	2.42| 
 
 ### Angular Web and Mobile 11
 
@@ -205,3 +206,8 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |Git|	2.42| 
 
 For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
+
+## Older Releases
+
+- **[WaveMaker 9.x Documentation](https://www.wavemaker.com/9/learn/index.html)**  
+- **[WaveMaker 8.x Documentation](https://www.wavemaker.com/8/learn/index.html)** 
