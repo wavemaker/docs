@@ -21,7 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.4.0](/learn/wavemaker-release-notes/v11-4-0) <p style={{color:"red"}}>*latest*</p> | New features like Core project and few React Native features, such as a toggle option in Web Preview, Live Form, and Database Variables. This release has many enhancements like support for language fonts, indication mark in the Select widget, and so on along with bug fixes.|04 September 2023 |
+|[WaveMaker 11.4.0](/learn/wavemaker-release-notes/v11-4-0) <p style={{color:"red"}}>*latest*</p> | New features to improve developer collaboration, including the Core project, API reimport analysis report, and a few React Native features, Live Form, and Database Variables, and more. Also, included enhancements, such as support for language fonts, indication mark in the Select widget, and bug fixes.|04 September 2023 |
 |[WaveMaker 11.3.6](/learn/wavemaker-release-notes/v11-3-6) | New features in React Native, such as Multi-theme support, Touch events, Audio widget, RTL Layout, Multiple selections in the List widget, React Native feature enhancements, and other bug fixes.|31 July 2023 |
 |[WaveMaker 11.3.5](/learn/wavemaker-release-notes/v11-3-5) | Enhancements for the Googlemap Prefab, pagination, as well as bug fixes for nested menus, app crashing, and database queries and procedures. | 26 June 2023 |
 |[WaveMaker 11.3.4](/learn/wavemaker-release-notes/v11-3-4) | Bug fixes related to access denied pop-ups and slow loading of the project listing page. | 12 June 2023 |
@@ -149,14 +149,14 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Spring Framework | <td className="versiontdbgcolor">  5.3.27 -> 5.3.29 </td>|
 | Security framework | Spring Security | <td className="versiontdbgcolor">  5.8.5 -> 5.8.6 </td>|
 | Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.10.0 -> 2.10.1 </td>|
-| DB Persistence library | Hibernate | <td className="versiontdbgcolor"> 5.6.12.Final -> 5.6.15.Final </td> |
+| DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL |  2.7.1 -> 2.7.2 |
 | JSON library | Jackson | <td className="versiontdbgcolor"> 2.14.2 -> 2.15.2 </td> |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
-| Http client library  | HttpComponents -  httpclient |  <td   className="versiontdbgcolor"> 4.5.13 -> 4.5.14 </td>|
+| Http client library  | HttpComponents -  httpclient |  4.5.14 |
 | Servlet Framework |  | 4.0.1 |
-|Database Connection Pooling | HikariCP | 5.0.1 |
+| Database Connection Pooling | HikariCP | 5.0.1 |
 
 ### Runtime Environment
 
@@ -169,13 +169,18 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.0  <br/> 6.3.0 |
 
 :::note
-Cordova-Android supports Android SDK 24.
+Cordova-Android supports from Android 24 (Nougat).
 :::
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
-# Build Environment for Multi-version Studio
+# Build Environment for Studio
 ---
+
+:::important
+With the release of 11.4, we have ended our support for WaveMaker 10 projects. To know more, see [Ending Support to WaveMaker 10 Projects](/learn/blog/2023/08/11/wavemaker10x-end-of-support).
+:::
+
 
 ## Build Environment 11 
 
@@ -188,7 +193,6 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |Maven| <td className="versiontdbgcolor"> 3.8.6 -> 3.9.4 </td>|
 |npm | 9.5.1|
 |Ant|	1.10.11|
-|Git|	2.26| 
 
 ### Angular Web and Mobile 11
 
@@ -199,7 +203,7 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |Maven| <td className="versiontdbgcolor"> 3.8.6 -> 3.9.4 </td>|
 |npm |	6.14.13|
 |Ant|	1.10.11|
-|Git|	2.26| 
+|Git|	2.42| 
 
 For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
