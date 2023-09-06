@@ -12,7 +12,7 @@ WaveMaker app security configuration has now migrated from XML-based configurati
 
 XML configuration beans are generated in design time when a security-related configuration is saved or updated from the Security dialog. By moving beans to the Java configuration there is no generation of XML files which helps in the following.
 
-- Switching security providers based on the profile i.e., users can set different security providers for the development profile and testing/production profile. To know more about profiles, see [Configuration Profiles](/learn/app-development/deployment/configuration-profiles/).
+- [Switching security providers](/learn/how-tos/switch-security-provider-based-on-profile/) based on the profile i.e., users can set different security providers for the development profile and testing/production profile. To know more about profiles, see [Configuration Profiles](/learn/app-development/deployment/configuration-profiles/).
 - XML changes are no longer visible in VCS as the security configurations are maintained in the WaveMaker app runtime. This avoids confusion as only user changes would be visible in the VCS.
 - Any configuration changes/bug fixes in the future will not require any migrations in the user projects.
 - In further releases, it would also help in supporting multiple security providers in the same profile in WaveMaker studio.
