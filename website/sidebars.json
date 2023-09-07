@@ -887,7 +887,8 @@
 				"how-tos/rowlevel-security-using-crud-event-listeners",
 				"how-tos/validations-using-crudListeners",
 				"how-tos/custom-business-logic-using-crud-event-listeners",
-				"how-tos/mysql-connection-using-ssl"
+				"how-tos/mysql-connection-using-ssl",
+				"how-tos/switch-mariadb-to-mysql-connector"
 			]
 		},
 		{
