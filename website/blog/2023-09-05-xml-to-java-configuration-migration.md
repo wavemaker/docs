@@ -1,5 +1,5 @@
 ---
-title: "Migration from XML to Java Configuration"
+title: "App Security Migration from XML to Java Configuration"
 author: Praveen Chandra
 ---
 ---
