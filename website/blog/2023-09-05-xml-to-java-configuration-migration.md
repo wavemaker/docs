@@ -4,7 +4,7 @@ author: Praveen Chandra
 ---
 ---
 
-WaveMaker app security configuration has now migrated from XML-based configuration to Java-based configuration. In earlier versions, the Java beans generated during any security change, using security dialog, used to get saved in the **project-security.xml** file. With this migration that was committed in WaveMaker 11.4, **project-security.xml** and **securityService.properties** files will be removed from the project and the Java beans will be generated dynamically in the WaveMaker runtime.
+WaveMaker app security configuration has now migrated from XML-based configuration to Java-based configuration. In earlier versions, the Java beans generated during any security change, using security dialog, used to get saved in the **project-security.xml** file. With this release, WaveMaker 11.4, **project-security.xml** and **securityService.properties** files will be removed from the project and the Java beans will be generated dynamically in the WaveMaker runtime.
 
 :::note
 Any custom beans related to security written in **project-user-spring.xml** will continue to work.
@@ -21,13 +21,13 @@ XML configuration beans are generated in design time when a security-related con
 - Any configuration changes/bug fixes in the future will not require any migrations in the user projects.
 - In further releases, it would also help in supporting multiple security providers in the same profile in WaveMaker studio.
 
-## What do you do?
+## Backward Compatibility
 
-As a part of refactoring, the following profile property names have been changed in our environment. The users need to perform the changes if they have been using the below properties in any of their local environments or applications before the migration.
+As a part of release 11.4, the following profile property names have been auto-migrated in the user projects. In case, the users have been using the below properties in any of their environments or build scripts, they need to perform the below changes.
 
-|Before <br/> Migration|After <br/> Migration|
+|Old Property Name| New Property Name|
 |----|----|
-| `security.providers` | `security.activeProviders` |
-| `security.general.cors.{pathEntryName}.allowedOrigins` | `security.general.cors.pathEntries.{pathEntryName}.allowedOrigins` |
-| `security.providers.ad.groupSearchDisabled` | `security.providers.ad.roleMappingEnabled` |
-| `security.providers.ldap.groupSearchDisabled` | `security.providers.ldap.roleMappingEnabled` |
+| security.providers | security.activeProviders |
+| security.general.cors.{pathEntryName}.allowedOrigins | security.general.cors.pathEntries.{pathEntryName}.allowedOrigins |
+| security.providers.ad.groupSearchDisabled | security.providers.ad.roleMappingEnabled |
+| security.providers.ldap.groupSearchDisabled | security.providers.ldap.roleMappingEnabled |
