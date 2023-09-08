@@ -4,7 +4,11 @@ author: Praveen Chandra
 ---
 ---
 
-WaveMaker app security configuration has now migrated from XML-based configuration to Java-based configuration. In earlier versions, the Java beans generated during any security change, using security dialog, used to get saved in **project-security.xml** file. With this migration, **project-security.xml** and **securityService.properties** files will be removed from the project and the Java beans will be generated dynamically in the WaveMaker runtime.
+WaveMaker app security configuration has now migrated from XML-based configuration to Java-based configuration. In earlier versions, the Java beans generated during any security change, using security dialog, used to get saved in the **project-security.xml** file. With this migration that was committed in WaveMaker 11.4, **project-security.xml** and **securityService.properties** files will be removed from the project and the Java beans will be generated dynamically in the WaveMaker runtime.
+
+:::note
+Any custom beans related to security written in **project-user-spring.xml** will continue to work.
+:::
 
 <!-- truncate -->
 
@@ -19,9 +23,11 @@ XML configuration beans are generated in design time when a security-related con
 
 ## What do you do?
 
-As a part of refactoring, we have changed the following profile property names and these changes are to be made by users if they have overridden the below properties in any of their environments or applications.
+As a part of refactoring, the following profile property names have been changed in our environment. The users need to perform the changes if they have been using the below properties in any of their local environments or applications before the migration.
 
-- `security.providers` to `security.activeProviders`
-- `security.general.cors.{pathEntryName}.allowedOrigins` to `security.general.cors.pathEntries.{pathEntryName}.allowedOrigins`
-- `security.providers.ad.groupSearchDisabled` to `security.providers.ad.roleMappingEnabled`
-- `security.providers.ldap.groupSearchDisabled` to `security.providers.ldap.roleMappingEnabled`
+|Before <br/> Migration|After <br/> Migration|
+|----|----|
+| `security.providers` | `security.activeProviders` |
+| `security.general.cors.{pathEntryName}.allowedOrigins` | `security.general.cors.pathEntries.{pathEntryName}.allowedOrigins` |
+| `security.providers.ad.groupSearchDisabled` | `security.providers.ad.roleMappingEnabled` |
+| `security.providers.ldap.groupSearchDisabled` | `security.providers.ldap.roleMappingEnabled` |
