@@ -28,7 +28,7 @@ export default class Index extends React.Component {
         features.forEach((feature) => {
             featureComponents.push(
                 <div className='col' key={features.indexOf(feature)}>
-                    <a className='extension row' href={feature.href}>
+                    <a className='feature-card' href={feature.href}>
                         <h4 className='title'>{feature.title}</h4>
                         <p className='description'>{feature.description}</p>
                         <span className='link'>Know More <img src="/learn/img/combined-shape-black.svg" /></span>
@@ -88,7 +88,7 @@ export default class Index extends React.Component {
                         <a className='banner-footer-action' href='/learn/wavemaker-release-notes/v11-3-0'>Read more</a>
                         <a className="banner-footer-closeAction" href="javascript:void(0)" onClick={() => { this.setState({ displayInfoFooter: false }); }}><img src='/learn/img/closeIcon-black.svg' /></a>
                     </div>}
-                    <div className='container banner spl-icon footer-left'>
+                    <div className='container banner footer-left'>
                         <div className='row banner-content'>
                             <div className='col'>
                                 <h1 className='text--center text--semibold banner-Title'>How can we help?</h1>
@@ -112,9 +112,9 @@ export default class Index extends React.Component {
                             {this.getExtensions()}
                         </div>
                     </div>
-                    <div className='container-fluid helpfull-resources'>
+                    <div className='container-fluid features-section'>
                         <div className='container margin-top--lg padding-bottom--xl'>
-                            <h1 className='text--center'>Feature Highlight</h1>
+                            <h1 className='text--center margin-bottom--xl'>Feature Highlight</h1>
                             <div className='row'>
                                 {this.getFeatures()}
                             </div>

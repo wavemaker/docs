@@ -25,7 +25,7 @@
     /* linear-gradient(to bottom, rgba(32, 122, 213, 0.5), rgba(35, 96, 185, 0.5)); */
     --wm-card-bg-text: #000;
     --wm-card-bg-text-hover: #000;
-    --ifm-footer-background-color: #4f5761;
+    --ifm-footer-background-color: #EFF3F5;
     --wm-aside-left-background: linear-gradient(170deg, rgba(244, 246, 252, 0.56) 4%, #f4f6fc 126%, rgba(241, 248, 252, 0.6) 126%);
     --wm-aside-left-background-color: #f6f8fd;
     --ifm-menu-color-active: #000000;
@@ -82,6 +82,10 @@
     --mermaid-background-color:#c2e7ff;
     --mermaid-border-color:#f6f8fd;
     --wm-category-arrow-image:url("/img/chevron-right-category.svg");
+    --wm-feature-description: #242424;
+    --wm-spacing-md: 2em;
+    --wm-footer-actions-color: #201F22;
+    --wm-footer-separator: rgb(32 31 34 / 8%);
 
 }
 html[data-theme="dark"] {
@@ -168,6 +172,9 @@ html[data-theme="dark"] {
      --mermaid-border-color:#c2e7ff;
      --wm-category-arrow-image:url("/img/chevron-right-category-dark.svg");
      --ifm-toc-link-color-dark:#000000;
+     --wm-feature-description: #ffffff;
+     --wm-footer-actions-color: #ffffff;
+     --wm-footer-separator: rgb(255 255 255 / 5%);
      
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
@@ -223,8 +230,7 @@ body {
 
 .copyright-text {
     padding-top: var(--ifm-footer-padding-vertical);
-    border-top: 1px solid rgb(255 255 255 / 5%);
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--wm-footer-actions-color);
 }
 
 .footer-actions {
@@ -243,10 +249,10 @@ body {
 }
 
 .footer-actions a {
-    color: #fff;
+    color: var(--wm-footer-actions-color);
     text-decoration: none;
     text-transform: capitalize;
-    margin: 0 10px;
+    margin: 0 1em;
 }
 
 .footer-actions a:hover,
@@ -254,14 +260,25 @@ body {
     color: #fff;
     text-decoration: none;
 }
-
 .extra-links {
     text-align: center;
 }
 
-.extra-links a {
+.copyright .extra-links a {
     margin: 0 23px;
-    font-weight: bold;
+}
+.copyright .extra-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: var(--ifm-footer-padding-vertical);
+}
+.copyright .extra-links li a {
+    color: var(--wm-footer-actions-color);
+}
+.copyright {
+    border-top: 1px solid var(--wm-footer-separator);
 }
 
 .social-media-links {
@@ -317,7 +334,7 @@ h3 {
     background-size: cover;
     background-position: center;
     border-radius: 0 0 10px 10px;
-    height: 350px;
+    height: 300px;
     position: relative;
 }
 
@@ -335,10 +352,10 @@ html[data-theme="dark"] .banner{
 .banner .banner-content {
     height: 100%;
     align-items: flex-start;
-    padding:5rem var(--ifm-spacing-horizontal) 1rem;
+    padding:3rem var(--ifm-spacing-horizontal) 1rem;
     background: radial-gradient(82.1% 67.69% at 52.01% 55.6%, #819ECB 0%, #759CE3 57.58%, #4782D9 84.9%); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     margin: 1rem 0;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .banner .banner-content .banner-Title {
@@ -402,6 +419,14 @@ html[data-theme="dark"] .banner{
     display: none;
 } */
 
+.banner-search .DocSearch-Button-Key {
+    background: none;
+    box-shadow: none;
+    margin-right: 0;
+    border-radius: 0;
+    font-size: 15px;
+}
+
 .banner-search .navSearchWrapper {
     padding-left: 0;
 }
@@ -453,7 +478,7 @@ html[data-theme="dark"] .banner{
 }
 
 .banner-footer-action {
-    margin: 0 2em;
+    margin: 0 var(--wm-spacing-md);
     text-decoration: underline;
     font-size: 16px;
 }
@@ -553,9 +578,11 @@ html[data-theme="dark"] .banner{
 }
 
 .extension .caption {
-    font-size: 20px;
-    font-weight: normal;
-    margin: 0.5em 0 1em;
+    font-size: 18px;
+    line-height: 21px;
+    min-height: 40px;
+    font-weight: 500;
+    margin: 0.5em 1em 1em;
 }
 
 /* .extension:hover .caption,
@@ -655,6 +682,32 @@ html[data-theme="dark"] .extension .link img{
 .helpfull-resources a:hover:after,
 .helpfull-resources a:focus:after {
     display: inline-block;
+}
+
+/*features section with 2 column layout*/
+.features-section h1 {
+    font-weight: normal;
+    font-size: 28px;
+}
+.feature-card .description, .feature-card .link {
+    color: var(--wm-feature-description);
+}
+.feature-card:hover,
+.feature-card:focus {
+    color: var(--wm-card-text-hover);
+    text-decoration: none;
+    .link {
+        color: var(--ifm-link-color);
+    }
+}
+.features-section .row {
+    flex-direction: row;
+}
+
+.features-section .col {
+    width: 50%;
+    flex: auto;
+    padding: var(--wm-spacing-md) 4em;
 }
 
 
@@ -1044,7 +1097,9 @@ html[data-theme="dark"] .extension .link img{
 .navbar-sidebar__back, article .clean-btn{
     color:var(--ifm-menu-color-active);
 }
-
+.features-section .col {
+    width: 100%;
+}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1554,7 +1609,7 @@ table tr td:last-child{
     fill:var(--ifm-heading-color) !important;
 }
 h2.widget-header{
-    margin-top:2em !important;
+    margin-top:var(--wm-spacing-md) !important;
     margin-bottom:0px !important;
 }
 .DocSearch-MagnifierLabel .DocSearch-Search-Icon{
