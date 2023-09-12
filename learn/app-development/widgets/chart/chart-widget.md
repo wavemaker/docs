@@ -245,7 +245,7 @@ and dotted grid lines on y-axis can be achieved by adding **'dotted-yaxis-grid-l
 
 #### Stroked Zero line and Dotted Y-axis grid lines
 
-[![](/learn/assets/styled-grid-lines.png)](/learn/assets/styled-grid-lines.png)
+[![](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)
 
 
 ## Use Cases
