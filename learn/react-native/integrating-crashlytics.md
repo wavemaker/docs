@@ -8,14 +8,7 @@ import crashLogs from '/learn/assets/crash-logs-attributes-error-reports.png';
 
 Crashlytics is a crash reporting and analysis tool provided by Firebase. Crashlytics helps developers track and understand crashes that occur in their mobile applications. It provides insights into the causes of crashes and allows developers to take action to improve the stability of their apps, which essentially contributes to higher user satisfaction and increased app success.
 
-Crashlytics can be employed for the following reasons:
-
-- Crash Reporting
-- Error Insights
-- Real time Alerts
-- Custom Logs
-
-## Using Firebase Crashlytics
+## Using Firebase Crashlytics For Crash Reporting
 To send crash logs to Crashlytics, you need to integrate the Crashlytics SDK into your Wavemaker application's codebase.
 If you don't have a Firebase project, create one on the Firebase Console: [console.firebase.google.com](https://console.firebase.google.com/)
 Once you have created a Firebase project, you can follow the steps below to integrate Crashlytics into a WaveMaker application.
@@ -23,22 +16,14 @@ Once you have created a Firebase project, you can follow the steps below to inte
 ### Adding Crashlytics Plugin to an App
 
 Crashlytics plugins can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
-on how to install the plugin.
+on how to install the plugin. Also, install the following `npm` packages in your WaveMaker application:
 
+1. react-native-firebase/app
+2. react-native-firebase/crashlytics
 
-1. Install and setup the app module.
+Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#npm) on how to install npm packages to your Wavemaker application.
 
-```
-npm i @react-native-firebase/app
-```
-
-2. Install the Crashlytics module
-
-```
-npm i @react-native-firebase/crashlytics
-```
-
-3. Once installed, you need to add the following config plugin to your `app.json` or `app.config.json`.
+Once installed, you need to add the following config plugin to your `app.json` or `app.config.json`.
     - `@react-native-firebase/app`
     - `@react-native-firebase/crashlytics` 
 
@@ -74,18 +59,16 @@ Create `firebase.json` file in the root directory of your Wavemaker application 
 }
 ```
 
-### Add PreBuild Script
-
-Add `prebuild` script to `package.json`.
+In case of any crash in your Wavemaker application the above configuration would ensure that the crash logs are sent to Crashlytics.
+You can also check Crashlytics set-up by invoking in-built test function `crash()` in your application as follows.
 
 ```javascript
-{
-  "scripts": {
-       ... your existing scripts,
-        "Prebuild":"expo prebuild –clean"
-  }
-}
+var crashlytics = require('@react-native-firebase/crashlytics');
+
+crashlytics.crash();
 ```
+In addition to crash reporting you can also use the Crashlytics SDK to log custom messages, events, and errors.
+
 
 ### Crashlytics Interfaces
 
@@ -138,7 +121,6 @@ Page.errorreportsTap = function ($event, widget) {
      //if you catch unexpected errors to the app you can report that error to Crashlytics using the `recordError` method.
 };
 ```
-
 
 ### To view crash reports in Firebase Crashlytics
 
