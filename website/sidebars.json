@@ -700,7 +700,7 @@
 						"react-native/detect-rooted-device",
 						"react-native/integrating-secure-store",
 						"react-native/publish-expo-module-and-use-in-wavemaker-project",
-						"react-native/integrating-crashlystics"
+						"react-native/integrating-crashlytics"
 					]
 				}
 			]

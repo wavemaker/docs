@@ -5,40 +5,28 @@ sidebar_label: "Crashlytics"
 ---
 ---
 import crashLogs from '/learn/assets/crash-logs-attributes-error-reports.png';
+import crashDeviceStatus from '/learn/assets/crash-device-status.png';
+import crashEventSummary from '/learn/assets/crash-event-summary.png';
+import crashTrends from '/learn/assets/crash-trends.png';
 
 Crashlytics is a crash reporting and analysis tool provided by Firebase. Crashlytics helps developers track and understand crashes that occur in their mobile applications. It provides insights into the causes of crashes and allows developers to take action to improve the stability of their apps, which essentially contributes to higher user satisfaction and increased app success.
 
-Crashlytics can be employed for the following reasons:
-
-- Crash Reporting
-- Error Insights
-- Real time Alerts
-- Custom Logs
-
-## Using Firebase Crashlytics
-To send crash logs to Crashlytics, you need to integrate the Crashlytics SDK into your Wavemaker application's codebase.
+## Using Firebase Crashlytics For Crash Reporting
+To send crash logs to Crashlytics, you need to integrate the Crashlytics SDK into your WaveMaker application's codebase.
 If you don't have a Firebase project, create one on the Firebase Console: [console.firebase.google.com](https://console.firebase.google.com/)
 Once you have created a Firebase project, you can follow the steps below to integrate Crashlytics into a WaveMaker application.
 
-### Adding Crashlytics Plugin to an App
+### Adding Crashlytics Plugin to WaveMaker App
 
 Crashlytics plugins can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
-on how to install the plugin.
+on how to install the plugin. Also, install the following `npm` packages in your WaveMaker application:
 
+1. react-native-firebase/app
+2. react-native-firebase/crashlytics
 
-1. Install and setup the app module.
+Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#npm) on how to install npm packages to your WaveMaker application.
 
-```
-npm i @react-native-firebase/app
-```
-
-2. Install the Crashlytics module
-
-```
-npm i @react-native-firebase/crashlytics
-```
-
-3. Once installed, you need to add the following config plugin to your `app.json` or `app.config.json`.
+Once installed, you need to add the following config plugin to your `app.json` or `app.config.json`.
     - `@react-native-firebase/app`
     - `@react-native-firebase/crashlytics` 
 
@@ -56,9 +44,9 @@ npm i @react-native-firebase/crashlytics
 }
 ```
 
-### Create Firebase JSON in Expo
+### Create Firebase JSON in the App
 
-Create `firebase.json` file in the root directory of your Wavemaker application with the Crashlytics-related keys set to the following values: 
+Create `firebase.json` file in the root directory of your WaveMaker application with the Crashlytics-related keys set to the following values: 
 
 **`firebase.json`**
 
@@ -74,18 +62,16 @@ Create `firebase.json` file in the root directory of your Wavemaker application 
 }
 ```
 
-### Add PreBuild Script
-
-Add `prebuild` script to `package.json`.
+In case of any crash in your WaveMaker application the above configuration would ensure that the crash logs are sent to Crashlytics.
+You can also check Crashlytics set-up by invoking in-built test function `crash()` in your application as follows.
 
 ```javascript
-{
-  "scripts": {
-       ... your existing scripts,
-        "Prebuild":"expo prebuild –clean"
-  }
-}
+var crashlytics = require('@react-native-firebase/crashlytics');
+
+crashlytics.crash();
 ```
+In addition to crash reporting you can also use the Crashlytics SDK to log custom messages, events, and errors.
+
 
 ### Crashlytics Interfaces
 
@@ -117,8 +103,9 @@ Page.onReady = function() {
 };
 
 Page.attributelogsTap = function($event, widget) {
+    //If you need to set a custom single attribute, you can use the `setAttribute` method.
     crashlytics().setAttribute("data", "user-data")
-
+    //If you need to set multiple attributes at once, you can use the `setAttributes` method.
     crashlytics().setAttributes({
         email: "wm_example@wavemaker.com",
         username: "wm_example"
@@ -139,7 +126,6 @@ Page.errorreportsTap = function ($event, widget) {
 };
 ```
 
-
 ### To view crash reports in Firebase Crashlytics
 
 #### Log In to Firebase Console
@@ -154,5 +140,21 @@ Page.errorreportsTap = function ($event, widget) {
 
 #### View Crash Reports
 - Once you're in the Crashlytics section, you'll see a dashboard displaying a summary of crash reports and issues detected in your app.
-- he dashboard will show a list of recent crashes, with information such as the number of affected users, the issue's impact, and a brief description of the error.
+- The dashboard will show a list of recent crashes, with information such as the number of affected users, the issue's impact, and a brief description of the error.
 
+:::tip
+Crashlytics is yet to have intelligence to map crash with the page in application. In order to map the crash with the page, you can add the page name as a custom attribute to the crash report.
+Like, `crashlytics().setAttribute("page", "page-name")` in the `onReady` function of the page.
+:::
+
+In Crashlytics we can visualize various crash reports in the form of charts, graphs and tables. The following are the few examples of crash reports.
+
+#### Crash Trends
+
+<img src={crashTrends} style={{width:"35%"}} />
+
+#### Crash Event Summary
+<img src={crashEventSummary} style={{width:"35%"}} />
+
+#### Crash Device Status
+<img src={crashDeviceStatus} style={{width:"35%"}} />
