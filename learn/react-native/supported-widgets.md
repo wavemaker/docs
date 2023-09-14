@@ -14,7 +14,7 @@ In WaveMaker, the following [Widgets](/learn/app-development/widgets/widget-libr
 | ![](/learn/assets/supported.png) | Form | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/data/form/) | 
 | ![](/learn/assets/supported.png) |List  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/data/list/) | 
 | ![](/learn/assets/supported.png) |Cards  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/data/card/) | 
-| ![](/learn/assets/unsupported.png) |Live Form | |
+| ![](/learn/assets/supported.png) |Live Form | |
 | ![](/learn/assets/unsupported.png) |Live Filter |  |
 
 ## Layout Widgets
@@ -69,8 +69,8 @@ In WaveMaker, the following [Widgets](/learn/app-development/widgets/widget-libr
 | ![](/learn/assets/supported.png) |Picture  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/picture/) | 
 | ![](/learn/assets/unsupported.png) |Tree | |
 | ![](/learn/assets/supported.png) |Video | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/video/) |
-| ![](/learn/assets/unsupported.png) |Audio | |
-| ![](/learn/assets/unsupported.png) |html | |
+| ![](/learn/assets/supported.png) |Audio | |
+| ![](/learn/assets/unsupported.png) |html | check WebView  |
 | ![](/learn/assets/supported.png) |Message  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/message/) | 
 | ![](/learn/assets/supported.png) |Spinner  | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/spinner/) | 
 | ![](/learn/assets/supported.png) |Search   | [Style Document](https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/basic/search/) | 

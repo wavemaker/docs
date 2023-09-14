@@ -60,9 +60,9 @@ This an alternative of the above approach. This is useful if you are working out
 |Description|Version|
 |---|---|
 |Java |1.8|
-|Node|10.15.0|
+|Node|12.22.3||
 |Maven| 3.6.3|
-|npm|6.4.1|
+|npm|6.4.13|
 |Ant|1.10.7|
 
 3. Execute the below command.
