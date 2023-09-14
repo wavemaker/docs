@@ -6,72 +6,40 @@ sidebar_label: "Sentry"
 ---
 import crashLogs from '/learn/assets/CrashLogsAndErrors.png';
 
-Sentry is a real-time error tracking and monitoring platform used by software developers to identify and diagnose issues in their applications. It's designed to help development teams catch and resolve errors, exceptions, and other issues that can occur in software systems. By tracking errors and providing insights into their causes, Sentry enables developers to improve the stability and reliability of their applications.
-
-Here is what Sentry can do:
-
-- Identify and fix bugs quickly and efficiently.
-- Prioritize their efforts and focus on the most critical problems.
-- Improve the user experience by reducing the number of crashes and errors.
-- Collect feedback from users about their experiences with the app.
-
-#### Crash Reporting
-Sentry offers a robust crash reporting solution that helps developers track and analyze crashes, errors, and exceptions occurring in their applications. This feature is crucial for identifying and addressing issues that can negatively impact user experience and application stability. 
-
-#### Error Tracking
-Sentry captures errors, exceptions, and crashes that occur within applications. It collects detailed information about the error, including stack traces, user context, environment details, and more.
-
-#### Real-time Alerts
-When an error occurs, Sentry can send real-time alerts to developers, notifying them of the issue. This enables quick responses to critical errors, helping to reduce downtime and improve the user experience.
-
-#### Contextual Information
-Sentry provides context around errors by capturing data such as user actions leading up to the error, the version of the application being used, and other relevant session information. This context is crucial for understanding the circumstances in which the error occurred.
-
-#### Performance Monitoring
-In addition to error tracking, Sentry offers performance monitoring capabilities. It helps identify performance bottlenecks, slow transactions, and other issues that could affect the application's responsiveness and user experience.
+Sentry is a popular error and crash reporting tool that helps developers monitor and diagnose issues in their applications. It provides real-time error tracking, alerting, and issue resolution features. By tracking errors and providing insights into their causes, Sentry enables developers to improve the stability and reliability of their applications.
 
 
-## Why sentry-expo?
+## Using Sentry For Crash Reporting
 
-- Sentry treats React Native as a first-class citizen and we have collaborated with Sentry to make sure Expo is, too.
-- It's very easy to set up and use
-- It scales to meet the demands of even the largest projects.
-- We trust it for our projects at Expo.
-- It is free for up to 5,000 events per month.
-- It streamlines your error-reporting code across iOS, Android, and web
+To send crush logs to Sentry, you will need to integrate the Sentry SDK into your WaveMaker application.
+If you don't have Sentry project, create project on the [Sentry](https://sentry.io/). Sentry offers both free and paid plans with different levels of features and support. Once you created project in sentry, you will get DSN (Data Source Name). 
 
+:::tip
+DSN is a unique identifier for your project and is used to send error data to Sentry.
+You can find your project's DSN in your project's Settings > Projects > Project name > Client Keys (DSN) tab.
+:::
 
-## Install and configure Sentry
+Now, you can follow the steps below to integrate Sentry into a WaveMaker application.
+### Adding Expo Sentry Plugin to your WaveMaker App​
 
-### 1. Sign up and create project in Sentry
+Sentry plugins can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
+on how to install the plugin. Also, install the following `npm` packages in your WaveMaker application:
 
-Before getting real-time updates on errors we need to create an account and project to the Sentry. Here's how to do that:
-
-[Sign up for Sentry](https://sentry.io/signup/) (it's free), and create a project in your Dashboard. Take note of your organization slug, project name, and DSN as you'll need them later:
-
-- **organization slug** is available in your **Organization settings** tab
-- **project name** is available in your project's **Settings > Projects** tab (find it in the list)
-- DSN is available in your project's **Settings > Projects > Project name > Client Keys (DSN)** tab.
-
-### 2. Installation
-
-#### Adding Expo Sentry Plugin to your WaveMaker React Native App​
-
-Sentry plugins can be installed in few steps in WaveMaker. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
-on how to install a plugins.
 
 ```javascript
-# Install & setup the app module
 npm i sentry-expo
+```
+sentry-expo also requires some additional Expo module packages.
 
-# sentry-expo also requires some additional Expo module packages.
-
+```javascript
 npm i expo-application expo-constants expo-device @sentry/react-native
-
 ```
 
 Once installed, you need to add the  `sentry-expo` config plugin to your `app.json` or `app.config.json`.
 
+```javascript
+npm i sentry-expo
+```
 **`app.json`**  
 
 ```javascript
@@ -81,37 +49,13 @@ Once installed, you need to add the  `sentry-expo` config plugin to your `app.js
     ... your existing configuration 
   }
 }
-
 ```
 
-If Configuring `sentry-expo` is done through the config plugin in your `app.json` or `app.config.json` file then configure a `postPublish` hook.
+### Crash Logs and Error Reports
 
-Add `expo.hook` property to your project’s `app.json` or `app.config.json` file:
-
-```javascript
-{
-  "expo": {
-    ... your existing configuration 
-    "hooks": {
-      "postPublish": [
-        {
-          "file": "sentry-expo/upload-sourcemaps",
-          "config": {
-            "organization": "sentry org slug, or use the `SENTRY_ORG` environment variable",
-            "project": "sentry project name, or use the `SENTRY_PROJECT` environment variable"
-          }
-        }
-      ]
-    }
-  }
-}
-```
-
-### Integrating sentry-expo plugin in WaveMaker app
+You can use sentry methods to capture errors, exceptions, and crashes that occur in your application. This includes unhandled exceptions and crashes, as well as any custom errors or messages you choose to log.
 
 <img src={crashLogs} style={{width:"35%"}} />
-
-Here, we created two buttons, one for the test log and another for crashing the app manually.
 
 The following is the code snippet for the above mockup:
 
@@ -136,8 +80,17 @@ Page.testcrashTap = function($event, widget) {
 
 ```
 
-To run your app locally, run the prebuild command and then compile the app
+### To view crash reports in Sentry
 
-```javascript
-npm run android
-```
+#### Log In to Sentry
+- Open your web browser and go to the [Sentry](https://sentry.io)
+- Log in to sentry account [login](https://sentry.io/auth/login/).
+
+#### Navigate to projects
+- In the left-hand menu, you can see `Projects` tab. Click on it.
+
+#### Select Your Project
+- If you have multiple projects, select the appropriate project from the project list.
+
+#### View reports
+- Once you selected appropriate project, you can see captured errors, exceptions, and crash reports. 
