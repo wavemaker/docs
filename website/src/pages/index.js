@@ -68,7 +68,7 @@ export default class Index extends React.Component {
         extensions.forEach((extension) => {
             extensionComponents.push(<div className='col padding-horiz--sm' key={extensions.indexOf(extension)}>
                 <a className='extension row' href={extension.href}>
-                    <img src={colorMode != "dark" ? extension.lightIcon : extension.darkIcon} className='icon'></img>
+                    <span class="img-circle"><img src={colorMode != "dark" ? extension.lightIcon : extension.darkIcon} className='icon'></img></span>
                     <p className='caption'>{extension.label}</p>
                     <span className='link'>Explore <img src="/learn/img/combined-shape-black.svg" /></span>
                 </a>
@@ -88,7 +88,7 @@ export default class Index extends React.Component {
                         <a className='banner-footer-action' href='/learn/wavemaker-release-notes/v11-3-0'>Read more</a>
                         <a className="banner-footer-closeAction" href="javascript:void(0)" onClick={() => { this.setState({ displayInfoFooter: false }); }}><img src='/learn/img/closeIcon-black.svg' /></a>
                     </div>}
-                    <div className='container banner footer-left'>
+                    <div className=' banner footer-left'>
                         <div className='row banner-content'>
                             <div className='col'>
                                 <h1 className='text--center text--semibold banner-Title'>How can we help?</h1>
@@ -107,7 +107,7 @@ export default class Index extends React.Component {
                         </div>
                     </div>
 
-                    <div className='container extensions text--center  spl-icon header-right'>
+                    <div className='container extensions text--center  spl-icon'>
                         <div className='row '>
                             {this.getExtensions()}
                         </div>
@@ -115,7 +115,7 @@ export default class Index extends React.Component {
                     <div className='container-fluid features-section'>
                         <div className='container margin-top--lg padding-bottom--xl'>
                             <h1 className='text--center margin-bottom--xl'>Feature Highlight</h1>
-                            <div className='row'>
+                            <div className='row border-gradient'>
                                 {this.getFeatures()}
                             </div>
                         </div>
