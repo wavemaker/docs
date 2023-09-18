@@ -699,7 +699,8 @@
 						"react-native/disable-device-screencapture",
 						"react-native/detect-rooted-device",
 						"react-native/integrating-secure-store",
-						"react-native/publish-expo-module-and-use-in-wavemaker-project"
+						"react-native/publish-expo-module-and-use-in-wavemaker-project",
+						"react-native/integrating-crashlytics"
 					]
 				}
 			]
@@ -867,7 +868,8 @@
 				"how-tos/multiple-security-provider-implementation",
 				"how-tos/customizing-post-authentication-handlers",
 				"how-tos/configuring-content-security-policy",
-				"how-tos/configure-mtls-in-wmapp"
+				"how-tos/configure-mtls-in-wmapp",
+				"how-tos/switch-security-provider-based-on-profile"
 			]
 		},
 		{
@@ -887,7 +889,8 @@
 				"how-tos/rowlevel-security-using-crud-event-listeners",
 				"how-tos/validations-using-crudListeners",
 				"how-tos/custom-business-logic-using-crud-event-listeners",
-				"how-tos/mysql-connection-using-ssl"
+				"how-tos/mysql-connection-using-ssl",
+				"how-tos/switch-mariadb-to-mysql-connector"
 			]
 		},
 		{
@@ -1508,6 +1511,14 @@
 			"type": "category",
 			"label": "Latest v11.x",
 			"items": [
+				{
+					"type": "category",
+					"label": "Versions: 11.4.x",
+					"items": [
+						"wavemaker-release-notes/v11-4-1",
+            			"wavemaker-release-notes/v11-4-0"
+					]
+				},
 				{
 					"type": "category",
 					"label": "Versions: 11.3.x",

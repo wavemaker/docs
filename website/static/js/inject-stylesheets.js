@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /* Add click event to the document to hide the dropdown when clicked outside of it */
     document.addEventListener('click', function (e) {
+
         let menu = document.querySelector('.dropdown .dropdown-menu');
         if (menu) {
             menu.style.display = 'none';

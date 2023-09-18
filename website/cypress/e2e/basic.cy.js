@@ -58,4 +58,5 @@ describe("Verifies Get-Started button take to right places", function () {
         cy.request(href).its('body').should('include', 'Start your free trial now').end();
         });
       })
+
 });
