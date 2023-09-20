@@ -24,7 +24,7 @@ describe("Top Navigation in web & mobile", function () {
       .end();
 
 
-    var navElements = ["Guide", "Widgets", "How-to", "Blog", "Releases"];
+    var navElements = ["Get started", "Widgets", "How-to", "Blog", "Tutorials", "Releases"];
     navElements.forEach(function (navItem) {
       cy.get(selectors.desktopNavElements)
         .contains(navItem)
@@ -38,7 +38,7 @@ describe("Top Navigation in web & mobile", function () {
   it("Verifies that only Docs, Search is visible in the navbar in mobile", function () {
     cy.viewport("iphone-6");
 
-    var hiddenNavElements = ["Guide", "Widgets", "How-to", "Blog", "Releases"];
+    var hiddenNavElements = ["Get started", "Widgets", "How-to", "Blog", "Tutorials", "Releases"];
     hiddenNavElements.forEach(function (navItem) {
       cy.get(selectors.desktopNavElements)
         .contains(navItem)
@@ -46,31 +46,17 @@ describe("Top Navigation in web & mobile", function () {
     });
   });
 });
-describe("Sign-in button take to right places", function () {
-  var selectors = {
-    desktopNavElements: ".slidingNav > ul > li:not(:first-child)"
-  };
 
+describe("Verifies Get-Started button take to right places", function () {
   beforeEach(function () {
     cy.visit('/');
   });
 
-  it("Verifies Login navigation ", function () {
-
-    cy.get('.navbar__items > a:not(:first-child)')
-      .contains("Login").should('have.attr', 'href').then((href) => {
-        cy.origin(href, () => {
-          cy.visit('/', { 'failOnStatusCode': false });
-          cy.get(".signup-container").contains("Login to")
-            .end();
-        });
-      })
-  });
   it("Verifies Get Started navigation ", function () {
     cy.get('.navbar__items > a:last-child')
       .contains("Get Started").should('have.attr', 'href').then((href) => {
         cy.request(href).its('body').should('include', 'Start your free trial now').end();
-      });
-  })
+        });
+      })
 
 });

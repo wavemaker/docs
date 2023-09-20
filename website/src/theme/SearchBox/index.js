@@ -10,6 +10,7 @@ import React from 'react';
 import { MAX_QUERY_SIZE } from '@docsearch/react/dist//esm/constants';
 import { LoadingIcon } from '@docsearch/react/dist//esm/icons/LoadingIcon';
 import { ResetIcon } from '@docsearch/react/dist//esm/icons/ResetIcon';
+import { DocSearchButton } from './DocSearchButton';
 import { SearchIcon } from '@docsearch/react/dist//esm/icons/SearchIcon';
 export function SearchBox(_ref) {
     var _ref$translations = _ref.translations,
@@ -63,7 +64,7 @@ export function SearchBox(_ref) {
         className: "DocSearch-Reset",
         "aria-label": resetButtonAriaLabel,
         hidden: !props.state.query
-    }, /*#__PURE__*/React.createElement(ResetIcon, null))), /*#__PURE__*/React.createElement("button", {
+    }, /*#__PURE__*/React.createElement(ResetIcon, null)), React.createElement(DocSearchButton, {})), /*#__PURE__*/React.createElement("button", {
         className: "DocSearch-Cancel",
         type: "reset",
         "aria-label": cancelButtonAriaLabel,

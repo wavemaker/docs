@@ -3,6 +3,7 @@ title: "How to Set Name of Blob Type Downloaded from Data Table"
 id: "setting-blob-filename"
 sidebar_label: "Setting Blob Filename"
 ---
+
 ---
 
 Learn how to set the name for a blob type when downloading it from a Data Table to have the same name when the blob was uploaded.
@@ -53,16 +54,21 @@ if (row.<BlobFieldName>) {
 For example:
 
 ```js
-Page.UserDetailsTable1Beforerowinsert = function($event, widget, row, options) {
-    if (row.profile) {
-        row.filename = row.profile.name;
-    }
+Page.UserDetailsTable1Beforerowinsert = function (
+  $event,
+  widget,
+  row,
+  options
+) {
+  if (row.profile) {
+    row.filename = row.profile.name;
+  }
 };
 ```
 
 ## Set Blob and Download Properties
 
-1. Now, go to the **Advanced settings** of the Data Table widget and navigate to the **Columns** tab. 
+1. Now, go to the **Advanced settings** of the Data Table widget and navigate to the **Columns** tab.
 2. In the columns tab, select the **Blob** type column. For example, the `Profile` column.
 3. Go to the **Value Expression** property for the blob column and change the `hyperlink` property as shown below.
 
@@ -76,10 +82,17 @@ filename='+row.getProperty('<filenameFieldName>')"
 The entire expression for the **Value Expression** property would look as shown below.
 
 ```js
-<wm-anchor caption="" hyperlink="bind:row.getProperty('profile') + '?
-filename='+row.getProperty('filename')" target="_blank" iconclass="wm-icon wm-icon24 
-wi wi-file" class="col-md-9" download="true" show="bind:row.getProperty('blobdata')!= null">
-</wm-anchor>
+<wm-anchor
+  caption=""
+  hyperlink="bind:row.getProperty('profile') + '?
+filename='+row.getProperty('filename')"
+  target="_blank"
+  iconclassName="wm-icon wm-icon24 
+wi wi-file"
+  className="col-md-9"
+  download="true"
+  show="bind:row.getProperty('blobdata')!= null"
+></wm-anchor>
 ```
 
 Preview the application and check the functionality. With this, when downloading a blob from a Data Table will have the same name when the file was uploaded.

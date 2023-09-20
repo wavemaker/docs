@@ -2,6 +2,7 @@
 title: "Accessing Logged-in User Details using Java Service"
 id: "accessing-loggedin-user-information-using-a-java-service"
 ---
+
 ---
 
 In this document, learn how to get the logged-in user information using a Java Service. You write a handler to get user information. For example, get the username, userID, IP address, and browser details. To do this, follow the steps described below.
@@ -12,7 +13,7 @@ Write a java handler class by using an existing handler.
 
 Create a service in the `src/main/java` inside the handlers folder. For example, `UserManagementApp/src/main/java/com/wavemaker/appscore/custom/handlers/CustomAuthenticationSuccessHandler.java`
 
-[![](/learn/assets/Doc1.png)](/learn/assets/Doc1.png) 
+[![](/learn/assets/Doc1.png)](/learn/assets/Doc1.png)
 
 For more information to add files in a project, see [including resource files](/learn/app-development/services/3rd-party-libraries/#including-resource-files).
 
@@ -68,20 +69,20 @@ import java.util.*;
 public class CustomAuthenticationSuccessHandler implements WMAuthenticationSuccessHandler {
 
 	private static final Logger logger = LoggerFactory.getLogger(CustomAuthenticationSuccessHandler.class);
-        
+
         //Created the useMap to capture the userinfo.
 		public static final Map<String,String> userMap=new HashMap<String,String>();
 
 @Override
 	public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,
 			WMAuthentication wmAuthentication) throws IOException, ServletException {
-		
+
 		//Accessing the ip address and userid and username
-		
+
 		final String userId=wmAuthentication.getUserId();
         final String username=wmAuthentication.getPrincipal();
 		final String ip=httpServletRequest.getRemoteAddr();
-		
+
 		//Process the browser info from the header using 'User-Agent'
         final String browserDetails = httpServletRequest.getHeader("User-Agent");
         final String user = browserDetails.toLowerCase();
@@ -135,15 +136,14 @@ public class CustomAuthenticationSuccessHandler implements WMAuthenticationSucce
 In **`project-user-spring.xml`**, add the bean to declare the user-defined handler.
 
 ```xml
- <bean class="com.wavemaker.appscore.custom.handlers.CustomAuthenticationSuccessHandler" id="customAuthenticationSuccessHandler/>
+ <bean className="com.wavemaker.appscore.custom.handlers.CustomAuthenticationSuccessHandler" id="customAuthenticationSuccessHandler/>
 ```
 
 [![](/learn/assets/Doc4.png)](/learn/assets/Doc4.png)
 
-
 ## Step 4: Create a Java Service
 
-- Now create a java service and write a simple method to access the `userMap` by importing the handler class as shown below. 
+- Now create a java service and write a simple method to access the `userMap` by importing the handler class as shown below.
 
 ### Example
 
@@ -165,7 +165,7 @@ import com.wavemaker.runtime.service.annotations.ExposeToClient;
 import com.wavemaker.runtime.service.annotations.HideFromClient;
 import com.wavemaker.appscore.custom.handlers.CustomAuthenticationSuccessHandler;
 import java.util.*;
- 
+
 @ExposeToClient
 public class GetUserInfoService {
     @Autowired
@@ -187,4 +187,4 @@ public Map<String,String> getUserInfo()
 [How to send emails using Java Service](/learn/how-tos/sending-email-using-java-service/)  
 [How to implement forgot password feature using Java Service](/learn/how-tos/implementing-forgot-password-feature-using-java-service/)  
 [How to access REST APIs from Java Service](/learn/how-tos/accessing-rest-apis-java-service/)  
-[How to schedule a Java Service](/learn/how-tos/scheduling-java-service/)  
+[How to schedule a Java Service](/learn/how-tos/scheduling-java-service/)

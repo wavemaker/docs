@@ -7,6 +7,13 @@ author: Ritupurna Lenka
 We are excited to announce the upcoming release of WaveMaker Version 11.4, which will introduce various new features and improvements. With this release, we end our support for WaveMaker 10 projects. 
 
 Upon launching WaveMaker 11.0 on June 6th, 2022, our users were provided with the flexibility to work on WaveMaker 10 projects while undertaking the upgrade process to WaveMaker 11, using our [Multi-version Studio](https://docs.wavemaker.com/learn/app-development/wavemaker-overview/faqs-11/#what-is-multi-version-studio). With 11.4 release, we are disabling the support for the above facility and auto-upgrading the projects to WaveMaker 11. 
+<<<<<<< HEAD
+
+<!-- truncate -->
+=======
+>>>>>>> 0561ca42 (Updated wm10.x end of support blog)
+
+<!-- truncate -->
 
 <!-- truncate -->
 

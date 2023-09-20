@@ -116,25 +116,25 @@ Now this Prefab can be implemented in any React Native applications and use Pref
     <wm-content name="content1">
         <wm-page-content columnwidth="12" name="page_content1" backgroundcolor="#ffffff">
             <wm-prefab prefabname="calendar" name="calendar1" on-change="calendar1Change($event, $data, newVal, oldVal)" width="100%" height="150"></wm-prefab>
-            <wm-list listclass="list-group" itemclass="list-group-item" template="true" template-name="Text with Avatar List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" statehandler="URL" name="randomuserList1" dataset="bind:Variables.people.dataSet" navigation="Pager"
+            <wm-list listclassName="list-group" itemclassName="list-group-item" template="true" template-name="Text with Avatar List" itemsperrow="xs-1 sm-1 md-1 lg-1" className="media-list" statehandler="URL" name="randomuserList1" dataset="bind:Variables.people.dataSet" navigation="Pager"
                 itemkey="bind:Variables.people.dataSet[$i].email">
                 <wm-listtemplate layout="inline" name="listtemplate2">
                     <wm-linearlayout direction="row" horizontalalign="left" spacing="12" padding="12px" verticalalign="center" name="linearlayout3">
                         <wm-linearlayoutitem name="linearlayoutitem6">
-                            <wm-picture width="58px" height="58px" name="Picture" picturesource="bind:Variables.people.dataSet[$i].picture.large" shape="circle" resizemode="cover" class="media-object"></wm-picture>
+                            <wm-picture width="58px" height="58px" name="Picture" picturesource="bind:Variables.people.dataSet[$i].picture.large" shape="circle" resizemode="cover" className="media-object"></wm-picture>
                         </wm-linearlayoutitem>
                         <wm-linearlayoutitem flexgrow="1" name="linearlayoutitem7">
                             <wm-linearlayout direction="column" name="linearlayout4">
                                 <wm-linearlayoutitem name="linearlayoutitem8">
-                                    <wm-label name="Title" caption="bind:Variables.people.dataSet[$i].name.first" class="h4" fontweight="bold"></wm-label>
+                                    <wm-label name="Title" caption="bind:Variables.people.dataSet[$i].name.first" className="h4" fontweight="bold"></wm-label>
                                 </wm-linearlayoutitem>
                                 <wm-linearlayoutitem name="linearlayoutitem9">
-                                    <wm-label name="SubTitle" caption="bind:Variables.people.dataSet[$i].email" class="h5"></wm-label>
+                                    <wm-label name="SubTitle" caption="bind:Variables.people.dataSet[$i].email" className="h5"></wm-label>
                                 </wm-linearlayoutitem>
                             </wm-linearlayout>
                         </wm-linearlayoutitem>
                         <wm-linearlayoutitem width="25px" name="linearlayoutitem10">
-                            <wm-icon iconclass="wi wi-more-vert" iconsize="22px" name="icon2"></wm-icon>
+                            <wm-icon iconclassName="wi wi-more-vert" iconsize="22px" name="icon2"></wm-icon>
                         </wm-linearlayoutitem>
                     </wm-linearlayout>
                 </wm-listtemplate>

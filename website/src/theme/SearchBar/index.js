@@ -6,7 +6,6 @@ import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 import Head from '@docusaurus/Head';
 import { isRegexpStringMatch } from '@docusaurus/theme-common';
-import { useSearchPage } from '@docusaurus/theme-common/internal';
 import { DocSearchButton, useDocSearchKeyboardEvents } from '@docsearch/react';
 import { useAlgoliaContextualFacetFilters } from '@docusaurus/theme-search-algolia/client';
 import Translate from '@docusaurus/Translate';
@@ -18,9 +17,8 @@ function Hit({ hit, children }) {
   return <Link to={hit.url}>{children}</Link>;
 }
 function ResultsFooter({ state, onClose }) {
-  const { generateSearchPageLink } = useSearchPage();
   return (
-    <Link to={generateSearchPageLink(state.query)} onClick={onClose}>
+    <Link onClick={onClose}>
       <Translate
         id="theme.SearchBar.seeAll"
         values={{ count: state.context.nbHits }}>
@@ -157,6 +155,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
       <DocSearchModal
         autoFocus={props.autoFocus}
         onClose={onClose}
+        isOpen={isOpen}
         onOpen={onOpen}
         initialScrollY={window.scrollY}
         initialQuery={initialQuery}

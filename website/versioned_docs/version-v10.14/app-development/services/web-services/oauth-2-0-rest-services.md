@@ -2,17 +2,18 @@
 title: "REST Services using OAuth 2.0"
 id: "oauth-2-0-rest-services"
 ---
+
 ---
 
 **OAuth 2** is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub, etc.. OAuth 2 focuses on client developer simplicity by providing secured delegated access for web and desktop applications. It works by delegating user authentication to the service that hosts the user account and authorizing third-party applications to access the user account.
 
 ## Device Flow
 
-The device flow is illustrated in the below image. 
+The device flow is illustrated in the below image.
 
-[![](/learn/assets/instagram-design-flow.png)](/learn/assets/instagram-design-flow.png) 
+[![](/learn/assets/instagram-design-flow.png)](/learn/assets/instagram-design-flow.png)
 
-### Device Flow Steps Explained   
+### Device Flow Steps Explained
 
 1. The client requests the authorization server to give the access. The request includes the client identifier in it.
 2. The authorization server provides a verification code, an end- user code, and the end-user verification URI.
@@ -23,7 +24,7 @@ The device flow is illustrated in the below image.
 
 ### API Integration
 
-Configuring an app to use these Web Services can be an uphill task. WaveMaker abstracts OAuth and offers API integration without the need for writing code. 
+Configuring an app to use these Web Services can be an uphill task. WaveMaker abstracts OAuth and offers API integration without the need for writing code.
 
 WaveMaker integrates the OAuth 2.0 configuration while [importing a REST Service](/learn/assets/Web_Service1.png) by:
 
@@ -37,13 +38,13 @@ WaveMaker integrates the OAuth 2.0 configuration while [importing a REST Service
 You can [add a REST service](/learn/assets/Web_Service1.png) to your app from the Web Services Resource Explorer. In the Web Service dialog
 
 1. Enter the URL that you want to invoke.
-2. Select OAuth ProviderSet **HTTP Authentication** to OAuth 2.0 
+2. Select OAuth ProviderSet **HTTP Authentication** to OAuth 2.0
 
 [![](/learn/assets/rest_oauth.png)](/learn/assets/rest_oauth.png)
 
 ## OAuth Configuration
 
-For OAuth configuration, you can do the following. 
+For OAuth configuration, you can do the following.
 
 WaveMaker provides support for most OAuth providers. [Select a provider](#supported-oauth-20-providers) from the list and add a provider.
 
@@ -74,12 +75,11 @@ When you have configured the OAuth 2 Provider, **Test** the configuration to com
 
 ## Runtime Behavior
 
-- Just like any REST Service, you need to create a variable to access the OAuth APIs. See, [Variable Creation](var_sel.png). 
+- Just like any REST Service, you need to create a variable to access the OAuth APIs. See, [Variable Creation](var_sel.png).
 - When the service is invoked through the variable, the user will be prompted to enter their credentials.
 
 ## Supported OAuth 2.0 Providers
 
 WaveMaker provides few OAuth 2 service providers out of the box. When selected the provider details are pre-populated and need to be further configured. These providers include:
 
-<table><tbody><tr><td><img class="no-shadow alignnone wp-image-20280 size-full" src="/learn/assets/amazon.png" alt="" width="24" height="24"/></td><td><a href="http://login.amazon.com/manageApps" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20281 size-full" src="/learn/assets/box.png" alt="" width="24" height="24"/></td><td><a href="https://developer.box.com/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20282 size-full" src="/learn/assets/dropbox.png" alt="" width="24" height="24"/></td><td><a href="https://www.dropbox.com/developers" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20283 size-full" src="/learn/assets/facebook.png" alt="" width="24" height="24"/></td><td><a href="https://developers.facebook.com/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20284 size-full" src="/learn/assets/github.png" alt="" width="24" height="24"/></td><td><a href="https://github.com/settings/developers" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20299 size-full" src="/learn/assets/Google.png" alt="" width="24" height="25"/></td><td><a href="https://console.developers.google.com" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20286 size-full" src="/learn/assets/instagram.png" alt="" width="24" height="24"/></td><td><a href="https://www.instagram.com/developer/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20287 size-full" src="/learn/assets/linkedin.png" alt="" width="24" height="24"/></td><td><a href="https://www.linkedin.com/developer/apps/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20288 size-full" src="/learn/assets/outlook.png" alt="" width="24" height="24"/></td><td><a href="https://apps.dev.microsoft.com" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img class="no-shadow alignnone wp-image-20289 size-full" src="/learn/assets/salesforce.png" alt="" width="24" height="24"/></td><td><a href="https://login.salesforce.com/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr></tbody></table>
-
+<table><tbody><tr><td><img className="no-shadow alignnone wp-image-20280 size-full" src="/learn/assets/amazon.png" alt="" width="24" height="24"/></td><td><a href="http://login.amazon.com/manageApps" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img className="no-shadow alignnone wp-image-20281 size-full" src="/learn/assets/box.png" alt="" width="24" height="24"/></td><td><a href="https://developer.box.com/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img className="no-shadow alignnone wp-image-20282 size-full" src="/learn/assets/dropbox.png" alt="" width="24" height="24"/></td><td><a href="https://www.dropbox.com/developers" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img className="no-shadow alignnone wp-image-20283 size-full" src="/learn/assets/facebook.png" alt="" width="24" height="24"/></td><td><a href="https://developers.facebook.com/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img className="no-shadow alignnone wp-image-20284 size-full" src="/learn/assets/github.png" alt="" width="24" height="24"/></td><td><a href="https://github.com/settings/developers" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img className="no-shadow alignnone wp-image-20299 size-full" src="/learn/assets/Google.png" alt="" width="24" height="25"/></td><td><a href="https://console.developers.google.com" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img className="no-shadow alignnone wp-image-20286 size-full" src="/learn/assets/instagram.png" alt="" width="24" height="24"/></td><td><a href="https://www.instagram.com/developer/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img className="no-shadow alignnone wp-image-20287 size-full" src="/learn/assets/linkedin.png" alt="" width="24" height="24"/></td><td><a href="https://www.linkedin.com/developer/apps/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img className="no-shadow alignnone wp-image-20288 size-full" src="/learn/assets/outlook.png" alt="" width="24" height="24"/></td><td><a href="https://apps.dev.microsoft.com" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr><tr><td><img className="no-shadow alignnone wp-image-20289 size-full" src="/learn/assets/salesforce.png" alt="" width="24" height="24"/></td><td><a href="https://login.salesforce.com/" target="_blank" rel="noopener noreferrer">Developer Link</a></td></tr></tbody></table>
