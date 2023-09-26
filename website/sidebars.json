@@ -1516,6 +1516,7 @@
 					"type": "category",
 					"label": "Versions: 11.4.x",
 					"items": [
+						"wavemaker-release-notes/v11-4-2",
 						"wavemaker-release-notes/v11-4-1",
             			"wavemaker-release-notes/v11-4-0"
 					]
