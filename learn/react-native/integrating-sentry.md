@@ -35,11 +35,8 @@ sentry-expo also requires some additional Expo module packages.
 npm i expo-application expo-constants expo-device @sentry/react-native
 ```
 
-Once installed, you need to add the  `sentry-expo` config plugin to your `app.json` or `app.config.json`.
+Once installed,  create `app.json` file and add the following config plugin and upload that `app.json` to `src/main/webapp` in a WaveMaker application.
 
-```javascript
-npm i sentry-expo
-```
 **`app.json`**  
 
 ```javascript
