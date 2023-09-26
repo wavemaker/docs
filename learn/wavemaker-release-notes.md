@@ -149,11 +149,11 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 | Description | Java Library | Version |
 | --- | --- | --- |
 |  | Spring Framework | <td className="versiontdbgcolor">  5.3.29 -> 5.3.30 </td>|
-| Security framework | Spring Security | 5.8.5 -> 5.8.6 |
-| Java JSON utilities | Gson  | 2.10.0 -> 2.10.1 |
+| Security framework | Spring Security | 5.8.6 |
+| Java JSON utilities | Gson  | 2.10.1 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
-| Sample database | HSQL |  2.7.1 -> 2.7.2 |
-| JSON library | Jackson | 2.14.2 -> 2.15.2 |
+| Sample database | HSQL |  2.7.2 |
+| JSON library | Jackson | 2.15.2 |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
@@ -192,7 +192,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |---|---|
 |Java |11 |
 |Node|18.16.1|
-|Maven| 3.8.6 -> 3.9.4 |
+|Maven| 3.9.4 |
 |npm | 9.5.1|
 |Ant|	1.10.11|
 
@@ -202,7 +202,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |---|---|
 |Java | 11 |
 |Node| 12.22.3|
-|Maven| 3.8.6 -> 3.9.4 |
+|Maven| 3.9.4 |
 |npm |	6.14.13|
 |Ant|	1.10.11|
 |Git|	2.42| 
