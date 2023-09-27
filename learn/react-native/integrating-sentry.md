@@ -5,6 +5,9 @@ sidebar_label: "Sentry"
 ---
 ---
 import crashLogs from '/learn/assets/CrashLogsAndErrors.png';
+import projectTab from './learn/assets/sentry-select-project.png';
+import selectProject from './learn/assets/sentry-select-project.png';
+import errorException from './learn/assets/sentry-error-exceptions.png';
 
 Sentry is a popular error and crash reporting tool that helps developers monitor and diagnose issues in their applications. It provides real-time error tracking, alerting, and issue resolution features. By tracking errors and providing insights into their causes, Sentry enables developers to improve the stability and reliability of their applications.
 
@@ -21,19 +24,10 @@ You can find your project's DSN in your project's Settings > Projects > Project 
 
 Now, you can follow the steps below to integrate Sentry into a WaveMaker application.
 ### Adding Expo Sentry Plugin to your WaveMaker App​
+- sentry-expo 
 
 Sentry plugins can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
-on how to install the plugin. Also, install the following `npm` packages in your WaveMaker application:
-
-
-```javascript
-npm i sentry-expo
-```
-sentry-expo also requires some additional Expo module packages.
-
-```javascript
-npm i expo-application expo-constants expo-device @sentry/react-native
-```
+on how to install the plugin.
 
 Once installed,  create `app.json` file and add the following config plugin and upload that `app.json` to `src/main/webapp` in a WaveMaker application.
 
@@ -86,8 +80,14 @@ Page.testcrashTap = function($event, widget) {
 #### Navigate to projects
 - In the left-hand menu, you can see `Projects` tab. Click on it.
 
+<img src={projectTab} style={{width:"35%"}} />
+
 #### Select Your Project
 - If you have multiple projects, select the appropriate project from the project list.
 
+<img src={selectProject} style={{width:"35%"}} />
+
 #### View reports
 - Once you selected appropriate project, you can see captured errors, exceptions, and crash reports. 
+
+<img src={errorException} style={{width:"35%"}} />
