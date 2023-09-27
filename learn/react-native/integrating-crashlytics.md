@@ -26,9 +26,9 @@ on how to install the plugin. Also, install the following `npm` packages in your
 
 Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#npm) on how to install npm packages to your WaveMaker application.
 
-Once installed, you need to add the following config plugin to your `app.json` or `app.config.json`.
-    - `@react-native-firebase/app`
-    - `@react-native-firebase/crashlytics` 
+Once installed, create **firebase** folder under `src/main/webapp/resources` and upload `google-services.json` file to the `src/main/webapp/resources/firebase` in a WaveMaker application.
+
+Also, create `app.json` file and add the following config plugin and add `google-services.json` file path to your `app.json` and upload that `app.json` to `src/main/webapp` in a WaveMaker application.
 
 **`app.json`**
 
@@ -36,9 +36,12 @@ Once installed, you need to add the following config plugin to your `app.json` o
 {
   "expo": {
     "plugins": [
-    "@react-native-firebase/app",
-    "@react-native-firebase/crashlytics"
-    ]
+      "@react-native-firebase/app",
+      "@react-native-firebase/crashlytics"
+    ],
+    "android" : {
+       "googleServicesFile" : "./assets/resources/firebase/google-services.json"
+     },
     ... your existing configuration 
   }
 }
@@ -46,7 +49,7 @@ Once installed, you need to add the following config plugin to your `app.json` o
 
 ### Create Firebase JSON in the App
 
-Create `firebase.json` file in the root directory of your WaveMaker application with the Crashlytics-related keys set to the following values: 
+Create firebase.json file in the root directory of your WaveMaker application with the Crashlytics-related keys set to the following values: 
 
 **`firebase.json`**
 
