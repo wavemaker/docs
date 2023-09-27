@@ -14,7 +14,7 @@ Sentry is a popular error and crash reporting tool that helps developers monitor
 
 ## Using Sentry For Crash Reporting
 
-To send crush logs to Sentry, you will need to integrate the Sentry SDK into your WaveMaker application.
+To send crash logs to Sentry, you will need to integrate the Sentry SDK into your WaveMaker application.
 If you don't have Sentry project, create project on the [Sentry](https://sentry.io/). Sentry offers both free and paid plans with different levels of features and support. Once you created project in sentry, you will get DSN (Data Source Name). 
 
 :::tip
