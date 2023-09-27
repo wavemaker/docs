@@ -25,12 +25,11 @@ Now, you can follow the steps below to `rn-fetch-blob` into a WaveMaker applicat
 
 ### Adding rn-fetch-blob Plugin to your WaveMaker App​
 
-`rn-fetch-blob` can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
+- rn-fetch-blob
+
+RNFetchBlob plugin can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
 on how to install the plugin. Also, install the following `npm` packages in your WaveMaker application:
 
-```javascript
-npm i rn-fetch-blob
-```
 
 <img src={PdfPreview} style={{width:"35%"}} />
 
