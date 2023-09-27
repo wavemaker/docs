@@ -33,12 +33,11 @@ Here, we'll walk you through how to download a PDF file in a WaveMaker app using
 
 ### Adding rn-fetch-blob Plugin to your WaveMaker App
 
-`rn-fetch-blob` can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
-on how to install the plugin. Also, install the following `npm` packages in your WaveMaker application:
+- rn-fetch-blob
 
-```javascript
-npm i rn-fetch-blob
-```
+RNFetchBlob plugin can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
+on how to install the plugin. 
+
 
 <img src={PdfPreview} style={{width:"35%"}} />
 
