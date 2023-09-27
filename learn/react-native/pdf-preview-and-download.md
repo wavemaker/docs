@@ -6,24 +6,32 @@ sidebar_label: "PDF preview"
 ---
 import PdfPreview from '/learn/assets/pdf-preview-and-download.png';
 
-A PDF preview is a visual representation or a preview of the content of a PDF (Portable Document Format) file before opening or downloading the full document. It allows users to quickly view a snapshot of what the PDF contains without the need to open the file in a dedicated PDF viewer or reader application.
+Viewing PDFs in mobile apps offers users unparalleled convenience and flexibility. The portability of mobile devices 
+allows for on-the-go access to important documents, while integrated features in apps enable annotation, editing, and 
+optimized viewing tailored for smaller screens. Many of these apps also provide offline access, cloud storage 
+integration, and security measures like encryption. Additionally, they enhance user experience with search 
+functionalities, interactivity, and accessibility features. The ability to view PDFs on mobile devices not only caters 
+to modern needs but also promotes environmental conservation by reducing the need for printed documents. In this blog 
+we will see how to add PDF preview functionality to a WaveMaker app using the `react-native-pdf` and 
+`react-native-blob-util` libraries.
 
 ## Adding PDF Preview in a WaveMaker App
 
-In today's digital world, displaying PDFs within a mobile app has become a common requirement. React Native, a popular JavaScript framework for building mobile applications, makes it relatively straightforward to integrate PDF previews. In this blog post, we'll explore how to add PDF preview functionality to a WaveMaker app using the `react-native-pdf` and `react-native-blob-util` libraries.
-
-Create prefab that will handle pdf functional component. This prefab will use `react-native-pdf` and `react-native-blob` to reader pdf in WaveMaker app.
-Please refer to this [page](https://docs.wavemaker.com/learn/react-native/custom-widget)
+The `react-native-pdf` library is a React Native PDF viewer component with support for both iOS and Android. 
+It uses the native libraries `PDFKit` on iOS and `PdfRenderer` on Android. 
+The `react-native-blob-util` library is a React Native wrapper for the `blob-util` library.
+We can leverage these libraries to add PDF preview functionality to a WaveMaker app. The best way to accomplish this is 
+through creating a prefab that will handle the PDF functional component.
+Please refer to this [page](https://docs.wavemaker.com/learn/react-native/custom-widget) for more information on how to 
+create a prefab in WaveMaker.
 
 
 ## Downloading PDFs in a WaveMaker App
 
 Downloading PDFs is a common requirement in mobile applications, and React Native makes it relatively straightforward to implement this functionality. 
-Here, you will see the process of downloading a PDF file in a WaveMaker app using the `rn-fetch-blob`.
+Here, we'll walk you through how to download a PDF file in a WaveMaker app using the `rn-fetch-blob`.
 
-Now, you can follow the steps below to `rn-fetch-blob` into a WaveMaker application.
-
-### Adding rn-fetch-blob Plugin to your WaveMaker App​
+### Adding rn-fetch-blob Plugin to your WaveMaker App
 
 `rn-fetch-blob` can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
 on how to install the plugin. Also, install the following `npm` packages in your WaveMaker application:
