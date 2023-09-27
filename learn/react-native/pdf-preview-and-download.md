@@ -6,12 +6,7 @@ sidebar_label: "PDF preview"
 ---
 import PdfPreview from '/learn/assets/pdf-preview-and-download.png';
 
-Viewing PDFs in mobile apps offers users unparalleled convenience and flexibility. The portability of mobile devices 
-allows for on-the-go access to important documents, while integrated features in apps enable annotation, editing, and 
-optimized viewing tailored for smaller screens. Many of these apps also provide offline access, cloud storage 
-integration, and security measures like encryption. Additionally, they enhance user experience with search 
-functionalities, interactivity, and accessibility features. The ability to view PDFs on mobile devices not only caters 
-to modern needs but also promotes environmental conservation by reducing the need for printed documents. In this blog 
+Viewing PDFs without leaving the mobile app offers ability for developers to keep their users in the app's context. While viewing within the app offers ability to implement encryption of content. In this blog 
 we will see how to add PDF preview functionality to a WaveMaker app using the `react-native-pdf` and 
 `react-native-blob-util` libraries.
 
@@ -23,7 +18,7 @@ The `react-native-blob-util` library is a React Native wrapper for the `blob-uti
 We can leverage these libraries to add PDF preview functionality to a WaveMaker app. The best way to accomplish this is 
 through creating a prefab that will handle the PDF functional component.
 Please refer to this [page](https://docs.wavemaker.com/learn/react-native/custom-widget) for more information on how to 
-create a prefab in WaveMaker.
+create a prefab that can be used in WaveMaker React Native project.
 
 
 ## Downloading PDFs in a WaveMaker App
