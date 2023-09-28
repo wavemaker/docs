@@ -6,8 +6,8 @@ sidebar_label: "PDF preview"
 ---
 import PdfPreview from '/learn/assets/pdf-preview-and-download.png';
 
-Viewing PDFs without leaving the mobile app offers ability for developers to keep their users in the app's context. While viewing within the app offers ability to implement encryption of content. In this blog 
-we will see how to add PDF preview functionality to a WaveMaker app using the `react-native-pdf` and 
+Viewing PDFs without leaving the mobile app offers ability for developers to keep their users in the app's context. It is possible to let PDF file download to the phone and have the user open it using a different app. That may not be best user experience for an app. Not all users may know how to locate and open the PDF file in a different app. 
+In this blog we will see how to add PDF preview functionality to a WaveMaker app using the `react-native-pdf` and 
 `react-native-blob-util` libraries.
 
 ## Adding PDF Preview in a WaveMaker App
