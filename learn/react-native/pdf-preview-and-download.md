@@ -5,6 +5,13 @@ sidebar_label: "PDF preview"
 ---
 ---
 import PdfPreview from '/learn/assets/pdf-preview-and-download.png';
+import CreatePrefab from '/learn/assets/create-pdf-preview-prefab.png'
+import SelectWidget from '/learn/assets/select-custom-widget.png'
+import LinkProperty from '/learn/assets/add-link-property.png'
+import AddPackages from '/learn/assets/add-pdf-dependecies.png'
+import AddProperty from '/learn/assets/add-property-in-prefab.png'
+import BindProperty from '/learn/assets/bind-link-property-to-widget.png'
+import ImplementPrefab from '/learn/assets/implement-prefab-to-project.png'
 
 Viewing PDFs without leaving the mobile app offers ability for developers to keep their users in the app's context. It is possible to let PDF file download to the phone and have the user open it using a different app. That may not be best user experience for an app. Not all users may know how to locate and open the PDF file in a different app. 
 In this blog we will see how to add PDF preview functionality to a WaveMaker app using the `react-native-pdf` and 
@@ -17,9 +24,78 @@ It uses the native libraries `PDFKit` on iOS and `PdfRenderer` on Android.
 The `react-native-blob-util` library is a React Native wrapper for the `blob-util` library.
 We can leverage these libraries to add PDF preview functionality to a WaveMaker app. The best way to accomplish this is 
 through creating a prefab that will handle the PDF functional component.
-Please refer to this [page](https://docs.wavemaker.com/learn/react-native/custom-widget) for more information on how to 
-create a prefab that can be used in WaveMaker React Native project.
 
+## Build Prefab for PDF Preview
+Prefabs are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker.
+
+<img src={CreatePrefab} style={{width:"35%"}} />
+
+Select widget in sidebar and search for the custom widget and drag n drop to the design box
+
+<img src={SelectWidget} style={{width:"35%"}} />
+
+Now, add link property to the custom widget
+
+<img src={LinkProperty} style={{width:"35%"}} />
+
+## Prefab Configuration
+
+To prefab configuration, click on **setting** then click on  **Config Prefab**.
+Now, select Resources tab and In **Script** section add `react-native-pdf` and 
+`react-native-blob-util` dependencies to the scripts and then click on save.
+
+<img src={AddPackages} style={{width:"35%"}} />
+
+And then, select properties tab. In **UI Properties** section add new property and click on save.
+
+<img src={AddProperty} style={{width:"35%"}} />
+
+Now, bind prefab link property to the widget
+
+<img src={BindProperty} style={{width:"35%"}} />
+
+After all configurations we need to add code of function component to the prefab
+
+```javascript
+
+Prefab.onReady = function() {
+    Prefab.date = new Date();
+    if (Prefab.Widgets.custom1) {
+        Prefab.Widgets.custom1.renderview = renderPdf;
+    }
+};
+
+function renderPdf(props) {
+    const react = require('react');
+    const Pdf = require('react-native-pdf');
+    if (!props.link) {
+        return null;
+    }
+
+    return react.createElement(Pdf.default, {
+        trustAllCerts: false,
+        source: {
+            uri: props.link,
+            caches: true,
+        },
+        style: {
+            flex: 1,
+            width: 380,
+            height: 520,
+        },
+        onLoadComplete: (numberOfPages, filepath) => {
+            console.log(`number of pages: ${numberOfPages}`);
+           
+        },
+    });
+}
+```
+
+## Implement Prefab to the project
+
+To implement Prefab to the project, expand Prefab tab in sidebar and select your custom prefab and drag n drop to the design box
+
+<img src={ImplementPrefab} style={{width:"35%"}} />
 
 ## Downloading PDFs in a WaveMaker App
 
