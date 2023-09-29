@@ -23,10 +23,11 @@ The `react-native-pdf` library is a React Native PDF viewer component with suppo
 It uses the native libraries `PDFKit` on iOS and `PdfRenderer` on Android. 
 The `react-native-blob-util` library is a React Native wrapper for the `blob-util` library.
 We can leverage these libraries to add PDF preview functionality to a WaveMaker app. The best way to accomplish this is 
-through creating a prefab that will handle the PDF functional component.
+through creating a prefabs in WaveMaker which will handle the PDF functional component.
 
-## Build Prefab for PDF Preview
-Prefabs are reusable application parts that interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease. You can create your own Prefabs using WaveMaker.
+## Building Prefabs in WaveMaker for PDF Preview
+
+The following steps will you can create your own Prefabs for PDF Preview.
 
 <img src={CreatePrefab} style={{width:"35%"}} />
 
@@ -38,10 +39,11 @@ Now, add link property to the custom widget
 
 <img src={LinkProperty} style={{width:"35%"}} />
 
-## Prefab Configuration
+### Prefab Configuration
 
-To prefab configuration, click on **setting** then click on  **Config Prefab**.
-Now, select Resources tab and In **Script** section add `react-native-pdf` and 
+On creating prefab we configure it through simple steps. 
+
+Click on **setting** then click on  **Config Prefab**. Now, select Resources tab and In **Script** section add `react-native-pdf` and 
 `react-native-blob-util` dependencies to the scripts and then click on save.
 
 <img src={AddPackages} style={{width:"35%"}} />
