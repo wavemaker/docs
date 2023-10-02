@@ -7,7 +7,7 @@ A WaveMaker application can have different services like Database, REST, SOAP, a
 
 These API endpoints are automatically used by the WaveMaker application UI when they are bound to a variable. If the application is secured with a security provider the existing architecture of the WaveMaker app UI already handles the authentication of the APIs i.e., if the UI and services are in the same application.
 
-The WaveMaker application APIs can also be invoked from different clients like a WaveMaker application,non-WaveMaker application, Java client, command line, Postman, or even multiple microservices/applications.
+The WaveMaker application APIs can also be invoked from different clients. To know more about [What is Client](#what-is-client).
 
 <!-- truncate -->
 
@@ -18,17 +18,6 @@ The WaveMaker application APIs that are exposed can be used in many ways and if 
 - A WaveMaker application then the APIs can be imported as a REST service or as Swagger.
 - A Non-WaveMaker application then the APIs can be invoked by making an HTTP request to the API.
 
-:::note
-
-The client can be a WaveMaker application/Non-WaveMaker application, microservice, Java client, command line, Postman, and so on. The client should have a token of the current user, making the request that is issued by any provider that follows OpenID specification. According to the OpenID specification, the provider returns two tokens, an ID and an access token. Any one of the tokens can be passed in the request as a header while invoking the API.
-
-:::important
-
-The OpenID provider from which the client obtained the token needs to be configured as the secondary security provider in the resource server i.e., the application which has the APIs.
-:::
-
-:::
-
 ## When WaveMaker APIs are secured with security providers
 
 APIs exposed by the application are also secured and require authentication to access them when used in other applications.  
@@ -37,21 +26,18 @@ If the application is secured by any form-based security provider like Database/
 
 If the application is secured with an SSO security provider like OpenID, SAML, CAS, then the below approach can be used to invoke the secure APIs.
 
-### How can clients invoke WaveMaker Application APIs secured with SSO?
+### How can Clients invoke WaveMaker Application APIs Secured with SSO?
 
-If a client that needs to invoke the WaveMaker application APIs has security configured, the same user information cannot be used to access the WaveMaker secured APIs as the security configured can be different, even if it is the same security provider there cannot be common user information between them.
+If a client that needs to invoke the WaveMaker application APIs has security configured, the same user context cannot be used to access the WaveMaker secured APIs as the security configured can be different, even if it is the same security provider there cannot be common user context between them.
 
-This can now be achieved in WaveMaker by using JWS or Opaque tokens as the secondary authentication providers. In other words, if the WaveMaker application's APIs, used in other clients are secured then the user can enable a secondary authentication provider i.e., JWS or Opaque providers. This makes the APIs accept a token and provide user access to the APIs.
+This can now be achieved in WaveMaker by using JWS or Opaque tokens as the secondary authentication providers. In other words, if the WaveMaker application's APIs are secured and are to be used in other clients then, the user can enable a secondary authentication provider i.e., JWS or Opaque providers. This makes the APIs accept a token and provide user access to the APIs.
 
-For example, consider a client and one WaveMaker application, the application provides some services and has the primary security OpenID configured. If the service APIs are to be accessed from the same application UI then the existing architecture of the WaveMaker applications takes care of the complete flow. In this flow, the user is redirected to the OpenID server for authentication and the generated token is stored in the backend to be used in further requests if required.
+For example, consider a client and one WaveMaker application, the application provides some services and has the primary security SAML configured. If the service APIs are to be accessed from the same application UI then the existing architecture of the WaveMaker applications takes care of the complete flow. In this flow, the user is redirected to the SAML server for authentication and once the user is authenticated, they get redirected to the application.
 
-If the same APIs are invoked from a different client, then along with OpenID a secondary security provider needs to be configured. Now the client can invoke the API with a bearer token header in the request and gain access to the APIs.
+If the same APIs are invoked from a different client, then along with SAML a secondary security provider needs to be configured. Now the client can invoke the API with a bearer token header in the request and gain access to the APIs. To know more about [Bearer token](#what-is-authorization-server).
 
-:::note
+[![](/learn/assets/client_resourceserver_authorizationserver.png)](/learn/assets/client_resourceserver_authorizationserver.png)
 
-The Bearer token is generated by the authorization server and is used in HTTP headers to access an API. 
-
-:::
 
 ## What is Client
 
@@ -65,7 +51,7 @@ The OpenID provider from which the client obtained the token needs to be configu
 
 ## What is Authorization Server
 
-An authorization server issues tokens to clients that can be used to access protected resources on the resource server. These tokens are usually in the form of OAuth2 ID and access tokens and are issued after the client has been authenticated and authorized by the authorization server. The authorization server is responsible for ensuring that only authorized clients can access protected resources on the resource server.
+An authorization server issues tokens to clients that can be used to access protected resources on the resource server which is known as bearer token. These tokens are usually in the form of OAuth2 ID and access tokens and are issued after the client has been authenticated and authorized by the authorization server. The authorization server is responsible for ensuring that only authorized clients can access protected resources on the resource server.
 
 ## What is Resource Server
 
