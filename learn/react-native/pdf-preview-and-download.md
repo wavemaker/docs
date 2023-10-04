@@ -7,10 +7,12 @@ sidebar_label: "PDF preview"
 import PdfPreview from '/learn/assets/pdf-preview-and-download.png';
 import CreatePrefab from '/learn/assets/create-pdf-preview-prefab.png'
 import SelectWidget from '/learn/assets/select-custom-widget.png'
-import LinkProperty from '/learn/assets/add-link-property.png'
+import CreateProperties from '/learn/assets/add-link-and-password-property.png' 
 import AddPackages from '/learn/assets/add-pdf-dependecies.png'
-import AddProperty from '/learn/assets/add-property-in-prefab.png'
-import BindProperty from '/learn/assets/bind-link-property-to-widget.png'
+import AddProperty from '/learn/assets/add-property-in-prefab.png' 
+import BindProperties from '/learn/assets/bind-link-and-password-properties.png'
+import DialogBox from '/learn/assets/password-dialog-box.png'
+import Password from '/learn/assets/add-password-expression.png'
 import ImplementPrefab from '/learn/assets/implement-prefab-to-project.png'
 
 Viewing PDFs without leaving the mobile app offers ability for developers to keep their users in the app's context. It is possible to let PDF file download to the phone and have the user open it using a different app. That may not be best user experience for an app. Not all users may know how to locate and open the PDF file in a different app. 
@@ -35,9 +37,9 @@ Select widget in sidebar and search for the custom widget and drag n drop to the
 
 <img src={SelectWidget} style={{width:"35%"}} />
 
-Now, add link property to the custom widget
+Now, add link and password properties to the custom widget
 
-<img src={LinkProperty} style={{width:"35%"}} />
+<img src={CreateProperties} style={{width:"35%"}} />
 
 ### Prefab Configuration
 
@@ -48,15 +50,23 @@ Click on **setting** then click on  **Config Prefab**. Now, select Resources tab
 
 <img src={AddPackages} style={{width:"35%"}} />
 
-And then, select properties tab. In **UI Properties** section add new property and click on save.
+And then, select properties tab. Now, add Link Property in **UI Properties** section and click on save.
 
 <img src={AddProperty} style={{width:"35%"}} />
 
-Now, bind prefab link property to the widget
+Also, select **Use Expression** tab, and add `pdfpassword` expressoin.
 
-<img src={BindProperty} style={{width:"35%"}} />
+<img src={Password} style={{width:"35%"}} />
+
+Now, bind prefab link and passwaord properties to the widget
+
+<img src={BindProperties} style={{width:"35%"}} />
 
 After all configurations we need to add code of function component to the prefab
+
+For password, also you need to create dialog box for password by using design dialog widget.
+
+<img src={DialogBox} style={{width:"35%"}} />
 
 ```javascript
 
@@ -67,9 +77,14 @@ Prefab.onReady = function() {
     }
 };
 
+Prefab.submitClick = function($event, widget) {
+    Prefab.pdfpassword = Prefab.Widgets.passwordinput.datavalue;
+};
+
 function renderPdf(props) {
     const react = require('react');
     const Pdf = require('react-native-pdf');
+
     if (!props.link) {
         return null;
     }
@@ -85,14 +100,20 @@ function renderPdf(props) {
             width: 380,
             height: 520,
         },
+        password: props.password ? props.password : '',
+        onError: (error) => {
+            Prefab.Widgets.passworddialog.open();
+            console.log(error);
+        },
         onLoadComplete: (numberOfPages, filepath) => {
+            Prefab.Widgets.passworddialog.close();
             console.log(`number of pages: ${numberOfPages}`);
-           
         },
     });
 }
 ```
 
+Using this prefab you can render with or without password protected pdf.
 ## Implement Prefab to the project
 
 To implement Prefab to the project, expand Prefab tab in sidebar and select your custom prefab and drag n drop to the design box
