@@ -37,7 +37,7 @@ Select widget in sidebar and search for the custom widget and drag n drop to the
 
 <img src={SelectWidget} style={{width:"35%"}} />
 
-Now, add link and password properties to the custom widget
+Add link and password properties to the custom widget
 
 <img src={CreateProperties} style={{width:"35%"}} />
 
@@ -50,21 +50,21 @@ Click on **setting** then click on  **Config Prefab**. Now, select Resources tab
 
 <img src={AddPackages} style={{width:"35%"}} />
 
-And then, select properties tab. Now, add Link Property in **UI Properties** section and click on save.
+And then, select properties tab. Add Link Property in **UI Properties** section and click on save.
 
 <img src={AddProperty} style={{width:"35%"}} />
 
-Also, select **Use Expression** tab, and add `pdfpassword` expressoin.
+Make sure to select **Use Expression** tab, and add `pdfpassword` expressoin.
 
 <img src={Password} style={{width:"35%"}} />
 
-Now, bind prefab link and passwaord properties to the widget
+Time to bind prefab link and password properties to the widget
 
 <img src={BindProperties} style={{width:"35%"}} />
 
-After all configurations we need to add code of function component to the prefab
+After setting up the configurations it's time for us to implement functionality for the prefab with code.
 
-For password, also you need to create dialog box for password by using design dialog widget.
+In order to handle password flows, we need to create dialog box for password by using design dialog widget.
 
 <img src={DialogBox} style={{width:"35%"}} />
 
@@ -113,7 +113,8 @@ function renderPdf(props) {
 }
 ```
 
-Using this prefab you can render with or without password protected pdf.
+This prefab we can render with or without password-protected files.
+
 ## Implement Prefab to the project
 
 To implement Prefab to the project, expand Prefab tab in sidebar and select your custom prefab and drag n drop to the design box
