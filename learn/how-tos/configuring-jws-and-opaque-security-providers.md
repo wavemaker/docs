@@ -114,7 +114,7 @@ A primary security provider should be enabled to apply a secondary provider to t
 
 [![](/learn/assets/security_provider_jws_property.png)](/learn/assets/security_provider_jws_property.png)
 
-9.  Invoke an API by passing the ID token as a bearer token. To learn more about it, see []().
+9.  Invoke an API by passing the ID token as a bearer token.
 
 :::note
 
