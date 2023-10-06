@@ -5,7 +5,7 @@ id: "configuring-jws-and-opaque-security-providers"
 
 WaveMaker offers many security providers to enable authentication to the WaveMaker applications from the security dialog. The security providers like DEMO, Database, LDAP, Active Directory, SAML, OpenID, and Custom Security are the primary security providers. Additionally along with the primary provider a secondary provider can also be enabled like JWS or Opaque Token provider.
 
-The secondary providers secure the APIs to be accessed in any application. To know more, see [JWS and Opaque Security Providers](https://docs.wavemaker.com/learn/app-development/app-security/secure-connection-deployed-apps/#JWS).
+The secondary providers secure the APIs to be accessed in any application.
 
 ## Enabling JWS Provider
 
@@ -212,7 +212,7 @@ A primary security provider should be enabled to apply a secondary provider to t
 
 [![](/learn/assets/security_active_properties_opaque.png)](/learn/assets/security_active_properties_opaque.png)
 
-9. Invoke an API by passing the access token as a bearer token. To learn more about it, see []().
+9. Invoke an API by passing the access token as a bearer token.
 
 :::note
 
