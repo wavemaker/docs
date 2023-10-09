@@ -13,7 +13,7 @@ In deep linking, handling URLs with a custom scheme is not sufficient. If you us
 
 ### Deep links in WaveMaker app
 
-To configure an WaveMaker application to open https link, you must have to add some fields to the `app.json`. Suppose your https url is `https://wavemaker.com/pages/testpage`. For that, you need to add `scheme`, `host`, and pathPrefix and your scheme will be `https`, and host name will be `wavemaker.com` and also you need to pass pathPrefix that will be `pages`. 
+To configure an WaveMaker application to open https link, you must have to add some fields to the `app.json`. Suppose your https url is `https://example.com/pages/testpage`. For that, you need to add `scheme`, `host`, and pathPrefix and your scheme will be `https`, and host name will be `example.com` and also you need to pass pathPrefix that will be `pages`. 
 
 Also, add set autoVerify to true in the corresponding intentFilter under app.json configuration.
 
@@ -31,7 +31,7 @@ Create `app.json` file and add the following fields to your `app.json` file and 
         "data": [
             {
             "scheme": "https",
-            "host": "wavemaker.com",
+            "host": "example.com",
             "pathPrefix": "/pages"
             }
         ],
