@@ -64,7 +64,7 @@ public class PassBearerHeaderRequestProcessor extends AbstractHttpRequestProcess
 
 ```
 
-2. Navigate to the File Explorer and upload the class into src/main/java into the required package. Once Uploaded, click Cancel.
+2. Navigate to File Explorer and upload the class into src/main/java into the required package. Once Uploaded, click Cancel.
 
 [![](/learn/assets/upload_src_main_java.png)](/learn/assets/upload_src_main_java.png)
 
@@ -124,11 +124,11 @@ public class PassBearerHeaderRequestProcessor extends AbstractHttpRequestProcess
 
 ```
 
-[![](/learn/assets/project-rest-runtime-config_added_bean_class.png)](/learn/assets/project-rest-runtime-config_added_bean_class.png)
+[![](/learn/assets/project_rest_runtime_config_added_bean_class.png)](/learn/assets/project_rest_runtime_config_added_bean_class.png)
 
 4. Click Save and with the above steps pass the currently logged-in user’s ID token or access token as a Bearer token in the Authorization header.
 
-[![](/learn/assets/project-rest-runtime-config_added_bean_class_save.png)](/learn/assets/project-rest-runtime-config_added_bean_class_save.png)
+[![](/learn/assets/project_rest_runtime_config_added_bean_class_save.png)](/learn/assets/project_rest_runtime_config_added_bean_class_save.png)
 
 :::note
 
