@@ -183,14 +183,7 @@ Also add below Custom Filter in **general-options.json** file.
 		}
 	]
 ```
-Once this filter is added in **general-options.json** file, open security dialog and click on save to automatically add below code in **project-security.xml** file.
-```Java
-<security:custom-filter position="LAST" ref="otpFilter"/>
-```
 
-:::note
-If you donot want to open and save the security dialog then add the above code in **project-security.xml** below the default **security:custom-filter**.
-:::
 
 2. Create Variable for the JavaService methods written in **Step2**(both *sendOTP* and *validateOTP* API's using twilio-connector).
 

@@ -457,7 +457,7 @@
 				"on-premise/aws/wavemaker-enterprise-setup-on-aws",
 				"on-premise/aws/launching-instances-in-aws",
 				"on-premise/aws/install-prerequisites",
-				"on-premise/aws/non-root-execution",		
+				"on-premise/aws/non-root-execution",
 				"on-premise/aws/install/download-copy-installer",
 				"on-premise/aws/install/extract-package",
 				"on-premise/aws/install/initilize-setup",
@@ -478,7 +478,7 @@
 				"on-premise/azure/launching-instances-in-azure",
 				"on-premise/azure/launching-instances-in-azure-vhd",
 				"on-premise/azure/install-prerequisites",
-				"on-premise/aws/non-root-execution",		
+				"on-premise/aws/non-root-execution",
 				"on-premise/azure/install/download-copy-installer",
 				"on-premise/azure/install/extract-package",
 				"on-premise/azure/install/initilize-setup",
@@ -498,7 +498,7 @@
 				"on-premise/gcp/wavemaker-enterprise-setup-on-gcp",
 				"on-premise/gcp/launching-instances-in-gcp",
 				"on-premise/gcp/install-prerequisites",
-				"on-premise/aws/non-root-execution",		
+				"on-premise/aws/non-root-execution",
 				"on-premise/gcp/install/download-copy-installer",
 				"on-premise/gcp/install/extract-package",
 				"on-premise/gcp/install/initilize-setup",
@@ -519,7 +519,7 @@
 				"on-premise/vmware-esxi/launching-instances-in-esxi-ova",
 				"on-premise/vmware-esxi/launching-instances-in-esxi-iso",
 				"on-premise/vmware-esxi/install-prerequisites",
-				"on-premise/aws/non-root-execution",		
+				"on-premise/aws/non-root-execution",
 				"on-premise/vmware-esxi/install/download-copy-installer",
 				"on-premise/vmware-esxi/install/extract-package",
 				"on-premise/vmware-esxi/install/initilize-setup",
@@ -539,7 +539,7 @@
 				"on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv",
 				"on-premise/hyper-v/launching-instances-in-hyper-v-vhd",
 				"on-premise/hyper-v/install-prerequisites",
-				"on-premise/aws/non-root-execution",		
+				"on-premise/aws/non-root-execution",
 				"on-premise/hyper-v/install/download-copy-installer",
 				"on-premise/hyper-v/install/extract-package",
 				"on-premise/hyper-v/install/initilize-setup",
@@ -658,7 +658,7 @@
 					"label": "Development",
 					"items": [
 						"react-native/custom-widget",
-            			"react-native/ssl-pinning"
+						"react-native/ssl-pinning"
 					]
 				},
 				{
@@ -675,7 +675,7 @@
 				{
 					"type": "category",
 					"label": "Build",
-					"items": [	
+					"items": [
 						"react-native/export-react-native-zip",
 						"react-native/build-installers",
 						"react-native/mobile-build-manual",
@@ -686,8 +686,8 @@
 				{
 					"type": "category",
 					"label": "App Integration",
-					"items": [	
-						"react-native/web-view",				
+					"items": [
+						"react-native/web-view",
 						"react-native/react-native-embed"
 					]
 				},
@@ -699,7 +699,9 @@
 						"react-native/disable-device-screencapture",
 						"react-native/detect-rooted-device",
 						"react-native/integrating-secure-store",
-						"react-native/publish-expo-module-and-use-in-wavemaker-project"
+						"react-native/publish-expo-module-and-use-in-wavemaker-project",
+						"react-native/integrating-crashlytics",
+						"react-native/integrating-sentry"
 					]
 				}
 			]
@@ -866,8 +868,10 @@
 				"how-tos/custom-security-using-google-oauth-prefab",
 				"how-tos/multiple-security-provider-implementation",
 				"how-tos/customizing-post-authentication-handlers",
+				"how-tos/add-custom-filters",
 				"how-tos/configuring-content-security-policy",
-				"how-tos/configure-mtls-in-wmapp"
+				"how-tos/configure-mtls-in-wmapp",
+				"how-tos/switch-security-provider-based-on-profile"
 			]
 		},
 		{
@@ -887,7 +891,8 @@
 				"how-tos/rowlevel-security-using-crud-event-listeners",
 				"how-tos/validations-using-crudListeners",
 				"how-tos/custom-business-logic-using-crud-event-listeners",
-				"how-tos/mysql-connection-using-ssl"
+				"how-tos/mysql-connection-using-ssl",
+				"how-tos/switch-mariadb-to-mysql-connector"
 			]
 		},
 		{
@@ -1510,6 +1515,15 @@
 			"items": [
 				{
 					"type": "category",
+					"label": "Versions: 11.4.x",
+					"items": [
+						"wavemaker-release-notes/v11-4-2",
+						"wavemaker-release-notes/v11-4-1",
+            			"wavemaker-release-notes/v11-4-0"
+					]
+				},
+				{
+					"type": "category",
 					"label": "Versions: 11.3.x",
 					"items": [
 						"wavemaker-release-notes/v11-3-6",
@@ -1517,7 +1531,7 @@
 						"wavemaker-release-notes/v11-3-4",
 						"wavemaker-release-notes/v11-3-3",
 						"wavemaker-release-notes/v11-3-2",
-            			"wavemaker-release-notes/v11-3-0"
+						"wavemaker-release-notes/v11-3-0"
 					]
 				},
 				{
