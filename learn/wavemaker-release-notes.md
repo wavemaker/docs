@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.4.1](/learn/wavemaker-release-notes/v11-4-1) <p style={{color:"red"}}>*latest*</p> | Bug fixes related to Team Portal, Tree Widget, user role mapping and more. |11 September 2023 |
+|[WaveMaker 11.4.2](/learn/wavemaker-release-notes/v11-4-2) <p style={{color:"red"}}>*latest*</p> | Includes Dynamic Accordion as a new feature and horizontal display of radio buttons as an enhancement in React Native. It also includes support for Bitbucket 8 VCS provider and timezone in the Date widget along with some other enhancements and bug fixes. |25 September 2023 |
+|[WaveMaker 11.4.1](/learn/wavemaker-release-notes/v11-4-1) | Bug fixes related to Team Portal, Tree Widget, user role mapping and more. |11 September 2023 |
 |[WaveMaker 11.4.0](/learn/wavemaker-release-notes/v11-4-0)| New features to improve developer collaboration, including the Core project, API reimport analysis report, and a few React Native features, Live Form, and Database Variables, and more. Also, included enhancements, such as support for language fonts, indication mark in the Select widget, and bug fixes.|04 September 2023 |
 |[WaveMaker 11.3.6](/learn/wavemaker-release-notes/v11-3-6) | New features in React Native, such as Multi-theme support, Touch events, Audio widget, RTL Layout, Multiple selections in the List widget, React Native feature enhancements, and other bug fixes.|31 July 2023 |
 |[WaveMaker 11.3.5](/learn/wavemaker-release-notes/v11-3-5) | Enhancements for the Googlemap Prefab, pagination, as well as bug fixes for nested menus, app crashing, and database queries and procedures. | 26 June 2023 |
@@ -122,7 +123,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.4](/learn/wavemaker-release-notes/v11-4-0)
+Last updated: [WaveMaker 11.4.2](/learn/wavemaker-release-notes/v11-4-2)
 
 ---
 
@@ -147,12 +148,12 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor">  5.3.27 -> 5.3.29 </td>|
-| Security framework | Spring Security | <td className="versiontdbgcolor">  5.8.5 -> 5.8.6 </td>|
-| Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.10.0 -> 2.10.1 </td>|
+|  | Spring Framework | <td className="versiontdbgcolor">  5.3.29 -> 5.3.30 </td>|
+| Security framework | Spring Security | 5.8.6 |
+| Java JSON utilities | Gson  | 2.10.1 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
-| Sample database | HSQL |  2.7.1 -> 2.7.2 |
-| JSON library | Jackson | <td className="versiontdbgcolor"> 2.14.2 -> 2.15.2 </td> |
+| Sample database | HSQL |  2.7.2 |
+| JSON library | Jackson | 2.15.2 |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
@@ -191,7 +192,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |---|---|
 |Java |11 |
 |Node|18.16.1|
-|Maven| <td className="versiontdbgcolor"> 3.8.6 -> 3.9.4 </td>|
+|Maven| 3.9.4 |
 |npm | 9.5.1|
 |Ant|	1.10.11|
 
@@ -201,7 +202,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |---|---|
 |Java | 11 |
 |Node| 12.22.3|
-|Maven| <td className="versiontdbgcolor"> 3.8.6 -> 3.9.4 </td>|
+|Maven| 3.9.4 |
 |npm |	6.14.13|
 |Ant|	1.10.11|
 |Git|	2.42| 
