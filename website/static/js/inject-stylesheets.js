@@ -29,26 +29,31 @@ document.addEventListener('DOMContentLoaded', function () {
     let host_element = document.querySelector('ul.nav-site.nav-site-internal');
 
     /* Append the HTML as first child into the unordered list */
-    host_element.insertBefore(dropdown_element, host_element.childNodes[0]);
+    host_element && host_element.insertBefore(dropdown_element, host_element.childNodes[0]);
 
     /* Add click event to the element to toggle the dropdown options */
-    host_element.childNodes[0].addEventListener('click', function(e){
+    host_element && host_element.childNodes[0].addEventListener('click', function (e) {
         e.stopPropagation();
         let dropdown_container = document.querySelector('.dropdown .dropdown-menu');
-        if(e.target.attributes.id && e.target.attributes.id.value === 'dropdown'){
-            if(window.getComputedStyle(dropdown_container, null).getPropertyValue('display') === 'none'){
-                dropdown_container.style.display = 'block';
-            }else{
+        if (dropdown_container) {
+            if (e.target.attributes.id && e.target.attributes.id.value === 'dropdown') {
+                if (window.getComputedStyle(dropdown_container, null).getPropertyValue('display') === 'none') {
+                    dropdown_container.style.display = 'block';
+                } else {
+                    dropdown_container.style.display = 'none';
+                }
+            } else {
                 dropdown_container.style.display = 'none';
             }
-        }else{
-            dropdown_container.style.display = 'none';
         }
     });
 
     /* Add click event to the document to hide the dropdown when clicked outside of it */
     document.addEventListener('click', function(e){
-        document.querySelector('.dropdown .dropdown-menu').style.display = 'none';
+        let menu = document.querySelector('.dropdown .dropdown-menu');
+        if (menu) {
+            menu.style.display = 'none';
+        }
     });
 
     if(window.location.pathname.indexOf("/learn/blog") !== -1) {

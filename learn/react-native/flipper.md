@@ -80,7 +80,7 @@ For React Native applications, you can use some plugins by default, including Cr
 
 ### Crash Reporter
 
-The Crash Reporter plugin shows a notification in Flipper when the app crashes. The notification shows the crash informationm, such as stacktrace and other metadata.
+The Crash Reporter plugin shows a notification in Flipper when the app crashes. The notification shows the crash information, such as stacktrace and other metadata.
 
 ### Logs
 
