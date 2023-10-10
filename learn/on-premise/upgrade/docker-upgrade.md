@@ -8,7 +8,7 @@ sidebar_label: "Docker Upgrade"
 ## Docker Upgrade
 
 
-- Docker upgrade is required when you have docker version below 23.0.1 .
+- Docker upgrade is required when you have docker version below 24.0.6 .
 - User needs to upgrade docker if ssh-user doesn't have root/sudo privileges in Ubuntu OS StudioWorkspaceInstance/AppDeploymentInstance and if ssh-user have or doesn't have root/sudo privileges in RHEL OS StudioWorkspaceInstance/AppDeploymentInstance.
 - Make sure Hibernate and passivate user containers and application containers from launchpad. 
 
@@ -57,8 +57,14 @@ sidebar_label: "Docker Upgrade"
 
   ```bash
     sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
-    example: sudo apt-get install docker-ce=5:23.0.1-1~ubuntu.20.04~focal docker-ce-cli=5:23.0.1-1~ubuntu.20.04~focal containerd.io -y
+    example: sudo apt-get install docker-ce=5:24.0.6-1~ubuntu.20.04~focal docker-ce-cli=5:24.0.6-1~ubuntu.20.04~focal containerd.io -y
   ```
+
+- Example in ubuntu 22.x
+
+  ```bash
+    example: sudo apt-get install docker-ce=5:24.0.6-1~ubuntu.22.04~jammy docker-ce-cli=5:24.0.6-1~ubuntu.22.04~jammy containerd.io -y
+  ``` 
 
 #### Upgrade Docker using WaveMaker Script
 
@@ -116,16 +122,16 @@ Upgrade or Install the latest version of Docker.
 ```
 
 - Install the latest version of Docker
-  - To Install Docker in RHEL 8 use the following commands
+  - To Upgrade Docker in RHEL 8 use the following commands
   
   ```bash
     yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-23.0.1-1.el8.x86_64.rpm
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-cli-24.0.6-1.el8.x86_64.rpm
     wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.6.18-3.1.el8.x86_64.rpm
-    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-23.0.1-1.el8.x86_64.rpm
-    sudo yum install docker-ce-cli-23.0.1-1.el8.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/8/x86_64/stable/Packages/docker-ce-24.0.6-1.el8.x86_64.rpm
+    sudo yum install docker-ce-cli-24.0.6-1.el8.x86_64.rpm -y
     sudo yum install containerd.io-1.6.18-3.1.el8.x86_64.rpm -y
-    sudo yum install docker-ce-23.0.1-1.el8.x86_64.rpm -y
+    sudo yum install docker-ce-24.0.6-1.el8.x86_64.rpm -y
   ```
 
   - Install prerequisites to install Docker in RHEL7
@@ -142,15 +148,15 @@ Upgrade or Install the latest version of Docker.
       sudo yum install fuse-overlayfs-0.7.2-6.el7_8.x86_64.rpm -y
    ```
 
-  - To Install Docker in RHEL 7 use the following commands
+  - To Upgrade Docker in RHEL 7 use the following commands
   
   ```bash
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-23.0.1-1.el7.x86_64.rpm
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-24.0.6-1.el7.x86_64.rpm
     wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.6.18-3.1.el7.x86_64.rpm
-    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-23.0.1-1.el7.x86_64.rpm
-    sudo yum install docker-ce-cli-23.0.1-1.el7.x86_64.rpm -y
+    wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-24.0.6-1.el7.x86_64.rpm
+    sudo yum install docker-ce-cli-24.0.6-1.el7.x86_64.rpm -y
     sudo yum install containerd.io-1.6.18-3.1.el7.x86_64.rpm -y
-    sudo yum install docker-ce-23.0.1-1.el7.x86_64.rpm -y
+    sudo yum install docker-ce-24.0.6-1.el7.x86_64.rpm -y
   ```  
 
 ```bash

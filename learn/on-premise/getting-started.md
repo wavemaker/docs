@@ -44,8 +44,8 @@ Or, you can choose bare-metal or any other option as well.
 
 Currently, WaveMaker supports the following Operating Systems.
 
-- RHEL 7.x, RHEL 8.x
-- Ubuntu 18.04, Ubuntu 20.04.
+- RHEL 7.x, RHEL 8.x, RHEL 9.x.
+- Ubuntu 18.04, Ubuntu 20.04, Ubuntu 22.x.
 
 ### Step-4: Check for software requirements
 
