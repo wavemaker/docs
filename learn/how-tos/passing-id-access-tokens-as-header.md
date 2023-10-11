@@ -64,7 +64,7 @@ public class PassBearerHeaderRequestProcessor extends AbstractHttpRequestProcess
 
 ```
 
-2. Navigate to File Explorer and upload the class into src/main/java into the required package. Once Uploaded, click Cancel.
+2. Navigate to File Explorer and upload the class into src/main/java into the required package. Once uploaded, click Cancel.
 
 [![](/learn/assets/upload_src_main_java.png)](/learn/assets/upload_src_main_java.png)
 

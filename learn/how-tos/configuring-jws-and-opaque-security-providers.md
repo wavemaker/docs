@@ -79,7 +79,7 @@ JWS provider can have multiple providers configured like Google, Okta, and each 
 |roleMappingEnabled|role mapping can be enabled/disabled for each sub provider|
 |roleMappingConfig|JWS supports two types of role mappings|
 
-### Role Mapping
+### Role Mapping in JWS
 
 The role attribute is configured using the JWS database or custom database. To know more about role mapping, see [Role Mapping](/learn/app-development/app-security/central-authentication-system/#role-mapping).
 
@@ -108,7 +108,6 @@ A primary security provider should be enabled to apply a secondary provider to t
 7. Navigate to the File Explorer and open the required profile properties file. 
 
 [![](/learn/assets/developement_properties.png)](/learn/assets/developement_properties.png)
-
 
 8. Update the property security.activeProviders by adding JWS to it. Example: DEMO, JWS.
 
@@ -178,9 +177,9 @@ Opaque token provider can be enabled only if the OpenID provider that is used su
 |roleMappingEnabled|role mapping can be enabled/disabled for each sub provider.|
 |roleMappingConfig|Opaque token provider supports two types of role mappings.|
 
-### Role Mapping
+### Role Mapping in Opaque Token
 
-The role attribute is configured using the JWS database or custom database. To know more about role mapping, see [Role Mapping](/learn/app-development/app-security/central-authentication-system/#role-mapping).
+The role attribute is configured using the Opaque token database or custom database. To know more about role mapping, see [Role Mapping](/learn/app-development/app-security/central-authentication-system/#role-mapping).
 
 #### Opaque Token Role Attribute Mapping
 
