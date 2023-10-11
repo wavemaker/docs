@@ -5,9 +5,9 @@ sidebar_label: "Sentry"
 ---
 ---
 import crashLogs from '/learn/assets/CrashLogsAndErrors.png';
-import projectTab from './learn/assets/sentry-select-project.png';
-import selectProject from './learn/assets/sentry-select-project.png';
-import errorException from './learn/assets/sentry-error-exceptions.png';
+import projectTab from '/learn/assets/sentry-select-project.png';
+import selectProject from '/learn/assets/sentry-select-project.png';
+import errorException from '/learn/assets/sentry-error-exceptions.png';
 
 Sentry is a popular error and crash reporting tool that helps developers monitor and diagnose issues in their applications. It provides real-time error tracking, alerting, and issue resolution features. By tracking errors and providing insights into their causes, Sentry enables developers to improve the stability and reliability of their applications.
 

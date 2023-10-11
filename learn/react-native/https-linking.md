@@ -1,7 +1,7 @@
 ---
-title: "Https Linking"
-id: "https-linking"
-sidebar_label: "Https Linking"
+title: "Deep Linking"
+id: "deep-linking"
+sidebar_label: "Deep Linking"
 ---
 ---
 

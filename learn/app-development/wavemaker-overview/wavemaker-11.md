@@ -5,11 +5,16 @@ sidebar_label: "WaveMaker 11"
 ---
 ---
 
-You asked we delivered—a host of new features and enhancements in WaveMaker 11 — Beta to 11.1 General Availability (GA), released on 29th August 2022. Following 11 Beta, we closely engaged with our customers and developers in thoroughly collecting and meeting their feedback and ready with the update, 11.1. We believe the platform is rather stable to move to WaveMaker 11.1 or later. The release includes improvements to the 11 Beta features and a few more upgrades overall.
+You asked we delivered—a host of new features and enhancements in WaveMaker 11 - Beta to 11.4 General Availability (GA), released on 4th September 2023. Following 11 Beta, we closely engaged with our customers and developers in thoroughly collecting and meeting their feedback and ready with the update, 11.4. We believe the platform is rather stable to move to WaveMaker 11.x. The release includes improvements to the 11 Beta features and a few more upgrades overall.
 
 :::important
-Since 11.1, newer updates were released with more features and bug fixes. Read this document and follow the links to release information.
 
+In WaveMaker 11, many newer updates were released with more features and bug fixes. Read this document and follow the links to release information.
+
+- [WaveMaker 11.3.3 - features added](/learn/wavemaker-release-notes/v11-3-6)
+- [WaveMaker 11.3.3 - features added(beta)](/learn/wavemaker-release-notes/v11-3-3)
+- [WaveMaker 11.3 - features added](/learn/wavemaker-release-notes/v11-3-0)
+- [WaveMaker 11.2 - features added](/learn/wavemaker-release-notes/v11-2-0)
 - [WaveMaker 11.1 - features added](/learn/wavemaker-release-notes/v11-1-0) 
 - [WaveMaker 11.1.2 - features added](/learn/wavemaker-release-notes/v11-1-2) 
 - [Overview WaveMaker Enterprise (WME) 11 releases, including featues and bug fixes](/learn/enterprise-release-notes#wavemaker-enterprise-v11x) 
@@ -19,11 +24,11 @@ Since 11.1, newer updates were released with more features and bug fixes. Read t
 
 ## Migration to 11: what to expect
 
-The upgrade is not flagged as a risky migration. There is minimal to no impact involved when migrating from WaveMaker 10 to WaveMaker 11.1 or later. The upgrade process is designed to transit as smoothly as possible, so you can instantly benefit from all the new features we deliver in the [newer versions](/learn/wavemaker-release-notes#wavemaker-online-v11x) of the WaveMaker 11 Studio. It includes library updates, including a Java update, needing an action to do.
+The upgrade is not flagged as a risky migration. The upgrade process is designed to transit as smoothly as possible, so you can instantly benefit from all the new features we deliver in the [newer versions](/learn/wavemaker-release-notes#wavemaker-online-v11x) of the WaveMaker 11 Studio. It includes new and advanced React Native features, Prefab Marketplace, Mockingbird support, inter and intra-team collaboration tools library updates, including a Java update, needing an action to do.
 
 ### Java Update
 
-The Java 11 version is one update among the WaveMaker Studio's [latest tech stack](/learn/wavemaker-release-notes#technology-stack). A small action is required from your end to complete the update, specifically if you build and deploy your apps outside WaveMaker. For example, Tomcat. 
+The Java 11 version is one update among the WaveMaker Studio's [latest tech stack](/learn/wavemaker-release-notes#technology-stack). A small action is required from your end to complete the update, specifically, if you build and deploy your apps outside WaveMaker. For example, Tomcat. 
 
 You must upgrade your build infrastructure and verify the deployment setup to support Java 11. For this reason, we introduced [parallel versioning of Studio](/learn/app-development/wavemaker-overview/wavemaker-11-beta#multi-version-studio) so you can test your application thoroughly. Learn more about upgrading deployment infrastructure before initiating the project migration to WaveMaker 11 or later. See the [migration guide](/learn/how-tos/upgrade-guide-wavemaker-10-to-11) for more information.
 
@@ -35,35 +40,26 @@ Angular 12 includes JQuery library upgrades as a standard. In addition, it offer
 Note that the Angular 12 update addresses vulnerabilities. Updating to the latest version of WaveMaker Studio helps keep your application secure against critical security threats. 
 :::
 
+## Expo
+
+Expo version upgrade from version 45 to 48 is a major upgrade in WaveMaker Studio. To know more, see
+
+- [WaveMaker 11.2.2](https://docs.wavemaker.com/learn/wavemaker-release-notes/v11-2-2)
+- [WaveMaker 11.3.6](https://docs.wavemaker.com/learn/wavemaker-release-notes/v11-3-6)
+
 ## Features of WaveMaker 11.1: GA
 
 ### React Native Studio
 
-In June, we introduced an all-new **React Native Studio** beta with essential features to launch native app development in WaveMaker. With the 11.1 release, the React Native Studio gets more updates, comes feature-packed and ready to consume for production with integrations, such as OpenID authentication and Expo plugin support, in addition to standard plugins, Form validation, Charts, and more. See our [React Native documentation](/learn/react-native/react-native) to start developing native applications in WaveMaker.
+In WaveMaker 11, we have introduced all new and advanced React Native features in WaveMaker Studio. These features include app-loading animations, Third-party Plugin Integration,  SSL Pinning, improved inline styles, Audio support, and many more enhancements. Know more about our React Native Studio and get started with developing native applications by referring to our [React Native documentation](/learn/react-native/react-native).
 
-### Layout and Flex Layout Widgets
+### Other New Features of 11: GAs
 
-[Layout](/learn/app-development/widgets/container/layout) and [Flex Layout](/learn/app-development/widgets/container/flex-layout) widgets were first introduced for React Native apps. With the [11.1.2](/learn/wavemaker-release-notes/v11-1-2) update, we support **Layout** and **Flex Layout** widgets in Web and Cordova apps.
-
-### Other New Features of 11.1: GAs
-
-Several other new features were added to WaveMaker Studio in 11.1 and later, including: 
+Several other new features were added to WaveMaker Studio in 11 and later, including: 
 
 - [MLTS Support](/learn/how-tos/configure-mtls-in-wmapp)
 - [Azure Repos VCS Support](/learn/how-tos/azure-repos-vcs)
 - [Added MongoDB Support in Session Persistence](/learn/app-development/app-security/session-persistence#mongo-db) for scaling your application horizontally.
 - Sync Prefab, allowing you to keep the Prefab up to date even when re-importing a project from Zip.
 - Introducing four types of [Wizard Template to Support Icons as Steps](learn/how-tos/wizard-layout).
-
-See the complete list of features in the [11.1 release notes](/learn/wavemaker-release-notes/v11-1-0).
-
-## Recap - Features of [WaveMaker 11 Beta](/learn/app-development/wavemaker-overview/wavemaker-11-beta)
-
-- [React Native Beta](/learn/app-development/wavemaker-overview/wavemaker-11-beta#introducing-react-native-in-wavemaker)
-- [API Composer Toolkit](/learn/app-development/wavemaker-overview/wavemaker-11-beta#api-composer-toolkit)
-- [API Mock Server](/learn/app-development/services/api-mock-server)
-- Pagination for Imported APIs, including Offset and Curser types
-- POM Hierarchy Remodeled to Inheritance Model
-- Team for Enterprise as a standard
-- [Upgrading SAML to the new library](/learn/app-development/wavemaker-overview/wavemaker-11-beta#upgrading-saml-to-new-library)
-
+- [Prefab Marketplace](/learn/app-development/custom-widgets/enterprise-marketplace/)

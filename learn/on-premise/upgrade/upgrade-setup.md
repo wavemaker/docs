@@ -9,8 +9,7 @@ This document provides the instructions install a patch to upgrade the current W
 
 The following table is the compatibility matrix for upgrading the WME:
 
-::: note
-
+:::note
 The following list provides the currently supported versions for WME patching. Kindly contact our WaveMaker support team if you did not find the right version.
 
 [Check out full list of releases here.](/learn/wavemaker-release-notes#current-release-details)
@@ -18,6 +17,8 @@ The following list provides the currently supported versions for WME patching. K
 
 | **WME Patch release** | **Supported WME versions** |
 | --- | --- |
+| v11.4.x  |  v10.13.x or higher|
+| v11.3.x  |  v10.13.x or higher|
 | v11.3.x  |  v10.13.x or higher|
 | v11.2.x  |  v10.13.x or higher|
 | v11.1.x  |  v10.13.x or higher|
@@ -43,7 +44,7 @@ Following are the patch files you will need in order to install the patch on th
   - patch file in tar format.
   - corresponding checksum (sha1sum) files
 
-::: note
+:::note
 Links for WME Patch and the corresponding checksum (sha1sum) files will be provided to you by the WaveMaker team through an email. You need to download the files before starting the installation.
 :::
 
