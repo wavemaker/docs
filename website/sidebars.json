@@ -703,6 +703,7 @@
 						"react-native/integrating-crashlytics",
 						"react-native/integrating-sentry",
 						"react-native/scheme-linking"
+						"react-native/pdf-preview-and-download"
 					]
 				}
 			]
@@ -869,6 +870,7 @@
 				"how-tos/custom-security-using-google-oauth-prefab",
 				"how-tos/multiple-security-provider-implementation",
 				"how-tos/customizing-post-authentication-handlers",
+				"how-tos/add-custom-filters",
 				"how-tos/configuring-content-security-policy",
 				"how-tos/configure-mtls-in-wmapp",
 				"how-tos/switch-security-provider-based-on-profile"
