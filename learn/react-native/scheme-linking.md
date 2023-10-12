@@ -58,7 +58,7 @@ To configure an WaveMaker application to open https link, you must have to add s
 
 Also, add set autoVerify to true in the corresponding intentFilter under app.json configuration.
 
-Create `app.json` file and add the following fields to your `app.json` file and upload that `aap.json` file to `src/main/webapp` in WaveMaker application.
+Create `app.json` file and add the following fields to your `app.json` file and upload that `app.json` file to `src/main/webapp` in WaveMaker application.
 
 **`app.json`**
 ```javascript
@@ -119,3 +119,48 @@ The SHA256 fingerprints will look like `14:6D:E9:83...`
 ```
 
 ### Universal Linking(iOS)
+
+Universal Links were intended to fix this. Instead of opening Safari when a link is clicked, iOS first checks if a Universal Link has been registered for the domain linked in the URL. It then verifies whether the corresponding app is installed. If the app is installed, it is launched; otherwise, Safari opens, and the `http(s)://` link is loaded.
+
+To implement universal links on iOS, a paid Apple Developer account is necessary because you must link your app with your fully qualified Apple Developer Team ID.
+
+#### AASA configuration
+
+On the web side, you need to host a JSON configuration file at the path `https://[host]/.well-known/apple-app-site-association` (with no file extension). This file includes information such as your Apple Developer Team ID, Bundle ID, and a list of paths that should be redirected to the corresponding native app.
+
+Now, create `apple-app-site-association` for the website verification at `https://[host]/.well-known/apple-app-site-association` and collect the following information:
+
+**`apple-app-site-association`**
+```javascript
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        // Example: QQ57RJ5UTD.com.wavemaker.deeplink
+        "appID": "{APPLE_TEAM_ID}.{BUNDLE_ID}",
+        "paths": ["*"]
+      }
+    ]
+  }
+}
+```
+
+#### Native Apple configuration
+
+After deploying your apple-app-site-association (AASA) file, you must also configure your app to use your associated domain:
+
+Create `app.json` file and add the following fields to your `app.json` file and upload that `app.json` file to `src/main/webapp` in WaveMaker application.
+
+For example, if an associated website is `https://example.com/pages/testpage`, the app links are:
+
+**`app.json`**
+```javascript
+{
+  "expo": {
+    "ios": {
+      "associatedDomains": ["applinks:example.com"]
+    }
+  }
+}
+```
