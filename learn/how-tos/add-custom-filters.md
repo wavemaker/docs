@@ -8,7 +8,7 @@ In Spring Security, a filter is a fundamental component that plays a crucial rol
 
 
 ### Need of Custom Filters
-In every security enabled application, there will be **FilterChain**.By default FilterChain consists of spring's pre-defined filters which performs authentication and authorization. But if you want to add custom pre or post processing tasks on request or response you need to add custom filters in FilterChain.
+In every security enabled application, you can find **FilterChain**.By default FilterChain consists of spring's pre-defined filters which performs authentication and authorization. But if you want to add custom pre or post processing tasks on request or response you need to add custom filters in FilterChain.
 
 :::note
 **FilterChain**: It refers to a series or sequence of filters that are applied to incoming requests before they reach the intended servlet or resource. Each filter in the filter chain performs specific pre-processing or post-processing tasks on the request or response, such as authentication, authorization, logging, data transformation, or error handling.
@@ -16,7 +16,7 @@ In every security enabled application, there will be **FilterChain**.By default 
 
 ### Create Custom Filter
 
-1. Create a custom java class that extends Filter
+1. Create a custom java class that extends Filter. After creating the class click save.
 
 ```java
 package com.filters;
@@ -43,7 +43,7 @@ public class CustomFilter implements Filter {
 }
 ```
 
-2. Navigate to the File Explorer and upload the class into src/main/java into the required package.
+2. Navigate to the File Explorer and upload the class into src/main/java into the required package. After uploading the class click cancel to see the changes.
 
 [![CustomFilter_class_upload](/learn/assets/CustomFilterclass_upload.jpg)](/learn/assets/CustomFilterclass_upload.jpg)
 
