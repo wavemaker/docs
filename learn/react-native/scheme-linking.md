@@ -1,16 +1,28 @@
 ---
-title: "Scheme Linking"
-id: "scheme-linking"
-sidebar_label: "Scheme Linking"
+title: "Deep Linking"
+id: "deep-linking"
+sidebar_label: "Deep Linking"
 ---
 ---
 
 import SchemeLinking from '/learn/assets/scheme-linking-application-id.png';
 import PageParams from '/learn/assets/create-page-params.png';
 
-## Scheme linking
+## Deep Linking
 
-**Scheme linking** in mobile applications entails employing **custom URL schemes** to enable interaction among apps and 
+**Deep linking** in the context of mobile apps refers to using a uniform resource identifier (URI) that links to a 
+specific location within a mobile app rather than simply launching the app. This can be used to link to specific 
+content or pages within the app, improving user experience by taking users directly to the content they're interested in.
+The following are some ways in which deep linking can be implemented in your WaveMaker app:
+
+* Scheme Linking
+* Asset Linking(Android)
+* Universal Linking(iOS)
+
+
+### Scheme Linking
+
+**Scheme Linking** in mobile applications entails employing **custom URL schemes** to enable interaction among apps and 
 direct users to distinct content or functionalities within an app. By defining a **unique URL scheme**, an app can be 
 tailored to respond to particular URLs, facilitating its launch and the execution of specific actions when such URLs are accessed. 
 This approach enables apps to communicate by exchanging data through these URLs and also allows external entities, 
@@ -35,3 +47,75 @@ Moreover, the **URL scheme** is not solely utilized for opening specific pages; 
 ```link
 com.wavemaker.deepling://pages/testpage?name=tom
 ```
+
+### Asset Linking(Android)
+
+**Asset Linking** is a feature that allows you to link your website to your app. It uses HTTP URLs to link to content within your app. 
+When a user navigates to your website, the browser sends an HTTP request to your website's URL. 
+If the website URL is associated with an app, the browser will open the app instead of the website.
+
+To configure an WaveMaker application to open https link, you must have to add some fields to the `app.json`. Suppose your https url is `https://example.com/pages/testpage`. For that, you need to add `scheme`, `host`, and pathPrefix and your scheme will be `https`, and host name will be `example.com` and also you need to pass pathPrefix that will be `pages`.
+
+Also, add set autoVerify to true in the corresponding intentFilter under app.json configuration.
+
+Create `app.json` file and add the following fields to your `app.json` file and upload that `aap.json` file to `src/main/webapp` in WaveMaker application.
+
+**`app.json`**
+```javascript
+{
+"expo": {
+    "android": {
+    "intentFilters": [
+        {
+        "action": "VIEW",
+        "autoVerify": true,
+        "data": [
+            {
+            "scheme": "https",
+            "host": "example.com",
+            "pathPrefix": "/pages"
+            }
+        ],
+        "category": ["BROWSABLE", "DEFAULT"]
+        }
+    ]
+    }
+}
+}
+```
+
+#### Configuring Android Asset Links
+
+A Digital Asset Links JSON file must be published on your website to indicate the Android apps that are associated with the website and verify the app's URL intents.
+
+To make Android open links directly in your application, the system checks if the host (the website or server) intends to allow this behavior. To confirm this, it queries the URL `https://[host]/.well-known/assetlinks`.
+
+Now, create assetlinks.json for the website verification at `https://[host]/.well-known/assetlinks.json` and collect the following information:
+
+- `package_name`: The Android application ID of your app (for example `com.wavemaker.deeplink`). This can be found in the `app.json` file under `expo.android.package`.
+
+- `sha256_cert_fingerprints`: The SHA256 fingerprints of your app’s signing certificate. You can use the following command to generate the fingerprint via the Java keytool:
+```command
+keytool -list -v -keystore my-release-key.keystore
+```
+The SHA256 fingerprints will look like `14:6D:E9:83...`
+
+**`assetlinks.json`**
+```javasscript
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.wavemaker.deeplink",
+            "sha256_cert_fingerprints": [
+                "{sha256_cert_fingerprints}"
+            ]
+        }
+    }
+]
+```
+
+### Universal Linking(iOS)
