@@ -63,3 +63,11 @@ To know more about the differences between an ID token and an Access token, see 
 If the token is an ID token, configure the JWS provider, and if it is an access token configure the Opaque provider in the resource server as a secondary provider. This is because the ID token can be validated directly by the resource server but the access token needs to be verified using an introspection endpoint provided by the authorization server.
 
 :::
+
+## Configuring WaveMaker Application as Resource Server
+
+WaveMaker application can be configured to accept an ID token or access token as bearer token in the authorization header. It is then validated using the JWS provider if it is an ID token or using Opaque token provider if it is an opaque access token. 
+
+This makes the application a resource server that validates ID and access tokens to share resources. To know how to configure JWS or opaque as secondary authentication providers, see [Configure JWS and Opaque providers](learn/how-tos/configuring-jws-and-opaque-security-providers).
+
+

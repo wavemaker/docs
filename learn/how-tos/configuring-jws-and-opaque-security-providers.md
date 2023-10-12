@@ -113,7 +113,7 @@ A primary security provider should be enabled to apply a secondary provider to t
 
 [![](/learn/assets/security_provider_jws_property.png)](/learn/assets/security_provider_jws_property.png)
 
-9.  Invoke an API by passing the ID token as a bearer token.
+9.  Invoke an API by passing the ID token as a bearer token. To know how to pass ID token as bearer token, see [How to Pass Logged-In User ID/Access Tokens as Header](learn/how-tos/passing-id-access-tokens-as-header).
 
 :::note
 
@@ -211,7 +211,7 @@ A primary security provider should be enabled to apply a secondary provider to t
 
 [![](/learn/assets/security_active_properties_opaque.png)](/learn/assets/security_active_properties_opaque.png)
 
-9. Invoke an API by passing the access token as a bearer token.
+9. Invoke an API by passing the access token as a bearer token. To know how to pass access token as bearer token, see [How to Pass Logged-In User ID/Access Tokens as Header](learn/how-tos/passing-id-access-tokens-as-header).
 
 :::note
 
