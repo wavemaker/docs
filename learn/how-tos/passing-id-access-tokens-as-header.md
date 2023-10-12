@@ -68,70 +68,24 @@ public class PassBearerHeaderRequestProcessor extends AbstractHttpRequestProcess
 
 [![](/learn/assets/upload_src_main_java.png)](/learn/assets/upload_src_main_java.png)
 
-3. Go to the **project-rest-runtime-config.xml** and add **PassBearerHeaderRequestProcessor** in the **httpRequestProcessorList** as a bean. Provide the below code.
+3. Go to the **project-rest-runtime-config.xml** and add **PassBearerHeaderRequestProcessor** in the **httpRequestProcessorList** as a bean. Add the below-provided bean class and click save.
 
 ```xml
 
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-   <bean class="com.wavemaker.runtime.rest.processor.RestRuntimeConfig" id="appDefaultRestRuntimeConfig">
-       <property name="httpRequestProcessorList">
-           <list>
-               <bean class="com.wavemaker.runtime.rest.processor.request.PassDefaultHeadersRequestProcessor">
-                   <property name="enabled" value="true"/>
-                   <property name="defaultHeaders">
-                       <list>
-                           <value>User-Agent</value>
-                           <value>Content-Type</value>
-                           <value>Accept</value>
-                           <value>Accept-Charset</value>
-                           <value>Accept-Language</value>
-                           <value>X-Requested-With</value>
-                       </list>
-                   </property>
-               </bean>
-               <bean class="com.wavemaker.runtime.rest.processor.request.HttpRequestCookieProcessor">
-                   <property name="enabled" value="true"/>
-               </bean>
                <bean class="com.wavemaker.PassBearerHeaderRequestProcessor">
                    <property name="enabled" value="true"/>
                </bean>
-           </list>
-       </property>
-       <property name="httpResponseProcessorList">
-           <list>
-               <bean class="com.wavemaker.runtime.rest.processor.response.HttpResponseCookieProcessor">
-                   <property name="enabled" value="true"/>
-                   <property name="persistenceStrategy" value="NONE"/>
-               </bean>
-               <bean class="com.wavemaker.runtime.rest.processor.response.PrefixHttpResponseHeadersResponseProcessor">
-                   <property name="enabled" value="true"/>
-                   <property name="headerPrefix" value="X-WM-"/>
-                   <property name="excludeList">
-                       <list>
-                           <value>Content-Disposition</value>
-                           <value>Content-Type</value>
-                           <value>Set-Cookie</value>
-                       </list>
-                   </property>
-               </bean>
-           </list>
-       </property>
-   </bean>
-</beans>
-
+          
 ```
 
-[![](/learn/assets/project_rest_runtime_config_added_bean_class.png)](/learn/assets/project_rest_runtime_config_added_bean_class.png)
-
-4. Click Save and with the above steps pass the currently logged-in user’s ID token or access token as a Bearer token in the Authorization header.
-
 [![](/learn/assets/project_rest_runtime_config_added_bean_class_save.png)](/learn/assets/project_rest_runtime_config_added_bean_class_save.png)
+
+4. The above steps pass the currently logged-in user’s ID token or access token as a Bearer token in the Authorization header.
 
 :::note
 
 The ID and access token expiry time might differ from the WaveMaker application session time, so even if the user session is valid the token might have expired.
 
 :::
+
+

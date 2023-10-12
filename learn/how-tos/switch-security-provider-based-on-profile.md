@@ -38,6 +38,8 @@ The acceptable values for the `security.activeProviders` property in WaveMaker S
 |CAS|CAS|
 |SAML|SAML|
 |Custom Security|CUSTOM|
+|JWS (Secondary provider)|JWS|
+|Opaque Token (Secondary provider)|OPAQUE_TOKEN|
 
 :::
 

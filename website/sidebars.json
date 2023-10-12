@@ -870,7 +870,9 @@
 				"how-tos/customizing-post-authentication-handlers",
 				"how-tos/configuring-content-security-policy",
 				"how-tos/configure-mtls-in-wmapp",
-				"how-tos/switch-security-provider-based-on-profile"
+				"how-tos/switch-security-provider-based-on-profile",
+				"how-tos/configuring-jws-and-opaque-security-providers",
+				"how-tos/passing-id-access-tokens-as-header"
 			]
 		},
 		{
