@@ -92,9 +92,9 @@ To make Android open links directly in your application, the system checks if th
 
 Now, create assetlinks.json for the website verification at `https://[host]/.well-known/assetlinks.json` and collect the following information:
 
-- `package_name`: The Android application ID of your app (for example `com.wavemaker.deeplink`). This can be found in the `app.json` file under `expo.android.package`.
+* `package_name`: The Android application ID of your app (for example `com.wavemaker.deeplink`). This can be found in the `app.json` file under `expo.android.package`.
+* `sha256_cert_fingerprints`: The SHA256 fingerprints of your app’s signing certificate. You can use the following command to generate the fingerprint via the Java keytool:
 
-- `sha256_cert_fingerprints`: The SHA256 fingerprints of your app’s signing certificate. You can use the following command to generate the fingerprint via the Java keytool:
 ```command
 keytool -list -v -keystore my-release-key.keystore
 ```
