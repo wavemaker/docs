@@ -10,7 +10,7 @@ import PageParams from '/learn/assets/create-page-params.png';
 
 ## Deep Linking
 
-**Deep linking** in the context of mobile apps refers to using a uniform resource identifier (URI) that links to a 
+**Deep Linking** in the context of mobile apps refers to using a uniform resource identifier (URI) that links to a 
 specific location within a mobile app rather than simply launching the app. This can be used to link to specific 
 content or pages within the app, improving user experience by taking users directly to the content they're interested in.
 The following are some ways in which deep linking can be implemented in your WaveMaker app:
@@ -37,7 +37,7 @@ Suppose your `Application Id` is `com.wavemaker.schemelink`; in this case, the *
 To navigate to a particular page in an app using **URL scheme linking**, the specific page name can be appended to the link. For instance, if the objective is to open a page named _testpage_ in an app, it is requisite to specify the page name `testpage` in the URL.
 
 ```link
-com.wavemaker.deepling://pages/testpage
+com.wavemaker.deeplink://pages/testpage
 ```
 
 Moreover, the **URL scheme** is not solely utilized for opening specific pages; it also enables the passing of parameters to those pages. Should you wish to pass parameters, such as `?name=tom`, to the `testpage`, it is imperative to first establish parameters for that page within the WaveMaker app.
@@ -45,7 +45,7 @@ Moreover, the **URL scheme** is not solely utilized for opening specific pages; 
 <img src={PageParams} style={{width:"35%"}} />
 
 ```link
-com.wavemaker.deepling://pages/testpage?name=tom
+com.wavemaker.deeplink://pages/testpage?name=tom
 ```
 
 ### Asset Linking(Android)
@@ -120,7 +120,8 @@ The SHA256 fingerprints will look like `14:6D:E9:83...`
 
 ### Universal Linking(iOS)
 
-Universal Links were intended to fix this. Instead of opening Safari when a link is clicked, iOS first checks if a Universal Link has been registered for the domain linked in the URL. It then verifies whether the corresponding app is installed. If the app is installed, it is launched; otherwise, Safari opens, and the `http(s)://` link is loaded.
+Universal links are a deep linking method for iOS that uses standard HTTP or HTTPS links and associates them with an app.
+When a universal link is opened, iOS checks whether the corresponding app is installed. If it is, the app is launched to the specified content; if not, the link opens in a web browser.
 
 To implement universal links on iOS, a paid Apple Developer account is necessary because you must link your app with your fully qualified Apple Developer Team ID.
 
