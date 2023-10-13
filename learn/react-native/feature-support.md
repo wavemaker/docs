@@ -15,7 +15,7 @@ From WaveMaker 11 release, React Native supports the following features. In the 
 |![Supported React Native Features](/learn/assets/supported.png) |Web Services |  [Using Web Serives](/learn/app-development/services/web-services/web-services) |
 | ![Supported React Native Features](/learn/assets/supported.png)|Java Service |  [Using Java Service](/learn/app-development/services/java-services/java-service) | 
 | ![Supported React Native Features](/learn/assets/supported.png)   |API Import | [Using API Import](/learn/app-development/services/api-designer/import-rest-apis-swagger) | 
-| ![Unsupported React Native Features](/learn/assets/unsupported.png)| Databases | -|
+| ![Supported React Native Features](/learn/assets/supported.png) | Databases | [Using Databases](https://docs.wavemaker.com/learn/app-development/services/database-services)|
 
 ## Security Service
 
@@ -25,9 +25,9 @@ From WaveMaker 11 release, React Native supports the following features. In the 
 | ![Supported React Native Features](/learn/assets/supported.png)|Demo | [Using Demo Service](/learn/app-development/app-security/secure-connection-deployed-apps#demo) |  
 | ![Supported React Native Features](/learn/assets/supported.png)|Custom | [Using Custom Security](/learn/app-development/app-security/secure-connection-deployed-apps#custom) | 
 | ![Supported React Native Features](/learn/assets/supported.png)|Active Directory | [Using Active Directory](/learn/app-development/app-security/secure-connection-deployed-apps#active-directory) | 
-| ![Unsupported React Native Features](/learn/assets/supported.png)|Open Auth | [Using Open Auth](/learn/app-development/app-security/authentication#open-id) |
-| ![Unsupported React Native Features](/learn/assets/supported.png)|SAML | [Using SAML](/learn/app-development/app-security/secure-connection-deployed-apps#saml) |
-| ![Unsupported React Native Features](/learn/assets/supported.png)|CAS | [Using CAS](/learn/app-development/app-security/secure-connection-deployed-apps#cas) | 
+| ![Supported React Native Features](/learn/assets/supported.png) |Open Auth | [Using Open Auth](/learn/app-development/app-security/authentication#open-id) |
+| ![Supported React Native Features](/learn/assets/supported.png) |SAML | [Using SAML](/learn/app-development/app-security/secure-connection-deployed-apps#saml) |
+| ![Supported React Native Features](/learn/assets/supported.png) |CAS | [Using CAS](/learn/app-development/app-security/secure-connection-deployed-apps#cas) | 
 
 
 ## Development and Deployment
