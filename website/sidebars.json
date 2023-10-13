@@ -702,7 +702,8 @@
 						"react-native/publish-expo-module-and-use-in-wavemaker-project",
 						"react-native/integrating-crashlytics",
 						"react-native/integrating-sentry",
-						"react-native/pdf-preview-and-download"
+						"react-native/pdf-preview-and-download",
+						"react-native/deep-linking"
 					]
 				}
 			]
