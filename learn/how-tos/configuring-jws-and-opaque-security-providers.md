@@ -69,7 +69,7 @@ JWS provider can have multiple providers configured like Google, Okta, and each 
 
 [![](/learn/assets/enabled_jws_true.png)](/learn/assets/enabled_jws_true.png)
 
-|field|Description|
+|Field|Description|
 |-----|------|
 |providerId|A unique provider ID for each sub provider in JWS|
 |issuerUrl|The issuer URL of the open ID provider.|
@@ -158,6 +158,7 @@ If the incoming token is of JWS format then enable the JWS provider.
 
 3. Go to `${openid-server-url}/.well-known/openid-configuration API` that returns the introspection URL and other details of the server. This helps to find the introspection URL if the provider that is being configured follows OpenID spec.
 4. Under the OPAQUE_TOKEN section set `enabled` as true.
+
 :::note
 
 Opaque token provider can be enabled only if the OpenID provider that is used supports introspection.
@@ -166,7 +167,7 @@ Opaque token provider can be enabled only if the OpenID provider that is used su
 
 [![](/learn/assets/opaque_secondary_provider.png)](/learn/assets/opaque_secondary_provider.png)
 
-|field|Description|
+|Field|Description|
 |-----|------|
 |introspectionUrl|Introspection endpoint is used to validate the access token and should be supported by the provider.|
 |clientId and clientSecret|Provided by the open ID provider once the app is registered.|
@@ -212,6 +213,6 @@ A primary security provider should be enabled to apply a secondary provider to t
 
 :::note
 
-If the incoming token is of JWS format then enable the JWS provider.
+If the incoming token is of Opaque format then enable the Opaque token provider.
 
 :::

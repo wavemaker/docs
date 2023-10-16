@@ -13,7 +13,7 @@ Server attributes are the custom attributes that are visible only to the server.
 
 :::
 
-## To Pass Logged-in User ID and Access Token as Header
+## To Pass Logged-in User ID or Access Token as Header
 
 1. Create a custom Java class that extends **AbstractHttpRequestProcessor** and add the following code. Click Save.
 
