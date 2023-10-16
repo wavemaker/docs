@@ -5,7 +5,12 @@ sidebar_label: "Upgrade Guide 11"
 ---
 ---
 
-This guide helps you follow step-by-step instructions for upgrading your projects to WaveMaker 11 beta. Follow these steps carefully and ensure you test the project thoroughly to complete the version upgrade. After finishing the upgrade, access all the amazing tools and features of WaveMaker 11 beta. See [WaveMaker 11 Beta Features](/learn/app-development/wavemaker-overview/wavemaker-11-beta) to learn what's new.
+:::note
+
+The 11.4 release is putting an end to support for WaveMaker 10 projects. The auto-migration process from WaveMaker 10 to WaveMaker 11 projects will be performed on 4th September 2023. To know more, see [Ending Support for WaveMaker 10 projects](/learn/blog/2023/08/11/wavemaker10x-end-of-support).
+:::
+
+This guide helps you follow step-by-step instructions for upgrading your projects to WaveMaker 11.x. Follow these steps carefully and ensure you test the project thoroughly to complete the version upgrade. After finishing the upgrade, access all the amazing tools and features of WaveMaker 11.x. See [WaveMaker 11 Beta Features](/learn/app-development/wavemaker-overview/wavemaker-11-beta) to learn what's new.
 
 When you log in to WaveMaker Studio, you will see the following prompt welcoming you to WaveMaker 11.
 
@@ -140,3 +145,7 @@ When working in Multi-version Studio, any changes you're making in the WaveMaker
 Once you complete the upgrading of the project, WaveMaker 10 project gets archived. If needed, you can access and download the older projects from the **Archived Apps** tab.
 
 ![](/learn/assets/upgraded-project-archived.png)
+
+## Archiving Upgrade In-progress Projects
+
+If you are in the middle of migrating a project from WaveMaker 10 to WaveMaker 11.x version, see [Ending Support for WaveMaker 10 projects](/learn/blog/2023/08/11/wavemaker10x-end-of-support#upgrade-in-progress-archived-apps).
