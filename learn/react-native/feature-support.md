@@ -15,7 +15,7 @@ From WaveMaker 11 release, React Native supports the following features. In the 
 |![Supported React Native Features](/learn/assets/supported.png) |Web Services |  [Using Web Serives](/learn/app-development/services/web-services/web-services) |
 | ![Supported React Native Features](/learn/assets/supported.png)|Java Service |  [Using Java Service](/learn/app-development/services/java-services/java-service) | 
 | ![Supported React Native Features](/learn/assets/supported.png)   |API Import | [Using API Import](/learn/app-development/services/api-designer/import-rest-apis-swagger) | 
-| ![Supported React Native Features](/learn/assets/supported.png) | Databases | [Using Databases](https://docs.wavemaker.com/learn/app-development/services/database-services)|
+| ![Supported React Native Features](/learn/assets/supported.png) | Databases | [Using Databases](/learn/app-development/services/database-services)|
 
 ## Security Service
 
