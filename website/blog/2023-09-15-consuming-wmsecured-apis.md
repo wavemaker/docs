@@ -30,7 +30,7 @@ If the application is secured with an SSO security provider like OpenID, SAML, C
 
 If a client that needs to invoke the WaveMaker application APIs has security configured, the same user context cannot be used to access the WaveMaker secured APIs as the security configured can be different, even if it is the same security provider there cannot be common user context between them.
 
-This can now be achieved in WaveMaker by using JWS or Opaque tokens as the secondary authentication providers. In other words, if the WaveMaker application's APIs are secured and are to be used in other clients then, the user can enable a secondary authentication provider i.e., JWS or Opaque providers. This makes the APIs accept a token and provide user access to the APIs.
+This can now be achieved in WaveMaker by using JWS or Opaque tokens as the secondary authentication providers. In other words, if the WaveMaker application's APIs are secured and are to be used by other clients then, the user can enable a secondary authentication provider i.e., JWS or Opaque providers. This makes the APIs accept a token and provide user access to the APIs.
 
 For example, consider a client and one WaveMaker application, the application provides some services and has the primary security SAML configured. If the service APIs are to be accessed from the same application UI then the existing architecture of the WaveMaker applications takes care of the complete flow. In this flow, the user is redirected to the SAML server for authentication and once the user is authenticated, they get redirected to the application.
 
@@ -68,6 +68,10 @@ If the token is an ID token, configure the JWS provider, and if it is an access 
 
 WaveMaker application can be configured to accept an ID token or access token as bearer token in the authorization header. It is then validated using the JWS provider if it is an ID token or using Opaque token provider if it is an opaque access token. 
 
-This makes the application a resource server that validates ID and access tokens to share resources. To know how to configure JWS or opaque as secondary authentication providers, see [Configure JWS and Opaque providers](learn/how-tos/configuring-jws-and-opaque-security-providers).
+This makes the application a resource server that validates ID and access tokens to share resources. To know how to configure JWS or opaque as secondary authentication providers, see [Configure JWS and Opaque providers](/learn/how-tos/configuring-jws-and-opaque-security-providers).
+
+## Configuring WaveMaker Application as Client
+
+WaveMaker application can be configured as a client to pass the ID or access token to the resource server. To know more, see [How to Pass Logged-In User ID/Access Tokens as Header](/learn/how-tos/passing-id-access-tokens-as-header).
 
 
