@@ -3,9 +3,9 @@ title: "Flashlight"
 id: "flashlight"
 ---
 ---
-import flashlightSetup '/learn/assets/performance/flashlight-setup.png';
-import flashlightDemo '/learn/assets/performance/flashlight-demo.png';
-import flashlightThreads '/learn/assets/performance/flashlight-threads.png';
+import flashlightSetup from '/learn/assets/performance/flashlight-setup.png';
+import flashlightDemo from '/learn/assets/performance/flashlight-demo.png';
+import flashlightThreads from '/learn/assets/performance/flashlight-threads.png';
 
 ## Flashlight
 
