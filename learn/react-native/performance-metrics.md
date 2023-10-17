@@ -23,10 +23,10 @@ that strategies are formulated upon a comprehensive, nuanced understanding of pe
 We have identified categorized few important metrics that are essential for measuring the performance of a mobile
 application. The following are the categories of performance metrics:
 
-* React Native JS
-* Bridge
-* Native
-* Device
+- React Native JS
+- Bridge
+- Native
+- Device
 
 and here the list of metrics under each category:
 
@@ -46,9 +46,9 @@ This metric measures the time taken by a JS thread to execute the code and in An
 
 #### Baseline:
 
-* Ideal - 60 FPS (frames per second)
-* Reasonable - 30 FPS
-* Less than 30 FPS (Sluggish app)
+- Ideal - 60 FPS (frames per second)
+- Reasonable - 30 FPS
+- Less than 30 FPS (Sluggish app)
 
 ### Navigation Render Time (UI Screen Transition Speeds)
 
@@ -64,9 +64,9 @@ React Native JS
 
 #### Baseline:
 
-* Simple apps - under 0.3 sec (300 ms)
-* Moderate apps - 0.3 sec to 1 sec
-* Complex apps - under 1 sec
+- Simple apps - under 0.3 sec (300 ms)
+- Moderate apps - 0.3 sec to 1 sec
+- Complex apps - under 1 sec
 
 ### Screen re-render Time
 
@@ -82,9 +82,9 @@ React Native JS
 
 #### Baseline:
 
-* Standard - 60 FPS (frames per second)
-* Higher - 90 & 120
-* Lower - 30 FPS
+- Standard - 60 FPS (frames per second)
+- Higher - 90 & 120
+- Lower - 30 FPS
 
 ### Javascript Bundle Size
 
@@ -98,8 +98,8 @@ The size of your JavaScript bundle and it can impact app load times and performa
 
 #### Baseline:
 
-* Small to Medium sized apps: 4-6 MB or less
-* Large & Complex apps: 6-10 MB or less
+- Small to Medium sized apps: 4-6 MB or less
+- Large & Complex apps: 6-10 MB or less
 
 ### UI Frame Rate (Main Thread)
 
@@ -113,9 +113,9 @@ This metric calculates the time taken to measure layout/draw the UI and Navigato
 
 #### Baseline:
 
-* Ideal - 60 FPS (frames per second)
-* Reasonable - 30 FPS
-* Less than 30 FPS (Sluggish app)
+- Ideal - 60 FPS (frames per second)
+- Reasonable - 30 FPS
+- Less than 30 FPS (Sluggish app)
 
 ### Stutters (Jank)
 

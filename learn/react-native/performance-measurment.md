@@ -17,10 +17,10 @@ So, let's see the various performance metrics and tools used to measure them in 
 
 - [Performance Metrics](https://docs.wavemaker.com/learn/react-native/performance-metrics)
 - **Performance Tools** 
-  * [Flashlight](https://docs.wavemaker.com/learn/react-native/flashlight)
-  * [Flipper - Default](https://docs.wavemaker.com/learn/react-native/flipper)
-  * [Flipper Plugin - RN Perf Monitor](https://docs.wavemaker.com/learn/react-native/rn-perf-monitor)
-  * [React Native Performance Monitor](https://docs.wavemaker.com/learn/react-native/react-native-performance-monitor)
+  - [Flashlight](https://docs.wavemaker.com/learn/react-native/flashlight)
+  - [Flipper - Default](https://docs.wavemaker.com/learn/react-native/flipper)
+  - [Flipper Plugin - RN Perf Monitor](https://docs.wavemaker.com/learn/react-native/rn-perf-monitor)
+  - [React Native Performance Monitor](https://docs.wavemaker.com/learn/react-native/react-native-performance-monitor)
 
 :::note
 DEV mode should be disabled while measuring performance.
