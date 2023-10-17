@@ -12,26 +12,26 @@ import perfFormula from '/learn/assets/performance/rn-perf-formula.png';
 
 ### Measure metrics:
 
-* Performance Score (Using a custom formula as below:)
+- Performance Score (Using a custom formula as below:)
 
 <img src={perfFormula} style={{width:"35%"}} />
 
 ### Data Captured:
 
-* JS & UI FPS data over time
+- JS & UI FPS data over time
 
 ### CI Support: Yes
 
 ### Strengths:
 
-* Supports both Android / IOS
-* JS / UI thread tracked with an scenario
+- Supports both Android / IOS
+- JS / UI thread tracked with an scenario
 
 ### Limitations:
 
-* Depends on Flipper - Desktop app
-* Can only measure debug apps
-* Need to install packages
+- Depends on Flipper - Desktop app
+- Can only measure debug apps
+- Need to install packages
 
 ### Setup:
 
@@ -47,5 +47,5 @@ import perfFormula from '/learn/assets/performance/rn-perf-formula.png';
 
 ### Reference Links:
 
-* [RN Perf Monitor Github Link](https://github.com/bamlab/react-native-flipper-performance-monitor)
-* [RN Perf Monitor Blog](https://www.bam.tech/article/measuring-and-improving-performance-on-a-react-native-app)
+- [RN Perf Monitor Github Link](https://github.com/bamlab/react-native-flipper-performance-monitor)
+- [RN Perf Monitor Blog](https://www.bam.tech/article/measuring-and-improving-performance-on-a-react-native-app)

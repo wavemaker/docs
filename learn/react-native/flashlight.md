@@ -24,27 +24,27 @@ import flashlightThreads from '/learn/assets/performance/flashlight-threads.png'
 
 Live Data capture from our app:
 
-* FPS
-* CPU
-* RAM
+- FPS
+- CPU
+- RAM
 
 ### CI Support: Yes
 
 ### Strengths:
 
-* Auto-detects any app / no package installations or pre-config required
-* Live Monitoring JS / UI threads
-* Thread details tracked
-* Standalone tool - CLI / CI support
-* Measure / Compare performance results
-* Debug mode not required (prod apps can also be tested)
-* Supports Maestro tests (Mobile UI automation)
+- Auto-detects any app / no package installations or pre-config required
+- Live Monitoring JS / UI threads
+- Thread details tracked
+- Standalone tool - CLI / CI support
+- Measure / Compare performance results
+- Debug mode not required (prod apps can also be tested)
+- Supports Maestro tests (Mobile UI automation)
 
 ### Limitations:
 
-* ios - Work in progress [Refer Ticket](https://github.com/bamlab/flashlight/issues/106)
-* Cloud version & some other features may get into paid subscription
-* [Measures RSS](https://github.com/bamlab/flashlight/issues/11#issuecomment-1219317891) (Residential Set Size) side only not PSS (Proportional Set Size)
+- ios - Work in progress [Refer Ticket](https://github.com/bamlab/flashlight/issues/106)
+- Cloud version & some other features may get into paid subscription
+- [Measures RSS](https://github.com/bamlab/flashlight/issues/11#issuecomment-1219317891) (Residential Set Size) side only not PSS (Proportional Set Size)
 
 ### Setup:
 
@@ -64,6 +64,6 @@ Live Data capture from our app:
 
 ### Reference Links:
 
-* [Flashlight](https://flashlight.dev/)
-* [Flashlight Docs](https://docs.flashlight.dev/)
-* [Flashlight CI](https://docs.flashlight.dev/test/ci)
+- [Flashlight](https://flashlight.dev/)
+- [Flashlight Docs](https://docs.flashlight.dev/)
+- [Flashlight CI](https://docs.flashlight.dev/test/ci)

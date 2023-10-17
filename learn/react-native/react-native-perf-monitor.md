@@ -24,9 +24,9 @@ DEV mode should be disabled while measuring performance.
 
 ### Limitations:
 
-* Will get only base reference values
-* Need to use/depend on other tools to investigate further
-* Can only measure debug apps
+- Will get only base reference values
+- Need to use/depend on other tools to investigate further
+- Can only measure debug apps
 
 ### Setup:
 
@@ -41,4 +41,4 @@ DEV mode should be disabled while measuring performance.
 
 ### Reference Links:
 
-* [React Native Performance Monitor](https://reactnative.dev/docs/performance#what-you-need-to-know-about-frames)
+- [React Native Performance Monitor](https://reactnative.dev/docs/performance#what-you-need-to-know-about-frames)

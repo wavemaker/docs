@@ -15,8 +15,8 @@ provides a competitive edge in the bustling digital marketplace.
 
 So, let's see the various performance metrics and tools used to measure them in detail with below sections:
 
-* [Performance Metrics](https://docs.wavemaker.com/learn/react-native/performance-metrics)
-* **Performance Tools** 
+- [Performance Metrics](https://docs.wavemaker.com/learn/react-native/performance-metrics)
+- **Performance Tools** 
   * [Flashlight](https://docs.wavemaker.com/learn/react-native/flashlight)
   * [Flipper - Default](https://docs.wavemaker.com/learn/react-native/flipper)
   * [Flipper Plugin - RN Perf Monitor](https://docs.wavemaker.com/learn/react-native/rn-perf-monitor)
