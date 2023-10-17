@@ -4,8 +4,8 @@ id: "performance-metrics"
 ---
 ---
 import metricsCategory from '/learn/assets/performance/performance-metrics-category.png';
-import metricsSummary from '//learn/assets/performance/metric-1-ordered.png';
-import metricsSummary2 from '//learn/assets/performance/metric-2-ordered.png';
+import metricsSummary from '/learn/assets/performance/metric-1-ordered.png';
+import metricsSummary2 from '/learn/assets/performance/metric-2-ordered.png';
 
 ## Performance Metrics
 
@@ -226,9 +226,9 @@ Device
 
 #### Baseline:
 
-* Cold launch: 2–4 secs
-* Warm launch: 2-3 secs
-* Hot launch: 1–1.5 secs
+- Cold launch: 2–4 secs
+- Warm launch: 2-3 secs
+- Hot launch: 1–1.5 secs
 
 ### CPU Usage
 
@@ -242,9 +242,9 @@ CPU utilization indicates the amount of load handled by individual processor cor
 
 #### Baseline:
 
-* Ideal (No user interaction & background tasks) - Below 5%
-* During User Interaction - Below 20-30%
-* No 100% spike for longer periods (short spikes are okay)
+- Ideal (No user interaction & background tasks) - Below 5%
+- During User Interaction - Below 20-30%
+- No 100% spike for longer periods (short spikes are okay)
 
 ### Memory Usage
 
@@ -258,9 +258,9 @@ Memory utilization is the average utilization derived from the percent of availa
 
 #### Baseline:
 
-* At first launch - Below 100MB
-* While in use - Under 200-300MB
-* Minimize memory leaks
+- At first launch - Below 100MB
+- While in use - Under 200-300MB
+- Minimize memory leaks
 
 ### Battery Consumption
 
