@@ -1,6 +1,7 @@
 ---
-title: "Performance Metrics"
+title: "Mobile App Performance Metrics"
 id: "performance-metrics"
+sidebar_label: "Performance Metrics"
 ---
 ---
 import metricsCategory from '/learn/assets/performance/performance-metrics-category.png';

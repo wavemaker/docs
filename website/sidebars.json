@@ -669,8 +669,19 @@
 						"react-native/generate-web-preview-locally",
 						"react-native/web-preview-debug",
 						"react-native/expo-debug",
+						"react-native/flipper"
+					]
+				},
+				{
+					"type": "category",
+					"label": "Performance Measurement",
+					"items": [
+						"react-native/performance-measurement",
+						"react-native/performance-metrics",
 						"react-native/flipper",
-						"react-native/performance-measurement"
+						"react-native/rn-perf-monitor",
+						"react-native/flashlight",
+						"react-native/react-native-perf-monitor"
 					]
 				},
 				{

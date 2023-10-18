@@ -1,6 +1,7 @@
 ---
 title: "Flashlight - Performance Tool for React Native App"
 id: "flashlight"
+sidebar_label: "Flashlight"
 ---
 ---
 import flashlightSetup from '/learn/assets/performance/flashlight-setup.png';

@@ -1,6 +1,7 @@
 ---
-title: "RN Perf Monitor (Flipper Plugin)"
+title: "React Native Performance Monitor - Flipper Plugin"
 id: "rn-perf-monitor"
+sidebar_label: "Flipper Performance Plugin(s)"
 ---
 ---
 import rnPerf from '/learn/assets/performance/rn-perf.png';
