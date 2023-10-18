@@ -1,5 +1,5 @@
 ---
-title: "Flashlight"
+title: "Flashlight - Performance Tool for React Native App"
 id: "flashlight"
 ---
 ---
