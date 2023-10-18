@@ -1,11 +1,9 @@
 ---
-title: "Performance Measurement"
+title: "Optimizing Performance Measurement for React Native App"
 id: "performance-measurement"
 sidebar_label: "Performance Measurement"
 ---
 ---
-
-## Performance Measurement
 
 Measuring the performance of a mobile application is crucial for ensuring optimal user experience and functionality.
 It enables developers to identify and rectify issues promptly, safeguarding user satisfaction and retention.
@@ -15,12 +13,12 @@ provides a competitive edge in the bustling digital marketplace.
 
 So, let's see the various performance metrics and tools used to measure them in detail with below sections:
 
-- [Performance Metrics](https://docs.wavemaker.com/learn/react-native/performance-metrics)
+- [Performance Metrics](/learn/react-native/performance-metrics)
 - **Performance Tools** 
-  - [Flashlight](https://docs.wavemaker.com/learn/react-native/flashlight)
-  - [Flipper - Default](https://docs.wavemaker.com/learn/react-native/flipper)
-  - [Flipper Plugin - RN Perf Monitor](https://docs.wavemaker.com/learn/react-native/rn-perf-monitor)
-  - [React Native Performance Monitor](https://docs.wavemaker.com/learn/react-native/react-native-performance-monitor)
+  - [Flashlight](/learn/react-native/flashlight)
+  - [Flipper - Default](/learn/react-native/flipper)
+  - [Flipper Plugin - RN Perf Monitor](/learn/react-native/rn-perf-monitor)
+  - [React Native Performance Monitor](/learn/react-native/react-native-performance-monitor)
 
 :::note
 DEV mode should be disabled while measuring performance.

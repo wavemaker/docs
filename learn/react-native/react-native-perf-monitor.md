@@ -1,6 +1,6 @@
 ---
 title: "React Native Performance Monitor"
-id: "react-native-performance-monitor"
+id: "react-native-perf-monitor"
 ---
 ---
 import PerfMonitorSteps from '/learn/assets/performance/native-perf-monitor.png';
