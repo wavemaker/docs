@@ -15,10 +15,10 @@ So, let's see the various performance metrics and tools used to measure them in 
 
 - [Performance Metrics](/learn/react-native/performance-metrics)
 - **Performance Tools** 
-  - [Flashlight](/learn/react-native/flashlight)
+  - [Flashlight](/learn/react-native/flashlight-performance-tool)
   - [Flipper - Default](/learn/react-native/flipper)
-  - [Flipper Plugin - RN Perf Monitor](/learn/react-native/rn-perf-monitor)
-  - [React Native Performance Monitor](/learn/react-native/react-native-perf-monitor)
+  - [Flipper Plugin - RN Perf Monitor](/learn/react-native/flipper-performance-plugin)
+  - [React Native Performance Monitor](/learn/react-native/performance-monitor)
 
 :::note
 DEV mode should be disabled while measuring performance.

@@ -1,6 +1,6 @@
 ---
 title: "Flashlight - Performance Tool for React Native App"
-id: "flashlight"
+id: "flashlight-performance-tool"
 sidebar_label: "Flashlight"
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 title: "React Native Performance Monitor - Flipper Plugin"
-id: "rn-perf-monitor"
+id: "flipper-performance-plugin"
 sidebar_label: "Flipper Performance Plugin(s)"
 ---
 ---
