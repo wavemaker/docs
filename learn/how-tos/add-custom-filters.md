@@ -43,26 +43,27 @@ public class CustomFilter implements Filter {
 }
 ```
 
-2. Navigate to the File Explorer and upload the class into src/main/java into the required package. After uploading the class click cancel to see the changes.
+2. Navigate to the File Explorer and upload the class into src/main/java into the required package. After uploading the class click cancel to apply the changes.
 
 [![CustomFilter_class_upload](/learn/assets/CustomFilterclass_upload.jpg)](/learn/assets/CustomFilterclass_upload.jpg)
 
-### Custom Filter declaration
-Define the above created CustomFilter class bean in **project-user-spring.xml**.
-
-[![CustomFilter_bean_defination](/learn/assets/CustomFilter_bean_def.jpg)](/learn/assets/CustomFilter_bean_def.jpg)
+3. Define the above created CustomFilter class bean in **project-user-spring.xml**.
 
 ```java
 <bean class="com.filters.CustomFilter" id="customFilter"/>
 ```
 
+[![CustomFilter_bean_defination](/learn/assets/CustomFilter_bean_def.jpg)](/learn/assets/CustomFilter_bean_def.jpg)
+
 ### Add Custom Filter to the application Security Filters
-In **general-options.json** at the `customFilterList` is used to add custom filters.This attribute accepts list of objects.
+In **general-options.json** `customFilterList` attribute is used to add custom filters.This attribute accepts list of objects.
 
 
-In the `customFilterList` attribute, you can use any name for a custom filter in the `name` field. The `ref` field accepts the bean id of the CustomFilter bean defined in **project-user-spring.xml**. Third field in `customFilterList` attribute can be `position`/`before`/`after`.
+In the `customFilterList` attribute, you can use any name for a custom filter in the `name` field. The `ref` field accepts the bean id of the CustomFilter bean defined in **project-user-spring.xml**. Third field in `customFilterList` attribute defines where to add custom filter in FilterChain and the field can be any one of these `position`, `after`, and `before`. This third field takes the filter enum value which represents the pre-defined spring filter.
 
-- When a `position` attribute is used, custom filter will be added at the position of pre-defined spring filter which is mentioned in value of `position` field.
+#### Using position field in customFilterList
+
+1. When a `position` attribute is used, custom filter will be added at the position of pre-defined spring filter which is mentioned in value of `position` field.
 
 ```java
 "customFilterList" : [
@@ -74,7 +75,11 @@ In the `customFilterList` attribute, you can use any name for a custom filter in
   ],
 ```
 
-- When a `before` attribute is used, custom filter will be added before the position of pre-defined spring filter which is mentioned in value of `before` field.
+[![CustomFilter_adding_using_position](/learn/assets/Custom_filter_adding_using_position.jpg)](/learn/assets/Custom_filter_adding_using_position.jpg)
+
+#### Using before field in customFilterList
+
+1. When a `before` attribute is used, custom filter will be added before the position of pre-defined spring filter which is mentioned in value of `before` field.
 ```java
 "customFilterList" : [
     {
@@ -85,7 +90,11 @@ In the `customFilterList` attribute, you can use any name for a custom filter in
   ],
 ```
 
-- When a `after` attribute is used, custom filter will be added after the position of pre-defined spring filter which is mentioned in value of `after` field.
+[![CustomFilter_adding_using_position](/learn/assets/Custom_filter_adding_using_before.jpg)](/learn/assets/Custom_filter_adding_using_before.jpg)
+
+#### Using after field in customFilterList
+
+1. When a `after` attribute is used, custom filter will be added after the position of pre-defined spring filter which is mentioned in value of `after` field.
 ```java
 "customFilterList" : [
     {
@@ -95,6 +104,9 @@ In the `customFilterList` attribute, you can use any name for a custom filter in
     }
   ],
 ```
+
+[![CustomFilter_adding_using_position](/learn/assets/Custom_filter_adding_using_after.jpg)](/learn/assets/Custom_filter_adding_using_after.jpg)
+
 <br/>
 
 :::note
@@ -133,4 +145,4 @@ The below enum values can be given as input for `position`, `after`, and `before
 
 :::
 
-On adding your custom filter in the `customFilterList` attribute in **general-options.json**, WaveMaker will internally adds this filter in your application FilterChain.
+On adding your custom filter in the `customFilterList` attribute in **general-options.json**, WaveMaker internally adds this filter in your application FilterChain.
