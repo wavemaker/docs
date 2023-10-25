@@ -176,4 +176,4 @@ In conclusion, design tokens are not just a novel concept; they are the game cha
 
 As we simplify the process, we can standardize the creation of design tokens, the naming conventions of design tokens, and the different types of design tokens. Using design tokens instead of hard coded values ensures more flexible design systems that are easy to build, maintain, and scale.
 
-In the next blog post, see how it works with SaaS applications.
+In the next blog post, see how it works with SaaS application and with WaveMaker.
