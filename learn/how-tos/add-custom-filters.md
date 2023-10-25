@@ -7,16 +7,19 @@ id : "add-custom-filters"
 In Spring Security, a filter is a fundamental component that plays a crucial role in controlling and securing access to resources within a Spring-based web application. Filters in Spring Security are responsible for performing various security-related tasks, such as authentication, authorization, and request processing, before or after a request reaches the application's endpoints.
 
 
-### Need of Custom Filters
-In every security enabled application, you can find **FilterChain**.By default FilterChain consists of spring's pre-defined filters which performs authentication and authorization. But if you want to add custom pre or post processing tasks on request or response you need to add custom filters in FilterChain.
+### Why Custom Filters?
+
+In every security-enabled application, you can find **FilterChain**. By default, **FilterChain** consists of Spring's pre-defined filters which perform authentication and authorization. But if you want to add custom pre or post-processing tasks on request or response you need to add custom filters in **FilterChain**.
 
 :::note
-**FilterChain**: It refers to a series or sequence of filters that are applied to incoming requests before they reach the intended servlet or resource. Each filter in the filter chain performs specific pre-processing or post-processing tasks on the request or response, such as authentication, authorization, logging, data transformation, or error handling.
+
+**FilterChain** refers to a series or sequence of filters that are applied to incoming requests before they reach the intended servlet or resource. Each filter in the filter chain performs specific pre-processing or post-processing tasks on the request or response, such as authentication, authorization, logging, data transformation, or error handling.
+
 :::
 
-### Create Custom Filter
+### Creating Custom Filter
 
-1. Create a custom java class that extends Filter. After creating the class click save.
+1. Create a custom Java class that extends Filter. After creating the class click Save.
 
 ```java
 package com.filters;
@@ -43,11 +46,11 @@ public class CustomFilter implements Filter {
 }
 ```
 
-2. Navigate to the File Explorer and upload the class into src/main/java into the required package. After uploading the class click cancel to apply the changes.
+2. Navigate to the File Explorer and upload the class to src/main/java into the required package. After uploading the class click Cancel to apply the changes.
 
 [![CustomFilter_class_upload](/learn/assets/CustomFilterclass_upload.jpg)](/learn/assets/CustomFilterclass_upload.jpg)
 
-3. Define the above created CustomFilter class bean in **project-user-spring.xml**.
+3. Define the above-created `CustomFilter` class bean in **project-user-spring.xml**.
 
 ```java
 <bean class="com.filters.CustomFilter" id="customFilter"/>
@@ -55,15 +58,15 @@ public class CustomFilter implements Filter {
 
 [![CustomFilter_bean_defination](/learn/assets/CustomFilter_bean_def.jpg)](/learn/assets/CustomFilter_bean_def.jpg)
 
-### Add Custom Filter to the application Security Filters
-In **general-options.json** `customFilterList` attribute is used to add custom filters.This attribute accepts list of objects.
+### Adding Custom Filter to Application Security Filters
 
+In **general-options.json**, the `customFilterList` attribute is used to add custom filters. This attribute accepts a list of objects.
 
-In the `customFilterList` attribute, you can use any name for a custom filter in the `name` field. The `ref` field accepts the bean id of the CustomFilter bean defined in **project-user-spring.xml**. Third field in `customFilterList` attribute defines where to add custom filter in FilterChain and the field can be any one of these `position`, `after`, and `before`. This third field takes the filter enum value which represents the pre-defined spring filter.
+In the `customFilterList` attribute, you can use any name for a custom filter in the `name` field. The `ref` field accepts the bean ID of the CustomFilter bean defined in **project-user-spring.xml**. The third field in the `customFilterList` attribute defines where to add a custom filter in FilterChain and the field can be any one of these positions, `position`, `after`, and `before`. This field takes the filter enum value which represents the pre-defined Spring filter.
 
-#### Using position field in customFilterList
+#### Using Position Field in CustomFilterList
 
-1. When a `position` attribute is used, custom filter will be added at the position of pre-defined spring filter which is mentioned in value of `position` field.
+1. When a `position` attribute is used, a custom filter will be added at the position of the pre-defined Spring filter which is mentioned in the value of `position` field.
 
 ```java
 "customFilterList" : [
@@ -77,9 +80,9 @@ In the `customFilterList` attribute, you can use any name for a custom filter in
 
 [![CustomFilter_adding_using_position](/learn/assets/Custom_filter_adding_using_position.jpg)](/learn/assets/Custom_filter_adding_using_position.jpg)
 
-#### Using before field in customFilterList
+#### Using Before Field in CustomFilterList
 
-1. When a `before` attribute is used, custom filter will be added before the position of pre-defined spring filter which is mentioned in value of `before` field.
+1. When a `before` attribute is used, a custom filter will be added before the position of the pre-defined Spring filter which is mentioned in the value of `before` field.
 ```java
 "customFilterList" : [
     {
@@ -92,9 +95,11 @@ In the `customFilterList` attribute, you can use any name for a custom filter in
 
 [![CustomFilter_adding_using_position](/learn/assets/Custom_filter_adding_using_before.jpg)](/learn/assets/Custom_filter_adding_using_before.jpg)
 
-#### Using after field in customFilterList
+#### Using After Field in CustomFilterList
 
-1. When a `after` attribute is used, custom filter will be added after the position of pre-defined spring filter which is mentioned in value of `after` field.
+1. When an `after` attribute is used, a custom filter will be added after the position of the pre-defined Spring filter which is mentioned in the value of `after` field.
+
+
 ```java
 "customFilterList" : [
     {
