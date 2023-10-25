@@ -16,7 +16,7 @@ In every security enabled application, you can find **FilterChain**.By default F
 
 ### Create Custom Filter
 
-1. Create a custom java class that extends Filter. After creating the class click save.
+1. Create a custom java class that extends Filter. After creating save the file.
 
 ```java
 package com.filters;
@@ -47,19 +47,21 @@ public class CustomFilter implements Filter {
 
 [![CustomFilter_class_upload](/learn/assets/CustomFilterclass_upload.jpg)](/learn/assets/CustomFilterclass_upload.jpg)
 
-3. Define the above created CustomFilter class bean in **project-user-spring.xml**.
+3. Define the above created CustomFilter class bean in **project-user-spring.xml** file.
 
 ```java
 <bean class="com.filters.CustomFilter" id="customFilter"/>
 ```
 
-[![CustomFilter_bean_defination](/learn/assets/CustomFilter_bean_def.jpg)](/learn/assets/CustomFilter_bean_def.jpg)
+[![CustomFilter_bean_defination](/learn/assets/CustomFilter_bean_defination.jpg)](/learn/assets/CustomFilter_bean_defination.jpg)
+
+By following above steps you can create a bean of custom filter, but to add custom filter in FilterChain follow the below steps.
 
 ### Add Custom Filter to the application Security Filters
-In **general-options.json** `customFilterList` attribute is used to add custom filters.This attribute accepts list of objects.
+In **general-options.json** file, `customFilterList` attribute is used to add custom filters.This attribute accepts list of objects.
 
 
-In the `customFilterList` attribute, you can use any name for a custom filter in the `name` field. The `ref` field accepts the bean id of the CustomFilter bean defined in **project-user-spring.xml**. Third field in `customFilterList` attribute defines where to add custom filter in FilterChain and the field can be any one of these `position`, `after`, and `before`. This third field takes the filter enum value which represents the pre-defined spring filter.
+In the `customFilterList` attribute, you can use any name for a custom filter in the `name` field. The `ref` field accepts the bean id of the CustomFilter bean defined in **project-user-spring.xml** file. Third field in `customFilterList` attribute defines where to add custom filter in FilterChain and the field can be any one of these `position`, `after`, and `before`. This third field takes the filter enum value which represents the pre-defined spring filter.
 
 #### Using position field in customFilterList
 
