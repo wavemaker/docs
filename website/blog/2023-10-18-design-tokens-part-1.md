@@ -4,27 +4,29 @@ author: Lovin Ahmed
 ---
 ---
 
-There is a lot of talk going on lately about design tokens. So, what are design tokens? As I understand it, design tokens are platform-agnostic variables that represent the look and feel of your product. Design tokens are the only source of truth for the design system.
+Design tokens are platform-agnostic variables. They are the single source of truth for the design system, and all applications that use the design system refer to them.
 
-They are maintained in isolation; all the applications refer to them. There are abilities for the design token author to affect a sweeping change across all the applications by simply changing the value of the token. Design tokens are generally defined in human readable formats like YAML or JSON. A design token codifies a design decision in a way that is easily enforced, like choosing a brand color, typeface, or spacing between a heading and paragraph.
+Design tokens allow designers to make sweeping changes to the look and feel of a product by simply changing the value of a single token. They are typically defined in human-readable formats like JSON or YAML, which makes them easy to understand and maintain.
+
+Design tokens codify design decisions in a way that is easy to enforce, which helps to ensure consistency across all products that use the design system.
 
 <!-- truncate -->
 
 ## What are Design Tokens?
 
-**"Design tokens constitute atomic building blocks of your design system that can be used to define "typography", "colors", and "spacing" and shared across platforms like iOS, Android, and regular websites. They provide the foundation for theming and design process automation."**
+Design tokens are the building blocks of a design system. They are platform-agnostic variables that represent the design elements of a product, such as typography, colors, spacing, and more. Design tokens can be shared across iOS, Android, and regular websites, and they provide the foundation for theming and design process automation to automate tasks in the design process, such as generating CSS variables or style guides.
 
 ## Who uses Design Tokens?
 
 One of the fundamental questions when creating a design system is:
 
-**“Who is going to use it and how?”**
+### Who is going to use it and how?
 
-A design system is not just a project; it is a living document. Design systems are good for business and even better for people. This brings a huge sense of relief for ***product managers***, ***project managers***, and ***VPs of Design***.
+A design system is not just a project; it is a living document. Design systems are good for business and even better for people, providing a huge sense of relief for ***product managers***, ***project managers***, and ***VPs of Design***.
 
 So, what does a design system do for your designers and developers?
 
-With design tokens, designers can easily update and reproduce design changes throughout the project, eliminating the tedious need to manually update elements individually. They save time and effort and ensure flawless visual consistency throughout the design process.
+Designers and developers benefit from design systems in a variety of ways. For example, design tokens allow designers to easily update and reproduce design changes throughout a project, eliminating the need to manually update elements individually. This saves time and effort, and ensures flawless visual consistency throughout the design process.
 
 ## Why should we use design tokens?
 
@@ -33,11 +35,16 @@ It is important for companies with many products to include design tokens in the
 As digital transformation accelerates, companies face the challenge of scaling design across an increasing number of screens, tech stacks, and product teams. As the product footprint grows, propagating even simple design decisions (such as a color change) can take weeks to accomplish.
 
 To address this challenge, the design system team at Salesforce established a new data layer and a practice that helps scale design across multiple platforms and teams. They named it **Design Tokens**. By using design tokens, it can take minutes—instead of weeks—to implement design decisions across platforms
+
 ![why-tokens.png](/learn/assets/why-tokens.png)
 
 The key benefits of using design tokens are
 
-**“Consistency”,  “Efficiency”, “Flexibility and Adaptability”, “Documentation”**
+- Consistency
+- Efficiency
+- Flexibility
+- Adaptability
+- Documentation
 
 Let’s try to understand with an example how adopting modular design tokens brings flexibility and scalability to design systems.
 
@@ -67,7 +74,9 @@ How can we start our design system using simplified tokens?
 
 The solution is to use a concept similar to [atomic design](https://bradfrost.com/blog/post/atomic-web-design/), where we will have a base token and a semantic token.
 
-- **Base Token**: The base token will represent the literal value of the property. It will be the base, and you don’t need to have many rules for creation, for example:
+### Base Token
+
+The base token will represent the literal value of the property. It will be the base, and you don’t need to have many rules for creation, for example:
 
 ```css
 colorBase {
@@ -75,7 +84,9 @@ color.blue.50 = #000022
 color.blue.100 = #000033
 }
 ```
-- **Semantic Token**: Tokens that represent the character of the base design tokens If the designer decides the border color should be the brand primary, the border color will change accordingly.
+### Semantic Token
+
+Tokens that represent the character of the base design tokens If the designer decides the border color should be the brand primary, the border color will change accordingly.
 
 ```css
 color.blue.50 = #000022
@@ -90,16 +101,27 @@ button.border.color = color.brand.primary
 ### Types of Tokens
 
 There are three types of design tokens:
-1. **Global tokens**: which control all instances of a particular design decision, and can be defined by their context or theme. You can refer to [Shades Generator](https://javisperez.github.io/tailwindcolorshades/) to create tonal colors.
-  ![global-token.png](/learn/assets/global-token.png) 
-2. **Alias tokens**: which are context specific and reference global tokens. They are also known as semantic tokens.
-  ![alias-token.png](/learn/assets/alias-token.png)
-3. **Component-specific tokens**: which are related to the individual parts of a component. Component-specific tokens are self-explanatory and aim to provide enough context about the use of token
+
+#### Global Tokens
+
+Global tokens control all instances of a particular design decision, and can be defined by their context or theme. You can refer to [Shades Generator](https://javisperez.github.io/tailwindcolorshades/) to create tonal colors.
+
+![global-token.png](/learn/assets/global-token.png) 
+
+#### Alias Tokens
+
+Alias tokens are context-specific and reference global tokens. They are also known as semantic tokens.
+
+![alias-token.png](/learn/assets/alias-token.png)
+
+#### Component specific Tokens
+
+Component-specific tokens are related to the individual parts of a component. Component-specific tokens are self-explanatory and aim to provide enough context about the use of token
   ![component-token.png](/learn/assets/component-token.png)
 
 ### Naming Design Tokens
 
-As tokens become more sophisticated, naming patterns matter. For ease of use, it’s recommended to use Category/Type/Item/Subitem/State (CTI) naming conventions to define tokens in a hierarchical tree structure of options and decisions.
+As tokens become more sophisticated, naming patterns matter. For ease of use, it is recommended to use Category/Type/Item/Subitem/State (CTI) naming conventions to define tokens in a hierarchical tree structure of options and decisions.
 
 Each token combines four levels -
 1. **Namespace** levels combining any of _System_ (wm), _Theme_ (material, branding theme) or _Domain_
@@ -115,8 +137,11 @@ Let's see an example token:
 
 The design tokens can be broken down into a few main steps:
 
-- **Centralize** - Manage design tokens in a single place in a platform-agnostic format (e.g., JSON or YAML).
-  ```json
+### Centralize
+
+Manage design tokens in a single place in a platform-agnostic format (e.g., JSON or YAML).
+
+```json
   json {
     “color”: {
       “primary”: { “value” : “#3366FF”},
@@ -127,10 +152,13 @@ The design tokens can be broken down into a few main steps:
       “text”:  { “value”: “{color.text.value}” }
     }
   }
-  ```
+```
 
-- **Transform** - Use a build engine that takes design tokens as input and transforms them into platform-specific or framework-specific style files (e.g., CSS, Sass, iOS, Android, React, etc.). You can develop your own engine, or you can use existing ones like [Style Dictionary](https://amzn.github.io/style-dictionary/#/) and [Theo](https://github.com/salesforce-ux/theo).
-  ```css
+### Transform
+
+Use a build engine that takes design tokens as input and transforms them into platform-specific or framework-specific style files (e.g., CSS, Sass, iOS, Android, React, etc.). You can develop your own engine, or you can use existing ones like [Style Dictionary](https://amzn.github.io/style-dictionary/#/) and [Theo](https://github.com/salesforce-ux/theo).
+
+```css
   css
   :root {
   --color-primary: #3366FF;
@@ -138,10 +166,9 @@ The design tokens can be broken down into a few main steps:
   --button-background: var(--color-primary);
   --button-text: var(--color-text);
   }
-  ```
+```
 
 We will learn more about using design tokens with or without a design system in the coming blogs.
-
 
 ## Conclusion
 
