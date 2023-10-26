@@ -94,11 +94,11 @@ Declare the above-created custom post-authentication success handler implementat
 ```
 At app runtime, WaveMaker will automatically trigger these custom handlers. Follow the above approach for adding multiple success handlers.
 
-### Order of custom success handlers
+### Order of custom authentication success handlers
 
-- By default, in providers like OpenId, SAML, and CAS, there are WaveMaker authentication success handlers. When these security providers are enabled and you are using  the custom authentication success handler, first WaveMaker default success handler will be executed, followed by the custom success handlers.
-- But if the you want to control this order, i.e., first the custom success handler, then the WaveMaker success handler, use the @Order spring annotation with order priority as less than 0 in CustomSuccessHandler class (like @Order(-1), as WaveMaker authentication success handlers have Order as 0).
-- On the other hand, If you give order priority number greater than 0 then WaveMaker's success handler will be executed first,then your's  custom success handler.<br/>
+- By default, in providers like OpenId, SAML, and CAS, there are WaveMaker authentication success handlers. When these security providers are enabled along with the custom authentication success handler, first WaveMaker default authentication success handler will be executed, followed by the custom authentication success handlers.
+- Now to control this order, i.e., first the custom authentication success handler, then the WaveMaker authentication success handler, use the `@Order` spring annotation by setting the order priority as less than 0 in `CustomSuccessHandler` class. For example, `@Order(-1)`, as WaveMaker authentication success handlers have Order as 0.
+- On the other hand, If you give order priority greater than 0 then WaveMaker's authentication success handler will be executed first, then the custom authentication success handler.<br/>
 
 ``` java
 package com.mycompany.myapp.security;
@@ -108,7 +108,7 @@ import com.wavemaker.runtime.security.WMAuthentication;
 
 import org.springframework.core.annotation.Order;
 
-@Order(-1)
+@Order(<order_value>) //order value according to your requirements.
 public class MyCustomAuthenticationSuccessHandler implements WMAuthenticationSuccessHandler {
     ...
 }
