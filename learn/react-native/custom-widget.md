@@ -6,6 +6,11 @@ id: "custom-widget"
 
 ---
 
+import customWidgetWebService from "/learn/assets/widgets/advanced/customWidgetRandomUserWebservice.png"
+import customWidgetVariableRandomuser from "/learn/assets/widgets/advanced/customWidgetVariableRandomuserApi.png"
+import customWidgetVariablePeople from "/learn/assets/widgets/advanced/customWidgetVariablePeople.png"
+import customWidgetPrefabProperties from "/learn/assets/widgets/advanced/customWidgetPrefabProperties.png"
+import customWidgetPrefabEvent from "/learn/assets/widgets/advanced/customWidgetPrefabEvent.png"
 import customWidgetProperties from "/learn/assets/widgets/advanced/customWidgetProperties.png"
 import customWidgetAddProperty from "/learn/assets/widgets/advanced/customWidgetAddProperty.png"
 import customWidgetBindProperty from "/learn/assets/widgets/advanced/customWidgetBindProperty.png"
@@ -113,6 +118,20 @@ Now this Prefab can be implemented in any React Native applications and use Pref
 
 ### React Native App
 
+#### Webservice
+
+Add a new webservice using this api `https://randomuser.me/api?results=10`
+
+<img src={customWidgetWebService} alt="Custom Widget Webservice"/>
+
+#### Variables
+
+Create one webservice variable `RandomuserInvoke` for randomuser webservice shown above and one model variable `people` with type `Entry`.
+
+<img src={customWidgetVariableRandomuser}  alt="Custom Widget Variable Randomuser API"/>
+
+<img src={customWidgetVariablePeople}  alt="Custom Widget Variable People"/>
+
 #### Markup
 
 ```
@@ -166,26 +185,37 @@ Created a Model Variable `people` in Main page with Type as `Entry` and a Web Se
 #### Script
 
 ```js
-Page.onReady = function () {
-  Page.Variables.people.dataSet = Page.calendar1Change("11-05-2023");
+Page.onReady = function() {
+    Page.calendar1Change(new Date());
 };
-Page.calendar1Change = function (data) {
-  let day = new Date(data).getDate();
-  Page.Variables.people.dataSet = [];
-  for (i = 0; i < 3; i++) {
-    if ((day + i) % 8 === 0) {
-      continue;
+Page.calendar1Change = function(data) {
+    let day = new Date(data).getDate();
+    Page.Variables.people.dataSet = [];
+    for (var i = 0; i < 3; i++) {
+        if ((day + i) % 8 === 0) {
+            continue;
+        }
+        Page.Variables.people.dataSet.push(
+            Page.Variables.RandomuserInvoke.dataSet.results[day + i]
+        );
     }
-    Page.Variables.people.dataSet.push(
-      Page.Variables.RandomuserInvoke.dataSet.results[day + i]
-    );
-  }
-  Page.Widgets.randomuserList1.refresh();
-  Page.refresh();
+    Page.Widgets.randomuserList1.refresh();
+    Page.refresh();
 };
 ```
 
 ### Prefab
+
+#### Configuration
+
+Add Prefab UI Property `Date` with Binding Type as `in-bound` and Data Type as `date`
+
+<img src={customWidgetPrefabProperties} alt="Custom Widget Prefab Properties"/>
+
+Add an Event `onChange` in Events section.
+
+<img src={customWidgetPrefabEvent} alt="Custom Widget Prefab Event"/>
+
 
 #### Markup
 
