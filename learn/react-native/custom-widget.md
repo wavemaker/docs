@@ -6,9 +6,6 @@ id: "custom-widget"
 
 ---
 
-import customWidgetWebService from "/learn/assets/widgets/advanced/customWidgetRandomUserWebservice.png"
-import customWidgetVariableRandomuser from "/learn/assets/widgets/advanced/customWidgetVariableRandomuserApi.png"
-import customWidgetVariablePeople from "/learn/assets/widgets/advanced/customWidgetVariablePeople.png"
 import customWidgetPrefabProperties from "/learn/assets/widgets/advanced/customWidgetPrefabProperties.png"
 import customWidgetPrefabEvent from "/learn/assets/widgets/advanced/customWidgetPrefabEvent.png"
 import customWidgetProperties from "/learn/assets/widgets/advanced/customWidgetProperties.png"
@@ -118,19 +115,19 @@ Now this Prefab can be implemented in any React Native applications and use Pref
 
 ### React Native App
 
-#### Webservice
+#### Web Service
 
-Add a new webservice using this api `https://randomuser.me/api?results=10`
+Created a Web service with name `randomuser` with sample api `https://randomuser.me/api?results=10`
 
-<img src={customWidgetWebService} alt="Custom Widget Webservice"/>
+<img src={customWidgetWebService} />
 
 #### Variables
 
-Create one webservice variable `RandomuserInvoke` for randomuser webservice shown above and one model variable `people` with type `Entry`.
+Created a Model Variable `people` in Main page with Type as `Entry` and a Web Service Variable `RandomuserInvoke` for above web service `randomuser`
 
-<img src={customWidgetVariableRandomuser}  alt="Custom Widget Variable Randomuser API"/>
-
-<img src={customWidgetVariablePeople}  alt="Custom Widget Variable People"/>
+<img src={customWidgetModelVariable} />
+<img src={customWidgetServiceVariable} />
+<img src={customWidgetServiceVariableBinding} />
 
 #### Markup
 
@@ -166,21 +163,6 @@ Create one webservice variable `RandomuserInvoke` for randomuser webservice show
     </wm-content>
 </wm-page>
 ```
-
-#### Web Service
-
-Created a Web service with name `randomuser` with sample api `https://randomuser.me/api?results=10`
-
-<img src={customWidgetWebService} />
-
-#### Variables
-
-Created a Model Variable `people` in Main page with Type as `Entry` and a Web Service Variable `RandomuserInvoke` for above web service `randomuser` 
-
-<img src={customWidgetModelVariable} />
-<img src={customWidgetServiceVariable} />
-<img src={customWidgetServiceVariableBinding} />
-
 
 #### Script
 
