@@ -1,17 +1,16 @@
 ---
-title: "How to customize breakpoints for widths of devices listed in show in devices of each widget"
+title: "Form Factor: Customize Breakpoints for Device Widths in Show in Devices"
 id: "customize-breakpoints-for-widths-of-show-in-devices"
-sidebar_label: "Customize breakpoints for show in devices"
+sidebar_label: "Customize Breakpoints Show in Devices"
 ---
 ---
 
-The objective of a web design project is to provide a versatile and user-friendly interface for presenting data. Wavemaker platform provides
-customization options to display the same dataset in two different formats: as a table and as a list. 
-The choice of presentation format adapts to various form factors, which encompass different devices like desktop computers,
-laptops, tablets, and mobile phones. By tailoring the data's appearance to suit the user's device and preferences, 
-this approach aims to enhance user experience and accessibility across diverse web platforms.
+The objective of a web design project is to provide a versatile and user-friendly interface for presenting data. WaveMaker platform provides customization options to display the same dataset in two different formats: as a table and as a list. 
+
+The choice of presentation format adapts to various form factors, which encompass different devices like desktop computers, laptops, tablets, and mobile phones. By tailoring the data's appearance to suit the user's device and preferences, this approach aims to enhance user experience and accessibility across diverse web platforms.
 
 ### Configure a widget in different devices 
+
 1. Drag and drop a Data Table widget on the canvas.
 
 ![WebPartialContainer](/learn/assets/webPartialContainer.png)
