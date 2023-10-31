@@ -230,6 +230,24 @@ Page.chart4_1Beforerender = function(widget, chartInstance) {
 
 [![](/learn/assets/onbeforerender-code.png)](/learn/assets/onbeforerender-code.png)
 
+### Customizing charts with rounded corners
+Inorder to achieve rounded corners for column and bar charts add class **'rounded-cornered-chart'** and for area chart add class **'rounded-area-chart'** to the chart widget.
+
+#### Column Chart
+[![](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)
+
+#### Bar Chart
+[![](/learn/assets/rounded-bar-chart.png)](/learn/assets/rounded-bar-chart.png)
+
+### Customizing grid line on the charts
+Solid stroked line on x-axis and y-axis zero line can be achieved by adding **'stroked-zero-axis-line'** class
+and dotted grid lines on y-axis can be achieved by adding **'dotted-yaxis-grid-line'** class.
+
+#### Stroked Zero line and Dotted Y-axis grid lines
+
+[![](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)
+
+
 ## Use Cases
 
 - [Basic Usage](/learn/app-development/widgets/chart/charts-basic-usage/)
