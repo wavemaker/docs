@@ -1,42 +1,50 @@
 ---
-title: "How to add edit, new and delete functionality for dynamic data table"
+title: "Adding CRUD functionalities to dynamic data table"
 id: "dynamic-data-table-edit"
 ---
 
-To enable edit,delete and add functionality for a dynamic data table that is bound to a web service variable associated with a GET API, you can follow the below mentioned steps:
+When we establish a binding between a data table and a web service variable associated with a GET API, direct editing, insertion, and deletion of entries becomes unfeasible due to the read-only nature of the GET API. This can be handled by creating dedicated variables.
 
- When we establish a binding between a data table and a webservice variable that, in turn, is associated with a GET API, a limitation arises where direct editing, addition, or deletion of entries becomes unfeasible due to the read-only nature of the GET API. To handle such scenarios, we can implement a solution that involves the creation of separate variables. These dedicated variables will be responsible for invoking the necessary POST, PATCH, and DELETE calls, thereby enabling the functionality to modify and manipulate the data effectively. This approach allows us to seamlessly handle scenarios where the primary variable is confined to a GET API, ensuring comprehensive control over data interaction within the data table.
+## Variables to add CRUD functionalities
 
-# Steps:
-   
-   For the below example we have used HRDB API's.
+Dedicated variables needs to be created that are responsible for invoking the necessary POST, PATCH, and DELETE calls, enabling the modification and manipulation of the data.
 
-1. Import the HRDB employee GET API into the studio as a web service.
+This approach helps to seamlessly handle scenarios where the primary variable is confined to a GET API, ensuring comprehensive control over the data interaction within the data table.
 
-![getemployee_API.png](/learn/assets/getemployee_API.png)
+## Implementing CRUD Functionalities for Variable Bound to GET API
 
-2. Create a webservice variable for the above imported GET API and bind it to a data table.
+1. Import the HRDB employee GET API into the studio as a [web service](/learn/app-development/services/web-services).
 
-3. Go to the advanced settings of the data table, navigate to Actions tab and enable new, edit, delete actions as shown in below screnshot.
+![getemployee_api.png](/learn/assets/getemployee_api.png)
+
+2. [Create a webservice variable](/learn/app-development/services/web-services/rest-services) for the above imported GET API and bind it to a data table.
+
+3. Go to the Advanced Settings of the data table.
+
+![advancedsettings.png](/learn/assets/advancedsettings.png)
+
+4. Navigate to Actions tab and enable new, edit, delete actions.
 
 ![advanced_setting_actions.png](/learn/assets/advanced_setting_actions.png)
 
 
-To add new entries to the data table follow the below steps:
+### Inserting New Entries in Data Table
 
-1. Import POST API as a webservice as shown below and Create a respective webservice variable.
+1. Import POST API as a webservice. 
 
-![post_API_dynamicdatatable.png](/learn/assets/post_API_dynamicdatatable.png)
+![post_api_dynamicdatatable.png](/learn/assets/post_api_dynamicdatatable.png)
 
-![post_API_variablecreation.png](/learn/assets/post_API_variablecreation.png)
+2. Create respective [webservice variable](/learn/app-development/services/web-services/rest-services).
 
-2. Go to the events tab of the data table and set "On Before Record Insert" to javaScript.
+![post_api_variablecreation.png](/learn/assets/post_api_variablecreation.png)
 
-![insertnewrecord_dynamicTable.png](/learn/assets/insertnewrecord_dynamicTable.png)
+3. Go to the Events tab of the data table and set **On Before Record Insert** event to JavaScript.
 
-3. Add the below specified code snippet. Here svPostEmployee is the webservice variable that is bound to POST API and "wm_data_json" is the name of the body parameter and row is the data that we are inserting into the data table.
+![insertnewrecord_dynamictable.png](/learn/assets/insertnewrecord_dynamictable.png)
 
-```
+4. Add the below code. Here `svPostEmployee` is the webservice variable that is bound to POST API and `wm_data_json` is the name of the body parameter and `row` is the data that we are inserting into the data table.
+
+```javascript
 Page.employeeTable1Beforerowinsert = function($event, widget, row, options) {
 
  Page.Variables.svPostEmployee.setInput({
@@ -50,21 +58,23 @@ Page.employeeTable1Beforerowinsert = function($event, widget, row, options) {
 ```
 
 
-To edit entries in the data table follow the below steps:
+### To edit/modify entries within the data table:
 
-1. Import PATCH API as a webservice as shown below and Create a respective webservice variable.
+1. Import PATCH API as a webservice.
 
-![patch_pathparam_dymanicTable.png](/learn/assets/patch_pathparam_dymanicTable.png)
+![patch_pathparam_dymanictable.png](/learn/assets/patch_pathparam_dymanictable.png)
 
-![patch_APIvariable_creation.png](/learn/assets/patch_APIvariable_creation.png)
+2. Create a respective [webservice variable](/learn/app-development/services/web-services/rest-services).
 
-2. Go to the events tab of the data table and set "On Before Record Update" to javaScript.
+![patch_apivariable_creation.png](/learn/assets/patch_apivariable_creation.png)
 
-![before_update_PATCH.png](/learn/assets/before_update_PATCH.png)
+3. Go to the Events tab of the data table and set **On Before Record Update** event to JavaScript.
 
-3. Add the below specified code snippet. Here svEditEmployee is the webservice variable that is bound to PATCH API and "RequestBody" is the name of the body parameter and row.empId is the path parameter.
+![before_update_patch.png](/learn/assets/before_update_patch.png)
 
-```
+4. Add the below code. Here `svEditEmployee` is the webservice variable that is bound to PATCH API and `RequestBody` is the name of the body parameter and `row.empId` is the path parameter.
+
+```javascript
 Page.employeeTable1Beforerowupdate = function($event, widget, row, options) {
  Page.Variables.svEditEmployee.setInput({
  "empId": row.empId,
@@ -76,22 +86,23 @@ Page.Variables.svEditEmployee.invoke();
 
 ```
 
+### To delete entries from the data table:
 
-To delete entries from the data table follow the below steps:
+1. Import DELETE API as a webservice.
 
-1. Import DELETE API as a webservice as shown below and Create a respective webservice variable.
+![delete_api_dynamictable.png](/learn/assets/delete_api_dynamictable.png)
 
-![delete_API_dynamictable.png](/learn/assets/delete_API_dynamictable.png)
+2. Create a respective [webservice variable](/learn/app-development/services/web-services/rest-services).
 
-![delete_API_createVariable.png](/learn/assets/delete_API_createVariable.png)
+![delete_api_createvariable.png](/learn/assets/delete_api_createvariable.png)
 
-2. Go to the events tab of the data table and set "On Before ROW Delete" to javaScript.
+3. Go to the Events tab of the data table and set **On Before ROW Delete** event to JavaScript.
 
 ![before_row_deletedynamic.png](/learn/assets/before_row_deletedynamic.png)
 
-3. Add the below specified code snippet. Here svDeleteEmployee is the webservice variable that is bound to DELETE API and "RequestBody" is the name of the body parameter and row.empId is the path parameter.
+4. Add the below code. Here `svDeleteEmployee` is the webservice variable that is bound to DELETE API and `RequestBody` is the name of the body parameter and `row.empId` is the path parameter.
 
-```
+```javascript
 Page.employeeTable1Beforerowdelete = function($event, widget, row, options) {
 
  Page.Variables.svDeleteEmployee.setInput({
