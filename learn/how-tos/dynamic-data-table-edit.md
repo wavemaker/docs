@@ -11,13 +11,13 @@ Dedicated variables need to be created that are responsible for invoking the nec
 
 This approach helps to seamlessly handle scenarios where the primary variable is confined to a GET API, ensuring comprehensive control over the data interaction within the data table.
 
-## Implementing CRUD Functionalities for Variable Bound to GET API
+## CRUD Functionalities for GET API Variable
 
-1. Import the HRDB employee GET API into the studio as a [web service](/learn/app-development/services/web-services).
+1. Import the HRDB employee GET API into the studio as a web service. To know more about web services and how to import different web services, see [Web Services](/learn/app-development/services/web-services).
 
 ![getemployee_api.png](/learn/assets/getemployee_api.png)
 
-2. [Create a web service variable](/learn/app-development/services/web-services/rest-services) for the above imported GET API and bind it to a data table.
+2. [Create a web service variable](/learn/app-development/variables/web-service/#service-variable-for-web-services) for the above imported GET API and bind it to a data table.
 
 3. Go to the Advanced Settings of the data table.
 
@@ -29,11 +29,11 @@ This approach helps to seamlessly handle scenarios where the primary variable is
 
 ### Inserting New Entries in Data Table
 
-1. Import POST API as a web service. 
+1. Import POST API as a [Web Services](/learn/app-development/services/web-services). 
 
 ![post_api_dynamicdatatable.png](/learn/assets/post_api_dynamicdatatable.png)
 
-2. Create the respective [web service variable](/learn/app-development/services/web-services/rest-services).
+2. Create the respective [web service variable](/learn/app-development/variables/web-service/#service-variable-for-web-services).
 
 ![post_api_variablecreation.png](/learn/assets/post_api_variablecreation.png)
 
@@ -58,11 +58,11 @@ Page.employeeTable1Beforerowinsert = function($event, widget, row, options) {
 
 ### Editing Entries within Data Table
 
-1. Import PATCH API as a web service.
+1. Import PATCH API as a [Web Services](/learn/app-development/services/web-services).
 
 ![patch_pathparam_dymanictable.png](/learn/assets/patch_pathparam_dymanictable.png)
 
-2. Create a respective [web service variable](/learn/app-development/services/web-services/rest-services).
+2. Create a respective [web service variable](/learn/app-development/variables/web-service/#service-variable-for-web-services).
 
 ![patch_apivariable_creation.png](/learn/assets/patch_apivariable_creation.png)
 
@@ -86,11 +86,11 @@ Page.Variables.svEditEmployee.invoke();
 
 ### Deleting Entries from Data Table
 
-1. Import DELETE API as a web service.
+1. Import DELETE API as a [Web Services](/learn/app-development/services/web-services).
 
 ![delete_api_dynamictable.png](/learn/assets/delete_api_dynamictable.png)
 
-2. Create a respective [web service variable](/learn/app-development/services/web-services/rest-services).
+2. Create a respective [web service variable](/learn/app-development/variables/web-service/#service-variable-for-web-services).
 
 ![delete_api_createvariable.png](/learn/assets/delete_api_createvariable.png)
 
