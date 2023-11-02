@@ -15,31 +15,31 @@ This approach helps to seamlessly handle scenarios where the primary variable is
 
 1. Import the HRDB employee GET API into the studio as a web service. To know more about web services and how to import different web services, see [Web Services](/learn/app-development/services/web-services).
 
-![getemployee_api.png](/learn/assets/getemployee_api.png)
+![getemployeeapi.png](/learn/assets/getemployeeapi.png)
 
 2. [Create a web service variable](/learn/app-development/variables/web-service/#service-variable-for-web-services) for the above imported GET API and bind it to a data table.
 
 3. Go to the Advanced Settings of the data table.
 
-![advancedsettings.png](/learn/assets/advancedsettings.png)
+![advancedsettings_img.png](/learn/assets/advancedsettings_img.png)
 
 4. Navigate to the Actions tab and enable New, Edit, and Delete actions.
 
-![advanced_setting_actions.png](/learn/assets/advanced_setting_actions.png)
+![advancedsetting_actions.png](/learn/assets/advancedsetting_actions.png)
 
 ### Inserting New Entries in Data Table
 
 1. Import POST API as a [Web Services](/learn/app-development/services/web-services). 
 
-![post_api_dynamicdatatable.png](/learn/assets/post_api_dynamicdatatable.png)
+![post_apidynamicdatatable.png](/learn/assets/post_apidynamicdatatable.png)
 
 2. Create the respective [web service variable](/learn/app-development/variables/web-service/#service-variable-for-web-services).
 
-![post_api_variablecreation.png](/learn/assets/post_api_variablecreation.png)
+![post_apivariablecreation.png](/learn/assets/post_apivariablecreation.png)
 
 3. Go to the Events tab of the data table and set **On Before Record Insert** event to JavaScript.
 
-![insertnewrecord_dynamictable.png](/learn/assets/insertnewrecord_dynamictable.png)
+![insertnewrecord_dynamic_table.png](/learn/assets/insertnewrecord_dynamic_table.png)
 
 4. Add the below code. Here `svPostEmployee` is the web service variable that is bound to POST API, `wm_data_json` is the name of the body parameter, and `row` is the data that we are inserting into the data table.
 
@@ -60,15 +60,15 @@ Page.employeeTable1Beforerowinsert = function($event, widget, row, options) {
 
 1. Import PATCH API as a [Web Services](/learn/app-development/services/web-services).
 
-![patch_pathparam_dymanictable.png](/learn/assets/patch_pathparam_dymanictable.png)
+![patch_path_param_dymanictable.png](/learn/assets/patch_path_param_dymanictable.png)
 
 2. Create a respective [web service variable](/learn/app-development/variables/web-service/#service-variable-for-web-services).
 
-![patch_apivariable_creation.png](/learn/assets/patch_apivariable_creation.png)
+![patch_api_variable_creation.png](/learn/assets/patch_api_variable_creation.png)
 
 3. Go to the Events tab of the data table and set **On Before Record Update** event to JavaScript.
 
-![before_update_patch.png](/learn/assets/before_update_patch.png)
+![before_updatepatch.png](/learn/assets/before_updatepatch.png)
 
 4. Add the below code. Here `svEditEmployee` is the web service variable that is bound to PATCH API, `RequestBody` is the name of the body parameter, and `row.empId` is the path parameter.
 
@@ -88,15 +88,15 @@ Page.Variables.svEditEmployee.invoke();
 
 1. Import DELETE API as a [Web Services](/learn/app-development/services/web-services).
 
-![delete_api_dynamictable.png](/learn/assets/delete_api_dynamictable.png)
+![delete_apidynamictable.png](/learn/assets/delete_apidynamictable.png)
 
 2. Create a respective [web service variable](/learn/app-development/variables/web-service/#service-variable-for-web-services).
 
-![delete_api_createvariable.png](/learn/assets/delete_api_createvariable.png)
+![delete_apicreatevariable.png](/learn/assets/delete_apicreatevariable.png)
 
 3. Go to the Events tab of the data table and set **On Before ROW Delete** event to JavaScript.
 
-![before_row_deletedynamic.png](/learn/assets/before_row_deletedynamic.png)
+![before_rowdeletedynamic.png](/learn/assets/before_rowdeletedynamic.png)
 
 4. Add the below code. Here `svDeleteEmployee` is the web service variable that is bound to DELETE API,  `RequestBody` is the name of the body parameter, and `row.empId` is the path parameter.
 
