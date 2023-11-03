@@ -715,7 +715,8 @@
 						"react-native/integrating-crashlytics",
 						"react-native/integrating-sentry",
 						"react-native/pdf-preview-and-download",
-						"react-native/deep-linking"
+						"react-native/deep-linking",
+						"react-native/notification"
 					]
 				}
 			]
@@ -1536,7 +1537,7 @@
 					"items": [
 						"wavemaker-release-notes/v11-4-2",
 						"wavemaker-release-notes/v11-4-1",
-            			"wavemaker-release-notes/v11-4-0"
+						"wavemaker-release-notes/v11-4-0"
 					]
 				},
 				{
