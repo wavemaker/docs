@@ -25,6 +25,10 @@ To learn more, see [Angular Version 15 - what's in the release](https://blog.ang
 - Moving to Node 18.x
 - Adjusting CI/CD
 
+Action Needed: 
+
+
+
 ## Conclusion
 
 WaveMaker is committed to providing cutting-edge tools and technologies for application development. The update to Angular 15 along with the other planned developments will make WaveMaker an even better choice for developers.
