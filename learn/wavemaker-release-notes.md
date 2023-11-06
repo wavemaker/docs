@@ -149,12 +149,12 @@ Optimised jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework |  5.3.29 -> 5.3.30 </td>|
-| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.6 -> 5.8.8 |
+|  | Spring Framework |  5.3.29 -> 5.3.30|
+| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.6 -> 5.8.8 </td> |
 | Java JSON utilities | Gson  | 2.10.1 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL |  2.7.2 |
-| JSON library | Jackson | <td className="versiontdbgcolor"> 2.15.2 -> 2.15.3 |
+| JSON library | Jackson | <td className="versiontdbgcolor"> 2.15.2 -> 2.15.3 </td> |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
