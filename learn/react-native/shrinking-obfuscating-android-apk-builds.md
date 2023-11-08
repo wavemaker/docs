@@ -1,7 +1,7 @@
 ---
-title: "Android Build options"
-id: "android-build-options"
-sidebar_label: "Android Build options"
+title: "Shrinking and Obfuscating Android APK builds"
+id: "shrinking-obfuscating-android-apk-builds"
+sidebar_label: "Shrinking and Obfuscating Android APK"
 ---
 ---
 
