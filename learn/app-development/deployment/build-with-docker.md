@@ -28,7 +28,7 @@ vi Dockerfile
 You can use the following Dockerfile for building Docker images and create Docker containers by using multi-stage Dockerfile. You can decrease the size of the Docker image and can create lightweight containers as well.
 
 ```Dockerfile
-FROM maven:3.9.4-jdk-11 as maven-java-node
+FROM maven:3.9.4-eclipse-temurin-11 as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 RUN mkdir -p /usr/local/content/node
 WORKDIR /usr/local/content/node
@@ -110,7 +110,7 @@ vi Dockerfile.build
 You can use the following Dockerfile to build Docker images and create Docker containers for creating project war files.
 
 ```Dockerfile
-FROM maven:3.9.4-jdk-11  as maven-java-node
+FROM maven:3.9.4-eclipse-temurin-11  as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 # installing node 12.22 and npm 6.14 in docker container
 RUN mkdir -p /usr/local/content/node
