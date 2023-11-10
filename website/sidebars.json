@@ -715,7 +715,8 @@
 						"react-native/integrating-crashlytics",
 						"react-native/integrating-sentry",
 						"react-native/pdf-preview-and-download",
-						"react-native/deep-linking"
+						"react-native/deep-linking",
+						"react-native/shrinking-obfuscating-android-apk-builds"
 					]
 				}
 			]
@@ -1534,6 +1535,7 @@
 					"type": "category",
 					"label": "Versions: 11.4.x",
 					"items": [
+						"wavemaker-release-notes/v11-4-3",
 						"wavemaker-release-notes/v11-4-2",
 						"wavemaker-release-notes/v11-4-1",
             			"wavemaker-release-notes/v11-4-0"

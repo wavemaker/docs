@@ -6,6 +6,12 @@ i18N Localized Messages enable multilingual support, improve user experience, ex
 
 WaveMaker has predefined localized label messages in i18N, you can now set the locale messages dynamically that can take the response from the APIs and set the local messages automatically.
 
+:::note
+
+RTL languages like Persian, Arabic, Hebrew, and others are now supported by introducing RTL language Layout.
+
+:::
+
 ## Dynamic Localization Messages 
 
 With Dynamic local message responses from APIs, you can avoid the need of defining the content as labels in the Localized Messages section in WaveMaker and directly import the API into WaveMaker and use the response for translation.
