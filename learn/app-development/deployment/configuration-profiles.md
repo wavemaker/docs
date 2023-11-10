@@ -17,7 +17,7 @@ You can configure Database, REST Servers, and more. By default, two profiles are
 3. Or, Create a new **Custom** environment.
 
 :::note
-Before you select the environment, you should set the build option mode. For more information, see [Build Options in WaveMaker](/learn/app-development-deployment/build-options).
+Before you select the environment, you should set the build option mode. For more information, see [Build Options in WaveMaker](/learn/app-development/deployment/build-options).
 :::
 
 ## Development Configuration Profile

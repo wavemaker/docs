@@ -86,7 +86,7 @@ You can find the tarball under the dist key.
 ### Script
 
 ```js
-const battery = require('expo-battery');
+const Battery = require('expo-battery');
 
 Page.onReady = function() {
     Page.batteryLevel();

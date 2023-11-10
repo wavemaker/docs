@@ -173,6 +173,81 @@ Here we have used the _On select_ event of the chart:
 
 [![](/learn/assets/chart_events.png)](/learn/assets/chart_events.png)
 
+## Chart Legend Captions
+
+Chart legend caption is the label or description that gets displayed when you hover over the chart legend item in the chart. These labels help you in interpreting the chart by associating each data series or category with a descriptive label.
+
+:::note
+
+WaveMaker internally uses the nvd3 library to load the charts. But with the nvd3 1.0.3 version, the captions are not populating as expected in the chart. You can upgrade to the nvd3 1.8.1 version to fix the caption issues.
+
+:::
+
+To upgrade the nvd3 library version to 1.8.1 you need to provide the below in the **index.html** file.
+
+```js
+<script data-require="nvd3@1.8.1" data-semver="1.8.1" src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.js"></script>
+```
+
+### Populating Chart Legend Captions
+
+In WaveMaker studio, to populate the chart legend captions, you need to add the below specified JavaScript snippet on the chart **On Before Render** event.
+
+1. Create a [Pie Chart](#5-pie-chart).
+2. Set the Pie Chart's "On Before Render" property to JavaScript.
+
+[![](/learn/assets/set-javascript.png)](/learn/assets/set-javascript.png)
+
+3. Go to the Script and add the below code snippet in it.
+
+```js 
+Page.chart4_1Beforerender = function(widget, chartInstance) {
+    var tooltip = nv.models.tooltip();
+    tooltip.duration(0);
+    chartInstance.legend.dispatch.legendMouseover = function(o) {
+        console.log(o);
+        if (tooltip.hidden()) {
+            var data = {
+                series: {
+                    key: o.x,
+                    value: o.y,
+                    color: o.color
+                }
+            };
+            tooltip.data(data)
+                .hidden(false);
+        }
+        tooltip.position({
+            top: d3.event.pageY,
+            left: d3.event.pageX
+        })();
+    };
+    chartInstance.legend.dispatch.legendMouseout = function(o) {
+        tooltip.hidden(true);
+    }
+};
+```
+
+[![](/learn/assets/onbeforerender-code.png)](/learn/assets/onbeforerender-code.png)
+
+### Customizing charts with rounded corners
+Inorder to achieve rounded corners for column and bar charts add class **'rounded-cornered-chart'** and for area chart add class **'rounded-area-chart'** to the chart widget.
+
+#### Column Chart
+[![](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)
+
+#### Bar Chart
+[![](/learn/assets/rounded-bar-chart.png)](/learn/assets/rounded-bar-chart.png)
+
+### Customizing grid line on the charts
+Solid stroked line on x-axis and y-axis zero line can be achieved by adding **'stroked-zero-axis-line'** class
+and dotted grid lines on y-axis can be achieved by adding **'dotted-yaxis-grid-line'** class.
+
+#### Stroked Zero line and Dotted Y-axis grid lines
+
+[![](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)](/learn/assets/rounded-column-chart.png)
+
+
 ## Use Cases
 
 - [Basic Usage](/learn/app-development/widgets/chart/charts-basic-usage/)

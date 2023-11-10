@@ -253,3 +253,19 @@ public class SecureService implements WMCustomAuthenticationManager {
     }
 }
 ```
+
+### JWS
+
+Json Web Signature (JWS) is a type of Json Web Token (JWT) which is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed.
+
+In WaveMaker studio, we have introduced JWS as a secondary provider that accepts JWS tokens during API authentication.
+
+For example, any Open ID server after a successful authentication returns an ID token that is of type JWS and can be accepted by the JWS secondary provider.
+
+### Opaque Token
+
+Opaque tokens, unlike JWS, cannot be decoded to read any user information, and are represented by a random, unique string of characters. They are identifiers that are mapped to user information stored on the server. These tokens can be validated only by the server which has issued them using the introspection endpoint.
+
+In WaveMaker studio, we have introduced the Opaque token as a secondary security provider to accept opaque tokens during authentication.
+
+For example, few Open ID servers after a successful authentication return an access token which is of type Opaque.
