@@ -6,9 +6,15 @@ id: "custom-widget"
 
 ---
 
+import customWidgetPrefabProperties from "/learn/assets/widgets/advanced/customWidgetPrefabProperties.png"
+import customWidgetPrefabEvent from "/learn/assets/widgets/advanced/customWidgetPrefabEvent.png"
 import customWidgetProperties from "/learn/assets/widgets/advanced/customWidgetProperties.png"
 import customWidgetAddProperty from "/learn/assets/widgets/advanced/customWidgetAddProperty.png"
 import customWidgetBindProperty from "/learn/assets/widgets/advanced/customWidgetBindProperty.png"
+import customWidgetWebService from "/learn/assets/widgets/advanced/customWidgetWebService.png"
+import customWidgetModelVariable from "/learn/assets/widgets/advanced/customWidgetModelVariable.png"
+import customWidgetServiceVariable from "/learn/assets/widgets/advanced/customWidgetServiceVariable.png"
+import customWidgetServiceVariableBinding from "/learn/assets/widgets/advanced/customWidgetServiceVariableBinding.png"
 import customWidgetPreview from "/learn/assets/custom-widget-preview.gif"
 
 **Custom Widget** is used to add third party React Native Components to the project. This widget can be used only in Prefabs. By using Prefab properties and Events, Component properties and callback functions can be exposed and this prefab can be used in React Native applications.
@@ -109,6 +115,20 @@ Now this Prefab can be implemented in any React Native applications and use Pref
 
 ### React Native App
 
+#### Web Service
+
+Created a Web service with name `randomuser` with sample api `https://randomuser.me/api?results=10`
+
+<img src={customWidgetWebService} />
+
+#### Variables
+
+Created a Model Variable `people` in Main page with Type as `Entry` and a Web Service Variable `RandomuserInvoke` for above web service `randomuser`
+
+<img src={customWidgetModelVariable} />
+<img src={customWidgetServiceVariable} />
+<img src={customWidgetServiceVariableBinding} />
+
 #### Markup
 
 ```
@@ -147,26 +167,37 @@ Now this Prefab can be implemented in any React Native applications and use Pref
 #### Script
 
 ```js
-Page.onReady = function () {
-  Page.Variables.people.dataSet = Page.calendar1Change("11-05-2023");
+Page.onReady = function() {
+    Page.calendar1Change(new Date());
 };
-Page.calendar1Change = function (data) {
-  let day = new Date(data).getDate();
-  Page.Variables.people.dataSet = [];
-  for (i = 0; i < 3; i++) {
-    if ((day + i) % 8 === 0) {
-      continue;
+Page.calendar1Change = function(data) {
+    let day = new Date(data).getDate();
+    Page.Variables.people.dataSet = [];
+    for (var i = 0; i < 3; i++) {
+        if ((day + i) % 8 === 0) {
+            continue;
+        }
+        Page.Variables.people.dataSet.push(
+            Page.Variables.RandomuserInvoke.dataSet.results[day + i]
+        );
     }
-    Page.Variables.people.dataSet.push(
-      Page.Variables.RandomuserInvoke.dataSet.results[day + i]
-    );
-  }
-  Page.Widgets.randomuserList1.refresh();
-  Page.refresh();
+    Page.Widgets.randomuserList1.refresh();
+    Page.refresh();
 };
 ```
 
 ### Prefab
+
+#### Configuration
+
+Add Prefab UI Property `Date` with Binding Type as `in-bound` and Data Type as `date`
+
+<img src={customWidgetPrefabProperties} alt="Custom Widget Prefab Properties"/>
+
+Add an Event `onChange` in Events section.
+
+<img src={customWidgetPrefabEvent} alt="Custom Widget Prefab Event"/>
+
 
 #### Markup
 

@@ -15,6 +15,11 @@ module.exports = {
     "https://buttons.github.io/buttons.js",
     "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
     "/learn/js/code-block-buttons.js",
+    {
+      src: 'https://plausible.io/js/script.js',
+      defer: true,
+      "data-domain": 'docs.wavemaker.com/learn'
+    },
     "/learn/js/error-reporting.js",
     "/learn/js/inject-stylesheets.js",
     {
@@ -72,7 +77,7 @@ module.exports = {
           "lastVersion": 'current',
           "versions": {
             "current": {
-              "label": 'v11.3.6',
+              "label": 'v11.4.3',
               "path": '',
             },
             "v10.14": {

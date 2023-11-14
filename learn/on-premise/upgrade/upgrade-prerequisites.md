@@ -65,7 +65,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
       </td>
       <td>
         <ul>
-          <li>Ubuntu 18.04.5/20.04.2.0 LTS; RHEL 7.x/8.x</li>
+          <li>Ubuntu 18.04.5/20.04.2.0 LTS/22.x LTS; RHEL 7.x/8.x/9.x</li>
           <li>Kernel 4.4 or latter</li>
           <li>Architecture x86</li>
         </ul>
@@ -77,8 +77,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
       </td>
       <td>
         <ul>
-          <li>docker 20.10.12 (supports for WME platform versions 11.2.x)</li>
-          <li>docker 23.0.1 (supports for WME platform versions 11.3.x)</li>
+          <li>docker 24.0.6 </li>
           <li>python 3.5 or higher</li>
           <li>wget</li>
           <li>container-selinux-2.107-1.el7.noarch.rpm(Only for RHEL7)</li>
@@ -157,8 +156,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
       </td>
       <td>
         <ul>
-          <li>docker 20.10.12 (supports for WME platform versions 11.2.x)</li>
-          <li>docker 23.0.1 (supports for WME platform versions 11.3.x)</li>
+          <li>docker 24.0.6 </li>
           <li>python 3.5 or higher</li>
           <li>wget</li>
           <li>container-selinux-2.107-1.el7.noarch.rpm(only for RHEL7)</li>
@@ -173,7 +171,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
         <ul>
           <li>Static IP</li>
           <li>Ports to be Opened on StudioWorkspace Instance / AppDeployment Instance for Access from Platform Instance </li>
-              <li>Ports: 22, 2375, 80, 5000, <strong>8100</strong>, 9101, 9102, 9100, 9404,2200-2299, 8001-8099, 3300-3399, 9500-9599 </li>
+              <li>Ports: 22, 2375, 80, 5000, <strong>8100</strong>, <strong>8888</strong>,9101, 9102, 9100, 9404,2200-2299, 8001-8099, 3300-3399, 9500-9599 </li>
             </ul>
       </td>
     </tr>
@@ -182,7 +180,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
 
 
 :::note
-To upgrade form 10.13.x to 11.x or higer version, you must open the port **8100** on the StudioWorkspace Instance.
+To upgrade form 10.13.x to 11.x or higer version, you must open the port **8100** and **8888** on the StudioWorkspace Instance.
 :::
 
 

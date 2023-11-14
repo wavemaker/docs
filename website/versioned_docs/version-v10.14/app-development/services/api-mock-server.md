@@ -5,6 +5,10 @@ sidebar_label: "Mocking APIs"
 ---
 ---
 
+:::important
+We have discontinued supporting the API mock server feature. Instead, we encourage you to take advantage of the newly introduced Mockingbird feature built into the platform.
+:::
+
 **API Mock Server** is a framework for simulating a backend API with sample responses. These sample responses are dummy data with close-to-accurate responses used for developing the UI. 
 
 You need a Swagger file to set up a running API mock server, which delivers a URL for consuming the service.

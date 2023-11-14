@@ -6,22 +6,19 @@ sidebar_label: "Deploy to Tomcat"
 Learn how to deploy a WaveMaker app to the Tomcat server.
 
 ---
-WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 1.8. This section walks through the steps to deploy WaveMaker app to Tomcat. You can know more about [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/) from here.
+WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 11. This section walks through the steps to deploy WaveMaker app to Tomcat. You can know more about [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/) from here. 
 
 ## Supported Versions
 
-WaveMaker application can be deployed on any of the following versions of the Tomcat:
+WaveMaker application can be deployed on any of the 9.x versions of Tomcat, though it is recommended to use the latest version of tomcat in the 9.x version as the older versions can have security vulnerabilities.
 
-- 8.5.48 onwards for 8.5.x
-- 9.0.28 onwards for 9.0.x
-
-The minimum required JDK version is 1.8.
+The minimum required JDK version is 11.
 
 ## Prerequisites
 
 - Tomcat has to be installed & running
 - Tomcat user credential that has the role of
-    - `manager-gui` for Tomcat `v8.5.x` and `v9.x`
+    - `manager-gui`
 - [WaveMaker application war file to be deployed](/learn/app-development/deployment/deployment-web-server/#generate-a-war-file).
 
 ### Typical Hardware Requirements
@@ -46,7 +43,7 @@ The instructions are same for all versions of Tomcat.
 
 ### Deployment using Management Portal
 
-**Deployment for Tomcat 8.x/9.x**
+**Deployment for Tomcat 9.x**
 
 1. Open a browser and navigate to `http://localhost:8080` (if Tomcat is running on a different port, replace the 8080 with that port).
 2. Click on **Manager App** button displayed on the homepage and provide User Name and Password in the respective text boxes when prompted.

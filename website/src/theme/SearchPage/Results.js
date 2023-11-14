@@ -15,7 +15,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 import React from 'react';
 import { Snippet } from '@docsearch/react/dist/esm/Snippet';
 export function Results(props) {
-  if (!props.collection || props.collection.items.length === 0) {
+  if (!props.collection || props.collection.items.length === 0 || !props.collection.items[0]["hierarchy"]["lvl1"]) {
     return null;
   }
   return /*#__PURE__*/React.createElement("section", {
