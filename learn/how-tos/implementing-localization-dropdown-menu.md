@@ -54,9 +54,12 @@ Here, we have parameterized the _mylabel_ values as KEY_1, KEY_2, KEY_3, KEY_4, 
     - From Properties panel, under the Dataset section, using the chain icon next to the Value property bind the widget to the Modal Variable (menudata) created in the above steps.
     - Under the Actions section set:
         - the Action Label to the following value: _App.appLocale[mylabel],_ (you have to use the Use Expression option from the Bind Dialog)
+          ![actions_label.png](/learn/assets/actions_label.png)
+        ![dropdown_label_binding.png](/learn/assets/dropdown_label_binding.png)
         - the Action Icon to icon, and
         - the Action link to link.
-5. Open the I18N dialog from the Project Configurations of the [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) ([more on localization](/learn/app-development/widgets/form-widgets/select-locale-usage/)). [![](/learn/assets/loc_create.png)](/learn/assets/loc_create.png)
+5. Open the I18N dialog from the Project Configurations of the [Project Workspace](/learn/app-development/wavemaker-overview/product-walkthrough/#project-workspace) ([more on localization](/learn/app-development/widgets/form-widgets/select-locale-usage/)).
+ [![](/learn/assets/loc_create.png)](/learn/assets/loc_create.png)
     1. Use **Manage Languages** to add languages to your app. By default, English is already added.
 
     [![](/learn/assets/loc_new_locale.png)](/learn/assets/loc_new_locale.png)
