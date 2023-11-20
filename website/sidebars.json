@@ -669,7 +669,8 @@
 						"react-native/generate-web-preview-locally",
 						"react-native/web-preview-debug",
 						"react-native/expo-debug",
-						"react-native/flipper"
+						"react-native/flipper",
+						"react-native/web-preview-docker-image"
 					]
 				},
 				{
@@ -692,7 +693,8 @@
 						"react-native/build-installers",
 						"react-native/mobile-build-manual",
 						"react-native/third-party-expo-plugins",
-						"react-native/custom-widget"
+						"react-native/custom-widget",
+						"react-native/custom-js-modules"
 					]
 				},
 				{
@@ -716,7 +718,8 @@
 						"react-native/integrating-sentry",
 						"react-native/pdf-preview-and-download",
 						"react-native/deep-linking",
-						"react-native/shrinking-obfuscating-android-apk-builds"
+						"react-native/shrinking-obfuscating-android-apk-builds",
+						"react-native/user-idle-timeout"
 					]
 				}
 			]
