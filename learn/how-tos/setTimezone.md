@@ -1,21 +1,23 @@
 ---
-title: "Setting TimeZone for Date, DateTime and Time"
+title: "Setting Time Zone for Datetime widget "
 id: "timezone-date-datetime-time"
 ---
 
-setTimezone enables the adjustment of time information to specific time zones for accurate and consistent date and time displays.
+The setTimezone function allows precise adjustment of time to specific time zones, ensuring accuracy and consistency in date and time displays.
 
-## Steps to use setTimeZone for Date time widget
+## Using setTimezone for Datetime widget
 
-- Drag and drop a DateTime widget
-- Set default date to current_date:
+1. Drag and drop a Datetime widget. [ learn more about Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/#datetime-properties)
+     ![datetime_widget.png](/learn/assets/datetime_widget.png)
+    
+2. From the properties panel, set default date to **CURRENT_DATE**:
 
-  ![current-date-default-value.png](/learn/assets/current-date-default-value.png)
-- From Datetime widget events tab, set “On Before Load“ event to JavaScript.
+  ![current_date_default_value.png](/learn/assets/current_date_default_value.png)
+3. From Datetime widget events tab, set **On Before Load** event to JavaScript.
 
-   ![JS-event.png](/learn/assets/JS-event.png)
-- In script, add the below code.
-   ```
+   ![js_event.png](/learn/assets/js_event.png)
+4. After redirecting to the script, add the below code.
+   ``` Javascript
     Page.datetime1Beforeload = function($event, widget) {
           Page.Widgets.datetime2.setTimezone({
                  'timezone': 'Pacific/Kiritimati'
@@ -23,9 +25,12 @@ setTimezone enables the adjustment of time information to specific time zones fo
   };
          
    ```
-   For App Level, in App.js write the below script:
+  ![script_screenshot.png](/learn/assets/script_screenshot.png)
 
-   ```
+  For Application level, in App.js write the below script. Using this script, the specified timezone will be used across all time-related widgets within the application.
+
+
+   ``` Javascript
      App.onPageReady = function(activePageName, activePageScope, $activePageEl) {
         App.setTimezone({
         'timezone': 'Pacific/Kiritimati'
@@ -33,12 +38,12 @@ setTimezone enables the adjustment of time information to specific time zones fo
 }
    ```   
 
+  ![app_js_script.png](/learn/assets/app_js_script.png)
      
       
        
 
- Using this script, the specified timezone will be used across all time-related widgets within the app.
-- Output
+ 
    
 
    
@@ -46,7 +51,13 @@ setTimezone enables the adjustment of time information to specific time zones fo
 
 
 
+:::note
 
 The procedure is same for Date and Time widget.
+:::
 
-Note: For Date widget the implementation will work from 11.4.2 version.
+:::important
+
+For Date widget the implementation will work from 11.4.2 version.
+
+:::
