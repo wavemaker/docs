@@ -1283,7 +1283,7 @@
 					"label": "Date, Time and Datetime",
 					"items": [
 						"app-development/widgets/form-widgets/date-time-datetime",
-						"how-tos/timezone-date-datetime-time"
+						"how-tos/settimezone-method"
 					]
 				},
 			

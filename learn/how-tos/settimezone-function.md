@@ -1,13 +1,13 @@
 ---
 title: "Setting Time Zone for Datetime widget "
-id: "timezone-date-datetime-time"
+id: "settimezone-method"
 ---
 
-The setTimezone function allows precise adjustment of time to specific time zones, ensuring accuracy and consistency in date and time displays.
+The setTimezone method allows precise adjustment of time to specific time zones, ensuring accuracy and consistency in date and time displays.
 
 ## Using setTimezone for Datetime widget
 
-1. Drag and drop a Datetime widget. [ learn more about Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/#datetime-properties)
+1. Drag and drop a Datetime widget. [learn more about Datetime](/learn/app-development/widgets/form-widgets/date-time-datetime/#datetime-properties)
      ![datetime_widget.png](/learn/assets/datetime_widget.png)
     
 2. From the properties panel, set default date to **CURRENT_DATE**:
@@ -16,7 +16,7 @@ The setTimezone function allows precise adjustment of time to specific time zone
 3. From Datetime widget events tab, set **On Before Load** event to JavaScript.
 
    ![js_event.png](/learn/assets/js_event.png)
-4. After redirecting to the script, add the below code.
+4. After redirecting to the script, add the below code to set Timezone of the datetime widget to the specified timezone.
    ``` Javascript
     Page.datetime1Beforeload = function($event, widget) {
           Page.Widgets.datetime2.setTimezone({
@@ -27,7 +27,8 @@ The setTimezone function allows precise adjustment of time to specific time zone
    ```
   ![script_screenshot.png](/learn/assets/script_screenshot.png)
 
-  For Application level, in App.js write the below script. Using this script, the specified timezone will be used across all time-related widgets within the application.
+   ## For Application Level
+   In App.js write the below script. Using this script, the specified timezone will be used across all time-related widgets within the application.
 
 
    ``` Javascript
@@ -56,7 +57,7 @@ The setTimezone function allows precise adjustment of time to specific time zone
 The procedure is same for Date and Time widget.
 :::
 
-:::important
+:::note
 
 For Date widget the implementation will work from 11.4.2 version.
 
