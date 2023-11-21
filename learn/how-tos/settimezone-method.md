@@ -27,7 +27,7 @@ The setTimezone method allows precise adjustment of time to specific time zones,
    ```
   ![script_screenshot.png](/learn/assets/script_screenshot.png)
 
-   ## For Application Level
+## For Application Level
    In App.js write the below script. Using this script, the specified timezone will be used across all time-related widgets within the application.
 
 
