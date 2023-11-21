@@ -1,6 +1,6 @@
 ---
 title: "Setting Time Zone for Datetime widget "
-id: "timezone-date-datetime-time"
+id: "settimezone-method"
 ---
 
 The setTimezone method allows precise adjustment of time to specific time zones, ensuring accuracy and consistency in date and time displays.
