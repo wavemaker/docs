@@ -6,12 +6,36 @@ sidebar_label: "Push Notification"
 ---
 import pushNotification from '/learn/assets/push-notification.png';
 
-A push notification is a message or alert that is "pushed" from a server or service to a user's device (such as a smartphone or tablet) without the user explicitly requesting it. Push notifications are used to notify users about specific events, updates, or information even when the associated app is not actively in use. These notifications can include text, sounds, and badges, and they appear on the device's lock screen or in the notification center. Apps can use push notifications to re-engage users by drawing their attention to new content, features, or promotions. This helps maintain user interest and encourages continued app usage.
+Push notifications in mobile applications are a critical feature for engaging and retaining users. 
+They serve as a direct communication channel between an app and its users, allowing for the delivery of timely, relevant
+information. This can significantly enhance user experience and increase app usage.
+
+For instance, in e-commerce apps, push notifications can alert users about special deals, new arrivals, or abandoned 
+cart reminders, thereby driving sales and engagement. In the case of social media apps, these notifications keep users 
+informed about new messages, comments, or likes, which encourages more frequent interactions within the app.
+
+Moreover, push notifications can be personalized based on user behavior and preferences, making them a powerful tool for
+delivering tailored content. This personalization not only increases the relevance of the notifications but also 
+strengthens the user’s connection to the app.
+
+In news and utility apps, they are instrumental in providing critical updates and information, enhancing the app's value
+to the user. For example, a weather app sending real-time alerts about severe weather conditions can be both useful and 
+life-saving.
+
+In this how-to guide, we will walk you through implementing push notifications in a WaveMaker app through Firebase.
 
 
-## Implement Push Notification in WaveMaker App using Firebase
+## Firebase Setup
 
-For the push notification you need to integrate firebase messaging into the  WaveMaker application's codebase. If you don't have a Firebase project, create one on the Firebase Console: [console.firebase.google.com](https://console.firebase.google.com/) Once you have created a Firebase project, you can follow the steps below to integrate Crashlytics into a WaveMaker application.
+For the push notification you need to integrate firebase messaging into the  WaveMaker application's codebase. If you 
+don't have a Firebase project, create one on the Firebase Console: 
+[console.firebase.google.com](https://console.firebase.google.com/).
+If you have an existing Google project associated with your mobile app, select project in Firebase Console.
+
+Then click on Android icon, fill-in input fields Android package name (Eg:- `com.wavemaker.pushnotification`). and also you can filled Optional fields.
+
+Now click on Register button. After that download `google-services.json`. 
+
 
 ### Adding Firebase Plugin to WaveMaker App
 
@@ -23,13 +47,8 @@ on how to install a plugin. Also, you need to add `react-native-app-badge` packa
 3. react-native-app-badge
 
 Once installed, get project on your local and run `npx expo prebuild` command in the WaveMaker project.
-Now, select project in Firebase Console or  create new project on Firebase Console: [console.firebase.google.com](https://console.firebase.google.com/).
-
-After that click on Android icon and then fill input fields Android package name (Eg:- `com.wavemaker.pushnotification`). and also you can filled Optional fields. 
-
-Now click on Register button. After that download `google-services.json` and move your downloaded `google-services.json` file into your module (**app-level**) root directory `WaveMakerApp/android/app`.
-
-Now, click on next and then add firebase SDK plug-in as dependency to your **project-level** `build.gradle`.
+Move the downloaded `google-services.json` file into your module (**app-level**) root directory `WaveMakerApp/android/app`.
+Also, add firebase SDK plug-in as dependency to your **project-level** `build.gradle`.
 
 **`WaveMakerApp/android/build.gradle`**
 ```gradle
@@ -58,7 +77,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
 }
 ```
-Then, finish all steps.
 
 
 ### Implement Firebase messaging to the WaveMaker App
@@ -158,8 +176,9 @@ Page.removenotificationTap = function($event, widget) {
 
 ### Test Firebase push notification using FCM Tester
 
-To test the push notification we are using [FCM Tester](https://testfcm.com/). Here we need FCM Registration Token (Device Token) which is already getting in our app input field and we need Server Key from Firebase Console: [console.firebase.google.com](https://console.firebase.google.com/). Also, we need to fill required fields for notification also there is some optional fields.
-
+To test the push notification we can use services like [FCM Tester](https://testfcm.com/). To test the notification  we 
+require FCM Registration Token (Device Token) which is already getting in our app input field and we need Server Key 
+from Firebase Console: [console.firebase.google.com](https://console.firebase.google.com/). Also, we need to fill required fields for notification also there is some optional fields.
 
 ### To get server key from Firebase Console
 
