@@ -27,7 +27,7 @@ In this how-to guide, we will walk you through implementing push notifications i
 
 ## Firebase Setup
 
-For the push notification you need to integrate firebase messaging into the  WaveMaker application's codebase. If you 
+For the push notification you need to integrate Firebase messaging into the  WaveMaker application's codebase. If you 
 don't have a Firebase project, create one on the Firebase Console: 
 [console.firebase.google.com](https://console.firebase.google.com/).
 If you have an existing Google project associated with your mobile app, select project in Firebase Console.
