@@ -716,7 +716,8 @@
 						"react-native/integrating-sentry",
 						"react-native/pdf-preview-and-download",
 						"react-native/deep-linking",
-						"react-native/shrinking-obfuscating-android-apk-builds"
+						"react-native/shrinking-obfuscating-android-apk-builds",
+						"react-native/share"
 					]
 				}
 			]
