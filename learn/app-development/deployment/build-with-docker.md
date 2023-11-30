@@ -28,16 +28,16 @@ vi Dockerfile
 You can use the following Dockerfile for building Docker images and create Docker containers by using multi-stage Dockerfile. You can decrease the size of the Docker image and can create lightweight containers as well.
 
 ```Dockerfile
-FROM maven:3.9.4-eclipse-temurin-11 as maven-java-node
+FROM maven:3.9.5-eclipse-temurin-11 as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
 RUN mkdir -p /usr/local/content/node
 WORKDIR /usr/local/content/node
-ADD https://nodejs.org/dist/v12.22.3/node-v12.22.3-linux-x64.tar.gz .
-RUN tar -xzf node-v12.22.3-linux-x64.tar.gz \
-    && ln -s /usr/local/content/node/node-v12.22.3-linux-x64/bin/node /usr/local/bin/node \
-    && ln -s /usr/local/content/node/node-v12.22.3-linux-x64/bin/npm /usr/local/bin/npm \
+ADD https://nodejs.org/dist/v18.16.1/node-v18.16.1-linux-x64.tar.gz .
+RUN tar -xzf node-v18.16.1-linux-x64.tar.gz \
+    && ln -s /usr/local/content/node/node-v18.16.1-linux-x64/bin/node /usr/local/bin/node \
+    && ln -s /usr/local/content/node/node-v18.16.1-linux-x64/bin/npm /usr/local/bin/npm \
     && chown -R root:root /usr/local/content/node \
-    && rm -fR node-v12.22.3-linux-x64.tar.gz
+    && rm -fR node-v18.16.1-linux-x64.tar.gz
 
 FROM maven-java-node as webapp-artifact
 RUN mkdir -p /usr/local/content/app
@@ -47,7 +47,7 @@ ARG build_profile_name
 ENV profile=${build_profile_name}
 RUN  mvn clean install -P${profile}
 
-FROM tomcat:9-jdk11-temurin
+FROM tomcat:9.0.83-jdk11-temurin
 COPY --from=webapp-artifact /usr/local/content/app/target/*.war /usr/local/tomcat/webapps/
 ```
 
@@ -110,17 +110,17 @@ vi Dockerfile.build
 You can use the following Dockerfile to build Docker images and create Docker containers for creating project war files.
 
 ```Dockerfile
-FROM maven:3.9.4-eclipse-temurin-11  as maven-java-node
+FROM maven:3.9.5-eclipse-temurin-11  as maven-java-node
 ENV MAVEN_CONFIG=~/.m2
-# installing node 12.22 and npm 6.14 in docker container
+# installing node 18.16.1 and npm 9.5.1 in docker container
 RUN mkdir -p /usr/local/content/node
 WORKDIR /usr/local/content/node
-ADD https://nodejs.org/dist/v12.22.3/node-v12.22.3-linux-x64.tar.gz .
-RUN tar -xzf node-v12.22.3-linux-x64.tar.gz \
-    && ln -s /usr/local/content/node/node-v12.22.3-linux-x64/bin/node /usr/local/bin/node \
-    && ln -s /usr/local/content/node/node-v12.22.3-linux-x64/bin/npm /usr/local/bin/npm \
+ADD https://nodejs.org/dist/v18.16.1/node-v18.16.1-linux-x64.tar.gz .
+RUN tar -xzf node-v18.16.1-linux-x64.tar.gz \
+    && ln -s /usr/local/content/node/node-v18.16.1-linux-x64/bin/node /usr/local/bin/node \
+    && ln -s /usr/local/content/node/node-v18.16.1-linux-x64/bin/npm /usr/local/bin/npm \
     && chown -R root:root /usr/local/content/node \
-    && rm -fR node-v12.22.3-linux-x64.tar.gz
+    && rm -fR node-v18.16.1-linux-x64.tar.gz
 
 # stage for build the code
 FROM maven-java-node
@@ -162,11 +162,11 @@ example: docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $H
 - For deploying project war using Tomcat Docker container, please use the below command.
 
 ```bash
-docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 tomcat:9-jdk11-temurin
+docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 tomcat:9.0.83-jdk11-temurin
 ```
 
 ```bash
-example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:9-jdk11-temurin
+example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:9.0.83-jdk11-temurin
 ```
 
 ### Access Application
