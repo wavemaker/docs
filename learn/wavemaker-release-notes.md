@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.4.3](/learn/wavemaker-release-notes/v11-4-3) <p style={{color:"red"}}>*latest*</p> |Includes enhancements in Widgets and multiple bug fixes related to Studio Page Workspace, React Native, Cordova, and others. |06 November 2023 |
+|[WaveMaker 11.5.0](/learn/wavemaker-release-notes/v11-5-0) <p style={{color:"red"}}>*latest*</p> | Includes new features like Appium Support, Dockerfiles in a project, importing icon font family, and enhancements like Angular framework support for Prefab workspace, NG studio upgrade to version 15, changes in project shell web template and other bug fixes. |03 December 2023 |
+|[WaveMaker 11.4.3](/learn/wavemaker-release-notes/v11-4-3) |Includes enhancements in Widgets and multiple bug fixes related to Studio Page Workspace, React Native, Cordova, and others. |06 November 2023 |
 |[WaveMaker 11.4.2](/learn/wavemaker-release-notes/v11-4-2) | Includes Dynamic Accordion as a new feature and horizontal display of radio buttons as an enhancement in React Native. It also includes support for Bitbucket 8 VCS provider and timezone in the Date widget along with some other enhancements and bug fixes. |25 September 2023 |
 |[WaveMaker 11.4.1](/learn/wavemaker-release-notes/v11-4-1) | Bug fixes related to Team Portal, Tree Widget, user role mapping and more. |11 September 2023 |
 |[WaveMaker 11.4.0](/learn/wavemaker-release-notes/v11-4-0)| New features to improve developer collaboration, including the Core project, API reimport analysis report, and a few React Native features, Live Form, and Database Variables, and more. Also, included enhancements, such as support for language fonts, indication mark in the Select widget, and bug fixes.|04 September 2023 |
