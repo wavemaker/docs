@@ -135,7 +135,7 @@ Last updated: [WaveMaker 11.5.0](/learn/wavemaker-release-notes/v11-5-0)
 | --- | --- | --- |
 | JS Binding | jquery |  <td className="versiontdbgcolor">3.6.0 -> 3.7.1</td> |
 |  | jquery-ui* | 1.13.2 |
-| MVC Framework | <td className="versiontdbgcolor">angular 12.2.16 -> angular 15.2.9</td> |
+| MVC Framework | angular |<td className="versiontdbgcolor"> 12.2.16 -> 15.2.9</td> |
 |  | ngx-bootstrap | <td className="versiontdbgcolor">6.2 -> 9.0.0 </td>|
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
@@ -143,14 +143,14 @@ Last updated: [WaveMaker 11.5.0](/learn/wavemaker-release-notes/v11-5-0)
 | Built-in functions | lodash | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
-Optimised jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
+Optimized jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
 ### Backend Frameworks
 
 | Description | Java Library | Version |
 | --- | --- | --- |
 |  | Spring Framework |   <td className="versiontdbgcolor"> 5.3.30 -> 5.3.31 </td>|
-| Security framework | Spring Security | 5.8.6 -> 5.8.8 |
+| Security framework | Spring Security | 5.8.8 |
 | Java JSON utilities | Gson  | 2.10.1 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL |  2.7.2 |
