@@ -133,11 +133,10 @@ Last updated: [WaveMaker 11.5.0](/learn/wavemaker-release-notes/v11-5-0)
 
 | Description | JS Library | Version |
 | --- | --- | --- |
-| JS Binding | jquery | 3.6.0 |
+| JS Binding | jquery |  <td className="versiontdbgcolor">3.6.0 -> 3.7.1</td> |
 |  | jquery-ui* | 1.13.2 |
-| MVC Framework | angular 12.2.16 |
-|  | angular-ui-bootstrap | 3.3.6 |
-|  | ngx-bootstrap | 6.2 |
+| MVC Framework | <td className="versiontdbgcolor">angular 12.2.16 -> angular 15.2.9</td> |
+|  | ngx-bootstrap | <td className="versiontdbgcolor">6.2 -> 9.0.0 </td>|
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
 |  | nvd3 | 1.8.6 |
@@ -203,9 +202,9 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |Description|	Version|
 |---|---|
 |Java | 11 |
-|Node| 12.22.3|
-|Maven| <td className="versiontdbgcolor"> 3.9.4 -> 3.9.5 </td> |
-|npm |	6.14.13|
+|Node| <td className="versiontdbgcolor">12.22.3 -> 18.16.1 </td>|
+|Maven| <td className="versiontdbgcolor"> 3.9.4 -> 3.9.5 </td>|
+|npm |	<td className="versiontdbgcolor">6.14.13 -> 9.5.1</td>|
 |Ant|	1.10.11|
 |Git|	2.42| 
 
