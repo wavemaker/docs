@@ -181,4 +181,4 @@ ifconfig
 
 ## wm-rn-web-preview
 
-This Docker image is configured to allow users to execute [`wm-reactnative-cli`](https://github.com/wavemaker/wm-reactnative-cli) commands and it is used to preview the react-native applications locally.
+This Docker image is configured to allow users to execute [`wm-reactnative-cli`](https://github.com/wavemaker/wm-reactnative-cli) commands and it is used to preview the react-native applications locally. To know more about creating, installing, and setting up wm-rn-web-preview docker image, see [Docker Image for local Web preview](learn/react-native/web-preview-docker-image.md).
