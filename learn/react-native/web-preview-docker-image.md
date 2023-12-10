@@ -8,6 +8,43 @@ sidebar_label: "Web Preview Docker Image"
 
 This Docker image is configured to allow users to execute [`wm-reactnative-cli`](https://github.com/wavemaker/wm-reactnative-cli) commands.
 
+### Create Docker File
+
+To create a wm app builder Dockerfile, use the following command.
+
+```bash
+vi Dockerfile.build.local.preview
+```
+
+You can use the following Dockerfile to build Docker images and create Docker containers for creating rn-project previewing.
+
+```Dockerfile
+FROM ubuntu:focal
+RUN apt-get update
+RUN apt-get install curl -y
+RUN curl -SLO https://deb.nodesource.com/nsolid_setup_deb.sh
+RUN chmod 500 nsolid_setup_deb.sh
+RUN ./nsolid_setup_deb.sh 18
+RUN apt-get install nodejs -y
+RUN apt-get install unzip -y
+RUN apt-get install git -y
+RUN npm install -g @wavemaker/wm-reactnative-cli@1.5.4
+```
+
+Save the above Dockerfile.build.local.preview
+
+### Create Docker Image
+
+Build the Docker image using the below command
+
+```bash
+docker image build -t <image-name>:1.0 -f Dockerfile.build.local.preview <project_location>
+```
+
+```bash
+example: docker image build -t wavemaker/wm-rn-web-preview:1.0 -f Dockerfile.build.local.preview .
+```
+
 #### Software packages Installed in Docker Image
 
 - Installed software packages for WaveMaker Application Build
