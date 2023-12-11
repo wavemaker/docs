@@ -181,4 +181,13 @@ ifconfig
 
 ## wm-rn-web-preview
 
-This Docker image is configured to allow users to execute [`wm-reactnative-cli`](https://github.com/wavemaker/wm-reactnative-cli) commands and it is used to preview the react-native applications locally. To know more about creating, installing, and setting up wm-rn-web-preview docker image, see [Docker Image for local Web preview](learn/react-native/web-preview-docker-image.md).
+This Docker image is configured to allow users to execute [`wm-reactnative-cli`](https://github.com/wavemaker/wm-reactnative-cli) commands and it is used to preview the react-native applications locally. To know more about creating, installing, and setting up wm-rn-web-preview docker image, see [Docker Image for local Web preview](learn/react-native/web-preview-docker-image).
+
+## Build War File Using wm-app-builder Docker Image
+
+The wm-app-builder Docker image is packed with required software packages and libraries to deploy WaveMaker Application in Docker containers.
+
+- Using the app-build Docker image, users can generate war files for WaveMaker applications.
+- Using the wm-rn-web-preview image, users can preview the react native WaveMaker applications in their local.
+- Find WaveMaker wm-app-builder Docker image at [wm-app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-build).
+- Find WaveMaker wm-rn-web-preview Docker image at [wm-rn-web-preview Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/wm-rn-web-preview).
