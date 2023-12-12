@@ -134,13 +134,21 @@ const ReactNative = require('react-native');
 const messaging = require('@react-native-firebase/messaging').default;
 const ShortcutBadge = require('react-native-app-badge').default;
 /* perform any action on widgets/variables within this block */
+
+
+
 Page.onReady = function() {
+    Page.Widgets.supportedLocaleList1.show = false
     ReactNative.PermissionsAndroid.request(
         ReactNative.PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
     );
 
+
     getToken();
 
+    messaging().onNotificationOpenedApp(remoteMessage => {
+        updateCardData(remoteMessage);
+    });
     messaging().setBackgroundMessageHandler(async remoteMessage => {
         const count = await ShortcutBadge.getCount();
 
@@ -148,19 +156,27 @@ Page.onReady = function() {
             ShortcutBadge.setCount(count + 1);
         }
     });
-    messaging().getInitialNotification(async remoteMessage => {
-        console.log('Message handled in kill  background!', remoteMessage);
-    });
-    messaging().onNotificationOpenedApp(async remoteMessage => {
-        console.log('Message handled in kill aaa background!', remoteMessage);
-    });
 
     const unsubscribe = messaging().onMessage(async remoteMessage => {
-        alert(JSON.stringify(remoteMessage));
+        updateCardData(remoteMessage);
+
     });
 
     return unsubscribe;
 };
+
+function updateCardData(notificationMessage) {
+    Page.Widgets.supportedLocaleList1.show = true
+    Page.stockName = notificationMessage.data.name;
+    Page.price = notificationMessage.data.last
+    Page.stockName = notificationMessage.data.name;
+    Page.price = notificationMessage.data.last;
+    Page.change = notificationMessage.data.change;
+    Page.high = notificationMessage.data['52high'];
+    Page.low = notificationMessage.data['52low'];
+    Page.volume = notificationMessage.data.volume;
+    Page.refresh();
+}
 
 async function getToken() {
     let fcmtoken = await messaging().getToken();
