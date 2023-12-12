@@ -717,7 +717,8 @@
 						"react-native/pdf-preview-and-download",
 						"react-native/deep-linking",
 						"react-native/shrinking-obfuscating-android-apk-builds",
-						"react-native/share"
+						"react-native/share",
+						"react-native/image-picker"
 					]
 				}
 			]
