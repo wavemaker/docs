@@ -4,7 +4,7 @@ id: "push-notification"
 sidebar_label: "Push Notification"
 ---
 ---
-import pushNotification from '/learn/assets/push-notification.png';
+import pushNotification from '/learn/assets/push-notification.gif';
 
 Push notifications in mobile applications are a critical feature for engaging and retaining users. 
 They serve as a direct communication channel between an app and its users, allowing for the delivery of timely, relevant
