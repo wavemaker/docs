@@ -719,6 +719,7 @@
 						"react-native/pdf-preview-and-download",
 						"react-native/deep-linking",
 						"react-native/shrinking-obfuscating-android-apk-builds",
+						"react-native/push-notification",
 						"react-native/user-idle-timeout",
 						"react-native/share"
 					]
