@@ -22,7 +22,7 @@ This Docker image is configured to allow users to execute [`wm-reactnative-cli`]
 
 To build a image from docker file, check the following steps
 
-#### 1.Create Docker File
+#### 1. Create Docker File
 
 To create a wm app builder Dockerfile, use the following command.
 
@@ -47,7 +47,7 @@ RUN npm install -g @wavemaker/wm-reactnative-cli@1.6.1
 
 Save the above Dockerfile.build.local.preview
 
-#### 2.Create Docker Image
+#### 2. Create Docker Image
 
 Build the Docker image using the below command
 
@@ -71,7 +71,9 @@ docker pull wavemakerapp/wm-rn-web-preview:<tag>
 example: docker pull wavemakerapp/wm-rn-web-preview:latest
 ```
 
-### Instructions to Setup wm-rn-web-preview Container
+### Setup wm-rn-web-preview Container
+
+Follow the instructions below to setup a wm-rn-web-preview container.
 
 - If there is an already exsisting container with name `wm-rn-web-preview`, it can be removed by running the following command:
 
@@ -101,7 +103,7 @@ example: docker pull wavemakerapp/wm-rn-web-preview:latest
 
   ![wm-rn-web-preview](/learn/assets/wm-rn-web-preview.png)
 
-### To Start the Container
+### Starting the Container
 
 - After setting up the container, To start the container, you can run the following command:
 
