@@ -671,6 +671,7 @@
 						"react-native/web-preview-debug",
 						"react-native/expo-debug",
 						"react-native/flipper",
+						"react-native/web-preview-docker-image",
 						"react-native/appium-support"
 					]
 				},
@@ -693,7 +694,8 @@
 						"react-native/build-installers",
 						"react-native/mobile-build-manual",
 						"react-native/third-party-expo-plugins",
-						"react-native/custom-widget"
+						"react-native/custom-widget",
+						"react-native/custom-js-modules"
 					]
 				},
 				{
@@ -718,6 +720,8 @@
 						"react-native/pdf-preview-and-download",
 						"react-native/deep-linking",
 						"react-native/shrinking-obfuscating-android-apk-builds",
+						"react-native/push-notification",
+						"react-native/user-idle-timeout",
 						"react-native/share"
 					]
 				}
@@ -1539,6 +1543,7 @@
 					"type": "category",
 					"label": "Versions: 11.5.x",
 					"items": [
+						"wavemaker-release-notes/v11-5-1",
 						"wavemaker-release-notes/v11-5-0"
 					]
 				},
