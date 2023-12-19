@@ -647,7 +647,7 @@
 					"label": "App Design",
 					"items": [
 						"react-native/styles",
-						"react-native/custom-icon-font",
+						"react-native/custom-icon-fonts",
 						"react-native/theme",
 						"react-native/app-loader",
 						"react-native/animations",

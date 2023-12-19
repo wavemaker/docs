@@ -1,6 +1,6 @@
 ---
 title: "Custom Icon Fonts"
-id: "custom-icon-font"
+id: "custom-icon-fonts"
 sidebar_label: "Custom Icon Fonts"
 ---
 ---
