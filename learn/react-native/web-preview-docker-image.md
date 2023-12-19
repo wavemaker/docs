@@ -8,7 +8,21 @@ sidebar_label: "Web Preview Docker Image"
 
 This Docker image is configured to allow users to execute [`wm-reactnative-cli`](https://github.com/wavemaker/wm-reactnative-cli) commands.
 
-### Create Docker File
+### Software packages Installed in Docker Image
+
+- Download [Docker](https://www.docker.com/get-started/).
+
+- Installed software packages for WaveMaker Application Build
+  - Curl
+  - Node Js
+  - Unzip
+  - Git
+
+### Building Image with Docker File
+
+To build a image from docker file, check the following steps
+
+#### 1. Create Docker File
 
 To create a wm app builder Dockerfile, use the following command.
 
@@ -28,39 +42,39 @@ RUN ./nsolid_setup_deb.sh 18
 RUN apt-get install nodejs -y
 RUN apt-get install unzip -y
 RUN apt-get install git -y
-RUN npm install -g @wavemaker/wm-reactnative-cli@1.5.4
+RUN npm install -g @wavemaker/wm-reactnative-cli@1.6.1
 ```
 
 Save the above Dockerfile.build.local.preview
 
-### Create Docker Image
+#### 2. Create Docker Image
 
 Build the Docker image using the below command
 
 ```bash
-docker image build -t <image-name>:1.0 -f Dockerfile.build.local.preview <project_location>
+docker image build -t <image-name>:1.0 -f Dockerfile.build.local.preview
 ```
 
 ```bash
-example: docker image build -t wavemaker/wm-rn-web-preview:1.0 -f Dockerfile.build.local.preview .
+example: docker image build -t wavemaker/wm-rn-web-preview:1.0  -f Dockerfile.build.local.preview
 ```
 
-#### Software packages Installed in Docker Image
+### Build Image with a tag from Docker Hub
 
-- Installed software packages for WaveMaker Application Build
-  - Curl
-  - Node Js
-  - Unzip
-  - Git
+To Build Image with a specific tag from Docker Hub, Pull the `wm-rn-web-preview` Image by running the following command
 
-#### Instructions to Setup wm-rn-web-preview Container
+```bash
+docker pull wavemakerapp/wm-rn-web-preview:<tag>
+```
 
-- Download [Docker](https://www.docker.com/get-started/).
+```bash
+example: docker pull wavemakerapp/wm-rn-web-preview:latest
+```
 
-- After installing, Pull the `wm-rn-web-preview` Image by running the following command
-  ```bash
-  docker pull wavemakerapp/wm-rn-web-preview
-  ```
+### Setup wm-rn-web-preview Container
+
+Follow the instructions below to setup a wm-rn-web-preview container.
+
 - If there is an already exsisting container with name `wm-rn-web-preview`, it can be removed by running the following command:
 
   ```bash
@@ -89,7 +103,7 @@ example: docker image build -t wavemaker/wm-rn-web-preview:1.0 -f Dockerfile.bui
 
   ![wm-rn-web-preview](/learn/assets/wm-rn-web-preview.png)
 
-#### To Start the Container
+### Starting the Container
 
 - After setting up the container, To start the container, you can run the following command:
 
