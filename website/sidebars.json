@@ -647,6 +647,7 @@
 					"label": "App Design",
 					"items": [
 						"react-native/styles",
+						"react-native/custom-icon-fonts",
 						"react-native/theme",
 						"react-native/app-loader",
 						"react-native/animations",
@@ -669,7 +670,9 @@
 						"react-native/generate-web-preview-locally",
 						"react-native/web-preview-debug",
 						"react-native/expo-debug",
-						"react-native/flipper"
+						"react-native/flipper",
+						"react-native/web-preview-docker-image",
+						"react-native/appium-support"
 					]
 				},
 				{
@@ -678,7 +681,6 @@
 					"items": [
 						"react-native/performance-measurement",
 						"react-native/performance-metrics",
-						"react-native/flipper",
 						"react-native/flipper-performance-plugin",
 						"react-native/flashlight-performance-tool",
 						"react-native/performance-monitor"
@@ -692,7 +694,8 @@
 						"react-native/build-installers",
 						"react-native/mobile-build-manual",
 						"react-native/third-party-expo-plugins",
-						"react-native/custom-widget"
+						"react-native/custom-widget",
+						"react-native/custom-js-modules"
 					]
 				},
 				{
@@ -718,7 +721,10 @@
 						"react-native/deep-linking",
 						"react-native/shrinking-obfuscating-android-apk-builds",
 						"react-native/share",
-						"react-native/download-progress"
+						"react-native/download-progress",
+						"react-native/push-notification",
+						"react-native/user-idle-timeout",
+						"react-native/share"
 					]
 				}
 			]
@@ -1538,6 +1544,8 @@
 					"type": "category",
 					"label": "Versions: 11.5.x",
 					"items": [
+						"wavemaker-release-notes/v11-5-2",
+						"wavemaker-release-notes/v11-5-1",
 						"wavemaker-release-notes/v11-5-0"
 					]
 				},

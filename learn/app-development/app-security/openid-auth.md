@@ -71,6 +71,14 @@ This section contains configuration properties for Identity Provider.
 - **Authorization URL:** Endpoint that initiates the authentication of the end user
 - **Token URL:** Endpoint used to communicate Access token, ID token and refresh token
 - **JWKS URL:** Json Web Key Set (JWKS) endpoint stores the information on public keys used to verify the Json Web tokens
+  
+:::note
+
+JWKS property can also be configured using a certificate file that contains a public key instead of fetching the keys from the JWK set URL. Users can upload the certificate file into the application src/main/resources folder and use classpath:filename, or if the file is in a file system use file:filepath.
+The JWKS property can be configured with both file and URL separated with a `;`. The public key is read from the file path and in case of any failures it will fall back to the URL.
+
+:::
+
 - **User Info Endpoint:** User Info endpoint allows the client application to fetch the required claims about the authenticated end user
 - **Logout URL:** Endpoint used by the client application to erase provider-side session and related cookies
 

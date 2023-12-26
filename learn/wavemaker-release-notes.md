@@ -21,7 +21,9 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.5.0](/learn/wavemaker-release-notes/v11-5-0) <p style={{color:"red"}}>*latest*</p> | Includes new features like Appium Support, Dockerfiles in a project, importing icon font family, and enhancements like Angular framework support for Prefab workspace, NG studio upgrade to version 15, changes in project shell web template and other bug fixes. |03 December 2023 |
+|[WaveMaker 11.5.2](/learn/wavemaker-release-notes/v11-5-2) <p style={{color:"red"}}>*latest*</p> | Includes enhancements like an image as thumb and multiple slides display in the Corousel and other bug fixes in React Native and Studio Page Workspace. |19 December 2023 |
+|[WaveMaker 11.5.1](/learn/wavemaker-release-notes/v11-5-1) | Includes bug fixes related to the Prefab artifact and Studio Page Workspace. |11 December 2023 |
+|[WaveMaker 11.5.0](/learn/wavemaker-release-notes/v11-5-0) | Includes new features like Appium Support, Dockerfiles in a project, importing icon font family, and enhancements like Angular framework support for Prefab workspace, NG studio upgrade to version 15, changes in project shell web template and other bug fixes. |03 December 2023 |
 |[WaveMaker 11.4.3](/learn/wavemaker-release-notes/v11-4-3) |Includes enhancements in Widgets and multiple bug fixes related to Studio Page Workspace, React Native, Cordova, and others. |06 November 2023 |
 |[WaveMaker 11.4.2](/learn/wavemaker-release-notes/v11-4-2) | Includes Dynamic Accordion as a new feature and horizontal display of radio buttons as an enhancement in React Native. It also includes support for Bitbucket 8 VCS provider and timezone in the Date widget along with some other enhancements and bug fixes. |25 September 2023 |
 |[WaveMaker 11.4.1](/learn/wavemaker-release-notes/v11-4-1) | Bug fixes related to Team Portal, Tree Widget, user role mapping and more. |11 September 2023 |
