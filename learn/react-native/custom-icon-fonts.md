@@ -24,7 +24,7 @@ Custom Icon font families can now be imported into the studio using this feature
 
 ![](/learn/assets/ttf_css_file.png)
 
-4. Now imported custom font family is visible on the Icons tree.
+4. Go to the Import Resource dialog to view the imported custom font family in the Icons tree.
 
 ![](/learn/assets/icon_tree.png)
 
@@ -59,7 +59,7 @@ Custom Icon font families can now be imported into the studio using this feature
 
 ![](/learn/assets/ttf_css_file.png)
 
-4. Now imported custom font family is visible on the Icons tree.
+4. Go to the Import Resource dialog to view the imported custom font family in the Icons tree.
 
 ![](/learn/assets/icon_tree.png)
 
@@ -74,3 +74,17 @@ Custom Icon font families can now be imported into the studio using this feature
 7. You can view the applied font in the studio.
 
 ![](/learn/assets/applied_font_studio.png)
+
+## Deleting Icon Font Family
+
+1. After uploading the ttf and CSS files of the icon family, click Save.
+
+![](/learn/assets/ttf_css_file.png)
+
+2. Go to the Import Resource dialog to view the imported custom font family in the Icons tree.
+
+![](/learn/assets/icon_tree.png)
+
+3. Click the Delete icon to delete the selected icon font family.
+
+![](/learn/assets/delete_icon_font.png)
