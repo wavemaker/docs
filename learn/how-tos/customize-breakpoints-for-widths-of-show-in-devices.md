@@ -19,6 +19,10 @@ The choice of presentation format adapts to various form factors, which encompas
 
 ![WebPartialDeviceConfiguration](/learn/assets/webPartialDeviceConfig.png)
 
+:::note
+Adding the "show in devices" configuration for inner elements of an already configured container may lead to unintended outcomes. Therefore, it is advisable to avoid making such additions.
+:::
+
 3. Preview the App. The Laptop view shows us the Data Table.
 
 ![WebView](/learn/assets/webPartialPreview.png)
