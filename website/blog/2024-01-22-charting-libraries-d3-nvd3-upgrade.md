@@ -3,6 +3,11 @@ title: "Charting Libraries(D3 & NVD3) Upgraded - Action Required"
 author: Bhargavi Gunda
 ---
 ---
+
+Exciting news for WaveMaker developers! The upcoming upgrade of the WaveMaker Web Apps Charting libraries, scheduled for Release 11.5.3 in the fourth week of January 2024, introduces significant improvements derived from both D3.js and NVD3.
+
+This update ensures compatibility with modern web standards and offers a more streamlined experience for developers.
+
 <!-- truncate -->
 
 | Current version | Updating to |
@@ -10,22 +15,26 @@ author: Bhargavi Gunda
 | D3 3.5.7	       | 7.8.5       |
 | NVD3 1.0.0      | 1.8.6       |
 
-# Introduction
-Exciting news for WaveMaker developers.The impending upgrade of the WaveMaker Web Apps Charting libraries, set for Release 11.5.3 in the fourth week of January 2024, 
-introduces substantial improvements derived from both D3.js and NVD3.
-This update ensures compatibility with modern web standards and provides a more streamlined experience for developers.
+## D3.js Version 7
 
-# D3.js - Embracing Version 7
-D3.js, a robust JavaScript library used to create interactive data visualizations, 
-is undergoing a significant version upgrade from 3.5.7 to 7.8.5. This update brings many new features and improvements. 
-Developers will need to familiarize themselves with these changes to fully benefit from the enhancements.
+D3.js, a powerful JavaScript library for creating interactive data visualizations, undergoes a major version upgrade from 3.5.7 to 7.8.5, bringing new features and improvements and allowing developers to adapt to the latest changes.
 
-# Key Changes in D3.js v7
+## Key Changes in D3.js Version 7
 
+1. [Syntax and Selections](#syntax-and-selections)
+2. [Promises](#promises)
+3. [Immutability](#immutability)
+4. [Chaining](#chaining)
+5. [Modularity](#modularity)
+6. [Axes and Scales](#axes-and-scales)
+7. [Data Join](#data-join)
+8. [Compatibility](#compatibility)
+9. [Documentation](#documentation)
 
-## 1.Syntax and Selections:
-The syntax has evolved to be more concise and adherent to ES6 standards.
-Method chaining and selections exhibit a more logical and consistent structure.
+## Syntax and Selections
+
+- The syntax has evolved to be more concise and adherent to ES6 standards.
+- Method chaining and selections exhibit a more logical and consistent structure.
 
 ```
 // D3 v3
@@ -35,8 +44,10 @@ d3.selectAll('circle').attr('r', function(d) { return d.radius; });
 d3.selectAll('circle').attr('r', d => d.radius);
 ```
 
-## 2.Promises:
+## Promises
+
 D3 v7 embraces Promises for asynchronous operations, simplifying the handling of asynchronous tasks.
+
 ```
 // D3 v3
 d3.json('data.json', function(error, data) {
@@ -54,8 +65,10 @@ console.error('Error loading data:', error);
 ```
 
 
-## 3.Immutability:
+## Immutability
+
 D3 v7 introduces immutability to selections, enhancing code predictability and avoiding unexpected side effects.
+
 ```
 // D3 v3
 var circles = d3.selectAll("circle");
@@ -66,13 +79,14 @@ circles.style("fill", "blue");
 const circles = d3.selectAll("circle")
 .attr("r", 10)
 .style("fill", "blue");
- ```
-### Implications of Immutability
+```
 
-### a.Consistency and Predictability:
+## Implications of Immutability
+
+### Consistency and Predictability:
 The immutability of selections in D3 v7 leads to more consistent and predictable behavior.
 
-### b.Transitioning and Animation:
+### Transitioning and Animation:
 Transitions and animations are built on the same immutable foundation, providing clarity and control.
 ```
 // D3 v3
@@ -87,9 +101,7 @@ const circles = d3.selectAll("circle")
 .style("fill", "red");
 ```
 
-
-
-## 4.Chaining:
+## Chaining
 Immutability is closely linked to method chaining, allowing concise and readable code.
 ```
 // D3 v3
@@ -102,7 +114,8 @@ const circles = d3.selectAll("circle")
 .style("fill", "blue");
 ```
 
-## 5.Modularity:
+## Modularity
+
 D3 v7 embraces modularity, allowing developers to use specific modules without including the entire library.
 ```
 // D3 v3
@@ -113,7 +126,8 @@ import { scaleLinear, axisBottom } from 'd3';
 ```
 
 
-## 6.Axes and Scales:
+## Axes and Scales
+
 While core concepts remain, v7 brings refinements for creating scales and axes, offering more control and customization options.
 ```
 1.d3.scale.linear() = d3.scaleLinear()
@@ -133,7 +147,8 @@ While core concepts remain, v7 brings refinements for creating scales and axes, 
       receive events as the first argument, followed by data and index.
 ```
 
-## 7.Data Join:
+## Data Join
+
 D3 v7 enhances the data join pattern for better performance and optimizations.
 ```
 // D3 v3
@@ -145,8 +160,10 @@ var circles = svg.selectAll('circle').data(data)
 .join('circle');
 ```
 
-## 8.Compatibility:
+## Compatibility
+
 D3 v7 aligns with modern web standards, integrating seamlessly with other JavaScript tools and frameworks.
+
 ```
 // D3 v3
 // No native module support
@@ -155,7 +172,8 @@ D3 v7 aligns with modern web standards, integrating seamlessly with other JavaSc
 import { select, scaleLinear } from 'd3';
 ```
 
-## 9.Documentation:
+## Documentation
+
 The documentation for D3 v7 is updated, offering more comprehensive explanations and examples.
 ```
 // D3 v3
@@ -169,7 +187,8 @@ NVD3 is a wrapper library over d3 which is also upgraded to incorporate latest c
 
 To learn more, see [The Comprehensive Migration Guide](https://observablehq.com/@d3/d3v6-migration-guide).
 
-# Action Required
+## Action Required
+
 In enhancing the chart component's extensibility, we have introduced a life cycle method from nvd3 as the "On Before Render" callback. 
 Any modifications made to charts using the DSL approach through chartInstance and d3 should be adjusted in accordance with the aforementioned changes to ensure the 
 smooth transition post this upgrade and avoid any disruptions to the charts.
