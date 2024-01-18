@@ -57,6 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     if(window.location.pathname.indexOf("/learn/blog") !== -1) {
-        //$(".navGroup h3.navGroupCategoryTitle").html('<h3 class="navGroupCategoryTitle" style="display: inline-block">All Blog Posts</h3><a style="padding-left: 10px;" href="https://docs.wavemaker.com/learn/blog/feed.xml" title="WaveMaker Docs Blog RSS Feed" target="_blank"><i class="fa fa-2x fa-rss" aria-hidden="true"></i></a>');
+        $(".navGroup h3.navGroupCategoryTitle").html('<h3 class="navGroupCategoryTitle" style="display: inline-block">All Blog Posts</h3><a style="padding-left: 10px;" href="https://docs.wavemaker.com/learn/blog/feed.xml" title="WaveMaker Docs Blog RSS Feed" target="_blank"><i class="fa fa-2x fa-rss" aria-hidden="true"></i></a>');
     }
 });
