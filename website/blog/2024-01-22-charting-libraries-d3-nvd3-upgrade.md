@@ -1,5 +1,5 @@
 ---
-title: "Charting Libraries(D3 & NVD3) Upgraded - Action Required"
+title: "Charting Libraries D3 and NVD3 Update - Action Required"
 author: Bhargavi Gunda
 ---
 ---
@@ -183,12 +183,10 @@ The documentation for D3 v7 is updated, offering more comprehensive explanations
 // Well-documented features with examples
 ```
 
-NVD3 is a wrapper library over d3 which is also upgraded to incorporate latest changes in D3.
+NVD3 is a wrapper library over D3 which is also upgraded to incorporate latest changes in D3.
 
 To learn more, see [The Comprehensive Migration Guide](https://observablehq.com/@d3/d3v6-migration-guide).
 
 ## Action Required
 
-In enhancing the chart component's extensibility, we have introduced a life cycle method from nvd3 as the "On Before Render" callback. 
-Any modifications made to charts using the DSL approach through chartInstance and d3 should be adjusted in accordance with the aforementioned changes to ensure the 
-smooth transition post this upgrade and avoid any disruptions to the charts.
+To enhance the extensibility of the chart component, we introduced a life cycle method from NVD3 as the "On Before Render" callback. Any modifications made to charts using the DSL approach through chartInstance and D3 should be adjusted in accordance with the mentioned changes. This ensures a smooth transition post this upgrade and helps avoid any disruptions to the charts.
