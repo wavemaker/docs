@@ -11,13 +11,14 @@ author: Bhargavi Gunda
 | NVD3 1.0.0      | 1.8.6       |
 
 # Introduction
-Exciting news for WaveMaker Web Apps users.The upcoming WaveMaker Web Apps Charting libraries upgrade, scheduled for Release 11.5.3 in the fourth week of January 2024, 
-brings significant enhancements to both D3.js and NVD3. 
-This update ensures compatibility with modern web standards and provides a more streamlined and efficient experience for developers.
+Exciting news for WaveMaker developers.The impending upgrade of the WaveMaker Web Apps Charting libraries, set for Release 11.5.3 in the fourth week of January 2024, 
+introduces substantial improvements derived from both D3.js and NVD3.
+This update ensures compatibility with modern web standards and provides a more streamlined experience for developers.
 
 # D3.js - Embracing Version 7
-D3.js, a powerful JavaScript library for creating interactive data visualizations, undergoes a major version shift from 3.5.7 to 7.8.5. 
-This brings forth a plethora of new features and improvements, prompting developers to adapt to the latest changes.
+D3.js, a robust JavaScript library used to create interactive data visualizations, 
+is undergoing a significant version upgrade from 3.5.7 to 7.8.5. This update brings many new features and improvements. 
+Developers will need to familiarize themselves with these changes to fully benefit from the enhancements.
 
 # Key Changes in D3.js v7
 
