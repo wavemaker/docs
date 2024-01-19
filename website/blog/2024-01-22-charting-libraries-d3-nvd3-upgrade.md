@@ -15,6 +15,12 @@ This update ensures compatibility with modern web standards and offers a more st
 | D3 3.5.7	       | 7.8.5       |
 | NVD3 1.0.0      | 1.8.6       |
 
+
+## Who should read this
+
+WaveMaker developers using chart widgets without D3 methods in the ChartOnBeforeRender callback won't be affected by the D3 library upgrade. Their applications will work smoothly without any changes. 
+However, if developers use D3 methods in the callback, the upgrade might impact functionality, requiring adjustments as outlined below to ensure continued operation.
+
 ## D3.js Version 7
 
 D3.js, a powerful JavaScript library for creating interactive data visualizations, undergoes a major version upgrade from 3.5.7 to 7.8.5, bringing new features and improvements and allowing developers to adapt to the latest changes.
@@ -187,6 +193,3 @@ NVD3 is a wrapper library over D3 which is also upgraded to incorporate latest c
 
 To learn more, see [The Comprehensive Migration Guide](https://observablehq.com/@d3/d3v6-migration-guide).
 
-## Action Required
-
-To enhance the extensibility of the chart component, we introduced a life cycle method from NVD3 as the "On Before Render" callback. Any modifications made to charts using the DSL approach through chartInstance and D3 should be adjusted in accordance with the mentioned changes. This ensures a smooth transition post this upgrade and helps avoid any disruptions to the charts.
