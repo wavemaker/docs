@@ -89,12 +89,12 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-| | Spring Framework <td className="versiontdbgcolor"> 5.3.15 -> 5.3.18 </td>|
+| | Spring Framework | <td className="versiontdbgcolor"> 5.3.15 -> 5.3.18 </td>|
 | Security framework | Spring Security | 5.5.2|
 | Java JSON utilities | Gson | 2.8.9 |
 | DB Persistence library | Hibernate | 5.5.7.Final|
 | Sample database | HSQL | 2.5.1|
-| JSON library | Jackson <td className="versiontdbgcolor"> 2.12.5 -> 2.12.6.20220326</td>|
+| JSON library | Jackson | <td className="versiontdbgcolor"> 2.12.5 -> 2.12.6.20220326</td>|
 | Logging framework | SLF4j |1.7.32 |
 | Logging Implementation | Log4j2 | 2.17.1 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br/> httpmime- 4.5.6 |
@@ -108,7 +108,7 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 | JDK | 1.8 |
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
-| Tomcat | 8.5* |
+| Tomcat | 9.0.82* |
 | Cordova (mobile apps) <br/> Android <br/> iOS | 10.0.0 <br/> 10.1.0 <br/> 6.1.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
