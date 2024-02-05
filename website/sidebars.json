@@ -852,6 +852,7 @@
 				"how-tos/wizard-layout",
 				"how-tos/custom-widget-template",
 				"how-tos/using-custom-formatter",
+				"how-tos/using-custom-formatter-for-todate-pipe",
 				"how-tos/customize-breakpoints-for-widths-of-show-in-devices",
 				{
 					"type": "category",
