@@ -24,27 +24,27 @@ WaveMaker provides us the flexibility to apply custom formats on the existing `t
 1. To begin with the process, you start by adding a custom formatter. To know more, see [Apply Custom Data Formatter](/learn/how-tos/using-custom-formatter/).
 2. Add the following sample code in the **formatter.js** file for formatting the date to a specific format.
 
- ![Formatter File](/learn/assets/custom-formatter-file.png)
+![Formatter File](/learn/assets/custom-formatter-file.png)
 
- ```js
+```js
 toDate: {
         formatter: function(data, param1, param2) {
             // below code  will return date in this format “MM/DD/YYYY”
             return moment(data).format('L');
         }
     }
- ```
+```
 
 3. Next, go to the **Use Expression** tab. Expand the **Format Type** drop-down, select the **toDate** formatter and the required Date pattern. Click on **Apply Format**.
 
- ![Add custom formatter](/learn/assets/add-custom-formatter-todate.png)
+![Add custom formatter](/learn/assets/add-custom-formatter-todate.png)
 
 4. Click **Bind** to save the expression.
 
- ![Format Bind Dialog](/learn/assets/custom-formatter-bind-dialog.png)
+![Format Bind Dialog](/learn/assets/custom-formatter-bind-dialog.png)
 
 5. Preview the application and select a date. You can observe the label that gets displayed in the custom date format.
 
- ![Add custom formatter](/learn/assets/result-using-todatecustom-formatter.png)
+![Add custom formatter](/learn/assets/result-using-todatecustom-formatter.png)
 
 
