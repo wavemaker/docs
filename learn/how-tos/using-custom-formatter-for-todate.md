@@ -9,7 +9,9 @@ WaveMaker includes a default formatter named **toDate** for date formatting. Thi
 
 To use the `toDate` pipe, simply append the pipe sign (|) followed by `toDate` which holds the date format.
     
-    {{ yourDateExpression | toDate: 'yourFormat' }}
+```js
+{{ yourDateExpression | toDate: 'yourFormat' }}
+```
 
 For example, bind the label to `Widgets.date1.datavalue | toDate: 'yyyy, dd MMMM'`.
 
