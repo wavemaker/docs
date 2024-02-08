@@ -50,7 +50,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
               <li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 100 GB</li>
               <li>/wm-data&nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li>
               <li>/wm-runtime&nbsp; &nbsp;100 GB</li>
-	      <li>We strongly recommend SSD configuration</li>
+	      <li>WaveMaker supports only SSD hard drives</li>
             </ul>
       </td>
     </tr>
@@ -130,7 +130,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
           <li>In case of volumes we recommend 3 disks </li>
               <li>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50 GB</li>
               <li>/data&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 150 GB</li>
-              <li>We strongly recommend SSD configuration</li>
+              <li>WaveMaker supports only SSD hard drives</li>
             </ul>
       </td>
     </tr>
