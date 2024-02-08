@@ -22,7 +22,9 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.5.1** <p style={{color:"red"}}>*latest*</p> | - [v11.5.1](/learn/wavemaker-release-notes/v11-5-1) <br/> - [v11.5.0](/learn/wavemaker-release-notes/v11-5-0) <br/> - [v11.4.3](/learn/wavemaker-release-notes/v11-4-3) | Includes enhancements in Widgets and multiple bug fixes related to Studio Page Workspace, React Native, Cordova, and others. Also includes new features like Appium Support, Dockerfiles in a project, importing icon font family, and enhancements like Angular framework support for Prefab workspace, NG studio upgrade to version 15, changes in project shell web template and other bug fixes. Lastly, addressed bug fixes related to the Prefab artifact and Studio Page Workspace. Introduced an option to upload platform logs to AWS S3 link in the Config portal. Entended support to list users for all the team members. | 13 Dec 2023 |
+|**v11.5.3** <p style={{color:"red"}}>*latest*</p> | - [v11.5.3](/learn/wavemaker-release-notes/v11-5-3) | Includes enhancements like conditional classes for input widgets, setting the next button as default in the Wizard widget, and support to add links in the Label along with other bug fixes in React Native and Studio Page Workspace. | 23 Jan 2024 |
+|**v11.5.2**| - [v11.5.2](/learn/wavemaker-release-notes/v11-5-2) | Includes enhancements like an image as thumb and multiple slides display in the Carousel and other bug fixes in React Native and Studio Page Workspace. | 26 Dec 2023 |
+|**v11.5.1**| - [v11.5.1](/learn/wavemaker-release-notes/v11-5-1) <br/> - [v11.5.0](/learn/wavemaker-release-notes/v11-5-0) <br/> - [v11.4.3](/learn/wavemaker-release-notes/v11-4-3) | Includes enhancements in Widgets and multiple bug fixes related to Studio Page Workspace, React Native, Cordova, and others. Also includes new features like Appium Support, Dockerfiles in a project, importing icon font family, and enhancements like Angular framework support for Prefab workspace, NG studio upgrade to version 15, changes in project shell web template and other bug fixes. Lastly, addressed bug fixes related to the Prefab artifact and Studio Page Workspace. Introduced an option to upload platform logs to AWS S3 link in the Config portal. Entended support to list users for all the team members. | 13 Dec 2023 |
 |**v11.4.2** | - [v11.4.2](/learn/wavemaker-release-notes/v11-4-2) <br/> - [v11.4.1](/learn/wavemaker-release-notes/v11-4-1) <br/> - [v11.4.0](/learn/wavemaker-release-notes/v11-4-0) | New features to improve developer collaboration, including the Core project, API reimport analysis report, and a few React Native features, Live Form, and Database Variables, and more. Also, included enhancements, such as support for language fonts, indication mark in the Select widget, and bug fixes. Includes Dynamic Accordion as a new feature and horizontal display of radio buttons as an enhancement in React Native. It also includes support for Bitbucket 8 VCS provider and timezone in the Date widget along with some other enhancements and bug fixes. | 03 Oct 2023 |
 |**v11.3.7** | - v11.3.7 |   This release includes bug fixes <br/> Includes UI fixes <br/> It also includes support for Bitbucket 8 VCS provider | 25 Sep 2023 |
 |**v11.2.6** | - v11.2.6 |   This release includes bug fixes <br/> Includes UI fixes <br/> It also includes support for Bitbucket 8 VCS provider | 25 Sep 2023 |
@@ -87,12 +89,12 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-| | Spring Framework <td className="versiontdbgcolor"> 5.3.15 -> 5.3.18 </td>|
+| | Spring Framework | <td className="versiontdbgcolor"> 5.3.15 -> 5.3.18 </td>|
 | Security framework | Spring Security | 5.5.2|
 | Java JSON utilities | Gson | 2.8.9 |
 | DB Persistence library | Hibernate | 5.5.7.Final|
 | Sample database | HSQL | 2.5.1|
-| JSON library | Jackson <td className="versiontdbgcolor"> 2.12.5 -> 2.12.6.20220326</td>|
+| JSON library | Jackson | <td className="versiontdbgcolor"> 2.12.5 -> 2.12.6.20220326</td>|
 | Logging framework | SLF4j |1.7.32 |
 | Logging Implementation | Log4j2 | 2.17.1 |
 | Http client library | HttpComponents | httpclient- 4.5.13 <br/> httpmime- 4.5.6 |
@@ -106,7 +108,7 @@ Optimized jQuery-UI library, excluding unwanted components like an accordion, da
 | JDK | 1.8 |
 | WebSphere | 8.5.5 |
 | JBoss | 7.1.1 |
-| Tomcat | 8.5* |
+| Tomcat | 9.0.82* |
 | Cordova (mobile apps) <br/> Android <br/> iOS | 10.0.0 <br/> 10.1.0 <br/> 6.1.0 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
