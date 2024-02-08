@@ -29,16 +29,16 @@ Authorization mechanisms help in controlling access to specific features, functi
 
 #### Role-Based Access Control
 
-Role-Based Access Control (RBAC) can be set up for various app resources such as widgets, pages, data, and APIs through configuration.
+Role-Based Access Control (RBAC) can be set up for various application resources such as widgets, pages, data, and APIs through configuration.
 - API Access
 - Page Access
 - Widget Access
 
-## Safeguarding the Application
+## Safeguarding Web Applications against Vulnerabilities
 
-### Web Application Vulnerability
+Safeguarding the application from potential risks and vulnerabilities is the most critical aspect of application development. In this section, we outline the principles and techniques used to protect the web applications generated in WaveMaker.
 
-#### OWASP Top 10
+### OWASP Top 10
 
 With user-customizable security policies, WaveMaker wipes out the security issues presented in OWASP's Top 10 vulnerabilities.  This is to build assurance with the users that the developed application has no risk associated with code execution, unauthorized data access, data breaches, cross-origin attacks, clickjacking, insecure communication, and unauthorized database manipulation while abiding by the security standards.
 
@@ -48,7 +48,7 @@ Below are the protective measures for securing against the OWASP vulnerabilities
 - CORS and X-Frame
 - SQL Injection
 
-#### Third-party Dependent Libraries
+### Third-party Dependent Libraries
 
 WaveMaker's use of SONARQUBE represents a proactive approach to ensure the integrity and security of its software applications. SONARQUBE serves as a crucial component in the software development lifecycle, providing a comprehensive analysis of code quality, bug identification, and security vulnerabilities.
 
