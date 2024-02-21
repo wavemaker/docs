@@ -4,18 +4,24 @@ author: Ritupurna Lenka
 ---
 ---
 
-WaveMaker is dedicated to furnishing a secure environment for developing applications. It encompasses integrated features, strategies, and extensive security configuration to manage security within the application. Applications created in WaveMaker are inherently secured and ready for immediate use upon completion of development. 
-The approach taken by WaveMaker involves regular monitoring and updates, staying abreast of the latest security patches and enhancements for the libraries in use. This proactive stance contributes to the creation of a fortified development environment, where the foundation of applications is built upon secure and resilient libraries. Developers working within the WaveMaker ecosystem can thus have confidence that the underlying components are thoroughly vetted, adhering to the highest security standards and significantly reducing the likelihood of vulnerabilities affecting the final application.
+Ever wondered why we go through multiple security checks before boarding a flight.? It is to prohibit any kind of threats. Securing an application is equally important as it is where the user database is available and can be used for many malicious purposes. 
+
+WaveMaker being a low-code platform has not only made application development easy but also provided integrated features, strategies, and extensive security configuration to manage security within the application. Applications created in WaveMaker are inherently secured and ready for immediate use upon completion of development.
+
+[![WaveMaker Security](/learn/assets/wavemaker-security.png)](/learn/assets/wavemaker-security.png)
 
 <!-- truncate -->
 
 ## Authentication and Authorization
 
-WaveMaker offers several authentication and authorization mechanisms to validate the identity of the application users and apply necessary restrictions based on the user role.
+If an application is free from authentication and authorization mechanisms, it becomes easy to use and corrupt any resource. This is handled in WaveMaker with just one click. 
+
+Yes!, this easy action allows us to enable basic authentication and authorization along with multiple configurations to validate the identity of the application users and apply necessary restrictions based on the user role.
 
 ### Authentication
 
-Authentication mechanisms help in verifying the identity of users or entities attempting to access an application. These security configurations provide a robust framework for secure single sign-on, and protection against various threats like Identity Spoofing, Session Hijacking, Credential thefts, and many user identity-related risks.
+WaveMaker comes with several authentication mechanisms that can cater to any type of security requirements. Users can apply basic single-level authentication or use complex multi-level authentication to secure the application. Here is the list of the authentication mechanisms that our platform provides.
+
 - OpenID
 - LDAP
 - Database
@@ -25,24 +31,25 @@ Authentication mechanisms help in verifying the identity of users or entities at
 
 ### Authorization
 
-Authorization mechanisms help in controlling access to specific features, functionalities, or data within an application. With this, users with appropriate privileges and permissions can perform certain actions or access certain functionalities. Without these, the application is open to issues like Data Exposure, Privilege Escalation, Cross-User Data Leakage, and Overexposure of APIs.
+When it comes to Authorization, WaveMaker makes it very simple for any user to apply the Role-Based Access Control(RBAC) security restriction to help control access to specific features, functionalities, or data within an application. With this, users with appropriate privileges and permissions can perform certain actions or access certain functionalities.
 
 #### Role-Based Access Control
 
-Role-Based Access Control (RBAC) can be set up for various application resources such as widgets, pages, data, and APIs through configuration.
+In WaveMaker, RBAC can be set up for various application resources such as widgets, pages, data, and APIs through configuration.
+
 - API Access
 - Page Access
 - Widget Access
 
 ## Safeguarding Web Applications against Vulnerabilities
 
-Safeguarding the application from potential risks and vulnerabilities is the most critical aspect of application development. In this section, we outline the principles and techniques used to protect the web applications generated in WaveMaker.
+Safeguarding the developed web applications from potential risks and vulnerabilities is the most critical aspect that our platform ensures by following the below-provided principles and techniques.
 
 ### OWASP Top 10
 
-With user-customizable security policies, WaveMaker wipes out the security issues presented in OWASP's Top 10 vulnerabilities.  This is to build assurance with the users that the developed application has no risk associated with code execution, unauthorized data access, data breaches, cross-origin attacks, clickjacking, insecure communication, and unauthorized database manipulation while abiding by the security standards.
+With user-customizable security policies, WaveMaker wipes out the security issues presented in OWASP's Top 10 vulnerabilities.  This builds assurance with the users that the developed application has no risk associated with code execution, unauthorized data access, data breaches, cross-origin attacks, clickjacking, insecure communication, and unauthorized database manipulation while abiding by security standards.
 
-Below are the protective measures for securing against the OWASP vulnerabilities.
+Below are the protective measures that WaveMaker offers to secure against OWASP vulnerabilities.
 - XSS
 - SSL
 - CORS and X-Frame
@@ -50,11 +57,9 @@ Below are the protective measures for securing against the OWASP vulnerabilities
 
 ### Third-party Dependent Libraries
 
-WaveMaker's use of SONARQUBE represents a proactive approach to ensure the integrity and security of its software applications. SONARQUBE serves as a crucial component in the software development lifecycle, providing a comprehensive analysis of code quality, bug identification, and security vulnerabilities.
+Dealing with threats while using third-party libraries is to make sure of the quality of external resources that we use in our application development. WaveMaker uses SONARQUBE which provides a comprehensive analysis of code quality, bug identification, and security vulnerabilities.
 
-The frequent evaluation allows the development team to catch potential issues early in the development process, preventing the accumulation of technical debt and enhancing the overall stability of the software. Moreover, the upgrade policy implemented by WaveMaker further enhances the security posture of the software.
-
-In summary, the integration of SONARQUBE into WaveMaker's development process exemplifies a commitment to code quality, security, and continuous improvement.
+This frequent evaluation allows the development team to catch potential issues early in the development process, preventing the accumulation of technical debt and enhancing the overall stability of the software.
 
 ## Our Commitment to Application Security
 
