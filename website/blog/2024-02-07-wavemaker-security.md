@@ -8,8 +8,6 @@ Ever wondered why we go through multiple security checks before boarding a fligh
 
 WaveMaker being a low-code platform has not only made application development easy but also provided integrated features, strategies, and extensive security configuration to manage security within the application. Applications created in WaveMaker are inherently secured and ready for immediate use upon completion of development.
 
-[![WaveMaker Security](/learn/assets/wavemaker-security.png)](/learn/assets/wavemaker-security.png)
-
 <!-- truncate -->
 
 ## Authentication and Authorization
@@ -17,6 +15,7 @@ WaveMaker being a low-code platform has not only made application development ea
 If an application is free from authentication and authorization mechanisms, it becomes easy to use and corrupt any resource. This is handled in WaveMaker with just one click. 
 
 Yes!, this easy action allows us to enable basic authentication and authorization along with multiple configurations to validate the identity of the application users and apply necessary restrictions based on the user role.
+
 
 ### Authentication
 
