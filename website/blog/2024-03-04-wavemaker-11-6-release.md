@@ -2,6 +2,7 @@
 title: "Announcing WaveMaker 11.6 release - What's new"
 author: Vibhu Singhal
 ---
+
 As part of our endeavor to get better and use the best of the tech stack available, we have upgraded the underlying framework of WaveMaker Studio from AngularJS to latest version of Angular. During this rewrite we also improved the overall user experience of the studio user.
 
 :::note
