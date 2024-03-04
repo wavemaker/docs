@@ -21,7 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.6.0](/learn/wavemaker-release-notes/v11-6-0) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.6 is being rolled out in phases, bringing new and exciting updates, including performance improvements, a projects hub, a refreshed overall studio look, a 3-way merge screen, APIs playground, and more. YSee details in the [WaveMaker 11-6 release blog](/learn/blog/2024/03/04/wavemaker-11-6-release), which also covers numerous bug fixes. |03 March 2024 |
+|[WaveMaker 11.6.0](/learn/wavemaker-release-notes/v11-6-0) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.6 is being rolled out in phases, bringing new and exciting updates, including performance improvements, projects hub, refreshed overall studio look, a 3-way merge screen, API's playground, and more. See details in the [WaveMaker 11-6 release blog](/learn/blog/2024/03/04/wavemaker-11-6-release) and a few bug fixes. |03 March 2024 |
 |[WaveMaker 11.5.3](/learn/wavemaker-release-notes/v11-5-3) | Includes enhancements like conditional classes for input widgets, setting the next button as default in the Wizard widget, and support to add links in the Label along with other bug fixes in React Native and Studio Page Workspace.|22 January 2024 |
 |[WaveMaker 11.5.2](/learn/wavemaker-release-notes/v11-5-2) | Includes enhancements like an image as thumb and multiple slides display in the Carousel and other bug fixes in React Native and Studio Page Workspace. |19 December 2023 |
 |[WaveMaker 11.5.1](/learn/wavemaker-release-notes/v11-5-1) | Includes bug fixes related to the Prefab artifact and Studio Page Workspace. |11 December 2023 |
