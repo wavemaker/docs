@@ -8,9 +8,9 @@ author: Prasanth Reddy
 
 WaveMaker’s support for developing mobile applications was launched in 2015 with Cordova as the underlying framework. But with multiple advancements, in 2022, we released support for creating React Native mobile applications. 
 
-For us to serve our customers better, we are moving our mobile focus to React Native only. With the release of 11.6.0, we are going to discontinue support for Cordova.
+For us to serve our customers better, we are moving our mobile focus to React Native only. With the release of 11.6.0, we will start providing minimal support to Cordova projects. 
 
-With this deprecation, users will not be able to create any new projects in Cordova but will be able to work on the existing projects. However, by June 2024 we will end our complete support for Cordova.
+This indicates that with this deprecation, users will not be able to create any new projects in Cordova but will be able to work on the existing projects. However, by June 2024 we will end our complete support for Cordova projects and users will not be provided with any new patches/updates in further releases.
 
 <!-- truncate -->
 
