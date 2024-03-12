@@ -23,7 +23,7 @@ With better performance and the latest technology, React Native stands as the fi
 
 | Timeline | Description |
 | --- | --- |
-| Immediate effect | Users will not be create new Cordova projects but will be able to work on the existing projects. |
+| Immediate effect | Users will not be able to create new Cordova projects but will be able to work on the existing projects. |
 | Till 30 June 2024 | We will provide fixes if it resolves one of the following: <br/> - A newly identified security vulnerability, <br/> - A regression caused by a 3rd party change, such as a new mobile OS version. |
 | Post June 2024 | Complete end of support. Users will not be able to open Cordova projects however, they will be provided an option to export projects. |
 
