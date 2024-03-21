@@ -8,12 +8,15 @@ import PdfPreview from '/learn/assets/pdf-preview-and-download.png';
 import CreatePrefab from '/learn/assets/create-pdf-preview-prefab.png'
 import SelectWidget from '/learn/assets/select-custom-widget.png'
 import CreateProperties from '/learn/assets/add-link-and-password-property.png' 
-import AddPackages from '/learn/assets/add-pdf-dependecies.png'
-import AddProperty from '/learn/assets/add-property-in-prefab.png' 
+import AddPackages from '/learn/assets/Pdf_dependencies.png'
+import AddProperty from '/learn/assets/Pdf_prefab_properties.png' 
 import BindProperties from '/learn/assets/bind-link-and-password-properties.png'
 import DialogBox from '/learn/assets/password-dialog-box.png'
 import Password from '/learn/assets/add-password-expression.png'
 import ImplementPrefab from '/learn/assets/implement-prefab-to-project.png'
+import PdfPreviewNative from '/learn/assets/PdfPreview_native_module.png'
+import PdfPreviewWeb from '/learn/assets/PdfPreview_web_module.png'
+import PdfPreviewPrefab from '/learn/assets/PdfPreview_prefab_script.png'
 
 Viewing PDFs without leaving the mobile app offers ability for developers to keep their users in the app's context. It is possible to let PDF file download to the phone and have the user open it using a different app. That may not be best user experience for an app. Not all users may know how to locate and open the PDF file in a different app. 
 In this how-to we will see how to add PDF preview functionality to a WaveMaker app using the `react-native-pdf` and 
@@ -31,7 +34,7 @@ through creating a prefabs in WaveMaker which will handle the PDF functional com
 
 The following steps will you can create your own Prefabs for PDF Preview.
 
-<img src={CreatePrefab} style={{width:"35%"}} />
+<img src={CreatePrefab} style={{width:"100%"}} />
 
 Select widget in sidebar and search for the custom widget and drag n drop to the design box
 
@@ -48,15 +51,15 @@ On creating prefab we configure it through simple steps.
 Click on **setting** then click on  **Config Prefab**. Now, select Resources tab and In **Script** section add `react-native-pdf` and 
 `react-native-blob-util` dependencies to the scripts and then click on save.
 
-<img src={AddPackages} style={{width:"35%"}} />
+<img src={AddPackages} style={{width:"100%"}} />
 
 And then, select properties tab. Add Link Property in **UI Properties** section and click on save.
 
-<img src={AddProperty} style={{width:"35%"}} />
+<img src={AddProperty} style={{width:"100%"}} />
 
-Make sure to select **Use Expression** tab, and add `pdfpassword` expressoin.
+Make sure to select **Use Expression** tab, and add `pdfpassword` expression.
 
-<img src={Password} style={{width:"35%"}} />
+<img src={Password} style={{width:"100%"}} />
 
 Time to bind prefab link and password properties to the widget
 
@@ -64,11 +67,77 @@ Time to bind prefab link and password properties to the widget
 
 After setting up the configurations it's time for us to implement functionality for the prefab with code.
 
-In order to handle password flows, we need to create dialog box for password by using design dialog widget.
+1. In order to handle password flows, we need to create dialog box for password by using design dialog widget.
 
-<img src={DialogBox} style={{width:"35%"}} />
+<img src={DialogBox} style={{width:"100%"}} /><br/><br/>
+
+2. Add [custom files](https://docs.wavemaker.com/learn/react-native/custom-js-modules/#adding-custom-js-libraries), one for native `PdfPreview.native.js` and another for web as `PdfPreview.web.js`
 
 ```javascript
+// PdfPreview.native.js
+function PdfPreview(props) {
+    const React = require('react');
+    const Pdf = require('react-native-pdf');
+
+    return React.createElement(Pdf.default, {
+        trustAllCerts: false,
+        source: {
+            uri: props.link,
+            caches: true,
+        },
+        style: {
+            flex: 1,
+            width: 380,
+            height: 520,
+        },
+        password: props.password ? props.password : '',
+        onError: (error) => {
+            console.log(error);
+        },
+        onLoadComplete: (numberOfPages, filepath) => {
+            console.log(`number of pages: ${numberOfPages}`);
+        },
+    });
+}
+
+module.exports = {
+    PdfPreview,
+}
+```
+
+```javascript
+// PdfPreview.web.js
+function PdfPreview(props) {
+  const React = require('react');
+
+    if (!props.link) {
+        return null;
+    }
+
+    return React.createElement('iframe', {
+        src: `https://docs.google.com/viewer?url=${props.link}&embedded=true`,
+        style: {
+            width: 400,
+            height: 600,
+        },
+        frameBorder: "0"
+    });
+}
+
+module.exports = {
+  PdfPreview,
+}
+```
+
+<img src={PdfPreviewNative} style={{width:"100%"}} />
+<img src={PdfPreviewWeb} style={{width:"100%"}} /><br/><br/>
+
+3. Import PdfPreview module in Prefab's Main Script and pass appropriate props to show pdf based on the platform
+
+```javascript
+const {
+    PdfPreview
+} = require('../../../assets/resources/files/PdfPreview');
 
 Prefab.onReady = function() {
     Prefab.date = new Date();
@@ -82,44 +151,28 @@ Prefab.submitClick = function($event, widget) {
 };
 
 function renderPdf(props) {
-    const react = require('react');
-    const Pdf = require('react-native-pdf');
+    const React = require('react');
 
     if (!props.link) {
         return null;
     }
 
-    return react.createElement(Pdf.default, {
-        trustAllCerts: false,
-        source: {
-            uri: props.link,
-            caches: true,
-        },
-        style: {
-            flex: 1,
-            width: 380,
-            height: 520,
-        },
+    return React.createElement(PdfPreview, {
+        link: props.link,
         password: props.password ? props.password : '',
-        onError: (error) => {
-            Prefab.Widgets.passworddialog.open();
-            console.log(error);
-        },
-        onLoadComplete: (numberOfPages, filepath) => {
-            Prefab.Widgets.passworddialog.close();
-            console.log(`number of pages: ${numberOfPages}`);
-        },
-    });
+    })
 }
 ```
 
-This prefab we can render with or without password-protected files.
+<img src={PdfPreviewPrefab} style={{width:"100%"}} />
+
+We can render this prefab with or without password-protected files.
 
 ## Implement Prefab to the project
 
 To implement Prefab to the project, expand Prefab tab in sidebar and select your custom prefab and drag n drop to the design box
 
-<img src={ImplementPrefab} style={{width:"35%"}} />
+<img src={ImplementPrefab} style={{width:"100%"}} />
 
 ## Downloading PDFs in a WaveMaker App
 

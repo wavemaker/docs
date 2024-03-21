@@ -52,6 +52,13 @@ module.exports = {
 require('./assets/resources/files/customScript.js');
 ```
 
+Likewise, we can import platform-specific files to ensure the custom module runs on a certain platform only
+
+```
+require('./assets/resources/files/customScript.native.js');
+require('./assets/resources/files/customScript.web.js');
+```
+
 :::note
 `./assets/` should be added before resources in the import path
 :::
@@ -67,6 +74,14 @@ As shown below, We are adding the code to `App.js`
 ```javascript
 App.customModule = function() {
     return require('./assets/resources/files/customScript.js');
+}
+```
+
+For `.native.js` or `.web.js` files, the import may look like below (i.e, without .js extension)
+
+```javascript
+App.customModule = function() {
+    return require('./assets/resources/files/customScript');
 }
 ```
 
