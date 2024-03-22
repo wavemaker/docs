@@ -48,8 +48,8 @@ Add link and password properties to the custom widget
 
 On creating prefab we configure it through simple steps. 
 
-Click on **setting** then click on  **Config Prefab**. Now, select Resources tab and In **Script** section add `react-native-pdf` and 
-`react-native-blob-util` dependencies to the scripts and then click on save.
+Click on **setting** then click on  **Config Prefab**. Now, select Resources tab and In **Script** section add `react-native-pdf@6.6.2` and 
+`react-native-blob-util@0.19.8` dependencies to the scripts and then click on save.
 
 <img src={AddPackages} style={{width:"100%"}} />
 
