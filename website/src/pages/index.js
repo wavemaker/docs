@@ -192,9 +192,6 @@ export default class Index extends React.Component {
 
         return (
             <div className='index'>
-                {/* <!-- Google tag (gtag.js) --> */}
-                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZF4PSQ7HM"></script> 
-                 <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)} gtag('js', new Date()); gtag('config', 'G-4ZF4PSQ7HM'); </script>
                 <Layout>
                     <Main />
                 </Layout>
