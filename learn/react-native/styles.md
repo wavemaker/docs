@@ -93,3 +93,80 @@ All these CSS styles are converted to JS objects during code generation.
 4. Theme
 5. Runtime default styles
 
+## CSS Variables
+
+CSS variables, also known as custom properties, provide a powerful way to define and reuse values in your stylesheets. They allow you to store values such as colors, sizes, or any other CSS value and reuse them by referring throughout your stylesheets. This approach makes it easier to maintain and update styles consistently across your application.
+
+### Declaring CSS Variables
+
+To centralize your theme-related CSS variable definitions, you can declare the variables in a specific section in your stylesheet, for example, `src/common/styles.css`.
+
+```css
+/* src/common/styles.css */
+
+:theme-variables {
+  --my-label-color: green;
+  --my-label-bg-color: var(--secondaryColor);
+  --my-label-border-color: rgb(236, 210, 18);
+}
+```
+
+Here, `--my-label-color`, `--my-label-bg-color`, `--my-label-border-color`, and `--secondaryColor` are custom CSS variables that hold color values.
+
+### Setting CSS Variables in Script
+
+In Script, you can dynamically set CSS variables using a method, `App.setThemeVariables`.
+
+```javascript
+App.setThemeVariables({
+  "--my-label-color": "yellow",
+  "--my-label-bg-color": "var(--primaryColor)",
+  "--my-label-border-color": "red",
+});
+```
+
+This lets you update CSS variable values based on dynamic conditions or user preferences.
+
+### Using CSS Variables in Stylesheets
+
+CSS variables can be used throughout your stylesheets using the `var()` function.
+
+```css
+.label-to-highlight .app-label-text {
+  color: var(--my-label-color);
+  background-color: var(--my-label-bg-color);
+  border: 4px solid #333;
+  border-color: var(--my-label-border-color);
+}
+```
+
+In this example:
+
+- `var(--my-label-color)` retrieves the value of `--my-label-color`.
+- `var(--my-label-bg-color)` retrieves the value of `--my-label-bg-color`.
+- `var(--my-label-border-color)` retrieves the value of `--my-label-border-color`.
+
+### Pointers Using CSS Variable
+
+When working with CSS variables, the following points are to be considered.
+
+1. **Shorthand Style**: When using CSS variables, it's important to note that variables cannot be directly used within style shorthand declarations like `border: 4px solid var(--my-label-border-color);`. Instead, each property within the shorthand declaration that uses a variable should be specified individually.
+
+   ```css
+   .label-to-highlight .app-label-text {
+     color: var(--my-label-color);
+     background-color: var(--my-label-bg-color);
+     border: 4px solid #333; /* Correct way to specify border */
+     border-color: var(--my-label-border-color);
+   }
+   ```
+
+2. **Explicit Variable Usage**: Every variable has to be specified as `${style_name}: var(${variable_name})` for example,
+
+   ```css
+   .label-to-highlight .app-label-text {
+     color: var(--my-color-variable);
+   }
+   ```
+
+3. **Case Sensitivity**: CSS variables are case-sensitive. Ensure that you reference variables using their exact names, including case sensitivity.
