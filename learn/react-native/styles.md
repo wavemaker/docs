@@ -146,7 +146,7 @@ In this example:
 - `var(--my-label-bg-color)` retrieves the value of `--my-label-bg-color`.
 - `var(--my-label-border-color)` retrieves the value of `--my-label-border-color`.
 
-### Pointers Using CSS Variable
+### CSS Variables Best Practices
 
 When working with CSS variables, the following points are to be considered.
 
