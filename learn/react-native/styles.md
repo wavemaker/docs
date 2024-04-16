@@ -27,7 +27,7 @@ Using these class names, you can mention styles in the theme, app.css, and page 
 
 In this way, every WaveMaker widget has several stylable units. 
 
-There is a link to style document across each widget in [Widgets page](../features/widgets.html). 
+There is a link to style documents across each widget in [Widgets page](/learn/react-native/supported-widgets). 
 
 In Studio, auto-suggestions for class names populate in the style editor as you type in page styles.
 
