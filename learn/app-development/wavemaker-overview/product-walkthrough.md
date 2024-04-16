@@ -24,7 +24,7 @@ Following are some of the terms commonly used in Studio parlance.
 | **Project Shell** | Foundation for multiple apps in an enterprise.  |[Project Shells](/learn/app-development/ui-design/project-shells/) |
 | **Theme** | Colors, fonts, and branding elements (CSS & images) that is applied to all pages within an app.  |[Themes Overview](/learn/app-development/ui-design/themes/)|
 ||Create your own custom theme.|[Creating Themes](/learn/app-development/ui-design/themes/#create-theme) |
-| **Variable** | Provides data integration for the widgets.   &lt;details&gt;<summary>Read more</summary>  Variable holds the actual data to be rendered by the widgets. It is based on a data model obtained from the API source (from services like database and web-based) and renders the same in the form of a data structure used for binding, with attributes and related objects. |[Variables Overview](/learn/app-development/variables/variables/) |
+| **Variable** | Provides data integration for the widgets.   &lt;details&gt;<summary>Read more</summary>  Variable holds the actual data to be rendered by the widgets. It is based on a data model obtained from the API source (from services like database and web-based) and renders the same in the form of a data structure used for binding, with attributes and related objects. |[Variables Overview](/learn/app-development/variables/) |
 |  |**Variable Types**|| 
 |**Database CRUD** | For the basic insert, read and update operation on the Database tables. |[Database CRUD](/learn/app-development/variables/database-crud/) |
 | **Database API** | For accessing the queries and procedures and additional Database functionality. | [Database API](/learn/app-development/variables/database-apis/) |
