@@ -15,7 +15,7 @@ The 'API re-import and Impact analysis' feature is designed to assist developers
 
 Go to **APIs** section, and click on **Re-Imported** at the screen's top right to re-import the selected API service.
 
-![import swagger](/learn/assets/reimport-swagger.png)
+![import swagger](/learn/assets/reimport-swagger.PNG)
 
 Import the updated Swagger from either a URL or file.
 
