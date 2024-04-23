@@ -4,18 +4,18 @@ id: "pdf-preview-and-download"
 sidebar_label: "PDF preview"
 ---
 ---
-import PdfPreview from '/learn/assets/pdf-preview-and-download.png';
-import CreatePrefab from '/learn/assets/create-pdf-preview-prefab.png'
+import PdfPreview from '/learn/assets/pdf_preview_and_download.png';
+import PdfDownloadNotification from '/learn/assets/pdf_download_notification.png';
+import CreatePrefab from '/learn/assets/create_pdf_preview_prefab.png'
 import SelectWidget from '/learn/assets/select-custom-widget.png'
 import CreateProperties from '/learn/assets/add-link-and-password-property.png' 
 import AddPackages from '/learn/assets/Pdf_dependencies.png'
 import AddProperty from '/learn/assets/Pdf_prefab_properties.png' 
-import BindProperties from '/learn/assets/bind-link-and-password-properties.png'
+import BindProperties from '/learn/assets/bind_link_and_password_properties.png'
 import DialogBox from '/learn/assets/password-dialog-box.png'
 import Password from '/learn/assets/add-password-expression.png'
 import ImplementPrefab from '/learn/assets/implement-prefab-to-project.png'
 import PdfPreviewNative from '/learn/assets/PdfPreview_native_module.png'
-import PdfPreviewWeb from '/learn/assets/PdfPreview_web_module.png'
 import PdfPreviewPrefab from '/learn/assets/PdfPreview_prefab_script.png'
 
 Viewing PDFs without leaving the mobile app offers ability for developers to keep their users in the app's context. It is possible to let PDF file download to the phone and have the user open it using a different app. That may not be best user experience for an app. Not all users may know how to locate and open the PDF file in a different app. 
@@ -32,49 +32,66 @@ through creating a prefabs in WaveMaker which will handle the PDF functional com
 
 ## Building Prefabs in WaveMaker for PDF Preview
 
-The following steps will you can create your own Prefabs for PDF Preview.
+The following steps will help you create your own Prefab for PDF Preview. Please refer to [Custom Widget](https://docs.wavemaker.com/learn/react-native/custom-widget#adding-third-party-native-libraries) to learn how to add third party libraries in WaveMaker.
 
-<img src={CreatePrefab} style={{width:"100%"}} />
+<img src={CreatePrefab} style={{width:"100%"}} /><br/><br/>
 
-Select widget in sidebar and search for the custom widget and drag n drop to the design box
+1. Select widget in sidebar and search for the **Custom** widget and drag n drop to the design box
 
-<img src={SelectWidget} style={{width:"35%"}} />
+<img src={SelectWidget} style={{width:"35%"}} /><br/><br/>
 
-Add link and password properties to the custom widget
+2. Add **link** and **password** properties to the custom widget
+
+:::note
+We can render this prefab with or without password-protected files.
+:::
 
 <img src={CreateProperties} style={{width:"35%"}} />
 
 ### Prefab Configuration
 
-On creating prefab we configure it through simple steps. 
+On creating prefab we configure it through the following simple steps. 
 
-Click on **setting** then click on  **Config Prefab**. Now, select Resources tab and In **Script** section add `react-native-pdf@6.6.2` and 
+1. Click on **Setting** icon, then click on  **Prefab Configuration**. Now, select Resources tab and in **Script** section add `react-native-pdf@6.6.2` and 
 `react-native-blob-util@0.19.8` dependencies to the scripts and then click on save.
 
-<img src={AddPackages} style={{width:"100%"}} />
+<img src={AddPackages} style={{width:"100%"}} /><br/><br/>
 
-And then, select properties tab. Add Link Property in **UI Properties** section and click on save.
+2. And then, select **Properties** tab. Add Link and Pdfpassword Property in **UI Properties** section and click on save.
 
-<img src={AddProperty} style={{width:"100%"}} />
+<img src={AddProperty} style={{width:"100%"}} /><br/><br/>
 
-Make sure to select **Use Expression** tab, and add `pdfpassword` expression.
+3. Make sure to select **Use Expression** tab, and add `pdfpassword` expression.
 
-<img src={Password} style={{width:"100%"}} />
+<img src={Password} style={{width:"100%"}} /><br/><br/>
 
-Time to bind prefab link and password properties to the widget
+4. Now, we can bind prefab **link** and **password** properties to the widget.
 
 <img src={BindProperties} style={{width:"35%"}} />
 
-After setting up the configurations it's time for us to implement functionality for the prefab with code.
+Here's the final Markup for the prefab.
+```html
+<wm-prefab-container name="prefab_container1">
+    <wm-custom name="custom1" linkparam="bind:Variables.link.dataSet.dataValue" passwordparam="bind:Variables.pdfpassword.dataSet.dataValue"></wm-custom>
+</wm-prefab-container>
+```
+
+### Prefab Implementation
+
+After setting up the configurations it's time for us to implement functionality for the prefab with code. This functionality will be imported later in out project.
 
 1. In order to handle password flows, we need to create dialog box for password by using design dialog widget.
 
 <img src={DialogBox} style={{width:"100%"}} /><br/><br/>
 
-2. Add [custom files](https://docs.wavemaker.com/learn/react-native/custom-js-modules/#adding-custom-js-libraries), one for native `PdfPreview.native.js` and another for web as `PdfPreview.web.js`
+2. Add a [custom file](https://docs.wavemaker.com/learn/react-native/custom-js-modules/#adding-custom-js-libraries), for the native implementation of PdfPreview, e.g, `PdfPreview.native.js`
+
+:::note
+We don't support PdfPreview prefab on web
+:::
 
 ```javascript
-// PdfPreview.native.js
+// resources/files/PdfPreview.native.js
 function PdfPreview(props) {
     const React = require('react');
     const Pdf = require('react-native-pdf');
@@ -105,34 +122,9 @@ module.exports = {
 }
 ```
 
-```javascript
-// PdfPreview.web.js
-function PdfPreview(props) {
-  const React = require('react');
+<img src={PdfPreviewNative} style={{width:"100%"}} /><br/><br/>
 
-    if (!props.link) {
-        return null;
-    }
-
-    return React.createElement('iframe', {
-        src: `https://docs.google.com/viewer?url=${props.link}&embedded=true`,
-        style: {
-            width: 400,
-            height: 600,
-        },
-        frameBorder: "0"
-    });
-}
-
-module.exports = {
-  PdfPreview,
-}
-```
-
-<img src={PdfPreviewNative} style={{width:"100%"}} />
-<img src={PdfPreviewWeb} style={{width:"100%"}} /><br/><br/>
-
-3. Import PdfPreview module in Prefab's Main Script and pass appropriate props to show pdf based on the platform
+3. Import PdfPreview module in Prefab's Main **Script** and pass appropriate props to show pdf on the native mobile platform.
 
 ```javascript
 const {
@@ -166,8 +158,6 @@ function renderPdf(props) {
 
 <img src={PdfPreviewPrefab} style={{width:"100%"}} />
 
-We can render this prefab with or without password-protected files.
-
 ## Implement Prefab to the project
 
 To implement Prefab to the project, expand Prefab tab in sidebar and select your custom prefab and drag n drop to the design box
@@ -177,50 +167,46 @@ To implement Prefab to the project, expand Prefab tab in sidebar and select your
 ## Downloading PDFs in a WaveMaker App
 
 Downloading PDFs is a common requirement in mobile applications, and React Native makes it relatively straightforward to implement this functionality. 
-Here, we'll walk you through how to download a PDF file in a WaveMaker app using the `rn-fetch-blob`.
+Here, we'll walk you through how to download a PDF file in a WaveMaker app using `react-native-blob-util`.
 
-### Adding rn-fetch-blob Plugin to your WaveMaker App
-
-- rn-fetch-blob
-
-RNFetchBlob plugin can be installed in a few steps in a WaveMaker application. Please refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo)
-on how to install the plugin. 
-
-
+<div style={{display:"flex", gap: 20}}>
 <img src={PdfPreview} style={{width:"35%"}} />
+<img src={PdfDownloadNotification} style={{width:"35%"}} />
+</div><br/>
 
 The following is the code snippet for the above mockup
+:::note
+We don't support downloading PDFs on web
+:::
 
-```javascript 
-var RNFetchBlob = require('rn-fetch-blob').default;
+```javascript
+Page.onReady = function() {};
 
-  Page.onReady = function () {};
+Page.button1Tap = function($event, widget) {
+    try {
+        const RNBlobUtil = require('react-native-blob-util').default;
 
-  Page.downloadpdfTap = function ($event, widget) {
-    const value = Page.Widgets.pdfurl.datavalue; //input value
+        const dirs = RNBlobUtil.fs.dirs;
+        const pdfUrl = Page.Widgets.pdfUrl.datavalue;
+        const fileName = pdfUrl.substring(pdfUrl.lastIndexOf('/') + 1, pdfUrl.length);
 
-    let dirs = RNFetchBlob.fs.dirs;
-    
-    const filename = value.substring(value.lastIndexOf('/') + 1, value.length);
-
-    RNFetchBlob.config({
-      fileCache: true,
-      path: dirs.DownloadDir + '/' + filename,
-      addAndroidDownloads: {
-        notification: true,
-        title: filename,
-        mediaScannable: true,
-      },
-    })
-      .fetch('GET', value, {})
-      .then(res => {
-        console.log('The file saved to ', res.path());
-      })
-      .catch(error => {
-        console.error('Error creating directory:', error);
-      });
-  };
-
+        RNBlobUtil
+            .config({
+                fileCache: true,
+                path: dirs.DownloadDir + '/' + fileName,
+                addAndroidDownloads: {
+                    useDownloadManager: true,
+                    notification: true,
+                }
+            })
+            .fetch('GET', pdfUrl, {})
+            .then((res) => {
+                console.log('The file saved to ', res.path())
+            })
+    } catch (error) {
+        console.log('Error downloading pdf: ', error);
+    }
+};
 ```
 
 
