@@ -16,6 +16,7 @@ import DialogBox from '/learn/assets/password-dialog-box.png'
 import Password from '/learn/assets/add-password-expression.png'
 import ImplementPrefab from '/learn/assets/implement-prefab-to-project.png'
 import PdfPreviewNative from '/learn/assets/PdfPreview_native_module.png'
+import PdfPreviewWeb from '/learn/assets/PdfPreview_web_module.png'
 import PdfPreviewPrefab from '/learn/assets/PdfPreview_prefab_script.png'
 
 Viewing PDFs without leaving the mobile app offers ability for developers to keep their users in the app's context. It is possible to let PDF file download to the phone and have the user open it using a different app. That may not be best user experience for an app. Not all users may know how to locate and open the PDF file in a different app. 
@@ -69,7 +70,7 @@ On creating prefab we configure it through the following simple steps.
 
 <img src={BindProperties} style={{width:"35%"}} />
 
-Here's the final Markup for the prefab.
+Here's the final **Markup** for the prefab.
 ```html
 <wm-prefab-container name="prefab_container1">
     <wm-custom name="custom1" linkparam="bind:Variables.link.dataSet.dataValue" passwordparam="bind:Variables.pdfpassword.dataSet.dataValue"></wm-custom>
@@ -122,15 +123,31 @@ module.exports = {
 }
 ```
 
-<img src={PdfPreviewNative} style={{width:"100%"}} /><br/><br/>
+```javascript
+// resources/files/PdfPreview.web.js
+function PdfPreview(props) {
+    const React = require("react");
+    const RN = require('react-native');
+    const {View, Text} = RN;
+
+    return (
+        <View>
+            <Text>Pdf Preview is not supported on web</Text>
+        </View>
+    );
+}
+
+module.exports = {
+    PdfPreview,
+}
+```
+
+<img src={PdfPreviewNative} style={{width:"100%"}} />
+<img src={PdfPreviewWeb} style={{width:"100%"}} /><br/><br/>
 
 3. Import PdfPreview module in Prefab's Main **Script** and pass appropriate props to show pdf on the native mobile platform.
 
 ```javascript
-const {
-    PdfPreview
-} = require('../../../assets/resources/files/PdfPreview');
-
 Prefab.onReady = function() {
     Prefab.date = new Date();
     if (Prefab.Widgets.custom1) {
@@ -143,16 +160,23 @@ Prefab.submitClick = function($event, widget) {
 };
 
 function renderPdf(props) {
-    const React = require('react');
+    try {
+        const React = require('react');
+        const {
+            PdfPreview
+        } = require('../../../assets/resources/files/PdfPreview');
 
-    if (!props.link) {
-        return null;
+        if (!props.link) {
+            return null;
+        }
+
+        return React.createElement(PdfPreview, {
+            link: props.link,
+            password: props.password ? props.password : '',
+        })
+    } catch (error) {
+        console.log('Failed to render pdf', error);
     }
-
-    return React.createElement(PdfPreview, {
-        link: props.link,
-        password: props.password ? props.password : '',
-    })
 }
 ```
 
@@ -162,7 +186,31 @@ function renderPdf(props) {
 
 To implement Prefab to the project, expand Prefab tab in sidebar and select your custom prefab and drag n drop to the design box
 
-<img src={ImplementPrefab} style={{width:"100%"}} />
+<img src={ImplementPrefab} style={{width:"100%"}} /><br/><br/>
+
+Here's the **Markup** for the project.
+
+```html
+<wm-page name="mainpage">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" title="Pdf Preview" backbutton="false">
+        <wm-anchor caption="" name="AddLink" iconclass="wi wi-gear"></wm-anchor>
+    </wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-composite name="composite1" captionposition="floating">
+                <wm-label class="col-xs-4 control-label" name="label1" caption="Enter PDF link"></wm-label>
+                <wm-container class="col-xs-8" name="container1" width="100%">
+                    <wm-text name="pdfUrl" datavalue="bind:Variables.link.dataSet.dataValue"></wm-text>
+                </wm-container>
+            </wm-composite>
+            <wm-button class="btn-primary" caption="Download Pdf" type="button" name="button1" on-tap="button1Tap($event, widget)" margin="10px unset" fontsize="12"></wm-button>
+            <wm-prefab prefabname="PdfViewer" name="PdfViewer2"></wm-prefab>
+        </wm-page-content>
+    </wm-content>
+    <wm-mobile-tabbar name="mobile_tabbar1"></wm-mobile-tabbar>
+</wm-page>
+```
 
 ## Downloading PDFs in a WaveMaker App
 
