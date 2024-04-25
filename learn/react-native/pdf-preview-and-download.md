@@ -5,13 +5,25 @@ sidebar_label: "PDF preview"
 ---
 ---
 
-Viewing PDFs without leaving the mobile app offers the ability to keep their users in the app's context. It is possible to download the PDF files on the phone and have the user open them using a different app. This might not be the best user experience for an app. Not all users may know how to locate and open the PDF file in a different app. 
+import PdfPreview from '/learn/assets/pdf-preview-and-download.png';
+import CreatePrefab from '/learn/assets/create-pdf-preview-prefab.png'
+import SelectWidget from '/learn/assets/select-custom-widget.png'
+import CreateProperties from '/learn/assets/add-link-and-password-property.png' 
+import AddPackages from '/learn/assets/add-pdf-dependecies.png'
+import AddProperty from '/learn/assets/add-property-in-prefab.png' 
+import BindProperties from '/learn/assets/bind-link-and-password-properties.png'
+import DialogBox from '/learn/assets/password-dialog-box.png'
+import Password from '/learn/assets/add-password-expression.png'
+import ImplementPrefab from '/learn/assets/implement-prefab-to-project.png'
+
+Viewing PDFs without having to close the mobile app offers the ability to keep their users in the app's context. It is possible to download the PDF files on the phone and have the user open them using a different app. This might not be the best user experience for an app. Not all users might know how to locate and open the PDF file in a different app.
+
 In this document, we will see how to add PDF preview functionality to a WaveMaker app using the `react-native-pdf` and `react-native-blob-util` libraries.
 
 ## Adding PDF Preview in WaveMaker App
 
 The `react-native-pdf` library is a React Native PDF viewer component with support for both iOS and Android. It uses the native libraries `PDFKit` on iOS and `PdfRenderer` on Android. The `react-native-blob-util` library is a React Native wrapper for the `blob-util` library.
-We can leverage these libraries to add PDF preview functionality to a WaveMaker app. The best way to accomplish this is by creating prefabs in WaveMaker which will handle the PDF functional component.
+We can leverage these libraries to add PDF preview functionality to a WaveMaker app. The best way to accomplish this is by creating Prefabs in WaveMaker which will handle the PDF functional component.
 
 ## Building Prefabs in WaveMaker for PDF Preview
 
@@ -26,14 +38,14 @@ The following steps will help you create your own Prefab for PDF Preview. To kno
 2. Add **link** and **Password** properties to the custom widget
 
 :::note
-We can render this prefab with or without password-protected files.
+We can render this Prefab with or without password-protected files.
 :::
 
 <img src={CreateProperties} style={{width:"35%"}} />
 
 ### Prefab Configuration
 
-On creating a prefab we can configure it by following the steps given below.
+On creating a Prefab we can configure it by following the steps given below.
 
 1. Click on **Setting** icon, then click on  **Prefab Configuration**. Now, select the Resources tab and in **Script** section add `react-native-pdf@6.6.2` and `react-native-blob-util@0.19.8` dependencies to the scripts and then click on Save.
 
@@ -47,11 +59,11 @@ On creating a prefab we can configure it by following the steps given below.
 
 <img src={Password} style={{width:"100%"}} /><br/><br/>
 
-4. Now, we can bind prefab **link** and **Password** properties to the widget.
+4. Now, we can bind Prefab **link** and **Password** properties to the widget.
 
 <img src={BindProperties} style={{width:"35%"}} />
 
-Here's the final **Markup** for the prefab.
+Here's the final **Markup** for the Prefab.
 ```html
 <wm-prefab-container name="prefab_container1">
     <wm-custom name="custom1" linkparam="bind:Variables.link.dataSet.dataValue" passwordparam="bind:Variables.pdfpassword.dataSet.dataValue"></wm-custom>
@@ -60,7 +72,7 @@ Here's the final **Markup** for the prefab.
 
 ### Prefab Implementation
 
-After setting up the configurations it's time for us to implement functionality for the prefab with code. This functionality will be imported later in our project.
+After setting up the configurations it's time for us to implement functionality for the Prefab with code. This functionality will be imported later in our project.
 
 1. To handle password flows, we need to create a Dialog box for password by using the Design Dialog widget.
 
@@ -69,7 +81,7 @@ After setting up the configurations it's time for us to implement functionality 
 2. Add a [custom file](/learn/react-native/custom-js-modules/#adding-custom-js-libraries), for the native implementation of PdfPreview, e.g, `PdfPreview.native.js`
 
 :::note
-We don't support PdfPreview prefab on the web
+We don't support PdfPreview Prefab on the web
 :::
 
 ```javascript
@@ -165,7 +177,7 @@ function renderPdf(props) {
 
 ## Implementing Prefab in Project
 
-To implement Prefab in the project, expand the Prefab tab in the sidebar and select your custom prefab. Drag and drop on the Design screen.
+To implement Prefab in the project, expand the Prefab tab in the sidebar and select your custom Prefab. Drag and drop on the Design screen.
 
 <img src={ImplementPrefab} style={{width:"100%"}} /><br/><br/>
 
