@@ -5,7 +5,7 @@ sidebar_label: "Swagger Re-Import and Impact analysis"
 ---
 ---
 
-Wavemaker facilitates rapid iteration and prototyping, empowering you to seamlessly re-import REST APIs and assess their impact. This capability streamlines the integration of changes and updates into your projects, ensuring agility in response to evolving requirements.
+WaveMaker facilitates rapid iteration and prototyping, empowering you to seamlessly re-import REST APIs and assess their impact. This capability streamlines the integration of changes and updates into your projects, ensuring agility in response to evolving requirements.
 
 ### Not just reimports
 
