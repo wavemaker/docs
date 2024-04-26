@@ -156,16 +156,16 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | Description | Java Library | Version |
 | --- | --- | --- |
 |  | Spring Framework | 5.3.30 -> 5.3.31 |
-| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.8 -> 5.8.10 </td> |
+| Security framework | Spring Security | 5.8.8 -> 5.8.10 |
 | Java JSON utilities | Gson  | 2.10.1 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL |  2.7.2 |
-| JSON library | Jackson | <td className="versiontdbgcolor"> 2.15.3 -> 2.16.1 </td> |
+| JSON library | Jackson | 2.15.3 -> 2.16.1 |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
 | Servlet Framework |  | 4.0.1 |
-| Database Connection Pooling | HikariCP | <td className="versiontdbgcolor"> 5.0.1 -> 5.1.0 </td> |
+| Database Connection Pooling | HikariCP | 5.0.1 -> 5.1.0 |
 
 ### Runtime Environment
 
@@ -175,7 +175,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
 | Tomcat | <td className="versiontdbgcolor"> 9.0.83 -> 9.0.86 </td> |
-| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.0  <br/> 6.3.0 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> <td className="versiontdbgcolor"> 12.0.0 -> 12.0.1 </td><br/> <td className="versiontdbgcolor"> 6.3.0 -> 7.1.0 </td>|
 
 :::note
 Cordova-Android supports from Android 24 (Nougat).
