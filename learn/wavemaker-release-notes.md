@@ -142,7 +142,7 @@ Last updated: [WaveMaker 11.7.0](/learn/wavemaker-release-notes/v11-7-0)
 | --- | --- | --- |
 | JS Binding | jquery | 3.6.0 -> 3.7.1 |
 |  | jquery-ui* | 1.13.2 |
-| MVC Framework | angular | 12.2.16 -> 15.2.9 |
+| MVC Framework | angular | <td className="versiontdbgcolor"> 15.2.9 -> 16.2.12  </td> |
 |  | ngx-bootstrap | 6.2 -> 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
@@ -165,8 +165,8 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
-| Servlet Framework |  | 4.0.1 |
-| Database Connection Pooling | HikariCP | 5.0.1 |
+| Servlet Framework |  | <td className="versiontdbgcolor"> 4.0.1 -> 4.0.4 </td> |
+| Database Connection Pooling | HikariCP | 5.1.0 |
 
 ### Runtime Environment
 
@@ -175,11 +175,11 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | JDK | 11 |
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
-| Tomcat | <td className="versiontdbgcolor"> 9.0.83 -> 9.0.86 </td> |
+| Tomcat | <td className="versiontdbgcolor"> 9.0.86 -> 9.0.87 </td> |
 | Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> <td className="versiontdbgcolor"> 12.0.0 -> 12.0.1 </td><br/> <td className="versiontdbgcolor"> 6.3.0 -> 7.1.0 </td>|
 
 :::note
-Cordova-Android supports from Android 24 (Nougat).
+Cordova-Android supports from Android 24 (Nougat). From Angular 16 Cordova-iOS supports from iOS 16.
 :::
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).

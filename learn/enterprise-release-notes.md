@@ -22,7 +22,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.6.1** <p style={{color:"red"}}>*latest*</p> | - [v11.6.1](/learn/wavemaker-release-notes/v11-6-1) <br/> - [v11.6.0](/learn/wavemaker-release-notes/v11-6-0) | Includes multiple enhancements like dynamic passing of Content Delivery Network(CDN) URL as a system property, **Show** field for edit mode in Data Table widget, conditional classes for few input widgets, and improved security Role Mapping configurations along with many bug fixes related to new studio based on Angular which will be a phased rollout. | 26 Mar 2024 |
+|**v11.7.0** <p style={{color:"red"}}>*latest*</p> | - [v11.7.0](/learn/wavemaker-release-notes/v11-7-0) | Includes New Studio with enhanced user experience and performance. This release has new features like API reimport and impact analysis along with many enhancements and bug fixes. In React Native, we have introduced many new features like CSS variables for styling, Dynamic forms, Accessibility, and Custom Template for widgets along with enhancements and bug fixes. This also includes an issue that was fixed where the users do not need to provide case-sensitive details in the project. | 30 April 2024 |
+|**v11.6.1** | - [v11.6.1](/learn/wavemaker-release-notes/v11-6-1) <br/> - [v11.6.0](/learn/wavemaker-release-notes/v11-6-0) | Includes multiple enhancements like dynamic passing of Content Delivery Network(CDN) URL as a system property, **Show** field for edit mode in Data Table widget, conditional classes for few input widgets, and improved security Role Mapping configurations along with many bug fixes related to new studio based on Angular which will be a phased rollout. | 26 Mar 2024 |
 |**v11.5.3** | - [v11.5.3](/learn/wavemaker-release-notes/v11-5-3) | Includes enhancements like conditional classes for input widgets, setting the next button as default in the Wizard widget, and support to add links in the Label along with other bug fixes in React Native and Studio Page Workspace. | 23 Jan 2024 |
 |**v11.5.2**| - [v11.5.2](/learn/wavemaker-release-notes/v11-5-2) | Includes enhancements like an image as thumb and multiple slides display in the Carousel and other bug fixes in React Native and Studio Page Workspace. | 26 Dec 2023 |
 |**v11.5.1**| - [v11.5.1](/learn/wavemaker-release-notes/v11-5-1) <br/> - [v11.5.0](/learn/wavemaker-release-notes/v11-5-0) <br/> - [v11.4.3](/learn/wavemaker-release-notes/v11-4-3) | Includes enhancements in Widgets and multiple bug fixes related to Studio Page Workspace, React Native, Cordova, and others. Also includes new features like Appium Support, Dockerfiles in a project, importing icon font family, and enhancements like Angular framework support for Prefab workspace, NG studio upgrade to version 15, changes in project shell web template and other bug fixes. Lastly, addressed bug fixes related to the Prefab artifact and Studio Page Workspace. Introduced an option to upload platform logs to AWS S3 link in the Config portal. Entended support to list users for all the team members. | 13 Dec 2023 |
@@ -65,7 +66,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [v10.13.2](/learn/wavemaker-release-notes/v10-13-2)
+Last updated: [v11.7.0](/learn/wavemaker-release-notes/v11-7-0)
 
 ---
 
@@ -73,44 +74,44 @@ Last updated: [v10.13.2](/learn/wavemaker-release-notes/v10-13-2)
 
 | Description | JS Library | Version |
 | --- | --- | --- |
-| JS Binding | jquery | 3.4.1 |
-| | jquery-ui* | 1.12.1 |
-| MVC Framework | angular| 11.2.14 |
-| | angular-ui-bootstrap | 3.3.6 |
-| | ngx-bootstrap | 6.2 |
+| JS Binding | jquery | 3.6.0 -> 3.7.1 |
+|  | jquery-ui* | 1.13.2 |
+| MVC Framework | angular | <td className="versiontdbgcolor"> 15.2.9 -> 16.2.12  </td> |
+|  | ngx-bootstrap | 6.2 -> 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
-| | nvd3 | 1.8.6 |
-| Built-in functions | lodash | 4.17.19|
+|  | nvd3 | 1.8.6 |
+| Built-in functions | lodash | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
-Optimized jQuery-UI library, excluding unwanted components like an accordion, date picker, dialog, progress bar, spinner, tabs, and all jQuery-UI Effects.
+Optimized jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
 ### Backend Frameworks
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-| | Spring Framework | <td className="versiontdbgcolor"> 5.3.15 -> 5.3.18 </td>|
-| Security framework | Spring Security | 5.5.2|
-| Java JSON utilities | Gson | 2.8.9 |
-| DB Persistence library | Hibernate | 5.5.7.Final|
-| Sample database | HSQL | 2.5.1|
-| JSON library | Jackson | <td className="versiontdbgcolor"> 2.12.5 -> 2.12.6.20220326</td>|
-| Logging framework | SLF4j |1.7.32 |
-| Logging Implementation | Log4j2 | 2.17.1 |
-| Http client library | HttpComponents | httpclient- 4.5.13 <br/> httpmime- 4.5.6 |
-| Servlet Framework | | 3.1.0 |
-|Database Connection Pooling | HikariCP | 4.0.3 |
+|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.33 -> 5.3.34 </td>|
+| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.11 -> 5.8.12 </td> |
+| Java JSON utilities | Gson  | 2.10.1 |
+| DB Persistence library | Hibernate | 5.6.15.Final |
+| Sample database | HSQL |  2.7.2 |
+| JSON library | Jackson | <td className="versiontdbgcolor"> 2.16.1 -> 2.17.0 </td> |
+| Logging framework | SLF4j | 1.7.36 |
+| Logging Implementation | Log4j2 | 2.18.0|
+| Http client library  | HttpComponents -  httpclient |  4.5.14 |
+| Servlet Framework |  | <td className="versiontdbgcolor"> 4.0.1 -> 4.0.4 </td> |
+| Database Connection Pooling | HikariCP | 5.1.0 |
+
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
-| JDK | 1.8 |
-| WebSphere | 8.5.5 |
-| JBoss | 7.1.1 |
-| Tomcat | 9.0.82* |
-| Cordova (mobile apps) <br/> Android <br/> iOS | 10.0.0 <br/> 10.1.0 <br/> 6.1.0 |
+| JDK | 11 |
+| WebSphere Liberty | 19.0.0.1+ |
+| JBoss Wildfly | 15+ |
+| Tomcat | <td className="versiontdbgcolor"> 9.0.86 -> 9.0.87 </td> |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> <td className="versiontdbgcolor"> 12.0.0 -> 12.0.1 </td><br/> <td className="versiontdbgcolor"> 6.3.0 -> 7.1.0 </td>|
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
