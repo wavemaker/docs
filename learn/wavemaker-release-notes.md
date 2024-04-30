@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.6.2](/learn/wavemaker-release-notes/v11-6-2) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.6.2 includes many bug fixes related to Security, APIs, and Profile Configuration sections in our New Studio. |25 March 2024 |
+|[WaveMaker 11.7.0](/learn/wavemaker-release-notes/v11-7-0) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.7.0 is here with New Studio with enhanced user experience and performance. This release has new features like API reimport and impact analysis along with many enhancements and bug fixes. In React Native, we have introduced many new features like CSS variables for styling, Dynamic forms, Accessibility, and Custom Template for widgets along with enhancements and bug fixes. |29 April 2024 |
+|[WaveMaker 11.6.2](/learn/wavemaker-release-notes/v11-6-2) | WaveMaker 11.6.2 includes many bug fixes related to Security, APIs, and Profile Configuration sections in our New Studio. |25 March 2024 |
 |[WaveMaker 11.6.1](/learn/wavemaker-release-notes/v11-6-1) | WaveMaker 11.6.1 includes multiple enhancements like ability to pass value of the CDN host as environment property, **Show** field for edit mode in Data Table widget, conditional classes for few input widgets and improved security Role Mapping configurations along with many bug fixes related to new studio based on Angular. |18 March 2024 |
 |[WaveMaker 11.6.0](/learn/wavemaker-release-notes/v11-6-0) | WaveMaker 11.6 is being rolled out in phases, bringing new and exciting updates, including performance improvements, projects hub, refreshed overall studio look, a 3-way merge screen, API's playground, and more. See details in the [WaveMaker 11-6 release blog](/learn/blog/2024/03/04/wavemaker-11-6-release), and the release also covers a few bug fixes. |03 March 2024 |
 |[WaveMaker 11.5.3](/learn/wavemaker-release-notes/v11-5-3) | Includes enhancements like conditional classes for input widgets, setting the next button as default in the Wizard widget, and support to add links in the Label along with other bug fixes in React Native and Studio Page Workspace.|22 January 2024 |
@@ -131,7 +132,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.6.2](/learn/wavemaker-release-notes/v11-6-2)
+Last updated: [WaveMaker 11.7.0](/learn/wavemaker-release-notes/v11-7-0)
 
 ---
 
@@ -141,7 +142,7 @@ Last updated: [WaveMaker 11.6.2](/learn/wavemaker-release-notes/v11-6-2)
 | --- | --- | --- |
 | JS Binding | jquery | 3.6.0 -> 3.7.1 |
 |  | jquery-ui* | 1.13.2 |
-| MVC Framework | angular | 12.2.16 -> 15.2.9 |
+| MVC Framework | angular | <td className="versiontdbgcolor"> 15.2.9 -> 16.2.12  </td> |
 |  | ngx-bootstrap | 6.2 -> 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 3.5.17 |
@@ -155,17 +156,17 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | 5.3.30 -> 5.3.31 |
-| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.8 -> 5.8.10 </td> |
+|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.33 -> 5.3.34 </td>|
+| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.11 -> 5.8.12 </td> |
 | Java JSON utilities | Gson  | 2.10.1 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL |  2.7.2 |
-| JSON library | Jackson | <td className="versiontdbgcolor"> 2.15.3 -> 2.16.1 </td> |
+| JSON library | Jackson | <td className="versiontdbgcolor"> 2.16.1 -> 2.17.0 </td> |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
-| Servlet Framework |  | 4.0.1 |
-| Database Connection Pooling | HikariCP | <td className="versiontdbgcolor"> 5.0.1 -> 5.1.0 </td> |
+| Servlet Framework |  | <td className="versiontdbgcolor"> 4.0.1 -> 4.0.4 </td> |
+| Database Connection Pooling | HikariCP | 5.1.0 |
 
 ### Runtime Environment
 
@@ -174,11 +175,11 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | JDK | 11 |
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
-| Tomcat | <td className="versiontdbgcolor"> 9.0.83 -> 9.0.86 </td> |
-| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.0  <br/> 6.3.0 |
+| Tomcat | <td className="versiontdbgcolor"> 9.0.86 -> 9.0.87 </td> |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> <td className="versiontdbgcolor"> 12.0.0 -> 12.0.1 </td><br/> <td className="versiontdbgcolor"> 6.3.0 -> 7.1.0 </td>|
 
 :::note
-Cordova-Android supports from Android 24 (Nougat).
+Cordova-Android supports from Android 24 (Nougat). From Angular 16 Cordova-iOS supports from iOS 16.
 :::
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
@@ -200,7 +201,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |---|---|
 |Java |11 |
 |Node|18.16.1|
-|Maven|3.9.4 -> 3.9.5 |
+|Maven| <td className="versiontdbgcolor"> 3.9.5 -> 3.9.6 </td>|
 |npm | 9.5.1|
 |Ant| 1.10.11|
 
@@ -210,7 +211,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |---|---|
 |Java | 11 |
 |Node| 12.22.3 -> 18.16.1|
-|Maven| 3.9.4 -> 3.9.5 |
+|Maven| <td className="versiontdbgcolor"> 3.9.5 -> 3.9.6 </td>|
 |npm | 6.14.13 -> 9.5.1 |
 |Ant| 1.10.11|
 |Git| 2.42| 
