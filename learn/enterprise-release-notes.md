@@ -113,7 +113,44 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | Tomcat | <td className="versiontdbgcolor"> 9.0.86 -> 9.0.87 </td> |
 | Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> <td className="versiontdbgcolor"> 12.0.0 -> 12.0.1 </td><br/> <td className="versiontdbgcolor"> 6.3.0 -> 7.1.0 </td>|
 
-This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
+:::note
+Cordova-Android supports from Android 24 (Nougat). From Angular 16 Cordova-iOS supports from iOS 16.
+:::
+
+This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
+
+# Build Environment for Studio
+
+---
+
+:::important
+With the release of 11.4, we have ended our support for WaveMaker 10 projects. To know more, see [Ending Support to WaveMaker 10 Projects](/learn/blog/2023/08/11/wavemaker10x-end-of-support).
+:::
+
+## Build Environment 11 
+
+### React Native 11
+
+|Description|	Version|
+|---|---|
+|Java |11 |
+|Node|18.16.1|
+|Maven| <td className="versiontdbgcolor"> 3.9.5 -> 3.9.6 </td>|
+|npm | 9.5.1|
+|Ant| 1.10.11|
+
+### Angular Web and Mobile 11
+
+|Description| Version|
+|---|---|
+|Java | 11 |
+|Node| 12.22.3 -> 18.16.1|
+|Maven| <td className="versiontdbgcolor"> 3.9.5 -> 3.9.6 </td>|
+|npm | 6.14.13 -> 9.5.1 |
+|Ant| 1.10.11|
+|Git| 2.42| 
+
+For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
 ## Older Releases
 
