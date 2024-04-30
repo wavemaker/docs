@@ -5,60 +5,60 @@ sidebar_label: "Swagger Re-Import and Impact analysis"
 ---
 ---
 
-WaveMaker facilitates rapid iteration and prototyping, empowering you to seamlessly re-import REST APIs and assess their impact. This capability streamlines the integration of changes and updates into your projects, ensuring agility in response to evolving requirements.
+WaveMaker is here with a quick way of making and testing new versions of your projects. This helps in the easy re-import of REST APIs and see how they affect your project, making it a simple process to update your project with the latest changes and keep up with the evolving requirements.
 
-### Not just reimports
+## Impact Analysis
 
-The 'API re-import and Impact analysis' feature is designed to assist developers in identifying potential issues that could affect their projects when re-importing an API service. By leveraging this feature, you can proactively identify and resolve potential problems before they lead to application disruptions. This ensures smoother development processes and enhances the overall stability of your applications.
+The 'API re-import and Impact analysis' feature is to assist developers in identifying potential issues that could affect their projects when re-importing an API service. By using this feature, you can proactively identify and resolve potential problems before they lead to application disruptions. This ensures smoother development processes and enhances the overall stability of your applications.
 
-### Re-Importing Swagger/OAS
+## Re-Importing Swagger/OAS
 
-Go to **APIs** section, and click on **Re-Imported** at the screen's top right to re-import the selected API service.
+1. Go to the **APIs** section, and click **Re-import API** at the screen's top right to re-import the selected API service.
 
 ![import swagger](/learn/assets/reimport-swagger.PNG)
 
-Import the updated Swagger from either a URL or file.
+2. Import the updated Swagger using either the URL option or the File option.
 
 - **File**: Supports `.json`,`.yaml`  
 - **URL**: The service URL that hosts the REST service.  
 
 ![import swagger with url or file](/learn/assets/upload-updated-file-url-swagger.PNG)
 
-## Count of both changed swagger endpoints and application breakages
+### Number of Changed Swagger Endpoints and Application Breakages
 
-Upon uploading the Swagger, the system will display the count of changes in Swagger endpoints and any application breakages because of these changed endpoints.
+1. Upon uploading the Swagger, the system will display the count of changes in Swagger Endpoints and any Application Breakages that were caused because of these changed endpoints.
 
 ![reimport swagger url](/learn/assets/reimport-swagger-url.PNG)
 
-After verifying the details in the **Re-Import API** dialog, click **Next**.
+2. After verifying the details in the **Re-Import API** dialog, click **Next**.
 
-## Confirm Re-import
+### Confirming Re-import
 
-Once you confirm re-import, you will see application breakage issues within the **API Issues** tray.
+1. Once you confirm re-import, you will see application breakage issues within the **API Issues** tray.
 
 ![reimport swagger url](/learn/assets/confirm-reimport.PNG)
 ![reimport swagger url](/learn/assets/API-reimport-tray.PNG)
 
-### Opening API issues for a specific page and specific variable:
+## Opening API Issues for Specific Page and Specific Variable
 
-To look at the issues around API, find the Issues framework in the project's More options menu.
+1. To look at the issues around API, find the issues framework in the project's More options menu.
 
 :::note
 After reimporting the swagger will directly redirect to the inspection framework of selected API swagger.
 :::
 
-To start the inspection framework, access the More options menu and navigate to the **API Issues** tab to view all issues related to the reimported API.
+2. To start the inspection framework, access the More options menu and navigate to the **API Issues** tab to view all issues related to the reimported API.
 
 ![reimport swagger url](/learn/assets/API-reimport-tray.PNG)
 
-## Select API Service
+### Select API Service
 
-Upon selecting the API, the issue location dropdown will be filtered to display affected page names.
+1. Upon selecting the API, the issue location dropdown will be filtered to display affected page names.
 
 ![reimport swagger url](/learn/assets/APIselection-reimport-tray.PNG)
 
-## Select Page
+### Select Page
 
-Choose the page name from the issue location dropdown list to view issues specific to that page.
+1. Choose the page name from the issue location dropdown list to view issues specific to that page.
 
 ![reimport swagger url](/learn/assets/Pageselection-reimport-tray.PNG)
