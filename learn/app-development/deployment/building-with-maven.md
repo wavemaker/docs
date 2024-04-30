@@ -69,13 +69,13 @@ mvn clean install -Pdeployment
 For specific instructions on how to use different CDNs, see [WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/app-integration-with-aws-cdn) to configure CDN in AWS, and for Azure, see [WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/app-integration-with-azure-cdn).
 
 ```shell
-mvn clean install -P<profile-name> -Dcdn-url=<CDN_URL>
+mvn clean install -P<profile-name> -Dapp.cdnUrl=<CDN_URL>
 ```
 
 **For example**
 
 ```shell
-mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
+mvn clean install -Pdeployment -Dapp.cdnUrl=https://mydomain.cloudfront.net/my_app>/1234/
 ```
 
 - The above command generates two deployable artifacts: `ui-artifacts.zip`, `project.war`. Both these files can be found in the target folder. .
