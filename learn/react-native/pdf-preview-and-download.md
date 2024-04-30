@@ -6,6 +6,7 @@ sidebar_label: "PDF preview"
 ---
 
 import PdfPreview from '/learn/assets/pdf-preview-and-download.png';
+import PdfDownloadNotification from '/learn/assets/pdf_download_notification.png';
 import CreatePrefab from '/learn/assets/create-pdf-preview-prefab.png'
 import SelectWidget from '/learn/assets/select-custom-widget.png'
 import CreateProperties from '/learn/assets/add-link-and-password-property.png' 
@@ -15,6 +16,9 @@ import BindProperties from '/learn/assets/bind-link-and-password-properties.png'
 import DialogBox from '/learn/assets/password-dialog-box.png'
 import Password from '/learn/assets/add-password-expression.png'
 import ImplementPrefab from '/learn/assets/implement-prefab-to-project.png'
+import PdfPreviewNative from '/learn/assets/PdfPreview_native_module.png'
+import PdfPreviewWeb from '/learn/assets/PdfPreview_web_module.png'
+import PdfPreviewPrefab from '/learn/assets/PdfPreview_prefab_script.png'
 
 Viewing PDFs without having to close the mobile app offers the ability to keep their users in the app's context. It is possible to download the PDF files on the phone and have the user open them using a different app. This might not be the best user experience for an app. Not all users might know how to locate and open the PDF file in a different app.
 

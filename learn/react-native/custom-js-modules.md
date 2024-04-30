@@ -77,13 +77,7 @@ App.customModule = function() {
 }
 ```
 
-For `.native.js` or `.web.js` files, the import may look like below (i.e, without .js extension)
-
-```javascript
-App.customModule = function() {
-    return require('./assets/resources/files/customScript');
-}
-```
+We can import `.native.js` or `.web.js` files, using the script provided above.
 
 ### Page Markup
 
