@@ -10,7 +10,7 @@ The frontend code of any WaveMaker application can be configured to deploy onto 
 - [Create Storage Account](#create-storage-account)
 - [Create Storage Containers](#create-storage-containers)
 - [Create Azure CDN profile](#create-azure-cdn-profile)
-- [WaveMaker App Build Process for CDN support](#wavemaker-app-build-process-for-cdn-support)
+- [Build and Deploy static Content to Azure Storage Container](#build-and-deploy-static-content-to-azure-storage-container)
 
 ## Create Storage Account
 
@@ -63,7 +63,7 @@ The frontend code of any WaveMaker application can be configured to deploy onto 
 - Check Build Process [Maven Build Process to Support CDN Deploy](/learn/app-development/deployment/building-with-maven#build-war-file-and-static-content-to-deploy-them-separately)
 
 ```shell
-mvn clean install -Pdeployment -Dcdn-url= https://wavemaker-app-cdn-integration.azureedge.net/my_app>/1234/
+mvn clean install -Pdeployment -Dapp.cdnUrl= https://wavemaker-app-cdn-integration.azureedge.net/my_app>/1234/
 ```
 
 - upload unzipped ui-artifatcs.zip files to AZURE storage container

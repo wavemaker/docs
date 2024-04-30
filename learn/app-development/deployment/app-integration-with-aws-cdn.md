@@ -71,7 +71,7 @@ CORS example
 - Check Build Process  [Maven Build Process to Support CDN Deploy](/learn/app-development/deployment/building-with-maven#build-war-file-and-static-content-to-deploy-them-separately)
 
 ```shell
-mvn clean install -Pdeployment -Dcdn-url=https://mydomain.cloudfront.net/my_app>/1234/
+mvn clean install -Pdeployment -Dapp.cdnUrl=https://mydomain.cloudfront.net/my_app>/1234/
 ```
 
 - The above command generates two deployable artifacts: `ui-artifacts.zip`, `project.war`. Both these files can be found in the `target` folder.
