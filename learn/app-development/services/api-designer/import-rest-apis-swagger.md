@@ -1,7 +1,7 @@
 ---
-title: "Import REST APIs via Swagger"
+title: "Import APIs Services"
 id: "import-rest-apis-swagger"
-sidebar_label: "Swagger Import"
+sidebar_label: "Import API"
 ---
 ---
 
