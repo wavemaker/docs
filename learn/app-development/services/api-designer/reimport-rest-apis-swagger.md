@@ -1,17 +1,17 @@
 ---
-title: "Re-Import REST APIs via Swagger/OAS"
+title: "Re-import API Services"
 id: "reimport-rest-apis-swagger"
-sidebar_label: "Swagger Re-Import and Impact analysis"
+sidebar_label: "Re-import API"
 ---
 ---
 
-WaveMaker is here with a quick way of making and testing new versions of your projects. This helps in the easy re-import of REST APIs and see how they affect your project, making it a simple process to update your project with the latest changes and keep up with the evolving requirements.
+API Re-import and Impact Analysis streamlines the process of reimporting REST APIs into the application. It evaluates potential issues when you are reimporting the API itself. This real-time analysis identifies potential problems and offers solutions for immediate rectification, ensuring a smoother and more stable development experience.
 
 ## Impact Analysis
 
 The 'API re-import and Impact analysis' feature is to assist developers in identifying potential issues that could affect their projects when re-importing an API service. By using this feature, you can proactively identify and resolve potential problems before they lead to application disruptions. This ensures smoother development processes and enhances the overall stability of your applications.
 
-## Re-Importing Swagger/OAS
+## Re-importing API - Swagger/OAS
 
 1. Go to the **APIs** section, and click **Re-import API** at the screen's top right to re-import the selected API service.
 
@@ -24,7 +24,7 @@ The 'API re-import and Impact analysis' feature is to assist developers in ident
 
 ![import swagger with url or file](/learn/assets/upload-updated-file-url-swagger.PNG)
 
-### Number of Changed Swagger Endpoints and Application Breakages
+### Number of Changed API Endpoints and Application Breakages
 
 1. Upon uploading the Swagger, the system will display the count of changes in Swagger Endpoints and any Application Breakages that were caused because of these changed endpoints.
 
