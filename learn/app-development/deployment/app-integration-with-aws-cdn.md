@@ -71,13 +71,11 @@ CORS example
 - Check Build Process  [Maven Build Process to Support CDN Deploy](/learn/app-development/deployment/building-with-maven#build-war-file-and-static-content-to-deploy-them-separately)
 
 ```shell
-mvn clean install -Pdeployment -Dapp.cdnUrl=https://mydomain.cloudfront.net/my_app>/1234/
+mvn clean install -Pdeployment
 ```
-
+- Ensure that the selected profile has the `build.ui.mode` set as `angular`.
 - The above command generates two deployable artifacts: `ui-artifacts.zip`, `project.war`. Both these files can be found in the `target` folder.
-
 - Use the following commands to unzip and upload to S3.
-
 - To unzip the file and store contents in a specific folder
   
 ```shell
@@ -89,3 +87,4 @@ unzip ui-artifacts.zip -d <my-static-content-folder>
 ```shell
 aws s3 sync <my-static-content-folder>/ S3_BUCKET
 ```
+- For configuring the cdn url in the application, see [Configuring CDN URL](/learn/app-development/deployment/building-with-maven/#configuring-cdn-url)

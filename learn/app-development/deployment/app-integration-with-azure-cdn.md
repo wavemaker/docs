@@ -63,11 +63,12 @@ The frontend code of any WaveMaker application can be configured to deploy onto 
 - Check Build Process [Maven Build Process to Support CDN Deploy](/learn/app-development/deployment/building-with-maven#build-war-file-and-static-content-to-deploy-them-separately)
 
 ```shell
-mvn clean install -Pdeployment -Dapp.cdnUrl= https://wavemaker-app-cdn-integration.azureedge.net/my_app>/1234/
+mvn clean install -Pdeployment
 ```
-
-- upload unzipped ui-artifatcs.zip files to AZURE storage container
+- Ensure that the selected profile has the `build.ui.mode` set as `angular`.
+- Upload unzipped ui-artifatcs.zip files to AZURE storage container
 
 ```shell
 az storage blob upload-batch -s <my-static-content-folder>/ -d <storage_container_name>  --account-name <storage_account_name>
 ```
+- For configuring the cdn url in the application, see [Configuring CDN URL](/learn/app-development/deployment/building-with-maven/#configuring-cdn-url)
