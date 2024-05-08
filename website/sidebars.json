@@ -625,6 +625,13 @@
 				"extensions/mockingbird/enterprise/integrate",
 				"extensions/mockingbird/enterprise/upgrade"
 			]
+		},
+		{
+			"type": "category",
+			"label": "Proxy Configuration",
+			"items": [
+				"on-premise/proxy-configuration/enabling-proxy-in-wme"
+			]
 		}
 	],
 	"Mobile": [
