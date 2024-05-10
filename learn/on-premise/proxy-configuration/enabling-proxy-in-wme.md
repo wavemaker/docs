@@ -23,7 +23,7 @@ You can enable the Proxy settings by creating and configuring the **http-proxy.e
 
 HTTP_PROXY=http://user:pass@192.168.1.100:8080
 HTTPS_PROXY=https://proxy.example.com:8443
-ALL_PROXY=socks5://socks-proxy.example.com:1080
+ALL_PROXY=https://socks-proxy.example.com:1080
 NO_PROXY=localhost,127.0.0.1,::1,wavemakerdoamin.com, 10.192.10.121, 10.192.10.131
 
 ```
