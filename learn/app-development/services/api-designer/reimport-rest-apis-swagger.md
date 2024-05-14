@@ -44,12 +44,14 @@ In this, you can confirm reimport the API using Swagger and view the changes and
 Upon uploading the Swagger, you can view the count of changes in Swagger Endpoints and any Application Breakages that were caused because of these changed endpoints.
 
 1. After verifying the details in the **Re-Import API** dialog, click **Next**.
-   ![Reimport Swagger URL](/learn/assets/api-endpoints-next.png)
+   
+![Reimport Swagger URL](/learn/assets/api-endpoints-next.png)
 
 ### Confirming Re-import
 
 1. Click **Reimport** to confirm API re-import.
-![Reimport Swagger URL](/learn/assets/confirm-reimport.png)
+   
+![Reimport Swagger URL](/learn/assets/confirm-reimport-api.png)
 
 You can view the application breakage issues within the **API Issues** tray.
 
