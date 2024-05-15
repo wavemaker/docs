@@ -20,9 +20,10 @@ To view the impact analysis of the reimported API, you can either,
 
 - For now, Impact Analysis is done at the Design level.
 - Issue Evaluation can be improved by disabling the **Enable API Composition** option by going to application settings.
-  ![Import Swagger](/learn/assets/enable-api-composition.png)
   
 :::
+
+![Import Swagger](/learn/assets/enable-api-composition.png)
 
 ## Re-importing API - Swagger/OAS
 
