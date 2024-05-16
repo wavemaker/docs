@@ -6,8 +6,6 @@ sidebar_label: "Rating"
 ---
 
 
-# {{page.title}}
-
 ![Rating](/learn/assets/react-native-styles/rating.png)
 
 | Ref No. | class name  | Type | Purpose |

@@ -5,7 +5,6 @@ sidebar_label: "Barcode Scanner"
 ---
 ---
 
-# {{page.title}}
 
 ![Barcode Scanner](/learn/assets/react-native-styles/barcode-scanner.png)
 

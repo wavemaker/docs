@@ -5,7 +5,6 @@ sidebar_label: "Progress Bar"
 ---
 ---
 
-# {{page.title}}
 
 ![Progress Bar](/learn/assets/react-native-styles/progress-bar.png)
 

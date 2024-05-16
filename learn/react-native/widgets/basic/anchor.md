@@ -5,7 +5,6 @@ sidebar_label: "Anchor"
 ---
 ---
 
-# {{page.title}}
 
 ![Anchor](/learn/assets/react-native-styles/anchor.png)
 

@@ -5,7 +5,6 @@ sidebar_label: "Video"
 ---
 ---
 
-# {{page.title}}
 
 ![Video](/learn/assets/react-native-styles/video.png)
 

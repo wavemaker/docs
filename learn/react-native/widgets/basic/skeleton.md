@@ -5,7 +5,6 @@ sidebar_label: "Skeleton"
 ---
 ---
 
-# {{page.title}}
 
 ![Skeleton](/learn/assets/react-native-styles/skeleton.png)
 

@@ -3,9 +3,7 @@ title: "View"
 id: "view"
 sidebar_label: "View"
 ---
-------
-
-# {{page.title}}
+---
 
 | Style Name | Supported Values |
 |------------|------------------|

@@ -668,7 +668,7 @@
 					"items": [
 						"react-native/widgets/basic/anchor",
 						"react-native/widgets/basic/picture",
-						"react-native/widgets/basic/progressbar",
+						"react-native/widgets/basic/progress-bar",
 						"react-native/widgets/basic/skeleton",
 						"react-native/widgets/basic/video",
 						"react-native/widgets/device/barcodescanner",

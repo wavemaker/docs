@@ -6,8 +6,6 @@ sidebar_label: "Picture"
 ---
 
 
-# {{page.title}}
-
 ![Picture](/learn/assets/react-native-styles/picture.png)
 
 | Ref No. | class name  | Type | Purpose |

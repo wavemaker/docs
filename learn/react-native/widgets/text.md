@@ -3,9 +3,8 @@ title: "Text"
 id: "text"
 sidebar_label: "Text"
 ---
-------
+---
 
-# {{page.title}}
 
 | Style name | Supported values |
 |------------|------------------|

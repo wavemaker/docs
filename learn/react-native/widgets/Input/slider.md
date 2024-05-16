@@ -6,8 +6,6 @@ sidebar_label: "Slider"
 ---
 
 
-# {{page.title}}
-
 ![Slider](/learn/assets/react-native-styles/slider.png)
 
 | Ref No. | class name  | Type | Purpose |

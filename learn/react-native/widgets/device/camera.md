@@ -5,7 +5,6 @@ sidebar_label: "Camera"
 ---
 ---
 
-# {{page.title}}
 
 ![Camera](/learn/assets/react-native-styles/camera.png)
 

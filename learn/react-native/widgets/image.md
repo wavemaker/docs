@@ -3,10 +3,7 @@ title: "Image"
 id: "image"
 sidebar_label: "Image"
 ---
-------
-
-
-# {{page.title}}
+---
 
 
 | Style name | Supported values |
