@@ -19,7 +19,7 @@ To view the impact analysis of the reimported API, you can either,
 :::note
 
 - For now, Impact Analysis is done at the Design level.
-- Issue Evaluation can be improved by disabling the **Enable API Composition** option by going to application settings.
+- Issue Evaluation can be improved  for large application by disabling the **API Composition** option by going to application settings.
   
 :::
 
