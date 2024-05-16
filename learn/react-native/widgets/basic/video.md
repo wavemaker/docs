@@ -11,4 +11,4 @@ sidebar_label: "Video"
 
 | Ref No. | class name  | Type | Purpose |
 | ---- |-----------|---------|---------|
-| 1. |.app-video| [View](../../view) | To implement and style the outer container that will hold other styling elements of the Video widget.|
+| 1. |.app-video| [View](/learn/react-native/widgets/view) | To implement and style the outer container that will hold other styling elements of the Video widget.|

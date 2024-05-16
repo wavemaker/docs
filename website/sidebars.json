@@ -664,6 +664,24 @@
 				},
 				{
 					"type": "category",
+					"label": "Widget Styling",
+					"items": [
+						"react-native/widgets/basic/anchor",
+						"react-native/widgets/basic/picture",
+						"react-native/widgets/basic/progressbar",
+						"react-native/widgets/basic/skeleton",
+						"react-native/widgets/basic/video",
+						"react-native/widgets/device/barcodescanner",
+						"react-native/widgets/device/camera",
+						"react-native/widgets/input/slider",
+						"react-native/widgets/input/switch",
+						"react-native/widgets/view",
+						"react-native/widgets/text",
+						"react-native/widgets/image"
+					]
+				},
+				{
+					"type": "category",
 					"label": "Development",
 					"items": [
 						"react-native/custom-widget",

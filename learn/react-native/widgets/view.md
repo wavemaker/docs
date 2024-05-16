@@ -1,7 +1,10 @@
 ---
-title:  React Native View Styles
-layout: index.html
+title: "View"
+id: "view"
+sidebar_label: "View"
 ---
+------
+
 # {{page.title}}
 
 | Style Name | Supported Values |

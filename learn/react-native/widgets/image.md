@@ -1,9 +1,12 @@
 ---
-title:  React Native Image Styles
-layout: index.html
+title: "Image"
+id: "image"
+sidebar_label: "Image"
 ---
-# {{page.title}}
+------
 
+
+# {{page.title}}
 
 
 | Style name | Supported values |
