@@ -9,25 +9,26 @@ API Re-import and Impact Analysis streamlines the process of reimporting REST AP
 
 ## Impact Analysis
 
-The 'API re-import and Impact analysis' feature is to assist developers in identifying potential issues that could affect their projects when re-importing an API service. By using this feature, you can proactively identify and resolve potential problems before they lead to application disruptions. This ensures smoother development processes and enhances the overall stability of your applications.
+The API re-import and Impact analysis feature is to assist developers in identifying potential issues that could affect their projects when re-importing an API service. By using this feature, you can proactively identify and resolve potential problems before they lead to application disruptions. This ensures smoother development processes and enhances the overall stability of your applications.
 
-To view the impact analysis of the reimported API, you can either,
+There are two ways to access the impact analysis report:
 
-- Reimport an API.
-- Open API Issues for specific Pages and specific Variable.
+1. **At the time of re-importing the API.** For more information, see [Re-importing API - Swagger/OAS](#re-importing-api---swaggeroas)
+2. **Go to the More option (three dots).** Navigate to the **API Issues** tray to view issues of specific pages and variables. For more information, see [Viewing API Impact on Pages and Variables](#viewing-api-impact-on-pages-and-variables).
+
+:::info
+**Limitation**: Currently, API re-import impact analysis focuses on identifying issues related to UI development, such as design and variables.
+:::
 
 :::note
-
-- For now, Impact Analysis is done at the Design level.
-- Issue Evaluation can be improved  for large application by disabling the **API Composition** option by going to application settings.
-  
+Issue evaluation generates an impact analysis report that shows the number of identified problems. To ensure an accurate report for large applications, it's recommended to disable the **Enable API Composition** option in **Settings**.
 :::
 
 ![Import Swagger](/learn/assets/enable-api-composition.png)
 
 ## Re-importing API - Swagger/OAS
 
-In this, you can confirm reimport the API using Swagger and view the changes and application failure issues that were imported with the API.
+Following procedure describes re-importing an API using Swagger. It allows you to view changes before importing the API and access application breaking issues once you agree to import the API.
 
 1. Go to the **APIs** section, and click **Re-import API** at the screen's top right to re-import the selected API service.
 
@@ -50,7 +51,7 @@ Upon uploading the Swagger, you can view the count of changes in Swagger Endpoin
 
 ### Confirming Re-import
 
-1. Click **Reimport** to confirm API re-import.
+1. Click **Re-import** to go ahead with re-importing the API.
    
 ![Reimport Swagger URL](/learn/assets/confirm-reimport-api.png)
 
@@ -58,14 +59,14 @@ You can view the application breakage issues within the **API Issues** tray.
 
 ![Reimport Swagger URL](/learn/assets/api-issues-tray.png)
 
-## API Issues for Specific Pages and Specific Variables
+## Viewing API Impact on Pages and Variables
 
-With this, you can view the changes and application failure issues for a particular page and variable.
+View API impact and identify application failure issues associated with specific pages and variables.
 
-1. To look at the issues around API, find the issues framework in the project's **More** options menu.
+1. To view API issues, navigate to the Issues framework within the project's **More** options menu, represented by three dots in the bottom left corner.
 
 :::note
-After reimporting the swagger will directly redirect to the inspection framework of the selected API swagger.
+Also, after reimporting the Swagger, you will be redirected to the inspection framework of the selected API swagger automatically.
 :::
 
 2. To start the inspection framework, access the More options menu and navigate to the **Issues** tab to view all issues related to the reimported API.
