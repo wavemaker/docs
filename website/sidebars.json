@@ -675,6 +675,7 @@
 						"react-native/widgets/device/camera",
 						"react-native/widgets/input/slider",
 						"react-native/widgets/input/switch",
+						"react-native/widgets/input/rating",
 						"react-native/widgets/view",
 						"react-native/widgets/text",
 						"react-native/widgets/image"
