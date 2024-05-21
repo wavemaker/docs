@@ -7,9 +7,7 @@ This guide helps to create a war file for deploying the project in your local m
 
 ## System prerequisites
 
-
-- You can find the System prerequisites from [Angular Web and Mobile 11](/learn/wavemaker-release-notes/v11-1-2#angular-web-and-mobile-11)
-
+- You can find the System prerequisites from [Angular Web and Mobile 11](/learn/wavemaker-release-notes/v11-1-2#angular-web-and-mobile-11).
 
 ## Go to Source Location
 
@@ -91,22 +89,24 @@ Unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS 
 ### Configuring CDN URL
 
 The CDN URL can be passed to the application by setting the property `app.cdnUrl` in one of the following ways:
-1. Environment/System property. For specific instructions on how to set environment/system property, see [Using Environment Properties](/learn/app-development/deployment/configuration-management/#using-environment-properties)
+
+1. Environment/System property. For specific instructions on how to set environment/system property, see [Using Environment Properties](/learn/app-development/deployment/configuration-management/#using-environment-properties).
 2. Maven build parameter.
 
 **For example**
+
 ```shell
 mvn clean install -Pdeployment -Dapp.cdnUrl=https://mydomain.cloudfront.net/my_app>/1234/
 ```
-3. Profile property
+3. Profile property.
 
 The priority order for reading the CDN URL is also the same as above.
 
 ## Handling Build Failures
 
 - WaveMaker build may fail due to:
-  - Insufficient memory to Node Process
-  - Compilation issues
+  - Insufficient memory to Node Process.
+  - Compilation issues.
 - On build failure due to the out-of-memory error, the profile property called **`build.ui.node.args`** should be adjusted; this configures the build. Increase the **`max-old-space-size`** memory value where the default value is 1024 MB. The build should be triggered again after increasing the memory value. There are two ways to do this: 
 
   1. Go to WaveMaker Studio -> **File Explorer** -> **profiles** -> open the file `<profilename.properties>`.
