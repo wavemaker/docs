@@ -5,8 +5,21 @@ sidebar_label: "Anchor"
 ---
 ---
 
+An Anchor is the visible, clickable text that links one web page to another. When placed inside another widget like navigation, the anchor widget would include default features like a file icon and default styling to set a border and background color.
+
+See the following image that shows the classes of the specific widget and also learn how to style it.
 
 ![Anchor](/learn/assets/react-native-styles/anchor.png)
+
+## Anchor Classes
+
+1. **.app-anchor** ([View](/learn/react-native/widgets/view)): To implement and style the outer container that will hold other styling elements of the Anchor widget.
+2. **.app-anchor-text** ([Text](/learn/react-native/widgets/text)): To provide and style the text in the Anchor widget.
+3. **.app-anchor-badge** ([Text](/learn/react-native/widgets/text)): To use and style the badge element that contains additional information related to the Anchor widget.
+4. **.app-anchor-icon** ([WM Icon](../../basic/icon)): To use and style the icon provided for the text inside the Anchor widget.
+5. **.app-anchor-skeleton** ([WM Skeleton](/learn/react-native/widgets/basic/skeleton)): To style the basic structure of the Anchor widget. To know more, see [Skeleton Loader](/learn/react-native/app-loader#skeleton-loader).
+
+## Anchor Classes
 
 |Ref No.| class name  | Type | Purpose |
 |----|-----------|---------|---------|
@@ -14,7 +27,7 @@ sidebar_label: "Anchor"
 | 2. |.app-anchor-text| [Text](/learn/react-native/widgets/text) | To provide and style the text in the Anchor widget.|
 | 3. |.app-anchor-badge| [Text](/learn/react-native/widgets/text) | To use and style the badge element that contains additional information related to the Anchor widget.|
 | 4. |.app-anchor-icon| [WM Icon](../../basic/icon) | To use and style the icon provided for the text inside the Anchor widget.|
-| 5. |.app-anchor-skeleton| [WM Skeleton](/learn/react-native/widgets/basic/skeleton) | To style the basic structure of the of the Anchor widget.|
+| 5. |.app-anchor-skeleton| [WM Skeleton](/learn/react-native/widgets/basic/skeleton) | To style the basic structure of the Anchor widget.|
 
 # Extra Anchor Styles
 
