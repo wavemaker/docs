@@ -11,12 +11,12 @@ See the following image that shows the classes of the specific widget and also l
 
 ![Picture](/learn/assets/react-native-styles/picture.png)
 
-## Picture Classes
+## Picture Classes - option 1
 
 1. **.app-picture** ([Image](/learn/react-native/widgets/image)): To implement and style the outer container that will hold other styling elements of the Picture widget.
 2. **.app-picture-skeleton** ([WM Skeleton](/learn/react-native/widgets/basic/skeleton)): To style the basic structure of the Picture widget. To know more, see [Skeleton Loader](/learn/react-native/app-loader#skeleton-loader).
 
-## Picture Classes
+## Picture Classes - option 2
 
 | Ref No. | class name  | Type | Purpose |
 | ---- |-----------|---------|---------|

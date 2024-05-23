@@ -11,11 +11,11 @@ See the following image that shows the classes of the specific widget and also l
 
 ![Video](/learn/assets/react-native-styles/video.png)
 
-## Video Class
+## Video Class - option 1
 
 1. **.app-video** ([View](/learn/react-native/widgets/view)): To implement and style the outer container that will hold other styling elements of the Video widget.
 
-## Video Classes
+## Video Classes - option 2
 
 | Ref No. | class name  | Type | Purpose |
 | ---- |-----------|---------|---------|

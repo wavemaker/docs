@@ -11,7 +11,7 @@ See the following image that shows the classes of the specific widget and also l
 
 ![Anchor](/learn/assets/react-native-styles/anchor.png)
 
-## Anchor Classes
+## Anchor Classes - option 1
 
 1. **.app-anchor** ([View](/learn/react-native/widgets/view)): To implement and style the outer container that will hold other styling elements of the Anchor widget.
 2. **.app-anchor-text** ([Text](/learn/react-native/widgets/text)): To provide and style the text in the Anchor widget.
@@ -19,7 +19,7 @@ See the following image that shows the classes of the specific widget and also l
 4. **.app-anchor-icon** ([WM Icon](../../basic/icon)): To use and style the icon provided for the text inside the Anchor widget.
 5. **.app-anchor-skeleton** ([WM Skeleton](/learn/react-native/widgets/basic/skeleton)): To style the basic structure of the Anchor widget. To know more, see [Skeleton Loader](/learn/react-native/app-loader#skeleton-loader).
 
-## Anchor Classes
+## Anchor Classes - option 2
 
 |Ref No.| class name  | Type | Purpose |
 |----|-----------|---------|---------|

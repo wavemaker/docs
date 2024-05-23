@@ -11,7 +11,7 @@ See the following image that shows the classes of the specific widget and also l
 
 ![Slider](/learn/assets/react-native-styles/slider.png)
 
-## Slider Classes
+## Slider Classes - option 1
 
 1. **.app-slider** ([View](/learn/react-native/widgets/view)): To implement and style the outer container that will hold other styling elements of the Slider widget.
 2. **.app-slider-minimum-text** ([View](/learn/react-native/widgets/view)): To provide and style the minimum value provided in the Slider widget.
@@ -22,7 +22,7 @@ See the following image that shows the classes of the specific widget and also l
 7. **.app-slider-thumb** ([View](/learn/react-native/widgets/view)): To use and style the thumb icon in the Slider widget.
 
 
-## Slider Classes
+## Slider Classes - option 2
 
 | Ref No. | class name  | Type | Purpose |
 | ---- |-----------|---------|---------|
