@@ -30,11 +30,11 @@ Push action takes your local changes and pushes them to the development branch. 
 
 ![Commit History](/learn/assets/pr-flow/commit-history.png)
 
-## Review Changes:
+## Review Changes
 
 You, as a reviewer, can then verify the proposed changes by viewing code differences between the development branch and the main branch in their VCS or platform. You can provide comments and suggestions.
 
-## Addressing Feedback:
+## Addressing Feedback
 
 You can address the feedback from reviewers that involves making fixes in the studio and pushing the changes to the development branch.
 
@@ -46,7 +46,7 @@ You can address the feedback from reviewers that involves making fixes in the st
 
 Reviewers can approve the Pull Request in their VCS or platform.
 
-1. After the approval, based on the merge options new commit will be added. Next, on project reload you will be asked to pull the changes.
+1. After the approval, based on the merge options new commit will be added. Next, on project reload you can pull the changes.
 2. You can restore your workspace to the main branch in the Restore to Remote Branch dialog, if your changes are not needed and continue working on another task.
 
 ![Restore to Remote Branch](/learn/assets/pr-flow/restore-to-remote-branch.png)
