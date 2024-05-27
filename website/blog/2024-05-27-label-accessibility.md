@@ -20,30 +20,25 @@ To address this issue, WaveMaker is replacing the `<label>` tag with more approp
 
 Here's a breakdown of the changes:
 
-Default Behavior: When you drag and drop a label widget, the markup will now include class="p" and type="p" appended to the "wm-label" element by default. This translates to a `<p>` tag in the preview, ensuring proper accessibility.
-Template Layouts: Changing the template layout (e.g., H1, H2) will update both the class and type attributes accordingly. The preview will then reflect the corresponding heading tag (e.g., `<h1>`). Layouts like "Primary Text" and "Secondary Text" will continue to use the `<p>` tag.
-Implicit Conversion: Labels within widgets like cards, accordions, and panels will be automatically converted to the appropriate semantic tag (`<p>` or `<h1> `to `<h6>`) based on their existing class values.
+**Default Behavior**: When you drag and drop a label widget, the markup will now include class="p" and type="p" appended to the "wm-label" element by default. This translates to a `<p>` tag in the preview, ensuring proper accessibility.
 
+**Template Layouts**: Changing the template layout (e.g., H1, H2) will update both the class and type attributes accordingly. The preview will then reflect the corresponding heading tag (e.g., `<h1>`). Layouts like "Primary Text" and "Secondary Text" will continue to use the `<p>` tag.
 
+**Implicit Conversion**: Labels within widgets like cards, accordions, and panels will be automatically converted to the appropriate semantic tag (`<p>` or `<h1>` to `<h6>`) based on their existing class values.
 
-
-As of now in Wavemaker when we drag and drop a label widget on to canvas and preview it we can see that `<label>` tag with class defined in the element and as per the class css is applying. If when we change the template layout to H1, H2, etc.. only the class is changing and the tag is label itself. As per the accessibility standards it is not correct so to overcome this the label tag is replaced.
-
-After the current change  when we drag and drop label by default class="p" type="p" appended to "wm-label" in markup and when we preview it the label tag is replaced with `<p>` tag and same with template layouts. For example if we change the template layout to "H1" then the type and class will change to "H1" and the preview with `<h1>` tag and for the other layouts like Primary Text, Secondary Text `<p>` tag will get applied.
-
-All labels within widgets like cards, accordion, panel, etc.. will be implicitly converted to `<p>`, `<h1>` to `<h6>` tags based on their current class values.
+### Addressing Potential Issues
 
 :::note
 As default class "p" is getting added when we drag and drop a label widget on to canvas now it will be a block element. But for previous projects we don't have class "p" as default so it will be a inline-block element.
 :::
 
-## Differences 
+## Differences Before and After change
 
-### Before and After change
+This section showcases the visual differences between the previous and updated behavior.
 
-#### Label in Markup
+### Label in Markup
 
-- In the studio when we drag and drop a **label** onto canvas and go to markup tab to see the differences as given below.
+- In the studio when we drag and drop a **Label** onto canvas and go to markup tab to see the differences as given below.
 
 **Before**
 
@@ -63,8 +58,7 @@ As default class "p" is getting added when we drag and drop a label widget on to
 
 ![Label Markup after](/learn/assets/label_option_after.png)
 
-
-#### Label in Preview
+### Label in Preview
 
 - Click on preview and see the difference that `<label>` tag is getting replaced by `<p>` tag by default.
 
@@ -77,9 +71,10 @@ As default class "p" is getting added when we drag and drop a label widget on to
 ![Label Preview after](/learn/assets/label_preview_after.png) 
 
 :::note
-As `<p>` tag is getting added in preview by default it has display:block but in already used labels it has `<label>` tag with display:inline-block. So inorder to overcome the breaking of UI added the follwing styles
+Since the `<p>` tag is now added by default in the preview, it displays as a block-level element. However, existing labels use the `<label>` tag, which displays inline-block. To prevent UI breakage, the following styles have been added:
+:::
 
-```
+```css
 p.app-label{
    display:inline-block 
 }
@@ -88,11 +83,9 @@ p.p.app-label{
 }
 ```
 
-:::
+### Cards as Example
 
-##### Cards 
-
-- Drag and drop the **Card** widget and click on preview.
+- Drag and drop the **Card** widget and click Preview.
 
 **Before**
 
@@ -101,5 +94,7 @@ p.p.app-label{
 **After**
 
 ![Label Preview after](/learn/assets/cards_after.png) 
+
+Overall, these changes enhance the accessibility of WaveMaker applications by ensuring proper use of semantic tags for labels. This benefits users with disabilities by providing a more predictable and navigable interface.
 
 
