@@ -42,21 +42,29 @@ This section showcases the visual differences between the previous and updated b
 
 **Before**
 
-![Label Markup before](/learn/assets/label_before_markup.png)
+```html
+<wm-label padding=“unset” name=“label2”></wm-label>
+```
 
 **After**
 
-![Label Markup after](/learn/assets/label_after_markup.png)
+```html
+<wm-label padding=“unset” class="p" type="p" name=“label2”></wm-label>
+```
 
 - Click the label on canvas and then select the template layout option to "H1" then the class and type both gets updated to "h1".
 
 **Before**
 
-![Label Markup before](/learn/assets/label_option_before.png)
+```html
+<wm-label padding=“unset” name=“label2” class="h1"></wm-label>
+```
 
 **After**
 
-![Label Markup after](/learn/assets/label_option_after.png)
+```html
+<wm-label padding=“unset” class="h1" type="h1" name=“label2”></wm-label>
+```
 
 ### Label in Preview
 
@@ -64,11 +72,15 @@ This section showcases the visual differences between the previous and updated b
 
 **Before**
 
-![Label Preview before](/learn/assets/label_preview_before.png)
+```html
+<label wmlabel widget-id="widget-id15" class="app-label" name="label2">Label</label>
+```
 
 **After**
 
-![Label Preview after](/learn/assets/label_preview_after.png) 
+```html
+<p wmlabel type="p" class="app-label p" widget-id="widget-id15" name="label2">Label</p>
+```
 
 :::note
 Since the `<p>` tag is now added by default in the preview, it displays as a block-level element. However, existing labels use the `<label>` tag, which displays inline-block. To prevent UI breakage, the following styles have been added:
