@@ -176,7 +176,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | JDK | 11 |
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
-| Tomcat | <td className="versiontdbgcolor"> 9.0.87 -> 9.8.89 </td> |
+| Tomcat | 9.0.87 |
 | Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.1 <br/> 7.1.0 |
 
 :::note
