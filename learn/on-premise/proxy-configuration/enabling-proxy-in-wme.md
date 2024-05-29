@@ -8,7 +8,7 @@ Proxy servers can be used to configure any device or software to route its traff
 
 You can enable the Proxy settings by creating and configuring the **http-proxy.env** file in WaveMaker Enterprise (WME). This enables the integration of proxy settings, enhancing network security and facilitating communication with external resources. By following the steps outlined in this document and referencing the provided examples, you can seamlessly incorporate proxy configurations into your WaveMaker environment.
 
-### Prerequisites:
+### Prerequisites
 
 - Access to the WaveMaker Enterprise environment.
 - Access to LaunchPad portal.
@@ -23,8 +23,7 @@ You can enable the Proxy settings by creating and configuring the **http-proxy.e
 
 HTTP_PROXY=http://user:pass@192.168.1.100:8080
 HTTPS_PROXY=https://proxy.example.com:8443
-ALL_PROXY=https://socks-proxy.example.com:1080
-NO_PROXY=localhost,127.0.0.1,::1,wavemakerdoamin.com, 10.192.10.121, 10.192.10.131
+NO_PROXY=wavemakerdoamin.com, 10.192.10.121, 10.192.10.131
 
 ```
 
@@ -39,7 +38,7 @@ Replace these examples with your actual proxy configuration, ensuring accurate s
 Make sure to incorporate the following compulsory line, replacing the placeholders with actual values:
 
 ```
-NO_PROXY=localhost,127.0.0.1,::1,<wavemakerdomain.com>,<all private IPs used in WME setup>, <platform_ip>
+NO_PROXY=<wavemakerdomain.com>,<all private IPs used in WME setup>, <platform_ip>
 ```
 
 :::
@@ -57,10 +56,11 @@ NO_PROXY=localhost,127.0.0.1,::1,<wavemakerdomain.com>,<all private IPs used in 
    - External User Workspace Studio (Can be multiple based on Infra): /data/system-env
   ![data/system-env](/learn/assets/data-system-env.png)
 
-4. Connect to the platform instance and restart edn-services by using below command 
+4. Connect to the platform instance and restart edn-services and jobs-worker by using the below set of commands 
    
    ```
     docker restart edn-services
+    docker restart jobs-worker
    ```
 5. Now, log in to LaunchPad and navigate to Developer Workspace.
    ![Developer Workspace](/learn/assets/developer-workspace.png)
