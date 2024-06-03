@@ -1,5 +1,5 @@
 ---
-title: "Label widget Compliance for Acessibility"
+title: "Label widget Compliance for Accessibility"
 author: Bhargavi Gunda
 ---
 ---
