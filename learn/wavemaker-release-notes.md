@@ -21,7 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.7.2](/learn/wavemaker-release-notes/v11-7-2) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.7.2 includes enhancements, such as Artifact Version Management, Notifications Response in Project Hub, some bug fixes. |03 June 2024 |
+|[WaveMaker 11.7.2](/learn/wavemaker-release-notes/v11-7-2) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.7.2 includes performance improvements, such as Artifact Version Management, Notifications Response in Project Hub, some bug fixes. |03 June 2024 |
 |[WaveMaker 11.7.1](/learn/wavemaker-release-notes/v11-7-1) | WaveMaker 11.7.1 is here with a new feature, Pull Request (PR) Flow. This also includes some enhancements like Internationalization (i18n) message customization, extended Semantic Versioning, disabling Prefab editing in a project, and other bug fixes. |27 May 2024 |
 |[WaveMaker 11.7.0](/learn/wavemaker-release-notes/v11-7-0) | WaveMaker 11.7.0 is here with New Studio with enhanced user experience and performance. This release has new features like API reimport and impact analysis along with many enhancements and bug fixes. In React Native, we have introduced many new features like CSS variables for styling, Dynamic forms, Accessibility, and Custom Template for widgets along with enhancements and bug fixes. |29 April 2024 |
 |[WaveMaker 11.6.2](/learn/wavemaker-release-notes/v11-6-2) | WaveMaker 11.6.2 includes many bug fixes related to Security, APIs, and Profile Configuration sections in our New Studio. |25 March 2024 |
