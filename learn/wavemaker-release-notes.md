@@ -9,7 +9,7 @@ sidebar_label: "Online Release (WMO)"
 This document applies to WaveMaker Online (WMO) users. If you are an Enterprise user, see [WaveMaker Enterprise Release](/learn/enterprise-release-notes).
 :::
 
-See what's new in WaveMaker, including new features, enhancements, and bug fixes. If you happen to experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com). We mention your fixes in release notes, and you can track some [critical known issues here](/learn/wavemaker-known-issues).
+See what's new in WaveMaker, including new features, enhancements, and bug fixes. If you happen to experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com).
 
 Follow our [team blog](/learn/blog) to learn product updates from the engineers who develop it. 
 
