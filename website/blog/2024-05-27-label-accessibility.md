@@ -16,6 +16,10 @@ Previously, when dragging and dropping a Label widget onto the canvas and previe
 
 To address this issue, WaveMaker is replacing the `<label>` tag with more appropriate semantic tags like `<p>` (paragraph) or `<h1>` to `<h6>` (headings) based on the class or type attribute of the element.
 
+:::warning
+If the styles are written by using the `<label>` tag then there may be a breakage in UI as `<label>` tag is replaced by `<p>` (paragraph) or `<h1>` to `<h6>` (headings), so please make changes to your styles accordingly.
+:::
+
 ## How it Works
 
 Here's a breakdown of the changes:
