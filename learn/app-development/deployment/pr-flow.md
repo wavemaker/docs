@@ -60,14 +60,13 @@ You can address the feedback from reviewers that involves making fixes in the st
 ![View Project Changes](/learn/assets/pr-flow/view-project-changes.png)
 
 :::note
-You can restore your workspace to the main branch by clicking the **Restore to Remote Branch** button in the View Project Changes dialog under the View Changes section. This removes the changes pushed after the last merged changes.
+You can restore your workspace to the main branch, RTB, by clicking the **Restore to Remote Branch** button in the View Project Changes dialog under the View Changes section. This removes the changes pushed after the last merged changes.
 
 ![Restore to Remote Branch](/learn/assets/pr-flow/restore-to-remote-branch.png)
 :::
 
 ## Reviewing and Merging Changes
 
-Reviewers can approve the Pull Request in their VCS or platform.
+After the initial changes are pushed the Reviewer can verify the changes and provide necessary feedback. Once the comments are addressed the Reviewer approves the changes and merges them to the main branch, RTB.
 
-After the approval, based on the merge options new commit will be added. Next, on project reload you can pull the changes.
 
