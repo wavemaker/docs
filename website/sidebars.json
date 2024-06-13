@@ -386,6 +386,7 @@
 					"items": [
 						"app-development/deployment/push-code-to-external-repo",
 						"app-development/deployment/integration-with-custom-vcs-provider",
+						"app-development/deployment/pr-flow",
 						"app-development/deployment/export-wavemaker-application",
 						"app-development/deployment/building-with-maven",
 						"app-development/deployment/build-with-docker",
