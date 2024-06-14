@@ -135,7 +135,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.7.1](/learn/wavemaker-release-notes/v11-7-1)
+Last updated: [WaveMaker 11.7.3](/learn/wavemaker-release-notes/v11-7-3)
 
 ---
 
@@ -159,12 +159,12 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.34 -> 5.3.35 </td>|
+|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.35 -> 5.3.36 </td>|
 | Security framework | Spring Security |  5.8.12 |
-| Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.10.1 -> 2.11.0 </td> |
+| Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
-| Sample database | HSQL |  2.7.2 |
-| JSON library | Jackson | <td className="versiontdbgcolor"> 2.17.0 -> 2.17.1 </td> |
+| Sample database | HSQL |  <td className="versiontdbgcolor"> 2.7.2 -> 2.7.3 </td> |
+| JSON library | Jackson | 2.17.1 |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
