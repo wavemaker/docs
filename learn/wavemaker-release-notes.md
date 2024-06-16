@@ -148,8 +148,8 @@ Last updated: [WaveMaker 11.7.3](/learn/wavemaker-release-notes/v11-7-3)
 | MVC Framework | angular | 16.2.12  |
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
-| Charting | d3 | 3.5.17 |
-|  | nvd3 | 1.8.6 |
+| Charting | d3 | <td className="versiontdbgcolor"> 3.5.17 -> 7.8.5 </td>|
+|  | nvd3 | <td className="versiontdbgcolor"> 1.8.6 -> 1.8.11 </td> |
 | Built-in functions | lodash | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
