@@ -1,7 +1,7 @@
 ---
-title: "PR Flow"
-id: "pr-flow"
-sidebar_label: "Enabling Pull Request Flow for Custom VCS"
+title: "Pull Request Flow for Custom VCS"
+id: "pull-request-flow"
+sidebar_label: "Pull Request (PR) Flow"
 ---
 ---
 

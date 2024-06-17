@@ -48,7 +48,11 @@ Versioning of the Prefabs follow semantic versioning scheme.
 
 ### Semantic Versioning
 
-WaveMaker supports versioning system to name the releases. Semantic versioning is a globally accepted versioning scheme that is already followed by many software publishers. With WaveMaker 11.3, the support extends to follow semantic versioning for Artifacts, including Prefabs.
+WaveMaker supports versioning system to name the releases. Semantic versioning is a globally accepted versioning scheme that is already followed by many software publishers. 
+
+:::note
+With WaveMaker 11.3, the support extends to follow semantic versioning for Artifacts, including Prefabs.
+:::
 
 An example of semantic versioning is as shown below.
 
@@ -63,6 +67,18 @@ In a timeline of three months, the following versions can be published:
 - Patch - 1.0.**1**, 1.0.**2**, 1.0.**3**, 2.0.**1**, 2.0.**2**
 
 ![Semantic Versioning](/learn/assets/wm_artifactversion.png)
+
+### Full Semantic Version Support for Prefabs Publishing
+
+We've now extended this support to include pre-release and build details from [release 11.7.1](/learn/wavemaker-release-notes/v11-7-1).
+
+For example, a version might look like **`1.2.1-beta+1234`**, where:
+
+- `1`: Major version
+- `2`: Minor version
+- `1`: Patch version
+- `-beta`: Pre-release identifier (lowercase hyphen followed by a pre-release label)
+- `+1234`: Build metadata (optional identifier prefixed with a plus sign)
 
 ## Consume Prefab from Marketplace
 
