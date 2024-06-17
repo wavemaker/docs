@@ -1553,6 +1553,7 @@
 					"type": "category",
 					"label": "Versions: 11.7.x",
 					"items": [
+						"wavemaker-release-notes/v11-7-3",
 						"wavemaker-release-notes/v11-7-2",
 						"wavemaker-release-notes/v11-7-1",
 						"wavemaker-release-notes/v11-7-0"

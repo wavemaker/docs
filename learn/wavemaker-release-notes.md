@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.7.2](/learn/wavemaker-release-notes/v11-7-2) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.7.2 includes performance improvements, such as Artifact Version Management, Notifications Response in Project Hub, some bug fixes. |03 June 2024 |
+|[WaveMaker 11.7.3](/learn/wavemaker-release-notes/v11-7-3) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.7.3 includes performance improvements, and some bug fixes. |17 June 2024 |
+|[WaveMaker 11.7.2](/learn/wavemaker-release-notes/v11-7-2) | WaveMaker 11.7.2 includes performance improvements, such as Artifact Version Management, Notifications Response in Project Hub, some bug fixes. |03 June 2024 |
 |[WaveMaker 11.7.1](/learn/wavemaker-release-notes/v11-7-1) | WaveMaker 11.7.1 is here with a new feature, Pull Request (PR) Flow. This also includes some enhancements like Internationalization (i18n) message customization, extended Semantic Versioning, disabling Prefab editing in a project, and other bug fixes. |27 May 2024 |
 |[WaveMaker 11.7.0](/learn/wavemaker-release-notes/v11-7-0) | WaveMaker 11.7.0 is here with New Studio with enhanced user experience and performance. This release has new features like API reimport and impact analysis along with many enhancements and bug fixes. In React Native, we have introduced many new features like CSS variables for styling, Dynamic forms, Accessibility, and Custom Template for widgets along with enhancements and bug fixes. |29 April 2024 |
 |[WaveMaker 11.6.2](/learn/wavemaker-release-notes/v11-6-2) | WaveMaker 11.6.2 includes many bug fixes related to Security, APIs, and Profile Configuration sections in our New Studio. |25 March 2024 |
@@ -134,7 +135,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.7.1](/learn/wavemaker-release-notes/v11-7-1)
+Last updated: [WaveMaker 11.7.3](/learn/wavemaker-release-notes/v11-7-3)
 
 ---
 
@@ -147,8 +148,8 @@ Last updated: [WaveMaker 11.7.1](/learn/wavemaker-release-notes/v11-7-1)
 | MVC Framework | angular | 16.2.12  |
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
-| Charting | d3 | 3.5.17 |
-|  | nvd3 | 1.8.6 |
+| Charting | d3 | <td className="versiontdbgcolor"> 3.5.17 -> 7.8.5 </td>|
+|  | nvd3 | <td className="versiontdbgcolor"> 1.8.6 -> 1.8.11 </td> |
 | Built-in functions | lodash | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
@@ -158,12 +159,12 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.34 -> 5.3.35 </td>|
+|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.35 -> 5.3.36 </td>|
 | Security framework | Spring Security |  5.8.12 |
-| Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.10.1 -> 2.11.0 </td> |
+| Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
-| Sample database | HSQL |  2.7.2 |
-| JSON library | Jackson | <td className="versiontdbgcolor"> 2.17.0 -> 2.17.1 </td> |
+| Sample database | HSQL |  <td className="versiontdbgcolor"> 2.7.2 -> 2.7.3 </td> |
+| JSON library | Jackson | 2.17.1 |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
