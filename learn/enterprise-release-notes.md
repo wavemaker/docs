@@ -22,7 +22,9 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.7.1** <p style={{color:"red"}}>*latest*</p> | - [v11.7.1](/learn/wavemaker-release-notes/v11-7-1) | Includes a new feature, Pull Request (PR) Flow. This also includes some enhancements like Internationalization (i18n) message customization, extended Semantic Versioning, disabling Prefab editing in a project, and other bug fixes. | 28 May 2024 |
+|**v11.7.3** <p style={{color:"red"}}>*latest*</p> | - [v11.7.3](/learn/wavemaker-release-notes/v11-7-3) | This release includes studio performance improvements, and some bug fixes. | 17 Jun 2024 |
+|**v11.7.2** | - [v11.7.2](/learn/wavemaker-release-notes/v11-7-2) | This release includes performance improvements, artifact version management, notifications response in Project Hub to improve perforamance of Studio designer and project opening, and some bug fixes. | 03 Jun 2024 |
+|**v11.7.1**  | - [v11.7.1](/learn/wavemaker-release-notes/v11-7-1) | Includes a new feature, Pull Request (PR) Flow. This also includes some enhancements like Internationalization (i18n) message customization, extended Semantic Versioning, disabling Prefab editing in a project, and other bug fixes. | 28 May 2024 |
 |**v11.7.0** | - [v11.7.0](/learn/wavemaker-release-notes/v11-7-0) | Includes New Studio with enhanced user experience and performance. This release has new features like API reimport and impact analysis along with many enhancements and bug fixes. In React Native, we have introduced many new features like CSS variables for styling, Dynamic forms, Accessibility, and Custom Template for widgets along with enhancements and bug fixes. This also includes an issue that was fixed where the users do not need to provide case-sensitive details in the project. | 30 April 2024 |
 |**v11.6.1** | - [v11.6.1](/learn/wavemaker-release-notes/v11-6-1) <br/> - [v11.6.0](/learn/wavemaker-release-notes/v11-6-0) | Includes multiple enhancements like dynamic passing of Content Delivery Network(CDN) URL as a system property, **Show** field for edit mode in Data Table widget, conditional classes for few input widgets, and improved security Role Mapping configurations along with many bug fixes related to new studio based on Angular which will be a phased rollout. | 26 Mar 2024 |
 |**v11.5.3** | - [v11.5.3](/learn/wavemaker-release-notes/v11-5-3) | Includes enhancements like conditional classes for input widgets, setting the next button as default in the Wizard widget, and support to add links in the Label along with other bug fixes in React Native and Studio Page Workspace. | 23 Jan 2024 |
@@ -67,7 +69,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [v11.7.0](/learn/wavemaker-release-notes/v11-7-0)
+Last updated: [v11.7.3](/learn/wavemaker-release-notes/v11-7-3)
 
 ---
 
@@ -80,8 +82,8 @@ Last updated: [v11.7.0](/learn/wavemaker-release-notes/v11-7-0)
 | MVC Framework | angular | 16.2.12  |
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
-| Charting | d3 | 3.5.17 |
-|  | nvd3 | 1.8.6 |
+| Charting | d3 | <td className="versiontdbgcolor"> 3.5.17 -> 7.8.5 </td>|
+|  | nvd3 | <td className="versiontdbgcolor"> 1.8.6 -> 1.8.11 </td> |
 | Built-in functions | lodash | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
@@ -91,12 +93,12 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.34 -> 5.3.35 </td>|
+|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.35 -> 5.3.36 </td>|
 | Security framework | Spring Security |  5.8.12 |
-| Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.10.1 -> 2.11.0 </td> |
+| Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
-| Sample database | HSQL |  2.7.2 |
-| JSON library | Jackson | <td className="versiontdbgcolor"> 2.17.0 -> 2.17.1 </td> |
+| Sample database | HSQL |  <td className="versiontdbgcolor"> 2.7.2 -> 2.7.3 </td> |
+| JSON library | Jackson | 2.17.1 |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
