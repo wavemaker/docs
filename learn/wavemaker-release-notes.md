@@ -135,7 +135,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.7.3](/learn/wavemaker-release-notes/v11-7-3)
+Last updated: [WaveMaker 11.7.4](/learn/wavemaker-release-notes/v11-7-4)
 
 ---
 
@@ -148,8 +148,8 @@ Last updated: [WaveMaker 11.7.3](/learn/wavemaker-release-notes/v11-7-3)
 | MVC Framework | angular | 16.2.12  |
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
-| Charting | d3 | <td className="versiontdbgcolor"> 3.5.17 -> 7.8.5 </td>|
-|  | nvd3 | <td className="versiontdbgcolor"> 1.8.6 -> 1.8.11 </td> |
+| Charting | d3 | 7.8.5 |
+|  | nvd3 | 1.8.11 |
 | Built-in functions | lodash | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
@@ -159,11 +159,11 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.35 -> 5.3.36 </td>|
-| Security framework | Spring Security |  5.8.12 |
+|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.36 -> 5.3.37 </td>|
+| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.12 -> 5.8.13 </td> |
 | Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
-| Sample database | HSQL |  <td className="versiontdbgcolor"> 2.7.2 -> 2.7.3 </td> |
+| Sample database | HSQL | 2.7.3 |
 | JSON library | Jackson | 2.17.1 |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
