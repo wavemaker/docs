@@ -17,10 +17,19 @@ WaveMaker is here with Core and Implementation (IMPL) projects where,
 
 Core and IMPL projects primarily help in code reusability, maintenance, and steady upgrades.
 
-
 :::note
-[Core](#core-project) and [IMPL](#implementation-project) project creation is applicable for [Teams](/learn/teams/overview/) users only. This is enabled for WaveMaker Online teams only on demand.
+[Core](#core-project) and [IMPL](#implementation-project) project creation is applicable for [Teams](/learn/teams/overview/) users only. This is enabled for WaveMaker Online (WMO) teams only on demand.
 :::
+
+## Example
+
+To understand working of [Core](#core-project) and [IMPL](#implementation-project), you can refer to the example where the core application is designed to start with onboarding a user and creating an account. Later credit and debit transactions through physical or virtual cards are enabled to make any purchase.
+
+![Core Application Flow](/learn/assets/core-impl-projects/core-app-example.png)
+
+After publishing Core application, you can proceed with IMPL creation on top of the Core application and modify the flow so that purchases use a beneficiary account for credit and debit transactions instead of physical or virtual cards.
+
+![IMPL Application Flow](/learn/assets/core-impl-projects/impl-app-example.png)
 
 ## Enabling Core and IMPL Project
 
