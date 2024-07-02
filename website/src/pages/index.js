@@ -43,14 +43,12 @@ export default class Index extends React.Component {
         let recentSearch = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('recentSearch')) : null;
         let output = [];
         if (recentSearch) {
-            recentSearch.forEach((search, index) => {
-                if(index!=recentSearch.length-1)
-                    output.push(<span key={"" + index}>{search}, </span>)
-                else
-                    output.push(<span key={"" + index}>{search}</span>)
+            Reflect.ownKeys(recentSearch).forEach((search, index) => {
+                const itemName = search.length>22?search.slice(0,20)+'...':search; 
+                output.push(<a key={"" + index} href={recentSearch[search]} className='DocSearch-inlineSearch-action-link'><span className='DocSearch-inlineSearch-action'>{itemName}</span></a>)
             })
             return (<div className='container'>
-                <span>Recently Visited:</span>
+                <span>Recently Visited: </span>
                 {output}
             </div>);
         }
@@ -70,7 +68,7 @@ export default class Index extends React.Component {
         extensions.forEach((extension) => {
             extensionComponents.push(<div className='col padding-horiz--sm' key={extensions.indexOf(extension)}>
                 <a className='extension row' href={extension.href}>
-                    <span class="img-circle"><img src={colorMode != "dark" ? extension.lightIcon : extension.darkIcon} className='icon'></img></span>
+                    <span className="img-circle"><img src={colorMode != "dark" ? extension.lightIcon : extension.darkIcon} className='icon'></img></span>
                     <p className='caption'>{extension.label}</p>
                     <span className='link'>Explore <img src="/learn/img/combined-shape-black.svg" /></span>
                 </a>
@@ -78,6 +76,15 @@ export default class Index extends React.Component {
         })
         return extensionComponents;
     }
+
+    scrollSmoothTo(elementId) {
+        const element = document.getElementById(elementId);
+        element.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth'
+        });
+    }
+
     render() {
         const { config: siteConfig, language = '' } = this.props;
         const { baseUrl } = siteConfig;
@@ -108,13 +115,14 @@ export default class Index extends React.Component {
                             </div>
                         </div>
                     </div>
-
-                    <div className='container extensions text--center  spl-icon'>
+                   
+                    <div className='container extensions text--center'>
+                    <a onClick={()=>{this.scrollSmoothTo("feature-section")}} className='spl-icon'/>
                         <div className='row '>
                             {this.getExtensions()}
                         </div>
                     </div>
-                    <div className='container-fluid features-section'>
+                    <div className='container-fluid features-section' id='feature-section'>
                         <div className='container margin-top--lg padding-bottom--xl'>
                             <h1 className='text--center margin-bottom--xl'>Feature Highlight</h1>
                             <div className='row border-gradient'>

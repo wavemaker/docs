@@ -112,22 +112,24 @@ export function DocSearchModal(_ref) {
             return x.objectID === search.objectID;
         }) === -1) {
             let output = search.hierarchy["lvl1"];
+            let outputUrl = search.url;
             if (typeof window !== 'undefined') {
                 if (localStorage.getItem('recentSearch')) {
                     let recentSearch = JSON.parse(localStorage.getItem('recentSearch'));
-                    if (!recentSearch.includes(output)) {
-                        if (recentSearch.length == 1) {
-                            recentSearch.push(output);
+                    let searchKeys = Reflect.ownKeys(recentSearch);
+                    if (!searchKeys.includes(output)) {
+                        if (searchKeys.length == 1) {
+                            recentSearch[output]=outputUrl;
                         }
-                        else if (recentSearch.length == 2) {
-                            recentSearch.push(output);
-                            recentSearch.shift();
+                        else if (searchKeys.length == 2) {
+                            recentSearch[output]=outputUrl;
+                            delete recentSearch[searchKeys[0]];
                         }
                         localStorage.setItem('recentSearch', JSON.stringify(recentSearch));
                     }
                 }
                 else {
-                    localStorage.setItem('recentSearch', JSON.stringify([output]));
+                    localStorage.setItem('recentSearch', JSON.stringify({[output]:outputUrl}));
                 }
             }
         }

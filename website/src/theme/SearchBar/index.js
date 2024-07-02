@@ -77,8 +77,8 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
     setIsOpen(false);
     document.body.classList.remove("DocSearch--active")
     document.body.classList.remove("search-active")
-    if (document.querySelector('.DocSearch-Reset'))
-      document.querySelector('.DocSearch-Reset').innerHTML = ''
+    if (document.querySelector('.DocSearch-Reset')) 
+      document.querySelector('.DocSearch-Reset').setAttribute('hidden','');
     if (props.elementId == "home-search" && document.querySelector('.DocSearch-Dropdown-Container')) {
       document.querySelector('.DocSearch-Dropdown-Container').innerHTML = ''
     }
