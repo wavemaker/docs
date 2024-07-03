@@ -1,4 +1,4 @@
-cd ---
+---
 title: "Core and Implementation Projects"
 id: "core-and-impl-projects"
 sidebar_label: "Core and Implementation Projects"
