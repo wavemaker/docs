@@ -1,6 +1,6 @@
 ---
 title: "Core and Implementation Projects"
-id: "core-and-impl-projects"
+id: "core-and-implementation-projects"
 sidebar_label: "Core and Implementation Projects"
 ---
 ---
