@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.7.4](/learn/wavemaker-release-notes/v11-7-4) <p style={{color:"red"}}>*latest*</p> | In WaveMaker 11.7.4 we have extended support for application deployment with Java 17 and 21. Included improvements like the Themes section in Project Configuration, iframe widget message, and some bug fixes. |01 July 2024 |
+|[WaveMaker 11.7.5](/learn/wavemaker-release-notes/v11-7-5) <p style={{color:"red"}}>*latest*</p> |  WaveMaker 11.7.5 includes essential bug fixes. |08 July 2024 |
+|[WaveMaker 11.7.4](/learn/wavemaker-release-notes/v11-7-4) | In WaveMaker 11.7.4 we have extended support for application deployment with Java 17 and 21. Included improvements like the Themes section in Project Configuration, iframe widget message, and some bug fixes. |01 July 2024 |
 |[WaveMaker 11.7.3](/learn/wavemaker-release-notes/v11-7-3) | WaveMaker 11.7.3 includes performance improvements, and some bug fixes. |17 June 2024 |
 |[WaveMaker 11.7.2](/learn/wavemaker-release-notes/v11-7-2) | WaveMaker 11.7.2 includes performance improvements, such as Artifact Version Management, Notifications Response in Project Hub, some bug fixes. |03 June 2024 |
 |[WaveMaker 11.7.1](/learn/wavemaker-release-notes/v11-7-1) | WaveMaker 11.7.1 is here with a new feature, Pull Request (PR) Flow. This also includes some enhancements like Internationalization (i18n) message customization, extended Semantic Versioning, disabling Prefab editing in a project, and other bug fixes. |27 May 2024 |
