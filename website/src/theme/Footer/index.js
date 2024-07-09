@@ -84,7 +84,7 @@ export default class Footer extends React.Component {
           <div className='row copyright'>
             <div className='col'>
               <div className='container copyright-text'>
-                <span> © Copyright © 2023 WaveMaker, Inc. Built with Docusaurus. </span>
+                <span> © Copyright © 2024 WaveMaker.</span>
               </div>
             </div>
             <div className='col col--6 extra-links'>
