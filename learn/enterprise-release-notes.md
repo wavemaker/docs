@@ -22,7 +22,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.7.4** <p style={{color:"red"}}>*latest*</p> | - [v11.7.4](/learn/wavemaker-release-notes/v11-7-4) | In WaveMaker 11.7.4 we have extended support for application deployment with Java 17 and 21. Included improvements like the Themes section in Project Configuration, iframe widget message, and some bug fixes. | 01 Jul 2024 |
+|**v11.7.5** <p style={{color:"red"}}>*latest*</p> | - [v11.7.5](/learn/wavemaker-release-notes/v11-7-5) |WaveMaker release 11.7.5, includes essential bug fixes. | 08 Jul 2024 |
+|**v11.7.4** | - [v11.7.4](/learn/wavemaker-release-notes/v11-7-4) | In WaveMaker 11.7.4 we have extended support for application deployment with Java 17 and 21. Included improvements like the Themes section in Project Configuration, iframe widget message, and some bug fixes. | 01 Jul 2024 |
 |**v11.7.3** | - [v11.7.3](/learn/wavemaker-release-notes/v11-7-3) | This release includes studio performance improvements, and some bug fixes. | 17 Jun 2024 |
 |**v11.7.2** | - [v11.7.2](/learn/wavemaker-release-notes/v11-7-2) | This release includes performance improvements, artifact version management, notifications response in Project Hub to improve perforamance of Studio designer and project opening, and some bug fixes. | 03 Jun 2024 |
 |**v11.7.1**  | - [v11.7.1](/learn/wavemaker-release-notes/v11-7-1) | Includes a new feature, Pull Request (PR) Flow. This also includes some enhancements like Internationalization (i18n) message customization, extended Semantic Versioning, disabling Prefab editing in a project, and other bug fixes. | 28 May 2024 |
@@ -70,7 +71,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [v11.7.3](/learn/wavemaker-release-notes/v11-7-3)
+Last updated: [v11.7.4](/learn/wavemaker-release-notes/v11-7-4)
 
 ---
 
@@ -83,8 +84,8 @@ Last updated: [v11.7.3](/learn/wavemaker-release-notes/v11-7-3)
 | MVC Framework | angular | 16.2.12  |
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
-| Charting | d3 | <td className="versiontdbgcolor"> 3.5.17 -> 7.8.5 </td>|
-|  | nvd3 | <td className="versiontdbgcolor"> 1.8.6 -> 1.8.11 </td> |
+| Charting | d3 | 7.8.5 |
+|  | nvd3 | 1.8.11 |
 | Built-in functions | lodash | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
@@ -94,11 +95,11 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.35 -> 5.3.36 </td>|
-| Security framework | Spring Security |  5.8.12 |
+|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.36 -> 5.3.37 </td>|
+| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.12 -> 5.8.13 </td> |
 | Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
-| Sample database | HSQL |  <td className="versiontdbgcolor"> 2.7.2 -> 2.7.3 </td> |
+| Sample database | HSQL | 2.7.3 |
 | JSON library | Jackson | 2.17.1 |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
@@ -118,7 +119,8 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.1 <br/> 7.1.0 |
 
 :::note
-Cordova-Android supports from Android 24 (Nougat). From Angular 16 Cordova-iOS supports from iOS 16.
+- Cordova-iOS supports from iOS 16.
+- Cordova-Android supports from iOS Android 24 (Nougat).
 :::
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
