@@ -21,7 +21,7 @@ WaveMaker now supports deployment on web servers using Java 17 and Java 21 along
 - Bind Dialog and Tab Loading: Tabs in the bind dialog now load only when needed, improving navigation speed and overall performance
 - Web pages with many dialogs, containing a lot of Widgets and Prefabs will now load and perform better with lazy loading; dialog content only loads when the dialog is clicked
 - Prefabs load faster; reducing the number of calls needed to access properties and configuration files
-- Optimized Angular builds to reduce the size of the generated application files (like vendor.js and main.js); the studio loads noticeably faster
+- Optimized Angular builds to reduce the size of the generated application files (like `vendor.js` and `main.js`); the studio loads noticeably faster
 
 
 ## Accessibility Enhancement with Label Widgets
