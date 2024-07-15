@@ -35,15 +35,16 @@ After publishing Core application, you can proceed with IMPL creation on top of 
 
 [Core](#core-project) and [IMPL](#implementation-project) projects can be created by enabling the App Customization option for each user type in a team. Enabling App Customization is a restricted privilege, done by the [super admin](/learn/on-premise/configure/config-users-auth-providers/#make-user-as-a-super-admin) of the project.
 
-Super admins can enable it in Teams Portal where they can view the Launch Pad option.
+Super admins can enable it in Team Portal where they can view the Launch Pad option.
 
-1. Go to Teams Portal > **Launch Pad** > Teams section to view the team details like Team Name, Created Date, Last Modified details, and configuration action items.
+1. Go to Team Portal > **Launch Pad** > Teams section to view the team details like Team Name, Created Date, Last Modified details, and configuration action items.
 2. In the **Teams** section, click the **key** icon under Actions to edit the permissions for team members.
 3. You get directed to **Manage Permissions** where you switch to **Product Role**. User roles and specific permissions are listed here for configuration. Click **Edit**.
 4. Go to each role, and enable **App Customization** allowing users to create [Core](#core-project) and [IMPL](#implementation-project) projects. Click **Save**.
 
 
-<iframe width="560" height="315" src="https://www.loom.com/embed/97712fe1f6554360875292bfdcded01f?sid=792444c9-23ff-421c-b568-5343f12e195e" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/cZGMPNxPBHpH7theP4MUQK" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
 
 ## Publishing Core Project
 
@@ -64,27 +65,27 @@ You can create a blank project with fundamental functionalities to become the ba
 3. The next screen is Create application details, enter **Application name** and **Repo name**. Click **Continue**.
 4. Invite your team members is the next screen, add **Team Member email IDs** and **Assign roles** like Project Admin, and Contributor. Click **Create Application**.
 
-<iframe width="560" height="315" src="https://www.loom.com/embed/416a85928e694560ad01685fbc4cb961?sid=5b57fd13-0e7d-4fdf-8141-ce66f31c0034"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/qhHNiVTfdocbg6q8Kvpp2P"   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
-### Publishing Core Project to Teams Portal
+### Publishing Core Project to Team Portal
 
 Once created, the project is published as [Core](#core-project) for the team members to access the application.
 
 1. You get redirected to WaveMaker studio where you can click the **Publish** icon to publish the project as core.
 2. Publish Application To Teams As Core dialog opens. In the Information screen mainly enter the project **Category**, **New Version**, and **Change Log**. Click **Next**.
 3. In the Configuration screen, add applicable **Tags** and click **Next**.
-4. Verify the project details in the Summary screen and click **Publish**. This publishes the application in the Teams Portal.
+4. Verify the project details in the Summary screen and click **Publish**. This publishes the application in the Team Portal.
 
-<iframe width="560" height="315" src="https://www.loom.com/embed/b8ca709bac9046b99a3cfc1a25c645f9?sid=3bf1a140-df20-42fa-87a0-08bda365710b" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/oiE4gVf12URpJZUXQeMJou" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
 ### Approving Core Application
 
 The projects can only be published as [Core](#core-project) after approval. Once approved, the [Core](#core-project) project can be viewed and accessed by team members.
 
-1.  Go to Teams Portal > Core Apps, verify the provided information, and click **Approve**.
+1.  Go to Team Portal > Core Apps, verify the provided information, and click **Approve**.
 2. You get redirected to the **Approve core application** dialog where you add the Remarks and click **Confirm**. You can go to ProjectsHub to find the published Core application.
 
-<iframe width="560" height="315" src="https://www.loom.com/embed/77127cd20d014108b62140c9e8116c00?sid=fc444b1c-3b0b-4d5a-95d9-df352fbf9c5d" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/v7D6QffZiHVVJiTcPXGnQf" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
 ## Creating Implementation Project
 
@@ -96,7 +97,7 @@ The projects can only be published as [Core](#core-project) after approval. Once
 4. Create application details is the third screen, enter the **Application Name** and click **Continue**.
 5. In the final screen, Invite your team members, add **Team Member email IDs** and **Assign roles** like Project Admin, and Contributor. Click **Create Application** to finish IMPL project creation.
 
-<iframe width="560" height="315" src="https://www.loom.com/embed/228e539430be440e8c206d318327a08c?sid=bc090836-9b8e-4d04-acfd-0ef2a2ed5302" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/8k3NEKSEU3sNSDWWzp2ebR" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
 ## Linking Existing IMPL Project to Core
 
@@ -113,7 +114,8 @@ Applicable for the Teams users who already use this flow outside WaveMaker Studi
 3. Go to the Menu icon and click **Link_to_core App** to view the list of Core applications.
 4. You land on the **Link project to core** dialog. Select suitable Core application and version details. Click Save to assign Core Application to the IMPL application.
 
-<iframe width="560" height="315" src="https://www.loom.com/embed/d5299431c9594d478e5e362eef05df56?sid=48d24b78-9bcf-4b7d-94cd-7d9eeaf85ca9" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/8SbofTp2ZjpwZZwn45ZACZ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
 
 ## Fetching Core Upgrades in IMPL Project
 
@@ -132,7 +134,7 @@ While fetching the Core changes to IMPL, a temporary branch gets created to cont
 3. Now, go to [ProjectsHub](/learn/blog/2024/03/04/wavemaker-11-6-release#introducing-projectshub) and hover over the IMPL project to view and click the **View branch & project details**.
 4. The Branch details of the [IMPL](#implementation-project) project pop up automatically where you can click **Open Branch in studio**. This opens the temporary branch containing upgrades fetched from the Core.
 
-<iframe width="560" height="315" src="https://www.loom.com/embed/f76061e68c0d412cab024c7068fefac5?sid=2a37b9b1-3e82-439a-a036-e27cc4174230" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/tR8TZpe3TuFh8BbXksh8zk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
 ### Merging Upgrade Changes
 
@@ -144,4 +146,5 @@ After the temporary branch creation, the upgraded changes are reviewed and the c
 4. You can now view the **Finish Merge** dialog, and enter commit message for merge.
 5. Once your branch is successfully merged, click **Go Back To Projects List**. This redirects you to Projectshub, where you can find the [IMPL](#implementation-project) with [Core](#core-project) upgrades.
 
-<iframe width="560" height="315" src="https://www.loom.com/embed/7d7d339a759f439cb97d09d6b7121cc9?sid=1087456c-30cf-4643-b524-b1138076f282" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/ifoHi4hWZUyKqu68X7c8Uo"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
