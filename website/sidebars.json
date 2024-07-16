@@ -14,7 +14,8 @@
 						"app-development/dev-integration/developer-collaboration",
 						"app-development/dev-integration/extending-application-using-ides",
 						"app-development/dev-integration/import-export-update-apps",
-						"app-development/wavemaker-overview/artifacts-repository"
+						"app-development/wavemaker-overview/artifacts-repository",
+						"app-development/core-implementation/core-and-implementation-projects"
 					]
 				}
 			]
