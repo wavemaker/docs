@@ -69,7 +69,7 @@ describe("Sign-in button take to right places", function () {
   it("Verifies Get Started navigation ", function () {
     cy.get('.navbar__items > a:last-child')
       .contains("Get Started").should('have.attr', 'href').then((href) => {
-        cy.request(href).its('body').should('include', 'Start your free trial now').end();
+        cy.request(href).its('body').should('include', 'Schedule a Demo or Talk to an Expert for a Free Pilot.').end();
       });
   })
 
