@@ -195,3 +195,7 @@ Similar to IMPL application, you can create IMPL Prefab project. This would incl
 5. In the final screen, Invite your team members, add **Team Member email IDs** and **Assign roles** like Project Admin, and Contributor. Click **Create Application** to finish IMPL project creation.
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/scBQDWpWUq8G9ry9JnuovF"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
+:::note
+Fetching Core Prefab project upgrades in the IMPL Prefab project involves the same steps as [fetching Core application upgrades in the IMPL application](#fetching-core-upgrades-in-impl-project).
+:::
