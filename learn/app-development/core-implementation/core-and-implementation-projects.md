@@ -155,6 +155,12 @@ Prefab can also be published as a Core Prefab project with base properties. This
 - [Publishing Prefab to Team](#publishing-prefab-to-team)
 - [Approving Prefab as Core](#approving-prefab-as-core)
 
+:::note
+
+Users can publish a Prefab as Core along with the Prefab artifact during the approval process. There is no separate option available to publish from the Prefab Project.
+
+:::
+
 ### Publishing Prefab to Team
 
 It is necessary to publish the Prefab as a Core Project for you to use it as a foundation for IMPL Prefab projects.
