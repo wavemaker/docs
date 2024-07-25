@@ -21,7 +21,6 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-
 |[WaveMaker 11.8.0](/learn/wavemaker-release-notes/v11-8-0) <p style={{color:"red"}}>*latest*</p> |  WaveMaker 11.8.0 includes significant upgrades like Angular 17 and Expo 50 along with Artifact sharing between WaveMaker Enterprise (WME) setups and  Single Page Application (SPA) behavior as new features. This release also includes major enhancement like Using Git to capture workspace changes and bug fixes. In React Native,  new CSS style classes in Slider widget, setting range in Slider widget, Secure Sockets Layer (SSL) certificate pinning, navigation in Wizard widget, and Wheel date picker are some of the ehancements along with many bug fixes. |29 July 2024 |
 |[WaveMaker 11.7.5](/learn/wavemaker-release-notes/v11-7-5) |  WaveMaker 11.7.5 includes essential bug fixes. |08 July 2024 |
 |[WaveMaker 11.7.4](/learn/wavemaker-release-notes/v11-7-4) | In WaveMaker 11.7.4 we have extended support for application deployment with Java 17 and 21. Included improvements like the Themes section in Project Configuration, iframe widget message, and some bug fixes. |01 July 2024 |
