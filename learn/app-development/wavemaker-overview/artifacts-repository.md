@@ -185,11 +185,5 @@ Artifacts exported from other WME will be available in the Marketplace and can b
 - **Cores**: Cores will be listed along with others in core selection section during the application creation.
 
 Updates for prefabs and cores was the same flow once the new version is imported the respective updates flow will trigger.
-  
---remove
-[![](/learn/assets/Artifacts_dashboard.png)](/learn/assets/Artifacts_dashboard.png) 
-[![](/learn/assets/Artifacts_import.png)](/learn/assets/Artifacts_import.png)
-[![](/learn/assets/Artifacts_export.png)](/learn/assets/Artifacts_export.png)
-[![](/learn/assets/Artifacts_pending.png)](/learn/assets/Artifacts_pending.png) 
-[![](/learn/assets/Artifacts_action.png)](/learn/assets/Artifacts_action.png)
 
+<iframe width="700px" height="400px" src="https://embed.app.guidde.com/playbooks/qBqAS8Hb1MtkxCy7wTfsgi" title="Exporting Artifacts to Another WME " frameborder="0" referrerpolicy="unsafe-url" allowfullscreen="true" allow="clipboard-write" sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"></iframe>
