@@ -139,7 +139,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.7.4](/learn/wavemaker-release-notes/v11-7-4)
+Last updated: [WaveMaker 11.8.0](/learn/wavemaker-release-notes/v11-8-0)
 
 ---
 
@@ -163,12 +163,12 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.36 -> 5.3.37 </td>|
-| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.12 -> 5.8.13 </td> |
+|  | Spring Framework | 5.3.37 |
+| Security framework | Spring Security |  5.8.13  |
 | Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL | 2.7.3 |
-| JSON library | Jackson | 2.17.1 |
+| JSON library | Jackson |  <td className="versiontdbgcolor">2.17.1 -> 2.17.2 </td> |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
@@ -208,20 +208,20 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |---|---|
 |Java |11 |
 |Node|18.16.1|
-|Maven| 3.9.6 |
+|Maven| <td className="versiontdbgcolor"> 3.9.6 -> 3.9.8 </td> |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 
+
 ### Angular Web and Mobile 11
 
-|Description| Version|
+|Description|	Version|
 |---|---|
 |Java | 11 |
 |Node| 18.16.1|
-|Maven| 3.9.6|
-|npm | 9.5.1 |
+|Maven| <td className="versiontdbgcolor"> 3.9.6 -> 3.9.8 </td> |
+|npm | 9.5.1|
 |Ant| 1.10.11|
-|Git| 2.42| 
 
 For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
