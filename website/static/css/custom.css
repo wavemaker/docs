@@ -176,7 +176,11 @@ body {
     margin: 0;
     /* font-family: 'Roboto', sans-serif; */
 }
-
+.alert--impact {
+    --ifm-alert-background-color: #FFFAE8;
+    --ifm-alert-foreground-color: rgb(66,69,73);
+    --ifm-alert-border-color: #FF6121;
+  }
 .button.button--secondary {
     color: var(--wm-secondary-text-color);
     background-color:var(--wm-secondary-bg-color);

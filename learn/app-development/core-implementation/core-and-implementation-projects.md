@@ -148,3 +148,60 @@ After the temporary branch creation, the upgraded changes are reviewed and the c
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/ifoHi4hWZUyKqu68X7c8Uo"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
+## Publishing Core Prefab Project
+
+Prefab can also be published as a Core Prefab project with base properties. This allows the creation of Implementation (IMPL) Prefab with required customization on top of Core Prefab project. To make the Prefab a Core Project that can be accessed by every team member, you need to
+
+- [Publishing Prefab to Team](#publishing-prefab-to-team)
+- [Approving Prefab as Core](#approving-prefab-as-core)
+
+:::note
+
+Users can publish a Prefab as Core along with the Prefab artifact during the approval process. There is no separate option available to publish from the Prefab Project.
+
+:::
+
+### Publishing Prefab to Team
+
+It is necessary to publish the Prefab as a Core Project for you to use it as a foundation for IMPL Prefab projects.
+
+1. Go to Prefabs and click **Open in Studio**. This opens the Prefab project in studio.
+2. Click the **Publish** icon and select **To Team** to publish the Prefab project to a specific team.
+3. Publish Prefab To Team dialog opens. In the Information screen mainly enter the Prefab **Category**, **New Version**, and **Change Log**. Click **Next**.
+4. In the Configuration screen, add applicable **Tags** and click **Next**.
+5. Verify the project details in the Summary screen and click **Publish**. This publishes the Prefab to the Team Portal.
+
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/ngJxr1TTeBhTj8XZRX3kqq"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
+### Approving Prefab as Core
+
+You can view a **Prefab as Core** toggle that publishes the Prefab Core Project and Prefab artifact. You can next approve the publication and make it accessible for team members to create IMPL Prefab project on top of it. 
+
+
+:::note
+Upon disabling the **Prefab as Core** toggle, you approve publishing the Prefab artifact that does not support the creation of IMPL Prefabs on top of the Prefab artifact. To know more on how to publish Prefab as an artifact, see [Publish Prefab to Team](/learn/app-development/custom-widgets/creating-prefabs/#publish-prefab-to-team).
+:::
+
+1. Go to Team Portal > Prefab Artifacts to view the list of Prefabs to be approved for publication.
+2. Select the Prefab that redirects you to **testPrefabCore** dialog.
+3. Enable **Prefab as Core** toggle to publish the Prefab Core Project.
+4. Verify the provided information, and click **Approve**.
+5. You get redirected to the **Approve Prefab** dialog where you add the Remarks and click **Confirm**. You can go to ProjectsHub > Prefabs section to find the published Core Prefab Project.
+
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/sKpgTKyRUehY25xtoCk2pH"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
+## Creating Implementation Prefab Project
+
+Similar to IMPL application, you can create IMPL Prefab project. This would include additional customizations on top of the existing Core Prefab project.
+
+1. In the [ProjectsHub](/learn/blog/2024/03/04/wavemaker-11-6-release#introducing-projectshub), go to Prefabs and click **Create**.
+2. Create Application dialog opens with Web and Mobile as application creation options. Select the type of application then select **Create from Core**. Click **Continue**.
+3. In the next screen, Choose core & version, select a **Core application** on top of which the [IMPL](#implementation-project) project is created.
+4. Create application details is the third screen, enter the **Application Name** and click **Continue**.
+5. In the final screen, Invite your team members, add **Team Member email IDs** and **Assign roles** like Project Admin, and Contributor. Click **Create Application** to finish IMPL project creation.
+
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/scBQDWpWUq8G9ry9JnuovF"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
+:::note
+Fetching Core Prefab project upgrades in the IMPL Prefab project involves the same steps as [fetching Core application upgrades in the IMPL application](#fetching-core-upgrades-in-impl-project).
+:::

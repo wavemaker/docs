@@ -85,11 +85,37 @@ module.exports = {
               "path": 'v10.15',
             },
           },
+          "admonitions": {
+            "keywords": [
+                'info',
+                'success',
+                'danger',
+                'note',
+                'tip',
+                'warning',
+                'important',
+                'caution',
+                'impact',
+            ],
+        },
         },
         "blog": {
           "path": "../website/blog/",
           "blogSidebarTitle": 'All posts',
           "blogSidebarCount": 'ALL',
+          "admonitions": {
+            "keywords": [
+                'info',
+                'success',
+                'danger',
+                'note',
+                'tip',
+                'warning',
+                'important',
+                'caution',
+                'impact',
+            ],
+        },
         },
         "theme": {
           "customCss": "../website/static/css/custom.css"
