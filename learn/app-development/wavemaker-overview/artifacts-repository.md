@@ -184,6 +184,6 @@ Artifacts exported from other WME will be available in the Marketplace and can b
 - **Prefabs**: Prefabs will be listed in the studio artifacts section under marketplace.
 - **Cores**: Cores will be listed along with others in core selection section during the application creation.
   
-The flow for Taking updates for prefabs and cores was the same . Once a new version is imported the respective updates flow will trigger.
+The flow for taking updates for prefabs and cores was the same. Once a new version is imported the respective updates flow will trigger.
 
 <iframe width="700px" height="400px" src="https://embed.app.guidde.com/playbooks/qBqAS8Hb1MtkxCy7wTfsgi" title="Exporting Artifacts to Another WME " frameborder="0" referrerpolicy="unsafe-url" allowfullscreen="true" allow="clipboard-write" sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"></iframe>
