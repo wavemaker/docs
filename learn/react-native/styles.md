@@ -48,14 +48,14 @@ Here, you want to change the background-color of the button and the color of the
 
 Following is the way to specify styles:
 
-```
+```css
 .app-button - will target all buttons
 .custom-btn.app-button - will target only buttons that have custom-btn class.
 ```
 
 Some widgets use WaveMaker widgets internally. For example, buttons use icons internally. Following is the way to change the color of the icon.
 
-```
+```css
 .custom-btn.app-button-icon.app-icon-shape {
  color : red;
 }
@@ -67,14 +67,14 @@ Some widgets use WaveMaker widgets internally. For example, buttons use icons in
 2. Expect class names, no other CSS selector definitions are supported. Also, do not write any styles specific to the dom selector.
 3. Using parent class name selector is not supported. For example, a container has a class ".custom-container". If you need to change the CSS of the button placed inside it, this can be expressed below in normal CSS.
 
-```
+```css
 .custom-container > .app-button {
  background-color: ‘red’;
 }
 ```
 Whereas in React Native, you must target the button directly. The styles of the container will not get passed to the button. In this case, a class has to be mentioned on that button, and styles must be specified for that class.
 
-```
+```css
 .custom-container.app-container {
  background-color: red;
 }
@@ -99,7 +99,7 @@ CSS variables, also known as custom properties, provide a powerful way to define
 
 ### Declaring CSS Variables
 
-To centralize your theme-related CSS variable definitions, you can declare the variables in a specific section in your stylesheet, for example, `src/common/styles.css`.
+To centralize your theme-related CSS variable definitions, you can declare the variables in a specific section in your stylesheet, for example, `src/common/styles.less`.
 
 ```css
 /* src/common/styles.css */
