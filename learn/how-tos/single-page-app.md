@@ -9,7 +9,13 @@ Single Page App (SPA), in a way, contributes to how the application UI renders. 
 
 ## Impact of SPA Behaviour
 
-After enabling the SPA behaviour, when you navigate across pages, it only affects the content part, and the rendering of static areas, such as the header, leftnav, and footer remains unchanged, which delivers smoother page transitions.  
+After enabling the SPA behaviour, when you navigate across pages, it only affects the content part, and the rendering of static areas, such as the header, leftnav, and footer remains unchanged, which delivers smoother page transitions. 
+
+:::note
+
+With release 11.8.0, SPA behaviour will be enabled in the new applications by default. You need to enable it for the previously created applications.
+
+:::
 
 ## How it works
 
@@ -50,13 +56,13 @@ It is recommended to set the build mode as **Angular**. This allows you to use t
 
 [![](/learn/assets/spa-config-profile.png)](/learn/assets/spa-config-profile.png)
  
-1. Now deploy the app and see how the app renders with SPA behavior enabled.
+4. Now deploy the app and see how the app renders with SPA behavior enabled.
 
 
 ## Scenarios to Check
 
 After enabling the SPA behaviour, it is recommended to check a few of the scenarios to confirm successful implementation.
 
-- If the content in header, topnav, leftnav, and rightnav is dynamically rendered. For example, content is bound to an API variable.
-- If the content is changed dynamically through Partial.onReady event for the above partials and
+- If the content in header, topnav, leftnav, and rightnav is rendered dynamically. For example, content is bound to an API variable.
+- If the content is changed dynamically through `Partial.onReady` event for the partials and
 show/hide attributes of the components in the above partials depend on javascript expressions.
