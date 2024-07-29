@@ -184,10 +184,6 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | Tomcat | 9.0.87 |
 | Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.1 <br/> 7.1.0 |
 
-:::note
-Cordova-Android supports from Android 24 (Nougat). From Angular 16 Cordova-iOS supports from iOS 16.
-:::
-
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
 # Build Environment for Studio
