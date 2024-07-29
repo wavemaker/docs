@@ -21,17 +21,17 @@ To learn more, see [Angular Version 17 - what's in the release](https://blog.ang
 
 ## Potential Impact 
 
-Please note that WaveMaker Online projects will be automatically updated to the latest Angular version. While this generally improves performance, there's a possibility of affecting specific parts of your application. We recommend testing the following areas after the update:
+Please note that WaveMaker projects will be automatically updated to the latest Angular version. While this generally improves performance, there's a possibility of affecting specific parts of your application. We recommend testing the following areas after the update:
 
-**List widgets**: All widgets within a List.
-**Nested Lists**: Lists within Lists.
-**Form widgets**: All widgets within a Form.
-**Nested Forms**: Forms within Forms.
-**Action buttons**: Buttons in Tables, Forms, and Filters.
-**Navigation (Nav) widget**: Menu and navigation elements.
-**Carousel, Tabs, and Accordion**: Both static and dynamic versions.
-**Select and Search widgets**: Dropdown and search boxes.
-**Mobile-specific widgets**: Media-list and Navbar.
+- **List widgets**: All widgets within a List.
+- **Nested Lists**: Lists within Lists.
+- **Form widgets**: All widgets within a Form.
+- **Nested Forms**: Forms within Forms.
+- **Action buttons**: Buttons in Tables, Forms, and Filters.
+- **Navigation (Nav) widget**: Menu and navigation elements.
+- **Carousel, Tabs, and Accordion**: Both static and dynamic versions.
+- **Select and Search widgets**: Dropdown and search boxes.
+- **Mobile-specific widgets**: Media-list and Navbar.
 
 By thoroughly testing these components, you can ensure a smooth transition to Angular 17.
 
