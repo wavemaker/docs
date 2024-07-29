@@ -9,17 +9,29 @@ sidebar_label: "Run Patch"
 
 - When upgrading from 10.7.x to 11.x.x user needs to download the required content for the migration process. **When the user has already upgraded to 11.x.x WME Version, in that case, there is no need to download migration tar**.
 
-- To download migration tar which will be shared by the WaveMaker team, please run the following command.
+  - To download migration tar which will be shared by the WaveMaker team, please run the following command.
 
-```bash
-    wget <WME-Migration-Link>
-```
+  ```bash
+      wget <WME-Migration-Link>
+  ```
 
-- Extract wme_migrations to /usr/local/content/wme/wme-installer/< version>/resources folder, for extract the content run the following command
+  - Extract wme_migrations to /usr/local/content/wme/wme-installer/< version>/resources folder, for extract the content run the following command
 
-```bash
-    sudo tar xvf wme_migrations.tar -C /usr/local/content/wme/wme-installer/<version>/resources/
- ```
+  ```bash
+      sudo tar xvf wme_migrations.tar -C /usr/local/content/wme/wme-installer/<version>/resources/
+  ```
+
+- In order to upgrade WME from to 11.8.x version from previous versions, it is mandatory to [passivate Containers](https://docs.wavemaker.com/learn/on-premise/upgrade/passivate-containers) in StudioWorkspaceInstance and AppDeploymentInstance.
+
+  - Run the below mentioned script to check all the containers are passivated or not on StudioWorkspaceInstance and AppDeploymentInstance.
+
+  :::note
+  The mentioned script expected to run before the docker upgrade.
+  :::
+  
+  ```shell
+      bash /usr/local/content/wme/wme-installer/<version>/check_nonpassivate_ctnrs.sh
+  ```
 
 - Run the bash script for upgrading to the desired version.
 ```shell
