@@ -77,7 +77,7 @@ module.exports = {
           "lastVersion": 'current',
           "versions": {
             "current": {
-              "label": 'v11.7.5',
+              "label": 'v11.8.0',
               "path": '',
             },
             "v10.14": {
@@ -85,11 +85,37 @@ module.exports = {
               "path": 'v10.15',
             },
           },
+          "admonitions": {
+            "keywords": [
+                'info',
+                'success',
+                'danger',
+                'note',
+                'tip',
+                'warning',
+                'important',
+                'caution',
+                'impact',
+            ],
+        },
         },
         "blog": {
           "path": "../website/blog/",
           "blogSidebarTitle": 'All posts',
           "blogSidebarCount": 'ALL',
+          "admonitions": {
+            "keywords": [
+                'info',
+                'success',
+                'danger',
+                'note',
+                'tip',
+                'warning',
+                'important',
+                'caution',
+                'impact',
+            ],
+        },
         },
         "theme": {
           "customCss": "../website/static/css/custom.css"
