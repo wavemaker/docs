@@ -7,23 +7,23 @@ id: "artifacts-repository"
 **Artifact Repository** is a collection of artifacts or resources used across application development lifecycle in WaveMaker platform. It allows for easy exploration and discovery of Artifacts available to the developer network. These artifacts include:
 
 - **Prefabs**: Prefabs are a collection of one or more widgets that are bound to APIs or services.
-- **Project Shell**: Project Shell is an app with functionality that is common to multiple apps across the enterprise. This can be used as a starting point in app development.
+- **Project Shell**: Project Shell is an app with functionality that is common to multiple apps across the teams. This can be used as a starting point in app development.
 - **Template Bundles**: A template bundle is a collection of templates - a re-usable arrangement of one or more widgets in the page content that together capture the purpose of the page.
 - **Themes**: Themes are style elements which work at the widget or UI component level. Themes help provide a consistent look and feel to your application.
 
-Each of the above artifacts has a workspace to develop the artifact and then publish it for other developers across the enterprise to import/use them.
+Each of the above artifacts has a workspace to develop the artifact and then publish it for other developers across the team to import/use them.
 
 ## Artifact Publishing Mechanism
 
 There are three ways in which an Artifact can be published:
 
 1. **Publish to Project**: This will allow the artifact developer to send it to a specific project for testing purposes.
-2. **Publish to EDN** (only for enterprise version): To make the artifact available for the entire enterprise for all applications to use, it needs to be published to EDN. After publishing, EDN Admin or Product Owner approves the artifact for use within the enterprise.
-3. **Publish to Workspace** (only for non-enterprise version): Once tested and verified, it can be used for any project under development. This is done by publishing the artifact to artifact developer's workspace and made available for any project he/she is currently working on.
+2. **Publish to Team** (only for teams version): To make the artifact available for the entire team for all applications to use, it needs to be published to Team. After publishing, Team Admin or Product Owner approves the artifact for use within the team.
+3. **Publish to Workspace** (only for non-team version): Once tested and verified, it can be used for any project under development. This is done by publishing the artifact to artifact developer's workspace and made available for any project he/she is currently working on.
 
 Each of the Artifact has a slightly different publishing flow as described in the sections for [Prefab](#prefab-publishing), [Project Shell](#project-shell-publishing), [Template Bundle](#template-bundle-publishing) and [Themes](#theme-publishing).
 
-In the enterprise version of WaveMaker Publishing mechanism helps collaboration among enterprise users.  Find more from here.
+In the teams version of WaveMaker Publishing mechanism helps collaboration among team users.  Find more from here.
 
 Once published the artifacts can be viewed from the Artifacts dialog.
 
@@ -35,9 +35,9 @@ Once published the artifacts can be viewed from the Artifacts dialog.
 
 Prefab is developed from the Project Workspace, similar to any other app development, and then made available to other developers. [![](/learn/assets/prefab_publish-1.png)](/learn/assets/prefab_publish-1.png) Publishing states for a Prefab include:
 
-- **Publish to EDN** (only for enterprise version) – Approval by EDN Admin. Once approved, Prefab has to be explicitly be imported for use within an application.
-- **Publish to Workspace** (only for non-enterprise version) - Once published to workspace the Prefab will implicitly be available for use across all projects within the developer's workspace.
-- **Publish to Project** (both enterprise and non-enterprise versions)– This will result in the Prefab appearing in the specified project with a MOD  tag. This can be used for testing purposes before publishing the Prefab.
+- **Publish to Team** (only for team version) – Approval by Team Admin. Once approved, Prefab has to be explicitly be imported for use within an application.
+- **Publish to Workspace** (only for non-team version) - Once published to workspace the Prefab will implicitly be available for use across all projects within the developer's workspace.
+- **Publish to Project** (both team and non-team versions)– This will result in the Prefab appearing in the specified project with a MOD tag. This can be used for testing purposes before publishing the Prefab.
 
 For more information, see [Creating and Publishing Prefabs](/learn/app-development/custom-widgets/creating-prefabs/).
 
@@ -49,24 +49,24 @@ Project shell is created by the App Owner from the Studio workspace, by exportin
 
 ### Export Project As Shell
 
-Export Project As Shell behaves differently for the enterprise and non-enterprise versions:
+Export Project As Shell behaves differently for the team and non-team versions:
 
-- **Enterprise version**: Once the developer exports a project as Shell to EDN, they will be prompted to enter the publishing information, see [artifact features](#artifact-features) for more information. The EDN Admin has to [approve or reject](#artifact-states) the Shell as with any other Artifact. Once approved, developers can select the Shell when creating new projects.
+- **Team version**: Once the developer exports a project as Shell to Team, they will be prompted to enter the publishing information, see [artifact features](#artifact-features) for more information. The Team Admin has to [approve or reject](#artifact-states) the Shell as with any other Artifact. Once approved, developers can select the Shell when creating new projects.
 
-- **Non-enterprise version**: Export Project as Shell to Workspace will allow the developer to select the Shell when creating new projects within their workspace.
+- **Non-Team version**: Export Project as Shell to Workspace will allow the developer to select the Shell when creating new projects within their workspace.
 
 For more information, see [Creating and Publishing Project Shell](/learn/app-development/ui-design/project-shells/).
 
 ## Template Bundle Publishing
 
-Template Bundle can be created from the Project Workspace using from the Template Bundles tab. Publishing Template Bundles process is different for the enterprise and non-enterprise versions:
+Template Bundle can be created from the Project Workspace using from the Template Bundles tab. Publishing Template Bundles process is different for the team and non-team versions:
 
-- **Enterprise version**: Once developed Template Bundles can be Published to EDN. 
+- **Team version**: Once developed Template Bundles can be Published to Team. 
 
 [![](/learn/assets/Publish_template.png)](/learn/assets/Publish_template.png) 
 
 The developer will be prompted to enter the publishing information, , see [artifact features](#artifact-features) for more information. The EDN Admin has to [approve or reject](#artifact-states) the Shell as with any other Artifact. Once approved, the Template Bundle will appear in the Page Creation dialog for selection by the developers.
-- **Non-enterprise version**: The developer needs to Export the Template Bundle as ZIP and then IMPORT it to any app within their Dashboard. 
+- **Non-team version**: The developer needs to Export the Template Bundle as ZIP and then IMPORT it to any app within their Dashboard. 
 
 [![](/learn/assets/Publish_template_WS.png)](/learn/assets/Publish_template_WS.png)
 
@@ -76,25 +76,25 @@ To know more about creating and publishing Template Bundles, [click here](/learn
 
 Themes can be built by setting up WaveMaker Theme Repository and using Grunt commands.
 
-- **Enterprise Version**: Themes can be published using the Export -> Theme to EDN option: 
+- **Team Version**: Themes can be published using the Export -> Theme to Team option: 
 
 [![](/learn/assets/Theme_publish.png)](/learn/assets/Theme_publish.png)
 
-- **Non-enterprise Version**: There is no Theme publish option for non-enterprise version, the theme zip file generated needs to be imported from the Themes dialog.
+- **Non-team Version**: There is no Theme publish option for non-team version, the theme zip file generated needs to be imported from the Themes dialog.
 
 To know more about creating and publishing Themes, [click here](/learn/app-development/ui-design/themes/)
 
-# Artifact flow in Enterprise version
+# Artifact flow in Team version
 
-> (ONLY for Enterprise version)
+> (ONLY for Team version)
 
-The following sections are for Enterprise version of WaveMaker.
+The following sections are for Team version of WaveMaker.
 
 ---
 
 ## Artifact States
 
-When publishing to EDN Artifact goes through several stages: 
+When publishing to Team Artifact goes through several stages: 
 
 [![](/learn/assets/artifactPublishing.png)](/learn/assets/artifactPublishing.png)
 
@@ -163,56 +163,27 @@ Every time there is a change or modification in an Artifact, it needs to be Publ
 Artifact Management involves two aspects:
 
 - **Pre-development**: this involves defining the Categories, Custom Metadata and Import of Artifacts. These activities are accessed from Launchpad by Super Admin.
-- **Post-development**: this involves reviewing, approving/rejecting and export of Artifacts. These activities are accessed from EDN by Enterprise Admin.
+- **Post-development**: this involves reviewing, approving/rejecting and export of Artifacts. These activities are accessed from Team portal by Team Admin.
 
-**Launchpad** allows a super admin with the following functionality and permissions.
+**Team portal** allows a team admin with the following functionality and permissions.
 
-### Import Artifact
+### Export Artifact To Another WME
 
-Artifacts imported here will be available enterprise-wide. 
+1. From the approved artifacts list we can select the artifact and perform **Export To Another WME**.
+2. You can select the version that you wish to export.
+3. You will be prompted for a WME Host and the Access token.
+4. Upon export the seleted version will be exported to the provided WME.
 
-[![](/learn/assets/Artifacts_import.png)](/learn/assets/Artifacts_import.png)
+- In case of dependent prefabs export of the prefab is not allowed until and unless all its dependencies were exported to that target WME
 
-### Custom Metadata
+<iframe width="700px" height="400px" src="https://embed.app.guidde.com/playbooks/qBqAS8Hb1MtkxCy7wTfsgi" title="Exporting Artifacts to Another WME " frameborder="0" referrerpolicy="unsafe-url" allowfullscreen="true" allow="clipboard-write" sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"></iframe>
 
-This information is used to identify Artifacts based upon say the platform version and so on. Define the Key-value pairs and add. All Artifacts developed will get this data attached. 
+### Imported Artifact
 
-[![](/learn/assets/Artifacts_metadata.png)](/learn/assets/Artifacts_metadata.png)
+Artifacts exported from other WME will be available in the Marketplace and can be accessed by all the teams in the Environment
 
-### Categories
-
-These are used by the Artifact developer to aid in grouping the Artifacts. 
-
-[![](/learn/assets/Artifacts_categories.png)](/learn/assets/Artifacts_categories.png)
-
-
-
-**EDN** allows management of Artifacts by the Enterprise Admin. The Artifacts can be filtered by:
-
-- **Publisher** - There are two ways an Artifact is created:
-    - The default Artifacts as provided by the **System**, or
-    - Artifacts created and published by **Users**
-- **Types** - As mentioned earlier the different Artifact types include: Project Shell, Prefab, Template Bundle or Themes
-- **Categories** - As defined by the publisher at the time of developing and/or publishing the Artifacts.
-
-[![](/learn/assets/Artifacts_dashboard.png)](/learn/assets/Artifacts_dashboard.png) 
-
-### Export Artifact
-
-1. Artifacts can be selected for **Export**.
-2. You can set the Filter criterion and only the Artifacts meeting the filter requirements will be selected for Export.
-3. You will be prompted for a Package name, a default package name will be generated.
-4. The selected Artifacts will be bundled into a zip file with the given package name.
-
-[![](/learn/assets/Artifacts_export.png)](/learn/assets/Artifacts_export.png)
-
-### Approval Queue
-
-This will list all the Artifacts Pending Approvals and Rejected. 
-
-[![](/learn/assets/Artifacts_pending.png)](/learn/assets/Artifacts_pending.png) 
-
-Artifacts Pending Approval can be selected, reviewed, and approved or rejected. For both Approve and Reject, the reason can be entered under Remarks. This will be appended to the Version History and in case of rejection, the developer can act upon it accordingly. 
-
-[![](/learn/assets/Artifacts_action.png)](/learn/assets/Artifacts_action.png)
+- **Prefabs**: Prefabs will be listed in the studio artifacts section under marketplace.
+- **Cores**: Cores will be listed along with others in core selection section during the application creation.
+  
+The flow of taking updates was the same. Once a new version is imported the respective update flow will trigger.
 
