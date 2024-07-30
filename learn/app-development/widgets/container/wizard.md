@@ -37,6 +37,7 @@ There can be many **use case scenarios** where a wizard can be used. Examples of
     [![](/learn/assets/WZ_defaultstep.png)](/learn/assets/WZ_defaultstep.png)
 
 - **Behavior**: **Show** property of the wizard can be used to show/hide the wizard based on a variable’s value. Show feature is bindable and can be bound to a boolean field in a dataset.
+- **headernavigation**: `headernavigation` property can be added in the Markup script and set as **False** to disable the navigation through Wizard stepper header numbers.
 - **Events** in Wizards: 
 
 [![](/learn/assets/WZ_events.png)](/learn/assets/WZ_events.png) 

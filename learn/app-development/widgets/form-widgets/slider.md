@@ -33,7 +33,25 @@ id: "slider"
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. |
 | **Range** |
-| Range | The Range property can be used to set a range within the Slider Widget. |
+| Range | This property can be used to add a range within the Slider Widget. |
+| Datatype |  Select the input datatype. This property is to provide the datatype that can be number or dataset  |
+| Dataset | This is to provide the input data array |
+| Datafield | This property indicates the field (in DataSet) to represent selected value for the range in Slider widget. It should be mapped to an integer field in DataSet. |
+| Displayexpression | This is an advanced property that gives more control over what values are to be displayed for the range in the Slider widget. A Display Expression uses a JavaScript expression to format exactly what is shown. For readonly mode, If dataset is null then the caption can be bound directly to display expression. |
+| Tooltip expression | This property is used to get and customize the text displayed in the tooltip associated with the range value. |
+| Showmarkers | This property can be used to control whether a marker or indicator is displayed on the Slider widget. |
+| Showtooltip | Enable this property to show the tooltip for the applied range. |
+
+- Range
+- Datatype - number or dataset
+- Dataset - to provide a dataset
+- Datafield - about the data given in the dataset
+- Displayfield - 
+- Displayexpression - to add 
+- Tooltip expression - value on top of the thumb
+- Showmarkers - display the scale 
+- Showtooltip - whether to display tooltip or not
+
 
 **Shortcut key**: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
 
