@@ -8,6 +8,9 @@ id: "artifacts-repository"
 
 - **Prefabs**: Prefabs are a collection of one or more widgets that are bound to APIs or services.
 - **Project Shell**: Project Shell is an app with functionality that is common to multiple apps across the teams. This can be used as a starting point in app development.
+- **Core**: Core Acts as the base with all the common functionalities. This allows multiple teams to work collectively on top of it. Core is the improved 
+  version of shell with version update compatibility. 
+  development.
 - **Template Bundles**: A template bundle is a collection of templates - a re-usable arrangement of one or more widgets in the page content that together capture the purpose of the page.
 - **Themes**: Themes are style elements which work at the widget or UI component level. Themes help provide a consistent look and feel to your application.
 
@@ -21,15 +24,14 @@ There are three ways in which an Artifact can be published:
 2. **Publish to Team** (only for teams version): To make the artifact available for the entire team for all applications to use, it needs to be published to Team. After publishing, Team Admin or Product Owner approves the artifact for use within the team.
 3. **Publish to Workspace** (only for non-team version): Once tested and verified, it can be used for any project under development. This is done by publishing the artifact to artifact developer's workspace and made available for any project he/she is currently working on.
 
-Each of the Artifact has a slightly different publishing flow as described in the sections for [Prefab](#prefab-publishing), [Project Shell](#project-shell-publishing), [Template Bundle](#template-bundle-publishing) and [Themes](#theme-publishing).
+Each of the Artifact has a slightly different publishing flow as described in the sections for [Prefab](#prefab-publishing), [Project Shell]
+(#project-shell-publishing), [Core](#core-publishing), [Template Bundle](#template-bundle-publishing) and [Themes](#theme-publishing).
 
 In the teams version of WaveMaker Publishing mechanism helps collaboration among team users.  Find more from here.
 
-Once published the artifacts can be viewed from the Artifacts dialog.
+Once published the artifacts can be viewed from the Artifacts dialog inside project settings.
 
 [![](/learn/assets/artifactAccess.png)](/learn/assets/artifactAccess.png)
-
-[![](/learn/assets/Artifacts_list_ws.png)](/learn/assets/Artifacts_list_ws.png)
 
 ## Prefab Publishing
 
@@ -57,6 +59,18 @@ Export Project As Shell behaves differently for the team and non-team versions:
 
 For more information, see [Creating and Publishing Project Shell](/learn/app-development/ui-design/project-shells/).
 
+## Core Publishing
+
+Core is created by the App Owner from the Studio workspace, by publishing application to teams as core.
+
+For more information, see [Core and Implementation Projects](learn/app-development/core-implementation/core-and-implementation-projects/).
+
+:::note
+For the teams where core and implementation is enabled shells will no longer be supported, existing shells has to be manually published as cores
+:::
+
+[![](/learn/assets/Publish_core.png)](/learn/assets/Publish_core.png)
+
 ## Template Bundle Publishing
 
 Template Bundle can be created from the Project Workspace using from the Template Bundles tab. Publishing Template Bundles process is different for the team and non-team versions:
@@ -65,7 +79,8 @@ Template Bundle can be created from the Project Workspace using from the Templat
 
 [![](/learn/assets/Publish_template.png)](/learn/assets/Publish_template.png) 
 
-The developer will be prompted to enter the publishing information, , see [artifact features](#artifact-features) for more information. The EDN Admin has to [approve or reject](#artifact-states) the Shell as with any other Artifact. Once approved, the Template Bundle will appear in the Page Creation dialog for selection by the developers.
+The developer will be prompted to enter the publishing information, see [artifact features](#artifact-features) for more information. The Team Admin has to 
+[approve or reject](#artifact-states) the Shell as with any other Artifact. Once approved, the Template Bundle will appear in the Page Creation dialog for selection by the developers.
 - **Non-team version**: The developer needs to Export the Template Bundle as ZIP and then IMPORT it to any app within their Dashboard. 
 
 [![](/learn/assets/Publish_template_WS.png)](/learn/assets/Publish_template_WS.png)
@@ -156,7 +171,7 @@ Prefabs can be imported from this dialog. Other Artifacts are available for use
 
 Every time there is a change or modification in an Artifact, it needs to be Published again with a changed Version number. When a developer opens a project using that updated Artifact, Artifact updates are prompted. The developer can choose to update, revert (in case artifact is being downgraded) or ignore. Alternatively, notifications will be pushed for the developer within Studio to take an action on artifact upgrades.
 
-[![](/learn/assets/Artifacts_list.png)](/learn/assets/Artifacts_list.png)
+[![](/learn/assets/Artifacts_updates.png)](/learn/assets/Artifacts_updates.png)
 
 ## Artifact Management
 

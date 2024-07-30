@@ -204,7 +204,7 @@ Add a `wm-container tag` with the name **treeViewContainer** in the Markup, as f
 
 1. Save and **Publish** the Prefab.
 2. You can set the version for the Prefab and Publish it. For more information about publishing Prefabs, see [Publish Prefab](/learn/app-development/custom-widgets/creating-prefabs/#publish-prefab).
-3. The Prefab will be available for use across the Projects. You can see the entry in the [Artefacts](/learn/assets/artefacts_access.png) list and in the Widget Toolbox of any Project within your workspace.
+3. The Prefab will be available for use across the Projects. You can see the entry in the [Artefacts](/learn/assets/artifactsAccess.png) list and in the Widget Toolbox of any Project within your workspace.
 
 ## Using the Prefab in Project
 
