@@ -170,7 +170,13 @@ Artifact Management involves two aspects:
 
 **Team portal** allows a team admin with the following functionality and permissions.
 
-### Export Artifact To Another WME
+### Export Artifact To Another Environment
+
+Artifacts can be published and shared between two WaveMaker Enterprise (WME) environments which enhances collaboration.
+
+:::note
+Sharing Artifacts is supported for only WME users.
+:::
 
 1. From the approved artifacts list we can select the artifact and perform **Export To Another WME**.
 2. You can select the version that you wish to export.
