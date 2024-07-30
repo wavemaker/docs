@@ -22,7 +22,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.7.5** <p style={{color:"red"}}>*latest*</p> | - [v11.7.5](/learn/wavemaker-release-notes/v11-7-5) |WaveMaker release 11.7.5, includes essential bug fixes. | 08 Jul 2024 |
+|**v11.8.0** <p style={{color:"red"}}>*latest*</p> | - [v11.8.0](/learn/wavemaker-release-notes/v11-8-0) |WaveMaker release 11.8.0, includes includes significant upgrades like Angular 17 and Expo 50 along with Artifact sharing between WaveMaker Enterprise (WME) setups and  Single Page Application (SPA) behavior as new features. In React Native,  new CSS style classes in Slider widget, setting range in Slider widget, Secure Sockets Layer (SSL) certificate pinning, navigation in Wizard widget, and Wheel date picker are some of the ehancements along with many bug fixes. | 30 Jul 2024 |
+|**v11.7.5** | - [v11.7.5](/learn/wavemaker-release-notes/v11-7-5) |WaveMaker release 11.7.5, includes essential bug fixes. | 08 Jul 2024 |
 |**v11.7.4** | - [v11.7.4](/learn/wavemaker-release-notes/v11-7-4) | In WaveMaker 11.7.4 we have extended support for application deployment with Java 17 and 21. Included improvements like the Themes section in Project Configuration, iframe widget message, and some bug fixes. | 01 Jul 2024 |
 |**v11.7.3** | - [v11.7.3](/learn/wavemaker-release-notes/v11-7-3) | This release includes studio performance improvements, and some bug fixes. | 17 Jun 2024 |
 |**v11.7.2** | - [v11.7.2](/learn/wavemaker-release-notes/v11-7-2) | This release includes performance improvements, artifact version management, notifications response in Project Hub to improve perforamance of Studio designer and project opening, and some bug fixes. | 03 Jun 2024 |
@@ -71,7 +72,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [v11.7.4](/learn/wavemaker-release-notes/v11-7-4)
+Last updated: [v11.8.0](/learn/wavemaker-release-notes/v11-8-0)
 
 ---
 
@@ -80,13 +81,13 @@ Last updated: [v11.7.4](/learn/wavemaker-release-notes/v11-7-4)
 | Description | JS Library | Version |
 | --- | --- | --- |
 | JS Binding | jquery |  3.7.1 |
-|  | jquery-ui* | 1.13.2 |
-| MVC Framework | angular | 16.2.12  |
+|  | jquery-ui* | <td className="versiontdbgcolor">1.13.2 -> 1.13.3 </td> |
+| MVC Framework | Angular | <td className="versiontdbgcolor">16.2.12 -> 17.3.11 </td> |
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 7.8.5 |
 |  | nvd3 | 1.8.11 |
-| Built-in functions | lodash | 4.17.21|
+| Built-in functions | lodash-es | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
 Optimized jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
@@ -95,12 +96,12 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.36 -> 5.3.37 </td>|
-| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.12 -> 5.8.13 </td> |
+|  | Spring Framework | 5.3.37 |
+| Security framework | Spring Security |  5.8.13  |
 | Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL | 2.7.3 |
-| JSON library | Jackson | 2.17.1 |
+| JSON library | Jackson |  <td className="versiontdbgcolor">2.17.1 -> 2.17.2 </td> |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
@@ -141,20 +142,20 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |---|---|
 |Java |11 |
 |Node|18.16.1|
-|Maven| 3.9.6 |
+|Maven| <td className="versiontdbgcolor"> 3.9.6 -> 3.9.8 </td> |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 
+
 ### Angular Web and Mobile 11
 
-|Description| Version|
+|Description|	Version|
 |---|---|
 |Java | 11 |
 |Node| 18.16.1|
-|Maven| 3.9.6 |
-|npm | 9.5.1 |
+|Maven| <td className="versiontdbgcolor"> 3.9.6 -> 3.9.8 </td> |
+|npm | 9.5.1|
 |Ant| 1.10.11|
-|Git| 2.42| 
 
 For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
