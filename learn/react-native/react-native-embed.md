@@ -273,7 +273,7 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-8.4-all.zip
     tools:layout_editor_absoluteY="90dp" />
 ```
 
-- In MainActivity.java use Intent to load the Wavemaker Application
+- In MainActivity.java use Intent to load the WaveMaker Application
 
 ```
 package com.example.reactnativeemebed;
