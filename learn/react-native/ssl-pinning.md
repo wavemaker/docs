@@ -19,14 +19,17 @@ In SSL pinning, the hash of the SSL public key is included in the mobile app. Wh
 
 ![Enable SSL Pinning](/learn/assets/react-native-ssl-pinning/enable-ssl-pinning.png)
 
-3. Identify the domains that your app will access.
-4. Include the hashes of the public keys for all the identified domains.
+3. Provide domain names that your app needs to access. This ensures that the required domains are added for SSL Pinning.
+
+## Adding SSL Hash Key
+
+1. Include the hashes of the public keys for all the identified domains.
 
 ![Enable SSL Pinning](/learn/assets/react-native-ssl-pinning/ssl-pinning-add-domains.png)
 
-5. Save and Build.
+2. Save and Build.
 
-## How to get Hash of SSL Public Key from URL
+### How to get Hash of SSL Public Key from URL
 
 1. Install [OpenSSL](https://www.openssl.org/source/).
 2. Execute the following command. Replace **DOMAIN_NAME** with your target domain.
@@ -52,6 +55,16 @@ Following is the command for `www.wavemaker.com` as reference.
 In situations where the SSL public key expires and a new SSL certificate is deployed on the server, the SSL pinning mechanism can block all app-to-server calls since the new certificate doesn't match the one stored in the app. Consequently, the app becomes non-functional. To mitigate this issue, it is recommended to have multiple backup keys available. 
 
 For more detailed information on this topic, please refer to [this document](https://github.com/datatheorem/TrustKit/blob/master/docs/getting-started.md#always-provide-at-least-one-backup-pin) authored by the Trust Kit library, which is internally utilized by WaveMaker.
+
+## Auto-updating the SSL Hash Key
+
+You can fetch and update the SSL public key hash value automatically. With this feature, you do not have to regenerate the APK or IPA files every time the SSL public key is changed. 
+
+Navigate to the `wm_rn_config.json` file in the generated project zip file and add `loadOnStartup` property. Set `loadOnStartup` property as `true` to enable this feature.
+
+:::important
+After adding the domain names, the SSL public key hash should not be empty. Add a random value in the SSL public key hash field which helps in recording the domain in the `wm_rn_config.json` file.
+:::
 
 ## Additional Resources
 

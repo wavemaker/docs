@@ -75,6 +75,7 @@ NOTE: In Safari browsers, by default, Tab highlights only text fields. To enable
 | **Behavior** |
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| iswheelpicker | This property can be added in Markup script and set as **True** to set the date, month, and year using a scrollable wheel. This can be set as **False** to use the traditional Modal calendar.|
 | Type | This property allows you to set the type of the calendar widget:
 
 - agenda, or
