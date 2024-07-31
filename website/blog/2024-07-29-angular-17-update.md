@@ -1,6 +1,6 @@
 ---
 title: "Say Hello to Angular 17"
-author: Swetha Kundaram
+author: "Naresh Ravulapalli"
 ---
 ---
 
