@@ -841,6 +841,7 @@
 			"type": "category",
 			"label": "UI Development",
 			"items": [
+				"how-tos/single-page-app",
 				"how-tos/passing-parameters-pages",
 				"how-tos/passing-parameters-partial-page",
 				"how-tos/script-access",

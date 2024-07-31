@@ -32,6 +32,13 @@ id: "select-locale-usage"
 
 7. You can also set the date and time formats specific to a required locale. This will ensure that the date and time pickers are properly aligned and set to the preferred format.
 
+:::note
+With release 11.8.0, you can now update the date format for Internationalization (i18n) service through JavaScript as well. Use the below code to update, `App.getDependency(“i18nService”).dateFormat = “dd-MM-yyyy”;`.
+
+[![](/learn/assets/date-format-i18n.png)](/learn/assets/date-format-i18n.png)
+
+:::
+
 :::tip
 You can also select the currency symbol from anywhere in the app. This symbol applies to all the currency widgets across the app.
 :::

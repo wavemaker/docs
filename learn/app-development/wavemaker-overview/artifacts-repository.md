@@ -13,6 +13,9 @@ id: "artifacts-repository"
   development.
 - **Template Bundles**: A template bundle is a collection of templates - a re-usable arrangement of one or more widgets in the page content that together capture the purpose of the page.
 - **Themes**: Themes are style elements which work at the widget or UI component level. Themes help provide a consistent look and feel to your application.
+- **Core Project**: These projects act as the base with all the common functionalities. This allows multiple teams to work collectively on top of it. To know more, see [Core and IMPL Projects](/learn/app-development/core-implementation/core-and-implementation-projects/).
+- **Implementation (IMPL) PRoject**: These projects are created as child projects of the Core project to add more features or customizations. Changes made to the Core project can be pulled into the IMPL projects periodically, making reusability seamless and boosting team collaboration. To know more, see [Core and IMPL Projects](/learn/app-development/core-implementation/core-and-implementation-projects/).
+
 
 Each of the above artifacts has a workspace to develop the artifact and then publish it for other developers across the team to import/use them.
 
@@ -182,7 +185,13 @@ Artifact Management involves two aspects:
 
 **Team portal** allows a team admin with the following functionality and permissions.
 
-### Export Artifact To Another WME
+### Export Artifact To Another Environment
+
+Artifacts can be published and shared between two WaveMaker Enterprise (WME) environments which enhances collaboration.
+
+:::note
+Sharing Artifacts is supported for only WME users.
+:::
 
 1. From the approved artifacts list we can select the artifact and perform **Export To Another WME**.
 2. You can select the version that you wish to export.
