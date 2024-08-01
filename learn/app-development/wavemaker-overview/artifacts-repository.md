@@ -14,7 +14,7 @@ id: "artifacts-repository"
 - **Template Bundles**: A template bundle is a collection of templates - a re-usable arrangement of one or more widgets in the page content that together capture the purpose of the page.
 - **Themes**: Themes are style elements which work at the widget or UI component level. Themes help provide a consistent look and feel to your application.
 - **Core Project**: These projects act as the base with all the common functionalities. This allows multiple teams to work collectively on top of it. To know more, see [Core and IMPL Projects](/learn/app-development/core-implementation/core-and-implementation-projects/).
-- **Implementation (IMPL) PRoject**: These projects are created as child projects of the Core project to add more features or customizations. Changes made to the Core project can be pulled into the IMPL projects periodically, making reusability seamless and boosting team collaboration. To know more, see [Core and IMPL Projects](/learn/app-development/core-implementation/core-and-implementation-projects/).
+- **Implementation (IMPL) Project**: These projects are created as child projects of the Core project to add more features or customizations. Changes made to the Core project can be pulled into the IMPL projects periodically, making reusability seamless and boosting team collaboration. To know more, see [Core and IMPL Projects](/learn/app-development/core-implementation/core-and-implementation-projects/).
 
 
 Each of the above artifacts has a workspace to develop the artifact and then publish it for other developers across the team to import/use them.
@@ -64,12 +64,12 @@ For more information, see [Creating and Publishing Project Shell](/learn/app-dev
 
 ## Core Publishing
 
-Core is created by the App Owner from the Studio workspace, by publishing application to teams as core.
+A Core project is created by the application owner in the studio workspace by publishing an application to teams as Core. This becomes the base for many IMPL projects that can be created by team members.
 
 For more information, see [Core and Implementation Projects](learn/app-development/core-implementation/core-and-implementation-projects/).
 
 :::note
-For the teams where core and implementation is enabled shells will no longer be supported, existing shells has to be manually published as cores
+For teams with the App Customization option enabled, which allows the creation of Core and IMPL projects, shells will no longer be supported. Existing shells must be manually published as Core projects.
 :::
 
 [![](/learn/assets/Publish_core.png)](/learn/assets/Publish_core.png)
@@ -178,36 +178,44 @@ Every time there is a change or modification in an Artifact, it needs to be Publ
 
 ## Artifact Management
 
-Artifact Management involves two aspects:
+You can create and share artifacts on your device and with your team members. This feature is now enhanced by allowing you to share artifacts across different environments.
 
-- **Pre-development**: this involves defining the Categories, Custom Metadata and Import of Artifacts. These activities are accessed from Launchpad by Super Admin.
-- **Post-development**: this involves reviewing, approving/rejecting and export of Artifacts. These activities are accessed from Team portal by Team Admin.
+With this enhancement, you can create it in your environment, and after exporting it, you can access it artifacts in your [Enterprise Marketplace](/learn/app-development/custom-widgets/enterprise-marketplace/). This process helps in improving collaboration across environments.
 
-**Team portal** allows a team admin with the following functionality and permissions.
+Artifact Management starts from creating an artifact to accessing it in a different environment. This process can be categorized into two stages.
+
+- **Pre-development**: This involves defining the Categories, Custom Metadata, and importing Artifacts. These activities are accessed from Launchpad by the [Super admin](/learn/on-premise/configure/config-users-auth-providers/#make-user-as-a-super-admin).
+
+- **Post-development**: This involves reviewing, approving/rejecting, and exporting Artifacts. These activities are accessed from the Team Portal by the Team admin.
+
+**Team Portal** allows a team admin with the following functionality and permissions.
 
 ### Export Artifact To Another Environment
 
-Artifacts can be published and shared between two WaveMaker Enterprise (WME) environments which enhances collaboration.
+You can export the approved artifacts and publish its Core project in the Team Portal. It can be shared with any environment by providing the WaveMaker Enterprise (WME) domain address and its access token. This ensures secure collaboration between environments.
 
 :::note
 Sharing Artifacts is supported for only WME users.
 :::
 
-1. From the approved artifacts list we can select the artifact and perform **Export To Another WME**.
-2. You can select the version that you wish to export.
-3. You will be prompted for a WME Host and the Access token.
-4. Upon export the seleted version will be exported to the provided WME.
+1. Go to **Menu** icon > **Team Portal** to find the artifacts.
+2. In **Prefab Artifacts**, go to the **Approved Artifacts** where we can select the artifact to share.
+3. Click the **Export** icon to export the artifact to another environment. Select the version that you wish to export.
+4. Add the WME host address. You can get the Access token from the prompted page.
+5. Click Export which exports the selected version to the provided WME environment.
 
-- In case of dependent prefabs export of the prefab is not allowed until and unless all its dependencies were exported to that target WME
+:::note
+In case of dependent prefabs, you can export a prefab only after its dependencies are exported previously to the target WME environment.
+:::
 
 <iframe width="700px" height="400px" src="https://embed.app.guidde.com/playbooks/qBqAS8Hb1MtkxCy7wTfsgi" title="Exporting Artifacts to Another WME " frameborder="0" referrerpolicy="unsafe-url" allowfullscreen="true" allow="clipboard-write" sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"></iframe>
 
 ### Imported Artifact
 
-Artifacts exported from other WME will be available in the Marketplace and can be accessed by all the teams in the Environment
+Artifacts exported from other WME environment will be available in the [Enterprise Marketplace](/learn/app-development/custom-widgets/enterprise-marketplace/) and can be accessed by all the teams in the environment.
 
-- **Prefabs**: Prefabs will be listed in the studio artifacts section under marketplace.
-- **Cores**: Cores will be listed along with others in core selection section during the application creation.
+- **Prefabs**: These are listed in the studio artifacts section under Marketplace.
+- **Core projects**: Core projects are listed along with other Core projects in the Core Selection section during the application creation.
   
-The flow of taking updates was the same. Once a new version is imported the respective update flow will trigger.
+Once a new version is imported the update flow is triggered. To understand the steps to update, see [Fetching Core Upgrades](/learn/app-development/core-implementation/core-and-implementation-projects/#fetching-core-upgrades-in-impl-project).
 
