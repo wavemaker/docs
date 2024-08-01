@@ -31,20 +31,11 @@ In this case, we use two user roles to implement PR Flow.
 [Developer](#developer) enables the PR Flow option to allow merging changes to the main branch. This option is disabled by default, which pushes changes to the remote branch.
 
 1. Go to [Team Portal](/learn/teams/overview/).
-
-![Team Portal](/learn/assets/pr-flow/team-portal.png)
-
 2. Navigate to the [Code Repository](/learn/teams/code-repository) page.
-
-![Code Repository](/learn/assets/pr-flow/code-repository.png)
-
 3. Click **Settings** option to open the settings dialog for the configured Code Repository.
+4. Enable **Pull Request** and provide a value for **Pull Request Developer Branch Pattern** for creating a developer branch. For example, the default branch pattern is `dev-{EMAIL_PREFIX}-{TENANT_DOMAIN_NAME}/{REMOTE_BRANCH_NAME}`. Click Save.
 
-![Code Repository Settings](/learn/assets/pr-flow/code-repository-settings.png)
-
-4. Enable **Pull Request** and provide a value for **Pull Request Developer Branch Pattern** for creating a developer branch. For example, the default branch pattern is `dev-{EMAIL_PREFIX}-{TENANT_DOMAIN_NAME}/{REMOTE_BRANCH_NAME}`
-
-![Enable PR Flow](/learn/assets/pr-flow/enable-pr-flow.png)
+<iframe width="700px" height="400px" src="https://embed.app.guidde.com/playbooks/cqesYJtnXYAp2s777EG7ye" title="Guidde embed video" frameborder="0" allowfullscreen ></iframe>
 
 Assuming that the [developer](#developer) makes changes in the project within WaveMaker studio after enabling PR Flow; a pull request is created to push those changes. 
 
@@ -53,28 +44,13 @@ Assuming that the [developer](#developer) makes changes in the project within Wa
 [Developer](#developer) creates a pull request for local changes made in the project by pushing them to the development branch.
 
 1. Go to the project with changes and click **Push Changes** from the VCS drop-down menu. This creates a temporary developer branch with project changes.
-
-![Push Changes VCS](/learn/assets/pr-flow/push-changes-vcs.png)
-
 2. Add Commit Message and click **Ok** to confirm.
-
-![Push Changes Dialog](/learn/assets/pr-flow/push-dialog-ok.png)
-
 3. After a successful push action **Pull Request Submission** dialog will be opened, click **Proceed**.
-
-![Pull Request Submission](/learn/assets/pr-flow/pull-request-submission.png)
-
 4. [Developer](#developer) gets redirected to the **Create Pull Request** page of the selected Code Repository. In our case, we can see in Bitbucket where we first confirm the **Source** branch details and click **Continue**.
-
-![Source Branch](/learn/assets/pr-flow/source-branch-continue.png)
-
 5. Click **Create** to submit the Pull Request.
-
-![Create to Submit](/learn/assets/pr-flow/create-pr.png)
-
 6. Go to WaveMaker studio > VCS drop-down. Click the **Commit History** option to view **Pending Pull Request Changes** and **Merged Changes** in the Commit History dialog.
 
-![Commit History](/learn/assets/pr-flow/commit-history.png)
+<iframe width="700px" height="400px" src="https://embed.app.guidde.com/playbooks/46bgTuPzn9rr8q1Wfp7nYL" title="Guidde embed video" frameborder="0" allowfullscreen ></iframe>
 
 After successful pull request creation, [Reviewer](#reviewer) verifies the changes committed in the pull request and provides the necessary feedback.
 
@@ -83,12 +59,9 @@ After successful pull request creation, [Reviewer](#reviewer) verifies the chang
 [Developer](#developer) addresses the feedback from the [reviewer](#reviewer) by making fixes in the studio and pushing the changes to the development branch.
 
 1. Go to WaveMaker > VCS drop-down > **View Changes**.
-
-![View Changes](/learn/assets/pr-flow/view-changes-vcs.png)
-
 2. In the **View Project Changes** dialog, you can compare the **Workspace changes** with the **Last Pushed Changes**; this shows the changes that are not pushed to the development branch. You can also compare the **workspace changes** to the **master** branch; this comparison with Remote Tracking Branch (RTB) displays all the changes done so far.
- 
-![View Project Changes](/learn/assets/pr-flow/view-project-changes.png)
+
+<iframe width="700px" height="400px" src="https://embed.app.guidde.com/playbooks/hKZAmxrb2CsMkiqmDkVDLM" title="Guidde embed video" frameborder="0" allowfullscreen ></iframe>
 
 :::note
 
