@@ -27,7 +27,7 @@ In the enterprise version of WaveMaker Publishing mechanism helps collaboration
 
 Once published the artifacts can be viewed from the Artifacts dialog.
 
-[![](/learn/assets/artefacts_access.png)](/learn/assets/artefacts_access.png)
+[![](/learn/assets/artifactAccess.png)](/learn/assets/artifactAccess.png)
 
 [![](/learn/assets/Artifacts_list_ws.png)](/learn/assets/Artifacts_list_ws.png)
 
