@@ -93,7 +93,7 @@ Once you have created a Prefab, it needs to be published in order for the apps t
 4. You can use prefabs in any of your projects by simply dragging and dropping them from the  **Prefabs** section to your page like any other widget. Once, embedded into the page, all the functionality of the prefab becomes a part of that page.
 5. You can find the list of available Prefabs from the [Studio Artefacts](/learn/assets/artefacts.png) page.
 
-![artefacts](/learn/assets/artifactsAccess.png)
+![artefacts](/learn/assets/artefacts_access.png)
 
 :::note
 
