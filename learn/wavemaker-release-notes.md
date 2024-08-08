@@ -148,8 +148,8 @@ Last updated: [WaveMaker 11.8.0](/learn/wavemaker-release-notes/v11-8-0)
 | Description | JS Library | Version |
 | --- | --- | --- |
 | JS Binding | jquery |  3.7.1 |
-|  | jquery-ui* | <td className="versiontdbgcolor">1.13.2 -> 1.13.3 </td> |
-| MVC Framework | Angular | <td className="versiontdbgcolor">16.2.12 -> 17.3.11 </td> |
+|  | jquery-ui* | 1.13.3 |
+| MVC Framework | Angular | 17.3.11 |
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 7.8.5 |
@@ -168,7 +168,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL | 2.7.3 |
-| JSON library | Jackson |  <td className="versiontdbgcolor">2.17.1 -> 2.17.2 </td> |
+| JSON library | Jackson |  2.17.2 |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
@@ -183,7 +183,12 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
 | Tomcat | 9.0.87 |
-| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 12.0.1 <br/> 7.1.0 |
+| Cordova (mobile apps) <br/> <td className="versiontdbgcolor"> Android </td> <br/> iOS |12.0.0 <br/> <td className="versiontdbgcolor"> 13.0.0 </td> <br/> 7.1.0 |
+
+:::note
+- Cordova-iOS supports from iOS 16.
+- Cordova-Android supports from iOS Android 24 (Nougat).
+:::
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
@@ -204,7 +209,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |---|---|
 |Java |11 |
 |Node|18.16.1|
-|Maven| <td className="versiontdbgcolor"> 3.9.6 -> 3.9.8 </td> |
+|Maven| 3.9.8 |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 
@@ -215,7 +220,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |---|---|
 |Java | 11 |
 |Node| 18.16.1|
-|Maven| <td className="versiontdbgcolor"> 3.9.6 -> 3.9.8 </td> |
+|Maven| 3.9.8 |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 
