@@ -5,38 +5,63 @@ sidebar_label: "App Loader"
 ---
 ---
 
-:::note
-WaveMaker 11.3 brings some new design capabilities to include in your React Native mobile app. 
-:::
+An application loader is a component that helps in the loading and execution of an application. It typically handles tasks such as loading necessary resources, managing dependencies, and preparing the application to run smoothly. There are two types of Application Loaders that WaveMaker supports.
 
-Using Application Loader, you can show page loading animation in your React Native app. Application Loaders render at the time of loading application data, i.e., when the app triggers an API call. There are two types of Application Loaders that WaveMaker supports. 
-
-1. [Skeleton Loader](#skeleton-loader)
-2. [Progress Loader](#progress-loader)
+[Skeleton Loader](#skeleton-loader)
+[Progress Loader](#progress-loader)
 
 ## Skeleton Loader
 
-Skeleton Loader is an animated placeholder that automatically adapts to the page layout and content. When API call is made, Skeleton Loader creates an animation of the page structure, such as blocks, images, text, and more. This enables seamless transition on the page and data, preparing users get idea of the page format when data loads.
+A skeleton is an animated placeholder that mimics the structure of the content that will eventually load when an long running operations such as, API call. It creates an animation of the page structure, such as blocks, images, text, and other UI elements. This enables a seamless transition between the page and data, preparing users to get an idea of the page format in advance.
 
-Skeleton Loader uses Widget's size and styles to match with the theme. Furthermore, you can customize Skeleton Loader styles and colors through code.
+**Use Case**
 
-Skeleton Loader is enabled by default when creating an application. To change the loader type, go to the **Project Settings** dialog and choose a different type of **Application Loader**, as shown in the image below.
+When scrolling through any social media platform, you might notice gray bars in place of text, or blank squares where images will load. As the content is fetched, these placeholders are smoothly replaced with the actual content.
+
+**Supported Widgets**
+
+Below is the list of widgets that are supported in the Skeleton Loader.
+
+- ButtonGroup
+- Icon
+- Label
+- Picture
+- Tab
+- Form
+- Radioset
+- Carousel
+- List
+- Card
+- Anchor
+- Button
+- Custom
+- Container
+
+### Configuration of Skeleton Loader
+
+Skeleton Loader configuration includes enabling it in the application and customizing the style, color, display time, and animation.
+
+#### Enabling Skeleton Loader
+
+Skeleton Loader can be enabled when creating an application. To apply the Skeleton Loader, go to the **Project Settings** dialog and choose **Skeleton Loader** as the Application Loader.
 
 ![Application-Loader](/learn/assets/appLoaders.gif)
 
-### Adding Skeleton Loader to a Widget
+:::note
 
-You can apply Skeleton Loader for only a Specific widget instead of applying it to the whole page. For this, use the **`showskeleton`** property.
+Skeleton Loader gets applied across the application only if a service variable is available for the application and the Spinner Context is also set as Page.
 
-![showskeleton](/learn/assets/showSkeleton.gif)
+:::
 
-### Customize Skeleton Loader using Code
+#### Customizing Skeleton Loader
 
-In the following documentation, find code examples explaining multiple scenarios that you can use for Skeleton Loader.
+Skeleton Loader uses the widget's size and style to match the theme. Furthermore, you can customize the display time, style, and color through code.
 
-#### Set Time for Skeleton Loader 
+Below, you can find code examples to use during Skeleton Loader customization.
 
-In the following example, apply child Widgets of `widgetName` to show the Skeleton Loader and hide it in 5 seconds.
+**Set Time for Skeleton Loader** 
+
+In the following example, apply child Widgets of `widgetName` to show the Skeleton Loader and hide it in 5 seconds. - need clarity
 
 ```js
     Page.widgets.submit.showskeleton = true; 
@@ -45,7 +70,7 @@ In the following example, apply child Widgets of `widgetName` to show the Skelet
     }, 5000)
 ```
 
-#### Change Skeleton Colors
+**Change Skeleton Colors**
 
 You can control Skeleton Loader colors using styles. There are three style properties as following: 
 
@@ -55,7 +80,7 @@ You can control Skeleton Loader colors using styles. There are three style prope
 
 ![Skeleton-Loader-Gradient](/learn/assets/skeleton.png)
 
-#### Apply Style to Page 
+**Apply Style to Page** 
 
 In the following example, you can apply style on the page.
 
@@ -73,9 +98,9 @@ In the following example, you can apply style on the page.
 }
 ```
 
-#### Apply Style to Widget 
+**Apply Style to Widget** 
 
-- Using the following example, apply style for a specific Widget on the Page.
+Using the following example, apply style for a specific Widget on the Page.
 
 ```css
 .app-label .app-skeleton{
@@ -92,9 +117,9 @@ In the following example, you can apply style on the page.
 }
 ```
 
-#### Apply Style to Class Name
+**Apply Style to Class Name**
 
-- You can use a class name of the widget for a specific widget if needed.
+You can use a class name of the widget for a specific widget if needed.
 
 ```css
 className: headerLabel
@@ -112,6 +137,51 @@ className: headerLabel
 }
 ```
 
+**Skeleton Loader in Container Type Widgets**
+
+Container type widgets are recently getting supported by Skeleton Loader. This category includes the below widgets,
+
+- Grid Layout
+- Flex Layout
+- Accordion
+- Tabs
+- Wizard
+- Panel
+- Container
+- Tile
+
+The widgets in this category have child widgets on which the Skeleton Loader is not applied by default. To apply it on the child widgets within the Container type widget, set **`showskeletonchildren`** property as `true` in Markup script.
+
+**Customization using Lottie Animation**
+
+In Page, Prefab and Partial, the user can override the default skeleton appearance using Lottie animation. The **`animationResource`** property can be used in Markup script of Page, Prefab and Partial to provide the location of the Json file as Lottie animation resource file. The location of json file given as an resource, renders the animation through application's Lottie widget.
+
+:::note
+It is required to use Lottie widget in the application to implement the above.
+:::
+
+### Debugging Skeleton Loader
+
+Skeleton Loader can be applied on different levels, application, page, prefab, partial, and widget. You can always check the correctness of Skeleton loader at different levels using the **`showskeleton`** property. For example, you can debug using the below code at page level and widget level.
+
+:::note
+By default when the Skeleton Loader is selected, it applies across application.
+:::
+
+**Page Level**
+
+To customize Skeleton Loader at Page level, **`showskeleton`** property is set to true. Add the following code in the `onready` method of a page. This applies it to all the components available in the Page.
+
+```js
+Page.Widgets.page_content1.showskeleton = true
+```
+
+**Widget Level**
+
+You can apply Skeleton Loader for only a Specific widget instead of applying it to the whole page. For this, use the **`showskeleton`** property.
+
+![showskeleton](/learn/assets/showSkeleton.gif)
+
 ## Progress Loader
 
 Use Progress Loaders such as spinners while the app data is being fetched from an API. WaveMaker provides four types of Progress Loaders to choose. The styling for the progress loader is generated from the default theme or the applied theme.
@@ -128,9 +198,5 @@ In WaveMaker service calls, to fetch data, these are abstracted as [Variables](/
 When the **Variable Spinner** context is selected as a Page.
 
 ![variable spinner context](/learn/assets/variable-spinner-context.png)
-
-For Skeleton, all Widgets on the page show a Skelton Loader.
-For Progress, the selected animation will show on top of a while overlay.
-
 
 
