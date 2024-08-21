@@ -45,7 +45,7 @@ export function DocSearchModal(_ref) {
         apiKey = _ref.apiKey,
         indexName = _ref.indexName,
         _ref$placeholder = _ref.placeholder,
-        placeholder = _ref$placeholder === void 0 ? 'Search docs' : _ref$placeholder,
+        placeholder = _ref$placeholder === void 0 ? 'Search Docs' : _ref$placeholder,
         searchParameters = _ref.searchParameters,
         _ref$onClose = _ref.onClose,
         onClose = _ref$onClose === void 0 ? noop : _ref$onClose,

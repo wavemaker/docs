@@ -20,7 +20,8 @@ export var ScreenState = React.memo(function (_ref) {
   var props = _objectWithoutProperties(_ref, _excluded);
   return /*#__PURE__*/props.isOpen  &&  props.state.collections.length == 0 ? inlineSearchActions.map(function (action) {
     return React.createElement("div", {
-      className: "DocSearch-inlineSearch-action"
+      className: "DocSearch-inlineSearch-action",
+      key: action.href, 
     }, /*#__PURE__*/React.createElement("a", {
       className: "DocSearch-inlineSearch-action-link",
       href: action.href

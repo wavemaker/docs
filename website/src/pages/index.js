@@ -10,6 +10,7 @@ import Layout from '@theme/Layout';
 import SearchBar from '../theme/SearchBar';
 import { useColorMode } from '@docusaurus/theme-common';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import { MobileAppDevIcon, WebAppDevIcon, PrefabIcon, AdminTeamPortalIcon, EnterpriseIcon} from '../../static/js/svg-assets';
 
 export default class Index extends React.Component {
     constructor(props) {
@@ -45,10 +46,10 @@ export default class Index extends React.Component {
         if (recentSearch) {
             Reflect.ownKeys(recentSearch).forEach((search, index) => {
                 const itemName = search.length>22?search.slice(0,20)+'...':search; 
-                output.push(<a key={"" + index} href={recentSearch[search]} className='DocSearch-inlineSearch-action-link'><span className='DocSearch-inlineSearch-action'>{itemName}</span></a>)
+                output.push(<a key={"" + index} href={recentSearch[search]} className='RecentSearch-link'><span className='RecentSearch-action'>{itemName}</span></a>)
             })
             return (<div className='container'>
-                <span>Recently Visited: </span>
+                <span className='RecentSearch-text'>Recently Visited: </span>
                 {output}
             </div>);
         }
@@ -56,19 +57,18 @@ export default class Index extends React.Component {
     }
 
     getExtensions() {
-        const { colorMode } = useColorMode();
         let extensionComponents = [];
         let extensions = [
-            { href: '/learn/react-native/react-native-overview/', lightIcon: '/learn/img/themeBuilder.svg', darkIcon: '/learn/img/themeBuilderDark.svg', label: 'Mobile App Development' },
-            { href: '/learn/app-development/services/mock-services/mock-imported-apis/', lightIcon: '/learn/img/apiMocking.svg', darkIcon: '/learn/img/apiMockingDark.svg', label: 'Mock API Responses' },
-            { href: '/learn/app-development/custom-widgets/prefab-with-partials/#creating-partials', lightIcon: '/learn/img/devTool.svg', darkIcon: '/learn/img/devToolDark.svg', label: 'Prefabs Design & Develop' },
-            { href: '/learn/teams/overview', lightIcon: '/learn/img/teamPortal.svg', darkIcon: '/learn/img/teamPortalDark.svg', label: 'Administration Teams Portal' },
-            { href: '/learn/on-premise/welcome/', lightIcon: '/learn/img/connectors.svg', darkIcon: '/learn/img/connectorsDark.svg', label: 'Enterprise Install & Setup' },
+            { href: '/learn/app-development/ui-design/designing-app/', icon:<WebAppDevIcon className='icon'/>, label: 'Web App Development' },
+            { href: '/learn/react-native/react-native-overview/', icon:<MobileAppDevIcon className='icon'/>, label: 'Mobile App Development' },
+            { href: '/learn/app-development/custom-widgets/prefab-with-partials/#creating-partials', icon:<PrefabIcon className='icon'/>, label: 'Prefabs Design & Develop' },
+            { href: '/learn/on-premise/welcome/', icon:<EnterpriseIcon className='icon'/>, label: 'Enterprise Install & Setup' },
+            { href: '/learn/teams/overview', icon:<AdminTeamPortalIcon className='icon'/>, label: 'Administration Teams Portal' },
         ]
         extensions.forEach((extension) => {
             extensionComponents.push(<div className='col padding-horiz--sm' key={extensions.indexOf(extension)}>
                 <a className='extension row' href={extension.href}>
-                    <span className="img-circle"><img src={colorMode != "dark" ? extension.lightIcon : extension.darkIcon} className='icon'></img></span>
+                    <span className="img-circle">{extension.icon}</span>
                     <p className='caption'>{extension.label}</p>
                     <span className='link'>Explore <img src="/learn/img/combined-shape-black.svg" /></span>
                 </a>
