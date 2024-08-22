@@ -66,17 +66,16 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
   const onOpen = useCallback(() => {
     importDocSearchModalIfNeeded().then(() => { });
     searchContainer.current = document.createElement('div');
-    document.querySelector('.DocSearch-Input').focus()
     document.body.classList.add("search-active")
     document.body.classList.add("DocSearch--active")
     setIsOpen(true);
   }, [importDocSearchModalIfNeeded, setIsOpen]);
   const onClose = useCallback(() => {
+    document.body.classList.remove("search-active")
+    document.body.classList.remove("DocSearch--active")
     document.querySelector('.DocSearch-Input').blur()
     document.querySelector('.DocSearch-Input').value = '';
     setIsOpen(false);
-    document.body.classList.remove("DocSearch--active")
-    document.body.classList.remove("search-active")
     if (document.querySelector('.DocSearch-Reset')) 
       document.querySelector('.DocSearch-Reset').setAttribute('hidden','');
     if (props.elementId == "home-search" && document.querySelector('.DocSearch-Dropdown-Container')) {
@@ -84,6 +83,13 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
     }
     searchContainer.current?.remove();
   }, [setIsOpen]);
+
+  React.useEffect(()=>{
+    if(isOpen || props.autoFocus){
+      document.querySelector('.DocSearch-Input').focus()
+    }
+  },[isOpen]);
+
   const onInput = useCallback(
     (event) => {
       setInitialQuery(event.key);
