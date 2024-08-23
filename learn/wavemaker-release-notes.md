@@ -140,7 +140,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.8.1](/learn/wavemaker-release-notes/v11-8-1)
+Last updated: [WaveMaker 11.8.2](/learn/wavemaker-release-notes/v11-8-2)
 
 ---
 
@@ -164,17 +164,19 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | 5.3.37 |
-| Security framework | Spring Security |  5.8.13  |
+|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.37 -> 5.3.39 </td> |
+| Security framework | Spring Security |  <td className="versiontdbgcolor"> 5.8.13 -> 5.8.14 </td> |
 | Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL | 2.7.3 |
-| JSON library | Jackson |  2.17.2 |
+| JSON library | Jackson |  2.17.2  |
 | Logging framework | SLF4j | 1.7.36 |
 | Logging Implementation | Log4j2 | 2.18.0|
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
 | Servlet Framework |  | 4.0.4 |
 | Database Connection Pooling | HikariCP | 5.1.0 |
+|  | Commons Lang3 | <td className="versiontdbgcolor"> 3.15.0 -> 3.16.0 </td> |
+|  | Guava | <td className="versiontdbgcolor"> 33.2.1-jre -> 33.3.0-jre </td> |
 
 ### Runtime Environment
 
@@ -184,7 +186,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
 | Tomcat | 9.0.87 |
-| Cordova (mobile apps) <br/> <td className="versiontdbgcolor"> Android </td> <br/> iOS |12.0.0 <br/> <td className="versiontdbgcolor"> 13.0.0 </td> <br/> 7.1.0 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> 7.1.0 |
 
 :::note
 - Cordova-iOS supports from iOS 16.
