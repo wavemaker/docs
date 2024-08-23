@@ -72,11 +72,17 @@ In the following example, the Skeleton Loader is applied to the widgets availabl
 
 #### Change Skeleton Colors
 
-You can customise the color, width, and other properties of Skeleton Loader . There are three style properties to change colors at different levels.
+You can customise the color, width, and other properties of Skeleton Loader . These changes can be applied at three levels:
 
-1. skeleton
-2. skeleton-gradient
-3. skeleton-gradient-foreground
+- page level
+- Widget level
+- Class level
+
+During Skeleton customization, skeleton loader is categorized into three classes where,
+
+1. skeleton: It is the outer container of the skeleton component.
+2. skeleton-gradient-foreground: It is to provide the shadow effect to the Skeleton.
+3. skeleton-gradient : It is the center part that shows the shimmer or moving effect in the Skeleton loader.
 
 ![Skeleton-Loader-Gradient](/learn/assets/skeleton.png)
 
@@ -198,10 +204,18 @@ Skeleton Loader can be enabled when creating an application. To apply the Skelet
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/91V6g5TKcWZD77JPv9aAYR"   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
-### Variable Settings
+### Configuring Progress Loader
 
-In WaveMaker service calls, to fetch data, these are abstracted as [Variables](/learn/app-development/variables/), when these calls are made the [App Loaders](#application-loader) will show.
+In WaveMaker service calls, to fetch data, these are abstracted as [Variables](/learn/app-development/variables/). When these calls are made the [App Loaders](#application-loader) are displayed.
 
-When the **Variable Spinner** context is selected as a Page.
+To set a progress loader for an API call, the Progress loader is bound to a variable available in the page and the Spinner Context is set at Page level.
 
 ![variable spinner context](/learn/assets/variable-spinner-context.png)
+
+:::note
+
+When the Owner in the Variables Page is set as Application, the variable bound to the progress loader can be reused across the application. And if the Owner is set as Page, the variable is page restricted and needs to be created and bound to the progress loader to be used in different page.
+
+:::
+
+
