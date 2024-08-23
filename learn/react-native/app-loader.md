@@ -74,15 +74,15 @@ In the following example, the Skeleton Loader is applied to the widgets availabl
 
 You can customise the color, width, and other properties of Skeleton Loader . These changes can be applied at three levels:
 
-- page level
+- Page level
 - Widget level
 - Class level
 
-During Skeleton customization, skeleton loader is categorized into three classes where,
+During Skeleton customization, Skeleton Loader is categorized into three classes where,
 
-1. skeleton: It is the outer container of the skeleton component.
+1. skeleton: It is the outer container of the Skeleton component.
 2. skeleton-gradient-foreground: It is to provide the shadow effect to the Skeleton.
-3. skeleton-gradient : It is the center part that shows the shimmer or moving effect in the Skeleton loader.
+3. skeleton-gradient : It is the center part that shows the shimmer or moving effect in the Skeleton Loader.
 
 ![Skeleton-Loader-Gradient](/learn/assets/skeleton.png)
 
@@ -168,7 +168,7 @@ It is required to use Lottie widget in the application to implement the above.
 
 ### Debugging Skeleton Loader
 
-Skeleton Loader can be applied on different levels, application, page, prefab, partial, and widget. You can always check the correctness of Skeleton loader at different levels using the **`showskeleton`** property. For example, you can debug using the below code at page level and widget level.
+Skeleton Loader can be applied on different levels, application, page, prefab, partial, and widget. You can always check the correctness of Skeleton Loader at different levels using the **`showskeleton`** property. For example, you can debug using the below code at page level and widget level.
 
 :::note
 By default when the Skeleton Loader is selected, it applies across application.
@@ -190,7 +190,7 @@ You can apply Skeleton Loader for only a Specific widget instead of applying it 
 
 ## Progress Loader
 
-Use Progress Loaders such as spinners while the app data is being fetched from an API. WaveMaker provides four types of Progress Loaders to choose. The styling for the progress loader is generated from the default theme or the applied theme.
+Use Progress Loaders such as spinners while the app data is being fetched from an API. WaveMaker provides four types of Progress Loaders to choose. The styling for the Progress Loader is generated from the default theme or the applied theme.
 
 This will show the selected spinner animation, while the data is loading, which creates an overlay on top of the page and the colors of the spinner change based on the theme.
 
@@ -208,13 +208,13 @@ Skeleton Loader can be enabled when creating an application. To apply the Skelet
 
 In WaveMaker service calls, to fetch data, these are abstracted as [Variables](/learn/app-development/variables/). When these calls are made the [App Loaders](#application-loader) are displayed.
 
-To set a progress loader for an API call, the Progress loader is bound to a variable available in the page and the Spinner Context is set at Page level.
+To set a Progress Loader for an API call, the Progress Loader is bound to a variable available in the page and the Spinner Context is set at Page level.
 
 ![variable spinner context](/learn/assets/variable-spinner-context.png)
 
 :::note
 
-When the Owner in the Variables Page is set as Application, the variable bound to the progress loader can be reused across the application. And if the Owner is set as Page, the variable is page restricted and needs to be created and bound to the progress loader to be used in different page.
+When the Owner in the Variables Page is set as Application, the variable bound to the Progress Loader can be reused across the application. And if the Owner is set as Page, the variable is page restricted and needs to be created and bound to the Progress Loader to be used in the different page.
 
 :::
 
