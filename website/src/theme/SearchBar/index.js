@@ -78,9 +78,6 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
     setIsOpen(false);
     if (document.querySelector('.DocSearch-Reset')) 
       document.querySelector('.DocSearch-Reset').setAttribute('hidden','');
-    if (props.elementId == "home-search" && document.querySelector('.DocSearch-Dropdown-Container')) {
-      document.querySelector('.DocSearch-Dropdown-Container').innerHTML = ''
-    }
     searchContainer.current?.remove();
   }, [setIsOpen]);
 
