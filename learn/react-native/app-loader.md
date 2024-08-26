@@ -49,7 +49,7 @@ Skeleton Loader can be enabled when creating an application. To apply the Skelet
 
 :::note
 
-Skeleton Loader gets applied across the application only if a service variable is available for the application and the Spinner Context is also set as Page.
+Skeleton Loader gets applied across the application only if a [service variable](/learn/app-development/variables/web-service) is available for the application and the [Spinner Context](/learn/app-development/variables/web-service/#properties) is also set as Page.
 
 :::
 
@@ -74,19 +74,21 @@ In the following example, the Skeleton Loader is applied to the widgets availabl
 
 You can customise the color, width, and other properties of Skeleton Loader . These changes can be applied at three levels:
 
-- Page level
-- Widget level
-- Class level
+- [Page level](#apply-style-to-page)
+- [Widget level](#apply-style-to-widget)
+- [Class level](#apply-style-to-class)
 
-During Skeleton customization, Skeleton Loader is categorized into three classes where,
+##### Skeleton Loader Classes
 
-1. skeleton: It is the outer container of the Skeleton component.
-2. skeleton-gradient-foreground: It is to provide the shadow effect to the Skeleton.
-3. skeleton-gradient : It is the center part that shows the shimmer or moving effect in the Skeleton Loader.
+During Skeleton customization, Skeleton Loader is categorized into three classes that can help you to create the Shimmer effect in the Skeleton Loader.
+
+1. `skeleton`: It is the outer container of the Skeleton component.
+2. `skeleton-gradient-foreground`: It is to provide the shadow effect to the Skeleton.
+3. `skeleton-gradient`: It is the center part that shows the shimmer or moving effect in the Skeleton Loader.
 
 ![Skeleton-Loader-Gradient](/learn/assets/skeleton.png)
 
-**Apply Style to Page** 
+##### Apply Style to Page
 
 In the following example, you can customise background color and other properties in the page.
 
@@ -104,7 +106,7 @@ In the following example, you can customise background color and other propertie
 }
 ```
 
-**Apply Style to Widget** 
+##### Apply Style to Widget 
 
 Using the following example, you can customise background color, border width of Skeleton and other properties for a specific widget in the page.
 
@@ -123,7 +125,7 @@ Using the following example, you can customise background color, border width of
 }
 ```
 
-**Apply Style to Class**
+##### Apply Style to Class
 
 Using the following example, you can customise background color, border width of Skeleton, and other properties for a specific class inside a widget in the page.
 
@@ -145,7 +147,7 @@ className: headerLabel
 
 #### Skeleton Loader in Container Type Widgets
 
-Container type widgets are recently getting supported by Skeleton Loader. This category includes the below widgets,
+Now, Skeleton Loader can be applied to Container type widgets. This would include, Skeleton loader on the parent and additional show/hide customization on child widgets. The list of Container type widgets in studio are,
 
 - Grid Layout
 - Flex Layout
@@ -158,9 +160,19 @@ Container type widgets are recently getting supported by Skeleton Loader. This c
 
 The widgets in this category have child widgets on which the Skeleton Loader is not applied by default. To apply it on the child widgets within the Container type widget, set **`showskeletonchildren`** property as `true` in Markup script.
 
+For example, add the following code in the Container widget,
+
+```markup
+<wm-container name="container1" showskeletonchildren="false">
+                <wm-button class="btn-default" caption="Button" type="button" name="button1"></wm-button>
+            </wm-container>
+```
+
+![Skeleton Loader in Container](/learn/assets/skeleton-loader-container.png)
+
 #### Customization using Lottie Animation
 
-In Page, Prefab and Partial, the user can override the default skeleton appearance using Lottie animation. The **`animationResource`** property can be used in Markup script of Page, Prefab and Partial to provide the location of the Json file as Lottie animation resource file. The location of json file given as an resource, renders the animation through application's Lottie widget.
+In Page, Prefab and Partial, the user can override the default skeleton appearance using [Lottie Animation](/learn/app-development/widgets/basic/lottie/). The **`animationResource`** property can be used in Markup script of Page, Prefab and Partial to provide the location of the Json file as Lottie Animation resource file. The location of json file given as an resource, renders the animation through application's Lottie widget.
 
 :::note
 It is required to use Lottie widget in the application to implement the above.
@@ -217,5 +229,3 @@ To set a Progress Loader for an API call, the Progress Loader is bound to a vari
 When the Owner in the Variables Page is set as Application, the variable bound to the Progress Loader can be reused across the application. And if the Owner is set as Page, the variable is page restricted and needs to be created and bound to the Progress Loader to be used in the different page.
 
 :::
-
-
