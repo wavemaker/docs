@@ -18,7 +18,7 @@ export var ScreenState = React.memo(function (_ref) {
     "label": "Themes"
   }];
   var props = _objectWithoutProperties(_ref, _excluded);
-  return /*#__PURE__*/props.isOpen  &&  props.state.collections.length == 0 ? inlineSearchActions.map(function (action) {
+  return /*#__PURE__*/props.isOpen  &&  (props.state.collections.length == 0 ? inlineSearchActions.map(function (action) {
     return React.createElement("div", {
       className: "DocSearch-inlineSearch-action",
       key: action.href, 
@@ -28,7 +28,7 @@ export var ScreenState = React.memo(function (_ref) {
     },/*#__PURE__*/React.createElement("p", {
       className: "DocSearch-inlineSearch-action-text"
     }, action.label)));
-  }): React.createElement(ResultsScreen, props);
+  }): React.createElement(ResultsScreen, props));
 }, function areEqual(_prevProps, nextProps) {
   return nextProps.state.status === 'loading' || nextProps.state.status === 'stalled';
 });
