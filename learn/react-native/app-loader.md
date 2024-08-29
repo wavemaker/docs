@@ -172,15 +172,45 @@ For example, add the following code in the Container widget,
 
 #### Customization using Lottie Animation
 
-In Page, Prefab and Partial, the user can override the default skeleton appearance using [Lottie Animation](/learn/app-development/widgets/basic/lottie/). The **`animationResource`** property can be used in Markup script of Page, Prefab and Partial to provide the location of the Json file as Lottie Animation resource file. The location of json file given as an resource, renders the animation through application's Lottie widget.
+In Page, Prefab and [Partial](/learn/how-tos/create-prefab-with-partials/#partial-for-mobile), the user can override the default skeleton appearance using [Lottie Animation](/learn/app-development/widgets/basic/lottie/). This helps in adding the custom Skeleton layout without showing the actual components used in a Page, Prefab, and Partial.
+
+The **`animationResource`** property can be used in Markup script to provide the location of the Json file as Lottie Animation resource file. The location of json file given as an [resource](/learn/app-development/services/3rd-party-libraries/#including-resource-files), renders the animation through application's Lottie widget. It can be added at three levels
+
+- [Page](#custom-animation-at-page-level)
+- [Prefab](#custom-animation-at-prefab-level)
+- [Partial](#custom-animation-at-partial-level)
 
 :::note
 It is required to use Lottie widget in the application to implement the above.
 :::
 
+##### Custom Animation at Page Level
+
+To apply the custom animation to the Page content, use the below code in the Markup section of the specific Page.
+
+```markup
+ <wm-page-content columnwidth="12" name="page_content1" animationresource="resources/images/anim_1.json">
+```
+
+##### Custom Animation at Prefab Level
+
+The custom animation can be added to the components available in a specific Prefab by adding the below Markup code within the Prefab.
+
+```markup
+<wm-prefab prefabname="StepperList" name="StepperList1" animationresource="resources/images/anim_1.json"></wm-prefab>
+```
+
+##### Custom Animation at Partial Level
+
+The custom animation can be applied to the components available in a Partial. Use the below code within a Partial,
+
+```markup
+<wm-container name="container1" content="SkeletonPartial" animationresource="resources/images/anim_2.json"></wm-container>
+```
+
 ### Debugging Skeleton Loader
 
-Skeleton Loader can be applied on different levels, application, page, prefab, partial, and widget. You can always check the correctness of Skeleton Loader at different levels using the **`showskeleton`** property. For example, you can debug using the below code at page level and widget level.
+Skeleton Loader can be applied on different levels, Application, Page, Prefab, Partial, and Widget. You can always check the correctness of Skeleton Loader at different levels using the **`showskeleton`** property. For example, you can debug using the below code at page level and widget level.
 
 :::note
 By default when the Skeleton Loader is selected, it applies across application.
