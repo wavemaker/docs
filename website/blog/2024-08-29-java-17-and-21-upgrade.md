@@ -1,6 +1,6 @@
 ---
 title: "Java Upgrade: 17 or 21?"
-author: "Venugopal Jidigam"
+author: "Krishna Rao Chintu"
 ---
 ---
 
@@ -10,15 +10,13 @@ As Java 11 is becoming obsolete by October 2024, needing to upgrade Java version
 
 We recently added support for Java Runtime, **[v11.7.4](/learn/wavemaker-release-notes/v11-7-4)**, released on July 1, 2024, allowing generated applications to run on either Java 17 or Java 21, depending on customer needs. However, this support is limited to runtime and does not extend to compile-time. This means that the generated applications must still be compiled with Java 11, and cannot be compiled with any higher version yet.
 
-During our planning process, we consulted several customers to understand their preferences. Surprisingly, there was no consensus—each customer has unique requirements.
-
 <!-- truncate -->
 
 ## Customer Feedback
 
-During our planning process and to better understand our customers' needs, we conducted a survey. Surprisingly, there was no consensus—each customer has unique requirements; preferences regarding Java version upgrades. 
+During our planning process and to better understand our customers' needs, we conducted a survey. As expected, there was no consensus—each customer has unique requirements; preferences regarding Java version upgrades. 
 
-Some customers expressed a preference to stay on Java 17 because their code connect library used in WaveMaker applications, is not yet compatible with Java 21. However, recognizing the need to upgrade to Java 21 eventually. 
+Some customers expressed a preference to stay on Java 17 because their internal libraries used in WaveMaker applications are not yet compatible with Java 21. However, they recognize the need to upgrade to Java 21 eventually.
 
 Some customers were eager to adopt the latest version, to be ahead of the curve and plans to shift directly to Java 21.
 
@@ -31,10 +29,10 @@ In response to these varying needs, we've decided to offer our customers complet
 ## What this means for you
 
 :::impact
-Starting with the 11.9 release (October 21, 2024), please ensure that you update your build system and deployment environment so they are compatible with Java 17 for both compiling and running applications, which will be the default starting with the 11.9 release. If you prefer to use Java 21, you can easily make the switch.
+Starting with the 11.9 release (as planned on October 21, 2024), please ensure that you update your build system and deployment environment so they are compatible with Java 17 for both compiling and running applications, which will be the default starting with the 11.9 release. If you prefer to use Java 21, you can easily make the switch.
 :::
 
-By providing this flexibility, we're committed to supporting our customers' evolving needs and ensuring the continued success of our platform.
+By providing this flexibility, we're committed to supporting our customers' evolving needs and ensuring the continued success of our platform. For more information or to address any concerns, please reach out to our [support team](mailto:support@wavemaker.com).
 
 
 
