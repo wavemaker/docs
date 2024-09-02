@@ -4,7 +4,7 @@ author: "Krishna Rao Chintu"
 ---
 ---
 
-As Java 11 is becoming obsolete by October 2024, needing to upgrade Java version in our platform and in the generated applications.
+As Java 11 Long Term Support (LTS) is reaching its end of life in October 2024, it's necessary to upgrade the Java version used by our platform and generated applications. To ensure continued support, we need to adopt the next LTS versions, Java 17 and Java 21.
 
 ## Recent Changes
 
