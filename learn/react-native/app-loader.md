@@ -106,6 +106,8 @@ In the following example, you can customise background color and other propertie
 }
 ```
 
+![Page Level Skeleton Loader](/learn/assets/page-level-skeleton-loader.png)
+
 ##### Apply Style to Widget 
 
 Using the following example, you can customise background color, border width of Skeleton and other properties for a specific widget in the page.
@@ -124,6 +126,8 @@ Using the following example, you can customise background color, border width of
     background-color: #292753;
 }
 ```
+
+![Widget Level Skeleton Loader](/learn/assets/widget-level-skeleton-loader.png)
 
 ##### Apply Style to Class
 
@@ -144,6 +148,8 @@ className: headerLabel
     background-color: #292753;
 }
 ```
+
+![Class Level Skeleton Loader](/learn/assets/class-level-skeleton-loader.png)
 
 #### Skeleton Loader in Container Type Widgets
 
@@ -170,43 +176,6 @@ For example, add the following code in the Container widget,
 
 ![Skeleton Loader in Container](/learn/assets/skeleton-loader-container.png)
 
-#### Customization using Lottie Animation
-
-In Page, Prefab and [Partial](/learn/how-tos/create-prefab-with-partials/#partial-for-mobile), the user can override the default skeleton appearance using [Lottie Animation](/learn/app-development/widgets/basic/lottie/). This helps in adding the custom Skeleton layout without showing the actual components used in a Page, Prefab, and Partial.
-
-The **`animationResource`** property can be used in Markup script to provide the location of the Json file as Lottie Animation resource file. The location of json file given as an [resource](/learn/app-development/services/3rd-party-libraries/#including-resource-files), renders the animation through application's Lottie widget. It can be added at three levels
-
-- [Page](#custom-animation-at-page-level)
-- [Prefab](#custom-animation-at-prefab-level)
-- [Partial](#custom-animation-at-partial-level)
-
-:::note
-It is required to use Lottie widget in the application to implement the above.
-:::
-
-##### Custom Animation at Page Level
-
-To apply the custom animation to the Page content, use the below code in the Markup section of the specific Page.
-
-```markup
- <wm-page-content columnwidth="12" name="page_content1" animationresource="resources/images/anim_1.json">
-```
-
-##### Custom Animation at Prefab Level
-
-The custom animation can be added to the components available in a specific Prefab by adding the below Markup code within the Prefab.
-
-```markup
-<wm-prefab prefabname="StepperList" name="StepperList1" animationresource="resources/images/anim_1.json"></wm-prefab>
-```
-
-##### Custom Animation at Partial Level
-
-The custom animation can be applied to the components available in a Partial. Use the below code within a Partial,
-
-```markup
-<wm-container name="container1" content="SkeletonPartial" animationresource="resources/images/anim_2.json"></wm-container>
-```
 
 ### Debugging Skeleton Loader
 
@@ -229,6 +198,69 @@ Page.Widgets.page_content1.showskeleton = true
 You can apply Skeleton Loader for only a Specific widget instead of applying it to the whole page. For this, use the **`showskeleton`** property.
 
 ![showskeleton](/learn/assets/showSkeleton.gif)
+
+## Customization using Lottie Animation
+
+In Page, Prefab and [Partial](/learn/how-tos/create-prefab-with-partials/#partial-for-mobile), the user can override the default skeleton appearance using [Lottie Animation](/learn/app-development/widgets/basic/lottie/). This helps in adding the custom Skeleton layout without showing the actual components used in a Page, Prefab, and Partial.
+
+The **`animationResource`** property can be used in Markup script to provide the location of the Json file as Lottie Animation resource file. The location of json file given as an [resource](/learn/app-development/services/3rd-party-libraries/#including-resource-files), renders the animation through application's Lottie widget. It can be added at three levels
+
+- [Page](#custom-animation-at-page-level)
+- [Prefab](#custom-animation-at-prefab-level)
+- [Partial](#custom-animation-at-partial-level)
+
+:::note
+It is required to use Lottie widget in the application to implement the above.
+:::
+
+### Custom Animation at Page Level
+
+To apply the custom animation to the Page content, use the below code in the Markup section of the specific Page.
+
+```markup
+ <wm-page-content columnwidth="12" name="page_content1" animationresource="resources/images/anim_1.json">
+```
+
+**Before Customization:**
+
+![Page Before Lottie Animation](/learn/assets/page-before-lottie-animation.png)
+
+**After Customization:**
+
+![Page After Lottie Animation](/learn/assets/page-after-lottie-animation.png)
+
+
+### Custom Animation at Prefab Level
+
+The custom animation can be added to the components available in a specific Prefab by adding the below Markup code within the Prefab.
+
+```markup
+<wm-prefab prefabname="StepperList" name="StepperList1" animationresource="resources/images/anim_1.json"></wm-prefab>
+```
+
+**Before Customization:**
+
+![Prefab Before Lottie Animation](/learn/assets/prefab-before-lottie-animation.png)
+
+**After Customization:**
+
+![Prefab After Lottie Animation](/learn/assets/prefab-after-lottie-animation.png)
+
+### Custom Animation at Partial Level
+
+The custom animation can be applied to the components available in a Partial. Use the below code within a Partial,
+
+```markup
+<wm-container name="container1" content="SkeletonPartial" animationresource="resources/images/anim_2.json"></wm-container>
+```
+
+**Before Customization:**
+
+![Partial Before Lottie Animation](/learn/assets/partial-before-lottie-animation.png)
+
+**After Customization:**
+
+![Partial After Lottie Animation](/learn/assets/partial-after-lottie-animation.png)
 
 ## Progress Loader
 
@@ -259,3 +291,4 @@ To set a Progress Loader for an API call, the Progress Loader is bound to a vari
 When the Owner in the Variables Page is set as Application, the variable bound to the Progress Loader can be reused across the application. And if the Owner is set as Page, the variable is page restricted and needs to be created and bound to the Progress Loader to be used in the different page.
 
 :::
+
