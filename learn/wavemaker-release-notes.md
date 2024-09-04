@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.8.2](/learn/wavemaker-release-notes/v11-8-2) <p style={{color:"red"}}>*latest*</p> |  WaveMaker release 11.8.2 is a bug fix release which includes the enhancements in FileUpload widget, API Orchestration, and few bug fixes. This release also includes new CSS classes for Chart widget and other React Native fixes related to the Show property, Currency widget, Ripple effect, and Wizard widget. |26 August 2024 |
+|[WaveMaker 11.8.3](/learn/wavemaker-release-notes/v11-8-3) <p style={{color:"red"}}>*latest*</p> |  WaveMaker 11.8.3 will be released on September 9th, featuring enhancements to reduce application loading time and the `gotoStep` function in the Wizard widget, along with several bug fixes. This release also introduces a new CSS class in the Accordion widget, accessibility labels for widgets, and various React Native bug fixes. |09 September 2024. |
+|[WaveMaker 11.8.2](/learn/wavemaker-release-notes/v11-8-2) |  WaveMaker release 11.8.2 is a bug fix release which includes the enhancements in FileUpload widget, API Orchestration, and few bug fixes. This release also includes new CSS classes for Chart widget and other React Native fixes related to the Show property, Currency widget, Ripple effect, and Wizard widget. |26 August 2024 |
 |[WaveMaker 11.8.1](/learn/wavemaker-release-notes/v11-8-1) |  WaveMaker 11.8.1 is majorly a bug fix release which includes the issues with vulnerability and other User Interface (UI) issues. This release also has a new CSS class for Lottie Player and a few React Native and Cordova bug fixes. |12 August 2024 |
 |[WaveMaker 11.8.0](/learn/wavemaker-release-notes/v11-8-0) |  WaveMaker 11.8.0 includes significant upgrades like Angular 17 and Expo 50 along with Artifact sharing between WaveMaker Enterprise (WME) setups and  Single Page Application (SPA) behaviour as new features. In React Native,  new CSS style classes in Slider widget, setting range in the Slider widget, Secure Sockets Layer (SSL) certificate pinning, navigation in the Wizard widget, and Wheel date picker are some of the enhancements along with many bug fixes. |29 July 2024 |
 |[WaveMaker 11.7.5](/learn/wavemaker-release-notes/v11-7-5) |  WaveMaker 11.7.5 includes essential bug fixes. |08 July 2024 |
@@ -164,8 +165,8 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.37 -> 5.3.39 </td> |
-| Security framework | Spring Security |  <td className="versiontdbgcolor"> 5.8.13 -> 5.8.14 </td> |
+|  | Spring Framework | 5.3.39 |
+| Security framework | Spring Security | 5.8.14 |
 | Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL | 2.7.3 |
@@ -175,8 +176,9 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
 | Servlet Framework |  | 4.0.4 |
 | Database Connection Pooling | HikariCP | 5.1.0 |
-|  | Commons Lang3 | <td className="versiontdbgcolor"> 3.15.0 -> 3.16.0 </td> |
-|  | Guava | <td className="versiontdbgcolor"> 33.2.1-jre -> 33.3.0-jre </td> |
+|  | Commons Lang3 | <td className="versiontdbgcolor"> 3.16.0 -> 3.17.0 </td> |
+|  | Guava | 33.3.0-jre |
+|  | Postgresql Driver  | <td className="versiontdbgcolor"> 42.7.3 -> 42.7.4 </td> |
 
 ### Runtime Environment
 
