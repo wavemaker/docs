@@ -1,0 +1,31 @@
+.details {
+  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
+  margin: 0 0 var(--ifm-spacing-vertical);
+  background-color: var(--wm-details-background);
+  border-color: transparent;
+  border-radius: 8px;
+}
+summary {
+  display: flex; /* Align icon and text */
+  justify-content: space-between; /* Space between text and icon */
+  cursor: pointer; /* Pointer cursor on hover */
+  align-items: center;
+}
+
+summary::before {
+  display: none;
+}
+summary::after {
+  content: "+"; /* Default icon */
+  color: var(--wm-details-icon-color); /* Icon color */
+  font-weight: bold;
+  font-size: 1.5rem; /* Icon size */
+  transition: transform 0.3s ease; /* Smooth icon rotation */
+}
+
+/* Rotate icon when details is open */
+details[open] summary::after {
+    content: "-"; /* Icon when open */
+    transform: rotate(180deg); /* Rotate icon */
+}
+
