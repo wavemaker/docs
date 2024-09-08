@@ -1404,7 +1404,6 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
 @media only screen and (min-width: 1280px) {
     .DocSearch-Modal {
             margin-top: 0 !important;
-            max-width: 100%;
         }
 }
 
@@ -1797,7 +1796,9 @@ h2.widget-header{
     .copyright-text {
         text-align: center;
     }
-
+    .features-section .border-gradient{
+        position: relative;
+    }
     .features-section .border-gradient:before,
     .features-section .border-gradient:after {
         content: none;

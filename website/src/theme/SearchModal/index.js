@@ -148,10 +148,10 @@ export function DocSearchModal(_ref) {
             },
             navigator: navigator,
             onStateChange: function onStateChange(props) {
-                setState(props.state);
                 if (!props.prevState.isOpen && props.state.query != '') {
                     onOpen();
                     document.querySelector('.DocSearch-Input').value = props.state.query;
+                    setState(props.state);
                 }
                 if (!props.state.isOpen && props.prevState.isOpen) {
                     setState({
