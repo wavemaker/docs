@@ -52,3 +52,26 @@ This block of css needs to be added at the beginning of the file as this applies
 –screen-lg-tab-portrait: 900px;
 }
 ```
+
+2. Avoid choosing device sizes for both parent and child containers when dealing with nested containers. 
+Selecting the device size for the parent container is sufficient.
+
+The incorrect way to use the "showindevice" directive is as follows:
+
+````
+<wm-container name="container8" showindevice="md,lg">
+    <wm-container name="container7" showindevice="md,lg">
+        <wm-label padding="unset" name="label7" caption="1"></wm-label>
+        <wm-anchor margin="unset 0.5em" name="anchor" caption="Increment" on-click="anchorClick($event, widget)"></wm-anchor>
+    </wm-container>
+</wm-container>
+````
+ The proper way to utilize the "showindevice" directive is as follows
+````
+<wm-container name="container8" showindevice="md,lg">
+    <wm-container name="container7">
+        <wm-label padding="unset" name="label7" caption="1"></wm-label>
+        <wm-anchor margin="unset 0.5em" name="anchor" caption="Increment" on-click="anchorClick($event, widget)"></wm-anchor>
+    </wm-container>
+</wm-container>
+````

@@ -16,3 +16,4 @@ You can override REST properties for proxy REST calls configuration by sending t
 | **`app.rest.maxTotalConnections`** |  100 | Maximum total connections in the pooling connection manager.|
 | **`app.rest.maxConnectionsPerRoute`** | 50 | Maximum total connections per route in the pooling connection manager.
 | **`app.rest.connectionRequestTimeout`** | 5 | Maximum time to acquire a connection from the pooling connection manager. It throws a timeout exception if the time exceeds. |
+| **`app.rest.tlsVersions`** | TLSv1.3,TLSv1.2 | It allows configuring the TLS versions that the application will utilize for establishing secure connections while invoking REST APIs. TLSv1.3 abd TLSv1.2 are enabled by default. |

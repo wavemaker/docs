@@ -78,8 +78,9 @@ Most of the WaveMaker app development capabilities are available in WMO and WME 
 | Jumpstart to app building process and create a simple app. | [WaveMaker App Building Essentials](/learn/jump-start/jump-start-app-essentials/)                                         |
 
 
-## [Start a free trial!](https://www.wavemaker.com/get-started/)
-When you sign up, you will be directed to a **Project Dashboard** page. Voila! You can start creating new projects. Happy developing! 
+## [Guided Trial](https://www.wavemaker.com/talk-to-expert/)
+
+We offer a guided trial. During this period you can develop, test, run and collaborate with your team members. Deploy your app to Amazon Web Service or WaveMaker Demo Cloud. At the end of the 30-day trial, you get an option to choose a suitable plan in order to continue working on the app. There are purchase plans for monthly and annual subscription. To get a customized plan for your organization, talk to our [Consultant](https://www.wavemaker.com/talk-to-expert/).
 
 ---
 #### Notice something is incorrect or outdated?

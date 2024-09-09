@@ -14,7 +14,8 @@
 						"app-development/dev-integration/developer-collaboration",
 						"app-development/dev-integration/extending-application-using-ides",
 						"app-development/dev-integration/import-export-update-apps",
-						"app-development/wavemaker-overview/artifacts-repository"
+						"app-development/wavemaker-overview/artifacts-repository",
+						"app-development/core-implementation/core-and-implementation-projects"
 					]
 				}
 			]
@@ -172,7 +173,8 @@
 									"items": [
 										"app-development/services/api-designer/api",
 										"app-development/services/mock-services/mock-imported-apis",
-										"app-development/services/api-designer/import-rest-apis-swagger"
+										"app-development/services/api-designer/import-rest-apis-swagger",
+										"app-development/services/api-designer/reimport-rest-apis-swagger"
 									]
 								},
 								{
@@ -385,6 +387,7 @@
 					"items": [
 						"app-development/deployment/push-code-to-external-repo",
 						"app-development/deployment/integration-with-custom-vcs-provider",
+						"app-development/deployment/pull-request-flow",
 						"app-development/deployment/export-wavemaker-application",
 						"app-development/deployment/building-with-maven",
 						"app-development/deployment/build-with-docker",
@@ -624,6 +627,13 @@
 				"extensions/mockingbird/enterprise/integrate",
 				"extensions/mockingbird/enterprise/upgrade"
 			]
+		},
+		{
+			"type": "category",
+			"label": "Proxy Configuration",
+			"items": [
+				"on-premise/proxy-configuration/enabling-proxy-in-wme"
+			]
 		}
 	],
 	"Mobile": [
@@ -831,6 +841,7 @@
 			"type": "category",
 			"label": "UI Development",
 			"items": [
+				"how-tos/single-page-app",
 				"how-tos/passing-parameters-pages",
 				"how-tos/passing-parameters-partial-page",
 				"how-tos/script-access",
@@ -852,6 +863,7 @@
 				"how-tos/wizard-layout",
 				"how-tos/custom-widget-template",
 				"how-tos/using-custom-formatter",
+				"how-tos/using-custom-formatter-for-todate",
 				"how-tos/customize-breakpoints-for-widths-of-show-in-devices",
 				{
 					"type": "category",
@@ -1541,8 +1553,40 @@
 			"items": [
 				{
 					"type": "category",
+					"label": "Versions: 11.8.x",
+					"items": [
+						"wavemaker-release-notes/v11-8-3",
+						"wavemaker-release-notes/v11-8-2",
+						"wavemaker-release-notes/v11-8-1",
+						"wavemaker-release-notes/v11-8-0"
+					]
+				},
+				{
+					"type": "category",
+					"label": "Versions: 11.7.x",
+					"items": [
+						"wavemaker-release-notes/v11-7-5",
+						"wavemaker-release-notes/v11-7-4",
+						"wavemaker-release-notes/v11-7-3",
+						"wavemaker-release-notes/v11-7-2",
+						"wavemaker-release-notes/v11-7-1",
+						"wavemaker-release-notes/v11-7-0"
+					]
+				},
+				{
+					"type": "category",
+					"label": "Versions: 11.6.x",
+					"items": [
+						"wavemaker-release-notes/v11-6-2",
+						"wavemaker-release-notes/v11-6-1",
+						"wavemaker-release-notes/v11-6-0"
+					]
+				},
+				{
+					"type": "category",
 					"label": "Versions: 11.5.x",
 					"items": [
+						"wavemaker-release-notes/v11-5-3",
 						"wavemaker-release-notes/v11-5-2",
 						"wavemaker-release-notes/v11-5-1",
 						"wavemaker-release-notes/v11-5-0"

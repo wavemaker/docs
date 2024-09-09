@@ -9,7 +9,7 @@ sidebar_label: "Enterprise Release (WME)"
 This document applies to Enterprise users only. If you are a WaveMaker Online (WMO) user, see [WaveMaker Online Release](/learn/wavemaker-release-notes).
 :::
 
-See what's new in WaveMaker—including new features, enhancements, and bug fixes. If you experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com). We mention your fixes in release notes, and you can track some [critical known issues](/learn/wavemaker-known-issues).
+See what's new in WaveMaker—including new features, enhancements, and bug fixes. If you experience bugs or issues, please get in touch with [support](mailto:support@wavemaker.com).
 
 Follow our [team blog](/learn/blog) to learn product updates from the engineers who develop it. 
 
@@ -22,7 +22,19 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.5.1** <p style={{color:"red"}}>*latest*</p> | - [v11.5.1](/learn/wavemaker-release-notes/v11-5-1) <br/> - [v11.5.0](/learn/wavemaker-release-notes/v11-5-0) <br/> - [v11.4.3](/learn/wavemaker-release-notes/v11-4-3) | Includes enhancements in Widgets and multiple bug fixes related to Studio Page Workspace, React Native, Cordova, and others. Also includes new features like Appium Support, Dockerfiles in a project, importing icon font family, and enhancements like Angular framework support for Prefab workspace, NG studio upgrade to version 15, changes in project shell web template and other bug fixes. Lastly, addressed bug fixes related to the Prefab artifact and Studio Page Workspace. Introduced an option to upload platform logs to AWS S3 link in the Config portal. Entended support to list users for all the team members. | 13 Dec 2023 |
+|**v11.8.2** <p style={{color:"red"}}>*latest*</p> | - [v11.8.2](/learn/wavemaker-release-notes/v11-8-2) |WaveMaker release 11.8.2 is a bug fix release which includes the enhancements in FileUpload widget, API Orchestration, and few bug fixes. This release also includes new CSS classes for Chart widget and other React Native fixes related to the Show property, Currency widget, Ripple effect, and Wizard widget. | 26 August 2024 |
+|**v11.8.1** | - [v11.8.1](/learn/wavemaker-release-notes/v11-8-1) |WaveMaker release 11.8.1 is majorly a bug fix release which includes the issues with vulnerability and other User Interface (UI) issues. This release also has a new CSS class for Lottie Player and a few React Native and Cordova bug fixes. | 12 August 2024 |
+|**v11.8.0** | - [v11.8.0](/learn/wavemaker-release-notes/v11-8-0) |WaveMaker release 11.8.0, includes includes significant upgrades like Angular 17 and Expo 50 along with Artifact sharing between WaveMaker Enterprise (WME) setups and  Single Page Application (SPA) behavior as new features. In React Native,  new CSS style classes in Slider widget, setting range in Slider widget, Secure Sockets Layer (SSL) certificate pinning, navigation in Wizard widget, and Wheel date picker are some of the ehancements along with many bug fixes. | 30 Jul 2024 |
+|**v11.7.5** | - [v11.7.5](/learn/wavemaker-release-notes/v11-7-5) |WaveMaker release 11.7.5, includes essential bug fixes. | 08 Jul 2024 |
+|**v11.7.4** | - [v11.7.4](/learn/wavemaker-release-notes/v11-7-4) | In WaveMaker 11.7.4 we have extended support for application deployment with Java 17 and 21. Included improvements like the Themes section in Project Configuration, iframe widget message, and some bug fixes. | 01 Jul 2024 |
+|**v11.7.3** | - [v11.7.3](/learn/wavemaker-release-notes/v11-7-3) | This release includes studio performance improvements, and some bug fixes. | 17 Jun 2024 |
+|**v11.7.2** | - [v11.7.2](/learn/wavemaker-release-notes/v11-7-2) | This release includes performance improvements, artifact version management, notifications response in Project Hub to improve perforamance of Studio designer and project opening, and some bug fixes. | 03 Jun 2024 |
+|**v11.7.1**  | - [v11.7.1](/learn/wavemaker-release-notes/v11-7-1) | Includes a new feature, Pull Request (PR) Flow. This also includes some enhancements like Internationalization (i18n) message customization, extended Semantic Versioning, disabling Prefab editing in a project, and other bug fixes. | 28 May 2024 |
+|**v11.7.0** | - [v11.7.0](/learn/wavemaker-release-notes/v11-7-0) | Includes New Studio with enhanced user experience and performance. This release has new features like API reimport and impact analysis along with many enhancements and bug fixes. In React Native, we have introduced many new features like CSS variables for styling, Dynamic forms, Accessibility, and Custom Template for widgets along with enhancements and bug fixes. This also includes an issue that was fixed where the users do not need to provide case-sensitive details in the project. | 30 April 2024 |
+|**v11.6.1** | - [v11.6.1](/learn/wavemaker-release-notes/v11-6-1) <br/> - [v11.6.0](/learn/wavemaker-release-notes/v11-6-0) | Includes multiple enhancements like dynamic passing of Content Delivery Network(CDN) URL as a system property, **Show** field for edit mode in Data Table widget, conditional classes for few input widgets, and improved security Role Mapping configurations along with many bug fixes related to new studio based on Angular which will be a phased rollout. | 26 Mar 2024 |
+|**v11.5.3** | - [v11.5.3](/learn/wavemaker-release-notes/v11-5-3) | Includes enhancements like conditional classes for input widgets, setting the next button as default in the Wizard widget, and support to add links in the Label along with other bug fixes in React Native and Studio Page Workspace. | 23 Jan 2024 |
+|**v11.5.2**| - [v11.5.2](/learn/wavemaker-release-notes/v11-5-2) | Includes enhancements like an image as thumb and multiple slides display in the Carousel and other bug fixes in React Native and Studio Page Workspace. | 26 Dec 2023 |
+|**v11.5.1**| - [v11.5.1](/learn/wavemaker-release-notes/v11-5-1) <br/> - [v11.5.0](/learn/wavemaker-release-notes/v11-5-0) <br/> - [v11.4.3](/learn/wavemaker-release-notes/v11-4-3) | Includes enhancements in Widgets and multiple bug fixes related to Studio Page Workspace, React Native, Cordova, and others. Also includes new features like Appium Support, Dockerfiles in a project, importing icon font family, and enhancements like Angular framework support for Prefab workspace, NG studio upgrade to version 15, changes in project shell web template and other bug fixes. Lastly, addressed bug fixes related to the Prefab artifact and Studio Page Workspace. Introduced an option to upload platform logs to AWS S3 link in the Config portal. Entended support to list users for all the team members. | 13 Dec 2023 |
 |**v11.4.2** | - [v11.4.2](/learn/wavemaker-release-notes/v11-4-2) <br/> - [v11.4.1](/learn/wavemaker-release-notes/v11-4-1) <br/> - [v11.4.0](/learn/wavemaker-release-notes/v11-4-0) | New features to improve developer collaboration, including the Core project, API reimport analysis report, and a few React Native features, Live Form, and Database Variables, and more. Also, included enhancements, such as support for language fonts, indication mark in the Select widget, and bug fixes. Includes Dynamic Accordion as a new feature and horizontal display of radio buttons as an enhancement in React Native. It also includes support for Bitbucket 8 VCS provider and timezone in the Date widget along with some other enhancements and bug fixes. | 03 Oct 2023 |
 |**v11.3.7** | - v11.3.7 |   This release includes bug fixes <br/> Includes UI fixes <br/> It also includes support for Bitbucket 8 VCS provider | 25 Sep 2023 |
 |**v11.2.6** | - v11.2.6 |   This release includes bug fixes <br/> Includes UI fixes <br/> It also includes support for Bitbucket 8 VCS provider | 25 Sep 2023 |
@@ -62,7 +74,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [v10.13.2](/learn/wavemaker-release-notes/v10-13-2)
+Last updated: [v11.8.2](/learn/wavemaker-release-notes/v11-8-2)
 
 ---
 
@@ -70,46 +82,86 @@ Last updated: [v10.13.2](/learn/wavemaker-release-notes/v10-13-2)
 
 | Description | JS Library | Version |
 | --- | --- | --- |
-| JS Binding | jquery | 3.4.1 |
-| | jquery-ui* | 1.12.1 |
-| MVC Framework | angular| 11.2.14 |
-| | angular-ui-bootstrap | 3.3.6 |
-| | ngx-bootstrap | 6.2 |
+| JS Binding | jquery |  3.7.1 |
+|  | jquery-ui* | 1.13.3 |
+| MVC Framework | Angular | 17.3.11 |
+|  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
-| Charting | d3 | 3.5.17 |
-| | nvd3 | 1.8.6 |
-| Built-in functions | lodash | 4.17.19|
+| Charting | d3 | 7.8.5 |
+|  | nvd3 | 1.8.11 |
+| Built-in functions | lodash-es | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
-Optimized jQuery-UI library, excluding unwanted components like an accordion, date picker, dialog, progress bar, spinner, tabs, and all jQuery-UI Effects.
+Optimized jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
 ### Backend Frameworks
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-| | Spring Framework <td className="versiontdbgcolor"> 5.3.15 -> 5.3.18 </td>|
-| Security framework | Spring Security | 5.5.2|
-| Java JSON utilities | Gson | 2.8.9 |
-| DB Persistence library | Hibernate | 5.5.7.Final|
-| Sample database | HSQL | 2.5.1|
-| JSON library | Jackson <td className="versiontdbgcolor"> 2.12.5 -> 2.12.6.20220326</td>|
-| Logging framework | SLF4j |1.7.32 |
-| Logging Implementation | Log4j2 | 2.17.1 |
-| Http client library | HttpComponents | httpclient- 4.5.13 <br/> httpmime- 4.5.6 |
-| Servlet Framework | | 3.1.0 |
-|Database Connection Pooling | HikariCP | 4.0.3 |
+|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.37 -> 5.3.39 </td> |
+| Security framework | Spring Security |  <td className="versiontdbgcolor"> 5.8.13 -> 5.8.14 </td> |
+| Java JSON utilities | Gson  | 2.11.0 |
+| DB Persistence library | Hibernate | 5.6.15.Final |
+| Sample database | HSQL | 2.7.3 |
+| JSON library | Jackson |  2.17.2  |
+| Logging framework | SLF4j | 1.7.36 |
+| Logging Implementation | Log4j2 | 2.18.0|
+| Http client library  | HttpComponents -  httpclient |  4.5.14 |
+| Servlet Framework |  | 4.0.4 |
+| Database Connection Pooling | HikariCP | 5.1.0 |
+|  | Commons Lang3 | <td className="versiontdbgcolor"> 3.15.0 -> 3.16.0 </td> |
+|  | Guava | <td className="versiontdbgcolor"> 33.2.1-jre -> 33.3.0-jre </td> |
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
-| JDK | 1.8 |
-| WebSphere | 8.5.5 |
-| JBoss | 7.1.1 |
-| Tomcat | 8.5* |
-| Cordova (mobile apps) <br/> Android <br/> iOS | 10.0.0 <br/> 10.1.0 <br/> 6.1.0 |
+| JDK | 11 |
+| WebSphere Liberty | 19.0.0.1+ |
+| JBoss Wildfly | 15+ |
+| Tomcat | 9.0.87 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> 7.1.0 |
 
-This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 1.8. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
+:::note
+- Cordova-iOS supports from iOS 16.
+- Cordova-Android supports from iOS Android 24 (Nougat).
+:::
+
+This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
+
+
+# Build Environment for Studio
+---
+
+:::important
+
+With the release of 11.4, we have ended our support for WaveMaker 10 projects. To know more, see [Ending Support to WaveMaker 10 Projects](/learn/blog/2023/08/11/wavemaker10x-end-of-support).
+:::
+
+## Build Environment 11 
+
+### React Native 11
+
+|Description|	Version|
+|---|---|
+|Java |11 |
+|Node|18.16.1|
+|Maven| 3.9.8 |
+|npm | 9.5.1|
+|Ant| 1.10.11|
+
+
+### Angular Web and Mobile 11
+
+|Description|	Version|
+|---|---|
+|Java | 11 |
+|Node| 18.16.1|
+|Maven| 3.9.8 |
+|npm | 9.5.1|
+|Ant| 1.10.11|
+
+For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
 ## Older Releases
 

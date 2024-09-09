@@ -57,7 +57,7 @@ describe("schedule demo button take to right places", function () {
 
   it("Verifies schedule demo navigation ", function () {
     cy.get('.navbar__items > a:last-child')
-      .contains("Schedule Demo").should('have.attr', 'href').then((href) => {
+      .contains("Get Started").should('have.attr', 'href').then((href) => {
         cy.request(href).its('body').should('include', 'Schedule a Demo or Talk to an Expert for a Free Pilot.').end();
       });
   })

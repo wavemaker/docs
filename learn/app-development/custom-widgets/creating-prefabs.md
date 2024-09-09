@@ -215,6 +215,12 @@ You need to remember the following:
 
 In continuous development scenario, Prefabs may be enhanced to incorporate new functionality. In such cases you need to Publish the Prefab, changing the version number. 
 
+:::note 
+Prefab editing inside the application is disabled from [11.7.1](/learn/wavemaker-release-notes/v11-7-1).
+
+To streamline the development process, editing Prefabs directly within the application is not allowed. Developers should make code changes to the Prefab project itself and then publish the updated project to see the changes reflected in the application.
+:::
+
 **Updated Prefabs**: By updating the Prefab version while publishing the Prefab will update the version and the latest version will be available across all the projects. When a project using this Prefab is opened,  the developer will be prompted to update the same within the project. When you open a project using the Prefab (i.e the Prefab was dragged and dropped onto the canvas) you will see a dialog asking you to update the Prefab You can choose to update or continue with the previous version. In case you choose to continue with the previous version, whenever you try to drag and drop the Prefab, you will be prompted to update the same.
 
 ## Version Mismatches
