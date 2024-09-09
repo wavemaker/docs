@@ -81,6 +81,9 @@
     --ifm-tabs-prev-button-image:url("/img/prevArrow.svg");
     --mermaid-background-color:#c2e7ff;
     --mermaid-border-color:#f6f8fd;
+    --wm-details-background: #F9F9FA;
+    --wm-details-icon-color: #424A52;
+    --ifm-alert-background-note-color: rgb(0, 82, 204,10%);
     --wm-category-arrow-image:url("/img/chevron-right-category.svg");
 
 }
@@ -168,7 +171,9 @@ html[data-theme="dark"] {
      --mermaid-border-color:#c2e7ff;
      --wm-category-arrow-image:url("/img/chevron-right-category-dark.svg");
      --ifm-toc-link-color-dark:#000000;
-     
+     --wm-details-background: #192847;
+     --ifm-alert-background-note-color: #18243D;
+     --wm-details-icon-color: #FFFFFFE5;
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 /* your custom css */
@@ -176,6 +181,11 @@ body {
     margin: 0;
     /* font-family: 'Roboto', sans-serif; */
 }
+
+.theme-admonition-note {
+    background: var(--ifm-alert-background-note-color);
+  }
+
 .alert--impact {
     --ifm-alert-background-color: #FFFAE8;
     --ifm-alert-foreground-color: rgb(66,69,73);
