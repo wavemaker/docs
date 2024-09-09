@@ -24,7 +24,7 @@ describe("Top Navigation in web & mobile", function () {
       .end();
 
 
-    var navElements = ["Get Started", "Widgets", "How-to", "Blog", "Academy", "Releases"];
+    var navElements = ["Get Started", "Widgets", "How-to", "Blog", "Academy", "Releases", "Schedule Demo"];
     navElements.forEach(function (navItem) {
       cy.get(selectors.desktopNavElements)
         .contains(navItem)
@@ -38,7 +38,7 @@ describe("Top Navigation in web & mobile", function () {
   it("Verifies that only Docs, Search is visible in the navbar in mobile", function () {
     cy.viewport("iphone-6");
 
-    var hiddenNavElements = ["Get Started", "Widgets", "How-to", "Blog", "Academy", "Releases"];
+    var hiddenNavElements = ["Get Started", "Widgets", "How-to", "Blog", "Academy", "Releases", "Schedule Demo"];
     hiddenNavElements.forEach(function (navItem) {
       cy.get(selectors.desktopNavElements)
         .contains(navItem)
@@ -57,7 +57,7 @@ describe("schedule demo button take to right places", function () {
 
   it("Verifies schedule demo navigation ", function () {
     cy.get('.navbar__items > a:last-child')
-      .contains("Get Started").should('have.attr', 'href').then((href) => {
+      .contains("Schedule Demo").should('have.attr', 'href').then((href) => {
         cy.request(href).its('body').should('include', 'Schedule a Demo or Talk to an Expert for a Free Pilot.').end();
       });
   })
