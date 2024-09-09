@@ -1525,6 +1525,10 @@ table tr td:last-child{
     font-weight: normal;
 }
 
+.features-section-container{
+    position: relative;
+}
+
 .navbar__item.navbar__link.button.button--secondary{
     color:var(--wm-button-text-color);
 }

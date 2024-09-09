@@ -123,7 +123,7 @@ export default class Index extends React.Component {
                         </div>
                     </div>
                     <div className='container-fluid features-section' id='feature-section'>
-                        <div className='container margin-top--lg padding-bottom--xl'>
+                        <div className='container features-section-container margin-top--lg padding-bottom--xl'>
                             <h1 className='text--center margin-bottom--xl'>Feature Highlight</h1>
                             <div className='row border-gradient'>
                                 {this.getFeatures()}
