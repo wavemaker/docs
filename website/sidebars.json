@@ -659,7 +659,8 @@
 						"react-native/styles",
 						"react-native/custom-icon-fonts",
 						"react-native/theme",
-						"react-native/app-loader",
+						"react-native/skeleton-loader",
+						"react-native/progress-loader",
 						"react-native/animations",
 						"react-native/splash-screen"
 					]
