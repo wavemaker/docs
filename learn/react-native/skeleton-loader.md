@@ -5,7 +5,6 @@ sidebar_label: "Skeleton Loader"
 ---
 ---
 
-
 A Skeleton is an animated placeholder that mimics the structure of the content that will eventually load when an long running operations such as, API call. It creates an animation of the page structure, such as blocks, images, text, and other UI elements. This enables a seamless transition between the page and data, preparing users to get an idea of the page format in advance.
 
 **Use Case**
@@ -201,6 +200,17 @@ className: headerLabel
 
 In Page, Prefab and [Partial](/learn/how-tos/create-prefab-with-partials/#partial-for-mobile), the user can override the default skeleton appearance using [Lottie Animation](/learn/app-development/widgets/basic/lottie/). This helps in adding the custom Skeleton layout without showing the actual components used in a Page, Prefab, and Partial.
 
+### Uploading Custom Animation Resource
+
+To use any custom Skeleton Loader animation to ovveride the default Skeleton Loader, you can first upload the file as resource.
+
+1. Go to File Explorer > click **+** icon to add new resource.
+2. Click **Upload Files** the required resources under animation in resources folder. You can also view it in the studio.
+
+<iframe width="560" height="315" src="https://www.loom.com/embed/eff9de7b0e4845a297841532941bfb92?sid=7354a60d-2d13-4355-bfe9-fc6a3a6fd960" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
+### Applying Custom Animation Resource
+
 The **`animationResource`** property can be used in Markup script to provide the location of the Json file as Lottie Animation resource file. The location of json file given as an [resource](/learn/app-development/services/3rd-party-libraries/#including-resource-files), renders the animation through application's Lottie widget. It can be added at three levels
 
 - [Page](#custom-animation-at-page-level)
@@ -211,52 +221,39 @@ The **`animationResource`** property can be used in Markup script to provide the
 It is required to use Lottie widget in the application to implement the above.
 :::
 
-### Custom Animation at Page Level
+#### Custom Animation at Page Level
 
 To apply the custom animation to the Page content, use the below code in the Markup section of the specific Page.
 
-```markup
- <wm-page-content columnwidth="12" name="page_content1" animationresource="resources/images/anim_1.json">
+```xml
+ <wm-page-content animationresource="resources/images/anim_1.json" columnwidth="12" name="page_content1" >
 ```
 
-**Before Customization:**
+In the below video we can see how the Skeleton Loader appears before and after using the animation resource.
 
-![Page Before Lottie Animation](/learn/assets/page-before-lottie-animation.png)
-
-**After Customization:**
-
-![Page After Lottie Animation](/learn/assets/page-after-lottie-animation.png)
+<iframe width="560" height="315" src="https://www.loom.com/embed/bdf837821f184bd8918b114da21b173f?sid=f628f63d-5514-417e-885e-9f6d35588ffa" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
 
-### Custom Animation at Prefab Level
+#### Custom Animation at Prefab Level
 
 The custom animation can be added to the components available in a specific Prefab by adding the below Markup code within the Prefab.
 
-```markup
+```xml
 <wm-prefab prefabname="StepperList" name="StepperList1" animationresource="resources/images/anim_1.json"></wm-prefab>
 ```
 
-**Before Customization:**
+In the below video we can see how the Skeleton Loader appears before and after using the animation resource in the Prefab section.
 
-![Prefab Before Lottie Animation](/learn/assets/prefab-before-lottie-animation.png)
+<iframe width="560" height="315" src="https://www.loom.com/embed/fc7ca38e98f44249bacb58d84c073676?sid=2f3c31e6-56f6-442f-bfc2-50e35467617a" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
-**After Customization:**
-
-![Prefab After Lottie Animation](/learn/assets/prefab-after-lottie-animation.png)
-
-### Custom Animation at Partial Level
+#### Custom Animation at Partial Level
 
 The custom animation can be applied to the components available in a Partial. Use the below code within a Partial,
 
-```markup
-<wm-container name="container1" content="SkeletonPartial" animationresource="resources/images/anim_2.json"></wm-container>
+```xml
+<wm-container name="container1" content="NavBar" animationresource="resources/images/anim_2.json"></wm-container>
 ```
 
-**Before Customization:**
+In the below video we can see how the Skeleton Loader appears before and after using the animation resource in a container that holds the **NavBar** as Partial.
 
-![Partial Before Lottie Animation](/learn/assets/partial-before-lottie-animation.png)
-
-**After Customization:**
-
-![Partial After Lottie Animation](/learn/assets/partial-after-lottie-animation.png)
-
+<iframe width="560" height="315" src="https://www.loom.com/embed/d425496de8ae4a4cb6e175fa2d56c811?sid=23a9df85-7cce-4d54-8342-c317059bf9aa" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>

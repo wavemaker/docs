@@ -7,8 +7,8 @@ sidebar_label: "Progress Loader"
 
 An application loader is a component that helps in the loading and execution of an application. It typically handles tasks such as loading necessary resources, managing dependencies, and preparing the application to run smoothly. There are two types of Application Loaders that WaveMaker supports.
 
-[Skeleton Loader](#skeleton-loader)  
 [Progress Loader](#progress-loader)
+[Skeleton Loader](#skeleton-loader)
 
 
 ## Progress Loader
