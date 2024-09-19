@@ -220,7 +220,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |Maven| 3.9.8 |
 |npm | 9.5.1|
 |Ant| 1.10.11|
-| Android Studio |<td className="versiontdbgcolor"> Ladybug | 2024.2.1 </td>|
+| Android Studio |<td className="versiontdbgcolor"> Ladybug 2024.2.1 </td>|
 | Android Gradle Plugin (AGP) | <td className="versiontdbgcolor">8.3-8.7 </td> |
 
 :::note
