@@ -177,9 +177,9 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
 | Servlet Framework |  | 4.0.4 |
 | Database Connection Pooling | HikariCP | 5.1.0 |
-|  | Commons Lang3 | <td className="versiontdbgcolor"> 3.16.0 -> 3.17.0 </td> |
+|  | Commons Lang3 | 3.17.0 |
 |  | Guava | 33.3.0-jre |
-|  | Postgresql Driver  | <td className="versiontdbgcolor"> 42.7.3 -> 42.7.4 </td> |
+|  | Postgresql Driver  | 42.7.4 |
 
 ### Runtime Environment
 
@@ -211,14 +211,30 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 
 ### React Native 11
 
+#### Environment Setup
+
 |Description|	Version|
 |---|---|
-|Java |11 |
+|Java |<td className="versiontdbgcolor">11 -> 17 </td> |
 |Node|18.16.1|
 |Maven| 3.9.8 |
 |npm | 9.5.1|
 |Ant| 1.10.11|
+| Android Studio |<td className="versiontdbgcolor"> Ladybug | 2024.2.1 </td>|
+| Android Gradle Plugin (AGP) | <td className="versiontdbgcolor">8.3-8.7 </td> |
 
+:::note
+It is required to use Android Studio version be **Iguana | 2023.2.1** or above and Android Gradle Plugin(AGP) version be **8.3** and above. The recommended versions for Android Studio is **Ladybug | 2024.2.1** and AGP is **8.3**.
+
+Please ensure that your [Android Studio](https://developer.android.com/studio/releases#android_gradle_plugin_and_android_studio_compatibility) has a compatible version of the [AGP](https://developer.android.com/build/releases/past-releases/agp-8-3-0-release-notes#compatibility). Additionally, verify the compatibility of the AGP with the SDK build tools version, JDK, and Gradle version.
+:::
+
+#### SDK Update
+
+|Description|	Version|
+|---|---|
+| Expo | <td className="versiontdbgcolor"> 49.0.7 -> 50.0.17 </td> |
+| React Native | <td className="versiontdbgcolor"> 0.72.4 -> 0.73.6 </td> |
 
 ### Angular Web and Mobile 11
 
