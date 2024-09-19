@@ -142,7 +142,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.8.2](/learn/wavemaker-release-notes/v11-8-2)
+Last updated: [WaveMaker 11.8.4](/learn/wavemaker-release-notes/v11-8-4)
 
 ---
 
