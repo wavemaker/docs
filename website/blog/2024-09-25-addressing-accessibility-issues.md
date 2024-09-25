@@ -33,7 +33,7 @@ For example, consider two scenarios: in one, we set the maximum depth level to 3
 
 <details><summary>Expo 50 and React Native 0.73</summary>
 
-![Expo 50 and React Native 0.73](/learn/assets/release-notes-blog/expo50-reactnative-73.png)
+![Expo 50 and React Native 0.73](/learn/assets/expo50-reactnative-73.png)
 
 In this case, the middle section presents the hierarchical structure of the app’s UI elements, showing how components are organized within different layers of the app. The hierarchy extends up to Level 150, suggesting a deep structure. However, maximum depth level of layers in the component tree is set as 33 so the last fully accessible UI element is found at **Level 33**. 
 
@@ -43,7 +43,7 @@ Beyond this level, Appium encounters a limitation, unable to expand or interact 
 
 <details><summary>Expo 51 and React Native 0.74</summary>
 
-![Expo 51 and React Native 0.74](/learn/assets/release-notes-blog/expo51-reactnative-74.png)
+![Expo 51 and React Native 0.74](/learn/assets/expo51-reactnative-74.png)
 
 In this case, the App Source pane now clearly demonstrates that the UI hierarchy extends to Level 150. The selected element is labeled level 150, is displayed in the Selected Element panel. This confirms that Appium can now fully explore and interact with the entire element hierarchy, even at the deepest level. 
 
