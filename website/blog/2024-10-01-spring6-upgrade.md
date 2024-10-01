@@ -18,6 +18,7 @@ Additionally, Spring 6 requires [Java 17+](/learn/blog/2024/08/29/java-17-and-21
 
 For a detailed list of changes refer to the official [Servlet 6](https://jakarta.ee/specifications/servlet/6.0/) and [Spring 6](https://github.com/spring-projects/spring-framework/wiki/What's-New-in-Spring-Framework-6.x) documentation.
 
+<!-- truncate -->
 
 ## Additional Libraries to Upgrade
 
@@ -56,3 +57,5 @@ Beginning with our **11.9 release on October 21, 2024**, all new WaveMaker proje
 :::
 
 In upcoming posts, we’ll explore which parts of the migration are automated and what changes will need to be made manually.
+
+
