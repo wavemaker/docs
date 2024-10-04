@@ -1555,6 +1555,7 @@
 					"type": "category",
 					"label": "Versions: 11.8.x",
 					"items": [
+						"wavemaker-release-notes/v11-8-5",
 						"wavemaker-release-notes/v11-8-4",
 						"wavemaker-release-notes/v11-8-3",
 						"wavemaker-release-notes/v11-8-2",
