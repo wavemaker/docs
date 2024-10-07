@@ -11,9 +11,22 @@ import basicActivity from '/learn/assets/android-newproject-basicactivity.png';
 import AndroidPreview from '/learn/assets/android-embed-preview.gif';
 import IOSPreview from '/learn/assets/ios-embed-preview.gif';
 
-From WaveMaker 11.8 onwards, React Native apps can be embeded into the native application. By using the CLI command and inital changes to Native App, WaveMaker is adding React Native project code to Native code.
+From WaveMaker 11.8 onwards, React Native apps can be embeded into the native application. By using the CLI command you can add React Native code to Native Code. This allows developers to use the advantages of React Native such as cross-platform development and faster iteration, while maintaining or enhancing an existing native codebase.
 
-## Requirements
+## Why to embed React Native into Native Code
+
+This integration of React Native into Native Application comes with few significant benefits that makes development and management of applications easier.
+
+- You can start using React Native in a specific part of your application without having to rewrite the entire application.
+- As it helps in creating cross-platform applications, you can write the code once and use the same React Native code for both iOS and Android, reducing development time.
+- React Native allows for faster development and iteration with features like hot-reloading and a more flexible UI approach.
+- Introduce new features or screens using React Native in a legacy native app without a complete rebuild.
+
+## Embedding React Native
+
+When using this feature, you can add WaveMaker React Native application to an existing native application, such as a small component or an SPA, or even a micro application. Once the code is converted to a native app, by running the CLI commands, React Native code inside the Embedded Application can be updated. However, for the first time, you must implement the following setup.
+
+### Requirements
 
 - JDK 17
 - Apache Maven 3.8.2
@@ -21,41 +34,33 @@ From WaveMaker 11.8 onwards, React Native apps can be embeded into the native ap
 - npm 9.5.1
 - wm-reactnative-cli and its requirements
 
-When using this feature, you can add WaveMaker app to an existing native application, such as a small component or an SPA, or even a micro application.
+### WaveMaker Commands to Embed
 
-## How it works
+To embed React Native apps into native apps, changes are required in both React Native project and the Native project. [@wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli) will handle the React Native project requirements. Steps to make changes in the Native project depends on the type of environment and below you can find the examples to embed React Native code in Android and iOS platforms. 
+- [Android](#android)
+- [iOS](#ios)
 
-Once the code is converted to a native app, by running the CLI commands, React Native code inside the Embedded Application can be updated. However, for the first time, you must implement the following setup.
-
-## WaveMaker Embed Command
-
-To embed React native apps into native apps, changes are required in both React Native project and the Native project. [@wavemaker/wm-reactnative-cli](https://github.com/wavemaker/wm-reactnative-cli) will handle the react native project requirements. In order for changes in the Native project, follow the steps below.
-
-- Install wm-reactnative-cli using the below command
+Before you initiate embedding React Native into Native application using CLI commands, install wm-reactnative-cli in your local environment using the below command
 ```
 npm install github:rraajvamsy/wm-reactnative-cli#c1794b1
 ```
 
-### Android
+#### Android
 
-- Download the React Native Project zip from **Export as ReactNative Zip** Dialog and execute the command below.
-
-```
-wm-reactnative embed android –mp="${NATIVE_ANDROID_PROJECT_PATH}" "${REACT_NATIVE_ZIP_PATH}"
-```
-
-- Create a New Android project with Basic Activity.
+1. In Android Studio, create a new project. Choose Basic Activity and enter Android project details. Click Finish to configure and create a new Android project.
 
 <div style={{flex:1}}>
 <img src={newProject} style={{ width:500, height:300}}/>
 <img src={basicActivity} style={{ width:500, height:300}}/>
 </div>
 
-- execute the `wm-reactnative-cli` command by passing both Path values of android project and Native Zip.
+2. Download the React Native Project zip from **Export as ReactNative Zip** Dialog. Go to the Command prompt and execute the `wm-reactnative-cli` command by passing both Path values of android project and Native Zip.
 
-- After the command is executed, embed should get generated in the following path **dest_path/android-embed**.
+```
+wm-reactnative embed android –mp="${NATIVE_ANDROID_PROJECT_PATH}" "${REACT_NATIVE_ZIP_PATH}"
+```
 
-- Minimum Supported Versions
+After the command is executed, embed should get generated in the following path **dest_path/android-embed**. Minimum supported versions of plugins, libraries and framework required for successful build are,  
 
 ```
 agp = "8.3.2"
@@ -69,7 +74,7 @@ navigationFragment = "2.7.7"
 navigationUi = "2.7.7"
 ```
 
-- Comment the dependencyResolutionManagement in project-level settings.gradle
+3. Comment the dependencyResolutionManagement in project-level settings.gradle
 
 ```
 pluginManagement {
@@ -99,7 +104,7 @@ apply from:'./rnApp/root.settings.gradle'
 
 ```
 
-- Check and Update the following in gradle properties
+4. Check and Update the following in gradle properties
 
 ```
 android.nonTransitiveRClass=false
@@ -116,7 +121,7 @@ EX_DEV_CLIENT_NETWORK_INSPECTOR=true
 FLIPPER_VERSION=0.182.0
 ```
 
-- Move the buildScript from `rnApp/root.build.gradle` to project-level `build.gradle`
+5. Move the buildScript from `rnApp/root.build.gradle` to project-level `build.gradle`
 
 ```
 project-level build.gradle
@@ -194,7 +199,7 @@ allprojects {
 
 ```
 
-- Update android - defaultConfig in `rnApp/build.gradle`
+6. Update android - defaultConfig in `rnApp/build.gradle`
 
 ```
   defaultConfig {
@@ -204,7 +209,7 @@ allprojects {
   }
 ```
 
-- Comment the following line in `rnApp/build.gradle` **(optional)**
+7. Comment the following line in `rnApp/build.gradle` **(optional)**
 
 ```
   in android
@@ -255,13 +260,13 @@ allprojects {
 // }
 ```
 
-- Update dirstibutionUrl in `gradle/wrapper/gradle-wrapper.properties
+8. Update dirstibutionUrl in `gradle/wrapper/gradle-wrapper.properties
 
 ```
 distributionUrl=https\://services.gradle.org/distributions/gradle-8.4-all.zip
 ```
 
-- Add button to app/src/main/res/layout/activity_main.xml
+9. Add button to app/src/main/res/layout/activity_main.xml
 
 ```
   <Button
@@ -273,7 +278,7 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-8.4-all.zip
     tools:layout_editor_absoluteY="90dp" />
 ```
 
-- In MainActivity.java use Intent to load the WaveMaker Application
+10. In MainActivity.java use Intent to load the WaveMaker Application
 
 ```
 package com.example.reactnativeemebed;
@@ -304,15 +309,13 @@ public class MainActivity extends AppCompatActivity {
 
 ```
 
-- After these changes Build and run the Application.
-
-- Fix dependency issues.
+11. After these changes Build and run the Application.
 
 ##### Preview
 
 <img src={AndroidPreview} style={{ width:250, height:600}}/>
 
-### iOS
+#### iOS
 
 For changes in the Native project, follow the steps below:
 
