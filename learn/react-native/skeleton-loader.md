@@ -13,6 +13,8 @@ When scrolling through any social media platform, you might notice gray bars in 
 
 ## Skeleton - Required and Not Required
 
+Skeleton Loader can be applied on the widgets listed under the [Skeleton required](#skeleton-required). And for the widgets that cannot have Skeleton Loader applied are listed under [Skeleton not required](#skeleton-not-required).
+
 ### Skeleton Required
 
 <details><summary>Skeleton Required</summary>
@@ -69,42 +71,28 @@ When scrolling through any social media platform, you might notice gray bars in 
 
 <details><summary>Skeleton Not Required</summary>
 
+- Progress Bar
 - Lottie
-- Progress bar
-- Progress circle
+- Progress Circle
 - Spinner
 - Dialog
-- Navbar
-- Navitem
-- Confirmdialog
-- Alertdialog
-- Dialogactions
-- Dialogcontent
-- Background
-- Fileupload
-- Webview
-- Basenav
-- wheel picker
-- Slider
-- Carousel
+- Confirm Dialog
+- Alert Dialog
 - Form
-- Form-field
-- Popover
-- Menu
-- Tabbar
-- Content
-- Partial-container
-- Page
-- Liveform
+- Dropdown Menu
+- Live Form
 - Message
-- Modal
-- Skeleton
-- Barcode scanner
+- Barcode Scanner
 - Camera
+- FileUpload
+- Slider
+- Popover
 
 </details>
 
 ## Already Supporting and Not Supporting Widgets
+
+WaveMaker provides many components within the studio that can be used in applucation developement. Skeleton Loader can be configured using the default configuration for the widgets listed under [supported widgets](#skeleton-supported-widgets). And the widgets that cannot be configured using the default configuration steps can use Lottie animation to show custom Skeleton Loader for the widgets listed under [not supported widgets](#skeleton-not-supported-widgets)
 
 ### Skeleton Supported Widgets
 
@@ -133,6 +121,23 @@ Below is the list of widgets that are supported in the Skeleton Loader.
 
 <details><summary>List of Widgets that cannot be configured using WaveMaker default configuration to apply Skeleton</summary>
 
+- Login
+- Video
+- Switch
+- Checkbox
+- Currency
+- Number
+- Rating
+- Chips
+- Toggle
+- Select
+- Audio
+- Appnavbar
+- Date
+- Datetime
+- Calendar
+- Anchor
+
 </details>
 
 ## WaveMaker Default vs Lottie Animation
@@ -159,7 +164,7 @@ In this case, the widgets that are already supported on our platform for WaveMak
 
 #### Application Level
 
-Skeleton Loader can be enabled when creating an application. To apply the Skeleton Loader, go to the **Project Settings** dialog and choose **Skeleton Loader** as the Application Loader. This applies the Skeleton Loader to all the available pages in an application.
+Skeleton Loader can be enabled when creating an application. To apply the Skeleton Loader, go to the **Project Settings** dialog and choose **Skeleton Loader** as the Application Loader. This applies the Skeleton Loader to all the available pages in an application along with all the [supported widgets](#skeleton-supported-widgets).
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/4tzkn2vjCNnJUZaXi5xYUK"   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
@@ -171,7 +176,7 @@ Skeleton Loader gets applied across the application only if a [service variable]
 
 #### Page Level
 
-For example, to enable the Skeleton Loader for a Page under `onready` method.
+You can apply the Skeleton Loader at Page level programatically by using the `showskeleton` property. For example, to enable the Skeleton Loader for a Page under `onready` method.
 
 1. Go to Script tab of the Page.
 2. Under the `onready` method, add the `showskeleton` property.
@@ -183,7 +188,7 @@ Page.Widgets.page_content1.showskeleton = true
 
 #### Prefab/Partial Level
 
-For example, to enable the Skeleton Loader for a Page under `onready` method.
+You can apply the Skeleton Loader at Prefab/Partial level programatically using the `showskeleton` property under `onready` method.
 
 1. Go to Script tab of the Page.
 2. Under the `onready` method, add the `showskeleton` property.
@@ -208,14 +213,14 @@ This is also applicable to other container type widgets.
 
 #### Widget Level
 
-For example, to enable the Skeleton Loader for a Page under `onready` method.
+You can apply the Skeleton Loader at Widget level programatically using the `showskeleton` property under the `onready` method.
 
 1. Go to Script tab of the Page.
 2. Under the `onready` method, add the `showskeleton` property.
 3. Set the `showskeleton` property as `true` to apply it to all the components. You can set it `false` to disable the Skeleton Loader for the specific page components. Use the below code.
 
 ```js
-Page.Widgets.page_content1.showskeleton = true
+Page.Widgets.button3.showskeleton = true;
 ```
 
 #### Skeleton Loader Configuration
@@ -271,50 +276,48 @@ In the following example, you can customise background color and other propertie
 }
 ```
 
-![Page Level Skeleton Loader](/learn/assets/page-level-skeleton-loader.png)
+![Page Level Skeleton Loader](/learn/assets/page-level-customisation.gif)
 
 ##### Apply Style to Widget 
 
 Using the following example, you can customise background color, border width of Skeleton and other properties for a specific widget in the page.
 
 ```css
-.app-label .app-skeleton{
-    background-color: #c1c1c1;
-    border-width: 0px;
-    opacity: 1;
+.app-label-skeleton .app-skeleton {
+    background-color: green;
 }
-.app-label .app-skeleton-gradient{
-    background-color: #ffffff;
-    opacity: 1;
+
+.app-label-skeleton .app-skeleton-gradient {
+    background-color: yellow;
 }
-.app-label .app-skeleton-gradient-foreground{
-    background-color: #292753;
+
+.app-label-skeleton .app-skeleton-gradient-foreground {
+    background-color: white;
 }
 ```
 
-![Widget Level Skeleton Loader](/learn/assets/widget-level-skeleton-loader.png)
+![Widget Level Skeleton Loader](/learn/assets/widget-level-customisation.gif)
 
 ##### Apply Style to Class
 
 Using the following example, you can customise background color, border width of Skeleton, and other properties for a specific class inside a widget in the page.
 
 ```css
-className: headerLabel
-.headerLabel .app-label .app-skeleton{
-    background-color: #c1c1c1;
-    border-width: 0px;
-    opacity: 1;
+className: some-class
+.some-class .app-label-skeleton .app-skeleton {
+    background-color: green;
 }
-.headerLabel .app-label .app-skeleton-gradient{
-    background-color: #ffffff;
-    opacity: 1;
+
+.some-class .app-label-skeleton .app-skeleton-gradient {
+    background-color: yellow;
 }
-.headerLabel .app-label .app-skeleton-gradient-foreground{
-    background-color: #292753;
+
+.some-class .app-label-skeleton .app-skeleton-gradient-foreground {
+    background-color: white;
 }
 ```
 
-![Class Level Skeleton Loader](/learn/assets/class-level-skeleton-loader.png)
+![Class Level Skeleton Loader](/learn/assets/class-level-customisation.gif)
 
 ### Using Lottie Animation Configuration
 
