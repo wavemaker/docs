@@ -143,7 +143,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.8.4](/learn/wavemaker-release-notes/v11-8-4)
+Last updated: [WaveMaker 11.8.5](/learn/wavemaker-release-notes/v11-8-5)
 
 ---
 
@@ -190,7 +190,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
 | Tomcat | 9.0.87 |
-| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> 7.1.0 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> <td className="versiontdbgcolor">17.5 </td> |
 
 :::note
 - Cordova-iOS supports from iOS 16.
@@ -216,13 +216,15 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 
 |Description|	Version|
 |---|---|
-|Java |<td className="versiontdbgcolor">11 -> 17 </td> |
+|Java | 11 |
 |Node|18.16.1|
 |Maven| 3.9.8 |
 |npm | 9.5.1|
 |Ant| 1.10.11|
-| Android Studio |<td className="versiontdbgcolor"> Ladybug 2024.2.1 </td>|
-| Android Gradle Plugin (AGP) | <td className="versiontdbgcolor">8.3-8.7 </td> |
+| Android Studio | Ladybug 2024.2.1 |
+| SDK Build Tools | <td className="versiontdbgcolor"> 34.0.0 </td> |
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.5 </td> |
+| Android Gradle Plugin (AGP) | 8.3 - 8.7 |
 
 :::note
 It is required to use Android Studio version be **Iguana | 2023.2.1** or above and Android Gradle Plugin(AGP) version be **8.3** and above. The recommended versions for Android Studio is **Ladybug | 2024.2.1** and AGP is **8.3**.
@@ -234,8 +236,8 @@ Please ensure that your [Android Studio](https://developer.android.com/studio/re
 
 |Description|	Version|
 |---|---|
-| Expo | <td className="versiontdbgcolor"> 49.0.7 -> 50.0.17 </td> |
-| React Native | <td className="versiontdbgcolor"> 0.72.4 -> 0.73.6 </td> |
+| Expo | 50.0.17 |
+| React Native | 0.73.6 |
 
 ### Angular Web and Mobile 11
 
