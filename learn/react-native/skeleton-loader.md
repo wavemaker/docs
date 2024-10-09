@@ -186,6 +186,8 @@ You can apply the Skeleton Loader at Page level programatically by using the `sh
 Page.Widgets.page_content1.showskeleton = true
 ```
 
+<iframe width="560" height="315" src="https://www.loom.com/embed/97830e39045341829164fd650aea95d0?sid=c38d0d1b-b54c-4820-a9fb-9af2ee32c1b5" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
 #### Prefab/Partial Level
 
 You can apply the Skeleton Loader at Prefab/Partial level programatically using the `showskeleton` property under `onready` method.
@@ -222,6 +224,8 @@ You can apply the Skeleton Loader at Widget level programatically using the `sho
 ```js
 Page.Widgets.button3.showskeleton = true;
 ```
+
+<iframe width="560" height="315" src="https://www.loom.com/embed/0ec899ca8c0f4d95981232e899190ecb?sid=e407105b-2b4d-42ef-adf6-729935743edf" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
 #### Skeleton Loader Configuration
 
@@ -276,7 +280,7 @@ In the following example, you can customise background color and other propertie
 }
 ```
 
-![Page Level Skeleton Loader](/learn/assets/page-level-customisation.gif)
+<img src={/learn/assets/page-level-customisation.gif} alt="Page Level Skeleton Loader" width="250" height="600"/>
 
 ##### Apply Style to Widget 
 
@@ -296,7 +300,7 @@ Using the following example, you can customise background color, border width of
 }
 ```
 
-![Widget Level Skeleton Loader](/learn/assets/widget-level-customisation.gif)
+<img src={/learn/assets/widget-level-customisation.gif} alt="Widget Level Skeleton Loader" width="250" height="600"/>
 
 ##### Apply Style to Class
 
@@ -317,7 +321,7 @@ className: some-class
 }
 ```
 
-![Class Level Skeleton Loader](/learn/assets/class-level-customisation.gif)
+<img src={/learn/assets/class-level-customisation.gif} alt="Class Level Skeleton Loader" width="250" height="600"/>
 
 ### Using Lottie Animation Configuration
 
