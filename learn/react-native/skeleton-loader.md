@@ -280,7 +280,8 @@ In the following example, you can customise background color and other propertie
 }
 ```
 
-<img src={/learn/assets/page-level-customisation.gif} alt="Page Level Skeleton Loader" width="250" height="600"/>
+![Page Level Skeleton Loader](/learn/assets/page-level-customisation.gif)
+
 
 ##### Apply Style to Widget 
 
@@ -300,7 +301,7 @@ Using the following example, you can customise background color, border width of
 }
 ```
 
-<img src={/learn/assets/widget-level-customisation.gif} alt="Widget Level Skeleton Loader" width="250" height="600"/>
+![Widget Level Skeleton Loader](/learn/assets/widget-level-customisation.gif)
 
 ##### Apply Style to Class
 
@@ -321,7 +322,7 @@ className: some-class
 }
 ```
 
-<img src={/learn/assets/class-level-customisation.gif} alt="Class Level Skeleton Loader" width="250" height="600"/>
+![Class Level Skeleton Loader](/learn/assets/class-level-customisation.gif)
 
 ### Using Lottie Animation Configuration
 
