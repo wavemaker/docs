@@ -8,8 +8,8 @@ sidebar_label: "React Native Embed"
 
 import newProject from '/learn/assets/react-native/embed/android-newproject.png';
 import basicActivity from '/learn/assets/react-native/embed/android-newproject-basicactivity.png';
-import newProjectIOS from '/learn/assets/react-native/embed/newprojectIOS.png';
-import basicActivityIOS from '/learn/assets/react-native/embed/basicactivityIOS.png';
+import newProjectIOS from '/learn/assets/react-native/embed/new-project-ios.png';
+import basicActivityIOS from '/learn/assets/react-native/embed/basic-activity-ios.png';
 import AndroidPreview from '/learn/assets/react-native/embed/android-embed-preview.gif';
 import IOSPreview from '/learn/assets/react-native/embed/ios-embed-preview.gif';
 import AndroidIntentPreview from '/learn/assets/react-native/embed/android-embed-prevew-intent.gif';
