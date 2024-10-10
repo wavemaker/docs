@@ -141,7 +141,7 @@ Download the React Native project zip from the **Export as ReactNative Zip** dia
 
 ---
 
-### Loading Wavemaker App
+### Loading WaveMaker App
 
 #### Loading WaveMaker App via Intent
 
@@ -234,7 +234,7 @@ private Bundle getLaunchOptions(String pageName) {
 ```
 
 :::note
-we can pass initialProperties to the WaveMaker app as shown above by updating the **`getLaunchOptions()`** method inside **`ReactNativeAppFragment.java`**, and these initialProperties can be accessed, by using **`App.props`** in Wavemaker App - Script.
+we can pass initialProperties to the WaveMaker app as shown above by updating the **`getLaunchOptions()`** method inside **`ReactNativeAppFragment.java`**, and these initialProperties can be accessed, by using **`App.props`** in WaveMaker App - Script.
 :::
 
 ```js
@@ -547,9 +547,9 @@ Add the following to SceneDelegate
 var window: UIWindow?
 ```
 
-### Loading Wavemaker App
+### Loading WaveMaker App
 
-#### Loading Wavemaker App as Page
+#### Loading WaveMaker App as Page
 
 ###### ViewController
 
@@ -579,7 +579,7 @@ var window: UIWindow?
 
 ---
 
-#### Loading Wavemaker App as Fragment
+#### Loading WaveMaker App as Fragment
 
 ###### ViewController
 
@@ -606,7 +606,7 @@ var window: UIWindow?
 ```
 
 :::note
-we can pass initialProperties to the WaveMaker app as shown above, and these initialProperties can be accessed, by using **`App.props`** in Wavemaker App - Script.
+we can pass initialProperties to the WaveMaker app as shown above, and these initialProperties can be accessed, by using **`App.props`** in WaveMaker App - Script.
 :::
 
 ```js
@@ -621,7 +621,7 @@ App.getLaunchOptions = function () {
 
 ---
 
-#### Wavemaker-Native Communication
+#### WaveMaker-Native Communication
 
 ###### ViewController
 
