@@ -29,4 +29,4 @@ The default zoom level is set to 85% in which the entire app screen will be full
 ### Wider range - 
 The maximum zoom-out level is 50%, while the maximum zoom-in level is 120%, offering a broader range of viewing options than before.
 
-[![Example of a zoomed-out view (80%) using the new Zoom Level settings](/learn/assets/zoom-level-settings/zoom-on-canvas.png)](/learn/assets/zoom-level-settings/zoom-on-canvas.png)
+[![Example of a zoomed-out view (85%) using the new Zoom Level settings](/learn/assets/zoom-level-settings/zoom-on-canvas.png)](/learn/assets/zoom-level-settings/zoom-on-canvas.png)
