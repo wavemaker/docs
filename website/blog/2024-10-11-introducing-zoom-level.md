@@ -1,5 +1,5 @@
 ---
-title: "Introducing Zoom Level: Replacing MDPI Options for Enhanced Canvas Control"
+title: "Introducing Zoom Level in Studio Canvas"
 author: "Vasundhara Kondareddy "
 ---
 ---
@@ -15,12 +15,16 @@ Currently, WaveMaker Studio offers two layout options for the canvas size, as ou
 ### 2. Laptop with MDPI Screen -
    This layout displays the app screen at MDPI resolution, which may be higher than your current screen resolution, providing a more realistic view of the actual app resolution.
 
-[![New Zoom Level options replacing previous MDPI settings](/learn/assets/zoom-level-settings/layout-options.png)](/learn/assets/zoom-level-settings/layout-options.png)
+[![Old Zoom options replacing previous MDPI settings](/learn/assets/zoom-level-settings/layout-options.png)](/learn/assets/zoom-level-settings/layout-options.png)
 
 <!-- truncate -->
 
 ## Replacing MDPI options with Zoom Level Settings
-We're transitioning from the previous MDPI-based options to a more versatile Zoom Level approach. This change offers several advantages:
+We're transitioning from the previous MDPI-based options to a more versatile Zoom Level approach.
+
+[![New Zoom options replacing previous MDPI settings](/learn/assets/zoom-level-settings/zoom-options.png)](/learn/assets/zoom-level-settings/zoom-options.png)
+
+This change offers several advantages:
 
 ### More precise control -
 Instead of fixed MDPI presets, you can now adjust the zoom level in finer increments.
@@ -30,3 +34,5 @@ The default zoom level is set to 85% in which the entire app screen will be full
 The maximum zoom-out level is 50%, while the maximum zoom-in level is 120%, offering a broader range of viewing options than before.
 
 [![Example of a zoomed-out view (85%) using the new Zoom Level settings](/learn/assets/zoom-level-settings/zoom-on-canvas.png)](/learn/assets/zoom-level-settings/zoom-on-canvas.png)
+
+Regardless of the selected zoom level, developers can continue using the canvas for development tasks, such as drag and drop, without any disruptions.
