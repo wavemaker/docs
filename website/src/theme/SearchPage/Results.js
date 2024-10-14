@@ -15,7 +15,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 import React from 'react';
 import { Snippet } from '@docsearch/react/dist/esm/Snippet';
 export function Results(props) {
-  if (!props.collection || props.collection.items.length === 0 || !props.collection.items[0]["hierarchy"]["lvl1"]) {
+  if (!props.collection || props.collection.items.length === 0) {
     return null;
   }
   return /*#__PURE__*/React.createElement("section", {
@@ -75,7 +75,7 @@ function Result(_ref) {
     hit: item
   }, /*#__PURE__*/React.createElement("div", {
     className: "DocSearch-Hit-Container"
-  }, item.hierarchy['lvl1'] && React.createElement("div", {
+  }, item.hierarchy['lvl1'] || item.hierarchy['lvl2'] && React.createElement("div", {
     className: "DocSearch-Hit-content-wrapper"
   }, /*#__PURE__*/React.createElement("span", {
     className: "search-value",
