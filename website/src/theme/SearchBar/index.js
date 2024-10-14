@@ -169,7 +169,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
         })}
         {...props}
         searchParameters={searchParameters}
-        filters={'version:' + useActivePluginAndVersion().activeVersion.name}
+        filters={'version:' + useActivePluginAndVersion().activeVersion.name +' OR docusaurus_tag:blog_posts_list'}
         // placeholder={translations.placeholder}
         // translations={translations.modal}
       />
