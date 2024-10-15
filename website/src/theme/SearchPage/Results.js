@@ -75,7 +75,7 @@ function Result(_ref) {
     hit: item
   }, /*#__PURE__*/React.createElement("div", {
     className: "DocSearch-Hit-Container"
-  }, item.hierarchy['lvl1'] || item.hierarchy['lvl2'] && React.createElement("div", {
+  }, ((item.hierarchy['lvl1'] && item.docusaurus_tag == "docs-default-current") || item.docusaurus_tag == "blog_posts_list") && React.createElement("div", {
     className: "DocSearch-Hit-content-wrapper"
   }, /*#__PURE__*/React.createElement("span", {
     className: "search-value",
