@@ -143,7 +143,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.8.5](/learn/wavemaker-release-notes/v11-8-5)
+Last updated: [WaveMaker 11.9.0](/learn/wavemaker-release-notes/v11-9-0)
 
 ---
 
@@ -167,16 +167,16 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | 5.3.39 |
-| Security framework | Spring Security | 5.8.14 |
+|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.39 -> 6.1.13 </td> |
+| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.14 -> 6.3.3 </td>|
 | Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL | 2.7.3 |
 | JSON library | Jackson |  2.17.2  |
-| Logging framework | SLF4j | 1.7.36 |
-| Logging Implementation | Log4j2 | 2.18.0|
+| Logging framework | SLF4j | <td className="versiontdbgcolor">  1.7.36 -> 2.0.16 </td> |
+| Logging Implementation | Log4j2 | <td className="versiontdbgcolor"> 2.18.0 -> 2.24.1 </td> |
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
-| Servlet Framework |  | 4.0.4 |
+| Servlet Framework |  | <td className="versiontdbgcolor"> 4.0.4 -> 6.0.0 </td> |
 | Database Connection Pooling | HikariCP | 5.1.0 |
 |  | Commons Lang3 | 3.17.0 |
 |  | Guava | 33.3.0-jre |
@@ -189,8 +189,8 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | JDK | 11 |
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
-| Tomcat | 9.0.87 |
-| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> <td className="versiontdbgcolor">17.5 </td> |
+| Tomcat | <td className="versiontdbgcolor"> 9.0.93 -> 10.1.30 </td>|
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> 17.5 |
 
 :::note
 - Cordova-iOS supports from iOS 16.
@@ -216,14 +216,14 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 
 |Description|	Version|
 |---|---|
-|Java | 11 |
+|Java | <td className="versiontdbgcolor"> 11 -> 17 </td> |
 |Node|18.16.1|
-|Maven| 3.9.8 |
+|Maven| <td className="versiontdbgcolor"> 3.9.8 -> 3.9.9  </td> |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 | Android Studio | Ladybug 2024.2.1 |
-| SDK Build Tools | <td className="versiontdbgcolor"> 34.0.0 </td> |
-| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.5 </td> |
+| SDK Build Tools | 34.0.0|
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | 1.8.5 |
 | Android Gradle Plugin (AGP) | 8.3 - 8.7 |
 
 :::note
@@ -245,7 +245,7 @@ Please ensure that your [Android Studio](https://developer.android.com/studio/re
 |---|---|
 |Java | 11 |
 |Node| 18.16.1|
-|Maven| 3.9.8 |
+|Maven| <td className="versiontdbgcolor"> 3.9.8 -> 3.9.9  </td>  |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 
