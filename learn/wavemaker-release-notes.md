@@ -21,6 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
+|[WaveMaker 11.9.0](/learn/wavemaker-release-notes/v11-9-0) <p style={{color:"green"}}>*upcoming*</p> |  WaveMaker release 11.9.0 will be here with major upgrades that includes, maigration to Java 17, Javax to Jakarta namespace, Servlet, Spring & 3rd Party Dependencies Upgrade, Zoom level, and option to switch Java versions. You can also find significant enhancements in FileUpload widget. This release also addresses many bugs in both Web and React Native to make the development smoother and better. |21 October 2024. |
 |[WaveMaker 11.8.5](/learn/wavemaker-release-notes/v11-8-5) <p style={{color:"red"}}>*latest*</p> |  WaveMaker 11.8.5 includes enhancements and bug fixes. React Native can now be embedded into native applications. Skeleton Loader supports Lottie animations, and you can control the visibility of child components. The Dialog widget has a new look. Bug fixes include Git navigation, Datatable events, Theme Updates, and checkbox selection issues. React Native fixes address Wizard widget steps and file upload restrictions. |07 October 2024. |
 |[WaveMaker 11.8.4](/learn/wavemaker-release-notes/v11-8-4) |  WaveMaker 11.8.4 is here with enhancements in Dialogs User Interface(UI), and individual Form field reset properties along with some major bug fixes related to Datatable, Prefab Configuration and so on. This would also include React Native bug fixes related to Donut chart center label, hiding and showing the widgets, starting and stopping animations, File upload restrictions, and so on. |23 September 2024. |
 |[WaveMaker 11.8.3](/learn/wavemaker-release-notes/v11-8-3) |  WaveMaker 11.8.3 is here with enhancements to reduce application loading time and the `gotoStep` function in the Wizard widget, along with several bug fixes. This release also introduces a new CSS class in the Accordion widget, accessibility labels for widgets, and various React Native bug fixes. |09 September 2024. |
@@ -181,12 +182,13 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Commons Lang3 | 3.17.0 |
 |  | Guava | 33.3.0-jre |
 |  | Postgresql Driver  | 42.7.4 |
+|  | Spring Data | <td className="versiontdbgcolor"> 2021.2.18 -> 2024.0.4 </td> |
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
-| JDK | 11 |
+| JDK | <td className="versiontdbgcolor"> 11 -> 17 </td> |
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
 | Tomcat | <td className="versiontdbgcolor"> 9.0.93 -> 10.1.30 </td>|
@@ -243,9 +245,9 @@ Please ensure that your [Android Studio](https://developer.android.com/studio/re
 
 |Description|	Version|
 |---|---|
-|Java | 11 |
+|Java | <td className="versiontdbgcolor"> 11 -> 17 </td> |
 |Node| 18.16.1|
-|Maven| <td className="versiontdbgcolor"> 3.9.8 -> 3.9.9  </td>  |
+|Maven|<td className="versiontdbgcolor"> 3.9.8 -> 3.9.9  </td> |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 
