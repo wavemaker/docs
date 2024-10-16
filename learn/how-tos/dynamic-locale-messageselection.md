@@ -41,12 +41,12 @@ import java.io.IOException;
 import java.io.Printwriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import javax.servlet.*;
+import jakarta.servlet.*;
 import com.wavemaker.runtime.rest.model.HttpResponseDetails;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.http.ResponseEntity;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import org.springframework.web.context.support.WebApplicationContextUtils;
