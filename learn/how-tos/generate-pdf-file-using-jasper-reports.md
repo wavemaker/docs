@@ -211,7 +211,7 @@ id: "generate-pdf-file-using-jasper-reports"
       ```java
       import java.io.*;
       import java.util.HashMap;
-      import javax.servlet.http.HttpServletResponse;
+      import jakarta.servlet.http.HttpServletResponse;
 
       import org.slf4j.Logger;
       import org.slf4j.LoggerFactory;
@@ -596,7 +596,7 @@ id: "generate-pdf-file-using-jasper-reports"
         ```java
         import java.io.*;
         import java.util.HashMap;
-        import javax.servlet.http.HttpServletResponse;
+        import jakarta.servlet.http.HttpServletResponse;
 
         import org.slf4j.Logger;
         import org.slf4j.LoggerFactory;

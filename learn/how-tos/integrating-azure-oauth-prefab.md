@@ -109,7 +109,7 @@ Page.AzureOAuth2Accesstokenfetch = function($event, $data) {
 1. Create a Java Service MyAuthenticationManager by implementing a WMCustomAuthenticationManager interface.
 
 ```java
-    import javax.servlet.http.HttpServletRequest;
+    import jakarta.servlet.http.HttpServletRequest;
     import org.slf4j.Logger;
     import org.slf4j.LoggerFactory;
     import org.springframework.beans.factory.annotation.Autowired;

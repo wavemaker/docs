@@ -114,7 +114,7 @@ Create a new java file with given package structure and copy code to the created
           import org.slf4j.Logger;
           import org.slf4j.LoggerFactory;
           import io.opentelemetry.api.trace.Span;
-          import javax.servlet.http.HttpServletResponse;
+          import jakarta.servlet.http.HttpServletResponse;
           import org.springframework.beans.factory.annotation.Autowired;
           public class LogAspect {
 

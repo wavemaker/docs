@@ -99,8 +99,8 @@ public void sendWhatsAppMessage(String toPhoneNumber, String messageBody){
 ### Twilio Responding to your SMS/MMS/WhatsApp Message
 Receive and respond back to the device from twilio (here in the below example when twilio receives message from the user then it registers a complaint into the db and returns back the complaint details to the user device).
 ```Java
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import com.wavemaker.connector.twilio.TwilioMessageListener;
 import com.wavemaker.connector.twilio.model.TwilioMessage;
 ```

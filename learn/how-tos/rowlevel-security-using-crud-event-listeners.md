@@ -49,7 +49,7 @@ In the following lines of code, we perform the logged-in user role checks and se
 package com.employeeproject.prefetchvacation;
 
 import java.util.*;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

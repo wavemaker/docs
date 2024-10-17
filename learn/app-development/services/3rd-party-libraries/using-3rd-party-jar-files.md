@@ -17,12 +17,12 @@ You can import external JAR files and use them in your apps, just like how you w
 3. Add the **import** statements for the required classes in your Java Service file. In this example, we have used the _mail.jar_, the package details of which can be found at [https://javamail.java.net/nonav/docs/api/](https://javamail.java.net/nonav/docs/api/). To use this jar file to send emails we will be using the following code in the Java Service file after adding the import statements for the required class files:
 ```   
     import java.util.Properties;
-    import javax.mail.Message;
-    import javax.mail.MessagingException;
-    import javax.mail.Session;
-    import javax.mail.Transport;
-    import javax.mail.internet.InternetAddress;
-    import javax.mail.internet.MimeMessage;   
+    import jakarta.mail.Message;
+    import jakarta.mail.MessagingException;
+    import jakarta.mail.Session;
+    import jakarta.mail.Transport;
+    import jakarta.mail.internet.InternetAddress;
+    import jakarta.mail.internet.MimeMessage;   
 
 public String sendEmail(String userName, String password, String toEmailAddress,  String emailSubject, String emailMessage) {
     try {

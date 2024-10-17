@@ -229,7 +229,7 @@ The AuthRequestContext has the following structure.
 ```java  
 package com.wavemaker.runtime.security;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.Serializable;
 
 public class AuthRequestContext implements Serializable {
@@ -281,7 +281,7 @@ import java.util.List;
 import java.util.List;
 import java.util.ArrayList;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import com.wavemaker.runtime.security.WMCustomAuthenticationManager;
 import com.wavemaker.runtime.security.WMUser;

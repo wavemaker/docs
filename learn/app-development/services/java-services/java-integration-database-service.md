@@ -71,7 +71,7 @@ Let us see a simple example of interacting with the hrdb database in Java servi
 ```Java
 package com.wavemaker.hrdbexample;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

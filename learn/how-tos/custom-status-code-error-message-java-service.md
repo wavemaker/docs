@@ -12,11 +12,11 @@ In Java Service, you can customize the status code to be thrown as the response 
 
 ### Import the Necessary Classes
 
-To set a custom status code, you will need to import the `javax.servlet.http.HttpServletResponse` class. In the Java service method, you can include this object as a parameter along with the `HttpServletRequest` object.
+To set a custom status code, you will need to import the `jakarta.servlet.http.HttpServletResponse` class. In the Java service method, you can include this object as a parameter along with the `HttpServletRequest` object.
 
 ```java
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 ```
 
 ### Example to Set Status Code
