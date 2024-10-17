@@ -22,7 +22,10 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.8.2** <p style={{color:"red"}}>*latest*</p> | - [v11.8.2](/learn/wavemaker-release-notes/v11-8-2) |WaveMaker release 11.8.2 is a bug fix release which includes the enhancements in FileUpload widget, API Orchestration, and few bug fixes. This release also includes new CSS classes for Chart widget and other React Native fixes related to the Show property, Currency widget, Ripple effect, and Wizard widget. | 26 August 2024 |
+|**v11.8.5** <p style={{color:"red"}}>*latest*</p> | - [v11.8.5](/learn/wavemaker-release-notes/v11-8-5) | WaveMaker 11.8.5 includes enhancements and bug fixes. React Native can now be embedded into native applications. Skeleton Loader supports Lottie animations, and you can control the visibility of child components. The Dialog widget has a new look. Bug fixes include Git navigation, Datatable events, Theme Updates, and checkbox selection issues. React Native fixes address Wizard widget steps and file upload restrictions. |07 October 2024. |
+|**v11.8.4** | - [v11.8.4](/learn/wavemaker-release-notes/v11-8-4) |WaveMaker 11.8.4 is here with enhancements in Dialogs User Interface(UI), and individual Form field reset properties along with some major bug fixes related to Datatable, Prefab Configuration and so on. This would also include React Native bug fixes related to Donut chart center label, hiding and showing the widgets, starting and stopping animations, File upload restrictions, and so on. |23 September 2024. |
+|**v11.8.3** | - [v11.8.3](/learn/wavemaker-release-notes/v11-8-3) |WaveMaker 11.8.3 is here with enhancements to reduce application loading time and the `gotoStep` function in the Wizard widget, along with several bug fixes. This release also introduces a new CSS class in the Accordion widget, accessibility labels for widgets, and various React Native bug fixes.| 09 September 2024 |
+|**v11.8.2** | - [v11.8.2](/learn/wavemaker-release-notes/v11-8-2) |WaveMaker release 11.8.2 is a bug fix release which includes the enhancements in FileUpload widget, API Orchestration, and few bug fixes. This release also includes new CSS classes for Chart widget and other React Native fixes related to the Show property, Currency widget, Ripple effect, and Wizard widget. | 26 August 2024 |
 |**v11.8.1** | - [v11.8.1](/learn/wavemaker-release-notes/v11-8-1) |WaveMaker release 11.8.1 is majorly a bug fix release which includes the issues with vulnerability and other User Interface (UI) issues. This release also has a new CSS class for Lottie Player and a few React Native and Cordova bug fixes. | 12 August 2024 |
 |**v11.8.0** | - [v11.8.0](/learn/wavemaker-release-notes/v11-8-0) |WaveMaker release 11.8.0, includes includes significant upgrades like Angular 17 and Expo 50 along with Artifact sharing between WaveMaker Enterprise (WME) setups and  Single Page Application (SPA) behavior as new features. In React Native,  new CSS style classes in Slider widget, setting range in Slider widget, Secure Sockets Layer (SSL) certificate pinning, navigation in Wizard widget, and Wheel date picker are some of the ehancements along with many bug fixes. | 30 Jul 2024 |
 |**v11.7.5** | - [v11.7.5](/learn/wavemaker-release-notes/v11-7-5) |WaveMaker release 11.7.5, includes essential bug fixes. | 08 Jul 2024 |
@@ -74,7 +77,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [v11.8.2](/learn/wavemaker-release-notes/v11-8-2)
+Last updated: [v11.8.5](/learn/wavemaker-release-notes/v11-8-5)
 
 ---
 
@@ -98,8 +101,8 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- | --- |
-|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.37 -> 5.3.39 </td> |
-| Security framework | Spring Security |  <td className="versiontdbgcolor"> 5.8.13 -> 5.8.14 </td> |
+|  | Spring Framework | 5.3.39 |
+| Security framework | Spring Security | 5.8.14 |
 | Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate | 5.6.15.Final |
 | Sample database | HSQL | 2.7.3 |
@@ -109,8 +112,10 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | Http client library  | HttpComponents -  httpclient |  4.5.14 |
 | Servlet Framework |  | 4.0.4 |
 | Database Connection Pooling | HikariCP | 5.1.0 |
-|  | Commons Lang3 | <td className="versiontdbgcolor"> 3.15.0 -> 3.16.0 </td> |
-|  | Guava | <td className="versiontdbgcolor"> 33.2.1-jre -> 33.3.0-jre </td> |
+|  | Commons Lang3 | 3.17.0 |
+|  | Guava | 33.3.0-jre |
+|  | Postgresql Driver  | 42.7.4 |
+
 
 ### Runtime Environment
 
@@ -120,7 +125,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere Liberty | 19.0.0.1+ |
 | JBoss Wildfly | 15+ |
 | Tomcat | 9.0.87 |
-| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> 7.1.0 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> <td className="versiontdbgcolor">17.5 </td> |
 
 :::note
 - Cordova-iOS supports from iOS 16.
@@ -142,14 +147,32 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 
 ### React Native 11
 
+#### Environment Setup
+
 |Description|	Version|
 |---|---|
-|Java |11 |
+|Java | 11 |
 |Node|18.16.1|
 |Maven| 3.9.8 |
 |npm | 9.5.1|
 |Ant| 1.10.11|
+| Android Studio | Ladybug 2024.2.1 |
+| SDK Build Tools | <td className="versiontdbgcolor"> 34.0.0 </td> |
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.5 </td> |
+| Android Gradle Plugin (AGP) | 8.3 - 8.7 |
 
+:::note
+It is required to use Android Studio version be **Iguana | 2023.2.1** or above and Android Gradle Plugin(AGP) version be **8.3** and above. The recommended versions for Android Studio is **Ladybug | 2024.2.1** and AGP is **8.3**.
+
+Please ensure that your [Android Studio](https://developer.android.com/studio/releases#android_gradle_plugin_and_android_studio_compatibility) has a compatible version of the [AGP](https://developer.android.com/build/releases/past-releases/agp-8-3-0-release-notes#compatibility). Additionally, verify the compatibility of the AGP with the SDK build tools version, JDK, and Gradle version.
+:::
+
+#### SDK Update
+
+|Description|	Version|
+|---|---|
+| Expo | 50.0.17 |
+| React Native | 0.73.6 |
 
 ### Angular Web and Mobile 11
 
