@@ -24,6 +24,7 @@ frontend:
       - '**/*'
   cache:
     paths:
+     - /website/build/learn/**/*
      - node_modules/**/*
 test:
   artifacts:
