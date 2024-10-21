@@ -147,7 +147,7 @@ public void generatePdfReport(String jrxml, String database,HttpServletResponse 
 3. Add the following `import files`.
 
 ```java
-import javax.servlet.http.*;
+import jakarta.servlet.http.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -163,7 +163,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.sql.Connection;
 import java.util.HashMap;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;

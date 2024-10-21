@@ -142,9 +142,9 @@ If you want to use the method, you should have a **template** with name **invita
 Required import statements
 
 ```java
-    import javax.mail.internet.MimeBodyPart;
-    import javax.mail.internet.MimeMessage;
-    import javax.mail.internet.MimeMultipart;
+    import jakarta.mail.internet.MimeBodyPart;
+    import jakarta.mail.internet.MimeMessage;
+    import jakarta.mail.internet.MimeMultipart;
     import org.springframework.mail.javamail.MimeMessageHelper;
     import org.springframework.mail.javamail.MimeMessagePreparator;
 ```
@@ -243,7 +243,7 @@ If you want to add or customize any other existing email properties in addition 
 - Add the below Import statement to the Java Service.
 
 ```java
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 ```
 
 - Add the below code snippet to your Java Service. Here, we are setting the `mail.smtp.starttls.enable` property of **emailconnector** to false.

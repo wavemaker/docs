@@ -31,7 +31,7 @@ You need to import a few class files, as given below.
 ```
 import org.springframework.web.multipart.MultipartFile;
 import com.wavemaker.runtime.file.model.DownloadResponse;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.File;
 ```
 

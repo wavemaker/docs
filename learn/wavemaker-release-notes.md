@@ -21,8 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.9.0](/learn/wavemaker-release-notes/v11-9-0) <p style={{color:"green"}}>*upcoming*</p> |  WaveMaker release 11.9.0 will be here with major upgrades that includes, migration to Java 17, Javax to Jakarta namespace, Servlet, Spring & 3rd Party Dependencies Upgrade, Zoom level, and option to switch Java versions. You can also find significant enhancements in FileUpload widget. This release also addresses many bugs in both Web and React Native to make the development smoother and better. |21 October 2024. |
-|[WaveMaker 11.8.5](/learn/wavemaker-release-notes/v11-8-5) <p style={{color:"red"}}>*latest*</p> |  WaveMaker 11.8.5 includes enhancements and bug fixes. React Native can now be embedded into native applications. Skeleton Loader supports Lottie animations, and you can control the visibility of child components. The Dialog widget has a new look. Bug fixes include Git navigation, Datatable events, Theme Updates, and checkbox selection issues. React Native fixes address Wizard widget steps and file upload restrictions. |07 October 2024. |
+|[WaveMaker 11.9.0](/learn/wavemaker-release-notes/v11-9-0) <p style={{color:"red"}}>*latest*</p> |  WaveMaker release 11.9.0 is here with major upgrades that includes, migration to Java 17, Javax to Jakarta namespace, Servlet, Spring & 3rd Party Dependencies Upgrade, Zoom level, and option to switch Java versions. You can also find significant enhancements in FileUpload widget. This release also addresses many bugs in both Web and React Native to make the development smoother and better. |21 October 2024. |
+|[WaveMaker 11.8.5](/learn/wavemaker-release-notes/v11-8-5) |  WaveMaker 11.8.5 includes enhancements and bug fixes. React Native can now be embedded into native applications. Skeleton Loader supports Lottie animations, and you can control the visibility of child components. The Dialog widget has a new look. Bug fixes include Git navigation, Datatable events, Theme Updates, and checkbox selection issues. React Native fixes address Wizard widget steps and file upload restrictions. |07 October 2024. |
 |[WaveMaker 11.8.4](/learn/wavemaker-release-notes/v11-8-4) |  WaveMaker 11.8.4 is here with enhancements in Dialogs User Interface(UI), and individual Form field reset properties along with some major bug fixes related to Datatable, Prefab Configuration and so on. This would also include React Native bug fixes related to Donut chart center label, hiding and showing the widgets, starting and stopping animations, File upload restrictions, and so on. |23 September 2024. |
 |[WaveMaker 11.8.3](/learn/wavemaker-release-notes/v11-8-3) |  WaveMaker 11.8.3 is here with enhancements to reduce application loading time and the `gotoStep` function in the Wizard widget, along with several bug fixes. This release also introduces a new CSS class in the Accordion widget, accessibility labels for widgets, and various React Native bug fixes. |09 September 2024. |
 |[WaveMaker 11.8.2](/learn/wavemaker-release-notes/v11-8-2) |  WaveMaker release 11.8.2 is a bug fix release which includes the enhancements in FileUpload widget, API Orchestration, and few bug fixes. This release also includes new CSS classes for Chart widget and other React Native fixes related to the Show property, Currency widget, Ripple effect, and Wizard widget. |26 August 2024 |
@@ -171,7 +171,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Spring Framework | <td className="versiontdbgcolor"> 5.3.39 -> 6.1.13 </td> |
 | Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.14 -> 6.3.3 </td>|
 | Java JSON utilities | Gson  | 2.11.0 |
-| DB Persistence library | Hibernate | 5.6.15.Final |
+| DB Persistence library | Hibernate(Jakarta) | 5.6.15.Final |
 | Sample database | HSQL | 2.7.3 |
 | JSON library | Jackson |  2.17.2  |
 | Logging framework | SLF4j | <td className="versiontdbgcolor">  1.7.36 -> 2.0.16 </td> |
@@ -183,15 +183,17 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Guava | 33.3.0-jre |
 |  | Postgresql Driver  | 42.7.4 |
 |  | Spring Data | <td className="versiontdbgcolor"> 2021.2.18 -> 2024.0.4 </td> |
+|  | Hibernate Validator | <td className="versiontdbgcolor"> 6.2.5.Final -> 8.0.1.Final </td> |
+|  | Http Client 5 | <td className="versiontdbgcolor"> 5.4 </td> |
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
 | JDK | <td className="versiontdbgcolor"> 11 -> 17 </td> |
-| WebSphere Liberty | 19.0.0.1+ |
-| JBoss Wildfly | 15+ |
-| Tomcat | <td className="versiontdbgcolor"> 9.0.93 -> 10.1.30 </td>|
+| WebSphere Liberty | <td className="versiontdbgcolor"> 19.0.0.1+ -> 23.0.0.9+ </td> |
+| JBoss Wildfly | <td className="versiontdbgcolor"> 15+ -> 27+ </td> |
+| Tomcat | <td className="versiontdbgcolor"> 9.0.93 -> 10.1.31 </td>|
 | Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> 17.5 |
 
 :::note
