@@ -134,7 +134,7 @@ import com.wavemaker.runtime.security.WMCustomAuthenticationManager;
 import com.wavemaker.runtime.security.WMUser;
 
 import org.springframework.security.core.AuthenticationException;
-import javax.servlet.http.*;
+import jakarta.servlet.http.*;
 import java.util.*;
 public class CognitoUPoolLogin implements WMCustomAuthenticationManager {
 
