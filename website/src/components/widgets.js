@@ -694,14 +694,6 @@ const WidgetTabItems = () => {
           "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/instagram/",
           "api": ""
         },
-        {
-          "lightIcon": "/learn/img/linkedin.svg",
-          "darkIcon": "/learn/img/linkedinDark.svg",
-          "label": "",
-          "body": " Use this Prefab to enable user authorization using their LinkedIn credentials. ",
-          "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/",
-          "api": ""
-        }
       ]
     },
     {

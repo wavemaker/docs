@@ -51,4 +51,3 @@ In order to use the **Facebook** OAuth prefab, please follow the below steps: Di
     - [9.4.2 Facebook](#)
     - [9.4.3 Google](/learn/app-development/widgets/prefab/oauth-prefabs/google/)
     - [9.4.4 Instagram](/learn/app-development/widgets/prefab/oauth-prefabs/instagram/)
-    - [9.4.5 LinkedIn](/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/)
