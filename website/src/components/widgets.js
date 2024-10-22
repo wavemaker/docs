@@ -671,14 +671,6 @@ const WidgetTabItems = () => {
           "api": ""
         },
         {
-          "lightIcon": "/learn/img/facebook.svg",
-          "darkIcon": "/learn/img/facebookDark.svg",
-          "label": "",
-          "body": " Use this Prefab to enable user authorization using their FaceBook credentials. ",
-          "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/facebook/",
-          "api": ""
-        },
-        {
           "lightIcon": "/learn/img/button.svg",
           "darkIcon": "/learn/img/button.svg",
           "label": "",
