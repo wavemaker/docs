@@ -1507,9 +1507,7 @@
 					"label": "OAuth",
 					"items": [
 						"app-development/widgets/prefab/oauth-prefabs",
-						"app-development/widgets/prefab/oauth-prefabs/box",
-						"app-development/widgets/prefab/oauth-prefabs/google",
-						"app-development/widgets/prefab/oauth-prefabs/instagram"
+						"app-development/widgets/prefab/oauth-prefabs/box"
 					]
 				},
 				{

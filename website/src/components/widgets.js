@@ -670,22 +670,6 @@ const WidgetTabItems = () => {
           "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/box/",
           "api": ""
         },
-        {
-          "lightIcon": "/learn/img/button.svg",
-          "darkIcon": "/learn/img/button.svg",
-          "label": "",
-          "body": " Use this Prefab to enable user authorization using their Google credentials. ",
-          "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/google/",
-          "api": ""
-        },
-        {
-          "lightIcon": "/learn/img/instagram.svg",
-          "darkIcon": "/learn/img/instagramDark.svg",
-          "label": "",
-          "body": " Use this Prefab to enable user authorization using their Instagram credentials. ",
-          "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/instagram/",
-          "api": ""
-        },
       ]
     },
     {
