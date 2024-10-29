@@ -21,6 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
+|[WaveMaker 11.9.0](/learn/wavemaker-release-notes/v11-9-0) <p style={{color:"green"}}>*upcoming*</p> |  WaveMaker release 11.9.1 will focus primarily on bug fixes. It addresses key issues related to the Database Designer, FileUpload widget, and various other components. Additionally, this release includes several important fixes for React Native. |04 November 2024. |
 |[WaveMaker 11.9.0](/learn/wavemaker-release-notes/v11-9-0) <p style={{color:"red"}}>*latest*</p> |  WaveMaker release 11.9.0 is here with major upgrades that includes, migration to Java 17, Javax to Jakarta namespace, Servlet, Spring & 3rd Party Dependencies Upgrade, Zoom level, and option to switch Java versions. You can also find significant enhancements in FileUpload widget. This release also addresses many bugs in both Web and React Native to make the development smoother and better. |21 October 2024. |
 |[WaveMaker 11.8.5](/learn/wavemaker-release-notes/v11-8-5) |  WaveMaker 11.8.5 includes enhancements and bug fixes. React Native can now be embedded into native applications. Skeleton Loader supports Lottie animations, and you can control the visibility of child components. The Dialog widget has a new look. Bug fixes include Git navigation, Datatable events, Theme Updates, and checkbox selection issues. React Native fixes address Wizard widget steps and file upload restrictions. |07 October 2024. |
 |[WaveMaker 11.8.4](/learn/wavemaker-release-notes/v11-8-4) |  WaveMaker 11.8.4 is here with enhancements in Dialogs User Interface(UI), and individual Form field reset properties along with some major bug fixes related to Datatable, Prefab Configuration and so on. This would also include React Native bug fixes related to Donut chart center label, hiding and showing the widgets, starting and stopping animations, File upload restrictions, and so on. |23 September 2024. |
@@ -144,7 +145,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.9.0](/learn/wavemaker-release-notes/v11-9-0)
+Last updated: [WaveMaker 11.9.1](/learn/wavemaker-release-notes/v11-9-1)
 
 ---
 
@@ -168,31 +169,32 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version                                                            |
 | --- | --- |--------------------------------------------------------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 5.3.39 -> 6.1.13 </td>           |
-| Security framework | Spring Security | <td className="versiontdbgcolor"> 5.8.14 -> 6.3.3 </td>            |
+|  | Spring Framework | <td className="versiontdbgcolor"> 6.1.13 -> 6.1.14 </td>           |
+| Security framework | Spring Security | <td className="versiontdbgcolor"> 6.3.3 -> 6.4.4 </td>            |
+|  | Spring Data | <td className="versiontdbgcolor"> 2024.0.4 -> 2024.0.5 </td>      |
+|  | Spring Session | <td className="versiontdbgcolor"> 3.3.2 -> 3.3.3 </td> |
 | Java JSON utilities | Gson  | 2.11.0                                                             |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15.Final                                                       |
-| Sample database | HSQL | 2.7.3                                                              |
-| JSON library | Jackson | <td className="versiontdbgcolor"> 2.17.2 -> 2.18.0 </td>           |
-| Logging framework | SLF4j | <td className="versiontdbgcolor">  1.7.36 -> 2.0.16 </td>          |
-| Logging Implementation | Log4j2 | <td className="versiontdbgcolor"> 2.18.0 -> 2.24.1 </td>           |
-| Http client library  | HttpComponents -  httpclient | <td className="versiontdbgcolor"> 4.5.14 -> 5.4 </td>              |
-| Servlet Framework |  | <td className="versiontdbgcolor"> 4.0.4 -> 6.0.0 </td>             |
-| Database Connection Pooling | HikariCP | <td className="versiontdbgcolor"> 6.0.0  </td>                     |                                                           |
-|  | Commons Lang3 | 3.17.0                                                             |
-|  | Guava | <td className="versiontdbgcolor"> 33.3.1-jre </td>                 |
+| Sample database | HSQL | 2.7.3 |
+| JSON library | Jackson | 2.18.0 |
+| Logging framework | SLF4j | 2.0.16 |
+| Logging Implementation | Log4j2 | 2.24.1 |
+| Http client library  | HttpComponents -  httpclient | 5.4 |
+| Servlet Framework |  | 6.0.0 |
+| Database Connection Pooling | HikariCP | 6.0.0  |
+|  | Commons Lang3 | 3.17.0  |
+|  | Guava | 33.3.1-jre |
 |  | Postgresql Driver  | 42.7.4                                                             |
-|  | Spring Data | <td className="versiontdbgcolor"> 2021.2.18 -> 2024.0.4 </td>      |
-|  | Hibernate Validator | <td className="versiontdbgcolor"> 6.2.5.Final -> 8.0.1.Final </td> |
+|  | Hibernate Validator | 8.0.1.Final |
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
-| JDK | <td className="versiontdbgcolor"> 11 -> 17 </td> |
-| WebSphere Liberty | <td className="versiontdbgcolor"> 19.0.0.1+ -> 23.0.0.9+ </td> |
-| JBoss Wildfly | <td className="versiontdbgcolor"> 15+ -> 27+ </td> |
-| Tomcat | <td className="versiontdbgcolor"> 9.0.93 -> 10.1.31 </td>|
+| JDK | 17 |
+| WebSphere Liberty | 23.0.0.9+ |
+| JBoss Wildfly | 27+ |
+| Tomcat | 10.1.31 |
 | Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> 17.5 |
 
 :::note
@@ -219,9 +221,9 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 
 |Description|	Version|
 |---|---|
-|Java | <td className="versiontdbgcolor"> 11 -> 17 </td> |
+|Java | 17 |
 |Node|18.16.1|
-|Maven| <td className="versiontdbgcolor"> 3.9.8 -> 3.9.9  </td> |
+|Maven| 3.9.9 |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 | Android Studio | Ladybug 2024.2.1 |
@@ -246,9 +248,9 @@ Please ensure that your [Android Studio](https://developer.android.com/studio/re
 
 |Description|	Version|
 |---|---|
-|Java | <td className="versiontdbgcolor"> 11 -> 17 </td> |
+|Java | 17 |
 |Node| 18.16.1|
-|Maven|<td className="versiontdbgcolor"> 3.9.8 -> 3.9.9  </td> |
+|Maven| 3.9.9 |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 
