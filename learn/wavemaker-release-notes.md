@@ -172,7 +172,6 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Spring Framework | <td className="versiontdbgcolor"> 6.1.13 -> 6.1.14 </td>           |
 | Security framework | Spring Security | <td className="versiontdbgcolor"> 6.3.3 -> 6.4.4 </td>            |
 |  | Spring Data | <td className="versiontdbgcolor"> 2024.0.4 -> 2024.0.5 </td>      |
-|  | Spring Session | <td className="versiontdbgcolor"> 3.3.2 -> 3.3.3 </td> |
 | Java JSON utilities | Gson  | 2.11.0                                                             |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15.Final                                                       |
 | Sample database | HSQL | 2.7.3 |
