@@ -11,6 +11,8 @@ In our commitment to keeping WaveMaker Studio fresh and user-friendly, we’ve a
 ## Why the Gift Box?
 We understand that our users want timely information on updates to make the most of WaveMaker Studio. With the Gift Box, we’re making it simple and accessible for you to know what’s changed.
 
+<!-- truncate -->
+
 ## How It Works
 
 * **Icon with Badge Notifications:** The Gift Box icon will display a badge showing the count of unread updates. 
