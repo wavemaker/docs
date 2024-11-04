@@ -10,6 +10,8 @@ author: "Krishna Rao Chintu"
 
 We’re thrilled to announce the release of WaveMaker Studio 11.9.0, packed with powerful enhancements designed to elevate your app development experience. This release focuses on stack upgrades and compliance with the latest industry standards. 
 
+<!-- truncate -->
+
 ## Highlights of WaveMaker Studio 11.9.0
 
 | Upgrade | Description |
