@@ -24,6 +24,8 @@ Skeleton Loader offers the following benefits.
 ## Prerequisites
 
 Before implementing the Skeleton Loader, the following steps are to be taken.
+- [Skeleton Loader is enabled at Application Level.](#enabling-at-application-level)
+- [Animation resource needs to be uploaded for Lottie animation.](#uploading-animation-resource-file)
 
 ### Enabling at Application Level
 
