@@ -54,14 +54,21 @@ Build a Docker image by using the below Docker command with different build prof
 
 ### Parameters
 - **profile**: The build profile you want to use.
-- **wavemaker_version**: Specify the WaveMaker release version for the application. This parameter is **optional** if omitted, it defaults to the latest version. You can set it to a specific version (e.g., `10.8.0`) if needed.
+- **wavemaker_version**: Specify the WaveMaker release version for the application. This parameter is **optional** if omitted, it defaults to the latest version. You can set it to a specific version (e.g., `11.9.1`) if needed.
 
 ```Docker
 docker build --build-arg profile=<deployment-profile> --build-arg wavemaker_version=<wavemaker_version> -t <imagename:version> <project_location>
 ```
+To use the latest version, simply omit the `wavemaker_version` parameter:
 
+Example with Latest version:
 ```bash
-example: docker image build --build-arg build_profile_name=deployment -t wmimage:1.0 .
+docker build --build-arg profile=deployment -t wmimage:1.0 .
+```
+
+Example with specific version:
+```bash
+docker build --build-arg profile=deployment --build-arg wavemaker_version=11.9.1 -t wmimage:1.0 .
 ```
 
 For more information, see [Development Profile](/learn/app-development/deployment/configuration-profiles#development-configuration-profile) and [Deployment Profile](/learn/app-development/deployment/configuration-profiles#deployment-configuration-profile).
@@ -77,11 +84,12 @@ You can provide any `host_port`. For example, `80`. The internal port of the con
 :::
 
 ```Docker
-docker container run --name <containername> -d -p <host_port>:8080 <imagename:version>
+docker run --name <containername> -d -p <host_port>:8080 <imagename:version>
 ```
 
+Example:
 ```bash
-example: docker container run --name wmapp -d -p 80:8080 wmimage:1.0
+docker run --name wmapp -d -p 80:8080 wmimage:1.0
 ```
 
 ### Access Application
@@ -106,8 +114,9 @@ Run the following Docker command, replacing `<your_project_location>` with the p
 docker run --rm -e profile=<profile_name> -v <your_project_location>:/usr/local/content/app wavemakerapp/app-builder:<wavemaker_version>
 ```
 
+Example:
 ```bash
-example: docker container run -d --name wm-app -v /home/user/MySampleApp:/usr/local/content/app wavemakerapp/app-builder
+docker run -rm -e profile=deployment -v /home/user/MySampleApp:/usr/local/content/app wavemakerapp/app-builder
 ```
 
 This command mounts your project directory to the container, builds the application, and generates the WAR file in the specified directory.
@@ -126,8 +135,9 @@ docker run --rm -e profile=<profile_name> -e MAVEN_CONFIG=$HOME/.m2 \
    wavemaker/app-builder:<wavemaker_version>
 ```
 
+Example:
 ```bash
-example: docker run --rm -e profile=<profile_name> -e MAVEN_CONFIG=$HOME/.m2 \
+docker run --rm -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 \
    -v ~/.m2:$HOME/.m2 \
    -v ~/.npm:$HOME/.npm \
    -v /home/user/MySampleApp:/usr/local/content/app \
@@ -150,11 +160,12 @@ example: docker run --rm -e profile=<profile_name> -e MAVEN_CONFIG=$HOME/.m2 \
 - For deploying project war using Tomcat Docker container, please use the below command.
 
 ```bash
-docker container run -d --name <container_name> -v <your_project_location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 wavemakerapp/app-runtime-tomcat:<wavemaker_version>
+docker run -d --name <container_name> -v <your_project_location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 wavemakerapp/app-runtime-tomcat:<wavemaker_version>
 ```
 
+Example:
 ```bash
-example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 wavemakerapp/app-runtime-tomcat:<wavemaker_version>
+docker run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 wavemakerapp/app-runtime-tomcat:<wavemaker_version>
 ```
 
 ### Access Application
@@ -173,7 +184,7 @@ The wavemakerapp/app-builder & wavemakerapp/app-runtime-tomcat Docker image is p
 - Using the app-builder Docker image, users can generate war files for WaveMaker applications.
 - Using the app-runtime-tomcat Docker image, user can use to deploy their applications
 - Find WaveMaker app-builder Docker image at [app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-builder).
-- Find WaveMaker app-runtime Docker image at [app-runtime-tomcat Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-runtime-tomcat).
+- Find WaveMaker app-runtime-tomcat Docker image at [app-runtime-tomcat Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-runtime-tomcat).
 :::
 
 ## wm-rn-web-preview
