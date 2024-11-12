@@ -4,19 +4,17 @@ id: "working-database-schema"
 sidebar_label: "Working with DB Schema"
 ---
 ---
-The **Database Designer** workspace allows you to create tables, columns, and relationships.
+The **Database Designer** workspace allows you to view tables, columns, and relationships.
 
 [![db_designer_schema](/learn/assets/db_designer_schema.png)](/learn/assets/db_designer_schema.png)
 
 Click to enlarge
 
-## Adding Tables and Columns
+## Table and Column Properties
 
-:::note
-These actions are restricted to [Schemas in Editable mode](/learn/app-development/services/database-services/database-schema-import-modes/).
-:::
+Properties available for tables like Default Filter Expression and columns like Java Type, Hidden, Value Type, Value, and Validators can be modified from the Properties panel.
 
-### Adding Table
+### Table Properties
 
 Click the **+Table** button to add a new table to the database. You can set the name of the table from the **Properties**.
 
@@ -24,21 +22,18 @@ Click the **+Table** button to add a new table to the database. You can set the
 - For tables created, you have the option of assigning it to any Schema which has been imported into the app. This feature is not available for MySQL databases.
 
 
-### Adding Column
+### Column Properties
 
-Click **Add Column** to add columns to the table. For each column, you can specify the following:
+For each column, you can find the following properties:
 
 - **Name** - The name of the column.
-
-- **SQL and Java Types** – It is advisable to make changes to Java Types rather than SQL Types unless you want the changes to be reflected in the database, in which case you need to export the database. You can review the type conversion from Java to SQL type from this document: [Java Types vs SQL Data Types](/learn/assets/JavaTypesVsDBTypes-Sheet.pdf).
-
-- **Length** - Precision and scale for number type; length for string type;
+- **SQL and Java Types** – It is advisable to make changes to Java Types. And SQL Types is holds the data type.
 - **Hidden** - You can also choose to hide the column using **Hidden** option. These columns will not be available for user manipulation. You can set the values of these hidden columns during insert/update operations:
     - by setting the Value from the Data Value tab, or
     - by passing the value during the insert operation from a widget.
 - **Value Type** - From the Data tab, set the Value Type as ([click here for more](#column-metadata-configuration)):
     - User Defined which can take a Default Value;
-    - Server  Defined in which case the column can be further set to Server Properties and when the Value needs to be set - at Insert, Update or both;
+    - Server Defined in which case the column can be further set to Server Properties and when the Value needs to be set - at Insert, Update or both;
     - Database Defined which uses database trigger or the default values
 - Column level constraints like
     - Null
@@ -46,9 +41,9 @@ Click **Add Column** to add columns to the table. For each column, you can spe
     - Unique key
     - Foreign key
 - **Primary Key** - In case of primary key column, the value can be set to ([see here for more](#identity-generators))
-    - Assigned lets user enter the primary key values,
-    - Auto-generated will assign the primary key values  or
-    - Sequence will assign the values based on the generator name given. 
+    - Assigned: lets user enter the primary key values,
+    - Auto-generated: will assign the primary key values  or
+    - Sequence: will assign the values based on the generator name given. 
 
 :::note
 WaveMaker supports **Composite Keys** that is multiple columns can be specified as Primary Keys.
