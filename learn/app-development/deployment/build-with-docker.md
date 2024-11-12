@@ -42,7 +42,7 @@ RUN --mount=type=cache,target=/root/.m2 \
     bash /usr/local/bin/wavemaker-build.sh full
 
 # Stage 2: Prepare the runtime environment for the application
-FROM wavemakerapp/app-runtime:${wavemaker_version}
+FROM wavemakerapp/app-runtime-tomcat:${wavemaker_version}
 COPY --from=webapp-artifact /usr/local/content/app/target/*.war /usr/local/tomcat/webapps/
 ```
 
@@ -126,8 +126,8 @@ docker run --rm -e profile=<profile_name> -e MAVEN_CONFIG=$HOME/.m2 \
    wavemaker/app-builder:<wavemaker_version>
 ```
 
-```example: bash
-docker run --rm -e profile=<profile_name> -e MAVEN_CONFIG=$HOME/.m2 \
+```bash
+example: docker run --rm -e profile=<profile_name> -e MAVEN_CONFIG=$HOME/.m2 \
    -v ~/.m2:$HOME/.m2 \
    -v ~/.npm:$HOME/.npm \
    -v /home/user/MySampleApp:/usr/local/content/app \
@@ -146,15 +146,15 @@ docker run --rm -e profile=<profile_name> -e MAVEN_CONFIG=$HOME/.m2 \
 
 ### Run Container
 
-- After Completing the build, it will create a project war file in the `<project-location>/dist` folder. Users can use the war file to deploy in the Host tomcat or Tomcat Docker container.
+- After Completing the build, it will create a project war file in the `<your_project_location>/dist` folder. Users can use the war file to deploy in the Host tomcat or Tomcat Docker container.
 - For deploying project war using Tomcat Docker container, please use the below command.
 
 ```bash
-docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 wavemakerapp/app-runtime:<wavemaker_version>
+docker container run -d --name <container_name> -v <your_project_location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 wavemakerapp/app-runtime-tomcat:<wavemaker_version>
 ```
 
 ```bash
-example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 wavemakerapp/app-runtime:<wavemaker_version>
+example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 wavemakerapp/app-runtime-tomcat:<wavemaker_version>
 ```
 
 ### Access Application
@@ -168,12 +168,12 @@ ifconfig
 - Above command will provide the network interfaces and their respective IP Address in Instance. Please use the respective IP Address to access the application on the web. You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.
 
 :::note
-The wavemakerapp/app-builder & wavemakerapp/app-runtime Docker image is packed with required software packages and libraries to deploy WaveMaker Application in Docker containers.
+The wavemakerapp/app-builder & wavemakerapp/app-runtime-tomcat Docker image is packed with required software packages and libraries to deploy WaveMaker Application in Docker containers.
 
 - Using the app-builder Docker image, users can generate war files for WaveMaker applications.
-- Using the app-runtime Docker image, user can use to deploy their applications
-- Find WaveMaker app-builder Docker image at [wm-app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-builder).
-- Find WaveMaker app-runtime Docker image at [wm-app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-runtime).
+- Using the app-runtime-tomcat Docker image, user can use to deploy their applications
+- Find WaveMaker app-builder Docker image at [app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-builder).
+- Find WaveMaker app-runtime Docker image at [app-runtime-tomcat Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-runtime-tomcat).
 :::
 
 ## wm-rn-web-preview
