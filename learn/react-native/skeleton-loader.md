@@ -57,7 +57,19 @@ We can apply Skeleton Loader at different levels like Page, Prefab, and Partial 
 
 Skeleton Loader gets internally applied at Page level by default when it is enabled at application level. To apply the Skeleton Loader at application level, refer [Enabling at Application Level](#enabling-at-application-level).
 
-### Prefab and Partial Level
+### Prefab Level
+
+For Prefabs, you can use the `skeletonanimationresource` property in the Markup tab. To use Lottie animation, it is necessary to first [upload the animation resource file](#uploading-animation-resource-file).
+
+1. Go to Markup tab of the Page.
+2. For the Prefab, add the `skeletonanimationresource` property.
+3. Provide the animation resource path as value for the `skeletonanimationresource` . Use the below code.
+
+```xml
+<wm-prefab skeletonanimationresource= "resources/images/animations/prefab_skeleton.json" prefabname= "SamplePrefab" name= "SamplePrefab1"></wm-prefab>
+```
+
+### Partial Level
 
 In case of Prefabs and Pratials, it is recommended to use the Lottie animation as Skeleton Loader as few of the components are yet to have Skeleton support. Using Lottie animation would ensure no failure and proper implementation.
 
@@ -164,6 +176,18 @@ To add more dynamic animations, you can integrate Lottie. The uploaded custom an
 In the below video we can see how the Skeleton Loader appears after using the animation resource.
 
 <iframe width="560" height="315" src="https://www.loom.com/embed/982a7b46bce846068cacd889d1f771bd?sid=a5481fa2-2d05-49be-9c8b-e372444ee63f" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
+## Previewing Skeleton Loader During Developement
+
+To ensure the Skeleton Loader implementation and make development easier, you can enable the Skeleton Loader throughout your application to test the visual design while building your UI.
+
+1. After applying the Skeleton Loader in your application, click Preview.
+2. Right click on the screen to click Inspect.
+3. Go to Console, and set the `showskeleton` property as true to enable the Skeleton Loader and false to disbale it. Add the following code.
+
+```
+wm.App.appConfig.currentPage.Widgets.Page-Name.showskeleton= false;
+```
 
 ## Widgets with Skeleton Loader Support
 
