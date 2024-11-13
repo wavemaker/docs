@@ -1,7 +1,7 @@
 ---
-title: "Lottie Widget (Beta)"
+title: "Lottie Widget "
 id: "lottie"
-sidebar_label: "Lottie (Beta)"
+sidebar_label: "Lottie "
 ---
 ---
 
