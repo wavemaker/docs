@@ -216,5 +216,23 @@ Below is the list of widgets that are supported in the Skeleton Loader.
 - Button
 - Custom
 - Container
+- Video
+- Switch
+- Checkbox
+- Floating label
+- Currency
+- Number
+- Rating
+- Chips
+- Toggle
+- Legend
+- Select
+- Audio
+- Appnavbar
+- Date
+- Datetime
+- Calendar
+- Anchor
+- Tooltip
 
 </details>
