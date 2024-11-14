@@ -21,6 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
+|[WaveMaker 11.9.2](/learn/wavemaker-release-notes/v11-9-2) <p style={{color:"green"}}>*upcoming*</p> |  WaveMaker release 11.9.2 will be here with noteworthy and efficient enhancements like Pinch-to-Zoom functionality on the Canvas and Skeleton Loader support for additional widgets in React Native. It also includes bug fixes related to the Database Designer, Artifact Update dialog, Bar and Column charts, and various other components. Additionally, this release includes key issues fixed in React Native. |04 November 2024. |
 |[WaveMaker 11.9.1](/learn/wavemaker-release-notes/v11-9-1) <p style={{color:"red"}}>*latest*</p> |  WaveMaker release 11.9.1 focuses primarily on bug fixes. It addresses key issues related to the Database Designer, FileUpload widget, and various other components. Additionally, this release introduces an enhancement that enables scrolling within the Container widget's content, along with several critical fixes for React Native. |04 November 2024. |
 |[WaveMaker 11.9.0](/learn/wavemaker-release-notes/v11-9-0) |  WaveMaker release 11.9.0 is here with major upgrades that includes, migration to Java 17, Javax to Jakarta namespace, Servlet, Spring & 3rd Party Dependencies Upgrade, Zoom level, and option to switch Java versions. You can also find significant enhancements in FileUpload widget. This release also addresses many bugs in both Web and React Native to make the development smoother and better. |21 October 2024. |
 |[WaveMaker 11.8.5](/learn/wavemaker-release-notes/v11-8-5) |  WaveMaker 11.8.5 includes enhancements and bug fixes. React Native can now be embedded into native applications. Skeleton Loader supports Lottie animations, and you can control the visibility of child components. The Dialog widget has a new look. Bug fixes include Git navigation, Datatable events, Theme Updates, and checkbox selection issues. React Native fixes address Wizard widget steps and file upload restrictions. |07 October 2024. |
@@ -145,7 +146,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.9.1](/learn/wavemaker-release-notes/v11-9-1)
+Last updated: [WaveMaker 11.9.2](/learn/wavemaker-release-notes/v11-9-2)
 
 ---
 
@@ -167,23 +168,25 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 ### Backend Frameworks
 
-| Description | Java Library | Version                                                            |
-| --- | --- |--------------------------------------------------------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.1.13 -> 6.1.14 </td>           |
-| Security framework | Spring Security | <td className="versiontdbgcolor"> 6.3.3 -> 6.4.4 </td>            |
-|  | Spring Data | <td className="versiontdbgcolor"> 2024.0.4 -> 2024.0.5 </td>      |
-| Java JSON utilities | Gson  | 2.11.0                                                             |
-| DB Persistence library | Hibernate(Jakarta) | 5.6.15.Final                                                       |
-| Sample database | HSQL | 2.7.3 |
-| JSON library | Jackson | 2.18.0 |
+| Description | Java Library | Version |
+| --- | --- |--------------------|
+|  | Spring Framework | 6.1.14 |
+| Security framework | Spring Security | 6.4.4     |
+|  | Spring Data | 2024.0.5  |
+|  | Spring Boot | <td className="versiontdbgcolor"> 3.3.4 -> 3.3.5 </td> |
+|  | Spring Session | <td className="versiontdbgcolor"> 3.3.2 -> 3.3.3 </td> |
+| Java JSON utilities | Gson  | 2.11.0 |
+| DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
+| Sample database | HSQL | <td className="versiontdbgcolor"> 2.7.3 -> 2.7.4 </td>|
+| JSON library | Jackson |  <td className="versiontdbgcolor"> 2.18.0 -> 2.18.1 </td> |
 | Logging framework | SLF4j | 2.0.16 |
 | Logging Implementation | Log4j2 | 2.24.1 |
-| Http client library  | HttpComponents -  httpclient | 5.4 |
+| Http client library  | HttpComponents -  httpclient | <td className="versiontdbgcolor"> 5.4 -> 5.4.1 </td>|
 | Servlet Framework |  | 6.0.0 |
 | Database Connection Pooling | HikariCP | 6.0.0  |
 |  | Commons Lang3 | 3.17.0  |
 |  | Guava | 33.3.1-jre |
-|  | Postgresql Driver  | 42.7.4                                                             |
+|  | Postgresql Driver  | 42.7.4  |
 |  | Hibernate Validator | 8.0.1.Final |
 
 ### Runtime Environment
