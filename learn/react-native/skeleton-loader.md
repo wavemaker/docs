@@ -190,11 +190,45 @@ To ensure the Skeleton Loader implementation and make development easier, you ca
 
 1. After applying the Skeleton Loader in your application, click Preview.
 2. Right click on the screen to click Inspect.
-3. Go to Console, and set the `showskeleton` property as true to enable the Skeleton Loader and false to disbale it. Add the following code.
+3. Go to Console, and set the `showskeleton` property as true to enable the Skeleton Loader and false to disable it. Add the following code.
 
 ```
 wm.App.appConfig.currentPage.Widgets.Page-Name.showskeleton= false;
+
 ```
+
+## Debugging Skeleton Loader
+
+### Skeleton Loader is not applied to all Components
+
+Skeleton Loader gets applied to all the [components in a Page](#page-level) when selected at application level. But users can change the default behaviour at component level by setting `showskeleton` property as false. This will result in a Page where all the components except one have Skeleton Loader applied. To avoid this scenario, you can check if any component has the `showskeleton` property set as false in the Markup tab.
+
+For example, the `showskeleton` property value of one of the three button components is set as false in the Markup tab.
+
+```xml
+<wm-pagecontent>
+  <wm-button name="button1"/>
+  <wm-button name="button2"/>
+  <wm-button name="button3" showskeleton="false"/>
+</wm-pagecontent>
+```
+### Skeleton Loader Styles
+
+You can use [CSS classes to customise](#customizing-skeleton-loader) the Skeleton Loader. It is necessary to use correct classes in the correct format. For example, the below code can be used to customize the skeleton of a button.
+
+In the CSS file add the below code in the given format.
+
+```css
+.app-button-skeleton .app-skeleton {
+  background-color: 'green'
+  OTHER_STYLES_GOES_HERE
+}
+```
+
+### Lottie Animation Resource as Skeleton Loader
+
+It is required to [provide the Lotties animation resource file](#uploading-animation-resource-file) that is used as Skeleton Loader. In this case, it is necessary to ensure if the resource path provided in the `skeletonanimationresource` property is correct for Page, Prefab, and Partial.
+
 
 ## Widgets with Skeleton Loader Support
 
@@ -216,7 +250,7 @@ Below is the list of widgets that are supported in the Skeleton Loader.
 - Button
 - Custom
 - Container
-- Video
+  Video
 - Switch
 - Checkbox
 - Floating label
