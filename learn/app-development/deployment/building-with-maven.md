@@ -7,7 +7,7 @@ This guide helps to create a war file for deploying the project in your local m
 
 ## System prerequisites
 
-- You can find the System prerequisites from [Angular Web and Mobile 11](/learn/wavemaker-release-notes/v11-1-2#angular-web-and-mobile-11).
+- You can find the System prerequisites from [Angular Web and React Native Mobile](/learn/wavemaker-release-notes/v11-9-2#angular-web-and-react-native-mobile). 
 
 ## Go to Source Location
 
