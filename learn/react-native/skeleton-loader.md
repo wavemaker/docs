@@ -7,11 +7,6 @@ sidebar_label: "Skeleton Loader"
 
 A Skeleton is an animated placeholder that mimics the structure of the content, content can be widgets of the page that will load when an API call is triggered. It creates an animation of the page structure, such as blocks, images, text, and other UI elements. This enables a seamless transition between the page and data, preparing users to get an idea of the page format in advance.
 
-There are two conditions to apply skeleton loader
-
-1. [Applying to supported widgets](#widgets-with-skeleton-loader-support) - this is the default behaviour and it requires customization for further beautification.
-2. [Using Lottie animation](#using-lottie-animation-as-skeleton-loader). Applies when the widgets are not supported or when users do not want the hassle of customization or beautification.
-
 
 **Example**
 
@@ -19,32 +14,66 @@ When scrolling through any social media platform, you might notice gray bars in 
 
 ![Skeleton Loader Example](/learn/assets/skeleton-loader-example.gif)
 
-## Key Features of Skeleton Loader
+### Key Features of Skeleton Loader
 
 Skeleton Loader offers the following benefits.
 
-- **Flexibility**: You can apply them to entire page or individual UI components.
+- **Flexibility**: You can apply Skeleton Loader to entire page or individual UI components (widgets).
 - **Customizability**: Modify the appearance (colors, animation speed) to suit your app’s design.
 
-## Prerequisites
+## Applying Skeleton Loader
 
-Before implementing the Skeleton Loader, the following steps are to be taken.
-- [Animation resource needs to be uploaded for Lottie animation.](#uploading-animation-resource-file)
+There are two conditions to apply skeleton loader
 
-### Uploading Animation Resource File
+1. [Applying to supported widgets](#widgets-with-skeleton-loader-support) - this is the default behaviour and it requires customization for further beautification.
 
-If you want to apply the custom animation resource using Lottie, you need to first download and upload the animation resource Json file.
+<details><summary>List of Widgets to which the Skeleton Loader can be applied</summary>
 
-1. Go to File Explorer > click **+** icon to add new resource.
-2. Click **Upload Files** the required resources under animation in resources folder. You can also view it in the studio.
+Below is the list of widgets that are supported in the Skeleton Loader.
 
-<iframe width="560" height="315" src="https://www.loom.com/embed/eff9de7b0e4845a297841532941bfb92?sid=7354a60d-2d13-4355-bfe9-fc6a3a6fd960" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+- ButtonGroup
+- Icon
+- Label
+- Picture
+- Tab
+- Form
+- Radioset
+- Carousel
+- List
+- Card
+- Anchor
+- Button
+- Custom
+- Container
+  Video
+- Switch
+- Checkbox
+- Floating label
+- Currency
+- Number
+- Rating
+- Chips
+- Toggle
+- Legend
+- Select
+- Audio
+- Appnavbar
+- Date
+- Datetime
+- Calendar
+- Anchor
+- Tooltip
+
+</details>
+
+2. [Using Lottie animation](#using-lottie-animation-as-skeleton-loader). Applies when the widgets are not supported or when users do not want the hassle of customization or beautification.
 
 :::note
 It is necessary to [enable the Skeleton Loader at application level](#enabling-skeleton-loader-at-application-level) for you to use the Skeleton Loader throughout the application.
 :::
 
-## Enabling Skeleton Loader at Application Level
+
+## Enabling Skeleton Loader to Application
 
 Skeleton Loader is enabled at application level when creating an application. To apply the Skeleton Loader, go to the **Project Settings** dialog and choose **Skeleton Loader** as the Application Loader. This applies the Skeleton Loader to all the available pages in an application along with all the [supported widgets](#skeleton-supported-widgets).
 
@@ -58,13 +87,17 @@ Skeleton Loader gets applied across the application only if a [service variable]
 
 ## Implementing Skeleton Loader
 
-We can apply Skeleton Loader at different levels like Page, Prefab, and Partial level.
+We can apply Skeleton Loader to Page, Prefab, and Partial.
 
-### Page Level
+### Applying Skeleton Loader to Page
 
 When Skeleton Loader is applied at Page level, all the available components in the Page get the Skeleton loader applied. It gets internally applied at Page level by default when it is enabled at application level. To apply the Skeleton Loader at application level, refer [Enabling at Application Level](#enabling-at-application-level).
 
-### Prefab Level
+### Applying Skeleton Loader to Prefab
+
+:::note
+Redirect to lottie animation as you can use only Lottie Animation to apply Skeleton Loader to Prefabs.
+:::
 
 For [Prefabs](/learn/app-development/custom-widgets/prefabs-overview/), you can use the `skeletonanimationresource` property in the Markup tab. To use Lottie animation, it is necessary to first [upload the animation resource file](#uploading-animation-resource-file).
 
@@ -76,7 +109,7 @@ For [Prefabs](/learn/app-development/custom-widgets/prefabs-overview/), you can 
 <wm-prefab skeletonanimationresource= "resources/images/animations/prefab_skeleton.json" prefabname= "SamplePrefab" name= "SamplePrefab1"></wm-prefab>
 ```
 
-### Partial Level
+### Applying Skeleton Loader to Partial
 
 In case of Pratials, it is recommended to use the Lottie animation as Skeleton Loader as few of the components are yet to have Skeleton support. Using Lottie animation would ensure no failure and proper implementation.
 
@@ -171,7 +204,26 @@ className: some-class
 
 ![Class Level Skeleton Loader](/learn/assets/class-level-customisation.gif)
 
-## Using Lottie Animation as Skeleton Loader
+## Skeleton Loader as Lottie Animation 
+
+### Prerequisites
+
+Before implementing the Skeleton Loader, the following steps are to be taken.
+
+- If you are using Lottie animation method, you must keep the resource file handy.
+
+
+### Uploading Animation Resource File
+
+If you want to apply the custom animation resource using Lottie, you need to first download and upload the animation resource Json file.
+
+1. Go to File Explorer > click **+** icon to add new resource.
+2. Click **Upload Files** the required resources under animation in resources folder. You can also view it in the studio.
+
+<iframe width="560" height="315" src="https://www.loom.com/embed/eff9de7b0e4845a297841532941bfb92?sid=7354a60d-2d13-4355-bfe9-fc6a3a6fd960" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
+
+### Applying Lottie Animation to Page
 
 To add more dynamic animations, you can integrate Lottie. The uploaded custom animation can be applied to the Page using the `Skeleton Animation Resource` property in the Properties panel.
 
@@ -199,9 +251,9 @@ wm.App.appConfig.currentPage.Widgets.Page-Name.showskeleton= false;
 
 ## Debugging Skeleton Loader
 
-### Skeleton Loader is not applied to all Components
+### Applying Skeleton Loader to all Components
 
-Skeleton Loader gets applied to all the [components in a Page](#page-level) when selected at application level. But users can change the default behaviour at component level by setting `showskeleton` property as false. This will result in a Page where all the components except one have Skeleton Loader applied. To avoid this scenario, you can check if any component has the `showskeleton` property set as false in the Markup tab.
+When the Skeleton Loader is enabled at the application level, it applies to all components on all the pages. However, users can override this behavior for specific components by setting the showskeleton property to false. This means all components will show the Skeleton Loader, except those where this property is disabled.
 
 For example, the `showskeleton` property value of one of the three button components is set as false in the Markup tab.
 
@@ -212,6 +264,17 @@ For example, the `showskeleton` property value of one of the three button compon
   <wm-button name="button3" showskeleton="false"/>
 </wm-pagecontent>
 ```
+
+If you want to apply the Skeleton Loader to all components on the page, including `button3`, set the `showskeleton` property to true.
+
+```xml
+<wm-pagecontent>
+  <wm-button name="button1"/>
+  <wm-button name="button2"/>
+  <wm-button name="button3" showskeleton="true"/>
+</wm-pagecontent>
+```
+
 ### Skeleton Loader Styles
 
 You can use [CSS classes to customise](#customizing-skeleton-loader) the Skeleton Loader. It is necessary to use correct classes in the correct format. For example, the below code can be used to customize the skeleton of a button.
@@ -232,41 +295,4 @@ It is required to [provide the Lotties animation resource file](#uploading-anima
 
 ## Widgets with Skeleton Loader Support
 
-<details><summary>List of Widgets to which the Skeleton Loader can be applied</summary>
 
-Below is the list of widgets that are supported in the Skeleton Loader.
-
-- ButtonGroup
-- Icon
-- Label
-- Picture
-- Tab
-- Form
-- Radioset
-- Carousel
-- List
-- Card
-- Anchor
-- Button
-- Custom
-- Container
-  Video
-- Switch
-- Checkbox
-- Floating label
-- Currency
-- Number
-- Rating
-- Chips
-- Toggle
-- Legend
-- Select
-- Audio
-- Appnavbar
-- Date
-- Datetime
-- Calendar
-- Anchor
-- Tooltip
-
-</details>
