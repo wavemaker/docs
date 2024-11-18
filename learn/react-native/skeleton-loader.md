@@ -21,9 +21,19 @@ Skeleton Loader offers the following benefits.
 - **Flexibility**: You can apply Skeleton Loader to entire page or individual UI components (widgets).
 - **Customizability**: Modify the appearance (colors, animation speed) to suit your app’s design.
 
-## Applying Skeleton Loader
+## Enabling Skeleton Loader to Application
 
-There are two conditions to apply skeleton loader
+:::note
+It is necessary to [enable the Skeleton Loader at application level](#enabling-skeleton-loader-at-application-level) to use the Skeleton Loader throughout the application.
+:::
+
+Skeleton Loader can be enabled at application level when creating an application. To apply the Skeleton Loader, go to the **Project Settings** dialog and choose **Skeleton Loader** as the Application Loader. This applies the Skeleton Loader to all the available pages in an application along with all the [supported widgets](#skeleton-supported-widgets).
+
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/4tzkn2vjCNnJUZaXi5xYUK"   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+
+### Applying Skeleton Loader
+
+There are two conditions to apply Skeleton Loader
 
 1. [Applying to supported widgets](#widgets-with-skeleton-loader-support) - this is the default behaviour and it requires customization for further beautification.
 
@@ -68,35 +78,22 @@ Below is the list of widgets that are supported in the Skeleton Loader.
 
 2. [Using Lottie animation](#using-lottie-animation-as-skeleton-loader). Applies when the widgets are not supported or when users do not want the hassle of customization or beautification.
 
-:::note
-It is necessary to [enable the Skeleton Loader at application level](#enabling-skeleton-loader-at-application-level) for you to use the Skeleton Loader throughout the application.
-:::
-
-
-## Enabling Skeleton Loader to Application
-
-Skeleton Loader is enabled at application level when creating an application. To apply the Skeleton Loader, go to the **Project Settings** dialog and choose **Skeleton Loader** as the Application Loader. This applies the Skeleton Loader to all the available pages in an application along with all the [supported widgets](#skeleton-supported-widgets).
-
-<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/4tzkn2vjCNnJUZaXi5xYUK"   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
-
-:::note
-
-Skeleton Loader gets applied across the application only if a [service variable](/learn/app-development/variables/web-service) is available for the application and the [Spinner Context](/learn/app-development/variables/web-service/#properties) is also set as Page.
-
-:::
-
 ## Implementing Skeleton Loader
 
-We can apply Skeleton Loader to Page, Prefab, and Partial.
+We can apply Skeleton Loader to:
+
+1. Page
+2. Prefab
+3. Partial
 
 ### Applying Skeleton Loader to Page
 
-When Skeleton Loader is applied at Page level, all the available components in the Page get the Skeleton loader applied. It gets internally applied at Page level by default when it is enabled at application level. To apply the Skeleton Loader at application level, refer [Enabling at Application Level](#enabling-at-application-level).
+When Skeleton Loader is applied to Page, all the available components in the Page get the Skeleton Loader applied. It gets internally applied at Page level by default when it is enabled at application level. To apply the Skeleton Loader at application level, refer [Enabling at Application Level](#enabling-at-application-level).
 
 ### Applying Skeleton Loader to Prefab
 
 :::note
-Redirect to lottie animation as you can use only Lottie Animation to apply Skeleton Loader to Prefabs.
+You can use only [Lottie Animation to apply Skeleton Loader](#skeleton-loader-as-lottie-animation) to Prefabs.
 :::
 
 For [Prefabs](/learn/app-development/custom-widgets/prefabs-overview/), you can use the `skeletonanimationresource` property in the Markup tab. To use Lottie animation, it is necessary to first [upload the animation resource file](#uploading-animation-resource-file).
@@ -110,6 +107,10 @@ For [Prefabs](/learn/app-development/custom-widgets/prefabs-overview/), you can 
 ```
 
 ### Applying Skeleton Loader to Partial
+
+:::note
+You can use only [Lottie Animation to apply Skeleton Loader](#skeleton-loader-as-lottie-animation) to Prefabs.
+:::
 
 In case of Pratials, it is recommended to use the Lottie animation as Skeleton Loader as few of the components are yet to have Skeleton support. Using Lottie animation would ensure no failure and proper implementation.
 
@@ -126,11 +127,11 @@ In the below video we can see how the Skeleton Loader appears after using the an
 
 ## Customizing Skeleton Loader
 
-You can customise the color, width, and other properties of Skeleton Loader . These changes can be applied at three levels:
+You can customise the color, width, and other properties of Skeleton Loader . These changes can be applied to:
 
-- [Page level](#apply-style-to-page)
-- [Widget level](#apply-style-to-widget)
-- [Class level](#apply-style-to-class)
+- [Page](#apply-style-to-page)
+- [Widget](#apply-style-to-widget)
+- [Class](#apply-style-to-class)
 
 ### Skeleton Loader CSS Classes
 
@@ -277,7 +278,7 @@ If you want to apply the Skeleton Loader to all components on the page, includin
 
 ### Skeleton Loader Styles
 
-You can use [CSS classes to customise](#customizing-skeleton-loader) the Skeleton Loader. It is necessary to use correct classes in the correct format. For example, the below code can be used to customize the skeleton of a button.
+You can use [CSS classes to customise](#customizing-skeleton-loader) the Skeleton Loader. For example, the below code can be used to customize the skeleton of a button.
 
 In the CSS file add the below code in the given format.
 
