@@ -5,6 +5,11 @@ sidebar_label: "Skeleton Loader"
 ---
 ---
 
+import PageLevelSkeletonLoader from '/learn/assets/react-native/page-level-customisation.gif';
+import WidgetLevelSkeletonLoader from '/learn/assets/react-native/widget-level-customisation.gif';
+import ClassLevelSkeletonLoader from '/learn/assets/react-native/class-level-customisation.gif';
+
+
 A Skeleton is an animated placeholder that mimics the structure of the content, content can be widgets of the page that will load when an API call is triggered. It creates an animation of the page structure, such as blocks, images, text, and other UI elements. This enables a seamless transition between the page and data, preparing users to get an idea of the page format in advance.
 
 
@@ -161,7 +166,9 @@ In the following example, you can customise background color and other propertie
 }
 ```
 
-![Page Level Skeleton Loader](/learn/assets/page-level-customisation.gif)
+<div style={{flex:1}}>
+<img src={PageLevelSkeletonLoader} style={{ width:300, height:500}}/>
+</div>
 
 
 ### Apply Style to Widget 
@@ -182,7 +189,9 @@ Using the following example, you can customise background color, border width of
 }
 ```
 
-![Widget Level Skeleton Loader](/learn/assets/widget-level-customisation.gif)
+<div style={{flex:1}}>
+<img src={WidgetLevelSkeletonLoader} style={{ width:300, height:500}}/>
+</div>
 
 ### Apply Style to Class
 
@@ -202,8 +211,9 @@ className: some-class
     background-color: white;
 }
 ```
-
-![Class Level Skeleton Loader](/learn/assets/class-level-customisation.gif)
+<div style={{flex:1}}>
+<img src={ClassLevelSkeletonLoader} style={{ width:300, height:500}}/>
+</div>
 
 ## Skeleton Loader as Lottie Animation 
 
