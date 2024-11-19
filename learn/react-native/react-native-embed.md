@@ -19,11 +19,19 @@ import IOSIntentPreview from '/learn/assets/react-native/embed/IOSIntentPreview.
 import IOSFragmentPreview from '/learn/assets/react-native/embed/IOSFragmentPreview.gif';
 import IOSCommunicationPreview from '/learn/assets/react-native/embed/IOSCommunicationPreview.gif';
 
-From WaveMaker 11.8 onwards, React Native apps can be embeded into the native application. By using the CLI command you can add React Native code to Native Code. This allows developers to use the advantages of React Native such as cross-platform development and faster iteration, while maintaining or enhancing an existing native codebase.
+React Native apps can be embedded into existing native applications. Using the CLI command, developers can integrate React Native code with native code, enabling them to leverage React Native's benefits—like cross-platform development and faster iteration—while preserving or enhancing the existing native codebase.
+
+:::note
+Embed WaveMaker React Native apps into Native App starting from WaveMaker 11.8.
+:::
 
 ## Why to embed React Native into Native Code
 
-This integration of React Native into Native Application comes with few significant benefits that makes development and management of applications easier.
+Embedding React Native into a native application simplifies app development and application management.\
+
+- Integrate only specific parts of your app without needing to rewrite the entire codebase.
+
+
 
 - You can start using React Native in a specific part of your application without having to rewrite the entire application.
 - As it helps in creating cross-platform applications, you can write the code once and use the same React Native code for both iOS and Android, reducing development time.
@@ -143,7 +151,7 @@ Download the React Native project zip from the **Export as ReactNative Zip** dia
 
 ### Loading WaveMaker App
 
-#### Loading WaveMaker App via Intent
+#### Loading WaveMaker App as a Page
 
 You can load the embedded WaveMaker app through an **Intent**. Add a button in `activity_main.xml`:
 
@@ -178,7 +186,7 @@ launchRNPageButton.setOnClickListener(v -> {
 
 ---
 
-#### Loading WaveMaker App via Fragment
+#### Loading WaveMaker App as an iFrame
 
 You can also embed the app as a **Fragment**. Modify `activity_main.xml`:
 
@@ -234,7 +242,7 @@ private Bundle getLaunchOptions(String pageName) {
 ```
 
 :::note
-we can pass initialProperties to the WaveMaker app as shown above by updating the **`getLaunchOptions()`** method inside **`ReactNativeAppFragment.java`**, and these initialProperties can be accessed, by using **`App.props`** in WaveMaker App - Script.
+We can pass initialProperties to the WaveMaker app as shown above by updating the **`getLaunchOptions()`** method inside **`ReactNativeAppFragment.java`**, and these initialProperties can be accessed, by using **`App.props`** in WaveMaker App - Script.
 :::
 
 ```js
@@ -549,7 +557,7 @@ var window: UIWindow?
 
 ### Loading WaveMaker App
 
-#### Loading WaveMaker App as Page
+#### Loading WaveMaker App as a Page
 
 ###### ViewController
 
@@ -579,7 +587,7 @@ var window: UIWindow?
 
 ---
 
-#### Loading WaveMaker App as Fragment
+#### Loading WaveMaker App as an iFrame
 
 ###### ViewController
 
