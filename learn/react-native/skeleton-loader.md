@@ -30,7 +30,7 @@ Skeleton Loader offers the following benefits.
 
 There are two conditions to apply Skeleton Loader
 
-1. [Applying to supported widgets](#widgets-with-skeleton-loader-support): This is the default behaviour and it requires customization for further beautification.
+1. Applying to supported widgets: This is the default behaviour and it requires customization for further beautification.
 
 <details><summary>List of Widgets to which the Skeleton Loader can be applied</summary>
 
@@ -71,13 +71,13 @@ Below is the list of widgets that can be directly applied with the Skeleton Load
 
 </details>
 
-2. [Using Lottie animation](#using-lottie-animation-as-skeleton-loader): This method can be used for widgets that are not supported or when users prefer a more customized approach.
+2. [Using Lottie animation](#using-lottie-animations): This method can be used for widgets that are not supported or when users prefer a more customized approach.
 
 
-## Enabling Skeleton Loader to Application
+## Adding Skeleton Loader to Your App
 
 :::note
-It is necessary to [enable the Skeleton Loader at application level](#enabling-skeleton-loader-at-application-level) to use the Skeleton Loader throughout the application.
+It is necessary to [enable the Skeleton Loader at application level](#adding-skeleton-loader-to-your-app) to use the Skeleton Loader throughout the application.
 :::
 
 Skeleton Loader can be enabled at application level when creating an application.
@@ -90,7 +90,7 @@ To apply the Skeleton Loader:
 
 This applies the Skeleton Loader to all the available pages in an application along with all the [supported widgets](#skeleton-supported-widgets).
 
-## Implementing Skeleton Loader
+## Skeleton Loader Implementation
 
 You can apply Skeleton Loader to:
 
@@ -100,7 +100,7 @@ You can apply Skeleton Loader to:
 
 ### Apply to Page
 
-When Skeleton Loader is applied to Page, all the available components in the Page get the Skeleton Loader applied. It gets internally applied at Page level by default when it is enabled at application level. To apply the Skeleton Loader at application level, see [Enabling at Application Level](#enabling-skeleton-loader-to-application).
+When Skeleton Loader is applied to Page, all the available components in the Page get the Skeleton Loader applied. It gets internally applied at Page level by default when it is enabled at application level. To apply the Skeleton Loader at application level, see [Enabling at Application Level](#adding-skeleton-loader-to-your-app).
 
 :::note
 You can disable the Skeleton Loader at the page level if you do not want it to be applied.
@@ -145,7 +145,7 @@ Steps to create:
 
 
 
-## Customizing Skeleton Loader
+## Customizing Skeleton Loader Appearance and Behavior
 
 You can customise the color, width, and other properties of Skeleton Loader . These changes can be applied to:
 
@@ -230,11 +230,11 @@ className: some-class
 <img src={ClassLevelSkeletonLoader} style={{ width:300, height:500}}/>
 </div>
 
-## Using Lottie Animation 
+## Using Lottie Animations
 
-Before implementing the Skeleton Loader using Lottie animation, ensure the following steps are to be taken.
+You can create engaging user experiences using Lottie animations, which helps add visuals to your app, making it more engaging and memorable. Before implementing Skeleton Loader using Lottie animation, ensure the following steps are taken.
 
-### Key Considerations for Lottie Animation
+### Prerequisites for Using Lottie Animation
 
 - Resource File: Keep the resource file handy, for example, a JSON file.
 - Lottie Animation Resource as Skeleton Loader: Ensure the resource path provided in the `skeletonanimationresource` property is correct for Page, Prefab, and Partial. See [Uploading Animation Resource File](#uploading-animation-resource-file).
@@ -277,7 +277,7 @@ wm.App.appConfig.currentPage.Widgets.Page-Name.showskeleton= false;
 
 ## Debugging Skeleton Loader
 
-### Applying Skeleton Loader to all Components
+### Applying Skeleton Loader to all Widgets
 
 When the Skeleton Loader is enabled at the application level, it applies to all components on all the pages. However, users can override this behavior for specific components by setting the showskeleton property to false. This means all components will show the Skeleton Loader, except those where this property is disabled.
 
@@ -303,7 +303,7 @@ If you want to apply the Skeleton Loader to all components on the page, includin
 
 ### Skeleton Loader Styles
 
-You can use [CSS classes to customise](#customizing-skeleton-loader) the Skeleton Loader. For example, the below code can be used to customize the skeleton of a button.
+You can use [CSS classes to customise](#customizing-skeleton-loader-appearance-and-behavior) the Skeleton Loader. For example, the below code can be used to customize the skeleton of a button.
 
 In the CSS file add the below code in the given format.
 
