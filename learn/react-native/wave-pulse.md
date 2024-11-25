@@ -68,7 +68,7 @@ You can directly navigate to a component on the mobile device with the APK or IP
 Follow the steps below to establish the connection:
 
 :::note
-Ensure that the mobile device can access WavePulse web application in your network.
+When using any closed network, ensure that the mobile device can access WavePulse web application in your network.
 :::
 
 1. Open WavePulse web application and enter the application ID that is unique to every application. This confirms that the required application is launched for debugging.
@@ -80,3 +80,5 @@ It is necessary to close the application before scanning the QR code.
 
 3. Scan the QR code generated in the WavePulse web application. Alternatively, you can open the link provided under the QR code to launch the application in debug mode.
 4. Grant permission to connect the mobile application to the debugging session in WavePulse. Once connected, you can view the debugging session in WavePulse.
+
+<iframe width="560" height="315" src="https://www.loom.com/embed/5a33a17aa6694c6d81c150a153e647a0?sid=c733abf1-a7ca-4c6d-a487-e1944dd1e5f8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
