@@ -23,11 +23,15 @@ WavePulse is particularly useful for maintaining high-performance applications, 
   - Storage
   - Info
 
-In order to debug the APK or IPA files, you need to
-- Build the APK or IPA file
-- Debug the APK or IPA file
+## Generating and Debugging APK or IPA File
 
-## Building APK or IPA File
+In order to debug the APK or IPA files, you need to
+- **WaveMaker Studio**: [Generate the APK or IPA file](#generating-apk-or-ipa-file).
+- **Browser and Mobile Device**: [Test and debug the APK or IPA file](#debugging-apk-or-ipa-file).
+
+![Debugging Architecture](/learn/assets/debug-architecture.png)
+
+### Generating APK or IPA File
 
 APK or IPA file can be debugged using the APK or IPA file. To get the APK or IPA that can be debugged using the WavePulse, 
 
@@ -48,20 +52,31 @@ APK for Android and IPA for iOS can be generated using React Native zip file tha
 
 </details>
 
-## Debugging APK or IPA File
+### Debugging APK or IPA File
 
 In the debugging process, two platforms can be used,
 
-- First, to open the WavePulse web application.
-- Second, to open the APK or IPA file that needs to be debugged.
+- **Web Browser**: First, to open the WavePulse web application.
+- **Mobile Device**: Second, to open the APK or IPA file that needs to be debugged.
 
 ### WavePulse Web Application and Mobile Device for debugging
 
-Connection between WavePulse web application, opened in one device and APK or IPA file opened in another device is established. This step helps you view and understand the issues in WavePulse for the application that needs to be debugged. You can directly navigate to the component in the real device with APK or IPA file and view the logs, network calls, timeline and other information about the selected component in the debug session opened in WavePulse.
+A connection between the WavePulse web application, opened on one device, and the APK or IPA file, opened on another device, is established. This step allows you to view and diagnose issues in WavePulse for the application that requires debugging.
 
-Follow the below provided steps to establish the connection.
+You can directly navigate to a component on the mobile device with the APK or IPA file and view logs, network calls, timelines, and other details about the selected component in the debug session opened in WavePulse.
 
-- Open Wavepulse web application and enter the application ID that is unique to every application.
-- Go to device and install the APK/IPA file that needs to be debugged.
-- Scan the QR code generated in the WavePusle application. Alternatively, you can open the link provided under the QR code.
-- Give permission to access to the real device with APK/IPA installed to connect with Wavepulse. This opens the debugging session.
+Follow the steps below to establish the connection:
+
+:::note
+Ensure that the mobile device can access WavePulse web application in your network.
+:::
+
+1. Open WavePulse web application and enter the application ID that is unique to every application. This confirms that the required application is launched for debugging.
+2. Go to mobile device and install the APK/IPA file if not installed already.
+
+:::note
+It is necessary to close the application before scanning the QR code.
+:::
+
+3. Scan the QR code generated in the WavePulse web application. Alternatively, you can open the link provided under the QR code to launch the application in debug mode.
+4. Grant permission to connect the mobile application to the debugging session in WavePulse. Once connected, you can view the debugging session in WavePulse.
