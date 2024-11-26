@@ -7,7 +7,7 @@ sidebar_label: "WavePulse"
 
 WavePulse is a feature in WaveMaker, a low-code development platform, designed to provide real-time diagnostics for applications. It helps developers and administrators ensure that their applications are running smoothly by offering insights into various metrics and logs.
 
-WavePulse is particularly useful for maintaining high-performance applications, ensuring stability, and providing end-users with a seamless experience. It enhances the process of debugging by allowing you to debug the APK or IPA file of an application.
+WavePulse is particularly useful for maintaining high-performance applications, ensuring stability, and providing end-users with a seamless experience. It enhances the process of debugging by allowing you to debug the APK or IPA file of an application without the need of using or sharing any confidential or excess information.
 
 ### Key Features
 
