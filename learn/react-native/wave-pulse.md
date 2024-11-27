@@ -15,7 +15,7 @@ WavePulse is particularly useful for maintaining high-performance applications, 
 - **Quick and Simple Setup**: Simplifies the process of setup as it requires only one tool, WavePulse and few steps to get started with it.
 - **Debugging on Real Devices**: Debugging can be done on any device given WavePulse is enabled in the application to be debugged.
 - **Importing and Exporting Debugging Session**: Debugging session can be easily exported or imported using WavePulse without having to share any irrelevant or confidential information.
-- **Viewing WaveMaker Component Data**: WaveMaker specific component details can be easily viewed. User can find every detail at one place, like:
+- **Viewing WaveMaker Specific Data**: WaveMaker specific component and other details can be easily viewed. User can find every detail at one place, like:
   - Console logs
   - Network
   - Element Tree with Properties and Styles
