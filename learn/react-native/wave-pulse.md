@@ -29,12 +29,12 @@ Debugging is the process of identifying, analyzing, and resolving issues in an a
 
 ![Debugging Architecture](/learn/assets/debug-architecture.png)
 
-To debug, you need to generate the APK or IPA file using the React Native zip file. These steps are carried on two platforms.
+Debugging is carried on two platforms,
 
 - **WaveMaker Studio**: [To generate the APK or IPA file](#generating-apk-or-ipa-file-to-debug).
 - **Browser and Mobile Device**: [To test and debug the APK or IPA file in WavePulse](#testing--debugging-in-wavepulse).
 
-## Generating APK or IPA File in WaveMaker Studio
+## Configuring APK or IPA File in WaveMaker Studio
 
 An application can be debugged using the APK or IPA file. To get the APK or IPA that can be debugged using the WavePulse,
 
@@ -60,11 +60,9 @@ In the debugging process, two platforms can be used,
 - **Web Browser**: First, to open the WavePulse web application.
 - **Mobile Device**: Second, to open the APK or IPA file that needs to be debugged.
 
-Application can be viewed in the mobile device and the connection is established with WaveMaker web application opened in the browser. With this connection, you can record and view debugging session associated with the actions performed in the application.
+A connection is established between WavePulse and Application to record and view debugging session associated with the actions performed in the application.
 
 ### Establishing Connection between Web Browser and Mobile Device for debugging
-
-A connection between the WavePulse web application, opened on web browser, and the APK or IPA file, opened on mobile device, is established.
 
 You can directly navigate to any component or page in the application on the mobile device and view logs, network calls, timelines, and other details about the selected component in the debug session opened in WavePulse.
 
