@@ -1108,7 +1108,7 @@ body:not(.search-active) #header-search .DocSearch-Modal .DocSearch-Dropdown{
 }
 
 body:not(.search-active) #header-search .DocSearch-Modal .DocSearch-SearchBar .DocSearch-Form{
-    height: 40px;
+    height: 34px;
     border-radius: 20px;
     box-shadow: none;
     /* border: 1px solid #dbdde1; */
