@@ -383,7 +383,7 @@ h3 {
     align-items: flex-start;
     padding: 6rem var(--ifm-spacing-horizontal) 1rem;
     /*background: radial-gradient(82.1% 67.69% at 52.01% 55.6%, #819ECB 0%, #759CE3 57.58%, #4782D9 84.9%); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    margin: 1rem 0;
+    margin: 0 0;
     border-radius: 10px;
 }
 
@@ -428,6 +428,16 @@ h3 {
 /* .header-searchBar .DocSearch-Button-Keys {
     display: none;
 } */
+
+#header-search .DocSearch-Button-Key {
+    background: none;
+    box-shadow: none;
+    margin-right: 0;
+    border-radius: 0;
+    font-size: 18px;
+    padding: 0;
+    top: 0;
+}
 
 .banner-search .DocSearch {
     width: 100%;
