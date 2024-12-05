@@ -25,18 +25,66 @@ React Native apps can be embedded into existing native applications. Using the C
 Embed WaveMaker React Native apps into Native App starting from WaveMaker 11.8.
 :::
 
-## Why to embed React Native into Native Code
+## How it helps
 
-Embedding React Native into a native application simplifies app development and application management.\
+Extending Existing Native Apps with WaveMaker
+WaveMaker enables seamless integration of new features into existing native applications, showcasing its powerful and flexible embedding capabilities:
 
-- Integrate only specific parts of your app without needing to rewrite the entire codebase.
+- Embed Full Applications: Entire apps built in WaveMaker can be embedded into your existing native app, streamlining development and extending functionality effortlessly.
+- Add New Features: Develop new features or modules in WaveMaker and integrate them into your app as data, libraries, or even via an iframe, without disrupting the existing architecture.
+- Flexible Embedding:
+  - Page-Level: Introduce complete pages into your app for modular feature additions.
+  - Section-Level: Integrate specific sections or components for incremental enhancements.
 
+## Integrate New Feature into an Existing App
 
+Integrate new features developed in WaveMaker into an existing native app. This approach enables seamless feature extension by treating WaveMaker components as reusable data or libraries within the existing app.
 
-- You can start using React Native in a specific part of your application without having to rewrite the entire application.
-- As it helps in creating cross-platform applications, you can write the code once and use the same React Native code for both iOS and Android, reducing development time.
-- React Native allows for faster development and iteration with features like hot-reloading and a more flexible UI approach.
-- Introduce new features or screens using React Native in a legacy native app without a complete rebuild.
+- **Existing App**: Start with your native app (non-WaveMaker).  
+- **Feature Development in WaveMaker**: Build the new feature as a modular component in WaveMaker.  
+- **Embed in Native App**: Incorporate the WaveMaker feature into the existing app, treating it as data or a library for easy integration.
+
+### Step 1: Prepare the Existing App
+
+- Ensure the existing app is stable and can support external integrations.
+- Identify the feature gaps or extensions required in the app.
+
+### Step 2: Develop the New Feature in WaveMaker
+
+- Log in to the WaveMaker Studio.
+- Design the required feature in the WaveMaker React Native environment:
+- Use WaveMaker’s widgets, prefabs, and APIs for rapid development.
+- Test the feature to ensure it meets functional requirements.
+- Package the feature as a modular component:
+- Ensure the component has a well-defined API for data exchange.
+- Add documentation or metadata for its usage.
+
+### Step 3: Export as a Library or Data Module
+
+- **Export Options:**
+  - Export as a library (.aar for Android or .framework for iOS).
+  - Alternatively, expose the feature as a web view or API endpoint if dynamic updates are preferred.
+- Ensure compatibility with the existing app’s tech stack.
+
+### Step 4: Integrate with the Native App
+
+- **Add the Feature:**
+  - For Android: Add the exported .aar library to your Gradle build configuration.
+  - For iOS: Integrate the .framework file into your Xcode project.
+
+- **Data Exchange:**
+  - Use the provided APIs or hooks to enable data flow between the native app and the embedded WaveMaker component.
+
+- **UI Integration:**
+
+- Embed the component seamlessly within the app's UI.
+- Customize the styling to maintain consistency with the existing app.
+
+### Step 5: Test and Deploy
+
+- **Debugging:** Use tools like WavePulse for debugging the integration without exposing source code.
+- **End-to-End Testing:** Validate the new feature’s functionality and its interactions within the app.
+- **Deployment:** Roll out the updated app through appropriate app stores or distribution channels.###
 
 ## Embedding React Native
 
@@ -456,7 +504,7 @@ For Podfile, the following steps will be done by wm-reactnative-cli.
 - Run `pod init` in `project/ios-embed`
 - Move **Podfile** from **`project/ios/Podfile`** to **`project/ios-embed/Podfile`**
 
-````podfile
+```podfile
 require File.join(File.dirname(`node --print "require.resolve('expo/package.json')"`), "scripts/autolinking")
 require File.join(File.dirname(`node --print "require.resolve('react-native/package.json')"`), "scripts/react_native_pods")
 
