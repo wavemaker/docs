@@ -21,9 +21,7 @@ WaveMaker Studio delivers consistent, predictable updates to provide users with 
 
 ## Release Frequency
 
-WaveMaker Studio provides consistent release updates based on the following schedule:
-
-The Cadence specified below is for general guidance and is subject to change from release to release.
+WaveMaker Studio provides consistent release updates based on the following schedule. The Cadence specified below is for general guidance and is subject to change from release to release.
 
 - **Patch Releases**
     - Cadence: Every **2 weeks**
