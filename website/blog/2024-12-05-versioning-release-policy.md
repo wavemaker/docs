@@ -40,21 +40,25 @@ Support policies are applicable only to **Enterprise customers (WME)**.
 :::
 
 - WaveMaker Studio provides **support for the latest 3 major/minor versions (upto 12 months approximately from the release date)** to ensure stability and security.
-- **End-of-Support Notification**: Customers are notified when their version is nearing end-of-support. Notifications will be sent via email to encourage timely upgrades.
-- **Long-Term Support (LTS)**: Selected major releases may be designated as LTS, where they will receive extended support, focusing on critical fixes and security patches only.
+- **End-of-Support Notification**: Customers are notified when their version is nearing end-of-support. Notifications are sent via email to encourage timely upgrades.
+- **Long-Term Support (LTS)**: Selected major releases may be designated as LTS, where they receive extended support, focusing on critical fixes and security patches only.
 
 ## Release Status Definitions
 
 - **Active Support**: The version currently receives regular updates, including bug fixes and security patches.
-- **End of Life (EOL)**: Versions that are more than 3 releases (Major/Minor) behind the latest major/minor release are considered EOL and will no longer receive support or updates. Users on EOL versions are strongly encouraged to upgrade to a supported release.
+- **End of Life (EOL)**: Versions that are more than 3 releases (Major/Minor) behind the latest major/minor release are considered EOL and no longer receive support or updates. Users on EOL versions are strongly encouraged to upgrade to a supported release.
 
-For instance, when we release 11.9, versions prior to 11.6 will be considered EOL. Customers on versions 11.8 ,11.7 and 11.6 will continue to receive support/updates.
+For instance, when we release 11.9, versions prior to 11.6 are considered EOL. Customers on versions 11.8 ,11.7 and 11.6 will continue to receive support/updates.
 
 :::note
-Release definitions are applicable exclusively to **Enterprise customers (WME)**. For **WMO customers**, the latest version will be deployed automatically as soon as it becomes available.
+Release definitions are applicable exclusively to **Enterprise customers (WME)**. For **WMO customers**, the latest version is deployed automatically as soon as it becomes available.
 :::
 
 ## Actively Supported Versions
+
+We offer tentative dates as general guidance which are subject to change. Users are recommended to make timely upgrades before the end of LTS.
+
+For example, below are the dates for our latest 11.9.x and prior releases.
 
 | Version | Status | Released | Active Support Ends | Long Term Support (LTS) Ends/EOL|
 | ------- | ------ | -------- | ------------------- | ------------------------------- |
@@ -63,10 +67,8 @@ Release definitions are applicable exclusively to **Enterprise customers (WME)**
 | 11.7 | LTS | April 2024 | July 2024 | April 2025 |
 | 11.6 | LTS | Mar 2024 | June 2024 | Mar 2025 |
 
-Tentative dates are offered as general guidance and are subject to change.
-
 :::note
-Patch will be provided on the latest version in that particular series.
+Patch is provided on the latest version in that particular series.
 :::
 
 ## Best Practices for Staying Updated
