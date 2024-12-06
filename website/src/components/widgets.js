@@ -670,38 +670,6 @@ const WidgetTabItems = () => {
           "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/box/",
           "api": ""
         },
-        {
-          "lightIcon": "/learn/img/facebook.svg",
-          "darkIcon": "/learn/img/facebookDark.svg",
-          "label": "",
-          "body": " Use this Prefab to enable user authorization using their FaceBook credentials. ",
-          "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/facebook/",
-          "api": ""
-        },
-        {
-          "lightIcon": "/learn/img/button.svg",
-          "darkIcon": "/learn/img/button.svg",
-          "label": "",
-          "body": " Use this Prefab to enable user authorization using their Google credentials. ",
-          "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/google/",
-          "api": ""
-        },
-        {
-          "lightIcon": "/learn/img/instagram.svg",
-          "darkIcon": "/learn/img/instagramDark.svg",
-          "label": "",
-          "body": " Use this Prefab to enable user authorization using their Instagram credentials. ",
-          "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/instagram/",
-          "api": ""
-        },
-        {
-          "lightIcon": "/learn/img/linkedin.svg",
-          "darkIcon": "/learn/img/linkedinDark.svg",
-          "label": "",
-          "body": " Use this Prefab to enable user authorization using their LinkedIn credentials. ",
-          "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/",
-          "api": ""
-        }
       ]
     },
     {

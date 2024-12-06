@@ -901,7 +901,6 @@
 				"how-tos/implement-openid-okta-provider",
 				"how-tos/implement-openid-auth0-provider",
 				"how-tos/custom-security-using-google-oauth-prefab",
-				"how-tos/multiple-security-provider-implementation",
 				"how-tos/customizing-post-authentication-handlers",
 				"how-tos/add-custom-filters",
 				"how-tos/configuring-content-security-policy",
@@ -1509,11 +1508,7 @@
 					"label": "OAuth",
 					"items": [
 						"app-development/widgets/prefab/oauth-prefabs",
-						"app-development/widgets/prefab/oauth-prefabs/box",
-						"app-development/widgets/prefab/oauth-prefabs/facebook",
-						"app-development/widgets/prefab/oauth-prefabs/google",
-						"app-development/widgets/prefab/oauth-prefabs/instagram",
-						"app-development/widgets/prefab/oauth-prefabs/linkedin"
+						"app-development/widgets/prefab/oauth-prefabs/box"
 					]
 				},
 				{

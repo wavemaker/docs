@@ -59,7 +59,6 @@ Find the how to topics and look for sub-categories under each of the specified c
 *   [How to integrate SAML with OneLogin](/learn/how-tos/saml-integration-onelogin/)
 *   [How to integrate SAML with ADFS](/learn/how-tos/saml-integration-adfs/)
 *   [How to customize security to use Google OAuth Prefab](/learn/how-tos/custom-security-using-google-oauth-prefab/)
-*   [How to customize security to use Google OAuth Prefab and Database as Security Provider](/learn/how-tos/multiple-security-provider-implementation/)
 *   [Customizing Post Authentication Handlers](/learn/how-tos/customizing-post-authentication-handlers)
 *   [How to configure MTLS for REST API's](/learn/how-tos/configure-mtls-in-wmapp/)
 *   [How to add Custom Filters in SecurityFilterChain](/learn/how-tos/add-custom-filters)
