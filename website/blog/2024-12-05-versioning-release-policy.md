@@ -1,9 +1,8 @@
 ---
-title: "Introducing the Gift Box – Your Personal Guide to What’s New in WaveMaker Studio"
+title: "WaveMaker Studio Versioning and Release Policy"
 author: "Neha Shailendra"
 ---
 ---
-
 
 WaveMaker Studio delivers consistent, predictable updates to provide users with an evolving, secure, and feature-rich experience. This document outlines our release schedule, versioning practices, and support lifecycle for both online and enterprise versions of WaveMaker Studio.
 
@@ -36,6 +35,10 @@ The Cadence specified below is for general guidance and is subject to change fro
 
 ## Support Policy and Lifecycle
 
+:::note
+Support policies are applicable only to **Enterprise customers (WME)**.
+:::
+
 - WaveMaker Studio provides **support for the latest 3 major/minor versions (upto 12 months approximately from the release date)** to ensure stability and security.
 - **End-of-Support Notification**: Customers are notified when their version is nearing end-of-support. Notifications will be sent via email to encourage timely upgrades.
 - **Long-Term Support (LTS)**: Selected major releases may be designated as LTS, where they will receive extended support, focusing on critical fixes and security patches only.
@@ -48,8 +51,10 @@ The Cadence specified below is for general guidance and is subject to change fro
 For instance, when we release 11.9, versions prior to 11.6 will be considered EOL. Customers on versions 11.8 ,11.7 and 11.6 will continue to receive support/updates.
 
 :::note
-The below release definitions are applicable exclusively to **Enterprise customers (WME)**. For **WMO customers**, the latest version will be deployed automatically as soon as it becomes available.
+Release definitions are applicable exclusively to **Enterprise customers (WME)**. For **WMO customers**, the latest version will be deployed automatically as soon as it becomes available.
 :::
+
+## Actively Supported Versions
 
 | Version | Status | Released | Active Support Ends | Long Term Support (LTS) Ends/EOL|
 | ------- | ------ | -------- | ------------------- | ------------------------------- |
