@@ -27,7 +27,7 @@ WavePulse is particularly useful for maintaining high-performance applications, 
 
 Debugging is the process of identifying, analyzing, and resolving issues in an application. This step makes sure that the application functions as expected. WavePulse allows you to debug the APK or IPA file of an application on a mobile device where the application details required for debugging can be viewed in the web browser.
 
-![Debugging Architecture](/learn/assets/debug-architecture.png)
+![Debugging Architecture](/learn/assets/wavepulse-architecture.png)
 
 Debugging is carried on two platforms,
 
