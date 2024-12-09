@@ -7,13 +7,13 @@ author: "Neha Shailendra"
 
 Over the years, our low-code platform has empowered developers to build hybrid mobile applications with ease using Cordova. Cordova played a significant role in enabling cross-platform compatibility and helped countless users achieve their mobile application goals. However, as technology evolves, so do the expectations for performance, user experience, and scalability in mobile development.
 
-In recent years, we have transitioned our platform to focus on React Native as the standard for mobile application development. 
+In recent years, we have transitioned our platform to focus on React Native as the standard for mobile application development.
+
+With this upgrade, we will be sunsetting Cordova-based app generation. This decision aligns with the industry's shift toward frameworks that deliver better performance and user experience for hybrid mobile applications.
 
 <!-- truncate -->
 
-## Transition to React Native
-
-With this upgrade, we will be sunsetting Cordova-based app generation. This decision aligns with the industry's shift toward frameworks that deliver better performance and user experience for hybrid mobile applications.
+## Ending Support for Cordova Projects
 
 As previously communicated in the below mentioned blog, we announced the deprecation of creating a new Cordova based application as part of the 11.6 release.
 
