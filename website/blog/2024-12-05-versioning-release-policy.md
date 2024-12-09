@@ -33,13 +33,13 @@ WaveMaker Studio provides consistent release updates based on the following sche
 
 ## Support Policy and Lifecycle
 
-:::note
-Support policies are applicable only to **Enterprise customers (WME)**.
-:::
-
 - WaveMaker Studio provides **support for the latest 3 major/minor versions (upto 12 months approximately from the release date)** to ensure stability and security.
 - **End-of-Support Notification**: Customers are notified when their version is nearing end-of-support. Notifications are sent via email to encourage timely upgrades.
 - **Long-Term Support (LTS)**: Selected major releases may be designated as LTS, where they receive extended support, focusing on critical fixes and security patches only.
+
+:::note
+End-of-Support Notification and LTS are applicable only to **Enterprise customers (WME)**.
+:::
 
 ## Release Status Definitions
 
