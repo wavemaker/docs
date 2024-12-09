@@ -77,12 +77,7 @@ When using any private network with restrictions, ensure that the mobile device 
 
 1. Open WavePulse web application and enter the application ID that is fetched from Settings > Build Preferences page.
 
-2. Go to mobile device and install the APK/IPA file if not installed already.
-
-:::note
-It is necessary to close the application before scanning the QR code.
-:::
-
+2. Install the APK/IPA on your mobile device and close the app before scanning the QR code.
 3. Scan the QR code in WavePulse or use the link below it to launch the app in debug mode.
 4. Grant permission to connect the mobile application to the debugging session in WavePulse.
 
