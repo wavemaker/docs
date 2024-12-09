@@ -148,9 +148,11 @@ export function DocSearchModal(_ref) {
             },
             navigator: navigator,
             onStateChange: function onStateChange(props) {
+                if(props.prevState.query != ''){
+                    setState(props.state);
+                }
                 if (!props.prevState.isOpen && props.state.query != '') {
                     onOpen();
-                    document.querySelector('.DocSearch-Input').value = props.state.query;
                     setState(props.state);
                 }
                 if (!props.state.isOpen && props.prevState.isOpen) {
@@ -163,7 +165,6 @@ export function DocSearchModal(_ref) {
                         activeItemId: null,
                         status: 'idle'
                     })
-                    document.querySelector('.DocSearch-Input').value = '';
                 }
             },
             getSources: function getSources(_ref2) {
