@@ -5,9 +5,11 @@ sidebar_label: "WavePulse"
 ---
 ---
 
-WavePulse is a feature in WaveMaker, a low-code development platform, designed to provide real-time diagnostics for applications. It helps developers and administrators ensure that their applications are running smoothly by offering insights into various metrics and logs.
+WavePulse is a feature in WaveMaker, designed to provide real-time diagnostics for applications. It helps developers to ensure that their applications are running smoothly by offering insights into various metrics and logs.
 
-WavePulse is particularly useful for maintaining high-performance applications, ensuring stability, and providing end-users with a seamless experience. It enhances the process of debugging by allowing you to debug the APK or IPA file of an application without the need of using or sharing any confidential or excess information.
+WavePulse is particularly useful for maintaining high-performance applications, ensuring stability, and providing end-users with a seamless experience. It enhances the process of debugging by allowing you to debug the APK or IPA file of an application without the need of using or sharing any confidential information like source code or excess information.
+
+To access WavePulse, [click here](#https://apps.wavemakeronline.com/wavepulse/client).
 
 ### Key Features
 
@@ -34,14 +36,14 @@ Debugging is carried on two platforms,
 - **WaveMaker Studio**: [To generate the APK or IPA file](#generating-apk-or-ipa-file-to-debug).
 - **Browser and Mobile Device**: [To test and debug the APK or IPA file in WavePulse](#testing--debugging-in-wavepulse).
 
-## Configuring APK or IPA File in WaveMaker Studio
+## Configuring APK/IPA File in WaveMaker Studio
 
 An application can be debugged using the APK or IPA file. To get the APK or IPA that can be debugged using the WavePulse,
 
 - Enable the WavePulse in the application created in the WaveMaker studio.
 - Generate APK or IPA file using the React Native zip file.
 
-### Enable the WavePulse in the application
+### Enable WavePulse in Application
 
 - Go to File Explorer.
 - Navigate to **src/main/webapp/wm_rn_config.json** to find the **wm_rn_config.json** file.
@@ -49,9 +51,12 @@ An application can be debugged using the APK or IPA file. To get the APK or IPA 
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/ppStvsxdQmjNLobnFxCwm8"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
-### Generate APK or IPA file using the React Native Zip file
+### Generate APK/IPA file using React Native Zip file
 
-APK for Android and IPA for iOS can be generated using React Native zip file that is a package of project data. To know the process of generating APK and IPA file, see [Mobile Manual Build Process](https://docs.wavemaker.com/learn/react-native/mobile-build-manual).
+APK for Android and IPA for iOS can be generated using React Native zip file that is a package of project data. To know the process of generating APK and IPA file, you can either use
+
+- [Mobile Manual Build Process](https://docs.wavemaker.com/learn/react-native/mobile-build-manual)
+- [Build React Native app installers using AppChef](https://docs.wavemaker.com/learn/react-native/build-installers)
 
 ## Testing & Debugging in WavePulse
 
@@ -60,11 +65,9 @@ In the debugging process, two platforms can be used,
 - **Web Browser**: First, to open the WavePulse web application.
 - **Mobile Device**: Second, to open the APK or IPA file that needs to be debugged.
 
+### Connection between Web Browser and Mobile Device
+
 A connection is established between WavePulse and Application to record and view debugging session associated with the actions performed in the application.
-
-### Establishing Connection between Web Browser and Mobile Device for debugging
-
-You can directly navigate to any component or page in the application on the mobile device and view logs, network calls, timelines, and other details about the selected component in the debug session opened in WavePulse.
 
 Follow the steps below to establish the connection:
 
@@ -72,7 +75,7 @@ Follow the steps below to establish the connection:
 When using any private network with restrictions, ensure that the mobile device can access WavePulse web application in your network.
 :::
 
-1. Open WavePulse web application and enter the application ID that is fetched from Settings > Build Preferences page. This confirms that the required application is launched for debugging.
+1. Open WavePulse web application and enter the application ID that is fetched from Settings > Build Preferences page.
 
 2. Go to mobile device and install the APK/IPA file if not installed already.
 
@@ -80,7 +83,7 @@ When using any private network with restrictions, ensure that the mobile device 
 It is necessary to close the application before scanning the QR code.
 :::
 
-3. Scan the QR code generated in the WavePulse web application. Alternatively, you can open the link provided under the QR code to launch the application in debug mode.
+3. Scan the QR code in WavePulse or use the link below it to launch the app in debug mode.
 4. Grant permission to connect the mobile application to the debugging session in WavePulse.
 
 <iframe width="560" height="315" src="https://www.loom.com/embed/955c51e160a64230bf594aa35b7f5039?sid=e33b7e13-99df-4249-844a-f67cde42cab8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
