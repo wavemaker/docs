@@ -1410,6 +1410,9 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
     body.search-active #header-search{
         padding: 0;
     }
+    body.search-active .DocSearch-Modal-Container {
+        padding: 0;
+    }
     body.search-active .DocSearch-Modal{
         max-height: 100vh;
     }
