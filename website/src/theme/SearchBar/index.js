@@ -69,15 +69,17 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
     document.body.classList.add("search-active")
     document.body.classList.add("DocSearch--active")
     setIsOpen(true);
+    if (document.querySelector('.DocSearch-Reset')) 
+      document.querySelector('.DocSearch-Reset').removeAttribute('hidden');
   }, [importDocSearchModalIfNeeded, setIsOpen]);
   const onClose = useCallback(() => {
     document.body.classList.remove("search-active")
     document.body.classList.remove("DocSearch--active")
     document.querySelector('.DocSearch-Input').blur()
     document.querySelector('.DocSearch-Input').value = '';
-    setIsOpen(false);
     if (document.querySelector('.DocSearch-Reset')) 
       document.querySelector('.DocSearch-Reset').setAttribute('hidden','');
+    setIsOpen(false);
     searchContainer.current?.remove();
   }, [setIsOpen]);
 
