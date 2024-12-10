@@ -308,6 +308,7 @@ export function DocSearchModal(_ref) {
     }, []);
     return React.createElement("div", _extends({
         ref: containerRef,
+        className: "DocSearch-Modal-Container",
         style: { width: '100%', height: '100%' }
     }, {
         onMouseDown: function onMouseDown(event) {

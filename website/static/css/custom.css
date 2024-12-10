@@ -1281,6 +1281,9 @@ body.search-active #header-search{
     height: 100vh;
     background-color: rgba(78, 122, 193, 0.5);
     margin: 0 auto;
+}
+
+body.search-active .DocSearch-Modal-Container {
     padding: 3rem;
 }
 
