@@ -64,6 +64,8 @@ export function SearchBox(_ref) {
     const handleResetClick = () => {
         if (screenWidth <= 768) {
             props.onClose();
+        } else {
+            props.resetQuery();
         }
     };
     return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("form", {

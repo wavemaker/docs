@@ -280,6 +280,15 @@ export function DocSearchModal(_ref) {
     React.useEffect(function () {
         inputRef.current.value = state.query;
     }, [state])
+    const resetQuery = () => {
+        setState((prevState) => ({
+            ...prevState,
+            query: '',
+            collections: [],
+            completion: null,
+            context: {},
+        }));
+    };
     React.useEffect(function () {
         if (initialQuery.length > 0) {
             refresh();
@@ -323,6 +332,7 @@ export function DocSearchModal(_ref) {
         className: "DocSearch-SearchBar",
         ref: formElementRef
     }, /*#__PURE__*/React.createElement(SearchBox, _extends({}, autocomplete, {
+        resetQuery: resetQuery,
         state: state,
         autoFocus: autoFocus,
         inputRef: inputRef,
