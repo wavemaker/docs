@@ -33,10 +33,18 @@ Debugging is the process of identifying, analyzing, and resolving issues in an a
 
 The debugging architecture using WavePulse includes the following steps.
 
+**Configuring APK/IPA File in WaveMaker Studio**
+
 1. In WaveMaker studio, [enable WavePulse](#enable-wavepulse-in-application) 
 2. [Generate APK or IPA file](#generate-apkipa-file-using-react-native-zip-file)
+
+**Testing & Debugging in WavePulse**
+
 3. Next for testing and debugging, open WavePulse application.
 4. In mobile device, download and install the APK or IPA file.
+
+**Connection between Web Browser and Mobile Device**
+
 5. Then establish [connection between WavePulse web application and mobile device by providing application ID](#connection-between-web-browser-and-mobile-device).
 6. Using mobile device scanner, scan QR code to run the application.
 7. Application is launched.
