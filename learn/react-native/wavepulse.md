@@ -7,7 +7,7 @@ sidebar_label: "WavePulse"
 
 WavePulse is a feature in WaveMaker, designed to provide real-time diagnostics for applications. It helps developers to ensure that their applications are running smoothly by offering insights into various metrics and logs.
 
-WavePulse is particularly useful for maintaining high-performance applications, ensuring stability, and providing end-users with a seamless experience. It enhances the process of debugging (not JS debug) by allowing you to inspect the APK or IPA file of an application with out requiring mobile phone to be connected to system. Remote debugging is possible.
+WavePulse is particularly useful for maintaining high-performance applications, ensuring stability, and providing end-users with a seamless experience. It enhances the process of debugging by allowing you to inspect the APK or IPA file of an application with out requiring mobile phone to be connected to system. Remote debugging is possible.
 
 To access WavePulse, [click here](https://apps.wavemakeronline.com/wavepulse/client).
 
@@ -28,6 +28,10 @@ To access WavePulse, [click here](https://apps.wavemakeronline.com/wavepulse/cli
 ## WavePulse Debug Architecture 
 
 Debugging is the process of identifying, analyzing, and resolving issues in an application. This step makes sure that the application functions as expected. WavePulse allows you to debug the APK or IPA file of an application on a mobile device where the application details required for debugging can be viewed in the web browser.
+
+:::note
+JavaScript debugging is not supported in WavePulse.
+:::
 
 ![Debugging Architecture](/learn/assets/wavepulse-architecture.png)
 
