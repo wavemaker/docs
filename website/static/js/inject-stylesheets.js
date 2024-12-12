@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = '/learn/assets/wavemaker.css?' + new Date().valueOf();
+    link.href = '/learn/learn/assets/wavemaker.css?' + new Date().valueOf();
     head.appendChild(link);
 
     /* Create and Parse a HTML string that to be injected into the header */
