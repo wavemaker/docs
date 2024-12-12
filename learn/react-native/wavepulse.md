@@ -9,7 +9,7 @@ WavePulse is a feature in WaveMaker, designed to provide real-time diagnostics f
 
 WavePulse is particularly useful for maintaining high-performance applications, ensuring stability, and providing end-users with a seamless experience. It enhances the process of debugging by allowing you to debug the APK or IPA file of an application without the need of using or sharing any confidential information like source code or excess information.
 
-To access WavePulse, [click here](#https://apps.wavemakeronline.com/wavepulse/client).
+To access WavePulse, [click here](https://apps.wavemakeronline.com/wavepulse/client).
 
 ### Key Features
 
@@ -40,7 +40,7 @@ The debugging architecture using WavePulse includes the following steps.
 
 **Testing & Debugging in WavePulse**
 
-3. Next for testing and debugging, open WavePulse application.
+3. Next for testing and debugging, open [WavePulse](https://apps.wavemakeronline.com/wavepulse/client) application.
 4. In mobile device, download and install the APK or IPA file.
 
 **Connection between Web Browser and Mobile Device**
@@ -54,14 +54,18 @@ The debugging architecture using WavePulse includes the following steps.
 
 An application can be debugged using the APK or IPA file. To get the APK or IPA that can be debugged using the WavePulse,
 
-- Enable the WavePulse in the application created in the WaveMaker studio.
+- Enable the WavePulse in the application created in the WaveMaker studio. Also enable logs, if you want to view the console logs.
 - Generate APK or IPA file using the React Native zip file.
+
+:::warning
+WaveMaker recommends enabling and using WavePulse only for pre-release builds. For builds already released, it is advised to disable WavePulse.
+:::
 
 ### Enable WavePulse in Application
 
-- Go to File Explorer.
-- Navigate to **src/main/webapp/wm_rn_config.json** to find the **wm_rn_config.json** file.
-- Inside wm_rn_config.json. set	`enableWavePulse` as true. Click Save. This enables the WavePulse in the application. 
+1. Go to File Explorer.
+2. Navigate to **src/main/webapp/wm_rn_config.json** to find the **wm_rn_config.json** file.
+3. Inside wm_rn_config.json. set	`enableWavePulse` and `enablelogs` as true. Click Save. This enables the WavePulse in the application and you can view console logs.
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/ppStvsxdQmjNLobnFxCwm8"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
