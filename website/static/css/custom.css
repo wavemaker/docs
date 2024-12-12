@@ -1189,7 +1189,7 @@ body:not(.search-active) #header-search .DocSearch-Modal .DocSearch-SearchBar .D
 
 .navbar{
     box-shadow: 0 1px 0 0px  var(--wm-navbar-bottom-border);
-    padding: 1em 5em;
+    padding: 1em 1em;
 }
 
 .navbar__items--right > .navbar__item:last-child{
@@ -1858,6 +1858,18 @@ h2.widget-header{
     .DocSearch-inlineSearch-action, .RecentSearch-action {
         padding: 3px 12px;
     }
+} 
+
+@media only screen and (min-width: 996px) and (max-width: 1260px) {
+    .navbar__title.text--truncate{
+        display:none;
+    }
+    #header-search .DocSearch-Button-Keys {
+        display: none;
+    }
+   .navbar__items--center {
+        margin : 0 -100px;
+   }
 } 
 
    
