@@ -61,7 +61,7 @@ An application can be debugged using the APK or IPA file. To get the APK or IPA 
 
 - Go to File Explorer.
 - Navigate to **src/main/webapp/wm_rn_config.json** to find the **wm_rn_config.json** file.
-- Inside wm_rn_config.json. set	`enableWavePulse` as true. Click Save. This enables the WavePulse in the application.
+- Inside wm_rn_config.json. set	`enableWavePulse` as true. Click Save. This enables the WavePulse in the application. 
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/ppStvsxdQmjNLobnFxCwm8"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
@@ -71,6 +71,8 @@ APK for Android and IPA for iOS can be generated using React Native zip file tha
 
 - [Mobile Manual Build Process](https://docs.wavemaker.com/learn/react-native/mobile-build-manual)
 - [Build React Native app installers using AppChef](https://docs.wavemaker.com/learn/react-native/build-installers)
+
+<iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/4aZwY1FHm872fwGw7h989b"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
 ## Testing & Debugging in WavePulse
 
