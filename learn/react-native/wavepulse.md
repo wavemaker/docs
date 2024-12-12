@@ -7,16 +7,16 @@ sidebar_label: "WavePulse"
 
 WavePulse is a feature in WaveMaker, designed to provide real-time diagnostics for applications. It helps developers to ensure that their applications are running smoothly by offering insights into various metrics and logs.
 
-WavePulse is particularly useful for maintaining high-performance applications, ensuring stability, and providing end-users with a seamless experience. It enhances the process of debugging by allowing you to debug the APK or IPA file of an application without the need of using or sharing any confidential information like source code or excess information.
+WavePulse is particularly useful for maintaining high-performance applications, ensuring stability, and providing end-users with a seamless experience. It enhances the process of debugging (not JS debug) by allowing you to inspect the APK or IPA file of an application with out requiring mobile phone to be connected to system. Remote debugging is possible.
 
 To access WavePulse, [click here](https://apps.wavemakeronline.com/wavepulse/client).
 
 ### Key Features
 
-- **Easy Debug using IPA and APK**: Uses IPA or APK file to debug rather than using the React Native Zip file of an application.
-- **Quick and Simple Setup**: Simplifies the process of setup as it requires only one tool, WavePulse and few steps to get started with it.
+- **Debug using IPA and APK**: Uses IPA or APK file to debug rather than using the React Native Zip file of an application.
+- **Simple Setup**: Simplifies the process of setup as it requires only one tool, WavePulse and few steps to get started with it.
 - **Debugging on Real Devices**: Debugging can be done on any device given WavePulse is enabled in the application to be debugged.
-- **Importing and Exporting Debugging Session**: Debugging session can be easily exported or imported using WavePulse without having to share any irrelevant or confidential information.
+- **Importing and Exporting Debugging Session**: Debugging session can be easily exported or imported using WavePulse.
 - **Viewing WaveMaker Specific Data**: WaveMaker specific component and other details can be easily viewed. User can find every detail at one place, like:
   - Console logs
   - Network
@@ -33,35 +33,26 @@ Debugging is the process of identifying, analyzing, and resolving issues in an a
 
 The debugging architecture using WavePulse includes the following steps.
 
-**Configuring APK/IPA File in WaveMaker Studio**
+### Steps in WaveMaker Studio
 
-1. In WaveMaker studio, [enable WavePulse](#enable-wavepulse-in-application) 
-2. [Generate APK or IPA file](#generate-apkipa-file-using-react-native-zip-file)
+**1.** In WaveMaker studio, [enable WavePulse](#enable-wavepulse-in-application).  
+**2.** [Generate APK or IPA file](#generate-apkipa-file-using-react-native-zip-file)
 
-**Testing & Debugging in WavePulse**
+### Steps in Web Browser
 
-3. Next for testing and debugging, open [WavePulse](https://apps.wavemakeronline.com/wavepulse/client) application.
-4. In mobile device, download and install the APK or IPA file.
+**3.** Open [WavePulse](https://apps.wavemakeronline.com/wavepulse/client) application and go to step 4.  
+**5.** Establish [connection between WavePulse web application and mobile device by providing application ID](#connection-between-web-browser-and-mobile-device). Go to step 6.  
+**8.** Now, the debug session of the application can be viewed in WavePulse.  
 
-**Connection between Web Browser and Mobile Device**
+### Steps in Mobile Device
 
-5. Then establish [connection between WavePulse web application and mobile device by providing application ID](#connection-between-web-browser-and-mobile-device).
-6. Using mobile device scanner, scan QR code to run the application.
-7. Application is launched.
-8. Now, the debug session of the application can be viewed in WavePulse.
+**4.** In mobile device, download and install the APK or IPA file.  
+**6.** Using mobile device scanner, scan QR code to run the application.  
+**7.** Application is launched. To view the debug session go to step 8. 
 
-## Configuring APK/IPA File in WaveMaker Studio
+## Enable WavePulse in Application
 
 An application can be debugged using the APK or IPA file. To get the APK or IPA that can be debugged using the WavePulse,
-
-- Enable the WavePulse in the application created in the WaveMaker studio. Also enable logs, if you want to view the console logs.
-- Generate APK or IPA file using the React Native zip file.
-
-:::warning
-WaveMaker recommends enabling and using WavePulse only for pre-release builds. For builds already released, it is advised to disable WavePulse.
-:::
-
-### Enable WavePulse in Application
 
 1. Go to File Explorer.
 2. Navigate to **src/main/webapp/wm_rn_config.json** to find the **wm_rn_config.json** file.
@@ -69,7 +60,11 @@ WaveMaker recommends enabling and using WavePulse only for pre-release builds. F
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/ppStvsxdQmjNLobnFxCwm8"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
-### Generate APK/IPA file using React Native Zip file
+:::warning
+WaveMaker recommends enabling and using WavePulse only for pre-release builds. For builds already released, it is advised to disable WavePulse.
+:::
+
+## Generate APK/IPA file using React Native Zip file
 
 APK for Android and IPA for iOS can be generated using React Native zip file that is a package of project data. To know the process of generating APK and IPA file, you can either use
 
@@ -78,14 +73,7 @@ APK for Android and IPA for iOS can be generated using React Native zip file tha
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/4aZwY1FHm872fwGw7h989b"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
-## Testing & Debugging in WavePulse
-
-In the debugging process, two platforms can be used,
-
-- **Web Browser**: First, to open the WavePulse web application.
-- **Mobile Device**: Second, to open the APK or IPA file that needs to be debugged.
-
-### Connection between Web Browser and Mobile Device
+## Connection between Web Browser and Mobile Device
 
 A connection is established between WavePulse and Application to record and view debugging session associated with the actions performed in the application.
 
