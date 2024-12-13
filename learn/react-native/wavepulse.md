@@ -65,7 +65,7 @@ An application can be debugged using the APK or IPA file. To get the APK or IPA 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/ppStvsxdQmjNLobnFxCwm8"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
 :::warning
-WaveMaker recommends enabling and using WavePulse only for pre-release builds. For builds already released, it is advised to disable WavePulse.
+WaveMaker recommends enabling and using WavePulse only for pre-release builds. **It is advised to disable WavePulse, in builds for Play store or App Store submissions**.
 :::
 
 ## Generate APK/IPA file using React Native Zip file
