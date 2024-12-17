@@ -96,6 +96,8 @@
     --recent-action-border: #7777774D;
     --recent-action-bg: transparent;
     --spl-icon: #90B3DE;
+    --wm-desktop-banner-background-image: url(../img/light-desktop-banner.svg);
+    --wm-mobile-banner-background-image: url(../img/light-mobile-banner.svg);
 }
 html[data-theme="dark"] {
     --ifm-font-color-base: #b3d4ff;
@@ -193,6 +195,8 @@ html[data-theme="dark"] {
      --icon-stroke-color: #B8D4FB;
      --recent-action-border: #FFFFFFB2;
      --recent-action-bg: #FFFFFF33;
+     --wm-desktop-banner-background-image: url(../img/dark-desktop-banner.svg);
+     --wm-mobile-banner-background-image: url(../img/dark-mobile-banner.svg);
 }
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 /* your custom css */
@@ -357,10 +361,10 @@ h3 {
 
 /* Added Style for Banner */
 .banner {
-    /*background-image: url(../img/bannerImage.svg);*/
-    background-image: var(--wm-banner-background);
+    background-image: var(--wm-desktop-banner-background-image);
+    /* background-image: var(--wm-banner-background); */
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
     height: 450px;
     position: relative;
@@ -1871,5 +1875,12 @@ h2.widget-header{
         margin : 0 -100px;
    }
 } 
+
+@media (max-width: 996px) {
+    .banner {
+        background-image: var(--wm-mobile-banner-background-image);
+    }
+}
+
 
    
