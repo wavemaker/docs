@@ -85,11 +85,11 @@ Expo 52 introduces several impactful updates that developers should explore:
 
 To make the most of this update, here are some tips for developers:
 
-- Plan for Splash Screen Changes: Revisit your Android splash screen designs to accommodate the lack of full-screen support with icons.
-- Leverage Faster Previews: Incorporate more frequent testing into your workflow to benefit from the reduced preview times.
-- Enhance Accessibility: Take advantage of the improved accessibility ID support to make your app more inclusive.
-- Explore New Features: Dive into the updates to Expo Camera, Video for improved capabilities.
-- Optimize for Performance: Utilize the tree-shaking support to reduce bundle sizes and improve rendering.
+- **Plan for Splash Screen Changes**: Revisit your Android splash screen designs to accommodate the lack of full-screen support with icons.
+- **Leverage Faster Previews**: Incorporate more frequent testing into your workflow to benefit from the reduced preview times.
+- **Enhance Accessibility**: Take advantage of the improved accessibility ID support to make your app more inclusive.
+- **Explore New Features**: Dive into the updates to Expo Camera, Video for improved capabilities.
+- **Optimize for Performance**: Utilize the tree-shaking support to reduce bundle sizes and improve rendering.
 
 ### New Architecture Goes Mainstream
 
@@ -148,17 +148,16 @@ For more information, see [New Layout Behaviours](https://reactnative.dev/blog/2
 ### New Development Features
 
 - React Native DevTools replaces JavaScript debugger
+- New event APIs: `useEvent` and `useEventListener`
+- Added `OnUserLeavesActivity` event for Android lifecycle
+- Ability to customize root view through `ExpoAppDelegateSubscriberProtocol`
 
-```
-<!-- - New event APIs: `useEvent` and `useEventListener` -->
-<!-- - Added `OnUserLeavesActivity` event for Android lifecycle -->
-<!-- - Ability to customize root view through `ExpoAppDelegateSubscriberProtocol` -->
-```
 
 ## Breaking Changes and Deprecations
 
 
 ### Expo Go Limitations
+
 - Push notifications no longer supported in Expo Go
 - Google Maps support removed for Android
 - Pedometer support dropped for Android
@@ -166,18 +165,21 @@ For more information, see [New Layout Behaviours](https://reactnative.dev/blog/2
 
 
 ### Removed Components
+
 - `expo-camera/legacy` removed
 - `expo-barcode-scanner` functionality now handled by `expo-camera`
 - `create-react-native-app` no longer supported
 
 
 ### API Changes
+
 - `expo-av` Video API deprecated in favor of `expo-video`
 - React state set functions will no longer execute synchronously with New Architecture
 - Expo notifications trigger types modified
 
 
 ### Layout Changes
+
 - From Yoga 3.0 (react native 0.74+ / expo51+) layout changes with flex direction row reverse is aligned with web standards.
 Yoga would previously incorrectly reverse start and end edges, when operating on below.
 - The padding, border, or margin of a row-reverse container, the position of the child of a row-reverse container.
@@ -237,8 +239,11 @@ Versions to use
 - Java: 17.0.11 
 
 
+---
+
 # Splash Screen and App Icon Configuration
 
+---
 
 ## Splash Screen
 
