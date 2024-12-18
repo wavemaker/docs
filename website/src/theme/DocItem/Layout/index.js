@@ -33,7 +33,7 @@ function useDocTOC() {
 }
 export default function DocItemLayout({children}) {
   const docTOC = useDocTOC();
-  const [showDesktopTOC, setShowDesktopTOC] = React.useState(true);
+  const [showDesktopTOC, setShowDesktopTOC] = React.useState(false);
   const toggeleShowDesktopTOC = ()=>{
     setShowDesktopTOC(prev => !prev);
   };
