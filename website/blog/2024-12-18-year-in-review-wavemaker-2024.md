@@ -40,6 +40,7 @@ Down in the engine room, 2024 was a busy year for WaveMaker! We’ve worked hard
 
 The [11.9.2](/learn/wavemaker-release-notes/v11-9-2/) and [11.9.3](/learn/wavemaker-release-notes/v11-9-3/) updates introduced features like Pinch-to-Zoom on the Canvas, Skeleton Loader support for React Native widgets, and WavePulse for debugging mobile apps, along with key bug fixes to enhance the development experience.
 
+
 ## Looking Ahead to 2025
 
 As we wrap up 2024, we’re already looking ahead to what’s next. Every update this year was aimed at making developer experience better, and we’re excited about what’s coming in 2025. The road ahead is filled with even more updates to keep pushing the boundaries of application development, especially in the AI era.
