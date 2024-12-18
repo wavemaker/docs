@@ -1,5 +1,5 @@
 ---
-title: "WavePulse"
+title: "WavePulse - To Inspect and Debug APK/IPA File"
 id: "wavepulse"
 sidebar_label: "WavePulse"
 ---
