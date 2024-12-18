@@ -13,7 +13,7 @@ Expo rolled out version 52 with a set of features and enhancements aimed at impr
 |Feature|Expo 50|Expo 52|
 |---|---|---|
 |Preview Speed|Standard|Significantly faster|
-|API Generation|Standard setup|Streamlined and faster|
+|Build size reduced|||
 |Accessibility IDs for iOS|Limited support for nested elements|Fully supported for nested elements|
 |Android Splash Screen with Icon|Full-screen supported|Full-screen not supported|
 |Video Handling | Basic | Improved |
@@ -30,6 +30,10 @@ React Native introduces a stable new architecture with React Native 0.76. This u
 |---|---|---|
 |**Reduced Latency**|Communication through the bridge involved batched messages and required serializing and deserializing data, creating latency and slowing app responsiveness.|JSI enables direct function calls between JavaScript and native modules, bypassing the need for serialization. This minimizes delays and delivers a more real-time user experience.|
 |**Enhanced Performance**|Apps that relied heavily on native modules, such as those with intensive animations or custom native UI components, often experienced lag due to the bridge's inefficiencies in handling frequent data exchanges.|The JSI allows JavaScript to access native C++ objects directly, dramatically improving execution speed for computationally heavy tasks, making apps faster and more reliable.|
+
+- reactnative.directory will give the information about the compatibility of the libraries or any third party packages for the new architecture.
+- [Read about the known issues](https://docs.expo.dev/guides/new-architecture/#troubleshooting) to get an idea of what might expect.
+
 
 ## What's More with Expo 52?
 
@@ -67,17 +71,20 @@ https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture#box-shadow
 - **Box shadow** : BoxShadow adds a shadow to an element, with the ability to control the position, color, size, and blurriness of the shadow. 
 - **Filter** : Filter adds certain graphical filters to an element. There are a mix of color filters that let you modify things like brightness, saturation, and hue as well as non-color filters that let you add blurs and shadows. 
 
+comment: You can apply these via styles. 
+
 ### Improvements in Expo 52
 
 Expo 52 introduces several impactful updates that developers should explore:
 
 - Expo - Video: Improved video handling capabilities provide smoother playback and enhanced integration options.
     - Video poster - Poster / Thumbnail given from the studio will be displayed on the video until user starts playing the video
-- Expo CLI - Tree Shaking Support: Optimized tree-shaking support reduces bundle sizes and improves app performance.
-- React Native DevTools: Updates to React Native DevTools bring new debugging features, making issue resolution faster and more effective.
-- Simplified debugging tool includes (console, scripts and network debugging), enter "J" to launch the debugger, where the app metro bundler is running
 - Expo Camera: The Expo Camera module now supports more features, including enhanced image capture and video recording functionalities.
 
+Debugging Enhancements
+
+- React Native DevTools: Updates to React Native DevTools bring new debugging features, making issue resolution faster and more effective.
+- Simplified debugging tool includes (console, scripts and network debugging), enter "J" to launch the debugger, where the app metro bundler is running.
 
 ## How to Prepare for Expo 52
 
@@ -85,20 +92,7 @@ To make the most of this update, here are some tips for developers:
 
 - **Plan for Splash Screen Changes**: Revisit your Android splash screen designs to accommodate the lack of full-screen support with icons.
 - **Leverage Faster Previews**: Incorporate more frequent testing into your workflow to benefit from the reduced preview times.
-- **Enhance Accessibility**: Take advantage of the improved accessibility ID support to make your app more inclusive.
-- **Explore New Features**: Dive into the updates to Expo Camera, Video for improved capabilities.
 
-### New Architecture Goes Mainstream
-
-- Expo 52 is coming with the new Architecture, which is from react native 0.76 version (enabled by default). The New Architecture is a complete rewrite of the major systems that underpin React Native, including how components are rendered, how JavaScript abstractions communicates with native abstractions, and how work is scheduled across different threads.
-- reactnative.directory will give the information about the compatibility of the libraries or any third party packages for the new architecture.
-- [Read about the known issues](https://docs.expo.dev/guides/new-architecture/#troubleshooting) to get an idea of what might expect.
-
-**Why it matters**
-
-- In SDK 52, the New Architecture will be enabled by default
-- Developers will need to opt out if they want to continue using the old architecture
-- A future release in 2025 may completely remove support for the old architecture
 
 #### Min supported versions
 
@@ -110,17 +104,16 @@ To make the most of this update, here are some tips for developers:
 - Push notifications (remote notifications) will no longer be supported in Expo Go in SDK 53. In SDK 52, you will be warned when using push notifications-related features from expo-notifications in Expo Go. 
 - Google Maps will no longer be supported in Expo Go for Android in SDK 53. In SDK 52, you will be warned when using react-native-maps in Expo Go for Android. On iOS, Expo Go only supports Apple Maps. [You can use Google Maps in development builds](https://docs.expo.dev/versions/v52.0.0/sdk/map-view/#deploy-app-with-google-maps). 
 - `expo-av` Video API is deprecated, use `expo-video` instead.
-- `expo-barcode-scanner` has been removed.
+
 
 ## Breaking Changes
 
 ### Correct Handling of Logical Edges in Row-reverse Containers
 
-- From Yoga 3.0 (react native 0.74+ / expo51+) layout changes with flex direction row reverse is aligned with web standards. 
+From Yoga 3.0 (react native 0.74+ / expo51+) layout changes with flex direction row reverse is aligned with web standards. 
 - Yoga would previously incorrectly reverse start and end edges, when operating on:
 - The padding, border, or margin of a row-reverse container
 - The position, of the child of a row-reverse container
-- These changes impacts on the RTL changes or in the flex layout where flex direction is handled with row reverese and nested childrens used margin, paddings, start or end properties.
 
 For more information, see [New Layout Behaviours](https://reactnative.dev/blog/2024/04/22/release-0.74#new-layout-behaviors).
 
@@ -130,25 +123,6 @@ For more information, see [New Layout Behaviours](https://reactnative.dev/blog/2
 - Android:
     - Minimum SDK version increased from 23 to 24
     - Compilation SDK version updated from 34 to 35
-
-## Development and Performance Improvements
-
-### Metro and Build Enhancements
-
-- Fast resolving enabled by default across all platforms
-- Up to 15x faster resolution
-- Experimental universal Tree Shaking support
-- Automatic removal of unused ESM imports and exports
-- Improved monorepo support, including automatic configuration for pnpm
-
-
-### New Development Features
-
-- React Native DevTools replaces JavaScript debugger
-- New event APIs: `useEvent` and `useEventListener`
-- Added `OnUserLeavesActivity` event for Android lifecycle
-- Ability to customize root view through `ExpoAppDelegateSubscriberProtocol`
-
 
 ## Breaking Changes and Deprecations
 
@@ -165,22 +139,7 @@ For more information, see [New Layout Behaviours](https://reactnative.dev/blog/2
 
 - `expo-camera/legacy` removed
 - `expo-barcode-scanner` functionality now handled by `expo-camera`
-- `create-react-native-app` no longer supported
 
-
-### API Changes
-
-- `expo-av` Video API deprecated in favor of `expo-video`
-- React state set functions will no longer execute synchronously with New Architecture
-- Expo notifications trigger types modified
-
-
-### Layout Changes
-
-- From Yoga 3.0 (react native 0.74+ / expo51+) layout changes with flex direction row reverse is aligned with web standards.
-Yoga would previously incorrectly reverse start and end edges, when operating on below.
-- The padding, border, or margin of a row-reverse container, the position of the child of a row-reverse container.
-- These changes impacts on the RTL changes or in the flex layout where flex direction is handled with row reverese and nested childrens used margin, paddings, start or end properties.
 
 ## Library Changes
 
@@ -203,20 +162,11 @@ Improved edge-to-edge layout support for Android
 
 For more information, see [Box Shadow and Filter Style Props](https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture#box-shadow-and-filter-style-props).
 
-### Other Notes
-
-- Google mandating SDK 35 for app updates on Play Store by August 31, 2025
-- Splash screen API migrated for Android 12+
-- Web assets now use strings/ImageSource for better web ecosystem interop
-- Added `ios.appleTeamId` field for multi-target iOS apps
-
 
 ## Upgrade Recommendations
 
 - Review breaking changes carefully
-- Test your app thoroughly with the New Architecture
 - Update platform dependencies
-- Migrate from deprecated APIs
 - Review and test layout & style changes
 
 
