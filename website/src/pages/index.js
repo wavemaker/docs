@@ -59,8 +59,8 @@ export default class Index extends React.Component {
     getExtensions() {
         let extensionComponents = [];
         let extensions = [
-            { href: '/learn/app-development/ui-design/designing-app/', icon:<WebAppDevIcon className='icon'/>, label: 'Web App Development' },
             { href: '/learn/react-native/react-native-overview/', icon:<MobileAppDevIcon className='icon'/>, label: 'Mobile App Development' },
+            { href: '/learn/app-development/ui-design/designing-app/', icon:<WebAppDevIcon className='icon'/>, label: 'Web App Development' },
             { href: '/learn/app-development/custom-widgets/prefab-with-partials/#creating-partials', icon:<PrefabIcon className='icon'/>, label: 'Prefabs Design & Develop' },
             { href: '/learn/on-premise/welcome/', icon:<EnterpriseIcon className='icon'/>, label: 'Enterprise Install & Setup' },
             { href: '/learn/teams/overview', icon:<AdminTeamPortalIcon className='icon'/>, label: 'Administration Teams Portal' },

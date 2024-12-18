@@ -38,10 +38,7 @@ export default class Footer extends React.Component {
                   <a href="https://www.wavemaker.com/" target="_blank" >WaveMaker</a>
                 </li>
                 <li>
-                  <a href="https://www.wavemaker.com/training/" target="_blank" >Get Training</a>
-                </li>
-                <li>
-                  <a href="https://www.wavemaker.com/talk-to-us-for-pricing" target="_blank" >Pricing</a>
+                  <a href="https://academy.wavemaker.com/" target="_blank" >Get Training</a>
                 </li>
                 <li>
                   <a href="https://www.wavemaker.com/partner/" target="_blank" >Partners</a>
