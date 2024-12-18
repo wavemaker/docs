@@ -30,7 +30,6 @@ React Native introduces a stable new architecture with React Native 0.76. This u
 |---|---|---|
 |**Reduced Latency**|Communication through the bridge involved batched messages and required serializing and deserializing data, creating latency and slowing app responsiveness.|JSI enables direct function calls between JavaScript and native modules, bypassing the need for serialization. This minimizes delays and delivers a more real-time user experience.|
 |**Enhanced Performance**|Apps that relied heavily on native modules, such as those with intensive animations or custom native UI components, often experienced lag due to the bridge's inefficiencies in handling frequent data exchanges.|The JSI allows JavaScript to access native C++ objects directly, dramatically improving execution speed for computationally heavy tasks, making apps faster and more reliable.|
-|**Scalability for Complex Projects**|Managing scalability in large applications was cumbersome because the bridge introduced additional complexity in maintaining communication channels, particularly in projects with high modularity. |The updated architecture simplifies app development and maintenance by providing a more unified and modular design. The direct access between JavaScript and native code enhances flexibility and supports the rapid growth of complex projects.|
 
 ## What's More with Expo 52?
 
@@ -58,7 +57,6 @@ Accessibility takes center stage in Expo 52, addressing limitations that existed
 
 Impact:
 
-- Ensures better support for assistive technologies.
 - Simplifies the process of testing and validating accessibility features.
 - Improves the usability of apps for a wider audience.
 
@@ -89,7 +87,6 @@ To make the most of this update, here are some tips for developers:
 - **Leverage Faster Previews**: Incorporate more frequent testing into your workflow to benefit from the reduced preview times.
 - **Enhance Accessibility**: Take advantage of the improved accessibility ID support to make your app more inclusive.
 - **Explore New Features**: Dive into the updates to Expo Camera, Video for improved capabilities.
-- **Optimize for Performance**: Utilize the tree-shaking support to reduce bundle sizes and improve rendering.
 
 ### New Architecture Goes Mainstream
 
@@ -191,14 +188,6 @@ Yoga would previously incorrectly reverse start and end edges, when operating on
 ### New and Updated Libraries
 
 - Stable release of `expo-video`
-
-Beta releases
-
-- `expo-audio`
-- `expo-file-system/next`
-- `expo-live-photo` (iOS-only)
-- `expo-image` v2 with new image loading API
-
 - `expo-image-manipulator` offers new object-oriented API
 - `expo-sqlite/kv-store` provides key/value storage
 - `expo/fetch` introduces WinterCG-compliant Fetch API with download streaming -->
