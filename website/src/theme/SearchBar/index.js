@@ -6,7 +6,6 @@ import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 import Head from '@docusaurus/Head';
 import { isRegexpStringMatch } from '@docusaurus/theme-common';
-import { useSearchPage } from '@docusaurus/theme-common/internal';
 import { DocSearchButton, useDocSearchKeyboardEvents } from '@docsearch/react';
 import { useAlgoliaContextualFacetFilters } from '@docusaurus/theme-search-algolia/client';
 import Translate from '@docusaurus/Translate';
@@ -18,9 +17,8 @@ function Hit({ hit, children }) {
   return <Link to={hit.url}>{children}</Link>;
 }
 function ResultsFooter({ state, onClose }) {
-  const { generateSearchPageLink } = useSearchPage();
   return (
-    <Link to={generateSearchPageLink(state.query)} onClick={onClose}>
+    <Link onClick={onClose}>
       <Translate
         id="theme.SearchBar.seeAll"
         values={{ count: state.context.nbHits }}>
@@ -68,24 +66,29 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
   const onOpen = useCallback(() => {
     importDocSearchModalIfNeeded().then(() => { });
     searchContainer.current = document.createElement('div');
-    document.querySelector('.DocSearch-Input').focus()
     document.body.classList.add("search-active")
     document.body.classList.add("DocSearch--active")
     setIsOpen(true);
+    if (document.querySelector('.DocSearch-Reset')) 
+      document.querySelector('.DocSearch-Reset').removeAttribute('hidden');
   }, [importDocSearchModalIfNeeded, setIsOpen]);
   const onClose = useCallback(() => {
+    document.body.classList.remove("search-active")
+    document.body.classList.remove("DocSearch--active")
     document.querySelector('.DocSearch-Input').blur()
     document.querySelector('.DocSearch-Input').value = '';
+    if (document.querySelector('.DocSearch-Reset')) 
+      document.querySelector('.DocSearch-Reset').setAttribute('hidden','');
     setIsOpen(false);
-    document.body.classList.remove("DocSearch--active")
-    document.body.classList.remove("search-active")
-    if (document.querySelector('.DocSearch-Reset'))
-      document.querySelector('.DocSearch-Reset').innerHTML = ''
-    if (props.elementId == "home-search" && document.querySelector('.DocSearch-Dropdown-Container')) {
-      document.querySelector('.DocSearch-Dropdown-Container').innerHTML = ''
-    }
     searchContainer.current?.remove();
   }, [setIsOpen]);
+
+  React.useEffect(()=>{
+    if(isOpen || props.autoFocus){
+      document.querySelector('.DocSearch-Input').focus()
+    }
+  },[isOpen]);
+
   const onInput = useCallback(
     (event) => {
       setInitialQuery(event.key);
@@ -157,6 +160,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
       <DocSearchModal
         autoFocus={props.autoFocus}
         onClose={onClose}
+        isOpen={isOpen}
         onOpen={onOpen}
         initialScrollY={window.scrollY}
         initialQuery={initialQuery}
