@@ -67,7 +67,7 @@ Accessibility takes center stage in Expo 52, addressing limitations that existed
 - **Filter**: Adds graphical filters to an element. There is a mix of color filters that allow you to modify brightness, saturation, and hue, as well as non-color filters that let you add blurs and shadows.
 
 :::note
-The filter styles should be applied only to Image widget.
+The filter styles should be applied only to Image widget. [Learn more](https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture#box-shadow-and-filter-style-props).
 :::
 
 ---
