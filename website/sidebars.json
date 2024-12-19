@@ -681,6 +681,7 @@
 						"react-native/generate-web-preview-locally",
 						"react-native/web-preview-debug",
 						"react-native/expo-debug",
+						"react-native/wavepulse",
 						"react-native/flipper",
 						"react-native/web-preview-docker-image",
 						"react-native/appium-support"
