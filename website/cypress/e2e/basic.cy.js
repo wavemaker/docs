@@ -15,7 +15,7 @@ describe("Top Navigation in web & mobile", function () {
     Cypress.on('uncaught:exception', (err, runnable) => { return false; })
   });
 
-  it("Verifies top nav has 4 options in desktop browser", function () {
+  it("Verifies top nav has 6 options in desktop browser", function () {
     cy.get(".navbar__items > a")
       .should("have.attr", "href")
       .and("include", "/learn")
@@ -24,7 +24,7 @@ describe("Top Navigation in web & mobile", function () {
       .end();
 
 
-    var navElements = ["Guide", "Widgets", "How-to", "Blog", "Releases"];
+    var navElements = ["Get Started", "Widgets", "How-to", "Blog", "Academy", "Releases", "Schedule Demo"];
     navElements.forEach(function (navItem) {
       cy.get(selectors.desktopNavElements)
         .contains(navItem)
@@ -38,7 +38,7 @@ describe("Top Navigation in web & mobile", function () {
   it("Verifies that only Docs, Search is visible in the navbar in mobile", function () {
     cy.viewport("iphone-6");
 
-    var hiddenNavElements = ["Guide", "Widgets", "How-to", "Blog", "Releases"];
+    var hiddenNavElements = ["Get Started", "Widgets", "How-to", "Blog", "Academy", "Releases", "Schedule Demo"];
     hiddenNavElements.forEach(function (navItem) {
       cy.get(selectors.desktopNavElements)
         .contains(navItem)
@@ -46,7 +46,7 @@ describe("Top Navigation in web & mobile", function () {
     });
   });
 });
-describe("Sign-in button take to right places", function () {
+describe("schedule demo button take to right places", function () {
   var selectors = {
     desktopNavElements: ".slidingNav > ul > li:not(:first-child)"
   };
@@ -55,20 +55,9 @@ describe("Sign-in button take to right places", function () {
     cy.visit('/');
   });
 
-  it("Verifies Login navigation ", function () {
-
-    cy.get('.navbar__items > a:not(:first-child)')
-      .contains("Login").should('have.attr', 'href').then((href) => {
-        cy.origin(href, () => {
-          cy.visit('/', { 'failOnStatusCode': false });
-          cy.get(".signup-container").contains("Login to")
-            .end();
-        });
-      })
-  });
-  it("Verifies Get Started navigation ", function () {
+  it("Verifies schedule demo navigation ", function () {
     cy.get('.navbar__items > a:last-child')
-      .contains("Get Started").should('have.attr', 'href').then((href) => {
+      .contains("Schedule Demo").should('have.attr', 'href').then((href) => {
         cy.request(href).its('body').should('include', 'Schedule a Demo or Talk to an Expert for a Free Pilot.').end();
       });
   })
