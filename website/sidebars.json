@@ -659,7 +659,8 @@
 						"react-native/styles",
 						"react-native/custom-icon-fonts",
 						"react-native/theme",
-						"react-native/app-loader",
+						"react-native/progress-loader",
+						"react-native/skeleton-loader",
 						"react-native/animations",
 						"react-native/splash-screen"
 					]
@@ -1551,6 +1552,17 @@
 			"type": "category",
 			"label": "Latest v11.x",
 			"items": [
+				{
+					"type": "category",
+					"label": "Versions: 11.9.x",
+					"items": [
+						"wavemaker-release-notes/v11-9-4",
+						"wavemaker-release-notes/v11-9-3",
+						"wavemaker-release-notes/v11-9-2",
+						"wavemaker-release-notes/v11-9-1",
+						"wavemaker-release-notes/v11-9-0"
+					]
+				},
 				{
 					"type": "category",
 					"label": "Versions: 11.8.x",

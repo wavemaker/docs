@@ -15,7 +15,7 @@ The steps include:
 
 The following files were imported into the Java Service:
 ```
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -21,7 +21,12 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.8.5](/learn/wavemaker-release-notes/v11-8-5) <p style={{color:"red"}}>*latest*</p> |  WaveMaker 11.8.5 includes enhancements and bug fixes. React Native can now be embedded into native applications. Skeleton Loader supports Lottie animations, and you can control the visibility of child components. The Dialog widget has a new look. Bug fixes include Git navigation, Datatable events, Theme Updates, and checkbox selection issues. React Native fixes address Wizard widget steps and file upload restrictions. |07 October 2024. |
+|[WaveMaker 11.9.4](/learn/wavemaker-release-notes/v11-9-4) <p style={{color:"green"}}>*upcoming*</p> |  WaveMaker Release 11.9.4 will be here with a transformed React Native Studio, now upgraded to the latest Angular version. This release also includes an enhancement to the Select widget dropdown, and various bug fixes. This release aims to significantly enhance the user experience by updating to the latest technology stack. |23 December 2024. |
+|[WaveMaker 11.9.3](/learn/wavemaker-release-notes/v11-9-3) <p style={{color:"red"}}>*latest*</p> |  WaveMaker release 11.9.3 is here with a new feature in React Native to make debugging quicker and easier using WavePulse and enhancements like Month and Year Support in Date Widget. This release also includes major bug fixes canvas, project restoration and many React Native fixes. |09 December 2024. |
+|[WaveMaker 11.9.2](/learn/wavemaker-release-notes/v11-9-2) |  WaveMaker release 11.9.2 is here with noteworthy and efficient enhancements like Pinch-to-Zoom functionality on the Canvas and Skeleton Loader support for additional widgets in React Native. It also includes bug fixes related to the Database Designer, Artifact Update dialog, Bar and Column charts, and various other components. Additionally, this release includes key issues fixed in React Native. |18 November 2024. |
+|[WaveMaker 11.9.1](/learn/wavemaker-release-notes/v11-9-1) |  WaveMaker release 11.9.1 focuses primarily on bug fixes. It addresses key issues related to the Database Designer, FileUpload widget, and various other components. Additionally, this release introduces an enhancement that enables scrolling within the Container widget's content, along with several critical fixes for React Native. |04 November 2024. |
+|[WaveMaker 11.9.0](/learn/wavemaker-release-notes/v11-9-0) |  WaveMaker release 11.9.0 is here with major upgrades that includes, migration to Java 17, Javax to Jakarta namespace, Servlet, Spring & 3rd Party Dependencies Upgrade, Zoom level, and option to switch Java versions. You can also find significant enhancements in FileUpload widget. This release also addresses many bugs in both Web and React Native to make the development smoother and better. |21 October 2024. |
+|[WaveMaker 11.8.5](/learn/wavemaker-release-notes/v11-8-5) |  WaveMaker 11.8.5 includes enhancements and bug fixes. React Native can now be embedded into native applications. Skeleton Loader supports Lottie animations, and you can control the visibility of child components. The Dialog widget has a new look. Bug fixes include Git navigation, Datatable events, Theme Updates, and checkbox selection issues. React Native fixes address Wizard widget steps and file upload restrictions. |07 October 2024. |
 |[WaveMaker 11.8.4](/learn/wavemaker-release-notes/v11-8-4) |  WaveMaker 11.8.4 is here with enhancements in Dialogs User Interface(UI), and individual Form field reset properties along with some major bug fixes related to Datatable, Prefab Configuration and so on. This would also include React Native bug fixes related to Donut chart center label, hiding and showing the widgets, starting and stopping animations, File upload restrictions, and so on. |23 September 2024. |
 |[WaveMaker 11.8.3](/learn/wavemaker-release-notes/v11-8-3) |  WaveMaker 11.8.3 is here with enhancements to reduce application loading time and the `gotoStep` function in the Wizard widget, along with several bug fixes. This release also introduces a new CSS class in the Accordion widget, accessibility labels for widgets, and various React Native bug fixes. |09 September 2024. |
 |[WaveMaker 11.8.2](/learn/wavemaker-release-notes/v11-8-2) |  WaveMaker release 11.8.2 is a bug fix release which includes the enhancements in FileUpload widget, API Orchestration, and few bug fixes. This release also includes new CSS classes for Chart widget and other React Native fixes related to the Show property, Currency widget, Ripple effect, and Wizard widget. |26 August 2024 |
@@ -143,7 +148,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.8.5](/learn/wavemaker-release-notes/v11-8-5)
+Last updated: [WaveMaker 11.9.2](/learn/wavemaker-release-notes/v11-9-2)
 
 ---
 
@@ -166,31 +171,35 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 ### Backend Frameworks
 
 | Description | Java Library | Version |
-| --- | --- | --- |
-|  | Spring Framework | 5.3.39 |
-| Security framework | Spring Security | 5.8.14 |
+| --- | --- |--------------------|
+|  | Spring Framework | 6.1.14 |
+| Security framework | Spring Security | 6.4.4     |
+|  | Spring Data | 2024.0.5  |
+|  | Spring Boot | <td className="versiontdbgcolor"> 3.3.4 -> 3.3.5 </td> |
+|  | Spring Session | <td className="versiontdbgcolor"> 3.3.2 -> 3.3.3 </td> |
 | Java JSON utilities | Gson  | 2.11.0 |
-| DB Persistence library | Hibernate | 5.6.15.Final |
-| Sample database | HSQL | 2.7.3 |
-| JSON library | Jackson |  2.17.2  |
-| Logging framework | SLF4j | 1.7.36 |
-| Logging Implementation | Log4j2 | 2.18.0|
-| Http client library  | HttpComponents -  httpclient |  4.5.14 |
-| Servlet Framework |  | 4.0.4 |
-| Database Connection Pooling | HikariCP | 5.1.0 |
-|  | Commons Lang3 | 3.17.0 |
-|  | Guava | 33.3.0-jre |
-|  | Postgresql Driver  | 42.7.4 |
+| DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
+| Sample database | HSQL | <td className="versiontdbgcolor"> 2.7.3 -> 2.7.4 </td>|
+| JSON library | Jackson |  <td className="versiontdbgcolor"> 2.18.0 -> 2.18.1 </td> |
+| Logging framework | SLF4j | 2.0.16 |
+| Logging Implementation | Log4j2 | 2.24.1 |
+| Http client library  | HttpComponents -  httpclient | <td className="versiontdbgcolor"> 5.4 -> 5.4.1 </td>|
+| Servlet Framework |  | 6.0.0 |
+| Database Connection Pooling | HikariCP | 6.0.0  |
+|  | Commons Lang3 | 3.17.0  |
+|  | Guava | 33.3.1-jre |
+|  | Postgresql Driver  | 42.7.4  |
+|  | Hibernate Validator | 8.0.1.Final |
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
-| JDK | 11 |
-| WebSphere Liberty | 19.0.0.1+ |
-| JBoss Wildfly | 15+ |
-| Tomcat | 9.0.87 |
-| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> <td className="versiontdbgcolor">17.5 </td> |
+| JDK | 17 |
+| WebSphere Liberty | 23.0.0.9+ |
+| JBoss Wildfly | 27+ |
+| Tomcat | 10.1.31 |
+| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> 17.5 |
 
 :::note
 - Cordova-iOS supports from iOS 16.
@@ -216,14 +225,14 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 
 |Description|	Version|
 |---|---|
-|Java | 11 |
+|Java | 17 |
 |Node|18.16.1|
-|Maven| 3.9.8 |
+|Maven| 3.9.9 |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 | Android Studio | Ladybug 2024.2.1 |
-| SDK Build Tools | <td className="versiontdbgcolor"> 34.0.0 </td> |
-| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.5 </td> |
+| SDK Build Tools | 34.0.0|
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | 1.8.5 |
 | Android Gradle Plugin (AGP) | 8.3 - 8.7 |
 
 :::note
@@ -243,9 +252,9 @@ Please ensure that your [Android Studio](https://developer.android.com/studio/re
 
 |Description|	Version|
 |---|---|
-|Java | 11 |
+|Java | 17 |
 |Node| 18.16.1|
-|Maven| 3.9.8 |
+|Maven| 3.9.9 |
 |npm | 9.5.1|
 |Ant| 1.10.11|
 

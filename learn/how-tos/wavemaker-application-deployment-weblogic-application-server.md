@@ -5,7 +5,7 @@ sidebar_label: "WebLogic Server"
 ---
 ---
 
-WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 11. For more information, see [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/).
+WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 17/JDK 21. For more information, see [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/).
 
 This section walks through the steps to deploy WaveMaker app to Oracle WebLogic Server.
 

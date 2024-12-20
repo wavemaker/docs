@@ -30,7 +30,7 @@ The document explains the implementation for obtaining concurrency and record lo
 - Add the below import statement.
 
 ```js
-import javax.persistence.Version;
+import jakarta.persistence.Version;
 ```
 
 :::note

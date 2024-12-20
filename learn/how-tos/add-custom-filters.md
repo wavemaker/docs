@@ -21,7 +21,7 @@ In every security enabled application, you can find **FilterChain**.By default F
 ```java
 package com.filters;
 
-import javax.servlet.*;
+import jakarta.servlet.*;
 import java.io.IOException;
 
 public class CustomFilter implements Filter {

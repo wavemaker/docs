@@ -61,7 +61,7 @@ private AzureFileStorageConnector azureFileStorageConnector;
 
 Import Statements Required.
 ```Java
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 ```
 
 Create Share in PostConstruct.

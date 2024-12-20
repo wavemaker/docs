@@ -51,10 +51,10 @@ package com.wavemaker.appscore.custom.handlers;
 
 import java.io.IOException;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -153,7 +153,7 @@ In **`project-user-spring.xml`**, add the bean to declare the user-defined handl
 
 package com.test.getuserinfoservice;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

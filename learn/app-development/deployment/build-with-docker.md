@@ -28,26 +28,21 @@ vi Dockerfile
 You can use the following Dockerfile for building Docker images and create Docker containers by using multi-stage Dockerfile. You can decrease the size of the Docker image and can create lightweight containers as well.
 
 ```Dockerfile
-FROM maven:3.9.5-eclipse-temurin-11 as maven-java-node
-ENV MAVEN_CONFIG=~/.m2
-RUN mkdir -p /usr/local/content/node
-WORKDIR /usr/local/content/node
-ADD https://nodejs.org/dist/v18.16.1/node-v18.16.1-linux-x64.tar.gz .
-RUN tar -xzf node-v18.16.1-linux-x64.tar.gz \
-    && ln -s /usr/local/content/node/node-v18.16.1-linux-x64/bin/node /usr/local/bin/node \
-    && ln -s /usr/local/content/node/node-v18.16.1-linux-x64/bin/npm /usr/local/bin/npm \
-    && chown -R root:root /usr/local/content/node \
-    && rm -fR node-v18.16.1-linux-x64.tar.gz
+# Define build arguments for WaveMaker version and profile
+ARG wavemaker_version=latest
 
-FROM maven-java-node as webapp-artifact
-RUN mkdir -p /usr/local/content/app
+# Stage 1: Build the web application artifact
+FROM wavemakerapp/app-builder:${wavemaker_version} as webapp-artifact
 ADD ./ /usr/local/content/app
-WORKDIR /usr/local/content/app
-ARG build_profile_name
-ENV profile=${build_profile_name}
-RUN  mvn clean install -P${profile}
+ARG profile
+ENV profile=${profile}
+ENV MAVEN_CONFIG=/root/.m2
+RUN --mount=type=cache,target=/root/.m2 \
+    --mount=type=cache,target=/root/.npm \
+    bash /usr/local/bin/wavemaker-build.sh full
 
-FROM tomcat:9.0.83-jdk11-temurin
+# Stage 2: Prepare the runtime environment for the application
+FROM wavemakerapp/app-runtime-tomcat:${wavemaker_version}
 COPY --from=webapp-artifact /usr/local/content/app/target/*.war /usr/local/tomcat/webapps/
 ```
 
@@ -57,12 +52,23 @@ Save the above Docker file.
 
 Build a Docker image by using the below Docker command with different build profiles. You can choose to build with the following build profiles, including `development` and `deployment`.
 
+### Parameters
+- **profile**: The build profile you want to use.
+- **wavemaker_version**: Specify the WaveMaker release version for the application. This parameter is **optional** if omitted, it defaults to the latest version. You can set it to a specific version (e.g., `11.9.1`) if needed.
+
 ```Docker
-docker image build --build-arg build_profile_name=<deployment-profile> -t <imagename:version> <project_location>
+docker build --build-arg profile=<deployment-profile> --build-arg wavemaker_version=<wavemaker_version> -t <imagename:version> <project_location>
+```
+To use the latest version, simply omit the `wavemaker_version` parameter:
+
+Example with Latest version:
+```bash
+docker build --build-arg profile=deployment -t wmimage:1.0 .
 ```
 
+Example with specific version:
 ```bash
-Example: docker image build --build-arg build_profile_name=deployment -t wmimage:1.0 .
+docker build --build-arg profile=deployment --build-arg wavemaker_version=11.9.1 -t wmimage:1.0 .
 ```
 
 For more information, see [Development Profile](/learn/app-development/deployment/configuration-profiles#development-configuration-profile) and [Deployment Profile](/learn/app-development/deployment/configuration-profiles#deployment-configuration-profile).
@@ -78,11 +84,12 @@ You can provide any `host_port`. For example, `80`. The internal port of the con
 :::
 
 ```Docker
-docker container run --name <containername> -d -p <host_port>:8080 <imagename:version>
+docker run --name <containername> -d -p <host_port>:8080 <imagename:version>
 ```
 
+Example:
 ```bash
-example: docker container run --name wmapp -d -p 80:8080 wmimage:1.0
+docker run --name wmapp -d -p 80:8080 wmimage:1.0
 ```
 
 ### Access Application
@@ -97,76 +104,68 @@ ifconfig
 
 ## Build War File Using Docker
 
-- Export the project to your local, or you can directly clone from a repository. You should keep the Dockerfile in the project's root directory and mount the application directory location to `/usr/local/content/app` during container creation for generating application war.
+To generate the WAR file locally using Docker, follow the steps below. This approach is helpful if you want a containerized, isolated environment for the build process.
 
-### Create Docker File
+#### Basic Command
 
-To create a wm app builder Dockerfile, use the following command.
-
-```bash
-vi Dockerfile.build
-```
-
-You can use the following Dockerfile to build Docker images and create Docker containers for creating project war files.
-
-```Dockerfile
-FROM maven:3.9.5-eclipse-temurin-11  as maven-java-node
-ENV MAVEN_CONFIG=~/.m2
-# installing node 18.16.1 and npm 9.5.1 in docker container
-RUN mkdir -p /usr/local/content/node
-WORKDIR /usr/local/content/node
-ADD https://nodejs.org/dist/v18.16.1/node-v18.16.1-linux-x64.tar.gz .
-RUN tar -xzf node-v18.16.1-linux-x64.tar.gz \
-    && ln -s /usr/local/content/node/node-v18.16.1-linux-x64/bin/node /usr/local/bin/node \
-    && ln -s /usr/local/content/node/node-v18.16.1-linux-x64/bin/npm /usr/local/bin/npm \
-    && chown -R root:root /usr/local/content/node \
-    && rm -fR node-v18.16.1-linux-x64.tar.gz
-
-# stage for build the code
-FROM maven-java-node
-RUN mkdir -p /usr/local/content/app \
-    && chown -R root:root /usr/local/content/app
-WORKDIR /usr/local/content/app
-CMD  mvn clean install -P${profile} && mkdir -p dist && cp -fr target/*.war dist/
-```
-
-Save the above Dockerfile.build.
-
-### Create Docker Image
-
-Build the Docker image using the below command
+Run the following Docker command, replacing `<your_project_location>` with the path to your local project folder:
 
 ```bash
-docker image build -t <image-name>:1.0 -f Dockerfile.build <project_location>
+docker run --rm -e profile=<profile_name> -v <your_project_location>:/usr/local/content/app wavemakerapp/app-builder:<wavemaker_version>
 ```
+
+Example:
+```bash
+docker run -rm -e profile=deployment -v /home/user/MySampleApp:/usr/local/content/app wavemakerapp/app-builder
+```
+
+This command mounts your project directory to the container, builds the application, and generates the WAR file in the specified directory.
+
+#### Optimized Command with Maven and npm Cache
+
+For faster and more efficient builds, you can specify custom Maven and npm cache locations. This setup reduces the need to download dependencies each time by caching them locally.
+
+Replace `<local_m2_cache_location>`, `<local_npm_cache_location>` and `<your_project_location>` with the appropriate paths on your system. For `<wavemaker_version>`, specify the WaveMaker release version, or set the tag to "latest" (or leave it out) to push the latest version automatically.
 
 ```bash
-example: docker image build -t wavemaker/wm-app-builder:1.0 -f Dockerfile.build .
+docker run --rm -e profile=<profile_name> -e MAVEN_CONFIG=$HOME/.m2 \
+   -v <local_m2_cache_location>:$HOME/.m2 \
+   -v <local_npm_cache_location>:$HOME/.npm \
+   -v <your_project_location>:/usr/local/content/app \
+   wavemaker/app-builder:<wavemaker_version>
 ```
 
-### Build Project war
-
-Create a Docker container to generate a war. Please use the below command.
-
+Example:
 ```bash
-docker container run --rm -it --name <container-name> -v $HOME/.m2:$HOME/.m2 -v $HOME/.npm:$HOME/.npm -v <project-location>:/usr/local/content/app -e profile=<deployment-profile> -e MAVEN_CONFIG=$HOME/.m2 <image-name>
+docker run --rm -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 \
+   -v ~/.m2:$HOME/.m2 \
+   -v ~/.npm:$HOME/.npm \
+   -v /home/user/MySampleApp:/usr/local/content/app \
+   wavemaker/app-builder
 ```
 
-```bash
-example: docker container run --rm -it --name wmapp -v $HOME/.m2:/root/.m2 -v $HOME/.npm:/root/.npm -v /home/user/MySampleApp:/usr/local/content/app -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 wavemaker/wm-app-builder:1.0
-```
+#### Explanation of Options
+
+- `-e profile=<profile_name>`: Sets the build profile.
+- `-e MAVEN_CONFIG=$HOME/.m2`: Specifies the location for Maven configuration and cache files.
+- `-v <local_m2_cache_location>:$HOME/.m2`: Maps your local Maven cache, speeding up dependency resolution.
+- `-v <local_npm_cache_location>:$HOME/.npm`: Maps your local npm cache, improving build efficiency for projects using npm.
+- `-v <your_project_location>:/usr/local/content/app`: Maps your project directory to the container’s working directory.
+
+**Note**: Make sure that the specified directories exist and have the correct permissions for Docker to access them.
 
 ### Run Container
 
-- After Completing the build, it will create a project war file in the `<project-location>/dist` folder. Users can use the war file to deploy in the Host tomcat or Tomcat Docker container.
+- After Completing the build, it will create a project war file in the `<your_project_location>/dist` folder. Users can use the war file to deploy in the Host tomcat or Tomcat Docker container.
 - For deploying project war using Tomcat Docker container, please use the below command.
 
 ```bash
-docker container run -d --name <container-name> -v <project-location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 tomcat:9.0.83-jdk11-temurin
+docker run -d --name <container_name> -v <your_project_location>/dist/:/usr/local/tomcat/webapps/ -p <host_port>:8080 wavemakerapp/app-runtime-tomcat:<wavemaker_version>
 ```
 
+Example:
 ```bash
-example: docker container run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 tomcat:9.0.83-jdk11-temurin
+docker run -d --name wm-app -v /home/user/MySampleApp/dist/:/usr/local/tomcat/webapps/ -p 80:8080 wavemakerapp/app-runtime-tomcat:<wavemaker_version>
 ```
 
 ### Access Application
@@ -179,15 +178,18 @@ ifconfig
 
 - Above command will provide the network interfaces and their respective IP Address in Instance. Please use the respective IP Address to access the application on the web. You can access the application with `http://<HOST_IP:HOST_PORT>/<APPLICATION_CONTEXT>/`.
 
+:::note
+The wavemakerapp/app-builder & wavemakerapp/app-runtime-tomcat Docker image is packed with required software packages and libraries to deploy WaveMaker Application in Docker containers.
+
+- Using the app-builder Docker image, users can generate war files for WaveMaker applications.
+- Using the app-runtime-tomcat Docker image, user can use to deploy their applications
+- Find WaveMaker app-builder Docker image at [app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-builder).
+- Find WaveMaker app-runtime-tomcat Docker image at [app-runtime-tomcat Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-runtime-tomcat).
+:::
+
 ## wm-rn-web-preview
 
 This Docker image is configured to allow users to execute [`wm-reactnative-cli`](https://github.com/wavemaker/wm-reactnative-cli) commands and it is used to preview the react-native applications locally. To know more about creating, installing, and setting up wm-rn-web-preview docker image, see [Docker Image for local Web preview](/learn/react-native/web-preview-docker-image).
 
-## Build War File Using wm-app-builder Docker Image
-
-The wm-app-builder Docker image is packed with required software packages and libraries to deploy WaveMaker Application in Docker containers.
-
-- Using the app-build Docker image, users can generate war files for WaveMaker applications.
 - Using the wm-rn-web-preview image, users can preview the react native WaveMaker applications in their local.
-- Find WaveMaker wm-app-builder Docker image at [wm-app-builder Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/app-build).
 - Find WaveMaker wm-rn-web-preview Docker image at [wm-rn-web-preview Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/wm-rn-web-preview).
