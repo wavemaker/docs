@@ -141,7 +141,7 @@ The filter styles should be applied only to Image widget. [Learn more](https://r
 
 ## Known Issues
 
-- The text area widget's height behaves differently in Expo52 and Expo50. In Expo52, it remains unchanged if properties are unspecified, while in Expo50, the height increases. [Reference](https://github.com/facebook/react-native/issues/47942)
+- The text area widget's height behaves differently in Expo52 and Expo50. In Expo52, it stays unchanged as if no properties are set, but in Expo50, the height increases. [Reference](https://github.com/facebook/react-native/issues/47942)
 
 - Dashed and dotted borders break when `borderStyle: "dashed" | "dotted"` is combined with `overflow: "hidden"` or `"scroll"`, displaying a solid border instead. They work correctly with `overflow: "visible"` and on Android. [Reference](https://github.com/facebook/react-native/issues/48078)
 
