@@ -22,7 +22,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.9.1** <p style={{color:"red"}}>*latest*</p> | - [v11.9.1](/learn/wavemaker-release-notes/v11-9-1) <br/> - [v11.9.0](/learn/wavemaker-release-notes/v11-9-0) | Addresses key issues related to the Database Designer, FileUpload widget, and various other components. Additionally, this release introduces an enhancement that enables scrolling within the Container widget's content, along with several critical fixes for React Native. Includes major upgrades that like migration to Java 17, Javax to Jakarta namespace, Servlet, Spring & 3rd Party Dependencies Upgrade, Zoom level, and option to switch Java versions. You can also find significant enhancements in FileUpload widget. This release also addresses many bugs in both Web and React Native to make the development smoother and better. | 05 November 2024 |
+|**v11.9.4** <p style={{color:"red"}}>*latest*</p> | - [v11.9.4](/learn/wavemaker-release-notes/v11-9-4) <br/> - [v11.9.3](/learn/wavemaker-release-notes/v11-9-3) - [v11.9.2](/learn/wavemaker-release-notes/v11-9-2) | Includes a transformed React Native Studio, now upgraded to the latest Angular version. This release also includes an enhancement to the Select widget dropdown, and various bug fixes. This release aims to significantly enhance the user experience by updating to the latest technology stack.  It is here with a new feature in React Native to make debugging quicker and easier using WavePulse and enhancements like Month and Year Support in the Date Widget. This release also includes major bug fixes canvas, project restoration and many React Native fixes.  Also includes efficient enhancements like Pinch-to-Zoom functionality on the Canvas and Skeleton Loader support for additional widgets in React Native. It also includes bug fixes related to the Database Designer, Artifact Update dialog, Bar and Column charts, and various other components. Additionally, this release includes key issues fixed in React Native. | 23 December 2024 |
+|**v11.9.1** | - [v11.9.1](/learn/wavemaker-release-notes/v11-9-1) <br/> - [v11.9.0](/learn/wavemaker-release-notes/v11-9-0) | Addresses key issues related to the Database Designer, FileUpload widget, and various other components. Additionally, this release introduces an enhancement that enables scrolling within the Container widget's content, along with several critical fixes for React Native. Includes major upgrades that like migration to Java 17, Javax to Jakarta namespace, Servlet, Spring & 3rd Party Dependencies Upgrade, Zoom level, and option to switch Java versions. You can also find significant enhancements in FileUpload widget. This release also addresses many bugs in both Web and React Native to make the development smoother and better. | 05 November 2024 |
 |**v11.8.5** | - [v11.8.5](/learn/wavemaker-release-notes/v11-8-5) | WaveMaker 11.8.5 includes enhancements and bug fixes. React Native can now be embedded into native applications. Skeleton Loader supports Lottie animations, and you can control the visibility of child components. The Dialog widget has a new look. Bug fixes include Git navigation, Datatable events, Theme Updates, and checkbox selection issues. React Native fixes address Wizard widget steps and file upload restrictions. |07 October 2024. |
 |**v11.8.4** | - [v11.8.4](/learn/wavemaker-release-notes/v11-8-4) |WaveMaker 11.8.4 is here with enhancements in Dialogs User Interface(UI), and individual Form field reset properties along with some major bug fixes related to Datatable, Prefab Configuration and so on. This would also include React Native bug fixes related to Donut chart center label, hiding and showing the widgets, starting and stopping animations, File upload restrictions, and so on. |23 September 2024. |
 |**v11.8.3** | - [v11.8.3](/learn/wavemaker-release-notes/v11-8-3) |WaveMaker 11.8.3 is here with enhancements to reduce application loading time and the `gotoStep` function in the Wizard widget, along with several bug fixes. This release also introduces a new CSS class in the Accordion widget, accessibility labels for widgets, and various React Native bug fixes.| 09 September 2024 |
@@ -78,7 +79,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.9.1](/learn/wavemaker-release-notes/v11-9-1)
+Last updated: [WaveMaker 11.9.2](/learn/wavemaker-release-notes/v11-9-2)
 
 ---
 
@@ -100,30 +101,32 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 ### Backend Frameworks
 
-| Description | Java Library | Version                                                            |
-| --- | --- |--------------------------------------------------------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.1.13 -> 6.1.14 </td>           |
-| Security framework | Spring Security | <td className="versiontdbgcolor"> 6.3.3 -> 6.4.4 </td>            |
-|  | Spring Data | <td className="versiontdbgcolor"> 2024.0.4 -> 2024.0.5 </td>      |
-| Java JSON utilities | Gson  | 2.11.0                                                             |
-| DB Persistence library | Hibernate(Jakarta) | 5.6.15.Final                                                       |
-| Sample database | HSQL | 2.7.3 |
-| JSON library | Jackson | 2.18.0 |
+| Description | Java Library | Version |
+| --- | --- |--------------------|
+|  | Spring Framework | 6.1.14 |
+| Security framework | Spring Security | 6.4.4     |
+|  | Spring Data | 2024.0.5  |
+|  | Spring Boot | <td className="versiontdbgcolor"> 3.3.4 -> 3.3.5 </td> |
+|  | Spring Session | <td className="versiontdbgcolor"> 3.3.2 -> 3.3.3 </td> |
+| Java JSON utilities | Gson  | 2.11.0 |
+| DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
+| Sample database | HSQL | <td className="versiontdbgcolor"> 2.7.3 -> 2.7.4 </td>|
+| JSON library | Jackson |  <td className="versiontdbgcolor"> 2.18.0 -> 2.18.1 </td> |
 | Logging framework | SLF4j | 2.0.16 |
 | Logging Implementation | Log4j2 | 2.24.1 |
-| Http client library  | HttpComponents -  httpclient | 5.4 |
+| Http client library  | HttpComponents -  httpclient | <td className="versiontdbgcolor"> 5.4 -> 5.4.1 </td>|
 | Servlet Framework |  | 6.0.0 |
 | Database Connection Pooling | HikariCP | 6.0.0  |
 |  | Commons Lang3 | 3.17.0  |
 |  | Guava | 33.3.1-jre |
-|  | Postgresql Driver  | 42.7.4                                                             |
+|  | Postgresql Driver  | 42.7.4  |
 |  | Hibernate Validator | 8.0.1.Final |
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
-| JDK | 17 |
+| JDK | 17/21 |
 | WebSphere Liberty | 23.0.0.9+ |
 | JBoss Wildfly | 27+ |
 | Tomcat | 10.1.31 |
@@ -145,15 +148,15 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 With the release of 11.4, we have ended our support for WaveMaker 10 projects. To know more, see [Ending Support to WaveMaker 10 Projects](/learn/blog/2023/08/11/wavemaker10x-end-of-support).
 :::
 
-## Build Environment 11 
+## Build Environment
 
-### React Native 11
+### React Native
 
 #### Environment Setup
 
 |Description|	Version|
 |---|---|
-|Java | 17 |
+|Java | 17/21 |
 |Node|18.16.1|
 |Maven| 3.9.9 |
 |npm | 9.5.1|
@@ -169,18 +172,18 @@ It is required to use Android Studio version be **Iguana | 2023.2.1** or above a
 Please ensure that your [Android Studio](https://developer.android.com/studio/releases#android_gradle_plugin_and_android_studio_compatibility) has a compatible version of the [AGP](https://developer.android.com/build/releases/past-releases/agp-8-3-0-release-notes#compatibility). Additionally, verify the compatibility of the AGP with the SDK build tools version, JDK, and Gradle version.
 :::
 
-#### SDK Update
+### SDK Update
 
 |Description|	Version|
 |---|---|
 | Expo | 50.0.17 |
 | React Native | 0.73.6 |
 
-### Angular Web and Mobile 11
+### Angular Web and React Native Mobile
 
 |Description|	Version|
 |---|---|
-|Java | 17 |
+|Java | 17/21 |
 |Node| 18.16.1|
 |Maven| 3.9.9 |
 |npm | 9.5.1|
