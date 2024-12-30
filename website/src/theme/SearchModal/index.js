@@ -93,7 +93,8 @@ export function DocSearchModal(_ref) {
     var dropdownRef = React.useRef(null);
     var inputRef = React.useRef(null);
     var snippetLength = React.useRef(10);
-    var initialQueryFromSelection = React.useRef(typeof window !== 'undefined' ? window.getSelection().toString().slice(0, MAX_QUERY_SIZE) : '').current;
+    // var initialQueryFromSelection = React.useRef(typeof window !== 'undefined' ? window.getSelection().toString().slice(0, MAX_QUERY_SIZE) : '').current;
+    var initialQueryFromSelection = '';
     var initialQuery = React.useRef(initialQueryFromProp || initialQueryFromSelection).current;
     var searchClient = useSearchClient(appId, apiKey, transformSearchClient);
     var favoriteSearches = React.useRef(createStoredSearches({
