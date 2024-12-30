@@ -62,7 +62,7 @@ export function SearchBox(_ref) {
     },[screenWidth,isSearchActive])
 
     const handleResetClick = () => {
-        if (screenWidth <= 768) {
+        if (props.state.query == '') {
             props.onClose();
         } else {
             props.resetQuery();
