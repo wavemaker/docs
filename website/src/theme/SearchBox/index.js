@@ -10,6 +10,7 @@ import React from 'react';
 import { MAX_QUERY_SIZE } from '@docsearch/react/dist//esm/constants';
 import { LoadingIcon } from '@docsearch/react/dist//esm/icons/LoadingIcon';
 import { ResetIcon } from '@docsearch/react/dist//esm/icons/ResetIcon';
+import { DocSearchButton } from './DocSearchButton';
 import { SearchIcon } from '@docsearch/react/dist//esm/icons/SearchIcon';
 export function SearchBox(_ref) {
     var _ref$translations = _ref.translations,
@@ -30,6 +31,8 @@ export function SearchBox(_ref) {
     }),
         onReset = _props$getFormProps.onReset;
 
+    const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
+    const [hideResetButton, setHideResetButton] = React.useState(true);
     React.useEffect(function () {
         if (props.autoFocus && props.inputRef.current) {
             props.inputRef.current.focus();
@@ -40,6 +43,31 @@ export function SearchBox(_ref) {
             props.inputRef.current.select();
         }
     }, [props.isFromSelection, props.inputRef]);
+    React.useEffect(()=>{
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+          };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+          };
+    },[])
+    var isSearchActive = document.getElementsByClassName('search-active').length > 0;
+    React.useEffect(()=>{
+        if(screenWidth <= 768){
+            setHideResetButton(!isSearchActive);
+        }else{
+            setHideResetButton(!props.state.query);
+        }
+    },[screenWidth,isSearchActive])
+
+    const handleResetClick = () => {
+        if (props.state.query == '') {
+            props.onClose();
+        } else {
+            props.resetQuery();
+        }
+    };
     return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("form", {
         className: "DocSearch-Form",
         onSubmit: function onSubmit(event) {
@@ -62,8 +90,9 @@ export function SearchBox(_ref) {
         title: resetButtonTitle,
         className: "DocSearch-Reset",
         "aria-label": resetButtonAriaLabel,
-        hidden: !props.state.query
-    }, /*#__PURE__*/React.createElement(ResetIcon, null))), /*#__PURE__*/React.createElement("button", {
+        hidden: hideResetButton,
+        onClick: handleResetClick
+    }, /*#__PURE__*/React.createElement(ResetIcon, null)), React.createElement(DocSearchButton, {})), /*#__PURE__*/React.createElement("button", {
         className: "DocSearch-Cancel",
         type: "reset",
         "aria-label": cancelButtonAriaLabel,

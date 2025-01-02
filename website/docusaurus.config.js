@@ -66,8 +66,8 @@ module.exports = {
   "presets": [
     [
       "@docusaurus/preset-classic",
-      {
-        "docs": {
+        {
+                  "docs": {
           "path": "../learn",
           "routeBasePath": "/",
           "showLastUpdateAuthor": true,
@@ -140,7 +140,7 @@ module.exports = {
         {
           "type": "doc",
           "docId": "documentation-reference",
-          "label": "Guide",
+          "label": "Get Started",
           "position": "left"
         },
         {
@@ -166,25 +166,24 @@ module.exports = {
           "className": "version-dropdown"
         },
         {
+          "to": "https://academy.wavemaker.com/",
+          "label": "Academy",
+          "position": "right",
+        },
+        {
           "type": "doc",
           "docId": "wavemaker-release-notes",
           "label": "Releases",
           "position": "right"
         },
         {
-          "to": "https://www.wavemakeronline.com/login/login",
-          "label": "Login",
-          "position": "right",
-          "className": "button button--secondary"
-        },
-        {
           "to": "https://www.wavemaker.com/get-started/",
-          "label": "Get Started",
+          "label": "Schedule Demo",
           "position": "right",
           "className": "navbar__link button button--warning headerSignIn"
         }
       ]
-    },
+},
     "mermaid": {
       "theme": { "light": 'neutral', "dark": 'forest' },
     },

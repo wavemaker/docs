@@ -1,0 +1,12 @@
+.docItemContainer header + *,
+.docItemContainer article > *:first-child {
+  margin-top: 0;
+}
+@media (min-width: 997px) {
+  .docItemColShowDesktop {
+    max-width: 75% !important;
+  }
+  .docItemColDontShowDesktop {
+    max-width: calc(100% - var(--doc-sidebar-hidden-width));
+  }
+}
