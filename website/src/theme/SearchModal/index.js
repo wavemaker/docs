@@ -45,7 +45,7 @@ export function DocSearchModal(_ref) {
         apiKey = _ref.apiKey,
         indexName = _ref.indexName,
         _ref$placeholder = _ref.placeholder,
-        placeholder = _ref$placeholder === void 0 ? 'Search docs' : _ref$placeholder,
+        placeholder = _ref$placeholder === void 0 ? 'Search Docs' : _ref$placeholder,
         searchParameters = _ref.searchParameters,
         _ref$onClose = _ref.onClose,
         onClose = _ref$onClose === void 0 ? noop : _ref$onClose,
@@ -93,18 +93,13 @@ export function DocSearchModal(_ref) {
     var dropdownRef = React.useRef(null);
     var inputRef = React.useRef(null);
     var snippetLength = React.useRef(10);
-    var initialQueryFromSelection = React.useRef(typeof window !== 'undefined' ? window.getSelection().toString().slice(0, MAX_QUERY_SIZE) : '').current;
+    // var initialQueryFromSelection = React.useRef(typeof window !== 'undefined' ? window.getSelection().toString().slice(0, MAX_QUERY_SIZE) : '').current;
+    var initialQueryFromSelection = '';
     var initialQuery = React.useRef(initialQueryFromProp || initialQueryFromSelection).current;
     var searchClient = useSearchClient(appId, apiKey, transformSearchClient);
     var favoriteSearches = React.useRef(createStoredSearches({
         key: "__DOCSEARCH_FAVORITE_SEARCHES__".concat(indexName),
         limit: 5
-    })).current;
-    var recentSearches = React.useRef(createStoredSearches({
-        key: "__DOCSEARCH_RECENT_SEARCHES__".concat(indexName),
-        // We display 7 recent searches and there's no favorites, but only
-        // 4 when there are favorites.
-        limit: favoriteSearches.getAll().length === 0 ? 7 : 4
     })).current;
     var saveRecentSearch = React.useCallback(function saveRecentSearch(item) {
         if (disableUserPersonalization) {
@@ -117,9 +112,29 @@ export function DocSearchModal(_ref) {
         if (search && favoriteSearches.getAll().findIndex(function (x) {
             return x.objectID === search.objectID;
         }) === -1) {
-            recentSearches.add(search);
+            let output = search.hierarchy["lvl1"];
+            let outputUrl = search.url;
+            if (typeof window !== 'undefined') {
+                if (localStorage.getItem('recentSearch')) {
+                    let recentSearch = JSON.parse(localStorage.getItem('recentSearch'));
+                    let searchKeys = Reflect.ownKeys(recentSearch);
+                    if (!searchKeys.includes(output)) {
+                        if (searchKeys.length == 1) {
+                            recentSearch[output]=outputUrl;
+                        }
+                        else if (searchKeys.length == 2) {
+                            recentSearch[output]=outputUrl;
+                            delete recentSearch[searchKeys[0]];
+                        }
+                        localStorage.setItem('recentSearch', JSON.stringify(recentSearch));
+                    }
+                }
+                else {
+                    localStorage.setItem('recentSearch', JSON.stringify({[output]:outputUrl}));
+                }
+            }
         }
-    }, [favoriteSearches, recentSearches, disableUserPersonalization]);
+    }, [favoriteSearches, disableUserPersonalization]);
     var autocomplete = React.useMemo(function () {
         return createAutocomplete({
             id: 'docsearch',
@@ -134,10 +149,12 @@ export function DocSearchModal(_ref) {
             },
             navigator: navigator,
             onStateChange: function onStateChange(props) {
-                setState(props.state);
+                if(props.prevState.query != ''){
+                    setState(props.state);
+                }
                 if (!props.prevState.isOpen && props.state.query != '') {
                     onOpen();
-                    document.querySelector('.DocSearch-Input').value = props.state.query;
+                    setState(props.state);
                 }
                 if (!props.state.isOpen && props.prevState.isOpen) {
                     setState({
@@ -149,7 +166,6 @@ export function DocSearchModal(_ref) {
                         activeItemId: null,
                         status: 'idle'
                     })
-                    document.querySelector('.DocSearch-Input').value = '';
                 }
             },
             getSources: function getSources(_ref2) {
@@ -233,7 +249,7 @@ export function DocSearchModal(_ref) {
                 });
             }
         });
-    }, [indexName, searchParameters, searchClient, onClose, recentSearches, favoriteSearches, saveRecentSearch, initialQuery, placeholder, navigator, transformItems, disableUserPersonalization]);
+    }, [indexName, searchParameters, searchClient, onClose, favoriteSearches, saveRecentSearch, initialQuery, placeholder, navigator, transformItems, disableUserPersonalization]);
     var getEnvironmentProps = autocomplete.getEnvironmentProps,
         getRootProps = autocomplete.getRootProps,
         refresh = autocomplete.refresh;
@@ -265,6 +281,15 @@ export function DocSearchModal(_ref) {
     React.useEffect(function () {
         inputRef.current.value = state.query;
     }, [state])
+    const resetQuery = () => {
+        setState((prevState) => ({
+            ...prevState,
+            query: '',
+            collections: [],
+            completion: null,
+            context: {},
+        }));
+    };
     React.useEffect(function () {
         if (initialQuery.length > 0) {
             refresh();
@@ -291,13 +316,24 @@ export function DocSearchModal(_ref) {
             window.removeEventListener('resize', setFullViewportHeight);
         };
     }, []);
-    return /*#__PURE__*/React.createElement("div", {
+    return React.createElement("div", _extends({
+        ref: containerRef,
+        className: "DocSearch-Modal-Container",
+        style: { width: '100%', height: '100%' }
+    }, {
+        onMouseDown: function onMouseDown(event) {
+            if (event.target === event.currentTarget) {
+                onClose();
+            }
+        }
+    }), /*#__PURE__*/React.createElement("div", {
         className: "DocSearch-Modal",
         ref: modalRef
     }, /*#__PURE__*/React.createElement("header", {
         className: "DocSearch-SearchBar",
         ref: formElementRef
     }, /*#__PURE__*/React.createElement(SearchBox, _extends({}, autocomplete, {
+        resetQuery: resetQuery,
         state: state,
         autoFocus: autoFocus,
         inputRef: inputRef,
@@ -307,13 +343,13 @@ export function DocSearchModal(_ref) {
     }))), /*#__PURE__*/React.createElement("div", {
         className: "DocSearch-Dropdown",
         ref: dropdownRef
-    }, /*#__PURE__*/state.query != '' && state.collections.length > 0 ? React.createElement(ScreenState, _extends({}, autocomplete, {
+    }, /*#__PURE__*/React.createElement(ScreenState, _extends({}, autocomplete, {
         indexName: indexName,
         state: state,
+        isOpen: _ref.isOpen,
         hitComponent: hitComponent,
         resultsFooterComponent: resultsFooterComponent,
         disableUserPersonalization: disableUserPersonalization,
-        recentSearches: recentSearches,
         favoriteSearches: favoriteSearches,
         inputRef: inputRef,
         translations: screenStateTranslations,
@@ -322,5 +358,5 @@ export function DocSearchModal(_ref) {
             saveRecentSearch(item);
             onClose();
         }
-    })) : React.createElement("div", null)));
+    })))));
 }
