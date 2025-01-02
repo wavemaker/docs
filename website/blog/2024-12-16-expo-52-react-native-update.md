@@ -3,11 +3,25 @@ title: "React Native Update - Expo 52 is Here"
 author: "Prem Kumar Katta, Abdullah Khan Mohammed"
 ---
 
+import expo_50_splashscreen from '/learn/assets/react-native/expo_50_splashscreen.gif';
+import expo_52_splashscreen from '/learn/assets/react-native/expo_52_splashscreen.gif';
+
 Expo has rolled out version 52 with a set of features and enhancements aimed at improving developer productivity and app performance. This update addresses critical pain points, introduces new capabilities, and refines existing tools, making it a significant release for mobile app developers. Here's a quick look at what Expo 52 brings to the table and how it compares to version 50.
 
 <!-- truncate -->
 
 ### Expo 50 vs. Expo 52: A Quick Comparison
+
+<div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
+  <figure style={{ textAlign: 'center', margin:0 }}>
+    <img src={expo_50_splashscreen} style={{ width: 300}} alt="Expo 50 Splashscreen" />
+    <figcaption>Expo 50 Splash Screen</figcaption>
+  </figure>
+  <figure style={{ textAlign: 'center', margin:0 }}>
+    <img src={expo_52_splashscreen} style={{ width: 300}} alt="Expo 52 Splashscreen" />
+    <figcaption>Expo 52 Splash Screen</figcaption>
+  </figure>
+</div>
 
 | Feature                          | Expo 50                                     | Expo 52                                     |
 |----------------------------------|---------------------------------------------|---------------------------------------------|
