@@ -386,6 +386,7 @@
 					"type": "category",
 					"label": "Integrate with your CI/CD Providers",
 					"items": [
+						"app-development/deployment/overview-integrate-with-your-cicd-providers",
 						"app-development/deployment/push-code-to-external-repo",
 						"app-development/deployment/integration-with-custom-vcs-provider",
 						"app-development/deployment/pull-request-flow",
@@ -401,7 +402,8 @@
 										"app-development/deployment/building-with-maven",
 										"app-development/deployment/build-with-docker"
 									]
-								}
+								},
+								"app-development/deployment/build-docker-image"
 							]
 						},
 						"app-development/deployment/jenkins-integration",
@@ -420,6 +422,7 @@
 										"how-tos/wavemaker-application-deployment-weblogic-application-server"
 									]
 								},
+								"app-development/deployment/deploy-using-docker",
 								"app-development/deployment/deployment-using-docker-compose",
 								"how-tos/deployment-to-heroku"
 							]
