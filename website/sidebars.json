@@ -400,10 +400,10 @@
 									"label": "Build WAR File",
 									"items": [
 										"app-development/deployment/building-with-maven",
-										"app-development/deployment/build-with-docker"
+										"app-development/deployment/build-war-with-docker"
 									]
 								},
-								"app-development/deployment/build-docker-image"
+								"app-development/deployment/build-with-docker"
 							]
 						},
 						"app-development/deployment/jenkins-integration",
