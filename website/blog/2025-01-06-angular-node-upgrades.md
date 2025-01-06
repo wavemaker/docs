@@ -34,7 +34,7 @@ Angular 17 to 18 includes a number of performance improvements, such as faster s
 
 ## What Does This Mean for You?
 
-The transition will be seamless, with WaveMaker Studio automatically handling the upgrades during application generation. Your existing projects will remain intact, and any migration concerns will be addressed through our new migration report feature to keep you informed about the changes applied.
+The transition will be seamless, with WaveMaker Studio automatically handling the upgrades during application generation. Your existing projects will remain intact, and any migration concerns will be addressed through our [new migration report feature](/learn/blog/2025/01/02/migration-report) to keep you informed about the changes applied.
 
 ## Get Ready to Level Up!
 
