@@ -5,8 +5,6 @@ author: "Prem Kumar Katta, Abdullah Khan Mohammed"
 
 import expo_50_splashscreen from '/learn/assets/react-native/expo_50_splash_screen.png';
 import expo_52_splashscreen from '/learn/assets/react-native/expo_52_splash_screen.png';
-import expo_50_accessibility from '/learn/assets/react-native/expo_50_accessibility.png';
-import expo_52_accessibility from '/learn/assets/react-native/expo_52_accessibility.png';
 import expo_52_filter from '/learn/assets/react-native/expo_52_filter.png';
 
 ---
