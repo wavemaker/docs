@@ -3,25 +3,14 @@ title: "React Native Update - Expo 52 is Here"
 author: "Prem Kumar Katta, Abdullah Khan Mohammed"
 ---
 
-import expo_50_splashscreen from '/learn/assets/react-native/expo_50_splashscreen.gif';
-import expo_52_splashscreen from '/learn/assets/react-native/expo_52_splashscreen.gif';
+import expo_50_splashscreen from '/learn/assets/react-native/expo_50_splash_screen.png';
+import expo_52_splashscreen from '/learn/assets/react-native/expo_52_splash_screen.png';
 
 Expo has rolled out version 52 with a set of features and enhancements aimed at improving developer productivity and app performance. This update addresses critical pain points, introduces new capabilities, and refines existing tools, making it a significant release for mobile app developers. Here's a quick look at what Expo 52 brings to the table and how it compares to version 50.
 
 <!-- truncate -->
 
 ### Expo 50 vs. Expo 52: A Quick Comparison
-
-<div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
-  <figure style={{ textAlign: 'center', margin:0 }}>
-    <img src={expo_50_splashscreen} style={{ width: 300}} alt="Expo 50 Splashscreen" />
-    <figcaption>Expo 50 Splash Screen</figcaption>
-  </figure>
-  <figure style={{ textAlign: 'center', margin:0 }}>
-    <img src={expo_52_splashscreen} style={{ width: 300}} alt="Expo 52 Splashscreen" />
-    <figcaption>Expo 52 Splash Screen</figcaption>
-  </figure>
-</div>
 
 | Feature                          | Expo 50                                     | Expo 52                                     |
 |----------------------------------|---------------------------------------------|---------------------------------------------|
@@ -61,6 +50,18 @@ Enjoy reduced turnaround times when testing changes, which is a boon for iterati
 
 Splash screens have received significant attention in Expo 52. While the update introduces new flexibility and design improvements, there are critical changes developers should be aware of:
 - **Android Full-Screen Mode Not Supported with Icons**: Developers planning splash screens with icons in Android full-screen mode will need to adjust their designs. This limitation could impact branding and user experience if not addressed during development.
+
+<div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
+  <figure style={{ textAlign: 'center', margin:0 }}>
+    <img src={expo_50_splashscreen} style={{ width: 300}} alt="Expo 50 Splashscreen" />
+    <figcaption>Expo 50 Splash Screen</figcaption>
+  </figure>
+  <figure style={{ textAlign: 'center', margin:0 }}>
+    <img src={expo_52_splashscreen} style={{ width: 300}} alt="Expo 52 Splashscreen" />
+    <figcaption>Expo 52 Splash Screen</figcaption>
+  </figure>
+</div>
+
 - **Better Splash Screen Customization**: Enhanced tools and options make it easier to align splash screens with branding guidelines.
 - Follow Android's up-to-date standards for splash screen design: [Learn More](https://developer.android.com/develop/ui/views/launch/splash-screen).
 
