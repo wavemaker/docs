@@ -3,12 +3,12 @@ title: "Debugging - React Native Application"
 id: "debugging-in-react-native"
 sidebar_label: "Debugging - React Native Application"
 ---
-
 ---
 
 An application debugging process includes identifying, analyzing, and resolving issues or defects (bugs) within a software application. It involves systematically testing, investigating, and correcting errors that prevent the application from functioning as expected. Debugging ensures the application runs smoothly and performs correctly under different conditions.
 
 The application developed in our studio can be debugged using three platforms ways.
+
 - Web Preview
 - Expo Go and React Devtool
 - WavePulse
@@ -47,8 +47,66 @@ To understand more about WavePulse, see [WavePulse - To Inspect and Debug APK/IP
 
 ## Areas of Debugging in Application
 
-### UI Elements
+## UI Elements
 
-The application's UI elements are rendered as a component tree starting from the root of the application. We can inspect these elements to verify that they are rendered correctly, including checking the applied styles and props.
+The application's UI elements are rendered as a component tree starting from the root of the application. These elements can be inspected to verify if they are rendered correctly, including the applied styles and properties.
+
+### Using Web Preview
 
 For example, if in the Web Preview, the app search bar border color is applied as green instead of red.
+
+1. Click on **Inspect** icon and navigate to the components tree. Component tree will give the list of elements rendered.
+2. Go to **WmSearch** > **View** screen displays the props, hooks, styles applied to the selected element. Style trace shows all styles applied to the element (default, theme, custom class based styles).
+3. Customize or modify the styles for the UI to display as expected.
+4. Copy the styles and click on the root element to get the name of the element.
+5. Now go to Markup to add class to the element and apply the styles accordingly. For example,
+
+```css
+collections_search.app-search {
+// custom_styles here
+}
+```
+
+### Using Expo Go and React Devtools
+
+### Using WavePulse
+
+
+## Network Calls
+
+### Using Web Preview
+
+1. Open the inspector in the Web browser and go to the Network tab. 
+2. In Network tab, filter the network list, Preserve log. You can also simulate the network to high speed, low speed, or offline, using throttling options. List of network calls and Detailed information of selected network is displayed.
+
+## JS Sources
+
+When running applications in the browser, we can inspect the js codebase and pause the execution at the required line, and can add logs as shown below, and hovering over the current execution will give the current value at that time. It will help to track the current status of the values / variables.
+
+### Using Web Preview
+
+1. If we are adding any brakepoint in the code execution (clicking on that line). Code execution will be paused when it reaches that line of execution.
+2. To open the required file in the sources cmd + p in macbook and ctrl + p in windows, linux
+3. When code execution reached to the line / function, it can show the current values at the debugged state.
+
+## Performance/Profiling
+
+Performance of the application can be analyzed by the time taken to load the components and render on screen, and number of times components re-rendered and caching optimisations. These can be tracked as below.
+
+### Using Web Preview
+
+## App Logs/Device Logs
+
+In development mode, we can add console logs to track and warning and error logs also will be displayed while running the debug application. Generally there will be 2 types of logs (JS logs, and Native logs). 
+
+Js logs can be tracked in the browser. Native logs can be tracked in the Android studio in case of Android and Console window of the desktop application in iOS.
+
+:::note
+
+To view JS logs, it is necessary to enable JS logs in the project in studio.
+
+:::
+
+### Using Web Preview
+
+Logs added inside the sources / scripts and runtime logs will be displayed in the console tab of the inspector.
