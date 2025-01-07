@@ -94,9 +94,10 @@ The filter styles should be applied only to Image widget. [Learn more](https://r
 
 ---
 
-### Splash Screen Changes
+## Splash Screen
 
 Splash screens have received significant attention in Expo 52. While the update introduces new flexibility and design improvements, there are critical changes developers should be aware of:
+
 - **Android Full-Screen Mode Not Supported with Images**: Developers planning splash screens with images in Android full-screen mode will need to adjust their designs. This limitation could impact branding and user experience if not addressed during development.
 
 <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
@@ -128,16 +129,16 @@ Splash screens have received significant attention in Expo 52. While the update 
 
 ---
 
-### Fixes
+## Fixes
   - Video widget (expo-video) fix for support of video poster: A poster or thumbnail is displayed on the video until the user starts playing it.
 
 ---
 
 # 3. How to Prepare for Expo 52
 
-## Library Support for New Architecture:
+## Library Support
 
-  - Check new architecture support for any library incompatibilities in react native zip. Use
+  - Check new architecture support for any library incompatibilities in react native zip.
   - Run `npx expo-doctor@latest` in Expo project to validate incompatible and unmaintained libraries.
 - **Plan for Splash Screen Changes**: Revisit your Android splash screen designs to accommodate limitations.
 
