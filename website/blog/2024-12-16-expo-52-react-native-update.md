@@ -25,7 +25,7 @@ This upgrade stabilizes the platform to support the latest up-to-date Expo 52 fe
 | Android Splash Screen with Image  | Full-screen supported                       | [Full-screen not supported](#splash-screen-enhancements) |
 | DevTools                         | Standard                                    | [Enhanced](#debugging-enhancements)                                  |
 
-# 1. New React Native 0.76 Architecture
+## 1. New React Native 0.76 Architecture
 
 With Expo 52, new architecture support is available with the flag in:
 
@@ -36,9 +36,9 @@ The New Architecture is a rewrite of the internals of React Native to enable app
 - reactnative.directory will give the information about the compatibility of the libraries or any third party packages for the new architecture.
 - [Read about the known issues](https://docs.expo.dev/guides/new-architecture/#troubleshooting) to understand what to expect.
 
-# 2. What's More with Expo 52?
+## 2. What's More with Expo 52?
 
-## Accessibility Improvements
+### Accessibility Improvements
 
 Accessibility takes center stage in Expo 52, addressing limitations that existed in version 50. Notably, accessibility IDs, which were previously unavailable for nested components on iOS, are now supported. This update is a game-changer for developers striving to make their apps more inclusive and compliant with accessibility standards.
 
@@ -58,7 +58,7 @@ Simplifies the process of automation testing via accessibility id in iOS.
 
 ---
 
-## New Style Props Introduced
+### New Style Props Introduced
 
 - **Filter**: Adds graphical filters to an element. There is a mix of color filters that allow you to modify brightness, saturation, and hue, as well as non-color filters that let you add blurs and shadows.
 
@@ -80,9 +80,9 @@ The filter styles should be applied only to Image widget. [Learn more](https://r
 
 ---
 
-## Debugging Enhancements
+### Debugging Enhancements
 
-### React Native DevTools
+#### React Native DevTools
 
 - This is an enhancement and different tool to the react devtools, new default debugging experience from the react native 0.76 and Expo SDK 52.
 
@@ -94,7 +94,7 @@ The filter styles should be applied only to Image widget. [Learn more](https://r
 
 ---
 
-## Splash Screen
+### Splash Screen
 
 Splash screens have received significant attention in Expo 52. While the update introduces new flexibility and design improvements, there are critical changes developers should be aware of:
 
@@ -114,51 +114,54 @@ Splash screens have received significant attention in Expo 52. While the update 
 - **Better Splash Screen Customization**: Enhanced tools and options make it easier to align splash screens with branding guidelines.
 - Follow Android's up-to-date standards for splash screen design: [Learn More](https://developer.android.com/develop/ui/views/launch/splash-screen).
 
-### Splash Screen and App Icon Configuration
+#### Splash Screen and App Icon Configuration
 
-#### Supported Formats
+##### Supported Formats
+
 - Only `.png` images are supported for splash screens in an Expo project; other formats will cause production build failure.
 
 #### Platform-Specific Configuration
+
 - Use `splash.android` for Android-specific settings in app.json
 - Use `splash.ios` for iOS-specific settings in app.json
 
 #### App Icon Best Practices
+
 - Icon must be at least 512x512 pixels, in `.png` format, and exactly square.
 - For adaptive icons, use `android.adaptiveIcon.foregroundImage` and `android.adaptiveIcon.backgroundColor`.
 
 ---
 
-## Fixes
+### Fixes
   - Video widget (expo-video) fix for support of video poster: A poster or thumbnail is displayed on the video until the user starts playing it.
 
 ---
 
-# 3. How to Prepare for Expo 52
+## 3. How to Prepare for Expo 52
 
-## Library Support
+### Library Support
 
   - Check new architecture support for any library incompatibilities in react native zip.
   - Run `npx expo-doctor@latest` in Expo project to validate incompatible and unmaintained libraries.
 - **Plan for Splash Screen Changes**: Revisit your Android splash screen designs to accommodate limitations.
 
-## Breaking Changes, Deprecations and Limitations
+### Breaking Changes, Deprecations and Limitations
 
-### Platform Version Upgrades
+#### Platform Version Upgrades
 
 - **iOS**: Deployment target bumped from 13.4 to iOS 15.1.
 - **Android**: 
     - Minimum SDK version increased from 23 to 24
     - Compilation SDK version updated from 34 to 35
 
-### Expo Go Limitations
+#### Expo Go Limitations
 
 - Push notifications will no longer be supported in Expo Go in SDK 53. In SDK 52, you will be warned when using push notifications-related features from expo-notifications in Expo Go.
 - Google Maps will no longer be supported in Expo Go for Android in SDK 53. In SDK 52, you will be warned when using react-native-maps in Expo Go for Android. On iOS, Expo Go only supports Apple Maps. [You can use Google Maps in development builds](https://docs.expo.dev/versions/v52.0.0/sdk/map-view/#deploy-app-with-google-maps). 
 - Pedometer support dropped for Android
 - Expo Go now uses the New Architecture for all apps
 
-### Unsupported Plugins from Expo 52.
+#### Unsupported Plugins from Expo 52.
 
 The following plugins support has been removed from the Expo SDK 52.
 - `expo-ads-admob`
@@ -178,7 +181,7 @@ The following plugins support has been removed from the Expo SDK 52.
 - `expo-analytics-segment`
 - `react-native-shared-element`
 
-## Known Issues
+### Known Issues
 
 - The text area widget's height behaves differently in Expo52 and Expo50. In Expo52, it stays unchanged as if no properties are set, but in Expo50, the height increases. [Reference](https://github.com/facebook/react-native/issues/47942)
 
@@ -196,7 +199,7 @@ The following plugins support has been removed from the Expo SDK 52.
 
 ---
 
-# 4. Upgrade Recommendations
+## 4. Upgrade Recommendations
 
 - Update platform dependencies and review breaking changes carefully.
 - For CLI recommendations - Node v22, Java v17, and `@wavemaker/wm-reactnative-cli@1.8.6`.
