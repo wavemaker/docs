@@ -23,7 +23,7 @@ Database providers regularly release new versions with enhanced features, improv
 4. **Longevity:** Avoid disruptions as older versions reach end-of-life and lose official support.
 
 
-### Updated Database Server Versions
+## Updated Database Server Versions
 
 Below is the list of database servers with their deprecated versions and the newly supported versions:
 
@@ -38,7 +38,7 @@ Below is the list of database servers with their deprecated versions and the new
 
 The new database supported versions list will be displayed in the UI while importing the database.
 
-### Impact on existing apps
+## Impact on existing apps
 
 There is no impact on existing applications. However all new Database imports will work the above mentioned database versions and their respective dependency library versions.
 
@@ -47,6 +47,4 @@ There is no impact on existing applications. However all new Database imports wi
 
 This upgrade is part of our continuous efforts to deliver the best experience for our users. By aligning with the latest database versions, WaveMaker Studio ensures your applications are built on a secure, efficient, and future-proof foundation.
 
-:::impact
 These changes will be made available to application developers with the WaveMaker 11.10 release.
-:::
