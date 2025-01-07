@@ -104,21 +104,13 @@ Splash screens have received significant attention in Expo 52. While the update 
   </figure>
 </div>
 
-- **Better Splash Screen Customization**: Enhanced tools and options make it easier to align splash screens with branding guidelines.
+- Full screen splash image in android is not supported from expo 52 and recommended way is using splash screen with icon as shown above expo 52 image reference.
+
 - Follow Android's up-to-date standards for splash screen design: [Learn More](https://developer.android.com/develop/ui/views/launch/splash-screen).
 
-### Splash Screen and App Icon Configuration
+### Splash Screen Configuration
 
-#### Supported Formats
-- Only `.png` images are supported for splash screens in an Expo project; other formats will cause production build failure.
-
-#### Platform-Specific Configuration
-- Use `splash.android` for Android-specific settings in app.json
-- Use `splash.ios` for iOS-specific settings in app.json
-
-#### App Icon Best Practices
-- Icon must be at least 512x512 pixels, in `.png` format, and exactly square.
-- For adaptive icons, use `android.adaptiveIcon.foregroundImage` and `android.adaptiveIcon.backgroundColor`.
+Starting expo 52, using expo-splash-screen config plugin is recommended because using a full screen splash image on Android 12+ for Android is outdated. See `expo-splash-screen` [reference](https://docs.expo.dev/versions/latest/sdk/splash-screen/#configuration) on how to use the config plugin and for up-to-date information.
 
 ---
 
