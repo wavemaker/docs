@@ -49,3 +49,10 @@ If you encounter any issues, refer to the troubleshooting guide below:
    - Stop the CLI and kill all Node processes using the task manager or activity monitor.
    - Run the CLI command with the `--clean` option appended.
 3. If the sync process fails to download uncommitted files, perform a VCS push in WaveMaker Studio and click on the preview button again.
+
+## Local Web Perview with Docker
+
+This Docker image is configured to allow users to execute [`wm-reactnative-cli`](https://github.com/wavemaker/wm-reactnative-cli) commands and it is used to preview the react-native applications locally. To know more about creating, installing, and setting up wm-rn-web-preview docker image, see [Docker Image for local Web preview](/learn/react-native/web-preview-docker-image).
+
+- Using the wm-rn-web-preview image, users can preview the react native WaveMaker applications in their local.
+- Find WaveMaker wm-rn-web-preview Docker image at [wm-rn-web-preview Docker Image in Docker Hub](https://hub.docker.com/r/wavemakerapp/wm-rn-web-preview).

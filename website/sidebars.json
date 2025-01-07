@@ -339,80 +339,103 @@
 				"app-development/deployment/one-click-deployment",
 				{
 					"type": "category",
-					"label": "WaveMaker CI/CD Pipeline",
+					"label": "WaveMaker Internal CI/CD Pipeline",
 					"items": [
 						"app-development/deployment/release-management",
 						"app-development/deployment/configuration-profiles",
 						"app-development/deployment/configuration-management",
-						"app-development/deployment/pipelines-phases"
+						"app-development/deployment/pipelines-phases",
+						{
+							"type": "category",
+							"label": "Pipeline Configuration",
+							"items": [
+								"app-development/deployment/default-pipelines",
+								"app-development/deployment/configure-pipelines"
+							]
+						},
+						{
+							"type": "category",
+							"label": "Deploy to Cloud Providers",
+							"items": [
+								"app-development/deployment/deployment-to-aws",
+								"app-development/deployment/deployment-to-azure",
+								"app-development/deployment/deployment-google-cloud",
+								"app-development/deployment/deployment-to-digital-ocean"
+							]
+						},
+						{
+							"type": "category",
+							"label": "Pipeline Configuration cont.",
+							"items": [
+								"app-development/deployment/phase-configuration",
+								"app-development/deployment/webhooks-integration",
+								"app-development/deployment/tests-integration"
+							]
+						},
+						{
+							"type": "category",
+							"label": "Manage Deployed Apps",
+							"items": [
+								"app-development/deployment/manage-deployed-apps"
+							]
+						}
 					]
-				},
-				{
-					"type": "category",
-					"label": "Pipeline Configuration",
-					"items": [
-						"app-development/deployment/default-pipelines",
-						"app-development/deployment/configure-pipelines"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Deploy to Cloud Providers",
-					"items": [
-						"app-development/deployment/deployment-to-aws",
-						"app-development/deployment/deployment-to-azure",
-						"app-development/deployment/deployment-google-cloud",
-						"app-development/deployment/deployment-to-digital-ocean"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Pipeline Configuration cont.",
-					"items": [
-						"app-development/deployment/phase-configuration",
-						"app-development/deployment/webhooks-integration",
-						"app-development/deployment/tests-integration"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Manage Deployed Apps",
-					"items": [
-						"app-development/deployment/manage-deployed-apps"
-					]
+					
 				},
 				{
 					"type": "category",
 					"label": "Integrate with your CI/CD Providers",
 					"items": [
+						"app-development/deployment/overview-integrate-with-your-cicd-providers",
 						"app-development/deployment/push-code-to-external-repo",
 						"app-development/deployment/integration-with-custom-vcs-provider",
 						"app-development/deployment/pull-request-flow",
 						"app-development/deployment/export-wavemaker-application",
-						"app-development/deployment/building-with-maven",
-						"app-development/deployment/build-with-docker",
+						{
+							"type": "category",
+							"label": "Build WaveMaker Application",
+							"items": [
+								{
+									"type": "category",
+									"label": "Build WAR File",
+									"items": [
+										"app-development/deployment/building-with-maven",
+										"app-development/deployment/build-war-with-docker"
+									]
+								},
+								"app-development/deployment/build-with-docker"
+							]
+						},
 						"app-development/deployment/jenkins-integration",
-						"app-development/deployment/deployment-using-docker-compose",
-						"how-tos/deployment-to-heroku"
+						{
+							"type": "category",
+							"label": "Deploy WaveMaker Application",
+							"items": [
+								{
+									"type": "category",
+									"label": "Deploy using WAR File",
+									"items": [
+										"app-development/deployment/deployment-web-server",
+										"how-tos/wavemaker-application-deployment-tomcat",
+										"how-tos/wavemaker-application-deployment-websphere-liberty-profile",
+										"how-tos/wavemaker-application-deployment-jboss",
+										"how-tos/wavemaker-application-deployment-weblogic-application-server"
+									]
+								},
+								"app-development/deployment/deploy-using-docker",
+								"app-development/deployment/deployment-using-docker-compose",
+								"how-tos/deployment-to-heroku"
+							]
+						}
+
 					]
 				},
 				{
 					"type": "category",
-					"label": "WaveMaker apps Interation with CDN",
+					"label": "Deploy Static Content into CDN",
 					"items": [
 						"app-development/deployment/app-integration-with-aws-cdn",
 						"app-development/deployment/app-integration-with-azure-cdn"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Deployment to external web servers",
-					"items": [
-						"app-development/deployment/deployment-web-server",
-						"how-tos/wavemaker-application-deployment-tomcat",
-						"how-tos/wavemaker-application-deployment-websphere-liberty-profile",
-						"how-tos/wavemaker-application-deployment-jboss",
-						"how-tos/wavemaker-application-deployment-weblogic-application-server"
 					]
 				}
 			]
