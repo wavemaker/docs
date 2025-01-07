@@ -20,7 +20,7 @@ This upgrade stabilizes the platform to support the latest up-to-date Expo 52 fe
 | Feature                          | Expo 50                                     | Expo 52                                     |
 |----------------------------------|---------------------------------------------|---------------------------------------------|
 | Accessibility IDs for iOS        | Limited support for nested elements         | [Fully supported for nested elements](#accessibility-improvements)         |
-| Android Splash Screen with Image  | Full-screen supported                       | [Full-screen not supported](#splash-screen-enhancements) |
+| Android Splash Screen with Image  | Full-screen supported                       | [Full-screen not supported](#splash-screen) |
 | DevTools                         | Standard                                    | [Enhanced](#debugging-enhancements)                                  |
 
 ## 1. New React Native 0.76 Architecture
