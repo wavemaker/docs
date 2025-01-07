@@ -11,11 +11,9 @@ import expo_52_filter from '/learn/assets/react-native/expo_52_filter.png';
 
 ---
 
-# 1. Introduction 
-
 Expo has rolled out version 52 with a set of features and enhancements aimed at improving developer productivity and app performance. This update addresses critical pain points, introduces new capabilities, and refines existing tools, making it a significant release for mobile app developers. Here's a quick look at what Expo 52 brings to the table and how it compares to version 50.
 
-This upgrade stabilizes the platform to support the latest upto date expo 52 features, and minimising the gaps between the expo and wavemaker platform. Improving the dev experience with tools and support.
+This upgrade stabilizes the platform to support the latest up-to-date Expo 52 features, minimizing the gaps between the Expo and WaveMaker platforms and improving the development experience with enhanced tools and support.
 
 <!-- truncate -->
 
@@ -27,16 +25,18 @@ This upgrade stabilizes the platform to support the latest upto date expo 52 fea
 | Android Splash Screen with Image  | Full-screen supported                       | [Full-screen not supported](#splash-screen-enhancements) |
 | DevTools                         | Standard                                    | [Enhanced](#debugging-enhancements)                                  |
 
-# 2. New React Native 0.76 Architecture
+# 1. New React Native 0.76 Architecture
 
-- With expo 52, new architecture support is available (with the flag in app.json ` "newArchEnabled": true `).The New Architecture is a rewrite of the internals of React Native to enable app developers to develop high quality native applications using React.
+With Expo 52, new architecture support is available with the flag in:
 
-  For more information refer : https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+> **`app.json`**: `"newArchEnabled": true `. 
+ 
+The New Architecture is a rewrite of the internals of React Native to enable app developers to develop high quality native applications using React. For more information refer : https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
 
 - reactnative.directory will give the information about the compatibility of the libraries or any third party packages for the new architecture.
 - [Read about the known issues](https://docs.expo.dev/guides/new-architecture/#troubleshooting) to understand what to expect.
 
-# 3. What's More with Expo 52?
+# 2. What's More with Expo 52?
 
 ## Accessibility Improvements
 
@@ -49,8 +49,12 @@ Simplifies the process of automation testing via accessibility id in iOS.
  ***Expo 50 Accessibility***
 [![Expo 50 Accessibility](/learn/assets/react-native/expo_50_accessibility.png)](/learn/assets/react-native/expo_50_accessibility.png)
 
+> In Expo 50, when attempting to access individual elements using Appium, the elements were grouped together, making it difficult to interact with them individually.
+
  ***Expo 52 Accessibility***
 [![Expo 52 Accessibility](/learn/assets/react-native/expo_52_accessibility.png)](/learn/assets/react-native/expo_52_accessibility.png)
+
+> In Expo 52, the issue has been resolved, allowing Appium to access and interact with individual elements seamlessly.
 
 ---
 
@@ -80,7 +84,7 @@ The filter styles should be applied only to Image widget. [Learn more](https://r
 
 ### React Native DevTools
 
-- This is an enhancement and different tool to the react devtools, new default debugging experience from the react native 0.76 & expo sdk 52.
+- This is an enhancement and different tool to the react devtools, new default debugging experience from the react native 0.76 and Expo SDK 52.
 
 - Brings new debugging features, making issue resolution faster and more effective.
 
@@ -129,12 +133,12 @@ Splash screens have received significant attention in Expo 52. While the update 
 
 ---
 
-# 4. How to Prepare for Expo 52
+# 3. How to Prepare for Expo 52
 
 ## Library Support for New Architecture:
 
   - Check new architecture support for any library incompatibilities in react native zip. Use
-  - Run `npx expo-doctor@latest` in expo project to validate incompatible and unmaintained libraries.
+  - Run `npx expo-doctor@latest` in Expo project to validate incompatible and unmaintained libraries.
 - **Plan for Splash Screen Changes**: Revisit your Android splash screen designs to accommodate limitations.
 
 ## Breaking Changes, Deprecations and Limitations
@@ -153,9 +157,9 @@ Splash screens have received significant attention in Expo 52. While the update 
 - Pedometer support dropped for Android
 - Expo Go now uses the New Architecture for all apps
 
-### Unsupported plugins from expo 52.
+### Unsupported Plugins from Expo 52.
 
-The following plugins support has been removed from the expo sdk 52.
+The following plugins support has been removed from the Expo SDK 52.
 - `expo-ads-admob`
 - `expo-analytics-amplitude`
 - `expo-app-loading`
@@ -180,17 +184,20 @@ The following plugins support has been removed from the expo sdk 52.
 - Dashed and dotted borders break when `borderStyle: "dashed" | "dotted"` is combined with `overflow: "hidden"` or `"scroll"`, displaying a solid border instead. They work correctly with `overflow: "visible"` and on Android. [Reference](https://github.com/facebook/react-native/issues/48078)
 
 - **RTL breaking changes** : 
-  - RTL might not work as expected in expo preview
-  - When RTL is enabled in IOS, it requires manual app restart to apply the RTL changes.
+  - RTL might not work as expected in Expo preview
+  - When RTL is enabled in iOS, it requires manual app restart to apply the RTL changes.
 
-- Layout breaking changes:  React Native previously flipped left/right (and start/end) edges when dealing with margin, padding, or border, set on a row-reverse container. Now, behavior of these properties lines up with web. 
-Inorder to prevent from the breaking changes,  set the flag `revertLayoutToExpo50` to true in wm_rn_config.json.
+- **Layout breaking changes**:  
+  - Previously, when working with margin, padding, or border, React Native flipped **left to right** and **right to lift**; similarly, **start to end** and **end to start** edges , set on a row-reverse container. Now, behavior of these properties lines up with web. 
+  - To prevent from the breaking changes,  set the flag:  
+      **`revertLayoutToExpo50` to true in `wm_rn_config.json`**.   
+      [Reference](https://reactnative.dev/blog/2024/04/22/release-0.74#new-layout-behaviors)
 
 ---
 
-# 5. Upgrade Recommendations
+# 4. Upgrade Recommendations
 
 - Update platform dependencies and review breaking changes carefully.
 - For CLI recommendations - Node v22, Java v17, and `@wavemaker/wm-reactnative-cli@1.8.6`.
 - Review and test layout & style changes
-- Review new architecture support for libraries used in the app. Run `npx expo-doctor@latest` in expo project to validate the compatibility and packages to support new architecture.
+- Review new architecture support for libraries used in the app. Run `npx expo-doctor@latest` in Expo project to validate the compatibility and packages to support new architecture.
