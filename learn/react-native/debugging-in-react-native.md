@@ -15,19 +15,25 @@ The application developed in our studio can be debugged using three tools.
 
 |  | Web Preview | Expo Go (Mobile Device) | Expo Development Build | Native Build (APK/IPA) |
 | ------ | ----- | ----- | ----- | ----- |
-| Chrome Devtool | Yes | No | No | No |
-| React Devtool | Yes | Yes | Yes | |
-| React Native Devtool | No | Yes | Yes |  |
+| Chrome DevTools | Yes | No | No | No |
+| React DevTools | Yes | Yes | Yes | |
+| React Native DevTools | No | Yes | Yes |  |
 | WavePulse | Yes | No | Yes | Yes |
+
+The application that is to be debugged can run in the following ways.
+
+- **Web Preview**: In studio, the application can be previewed on web browser at any point of development.
+- **Expo Go**: It is a mobile application to preview and test React Native projects on your device in real time without needing a separate build process.
+- **Expo Development Build**: It is a build of your React Native app that includes native code, enabling you to test features not supported by Expo Go.
+- **Native Build (APK/IPA)**: A native build (APK/IPA) is a platform-specific application package that can be directly installed and run on mobile devices.
 
 ## Web DevTools
 
-
 ### Web Preview
 
-- Once a React Native application is developed, click the **Preview** icon to view how the application User Interface(UI) is rendering and how correctly the functionalities are working.
-- After the Preview screen is launched, remove the Toolbar.
-- Right click on the screen and select **Inspect**.
+1. Once a React Native application is developed, click the **Preview** icon to view how the application User Interface(UI) is rendering and how correctly the functionalities are working.
+2. After the Preview screen is launched, remove the Toolbar.
+3. Right click on the screen and select **Inspect**.
 
 ![Inspect Window](/learn/assets/inspect-window.png)
 
@@ -37,16 +43,16 @@ When developing a React Native application, React DevTools provides in-depth deb
 
 ### Web Preview
 
-- Go to [Chrome Web Store](https://chromewebstore.google.com/category/extensions) to use React DevTools for Web Preview in Chrome browser.
-- Search for React Developer Tools.
-- Click Add to Chrome, this adds the extension to your Chrome browser. To know how to add the extension in other browsers, see [React Developer Tools - Browser Extension](https://react.dev/learn/react-developer-tools#browser-extension).
+1. Go to [Chrome Web Store](https://chromewebstore.google.com/category/extensions) to use React DevTools for Web Preview in Chrome browser.
+2. Search for React Developer Tools.
+3. Click Add to Chrome, this adds the extension to your Chrome browser. To know how to add the extension in other browsers, see [React Developer Tools - Browser Extension](https://react.dev/learn/react-developer-tools#browser-extension).
 
 ### Expo Go
 
-- Export and download React Native Zip of the aplication from studio.
-- Go to project directory in your terminal.
-- To run your application in Expo go/ Expo Development Build, see [Expo - Set up your environment](https://docs.expo.dev/get-started/set-up-your-environment/).
-- Open a new terminal window and run `npx react-devtools` to open the React DevTools application.
+1. Export and download React Native Zip of the aplication from studio.
+2. Go to project directory in your terminal.
+3. To run your application in Expo go/ Expo Development Build, see [Expo - Set up your environment](https://docs.expo.dev/get-started/set-up-your-environment/).
+4. Open a new terminal window and run `npx react-devtools` to open the React DevTools application.
 
 :::note
 If the application is not connected to React DevTools automatically, try reloading the application by pressing `r` where expo server is running.
@@ -55,9 +61,12 @@ If the application is not connected to React DevTools automatically, try reloadi
 ## React Native DevTools
 
 
-### Expo Go
+### Expo Go/ Expo Development Build
 
-
+1. Export and download React Native Zip of the aplication from studio.
+2. Go to project directory in your terminal.
+3. To run your application in Expo go/ Expo Development Build, see [Expo - Set up your environment](https://docs.expo.dev/get-started/set-up-your-environment/).
+4. In the terminal where Expo server is running, press `j` to launch the React Native DevTools.
 
 ## WavePulse
 
@@ -67,18 +76,18 @@ To understand more about WavePulse, see [WavePulse - To Inspect and Debug APK/IP
 
 ### Web Preview
 
-- Open [WavePulse Client](https://apps.wavemakeronline.com/wavepulse/client/c1736304109744/elements).
-- Select **Connect to Web Preview** to use Web Preview for debugging.
-- Copy the below code from WavePulse and execute it in developer Console of the application up for Web Preview. This launches the debugging session in WavePulse.
+1. Open [WavePulse Client](https://apps.wavemakeronline.com/wavepulse/client/c1736304109744/elements).
+2. Select **Connect to Web Preview** to use Web Preview for debugging.
+3. Copy the below code from WavePulse and execute it in developer Console of the application up for Web Preview. This launches the debugging session in WavePulse.
 
 ### Expo Development Build
 
-- Export and download React Native Zip of the aplication from studio.
-- Go to project directory in your terminal.
-- To install and run your application in Expo Development Build, see [Expo - Set up your environment](https://docs.expo.dev/get-started/set-up-your-environment/).
-- Launch WavePulse client in browser.
-- Enter the application ID.
-- Scan the QR code. You can also copy the link address to open in the browser.
+1. Export and download React Native Zip of the aplication from studio.
+2. Go to project directory in your terminal.
+3. To install and run your application in Expo Development Build, see [Expo - Set up your environment](https://docs.expo.dev/get-started/set-up-your-environment/).
+4. Launch WavePulse client in browser.
+5. Enter the application ID.
+6. Scan the QR code. You can also copy the link address to open in the browser.
 
 :::note
 Ensure that the application is closed in the device before launching it through WavePulse.
@@ -86,11 +95,10 @@ Ensure that the application is closed in the device before launching it through 
 
 ### Native Build (APK/IPA)
 
-- Build APK/IPA of your application and install it in the device. To know more, see [WavePulse - To Inspect and Debug APK/IPA File](/learn/react-native/wavepulse/).
-.
-- Launch WavePulse in browser.
-- Enter application ID.
-- Scan the QR code. You can also copy the link address to open in the browser.
+1. Build APK/IPA of your application and install it in the device. To know more, see [WavePulse - To Inspect and Debug APK/IPA File](/learn/react-native/wavepulse/).
+2. Launch WavePulse in browser.
+3. Enter application ID.
+4. Scan the QR code. You can also copy the link address to open in the browser.
 
 :::note
 Ensure that the application is closed in the device before launching it through WavePulse.
