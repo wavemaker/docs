@@ -204,7 +204,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Version |
 | --- | --- |
-| JDK | 17 |
+| JDK | 17/21 |
 | WebSphere Liberty | 23.0.0.9+ |
 | JBoss Wildfly | 27+ |
 | Tomcat | 10.1.31 |
@@ -226,15 +226,15 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 :::
 
 
-## Build Environment 11 
+## Build Environment
 
-### React Native 11
+### React Native
 
 #### Environment Setup
 
 |Description|	Version|
 |---|---|
-|Java | 17 |
+|Java | 17/21 |
 |Node|18.16.1|
 |Maven| 3.9.9 |
 |npm | 9.5.1|
@@ -250,22 +250,26 @@ It is required to use Android Studio version be **Iguana | 2023.2.1** or above a
 Please ensure that your [Android Studio](https://developer.android.com/studio/releases#android_gradle_plugin_and_android_studio_compatibility) has a compatible version of the [AGP](https://developer.android.com/build/releases/past-releases/agp-8-3-0-release-notes#compatibility). Additionally, verify the compatibility of the AGP with the SDK build tools version, JDK, and Gradle version.
 :::
 
-#### SDK Update
+### SDK Update
 
 |Description|	Version|
 |---|---|
-| Expo | 50.0.17 |
-| React Native | 0.73.6 |
+| Expo | <td className="versiontdbgcolor"> 50.0.17 -> 52.0.0 </td> |
+| React Native | <td className="versiontdbgcolor"> 0.73.6 -> 0.76 </td> |
 
-### Angular Web and Mobile 11
+### Angular Web and React Native Mobile
 
 |Description|	Version|
 |---|---|
-|Java | 17 |
-|Node| 18.16.1|
+|Java | 17/21 |
+|Node| <td className="versiontdbgcolor"> 18.16.1 -> 22.11.0 </td> |
 |Maven| 3.9.9 |
-|npm | 9.5.1|
+|npm | <td className="versiontdbgcolor"> 9.5.1 -> 10.9.0 </td> |
 |Ant| 1.10.11|
+
+:::note
+The Node upgrade applies only to Web applications, while React Native applications will continue using Node version 18.
+:::
 
 For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
