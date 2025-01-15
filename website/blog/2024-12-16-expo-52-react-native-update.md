@@ -23,6 +23,43 @@ This upgrade stabilizes the platform to support the latest up-to-date Expo 52 fe
 | Android Splash Screen with Image  | Full-screen supported                       | [Full-screen not supported](#splash-screen) |
 | DevTools                         | Standard                                    | [Enhanced](#debugging-enhancements)                                  |
 
+
+
+<div style={{ position: 'relative', paddingBottom: 'calc(62.5% + 41px)', height: 0, width: '100%' }}>
+      <iframe
+        src="https://demo.arcade.software/gFcB5NjRWeZfwywUl25Y?embed"
+        title="Arcade Demo"
+        frameBorder="0"
+        loading="lazy"
+        allowFullScreen
+        allow="clipboard-write"
+        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+      />
+</div>
+
+<div style={{ position: "relative", paddingBottom: "56.25%" }}>
+    <iframe
+      style={{
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+        left: 0,
+        top: 0
+      }}
+      src="https://embed.app.guidde.com/playbooks/cqesYJtnXYAp2s777EG7ye"
+      title="Enable PR-Flow"
+      frameBorder={0}
+      referrerPolicy="unsafe-url"
+      allowFullScreen="true"
+      allow="clipboard-write"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+    />{" "}
+  </div>
+  <p style={{ display: "none" }}>
+    00:00: To start with implementation first enable the pr flow Click 00:04:
+    the menu icon to go to the team portal.
+  </p>
+
 ## 1. New React Native 0.76 Architecture
 
 With Expo 52, new architecture support is available with the flag in:
