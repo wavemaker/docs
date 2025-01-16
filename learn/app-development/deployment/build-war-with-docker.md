@@ -46,7 +46,7 @@ docker run --rm -e profile=<profile_name> -e MAVEN_CONFIG=$HOME/.m2 \
    -v <local_m2_cache_location>:$HOME/.m2 \
    -v <local_npm_cache_location>:$HOME/.npm \
    -v <your_project_location>:/usr/local/content/app \
-   wavemaker/app-builder:<wavemaker_version>
+   wavemakerapp/app-builder:<wavemaker_version>
 ```
 
 Example:
@@ -55,7 +55,32 @@ docker run --rm -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 \
    -v ~/.m2:$HOME/.m2 \
    -v ~/.npm:$HOME/.npm \
    -v /home/user/MySampleApp:/usr/local/content/app \
-   wavemaker/app-builder
+   wavemakerapp/app-builder
+```
+
+#### Run by Mapping Host User in Docker
+
+If you encounter file access or permission issues while working with files outside the container, you can run the container as the host user by using the `-u $(id -u):$(id -g)` option. This ensures that files created or modified by the container are owned by the host user.
+
+Replace `<local_m2_cache_location>`, `<local_npm_cache_location>` and `<your_project_location>` with the appropriate paths on your system. For `<wavemaker_version>`, specify the WaveMaker release version, or set the tag to "latest" (or leave it out) to push the latest version automatically.
+
+```bash
+docker run --rm -u $(id -u):$(id -g) \
+    -e profile=<profile_name> -e MAVEN_CONFIG=$HOME/.m2 \
+    -v <local_m2_cache_location>:$HOME/.m2 \
+    -v <local_npm_cache_location>:$HOME/.npm \
+    -v <your_project_location>:/usr/local/content/app \
+    wavemakerapp/app-builder:<wavemaker_version>
+```
+
+Example:
+```bash
+docker run --rm -u $(id -u):$(id -g) \
+    -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 \
+    -v ~/.m2:$HOME/.m2 \
+    -v ~/.npm:$HOME/.npm \
+    -v /home/user/MySampleApp:/usr/local/content/app \
+    wavemakerapp/app-builder
 ```
 
 #### Explanation of Options
@@ -65,6 +90,7 @@ docker run --rm -e profile=deployment -e MAVEN_CONFIG=$HOME/.m2 \
 - `-v <local_m2_cache_location>:$HOME/.m2`: Maps your local Maven cache, speeding up dependency resolution.
 - `-v <local_npm_cache_location>:$HOME/.npm`: Maps your local npm cache, improving build efficiency for projects using npm.
 - `-v <your_project_location>:/usr/local/content/app`: Maps your project directory to the container’s working directory.
+- `-u $(id -u):$(id -g)`: Ensures that the container runs with the host user's UID and GID, resolving file permission issues.
 
 **Note**: Make sure that the specified directories exist and have the correct permissions for Docker to access them.
 
