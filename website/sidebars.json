@@ -464,6 +464,26 @@
 		"teams/manage-subscription",
 		"teams/faqs"
 	],
+
+	"Autocode": [
+		"autocode/welcome",
+		"autocode/architecture",
+		{
+			"type": "category",
+			"label": "Getting Started",
+			"items": [
+				"autocode/welcome"
+			]
+		},
+		{
+			"type": "category",
+			"label": "Install",
+			"items": [
+				"autocode/architecture"
+			]
+		}
+	],
+
 	"Enterprise": [
 		"on-premise/welcome",
 		"on-premise/architecture",
