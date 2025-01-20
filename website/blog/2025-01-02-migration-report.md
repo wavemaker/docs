@@ -87,6 +87,6 @@ Through this feature, we’re committed to making migrations simpler, more effic
 
 ### Release Information
 
-The Migration Report will debut with the **11.10 release**, planned for **January 20, 2025**.
+The Migration Report will debut with the **11.10 release**, planned for **January 27, 2025**.
 
 
