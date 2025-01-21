@@ -2,7 +2,7 @@
 
 Follow these best practices to ensure optimal output when using our plugin to convert Figma designs into frontend code.
 
-1.  **Frame Naming:** Avoid naming frames with numbers or special characters at the beginning. These names are used for CSS classes and ids, and CSS naming rules must be followed. For example, start frame names with letters, use hyphen `**-**` or underscore `**_**` for spaces, etc. [Learn more about CSS naming conventions](https://medium.com/free-code-camp/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849)
+1.  **Frame Naming:** Avoid naming frames with numbers or special characters at the beginning. These names are used for CSS classes and ids, and CSS naming rules must be followed. For example, start frame names with letters, use hyphen **`-`** or underscore **`_`** for spaces, etc. [Learn more about CSS naming conventions](https://medium.com/free-code-camp/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849)
 
 2.  **Avoid Wrap Property in Auto Layout:** Refrain from using the wrap property in Figma's Auto Layout. While supported, it can result in inconsistent and inaccurate sizing.
 
@@ -19,7 +19,7 @@ Follow these best practices to ensure optimal output when using our plugin to co
 
     _An example of right way of adding properties_
 
-6.  **Logos:** Use images or SVGs for logos. Include the word `**logo**` in the name. If logos are components, ensure the component name also contains logo.
+6.  **Logos:** Use images or SVGs for logos. Include the word **`logo`** in the name. If logos are components, ensure the component name also contains logo.
 
 7.  **Proper Use of Auto Layout:** Use Auto Layout as intended. below are some of the suggestions on using autolayout.
 
