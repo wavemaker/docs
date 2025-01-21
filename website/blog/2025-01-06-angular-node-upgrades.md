@@ -4,9 +4,13 @@ author: "Bhargavi Gunda"
 ---
 ---
 
-At WaveMaker, we're committed to ensuring that your applications are always powered by the latest and greatest technologies. As part of this commitment, we’re excited to announce that the upcoming WaveMaker Studio v11.10 release, scheduled for January 20, 2025, will transition all generated web applications to Angular 18 and Node v22.
+At WaveMaker, we're committed to ensuring that your applications are always powered by the latest and greatest technologies. As part of this commitment, we’re excited to announce that the upcoming WaveMaker Studio v11.10 release, scheduled for January 27, 2025, will transition all generated web applications to Angular 18 and Node v22.
 
-Angular 17, the backbone of current wavemaker's web applications, is set to reach its end of life on May 15, 2025. To keep your applications secure, performant, and future-proof, we’re making the proactive move to Angular 18. 
+Angular 17, the backbone of current wavemaker's web applications, is set to reach its end of life on May 15, 2025. To keep your applications secure, performant, and future-proof, we’re making the proactive move to Angular 18.
+
+:::note
+The Node upgrade applies only to Web applications, while React Native applications will continue using Node version 18.
+:::
 
 <!-- truncate -->
 
