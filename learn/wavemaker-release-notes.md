@@ -241,7 +241,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |Ant| 1.10.11|
 | Android Studio | Ladybug 2024.2.1 |
 | SDK Build Tools | 34.0.0|
-| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | 1.8.5 |
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.5 -> 1.8.6 </td> |
 | Android Gradle Plugin (AGP) | 8.3 - 8.7 |
 
 :::note
