@@ -25,16 +25,20 @@ Follow these best practices to ensure optimal output when using our plugin to co
         -   Spacing should be Auto.
 
     -   If the parent frame has only one child frame, set the child frame’s layout to either center-center or top-center. This ensures proper alignment and structure.
+
         ![An examples of a frame having only one child](./assets/one_child.png)
         _An examples of a frame having only one child_
 
     -   When the child element needs to match the width of a parent frame with variable width (Hug), set the child element’s width to Fill. Example: In an one column form, text fields, buttons, and frames containing text should have their width set to Fill. Fixed widths are treated as fixed sizes and will not adjust to different screen sizes.
+
         ![An example of using fill width to match parent frame width](./assets/fill_width.png)
         _An example of using fill width to match parent frame width_
 
     -   Case when spacing should be set to `Auto`
+
         -   For nav bars, subheadings with three-dot menus, etc., where the frame width is variable (Hug), spacing or gap should be set to Auto.
         -   the space between text and an icon should be set to Auto to prevent layout issues, such as single-line text rendering in two lines.
+
             ![An example of when to use auto spacing](./assets/auto_gap.png)
             _An example of when to use auto spacing_
 
