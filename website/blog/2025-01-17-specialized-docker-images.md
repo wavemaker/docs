@@ -1,4 +1,8 @@
-# Optimized WaveMaker App Builds & Deployments with Docker Images
+---
+title: "Optimized WaveMaker App Builds & Deployments with Docker Images"
+author: Seelam Raviteja
+---
+---
 
 Building and deploying modern applications often comes with its fair share of challenges, especially when dependencies and configurations differ between versions.
 
@@ -9,6 +13,8 @@ WaveMaker applications are no exception.
 Developers frequently face hurdles like managing varying Node.js and npm versions, upgrading build environments, and ensuring secure and optimized deployment configurations for application servers like Tomcat.
 
 To address these pain points, we are excited to introduce a set of Docker images for building and deploying WaveMaker applications. These Docker images streamline the development and deployment process, reducing friction and allowing developers to focus on what they do best — building great applications.
+
+<!-- truncate -->
 
 ## The Problem
 
