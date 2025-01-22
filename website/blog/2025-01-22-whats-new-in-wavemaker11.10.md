@@ -4,7 +4,7 @@ author: "Venugopal Jidigam"
 ---
 ---
 
-WaveMaker Studio 11.10 brings a range of powerful new features, design capabilities, stack upgrades, and enhancements to improve your app development experience. With this release, we’re introducing groundbreaking capabilities like Exporting Prefab as Web Component for building framework agnostic components, and a Project Migration Report, while also upgrading our technology stack to ensure your applications remain modern, secure, and future-proof.
+WaveMaker Studio 11.10, scheduled to release on 27th January, brings a range of powerful new features, design capabilities, stack upgrades, and enhancements to improve your app development experience. With this release, we’re introducing groundbreaking capabilities like Exporting Prefab as Web Component for building framework agnostic components, and a Project Migration Report, while also upgrading our technology stack to ensure your applications remain modern, secure, and future-proof.
 
 This release also focuses on future-proofing your applications with upgrades to Angular 18 for Web Applications and Expo 52 for hybrid mobile applications, ensuring they remain secure, performant, and aligned with the latest industry standards.
 
@@ -14,9 +14,13 @@ Additionally, we’ve made several enhancements and restructured Docker configur
 
 ## Key Features
 
-### Introducing Framework-Agnostic Prefabs - Available on Request
+### Introducing Framework-Agnostic Prefabs
 
 With the latest release, WaveMaker Studio takes modular development to the next level by enabling Prefabs to be exposed as web components. This groundbreaking enhancement allows you to build reusable components once in WaveMaker and use them across various UI frameworks, including React, Vue.js, and more. Prefabs are no longer limited to WaveMaker applications; they are now truly universal, empowering developers to seamlessly integrate them into their preferred tech stack. Build once, use anywhere! 
+
+:::note
+This feature is only available on request.
+:::
 
 ### Project Migration Report
 
