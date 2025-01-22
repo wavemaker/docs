@@ -11,11 +11,11 @@ Follow these best practices to ensure optimal output when using our plugin to co
 4.  **Vectors for Icons Only:** Use vectors exclusively for icons and avoid using them for other design elements.
 
 5.  **Instance Properties:** Ensure all properties in instances are within the tree structure and not at the top level. For example, place image properties directly within the appropriate layer.
-    ![An example of wrong way of adding properties](./assets/properties_wrong.png)
+    ![An example of wrong way of adding properties](learn/assets/properties_wrong.png)
 
     _An example of wrong way of adding properties_
 
-    ![An example of right way of adding properties](./assets/properties_right.png)
+    ![An example of right way of adding properties](learn/assets/properties_right.png)
 
     _An example of right way of adding properties_
 
@@ -30,13 +30,13 @@ Follow these best practices to ensure optimal output when using our plugin to co
 
     -   If the parent frame has only one child frame, set the child frame’s layout to either center-center or top-center. This ensures proper alignment and structure.
 
-        ![An examples of a frame having only one child](./assets/one_child.png)
+        ![An examples of a frame having only one child](learn/assets/one_child.png)
 
         _An examples of a frame having only one child_
 
     -   When the child element needs to match the width of a parent frame with variable width (Hug), set the child element’s width to Fill. Example: In an one column form, text fields, buttons, and frames containing text should have their width set to Fill. Fixed widths are treated as fixed sizes and will not adjust to different screen sizes.
 
-        ![An example of using fill width to match parent frame width](./assets/fill_width.png)
+        ![An example of using fill width to match parent frame width](learn/assets/fill_width.png)
 
         _An example of using fill width to match parent frame width_
 
@@ -45,7 +45,7 @@ Follow these best practices to ensure optimal output when using our plugin to co
         -   For nav bars, subheadings with three-dot menus, etc., where the frame width is variable (Hug), spacing or gap should be set to Auto.
         -   the space between text and an icon should be set to Auto to prevent layout issues, such as single-line text rendering in two lines.
 
-            ![An example of when to use auto spacing](./assets/auto_gap.png)
+            ![An example of when to use auto spacing](learn/assets/auto_gap.png)
 
             _An example of when to use auto spacing_
 
