@@ -1,5 +1,5 @@
 ---
-title: "Keeping You Ahead: WaveMaker Upgrades to Angular v18 and Node v22"
+title: "What's New in WaveMaker 11.10"
 author: "Venugopal Jidigam"
 ---
 ---
