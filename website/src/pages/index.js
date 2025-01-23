@@ -22,10 +22,10 @@ export default class Index extends React.Component {
     getFeatures() {
         let featureComponents = [];
         let features = [
-            { href: '/learn/app-development/custom-widgets/enterprise-marketplace/', title: 'Prefab MarketPlace', description: "Enterprise marketplace allows artifacts to be published by teams to be used across multiple teams..." },
-            { href: '/learn/how-tos/adding-ui-for-api-server-side-pagination/', title: 'Server side Pagination', description: "Pagination is a way to represent data in sets of pages. Server-side pagination controls how these..." },
-            { href: '/learn/react-native/react-native-overview/', title: 'React Native Studio', description: "React Native is a cross-platform framework for developing native mobile applications..." },
-            { href: '/learn/app-development/services/java-services/api-composer-toolkit/', title: 'API Orchestration', description: "API Composition toolkit can be your playground to compose an API or an object using multiple API endpoints. This..." }]
+            { href: '/learn/react-native/wavepulse/', title: 'WavePulse', description: "WavePulse is a lightweight debugging tool tailored for Wavemaker Mobile apps. With minimal setup, you can seamlessly connect and inspect your app's components, view logs, monitor network traffic, analyze app storage, and more." },
+            { href: '/learn/react-native/react-native-overview/', title: 'New React Native Studio', description: "React Native is a cross-platform framework for developing native mobile applications..." },
+            { href: '/learn/app-development/core-implementation/core-and-implementation-projects/', title: 'Core Implementation', description: "Core projects act as a foundation with reusable code and components. Implementation projects extend this core functionality to meet specific application requirements." },
+            { href: '/learn/app-development/custom-widgets/enterprise-marketplace/', title: 'Prefab MarketPlace', description: "Enterprise marketplace allows artifacts to be published by teams to be used across multiple teams..." }]
         features.forEach((feature) => {
             featureComponents.push(
                 <div className='col' key={features.indexOf(feature)}>
@@ -60,7 +60,7 @@ export default class Index extends React.Component {
         let extensionComponents = [];
         let extensions = [
             { href: '/learn/react-native/react-native-overview/', icon:<MobileAppDevIcon className='icon'/>, label: 'Mobile Development' },
-            { href: '/learn/app-development/ui-design/designing-app/', icon:<WebAppDevIcon className='icon'/>, label: 'Web Development' },
+            { href: '/learn/documentation-reference/', icon:<WebAppDevIcon className='icon'/>, label: 'Web Development' },
             { href: '/learn/app-development/custom-widgets/prefab-with-partials/#creating-partials', icon:<PrefabIcon className='icon'/>, label: 'Custom Components' },
             { href: '/learn/on-premise/welcome/', icon:<EnterpriseIcon className='icon'/>, label: 'Enterprise Setup' },
             { href: '/learn/teams/overview', icon:<AdminTeamPortalIcon className='icon'/>, label: 'Administration' },
