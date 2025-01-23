@@ -10,6 +10,7 @@ import Layout from '@theme/Layout';
 import SearchBar from '../theme/SearchBar';
 import { useColorMode } from '@docusaurus/theme-common';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import { MobileAppDevIcon, WebAppDevIcon, PrefabIcon, AdminTeamPortalIcon, EnterpriseIcon} from '../../static/js/svg-assets';
 
 export default class Index extends React.Component {
     constructor(props) {
@@ -18,41 +19,56 @@ export default class Index extends React.Component {
             displayInfoFooter: true
         }
     }
-    getCategories() {
-        const { colorMode } = useColorMode();
-        let categoryComponents = [];
-        let categories = [
-            { href: '/learn/tutorials', lightIcon: '/learn/img/tutorials.svg', darkIcon: '/learn/img/tutorialsDark.svg', label: 'Tutorials' },
-            { href: '/learn/react-native/react-native-overview', lightIcon: '/learn/img/reactNativeMobileApp.svg', darkIcon: '/learn/img/reactNativeMobileAppDark.svg', label: 'Mobile App Development' },
-            { href: '/learn/on-premise/welcome', lightIcon: '/learn/img/enterpriseGuide.svg', darkIcon: '/learn/img/enterpriseGuideDark.svg', label: 'Enterprise Guide' },
-            { href: '/learn/app-development/custom-widgets/prefabs-overview', lightIcon: '/learn/img/tailorPrefabs.svg', darkIcon: '/learn/img/tailorPrefabsDark.svg', label: 'Prefab Building' }]
-        categories.forEach((category) => {
-            categoryComponents.push(
-                <div className="col" key={categories.indexOf(category)}>
-                    <a href={category.href} className='category'>
-                        <img src={colorMode != "dark" ? category.lightIcon : category.darkIcon} className='icon'></img>
-                        <span className='caption'>{category.label}</span>
+    getFeatures() {
+        let featureComponents = [];
+        let features = [
+            { href: '/learn/react-native/wavepulse/', title: 'WavePulse', description: "WavePulse is a lightweight debugging tool tailored for Wavemaker Mobile apps. With minimal setup, you can seamlessly connect and inspect your app's components, view logs, monitor network traffic, analyze app storage, and more." },
+            { href: '/learn/app-development/core-implementation/core-and-implementation-projects/', title: 'Core Implementation', description: "Core projects act as a foundation with reusable code and components. Implementation projects extend this core functionality to meet specific application requirements." },
+            { href: '/learn/react-native/react-native-overview/', title: 'New React Native Studio', description: "React Native is a cross-platform framework for developing native mobile applications..." },
+            { href: '/learn/app-development/custom-widgets/enterprise-marketplace/', title: 'Prefab MarketPlace', description: "Enterprise marketplace allows artifacts to be published by teams to be used across multiple teams..." }]
+        features.forEach((feature) => {
+            featureComponents.push(
+                <div className='col' key={features.indexOf(feature)}>
+                    <a className='feature-card' href={feature.href}>
+                        <h4 className='title'>{feature.title}</h4>
+                        <p className='description'>{feature.description}</p>
+                        <span className='link'>Know More <img src="/learn/img/combined-shape-black.svg" /></span>
                     </a>
                 </div>
             )
         })
-        return categoryComponents;
+        return featureComponents;
+    }
+
+    getRecentSearch() {
+        let recentSearch = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('recentSearch')) : null;
+        let output = [];
+        if (recentSearch) {
+            Reflect.ownKeys(recentSearch).forEach((search, index) => {
+                const itemName = search.length>22?search.slice(0,20)+'...':search; 
+                output.push(<a key={"" + index} href={recentSearch[search]} className='RecentSearch-link'><span className='RecentSearch-action'>{itemName}</span></a>)
+            })
+            return (<div className='container'>
+                <span className='RecentSearch-text'>Recently Visited: </span>
+                {output}
+            </div>);
+        }
+        return <div></div>;
     }
 
     getExtensions() {
-        const { colorMode } = useColorMode();
         let extensionComponents = [];
         let extensions = [
-            { href: '/learn/app-development/ui-design/theme-builder', lightIcon: '/learn/img/themeBuilder.svg', darkIcon: '/learn/img/themeBuilderDark.svg', label: 'Theme Builder' },
-            { href: '/learn/app-development/services/mock-services/mock-imported-apis/', lightIcon: '/learn/img/apiMocking.svg', darkIcon: '/learn/img/apiMockingDark.svg', label: 'MockingBird' },
-            { href: '/learn/app-development/dev-integration/chrome-developer-tool', lightIcon: '/learn/img/devTool.svg', darkIcon: '/learn/img/devToolDark.svg', label: 'Dev Tool' },
-            { href: '/learn/teams/overview', lightIcon: '/learn/img/teamPortal.svg', darkIcon: '/learn/img/teamPortalDark.svg', label: 'Teams Portal' },
-            { href: '/learn/connectors/connectors-introduction', lightIcon: '/learn/img/connectors.svg', darkIcon: '/learn/img/connectorsDark.svg', label: 'Connectors' },
+            { href: '/learn/react-native/react-native-overview/', icon:<MobileAppDevIcon className='icon'/>, label: 'Mobile Development' },
+            { href: '/learn/documentation-reference/', icon:<WebAppDevIcon className='icon'/>, label: 'Web Development' },
+            { href: '/learn/app-development/custom-widgets/prefab-with-partials/#creating-partials', icon:<PrefabIcon className='icon'/>, label: 'Custom Components' },
+            { href: '/learn/on-premise/welcome/', icon:<EnterpriseIcon className='icon'/>, label: 'Enterprise Setup' },
+            { href: '/learn/teams/overview', icon:<AdminTeamPortalIcon className='icon'/>, label: 'Administration' },
         ]
         extensions.forEach((extension) => {
             extensionComponents.push(<div className='col padding-horiz--sm' key={extensions.indexOf(extension)}>
                 <a className='extension row' href={extension.href}>
-                    <img src={colorMode != "dark" ? extension.lightIcon : extension.darkIcon} className='icon'></img>
+                    <span className="img-circle">{extension.icon}</span>
                     <p className='caption'>{extension.label}</p>
                     <span className='link'>Explore <img src="/learn/img/combined-shape-black.svg" /></span>
                 </a>
@@ -60,6 +76,15 @@ export default class Index extends React.Component {
         })
         return extensionComponents;
     }
+
+    scrollSmoothTo(elementId) {
+        const element = document.getElementById(elementId);
+        element.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth'
+        });
+    }
+
     render() {
         const { config: siteConfig, language = '' } = this.props;
         const { baseUrl } = siteConfig;
@@ -67,14 +92,19 @@ export default class Index extends React.Component {
         const Main = () => {
             return (
                 <main className="main-container">
-                    <div className='container banner spl-icon footer-left'>
+                    <div className=' banner footer-left'>
                         <div className='row banner-content'>
                             <div className='col'>
                                 <h1 className='text--center text--semibold banner-Title'>How can we help?</h1>
                                 <div className='banner-search' id="home-search">
-                                <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    <svg width="20" height="20" className="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                                     <BrowserOnly>
-                                        {()=><SearchBar autoFocus={true} elementId="home-search" />}
+                                        {() => <SearchBar autoFocus={true} elementId="home-search" />}
+                                    </BrowserOnly>
+                                </div>
+                                <div className='row recentSearch text--center'>
+                                    <BrowserOnly>
+                                        {() => this.getRecentSearch()}
                                     </BrowserOnly>
                                 </div>
                             </div>
@@ -85,104 +115,18 @@ export default class Index extends React.Component {
                             <a className="banner-footer-closeAction" href="javascript:void(0)" onClick={() => { this.setState({ displayInfoFooter: false }); }}><img src='/learn/img/closeIcon-black.svg' /></a>
                         </div>}
                     </div>
-                    <div className='container categories'>
-                        <div className='row margin-vert--xl padding-horiz--lg'>
-                            {this.getCategories()}
-                        </div>
-                    </div>
-                    <div className='container extensions text--center padding-vert--lg spl-icon header-right'>
-                        <h1>Studio Extensions</h1>
-                        <div className='row margin-vert--lg'>
+                   
+                    <div className='container extensions text--center'>
+                    <a onClick={()=>{this.scrollSmoothTo("feature-section")}} className='spl-icon'/>
+                        <div className='row '>
                             {this.getExtensions()}
                         </div>
                     </div>
-                    <div className='container-fluid helpfull-resources'>
-                        <div className='container margin-top--lg padding-bottom--xl'>
-                            <h1 className='text--center'>Helpful Resources</h1>
-                            <div className='row margin-top--lg padding--md'>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href='/learn/'>What's new?</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/custom-widgets/enterprise-marketplace/'>Prefab Marketplace</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/react-native/react-native-overview'>React Native Studio</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/services/java-services/api-composer-toolkit'>API Orchestration</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/how-tos/adding-ui-for-api-server-side-pagination'>Server-side Pagination</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href='/learn/app-development/wavemaker-overview/platform-overview'>Platform</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/wavemaker-app-development-faqs/what-is-wavemaker-app'>Architecture</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/wavemaker-app-development-faqs/'>FAQs</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/wavemaker-overview/product-walkthrough'>Studio Walkthrough</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/tutorials/leave-management-app'>Exercises</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href=''>API References</a>
-                                        </li>
-                                        <li>
-                                            <a href='https://www.wavemakeronline.com/app-runtime/latest/docs/index.html'>Widgets API</a>
-                                        </li>
-                                        <li>
-                                            <a href='https://www.wavemakeronline.com/app-runtime/latest/rn/style-docs/widgets/advanced/carousel/'>React Native Styles</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href='/learn/documentation-reference#quick-start-guide'>Quick Topics</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/how-tos/localization-wavemaker-apps'>Localization</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/how-tos/building-pwa-app#what-is-pwa-progressive-web-application'>PWA</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/blog/2020/02/25/wavemaker-micro-front-end-support'>Micro Frontend</a>
-                                        </li>
-                                        <li>
-                                            <a href='/learn/app-development/sspa/micro-frontend'>SSPA</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col'>
-                                    <ul>
-                                        <li>
-                                            <a href=''>Community</a>
-                                        </li>
-                                        <li>
-                                            <a href='https://www.wavemaker.com/training/'>Get Training</a>
-                                        </li>
-                                        <li>
-                                            <a href='https://github.com/wavemaker'>Github</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                    <div className='container-fluid features-section' id='feature-section'>
+                        <div className='container features-section-container margin-top--lg padding-bottom--xl'>
+                            <h1 className='text--center margin-bottom--xl'>Feature Highlight</h1>
+                            <div className='row border-gradient'>
+                                {this.getFeatures()}
                             </div>
                         </div>
                     </div>

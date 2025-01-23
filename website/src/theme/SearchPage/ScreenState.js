@@ -7,8 +7,28 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 import React from 'react';
 import { ResultsScreen } from './ResultsScreen';
 export var ScreenState = React.memo(function (_ref) {
+  const inlineSearchActions = [{
+    "href": "/learn/react-native/react-native-overview/",
+    "label": "React Native"
+  }, {
+    "href": "/learn/react-native/custom-widget/",
+    "label": "Custom Widget"
+  }, {
+    "href": "/learn/app-development/ui-design/themes/",
+    "label": "Themes"
+  }];
   var props = _objectWithoutProperties(_ref, _excluded);
-  return /*#__PURE__*/React.createElement(ResultsScreen, props);
+  return /*#__PURE__*/props.isOpen  &&  (props.state.collections.length == 0 ? inlineSearchActions.map(function (action) {
+    return React.createElement("div", {
+      className: "DocSearch-inlineSearch-action",
+      key: action.href, 
+    }, /*#__PURE__*/React.createElement("a", {
+      className: "DocSearch-inlineSearch-action-link",
+      href: action.href
+    },/*#__PURE__*/React.createElement("p", {
+      className: "DocSearch-inlineSearch-action-text"
+    }, action.label)));
+  }): React.createElement(ResultsScreen, props));
 }, function areEqual(_prevProps, nextProps) {
   return nextProps.state.status === 'loading' || nextProps.state.status === 'stalled';
 });

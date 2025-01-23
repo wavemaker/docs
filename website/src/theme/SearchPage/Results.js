@@ -57,7 +57,7 @@ function Result(_ref) {
   }
   breadcrumb += '</ul>'
   let hierarchyLevel = item.hierarchy["lvl2"] ? "lvl2" : "lvl1"
-  let highlightContent = item["_highlightResult"] ? item["_highlightResult"].hierarchy[hierarchyLevel].value : item.hierarchy[hierarchyLevel];
+  let highlightContent = item["_highlightResult"] && item["_highlightResult"].hierarchy[hierarchyLevel] ? item["_highlightResult"].hierarchy[hierarchyLevel].value : item.hierarchy[hierarchyLevel];
   return /*#__PURE__*/React.createElement("li", _extends({
     className: ['DocSearch-Hit', item.__docsearch_parent && 'DocSearch-Hit--Child', isDeleting && 'DocSearch-Hit--deleting', isFavoriting && 'DocSearch-Hit--favoriting'].filter(Boolean).join(' '),
     onTransitionEnd: function onTransitionEnd() {
