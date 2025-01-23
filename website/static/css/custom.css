@@ -207,16 +207,20 @@ html[data-theme="dark"] {
 
 [data-theme='dark'] {
     --docsearch-hit-color: #B8D4FB !important;
-    .DocSearch-Button-Keys .DocSearch-Button-Key {
-        color: var(--wm-searchInput-color);
-    }
-    #docsearch-label .DocSearch-Search-Icon path{
-        stroke: var(--wm-searchInput-color);
-    }
-    #docsearch-input::placeholder {
-        color: var(--wm-searchInput-color);
-    }
 }
+
+[data-theme='dark'] .DocSearch-Button-Keys .DocSearch-Button-Key {
+    color: var(--wm-searchInput-color);
+}
+
+[data-theme='dark'] #docsearch-label .DocSearch-Search-Icon path{
+    stroke: var(--wm-searchInput-color);
+}
+
+[data-theme='dark'] #docsearch-input::placeholder {
+    color: var(--wm-searchInput-color);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 /* your custom css */
 body {
