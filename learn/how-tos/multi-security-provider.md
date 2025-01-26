@@ -33,7 +33,7 @@ Multiple instances of OpenId and JWS can be configured within a single applicati
 
 ## Adding Multiple Security Providers
 
-In Wavemaker 11.10, configuring multiple security providers has been made simpler. 
+In WaveMaker 11.10, configuring multiple security providers has been made simpler. 
 
 1. Navigate to the **Security** Tab and enable Authentication & Authorization
 2. Click **plus (+)** icon in the Security Providers section. By clicking this icon, you can configure as many security providers as needed for your application.
