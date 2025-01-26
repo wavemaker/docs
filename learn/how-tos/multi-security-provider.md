@@ -25,7 +25,7 @@ WaveMaker offers a variety of security providers that can be configured within y
 
 - **Form-based Login**: A form-based login flow relies on a username and password login form for authentication. 
 - **SSO-based Login**: In contrast, an SSO-based login flow redirects users to the login page of the respective SSO provider for authentication.
-- **Pre-Authenticated login**: Pre-Authenticated login is a token-based authentication flow. Where a request is authenticated based on the token present in it.
+- **Pre-Authenticated login**: Pre-authenticated login is a token-based authentication flow in which a request is authenticated based on the token it contains.
 
 An application can be configured with multiple security providers in any combination. For example, it can include providers like Demo, Database, and SAML, or any other mix based on the requirements.
 
