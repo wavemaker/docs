@@ -37,6 +37,7 @@ In WaveMaker 11.10, configuring multiple security providers has been made simple
 
 1. Navigate to the **Security** Tab and enable Authentication & Authorization
 2. Click **plus (+)** icon in the Security Providers section. By clicking this icon, you can configure as many security providers as needed for your application.
+3. Click Save to add the security provider to the list.
 
 <iframe width="560" height="315" src="https://embed.app.guidde.com/playbooks/2YiBJGXva3d7pfxCvxCWWU" title="multi-security"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
 
