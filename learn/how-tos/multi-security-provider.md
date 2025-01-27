@@ -1,5 +1,5 @@
 ---
-title: "Configuring Multi-Security Providers"
+title: "Multiple Security Provider Configuration"
 id: "multi-security-provider"
 sidebar_label: "Configuring Multi-Security Providers"
 ---
@@ -17,7 +17,7 @@ WaveMaker offers a variety of security providers that can be configured within y
 | LDAP | Form-based |
 | Active Directory | Form-based |
 | Custom | Form-based |
-| OpenId | SSO-based |
+| OpenID | SSO-based |
 | SAML | SSO-based |
 | CAS | SSO-based |
 | JWS | Pre-Authenticated |
@@ -27,9 +27,9 @@ WaveMaker offers a variety of security providers that can be configured within y
 - **SSO-based Login**: In contrast, an SSO-based login flow redirects users to the login page of the respective SSO provider for authentication.
 - **Pre-Authenticated login**: Pre-authenticated login is a token-based authentication flow in which a request is authenticated based on the token it contains.
 
-An application can be configured with multiple security providers in any combination. For example, it can include providers like Demo, Database, and SAML, or any other mix based on the requirements.
+An application can be configured with multiple security providers in any combination, such as Demo, Database, SAML, or any other mix based on requirements.
 
-Multiple instances of OpenId and JWS can be configured within a single application. For example, an application can support both 'Sign in with Google' and 'Sign in with LinkedIn', with both using OpenId-based login.
+Additionally, multiple instances of OpenID and JWS can be set up within a single application. For example, an app can support both "Sign in with Google" and "Sign in with LinkedIn," each using OpenID-based authentication..
 
 ## Adding Multiple Security Providers
 
@@ -73,3 +73,17 @@ Page.button2Click = function ($event, widget) {
 ```
 
 ![Multi-Security Provider Buttons](/learn/assets/multi-security-buttons.png)
+
+## User Credential Validation Order with Multiple form based Providers
+
+When multiple form-based providers such as Database, Demo, Active Directory, Custom, and LDAP are configured, they share the same login form on the Login page. When a login request API is triggered from the form, the authentication request is processed sequentially through each configured form-based provider in the following order until one successfully authenticates the user credentials.
+
+1. Demo
+2. Database
+3. LDAP
+4. Active Directory
+5. Custom
+
+For example, if an application is configured with Demo, Database, and Active Directory.
+- When entering Database credentials in the login form, the credentials are validated in the order: Demo and Database.
+- And if you are entering Active directory credentials in the login form, then the credentials are validated in the order: Demo, Database, and Active Directory.
