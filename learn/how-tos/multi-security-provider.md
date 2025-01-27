@@ -74,7 +74,7 @@ Page.button2Click = function ($event, widget) {
 
 ![Multi-Security Provider Buttons](/learn/assets/multi-security-buttons.png)
 
-## User Credential Validation Order with Multiple form based Providers
+## User Credential Validation Order with Multiple Form-Based Providers
 
 When multiple form-based providers such as Database, Demo, Active Directory, Custom, and LDAP are configured, they share the same login form on the Login page. When a login request API is triggered from the form, the authentication request is processed sequentially through each configured form-based provider in the following order until one successfully authenticates the user credentials.
 
