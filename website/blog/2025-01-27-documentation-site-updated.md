@@ -19,7 +19,7 @@ We’ve been working on docs behind the scenes, and now it’s time for you to e
 
 ## What’s New?
 
-We’ve been listening to your suggestions, and your *"Oh, it would be so cool if this existed"* moments—and guess what? We’ve acted on them! Here’s what’s happening:
+We’ve been listening to your suggestions, and your *"Oh, it would be so cool if this existed"* and guess what? We’ve acted on them! Here’s what’s happening:
 
 ### 🕵️‍♀️ Recently Visited Pages
 
@@ -65,7 +65,7 @@ We’ve introduced a feature highlights section on the homepage. Think of it as 
 
 ## What’s Next?
 
-But wait, there’s more. We’re taking things up another notch with these upcoming features:
+There’s more... we’re taking things up another notch with these upcoming features:
 
 ### 🤖 AI-Generated Related Questions
 
@@ -73,7 +73,7 @@ Ever feel like you’re asking the docs the wrong question? With AI stepping in,
 
 ### ✍️ Article Summaries
 
-Pressed for time? Soon, you’ll get the TL;DR version of a document right below its title. Quick, digestible, and straight to the point—just the way you like it.
+Pressed for time? Soon, you’ll get the TL;DR (Too Long; Didn't Read) version of a document right below its title. Quick, digestible, and straight to the point—just the way you like it.
 
 ### 🐶 Ask Pooch Button
 
