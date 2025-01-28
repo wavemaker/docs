@@ -925,7 +925,7 @@
 				"how-tos/implement-openid-okta-provider",
 				"how-tos/implement-openid-auth0-provider",
 				"how-tos/custom-security-using-google-oauth-prefab",
-				"how-tos/multiple-security-provider-implementation",
+				"how-tos/multiple-security-provider-configuration",
 				"how-tos/customizing-post-authentication-handlers",
 				"how-tos/add-custom-filters",
 				"how-tos/configuring-content-security-policy",

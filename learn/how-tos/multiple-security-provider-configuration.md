@@ -1,7 +1,7 @@
 ---
 title: "Multiple Security Provider Configuration"
-id: "multi-security-provider"
-sidebar_label: "Configuring Multi-Security Providers"
+id: "multiple-security-provider-configuration"
+sidebar_label: "Multiple Security Provider Configuration"
 ---
 
 With WaveMaker 11.10, Multiple security providers can be enabled to improve user experience and application security. This document includes how WaveMaker supports Multi-Security, including the various security providers available, and their configurations.
