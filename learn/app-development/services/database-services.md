@@ -46,22 +46,13 @@ For an in-depth understanding of the ORM layers generated, their functionality a
 
 WaveMaker supports the following databases and versions and the same can be used within your app.
 
-| Database Name | Version | Driver Jar |
-| --- | --- | --- |
-| [![](/learn/assets/MariaDB.png)](/learn/assets/MariaDB.png) | 10.2 | Available in Maven Repo |
-| [![mysql](/learn/assets/mysql.png)](/learn/assets/mysql.png) | 5.5 | Available in Maven Repo |
-| 5.6 |
-| 5.7 |
-| [![PostgreSQL](/learn/assets/PostgreSQL.png)](/learn/assets/PostgreSQL.png) PostgreSQL | 9.4 | Available in Maven Repo |
-| 9.5 |
-| [![Oracle](/learn/assets/Oracle.png)](/learn/assets/Oracle.png) | 11.2 | [download ojdbc6.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html) |
-| 12.1 | [download ojdbc7.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html) |
-| 12.2 | [download ojdbc8.jar from here](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html) |
-| [![SQLServer](/learn/assets/SQLServer.png)](/learn/assets/SQLServer.png) SQL Server | 2014 | [Steps to Download sqljdbc4.2.jar](/learn/app-development/services/database-services/download-jdbc-driver-jar/)
-(you can use JDBC driver 4.2, 6.0, 6.1 or 6.2, ensure that you import  **sqljdbc42.jar** or any Java ver 8 compatible jar file) |
+| Database Provider | Version | Driver Jar |
+| :--- | :--- | :--- |
+| MariaDB| 10.6 | Available in Maven Repo |
+| MySQL | 8.0.21, &nbsp;8.4.3, &nbsp; 9.1.0 | Available in Maven Repo |
+| PostgreSQL |13.18, &nbsp; 17.0 | Available in Maven Repo |
+| Oracle| 19c, 23c| [download ojdbc8.jar from here](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-6-c-downloads.html) |
+| SQL Server | 2019, 2022 | Available in Maven Repo|
 | Azure SQL Database [Connect to Azure](/learn/how-tos/connect-azure-sql-server/) |
-| [![DB2](/learn/assets/DB2.png)](/learn/assets/DB2.png) | 10.1 | [db2jcc4.jar](http://www-01.ibm.com/support/docview.wss?uid=swg21363866) |
-| 11.1 |
-| [![HSQLDB](/learn/assets/HSQLDB.png)](/learn/assets/HSQLDB.png) | 2.3.3 | Available in Maven Repo |
-| 2.3.4 |
-
+| IBM DB2| 11.5 | [download db2jcc4.jar from here](http://www-01.ibm.com/support/docview.wss?uid=swg21363866) |
+| HSQLDB | 2.3.3, &nbsp;2.3.4  | Available in Maven Repo |
