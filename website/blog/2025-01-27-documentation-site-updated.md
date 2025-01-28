@@ -85,6 +85,6 @@ Here’s the ultimate multitasker’s dream: watching Academy videos directly in
 
 ## Over to You!
 
-We’re genuinely curious—which of these features are you most excited about? Or is there something else you’d love to see? Drop your thoughts in the comments and let’s make this the best documentation experience together.
+We’re genuinely curious—which of these features are you most excited about? Or is there something else you’d love to see? Drop your thoughts to [documentation team here](https://github.com/wavemaker/docs/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A*%20Document) and let’s make this the best documentation experience together.
 
 See you in the docs (and maybe the Academy)! 🌟
