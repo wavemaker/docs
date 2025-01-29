@@ -48,20 +48,18 @@ Configuring multiple authentication providers in WaveMaker Studio is straightfor
 3. **Configure Role Mappings**: Map the roles between the authentication providers & application roles.
 4. **Test and Deploy**: Use the built-in testing tools to verify your configuration and deploy the application.
 
+![Multi-Security Provider Blog](/learn/assets/multi-security-provider-blog.png)
 
 For more detailed instructions, see [Multi-Security Provider Configuration](/learn/how-tos/multiple-security-provider-configuration) 
 
+## Usecases
 
-Use Case Scenarios
+- **Enterprise Applications**: Integrate LDAP for employee authentication while offering social login options for external partners.
 
-Enterprise Applications: Integrate LDAP for employee authentication while offering social login options for external partners.
+- **E-Commerce Platforms**: Provide customers with the choice of logging in using their email, Google account, or LinkedIn profile.
 
-E-Commerce Platforms: Provide customers with the choice of logging in using their email, Google account, or LinkedIn profile.
+- **Educational Portals**: Support a mix of DB-based authentication for students and LDAP for faculty members.
 
-Educational Portals: Support a mix of DB-based authentication for students and LDAP for faculty members.
-
-Building a Secure Future with WaveMaker Studio
+## Building a Secure Future with WaveMaker Studio
 
 The introduction of multi-security provider support underscores WaveMaker’s commitment to helping developers create robust, secure, and user-friendly applications. By supporting diverse authentication methods, we’re ensuring that your applications are ready to meet the demands of today’s users and enterprises.
-
-Let’s create better, more secure applications together!
