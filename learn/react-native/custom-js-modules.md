@@ -23,7 +23,7 @@ The Custom JS module with web logic can be uploaded in the resources folder of t
 
 1. Go to File Explorer and click **'+'** to add resources.
 2. In Import Resource dialog, click **Upload Files** to upload the custom JavaScript library.
-3. Upload **customScript.js** library that has the web logic.
+3. Upload **customScript.web.js** library that has the web logic.
 
 ## How to upload for Mobile
 
@@ -32,6 +32,20 @@ Similar to uploading Web logic, the custom JS module with native logic can be up
 1. Go to File Explorer and click **'+'** to add resources.
 2. In Import Resource dialog, click **Upload Files** to upload the custom JavaScript library.
 3. Upload **customScript.native.js** library that has the native logic.
+
+## How to Import in Application
+
+Two files, **customScript.web.js** for web and **customScript.native.js** for React Native are uploaded in the resources folder of the application. To use custom JS files in any application, you need to import the files using the following code in **app.js** file.
+
+```JavaScript
+require('./assets/resources/files/customScript.js');
+```
+
+![Importing Custom JS File](/learn/assets/importing-custom-js-file.png)
+
+:::note
+Studio automatically picks up the platform specific custom js file to be used in the application.
+:::
 
 ## Usecase
 
