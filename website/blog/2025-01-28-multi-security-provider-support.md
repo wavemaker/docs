@@ -4,7 +4,7 @@ author: "Abhitej Konkimalla"
 ---
 ---
 
-In today’s rapidly evolving digital landscape, security remains a cornerstone of application development. With the release of WaveMaker Studio 11.10, we are thrilled to introduce a game-changing feature—the ability to configure multiple authentication providers for your applications.
+In today’s rapidly evolving digital landscape, security remains a cornerstone of application development. With the release of WaveMaker Studio 11.10, we are thrilled to introduce a game-changing feature—the ability to configure multiple security providers for your applications.
  
 This feature empowers application developers to seamlessly enable and manage multiple security providers, offering greater flexibility and enhanced security for their applications.
 
