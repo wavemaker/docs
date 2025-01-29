@@ -18,23 +18,23 @@ With the new multi-security provider support, WaveMaker Studio empowers applicat
 
 ## Key Highlights of Multi Security Provider Support
 
-### 1. Support for Multiple Authentication Providers:
+### 1. Support for Multiple Authentication Providers
 
 Developers can configure DB-based authentication, LDAP, and social logins (e.g., Google, LinkedIn) within a single application.
 This flexibility allows applications to cater to different user bases with varying authentication preferences.
 
-### 2. Dynamic Configuration:
+### 2. Dynamic Configuration
 
 Enable or disable specific security providers based on the needs of your application.
 Customize authentication flows to align with business requirements.
 
-### 3. Seamless Integration:
+### 3. Seamless Integration
 
 WaveMaker Studio simplifies the process of configuring multiple security providers through an intuitive UI.
 
 Developers can easily manage and test different authentication mechanisms without complex coding or integrations.
 
-### 4. Enhanced User Experience:
+### 4. Enhanced User Experience
 
 Users can choose their preferred method of authentication, whether it’s a corporate LDAP login or a convenient social login.
 Streamlined login processes ensure a secure yet frictionless experience.
