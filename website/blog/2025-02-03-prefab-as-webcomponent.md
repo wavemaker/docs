@@ -54,7 +54,7 @@ Converting a WaveMaker Prefab into a Web Component is a straightforward process 
 3. Integrate the Code Snippet
 
 
-To find the in-depth conversion process, see [Prefab as a Web Component]().
+To find the in-depth conversion process, see [Prefab as a Web Component](/learn/how-tos/prefab-as-webcomponent).
 
 
 ## Benefits of Using Prefabs as Web Components
