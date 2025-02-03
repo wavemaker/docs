@@ -4,9 +4,9 @@ author: "Swetha Kundaram"
 ---
 ---
 
-How often do you visit the documentation site?
+How often do you visit the [documentation](/learn) site?
 
-If you're someone who loves (or forced to) diving into the docs for answers, you’ve probably noticed a few things look… different. And if you haven’t been back in a while, no worries – this blog is here to catch you up on everything you’ve missed.
+If you're someone who loves (or is forced to) diving into the docs for answers, you’ve probably noticed a few things look… different. And if you haven’t been back in a while, no worries – this blog is here to catch you up on everything you’ve missed.
 We’ve been working on docs behind the scenes, and now it’s time for you to explore what’s new. 
 
 <!-- truncate -->
