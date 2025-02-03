@@ -41,14 +41,17 @@ Different debugging tools offer various features, often grouped into panels. The
 Panels, its UI and features present, will depend on the tool and its version being used.
 :::
 
-:::info
-- You must enable logs to see logs in console when running app, it can be enables in `wm_rn_config.json`.
+## Enabling Logs in WaveMaker Mobile App
+
+- You must enable logs to see logs in console when running app, it can be enabled in `wm_rn_config.json`.
 - If running app on expo server, you need restart expo server whenever you make changes to config files like `wm_rn_config.json`.
 - If WavePulse is enable, source for every log will be shown as wavepulse.agent.js as it intercepts the logs.
 - WavePulse is always enabled in web preview.
-:::
+- Steps to enable logs in WaveMaker
+  - Go to 'File Explorer' in Studio.
+  - Open src > main > webapp > wm_rn_config.json
+  - Add `"enableLogs" : true` in `preferences` object.
 
-## Enable Logs in WaveMaker Mobile App
 <div style={{ position: "relative", paddingBottom: "56.25%" }}>
   <iframe
     style={{
@@ -60,26 +63,6 @@ Panels, its UI and features present, will depend on the tool and its version bei
     }}
     src="https://embed.app.guidde.com/playbooks/ce8XxiZkyG1R6rRNZ7HXKC"
     title="guide to show how to enable logs in wavemaker mobile apps"
-    frameBorder={0}
-    referrerPolicy="unsafe-url"
-    allowFullScreen="true"
-    allow="clipboard-write"
-    sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
-  />
-</div>
-
-## Enable WavePulse in WaveMaker Mobile App
-<div style={{ position: "relative", paddingBottom: "56.25%" }}>
-  <iframe
-    style={{
-      width: "100%",
-      height: "100%",
-      position: "absolute",
-      left: 0,
-      top: 0
-    }}
-    src="https://embed.app.guidde.com/playbooks/eNEZKgeMjr2cHEwvb8kNSq"
-    title="Enable WavePulse in WaveMaker Mobile App"
     frameBorder={0}
     referrerPolicy="unsafe-url"
     allowFullScreen="true"
@@ -265,7 +248,7 @@ React Native DevTools requires either Google Chrome or Microsoft Edge installed.
     sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
   />
 </div>
-<br /><br />
+<br />
 
 :::tip
 - Press `?` in terminal where Expo CLI is running to view all available options. Press `shift` + `m` here to see more tools like 'Inspect elements', 'Toggle performance monitor', 'Toggle developer menu', 'Open React devtools' and more. 
@@ -297,6 +280,36 @@ WavePulse is a debugging tool designed specifically for apps built using Wavemak
 
 </details>
 
+### Enabling WavePulse in WaveMaker Mobile App
+
+- WavePulse must be enabled in the project to use it for debugging the application, it can be enabled in `wm_rn_config.json`.
+- If running app on expo server, you need restart expo server whenever you make changes to config files like `wm_rn_config.json`.
+- If WavePulse is enable, source for every log will be shown as wavepulse.agent.js as it intercepts the logs.
+- WavePulse is always enabled in web preview.
+- Steps to enable WavePulse in WaveMaker
+  - Go to 'File Explorer' in Studio.
+  - Open src > main > webapp > wm_rn_config.json
+  - Add `"enableWavePulse" : true` in `preferences` object.
+
+<div style={{ position: "relative", paddingBottom: "56.25%" }}>
+  <iframe
+    style={{
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      left: 0,
+      top: 0
+    }}
+    src="https://embed.app.guidde.com/playbooks/eNEZKgeMjr2cHEwvb8kNSq"
+    title="Enable WavePulse in WaveMaker Mobile App"
+    frameBorder={0}
+    referrerPolicy="unsafe-url"
+    allowFullScreen="true"
+    allow="clipboard-write"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+  />
+</div>
+
 ### Connecting WavePulse
   - Connecting WavePulse with Web Preview.
     - Launch Web Preview of the app, click on "REMOVE TOOLBAR" once the preview loads.
@@ -327,6 +340,8 @@ WavePulse is a debugging tool designed specifically for apps built using Wavemak
   />
 </div>
 
+<br />
+
   - Connecting with app running on physical/virtual device (Expo dev build / Debug & Realease apk/ipa).
     - Run the application in Expo Dev Build using Expo CLI.
     - If using apk/ipa, install the app on device. If apk/ipa is built in debug mode ensure it is connecetd with Expo CLI in Dev Build mode.
@@ -337,10 +352,6 @@ WavePulse is a debugging tool designed specifically for apps built using Wavemak
     - Scan the QR code generated from the device, to launch the app and initiate WavePulse connection. Alternatively, you can code link given below QR code and open it in the browser of your device to do the same.
     - A pop up will appear once the application is launched, asking for permission to connect with the WavePulse session started earlier. Press 'Yes' to initiate connection.
     - WavePulse is not connected. You can now use WavePulse to debug your application.
-
-:::caution
-Ensure that WavePulse is [enabled](#enable-wavepulse-in-wavemaker-mobile-app) before starting app in Expo CLI, or building apk/ipa.
-:::
 
 <div style={{ position: "relative", paddingBottom: "56.25%" }}>
   <iframe
@@ -362,7 +373,21 @@ Ensure that WavePulse is [enabled](#enable-wavepulse-in-wavemaker-mobile-app) be
 </div>
 
 #### Using WavePulse
-- TO DO
+- After launching WavePulse, you can select three options from the dropdown.
+  1. Connect to APK or IPA - To connect with app running through Expo CLI in dev build or to connect with apk/ipa.
+  2. Connect to Web Preview - To connect with app running in Web Preview.
+  3. Import Data - To import previously exported WavePulse debugging data. This enables you to save data from a debugging session and use same data later on. 
+- In Console Panel you can view all the logs, search for specific logs, clear all current logs and filter them by selecting types to show on upper right corner button.
+- Elements Panel will show all WaveMaker components composing the page currently opened in the app. It will auto update when there is any change in the app running.
+  - You can hover/select over the components shown here to highlight it in the app running on device.
+  - When any component is selected in Elements Panel, its Properties and Styles will be shown on the right side of Elemets Panel.
+  - Properties will show the Properties for widget as configured in the project in WaveMaker Studio.
+  - Styles have a dropdown which can be used to select class for specific part of a widget to see classes applied on that part.
+- Network Panel shows all network calls made by the application. You can click on any request to se its details like "Header", "Response" etc. You can also fiter request by selecting types to show on upper right corner button.
+- Timeline Panel shows recorded time intervals for various events like page load, network calls, service variables etc. You can also use filters to filter specific types of events or time interval.
+- Storage Panel will app's local storage. To see latest data, you can use refresh button on upper right corner.
+- Info Panel will show metadata related to app, you can use refresh button on upper right corner.
+- To export current debugging session you can click om export button on the bottom right corner of the WavePulse.
 
 <div style={{ position: "relative", paddingBottom: "56.25%" }}>
   <iframe
@@ -382,11 +407,16 @@ Ensure that WavePulse is [enabled](#enable-wavepulse-in-wavemaker-mobile-app) be
     sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
   />
 </div>
+<br />
+
+:::danger
+You can use WavePulse to debug apk/ipa built in release mode for testing. However, it is advised to disable WavePulse, in builds for distribution including Play store or App Store submissions.
+:::
 
 - Dive Deeper into [WavePulse](wavepulse).
 
 ## Debugging Android/iOS Specific Native Code
-- All the tools mentioned, including React Native DevTools, are designed for debugging JavaScript and React-related issues, not for replacing native tools. To inspect React Native’s underlying platform layers (e.g., for Native Modules), use Android Studio for Android and Xcode for iOS. Learn more [here](https://reactnative.dev/docs/debugging-native-code).
+- All the tools mentioned here, including React Native DevTools, are designed for debugging JavaScript and React-related issues. To inspect React Native’s underlying platform layers (e.g., for Native Modules), use Android Studio for Android and Xcode for iOS. Learn more [here](https://reactnative.dev/docs/debugging-native-code).
 - You can also run and debug the app directly in Android Studio or Xcode. Please check their respective documentation for detailed instructions.
 
 ## Reference
