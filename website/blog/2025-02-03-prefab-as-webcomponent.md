@@ -21,6 +21,8 @@ Prefabs in WaveMaker are reusable and distributable components specifically desi
 - Tightly coupled with the WaveMaker ecosystem
 - Not easily portable across different development environments
 
+![Prefabs](/learn/assets/prefabs.png)
+
 ### The Transformation - Prefab as a Web Component
 
 By converting Prefabs into Web Components, their usability extends beyond WaveMaker applications. These components can now be integrated into any framework or standalone application, fulfilling the promise of true Web Component interoperability. Prefabs as Web Components act as fully-featured, ready-to-use widgets that developers can directly consume, providing a consistent and efficient way to integrate with APIs.
@@ -30,6 +32,8 @@ The new approach transforms Prefabs into standard Web Components, breaking these
 - Enabling cross-framework compatibility
 - Providing a standardized integration method
 - Allowing standalone component deployment
+
+![Prefab Transformation](/learn/assets/prefab-transformation.png)
 
 ## Architecture
 
