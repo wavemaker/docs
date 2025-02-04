@@ -5,7 +5,7 @@ sidebar_label: "Debugging - React Native Application"
 ---
 ---
 
-Wavemaker Mobile Applications are built using Expo & React Native, so you can debug them like any other Expo React Native application. Along with the already exiting tools and methods to debug Expo React Native Apps, Wavemaker also provides specialized tool like **[WavePulse](#wavepulse)** to debug Wavemaker Mobile Applications.
+WaveMaker Mobile Applications are built using Expo & React Native, so you can debug them like any other Expo React Native application. Along with the already exiting tools and methods to debug Expo React Native Apps, WaveMaker also provides specialized tool like **[WavePulse](#wavepulse)** to debug WaveMaker Mobile Applications.
 
 For debugging we can run application in following ways.
 
@@ -62,7 +62,7 @@ Panels, its UI and features present, will depend on the tool and its version bei
       top: 0
     }}
     src="https://embed.app.guidde.com/playbooks/ce8XxiZkyG1R6rRNZ7HXKC"
-    title="guide to show how to enable logs in wavemaker mobile apps"
+    title="guide to show how to enable logs in WaveMaker mobile apps"
     frameBorder={0}
     referrerPolicy="unsafe-url"
     allowFullScreen="true"
@@ -75,7 +75,7 @@ Panels, its UI and features present, will depend on the tool and its version bei
 
 ### Chrome DevTools
 
-Chrome DevTools is a built-in debugging tool present in Chrome browser which helps to inspect, analyze, edit and debug web applications directly in the browser. We can use it to inspect and debug Wavemaker mobile applications, by launching it in web preview in the browser.
+Chrome DevTools is a built-in debugging tool present in Chrome browser which helps to inspect, analyze, edit and debug web applications directly in the browser. We can use it to inspect and debug WaveMaker mobile applications, by launching it in web preview in the browser.
 
 #### Panels Available
 - Console, Elements (shows HTML), Sources, Network, Performance, Memory, Application etc.
@@ -84,7 +84,7 @@ Chrome DevTools is a built-in debugging tool present in Chrome browser which hel
 <summary>Key Features & Limitations</summary>
 
 **Key Features**
-- Works with web preview, which we can launch very quickly and easily while developing app in the Wavemaker studio.
+- Works with web preview, which we can launch very quickly and easily while developing app in the WaveMaker studio.
 - Inspecting elements and their styles. Can be used to edit CSS to quickly debug style issues.
 - Viewing logs and executing JS directly in console.
 - Monitoring network activity.
@@ -259,7 +259,7 @@ Refer React Native DevTools official docs to [learn more](https://reactnative.de
 
 ### WavePulse
 
-WavePulse is a debugging tool designed specifically for apps built using Wavemaker Mobile studio. 
+WavePulse is a debugging tool designed specifically for apps built using WaveMaker Mobile studio. 
 
 #### Panels Available
 - Console, Elements (shows WaveMaker Components), Network, Timeline, Storage, Info
