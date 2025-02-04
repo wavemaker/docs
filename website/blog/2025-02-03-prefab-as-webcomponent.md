@@ -1,5 +1,5 @@
 ---
-title: "From Prefabs to Web Components: A Modern Approach to Reusable UI"
+title: "Prefabs as WebComponents: Making your UI run anywhere, everywhere"
 author: "Naresh Ravulapalli"
 ---
 ---
