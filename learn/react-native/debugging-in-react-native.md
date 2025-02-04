@@ -316,7 +316,7 @@ WavePulse is a debugging tool designed specifically for apps built using Wavemak
     - Open [WavePulse](https://apps.wavemakeronline.com/wavepulse/client/) in another tab, it will start a new session in WavePulse.
     - Select 'Connect to Web Preview" from the dropdown.
     - Copy the code generated, to connect Web Preview with this session of WavePulse.
-    - Go back to the tab where Web Preview is running, and open Console Panel in the devloper tools by pressing `Cmd` + `option` + `j` (Mac) / `Ctrl` + `shift` + `j` (Windows / Linux).
+    - Go back to the tab where Web Preview is running, and open Console Panel in the devloper tools. In Chrome you can press `Cmd` + `option` + `j` (Mac) / `Ctrl` + `shift` + `j` (Windows / Linux).
     - Paste the code copied from WavePulse in the Console Panel, and press enter to initiate connection the WavePulse session started earlier.
     - Web Preview is now connected with WavePulse session started earlier.
     - You can now use WavePulse to debug your application.
@@ -351,7 +351,7 @@ WavePulse is a debugging tool designed specifically for apps built using Wavemak
     - Close the application on device if it is already running.
     - Scan the QR code generated from the device, to launch the app and initiate WavePulse connection. Alternatively, you can code link given below QR code and open it in the browser of your device to do the same.
     - A pop up will appear once the application is launched, asking for permission to connect with the WavePulse session started earlier. Press 'Yes' to initiate connection.
-    - WavePulse is not connected. You can now use WavePulse to debug your application.
+    - WavePulse is now connected. You can now use WavePulse to debug your application.
 
 <div style={{ position: "relative", paddingBottom: "56.25%" }}>
   <iframe
