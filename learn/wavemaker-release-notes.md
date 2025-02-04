@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.10.0](/learn/wavemaker-release-notes/v11-10-0) <p style={{color:"red"}}>*latest*</p> |  WaveMaker Release 11.10 is packed with powerful new features, including the ability to generate Migration Reports and export Prefabs as Web Components. This update emphasizes a seamless development experience with key upgrades like Expo 52, Angular 18, and database driver upgrades. Additionally, it addresses several critical bug fixes across both Web and React Native platforms, ensuring improved performance. |27 January 2025 |
+|[WaveMaker 11.10.1](/learn/wavemaker-release-notes/v11-10-1) <p style={{color:"red"}}>*latest*</p> |  WaveMaker Release 11.10.1 is here with significant enhancements like Validations for OpenID Security Provider and Configurable Tap and Ripple Effect in React Native. This release also includes many major bug fixes from both Web and React Native platforms. |03 February 2025 |
+|[WaveMaker 11.10.0](/learn/wavemaker-release-notes/v11-10-0) |  WaveMaker Release 11.10 is packed with powerful new features, including the ability to generate Migration Reports and export Prefabs as Web Components. This update emphasizes a seamless development experience with key upgrades like Expo 52, Angular 18, and database driver upgrades. Additionally, it addresses several critical bug fixes across both Web and React Native platforms, ensuring improved performance. |27 January 2025 |
 |[WaveMaker 11.9.4](/learn/wavemaker-release-notes/v11-9-4) |  WaveMaker Release 11.9.4 is here with a transformed React Native Studio, now upgraded to the latest Angular version. This release also includes an enhancement to the Select widget dropdown, and various bug fixes. This release aims to significantly enhance the user experience by updating to the latest technology stack. |23 December 2024 |
 |[WaveMaker 11.9.3](/learn/wavemaker-release-notes/v11-9-3) | WaveMaker release 11.9.3 is here with a new feature in React Native to make debugging quicker and easier using WavePulse and enhancements like Month and Year Support in Date Widget. This release also includes major bug fixes canvas, project restoration and many React Native fixes. |09 December 2024 |
 |[WaveMaker 11.9.2](/learn/wavemaker-release-notes/v11-9-2) |  WaveMaker release 11.9.2 is here with noteworthy and efficient enhancements like Pinch-to-Zoom functionality on the Canvas and Skeleton Loader support for additional widgets in React Native. It also includes bug fixes related to the Database Designer, Artifact Update dialog, Bar and Column charts, and various other components. Additionally, this release includes key issues fixed in React Native. |18 November 2024 |
@@ -149,7 +150,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.9.2](/learn/wavemaker-release-notes/v11-9-2)
+Last updated: [WaveMaker 11.10.1](/learn/wavemaker-release-notes/v11-10-1)
 
 ---
 
@@ -159,7 +160,7 @@ Last updated: [WaveMaker 11.9.2](/learn/wavemaker-release-notes/v11-9-2)
 | --- | --- | --- |
 | JS Binding | jquery |  3.7.1 |
 |  | jquery-ui* | 1.13.3 |
-| MVC Framework | Angular | 17.3.11 |
+| MVC Framework | Angular |  18.2.13  |
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 7.8.5 |
@@ -173,32 +174,33 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.1.14 -> 6.2.1 </td> |
-| Security framework | Spring Security | <td className="versiontdbgcolor"> 6.3.4 -> 6.4.2  </td>  |
-|  | Spring Data | <td className="versiontdbgcolor"> 2024.0.5 -> 2024.1.1 </td> |
-|  | Spring Boot | <td className="versiontdbgcolor"> 3.3.5 -> 3.4.1 </td> |
-|  | Spring Session | <td className="versiontdbgcolor"> 3.3.3 -> 3.4.1 </td> |
+|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.1 -> 6.2.2 </td>|
+| Security framework | Spring Security | 6.4.2  |
+|  | Spring Data |  <td className="versiontdbgcolor"> 2024.1.1 -> 2024.1.2 </td>  |
+|  | Spring Boot |  <td className="versiontdbgcolor"> 3.4.1 -> 3.4.2 </td> |
+|  | Spring Session | 3.4.1 |
 | Java JSON utilities | Gson  | 2.11.0 |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
-| JSON library | Jackson |  <td className="versiontdbgcolor"> 2.18.1 -> 2.18.2 </td> |
+| JSON library | Jackson |  2.18.2 |
 | Logging framework | SLF4j | 2.0.16 |
-| Logging Implementation | Log4j2 | <td className="versiontdbgcolor"> 2.24.1 -> 2.24.3 </td> |
+| Logging Implementation | Log4j2 | 2.24.3 |
 | Http client library  | HttpComponents -  httpclient |  5.4.1|
 | Servlet Framework |  | 6.0.0 |
-| Database Connection Pooling | HikariCP | <td className="versiontdbgcolor"> 6.0.0 -> 6.2.1 </td>  |
+| Database Connection Pooling | HikariCP | 6.2.1  |
 |  | Commons Lang3 | 3.17.0  |
-|  | Guava | <td className="versiontdbgcolor"> 33.3.1-jre -> 33.4.0-jre </td> |
+|  | Guava | 33.4.0-jre |
 |  | Postgresql Driver  | 42.7.4  |
-|  | Hibernate Validator | <td className="versiontdbgcolor"> 8.0.1.Final -> 8.0.2.Final </td> |
-|  | Jgit | <td className="versiontdbgcolor"> 7.0.0.202409031743-r -> 7.1.0.202411261347-r </td>|
-|  | Commons Codec | <td className="versiontdbgcolor"> 1.17.1 -> 1.17.2 </td> |
-|  | Commons IO | <td className="versiontdbgcolor"> 2.17.0 -> 2.18.0 </td> |
-|  | Commons Text | <td className="versiontdbgcolor"> 1.12.0 -> 1.13.0 </td> |
-|  | Antisamy | <td className="versiontdbgcolor"> 1.7.6 -> 1.7.7 </td> |
-|  | Freemarker | <td className="versiontdbgcolor"> 2.3.33 -> 2.3.34 </td> |
-|  | Apache Tika | <td className="versiontdbgcolor"> 2.9.2 -> 3.0.0 </td> |
-|  | Mariadb JDBC Driver | <td className="versiontdbgcolor"> 3.4.1 -> 3.5.1 </td> |
+|  | Hibernate Validator | 8.0.2.Final |
+|  | Jgit | 7.1.0.202411261347-r |
+|  | Commons Codec | 1.17.2 |
+|  | Commons IO | 2.18.0 |
+|  | Commons Text | 1.13.0 |
+|  | Antisamy | 1.7.7 |
+|  | Freemarker | 2.3.34 |
+|  | Apache Tika | 3.0.0 |
+|  | Mariadb JDBC Driver | 3.5.1 |
+|  | Mongodb Driver | <td className="versiontdbgcolor"> 5.3.0 -> 5.3.1 </td> |
 
 ### Runtime Environment
 
@@ -235,13 +237,13 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |Description|	Version|
 |---|---|
 |Java | 17/21 |
-|Node|18.16.1|
+|Node| 18.16.1 |
 |Maven| 3.9.9 |
-|npm | 9.5.1|
+|npm | 9.5.1 |
 |Ant| 1.10.11|
 | Android Studio | Ladybug 2024.2.1 |
 | SDK Build Tools | 34.0.0|
-| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.5 -> 1.8.6 </td> |
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | 1.8.6 |
 | Android Gradle Plugin (AGP) | 8.3 - 8.7 |
 
 :::note
@@ -254,18 +256,19 @@ Please ensure that your [Android Studio](https://developer.android.com/studio/re
 
 |Description|	Version|
 |---|---|
-| Expo | <td className="versiontdbgcolor"> 50.0.17 -> 52.0.0 </td> |
-| React Native | <td className="versiontdbgcolor"> 0.73.6 -> 0.76 </td> |
+| Expo | 52.0.0 |
+| React Native | 0.76 |
 
 ### Angular Web and React Native Mobile
 
 |Description|	Version|
 |---|---|
 |Java | 17/21 |
-|Node| <td className="versiontdbgcolor"> 18.16.1 -> 22.11.0 </td> |
+|Node| 22.11.0 |
 |Maven| 3.9.9 |
-|npm | <td className="versiontdbgcolor"> 9.5.1 -> 10.9.0 </td> |
+|npm | 10.9.0 |
 |Ant| 1.10.11|
+
 
 :::note
 The Node upgrade applies only to Web applications, while React Native applications will continue using Node version 18.
