@@ -1,5 +1,5 @@
 ---
-title: "The Future of UI Design: Converting WaveMaker Prefabs into WebComponents"
+title: "From Prefabs to Web Components: A Modern Approach to Reusable UI"
 author: "Naresh Ravulapalli"
 ---
 ---
