@@ -105,6 +105,9 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
 To upgrade 11.8.0 or higer version, you must open the port **8094** on the Platform Instance.
 :::
 
+:::note
+To upgrade 11.10.1 or higer version, you must open the port **8079** on the Platform Instance.
+:::
 
 ### WME StudioWorkspace Instance and AppDeployment Instance
 
