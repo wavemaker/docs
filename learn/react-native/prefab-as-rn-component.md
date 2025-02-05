@@ -1,6 +1,7 @@
 ---
 title: "Reuse React Native Components Across Any App with WaveMaker"
-author: "Raaj Vamsy Rayavarapu"
+id: "prefab-as-react-native-component"
+sidebar_label: "Prefab as RN Component"
 ---
 ---
 
@@ -28,8 +29,4 @@ The process is straightforward and involves two main steps: setting up the Prefa
    npm install <prefab-name>
    ```
 6. **Import and Use the Prefab**: Add the Prefab to your React Native or Expo application like any other React Native component.
-
-## Final Thoughts
-
-WaveMaker’s Prefabs make it incredibly easy to create and reuse React Native components across different projects. By following this process, you can save time, maintain consistency, and streamline your development workflow. Whether you're building a single app or working on multiple projects, Prefabs are a smart way to scale your development efforts effortlessly.
 
