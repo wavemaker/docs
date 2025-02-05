@@ -385,8 +385,8 @@ WavePulse is a debugging tool designed specifically for apps built using WaveMak
   - Styles have a dropdown which can be used to select class for specific part of a widget to see classes applied on that part.
 - Network Panel shows all network calls made by the application. You can click on any request to se its details like "Header", "Response" etc. You can also fiter request by selecting types to show on upper right corner button.
 - Timeline Panel shows recorded time intervals for various events like page load, network calls, service variables etc. You can also use filters to filter specific types of events or time interval.
-- Storage Panel will app's local storage. To see latest data, you can use refresh button on upper right corner.
-- Info Panel will show metadata related to app, you can use refresh button on upper right corner.
+- Storage Panel shows app's local storage. To see latest data, you can use refresh button on upper right corner.
+- Info Panel shows metadata related to app, you can use refresh button on upper right corner.
 - To export current debugging session you can click om export button on the bottom right corner of the WavePulse.
 
 <div style={{ position: "relative", paddingBottom: "56.25%" }}>
