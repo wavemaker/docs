@@ -95,7 +95,7 @@ Page.addClick = function($event, widget) {
     Page.Widgets.count.caption = parseInt(Page.Widgets.count.caption) + 1;
 };
 Page.button4Click = function($event, widget) {
-    window.postMessage("Post message from web count is:" + Page.Widgets.count.caption, "*")
+    window.ReactNativeWebView.postMessage(`Post message from web count is: ${Page.Widgets.count.caption}*`);
 };
 ```
 
@@ -138,7 +138,7 @@ Page.onReady = function() {};
 Page.webview1Load = function($event, widget) {};
 Page.button1Tap = function($event, widget) {
     Page.Widgets.webview1.executeScript(`function() {
-        return document.querySelector('label[name="count"]').innerHTML; 
+        return document.querySelector('p[name="count"]').textContent;
     }()`).then(function(result) {
         Page.Widgets.labelCountValue.caption = result;
         Page.refresh();
