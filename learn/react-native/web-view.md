@@ -95,7 +95,7 @@ Page.addClick = function($event, widget) {
     Page.Widgets.count.caption = parseInt(Page.Widgets.count.caption) + 1;
 };
 Page.button4Click = function($event, widget) {
-    window.ReactNativeWebView.postMessage(`Post message from web count is: ${Page.Widgets.count.caption}*`);
+    window.ReactNativeWebView && window.ReactNativeWebView.postMessage(`Post message from web count is: ${Page.Widgets.count.caption}*`);
 };
 ```
 
@@ -106,7 +106,7 @@ Page.button4Click = function($event, widget) {
 <wm-page name="mainpage">
     <wm-content name="content1">
         <wm-page-content columnwidth="12" name="page_content1" backgroundcolor="#717171">
-            <wm-webview name="webview1" webviewsrc="https://stage-studio.wavemakeronline.com/run-tlgl6v1wz7/ent1253c0349106/ServicesApp_master/#/Main" width="100%" height="300" on-load="webview1Load($event, widget)"></wm-webview>
+            <wm-webview name="webview1" webviewsrc="https://stage-studio.wavemakeronline.com/run-tlgl6v1wz7/ent1253c0349106/ServicesApp_master/#/Main" width="100%" height="300" on-load="webview1Load($event, widget)" on-message="webview1Message($event, widget)"></wm-webview>
             <wm-button class="btn-default" caption="update count" type="button" name="button1" width="100%" on-tap="button1Tap($event, widget)"></wm-button>
             <wm-linearlayout direction="row" spacing="4" padding="4px" name="linearlayout1">
                 <wm-linearlayoutitem name="linearlayoutitem1" flexgrow="7" horizontalalign="right">
@@ -161,17 +161,9 @@ Page.button2Tap = function($event, widget) {
     }
     Page.count = Page.count + 1;
 };
-Page.webview1Message = function(event, widget) {
-    var data = event.nativeEvent && event.nativeEvent.data;
+Page.webview1Message = function($event, widget) {
+    var data = $event.nativeEvent && $event.nativeEvent.data;
     Page.Widgets.labelMessage.caption = data.split(":").pop();
-};
-Page.button3Tap = function($event, widget) {
-    Page.Widgets.webview1.onMessage = Page.webview1Message
-    Page.Widgets.webview1.executeScript(`(function() {
-      window.postMessage = function(data) {
-        window.ReactNativeWebView.postMessage(data);
-      };
-    })()`);
 };
 ```
 
