@@ -12,9 +12,9 @@ Docker is a powerful tool for creating, deploying, and running applications in c
 
 One of the common pitfalls in Docker development is stacking too many layers in a single-stage Dockerfile. Every Dockerfile instruction (RUN, COPY, ADD, etc.) creates a new layer. If you are building software, installing dependencies, or doing any temporary tasks, these intermediate files can accumulate and bloat your Docker images.
 
-### Example - A Traditional Dockerfile with Multiple Layers
+## Example - A Traditional Dockerfile with Multiple Layers
 
-![Prefab Transformation](/learn/assets/prefab-transformation.png)
+![Docker Image Before Change](/learn/assets/docker-image-before.png)
 
 In the above Dockerfile:
 1. The **build dependencies** (like build-essential) are installed, and unnecessary files are left in the image, even though they are not required for running the application.
@@ -42,7 +42,7 @@ Let's rewrite the above example using a multi-stage Dockerfile approach.
 
 **Optimized Dockerfile Using Multi-Stage Build**
 
-![Prefab Transformation](/learn/assets/prefab-transformation.png)
+![Docker Image After Change](/learn/assets/docker-image-after.png)
 
 ## Advantages of Multi-Stage Builds
 
@@ -61,6 +61,7 @@ Let's rewrite the above example using a multi-stage Dockerfile approach.
 - Multi-stage builds allow you to cache the builder stage, speeding up subsequent builds when source code changes but dependencies remain the same.
 
 ## A Step-by-Step Comparison of Image Sizes
+
 Let's compare the image sizes between a multi-layer Dockerfile and a multi-stage Dockerfile.
 
 1. **Traditional Multi-Layer Dockerfile**: The traditional approach installs dependencies, builds the application, and then removes the build tools. However, even with cleanup steps, the image retains unnecessary layers. This approach might result in an image that is 500 MB or more.
