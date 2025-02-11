@@ -51,7 +51,7 @@ npm install
 #### ng-serve support
 `ng serve` is not supported yet. We plan to enable it in an upcoming release. For now, build the project to run and debug it.
 
-## Editing & Customizing Angular Components
+## Editing & Customizing Generated Angular Code
 
 WaveMaker creates a standard Maven-compliant project, enabling developers to manage and extend the codebase independently. To modify the code without WaveMaker Studio, developers must grasp the project’s file structure. UI-related adjustments for a web application primarily occur within the `src/app/pages/` folder, where each page functions as a component containing its associated files.
 
