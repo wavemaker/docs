@@ -21,7 +21,7 @@ sidebar_label: "Run Patch"
       sudo tar xvf wme_migrations.tar -C /usr/local/content/wme/wme-installer/<version>/resources/
   ```
 
-- In order to upgrade WME to **11.8.x** version from previous versions, it is mandatory to [Passivate Containers](https://docs.wavemaker.com/learn/on-premise/upgrade/passivate-containers) in StudioWorkspaceInstance and AppDeploymentInstance.
+- In order to upgrade WME to **11.8.x** and **11.10.x** versions from previous versions, it is mandatory to [Passivate Containers](https://docs.wavemaker.com/learn/on-premise/upgrade/passivate-containers) in StudioWorkspaceInstance and AppDeploymentInstance.
 
   - Run the below mentioned script to check all the containers are passivated or not on StudioWorkspaceInstance and AppDeploymentInstance.
 

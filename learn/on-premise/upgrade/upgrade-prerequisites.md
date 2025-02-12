@@ -93,7 +93,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
           <li>Static IP with valid DNS</li>
           <li>Ports 80, 443, 8080, 22(for ssh) to developer network range</li>
           <li>Ports to be opened on Platform Instance for Access from StudioWorkspace Instance / AppDeployment Instance </li>
-              <li>Ports : 5000, 8500, 22, 8081, 2200, 8100, 9200, 8000-8020, <strong>8094</strong></li>
+              <li>Ports : 5000, 8500, 22, 8081, 2200, 8100, 9200, 8000-8020, <strong>8094</strong>,<strong>8079</strong></li>
             </ul>
       </td>
     </tr>
@@ -105,6 +105,9 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
 To upgrade 11.8.0 or higer version, you must open the port **8094** on the Platform Instance.
 :::
 
+:::note
+To upgrade 11.10.1 or higer version, you must open the port **8079** on the Platform Instance.
+:::
 
 ### WME StudioWorkspace Instance and AppDeployment Instance
 
