@@ -21,6 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
+|[WaveMaker 11.10.2](/learn/wavemaker-release-notes/v11-10-2) <p style={{color:"green"}}>*upcoming*</p> | WaveMaker's Release 11.10.2 will be introducing significant bug fixes across both Web and React Native platforms, enhancing user experience by improving performance and efficiency. | 17 February 2025 |
 |[WaveMaker 11.10.1](/learn/wavemaker-release-notes/v11-10-1) <p style={{color:"red"}}>*latest*</p> |  WaveMaker Release 11.10.1 is here with significant enhancements like Validations for OpenID Security Provider and Configurable Tap and Ripple Effect in React Native. This release also includes many major bug fixes from both Web and React Native platforms. |03 February 2025 |
 |[WaveMaker 11.10.0](/learn/wavemaker-release-notes/v11-10-0) |  WaveMaker Release 11.10 is packed with powerful new features, including the ability to generate Migration Reports and export Prefabs as Web Components. This update emphasizes a seamless development experience with key upgrades like Expo 52, Angular 18, and database driver upgrades. Additionally, it addresses several critical bug fixes across both Web and React Native platforms, ensuring improved performance. |27 January 2025 |
 |[WaveMaker 11.9.4](/learn/wavemaker-release-notes/v11-9-4) |  WaveMaker Release 11.9.4 is here with a transformed React Native Studio, now upgraded to the latest Angular version. This release also includes an enhancement to the Select widget dropdown, and various bug fixes. This release aims to significantly enhance the user experience by updating to the latest technology stack. |23 December 2024 |
@@ -210,12 +211,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere Liberty | 23.0.0.9+ |
 | JBoss Wildfly | 27+ |
 | Tomcat | 10.1.31 |
-| Cordova (mobile apps) <br/> Android <br/> iOS |12.0.0 <br/> 13.0.0 <br/> 17.5 |
-
-:::note
-- Cordova-iOS supports from iOS 16.
-- Cordova-Android supports from iOS Android 24 (Nougat).
-:::
+| Android <br/> iOS | 13.0.0 <br/> 17.5 |
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
