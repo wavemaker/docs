@@ -22,10 +22,10 @@ export default class Index extends React.Component {
     getFeatures() {
         let featureComponents = [];
         let features = [
-            { href: '/learn/react-native/wavepulse/', title: 'WavePulse', description: "WavePulse is a lightweight debugging tool tailored for Wavemaker Mobile apps. With minimal setup, you can seamlessly connect and inspect ..." },
-            { href: '/learn/app-development/core-implementation/core-and-implementation-projects/', title: 'Core Implementation', description: "Core projects act as a foundation with reusable code and components. Implementation projects extend this core functionality ..." },
+            { href: '/learn/react-native/wavepulse/', title: 'WavePulse', description: "WavePulse is a lightweight debugging tool tailored for Wavemaker Mobile apps..." },
+            { href: '/learn/app-development/core-implementation/core-and-implementation-projects/', title: 'Core Implementation', description: "Core projects act as a foundation with reusable code and components..." },
             { href: '/learn/react-native/react-native-overview/', title: 'New React Native Studio', description: "React Native is a cross-platform framework for developing native mobile applications..." },
-            { href: '/learn/app-development/custom-widgets/enterprise-marketplace/', title: 'Prefab MarketPlace', description: "Enterprise marketplace allows artifacts to be published by teams to be used across multiple teams..." }]
+            { href: '/learn/app-development/custom-widgets/enterprise-marketplace/', title: 'Prefab MarketPlace', description: "Enterprise marketplace allows artifacts to be published by teams to be..." }]
         features.forEach((feature) => {
             featureComponents.push(
                 <div className='col' key={features.indexOf(feature)}>
