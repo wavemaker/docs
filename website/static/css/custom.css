@@ -813,6 +813,21 @@ html[data-theme="dark"] .extension .link img{
     padding: var(--wm-spacing-md) 4em;
 }
 
+#feature-section .col:nth-child(1):hover {
+    box-shadow: 24px 24px 30px 0px rgba(0, 0, 0, 0.05);
+  }
+  
+  #feature-section .col:nth-child(2):hover {
+    box-shadow: -24px 24px 30px 0px rgba(0, 0, 0, 0.05);
+  }
+  
+  #feature-section .col:nth-child(3):hover {
+    box-shadow: 24px -24px 30px 0px rgba(0, 0, 0, 0.05);
+  }
+  
+  #feature-section .col:nth-child(4):hover {
+    box-shadow: -24px -24px 30px 0px rgba(0, 0, 0, 0.05);
+  }
 
 .imagebox-img {
     display: block;
@@ -1866,6 +1881,10 @@ h2.widget-header{
 @media only screen and (max-width: 736px) {
     #feature-section {
         scroll-margin-top: 60px;
+        margin: 2rem;
+    }
+    #feature-section .col:hover {
+        box-shadow: 6px 8px 40px 0px rgba(119, 119, 119, 0.05) !important;
     }
 }
 
