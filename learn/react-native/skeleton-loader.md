@@ -5,10 +5,11 @@ sidebar_label: "Skeleton Loader"
 ---
 ---
 
-import PageLevelSkeletonLoader from '/learn/assets/react-native/page-level-customisation.gif';
-import WidgetLevelSkeletonLoader from '/learn/assets/react-native/widget-level-customisation.gif';
-import ClassLevelSkeletonLoader from '/learn/assets/react-native/class-level-customisation.gif';
-
+import PageLevelSkeletonLoaderCustomization from '/learn/assets/react-native/skeletonLoader/pageLevelSkeletonLoaderCustomization.gif';
+import WidgetLevelSkeletonLoaderCustomization from '/learn/assets/react-native/skeletonLoader/widgetLevelSkeletonLoaderCustomization.gif';
+import ClassLevelSkeletonLoaderCustomization from '/learn/assets/react-native/skeletonLoader/classLevelSkeletonLoaderCustomization.gif';
+import skeletonLoaderExample from '/learn/assets/react-native/skeletonLoader/skeletonLoaderExample.gif';
+import exampleApp from '/learn/assets/react-native/skeletonLoader/exampleApp.png';
 
 A Skeleton is an animated placeholder that mimics the structure of the content, content can be widgets of the page that will load when an API call is triggered. It creates an animation of the page structure, such as blocks, images, text, and other UI elements. This enables a seamless transition between the page and data, preparing users to get an idea of the page format in advance.
 
@@ -17,7 +18,10 @@ A Skeleton is an animated placeholder that mimics the structure of the content, 
 
 When scrolling through any social media platform, you might notice gray bars in place of text, or blank squares where images will load. As the content is fetched, these placeholders are smoothly replaced with the actual content.
 
-![Skeleton Loader Example](/learn/assets/skeleton-loader-example.gif)
+<div class="text--center">
+<img src={skeletonLoaderExample} style={{width:300,margin:5}} />
+<img src={exampleApp} style={{width:300,margin:5}} />
+</div>
 
 ### Key Features
 
@@ -32,7 +36,8 @@ There are two conditions to apply Skeleton Loader
 
 1. Applying to supported widgets: This is the default behaviour and it requires customization for further beautification.
 
-<details><summary>List of Widgets to which the Skeleton Loader can be applied</summary>
+<details>
+<summary>List of Widgets to which the Skeleton Loader can be applied</summary>
 
 Below is the list of widgets that can be directly applied with the Skeleton Loader.
 
@@ -161,28 +166,33 @@ During Skeleton customization, Skeleton Loader is categorized into three classes
 2. `skeleton-gradient-foreground`: It is to provide the shadow effect to the Skeleton.
 3. `skeleton-gradient`: It is the center part that shows the shimmer or moving effect in the Skeleton Loader.
 
+<div class="text--center">
+
 ![Skeleton-Loader-Gradient](/learn/assets/skeleton.png)
+
+</div>
 
 ### Apply Style to Page
 
 In the following example, you can customise background color and other properties in the page.
 
 ```css
-.app-skeleton{
-    background-color: #292753;
+.app-skeleton {
+    background-color: #9599E2;
     opacity: 1;
 }
-.app-skeleton-gradient{
+.app-skeleton-gradient-foreground {
+    background-color: #8BC6EC;
+    margin-top: 10px;
+}
+.app-skeleton-gradient {
     background-color: #ffffff;
     opacity: 1;
 }
-.app-skeleton-gradient-foreground{
-    background-color: #292753;
-}
 ```
 
-<div style={{flex:1}}>
-<img src={PageLevelSkeletonLoader} style={{ width:300, height:500}}/>
+<div class="text--center">
+<img src={PageLevelSkeletonLoaderCustomization} style={{width:300}}/>
 </div>
 
 
@@ -191,21 +201,22 @@ In the following example, you can customise background color and other propertie
 Using the following example, you can customise background color, border width of Skeleton and other properties for a specific widget in the page.
 
 ```css
-.app-label-skeleton .app-skeleton {
-    background-color: green;
+.app-picture-skeleton .app-skeleton {
+    background-color: #9599E2;
+    opacity: 1;
 }
-
-.app-label-skeleton .app-skeleton-gradient {
-    background-color: yellow;
+.app-picture-skeleton .app-skeleton-gradient-foreground {
+    background-color: #8BC6EC;
+    margin-top: 10px;
 }
-
-.app-label-skeleton .app-skeleton-gradient-foreground {
-    background-color: white;
+.app-picture-skeleton .app-skeleton-gradient {
+    background-color: #ffffff;
+    opacity: 1;
 }
 ```
 
-<div style={{flex:1}}>
-<img src={WidgetLevelSkeletonLoader} style={{ width:300, height:500}}/>
+<div class="text--center">
+<img src={WidgetLevelSkeletonLoaderCustomization} style={{width:300}}/>
 </div>
 
 ### Apply Style to Class
@@ -213,21 +224,22 @@ Using the following example, you can customise background color, border width of
 Using the following example, you can customise background color, border width of Skeleton, and other properties for a specific class inside a widget in the page.
 
 ```css
-className: some-class
-.some-class .app-label-skeleton .app-skeleton {
-    background-color: green;
+target-className: logo-image
+.logo-image .app-picture-skeleton .app-skeleton {
+    background-color: #9599E2;
+    opacity: 1;
 }
-
-.some-class .app-label-skeleton .app-skeleton-gradient {
-    background-color: yellow;
+.logo-image .app-picture-skeleton .app-skeleton-gradient-foreground {
+    background-color: #8BC6EC;
+    margin-top: 10px;
 }
-
-.some-class .app-label-skeleton .app-skeleton-gradient-foreground {
-    background-color: white;
+.logo-image .app-picture-skeleton .app-skeleton-gradient {
+    background-color: #ffffff;
+    opacity: 1;
 }
 ```
-<div style={{flex:1}}>
-<img src={ClassLevelSkeletonLoader} style={{ width:300, height:500}}/>
+<div class="text--center">
+<img src={ClassLevelSkeletonLoaderCustomization} style={{width:300}}/>
 </div>
 
 ## Using Lottie Animations
