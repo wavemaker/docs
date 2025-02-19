@@ -778,9 +778,10 @@ html[data-theme="dark"] .extension .link img{
 .feature-card:focus {
     color: var(--wm-card-text-hover);
     text-decoration: none;
-    .link {
-        color: var(--ifm-link-color);
-    }
+}
+.feature-card:hover .link,
+.feature-card:focus .link {
+    color: var(--ifm-link-color);
 }
 .features-section .row {
     flex-direction: row;
