@@ -21,8 +21,14 @@ Note: If the custom js module is already availiable in NPM or Git, and it is not
 
 A custom JS module can be created for Web and Native applications or it can be platform independent. When creating platform specific custom JS modules, user can either
 
-- Upload a single Custom JS module and import platform specific file in the application.
-- Upload two platform specific JS modules and import using same file name. In this case, studio automatically fetches the relevant module.
+- [Uploading Custom JS Module](#uploading-custom-js-module)
+  - [Uploading Single Custom JS module](#uploading-single-custom-js-module)
+  - [Importing Platform Specific Custom JS Modules](#importing-platform-specific-custom-js-modules)
+- [Uploading Platform Specific Custom JS Modules](#uploading-platform-specific-custom-js-modules)
+  - [Why to Upload Platform Specific JS Module](#why-to-upload-platform-specific-js-module)
+  - [How to upload for web](#how-to-upload-for-web)
+  - [How to upload for Mobile](#how-to-upload-for-mobile)
+- [How to Import in Application](#how-to-import-in-application)
 
 ### Uploading Single Custom JS module
 
@@ -72,8 +78,6 @@ The Custom JS module with web logic can be uploaded in the resources folder of t
 2. In Import Resource dialog, click **Upload Files** to upload the custom JavaScript library.
 3. Upload **customScript.web.js** library that has the web logic.
 
-
-
 ### How to upload for Mobile
 
 Similar to uploading Web logic, the custom JS module with native logic can be uploaded in the resources folder of the application.
@@ -86,6 +90,7 @@ Similar to uploading Web logic, the custom JS module with native logic can be up
 
 Two files, **customScript.web.js** for web and **customScript.native.js** for React Native, are uploaded to the application's resources folder. To use custom JS files in any application, import them using the following code in the **app.js** file.
 
+
 ```JavaScript
 require('./assets/resources/files/customScript.js');
 ```
@@ -95,10 +100,6 @@ require('./assets/resources/files/customScript.js');
 :::note
 Studio automatically picks up the platform specific custom js file to be used in the application.
 :::
-
-## Usecase
-
-When using a third party library in an application, we upload separate custom JS logic for both Web and Native to prohibit preview failure or code breakage. In the below example, you can understand how to take a screenshot using third party library in web and native platforms.
 
 
 
