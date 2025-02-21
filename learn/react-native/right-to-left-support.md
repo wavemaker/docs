@@ -6,8 +6,8 @@ sidebar_label: "Right to Left Support"
 
 ---
 
-import basespinner-ltr from '/learn/assets/react-native/basespinner-ltr.png';
-import basespinner-rtl from '/learn/assets/react-native/basespinner-rtl.png';
+import basespinnerltr from '/learn/assets/react-native/basespinner-ltr.png';
+import basespinnerrtl from '/learn/assets/react-native/basespinner-rtl.png';
 
 Right-to-left (RTL) UI support refers to designing and developing user interfaces that accommodate languages read from right to left, such as Arabic, Hebrew, and Persian. Implementing RTL support involves mirroring the layout and aligning text and other components to ensure a natural and intuitive experience for users of RTL languages.
 
@@ -16,8 +16,8 @@ Right-to-left (RTL) UI support refers to designing and developing user interface
 Most of the languages follow Left to Right (LTR) format and therefore the most of the applications by default come with LTR layout. But for RTL languages the application's UI layout along with other alignments need to be changed for RTL users. 
 
 <div>
-<img src={basespinner-ltr} style={{width:300,margin:5}} />
-<img src={basespinner-rtl} style={{width:300,margin:5}} />
+<img src={basespinnerltr} style={{width:300,marginRight:10}} />
+<img src={basespinnerrtl} style={{width:300}} />
 </div>
 
 
@@ -37,7 +37,7 @@ In studio, RTL can be enabled in any application using two ways.
 
 To implement language selection in your application, you can use the Select Locale widget to choose preferred language. You can drag and drop the Select locale widget on the canvas. Once previewed, you can select the required language from the Select locale drop down.
 
-The RTL language binding is an automated process, but you need to ensure that the language is added in the Localised Messages. To know how to add the language, see [Localization Using Select Locale](/learn/app-development/widgets/form-widgets/select-locale-usage).
+The RTL language binding is an automated process, but you need to ensure that the language is added in the Localised Messages. To know how to add the language, see [Localization Using Select Locale](/learn/app-development/widgets/form-widgets/select-locale-usage#step-1-app-messages).
 
 ### Selecting Default Language in General Settings
 
