@@ -4,9 +4,31 @@ sidebar_label: "Custom JS Modules"
 id: "custom-js-modules"
 ---
 
-A JavaScript module can be created on any platform and integrated in WaveMaker application to be reused anywhere. In this document, we understand why and how to upload and use different custom JS logic for web and mobile applications.
+A JavaScript module can be created on any platform and integrated in WaveMaker application to be reused anywhere. This feature enables users to enhance the application functionality by allowing integration of specialized libraries or custom scripts, facilitating the creation of unique user interfaces, implementing complex business logic, or incorporating third-party services.
 
-## Why to upload it separately
+Uploading custom JS modules locally comes with below pros.
+
+### Benefits
+
+- You can upload platform specific custom JS module.
+- Local modules can be uploaded to use in the project.
+- As it doesnt require to upload in cloud, confidentiality is maintained. 
+
+
+Note: If the custom js module is already availiable in NPM or Git, and it is not dependent on the platform then go to (mayank sent the link).
+
+## Uploading Custom JS Module
+
+A custom JS module can be created for Web and Native applications or it can be platform independent. When creating platform specific custom JS modules, user can either
+
+- Upload a single Custom JS module and import platform specific file in the application.
+- Upload two platform specific JS modules and import using same file name. In this case, studio automatically fetches the relevant module.
+
+### Uploading Single Custom JS module
+
+When uploading single JS module which has platform specific code, you can import Web and Native specific code separately in the application. To upload the single custom JS module, 
+
+1. Navigate to File Explorer, go to resources.
 2. Click `+` icon to upload the custom module.
 3. In Project tab, navigate to the following path: `project/src/main/webapp/resources/files`
 4. Upload the custom module.
