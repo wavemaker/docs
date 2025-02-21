@@ -1,183 +1,134 @@
 ---
-title: "Supporting Custom JS Libraries in React Native Apps"
+title: "Uploading Platform Specific Custom JS Modules"
 sidebar_label: "Custom JS Modules"
 id: "custom-js-modules"
 ---
 
-## Overview
+A JavaScript module can be created on any platform and integrated in WaveMaker application to be reused anywhere. This feature enables users to enhance the application functionality by allowing integration of specialized libraries or custom scripts, facilitating the creation of unique user interfaces, implementing complex business logic, or incorporating third-party services.
 
-This documentation provides guidance on how to support custom JavaScript (JS) libraries in React Native apps. These libraries are not published to npm or GitHub, but are owned by customers who wish to use them in their React Native applications. By following the steps outlined in this document, developers can enable support for these custom JS libraries and seamlessly integrate them into React Native projects.
+Uploading custom JS modules locally comes with below pros.
 
-## Adding Custom JS Libraries
+### Benefits
 
-1. Add the Custom JS Library to the resources folder, In the example shown below `customScript.js` a javascript library is added to resources folder
+- You can upload platform specific custom JS module.
+- Local modules can be uploaded to use in the project.
+- As it doesnt require to upload in cloud, confidentiality is maintained. 
 
-![Custom JS Resources Uploaded](/learn/assets/custom-script-fileupload.png)
 
-```javascript
-// customScript.js
+Note: If the custom js module is already availiable in NPM or Git, and it is not dependent on the platform then go to (mayank sent the link).
 
-// Function to add two numbers
-function add(a, b) {
-    return a + b;
-}
+## Uploading Custom JS Module
 
-// Function to subtract two numbers
-function subtract(a, b) {
-    return a - b;
-}
+A custom JS module can be created for Web and Native applications or it can be platform independent. When creating platform specific custom JS modules, user can either
 
-// Function to multiply two numbers
-function multiply(a, b) {
-    return a * b;
-}
+- Upload a single Custom JS module and import platform specific file in the application.
+- Upload two platform specific JS modules and import using same file name. In this case, studio automatically fetches the relevant module.
 
-// Function to find the modulus of two numbers
-function modulus(a, b) {
-    return a % b;
-}
+### Uploading Single Custom JS module
 
-// Exporting the functions as an object
-module.exports = {
-    add,
-    subtract,
-    multiply,
-    modulus,
-};
-```
+When uploading single JS module which has platform specific code, you can import Web and Native specific code separately in the application. To upload the single custom JS module, 
 
-2. Import the Js file to the App or to a Page by using the following command
+1. Navigate to File Explorer, go to resources.
+2. Click `+` icon to upload the custom module.
+3. In Project tab, navigate to the following path: `project/src/main/webapp/resources/files`
+4. Upload the custom module.
 
-```
+Example: Uploading the custom JS module with name `customScript.js`.
+
+:::note
+Ensure the path where the custom module is uploaded is same as the mentioned one.
+:::
+
+### Importing Platform Specific Custom JS Modules
+
+Once uploaded, import the platform specific files using the following steps.
+
+- In an application, go to **app.js** file.
+- Import the platform specific custom JS file using the below commands.
+  - **For Web**: `require('./assets/resources/files/customScript.web.js');`
+  - **For Native**: `require('./assets/resources/files/customScript.native.js');`
+
+
+## Uploading Platform Specific Custom JS Modules
+
+A custom JS module can be created and uploaded separately for Web and Native platforms.
+
+### Why to Upload Platform Specific JS Module
+
+- **Different Execution Environments**: 
+  - Web Logic Runs in a browser-based environment, relying on standard web technologies like HTML, CSS, and JavaScript, as well as browser APIs.
+  - Native Logic executes in a mobile-specific environment, where JavaScript interacts with native modules through React Native and must use React Native-specific APIs.
+- **Platform-specific APIs**:
+  - Web Logic uses browser-based APIs like document, window, or DOM methods, which are not available in the React Native environment.
+  - Native Logic relies on React Native-specific features like NativeModules, or StyleSheet, which are not applicable for Web applications.
+- **Code Optimization and platform flexibility**: 
+  - Keeping platform-specific logic separate ensures the application loads only the relevant code for the target environment. This improves application performance.
+
+### How to upload for web
+
+The Custom JS module with web logic can be uploaded in the resources folder of the application in studio.
+
+1. Go to File Explorer and click **'+'** to add resources.
+2. In Import Resource dialog, click **Upload Files** to upload the custom JavaScript library.
+3. Upload **customScript.web.js** library that has the web logic.
+
+
+
+### How to upload for Mobile
+
+Similar to uploading Web logic, the custom JS module with native logic can be uploaded in the resources folder of the application.
+
+1. Go to File Explorer and click **'+'** to add resources.
+2. In Import Resource dialog, click **Upload Files** to upload the custom JavaScript library.
+3. Upload **customScript.native.js** library that has the native logic.
+
+## How to Import in Application
+
+Two files, **customScript.web.js** for web and **customScript.native.js** for React Native, are uploaded to the application's resources folder. To use custom JS files in any application, import them using the following code in the **app.js** file.
+
+```JavaScript
 require('./assets/resources/files/customScript.js');
 ```
 
-Likewise, we can import platform-specific files to ensure the custom module runs on a certain platform only
-
-```
-require('./assets/resources/files/customScript.native.js');
-require('./assets/resources/files/customScript.web.js');
-```
+![Importing Custom JS File](/learn/assets/importing-custom-js-file.png)
 
 :::note
-`./assets/` should be added before resources in the import path
+Studio automatically picks up the platform specific custom js file to be used in the application.
 :::
 
-### App.js
+## Usecase
 
-As shown below, We are adding the code to `App.js`
+When using a third party library in an application, we upload separate custom JS logic for both Web and Native to prohibit preview failure or code breakage. In the below example, you can understand how to take a screenshot using third party library in web and native platforms.
 
-![Custom JS App.js](/learn/assets/custom-script-file.png)
 
-![Custom JS App.js Code](/learn/assets/custom-script-app.png)
 
-```javascript
-App.customModule = function() {
-    return require('./assets/resources/files/customScript.js');
-}
-```
 
-We can import `.native.js` or `.web.js` files, using the script provided above.
 
-### Page Markup
 
-```html
-<wm-page name="mainpage">
-    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
-    <wm-mobile-navbar name="mobile_navbar1" title="Main" backbutton="false">
-        <wm-anchor caption="" name="AddLink" iconclass="wi wi-gear"></wm-anchor>
-    </wm-mobile-navbar>
-    <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1">
-            <wm-layoutgrid name="layoutgrid2">
-                <wm-gridrow name="gridrow2_1">
-                    <wm-gridcolumn columnwidth="3" name="gridcolumn11" xscolumnwidth="3"></wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="3" name="gridcolumn3_1" xscolumnwidth="3" horizontalalign="center">
-                        <wm-composite name="composite2" margin="unset unset 20px unset">
-                            <wm-container class="col-md-9" name="container2">
-                                <wm-number textalign="right" name="number1" width="70px" placeholder="bind:&quot; &quot;" required="false"></wm-number>
-                            </wm-container>
-                        </wm-composite>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="3" name="gridcolumn5" xscolumnwidth="3" horizontalalign="center">
-                        <wm-composite name="composite3" margin="unset unset 20px unset">
-                            <wm-container class="col-md-9" name="container3">
-                                <wm-number textalign="right" name="number2" width="70px" placeholder="bind:&quot; &quot;"></wm-number>
-                            </wm-container>
-                        </wm-composite>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="3" name="gridcolumn12" xscolumnwidth="3"></wm-gridcolumn>
-                </wm-gridrow>
-                <wm-gridrow name="gridrow2">
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn3" xscolumnwidth="2" horizontalalign="center">
-                        <wm-button class="btn-default" caption="" type="button" name="button1" on-tap="button1Tap($event, widget)" iconclass="wi wi-plus"></wm-button>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn8" horizontalalign="center" xscolumnwidth="2">
-                        <wm-button class="btn-default" caption="" type="button" on-tap="button2Tap($event, widget)" iconclass="wm-sl-r sl-subtract" name="button2"></wm-button>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn4" xscolumnwidth="2" horizontalalign="center">
-                        <wm-button class="btn-default" caption="" type="button" on-tap="button3Tap($event, widget)" iconclass="wi wi-close" name="button3"></wm-button>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn6" horizontalalign="center" xscolumnwidth="2">
-                        <wm-button class="btn-default" caption="" type="button" on-tap="button4Tap($event, widget)" iconclass="wm-sl-r sl-discount" name="button4" margin="unset unset 20px unset"></wm-button>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn7" xscolumnwidth="2"></wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn9" xscolumnwidth="2">
-                        <wm-button class="btn-default" caption="AC" type="button" on-tap="button5Tap($event, widget)" iconclass="" name="button5"></wm-button>
-                    </wm-gridcolumn>
-                </wm-gridrow>
-                <wm-gridrow name="gridrow3">
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn9_1" xscolumnwidth="6" horizontalalign="right">
-                        <wm-label padding="unset" name="label1" caption="Output:" class="h4"></wm-label>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn10" xscolumnwidth="6">
-                        <wm-label padding="unset" name="labelOutput" class="h4" caption=""></wm-label>
-                    </wm-gridcolumn>
-                </wm-gridrow>
-            </wm-layoutgrid>
-        </wm-page-content>
-    </wm-content>
-    <wm-mobile-tabbar name="mobile_tabbar1" dataset="bind:Variables.staticTabBar.dataSet" itemicon="icon" itemlink="link" morebuttoniconclass="wi wi-date-range fa-2x"></wm-mobile-tabbar>
-</wm-page>
-```
 
-### Page Script
 
-```javascript
-const jsmodule = Page.App.customModule();
 
-Page.onReady = function() {};
-Page.button1Tap = function($event, widget) {
-    Page.Widgets.labelOutput.caption = jsmodule.add(
-        Page.Widgets.number1.datavalue,
-        Page.Widgets.number2.datavalue
-    );
-};
-Page.button5Tap = function($event, widget) {
-    Page.Widgets.number1.datavalue = "";
-    Page.Widgets.number2.datavalue = "";
-    Page.Widgets.labelOutput.caption = "";
-};
-Page.button2Tap = function($event, widget) {
-    Page.Widgets.labelOutput.caption = jsmodule.subtract(
-        Page.Widgets.number1.datavalue,
-        Page.Widgets.number2.datavalue
-    );
-};
-Page.button3Tap = function($event, widget) {
-    Page.Widgets.labelOutput.caption = jsmodule.multiply(
-        Page.Widgets.number1.datavalue,
-        Page.Widgets.number2.datavalue
-    );
-};
-Page.button4Tap = function($event, widget) {
-    Page.Widgets.labelOutput.caption = jsmodule.modulus(
-        Page.Widgets.number1.datavalue,
-        Page.Widgets.number2.datavalue
-    );
-};
-```
 
-### Preview
 
-![Custom JS Preview](/learn/assets/customScript.gif)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
