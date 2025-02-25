@@ -15,20 +15,15 @@ Uploading custom JS modules locally comes with below pros.
 - As it doesnt require to upload in cloud, confidentiality is maintained. 
 
 
-Note: If the custom js module is already availiable in NPM or Git, and it is not dependent on the platform then go to (mayank sent the link).
+Note: If the custom JS module is already available in NPM or Git, and it is not dependent on the platform then go to (mayank sent the link).
 
 ## Uploading Custom JS Module
 
 A custom JS module can be created for Web and Native applications or it can be platform independent. When creating platform specific custom JS modules, user can either
 
-- [Uploading Custom JS Module](#uploading-custom-js-module)
-  - [Uploading Single Custom JS module](#uploading-single-custom-js-module)
-  - [Importing Platform Specific Custom JS Modules](#importing-platform-specific-custom-js-modules)
-- [Uploading Platform Specific Custom JS Modules](#uploading-platform-specific-custom-js-modules)
-  - [Why to Upload Platform Specific JS Module](#why-to-upload-platform-specific-js-module)
-  - [How to upload for web](#how-to-upload-for-web)
-  - [How to upload for Mobile](#how-to-upload-for-mobile)
-- [How to Import in Application](#how-to-import-in-application)
+- Uploading Single Custom JS module and importing platform specific custom js code.
+- Uploading Platform Specific Custom JS Modules and importing custom js module.
+
 
 ### Uploading Single Custom JS module
 
@@ -39,11 +34,13 @@ When uploading single JS module which has platform specific code, you can import
 3. In Project tab, navigate to the following path: `project/src/main/webapp/resources/files`
 4. Upload the custom module.
 
-Example: Uploading the custom JS module with name `customScript.js`.
+**Example**: Uploading the custom JS module with name `customScript.js`.
 
 :::note
 Ensure the path where the custom module is uploaded is same as the mentioned one.
 :::
+
+![](/learn/assets/single-js-module.png)
 
 ### Importing Platform Specific Custom JS Modules
 
@@ -54,6 +51,8 @@ Once uploaded, import the platform specific files using the following steps.
   - **For Web**: `require('./assets/resources/files/customScript.web.js');`
   - **For Native**: `require('./assets/resources/files/customScript.native.js');`
 
+
+![](/learn/assets/importing-single-custom-module.png)
 
 ## Uploading Platform Specific Custom JS Modules
 
@@ -78,6 +77,8 @@ The Custom JS module with web logic can be uploaded in the resources folder of t
 2. In Import Resource dialog, click **Upload Files** to upload the custom JavaScript library.
 3. Upload **customScript.web.js** library that has the web logic.
 
+![](/learn/assets/web-js-module.png)
+
 ### How to upload for Mobile
 
 Similar to uploading Web logic, the custom JS module with native logic can be uploaded in the resources folder of the application.
@@ -85,6 +86,8 @@ Similar to uploading Web logic, the custom JS module with native logic can be up
 1. Go to File Explorer and click **'+'** to add resources.
 2. In Import Resource dialog, click **Upload Files** to upload the custom JavaScript library.
 3. Upload **customScript.native.js** library that has the native logic.
+
+![](/learn/assets/native-js-module.png)
 
 ## How to Import in Application
 
