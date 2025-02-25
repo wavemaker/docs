@@ -1,5 +1,5 @@
 ---
-title: "Uploading Platform Specific Custom JS Modules"
+title: "Using Custom JS Libraries in React Native Applications"
 sidebar_label: "Custom JS Modules"
 id: "custom-js-modules"
 ---
