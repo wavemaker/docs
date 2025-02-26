@@ -41,8 +41,13 @@ The RTL language binding is an automated process, but you need to ensure that th
 
 ### Selecting Default Language in General Settings
 
+You can set the default language in the application using the Default Language field in the General settings page.
 
+:::note
+The language selected at the widget level will get priority over the General settings. 
+:::
 
+To know the steps to add a default language, see [Setting Language and Date Format](/learn/how-tos/setting-language-date-format/).
 
 
 

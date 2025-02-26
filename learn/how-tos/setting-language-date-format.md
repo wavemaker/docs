@@ -20,7 +20,7 @@ Ensure that the language selected as default is already added in Localization. T
 Similarly, you can set the date and time using the **Display Format** field.
 
 :::note
-The date/time format set at the widget level will get priority over the Project level setting. 
+The Language and date/time format selected at the widget level will get priority over the General setting. 
 :::
 
 ![Default Language Settings](/learn/assets/default-language-settings.png)
