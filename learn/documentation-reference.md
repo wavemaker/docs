@@ -6,6 +6,7 @@ sidebar_label: "Introduction"
 Introduction to WaveMaker. Find a complete developer's guide to build an app with Low-code approach.
 
 ---
+
 [WaveMaker](https://www.wavemaker.com/) is a low-code platform for developing modern and secured applications, including native mobile apps and scalable web apps. The Studio offers rich design experience with over [80 out-of-the-box widgets](/learn/app-development/widgets/widget-library), ready to consume APIs. Import or design APIs for Databases, REST services, Java services, and more. 
 
 WaveMaker lays down extensive developer tooling capabilities and integration services. You can customize complex solutions to simpler format, such as variables. Bind them to the user interface to function simply.
