@@ -152,7 +152,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.10.1](/learn/wavemaker-release-notes/v11-10-1)
+Last updated: [WaveMaker 11.10.3](/learn/wavemaker-release-notes/v11-10-3)
 
 ---
 
@@ -176,18 +176,18 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.1 -> 6.2.2 </td>|
+|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.2 -> 6.2.3 </td> |
 | Security framework | Spring Security | 6.4.2  |
-|  | Spring Data |  <td className="versiontdbgcolor"> 2024.1.1 -> 2024.1.2 </td>  |
-|  | Spring Boot |  <td className="versiontdbgcolor"> 3.4.1 -> 3.4.2 </td> |
+|  | Spring Data |  <td className="versiontdbgcolor"> 2024.1.2 -> 2024.1.3 </td> |
+|  | Spring Boot |   3.4.2 |
 |  | Spring Session | 3.4.1 |
-| Java JSON utilities | Gson  | 2.11.0 |
+| Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.11.0 -> 2.12.1 </td> |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
 | JSON library | Jackson |  2.18.2 |
 | Logging framework | SLF4j | 2.0.16 |
 | Logging Implementation | Log4j2 | 2.24.3 |
-| Http client library  | HttpComponents -  httpclient |  5.4.1|
+| Http client library  | HttpComponents -  httpclient |  <td className="versiontdbgcolor"> 5.4.1 -> 5.4.2 </td> |
 | Servlet Framework |  | 6.0.0 |
 | Database Connection Pooling | HikariCP | 6.2.1  |
 |  | Commons Lang3 | 3.17.0  |
@@ -195,14 +195,15 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Postgresql Driver  | 42.7.4  |
 |  | Hibernate Validator | 8.0.2.Final |
 |  | Jgit | 7.1.0.202411261347-r |
-|  | Commons Codec | 1.17.2 |
+|  | Commons Codec | <td className="versiontdbgcolor"> 1.17.2 -> 1.18.0 </td> |
 |  | Commons IO | 2.18.0 |
 |  | Commons Text | 1.13.0 |
 |  | Antisamy | 1.7.7 |
 |  | Freemarker | 2.3.34 |
-|  | Apache Tika | 3.0.0 |
-|  | Mariadb JDBC Driver | 3.5.1 |
-|  | Mongodb Driver | <td className="versiontdbgcolor"> 5.3.0 -> 5.3.1 </td> |
+|  | Apache Tika | <td className="versiontdbgcolor"> 3.0.0 -> 3.1.0 </td> |
+|  | Mariadb JDBC Driver | <td className="versiontdbgcolor"> 3.5.1 -> 3.5.2 </td> |
+|  | Mongodb Driver | 5.3.1 |
+|  | Jakarta Validation Api | <td className="versiontdbgcolor"> 3.1.0 -> 3.1.1 </td> |
 
 ### Runtime Environment
 
