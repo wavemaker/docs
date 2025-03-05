@@ -24,7 +24,7 @@ A custom JS module can be created for Web and Native applications or it can be p
 
 ### Uploading Custom JS module
 
-When uploading single JS module which has platform specific code, you can import Web and Native specific code separately in the application. To upload the single custom JS module, 
+You can upload a custom JS module by using the following steps. 
 
 1. Navigate to File Explorer, go to resources.
 2. Click `+` icon to upload the custom module.
@@ -38,10 +38,26 @@ Ensure the path where the custom module is uploaded is same as the mentioned one
 :::
 
 
-<iframe width="700px" height="400px" src="https://embed.app.guidde.com/playbooks/tXtEv6RDtJhz4dsgKDY8JE" title="Guide to upload custom js module " frameborder="0" allowfullscreen ></iframe>
+<div style={{ position: "relative", paddingBottom: "56.25%" }}>
+  <iframe
+    style={{
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      left: 0,
+      top: 0
+    }}
+    src="https://embed.app.guidde.com/playbooks/tXtEv6RDtJhz4dsgKDY8JE"
+    title="Guide to upload custom js module "
+    frameBorder={0}
+    referrerPolicy="unsafe-url"
+    allowFullScreen="true"
+    allow="clipboard-write"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+  />
+</div>
 
-
-### Importing Custom JS Modules
+### Importing Custom JS Module
 
 Once uploaded, import the custom JS module using the following steps.
 
@@ -64,7 +80,7 @@ A custom JS module can be created and uploaded separately for Web and Native pla
 
 ### How to Upload Platform Specific JS Modules
 
-The Custom JS module with web logic can be uploaded in the resources folder of the application in studio.
+You can upload an alternative custom JS module for Web to successfully run the Web preview in cases where the Native libraries might cause Web preview failure. To upload two custom JS module files for Web and Native platforms follow the below steps.
 
 1. Go to File Explorer and click **'+'** to add resources.
 2. In Import Resource dialog, click **Upload Files** to upload the custom JavaScript library.
@@ -72,7 +88,24 @@ The Custom JS module with web logic can be uploaded in the resources folder of t
    1. **For Web:** Upload **customScript.web.js** library that has the web logic.
    2. **For Native:** Upload **customScript.native.js** library that has the native logic.
 
-<iframe width="700px" height="400px" src="https://embed.app.guidde.com/playbooks/6qB7zewc5dDDBh7aKuB49z" title="Upload custom js module (platform specific)" frameborder="0" allowfullscreen ></iframe>
+<div style={{ position: "relative", paddingBottom: "56.25%" }}>
+  <iframe
+    style={{
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      left: 0,
+      top: 0
+    }}
+    src="https://embed.app.guidde.com/playbooks/6qB7zewc5dDDBh7aKuB49z"
+    title="Upload custom js module (platform specific)"
+    frameBorder={0}
+    referrerPolicy="unsafe-url"
+    allowFullScreen="true"
+    allow="clipboard-write"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+  />
+</div>
 
 ## How to Import in Application
 
@@ -91,4 +124,8 @@ require('./assets/resources/files/customScript');
 :::note
 While importing platform sepcific JS module, ensure not to use file extension `.js` in the `require` statement as shown above.
 :::
+
+### Use Case
+
+For instance, where you need to create an alternative Web custom JS module for Native JS module, go to [PDF Preview](/learn/react-native/pdf-preview-and-download/). With this document, you can create platform specific custom JS modules for PDF preview.
 
