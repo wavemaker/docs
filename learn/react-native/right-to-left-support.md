@@ -30,8 +30,8 @@ Most of the languages follow Left to Right (LTR) format and therefore the most o
 
 In studio, RTL can be enabled in any application using two ways.
 
-- Using Select Locale widget
-- Selecting Default Language in General Settings
+- Using Select Locale widget.
+- Selecting Default Language in General Settings.
 
 ### Using Select Locale Widget
 
