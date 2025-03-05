@@ -25,11 +25,11 @@ You can create a partial as a tooltip for a chart in your application. This appr
 
 ### Binding Partial to Chart
 
-- Navigate to the Script section of the page where the Chart widget is used.
-- To bind, use the following syntax to bind the partial to the chart as its tooltip.
+1. Navigate to the Script section of the page where the Chart widget is used.
+2. To bind, use the following syntax to bind the partial to the chart as its tooltip.
 
 ```javascript
 Page.Widgets.{chartname}.setTooltipTemplate({partialname});
 ```
 
-Replace {chartname} with the name of your Chart widget and {partialname} with the name of your Partial page.
+Replace `{chartname}` with the name of your Chart widget and `{partialname}` with the name of your Partial page.
