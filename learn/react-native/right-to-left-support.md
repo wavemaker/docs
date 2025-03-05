@@ -39,6 +39,25 @@ To implement language selection in your application, you can use the Select Loca
 
 The RTL language binding is an automated process, but you need to ensure that the language is added in the Localised Messages. To know how to add the language, see [Localization Using Select Locale](/learn/app-development/widgets/form-widgets/select-locale-usage#step-1-app-messages).
 
+<div style={{ position: "relative", paddingBottom: "56.25%" }}>
+  <iframe
+    style={{
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      left: 0,
+      top: 0
+    }}
+    src="https://embed.app.guidde.com/playbooks/crowJbdS4QTZcdB43oSRww"
+    title="RTL Support"
+    frameBorder={0}
+    referrerPolicy="unsafe-url"
+    allowFullScreen="true"
+    allow="clipboard-write"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+  />
+</div>
+
 ### Selecting Default Language in General Settings
 
 You can set the default language in the application using the Default Language field in the General settings page.
