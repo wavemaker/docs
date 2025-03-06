@@ -140,7 +140,7 @@ Once the configuration is done you can run the app and you will be logged into y
 
 During the app development in WaveMaker, application URLs like Metadata, Audience and Single Signout URL are configured with any of the Identity Provider (for instance- Okta, Onelogin, ADFS, Pingone, etc.). However, these URLs being run URLs are temporary in nature, as such cannot be used for the deployed application. When the WaveMaker application is deployed in the container, the hostname/tenant_id changes and therefore, the URLs that are to be _configured/registered in the SAML IdP_ should change. For Example, in WaveMaker Studio,
 
-- The **Metadata URL** during development would look like this:
+- The **Audience URL** during development would look like this:
 
     ```https://wavemakeronline.com/studio/services/saml2/service-provider-metadata/saml```
     
@@ -148,7 +148,7 @@ During the app development in WaveMaker, application URLs like Metadata, Audienc
     
     ```(http/https)://{hostname}/{appname}/saml2/service-provider-metadata/saml```
     
-- The **Audience URL** during development would look like this:
+- The **Single Signon URL** during development would look like this:
     
     ```https://wavemakeronline.com/{tenantid}/{appname}/login/saml2/sso/saml```
     
@@ -181,8 +181,9 @@ When multiple users are collaborating to develop an application that is configur
 
 Here you can find steps for SAML integration with:
 
-- [OneLogin](/learn/how-tos/saml-integration-onelogin/), and
+- [OneLogin](/learn/how-tos/saml-integration-onelogin/) 
 - [AD FS](/learn/how-tos/saml-integration-adfs/)
+- [Okta](/learn/how-tos/saml-integration-okta/)
 
 :::note
 When the app is run with SSO configuration, assuming that there is no session present with third-party identity providers, the third-party IdP login dialog will show up. As our WaveMaker Run Toolbar is within iframe which may not be safe for third parties, we remove the toolbar before the Login dialog of the third-party identity provider appears.

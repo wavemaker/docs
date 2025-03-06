@@ -19,6 +19,8 @@ Below is the list of known issues reported against the release version. We docum
 |---|---|---|---|---|
 |Data Field , Display Field of a checkboxset are auto setting to empty.|11.10| 11.10.x | Open| -|
 |Missing Authentication Provider SAML URLS in LIVE Phase in the UI |11.10| 11.10.1 | Fixed| -|
+|Total record count is not showing up for a data table when pagination has a single page. | - | 11.10.4 | Fixed | -|
+
 #### Mobile 
 |Issue description|Occured since|Expected to fix by|Status|Workaround|
 |---|---|---|---|---|
