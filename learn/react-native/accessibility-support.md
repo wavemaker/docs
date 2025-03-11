@@ -19,7 +19,7 @@ WaveMaker utilizes the built-in assistive technologies of Android and iOS, like 
 
 For example:
 - If you have a Sign Up button with the caption `"Sign Up"`:
-   - When the screen reader is on, it will read aloud: **Sign Up, button**
+   - When the screen reader is on, it will read aloud: 🔊 **Sign Up, button**
 
 This default behavior ensures that basic accessibility support is provided without requiring any manual configuration.
 
@@ -33,7 +33,7 @@ The **Hint** property allows you to provide additional information to the user a
 
 For example: in above Sign Up button, we can add
 - **Hint** : `Creates a new account`
-So, now screen reader will read **Sign Up, button. Creates a new account.**.
+So, now screen reader will read: 🔊 **Sign Up, button. Creates a new account**.
 
 <div class="text--center">
     <video style={{width:300}} controls>
