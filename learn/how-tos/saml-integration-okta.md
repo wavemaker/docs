@@ -3,9 +3,9 @@ title: "SAML Integration - Okta"
 id: "saml-integration-okta"
 ---
 
-Okta is a cloud-based identity and access management (IAM) platform that helps organizations securely manage user authentication and authorization. In this document, we discuss the steps to configure SAML using Okta with Wavemaker Application.
+Okta is a cloud-based identity and access management (IAM) platform that helps organizations securely manage user authentication and authorization. In this document, we discuss the steps to configure SAML using Okta with WaveMaker Application.
 
-1. Choose the Security Provider as SAML in Wavemaker Application.
+1. Choose the Security Provider as SAML in WaveMaker Application.
 
 ![samlOkta_1](/learn/assets/samlOkta_1.png)
 
@@ -30,7 +30,7 @@ Okta is a cloud-based identity and access management (IAM) platform that helps o
 ![samlOkta_5](/learn/assets/samlOkta_5.png)
 
 
-6. Now, copy the SSO, Audience urls from the Service Provider in Wavemaker.
+6. Now, copy the SSO, Audience urls from the Service Provider in WaveMaker.
 
 ![samlOkta_6](/learn/assets/samlOkta_6.png)
 
@@ -57,7 +57,7 @@ Okta is a cloud-based identity and access management (IAM) platform that helps o
 ![samlOkta_10](/learn/assets/samlOkta_10.png)
 
 
-11. Now, paste the metadata URL in wavemaker App and click on Load.
+11. Now, paste the metadata URL in WaveMaker App and click on Load.
 
 ![samlOkta_11](/learn/assets/samlOkta_11.png)
 
