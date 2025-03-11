@@ -45,7 +45,7 @@ So, now screen reader will read: 🔊 **Sign Up, button. Creates a new account**
 
 To add a **Hint** for a widget:
 
-1. **Select the widget** in the studio canvas.
+1. **Select the widget** in the Studio canvas.
 2. On the right side, in the **Properties Panel**, navigate to the **Accessibility** section.
 3. You will see an input field labeled **Hint**.
 4. **Add your Hint value** in this input field. Alternatively, you can bind it to a variable by clicking the bind-chain icon on its right side.
@@ -53,6 +53,14 @@ To add a **Hint** for a widget:
 This Hint will now be read aloud by the screen reader when the user focuses on the widget.
 
 ![Accessbility Hint Property](/learn/assets/react-native/accessibiltyHint.png)
+
+<details>
+
+<summary>Supported Widgets for Hint Property</summary>
+
+Anchor, Button, Checkbox, Chips, Currency, Date, Icon, Label, Linechart, Message, Nav, Number, Picture, Povover, Search, Select, Slider, Switch, Text, Textarea, Toggle, Video, Webview
+
+</details>
 
 That's it! With built-in accessibility and easy-to-configure **Hint** property, WaveMaker ensures that your mobile apps are accessible to a broader audience without complex configurations.
 

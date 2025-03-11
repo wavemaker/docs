@@ -681,6 +681,7 @@
 					"items": [
 						"react-native/styles",
 						"react-native/custom-icon-fonts",
+						"react-native/accessibility-support-react-native",
 						"react-native/theme",
 						"react-native/progress-loader",
 						"react-native/skeleton-loader",
