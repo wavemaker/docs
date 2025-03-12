@@ -44,7 +44,7 @@ The plugin is available in the **Figma Community Marketplace** and can be opened
 
     At the bottom of the Figma design canvas, toggle the last button in the toolbar to switch to Dev Mode.
 
-    ![switching to dev mode](/learn/assets/switch_to_dev.pmg)
+    ![switching to dev mode](/learn/assets/switch_to_dev.png)
 
 2. **Open the Plugin**
 
@@ -53,6 +53,7 @@ The plugin is available in the **Figma Community Marketplace** and can be opened
     ![switching to plugins tab](/learn/assets/switch_to_plugins.png)
 
     Search for **Wavemaker Autocode Plugin** and click **Run**.
+    
     ![launch plugin](/learn/assets/search_plugin.png)
 
 3. **Generate Code**
