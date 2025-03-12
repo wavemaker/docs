@@ -464,6 +464,12 @@
 		"teams/manage-subscription",
 		"teams/faqs"
 	],
+
+	"Figma Autocode": [
+		"figma-autocode-plugin/working-with-autocode-plugin",
+		"figma-autocode-plugin/design-guidelines"
+	],
+
 	"Enterprise": [
 		"on-premise/welcome",
 		"on-premise/architecture",
