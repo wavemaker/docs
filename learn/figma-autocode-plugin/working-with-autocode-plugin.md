@@ -7,15 +7,15 @@ sidebar_label: "Figma Autocode"
 
 # WaveMaker AutoCode - Design to Code Figma Plugin
 
-WaveMaker AutoCode is a Figma plugin that converts Figma designs using popular UI kits like Material 3.0 into WaveMaker-compatible frontend code, accelerating the design-to-development process. The generated code can be easily edited in WaveMaker Studio, where you can bind it to backend APIs and customize pages with business logic effortlessly.
+WaveMaker AutoCode is a Figma plugin that converts Figma designs which are made using Material 3.0 UI Kit or WaveMaker UI Kit into WaveMaker-compatible frontend code, accelerating the design-to-development process. The generated code can be easily edited in WaveMaker Studio, where you can bind it to backend APIs and customize pages with business logic effortlessly.
 
-VEDIO
+Video
 
 The following steps are demonstrated in the video to convert a Figma design into code using the WaveMaker AutoCode plugin.
 
-1. Search for **WaveMaker AutoCode** in the **Figma Community Marketplace**.
-2. Open it in your design file or use the sample design file provided with the plugin.
-3. Launch the plugin and select the pages you want to process.
+1. Search for **WaveMaker AutoCode** in the **Figma Community Marketplace**. Or click this [link|https://figma.com/@wavemaker.com]
+2. Open your design file or use the sample design file provided with the plugin.
+3. Launch the plugin and select the pages you want to convert into code.
 4. Click **Run AutoCode Plugin** to start processing the selected pages.
 5. Once processing is complete, preview the developed screens.
 6. To edit the generated code, click **Edit in WaveMaker**.
@@ -24,15 +24,14 @@ The following steps are demonstrated in the video to convert a Figma design into
 9. A new project with the generated code will be created in the WaveMaker studio, where you can make the necessary changes.
 
 ## Key Features
-1. Supports most web application components.
-2. Maps Figma variables to CSS variables. 
-3. Creates separate themes for each Figma variable modes.
-4. Translates Figma's on-click navigation and overlay prototyping into functional click actions in the generated code.
+1. Generated code uses the enterprise ready and battle tested WaveMaker UI component library.
+2. Maps Figma variables to CSS variables. The modes (light, dark color schemes) present in Figma are also captured. 
+3. Translates Figma's on-click navigation and overlay prototyping into functional click actions in the generated code.
 
 ## Prerequisite
 1. This is a **Dev Mode plugin**, so you must have **access to Figma Dev Mode**, which requires a **paid Figma account**. 
 2. Currently, the plugin supports only **Material 3.0** and **WaveMaker UI Kit**. 
-3. It works on both the Figma browser and desktop application.
+3. Works on both the Figma browser and desktop application.
 
 ## Download plugin
 
