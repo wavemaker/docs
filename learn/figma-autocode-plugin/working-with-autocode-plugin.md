@@ -13,7 +13,7 @@ Video
 
 The following steps are demonstrated in the video to convert a Figma design into code using the WaveMaker AutoCode plugin.
 
-1. Search for **WaveMaker AutoCode** in the **Figma Community Marketplace**. Or click this [link|https://figma.com/@wavemaker.com]
+1. Search for **WaveMaker AutoCode** in the **Figma Community Marketplace**. Or click this [link](https://www.figma.com/@wavemaker)
 2. Open your design file or use the sample design file provided with the plugin.
 3. Launch the plugin and select the pages you want to convert into code.
 4. Click **Run AutoCode Plugin** to start processing the selected pages.
