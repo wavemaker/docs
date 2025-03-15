@@ -4,60 +4,78 @@ title: "Figma Autocode Design Guidelines - Best Practices"
 sidebar_label: "Design Guideline"
 ---
 ---
+# Design Guidelines for AutoCode-Ready Designs
 
-Follow these best practices to ensure optimal output when using our plugin to convert Figma designs into frontend code.
+When designing in Figma for the Wavemaker AutoCode plugin, following these guidelines will help ensure that the generated code accurately reflects the design. Keeping these points in mind will lead to an expected output with minimal adjustments in the development phase.
 
-1.  **Frame Naming:** Avoid naming frames with numbers or special characters at the beginning. These names are used for CSS classes and ids, and CSS naming rules must be followed. For example, start frame names with letters, use hyphen **`-`** or underscore **`_`** for spaces, etc. [Learn more about CSS naming conventions](https://medium.com/free-code-camp/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849)
+## Proper Use of Auto Layout
 
-2.  **Avoid Wrap Property in Auto Layout:** Refrain from using the wrap property in Figma's Auto Layout. While supported, it can result in inconsistent and inaccurate sizing.
+Auto Layout organizes elements into responsive hierarchies, ensuring better behavior during conversion. This is especially important in complex designs. To simplify this process, try Figma’s Suggest Auto Layout feature.
 
-3.  **Images as Fills:** Do not turn images into components. Instead, keep images as fills inside frames.
+The image below shows where to find Figma Auto Layout. If it's not there, search the   help menu for Auto Layout and select Add Auto Layout.
 
-4.  **Vectors for Icons Only:** Use vectors exclusively for icons and avoid using them for other design elements.
+![finding auto layout in figma canvas](/learn/assets/find_autolayout.png)
 
-5.  **Instance Properties:** Ensure all properties in instances are within the tree structure and not at the top level. For example, place image properties directly within the appropriate layer.
-    ![An example of wrong way of adding properties](/learn/assets/properties_wrong.png)
+Below are some of the suggestions on using auto layout.
 
-    _An example of wrong way of adding properties_
+* If the parent frame has only one child frame, set the child layout to either center-center or top-center. This ensures proper alignment and structure. The examples below highlight child frames (pink border) aligned in the center within parent frames (blue border).
 
-    ![An example of right way of adding properties](/learn/assets/properties_right.png)
+![examples of single child alignment inside frame with auto layout](/learn/assets/one_child.png)
 
-    _An example of right way of adding properties_
+![prefered alignments for single child frames](/learn/assets/alignment_center_top.png)
 
-6.  **Logos:** Use images or SVGs for logos. Include the word **`logo`** in the name. If logos are components, ensure the component name also contains logo.
+* When a child element needs to match the width of its parent frame, set its width to "Fill". Example: In the image below, the Text Field width is set to "Fill," ensuring it occupies the entire width of the parent frame (blue border). Fixed widths are treated as fixed sizes and will not adjust to different screen sizes.
 
-7.  **Proper Use of Auto Layout:** Use Auto Layout as intended. below are some of the suggestions on using autolayout.
+![fill width example](/learn/assets/form_fill_width.png)
 
-    -   Parent frame with variable width (Hug)
+* For certain elements on a page, height and width are dynamically calculated based on the screen resolution. This applies to components like navigation bars, containers holding lists of cards, etc. Since these containers adapt to screen size, the gap between their child elements cannot be fixed and should be set to Auto instead. The image below illustrates this scenario.
 
-        -   Immediate children elements must have fixed width.
-        -   Spacing should be Auto.
+![fill width example](/learn/assets/auto_exmpl.png)
 
-    -   If the parent frame has only one child frame, set the child frame’s layout to either center-center or top-center. This ensures proper alignment and structure.
+## Instance Properties
 
-        ![An examples of a frame having only one child](/learn/assets/one_child.png)
+Ensure instance properties are applied at the correct level in the tree structure, not just at the top level. 
+For example, in the first image below, the background color is applied at the topmost layer of the Tab Component instance. However, in the original UI kit, it should be applied at the second layer (State Layer), as shown in the second image.
 
-        _An examples of a frame having only one child_
+![example of incorrect application of instance property](/learn/assets/properties_wrong_border.png)
 
-    -   When the child element needs to match the width of a parent frame with variable width (Hug), set the child element’s width to Fill. Example: In an one column form, text fields, buttons, and frames containing text should have their width set to Fill. Fixed widths are treated as fixed sizes and will not adjust to different screen sizes.
+![example of correct application of instance property](/learn/assets/properties_right_border.png)
 
-        ![An example of using fill width to match parent frame width](/learn/assets/fill_width.png)
+## Avoid Unnecessary Children
+Minimize nested frames or groups whenever possible. For example: Instead of adding a rectangle inside a frame for background image, directly apply it to the frame itself. 
 
-        _An example of using fill width to match parent frame width_
+![example of unnecessary child element](/learn/assets/nested_child_wrong.png)
 
-    -   Case when spacing should be set to `Auto`
+![example of how to avoid unnecessary child element](/learn/assets/nested_child_right.png)
 
-        -   For nav bars, subheadings with three-dot menus, etc., where the frame width is variable (Hug), spacing or gap should be set to Auto.
-        -   the space between text and an icon should be set to Auto to prevent layout issues, such as single-line text rendering in two lines.
+In the first image above, notice the Fill property of the frame—no background is applied directly to it. Instead, a separate rectangle inside the frame holds the background image, which is incorrect.In the second image, the Fill property of the selected frame directly contains the background image, which is the correct approach. This ensures a cleaner structure and proper rendering in the generated code.
 
-            ![An example of when to use auto spacing](/learn/assets/auto_gap.png)
+As a rule of thumb, if you're creating a unit solely to add a single property, try applying that property to the parent element instead.
 
-            _An example of when to use auto spacing_
+## Images as Fills
 
-8.  **Avoid Unnecessary Children:** Minimize unnecessary nested frames or groups. For example: Instead of adding a rectangle inside a group for background color, directly apply the color to the group itself. As a rule of thumb, if you're creating a unit solely to add a single property, try applying that property to the parent element instead.
+Do not turn images into components. Instead, use images as fills inside frames.
 
-9.  **Color Management:** Use colors from local variables or local styles. Do not apply random colors without first defining them in local variables or styles.
+## Vectors for Icons Only
 
-10. **Figma API Issue with Hidden Elements:** If a vector, image, or logo exceeds the defined page bounds, Figma may fail to export the “hidden” element as an SVG. To resolve this, increase the page height in Figma to include the element.
+Use vectors exclusively for icons and avoid using them for other design elements.
 
-By adhering to these guidelines, you can create designs that are clean, maintainable, and ready for seamless conversion to code.
+## Logos
+
+Use images or SVGs for logos. Include the word logo in the name. If logos are components, ensure the component name also contains the word logo.
+
+## Color Management
+
+Use colors from local variables or local styles. Do not apply random colors without first defining them in local variables or styles.
+
+![example correct way of using colors](/learn/assets/proper_use_color.png)
+
+## Figma API Issue with Hidden Elements
+
+If a vector, image, or logo exceeds the defined page bounds, Figma may fail to export the “hidden” element as an SVG. To resolve this, increase the page height in Figma to include the element.
+
+
+
+
+
+
