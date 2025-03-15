@@ -74,6 +74,9 @@ Use colors from local variables or local styles. Do not apply random colors with
 
 If a vector, image, or logo exceeds the defined page bounds, Figma may fail to export the “hidden” element as an SVG. To resolve this, increase the page height in Figma to include the element.
 
+By following these guidelines, designers can ensure that AutoCode accurately translates their Figma designs into WaveMaker-compatible code, reducing the need for manual adjustments.
+
+
 
 
 
