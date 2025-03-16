@@ -10,7 +10,7 @@ When designing in Figma for the Wavemaker AutoCode plugin, following these guide
 
 ## Proper Use of Auto Layout
 
-Auto Layout organizes elements into responsive hierarchies, ensuring better behavior during conversion. This is especially important in complex designs. To simplify this process, try Figma’s Suggest Auto Layout feature.
+Auto Layout organizes elements into responsive hierarchies, ensuring better behavior during conversion. This is especially important in complex designs. To simplify this process, try Figma’s [Suggest Auto Layout](https://help.figma.com/hc/en-us/articles/5731482952599-Add-auto-layout-to-a-design#suggest) feature.
 
 The image below shows where to find Figma Auto Layout. If it's not there, search the   help menu for Auto Layout and select Add Auto Layout.
 
