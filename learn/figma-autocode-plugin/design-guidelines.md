@@ -1,10 +1,9 @@
 ---
 id: "design-guidelines"
-title: "Figma Autocode Design Guidelines - Best Practices"
+title: "Creating AutoCode-Friendly Designs in Figma"
 sidebar_label: "Design Guideline"
 ---
 ---
-# Design Guidelines for AutoCode-Ready Designs
 
 When designing in Figma for the WaveMaker AutoCode plugin, following these guidelines will help ensure that the generated code accurately reflects the design. Keeping these points in mind will lead to an expected output with minimal adjustments in the development phase.
 

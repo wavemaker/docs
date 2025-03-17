@@ -1,11 +1,9 @@
 ---
 id: "working-with-autocode-plugin"
-title: "Welcome to Figma Autocode"
+title: "WaveMaker AutoCode - Design to Code Figma Plugin"
 sidebar_label: "Figma Autocode"
 ---
 ---
-
-# WaveMaker AutoCode - Design to Code Figma Plugin
 
 WaveMaker AutoCode is a Figma plugin that converts Figma designs which are made using Material 3.0 UI Kit or WaveMaker UI Kit into WaveMaker-compatible frontend code, accelerating the design-to-development process. The generated code can be easily edited in WaveMaker Studio, where you can bind it to backend APIs and customize pages with business logic effortlessly.
 
