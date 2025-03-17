@@ -467,7 +467,8 @@
 
 	"Figma Autocode": [
 		"figma-autocode-plugin/working-with-autocode-plugin",
-		"figma-autocode-plugin/design-guidelines"
+		"figma-autocode-plugin/design-guidelines",
+		"figma-autocode-plugin/figma-cheat-sheet"
 	],
 
 	"Enterprise": [

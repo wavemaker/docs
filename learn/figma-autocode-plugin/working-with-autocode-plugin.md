@@ -43,35 +43,35 @@ The plugin is available in the **Figma Community Marketplace** and can be opened
 
     At the bottom of the Figma design canvas, toggle the last button in the toolbar to switch to Dev Mode.
 
-    ![switching to dev mode](/learn/assets/switch_to_dev.png)
+    ![switching to dev mode](/learn/assets/autocode/switch_to_dev.png)
 
 2. **Open the Plugin**
 
     In the **right panel**, go to the **Plugins tab**
 
-    ![switching to plugins tab](/learn/assets/switch_to_plugins.png)
+    ![switching to plugins tab](/learn/assets/autocode/switch_to_plugins.png)
 
     Search for **WaveMaker Autocode Plugin** and click **Run**.
     
-    ![launch plugin](/learn/assets/search_plugin.png)
+    ![launch plugin](/learn/assets/autocode/search_plugin.png)
 
 3. **Generate Code**
 
     Select the pages you want to process and click **Run Autocode Plugin**. The plugin will process the selected pages.
 
-    ![select pages and run plugin](/learn/assets/select_pages.png)
+    ![select pages and run plugin](/learn/assets/autocode/select_pages.png)
 
 4. **Preview Developed Screens**
 
     Once processing is complete, click **Preview Developed Screens** to view the output. This button will be enabled after processing a few pages. You can preview completed pages while the remaining ones continue processing.
 
-    ![ready for preview](/learn/assets/preview_complete.png)
+    ![ready for preview](/learn/assets/autocode/preview_complete.png)
 
     Clicking Preview Developed Screens will open your default browser, where you can view the output. The preview screen will display the generated design along with the corresponding code in the code tab.
 
-    ![output preview](/learn/assets/preview_screens.png)
+    ![output preview](/learn/assets/autocode/preview_screens.png)
 
-    ![code preview](/learn/assets/preview_code.png)
+    ![code preview](/learn/assets/autocode/preview_code.png)
 
 ## Editing generated code in WaveMaker Studio
 
@@ -79,15 +79,15 @@ To edit the generated code, you must have a WaveMaker account. Follow these step
 
 1. On the AutoCode preview screen, click **Edit in WaveMaker**.
 
-    ![locate edit in WaveMaker button](/learn/assets/edit_in_wm.png)
+    ![locate edit in WaveMaker button](/learn/assets/autocode/edit_in_wm.png)
 
 2. If you are not logged in, you will be redirected to the WaveMaker studio login screen. After logging in, enter a project name in the project creation dialog and click **Open Project**.
 
-    ![creating project](/learn/assets/create_project.png)
+    ![creating project](/learn/assets/autocode/create_project.png)
 
 3. This will create the project in WaveMaker Studio and redirect you to it, where you can edit the code.
 
-    ![WaveMaker project](/learn/assets/project_in_studio.png)
+    ![WaveMaker project](/learn/assets/autocode/project_in_studio.png)
 
 
 
