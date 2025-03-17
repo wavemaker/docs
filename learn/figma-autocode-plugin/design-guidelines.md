@@ -1,12 +1,11 @@
 ---
 id: "design-guidelines"
-title: "Figma Autocode Design Guidelines - Best Practices"
+title: "Creating AutoCode-Friendly Designs in Figma"
 sidebar_label: "Design Guideline"
 ---
 ---
-# Design Guidelines for AutoCode-Ready Designs
 
-When designing in Figma for the Wavemaker AutoCode plugin, following these guidelines will help ensure that the generated code accurately reflects the design. Keeping these points in mind will lead to an expected output with minimal adjustments in the development phase.
+When designing in Figma for the WaveMaker AutoCode plugin, following these guidelines will help ensure that the generated code accurately reflects the design. Keeping these points in mind will lead to an expected output with minimal adjustments in the development phase.
 
 ## Proper Use of Auto Layout
 
@@ -14,7 +13,7 @@ Auto Layout organizes elements into responsive hierarchies, ensuring better beha
 
 The image below shows where to find Figma Auto Layout. If it's not there, search the   help menu for Auto Layout and select Add Auto Layout.
 
-![finding auto layout in figma canvas](/learn/assets/find_autolayout.png)
+![finding auto layout in figma canvas](/learn/assets/autocode/find_autolayout.png)
 
 Below are some of the suggestions on using auto layout.
 
@@ -35,9 +34,9 @@ Below are some of the suggestions on using auto layout.
 
 * If the parent frame has only one child frame, set the child layout to either center-center or top-center. This ensures proper alignment and structure. The examples below highlight child frames (pink border) aligned in the center within parent frames (blue border).
 
-![examples of single child alignment inside frame with auto layout](/learn/assets/one_child.png)
+![examples of single child alignment inside frame with auto layout](/learn/assets/autocode/one_child.png)
 
-![prefered alignments for single child frames](/learn/assets/alignment_center_top.png)
+![prefered alignments for single child frames](/learn/assets/autocode/alignment_center_top.png)
 
 ## Preserve UI Kit Component Structure and Naming
 
@@ -49,16 +48,16 @@ Avoid modifying the structure or name of components in a UI kit, as these change
 Ensure instance properties are applied at the correct level in the tree structure, not just at the top level. 
 For example, in the first image below, the background color is applied at the topmost layer of the Tab Component instance. However, in the original UI kit, it should be applied at the second layer (State Layer), as shown in the second image.
 
-![example of incorrect application of instance property](/learn/assets/properties_wrong_border.png)
+![example of incorrect application of instance property](/learn/assets/autocode/properties_wrong_border.png)
 
-![example of correct application of instance property](/learn/assets/properties_right_border.png)
+![example of correct application of instance property](/learn/assets/autocode/properties_right_border.png)
 
 ## Avoid Unnecessary Children
 Minimize nested frames or groups whenever possible. For example: Instead of adding a rectangle inside a frame for background image, directly apply it to the frame itself. 
 
-![example of unnecessary child element](/learn/assets/nested_child_wrong.png)
+![example of unnecessary child element](/learn/assets/autocode/nested_child_wrong.png)
 
-![example of how to avoid unnecessary child element](/learn/assets/nested_child_right.png)
+![example of how to avoid unnecessary child element](/learn/assets/autocode/nested_child_right.png)
 
 In the first image above, notice the Fill property of the frame—no background is applied directly to it. Instead, a separate rectangle inside the frame holds the background image, which is incorrect.In the second image, the Fill property of the selected frame directly contains the background image, which is the correct approach. This ensures a cleaner structure and proper rendering in the generated code.
 
@@ -85,7 +84,7 @@ Use colors from local variables or local styles. Do not apply colors without fir
 Always use the variables provided in the UI Kit to maintain consistency. If needed, you can modify colors in the Variables pane, ensuring a well-structured and cohesive theme.
 
 
-![example correct way of using colors](/learn/assets/proper_use_color.png)
+![example correct way of using colors](/learn/assets/autocode/proper_use_color.png)
 
 ## Figma API Issue with Hidden Elements
 
