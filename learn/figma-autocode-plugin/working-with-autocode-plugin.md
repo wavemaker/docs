@@ -32,18 +32,11 @@ Follow these steps to turn your Figma design into code using the WaveMaker AutoC
 8. **Create a Project** – Enter a project name in the creation dialog.  
 9. **Start Developing** – A new project with the generated code opens in WaveMaker Studio, ready for further customization.
 
-## Prerequisite
+## Before You Begin
 
-- This is a **Dev Mode plugin**, so you must have **access to Figma Dev Mode**, which requires a **paid Figma account**. 
-
-### Good to Know 
-
-- Currently, the plugin supports only **Material 3.0** and **WaveMaker UI Kit**. 
-- Works on both the Figma browser and desktop application.
-
-## Download plugin
-
-The plugin is available in the **Figma Community Marketplace** and can be opened in the design file you wish to use. You can also access it from the **Plugins tab in Dev Mode**. 
+- **Prerequisite:**: This is a Dev Mode plugin and requires a paid Figma account with Dev Mode access.  
+- **Good to Know**: Supports only Material 3.0 and the WaveMaker UI Kit. Works on both the Figma browser and desktop app.  
+- **Download Plugin**: The plugin is available in the Figma Community Marketplace. Open it in your design file or access it from the Plugins tab in Dev Mode.
 
 ## Steps to Use the Plugin
 
