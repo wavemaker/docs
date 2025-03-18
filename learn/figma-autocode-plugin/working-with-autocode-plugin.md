@@ -5,35 +5,38 @@ sidebar_label: "Figma Autocode"
 ---
 ---
 
-WaveMaker AutoCode is a Figma plugin that converts Figma designs which are made using Material 3.0 UI Kit or WaveMaker UI Kit into WaveMaker-compatible frontend code, accelerating the design-to-development process. The generated code can be easily edited in WaveMaker Studio, where you can bind it to backend APIs and customize pages with business logic effortlessly.
 
-Video
+[WaveMaker AutoCode](https://www.figma.com/@wavemaker), a Figma plugin, streamlines frontend development by generating WaveMaker-compatible code directly from Figma designs using Material 3.0 and WaveMaker UI Kits. 
 
-The following steps are demonstrated in the video to convert a Figma design into code using the WaveMaker AutoCode plugin.
+Developers can easily edit the generated code in WaveMaker Studio, importing designs for seamless integration and refinement. Within WaveMaker Studio, they can also bind backend APIs and implement business logic, effectively minimizing manual code translation and accelerating development cycles.
 
-1. Search for **WaveMaker AutoCode** in the **Figma Community Marketplace**. Or click this [link](https://www.figma.com/@wavemaker)
-2. Open your design file or use the sample design file provided with the plugin.
-3. Launch the plugin and select the pages you want to convert into code.
-4. Click **Run AutoCode Plugin** to start processing the selected pages.
-5. Once processing is complete, preview the developed screens.
-6. To edit the generated code, click **Edit in WaveMaker**.
-7. Log in to your WaveMaker account.
-8. Enter a project name in the project creation dialog.
-9. A new project with the generated code will be created in the WaveMaker studio, where you can make the necessary changes.
+### Highlights
 
-## Key Features
-1. Generated code uses the enterprise ready and battle tested WaveMaker UI component library.
-2. Maps Figma variables to CSS variables. The modes (light, dark color schemes) present in Figma are also captured. 
-3. Translates Figma's on-click navigation and overlay prototyping into functional click actions in the generated code.
+1. The generated code is built with WaveMaker’s enterprise-ready, battle-tested UI component library.
+2. Figma variables seamlessly map to CSS variables, capturing light and dark mode settings.
+3. On-click navigation and overlay prototypes from Figma turn into real, functional actions in the code.
 
-## Prerequisite
-1. This is a **Dev Mode plugin**, so you must have **access to Figma Dev Mode**, which requires a **paid Figma account**. 
-2. Currently, the plugin supports only **Material 3.0** and **WaveMaker UI Kit**. 
-3. Works on both the Figma browser and desktop application.
+<!-- Video -->
 
-## Download plugin
+## Quick Guide  
 
-The plugin is available in the **Figma Community Marketplace** and can be opened in the design file you wish to use. You can also access it from the **Plugins tab in Dev Mode**. 
+Follow these steps to turn your Figma design into code using the WaveMaker AutoCode plugin:  
+
+1. **Find the Plugin** – Search for **WaveMaker AutoCode** in the **Figma Community Marketplace** or click [here](https://www.figma.com/@wavemaker).  
+2. **Open Your Design** – Use your existing Figma file or the sample file provided with the plugin.  
+3. **Launch the Plugin** – Select the pages you want to convert into code.  
+4. **Run AutoCode** – Click **Run AutoCode Plugin** to start processing the selected pages.  
+5. **Preview the Screens** – Once processing is done, preview the generated screens.  
+6. **Edit in WaveMaker** – Click **Edit in WaveMaker** to modify the code.  
+7. **Log In** – Sign in to your WaveMaker account.  
+8. **Create a Project** – Enter a project name in the creation dialog.  
+9. **Start Developing** – A new project with the generated code opens in WaveMaker Studio, ready for further customization.
+
+## Before You Begin
+
+- **Prerequisite:**: This is a Dev Mode plugin and requires a paid Figma account with Dev Mode access.  
+- **Good to Know**: Supports only Material 3.0 and the WaveMaker UI Kit. Works on both the Figma browser and desktop app.  
+- **Download Plugin**: The plugin is available in the Figma Community Marketplace. Open it in your design file or access it from the Plugins tab in Dev Mode.
 
 ## Steps to Use the Plugin
 
