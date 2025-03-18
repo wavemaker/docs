@@ -8,6 +8,9 @@ import React from 'react';
 import { ResultsScreen } from './ResultsScreen';
 export var ScreenState = React.memo(function (_ref) {
   const inlineSearchActions = [{
+    "href": "/learn/figma-autocode-plugin/working-with-autocode-plugin/",
+    "label": "AutoCode"
+  }, {
     "href": "/learn/react-native/react-native-overview/",
     "label": "React Native"
   }, {
