@@ -19,7 +19,7 @@ Below are some of the suggestions on using auto layout.
 
 * When a child element needs to match the width of its parent frame, set its width to "Fill". Example: In the image below, the Text Field width is set to "Fill," ensuring it occupies the entire width of the parent frame (blue border). 
 
-<!-- ![fill width example](/learn/assets/form_fill_width.png) -->
+![fill width example](/learn/assets/autocode/form_fill_width.png)
 
  Fixed widths are treated as fixed sizes and will not adjust to different screen sizes.
 
@@ -28,7 +28,7 @@ Below are some of the suggestions on using auto layout.
 
 * For certain elements on a page, height and width are dynamically calculated based on the screen resolution. This applies to components like navigation bars, containers holding lists of cards, etc. Since these containers adapt to screen size, the gap between their child elements cannot be fixed and should be set to **Auto** instead. The image below illustrates this scenario.
 
-<!-- ![gap auto width example](/learn/assets/auto_exmpl.png) -->
+![gap auto width example](/learn/assets/autocode/auto_exmpl.png)
 
  A fixed gap will be considered as intentional spacing and will be maintained regardless of screen size when converting to code.
 
