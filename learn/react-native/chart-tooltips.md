@@ -1,6 +1,6 @@
 ---
 title: "Chart Tooltips"
-id: "chart-tooltip"
+id: "chart-tooltips"
 sidebar_label: "Chart Tooltips"
 ---
 ---
