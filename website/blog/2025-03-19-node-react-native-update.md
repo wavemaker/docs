@@ -8,22 +8,48 @@ When working with React Native Studio projects, it’s important to ensure that 
 
 <!-- truncate -->
 
-### 1. Building the React Native Studio Project
+## Building the Project
 
-When exporting a ZIP file or building the project using Maven commands, the required Node.js version is **18.16.1**. This version ensures compatibility with the build pipeline and avoids errors during the packaging process. Using a different version may lead to unexpected build failures or issues during export.
+**Node.js Version Requirement**  
 
-#### ✅ Recommendation:
+- **Required Version**: Node.js **18.16.1** is mandatory for exporting a ZIP file or building the project using Maven.  
+- **Why**: Ensures compatibility with the build pipeline and prevents errors during packaging.  
+- **Potential Issues**: Using a different version may cause unexpected build failures or export issues.  
 
-Ensure your Node.js version is exactly **18.16.1** before running the Maven build command or exporting the project as a ZIP file.
+### ✅ Recommendation  
 
+1. Before running the **Maven build** or **exporting the project**, confirm your Node.js version:  
+  ```sh
+  node -v
+  ```  
+2. If needed, update to **18.16.1** using **nvm**:  
+  ```sh
+  nvm install 18.16.1  
+  nvm use 18.16.1  
+  ``` 
 
-### 2. Local Preview and Package Installation
+## Running Local Preview
 
-When setting up a local development environment and running npm install, the Node.js version must fall within a specific range. The **minimum** required version is **18.17.1**, and the **maximum** supported version is **22.11.0**. Staying within this range ensures compatibility with the project's dependencies and prevents installation errors.
+**Node.js Version Requirement for Local Development**  
 
-#### ✅ Recommendation:
+- **Supported Range**: Node.js version must be **between 18.17.1 and 22.11.0**.  
+- **Why**: Ensures compatibility with project dependencies and prevents installation errors.  
+- **Potential Issues**: Using a version outside this range may cause dependency conflicts and runtime errors.  
 
-Use Node.js version **between 18.17.1 and 22.11.0** during npm install and while previewing the project locally.  
+### ✅ Recommendation
+
+1. Before running **npm install** or previewing the project locally, check your Node.js version:  
+  ```sh
+  node -v
+  ```  
+2. If needed, update to a supported version using **nvm**:  
+  ```sh
+  nvm install 18.17.1  
+  nvm use 18.17.1  
+  ```  
+
+:::note
 Avoid using versions outside this range to prevent dependency conflicts and runtime errors.
+:::
 
 By following these guidelines, you’ll maintain a stable development environment and ensure smooth project builds and local previews for your React Native Studio project.
