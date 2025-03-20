@@ -7,8 +7,11 @@ sidebar_label: "Chart Tooltips"
 
 import charttooltipparts from '/learn/assets/chart-tooltip-parts.png';
 import charttooltipexample from '/learn/assets/chart-tooltip-example.png';
+import charttooltip from '/learn/assets/chart-tooltip.png';
 
 A Chart Tooltip is an element that appears when you hover over or interact with a specific data point or component within a chart. This floating text box provides additional information about the data point, such as its exact value, category, or other relevant details, enhancing user understanding of the chart.
+
+<img src={charttooltip} style={{width:300}}/>
 
 ## Configuring Chart Tooltip
 
