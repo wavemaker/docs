@@ -72,32 +72,6 @@ A Tooltip can be categorized into four segments for customization.
 
 ```
 
-### Example
-
-In this example, you can customize the tooltip pointer of the chart using the following code in the Style section:
-
-```css
-
-.tooltip-pointer {
-  position: absolute;
-  width: 0;
-  height: 0;
-  background-color: transparent;
-  border-style: solid;
-  border-left-width: 8px;
-  border-right-width: 8px;
-  border-bottom-width: 12px;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: #e7f9fd;
-  overflow: hidden;
-}
-
-```
-
-#### Preview
-
-<img src={charttooltipexample} style={{width:300}}/>
 
 ## Creating Partial for Tooltip and Binding it to Chart
 
@@ -229,4 +203,6 @@ Page.Widgets.chart1.setTooltipTemplate("Tooltip");
 
 ```
 
+#### Preview
 
+<img src={charttooltipexample} style={{width:300}}/>
