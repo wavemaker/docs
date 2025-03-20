@@ -5,16 +5,99 @@ sidebar_label: "Chart Tooltips"
 ---
 ---
 
+import charttooltipparts from '/learn/assets/chart-tooltip-parts.png';
+import charttooltipexample from '/learn/assets/chart-tooltip-example.png';
+
 A Chart Tooltip is an element that appears when you hover over or interact with a specific data point or component within a chart. This floating text box provides additional information about the data point, such as its exact value, category, or other relevant details, enhancing user understanding of the chart.
 
 ## Configuring Chart Tooltip
 
-You can create a partial as a tooltip for a chart in your application. This approach allows you to reuse the partial with the tooltip across the application in any number of instances. To use a tooltip for a specific chart, you need to:
+You can customize the default Tooltip that is rendered with the Chart widget or create a new Tooltip for a Chart as required.
 
-- Create a Tooltip as a Partial page and bind it to the chart.
-- Customizing the default Tooltip using the relevant classes.
+## Customizing the Default Tooltip
+
+A Tooltip can be categorized into four segments for customization.
+
+- **Tooltip Container**: The main box that holds the tooltip content.​
+- **Tooltip Pointer**: The small arrow or indicator pointing to the data point.​
+- **X-Axis Label**: The label displaying information related to the x-axis value.​
+- **Y-Axis Label**: The label displaying information related to the y-axis value.
+
+<img src={charttooltipparts} style={{width:300}}/>    
+
+
+​The following CSS classes can be utilized in the Style section to customize various parts of the default tooltip, as shown in the image above:
+
+- **Tooltip Container:** 
+
+```css
+
+.app-area-chart-tooltip-container {
+  /* Your styles here */
+}
+
+```
+
+- **Tooltip Pointer:**
+
+```css
+
+.app-area-chart-tooltip-pointer {
+  /* Your styles here */
+}
+
+```
+
+- **X-Axis Label:**
+
+```css
+
+.app-area-chart-tooltipx-text {
+  /* Your styles here */
+}
+
+```
+
+- **Y-Axis Label:**
+
+```css
+
+.app-area-chart-tooltipy-text {
+  /* Your styles here */
+}
+
+```
+
+### Example
+
+In this example, you can customize the tooltip pointer of the chart using the following code in the Style section:
+
+```css
+
+.tooltip-pointer {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-style: solid;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 12px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #e7f9fd;
+  overflow: hidden;
+}
+
+```
+
+#### Preview
+
+<img src={charttooltipexample} style={{width:300}}/>
 
 ## Creating Partial for Tooltip and Binding it to Chart
+
+A Partial can be created as a Tooltip for a chart in your application. This approach allows you to reuse the partial with the tooltip across the application in any number of instances.
 
 ### Creating Partial Page
 
@@ -36,7 +119,7 @@ Replace `{chartname}` with the name of your Chart widget and `{partialname}` wit
 
 ### Example
 
-To understand the creation and binding of Chart Tooltip, you can refer the following example. 
+​To understand how to create and bind a Partial as Chart Tooltip, you can refer to the following example. 
 
 1. Use the following dataset for chart.
 
@@ -142,79 +225,4 @@ Page.Widgets.chart1.setTooltipTemplate("Tooltip");
 
 ```
 
-#### Preview
 
-![Chart Tooltip Example](/learn/assets/chart-tooltip-parts.png)
-
-
-
-## Customizing Tooltip
-
-A Tooltip can be categorized into four segments for customization.
-
-![Chart Tooltip](/learn/assets/chart-tooltip-parts.png)
-
-The following classes can be used in the Style section of the Partial to customize different parts of the default tooltip.
-
-- **Tooltip Container:** 
-
-```css
-
-.app-area-chart-tooltip-container {
-  /* Your styles here */
-}
-
-```
-
-- **Tooltip Pointer:**
-
-```css
-
-.app-area-chart-tooltip-pointer {
-  /* Your styles here */
-}
-
-```
-
-- **X-Axis Label:**
-
-```css
-
-.app-area-chart-tooltipx-text {
-  /* Your styles here */
-}
-
-```
-
-- **Y-Axis Label:**
-
-```css
-
-.app-area-chart-tooltipy-text {
-  /* Your styles here */
-}
-
-```
-
-### Example
-
-In the below example you can customize the Tooltip pointer of the Chart [mentioned above](#example) using the below code in the Style section of Partial.
-
-```css
-
-.tooltip-pointer {
-  position: absolute;
-  width: 0;
-  height: 0;
-  background-color: transparent;
-  border-style: solid;
-  border-left-width: 8px;
-  border-right-width: 8px;
-  border-bottom-width: 12px;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: #e7f9fd;
-  overflow: hidden;
-}
-
-```
