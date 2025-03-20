@@ -12,7 +12,10 @@ A Chart Tooltip is an element that appears when you hover over or interact with 
 
 ## Configuring Chart Tooltip
 
-You can customize the default Tooltip that is rendered with the Chart widget or create a new Tooltip for a Chart as required.
+When using Tooltip, you can use any one of the following.
+
+- customize the default Tooltip that is rendered with the Chart widget 
+- create a new Tooltip for a Chart as required.
 
 ## Customizing the Default Tooltip
 
