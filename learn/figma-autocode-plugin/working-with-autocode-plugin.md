@@ -16,7 +16,25 @@ Developers can easily edit the generated code in WaveMaker Studio, importing des
 2. Figma variables seamlessly map to CSS variables, capturing light and dark mode settings.
 3. On-click navigation and overlay prototypes from Figma turn into real, functional actions in the code.
 
-<!-- Video -->
+<div style={{ position: "relative", paddingBottom: "56.25%" }}>
+
+  <iframe
+    style={{
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      left: 0,
+      top: 0
+    }}
+    src="https://embed.app.guidde.com/playbooks/ud136wyrTAvN7xNDiUrRAp"
+    title="Autocode"
+    frameBorder={0}
+    referrerPolicy="unsafe-url"
+    allowFullScreen="true"
+    allow="clipboard-write"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+  />
+</div>
 
 ## Quick Guide  
 
