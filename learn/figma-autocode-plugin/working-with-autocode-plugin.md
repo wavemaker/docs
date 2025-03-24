@@ -10,11 +10,13 @@ sidebar_label: "Figma Autocode"
 
 Developers can easily edit the generated code in WaveMaker Studio, importing designs for seamless integration and refinement. Within WaveMaker Studio, they can also bind backend APIs and implement business logic, effectively minimizing manual code translation and accelerating development cycles.
 
-### Highlights
+#### Highlights
 
 1. The generated code is built with WaveMaker’s enterprise-ready, battle-tested UI component library.
 2. Figma variables seamlessly map to CSS variables, capturing light and dark mode settings.
 3. On-click navigation and overlay prototypes from Figma turn into real, functional actions in the code.
+
+## Your Fast Track Guide
 
 <div style={{ position: "relative", paddingBottom: "56.25%" }}>
 
@@ -36,9 +38,8 @@ Developers can easily edit the generated code in WaveMaker Studio, importing des
   />
 </div>
 
-## Quick Guide  
-
-Follow these steps to turn your Figma design into code using the WaveMaker AutoCode plugin:  
+  
+Here are the steps to turn your Figma design into code using the WaveMaker AutoCode plugin:  
 
 1. **Find the Plugin** – Search for **WaveMaker AutoCode** in the **Figma Community Marketplace** or click [here](https://www.figma.com/@wavemaker).  
 2. **Open Your Design** – Use your existing Figma file or the sample file provided with the plugin.  
@@ -58,55 +59,55 @@ Follow these steps to turn your Figma design into code using the WaveMaker AutoC
 
 ## Steps to Use the Plugin
 
-1. **Switch to Dev mode**
+### 1. Switch to Dev Mode
 
-    At the bottom of the Figma design canvas, toggle the last button in the toolbar to switch to Dev Mode.
+At the bottom of the Figma design canvas, toggle the last button in the toolbar to switch to Dev Mode.
 
     ![switching to dev mode](/learn/assets/autocode/switch_to_dev.png)
 
-2. **Open the Plugin**
+### 2. Open the Plugin
 
-    In the **right panel**, go to the **Plugins tab**
+In the **right panel**, go to the **Plugins tab**
 
-    ![switching to plugins tab](/learn/assets/autocode/switch_to_plugins.png)
+![switching to plugins tab](/learn/assets/autocode/switch_to_plugins.png)
 
-    Search for **WaveMaker Autocode Plugin** and click **Run**.
+Search for **WaveMaker Autocode Plugin** and click **Run**.
     
-    ![launch plugin](/learn/assets/autocode/search_plugin.png)
+![launch plugin](/learn/assets/autocode/search_plugin.png)
 
-3. **Generate Code**
+### 3. Generate Code
 
-    Select the pages you want to process and click **Run Autocode Plugin**. The plugin will process the selected pages.
+Select the pages you want to process and click **Run Autocode Plugin**. The plugin will process the selected pages.
 
-    ![select pages and run plugin](/learn/assets/autocode/select_pages.png)
+![select pages and run plugin](/learn/assets/autocode/select_pages.png)
 
-4. **Preview Developed Screens**
+### 4. Preview Developed Screens
 
-    Once processing is complete, click **Preview Developed Screens** to view the output. This button will be enabled after processing a few pages. You can preview completed pages while the remaining ones continue processing.
+Once processing is complete, click **Preview Developed Screens** to view the output. This button will be enabled after processing a few pages. You can preview completed pages while the remaining ones continue processing.
 
-    ![ready for preview](/learn/assets/autocode/preview_complete.png)
+![ready for preview](/learn/assets/autocode/preview_complete.png)
 
-    Clicking Preview Developed Screens will open your default browser, where you can view the output. The preview screen will display the generated design along with the corresponding code in the code tab.
+Clicking Preview Developed Screens will open your default browser, where you can view the output. The preview screen will display the generated design along with the corresponding code in the code tab.
 
-    ![output preview](/learn/assets/autocode/preview_screens.png)
+![output preview](/learn/assets/autocode/preview_screens.png)
 
-    ![code preview](/learn/assets/autocode/preview_code.png)
+![code preview](/learn/assets/autocode/preview_code.png)
 
-## Editing generated code in WaveMaker Studio
+## Editing Generated Code in WaveMaker Studio
 
 To edit the generated code, you must have a WaveMaker account. Follow these steps:
 
 1. On the AutoCode preview screen, click **Edit in WaveMaker**.
 
-    ![locate edit in WaveMaker button](/learn/assets/autocode/edit_in_wm.png)
+![locate edit in WaveMaker button](/learn/assets/autocode/edit_in_wm.png)
 
 2. If you are not logged in, you will be redirected to the WaveMaker studio login screen. After logging in, enter a project name in the project creation dialog and click **Open Project**.
 
-    ![creating project](/learn/assets/autocode/create_project.png)
+![creating project](/learn/assets/autocode/create_project.png)
 
 3. This will create the project in WaveMaker Studio and redirect you to it, where you can edit the code.
 
-    ![WaveMaker project](/learn/assets/autocode/project_in_studio.png)
+![WaveMaker project](/learn/assets/autocode/project_in_studio.png)
 
 
 
