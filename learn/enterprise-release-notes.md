@@ -22,7 +22,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.10.3** <p style={{color:"red"}}>*latest*</p> | - [v11.10.3](/learn/wavemaker-release-notes/v11-10-3) | Includes impactful enhancements like users being able to select JWS and Opaque as security providers, Readable Version names for artifacts, and Case-insensitive sorting. This release will also include significant bug fixes related to Load on Demand property, Carousel widget, and many React Native bug fixes. | 10 March 2025 |
+|**v11.10.4** <p style={{color:"red"}}>*latest*</p> | - [v11.10.4](/learn/wavemaker-release-notes/v11-10-4) | This release is packed with numerous bug fixes for both Web and React Native platforms. It also includes important enhancements, including titles for web routes, customizing the base path while importing REST services in Web, support for Promises in Wizard widget, and introducing an aspect ratio property for images in React Native. | 21 March 2025 |
+|**v11.10.3** | - [v11.10.3](/learn/wavemaker-release-notes/v11-10-3) | Includes impactful enhancements like users being able to select JWS and Opaque as security providers, Readable Version names for artifacts, and Case-insensitive sorting. This release will also include significant bug fixes related to Load on Demand property, Carousel widget, and many React Native bug fixes. | 10 March 2025 |
 |**v11.10.2** | - [v11.10.2](/learn/wavemaker-release-notes/v11-10-2) | Includes important bug fixes across both Web and React Native platforms, enhancing user experience by improving performance and efficiency. | 19 February 2025 |
 |**v11.10.1** | - [v11.10.1](/learn/wavemaker-release-notes/v11-10-1) <br/> - [v11.10.0](/learn/wavemaker-release-notes/v11-10-0) | Introduces significant enhancements, including validations for the OpenID Security Provider and configurable tap and ripple effects in React Native, along with major bug fixes across both Web and React Native platforms.This release also has many powerful new features, including the ability to generate Migration Reports and export Prefabs as Web Components. This update emphasizes a seamless development experience with key upgrades like Expo 52, Angular 18, and database driver upgrades. Additionally, it addresses several critical bug fixes across both Web and React Native platforms, ensuring improved performance. | 07 February 2025 |
 |**v11.9.4** | - [v11.9.4](/learn/wavemaker-release-notes/v11-9-4) <br/> - [v11.9.3](/learn/wavemaker-release-notes/v11-9-3) - [v11.9.2](/learn/wavemaker-release-notes/v11-9-2) | Includes a transformed React Native Studio, now upgraded to the latest Angular version. This release also includes an enhancement to the Select widget dropdown, and various bug fixes. This release aims to significantly enhance the user experience by updating to the latest technology stack.  It is here with a new feature in React Native to make debugging quicker and easier using WavePulse and enhancements like Month and Year Support in the Date Widget. This release also includes major bug fixes canvas, project restoration and many React Native fixes.  Also includes efficient enhancements like Pinch-to-Zoom functionality on the Canvas and Skeleton Loader support for additional widgets in React Native. It also includes bug fixes related to the Database Designer, Artifact Update dialog, Bar and Column charts, and various other components. Additionally, this release includes key issues fixed in React Native. | 23 December 2024 |
@@ -82,7 +83,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.10.3](/learn/wavemaker-release-notes/v11-10-3)
+Last updated: [WaveMaker 11.10.4](/learn/wavemaker-release-notes/v11-10-4)
 
 ---
 
@@ -106,18 +107,18 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.2 -> 6.2.3 </td> |
+|  | Spring Framework | 6.2.3 |
 | Security framework | Spring Security | 6.4.2  |
-|  | Spring Data |  <td className="versiontdbgcolor"> 2024.1.2 -> 2024.1.3 </td> |
+|  | Spring Data |  2024.1.3 |
 |  | Spring Boot |   3.4.2 |
 |  | Spring Session | 3.4.1 |
-| Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.11.0 -> 2.12.1 </td> |
+| Java JSON utilities | Gson  |  2.12.1 |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
 | JSON library | Jackson |  2.18.2 |
 | Logging framework | SLF4j | 2.0.16 |
 | Logging Implementation | Log4j2 | 2.24.3 |
-| Http client library  | HttpComponents -  httpclient |  <td className="versiontdbgcolor"> 5.4.1 -> 5.4.2 </td> |
+| Http client library  | HttpComponents -  httpclient |  5.4.2 |
 | Servlet Framework |  | 6.0.0 |
 | Database Connection Pooling | HikariCP | 6.2.1  |
 |  | Commons Lang3 | 3.17.0  |
@@ -125,15 +126,15 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Postgresql Driver  | 42.7.4  |
 |  | Hibernate Validator | 8.0.2.Final |
 |  | Jgit | 7.1.0.202411261347-r |
-|  | Commons Codec | <td className="versiontdbgcolor"> 1.17.2 -> 1.18.0 </td> |
+|  | Commons Codec | 1.18.0 |
 |  | Commons IO | 2.18.0 |
 |  | Commons Text | 1.13.0 |
 |  | Antisamy | 1.7.7 |
 |  | Freemarker | 2.3.34 |
-|  | Apache Tika | <td className="versiontdbgcolor"> 3.0.0 -> 3.1.0 </td> |
-|  | Mariadb JDBC Driver | <td className="versiontdbgcolor"> 3.5.1 -> 3.5.2 </td> |
+|  | Apache Tika | 3.1.0 |
+|  | Mariadb JDBC Driver | 3.5.2 |
 |  | Mongodb Driver | 5.3.1 |
-|  | Jakarta Validation Api | <td className="versiontdbgcolor"> 3.1.0 -> 3.1.1 </td> |
+|  | Jakarta Validation Api | 3.1.1 |
 
 ### Runtime Environment
 
@@ -165,7 +166,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |Description|	Version|
 |---|---|
 |Java | 17/21 |
-|Node| 18.16.1 |
+|Node|  <td className="versiontdbgcolor">18.16.1 -> 18.17.1</td> |
 |Maven| 3.9.9 |
 |npm | 9.5.1 |
 |Ant| 1.10.11|
