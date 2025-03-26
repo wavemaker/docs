@@ -235,7 +235,7 @@
 							"items": [
 								"app-development/variables/variables",
 								"app-development/variables/model-variable",
-								"hybrid-mobile/device-variables"
+								"app-development/variables/device-variables"
 							]
 						},
 						{

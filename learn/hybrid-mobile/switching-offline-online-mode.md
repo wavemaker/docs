@@ -31,7 +31,7 @@ A tag in _index.html_ called ‘**wm-network-info-toaster**’ will display the 
 **NOTES**:
 
 - You can choose not to use this offline-online switch functionality. In such cases, you can remove the tag from index.html. [![](/learn/assets/offon_index.png)](/learn/assets/offon_index.png)
-- You can customize this functionality using the operations (getNetworkInfo, goOffline, goOnline) provided on ‘Device’ service. [see here for more on device variables](/learn/hybrid-mobile/device-variables/).
+- You can customize this functionality using the operations (getNetworkInfo, goOffline, goOnline) provided on ‘Device’ service. [see here for more on device variables](/learn/app-development/variables/device-variables/).
 
 B.1 Mobile Apps
 

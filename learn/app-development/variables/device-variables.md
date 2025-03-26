@@ -2,6 +2,7 @@
 title: "Device Variables"
 id: "device-variables"
 ---
+---
 
 **Device Variables** are specific to Mobile App projects. These are useful in performing operations specific to a Mobile Device like taking a picture and getting its path, select a contact, add events to a calendar, etc.
 
@@ -9,7 +10,7 @@ id: "device-variables"
 
 [![](/learn/assets/var_new_mobile.png)](/learn/assets/var_new_mobile.png)
 
-# Services
+## Services
 
 **Service** specifies the target service to be used. Each service is targeted to perform a set of operations for a feature. Available services are:
 
@@ -21,15 +22,16 @@ id: "device-variables"
 - **File** – you can upload files to your mobile device
 - **Scan** – can be used to access the barcode scanner.
 
-# Operations
+## Operations
 
 Based upon the service selected various operations are available.
 
-<table className="reference notranslate"><tbody><tr><td><p style={{textAlign:'left'}}><a href="#calendar">Calendar Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#createEvent">createEvent</a></td><td><a href="#deleteEvent">deleteEvent</a></td><td><a href="#getEvents">getEvents</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:'left'}}><a href="#camera">Camera Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#captureImage">captureImage</a></td><td><a href="#captureVideo">captureVideo</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:'left'}}><a href="#device">Contacts Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#getContacts">getContacts</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:'left'}}><a href="#device">Datasync Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#exportDB">exportDB</a></td><td><a href="#getOfflineChanges">getOfflineChanges</a></td><td><a href="#importDB">importDB</a></td></tr><tr><td><a href="#pull">Pull</a></td><td><a href="#push">Push</a></td></tr><tr><td><a href="#lastPullInfo">lastPullInfo</a></td><td><a href="#lastPushInfo">lastPushInfo</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:'left'}}><a href="#device">Device Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#getAppInfo">getAppInfo</a></td><td><a href="#getCurrentGeoPosition">getCurrentGeoPosition</a></td><td><a href="#getDeviceInfo">getDeviceInfo</a></td></tr><tr><td><a href="#getNetworkInfo">getNetworkInfo</a></td><td><a href="#vibrate">vibrate</a></td></tr><tr><td><a href="#goOnline">goOnline</a></td><td><a href="#goOffline">goOffline</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:'left'}}><a href="#file">File Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#upload">upload</a></td><td><a href="#openfile">OpenFile</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:'left'}}><a href="#scan">Scan Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#scanBarCode">scanBarCode</a></td></tr></tbody></table></td></tr></tbody></table>
+<table className="reference notranslate"><tbody><tr><td><p style={{textAlign:"left"}}><a href="#calendar-service-operations">Calendar Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#createevent">createEvent</a></td><td><a href="#deleteevent">deleteEvent</a></td><td><a href="#getevents">getevents</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:"left"}}><a href="#camera-service-operations">Camera Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#captureimage">captureImage</a></td><td><a href="#capturevideo">captureVideo</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:"left"}}><a href="#contacts-service-operations">Contacts Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#getcontacts">getContacts</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:"left"}}><a href="#datasync-service-operations">Datasync Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#exportdb">exportDB</a></td><td><a href="#getofflinechanges">getOfflineChanges</a></td><td><a href="#importdb">importDB</a></td></tr><tr><td><a href="#pull">Pull</a></td><td><a href="#push">Push</a></td></tr><tr><td><a href="#lastpullinfo">lastPullInfo</a></td><td><a href="#lastpushinfo">lastPushInfo</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:"left"}}><a href="#device-service-operations">Device Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#getappinfo">getAppInfo</a></td><td><a href="#getcurrentgeoposition">getCurrentGeoPosition</a></td><td><a href="#getdeviceinfo">getDeviceInfo</a></td></tr><tr><td><a href="#getnetworkinfo">getNetworkInfo</a></td><td><a href="#vibrate">vibrate</a></td></tr><tr><td><a href="#goonline">goOnline</a></td><td><a href="#gooffline">goOffline</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:"left"}}><a href="#file-service-operations">File Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#upload">upload</a></td><td><a href="#openfile">OpenFile</a></td></tr></tbody></table></td></tr><tr><td><p style={{textAlign:"left"}}><a href="#scan-service-operations">Scan Service Operations</a></p><div></div><table className="reference notranslate"><tbody><tr><td><a href="#scanbarcode">scanBarCode</a></td></tr></tbody></table></td></tr></tbody></table>
 
-## Calendar Service Operations
+### Calendar Service Operations
 
-**createEvent**: Creates calendar event in device
+#### **createEvent**
+Creates calendar event in device.
 
 | **Input Parameter** (from Data Tab) | **Description** | **Sample** |
 | --- | --- | --- |
@@ -39,7 +41,8 @@ Based upon the service selected various operations are available.
 | Event Start | specifies the start date and time of the event | 2016-09-20 10:35:38 AM (select value from date time input) |
 | Event End | specifies the end date and time  of the event | 2016-09-25 08:35:38 PM (select value from date time input) |
 
-**deleteEvent**: Deletes the calendar event in device satisfying the provided input, any combination of the below-mentioned parameters
+#### **deleteEvent**
+Deletes the calendar event in device satisfying the provided input, any combination of the below-mentioned parameters.
 
 | **Filter Parameter** (from Data Tab) | **Description** | **Sample** |
 | --- | --- | --- |
@@ -49,7 +52,8 @@ Based upon the service selected various operations are available.
 | Start Date | specifies the start date of the event | 2016-09-20 10:35:38 AM (select value from date time input) |
 | End Date | specifies the end date of the event | 2016-09-25 08:35:38 PM (select value from date time input) |
 
-**getEvents**: Retrieves the calendar events in device satisfying the provided input, any combination of the below-mentioned parameters. Returns array of objects, each object containing the same fields as input parameters.
+#### **getEvents**
+Retrieves the calendar events in device satisfying the provided input, any combination of the below-mentioned parameters. Returns array of objects, each object containing the same fields as input parameters.
 
 | **Behavior** | **Description** | **Sample** |
 | --- | --- | --- |
@@ -62,9 +66,10 @@ Based upon the service selected various operations are available.
 | Start Date | specifies the start date of the event | 2016-09-20 10:35:38 AM (select value from date time input) |
 | End Date | specifies the end date of the event | 2016-09-25 08:35:38 PM (select value from date time input) |
 
-## Camera Service Operations
+### Camera Service Operations
 
-**captureImage**: Capture image from the device camera
+#### **captureImage**
+Capture image from the device camera.
 
 | **Input Parameter** (from Data Tab) | **Description** | **Sample** |
 | --- | --- | --- |
@@ -79,11 +84,13 @@ Based upon the service selected various operations are available.
 To get smaller images, you can return a resized image by passing both targetHeight and targetWidth values. If these values are not set, it returns the original image captured by the camera.
 :::
 
-**captureVideo**: to capture video using the device camera
+#### **captureVideo**
+To capture video using the device camera.
 
-## Contacts Service Operations
+### Contacts Service Operations
 
-**getContacts**: Retrieves the device contacts list
+#### **getContacts**
+Retrieves the device contacts list.
 
 | **Input Parameter** (from Data Tab) | **Description** |
 | --- | --- |
@@ -92,11 +99,14 @@ To get smaller images, you can return a resized image by passing both targetHeig
 | Update data on input change | If checked, the component will be triggered automatically on the change of input data (as mentioned in the data tab) for the variable. |
 | Request data on page load | If checked, 'Page' variable will be triggered on page load while 'Application' variable will be triggered on application load. |
 
-**Output**: Returns array of objects, each object containing phoneNumber and displayName fields. **Example**: Sample Input: “Bob” (contact name) Result: Retrieves all the contacts containing string “Bob”
+**Output**: Returns array of objects, each object containing phoneNumber and displayName fields. 
 
-## DataSync Service Operations
+**Example**: Sample Input: “Bob” (contact name) Result: Retrieves all the contacts containing string “Bob”
 
-**exportDB**: Offline database is saved as zip in ‘Downloads’ folder in Android. In IOS, zip is stored in ‘Documents’ folder so that one can export from iPhone via iTunes. For the file to be visible in iTunes, File sharing needs to be enabled for the app in iOS preferences.
+### DataSync Service Operations
+
+#### **exportDB**
+Offline database is saved as zip in ‘Downloads’ folder in Android. In IOS, zip is stored in ‘Documents’ folder so that one can export from iPhone via iTunes. For the file to be visible in iTunes, File sharing needs to be enabled for the app in iOS preferences.
 
 | **Behavior** | **Description** |
 | --- | --- |
@@ -104,7 +114,8 @@ To get smaller images, you can return a resized image by passing both targetHeig
 | **Output** | **Description** |
 | path | Location of file |
 
-**getOfflineChanges**: Retrieves the changes made when offline
+#### **getOfflineChanges**
+Retrieves the changes made when offline.
 
 | **Output** | **Description** |
 | --- | --- |
@@ -112,13 +123,15 @@ To get smaller images, you can return a resized image by passing both targetHeig
 | pendingToSync | changes pending sync |
 | failedToSync | changes for which sync failed |
 
-**importDB**: Upon invocation, a file browser opens up to choose the zip file to import.
+#### **importDB**
+Upon invocation, a file browser opens up to choose the zip file to import.
 
 | **Behavior** | **Description** |
 | --- | --- |
 | Spinner Context | When the pull process is happening, a spinner will be shown in the container that is selected. By default, no context is selected and the spinner will not be shown |
 
-**Pull**: Pull changes from the server to the device
+#### **Pull**
+Pull changes from the server to the device.
 
 | **Behavior** | **Description** |
 | --- | --- |
@@ -129,7 +142,8 @@ To get smaller images, you can return a resized image by passing both targetHeig
 | completedTaskCount | the number of entities data has been pulled so far. |
 | inProgress | true when data pull process is going on, otherwise false |
 
-**Push**: Push changes to the server from the device
+#### **Push**
+Push changes to the server from the device.
 
 | **Behavior** | **Description** |
 | --- | --- |
@@ -141,7 +155,8 @@ To get smaller images, you can return a resized image by passing both targetHeig
 | totalTaskCount | The total number of local changes that need to be pushed to the server. |
 | inProgress |  true only when data push process is going on, otherwise false. |
 
-**lastPullInfo**: to get the last pull details
+#### **lastPullInfo**
+To get the last pull details.
 
 | **Behavior** | **Description** |
 | --- | --- |
@@ -153,7 +168,8 @@ To get smaller images, you can return a resized image by passing both targetHeig
 | startTime | Start time of pull operation. |
 | endTime | End time of pull operation. |
 
-**lastPushInfo**: to get the last push details
+#### **lastPushInfo**
+To get the last push details.
 
 | **Behavior** | **Description** |
 | --- | --- |
@@ -166,11 +182,13 @@ To get smaller images, you can return a resized image by passing both targetHeig
 | startTime | Start time of push operation. |
 | endTime | End time of push operation. |
 
-## Device Service Operations
+### Device Service Operations
 
-**getAppInfo**: Returns the version number of the app
+#### **getAppInfo**
+Returns the version number of the app.
 
-**getCurrentGeoPosition**: Returns the current location of the app
+#### **getCurrentGeoPosition**
+Returns the current location of the app.
 
 | **Input Parameter** (from Data Tab) | **Description** | **Sample** |
 | --- | --- | --- |
@@ -178,7 +196,8 @@ To get smaller images, you can return a resized image by passing both targetHeig
 | Maximum Age | specifies to accept a cached position whose age is no greater than the specified time in milliseconds. | any number, the default is 3 |
 | Timeout | represents the maximum length of time (milliseconds) that is allowed to pass from the call to navigator.geolocation.getCurrentPosition until the corresponding geolocationSuccess callback executes. If geolocationSuccess callback is not invoked within this time, geolocationError callback passes a PositionError.TIMEOUT error code. | any number, the default is 5 |
 
-**getDeviceInfo**: Returns the followingdevice information
+#### **getDeviceInfo**
+Returns the followingdevice information.
 
 | **Output** | **Description** |
 | --- | --- |
@@ -187,7 +206,8 @@ To get smaller images, you can return a resized image by passing both targetHeig
 | _OSversion_ | the operation system version. |
 | _deviceUUID_ | the device’s Universally Unique Identifier (UUID) |
 
-**getNetworkInfo**: Provides information whether device has internet connection
+#### **getNetworkInfo**
+Provides information whether device has internet connection.
 
 | **Output** | **Description** |
 | --- | --- |
@@ -197,58 +217,63 @@ To get smaller images, you can return a resized image by passing both targetHeig
 | _isConnecting_ | checks if the app is trying to connect to backend service |
 | _isNetworkAvailable_ | checks if network connection is available |
 
-**vibrate**: Vibrates the device programmatically
+#### **vibrate**
+Vibrates the device programmatically.
 
 | **_Input_ (from data tab)** | **Description** |
 | --- | --- |
 | _Vibration Time_ | seconds to vibrate the device. Default value is 2. |
 
-**goOffline**: Used to turn the mobile app to offline mode by blocking all network calls.
+#### **goOffline**
+Used to turn the mobile app to offline mode by blocking all network calls.
 
-**goOnline**: Used to turn the mobile app to online mode by blocking trying to connect to the backend server.
+#### **goOnline**
+Used to turn the mobile app to online mode by blocking trying to connect to the backend server.
 
-## File Service Operations
+### File Service Operations
 
-**OpenFile**: Opens files like pdf, document, excel and powerpoint. Note: A file can be opened if corresponding application is available on the mobile device. For example, a pdf file requires acrobat reader or another file that can open the pdf. When a remote file has to be opened for the first time, the file is downloaded. On subsequent calls to open the same file, the earlier downloaded file is just opened.
+#### **OpenFile**
+Opens files like pdf, document, excel and powerpoint. Note: A file can be opened if corresponding application is available on the mobile device. For example, a pdf file requires acrobat reader or another file that can open the pdf. When a remote file has to be opened for the first time, the file is downloaded. On subsequent calls to open the same file, the earlier downloaded file is just opened.
 
 | **Input Parameter** (from Data Tab) | **Description** | **Sample** |
 | --- | --- | --- |
 | _FileType_ | A string value that denotes the type of file to open. | The default value is pdf. Values can be pdf, doc, xls, ppt. |
 | _FilePath_ | A string value that denotes the URL of the file. | http://www.pdf995.com/samples/pdf.pdf) |
 
-**upload**: Retrieves the device contacts list
+#### **upload**
+Retrieves the device contacts list.
 
 | **Input Parameter** (from Data Tab) | **Description** |
 | --- | --- |
 | _localFile_ | specifies the file path on the device. remoteFolder represents the folder path on the server to save the uploaded image. If empty, then images gets saved to `/wavemaker/appdata//uploads` |
 
-## Scan Service Operations
+### Scan Service Operations
 
-**scanBarCode**: to access the barcode scanner.
+#### **scanBarCode**
+To access the barcode scanner.
 
-# Events
+## Events
 
 1. **On Error**: The event is fired on the error of the device variable.
 2. **On Success**: The event is fired on the success of the device variable.
 3. **On Before:** This event is fired before starting the pull/push for the dataSync variable.
 4. **On Progress:** This event is fired during the pull/push for the dataSync variable.
 
-# Methods
+## Methods
 
-## invoke(options)
+### invoke(options)
 
 This method invokes the device variable
 
-_Parameters_:
-```
+**Parameters**:
+
 - **options**(object)
 - success (callback)
 - error (callback)
-```
 
-_Return Value_: None
+**Return Value**: None
 
-_Example:_
+**Example**:
 
 ```
 // Example 1: Notify with default set properties
