@@ -21,6 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
+|[WaveMaker 11.10.5](/learn/wavemaker-release-notes/v11-10-5) <p style={{color:"green"}}>*upcoming*</p> | ​WaveMaker's Release 11.10.5 will be here with significant enhancements for web applications, including the ability to export projects as Angular ZIP files and the option to set dynamic titles for expanding and collapsing rows in Data Tables. This release also includes numerous important bug fixes across both Web and React Native platforms. | 31 March 2025 |
 |[WaveMaker 11.10.4](/learn/wavemaker-release-notes/v11-10-4) <p style={{color:"red"}}>*latest*</p> | ​WaveMaker's Release 11.10.4 is packed with numerous bug fixes for both Web and React Native platforms. This update also features important enhancements, including titles for web routes, customizing the base path while importing REST services in Web, support for Promises in Wizard widget, and introducing an aspect ratio property for images in React Native. | 17 March 2025 |
 |[WaveMaker 11.10.3](/learn/wavemaker-release-notes/v11-10-3) | WaveMaker's Release 11.10.3 is here with impactful enhancements like users being able to select JWS and Opaque as security providers, Readable Version names for artifacts, and Case-insensitive sorting. This release will also include significant bug fixes related to Load on Demand property, Carousel widget, and many React Native bug fixes. | 03 March 2025 |
 |[WaveMaker 11.10.2](/learn/wavemaker-release-notes/v11-10-2) | WaveMaker's Release 11.10.2 introduces significant bug fixes across both Web and React Native platforms, enhancing user experience by improving performance and efficiency. | 17 February 2025 |
@@ -177,22 +178,22 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | 6.2.3 |
-| Security framework | Spring Security | 6.4.2  |
-|  | Spring Data |  2024.1.3 |
-|  | Spring Boot |   3.4.2 |
-|  | Spring Session | 3.4.1 |
+|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.3 -> 6.2.5 </td> |
+| Security framework | Spring Security | <td className="versiontdbgcolor">6.4.3 -> 6.4.4 </td>  |
+|  | Spring Data |  <td className="versiontdbgcolor"> 2024.1.3 -> 2024.1.4 </td> |
+|  | Spring Boot |   <td className="versiontdbgcolor"> 3.4.3 -> 3.4.4 </td> |
+|  | Spring Session | 3.4.2 |
 | Java JSON utilities | Gson  |  2.12.1 |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
-| JSON library | Jackson |  2.18.2 |
-| Logging framework | SLF4j | 2.0.16 |
+| JSON library | Jackson |  2.18.3 |
+| Logging framework | SLF4j | 2.0.17 |
 | Logging Implementation | Log4j2 | 2.24.3 |
 | Http client library  | HttpComponents -  httpclient |  5.4.2 |
 | Servlet Framework |  | 6.0.0 |
 | Database Connection Pooling | HikariCP | 6.2.1  |
 |  | Commons Lang3 | 3.17.0  |
-|  | Guava | 33.4.0-jre |
+|  | Guava | <td className="versiontdbgcolor"> 33.4.0-jre -> 33.4.5-jre </td> |
 |  | Postgresql Driver  | 42.7.4  |
 |  | Hibernate Validator | 8.0.2.Final |
 |  | Jgit | 7.1.0.202411261347-r |
@@ -203,8 +204,9 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Freemarker | 2.3.34 |
 |  | Apache Tika | 3.1.0 |
 |  | Mariadb JDBC Driver | 3.5.2 |
-|  | Mongodb Driver | 5.3.1 |
+|  | Mongodb Driver | <td className="versiontdbgcolor"> 5.3.1 -> 5.4.0 </td> |
 |  | Jakarta Validation Api | 3.1.1 |
+
 
 ### Runtime Environment
 
@@ -236,7 +238,7 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 |Description|	Version|
 |---|---|
 |Java | 17/21 |
-|Node|  <td className="versiontdbgcolor">18.16.1 -> 18.17.1</td> |
+|Node|  18.17.1 |
 |Maven| 3.9.9 |
 |npm | 9.5.1 |
 |Ant| 1.10.11|
