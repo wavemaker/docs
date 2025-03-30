@@ -21,8 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.10.5](/learn/wavemaker-release-notes/v11-10-5) <p style={{color:"green"}}>*upcoming*</p> | ​WaveMaker's Release 11.10.5 will be here with significant enhancements for web applications, including the ability to export projects as Angular ZIP files and the option to set dynamic titles for expanding and collapsing rows in Data Tables. This release also includes numerous important bug fixes across both Web and React Native platforms. | 31 March 2025 |
-|[WaveMaker 11.10.4](/learn/wavemaker-release-notes/v11-10-4) <p style={{color:"red"}}>*latest*</p> | ​WaveMaker's Release 11.10.4 is packed with numerous bug fixes for both Web and React Native platforms. This update also features important enhancements, including titles for web routes, customizing the base path while importing REST services in Web, support for Promises in Wizard widget, and introducing an aspect ratio property for images in React Native. | 17 March 2025 |
+|[WaveMaker 11.10.5](/learn/wavemaker-release-notes/v11-10-5) <p style={{color:"red"}}>*latest*</p> | ​WaveMaker's Release 11.10.5 introduces significant enhancements for web applications, including the ability to export projects as Angular ZIP files and the option to set dynamic titles for expanding and collapsing rows in Data Tables. In React Native, this release adds the capability to capture images using custom text. Additionally, numerous important bug fixes have been implemented across both Web and React Native platforms. | 31 March 2025 |
+|[WaveMaker 11.10.4](/learn/wavemaker-release-notes/v11-10-4)  | ​WaveMaker's Release 11.10.4 is packed with numerous bug fixes for both Web and React Native platforms. This update also features important enhancements, including titles for web routes, customizing the base path while importing REST services in Web, support for Promises in Wizard widget, and introducing an aspect ratio property for images in React Native. | 17 March 2025 |
 |[WaveMaker 11.10.3](/learn/wavemaker-release-notes/v11-10-3) | WaveMaker's Release 11.10.3 is here with impactful enhancements like users being able to select JWS and Opaque as security providers, Readable Version names for artifacts, and Case-insensitive sorting. This release will also include significant bug fixes related to Load on Demand property, Carousel widget, and many React Native bug fixes. | 03 March 2025 |
 |[WaveMaker 11.10.2](/learn/wavemaker-release-notes/v11-10-2) | WaveMaker's Release 11.10.2 introduces significant bug fixes across both Web and React Native platforms, enhancing user experience by improving performance and efficiency. | 17 February 2025 |
 |[WaveMaker 11.10.1](/learn/wavemaker-release-notes/v11-10-1) |  WaveMaker Release 11.10.1 is here with significant enhancements like Validations for OpenID Security Provider and Configurable Tap and Ripple Effect in React Native. This release also includes many major bug fixes from both Web and React Native platforms. |03 February 2025 |
@@ -216,7 +216,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | WebSphere Liberty | 23.0.0.9+ |
 | JBoss Wildfly | 27+ |
 | Tomcat | 10.1.31 |
-| Android <br/> iOS | 13.0.0 <br/> 17.5 |
+
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
@@ -237,14 +237,14 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 
 |Description|	Version|
 |---|---|
-|Java | 17/21 |
+|Java | 17 |
 |Node|  18.17.1 |
 |Maven| 3.9.9 |
 |npm | 9.5.1 |
-|Ant| 1.10.11|
-| Android Studio | Ladybug 2024.2.1 |
+| Android Studio | <td className="versiontdbgcolor"> Ladybug 2024.2.1 -> Ladybug 2024.2.2 </td> |
+| Xcode | <td className="versiontdbgcolor"> version 15.4 </td> |
 | SDK Build Tools | 34.0.0|
-| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | 1.8.6 |
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.6 -> 1.8.8 </td> |
 | Android Gradle Plugin (AGP) | 8.3 - 8.7 |
 
 :::note
@@ -260,7 +260,7 @@ Please ensure that your [Android Studio](https://developer.android.com/studio/re
 | Expo | 52.0.0 |
 | React Native | 0.76 |
 
-### Angular Web and React Native Mobile
+### Angular Web 
 
 |Description|	Version|
 |---|---|
