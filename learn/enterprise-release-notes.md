@@ -22,7 +22,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version|Releases Include|What's in it| Release Date|
 |---|---|---|---|
-|**v11.10.4** <p style={{color:"red"}}>*latest*</p> | - [v11.10.4](/learn/wavemaker-release-notes/v11-10-4) | This release is packed with numerous bug fixes for both Web and React Native platforms. It also includes important enhancements, including titles for web routes, customizing the base path while importing REST services in Web, support for Promises in Wizard widget, and introducing an aspect ratio property for images in React Native. | 21 March 2025 |
+|**v11.10.5** <p style={{color:"red"}}>*latest*</p> | - [v11.10.5](/learn/wavemaker-release-notes/v11-10-5) | This release introduces significant enhancements for web applications, including the ability to export projects as Angular ZIP files and the option to set dynamic titles for expanding and collapsing rows in Data Tables. In React Native, this release adds the capability to capture images using custom text. Additionally, numerous important bug fixes have been implemented across both Web and React Native platforms. | 03 April 2025 |
+|**v11.10.4** | - [v11.10.4](/learn/wavemaker-release-notes/v11-10-4) | This release is packed with numerous bug fixes for both Web and React Native platforms. It also includes important enhancements, including titles for web routes, customizing the base path while importing REST services in Web, support for Promises in Wizard widget, and introducing an aspect ratio property for images in React Native. | 21 March 2025 |
 |**v11.10.3** | - [v11.10.3](/learn/wavemaker-release-notes/v11-10-3) | Includes impactful enhancements like users being able to select JWS and Opaque as security providers, Readable Version names for artifacts, and Case-insensitive sorting. This release will also include significant bug fixes related to Load on Demand property, Carousel widget, and many React Native bug fixes. | 10 March 2025 |
 |**v11.10.2** | - [v11.10.2](/learn/wavemaker-release-notes/v11-10-2) | Includes important bug fixes across both Web and React Native platforms, enhancing user experience by improving performance and efficiency. | 19 February 2025 |
 |**v11.10.1** | - [v11.10.1](/learn/wavemaker-release-notes/v11-10-1) <br/> - [v11.10.0](/learn/wavemaker-release-notes/v11-10-0) | Introduces significant enhancements, including validations for the OpenID Security Provider and configurable tap and ripple effects in React Native, along with major bug fixes across both Web and React Native platforms.This release also has many powerful new features, including the ability to generate Migration Reports and export Prefabs as Web Components. This update emphasizes a seamless development experience with key upgrades like Expo 52, Angular 18, and database driver upgrades. Additionally, it addresses several critical bug fixes across both Web and React Native platforms, ensuring improved performance. | 07 February 2025 |
@@ -83,7 +84,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.10.4](/learn/wavemaker-release-notes/v11-10-4)
+Last updated: [WaveMaker 11.10.5](/learn/wavemaker-release-notes/v11-10-5)
 
 ---
 
@@ -107,22 +108,22 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | 6.2.3 |
-| Security framework | Spring Security | 6.4.2  |
-|  | Spring Data |  2024.1.3 |
-|  | Spring Boot |   3.4.2 |
-|  | Spring Session | 3.4.1 |
+|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.3 -> 6.2.5 </td> |
+| Security framework | Spring Security | <td className="versiontdbgcolor">6.4.3 -> 6.4.4 </td>  |
+|  | Spring Data |  <td className="versiontdbgcolor"> 2024.1.3 -> 2024.1.4 </td> |
+|  | Spring Boot |   <td className="versiontdbgcolor"> 3.4.3 -> 3.4.4 </td> |
+|  | Spring Session | 3.4.2 |
 | Java JSON utilities | Gson  |  2.12.1 |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
-| JSON library | Jackson |  2.18.2 |
-| Logging framework | SLF4j | 2.0.16 |
+| JSON library | Jackson |  2.18.3 |
+| Logging framework | SLF4j | 2.0.17 |
 | Logging Implementation | Log4j2 | 2.24.3 |
 | Http client library  | HttpComponents -  httpclient |  5.4.2 |
 | Servlet Framework |  | 6.0.0 |
 | Database Connection Pooling | HikariCP | 6.2.1  |
 |  | Commons Lang3 | 3.17.0  |
-|  | Guava | 33.4.0-jre |
+|  | Guava | <td className="versiontdbgcolor"> 33.4.0-jre -> 33.4.5-jre </td> |
 |  | Postgresql Driver  | 42.7.4  |
 |  | Hibernate Validator | 8.0.2.Final |
 |  | Jgit | 7.1.0.202411261347-r |
@@ -133,8 +134,9 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Freemarker | 2.3.34 |
 |  | Apache Tika | 3.1.0 |
 |  | Mariadb JDBC Driver | 3.5.2 |
-|  | Mongodb Driver | 5.3.1 |
+|  | Mongodb Driver | <td className="versiontdbgcolor"> 5.3.1 -> 5.4.0 </td> |
 |  | Jakarta Validation Api | 3.1.1 |
+
 
 ### Runtime Environment
 
@@ -165,14 +167,14 @@ With the release of 11.4, we have ended our support for WaveMaker 10 projects. T
 
 |Description|	Version|
 |---|---|
-|Java | 17/21 |
-|Node|  <td className="versiontdbgcolor">18.16.1 -> 18.17.1</td> |
+|Java | 17 |
+|Node|  18.17.1 |
 |Maven| 3.9.9 |
 |npm | 9.5.1 |
-|Ant| 1.10.11|
-| Android Studio | Ladybug 2024.2.1 |
+| Android Studio | <td className="versiontdbgcolor"> Ladybug 2024.2.1 -> Ladybug 2024.2.2 </td> |
+| Xcode | <td className="versiontdbgcolor"> version 15.4 </td> |
 | SDK Build Tools | 34.0.0|
-| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | 1.8.6 |
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.6 -> 1.8.8 </td> |
 | Android Gradle Plugin (AGP) | 8.3 - 8.7 |
 
 :::note
@@ -188,7 +190,7 @@ Please ensure that your [Android Studio](https://developer.android.com/studio/re
 | Expo | 52.0.0 |
 | React Native | 0.76 |
 
-### Angular Web and React Native Mobile
+### Angular Web
 
 |Description|	Version|
 |---|---|
