@@ -13,6 +13,38 @@ To develop fully Native apps, you do not need to learn additional programming sk
 
 ## Architecture
 
+### same line single <Flag name="android" />
+
+### same line multiple <Flag name="native" /> <Flag name="web" />
+
+### next line single
+<Flag name="native" style={{marginLeft:0}}/>
+
+### next line multiple
+<Flag name="native" style={{marginLeft:0}}/> <Flag name="android" /> <Flag name="ios" /> <Flag name="web"/>
+
+### default style for new flags <Flag name="some custom text" />
+
+## Example use cases
+
+### this section is only applicable for native <Flag name="native" />
+some description
+
+### this section is only applicable for web <Flag name="web" />
+some description
+
+### some other section
+some text
+
+<Flag name="web" style={{marginLeft:0}}/> - some web specific things
+
+<br />
+<br />
+<br />
+<Flag name="native" style={{marginLeft:0}}/>
+
+some native specific details, long para
+
 React Native is a mobile app framework from Facebook. It is based on ReactJS principles (Virtual DOM). You can define app UI using the React Native markup and extensions in JavaScript. React Native will render UI using native UI controls similar to native apps based on the UI definition in runtime.
 
 ![React Native Architecture](/learn/assets/react-native-architecture.png)
