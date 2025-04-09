@@ -158,176 +158,120 @@ Last updated: [WaveMaker 11.10.4](/learn/wavemaker-release-notes/v11-10-4)
 
 ---
 
-## Web
+Here's a cleaner and more structured way to present the technology stack, making it easier to read and navigate:  
 
-### UI Frameworks
+---
 
-| Description | JS Library | Version |
-| --- | --- | --- |
-| JS Binding | jquery |  3.7.1 |
-|  | jquery-ui* | 1.13.3 |
-| MVC Framework | Angular |  18.2.13  |
-|  | ngx-bootstrap | 9.0.0 |
-| Styles | bootstrap | 3.3.7 |
-| Charting | d3 | 7.8.5 |
-|  | nvd3 | 1.8.11 |
-| Built-in functions | lodash-es | 4.17.21|
-| Device support, gestures | hammerjs | 2.0.8 |
+# **Technology Stack Overview**
 
-Optimized jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
+## Web Stack
+### Frontend
 
+| Category          | Library/Framework  | Version  |
+|------------------|-------------------|----------|
+| **JS Binding**  | jQuery            | 3.7.1    |
+| **JS UI**       | jQuery-UI*        | 1.13.3   |
+| **MVC Framework** | Angular          | 18.2.13  |
+| **UI Components** | ngx-bootstrap    | 9.0.0    |
+| **Styles**      | Bootstrap         | 3.3.7    |
+| **Charting**    | d3                | 7.8.5    |
+|                 | nvd3              | 1.8.11   |
+| **Utilities**   | lodash-es         | 4.17.21  |
+| **Gestures**    | hammerjs          | 2.0.8    |
 
-### Backend Frameworks
+> **Note**: jQuery-UI has been optimized to exclude unused components like accordion, datepicker, dialog, progress bar, spinner, tabs, and effects.
 
-| Description | Java Library | Version |
-| --- | --- |--------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.3 -> 6.2.5 </td> |
-| Security framework | Spring Security | <td className="versiontdbgcolor">6.4.3 -> 6.4.4 </td>  |
-|  | Spring Data |  <td className="versiontdbgcolor"> 2024.1.3 -> 2024.1.4 </td> |
-|  | Spring Boot |   <td className="versiontdbgcolor"> 3.4.3 -> 3.4.4 </td> |
-|  | Spring Session | 3.4.2 |
-| Java JSON utilities | Gson  |  2.12.1 |
-| DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
-| Sample database | HSQL | 2.7.4 |
-| JSON library | Jackson |  2.18.3 |
-| Logging framework | SLF4j | 2.0.17 |
-| Logging Implementation | Log4j2 | 2.24.3 |
-| Http client library  | HttpComponents -  httpclient |  5.4.2 |
-| Servlet Framework |  | 6.0.0 |
-| Database Connection Pooling | HikariCP | 6.2.1  |
-|  | Commons Lang3 | 3.17.0  |
-|  | Guava | <td className="versiontdbgcolor"> 33.4.0-jre -> 33.4.5-jre </td> |
-|  | Postgresql Driver  | 42.7.4  |
-|  | Hibernate Validator | 8.0.2.Final |
-|  | Jgit | 7.1.0.202411261347-r |
-|  | Commons Codec | 1.18.0 |
-|  | Commons IO | 2.18.0 |
-|  | Commons Text | 1.13.0 |
-|  | Antisamy | 1.7.7 |
-|  | Freemarker | 2.3.34 |
-|  | Apache Tika | 3.1.0 |
-|  | Mariadb JDBC Driver | 3.5.2 |
-|  | Mongodb Driver | <td className="versiontdbgcolor"> 5.3.1 -> 5.4.0 </td> |
-|  | Jakarta Validation Api | 3.1.1 |
+### Backend
+| Category                        | Library               | Version           |
+|---------------------------------|----------------------|-------------------|
+| **Core Framework**              | Spring Framework     | 6.2.3 → 6.2.5    |
+| **Security**                    | Spring Security      | 6.4.3 → 6.4.4    |
+| **Data Handling**               | Spring Data          | 2024.1.3 → 2024.1.4 |
+| **Bootstrapping**               | Spring Boot         | 3.4.3 → 3.4.4    |
+| **Session Management**          | Spring Session      | 3.4.2           |
+| **JSON Handling**               | Gson                 | 2.12.1           |
+|                                 | Jackson              | 2.18.3           |
+| **ORM / Database**              | Hibernate (Jakarta)  | 5.6.15.Final     |
+|                                 | HSQL                 | 2.7.4           |
+| **Logging**                     | SLF4j                | 2.0.17           |
+|                                 | Log4j2               | 2.24.3           |
+| **HTTP Client**                 | HttpComponents       | 5.4.2            |
+| **Servlet Framework**           | Jakarta Servlet      | 6.0.0            |
+| **Database Connectivity**       | HikariCP             | 6.2.1            |
+| **Common Utilities**            | Commons Lang3        | 3.17.0           |
+|                                 | Guava                | 33.4.0-jre → 33.4.5-jre |
+| **Database Drivers**            | PostgreSQL Driver    | 42.7.4           |
+|                                 | MariaDB JDBC Driver  | 3.5.2            |
+|                                 | MongoDB Driver       | 5.3.1 → 5.4.0    |
+| **Validation**                  | Hibernate Validator  | 8.0.2.Final      |
+|                                 | Jakarta Validation API | 3.1.1          |
+| **Additional Libraries**        | JGit                 | 7.1.0            |
+|                                 | Commons Codec        | 1.18.0           |
+|                                 | Commons IO           | 2.18.0           |
+|                                 | Commons Text         | 1.13.0           |
+|                                 | AntiSamy             | 1.7.7            |
+|                                 | Freemarker           | 2.3.34           |
+|                                 | Apache Tika         | 3.1.0            |
 
+---
 
-### Runtime Environment
+## Mobile Stack
+### Frontend
 
-| Description | Version |
-| --- | --- |
-| JDK | 17/21 |
-| WebSphere Liberty | 23.0.0.9+ |
-| JBoss Wildfly | 27+ |
-| Tomcat | 10.1.31 |
+(Same as Web Stack)
 
+### Backend
+(Same as Web Stack)
 
-This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
+---
 
-### Angular Web 
+## Runtime Environments
+| Environment  | Version |
+|-------------|---------|
+| **JDK**     | 17 / 21 |
+| **WebSphere Liberty** | 23.0.0.9+ |
+| **JBoss Wildfly** | 27+ |
+| **Tomcat**  | 10.1.31 |
 
-|Description|	Version|
-|---|---|
-|Java | 17/21 |
-|Node| 22.11.0 |
-|Maven| 3.9.9 |
-|npm | 10.9.0 |
-|Ant| 1.10.11|
+> **Note**: Default runtime is Tomcat, but applications can be deployed on any Java Web Server running JDK 11+.
 
-:::note
-The Node upgrade applies only to Web applications, while React Native applications will continue using Node version 18.
-:::
+---
 
-For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
+## Development Environment
+### Web
+| Tool  | Version  |
+|-------|---------|
+| **Java**  | 17 / 21  |
+| **Node.js**  | 22.11.0  |
+| **Maven**  | 3.9.9  |
+| **npm**  | 10.9.0  |
+| **Ant**  | 1.10.11  |
 
+> **Note**: Node.js upgrade applies only to Web applications. React Native apps continue using Node.js 18.
 
-## Mobile
+### Mobile
+| Tool | Version |
+|------|---------|
+| **Java** | 17 |
+| **Node.js** | 18.17.1 |
+| **Maven** | 3.9.9 |
+| **npm** | 9.5.1 |
+| **Android Studio** | Ladybug 2024.2.1 → Ladybug 2024.2.2 |
+| **Xcode** | 15.4 |
+| **SDK Build Tools** | 34.0.0 |
+| **wm-reactnative-cli** | 1.8.6 → 1.8.8 |
+| **Android Gradle Plugin** | 8.3 - 8.7 |
 
-### UI Frameworks
+> **Note**: Android Studio must be **Iguana | 2023.2.1 or above**. Recommended version: **Ladybug | 2024.2.1** with **AGP 8.3+**.
 
-| Description | JS Library | Version |
-| --- | --- | --- |
-| JS Binding | jquery |  3.7.1 |
-|  | jquery-ui* | 1.13.3 |
-| MVC Framework | Angular |  18.2.13  |
-|  | ngx-bootstrap | 9.0.0 |
-| Styles | bootstrap | 3.3.7 |
-| Charting | d3 | 7.8.5 |
-|  | nvd3 | 1.8.11 |
-| Built-in functions | lodash-es | 4.17.21|
-| Device support, gestures | hammerjs | 2.0.8 |
+---
 
-Optimized jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
+## SDK Updates
+| SDK  | Version |
+|------|---------|
+| **Expo** | 52.0.0 |
+| **React Native** | 0.76 |
 
-
-### Backend Frameworks
-
-| Description | Java Library | Version |
-| --- | --- |--------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.3 -> 6.2.5 </td> |
-| Security framework | Spring Security | <td className="versiontdbgcolor">6.4.3 -> 6.4.4 </td>  |
-|  | Spring Data |  <td className="versiontdbgcolor"> 2024.1.3 -> 2024.1.4 </td> |
-|  | Spring Boot |   <td className="versiontdbgcolor"> 3.4.3 -> 3.4.4 </td> |
-|  | Spring Session | 3.4.2 |
-| Java JSON utilities | Gson  |  2.12.1 |
-| DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
-| Sample database | HSQL | 2.7.4 |
-| JSON library | Jackson |  2.18.3 |
-| Logging framework | SLF4j | 2.0.17 |
-| Logging Implementation | Log4j2 | 2.24.3 |
-| Http client library  | HttpComponents -  httpclient |  5.4.2 |
-| Servlet Framework |  | 6.0.0 |
-| Database Connection Pooling | HikariCP | 6.2.1  |
-|  | Commons Lang3 | 3.17.0  |
-|  | Guava | <td className="versiontdbgcolor"> 33.4.0-jre -> 33.4.5-jre </td> |
-|  | Postgresql Driver  | 42.7.4  |
-|  | Hibernate Validator | 8.0.2.Final |
-|  | Jgit | 7.1.0.202411261347-r |
-|  | Commons Codec | 1.18.0 |
-|  | Commons IO | 2.18.0 |
-|  | Commons Text | 1.13.0 |
-|  | Antisamy | 1.7.7 |
-|  | Freemarker | 2.3.34 |
-|  | Apache Tika | 3.1.0 |
-|  | Mariadb JDBC Driver | 3.5.2 |
-|  | Mongodb Driver | <td className="versiontdbgcolor"> 5.3.1 -> 5.4.0 </td> |
-|  | Jakarta Validation Api | 3.1.1 |
-
-### Environment Setup
-
-|Description|	Version|
-|---|---|
-|Java | 17 |
-|Node|  18.17.1 |
-|Maven| 3.9.9 |
-|npm | 9.5.1 |
-| Android Studio | <td className="versiontdbgcolor"> Ladybug 2024.2.1 -> Ladybug 2024.2.2 </td> |
-| Xcode | <td className="versiontdbgcolor"> version 15.4 </td> |
-| SDK Build Tools | 34.0.0|
-| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.6 -> 1.8.8 </td> |
-| Android Gradle Plugin (AGP) | 8.3 - 8.7 |
-
-
-:::note
-It is required to use Android Studio version be **Iguana | 2023.2.1** or above and Android Gradle Plugin(AGP) version be **8.3** and above. The recommended versions for Android Studio is **Ladybug | 2024.2.1** and AGP is **8.3**.
-
-Please ensure that your [Android Studio](https://developer.android.com/studio/releases#android_gradle_plugin_and_android_studio_compatibility) has a compatible version of the [AGP](https://developer.android.com/build/releases/past-releases/agp-8-3-0-release-notes#compatibility). Additionally, verify the compatibility of the AGP with the SDK build tools version, JDK, and Gradle version.
-:::
-
-### SDK Update
-
-|Description|	Version|
-|---|---|
-| Expo | 52.0.0 |
-| React Native | 0.76 |
-
-### Runtime Environment
-
-| Description | Version |
-| --- | --- |
-| JDK | 17 |
-| WebSphere Liberty | 23.0.0.9+ |
-| JBoss Wildfly | 27+ |
-| Tomcat | 10.1.31 |
 
 ## Older Releases
 
