@@ -12,15 +12,21 @@ A Chart Tooltip is an element that appears when you hover over or interact with 
 
 <img src={charttooltip} style={{width:300}}/>
 
-## Configuring Chart Tooltip
+### WaveMaker Default Tooltip
 
-​When working with Tooltips in the Chart widget, you have two approaches:​
+By default, we have Chart tooltip that displays the x-axis and y-axis values as shown below.
 
-- Customize the Default Tooltip that is automatically rendered with the Chart widget to better suit your needs.​
-- Create a new tooltip specifically tailored for your chart's requirements.
+image
+
+## Customizing Chart Tooltip
+
+You can add the basic style changes like font, background color, and text size of the default Tooltip by the given [CSS classes](#customizing-the-default-tooltip).
 
 
-## Customizing the Default Tooltip
+In cases where you need to create a completely different Tooltip where changes are done to the Tooltip content, you can easily create a custom Tooltip by following steps in [Custom Tooltip](#creating-partial-for-tooltip-and-binding-it-to-chart). 
+
+
+## Styling Default Tooltip
 
 A Tooltip can be categorized into four segments for customization.
 
@@ -75,7 +81,7 @@ A Tooltip can be categorized into four segments for customization.
 ```
 
 
-## Creating Partial for Tooltip and Binding it to Chart
+## Creating Custom Tooltip
 
 A Partial can be created as a Tooltip for a chart in your application. This approach allows you to reuse the Partial with the tooltip across the application in any number of instances.
 
