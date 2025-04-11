@@ -5,30 +5,43 @@ sidebar_label: "Chart Tooltips"
 ---
 ---
 
-import charttooltipparts from '/learn/assets/chart-tooltip-parts.png';
-import charttooltip from '/learn/assets/chart-tooltip.png';
+import charttooltipparts from '/learn/assets/charttooltip-parts.png';
+import charttooltip from '/learn/assets/charttooltip.png';
+import defaultcharttooltip from '/learn/assets/default-tooltip.png';
+import customcharttooltip from '/learn/assets/charttooltip-example.png';
+import styledcharttooltip from '/learn/assets/styled-tooltip.png';
 
 A Chart Tooltip is an element that appears when you hover over or interact with a specific data point or component within a chart. This floating text box provides additional information about the data point, such as its exact value, category, or other relevant details, enhancing user understanding of the chart.
 
 <img src={charttooltip} style={{width:300}}/>
 
-### WaveMaker Default Tooltip
+## WaveMaker Inbuilt Tooltip
 
 By default, we have Chart tooltip that displays the x-axis and y-axis values as shown below.
 
-image
+<img src={defaultcharttooltip} style={{width:300}}/>
 
 ## Customizing Chart Tooltip
 
 You can add the basic style changes like font, background color, and text size of the default Tooltip by the given [CSS classes](#customizing-the-default-tooltip).
 
+<img src={styledcharttooltip} style={{width:300}}/>
 
-In cases where you need to create a completely different Tooltip where changes are done to the Tooltip content, you can easily create a custom Tooltip by following steps in [Custom Tooltip](#creating-partial-for-tooltip-and-binding-it-to-chart). 
+:::note
+
+CSS classes for styling are Chart specific.
+
+:::
 
 
-## Styling Default Tooltip
+In cases where you need to create a completely different Tooltip where changes are done to the Tooltip content, you can easily create a custom Tooltip by following steps in [Custom Tooltip](#creating-partial-for-tooltip-and-binding-it-to-chart).
 
-A Tooltip can be categorized into four segments for customization.
+<img src={customcharttooltip} style={{width:300}}/>
+
+
+## Styling Inbuilt Tooltip
+
+The Tooltip provided by default can be categorized into four segments for customization.
 
 - **Tooltip Container**: The main box that holds the tooltip content.​
 - **Tooltip Pointer**: The small arrow or indicator pointing to the data point.​
@@ -44,7 +57,7 @@ A Tooltip can be categorized into four segments for customization.
 
 ```css
 
-.app-area-chart-tooltip-container {
+.app-column-chart-tooltip-container {
   /* Your styles here */
 }
 
@@ -54,7 +67,7 @@ A Tooltip can be categorized into four segments for customization.
 
 ```css
 
-.app-area-chart-tooltip-pointer {
+.app-column-chart-tooltip-pointer {
   /* Your styles here */
 }
 
@@ -64,7 +77,7 @@ A Tooltip can be categorized into four segments for customization.
 
 ```css
 
-.app-area-chart-tooltipx-text {
+.app-column-chart-tooltipx-text {
   /* Your styles here */
 }
 
@@ -74,11 +87,32 @@ A Tooltip can be categorized into four segments for customization.
 
 ```css
 
-.app-area-chart-tooltipy-text {
+.app-column-chart-tooltipy-text {
   /* Your styles here */
 }
 
 ```
+
+### Styling Tooltip Pointer
+
+The properties to style the Tooltip pointer using the CSS class, `.app-column-chart-tooltip-pointer` are given below.
+
+```css
+/* To change the pointer color use border-bottom-color property */
+
+border-bottom-color: "blue";
+
+/* To change the height of the pointer use border-left-width and border-right-width properties  */
+
+border-left-width: 10px;
+border-right-width: 10px;
+
+/* To change the width of pointer use border-bottom-width property */
+
+border-bottom-width: 15px;
+
+```
+
 
 
 ## Creating Custom Tooltip
