@@ -23,7 +23,7 @@ By default, we have Chart tooltip that displays the x-axis and y-axis values as 
 
 ## Customizing Chart Tooltip
 
-You can add the basic style changes like font, background color, and text size of the default Tooltip by the given [CSS classes](#customizing-the-default-tooltip).
+You can add the basic style changes like font, background color, and text size of the default Tooltip by the given [CSS classes](#styling-inbuilt-tooltip).
 
 <img src={styledcharttooltip} style={{width:300}}/>
 
@@ -34,7 +34,7 @@ CSS classes for styling are Chart specific.
 :::
 
 
-In cases where you need to create a completely different Tooltip where changes are done to the Tooltip content, you can easily create a custom Tooltip by following steps in [Custom Tooltip](#creating-partial-for-tooltip-and-binding-it-to-chart).
+In cases where you need to create a completely different Tooltip where changes are done to the Tooltip content, you can easily create a custom Tooltip by following steps in [Custom Tooltip](#creating-custom-tooltip).
 
 <img src={customcharttooltip} style={{width:300}}/>
 
