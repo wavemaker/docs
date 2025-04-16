@@ -10,7 +10,7 @@ A JavaScript module allows you to enhance your application by integrating specia
 - Implementing complex business logic  
 - Integrating third-party services  
 
-### Why Upload Custom JS Modules Locally?
+### Why Upload Custom JS Modules?
 
 Uploading JS modules directly into the project offers the following advantages:
 
