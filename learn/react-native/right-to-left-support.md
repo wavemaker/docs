@@ -1,5 +1,5 @@
 ---
-title: "Right to Left UI Support"
+title: "Supporting Right-to-Left Layouts in Your App"
 id: "right-to-left-support"
 sidebar_label: "Right to Left Support"
 ---
@@ -13,7 +13,7 @@ Right-to-left (RTL) UI support refers to designing and developing user interface
 
 ### LTR vs RTL Layout
 
-Most of the languages follow Left to Right (LTR) format and therefore the most of the applications by default come with LTR layout. But for RTL languages the application's UI layout along with other alignments need to be changed for RTL users. 
+Most languages follow a left-to-right (LTR) format; therefore, most applications default to an LTR layout. However, for right-to-left (RTL) languages, the application's UI layout and other alignments need to be adjusted accordingly.
 
 <div>
 <img src={basespinnerltr} style={{width:300,marginRight:10}} />
