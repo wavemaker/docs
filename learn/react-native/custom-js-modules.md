@@ -1,183 +1,142 @@
 ---
-title: "Supporting Custom JS Libraries in React Native Apps"
+title: "Using Custom JS Libraries in React Native Applications"
 sidebar_label: "Custom JS Modules"
 id: "custom-js-modules"
 ---
 
-## Overview
+A JavaScript module allows you to enhance your application by integrating specialized libraries or custom scripts. Custom JS module can be uploaded locally. This helps in:
 
-This documentation provides guidance on how to support custom JavaScript (JS) libraries in React Native apps. These libraries are not published to npm or GitHub, but are owned by customers who wish to use them in their React Native applications. By following the steps outlined in this document, developers can enable support for these custom JS libraries and seamlessly integrate them into React Native projects.
+- Creating unique user interfaces  
+- Implementing complex business logic  
+- Integrating third-party services  
 
-## Adding Custom JS Libraries
+### Why Upload Custom JS Modules?
 
-1. Add the Custom JS Library to the resources folder, In the example shown below `customScript.js` a javascript library is added to resources folder
+Uploading JS modules directly into the project offers the following advantages:
 
-![Custom JS Resources Uploaded](/learn/assets/custom-script-fileupload.png)
-
-```javascript
-// customScript.js
-
-// Function to add two numbers
-function add(a, b) {
-    return a + b;
-}
-
-// Function to subtract two numbers
-function subtract(a, b) {
-    return a - b;
-}
-
-// Function to multiply two numbers
-function multiply(a, b) {
-    return a * b;
-}
-
-// Function to find the modulus of two numbers
-function modulus(a, b) {
-    return a % b;
-}
-
-// Exporting the functions as an object
-module.exports = {
-    add,
-    subtract,
-    multiply,
-    modulus,
-};
-```
-
-2. Import the Js file to the App or to a Page by using the following command
-
-```
-require('./assets/resources/files/customScript.js');
-```
-
-Likewise, we can import platform-specific files to ensure the custom module runs on a certain platform only
-
-```
-require('./assets/resources/files/customScript.native.js');
-require('./assets/resources/files/customScript.web.js');
-```
+- Supports platform-specific custom modules (Web or Native)
+- Local modules can be uploaded in the project without using third party server. 
 
 :::note
-`./assets/` should be added before resources in the import path
+If your JS module is already available on NPM or Git, and it is not dependent on the platform, consider using [Third-party expo plugins](/learn/react-native/third-party-expo-plugins/).
 :::
 
-### App.js
+### Types of Custom JS Modules
 
-As shown below, We are adding the code to `App.js`
+Custom JS modules can be:
 
-![Custom JS App.js](/learn/assets/custom-script-file.png)
+1. **Platform-independent** — works on both Web and Native
+2. **Platform-specific** — different versions for Web and Native platforms
 
-![Custom JS App.js Code](/learn/assets/custom-script-app.png)
+When creating platform specific custom JS modules, user can either
 
-```javascript
-App.customModule = function() {
-    return require('./assets/resources/files/customScript.js');
-}
+- Uploading a custom JS module.
+- Uploading Platform Specific Custom JS Modules.
+
+### Uploading Custom JS module
+
+You can upload a custom JS module by using the following steps. 
+
+1. Navigate to File Explorer, go to resources.
+2. Click `+` icon to upload the custom module.
+3. In Project tab, navigate to the following path: `project/src/main/webapp/resources/files`
+4. Upload the custom module.
+
+**Example**: Uploading the custom JS module with name `customScript.js`.
+
+:::note
+Ensure the path where the custom module is uploaded is same as the mentioned one.
+:::
+
+
+<div style={{ position: "relative", paddingBottom: "56.25%" }}>
+  <iframe
+    style={{
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      left: 0,
+      top: 0
+    }}
+    src="https://embed.app.guidde.com/playbooks/tXtEv6RDtJhz4dsgKDY8JE"
+    title="Guide to upload custom js module "
+    frameBorder={0}
+    referrerPolicy="unsafe-url"
+    allowFullScreen="true"
+    allow="clipboard-write"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+  />
+</div>
+
+### Importing Custom JS Module
+
+Once uploaded, import the custom JS module using the following steps.
+
+- In an application, go to **app.js** file.
+- Import the platform specific custom JS file using the below command.
+
+`require('./assets/resources/files/customScript.js');`
+
+![](/learn/assets/importing-single-custom-module.png)
+
+### Uploading Platform Specific Custom JS Modules
+
+A custom JS module can be created and uploaded separately for Web and Native platforms.
+
+#### Why Use Platform-Specific Modules?
+
+- Web Logic uses browser-based APIs like document, window, or DOM methods, which are not available in the React Native environment.
+- Native Logic relies on React Native-specific features like NativeModules, or StyleSheet, which are not applicable for Web applications.
+- Keeping platform-specific logic separate ensures the application loads only the relevant code for the target environment. This improves application performance.
+
+### How to Upload Platform Specific JS Modules
+
+You can upload an alternative custom JS module for Web to successfully run the Web preview in cases where the Native libraries might cause Web preview failure. To upload two custom JS module files for Web and Native platforms follow the below steps.
+
+1. Go to File Explorer and click **'+'** to add resources.
+2. In Import Resource dialog, click **Upload Files** to upload the custom JavaScript library.
+3. To upload platform specific files,
+   1. **For Web:** Upload **customScript.web.js** library that has the web logic.
+   2. **For Native:** Upload **customScript.native.js** library that has the native logic.
+
+<div style={{ position: "relative", paddingBottom: "56.25%" }}>
+  <iframe
+    style={{
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      left: 0,
+      top: 0
+    }}
+    src="https://embed.app.guidde.com/playbooks/6qB7zewc5dDDBh7aKuB49z"
+    title="Upload custom js module (platform specific)"
+    frameBorder={0}
+    referrerPolicy="unsafe-url"
+    allowFullScreen="true"
+    allow="clipboard-write"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+  />
+</div>
+
+## How to Import in Application
+
+Two files, **customScript.web.js** for web and **customScript.native.js** for React Native, are uploaded to the application's resources folder. To use custom JS files in any application, import them using the following code in the **app.js** file.
+
+Studio automatically picks up the platform specific custom JS file to be used in the application.
+
+
+```JavaScript
+require('./assets/resources/files/customScript');
 ```
 
-We can import `.native.js` or `.web.js` files, using the script provided above.
+![Importing Custom JS File](/learn/assets/importing-custom-js-file.png)
 
-### Page Markup
 
-```html
-<wm-page name="mainpage">
-    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
-    <wm-mobile-navbar name="mobile_navbar1" title="Main" backbutton="false">
-        <wm-anchor caption="" name="AddLink" iconclass="wi wi-gear"></wm-anchor>
-    </wm-mobile-navbar>
-    <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1">
-            <wm-layoutgrid name="layoutgrid2">
-                <wm-gridrow name="gridrow2_1">
-                    <wm-gridcolumn columnwidth="3" name="gridcolumn11" xscolumnwidth="3"></wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="3" name="gridcolumn3_1" xscolumnwidth="3" horizontalalign="center">
-                        <wm-composite name="composite2" margin="unset unset 20px unset">
-                            <wm-container class="col-md-9" name="container2">
-                                <wm-number textalign="right" name="number1" width="70px" placeholder="bind:&quot; &quot;" required="false"></wm-number>
-                            </wm-container>
-                        </wm-composite>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="3" name="gridcolumn5" xscolumnwidth="3" horizontalalign="center">
-                        <wm-composite name="composite3" margin="unset unset 20px unset">
-                            <wm-container class="col-md-9" name="container3">
-                                <wm-number textalign="right" name="number2" width="70px" placeholder="bind:&quot; &quot;"></wm-number>
-                            </wm-container>
-                        </wm-composite>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="3" name="gridcolumn12" xscolumnwidth="3"></wm-gridcolumn>
-                </wm-gridrow>
-                <wm-gridrow name="gridrow2">
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn3" xscolumnwidth="2" horizontalalign="center">
-                        <wm-button class="btn-default" caption="" type="button" name="button1" on-tap="button1Tap($event, widget)" iconclass="wi wi-plus"></wm-button>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn8" horizontalalign="center" xscolumnwidth="2">
-                        <wm-button class="btn-default" caption="" type="button" on-tap="button2Tap($event, widget)" iconclass="wm-sl-r sl-subtract" name="button2"></wm-button>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn4" xscolumnwidth="2" horizontalalign="center">
-                        <wm-button class="btn-default" caption="" type="button" on-tap="button3Tap($event, widget)" iconclass="wi wi-close" name="button3"></wm-button>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn6" horizontalalign="center" xscolumnwidth="2">
-                        <wm-button class="btn-default" caption="" type="button" on-tap="button4Tap($event, widget)" iconclass="wm-sl-r sl-discount" name="button4" margin="unset unset 20px unset"></wm-button>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn7" xscolumnwidth="2"></wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn9" xscolumnwidth="2">
-                        <wm-button class="btn-default" caption="AC" type="button" on-tap="button5Tap($event, widget)" iconclass="" name="button5"></wm-button>
-                    </wm-gridcolumn>
-                </wm-gridrow>
-                <wm-gridrow name="gridrow3">
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn9_1" xscolumnwidth="6" horizontalalign="right">
-                        <wm-label padding="unset" name="label1" caption="Output:" class="h4"></wm-label>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="2" name="gridcolumn10" xscolumnwidth="6">
-                        <wm-label padding="unset" name="labelOutput" class="h4" caption=""></wm-label>
-                    </wm-gridcolumn>
-                </wm-gridrow>
-            </wm-layoutgrid>
-        </wm-page-content>
-    </wm-content>
-    <wm-mobile-tabbar name="mobile_tabbar1" dataset="bind:Variables.staticTabBar.dataSet" itemicon="icon" itemlink="link" morebuttoniconclass="wi wi-date-range fa-2x"></wm-mobile-tabbar>
-</wm-page>
-```
+:::note
+While importing platform sepcific JS module, ensure not to use file extension `.js` in the `require` statement as shown above.
+:::
 
-### Page Script
+### Use Case
 
-```javascript
-const jsmodule = Page.App.customModule();
+For instance, where you need to create an alternative Web custom JS module for Native JS module, go to [PDF Preview](/learn/react-native/pdf-preview-and-download/). With this document, you can create platform specific custom JS modules for PDF preview.
 
-Page.onReady = function() {};
-Page.button1Tap = function($event, widget) {
-    Page.Widgets.labelOutput.caption = jsmodule.add(
-        Page.Widgets.number1.datavalue,
-        Page.Widgets.number2.datavalue
-    );
-};
-Page.button5Tap = function($event, widget) {
-    Page.Widgets.number1.datavalue = "";
-    Page.Widgets.number2.datavalue = "";
-    Page.Widgets.labelOutput.caption = "";
-};
-Page.button2Tap = function($event, widget) {
-    Page.Widgets.labelOutput.caption = jsmodule.subtract(
-        Page.Widgets.number1.datavalue,
-        Page.Widgets.number2.datavalue
-    );
-};
-Page.button3Tap = function($event, widget) {
-    Page.Widgets.labelOutput.caption = jsmodule.multiply(
-        Page.Widgets.number1.datavalue,
-        Page.Widgets.number2.datavalue
-    );
-};
-Page.button4Tap = function($event, widget) {
-    Page.Widgets.labelOutput.caption = jsmodule.modulus(
-        Page.Widgets.number1.datavalue,
-        Page.Widgets.number2.datavalue
-    );
-};
-```
-
-### Preview
-
-![Custom JS Preview](/learn/assets/customScript.gif)
