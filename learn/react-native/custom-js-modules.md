@@ -4,7 +4,7 @@ sidebar_label: "Custom JS Modules"
 id: "custom-js-modules"
 ---
 
-A JavaScript module allows you to enhance your application by integrating specialized libraries or custom scripts. This helps in:
+A JavaScript module allows you to enhance your application by integrating specialized libraries or custom scripts. Custom JS module can be uploaded locally. This helps in:
 
 - Creating unique user interfaces  
 - Implementing complex business logic  
@@ -14,7 +14,7 @@ A JavaScript module allows you to enhance your application by integrating specia
 
 Uploading JS modules directly into the project offers the following advantages:
 
-- Supports **platform-specific** custom modules (Web or Native)
+- Supports platform-specific custom modules (Web or Native)
 - Local modules can be uploaded in the project without using third party server. 
 
 :::note
