@@ -4,20 +4,31 @@ sidebar_label: "Custom JS Modules"
 id: "custom-js-modules"
 ---
 
-A JavaScript module enables users to enhance the application functionality by allowing integration of specialized libraries or custom scripts, facilitating the creation of unique user interfaces, implementing complex business logic, or incorporating third-party services.
+A JavaScript module allows you to enhance your application by integrating specialized libraries or custom scripts. This helps in:
 
-Uploading custom JS modules locally comes with below pros.
+- Creating unique user interfaces  
+- Implementing complex business logic  
+- Integrating third-party services  
 
-- You can upload platform specific custom JS module.
+### Why Upload Custom JS Modules Locally?
+
+Uploading JS modules directly into the project offers the following advantages:
+
+- Supports **platform-specific** custom modules (Web or Native)
 - Local modules can be uploaded in the project without using third party server. 
 
 :::note
-If the custom JS module is already available in NPM or Git, and it is not dependent on the platform then go to [Third-party expo plugins](/learn/react-native/third-party-expo-plugins/).
+If your JS module is already available on NPM or Git, and it is not dependent on the platform, consider using [Third-party expo plugins](/learn/react-native/third-party-expo-plugins/).
 :::
 
-## Using Custom JS Module
+### Types of Custom JS Modules
 
-A custom JS module can be created for Web and Native applications or it can be platform independent. When creating platform specific custom JS modules, user can either
+Custom JS modules can be:
+
+1. **Platform-independent** — works on both Web and Native
+2. **Platform-specific** — different versions for Web and Native platforms
+
+When creating platform specific custom JS modules, user can either
 
 - Uploading a custom JS module.
 - Uploading Platform Specific Custom JS Modules.
@@ -72,7 +83,7 @@ Once uploaded, import the custom JS module using the following steps.
 
 A custom JS module can be created and uploaded separately for Web and Native platforms.
 
-#### Why to Upload Platform Specific JS Module
+#### Why Use Platform-Specific Modules?
 
 - Web Logic uses browser-based APIs like document, window, or DOM methods, which are not available in the React Native environment.
 - Native Logic relies on React Native-specific features like NativeModules, or StyleSheet, which are not applicable for Web applications.
