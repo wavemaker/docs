@@ -1587,6 +1587,13 @@
 			"items": [
 				{
 					"type": "category",
+					"label": "Versions: 11.11.x",
+					"items": [
+						"wavemaker-release-notes/v11-11-0"
+					]
+				},
+				{
+					"type": "category",
 					"label": "Versions: 11.10.x",
 					"items": [
 						"wavemaker-release-notes/v11-10-5",
