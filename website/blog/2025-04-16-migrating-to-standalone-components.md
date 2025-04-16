@@ -15,17 +15,14 @@ In the early days of Angular (and many other frameworks), modules were introduce
 Modules served as a way to:
 
 - **Encapsulate Functionality** 
-
-Group related components, services, directives, and pipes into logical units.
+  - Group related components, services, directives, and pipes into logical units.
 
 
 - **Manage Dependencies**
-
-Declare and import dependencies within a module, ensuring that components have access to the necessary resources.
+  - Declare and import dependencies within a module, ensuring that components have access to the necessary resources.
 
 - **Enable Lazy Loading**
-
-Load modules on demand, improving initial load times for large applications.
+  - Load modules on demand, improving initial load times for large applications.
 
 
 However, as Angular evolved, the framework's core capabilities expanded, and the need for explicit module declarations became less critical.
@@ -66,26 +63,22 @@ You can use this component directly in routing or import it into other component
 This evolution is driven by several factors:
 
 - **Simplified Development - no need for NgModule**
-
-Standalone components eliminate the need to create and manage module declarations, reducing boilerplate code and simplifying the development process.
+  - Standalone components eliminate the need to create and manage module declarations, reducing boilerplate code and simplifying the development process.
 
 
 - **Improved Performance**
-
-By eliminating unnecessary module overhead, standalone components contribute to smaller bundle sizes and faster load times.
+  - By eliminating unnecessary module overhead, standalone components contribute to smaller bundle sizes and faster load times.
 
 - **Enhanced Reusability**
-
-Standalone components are self-contained and can be easily reused across different parts of an application or even in different projects.
+  - Standalone components are self-contained and can be easily reused across different parts of an application or even in different projects.
 
 - **Tree-Shaking Optimization**
-
-Tree-shaking is a process that eliminates unused code from the final bundle. Standalone components enhance tree-shaking capabilities, further reducing bundle sizes.
+  - Tree-shaking is a process that eliminates unused code from the final bundle. Standalone components enhance tree-shaking capabilities, further reducing bundle sizes.
 
 - **Simpler Lazy Loading**
-No more module juggling - load components directly!
+  - No more module juggling - load components directly!
 
-Making Angular Simpler: Module-Based vs. Standalone Components 
+**Making Angular Simpler: Module-Based vs. Standalone Components** 
 
 ![Module Based vs Standalone Components](/learn/assets/module-based-vs-standalone-components.png)
 
