@@ -1,5 +1,5 @@
 ---
-title: "Right to Left UI Support"
+title: "Supporting Right-to-Left Layouts in Your App"
 id: "right-to-left-support"
 sidebar_label: "Right to Left Support"
 ---
