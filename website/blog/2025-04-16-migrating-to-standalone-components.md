@@ -90,6 +90,12 @@ This evolution is driven by several factors:
 - The 0.37 MB difference may seem small, but in web performance, every kilobyte matters. Smaller bundles lead to faster download times, reduced parsing times, and improved overall performance.
 - This reduction comes from migrating modules to standalone components, but some internal modules are still in use. We are actively working to migrate these as well, which will lead to an even greater reduction in bundle size and further performance improvements.
 
+**Before Moving to Standalone Components**
+![](/learn/assets/bundle-size-before.png)
+
+**After Moving to Standalone Components**
+![](/learn/assets/bundle-size-after.png)
+
 ### Maintainability Improvements
 
 - Reduced boilerplate code makes our codebase easier to understand and maintain. Developers can focus on writing business logic rather than managing module declarations.
