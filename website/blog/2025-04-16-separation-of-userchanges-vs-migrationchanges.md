@@ -1,87 +1,82 @@
 ---
-title: "Separating Migration Changes from Your Own"
+title: "Distinguishing User vs. Migration Changes in WaveMaker Studio"
 author: "Raviteja Dugge"
 ---
 ---
 
-WaveMaker Studio now categorizes changes into [User Changes and Migration Changes](#the-solution-separate-change-categories), providing visibility, clarity, and control when viewing project changes.​
+WaveMaker Studio now separates your code edits (User Changes) from system-generated updates (Migration Changes). This update provides improved visibility, clarity, and control over project changes, making it easier to manage your work during platform upgrades.
+
+Previously, WaveMaker Studio's **View Changes** combined both user and migration changes in a single view. This often caused confusion and made it difficult to tell apart manual edits from automatic updates. In some cases, reverting critical migration changes — especially in files like [`pom.xml`](/learn/blog/2022/03/24/wavemaker-application-pom) and build.xml — led to build failures and unnecessary debugging.
 
 ![Change Categories in Push Flow](/learn/assets/change-categories-push-flow.png)
-
-Previously, in WaveMaker Studio's **View Changes** user could see both user-made and system-generated migration changes together, leading to confusion. Users often encountered difficulty to distinguish between their own edits and automated updates. 
-
-This sometimes resulted in accidental reversion of critical migration modifications, especially in files like [`pom.xml`](/learn/blog/2022/03/24/wavemaker-application-pom) and `build.xml`, causing build failures and increased debugging efforts. 
 
 
 <!-- truncate -->
 
 ## The Solution: Separate Change Categories
 
-WaveMaker's introduction of change categories and separate commits for migration and user changes enables users to clearly distinguish between automated system updates and their own modifications.
+WaveMaker now offers categorized views and separate commits for User and Migration changes, allowing for better control and understanding of changes in your project.
 
-The **View Project Changes** dialog now supports the following views:
+🔍 View Project Changes Options:
 
 ### ✅ User Changes
-- Displays all the files changed by the user.
-- The file diff for this view will show only user changes, regardless of any platform migration changes to the same file.
-- Allows reverting these changes.
+- Displays only files modified by the user.
+- File diffs reflect only user edits—even in files with migration updates.
+- You can revert these changes.
 
 ### 🔧 Migration Changes (Read-Only Mode)
-- Displays all the migrated files.
-- The file diff for this view will show only migration changes, regardless of any user changes to the same file.
-- No revert option—this is a review-only mode.
+- Displays files automatically updated by the platform.
+- File diffs show only system-generated changes.
+- Revert is disabled to protect the integrity of migration updates.
 
 ### 🔍 Overall Changes (Read-Only Mode)
-- A combined view for reviewing both user and migration changes.
-- No revert option—this is a review-only mode.
+- Shows both user and migration changes together.
+- Ideal for full-context review.
+- Reverting is disabled.
 
 ### 🚀 Changes Since the Last Push
-- Available when MR/PR flow is enabled and there are local changes since the last push.
+- Appears when MR/PR workflow is enabled.
 - Displays all user changes made after the last push.
-- Migration changes (if any) do not appear here.
-- Allows users to easily act on suggestions made during code reviews.
-- Reverting is allowed for user changes.
+- Migration changes are not shown here.
+- Helps you review suggestions and comments before merging.
+- Revert is enabled for user changes.
 
 ![](/learn/assets/changes-last-pushed.png)
 
-## Why This Matters
-
-🔎 **No More Guesswork:** You instantly know which changes are yours and which are migration changes.
-🛡️ **Protected Migration Changes:** *Non-revertible* migration updates prevent accidental rollbacks and broken builds.
-
 ## Enhanced Push Flow: Two Separate Commits
-To improve clarity and maintainability, WaveMaker Studio now creates two separate Git commits during the push process—one for migration changes and one for user changes.
+WaveMaker Studio now creates two separate Git commits during the push process—one for migration changes and one for user edits.
 
 ### 🔄 What Happens During Push?
-When a user pushes project changes using **Push Changes** option, Studio checks for both migration and user modifications. If either is present, it performs the following:
+When you click **Push Changes**, Studio checks for both types of modifications. If changes are found, it creates:
 
 ![](/learn/assets/two-commits.png)
 
 #### 1️⃣ Migration Commit
-Captures all changes made automatically by the platform upgrade.
-Created only if migration changes exist.
-These changes are non-revertible to preserve upgrade integrity.
+- Captures platform-generated updates.
+- Created only when migration changes are detected.
+- Non-revertible to ensure upgrade consistency.
+
 #### 2️⃣ User Commit
-Captures all modifications made directly by the user.
-Created only if user changes are detected.
-Users are prompted to enter a custom commit message.
-This ensures a clear boundary between what the platform changed and what the developer changed.
 
-## 💡 Why Two Commits?
-This two-step commit strategy provides several advantages:
+- Captures manual changes made by the user.
+- You’ll be prompted to enter a custom commit message.
+- Created only when user changes exist.
 
-- 🤝 **Smoother Code Reviews**
-Teammates and reviewers can clearly distinguish platform-driven changes from user-authored logic.
-- 🐞 **Easier Debugging**
-If an issue arises after a push, developers can quickly isolate whether the problem came from the migration or user changes.
-- 🔄 **Rollback Flexibility**
-Developers can safely revert user commits without disturbing critical migration updates.
-- 🧾 **Readable Git History**
-A clean separation makes it easy to understand what was changed during a migration versus what was changed by a developer.
+## 💡 Why It Matters
 
-## Conclusion
+- 🔎 **No More Guesswork** — Instantly see what you changed vs. what the platform upgraded.
+- 🛡️ **Safe Migration** — Prevent accidental rollbacks of system-critical changes.
+- 🤝 **Better Code Reviews** — Clearly separate system vs. developer logic.
+- 🐞 **Simplified Debugging** — Easily identify the source of bugs post-push.
+- 🔄 **Flexible Rollback** — Revert your own commits without affecting migration.
+- 🧾 **Clean Git History** — See what was changed by the platform vs. by you.
 
-Platform evolution changes can now be easily done by separating user edits from migration updates. This provides you a cleaner workflow, better insight, and more confidence in the upgrade process.
 
+
+## ✅ Conclusion
+
+By separating migration changes from user edits, WaveMaker gives you a cleaner workflow, enhanced visibility, and stronger control during project upgrades. This clarity helps reduce errors, speed up reviews, and improve confidence in the development process.
+
+**💡 Tip:** Use the new views and commit strategy during every migration to maintain a healthy and readable codebase.
 
 
