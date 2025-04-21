@@ -14,7 +14,7 @@ We’ve closed that gap.
 
 <!-- truncate -->
 
-## The Challenges We Faced
+## The Challenges
 
 ​WaveMaker's canvas experience faced challenges that hindered intuitive design:​
 
@@ -48,6 +48,15 @@ New components come with contextual, readable names, making it easier to underst
 | bind:CustomVariables.userProfile.settings.display.theme | theme |
 | bind: getEmployeeName() | getEmployeeName |
 | bind: <span> Hello World </span> | Hello World |
+
+
+**Before Enhancement:**
+
+![Before Visual Enhancement](/learn/assets/before-visual-enhancement.png)
+
+**After Enhancement:**
+
+![After Visual Enhancement](/learn/assets/after-visual-enhancement.png)
 
 ## What This Means for You
 
