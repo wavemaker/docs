@@ -930,6 +930,7 @@
 			"items": [
 				"how-tos/saml-integration-onelogin",
 				"how-tos/saml-integration-adfs",
+				"how-tos/saml-integration-okta",
 				"how-tos/sso-openid-azure-active-directory",
 				"how-tos/implement-openid-google-provider",
 				"how-tos/implement-openid-okta-provider",
