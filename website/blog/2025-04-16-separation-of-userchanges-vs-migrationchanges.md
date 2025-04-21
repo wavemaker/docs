@@ -4,7 +4,7 @@ author: "Raviteja Dugge"
 ---
 ---
 
-WaveMaker Studio now categorizes changes into User Changes and Migration Changes, providing visibility, clarity, and control when viewing project changes.​
+WaveMaker Studio now categorizes changes into [User Changes and Migration Changes](#the-solution-separate-change-categories), providing visibility, clarity, and control when viewing project changes.​
 
 ![Change Categories in Push Flow](/learn/assets/change-categories-push-flow.png)
 
