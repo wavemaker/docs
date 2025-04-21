@@ -4,41 +4,33 @@ author: "Naga Mahesh Reddy Bonamukkala"
 ---
 ---
 
-Optimizing performance and minimizing bundle size are essential for modern Angular applications.  One often-overlooked culprit of bloated bundles is unused localization files from libraries like Moment.js, @angular/global, and FullCalendar.
+Large Angular application bundles can slow down load times, especially on slower networks. A common cause is unused localization files from libraries like **Moment.js**, **@angular/global**, and **FullCalendar**. 
 
-By default, these libraries include support for multiple languages, but many applications only require a subset of them. Storing and loading all locales inflates bundle size and slows performance.
-
-In this blog, you can find how the bundle size of Moment is reduced 35%, and 98% reduction in @angular/global with faster time to load the application. 
+These libraries often include support for multiple languages by default, but many applications only require a subset of them. Including all locales unnecessarily increases the bundle size and degrades performance. By removing these unused files, developers have achieved significant reductions in bundle size—up to 35% for Moment.js and 98% for @angular/global—resulting in faster load times and an improved user experience.
 
 <!-- truncate -->
 
-## Existing Application: Problems We Faced
+WaveMaker-generated Angular applications previously included unnecessary language files from libraries like **Moment.js**,** @angular/global**, and **FullCalendar**, leading to larger bundles and slower load times. We've optimized these libraries to include only the needed locales, reducing bundle size and improving performance.
 
-In ​WaveMaker-generated Angular applications, the bundle size was significantly inflated due to the inclusion of unnecessary locale files from libraries like **Moment.js**, **@angular/global**, and **FullCalendar**. This led to larger bundles, slower load times, and a diminished user experience, particularly on slower networks. Therefore, we have optimized these libraries while maintaining necessary localization support.
+## Approaches to Reduce Bundle Size 
 
-## How We Solved 
+We focused on two main approaches:
 
-To resolve these issues, we focused on two main approaches:
+### 1. Using Webpack To Keep Required Locales
 
-### 1. Using Webpack to keep only required locales
-
-Instead of bundling all available locales, we identified the specific languages our application needed and listed them in an array. We then used moment-locales-webpack-plugin to include only those locales in the build. This significantly reduced the bundle size by eliminating unused locale files.
+Instead of bundling all available locales, we identified the specific languages our application needed and used `moment-locales-webpack-plugin` to include only required locales in the build. This significantly reduced the bundle size by eliminating unused locale files.
 
 Below table shows the difference before and after moment-locales-webpack-plugin  in node modules
 
 ![](/learn/assets/before-after-node-modules.png)
 
-The moment module size was reduced by 65.7% (from 102 KB to 35KB, Gzipped) compared to the original build.
+The Moment module size was reduced by 65.7% (from 102 KB to 35KB, Gzipped) compared to the original build.
 
-By applying this plugin, we ensured only the necessary locales were bundled, optimising performance without compromising localization support.
+### 2. Keeping Only Required Locales in AngularJSON Script
 
-### 2. Keeping Only Required Locales with a Pre-Build in update AngularJSON Script
+In Angular applications, @angular/global comes with all language files by default. Previously, the dynamic script loading of the build process copied every available locale, unnecessarily increasing the final build size by several megabytes.
 
-In Angular applications we require @angular/global, which, by default, come with all language files. Previously, the dynamic script loading of the build process copied every available locale, unnecessarily increasing the final build size by several megabytes.
-
-Webpack couldn’t detect and optimise these files as they were not directly under compression but were copied during the Angular build process.
-
-A **Pre-Build Script** to add or update **Locales assets in angular.json**. It was solved by implementing a pre-build script that:
+A **Pre-Build Script** to add or update **Locales assets in angular.json** was used. The pre-build script,
 
 - Included only the supported languages when Language Bundle Sources are static from the project.
 - Taking a copy of the existing angular.json asset.
@@ -62,9 +54,13 @@ This change resulted in a 98% reduction (from 2.3MB to 12KB) in Angular and 272K
  
 ## Removal of Global Script Declaration
 
-Removed the global script declarations for Moment, Moment-Timezone, and FullCalendar, as they are already included in the node_modules. This removed the duplicate bundle of the same libraries.
+We removed the global script declarations for Moment.js, Moment-Timezone, and FullCalendar since these libraries are already included in the node_modules, eliminating redundant bundles.​
 
-As the global declaration is removed, if someone need moment in Page/App script, they need to import the moment module explicitly as shown below. (The migration is added to the existing projects).
+After this change, if you need to use Moment.js in your Page or App scripts, you must explicitly import it. Add the following import statement at the top of your script:
+
+```
+import * as moment from 'moment';
+```
 
 :::note
 For using moment in pagescript importModule() is been exposed
@@ -83,7 +79,7 @@ console.log(moment().format());
 
 :::
 
-## Performace test
+## Performace Test
 
 Before hard reload deployment:
 
@@ -94,12 +90,14 @@ After hard reload deployment:
 
 ![](/learn/assets/after-bundlesize-optimization.png)
 
-In the after implementation image, 2 scripts calls are removed, reducing the finish time by 25% reduce and the load time by 35% reduce in our test with network as Fast 4G.
+In the after implementation image, 2 script calls are removed, reducing the finish time by 25% reduce and the load time by 35% reduce in our test with network as Fast 4G.
 
 ## Result: A Faster, Lighter Angular Application:
 
-With these optimizations in place, we have successfully,
+We've optimized our Angular applications by:​
 
-- Reduced Moment.js size by upto 65.7 % by including only selected locales via Webpack.
-- Eliminated the excessive copying of unused locales from angular/global by using a pre-build script, size tend to fall from 98% in locales dist folder.
-- Providing methods for importing ESM modules in page script thus removing the duplicate inclusion.
+- Reducing Moment.js size by up to 65.7% by including only selected locales via Webpack.​
+- Eliminating redundant locales from @angular/global using a pre-build script, achieving up to a 98% reduction in the locales directory.​
+- Enabling direct ESM module imports in page scripts to prevent duplicate inclusions.​
+
+These improvements have significantly reduced bundle sizes and enhanced application performance.
