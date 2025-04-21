@@ -8,7 +8,7 @@ WaveMaker Studio now separates your code edits (User Changes) from system-genera
 
 Previously, WaveMaker Studio's **View Changes** combined both user and migration changes in a single view. This often caused confusion and made it difficult to tell apart manual edits from automatic updates. In some cases, reverting critical migration changes — especially in files like [`pom.xml`](/learn/blog/2022/03/24/wavemaker-application-pom) and build.xml — led to build failures and unnecessary debugging.
 
-![Change Categories in Push Flow](/learn/assets/change-categories-push-flow.png)
+![](/learn/assets/changes-categories-before.png)
 
 
 <!-- truncate -->
