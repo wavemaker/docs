@@ -90,7 +90,7 @@ After hard reload deployment:
 
 ![](/learn/assets/after-bundlesize-optimization.png)
 
-In the after implementation image, 2 script calls are removed, reducing the finish time by 25% reduce and the load time by 35% reduce in our test with network as Fast 4G.
+By removing two script calls, we reduced the finish time by 25% and the load time by 35% in tests conducted over a Fast 4G network.
 
 ## Result: A Faster, Lighter Angular Application:
 
