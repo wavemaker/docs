@@ -84,6 +84,10 @@ module.exports = {
               "label": 'v10.15',
               "path": 'v10.15',
             },
+            "cordova": {
+              "label": 'Cordova',
+              "path": 'cordova',
+            },
           },
           "admonitions": {
             "keywords": [
