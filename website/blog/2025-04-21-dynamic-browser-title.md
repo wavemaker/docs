@@ -5,6 +5,7 @@ author: "Pavan Dussa"
 ---
 
 We’re excited to introduce a new enhancement in WaveMaker Studio—**dynamic browser titles!**. Now, the browser title updates based on user actions / editor in canvas, providing better context and improving navigation across multiple open tabs.
+This feature, available starting with the 11.11.0 release
 
 <!-- truncate -->
 
