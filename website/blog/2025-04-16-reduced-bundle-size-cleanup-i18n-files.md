@@ -1,34 +1,36 @@
 ---
-title: "Smaller Bundles, Faster Apps: Cleaning Up Unused i18n files in WM Angular App"
+title: "Optimize Angular Apps: Reduce Bundle Size by Cleaning Up Unused i18n Files"
 author: "Naga Mahesh Reddy Bonamukkala"
 ---
 ---
 
-Large Angular application bundles can slow down load times, especially on slower networks. A common cause is unused localization files from libraries like **Moment.js**, **@angular/global**, and **FullCalendar**. 
+Large Angular application bundles can slow down load times and degrade app performance, especially on slower networks. A common cause is unused localization files from libraries like **Moment.js**, **@angular/global**, and **FullCalendar**. These libraries often include support for multiple languages by default, but many applications only require a subset of them. 
 
-These libraries often include support for multiple languages by default, but many applications only require a subset of them. Including all locales unnecessarily increases the bundle size and degrades performance. By removing these unused files, developers have achieved significant reductions in bundle size—up to 35% for Moment.js and 98% for @angular/global—resulting in faster load times and an improved user experience.
+By removing these unused files, developers have achieved significant reductions in bundle size—up to 35% for Moment.js and 98% for @angular/global—resulting in faster load times and an improved user experience.
 
 <!-- truncate -->
 
-WaveMaker-generated Angular applications previously included unnecessary language files from libraries like **Moment.js**,** @angular/global**, and **FullCalendar**, leading to larger bundles and slower load times. We've optimized these libraries to include only the needed locales, reducing bundle size and improving performance.
+## Why This Matters
 
-## Approaches to Reduce Bundle Size 
+WaveMaker-generated Angular applications previously included unnecessary language files from common libraries, leading to larger application bundles sizes. We've optimized these libraries to include only the needed language files during the build process.
+
+## How We Reduced the Bundle Size 
 
 We focused on two main approaches:
 
 ### 1. Using Webpack To Keep Required Locales
 
-Instead of bundling all available locales, we identified the specific languages our application needed and used `moment-locales-webpack-plugin` to include only required locales in the build. This significantly reduced the bundle size by eliminating unused locale files.
+Instead of bundling all locales, we used the `moment-locales-webpack-plugin` to include only the languages needed by the application.
 
-Below table shows the difference before and after moment-locales-webpack-plugin  in node modules
+**Before VS After**
 
 ![](/learn/assets/before-after-node-modules.png)
 
 The Moment module size was reduced by 65.7% (from 102 KB to 35KB, Gzipped) compared to the original build.
 
-### 2. Keeping Only Required Locales in AngularJSON Script
+### 2. Including Only Required Locales in angular.json Script
 
-In Angular applications, @angular/global comes with all language files by default. Previously, the dynamic script loading of the build process copied every available locale, unnecessarily increasing the final build size by several megabytes.
+By default, @angular/global includes all language files. Previously, the dynamic script loading process copied all locales into the build, inflating the final size.
 
 A **Pre-Build Script** to add or update **Locales assets in angular.json** was used. The pre-build script,
 
@@ -36,7 +38,9 @@ A **Pre-Build Script** to add or update **Locales assets in angular.json** was u
 - Taking a copy of the existing angular.json asset.
 - Alter based on existing assets to restrict the glob to only language.js files.
 
-```
+**Example configuration:**
+
+```json
 {
    "glob": "{de.js,fi.js}",
    "input": "libraries/locales/angular/global",
