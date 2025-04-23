@@ -6,7 +6,7 @@ author: "Sairama Krishna Bonala"
 
 WaveMaker's Wizard Widget now offers dynamic features for building flexible, multi-step forms.
 
-WaveMaker Dynamic Wizard Widget offers the following benefits.
+WaveMaker Dynamic Wizard widget offers the following benefits.
 
 - Auto-generate wizard steps from a dataset
 - Load partial content into steps
