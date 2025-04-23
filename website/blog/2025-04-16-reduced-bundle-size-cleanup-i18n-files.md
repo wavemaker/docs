@@ -30,15 +30,22 @@ The Moment module size was reduced by 65.7% (from 102 KB to 35KB, Gzipped) compa
 
 ### 2. Including Only Required Locales in angular.json Script
 
+:::note
+You can find the angular.json file in the exported angular zip.
+:::
+
 By default, @angular/global includes all language files. Previously, the dynamic script loading process copied all locales into the build, inflating the final size.
 
 A **Pre-Build Script** to add or update **Locales assets in angular.json** was used. The pre-build script,
 
 - Included only the supported languages when Language Bundle Sources are static from the project.
 - Taking a copy of the existing angular.json asset.
-- Alter based on existing assets to restrict the glob to only language.js files.
+- Altered the **`glob`** object in assets with only used languages.
+
 
 **Example configuration:**
+
+You can go to angular.json file and in assets you can restrict the **`glob`** object to only required languages.
 
 ```json
 {
@@ -63,7 +70,7 @@ We removed the global script declarations for Moment.js, Moment-Timezone, and Fu
 After this change, if you need to use Moment.js in your Page or App scripts, you must explicitly import it. Add the following import statement at the top of your script:
 
 ```
-import * as moment from 'moment';
+var moment = App.importModule('moment');
 ```
 
 :::note
