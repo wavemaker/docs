@@ -4,7 +4,7 @@ author: "Pavan Dussa"
 ---
 ---
 
-WaveMaker Studio v11.11 introduces significant enhancements to the Canvas, delivering a true "What You See Is What You Get" (WYSIWYG) experience. This update ensures that the design view in the Studio closely mirrors the live application.
+WaveMaker Studio v11.11 introduces significant enhancements to the Canvas, delivering a true **What You See Is What You Get** (WYSIWYG) experience. This update ensures that the design view in the Studio closely mirrors the live application.
 
 ## Why This Matters
 
