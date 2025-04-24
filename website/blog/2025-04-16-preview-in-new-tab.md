@@ -4,7 +4,7 @@ author: "Sairama Krishna Bonala"
 ---
 ---
 
-​WaveMaker has enhanced the app preview feature to make it more user-friendly. Previously, clicking **Preview** opened the app in a pop-up window, requiring extra steps like removing toolbars, copying URLs, and opening new tabs. Now, starting with version 11.11, clicking **Preview** opens the app directly in a new browser tab. 
+​WaveMaker has enhanced the app preview feature to make it more user-friendly. Previously, clicking [**Preview**](/learn/app-development/dev-integration/developer-tools/#preview) opened the app in a pop-up window, requiring extra steps like removing toolbars, copying URLs, and opening new tabs. Now, starting with [version 11.11](/learn/wavemaker-release-notes/v11-11-0/), clicking **Preview** opens the app directly in a new browser tab. 
 
 
 <!-- truncate -->
