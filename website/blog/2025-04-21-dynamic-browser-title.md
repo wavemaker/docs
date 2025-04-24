@@ -20,7 +20,7 @@ WaveMaker Studio now features dynamic browser titles, enhancing navigation and u
 
 ![](/learn/assets/before-dynamic-title.png)
 
-**Before Implementation:**
+**After Implementation:**
 
 ![](/learn/assets/after-dynamic-title.png)
 
