@@ -1,5 +1,5 @@
 ---
-title: "A More Accurate Canvas: Bringing WYSIWYG Closer to Reality"
+title: "More Accurate Canvas Design: Bringing WYSIWYG Closer to Reality"
 author: "Pavan Dussa"
 ---
 ---
