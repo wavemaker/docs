@@ -4,7 +4,7 @@ author: "Sairama Krishna Bonala"
 ---
 ---
 
-WaveMaker's Wizard Widget now offers dynamic features for building flexible, multi-step forms.
+WaveMaker's [Wizard](/learn/app-development/widgets/container/wizard/) widget now offers dynamic features for building flexible, multi-step forms.
 
 WaveMaker Dynamic Wizard widget offers the following benefits.
 
@@ -28,13 +28,13 @@ Each wizard step can load partial content, such as HTML templates or UI elements
 
 ## 3. Dynamic Wizard with Dynamic Form
 
-A Dynamic Form allows you to generate forms based on a dataset. Each wizard step can contain dynamic form elements that are generated based on the data passed in.
+A [Dynamic Form](/learn/how-tos/dynamic-form/) allows you to generate forms based on a dataset. Each wizard step can contain dynamic form elements that are generated based on the data passed in.
 
 This functionality is powerful in scenarios where the form fields, validation, and types might change depending on the user’s input or the context of the wizard.
 
 ## 4. Default Step Index
 
-Set the wizard to open at a specific step using the defaultstepindex attribute, enhancing user navigation.
+Set the wizard to open at a specific step using the `defaultstepindex` attribute, enhancing user navigation.
 
 For example, when the Default Step Index is set to 2, it will open the 3rd step in the wizard
 
