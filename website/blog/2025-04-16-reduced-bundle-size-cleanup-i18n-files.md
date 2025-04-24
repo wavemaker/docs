@@ -1,5 +1,5 @@
 ---
-title: "Optimize Angular Apps: Reduce Bundle Size by Cleaning Up Unused i18n Files"
+title: "Optimize Web Apps: Reduce Bundle Size by Cleaning Up Unused i18n Files"
 author: "Naga Mahesh Reddy Bonamukkala"
 ---
 ---
