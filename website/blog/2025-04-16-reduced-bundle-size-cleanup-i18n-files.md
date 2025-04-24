@@ -45,7 +45,7 @@ A **Pre-Build Script** to add or update **Locales assets in angular.json** was u
 
 **Example configuration:**
 
-You can go to angular.json file and in assets you can restrict the **`glob`** object to only required languages.
+You can go to angular.json file and in assets you can restrict the **`glob`** object to only required languages. For example,
 
 ```json
 {
