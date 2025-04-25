@@ -67,8 +67,8 @@ This evolution is driven by several factors:
 
 ### Performance Improvements
 
-- The 8.9% reduction in bundle size, from 4.16 MB to 3.79 MB, translates to a faster interactive (TTI). This is helps users on slower network connections or devices with limited processing power.
-- The 0.37 MB decreased size of smaller bundles lead to faster download times, reduced parsing times, and improved overall performance.
+- We reduced the app size by 8.9% (from 4.16 MB to 3.79 MB), which helps it load faster—especially for users with slow internet or older devices.
+- The 0.37 MB decreased size of smaller bundles lead to faster download, reduced parsing times, and improved overall performance.
 
 ​Migrating to standalone components has already reduced our bundle size. We're continuing to phase out remaining internal modules, which will further improve performance and streamline our codebase.
 
@@ -90,11 +90,11 @@ This evolution is driven by several factors:
 
 Starting with version 11.11, any new Angular apps you generate will follow this new setup. Here’s what’s different:
 
-- No more app.module file.
-- A new app config file handles app setup.
+- No more `app.module` file.
+- A new `app.config` file handles app setup.
 - Fewer files in your app since page modules are gone.
 - Each page is now a standalone component that loads only when needed.
-- The app now uses a new bootstraping mechanism which means the app starts with a new method that removes the need for a main module, making things cleaner and faster.
+- The app now uses a new bootstrapping mechanism that initializes directly from `app.config`, eliminating the need for a separate app module. This results in a cleaner structure and faster startup.
 
 ## Conclusion
 
