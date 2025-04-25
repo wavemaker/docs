@@ -171,8 +171,8 @@ Last updated: [WaveMaker 11.11.0](/learn/wavemaker-release-notes/v11-11-0)
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 7.8.5 |
-| Fullcalendar | | <td className="versiontdbgcolor"> 5.3.1 -> 6.1.15 </td> |
 |  | nvd3 | 1.8.11 |
+| Fullcalendar | | <td className="versiontdbgcolor"> 5.3.1 -> 6.1.15 </td> |
 | Built-in functions | lodash-es | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
@@ -251,8 +251,8 @@ For more information about building projects with Maven, see [here](/learn/app-d
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 7.8.5 |
-| Fullcalendar | | <td className="versiontdbgcolor"> 5.3.1 -> 6.1.15 </td> |
 |  | nvd3 | 1.8.11 |
+| Fullcalendar | | <td className="versiontdbgcolor"> 5.3.1 -> 6.1.15 </td> |
 | Built-in functions | lodash-es | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
