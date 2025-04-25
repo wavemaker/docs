@@ -216,10 +216,10 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Version |
 | --- | --- |
-| JDK | 17/21 |
+| JDK | <td className="versiontdbgcolor"> 21.0.3 -> 21.0.6 </td> |
 | WebSphere Liberty | 23.0.0.9+ |
 | JBoss Wildfly | 27+ |
-| Tomcat | 10.1.31 |
+| Tomcat | <td className="versiontdbgcolor"> 10.1.31 -> 10.1.39 </td> |
 
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
@@ -228,15 +228,11 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 
 |Description|	Version|
 |---|---|
-|Java | 17/21 |
+|Java | <td className="versiontdbgcolor"> 21.0.3 -> 21.0.6 </td> |
 |Node| 22.11.0 |
 |Maven| 3.9.9 |
 |npm | 10.9.0 |
 |Ant| 1.10.11|
-
-:::note
-The Node upgrade applies only to Web applications, while React Native applications will continue using Node version 18.
-:::
 
 For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
@@ -307,6 +303,9 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 | [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | 1.8.8 |
 | Android Gradle Plugin (AGP) | <td className="versiontdbgcolor"> 8.7 -> 8.10.2 </td> |
 
+:::note
+Users can now use a single **Node.js v22.11.0** version across both Web and React Native platforms, as well as CLI tools.
+:::
 
 ### SDK Update
 
