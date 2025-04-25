@@ -18,16 +18,20 @@ Let’s walk through what’s new in 11.11.
 
 WaveMaker Studio now separates Migration Changes from User Changes in **View Changes**. This gives you crystal-clear visibility, making it easier to understand what the platform changed vs. what you’ve edited.
 
+[Read more →](/learn/blog/2025/04/16/separation-of-userchanges-vs-migrationchanges)
+
 
 #### 2. Studio Preview Opens in a New Tab
 
 **A small change with a big impact:** Studio Preview now opens in a new browser tab instead of a pop-up. It’s easier to navigate, especially when working with multiple windows or tabs.
 
+[More on this change →](/learn/blog/2025/04/16/preview-in-new-tab)
 
 #### 3. Standalone Components in Angular Apps
 
 We’ve transitioned from Angular’s module-based architecture to standalone components, reducing bundle size and improving performance. Your apps now load faster (up to 8.9% smaller bundle size), are more maintainable, and align with the latest Angular best practices.
 
+[Why this matters →](/learn/blog/2025/04/16/migrating-to-standalone-components)
 
 #### 4. Leaner Angular Apps with Cleaned-Up i18n Files
 
@@ -37,17 +41,19 @@ We’ve optimized Angular builds by cleaning out unused localization files. For 
 
 Result? Smaller builds, faster loads.
 
+[More details →](/learn/blog/2025/04/16/reduced-bundle-size-cleanup-i18n-files)
 
 #### 6. A More Accurate Canvas: True WYSIWYG
 
 What you see is now much closer to what your users see. We’ve enhanced the Studio Canvas rendering to be more faithful to the final application UI, reducing surprises in production.
 
+[Why this helps →](/learn/blog/2025/04/16/canvas-visual-enhancement)
 
 #### 7. Dynamic Browser Titles for Easier Navigation
 
 Studio now updates your browser tab titles based on the current editor. Handy when working across multiple tabs.
 
-
+[More context →](/learn/blog/2025/04/21/dynamic-browser-title)
 
 #### 8. Dynamic Wizards: Smarter, More Flexible Forms
 
@@ -57,13 +63,13 @@ WaveMaker’s Wizard widget is now dynamic. You can:
 - Show/hide steps conditionally
 - Use programmatic navigation for full control
 
-
+[Explore dynamic wizards →](/learn/blog/2025/04/21/dynamic-wizard)
 
 #### 9. Async Validation in Wizards
 
 Support for **`async/await`** in Next callback for Wizard navigation makes API-based validations easier and more reliable. A must-have for real-world apps.
 
-
+[Learn more →](/learn/blog/2025/04/21/async-validation-in-wizard)
 
 #### 10. Smaller WAR Files for Angular Projects
 
