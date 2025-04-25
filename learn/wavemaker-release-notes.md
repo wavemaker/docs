@@ -155,7 +155,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.10.4](/learn/wavemaker-release-notes/v11-10-4)
+Last updated: [WaveMaker 11.11.0](/learn/wavemaker-release-notes/v11-11-0)
 
 ---
 
@@ -171,6 +171,7 @@ Last updated: [WaveMaker 11.10.4](/learn/wavemaker-release-notes/v11-10-4)
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 7.8.5 |
+| Fullcalendar | | <td className="versiontdbgcolor"> 5.3.1 -> 6.1.15 </td> |
 |  | nvd3 | 1.8.11 |
 | Built-in functions | lodash-es | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
@@ -182,34 +183,35 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.3 -> 6.2.5 </td> |
-| Security framework | Spring Security | <td className="versiontdbgcolor">6.4.3 -> 6.4.4 </td>  |
-|  | Spring Data |  <td className="versiontdbgcolor"> 2024.1.3 -> 2024.1.4 </td> |
-|  | Spring Boot |   <td className="versiontdbgcolor"> 3.4.3 -> 3.4.4 </td> |
+|  | Spring Framework | 6.2.5 |
+| Security framework | Spring Security | 6.4.4 |
+|  | Spring Data | 2024.1.4 |
+|  | Spring Boot |  3.4.4 |
 |  | Spring Session | 3.4.2 |
-| Java JSON utilities | Gson  |  2.12.1 |
+| Java JSON utilities | Gson  |  <td className="versiontdbgcolor"> 2.12.1 -> 2.13.0 </td> |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
 | JSON library | Jackson |  2.18.3 |
 | Logging framework | SLF4j | 2.0.17 |
 | Logging Implementation | Log4j2 | 2.24.3 |
-| Http client library  | HttpComponents -  httpclient |  5.4.2 |
+| Http client library  | HttpComponents -  httpclient | <td className="versiontdbgcolor"> 5.4.2 -> 5.4.3 </td> |
 | Servlet Framework |  | 6.0.0 |
-| Database Connection Pooling | HikariCP | 6.2.1  |
+| Database Connection Pooling | HikariCP | <td className="versiontdbgcolor"> 6.2.1 -> 6.3.0 </td> |
 |  | Commons Lang3 | 3.17.0  |
-|  | Guava | <td className="versiontdbgcolor"> 33.4.0-jre -> 33.4.5-jre </td> |
+|  | Guava | <td className="versiontdbgcolor"> 33.4.5-jre -> 33.4.8-jre </td> |
 |  | Postgresql Driver  | 42.7.4  |
 |  | Hibernate Validator | 8.0.2.Final |
-|  | Jgit | 7.1.0.202411261347-r |
+|  | Jgit | <td className="versiontdbgcolor"> 7.1.0.202411261347-r -> 7.2.0.202503040940-r </td> |
 |  | Commons Codec | 1.18.0 |
-|  | Commons IO | 2.18.0 |
-|  | Commons Text | 1.13.0 |
+|  | Commons IO | <td className="versiontdbgcolor"> 2.18.0 -> 2.19.0 </td> |
+|  | Commons Text | <td className="versiontdbgcolor">1.13.0 -> 1.13.1 </td> |
 |  | Antisamy | 1.7.7 |
 |  | Freemarker | 2.3.34 |
 |  | Apache Tika | 3.1.0 |
 |  | Mariadb JDBC Driver | 3.5.2 |
-|  | Mongodb Driver | <td className="versiontdbgcolor"> 5.3.1 -> 5.4.0 </td> |
+|  | Mongodb Driver | 5.4.0 |
 |  | Jakarta Validation Api | 3.1.1 |
+
 
 
 ### Runtime Environment
@@ -249,6 +251,7 @@ For more information about building projects with Maven, see [here](/learn/app-d
 |  | ngx-bootstrap | 9.0.0 |
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 7.8.5 |
+| Fullcalendar | | <td className="versiontdbgcolor"> 5.3.1 -> 6.1.15 </td> |
 |  | nvd3 | 1.8.11 |
 | Built-in functions | lodash-es | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
