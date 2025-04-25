@@ -86,7 +86,7 @@ Available from v11.11, you can now export your Angular project as a ZIP directly
 - Allowed File Upload Extensions Property Updates is Reverted upon Publishing Prefab
 - Add Button Action is Not Working for Tabs, Accordion, Wizard, Button group and Carousel
 
-## ReactNative Mobile-Specific Enhancements
+## React Native Mobile-Specific Enhancements
 
 #### 1. Node.js v22.11.0 Everywhere
 
@@ -99,7 +99,7 @@ With this release, we have migrated to use Expo image to leverage the advantages
 
 #### 3. Chart Widget Enhancements
 
-Added support for hiding x-axis labels (`showxaxislabels`) and customizing bar width (`barwidth`) in Bar and Column charts
+Added support for hiding x-axis labels (`showxaxislabels`) and customizing bar width (`barwidth`) in Bar and Column charts.
 
 #### 4. Implement Gradient Text Styling in Labels
 
