@@ -6,9 +6,15 @@ author: "Sivaramakrishnan"
 
 We have transitioned from Module-based architecture to Standalone components to shape the performance and maintainability of our application for years to come.
 
+> **Module-based setup** – A structure where code is organized into grouped modules.
+
+> **Standalone components** – Independent building blocks in Angular that don't require modules.
+
 ## Why Shifting from Modules to Standalone Components
 
-In Angular's early stages, modules were introduced to manage growing application complexity. As Angular evolved, especially with the introduction of Standalone components, the need for explicit module declarations became less critical, simplifying application architecture.
+In Angular's early stages, modules were introduced to manage growing application complexity. As Angular evolved, especially with the introduction of Standalone components, the need for explicit module declarations became less necessary, simplifying application architecture.
+
+Now, with standalone components, you don’t need to group everything into modules. This makes the app setup simpler and more flexible.
 
 <!-- truncate -->
 
@@ -23,7 +29,7 @@ Standalone components allows you to build applications without the rigid structu
 
 **With standalone components:**
 
-- You can define a component independently, using the standalone: true flag.
+- Components can work on their own.
 - You can import other standalone components or modules directly into the component.
 
 A sample standalone component — the standalone attribute & direct declarations of dependencies using imports attribute. 
@@ -48,7 +54,7 @@ You can use this component directly in routing or import it into other component
 This evolution is driven by several factors:
 
 - **Simpler Development:** No need for NgModules; components manage their own dependencies.​
-- **Better Performance:** Smaller bundles and faster load times due to reduced overhead.​
+- **Better Performance:** Smaller bundles and faster loading.​
 - **Easier Reuse:** Self-contained components can be used across different projects.​
 - **Tree-Shaking Optimization:** Removes unused code during build, keeping apps lightweight.​
 - **Simpler Lazy Loading:** Components can be loaded directly, simplifying lazy loading.
@@ -74,19 +80,23 @@ This evolution is driven by several factors:
 
 ### Maintainability Improvements
 
-- Less Repetitive Code: Reducing boilerplate makes the codebase cleaner and easier to maintain.​
-- Better Organization: Clearer structure helps in scaling and maintaining the application.​
-- Simplified Testing: Self-contained components are easier to test individually.
+- **Less Repetitive Code:** Reducing boilerplate makes the codebase cleaner and easier to maintain.​
+- **Better Organization:** Clearer structure helps in scaling and maintaining the application.​
+- **Simplified Testing:** Self-contained components are easier to test individually.
+
+> **Boilerplate** – Repetitive code that's required but not unique or meaningful on its own.
 
 ## Impact on Generated Applications
-The generated angular applications now replaces the modules with the standalone components, hence from Release v11.11 onwards, you will see the following changes in the generated applications.
 
-- There is no app.module file gets generated
-- App config file is generated with app dependencies of the application
-- There is no page.module generated, hence the no.of files reduced in the application
-- Each page component is a standalone component & lazily loaded when routed in the browser.
-- Application startup now uses the modern bootstrapApplication() API, leveraging main.ts and app.config.ts for configuration. This aligns with Angular’s latest best practices and eliminates the need for a root AppModule.
+Starting with version 11.11, any new Angular apps you generate will follow this new setup. Here’s what’s different:
+
+- No more app.module file.
+- A new app config file handles app setup.
+- Fewer files in your app since page modules are gone.
+- Each page is now a standalone component that loads only when needed.
+- The app now uses a new bootstraping mechanism which means the app starts with a new method that removes the need for a main module, making things cleaner and faster.
 
 ## Conclusion
-By embracing standalone components, we're laying the foundation for a more performant, maintainable, and scalable application. This architectural shift aligns with the latest best practices and ensures that our application remains competitive in the ever-evolving landscape of web development.
+
+Switching to standalone components makes our apps faster, simpler, and easier to maintain. It also keeps us aligned with the latest Angular improvements making the applications competitive in the ever-evolving landscape of web development.
 
