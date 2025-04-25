@@ -15,9 +15,9 @@ With the latest improvements, the design-to-preview workflow becomes more seamle
 
 <!-- truncate -->
 
-## The Challenges
+## Why The Change
 
-​WaveMaker's canvas previously had design challenges that made the interface less intuitive. Long labels and full binding paths caused text to overflow, cluttering the layout. Default component names like "Label1" or "Container7" lacked clarity, making it difficult to identify elements. Additionally, misaligned widgets and inconsistent spacing led to layouts that didn't accurately reflect the final application. Recent updates have addressed these issues, enhancing the design experience.
+​WaveMaker’s canvas has been thoughtfully improved to offer a more intuitive and accurate design experience. Enhancements such as better handling of long labels and full binding paths help maintain a clean layout without clutter. Default component names are now more descriptive, making it easier for developers to identify elements quickly—for example, instead of generic names like *Label1* or **Container7*, components are now labeled more meaningfully. Additionally, refinements to widget alignment and spacing ensure the canvas closely mirrors the final application layout. These updates collectively simplify the design process and boost overall usability.
 
 ## What's New in This Release
 
