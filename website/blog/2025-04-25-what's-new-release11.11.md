@@ -17,17 +17,17 @@ Let’s walk through what’s new in 11.11.
 #### 1. Distinguishing User vs. Migration Changes in WaveMaker Studio
 
 WaveMaker Studio now separates Migration Changes from User Changes in **View Changes**. This gives you crystal-clear visibility, making it easier to understand what the platform changed vs. what you’ve edited.
-[Read more →](/learn/blog/2025/04/16/separation-of-userchanges-vs-migrationchanges)
+
 
 #### 2. Studio Preview Opens in a New Tab
 
 **A small change with a big impact:** Studio Preview now opens in a new browser tab instead of a pop-up. It’s easier to navigate, especially when working with multiple windows or tabs.
-[More on this change →](/learn/blog/2025/04/16/preview-in-new-tab)
+
 
 #### 3. Standalone Components in Angular Apps
 
 We’ve transitioned from Angular’s module-based architecture to standalone components, reducing bundle size and improving performance. Your apps now load faster (up to 8.9% smaller bundle size), are more maintainable, and align with the latest Angular best practices.
-[Why this matters →](/learn/blog/2025/04/16/migrating-to-standalone-components)
+
 
 #### 4. Leaner Angular Apps with Cleaned-Up i18n Files
 
@@ -36,18 +36,18 @@ We’ve optimized Angular builds by cleaning out unused localization files. For 
 - @angular/global localization reduced by 98%
 
 Result? Smaller builds, faster loads.
-[More details →](/learn/blog/2025/04/16/reduced-bundle-size-cleanup-i18n-files)
+
 
 #### 6. A More Accurate Canvas: True WYSIWYG
 
 What you see is now much closer to what your users see. We’ve enhanced the Studio Canvas rendering to be more faithful to the final application UI, reducing surprises in production.
-[Why this helps →](/learn/blog/2025/04/16/canvas-visual-enhancement)
+
 
 #### 7. Dynamic Browser Titles for Easier Navigation
 
 Studio now updates your browser tab titles based on the current editor. Handy when working across multiple tabs.
 
-[More context →](/learn/blog/2025/04/21/dynamic-browser-title)
+
 
 #### 8. Dynamic Wizards: Smarter, More Flexible Forms
 
@@ -57,13 +57,13 @@ WaveMaker’s Wizard widget is now dynamic. You can:
 - Show/hide steps conditionally
 - Use programmatic navigation for full control
 
-[Explore dynamic wizards →](/learn/blog/2025/04/21/dynamic-wizard)
+
 
 #### 9. Async Validation in Wizards
 
 Support for **`async/await`** in Next callback for Wizard navigation makes API-based validations easier and more reliable. A must-have for real-world apps.
 
-[Learn more →](/learn/blog/2025/04/21/async-validation-in-wizard)
+
 
 #### 10. Smaller WAR Files for Angular Projects
 
@@ -79,8 +79,6 @@ Available from v11.11, you can now export your Angular project as a ZIP directly
 - Data Field and Display Field of CheckboxSet are Auto Setting to Empty
 - Allowed File Upload Extensions Property Updates is Reverted upon Publishing Prefab
 - Add Button Action is Not Working for Tabs, Accordion, Wizard, Button group and Carousel
-
-Check the [release notes](/learn/wavemaker-release-notes/v11-11-0/) for more bug fixes.
 
 ## ReactNative Mobile-Specific Enhancements
 
@@ -115,8 +113,6 @@ Introducing a property to add gradient text styling in the Label widget. To impl
 - Fixed scrolling in modal dialogs on Android
 - Image rendering issues fixed (no more **tap-to-load**)
 
-Check the [release notes](/learn/wavemaker-release-notes/v11-11-0/) for more bug fixes.
-
 ## Technology Stack Upgrades
 
 #### 1. Platform Stack Upgrades
@@ -140,6 +136,6 @@ Node Exporter, Cadvisor, Elastalert, Fluentd, Prometheus, Grafana, Kibana, etc. 
 
 ## Final Thoughts
 
-[WaveMaker Studio 11.11](/learn/wavemaker-release-notes/v11-11-0/) delivers serious improvements across the board—developer experience, app performance, usability, and flexibility. With key architectural upgrades and user-driven enhancements, this release is designed to help you build faster, ship smarter, and maintain confidently.
+WaveMaker Studio 11.11 delivers serious improvements across the board—developer experience, app performance, usability, and flexibility. With key architectural upgrades and user-driven enhancements, this release is designed to help you build faster, ship smarter, and maintain confidently.
 
 Try the new features and let us know what you think.
