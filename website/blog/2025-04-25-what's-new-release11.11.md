@@ -117,6 +117,27 @@ Introducing a property to add gradient text styling in the Label widget. To impl
 
 Check the [release notes](/learn/wavemaker-release-notes/v11-11-0/) for more bug fixes.
 
+## Technology Stack Upgrades
+
+#### 1. Platform Stack Upgrades
+
+We’ve upgraded the platform for better performance, security, and compatibility:
+
+- Postgres: 13.2 → 17
+- Java: 21.0.3 → 21.0.6
+- Tomcat: 10.1.31 → 10.1.39
+- GitLab: 15.4.6 → 17.8.2
+
+Node Exporter, Cadvisor, Elastalert, Fluentd, Prometheus, Grafana, Kibana, etc. — all upgraded for better monitoring and stability.
+
+#### 2. Application Stack Upgrades
+
+- Spring Framework:  6.2.3 → 6.2.5  
+- Spring Security:  6.4.3 → 6.4.4  
+- Spring Data:  2024.1.3 → 2024.1.4  
+- Spring Boot:  3.4.3 →3.4.4  
+
+
 ## Final Thoughts
 
 [WaveMaker Studio 11.11](/learn/wavemaker-release-notes/v11-11-0/) delivers serious improvements across the board—developer experience, app performance, usability, and flexibility. With key architectural upgrades and user-driven enhancements, this release is designed to help you build faster, ship smarter, and maintain confidently.
