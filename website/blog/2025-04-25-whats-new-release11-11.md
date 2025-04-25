@@ -125,10 +125,9 @@ Introducing a property to add gradient text styling in the Label widget. To impl
 
 We’ve upgraded the platform for better performance, security, and compatibility:
 
-- Postgres: 13.2 → 17
 - Java: 21.0.3 → 21.0.6
 - Tomcat: 10.1.31 → 10.1.39
-- GitLab: 15.4.6 → 17.8.2
+
 
 Node Exporter, Cadvisor, Elastalert, Fluentd, Prometheus, Grafana, Kibana, etc. — all upgraded for better monitoring and stability.
 
