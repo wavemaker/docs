@@ -301,7 +301,7 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |Maven| 3.9.9 |
 |npm | <td className="versiontdbgcolor"> 9.5.1 -> 10.9.0 </td> |
 | Android Studio | <td className="versiontdbgcolor"> Ladybug 2024.2.2 - Meerkat 2024.3.1 </td> |
-| Xcode | version 15.4 |
+| Xcode | <td className="versiontdbgcolor">  15.4  - 16.2 </td> |
 | SDK Build Tools | 34.0.0|
 | [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | 1.8.8 |
 | Android Gradle Plugin (AGP) | <td className="versiontdbgcolor"> 8.7 -> 8.10.2 </td> |
