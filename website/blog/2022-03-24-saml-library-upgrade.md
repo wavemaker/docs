@@ -23,10 +23,10 @@ The new SAML library provided by spring suggests the metadata, audience url, SSO
 
 | URL Type | spring-security-saml2-core (Existing) | saml2-service-provider (New) | 
 |---|---|---|
-| Metadata | {app-url}/saml/metadata | {app-url}/saml2/service-provider-metadata/saml |
-| Audience | {app-url}/saml/metadata | {app-url}/saml2/service-provider-metadata/saml |
-| SSO | {app-url}/saml/SSO | {app-url}/login/saml2/sso/saml |
-| SLO | {app-url}/saml/SingleLogout | {app-url}/logout/saml2/slo |
+| Metadata | \{app-url}/saml/metadata | \{app-url}/saml2/service-provider-metadata/saml |
+| Audience | \{app-url}/saml/metadata | \{app-url}/saml2/service-provider-metadata/saml |
+| SSO | \{app-url}/saml/SSO | \{app-url}/login/saml2/sso/saml |
+| SLO | \{app-url}/saml/SingleLogout | \{app-url}/logout/saml2/slo |
 
 Here app-url can be preview or deployed URL.
 
