@@ -85,11 +85,13 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.10.5](/learn/wavemaker-release-notes/v11-10-5)
+Last updated: [WaveMaker 11.11.0](/learn/wavemaker-release-notes/v11-11-0)
 
 ---
 
-### UI Frameworks
+## WaveMaker Studio 
+
+### UI Frameworks (Web and Mobile)
 
 | Description | JS Library | Version |
 | --- | --- | --- |
@@ -100,112 +102,98 @@ Last updated: [WaveMaker 11.10.5](/learn/wavemaker-release-notes/v11-10-5)
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 7.8.5 |
 |  | nvd3 | 1.8.11 |
+| Fullcalendar | | <td className="versiontdbgcolor"> 5.3.1 -> 6.1.15 </td> |
 | Built-in functions | lodash-es | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
 Optimized jQuery-UI library excluding unwanted components like accordion, datepicker, dialog, progressbar, spinner, tabs, and all jQuery-UI Effects.
 
-### Backend Frameworks
+### Backend Frameworks (Web and Mobile)
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.3 -> 6.2.5 </td> |
-| Security framework | Spring Security | <td className="versiontdbgcolor">6.4.3 -> 6.4.4 </td>  |
-|  | Spring Data |  <td className="versiontdbgcolor"> 2024.1.3 -> 2024.1.4 </td> |
-|  | Spring Boot |   <td className="versiontdbgcolor"> 3.4.3 -> 3.4.4 </td> |
+|  | Spring Framework | 6.2.5 |
+| Security framework | Spring Security | 6.4.4 |
+|  | Spring Data | 2024.1.4 |
+|  | Spring Boot |  3.4.4 |
 |  | Spring Session | 3.4.2 |
-| Java JSON utilities | Gson  |  2.12.1 |
+| Java JSON utilities | Gson  |  <td className="versiontdbgcolor"> 2.12.1 -> 2.13.0 </td> |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
 | JSON library | Jackson |  2.18.3 |
 | Logging framework | SLF4j | 2.0.17 |
 | Logging Implementation | Log4j2 | 2.24.3 |
-| Http client library  | HttpComponents -  httpclient |  5.4.2 |
+| Http client library  | HttpComponents -  httpclient | <td className="versiontdbgcolor"> 5.4.2 -> 5.4.3 </td> |
 | Servlet Framework |  | 6.0.0 |
-| Database Connection Pooling | HikariCP | 6.2.1  |
+| Database Connection Pooling | HikariCP | <td className="versiontdbgcolor"> 6.2.1 -> 6.3.0 </td> |
 |  | Commons Lang3 | 3.17.0  |
-|  | Guava | <td className="versiontdbgcolor"> 33.4.0-jre -> 33.4.5-jre </td> |
+|  | Guava | <td className="versiontdbgcolor"> 33.4.5-jre -> 33.4.8-jre </td> |
 |  | Postgresql Driver  | 42.7.4  |
 |  | Hibernate Validator | 8.0.2.Final |
-|  | Jgit | 7.1.0.202411261347-r |
+|  | Jgit | <td className="versiontdbgcolor"> 7.1.0.202411261347-r -> 7.2.0.202503040940-r </td> |
 |  | Commons Codec | 1.18.0 |
-|  | Commons IO | 2.18.0 |
-|  | Commons Text | 1.13.0 |
+|  | Commons IO | <td className="versiontdbgcolor"> 2.18.0 -> 2.19.0 </td> |
+|  | Commons Text | <td className="versiontdbgcolor">1.13.0 -> 1.13.1 </td> |
 |  | Antisamy | 1.7.7 |
 |  | Freemarker | 2.3.34 |
 |  | Apache Tika | 3.1.0 |
 |  | Mariadb JDBC Driver | 3.5.2 |
-|  | Mongodb Driver | <td className="versiontdbgcolor"> 5.3.1 -> 5.4.0 </td> |
+|  | Mongodb Driver | 5.4.0 |
 |  | Jakarta Validation Api | 3.1.1 |
 
+## Web
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
-| JDK | 17/21 |
+| JDK | <td className="versiontdbgcolor"> 21.0.3 -> 21.0.6 </td> |
 | WebSphere Liberty | 23.0.0.9+ |
 | JBoss Wildfly | 27+ |
-| Tomcat | 10.1.31 |
-| Android <br/> iOS | 13.0.0 <br/> 17.5 |
+| Tomcat | <td className="versiontdbgcolor"> 10.1.31 -> 10.1.39 </td> |
+
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
 
+### Angular Web 
 
-# Build Environment for Studio
----
+|Description|	Version|
+|---|---|
+|Java | <td className="versiontdbgcolor"> 21.0.3 -> 21.0.6 </td> |
+|Node| 22.11.0 |
+|Maven| 3.9.9 |
+|npm | 10.9.0 |
+|Ant| 1.10.11|
 
-:::important
+For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
-With the release of 11.4, we have ended our support for WaveMaker 10 projects. To know more, see [Ending Support to WaveMaker 10 Projects](/learn/blog/2023/08/11/wavemaker10x-end-of-support).
-:::
 
-## Build Environment
+## Mobile (React Native)
 
-### React Native
-
-#### Environment Setup
+### Environment Setup
 
 |Description|	Version|
 |---|---|
 |Java | 17 |
-|Node|  18.17.1 |
+|Node|  <td className="versiontdbgcolor"> 18.17.1 -> 22.11.0 </td> |
 |Maven| 3.9.9 |
-|npm | 9.5.1 |
-| Android Studio | <td className="versiontdbgcolor"> Ladybug 2024.2.1 -> Ladybug 2024.2.2 </td> |
-| Xcode | <td className="versiontdbgcolor"> version 15.4 </td> |
+|npm | <td className="versiontdbgcolor"> 9.5.1 -> 10.9.0 </td> |
+| Android Studio | <td className="versiontdbgcolor"> Ladybug 2024.2.2 - Meerkat 2024.3.1 </td> |
+| Xcode | <td className="versiontdbgcolor">  15.4  - 16.2 </td> |
 | SDK Build Tools | 34.0.0|
-| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | <td className="versiontdbgcolor"> 1.8.6 -> 1.8.8 </td> |
-| Android Gradle Plugin (AGP) | 8.3 - 8.7 |
+| [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | 1.8.8 |
+| Android Gradle Plugin (AGP) | <td className="versiontdbgcolor"> 8.7 -> 8.10.2 </td> |
 
 :::note
-It is required to use Android Studio version be **Iguana | 2023.2.1** or above and Android Gradle Plugin(AGP) version be **8.3** and above. The recommended versions for Android Studio is **Ladybug | 2024.2.1** and AGP is **8.3**.
-
-Please ensure that your [Android Studio](https://developer.android.com/studio/releases#android_gradle_plugin_and_android_studio_compatibility) has a compatible version of the [AGP](https://developer.android.com/build/releases/past-releases/agp-8-3-0-release-notes#compatibility). Additionally, verify the compatibility of the AGP with the SDK build tools version, JDK, and Gradle version.
+Users can now use a single **Node.js v22.11.0** version across both Web and React Native platforms, as well as CLI tools.
 :::
 
 ### SDK Update
 
 |Description|	Version|
 |---|---|
-| Expo | 52.0.0 |
-| React Native | 0.76 |
-
-### Angular Web
-
-|Description|	Version|
-|---|---|
-|Java | 17/21 |
-|Node| 22.11.0 |
-|Maven| 3.9.9 |
-|npm | 10.9.0 |
-|Ant| 1.10.11|
-
-:::note
-The Node upgrade applies only to Web applications, while React Native applications will continue using Node version 18.
-:::
-
-For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
+| Expo | 52.0.17 |
+| React Native | 0.76.3 |
 
 ## Older Releases
 
