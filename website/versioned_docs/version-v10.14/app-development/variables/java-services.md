@@ -162,7 +162,7 @@ var sv = Page.Variables.[variable_name];
 
 This method can also be used to set all the specified key-value pairs as input fields in the variable.
 
-**Parameters**: inputData(object) object or key-value pairs {“key”: “value”,…}
+**Parameters**: inputData(object) object or key-value pairs `{“key”: “value”,…}`
 
 **Return Value**: Updated inputFields object
 

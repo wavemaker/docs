@@ -10,9 +10,9 @@ There are three ways that Localization comes into effect:
 1. WaveMaker automatically detects the user's preferred locales (from the browser) and renders the application with the locale of the user's preference if the application supports. If not, displays the application in the default language configured in application settings.
 2. The user can be given a choice to select the language using the Select Locale widget.
 3. You can also choose to trigger the language switch through user events like button click from JavaScript, the following snippet changes language to English:
-    
+```js    
     App.changeLocale({'datavalue': 'en'})
-    
+```    
 
 ## Properties
 

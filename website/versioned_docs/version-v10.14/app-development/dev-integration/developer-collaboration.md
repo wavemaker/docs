@@ -33,7 +33,7 @@ One need not be on the same email domain to collaborate on the project.
 ## Change Roles
 
 - Once the user is added as Project Admin/Contributor, the role can be changed. To change the role of the existing member, click on More options and select Add as Project Admin/Add as Contributor option.
-- It opens a  confirmation dialog saying `<user_name>` role will be changed from `<existing_role>` to <new_role> in `<project_name>`. Click OK button to confirm.
+- It opens a  confirmation dialog saying `<user_name>` role will be changed from `<existing_role>` to `<new_role>` in `<project_name>`. Click OK button to confirm.
 
 [Refer here](/learn/app-development/wavemaker-overview/project-user-management/#roles) to know more about the Roles.
 

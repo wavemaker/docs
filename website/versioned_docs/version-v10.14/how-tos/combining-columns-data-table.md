@@ -19,9 +19,9 @@ You can combine two or more columns to be displayed in a single column in a Data
 1. Go to Advanced Settings of the Data Table from the Properties panel
 2. From the Columns tab, add two new columns - H1 and H2
 3. In the View Mode section, enter the following for Value Expression:
-    
+```js    
 {{row.getProperty('q1') + row.getProperty('q2')}}
-
+```
 This will add the content from columns q1 and q2 and set it as the content for H1 column. 
 
 [![](/learn/assets/dt_ve_1.png)](/learn/assets/dt_ve_1.png)

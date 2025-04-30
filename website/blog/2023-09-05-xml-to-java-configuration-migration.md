@@ -28,6 +28,6 @@ As a part of release 11.4, the following profile property names have been auto-m
 |Old Property Name| New Property Name|
 |----|----|
 | security.providers | security.activeProviders |
-| security.general.cors.{pathEntryName}.allowedOrigins | security.general.cors.pathEntries.{pathEntryName}.allowedOrigins |
+| security.general.cors.\{pathEntryName}.allowedOrigins | security.general.cors.pathEntries.\{pathEntryName}.allowedOrigins |
 | security.providers.ad.groupSearchDisabled | security.providers.ad.roleMappingEnabled |
 | security.providers.ldap.groupSearchDisabled | security.providers.ldap.roleMappingEnabled |
