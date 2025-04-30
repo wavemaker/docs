@@ -1912,5 +1912,33 @@ h2.widget-header{
     }
 }
 
-
+.flag {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.25rem;
+    background-color: #eee;
+    color: #333;
+    margin-left: 0.25rem;
+    font-weight: var(--ifm-heading-font-weight);
+  }
+  
+  .flag-android {
+    background-color: #a4c639;
+    color: black;
+  }
+  
+  .flag-ios {
+    background-color: #007aff;
+    color: white;
+  }
+  
+  .flag-web {
+    background-color: #f26522;
+    color: white;
+  }
+  
+  .flag-native {
+    background-color: #6f42c1;
+    color: white;
+  }
    
