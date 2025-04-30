@@ -49,4 +49,4 @@ For WaveMaker user, follow the steps below:
 [![privellaged user setup initialization](/learn/assets/wme-setup/wme-setup-with-privillaged-user.jpg)](/learn/assets/wme-setup/wme-setup-with-privillaged-user.jpg)
 
 - After successful initialization, the script will display a URL to perform the rest of the WME setup.
-- Go to  <http://Platform-Instance-IP:8080> as directed by the above command output to do the WME setup.
+- Go to  `<http://Platform-Instance-IP:8080>` as directed by the above command output to do the WME setup.

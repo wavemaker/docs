@@ -72,18 +72,18 @@ Page Dialog is a popup window that displays page content and can be dismissed by
 
 **Dialog** widget in your project can be accessed by associating the open and _close_ properties of the dialog with an event of any other widget. The dialog can be accessed through scripting by adding _DialogService_ to the _page controller_ and adding the code for _open_ and _close_ as shown below, here we are displaying an alert dialog on click of a button: Click event of the button should trigger the following JavaScript code:
 
-   
+```js   
 Page.button3Click = function($event, widget) {
      Page.Widgets.alertdialog1.open();
  }
-
+```
 For hiding dialog:
-
+```js
 /** function called on button1 click **/
         Page.button1Click = function($event, widget) {
             Page.Widgets.alertdialog1.close();
         };
-
+```
 ## Properties & Events
 
 ### **Alert Dialog Properties**

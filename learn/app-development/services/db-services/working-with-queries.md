@@ -159,7 +159,7 @@ For all queries and procedures, there will be a Rest API generated with the Serv
 
 **Understanding generated Code** _File structure_ [![](/learn/assets/queryproc_files.png)](/learn/assets/queryproc_files.png)_Models_: Both _Request_ and _Response_ POJO classes are generated as: &lt;queryName&gt; Request/Response
 
-- These classes are generated in a package: <service_package>.models.query
+- These classes are generated in a package: `<service_package>.models.query`
 - Response class is generated only for SELECT queries. The return type for Non-Select queries will be integer hence POJO class is not generated. Eg: query with name **getAllEmployees** will generate **GetAllEmployeesResponse** class with all returned columns.
 - For HQL queries existing Model classes will be used if possible, else a Response model similar to Native queries will be generated.
     - Eg: query `from Employee;`
@@ -170,7 +170,7 @@ For all queries and procedures, there will be a Rest API generated with the Serv
 
 _Services_: This layer exposes the methods related to the configured query and procedures. Controller layer uses these methods to complete the user requests. We recommend using methods from this layer in custom Java services.
 
-- Class with name QueryExecutorService is generated in the package <service_package>.service For eg: for Service **hrdb**, class name will be **HrdbQueryExecutorService**
+- Class with name QueryExecutorService is generated in the package `<service_package>.service` For eg: for Service **hrdb**, class name will be **HrdbQueryExecutorService**
 - Method with name **execute&lt;queryName&gt;** will be generated for all configured queries
     - For SELECT and DELETE queries, all parameters are configured as arguments for that method. In the case of Paginated request Pageable argument is added to the method signature.
     - For INSERT and UPDATE queries, **&lt;queryName&gt;Request** is the argument.
@@ -181,7 +181,7 @@ _Services_: This layer exposes the methods related to the configured query and p
 
 [![](/learn/assets/query_files_service.png)](/learn/assets/query_files_service.png)_Controllers_:
 
-- Separate controller classes are generated for query and procedures with names as **QueryExecutorController** and **ProcedureExecutorController** respectively in package **<service_package>.controller**.
+- Separate controller classes are generated for query and procedures with names as **QueryExecutorController** and **ProcedureExecutorController** respectively in package **`<service_package>.controller`**.
 - Rest API is generated for each configured query and procedure. Generated method signature will be same as service layer method signature.
 - For methods returning INT type, controller layer returns **IntegerWrapper**.
 

@@ -268,9 +268,9 @@ Supported value expression types are listed in below table
 | equals | = | Number or String | Values that equals to given value | - `empId=1`   - `firstname=’Eric’` |
 | not equals | `!=`   (or)   `< >` | Number or String | Values that are not equal to given value | - `zip!=02127`   - `jobTitle< >‘Engineer’`  |
 | between | between | Date or Number | Values between given range |    - birthdate between '1973-10-21' and '1986-06-18' (using date format - YYYY-MM-DD)   - zip between 14231 and 15922  |
-| less than | < | Number | Values less than given value | - empId<6  |
+| less than | &lt; | Number | Values less than given value | - empId&lt;6  |
 | greater than | > | Number | Values greater than given value |  - deptId>10 |
-| less than or equal to | <= | Number | Values less or equal to given value | - empId<=4 |
+| less than or equal to | &lt;= | Number | Values less or equal to given value | - empId&lt;=4 |
 | greater than or equal to | >= | Number | Values greater than or equal to given value | - zip>=11 |
 | pattern matching | like | String | Values matching the given pattern |- street like ‘4%Houston%’  |
 | starts with | like | String | Values starting with the given string | - firstname like ‘E%’ |

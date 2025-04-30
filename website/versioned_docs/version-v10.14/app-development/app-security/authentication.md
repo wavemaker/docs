@@ -160,7 +160,7 @@ WaveMaker allows you to authenticate your apps with OpenID. Setting the Security
 ### Service Provider Information
 - **Redirect URL** is pre-populated by WaveMaker and is not editable. You need to copy this link and use it to as the callback URL in Provider app settings page when you register the app.
 - If the application is deployed outside of WaveMaker then the redirect URL for the deployed applications will be in the below format. 
-  **"https://<domain_name>/<app_name>/oauth2/code/{providerid}"**.
+  `https://<domain_name>/<app_name>/oauth2/code/{providerid}`.
   
 ### Integration Information
 - Client Credentials issued once your app is registered with the Provider. It will be in the form of **Client ID** and **Client Secret**.

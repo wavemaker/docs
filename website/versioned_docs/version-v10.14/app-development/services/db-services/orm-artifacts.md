@@ -53,24 +53,24 @@ Import or creation of database within a WaveMaker app results in the auto-genera
 ### CRUD APIs
 
 1. **CREATE** Inserts a record into the table _URL_: / _Request Type_: POST _Path Variables_: None _Request Parameter_: None _Request Body_: object in JSON format _Method Name Example_: createEmployee [![](/learn/assets/db_apis_create.png)](/learn/assets/db_apis_create.png)
-2. **READ (primary key based)** Retrieves the data associated with given ID value _URL_: /{id} _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getEmployee [![](/learn/assets/db_apis_readpk.png)](/learn/assets/db_apis_readpk.png)
-3. **READ (unique key based)** Retrieves the data associated with given unique key value _URL_: /[UNIQUE_KEY]/{unique_key_value} _Request Type_: GET _Path Variables_: unique key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getByDeptCode (unique key for department entity) [![](/learn/assets/db_apis_readuk.png)](/learn/assets/db_apis_readuk.png)
-4. **READ (foreign key based)** Retrieves the data associated with given ID value from the related table _URL_: /{id..+}/[relation_field] _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_:
+2. **READ (primary key based)** Retrieves the data associated with given ID value _URL_: /\{id} _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getEmployee [![](/learn/assets/db_apis_readpk.png)](/learn/assets/db_apis_readpk.png)
+3. **READ (unique key based)** Retrieves the data associated with given unique key value _URL_: /[UNIQUE_KEY]/\{unique_key_value} _Request Type_: GET _Path Variables_: unique key column value _Request Parameter_: None _Request Body_: none _Method Name Example_: getByDeptCode (unique key for department entity) [![](/learn/assets/db_apis_readuk.png)](/learn/assets/db_apis_readuk.png)
+4. **READ (foreign key based)** Retrieves the data associated with given ID value from the related table _URL_: /\{id..+}/[relation_field] _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_:
     
     - Page,
     - Size,
     - Sort
     
     _Request Body_: none _Method Name_: findAssociatedEmployees (employee foreign key for department entity) [![](/learn/assets/db_apis_readfk.png)](/learn/assets/db_apis_readfk.png)
-5. **READ (foreign key based - self-referential)** Retrieves the data associated with given ID value _URL_: /{id..+}/[relation_field] _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_:
+5. **READ (foreign key based - self-referential)** Retrieves the data associated with given ID value _URL_: /\{id..+}/[relation_field] _Request Type_: GET _Path Variables_: primary key column value _Request Parameter_:
     
     - Page,
     - Size,
     - Sort
     
     _Request Body_: none _Method Name_: findAssociatedEmployeesForManagerId (foreign key) [![](/learn/assets/db_apis_readsr.png)](/learn/assets/db_apis_readsr.png)
-6. **UPDATE** Updates entity record associated with the given id value _URL_: /{id} _Request Type_: PUT _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: object in JSON format _Method Name Example_: editEmployee [![](/learn/assets/db_apis_update.png)](/learn/assets/db_apis_update.png)
-7. **DELETE** Deletes entity record associated with the given id _URL_: /{id} _Request Type_: DELETE _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: None _Method Name Example_: deleteEmployee [![](/learn/assets/db_apis_delete.png)](/learn/assets/db_apis_delete.png)
+6. **UPDATE** Updates entity record associated with the given id value _URL_: /\{id} _Request Type_: PUT _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: object in JSON format _Method Name Example_: editEmployee [![](/learn/assets/db_apis_update.png)](/learn/assets/db_apis_update.png)
+7. **DELETE** Deletes entity record associated with the given id _URL_: /\{id} _Request Type_: DELETE _Path Variables_: primary key column value _Request Parameter_: None _Request Body_: None _Method Name Example_: deleteEmployee [![](/learn/assets/db_apis_delete.png)](/learn/assets/db_apis_delete.png)
 
 ### Query APIs
 
@@ -95,7 +95,7 @@ Import or creation of database within a WaveMaker app results in the auto-genera
     
     - ExportOptions (Body)
         - custom query (optional, see here for [query syntax](#custom-query-syntax)),
-        - fields list (optional): [{ “header”:”<column_display_name>”, “field”:”<entity_field_name>”, “expression”:”<custom_expression>” (eg: (${field_name} (or) &lt;any string&gt;)) }]
+        - fields list (optional): `[{ “header”:”<column_display_name>”, “field”:”<entity_field_name>”, “expression”:”<custom_expression>” (eg: (${field_name} (or) &lt;any string&gt;)) }]`
         - exportType - data format for export can be EXCEL or CSV
         - fileName: exported file name.
     
@@ -149,7 +149,7 @@ The APIs generated by WaveMaker for all the imported tables will have methods th
  |
 | less than | < | Number | Values less than given value | 
 
-- empId<6
+- empId&lt;6
 
  |
 | greater than | > | Number | Values greater than given value | 
@@ -157,9 +157,9 @@ The APIs generated by WaveMaker for all the imported tables will have methods th
 - deptId>10
 
  |
-| less than or equal to | <= | Number | Values less or equal to given value | 
+| less than or equal to | &lt;= | Number | Values less or equal to given value | 
 
-- empId<=4
+- empId&lt;=4
 
  |
 | greater than or equal to | >= | Number | Values greater than or equal to given value | 

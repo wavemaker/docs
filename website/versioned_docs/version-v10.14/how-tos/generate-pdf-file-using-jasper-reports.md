@@ -203,7 +203,7 @@ id: "generate-pdf-file-using-jasper-reports"
       ```
 
       :::note
-      Here Qualifier name is ${databaseServiceName}DataSource
+      Here Qualifier name is `${databaseServiceName}DataSource`
       :::
 
   6. Java service code to generate Jasper Report PDF from hrdb Employee table  
@@ -466,7 +466,7 @@ id: "generate-pdf-file-using-jasper-reports"
         ```
 
     
-  3. Design a jasper report for the above data. The following is a sample report file. Which we need to import into the project using [Import Resource](/learn/app-development/services/3rd-party-libraries) to the **${Service}/src/** folder.
+  3. Design a jasper report for the above data. The following is a sample report file. Which we need to import into the project using [Import Resource](/learn/app-development/services/3rd-party-libraries) to the `${Service}/src/` folder.
 
       ```xml
         <?xml version="1.0" encoding="UTF-8"?>

@@ -24,7 +24,7 @@ By default, this methodology gets implemented in all projects. If the hostname p
 
 ## Changes to note
 
-In Android Apps, location.href now has the server domain as the host. All local app files are served at path **https://${server_domain}/_www**.
+In Android Apps, location.href now has the server domain as the host. All local app files are served at path `https://${server_domain}/_www`.
 
 ## Additional Info
 

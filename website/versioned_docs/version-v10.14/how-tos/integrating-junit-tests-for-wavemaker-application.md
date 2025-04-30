@@ -74,7 +74,7 @@ JUnit is a unit testing framework for the Java programming language. JUnit has b
 </beans>
 ```
 
-6. Go to folder src/test/java and create a package namely com/{appName}/test/core 
+6. Go to folder src/test/java and create a package namely `com/{appName}/test/core`
 7. Add a file with name BaseTest.java
 8. Add code snippet to the file
 

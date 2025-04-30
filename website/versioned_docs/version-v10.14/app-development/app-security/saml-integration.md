@@ -129,31 +129,31 @@ During the app development in WaveMaker, application URLs like Metadata, Audienc
 
 - the **Metadata URL** during development would look like this:
     
-    https://wavemakeronline.com/studio/services/saml/metadata
+    `https://wavemakeronline.com/studio/services/saml/metadata`
     
     whereas, for deployment app, the URL should typically look like:
     
-    (http/https)://{hostname}/{appname}/saml/metadata
+    `(http/https)://{hostname}/{appname}/saml/metadata`
     
 - the **Audience URL** during development would look like this:
     
-    https://wavemakeronline.com/{tenantid}/{appname}/saml/SSO
+    `https://wavemakeronline.com/{tenantid}/{appname}/saml/SSO`
     
     whereas, for deployment app, the URL should typically look like:
     
-    (http/https)://{hostname}/{appname}/saml/SSO
+    `(http/https)://{hostname}/{appname}/saml/SSO`
     
 - the Single Signout URL during development would look like this:
     
-    https://wavemakeronline.com/studio/services/saml/SingleLogout
+    `https://wavemakeronline.com/studio/services/saml/SingleLogout`
     
     whereas, for deployment app, the URL should typically look like:
     
-    (http/https)://{hostname}/{appname}/saml/SingleLogout
+    `(http/https)://{hostname}/{appname}/saml/SingleLogout`
     
 
 :::note
-You can get the {hostname} by looking at the URL of any deployed app from your account. It will typically be of the format: `tenant_id.cloud.wavemakeronline.com` for apps deployed to WaveMaker Cloud (ref [Managed Deployed App](/learn/app-development/deployment/manage-deployed-apps/) for details).
+You can get the `{hostname}` by looking at the URL of any deployed app from your account. It will typically be of the format: `tenant_id.cloud.wavemakeronline.com` for apps deployed to WaveMaker Cloud (ref [Managed Deployed App](/learn/app-development/deployment/manage-deployed-apps/) for details).
 :::
 
 ## Collaboration in Application that is configured with SAML
