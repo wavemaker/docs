@@ -1,6 +1,6 @@
 const React = require('react');
 import { useColorMode } from '@docusaurus/theme-common';
-const WidgetTabItems = () => {
+const WidgetTabItems = ({ platforms }) => {
   const widgetsData = [
     {
       "tab": "Data Widgets",
@@ -12,7 +12,9 @@ const WidgetTabItems = () => {
           "label": "Cards",
           "body": "Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area. ",
           "overview": "/learn/app-development/widgets/datalive/cards/",
-          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html"
+          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html",
+          "supportedPlatforms": ["web", "mobile"],
+          "storyBook": "https://some-storybook-url.com"
         },
         {
           "lightIcon": "/learn/img/datatable.svg",
@@ -20,15 +22,20 @@ const WidgetTabItems = () => {
           "label": "Data Table",
           "body": " Data Table is a widget that presents a tabular view of data and allows actions. ",
           "overview": "/learn/app-development/widgets/datalive/data-table/",
-          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveTable.html"
+          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveTable.html",
+          "supportedPlatforms": ["web"],
+          "storyBook": "https://some-storybook-url.com"
         },
+
         {
           "lightIcon": "/learn/img/form.svg",
           "darkIcon": "/learn/img/formDark.svg",
           "label": "Form ",
           "body": " Form is a group of input elements put together to post data, typically updating data through a web service call ",
           "overview": "/learn/app-development/widgets/datalive/form/",
-          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Form.html"
+          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Form.html",
+          "supportedPlatforms": ["mobile"],
+          "storyBook": "https://some-storybook-url.com"
         },
         {
           "lightIcon": "/learn/img/list.svg",
@@ -36,7 +43,9 @@ const WidgetTabItems = () => {
           "label": "List",
           "body": " List is a widget that presents a list view of data, which contains a template for designing each list item ",
           "overview": "/learn/app-development/widgets/datalive/list/",
-          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/List.html"
+          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/List.html",
+           "supportedPlatforms": ["mobile"],
+          
         },
         {
           "lightIcon": "/learn/img/livefilter.svg",
@@ -66,7 +75,9 @@ const WidgetTabItems = () => {
           "label": "Accordion",
           "body": " Accordion is a stacked list of UI components, with only one component expanded or viewed at any point in time, and the rest collapsed ",
           "overview": "/learn/app-development/widgets/container/accordion/",
-          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Accordion.html"
+          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Accordion.html",
+           "supportedPlatforms": ["mobile"],
+          "storyBook": "https://some-storybook-url.com"
         },
         {
           "lightIcon": "/learn/img/container.svg",
@@ -74,7 +85,9 @@ const WidgetTabItems = () => {
           "label": "Container",
           "body": " Container is an enclosing element that wraps the widgets placed within, mostly used for embedding partial pages ",
           "overview": "/learn/app-development/widgets/container/container/",
-          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Container.html"
+          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Container.html",
+          "supportedPlatforms": ["mobile"],
+          "storyBook": "https://some-storybook-url.com"
         },
         {
           "lightIcon": "/learn/img/grid.svg",
@@ -82,7 +95,9 @@ const WidgetTabItems = () => {
           "label": "Grid Layout",
           "body": " Grid Layout helps division of pages or content area into cells or grids based on the 12-column fluid grid system, which helps in proper placement of the widgets for responsive design. ",
           "overview": "/learn/app-development/widgets/container/grid-layout/",
-          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Layoutgrid.html"
+          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Layoutgrid.html",
+          "supportedPlatforms": ["mobile"],
+          "storyBook": "https://some-storybook-url.com"
         },
         {
           "lightIcon": "/learn/img/panel.svg",
@@ -90,7 +105,9 @@ const WidgetTabItems = () => {
           "label": "Panel",
           "body": " Panel has designated sections such as header, body, and footer and can be used to group a set of widgets together. ",
           "overview": "/learn/app-development/widgets/container/panel/",
-          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Panel.html"
+          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Panel.html",
+          "supportedPlatforms": ["mobile"],
+          "storyBook": "https://some-storybook-url.com"
         },
         {
           "lightIcon": "/learn/img/tabs.svg",
@@ -98,7 +115,9 @@ const WidgetTabItems = () => {
           "label": "Tabs",
           "body": " Tabs are Multiple UI components placed in a single window, with only one active component and headings allowing navigation to other components ",
           "overview": "/learn/app-development/widgets/container/tabs/",
-          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tabs.html"
+          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tabs.html",
+          "supportedPlatforms": ["mobile"],
+          "storyBook": "https://some-storybook-url.com"
         },
         {
           "lightIcon": "/learn/img/title.svg",
@@ -106,7 +125,9 @@ const WidgetTabItems = () => {
           "label": "Tile",
           "body": " Tile is a form of UI components to group a set of widgets together and to apply a uniform style to the content ",
           "overview": "/learn/app-development/widgets/container/tile/",
-          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tile.html"
+          "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tile.html",
+          "supportedPlatforms": ["mobile"],
+          "storyBook": "https://some-storybook-url.com"
         },
         {
           "lightIcon": "/learn/img/wizard.svg",
@@ -742,18 +763,35 @@ const WidgetTabItems = () => {
         }
       ]
     }
-  ]
-  let data = []
-  for (let props in widgetsData) {
-    data.push(<>
-      <h2 className="widget-header" key={props}>{widgetsData[props].tab}</h2>
-      <Widgets content={widgetsData[props].content} />
-    </>);
-  }
-  return (<>
-    {data}
-  </>);
-}
+  ];
+
+  let data = [];
+  widgetsData.forEach((widget) => {
+    const activePlatformsSet = new Set(platforms || []);
+    const filteredContent = widget.content?.filter((item) => {
+      const supportedPlatforms = item.supportedPlatforms || [];
+      let hasCommonPlatform = false;
+      supportedPlatforms.forEach((platform) => {
+        if (activePlatformsSet.has(platform)) {
+          hasCommonPlatform = true;
+        }
+        item[platform] = true; 
+      });
+      return hasCommonPlatform;
+    });
+
+    if (filteredContent?.length) {
+      data.push(
+        <>
+          <h2 className="widget-header" key={widget.value}>{widget.tab}</h2>
+          <Widgets content={filteredContent} />
+        </>
+      );
+    }
+  });
+
+  return (<>{data}</>);
+};
 
 const Widgets = (props) => {
   const { colorMode } = useColorMode();
@@ -764,9 +802,14 @@ const Widgets = (props) => {
         <div className="card-content">
           <div className="card-header">
             <img src={colorMode != "dark" ? props.content[ind].lightIcon : props.content[ind].darkIcon} /><label>{props.content[ind].label}</label>
+          <div style={{alignSelf: 'center', marginLeft: 'auto'}}>
+          {props.content[ind]?.web && <img src={'/learn/img/webIcon.svg'} style={{height:18, width:18, marginRight:4}}/>}
+          {props.content[ind]?.mobile && <img src={'/learn/img/mobileIcon.svg'} style={{height:18, width:18}}/>}
+          </div>
           </div>
           <div className="card-body">{props.content[ind].body}</div>
           <div className="card-footer card_links">
+            {props.content[ind]?.storyBook && <><a href={props.content[ind].storyBook}>Storybook,</a>&nbsp;&nbsp;</>}
             <a href={props.content[ind].overview}>Overview,</a>&nbsp;&nbsp;<a
               href={props.content[ind].api}>API Docs</a>
           </div>
@@ -782,9 +825,10 @@ const Widgets = (props) => {
 }
 
 const WidgetTabs = (props) => {
+  const platforms = props.show;
   return (
     <>
-      <WidgetTabItems />
+      <WidgetTabItems platforms={platforms} />
     </>
   );
 }
