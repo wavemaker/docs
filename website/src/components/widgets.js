@@ -803,8 +803,8 @@ const Widgets = (props) => {
           <div className="card-header">
             <img src={colorMode != "dark" ? props.content[ind].lightIcon : props.content[ind].darkIcon} /><label>{props.content[ind].label}</label>
           <div style={{alignSelf: 'center', marginLeft: 'auto'}}>
-          {props.content[ind]?.web && <img src={'/learn/img/webIcon.svg'} style={{height:18, width:18, marginRight:4}}/>}
-          {props.content[ind]?.mobile && <img src={'/learn/img/mobileIcon.svg'} style={{height:18, width:18}}/>}
+          {props.content[ind]?.web && <img src={'/learn/img/webIcon.svg'} alt="Supports Web App" title="Supports Web App" style={{height:18, width:18, marginRight:4}}/>}
+          {props.content[ind]?.mobile && <img src={'/learn/img/mobileIcon.svg'} alt="Supports Mobile App" title="Supports Mobile App" style={{height:18, width:18}}/>}
           </div>
           </div>
           <div className="card-body">{props.content[ind].body}</div>
