@@ -1,6 +1,6 @@
 const React = require('react');
 import { useColorMode } from '@docusaurus/theme-common';
-const WidgetTabItems = ({ platforms }) => {
+const WidgetTabItems = ({ activePlatformsSet, showStoryBookLinks }) => {
   const widgetsData = [
     {
       "tab": "Data Widgets",
@@ -14,7 +14,7 @@ const WidgetTabItems = ({ platforms }) => {
           "overview": "/learn/app-development/widgets/datalive/cards/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html",
           "supportedPlatforms": ["web", "mobile"],
-          "storyBook": "https://some-storybook-url.com"
+          "mobileStoryBook": "https://some-mobileStoryBook-url.com"
         },
         {
           "lightIcon": "/learn/img/datatable.svg",
@@ -24,7 +24,7 @@ const WidgetTabItems = ({ platforms }) => {
           "overview": "/learn/app-development/widgets/datalive/data-table/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveTable.html",
           "supportedPlatforms": ["web"],
-          "storyBook": "https://some-storybook-url.com"
+          "mobileStoryBook": "https://some-mobileStoryBook-url.com"
         },
 
         {
@@ -35,7 +35,7 @@ const WidgetTabItems = ({ platforms }) => {
           "overview": "/learn/app-development/widgets/datalive/form/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Form.html",
           "supportedPlatforms": ["mobile"],
-          "storyBook": "https://some-storybook-url.com"
+          "mobileStoryBook": "https://some-mobileStoryBook-url.com"
         },
         {
           "lightIcon": "/learn/img/list.svg",
@@ -77,7 +77,7 @@ const WidgetTabItems = ({ platforms }) => {
           "overview": "/learn/app-development/widgets/container/accordion/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Accordion.html",
            "supportedPlatforms": ["mobile"],
-          "storyBook": "https://some-storybook-url.com"
+          "mobileStoryBook": "https://some-mobileStoryBook-url.com"
         },
         {
           "lightIcon": "/learn/img/container.svg",
@@ -87,7 +87,7 @@ const WidgetTabItems = ({ platforms }) => {
           "overview": "/learn/app-development/widgets/container/container/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Container.html",
           "supportedPlatforms": ["mobile"],
-          "storyBook": "https://some-storybook-url.com"
+          "mobileStoryBook": "https://some-mobileStoryBook-url.com"
         },
         {
           "lightIcon": "/learn/img/grid.svg",
@@ -97,7 +97,7 @@ const WidgetTabItems = ({ platforms }) => {
           "overview": "/learn/app-development/widgets/container/grid-layout/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Layoutgrid.html",
           "supportedPlatforms": ["mobile"],
-          "storyBook": "https://some-storybook-url.com"
+          "mobileStoryBook": "https://some-mobileStoryBook-url.com"
         },
         {
           "lightIcon": "/learn/img/panel.svg",
@@ -107,7 +107,7 @@ const WidgetTabItems = ({ platforms }) => {
           "overview": "/learn/app-development/widgets/container/panel/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Panel.html",
           "supportedPlatforms": ["mobile"],
-          "storyBook": "https://some-storybook-url.com"
+          "mobileStoryBook": "https://some-mobileStoryBook-url.com"
         },
         {
           "lightIcon": "/learn/img/tabs.svg",
@@ -117,7 +117,7 @@ const WidgetTabItems = ({ platforms }) => {
           "overview": "/learn/app-development/widgets/container/tabs/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tabs.html",
           "supportedPlatforms": ["mobile"],
-          "storyBook": "https://some-storybook-url.com"
+          "mobileStoryBook": "https://some-mobileStoryBook-url.com"
         },
         {
           "lightIcon": "/learn/img/title.svg",
@@ -127,7 +127,7 @@ const WidgetTabItems = ({ platforms }) => {
           "overview": "/learn/app-development/widgets/container/tile/",
           "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tile.html",
           "supportedPlatforms": ["mobile"],
-          "storyBook": "https://some-storybook-url.com"
+          "mobileStoryBook": "https://some-mobileStoryBook-url.com"
         },
         {
           "lightIcon": "/learn/img/wizard.svg",
@@ -767,7 +767,6 @@ const WidgetTabItems = ({ platforms }) => {
 
   let data = [];
   widgetsData.forEach((widget) => {
-    const activePlatformsSet = new Set(platforms || []);
     const filteredContent = widget.content?.filter((item) => {
       const supportedPlatforms = item.supportedPlatforms || [];
       let hasCommonPlatform = false;
@@ -784,7 +783,7 @@ const WidgetTabItems = ({ platforms }) => {
       data.push(
         <>
           <h2 className="widget-header" key={widget.value}>{widget.tab}</h2>
-          <Widgets content={filteredContent} />
+          <Widgets content={filteredContent} showStoryBookLinks={showStoryBookLinks} />
         </>
       );
     }
@@ -809,9 +808,11 @@ const Widgets = (props) => {
           </div>
           <div className="card-body">{props.content[ind].body}</div>
           <div className="card-footer card_links">
-            {props.content[ind]?.storyBook && <><a href={props.content[ind].storyBook}>Storybook,</a>&nbsp;&nbsp;</>}
-            <a href={props.content[ind].overview}>Overview,</a>&nbsp;&nbsp;<a
-              href={props.content[ind].api}>API Docs</a>
+            {props.showStoryBookLinks.mobile && props.content[ind]?.mobileStoryBook && 
+              <><a href={props.content[ind].mobileStoryBook} target='_blank'>Playground,</a>&nbsp;&nbsp;</>
+            }
+            <a href={props.content[ind].overview}>Overview,</a>&nbsp;&nbsp;
+            <a href={props.content[ind].api}>API Docs</a>
           </div>
         </div>
       </div>
@@ -826,9 +827,12 @@ const Widgets = (props) => {
 
 const WidgetTabs = (props) => {
   const platforms = props.show;
+  const activePlatformsSet = new Set(platforms || []);
+  const showMobileStoryBookLink = activePlatformsSet.size === 1 && activePlatformsSet.has("mobile");
+  const showWebStoryBookLink = activePlatformsSet.size === 1 && activePlatformsSet.has("web");
   return (
     <>
-      <WidgetTabItems platforms={platforms} />
+      <WidgetTabItems activePlatformsSet={activePlatformsSet} showStoryBookLinks={{mobile:showMobileStoryBookLink,web:showWebStoryBookLink}}/>
     </>
   );
 }
