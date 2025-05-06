@@ -8,26 +8,14 @@ sidebar_label: "Welcome"
 
 WaveMaker Studio for React Native allows developers to build native mobile apps for iOS and Android using web development skills. It simplifies the development process with a visual studio, reusable components, and a fully exportable codebase.
 
-This documentation introduces the key concepts, tools, and workflow for developing React Native applications using WaveMaker.
-
 ## With WaveMaker React Native, You Can
 
-**1. Use Web Skills to Develop Mobile Apps**  
-Develop native mobile applications using familiar web technologies like JavaScript. You can build and deploy apps without needing to learn native iOS or Android programming.
-
-**2. Reuse Components with Prefab Architecture**  
-Prefabs are reusable UI and logic components. Once created and connected to backend APIs, they can be reused across multiple apps — promoting consistency and reducing redundancy.
-
-**3. Work with an Open and Customizable Architecture**  
-- Export clean, standards-compliant React Native code  
-- Integrate third-party React Native libraries and Expo plugins  
-- Avoid vendor lock-in with fully portable projects
-
-**4. Development and Testing Tools**
-
-- **Automated Testing**: WaveMaker supports automated UI testing through Appium.
-- **Debugging**: Use Flipper for real-time debugging of layout, logs, performance, and plugins.
-- **App Deployment**: WaveMaker exports a React Native project zip that can be processed by AppChef to generate APKs (Android) or IPAs (iOS) for distribution.
+|Features | Description |
+|---|---|
+|Use Web Skills to Develop Mobile Apps | Develop native mobile applications using familiar web technologies like JavaScript. You can build and deploy apps without needing to learn native iOS or Android programming. |
+|Reuse Components with Prefab Architecture | Prefabs are reusable UI and logic components. Once created and connected to backend APIs, they can be reused across multiple apps — promoting consistency and reducing redundancy. |
+|Work with an Open and Customizable Architecture  | Export clean, standards-compliant React Native code. Integrate third-party React Native libraries and Expo plugins, Avoid vendor lock-in with fully portable projects |
+|Development and Testing Tools | - **Automated Testing**: WaveMaker supports automated UI testing through Appium. &nbsp - **Debugging**: Use Flipper for real-time debugging of layout, logs, performance, and plugins. &nbsp - **App Deployment**: WaveMaker exports a React Native project zip that can be processed by AppChef to generate APKs (Android) or IPAs (iOS) for distribution. |
 
 ## Architecture Overview
 
@@ -37,22 +25,27 @@ A streamlined build pipeline to convert your app from visual development to an i
 
 #### Development
 
-- **WaveMaker Project** *(design in WaveMaker Studio)*: Build your app using WaveMaker Studio — no native code needed.
-- **Code Generation**: WaveMaker generates a standard Expo project, not a custom runtime.
-- **Expo Project**: The app runs using Expo’s React Native environment, ensuring compatibility and ease of testing.
+- **WaveMaker Project**: Design your app visually in WaveMaker Studio — no need to write native code.  
+- **Code Generation**: WaveMaker generates a standard Expo-based React Native project. It does not rely on a proprietary runtime, so the output is fully compatible with the broader React Native ecosystem.  
+- **Expo Project**: The generated app runs in the Expo environment, making it easy to preview, test, and extend using standard React Native tools.
 
 #### Build and Deployment
 
-- **Build for Stores**: Using WaveMaker CLI or AppChef, convert the Expo project into installable .ipa (iOS) files or .apk (Android).
+- **Build for Stores**: Use the WaveMaker CLI or AppChef to convert the Expo project into installable `.ipa` (iOS) or `.apk` (Android) files.
+
 
 ## In WaveMaker React Native Studio
 
 ### Markup and Variables
 
+WaveMaker uses Markup to define the UI, Variables to integrate backend services, and JavaScript for logic. React Native has its own rules when it comes to styling, scripting, and data integration, so it’s important to understand the differences.
+
 - **Markup**: [WaveMaker markup](/learn/app-development/ui-design/page-artefacts#page-markup) is converted to React Native markup during build. Some widgets and properties may not be supported. See [Supported Widgets](/learn/react-native/supported-widgets) to know more.
 - **Variables**: Variables act as a bridge between the frontend UI and backend services, integrating data and services with the widgets. Learn more about the supporting [React Native Variables here](/learn/react-native/supported-variables).
 
 ### Things to Note
+
+React Native has a unique way of handling styling, scripting, and data integration, which differs from traditional web development. Understanding these distinctions will ensure your WaveMaker React Native app functions smoothly on both iOS and Android.
 
 In WaveMaker, apps are developed with WaveMaker Markup, Variables, JavaScript, and Styles defined in CSS. However, React Native development has specific rules:
 
@@ -62,22 +55,19 @@ In WaveMaker, apps are developed with WaveMaker Markup, Variables, JavaScript, a
 
 - **Themes**: React Native supports Themes. Learn more about how to [generate themes](/learn/react-native/theme).
 
-### Prefabs
+#### Prefabs
 
-A **Prefab** can be used in a web app, a Cordova-based mobile app, or a React Native-based mobile app. To ensure that a Prefab renders properly across platforms, follow these guidelines:
+Prefabs are reusable components that can save time and effort, especially for larger projects where components need to be shared across multiple platforms. A Prefab can be used in a web app, or a React Native-based mobile app. To ensure that a Prefab renders properly across platforms, follow these guidelines:
 
-- The stylesheet of a prefab should be divided into two parts by the line:
-
-
-- After the line above, you can place styles specific to the React Native environment.
+- The stylesheet of a prefab should be divided into two parts by the line. After the line above, you can place styles specific to the React Native environment.
 - Adding a JavaScript file is not supported.
 - [Widgets that are not supported](/learn/react-native/supported-widgets) by the WaveMaker React Native runtime will be discarded.
 
-By following these guidelines, you can create Prefabs that are compatible with React Native, Cordova, and web platforms, ensuring maximum reusability and consistency.
+By following these guidelines, you can create Prefabs that are compatible with React Native, and web platforms, ensuring maximum reusability and consistency.
 
-### Note on Custom Formatter
+#### Note on Custom Formatter
 
-React Native has started supporting customization of data using **Custom Formatter** from [Release 11.3](/learn/wavemaker-release-notes/v11-3-0). For more information, refer to [Custom Formatter](/learn/app-development/variables/custom-formatter).
+You can use the Custom Formatter to adjust the data before displaying it on the mobile app, ensuring better user experience and performance. React Native has started supporting customization of data using **Custom Formatter** from [Release 11.3](/learn/wavemaker-release-notes/v11-3-0). For more information, refer to [Custom Formatter](/learn/app-development/variables/custom-formatter).
 
 ## See Also
 
