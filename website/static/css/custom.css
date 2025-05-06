@@ -1005,10 +1005,8 @@ html[data-theme="dark"] .extension .link img{
 /* Styles for docs */
 
 .doc-responsive-image-big {
-    display: block;
     height: auto;
     max-width: 100%;
-    margin: auto;
 }
 
 /* End - Styles for docs */
