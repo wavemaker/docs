@@ -10,14 +10,14 @@ In this post, we’ll compare and understand why Enhanced Picture Component over
 
 <!-- truncate -->
 
-> **Old Picture Component**: The current image handling is based on React Native's built-in Picture component.
->**Enhanced Picture Component**: The enhanced Picture Component is based on Expo Image — a high-performance image solution introduced by Expo.
+**Old Picture Component:** Based on React Native's built-in Image component.
+**Enhanced Image Component:** Built on Expo’s expo-image, a high-performance image solution introduced by Expo.
 
 ## Why This Matters
 
-The Old Picture component in React Native works well for simple use cases, but as your app scales, you’ll start noticing slow rendering, janky scrolling, and inconsistent caching. That’s where the enhanced Picture component steps in—with native-level performance, better caching, and memory efficiency.
+The old Picture component works well for basic use cases. However, as your app grows, you may start to notice slow rendering, janky scrolling, and limited caching capabilities. That’s where the Enhanced Image Component comes in—offering native-level performance, smarter caching, and better memory efficiency.
 
-That's where the enhanced Picture component steps in. Below is the comparison of old and enhanced Picture component based w.r.t.,
+Below is a comparison of the Old and Enhanced Picture components across key areas:
 
 - Caching
 - Memory Usage
