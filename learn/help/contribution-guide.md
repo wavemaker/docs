@@ -4,8 +4,6 @@ title: "Get started with GitHub for WaveMaker Developer Docs"
 sidebar_label: "Contribute to WM Docs"
 ---
 
-Here's the revised version of your content with **WaveMaker Developer Docs** included in place of the original Microsoft GitHub references:
-
 ---
 
 To join the WaveMaker community in using GitHub and Markdown, there are specific tools and terminology to get comfortable with. Below is a step-by-step guide, adapted for contributing to the [WaveMaker Developer Docs GitHub repository](https://github.com/wavemaker/docs/). The following list outlines the main steps, but you can find more content, tools, and ideas in the [GitHub documentation](https://docs.github.com/en) and other forums.
