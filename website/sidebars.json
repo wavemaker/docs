@@ -764,6 +764,8 @@
 						"react-native/right-to-left-support",
 						"react-native/deep-linking",
 						"react-native/shrinking-obfuscating-android-apk-builds",
+						"react-native/share",
+						"react-native/download-progress",
 						"react-native/push-notification",
 						"react-native/user-idle-timeout",
 						"react-native/share"
@@ -1122,7 +1124,6 @@
 								"how-tos/data-table-format-options",
 								"how-tos/concurrency-record-locking-wavemaker",
 								"how-tos/edit-datatable-bound-to-queryapi"
-								
 							]
 						}
 					]
@@ -1667,7 +1668,7 @@
 						"wavemaker-release-notes/v11-4-3",
 						"wavemaker-release-notes/v11-4-2",
 						"wavemaker-release-notes/v11-4-1",
-            			"wavemaker-release-notes/v11-4-0"
+						"wavemaker-release-notes/v11-4-0"
 					]
 				},
 				{
