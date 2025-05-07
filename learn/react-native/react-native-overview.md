@@ -5,10 +5,16 @@ sidebar_label: "Welcome"
 ---
 ---
 
+:::note
+> **Help Us Improve**  
+> We're working on enhancing the onboarding experience for WaveMaker developers. If you have feedback on this article, please share it using the **Feedback** section at the bottom of the page. Your input helps us make improvements that you’d like to see.
+> We're also open to contributions to our documentation. New to contributing? No problem.
+:::
+
 
 WaveMaker Studio for React Native allows developers to build native mobile apps for iOS and Android using web development skills. It simplifies the development process with a visual studio, reusable components, and a fully exportable codebase.
 
-## With WaveMaker React Native, You Can
+### With WaveMaker React Native, You Can
 
 |Features | Description |
 |---|---|
