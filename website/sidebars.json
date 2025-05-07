@@ -962,6 +962,7 @@
 				"how-tos/audit-history-using-crud-listeners",
 				"how-tos/rowlevel-security-using-crud-event-listeners",
 				"how-tos/validations-using-crudListeners",
+				"how-tos/validationson-exportapi-using-crudListeners",
 				"how-tos/custom-business-logic-using-crud-event-listeners",
 				"how-tos/mysql-connection-using-ssl",
 				"how-tos/switch-mariadb-to-mysql-connector"
