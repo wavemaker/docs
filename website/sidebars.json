@@ -768,6 +768,13 @@
 						"react-native/user-idle-timeout",
 						"react-native/share"
 					]
+				},
+				{
+					"type": "category",
+					"label": "Style Docs",
+					"items": [
+						"react-native/style-docs/button"
+					]
 				}
 			]
 		},
