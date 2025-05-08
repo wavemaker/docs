@@ -667,167 +667,167 @@
 			]
 		}
 	],
+
 	"Mobile": [
 		"app-development/wavemaker-overview/react-native-and-cordova",
 		"react-native/widget-library-mobile",
 		{
-			"type": "category",
-			"label": "React Native",
-			"items": [
-				"react-native/react-native-overview",
-				{
-					"type": "category",
-					"label": "Features",
-					"items": [
-						"react-native/feature-support",
-						"react-native/supported-widgets",
-						"react-native/supported-variables"
-					]
-				},
-				{
-					"type": "category",
-					"label": "App Design",
-					"items": [
-						"react-native/styles",
-						"react-native/custom-icon-fonts",
-						"react-native/accessibility-support-react-native",
-						"react-native/theme",
-						"react-native/progress-loader",
-						"react-native/skeleton-loader",
-						"react-native/animations",
-						"react-native/splash-screen"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Development",
-					"items": [
-						"react-native/custom-widget",
-						"react-native/ssl-pinning"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Test and Debug",
-					"items": [
-						"react-native/test-run",
-						"react-native/generate-web-preview-locally",
-						"react-native/web-preview-debug",
-						"react-native/expo-debug",
-						"react-native/wavepulse",
-						"react-native/flipper",
-						"react-native/web-preview-docker-image",
-						"react-native/appium-support"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Performance Measurement",
-					"items": [
-						"react-native/performance-measurement",
-						"react-native/performance-metrics",
-						"react-native/flipper-performance-plugin",
-						"react-native/flashlight-performance-tool",
-						"react-native/performance-monitor"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Build",
-					"items": [
-						"react-native/export-react-native-zip",
-						"react-native/build-installers",
-						"react-native/mobile-build-manual",
-						"react-native/third-party-expo-plugins",
-						"react-native/custom-widget",
-						"react-native/custom-js-modules"
-					]
-				},
-				{
-					"type": "category",
-					"label": "App Integration",
-					"items": [
-						"react-native/web-view",
-						"react-native/react-native-embed"
-					]
-				},
-				{
-					"type": "category",
-					"label": "How-to",
-					"items": [
-						"react-native/integrating-biometric-authentication",
-						"react-native/disable-device-screencapture",
-						"react-native/detect-rooted-device",
-						"react-native/integrating-secure-store",
-						"react-native/publish-expo-module-and-use-in-wavemaker-project",
-						"react-native/integrating-crashlytics",
-						"react-native/integrating-sentry",
-						"react-native/pdf-preview-and-download",
-						"react-native/right-to-left-support",
-						"react-native/deep-linking",
-						"react-native/shrinking-obfuscating-android-apk-builds",
-						"react-native/push-notification",
-						"react-native/user-idle-timeout",
-						"react-native/share"
-					]
-				}
-			]
+		  "type": "category",
+		  "label": "React Native",
+		  "items": [
+			"react-native/react-native-overview",
+			{
+			  "type": "category",
+			  "label": "Development",
+			  "items": [
+				"react-native/supported-widgets",
+				"react-native/supported-variables",
+				"react-native/feature-support",
+				"react-native/custom-widget",
+				"react-native/custom-js-modules",
+				"react-native/third-party-expo-plugins",
+				"react-native/ssl-pinning"
+			  ]
+			},
+			{
+				"type": "category",
+				"label": "Design and Theming",
+				"items": [
+				  "react-native/styles",
+				  "react-native/theme",
+				  "react-native/custom-icon-fonts",
+				  "react-native/splash-screen",
+				  "react-native/progress-loader",
+				  "react-native/skeleton-loader",
+				  "react-native/animations",
+				  "react-native/accessibility-support-react-native"
+				]
+			  },
+			{
+			  "type": "category",
+			  "label": "App Integration",
+			  "items": [
+				"react-native/web-view",
+				"react-native/react-native-embed"
+			  ]
+			},
+			{
+			  "type": "category",
+			  "label": "Testing and Debugging",
+			  "items": [
+				"react-native/test-run",
+				"react-native/appium-support",
+				"react-native/web-preview-debug",
+				"react-native/generate-web-preview-locally",
+				"react-native/web-preview-docker-image",
+				"react-native/expo-debug",
+				"react-native/wavepulse",
+				"react-native/flipper"
+			  ]
+			},
+			{
+				"type": "category",
+				"label": "Build",
+				"items": [
+				  "react-native/build-installers",
+				  "react-native/mobile-build-manual",
+				  "react-native/export-react-native-zip"
+				]
+			  },
+			{
+			  "type": "category",
+			  "label": "Performance and Monitoring",
+			  "items": [
+				"react-native/performance-measurement",
+				"react-native/performance-metrics",
+				"react-native/flipper-performance-plugin",
+				"react-native/flashlight-performance-tool",
+				"react-native/performance-monitor"
+			  ]
+			},
+			{
+			  "type": "category",
+			  "label": "How-To Guides",
+			  "items": [
+				"react-native/integrating-biometric-authentication",
+				"react-native/disable-device-screencapture",
+				"react-native/detect-rooted-device",
+				"react-native/integrating-secure-store",
+				"react-native/publish-expo-module-and-use-in-wavemaker-project",
+				"react-native/integrating-crashlytics",
+				"react-native/integrating-sentry",
+				"react-native/pdf-preview-and-download",
+				"react-native/right-to-left-support",
+				"react-native/deep-linking",
+				"react-native/shrinking-obfuscating-android-apk-builds",
+				"react-native/push-notification",
+				"react-native/user-idle-timeout",
+				"react-native/share"
+			  ]
+			}
+		  ]
 		},
 		{
-			"type": "category",
-			"label": "Cordova",
-			"items": [
-				"hybrid-mobile/building-hybrid-mobile-apps",
+		  "type": "category",
+		  "label": "Cordova (Hybrid Mobile)",
+		  "items": [
+			"hybrid-mobile/first-mobile-app",
+			{
+			  "type": "category",
+			  "label": "Building & Distribution",
+			  "items": [
+				"hybrid-mobile/mobile-build-android",
+				"hybrid-mobile/mobile-build-manual",
+				"hybrid-mobile/mobile-ios-android-distribution-certificates",
+				"hybrid-mobile/export-cordova-zip",
+				"hybrid-mobile/mobile-build-appchef"
+			  ]
+			},
+			{
+			  "type": "category",
+			  "label": "UI and Navigation",
+			  "items": [
+				"hybrid-mobile/mobile-page-concepts",
+				"hybrid-mobile/gesture-support",
+				"hybrid-mobile/mobile-tabbar",
+				"hybrid-mobile/mobile-navbar"
+			  ]
+			},
+			{
+			  "type": "category",
+			  "label": "Device Support and Integrations",
+			  "items": [
 				"hybrid-mobile/native-device-support",
-				"hybrid-mobile/first-mobile-app",
-				{
-					"type": "category",
-					"label": "Mobile Design",
-					"items": [
-						"hybrid-mobile/mobile-page-concepts",
-						"hybrid-mobile/gesture-support",
-						"hybrid-mobile/mobile-tabbar",
-						"hybrid-mobile/mobile-navbar"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Mobile Installer",
-					"items": [
-						"hybrid-mobile/test-run",
-						"hybrid-mobile/debugging-mobile-apps",
-						"hybrid-mobile/testing-hybrid-mobile-apps-using-live-sync",
-						"hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
-						"hybrid-mobile/mobile-build-android",
-						"hybrid-mobile/mobile-build-manual",
-						"hybrid-mobile/mobile-ios-android-distribution-certificates",
-						"hybrid-mobile/export-cordova-zip",
-						"hybrid-mobile/mobile-build-manual",
-						"hybrid-mobile/mobile-build-appchef"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Mobile Integrations",
-					"items": [
-						"hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
-						"hybrid-mobile/mobile-integrations-amazon-sns",
-						"hybrid-mobile/use-push-notification-wm-mobile-app",
-						"hybrid-mobile/invoking-web-app-apis-mobile-apps"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Offline Features",
-					"items": [
-						"hybrid-mobile/offline-data-support",
-						"hybrid-mobile/offline-data-support-implementation",
-						"hybrid-mobile/switching-offline-online-mode"
-					]
-				}
-			]
-		}
-	],
+				"hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
+				"hybrid-mobile/mobile-integrations-amazon-sns",
+				"hybrid-mobile/use-push-notification-wm-mobile-app",
+				"hybrid-mobile/invoking-web-app-apis-mobile-apps"
+			  ]
+			},
+			{
+			  "type": "category",
+			  "label": "Testing and Debugging",
+			  "items": [
+				"hybrid-mobile/test-run",
+				"hybrid-mobile/debugging-mobile-apps",
+				"hybrid-mobile/testing-hybrid-mobile-apps-using-live-sync",
+				"hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens"
+			  ]
+			},
+			{
+			  "type": "category",
+			  "label": "Offline Features",
+			  "items": [
+				"hybrid-mobile/offline-data-support",
+				"hybrid-mobile/offline-data-support-implementation",
+				"hybrid-mobile/switching-offline-online-mode"
+			  ]
+			}
+		  ]
+		},
+		"app-development/wavemaker-overview/react-native-and-cordova"
+	  ],
+
 	"Tutorials": [
 		"tutorials",
 		{
