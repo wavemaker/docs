@@ -1,7 +1,7 @@
 ---
 title: "Widgets Library Mobile"
 id: "widget-library-mobile"
-sidebar_label: "Widgets Library"
+sidebar_label: "Mobile Widgets"
 ---
 Widgets are HTML/Bootstrap based UI components with rich interaction and designed for responsiveness. View the entire list of Widgets in this page.
 
