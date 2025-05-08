@@ -18,15 +18,42 @@ WaveMaker Studio for React Native allows developers to build native mobile apps 
 |Work with an Open and Customizable Architecture  | Export clean, standards-compliant React Native code. Integrate third-party React Native libraries and Expo plugins, Avoid vendor lock-in with fully portable projects |
 |Development and Testing Tools | - **Automated Testing**: WaveMaker supports automated UI testing through Appium. &nbsp - **Debugging**: Use Flipper for real-time debugging of layout, logs, performance, and plugins. &nbsp - **App Deployment**: WaveMaker exports a React Native project zip that can be processed by AppChef to generate APKs (Android) or IPAs (iOS) for distribution. |
 
-## App Architecture
+## React Native App Architecture
 
-WaveMaker apps are built using React Native, a framework from Meta that follows ReactJS principles like the Virtual DOM. You define your app’s UI using JavaScript extensions. At runtime, this UI is rendered using native UI components, giving your app a true native look and feel.
+Your WaveMaker app is built on top of the React Native framework, combining visual development with native performance. The architecture spans from visual components defined in the Studio to the underlying native modules that run on iOS and Android. The diagram below shows how each layer contributes to delivering a native mobile experience.
 
 <img 
   src={reactnativearch}
   alt="React Native Architecture Overview"
   className="doc-responsive-image-big"
 />
+
+This layered architecture ensures your app logic, UI, and data flow are handled efficiently—from the visual design in Studio to native rendering on devices. With WaveMaker handling much of the complexity, you can focus on building functionality without needing deep knowledge of native code.
+
+### Architecture Layers
+
+- **JS Runtime**: The JavaScript engine that executes app logic, manages UI rendering, and handles events.
+
+- **App**: Your visual app built in WaveMaker Studio. It includes:
+  - **Pages**: Screens of your app.
+  - **Partials, Prefabs**: Reusable UI blocks and widgets.
+  - **Themes, Variables**: Style settings and data bindings.
+
+- **WaveMaker React Native Module**: Provides the core framework and runtime for WaveMaker apps, including:
+  - **Runtime**: Orchestrates rendering and behavior based on configurations.
+  - **Components**: UI elements exposed via Studio.
+  - **Security**: Built-in user auth and access control.
+  - **i18n**: Internationalization support.
+  - **Variables**: App state and data sources.
+
+- **React Native Components and Modules**: Bridges the JavaScript-defined UI to native elements using React Native.
+- **JSI (JavaScript Interface)**: A bridge layer that connects JavaScript with native code, enabling communication between them.
+    - **Turbo Modules**: Optimized native modules accessed via JSI for better performance.
+    - **Fabric**: Modern rendering system in React Native for faster UI updates and concurrency.
+- **Native Modules**: Platform-specific features (e.g., camera, storage) exposed to the JS layer.
+- **Native UI Controls**: Core iOS/Android UI elements rendered by React Native.
+- **Mobile OS**: The base layer (iOS or Android) the app runs on.
+- **Yoga**: Layout engine used by React Native to calculate responsive layouts across devices.
 
 ## Build Pipeline
 
