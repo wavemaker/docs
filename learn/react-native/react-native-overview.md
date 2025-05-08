@@ -28,7 +28,7 @@ WaveMaker apps are built using React Native, a framework from Meta that follows 
   className="doc-responsive-image-big"
 />
 
-## App Build Pipeline Architecture
+## Build Pipeline
 
 A streamlined build pipeline to convert your app from visual development to an installable native app.
 
