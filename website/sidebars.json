@@ -1335,7 +1335,14 @@
 				},
 				"app-development/widgets/form-widgets/toggle",
 				"app-development/widgets/form-widgets/switch",
-				"app-development/widgets/form-widgets/date-time-datetime",
+				{
+					"type": "category",
+					"label": "Date, Time and Datetime",
+					"items": [
+						"app-development/widgets/form-widgets/date-time-datetime",
+						"how-tos/settimezone-method"
+					]
+				},
 				{
 					"type": "category",
 					"label": "Calendar",
