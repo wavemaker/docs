@@ -440,8 +440,234 @@
 					]
 				}
 			]
-		}
-	],
+		},
+		{
+			"type": "category",
+			"label": "How-tos",
+			"items": 
+		[
+			"howtos-documents",
+			{
+				"type": "category",
+				"label": "App solution",
+				"items": [
+					"how-tos/creating-registration-page",
+					"how-tos/support-password-encryption",
+					"how-tos/error-handling-wavemaker-app",
+					"how-tos/prevent-user-leaving-page-unsaved-changes",
+					"how-tos/microfrontends-iframe",
+					"how-tos/building-pwa-app"
+				]
+			},
+			{
+				"type": "category",
+				"label": "UI Development",
+				"items": [
+					"how-tos/single-page-app",
+					"how-tos/prefab-as-webcomponent",
+					"how-tos/passing-parameters-pages",
+					"how-tos/passing-parameters-partial-page",
+					"how-tos/script-access",
+					"how-tos/use-static-variable-pass-data-pages",
+					"how-tos/customise-login-page",
+					"how-tos/incorporating-additional-icons",
+					"how-tos/displaying-icon-color-based-upon-condition",
+					"how-tos/change-icon-global-spinner",
+					"how-tos/changing-default-favicon",
+					"how-tos/changing-app-logo",
+					"how-tos/changing-page-title",
+					"how-tos/customise-app-style",
+					"how-tos/use-conditional-class-property",
+					"how-tos/use-conditional-style-property",
+					"how-tos/customize-existing-theme",
+					"how-tos/adjust-leftnav-width",
+					"how-tos/customizing-theme",
+					"how-tos/widget-template-layout",
+					"how-tos/wizard-layout",
+					"how-tos/custom-widget-template",
+					"how-tos/using-custom-formatter",
+					"how-tos/using-custom-formatter-for-todate",
+					"how-tos/customize-breakpoints-for-widths-of-show-in-devices",
+					{
+						"type": "category",
+						"label": "Nav & Dropdown",
+						"items": [
+							"how-tos/adjust-leftnav-width",
+							"how-tos/dynamic-menu-based-user-role",
+							"how-tos/restricting-menu-item-display-based-user-role"
+						]
+					}
+				]
+			},
+			{
+				"type": "category",
+				"label": "Localization",
+				"items": [
+					"how-tos/localization-wavemaker-apps",
+					"how-tos/implementing-localization-dropdown-menu",
+					"how-tos/setting-language-date-format",
+					"app-development/widgets/form-widgets/select-locale-usage",
+					"how-tos/localization-error-messages",
+					"how-tos/localization-data-table-column-headings",
+					"how-tos/dynamic-locale-messageselection"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Security",
+				"items": [
+					"how-tos/saml-integration-onelogin",
+					"how-tos/saml-integration-adfs",
+					"how-tos/saml-integration-okta",
+					"how-tos/sso-openid-azure-active-directory",
+					"how-tos/implement-openid-google-provider",
+					"how-tos/implement-openid-okta-provider",
+					"how-tos/implement-openid-auth0-provider",
+					"how-tos/custom-security-using-google-oauth-prefab",
+					"how-tos/multiple-security-provider-configuration",
+					"how-tos/customizing-post-authentication-handlers",
+					"how-tos/add-custom-filters",
+					"how-tos/configuring-content-security-policy",
+					"how-tos/configure-mtls-in-wmapp",
+					"how-tos/switch-security-provider-based-on-profile",
+					"how-tos/configuring-jws-and-opaque-security-providers",
+					"how-tos/passing-id-access-tokens-as-header"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Databases",
+				"items": [
+					"how-tos/queries-dynamic-clause",
+					"how-tos/connect-azure-sql-server",
+					"app-development/services/database-services/download-jdbc-driver-jar",
+					"how-tos/how-to-upload-jdbc-driver",
+					"how-tos/fetch-default-number100-records-database",
+					"how-tos/one-many-relationship",
+					"how-tos/working-with-temporals",
+					"how-tos/configuring-aws-redshiftdb",
+					"how-tos/configuring-sap-hana-clouddb",
+					"how-tos/audit-history-using-crud-listeners",
+					"how-tos/rowlevel-security-using-crud-event-listeners",
+					"how-tos/validations-using-crudListeners",
+					"how-tos/custom-business-logic-using-crud-event-listeners",
+					"how-tos/mysql-connection-using-ssl",
+					"how-tos/switch-mariadb-to-mysql-connector"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Web services",
+				"items": [
+					"how-tos/using-app-environment-properties",
+					"how-tos/consuming-existing-wm-api-into-another-wm-project",
+					"how-tos/dynamic-form",
+					"how-tos/using-post-method-send-data-rest-api",
+					"how-tos/request-response-processing-rest-services",
+					"how-tos/intercept-requests-responses-api-calls-one-place",
+					"how-tos/websocket-usage-chatroom-app",
+					"how-tos/working-api-with-different-pagination-formats",
+					"how-tos/adding-ui-for-api-server-side-pagination"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Java services",
+				"items": [
+					"how-tos/sending-email-using-java-service",
+					"how-tos/implementing-forgot-password-feature-using-java-service",
+					"how-tos/accessing-rest-apis-java-service",
+					"how-tos/scheduling-java-service",
+					"how-tos/synchronizing-java-services-controller",
+					"how-tos/integrating-amazon-cognito-user-authentication",
+					"how-tos/integrating-sample-jasper-report-wavemaker-application",
+					"how-tos/generate-pdf-file-using-jasper-reports",
+					"how-tos/integrating-junit-tests-for-wavemaker-application",
+					"how-tos/pre-post-processing-db-service-apis",
+					"how-tos/accessing-loggedin-user-information-using-a-java-service",
+					"how-tos/camunda-wavemaker-app-integration",
+					"how-tos/azure-file-storage-connector",
+					"how-tos/insert-data-from-excel",
+					"how-tos/aws-s3-connector",
+					"how-tos/twilio-connector",
+					"how-tos/twilio-otp-integration",
+					"how-tos/custom-status-code-error-message-java-service"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Variables",
+				"items": [
+					"how-tos/using-filter-conditions-variable",
+					"how-tos/using-live-variable-apis",
+					"how-tos/using-notification-actions",
+					"how-tos/using-navigation-action",
+					"how-tos/using-variables-queries-procedure",
+					"how-tos/using-service-variable-form",
+					"how-tos/using-filter-criteria-data-live-widgets",
+					"how-tos/using-filter-criteria-database-crud-variable"
+				]
+			},
+			{
+				"type": "category",
+				"label": "JavaScript",
+				"items": [
+					"how-tos/using-javascript-binding",
+					"how-tos/using-javascript-external-url",
+					"how-tos/using-javascript-loop-command",
+					"how-tos/using-function-evaluating-conditions"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Development",
+				"items": [
+					"how-tos/synchronizing-wavemaker-apps-ides-beta",
+					"how-tos/debug-monitor-performance-issues-using-fusion-reactor"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Deployment",
+				"items": [
+					"how-tos/ssl-offloading"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Upgrading Project",
+				"items": [
+					"how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
+					"how-tos/app-migration-wavemaker-9x-10x"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Mobile",
+				"items": [
+					"how-tos/mobile-notify-new-version-update",
+					"how-tos/setting-swipe-gestures-list-widget",
+					"how-tos/working-pull-refresh",
+					"how-tos/using-search-widget-within-navbar",
+					"app-development/widgets/mobile-widgets/barcode-scanner",
+					{
+						"type": "category",
+						"label": "Mobile UI Design",
+						"items": [
+							"how-tos/splashscreens-icons",
+							"how-tos/using-cordova-plugins",
+							"how-tos/support-for-tablet-view-in-mobile",
+							"how-tos/sliding-leftnav-mobile-app",
+							"how-tos/mobile-app-using-bar-code",
+							"how-tos/custom-date-picker"
+						]
+					}
+				]
+			}
+		]
+	}
+	
+],
 	"Connectors": [
 		"connectors/connectors-introduction",
 		"connectors/connectors-architecture",
@@ -853,226 +1079,7 @@
 			]
 		}
 	],
-	"How to Docs": [
-		"howtos-documents",
-		{
-			"type": "category",
-			"label": "App solution",
-			"items": [
-				"how-tos/creating-registration-page",
-				"how-tos/support-password-encryption",
-				"how-tos/error-handling-wavemaker-app",
-				"how-tos/prevent-user-leaving-page-unsaved-changes",
-				"how-tos/microfrontends-iframe",
-				"how-tos/building-pwa-app"
-			]
-		},
-		{
-			"type": "category",
-			"label": "UI Development",
-			"items": [
-				"how-tos/single-page-app",
-				"how-tos/prefab-as-webcomponent",
-				"how-tos/passing-parameters-pages",
-				"how-tos/passing-parameters-partial-page",
-				"how-tos/script-access",
-				"how-tos/use-static-variable-pass-data-pages",
-				"how-tos/customise-login-page",
-				"how-tos/incorporating-additional-icons",
-				"how-tos/displaying-icon-color-based-upon-condition",
-				"how-tos/change-icon-global-spinner",
-				"how-tos/changing-default-favicon",
-				"how-tos/changing-app-logo",
-				"how-tos/changing-page-title",
-				"how-tos/customise-app-style",
-				"how-tos/use-conditional-class-property",
-				"how-tos/use-conditional-style-property",
-				"how-tos/customize-existing-theme",
-				"how-tos/adjust-leftnav-width",
-				"how-tos/customizing-theme",
-				"how-tos/widget-template-layout",
-				"how-tos/wizard-layout",
-				"how-tos/custom-widget-template",
-				"how-tos/using-custom-formatter",
-				"how-tos/using-custom-formatter-for-todate",
-				"how-tos/customize-breakpoints-for-widths-of-show-in-devices",
-				{
-					"type": "category",
-					"label": "Nav & Dropdown",
-					"items": [
-						"how-tos/adjust-leftnav-width",
-						"how-tos/dynamic-menu-based-user-role",
-						"how-tos/restricting-menu-item-display-based-user-role"
-					]
-				}
-			]
-		},
-		{
-			"type": "category",
-			"label": "Localization",
-			"items": [
-				"how-tos/localization-wavemaker-apps",
-				"how-tos/implementing-localization-dropdown-menu",
-				"how-tos/setting-language-date-format",
-				"app-development/widgets/form-widgets/select-locale-usage",
-				"how-tos/localization-error-messages",
-				"how-tos/localization-data-table-column-headings",
-				"how-tos/dynamic-locale-messageselection"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Security",
-			"items": [
-				"how-tos/saml-integration-onelogin",
-				"how-tos/saml-integration-adfs",
-				"how-tos/saml-integration-okta",
-				"how-tos/sso-openid-azure-active-directory",
-				"how-tos/implement-openid-google-provider",
-				"how-tos/implement-openid-okta-provider",
-				"how-tos/implement-openid-auth0-provider",
-				"how-tos/custom-security-using-google-oauth-prefab",
-				"how-tos/multiple-security-provider-configuration",
-				"how-tos/customizing-post-authentication-handlers",
-				"how-tos/add-custom-filters",
-				"how-tos/configuring-content-security-policy",
-				"how-tos/configure-mtls-in-wmapp",
-				"how-tos/switch-security-provider-based-on-profile",
-				"how-tos/configuring-jws-and-opaque-security-providers",
-				"how-tos/passing-id-access-tokens-as-header"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Databases",
-			"items": [
-				"how-tos/queries-dynamic-clause",
-				"how-tos/connect-azure-sql-server",
-				"app-development/services/database-services/download-jdbc-driver-jar",
-				"how-tos/how-to-upload-jdbc-driver",
-				"how-tos/fetch-default-number100-records-database",
-				"how-tos/one-many-relationship",
-				"how-tos/working-with-temporals",
-				"how-tos/configuring-aws-redshiftdb",
-				"how-tos/configuring-sap-hana-clouddb",
-				"how-tos/audit-history-using-crud-listeners",
-				"how-tos/rowlevel-security-using-crud-event-listeners",
-				"how-tos/validations-using-crudListeners",
-				"how-tos/custom-business-logic-using-crud-event-listeners",
-				"how-tos/mysql-connection-using-ssl",
-				"how-tos/switch-mariadb-to-mysql-connector"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Web services",
-			"items": [
-				"how-tos/using-app-environment-properties",
-				"how-tos/consuming-existing-wm-api-into-another-wm-project",
-				"how-tos/dynamic-form",
-				"how-tos/using-post-method-send-data-rest-api",
-				"how-tos/request-response-processing-rest-services",
-				"how-tos/intercept-requests-responses-api-calls-one-place",
-				"how-tos/websocket-usage-chatroom-app",
-				"how-tos/working-api-with-different-pagination-formats",
-				"how-tos/adding-ui-for-api-server-side-pagination"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Java services",
-			"items": [
-				"how-tos/sending-email-using-java-service",
-				"how-tos/implementing-forgot-password-feature-using-java-service",
-				"how-tos/accessing-rest-apis-java-service",
-				"how-tos/scheduling-java-service",
-				"how-tos/synchronizing-java-services-controller",
-				"how-tos/integrating-amazon-cognito-user-authentication",
-				"how-tos/integrating-sample-jasper-report-wavemaker-application",
-				"how-tos/generate-pdf-file-using-jasper-reports",
-				"how-tos/integrating-junit-tests-for-wavemaker-application",
-				"how-tos/pre-post-processing-db-service-apis",
-				"how-tos/accessing-loggedin-user-information-using-a-java-service",
-				"how-tos/camunda-wavemaker-app-integration",
-				"how-tos/azure-file-storage-connector",
-				"how-tos/insert-data-from-excel",
-				"how-tos/aws-s3-connector",
-				"how-tos/twilio-connector",
-				"how-tos/twilio-otp-integration",
-				"how-tos/custom-status-code-error-message-java-service"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Variables",
-			"items": [
-				"how-tos/using-filter-conditions-variable",
-				"how-tos/using-live-variable-apis",
-				"how-tos/using-notification-actions",
-				"how-tos/using-navigation-action",
-				"how-tos/using-variables-queries-procedure",
-				"how-tos/using-service-variable-form",
-				"how-tos/using-filter-criteria-data-live-widgets",
-				"how-tos/using-filter-criteria-database-crud-variable"
-			]
-		},
-		{
-			"type": "category",
-			"label": "JavaScript",
-			"items": [
-				"how-tos/using-javascript-binding",
-				"how-tos/using-javascript-external-url",
-				"how-tos/using-javascript-loop-command",
-				"how-tos/using-function-evaluating-conditions"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Development",
-			"items": [
-				"how-tos/synchronizing-wavemaker-apps-ides-beta",
-				"how-tos/debug-monitor-performance-issues-using-fusion-reactor"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Deployment",
-			"items": [
-				"how-tos/ssl-offloading"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Upgrading Project",
-			"items": [
-				"how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
-				"how-tos/app-migration-wavemaker-9x-10x"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Mobile",
-			"items": [
-				"how-tos/mobile-notify-new-version-update",
-				"how-tos/setting-swipe-gestures-list-widget",
-				"how-tos/working-pull-refresh",
-				"how-tos/using-search-widget-within-navbar",
-				"app-development/widgets/mobile-widgets/barcode-scanner",
-				{
-					"type": "category",
-					"label": "Mobile UI Design",
-					"items": [
-						"how-tos/splashscreens-icons",
-						"how-tos/using-cordova-plugins",
-						"how-tos/support-for-tablet-view-in-mobile",
-						"how-tos/sliding-leftnav-mobile-app",
-						"how-tos/mobile-app-using-bar-code",
-						"how-tos/custom-date-picker"
-					]
-				}
-			]
-		}
-	],
+	
 	"Widgets": [
 		"app-development/widgets/widget-library",
 		{
