@@ -640,29 +640,6 @@
 					"how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
 					"how-tos/app-migration-wavemaker-9x-10x"
 				]
-			},
-			{
-				"type": "category",
-				"label": "Mobile",
-				"items": [
-					"how-tos/mobile-notify-new-version-update",
-					"how-tos/setting-swipe-gestures-list-widget",
-					"how-tos/working-pull-refresh",
-					"how-tos/using-search-widget-within-navbar",
-					"app-development/widgets/mobile-widgets/barcode-scanner",
-					{
-						"type": "category",
-						"label": "Mobile UI Design",
-						"items": [
-							"how-tos/splashscreens-icons",
-							"how-tos/using-cordova-plugins",
-							"how-tos/support-for-tablet-view-in-mobile",
-							"how-tos/sliding-leftnav-mobile-app",
-							"how-tos/mobile-app-using-bar-code",
-							"how-tos/custom-date-picker"
-						]
-					}
-				]
 			}
 		]
 	}
@@ -1042,6 +1019,29 @@
 				"hybrid-mobile/offline-data-support-implementation",
 				"hybrid-mobile/switching-offline-online-mode"
 			  ]
+			},
+			{
+				"type": "category",
+				"label": "Cordova How-tos",
+				"items": [
+					"how-tos/mobile-notify-new-version-update",
+					"how-tos/setting-swipe-gestures-list-widget",
+					"how-tos/working-pull-refresh",
+					"how-tos/using-search-widget-within-navbar",
+					"app-development/widgets/mobile-widgets/barcode-scanner",
+					{
+						"type": "category",
+						"label": "Mobile UI Design",
+						"items": [
+							"how-tos/splashscreens-icons",
+							"how-tos/using-cordova-plugins",
+							"how-tos/support-for-tablet-view-in-mobile",
+							"how-tos/sliding-leftnav-mobile-app",
+							"how-tos/mobile-app-using-bar-code",
+							"how-tos/custom-date-picker"
+						]
+					}
+				]
 			}
 		  ]
 		},
