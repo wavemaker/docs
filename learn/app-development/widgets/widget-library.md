@@ -1,5 +1,5 @@
 ---
-title: "Widgets Library"
+title: "Widgets Library Web"
 id: "widget-library"
 sidebar_label: "Widgets Library"
 ---
@@ -11,4 +11,4 @@ Pages are designed as a composition of widgets. See [Design Pages](/app-developm
 
 import WidgetTabs from '@site/src/components/widgets.js'
 
-<WidgetTabs />
+<WidgetTabs show={["web"]} />

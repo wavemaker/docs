@@ -1,6 +1,7 @@
 {
 	"docs": [
 		"documentation-reference",
+		"app-development/widgets/widget-library",
 		{
 			"type": "category",
 			"label": "Get started",
@@ -668,12 +669,9 @@
 	],
 
 	"Mobile": [
+		"react-native/react-native-overview",
+		"react-native/widget-library-mobile",
 		{
-		  "type": "category",
-		  "label": "React Native",
-		  "items": [
-			"react-native/react-native-overview",
-			{
 			  "type": "category",
 			  "label": "Development",
 			  "items": [
@@ -685,8 +683,8 @@
 				"react-native/third-party-expo-plugins",
 				"react-native/ssl-pinning"
 			  ]
-			},
-			{
+		},
+		{
 				"type": "category",
 				"label": "Design and Theming",
 				"items": [
@@ -699,16 +697,16 @@
 				  "react-native/animations",
 				  "react-native/accessibility-support-react-native"
 				]
-			  },
-			{
+		},
+		{
 			  "type": "category",
 			  "label": "App Integration",
 			  "items": [
 				"react-native/web-view",
 				"react-native/react-native-embed"
 			  ]
-			},
-			{
+		},
+		{
 			  "type": "category",
 			  "label": "Testing and Debugging",
 			  "items": [
@@ -721,8 +719,8 @@
 				"react-native/wavepulse",
 				"react-native/flipper"
 			  ]
-			},
-			{
+		},
+		{
 				"type": "category",
 				"label": "Build",
 				"items": [
@@ -730,8 +728,8 @@
 				  "react-native/mobile-build-manual",
 				  "react-native/export-react-native-zip"
 				]
-			  },
-			{
+		},
+		{
 			  "type": "category",
 			  "label": "Performance and Monitoring",
 			  "items": [
@@ -741,8 +739,8 @@
 				"react-native/flashlight-performance-tool",
 				"react-native/performance-monitor"
 			  ]
-			},
-			{
+		},
+		{
 			  "type": "category",
 			  "label": "How-To Guides",
 			  "items": [
@@ -761,8 +759,7 @@
 				"react-native/user-idle-timeout",
 				"react-native/share"
 			  ]
-			}
-		  ]
+			
 		},
 		{
 		  "type": "category",
