@@ -2084,6 +2084,13 @@
 						"app-development/wavemaker-app-development-faqs/application-stack-upgrades",
 						"app-development/wavemaker-app-development-faqs/is-wavemaker-app-scalable"
 					]
+				},
+				{
+					"type": "category",
+					"label": "Documentation Help",
+					"items": [
+						"help/contribution-guide"
+					]
 				}
 			]
 		},

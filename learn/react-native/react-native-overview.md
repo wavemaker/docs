@@ -7,6 +7,12 @@ sidebar_label: "React Native"
 
 import reactnativearch from '/learn/assets/react-native-architecture.png';
 
+:::note
+> **Help Us Improve**  
+> We're working on enhancing the onboarding experience for WaveMaker developers. If you have feedback on this article, please share it using the **Feedback** section at the bottom of the page. Your input helps us make improvements that you’d like to see.
+> We're also open to contributions to our documentation. New to contributing? Read more about contributing here [Contribute to the help](/learn/help/contribution-guide).
+:::
+
 WaveMaker Studio for React Native allows developers to build native mobile apps for iOS and Android using web development skills. It simplifies the development process with a visual studio, reusable components, and a fully exportable codebase.
 
 ### With WaveMaker React Native, You Can
