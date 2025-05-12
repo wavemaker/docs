@@ -1,6 +1,6 @@
 const React = require('react');
 import { useColorMode } from '@docusaurus/theme-common';
-const WidgetTabItems = ({ activePlatformsSet, showStoryBookLinks }) => {
+const WidgetTabItems = ({ activePlatformsSet, links }) => {
   const widgetsData = [
     {
         "tab": "Data Widgets",
@@ -864,7 +864,7 @@ const WidgetTabItems = ({ activePlatformsSet, showStoryBookLinks }) => {
       data.push(
         <>
           <h2 className="widget-header" key={widget.value}>{widget.tab}</h2>
-          <Widgets content={filteredContent} showStoryBookLinks={showStoryBookLinks} />
+          <Widgets content={filteredContent} links={links} />
         </>
       );
     }
@@ -889,8 +889,8 @@ const Widgets = (props) => {
           </div>
           <div className="card-body">{props.content[ind].body}</div>
           <div className="card-footer card_links">
-            {props.showStoryBookLinks.mobile && props.content[ind]?.mobileStoryBook && <><a href={props.content[ind].mobileStoryBook} target='_blank'>Playground,</a>&nbsp;&nbsp;</>}
-            {props.showStoryBookLinks.web && props.content[ind]?.api && <><a href={props.content[ind].api}>API Docs,</a>&nbsp;&nbsp;</>}
+            {props.links.showMobileStoryBookLink && props.content[ind]?.mobileStoryBook && <><a href={props.content[ind].mobileStoryBook} target='_blank'>Playground,</a>&nbsp;&nbsp;</>}
+            {props.links.showApiLink && props.content[ind]?.api && <><a href={props.content[ind].api}>API Docs,</a>&nbsp;&nbsp;</>}
             <a href={props.content[ind].overview}>Overview</a>
           </div>
         </div>
@@ -907,11 +907,11 @@ const Widgets = (props) => {
 const WidgetTabs = (props) => {
   const platforms = props.show;
   const activePlatformsSet = new Set(platforms || []);
-  const showMobileStoryBookLink = activePlatformsSet.size === 1 && activePlatformsSet.has("mobile");
-  const showWebStoryBookLink = activePlatformsSet.size === 1 && activePlatformsSet.has("web");
+  const showMobileStoryBookLink = props.showMobileStoryBookLink;
+  const showApiLink = props.showApiLink;
   return (
     <>
-      <WidgetTabItems activePlatformsSet={activePlatformsSet} showStoryBookLinks={{mobile:showMobileStoryBookLink,web:showWebStoryBookLink}}/>
+      <WidgetTabItems activePlatformsSet={activePlatformsSet} links={{showMobileStoryBookLink,showApiLink}}/>
     </>
   );
 }

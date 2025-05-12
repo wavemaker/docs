@@ -11,4 +11,4 @@ Pages are designed as a composition of widgets. See [Design Pages](/app-developm
 
 import WidgetTabs from '@site/src/components/widgets.js'
 
-<WidgetTabs show={["mobile"]}/>
+<WidgetTabs show={["mobile"]} showMobileStoryBookLink={true}/>
