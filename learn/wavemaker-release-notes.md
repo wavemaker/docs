@@ -21,7 +21,8 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.11.0](/learn/wavemaker-release-notes/v11-11-0) <p style={{color:"red"}}>*latest*</p> | WaveMaker's Release 11.11 introduces numerous notable features, including differentiation between user and migration changes in Studio, the Dynamic Wizard Widget, migration to standalone components, and significant enhancements such as improved canvas visuals, optimization of applications by cleaning up unused i18n files in Web, chart widget enhancements, migration to Expo image, and gradient text in React Native. This release will also address several crucial bugs in both web and React Native platforms. | 28 April 2025 |
+|[WaveMaker 11.11.1](/learn/wavemaker-release-notes/v11-11-1) <p style={{color:"red"}}>*latest*</p> | WaveMaker's Release 11.11.1 includes significant bug fixes related to the Calendar widget, onChange event, Infinite Scroll component, and app preview failures in React Native. | 12 May 2025 |
+|[WaveMaker 11.11.0](/learn/wavemaker-release-notes/v11-11-0) | WaveMaker's Release 11.11 introduces numerous notable features, including differentiation between user and migration changes in Studio, the Dynamic Wizard Widget, migration to standalone components, and significant enhancements such as improved canvas visuals, optimization of applications by cleaning up unused i18n files in Web, chart widget enhancements, migration to Expo image, and gradient text in React Native. This release will also address several crucial bugs in both web and React Native platforms. | 28 April 2025 |
 |[WaveMaker 11.10.5](/learn/wavemaker-release-notes/v11-10-5) | ​WaveMaker's Release 11.10.5 introduces significant enhancements for web applications, including the ability to export projects as Angular ZIP files and the option to set dynamic titles for expanding and collapsing rows in Data Tables. In React Native, this release adds the capability to capture images using custom text. Additionally, numerous important bug fixes have been implemented across both Web and React Native platforms. | 31 March 2025 |
 |[WaveMaker 11.10.4](/learn/wavemaker-release-notes/v11-10-4)  | ​WaveMaker's Release 11.10.4 is packed with numerous bug fixes for both Web and React Native platforms. This update also features important enhancements, including titles for web routes, customizing the base path while importing REST services in Web, support for Promises in Wizard widget, and introducing an aspect ratio property for images in React Native. | 17 March 2025 |
 |[WaveMaker 11.10.3](/learn/wavemaker-release-notes/v11-10-3) | WaveMaker's Release 11.10.3 is here with impactful enhancements like users being able to select JWS and Opaque as security providers, Readable Version names for artifacts, and Case-insensitive sorting. This release will also include significant bug fixes related to Load on Demand property, Carousel widget, and many React Native bug fixes. | 03 March 2025 |
@@ -172,7 +173,7 @@ Last updated: [WaveMaker 11.11.0](/learn/wavemaker-release-notes/v11-11-0)
 | Styles | bootstrap | 3.3.7 |
 | Charting | d3 | 7.8.5 |
 |  | nvd3 | 1.8.11 |
-| Fullcalendar | | <td className="versiontdbgcolor"> 5.3.1 -> 6.1.15 </td> |
+| Fullcalendar | |  6.1.15 |
 | Built-in functions | lodash-es | 4.17.21|
 | Device support, gestures | hammerjs | 2.0.8 |
 
@@ -182,28 +183,28 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | 6.2.5 |
-| Security framework | Spring Security | 6.4.4 |
-|  | Spring Data | 2024.1.4 |
-|  | Spring Boot |  3.4.4 |
-|  | Spring Session | 3.4.2 |
-| Java JSON utilities | Gson  |  <td className="versiontdbgcolor"> 2.12.1 -> 2.13.0 </td> |
+|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.5 -> 6.2.6 </td> |
+| Security framework | Spring Security | <td className="versiontdbgcolor">6.4.4 -> 6.4.5 </td> |
+|  | Spring Data | <td className="versiontdbgcolor">2024.1.4 -> 2024.1.5 </td> |
+|  | Spring Boot |  <td className="versiontdbgcolor">  3.4.4 -> 3.4.5 </td> |
+|  | Spring Session | <td className="versiontdbgcolor"> 3.4.2 -> 3.4.3 </td>|
+| Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.13.0 -> 2.13.1 </td> |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
-| JSON library | Jackson |  2.18.3 |
+| JSON library | Jackson |   <td className="versiontdbgcolor"> 2.18.3 -> 2.19.0 </td> |
 | Logging framework | SLF4j | 2.0.17 |
 | Logging Implementation | Log4j2 | 2.24.3 |
-| Http client library  | HttpComponents -  httpclient | <td className="versiontdbgcolor"> 5.4.2 -> 5.4.3 </td> |
+| Http client library  | HttpComponents -  httpclient | <td className="versiontdbgcolor"> 5.4.3 -> 5.4.4 </td> |
 | Servlet Framework |  | 6.0.0 |
-| Database Connection Pooling | HikariCP | <td className="versiontdbgcolor"> 6.2.1 -> 6.3.0 </td> |
+| Database Connection Pooling | HikariCP | 6.3.0 |
 |  | Commons Lang3 | 3.17.0  |
-|  | Guava | <td className="versiontdbgcolor"> 33.4.5-jre -> 33.4.8-jre </td> |
+|  | Guava | 33.4.8-jre |
 |  | Postgresql Driver  | 42.7.4  |
 |  | Hibernate Validator | 8.0.2.Final |
-|  | Jgit | <td className="versiontdbgcolor"> 7.1.0.202411261347-r -> 7.2.0.202503040940-r </td> |
+|  | Jgit | 7.2.0.202503040940-r |
 |  | Commons Codec | 1.18.0 |
-|  | Commons IO | <td className="versiontdbgcolor"> 2.18.0 -> 2.19.0 </td> |
-|  | Commons Text | <td className="versiontdbgcolor">1.13.0 -> 1.13.1 </td> |
+|  | Commons IO | 2.19.0 |
+|  | Commons Text |  1.13.1 |
 |  | Antisamy | 1.7.7 |
 |  | Freemarker | 2.3.34 |
 |  | Apache Tika | 3.1.0 |
@@ -211,16 +212,17 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Mongodb Driver | 5.4.0 |
 |  | Jakarta Validation Api | 3.1.1 |
 
+
 ## Web
 
 ### Runtime Environment
 
 | Description | Version |
 | --- | --- |
-| JDK | <td className="versiontdbgcolor"> 21.0.3 -> 21.0.6 </td> |
+| JDK | 21.0.6 |
 | WebSphere Liberty | 23.0.0.9+ |
 | JBoss Wildfly | 27+ |
-| Tomcat | <td className="versiontdbgcolor"> 10.1.31 -> 10.1.39 </td> |
+| Tomcat | 10.1.39 |
 
 
 This is the default Tomcat runtime support. Apps can be deployed to any standard Java Web Server running on JDK 11. For more information, see [here](/learn/app-development/deployment/deployment-web-server).
@@ -229,30 +231,29 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 
 |Description|	Version|
 |---|---|
-|Java | <td className="versiontdbgcolor"> 21.0.3 -> 21.0.6 </td> |
+|Java | 21.0.6 |
 |Node| 22.11.0 |
 |Maven| 3.9.9 |
 |npm | 10.9.0 |
 |Ant| 1.10.11|
-
-For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
 
 
 ## Mobile (React Native)
 
 ### Environment Setup
 
+
 |Description|	Version|
 |---|---|
 |Java | 17 |
-|Node|  <td className="versiontdbgcolor"> 18.17.1 -> 22.11.0 </td> |
+|Node|  22.11.0 |
 |Maven| 3.9.9 |
-|npm | <td className="versiontdbgcolor"> 9.5.1 -> 10.9.0 </td> |
-| Android Studio | <td className="versiontdbgcolor"> Ladybug 2024.2.2 - Meerkat 2024.3.1 </td> |
-| Xcode | <td className="versiontdbgcolor">  15.4  - 16.2 </td> |
+|npm | 10.9.0 |
+| Android Studio | Ladybug 2024.2.2 - Meerkat 2024.3.1 |
+| Xcode |  15.4  - 16.2 |
 | SDK Build Tools | 34.0.0|
 | [wm-reactnative-cli](https://www.npmjs.com/package/@wavemaker/wm-reactnative-cli) | 1.8.8 |
-| Android Gradle Plugin (AGP) | <td className="versiontdbgcolor"> 8.7 -> 8.10.2 </td> |
+| Android Gradle Plugin (AGP) |  8.10.2  |
 
 :::note
 Users can now use a single **Node.js v22.11.0** version across both Web and React Native platforms, as well as CLI tools.
