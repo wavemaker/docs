@@ -176,7 +176,7 @@ For all queries and procedures, there will be a Rest API generated with the Serv
 ### Models
 Both _Request_ and _Response_ POJO classes are generated as: `<queryName>Request/Response`
 
-- These classes are generated in a package: <service_package>.models.query
+- These classes are generated in a package: `<service_package>.models.query`
 - Response class is generated only for SELECT queries. The return type for Non-Select queries will be integer hence POJO class is not generated.   
   **Example**:  
   query with name **getAllEmployees** will generate **GetAllEmployeesResponse** class with all returned columns.
