@@ -3,7 +3,7 @@ title: "Setting Time Zone for Datetime widget "
 id: "settimezone-method"
 ---
 
-The setTimezone method allows precise adjustment of time to specific time zones, ensuring accuracy and consistency in date and time displays.
+The **setTimezone** method configures a widget to display date and time values based on a specified time zone, ensuring consistent behavior across different user locales and environments.
 
 ## Using setTimezone for Datetime Widget
 
