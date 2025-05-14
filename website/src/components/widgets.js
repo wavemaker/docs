@@ -14,7 +14,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/datalive/cards/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html",
                 "supportedPlatforms": ["web", "mobile"],
-                "mobileStoryBook": "https://some-mobileStoryBook-url.com"
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/data-card--docs"
             },
             {
                 "lightIcon": "/learn/img/datatable.svg",
@@ -24,7 +24,6 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/datalive/data-table/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveTable.html",
                 "supportedPlatforms": ["web", "mobile"],
-                "mobileStoryBook": "https://some-mobileStoryBook-url.com"
             },
 
             {
@@ -35,7 +34,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/datalive/form/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Form.html",
                 "supportedPlatforms": ["web", "mobile"],
-                "mobileStoryBook": "https://some-mobileStoryBook-url.com"
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/data-form--docs"
             },
             {
                 "lightIcon": "/learn/img/list.svg",
@@ -45,7 +44,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/datalive/list/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/List.html",
                 "supportedPlatforms": ["web", "mobile"],
-
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/data-list--docs"
             },
             {
                 "lightIcon": "/learn/img/livefilter.svg",
@@ -64,6 +63,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/datalive/live-form/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveForm.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/data-liveform--docs"
             }
         ]
     },
@@ -79,7 +79,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/container/accordion/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Accordion.html",
                 "supportedPlatforms": ["web", "mobile"],
-                "mobileStoryBook": "https://some-mobileStoryBook-url.com"
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-accordion--docs"
             },
             {
                 "lightIcon": "/learn/img/container.svg",
@@ -89,7 +89,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/container/container/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Container.html",
                 "supportedPlatforms": ["web", "mobile"],
-                "mobileStoryBook": "https://some-mobileStoryBook-url.com"
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-container--docs"
             },
             {
                 "lightIcon": "/learn/img/grid.svg",
@@ -99,7 +99,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/container/grid-layout/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Layoutgrid.html",
                 "supportedPlatforms": ["web", "mobile"],
-                "mobileStoryBook": "https://some-mobileStoryBook-url.com"
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-gridlayout--docs"
             },
             {
                 "lightIcon": "/learn/img/panel.svg",
@@ -109,7 +109,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/container/panel/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Panel.html",
                 "supportedPlatforms": ["web", "mobile"],
-                "mobileStoryBook": "https://some-mobileStoryBook-url.com"
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-panel--docs"
             },
             {
                 "lightIcon": "/learn/img/tabs.svg",
@@ -119,7 +119,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/container/tabs/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tabs.html",
                 "supportedPlatforms": ["web", "mobile"],
-                "mobileStoryBook": "https://some-mobileStoryBook-url.com"
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-tabs--docs"
             },
             {
                 "lightIcon": "/learn/img/title.svg",
@@ -129,7 +129,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/container/tile/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tile.html",
                 "supportedPlatforms": ["web", "mobile"],
-                "mobileStoryBook": "https://some-mobileStoryBook-url.com"
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-tile--docs"
             },
             {
                 "lightIcon": "/learn/img/wizard.svg",
@@ -138,7 +138,8 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Wizard is a form of UI components to group a set of widgets together and to apply a uniform style to the content ",
                 "overview": "/learn/app-development/widgets/container/wizard/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Wizard.html",
-                "supportedPlatforms": ["web", "mobile"]
+                "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-wizard--docs"
             }
         ]
     },
@@ -154,6 +155,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/button",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Button.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-button--docs"
             },
             {
                 "lightIcon": "/learn/img/buttonGroup.svg",
@@ -163,6 +165,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/button-group/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/ButtonGroup.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-buttongroup--docs"
             },
             {
                 "lightIcon": "/learn/img/calender.svg",
@@ -172,6 +175,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/calendar/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Calendar.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-calendar--docs"
             },
             {
                 "lightIcon": "/learn/img/checkBox.svg",
@@ -181,6 +185,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/checkbox/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Checkbox.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-checkbox--docs"
             },
             {
                 "lightIcon": "/learn/img/checkBoxSet.svg",
@@ -190,6 +195,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/checkboxset/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Checkboxset.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-checkboxset--docs"
             },
             {
                 "lightIcon": "/learn/img/chips.svg",
@@ -199,6 +205,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/chips/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Chips.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-chips--docs"
             },
             {
                 "lightIcon": "/learn/img/colorPicker.svg",
@@ -217,6 +224,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/currency/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Currency.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-currency--docs"
             },
             {
                 "lightIcon": "/learn/img/date.svg",
@@ -226,6 +234,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/date-time-datetime/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Date.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-date--docs"
             },
             {
                 "lightIcon": "/learn/img/dateTime.svg",
@@ -235,6 +244,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/date-time-datetime/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Datetime.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-datetime--docs"
             },
             {
                 "lightIcon": "/learn/img/fileUpload.svg",
@@ -244,6 +254,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/datalive/form/file-upload/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/FileUpload.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-fileupload--docs"
             },
             {
                 "lightIcon": "/learn/img/number.svg",
@@ -253,6 +264,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/number/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Number.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-number--docs"
             },
             {
                 "lightIcon": "/learn/img/radioset.svg",
@@ -262,6 +274,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/radioset/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Radioset.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-radioset--docs"
             },
             {
                 "lightIcon": "/learn/img/ratings.svg",
@@ -271,6 +284,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/rating-widget/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Rating.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-rating--docs"
             },
             {
                 "lightIcon": "/learn/img/select.svg",
@@ -280,6 +294,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/select/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Select.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-select--docs"
             },
             {
                 "lightIcon": "/learn/img/selectLocale.svg",
@@ -289,6 +304,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/select-locale/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Select.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-selectlocale--docs"
             },
             {
                 "lightIcon": "/learn/img/slider.svg",
@@ -298,6 +314,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/slider/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Slider.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-slider--docs"
             },
             {
                 "lightIcon": "/learn/img/switch.svg",
@@ -307,6 +324,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/switch/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Switch.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-switch--docs"
             },
             {
                 "lightIcon": "/learn/img/text.svg",
@@ -316,6 +334,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/text/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Text.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-text--docs"
             },
             {
                 "lightIcon": "/learn/img/textArea.svg",
@@ -325,6 +344,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/textarea/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Textarea.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-textarea--docs"
             },
             {
                 "lightIcon": "/learn/img/time.svg",
@@ -334,6 +354,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/date-time-datetime/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Time.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-time--docs"
             },
             {
                 "lightIcon": "/learn/img/toggle.svg",
@@ -343,6 +364,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/form-widgets/toggle/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Toggle.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/form-toggle--docs"
             }
         ]
     },
@@ -454,6 +476,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/basic/search/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Search.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-search--docs"
             },
             {
                 "lightIcon": "/learn/img/spinner.svg",
@@ -463,6 +486,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/basic/spinner/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Spinner.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-spinner--docs"
             },
             {
                 "lightIcon": "/learn/img/tree.svg",
@@ -481,6 +505,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/basic/video",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Video.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-video--docs"
             }
         ]
     },
@@ -496,6 +521,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "",
                 "api": "",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/charts-linechart--docs"
             },
             {
                 "lightIcon": "/learn/img/column.svg",
@@ -505,6 +531,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "",
                 "api": "",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/charts-columnschart--docs"
             },
             {
                 "lightIcon": "/learn/img/area.svg",
@@ -514,6 +541,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "",
                 "api": "",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/charts-areachart--docs"
             },
             {
                 "lightIcon": "/learn/img/pie.svg",
@@ -523,6 +551,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "",
                 "api": "",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/charts-piechart--docs"
             },
             {
                 "lightIcon": "/learn/img/bar.svg",
@@ -532,6 +561,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "",
                 "api": "",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/charts-barchart--docs"
             },
             {
                 "lightIcon": "/learn/img/cumulative.svg",
@@ -550,6 +580,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "",
                 "api": "",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/charts-donutchart--docs"
             },
             {
                 "lightIcon": "/learn/img/bubble.svg",
@@ -559,6 +590,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "",
                 "api": "",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/charts-bubblechart--docs"
             }
         ]
     },
@@ -583,6 +615,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/navigation/dropdown-menu/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Menu.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/navigation-menu--docs"
             },
             {
                 "lightIcon": "/learn/img/nav.svg",
@@ -601,6 +634,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/navigation/nav-bar/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Navbar.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/navigation-navbar--docs"
             },
             {
                 "lightIcon": "/learn/img/popover.svg",
@@ -610,6 +644,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/navigation/popover/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Popover.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/navigation-popover--docs"
             }
         ]
     },
@@ -625,6 +660,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/advanced/carousel/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Carousel.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/advanced-carousel--docs"
             },
             {
                 "lightIcon": "/learn/img/login.svg",
@@ -634,6 +670,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/advanced/login/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Login.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/advanced-login--docs"
             },
             {
                 "lightIcon": "/learn/img/marquee.svg",
@@ -658,6 +695,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/modal-windows-dialogs/#alert-dialog",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Alertdialog.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/dialogs-alert--docs"
             },
             {
                 "lightIcon": "/learn/img/confirm.svg",
@@ -667,6 +705,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/modal-windows-dialogs/#confirm-dialog",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Confirmdialog.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/dialogs-confirm--docs"
             },
             {
                 "lightIcon": "/learn/img/design.svg",
@@ -676,6 +715,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/modal-windows-dialogs/#design-dialog",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Designdialog.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/dialogs-design--docs"
             },
             {
                 "lightIcon": "/learn/img/iframe_1.svg",
@@ -832,6 +872,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "overview": "/learn/app-development/widgets/mobile-widgets/barcode-scanner/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Barcodescanner.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/device-barcodescanner--docs"
             },
             {
                 "lightIcon": "/learn/img/camera.svg",
@@ -840,7 +881,8 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Camera can be used to access the device camera for taking pictures and videos. ",
                 "overview": "/learn/app-development/widgets/mobile-widgets/camera/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Camera.html",
-                "supportedPlatforms": ["web", "mobile"]
+                "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/device-camera--docs"
             }
         ]
     }
