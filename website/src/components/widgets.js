@@ -102,6 +102,16 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-gridlayout--docs"
             },
             {
+                "lightIcon": "/learn/img/grid.svg",
+                "darkIcon": "/learn/img/gridDark.svg",
+                "label": "Linear Layout",
+                "body": " Linear Layout is a layout that arranges its children in a single column or row, either vertically or horizontally. ",
+                "overview": "/learn/app-development/widgets/container/flex-layout",
+                "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LinearLayout.html",
+                "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-linearlayout--docs"
+            },
+            {
                 "lightIcon": "/learn/img/panel.svg",
                 "darkIcon": "/learn/img/panelDark.svg",
                 "label": "Panel",
@@ -430,6 +440,16 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-label--docs"
             },
             {
+                "lightIcon": "/learn/img/label.svg",
+                "darkIcon": "/learn/img/labelDark.svg",
+                "label": "Lottie",
+                "body": "Lottie is a widget to display animations in the project.",
+                "overview": "/learn/app-development/widgets/basic/lottie/",
+                "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Lottie.html",
+                "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-lottie--docs"
+            },
+            {
                 "lightIcon": "/learn/img/message.svg",
                 "darkIcon": "/learn/img/messageDark.svg",
                 "label": " Message ",
@@ -458,6 +478,16 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/ProgressBar.html",
                 "supportedPlatforms": ["web", "mobile"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/story/basic-progressbar--basic"
+            },
+            {
+                "lightIcon": "/learn/img/progressBar.svg",
+                "darkIcon": "/learn/img/progressBarDark.svg",
+                "label": "Progress Circle",
+                "body": " Progress Circle is an actual indicator of activity progress with time/percentage. ",
+                "overview": "/learn/app-development/widgets/basic/progress-circle/",
+                "api": "",
+                "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-progresscircle--docs"
             },
             {
                 "lightIcon": "/learn/img/richTextEditor.svg",
@@ -489,6 +519,16 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-spinner--docs"
             },
             {
+                "lightIcon": "/learn/img/spinner.svg",
+                "darkIcon": "/learn/img/spinnerDark.svg",
+                "label": " Tooltip",
+                "body": " Tooltip is a widget to display a message when the user hovers over an element. ",
+                "overview": "",
+                "api": "",
+                "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-tooltip--docs"
+            },
+            {
                 "lightIcon": "/learn/img/tree.svg",
                 "darkIcon": "/learn/img/treeDark.svg",
                 "label": " Tree",
@@ -506,6 +546,16 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Video.html",
                 "supportedPlatforms": ["web", "mobile"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-video--docs"
+            },
+            {
+                "lightIcon": "/learn/img/video.svg",
+                "darkIcon": "/learn/img/videoDark.svg",
+                "label": "Webview",
+                "body": " Webview is a widget to display a web page content in a page. ",
+                "overview": "",
+                "api": "",
+                "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-webview--docs"
             }
         ]
     },
