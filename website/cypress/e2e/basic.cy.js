@@ -24,7 +24,7 @@ describe("Top Navigation in web & mobile", function () {
       .end();
 
 
-    var navElements = ["Get Started", "Widgets", "How-to", "Blog", "Academy", "Releases", "Schedule Demo"];
+    var navElements = ["Web", "Mobile", "Blog", "Releases", "Academy", "Schedule Demo"];
     navElements.forEach(function (navItem) {
       cy.get(selectors.desktopNavElements)
         .contains(navItem)
@@ -38,7 +38,7 @@ describe("Top Navigation in web & mobile", function () {
   it("Verifies that only Docs, Search is visible in the navbar in mobile", function () {
     cy.viewport("iphone-6");
 
-    var hiddenNavElements = ["Get Started", "Widgets", "How-to", "Blog", "Academy", "Releases", "Schedule Demo"];
+    var hiddenNavElements = ["Web", "Mobile", "Blog", "Releases", "Academy", "Schedule Demo"];
     hiddenNavElements.forEach(function (navItem) {
       cy.get(selectors.desktopNavElements)
         .contains(navItem)

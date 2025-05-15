@@ -18,8 +18,8 @@ export default class Header extends React.Component {
                             </div>
                             <span className="navbar__title text--truncate">WaveMaker Docs</span>
                         </a>
-                        <a className="navbar__item navbar__link" href="/learn/docs/documentation-reference">Guide</a>
-                        <a className="navbar__item navbar__link" href="/learn/docs/app-development/widgets/widget-library">Widgets</a>
+                        <a className="navbar__item navbar__link" href="/learn/docs/documentation-reference">Web</a>
+                        <a className="navbar__item navbar__link" href="/learn/react-native/react-native-overview/">Mobile</a>
                     </div>
                     <div className='navbar__items navbar__items--right'>
                         <a className="navbar__item navbar__link" href="/learn/docs/wavemaker-release-notes">Releases</a>
