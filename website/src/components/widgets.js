@@ -7,25 +7,14 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
         "value": "dataWidgets",
         "content": [
             {
-                "lightIcon": "/learn/img/cards.svg",
-                "darkIcon": "/learn/img/cardsDark.svg",
-                "label": "Cards",
-                "body": "Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area. ",
-                "overview": "/learn/app-development/widgets/datalive/cards/",
-                "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html",
-                "supportedPlatforms": ["web", "mobile"],
-                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/data-card--docs"
-            },
-            {
                 "lightIcon": "/learn/img/datatable.svg",
                 "darkIcon": "/learn/img/datatableDark.svg",
                 "label": "Data Table",
                 "body": " Data Table is a widget that presents a tabular view of data and allows actions. ",
                 "overview": "/learn/app-development/widgets/datalive/data-table/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveTable.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
-
             {
                 "lightIcon": "/learn/img/form.svg",
                 "darkIcon": "/learn/img/formDark.svg",
@@ -47,13 +36,14 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/data-list--docs"
             },
             {
-                "lightIcon": "/learn/img/livefilter.svg",
-                "darkIcon": "/learn/img/livefilterDark.svg",
-                "label": "Live Filter",
-                "body": " Live Filter is a widget that allows user to filter the database results, usually used in combination with List or Data Table to display the filtered results ",
-                "overview": "/learn/app-development/widgets/datalive/live-filter/",
-                "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveFilter.html",
+                "lightIcon": "/learn/img/cards.svg",
+                "darkIcon": "/learn/img/cardsDark.svg",
+                "label": "Cards",
+                "body": "Cards is a single unit of content or functionality, presented in a concise visual package, to easily update, maintain, and personalize content area. ",
+                "overview": "/learn/app-development/widgets/datalive/cards/",
+                "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Card.html",
                 "supportedPlatforms": ["web", "mobile"],
+                "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/data-card--docs"
             },
             {
                 "lightIcon": "/learn/img/liveform.svg",
@@ -64,6 +54,15 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveForm.html",
                 "supportedPlatforms": ["web", "mobile"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/data-liveform--docs"
+            },
+            {
+                "lightIcon": "/learn/img/livefilter.svg",
+                "darkIcon": "/learn/img/livefilterDark.svg",
+                "label": "Live Filter",
+                "body": " Live Filter is a widget that allows user to filter the database results, usually used in combination with List or Data Table to display the filtered results ",
+                "overview": "/learn/app-development/widgets/datalive/live-filter/",
+                "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LiveFilter.html",
+                "supportedPlatforms": ["web"],
             }
         ]
     },
@@ -104,11 +103,11 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
             {
                 "lightIcon": "/learn/img/grid.svg",
                 "darkIcon": "/learn/img/gridDark.svg",
-                "label": "Linear Layout",
-                "body": " Linear Layout is a layout that arranges its children in a single column or row, either vertically or horizontally. ",
+                "label": "Flex Layout",
+                "body": " Flex Layout is a layout that arranges its children in a single column or row, either vertically or horizontally. ",
                 "overview": "/learn/app-development/widgets/container/flex-layout",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/LinearLayout.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["mobile"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/containers-linearlayout--docs"
             },
             {
@@ -224,7 +223,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Color Picker widget is to select the color and translate to a hex value. ",
                 "overview": "/learn/app-development/widgets/form-widgets/color-picker/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/ColorPicker.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/currency.svg",
@@ -408,7 +407,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " HTML is a widget to display HTML content or to render the text content using HTML. ",
                 "overview": "/learn/app-development/widgets/datalive/form/html/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Html.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/icon.svg",
@@ -427,7 +426,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Iframe is a widget to display a web page content in a separate frame, without affecting the current page content or styles. ",
                 "overview": "/learn/app-development/widgets/datalive/form/iframe/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Iframe.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/label.svg",
@@ -446,7 +445,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": "Lottie is a widget to display animations in the project.",
                 "overview": "/learn/app-development/widgets/basic/lottie/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Lottie.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["mobile"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-lottie--docs"
             },
             {
@@ -496,7 +495,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Richtext Editor is an input control for formatted text content, optionally including media (WYSIWYG). ",
                 "overview": "/learn/app-development/widgets/basic/richtext-editor/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/RichTextEditor.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/search.svg",
@@ -525,7 +524,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Tooltip is a widget to display a message when the user hovers over an element. ",
                 "overview": "",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": [],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-tooltip--docs"
             },
             {
@@ -535,7 +534,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Tree widget can be used to display data in a hierarchical format. ",
                 "overview": "/learn/app-development/widgets/basic/tree/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Tree.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/video.svg",
@@ -554,7 +553,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Webview is a widget to display a web page content in a page. ",
                 "overview": "",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["mobile"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/basic-webview--docs"
             }
         ]
@@ -620,7 +619,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": "  Cumulative Line is a line chart displays information as a series of data points, each data point is a cumulative sum of the data points of the preceding series. ",
                 "overview": "",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/donut.svg",
@@ -655,7 +654,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Breadcrumb is an indicator or nav link to the current page\"s location within the app\"s hierarchy. ",
                 "overview": "/learn/app-development/widgets/navigation/breadcrumb/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Breadcrumb.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/dropdownMenu.svg",
@@ -683,7 +682,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Nav Bar is a grouping of nav widgets for navigation capabilities. ",
                 "overview": "/learn/app-development/widgets/navigation/nav-bar/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Navbar.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/navigation-navbar--docs"
             },
             {
@@ -729,7 +728,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Marquee is a container to keep scrolling content. The scrolling can be in horizontal or in the vertical direction. ",
                 "overview": "/learn/app-development/widgets/advanced/marquee/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Marquee.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             }
         ]
     },
@@ -774,7 +773,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Iframe Dialog is a dialog box that loads an external webpage. ",
                 "overview": "/learn/app-development/widgets/modal-windows-dialogs/#login-dialog",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/IFramedialog.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/page.svg",
@@ -783,7 +782,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Page Dialog is a dialog box that loads the partial page content. ",
                 "overview": "/learn/app-development/widgets/modal-windows-dialogs/#page-dialog",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Pagedialog.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/login-green.svg",
@@ -792,7 +791,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Login Dialog is a dialog box that allows you to customize the login dialog. ",
                 "overview": "/learn/app-development/widgets/modal-windows-dialogs/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Logindialog.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             }
         ]
     },
@@ -807,7 +806,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " The YouTube prefab connects with YouTube and displays a video on the web page. ",
                 "overview": "/learn/app-development/widgets/prefab/youtube/",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/googleMaps.svg",
@@ -816,7 +815,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " The Googlemaps prefab connects with Google Maps and displays the map on your page. ",
                 "overview": "/learn/app-development/widgets/prefab/googlemaps/",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/googleMaps_1.svg",
@@ -825,7 +824,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " This Prefab is no longer available from version 10 ",
                 "overview": "",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/button.svg",
@@ -834,7 +833,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " QRCode prefab that ships with WaveMaker can be used to add any text or url to your app in the QRCode format. ",
                 "overview": "/learn/app-development/widgets/prefab/qrcode/",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["web"],
             },
             {
                 "lightIcon": "/learn/img/button.svg",
@@ -843,7 +842,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": "",
                 "overview": "",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": [],
             },
             {
                 "lightIcon": "/learn/img/box.svg",
@@ -852,7 +851,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Use this Prefab to enable user authorization using their Box credentials. ",
                 "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/box/",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": [],
             },
             {
                 "lightIcon": "/learn/img/facebook.svg",
@@ -861,7 +860,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Use this Prefab to enable user authorization using their FaceBook credentials. ",
                 "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/facebook/",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": [],
             },
             {
                 "lightIcon": "/learn/img/button.svg",
@@ -870,7 +869,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Use this Prefab to enable user authorization using their Google credentials. ",
                 "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/google/",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": [],
             },
             {
                 "lightIcon": "/learn/img/instagram.svg",
@@ -879,7 +878,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Use this Prefab to enable user authorization using their Instagram credentials. ",
                 "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/instagram/",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": [],
             },
             {
                 "lightIcon": "/learn/img/linkedin.svg",
@@ -888,7 +887,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Use this Prefab to enable user authorization using their LinkedIn credentials. ",
                 "overview": "/learn/app-development/widgets/prefab/oauth-prefabs/linkedin/",
                 "api": "",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": [],
             }
         ]
     },
@@ -903,7 +902,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Media List displays a list of pictures. The media can be displayed in a single-row mode or grid mode and can be opened to full screen by touching the media. ",
                 "overview": "/learn/app-development/widgets/mobile-widgets/media-list/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/MediaList.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": [],
             },
             {
                 "lightIcon": "/learn/img/segmentedControl.svg",
@@ -912,7 +911,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Segmented Control group of buttons to toggle Segmented Content containing the page content. ",
                 "overview": "/learn/app-development/widgets/mobile-widgets/segmented-control/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/SegmentedControl.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": [],
             },
             {
                 "lightIcon": "/learn/img/barcodeScanner.svg",
@@ -921,7 +920,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Barcode scanner can be used for scanning barcode. ",
                 "overview": "/learn/app-development/widgets/mobile-widgets/barcode-scanner/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Barcodescanner.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["mobile"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/device-barcodescanner--docs"
             },
             {
@@ -931,7 +930,7 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "body": " Camera can be used to access the device camera for taking pictures and videos. ",
                 "overview": "/learn/app-development/widgets/mobile-widgets/camera/",
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Camera.html",
-                "supportedPlatforms": ["web", "mobile"],
+                "supportedPlatforms": ["mobile"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/device-camera--docs"
             }
         ]
@@ -954,10 +953,10 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
 
     if (filteredContent?.length) {
       data.push(
-        <>
-          <h2 className="widget-header" key={widget.value}>{widget.tab}</h2>
+        <React.Fragment key={widget.value}>
+          <h2 className="widget-header">{widget.tab}</h2>
           <Widgets content={filteredContent} links={links} />
-        </>
+        </React.Fragment>
       );
     }
   });
@@ -973,7 +972,9 @@ const Widgets = (props) => {
       <div className="col padding-horiz-sm" key={ind}>
         <div className="card-content">
           <div className="card-header">
-            <img src={colorMode != "dark" ? props.content[ind].lightIcon : props.content[ind].darkIcon} /><label>{props.content[ind].label}</label>
+          <a href={props.content[ind].overview} style={{display: 'flex', alignItems: 'center', flexDirection: 'row',  textDecoration: 'none'}}>
+            <img src={colorMode != "dark" ? props.content[ind].lightIcon : props.content[ind].darkIcon} /><label style={{cursor: 'pointer'}}>{props.content[ind].label}</label>
+          </a>
           <div style={{alignSelf: 'center', marginLeft: 'auto'}}>
           {props.content[ind]?.web && <img src={'/learn/img/webIcon.svg'} alt="Supports Web App" title="Supports Web App" style={{height:18, width:18, marginRight:4}}/>}
           {props.content[ind]?.mobile && <img src={'/learn/img/mobileIcon.svg'} alt="Supports Mobile App" title="Supports Mobile App" style={{height:18, width:18}}/>}
@@ -981,9 +982,8 @@ const Widgets = (props) => {
           </div>
           <div className="card-body">{props.content[ind].body}</div>
           <div className="card-footer card_links">
-            {props.links.showMobileStoryBookLink && props.content[ind]?.mobileStoryBook && <><a href={props.content[ind].mobileStoryBook} target='_blank'>Playground,</a>&nbsp;&nbsp;</>}
-            {props.links.showApiLink && props.content[ind]?.api && <><a href={props.content[ind].api}>API Docs,</a>&nbsp;&nbsp;</>}
-            <a href={props.content[ind].overview}>Overview</a>
+            {props.links.showMobileStoryBookLink && props.content[ind]?.mobileStoryBook && <><a href={props.content[ind].mobileStoryBook} target='_blank' style={{display:'flex', justifyContent:"flex-end", alignItems:"center"}}><img style={{height:18, width:18, marginRight:4}} src={'/learn/img/icon-storybook-default.svg'} alt={`Storybook link for ${props.content[ind].label} widget`} title={`Storybook link for ${props.content[ind].label} widget`} />Playground</a>&nbsp;&nbsp;</>}
+            {props.links.showApiLink && props.content[ind]?.api && <a href={props.content[ind].api}>API Docs</a>}
           </div>
         </div>
       </div>
