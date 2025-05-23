@@ -110,7 +110,7 @@ export default class Index extends React.Component {
                             </div>
                         </div>
                         {this.state.displayInfoFooter && <div className='banner-footer'>
-                            <span className='banner-footer-msg'><img src='/learn/img/speaker.svg' />WaveMaker released an update v11.11.1. See what's new.</span>
+                            <span className='banner-footer-msg'><img src='/learn/img/speaker.svg' />WaveMaker released an update v11.11.2. See what's new.</span>
                             <a className='banner-footer-action' href='/learn/wavemaker-release-notes/v11-11-1'>Read more</a>
                             <a className="banner-footer-closeAction" href="javascript:void(0)" onClick={() => { this.setState({ displayInfoFooter: false }); }}><img src='/learn/img/closeIcon-black.svg' /></a>
                         </div>}
