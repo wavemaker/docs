@@ -94,3 +94,4 @@ Frequently asked questions cover everything you need to know about WaveMaker so 
 ## Documentation Help
 
 #### [31. Contribute to WaveMaker Docs](/learn/help/contribution-guide)
+#### [32. Document Release Notes](/learn/help/release-notes-guidelines)
