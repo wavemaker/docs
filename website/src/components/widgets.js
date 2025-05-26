@@ -972,7 +972,7 @@ const Widgets = (props) => {
       <div className="col padding-horiz-sm" key={ind}>
         <div className="card-content">
           <div className="card-header">
-          <a href={props.content[ind].overview} style={{display: 'flex', alignItems: 'center', flexDirection: 'row',  textDecoration: 'none'}}>
+          <a href={props.content[ind].overview} style={{display: 'flex', alignItems: 'center', flexDirection: 'row'}}>
             <img src={colorMode != "dark" ? props.content[ind].lightIcon : props.content[ind].darkIcon} /><label style={{cursor: 'pointer'}}>{props.content[ind].label}</label>
           </a>
           <div style={{alignSelf: 'center', marginLeft: 'auto'}}>
@@ -982,8 +982,8 @@ const Widgets = (props) => {
           </div>
           <div className="card-body">{props.content[ind].body}</div>
           <div className="card-footer card_links">
-            {props.links.showMobileStoryBookLink && props.content[ind]?.mobileStoryBook && <><a href={props.content[ind].mobileStoryBook} target='_blank' style={{display:'flex', justifyContent:"flex-end", alignItems:"center"}}><img style={{height:18, width:18, marginRight:4}} src={'/learn/img/icon-storybook-default.svg'} alt={`Storybook link for ${props.content[ind].label} widget`} title={`Storybook link for ${props.content[ind].label} widget`} />Playground</a>&nbsp;&nbsp;</>}
-            {props.links.showApiLink && props.content[ind]?.api && <a href={props.content[ind].api}>API Docs</a>}
+            {props.links.showMobileStoryBookLink && props.content[ind]?.mobileStoryBook && <a href={props.content[ind].mobileStoryBook} target='_blank' style={{display:'flex', justifyContent:"flex-end", alignItems:"center", color:"var(--ifm-heading-color)"}}><img style={{height:18, width:18, marginRight:4}} src={'/learn/img/icon-storybook-default.svg'} alt={`Storybook link for ${props.content[ind].label} widget`} title={`Storybook link for ${props.content[ind].label} widget`} />Playground</a>}
+            {props.links.showApiLink && props.content[ind]?.api && <>&nbsp;&nbsp;<a href={props.content[ind].api}>API Docs</a></>}
           </div>
         </div>
       </div>
