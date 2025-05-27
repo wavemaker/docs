@@ -15,13 +15,27 @@ The main **properties** include
 - **Hour Step and Minute Step** defines the time picker UI for the time and datetime widgets.
 - For date and datetime widgets, **Min Date, Max Date, Exclude Days and Dates** can be set. In this case, the date picker will not have the invalid dates available for selection.
 
-The following tables show the behavior in various scenarios: _Date Patterns_: [![](/learn/assets/date_patterns.png)](/learn/assets/date_patterns.png)
+:::info
+WaveMaker supports only Angular DatePipe formats for displaying date/time/date time patterns. For more details, please refer to the [Angular documentation](https://angular.dev/api/common/DatePipe#custom-format-options).
+:::
 
-_Time Patterns_: [![](/learn/assets/time_patterns.png)](/learn/assets/time_patterns.png)
+The following tables show the behavior in various scenarios: 
 
-_Datetime Patterns_: [![](/learn/assets/datetime_patterns.png)](/learn/assets/datetime_patterns.png)
+_Date Patterns_: 
 
-**Note**: For Time and Datetime widgets the time picker UI based on the time pattern given. For example, if the pattern is ‘hh:mm:ss a’, seconds and AM/PM pattern is displayed in time picker. If the pattern is ‘HH:mm’, 24Hr format is shown. Seconds and AM/PM are not displayed in time picker.
+[![](/learn/assets/date_patterns.png)](/learn/assets/date_patterns.png)
+
+_Time Patterns_: 
+
+[![](/learn/assets/time_patterns.png)](/learn/assets/time_patterns.png)
+
+_Datetime Patterns_: 
+
+[![](/learn/assets/datetime_patterns.png)](/learn/assets/datetime_patterns.png)
+
+:::note
+For Time and Datetime widgets the time picker UI based on the time pattern given. For example, if the pattern is ‘hh:mm:ss a’, seconds and AM/PM pattern is displayed in time picker. If the pattern is ‘HH:mm’, 24Hr format is shown. Seconds and AM/PM are not displayed in time picker.
+:::
 
 ## Properties
 
