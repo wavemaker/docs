@@ -6,9 +6,11 @@ sidebar_label: "Guidelines To Create WM Release Notes"
 
 ---
 
+We have two types of release notes, WaveMaker Online (WMO) and WaveMaker Enterprise (WME).
+
 ## WMO Release Notes
 
-WaveMaker Online (WMO) release notes mainly consist of five sections, which may vary from release to release:
+WMO release notes mainly consist of five sections, which may vary from release to release:
 
 - New Features
 - Migrations
@@ -166,3 +168,17 @@ For the post-release, remove the latest suffix.
 
 Once documented, share the pre-release and post-release documents with the respective team leads for approval in Git. After receiving approval, merge the release notes. 
 
+## WME Release Notes
+
+WME release notes are specifically for enterprise users. To create the WME release notes, follow the steps below:
+
+1. Create a new branch named wme-release-notes-11.x.x.
+2. Go to **enterprise-release-notes.md** and, under Release History, add a new table or a new row for the latest version.
+3. Add the version name, the overview from the WMO release notes corresponding to the respective WME version, and the date of the WME upgrade. Add the suffix latest and style the color as red next to the release version.
+
+:::note
+Remove the latest suffix from the previous version.
+:::
+
+4. Update the tech stack to match the latest version mentioned in the WMO release notes.
+5. Get it approved and merged.
