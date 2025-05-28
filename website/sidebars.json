@@ -2089,7 +2089,8 @@
 					"type": "category",
 					"label": "Documentation Help",
 					"items": [
-						"help/contribution-guide"
+						"help/contribution-guide",
+						"help/release-notes-guidelines"
 					]
 				}
 			]
