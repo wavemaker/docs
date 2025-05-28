@@ -1368,7 +1368,14 @@
 					]
 				},
 				"app-development/widgets/form-widgets/color-picker",
-				"app-development/widgets/form-widgets/slider",
+				{
+					"type": "category",
+					"label": "Slider",
+					"items": [
+						"app-development/widgets/form-widgets/slider",
+						"how-tos/customize-slider"
+					]
+				},
 				{
 					"type": "category",
 					"label": "Rating",
