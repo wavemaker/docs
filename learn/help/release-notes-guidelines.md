@@ -35,13 +35,11 @@ To create the WMO Release notes, follow the below steps
 
 ### 1. Reach Out to Leads
 
-Ensure that the tickets are assigned to you in **Basecamp**. To get the bugs, ehnacements, and features assigned to you reach out to,
+Ensure that the tickets are assigned to you in **Basecamp**. To get the bugs, ehnacements, and features assigned to you reach out to below teams.
 
-- Krishna - for backend
-- Bhargavi - for UI
-- Naresh & Bandhavya - for Studio and Frontend
-- Sunil - for React Native
-- Uday Shankar - for Tech Stack Upgrades
+- Backend and Tech Stack Upgrades
+- Studio and Frontend
+- React Native
 
 ### 2. Check for Information in Basecamp
 
@@ -59,14 +57,14 @@ For Feature:
 Videos should be created using [Guidde](https://app.guidde.com/home).
 :::
 
-For Migration:
+**For Migration:**
 
 - What is the migration?
 - Why are we migrating?
 - Impact of the migration (optional)
 - Relevant images or videos (optional)
 
-For Enhancement:
+**For Enhancement:**
 
 - What is the enhancement?
 - Why do we need the enhancement?
@@ -74,7 +72,7 @@ For Enhancement:
 - Impact of the enhancement (optional)
 - Relevant images or videos (optional)
 
-For Bug:
+**For Bug:**
 
 - What is the bug?
 - How did we fix? (optional - only if the fix is not internal)
@@ -85,83 +83,85 @@ For Bug:
 
 1. Create a new branch under master branch using Github desktop with the name **release-notes-11.x.x**.
 2. Navigate to **docs** -> **learn** -> **wavemaker-release-notes**, create a new file for release notes with name **v11-x-x**.
+
 :::note
 Adhere to the naming convention mentioned above.
 :::
 
-#### Pre-release Document
+#### Types of Release Notes
 
+We create two types of release notes,
 
-#### Post-release Document
+- **Pre-release notes**: This is published on the previous wednesday of the release. This makes sure that the users are not taken by surprise and are prepared in advance for any feature, migration, enhancement, and tech stack upgrade.
+- **Post-release notes**: This goes live along with the version upgrade.
 
+Points to keep in mind when documenting Pre-release and Post-release documents.
 
-WMO release notes
+#### Pre-Release Document
 
-new features
-- web
-studio
--rN
+- The tone used in the overview of this document is always in future tense. For example, the overview should start - "This release will include".
+- The sidebar_label should have **upcoming** suffix. For example, **v11.11.1 - upcoming**.
 
-Migrations
-- web
--rn
+:::note
+Adhere to the naming convention mentioned above.
+:::
 
-Enhancements
-- web
--studio
-- rn
+#### Post-Release Document
 
-Bugs
-- web
--studio
-- rn
+- The tone used in the overview of this document is always in present tense. For example, the overview should start - "This release includes".
+- The sidebar_label should have **latest** suffix. For example, **v11.11.1 - latest**.
 
-Tech stack
+:::note
+Adhere to the naming convention mentioned above.
+:::
 
-Ping in the chat to assign you the items that need to go in release notes
-Check if it has dexcription, if available then check for clarity and all the required info. If not available, comment in basecamp to add.
-Create a new branch- named - release-x-x-x
-Create file- v11.x.x
-the pre release doc will have the tag in the sidebar label as 'upcoming' - posted on the previous week's Wednesday.
-- tone should be - it will include in the overview.
-the release doc will have the tag - 'latest'
-- tone should be changed to it includes
+![](/learn/assets/upcoming-latest-doc.png)
 
-Along with pre release doc 4 other docs that go are:
+### 4. Update the necessary documents.
+
+Along with the release notes, there are four other documents that are updated with every release.
+
+- wavemaker-release-notes.md
 - sidebar.json
 - index.json
 - docusaurus.json
-- wavemaker-release-notes.md
---- Add the overview
---- Upgraded tech stack
+- release notes for previous version
 
-In final release along with current release doc the previous release doc is also changed.
-The change is - 'latest' from sidebar label in the title is removed.
+**wavemaker-release-notes.md**:
 
-Wednesday the pre release doc should be published, Wednesday by morning review has to be done. 
+This is the overview document for all the releases. With every release, the below segments are updated.
 
-for pre release doc- items till Monday
-final- items till Wednesday
+- Under Release History, add a new table or a new row to the existing table with the overview of the respective release and its release date
+- For pre-release document, add the suffix as **upcoming and style color as green**. And for post-release document, add the the suffix **latest and style color as red**.
 
-People to reach out
+![](/learn/assets/wmo-pre-post-release.png)
 
-Krishna- backend
-Bhargavi- frontend
-Naresh & bandhavya- frontend
-Sunil- RN
+- Update the Tech Stack with the latest version details and update the **Last Updated** with the release version with latest tech stack.
 
-Venu - to make above people take better action
+**sidebar.json**:
 
-Swetha- final review and merge.
+Add the latest release in the sidebar.json for it to display in the left bar for navigation.
 
-share the preview link and PR link in the docs review group for review.
+![](/learn/assets/latest-doc-sidebar.png)
 
-write summary in caps
+**index.json**:
 
-WME release notes
+Update the latest version of the release and its path. This message is broadcasted in the homepage of documentation and users can directly navigate to the release document from this message.
+
+![](/learn/assets/release-notes-index.png)
+
+**docusaurus.json**:
+
+Update the latest version of the release as it is displayed as the lasted version in the documentation site.
+
+![](/learn/assets/release-notes-docusaurus.png)
+
+**release notes for previous version**:
+
+For the post-release, remove the suffix as latest.
 
 
+### 5. Get Approval to Merge
 
-
-
+Once documented, share the pre-release and post-release documents with the repective team leads to get the approval in Git. After the approval, get the release notes merged. 
 
