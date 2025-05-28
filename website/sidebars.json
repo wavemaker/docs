@@ -1418,7 +1418,14 @@
 						"how-tos/adding-custom-fonts-richtext-editor"
 					]
 				},
-				"app-development/widgets/basic/progress-bar",
+				{
+					"type": "category",
+					"label": "Progress Bar",
+					"items": [
+						"app-development/widgets/basic/progress-bar",
+						"how-tos/customize-progress-bar"
+					]
+				},
 				{
 					"type": "category",
 					"label": "Progress Circle",
