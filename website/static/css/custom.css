@@ -1002,6 +1002,15 @@ html[data-theme="dark"] .extension .link img{
 
 /* End - 404 page styles */
 
+/* Styles for docs */
+
+.doc-responsive-image-big {
+    height: auto;
+    max-width: 100%;
+}
+
+/* End - Styles for docs */
+
 @media only screen and (min-width: 736px) and (max-width: 1152px) {
     .banner {
         /* margin: 20px 32px 25px; */
@@ -1459,6 +1468,9 @@ body.search-active .DocSearch-Modal .DocSearch-Dropdown{
     .DocSearch-Modal {
             margin-top: 0 !important;
         }
+    .doc-responsive-image-big {
+        max-width: 70%;
+    }
 }
 
 

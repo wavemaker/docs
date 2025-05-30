@@ -1,6 +1,7 @@
 {
 	"docs": [
 		"documentation-reference",
+		"app-development/widgets/widget-library",
 		{
 			"type": "category",
 			"label": "Get started",
@@ -439,8 +440,211 @@
 					]
 				}
 			]
-		}
-	],
+		},
+		{
+			"type": "category",
+			"label": "How-tos",
+			"items": 
+		[
+			"howtos-documents",
+			{
+				"type": "category",
+				"label": "App solution",
+				"items": [
+					"how-tos/creating-registration-page",
+					"how-tos/support-password-encryption",
+					"how-tos/error-handling-wavemaker-app",
+					"how-tos/prevent-user-leaving-page-unsaved-changes",
+					"how-tos/microfrontends-iframe",
+					"how-tos/building-pwa-app"
+				]
+			},
+			{
+				"type": "category",
+				"label": "UI Development",
+				"items": [
+					"how-tos/single-page-app",
+					"how-tos/prefab-as-webcomponent",
+					"how-tos/passing-parameters-pages",
+					"how-tos/passing-parameters-partial-page",
+					"how-tos/script-access",
+					"how-tos/use-static-variable-pass-data-pages",
+					"how-tos/customise-login-page",
+					"how-tos/incorporating-additional-icons",
+					"how-tos/displaying-icon-color-based-upon-condition",
+					"how-tos/change-icon-global-spinner",
+					"how-tos/changing-default-favicon",
+					"how-tos/changing-app-logo",
+					"how-tos/changing-page-title",
+					"how-tos/customise-app-style",
+					"how-tos/use-conditional-class-property",
+					"how-tos/use-conditional-style-property",
+					"how-tos/customize-existing-theme",
+					"how-tos/adjust-leftnav-width",
+					"how-tos/customizing-theme",
+					"how-tos/widget-template-layout",
+					"how-tos/wizard-layout",
+					"how-tos/custom-widget-template",
+					"how-tos/using-custom-formatter",
+					"how-tos/using-custom-formatter-for-todate",
+					"how-tos/customize-breakpoints-for-widths-of-show-in-devices",
+					{
+						"type": "category",
+						"label": "Nav & Dropdown",
+						"items": [
+							"how-tos/adjust-leftnav-width",
+							"how-tos/dynamic-menu-based-user-role",
+							"how-tos/restricting-menu-item-display-based-user-role"
+						]
+					}
+				]
+			},
+			{
+				"type": "category",
+				"label": "Localization",
+				"items": [
+					"how-tos/localization-wavemaker-apps",
+					"how-tos/implementing-localization-dropdown-menu",
+					"how-tos/setting-language-date-format",
+					"app-development/widgets/form-widgets/select-locale-usage",
+					"how-tos/localization-error-messages",
+					"how-tos/localization-data-table-column-headings",
+					"how-tos/dynamic-locale-messageselection"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Security",
+				"items": [
+					"how-tos/saml-integration-onelogin",
+					"how-tos/saml-integration-adfs",
+					"how-tos/saml-integration-okta",
+					"how-tos/sso-openid-azure-active-directory",
+					"how-tos/implement-openid-google-provider",
+					"how-tos/implement-openid-okta-provider",
+					"how-tos/implement-openid-auth0-provider",
+					"how-tos/custom-security-using-google-oauth-prefab",
+					"how-tos/multiple-security-provider-configuration",
+					"how-tos/customizing-post-authentication-handlers",
+					"how-tos/add-custom-filters",
+					"how-tos/configuring-content-security-policy",
+					"how-tos/configure-mtls-in-wmapp",
+					"how-tos/switch-security-provider-based-on-profile",
+					"how-tos/configuring-jws-and-opaque-security-providers",
+					"how-tos/passing-id-access-tokens-as-header"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Databases",
+				"items": [
+					"how-tos/queries-dynamic-clause",
+					"how-tos/connect-azure-sql-server",
+					"app-development/services/database-services/download-jdbc-driver-jar",
+					"how-tos/how-to-upload-jdbc-driver",
+					"how-tos/fetch-default-number100-records-database",
+					"how-tos/one-many-relationship",
+					"how-tos/working-with-temporals",
+					"how-tos/configuring-aws-redshiftdb",
+					"how-tos/configuring-sap-hana-clouddb",
+					"how-tos/audit-history-using-crud-listeners",
+					"how-tos/rowlevel-security-using-crud-event-listeners",
+					"how-tos/validations-using-crudListeners",
+					"how-tos/custom-business-logic-using-crud-event-listeners",
+					"how-tos/mysql-connection-using-ssl",
+					"how-tos/switch-mariadb-to-mysql-connector"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Web services",
+				"items": [
+					"how-tos/using-app-environment-properties",
+					"how-tos/consuming-existing-wm-api-into-another-wm-project",
+					"how-tos/dynamic-form",
+					"how-tos/using-post-method-send-data-rest-api",
+					"how-tos/request-response-processing-rest-services",
+					"how-tos/intercept-requests-responses-api-calls-one-place",
+					"how-tos/websocket-usage-chatroom-app",
+					"how-tos/working-api-with-different-pagination-formats",
+					"how-tos/adding-ui-for-api-server-side-pagination"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Java services",
+				"items": [
+					"how-tos/sending-email-using-java-service",
+					"how-tos/implementing-forgot-password-feature-using-java-service",
+					"how-tos/accessing-rest-apis-java-service",
+					"how-tos/scheduling-java-service",
+					"how-tos/synchronizing-java-services-controller",
+					"how-tos/integrating-amazon-cognito-user-authentication",
+					"how-tos/integrating-sample-jasper-report-wavemaker-application",
+					"how-tos/generate-pdf-file-using-jasper-reports",
+					"how-tos/integrating-junit-tests-for-wavemaker-application",
+					"how-tos/pre-post-processing-db-service-apis",
+					"how-tos/accessing-loggedin-user-information-using-a-java-service",
+					"how-tos/camunda-wavemaker-app-integration",
+					"how-tos/azure-file-storage-connector",
+					"how-tos/insert-data-from-excel",
+					"how-tos/aws-s3-connector",
+					"how-tos/twilio-connector",
+					"how-tos/twilio-otp-integration",
+					"how-tos/custom-status-code-error-message-java-service"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Variables",
+				"items": [
+					"how-tos/using-filter-conditions-variable",
+					"how-tos/using-live-variable-apis",
+					"how-tos/using-notification-actions",
+					"how-tos/using-navigation-action",
+					"how-tos/using-variables-queries-procedure",
+					"how-tos/using-service-variable-form",
+					"how-tos/using-filter-criteria-data-live-widgets",
+					"how-tos/using-filter-criteria-database-crud-variable"
+				]
+			},
+			{
+				"type": "category",
+				"label": "JavaScript",
+				"items": [
+					"how-tos/using-javascript-binding",
+					"how-tos/using-javascript-external-url",
+					"how-tos/using-javascript-loop-command",
+					"how-tos/using-function-evaluating-conditions"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Development",
+				"items": [
+					"how-tos/synchronizing-wavemaker-apps-ides-beta",
+					"how-tos/debug-monitor-performance-issues-using-fusion-reactor"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Deployment",
+				"items": [
+					"how-tos/ssl-offloading"
+				]
+			},
+			{
+				"type": "category",
+				"label": "Upgrading Project",
+				"items": [
+					"how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
+					"how-tos/app-migration-wavemaker-9x-10x"
+				]
+			}
+		]
+	}
+	
+],
 	"Connectors": [
 		"connectors/connectors-introduction",
 		"connectors/connectors-architecture",
@@ -666,166 +870,184 @@
 			]
 		}
 	],
+
 	"Mobile": [
-		"app-development/wavemaker-overview/react-native-and-cordova",
+		"react-native/react-native-overview",
+		"react-native/widget-library-mobile",
 		{
-			"type": "category",
-			"label": "React Native",
-			"items": [
-				"react-native/react-native-overview",
-				{
-					"type": "category",
-					"label": "Features",
-					"items": [
-						"react-native/feature-support",
-						"react-native/supported-widgets",
-						"react-native/supported-variables"
-					]
-				},
-				{
-					"type": "category",
-					"label": "App Design",
-					"items": [
-						"react-native/styles",
-						"react-native/custom-icon-fonts",
-						"react-native/accessibility-support-react-native",
-						"react-native/theme",
-						"react-native/progress-loader",
-						"react-native/skeleton-loader",
-						"react-native/animations",
-						"react-native/splash-screen"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Development",
-					"items": [
-						"react-native/custom-widget",
-						"react-native/ssl-pinning"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Test and Debug",
-					"items": [
-						"react-native/test-run",
-						"react-native/generate-web-preview-locally",
-						"react-native/web-preview-debug",
-						"react-native/expo-debug",
-						"react-native/wavepulse",
-						"react-native/flipper",
-						"react-native/web-preview-docker-image",
-						"react-native/appium-support"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Performance Measurement",
-					"items": [
-						"react-native/performance-measurement",
-						"react-native/performance-metrics",
-						"react-native/flipper-performance-plugin",
-						"react-native/flashlight-performance-tool",
-						"react-native/performance-monitor"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Build",
-					"items": [
-						"react-native/export-react-native-zip",
-						"react-native/build-installers",
-						"react-native/mobile-build-manual",
-						"react-native/third-party-expo-plugins",
-						"react-native/custom-widget",
-						"react-native/custom-js-modules"
-					]
-				},
-				{
-					"type": "category",
-					"label": "App Integration",
-					"items": [
-						"react-native/web-view",
-						"react-native/react-native-embed"
-					]
-				},
-				{
-					"type": "category",
-					"label": "How-to",
-					"items": [
-						"react-native/integrating-biometric-authentication",
-						"react-native/disable-device-screencapture",
-						"react-native/detect-rooted-device",
-						"react-native/integrating-secure-store",
-						"react-native/publish-expo-module-and-use-in-wavemaker-project",
-						"react-native/integrating-crashlytics",
-						"react-native/integrating-sentry",
-						"react-native/pdf-preview-and-download",
-						"react-native/right-to-left-support",
-						"react-native/deep-linking",
-						"react-native/shrinking-obfuscating-android-apk-builds",
-						"react-native/push-notification",
-						"react-native/user-idle-timeout",
-						"react-native/share"
-					]
-				}
-			]
+			  "type": "category",
+			  "label": "Development",
+			  "items": [
+				"react-native/supported-widgets",
+				"react-native/supported-variables",
+				"react-native/feature-support",
+				"react-native/custom-widget",
+				"react-native/custom-js-modules",
+				"react-native/third-party-expo-plugins",
+				"react-native/ssl-pinning"
+			  ]
 		},
 		{
-			"type": "category",
-			"label": "Cordova",
-			"items": [
-				"hybrid-mobile/building-hybrid-mobile-apps",
+				"type": "category",
+				"label": "Design and Theming",
+				"items": [
+				  "react-native/styles",
+				  "react-native/theme",
+				  "react-native/custom-icon-fonts",
+				  "react-native/splash-screen",
+				  "react-native/progress-loader",
+				  "react-native/skeleton-loader",
+				  "react-native/animations",
+				  "react-native/accessibility-support-react-native"
+				]
+		},
+		{
+			  "type": "category",
+			  "label": "App Integration",
+			  "items": [
+				"react-native/web-view",
+				"react-native/react-native-embed"
+			  ]
+		},
+		{
+			  "type": "category",
+			  "label": "Testing and Debugging",
+			  "items": [
+				"react-native/test-run",
+				"react-native/appium-support",
+				"react-native/web-preview-debug",
+				"react-native/generate-web-preview-locally",
+				"react-native/web-preview-docker-image",
+				"react-native/expo-debug",
+				"react-native/wavepulse",
+				"react-native/flipper"
+			  ]
+		},
+		{
+				"type": "category",
+				"label": "Build",
+				"items": [
+				  "react-native/build-installers",
+				  "react-native/mobile-build-manual",
+				  "react-native/export-react-native-zip"
+				]
+		},
+		{
+			  "type": "category",
+			  "label": "Performance and Monitoring",
+			  "items": [
+				"react-native/performance-measurement",
+				"react-native/performance-metrics",
+				"react-native/flipper-performance-plugin",
+				"react-native/flashlight-performance-tool",
+				"react-native/performance-monitor"
+			  ]
+		},
+		{
+			  "type": "category",
+			  "label": "How-To Guides",
+			  "items": [
+				"react-native/integrating-biometric-authentication",
+				"react-native/disable-device-screencapture",
+				"react-native/detect-rooted-device",
+				"react-native/integrating-secure-store",
+				"react-native/publish-expo-module-and-use-in-wavemaker-project",
+				"react-native/integrating-crashlytics",
+				"react-native/integrating-sentry",
+				"react-native/pdf-preview-and-download",
+				"react-native/right-to-left-support",
+				"react-native/deep-linking",
+				"react-native/shrinking-obfuscating-android-apk-builds",
+				"react-native/push-notification",
+				"react-native/user-idle-timeout",
+				"react-native/share"
+			  ]
+			
+		},
+		{
+		  "type": "category",
+		  "label": "Cordova (Hybrid Mobile)",
+		  "items": [
+			"hybrid-mobile/first-mobile-app",
+			{
+			  "type": "category",
+			  "label": "Building & Distribution",
+			  "items": [
+				"hybrid-mobile/mobile-build-android",
+				"hybrid-mobile/mobile-build-manual",
+				"hybrid-mobile/mobile-ios-android-distribution-certificates",
+				"hybrid-mobile/export-cordova-zip",
+				"hybrid-mobile/mobile-build-appchef"
+			  ]
+			},
+			{
+			  "type": "category",
+			  "label": "UI and Navigation",
+			  "items": [
+				"hybrid-mobile/mobile-page-concepts",
+				"hybrid-mobile/gesture-support",
+				"hybrid-mobile/mobile-tabbar",
+				"hybrid-mobile/mobile-navbar"
+			  ]
+			},
+			{
+			  "type": "category",
+			  "label": "Device Support and Integrations",
+			  "items": [
 				"hybrid-mobile/native-device-support",
-				"hybrid-mobile/first-mobile-app",
-				{
-					"type": "category",
-					"label": "Mobile Design",
-					"items": [
-						"hybrid-mobile/mobile-page-concepts",
-						"hybrid-mobile/gesture-support",
-						"hybrid-mobile/mobile-tabbar",
-						"hybrid-mobile/mobile-navbar"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Mobile Installer",
-					"items": [
-						"hybrid-mobile/test-run",
-						"hybrid-mobile/debugging-mobile-apps",
-						"hybrid-mobile/testing-hybrid-mobile-apps-using-live-sync",
-						"hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens",
-						"hybrid-mobile/mobile-build-android",
-						"hybrid-mobile/mobile-build-manual",
-						"hybrid-mobile/mobile-ios-android-distribution-certificates",
-						"hybrid-mobile/export-cordova-zip",
-						"hybrid-mobile/mobile-build-manual",
-						"hybrid-mobile/mobile-build-appchef"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Mobile Integrations",
-					"items": [
-						"hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
-						"hybrid-mobile/mobile-integrations-amazon-sns",
-						"hybrid-mobile/use-push-notification-wm-mobile-app",
-						"hybrid-mobile/invoking-web-app-apis-mobile-apps"
-					]
-				},
-				{
-					"type": "category",
-					"label": "Offline Features",
-					"items": [
-						"hybrid-mobile/offline-data-support",
-						"hybrid-mobile/offline-data-support-implementation",
-						"hybrid-mobile/switching-offline-online-mode"
-					]
-				}
-			]
-		}
-	],
+				"hybrid-mobile/mobile-integrations-amazon-mobile-analytics",
+				"hybrid-mobile/mobile-integrations-amazon-sns",
+				"hybrid-mobile/use-push-notification-wm-mobile-app",
+				"hybrid-mobile/invoking-web-app-apis-mobile-apps"
+			  ]
+			},
+			{
+			  "type": "category",
+			  "label": "Testing and Debugging",
+			  "items": [
+				"hybrid-mobile/test-run",
+				"hybrid-mobile/debugging-mobile-apps",
+				"hybrid-mobile/testing-hybrid-mobile-apps-using-live-sync",
+				"hybrid-mobile/testing-hybrid-mobile-apps-using-wavelens"
+			  ]
+			},
+			{
+			  "type": "category",
+			  "label": "Offline Features",
+			  "items": [
+				"hybrid-mobile/offline-data-support",
+				"hybrid-mobile/offline-data-support-implementation",
+				"hybrid-mobile/switching-offline-online-mode"
+			  ]
+			},
+			{
+				"type": "category",
+				"label": "Cordova How-tos",
+				"items": [
+					"how-tos/mobile-notify-new-version-update",
+					"how-tos/setting-swipe-gestures-list-widget",
+					"how-tos/working-pull-refresh",
+					"how-tos/using-search-widget-within-navbar",
+					"app-development/widgets/mobile-widgets/barcode-scanner",
+					{
+						"type": "category",
+						"label": "Mobile UI Design",
+						"items": [
+							"how-tos/splashscreens-icons",
+							"how-tos/using-cordova-plugins",
+							"how-tos/support-for-tablet-view-in-mobile",
+							"how-tos/sliding-leftnav-mobile-app",
+							"how-tos/mobile-app-using-bar-code",
+							"how-tos/custom-date-picker"
+						]
+					}
+				]
+			}
+		  ]
+		},
+		"app-development/wavemaker-overview/react-native-and-cordova"
+	  ],
+
 	"Tutorials": [
 		"tutorials",
 		{
@@ -857,226 +1079,7 @@
 			]
 		}
 	],
-	"How to Docs": [
-		"howtos-documents",
-		{
-			"type": "category",
-			"label": "App solution",
-			"items": [
-				"how-tos/creating-registration-page",
-				"how-tos/support-password-encryption",
-				"how-tos/error-handling-wavemaker-app",
-				"how-tos/prevent-user-leaving-page-unsaved-changes",
-				"how-tos/microfrontends-iframe",
-				"how-tos/building-pwa-app"
-			]
-		},
-		{
-			"type": "category",
-			"label": "UI Development",
-			"items": [
-				"how-tos/single-page-app",
-				"how-tos/prefab-as-webcomponent",
-				"how-tos/passing-parameters-pages",
-				"how-tos/passing-parameters-partial-page",
-				"how-tos/script-access",
-				"how-tos/use-static-variable-pass-data-pages",
-				"how-tos/customise-login-page",
-				"how-tos/incorporating-additional-icons",
-				"how-tos/displaying-icon-color-based-upon-condition",
-				"how-tos/change-icon-global-spinner",
-				"how-tos/changing-default-favicon",
-				"how-tos/changing-app-logo",
-				"how-tos/changing-page-title",
-				"how-tos/customise-app-style",
-				"how-tos/use-conditional-class-property",
-				"how-tos/use-conditional-style-property",
-				"how-tos/customize-existing-theme",
-				"how-tos/adjust-leftnav-width",
-				"how-tos/customizing-theme",
-				"how-tos/widget-template-layout",
-				"how-tos/wizard-layout",
-				"how-tos/custom-widget-template",
-				"how-tos/using-custom-formatter",
-				"how-tos/using-custom-formatter-for-todate",
-				"how-tos/customize-breakpoints-for-widths-of-show-in-devices",
-				{
-					"type": "category",
-					"label": "Nav & Dropdown",
-					"items": [
-						"how-tos/adjust-leftnav-width",
-						"how-tos/dynamic-menu-based-user-role",
-						"how-tos/restricting-menu-item-display-based-user-role"
-					]
-				}
-			]
-		},
-		{
-			"type": "category",
-			"label": "Localization",
-			"items": [
-				"how-tos/localization-wavemaker-apps",
-				"how-tos/implementing-localization-dropdown-menu",
-				"how-tos/setting-language-date-format",
-				"app-development/widgets/form-widgets/select-locale-usage",
-				"how-tos/localization-error-messages",
-				"how-tos/localization-data-table-column-headings",
-				"how-tos/dynamic-locale-messageselection"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Security",
-			"items": [
-				"how-tos/saml-integration-onelogin",
-				"how-tos/saml-integration-adfs",
-				"how-tos/saml-integration-okta",
-				"how-tos/sso-openid-azure-active-directory",
-				"how-tos/implement-openid-google-provider",
-				"how-tos/implement-openid-okta-provider",
-				"how-tos/implement-openid-auth0-provider",
-				"how-tos/custom-security-using-google-oauth-prefab",
-				"how-tos/multiple-security-provider-configuration",
-				"how-tos/customizing-post-authentication-handlers",
-				"how-tos/add-custom-filters",
-				"how-tos/configuring-content-security-policy",
-				"how-tos/configure-mtls-in-wmapp",
-				"how-tos/switch-security-provider-based-on-profile",
-				"how-tos/configuring-jws-and-opaque-security-providers",
-				"how-tos/passing-id-access-tokens-as-header"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Databases",
-			"items": [
-				"how-tos/queries-dynamic-clause",
-				"how-tos/connect-azure-sql-server",
-				"app-development/services/database-services/download-jdbc-driver-jar",
-				"how-tos/how-to-upload-jdbc-driver",
-				"how-tos/fetch-default-number100-records-database",
-				"how-tos/one-many-relationship",
-				"how-tos/working-with-temporals",
-				"how-tos/configuring-aws-redshiftdb",
-				"how-tos/configuring-sap-hana-clouddb",
-				"how-tos/audit-history-using-crud-listeners",
-				"how-tos/rowlevel-security-using-crud-event-listeners",
-				"how-tos/validations-using-crudListeners",
-				"how-tos/custom-business-logic-using-crud-event-listeners",
-				"how-tos/mysql-connection-using-ssl",
-				"how-tos/switch-mariadb-to-mysql-connector"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Web services",
-			"items": [
-				"how-tos/using-app-environment-properties",
-				"how-tos/consuming-existing-wm-api-into-another-wm-project",
-				"how-tos/dynamic-form",
-				"how-tos/using-post-method-send-data-rest-api",
-				"how-tos/request-response-processing-rest-services",
-				"how-tos/intercept-requests-responses-api-calls-one-place",
-				"how-tos/websocket-usage-chatroom-app",
-				"how-tos/working-api-with-different-pagination-formats",
-				"how-tos/adding-ui-for-api-server-side-pagination"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Java services",
-			"items": [
-				"how-tos/sending-email-using-java-service",
-				"how-tos/implementing-forgot-password-feature-using-java-service",
-				"how-tos/accessing-rest-apis-java-service",
-				"how-tos/scheduling-java-service",
-				"how-tos/synchronizing-java-services-controller",
-				"how-tos/integrating-amazon-cognito-user-authentication",
-				"how-tos/integrating-sample-jasper-report-wavemaker-application",
-				"how-tos/generate-pdf-file-using-jasper-reports",
-				"how-tos/integrating-junit-tests-for-wavemaker-application",
-				"how-tos/pre-post-processing-db-service-apis",
-				"how-tos/accessing-loggedin-user-information-using-a-java-service",
-				"how-tos/camunda-wavemaker-app-integration",
-				"how-tos/azure-file-storage-connector",
-				"how-tos/insert-data-from-excel",
-				"how-tos/aws-s3-connector",
-				"how-tos/twilio-connector",
-				"how-tos/twilio-otp-integration",
-				"how-tos/custom-status-code-error-message-java-service"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Variables",
-			"items": [
-				"how-tos/using-filter-conditions-variable",
-				"how-tos/using-live-variable-apis",
-				"how-tos/using-notification-actions",
-				"how-tos/using-navigation-action",
-				"how-tos/using-variables-queries-procedure",
-				"how-tos/using-service-variable-form",
-				"how-tos/using-filter-criteria-data-live-widgets",
-				"how-tos/using-filter-criteria-database-crud-variable"
-			]
-		},
-		{
-			"type": "category",
-			"label": "JavaScript",
-			"items": [
-				"how-tos/using-javascript-binding",
-				"how-tos/using-javascript-external-url",
-				"how-tos/using-javascript-loop-command",
-				"how-tos/using-function-evaluating-conditions"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Development",
-			"items": [
-				"how-tos/synchronizing-wavemaker-apps-ides-beta",
-				"how-tos/debug-monitor-performance-issues-using-fusion-reactor"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Deployment",
-			"items": [
-				"how-tos/ssl-offloading"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Upgrading Project",
-			"items": [
-				"how-tos/guide-to-upgrade-an-app-wavemaker-9x-to-wavemaker-10-0",
-				"how-tos/app-migration-wavemaker-9x-10x"
-			]
-		},
-		{
-			"type": "category",
-			"label": "Mobile",
-			"items": [
-				"how-tos/mobile-notify-new-version-update",
-				"how-tos/setting-swipe-gestures-list-widget",
-				"how-tos/working-pull-refresh",
-				"how-tos/using-search-widget-within-navbar",
-				"app-development/widgets/mobile-widgets/barcode-scanner",
-				{
-					"type": "category",
-					"label": "Mobile UI Design",
-					"items": [
-						"how-tos/splashscreens-icons",
-						"how-tos/using-cordova-plugins",
-						"how-tos/support-for-tablet-view-in-mobile",
-						"how-tos/sliding-leftnav-mobile-app",
-						"how-tos/mobile-app-using-bar-code",
-						"how-tos/custom-date-picker"
-					]
-				}
-			]
-		}
-	],
+	
 	"Widgets": [
 		"app-development/widgets/widget-library",
 		{
@@ -2096,6 +2099,14 @@
 						"app-development/wavemaker-app-development-faqs/redistributing-licensing",
 						"app-development/wavemaker-app-development-faqs/application-stack-upgrades",
 						"app-development/wavemaker-app-development-faqs/is-wavemaker-app-scalable"
+					]
+				},
+				{
+					"type": "category",
+					"label": "Documentation Help",
+					"items": [
+						"help/contribution-guide",
+						"help/release-notes-guidelines"
 					]
 				}
 			]

@@ -140,24 +140,13 @@ module.exports = {
         {
           "type": "doc",
           "docId": "documentation-reference",
-          "label": "Get Started",
+          "label": "Web",
           "position": "left"
         },
         {
           "type": "doc",
-          "docId": "app-development/widgets/widget-library",
-          "label": "Widgets",
-          "position": "left"
-        },
-        {
-          "type": "doc",
-          "docId": "howtos-documents",
-          "label": "How-to",
-          "position": "left"
-        },
-        {
-          "to": "blog",
-          "label": "Blog",
+          "docId": "react-native/react-native-overview",
+          "label": "Mobile",
           "position": "left"
         },
         {
@@ -166,15 +155,20 @@ module.exports = {
           "className": "version-dropdown"
         },
         {
-          "to": "https://academy.wavemaker.com/",
-          "label": "Academy",
-          "position": "right",
+          "to": "blog",
+          "label": "Blog",
+          "position": "right"
         },
         {
           "type": "doc",
           "docId": "wavemaker-release-notes",
           "label": "Releases",
           "position": "right"
+        },
+        {
+          "to": "https://academy.wavemaker.com/",
+          "label": "Academy",
+          "position": "right",
         },
         {
           "to": "https://www.wavemaker.com/get-started/",

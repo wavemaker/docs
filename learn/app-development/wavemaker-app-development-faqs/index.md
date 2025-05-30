@@ -90,3 +90,8 @@ Frequently asked questions cover everything you need to know about WaveMaker so 
 #### [29. How are the application stack upgrades done?](/learn/app-development/wavemaker-app-development-faqs/application-stack-upgrades)
 
 #### [30. Is WaveMaker App scalable in terms of usage?](/learn/app-development/wavemaker-app-development-faqs/is-wavemaker-app-scalable)
+
+## Documentation Help
+
+#### [31. Contribute to WaveMaker Docs](/learn/help/contribution-guide)
+#### [32. Document Release Notes](/learn/help/release-notes-guidelines)
