@@ -33,6 +33,8 @@ id: "progress-bar"
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Display Format | Format in which the progress needs to be displayed. You can choose from a list of decimal options like 9, 9.9, 9.99 etc. If the progress bar's data value is 30.7056 and the selected display format is: -  9.9 then label will be rounded as 30.7 -  9.999% then label will be rounded to 30.706% |
 | Caption placement | Placement of progress bar value can be   - inside or   - hidden    |
+| Show Tooltip | This property determines whether to display a tooltip over the progress bar. |
+| Tooltip Position | This property determines which side the tooltip will be visible. You can choose from - up, down, left, or right. |
 
 ## Events
 
@@ -51,4 +53,5 @@ id: "progress-bar"
 | On start | This event handler is called on start of the progress. |
 | On complete | This event handler is called on complete of the progress. |
 | On before update | This event handler is called on before update of the progress. |
+| On Tooltip Text | This event handler is used to get the tooltip text. |
 
