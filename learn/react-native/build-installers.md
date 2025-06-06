@@ -97,8 +97,7 @@ You always have an option to check the uploaded certificates where you can add a
 
 ### Securing certificates
 
-To secure the uploaded certificates, passwords will be saved in encrypted format. A Certificate with password is in unlocked state and builds can
- only be triggered with unlocked certificates. Certificates will get automatically locked after 24 hours of unlocking, To unlock the certificate you have to
+To secure the uploaded certificates, passwords will be saved in encrypted format. A Certificate with password is in locked state and builds can only be triggered with unlocked certificates. Certificates will get automatically locked after 24 hours of unlocking, To unlock the certificate you have to
   provide password again.
  
 A dialog will be shown to unlock certificate in two cases,
