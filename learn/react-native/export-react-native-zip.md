@@ -20,7 +20,7 @@ A ReactNative zip is used to create a platform-specific installer. WaveMaker sup
 | Configuration Name | Description |
 |---|---|
 |Application Name | The name of the application |
-|Server Path | The backend server URL. *Dev* is used to prepopulate the application preview URL. <br/><br/> *Custom* is used to add the URL of the application which is hosted somewhere else |
+|Server Path | The backend server URL.<br/>**Dev** : Prepopulates the application preview URL.<br/>**Custom** : Allows you to specify the URL of hosted backend. It can be a deployed WaveMaker App, or your own backend. <br/>**None** : Select when the app has no backend dependency and should work offline. |
 
 3. Make necessary changes to the configurations and click on the **Build** button. This action starts a job, as shown below.
 
