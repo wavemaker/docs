@@ -41,6 +41,7 @@ The following features for Label can be set in the **Class** property from the *
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Animation | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. |
+| Android Ellipsis | Controls ellipsis behavior on Android devices. When set to true (default), ellipsis (...) is automatically applied when text overflows. When wrap is false, ellipsis appears at the end of the single line. When wrap is true and text exceeds the available space or specified number of lines, ellipsis is applied to the last visible line. Set to false to disable this Android-specific ellipsis behavior. |
 | **Format** |
 | Horizontal align | This property specifies how the elements should be aligned horizontally. |
 
