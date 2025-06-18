@@ -5,8 +5,6 @@ sidebar_label: "Label Text Formatting"
 ---
 ---
 
-import LabelTextFormatting from '/learn/assets/bold-text-in-label.png';
-
 In this documentation, we will see how to format text within Label widgets using bold text and clickable links. The Label widget provides built-in text formatting functionality that supports markdown-style syntax - use `**double asterisks**` to make text bold and `[text](URL)` to create clickable links. This allows you to create rich text displays with emphasized content and interactive elements without requiring additional styling or custom components.
 
 ## Bold Text Formatting
