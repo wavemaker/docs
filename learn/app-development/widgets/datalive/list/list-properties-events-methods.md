@@ -60,6 +60,7 @@ sidebar_label: "Properties, Events & Methods"
 | On pagination change | This event handler is called when the page is changed through navigation controls. |
 | On reorder | This event is triggered when the item in a list is reordered. For this, the Enable Reorder property has to be set. |
 | On selection limit exceed | This event is triggered when selected items cross the value set for the Selection Limit property. |
+| On Deselect | This event is triggered whenever an item in the list is deselected. |
 
 ## Methods
 

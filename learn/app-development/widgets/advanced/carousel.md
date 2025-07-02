@@ -29,6 +29,7 @@ WaveMaker provides you with two types of Carousel:
 | Enable Controls | This property allows you to enable the controls in the form of:   - navs - arrows on either side of the images,   - indicators - dots at the bottom of the images,   - both - default or   - none |
 | Animation | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. Can be set to:     - auto   - default or   - none.    |
 | Animation Interval | This property defines the animation interval in seconds. |
+| Stop At Last | This property, when enabled stops at the last slide instead of looping back to the first one. |
 
 **Carousel Content** (only for Static Carousel) SubWidget of Carousel to hold a slide content. By default, Carousel comes with three carousel contents each with a picture widget. You can add more using the Add Carousel action button.
 
