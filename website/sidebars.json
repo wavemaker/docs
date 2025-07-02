@@ -1531,7 +1531,8 @@
 				"app-development/widgets/mobile-widgets/camera",
 				"app-development/widgets/mobile-widgets/media-list",
 				"app-development/widgets/mobile-widgets/segmented-control",
-				"app-development/widgets/mobile-widgets/barcode-scanner"
+				"app-development/widgets/mobile-widgets/barcode-scanner",
+				"app-development/widgets/mobile-widgets/bottom-sheet"
 			]
 		},
 		{
