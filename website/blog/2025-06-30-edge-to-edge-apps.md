@@ -13,6 +13,8 @@ Mobile design has come a long way from boxed-in layouts and padded screens. With
 
 We're excited to introduce full support for **edge-to-edge mobile experiences** in our platform. Whether you want a completely immersive layout or prefer to keep safe insets and margins, it's now up to you. With this release, we're giving developers complete control over how their apps appear—ensuring your product looks and feels modern, fluid, and native.
 
+<!-- truncate -->
+
 ---
 
 ## Existing App Behaviour
