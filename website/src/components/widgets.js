@@ -932,6 +932,16 @@ const WidgetTabItems = ({ activePlatformsSet, links }) => {
                 "api": "https://www.wavemakeronline.com/app-runtime/latest/docs/classes/Camera.html",
                 "supportedPlatforms": ["mobile"],
                 "mobileStoryBook": "https://rn-components.onwavemaker.com/?path=/docs/device-camera--docs"
+            },
+              {
+                "lightIcon": "/learn/img/bottomSheet.svg",
+                "darkIcon": "/learn/img/bottomSheet.svg",
+                "label": "Bottom Sheet",
+                "body": "Bottom Sheet displays a sliding panel from the bottom for extra content or actions.",
+                "overview": "/learn/app-development/widgets/mobile-widgets/bottom-sheet",
+                "api": "",
+                "supportedPlatforms": ["mobile"],
+                "mobileStoryBook": ""
             }
         ]
     }
