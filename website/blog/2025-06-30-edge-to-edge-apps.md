@@ -11,7 +11,7 @@ import edge_to_edge_walkthrough from '/learn/assets/react-native/edge-to-edge-ap
 
 Mobile design has come a long way from boxed-in layouts and padded screens. With modern devices offering bezel-less displays and immersive user experiences, it's become essential for apps to keep up with edge-to-edge UI standards. Until now, our mobile apps didn't fully embrace this capability—but that changes today.
 
-We're excited to introduce full support for **edge-to-edge mobile experiences** in our platform. Whether you want a completely immersive layout or prefer to keep safe insets and margins, it's now up to you. With this release, we're giving developers complete control over how their apps appear—ensuring your product looks and feels modern, fluid, and native.
+We're excited to introduce full support for edge-to-edge mobile experiences in our platform. Whether you want a completely immersive layout or prefer to keep safe insets and margins, it's now up to you. With this release, we're giving developers complete control over how their apps appear—ensuring your product looks and feels modern, fluid, and native.
 
 <!-- truncate -->
 
@@ -20,8 +20,8 @@ We're excited to introduce full support for **edge-to-edge mobile experiences** 
 ## Existing App Behaviour
 
 Up to this point, all our React Native apps:
-* Included **default safe area insets** around system UI elements (status bar and navigation bar)
-* Used **fixed top and bottom navbars**, regardless of scroll behaviour
+* Included default safe area insets around system UI elements (status bar and navigation bar)
+* Used fixed top and bottom navbars, regardless of scroll behaviour
 
 While this ensured content never overlapped with system bars, it came at the cost of:
 * Wasted screen real estate
@@ -36,13 +36,13 @@ We've made key enhancements to give you full control over your app's layout and 
 
 ### 1. Edge-to-Edge Layout Support
 
-Apps can now optionally render content **behind** system bars, taking full advantage of the entire screen. This gives a sleek, modern feel and allows your app to better match today's immersive design trends.
+Apps can now optionally render content behind system bars, taking full advantage of the entire screen. This gives a sleek, modern feel and allows your app to better match today's immersive design trends.
 
-**Toggle on or off** with a single setting—no code changes required.
+Toggle on or off with a single setting—no code changes required.
 
 ### 2. Customisable Navbar Scroll Behaviour
 
-You now have the flexibility to define how your **top and bottom navigation bars** behave during scroll events:
+You now have the flexibility to define how your top and bottom navigation bars behave during scroll events:
 * Keep them fixed for consistency
 * or, Make them scroll with content for a more fluid experience
 
@@ -75,27 +75,27 @@ There, you'll find:
 
 ## Page-Level Customisation for Scroll Behaviour & Status Bar Style
 
-While app-level configurations work well for most scenarios, there are cases where you might want **different behaviours on specific screens**. To support this flexibility, we've introduced **two new props** for the **Page widget** in mobile apps:
+While app-level configurations work well for most scenarios, there are cases where you might want different behaviours on specific screens. To support this flexibility, we've introduced two new props for the Page widget in mobile apps:
 
 ### 1. ScrollBehaviour (Page-Level Scroll Configuration)
 
-This works exactly like the app-level scroll behaviour setting, but with **higher precedence**.
+This works exactly like the app-level scroll behaviour setting, but with higher precedence.
 
 For example:
-* If the app-level configuration is set to **"Hide Top Nav"**
-* But a specific page (say, DemoPage) is set to **"None"**
-* Then: all pages will hide the top navbar on scroll **except** DemoPage, which will have **no scroll effect** on navbars.
+* If the app-level configuration is set to "Hide Top Nav"
+* But a specific page (say, DemoPage) is set to "None"
+* Then: all pages will hide the top navbar on scroll except DemoPage, which will have no scroll effect on navbars.
 
-This allows you to fine-tune navigation dynamics **per screen**—ideal for pages that require a different layout experience.
+This allows you to fine-tune navigation dynamics per screen—ideal for pages that require a different layout experience.
 
 ### 2. barStyle (Android Status Bar Text/Icon Color)
 
-This prop controls the color of the **status bar content** (text and icons), ensuring it matches the visual theme of your page.
+This prop controls the color of the status bar content (text and icons), ensuring it matches the visual theme of your page.
 
-* Use "light-content" for **light text on dark backgrounds**
-* Use "dark-content" for **dark text on light backgrounds**
+* Use "light-content" for light text on dark backgrounds
+* Use "dark-content" for dark text on light backgrounds
 
-This is particularly useful on Android, where the system **does not automatically adjust** the status bar style based on background color (unlike iOS).
+This is particularly useful on Android, where the system does not automatically adjust the status bar style based on background color (unlike iOS).
 
 :::note
 This prop is Android-only. iOS handles status bar appearance automatically based on screen background and theme.
