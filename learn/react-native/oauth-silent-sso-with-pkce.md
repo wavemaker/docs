@@ -1,5 +1,5 @@
 ---
-title: "Single Sign-On Across Mobile Apps Using OAuth 2.0 with PKCE"
+title: "OAuth 2.0 Silent SSO with PKCE"
 id: "oauth-silent-sso-with-pkce"
 sidebar_label: "OAuth 2.0 Silent SSO with PKCE"
 ---
@@ -10,48 +10,22 @@ import OAuth_Refresh_flow from '/learn/assets/oauth_refresh_token_flow.png';
 
 OAuth 2.0 with Proof Key for Code Exchange (PKCE) provides a secure authentication mechanism for mobile applications. This documentation covers implementing Silent Single Sign-On (SSO) functionality, allowing users to authenticate once and seamlessly access multiple applications without repeated login prompts.
 
-> *For example*, imagine an organization that offers a suite of mobile apps, such as a shopping app, a delivery app, and a loyalty app. With Silent SSO, users can log in to one app (e.g., the shopping app), and then switch to the other apps without needing to log in again. This improves user experience while maintaining strong security.
+## Overview
 
-Here, the implementation uses OAuth 2.0 with PKCE extension, which adds an extra layer of security specifically designed for public clients like mobile applications.
+Silent SSO enables users to authenticate across multiple applications within the same organization without requiring manual login for each app. This is achieved by securely sharing authentication tokens between applications while maintaining security best practices.
 
-<img src={OAuth_PKCE_flow} style={{width:"70%"}} />
+The implementation uses OAuth 2.0 with PKCE extension, which adds an extra layer of security specifically designed for public clients like mobile applications that cannot securely store client secrets.
 
-### This Allows
+<img src={OAuth_PKCE_flow} style={{width:"60%"}} />
 
-- Enhanced User Experience: Users authenticate once and gain access to multiple applications
-- Improved Security: PKCE prevents authorization code interception attacks
-- Token Management: Automatic token refresh maintains user sessions seamlessly
-- Cross-App Authentication: Secure token sharing between applications
+## Key Benefits
 
-## Prerequisites
+- **Enhanced User Experience**: Users authenticate once and gain access to multiple applications
+- **Improved Security**: PKCE prevents authorization code interception attacks
+- **Token Management**: Automatic token refresh maintains user sessions seamlessly
+- **Cross-App Authentication**: Secure token sharing between applications
 
-To enable Silent Single Sign-On (SSO) across mobile applications using OAuth 2.0 with PKCE, you will need the following libraries:
-
-### Core Authentication Library
-
-**Library: [react-native-app-auth](https://github.com/FormidableLabs/react-native-app-auth)**  
-
-This provides OAuth 2.0 and OpenID Connect authentication capabilities, such as PKCE flow support out-of-the-box, and handles token management.
-
-**Installation:**
-
-```bash
-npm install react-native-app-auth
-```
-
-### Data Sharing library
-
-**Library: [react-native-app-data-sharing](https://github.com/SimformSolutionsPvtLtd/react-native-app-data-sharing)**
-
-This enables secure data sharing between applications on both iOS and Android, and provides unified API for Keychain (iOS) and SharedPreferences (Android).
-
-```bash
-npm install react-native-app-data-sharing
-```
-
-:::note
-Standard packages like [expo-secure-store](https://docs.expo.dev/versions/latest/sdk/securestore/) cannot be used for cross-app data sharing as each application has sandboxed storage that cannot be accessed by other applications.
-:::
+## Implementation Approach
 
 ### Secure Token Sharing
 
@@ -68,6 +42,25 @@ To achieve silent SSO across applications, authentication tokens must be securel
 ### JWT Token Decoding
 
 Since the stored ID token is a JWT (JSON Web Token), it can be decoded to extract user information when logging into subsequent applications. This eliminates the need for additional API calls to retrieve user data.
+
+## Requirements
+
+### Core Authentication library
+
+**[react-native-app-auth](https://github.com/FormidableLabs/react-native-app-auth)**
+- Provides OAuth 2.0 and OpenID Connect authentication capabilities
+- Supports PKCE flow out of the box
+- Handles token management and refresh logic
+
+### Data Sharing library
+
+**[react-native-app-data-sharing](https://github.com/SimformSolutionsPvtLtd/react-native-app-data-sharing)**
+- Enables secure data sharing between applications on both iOS and Android
+- Provides unified API for Keychain (iOS) and SharedPreferences (Android)
+
+:::note
+Standard packages like [expo-secure-store](https://docs.expo.dev/versions/latest/sdk/securestore/) cannot be used for cross-app data sharing as each application has sandboxed storage that cannot be accessed by other applications.
+:::
 
 ## Expo Plugin Integration
 
@@ -132,8 +125,6 @@ This managed workflow allows us to benefit from Expo's Continuous Native Generat
 ## Login flow
 
 ### Initial Authentication in App 1
-
-The first application in your SSO ecosystem performs the complete OAuth 2.0 authentication flow and securely stores the resulting tokens for other applications to access. This establishes the foundation for silent login across multiple apps within your organization.
 
 ```javascript
 import { authorize, refresh } from 'react-native-app-auth';
@@ -279,8 +270,6 @@ const storeUserInfo = async (userInfo) => {
 ```
 
 ### Silent Login in App 2
-
-Subsequent applications can authenticate users automatically by reading the shared tokens stored by App 1. This process checks for valid tokens, refreshes them if needed, and logs the user in seamlessly without requiring manual authentication.
 
 ```javascript
 import { saveData, getData, initializeStore } from 'react-native-app-data-sharing';
