@@ -884,7 +884,15 @@
 				"react-native/custom-widget",
 				"react-native/custom-js-modules",
 				"react-native/third-party-expo-plugins",
-				"react-native/ssl-pinning"
+				"react-native/ssl-pinning",
+				{
+					"type": "category",
+					"label": "Authentication",
+					"items": [
+						"react-native/oauth-silent-sso-with-pkce",
+						"react-native/oauth-silent-sso-example"
+					]
+				}
 			  ]
 		},
 		{
