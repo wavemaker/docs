@@ -122,6 +122,7 @@ By following these guidelines, you can create Prefabs that are compatible with R
 
 You can use the Custom Formatter to adjust the data before displaying it on the mobile app, ensuring better user experience and performance. React Native has started supporting customization of data using **Custom Formatter** from [Release 11.3](/learn/wavemaker-release-notes/v11-3-0). For more information, refer to [Custom Formatter](/learn/app-development/variables/custom-formatter).
 
+
 ## See Also
 
 [React JS](https://reactjs.org/)  
