@@ -939,7 +939,6 @@
 				"react-native/performance-measurement",
 				"react-native/performance-metrics",
 				"react-native/debugging-performance-react-native-devtools",
-				"react-native/flipper-performance-plugin",
 				"react-native/flashlight-performance-tool",
 				"react-native/performance-monitor"
 			  ]
