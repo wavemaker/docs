@@ -126,6 +126,8 @@ This managed workflow allows us to benefit from Expo's Continuous Native Generat
 
 ### Initial Authentication in App 1
 
+The first application in your SSO ecosystem performs the complete OAuth 2.0 authentication flow and securely stores the resulting tokens for other applications to access. This establishes the foundation for silent login across multiple apps within your organization.
+
 ```javascript
 import { authorize, refresh } from 'react-native-app-auth';
 import { saveData, getData, initializeStore } from 'react-native-app-data-sharing';
@@ -270,6 +272,8 @@ const storeUserInfo = async (userInfo) => {
 ```
 
 ### Silent Login in App 2
+
+Subsequent applications can authenticate users automatically by reading the shared tokens stored by App 1. This process checks for valid tokens, refreshes them if needed, and logs the user in seamlessly without requiring manual authentication.
 
 ```javascript
 import { saveData, getData, initializeStore } from 'react-native-app-data-sharing';
