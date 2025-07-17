@@ -884,7 +884,8 @@
 				"react-native/custom-widget",
 				"react-native/custom-js-modules",
 				"react-native/third-party-expo-plugins",
-				"react-native/ssl-pinning"
+				"react-native/ssl-pinning",
+				"react-native/error-handling"
 			  ]
 		},
 		{
