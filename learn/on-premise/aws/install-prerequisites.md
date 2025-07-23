@@ -28,7 +28,7 @@ sudo apt-get install wget  -y
 - Install python3.
 
 ```bash
-sudo apt-get install python3 -y
+sudo apt-get install python3
 ```
 
 - Add Docker's official GPG key
