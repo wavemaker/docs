@@ -10,7 +10,7 @@ import OAuth_Refresh_flow from '/learn/assets/oauth_refresh_token_flow.png';
 
 OAuth 2.0 with Proof Key for Code Exchange (PKCE) provides a secure authentication mechanism for mobile applications. This documentation covers implementing Silent Single Sign-On (SSO) functionality, allowing users to authenticate once and seamlessly access multiple applications without repeated login prompts.
 
-> *For example*, imagine an organization that offers a suite of mobile apps, such as a shopping app, a delivery app, and a loyalty app. With Silent SSO, users can log in to one app (e.g., the shopping app), and then switch to the others without needing to log in again. This improves user experience while maintaining strong security.
+> *For example*, imagine an organization that offers a suite of mobile apps, such as a shopping app, a delivery app, and a loyalty app. With Silent SSO, users can log in to one app (e.g., the shopping app), and then switch to the other apps without needing to log in again. This improves user experience while maintaining strong security.
 
 Here, the implementation uses OAuth 2.0 with PKCE extension, which adds an extra layer of security specifically designed for public clients like mobile applications.
 
@@ -31,7 +31,7 @@ To enable Silent Single Sign-On (SSO) across mobile applications using OAuth 2.0
 
 **Library: [react-native-app-auth](https://github.com/FormidableLabs/react-native-app-auth)**  
 
-This provides OAuth 2.0 and OpenID Connect authentication capabilities, such as PKCE flow out of the box support, handle andles token management and refresh logic.
+This provides OAuth 2.0 and OpenID Connect authentication capabilities, such as PKCE flow support out-of-the-box, and handles token management.
 
 **Installation:**
 
