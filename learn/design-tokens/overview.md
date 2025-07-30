@@ -1,29 +1,14 @@
 ---
 id: "overview"
-title: "WaveMaker Design Token - Style Workspace"
+title: "Design Tokens Style Workspace"
 sidebar_label: "Introduction to Design Tokens"
 ---
 
-Design tokens in WaveMaker are a simple way to visually edit and set app’s styles, such as colors, fonts, and spacing in a centralized, structured, and reusable format. They work for both web and mobile apps.
-> - Keep your design consistent  
-- Help designers and developers work better together
-- Work seamlessly across React, Angular, and other frameworks
-- Avoid doing the same styling work again and again  
-- Switch between themes like Light and Dark  
+Design tokens in WaveMaker let you define and reuse styles like colors, fonts, and spacing in one place, making it easy to keep your app consistent, theme-ready, and developer-friendly across web and mobile.
 
-### Visual Edit Architecture
+Tokens are defined and can be applied to the overall theme and individual components, allowing you to visually preview how they will appear in your app.
 
 ![](/learn/assets/style-workspace-visual-edit.png)
-
-
-## Design Tokens
-
-Design tokens are core building blocks of a design system, defining values for:
-
-- Colors
-- Typography
-- Spacing
-- Other design properties
 
 ### Design Token Examples
 
@@ -37,6 +22,11 @@ Color tokens define colors once and reuse them across all UI components.
 | `color.brand.secondary`  | `#6C757D`   | Secondary buttons, cards            |
 | `color.text.default`     | `#333333`   | Default text color                  |
 
+
+![Design Token Architecture](/learn/assets/design-tokens-architecture.png)
+
+*Visual Tip: Side-by-side comparison of raw CSS vs tokenized usage can help make this clear to developers.*
+
 #### Typography Tokens
 
 Typography tokens standardize font sizes and font families throughout the application.
@@ -45,13 +35,8 @@ Typography tokens standardize font sizes and font families throughout the applic
 |-------------------------|------------------------|-----------------------------------|
 | `font.family.primary`   | `'Inter', sans-serif`  | Primary font used across the UI   |
 
-### Design Token Architecture
 
 
-
-![Design Token Architecture](/learn/assets/design-tokens-architecture.png)
-
-*Visual Tip: Side-by-side comparison of raw CSS vs tokenized usage can help make this clear to developers.*
 
 
 
@@ -68,7 +53,7 @@ color.brand.primary → #007BFF
 color.brand.secondary → #6C757D
 color.text.default → #333333
 color.background.surface → #FFFFFF
-````
+```
 
 ### Typography Tokens
 
@@ -99,7 +84,6 @@ Example: global/color/color.json, global/font/font.json
 - Existing hybrid or older web/native apps will continue to work as they are; and Design Tokens cannot be applied.
 - In WAVE, **themes have been deprecated** in favor of **design tokens** for a modern styling approach.
 :::
-
 
 ## Component Tokens
 
@@ -144,7 +128,26 @@ color.mode.text → #333333 / #F5F5F5
 
 * Style Workspace allows switching and editing these visually.
 
----
+## Token Categorization
+
+Design tokens are categorized into two main types and stored as a JSON file:
+
+- **Global Tokens** – Used across the app for a consistent design system.
+    - Stored in: `global/{category}/{category}.json`
+    - Example: `global/color/color.json, global/font/font.json`
+
+- **Component Tokens** – Specific to individual components, offering granular control.
+    - Stored in: `components/{component}/{component}.json`
+    - Example: `components/button/button.json, components/card/card.json`
+
+## Tokens & Style Dictionary
+
+The default WM app gets all styles and design tokens from a single source called Foundation CSS
+The design tokens are maintained as JSON files that define colors, spacing, typography, and other design properties.
+Amazon Style Dictionary, an open source tool is used to generate platform-specific files from these JSON files:
+✔ For Web – the o/p is a CSS file containing CSS variables.
+✔ For React Native – the o/p is a JavaScript object used in styling.
+With Style dictionary, the design tokens can be maintained in a platform agnostic way and can be edited in a more WISYWIG approach (explained below later).
 
 ## Style Dictionary Integration
 
@@ -230,33 +233,6 @@ components/button/button.json
 
 Variants allow design flexibility without rewriting or duplicating styles and can be selected in Style Workspace → Component → Variants.
 
----
-
-## Summary: Why It Matters
-
-With **Design Tokens** and **Style Workspace**, WaveMaker WAVE projects benefit from:
-
-* Token-based design logic for better reusability
-* Cross-platform consistency (Web + Mobile)
-* Seamless theme switching (Light/Dark)
-* Better collaboration between designers and developers
-* Centralized styling logic—no more hunting through CSS!
-
----
-
-Would you like:
-
-* A **Markdown version** for developer docs?
-* A **slide-ready version** for team presentations?
-* Figma/visual mockups to complement this content?
-
-Let me know, and I’ll help you deliver this beautifully!
-
-```
-
-Let me know if you’d like me to export it into a `.md` file or attach visuals/diagrams alongside this!
-```
-
 
 #### Color Tokens
 
@@ -276,74 +252,6 @@ Used for font styles and sizes.
 font.family.primary → 'Inter', sans-serif
 font.size.md → 16px
 ```
-
-*Visual Tip: Side-by-side comparison of raw CSS vs tokenized usage can help make this clear to developers.*
-
-## Token Structure in WaveMaker
-
-Design tokens in WaveMaker are organized into JSON files and split into two categories:
-
-### Global Tokens
-
-Used app-wide for base styles like colors, spacing, and fonts.
-
-```
-Location: global/{category}/{category}.json
-Example: global/color/color.json, global/font/font.json
-```
-
-### Component Tokens
-
-Scoped to specific UI components for fine-grained control.
-
-```
-Location: components/{component}/{component}.json
-Example: components/button/button.json
-```
-
----
-
-## Style Dictionary Integration
-
-WaveMaker uses [Amazon’s Style Dictionary](https://amzn.github.io/style-dictionary/) to transform design tokens into platform-specific formats.
-
-| Output Platform | Generated Format         |
-| --------------- | ------------------------ |
-| Web             | CSS variables            |
-| React Native    | JavaScript style objects |
-
-Tokens are defined once in JSON, and the Style Dictionary compiles them to usable formats during build time.
-
-*Visual Tip: Add a simple “input → output” diagram to show how JSON tokens transform into CSS/JS.*
-
----
-
-## Style Workspace: Centralized Token Management
-
-The **Style Workspace** in WaveMaker is your centralized UI for managing tokens visually.
-
-### Key Features
-
-* **Real-Time Editing**: Changes reflect instantly in preview
-* **WYSIWYG Interface**: Edit tokens without touching code
-* **Integrated Preview**: Live canvas preview of component styles
-* **Token Categorization**: Easily switch between global and component scopes
-
-*Visual Tip: Show screenshot of Style Workspace UI highlighting token selection + preview update*
-
----
-
-## How It Works Behind the Scenes
-
-When you edit tokens in the Style Workspace:
-
-1. Changes are saved in `JSON` files under the `overrides/` directory.
-2. These JSON files are used to generate `app.override.css`, which applies the customized styles to the app.
-
-
-
-
-
 
 
 
