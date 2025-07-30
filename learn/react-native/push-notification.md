@@ -125,7 +125,7 @@ async function getNotifications() {
     );
     messaging.requestPermission().then((authorizationStatus) => {
         if (authorizationStatus) {
-             ReactNative.Alert.alert('Permission status:' , JSON.stringify(authorizationStatus));
+	ReactNative.Alert.alert('Permission status:', JSON.stringify(authorizationStatus));
         }
     } else if (ReactNative.Platform.OS === 'ios') {
         const authStatus = await messaging().requestPermission({
