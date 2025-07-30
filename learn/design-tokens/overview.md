@@ -1,22 +1,20 @@
 ---
 id: "overview"
-title: "WaveMaker Design Tokens"
+title: "WaveMaker Design Token - Style Workspace"
 sidebar_label: "Introduction to Design Tokens"
 ---
 
-:::note
-- This token system is **exclusive to new WAVE projects**.
-- Existing hybrid or older web/native apps will continue to work as they are; and Design Tokens cannot be applied.
-- In WAVE, **themes have been deprecated** in favor of **design tokens** for a modern styling approach.
-:::
-
-Design tokens in WaveMaker are a simple way to set and reuse your app’s styles—like colors, fonts, and spacing—in a centralized, structured, and reusable format. They work for both web and mobile apps and make it easier to:
-
-- Keep your design consistent  
-- Switch between themes like Light and Dark  
+Design tokens in WaveMaker are a simple way to visually edit and set app’s styles, such as colors, fonts, and spacing in a centralized, structured, and reusable format. They work for both web and mobile apps.
+> - Keep your design consistent  
 - Help designers and developers work better together
 - Work seamlessly across React, Angular, and other frameworks
 - Avoid doing the same styling work again and again  
+- Switch between themes like Light and Dark  
+
+### Visual Edit Architecture
+
+![](/learn/assets/style-workspace-visual-edit.png)
+
 
 ## Design Tokens
 
@@ -47,15 +45,13 @@ Typography tokens standardize font sizes and font families throughout the applic
 |-------------------------|------------------------|-----------------------------------|
 | `font.family.primary`   | `'Inter', sans-serif`  | Primary font used across the UI   |
 
-
 ### Design Token Architecture
+
+
 
 ![Design Token Architecture](/learn/assets/design-tokens-architecture.png)
 
-
 *Visual Tip: Side-by-side comparison of raw CSS vs tokenized usage can help make this clear to developers.*
-
----
 
 
 
@@ -65,7 +61,7 @@ Global tokens are used app-wide to define foundational design properties like co
 
 ![global-token menu](/learn/assets/global-token-menu.png)
 
-### 🎨 Color Tokens
+### Color Tokens
 
 ```json
 color.brand.primary → #007BFF
@@ -74,7 +70,7 @@ color.text.default → #333333
 color.background.surface → #FFFFFF
 ````
 
-### 🔤 Typography Tokens
+### Typography Tokens
 
 ```json
 font.family.primary → 'Inter', sans-serif
@@ -83,7 +79,7 @@ font.size.md → 16px
 font.weight.bold → 600
 ```
 
-### 📏 Sizing and Spacing Tokens
+### Sizing and Spacing Tokens
 
 ```json
 spacing.sm → 8px
@@ -91,14 +87,19 @@ spacing.md → 16px
 border.radius.md → 4px
 ```
 
-### 📂 Location
+### Location
 
 ```
 global/{category}/{category}.json
 Example: global/color/color.json, global/font/font.json
 ```
 
----
+:::note
+- This token system is **exclusive to new WAVE projects**.
+- Existing hybrid or older web/native apps will continue to work as they are; and Design Tokens cannot be applied.
+- In WAVE, **themes have been deprecated** in favor of **design tokens** for a modern styling approach.
+:::
+
 
 ## Component Tokens
 
@@ -120,7 +121,7 @@ card.padding → spacing.md
 card.shadow → shadow.md
 ```
 
-### 📂 Location
+### Location
 
 ```
 components/{component}/{component}.json
@@ -162,7 +163,7 @@ WaveMaker uses [Amazon’s Style Dictionary](https://amzn.github.io/style-dictio
 
 The **Style Workspace** in WaveMaker is your centralized visual interface to manage and preview token changes.
 
-### 🔧 Key Features
+### Key Features
 
 * **Real-Time Editing** with live component preview
 * **WYSIWYG Interface** for designers and devs
@@ -235,11 +236,11 @@ Variants allow design flexibility without rewriting or duplicating styles and ca
 
 With **Design Tokens** and **Style Workspace**, WaveMaker WAVE projects benefit from:
 
-* 🔁 Token-based design logic for better reusability
-* 🌍 Cross-platform consistency (Web + Mobile)
-* 🌗 Seamless theme switching (Light/Dark)
-* 👩‍💻 Better collaboration between designers and developers
-* 🧠 Centralized styling logic—no more hunting through CSS!
+* Token-based design logic for better reusability
+* Cross-platform consistency (Web + Mobile)
+* Seamless theme switching (Light/Dark)
+* Better collaboration between designers and developers
+* Centralized styling logic—no more hunting through CSS!
 
 ---
 
@@ -277,19 +278,6 @@ font.size.md → 16px
 ```
 
 *Visual Tip: Side-by-side comparison of raw CSS vs tokenized usage can help make this clear to developers.*
-
----
-
-## Why Use Design Tokens?
-
-| Benefit                   | Description                                                               |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Consistency**         | Ensures a unified design language across all screens and components       |
-| **Scalability**        | Enables easy theming and brand variations (e.g., light/dark mode support) |
-| **Reusability**        | Shared tokens reduce duplication and simplify updates                     |
-| **Framework Agnostic** | Works across React, Angular, and React Native                             |
-
----
 
 ## Token Structure in WaveMaker
 
