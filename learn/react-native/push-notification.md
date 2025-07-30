@@ -118,17 +118,14 @@ Create a file `notification.native.js` with the below content and add it to the 
 
 ```js
 async function getNotifications() {
-    const ReactNative = require('react-native');
-    const messaging = require('@react-native-firebase/messaging').default;
-    
-    if (ReactNative.Platform.OS === 'android') {
-        await ReactNative.PermissionsAndroid.request(
-            ReactNative.PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
-        );
-
-        const authStatus = await messaging().requestPermission();
-        if (authStatus) {
-            ReactNative.Alert.alert('Android Permission status:', JSON.stringify(authStatus));
+    const ReactNative = require("react-native");
+    const messaging = require('@react-native-firebase/messaging').default();
+    ReactNative.PermissionsAndroid.request(
+        ReactNative.PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
+    );
+    messaging.requestPermission().then((authorizationStatus) => {
+        if (authorizationStatus) {
+             ReactNative.Alert.alert('Permission status:' + JSON.stringify(authorizationStatus));
         }
     } else if (ReactNative.Platform.OS === 'ios') {
         const authStatus = await messaging().requestPermission({
