@@ -326,22 +326,8 @@
 				"app-development/dev-integration/chrome-developer-tool",
 				"app-development/dev-integration/debugging",
 				"app-development/dev-integration/printing-logger-statement",
-				"app-development/dev-integration/inspection-framework",
-				"hybrid-mobile/mobile-automation-appium",
-				{
-					"type": "category",
-					"label" : "Testing Stratergies",
-					"items": [
-						"react-native/react-native-testing-overview",
-						"react-native/react-native-manual-testing-overview",
-						"react-native/react-native-automation-testing",
-						"react-native/automate-reactnative-apps",
-						"react-native/react-native-performance-testing",
-						"react-native/react-native-accessibility-testing",
-						"react-native/react-native-device-compatibility"
+				"app-development/dev-integration/inspection-framework"
 
-					]
-				}
 			]
 		},
 		{
@@ -939,6 +925,21 @@
 				"react-native/appium-support",
 				"react-native/web-preview-debug",
 				"react-native/generate-web-preview-locally",
+                "hybrid-mobile/mobile-automation-appium",
+                {
+                  "type": "category",
+                  "label" : "Testing Stratergies",
+                  "items": [
+                    "react-native/react-native-testing-overview",
+                    "react-native/react-native-manual-testing-overview",
+                    "react-native/react-native-automation-testing",
+                    "react-native/automate-reactnative-apps",
+                    "react-native/react-native-performance-testing",
+                    "react-native/react-native-accessibility-testing",
+                    "react-native/react-native-device-compatibility"
+
+                  ]
+                },
 				"react-native/web-preview-docker-image",
 				"react-native/expo-debug",
 				"react-native/wavepulse",

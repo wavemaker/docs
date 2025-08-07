@@ -1,7 +1,7 @@
 ---
-title: "Accesibility Testing"
+title: "Accessibility Testing"
 sidebar_label: "Accesibility Testing"
-id: "react-native-accesibility-testing"
+id: "react-native-accessibility-testing"
 ---
 ---
 

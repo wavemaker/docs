@@ -1,7 +1,7 @@
 ---
 title: "Automation Testing"
 sidebar_label: "Automation Testing"
-id: "react-native-automation-testing-stratergy"
+id: "react-native-automation-testing"
 ---
 ---
 
