@@ -15,7 +15,7 @@ This document outlines the complete automation framework designed for testing Re
 
 ## Test Suite Setup
 
-The process begins with a test suite that includes all test cases written in JavaScript or TypeScript. To know more about how to setup a test suite with the following components, Please refer to [Automation Testing in WaveMaker](/learn/react-native/automate-reactnative-apps)
+The process begins with a test suite that includes all test cases written in JavaScript or TypeScript. To know more about how to setup a test suite with the following components, Please refer to [Automation Testing in WaveMaker](/learn/react-native/automate-reactnative-apps).
 
 ### Components
 
@@ -32,13 +32,13 @@ Tests can be executed in two environments:
 ### A. Local Execution
 
 - APK/IPA paths are provided through a `.env` file.
-- The app is launched on local **Android/iOS emulators or simulators**.
+- The app is launched on local Android/iOS emulators or simulators.
 - Tests get executed in the above launched emulators.
-- Test results are generated using **Allure Report**.
+- Test results are generated using [Allure Reports](https://allurereport.org/).
 
 ### B. Cloud Execution
 
-- Initiated automatically through **Jenkins pipelines** for continuous integration.
+- Initiated automatically through Jenkins pipelines for continuous integration.
 
 ---
 

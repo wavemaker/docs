@@ -5,8 +5,6 @@ id: "react-native-testing-overview"
 ---
 ---
 
-### Testing Overview
-
 WaveMaker mobile apps are built using React Native. Our testing strategy includes both manual and automated approaches to ensure quality, performance, and compatibility across devices and platforms.
 
 ### Testing Types
@@ -24,8 +22,8 @@ WaveMaker mobile apps are built using React Native. Our testing strategy include
 
 | Category             | Tools/Platforms                                             |
 |----------------------|-------------------------------------------------------------|
-| Device Testing       | Physical Devices ,Android/iOS Studio emulators, BrowserStack |
-| Automation Framework | Appiunm + WebdriverIO, TypeScript, Mocha                    |
+| Device Testing       |[Physical devices](/learn/react-native/react-native-device-compatibility#physical-devices-manual-testing), [Android/iOS Studio emulators](https://developer.android.com/studio/run/emulator), [BrowserStack](/learn/react-native/react-native-device-compatibility#automation-testing-devices-via-browserstack) |
+| Automation Framework | Appium + WebdriverIO, TypeScript, Mocha                    |
 | CI/CD                | Jenkins                                                     |
 | Reporting            | Allure Report  |
 | Accessibility        | Screen Readers, Manual checks, BrowserStack                 |

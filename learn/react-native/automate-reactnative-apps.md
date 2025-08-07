@@ -15,8 +15,7 @@ WaveMaker mobile applications are hybrid mobile applications and can be easily t
 
 Ensure the following tools are installed and properly configured on your system before proceeding.
 
-
-### 1\. Node.js and npm
+### 1 Node.js and npm
 
 Install Node.js (v16 or higher is recommended), which comes with npm.
 
@@ -29,7 +28,7 @@ Download: [https://nodejs.org/](https://www.google.com/url?sa=E&source=gmail&q=h
 
 -----
 
-### 2. Java JDK
+### 2 Java JDK
 
 Install Java Development Kit (JDK) -- version 11 or above.
 
@@ -39,18 +38,15 @@ java -version
 
 Download: [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.google.com/url?sa=E&source=gmail&q=https://www.oracle.com/java/technologies/javase-downloads.html)
 
-
 -----
 
-### 3. Android Studio
+### 3 Android Studio
 
 Install Android Studio to get the Android SDK and emulator tools.
 
 * Ensure ANDROID\_HOME environment variable is set.
 * Add the following paths to your environment variables:
 
-
-<!-- end list -->
 
 ```text
 
@@ -97,8 +93,8 @@ Create your project and run the configuration wizard
 npx wdio config
 ```
 
-During setup, It will ask to choose options for multiple parameters
-Here are some of the important parameters, you have to choose.
+During setup, it will ask to choose options for multiple parameters.
+Here are some of the important parameters you have to choose:
 
 * Test Framework: Mocha or Jasmine
 * Reporter: spec
@@ -127,7 +123,8 @@ npm install @wdio/cli @wdio/local-runner @wdio/mocha-framework @wdio/spec-report
 ```
 
 3. Add test specs
-    Create your test file in `./test/specs/example.e2e.js`
+
+Create your test file in `./test/specs/example.e2e.js`
 
 ```javascript
 describe('React Native App Launch', () => {
@@ -136,8 +133,8 @@ describe('React Native App Launch', () => {
     });
 });
 ```
-<!-- end list -->
------
+
+----- 
 
 ## Sample WebdriverIO Configuration
 
@@ -167,23 +164,16 @@ exports.config = {
 
 ## Running the Tests
 
-*Start the Android emulator from Android Studio or the CLI.
-*Start Appium server
-
-
-<!-- end list -->
+* Start the Android emulator from Android Studio or the CLI.
+* Start Appium server
 
 ```text
-
 appium
 ```
 
-* Run the WebdriverIO test
-
-<!-- end list -->
+* Run the WebdriverIO test.
 
 ```text
-
 npx wdio run wdio.conf.js
 ```
 
@@ -193,14 +183,14 @@ npx wdio run wdio.conf.js
 
 This Test will attempt to log in to the application.  We need to fill in the Username & Password and click on the Login button.  We will verify if the Login is successful.
 
-* Launch the application in the Android Studio emulator,
+* Launch the application in the Android Studio emulator.
 * Launch the Appium Inspector, and switch to uiautomatorviewer in the Appium Inspector.
 
 ![Appium_Inspector](/learn/assets/appium-automation-inspector.png)
 
-* Obtain the AccessibilityIDs of Username, Password, and Log in button as shown above.
+* Obtain the AccessibilityIDs of Username, Password, and Log in button as shown in the above image.
 
-<!-- end list -->
+
 
 ```javascript
 login = async (username: string, password: string) => {
@@ -220,11 +210,11 @@ login = async (username: string, password: string) => {
 We have created a sample automation framework to execute a single testcase.
 All you have to do is,
 
-* Get the setup ready
-* Generate apk of an application
-* Clone or Download the zip from this repository
+* Get the setup ready.
+* Generate apk of an application.
+* Clone or Download the zip from this repository.
   [Appium test framework](https://github.com/anitha-thummalapally/reactnative_automation.git)
-* If Downloaded, extract and Start writing a testcase using the above mentioned process and execute it.
+* If downloaded, extract and start writing a testcase using the above mentioned process and execute it.
 
 ## Execution
 
