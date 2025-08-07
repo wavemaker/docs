@@ -6,8 +6,8 @@ id: "react-native-testing-overview"
 ---
 
 ### Testing Overview
-WaveMaker mobile apps are built using React Native. Our testing strategy includes both manual and automated approaches to ensure quality, performance, and compatibility across devices and platforms.
 
+WaveMaker mobile apps are built using React Native. Our testing strategy includes both manual and automated approaches to ensure quality, performance, and compatibility across devices and platforms.
 
 ### Testing Types
 
@@ -32,6 +32,3 @@ WaveMaker mobile apps are built using React Native. Our testing strategy include
 | Visual testing       | Pixel Match |
 | Performance          | Apptim, BrowserStack, Android Profiler |
 |Test Management | BrowserStack |
-
-
-

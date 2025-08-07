@@ -6,6 +6,7 @@ id: "react-native-automation-testing-stratergy"
 ---
 
 ## Automation Architecture - Testing Framework
+
 This document outlines the complete automation framework designed for testing React Native mobile applications, leveraging tools such as Appium, WebDriverIO, Mocha, Jenkins, BrowserStack, and Allure Reports.
 
 ## Architecture
@@ -16,7 +17,7 @@ This document outlines the complete automation framework designed for testing Re
 
 The process begins with a test suite that includes all test cases written in JavaScript or TypeScript. To know more about how to setup a test suite with the following components, Please refer to [Automation Testing in WaveMaker](/learn/react-native/automate-reactnative-apps)
 
-### Components:
+### Components
 
 - **Mocha**: Test runner for managing and executing test cases.
 - **WebDriverIO (WDIO)**: Test configuration and execution tool.
@@ -24,24 +25,27 @@ The process begins with a test suite that includes all test cases written in Jav
 
 ---
 
-##  Test Execution
+## Test Execution
 
 Tests can be executed in two environments:
 
 ### A. Local Execution
+
 - APK/IPA paths are provided through a `.env` file.
 - The app is launched on local **Android/iOS emulators or simulators**.
 - Tests get executed in the above launched emulators.
 - Test results are generated using **Allure Report**.
 
 ### B. Cloud Execution
+
 - Initiated automatically through **Jenkins pipelines** for continuous integration.
 
 ---
 
-##  Jenkins CI/CD Workflow (Cloud Execution)
+## Jenkins CI/CD Workflow (Cloud Execution)
 
-### Steps:
+### Steps
+
 1. **WMStudio**
     - Downloads the zipped React Native project.
 
@@ -59,26 +63,26 @@ Tests can be executed in two environments:
 
 ---
 
-##  Reporting
+## Reporting
 
 - **Allure Report** is used to visualize:
-    - Test status (pass/fail/skip)
+  - Test status (pass/fail/skip)
     - Execution logs
     - Screenshots of test failures
+
 ---
 
 ## Visual Testing
 
 We also execute Visual tests using Pixel Match node library in WebDriverIO framework itself to validate layout consistency and UX.
-It compares the baseline screenshots with the actual screenshots.
+It compares the baseline screenshots with the actual screenshots
+
 ---
 
-### Test Coverage 
+### Test Coverage
 
 - Functional Scenarios
 - Widget UI interactions
 - Services Integration testing
 - Regressions and critical flows
 - Sanity testing
-
-

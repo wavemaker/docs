@@ -5,9 +5,7 @@ id: "react-native-manual-testing-overview"
 ---
 ---
 
-
 To ensure app quality, stability, and usability across iOS and Android platforms, we thoroughly validate all key testing modules, including Functional, UI/UX, Performance, Accessibility, and more.
-
 
 ### Scope of Testing
 
@@ -29,7 +27,7 @@ Manual test cases are executed for:
 - Regression Testing
 - Sanity Testing
 
-#### Testing conducted on:
+#### Testing conducted on
 
 - Real devices
 - Emulators

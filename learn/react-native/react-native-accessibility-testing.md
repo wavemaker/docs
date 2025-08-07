@@ -7,12 +7,13 @@ id: "react-native-accesibility-testing"
 
 ## Accessibility Testing Strategy for WaveMaker Applications
 
-We perform accessibility testing for WaveMaker mobile applications using both BrowserStack and locally. 
+We perform accessibility testing for WaveMaker mobile applications using both BrowserStack and locally.
 The process includes:
+
 - Inspecting and verifying accessibility compliance across different devices and screen readers.
 - Testing using BrowserStack accessibility tools and local emulator/simulator setups.
 - Validating key aspects such as screen reader compatibility, keyboard navigation etc
-- Reporting any accessibility issues or failures to the development team for resolution. 
+- Reporting any accessibility issues or failures to the development team for resolution.
 - This helps ensure our applications are inclusive and usable by all users, in alignment with accessibility guidelines like WCAG.
 
 ## How to Set Accessibility Hint in Studio
@@ -31,4 +32,4 @@ This Hint will now be read aloud by the screen reader when the user focuses on t
 For more details, Please refer [Accessibility in WaveMaker](/learn/react-native/accessibility-support.md)
 
 *Reference Video*
-https://drive.google.com/file/d/1Tezr1WQ68PZhMFmW-rKdi07K9wpUtJTc/view
+<https://drive.google.com/file/d/1Tezr1WQ68PZhMFmW-rKdi07K9wpUtJTc/view>
