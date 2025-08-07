@@ -139,9 +139,9 @@ describe('React Native App Launch', () => {
 <!-- end list -->
 -----
 
-## Sample wdio.conf.js Configuration
+## Sample WebdriverIO Configuration
 
-Below is a sample wdio.conf.js for Android: 
+Below is a sample `wdio.conf.js` for Android:
 
 ```javascript
 exports.config = {
