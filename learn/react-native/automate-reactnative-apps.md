@@ -1,0 +1,231 @@
+---
+id: "automate-rn-mobile-apps"
+title: "Automate testing of WaveMaker mobile apps using Appium"
+sidebar_label: "Automate testing of WaveMaker mobile apps using Appium"
+---
+
+# Automate testing of WaveMaker mobile apps using Appium
+
+-----
+
+## Introduction
+
+Appium is an open-source tool for automating testing of native, mobile web, and hybrid applications on iOS mobile, Android mobile, and Windows desktop platforms. 
+
+WaveMaker mobile applications are hybrid mobile applications and can be easily tested using Appium.  This document outlines the steps to configure mobile automation testing for React Native applications using Appium, Android Studio, and WebdriverIO. 
+
+## Prerequisites
+Ensure the following tools are installed and properly configured on your system before proceeding. 
+
+### 1\. Node.js and npm
+
+Install Node.js (v16 or higher is recommended), which comes with npm. 
+
+```
+node -v
+npm -v
+```
+
+Download: [https://nodejs.org/](https://www.google.com/url?sa=E&source=gmail&q=https://nodejs.org/) 
+
+-----
+
+### 2\. Java JDK
+
+Install Java Development Kit (JDK) -- version 11 or above.
+
+```
+java -version
+```
+Download: [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.google.com/url?sa=E&source=gmail&q=https://www.oracle.com/java/technologies/javase-downloads.html) 
+
+-----
+
+### 3\. Android Studio
+
+Install Android Studio to get the Android SDK and emulator tools. 
+
+* Ensure ANDROID\_HOME environment variable is set. 
+* Add the following paths to your environment variables: 
+
+<!-- end list -->
+
+```
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+
+Download: [https://developer.android.com/studio](https://www.google.com/url?sa=E&source=gmail&q=https://developer.android.com/studio) 
+
+Note: Ensure you install the required SDK Platform Tools and emulator images from SDK Manager. 
+
+-----
+
+### 4\. Appium
+
+Install Appium globally using npm: 
+
+```
+npm install -g appium
+```
+
+Verify installation: 
+
+```
+appium -v
+```
+
+You can also use the Appium Desktop for GUI interaction : Download: [https://github.com/appium/appium-desktop](https://www.google.com/url?sa=E&source=gmail&q=https://github.com/appium/appium-desktop) 
+
+### 5\. WebdriverIO CLI
+
+Install WebdriverIO CLI globally: 
+
+```
+npm install -g @wdio/cli
+```
+
+Create your project and run the configuration wizard: 
+
+```
+npx wdio config
+```
+
+During setup, It will ask to choose options for multiple parameters: 
+Here are some of the important parameters, you have to choose.
+
+* Test Framework: Mocha or Jasmine 
+* Reporter: spec 
+* Services: appium 
+* Path: /wd/hub 
+
+-----
+
+## Project Setup
+
+1.  Initialize your test project (if not already): 
+
+<!-- end list -->
+
+```
+npm init -y
+```
+
+2.  Install required dependencies: 
+
+<!-- end list -->
+
+```
+npm install @wdio/cli @wdio/local-runner @wdio/mocha-framework @wdio/spec-reporter @wdio/appium-service appium --save-dev
+```
+
+3.  Add test specs 
+    Create your test file in `./test/specs/example.e2e.js` 
+
+<!-- end list -->
+
+```javascript
+describe('React Native App Launch', () => {
+    it('should launch the app and show the welcome screen', async () => {
+        await expect($('~welcome')).toBeDisplayed();
+    });
+});
+```
+
+-----
+
+## Sample wdio.conf.js Configuration
+
+Below is a sample wdio.conf.js for Android: 
+
+```javascript
+exports.config = {
+    runner: 'local',
+    path: '/wd/hub',
+    specs: ['./test/specs/**/*.js'],
+    maxInstances: 1,
+    capabilities: [{
+        platformName: 'Android',
+        'appium:deviceName': 'Android Emulator',
+        'appium:platformVersion': '11.0',
+        'appium:app': '/path/to/your/app.apk',
+        'appium:automationName': 'UiAutomator2'
+    }],
+    logLevel: 'info',
+    framework: 'mocha',
+    reporters: ['spec'],
+    services: ['appium'],
+};
+```
+
+-----
+
+## Running the Tests
+
+1.  Start the Android emulator from Android Studio or the CLI. 
+2.  Start Appium server: 
+
+<!-- end list -->
+
+```
+appium
+```
+
+3.  Run the WebdriverIO test: 
+
+<!-- end list -->
+
+```
+npx wdio run wdio.conf.js
+```
+
+## Quick Example
+
+### TestCase 
+This Test will attempt to log in to the application.  We need to fill in the Username & Password and click on the Login button.  We will verify if the Login is successful. 
+
+* Launch the application in the Android Studio emulator, 
+
+* Launch the Appium Inspector, and switch to uiautomatorviewer in the Appium Inspector.
+
+![Appium_Inspector](/learn/assets/appium-automation-inspector.png)
+
+
+
+* Obtain the AccessibilityIDs of Username, Password, and Log in button as shown above. 
+
+<!-- end list -->
+
+```javascript
+login = async (username: string, password: string) => {
+    const userNameField = await $('~username'); // Replace with actual accessibility ID or selector
+    const passwordField = await $('~password'); // Replace with actual accessibility ID or selector
+    const loginButton = await $('~login');      // Replace with actual accessibility ID or selector
+
+    await userNameField.setValue(username);
+    await passwordField.setValue(password);
+    await driver.hideKeyboard(); // optional
+    await loginButton.click();
+};
+```
+
+
+## Sample Automation Framework
+
+We have created a sample automation framework to execute a single testcase.
+All you have to do is,
+
+- Get the setup ready
+- Generate apk of an application
+- Download the below zip,
+  ![Appium_Framework](/learn/assets/appium-automation-framework-zip.zip)
+
+- Write a testcase using the above mentioned process and execute it.
+
+## Execution*
+
+![Appium_Execution](/learn/assets/appium-automation-brightbank-login-execution.gif)
+
