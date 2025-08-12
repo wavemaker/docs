@@ -47,20 +47,44 @@ To push your local changes to Studio (and pull updates from Studio), you need to
 Following software must be installed and configured on your system.
 - [**Git**](https://git-scm.com/downloads)
 - [**JDK**](https://www.oracle.com/in/java/technologies/downloads/)
-- [**Maven**](https://maven.apache.org/download.cgi)
+- [**Maven**](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 
-### Initialize Workspace Sync
+### Initialize WaveMaker Workspace Sync
 1. Open a terminal in your project’s root directory.  
 2. Run:
    ```bash
    mvn wavemaker-workspace:init
    ```
-3. When prompted, provide:
+3. Press `y` when prompted.
+4. When prompted, provide:
     - WaveMaker Studio Host URL
     - Your login credentials using Email & Password or a Token (Token can be generated at `https://<WaveMaker_Studio_Host>/studio/services/auth/token`)
+5. When prompted, select the correct project number.
 
-4. Keep your WaveMaker Studio session open until the sync completes.
-<!-- 5. When prompted, select the correct project number. -->
+:::note
+- Host URL is the domain of your WaveMaker Studio.
+- You must keep your WaveMaker Studio session open until the sync completes.
+:::
+
+<div style={{ position: "relative", paddingBottom: "56.25%" }}>
+  <iframe
+    style={{
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      left: 0,
+      top: 0,
+      borderRadius: 10
+    }}
+    src="https://embed.app.guidde.com/playbooks/6fF6J1P3wxUSZ15wf8k3KB"
+    title="Initialize WaveMaker Workspace Sync"
+    frameBorder={0}
+    referrerPolicy="unsafe-url"
+    allowFullScreen="true"
+    allow="clipboard-write"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+  />
+</div>
 
 ## 3. Sync Commands
 
