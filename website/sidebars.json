@@ -892,6 +892,13 @@
 						"react-native/oauth-silent-sso-with-pkce",
 						"react-native/oauth-silent-sso-example"
 					]
+				},
+				{
+					"type": "category",
+					"label": "WMX Widgets",
+					"items": [
+						"react-native/wmx-docs/wmx-overview"
+					]
 				}
 			  ]
 		},
