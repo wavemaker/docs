@@ -1,12 +1,21 @@
 ---
 id: "overview"
-title: "Design Tokens Style Workspace"
+title: "Design System"
 sidebar_label: "Introduction to Design Tokens"
 ---
 
-Design tokens in WaveMaker let you define and reuse styles like colors, fonts, and spacing in one place, making it easy to keep your app consistent, theme-ready, and developer-friendly across web and mobile.
+import Design_Token_System from '/learn/assets/design-token-components.png';
 
-Tokens are defined and can be applied to the overall theme and individual components, allowing you to visually preview how they will appear in your app.
+What is Design System? 
+
+Design System is a framework that helps you create a consistent application theme, with ability to quickly apply changes through tokens. These tokens include colors, typography, and sizes, and are interconnected with components, so any updates to these tokens are automatically reflected across the entire app.
+
+<img src={Design_Token_System} style={{width:"35%"}} />
+
+
+**Token**: A token is usually connected to a specific part of a component, like its color, size, or font. So instead of setting these styles directly on each component, you define them once as tokens. When a token changes, anything using it updates automatically. This helps keep the design consistent and makes it easier to make changes across the whole app.
+
+**Component**: A component is a reusable piece of the user interface, like a button, input field, card, or header, that has a specific function and appearance. It combines structure (HTML or layout), behavior (like what happens when you click), and style (colors, fonts, spacing). Components use tokens to apply consistent design rules across the app.
 
 ![](/learn/assets/style-workspace-visual-edit.png)
 
