@@ -897,7 +897,8 @@
 					"type": "category",
 					"label": "WMX Widgets",
 					"items": [
-						"react-native/wmx-docs/wmx-overview"
+						"react-native/wmx-docs/wmx-overview",
+						"react-native/wmx-docs/local-dev-setup"
 					]
 				}
 			  ]
