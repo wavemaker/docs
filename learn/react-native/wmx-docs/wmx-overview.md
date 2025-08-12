@@ -68,8 +68,9 @@ This custom component is then **automatically wrapped** by a WMX Widget, which m
 
 ## Limitations
 
-- WMX Widgets are not rendered in WaveMaker Studio. A placeholder widget is shown on the Canvas.
-- WMX Widget cannot import components that allow dropping of component on it. Ex: Tabs, Accordions, containers etc.,
-- WMX Widgets cannot be used in forms.
-- WMX Widgets are written in underlying core  framework (ex: React Native). So, these are not portable to apps that use other framework (Angular , React, Lynx) etc.
+- **No Studio Rendering:** WMX Widgets do not render their actual UI in WaveMaker Studio; a placeholder is shown on the Canvas.
+- **No Drop-in Containers:** Cannot be used to create container widgets that accept child components (e.g., Tabs, Accordions, Layout Containers).
+- **No Form Integration:** Cannot be added inside WaveMaker forms or used as form fields.
+- **Framework-Specific:** Built with React Native and not portable to apps using other frameworks (e.g., Angular, React Web, Lynx).
+
 
