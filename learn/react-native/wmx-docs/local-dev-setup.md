@@ -43,7 +43,11 @@ Therefore, before developing a WMX Widget, you need to set up your project local
 To push your local changes to Studio (and pull updates from Studio), you need to set up **[Project Sync](https://docs.wavemaker.com/learn/how-tos/synchronizing-wavemaker-apps-ides-beta/)**.
 
 ### Prerequisites
-- **Git** must be installed on your system.
+
+Following software must be installed and configured on your system.
+- [**Git**](https://git-scm.com/downloads)
+- [**JDK**](https://www.oracle.com/in/java/technologies/downloads/)
+- [**Maven**](https://maven.apache.org/download.cgi)
 
 ### Initialize Workspace Sync
 1. Open a terminal in your project’s root directory.  
@@ -53,10 +57,10 @@ To push your local changes to Studio (and pull updates from Studio), you need to
    ```
 3. When prompted, provide:
     - WaveMaker Studio Host URL
-    - Your login credentials using Email & Password or a Token (Token can be generated at `https://<WaveMaker_Studio_Host>/studio/services/auth/token`
+    - Your login credentials using Email & Password or a Token (Token can be generated at `https://<WaveMaker_Studio_Host>/studio/services/auth/token`)
 
 4. Keep your WaveMaker Studio session open until the sync completes.
-5. When prompted, select the correct project number.
+<!-- 5. When prompted, select the correct project number. -->
 
 ## 3. Sync Commands
 
