@@ -116,7 +116,7 @@ async function getNotifications() {
     );
     messaging.requestPermission().then((authorizationStatus) => {
         if (authorizationStatus) {
-            ReactNative.Alert.alert('Permission status:', authorizationStatus);
+	ReactNative.Alert.alert('Permission status:', JSON.stringify(authorizationStatus));
         }
     });
     let fcmtoken = await messaging.getToken();

@@ -885,7 +885,15 @@
 				"react-native/custom-js-modules",
 				"react-native/third-party-expo-plugins",
 				"react-native/ssl-pinning",
-				"react-native/error-handling"
+				"react-native/error-handling",
+				{
+					"type": "category",
+					"label": "Authentication",
+					"items": [
+						"react-native/oauth-silent-sso-with-pkce",
+						"react-native/oauth-silent-sso-example"
+					]
+				}
 			  ]
 		},
 		{
@@ -1610,6 +1618,7 @@
 					"type": "category",
 					"label": "Versions: 11.11.x",
 					"items": [
+						"wavemaker-release-notes/v11-11-7",
 						"wavemaker-release-notes/v11-11-6",
 						"wavemaker-release-notes/v11-11-5",
 						"wavemaker-release-notes/v11-11-4",
