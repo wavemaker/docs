@@ -4,15 +4,15 @@ id: "prefabs-overview"
 sidebar_label: "Prefabs Overview"
 ---
 ---
-**Prefab** is a reusable, distributable component of an application, which can be tested independently. It can interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease.
+**Prefab** is a reusable, distributable component of an application, and can be tested independently. It can interact with APIs and data on the web. Prefabs can be embedded and integrated into your applications with ease.
 
 [![](/learn/assets/prefab2.png)](/learn/assets/prefab2.png)
 
 In this document the following topics related to Prefabs are covered:
 
-- the [What](#prefabs-example), [Why](#prefab-benefits) and [How](#prefab-anatomy) of a Prefab,
+- The [What](#prefabs-example), [Why](#prefab-benefits) and [How](#prefab-anatomy) of a Prefab,
 - [various features](#prefab-features) of a Prefab,
-- using Prefabs in your application by [publishing](#publishing-prefabs) and [importing](#importing-prefabs), and
+- Using Prefabs in your application by [publishing](#publishing-prefabs) and [importing](#importing-prefabs), and
 - [structure](#files-prefabs) of the Prefab code.
 
 ## Understanding Prefabs - An Example
