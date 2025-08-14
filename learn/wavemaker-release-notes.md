@@ -21,7 +21,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 |Named Version| What's in it| Release Date|
 |---|---|---|
-|[WaveMaker 11.11.8](/learn/wavemaker-release-notes/v11-11-8) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.11.8 introduces enhanced customization and stability to React Native apps. Key updates include navigation bar styling in Edge-to-Edge mode, improved fallback UI, and fixes for scroll, layout, and accessibility issues. | 11 August 2025 |
+|[WaveMaker 11.12.0](/learn/wavemaker-release-notes/v11-12-0) <p style={{color:"red"}}>*latest*</p> | WaveMaker 11.12.0 introduces WMX Widgets, enabling seamless use of custom React Native components as native WaveMaker widgets. Optimized React Native app and build processes now deliver smaller APKs, faster performance, and lighter apps. This update also brings UI enhancements and key fixes across Web, React Native, and Studio. | 18 August 2025 |
 |[WaveMaker 11.11.7](/learn/wavemaker-release-notes/v11-11-7) | WaveMaker 11.11.7 introduces key features like dynamic i18n messages, mTLS configuration via Studio, and an enhanced React Native splash screen setup.This release also includes several bug fixes across Web and React Native, improving UI flexibility and app stability. | 28 July 2025 |
 |[WaveMaker 11.11.6](/learn/wavemaker-release-notes/v11-11-6) | WaveMaker's Release 11.11.6 introduces global error handling in mobile apps to prevent crashes, new React Native enhancements, and delivers several bug fixes across web and mobile app. | 14 July 2025 |
 |[WaveMaker 11.11.5](/learn/wavemaker-release-notes/v11-11-5) | WaveMaker's Release 11.11.5 includes Edge-to-Edge UI and a new Bottom Sheet widget for React Native apps, along with key enhancements like page size selection in Data Table, Custom Label marker in Slider Widget, and read-only mode in Form. Several bug fixes improve behavior across Studio, Web, and React Native. | 30 June 2025 |
@@ -163,7 +163,7 @@ Follow our [team blog](/learn/blog) to learn product updates from the engineers 
 
 ## Technology Stack
 
-Last updated: [WaveMaker 11.11.1](/learn/wavemaker-release-notes/v11-11-1)
+Last updated: [WaveMaker 11.12.0](/learn/wavemaker-release-notes/v11-12-0)
 
 ---
 
@@ -190,25 +190,25 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 
 | Description | Java Library | Version |
 | --- | --- |--------------------|
-|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.5 -> 6.2.6 </td> |
-| Security framework | Spring Security | <td className="versiontdbgcolor">6.4.4 -> 6.4.5 </td> |
-|  | Spring Data | <td className="versiontdbgcolor">2024.1.4 -> 2024.1.5 </td> |
-|  | Spring Boot |  <td className="versiontdbgcolor">  3.4.4 -> 3.4.5 </td> |
-|  | Spring Session | <td className="versiontdbgcolor"> 3.4.2 -> 3.4.3 </td>|
-| Java JSON utilities | Gson  | <td className="versiontdbgcolor"> 2.13.0 -> 2.13.1 </td> |
+|  | Spring Framework | <td className="versiontdbgcolor"> 6.2.6 -> 6.2.9 </td>|
+| Security framework | Spring Security | <td className="versiontdbgcolor">6.4.5 -> 6.4.8</td> |
+|  | Spring Data | 2024.1.5 |
+|  | Spring Boot | 3.4.5 |
+|  | Spring Session | 3.4.3 |
+| Java JSON utilities | Gson  | 2.13.1  |
 | DB Persistence library | Hibernate(Jakarta) | 5.6.15. Final   |
 | Sample database | HSQL | 2.7.4 |
-| JSON library | Jackson |   <td className="versiontdbgcolor"> 2.18.3 -> 2.19.0 </td> |
+| JSON library | Jackson | 2.19.0 |
 | Logging framework | SLF4j | 2.0.17 |
 | Logging Implementation | Log4j2 | 2.24.3 |
-| Http client library  | HttpComponents -  httpclient | <td className="versiontdbgcolor"> 5.4.3 -> 5.4.4 </td> |
+| Http client library  | HttpComponents -  httpclient | 5.4.4 |
 | Servlet Framework |  | 6.0.0 |
 | Database Connection Pooling | HikariCP | 6.3.0 |
-|  | Commons Lang3 | 3.17.0  |
+|  | Commons Lang3 | <td className="versiontdbgcolor">3.17.0 -> 3.18.0</td> |
 |  | Guava | 33.4.8-jre |
 |  | Postgresql Driver  | 42.7.4  |
 |  | Hibernate Validator | 8.0.2.Final |
-|  | Jgit | 7.2.0.202503040940-r |
+|  | Jgit | <td className="versiontdbgcolor"> 7.2.0.202503040940-r -> 7.3.0.202506031305-r </td>|
 |  | Commons Codec | 1.18.0 |
 |  | Commons IO | 2.19.0 |
 |  | Commons Text |  1.13.1 |
@@ -218,7 +218,8 @@ Optimized jQuery-UI library excluding unwanted components like accordion, datepi
 |  | Mariadb JDBC Driver | 3.5.2 |
 |  | Mongodb Driver | 5.4.0 |
 |  | Jakarta Validation Api | 3.1.1 |
-
+|  | commons-validator | <td className="versiontdbgcolor"> 1.9.0 -> 1.10.0 </td>|
+|  | json-smart | <td className="versiontdbgcolor"> 2.5.1 -> 2.5.2 </td>|
 
 ## Web
 
@@ -244,11 +245,12 @@ This is the default Tomcat runtime support. Apps can be deployed to any standard
 |npm | 10.9.0 |
 |Ant| 1.10.11|
 
+For more information about building projects with Maven, see [here](/learn/app-development/deployment/building-with-maven).
+
 
 ## Mobile (React Native)
 
 ### Environment Setup
-
 
 |Description|	Version|
 |---|---|
