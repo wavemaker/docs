@@ -138,7 +138,7 @@ For all queries and procedures, there will be a Rest API generated with the Serv
 
 Both _Request_ and _Response_ POJO classes are generated as: `<procedureName>Request/Response`
 
-1. These classes are generated in a package: `<service_packagegt;.models.procedure`
+1. These classes are generated in a package: `<service_package>.models.procedure`
 2. Response classes generated for all procedures having at least one return property i.e OUT parameter or cursor.    
 
     **Example**:  

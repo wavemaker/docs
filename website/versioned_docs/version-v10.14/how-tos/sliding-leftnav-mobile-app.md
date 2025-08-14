@@ -37,7 +37,7 @@ Hence, the markup should look as follows:
 ```
 4. Navigate to the Style tab of the properties panel and set the Class Name property for this grid column as “hidden”. [![](/learn/assets/sliding_leftnav3.png)](/learn/assets/sliding_leftnav3.png)
 5. Open the Style tab of the Main page [![](/learn/assets/sliding_leftnav5.png)](/learn/assets/sliding_leftnav5.png) and write the following style snippet:
-    
+```css    
     @media only screen and (max-width: 480px) and (min-width: 299px) {
         .leftnavcolumn {
             display: none !important;
@@ -56,7 +56,7 @@ Hence, the markup should look as follows:
             width: 100% !important;
         }
     }
-    
+```    
 6. Open the topnav partial page and add an anchor widget. Specify the icon Class as “wi wi-list-ol” for the newly added anchor. [![](/learn/assets/sliding_leftnav6.png)](/learn/assets/sliding_leftnav6.png) [![](/learn/assets/sliding_leftnav7.png)](/learn/assets/sliding_leftnav7.png)
 7. Choose the newly added anchor from the topnav and navigate to the properties panel. [![](/learn/assets/sliding_leftnav8.png)](/learn/assets/sliding_leftnav8.png)
 8. For the onClick event of the anchor, choose JavaScript as operation. For the function generated in the Script tab of the page, place the below mentioned code snippet:

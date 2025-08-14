@@ -37,7 +37,7 @@ Git has to be installed on your local machine where you want to run this plugin.
     - Username & Password which would require:
         - **user email** - WaveMaker account which has access to the required project and
         - **password **of the WaveMaker account.
-    - Token - For this, you need to have an active WaveMaker session. Use the URL <https://www.wavemakeronline.com/studio/services/auth/token> to obtain 
+    - Token - For this, you need to have an active WaveMaker session. Use the URL `<https://www.wavemakeronline.com/studio/services/auth/token>` to obtain 
     token value and enter it at the prompt. Do not log out of the WaveMaker session till you complete the complete the synchronization.
     
 **[![](/learn/assets/InitFlow.jpg)](/learn/assets/InitFlow.jpg)**

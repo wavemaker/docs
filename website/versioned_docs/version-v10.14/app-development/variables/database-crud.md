@@ -300,7 +300,7 @@ This method makes a call to the Live Service to delete the passed record in the 
 
 **Parameters**:
 
-- **options**(object): This object can have optional fields as row - record object to be deleted as {"key":"value"}
+- **options**(object): This object can have optional fields as row - record object to be deleted as `{"key":"value"}`
 - **successCallback**(method): callback method called on successful invocation of the variable.
 - **errorCallback**(method): callback method called if an error is encountered while invocation.
 
@@ -377,7 +377,7 @@ var lv = Page.Variables.HrdbEmployeeData;
 
 This method can also be used to set all the specified key-value pairs as input fields in the variable.
 
-**Parameters**: inputData(object) object or key-value pairs {“key”: “value”,…}
+**Parameters**: inputData(object) object or key-value pairs `{“key”: “value”,…}`
 
 **Return Value**: Updated inputFields object
 
@@ -414,7 +414,7 @@ var lv = Page.Variables.HrdbEmployeeData;
 
 This method can also be used to set all the specified key-value pairs as filter fields in the variable.
 
-**Parameters**: inputData(object) object or key-value pairs {“key”: “value”,…}
+**Parameters**: inputData(object) object or key-value pairs `{“key”: “value”,…}`
 
 **Return Value**: Updated filterFields object
 
