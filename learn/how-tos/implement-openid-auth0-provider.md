@@ -47,6 +47,9 @@ Below are the steps to create an application in Auth0 Developer.
 
 :::note
 - **Redirect URL:** Redirect endpoint is the URL to which the client receives the response
+- Redirect URL is pre-populated by WaveMaker and is not editable. You need to copy this link and use it to as the callback URL in Provider app settings page when you register the app.
+- If the application is deployed outside of WaveMaker then the redirect URL for the deployed applications will be in the below format. 
+  **"https://<domain_name>/<app_name>/oauth2/code/{providerid}"**.
 :::
 
 [![](/learn/assets/auth0-redirectURL.png)](/learn/assets/auth0-redirectURL.png)
