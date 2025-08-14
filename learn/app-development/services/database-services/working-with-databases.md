@@ -98,11 +98,11 @@ Once you have your app integrated with a database, schema information will be pe
 
 | Action | Description |
 | ---- | --- |
-| **Re-Import Database** |Re-Import Database will rewrite the db in your workspace with the actual db thus reverting any changes. It deletes the draft and generates the data model with given database details. |
-|**Export Database**  |Export Database will update the db with the changes from your workspace ie the draft database. |
-|**Save Database**  |Save Database will save the db in your app workspace, this is the draft copy of the database solely available to your app. |
-|**Update Database**  | Update Database will update the db with the changes from your workspace and incorporate changes made by any other collaborator (provided they have exported the changes). <br/> This option is available after you make changes to the database schema from the design tab of the database designer. |
-|**Revert Database**  | Revert Database will revert the db and delete the changes from your workspace. This option is available after you make changes to the database schema from the design tab of the database designer. |
+| **Re-Import Database** |Re-Import Database rewrites the db in your workspace with the actual db thus reverting any changes. It deletes the draft and generates the data model with given database details. |
+|**Export Database**  |Export Database updates the db with the changes from your workspace ie the draft database. |
+|**Save Database**  |Save Database saves the db in your app workspace, this is the draft copy of the database solely available to your app. |
+|**Update Database**  | Update Database updates the db with the changes from your workspace and incorporate changes made by any other collaborator (provided they have exported the changes). <br/> This option is available after you make changes to the database schema from the Properties panel in the Design tab of the database designer. |
+|**Revert Database**  | Revert Database reverts the db and deletes the changes from your workspace. This option is available after you make changes to the database schema from the Properties panel in the Design tab of the database designer. |
 
 ## Increasing Database Transaction Timeout
 
