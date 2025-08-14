@@ -1399,7 +1399,14 @@
 			"type": "category",
 			"label": "Basic Widgets",
 			"items": [
-				"app-development/widgets/basic/label",
+			  {
+				"type": "category",
+				"label": "Label",
+				"items": [
+					"app-development/widgets/basic/label",
+					"how-tos/label-text-formatting"
+				]
+				},
 				"app-development/widgets/basic/anchor",
 				"app-development/widgets/basic/icon",
 				"app-development/widgets/basic/picture",
