@@ -5,8 +5,7 @@ sidebar_label: "Local Dev Setup"
 ---
 ---
 
-Currently, WaveMaker Studio does not provide a direct UI for adding custom components.  
-Therefore, before developing a WMX Widget, you need to set up your project locally so you can add the component directly into the WaveMaker project files. Once added, you can push your changes back to Studio and start using the new WMX Widget in your app.
+Before developing a WMX Widget, you need to set up your project locally so you can add the component directly into the WaveMaker project files. Once added, you can push your changes back to Studio and start using the new WMX Widget in your app.
 
 ## 1. Set Up the Project Locally
 
