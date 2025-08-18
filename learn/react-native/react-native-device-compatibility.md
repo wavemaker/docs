@@ -3,6 +3,7 @@ title: "Device Compatibilty Testing"
 sidebar_label: "Device Compatibility Testing"
 id: "react-native-device-compatibility"                                                 
 ---
+---
 
 To ensure consistent functionality and user experience across a diverse device ecosystem, device compatibility testing is a crucial part of our testing strategy. WaveMaker mobile applications are tested on a wide range of Android and iOS devices with varying screen sizes, resolutions, and operating system versions. This helps identify UI misalignments, functional inconsistencies, and OS-specific issues early in the development cycle.
 
@@ -20,7 +21,6 @@ To ensure consistent functionality and user experience across a diverse device e
 | Android  | 9           | Google Pixel 3      |15                   | Google Pixel 8 Pro  |
 | iOS      | 16          | iPhone 10           |18                   | iPhone 16  |
 
----
 
 ## Automation Testing Devices (via BrowserStack)
 
@@ -31,7 +31,6 @@ To ensure consistent functionality and user experience across a diverse device e
 | iOS (Minimum)      | 16    | iPhone 10             |
 | iOS (Latest)      | 18   | iPhone 16             |
 
----
 
 ### Physical Devices (Manual Testing)
 

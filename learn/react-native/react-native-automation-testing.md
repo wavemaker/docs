@@ -1,15 +1,13 @@
 ---
-title: "Automation Testing"
+title: "Automation Testing Framework"
 sidebar_label: "Automation Testing"
 id: "react-native-automation-testing"
 ---
 ---
 
-## Automation Architecture - Testing Framework
-
 This document outlines the complete automation framework designed for testing React Native mobile applications, leveraging tools such as Appium, WebDriverIO, Mocha, Jenkins, BrowserStack, and Allure Reports.
 
-## Architecture
+## Automation Architecture
 
 ![Appium_Architecture](/learn/assets/appium-automation-architecture.png)
 
@@ -23,7 +21,7 @@ The process begins with a test suite that includes all test cases written in Jav
 - **WebDriverIO (WDIO)**: Test configuration and execution tool.
 - **Appium**: Test automation tool for Android and iOS apps.
 
----
+
 
 ## Test Execution
 
@@ -40,7 +38,7 @@ Tests can be executed in two environments:
 
 - Initiated automatically through Jenkins pipelines for continuous integration.
 
----
+
 
 ## Jenkins CI/CD Workflow (Cloud Execution)
 
@@ -61,7 +59,7 @@ Tests can be executed in two environments:
 5. **Allure Report**
     - Generates detailed reports post-execution.
 
----
+
 
 ## Reporting
 
@@ -70,14 +68,14 @@ Tests can be executed in two environments:
     - Execution logs
     - Screenshots of test failures
 
----
+
 
 ## Visual Testing
 
 We also execute Visual tests using Pixel Match node library in WebDriverIO framework itself to validate layout consistency and UX.
 It compares the baseline screenshots with the actual screenshots
 
----
+
 
 ### Test Coverage
 

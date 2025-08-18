@@ -1,11 +1,9 @@
 ---
 id: "automate-reactnative-apps"
-title: "Automate testing of WaveMaker mobile apps using Appium"
-sidebar_label: "Automate testing of WaveMaker mobile apps using Appium"
+title: "Automate Testing of WaveMaker Mobile Apps Using Appium"
+sidebar_label: "Automate Testing - Appium"
 ---
-
-
-## Introduction
+---
 
 Appium is an open-source tool for automating testing of native, mobile web, and hybrid applications on iOS mobile, Android mobile, and Windows desktop platforms.
 
@@ -26,7 +24,7 @@ npm -v
 
 Download: [https://nodejs.org/](https://www.google.com/url?sa=E&source=gmail&q=https://nodejs.org/)
 
------
+
 
 ### 2 Java JDK
 
@@ -38,7 +36,7 @@ java -version
 
 Download: [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.google.com/url?sa=E&source=gmail&q=https://www.oracle.com/java/technologies/javase-downloads.html)
 
------
+
 
 ### 3 Android Studio
 
@@ -61,7 +59,7 @@ Download: [https://developer.android.com/studio](https://www.google.com/url?sa=E
 
 Note: Ensure you install the required SDK Platform Tools and emulator images from SDK Manager.
 
------
+
 
 ### 4 Appium
 
@@ -105,7 +103,7 @@ Here are some of the important parameters you have to choose:
 * Services: appium
 * Path: /wd/hub
 
------
+
 
 ## Project Setup
 
@@ -134,8 +132,6 @@ describe('React Native App Launch', () => {
 });
 ```
 
------ 
-
 ## Sample WebdriverIO Configuration
 
 Below is a sample `wdio.conf.js` for Android:
@@ -160,7 +156,7 @@ exports.config = {
 };
 ```
 
------
+
 
 ## Running the Tests
 
