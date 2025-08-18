@@ -58,11 +58,17 @@ This custom component is then **automatically wrapped** by a WMX Widget, which m
 ---
 
 ## Quick Workflow
-1. Export your project from Studio.
-2. Set up **Project Sync** with your IDE.
-3. Create your component in `src/main/webapp/extensions/components/src` with the required files.
-4. Build & push changes back to Studio.
-5. Drag and use your custom widget from the **WMX Widgets** panel in Studio.
+
+```mermaid
+flowchart TD
+    A[Export project from Studio]
+    B[Set up Project Sync with your IDE]
+    C[Create component in<br><code>src/main/webapp/extensions/components/src</code>]
+    D[Build and push changes back to Studio]
+    E[Drag and use custom widget from<br><strong>WMX Widgets panel</strong> in Studio]
+
+    A --> B --> C --> D --> E
+```
 
 ---
 
