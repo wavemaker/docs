@@ -47,6 +47,7 @@ You can easily change the layout of the options inside the CheckboxSet, so that 
 | Disabled | If the disabled property is true (checked) the widget becomes display-only and user input will not be accepted. It can also set programmatically by binding it to a boolean type variable. |
 | Collapsible | Enable control for collapsing and expanding the group. |
 | Show Count | To display the number of items within the group. |
+| Skip on change event from script | When enabled, the `Change` callback will only trigger when the user updates the value from the UI, and not when it's updated through scripts. This property is disabled by default. |
 
 ## Events
 

@@ -40,8 +40,10 @@ id: "rating-widget"
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Show Captions | Captions for Rating widget are shown only when this property is set. |
+| Skip on change event from script | When enabled, the `Change` callback will only trigger when the user updates the value from the UI, and not when it's updated through scripts. This property is disabled by default. |
 | **Graphics** |
 | Icon Size | This property defines the size of the icon. Value has to be specified along with the units (em or px). |
+
 
 ## Events
 
