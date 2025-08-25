@@ -41,6 +41,7 @@ id: "slider"
 | Tooltip expression | This property is used to get and customize the text displayed in the tooltip associated with the range value. |
 | Showmarkers | This property can be used to control whether a marker or indicator is displayed on the Slider widget. |
 | Showtooltip | Enable this property to show the tooltip for the applied range. |
+| Marker Text | Titles can be used as markers in the slider. This property applies when showmarkers is true. |
 
 - Range
 - Datatype - number or dataset
@@ -51,6 +52,7 @@ id: "slider"
 - Tooltip expression - value on top of the thumb
 - Showmarkers - display the scale 
 - Showtooltip - whether to display tooltip or not
+- Marker Text - title for markers
 
 
 **Shortcut key**: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
