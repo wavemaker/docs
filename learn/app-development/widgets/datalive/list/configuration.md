@@ -5,7 +5,7 @@ sidebar_label: "Configuration"
 ---
 ---
 
-import listItemsPerRow from 'learn/assets/react-native/listItemsPerRow.png';
+import listItemsPerRow from '/learn/assets/react-native/listItemsPerRow.png';
 
 ## Items per Row
 
