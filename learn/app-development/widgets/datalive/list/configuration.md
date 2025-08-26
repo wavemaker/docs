@@ -14,7 +14,7 @@ import listItemsPerRow from '/learn/assets/react-native/listItemsPerRow.png';
 
 - **Responsive (React Native Only):** The **Items per row** property is only applied if the **Responsive** property is enabled. By default, it is disabled.
 
- - **Fallback (React Native Only):** Enable this property to automatically use the **Items per row value** from the next closest smaller screen size when one is not specified for the current screen size.
+- **Fallback (React Native Only):** Enable this property to automatically use the **Items per row value** from the next closest smaller screen size when one is not specified for the current screen size.
 
 <img src={listItemsPerRow} alt="Item Per Row in Studio"/>
 
