@@ -45,6 +45,7 @@ Number widget applies the number formatting as per the Locale automatically. In 
 | Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. |
 | Allow Trailing Zeros | This property specifies whether to keep trailing zeros after decimal point or not.|
 | Update value on | If the selected value is `blur`: data value will be updated on blur event, `default`: data value will be updated on key up. |
+| Skip on change event from script | When enabled, the `Change` callback will only trigger when the user updates the value from the UI, and not when it's updated through scripts. This property is disabled by default. |
 
 ## Events
 
