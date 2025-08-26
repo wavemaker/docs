@@ -87,7 +87,7 @@ Add an `icon.svg` file for better widget identification in Studio.
 
 ## Adding External Dependencies
 
-If your widget requires external npm packages, then intall them in the `components` directory.
+If your widget requires external npm packages, then install them in the `components` directory.
 
 ```bash
 # From components folder
@@ -97,7 +97,7 @@ npm run build
 ```
 
 :::note
-Following packages are also available in WaveMaker runtime. If these packages are needed, then add them as developmemnt dependencies to compile the code for your development. This will help in preventing version clashes.
+Following packages are also available in WaveMaker runtime. If these packages are needed, then add them as development dependencies to compile the code for your development. This will help in preventing version clashes.
 - color
 - lodash
 - moment
@@ -133,7 +133,7 @@ Name | Description | Required | Default |
 
 Name | Description | Required | Default |
 ---- |-------------|----------| --------------|
-**name** | name of the property in aplhanumeric. | Yes||
+**name** | name of the property in alphanumeric. | Yes||
 **displayName**| Regular Name to display in Studio. If not specified, name is used displayName.  | No | |
 **description**| Additional information about the property. This will be used in Studio as help info to developers. | No | |
 **type** | Indicates the type of property. Allowed values are number, string, boolean, object.| No | string |
@@ -146,7 +146,7 @@ Name | Description | Required | Default |
 
 Name | Description | Required | Default |
 ---- |-------------|----------| --------------|
-**name** | name of the event in aplhanumeric. | Yes||
+**name** | name of the event in alphanumeric. | Yes||
 **displayName**| Regular Name to display in Studio. If not specified, name is used displayName.  | No | |
 **description**| Additional information about the event. This will be used in Studio as help info to developers. | No | |
 
@@ -155,5 +155,5 @@ Name | Description | Required | Default |
 
 Name | Description | Required | Default |
 ---- |-------------|----------| --------------|
-**name** | name of the style property in aplhanumeric. | Yes||
+**name** | name of the style property in alphanumeric. | Yes||
 **style**| default styles | No| |

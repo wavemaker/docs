@@ -27,7 +27,7 @@ WMX Widgets allow developers to:
 
 ---
 
-## Key Benifits
+## Key Benefits
 - **Script Access** – Your widget can be accessed via `Page.Widgets.<componentName>`.
 - **Configurable Props** – Any props you define in your component’s metadata (`wmx.json`) appear in Studio for easy configuration.
 - **Two-Way Binding** – Props can be dynamically bound to values in your app, and vice versa.
