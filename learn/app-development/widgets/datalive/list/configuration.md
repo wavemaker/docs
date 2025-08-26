@@ -5,9 +5,18 @@ sidebar_label: "Configuration"
 ---
 ---
 
+import listItemsPerRow from 'learn/assets/react-native/listItemsPerRow.png';
+
 ## Items per Row
 
-**Items per row** determine the number to items that can be shown in each row. This can be specified independently for different target devices, from the _device_ tab of the _Properties panel_.
+
+**Items per row** determines the number of items that can be shown in each row. This can be specified independently for different target devices from the _Device_ tab of the _Properties panel_.
+
+- **Responsive (React Native Only):** The **Items per row** property is only applied if the **Responsive** property is enabled. By default, it is disabled.
+
+ - **Fallback (React Native Only):** Enable this property to automatically use the **Items per row value** from the next closest smaller screen size when one is not specified for the current screen size.
+
+<img src={listItemsPerRow} alt="Item Per Row in Studio"/>
 
 ## Grouping & Ordering
 
