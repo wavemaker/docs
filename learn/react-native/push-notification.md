@@ -38,9 +38,9 @@ For the push notification, you need to integrate Firebase messaging into the Wav
 
 Firebase plugins can be installed in a few steps in WaveMaker. Refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo) on how to install a plugin. Additionally, you need to add the `react-native-app-badge` package to the app for the app icon badge count.
 
-1. `@react-native-firebase/app` - version: `19.2.2`
-2. `@react-native-firebase/messaging` - version: `19.2.2`
-3. `expo-build-properties` - version: `0.11.1`
+1. `@react-native-firebase/app` - version: `22.2.1`
+2. `@react-native-firebase/messaging` - version: `22.2.1`
+3. `expo-build-properties` - version: `0.13.1`
 
 #### Adding `google-services.json` and `GoogleService-info.plist`
 
@@ -63,7 +63,10 @@ Now, create an `app.json` file with the below config and add it to the webapp fo
 		},
 		"ios": {
 			"googleServicesFile": "./assets/resources/files/GoogleService-Info.plist",
-			"bundleIdentifier": "com.wavemaker.pushnotification"
+			"bundleIdentifier": "com.wavemaker.pushnotification",
+			"entitlements": {
+				"aps-environment": "production"
+			}
 		},
 		"plugins": [
 			"@react-native-firebase/app",
@@ -109,38 +112,64 @@ Create a file `notification.native.js` with the below content and add it to the 
 
 ```js
 async function getNotifications() {
-    const ReactNative = require("react-native");
-    const messaging = require('@react-native-firebase/messaging').default();
-    ReactNative.PermissionsAndroid.request(
-        ReactNative.PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
-    );
-    messaging.requestPermission().then((authorizationStatus) => {
-        if (authorizationStatus) {
-            ReactNative.Alert.alert('Permission status:', authorizationStatus);
+    const ReactNative = require('react-native');
+    const messaging = require('@react-native-firebase/messaging').default;
+    
+    if (ReactNative.Platform.OS === 'android') {
+        await ReactNative.PermissionsAndroid.request(
+            ReactNative.PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
+        );
+        
+        const authStatus = await messaging().requestPermission();
+        
+    } else if (ReactNative.Platform.OS === 'ios') {
+        const authStatus = await messaging().requestPermission({
+            alert: true,
+            announcement: false,
+            badge: true,
+            carPlay: false,
+            provisional: false,
+            sound: true,
+        });
+        const enabled = 
+            authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+            authStatus === messaging.AuthorizationStatus.PROVISIONAL;
+        
+        if (!enabled) {
+            return 'No Token';
+        }
+        
+        await messaging().registerDeviceForRemoteMessages();
+    }
+    
+    const fcmtoken = await messaging().getToken();
+    const tokenInput = fcmtoken ? fcmtoken : 'No Token';
+    
+    messaging().setBackgroundMessageHandler(async remoteMessage => {
+        ReactNative.Alert.alert('Background Message:', JSON.stringify(remoteMessage));
+    });
+    
+    messaging().getInitialNotification().then(remoteMessage => {
+        if (remoteMessage) {
+            ReactNative.Alert.alert('Initial Notification:', JSON.stringify(remoteMessage));
         }
     });
-    let fcmtoken = await messaging.getToken();
-    const tokeninput = fcmtoken ? fcmtoken : 'No Token';
-
-    messaging.setBackgroundMessageHandler(async remoteMessage => {
-        ReactNative.Alert.alert(JSON.stringify(remoteMessage));
+    
+    messaging().onNotificationOpenedApp(remoteMessage => {
+        if (remoteMessage) {
+            ReactNative.Alert.alert('Notification opened from background:', JSON.stringify(remoteMessage));
+        }
     });
-    messaging.getInitialNotification(async remoteMessage => {
-        ReactNative.Alert.alert(JSON.stringify(remoteMessage));
+    
+    messaging().onMessage(async remoteMessage => {
+        ReactNative.Alert.alert('Foreground Message:', JSON.stringify(remoteMessage));
     });
-    messaging.onNotificationOpenedApp(async remoteMessage => {
-        ReactNative.Alert.alert(JSON.stringify(remoteMessage));
-    });
-
-    messaging.onMessage(async remoteMessage => {
-        ReactNative.Alert.alert(JSON.stringify(remoteMessage));
-    });
-    return tokeninput;
+    return tokenInput;
 }
 
 module.exports = {
-    getNotifications
-}
+    getNotifications,
+};
 ```
 
 #### Main Page - Markup
