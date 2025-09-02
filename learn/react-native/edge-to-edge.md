@@ -15,21 +15,21 @@ import edge_to_edge_page_level_props from '/learn/assets/react-native/edge-to-ed
 
 WaveMaker supports **edge-to-edge layouts** and **auto-hide app navigation bars** for mobile apps. These features provide a modern, immersive user experience and give developers precise control over layout and scroll behavior. These can be customised at app level and page level.
 
-<div style={{ display: 'flex', justifyConent:'space-between', flexWrap: 'wrap' }}>
-  <ThemedImage
+<ThemedImage
     alt="Theme-based Image"
     style={{width:'440px', margin:5}}
     sources={{
       light: deviceBars,
       dark: deviceBarsDark,
     }}
-  />
+/>
+<div style={{ display: 'flex', justifyConent:'space-between', flexWrap: 'wrap'}}>
   <figure style={{ textAlign: 'center', margin:5 }}>
-    <video src={scroll_none_e2e_false} style={{width: 300}} controls autoPlay loop playsInline />
+  <video src={scroll_none_e2e_false} style={{maxWidth: 300, width: '100%'}} controls autoPlay loop playsInline />
     <figcaption>Default App Layout</figcaption>
   </figure>
   <figure style={{ textAlign: 'center', margin:5 }}>
-    <video src={scroll_both_e2e_transparent} style={{ width: 300}} controls autoPlay loop playsInline />
+  <video src={scroll_both_e2e_transparent} style={{maxWidth: 300, width: '100%'}} controls autoPlay loop playsInline />
     <figcaption>App with edge-to-edge &<br/> auto-hide navbars enabled</figcaption>
   </figure>
 </div>
@@ -56,11 +56,11 @@ WaveMaker supports **edge-to-edge layouts** and **auto-hide app navigation bars*
 
 <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
   <figure style={{ textAlign: 'center', margin:0 }}>
-    <video src={scroll_none_e2e_false} style={{ width: 300}} controls autoPlay loop playsInline />
+    <video src={scroll_none_e2e_false} style={{maxWidth: 300, width: '100%'}} controls autoPlay loop playsInline />
     <figcaption>Default App Layout</figcaption>
   </figure>
   <figure style={{ textAlign: 'center', margin:0 }}>
-    <video src={scroll_none_e2e_true} style={{ width: 300, backgroundColor: 'transparent'}} controls autoPlay loop playsInline />
+    <video src={scroll_none_e2e_true} style={{ maxWidth: 300, width: '100%', backgroundColor: 'transparent'}} controls autoPlay loop playsInline />
     <figcaption>App with edge-to-edge</figcaption>
   </figure>
 </div>
@@ -73,11 +73,11 @@ WaveMaker supports **edge-to-edge layouts** and **auto-hide app navigation bars*
 
 <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
   <figure style={{ textAlign: 'center', margin:0 }}>
-    <video src={scroll_none_e2e_false} style={{ width: 300}} controls autoPlay loop playsInline />
+    <video src={scroll_none_e2e_false} style={{ maxWidth: 300, width: '100%'}} controls autoPlay loop playsInline />
     <figcaption>Default App Layout</figcaption>
   </figure>
   <figure style={{ textAlign: 'center', margin:0 }}>
-    <video src={scroll_both_e2e_false} style={{ width: 300, backgroundColor: 'transparent'}} controls autoPlay loop playsInline />
+    <video src={scroll_both_e2e_false} style={{ maxWidth: 300, width: '100%', backgroundColor: 'transparent'}} controls autoPlay loop playsInline />
     <figcaption>App with auto-hide on both top and bottom bar</figcaption>
   </figure>
 </div>
