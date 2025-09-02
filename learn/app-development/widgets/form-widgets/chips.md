@@ -82,6 +82,7 @@ Chips Widget is one of the Form Widgets. It is available to be used as a standal
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and the Show property is bound, the initialization of the widget will be deferred until the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When the Show property is not bound the widget will be initialized immediately. |
 | Disabled | If the disabled property is true (checked) the widget becomes display-only and your input will not be accepted. It can also be set programmatically by binding it to a boolean type variable. |
 | Min Chars | The minimum number of characters you can enter before the search query is triggered. The value should be greater than 0. The default value is 1. |
+| Skip on change event from script | When enabled, the `Change` callback will only trigger when the user updates the value from the UI, and not when it's updated through scripts. This property is disabled by default. |
 
 ## Events
 
