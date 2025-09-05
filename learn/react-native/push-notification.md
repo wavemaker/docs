@@ -65,7 +65,11 @@ Now, create an `app.json` file with the below config and add it to the webapp fo
             "googleServicesFile": "./assets/resources/files/GoogleService-Info.plist",
             "bundleIdentifier": "com.wavemaker.pushnotificationstest",
             "entitlements": {
+<<<<<<< HEAD
                 "aps-environment": "production" // Use "development" for development builds
+=======
+                "aps-environment": "production"
+>>>>>>> f0bb15c3 (improved push notification document)
             },
             "infoPlist": {
                 "UIBackgroundModes": ["remote-notification"]
@@ -118,14 +122,17 @@ Create a file `notification.native.js` with the below content and add it to the 
 
 ```js
 async function getNotifications() {
-    const ReactNative = require("react-native");
-    const messaging = require('@react-native-firebase/messaging').default();
-    ReactNative.PermissionsAndroid.request(
-        ReactNative.PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
-    );
-    messaging.requestPermission().then((authorizationStatus) => {
-        if (authorizationStatus) {
-	ReactNative.Alert.alert('Permission status:', JSON.stringify(authorizationStatus));
+    const ReactNative = require('react-native');
+    const messaging = require('@react-native-firebase/messaging').default;
+    
+    if (ReactNative.Platform.OS === 'android') {
+        await ReactNative.PermissionsAndroid.request(
+            ReactNative.PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
+        );
+
+        const authStatus = await messaging().requestPermission();
+        if (authStatus) {
+            ReactNative.Alert.alert('Android Permission status:', JSON.stringify(authStatus));
         }
     } else if (ReactNative.Platform.OS === 'ios') {
         const authStatus = await messaging().requestPermission({
@@ -179,7 +186,11 @@ module.exports = {
     getNotifications
 }
 ```
+<<<<<<< HEAD
 **Note:** If a production IPA is installed through AltStore or BrowserStack, the APNs entitlement may be stripped during the IPA installation process due to re-signing, which can cause push notification failures. For production testing, use TestFlight which preserves the entitlements correctly.
+=======
+**Note:** If the IPA is installed through AltStore or BrowserStack, the APNs entitlement is stripped during the IPA installation process due to re-signing, which causes the push notification error. Installing through TestFlight preserves the entitlements and works correctly for push notifications.
+>>>>>>> f0bb15c3 (improved push notification document)
 
 #### Main Page - Markup
 
