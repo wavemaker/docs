@@ -65,7 +65,7 @@ Now, create an `app.json` file with the below config and add it to the webapp fo
             "googleServicesFile": "./assets/resources/files/GoogleService-Info.plist",
             "bundleIdentifier": "com.wavemaker.pushnotificationstest",
             "entitlements": {
-                "aps-environment": "production"
+                "aps-environment": "production" // Use "development" for development builds
             },
             "infoPlist": {
                 "UIBackgroundModes": ["remote-notification"]
@@ -87,7 +87,10 @@ Now, create an `app.json` file with the below config and add it to the webapp fo
 }
 ```
 
-> **Note:** Android package name and iOS bundleIdentifier should match with Firebase to get Push Notifications.
+> **Note:** 
+> - Android package name and iOS bundleIdentifier should match with Firebase to get Push Notifications.
+> - For development builds, use `"aps-environment": "development"`. For production/App Store builds, use `"aps-environment": "production"`.
+
 
 ### Implement Firebase messaging to the WaveMaker App
 
@@ -179,17 +182,17 @@ module.exports = {
     getNotifications
 }
 ```
-**Note:** If the IPA is installed through AltStore or BrowserStack, the APNs entitlement is stripped during the IPA installation process due to re-signing, which causes the push notification error. Installing through TestFlight preserves the entitlements and works correctly for push notifications.
+**Note:** If a production IPA is installed through AltStore or BrowserStack, the APNs entitlement may be stripped during the IPA installation process due to re-signing, which can cause push notification failures. For production testing, use TestFlight which preserves the entitlements correctly.
 
 #### Main Page - Markup
 
 ```html
 <wm-page name="mainpage">
-    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
     <wm-mobile-navbar name="mobile_navbar1" title="Title" backbutton="false">
         <wm-anchor caption="" name="AddLink" iconclass="wi wi-gear"></wm-anchor>
     </wm-mobile-navbar>
     <wm-content name="content1">
+        <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
         <wm-page-content columnwidth="12" name="page_content1">
             <wm-label padding="unset" name="label1" caption="bind:Token"></wm-label>
         </wm-page-content>
