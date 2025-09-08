@@ -6,6 +6,7 @@ sidebar_label: "WMX Widgets"
 ---
 
 import wmxOverview from '/learn/assets/react-native/wmx/wmx-overview.png'
+import wmxUseCase from '/learn/assets/react-native/wmx/wmxUseCase.png';
 
 ## Introduction
 
@@ -25,6 +26,13 @@ WMX Widgets allow developers to:
 - Use these components with **WaveMaker’s widget features** like property binding, event handling, theming, and scripting.
 - Avoid workarounds — the component is first-class in your app.
 
+Typical use cases include:
+- Custom variations of widgets (e.g., advanced Progress Bar).
+- Specialized UI elements not available in WaveMaker (e.g., Color Picker, Circular Slider, Radar Chart).
+- Unique, app-specific features (e.g., seat selection for movie booking, VR product preview).
+
+<img src={wmxUseCase} style={{width:'100%', maxWidth:'600px'}}/>
+
 ---
 
 ## Key Benefits
@@ -39,7 +47,6 @@ WMX Widgets allow developers to:
 ---
 
 ## Custom Component Structure
-To create a WMX Widget, you first define your **custom React Native component** in: `src/main/webapp/extensions/components/src`
 
 Your component must have **two required files**:
 
@@ -53,16 +60,67 @@ Your component must have **two required files**:
      - Default values.
      - Bindable properties.
 
-This custom component is then **automatically wrapped** by a WMX Widget, which makes it a fully functional WaveMaker widget, with property binding, script access, and styling features.
+<details>
+<summary>
+
+Detailed Schema for `wmx.json` 
+</summary>
+
+### WMX JSON schema
+Name | Description | Required |
+---- |-------------|----------| 
+**name** | Widget name in lowercase letters. | Yes|
+**displayName**| Display name shown in Studio. If not set, `name` is used.  | No |
+**description**| Description shown as help info in Studio. | No |
+**iconUrl** | Relative path to the SVG icon (e.g., icon.svg). | No |
+**webSupport** | Can this component render in web preview? Default value is `false` | No |
+**props** | Object of properties supported by widget. (see [Property Schema](#property-schema) below). | No |
+**events** | Object of events supported by widget. (see [Event Schema](#event-schema) below). | No |
+**styles** | Object of styles supported by widget. (see [Style Schema](#style-schema) below). | No |
+
+### Property Schema
+
+Name | Description | Required |
+---- |-------------|----------|
+**name** | Property name (alphanumeric). | Yes|
+**displayName**| Display name in Studio. If not set, `name` is used.  | No |
+**description**| Description shown as help info in Studio. | No |
+**type** | Property type, valid property type values are `number`, `string`, `boolean`, `object`. Default value is `string` | No |
+**isList** | Set to true if this property is an array. Default value is `false` | No |
+**defaultValue** | Default value for this property. | No |
+**isRequired** | Set to true if this property is required. Default value is `false` | No |
+
+
+### Event Schema
+
+Name | Description | Required |
+---- |-------------|----------|
+**name** | Event name (alphanumeric). | Yes|
+**displayName**| Display name in Studio. If not set, `name` is used.  | No |
+**description**| Description shown as help info in Studio. | No |
+
+
+### Style Schema
+
+Name | Description | Required |
+---- |-------------|----------|
+**name** | Style property name (alphanumeric). | Yes|
+**style**| Default style value. | No|
+
+</details>
+
+This custom component is then **automatically wrapped** by WMX wrapper, creating the WMX Widget, which makes it a fully functional WaveMaker widget, with property binding, script access, and styling features.
+
+Read more about creating the component [here](create-wmx-widget).
 
 ---
 
-## Quick Workflow
+## Steps to create WMX widget and using in your project.
 
 ```mermaid
 flowchart TD
     A[Export project from Studio]
-    B[Set up Project Sync with your IDE]
+    B[Set up project locally]
     C[Create component in<br><code>src/main/webapp/extensions/components/src</code>]
     D[Build and push changes back to Studio]
     E[Drag and use custom widget from<br><strong>WMX Widgets panel</strong> in Studio]

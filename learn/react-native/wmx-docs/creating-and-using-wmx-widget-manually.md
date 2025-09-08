@@ -1,5 +1,5 @@
 ---
-title: "Creating and using WMX widget manually"
+title: "Creating and using a WMX widget - A Typewriter effect text component"
 id: "creating-and-using-wmx-widget-manually"
 sidebar_label: "Example - Creating & Using WMX Widget"
 ---
@@ -7,9 +7,7 @@ sidebar_label: "Example - Creating & Using WMX Widget"
 
 import typewriterTextPreview from '/learn/assets/react-native/wmx/typewriterTextPreview.mp4';
 
-## A Simple Typewriter effect text component using WMX widget.
-
-In this example we will create a simple WMX widget to implement a custom component to create Typewriter like effect text. We will use `react-native-type-animation` library for this example. 
+In this example we will create a typewriter effect text widget using WMX widget. We will use `react-native-type-animation` library for this example. 
 
 <video
   src={typewriterTextPreview}

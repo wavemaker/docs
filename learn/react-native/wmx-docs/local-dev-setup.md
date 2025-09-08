@@ -1,11 +1,11 @@
 ---
-title: "Local Dev Setup"
+title: "Local Project Setup"
 id: "local-dev-setup"
-sidebar_label: "Local Dev Setup"
+sidebar_label: "Local Project Setup"
 ---
 ---
 
-Before developing a WMX Widget, you need to set up your project locally so you can add the component directly into the WaveMaker project files. Once added, you can push your changes back to Studio and start using the new WMX Widget in your app.
+Before developing a WMX Widget, you need to set up your project locally, so you can add the component directly into the WaveMaker project files. Once added, you can push your changes back to Studio and start using the new WMX Widget in your app.
 
 ## 1. Set Up the Project Locally
 

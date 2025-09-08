@@ -5,6 +5,8 @@ sidebar_label: "Creating WMX Widget"
 ---
 ---
 
+Once project has been set up locally, you can start building your WMX widget. Here we will see how to create a WMX Widget in your WaveMaker project, including folder structure and essential files with a "Hello World" Example.
+
 - All WMX Widgets in a WaveMaker Project are stored in: `src/main/webapp/extensions/components/src`. 
 
 - Each widget requires its own folder with a lowercase alphanumeric name. For example, a widget named mywidget should be placed in `src/main/webapp/extensions/components/src/mywidget/`.
@@ -105,6 +107,8 @@ Following packages are also available in WaveMaker runtime. If these packages ar
 - react-native-reanimated
 - react-native-svg
 - victory-native
+
+To install a package as a development dependency, use the `--save-dev` flag with the npm install command, for example: `npm install <package-name> --save-dev`.
 :::
 
 ## Syncing to Studio
@@ -118,42 +122,42 @@ Your widget will now appear in **WaveMaker Studio → WMX Widgets** section.
 ## Schema
 
 ### WMX JSON schema
-Name | Description | Required | Default |
----- |-------------|----------| --------------|
-**name** | Widget name in lowercase letters. | Yes||
-**displayName**| Display name shown in Studio. If not set, `name` is used.  | No | |
-**description**| Description shown as help info in Studio. | No | |
-**iconUrl** | Relative path to the SVG icon (e.g., icon.svg). | No |  |
-**webSupport** | Can this component render in web preview? | No | false |
-**props** | Object of properties supported by widget. (see [Property Schema](#property-schema) below). | No | |
-**events** | Object of events supported by widget. (see [Event Schema](#event-schema) below). | No | |
-**styles** | Object of styles supported by widget. (see [Style Schema](#style-schema) below). | No | |
+Name | Description | Required |
+---- |-------------|----------| 
+**name** | Widget name in lowercase letters. | Yes|
+**displayName**| Display name shown in Studio. If not set, `name` is used.  | No |
+**description**| Description shown as help info in Studio. | No |
+**iconUrl** | Relative path to the SVG icon (e.g., icon.svg). | No |
+**webSupport** | Can this component render in web preview? Default value is `false` | No |
+**props** | Object of properties supported by widget. (see [Property Schema](#property-schema) below). | No |
+**events** | Object of events supported by widget. (see [Event Schema](#event-schema) below). | No |
+**styles** | Object of styles supported by widget. (see [Style Schema](#style-schema) below). | No |
 
 ### Property Schema
 
-Name | Description | Required | Default |
----- |-------------|----------| --------------|
-**name** | Property name (alphanumeric). | Yes||
-**displayName**| Display name in Studio. If not set, `name` is used.  | No | |
-**description**| Description shown as help info in Studio. | No | |
-**type** | Property type. valid property values are `number`, `string`, `boolean`, `object`. | No | string |
-**isList** | Set to true if this property is an array. | No | false |
-**defaultValue** | Default value for this property. | No | |
-**isRequired** | Set to true if this property is required. | No | false
+Name | Description | Required |
+---- |-------------|----------|
+**name** | Property name (alphanumeric). | Yes|
+**displayName**| Display name in Studio. If not set, `name` is used.  | No |
+**description**| Description shown as help info in Studio. | No |
+**type** | Property type, valid property type values are `number`, `string`, `boolean`, `object`. Default value is `string` | No |
+**isList** | Set to true if this property is an array. Default value is `false` | No |
+**defaultValue** | Default value for this property. | No |
+**isRequired** | Set to true if this property is required. Default value is `false` | No |
 
 
 ### Event Schema
 
-Name | Description | Required | Default |
----- |-------------|----------| --------------|
-**name** | Event name (alphanumeric). | Yes||
-**displayName**| Display name in Studio. If not set, `name` is used.  | No | |
-**description**| Description shown as help info in Studio. | No | |
+Name | Description | Required |
+---- |-------------|----------|
+**name** | Event name (alphanumeric). | Yes|
+**displayName**| Display name in Studio. If not set, `name` is used.  | No |
+**description**| Description shown as help info in Studio. | No |
 
 
 ### Style Schema
 
-Name | Description | Required | Default |
----- |-------------|----------| --------------|
-**name** | Style property name (alphanumeric). | Yes||
-**style**| Default style value. | No| |
+Name | Description | Required |
+---- |-------------|----------|
+**name** | Style property name (alphanumeric). | Yes|
+**style**| Default style value. | No|
