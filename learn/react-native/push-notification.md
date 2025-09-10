@@ -38,9 +38,9 @@ For the push notification, you need to integrate Firebase messaging into the Wav
 
 Firebase plugins can be installed in a few steps in WaveMaker. Refer to this [page](https://docs.wavemaker.com/learn/react-native/third-party-expo-plugins#expo) on how to install a plugin. Additionally, you need to add the `react-native-app-badge` package to the app for the app icon badge count.
 
-1. `@react-native-firebase/app` - version: `19.2.2`
-2. `@react-native-firebase/messaging` - version: `19.2.2`
-3. `expo-build-properties` - version: `0.11.1`
+1. `@react-native-firebase/app` - version: `22.2.1`
+2. `@react-native-firebase/messaging` - version: `22.2.1`
+3. `expo-build-properties` - version: `0.13.1`
 
 #### Adding `google-services.json` and `GoogleService-info.plist`
 
@@ -56,32 +56,41 @@ Now, create an `app.json` file with the below config and add it to the webapp fo
 
 ```json
 {
-	"expo": {
-		"android": {
-			"googleServicesFile": "./assets/resources/files/google-services.json",
-			"package": "com.wavemaker.pushnotification"
-		},
-		"ios": {
-			"googleServicesFile": "./assets/resources/files/GoogleService-Info.plist",
-			"bundleIdentifier": "com.wavemaker.pushnotification"
-		},
-		"plugins": [
-			"@react-native-firebase/app",
-			"@react-native-firebase/messaging",
-			[
-				"expo-build-properties",
-				{
-					"ios": {
-						"useFrameworks": "static"
-					}
-				}
-			]
-		]
-	}
+    "expo": {
+        "android": {
+            "googleServicesFile": "./assets/resources/files/google-services.json",
+            "package": "com.wavemaker.pushnotificationstest"
+        },
+        "ios": {
+            "googleServicesFile": "./assets/resources/files/GoogleService-Info.plist",
+            "bundleIdentifier": "com.wavemaker.pushnotificationstest",
+            "entitlements": {
+                "aps-environment": "production" // Use "development" for development builds
+            },
+            "infoPlist": {
+                "UIBackgroundModes": ["remote-notification"]
+            }
+        },
+        "plugins": [
+            "@react-native-firebase/app",
+            "@react-native-firebase/messaging",
+            [
+                "expo-build-properties",
+                {
+                    "ios": {
+                        "useFrameworks": "static"
+                    }
+                }
+            ]
+        ]
+    }
 }
 ```
 
-> **Note:** Android package name and iOS bundleIdentifier should match with Firebase to get Push Notifications.
+> **Note:** 
+> - Android package name and iOS bundleIdentifier should match with Firebase to get Push Notifications.
+> - For development builds, use `"aps-environment": "development"`. For production/App Store builds, use `"aps-environment": "production"`.
+
 
 ### Implement Firebase messaging to the WaveMaker App
 
@@ -109,18 +118,49 @@ Create a file `notification.native.js` with the below content and add it to the 
 
 ```js
 async function getNotifications() {
-    const ReactNative = require("react-native");
-    const messaging = require('@react-native-firebase/messaging').default();
-    ReactNative.PermissionsAndroid.request(
-        ReactNative.PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
-    );
-    messaging.requestPermission().then((authorizationStatus) => {
-        if (authorizationStatus) {
-	ReactNative.Alert.alert('Permission status:', JSON.stringify(authorizationStatus));
+    const ReactNative = require('react-native');
+    const messaging = require('@react-native-firebase/messaging').default;
+    
+    if (ReactNative.Platform.OS === 'android') {
+        await ReactNative.PermissionsAndroid.request(
+            ReactNative.PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
+        );
+
+        const authStatus = await messaging().requestPermission();
+        if (authStatus) {
+            ReactNative.Alert.alert('Android Permission status:', JSON.stringify(authStatus));
         }
-    });
-    let fcmtoken = await messaging.getToken();
-    const tokeninput = fcmtoken ? fcmtoken : 'No Token';
+    } else if (ReactNative.Platform.OS === 'ios') {
+        const authStatus = await messaging().requestPermission({
+            alert: true,
+            announcement: false,
+            badge: true,
+            carPlay: false,
+            provisional: false,
+            sound: true,
+        });
+
+        ReactNative.Alert.alert('iOS Permission status:', JSON.stringify(authStatus));
+
+        const enabled =
+            authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+            authStatus === messaging.AuthorizationStatus.PROVISIONAL;
+
+        if (!enabled) {
+            return 'No Token';
+        }
+        
+        try {
+            await messaging().registerDeviceForRemoteMessages();
+            console.log('Device registered for remote messages');
+        } catch (error) {
+            console.error('Failed to register device for remote messages:', error);
+            return 'No Token';
+        }
+    }
+
+    const fcmtoken = await messaging().getToken();
+    const tokenInput = fcmtoken ? fcmtoken : 'No Token';
 
     messaging.setBackgroundMessageHandler(async remoteMessage => {
         ReactNative.Alert.alert(JSON.stringify(remoteMessage));
@@ -142,16 +182,17 @@ module.exports = {
     getNotifications
 }
 ```
+**Note:** If a production IPA is installed through AltStore or BrowserStack, the APNs entitlement may be stripped during the IPA installation process due to re-signing, which can cause push notification failures. For production testing, use TestFlight which preserves the entitlements correctly.
 
 #### Main Page - Markup
 
 ```html
 <wm-page name="mainpage">
-    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
     <wm-mobile-navbar name="mobile_navbar1" title="Title" backbutton="false">
         <wm-anchor caption="" name="AddLink" iconclass="wi wi-gear"></wm-anchor>
     </wm-mobile-navbar>
     <wm-content name="content1">
+        <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
         <wm-page-content columnwidth="12" name="page_content1">
             <wm-label padding="unset" name="label1" caption="bind:Token"></wm-label>
         </wm-page-content>
