@@ -32,6 +32,7 @@ id: "slider"
 | Show | Showing determines whether or not a component is visible. It is a bindable property. |
 | Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
 | Disabled | If the disabled property is true (checked) the value of the editor cannot change. The widget becomes display-only. |
+| Skip on change event from script | When enabled, the `Change` callback will only trigger when the user updates the value from the UI, and not when it's updated through scripts. This property is disabled by default. |
 | **Range** |
 | Range | This property can be used to add a range within the Slider Widget. |
 | Datatype |  Select the input datatype. This property is to provide the datatype that can be number or dataset  |
@@ -41,6 +42,7 @@ id: "slider"
 | Tooltip expression | This property is used to get and customize the text displayed in the tooltip associated with the range value. |
 | Showmarkers | This property can be used to control whether a marker or indicator is displayed on the Slider widget. |
 | Showtooltip | Enable this property to show the tooltip for the applied range. |
+| Marker Text | Titles can be used as markers in the slider. This property applies when showmarkers is true. |
 
 - Range
 - Datatype - number or dataset
@@ -51,6 +53,7 @@ id: "slider"
 - Tooltip expression - value on top of the thumb
 - Showmarkers - display the scale 
 - Showtooltip - whether to display tooltip or not
+- Marker Text - title for markers
 
 
 **Shortcut key**: The shortcut key property specifies a shortcut key to click the button. The way of accessing the shortcut key is varying in different browsers:
