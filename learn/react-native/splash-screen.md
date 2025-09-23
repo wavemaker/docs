@@ -3,59 +3,70 @@ title: "Splash Screen"
 id: "splash-screen"
 sidebar_label: "Splash Screen"
 ---
+
+A **Splash Screen** is the first screen your users see when they launch your app.  
+It appears instantly after the app icon is tapped and remains visible until the app is fully loaded.
+
+A well-designed splash screen not only masks loading time but also delivers a smooth, branded experience by displaying your app’s logo, colors, or animations right from the start.
+
+The splash screen includes a **centered icon** with an **optional background color**, and an **optional animation**.
+
 ---
 
-A Splash Screen is a screen that displays an image or animation when the app is loading when you launch the app. You can add brand logo or a plain background. WaveMaker allows you to add lively animation that supports Lottie files, which is a JSON-based animation file format, allowing you to incorporate animation as a static asset.
+## Accessing Splash Screen Settings
 
-Splash Screen provides you with two types of screens to configure:
+1. In Studio, go to **Settings** → **Build Preferences**.  
+2. In the **Build Preferences** page, select the **Splash Screen** tab.
 
-1. Background
-2. Logo
+![Splash Screen Config](/learn/assets/release-notes/splash-screen-config-11-11-7.png)
 
-Learn how to configure these screens in the following sections.
+---
 
-## Accessing Splash Screen
+## How the Splash Screen Works
 
-1. Go to the **Export** option.
-2. Choose **Project as ReactNative Zip**. This opens the **Build ReactNative Zip** dialog. 
-3. Go to the **Splash Screen** tab, displays as below.
+A splash screen consists of **two parts**:
 
-![SplashScreen](/learn/assets/splash-screen.png)
+### 1. First Part – Background & Icon
+- **Background**: Set a background color.
+- **Icon**: Displayed in the center, with customizable width.
 
-## Background 
+### 2. Second Part – Lottie Animation *(Optional)*
+- Upload a [Lottie JSON animation](https://lottiefiles.com/) to play **after** the first part is displayed.
+- The animation continues until the app finishes loading.
+- If no animation is added, the first part stays visible until the app loads.
 
-:::note
-This is the default Splash Screen applied to the application when no configuration is provided.
-:::
+---
 
-In Background, there are following two options.
+## Dark and Light Mode Support
+- All configurations (background, icon, animation) can now be defined separately for when the user's device is in Light or Dark mode.
+- If no Dark mode configuration is provided, the Light mode splash screen is shown by default.
 
-- **[Color](#color)**
-- **[Image](#image)**
+---
 
+## Live Preview
 
-### Color 
+Use the **Preview** feature to see your splash screen instantly:
 
-With this option, you can use the color selector to select a color and use it as a Splash Screen image.
+- **Background** – Displays the background and icon.
+- **Animation** – Plays the Lottie animation alone.
+- **App Launch** – Simulates the complete flow: background → animation → mock home page.
 
-![SplashScreen-BgColor](/learn/assets/splash-screen-bgcolor.png)
-
-:::note
-If there is already a Splash Screen image selected, then the option will replace it with the selected color or vice versa between **Color** and **Image** properties.
-:::
-
-### Image
-
-With this option, you can upload images only with the resolution of **1284x2778** for the Splash Screen.
-
-![SplashScreen-Image](/learn/assets/splash-screen-image.png)
-
-## Logo
-
-Choosing this option allows you to use [Lottie Animations](https://lottiefiles.com/) as Splash Screen. You can only upload Lottie JSON files through this option.
-
-![SplashScreen-Animation](/learn/assets/splash-screen-animation.gif)
-
-:::important
-When selecting **Logo**, you can configure the **Background Color** or **Image** too as a Splash image to load as the first frame. You can apply color to match with the Lottie animation you use. By applying the **Background** property, it helps apply smoother transition when the animation loads. 
-:::
+<div style={{ position: "relative", paddingBottom: "56.25%" }}>
+  <iframe
+    style={{
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      left: 0,
+      top: 0,
+      borderRadius: 10
+    }}
+    src="https://embed.app.guidde.com/playbooks/f1HCdvk5zz9ts4n1ASDQMQ"
+    title="Splash Screen Config Preview"
+    frameBorder={0}
+    referrerPolicy="unsafe-url"
+    allowFullScreen="true"
+    allow="clipboard-write"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"
+  />
+</div>
