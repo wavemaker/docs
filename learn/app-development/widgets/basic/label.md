@@ -24,12 +24,29 @@ The following features for Label can be set in the **Class** property from the *
 
 <iframe width="100%" height="700" style={{backgroundColor: "snow"}} allowtransparency="true" src="https://apps.wavemakeronline.com/documentation_snippets/#/Labels">LabelStyles</iframe>
 
+## Rich Text Formatting support
+
+The Label widget supports simple rich text formatting in captions:
+
+1. Bold: Wrap text in double asterisks: `**Important**` → **Important**
+
+2. Link: Use Markdown-style links: `[WaveMaker Docs](https://docs.wavemaker.com/learn/)` → [WaveMakerDocs](https://docs.wavemaker.com/learn/)
+
+3. Bold with Link: You can include a link inside bold text: `**Go to [WaveMakerDocs](https://docs.wavemaker.com/learn/) now!**` → Go to [WaveMakerDocs](https://docs.wavemaker.com/learn/) now!
+
+:::note
+- Nesting bold inside a link (e.g., `[some **bold** text](url)`) is not supported.
+- Escaping formatting (e.g., `\**not bold\**`) is not supported; formatting will always be applied if the pattern matches.
+- Links must start with http://, https://, or # to be clickable. For example, [Google](https://google.com) works, but [Google](google.com) does not.
+- On Android, rich text is disabled if ellipsis is enabled for a lablel.
+:::
+
 # Properties
 
 | Property | Description |
 | --- | --- |
-| Caption | The caption is the text that the end user sees on your label. It can be bound to a variable or another widget. |
-| Name | The name is a unique identifier for label widget. |
+| **Caption** | The caption is the text that the end user sees on your label. It can be bound to a variable or another widget. |
+| **Name** | The name is a unique identifier for label widget. |
 | **Accessibility** |
 | Hint | You can enter any text for this property and it will be shown as a tooltip if the mouse hovers over this widget for 1.5 seconds. It can be bound to a variable or another widget. |
 | **Layout** |
@@ -38,9 +55,9 @@ The following features for Label can be set in the **Class** property from the *
 | **Validation** |
 | Required | A required editor in wm.LiveForm may refuse to save without a required field. |
 | **Behavior** |
-| Show | Showing determines whether or not a component is visible. It is a bindable property. |
-| Load on Demand (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
-| Animation | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. |
+| **Show** | Showing determines whether or not a component is visible. It is a bindable property. |
+| **Load on Demand** (visible only when show property is bound to a variable) | When this property is set and show property is bound, the initialization of the widget will be deferred till the widget becomes visible. This behavior improves the load time. Use this feature with caution, as it has a downside (as we will not be able to interact with the widget through script until the widget is initialized). When show property is not bound the widget will be initialized immediately. |
+| **Animation** | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. |
 | **Format** |
 | Horizontal align | This property specifies how the elements should be aligned horizontally. |
 
