@@ -87,3 +87,7 @@ Page.Widgets.[formName].submit();
 Page.Widgets.[formName].clearMessage();
 //This method removes the success/error message on the form.
 ```
+
+:::note
+On React Native platform, use `Page.Widgets.[formName].onMsgClose()` to clear the success/error message on the form.
+:::
