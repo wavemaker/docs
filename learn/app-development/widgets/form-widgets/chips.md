@@ -83,6 +83,13 @@ Chips Widget is one of the Form Widgets. It is available to be used as a standal
 | Disabled | If the disabled property is true (checked) the widget becomes display-only and your input will not be accepted. It can also be set programmatically by binding it to a boolean type variable. |
 | Min Chars | The minimum number of characters you can enter before the search query is triggered. The value should be greater than 0. The default value is 1. |
 | Skip on change event from script | When enabled, the `Change` callback will only trigger when the user updates the value from the UI, and not when it's updated through scripts. This property is disabled by default. |
+| Selection Mode | This property controls how many chips can be selected at a time - _Single_ - Only one chip can be selected at a time   - _Multiple_ - Multiple chips can be selected simultaneously |
+| **Graphics** ||
+| Left Icon Class | Icon to display on the left side of each chip |
+| Right Icon Class | Icon to display on the right side of each chip |
+| Left Badge | Text to display on the left side of each chip |
+| Right Badge | Text to display on the right side of each chip |
+| Selected Icon Class | Icon to display on selected chips to indicate selection |
 
 ## Events
 
