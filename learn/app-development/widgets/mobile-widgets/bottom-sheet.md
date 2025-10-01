@@ -41,6 +41,9 @@ It’s ideal for use cases like:
 | **Show On Render** | `boolean`| If `true`, the sheet opens automatically on page load.                      |
 | **Expand** | `boolean`| Enables expansion on swipe-up, if set to `true`.                                |
 | **Bottom Sheet Expanded Height Ratio** | `number` | Sets the height for Bottom Sheet in expanded form. |
+| **autoclose** | `string` | Controls when (or whether) the bottom sheet closes automatically.<br/> It supports two values:<br/>• `outsideClick` — sheet will close when user taps anywhere outside the sheet content.<br/>• `disabled` — tapping outside does not close the sheet. |
+| **disableswipedownclose** | `boolean` | When true, prevents fully closing the sheet via swipe down. Instead, on swipe-down it collapses to a minimum sheet height. |
+| **enabledragsettle** | `boolean` | When true, after the user swipes down and releases, the sheet remains at the position where it was released (rather than auto-closing or snapping). |
 
 ---
 
@@ -50,6 +53,7 @@ It’s ideal for use cases like:
 |--------------|--------------------------------------|
 | **On Open** | Triggered when the bottom sheet is opened.  |
 | **On Close** | Triggered when the bottom sheet is closed.  |
+| **onDragHandleIconClick** | Triggered when the bottom sheet drag handle icon is clicked. |
 
 ---
 
@@ -60,6 +64,12 @@ Below methods are available for Bottom Sheet widget.
 - `open()` - Opens the bottom sheet.
 
 - `close()` - Closes the bottom sheet.
+
+- `expandBottomSheet()` - Expands the bottom sheet height to the specified **Bottom Sheet Expanded Height Ratio** value.
+
+- `collapseBottomSheet()` - Collapses the bottom sheet height to the specified **Bottom Sheet Height Ratio** value.
+
+- `isSheetExpanded()` - Returns true if the bottom sheet is currently expanded; otherwise false.
 
 These methods on Bottom Sheet widget can be triggered by selecting as *Tap Events* for other supported widgets like *Button*.
 You can also call them on Bottom Sheet widgets in Script tab.

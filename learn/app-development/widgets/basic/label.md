@@ -60,6 +60,8 @@ The Label widget supports simple rich text formatting in captions:
 | **Animation** | This property controls the animation of an element. The animation is based on the CSS classes and works only in the run mode. |
 | **Format** |
 | Horizontal align | This property specifies how the elements should be aligned horizontally. |
+| **Text Animation** (React Native Only) | Controls word-by-word text animation effect. |
+| **Animation Speed** (React Native Only) | Controls the timing delay between words in **Text Animation**. Higher values create slower word-by-word transitions (in milliseconds). |
 
 # Events
 
