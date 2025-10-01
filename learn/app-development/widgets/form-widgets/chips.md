@@ -83,6 +83,13 @@ Chips Widget is one of the Form Widgets. It is available to be used as a standal
 | Disabled | If the disabled property is true (checked) the widget becomes display-only and your input will not be accepted. It can also be set programmatically by binding it to a boolean type variable. |
 | Min Chars | The minimum number of characters you can enter before the search query is triggered. The value should be greater than 0. The default value is 1. |
 | Skip on change event from script | When enabled, the `Change` callback will only trigger when the user updates the value from the UI, and not when it's updated through scripts. This property is disabled by default. |
+| Selection Mode (React Native Only) | Determines how many chips can be selected at a time. <br/> - **single**: Only one chip can be selected at a time. <br/> - **multiple**: Multiple chips can be selected simultaneously. |
+| **Graphics** ||
+| Left Icon Class (React Native Only) | Icon to display on the left side of each chip. |
+| Right Icon Class (React Native Only) | Icon to display on the right side of each chip. |
+| Left Badge (React Native Only) | Text badge to display on the left side of each chip. |
+| Right Badge (React Native Only) | Text badge to display on the right side of each chip. |
+| Selected Icon Class (React Native Only) | Icon to display on selected chips to indicate selection. It is displayed on the left side of the chip. If there is any icon selected using *Left Icon Class* for left side, it will be overridden by *Selected Icon Class* when the chip is selected. |
 
 ## Events
 
