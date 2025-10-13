@@ -80,6 +80,10 @@ module.exports = {
               "label": 'v11.13.0',
               "path": '',
             },
+            "v11.8":{
+              "label": "v11.8",
+              "path": 'v11.8',
+            },
             "v10.14": {
               "label": 'v10.15',
               "path": 'v10.15',

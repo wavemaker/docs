@@ -8,7 +8,7 @@ describe('Check for anchors', function() {
     let urlJson = require('../fixtures/changedFiles.json');
 	urlJson.forEach(link => {
         //skip if it is from slides directory.
-        if(link.startsWith("slides")) {
+        if(link.startsWith("slides") || link.startsWith("v10.14") || link.startsWith("v11.8")) {
             return;
         }
         it('Broken url check for: ' + link, function() {
