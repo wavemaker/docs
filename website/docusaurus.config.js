@@ -96,6 +96,7 @@ module.exports = {
                 'important',
                 'caution',
                 'impact',
+                'deprecated'
             ],
         },
         },
@@ -114,6 +115,7 @@ module.exports = {
                 'important',
                 'caution',
                 'impact',
+                'deprecated'
             ],
         },
         },
