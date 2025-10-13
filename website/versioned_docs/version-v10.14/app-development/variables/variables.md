@@ -36,7 +36,7 @@ Variables can be categorized based on the target action:
 |---|---|---|
 |1.|**Database CRUD** | [Database CRUD](/learn/app-development/variables/database-crud/) |
 |2.|**APIs** |- [Database APIs](/learn/app-development/variables/database-apis/)  - [Web Services](/learn/app-development/variables/web-service/)  - [Java Services](/learn/app-development/variables/java-services/)   - [Security Services](/learn/app-development/variables/security-service/)|
-|3.|**Other Services**|- [Model Variable](/learn/app-development/variables/model-variable/)   - [Device Variable](/learn/hybrid-mobile/device-variables/)|
+|3.|**Other Services**|- [Model Variable](/learn/app-development/variables/model-variable/)   - [Device Variable](/learn/app-development/variables/device-variables/)|
 
 
 ## 1. Database CRUD
@@ -68,7 +68,7 @@ In case security is enabled for the app, you have access to various security-rel
 To store data on the client side. For more information, see [Model Variable](/learn/app-development/variables/model-variable/).
 
 ### Device Variable
-For Mobile Apps, the various device information can be used to access the respective devices like camera, contacts, and more. For more information, see [Device Variable](/learn/hybrid-mobile/device-variables/).
+For Mobile Apps, the various device information can be used to access the respective devices like camera, contacts, and more. For more information, see [Device Variable](/learn/app-development/variables/device-variables/).
 
 
 
