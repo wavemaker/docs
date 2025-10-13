@@ -1187,7 +1187,8 @@
 								"how-tos/get-validation-messages-form",
 								"how-tos/form-conditional-flows",
 								"how-tos/adding-master-detail-records-transaction",
-								"how-tos/adding-parent-child-records-single-transaction"
+								"how-tos/adding-parent-child-records-single-transaction",
+							    "how-tos/enable-async-callbacks-form"
 							]
 						}
 					]
