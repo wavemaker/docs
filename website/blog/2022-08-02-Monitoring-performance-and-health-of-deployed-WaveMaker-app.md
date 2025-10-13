@@ -68,15 +68,15 @@ Here Zipkin server should be accessible to the tomcat server.
     Navigate to the maven `pom.xml` file to add following dependencies code snippet
     
 `$WMAPP_HOME---->pom.xml`
-
-          <dependencies>
-            <dependency>
-                  <groupId>io.opentelemetry</groupId>
-                  <artifactId>opentelemetry-sdk</artifactId>
-                  <version>1.11.0</version>
-            </dependency>
-           <dependencies>
-    
+```xml
+  <dependencies>
+    <dependency>
+      <groupId>io.opentelemetry</groupId>
+      <artifactId>opentelemetry-sdk</artifactId>
+      <version>1.11.0</version>
+    </dependency>
+  <dependencies>
+```  
 
 Navigate to the `project-user-spring.xml` in the below path and add the given snippet
 

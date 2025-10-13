@@ -222,7 +222,7 @@ This method can also be used to set all the specified key-value pairs as input f
 #### `delete.setInput(object)`
  
 #### Parameters
-- **Object**: key-value pairs {“key”: “value”,…}
+- **Object**: key-value pairs `{“key”: “value”,…}`
  
 #### Return Value
 - Updated `inputFields` object
