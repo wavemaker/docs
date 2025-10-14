@@ -22,9 +22,13 @@ Imagine your app’s primary brand color is green. You decide to switch it to bl
 
 ### Why WaveMaker uses Them
 
-**Consistency Across Apps**: Tokens ensure every component in your app follows the same style rules, from buttons to text, so the design looks uniform everywhere. If you set your brand’s primary color as #E8925C, every button, link, or heading that uses this token instantly reflects the same brand color across all screens.
+#### Consistency Across Apps
 
-**Scalability for Enterprise Apps**: Design tokens let you manage styles centrally, so updating a single token cascades changes across 90+ components, scaling effortlessly for large apps. An enterprise dashboard with 20+ modules: update the token for font size, and every chart title, list label, and data table adjusts automatically. 
+Tokens ensure every component in your app follows the same style rules, from buttons to text, so the design looks uniform everywhere. If you set your brand’s primary color as #E8925C, every button, link, or heading that uses this token instantly reflects the same brand color across all screens.
+
+#### Scalability for Enterprise Apps
+
+Design tokens let you manage styles centrally, so updating a single token cascades changes across 90+ components, scaling effortlessly for large apps. An enterprise dashboard with 20+ modules: update the token for font size, and every chart title, list label, and data table adjusts automatically. 
 
 ```mermaid
 graph TD
@@ -41,19 +45,32 @@ graph TD
     E --> E1[Table Column Headings]
     F --> F1[List Item Labels]
     G --> G1[Chart Titles]
+
 ```
 
-**Cross-Platform Theming**: Tokens are framework-agnostic, working seamlessly across web and mobile. They also enable instant theme switching, like Light and Dark modes. For example, toggle your app from Light to Dark mode; all backgrounds, text, and buttons adapt without separate styling per platform.
+Learn more about the [Design Token architecture here](/learn/design-system/design-token-architecture). 
 
-**Collaboration Between Designers & Developers**: Tokens act as a shared language between design tools (like Figma) and development in WaveMaker, reducing miscommunication. For example, a designer updates the typography scale in Figma. The exported tokens automatically apply to the app, so developers don’t re-code font sizes.
+#### Cross-Platform Theming
+
+Tokens are framework-agnostic, working seamlessly across web and mobile. They also enable instant theme switching, like Light and Dark modes. 
+
+**For example**: toggle your app from Light to Dark mode; all backgrounds, text, and buttons adapt automatically without separate styling.
+
+#### Collaboration Between Designers & Developers
+
+Tokens act as a shared language between design tools (like Figma) and development in WaveMaker, reducing miscommunication. 
+
+For example, a designer updates the typography scale in Figma. The exported tokens automatically apply to the app, so developers don’t re-code font sizes.
 
 > Figma file → Autocode Plugin → token JSON → app UI.  
 > Figma file → Autocode Plugin → Edit in WaveMaker → token JSON → app UI
 
-**Easy Preview & Testing**: WaveMaker lets you preview token changes in real time, so you see exactly how updates look before saving. For example, change a button’s corner radius token from 4px to 12px, preview it live, and then confirm to apply across the app.
+#### Easy Preview & Testing
+
+WaveMaker lets you preview token changes in real time, so you see exactly how updates look before saving. For example, change a button’s corner radius token from 4px to 12px, preview it live, and then confirm to apply across the app.
 
 
-## How It Ties Into WaveMaker
+### How It Ties Into WaveMaker
 
 WaveMaker brings the Design System concept into a practical, visual environment.
 Here’s how it fits together:
@@ -66,9 +83,10 @@ Here’s how it fits together:
 
 4. **Application – Live App UI**: Once confirmed, tokens automatically update all components using them. This eliminates manual CSS edits or repetitive UI updates.
 
-## Good to know
 
-What is the role of Amazon Style Dictionary in the WaveMaker design token system?
+<details>
+<summary>Behind the Scenes: What is the role of Amazon Style Dictionary in the WaveMaker design token system?
+</summary>
 
 Platform-Agnostic Tokens → Platform-Specific Output
 
@@ -111,3 +129,4 @@ export const tokens = {
 }
 ```
 
+</details>
