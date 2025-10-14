@@ -675,6 +675,10 @@
 		"figma-autocode-plugin/figma-cheat-sheet"
 	],
 
+	"Design System": [
+		"design-system/overview"
+	],
+
 	"Enterprise": [
 		"on-premise/welcome",
 		"on-premise/architecture",
