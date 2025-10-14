@@ -53,9 +53,22 @@ graph TD
 **Easy Preview & Testing**: WaveMaker lets you preview token changes in real time, so you see exactly how updates look before saving. For example, change a button’s corner radius token from 4px to 12px, preview it live, and then confirm to apply across the app.
 
 
+## How It Ties Into WaveMaker
+
+WaveMaker brings the Design System concept into a practical, visual environment.
+Here’s how it fits together:
+
+1. **Design Phase – Figma**: Designers define the base tokens (colors, fonts, spacing).
+
+2. **Automation – AutoCode Plugin**: The plugin extracts tokens from Figma and converts them into JSON format.
+
+3. **Styling – WaveMaker Style Workspace**: Developers import and manage these tokens visually. Changes can be previewed live before applying globally.
+
+4. **Application – Live App UI**: Once confirmed, tokens automatically update all components using them. This eliminates manual CSS edits or repetitive UI updates.
+
 ## Good to know
 
-What is the role of Amazon Style Dictionary in the Wavemaker design token system?
+What is the role of Amazon Style Dictionary in the WaveMaker design token system?
 
 Platform-Agnostic Tokens → Platform-Specific Output
 
@@ -97,9 +110,4 @@ export const tokens = {
   colorPrimary: "#E8925C"
 }
 ```
-
-
-
-
-## Style Workspace
 
