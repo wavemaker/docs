@@ -47,17 +47,25 @@ graph TD
 
 **Collaboration Between Designers & Developers**: Tokens act as a shared language between design tools (like Figma) and development in WaveMaker, reducing miscommunication. For example, a designer updates the typography scale in Figma. The exported tokens automatically apply to the app, so developers don’t re-code font sizes.
 
-Figma file → Autocode Plugin → token JSON → app UI
-Figma file → Autocode Plugin → Edit in WaveMaker → token JSON → app UI
+> Figma file → Autocode Plugin → token JSON → app UI.  
+> Figma file → Autocode Plugin → Edit in WaveMaker → token JSON → app UI
 
 **Easy Preview & Testing**: WaveMaker lets you preview token changes in real time, so you see exactly how updates look before saving. For example, change a button’s corner radius token from 4px to 12px, preview it live, and then confirm to apply across the app.
 
-<details>
-<summary>
-Quick question: What is the role of Amazon Style Dictionary in the Wavemaker design token system?
-</summary>
+
+## Good to know
+
+What is the role of Amazon Style Dictionary in the Wavemaker design token system?
 
 Platform-Agnostic Tokens → Platform-Specific Output
+
+
+| Platform     | Output Format     | Example                                       |
+| ------------ | ----------------- | --------------------------------------------- |
+| Web          | CSS Variables     | `--color-primary: #E8925C;`                   |
+| React Native | JavaScript Object | `{ colorPrimary: "#E8925C" }`                 |
+| iOS          | Swift Constants   | `let colorPrimary = UIColor(hex: "#E8925C")`  |
+| Android      | XML Resources     | `<color name="color_primary">#E8925C</color>` |
 
 Tokens in JSON (agnostic):  
 Defined once, in a neutral format (JSON).  
@@ -90,9 +98,8 @@ export const tokens = {
 }
 ```
 
-iOS → Swift constants  
-Android → XML resources
-</details>
+
+
 
 ## Style Workspace
 
