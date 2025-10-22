@@ -5,7 +5,7 @@ sidebar_label: "Supported Variables"
 ---
 ---
 
-In WaveMaker, the following [Variables](/learn/app-development/variables/variables) are supported for developing a React Native app. 
+In WaveMaker, the following [Variables](/learn/app-development/variables) are supported for developing a React Native app. 
 
 
 ## Data Variables
