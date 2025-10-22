@@ -924,6 +924,7 @@
 				  "react-native/splash-screen",
 				  "react-native/progress-loader",
 				  "react-native/skeleton-loader",
+				  "react-native/edge-to-edge-layout",
 				  "react-native/animations",
 				  "react-native/accessibility-support-react-native"
 				]
