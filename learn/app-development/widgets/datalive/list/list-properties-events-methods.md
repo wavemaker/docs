@@ -28,6 +28,7 @@ sidebar_label: "Properties, Events & Methods"
 | Selection Limit | This bindable property will allow users to select only a limited number of items. |
 | Multiselect | On checking this property users can select multiple items. |
 | Select first item | If this bindable property is checked, the first item of the livelist will be selected automatically when the livelist is displayed. |
+| Horizontal Scroll to Item (React Native Only) | When enabled, selecting an item in a horizontally scrollable list smoothly scrolls it into the center of the view for better visibility. When disabled, the list remains in its current position without automatic scrolling. This property is enabled by default. |
 | **Pagination** |
 | Type | Select the pagination type for the list. This property determines how records are fetched. It can be: Basic, Pager, Classic, Infinite Scroll, Horizontal Slider or None |
 | Show Total Records | This property controls whether the total record count is displayed in the pagination or not. |
