@@ -675,6 +675,32 @@
 		"figma-autocode-plugin/figma-cheat-sheet"
 	],
 
+
+	"Design System": [
+				{
+		"type": "category",
+		"label": "Design System",
+		"items": [
+		"design-system/overview",
+		"design-system/design-token-architecture",
+		"design-system/working-with-style-workspace",
+		"design-system/component-variants",
+		"design-system/best-practices"
+		]
+	},
+				{
+		"type": "category",
+		"label": "Autocode",
+		"items": [
+			"figma-autocode-plugin/working-with-autocode-plugin",
+			"figma-autocode-plugin/design-guidelines",
+			"figma-autocode-plugin/figma-cheat-sheet"
+		]
+		}
+	],
+
+
+
 	"Enterprise": [
 		"on-premise/welcome",
 		"on-premise/architecture",
