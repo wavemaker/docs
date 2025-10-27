@@ -684,7 +684,8 @@
 		"design-system/overview",
 		"design-system/design-token-architecture",
 		"design-system/working-with-style-workspace",
-		"design-system/component-variants"
+		"design-system/component-variants",
+		"design-system/best-practices"
 		]
 	},
 				{
