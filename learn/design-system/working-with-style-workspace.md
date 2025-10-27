@@ -3,13 +3,14 @@ title: "Working with Style Workspace"
 sidebar_label: "Style Workspace"
 ---
 
+import EnableDesignSystem from '/learn/assets/enable-design-system.png';
 
 The **Style Workspace** in WaveMaker Studio is your **visual control panel** for managing and customizing your application's design.  
 It allows you to modify design tokens, preview changes in real time, and maintain brand consistency across all UI components.
 
 You can:
-- Browse and edit **Global Tokens** (colors, typography, spacing, radius, shadow).  
-- Expand **Components** (Button, Input, Card, etc.) to update their specific tokens.  
+- Browse and edit **[Global Tokens](#1-global-tokens)** (colors, typography, spacing, radius, shadow).  
+- Expand **[Components](#2-component-tokens)** (Button, Input, Card, etc.) to update their specific tokens.  
 - Switch between **Appearances**, **Variants**, and **States** to fine-tune the visual style.
 
 ## Navigating the Style Workspace
@@ -21,7 +22,7 @@ To open the Style Workspace:
 
 > Note: Currently, Style Workspace is enabled only for Web Applications.
 
-![](/learn/assets/enable-design-system.png)
+<img src={EnableDesignSystem} style={{width:"60%"}} />
 
 ![](/learn/assets/navigate-style-workspace-tokens.png)
 
@@ -70,6 +71,7 @@ This keeps your app consistent while making broad design updates effortless.
 3. Adjust it using the **color picker**, **dropdown**, or **numeric input**.  
 4. The **preview area** instantly updates to reflect your changes.  
 
+![](/learn/assets/global-tokens-design-system.png)
 
 ### 2. Component Tokens
 
@@ -88,6 +90,7 @@ This flexibility allows designers to maintain a consistent theme while giving de
 3. Modify a token value.  
 4. Observe real-time updates in the preview panel.
 
+![](/learn/assets/component-tokens-design-system.png)
 
 ## Real-Time Preview and Live Updates
 

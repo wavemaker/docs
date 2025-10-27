@@ -16,7 +16,7 @@ Think of it like **update once** → **preview** → **applied everywhere**.
 
 Imagine your app’s primary brand color is green. You decide to switch it to blue:
 
-1. Update the primary color token in [Style Workspace](#).
+1. Update the primary color token in [Style Workspace](/learn/design-system/working-with-style-workspace).
 2. Instantly, every button, card header, and link using that token changes to blue in the preview.
 3. Once you confirm, the update is applied across the app. No need to manually edit each component.
 
