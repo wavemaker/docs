@@ -7,18 +7,49 @@ import DesignSystemArchitecture from '/learn/assets/design-system-architecture.p
 
 ### What is Design System?
 
-A design system is a framework for creating and maintaining a consistent application theme across all components. It uses tokens to define reusable styles like colors, typography, and spacing. By updating a token once, you can instantly preview changes and apply them across your entire app with just a few clicks.
+A design system is a framework for creating and maintaining a consistent application theme across all components. It uses tokens to define reusable styles like colors, typography, and spacing and more. WaveMaker brings the Design System concept into a practical, visual environment that connects design and development seamlessly.
 
-Think of it like **update once** → **preview** → **applied everywhere**.
+![design to code](/learn/assets/design-to-code-architecture.png)
+
+#### 1. Design Phase: Figma  
+Designers define the base design tokens — colors, typography, spacing, and other style rules — directly in Figma.  
+These tokens represent the visual foundation of your brand or app theme.
+
+#### 2. Automation: AutoCode Plugin  
+The AutoCode Plugin acts as the bridge between Figma and WaveMaker.  
+When you use the plugin, it:
+- Extracts design tokens and component styles from Figma.  
+- Converts them into WaveMaker-readable JSON structures.  
+- Pushes those token definitions into WaveMaker Studio via the **“Edit in WaveMaker”** action.  
+
+This ensures that:
+- The design file from Figma is automatically translated into an editable design system inside WaveMaker.  
+- The corresponding JSON files are generated and mapped correctly, so tokens can be modified within the Style Workspace.
+
+#### 3. Styling: WaveMaker Style Workspace  
+Once imported, the Style Workspace becomes the central hub to manage and customize those tokens visually.  
+Developers can:
+- Edit colors, typography, and spacing in real time.  
+- Preview all design updates instantly before applying them globally.  
+- Work on top of the synchronized JSON tokens from Figma, ensuring design–code consistency.
+
+#### 4. Application: Live App UI  
+After the updates are confirmed, the token changes automatically cascade across all linked components in the app.  
+Every color, font, and spacing update made in Style Workspace is reflected live in the App UI — no manual CSS edits or repetitive style updates required.
+
+### Example: Brand Color Update
+
+Imagine your app’s primary brand color is blue. You decide to switch it to orange:
 
 <img src={DesignSystemArchitecture} style={{width:"60%"}} />
 
-
-Imagine your app’s primary brand color is blue. You decide to switch it to orange:
+Think of it like **update once** → **preview** → **applied everywhere**.
 
 1. Update the primary color token in [Style Workspace](/learn/design-system/working-with-style-workspace).
 2. Instantly, every button, card header, and link using that token changes to orange in the preview.
 3. Once you confirm, the update is applied across the app. No need to manually edit each component.
+
+By updating a token once, you can instantly preview changes and apply them across your entire app with just a few clicks.
 
 ### Why WaveMaker uses Them
 
@@ -62,26 +93,16 @@ Tokens act as a shared language between design tools (like Figma) and developmen
 
 For example, a designer updates the typography scale in Figma. The exported tokens automatically apply to the app, so developers don’t re-code font sizes.
 
-> Figma file → Autocode Plugin → token JSON → app UI.  
-> Figma file → Autocode Plugin → Edit in WaveMaker → token JSON → app UI
+:::note
+Figma file → Autocode Plugin → Edit in WaveMaker → token JSON → app UI.  
+
+Figma file → Autocode Plugin → token JSON → app UI.  
+:::
 
 #### Easy Preview & Testing
 
 WaveMaker lets you preview token changes in real time, so you see exactly how updates look before saving. For example, change a button’s corner radius token from 4px to 12px, preview it live, and then confirm to apply across the app.
 
-
-### How It Ties Into WaveMaker
-
-WaveMaker brings the Design System concept into a practical, visual environment.
-Here’s how it fits together:
-
-1. **Design Phase – Figma**: Designers define the base tokens (colors, fonts, spacing).
-
-2. **Automation – AutoCode Plugin**: The plugin extracts tokens from Figma, converts them into JSON format, and takes you directly to **Edit in WaveMaker Studio** for further styling and editing.
-
-3. **Styling – WaveMaker Style Workspace**: Developers import and manage these tokens visually. Changes can be previewed live before applying globally.
-
-4. **Application – Live App UI**: Once confirmed, tokens automatically update all components using them. This eliminates manual CSS edits or repetitive UI updates.
 
 
 <details>
