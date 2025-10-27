@@ -14,10 +14,10 @@ Think of it like **update once** → **preview** → **applied everywhere**.
 <img src={DesignSystemArchitecture} style={{width:"60%"}} />
 
 
-Imagine your app’s primary brand color is green. You decide to switch it to blue:
+Imagine your app’s primary brand color is blue. You decide to switch it to orange:
 
 1. Update the primary color token in [Style Workspace](/learn/design-system/working-with-style-workspace).
-2. Instantly, every button, card header, and link using that token changes to blue in the preview.
+2. Instantly, every button, card header, and link using that token changes to orange in the preview.
 3. Once you confirm, the update is applied across the app. No need to manually edit each component.
 
 ### Why WaveMaker uses Them
@@ -77,7 +77,7 @@ Here’s how it fits together:
 
 1. **Design Phase – Figma**: Designers define the base tokens (colors, fonts, spacing).
 
-2. **Automation – AutoCode Plugin**: The plugin extracts tokens from Figma and converts them into JSON format.
+2. **Automation – AutoCode Plugin**: The plugin extracts tokens from Figma, converts them into JSON format, and takes you directly to **Edit in WaveMaker Studio** for further styling and editing.
 
 3. **Styling – WaveMaker Style Workspace**: Developers import and manage these tokens visually. Changes can be previewed live before applying globally.
 
