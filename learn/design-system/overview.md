@@ -37,6 +37,8 @@ Developers can:
 After the updates are confirmed, the token changes automatically cascade across all linked components in the app.  
 Every color, font, and spacing update made in Style Workspace is reflected live in the App UI — no manual CSS edits or repetitive style updates required.
 
+> This cascading effect is best understood with a simple example of how a single token change can update your entire application in real time.
+
 ### Example: Brand Color Update
 
 Imagine your app’s primary brand color is blue. You decide to switch it to orange:

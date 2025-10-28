@@ -61,6 +61,21 @@ components/button/button.json
 components/card/card.json
 ```
 
+:::note
+Components in WaveMaker can have [Variants](/learn/design-system/component-variants), which define different visual styles of the same component.  
+Component Tokens exist at two levels:
+- **Component Level:** Define common properties shared by all variants (for example, typography, padding, or default color).  
+- **Variant Level:** Define more specific visual treatments for each style variation of the component.  
+
+For example, the **Button** component includes multiple variants such as:
+- **Filled Button:** Uses a solid background for high emphasis actions.  
+- **Outlined Button:** Displays a border with a transparent background for medium emphasis.  
+- **Text-only Button:** Removes the fill and border for minimal emphasis actions.  
+
+Each variant inherits core values from the component tokens while applying unique styling for background, border, and text color.  
+This structure allows you to maintain consistency across all button types while enabling clear visual hierarchy within your design system.
+:::
+
 ### 3. Overrides: the Flexible Layer
 
 Overrides are edits or theme variations that you make in the Style Workspace (like switching to dark mode or customizing for a specific app).
