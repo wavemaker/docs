@@ -184,10 +184,17 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
 
 Adding an instance to either User workspace or Deployed Apps aids in the scalability of the WME setup in terms of application development and deployment, respectively. Each added User workspace or Deployed Apps instances would allow for a specific number of app developments and app deployments. These numbers will vary based on the WME version, refer to the table below for the exact numbers.
 
-| WME Version | Developer logins per 32GB WaveMaker Studio Instance | App Deployments per 32GB WaveMaker AppDeployment Instance |
-| ----------- | --------------------------------------------------- | --------------------------------------------------------- |
-| v11.x       | 18                                                  | 20                                                        |
-| v10.x       | 20                                                  | 20                                                        |
+| WME Version | User Type   | Developer logins per 32GB WaveMaker Studio Instance | 
+| ----------- | ----------- | --------------------------------------------------- |
+| v11.x       | web         | 18                                                  |
+|             | mobile-es   | 18                                                  |
+|             | mobile-expo | 4                                                   |
+
+
+| WME Version | App Deployments per 32GB WaveMaker AppDeployment Instance |
+| ----------- | --------------------------------------------------------- |
+| v11.x       | 20                                                        |
+
 
 The actual app development and deployment support are further determined by your license terms. This means that, even if your infrastructure has the capacity, the apps that can be developed and deployed is restricted by your license terms. Similarly, even though your license terms allow, the apps that can be developed and deployed are limited by the infrastructure capacity.
 
