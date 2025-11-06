@@ -4,7 +4,7 @@ author: "Sairama Krishna Bonala"
 ---
 ---
 
-We’re excited to share that starting with WaveMaker 11.13, you can now use _ng serve_ with WaveMaker exported Angular apps. This enhancement allows users to locally serve, test, and debug their generated Angular projects outside WaveMaker Studio with greater ease and flexibility.
+We’re excited to share that starting with WaveMaker [11.13](/learn/wavemaker-release-notes/v11-13-0), you can now use _ng serve_ with WaveMaker exported Angular apps. This enhancement allows users to locally serve, test, and debug their generated Angular projects outside WaveMaker Studio with greater ease and flexibility.
 
 ## How to Use _ng serve_ with Your Exported App 
 
