@@ -39,6 +39,14 @@ This document guides you on running, editing, and extending the generated Angula
    npx http-server dist
    ```
 
+:::note
+You can also use the Angular CLI to serve and test the app locally.
+
+   ```sh
+   ng serve --open
+   ```
+:::
+
 ### Common Issues & Fixes
 
 #### Acorn Issue
@@ -47,9 +55,6 @@ If you encounter an acorn-related issue, delete `package-lock.json` before runni
 rm package-lock.json
 npm install
 ```
-
-#### ng-serve support
-`ng serve` is not supported yet. We plan to enable it in an upcoming release. For now, build the project to run and debug it.
 
 ## Editing & Customizing Generated Angular Code
 
@@ -135,7 +140,6 @@ Developers can write regular Angular services to manage API interactions.
 ## Roadmap
 We are working towards enhancing this experience, especially for developers who choose WaveMaker and libraries to maintain the code further. Below are a few planned improvements:
 
-- **Support `ng-serve`**
 - **Provide a CLI for Page and Variable creation**
 - **Generate services code as well to provide developers more flexibility**
 
