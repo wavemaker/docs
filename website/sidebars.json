@@ -919,6 +919,7 @@
 				"react-native/third-party-expo-plugins",
 				"react-native/ssl-pinning",
 				"react-native/error-handling",
+				"react-native/page-cache",
 				{
 					"type": "category",
 					"label": "Authentication",
