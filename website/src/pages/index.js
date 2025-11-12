@@ -22,7 +22,7 @@ export default class Index extends React.Component {
     getFeatures() {
         let featureComponents = [];
         let features = [
-            { href: '/learn/figma-autocode-plugin/working-with-autocode-plugin/', title: 'AutoCode', description: "AutoCode is a Figma plugin that converts designs using Material 3.0 UI kit and Wavemaker UI kit into code which can be easily edited in the WaveMaker Studio , streamlining the design-to-development process." },
+            { href: '/learn/design-system/overview/', title: 'Design System', description: "Design System is a foundational part of WaveMaker’s enhanced styling experience for maintaining a consistent visual theme across all components within your application. It defines reusable design tokens, such as colors, typography, spac..." },
             { href: '/learn/react-native/wavepulse/', title: 'WavePulse', description: "WavePulse is a lightweight debugging tool tailored for Wavemaker Mobile apps. With minimal setup, you can seamlessly connect and inspect your app's components, view logs, monitor network traffic, analyze app storage, and more." },
             { href: '/learn/app-development/core-implementation/core-and-implementation-projects/', title: 'Core Implementation', description: "Core projects act as a foundation with reusable code and components. Implementation projects extend this core functionality to meet specific application requirements." },
             { href: '/learn/app-development/custom-widgets/enterprise-marketplace/', title: 'Prefab MarketPlace', description: "Enterprise marketplace allows artifacts to be published by teams to be used across multiple teams..." }]
