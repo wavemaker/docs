@@ -1017,6 +1017,7 @@
 			  "label": "How-To Guides",
 			  "items": [
 				"react-native/integrating-biometric-authentication",
+				"react-native/extending-reactnative-apps",
 				"react-native/disable-device-screencapture",
 				"react-native/detect-rooted-device",
 				"react-native/integrating-secure-store",
