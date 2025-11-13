@@ -945,6 +945,14 @@
 				"label": "Design and Theming",
 				"items": [
 				  "react-native/styles",
+					{
+						"type": "category",
+						"label": "Layout",
+						"items": [
+							"react-native/responsive-layout",
+							"react-native/sticky-header"
+						]
+					},
 				  "react-native/theme",
 				  "react-native/custom-icon-fonts",
 				  "react-native/splash-screen",
