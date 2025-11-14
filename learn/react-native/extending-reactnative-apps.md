@@ -1,184 +1,302 @@
 ---
-title: "Maintaining and Extending Generated ReactNative Code Outside WaveMaker Studio"
+title: "Maintaining and Extending Generated React Native Code Outside WaveMaker Studio"
 id: "extending-reactnative-apps"
-sidebar_label: "Extending React Native Apps"
+sidebar_label: "Extending Generated Code Outside WM"
 ---
 ---
 
-import myImage1 from '/learn/assets/react-native/extentinding-reactnative-apps/image1.png'
+WaveMaker is an accelerator platform that helps developers build applications fast while still keeping full control of the generated code. It avoids the “locked-in” low-code problem by letting teams customise, extend, and maintain the codebase outside the studio.
 
-import myImage2 from '/learn/assets/react-native/extentinding-reactnative-apps/image2.png'
+WaveMaker generates reusable React Native code with a clear, component-based structure. Each page sits in its own folder with its own UI, logic, styles, and variables.
 
-import myImage3 from '/learn/assets/react-native/extentinding-reactnative-apps/image3.png'
+WaveMaker follows standard development practices:
 
-import myImage4 from '/learn/assets/react-native/extentinding-reactnative-apps/image4.png'
+* **Component structure:** Every screen is a standalone React Native component.
+* **Performance & security:** The build uses minification, bundling, and platform optimizations from Expo and Metro.
+* **Custom extensions:** Developers can add their own React Native components or bring in third-party libraries.
+* **Easy deployment:** The app can be packaged and deployed like a standard React Native project.
 
-import myImage5 from '/learn/assets/react-native/extentinding-reactnative-apps/image5.png'
-
-
-import myImage6 from '/learn/assets/react-native/extentinding-reactnative-apps/image5.png'
-
-
-import myImage7 from '/learn/assets/react-native/extentinding-reactnative-apps/image7.png'
-
-import myImage8 from '/learn/assets/react-native/extentinding-reactnative-apps/image8.png'
-
-WaveMaker is a scalable accelerator platform that enables developers to rapidly build enterprise-grade applications with minimal coding while maintaining control over the generated code. Unlike other low-code platforms, WaveMaker allows developers to hyper-customise components and seamlessly extend functionality.
-
-WaveMaker generates reusable Angular code that follows best practices, such as:
-
-* **Component-Based Structure**: Each page is generated as an Angular component with an isolated scope.  
-* **Security & Performance**: Auth guards, tree-shaking, and minification are applied to keep the code efficient and secure.  
-* **Custom Extensions**: Developers can add custom or third-party Angular components to extend the generated ones.  
-* **Easy Deployment**: The frontend code can be deployed separately as static assets to a CDN.
-
-This document guides you on running, editing, and extending the generated Angular code for the web after detaching it from WaveMaker Studio. It also outlines our roadmap for improving this experience.
+This document explains how to run, edit, and extend the generated React Native project after exporting it from WaveMaker Studio. It also shows the limitations, supported patterns, and the roadmap for improving this workflow.
 
 ---
 
-## **Running WaveMaker-Generated Code Locally**
+## Running WaveMaker-Generated Code Locally
 
 ### Steps to Run
 
-1. Export the project as a ReactNative ZIP.  
-2. Extract the downloaded ZIP file from WaveMaker Studio.  
-3. Open the project in a code editor (e.g., VS Code).  
-4. Navigate to the project directory:   
-   **`cd generated-native-app`**  
-5. Install dependencies:  
-   **`npm install`**  
-6. Run the application on expo:  
-   **`npm run start`**
+1. Export the project as a **React Native ZIP** from WaveMaker Studio.
+2. Extract the downloaded ZIP.
+3. Open the project folder in your code editor (for example, VS Code).
+4. Move into the project directory:
+
+   ```bash
+   cd generated-native-app
+   ```
+5. Install project dependencies:
+
+   ```bash
+   npm install
+   ```
+6. Start the Expo development server:
+
+   ```bash
+   npm run start
+   ```
+
+You can now open the app in the Expo Go client or run it on a simulator depending on your local setup.
 
 ---
 
-## **Editing & Customizing Generated ReactNative Code**
+## Editing & Customizing Generated React Native Code
 
-WaveMaker creates a standard project structure that allows developers to manage and extend the codebase independently. Understanding the file organization is key:
+WaveMaker creates a standard project structure that allows developers to manage and extend the codebase independently. Understanding the file organization is key. The layout is simple: each screen has its own folder with its own UI, logic, styles, and variables.
 
-* **UI-related files:**  
-   For a given page, files are typically located in `src/pages/PageName/` and include:
+### Page-Level Files
 
-  * `PageName.component.js` – The UI component.  
-  * `PageName.script.js` – Event handlers and business logic.  
-  * `PageName.style.js` – Style definitions.  
-  * `PageName.variables.js` – Definitions for variables (data, API calls, etc.).  
-* **Global configurations:**
+Each page is stored under:
 
-  * **Pages Configuration:**  
-     The file `src/pages/pages.config.js` registers all pages/screens.  
-  * **Navigation Actions:**  
-     Global navigation actions are defined in `src/app.variables.js` (e.g., `goToPage_NewPage`).
+```
+src/pages/PageName/
+```
 
-### Modifying UI on an existing page
+A typical page includes:
+
+* **PageName.component.js** – UI component for the screen.
+* **PageName.script.js** – Event handlers and business logic.
+* **PageName.style.js** – Style definitions.
+* **PageName.variables.js** – Variables for data, API calls, and bindings.
+
+### Global Configuration
+
+* **Pages configuration:**
+  `src/pages/pages.config.js` registers all pages and their component paths.
+
+* **Navigation actions:**
+  `src/app.variables.js` defines shared navigation helpers (for example, `goToPage_NewPage`).
+
+This structure keeps each screen isolated and makes it easy to update layouts, logic, and data handling without touching the rest of the app.
+
+---
+
+## Modifying UI on an Existing Page
 
 When updating a screen’s UI, you will typically:
 
-* Edit the component file to change the layout or add new components.  
-* Update the style file to adjust the look and feel.  
-* Modify the script file to handle events or add custom logic.  
-* Update the variables file to manage data bindings or API integrations.
+1. **Edit the component file** (`PageName.component.js`) to change layout or add new components.
+2. **Update the style file** (`PageName.style.js`) to adjust the visual design.
+3. **Modify the script file** (`PageName.script.js`) to handle events or add logic.
+4. **Update the variables file** (`PageName.variables.js`) to manage data, API calls, or bindings.
 
-Since it is generated by ReactNative code, developers have full freedom to either to use the components provided by [WaveMaker runtime](https://github.com/wavemaker/wavemaker-rn-runtime) (which is open-sourced) or use any other libraries like react-native-paper.
+Because the project is standard React Native, you can use WaveMaker runtime components or any third-party library such as **react-native-paper**.
 
-#### Working with WaveMaker Components
+## Working with WaveMaker Components
 
-The generated React Native code leverages the `@wavemaker/app-rn-runtime` library to provide ready-to-use components. 
+The generated project uses **@wavemaker/app-rn-runtime**, which includes components that support the WaveMaker data-binding model.
 
-For example:
+### Data Binding
 
-<img src={myImage1} alt="React Native Runtime data bindiing" style={{width:"600px"}}/>
+WaveMaker uses **Variables** to store API metadata and data sources.
+Inside a component, a variable value is typically accessed through the `variables` prop.
 
-* Data binding: WaveMaker uses an abstraction called *Variables* to hold metadata for API calls and data binding. 
+Example:
 
-For instance:
+```js
+// PageName.component.js
+export default function PageName({ variables }) {
+  return (
+    <WmLabel value={variables.userData?.data?.name} />
+  );
+}
+```
 
-<!--![React Native Runtime data bindiing](/learn/assets/react-native/extentinding-reactnative-apps/image1.png)-->
+### Event Binding
 
-<img src={myImage2} alt="React Native Runtime data bindiing" style={{width:"400px"}}/>
+Events must point to functions defined in the page’s script file.
 
+```js
+// PageName.component.js
+<Button title="Save" onPress={PageNameScript.onSave} />
+```
 
+```js
+// PageName.script.js
+export function onSave() {
+  // custom logic here
+}
+```
 
-* Event binding: The same pattern of binding applies to events as well. But all the developers must write js methods that are referred, in corresponding {compoents}.script.js file
-
-
-<img src={myImage3} alt="Script js writting syntax" style={{width:"600px"}}/>
-
-#### 
-
-#### Working with third-party Components
+## Working with Third-Party Components
 
 Since it is now a free react-native expo project, developers have the flexibility to easily add other react-native component libraries directly and work with them to take the development forward. For example: Below is a sample that shows how they can add react-native-paper components to existing pages and do data binding and event binding in a regular way.
 
-**Installing a Library:**
+Since the exported project is a standard Expo app, you can install and use any React Native library. 
 
-`npm install react-naive-paper`
+### Installing a Library
 
-* **Using a Component:**  
-   You can import and use components inside your page as needed:
+```bash
+npm install react-native-paper
+```
+
+### Using a Component
+
+```js
+import { Button } from 'react-native-paper';
+
+export default function PageName() {
+  return <Button mode="contained">Click Me</Button>;
+}
+```
+
+### Limitations
+
+* Third-party components **cannot** bind directly to WaveMaker Variables or WaveMaker runtime styles. You must pass the values manually.
+
+---
 
 
-<img src={myImage4} alt="React Native Runtime data bindiing" style={{width:"600px"}}/>
+## Creating a New Page and Working with APIs
+
+Developers often need to add new screens and connect them to existing flows. You can build new pages in two ways: the **WaveMaker way**, which follows the generated project structure, or the **React Native way**, which uses a single file without WaveMaker bindings.
 
 
-* **Limitations:** You cannot bind wavemaker variables and styles. 
+## Working in the WaveMaker Way
 
-#### 
+WaveMaker pages follow the same four-file structure used by the generated screens. Developers familiar with this pattern can continue to create new pages and new variables in the same format.
 
-### Creating a new page and working with APIs
+### New Page Creation
 
-Beyond working with existing pages, developers tend to face use cases where they need to create new pages and link them to existing flows/menus. Use new APIs to cater to these flows.
+Create a new folder under:
 
-#### Working in WaveMaker way
+```
+src/pages/WmNewPage
+```
 
-Since developers understand WaveMaker page component structure, they can continue to create new pages and variables to work.
-
-**New Page Creation:**
-
-* Create a new folder in `src/pages` (e.g., `src/pages/WmNewPage`).  
-* Add the following files with default templates:  
+* Add the following files with default templates:
   * `WmNewPage.component.js`  
   * `WmNewPage.script.js`  
   * `WmNewPage.style.js`  
   * `WmNewPage.variables.js`
 
-  **Update Configurations:**
 
-* Edit `src/pages/pages.config.js` to register the new page.
+### Update Configurations
 
-<img src={myImage5} alt="React Native Runtime data bindiing" style={{width:"600px"}}/>
+**Register the page** in:
 
-* Update `src/app.variables.js` to add a navigation action, for example
+```
+src/pages/pages.config.js
+````
 
-<img src={myImage6} alt="React Native Runtime data bindiing" style={{width:"600px"}}/>
+```js
+{
+  name: 'WmNewPage',
+  path: 'WmNewPage',
+  component: require('./WmNewPage/WmNewPage.component').default
+}
+````
 
-* ##### New APIs
+**Update `src/app.variables.js` to add a navigation action:**
 
-  In the same respective file structure for the relevant component add a new Variable object in variables.js file.
+```js
+navigationActions: {
+  goToWmNewPage: (navigation) => navigation.navigate('WmNewPage')
+}
+```
 
-<img src={myImage7} alt="React Native Runtime data bindiing" style={{width:"600px"}}/>
+### Working With New APIs
 
+Add Variable objects inside the `WmNewPage.variables.js` file to define the API or data source for the page.
 
-#### Working in React-native way
+Example:
 
-**Single-File Page Creation:**
+```js
+export const userList = {
+  name: 'userList',
+  type: 'rest',
+  method: 'GET',
+  url: 'https://api.example.com/users'
+};
+```
 
-* Create a new file (e.g., `RnNewPage.js`) in the `src/pages/RnNewPage` folder.  
-* Register the page in `src/pages/pages.config.js`.  
-* Update `src/app.variables.js` with a corresponding navigation action.
+Access variables inside the component:
 
-**Limitations:**
+```js
+// WmNewPage.component.js
+<Text>{variables.userList?.data?.length}</Text>
+```
 
-* Although the page renders, it won’t have access to WaveMaker’s variable binding or custom components (like `WmLabel` or `WmButton`).
+Trigger variable invocation inside the script:
 
-* ##### New APIs
+```js
+// WmNewPage.script.js
+export function refreshUsers(variables) {
+  if (variables.userList?.invoke) {
+    variables.userList.invoke();
+  }
+}
+```
 
-  * Developers can directly use the fetch function to make API calls or can use any third-party library like Axios to make API calls
+---
 
-  <img src={myImage8} alt="React Native Runtime data bindiing" style={{width:"600px"}}/>
+## Working in the React Native Way
 
+Developers may choose to create pages using plain React Native without WaveMaker bindings. This gives full flexibility but removes access to Variables and WaveMaker components.
 
-## **RoadMap**
+### Single-File Page Creation
+
+Create a folder and file:
+
+```
+src/pages/RnNewPage/RnNewPage.js
+```
+
+Register the page in:
+
+```
+src/pages/pages.config.js
+```
+
+```js
+{
+  name: 'RnNewPage',
+  path: 'RnNewPage',
+  component: require('./RnNewPage/RnNewPage').default
+}
+```
+
+**Update `src/app.variables.js` with a navigation action:**
+
+```js
+navigationActions: {
+  goToRnNewPage: (navigation) => navigation.navigate('RnNewPage')
+}
+```
+
+### Working With New APIs
+
+React Native pages can call APIs directly using `fetch` or any third-party library such as Axios.
+
+Example using Axios:
+
+```js
+import axios from 'axios';
+
+export default function RnNewPage() {
+  async function loadData() {
+    const { data } = await axios.get('https://api.example.com/items');
+    console.log(data);
+  }
+
+  return null;
+}
+```
+
+### Limitations
+
+* React Native pages cannot use WaveMaker Variables.
+* WaveMaker components (such as `WmLabel` or `WmButton`) are not available.
+* All data must be fetched and managed manually.
+
+## RoadMaps
 
 We are working towards enhancing this experience. Especially when developers choose WaveMaker and libraries to maintain the code further. Below are a few plans we have got.
 
