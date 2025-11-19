@@ -22,7 +22,7 @@ Make sure to use the same file name as before in the same file location.
 
 2. Navigate to **project** → **src** → **main** → **webapp** → `favicon.png`. Alternatively, use Search.
 
-![design_favicon_resource](/learn/assets/faviconLocation-release-11-14-1.png)
+![design_favicon_resource](/learn/assets/favicon-location.png)
 
 3. Delete this file and upload a new icon in the **same location with the same name**.
 
