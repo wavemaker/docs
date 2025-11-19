@@ -20,9 +20,9 @@ Make sure to use the same file name as before in the same file location.
 
 ![design_logo_resource](/learn/assets/import-resources.png)
 
-2. Navigate to **Images** -> **logos** directory -> `favicon.ico`. Alternatively, use the Search.
+2. Navigate to **project** → **src** → **main** → **webapp** → `favicon.png`. Alternatively, use Search.
 
-[![design_favicon_resource](/learn/assets/design_favicon_resource.png)](/learn/assets/design_favicon_resource.png)
+![design_favicon_resource](/learn/assets/faviconLocation-release-11-14-1.png)
 
 3. Delete this file and upload a new icon in the **same location with the same name**.
 
