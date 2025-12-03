@@ -40,7 +40,7 @@ To enable CSP for the deployment profile, perform the following steps:
 
 ``` 
 security.general.csp.enabled=true
-security.general.csp.policy=script-src 'self'; style-src 'self' 'nonce-${NONCE_VALUE}'; default-src 'self';
+security.general.csp.policy=script-src 'self'; style-src 'self' 'nonce-${NONCE_VALUE}'; default-src 'self'
 ```
 
 2. In the index.html file, add a meta tag inside the head tag as follows:
