@@ -50,7 +50,15 @@ security.general.csp.policy=script-src 'self'; style-src 'self' 'nonce-${NONCE_V
 3. Deploy and test
 
 :::note
-The policy above is a sample one. You can provide your own policy against the property security.general.csp.policy
+The policy above is a sample one. You can provide your own policy against the property security.general.csp.policy.
+If you are using the Calendar widget in your project, please add the additional meta tag (in lowercase) to your index.html file:
+```
+<meta name="csp-nonce" content="${NONCE_VALUE}">
+```
+Also, ensure that you include the data: protocol under the font-src directive in your CSP policy.
+```
+security.general.csp.policy=script-src 'self'; style-src 'self' 'nonce-${NONCE_VALUE}'; default-src 'self'; font-src 'self' data:
+```
 :::
 
 ## ${NONCE_VALUE}
