@@ -123,7 +123,7 @@ const config = {
             to: "https://www.wavemaker.com/get-demo/",
             label: "Schedule Demo",
             position: "right",
-            className: "button button--outline button--secondary",
+            className: "button button--outline btn--primary",
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
         ],
