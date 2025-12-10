@@ -340,3 +340,245 @@ export const DesignIcon = () => {
     </svg>
   );
 };
+
+export const HeadphoneIcon = () => {
+  return (
+    <svg
+      width="42"
+      height="42"
+      viewBox="0 0 42 42"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M40.3471 26.0014V20.6218C40.3471 9.72804 31.5155 0.896484 20.6218 0.896484C9.72804 0.896484 0.896484 9.72804 0.896484 20.6218V26.0014"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M11.6557 26.0015H0.896484V36.7607C0.896484 38.7413 2.5023 40.3471 4.4829 40.3471H11.6557V26.0015Z"
+        fill="#D4D4D8"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M40.3471 26.0015H29.5879V40.3471H36.7607C38.7413 40.3471 40.3471 38.7413 40.3471 36.7607V26.0015Z"
+        fill="#D4D4D8"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+export const PerformanceIcon = () => {
+  return (
+    <svg
+      width="42"
+      height="42"
+      viewBox="0 0 42 42"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M24.2082 24.208H17.0354V40.3469H24.2082V24.208Z"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8.06932 33.1743H0.896484V40.3472H8.06932V33.1743Z"
+        fill="#D4D4D8"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M40.3469 15.2422H33.1741V40.3471H40.3469V15.2422Z"
+        fill="#D4D4D8"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.48291 15.2422L13.449 6.27611L20.6218 13.449L33.1743 0.896484"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M25.1047 0.896484H33.1742V8.96593"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const GuideIcon = () => {
+  return (
+    <svg
+      width="38"
+      height="38"
+      viewBox="0 0 38 38"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M36.7607 0.896484H0.896484V36.7607H36.7607V0.896484Z"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M16.1388 6.27588H6.27612V17.9317H16.1388V6.27588Z"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M16.1388 23.3115H6.27612V31.381H16.1388V23.3115Z"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M31.381 6.27588H21.5183V31.3808H31.381V6.27588Z"
+        fill="#D4D4D8"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ProductIcon = () => {
+  return (
+    <svg
+      width="38"
+      height="38"
+      viewBox="0 0 38 38"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8.06934 8.06934H29.5879"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8.06934 15.2422H29.5879"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M0.896484 22.415H11.6557V27.7947H26.0014V22.415H36.7607"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M33.1745 0.896484H4.48315C2.50242 0.896484 0.896729 2.50218 0.896729 4.4829V33.1743C0.896729 35.155 2.50242 36.7607 4.48315 36.7607H33.1745C35.1552 36.7607 36.7609 35.155 36.7609 33.1743V4.4829C36.7609 2.50218 35.1552 0.896484 33.1745 0.896484Z"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+export const ReferenceIcon = () => {
+  return (
+    <svg
+      width="42"
+      height="38"
+      viewBox="0 0 42 38"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M27.4016 16.552C26.9435 16.0842 26.3859 15.7256 25.7703 15.5029C25.1546 15.2801 24.4967 15.1988 23.8453 15.2651C23.194 15.3315 22.5659 15.5437 22.0078 15.886C21.4497 16.2283 20.9759 16.6919 20.6215 17.2424C20.2672 16.6918 19.7934 16.228 19.2353 15.8856C18.6771 15.5432 18.0491 15.3309 17.3976 15.2646C16.7462 15.1983 16.0882 15.2796 15.4726 15.5025C14.8569 15.7253 14.2993 16.0841 13.8413 16.552C13.015 17.3972 12.5522 18.5323 12.5522 19.7144C12.5522 20.8964 13.015 22.0315 13.8413 22.8767L20.6215 29.7671L27.4034 22.8776C28.2292 22.0318 28.6913 20.8965 28.6909 19.7144C28.6906 18.5324 28.2278 17.3974 27.4016 16.552Z"
+        fill="#D4D4D8"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M36.7607 36.7607H4.4829C3.53173 36.7607 2.61951 36.3828 1.94692 35.7102C1.27434 35.0377 0.896484 34.1254 0.896484 33.1743V0.896484H15.2422L19.7252 8.06932H40.3471V33.1743C40.3471 34.1254 39.9692 35.0377 39.2967 35.7102C38.6241 36.3828 37.7119 36.7607 36.7607 36.7607Z"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+export const FAQsIcon = () => {
+  return (
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M22.415 6.27588C31.3282 6.27588 38.5539 13.5016 38.5539 22.4148C38.5539 31.3279 31.3282 38.5537 22.415 38.5537C13.5019 38.5537 6.27612 31.3279 6.27612 22.4148"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M17.0354 0.896484C8.12222 0.896484 0.896484 8.12222 0.896484 17.0354H17.0354V0.896484Z"
+        fill="#D4D4D8"
+        stroke="#161616"
+        stroke-width="1.79321"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};

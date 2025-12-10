@@ -5,7 +5,6 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
-
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
@@ -114,82 +113,85 @@ const config = {
             position: "right",
             label: "How to",
           },
+
           {
             to: "https://www.wavemaker.com/get-demo/",
             label: "Schedule Demo",
             position: "right",
-            className: "button button--outline button--secondary",
+            className: "button button--outline button--primary",
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
       footer: {
-        style: "dark",
+        style: "light",
+
         links: [
           {
-            title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                html: `
+                <div class="send-message-section row">
+                <div class="col col--6">
+                <h4 class="message">Stuck somewhere? Our<br/>team is ready to assist you.</h4>
+                </div>
+                <div class="col col--6 text--right">
+                <button class="button button--dark">Send Message</button>
+                </div>
+                </div>
+                `,
+              },
+               {
+                html: `
+                <div class="footer-main-section row">
+                 <div class="col col--5">
+                 <a href="/" target="_blank" class="logo-links"> <img src="/img/wm-logo.svg"/>Wavemaker</a>
+                 <p class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in volutpat</p>
+                 </div>
+                  <div class="col col--2">
+                  <ul>
+                  <li>
+                  </li>
+                   <li>
+                  </li>
+                   <li>
+                  </li>
+                  </ul>
+                 </div>
+                  <div class="col col--3">
+                 </div>
+                  <div class="col col--3">
+                 </div>
+                </div>
+                `,
               },
             ],
           },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "X",
-                href: "https://x.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
+           
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
     }),
-    plugins: [
+  plugins: [
     [
-      '@docusaurus/plugin-content-blog',
+      "@docusaurus/plugin-content-blog",
       {
         /**
          * Required for any multi-instance plugin
          */
-        id: 'whatsnew',
+        id: "whatsnew",
         /**
          * URL route for the blog section of your site.
          * *DO NOT* include a trailing slash.
          */
-        routeBasePath: 'whatsnew',
+        routeBasePath: "whatsnew",
         /**
          * Path to data on filesystem relative to site dir.
          */
-        path: './whatsnew',
+        path: "./whatsnew",
       },
     ],
   ],

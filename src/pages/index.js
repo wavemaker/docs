@@ -2,58 +2,126 @@ import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import SearchBar from "@theme-original/SearchBar";
-import { BugIcon,BulbIcon,PackageIcon,DatabaseIcon,CpuIcon,DesignIcon } from "../../static/img/icon";
+import {
+  BugIcon,
+  BulbIcon,
+  PackageIcon,
+  DatabaseIcon,
+  CpuIcon,
+  DesignIcon,
+  HeadphoneIcon,
+  PerformanceIcon,
+  GuideIcon,
+  ProductIcon,
+  ReferenceIcon,
+  FAQsIcon,
+} from "../../static/img/svg";
 
 const envData = [
   {
     id: 1,
-    icon: <BulbIcon classname="card-icon"/>,
+    icon: <BulbIcon />,
     title: "Building User Interfaces",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
   },
   {
     id: 2,
-    icon: <BugIcon classname="card-icon"/>,
+    icon: <BugIcon />,
     title: "Building  API’s & Microservices",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
   },
   {
     id: 3,
-    icon:<DatabaseIcon classname="card-icon"/>,
+    icon: <DatabaseIcon />,
     title: "Build & Deploy",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
   },
   {
     id: 4,
-    icon: <DesignIcon classname="card-icon"/>,
+    icon: <DesignIcon />,
     title: "Design System",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
   },
   {
     id: 5,
-    icon: <CpuIcon classname="card-icon"/>,
+    icon: <CpuIcon />,
     title: "Agentic Development",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
   },
   {
     id: 6,
-    icon:<PackageIcon/>,
+    icon: <PackageIcon />,
     title: "Studio",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
   },
 ];
+
+const resourcesData = [
+  {
+    id: 1,
+    icon: <HeadphoneIcon />,
+    title: "Tutorial Library",
+    desc: "Hands-on tutorials to help you learn specific features like data binding, prefabs, workflows, and integrations. ",
+  },
+  {
+    id: 2,
+    icon: <PerformanceIcon />,
+    title: "Performance Optimization",
+    desc: "Optimize load performance, API response times, data binding, and runtime behavior with practical tips. ",
+  },
+  {
+    id: 3,
+    icon: <GuideIcon />,
+    title: "Platform Guide",
+    desc: "A high-level introduction to Wavemaker, its core capabilities, architecture, and how everything fits together.",
+  },
+  {
+    id: 4,
+    icon: <ProductIcon />,
+    title: "Product",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.",
+  },
+  {
+    id: 5,
+    icon: <ReferenceIcon />,
+    title: "API Reference",
+    desc: "A detailed reference for all Wavemaker APIs, events, methods, widgets, and advanced extensibility features. ",
+  },
+  {
+    id: 6,
+    icon: <FAQsIcon />,
+    title: "Troubleshooting & FAQs",
+    desc: "Find quick answers to common issues, configuration problems, and environment-related questions. ",
+  },
+];
+
 export function EnvList({ prop }) {
   return (
     <ul className="env-list-group">
       {prop.map((item) => {
         return (
           <li className="env-list-item" key={item.id}>
-            <div className="img-wrapper">
-              {item.icon}
-            </div>
+            <div className="img-wrapper">{item.icon}</div>
             <div className="content-wrapper">
               <h4 className="env-item-heading">{item.title}</h4>
               <p className="env-item-desc">{item.desc}</p>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+export function ResourceList({ prop }) {
+  return (
+    <ul className="res-list-group">
+      {prop.map((item) => {
+        return (
+          <li className="res-list-item" key={item.id}>
+            <div className="img-wrapper">{item.icon}</div>
+            <div className="content-wrapper">
+              <h4 className="res-item-heading">{item.title}</h4>
+              <p className="res-item-desc">{item.desc}</p>
             </div>
           </li>
         );
@@ -78,9 +146,41 @@ export default function Home() {
         <section className="env-list-section">
           <EnvList prop={envData} />
         </section>
-        <section className="rightside-img-section"></section>
-        <section className="leftside-img-section"></section>
-        <section className="resources-list-section"></section>
+        <section className="rightside-img-section">
+          <div className="left-content">
+            <span className="highlight-span">What’s New</span>
+            <h2 className="title">
+              Developer <br />
+              Quickstart Series
+            </h2>
+            <p className="desc">
+              Short, structured guides to help new developers build,
+              <br /> deploy, and scale apps in minutes.
+            </p>
+            <button className="button button--dark">Get Started</button>
+          </div>
+          <div className="right-content">
+            <img src="/img/section-img/RightIllustration.svg" />
+          </div>
+        </section>
+        <section className="leftside-img-section">
+          <div className="left-content">
+            <img src="/img/section-img/IllustrationLeft.svg" />
+          </div>
+          <div className="right-content">
+            <span className="highlight-span">What’s New</span>
+            <h2 className="title">Wavemaker UI Kits</h2>
+            <p className="desc">
+              A curated set of reusable UI elements, patterns, and templates to
+              help you design and ship applications faster.
+            </p>
+            <button className="button button--dark">Get Started</button>
+          </div>
+        </section>
+        <section className="resources-list-section">
+          <h3 className="section-title">Additional Resources</h3>
+          <ResourceList prop={resourcesData}/>
+        </section>
         <section className="message-section"></section>
       </main>
     </Layout>
