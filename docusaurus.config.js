@@ -90,32 +90,27 @@ const config = {
         items: [
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "designSystemSidebar",
             position: "left",
             label: "Design System",
           },
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "platformSidebar",
             position: "left",
             label: "Platform",
           },
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "aiAgentsSidebar",
             position: "left",
             label: "AI Agents",
           },
+          { to: "/whatsnew", label: "What's New", position: "right" },
+          { to: "/blog", label: "Blogs", position: "right" },
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "right",
-            label: "What's New",
-          },
-          { to: "/blog", label: "Blogs", position: "left" },
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "howToSidebar",
             position: "right",
             label: "How to",
           },
@@ -123,7 +118,7 @@ const config = {
             to: "https://www.wavemaker.com/get-demo/",
             label: "Schedule Demo",
             position: "right",
-            className: "button button--outline btn--primary",
+            className: "button button--outline button--secondary",
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
         ],
@@ -178,6 +173,26 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'whatsnew',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'whatsnew',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './whatsnew',
+      },
+    ],
+  ],
 };
 
 export default config;

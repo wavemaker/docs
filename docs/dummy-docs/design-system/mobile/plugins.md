@@ -1,0 +1,3 @@
+# Plugins
+
+Managing mobile plugins.

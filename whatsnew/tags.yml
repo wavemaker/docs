@@ -18,17 +18,22 @@ hola:
   permalink: /hola
   description: Hola tag description
 
-tutorial:
-  label: Tutorial
-  permalink: /tutorial
-  description: Tutorial posts
+release-notes:
+  label: Release Notes
+  permalink: /release-notes
+  description: Release Notes
 
-advanced:
-  label: Advanced
-  permalink: /advanced
-  description: Advanced topics
+v1.0:
+  label: v1.0
+  permalink: /v1-0
+  description: Version 1.0 release
 
-tips:
-  label: Tips
-  permalink: /tips
-  description: Useful tips
+v1.1:
+  label: v1.1
+  permalink: /v1-1
+  description: Version 1.1 release
+
+v1.2:
+  label: v1.2
+  permalink: /v1-2
+  description: Version 1.2 release
