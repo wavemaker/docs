@@ -7,18 +7,14 @@
 /* You can override the default Infima variables here. */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: rgba(11, 99, 229, 1);
+  --ifm-color-dark: rgba(24, 24, 27, 1);
+  --ifm-color-white: rgba(255, 255, 255, 1);
+  --ifm-color-primary-lightest: rgba(240, 245, 255, 1);
 
   --ifm-font-family-base: "DM Sans", sans-serif;
   --ifm-font-color-base: rgba(63, 63, 70, 1);
+  --ifm-font-size-base: 14px;
   --ifm-heading-color: rgba(24, 24, 27, 1);
   --ifm-h1-font-size: 2.25rem;
   --ifm-h2-font-size: 1.5rem;
@@ -27,11 +23,14 @@
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.75rem;
 
+  /* button */
+  --ifm-button-border-color:rgba(1, 2, 5, 0.63);
+
   /**--Font--**/
+  --wm-font-family-backup: "Arial", sans-serif;
   --wm-font-family: "DM Sans", var(--wm-font-family-backup);
   --wm-font-family-secondary: "Inter", var(--wm-font-family-backup);
   --wm-body-font-weight: 400;
-  --wm-font-family-backup: "Arial", sans-serif;
   --wm-font-weight-thin: 100;
   --wm-font-weight-extralight: 200;
   --wm-font-weight-light: 300;
@@ -41,12 +40,8 @@
   --wm-font-weight-bold: 700;
   --wm-font-weight-extrabold: 800;
   --wm-font-weight-black: 900;
-  --wm-line-height: 1;
-  --wm-heading-text-color: #000000;
-  --wm-heading-font-family: "Noto Sans", serif;
 
   /* Font Sizes */
-  --wm-font-size-base: 13px;
   --wm-h1-font-size: 2.25rem; /* 36px */
   --wm-h2-font-size: 1.5rem; /* 24px */
   --wm-h3-font-size: 1.125rem; /* 18px */
@@ -122,9 +117,55 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-font-color-base: rgba(255, 255, 255, 0.8);
 }
 
 /* homepage */
+
 .main-wrapper-homepage {
   padding: var(--homepage-spacing);
+}
+.top-banner-section {
+  background: linear-gradient(
+    155deg,
+    rgba(92, 117, 183, 1) 0%,
+    rgba(92, 117, 183, 0.7) 25%,
+    rgba(238, 164, 218, 0.7) 50%,
+    rgba(238, 164, 218, 1) 100%
+  );
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 292px;
+  padding: 62px;
+  text-align: center;
+  .font-lg,
+  p {
+    color: var(--ifm-color-white);
+  }
+  .font-lg{
+    font-size: var(--wm-font-lg);
+    line-height: 56px;
+    font-weight: var(--wm-font-weight-semibold);
+  }
+}
+
+.top-banner-section .DocSearch-Button {
+  display: inline-flex;
+  --docsearch-searchbox-background: transparent;
+  --docsearch-subtle-color: rgba(255, 255, 255, 0.44);
+  --docsearch-muted-color: #fff;
+  min-width: 30%;
+  height: 54px;
+  border-radius: 54px;
+  padding: 0 16px;
+}
+.navbar .navbar__items .DocSearch-Button {
+  display: none;
+}
+.navbar .navbar__items {
+  gap: 12px;
+}
+.navbar__title{
+  font-weight: 500;
 }
