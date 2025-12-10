@@ -5,6 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -15,10 +16,104 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-font-family-base: "DM Sans", sans-serif;
+  --ifm-font-color-base: rgba(63, 63, 70, 1);
+  --ifm-heading-color: rgba(24, 24, 27, 1);
+  --ifm-h1-font-size: 2.25rem;
+  --ifm-h2-font-size: 1.5rem;
+  --ifm-h3-font-size: 1.125rem;
+  --ifm-h4-font-size: 1rem;
+  --ifm-h5-font-size: 0.875rem;
+  --ifm-h6-font-size: 0.75rem;
+
+  /**--Font--**/
+  --wm-font-family: "DM Sans", var(--wm-font-family-backup);
+  --wm-font-family-secondary: "Inter", var(--wm-font-family-backup);
+  --wm-body-font-weight: 400;
+  --wm-font-family-backup: "Arial", sans-serif;
+  --wm-font-weight-thin: 100;
+  --wm-font-weight-extralight: 200;
+  --wm-font-weight-light: 300;
+  --wm-font-weight-regular: 400;
+  --wm-font-weight-medium: 500;
+  --wm-font-weight-semibold: 600;
+  --wm-font-weight-bold: 700;
+  --wm-font-weight-extrabold: 800;
+  --wm-font-weight-black: 900;
+  --wm-line-height: 1;
+  --wm-heading-text-color: #000000;
+  --wm-heading-font-family: "Noto Sans", serif;
+
+  /* Font Sizes */
+  --wm-font-size-base: 13px;
+  --wm-h1-font-size: 2.25rem; /* 36px */
+  --wm-h2-font-size: 1.5rem; /* 24px */
+  --wm-h3-font-size: 1.125rem; /* 18px */
+  --wm-h4-font-size: 1rem; /* 16px */
+  --wm-h5-font-size: 0.875rem; /* 14px */
+  --wm-h6-font-size: 0.75rem; /* 12px */
+
+  --wm-font-lg: 3.25rem; /* 52px */
+  --wm-font-md: 2.5rem; /* 40px */
+  --wm-font-20: 1.25rem; /* 20px */
+  --wm-font-15: 0.9375rem; /* 15px */
+  --wm-font-13: 0.8125rem; /* 13px */
+  --wm-font-11: 0.6875rem; /* 11px */
+  --wm-font-10: 0.625rem; /* 10px */
+  --wm-font-8: 0.5rem; /* 8px */
+
+  /* Line Heights */
+  --lh-64: 64px;
+  --lh-44: 44px;
+  --lh-36: 36px;
+  --lh-30: 30px;
+  --lh-26: 26px;
+  --lh-25: 25px;
+  --lh-24: 24px;
+  --lh-18: 18px;
+  --lh-16: 16px;
+  --lh-15: 15px;
+  --lh-20: 20px;
+  --lh-normal: normal;
+
+  /**--Break points--**/
+  --wm-screen-lg: 1440px;
+  --wm-screen-md: 1200px;
+  --wm-screen-sm: 992px;
+  --wm-screen-xs: 768px;
+
+  /**--Standard utility--**/
+  --wm-rule-space: 4px;
+  --wm-space-0: ~"calc(var(--wm-rule-space) * 0)";
+  --wm-space-1: ~"calc(var(--wm-rule-space) * 1)";
+  --wm-space-2: ~"calc(var(--wm-rule-space) * 2)";
+  --wm-space-3: ~"calc(var(--wm-rule-space) * 3)";
+  --wm-space-4: ~"calc(var(--wm-rule-space) * 4)";
+  --wm-space-5: ~"calc(var(--wm-rule-space) * 5)";
+  --wm-space-6: ~"calc(var(--wm-rule-space) * 6)";
+  --wm-space-7: ~"calc(var(--wm-rule-space) * 7)";
+  --wm-space-8: ~"calc(var(--wm-rule-space) * 8)";
+  --wm-space-9: ~"calc(var(--wm-rule-space) * 9)";
+  --wm-space-10: ~"calc(var(--wm-rule-space) * 10)";
+  --wm-space-11: ~"calc(var(--wm-rule-space) * 11)";
+  --wm-space-12: ~"calc(var(--wm-rule-space) * 12)";
+
+  /* icon size */
+
+  --wm-icon-size-1: 12px;
+  --wm-icon-size-2: 20px;
+  --wm-icon-size-3: 24px;
+  --wm-icon-size-4: 32px;
+  --wm-icon-size-5: 40px;
+  --wm-icon-size-6: 52px;
+
+  /* homepage variable */
+  --homepage-spacing: 32px 72px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +122,9 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* homepage */
+.main-wrapper-homepage {
+  padding: var(--homepage-spacing);
 }
