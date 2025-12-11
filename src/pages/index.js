@@ -1,6 +1,7 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
 import SearchBar from "@theme-original/SearchBar";
 import {
   BugIcon,
@@ -23,36 +24,42 @@ const envData = [
     icon: <BulbIcon />,
     title: "Building User Interfaces",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    link: "/docs/dummy-docs/user interface/",
   },
   {
     id: 2,
     icon: <BugIcon />,
-    title: "Building  API’s & Microservices",
+    title: "Building  API's & Microservices",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    link: "/docs/dummy-docs/apis and microservices/",
   },
   {
     id: 3,
     icon: <DatabaseIcon />,
     title: "Build & Deploy",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    link: "/docs/dummy-docs/build and deploy/",
   },
   {
     id: 4,
     icon: <DesignIcon />,
     title: "Design System",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    link: "/docs/dummy-docs/design-system/",
   },
   {
     id: 5,
     icon: <CpuIcon />,
     title: "Agentic Development",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    link: "/docs/dummy-docs/ai-agents/",
   },
   {
     id: 6,
     icon: <PackageIcon />,
     title: "Studio",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    link: "/docs/dummy-docs/platform/",
   },
 ];
 
@@ -99,13 +106,25 @@ export function EnvList({ prop }) {
   return (
     <ul className="env-list-group">
       {prop.map((item) => {
-        return (
-          <li className="env-list-item" key={item.id}>
+        const content = (
+          <>
             <div className="img-wrapper">{item.icon}</div>
             <div className="content-wrapper">
               <h4 className="env-item-heading">{item.title}</h4>
               <p className="env-item-desc">{item.desc}</p>
             </div>
+          </>
+        );
+
+        return (
+          <li className="env-list-item" key={item.id}>
+            {item.link ? (
+              <Link to={item.link} className="env-item-link">
+                {content}
+              </Link>
+            ) : (
+              content
+            )}
           </li>
         );
       })}
