@@ -45,21 +45,21 @@ const envData = [
     icon: <DesignIcon />,
     title: "Design System",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/docs/dummy-docs/design-system/Mobile/components",
+    link: "docs/dummy-docs/design-system/Mobile/components",
   },
   {
     id: 5,
     icon: <CpuIcon />,
     title: "Agentic Development",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/docs/dummy-docs/ai-agents/agents",
+    link: "/",
   },
   {
     id: 6,
     icon: <PackageIcon />,
     title: "Studio",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "dummy-docs/platform/",
+    link: "/",
   },
 ];
 
