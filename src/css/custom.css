@@ -97,6 +97,9 @@
   --wm-icon-size-5: 40px;
   --wm-icon-size-6: 52px;
 
+  /* svg */
+  --wm-svg-color:#fff;
+
   /* homepage variable */
   --homepage-spacing: 32px 72px;
   --wm-max-content: 1600px;
@@ -109,12 +112,19 @@
   --ifm-footer-background-color: rgba(250, 250, 251, 1);
   --ifm-footer-padding-horizontal: 140px;
   --ifm-footer-padding-vertical: 80px;
+
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
   --ifm-font-color-base: rgba(255, 255, 255, 0.8);
   --ifm-font-color-muted: rgba(66, 82, 107, 1);
+}
+[data-theme="dark"] .section-title{
+  --ifm-heading-color:#fff;
+}
+[data-theme="dark"] .rightside-img-section{
+  background-color: #fff;
 }
 
 body {
@@ -268,7 +278,7 @@ body {
         svg react,
         svg circle {
           fill: transparent;
-          stroke: #fff;
+          stroke: var(--wm-svg-color);
         }
       }
     }
@@ -503,12 +513,35 @@ body {
     }
     .footer-desc{
       font-size: 14px;
-      line-height: 22px;
+      line-height: 24px;
       color: var(--ifm-font-color-muted);
       margin-top: 12px;
+      padding-right: 5rem;
     }
   }
   ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul.footer-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   .nav-title{
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+   }
+   .nav-item .nav-link{
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--ifm-font-color-muted);
+    &:hover,&:focus{
+      text-underline-offset: 4px;
+    }
+
+   }
   }
 }

@@ -78,7 +78,9 @@ const config = {
         askAi: "oiUXwuic142f",
       },
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: "light",
+        respectPrefersColorScheme: false,
+        disableSwitch: false,
       },
       navbar: {
         title: "WaveMaker Docs",
@@ -113,7 +115,6 @@ const config = {
             position: "right",
             label: "How to",
           },
-
           {
             to: "https://www.wavemaker.com/get-demo/",
             label: "Schedule Demo",
@@ -141,33 +142,58 @@ const config = {
                 </div>
                 `,
               },
-               {
+              {
                 html: `
-                <div class="footer-main-section row">
-                 <div class="col col--5">
-                 <a href="/" target="_blank" class="logo-links"> <img src="/img/wm-logo.svg"/>Wavemaker</a>
-                 <p class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in volutpat</p>
-                 </div>
+                  <div class="footer-main-section row">
+                  <div class="col col--5">
+                  <a href="/" target="_blank" class="logo-links"> <img src="/img/wm-logo.svg"/>Wavemaker</a>
+                  <p class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in volutpat</p>
+                  </div>
+                    <div class="col col--2">
+                      <ul class="footer-nav-list">
+                        <h3 class="nav-title">Navigation</h3>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/">Platform</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/"> Offerings</a>
+                        </li>
+                      </ul>
+                  </div>
+                    <div class="col col--3">
+                      <ul class="footer-nav-list">
+                        <h3 class="nav-title">Help</h3>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/">Support</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/">Terms & Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/"> Privacy Policy</a>
+                        </li>
+                      </ul>
+                  </div>
+
                   <div class="col col--2">
-                  <ul>
-                  <li>
-                  </li>
-                   <li>
-                  </li>
-                   <li>
-                  </li>
-                  </ul>
-                 </div>
-                  <div class="col col--3">
-                 </div>
-                  <div class="col col--3">
-                 </div>
-                </div>
+                        <ul class="footer-nav-list">
+                          <h3 class="nav-title">Resources</h3>
+                          <li class="nav-item">
+                          <a class="nav-link" href="/">Blogs</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/">Tutorial</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/">Certifcation</a>
+                          </li>
+                        </ul>
+                  </div>
+                  </div>
                 `,
               },
             ],
           },
-           
         ],
       },
       prism: {
