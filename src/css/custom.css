@@ -501,6 +501,8 @@ body {
   background-size: contain;
   background-position: bottom right;
   overflow: hidden;
+  max-width: 1160px;
+  margin: 40px auto;
   .left-content {
     width: 30%;
     background-color: rgba(67, 63, 237, 1);
