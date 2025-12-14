@@ -646,7 +646,7 @@ body {
   .rightside-img-section,
   .leftside-img-section {
     flex-direction: column;
-    padding: 32px;
+    padding: 24px;
     gap: 2rem;
     .left-content {
       width: 100%;
@@ -666,12 +666,35 @@ body {
     --homepage-spacing: 32px 24px;
   }
   .top-banner-section {
-    padding: 32px 44px;
+    padding: 32px;
+    min-height: auto;
   }
   .top-banner-section .DocSearch-Button {
     min-width: 90%;
   }
-
+  .bottom-banner-section{
+    flex-direction: column;
+    padding: 24px;
+    text-align: center;
+    background-position: center;
+    .left-content {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .right-content {
+      width: 100%;
+      padding: 0;
+      padding-bottom: 16px;
+      text-align: left;
+      .title {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+  }
+  .footer{
+    padding: 0;
+  }
   .footer .send-message-section {
     gap: 32px;
   }
