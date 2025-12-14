@@ -13,7 +13,7 @@ const config = {
   tagline: "Welcome to the Learning Center",
   url: "https://www.wavemaker.com",
   organizationName: "WaveMaker, Inc.",
-  favicon: "img/favicon.ico",
+  favicon: "img/wm-logo.svg",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -23,6 +23,7 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
   onBrokenLinks: "throw",
+  
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you

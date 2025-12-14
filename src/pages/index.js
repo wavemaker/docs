@@ -16,48 +16,49 @@ import {
   ProductIcon,
   ReferenceIcon,
   FAQsIcon,
+  ArrowRightIcon,
 } from "../../static/img/svg";
 
 const envData = [
   {
     id: 1,
-    icon: <BulbIcon />,
-    title: "Building User Interfaces",
-    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/docs/dummy-docs/design-system/web-ui/page-layouts",
-  },
-  {
-    id: 2,
-    icon: <BugIcon />,
-    title: "Building  API's & Microservices",
-    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/",
-  },
-  {
-    id: 3,
-    icon: <DatabaseIcon />,
-    title: "Build & Deploy",
-    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/",
-  },
-  {
-    id: 4,
     icon: <DesignIcon />,
     title: "Design System",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
     link: "/",
   },
   {
-    id: 5,
+    id: 2,
     icon: <CpuIcon />,
-    title: "Agentic Development",
+    title: "Developer Agents",
+    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    link: "/",
+  },
+  {
+    id: 3,
+    icon: <PackageIcon />,
+    title: "Studio",
+    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    link: "/",
+  },
+  {
+    id: 4,
+    icon: <BulbIcon />,
+    title: "User Interfaces",
+    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    link: "/docs/dummy-docs/design-system/web-ui/page-layouts",
+  },
+  {
+    id: 5,
+    icon: <BugIcon />,
+    title: "API's & Microservices",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
     link: "/",
   },
   {
     id: 6,
-    icon: <PackageIcon />,
-    title: "Studio",
+    icon: <DatabaseIcon />,
+    title: "Build & Deploy",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
     link: "/",
   },
@@ -111,7 +112,7 @@ export function EnvList({ prop }) {
             <div className="img-wrapper">{item.icon}</div>
             <div className="content-wrapper">
               <h4 className="env-item-heading">{item.title}</h4>
-              <p className="env-item-desc">{item.desc}</p>
+              {/* <p className="env-item-desc">{item.desc}</p> */}
             </div>
           </>
         );
@@ -155,11 +156,8 @@ export default function Home() {
     <Layout>
       <main className="main-wrapper-homepage">
         <section className="top-banner-section">
-          <h1 className="font-lg">Support & Documentation</h1>
-          <p>
-            Clear, structured documentation to help you solve real problems
-            fast.
-          </p>
+          <h1 className="font-lg">Hello, how can we help?</h1>
+          <p>Find answers and inspiration on all things WaveMaker.</p>
           <SearchBar />
         </section>
         <section className="env-list-section">
@@ -167,40 +165,58 @@ export default function Home() {
         </section>
         <section className="rightside-img-section">
           <div className="left-content">
-            <span className="highlight-span">What’s New</span>
+            <span className="highlight-span">Explore</span>
             <h2 className="title">
-              Developer <br />
-              Quickstart Series
+              Become A Certified
+              <br /> Developer
             </h2>
             <p className="desc">
-              Short, structured guides to help new developers build,
-              <br /> deploy, and scale apps in minutes.
+              Discover the WaveMaker Academy and explore a curated set of
+              expert-led courses. Gain the knowledge you need to build
+              confidently with WaveMaker.
             </p>
-            <button className="button button--dark">Get Started</button>
+            <button className="button button--dark">Go to Academy</button>
           </div>
           <div className="right-content">
-            <img src="/img/section-img/RightIllustration.svg" />
+            <img src="/img/section-img/courses-Illustration.svg" />
           </div>
         </section>
         <section className="leftside-img-section">
           <div className="left-content">
-            <img src="/img/section-img/IllustrationLeft.svg" />
+            <img src="/img/section-img/marketplace-Illustration.svg" />
           </div>
           <div className="right-content">
-            <span className="highlight-span">What’s New</span>
-            <h2 className="title">Wavemaker UI Kits</h2>
+            <span className="highlight-span">What's New</span>
+            <h2 className="title">Marketplace</h2>
             <p className="desc">
-              A curated set of reusable UI elements, patterns, and templates to
-              help you design and ship applications faster.
+              A library for developers in the WaveMaker community, where they
+              can access ready-to-use artifacts and also contribute back to the
+              ecosystem.
             </p>
-            <button className="button button--dark">Get Started</button>
+            <button className="button button--dark">Start Building</button>
           </div>
         </section>
         <section className="resources-list-section">
           <h3 className="section-title">Additional Resources</h3>
-          <ResourceList prop={resourcesData}/>
+          <ResourceList prop={resourcesData} />
         </section>
-        <section className="message-section"></section>
+
+        <section className="bottom-banner-section">
+          <div className="left-content">
+            <img src="/img/background/bottom-banner-left-Illustration.svg" />
+          </div>
+          <div className="right-content">
+            <h2 className="title">WaveMaker UI Kit</h2>
+            <p className="desc">
+              Discover the Wavemaker Academy and explore a curated set of
+              expert-led courses. Gain the knowledge you need to build
+              confidently with Wavemaker.
+            </p>
+            <button className="button button__white">
+              Go to Academy <ArrowRightIcon />
+            </button>
+          </div>
+        </section>
       </main>
     </Layout>
   );

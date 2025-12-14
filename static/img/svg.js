@@ -582,3 +582,22 @@ export const FAQsIcon = () => {
     </svg>
   );
 };
+export const ArrowRightIcon = () => {
+  return (
+    <svg
+      width="27"
+      height="12"
+      viewBox="0 0 27 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.68634 5.68626L25.31 5.68626M21.3154 0.686523L25.6863 5.68652L21.3154 10.6865"
+        stroke="white"
+        stroke-width="1.37273"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
