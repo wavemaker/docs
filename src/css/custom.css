@@ -9,6 +9,7 @@
 :root {
   --ifm-color-primary: rgba(11, 99, 229, 1);
   --ifm-color-dark: rgba(24, 24, 27, 1);
+  --ifm-color-dark-surface:#fff;
   --ifm-color-white: rgba(255, 255, 255, 1);
   --ifm-color-primary-lightest: rgba(240, 245, 255, 1);
 
@@ -116,14 +117,26 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
+  --ifm-background-color: #12223f;
+  --ifm-navbar-background-color: #12223f;
+  --ifm-footer-background-color: #12223f;
+  --ifm-color-primary: #4C8DFF;
+  --ifm-heading-color:#fff;
+  --ifm-color-dark:#fff;
+  --ifm-color-dark-surface:rgba(24, 24, 27, 1);
   --ifm-font-color-base: rgba(255, 255, 255, 0.8);
   --ifm-font-color-muted: rgba(66, 82, 107, 1);
+  --ifm-font-color-muted:rgba(255, 255, 255, 0.8);
+  --wm-card-bg: #27395b;
+  --wm-card-border-color: rgba(63, 63, 70, 0.3);
+  --wm-card-img-bg: rgba(255, 255, 255, 0.7);
 }
 [data-theme="dark"] .section-title {
   --ifm-heading-color: #fff;
 }
-[data-theme="dark"] .rightside-img-section {
-  background-color: #fff;
+[data-theme="dark"] .rightside-img-section ,[data-theme="dark"] .leftside-img-section{
+  background-color: transparent;
+  background-image: none;
 }
 
 body {
@@ -159,7 +172,7 @@ body {
 .button.button--dark {
   background-color: var(--ifm-color-dark);
   border-color: var(--ifm-color-dark);
-  color: var(--ifm-color-white);
+  color: var(--ifm-color-dark-surface);
 }
 .button.button--dark:hover,
 .button.button--dark:focus {
@@ -345,15 +358,13 @@ body {
   padding: 6px 12px;
   border-radius: 24px;
 }
-.leftside-img-section .right-content .highlight-span {
-  background-color: rgba(255, 255, 255, 0.72);
-}
+
 .rightside-img-section .left-content .title,
 .leftside-img-section .right-content .title {
   font-size: 42px;
   line-height: 48px;
   font-weight: 700;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 .rightside-img-section .left-content .desc,
 .leftside-img-section .right-content .desc {
@@ -361,12 +372,12 @@ body {
   line-height: 26px;
   color: var(--ifm-font-color-muted);
   font-weight: 400;
-  margin-top: 16px;
+  margin-top: 12px;
   width: 70%;
 }
 .rightside-img-section .left-content .button--dark,
 .leftside-img-section .right-content .button--dark {
-  margin-top: 20px;
+  margin-top: 32px;
   min-width: 180px;
 }
 
