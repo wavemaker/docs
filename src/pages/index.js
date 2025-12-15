@@ -30,9 +30,9 @@ const envData = [
   {
     id: 2,
     icon: <CpuIcon />,
-    title: "Developer Agents",
+    title: "Developing with Agents",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/docs/dummy-docs/ai-agents/agents",
+    link: "/docs/dummy-docs/developing_with_agents/overview",
   },
   {
     id: 3,
