@@ -105,7 +105,7 @@
   --wm-max-content: 1600px;
   --wm-card-bg: #fff;
   --wm-card-img-bg: rgba(240, 245, 255, 1);
-  --wm-card-border-color: rgba(150, 185, 225, 0.35);
+  --wm-card-border-color: rgba(228, 228, 231, 1);
   --wm-section-img-bg: rgba(240, 245, 255, 1);
 
   /* footer variables */
@@ -247,7 +247,7 @@ body {
     width: calc(100% / 3 - 24px);
     padding: 30px 18px;
     background-color: var(--wm-card-bg);
-    border: 0.79px solid var(--wm-card-border-color);
+    border: 1px solid var(--wm-card-border-color);
     border-radius: 12px;
     text-align: center;
     cursor: pointer;
@@ -494,14 +494,14 @@ body {
   background-color: rgba(67, 63, 237, 1);
   border-radius: 20px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   min-height: 292px;
   background-image: url("/img/background/3D-Wavebottom.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom right;
   overflow: hidden;
-  max-width: 1160px;
+  max-width: 1200px;
   margin: 40px auto;
   .left-content {
     width: 30%;
@@ -522,7 +522,7 @@ body {
     }
   }
   .right-content {
-    padding: 32px 90px;
+    padding: 62px 90px;
     width: 70%;
     .title {
       font-size: 32px;

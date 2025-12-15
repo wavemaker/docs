@@ -25,21 +25,21 @@ const envData = [
     icon: <DesignIcon />,
     title: "Design System",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/",
+    link: "/docs/dummy-docs/design-system/web-ui/components",
   },
   {
     id: 2,
     icon: <CpuIcon />,
     title: "Developer Agents",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/",
+    link: "/docs/dummy-docs/ai-agents/agents",
   },
   {
     id: 3,
     icon: <PackageIcon />,
     title: "Studio",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/",
+    link: "/docs/dummy-docs/platform/studio/app-settings",
   },
   {
     id: 4,
@@ -196,10 +196,10 @@ export default function Home() {
             <button className="button button--dark">Start Building</button>
           </div>
         </section>
-        <section className="resources-list-section">
+        {/* <section className="resources-list-section">
           <h3 className="section-title">Additional Resources</h3>
           <ResourceList prop={resourcesData} />
-        </section>
+        </section> */}
 
         <section className="bottom-banner-section">
           <div className="left-content">
