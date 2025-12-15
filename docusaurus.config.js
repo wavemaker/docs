@@ -79,8 +79,7 @@ const config = {
         askAi: "oiUXwuic142f",
       },
       colorMode: {
-        defaultMode: "light",
-        respectPrefersColorScheme: false,
+        respectPrefersColorScheme: true,
         disableSwitch: false,
       },
       navbar: {
