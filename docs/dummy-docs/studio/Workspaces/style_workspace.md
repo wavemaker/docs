@@ -1,0 +1,617 @@
+# Style Workspace
+
+Centralized workspace for managing application themes, styles, and CSS customization.
+
+## Overview
+The Style Workspace provides a comprehensive environment for customizing the visual appearance of your application. It allows you to create themes, manage CSS, configure variables, and ensure consistent styling across your entire application.
+
+## Style Workspace Interface
+
+### Main Components
+
+#### Theme Manager
+- Theme selection
+- Theme customization
+- Theme export/import
+- Theme versioning
+
+#### CSS Editor
+- Custom CSS editor
+- Syntax highlighting
+- Auto-completion
+- CSS validation
+
+#### Color Palette
+- Primary colors
+- Secondary colors
+- Accent colors
+- Semantic colors
+
+#### Typography
+- Font families
+- Font sizes
+- Font weights
+- Line heights
+
+#### Component Styles
+- Widget-specific styles
+- Global component themes
+- State-based styles
+
+## Themes
+
+### Built-in Themes
+
+#### Available Themes
+- **Material Design** - Google's Material Design
+- **Bootstrap** - Twitter Bootstrap styles
+- **Flat** - Minimalist flat design
+- **Corporate** - Professional business theme
+- **Modern** - Contemporary design
+- **Classic** - Traditional layouts
+
+### Theme Selection
+1. Navigate to Style Workspace
+2. Click "Theme" dropdown
+3. Select desired theme
+4. Preview changes in real-time
+5. Apply to application
+
+### Theme Customization
+
+#### Color Scheme
+```css
+/* Primary Colors */
+--primary-color: #007bff;
+--primary-dark: #0056b3;
+--primary-light: #4da3ff;
+
+/* Secondary Colors */
+--secondary-color: #6c757d;
+--secondary-dark: #545b62;
+--secondary-light: #a8aeb4;
+
+/* Accent Colors */
+--accent-color: #28a745;
+--warning-color: #ffc107;
+--danger-color: #dc3545;
+--info-color: #17a2b8;
+```
+
+#### Typography Settings
+```css
+/* Font Families */
+--font-family-base: 'Roboto', sans-serif;
+--font-family-heading: 'Montserrat', sans-serif;
+--font-family-code: 'Courier New', monospace;
+
+/* Font Sizes */
+--font-size-base: 14px;
+--font-size-sm: 12px;
+--font-size-lg: 16px;
+--font-size-xl: 20px;
+
+/* Font Weights */
+--font-weight-light: 300;
+--font-weight-normal: 400;
+--font-weight-bold: 700;
+```
+
+#### Spacing
+```css
+/* Spacing Scale */
+--spacing-xs: 4px;
+--spacing-sm: 8px;
+--spacing-md: 16px;
+--spacing-lg: 24px;
+--spacing-xl: 32px;
+```
+
+## CSS Variables
+
+### Defining Variables
+
+#### Global Variables
+```css
+:root {
+  /* Brand Colors */
+  --brand-primary: #2c3e50;
+  --brand-secondary: #3498db;
+
+  /* Layout */
+  --content-width: 1200px;
+  --sidebar-width: 250px;
+
+  /* Borders */
+  --border-radius: 4px;
+  --border-width: 1px;
+  --border-color: #dee2e6;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
+  --shadow-lg: 0 8px 16px rgba(0,0,0,0.2);
+}
+```
+
+#### Using Variables
+```css
+.custom-button {
+  background-color: var(--brand-primary);
+  color: white;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.custom-button:hover {
+  background-color: var(--brand-secondary);
+  box-shadow: var(--shadow-md);
+}
+```
+
+## Custom CSS
+
+### Application-Level CSS
+
+#### app.css
+```css
+/* Global Styles */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Links */
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--brand-secondary);
+  text-decoration: underline;
+}
+
+/* Containers */
+.app-container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+```
+
+### Page-Level CSS
+
+#### page.css
+```css
+/* Login Page Styles */
+.login-page {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Dashboard Styles */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+```
+
+### Widget-Level CSS
+
+#### Custom Widget Styles
+```css
+/* Custom Button */
+.custom-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-btn-primary {
+  background-color: var(--brand-primary);
+  color: white;
+}
+
+.custom-btn-primary:hover {
+  background-color: var(--brand-secondary);
+  transform: scale(1.05);
+}
+
+/* Custom Table */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spacing-lg) 0;
+}
+
+.custom-table th {
+  background-color: var(--brand-primary);
+  color: white;
+  padding: var(--spacing-md);
+  text-align: left;
+  font-weight: var(--font-weight-bold);
+}
+
+.custom-table td {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.custom-table tr:hover {
+  background-color: #f8f9fa;
+}
+```
+
+## Responsive Styles
+
+### Media Queries
+
+#### Mobile-First Approach
+```css
+/* Mobile (default) */
+.content-grid {
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .content-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+  }
+}
+```
+
+#### Responsive Typography
+```css
+/* Base size */
+body {
+  font-size: 14px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+```
+
+## Component Styling
+
+### Button Styles
+```css
+/* Base Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Variants */
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--brand-secondary);
+  color: white;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+/* Button Sizes */
+.btn-sm {
+  padding: 6px 12px;
+  font-size: var(--font-size-sm);
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: var(--font-size-lg);
+}
+
+/* Button States */
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+```
+
+### Form Styles
+```css
+/* Form Controls */
+.form-control {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-base);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-control.error {
+  border-color: var(--danger-color);
+}
+
+/* Labels */
+.form-label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--font-weight-bold);
+  color: #555;
+}
+
+/* Error Messages */
+.form-error {
+  color: var(--danger-color);
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-xs);
+}
+```
+
+### Card Styles
+```css
+/* Card Container */
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Card Header */
+.card-header {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: #f8f9fa;
+  border-bottom: var(--border-width) solid var(--border-color);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Card Body */
+.card-body {
+  padding: var(--spacing-lg);
+}
+
+/* Card Footer */
+.card-footer {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: #f8f9fa;
+  border-top: var(--border-width) solid var(--border-color);
+}
+```
+
+## Animations and Transitions
+
+### CSS Animations
+```css
+/* Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Slide In */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Pulse */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+```
+
+### Transitions
+```css
+/* Smooth Transitions */
+.smooth-transition {
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.hover-scale:hover {
+  transform: scale(1.1);
+}
+
+.hover-shadow:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.hover-bright:hover {
+  filter: brightness(1.1);
+}
+```
+
+## Dark Mode
+
+### Dark Mode Variables
+```css
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+```
+
+## Best Practices
+
+### CSS Organization
+1. **Use consistent naming** conventions (BEM, SMACSS)
+2. **Group related styles** together
+3. **Comment complex styles**
+4. **Avoid !important** when possible
+5. **Use CSS variables** for consistency
+
+### Performance
+1. **Minimize CSS file size**
+2. **Combine selectors** when possible
+3. **Avoid complex selectors**
+4. **Use CSS containment**
+5. **Optimize animations**
+
+### Maintainability
+1. **Follow style guide**
+2. **Document custom styles**
+3. **Version control themes**
+4. **Test across browsers**
+5. **Keep specificity low**
+
+## Troubleshooting
+
+### Common Issues
+
+**Styles Not Applying**
+- Check CSS selector specificity
+- Verify class names
+- Check for typos
+- Clear browser cache
+- Inspect element in DevTools
+
+**Inconsistent Appearance**
+- Verify theme is applied
+- Check browser compatibility
+- Test responsive breakpoints
+- Validate CSS syntax
+
+**Performance Issues**
+- Reduce CSS file size
+- Optimize selectors
+- Minimize repaints/reflows
+- Use CSS containment
+
+## Related Documentation
+
+- [Design Workspace](../Design%20Workspace-Canvas/design_canvas.md)
+- [WME Variant](../../Variants/WME/wme.md)
+- [WMO Variant](../../Variants/WMO/wmo.md)

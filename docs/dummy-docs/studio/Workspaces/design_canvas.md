@@ -1,0 +1,486 @@
+# Design Workspace - Canvas
+
+The visual design workspace for building application user interfaces through drag-and-drop canvas.
+
+## Overview
+The Design Workspace Canvas is the primary interface for visually designing your application's UI. It provides a drag-and-drop environment where you can create pages, add widgets, configure properties, and see real-time previews of your application.
+
+## Canvas Interface
+
+### Main Components
+
+#### Canvas Area
+- **Main Design Surface** - Visual representation of your page
+- **Grid System** - Alignment guides and snapping
+- **Responsive Preview** - View in different device sizes
+- **Zoom Controls** - Zoom in/out for detailed work
+- **Pan Tool** - Navigate large canvases
+
+#### Widget Palette
+- Pre-built UI components
+- Custom widgets
+- Container widgets
+- Form widgets
+- Data widgets
+- Chart widgets
+- Media widgets
+
+#### Properties Panel
+- Widget properties
+- Styling options
+- Data binding
+- Event handlers
+- Accessibility settings
+
+#### Page Structure
+- Page hierarchy tree
+- Widget layers
+- Parent-child relationships
+- Navigation structure
+
+## Working with Canvas
+
+### Creating Pages
+
+#### New Page Creation
+1. Click "New Page" button
+2. Choose page template (Blank, Form, List, etc.)
+3. Configure page settings:
+   - Page name
+   - Route/URL
+   - Layout type
+   - Responsive behavior
+
+#### Page Types
+- **Blank Page** - Start from scratch
+- **Main Page** - Application entry point
+- **Partial Page** - Reusable page fragments
+- **Prefab Page** - Component-based pages
+
+### Drag and Drop
+
+#### Adding Widgets
+1. Select widget from palette
+2. Drag onto canvas
+3. Position where needed
+4. Drop to place
+
+#### Widget Categories
+- **Layout Widgets**
+  - Container
+  - Grid Layout
+  - Flex Layout
+  - Panel
+  - Tabs
+  - Accordion
+
+- **Form Widgets**
+  - Text Input
+  - Number Input
+  - Date Picker
+  - Select/Dropdown
+  - Checkbox
+  - Radio Button
+  - File Upload
+
+- **Display Widgets**
+  - Label
+  - HTML Content
+  - Picture
+  - Video
+  - Audio
+  - Icon
+
+- **Data Widgets**
+  - Data Table
+  - List
+  - Cards
+  - Tree
+  - Form
+
+- **Chart Widgets**
+  - Line Chart
+  - Bar Chart
+  - Pie Chart
+  - Area Chart
+  - Donut Chart
+
+- **Navigation Widgets**
+  - Nav Bar
+  - Menu
+  - Breadcrumb
+  - Anchor
+  - Popover
+
+### Arranging Widgets
+
+#### Positioning
+- **Drag to Move** - Click and drag widgets
+- **Alignment Tools** - Align left, right, center, top, bottom
+- **Distribution** - Even spacing between elements
+- **Z-Index** - Layer ordering (bring forward, send back)
+
+#### Sizing
+- **Resize Handles** - Drag corners/edges to resize
+- **Fixed Size** - Set specific width/height
+- **Percentage** - Relative sizing
+- **Auto** - Content-based sizing
+
+#### Layout Options
+- **Inline** - Flow with content
+- **Block** - Full width
+- **Flex** - Flexible box layout
+- **Grid** - Grid-based layout
+- **Absolute** - Fixed positioning
+
+## Widget Configuration
+
+### Properties Panel
+
+#### Basic Properties
+- **Name** - Widget identifier
+- **Show** - Visibility toggle
+- **Class** - CSS classes
+- **Disabled** - Enable/disable state
+
+#### Style Properties
+- **Width & Height** - Dimensions
+- **Margin & Padding** - Spacing
+- **Background** - Color, image, gradient
+- **Border** - Style, width, color, radius
+- **Font** - Family, size, weight, color
+- **Alignment** - Text and content alignment
+
+#### Data Properties
+- **Dataset** - Bind to data source
+- **Value** - Widget value
+- **Display Field** - Field to show
+- **Data Field** - Field to store
+
+#### Event Properties
+- **onClick** - Click handler
+- **onChange** - Value change handler
+- **onLoad** - Load event
+- **onSuccess** - Success callback
+- **onError** - Error handler
+
+### Data Binding
+
+#### Bind to Variable
+```javascript
+// Bind widget value to variable
+Widget.datavalue = Variables.employeeData.dataSet[0].name;
+
+// Two-way binding
+Widget.datavalue <-> Variables.currentUser.name;
+```
+
+#### Bind to Service
+```javascript
+// Bind to API response
+Widget.dataset = Variables.getEmployeesAPI.dataSet;
+
+// Filter data
+Widget.dataset = Variables.getEmployeesAPI.dataSet.filter(emp => emp.active);
+```
+
+#### Expression Binding
+```javascript
+// Calculated values
+Widget.caption = "Hello, " + Variables.userName.dataSet;
+
+// Conditional binding
+Widget.show = Variables.userRole.dataSet === "admin";
+```
+
+## Responsive Design
+
+### Breakpoints
+
+#### Device Sizes
+- **Desktop** - > 1200px
+- **Tablet** - 768px - 1200px
+- **Mobile** - < 768px
+
+#### Preview Modes
+- Switch between device views
+- Test responsive behavior
+- Adjust layouts per breakpoint
+- Hide/show elements per device
+
+### Responsive Properties
+- **Width** - Set per breakpoint
+- **Height** - Adjust for devices
+- **Show/Hide** - Toggle visibility
+- **Order** - Change element order
+- **Alignment** - Different per device
+
+## Templates and Prefabs
+
+### Page Templates
+- Pre-designed page layouts
+- Common patterns (Login, Dashboard, Form)
+- Customizable starting points
+- Theme-aware designs
+
+### Prefabs (Reusable Components)
+- Custom widget bundles
+- Shareable across projects
+- Versioned components
+- Configurable properties
+
+#### Creating Prefabs
+1. Design widget combination
+2. Right-click → "Create Prefab"
+3. Configure prefab properties
+4. Save to library
+5. Reuse in other pages
+
+## Layout Containers
+
+### Container Widget
+Generic container for grouping widgets:
+- Set layout direction (horizontal/vertical)
+- Configure spacing
+- Set background and borders
+- Add scrolling if needed
+
+### Grid Layout
+Structured grid system:
+- Define rows and columns
+- Span across cells
+- Responsive columns
+- Gap/gutter spacing
+
+### Flex Layout
+Flexible box layout:
+- Direction (row/column)
+- Justify content
+- Align items
+- Flex wrap
+- Gap spacing
+
+### Panel
+Collapsible container:
+- Header and content areas
+- Expandable/collapsible
+- Custom icons
+- Styling options
+
+## Working with Forms
+
+### Form Widget
+Container for form fields:
+- Auto-layout form fields
+- Validation handling
+- Submit/cancel actions
+- Data binding to objects
+
+### Form Fields
+- Automatic label generation
+- Field validation rules
+- Error message display
+- Required field indicators
+
+### Form Actions
+```javascript
+// Submit form
+Page.Widgets.employeeForm.submit();
+
+// Reset form
+Page.Widgets.employeeForm.reset();
+
+// Get form data
+var formData = Page.Widgets.employeeForm.dataoutput;
+```
+
+## Data Tables and Lists
+
+### Data Table Widget
+Display data in tabular format:
+- Column configuration
+- Sorting and filtering
+- Pagination
+- Row selection
+- Inline editing
+- Export to Excel/CSV
+
+### List Widget
+Display items in list format:
+- Template-based rendering
+- Infinite scroll
+- Pull to refresh
+- Item actions
+- Grouping
+
+### Live Form/List
+CRUD operations:
+- Automatic form generation
+- Create/Read/Update/Delete
+- Validation
+- Data binding
+
+## Charts and Visualizations
+
+### Chart Types
+- **Line Chart** - Trends over time
+- **Bar/Column Chart** - Comparisons
+- **Pie/Donut Chart** - Proportions
+- **Area Chart** - Cumulative data
+- **Scatter Plot** - Correlations
+
+### Chart Configuration
+- Data source binding
+- X/Y axis configuration
+- Legend settings
+- Colors and themes
+- Tooltips
+- Export options
+
+## Canvas Operations
+
+### Selection
+- **Click** - Select single widget
+- **Ctrl+Click** - Multi-select
+- **Shift+Click** - Range select
+- **Drag** - Select multiple
+
+### Copy/Paste
+```
+Ctrl+C - Copy
+Ctrl+V - Paste
+Ctrl+X - Cut
+Ctrl+D - Duplicate
+```
+
+### Undo/Redo
+```
+Ctrl+Z - Undo
+Ctrl+Y - Redo
+```
+
+### Delete
+```
+Delete - Remove selected widgets
+Ctrl+Delete - Remove and children
+```
+
+## Keyboard Shortcuts
+
+### Navigation
+- **Tab** - Next widget
+- **Shift+Tab** - Previous widget
+- **Arrow Keys** - Move widget (1px)
+- **Shift+Arrow** - Move widget (10px)
+
+### Editing
+- **F2** - Edit widget name
+- **Enter** - Edit text content
+- **Esc** - Cancel editing
+
+### View
+- **Ctrl+0** - Fit to screen
+- **Ctrl++** - Zoom in
+- **Ctrl+-** - Zoom out
+- **Ctrl+1** - Actual size
+
+## Layers and Z-Index
+
+### Layer Management
+- View all widgets in tree structure
+- Drag to reorder layers
+- Lock/unlock widgets
+- Show/hide widgets
+
+### Z-Index Operations
+- **Bring to Front** - Move to top layer
+- **Send to Back** - Move to bottom layer
+- **Bring Forward** - Move up one layer
+- **Send Backward** - Move down one layer
+
+## Styling
+
+### Style Properties
+- Background color/image
+- Text styling
+- Borders and shadows
+- Spacing (margin/padding)
+- Dimensions
+
+### CSS Classes
+- Apply predefined classes
+- Custom class names
+- Theme classes
+- Responsive classes
+
+### Inline Styles
+Direct CSS styling:
+```css
+background-color: #007bff;
+font-size: 16px;
+border-radius: 4px;
+```
+
+## Best Practices
+
+### Organization
+1. **Use meaningful names** for widgets
+2. **Group related widgets** in containers
+3. **Create reusable prefabs** for common patterns
+4. **Keep hierarchy shallow** when possible
+5. **Use layouts** instead of absolute positioning
+
+### Performance
+1. **Minimize widget count** per page
+2. **Use pagination** for large data sets
+3. **Lazy load** content when possible
+4. **Optimize images** before using
+5. **Avoid deep nesting** of containers
+
+### Responsive Design
+1. **Design mobile-first** approach
+2. **Test all breakpoints** regularly
+3. **Use relative sizing** instead of fixed
+4. **Hide non-essential** elements on mobile
+5. **Optimize touch targets** for mobile
+
+### Accessibility
+1. **Add labels** to form fields
+2. **Set tab order** properly
+3. **Use semantic widgets** appropriately
+4. **Provide alt text** for images
+5. **Ensure color contrast** meets standards
+
+## Troubleshooting
+
+### Common Issues
+
+**Widget Not Visible**
+- Check Show property
+- Verify parent container visibility
+- Check z-index/layer order
+- Verify conditional visibility expressions
+
+**Layout Issues**
+- Check container layout settings
+- Verify widget sizing properties
+- Check for conflicting CSS
+- Test at different breakpoints
+
+**Data Binding Not Working**
+- Verify variable/service binding
+- Check data source availability
+- Validate binding expression syntax
+- Ensure data is loaded
+
+**Performance Issues**
+- Reduce widget count
+- Optimize data queries
+- Use pagination
+- Minimize complex expressions
+
+## Related Documentation
+
+- [Style Workspace](../Style%20Workspace/style_workspace.md)
+- [API Workspace](../API%20Workspace/api_workspace.md)
+- [Database Workspace](../Database%20Workspace/database_workspace.md)
