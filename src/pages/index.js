@@ -46,7 +46,7 @@ const envData = [
     icon: <BulbIcon />,
     title: "User Interfaces",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/docs/dummy-docs/design-system/web-ui/page-layouts",
+    link: "/docs/dummy-docs/design-system/overview",
   },
   {
     id: 5,

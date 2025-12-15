@@ -83,7 +83,7 @@ Optimize for fast load times and smooth interactions.
 
 ### For Designers
 1. Review [Concept](./Concept/Design%20Tokens.md) documentation
-2. Explore the [UI KIT](./UI%20KIT/) component library
+2. Explore the UI KIT component library
 3. Study [Designing Best Practices](./Concept/Designing%20Best%20Practices.md)
 4. Access design files and assets
 5. Follow contribution guidelines
