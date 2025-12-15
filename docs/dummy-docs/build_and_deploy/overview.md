@@ -416,5 +416,5 @@ DEBUG=false
 
 - [Architecture](../apis_and_services/Architecture/overview.md) - System architecture overview
 - [Security](../apis_and_services/Security/overview.md) - Security best practices
-- [Testing and Debugging](../apis_and_services/Testing_and_Debugging/overview.md) - Testing strategies
+- [Testing And Debugging](../apis_and_services/Testing%20And%20Debugging/) - Testing strategies
 - [APIs](../apis_and_services/APIs/overview.md) - API development and deployment
