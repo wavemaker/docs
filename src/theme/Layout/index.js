@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "@theme-original/Layout";
 import { useLocation } from "@docusaurus/router";
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import SecondaryNavbar from "@site/src/components/TopNav/TopNav";
 
 export default function LayoutWrapper(props) {
@@ -10,7 +11,13 @@ export default function LayoutWrapper(props) {
   return (
     <>
       <Layout {...props}>
-      {isDocsPage && <SecondaryNavbar />}
+      <BrowserOnly fallback={<div />}>
+        {() => {
+          const pathname = window.location.pathname;
+          const isDocsPage = pathname.startsWith("/docs");
+          return isDocsPage ? <SecondaryNavbar /> : null;
+        }}
+      </BrowserOnly>
       {props.children}
     </Layout>
     </>

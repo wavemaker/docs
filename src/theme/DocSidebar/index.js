@@ -5,9 +5,7 @@ export default function DocSidebarWrapper(props) {
   const [enabled, setEnabled] = useState(false);
   return (
     <>
-     
       <DocSidebar {...props} />
-       
     </>
   );
 }
