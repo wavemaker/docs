@@ -414,7 +414,7 @@ DEBUG=false
 
 ## Related Documentation
 
-- [Architecture](../Architecture/overview.md) - System architecture overview
-- [Security](../Security/overview.md) - Security best practices
-- [Testing and Debugging](../Testing%20and%20Debugging/) - Testing strategies
-- [APIs](../APIs/) - API development and deployment
+- [Architecture](../apis_and_services/Architecture/overview.md) - System architecture overview
+- [Security](../apis_and_services/Security/overview.md) - Security best practices
+- [Testing and Debugging](../apis_and_services/Testing%20and%20Debugging/overview.md) - Testing strategies
+- [APIs](../apis_and_services/APIs/overview.md) - API development and deployment

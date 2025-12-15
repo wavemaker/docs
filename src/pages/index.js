@@ -39,7 +39,7 @@ const envData = [
     icon: <PackageIcon />,
     title: "Studio",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/docs/dummy-docs/platform/studio/app-settings",
+    link: "/docs/dummy-docs/studio/overview",
   },
   {
     id: 4,
