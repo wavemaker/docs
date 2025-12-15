@@ -338,4 +338,5 @@ The future of developing with agents includes:
 ## Related Documentation
 
 - [How it is different from Vibe Coding?](./How%20it%20is%20different%20from%20Vibe%20Coding.md) - Comparison with traditional coding approaches
-- [AIRA](../AIRA/) - AI-powered development assistant
+- [Agentic Mode](../AIRA/Agentic%20Mode.md) - AIRA's autonomous development mode
+- [List of Agents](../AIRA/List%20of%20Agents.md) - Available specialized agents
