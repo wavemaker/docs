@@ -60,7 +60,7 @@ const envData = [
     icon: <DatabaseIcon />,
     title: "Build & Deploy",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/",
+    link: "/docs/dummy-docs/build_and_deploy/overview",
   },
 ];
 
