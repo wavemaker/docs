@@ -1,3 +1,0 @@
-# Components
-
-Mobile specific components.

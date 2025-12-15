@@ -25,7 +25,7 @@ const envData = [
     icon: <DesignIcon />,
     title: "Design System",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/docs/dummy-docs/design-system/web-ui/components",
+    link: "/docs/dummy-docs/design-system/overview",
   },
   {
     id: 2,

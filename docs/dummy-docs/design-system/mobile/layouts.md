@@ -1,3 +1,0 @@
-# Layouts
-
-Mobile specific layouts.
