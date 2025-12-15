@@ -579,6 +579,6 @@ jobs:
 
 ## Related Documentation
 
-- [Build Options](../Overview/built_options.md)
-- [WAR Deployment](../WAR/war_deployment.md)
-- [Container Deployment](../../Deployment-CI_CD/Container,%20Cloud%20or%20Private%20Infra/container_deployment.md)
+- [Build Options](./built_options.md)
+- [WAR Deployment](./war_deployment.md)
+- [Container Deployment](../Deployment-CI_CD/container_deployment.md)

@@ -419,7 +419,7 @@ backup:
 
 ## Related Documentation
 
-- [Team Portal](../TeamPortal/team_portal.md)
-- [Projects Hub](../ProjectsHub/projects_hub.md)
-- [WME Variant](../../Variants/WME/wme.md)
-- [WMO Variant](../../Variants/WMO/wmo.md)
+- [Team Portal](./team_portal.md)
+- [Projects Hub](./projects_hub.md)
+- [WME Variant](../Variants/wme.md)
+- [WMO Variant](../Variants/wmo.md)

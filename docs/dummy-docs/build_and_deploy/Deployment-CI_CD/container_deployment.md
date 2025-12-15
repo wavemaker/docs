@@ -230,7 +230,7 @@ aws ecs update-service \
 ```
 
 #### EKS (Elastic Kubernetes Service)
-See [Kubernetes Deployment](../Kubernetes/kubernetes_deployment.md) section.
+See [Kubernetes Deployment](./kubernetes_deployment.md) section.
 
 #### Elastic Beanstalk (Docker)
 
@@ -278,7 +278,7 @@ gcloud run deploy myapp \
 ```
 
 #### GKE (Google Kubernetes Engine)
-See [Kubernetes Deployment](../Kubernetes/kubernetes_deployment.md) section.
+See [Kubernetes Deployment](./kubernetes_deployment.md) section.
 
 ### Microsoft Azure
 
@@ -303,7 +303,7 @@ az container create \
 ```
 
 #### Azure Kubernetes Service (AKS)
-See [Kubernetes Deployment](../Kubernetes/kubernetes_deployment.md) section.
+See [Kubernetes Deployment](./kubernetes_deployment.md) section.
 
 ## Private Infrastructure Deployment
 
@@ -670,6 +670,6 @@ docker update --memory="512m" --cpus="1.0" container-name
 
 ## Related Documentation
 
-- [One-Click Deployment](../One-click/one_click_deployment.md)
-- [Kubernetes Deployment](../Kubernetes/kubernetes_deployment.md)
-- [Build Options](../../Web%20App-Build/Overview/built_options.md)
+- [One-Click Deployment](./one_click_deployment.md)
+- [Kubernetes Deployment](./kubernetes_deployment.md)
+- [Build Options](../Web%20App-Build/built_options.md)

@@ -797,6 +797,6 @@ kubectl run debug --image=busybox -it --rm -- /bin/sh
 
 ## Related Documentation
 
-- [One-Click Deployment](../One-click/one_click_deployment.md)
-- [Container Deployment](../Container,%20Cloud%20or%20Private%20Infra/container_deployment.md)
-- [Build Options](../../Web%20App-Build/Overview/built_options.md)
+- [One-Click Deployment](./one_click_deployment.md)
+- [Container Deployment](./container_deployment.md)
+- [Build Options](../Web%20App-Build/built_options.md)

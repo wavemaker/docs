@@ -386,6 +386,6 @@ wme-cli license renew
 
 ## Related Documentation
 
-- [WMO Variant](../WMO/wmo.md)
-- [Team Portal](../../Governance/TeamPortal/team_portal.md)
-- [Projects Hub](../../Governance/ProjectsHub/projects_hub.md)
+- [WMO Variant](./wmo.md)
+- [Team Portal](../Governance/team_portal.md)
+- [Projects Hub](../Governance/projects_hub.md)

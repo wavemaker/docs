@@ -512,6 +512,6 @@ Priority levels:
 
 ## Related Documentation
 
-- [Mobile Overview](../Overview/mobile_overview.md)
-- [AppChef & CLI](../AppChef,%20CLI/appchef_cli.md)
-- [CI/CD Deployment](../../Deployment-CI_CD/One-click/one_click_deployment.md)
+- [Mobile Overview](./mobile_overview.md)
+- [AppChef & CLI](./appchef_cli.md)
+- [CI/CD Deployment](../Deployment-CI_CD/one_click_deployment.md)

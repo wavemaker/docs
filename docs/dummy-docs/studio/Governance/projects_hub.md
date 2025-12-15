@@ -292,6 +292,6 @@ Projects
 
 ## Related Documentation
 
-- [Team Portal](../TeamPortal/team_portal.md)
-- [App Portal](../App%20Portal/app_portal.md)
-- [WME Variant](../../Variants/WME/wme.md)
+- [Team Portal](./team_portal.md)
+- [App Portal](./app_portal.md)
+- [WME Variant](../Variants/wme.md)

@@ -406,6 +406,6 @@ webpack --profile --json > stats.json
 
 ## Related Documentation
 
-- [WAR Deployment](../WAR/war_deployment.md)
-- [Static Content Deployment](../Static%20Content/static_deployment.md)
-- [CI/CD Pipeline](../../Deployment-CI_CD/One-click/one_click_deployment.md)
+- [WAR Deployment](./war_deployment.md)
+- [Static Content Deployment](./static_deployment.md)
+- [CI/CD Pipeline](../Deployment-CI_CD/one_click_deployment.md)

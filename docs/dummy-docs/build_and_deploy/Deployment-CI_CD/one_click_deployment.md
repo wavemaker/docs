@@ -627,6 +627,6 @@ JWT_SECRET=jwt_secret_here
 
 ## Related Documentation
 
-- [Container Deployment](../Container,%20Cloud%20or%20Private%20Infra/container_deployment.md)
-- [Kubernetes Deployment](../Kubernetes/kubernetes_deployment.md)
-- [Build Options](../../Web%20App-Build/Overview/built_options.md)
+- [Container Deployment](./container_deployment.md)
+- [Kubernetes Deployment](./kubernetes_deployment.md)
+- [Build Options](../Web%20App-Build/built_options.md)

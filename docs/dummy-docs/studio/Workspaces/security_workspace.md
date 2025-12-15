@@ -159,6 +159,6 @@ public void handleAuditEvent(AuditEvent event) {
 
 ## Related Documentation
 
-- [API Workspace](../API%20Workspace/api_workspace.md)
-- [Database Workspace](../Database%20Workspace/database_workspace.md)
-- [VCS Workspace](../VCS%20Workspace/vcs_workspace.md)
+- [API Workspace](./api_workspace.md)
+- [Database Workspace](./database_workspace.md)
+- [VCS Workspace](./vcs_workspace.md)

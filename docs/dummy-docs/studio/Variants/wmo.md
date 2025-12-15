@@ -422,6 +422,6 @@ docker run -p 8080:8080 {registry}/your-app:latest
 
 ## Related Documentation
 
-- [WME Variant](../WME/wme.md)
-- [Team Portal](../../Governance/TeamPortal/team_portal.md)
-- [App Portal](../../Governance/App%20Portal/app_portal.md)
+- [WME Variant](./wme.md)
+- [Team Portal](../Governance/team_portal.md)
+- [App Portal](../Governance/app_portal.md)

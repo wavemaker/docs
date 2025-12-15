@@ -214,6 +214,6 @@ Organization
 
 ## Related Documentation
 
-- [Projects Hub](../ProjectsHub/projects_hub.md)
-- [App Portal](../App%20Portal/app_portal.md)
-- [WME Variant](../../Variants/WME/wme.md)
+- [Projects Hub](./projects_hub.md)
+- [App Portal](./app_portal.md)
+- [WME Variant](../Variants/wme.md)
