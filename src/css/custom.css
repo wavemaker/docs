@@ -170,7 +170,7 @@ body {
   background-color: var(--ifm-sidebar-background-color);
   border-right: 1px solid rgba(0, 7, 14, 0.08);
   .menu {
-    padding: 1rem 0 0 0;
+    padding: 1rem 0 2rem 0;
   }
 }
 .theme-doc-sidebar-menu .theme-doc-sidebar-item-link .menu__link {
@@ -204,8 +204,10 @@ body {
     margin: 0;
     border-left: 1px solid rgba(37, 44, 50, 0.1);
     padding: 8px 12px;
+    border-radius: 0;
     &.menu__link--active {
       border-left: 1.5px solid var(--ifm-color-tertiary);
+      color: var(--ifm-color-primary);
     }
   }
 
