@@ -203,6 +203,7 @@ body {
   .menu__link {
     margin: 0;
     border-left: 1px solid rgba(37, 44, 50, 0.1);
+    padding: 8px 12px;
     &.menu__link--active {
       border-left: 1.5px solid var(--ifm-color-tertiary);
     }
