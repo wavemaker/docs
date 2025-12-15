@@ -53,7 +53,7 @@ const envData = [
     icon: <BugIcon />,
     title: "API's & Microservices",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/",
+    link: "/docs/dummy-docs/apis_and_services/overview",
   },
   {
     id: 6,

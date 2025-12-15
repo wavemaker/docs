@@ -108,6 +108,12 @@ const config = {
             position: "left",
             label: "AI Agents",
           },
+          {
+            type: "docSidebar",
+            sidebarId: "apisServicesSidebar",
+            position: "left",
+            label: "APIs & Services",
+          },
           { to: "/whatsnew", label: "What's New", position: "right" },
           { to: "/blog", label: "Blogs", position: "right" },
           {
