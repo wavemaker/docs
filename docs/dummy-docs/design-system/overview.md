@@ -14,14 +14,14 @@ Fundamental design system concepts and principles:
 - [Component Variants](./Concept/Component%20Variants.md) - Component variations and patterns
 - [Designing Best Practices](./Concept/Designing%20Best%20Practices.md) - Best practices for design systems
 
-### [UI KIT](./UI%20KIT/)
+### UI KIT
 Comprehensive UI component library:
 - Component collection
 - Design assets
 - Icons and typography
 - Color palettes and theming
 
-### [AutoCode Plugin](./AutoCode%20Plugin/)
+### AutoCode Plugin
 Automated code generation tools:
 - Design-to-code conversion
 - Component code generation
@@ -37,20 +37,7 @@ Implementation and development guides:
 
 ### Platform-Specific Components
 
-#### [Web UI](./web-ui/components.md)
-Web application components and patterns:
-- [Components](./web-ui/components.md) - Web UI components
-- [Page Layouts](./web-ui/page-layouts.md) - Page layout patterns
-- [Styling](./web-ui/styling.md) - Web styling approaches
-- [State Management](./web-ui/state-management.md) - State management patterns
-- [Responsive Design](./web-ui/responsive-design.md) - Responsive design strategies
-
-#### [Mobile](./mobile/components.md)
-Mobile application components:
-- [Components](./mobile/components.md) - Mobile UI components
-- [Layouts](./mobile/layouts.md) - Mobile layout patterns
-- [Gestures](./mobile/gestures.md) - Touch gestures and interactions
-- [Device Capabilities](./mobile/device-capabilities.md) - Native device features
+Platform-specific implementation guides and component libraries for web and mobile applications are available for building consistent user interfaces across different platforms.
 
 ## Design System Benefits
 
@@ -104,8 +91,8 @@ Optimize for fast load times and smooth interactions.
 ### For Developers
 1. Install the design system package
 2. Review [Design System based UI Development](./Design%20System%20based%20UI%20Development/Style%20workspace.md)
-3. Explore [Web UI](./web-ui/components.md) or [Mobile](./mobile/components.md) components
-4. Check out the [AutoCode Plugin](./AutoCode%20Plugin/) for automation
+3. Explore platform-specific components
+4. Check out the AutoCode Plugin for automation
 5. Start building with components
 
 ## Design System Structure

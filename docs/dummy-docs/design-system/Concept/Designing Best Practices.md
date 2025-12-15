@@ -519,5 +519,5 @@ Load components on demand:
 
 - [Design Tokens](./Design%20Tokens.md) - Design token system
 - [Component Variants](./Component%20Variants.md) - Component variations
-- [UI KIT](../UI%20KIT/overview.md) - Component library
-- [Design System based UI Development](../Design%20System%20based%20UI%20Development/overview.md) - Implementation guide
+- [Style Workspace](../Design%20System%20based%20UI%20Development/Style%20workspace.md) - Styling and implementation
+- [Design System Overview](../overview.md) - Design system overview

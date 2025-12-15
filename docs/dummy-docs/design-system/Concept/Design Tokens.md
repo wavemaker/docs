@@ -289,4 +289,4 @@ Maintain a centralized registry of all tokens with:
 
 - [Component Variants](./Component%20Variants.md) - Component design variations
 - [Designing Best Practices](./Designing%20Best%20Practices.md) - Design system best practices
-- [UI KIT](../UI%20KIT/overview.md) - Component library
+- [Design System Overview](../overview.md) - Design system overview

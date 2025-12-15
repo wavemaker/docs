@@ -385,4 +385,4 @@ Test all variant combinations to ensure:
 
 - [Design Tokens](./Design%20Tokens.md) - Design token system
 - [Designing Best Practices](./Designing%20Best%20Practices.md) - Design system best practices
-- [UI KIT](../UI%20KIT/overview.md) - Component library
+- [Design System Overview](../overview.md) - Design system overview
