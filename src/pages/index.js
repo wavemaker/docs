@@ -1,8 +1,9 @@
-import React from "react";
+import { React, useEffect } from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import SearchBar from "@theme-original/SearchBar";
+import { motion } from "framer-motion";
 import {
   BugIcon,
   BulbIcon,
@@ -150,19 +151,44 @@ export function ResourceList({ prop }) {
   );
 }
 
+export function DisableScrollRestore() {
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+
   return (
     <Layout>
+      <DisableScrollRestore />
       <main className="main-wrapper-homepage">
-        <section className="top-banner-section">
+        <motion.section
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="top-banner-section"
+        >
           <h1 className="font-lg">Hello, how can we help?</h1>
           <p>Find answers and inspiration on all things WaveMaker.</p>
           <SearchBar />
-        </section>
-        <section className="env-list-section">
+        </motion.section>
+        <motion.section
+          initial={{ opacity: 0, y: 300 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="env-list-section"
+        >
           <EnvList prop={envData} />
-        </section>
+        </motion.section>
         <section className="rightside-img-section">
           <div className="left-content">
             <span className="highlight-span">Explore</span>
@@ -175,7 +201,12 @@ export default function Home() {
               expert-led courses. Gain the knowledge you need to build
               confidently with WaveMaker.
             </p>
-            <Link to="https://next-academy.onwavemaker.com/" className="button button--dark">Go to Academy</Link>
+            <Link
+              to="https://next-academy.onwavemaker.com/"
+              className="button button--dark"
+            >
+              Go to Academy
+            </Link>
           </div>
           <div className="right-content">
             <img src="/img/section-img/courses-Illustration.svg" />
@@ -193,7 +224,12 @@ export default function Home() {
               can access ready-to-use artifacts and also contribute back to the
               ecosystem.
             </p>
-            <Link  to="https://next-marketplace.onwavemaker.com/" className="button button--dark">Start Building</Link>
+            <Link
+              to="https://next-marketplace.onwavemaker.com/"
+              className="button button--dark"
+            >
+              Start Building
+            </Link>
           </div>
         </section>
         {/* <section className="resources-list-section">
