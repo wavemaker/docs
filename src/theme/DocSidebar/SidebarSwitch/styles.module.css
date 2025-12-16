@@ -1,0 +1,35 @@
+.switchContainer {
+  display: flex;
+  background-color: #E9ECEF;
+  border-radius: 8px;
+  padding: 4px;
+  width: 100%;
+  margin: 10px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.switchOption {
+  flex: 1;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #301C4D; /* Dark purple from image */
+}
+
+.switchOption:hover {
+  color: #000;
+}
+
+.active {
+  background-color: #FFFFFF;
+  color: #000000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
