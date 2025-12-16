@@ -175,7 +175,7 @@ export default function Home() {
               expert-led courses. Gain the knowledge you need to build
               confidently with WaveMaker.
             </p>
-            <button className="button button--dark">Go to Academy</button>
+            <Link to="https://next-academy.onwavemaker.com/" className="button button--dark">Go to Academy</Link>
           </div>
           <div className="right-content">
             <img src="/img/section-img/courses-Illustration.svg" />
@@ -193,7 +193,7 @@ export default function Home() {
               can access ready-to-use artifacts and also contribute back to the
               ecosystem.
             </p>
-            <button className="button button--dark">Start Building</button>
+            <Link  to="https://next-marketplace.onwavemaker.com/" className="button button--dark">Start Building</Link>
           </div>
         </section>
         {/* <section className="resources-list-section">

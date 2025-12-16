@@ -89,32 +89,15 @@ const config = {
           src: "img/wm-logo.svg",
         },
         items: [
-          {
-            type: "docSidebar",
-            sidebarId: "designSystemSidebar",
-            position: "left",
-            label: "Design System",
-          },
-          {
-            type: "docSidebar",
-            sidebarId: "platformSidebar",
-            position: "left",
-            label: "Platform",
-          },
-          {
-            type: "docSidebar",
-            sidebarId: "aiAgentsSidebar",
-            position: "left",
-            label: "AI Agents",
-          },
-          { to: "/whatsnew", label: "What's New", position: "right" },
-          { to: "/blog", label: "Blogs", position: "right" },
+
+          { to: "/whatsnew", label: "What's New", position: "left" },
           {
             type: "docSidebar",
             sidebarId: "howToSidebar",
-            position: "right",
-            label: "How to",
+            position: "left",
+            label: "Guide",
           },
+          { to: "/blog", label: "Blogs", position: "left" },
           {
             to: "https://www.wavemaker.com/get-demo/",
             label: "Schedule Demo",
