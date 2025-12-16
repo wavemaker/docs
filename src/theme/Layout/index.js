@@ -8,7 +8,6 @@ export default function LayoutWrapper(props) {
   const location = useLocation();
 
   const isDocsPage = location.pathname.startsWith("/docs");
-  console.log(props)
   return (
     <>
       <Layout {...props}>
