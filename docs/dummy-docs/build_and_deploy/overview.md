@@ -1,4 +1,8 @@
-# Build and Deploy Overview
+---
+sidebar_position: 1
+---
+
+# Overview
 
 Comprehensive guide to building and deploying applications across web, mobile, and cloud platforms.
 

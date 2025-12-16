@@ -1,4 +1,8 @@
-# Design System Overview
+---
+sidebar_position: 1
+---
+
+# Overview
 
 A comprehensive design system for building consistent, accessible, and scalable user interfaces.
 

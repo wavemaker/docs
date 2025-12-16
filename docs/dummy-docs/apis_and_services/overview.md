@@ -1,4 +1,8 @@
-# APIs and Services Overview
+---
+sidebar_position: 1
+---
+
+# Overview
 
 This section contains documentation for APIs and services.
 
