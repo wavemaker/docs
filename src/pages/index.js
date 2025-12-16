@@ -181,10 +181,10 @@ export default function Home() {
           <SearchBar />
         </motion.section>
         <motion.section
-          initial={{ opacity: 0, y: 300 }}
+          initial={{ opacity: 0, y: 240 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           className="env-list-section"
         >
           <EnvList prop={envData} />
