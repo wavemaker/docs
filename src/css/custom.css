@@ -178,7 +178,7 @@ body {
 }
 .navbar {
   border-bottom: 1px solid var(--ifm-navbar-border-color);
-  .navbar__logo{
+  .navbar__logo {
     margin: 0;
   }
   .navbar__title {
@@ -206,6 +206,18 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
+.dropdown > .navbar__link:after {
+  border-width: 0;
+  width: 12px;
+  height: 12px;
+  background-image: url("/img/dropdown.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: 39%;
+  margin-left: 6px;
+}
+
 .theme-doc-sidebar-container {
   background: var(--ifm-sidebar-background-color);
   border-right: 1px solid rgba(0, 7, 14, 0.08);
