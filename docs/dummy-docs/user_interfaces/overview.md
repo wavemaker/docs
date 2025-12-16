@@ -1,4 +1,8 @@
-# User Interfaces Overview
+---
+sidebar_position: 1
+---
+
+# Overview
 
 Comprehensive guide to building modern, responsive, and accessible user interfaces for web and mobile applications.
 

@@ -1,4 +1,8 @@
-# Developing with Agents Overview
+---
+sidebar_position: 1
+---
+
+# Overview
 
 A comprehensive guide to AI-powered development with intelligent agents that assist in building, testing, and deploying software applications.
 
