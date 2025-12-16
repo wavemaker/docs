@@ -6,12 +6,12 @@ const topNavData = [
   {
     id: 1,
     label: "User Interface",
-    link: "/docs/dummy-docs/user_interfaces/overview",
+    link: "/docs/dummy-docs/user_interfaces/Concepts/Overview",
   },
   {
     id: 2,
     label: "Building API’s & Microservices",
-    link: "/docs/dummy-docs/apis_and_services/overview",
+    link: "/docs/dummy-docs/apis_and_services/Concepts/overview",
   },
   {
     id: 3,

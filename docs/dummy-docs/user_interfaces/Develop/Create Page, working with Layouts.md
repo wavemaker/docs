@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Create Page, working with Layouts
 
 Guide to creating pages and working with different layout structures in your application.

@@ -1,4 +1,8 @@
-# Security Overview
+---
+sidebar_position: 1
+---
+
+# Overview
 
 This section covers security features and best practices for securing your applications.
 

@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Input validations
 
 Validating user input to ensure data quality and security.

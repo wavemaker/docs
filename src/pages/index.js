@@ -47,14 +47,14 @@ const envData = [
     icon: <BulbIcon />,
     title: "User Interfaces",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/docs/dummy-docs/user_interfaces/overview",
+    link: "/docs/dummy-docs/user_interfaces/Concepts/Overview",
   },
   {
     id: 5,
     icon: <BugIcon />,
     title: "API's & Microservices",
     desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
-    link: "/docs/dummy-docs/apis_and_services/overview",
+    link: "/docs/dummy-docs/apis_and_services/Concepts/overview",
   },
   {
     id: 6,

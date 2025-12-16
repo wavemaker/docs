@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Responsive Design
 
 Creating responsive user interfaces that adapt to different screen sizes and devices.

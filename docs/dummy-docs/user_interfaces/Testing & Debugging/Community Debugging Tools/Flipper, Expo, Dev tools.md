@@ -708,4 +708,3 @@ Install these helpful extensions:
 - [Wave Pulse, Inspection frameworks](../WM%20Debugging%20Tools/Wave%20Pulse,%20Inspection%20frameworks.md)
 - [UI Testing Web](../Testing%20Strategies/UI%20Testing%20Web.md)
 - [UI Testing Mobile](../Testing%20Strategies/UI%20Testing%20Mobile.md)
-- [Adding Plugins](../../Device%20Capabilities-%20Mobile/Adding%20Plugins.md)

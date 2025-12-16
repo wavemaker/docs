@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # UI Event handling
 
 Handling user interactions and events in your application.

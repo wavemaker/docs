@@ -418,7 +418,6 @@ DEBUG=false
 
 ## Related Documentation
 
-- [Architecture](../apis_and_services/Architecture/overview.md) - System architecture overview
+- [Architecture](../apis_and_services/Concepts/architecture.md) - System architecture overview
 - [Security](../apis_and_services/Security/overview.md) - Security best practices
 - [Testing And Debugging](../apis_and_services/Testing%20And%20Debugging/Unit%20Testing/junit_mockito.md) - Testing strategies
-- [APIs](../apis_and_services/APIs/overview.md) - API development and deployment

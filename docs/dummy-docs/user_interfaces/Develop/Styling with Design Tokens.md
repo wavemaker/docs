@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Styling with Design Tokens
 
 Guide to using design tokens for consistent, maintainable styling across your application.

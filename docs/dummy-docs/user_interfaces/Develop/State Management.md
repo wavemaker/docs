@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # State Management
 
 Managing application state effectively across components.

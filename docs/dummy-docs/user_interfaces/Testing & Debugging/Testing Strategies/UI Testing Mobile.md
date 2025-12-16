@@ -716,4 +716,3 @@ e2e/
 - [UI Testing Web](./UI%20Testing%20Web.md)
 - [Web & Mobile](../Unit%20Testing/Web%20&%20Mobile.md)
 - [Flipper, Expo, Dev tools...](../Community%20Debugging%20Tools/Flipper,%20Expo,%20Dev%20tools.md)
-- [Adding Plugins](../../Device%20Capabilities-%20Mobile/Adding%20Plugins.md)
