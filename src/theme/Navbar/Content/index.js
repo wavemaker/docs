@@ -9,6 +9,7 @@ import {
   splitNavbarItems,
   useNavbarMobileSidebar,
 } from "@docusaurus/theme-common/internal";
+import Link from '@docusaurus/Link';
 import NavbarItem from "@theme/NavbarItem";
 import NavbarColorModeToggle from "@theme/Navbar/ColorModeToggle";
 import SearchBar from "@theme/SearchBar";
@@ -89,8 +90,9 @@ export default function NavbarContent() {
         // TODO stop hardcoding items?
         // Ask the user to add the respective navbar items => more flexible
         <>
-         <NavbarColorModeToggle className={styles.colorModeToggle} />
          <NavbarItems items={rightItems} />
+         <NavbarColorModeToggle className={styles.colorModeToggle} />
+         <Link to="https://www.wavemaker.com/get-demo/" className="button button--outline button--primary">Schedule Demo</Link>
         </>
       }
     />
