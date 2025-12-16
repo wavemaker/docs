@@ -443,7 +443,7 @@ a.pagination-nav__link.pagination-nav__link--prev {
     background-color: var(--wm-card-bg);
     border: 1px solid var(--wm-card-border-color);
     border-radius: 12px;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
     transition: all 0.2s ease;
     .env-item-link {
@@ -468,7 +468,7 @@ a.pagination-nav__link.pagination-nav__link--prev {
     &:focus,
     &:has(.env-item-link:hover),
     &:has(.env-item-link:focus) {
-      box-shadow: 0px 10.98px 51.25px 0px rgba(6, 28, 61, 0.12);
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06),0px 12px 32px 0px rgba(0, 0, 0, 0.06);
       /* transform: scale(1.025); */
       transform: translateY(-4px);
       .img-wrapper {
@@ -484,18 +484,18 @@ a.pagination-nav__link.pagination-nav__link--prev {
   }
 }
 .env-list-item .content-wrapper {
-  padding-inline: 2.5rem;
+  /* padding-inline: 2.5rem; */
   margin-top: 24px;
   .env-item-heading {
     font-size: var(--ifm-h4-font-size);
-    font-weight: var(--wm-font-weight-medium);
+    font-weight: var(--wm-font-weight-bold);
     line-height: 24px;
   }
   .env-item-desc {
-    font-size: var(--wm-font-13);
+    font-size: var(--wm-font-h5-font-size);
     line-height: 18px;
     color: var(--ifm-font-color-muted);
-    margin-top: 14px;
+    margin-top: 8px;
   }
 }
 

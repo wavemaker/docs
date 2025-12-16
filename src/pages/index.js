@@ -23,44 +23,44 @@ import {
 const envData = [
   {
     id: 1,
-    icon: <DesignIcon />,
+    icon: "/img/icon/wavemaker-uikit.svg",
     title: "Design System",
-    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    desc: "Scalable foundations for consistent design ",
     link: "/docs/dummy-docs/design-system/overview",
   },
   {
     id: 2,
-    icon: <CpuIcon />,
+    icon: "/img/icon/aira.svg",
     title: "Developing with Agents",
-    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    desc: "Scalable foundations for consistent design",
     link: "/docs/dummy-docs/developing_with_agents/overview",
   },
   {
     id: 3,
-    icon: <PackageIcon />,
+    icon: "/img/wm-logo.svg",
     title: "Studio",
-    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    desc: "Visual tools to build experiences ",
     link: "/docs/dummy-docs/studio/overview",
   },
   {
     id: 4,
-    icon: <BulbIcon />,
+    icon: "/img/icon/userInterfaceicon.svg",
     title: "User Interfaces",
-    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    desc: "Create scalable web mobile interfaces",
     link: "/docs/dummy-docs/user_interfaces/Concepts/Overview",
   },
   {
     id: 5,
-    icon: <BugIcon />,
+    icon: "/img/icon/apiIcon.svg",
     title: "API's & Microservices",
-    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    desc: "Reliable services for modern applications",
     link: "/docs/dummy-docs/apis_and_services/Concepts/overview",
   },
   {
     id: 6,
-    icon: <DatabaseIcon />,
+    icon: "/img/icon/buildicon.svg",
     title: "Build & Deploy",
-    desc: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. ",
+    desc: "From code to production faster",
     link: "/docs/dummy-docs/build_and_deploy/overview",
   },
 ];
@@ -110,10 +110,10 @@ export function EnvList({ prop }) {
       {prop.map((item) => {
         const content = (
           <>
-            <div className="img-wrapper">{item.icon}</div>
+            <div className="icon-svg"><img src={item.icon} /></div>
             <div className="content-wrapper">
               <h4 className="env-item-heading">{item.title}</h4>
-              {/* <p className="env-item-desc">{item.desc}</p> */}
+              <p className="env-item-desc">{item.desc}</p>
             </div>
           </>
         );
