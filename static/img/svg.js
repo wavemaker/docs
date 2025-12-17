@@ -581,7 +581,7 @@ export const FAQsIcon = () => {
     </svg>
   );
 };
-export const ArrowRightIcon = () => {
+export const ArrowRightIcon = ({ color }) => {
   return (
     <svg
       width="27"
@@ -592,10 +592,27 @@ export const ArrowRightIcon = () => {
     >
       <path
         d="M0.68634 5.68626L25.31 5.68626M21.3154 0.686523L25.6863 5.68652L21.3154 10.6865"
-        stroke="white"
-        stroke-width="1.37273"
+        stroke={color || "#000"}
+        stroke-width="1.2"
         stroke-linecap="round"
         stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+export const ArrowRightIconsm = () => {
+  return (
+    <svg
+      width="21"
+      height="12"
+      viewBox="0 0 21 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        opacity="0.8"
+        d="M20.5303 6.05328C20.8232 5.76039 20.8232 5.28551 20.5303 4.99262L15.7574 0.21965C15.4645 -0.0732437 14.9896 -0.0732437 14.6967 0.21965C14.4038 0.512543 14.4038 0.987417 14.6967 1.28031L18.9393 5.52295L14.6967 9.76559C14.4038 10.0585 14.4038 10.5334 14.6967 10.8263C14.9896 11.1191 15.4645 11.1191 15.7574 10.8263L20.5303 6.05328ZM0 5.52295L-6.55671e-08 6.27295L20 6.27295L20 5.52295L20 4.77295L6.55671e-08 4.77295L0 5.52295Z"
+        fill="#42526B"
       />
     </svg>
   );
@@ -625,5 +642,3 @@ export const WmLogo = () => {
     </svg>
   );
 };
-
-

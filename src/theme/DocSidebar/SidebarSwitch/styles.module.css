@@ -6,13 +6,12 @@
   width: 85%;
   margin: 16px auto;
   margin-bottom: 0;
-  font-family: 'Inter', sans-serif;
 }
 
 .switchOption {
   flex: 1;
   text-align: center;
-  padding: 8px 12px;
+  padding: 6px 12px;
   border-radius: 6px;
   font-weight: 600;
   font-size: 14px;
@@ -22,12 +21,9 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #301C4D; /* Dark purple from image */
+  color: #301C4D; 
 }
 
-.switchOption:hover {
-  color: #000;
-}
 
 .active {
   background-color: #FFFFFF;

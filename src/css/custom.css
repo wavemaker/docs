@@ -124,7 +124,7 @@
   --wm-max-content: 1600px;
   --wm-card-bg: #fff;
   --wm-card-img-bg: rgba(240, 245, 255, 1);
-  --wm-card-border-color: rgba(228, 228, 231, 1);
+  --wm-card-border-color: rgba(227, 232, 231, 1);
   --wm-section-img-bg: rgba(240, 245, 255, 1);
 
   /* footer variables */
@@ -439,13 +439,14 @@ a.pagination-nav__link.pagination-nav__link--prev {
   .env-list-item {
     margin: 12px;
     width: calc(100% / 3 - 24px);
-    padding: 30px 18px;
+    padding: 24px;
     background-color: var(--wm-card-bg);
     border: 1px solid var(--wm-card-border-color);
     border-radius: 12px;
     text-align: left;
     cursor: pointer;
     transition: all 0.2s ease;
+    overflow: hidden;
     .env-item-link {
       display: block;
       color: inherit;
@@ -468,9 +469,22 @@ a.pagination-nav__link.pagination-nav__link--prev {
     &:focus,
     &:has(.env-item-link:hover),
     &:has(.env-item-link:focus) {
-      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06),0px 12px 32px 0px rgba(0, 0, 0, 0.06);
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06),
+        0px 12px 32px 0px rgba(0, 0, 0, 0.06);
       /* transform: scale(1.025); */
       transform: translateY(-4px);
+      &::before {
+        content: "";
+        position: absolute;
+        width: 240px;
+        left: 60%;
+        top: 0;
+        transform: translateX(-40%);
+        height: 40%;
+        background: radial-gradient(rgba(0, 115, 229, 0.8), transparent);
+        background-position: top center;
+        filter: blur(70px);
+      }
       .img-wrapper {
         background-color: rgba(11, 99, 229, 1);
         svg path,
@@ -480,12 +494,24 @@ a.pagination-nav__link.pagination-nav__link--prev {
           stroke: var(--wm-svg-color);
         }
       }
+      .arrow-icon-wrapper {
+        svg path,
+        svg react,
+        svg circle {
+          fill: var(--ifm-color-primary);
+          stroke: transparent;
+        }
+      }
     }
   }
 }
 .env-list-item .content-wrapper {
   /* padding-inline: 2.5rem; */
   margin-top: 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
   .env-item-heading {
     font-size: var(--ifm-h4-font-size);
     font-weight: var(--wm-font-weight-bold);
@@ -494,8 +520,11 @@ a.pagination-nav__link.pagination-nav__link--prev {
   .env-item-desc {
     font-size: var(--wm-font-h5-font-size);
     line-height: 18px;
-    color: var(--ifm-font-color-muted);
+    color: rgba(66, 82, 107, 1);
     margin-top: 8px;
+  }
+  .arrow-icon-wrapper {
+    display: inline-flex;
   }
 }
 
@@ -863,6 +892,17 @@ a.pagination-nav__link.pagination-nav__link--prev {
   }
   .top-banner-section .DocSearch-Button {
     min-width: 90%;
+  }
+  .top_nav {
+    height: auto;
+    .nav-main {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      .top-nav-link-item {
+        padding: 6px;
+      }
+    }
   }
   .bottom-banner-section {
     flex-direction: column;

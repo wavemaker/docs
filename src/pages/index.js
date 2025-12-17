@@ -18,6 +18,7 @@ import {
   ReferenceIcon,
   FAQsIcon,
   ArrowRightIcon,
+  ArrowRightIconsm
 } from "../../static/img/svg";
 
 const envData = [
@@ -110,10 +111,17 @@ export function EnvList({ prop }) {
       {prop.map((item) => {
         const content = (
           <>
-            <div className="icon-svg"><img src={item.icon} /></div>
+            <div className="icon-svg">
+              <img src={item.icon} />
+            </div>
             <div className="content-wrapper">
-              <h4 className="env-item-heading">{item.title}</h4>
-              <p className="env-item-desc">{item.desc}</p>
+              <div>
+                <h4 className="env-item-heading">{item.title}</h4>
+                <p className="env-item-desc">{item.desc}</p>
+              </div>
+              <div className="arrow-icon-wrapper">
+                <ArrowRightIconsm/>
+              </div>
             </div>
           </>
         );
@@ -249,7 +257,7 @@ export default function Home() {
               confidently with Wavemaker.
             </p>
             <button className="button button__white">
-              Go to Academy <ArrowRightIcon />
+              Go to Academy <ArrowRightIcon color="#fff"  />
             </button>
           </div>
         </section>
