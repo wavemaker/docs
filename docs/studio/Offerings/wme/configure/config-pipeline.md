@@ -10,7 +10,7 @@ There are three deployment phases provided by WME – QA, Stage and Live.
 
 You need to add cloud instances else configuration of the phases for any project from Apps Portal will fail. Cloud Instances for all three phases can be viewed/added from the Capacity tab of the App Deployments section in Launchpad.
 
-[![pipeline](./assets/images/release_pipeline.png)](./assets/images/release_pipeline.png)
+[![pipeline](./assets/images/release-pipeline.png)](./assets/images/release-pipeline.png)
 
 ## Configure Deployment Pipeline
 

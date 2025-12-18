@@ -287,6 +287,6 @@ Maintain a centralized registry of all tokens with:
 
 ## Related Documentation
 
-- [Component Variants](./Component%20Variants.md) - Component design variations
-- [Designing Best Practices](./Designing%20Best%20Practices.md) - Design system best practices
+- [Component Variants](./component-variants.md) - Component design variations
+- [Designing Best Practices](./designing-best-practices.md) - Design system best practices
 - [Design System Overview](../overview.md) - Design system overview

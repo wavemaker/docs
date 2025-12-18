@@ -142,5 +142,5 @@ git merge --no-ff feature/new-feature
 
 ## Related Documentation
 
-- [Database Workspace](./database_workspace.md)
-- [Security Workspace](./security_workspace.md)
+- [Database Workspace](./database-workspace.md)
+- [Security Workspace](./security-workspace.md)

@@ -100,23 +100,23 @@ bash wme-installer.sh --data-archive
 
 #### AWS
 
-- To launch WME Platform instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](/docs/studio/Offerings/wme/aws/wavemaker-enterprise-setup-on-aws).
+- To launch WME Platform instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](/docs/studio/offerings/wme/aws/wavemaker-enterprise-setup-on-aws).
   
 #### AZURE
 
-- To launch WME Platform virtual machines in AZURE cloud environment please refer [WME Platform instance Infrastructure in AZURE](/docs/studio/Offerings/wme/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME Platform virtual machines in AZURE cloud environment please refer [WME Platform instance Infrastructure in AZURE](/docs/studio/offerings/wme/azure/wavemaker-enterprise-setup-on-azure).
   
 #### GCP
 
-- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/Offerings/wme/getting-started/prerequisites) and installation steps.
+- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/offerings/wme/getting-started/prerequisites) and installation steps.
 
 #### VMWARE ESXI
 
-- To create WME Platform virtual machines in VMware Esxi please refer [WME Platform instance Infrastructure in VMware Esxi](/docs/studio/Offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
+- To create WME Platform virtual machines in VMware Esxi please refer [WME Platform instance Infrastructure in VMware Esxi](/docs/studio/offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
 
 #### Hyper-V
 
-- To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](/docs/studio/Offerings/wme/hyper-v/wavemaker-enterprise-setup-on-hyperv).
+- To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](/docs/studio/offerings/wme/hyperv/wavemaker-enterprise-setup-on-hyperv).
 
 #### Volumes Based Disks Restoring(AWS, GCP, Azure)
 
@@ -151,7 +151,7 @@ bash wme-installer.sh --data-untar
 
 ### StudioWorkspace Instance / AppDeployment Instance
 
-- Launch StudioWorkspace Instance/AppDeployment Instance in different Infra providers from Link [WaveMaker Launch Instances](/docs/studio/Offerings/wme/getting-started/prerequisites).
+- Launch StudioWorkspace Instance/AppDeployment Instance in different Infra providers from Link [WaveMaker Launch Instances](/docs/studio/offerings/wme/getting-started/prerequisites).
 
 
 ## Download and Extract Migrations
@@ -182,9 +182,9 @@ bash wme-installer.sh --data-untar
 
 ## Installing WME on New Instance
 
-- For Download WaveMaker installation package please refer [WaveMaker package Installation](/docs/studio/Offerings/wme/aws/install/download-copy-installer).
-- Extract Package please refer [WaveMaker package extraction](/docs/studio/Offerings/wme/aws/install/extract-package).
-Initializing the setup please refer [WaveMaker Initialization](/docs/studio/Offerings/wme/aws/install/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
+- For Download WaveMaker installation package please refer [WaveMaker package Installation](/docs/studio/offerings/wme/aws/install/download-copy-installer).
+- Extract Package please refer [WaveMaker package extraction](/docs/studio/offerings/wme/aws/install/extract-package).
+Initializing the setup please refer [WaveMaker Initialization](/docs/studio/offerings/wme/aws/install/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
 
 :::note
 After Completing the ***WaveMaker Initialization*** process, please go with the ***migrations*** step which is given below before proceeding with the ***Configwizard***
@@ -221,7 +221,7 @@ After Completing the ***WaveMaker Initialization*** process, please go with the 
 
 ### Replace StudioWorkspace/AppDeployment Instances
 
-- Once the configwizard reaches to 100%, you can go to Launchpad and Developer Workspace [WaveMaker add developer workspace](/docs/studio/Offerings/wme/configure/add-dev-capacity#add-capacity-to-developer-workspace) and  Deployment Workspace [WaveMaker add deployement workspace](/docs/studio/Offerings/wme/configure/add-apps-capacity#add-capacity-to-app-deployment), remove the previously added instances and add the newly provisioned Developer and Deployment workspace Instances respectively  
+- Once the configwizard reaches to 100%, you can go to Launchpad and Developer Workspace [WaveMaker add developer workspace](/docs/studio/offerings/wme/configure/add-dev-capacity#add-capacity-to-developer-workspace) and  Deployment Workspace [WaveMaker add deployement workspace](/docs/studio/offerings/wme/configure/add-apps-capacity#add-capacity-to-app-deployment), remove the previously added instances and add the newly provisioned Developer and Deployment workspace Instances respectively  
 
 
 ### Update VCS IP’s in Passivation Disk and Database

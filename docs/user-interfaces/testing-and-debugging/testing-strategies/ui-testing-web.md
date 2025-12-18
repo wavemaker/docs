@@ -670,7 +670,7 @@ npm install --save-dev @wdio/allure-reporter
 
 ## Related Documentation
 
-- [UI Testing Mobile](./UI%20Testing%20Mobile.md)
-- [Web & Mobile](../Unit%20Testing/Web%20&%20Mobile.md)
-- [Wave Pulse, Inspection frameworks](../WM%20Debugging%20Tools/Wave%20Pulse,%20Inspection%20frameworks.md)
-- [Accessibility](../../Enterprise%20capabilities/Accessibility.md)
+- [UI Testing Mobile](./ui-testing-mobile.md)
+- [Web & Mobile](../unit-testing/web-and-mobile.md)
+- [Wave Pulse, Inspection frameworks](../wm-debugging-tools/wave-pulse-inspection-frameworks.md)
+- [Accessibility](../../enterprise-capabilities/accessibility.md)

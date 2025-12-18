@@ -34,7 +34,7 @@ const envData = [
     icon: "/img/icon/aira.svg",
     title: "Developing with Agents",
     desc: "Scalable foundations for consistent design",
-    link: "/docs/developing_with_agents/overview",
+    link: "/docs/developing-with-agents/overview",
   },
   {
     id: 3,
@@ -48,21 +48,21 @@ const envData = [
     icon: "/img/icon/userInterfaceicon.svg",
     title: "User Interfaces",
     desc: "Create scalable web mobile interfaces",
-    link: "/docs/user_interfaces/Concepts/Overview",
+    link: "/docs/user-interfaces/concepts/overview",
   },
   {
     id: 5,
     icon: "/img/icon/apiIcon.svg",
     title: "API's & Microservices",
     desc: "Reliable services for modern applications",
-    link: "/docs/apis_and_services/Concepts/overview",
+    link: "/docs/apis-and-services/concepts/overview",
   },
   {
     id: 6,
     icon: "/img/icon/buildicon.svg",
     title: "Build & Deploy",
     desc: "From code to production faster",
-    link: "/docs/build_and_deploy/overview",
+    link: "/docs/build-and-deploy/overview",
   },
 ];
 

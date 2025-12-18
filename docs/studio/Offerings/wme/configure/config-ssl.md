@@ -31,7 +31,7 @@ If you have .pem file, you can extract these files from pem file.
 
 - Navigate to **Update SSL Certificates** and Upload your certs.
 
-    [![cw_stop](./assets/images/Update-SSL-Cert.png)](./assets/images/Update-SSL-Cert.png)
+    [![cw_stop](./assets/images/updatessl-cert.png)](./assets/images/updatessl-cert.png)
 
 
 ### Access Studio using https

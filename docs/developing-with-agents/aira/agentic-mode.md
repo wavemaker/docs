@@ -503,6 +503,6 @@ Actions:
 
 ## Related Documentation
 
-- [List of Agents](./List%20of%20Agents.md) - Available specialized agents
-- [What is it?](../Concept/What%20is%20it.md) - Introduction to developing with agents
-- [How it is different from Vibe Coding?](../Concept/How%20it%20is%20different%20from%20Vibe%20Coding.md) - Comparison with other approaches
+- [List of Agents](./list-of-agents.md) - Available specialized agents
+- [What is it?](../concept/what-is-it.md) - Introduction to developing with agents
+- [How it is different from Vibe Coding?](../concept/how-it-is-different-from-vibe-coding.md) - Comparison with other approaches

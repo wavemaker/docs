@@ -77,7 +77,7 @@ The User should be mapped with a respective team to access the studio. Following
 
 For WaveMaker enterprise customers that are performing platform maintenance this option can be used to restrict access to WaveMaker until the maintenance has finished successfully. Once enabled, all active users get logged out of the platform within three minutes except the current admin.  
 
-[![Login restriction](./assets/images/RestrictingLoginAllUsers.png)](./assets/images/RestrictingLoginAllUsers.png)
+[![Login restriction](./assets/images/restricting-login-all-users.png)](./assets/images/restricting-login-all-users.png)
 
 ### Steps to Restrict Users
 

@@ -633,6 +633,6 @@ App.onAfterServiceCall = function(response) {
 
 ## Related Documentation
 
-- [Database Workspace](./database_workspace.md)
-- [Security Workspace](./security_workspace.md)
-- [Design Workspace](./design_canvas.md)
+- [Database Workspace](./database-workspace.md)
+- [Security Workspace](./security-workspace.md)
+- [Design Workspace](./design-canvas.md)

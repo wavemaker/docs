@@ -23,7 +23,7 @@ With the right tools, the WaveMaker Platform is smart enough to detect its inter
 All this is possible due to the WaveMaker's **Observability** module.
 
 :::note
-The above example refers to the *Alerts Component* included in the [Observability Stack](/docs/studio/Offerings/wme/observability/introduction#observability-stack).
+The above example refers to the *Alerts Component* included in the [Observability Stack](/docs/studio/offerings/wme/observability/introduction#observability-stack).
 :::
 
 ## Observability
@@ -34,12 +34,12 @@ The Observability helps in monitoring the platform by collecting the metrics in 
 
 ### Observability Stack
 
-- [Logs aggregation](/docs/studio/Offerings/wme/observability/logs-aggregation/overview)
-  - [Kibana](/docs/studio/Offerings/wme/observability/logs-aggregation/kibana)
-- [Metrics collection](/docs/studio/Offerings/wme/observability/metrics-collection/overview)
-  - [Prometheus](/docs/studio/Offerings/wme/observability/metrics-collection/prometheus)
-  - [Alerts](/docs/studio/Offerings/wme/observability/metrics-collection/alerts)
-  - [Grafana](/docs/studio/Offerings/wme/observability/metrics-collection/grafana)
+- [Logs aggregation](/docs/studio/offerings/wme/observability/logs-aggregation/overview)
+  - [Kibana](/docs/studio/offerings/wme/observability/logs-aggregation/kibana)
+- [Metrics collection](/docs/studio/offerings/wme/observability/metrics-collection/overview)
+  - [Prometheus](/docs/studio/offerings/wme/observability/metrics-collection/prometheus)
+  - [Alerts](/docs/studio/offerings/wme/observability/metrics-collection/alerts)
+  - [Grafana](/docs/studio/offerings/wme/observability/metrics-collection/grafana)
 
 ## Observability in WME (WaveMaker Enterprise)
 

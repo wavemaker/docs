@@ -524,7 +524,7 @@ Audit CSS bundle size and remove unused styles.
 
 ## Related Documentation
 
-- [Design Tokens](../Concept/Design%20Tokens.md) - Design token system
-- [Component Variants](../Concept/Component%20Variants.md) - Component variations
-- [Designing Best Practices](../Concept/Designing%20Best%20Practices.md) - Best practices
+- [Design Tokens](../concept/design-tokens.md) - Design token system
+- [Component Variants](../concept/component-variants.md) - Component variations
+- [Designing Best Practices](../concept/designing-best-practices.md) - Best practices
 - [Design System Overview](../overview.md) - Design system overview

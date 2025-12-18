@@ -44,23 +44,23 @@ The following document will help an organization to take backup data at unplanne
 
 #### AWS
 
-- To launch WME Platform instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](/docs/studio/Offerings/wme/aws/wavemaker-enterprise-setup-on-aws).
+- To launch WME Platform instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](/docs/studio/offerings/wme/aws/wavemaker-enterprise-setup-on-aws).
   
 #### AZURE
 
-- To launch WME Platform virtual machines in AZURE cloud environmet please refer [WME Platform instance Infrastructure in AZURE](/docs/studio/Offerings/wme/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME Platform virtual machines in AZURE cloud environmet please refer [WME Platform instance Infrastructure in AZURE](/docs/studio/offerings/wme/azure/wavemaker-enterprise-setup-on-azure).
   
 #### GCP
 
-- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/Offerings/wme/getting-started/prerequisites) and installation steps.
+- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/offerings/wme/getting-started/prerequisites) and installation steps.
 
 #### VMWARE ESXI
 
-- To create WME Platform virtual machines in VMware Esxi please refer [WME Platform instance Infrastructure in VMware Esxi](/docs/studio/Offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
+- To create WME Platform virtual machines in VMware Esxi please refer [WME Platform instance Infrastructure in VMware Esxi](/docs/studio/offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
 
 #### Hyper-V
 
-- To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](/docs/studio/Offerings/wme/hyper-v/wavemaker-enterprise-setup-on-hyperv).
+- To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](/docs/studio/offerings/wme/hyperv/wavemaker-enterprise-setup-on-hyperv).
 
 #### Starting WME setup
 
@@ -79,23 +79,23 @@ The following document will help an organization to take backup data at unplanne
 
 #### AWS
 
-- To launch WME StudioWorkspace Instance / AppDeployment Instance in AWS cloud environment please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AWS](/docs/studio/Offerings/wme/aws/wavemaker-enterprise-setup-on-aws).
+- To launch WME StudioWorkspace Instance / AppDeployment Instance in AWS cloud environment please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AWS](/docs/studio/offerings/wme/aws/wavemaker-enterprise-setup-on-aws).
   
 #### AZURE
 
-- To launch WME StudioWorkspace Instance / AppDeployment Instance in AZURE cloud environmet please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AZURE](/docs/studio/Offerings/wme/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME StudioWorkspace Instance / AppDeployment Instance in AZURE cloud environmet please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in AZURE](/docs/studio/offerings/wme/azure/wavemaker-enterprise-setup-on-azure).
   
 #### GCP
 
-- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/Offerings/wme/getting-started/prerequisites) and installation steps.
+- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/offerings/wme/getting-started/prerequisites) and installation steps.
 
 #### VMWARE ESXI
 
-- To create WME StudioWorkspace Instance / AppDeployment Instance in VMware Esxi please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in VMware Esxi](/docs/studio/Offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
+- To create WME StudioWorkspace Instance / AppDeployment Instance in VMware Esxi please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in VMware Esxi](/docs/studio/offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
 
 #### Hyper-V
 
-- To create WME StudioWorkspace Instance / AppDeployment Instance in Hyper-V please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in Hyper-V](/docs/studio/Offerings/wme/hyper-v/wavemaker-enterprise-setup-on-hyperv).
+- To create WME StudioWorkspace Instance / AppDeployment Instance in Hyper-V please refer [WME StudioWorkspace Instance / AppDeployment Instance Infrastructure in Hyper-V](/docs/studio/offerings/wme/hyperv/wavemaker-enterprise-setup-on-hyperv).
 
 ## Sync StudioWorkspace Instance / AppDeployment Instance
 
@@ -105,4 +105,4 @@ The following document will help an organization to take backup data at unplanne
 - To Apply, go to the Launchpad and Navigate to the Developer Workspace or App Deployements.
 - On the Capacity, you can see the Workspace/AppDeploy Instance details. On the Icons Shown, you can find the sync option.
 
-  [![Sync_and_patch](./assets/images/Sync-and-Patch.png)](./assets/images/Sync-and-Patch.png)
+  [![Sync_and_patch](./assets/images/sync-and-patch.png)](./assets/images/sync-and-patch.png)

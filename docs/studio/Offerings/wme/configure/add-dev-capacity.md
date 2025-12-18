@@ -5,7 +5,7 @@ sidebar_label: "Add Developer Capacity"
 ---
 
 Once you have Launched Instances, Initialized, Set up and configured the WME, it is time for the developers to log in and build apps. For this, you need to add developer and deployment infrastructure capacity by adding instances.
-If not setup StudioWorkspace Instance / AppDeployment Instance ,[launch Instance with the required prerequisites](/docs/studio/Offerings/wme/getting-started/prerequisites)
+If not setup StudioWorkspace Instance / AppDeployment Instance ,[launch Instance with the required prerequisites](/docs/studio/offerings/wme/getting-started/prerequisites)
 
 Every User is allocated with one container. The infrastructure adding here will be used for this allocation.
 
@@ -36,7 +36,7 @@ Ssh credentials of the Instance either should have root privliges or provide req
         echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>  (for ubuntu)
         ```
 
-[![wme instance](./assets/images/WME_instance.png)](./assets/images/WME_instance.png)
+[![wme instance](./assets/images/wme-instance.png)](./assets/images/wme-instance.png)
 
 ## Add Capacity to Developer Workspace
 

@@ -48,7 +48,7 @@ From the Database Workspace, you can:
 
 A short video in this section walks through the Database Workspace UI and explains how developers can visually interact with their database.
 
-Learn more: [Database Workspace](../../../studio/Workspaces/database_workspace.md)
+Learn more: [Database Workspace](../../../studio/workspaces/database-workspace.md)
 
 ## Automatic API Generation
 
@@ -61,7 +61,7 @@ Once a database is connected, WaveMaker can automatically generate CRUD APIs for
 
 This significantly reduces backend development effort while maintaining consistency and reliability.
 
-Learn more: [API Workspace](../../../studio/Workspaces/api_workspace.md)
+Learn more: [API Workspace](../../../studio/workspaces/api-workspace.md)
 
 ![alt text](image.png)
 
@@ -77,7 +77,7 @@ In addition to standard CRUD operations, WaveMaker enables you to extend data ac
 
 These extensions are exposed as APIs, just like generated CRUD services, allowing reuse while maintaining a clean separation of concerns.
 
-For more details, refer to [Queries and Procedures](./queries_and_procedures.md)  which explain how to define and manage advanced database logic.
+For more details, refer to [Queries and Procedures](./queries-and-procedures.md)  which explain how to define and manage advanced database logic.
 
 ## Source Code Transparency and Control
 
@@ -102,15 +102,15 @@ WaveMaker generates source code for CRUD operations for each entity in the datab
 | **POJOs (Model Layer)** | Represents database entities with fields and annotations, used by service and DAO layers. |
 | **Design-time Configuration Files** | Stores metadata for database connections, API specifications, queries, procedures, and schema information. |
 
-<!-- Learn more: [VCS Workspace](../../../studio/Workspaces/vcs_workspace.md) -->
+<!-- Learn more: [VCS Workspace](../../../studio/workspaces/vcs-workspace.md) -->
 
 
-For more details, refer to [Wavemaker Generated Backend Architecture](orm_artifacts.md) which explain how to define and manage advanced database logic. 
+For more details, refer to [Wavemaker Generated Backend Architecture](orm-artifacts.md) which explain how to define and manage advanced database logic. 
 
 
 
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](image1.png)
+![alt text](image2.png)
 
 
 ## Summary
@@ -127,5 +127,5 @@ This enables teams to build data-driven applications quickly while retaining the
 
 ## Related Documentation
 
-- [ORM Artifacts](./orm_artifacts.md) - Understanding generated ORM artifacts
-- [Queries and Procedures](./queries_and_procedures.md) - Custom queries and stored procedures
+- [ORM Artifacts](./orm-artifacts.md) - Understanding generated ORM artifacts
+- [Queries and Procedures](./queries-and-procedures.md) - Custom queries and stored procedures

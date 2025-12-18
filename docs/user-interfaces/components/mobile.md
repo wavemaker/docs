@@ -587,5 +587,5 @@ test('button fires onPress', () => {
 ## Related Documentation
 
 - [Web Components](./web.md) - Web component development
-- [Responsive Design](../Develop/Responsive%20Design.md) - Responsive design patterns
-- [State Management](../Develop/State%20Management.md) - State management in mobile apps
+- [Responsive Design](../develop/responsive-design.md) - Responsive design patterns
+- [State Management](../develop/state-management.md) - State management in mobile apps

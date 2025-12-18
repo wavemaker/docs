@@ -584,7 +584,7 @@ if (impact.overhead > 5) {
 
 ## Related Documentation
 
-- [Flipper, Expo, Dev tools...](../Community%20Debugging%20Tools/Flipper,%20Expo,%20Dev%20tools.md)
-- [UI Testing Web](../Testing%20Strategies/UI%20Testing%20Web.md)
-- [UI Testing Mobile](../Testing%20Strategies/UI%20Testing%20Mobile.md)
-- [State Management](../../Develop/State%20Management.md)
+- [Flipper, Expo, Dev tools...](../community-debugging-tools/flipper-expo-dev-tools.md)
+- [UI Testing Web](../testing-strategies/ui-testing-web.md)
+- [UI Testing Mobile](../testing-strategies/ui-testing-mobile.md)
+- [State Management](../../develop/state-management.md)

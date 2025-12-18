@@ -20,11 +20,11 @@ This documentation covers:
 
 ## Key Sections
 
-### [Concept](./Concept/What%20is%20it.md)
+### [Concept](./concept/what-is-it.md)
 
 Fundamental concepts and understanding of agent-based development:
 
-#### [What is it?](./Concept/What%20is%20it.md)
+#### [What is it?](./concept/what-is-it.md)
 Learn about developing with agents and how AI assistants enhance the software development process:
 - What are development agents
 - Key capabilities and features
@@ -32,7 +32,7 @@ Learn about developing with agents and how AI assistants enhance the software de
 - Development workflow
 - Best practices
 
-#### [How it is different from Vibe Coding?](./Concept/How%20it%20is%20different%20from%20Vibe%20Coding.md)
+#### [How it is different from Vibe Coding?](./concept/how-it-is-different-from-vibe-coding.md)
 Understand the differences between agent-based development and traditional low-code/no-code approaches:
 - Development approach comparison
 - Flexibility and control
@@ -40,11 +40,11 @@ Understand the differences between agent-based development and traditional low-c
 - Complexity handling
 - Use case recommendations
 
-### [AIRA](./AIRA/Agentic%20Mode.md)
+### [AIRA](./aira/agentic-mode.md)
 
 AI-powered development assistant platform:
 
-#### [Agentic Mode](./AIRA/Agentic%20Mode.md)
+#### [Agentic Mode](./aira/agentic-mode.md)
 Explore AIRA's autonomous development mode:
 - Autonomous task execution
 - Multi-step planning
@@ -52,7 +52,7 @@ Explore AIRA's autonomous development mode:
 - Error recovery
 - Configuration options
 
-#### [List of Agents](./AIRA/List%20of%20Agents.md)
+#### [List of Agents](./aira/list-of-agents.md)
 Comprehensive catalog of specialized agents:
 - Core development agents
 - Specialized domain agents
@@ -65,13 +65,13 @@ Comprehensive catalog of specialized agents:
 ### For New Developers
 
 1. **Learn the Basics**
-   - Read [What is it?](./Concept/What%20is%20it.md) to understand agent-based development
-   - Explore [How it is different from Vibe Coding?](./Concept/How%20it%20is%20different%20from%20Vibe%20Coding.md)
+   - Read [What is it?](./concept/what-is-it.md) to understand agent-based development
+   - Explore [How it is different from Vibe Coding?](./concept/how-it-is-different-from-vibe-coding.md)
    - Review fundamental concepts
 
 2. **Explore AIRA**
-   - Understand [Agentic Mode](./AIRA/Agentic%20Mode.md)
-   - Browse the [List of Agents](./AIRA/List%20of%20Agents.md)
+   - Understand [Agentic Mode](./aira/agentic-mode.md)
+   - Browse the [List of Agents](./aira/list-of-agents.md)
    - Try simple tasks first
 
 3. **Start Building**
@@ -83,7 +83,7 @@ Comprehensive catalog of specialized agents:
 ### For Experienced Developers
 
 1. **Advanced Features**
-   - Master [Agentic Mode](./AIRA/Agentic%20Mode.md) capabilities
+   - Master [Agentic Mode](./aira/agentic-mode.md) capabilities
    - Leverage specialized agents effectively
    - Optimize agent collaboration
    - Integrate into existing workflows
@@ -426,9 +426,9 @@ Offers more flexibility than visual development tools:
 
 ### Immediate Actions
 
-1. Read [What is it?](./Concept/What%20is%20it.md) for foundational understanding
-2. Explore [Agentic Mode](./AIRA/Agentic%20Mode.md) capabilities
-3. Review [List of Agents](./AIRA/List%20of%20Agents.md) to find the right tools
+1. Read [What is it?](./concept/what-is-it.md) for foundational understanding
+2. Explore [Agentic Mode](./aira/agentic-mode.md) capabilities
+3. Review [List of Agents](./aira/list-of-agents.md) to find the right tools
 4. Start with a simple task to experience agent-based development
 
 ### Long-Term Goals
@@ -441,6 +441,6 @@ Offers more flexibility than visual development tools:
 ## Related Documentation
 
 - [Design System](../design-system/overview.md) - Design system documentation
-- [Build and Deploy](../build_and_deploy/overview.md) - Build and deployment strategies
-- [APIs and Services](../apis_and_services/Concepts/overview.md) - API development guidance
+- [Build and Deploy](../build-and-deploy/overview.md) - Build and deployment strategies
+- [APIs and Services](../apis-and-services/concepts/overview.md) - API development guidance
 - [Studio](../studio/overview.md) - Development platform overview

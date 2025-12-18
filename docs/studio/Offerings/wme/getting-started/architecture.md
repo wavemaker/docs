@@ -18,7 +18,7 @@ WaveMaker On-Premise Platform consists of multiple internal services to run Wave
 
 Platform Containers work to make calls to the Docker engine to perform operations like starting a new user container, starting or stopping a container, and more.
 
-![vm architecture](./assets/images/vm_arch.png)
+![vm architecture](./assets/images/vm-arch.png)
 
 ### StudioWorkspace Instance
 

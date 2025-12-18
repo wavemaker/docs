@@ -481,6 +481,6 @@ border-radius: 4px;
 
 ## Related Documentation
 
-- [Style Workspace](./style_workspace.md)
-- [API Workspace](./api_workspace.md)
-- [Database Workspace](./database_workspace.md)
+- [Style Workspace](./style-workspace.md)
+- [API Workspace](./api-workspace.md)
+- [Database Workspace](./database-workspace.md)

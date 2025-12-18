@@ -559,6 +559,6 @@ DROP INDEX idx_country ON users;
 
 ## Related Documentation
 
-- [API Workspace](./api_workspace.md)
-- [Security Workspace](./security_workspace.md)
-- [VCS Workspace](./vcs_workspace.md)
+- [API Workspace](./api-workspace.md)
+- [Security Workspace](./security-workspace.md)
+- [VCS Workspace](./vcs-workspace.md)

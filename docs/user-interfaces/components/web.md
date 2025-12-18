@@ -448,5 +448,5 @@ export default {
 ## Related Documentation
 
 - [Mobile Components](./mobile.md) - Mobile component development
-- [Styling with Design Tokens](../Develop/Styling%20with%20Design%20Tokens.md) - Design token usage
-- [State Management](../Develop/State%20Management.md) - State management patterns
+- [Styling with Design Tokens](../develop/styling-with-design-tokens.md) - Design token usage
+- [State Management](../develop/state-management.md) - State management patterns

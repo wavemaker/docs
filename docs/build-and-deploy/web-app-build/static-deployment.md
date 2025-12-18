@@ -579,6 +579,6 @@ jobs:
 
 ## Related Documentation
 
-- [Build Options](./built_options.md)
-- [WAR Deployment](./war_deployment.md)
-- [Container Deployment](../Deployment-CI_CD/container_deployment.md)
+- [Build Options](./built-options.md)
+- [WAR Deployment](./war-deployment.md)
+- [Container Deployment](../deployment-cicd/container-deployment.md)

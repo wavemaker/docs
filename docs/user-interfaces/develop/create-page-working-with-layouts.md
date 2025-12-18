@@ -456,6 +456,6 @@ const ComplexPage = () => {
 
 ## Related Documentation
 
-- [Styling with Design Tokens](./Styling%20with%20Design%20Tokens.md) - Token-based styling
-- [Responsive Design](./Responsive%20Design.md) - Responsive design strategies
-- [UI Event handling](./UI%20Event%20handling.md) - Event handling patterns
+- [Styling with Design Tokens](./styling-with-design-tokens.md) - Token-based styling
+- [Responsive Design](./responsive-design.md) - Responsive design strategies
+- [UI Event handling](./ui-event-handling.md) - Event handling patterns

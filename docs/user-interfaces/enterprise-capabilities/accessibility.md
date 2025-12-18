@@ -793,7 +793,7 @@ button {
 
 ## Related Documentation
 
-- [Role based Access Control](./Role%20based%20Access%20Control.md)
-- [Language Support i18n](./Language%20Support%20i18n.md)
-- [UI Event handling](../Develop/UI%20Event%20handling.md)
-- [Input validations](../Develop/Input%20validations.md)
+- [Role based Access Control](./role-based-access-control.md)
+- [Language Support i18n](./language-support-i18n.md)
+- [UI Event handling](../develop/ui-event-handling.md)
+- [Input validations](../develop/input-validations.md)

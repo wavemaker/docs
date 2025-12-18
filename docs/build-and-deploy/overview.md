@@ -45,23 +45,23 @@ Deployment is the process of releasing built applications to target environments
 
 ### Web Application Build & Deploy
 
-#### [Web App-Build](Web%20App-Build/built_options.md)
+#### [Web App-Build](web-app-build/built-options.md)
 Learn about building web applications with various configurations and output formats.
 
 **Topics Covered:**
-- [Build Options](Web%20App-Build/built_options.md)
+- [Build Options](web-app-build/built-options.md)
   - Development vs Production builds
   - Bundle optimization
   - Code splitting and minification
   - Environment-specific configurations
 
-- [WAR Deployment](Web%20App-Build/war_deployment.md)
+- [WAR Deployment](web-app-build/war-deployment.md)
   - Java web application archives
   - Servlet container deployment
   - Tomcat, JBoss, WebLogic, Jetty
   - Configuration management
 
-- [Static Content Deployment](Web%20App-Build/static_deployment.md)
+- [Static Content Deployment](web-app-build/static-deployment.md)
   - SPA and JAMstack deployment
   - CDN integration
   - Cloud platforms (S3, Netlify, Vercel)
@@ -69,23 +69,23 @@ Learn about building web applications with various configurations and output for
 
 ### Mobile Application Build & Publish
 
-#### [Mobile App-Build & Publish](Mobile%20App-Build%20&%20Publish/mobile_overview.md)
+#### [Mobile App-Build & Publish](mobile-app-build-and-publish/mobile-overview.md)
 Complete guide to building and publishing iOS and Android applications.
 
 **Topics Covered:**
-- [Mobile Overview](Mobile%20App-Build%20&%20Publish/mobile_overview.md)
+- [Mobile Overview](mobile-app-build-and-publish/mobile-overview.md)
   - Native, hybrid, and cross-platform apps
   - iOS and Android build processes
   - Code signing and certificates
   - Version management
 
-- [AppChef & CLI Tools](Mobile%20App-Build%20&%20Publish/appchef_cli.md)
+- [AppChef & CLI Tools](mobile-app-build-and-publish/appchef-cli.md)
   - AppChef cloud build platform
   - React Native, Flutter, Ionic CLI
   - Fastlane automation
   - Certificate management
 
-- [Public App Stores](Mobile%20App-Build%20&%20Publish/app_stores.md)
+- [Public App Stores](mobile-app-build-and-publish/app-stores.md)
   - Apple App Store submission
   - Google Play Store publishing
   - App review process
@@ -93,23 +93,23 @@ Complete guide to building and publishing iOS and Android applications.
 
 ### Deployment & CI/CD
 
-#### [Deployment-CI/CD](Deployment-CI_CD/one_click_deployment.md)
+#### [Deployment-CI/CD](deployment-cicd/one-click-deployment.md)
 Modern deployment strategies and continuous integration/delivery pipelines.
 
 **Topics Covered:**
-- [One-Click Deployment](Deployment-CI_CD/one_click_deployment.md)
+- [One-Click Deployment](deployment-cicd/one-click-deployment.md)
   - Heroku, Vercel, Netlify
   - AWS Elastic Beanstalk
   - Azure App Service
   - Automated deployment workflows
 
-- [Container & Cloud Deployment](Deployment-CI_CD/container_deployment.md)
+- [Container & Cloud Deployment](deployment-cicd/container-deployment.md)
   - Docker containerization
   - AWS ECS, Google Cloud Run, Azure ACI
   - Docker Compose orchestration
   - Private infrastructure deployment
 
-- [Kubernetes Deployment](Deployment-CI_CD/kubernetes_deployment.md)
+- [Kubernetes Deployment](deployment-cicd/kubernetes-deployment.md)
   - Kubernetes fundamentals
   - Deployments, Services, Ingress
   - Helm charts
@@ -385,21 +385,21 @@ DEBUG=false
 ## Getting Started
 
 ### For Web Applications
-1. Review [Build Options](Web%20App-Build/built_options.md)
+1. Review [Build Options](web-app-build/built-options.md)
 2. Choose deployment target
 3. Configure build process
 4. Set up CI/CD pipeline
 5. Deploy and monitor
 
 ### For Mobile Applications
-1. Review [Mobile Overview](Mobile%20App-Build%20&%20Publish/mobile_overview.md)
+1. Review [Mobile Overview](mobile-app-build-and-publish/mobile-overview.md)
 2. Set up build environment
 3. Configure app signing
 4. Build and test locally
 5. Submit to app stores
 
 ### For Containerized Applications
-1. Review [Container Deployment](Deployment-CI_CD/container_deployment.md)
+1. Review [Container Deployment](deployment-cicd/container-deployment.md)
 2. Create Dockerfile
 3. Build and test image
 4. Choose orchestration platform
@@ -418,6 +418,6 @@ DEBUG=false
 
 ## Related Documentation
 
-- [Architecture](../apis_and_services/Concepts/architecture.md) - System architecture overview
-- [Security](../apis_and_services/Security/overview.md) - Security best practices
-- [Testing And Debugging](../apis_and_services/Testing%20And%20Debugging/Unit%20Testing/integrate_junit_tests.md) - Testing strategies
+- [Architecture](../apis-and-services/concepts/architecture.md) - System architecture overview
+- [Security](../apis-and-services/security/overview.md) - Security best practices
+- [Testing And Debugging](../apis-and-services/testing-and-debugging/unit-testing/integrate-junit-tests.md) - Testing strategies

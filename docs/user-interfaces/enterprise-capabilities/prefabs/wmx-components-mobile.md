@@ -871,7 +871,7 @@ test('swipeable item responds to swipe', () => {
 
 ## Related Documentation
 
-- [Prefabs](../Prefabs.md) - Pre-built component templates
-- [Role based Access Control](../Role%20based%20Access%20Control.md)
-- [Accessibility](../Accessibility.md)
-- [Responsive Design](../../Develop/Responsive%20Design.md)
+- [Prefabs](../prefabs.md) - Pre-built component templates
+- [Role based Access Control](../role-based-access-control.md)
+- [Accessibility](../accessibility.md)
+- [Responsive Design](../../develop/responsive-design.md)

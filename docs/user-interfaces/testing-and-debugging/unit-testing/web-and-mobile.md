@@ -739,7 +739,7 @@ jobs:
 
 ## Related Documentation
 
-- [UI Testing Web](../Testing%20Strategies/UI%20Testing%20Web.md)
-- [UI Testing Mobile](../Testing%20Strategies/UI%20Testing%20Mobile.md)
-- [Wave Pulse, Inspection frameworks](../WM%20Debugging%20Tools/Wave%20Pulse,%20Inspection%20frameworks.md)
-- [State Management](../../Develop/State%20Management.md)
+- [UI Testing Web](../testing-strategies/ui-testing-web.md)
+- [UI Testing Mobile](../testing-strategies/ui-testing-mobile.md)
+- [Wave Pulse, Inspection frameworks](../wm-debugging-tools/wave-pulse-inspection-frameworks.md)
+- [State Management](../../develop/state-management.md)

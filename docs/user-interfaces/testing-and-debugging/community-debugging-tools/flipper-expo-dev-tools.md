@@ -705,6 +705,6 @@ Install these helpful extensions:
 
 ## Related Documentation
 
-- [Wave Pulse, Inspection frameworks](../WM%20Debugging%20Tools/Wave%20Pulse,%20Inspection%20frameworks.md)
-- [UI Testing Web](../Testing%20Strategies/UI%20Testing%20Web.md)
-- [UI Testing Mobile](../Testing%20Strategies/UI%20Testing%20Mobile.md)
+- [Wave Pulse, Inspection frameworks](../wm-debugging-tools/wave-pulse-inspection-frameworks.md)
+- [UI Testing Web](../testing-strategies/ui-testing-web.md)
+- [UI Testing Mobile](../testing-strategies/ui-testing-mobile.md)

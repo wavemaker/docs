@@ -453,6 +453,6 @@ end
 
 ## Related Documentation
 
-- [AppChef & CLI](./appchef_cli.md)
-- [Public App Stores](./app_stores.md)
-- [CI/CD Deployment](../Deployment-CI_CD/one_click_deployment.md)
+- [AppChef & CLI](./appchef-cli.md)
+- [Public App Stores](./app-stores.md)
+- [CI/CD Deployment](../deployment-cicd/one-click-deployment.md)

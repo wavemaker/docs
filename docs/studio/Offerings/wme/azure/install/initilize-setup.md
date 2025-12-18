@@ -8,7 +8,7 @@ sidebar_label: "Initialize Setup"
 
 - WaveMaker platform requires a user; the user should have access to SSH to communicate between Platform, Studioworkspace, and AppDeployment instances, and for creating Docker containers.
 - For WME setup, you can provide your own user with fine-grained access or WaveMaker will create a user called `wavemaker` with its auto-generated keys.
-- If you want to provide your own user, create a user with specified [prerequisites](/docs/studio/Offerings/wme/getting-started/prerequisites) and ensure that the user has SSH access.
+- If you want to provide your own user, create a user with specified [prerequisites](/docs/studio/offerings/wme/getting-started/prerequisites) and ensure that the user has SSH access.
 
 ### Running WME Installer
 
@@ -19,7 +19,7 @@ sidebar_label: "Initialize Setup"
 ```
 
 
-- To configure SSL for platform please refer [ssl configuration for platform](/docs/studio/Offerings/wme/configure/config-ssl)
+- To configure SSL for platform please refer [ssl configuration for platform](/docs/studio/offerings/wme/configure/config-ssl)
 
 - When prompted, enter the interface name. For example, eth0, ens5; and confirm the IP Address.
 - Provide the CIDR (Classless Inter-Domain Routing) range; CIDR is a network range allocation to a particular network address; it will tell you how many network IP addresses are available in a given network.

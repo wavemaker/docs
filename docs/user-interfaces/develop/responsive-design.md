@@ -77,5 +77,5 @@ const breakpoints = {
 
 ## Related Documentation
 
-- [Create Page, working with Layouts](./Create%20Page,%20working%20with%20Layouts.md)
-- [Styling with Design Tokens](./Styling%20with%20Design%20Tokens.md)
+- [Create Page, working with Layouts](./create-page-working-with-layouts.md)
+- [Styling with Design Tokens](./styling-with-design-tokens.md)

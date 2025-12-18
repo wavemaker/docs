@@ -713,6 +713,6 @@ e2e/
 
 ## Related Documentation
 
-- [UI Testing Web](./UI%20Testing%20Web.md)
-- [Web & Mobile](../Unit%20Testing/Web%20&%20Mobile.md)
-- [Flipper, Expo, Dev tools...](../Community%20Debugging%20Tools/Flipper,%20Expo,%20Dev%20tools.md)
+- [UI Testing Web](./ui-testing-web.md)
+- [Web & Mobile](../unit-testing/web-and-mobile.md)
+- [Flipper, Expo, Dev tools...](../community-debugging-tools/flipper-expo-dev-tools.md)

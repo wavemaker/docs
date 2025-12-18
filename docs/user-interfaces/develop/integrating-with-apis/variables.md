@@ -354,6 +354,6 @@ const useDynamicConfig = () => {
 
 ## Related Documentation
 
-- [Life Cycle Hooks](./Life%20Cycle%20Hooks.md)
-- [Types](./Types.md)
-- [State Management](../State%20Management.md)
+- [Life Cycle Hooks](./life-cycle-hooks.md)
+- [Types](./types.md)
+- [State Management](../state-management.md)

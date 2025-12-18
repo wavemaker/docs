@@ -383,6 +383,6 @@ Test all variant combinations to ensure:
 
 ## Related Documentation
 
-- [Design Tokens](./Design%20Tokens.md) - Design token system
-- [Designing Best Practices](./Designing%20Best%20Practices.md) - Design system best practices
+- [Design Tokens](./design-tokens.md) - Design token system
+- [Designing Best Practices](./designing-best-practices.md) - Design system best practices
 - [Design System Overview](../overview.md) - Design system overview

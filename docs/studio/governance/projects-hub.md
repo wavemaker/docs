@@ -320,6 +320,6 @@ Projects
 
 ## Related Documentation
 
-- [Team Portal](./team_portal.md)
-- [App Portal](./app_portal.md)
-- [WME Variant](../Offerings/wme.md)
+- [Team Portal](./team-portal.md)
+- [App Portal](./app-portal.md)
+- [WME Variant](../offerings/wme.md)

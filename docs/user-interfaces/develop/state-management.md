@@ -190,6 +190,6 @@ const usePersistedState = (key, initialValue) => {
 
 ## Related Documentation
 
-- [UI Event handling](./UI%20Event%20handling.md)
-- [Input validations](./Input%20validations.md)
-- [Create Page, working with Layouts](./Create%20Page,%20working%20with%20Layouts.md)
+- [UI Event handling](./ui-event-handling.md)
+- [Input validations](./input-validations.md)
+- [Create Page, working with Layouts](./create-page-working-with-layouts.md)

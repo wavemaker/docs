@@ -44,7 +44,7 @@ sidebar_label: "Prepare Infrastructure"
 
 [![ports internal](./assets/images/nsg-platform-internal-rule.png)](./assets/images/nsg-platform-internal-rule.png)
 
-### Creation of network security group for Workspace/AppDeployment virtual machine
+### Creation of network security group for Workspace/AppDeployment virtual machine {#creation-of-network-security-group-for-external-virtual-machine}
 
 - Provide necessary information, including name and region, by selecting the resource group.
 
@@ -268,5 +268,5 @@ UUID=your-block-device-UUID      /data     ext4     defaults ,nofail  0  2
 
 ## What's next
 
-- Install [prerequisites softwares](/docs/studio/Offerings/wme/azure/install-prerequisites) based on OS.
+- Install [prerequisites softwares](/docs/studio/offerings/wme/azure/install-prerequisites) based on OS.
 - Start WME Installation process

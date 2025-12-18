@@ -71,5 +71,5 @@ const SearchInput = () => {
 
 ## Related Documentation
 
-- [Input validations](./Input%20validations.md)
-- [State Management](./State%20Management.md)
+- [Input validations](./input-validations.md)
+- [State Management](./state-management.md)

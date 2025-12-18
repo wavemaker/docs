@@ -434,6 +434,6 @@ jar -tf myapp.war | grep .class
 
 ## Related Documentation
 
-- [Build Options](./built_options.md)
-- [CI/CD Deployment](../Deployment-CI_CD/one_click_deployment.md)
-- [Container Deployment](../Deployment-CI_CD/container_deployment.md)
+- [Build Options](./built-options.md)
+- [CI/CD Deployment](../deployment-cicd/one-click-deployment.md)
+- [Container Deployment](../deployment-cicd/container-deployment.md)

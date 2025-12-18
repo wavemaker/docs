@@ -387,6 +387,6 @@ The key is understanding your requirements, team capabilities, and long-term goa
 
 ## Related Documentation
 
-- [What is it?](./What%20is%20it.md) - Introduction to developing with agents
-- [Agentic Mode](../AIRA/Agentic%20Mode.md) - AIRA's autonomous development mode
-- [List of Agents](../AIRA/List%20of%20Agents.md) - Available specialized agents
+- [What is it?](./what-is-it.md) - Introduction to developing with agents
+- [Agentic Mode](../aira/agentic-mode.md) - AIRA's autonomous development mode
+- [List of Agents](../aira/list-of-agents.md) - Available specialized agents

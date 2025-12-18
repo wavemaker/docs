@@ -40,7 +40,7 @@ sidebar_label: "Run Patch"
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh
 ```
 
-- To make https work, You need to add SSL certificates to Platform or router/dns level while configuring the setup using ConfigWizard after the Ugrade process completes in terminal, to add SSL certificates please refer [ssl configuration for platform](/docs/studio/Offerings/wme/configure/config-ssl).
+- To make https work, You need to add SSL certificates to Platform or router/dns level while configuring the setup using ConfigWizard after the Ugrade process completes in terminal, to add SSL certificates please refer [ssl configuration for platform](/docs/studio/offerings/wme/configure/config-ssl).
 
 
 [![upgrading-wme](./assets/images/wme-patch-process.png)](./assets/images/wme-patch-process.png)
@@ -79,7 +79,7 @@ sidebar_label: "Run Patch"
 
 - Check all User WorkspaceInstance/AppDeployment Instances status in Launchpad.
 - You can start working on Studio once the Instance status has started.
-- If the Instance status UPGRADE_FAILED, then there might be chances of docker version mismatch. You can upgrade docker version using [Manual Docker Upgrade](/docs/studio/Offerings/wme/upgrade/docker-upgrade).
+- If the Instance status UPGRADE_FAILED, then there might be chances of docker version mismatch. You can upgrade docker version using [Manual Docker Upgrade](/docs/studio/offerings/wme/upgrade/docker-upgrade).
 - Please upgrade the Docker version if it is older than 20.10.12 in your User WorkspaceInstance/AppDeployment Instances.
 
 ## Running the patch by skipping Gitlab Migration

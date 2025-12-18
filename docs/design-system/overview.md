@@ -12,11 +12,11 @@ A design system is a collection of reusable components, guidelines, and standard
 
 ## Key Components
 
-### [Concept](./Concept/Design%20Tokens.md)
+### [Concept](./concept/design-tokens.md)
 Fundamental design system concepts and principles:
-- [Design Tokens](./Concept/Design%20Tokens.md) - Design decision variables
-- [Component Variants](./Concept/Component%20Variants.md) - Component variations and patterns
-- [Designing Best Practices](./Concept/Designing%20Best%20Practices.md) - Best practices for design systems
+- [Design Tokens](./concept/design-tokens.md) - Design decision variables
+- [Component Variants](./concept/component-variants.md) - Component variations and patterns
+- [Designing Best Practices](./concept/designing-best-practices.md) - Best practices for design systems
 
 ### UI KIT
 Comprehensive UI component library:
@@ -32,9 +32,9 @@ Automated code generation tools:
 - IDE plugins and integrations
 - Template generation
 
-### [Design System based UI Development](./Design%20System%20based%20UI%20Development/Style%20workspace.md)
+### [Design System based UI Development](./design-system-based-ui-development/style-workspace.md)
 Implementation and development guides:
-- [Style Workspace](./Design%20System%20based%20UI%20Development/Style%20workspace.md) - Styling tools and approaches
+- [Style Workspace](./design-system-based-ui-development/style-workspace.md) - Styling tools and approaches
 - Component development patterns
 - Layout and responsive design
 - Theme management
@@ -86,15 +86,15 @@ Optimize for fast load times and smooth interactions.
 ## Getting Started
 
 ### For Designers
-1. Review [Concept](./Concept/Design%20Tokens.md) documentation
+1. Review [Concept](./concept/design-tokens.md) documentation
 2. Explore the UI KIT component library
-3. Study [Designing Best Practices](./Concept/Designing%20Best%20Practices.md)
+3. Study [Designing Best Practices](./concept/designing-best-practices.md)
 4. Access design files and assets
 5. Follow contribution guidelines
 
 ### For Developers
 1. Install the design system package
-2. Review [Design System based UI Development](./Design%20System%20based%20UI%20Development/Style%20workspace.md)
+2. Review [Design System based UI Development](./design-system-based-ui-development/style-workspace.md)
 3. Explore platform-specific components
 4. Check out the AutoCode Plugin for automation
 5. Start building with components
@@ -284,5 +284,5 @@ The design system supports multiple themes:
 
 ## Related Documentation
 
-- [Build and Deploy](../build_and_deploy/overview.md) - Build and deployment strategies
-- [Testing and Debugging](../apis_and_services/Testing%20And%20Debugging/Unit%20Testing/integrate_junit_tests.md) - Testing strategies
+- [Build and Deploy](../build-and-deploy/overview.md) - Build and deployment strategies
+- [Testing and Debugging](../apis-and-services/testing-and-debugging/unit-testing/integrate-junit-tests.md) - Testing strategies

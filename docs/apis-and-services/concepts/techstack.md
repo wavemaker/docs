@@ -717,4 +717,4 @@ pipeline {
 
 - [Overview](./overview.md) - Concepts overview
 - [Architecture](./architecture.md) - Architectural patterns
-- [Security](../Security/overview.md) - Security practices
+- [Security](../security/overview.md) - Security practices

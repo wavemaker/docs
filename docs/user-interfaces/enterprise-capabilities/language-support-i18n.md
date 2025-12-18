@@ -744,7 +744,7 @@ const downloadTranslations = async () => {
 
 ## Related Documentation
 
-- [Role based Access Control](./Role%20based%20Access%20Control.md)
-- [Accessibility](./Accessibility.md)
-- [State Management](../Develop/State%20Management.md)
-- [UI Event handling](../Develop/UI%20Event%20handling.md)
+- [Role based Access Control](./role-based-access-control.md)
+- [Accessibility](./accessibility.md)
+- [State Management](../develop/state-management.md)
+- [UI Event handling](../develop/ui-event-handling.md)

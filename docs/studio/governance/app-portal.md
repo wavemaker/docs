@@ -453,7 +453,7 @@ backup:
 
 ## Related Documentation
 
-- [Team Portal](./team_portal.md)
-- [Projects Hub](./projects_hub.md)
-- [WME Variant](../Offerings/wme.md)
-- [WMO Variant](../Offerings/wmo.md)
+- [Team Portal](./team-portal.md)
+- [Projects Hub](./projects-hub.md)
+- [WME Variant](../offerings/wme.md)
+- [WMO Variant](../offerings/wmo.md)

@@ -99,4 +99,4 @@ This approach enhances modularity, reusability, and separation of integration lo
 
 ## Related Documentation
 
-- [Building a New Connector](./build_a_connector.md) - Learn how to create custom connectors
+- [Building a New Connector](./build-a-connector.md) - Learn how to create custom connectors

@@ -495,4 +495,4 @@ app.use((req, res, next) => {
 
 - [Overview](./overview.md) - Concepts overview
 - [TechStack](./techstack.md) - Technology stack
-- [Security](../Security/overview.md) - Security best practices
+- [Security](../security/overview.md) - Security best practices

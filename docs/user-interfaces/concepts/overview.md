@@ -566,8 +566,8 @@ To begin building user interfaces:
 
 ## Related Documentation
 
-- [TechStack](./TechStack.md) - Technology stack for UI development
-- [Create Page, working with Layouts](../Develop/Create%20Page,%20working%20with%20Layouts.md) - Page creation
-- [Styling with Design Tokens](../Develop/Styling%20with%20Design%20Tokens.md) - Design system tokens
-- [State Management](../Develop/State%20Management.md) - Managing application state
-- [Responsive Design](../Develop/Responsive%20Design.md) - Building responsive interfaces
+- [TechStack](./tech-stack.md) - Technology stack for UI development
+- [Create Page, working with Layouts](../develop/create-page-working-with-layouts.md) - Page creation
+- [Styling with Design Tokens](../develop/styling-with-design-tokens.md) - Design system tokens
+- [State Management](../develop/state-management.md) - Managing application state
+- [Responsive Design](../develop/responsive-design.md) - Building responsive interfaces

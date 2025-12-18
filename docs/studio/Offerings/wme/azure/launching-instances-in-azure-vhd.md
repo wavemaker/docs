@@ -18,8 +18,7 @@ sidebar_label: "Prepare Infrastructure using VHD"
 - For creating network security groups, see [Creating NSG in Azure](https://docs.microsoft.com/en-us/azure/virtual-network/manage-network-security-group).
 - For WME setup in Azure, it requires two security groups , including:
   - [WME-SG-Platform-Public-and-Internal](#creating-network-security-group-for-platform-virtual-machine)
-  - [WME-SG-Workspace-Internal](#creation-of-network-security-group-for-external-virtual-machine)
-
+  - [WME-SG-Workspace-Internal](#creation-of-network-security-group-for-studio-workspaceapp-deployment-virtual-machine)
 ### Creating Network Security Group for Platform Virtual Machine
 
 - Provide necessary information, including name and region, by selecting the resource group.
@@ -249,5 +248,5 @@ UUID=your-block-device-UUID      /data     ext4     defaults ,nofail  0  2
 
 ## What's next
 
-- Install [prerequisites softwares](/docs/studio/Offerings/wme/azure/install-prerequisites) based on OS.
+- Install [prerequisites softwares](/docs/studio/offerings/wme/azure/install-prerequisites) based on OS.
 - Start WME Installation process

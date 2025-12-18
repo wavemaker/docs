@@ -306,8 +306,8 @@ If (failures > threshold) {
 
 1. **Understand Architecture**: Read [Architecture](./architecture.md) patterns
 2. **Explore Technology**: Check out [TechStack](./techstack.md) options
-3. **Implement Security**: Review [Security](../Security/overview.md) best practices
-4. **Test Your APIs**: Learn [Testing strategies](../Testing%20And%20Debugging/Unit%20Testing/integrate_junit_tests.md)
+3. **Implement Security**: Review [Security](../security/overview.md) best practices
+4. **Test Your APIs**: Learn [Testing strategies](../testing-and-debugging/unit-testing/integrate-junit-tests.md)
 
 ## Resources
 
@@ -331,5 +331,5 @@ If (failures > threshold) {
 
 - [Architecture](./architecture.md) - Architectural patterns
 - [TechStack](./techstack.md) - Technology stack
-- [Security](../Security/overview.md) - Security practices
-- [Testing And Debugging](../Testing%20And%20Debugging/Unit%20Testing/integrate_junit_tests.md) - Testing strategies
+- [Security](../security/overview.md) - Security practices
+- [Testing And Debugging](../testing-and-debugging/unit-testing/integrate-junit-tests.md) - Testing strategies

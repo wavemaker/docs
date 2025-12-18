@@ -817,7 +817,7 @@ return (
 
 ## Related Documentation
 
-- [Adding Plugins](./Adding%20Plugins.md)
-- [Offline Support](./Offline%20Support.md)
-- [WMX Components- Mobile](../Enterprise%20capabilities/Prefabs/WMX%20Components-%20Mobile.md)
-- [Accessibility](../Enterprise%20capabilities/Accessibility.md)
+- [Adding Plugins](./adding-plugins.md)
+- [Offline Support](./offline-support.md)
+- [WMX Components- Mobile](../enterprise-capabilities/prefabs/wmx-components-mobile.md)
+- [Accessibility](../enterprise-capabilities/accessibility.md)

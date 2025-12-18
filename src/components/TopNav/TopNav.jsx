@@ -6,17 +6,17 @@ const topNavData = [
   {
     id: 1,
     label: "User Interface",
-    link: "/docs/user_interfaces/Concepts/Overview",
+    link: "/docs/user-interfaces/concepts/overview",
   },
   {
     id: 2,
     label: "Building API’s & Microservices",
-    link: "/docs/apis_and_services/Concepts/overview",
+    link: "/docs/apis-and-services/concepts/overview",
   },
   {
     id: 3,
     label: "Build & Deploy",
-    link: "/docs/build_and_deploy/overview",
+    link: "/docs/build-and-deploy/overview",
   },
   {
     id: 4,
@@ -26,7 +26,7 @@ const topNavData = [
   {
     id: 5,
     label: "Developing with Agents",
-    link: "/docs/developing_with_agents/overview",
+    link: "/docs/developing-with-agents/overview",
   },
   {
     id: 6,

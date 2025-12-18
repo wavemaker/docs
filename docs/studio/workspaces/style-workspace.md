@@ -642,6 +642,6 @@ body {
 
 ## Related Documentation
 
-- [Design Workspace](./design_canvas.md)
-- [WME Variant](../Offerings/wme.md)
-- [WMO Variant](../Offerings/wmo.md)
+- [Design Workspace](./design-canvas.md)
+- [WME Variant](../offerings/wme.md)
+- [WMO Variant](../offerings/wmo.md)

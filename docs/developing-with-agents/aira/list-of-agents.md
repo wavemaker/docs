@@ -645,6 +645,6 @@ Understand what each agent does best:
 
 ## Related Documentation
 
-- [Agentic Mode](./Agentic%20Mode.md) - Autonomous development mode
-- [What is it?](../Concept/What%20is%20it.md) - Introduction to developing with agents
-- [How it is different from Vibe Coding?](../Concept/How%20it%20is%20different%20from%20Vibe%20Coding.md) - Comparison with other approaches
+- [Agentic Mode](./agentic-mode.md) - Autonomous development mode
+- [What is it?](../concept/what-is-it.md) - Introduction to developing with agents
+- [How it is different from Vibe Coding?](../concept/how-it-is-different-from-vibe-coding.md) - Comparison with other approaches

@@ -22,20 +22,20 @@ WaveMaker Enterprise setup requires you to follow the steps below.
 
 ### Step-1: Understand prerequisites
 
-Understand and procure the [Prerequisites](./prerequisites).
+Understand and procure the [Prerequisites](./prerequisites.md).
 
 ### Step-2: Choose an infrastructure provider
 
 Choose a cloud provider from
 
-1. [AWS](/docs/studio/Offerings/wme/aws/wavemaker-enterprise-setup-on-aws)
-2. [Azure](/docs/studio/Offerings/wme/azure/wavemaker-enterprise-setup-on-azure)
+1. [AWS](/docs/studio/offerings/wme/aws/wavemaker-enterprise-setup-on-aws)
+2. [Azure](/docs/studio/offerings/wme/azure/wavemaker-enterprise-setup-on-azure)
 3. GCP (Follow general prerequisites and installation steps)
 
 Or, choose any on-premise virtualization providers from
 
-1. [VMWare Esxi](/docs/studio/Offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware)
-2. [Hyper-V](/docs/studio/Offerings/wme/hyper-v/wavemaker-enterprise-setup-on-hyperv)
+1. [VMWare Esxi](/docs/studio/offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware)
+2. [Hyper-V](/docs/studio/offerings/wme/hyperv/wavemaker-enterprise-setup-on-hyperv)
 
 Or, you can choose bare-metal or any other option as well.
 

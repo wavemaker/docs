@@ -512,7 +512,7 @@ const useRetryableFetch = (url, maxRetries = 3) => {
 
 ## Related Documentation
 
-- [Variables](./Variables.md)
-- [Types](./Types.md)
-- [State Management](../State%20Management.md)
-- [UI Event handling](../UI%20Event%20handling.md)
+- [Variables](./variables.md)
+- [Types](./types.md)
+- [State Management](../state-management.md)
+- [UI Event handling](../ui-event-handling.md)

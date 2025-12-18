@@ -586,7 +586,7 @@ function fetchProduct(url: string): Promise<Product> {
 
 ## Related Documentation
 
-- [Variables](./Variables.md)
-- [Life Cycle Hooks](./Life%20Cycle%20Hooks.md)
-- [State Management](../State%20Management.md)
-- [Input validations](../Input%20validations.md)
+- [Variables](./variables.md)
+- [Life Cycle Hooks](./life-cycle-hooks.md)
+- [State Management](../state-management.md)
+- [Input validations](../input-validations.md)

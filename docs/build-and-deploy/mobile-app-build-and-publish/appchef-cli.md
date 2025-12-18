@@ -570,6 +570,6 @@ rm -rf ~/.gradle/caches
 
 ## Related Documentation
 
-- [Mobile Overview](./mobile_overview.md)
-- [Public App Stores](./app_stores.md)
-- [CI/CD Deployment](../Deployment-CI_CD/one_click_deployment.md)
+- [Mobile Overview](./mobile-overview.md)
+- [Public App Stores](./app-stores.md)
+- [CI/CD Deployment](../deployment-cicd/one-click-deployment.md)

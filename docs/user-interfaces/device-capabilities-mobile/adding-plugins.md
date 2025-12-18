@@ -739,6 +739,6 @@ xcrun simctl spawn booted log stream --level debug
 
 ## Related Documentation
 
-- [Enabling Gestures](./Enabling%20Gestures.md)
-- [Offline Support](./Offline%20Support.md)
-- [WMX Components- Mobile](../Enterprise%20capabilities/Prefabs/WMX%20Components-%20Mobile.md)
+- [Enabling Gestures](./enabling-gestures.md)
+- [Offline Support](./offline-support.md)
+- [WMX Components- Mobile](../enterprise-capabilities/prefabs/wmx-components-mobile.md)

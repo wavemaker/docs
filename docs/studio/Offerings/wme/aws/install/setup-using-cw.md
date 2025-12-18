@@ -42,7 +42,7 @@ sidebar_label: "Setup Using ConfigPortal"
     - It is required to upload the root and intermediate certificates. 
     - The root certificate is a certificate issued by the recognised organizations.
 
-    [![import-CA-cert](./assets/images/import-CA-cert.png)](./assets/images/import-CA-cert.png)
+    [![import-CA-cert](./assets/images/importca-cert.png)](./assets/images/importca-cert.png)
 
 - To build the application inside a platform with a custom configuration,
     - A Developer can upload their own configured NPM and MAVEN repository config files and this can be useful if the developers uses their own libraries which are hosted into their own secured repository.

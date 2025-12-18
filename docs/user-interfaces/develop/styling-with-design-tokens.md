@@ -482,6 +482,6 @@ const tokensV3 = {
 
 ## Related Documentation
 
-- [Create Page, working with Layouts](./Create%20Page,%20working%20with%20Layouts.md) - Page and layout creation
-- [Responsive Design](./Responsive%20Design.md) - Responsive design strategies
-- [State Management](./State%20Management.md) - Application state management
+- [Create Page, working with Layouts](./create-page-working-with-layouts.md) - Page and layout creation
+- [Responsive Design](./responsive-design.md) - Responsive design strategies
+- [State Management](./state-management.md) - Application state management

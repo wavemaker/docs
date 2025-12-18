@@ -110,5 +110,5 @@ const EmailInput = () => {
 
 ## Related Documentation
 
-- [UI Event handling](./UI%20Event%20handling.md)
-- [State Management](./State%20Management.md)
+- [UI Event handling](./ui-event-handling.md)
+- [State Management](./state-management.md)

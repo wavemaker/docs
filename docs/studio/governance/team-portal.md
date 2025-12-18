@@ -236,6 +236,6 @@ Organization
 
 ## Related Documentation
 
-- [Projects Hub](./projects_hub.md)
-- [App Portal](./app_portal.md)
-- [WME Variant](../Offerings/wme.md)
+- [Projects Hub](./projects-hub.md)
+- [App Portal](./app-portal.md)
+- [WME Variant](../offerings/wme.md)
