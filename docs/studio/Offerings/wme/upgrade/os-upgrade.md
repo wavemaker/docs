@@ -39,11 +39,11 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 - After logging into launchpad in your WME setup go to the Developer Workspace Tab, and then go to the container as shown in the below image
 - Select the containers that are running, hibernate those containers one after the other by hitting the stop button as shown in the image below, and wait till the state is changed to stop.
   
-  [![instances_verification](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)](/learn/assets/wme-setup/upgrade-wme-setup/instances_verification.png)
+  [![instances_verification](./assets/images/instances_verification.png)](./assets/images/instances_verification.png)
 
 - Go to Developer Workspace, and then go to capacity as shown in the below image
   
-  [![developer_workspace](/learn/assets/wme-setup/upgrade-wme-setup/developer_workspace.png)](/learn/assets/wme-setup/upgrade-wme-setup/developer_workspace.png)
+  [![developer_workspace](./assets/images/developer_workspace.png)](./assets/images/developer_workspace.png)
   
 - Here select all the StudioWorkspace Instances one by one and do the below operations.
 
@@ -53,7 +53,7 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 
 - After making sure all containers are passivated come back to capacity and select one by one Instances by clicking the   ***":"***  icon and hit the delete icon as shown below, this will delete the Instance from setup.
   
-  [![delete_instances](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)](/learn/assets/wme-setup/upgrade-wme-setup/delete_instances.png)
+  [![delete_instances](./assets/images/delete_instances.png)](./assets/images/delete_instances.png)
 
 - After completed the above process in Developer Workspace, go to AppDeployments, and perform the same operation mentioned above in all AppDeployment Instances(Demo, Stage, Live)
 
@@ -69,11 +69,11 @@ Below is the guide for upgrading the Operating system in the WME running Instanc
 
     - Login into the CW portal, after login in home page you can see settings icon on the top right as marked below.
     
-    [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop-settings.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop-settings.png)    
+    [![cw_stop](./assets/images/cw-stop-settings.png)](./assets/images/cw-stop-settings.png)    
     
     - Click on Stop Installation button as shown in the image below, hit to stop the WME setup.
 
-    [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)
+    [![cw_stop](./assets/images/cw-stop.png)](./assets/images/cw-stop.png)
 
     - From here also,  you can start the CW process, can be perform Sync and Cleanup Operations.
 
@@ -187,7 +187,7 @@ UUID=</wm-data block-device-UUID>  /wm-data   ext4   defaults ,nofail  0  2
 bash wme-installer.sh --data-untar
 ```  
 
-[![data_untar](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)
+[![data_untar](./assets/images/data-un-tar.png)](./assets/images/data-un-tar.png)
 
 #### Launch WME StudioWorkspace Instance/AppDeployment Instances
 

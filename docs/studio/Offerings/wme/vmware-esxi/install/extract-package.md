@@ -25,7 +25,7 @@ sidebar_label: "Extract Package"
       ```
       
        
-[![extract package](/learn/assets/wme-setup/download-and-extract-package.png)](/learn/assets/wme-setup/download-and-extract-package.png)
+[![extract package](./assets/images/download-and-extract-package.png)](./assets/images/download-and-extract-package.png)
 
 
 

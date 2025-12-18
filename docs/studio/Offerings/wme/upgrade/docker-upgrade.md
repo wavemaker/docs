@@ -210,6 +210,6 @@ Upgrade or Install the latest version of Docker.
 - You can also apply the Sync or Patch using the Launchpad. To Apply, go to the Launchpad and Navigate to the Developer Workspace or App Deployements.
 - On the Capacity, you can see the Workspace/AppDeploy Instance details. On the Icons Shown, you can find the patch and the sync option.
 
-  [![Sync_and_patch](/learn/assets/wme-setup/upgrade-wme-setup/Sync-and-Patch.png)](/learn/assets/wme-setup/upgrade-wme-setup/Sync-and-Patch.png)
+  [![Sync_and_patch](./assets/images/Sync-and-Patch.png)](./assets/images/Sync-and-Patch.png)
 
 #### Go to Launchpad and see Instance status. You can start working on WaveMaker Studio once the Instances status has started.

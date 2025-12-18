@@ -52,9 +52,9 @@ NO_PROXY=<wavemakerdomain.com>,<all private IPs used in WME setup>, <platform_ip
 
 3. After adding the proxy configuration, save the changes to the **http-proxy.env** file and place in below mentioned locations respectively.
    - Platform Instance: /wm-runtime/system-env
-  ![wm-runtime/system-env](/learn/assets/wm-runtime-system-env.png)
+  ![wm-runtime/system-env](./assets/images/wm-runtime-system-env.png)
    - External User Workspace Studio (Can be multiple based on Infra): /data/system-env
-  ![data/system-env](/learn/assets/data-system-env.png)
+  ![data/system-env](./assets/images/data-system-env.png)
 
 4. Connect to the platform instance and restart edn-services and jobs-worker by using the below set of commands 
    
@@ -63,7 +63,7 @@ NO_PROXY=<wavemakerdomain.com>,<all private IPs used in WME setup>, <platform_ip
     docker restart jobs-worker
    ```
 5. Now, log in to LaunchPad and navigate to Developer Workspace.
-   ![Developer Workspace](/learn/assets/developer-workspace.png)
+   ![Developer Workspace](./assets/images/developer-workspace.png)
 6. Run the instance patch by clicking on the Patch button available on all external user workspace instances. Repeat for all external developer workspace instances and wait for the instance’s  STATUS to change to STARTED.
-   ![Status Started Patch](/learn/assets/status-started-patch.png)
+   ![Status Started Patch](./assets/images/status-started-patch.png)
 7. Once the **http-proxy.env** file is created and configured, verify that the proxy settings are correct by testing connectivity to external resources within your WaveMaker applications.

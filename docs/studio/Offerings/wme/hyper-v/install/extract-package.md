@@ -24,7 +24,7 @@ sidebar_label: "Extract Package"
       cd /usr/local/content/wme/wme-installer/<version>/
       ```
   
-[![extract package](/learn/assets/wme-setup/download-and-extract-package.png)](/learn/assets/wme-setup/download-and-extract-package.png)
+[![extract package](./assets/images/download-and-extract-package.png)](./assets/images/download-and-extract-package.png)
 
 
 

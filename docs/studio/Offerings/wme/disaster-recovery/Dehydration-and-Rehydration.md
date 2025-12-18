@@ -32,12 +32,12 @@ This process is used to rotate instances periodically or for disaster recovery w
 - After logging into launchpad in WME setup go to Developer/Deployment Workspace, and then go to the container as shown in the below image
 - Select the containers that are running, hibernate those containers one after the other by hitting the **stop** button as shown in the image below, and wait till the state is changed to stop.
 
-  [![stop_conainers](/learn/assets/wme-setup/upgrade-wme-setup/hibernate.png)](/learn/assets/wme-setup/upgrade-wme-setup/hibernate.png)
+  [![stop_conainers](./assets/images/hibernate.png)](./assets/images/hibernate.png)
 
 
 - After logging into launchpad in WME setup go to Developer Workspace, and then go to capacity as shown in the below image
 
-  [![instance_passivate](/learn/assets/wme-setup/upgrade-wme-setup/instance-passivate.png)](/learn/assets/wme-setup/upgrade-wme-setup/instance-passivate.png)   
+  [![instance_passivate](./assets/images/instance-passivate.png)](./assets/images/instance-passivate.png)   
   
   - Here select all the StudioWorkspace instances one by one and do the below operations
 
@@ -59,7 +59,7 @@ This process is used to rotate instances periodically or for disaster recovery w
 
     - Log in to the CW portal, after login in home page you can see the stop button as shown in the image below, hit the stop button to stop the WME setup
 
-    [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)
+    [![cw_stop](./assets/images/cw-stop.png)](./assets/images/cw-stop.png)
 
 ## How to take a backup of the data
 
@@ -147,7 +147,7 @@ UUID=</wm-data block-device-UUID>  /wm-data   ext4   defaults ,nofail  0  2
 bash wme-installer.sh --data-untar
 ```  
 
-[![data_untar](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)](/learn/assets/wme-setup/upgrade-wme-setup/data-un-tar.png)
+[![data_untar](./assets/images/data-un-tar.png)](./assets/images/data-un-tar.png)
 
 ### StudioWorkspace Instance / AppDeployment Instance
 
@@ -212,11 +212,11 @@ After Completing the ***WaveMaker Initialization*** process, please go with the 
   - Login to the config portal using the same password that was used in earlier setup 
   - After login in home page you can see settings icon on the top right as marked below, it takes you to the CW settings place
 
-  [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop-settings.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop-settings.png)    
+  [![cw_stop](./assets/images/cw-stop-settings.png)](./assets/images/cw-stop-settings.png)    
     
   - Go to the Danger Zone and hit the **Sync** button and perform the next configuration steps
   
-  [![cw_stop](/learn/assets/wme-setup/upgrade-wme-setup/cw-sync.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-sync.png)
+  [![cw_stop](./assets/images/cw-sync.png)](./assets/images/cw-sync.png)
 
 
 ### Replace StudioWorkspace/AppDeployment Instances

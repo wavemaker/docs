@@ -10,13 +10,13 @@ The body fixes itself with a *Negative Feedback Loop*, which detects the anomali
 
 Example:
 
-![Human Negative Feedback Loop](/learn/assets/wme-setup/wme-observability/negative-feedback-loop-human.png)
+![Human Negative Feedback Loop](./assets/images/negative-feedback-loop-human.png)
 
 *Wouldn't it be great if you had an application with a similar mechanism?*
 
 Well, we have engineered the WaveMaker Platform to do the same.
 
-![WaveMaker Negative Feedback Loop](/learn/assets/wme-setup/wme-observability/negative-feedback-loop-wavemaker.png)
+![WaveMaker Negative Feedback Loop](./assets/images/negative-feedback-loop-wavemaker.png)
 
 With the right tools, the WaveMaker Platform is smart enough to detect its internal failures. These failures can then be addressed by the *Enterprise Platform Administrator* or by any level of *Engineer*. The failures are not hidden, anyone proficient in resolving it will resolve it.
 

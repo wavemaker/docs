@@ -22,7 +22,7 @@ One of the most popular centralized logging solutions is the Elasticsearch, Flue
 
 The below image shows the architecture of the EFK stack
 
-![Kibana Home Page](/learn/assets/wme-setup/wme-observability/kibana/efk-architecture.png)
+![Kibana Home Page](./assets/images/efk-architecture.png)
 
 Here, The **microservice** containers labeled **A**-**Z** are spread across instances **10.0.0.1** - **10.0.0.N**
 

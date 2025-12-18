@@ -31,7 +31,7 @@ For providing your own user in WME setup, follow the steps below:
 - When prompted for **do you want to configure your own SSH keys**, select **`y`** and provide a username and a path to the SSH key.
 - With this user and key, the platform can make SSH connection to StudioWorkspace Instance and AppDeployment Instance.
 
-[![custom user setup initialization](/learn/assets/wme-setup/setup-with-custom-user.png)](/learn/assets/wme-setup/setup-with-custom-user.png)
+[![custom user setup initialization](./assets/images/setup-with-custom-user.png)](./assets/images/setup-with-custom-user.png)
 
 ### WME Setup with WaveMaker User
 
@@ -40,7 +40,7 @@ For WaveMaker user, follow the steps below:
 - When prompted for **do you want to configure your own SSH keys**, select the **`n`** option.
 - Now the `wavemaker` user will use to communicate between the Platform, Studioworkspace, and AppDeployment Instances and for the container creation process.
 
-[![privellaged user setup initialization](/learn/assets/wme-setup/wme-setup-with-privillaged-user.png)](/learn/assets/wme-setup/wme-setup-with-privillaged-user.png)
+[![privellaged user setup initialization](./assets/images/wme-setup-with-privillaged-user.png)](./assets/images/wme-setup-with-privillaged-user.png)
 
 - After successful initialization, the script will display a URL to perform the rest of the WME setup.
 - Go to  `http://Platform-Instance-IP:8080` as directed by the above command output to do the WME setup.

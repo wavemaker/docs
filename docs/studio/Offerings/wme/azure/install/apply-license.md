@@ -10,4 +10,4 @@ sidebar_label: "Apply License"
 - At license section, select the Upload to upload license key file shared by WaveMaker team.
 - After uploading file select upload keys to apply the license key.
 
-     [![license](/learn/assets/wme-setup/configuring-wme/apply-license-at-config-portal.png)](/learn/assets/wme-setup/configuring-wme/apply-license-at-config-portal.png)
+     [![license](./assets/images/apply-license-at-config-portal.png)](./assets/images/apply-license-at-config-portal.png)

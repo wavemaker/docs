@@ -16,24 +16,24 @@ During the course of app development, tracking code changes and synchronizing th
 
 - Select the TEAM PORTAL section on the top right corner.  
 
-[![launchpad-teams](/learn/assets/wme-setup/configuring-wme/launchpad-teams.png)](/learn/assets/wme-setup/configuring-wme/launchpad-teams.png)
+[![launchpad-teams](./assets/images/launchpad-teams.png)](./assets/images/launchpad-teams.png)
 
 - Select on Setup Team.
 
-[![wavemaker-team-portal](/learn/assets/wme-setup/configuring-wme/wavemaker-team-portal.png)](/learn/assets/wme-setup/configuring-wme/wavemaker-team-portal.png)
+[![wavemaker-team-portal](./assets/images/wavemaker-team-portal.png)](./assets/images/wavemaker-team-portal.png)
 
 - Select on Next.
 
-[![launchpad-team-profile-configure](/learn/assets/wme-setup/configuring-wme/launchpad-team-profile-configure.png)](/learn/assets/wme-setup/configuring-wme/launchpad-team-profile-configure.png)
+[![launchpad-team-profile-configure](./assets/images/launchpad-team-profile-configure.png)](./assets/images/launchpad-team-profile-configure.png)
 
 
 - Select Code Repository that you want to store all your code and provide the required details. Select Save to save the changes. 
 
-[![configure-code-repo](/learn/assets/wme-setup/configuring-wme/configure-code-repo.png)](/learn/assets/wme-setup/configuring-wme/configure-code-repo.png)
+[![configure-code-repo](./assets/images/configure-code-repo.png)](./assets/images/configure-code-repo.png)
 
 - After selecting **Add Code Repository**, select the repository type and provide the required details for adding the repository. As default providers, WaveMaker supports Gitlab, Bitbucket, Github and Azure for external VCS configuration. Select Save to save the changes. 
 
-[![vcs](/learn/assets/wme-setup/configuring-wme/adding-vcs-repo.png)](/learn/assets/wme-setup/configuring-wme/adding-vcs-repo.png)
+[![vcs](./assets/images/adding-vcs-repo.png)](./assets/images/adding-vcs-repo.png)
 
 
 ::: note

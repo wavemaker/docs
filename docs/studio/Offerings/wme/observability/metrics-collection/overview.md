@@ -24,7 +24,7 @@ With the help of the above tools, all the data is aggregated at Prometheus.
 
 The below image shows how *Prometheus* is integrated with the components in the Platform.
 
-![Kibana Home Page](/learn/assets/wme-setup/wme-observability/prometheus/prometheus-architecture.png)
+![Kibana Home Page](./assets/images/prometheus-architecture.png)
 
 Here, The **microservice** containers labeled **A**-**Z** are spread across instances **10.0.0.1** - **10.0.0.N**
 

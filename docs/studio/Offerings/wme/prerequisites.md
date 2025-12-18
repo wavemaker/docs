@@ -177,7 +177,7 @@ WaveMaker Enterprise can be installed on any machine with the below requirements
 
 - Below diagram explain the network communication between the Platform Instance and StudioWorkspace Instance and AppDeployment Instance.
 
-[![network-communication-between-instances](/learn/assets/wme-setup/network-communication-between-instances.jpg)](/learn/assets/wme-setup/network-communication-between-instances.jpg)
+[![network-communication-between-instances](./assets/images/network-communication-between-instances.jpg)](./assets/images/network-communication-between-instances.jpg)
 
 ### Capacity Planning
 

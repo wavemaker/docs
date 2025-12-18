@@ -32,7 +32,7 @@ Following are the steps to add Users to the network by the SuperAdmin from WaveM
 - The User created here will consider as a Studio User who can Access to Studio. All Developers will come under this.
 
 
-[![user creation](/learn/assets/wme-setup/configuring-wme/user-creation.png)](/learn/assets/wme-setup/configuring-wme/user-creation.png)
+[![user creation](./assets/images/user-creation.png)](./assets/images/user-creation.png)
 
 
 ## Map the User to the Teams
@@ -42,11 +42,11 @@ The User should be mapped with a respective team to access the studio. Following
 - Navigate to the Teams section and Select the required team that user need to be added.
 - Select the **Add Member** and give their Email id which provided while adding the user from the  Users section.
 
- [![teams](/learn/assets/wme-setup/configuring-wme/teams.png)](/learn/assets/wme-setup/configuring-wme/user-creation.png)
+ [![teams](./assets/images/teams.png)](./assets/images/user-creation.png)
 
 - Select the Role and proceed with Adding.
 
- [![add member](/learn/assets/wme-setup/configuring-wme/add-team-member.png)](/learn/assets/wme-setup/configuring-wme/add-team-member.png)
+ [![add member](./assets/images/add-team-member.png)](./assets/images/add-team-member.png)
 
  The user can now able to access the studio after being mapped in the teams.
 
@@ -58,7 +58,7 @@ The User should be mapped with a respective team to access the studio. Following
 - Make the user as a Super Admin here by Selecting them and by Selecting on Map Users to Role.
 
 
-[![Super Admin creation](/learn/assets/wme-setup/configuring-wme/super-admin.png)](/learn/assets/wme-setup/configuring-wme/super-admin.png)
+[![Super Admin creation](./assets/images/super-admin.png)](./assets/images/super-admin.png)
 
 
 ## Configure Authentication Providers
@@ -71,13 +71,13 @@ The User should be mapped with a respective team to access the studio. Following
 - Select type of provider and Provide name and fill the required fields respect to that provider.
 - Make Default after adding it.
 
-[![authentication provider](/learn/assets/wme-setup/configuring-wme/adding-authorization-provider.png)](/learn/assets/wme-setup/configuring-wme/adding-authorization-provider.png)
+[![authentication provider](./assets/images/adding-authorization-provider.png)](./assets/images/adding-authorization-provider.png)
 
 ### Restricting Login for all users
 
 For WaveMaker enterprise customers that are performing platform maintenance this option can be used to restrict access to WaveMaker until the maintenance has finished successfully. Once enabled, all active users get logged out of the platform within three minutes except the current admin.  
 
-[![Login restriction](/learn/assets/wme-setup/configuring-wme/RestrictingLoginAllUsers.png)](/learn/assets/wme-setup/configuring-wme/RestrictingLoginAllUsers.png)
+[![Login restriction](./assets/images/RestrictingLoginAllUsers.png)](./assets/images/RestrictingLoginAllUsers.png)
 
 ### Steps to Restrict Users
 

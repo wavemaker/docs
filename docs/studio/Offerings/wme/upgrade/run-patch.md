@@ -43,7 +43,7 @@ sidebar_label: "Run Patch"
 - To make https work, You need to add SSL certificates to Platform or router/dns level while configuring the setup using ConfigWizard after the Ugrade process completes in terminal, to add SSL certificates please refer [ssl configuration for platform](/learn/on-premise/configure/config-ssl).
 
 
-[![upgrading-wme](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-process.png)](/learn/assets/wme-setup/upgrade-wme-setup/wme-patch-process.png)
+[![upgrading-wme](./assets/images/wme-patch-process.png)](./assets/images/wme-patch-process.png)
 
 - It takes 45-60 mins approximately. Please watch this terminal.
 
@@ -54,28 +54,28 @@ sidebar_label: "Run Patch"
 
 - Select the Required services to upgrade.
 
-[![upgrade-services](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-wme-services.png)](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-wme-services.png)
+[![upgrade-services](./assets/images/upgrade-wme-services.png)](./assets/images/upgrade-wme-services.png)
 
 - You can customize the WaveMaker studio and App Domain URLs.
 
-[![upgrade-domain-urls](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-domain-name.png)](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-domain-name.png)
+[![upgrade-domain-urls](./assets/images/upgrade-domain-name.png)](./assets/images/upgrade-domain-name.png)
 
 
 - From here, You can update the ssl certificates with the respective domain.
 
-[![upgrade-ssl-certificate](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-ssl-certs.png)](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-ssl-certs.png)
+[![upgrade-ssl-certificate](./assets/images/upgrade-ssl-certs.png)](./assets/images/upgrade-ssl-certs.png)
 
 - Update the Trust Store by selecting on Add New.
 
-[![upgrade-trust-store](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-import-ca.png)](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-import-ca.png)
+[![upgrade-trust-store](./assets/images/upgrade-import-ca.png)](./assets/images/upgrade-import-ca.png)
 
 - Update the Maven and NPM reposiroty configuration files if any proceed to Upgrade the WaveMaker setup.
 
-[![upgrade-repository-config](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-repository-config.png)](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-repository-config.png)
+[![upgrade-repository-config](./assets/images/upgrade-repository-config.png)](./assets/images/upgrade-repository-config.png)
 
 - - After completing the patch, go to Launchpad.
 
-[![upgrade-setup](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-setup.png)](/learn/assets/wme-setup/upgrade-wme-setup/upgrade-setup.png)
+[![upgrade-setup](./assets/images/upgrade-setup.png)](./assets/images/upgrade-setup.png)
 
 - Check all User WorkspaceInstance/AppDeployment Instances status in Launchpad.
 - You can start working on Studio once the Instance status has started.

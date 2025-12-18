@@ -21,27 +21,27 @@ This guide has written based on Esxi version 6.5.
 - Select Create/Register VM for creating the new virtual machine.
 - Select creation type as deploy a virtual machine by from an OVF or OVA file.
 
-[![vm creation type](/learn/assets/wme-setup/vm-creation-by-using-ova/select-vm-creation-type.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/select-vm-creation-type.png)
+[![vm creation type](./assets/images/select-vm-creation-type.png)](./assets/images/select-vm-creation-type.png)
 
 - Select OVF or OVA file for VM would like to deploy. User Platform Instance OVA.
 
-[![selecting ova template](/learn/assets/wme-setup/vm-creation-by-using-ova/selecting-the-ovf-template-for-deploy.png)](/learn/assets//wme-setup/vm-creation-by-using-ova/selecting-the-ovf-template-for-deploy.png)
+[![selecting ova template](./assets/images/selecting-the-ovf-template-for-deploy.png)](/learn/assets//wme-setup/vm-creation-by-using-ova/selecting-the-ovf-template-for-deploy.png)
 
 - Select the database in which to store the configuration and disk files.
 
-[![select database](/learn/assets/wme-setup/vm-creation-by-using-ova/selecting-the-database-for-storage.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/selecting-the-database-for-storage.png)
+[![select database](./assets/images/selecting-the-database-for-storage.png)](./assets/images/selecting-the-database-for-storage.png)
 
 - Select deployment options like networks mappings, disk provisioning, etc.
 
-[![select deployment option](/learn/assets/wme-setup/vm-creation-by-using-ova/selecting-the-deployment-options-and-networking.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/selecting-the-database-for-storage.png)
+[![select deployment option](./assets/images/selecting-the-deployment-options-and-networking.png)](./assets/images/selecting-the-database-for-storage.png)
 
 - Review your selected configuration and settings, then click on the finish for creating the virtual machine.
 
-[![review](/learn/assets/wme-setup/vm-creation-by-using-ova/review-the-settings.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/review-the-settings.png)
+[![review](./assets/images/review-the-settings.png)](./assets/images/review-the-settings.png)
 
 - Wait for few moments for complete successfully the creation of virtual machine.
 
-[![dashboard](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png)](/learn/assets/wme-setup/vm-creation-by-using-ova/created-vm-show-in-dashboard.png)
+[![dashboard](./assets/images/created-vm-show-in-dashboard.png)](./assets/images/created-vm-show-in-dashboard.png)
 
 ## Launch StudioWorkspace Instance / AppDeployment Instance
 

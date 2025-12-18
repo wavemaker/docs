@@ -71,7 +71,7 @@ The following document will help an organization to take backup data at unplanne
     - Log in to the CW portal, after login in home page you can see the settings icon and under **configuration** at the bottom, you can see **Danger Zone**
     - You can start by hitting **start** button as shown in the image below, hit the button to start the WME setup
 
-    [![cw_start](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)](/learn/assets/wme-setup/upgrade-wme-setup/cw-stop.png)
+    [![cw_start](./assets/images/cw-stop.png)](./assets/images/cw-stop.png)
 
 ### StudioWorkspace Instance / AppDeployment Instance
 
@@ -105,4 +105,4 @@ The following document will help an organization to take backup data at unplanne
 - To Apply, go to the Launchpad and Navigate to the Developer Workspace or App Deployements.
 - On the Capacity, you can see the Workspace/AppDeploy Instance details. On the Icons Shown, you can find the sync option.
 
-  [![Sync_and_patch](/learn/assets/wme-setup/upgrade-wme-setup/Sync-and-Patch.png)](/learn/assets/wme-setup/upgrade-wme-setup/Sync-and-Patch.png)
+  [![Sync_and_patch](./assets/images/Sync-and-Patch.png)](./assets/images/Sync-and-Patch.png)

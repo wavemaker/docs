@@ -36,14 +36,14 @@ Ssh credentials of the Instance either should have root privliges or provide req
         echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>  (for ubuntu)
         ```
 
-[![wme instance](/learn/assets/wme-setup/configuring-wme/WME_instance.png)](/learn/assets/wme-setup/configuring-wme/WME_instance.png)
+[![wme instance](./assets/images/WME_instance.png)](./assets/images/WME_instance.png)
 
 ## Add Capacity to Developer Workspace
 
 - Select Developer Workspace section and select Add Capacity option to add Instance to capacity.
 - Provide Instance details and authentication details to connect to the Instance,if you want you can test the connection and details of Instance by selecting the test option.
 
-[![workspace capacity](/learn/assets/wme-setup/configuring-wme/workspace-capacity.png)](/learn/assets/wme-setup/configuring-wme/workspace-capacity.png)
+[![workspace capacity](./assets/images/workspace-capacity.png)](./assets/images/workspace-capacity.png)
 
 - During workspace instances configuration process WaveMaker running commands with sudo , if user using any another name or command for sudo, user need to add that as alias in ~/.bash_aliases file and also need to provide that alias name during studio workspace/app deploy capicity adding at launchpad.
 - Example ~/.bash_aliases file
@@ -55,11 +55,11 @@ Ssh credentials of the Instance either should have root privliges or provide req
 
 - Wait for a few moments to configure and get started. You can check the Health status by clicking on the check mark(shown in the below picture).
 
-[![status check](/learn/assets/wme-setup/configuring-wme/status-check.png)](/learn/assets/wme-setup/configuring-wme/status-check.png)
+[![status check](./assets/images/status-check.png)](./assets/images/status-check.png)
 
 - It will gives you the Health status.
 
-[![user deployement health status check](/learn/assets/wme-setup/configuring-wme/user-deployement-health-status.png)](/learn/assets/wme-setup/configuring-wme/user-deployement-health-status.png)
+[![user deployement health status check](./assets/images/user-deployement-health-status.png)](./assets/images/user-deployement-health-status.png)
 
 - You can verify them by copying them to clipboard and pasting on a Notepad.
 

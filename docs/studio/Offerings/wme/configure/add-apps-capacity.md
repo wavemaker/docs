@@ -38,7 +38,7 @@ Ssh credentials of the Instance either should have root privileges or provide re
 - Select App Deployments section and at deployment capacity select add capacity for adding an Instance to deployment capacity.if Instance not created [launch instance with required prerequisites](/learn/on-premise/prerequisites)
 - Provide Instance details and authentication details to connect to the Instance,if you want you can test the connection and details of the instance by selecting the test option.
 
-[![deployment capacity](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.png)](/learn/assets/wme-setup/configuring-wme/app-deployment-capacity.png)
+[![deployment capacity](./assets/images/app-deployment-capacity.png)](./assets/images/app-deployment-capacity.png)
 
 - During workspace instances configuration process WaveMaker running commands with sudo , if user using any another name or command for sudo, user need to add that as alias in ~/.bash_aliases file and also need to provide that alias name during studio workspace/app deploy capacity adding at launchpad.
 - Example ~/.bash_aliases file
@@ -50,11 +50,11 @@ Ssh credentials of the Instance either should have root privileges or provide re
 
 - Wait for a few moments to configure and get started. You can check the Health status by clicking on the check mark(shown in the below picture).
 
-[![status check](/learn/assets/wme-setup/configuring-wme/status-check.png)](/learn/assets/wme-setup/configuring-wme/status-check.png)
+[![status check](./assets/images/status-check.png)](./assets/images/status-check.png)
 
 - It will gives you the Health status.
 
-[![app deployement health status check](/learn/assets/wme-setup/configuring-wme/app-deployement-health-status.png)](/learn/assets/wme-setup/configuring-wme/app-deployement-health-status.png)
+[![app deployement health status check](./assets/images/app-deployement-health-status.png)](./assets/images/app-deployement-health-status.png)
 
 - You can verify them by copying them to clipboard and pasting on a Notepad.
 

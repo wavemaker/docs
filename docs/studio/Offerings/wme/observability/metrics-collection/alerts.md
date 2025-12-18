@@ -10,7 +10,7 @@ WaveMaker uses the **Prometheus AlertManager** to listen to the data accumulated
 
 The list of Alerts can be accessed from Prometheus UI by clicking on the "**Alerts**" button as shown in the below image
 
-[![Prometheus UI Alert Button](/learn/assets/wme-setup/wme-observability/prometheus/prometheus-alert-button-click.png)](/learn/assets/wme-setup/wme-observability/prometheus/prometheus-alert-button-click.png)
+[![Prometheus UI Alert Button](./assets/images/prometheus-alert-button-click.png)](./assets/images/prometheus-alert-button-click.png)
 
 ## Available Alerts
 

@@ -24,19 +24,19 @@ sidebar_label: "Prepare Infrastructure using VHD"
 
 - Provide necessary information, including name and region, by selecting the resource group.
 
-[![basic details](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-basic-details.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-basic-details.png)
+[![basic details](./assets/images/nsg-platform-basic-details.png)](./assets/images/nsg-platform-basic-details.png)
 
 - Provide tags that are name-value pairs for the network security group for categorizing the resources.
 
-[![tags](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-tags.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-tags.png)
+[![tags](./assets/images/nsg-platform-tags.png)](./assets/images/nsg-platform-tags.png)
 
 - Create a network security group for a platform virtual machine with the provided information.
 
-[![review](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-review-and-create.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-review-and-create.png)
+[![review](./assets/images/nsg-platform-review-and-create.png)](./assets/images/nsg-platform-review-and-create.png)
 
 - After creating the network security group under settings, select inbound security rules, create a rule for developer network access and select protocol TCP and add a rule to a network security group.
 
-[![port public access](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-for-public-access.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-for-public-access.png)
+[![port public access](./assets/images/nsg-platform-for-public-access.png)](./assets/images/nsg-platform-for-public-access.png)
 
 - If you want ssh access to only desired networks, create another rule and provide your network IPs for ssh access.
 
@@ -46,7 +46,7 @@ sidebar_label: "Prepare Infrastructure using VHD"
 
 - Next, select protocol as TCP and select the **Allow** action. Provide **Priority** after the public access ports. Click save and add the rule to the network security group.
 
-[![internal rule](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-internal-rule.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-platform-internal-rule.png)
+[![internal rule](./assets/images/nsg-platform-internal-rule.png)](./assets/images/nsg-platform-internal-rule.png)
 
 ### Creation of Network Security Group for Studio Workspace/App Deployment Virtual Machine
 
@@ -54,21 +54,21 @@ Applies to Workspace Virtual Machine / AppDeployment Virtual Machine
 
 - Provide necessary information, including name and region, by selecting the resource group.
 
-[![basic](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-basic.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-basic.png)
+[![basic](./assets/images/nsg-external-basic.png)](./assets/images/nsg-external-basic.png)
 
 - Provide tags that are name-value pairs for the network security group for categorizing the resources.
 
-[![tags](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-tags.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-tags.png)
+[![tags](./assets/images/nsg-external-tags.png)](./assets/images/nsg-external-tags.png)
 
 - Create a network security group for a platform virtual machine with the provided information.
 
-[![review](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-review-and-create.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-review-and-create.png)
+[![review](./assets/images/nsg-external-review-and-create.png)](./assets/images/nsg-external-review-and-create.png)
 
 - Create a security rule to open additional ports to access the Platform Virtual Machine and select a destination. Note that restrictions apply to Virtual machines based on the destination selection.
 
 - If you select the destination as a virtual network, the security rule is applied to Virtual Machines irrespective of the virtual network of the platform Virtual Machine. If you choose the destination as an application security group, it applies only to the VMs connected to that application security group. If you select the destination as IP Addresses, the rules apply to the respected IP address resources. For more information, see [Filter Network Traffic in Azure](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic).
 
-[![internal rule](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-internal-rule.png)](/learn/assets/wme-setup/wme-setup-in-azure/nsg-external-internal-rule.png)
+[![internal rule](./assets/images/nsg-external-internal-rule.png)](./assets/images/nsg-external-internal-rule.png)
 
 - If you want ssh access to only desired networks, create another rule and provide your network IPs for ssh access.
 
@@ -76,7 +76,7 @@ Applies to Workspace Virtual Machine / AppDeployment Virtual Machine
 
 - Generate SAS in a storage account.
 
-[![generate sas](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/generate-sas.jpg)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/generate-sas.jpg)
+[![generate sas](./assets/images/generate-sas.jpg)](./assets/images/generate-sas.jpg)
 
 - Copy the VHD file from local to the respective created storage account container. Use the following example for copying the VHD to a container.
 - AzCopy copy "localpath\filename.vhd", "container url and sas" --blob-type PageBlob
@@ -89,33 +89,33 @@ azcopy copy "C:\filename.vhd" "https://account.blob.core.windows.net/mycontainer
 
 - The VHD file `WME-vhd-file.vhd` should be uploaded to the respected storage account container.
 
-[![vhd upload](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vhd-upload.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vhd-upload.png)
+[![vhd upload](./assets/images/vhd-upload.png)](./assets/images/vhd-upload.png)
 
 ## Creating the Disk Using VHD File
 
 - Specifying the project details for the disk creation.
 
-[![project details](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/disk-project-details.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/disk-project-details.png)
+[![project details](./assets/images/disk-project-details.png)](./assets/images/disk-project-details.png)
 
 - Create a disk by providing necessary details, selecting the source type as storage blob, and selecting the OS disk size.
 
-[![disk creation](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/disk-creation.jpg)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/disk-creation.jpg)
+[![disk creation](./assets/images/disk-creation.jpg)](./assets/images/disk-creation.jpg)
 
 ## VM Creation by Using The Disk
 
 - Provide necessary information to create VM using a disk.
 
-[![vhd basic](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-basic.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-basic.png)
+[![vhd basic](./assets/images/vm-vhd-basic.png)](./assets/images/vm-vhd-basic.png)
 
 - For Platform Virtual Machine, add root 50 GiB, storage 50 GiB. For wm-runtime, add 150 GiB and for wm-data, and if required add 50 GiB for /usr/local/content(/usr/local/content is optional not mandatory).
 - For Studio Workspace/App Deployment Virtual Machine add root 50 GiB, storage 150 GiB for data.
 
-[![vhd disk](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-disks.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-disks.png)
+[![vhd disk](./assets/images/vm-vhd-disks.png)](./assets/images/vm-vhd-disks.png)
 
 - Select create VM option at the left top. create VM providing required details disks and networking.
 - At Configure network security group select WME-SG-Platform-Public-and-Internal for Platform Virtual Machine and select WME-SG-Workspace-Internal for Studio Workspace/App Deployment Virtual Machine(Workspace Virtual Machine / AppDeployment Virtual Machine).
 
-[![network](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-networking.png)](/learn/assets/wme-setup/wme-setup-in-azure-using-vhd/vm-vhd-networking.png)
+[![network](./assets/images/vm-vhd-networking.png)](./assets/images/vm-vhd-networking.png)
 
 ## Mounting Disks in Virtual Machines
 
@@ -167,7 +167,7 @@ mount /dev/sdc    /wm-data
 mount /dev/sdd    /wm-runtime  
 ```
 
-[![mounting volumes](/learn/assets/wme-setup/wme-setup-in-azure/platform-instance-mounting-volumes.png)](/learn/assets/wme-setup/wme-setup-in-azure/platform-instance-mounting-volumes.png)
+[![mounting volumes](./assets/images/platform-instance-mounting-volumes.png)](./assets/images/platform-instance-mounting-volumes.png)
 
 - To mount an attached Azure Disks on every system reboot, add an entry for the device to the /etc/fstab file.
 - Take UUID of disks for identification by using the command.
@@ -183,7 +183,7 @@ UUID=your-block-device-UUID      /wm-data        ext4     defaults ,nofail  0  2
 UUID=<block-device_1-UUID>       /wm-runtime     ext4     defaults ,nofail  0  2
 ```
 
-[![fstab](/learn/assets/wme-setup/wme-setup-in-azure/vm-fstab.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-fstab.png)
+[![fstab](./assets/images/vm-fstab.png)](./assets/images/vm-fstab.png)
 
 ### Mounting Disks in Workspace Virtual Machine/AppDeployment Virtual Machine
 
@@ -230,7 +230,7 @@ Command: mount /dev/block-device-name    /data
 Example: mount /dev/sdc  /data
 ```
 
-[![mounting volumes](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-mounting-volumes.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-mounting-volumes.png)
+[![mounting volumes](./assets/images/vm-external-mounting-volumes.png)](./assets/images/vm-external-mounting-volumes.png)
 
 - To mount an attached Azure Disks on every system reboot, add an entry for the device to the /etc/fstab file.
 - Take UUID of disks for identification by using the command.
@@ -245,7 +245,7 @@ blkid
 UUID=your-block-device-UUID      /data     ext4     defaults ,nofail  0  2
 ```
 
-[![fstab](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-fstab.png)](/learn/assets/wme-setup/wme-setup-in-azure/vm-external-fstab.png)
+[![fstab](./assets/images/vm-external-fstab.png)](./assets/images/vm-external-fstab.png)
 
 ## What's next
 

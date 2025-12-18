@@ -26,59 +26,59 @@ sidebar_label: "Prepare Infrastructure"
 
 - Provide necessary details for creating the security group and select your desired VPC.
 
-[![basic](/learn/assets/wme-setup/wme-setup-in-aws/wme-sg-platform-public-basic.png)](/learn/assets/wme-setup/wme-setup-in-aws/wme-sg-platform-public-basic.png)
+[![basic](./assets/images/wme-sg-platform-public-basic.png)](./assets/images/wme-sg-platform-public-basic.png)
 
 - Select inbound rules and edit rules for developer network access. You can specify your developer network range in the source.
 
-[![ports public access](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-platform-public.png)](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-platform-public.png)
+[![ports public access](./assets/images/inbound-rules-of-wme-platform-public.png)](./assets/images/inbound-rules-of-wme-platform-public.png)
 
 ### Creating WME-SG-Platform-Internal Security Group
 
 - Provide essential details for creating the security group and select the previously selected VPC.
 
-[![basic](/learn/assets/wme-setup/wme-setup-in-aws/wme-sg-platform-internal-basic.png)](/learn/assets/wme-setup/wme-setup-in-aws/wme-sg-platform-internal-basic.png)
+[![basic](./assets/images/wme-sg-platform-internal-basic.png)](./assets/images/wme-sg-platform-internal-basic.png)
 
 - Select inbound rules and edit rules to access from the StudioWorkspace Instance / AppDeployment Instance. At the source field, provide WME-SG-Workspace-Internal security group ID.
 
-[![ports internal](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-platform-internal.png)](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-platform-internal.png)
+[![ports internal](./assets/images/inbound-rules-of-wme-platform-internal.png)](./assets/images/inbound-rules-of-wme-platform-internal.png)
   
 ### Creating WME-SG-Workspace-Internal Security Group
 
 - Provide essential details for creating the security group and select the previously selected VPC.
 
-[![basic](/learn/assets/wme-setup/wme-setup-in-aws/wm-sg-workspace-internal-basic.png)](/learn/assets/wme-setup/wme-setup-in-aws/wm-sg-workspace-internal-basic.png)  
+[![basic](./assets/images/wm-sg-workspace-internal-basic.png)](./assets/images/wm-sg-workspace-internal-basic.png)  
 
 - Select inbound rules and edit rules to access from the Platform Instance. At the source field, provide WME-SG-Platform-Internal security group ID.
 
-[![ports internal](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-workspace-internal.png)](/learn/assets/wme-setup/wme-setup-in-aws/inbound-rules-of-wme-workspace-internal.png)  
+[![ports internal](./assets/images/inbound-rules-of-wme-workspace-internal.png)](./assets/images/inbound-rules-of-wme-workspace-internal.png)  
 
 ## Launch Platform Instance
 
 - Open the Amazon EC2 console at `https://console.aws.amazon.com/ec2/.`
 - Choose Launch Instance, choose an ubuntu 20.04 Amazon Machine Image (AMI), or if you have any ubuntu 20.04 AMI, select it.
 
-[![ami](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)
+[![ami](./assets/images/selecting-ami.png)](./assets/images/selecting-ami.png)
 
 - Choose 32 GiB memory instance types from desired family and type.
 
-[![instance type](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)
+[![instance type](./assets/images/selecting-instance-type.png)](./assets/images/selecting-instance-type.png)
 
 - Choose Next:
     1. Configure Instance Details.
     2. For Network, choose the same VPC that you created for security groups.
     3. For Subnet, select the desired Subnet in any Availability Zone.
 
-[![instance configurations](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)
+[![instance configurations](./assets/images/configuration-of-instance.jpg)](./assets/images/configuration-of-instance.jpg)
 
 - Add storage 100 GiB for the root volume.
 - 100 GiB for wm-runtime
 - 150 GiB for wm-data.
 
-[![storage](/learn/assets/wme-setup/wme-setup-in-aws/platform-instance-storage.png)](/learn/assets/wme-setup/wme-setup-in-aws/platform-instance-storage.png)  
+[![storage](./assets/images/platform-instance-storage.png)](./assets/images/platform-instance-storage.png)  
 
 - If you want to add any tags, add tags to the instance.
 
-[![tags](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)  
+[![tags](./assets/images/addig-tags.png)](./assets/images/addig-tags.png)  
 
 - To Configure Security Group:
     - Select an existing security group.
@@ -88,7 +88,7 @@ sidebar_label: "Prepare Infrastructure"
     - Choose change security groups.
     - Add security group WME-SG-Platform-Public.
 
-[![security group](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)
+[![security group](./assets/images/security-group-configurations.png)](./assets/images/security-group-configurations.png)
 
 - Next, review your instance details and launch the instance.
 
@@ -97,30 +97,30 @@ sidebar_label: "Prepare Infrastructure"
 - Open the Amazon EC2 console at `https://console.aws.amazon.com/ec2/.`
 - Choose Launch Instance, choose an ubuntu 16.04 Amazon Machine Image (AMI), or if you have any ubuntu 20.04 AMI, select it.
 
-[![ami](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)
+[![ami](./assets/images/selecting-ami.png)](./assets/images/selecting-ami.png)
 
 - Choose 16 GiB memory instance types from desired family and type.
 
-[![instance type](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-instance-type.png)
+[![instance type](./assets/images/selecting-instance-type.png)](./assets/images/selecting-instance-type.png)
 
 - Choose Next:
     1. Configure Instance Details.
     2. For Network, choose the same VPC that you created for security groups.
     3. For Subnet, select the desired Subnet in any Availability Zone.
 
-[![instance configuration](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/configuration-of-instance.jpg)
+[![instance configuration](./assets/images/configuration-of-instance.jpg)](./assets/images/configuration-of-instance.jpg)
 
 - Add storage 150 GiB for data.
 
-[![storage](/learn/assets/wme-setup/wme-setup-in-aws/external-instance-storage.png)](/learn/assets/wme-setup/wme-setup-in-aws/external-instance-storage.png)  
+[![storage](./assets/images/external-instance-storage.png)](./assets/images/external-instance-storage.png)  
 
 - Next, if you want to add any tags, add tags to the instance.
 
-[![tags](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)](/learn/assets/wme-setup/wme-setup-in-aws/addig-tags.png)  
+[![tags](./assets/images/addig-tags.png)](./assets/images/addig-tags.png)  
 
 - Next, Configure the Security Group. Select the existing security group, and select the WME-SG-Workspace-Internal security group.
 
-[![security groups](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)](/learn/assets/wme-setup/wme-setup-in-aws/security-group-configurations.png)
+[![security groups](./assets/images/security-group-configurations.png)](./assets/images/security-group-configurations.png)
 
 - Next, review your instance details and launch the instance.
 
@@ -173,7 +173,7 @@ Example :
           mount /dev/xvdb    /wm-runtime  
 ```
 
-[![mounting volumes](/learn/assets/wme-setup/wme-setup-in-aws/mounting-platform-instance-volumes.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/mounting-platform-instance-volumes.jpg)
+[![mounting volumes](./assets/images/mounting-platform-instance-volumes.jpg)](./assets/images/mounting-platform-instance-volumes.jpg)
 
 - To mount an attached EBS (Elastic Block Store) volume on every system reboot, add an entry for the device to the /etc/fstab file.
 - Take UUID of disks for identification by using the following command.
@@ -189,7 +189,7 @@ UUID=<block-device_1-UUID>    /wm-data     ext4   defaults ,nofail  0  2
 UUID=<block-device_2-UUID>    /wm-runtime  ext4   defaults ,nofail  0  2
 ```
 
-[![fstab](/learn/assets/wme-setup/wme-setup-in-aws/fstab-platform.png)](/learn/assets/wme-setup/wme-setup-in-aws/fstab-platform.png)
+[![fstab](./assets/images/fstab-platform.png)](./assets/images/fstab-platform.png)
 
 ### Mounting storage StudioWorkspace Instance / AppDeployment Instance
 
@@ -235,7 +235,7 @@ Command : mount /dev/<block-device-name>   /data
 Example : mount /dev/xvdb   /data  
 ```
 
-[![mounting volumes](/learn/assets/wme-setup/wme-setup-in-aws/mounting-external-instance-storage.jpg)](/learn/assets/wme-setup/wme-setup-in-aws/mounting-external-instance-storage.jpg)
+[![mounting volumes](./assets/images/mounting-external-instance-storage.jpg)](./assets/images/mounting-external-instance-storage.jpg)
 
 - To mount an attached EBS volume on every system reboot, add an entry for the device to the /etc/fstab file.
 - Take UUID of disks for identification by using the following command.
@@ -250,7 +250,7 @@ blkid
 UUID=<your-block-device-UUID>    /data     ext4     defaults ,nofail  0  2
 ```
 
-[![fstab](/learn/assets/wme-setup/wme-setup-in-aws/fstab-external.png)](/learn/assets/wme-setup/wme-setup-in-aws/fstab-external.png)
+[![fstab](./assets/images/fstab-external.png)](./assets/images/fstab-external.png)
 
 ## What's next
 

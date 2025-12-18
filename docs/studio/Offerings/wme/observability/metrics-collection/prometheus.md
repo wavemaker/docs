@@ -12,16 +12,16 @@ Using Prometheus UI, we can not only see the current metric value but also visua
 
 1) After the WaveMaker login, open the Launchpad and click the Troubleshoot located on the bottom left as shown below.
 
-[![Launchpad Dial Click](/learn/assets/wme-setup/wme-observability/kibana/launchpad-dial-open.png)](/learn/assets/wme-setup/wme-observability/kibana/launchpad-dial-open.png)
+[![Launchpad Dial Click](./assets/images/launchpad-dial-open.png)](./assets/images/launchpad-dial-open.png)
 
 
 2) In the dial menu, click the **Prometheus** button as shown below
 
-[![Launchpad Prometheus Click](/learn/assets/wme-setup/wme-observability/prometheus/launchpad-prometheus-click.png)](/learn/assets/wme-setup/wme-observability/prometheus/launchpad-prometheus-click.png)
+[![Launchpad Prometheus Click](./assets/images/launchpad-prometheus-click.png)](./assets/images/launchpad-prometheus-click.png)
 
 3) It opens the Prometheus UI. It should look like the below image
 
-[![Prometheus Home Page](/learn/assets/wme-setup/wme-observability/prometheus/prometheus-home-page.png)](/learn/assets/wme-setup/wme-observability/prometheus/prometheus-home-page.png)
+[![Prometheus Home Page](./assets/images/prometheus-home-page.png)](./assets/images/prometheus-home-page.png)
 
 ## Prometheus Metrics
 
@@ -55,16 +55,16 @@ Let's say we want to check the RAM consumption of the login container for the pa
 
 1) As we already know from the previous table, we can use `container_memory_rss` to get the memory of a container.
 
-[![Container Memory](/learn/assets/wme-setup/wme-observability/prometheus/query-container-memory.png)](/learn/assets/wme-setup/wme-observability/prometheus/query-container-memory.png)
+[![Container Memory](./assets/images/query-container-memory.png)](./assets/images/query-container-memory.png)
 
 2) In the above image, we can see that the query has returned the memory metrics of multiple time series. We can select only the login metrics by using the query `container_memory_rss{name="login"}` as shown in the below image.
 
-[![Login Container Memory](/learn/assets/wme-setup/wme-observability/prometheus/query-container-memory-login.png)](/learn/assets/wme-setup/wme-observability/prometheus/query-container-memory-login.png)
+[![Login Container Memory](./assets/images/query-container-memory-login.png)](./assets/images/query-container-memory-login.png)
 
 3) In the above image, the memory is shown in bytes, you can convert it by simply dividing it `container_memory_rss{name="login"}/1024/1024`
 
-[![Login Container Memory in MB](/learn/assets/wme-setup/wme-observability/prometheus/query-container-memory-login-mb.png)](/learn/assets/wme-setup/wme-observability/prometheus/query-container-memory-login-mb.png)
+[![Login Container Memory in MB](./assets/images/query-container-memory-login-mb.png)](./assets/images/query-container-memory-login-mb.png)
 
 4) Finally, after preparing the query, you can check the graph of the last 24 hours by clicking on the "**Graph**" button and setting the range to `24h` as shown in the below image  
 
-[![Login Container Memory 24H graph](/learn/assets/wme-setup/wme-observability/prometheus/query-container-memory-login-graph.png)](/learn/assets/wme-setup/wme-observability/prometheus/query-container-memory-login-graph.png)
+[![Login Container Memory 24H graph](./assets/images/query-container-memory-login-graph.png)](./assets/images/query-container-memory-login-graph.png)
