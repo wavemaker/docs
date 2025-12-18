@@ -285,4 +285,4 @@ The design system supports multiple themes:
 ## Related Documentation
 
 - [Build and Deploy](../build_and_deploy/overview.md) - Build and deployment strategies
-- [Testing and Debugging](../apis_and_services/Testing%20And%20Debugging/Unit%20Testing/junit_mockito.md) - Testing strategies
+- [Testing and Debugging](../apis_and_services/Testing%20And%20Debugging/Unit%20Testing/integrate_junit_tests.md) - Testing strategies

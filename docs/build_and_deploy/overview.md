@@ -420,4 +420,4 @@ DEBUG=false
 
 - [Architecture](../apis_and_services/Concepts/architecture.md) - System architecture overview
 - [Security](../apis_and_services/Security/overview.md) - Security best practices
-- [Testing And Debugging](../apis_and_services/Testing%20And%20Debugging/Unit%20Testing/junit_mockito.md) - Testing strategies
+- [Testing And Debugging](../apis_and_services/Testing%20And%20Debugging/Unit%20Testing/integrate_junit_tests.md) - Testing strategies
