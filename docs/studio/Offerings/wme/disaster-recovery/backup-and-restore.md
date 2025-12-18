@@ -52,7 +52,7 @@ The following document will help an organization to take backup data at unplanne
   
 #### GCP
 
-- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/Offerings/wme/prerequisites) and installation steps.
+- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/Offerings/wme/getting-started/prerequisites) and installation steps.
 
 #### VMWARE ESXI
 
@@ -87,7 +87,7 @@ The following document will help an organization to take backup data at unplanne
   
 #### GCP
 
-- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/Offerings/wme/prerequisites) and installation steps.
+- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/Offerings/wme/getting-started/prerequisites) and installation steps.
 
 #### VMWARE ESXI
 

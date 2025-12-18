@@ -108,7 +108,7 @@ bash wme-installer.sh --data-archive
   
 #### GCP
 
-- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/Offerings/wme/prerequisites) and installation steps.
+- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/Offerings/wme/getting-started/prerequisites) and installation steps.
 
 #### VMWARE ESXI
 
@@ -151,7 +151,7 @@ bash wme-installer.sh --data-untar
 
 ### StudioWorkspace Instance / AppDeployment Instance
 
-- Launch StudioWorkspace Instance/AppDeployment Instance in different Infra providers from Link [WaveMaker Launch Instances](/docs/studio/Offerings/wme/prerequisites).
+- Launch StudioWorkspace Instance/AppDeployment Instance in different Infra providers from Link [WaveMaker Launch Instances](/docs/studio/Offerings/wme/getting-started/prerequisites).
 
 
 ## Download and Extract Migrations
