@@ -104,6 +104,12 @@ const config = {
               }
             ],
           },
+          {
+            type: "docSidebar",
+            sidebarId: "guideSidebar",
+            position: "left",
+            label: "Guide",
+          },
           { to: "/blog", label: "Blogs", position: "left" },
           {
             type: 'docsVersionDropdown',
