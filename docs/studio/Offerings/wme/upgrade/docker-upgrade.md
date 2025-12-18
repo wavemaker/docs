@@ -3,7 +3,6 @@ title: "Docker Upgrade"
 id: "docker-upgrade"
 sidebar_label: "Docker Upgrade"
 ---
----
 
 ## Docker Upgrade
 

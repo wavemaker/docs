@@ -3,7 +3,6 @@ title: "Download and Copy Patch"
 id: "download-copy-patch"
 sidebar_label: "Download and Copy Patch"
 ---
----
 
 ## Download Patch
 

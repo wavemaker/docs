@@ -3,11 +3,10 @@ title: "Setup Using ConfigPortal"
 id: "setup-using-cw"
 sidebar_label: "Setup Using ConfigPortal"
 ---
----
 
 ### WME Setup on ConfigPortal
 
-- Open WaveMaker ConfigPortal by <http://Platform-Instance-IP:8080>
+- Open WaveMaker ConfigPortal by `http://Platform-Instance-IP:8080`
 - Setup password for the WaveMaker setup portal. 
    - This password is system level. 
    - All command line operations are authenticated by this Password. 

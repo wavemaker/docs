@@ -3,7 +3,6 @@ title: "Backup and Restore "
 id: "backup-and-restore"
 sidebar_label: "Backup and Restore "
 ---
----
 
 The following document will help an organization to take backup data at unplanned incidents and minimizing the effects of a disaster by restoring, so an organization will continue to operate or quickly resume key operations. Make sure the organization has use the same IP address as previous WME Instances for new WME Instances.
 

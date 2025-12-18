@@ -3,7 +3,6 @@ title: "WaveMaker Enterprise Prerequisites"
 id: "prerequisites"
 sidebar_label: "What you'll need"
 ---
----
 
 You can setup WaveMaker Enterprise on any machine.
 

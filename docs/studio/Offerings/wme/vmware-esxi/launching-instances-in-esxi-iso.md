@@ -3,7 +3,6 @@ title: "WaveMaker Enterprise Setup on VMware ESXi using ISO"
 id: "launching-instances-in-esxi-iso"
 sidebar_label: "Prepare infrastructure using ISO"
 ---
----
 
 ## Prerequisite
 

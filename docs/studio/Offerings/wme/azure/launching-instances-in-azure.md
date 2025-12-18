@@ -3,7 +3,6 @@ title: "WaveMaker Enterprise Setup on Azure "
 id: "launching-instances-in-azure"
 sidebar_label: "Prepare Infrastructure"
 ---
----
 
 ## Prerequisites
 

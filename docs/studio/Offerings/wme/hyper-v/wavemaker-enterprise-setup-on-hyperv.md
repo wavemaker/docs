@@ -3,7 +3,6 @@ title: "WaveMaker Enterprise Setup on Hyper-V"
 id: "wavemaker-enterprise-setup-on-hyperv"
 sidebar_label: "Overview"
 ---
----
 
 ## WaveMaker Enterprise setup process on Hyper-V
 

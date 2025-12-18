@@ -3,7 +3,6 @@ title: "OS Upgrade"
 id: "os-upgrade"
 sidebar_label: "OS Upgrade"
 ---
----
 
 ## Why do we need Operating System Upgrade ?
 

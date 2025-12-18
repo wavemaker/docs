@@ -3,7 +3,6 @@ title: "Users and Roles"
 id: "users-roles"
 sidebar_label: "Users & Roles"
 ---
----
 
 Learn how roles and activities are defined in WME.
 

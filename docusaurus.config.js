@@ -23,7 +23,7 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
   onBrokenLinks: "throw",
-  
+
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -103,12 +103,6 @@ const config = {
                 to: '#',
               }
             ],
-          },
-          {
-            type: "docSidebar",
-            sidebarId: "howToSidebar",
-            position: "left",
-            label: "Guide",
           },
           { to: "/blog", label: "Blogs", position: "left" },
           {
@@ -220,7 +214,12 @@ const config = {
   ],
   themes: ["@docusaurus/theme-mermaid"],
   markdown: {
+    format: 'detect',
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'ignore',
+      onBrokenMarkdownImages: 'ignore',
+    },
   },
 };
 

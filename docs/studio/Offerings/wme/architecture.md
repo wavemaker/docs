@@ -3,7 +3,6 @@ title: "WaveMaker Enterprise Architecture"
 id: "architecture"
 sidebar_label: "Architecture"
 ---
----
 
 ## Instances
 

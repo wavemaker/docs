@@ -3,7 +3,6 @@ title: "WaveMaker Enterprise Setup Process on AWS"
 id: "wavemaker-enterprise-setup-on-aws"
 sidebar_label: "Overview"
 ---
----
 
 The below guide helps you in the process of setting up WaveMaker Enterprise on AWS.
 You need an AWS account before starting this process.

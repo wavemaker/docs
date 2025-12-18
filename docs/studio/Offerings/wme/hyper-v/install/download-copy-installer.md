@@ -3,7 +3,6 @@ title: "Download and Copy Installer"
 id: "download-copy-installer"
 sidebar_label: "Download and Copy Installer"
 ---
----
 
 ### Download the WME Installer
 

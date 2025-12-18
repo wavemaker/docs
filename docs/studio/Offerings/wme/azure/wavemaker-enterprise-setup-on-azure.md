@@ -3,7 +3,6 @@ title: "WaveMaker Enterprise Setup on AZURE"
 id: "wavemaker-enterprise-setup-on-azure"
 sidebar_label: "Overview"
 ---
----
 
 ## WaveMaker Enterprise setup process on AZURE
 

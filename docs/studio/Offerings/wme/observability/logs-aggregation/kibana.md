@@ -3,7 +3,6 @@ title: "Kibana"
 id: "kibana"
 sidebar_label: "Kibana"
 ---
----
 
 ### Introduction
 

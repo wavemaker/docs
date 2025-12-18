@@ -3,7 +3,6 @@ title: "Extract Package"
 id: "extract-patch"
 sidebar_label: "Extract Package"
 ---
----
 
 Assuming you have already downloaded the patch and kept inside user home folder of the platform Instance.
 

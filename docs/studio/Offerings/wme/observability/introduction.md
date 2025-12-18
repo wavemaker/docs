@@ -3,7 +3,6 @@ title: "Observability"
 id: "introduction"
 sidebar_label: "Introduction"
 ---
----
 
 Did you ever wonder how a Human body automatically responds to any negative inconvenience?
 

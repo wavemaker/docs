@@ -3,7 +3,6 @@ title: "WME Add Apps Capacity"
 id: "add-apps-capacity"
 sidebar_label: "Add Apps Capacity"
 ---
----
 
 Every Deployed application allocated with a container. The infrastructure adding here will be used for this purpose.
 

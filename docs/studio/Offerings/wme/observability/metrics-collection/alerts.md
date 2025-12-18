@@ -3,7 +3,6 @@ title: "Alerts"
 id: "alerts"
 sidebar_label: "Alerts"
 ---
----
 
 WaveMaker uses the **Prometheus AlertManager** to listen to the data accumulated at *Prometheus* and fire an alert based on the query included in the alert.
 

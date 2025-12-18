@@ -3,7 +3,6 @@ title: "Install Prerequisites Softwares"
 id: "install-prerequisites"
 sidebar_label: "Install Prerequisites Softwares"
 ---
----
 
 :::note
  Before Proceeding with installing the softwares, Check the [Requirements here](/learn/on-premise/prerequisites).

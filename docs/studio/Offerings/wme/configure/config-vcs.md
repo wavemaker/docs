@@ -3,7 +3,6 @@ title: "WaveMaker Enterprise Configure VCS"
 id: "config-vcs"
 sidebar_label: "Configure VCS"
 ---
----
 
 During the course of app development, tracking code changes and synchronizing the changes, in case of collaborated development, is of the essence. WaveMaker provides Version Control Services for this purpose. By default, WaveMaker Studio comes with a version control system that runs within your Platform Machine based on Gitlab. You can choose to add an external repo of your choice.
 

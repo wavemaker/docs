@@ -3,7 +3,6 @@ title: "Welcome to WaveMaker Enterprise Guide"
 id: "welcome"
 sidebar_label: "Welcome"
 ---
----
 
 WaveMaker Enterprise (WME) is an on-premise offering of WaveMaker. Installing on-premise allows customers to build applications that connect to databases, APIs, everything within the enterprise intranet.
 

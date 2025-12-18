@@ -3,7 +3,6 @@ title: "Grafana"
 id: "grafana"
 sidebar_label: "Grafana"
 ---
----
 
 *Grafana* is a Dashboard creation and visualization tool. All the metrics from Prometheus can be accessed by Grafana and complex dashboards can be created from those metrics.
 

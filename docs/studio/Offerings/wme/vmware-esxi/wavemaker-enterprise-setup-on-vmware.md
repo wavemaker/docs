@@ -3,7 +3,6 @@ title: "WaveMaker Enterprise Setup on VMWare Esxi"
 id: "wavemaker-enterprise-setup-on-vmware"
 sidebar_label: "Overview"
 ---
----
 
 ## WaveMaker Enterprise setup process on VMWare Esxi
 

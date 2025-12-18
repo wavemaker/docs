@@ -3,7 +3,6 @@ title: "Preparing Infrastructure on AWS"
 id: "launching-instances-in-aws"
 sidebar_label: "Prepare Infrastructure"
 ---
----
 
 ## Prerequisites
 
@@ -55,7 +54,7 @@ sidebar_label: "Prepare Infrastructure"
 
 ## Launch Platform Instance
 
-- Open the Amazon EC2 console at <https://console.aws.amazon.com/ec2/.>
+- Open the Amazon EC2 console at `https://console.aws.amazon.com/ec2/.`
 - Choose Launch Instance, choose an ubuntu 20.04 Amazon Machine Image (AMI), or if you have any ubuntu 20.04 AMI, select it.
 
 [![ami](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)
@@ -95,7 +94,7 @@ sidebar_label: "Prepare Infrastructure"
 
 ## Launch Studio Workspace Instance / AppDeployment Instance
 
-- Open the Amazon EC2 console at <https://console.aws.amazon.com/ec2/.>
+- Open the Amazon EC2 console at `https://console.aws.amazon.com/ec2/.`
 - Choose Launch Instance, choose an ubuntu 16.04 Amazon Machine Image (AMI), or if you have any ubuntu 20.04 AMI, select it.
 
 [![ami](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)](/learn/assets/wme-setup/wme-setup-in-aws/selecting-ami.png)

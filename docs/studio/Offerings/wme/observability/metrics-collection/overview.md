@@ -3,7 +3,6 @@ title: "Metrics Collection"
 id: "overview"
 sidebar_label: "Overview"
 ---
----
 
 *Metrics* is needed to get realtime application performance insights.
 

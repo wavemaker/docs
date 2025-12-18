@@ -3,7 +3,6 @@ title: "Fluentd Tags"
 id: "fluentd"
 sidebar_label: "fluentd tags"
 ---
----
 
 ## Introduction
 

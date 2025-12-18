@@ -3,7 +3,6 @@ title: "Logs Aggregation"
 id: "overview"
 sidebar_label: "Overview"
 ---
----
 
 Since WaveMaker is built on Java, we use *[Slf4j](http://www.slf4j.org/)* and *[log4j2](http://logging.apache.org/log4j/2.x/)* Java libraries to generate the required logs at the platform level.
 

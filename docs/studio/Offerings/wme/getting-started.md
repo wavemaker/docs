@@ -3,7 +3,6 @@ title: "WaveMaker Enterprise Setup Process"
 id: "getting-started"
 sidebar_label: "Enterprise Setup Process"
 ---
----
 
 WaveMaker Enterprise (WME) is an on-premise offering of WaveMaker. WME can be installed on an on-premise/private, or public cloud. It can be hosted and managed by an organization on their own infrastructure.
 
