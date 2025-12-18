@@ -25,7 +25,7 @@ This guide has written based on Esxi version 6.5.
 
 - Select OVF or OVA file for VM would like to deploy. User Platform Instance OVA.
 
-[![selecting ova template](./assets/images/selecting-the-ovf-template-for-deploy.png)](/learn/assets//wme-setup/vm-creation-by-using-ova/selecting-the-ovf-template-for-deploy.png)
+[![selecting ova template](./assets/images/selecting-the-ovf-template-for-deploy.png)](./assets/images/selecting-the-ovf-template-for-deploy.png)
 
 - Select the database in which to store the configuration and disk files.
 

@@ -16,7 +16,7 @@ One of the most popular centralized logging solutions is the Elasticsearch, Flue
 - **Fluentd**: Collects the application logs, transforms them into the required format, and pushes the transformed data to *Elasticsearch*.
 - **Kibana**: Since data can't be directly accessed from *Elasticsearch*, *Kibana* provides a powerful UI that helps in accessing or visualizing the logs.
   
-> We will be focusing more on [*Kibana*](/learn/on-premise/observability/logs-aggregation/kibana) as *Elasticsearch* and *Fluentd* are only used as a part of the integration.  
+> We will be focusing more on [*Kibana*](/docs/studio/Offerings/wme/observability/logs-aggregation/kibana) as *Elasticsearch* and *Fluentd* are only used as a part of the integration.  
 
 ## Architecture
 

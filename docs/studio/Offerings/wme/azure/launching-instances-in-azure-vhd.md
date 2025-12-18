@@ -249,5 +249,5 @@ UUID=your-block-device-UUID      /data     ext4     defaults ,nofail  0  2
 
 ## What's next
 
-- Install [prerequisites softwares](/learn/on-premise/azure/install-prerequisites) based on OS.
+- Install [prerequisites softwares](/docs/studio/Offerings/wme/azure/install-prerequisites) based on OS.
 - Start WME Installation process

@@ -35,7 +35,7 @@ Ssh credentials of the Instance either should have root privileges or provide re
 
 ## Add Capacity to App Deployment
 
-- Select App Deployments section and at deployment capacity select add capacity for adding an Instance to deployment capacity.if Instance not created [launch instance with required prerequisites](/learn/on-premise/prerequisites)
+- Select App Deployments section and at deployment capacity select add capacity for adding an Instance to deployment capacity.if Instance not created [launch instance with required prerequisites](/docs/studio/Offerings/wme/prerequisites)
 - Provide Instance details and authentication details to connect to the Instance,if you want you can test the connection and details of the instance by selecting the test option.
 
 [![deployment capacity](./assets/images/app-deployment-capacity.png)](./assets/images/app-deployment-capacity.png)

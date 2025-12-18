@@ -5,7 +5,7 @@ sidebar_label: "Install Prerequisites Softwares"
 ---
 
 :::note
- Before Proceeding with installing the softwares, Check the [Requirements here](/learn/on-premise/prerequisites).
+ Before Proceeding with installing the softwares, Check the [Requirements here](/docs/studio/Offerings/wme/prerequisites).
 :::
 
 :::note

@@ -29,7 +29,7 @@ WaveMaker Enterprise consists of the following four components.
 
 ### 1. WaveMaker Studio
 
-WaveMaker, a low-code platform with over 80 widgets that work out-of-the-box to build modern end-to-end application development with team collaboration. To learn more about working with WaveMaker Studio, see [Getting Started with WaveMaker](/learn/documentation-reference).
+WaveMaker, a low-code platform with over 80 widgets that work out-of-the-box to build modern end-to-end application development with team collaboration. To learn more about working with WaveMaker Studio, see Getting Started with WaveMaker.
 
 ### 2. WaveMaker Cloud
 
@@ -39,7 +39,7 @@ WaveMaker Cloud is a Containerized Cloud, which consists of three instances.
 2. AppDeployment Instance 
 3. Platform Instance 
 
-Both StudioWorkspace and AppDeployment are managed by Platform instance. For more information about the platform concepts, see [WaveMaker Architecture](/learn/on-premise/architecture#platform).
+Both StudioWorkspace and AppDeployment are managed by Platform instance. For more information about the platform concepts, see [WaveMaker Architecture]().
 
 ### 3. Config Portal
 
@@ -53,4 +53,4 @@ Launchpad is a WaveMaker's administrative console where you can configure users,
 
 WaveMaker follows [semantic versioning](https://semver.org/). WaveMaker releases enterprise version upgrades for major, minor versions. Patch versions are available on demand.
 
-To see the detailed list of release updates, see [WaveMaker Release Notes](/learn/wavemaker-release-notes#current-release-details).
+To see the detailed list of release updates, see WaveMaker Release Notes.

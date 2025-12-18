@@ -138,23 +138,23 @@ There are two possibilities depends on your infrastructure.
 
 ##### AWS
 
-- To launch WME Platform Instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](/learn/on-premise/aws/wavemaker-enterprise-setup-on-aws).
+- To launch WME Platform Instance in AWS cloud environment please refer [WME Platform instance Infrastructure in AWS](/docs/studio/Offerings/wme/aws/wavemaker-enterprise-setup-on-aws).
   
 ##### AZURE
 
-- To launch WME Platform virtual machines in AZURE cloud environment please refer [WME Platform instance Infrastructure in AZURE](/learn/on-premise/azure/wavemaker-enterprise-setup-on-azure).
+- To launch WME Platform virtual machines in AZURE cloud environment please refer [WME Platform instance Infrastructure in AZURE](/docs/studio/Offerings/wme/azure/wavemaker-enterprise-setup-on-azure).
   
 ##### GCP
 
-- To launch WME Platform virtual machines in GCP cloud environment please refer [WME Platform instance Infrastructure in GCP](/learn/on-premise/gcp/wavemaker-enterprise-setup-on-gcp).
-  
+- To launch WME Platform virtual machines in GCP cloud environment, follow the general [Prerequisites](/docs/studio/Offerings/wme/prerequisites) and installation steps.
+
 ##### VMWARE ESXI
 
-- To create WME Platform virtual machines in VMware Esxi please refer [WME Platform instance Infrastructure in VMware Esxi](/learn/on-premise/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
+- To create WME Platform virtual machines in VMware Esxi please refer [WME Platform instance Infrastructure in VMware Esxi](/docs/studio/Offerings/wme/vmware-esxi/wavemaker-enterprise-setup-on-vmware).
 
 ##### Hyper-V
 
-- To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](/learn/on-premise/hyper-v/wavemaker-enterprise-setup-on-hyperv).
+- To create WME Platform virtual machines in Hyper-V please refer [WME Platform instance Infrastructure in Hyper-V](/docs/studio/Offerings/wme/hyper-v/wavemaker-enterprise-setup-on-hyperv).
 
 #### Volumes Based Disks Restoring(AWS, GCP, Azure)
 
@@ -191,14 +191,14 @@ bash wme-installer.sh --data-untar
 
 #### Launch WME StudioWorkspace Instance/AppDeployment Instances
 
-- Launch StudioWorkspace Instance/AppDeployment Instance in different Infra providers from Link [WaveMaker Launch Instances](/learn/on-premise/prerequisites).
+- Launch StudioWorkspace Instance/AppDeployment Instance in different Infra providers from Link [WaveMaker Launch Instances](/docs/studio/Offerings/wme/prerequisites).
 
 #### Installing WME on New Platform Instance
 
-- For Download WaveMaker installation package please refer [WaveMaker package Installation](/learn/on-premise/aws/install/download-copy-installer).
-- Extract Package please refer [WaveMaker package extraction](/learn/on-premise/aws/install/extract-package).
-Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise/aws/install/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
-- Setup using config wizard please refer [WaveMaker configwizard setup](/learn/on-premise/aws/install/setup-using-cw) and use same WaveMaker studio and built apps Domain names.
+- For Download WaveMaker installation package please refer [WaveMaker package Installation](/docs/studio/Offerings/wme/aws/install/download-copy-installer).
+- Extract Package please refer [WaveMaker package extraction](/docs/studio/Offerings/wme/aws/install/extract-package).
+Initializing the setup please refer [WaveMaker Initialization](/docs/studio/Offerings/wme/aws/install/initilize-setup). Make sure to provide the same CIDR Range which is used in the previous setup.
+- Setup using config wizard please refer [WaveMaker configwizard setup](/docs/studio/Offerings/wme/aws/install/setup-using-cw) and use same WaveMaker studio and built apps Domain names.
 
 ### Setups when allowed to execute Operating System Upgrade Commands
 
@@ -232,5 +232,5 @@ Initializing the setup please refer [WaveMaker Initialization](/learn/on-premise
 ## Add StudioWorkspace/AppDeployment Instances from launchpad
 
 - Add Newly launched Instances or Upgraded Instances to Platform from Launchpad.
-- For adding Developer Instance you can refer [WME Add Developer Capacity](/learn/on-premise/configure/add-dev-capacity)
-- Similarly, for AppDeployment Instances you can refer [WME Add Apps Capacity](/learn/on-premise/configure/add-apps-capacity)
+- For adding Developer Instance you can refer [WME Add Developer Capacity](/docs/studio/Offerings/wme/configure/add-dev-capacity)
+- Similarly, for AppDeployment Instances you can refer [WME Add Apps Capacity](/docs/studio/Offerings/wme/configure/add-apps-capacity)
