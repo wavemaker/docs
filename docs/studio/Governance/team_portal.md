@@ -3,6 +3,7 @@
 Centralized portal for team management, collaboration, and project oversight.
 
 ## Overview
+
 The Team Portal provides a comprehensive interface for managing team members, assigning roles, tracking activities, and facilitating collaboration across projects within the WaveMaker platform.
 
 ## Team Management
@@ -10,6 +11,7 @@ The Team Portal provides a comprehensive interface for managing team members, as
 ### Team Structure
 
 #### Organization Hierarchy
+
 ```
 Organization
 ├── Teams
@@ -25,6 +27,7 @@ Organization
 ### Team Members
 
 #### Adding Members
+
 1. Navigate to Team Portal
 2. Click "Add Member"
 3. Enter email address
@@ -39,6 +42,7 @@ Organization
 #### Member Roles
 
 **Administrator**
+
 - Manage team members
 - Create/delete projects
 - Configure settings
@@ -46,6 +50,7 @@ Organization
 - Manage billing
 
 **Developer**
+
 - Create/edit code
 - Deploy applications
 - Access assigned projects
@@ -53,6 +58,7 @@ Organization
 - Cannot manage members
 
 **Designer**
+
 - Design UI/UX
 - Create layouts
 - Style components
@@ -60,6 +66,7 @@ Organization
 - Cannot access code
 
 **Viewer**
+
 - View projects
 - Read documentation
 - No edit access
@@ -71,6 +78,7 @@ Organization
 ### Project Overview
 
 #### Project Dashboard
+
 - Active projects
 - Project status
 - Team assignments
@@ -78,6 +86,7 @@ Organization
 - Resource usage
 
 #### Project Information
+
 ```javascript
 {
   "projectName": "Customer Portal",
@@ -96,12 +105,14 @@ Organization
 ### Project Access Control
 
 #### Access Levels
+
 - **Owner** - Full project control
 - **Editor** - Edit and deploy
 - **Contributor** - Edit only
 - **Viewer** - Read-only
 
 #### Setting Permissions
+
 ```javascript
 // Assign project access
 {
@@ -120,6 +131,7 @@ Organization
 ## Collaboration Features
 
 ### Activity Feed
+
 - Recent commits
 - Deployments
 - Member activities
@@ -127,6 +139,7 @@ Organization
 - Notifications
 
 ### Team Chat
+
 - Project-specific channels
 - Direct messaging
 - File sharing
@@ -134,6 +147,7 @@ Organization
 - Integrations (Slack, Teams)
 
 ### Code Reviews
+
 - Pull request reviews
 - Inline comments
 - Approval workflow
@@ -145,6 +159,7 @@ Organization
 ### Team Reports
 
 #### Activity Report
+
 - Developer productivity
 - Commit frequency
 - Project progress
@@ -152,6 +167,7 @@ Organization
 - Resource utilization
 
 #### Project Health
+
 - Build status
 - Deployment success rate
 - Error frequency
@@ -159,6 +175,7 @@ Organization
 - Code quality
 
 ### Analytics Dashboard
+
 ```javascript
 {
   "metrics": {
@@ -176,6 +193,7 @@ Organization
 ### Team Settings
 
 #### General Settings
+
 - Team name
 - Organization details
 - Default roles
@@ -183,6 +201,7 @@ Organization
 - Notification preferences
 
 #### Integration Settings
+
 - Git repository
 - CI/CD pipeline
 - Cloud providers
@@ -190,6 +209,7 @@ Organization
 - SSO configuration
 
 ### Billing Management
+
 - View usage
 - Manage subscriptions
 - Payment methods
@@ -199,6 +219,7 @@ Organization
 ## Best Practices
 
 ### Team Management
+
 1. **Define clear roles** and responsibilities
 2. **Regular team meetings** and standups
 3. **Code review process**
@@ -206,6 +227,7 @@ Organization
 5. **Communication protocols**
 
 ### Project Organization
+
 1. **Consistent naming** conventions
 2. **Project templates**
 3. **Shared resources**
@@ -216,4 +238,4 @@ Organization
 
 - [Projects Hub](./projects_hub.md)
 - [App Portal](./app_portal.md)
-- [WME Variant](../Variants/wme.md)
+- [WME Variant](../Offerings/wme.md)

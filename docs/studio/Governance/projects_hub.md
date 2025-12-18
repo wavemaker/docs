@@ -3,6 +3,7 @@
 Centralized hub for managing all projects, monitoring status, and organizing development work.
 
 ## Overview
+
 The Projects Hub serves as the central location for viewing, managing, and organizing all projects within your organization. It provides a comprehensive overview of project status, resource allocation, and development progress.
 
 ## Projects Dashboard
@@ -10,6 +11,7 @@ The Projects Hub serves as the central location for viewing, managing, and organ
 ### Overview
 
 #### Dashboard Components
+
 - **Active Projects** - Currently in development
 - **Deployed Projects** - Production applications
 - **Archived Projects** - Completed/inactive projects
@@ -19,6 +21,7 @@ The Projects Hub serves as the central location for viewing, managing, and organ
 ### Project List
 
 #### Project Card Information
+
 ```javascript
 {
   "projectName": "E-Commerce Platform",
@@ -37,6 +40,7 @@ The Projects Hub serves as the central location for viewing, managing, and organ
 ### Creating Projects
 
 #### New Project
+
 1. Click "Create Project"
 2. Choose template or start blank
 3. Configure project:
@@ -48,6 +52,7 @@ The Projects Hub serves as the central location for viewing, managing, and organ
 5. Initialize project
 
 #### Project Templates
+
 - **Responsive Web App** - Mobile-first template
 - **Dashboard Application** - Admin dashboard
 - **E-Commerce** - Shopping platform
@@ -57,6 +62,7 @@ The Projects Hub serves as the central location for viewing, managing, and organ
 ### Project Organization
 
 #### Folder Structure
+
 ```
 Projects
 ├── Active
@@ -72,6 +78,7 @@ Projects
 ```
 
 #### Tags and Labels
+
 - Environment (Dev, Test, Prod)
 - Technology (React, Angular, Vue)
 - Status (Active, Paused, Complete)
@@ -83,6 +90,7 @@ Projects
 ### Status Tracking
 
 #### Project Health Metrics
+
 ```javascript
 {
   "buildStatus": "Passing",
@@ -95,6 +103,7 @@ Projects
 ```
 
 #### Performance Metrics
+
 - Build time
 - Deployment frequency
 - Mean time to recovery
@@ -102,6 +111,7 @@ Projects
 - Lead time for changes
 
 ### Activity Timeline
+
 - Recent commits
 - Pull requests
 - Deployments
@@ -113,6 +123,7 @@ Projects
 ### Team Assignment
 
 #### Assign Team Members
+
 ```javascript
 {
   "project": "CustomerPortal",
@@ -132,6 +143,7 @@ Projects
 ```
 
 ### Resource Allocation
+
 - Developer hours
 - Infrastructure costs
 - Cloud resources
@@ -141,6 +153,7 @@ Projects
 ## Project Settings
 
 ### General Settings
+
 - Project name and description
 - Visibility (Public/Private)
 - Owner and maintainers
@@ -148,6 +161,7 @@ Projects
 - Archive/Delete options
 
 ### Technical Settings
+
 - Technology stack
 - Database configuration
 - API integrations
@@ -155,6 +169,7 @@ Projects
 - Deployment configuration
 
 ### Access Control
+
 - Team member roles
 - Permission levels
 - External access
@@ -164,6 +179,7 @@ Projects
 ## Deployment Management
 
 ### Deployment History
+
 ```javascript
 {
   "deployments": [
@@ -180,6 +196,7 @@ Projects
 ```
 
 ### Environment Management
+
 - Development
 - Staging
 - UAT
@@ -189,6 +206,7 @@ Projects
 ## Collaboration
 
 ### Project Comments
+
 - Discussion threads
 - Task comments
 - Code reviews
@@ -196,6 +214,7 @@ Projects
 - @mentions
 
 ### Documentation
+
 - Project README
 - Technical docs
 - API documentation
@@ -207,6 +226,7 @@ Projects
 ### Project Analytics
 
 #### Development Metrics
+
 - Commit frequency
 - Lines of code
 - Developer contribution
@@ -214,6 +234,7 @@ Projects
 - Merge frequency
 
 #### Quality Metrics
+
 - Code coverage
 - Bug count
 - Technical debt
@@ -221,6 +242,7 @@ Projects
 - Duplication
 
 ### Reporting
+
 - Weekly/Monthly reports
 - Executive summaries
 - Team performance
@@ -232,6 +254,7 @@ Projects
 ### Creating Templates
 
 #### Template Definition
+
 ```javascript
 {
   "name": "E-Commerce Template",
@@ -252,6 +275,7 @@ Projects
 ```
 
 ### Using Templates
+
 1. Select template
 2. Configure options
 3. Customize settings
@@ -261,6 +285,7 @@ Projects
 ## Best Practices
 
 ### Project Organization
+
 1. **Clear naming conventions**
 2. **Consistent structure**
 3. **Regular updates**
@@ -268,6 +293,7 @@ Projects
 5. **Version control**
 
 ### Team Management
+
 1. **Define roles** clearly
 2. **Regular communication**
 3. **Code reviews**
@@ -275,6 +301,7 @@ Projects
 5. **Performance tracking**
 
 ### Deployment
+
 1. **Automated pipelines**
 2. **Testing before deploy**
 3. **Staged rollouts**
@@ -284,6 +311,7 @@ Projects
 ## Troubleshooting
 
 ### Common Issues
+
 - Project access problems
 - Build failures
 - Deployment errors
@@ -294,4 +322,4 @@ Projects
 
 - [Team Portal](./team_portal.md)
 - [App Portal](./app_portal.md)
-- [WME Variant](../Variants/wme.md)
+- [WME Variant](../Offerings/wme.md)
