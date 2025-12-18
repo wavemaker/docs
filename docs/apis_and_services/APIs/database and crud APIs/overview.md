@@ -111,11 +111,9 @@ Learn more: [Queries and Procedures](./queries_and_procedures.md)
 
 ---
 
-## Source Code Transparency and Control
+## Source Code and Control
 
 WaveMaker gnerated code is not black boxed. All generated code is human-readable, standards-based source code that follows well-defined architectural best practices. The generated code is designed to be easily understood, extended, and maintained by developers, ensuring long-term flexibility and control.
-
-### Key Highlights
 
 - WaveMaker generates **human-readable, standards-based code**
 - Follows proven architectural patterns using **Java, Spring, and Hibernate/JPA**
