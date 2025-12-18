@@ -102,7 +102,11 @@ WaveMaker generates source code for CRUD operations for each entity in the datab
 | **POJOs (Model Layer)** | Represents database entities with fields and annotations, used by service and DAO layers. |
 | **Design-time Configuration Files** | Stores metadata for database connections, API specifications, queries, procedures, and schema information. |
 
-Learn more: [VCS Workspace](../../../studio/Workspaces/vcs_workspace.md)
+<!-- Learn more: [VCS Workspace](../../../studio/Workspaces/vcs_workspace.md) -->
+
+
+For more details, refer to [Wavemaker Generated Backend Architecture](orm_artifacts.md) which explain how to define and manage advanced database logic. 
+
 
 
 ![alt text](image-1.png)
@@ -123,6 +127,5 @@ This enables teams to build data-driven applications quickly while retaining the
 
 ## Related Documentation
 
-- [Accessing Database](./accessing_database.md) - Learn how to connect to databases
 - [ORM Artifacts](./orm_artifacts.md) - Understanding generated ORM artifacts
 - [Queries and Procedures](./queries_and_procedures.md) - Custom queries and stored procedures
