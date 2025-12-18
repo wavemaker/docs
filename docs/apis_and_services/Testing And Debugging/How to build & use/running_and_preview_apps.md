@@ -1,97 +1,48 @@
-# Running and Preview Apps
+# Test and Run (Preview) Applications
 
-Learn how to build, run, and preview your applications during development.
+Once application design and development are complete, the next step is testing. The simplest and quickest way to test an application in WaveMaker is by using the **Preview** option available in WaveMaker Studio.
 
-## Overview
-This guide covers the process of building and running your application in different environments for testing and preview purposes.
+## Previewing an Application
 
-## Building Your Application
+Clicking **Preview** launches the application on the WaveMaker server bundled with the Studio and generates a URL that can be accessed by users within the same network (for example, inside your network firewall).
 
-### Build Process
-1. Compile source code
-2. Bundle dependencies
-3. Generate artifacts
-4. Optimize assets
-5. Create deployment package
+> **Note:** Preview mode is intended only for testing and evaluation purposes. Since the application runs on the WaveMaker Studio server, stopping the Studio or logging out will also stop the application.
 
-### Build Commands
-- Development build
-- Production build
-- Debug build
-- Release build
+![alt text](image.png)
 
-### Build Configuration
-- Build settings
-- Environment variables
-- Compiler options
-- Optimization settings
+Key behaviors of Preview mode include:
 
-## Running Applications Locally
+- The application opens in a new browser window.
+- The app loads the page from which the **Preview** button was triggered.
+- If application security is enabled, users are prompted to log in and are redirected based on their assigned roles and permissions.
+- A **Preview Toolbar** appears, allowing you to:
+  - Select different target devices (desktop, tablet, or mobile) to simulate responsive behavior.
+  - View the application layout across multiple screen sizes.
+  - Scan a QR code to open the app directly on a mobile device.
+- The preview toolbar can be hidden if it is not required.
 
-### Development Mode
-- Hot reload enabled
-- Debug mode active
-- Development server
-- Live preview
+## Application Runtime URL
 
-### Starting the Application
-- Start development server
-- Configure port settings
-- Set environment variables
-- Launch application
+When the application runs in Preview mode, it is accessed through a URL in the following format:
 
-## Preview Options
+https://www.wavemakeronline.com/unique-id/app-name/login.html#/login
 
-### Local Preview
-- Preview in development environment
-- Test on localhost
-- Browser preview
-- Mobile device preview
+csharp
+Copy code
 
-### Preview Deployment
-- Deploy to staging environment
-- Preview URL generation
-- Share preview with team
-- Collect feedback
+### URL Components Explained
 
-## Development Tools
+- **`www.wavemakeronline.com`** – The WaveMaker Cloud domain where preview applications are hosted.
+- **`unique-id`** – The application space identifier created during user registration. This value is unique per user.
+- **`app-name`** – The name of the WaveMaker project. This can be customized by configuring the *context root* during deployment.
+- **`login.html`** – The default entry point for applications with security enabled.  
+  - If security is disabled, this segment is omitted, and the URL appears as:  
+    ```
+    https://www.wavemakeronline.com/unique-id/app-name/#/Main
+    ```
 
-### Development Server
-- Auto-restart on changes
-- Error reporting
-- Console logging
-- Performance monitoring
+## Availability in Preview Mode
 
-### Browser DevTools Integration
-- Inspect elements
-- Network monitoring
-- Console debugging
-- Performance profiling
-
-## Testing During Development
-
-### Quick Testing
-- Functional testing
-- UI/UX validation
-- Performance checks
-- Cross-browser testing
-
-### Preview Modes
-- Desktop preview
-- Tablet preview
-- Mobile preview
-- Responsive design testing
-
-## Debugging While Running
-- Breakpoint debugging
-- Variable inspection
-- Step-through execution
-- Error tracking
-
-## Best Practices
-- Regular builds during development
-- Test frequently in preview mode
-- Use different preview environments
-- Monitor build performance
-- Keep development environment clean
-- Document build configurations
+- The application remains accessible to other users as long as the project is open and running in WaveMaker Studio.
+- Closing the project, logging out, or opening a different project in WaveMaker Studio automatically stops the currently running application.
+- Preview deployments are temporary and are not intended for production or long-term use.
