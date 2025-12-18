@@ -255,6 +255,7 @@ body {
   }
 }
 .theme-doc-sidebar-menu.menu__list .menu__list {
+  border-left: 1px solid var(--ifm-default-border-color);
   .menu__link {
     margin: 0;
     border-left: 1px solid var(--ifm-default-border-color);
@@ -313,6 +314,7 @@ body {
 }
 .theme-doc-sidebar-container > :first-child {
   top: var(--ifm-top-nav-height);
+  max-height: calc(100vh - 64px);
 }
 
 a.theme-edit-this-page {
