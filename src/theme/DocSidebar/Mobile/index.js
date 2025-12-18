@@ -9,7 +9,6 @@ import DocSidebarItems from '@theme/DocSidebarItems';
 import SidebarSwitch from '../SidebarSwitch';
 // eslint-disable-next-line react/function-component-definition
 const DocSidebarMobileSecondaryMenu = ({sidebar, path}) => {
-  console.log(sidebar,path)
   const mobileSidebar = useNavbarMobileSidebar();
   return (
     <>
