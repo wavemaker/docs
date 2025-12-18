@@ -3,6 +3,7 @@
 Centralized portal for managing deployed applications, monitoring performance, and handling user access.
 
 ## Overview
+
 The App Portal provides a unified interface for managing all deployed applications, monitoring their health and performance, managing user access, and handling application lifecycle operations.
 
 ## Application Dashboard
@@ -10,6 +11,7 @@ The App Portal provides a unified interface for managing all deployed applicatio
 ### Overview Dashboard
 
 #### Key Metrics
+
 ```javascript
 {
   "totalApps": 24,
@@ -22,6 +24,7 @@ The App Portal provides a unified interface for managing all deployed applicatio
 ```
 
 #### Application Status
+
 - **Running** - Application is active
 - **Stopped** - Application is stopped
 - **Maintenance** - Under maintenance
@@ -31,6 +34,7 @@ The App Portal provides a unified interface for managing all deployed applicatio
 ### Application List
 
 #### App Card Information
+
 ```javascript
 {
   "appName": "Customer Portal",
@@ -50,6 +54,7 @@ The App Portal provides a unified interface for managing all deployed applicatio
 ### Application Details
 
 #### Overview Information
+
 - Application name
 - Version number
 - Environment
@@ -59,6 +64,7 @@ The App Portal provides a unified interface for managing all deployed applicatio
 - Tags
 
 #### Technical Details
+
 - Runtime environment
 - Database connections
 - API integrations
@@ -68,6 +74,7 @@ The App Portal provides a unified interface for managing all deployed applicatio
 ### Application Operations
 
 #### Start/Stop Application
+
 ```bash
 # Start application
 app-cli start customer-portal
@@ -80,6 +87,7 @@ app-cli restart customer-portal
 ```
 
 #### Scale Application
+
 ```yaml
 scaling:
   minInstances: 2
@@ -93,6 +101,7 @@ scaling:
 ### User Management
 
 #### Application Users
+
 ```javascript
 {
   "application": "CustomerPortal",
@@ -111,6 +120,7 @@ scaling:
 ```
 
 #### User Roles
+
 - **Admin** - Full application access
 - **Manager** - Management functions
 - **User** - Standard user access
@@ -120,6 +130,7 @@ scaling:
 ### Access Control
 
 #### Permissions
+
 ```javascript
 {
   "role": "Manager",
@@ -140,6 +151,7 @@ scaling:
 ### Performance Monitoring
 
 #### Real-Time Metrics
+
 - CPU usage
 - Memory usage
 - Network traffic
@@ -148,6 +160,7 @@ scaling:
 - Concurrent users
 
 #### Application Health
+
 ```javascript
 {
   "status": "Healthy",
@@ -162,6 +175,7 @@ scaling:
 ### Alerts and Notifications
 
 #### Alert Configuration
+
 ```yaml
 alerts:
   - name: High CPU Usage
@@ -185,6 +199,7 @@ alerts:
 ### Application Logs
 
 #### Log Viewer
+
 - Real-time log streaming
 - Log filtering
 - Log search
@@ -192,6 +207,7 @@ alerts:
 - Log retention
 
 #### Log Types
+
 - **Application Logs** - App-specific logs
 - **Access Logs** - User access logs
 - **Error Logs** - Error and exceptions
@@ -201,6 +217,7 @@ alerts:
 ### Analytics
 
 #### Usage Analytics
+
 ```javascript
 {
   "period": "Last 30 days",
@@ -215,6 +232,7 @@ alerts:
 ```
 
 #### User Analytics
+
 - Active users
 - User demographics
 - Feature usage
@@ -226,6 +244,7 @@ alerts:
 ### Deployment History
 
 #### Recent Deployments
+
 ```javascript
 {
   "deployments": [
@@ -244,6 +263,7 @@ alerts:
 ### Rollback
 
 #### Rollback to Previous Version
+
 1. Go to Deployment History
 2. Select version to rollback
 3. Click "Rollback"
@@ -255,6 +275,7 @@ alerts:
 ### Environment Variables
 
 #### Managing Variables
+
 ```javascript
 {
   "environment": "Production",
@@ -270,6 +291,7 @@ alerts:
 ### Application Settings
 
 #### Runtime Configuration
+
 - Memory allocation
 - CPU limits
 - Timeout settings
@@ -281,6 +303,7 @@ alerts:
 ### Scheduled Maintenance
 
 #### Maintenance Window
+
 ```javascript
 {
   "maintenanceWindow": {
@@ -297,6 +320,7 @@ alerts:
 ### Backup Management
 
 #### Backup Configuration
+
 ```yaml
 backup:
   enabled: true
@@ -316,6 +340,7 @@ backup:
 ### Security Dashboard
 
 #### Security Metrics
+
 - Active sessions
 - Failed login attempts
 - Security events
@@ -325,6 +350,7 @@ backup:
 ### Security Policies
 
 #### Access Policies
+
 ```javascript
 {
   "policies": {
@@ -347,6 +373,7 @@ backup:
 ### Resource Usage
 
 #### Cost Tracking
+
 ```javascript
 {
   "period": "December 2024",
@@ -361,6 +388,7 @@ backup:
 ```
 
 ### Optimization Recommendations
+
 - Reduce idle resources
 - Optimize database queries
 - Enable caching
@@ -372,6 +400,7 @@ backup:
 ### Application Reports
 
 #### Weekly Report
+
 - User activity
 - Performance metrics
 - Error summary
@@ -379,6 +408,7 @@ backup:
 - Cost analysis
 
 #### Monthly Dashboard
+
 - Growth trends
 - Usage patterns
 - System health
@@ -388,6 +418,7 @@ backup:
 ## Best Practices
 
 ### Application Management
+
 1. **Monitor regularly**
 2. **Set up alerts**
 3. **Regular backups**
@@ -395,6 +426,7 @@ backup:
 5. **Document changes**
 
 ### Performance
+
 1. **Optimize queries**
 2. **Use caching**
 3. **Scale appropriately**
@@ -402,6 +434,7 @@ backup:
 5. **Load testing**
 
 ### Security
+
 1. **Regular security audits**
 2. **Update dependencies**
 3. **Monitor access**
@@ -411,6 +444,7 @@ backup:
 ## Troubleshooting
 
 ### Common Issues
+
 - Application not responding
 - High resource usage
 - User access problems
@@ -421,5 +455,5 @@ backup:
 
 - [Team Portal](./team_portal.md)
 - [Projects Hub](./projects_hub.md)
-- [WME Variant](../Variants/wme.md)
-- [WMO Variant](../Variants/wmo.md)
+- [WME Variant](../Offerings/wme.md)
+- [WMO Variant](../Offerings/wmo.md)

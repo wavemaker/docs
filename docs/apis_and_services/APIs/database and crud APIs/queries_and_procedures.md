@@ -43,15 +43,11 @@ For both queries and procedures:
 ### How-to
 
 1. **Create a Custom Query**
-[Custom Query](../../../how-to/connect-database.md)
-  
+[Custom Query](#)
+
 2. **Bind Query to UI**
-[Bind Query](../../../how-to/connect-database.md)
-   
+[Bind Query](#)
+
 3. **Create a Stored Procedure API**
-[Stored Procedure](../../../how-to/connect-database.md)
+[Stored Procedure](#)
   
-
-
-
-

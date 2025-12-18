@@ -3,6 +3,7 @@
 Centralized workspace for managing application themes, styles, and CSS customization.
 
 ## Overview
+
 The Style Workspace provides a comprehensive environment for customizing the visual appearance of your application. It allows you to create themes, manage CSS, configure variables, and ensure consistent styling across your entire application.
 
 ## Style Workspace Interface
@@ -10,30 +11,35 @@ The Style Workspace provides a comprehensive environment for customizing the vis
 ### Main Components
 
 #### Theme Manager
+
 - Theme selection
 - Theme customization
 - Theme export/import
 - Theme versioning
 
 #### CSS Editor
+
 - Custom CSS editor
 - Syntax highlighting
 - Auto-completion
 - CSS validation
 
 #### Color Palette
+
 - Primary colors
 - Secondary colors
 - Accent colors
 - Semantic colors
 
 #### Typography
+
 - Font families
 - Font sizes
 - Font weights
 - Line heights
 
 #### Component Styles
+
 - Widget-specific styles
 - Global component themes
 - State-based styles
@@ -43,6 +49,7 @@ The Style Workspace provides a comprehensive environment for customizing the vis
 ### Built-in Themes
 
 #### Available Themes
+
 - **Material Design** - Google's Material Design
 - **Bootstrap** - Twitter Bootstrap styles
 - **Flat** - Minimalist flat design
@@ -51,6 +58,7 @@ The Style Workspace provides a comprehensive environment for customizing the vis
 - **Classic** - Traditional layouts
 
 ### Theme Selection
+
 1. Navigate to Style Workspace
 2. Click "Theme" dropdown
 3. Select desired theme
@@ -60,6 +68,7 @@ The Style Workspace provides a comprehensive environment for customizing the vis
 ### Theme Customization
 
 #### Color Scheme
+
 ```css
 /* Primary Colors */
 --primary-color: #007bff;
@@ -79,6 +88,7 @@ The Style Workspace provides a comprehensive environment for customizing the vis
 ```
 
 #### Typography Settings
+
 ```css
 /* Font Families */
 --font-family-base: 'Roboto', sans-serif;
@@ -98,6 +108,7 @@ The Style Workspace provides a comprehensive environment for customizing the vis
 ```
 
 #### Spacing
+
 ```css
 /* Spacing Scale */
 --spacing-xs: 4px;
@@ -112,6 +123,7 @@ The Style Workspace provides a comprehensive environment for customizing the vis
 ### Defining Variables
 
 #### Global Variables
+
 ```css
 :root {
   /* Brand Colors */
@@ -135,6 +147,7 @@ The Style Workspace provides a comprehensive environment for customizing the vis
 ```
 
 #### Using Variables
+
 ```css
 .custom-button {
   background-color: var(--brand-primary);
@@ -155,6 +168,7 @@ The Style Workspace provides a comprehensive environment for customizing the vis
 ### Application-Level CSS
 
 #### app.css
+
 ```css
 /* Global Styles */
 body {
@@ -194,6 +208,7 @@ a:hover {
 ### Page-Level CSS
 
 #### page.css
+
 ```css
 /* Login Page Styles */
 .login-page {
@@ -238,6 +253,7 @@ a:hover {
 ### Widget-Level CSS
 
 #### Custom Widget Styles
+
 ```css
 /* Custom Button */
 .custom-btn {
@@ -289,6 +305,7 @@ a:hover {
 ### Media Queries
 
 #### Mobile-First Approach
+
 ```css
 /* Mobile (default) */
 .content-grid {
@@ -314,6 +331,7 @@ a:hover {
 ```
 
 #### Responsive Typography
+
 ```css
 /* Base size */
 body {
@@ -338,6 +356,7 @@ body {
 ## Component Styling
 
 ### Button Styles
+
 ```css
 /* Base Button */
 .btn {
@@ -398,6 +417,7 @@ body {
 ```
 
 ### Form Styles
+
 ```css
 /* Form Controls */
 .form-control {
@@ -436,6 +456,7 @@ body {
 ```
 
 ### Card Styles
+
 ```css
 /* Card Container */
 .card {
@@ -474,6 +495,7 @@ body {
 ## Animations and Transitions
 
 ### CSS Animations
+
 ```css
 /* Fade In */
 @keyframes fadeIn {
@@ -519,6 +541,7 @@ body {
 ```
 
 ### Transitions
+
 ```css
 /* Smooth Transitions */
 .smooth-transition {
@@ -542,6 +565,7 @@ body {
 ## Dark Mode
 
 ### Dark Mode Variables
+
 ```css
 :root {
   --bg-primary: #ffffff;
@@ -567,6 +591,7 @@ body {
 ## Best Practices
 
 ### CSS Organization
+
 1. **Use consistent naming** conventions (BEM, SMACSS)
 2. **Group related styles** together
 3. **Comment complex styles**
@@ -574,6 +599,7 @@ body {
 5. **Use CSS variables** for consistency
 
 ### Performance
+
 1. **Minimize CSS file size**
 2. **Combine selectors** when possible
 3. **Avoid complex selectors**
@@ -581,6 +607,7 @@ body {
 5. **Optimize animations**
 
 ### Maintainability
+
 1. **Follow style guide**
 2. **Document custom styles**
 3. **Version control themes**
@@ -592,6 +619,7 @@ body {
 ### Common Issues
 
 **Styles Not Applying**
+
 - Check CSS selector specificity
 - Verify class names
 - Check for typos
@@ -599,12 +627,14 @@ body {
 - Inspect element in DevTools
 
 **Inconsistent Appearance**
+
 - Verify theme is applied
 - Check browser compatibility
 - Test responsive breakpoints
 - Validate CSS syntax
 
 **Performance Issues**
+
 - Reduce CSS file size
 - Optimize selectors
 - Minimize repaints/reflows
@@ -613,5 +643,5 @@ body {
 ## Related Documentation
 
 - [Design Workspace](./design_canvas.md)
-- [WME Variant](../Variants/wme.md)
-- [WMO Variant](../Variants/wmo.md)
+- [WME Variant](../Offerings/wme.md)
+- [WMO Variant](../Offerings/wmo.md)
