@@ -10,7 +10,7 @@ export default function SidebarSwitch({ path }) {
   return (
     <div className={styles.switchContainer}>
       <Link
-        to="/docs/dummy-docs/user_interfaces/Concepts/Overview"
+        to="/docs/user_interfaces/Concepts/Overview"
         className={`${styles.switchOption} ${styles.active}`}
         activeClassName={styles.active}
       >

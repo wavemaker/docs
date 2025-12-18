@@ -6,32 +6,32 @@ const topNavData = [
   {
     id: 1,
     label: "User Interface",
-    link: "/docs/dummy-docs/user_interfaces/Concepts/Overview",
+    link: "/docs/user_interfaces/Concepts/Overview",
   },
   {
     id: 2,
     label: "Building API’s & Microservices",
-    link: "/docs/dummy-docs/apis_and_services/Concepts/overview",
+    link: "/docs/apis_and_services/Concepts/overview",
   },
   {
     id: 3,
     label: "Build & Deploy",
-    link: "/docs/dummy-docs/build_and_deploy/overview",
+    link: "/docs/build_and_deploy/overview",
   },
   {
     id: 4,
     label: "Design System",
-    link: "/docs/dummy-docs/design-system/overview",
+    link: "/docs/design-system/overview",
   },
   {
     id: 5,
     label: "Developing with Agents",
-    link: "/docs/dummy-docs/developing_with_agents/overview",
+    link: "/docs/developing_with_agents/overview",
   },
   {
     id: 6,
     label: "Studio",
-    link: "/docs/dummy-docs/studio/overview",
+    link: "/docs/studio/overview",
   },
 ];
 
