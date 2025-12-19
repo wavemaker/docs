@@ -28,7 +28,7 @@ WaveMaker allows you to import these directly into your project.
 3. Select the appropriate destination folder inside your project structure.  
 4. Upload the files you want to include. You can import multiple files at once.  
 5. Use proper folder organization so WaveMaker can filter and use resources correctly (for example, images should be in an `Images` folder if they are to be used with image widgets).  
-6. You can create sub-folders or nested folders by using `/` as the separator, such as `resources/images/icons`. :contentReference[oaicite:3]{index=3}
+6. You can create sub-folders or nested folders by using `/` as the separator, such as `resources/images/icons`. 
 
 After importing, the resources are available in your project and can be referenced or bound to widgets and logic.
 
