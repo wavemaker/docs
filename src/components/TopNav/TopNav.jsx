@@ -10,28 +10,28 @@ const topNavData = [
   },
   {
     id: 2,
-    label: "Building API’s & Microservices",
-    link: "/docs/apis-and-services/concepts/overview",
-  },
-  {
-    id: 3,
-    label: "Build & Deploy",
-    link: "/docs/build-and-deploy/overview",
-  },
-  {
-    id: 4,
     label: "Design System",
     link: "/docs/design-system/overview",
   },
   {
-    id: 5,
+    id: 3,
     label: "Developing with Agents",
     link: "/docs/developing-with-agents/overview",
   },
   {
-    id: 6,
+    id: 4,
+    label: "Building API’s & Microservices",
+    link: "/docs/apis-and-services/concepts/overview",
+  },
+  {
+    id: 5,
     label: "Studio",
     link: "/docs/studio/overview",
+  },
+  {
+    id: 6,
+    label: "Build & Deploy",
+    link: "/docs/build-and-deploy/overview",
   },
 ];
 
