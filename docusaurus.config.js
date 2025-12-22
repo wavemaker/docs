@@ -45,6 +45,8 @@ const config = {
           //TODO: Update the editUrl to point to correct branch
           editUrl:
             "https://github.com/wavemaker/docs/tree/release-12/",
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: true,
