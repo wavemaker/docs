@@ -27,7 +27,7 @@ const envData = [
     icon: "/img/icon/userInterfaceicon.svg",
     title: "User Interfaces",
     desc: "Create scalable web mobile interfaces",
-    link: "/docs/user-interfaces/concepts/overview",
+    link: "/docs/user-interfaces/web/concepts/overview",
   },
   {
     id: 2,

@@ -8,11 +8,11 @@ export default [
         "items": [
             {
                 "type": "doc",
-                "id": "user-interfaces/concepts/overview"
+                "id": "user-interfaces/web/concepts/overview"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/concepts/tech-stack"
+                "id": "user-interfaces/web/concepts/tech-stack"
             }
         ]
     },
@@ -24,11 +24,11 @@ export default [
         "items": [
             {
                 "type": "doc",
-                "id": "user-interfaces/components/mobile"
+                "id": "user-interfaces/web/components/mobile"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/components/web"
+                "id": "user-interfaces/web/components/web"
             }
         ]
     },
@@ -40,27 +40,27 @@ export default [
         "items": [
             {
                 "type": "doc",
-                "id": "user-interfaces/develop/create-page-working-with-layouts"
+                "id": "user-interfaces/web/develop/create-page-working-with-layouts"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/develop/styling-with-design-tokens"
+                "id": "user-interfaces/web/develop/styling-with-design-tokens"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/develop/responsive-design"
+                "id": "user-interfaces/web/develop/responsive-design"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/develop/ui-event-handling"
+                "id": "user-interfaces/web/develop/ui-event-handling"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/develop/input-validations"
+                "id": "user-interfaces/web/develop/input-validations"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/develop/state-management"
+                "id": "user-interfaces/web/develop/state-management"
             },
             {
                 "type": "category",
@@ -70,15 +70,15 @@ export default [
                 "items": [
                     {
                         "type": "doc",
-                        "id": "user-interfaces/develop/integrating-with-apis/life-cycle-hooks"
+                        "id": "user-interfaces/web/develop/integrating-with-apis/life-cycle-hooks"
                     },
                     {
                         "type": "doc",
-                        "id": "user-interfaces/develop/integrating-with-apis/types"
+                        "id": "user-interfaces/web/develop/integrating-with-apis/types"
                     },
                     {
                         "type": "doc",
-                        "id": "user-interfaces/develop/integrating-with-apis/variables"
+                        "id": "user-interfaces/web/develop/integrating-with-apis/variables"
                     }
                 ]
             }
@@ -92,11 +92,11 @@ export default [
         "items": [
             {
                 "type": "doc",
-                "id": "user-interfaces/enterprise-capabilities/accessibility"
+                "id": "user-interfaces/web/enterprise-capabilities/accessibility"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/enterprise-capabilities/language-support-i18n"
+                "id": "user-interfaces/web/enterprise-capabilities/language-support-i18n"
             },
             {
                 "type": "category",
@@ -106,17 +106,17 @@ export default [
                 "items": [
                     {
                         "type": "doc",
-                        "id": "user-interfaces/enterprise-capabilities/prefabs/wmx-components-mobile"
+                        "id": "user-interfaces/web/enterprise-capabilities/prefabs/wmx-components-mobile"
                     }
                 ]
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/enterprise-capabilities/prefabs"
+                "id": "user-interfaces/web/enterprise-capabilities/prefabs"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/enterprise-capabilities/role-based-access-control"
+                "id": "user-interfaces/web/enterprise-capabilities/role-based-access-control"
             }
         ]
     },
@@ -134,7 +134,7 @@ export default [
                 "items": [
                     {
                         "type": "doc",
-                        "id": "user-interfaces/testing-and-debugging/community-debugging-tools/flipper-expo-dev-tools"
+                        "id": "user-interfaces/web/testing-and-debugging/community-debugging-tools/flipper-expo-dev-tools"
                     }
                 ]
             },
@@ -146,11 +146,11 @@ export default [
                 "items": [
                     {
                         "type": "doc",
-                        "id": "user-interfaces/testing-and-debugging/testing-strategies/ui-testing-mobile"
+                        "id": "user-interfaces/web/testing-and-debugging/testing-strategies/ui-testing-mobile"
                     },
                     {
                         "type": "doc",
-                        "id": "user-interfaces/testing-and-debugging/testing-strategies/ui-testing-web"
+                        "id": "user-interfaces/web/testing-and-debugging/testing-strategies/ui-testing-web"
                     }
                 ]
             },
@@ -162,7 +162,7 @@ export default [
                 "items": [
                     {
                         "type": "doc",
-                        "id": "user-interfaces/testing-and-debugging/unit-testing/web-and-mobile"
+                        "id": "user-interfaces/web/testing-and-debugging/unit-testing/web-and-mobile"
                     }
                 ]
             },
@@ -174,7 +174,7 @@ export default [
                 "items": [
                     {
                         "type": "doc",
-                        "id": "user-interfaces/testing-and-debugging/wm-debugging-tools/wave-pulse-inspection-frameworks"
+                        "id": "user-interfaces/web/testing-and-debugging/wm-debugging-tools/wave-pulse-inspection-frameworks"
                     }
                 ]
             }
@@ -188,15 +188,15 @@ export default [
         "items": [
             {
                 "type": "doc",
-                "id": "user-interfaces/device-capabilities-mobile/adding-plugins"
+                "id": "user-interfaces/web/device-capabilities-mobile/adding-plugins"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/device-capabilities-mobile/enabling-gestures"
+                "id": "user-interfaces/web/device-capabilities-mobile/enabling-gestures"
             },
             {
                 "type": "doc",
-                "id": "user-interfaces/device-capabilities-mobile/offline-support"
+                "id": "user-interfaces/web/device-capabilities-mobile/offline-support"
             }
         ]
     }

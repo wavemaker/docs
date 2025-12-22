@@ -6,7 +6,7 @@ const topNavData = [
   {
     id: 1,
     label: "User Interface",
-    link: "/docs/user-interfaces/concepts/overview",
+    link: "/docs/user-interfaces/web/concepts/overview",
   },
   {
     id: 2,
@@ -44,7 +44,11 @@ export default function SecondaryNavbar({ navItems = topNavData }) {
           <nav className="top_nav">
             <ul className="nav-main">
               {navItems.map((item) => {
-                const isActive = location.pathname.startsWith(item.link);
+                // For User Interface, check if path starts with /docs/user-interfaces/
+                // to make it active for both web and mobile sections
+                const isActive = item.label === "User Interface"
+                  ? location.pathname.startsWith("/docs/user-interfaces/")
+                  : location.pathname.startsWith(item.link);
                 return (
                   <li
                     key={item.id}

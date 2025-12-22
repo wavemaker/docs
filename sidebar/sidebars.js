@@ -7,7 +7,8 @@ import deploySidebar from './sidebars/deploySidebar';
 import designSystemSidebar from './sidebars/designSystemSidebar';
 import guideSidebar from './sidebars/guideSidebar';
 import studioSidebar from './sidebars/studioSidebar';
-import userInterfacesSidebar from './sidebars/userInterfacesSidebar';
+import userInterfacesWebSidebar from './sidebars/userInterfacesWebSidebar';
+import userInterfacesMobileSidebar from './sidebars/userInterfacesMobileSidebar';
 /**
  * Creating a sidebar enables you to:
  - create an ordered group of docs
@@ -28,7 +29,8 @@ const sidebars = {
   deploySidebar,
   guideSidebar,
   studioSidebar,
-  userInterfacesSidebar,
+  userInterfacesWebSidebar,
+  userInterfacesMobileSidebar,
 
   // But you can create a sidebar manually one by one
   /*
