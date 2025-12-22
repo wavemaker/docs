@@ -42,8 +42,9 @@ const config = {
           sidebarPath: "./sidebar/sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          //TODO: Update the editUrl to point to correct branch
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/wavemaker/docs/tree/release-12/",
         },
         blog: {
           showReadingTime: true,
