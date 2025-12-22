@@ -60,6 +60,7 @@ const config = {
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
+          authorsMapPath: "../authors.yml",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -216,6 +217,7 @@ const config = {
          * Path to data on filesystem relative to site dir.
          */
         path: "./whatsnew",
+        authorsMapPath: "../authors.yml",
       },
     ],
   ],
