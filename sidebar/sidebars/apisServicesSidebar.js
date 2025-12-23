@@ -137,10 +137,7 @@ export default [
                         "type": "doc",
                         "id": "apis-and-services/apis/third-party-libraries/jar-files"
                     },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/apis/third-party-libraries/javascript-files"
-                    },
+                  
                     {
                         "type": "doc",
                         "id": "apis-and-services/apis/third-party-libraries/using-3rd-party-libraries"
