@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # UI Testing Web
 
 Comprehensive strategies for testing web user interfaces to ensure quality and reliability.

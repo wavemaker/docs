@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Kubernetes Deployment
 
 Comprehensive guide to deploying applications on Kubernetes clusters.

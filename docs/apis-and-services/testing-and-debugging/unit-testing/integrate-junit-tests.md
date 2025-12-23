@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Integrating JUnit Tests into a WaveMaker Application
 
 WaveMaker allows you to integrate **JUnit tests** to validate your Java Services and other backend logic. The following steps outline how to set up and run JUnit tests within a WaveMaker project.

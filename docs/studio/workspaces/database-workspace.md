@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Database Workspace
 
 Centralized workspace for managing database connections, designing schemas, and performing database operations.

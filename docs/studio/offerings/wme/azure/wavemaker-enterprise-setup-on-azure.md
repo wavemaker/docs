@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup on AZURE"
+last_update: { author: "Author Name" }
 id: "wavemaker-enterprise-setup-on-azure"
 sidebar_label: "Overview"
 ---

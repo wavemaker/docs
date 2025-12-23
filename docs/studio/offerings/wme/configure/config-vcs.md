@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Configure VCS"
+last_update: { author: "Author Name" }
 id: "config-vcs"
 sidebar_label: "Configure VCS"
 ---

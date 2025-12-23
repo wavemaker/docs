@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+last_update: { author: "Author Name" }
 ---
 
 # REST Services using OAuth 2.0
@@ -129,5 +129,4 @@ WaveMaker simplifies consuming OAuth 2.0–secured REST services by:
 - Allowing REST calls to include access tokens without custom code.  
 - Supporting storage and management of provider settings across environments.
 
-With these features, you can securely integrate external APIs that require OAuth 2.0 authentication into your applications while keeping your development experience smooth and low-code. 
-
+With these features, you can securely integrate external APIs that require OAuth 2.0 authentication into your applications while keeping your development experience smooth and low-code.

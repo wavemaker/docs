@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Images for: static/learn/assets/wme-setup/configuring-wme
 
 Place the following images in this directory:

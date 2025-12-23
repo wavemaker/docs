@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup Process on AWS"
+last_update: { author: "Author Name" }
 id: "wavemaker-enterprise-setup-on-aws"
 sidebar_label: "Overview"
 ---

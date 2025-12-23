@@ -1,6 +1,6 @@
 ---
 title: Java Agent
-sidebar_position: 8
+last_update: { author: "Author Name" }
 ---
 
 Backend Java services

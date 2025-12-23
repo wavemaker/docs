@@ -1,5 +1,6 @@
 ---
 title: "WME Add Apps Capacity"
+last_update: { author: "Author Name" }
 id: "add-apps-capacity"
 sidebar_label: "Add Apps Capacity"
 ---
@@ -57,7 +58,3 @@ Ssh credentials of the Instance either should have root privileges or provide re
 [![app deployement health status check](./assets/images/app-deployement-health-status.png)](./assets/images/app-deployement-health-status.png)
 
 - You can verify them by copying them to clipboard and pasting on a Notepad.
-
-
-
-

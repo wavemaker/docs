@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # TechStack
 
 Comprehensive guide to the technology stack for building modern APIs and microservices.

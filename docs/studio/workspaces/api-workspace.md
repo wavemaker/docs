@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # API Workspace
 
 Centralized workspace for managing API integrations, creating services, and configuring API endpoints.

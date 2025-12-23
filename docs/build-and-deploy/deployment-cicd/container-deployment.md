@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Container, Cloud, and Private Infrastructure Deployment
 
 Comprehensive guide to deploying applications using containers, cloud platforms, and private infrastructure.

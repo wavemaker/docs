@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # TechStack
 
 Comprehensive overview of the technology stack for modern user interface development.

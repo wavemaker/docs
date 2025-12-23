@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Connectors
 
 A Connector in WaveMaker is a reusable Java-based backend extension that enables your application to integrate with third-party systems and services. It acts as a bridge between your WaveMaker app and external APIs, databases, cloud services, files, messaging systems, and more.  
@@ -65,4 +69,3 @@ You can see the full list of supported Connectors and how to use them in the Mar
 A Connector is a Java module that encapsulates integration logic for external systems and services, exposing reusable APIs that can be incorporated into WaveMaker applications to extend backend functionality.
 
 =
-

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+last_update: { author: "Author Name" }
 ---
 
 # API Orchestration using API Composition Toolkit
@@ -78,4 +78,4 @@ The API Composer Toolkit empowers developers to:
 - Autowire and use any supported service type without writing repetitive boilerplate code.  
 - Build backend APIs tailored for UI consumption or integration needs.
 
-By enabling API composition, WaveMaker streamlines the process of aggregating and transforming data across services into meaningful, reusable backend APIs. 
+By enabling API composition, WaveMaker streamlines the process of aggregating and transforming data across services into meaningful, reusable backend APIs.

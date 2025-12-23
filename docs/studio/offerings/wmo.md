@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # WaveMaker Online (WMO)
 
 Cloud-based version of WaveMaker platform for rapid application development and deployment.

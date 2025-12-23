@@ -1,6 +1,6 @@
 ---
 title: Architect Agent
-sidebar_position: 3
+last_update: { author: "Author Name" }
 ---
 
 Documentation lookup + architecture guidance

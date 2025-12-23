@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Other Security Hardening Measures
 
 Additional security hardening techniques to further protect your application.

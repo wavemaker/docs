@@ -1,6 +1,6 @@
 ---
 title: List of Agents
-sidebar_position: 2
+last_update: { author: "Author Name" }
 ---
 
 ## WaveMaker List of Agents

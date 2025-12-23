@@ -1,6 +1,6 @@
 ---
 title: How AIRA Works
-sidebar_position: 2
+last_update: { author: "Author Name" }
 ---
 
 
@@ -85,6 +85,3 @@ Nothing breaks automatically, but you might approve changes you did not intend. 
 ### If something still goes wrong
 
 You always have a way out. You can undo changes using version control, reject all changes during the Apply step, or start a fresh chat with clearer instructions.
-
-
-

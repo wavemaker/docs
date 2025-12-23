@@ -1,5 +1,6 @@
 ---
 title: "Install Prerequisites Softwares"
+last_update: { author: "Author Name" }
 id: "install-prerequisites"
 sidebar_label: "Install Prerequisites Softwares"
 ---
@@ -241,4 +242,3 @@ sudo groupadd <user>
   chown -R <user>:<user> /data
   echo "%<user> ALL=NOPASSWD: /bin/systemctl restart docker,/bin/systemctl daemon-reload,/usr/sbin/iptables" >> /etc/sudoers.d/<sudoers-file-name>
   ```
-

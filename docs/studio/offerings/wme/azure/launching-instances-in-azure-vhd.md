@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup on AzureCloud using VHD"
+last_update: { author: "Author Name" }
 id: "launching-instances-in-azure-vhd"
 sidebar_label: "Prepare Infrastructure using VHD"
 ---

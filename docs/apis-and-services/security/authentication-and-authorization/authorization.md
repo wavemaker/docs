@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Authorization
 
 Authorization controls what authenticated users can access and what actions they can perform.

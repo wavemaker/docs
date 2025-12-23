@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # UI Testing Mobile
 
 Comprehensive strategies for testing mobile user interfaces on iOS and Android platforms.

@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Life Cycle Hooks
 
 Understanding and using lifecycle hooks for API integration.

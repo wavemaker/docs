@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Architecture
 
 Understanding architectural patterns for building scalable and maintainable APIs and services.

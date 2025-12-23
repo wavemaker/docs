@@ -1,5 +1,6 @@
 ---
 title: "Upgrade Prerequisites"
+last_update: { author: "Author Name" }
 id: "upgrade-prerequisites"
 sidebar_label: "Upgrade Prerequisites"
 ---
@@ -191,4 +192,4 @@ To upgrade form 10.13.x to 11.x or higer version, you must open the port **8100*
 :::
 
 
-***you can go with next steps by validating the above prerequesties.***  
+***you can go with next steps by validating the above prerequesties.***

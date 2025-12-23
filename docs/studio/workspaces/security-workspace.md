@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Security Workspace
 
 Centralized workspace for managing application security, authentication, authorization, and security policies.

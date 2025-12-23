@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # App Portal
 
 Centralized portal for managing deployed applications, monitoring performance, and handling user access.

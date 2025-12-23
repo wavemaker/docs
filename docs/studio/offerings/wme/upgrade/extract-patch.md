@@ -1,5 +1,6 @@
 ---
 title: "Extract Package"
+last_update: { author: "Author Name" }
 id: "extract-patch"
 sidebar_label: "Extract Package"
 ---

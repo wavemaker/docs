@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Authentication & Authorization Overview
 
 This section covers the fundamentals of authentication and authorization in your applications.

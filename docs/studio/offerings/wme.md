@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # WaveMaker Enterprise (WME)
 
 Enterprise edition of WaveMaker platform for large-scale application development and deployment.

@@ -1,9 +1,6 @@
 ---
 title: i18n Agent
-sidebar_position: 14
+last_update: { author: "Author Name" }
 ---
 
 Localization and formats
-
-
-

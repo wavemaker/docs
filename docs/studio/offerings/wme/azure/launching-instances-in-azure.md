@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup on Azure "
+last_update: { author: "Author Name" }
 id: "launching-instances-in-azure"
 sidebar_label: "Prepare Infrastructure"
 ---

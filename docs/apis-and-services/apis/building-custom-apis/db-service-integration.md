@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+last_update: { author: "Author Name" }
 ---
 
 # Integrating Database Services in Java Services

@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Prerequisites"
+last_update: { author: "Author Name" }
 id: "prerequisites"
 sidebar_label: "What you'll need"
 ---

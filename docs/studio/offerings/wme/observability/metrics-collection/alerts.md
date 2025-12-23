@@ -1,5 +1,6 @@
 ---
 title: "Alerts"
+last_update: { author: "Author Name" }
 id: "alerts"
 sidebar_label: "Alerts"
 ---

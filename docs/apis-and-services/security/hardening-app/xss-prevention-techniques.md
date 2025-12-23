@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # XSS Prevention Techniques
 
 Protect your application from Cross-Site Scripting (XSS) attacks.

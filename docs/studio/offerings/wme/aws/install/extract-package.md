@@ -1,5 +1,6 @@
 ---
 title: "Extract Package"
+last_update: { author: "Author Name" }
 id: "extract-package"
 sidebar_label: "Extract Package"
 ---
@@ -26,8 +27,3 @@ sidebar_label: "Extract Package"
 
 
 [![extract package](./assets/images/download-and-extract-package.png)](./assets/images/download-and-extract-package.png)
-
-
-
-
-

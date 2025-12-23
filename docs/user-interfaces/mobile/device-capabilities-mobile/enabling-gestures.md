@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Enabling Gestures
 
 Implementing touch gestures and interactions for intuitive mobile user experiences.

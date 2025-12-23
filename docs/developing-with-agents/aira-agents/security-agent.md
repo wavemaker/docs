@@ -1,9 +1,6 @@
 ---
 title: Security Agent
-sidebar_position: 13
+last_update: { author: "Author Name" }
 ---
 
 Auth + RBAC + security config
-
-
-

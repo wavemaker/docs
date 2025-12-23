@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # AntiSamy Policy Configuration
 
 Configure AntiSamy to sanitize user input and prevent XSS attacks.

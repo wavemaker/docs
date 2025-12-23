@@ -1,5 +1,6 @@
 ---
 title: "Metrics Collection"
+last_update: { author: "Author Name" }
 id: "overview"
 sidebar_label: "Overview"
 ---
@@ -34,4 +35,3 @@ Here, The **microservice** containers labeled **A**-**Z** are spread across inst
  instance
 
 **jmx_exporter, micrometer**: Every JVM application deployed as a microservice in containers *A*-*Z* generates its own metrics.
-  

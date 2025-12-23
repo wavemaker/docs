@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Mobile App Build & Publish Overview
 
 Comprehensive guide to building and publishing mobile applications for iOS and Android platforms.

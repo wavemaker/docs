@@ -1,5 +1,6 @@
 ---
 title: "Grafana"
+last_update: { author: "Author Name" }
 id: "grafana"
 sidebar_label: "Grafana"
 ---

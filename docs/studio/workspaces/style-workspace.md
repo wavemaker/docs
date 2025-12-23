@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Style Workspace
 
 Centralized workspace for managing application themes, styles, and CSS customization.

@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Host Header Injection Prevention
 
 Protect your application from Host Header Injection attacks.

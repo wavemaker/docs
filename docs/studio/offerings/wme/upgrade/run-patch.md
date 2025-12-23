@@ -1,5 +1,6 @@
 ---
 title: "WME Run Patch"
+last_update: { author: "Author Name" }
 id: "run-patch"
 sidebar_label: "Run Patch"
 ---
@@ -97,4 +98,4 @@ sidebar_label: "Run Patch"
 
 ```bash
     bash /usr/local/content/wme/wme-installer/<version>/wme-installer.sh --upgrade-studioui
-``` 
+```

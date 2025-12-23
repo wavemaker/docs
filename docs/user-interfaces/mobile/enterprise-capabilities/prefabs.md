@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Prefabs
 
 Reusable, pre-built component templates that accelerate application development with consistent, tested UI patterns.

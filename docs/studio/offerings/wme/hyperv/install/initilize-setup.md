@@ -1,5 +1,6 @@
 ---
 title: "Initialize Setup"
+last_update: { author: "Author Name" }
 id: "initilize-setup"
 sidebar_label: "Initialize Setup"
 ---

@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Login Configuration
 
 Configure secure login settings for your application.

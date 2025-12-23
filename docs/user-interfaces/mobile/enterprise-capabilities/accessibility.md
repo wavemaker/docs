@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Accessibility
 
 Building accessible user interfaces that work for everyone, including people with disabilities.

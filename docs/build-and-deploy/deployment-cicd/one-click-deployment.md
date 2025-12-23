@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # One-Click Deployment
 
 Simplified deployment process with automated one-click deployment solutions.

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+last_update: { author: "Author Name" }
 ---
 
 # State Management

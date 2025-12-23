@@ -1,5 +1,6 @@
 ---
 title: "Logs Aggregation"
+last_update: { author: "Author Name" }
 id: "overview"
 sidebar_label: "Overview"
 ---

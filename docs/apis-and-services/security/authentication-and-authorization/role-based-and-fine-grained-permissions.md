@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Role-Based & Fine-Grained Permissions
 
 Control access to your application using role-based access control (RBAC) and fine-grained permissions.

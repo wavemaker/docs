@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Application Hardening
 
 Strengthen your application's security posture through comprehensive hardening techniques.

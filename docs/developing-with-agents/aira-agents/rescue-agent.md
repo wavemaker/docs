@@ -1,10 +1,6 @@
 ---
 title: Rescue Agent
-sidebar_position: 17
+last_update: { author: "Author Name" }
 ---
 
 Log analysis + remediation workflow
-
-
-
-

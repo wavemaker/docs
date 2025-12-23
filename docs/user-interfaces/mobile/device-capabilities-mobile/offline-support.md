@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Offline Support
 
 Building mobile applications that work seamlessly without internet connectivity.

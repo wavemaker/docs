@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Design Workspace - Canvas
 
 The visual design workspace for building application user interfaces through drag-and-drop canvas.

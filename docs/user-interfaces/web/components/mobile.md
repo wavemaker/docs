@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Mobile Components
 
 Comprehensive guide to building reusable mobile components for native and cross-platform mobile applications.

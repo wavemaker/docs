@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Configuration Profiles
 
 Configuration Profiles in WaveMaker allow you to define environment-specific settings for your application, such as database connections, API endpoints, and other external service configurations. This ensures that the same application can run seamlessly across multiple environments (development, testing, staging, production) without changing the codebase.
@@ -52,5 +56,4 @@ Suppose your application interacts with a REST API and a database. Instead of ha
 - Create a **Production** profile with the live database and production API endpoint.
 - When deploying, simply select the appropriate profile, and all services in your application will automatically connect to the correct endpoints.
 
-This approach streamlines application deployment and environment management.  
-
+This approach streamlines application deployment and environment management.

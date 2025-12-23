@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Team Portal
 
 Centralized portal for team management, collaboration, and project oversight.

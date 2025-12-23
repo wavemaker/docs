@@ -1,5 +1,6 @@
 ---
 title: "WME Add Developer Capacity"
+last_update: { author: "Author Name" }
 id: "add-dev-capacity"
 sidebar_label: "Add Developer Capacity"
 ---
@@ -62,4 +63,3 @@ Ssh credentials of the Instance either should have root privliges or provide req
 [![user deployement health status check](./assets/images/user-deployement-health-status.png)](./assets/images/user-deployement-health-status.png)
 
 - You can verify them by copying them to clipboard and pasting on a Notepad.
-

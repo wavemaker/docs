@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Secure Connection for Deployed Apps
 
 Ensure secure connections for your deployed applications in production environments.

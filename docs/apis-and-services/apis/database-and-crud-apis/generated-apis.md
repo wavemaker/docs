@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Generated APIs
 
 WaveMaker provides an API-driven approach, automatically generating REST APIs for Database Services, Java Services, and Security Services. The **API Designer** allows you to explore, manage, and test these APIs within the WaveMaker Studio.

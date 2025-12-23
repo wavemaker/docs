@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Flipper, Expo, Dev tools
 
 Comprehensive guide to popular community debugging tools for mobile and web applications.

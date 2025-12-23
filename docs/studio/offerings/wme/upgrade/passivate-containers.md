@@ -1,5 +1,6 @@
 ---
 title: "Passivate Containers"
+last_update: { author: "Author Name" }
 id: "passivate-containers"
 sidebar_label: "Passivate Containers"
 ---
@@ -42,4 +43,4 @@ sidebar_label: "Passivate Containers"
 
 
 - Do the same for rest of the StudioWorkspace/AppDeployment instances.
-- After passivating all the containers in StudioWorkspace/AppDeployment instances, you can proceed with the patch.    
+- After passivating all the containers in StudioWorkspace/AppDeployment instances, you can proceed with the patch.

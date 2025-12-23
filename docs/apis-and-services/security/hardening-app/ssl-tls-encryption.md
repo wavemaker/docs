@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # SSL / TLS Encryption
 
 Implement SSL/TLS encryption to secure data transmission in your application.

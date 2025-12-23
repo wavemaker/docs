@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Token-Based Authentication
 
 Implement secure token-based authentication for your applications.

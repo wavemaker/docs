@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # OWASP Guidelines
 
 Follow OWASP (Open Web Application Security Project) guidelines to protect against common vulnerabilities.

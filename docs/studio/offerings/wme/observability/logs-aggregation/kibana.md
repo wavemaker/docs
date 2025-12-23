@@ -1,5 +1,6 @@
 ---
 title: "Kibana"
+last_update: { author: "Author Name" }
 id: "kibana"
 sidebar_label: "Kibana"
 ---

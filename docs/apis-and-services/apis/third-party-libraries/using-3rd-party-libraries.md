@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Resources and Third-Party Libraries 
 
 WaveMaker provides support for using external resources and libraries within your application. This includes images, audio/video files, JavaScript files, UI assets, and more. These resources can be imported into your project and utilized in your app logic or UI design. 
@@ -60,4 +64,4 @@ WaveMaker lets you include and manage various external resources in your applica
 - Proper folder organization helps in filtering and binding the resources appropriately.  
 - Using external libraries extends functionality and gives you more flexibility in how your application behaves.
 
-By leveraging these capabilities, you can enhance your WaveMaker applications with rich assets and custom logic beyond the built-in components. 
+By leveraging these capabilities, you can enhance your WaveMaker applications with rich assets and custom logic beyond the built-in components.

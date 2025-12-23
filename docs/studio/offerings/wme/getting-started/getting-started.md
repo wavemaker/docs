@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Setup Process"
+last_update: { author: "Author Name" }
 id: "getting-started"
 sidebar_label: "Getting Started"
 ---

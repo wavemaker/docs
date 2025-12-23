@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Concurrent Sessions Handling
 
 Control and manage concurrent user sessions in your application.

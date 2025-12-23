@@ -1,5 +1,6 @@
 ---
 title: "Setup Using ConfigPortal"
+last_update: { author: "Author Name" }
 id: "setup-using-cw"
 sidebar_label: "Setup Using ConfigPortal"
 ---

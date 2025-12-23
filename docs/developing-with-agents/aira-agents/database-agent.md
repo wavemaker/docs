@@ -1,6 +1,6 @@
 ---
 title: Database Agent
-sidebar_position: 9
+last_update: { author: "Author Name" }
 ---
 
 DB inspection + Query Services

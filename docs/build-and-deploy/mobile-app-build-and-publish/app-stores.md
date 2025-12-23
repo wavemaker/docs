@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Public App Stores
 
 Complete guide to publishing and managing applications on public app stores.

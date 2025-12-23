@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Queries and Procedures
 
 WaveMaker allows you to extend database access beyond automatically generated CRUD APIs by defining **custom queries** and **stored procedures**, which are exposed as REST APIs that your UI can consume.
@@ -50,4 +54,3 @@ For both queries and procedures:
 
 3. **Create a Stored Procedure API**
 [Stored Procedure](#)
-  

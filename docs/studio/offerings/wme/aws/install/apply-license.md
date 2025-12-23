@@ -1,5 +1,6 @@
 ---
 title: "Apply License"
+last_update: { author: "Author Name" }
 id: "apply-license"
 sidebar_label: "Apply License"
 ---

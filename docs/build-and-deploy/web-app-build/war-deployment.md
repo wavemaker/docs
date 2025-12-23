@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # WAR Deployment
 
 Learn how to build and deploy Java web applications as WAR (Web Application Archive) files.

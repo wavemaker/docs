@@ -1,6 +1,6 @@
 ---
 title: AIRA Agentic App Development
-sidebar_position: 1
+last_update: { author: "Author Name" }
 ---
 
 
@@ -43,8 +43,3 @@ Here’s what AIRA can and cannot do today:
     - Angular is the default (for Prism and non-Prism projects).
     - React is available in beta and must be turned on manually.
 - Your past chats are available through the recent chats dropdown.
-
-
-
-
-

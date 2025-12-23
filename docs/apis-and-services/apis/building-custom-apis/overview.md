@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+last_update: { author: "Author Name" }
 ---
 
 # Building Custom APIs Using Java Services
@@ -123,8 +123,3 @@ You can test your Java Services directly from the API Designer:
 - Any changes made to the API definition will propagate to all generated files.  
 - The testing feature allows you to validate the service without needing to invoke it from the frontend application.  
 - This ensures that the API behaves as expected before integrating it into your WaveMaker pages or external applications.
-
-
-
-
-

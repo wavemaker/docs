@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Configure Pipeline"
+last_update: { author: "Author Name" }
 id: "config-pipeline"
 sidebar_label: "Configure Pipeline"
 ---

@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Designing Best Practices
 
 Essential principles and practices for building effective design systems.

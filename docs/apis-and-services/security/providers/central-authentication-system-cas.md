@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Central Authentication System (CAS)
 
 Implement Central Authentication System (CAS) for enterprise single sign-on.

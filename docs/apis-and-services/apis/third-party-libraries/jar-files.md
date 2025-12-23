@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Using Third-Party JAR Files
 
 WaveMaker allows you to include and use external Java libraries (JAR files) within your application. Once imported, these JARs can be used just like any other Java class in your Java Services or backend logic.

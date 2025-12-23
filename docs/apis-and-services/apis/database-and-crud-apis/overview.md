@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+last_update: { author: "Author Name" }
 ---
 
 # Overview
@@ -129,4 +129,4 @@ Learn more: [WaveMaker Generated Backend Architecture](./orm-artifacts.md)
 ## Related Documentation
 
 - [ORM Artifacts](./orm-artifacts.md) – Understanding generated ORM artifacts  
-- [Queries and Procedures](./queries-and-procedures.md) – Custom queries and stored procedures  
+- [Queries and Procedures](./queries-and-procedures.md) – Custom queries and stored procedures

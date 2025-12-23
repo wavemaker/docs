@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # VCS Workspace
 
 Version Control System workspace for managing code repositories, branches, and collaborative development.

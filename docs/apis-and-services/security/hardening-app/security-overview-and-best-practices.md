@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Security Overview & Best Practices
 
 Comprehensive security guidelines and best practices for application development and deployment.

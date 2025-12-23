@@ -1,6 +1,6 @@
 ---
 title: Prism UI Expert Agent
-sidebar_position: 4
+last_update: { author: "Author Name" }
 ---
 
 Visual/UI generation with token-aware styling

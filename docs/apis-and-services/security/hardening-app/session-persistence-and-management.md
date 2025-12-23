@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Session Persistence & Management
 
 Manage user sessions securely and efficiently in your application.

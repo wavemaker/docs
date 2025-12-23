@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Types
 
 Type definitions and TypeScript best practices for API integration.

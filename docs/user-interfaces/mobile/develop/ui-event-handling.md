@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+last_update: { author: "Author Name" }
 ---
 
 # UI Event handling

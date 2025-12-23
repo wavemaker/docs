@@ -1,6 +1,6 @@
 ---
 title: JavaScript Agent
-sidebar_position: 5
+last_update: { author: "Author Name" }
 ---
 
 Safe WaveMaker JS behaviors

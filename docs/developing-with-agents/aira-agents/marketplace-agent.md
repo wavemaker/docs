@@ -1,6 +1,6 @@
 ---
 title: Marketplace Agent
-sidebar_position: 11
+last_update: { author: "Author Name" }
 ---
 
 Prefabs, connectors, WMX installs

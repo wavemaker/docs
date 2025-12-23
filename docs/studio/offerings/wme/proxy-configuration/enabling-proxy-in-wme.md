@@ -1,5 +1,6 @@
 ---
 title: "Enabling Proxy in WaveMaker Enterprise"
+last_update: { author: "Author Name" }
 id: "enabling-proxy-in-wme"
 sidebar_label: "Enabling Proxy in WaveMaker Enterprise"
 ---

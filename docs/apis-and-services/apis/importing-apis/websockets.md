@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+last_update: { author: "Author Name" }
 ---
 
 # Working with WebSockets
@@ -90,4 +90,4 @@ WebSockets enable real-time communication between the client and server in WaveM
 - Configure and bind data to UI widgets for immediate feedback. 
 - Use secure `wss://` endpoints to avoid browser security issues. 
 
-WebSocket support in WaveMaker makes it easier to build responsive, real-time applications without custom networking code. 
+WebSocket support in WaveMaker makes it easier to build responsive, real-time applications without custom networking code.

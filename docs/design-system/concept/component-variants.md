@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Component Variants
 
 Understanding and implementing component variations in design systems.

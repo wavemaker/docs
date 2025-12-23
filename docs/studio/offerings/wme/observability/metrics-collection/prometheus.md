@@ -1,5 +1,6 @@
 ---
 title: "Prometheus"
+last_update: { author: "Author Name" }
 id: "prometheus"
 sidebar_label: "Prometheus"
 ---

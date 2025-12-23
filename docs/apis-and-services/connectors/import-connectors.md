@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Importing Connectors in WaveMaker
 
 WaveMaker allows you to import Connector artifacts into your application so you can reuse integration logic created outside of your app. Connectors packaged as ZIP artifacts can be easily imported and configured, and then consumed using Java Services or Spring beans within your app.

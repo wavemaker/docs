@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # SAML Integration
 
 Integrate Security Assertion Markup Language (SAML) for enterprise single sign-on capabilities.

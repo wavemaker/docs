@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # AppChef & CLI Tools
 
 Learn how to use AppChef and command-line tools for building and managing mobile applications.

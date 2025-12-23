@@ -1,5 +1,6 @@
 ---
 title: "Dehydration and Rehydration"
+last_update: { author: "Author Name" }
 id: "dehydration-and-rehydration"
 sidebar_label: "Dehydration and Rehydration"
 ---

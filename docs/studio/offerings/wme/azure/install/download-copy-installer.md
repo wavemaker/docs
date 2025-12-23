@@ -1,5 +1,6 @@
 ---
 title: "Download and Copy Installer"
+last_update: { author: "Author Name" }
 id: "download-copy-installer"
 sidebar_label: "Download and Copy Installer"
 ---

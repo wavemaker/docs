@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Configure SSL for Platform"
+last_update: { author: "Author Name" }
 id: "config-ssl"
 sidebar_label: "Configure SSL"
 ---

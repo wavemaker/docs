@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Wave Pulse, Inspection frameworks
 
 WaveMaker's built-in debugging and inspection tools for monitoring and troubleshooting applications.

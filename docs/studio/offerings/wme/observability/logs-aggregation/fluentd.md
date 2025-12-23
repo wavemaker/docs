@@ -1,5 +1,6 @@
 ---
 title: "Fluentd Tags"
+last_update: { author: "Author Name" }
 id: "fluentd"
 sidebar_label: "fluentd tags"
 ---

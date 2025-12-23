@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Authentication
 
 Authentication is the process of verifying the identity of users before granting access to your application.

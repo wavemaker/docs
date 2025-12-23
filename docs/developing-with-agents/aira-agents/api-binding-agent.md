@@ -1,6 +1,6 @@
 ---
 title: API Binding Agent
-sidebar_position: 12
+last_update: { author: "Author Name" }
 ---
 
 Autonomous widget-to-API binding

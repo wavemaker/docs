@@ -1,5 +1,6 @@
 ---
 title: "Install Prerequisites Softwares"
+last_update: { author: "Author Name" }
 id: "install-prerequisites"
 sidebar_label: "Install Prerequisites Softwares"
 ---

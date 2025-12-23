@@ -1,6 +1,6 @@
 ---
 title: WaveMaker Agent
-sidebar_position: 2
+last_update: { author: "Author Name" }
 ---
 
 Workflow coordinator

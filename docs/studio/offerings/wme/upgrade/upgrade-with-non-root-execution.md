@@ -1,5 +1,6 @@
 ---
 title: "Upgrade with Non Root WME Execution"
+last_update: { author: "Author Name" }
 id: "upgrade-non-root-execution"
 sidebar_label: "Upgrade Non Root WME Execution"
 ---
@@ -42,10 +43,4 @@ sudo echo "non-root-username ALL=(ALL) NOPASSWD: /bin/systemctl daemon-reload, /
 For external no new prerequisites required please follow old steps it self
 :::
 
-#### Once this is done switch to your not root user where you can  execute the WaveMaker Upgrade for fresh setup/patch 
-
-
-
-
-
-
+#### Once this is done switch to your not root user where you can  execute the WaveMaker Upgrade for fresh setup/patch

@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # WMX Components- Mobile
 
 Mobile-specific components and widgets for building native-like mobile experiences.

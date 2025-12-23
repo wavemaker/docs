@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Architecture"
+last_update: { author: "Author Name" }
 id: "architecture"
 sidebar_label: "Architecture"
 ---

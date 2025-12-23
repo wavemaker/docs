@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+last_update: { author: "Author Name" }
 ---
 
 # Java Integration Services

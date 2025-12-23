@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Variables
 
 Managing variables and configuration for API integration.

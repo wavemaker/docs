@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Build Options
 
 Explore the various build options available for web applications.

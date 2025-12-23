@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Remember Me Functionality
 
 Implement secure "Remember Me" functionality for user convenience.

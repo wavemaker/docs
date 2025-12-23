@@ -1,5 +1,6 @@
 ---
 title: "WME Add Users and Authentication Provider"
+last_update: { author: "Author Name" }
 id: "config-users-auth-providers"
 sidebar_label: "Users Onboarding"
 ---
@@ -84,4 +85,3 @@ For WaveMaker enterprise customers that are performing platform maintenance this
 1. Go to **Launchpad**.
 2. Go to **Identity Providers**.
 3. Enable **Restrict Login for all users** option and click on **Confirm**.
-

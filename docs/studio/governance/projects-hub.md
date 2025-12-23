@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Projects Hub
 
 Centralized hub for managing all projects, monitoring status, and organizing development work.

@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Design Tokens
 
 Design tokens are the fundamental building blocks of a design system, representing design decisions as data.

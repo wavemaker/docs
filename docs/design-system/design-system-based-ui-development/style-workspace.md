@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Style Workspace
 
 The Style Workspace is a centralized environment for managing and applying visual styling across your application using design system principles.

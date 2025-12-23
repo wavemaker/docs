@@ -1,9 +1,6 @@
 ---
 title: VCS Agent
-sidebar_position: 16
+last_update: { author: "Author Name" }
 ---
 
 Git operations
-
-
-

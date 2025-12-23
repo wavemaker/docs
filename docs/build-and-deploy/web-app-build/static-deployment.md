@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Static Content Deployment
 
 Learn how to build and deploy static web content for modern web applications.

@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Build a new Connector 
 
 WaveMaker Connectors are reusable, Spring-based Java modules that enable integration with external systems and services. A Connector encapsulates integration logic and exposes it as a reusable SDK that can be imported and used across multiple WaveMaker applications.

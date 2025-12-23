@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+last_update: { author: "Author Name" }
 ---
 
 # REST Request Timeouts
@@ -79,4 +79,4 @@ Configurable REST timeout and connection settings in WaveMaker allow you to:
 - Enable use of system proxy settings when necessary.
 - Set limits for file upload sizes via multipart configurations.
 
-These properties can be defined in `app.properties` or controlled through environment/system settings to tune REST integration behavior based on application needs. 
+These properties can be defined in `app.properties` or controlled through environment/system settings to tune REST integration behavior based on application needs.

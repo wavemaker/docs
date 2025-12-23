@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Using Third-Party JavaScript Files 
 
 WaveMaker supports incorporating external JavaScript and CSS files into your application. This enables you to use libraries and styles that extend the built-in functionality of the platform — for example, adding specialized UI controls or client-side behaviors that aren’t available by default. 

@@ -1,5 +1,6 @@
 ---
 title: "Observability"
+last_update: { author: "Author Name" }
 id: "introduction"
 sidebar_label: "Introduction"
 ---

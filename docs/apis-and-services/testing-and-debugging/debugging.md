@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Debugging 
 
 When developing applications in WaveMaker, there may be times when the app does not behave as expected or shows errors that are hard to diagnose. Debugging helps you investigate and fix such problems. WaveMaker supports debugging through **logs**, **browser JavaScript debugging**, and can also assist with diagnosing issues in deployed applications.

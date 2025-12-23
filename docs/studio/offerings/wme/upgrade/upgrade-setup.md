@@ -1,5 +1,6 @@
 ---
 title: "WaveMaker Enterprise Upgrade"
+last_update: { author: "Author Name" }
 id: "upgrade-setup"
 sidebar_label: "Upgrade Overview"
 ---
@@ -50,4 +51,3 @@ Following are the patch files you will need in order to install the patch on th
 :::note
 Links for WME Patch and the corresponding checksum (sha1sum) files will be provided to you by the WaveMaker team through an email. You need to download the files before starting the installation.
 :::
-

@@ -1,5 +1,6 @@
 ---
 title: "Preparing Infrastructure on AWS"
+last_update: { author: "Author Name" }
 id: "launching-instances-in-aws"
 sidebar_label: "Prepare Infrastructure"
 ---

@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Language Support i18n
 
 Implementing internationalization (i18n) and localization (l10n) to support multiple languages and regions in your application.

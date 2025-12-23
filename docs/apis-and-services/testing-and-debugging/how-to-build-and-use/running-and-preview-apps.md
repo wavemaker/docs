@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Test and Run (Preview) Applications
 
 Once application design and development are complete, the next step is testing. The simplest and quickest way to test an application in WaveMaker is by using the **Preview** option available in WaveMaker Studio.

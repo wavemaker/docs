@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Adding Plugins
 
 Extending mobile application functionality with native device plugins and third-party integrations.

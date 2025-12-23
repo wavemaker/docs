@@ -1,3 +1,7 @@
+---
+last_update: { author: "Author Name" }
+---
+
 # Web Components
 
 Comprehensive guide to building reusable web components for modern web applications.
