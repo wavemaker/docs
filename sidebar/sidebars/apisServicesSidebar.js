@@ -91,6 +91,10 @@ export default [
                     {
                         "type": "doc",
                         "id": "apis-and-services/apis/importing-apis/websockets"
+                    },
+                     {
+                        "type": "doc",
+                        "id": "apis-and-services/apis/importing-apis/generated-code"
                     }
                 ]
             },
