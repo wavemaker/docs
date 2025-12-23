@@ -62,25 +62,25 @@ export default [
                     },
                     {
                         "type": "category",
-                        "label": "REST Services",
+                        "label": "Individual REST Endpoints",
                         "collapsible": true,
                         "collapsed": true,
                         "items": [
                             {
                                 "type": "doc",
-                                "id": "apis-and-services/apis/importing-apis/rest-services/import-rest"
+                                "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/import-rest"
                             },
                             {
                                 "type": "doc",
-                                "id": "apis-and-services/apis/importing-apis/rest-services/rest-request-timeouts"
+                                "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/rest-request-timeouts"
                             },
                             {
                                 "type": "doc",
-                                "id": "apis-and-services/apis/importing-apis/rest-services/secure-server-side-properties"
+                                "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/secure-server-side-properties"
                             },
                             {
                                 "type": "doc",
-                                "id": "apis-and-services/apis/importing-apis/rest-services/rest-services-using-oauth20"
+                                "id": "apis-and-services/apis/importing-apis/individual-rest-endpoints/rest-services-using-oauth20"
                             }
                         ]
                     },

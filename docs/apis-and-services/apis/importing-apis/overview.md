@@ -41,7 +41,7 @@ WebSocket services provide a persistent, bidirectional communication channel ove
 - Query, path, header, and body parameters are configured during import and appear as input fields in the corresponding variable.  
 - You can set up authentication (None, Basic, or OAuth 2.0) and test the service before importing it. 
 
-Learn more: [Rest Services](../importing-apis/rest-services/import-rest.md)
+Learn more: [Rest Services](../importing-apis/individual-rest-endpoints/import-rest.md)
 
 
 
