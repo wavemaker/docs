@@ -42,7 +42,7 @@ export default [
                     },
                     {
                         "type": "doc",
-                        "id": "apis-and-services/apis/database-and-crud-apis/orm-artifacts"
+                        "id": "apis-and-services/apis/database-and-crud-apis/generated-apis"
                     },
                     {
                         "type": "doc",

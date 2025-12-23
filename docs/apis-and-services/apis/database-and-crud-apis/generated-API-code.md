@@ -1,23 +1,15 @@
-# Generated Backend Code
+# Generated Code
 
 ## Overview
 
 WaveMaker gnerated code is **not black boxed.**. It generates **fully readable, standards-based Java source code** that follows proven enterprise architecture patterns.  
 All backend artifacts are built using **Java, Spring, and Hibernate/JPA**, ensuring transparency, control, and long-term maintainability.
 
-This approach delivers the **speed of low-code development** without compromising the **flexibility, extensibility, and governance** expected from traditional enterprise applications.
+
 
 ---
 
-## Key Characteristics
 
-- Backend services generated using **industry-standard Java frameworks**
-- **100% accessible and inspectable source code**
-- Custom business logic can be added safely without impacting platform upgrades
-- Clear **layered architecture** aligned with enterprise best practices
-- Well-suited for complex, integration-driven, and large-scale applications
-
----
 
 ## Generated Backend Architecture
 
@@ -38,7 +30,9 @@ WaveMaker generates a conventional Java project structure under the `services` d
 
 Each layer has a **clearly defined responsibility**, ensuring separation of concerns, maintainability, and ease of customization.
 
-![Generated Project Structure](./assets/images/image-3.png)
+
+![Generated Project Structure](image-2.png)
+
 
 ---
 
@@ -131,9 +125,13 @@ Stores metadata required by WaveMaker Studio during application design.
 - Used exclusively at design time
 - Runtime execution depends only on generated Java source code
 
+**Files Included**
+
+![Design-time file structure](image-1.png)
+
 ---
 
-## ORM Artifacts
+<!-- ## ORM Artifacts
 
 WaveMaker generates ORM artifacts that conform to Hibernate/JPA standards, including:
 
@@ -142,7 +140,7 @@ WaveMaker generates ORM artifacts that conform to Hibernate/JPA standards, inclu
 - Generated CRUD operations
 - Query definitions and mappings
 
----
+--- -->
 
 ## Summary
 
