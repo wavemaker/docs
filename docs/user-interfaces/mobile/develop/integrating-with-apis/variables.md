@@ -1,0 +1,359 @@
+# Variables
+
+Managing variables and configuration for API integration.
+
+## Overview
+
+Variables provide a flexible way to manage API endpoints, authentication tokens, and configuration across different environments. This guide covers best practices for using variables in API integration.
+
+## Environment Variables
+
+### Using Process Environment Variables
+
+```javascript
+// config.js
+const config = {
+  apiUrl: process.env.REACT_APP_API_URL || 'http://localhost:3000',
+  apiKey: process.env.REACT_APP_API_KEY,
+  environment: process.env.NODE_ENV,
+};
+
+export default config;
+```
+
+### .env File Structure
+
+```bash
+# .env.development
+REACT_APP_API_URL=http://localhost:3000/api
+REACT_APP_API_KEY=dev_key_12345
+REACT_APP_TIMEOUT=5000
+
+# .env.production
+REACT_APP_API_URL=https://api.production.com
+REACT_APP_API_KEY=prod_key_67890
+REACT_APP_TIMEOUT=10000
+```
+
+## API Configuration Variables
+
+### Base Configuration
+
+```javascript
+// api/config.js
+export const apiConfig = {
+  baseURL: process.env.REACT_APP_API_URL,
+  timeout: parseInt(process.env.REACT_APP_TIMEOUT) || 5000,
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  },
+};
+```
+
+### Endpoint Variables
+
+```javascript
+// api/endpoints.js
+export const endpoints = {
+  auth: {
+    login: '/auth/login',
+    logout: '/auth/logout',
+    refresh: '/auth/refresh',
+  },
+  users: {
+    list: '/users',
+    detail: (id) => `/users/${id}`,
+    create: '/users',
+    update: (id) => `/users/${id}`,
+    delete: (id) => `/users/${id}`,
+  },
+  products: {
+    list: '/products',
+    detail: (id) => `/products/${id}`,
+    search: '/products/search',
+  },
+};
+```
+
+## Request Variables
+
+### Dynamic Headers
+
+```javascript
+const getAuthHeaders = () => {
+  const token = localStorage.getItem('authToken');
+  return {
+    'Authorization': `Bearer ${token}`,
+    'X-Client-Version': process.env.REACT_APP_VERSION,
+  };
+};
+
+const apiRequest = async (url, options = {}) => {
+  const response = await fetch(url, {
+    ...options,
+    headers: {
+      ...apiConfig.headers,
+      ...getAuthHeaders(),
+      ...options.headers,
+    },
+  });
+  return response;
+};
+```
+
+### Query Parameters
+
+```javascript
+const buildQueryString = (params) => {
+  const queryParams = new URLSearchParams();
+
+  Object.entries(params).forEach(([key, value]) => {
+    if (value !== null && value !== undefined) {
+      queryParams.append(key, value);
+    }
+  });
+
+  return queryParams.toString();
+};
+
+// Usage
+const fetchUsers = async (filters) => {
+  const queryString = buildQueryString({
+    page: filters.page,
+    limit: filters.limit,
+    search: filters.search,
+    sortBy: filters.sortBy,
+  });
+
+  const url = `${apiConfig.baseURL}/users?${queryString}`;
+  return apiRequest(url);
+};
+```
+
+## State Variables for API Data
+
+### Using State for API Variables
+
+```javascript
+import { useState, useEffect } from 'react';
+
+const useApiVariables = () => {
+  const [apiUrl, setApiUrl] = useState(process.env.REACT_APP_API_URL);
+  const [apiKey, setApiKey] = useState(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    // Load API key from secure storage
+    const loadApiKey = async () => {
+      const key = await getSecureApiKey();
+      setApiKey(key);
+    };
+    loadApiKey();
+  }, []);
+
+  return {
+    apiUrl,
+    apiKey,
+    isAuthenticated,
+    setApiUrl,
+    setIsAuthenticated,
+  };
+};
+```
+
+## Context for Global API Variables
+
+```javascript
+import { createContext, useContext, useState } from 'react';
+
+const ApiContext = createContext();
+
+export const ApiProvider = ({ children }) => {
+  const [baseURL, setBaseURL] = useState(process.env.REACT_APP_API_URL);
+  const [authToken, setAuthToken] = useState(null);
+  const [requestConfig, setRequestConfig] = useState({
+    timeout: 5000,
+    retries: 3,
+  });
+
+  const updateAuthToken = (token) => {
+    setAuthToken(token);
+    if (token) {
+      localStorage.setItem('authToken', token);
+    } else {
+      localStorage.removeItem('authToken');
+    }
+  };
+
+  return (
+    <ApiContext.Provider
+      value={{
+        baseURL,
+        authToken,
+        requestConfig,
+        setBaseURL,
+        updateAuthToken,
+        setRequestConfig,
+      }}
+    >
+      {children}
+    </ApiContext.Provider>
+  );
+};
+
+export const useApi = () => {
+  const context = useContext(ApiContext);
+  if (!context) {
+    throw new Error('useApi must be used within ApiProvider');
+  }
+  return context;
+};
+```
+
+## Variable Validation
+
+```javascript
+const validateApiConfig = () => {
+  const requiredVars = [
+    'REACT_APP_API_URL',
+    'REACT_APP_API_KEY',
+  ];
+
+  const missing = requiredVars.filter(
+    varName => !process.env[varName]
+  );
+
+  if (missing.length > 0) {
+    throw new Error(
+      `Missing required environment variables: ${missing.join(', ')}`
+    );
+  }
+};
+
+// Call during app initialization
+validateApiConfig();
+```
+
+## Secure Variable Storage
+
+### Storing Sensitive Variables
+
+```javascript
+// Use secure storage for sensitive data
+const secureStorage = {
+  setItem: (key, value) => {
+    // Encrypt before storing
+    const encrypted = encrypt(value);
+    localStorage.setItem(key, encrypted);
+  },
+
+  getItem: (key) => {
+    // Decrypt after retrieving
+    const encrypted = localStorage.getItem(key);
+    return encrypted ? decrypt(encrypted) : null;
+  },
+
+  removeItem: (key) => {
+    localStorage.removeItem(key);
+  },
+};
+
+// Usage
+secureStorage.setItem('apiKey', apiKey);
+const storedKey = secureStorage.getItem('apiKey');
+```
+
+## Variable Best Practices
+
+### 1. Never Hardcode Sensitive Data
+
+```javascript
+// ❌ Bad - Hardcoded API key
+const apiKey = 'sk_live_1234567890';
+
+// ✅ Good - Use environment variables
+const apiKey = process.env.REACT_APP_API_KEY;
+```
+
+### 2. Use Default Values
+
+```javascript
+// ✅ Good - Provide sensible defaults
+const config = {
+  timeout: process.env.REACT_APP_TIMEOUT || 5000,
+  retries: process.env.REACT_APP_RETRIES || 3,
+  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:3000',
+};
+```
+
+### 3. Validate Required Variables
+
+```javascript
+// ✅ Good - Validate on startup
+if (!process.env.REACT_APP_API_URL) {
+  throw new Error('REACT_APP_API_URL is required');
+}
+```
+
+## Variable Naming Conventions
+
+```javascript
+// Use consistent naming patterns
+const API_CONFIG = {
+  // Environment-specific
+  BASE_URL: process.env.REACT_APP_API_URL,
+
+  // Feature flags
+  ENABLE_ANALYTICS: process.env.REACT_APP_ENABLE_ANALYTICS === 'true',
+
+  // Timeouts (in milliseconds)
+  REQUEST_TIMEOUT: 5000,
+  RETRY_DELAY: 1000,
+
+  // Limits
+  MAX_RETRIES: 3,
+  PAGE_SIZE: 20,
+};
+```
+
+## Dynamic Variable Updates
+
+```javascript
+const useDynamicConfig = () => {
+  const [config, setConfig] = useState({
+    apiUrl: process.env.REACT_APP_API_URL,
+    timeout: 5000,
+  });
+
+  const updateConfig = (newConfig) => {
+    setConfig(prev => ({
+      ...prev,
+      ...newConfig,
+    }));
+  };
+
+  // Fetch remote configuration
+  useEffect(() => {
+    const fetchRemoteConfig = async () => {
+      try {
+        const response = await fetch('/api/config');
+        const remoteConfig = await response.json();
+        updateConfig(remoteConfig);
+      } catch (error) {
+        console.error('Failed to fetch remote config:', error);
+      }
+    };
+
+    fetchRemoteConfig();
+  }, []);
+
+  return { config, updateConfig };
+};
+```
+
+## Related Documentation
+
+- [Life Cycle Hooks](./life-cycle-hooks.md)
+- [Types](./types.md)
+- [State Management](../state-management.md)

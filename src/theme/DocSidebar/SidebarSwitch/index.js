@@ -20,7 +20,7 @@ export default function SidebarSwitch({ path }) {
       </Link>
 
       <Link
-        to="/docs/user-interfaces/mobile/overview"
+        to="/docs/user-interfaces/mobile/concepts/overview"
         className={`${styles.switchOption} ${isMobile ? styles.active : ""}`}
       >
         Mobile

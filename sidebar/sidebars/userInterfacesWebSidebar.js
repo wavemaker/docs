@@ -180,24 +180,4 @@ export default [
             }
         ]
     },
-    {
-        "type": "category",
-        "label": "device-capabilities-mobile",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
-            {
-                "type": "doc",
-                "id": "user-interfaces/web/device-capabilities-mobile/adding-plugins"
-            },
-            {
-                "type": "doc",
-                "id": "user-interfaces/web/device-capabilities-mobile/enabling-gestures"
-            },
-            {
-                "type": "doc",
-                "id": "user-interfaces/web/device-capabilities-mobile/offline-support"
-            }
-        ]
-    }
 ]

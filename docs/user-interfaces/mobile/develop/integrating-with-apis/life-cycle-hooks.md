@@ -1,0 +1,518 @@
+# Life Cycle Hooks
+
+Understanding and using lifecycle hooks for API integration.
+
+## Overview
+
+Lifecycle hooks allow you to execute code at specific points in a component's lifecycle, making them essential for API calls, data fetching, and cleanup operations.
+
+## useEffect Hook
+
+### Basic API Call on Mount
+
+```javascript
+import { useState, useEffect } from 'react';
+
+const UserProfile = ({ userId }) => {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(`/api/users/${userId}`);
+        const data = await response.json();
+        setUser(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchUser();
+  }, [userId]); // Re-fetch when userId changes
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+  return <div>{user?.name}</div>;
+};
+```
+
+### Cleanup Function
+
+```javascript
+useEffect(() => {
+  const controller = new AbortController();
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch('/api/data', {
+        signal: controller.signal,
+      });
+      const data = await response.json();
+      setData(data);
+    } catch (err) {
+      if (err.name !== 'AbortError') {
+        setError(err.message);
+      }
+    }
+  };
+
+  fetchData();
+
+  // Cleanup: abort request if component unmounts
+  return () => {
+    controller.abort();
+  };
+}, []);
+```
+
+## Custom Hooks for API Calls
+
+### useApi Hook
+
+```javascript
+import { useState, useEffect } from 'react';
+
+const useApi = (url, options = {}) => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+
+        const response = await fetch(url, {
+          ...options,
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        setData(result);
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          setError(err.message);
+        }
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+
+    return () => {
+      controller.abort();
+    };
+  }, [url, JSON.stringify(options)]);
+
+  return { data, loading, error };
+};
+
+// Usage
+const UserList = () => {
+  const { data: users, loading, error } = useApi('/api/users');
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+  return <ul>{users?.map(user => <li key={user.id}>{user.name}</li>)}</ul>;
+};
+```
+
+### useFetch Hook with Refetch
+
+```javascript
+const useFetch = (url, options = {}) => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const fetchData = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+
+      const response = await fetch(url, options);
+      const result = await response.json();
+      setData(result);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, [url]);
+
+  const refetch = () => {
+    fetchData();
+  };
+
+  return { data, loading, error, refetch };
+};
+
+// Usage
+const Dashboard = () => {
+  const { data, loading, refetch } = useFetch('/api/dashboard');
+
+  return (
+    <div>
+      <button onClick={refetch}>Refresh</button>
+      {loading ? <div>Loading...</div> : <div>{data?.summary}</div>}
+    </div>
+  );
+};
+```
+
+## Component Lifecycle Events
+
+### onMount - Initial Data Load
+
+```javascript
+const Products = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    // Runs once on mount
+    const loadProducts = async () => {
+      const response = await fetch('/api/products');
+      const data = await response.json();
+      setProducts(data);
+    };
+
+    loadProducts();
+  }, []); // Empty dependency array = run once on mount
+
+  return <ProductList products={products} />;
+};
+```
+
+### onUpdate - React to Changes
+
+```javascript
+const SearchResults = ({ query }) => {
+  const [results, setResults] = useState([]);
+
+  useEffect(() => {
+    // Runs when query changes
+    if (!query) {
+      setResults([]);
+      return;
+    }
+
+    const searchProducts = async () => {
+      const response = await fetch(`/api/search?q=${query}`);
+      const data = await response.json();
+      setResults(data);
+    };
+
+    searchProducts();
+  }, [query]); // Runs when query changes
+
+  return <div>{results.length} results</div>;
+};
+```
+
+### onUnmount - Cleanup
+
+```javascript
+const LiveData = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const ws = new WebSocket('ws://localhost:8080');
+
+    ws.onmessage = (event) => {
+      setData(JSON.parse(event.data));
+    };
+
+    // Cleanup on unmount
+    return () => {
+      ws.close();
+    };
+  }, []);
+
+  return <div>{data?.value}</div>;
+};
+```
+
+## Debounced API Calls
+
+```javascript
+import { useState, useEffect } from 'react';
+
+const useDebounce = (value, delay) => {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(handler);
+    };
+  }, [value, delay]);
+
+  return debouncedValue;
+};
+
+const SearchWithDebounce = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [results, setResults] = useState([]);
+  const debouncedSearchTerm = useDebounce(searchTerm, 500);
+
+  useEffect(() => {
+    if (debouncedSearchTerm) {
+      const search = async () => {
+        const response = await fetch(`/api/search?q=${debouncedSearchTerm}`);
+        const data = await response.json();
+        setResults(data);
+      };
+      search();
+    }
+  }, [debouncedSearchTerm]);
+
+  return (
+    <div>
+      <input
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        placeholder="Search..."
+      />
+      <div>{results.length} results</div>
+    </div>
+  );
+};
+```
+
+## Polling with useEffect
+
+```javascript
+const PollingComponent = ({ interval = 5000 }) => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('/api/status');
+      const result = await response.json();
+      setData(result);
+    };
+
+    // Initial fetch
+    fetchData();
+
+    // Set up polling
+    const intervalId = setInterval(fetchData, interval);
+
+    // Cleanup
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [interval]);
+
+  return <div>Status: {data?.status}</div>;
+};
+```
+
+## Lazy Loading with Intersection Observer
+
+```javascript
+import { useState, useEffect, useRef } from 'react';
+
+const useLazyLoad = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  return [ref, isVisible];
+};
+
+const LazyImage = ({ src, alt }) => {
+  const [ref, isVisible] = useLazyLoad();
+  const [imageSrc, setImageSrc] = useState(null);
+
+  useEffect(() => {
+    if (isVisible) {
+      // Fetch image data when visible
+      fetch(src)
+        .then(response => response.blob())
+        .then(blob => setImageSrc(URL.createObjectURL(blob)));
+    }
+  }, [isVisible, src]);
+
+  return <img ref={ref} src={imageSrc} alt={alt} />;
+};
+```
+
+## Request Cancellation
+
+```javascript
+const useCancellableRequest = () => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  const makeRequest = async (url) => {
+    const controller = new AbortController();
+
+    try {
+      setLoading(true);
+      const response = await fetch(url, {
+        signal: controller.signal,
+      });
+      const result = await response.json();
+      setData(result);
+    } catch (err) {
+      if (err.name !== 'AbortError') {
+        console.error('Request failed:', err);
+      }
+    } finally {
+      setLoading(false);
+    }
+
+    return () => controller.abort();
+  };
+
+  return { data, loading, makeRequest };
+};
+```
+
+## Sequential API Calls
+
+```javascript
+const useSequentialFetch = (urls) => {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchSequentially = async () => {
+      const results = [];
+
+      for (const url of urls) {
+        try {
+          const response = await fetch(url);
+          const result = await response.json();
+          results.push(result);
+        } catch (err) {
+          console.error(`Failed to fetch ${url}:`, err);
+        }
+      }
+
+      setData(results);
+      setLoading(false);
+    };
+
+    fetchSequentially();
+  }, [JSON.stringify(urls)]);
+
+  return { data, loading };
+};
+```
+
+## Parallel API Calls
+
+```javascript
+const useParallelFetch = (urls) => {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchInParallel = async () => {
+      try {
+        const promises = urls.map(url => fetch(url).then(r => r.json()));
+        const results = await Promise.all(promises);
+        setData(results);
+      } catch (err) {
+        console.error('Failed to fetch data:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchInParallel();
+  }, [JSON.stringify(urls)]);
+
+  return { data, loading };
+};
+```
+
+## Error Retry Logic
+
+```javascript
+const useRetryableFetch = (url, maxRetries = 3) => {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let retries = 0;
+
+    const fetchWithRetry = async () => {
+      while (retries < maxRetries) {
+        try {
+          const response = await fetch(url);
+          if (!response.ok) throw new Error('Request failed');
+          const result = await response.json();
+          setData(result);
+          setLoading(false);
+          return;
+        } catch (err) {
+          retries++;
+          if (retries >= maxRetries) {
+            setError(err.message);
+            setLoading(false);
+          } else {
+            // Wait before retrying (exponential backoff)
+            await new Promise(resolve =>
+              setTimeout(resolve, 1000 * Math.pow(2, retries))
+            );
+          }
+        }
+      }
+    };
+
+    fetchWithRetry();
+  }, [url, maxRetries]);
+
+  return { data, loading, error };
+};
+```
+
+## Related Documentation
+
+- [Variables](./variables.md)
+- [Types](./types.md)
+- [State Management](../state-management.md)
+- [UI Event handling](../ui-event-handling.md)
