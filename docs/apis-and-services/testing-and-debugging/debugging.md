@@ -39,7 +39,7 @@ In some cases, especially when debugging network issues, the WaveMaker support t
 
 ---
 
-## JavaScript Debugging
+<!-- ## JavaScript Debugging
 
 WaveMaker applications rely heavily on JavaScript for client-side logic. You can use standard browser developer tools to debug client scripts.
 
@@ -68,7 +68,7 @@ Page.button2Click = function ($event, widget) {
 
 Output appears in the Console panel of your browser's developer tools, providing quick insight into variable values and execution flow.
 
----
+--- -->
 
 ## Printing Logger Statements in WaveMaker
 
@@ -151,7 +151,7 @@ WaveMaker provides several tools to diagnose and resolve issues:
 - **Logs** — Access server and application logs to understand backend activity and errors.
 - **Logger Statements** — Use SLF4J logging framework to print custom log messages from Java Services with configurable log levels.
 - **HAR Files** — Capture and export network traffic for deep debugging of API/service interactions.
-- **JavaScript Debugging** — Use browser developer tools to pause execution and inspect client logic.
+<!-- - **JavaScript Debugging** — Use browser developer tools to pause execution and inspect client logic. -->
 - **Deployed Application Logs** — Retrieve logs for apps already deployed to understand runtime issues outside the development environment.
 
 Using these debugging techniques together helps you quickly root-cause errors and ensure your WaveMaker application behaves as designed.

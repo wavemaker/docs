@@ -47,6 +47,10 @@ export default [
                     {
                         "type": "doc",
                         "id": "apis-and-services/apis/database-and-crud-apis/queries-and-procedures"
+                    },
+                     {
+                        "type": "doc",
+                        "id": "apis-and-services/apis/database-and-crud-apis/stored-procedures"
                     }
                 ]
             },
