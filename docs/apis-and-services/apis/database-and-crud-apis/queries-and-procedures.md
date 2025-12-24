@@ -1,3 +1,7 @@
+---
+last_update: { author: "Priyanka Bhadri" }
+---
+
 # Working with Queries 
 
 WaveMaker lets you build custom database queries and integrate them directly into your applications. Queries help you fetch, filter, or manipulate data across one or more tables — ideal for custom reports, dashboards, or dynamic UI behavior. Every query you save in WaveMaker is automatically exposed as a **REST API** that your UI layer can call. 

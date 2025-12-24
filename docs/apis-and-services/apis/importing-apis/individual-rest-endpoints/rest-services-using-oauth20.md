@@ -116,7 +116,8 @@ OAuth provider settings can be managed in multiple deployment profiles:
 
 This flexibility ensures that environment-specific configurations (like client IDs or secrets) are maintained without modifying application code.
 
-![alt text](assets/image-4.png)
+Learn more: [configurations](../../../configurations/profiles.md)
+<!-- ![alt text](assets/image-4.png) -->
 
 ---
 
