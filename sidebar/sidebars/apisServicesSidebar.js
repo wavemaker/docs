@@ -299,6 +299,10 @@ export default [
             {
                 "type": "doc",
                 "id": "apis-and-services/connectors/import-connectors"
+            },
+            {
+                "type": "doc",
+                "id": "apis-and-services/connectors/working-with-connectors"
             }
         ]
     },
