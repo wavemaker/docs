@@ -36,7 +36,19 @@ Generated backend code is organized under the `services` directory using a conve
 
 Each layer has a clear responsibility, making the codebase easy to understand, debug, and customize.
 
-![Generated Project Structure](assets/image-2.png)
+```text
+services/
+└── mydatabase/
+    ├── designtime/                 # Files used during design-time
+    └── src/
+        └── com/
+            └── myApp/
+                ├── controller/
+                ├── service/
+                ├── dao/
+                ├── models/
+                └── *.java
+```
 
 ---
 
@@ -116,16 +128,22 @@ Each layer has a clear responsibility, making the codebase easy to understand, d
 **Purpose**
 - Stores metadata used by WaveMaker Studio
 
-**Includes**
-- Database definitions
-- API metadata
-- Query and stored procedure definitions
+**Structure**
+```text
+services/
+└── myDatabase/                      # Main database service
+    └── designtime/                  # Design-time metadata and configuration
+        ├── db-connection-settings.json
+        ├── db-rest-patch.json
+        ├── myDatabase_API.json
+        ├── myDatabase_procedure.json
+        ├── myDatabase_published_dataModel.json
+        ├── myDatabase_query.json
+        └── service-info.json
+```
 
 **Notes**
-- Used only at design time
-- Runtime execution relies solely on generated Java code
-
-![Design-time file structure](assets/image-1.png)
+- Used at design time; runtime uses generated Java code
 
 ---
 
