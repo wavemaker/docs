@@ -1,3 +1,7 @@
+---
+last_update: { author: "Priyanka Bhadri" }
+---
+
 # Working with Stored Procedures
 
 In enterprise applications, business logic often resides inside the database in the form of **stored procedures**. These procedures encapsulate complex operations involving multiple tables, validations, or transactional logic. WaveMaker enables seamless integration of stored procedures by automatically exposing them as **REST APIs** that can be consumed by the application UI.
