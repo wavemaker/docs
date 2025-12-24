@@ -75,7 +75,7 @@ Before using MockingBird, ensure that:
 
 Once the mock server is created:
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 - A **Mock** tag appears next to the imported API
 - All variables associated with this API point to the mocked service
@@ -99,7 +99,7 @@ You can switch back to the original API at any time.
 2. Navigate to the **Settings** tab.
 3. Toggle the **Mock APIs** option to disable mocking.
 
-![alt text](image-1.png)
+![alt text](assets/image-1.png)
 
 After disabling:
 

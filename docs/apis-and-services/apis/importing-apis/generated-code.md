@@ -13,7 +13,7 @@ WaveMaker allows developers to **import REST APIs** and automatically generate a
 - Developers import a **Swagger/OpenAPI specification** (JSON/YAML) that defines API endpoints, request/response structures, parameters, and authentication requirements.
 - WaveMaker interprets this spec to understand the API’s structure and operations.
 
-![alt text](image-8.png)
+![alt text](assets/image-8.png)
 
 ---
 
@@ -44,7 +44,7 @@ WaveMaker generates Java code under `src/com/myapp/swagger/`:
 - Stub methods correspond to API operations.
 - Developers can **add custom business logic** without modifying generated models.
 
-![alt text](image-7.png)
+![alt text](assets/image-7.png)
 
 
 ---

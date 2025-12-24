@@ -32,7 +32,7 @@ For example, to enable a multi-date selection UI, you might import:
 - `jquery-ui.multidatespicker.js` — the JavaScript code  
 - `mdp.css` — the stylesheet for the date picker UI 
 
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
 ---
 
 ### 2. Reference the Files
@@ -56,7 +56,7 @@ Once the external files are referenced, you can call their functions from your p
 
 For example, after importing a multi-date picker plugin, On the main page mark the position for the display of the date-picker using a div tag.
 
-![alt text](image-5.png)
+![alt text](assets/image-5.png)
 
 Now add the following logic to initialize it:
 
@@ -68,7 +68,7 @@ $(function() {
 });
 
 ```
-![alt text](image-4.png)
+![alt text](assets/image-4.png)
 
 This attaches the multi-date picker functionality to an element with ID `multidatepicker` when the page loads.
 

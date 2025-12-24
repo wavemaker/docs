@@ -24,7 +24,7 @@ Entity models represent database tables, while **design-time metadata** supports
 
 This architecture follows standard **Java and Spring patterns**, ensuring transparency, extensibility, and enterprise readiness.
 
-![WaveMaker Backend Architecture](./assets/images/image-4.png)
+![WaveMaker Backend Architecture](assets/image-4.png)
 
 ---
 
@@ -35,7 +35,7 @@ WaveMaker generates a conventional Java project structure under the `services` d
 Each layer has a **clearly defined responsibility**, ensuring separation of concerns, maintainability, and ease of customization.
 
 
-![Generated Project Structure](image-2.png)
+![Generated Project Structure](assets/image-2.png)
 
 
 ---
@@ -131,7 +131,7 @@ Stores metadata required by WaveMaker Studio during application design.
 
 **Files Included**
 
-![Design-time file structure](image-1.png)
+![Design-time file structure](assets/image-1.png)
 
 ---
 

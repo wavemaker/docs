@@ -18,7 +18,7 @@ The **API Designer** is the central interface for managing all service APIs in y
 
 All APIs—whether from Database Services or custom Java Services—can be viewed and configured here.
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ---
 
@@ -74,7 +74,7 @@ WaveMaker Database APIs automatically expose CRUD operations for every table in 
 2. **Generated REST API**: WaveMaker exposes these as secure endpoints supporting CRUD and custom operations.
 3. **Clients / Modules**: Consume APIs without direct database access, while respecting security and authorization rules.
 
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
 
 ---
 

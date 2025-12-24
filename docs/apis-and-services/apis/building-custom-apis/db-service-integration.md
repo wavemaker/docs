@@ -21,7 +21,7 @@ To work with database operations (such as create, retrieve, update, delete), fol
 
 Once injected, you can use the service instance to call its methods directly inside your Java Service. For example, this lets you access the `User` table of a connected database.
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ---
 
@@ -89,7 +89,7 @@ If any operation within the transaction fails, all changes will be rolled back, 
 
 WaveMaker supports named queries defined in the database query editor. For each named query, WaveMaker generates a corresponding REST API and makes it available under the API Designer panel. These can be invoked using Java Services just like other database operations.
 
-![alt text](image-1.png)
+![alt text](assets/image-1.png)
 
 ## Summary
 

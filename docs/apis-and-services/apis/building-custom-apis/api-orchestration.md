@@ -43,7 +43,7 @@ When you import a service into your project:
 
 Once injected, you can invoke the service method from within your Java Service to implement aggregation logic. 
 
-![alt text](image-2.png)
+![alt text](assets/image-2.png)
 
 ---
 
@@ -55,7 +55,7 @@ API Composition is enabled by default in WaveMaker. It can be controlled as foll
 
 When creating a new project, you can choose whether to enable or disable API Composition.
 
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
 
 ### For Existing Projects
 

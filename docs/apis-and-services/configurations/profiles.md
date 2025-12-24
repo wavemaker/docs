@@ -28,7 +28,7 @@ By using configuration profiles, developers can easily deploy the same applicati
    - Authentication credentials
    - Any other environment-specific parameters
 4. Save the profile. You can create multiple profiles for different environments (e.g., Development, QA, Production).
-![alt text](image-1.png)
+![alt text](assets/image-1.png)
 ---
 
 ## Using Configuration Profiles

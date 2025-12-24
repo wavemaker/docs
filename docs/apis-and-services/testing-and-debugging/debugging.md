@@ -17,7 +17,7 @@ WaveMaker records log files that provide insight into what is happening in the d
 
 You can access both types of logs from the **footer area** of the project workspace. The logs panel also includes a **download icon** so you can save logs locally for offline review, sharing with teammates, or submitting to support for deeper analysis.
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ---
 
@@ -35,7 +35,7 @@ In some cases, especially when debugging network issues, the WaveMaker support t
 6. Paste the copied content into a text editor and save it as a `.har` file.
 7. Share the `.har` file with the support team along with the name of the failing service.
 
-![alt text](image-1.png)
+![alt text](assets/image1.png)
 
 ---
 
@@ -139,8 +139,8 @@ If issues occur after deployment, you can still retrieve logs to investigate wha
 
 This enables detailed analysis of errors encountered by users in production or staging environments.
 
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](assets/image2.png)
+![alt text](assets/image3.png)
 
 ---
 
