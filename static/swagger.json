@@ -1,0 +1,3018 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Swagger API documentation for hrdb",
+    "version" : "2.0",
+    "title" : "hrdbService Swagger Documentation",
+    "x-WM-SERVICE_ID" : "hrdb",
+    "x-WM-SERVICE_TYPE" : "DataService"
+  },
+  "host" : "cloud.wavemakeronline.com",
+  "basePath" : "/pk9yct3s6nqt/MyApp/services",
+  "tags" : [ {
+    "name" : "DepartmentController",
+    "description" : "Exposes APIs to work with Department resource.",
+    "x-WM-FULLY_QUALIFIED_NAME" : "com.myapp.hrdb.controller.DepartmentController",
+    "x-WM-VERSION" : "",
+    "x-WM-CONTROLLER_NAME" : "Department"
+  }, {
+    "name" : "EmployeeController",
+    "description" : "Exposes APIs to work with Employee resource.",
+    "x-WM-FULLY_QUALIFIED_NAME" : "com.myapp.hrdb.controller.EmployeeController",
+    "x-WM-VERSION" : "",
+    "x-WM-CONTROLLER_NAME" : "Employee"
+  }, {
+    "name" : "ProcedureExecutionController",
+    "description" : "controller class for procedure execution",
+    "x-WM-FULLY_QUALIFIED_NAME" : "com.myapp.hrdb.controller.ProcedureExecutionController",
+    "x-WM-VERSION" : "",
+    "x-WM-CONTROLLER_NAME" : "ProcedureExecution"
+  }, {
+    "name" : "QueryExecutionController",
+    "description" : "controller class for query execution",
+    "x-WM-FULLY_QUALIFIED_NAME" : "com.myapp.hrdb.controller.QueryExecutionController",
+    "x-WM-VERSION" : "",
+    "x-WM-CONTROLLER_NAME" : "QueryExecution"
+  }, {
+    "name" : "UserController",
+    "description" : "Exposes APIs to work with User resource.",
+    "x-WM-FULLY_QUALIFIED_NAME" : "com.myapp.hrdb.controller.UserController",
+    "x-WM-VERSION" : "",
+    "x-WM-CONTROLLER_NAME" : "User"
+  }, {
+    "name" : "VacationController",
+    "description" : "Exposes APIs to work with Vacation resource.",
+    "x-WM-FULLY_QUALIFIED_NAME" : "com.myapp.hrdb.controller.VacationController",
+    "x-WM-VERSION" : "",
+    "x-WM-CONTROLLER_NAME" : "Vacation"
+  } ],
+  "schemes" : [ "https", "http" ],
+  "paths" : {
+    "/hrdb/Department" : {
+      "get" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Returns the paginated list of Department instances matching the optional query (q) request param. If there is no query provided, it returns all the instances. Pagination & Sorting parameters such as page& size, sort can be sent as request parameters. The sort value should be a comma separated list of field names & optional sort order to sort the data on. eg: field1 asc, field2 desc etc ",
+        "operationId" : "DepartmentController_findDepartments",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "6d88dc7d-2c33-4a51-8d10-6013d18988e8",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Department",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "findDepartments",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "post" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Creates a new Department instance.",
+        "operationId" : "DepartmentController_createDepartment",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "Department",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Department",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "e41fc1be-9c52-4841-adad-15bb7ac017ec",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.Department",
+          "x-WM-ORIGINAL-NAME" : "department"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Department",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "createDepartment",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Department",
+      "x-WM-TAG" : "DepartmentController",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Department"
+    },
+    "/hrdb/Department/aggregations" : {
+      "post" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Returns aggregated result with given aggregation info",
+        "operationId" : "DepartmentController_getDepartmentAggregatedValues",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "AggregationInfo",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/AggregationInfo",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "3c1b5a5e-84ec-4bf7-b083-3cc9e5ed9e99",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.model.AggregationInfo",
+          "x-WM-ORIGINAL-NAME" : "aggregationInfo"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "type" : "object",
+                "additionalProperties" : {
+                  "$ref" : "#/definitions/Object",
+                  "x-WM-TYPE_ARGUMENTS" : [ ]
+                }
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "getDepartmentAggregatedValues",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Department",
+      "x-WM-TAG" : "DepartmentController",
+      "x-WM-RELATIVE_PATH" : "/aggregations",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Department/aggregations"
+    },
+    "/hrdb/Department/count" : {
+      "get" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Returns the total count of Department instances matching the optional query (q) request param.",
+        "operationId" : "DepartmentController_countDepartments",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "99350b37-28ed-4f40-ab28-6b8802dc10d8",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "countDepartments",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Department",
+      "x-WM-TAG" : "DepartmentController",
+      "x-WM-RELATIVE_PATH" : "/count",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Department/count"
+    },
+    "/hrdb/Department/deptCode/{deptCode}" : {
+      "get" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Returns the matching Department with given unique key values.",
+        "operationId" : "DepartmentController_getByDeptCode",
+        "parameters" : [ {
+          "name" : "deptCode",
+          "in" : "path",
+          "required" : true,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "bedb5ebf-ee22-406a-b9a2-503b7baa4ece",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "deptCode"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Department",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "getByDeptCode",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Department",
+      "x-WM-TAG" : "DepartmentController",
+      "x-WM-RELATIVE_PATH" : "/deptCode/{deptCode}",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Department/deptCode/{deptCode}"
+    },
+    "/hrdb/Department/export" : {
+      "post" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Returns a URL to download a file for the data matching the optional query (q) request param and the required fields provided in the Export Options.",
+        "operationId" : "DepartmentController_exportDepartmentsAndGetURL",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "DataExportOptions",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/DataExportOptions",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "6e546df6-a6b6-4cb8-9efe-647696e29e6f",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.export.DataExportOptions",
+          "x-WM-ORIGINAL-NAME" : "exportOptions"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/StringWrapper",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "exportDepartmentsAndGetURL",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Department",
+      "x-WM-TAG" : "DepartmentController",
+      "x-WM-RELATIVE_PATH" : "/export",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Department/export"
+    },
+    "/hrdb/Department/export/{exportType}" : {
+      "get" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Returns downloadable file for the data matching the optional query (q) request param.",
+        "operationId" : "DepartmentController_exportDepartments",
+        "produces" : [ "application/octet-stream" ],
+        "parameters" : [ {
+          "name" : "exportType",
+          "in" : "path",
+          "required" : true,
+          "type" : "string",
+          "enum" : [ "EXCEL", "CSV" ],
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "c65a4f6d-dc4a-47cf-a453-f30ef656897a",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.export.ExportType",
+          "x-WM-ORIGINAL-NAME" : "exportType"
+        }, {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "4159e64e-971f-4c8f-9943-c29001f03df1",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Downloadable",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "exportDepartments",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Department",
+      "x-WM-TAG" : "DepartmentController",
+      "x-WM-RELATIVE_PATH" : "/export/{exportType}",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Department/export/{exportType}"
+    },
+    "/hrdb/Department/filter" : {
+      "post" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Returns the paginated list of Department instances matching the optional query (q) request param. This API should be used only if the query string is too big to fit in GET request with request param. The request has to made in application/x-www-form-urlencoded format.",
+        "operationId" : "DepartmentController_filterDepartments",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "6782def9-bfec-4462-bedb-7aedf8a65c5b",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Department",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "filterDepartments",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Department",
+      "x-WM-TAG" : "DepartmentController",
+      "x-WM-RELATIVE_PATH" : "/filter",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Department/filter"
+    },
+    "/hrdb/Department/search" : {
+      "post" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Returns the list of Department instances matching the search criteria.",
+        "operationId" : "DepartmentController_searchDepartmentsByQueryFilters",
+        "parameters" : [ {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        }, {
+          "in" : "body",
+          "name" : "QueryFilter",
+          "required" : true,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/definitions/QueryFilter",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            },
+            "x-WM-IS_LIST" : false
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "347478d5-52e9-4962-9f25-8ada71a5e44d",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.expression.QueryFilter",
+          "x-WM-ORIGINAL-NAME" : "queryFilters"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Department",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "deprecated" : true,
+        "x-WM-METHOD_NAME" : "searchDepartmentsByQueryFilters",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Department",
+      "x-WM-TAG" : "DepartmentController",
+      "x-WM-RELATIVE_PATH" : "/search",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Department/search"
+    },
+    "/hrdb/Department/{deptId}" : {
+      "get" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Returns the Department instance associated with the given id.",
+        "operationId" : "DepartmentController_getDepartment",
+        "parameters" : [ {
+          "name" : "deptId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "213463f1-24fd-4681-a466-c6902f41d204",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "deptId"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Department",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "getDepartment",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "put" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Updates the Department instance associated with the given id.",
+        "operationId" : "DepartmentController_editDepartment",
+        "parameters" : [ {
+          "name" : "deptId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "d2454270-1c55-4ad5-8da2-37d01ae5af65",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "deptId"
+        }, {
+          "in" : "body",
+          "name" : "Department",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Department",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "af760b7e-3cdb-475f-9b01-1abfcfa7b941",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.Department",
+          "x-WM-ORIGINAL-NAME" : "department"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Department",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "editDepartment",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "delete" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Deletes the Department instance associated with the given id.",
+        "operationId" : "DepartmentController_deleteDepartment",
+        "parameters" : [ {
+          "name" : "deptId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "e179d74b-050c-4c16-9f09-648929c2f1e9",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "deptId"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "type" : "boolean"
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "deleteDepartment",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "patch" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Partially updates the Department instance associated with the given id.",
+        "operationId" : "DepartmentController_patchDepartment",
+        "parameters" : [ {
+          "name" : "deptId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "77ff29f2-c91b-4611-81f4-4c3f3589f04c",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "deptId"
+        }, {
+          "in" : "body",
+          "name" : "Department",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Department",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "afc1eed7-e14a-43b7-8eb1-cb2786d0ba0e",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.Department",
+          "x-WM-ORIGINAL-NAME" : "departmentPatch"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Department",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "patchDepartment",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Department",
+      "x-WM-TAG" : "DepartmentController",
+      "x-WM-RELATIVE_PATH" : "/{deptId}",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Department/{deptId}"
+    },
+    "/hrdb/Department/{deptId}/employees" : {
+      "get" : {
+        "tags" : [ "DepartmentController" ],
+        "description" : "Gets the employees instance associated with the given id.",
+        "operationId" : "DepartmentController_findAssociatedEmployees",
+        "parameters" : [ {
+          "name" : "deptId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "6c193ee5-2540-456e-b1c2-c1359c002c6e",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "deptId"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Employee",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "findAssociatedEmployees",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Department",
+      "x-WM-TAG" : "DepartmentController",
+      "x-WM-RELATIVE_PATH" : "/{deptId}/employees",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Department/{deptId}/employees"
+    },
+    "/hrdb/Employee" : {
+      "get" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Returns the paginated list of Employee instances matching the optional query (q) request param. If there is no query provided, it returns all the instances. Pagination & Sorting parameters such as page& size, sort can be sent as request parameters. The sort value should be a comma separated list of field names & optional sort order to sort the data on. eg: field1 asc, field2 desc etc ",
+        "operationId" : "EmployeeController_findEmployees",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "994e48f5-f9eb-4a48-9b27-86ed742c9066",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Employee",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "findEmployees",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "post" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Creates a new Employee instance.",
+        "operationId" : "EmployeeController_createEmployee",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "Employee",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Employee",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "200aa124-cf88-469d-9daf-2312da4709be",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.Employee",
+          "x-WM-ORIGINAL-NAME" : "employee"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Employee",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "createEmployee",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Employee",
+      "x-WM-TAG" : "EmployeeController",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Employee"
+    },
+    "/hrdb/Employee/aggregations" : {
+      "post" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Returns aggregated result with given aggregation info",
+        "operationId" : "EmployeeController_getEmployeeAggregatedValues",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "AggregationInfo",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/AggregationInfo",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "4936c7ce-2e41-44a4-9d21-d1fefda6e3f5",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.model.AggregationInfo",
+          "x-WM-ORIGINAL-NAME" : "aggregationInfo"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "type" : "object",
+                "additionalProperties" : {
+                  "$ref" : "#/definitions/Object",
+                  "x-WM-TYPE_ARGUMENTS" : [ ]
+                }
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "getEmployeeAggregatedValues",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Employee",
+      "x-WM-TAG" : "EmployeeController",
+      "x-WM-RELATIVE_PATH" : "/aggregations",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Employee/aggregations"
+    },
+    "/hrdb/Employee/count" : {
+      "get" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Returns the total count of Employee instances matching the optional query (q) request param.",
+        "operationId" : "EmployeeController_countEmployees",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "39412f05-dec7-46d1-8cc2-fe64e8e93a3c",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "countEmployees",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Employee",
+      "x-WM-TAG" : "EmployeeController",
+      "x-WM-RELATIVE_PATH" : "/count",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Employee/count"
+    },
+    "/hrdb/Employee/export" : {
+      "post" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Returns a URL to download a file for the data matching the optional query (q) request param and the required fields provided in the Export Options.",
+        "operationId" : "EmployeeController_exportEmployeesAndGetURL",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "DataExportOptions",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/DataExportOptions",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "4a58488f-9771-41c2-bb08-d0556dc79c35",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.export.DataExportOptions",
+          "x-WM-ORIGINAL-NAME" : "exportOptions"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/StringWrapper",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "exportEmployeesAndGetURL",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Employee",
+      "x-WM-TAG" : "EmployeeController",
+      "x-WM-RELATIVE_PATH" : "/export",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Employee/export"
+    },
+    "/hrdb/Employee/export/{exportType}" : {
+      "get" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Returns downloadable file for the data matching the optional query (q) request param.",
+        "operationId" : "EmployeeController_exportEmployees",
+        "produces" : [ "application/octet-stream" ],
+        "parameters" : [ {
+          "name" : "exportType",
+          "in" : "path",
+          "required" : true,
+          "type" : "string",
+          "enum" : [ "EXCEL", "CSV" ],
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "9e290beb-5578-43ef-914b-c008678b0f03",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.export.ExportType",
+          "x-WM-ORIGINAL-NAME" : "exportType"
+        }, {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "919fca20-b944-43ce-bccb-09fbcd8f358f",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Downloadable",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "exportEmployees",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Employee",
+      "x-WM-TAG" : "EmployeeController",
+      "x-WM-RELATIVE_PATH" : "/export/{exportType}",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Employee/export/{exportType}"
+    },
+    "/hrdb/Employee/filter" : {
+      "post" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Returns the paginated list of Employee instances matching the optional query (q) request param. This API should be used only if the query string is too big to fit in GET request with request param. The request has to made in application/x-www-form-urlencoded format.",
+        "operationId" : "EmployeeController_filterEmployees",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "3821d63e-c323-46e6-a096-b5204445ea28",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Employee",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "filterEmployees",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Employee",
+      "x-WM-TAG" : "EmployeeController",
+      "x-WM-RELATIVE_PATH" : "/filter",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Employee/filter"
+    },
+    "/hrdb/Employee/search" : {
+      "post" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Returns the list of Employee instances matching the search criteria.",
+        "operationId" : "EmployeeController_searchEmployeesByQueryFilters",
+        "parameters" : [ {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        }, {
+          "in" : "body",
+          "name" : "QueryFilter",
+          "required" : true,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/definitions/QueryFilter",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            },
+            "x-WM-IS_LIST" : false
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "841902db-c2cb-454a-a1e8-66449cc44853",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.expression.QueryFilter",
+          "x-WM-ORIGINAL-NAME" : "queryFilters"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Employee",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "deprecated" : true,
+        "x-WM-METHOD_NAME" : "searchEmployeesByQueryFilters",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Employee",
+      "x-WM-TAG" : "EmployeeController",
+      "x-WM-RELATIVE_PATH" : "/search",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Employee/search"
+    },
+    "/hrdb/Employee/{empId}" : {
+      "get" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Returns the Employee instance associated with the given id.",
+        "operationId" : "EmployeeController_getEmployee",
+        "parameters" : [ {
+          "name" : "empId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "2ef0735c-0693-4d34-8906-3e440d19e590",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "empId"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Employee",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "getEmployee",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "put" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Updates the Employee instance associated with the given id.",
+        "operationId" : "EmployeeController_editEmployee",
+        "parameters" : [ {
+          "name" : "empId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "d89db22b-43c7-4fcd-90c1-7b5f6e0f2db2",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "empId"
+        }, {
+          "in" : "body",
+          "name" : "Employee",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Employee",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "0c5c3a0f-f870-4414-a140-e42422aa7ff3",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.Employee",
+          "x-WM-ORIGINAL-NAME" : "employee"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Employee",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "editEmployee",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "delete" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Deletes the Employee instance associated with the given id.",
+        "operationId" : "EmployeeController_deleteEmployee",
+        "parameters" : [ {
+          "name" : "empId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "40d050ab-3638-49cb-9e09-4a9afc4d309a",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "empId"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "type" : "boolean"
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "deleteEmployee",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "patch" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Partially updates the Employee instance associated with the given id.",
+        "operationId" : "EmployeeController_patchEmployee",
+        "parameters" : [ {
+          "name" : "empId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "4fcc9e73-fd88-4949-a97c-ac15ba47abb0",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "empId"
+        }, {
+          "in" : "body",
+          "name" : "Employee",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Employee",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "b1db72b6-784b-47ab-b278-92b7142c47d9",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.Employee",
+          "x-WM-ORIGINAL-NAME" : "employeePatch"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Employee",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "patchEmployee",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Employee",
+      "x-WM-TAG" : "EmployeeController",
+      "x-WM-RELATIVE_PATH" : "/{empId}",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Employee/{empId}"
+    },
+    "/hrdb/Employee/{empId}/employeesForManagerId" : {
+      "get" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Gets the employeesForManagerId instance associated with the given id.",
+        "operationId" : "EmployeeController_findAssociatedEmployeesForManagerId",
+        "parameters" : [ {
+          "name" : "empId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "cf4e7b47-509a-49cd-a27a-3b4f35020da6",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "empId"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Employee",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "findAssociatedEmployeesForManagerId",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Employee",
+      "x-WM-TAG" : "EmployeeController",
+      "x-WM-RELATIVE_PATH" : "/{empId}/employeesForManagerId",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Employee/{empId}/employeesForManagerId"
+    },
+    "/hrdb/Employee/{empId}/vacations" : {
+      "get" : {
+        "tags" : [ "EmployeeController" ],
+        "description" : "Gets the vacations instance associated with the given id.",
+        "operationId" : "EmployeeController_findAssociatedVacations",
+        "parameters" : [ {
+          "name" : "empId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "f9543678-66aa-4d2c-9aa9-1076ea4e3a4d",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "empId"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Vacation",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "findAssociatedVacations",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Employee",
+      "x-WM-TAG" : "EmployeeController",
+      "x-WM-RELATIVE_PATH" : "/{empId}/vacations",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Employee/{empId}/vacations"
+    },
+    "/hrdb/User" : {
+      "get" : {
+        "tags" : [ "UserController" ],
+        "description" : "Returns the paginated list of User instances matching the optional query (q) request param. If there is no query provided, it returns all the instances. Pagination & Sorting parameters such as page& size, sort can be sent as request parameters. The sort value should be a comma separated list of field names & optional sort order to sort the data on. eg: field1 asc, field2 desc etc ",
+        "operationId" : "UserController_findUsers",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "4799e8c4-5543-45b8-9c1c-1d02d9e47ac1",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/User",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "findUsers",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "post" : {
+        "tags" : [ "UserController" ],
+        "description" : "Creates a new User instance.",
+        "operationId" : "UserController_createUser",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "User",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/User",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "5d9e56c6-ced2-4f43-80d2-87806b1973a8",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.User",
+          "x-WM-ORIGINAL-NAME" : "user"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/User",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "createUser",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/User",
+      "x-WM-TAG" : "UserController",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "/hrdb/User"
+    },
+    "/hrdb/User/aggregations" : {
+      "post" : {
+        "tags" : [ "UserController" ],
+        "description" : "Returns aggregated result with given aggregation info",
+        "operationId" : "UserController_getUserAggregatedValues",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "AggregationInfo",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/AggregationInfo",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "28b0cee6-6947-47f4-a200-cf7246ae59dc",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.model.AggregationInfo",
+          "x-WM-ORIGINAL-NAME" : "aggregationInfo"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "type" : "object",
+                "additionalProperties" : {
+                  "$ref" : "#/definitions/Object",
+                  "x-WM-TYPE_ARGUMENTS" : [ ]
+                }
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "getUserAggregatedValues",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/User",
+      "x-WM-TAG" : "UserController",
+      "x-WM-RELATIVE_PATH" : "/aggregations",
+      "x-WM-COMPLETE_PATH" : "/hrdb/User/aggregations"
+    },
+    "/hrdb/User/count" : {
+      "get" : {
+        "tags" : [ "UserController" ],
+        "description" : "Returns the total count of User instances matching the optional query (q) request param.",
+        "operationId" : "UserController_countUsers",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "f46bc0ad-a4e8-4fc7-93b4-54d28fd978f7",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "countUsers",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/User",
+      "x-WM-TAG" : "UserController",
+      "x-WM-RELATIVE_PATH" : "/count",
+      "x-WM-COMPLETE_PATH" : "/hrdb/User/count"
+    },
+    "/hrdb/User/export" : {
+      "post" : {
+        "tags" : [ "UserController" ],
+        "description" : "Returns a URL to download a file for the data matching the optional query (q) request param and the required fields provided in the Export Options.",
+        "operationId" : "UserController_exportUsersAndGetURL",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "DataExportOptions",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/DataExportOptions",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "aa284d56-5dbc-4268-b2cf-c46997f6632b",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.export.DataExportOptions",
+          "x-WM-ORIGINAL-NAME" : "exportOptions"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/StringWrapper",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "exportUsersAndGetURL",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/User",
+      "x-WM-TAG" : "UserController",
+      "x-WM-RELATIVE_PATH" : "/export",
+      "x-WM-COMPLETE_PATH" : "/hrdb/User/export"
+    },
+    "/hrdb/User/export/{exportType}" : {
+      "get" : {
+        "tags" : [ "UserController" ],
+        "description" : "Returns downloadable file for the data matching the optional query (q) request param.",
+        "operationId" : "UserController_exportUsers",
+        "produces" : [ "application/octet-stream" ],
+        "parameters" : [ {
+          "name" : "exportType",
+          "in" : "path",
+          "required" : true,
+          "type" : "string",
+          "enum" : [ "EXCEL", "CSV" ],
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "282d5200-5a3b-4579-98ea-6cc43ddb3f4f",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.export.ExportType",
+          "x-WM-ORIGINAL-NAME" : "exportType"
+        }, {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "78cbfba1-a48a-431d-a485-f59f9f9592c9",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Downloadable",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "exportUsers",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/User",
+      "x-WM-TAG" : "UserController",
+      "x-WM-RELATIVE_PATH" : "/export/{exportType}",
+      "x-WM-COMPLETE_PATH" : "/hrdb/User/export/{exportType}"
+    },
+    "/hrdb/User/filter" : {
+      "post" : {
+        "tags" : [ "UserController" ],
+        "description" : "Returns the paginated list of User instances matching the optional query (q) request param. This API should be used only if the query string is too big to fit in GET request with request param. The request has to made in application/x-www-form-urlencoded format.",
+        "operationId" : "UserController_filterUsers",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "6f82c050-9a43-4af7-9af4-b07c5c96aa8d",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/User",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "filterUsers",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/User",
+      "x-WM-TAG" : "UserController",
+      "x-WM-RELATIVE_PATH" : "/filter",
+      "x-WM-COMPLETE_PATH" : "/hrdb/User/filter"
+    },
+    "/hrdb/User/search" : {
+      "post" : {
+        "tags" : [ "UserController" ],
+        "description" : "Returns the list of User instances matching the search criteria.",
+        "operationId" : "UserController_searchUsersByQueryFilters",
+        "parameters" : [ {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        }, {
+          "in" : "body",
+          "name" : "QueryFilter",
+          "required" : true,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/definitions/QueryFilter",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            },
+            "x-WM-IS_LIST" : false
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "3c812ab4-3de9-4ef6-b977-6ecc27f6580a",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.expression.QueryFilter",
+          "x-WM-ORIGINAL-NAME" : "queryFilters"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/User",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "deprecated" : true,
+        "x-WM-METHOD_NAME" : "searchUsersByQueryFilters",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/User",
+      "x-WM-TAG" : "UserController",
+      "x-WM-RELATIVE_PATH" : "/search",
+      "x-WM-COMPLETE_PATH" : "/hrdb/User/search"
+    },
+    "/hrdb/User/{userId}" : {
+      "get" : {
+        "tags" : [ "UserController" ],
+        "description" : "Returns the User instance associated with the given id.",
+        "operationId" : "UserController_getUser",
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "1693064c-2769-41d3-8a6a-08f3fa75adc2",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "userId"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/User",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "getUser",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "put" : {
+        "tags" : [ "UserController" ],
+        "description" : "Updates the User instance associated with the given id.",
+        "operationId" : "UserController_editUser",
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "a76e350d-7e1b-4a69-8d11-7e7e91e45294",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "userId"
+        }, {
+          "in" : "body",
+          "name" : "User",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/User",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "053d4086-46e6-4432-bd88-6e0d6caacea5",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.User",
+          "x-WM-ORIGINAL-NAME" : "user"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/User",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "editUser",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "delete" : {
+        "tags" : [ "UserController" ],
+        "description" : "Deletes the User instance associated with the given id.",
+        "operationId" : "UserController_deleteUser",
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "e5c9f853-d89c-46aa-98f9-a49786e64a20",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "userId"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "type" : "boolean"
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "deleteUser",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "patch" : {
+        "tags" : [ "UserController" ],
+        "description" : "Partially updates the User instance associated with the given id.",
+        "operationId" : "UserController_patchUser",
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "f1869e92-b7d2-4fb7-befc-7fa7a057c5dd",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "userId"
+        }, {
+          "in" : "body",
+          "name" : "User",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/User",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "f22b6f50-d444-4775-a385-d07a91829e95",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.User",
+          "x-WM-ORIGINAL-NAME" : "userPatch"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/User",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "patchUser",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/User",
+      "x-WM-TAG" : "UserController",
+      "x-WM-RELATIVE_PATH" : "/{userId}",
+      "x-WM-COMPLETE_PATH" : "/hrdb/User/{userId}"
+    },
+    "/hrdb/Vacation" : {
+      "get" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Returns the paginated list of Vacation instances matching the optional query (q) request param. If there is no query provided, it returns all the instances. Pagination & Sorting parameters such as page& size, sort can be sent as request parameters. The sort value should be a comma separated list of field names & optional sort order to sort the data on. eg: field1 asc, field2 desc etc ",
+        "operationId" : "VacationController_findVacations",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "00017394-19fd-433e-895a-03398983ea4b",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Vacation",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "findVacations",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "post" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Creates a new Vacation instance.",
+        "operationId" : "VacationController_createVacation",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "Vacation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Vacation",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "4f12e63b-859c-4ac2-a737-90553dbfe955",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.Vacation",
+          "x-WM-ORIGINAL-NAME" : "vacation"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Vacation",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "createVacation",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Vacation",
+      "x-WM-TAG" : "VacationController",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Vacation"
+    },
+    "/hrdb/Vacation/aggregations" : {
+      "post" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Returns aggregated result with given aggregation info",
+        "operationId" : "VacationController_getVacationAggregatedValues",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "AggregationInfo",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/AggregationInfo",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "d7509c11-ed84-43ab-a233-cd986ab4c982",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.model.AggregationInfo",
+          "x-WM-ORIGINAL-NAME" : "aggregationInfo"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "type" : "object",
+                "additionalProperties" : {
+                  "$ref" : "#/definitions/Object",
+                  "x-WM-TYPE_ARGUMENTS" : [ ]
+                }
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "getVacationAggregatedValues",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Vacation",
+      "x-WM-TAG" : "VacationController",
+      "x-WM-RELATIVE_PATH" : "/aggregations",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Vacation/aggregations"
+    },
+    "/hrdb/Vacation/count" : {
+      "get" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Returns the total count of Vacation instances matching the optional query (q) request param.",
+        "operationId" : "VacationController_countVacations",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "c342f47f-f9a6-4071-b2d1-f1ad5f0ebdbd",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "countVacations",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Vacation",
+      "x-WM-TAG" : "VacationController",
+      "x-WM-RELATIVE_PATH" : "/count",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Vacation/count"
+    },
+    "/hrdb/Vacation/export" : {
+      "post" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Returns a URL to download a file for the data matching the optional query (q) request param and the required fields provided in the Export Options.",
+        "operationId" : "VacationController_exportVacationsAndGetURL",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "DataExportOptions",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/DataExportOptions",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "433359b3-4ed1-4f54-b78e-e0b7d998e9bf",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.export.DataExportOptions",
+          "x-WM-ORIGINAL-NAME" : "exportOptions"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/StringWrapper",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "exportVacationsAndGetURL",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Vacation",
+      "x-WM-TAG" : "VacationController",
+      "x-WM-RELATIVE_PATH" : "/export",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Vacation/export"
+    },
+    "/hrdb/Vacation/export/{exportType}" : {
+      "get" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Returns downloadable file for the data matching the optional query (q) request param.",
+        "operationId" : "VacationController_exportVacations",
+        "produces" : [ "application/octet-stream" ],
+        "parameters" : [ {
+          "name" : "exportType",
+          "in" : "path",
+          "required" : true,
+          "type" : "string",
+          "enum" : [ "EXCEL", "CSV" ],
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "a0514eef-f5b8-4f34-9d9f-1faf0a2241b5",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.export.ExportType",
+          "x-WM-ORIGINAL-NAME" : "exportType"
+        }, {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "69a45abf-7567-401f-922b-7e9a9e85b72f",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Downloadable",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "exportVacations",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Vacation",
+      "x-WM-TAG" : "VacationController",
+      "x-WM-RELATIVE_PATH" : "/export/{exportType}",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Vacation/export/{exportType}"
+    },
+    "/hrdb/Vacation/filter" : {
+      "post" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Returns the paginated list of Vacation instances matching the optional query (q) request param. This API should be used only if the query string is too big to fit in GET request with request param. The request has to made in application/x-www-form-urlencoded format.",
+        "operationId" : "VacationController_filterVacations",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "description" : "conditions to filter the results",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "558ccb83-5bc9-41cd-bab1-26f030f9dc08",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.String",
+          "x-WM-ORIGINAL-NAME" : "query"
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Vacation",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "filterVacations",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Vacation",
+      "x-WM-TAG" : "VacationController",
+      "x-WM-RELATIVE_PATH" : "/filter",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Vacation/filter"
+    },
+    "/hrdb/Vacation/search" : {
+      "post" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Returns the list of Vacation instances matching the search criteria.",
+        "operationId" : "VacationController_searchVacationsByQueryFilters",
+        "parameters" : [ {
+          "name" : "page",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 0,
+          "format" : "int32",
+          "x-WM-RESOLVER" : "org.springframework.data.domain.Pageable",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 20,
+          "format" : "int32",
+          "x-WM-EDITABLE" : false
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-WM-EDITABLE" : false
+        }, {
+          "in" : "body",
+          "name" : "QueryFilter",
+          "required" : true,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/definitions/QueryFilter",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            },
+            "x-WM-IS_LIST" : false
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "1a7494e1-1fda-42d5-bf8a-e426d5b1e2d3",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.wavemaker.runtime.data.expression.QueryFilter",
+          "x-WM-ORIGINAL-NAME" : "queryFilters"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Page",
+              "x-WM-TYPE_ARGUMENTS" : [ {
+                "$ref" : "#/definitions/Vacation",
+                "x-WM-TYPE_ARGUMENTS" : [ ]
+              } ]
+            }
+          }
+        },
+        "deprecated" : true,
+        "x-WM-METHOD_NAME" : "searchVacationsByQueryFilters",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Vacation",
+      "x-WM-TAG" : "VacationController",
+      "x-WM-RELATIVE_PATH" : "/search",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Vacation/search"
+    },
+    "/hrdb/Vacation/{id}" : {
+      "get" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Returns the Vacation instance associated with the given id.",
+        "operationId" : "VacationController_getVacation",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "047c5ff5-e405-44b8-924b-011e6d56dccb",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "id"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Vacation",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "getVacation",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "put" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Updates the Vacation instance associated with the given id.",
+        "operationId" : "VacationController_editVacation",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "ed262b24-fa59-48d5-80a3-ef18b22f2460",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "id"
+        }, {
+          "in" : "body",
+          "name" : "Vacation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Vacation",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "99c1b65f-70c5-4248-99bb-636d58bdac04",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.Vacation",
+          "x-WM-ORIGINAL-NAME" : "vacation"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Vacation",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "editVacation",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "delete" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Deletes the Vacation instance associated with the given id.",
+        "operationId" : "VacationController_deleteVacation",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "a0b93abc-945e-4a50-bdae-5bd4acdfed67",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "id"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "type" : "boolean"
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "deleteVacation",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "patch" : {
+        "tags" : [ "VacationController" ],
+        "description" : "Partially updates the Vacation instance associated with the given id.",
+        "operationId" : "VacationController_patchVacation",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32",
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "944d2846-b81d-466e-8069-2117edc052d8",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Integer",
+          "x-WM-ORIGINAL-NAME" : "id"
+        }, {
+          "in" : "body",
+          "name" : "Vacation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Vacation",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-EDITABLE" : true,
+          "x-WM-UUID" : "9ae336b4-33a3-4ec3-a573-7bf4ef1ba79d",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "com.myapp.hrdb.Vacation",
+          "x-WM-ORIGINAL-NAME" : "vacationPatch"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/Vacation",
+              "x-WM-TYPE_ARGUMENTS" : [ ]
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "patchVacation",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/hrdb/Vacation",
+      "x-WM-TAG" : "VacationController",
+      "x-WM-RELATIVE_PATH" : "/{id}",
+      "x-WM-COMPLETE_PATH" : "/hrdb/Vacation/{id}"
+    }
+  },
+  "definitions" : {
+    "StringWrapper" : {
+      "allOf" : [ {
+        "$ref" : "#/definitions/AbstractPrimitiveWrapper"
+      }, { } ],
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.wavemaker.commons.wrapper.StringWrapper",
+      "x-WM-TAGS" : [ "UserController", "VacationController", "DepartmentController", "EmployeeController" ]
+    },
+    "User" : {
+      "properties" : {
+        "userId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "username" : {
+          "type" : "string"
+        },
+        "password" : {
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "tenantId" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.myapp.hrdb.User",
+      "x-WM-TAGS" : [ "UserController" ]
+    },
+    "Vacation" : {
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "startDate" : {
+          "type" : "string",
+          "format" : "date",
+          "x-WM-SUB_FORMAT" : "date"
+        },
+        "endDate" : {
+          "type" : "string",
+          "format" : "date",
+          "x-WM-SUB_FORMAT" : "date"
+        },
+        "empId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "tenantId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "status" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "employee" : {
+          "$ref" : "#/definitions/Employee",
+          "x-WM-TYPE_ARGUMENTS" : [ ]
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.myapp.hrdb.Vacation",
+      "x-WM-TAGS" : [ "VacationController", "EmployeeController" ]
+    },
+    "InputStream" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "java.io.InputStream",
+      "x-WM-TAGS" : [ "UserController" ]
+    },
+    "Page" : {
+      "properties" : {
+        "totalElements" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "totalPages" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "first" : {
+          "type" : "boolean"
+        },
+        "size" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "content" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Object",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-IS_LIST" : true
+        },
+        "number" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "sort" : {
+          "$ref" : "#/definitions/Sort",
+          "x-WM-TYPE_ARGUMENTS" : [ ]
+        },
+        "last" : {
+          "type" : "boolean"
+        },
+        "pageable" : {
+          "$ref" : "#/definitions/Pageable",
+          "x-WM-TYPE_ARGUMENTS" : [ ]
+        },
+        "numberOfElements" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "arg" : {
+          "$ref" : "#/definitions/Object",
+          "x-WM-TYPE_ARGUMENTS" : [ ]
+        },
+        "empty" : {
+          "type" : "boolean"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "org.springframework.data.domain.Page",
+      "x-WM-TAGS" : [ "UserController", "VacationController", "DepartmentController", "EmployeeController" ]
+    },
+    "AbstractPrimitiveWrapper" : {
+      "properties" : {
+        "result" : {
+          "$ref" : "#/definitions/Object",
+          "x-WM-TYPE_ARGUMENTS" : [ ]
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.wavemaker.commons.wrapper.AbstractPrimitiveWrapper",
+      "x-WM-TAGS" : [ "UserController" ]
+    },
+    "Downloadable" : {
+      "properties" : {
+        "fileName" : {
+          "type" : "string"
+        },
+        "contents" : {
+          "$ref" : "#/definitions/InputStream",
+          "x-WM-TYPE_ARGUMENTS" : [ ]
+        },
+        "contentLength" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "contentType" : {
+          "type" : "string"
+        },
+        "inline" : {
+          "type" : "boolean"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.wavemaker.runtime.commons.file.model.Downloadable",
+      "x-WM-TAGS" : [ "UserController", "VacationController", "DepartmentController", "EmployeeController" ]
+    },
+    "Aggregation" : {
+      "properties" : {
+        "field" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string",
+          "enum" : [ "SUM", "MIN", "MAX", "AVG", "COUNT" ]
+        },
+        "alias" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.wavemaker.runtime.data.model.Aggregation",
+      "x-WM-TAGS" : [ "UserController" ]
+    },
+    "QueryFilter" : {
+      "properties" : {
+        "attributeName" : {
+          "type" : "string"
+        },
+        "attributeValue" : {
+          "$ref" : "#/definitions/Object",
+          "x-WM-TYPE_ARGUMENTS" : [ ]
+        },
+        "filterCondition" : {
+          "type" : "string",
+          "enum" : [ "STARTING_WITH", "ENDING_WITH", "CONTAINING", "EQUALS", "NOT_EQUALS", "BETWEEN", "LESS_THAN", "LESS_THAN_OR_EQUALS", "GREATER_THAN", "GREATER_THAN_OR_EQUALS", "NULL", "EMPTY", "LIKE", "IN", "NULL_OR_EMPTY", "IS" ]
+        },
+        "attributeType" : {
+          "type" : "string",
+          "enum" : [ "BIG_DECIMAL", "BIG_INTEGER", "BLOB", "BOOLEAN", "BYTE", "CALENDAR", "CALENDAR_DATE", "CHARACTER", "CLOB", "CURRENCY", "DATE", "DOUBLE", "FLOAT", "INTEGER", "LONG", "LOCALE", "STRING", "SHORT", "TEXT", "TIME", "DATETIME", "TIMESTAMP", "TIMEZONE", "TRUE_FALSE", "YES_NO" ]
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.wavemaker.runtime.data.expression.QueryFilter",
+      "x-WM-TAGS" : [ "UserController", "VacationController", "DepartmentController", "EmployeeController" ]
+    },
+    "Department" : {
+      "properties" : {
+        "deptId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "budget" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "q1" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "q2" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "q3" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "q4" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "deptCode" : {
+          "type" : "string"
+        },
+        "location" : {
+          "type" : "string"
+        },
+        "tenantId" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.myapp.hrdb.Department",
+      "x-WM-TAGS" : [ "VacationController", "DepartmentController" ]
+    },
+    "Pageable" : {
+      "properties" : {
+        "paged" : {
+          "type" : "boolean"
+        },
+        "unpaged" : {
+          "type" : "boolean"
+        },
+        "pageSize" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "pageNumber" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "offset" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "sort" : {
+          "$ref" : "#/definitions/Sort",
+          "x-WM-TYPE_ARGUMENTS" : [ ]
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "org.springframework.data.domain.Pageable",
+      "x-WM-TAGS" : [ "UserController" ]
+    },
+    "Employee" : {
+      "properties" : {
+        "empId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "firstname" : {
+          "type" : "string"
+        },
+        "lastname" : {
+          "type" : "string"
+        },
+        "street" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "zip" : {
+          "type" : "string"
+        },
+        "birthdate" : {
+          "type" : "string",
+          "format" : "date",
+          "x-WM-SUB_FORMAT" : "date"
+        },
+        "picurl" : {
+          "type" : "string"
+        },
+        "jobTitle" : {
+          "type" : "string"
+        },
+        "deptId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "username" : {
+          "type" : "string"
+        },
+        "password" : {
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "managerId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "tenantId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "department" : {
+          "$ref" : "#/definitions/Department",
+          "x-WM-TYPE_ARGUMENTS" : [ ]
+        },
+        "employeeByManagerId" : {
+          "$ref" : "#/definitions/Employee",
+          "x-WM-TYPE_ARGUMENTS" : [ ]
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.myapp.hrdb.Employee",
+      "x-WM-TAGS" : [ "VacationController", "DepartmentController", "EmployeeController" ]
+    },
+    "DataExportOptions" : {
+      "allOf" : [ {
+        "$ref" : "#/definitions/ExportOptions"
+      }, {
+        "properties" : {
+          "query" : {
+            "type" : "string"
+          }
+        }
+      } ],
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.wavemaker.runtime.data.export.DataExportOptions",
+      "x-WM-TAGS" : [ "UserController", "VacationController", "DepartmentController", "EmployeeController" ]
+    },
+    "ExportOptions" : {
+      "properties" : {
+        "fields" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/FieldInfo",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-IS_LIST" : true
+        },
+        "exportType" : {
+          "type" : "string",
+          "enum" : [ "EXCEL", "CSV" ]
+        },
+        "exportSize" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "fileName" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.wavemaker.runtime.data.export.ExportOptions",
+      "x-WM-TAGS" : [ "UserController" ]
+    },
+    "Sort$Order" : {
+      "properties" : {
+        "direction" : {
+          "type" : "string",
+          "enum" : [ "ASC", "DESC" ]
+        },
+        "property" : {
+          "type" : "string"
+        },
+        "ignoreCase" : {
+          "type" : "boolean"
+        },
+        "nullHandling" : {
+          "type" : "string",
+          "enum" : [ "NATIVE", "NULLS_FIRST", "NULLS_LAST" ]
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "org.springframework.data.domain.Order",
+      "x-WM-TAGS" : [ "UserController" ]
+    },
+    "Sort" : {
+      "properties" : {
+        "orders" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Sort$Order",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-IS_LIST" : true
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "org.springframework.data.domain.Sort",
+      "x-WM-TAGS" : [ "UserController" ]
+    },
+    "Object" : {
+      "x-WM-TAGS" : [ "UserController", "VacationController", "DepartmentController", "EmployeeController" ]
+    },
+    "Stream" : {
+      "properties" : {
+        "parallel" : {
+          "type" : "boolean"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "java.util.stream.Stream",
+      "x-WM-TAGS" : [ "UserController" ]
+    },
+    "AggregationInfo" : {
+      "properties" : {
+        "groupByFields" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          },
+          "x-WM-IS_LIST" : true
+        },
+        "aggregations" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Aggregation",
+            "x-WM-TYPE_ARGUMENTS" : [ ]
+          },
+          "x-WM-IS_LIST" : true
+        },
+        "filter" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.wavemaker.runtime.data.model.AggregationInfo",
+      "x-WM-TAGS" : [ "UserController", "VacationController", "DepartmentController", "EmployeeController" ]
+    },
+    "FieldInfo" : {
+      "properties" : {
+        "header" : {
+          "type" : "string"
+        },
+        "field" : {
+          "type" : "string"
+        },
+        "expression" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "com.wavemaker.runtime.data.export.FieldInfo",
+      "x-WM-TAGS" : [ "UserController" ]
+    }
+  }
+}
