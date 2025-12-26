@@ -2,7 +2,7 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Working with Queries 
+# Queries 
 
 WaveMaker lets you build custom database queries and integrate them directly into your applications. Queries help you fetch, filter, or manipulate data across one or more tables — ideal for custom reports, dashboards, or dynamic UI behavior. Every query you save in WaveMaker is automatically exposed as a **REST API** that your UI layer can call. 
 
@@ -88,30 +88,33 @@ WaveMaker maps query types to the appropriate HTTP methods:
 
 ---
 
-## Generated Code Structure
+### Query Architecture 
 
-When a query is configured, WaveMaker auto-generates backend artifacts:
+When a query is saved, WaveMaker generates supporting Java code:
 
-### Models
+![alt text](assets/queries.png)
 
-For each query:
+#### Models
 
-- A **Request POJO** is created for INSERT/UPDATE queries
-- A **Response POJO** is generated for SELECT queries
-- Response classes include fields matching returned columns
-- HQL queries may reuse existing model classes when possible
+- For **SELECT** queries, a `Response` POJO is generated (e.g., `<queryName>Response`) with fields matching the query output.
+- For **INSERT/UPDATE** queries, a `Request` POJO is generated.
+- Models are placed under the package: `<service_package>.models.query`.
+- If an HQL query returns existing entity types, existing model classes may be reused instead of generating new ones. 
 
-### Services
+#### Services
 
-- A class called `QueryExecutorService` is generated under the database's service package
-- Each query gets an `execute<QueryName>()` method
-- SELECT queries return typed response objects (or paginated lists)
-- Non-SELECT queries return an integer count of affected rows
+- A `QueryExecutorService` class is generated in the `<service_package>.service` package.
+- Each query has an `execute<queryName>` method that:
+  - Accepts parameters (including pageable for pagination).
+  - Returns a `Response` object for SELECT queries or an `int` for non-SELECT queries.
+- For paginated queries, the return type is `Page<<queryName>Response>`.
+- Export methods (`export<queryName>`) are added for queries that return paginated data. 
 
-### Controllers
+#### Controllers
 
-- REST endpoints are exposed via a `QueryExecutorController`
-- Method signatures in the controller mirror those in the service layer
+- A `QueryExecutorController` class is generated in `<service_package>.controller`.
+- REST endpoints corresponding to each query and its export API are exposed.
+- Methods use the service layer’s signatures to respond to API requests. 
 
 ---
 

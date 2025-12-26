@@ -2,166 +2,305 @@
 last_update: { author: "Priyanka Bhadri" }
 ---
 
-# Working with Stored Procedures
+# Stored Procedures
 
-In enterprise applications, business logic often resides inside the database in the form of **stored procedures**. These procedures encapsulate complex operations involving multiple tables, validations, or transactional logic. WaveMaker enables seamless integration of stored procedures by automatically exposing them as **REST APIs** that can be consumed by the application UI.
+In many enterprise applications, standard CRUD APIs are not sufficient to handle complex business logic such as multi-step transactions, batch processing, conditional logic, or reusable database routines. For these scenarios, **stored procedures** provide a robust and efficient solution.
 
----
+WaveMaker enables seamless integration with database stored procedures by allowing you to invoke existing procedures, configure parameters, and automatically expose them as secure REST APIs—without writing manual backend code.
 
-## What Is a Stored Procedure?
-
-A **stored procedure** is a reusable SQL program stored and executed within the database. Instead of embedding complex SQL logic in the application layer, stored procedures allow developers to centralize logic at the database level and invoke it whenever required.
+A **stored procedure** is a precompiled SQL program stored in the database that can accept input parameters, return output values, and produce result sets.
 
 ---
 
-## Stored Procedure Support in WaveMaker
+## Procedure Tab in Database Designer
 
-WaveMaker provides built-in support for working with stored procedures through the **Database Designer**.
+The **Procedure** tab is available within the **Database Designer** of a Database Service. It is used to configure and invoke stored procedures that already exist in the connected database.
 
-Using the **Procedure editor**, developers can:
-- Execute existing database procedures using the appropriate SQL syntax
-- Define procedure parameters and their directions
-- Automatically generate REST APIs for each procedure
+Using this tab, you can:
+- Write the procedure invocation syntax
+- Execute and validate the procedure
+- Configure parameters and their types
+- Save the procedure to generate REST APIs
 
-Once saved, every stored procedure becomes a callable **Database API**, which can be easily bound to UI components using variables.
-
----
-
-## Creating and Using a Stored Procedure
-
-### Step 1: Create the Procedure in the Database
-Stored procedures must already exist in the database. They can be created using native database tools such as:
-- MySQL Workbench
-- Oracle SQL Developer
-- SQL Server Management Studio
-
----
-
-### Step 2: Define the Procedure in WaveMaker
-1. Open the **Database Designer**
-2. Navigate to the **Procedures** tab
-3. Add a new procedure using the database-specific syntax
-4. Configure input and output parameters
-5. Save the procedure
-
-WaveMaker automatically generates the backend artifacts.
+Once saved, the procedure becomes available as a Database API and can be accessed from the **API Designer** and used throughout the application.
 
 ---
 
 ## Procedure Parameters
 
-Stored procedures can accept and return values using parameters. WaveMaker supports the following parameter types:
+WaveMaker automatically detects the parameters defined in the stored procedure and allows you to configure them explicitly.
 
-| Parameter Type | Description |
-|---------------|------------|
-| **IN** | Accepts input values |
-| **OUT** | Returns output values |
-| **IN-OUT** | Used for both input and output |
+### Parameter Modes
 
-Each parameter must be assigned a valid database data type. Some databases (such as Oracle) also support **cursor types** for returning result sets.
+Each parameter must be assigned one of the following modes:
+
+- **IN** – Input-only parameter passed from the client
+- **OUT** – Output-only parameter returned by the procedure
+- **IN-OUT** – Used both as input and output
+
+### Parameter Data Types
+
+Each parameter must also be mapped to an appropriate data type that matches the database definition. Supported types depend on the underlying database.
+
+> Some database-specific types (for example, cursors in Oracle) are supported only on compatible databases.
 
 ---
 
-## Server-Side Parameters
+## Server-Side and Environment Parameters
 
-WaveMaker allows stored procedure parameters to be populated automatically using server-side values, such as:
-- Logged-in user ID
-- Logged-in user name
-- Current date, time, or timestamp
+In addition to user-provided values, stored procedure parameters can be bound to server-side properties that are resolved automatically at runtime.
 
-These values are resolved at runtime and do not require user input from the UI.
+### Supported Server Properties
+
+- Logged-in User ID
+- Logged-in User Name
+- Current Date
+- Current Time
+- Current Date and Time
+
+### App Environment Properties
+
+You can also bind parameters to **App Environment Properties**, allowing different values to be supplied based on the deployment environment (development, testing, production).
 
 ---
 
 ## Handling Result Sets and Cursors
 
-When a stored procedure returns a result set:
-- WaveMaker adds a `content` property to the API response
-- A corresponding **POJO (Java model class)** is generated to represent the result structure
+Stored procedures may return result sets, also referred to as **cursors**.
 
-This enables type-safe access to returned data within the application.
+### Undefined Cursors
+
+When a procedure returns an undefined cursor:
+- WaveMaker generates a `content` field in the response
+- A corresponding POJO is created to represent the cursor structure
+- The result set is mapped to this generated model automatically
+
+Each cursor returned by the procedure is represented as a structured Java object, making it easy to bind results to UI widgets.
 
 ---
 
-## Database-Specific Procedure Syntax
+## Creating Stored Procedures
 
-Different databases use different syntax for invoking stored procedures:
+Stored procedures and functions must be created directly in the database using the database’s native tools or SQL editors.
+
+Once created:
+- They become visible in the Database Designer
+- They can be selected and invoked using the Procedure tab
+- No additional import or configuration is required
+
+
+
+The database we used contains an Employee table with EmpID, Name and City details. Here is the _Employee table that we have designed using the DB Designer.
+
+![alt text](assets/table.png)
+
+
+The procedure entered in the DBShell under DB Tools would be:
+
+ ```sql
+DELIMITER ;;
+CREATE PROCEDURE emp_in_out(IN in_city varchar(255), OUT total integer) 
+    BEGIN SELECT COUNT(Emp_ID) 
+        INTO total
+        FROM Employee 
+        WHERE City = in_city; 
+    END;;
+DELIMITER ;
+```
+
+A function would be:
+
+ ```sql
+DELIMITER ;;
+CREATE FUNCTION emp_in_out(in_city varchar(255)) RETURNS integer 
+    BEGIN DECLARE emp_tot INT;
+        SELECT COUNT(Emp_ID) 
+            INTO emp_tot
+            FROM Employee 
+            WHERE City = in_city; 
+        RETURN emp_tot;
+    END;;
+DELIMITER ;
+```
+
+---
+
+## Invoking Stored Procedures
+
+To invoke a stored procedure in WaveMaker:
+
+1. Open the Database Service in **Database Designer**
+2. Navigate to the **Procedure** tab
+3. Use database-specific syntax to call the procedure, for example:
+
+   ```sql
+   CALL my_procedure(:inputParam, :outputParam)
+   ```
+
+   For functions:
+
+   ```sql
+   {{ :result = call my_function(:inputParam) }}
+   ```
+
+4. Use `Ctrl + Space` to view and select available procedures
+5. Configure parameter modes and data types
+6. Execute the procedure to validate it
+7. Save the procedure to generate the REST API
+
+---
+
+<!-- ## Using Stored Procedures in the Application
+
+After saving a procedure:
+
+1. Create a **Database API Variable** based on the generated procedure API
+2. Bind UI input widgets to the procedure's input parameters
+3. Configure variable execution (on page load, on button click, etc.)
+4. Bind output widgets (labels, tables, charts) to the procedure response
+5. Preview the application and execute the procedure
+
+--- -->
+
+
+## Database-Specific Invocation Syntax
+
+Stored procedure invocation syntax varies by database:
 
 ### MySQL / DB2
+
 ```sql
-CALL procedure_name(:param1, :param2);
+CALL procedure_name(:param1, :param2)
 ```
 
 ### Oracle
+
 ```sql
-CALL procedure_name(:param1, :param2);
+CALL package_name.procedure_name(:param1, :param2)
 ```
 
-If the procedure belongs to a package, prefix it with the package name.
-
 ### PostgreSQL
+
 ```sql
-SELECT procedure_name(:param1, :param2);
+SELECT procedure_name(:param1, :param2)
 ```
 
 ### SQL Server (MSSQL)
+
 ```sql
-EXEC schema_name.procedure_name :param1, :param2;
+EXEC schema_name.procedure_name :param1, :param2
+```
+
+To invoke SQL Server functions:
+
+```sql
+SELECT * FROM function_name(:param1, :param2)
 ```
 
 ---
 
-## Backend Code Generation
+## Stored Procedure Architecture
 
-When a stored procedure is saved in WaveMaker, the platform automatically generates:
+When a stored procedure is saved, WaveMaker generates backend Java artifacts to execute it securely via REST.
 
-### 1. REST API
+![alt text](assets/queries.png)
 
-A REST endpoint is created for the procedure, allowing it to be invoked over HTTP.
+### Generated Models
 
-### 2. Model Classes
+Request and response POJOs are generated under:
 
-Java POJOs are generated based on:
-
-- Input parameters
-- Output parameters
-- Result sets (if any)
-
-### 3. Service Layer
-
-A `ProcedureExecutorService` class is created with a method named:
-
-```java
-execute<ProcedureName>()
+```
+<service_package>.models.procedure
 ```
 
-### 4. Controller Layer
+Naming convention:
 
-A REST controller exposes the service method, making the procedure accessible to the UI.
+```
+<ProcedureName>Request
+<ProcedureName>Response
+```
+
+A response class is generated only if the procedure returns:
+
+- OUT parameters
+- IN-OUT parameters
+- Result sets (cursors)
+
+**Additional notes:**
+
+- If the procedure does not return output, the service method uses `Void` as the return type
+- Each cursor generates a corresponding POJO
+- Undefined cursors are mapped to a `content` field in the response
 
 ---
 
-## Using Stored Procedures in the UI
+### Generated Services
 
-To consume a stored procedure in the application:
+WaveMaker generates a service layer to execute stored procedures:
 
-1. Create a **Variable** bound to the generated Database API
-2. Map input parameters to UI widgets (text boxes, dropdowns, etc.)
-3. Bind output values to labels, tables, or charts
-4. Invoke the API using events such as button clicks or page load
+
+
+**Service class:**
+
+```
+ProcedureExecutorService
+```
+
+**Located under:**
+
+```
+<service_package>.service
+```
+
+**For each procedure, a method is generated:**
+
+```
+execute<ProcedureName>
+```
+
+**Method arguments:**
+
+- Request object (if generated), or
+- Individual IN parameters
+
+**Return type:**
+
+- Response model, or
+- `Void` if no output is returned
 
 ---
 
-## Key Benefits
+### Generated Controllers
 
-- Centralized business logic at the database layer
-- Automatic REST API generation
-- Strongly typed Java models
-- Easy UI binding with variables
-- Supports enterprise-grade database workflows
+WaveMaker also generates REST controllers:
+
+**Controller class:**
+
+```
+ProcedureExecutorController
+```
+
+**Located under:**
+
+```
+<service_package>.controller
+```
+
+**Key features:**
+
+- Each procedure is exposed as a REST endpoint
+- Primitive return values are wrapped using appropriate wrapper classes (for example, `IntegerWrapper`)
 
 ---
 
 ## Summary
 
-WaveMaker simplifies working with stored procedures by converting them into fully functional REST services. This approach enables developers to leverage existing database logic while maintaining a clean separation between database, backend services, and UI layers.
+WaveMaker's stored procedure support allows you to:
+
+- Reuse existing database logic
+- Execute complex operations efficiently
+- Automatically expose procedures as REST APIs
+- Bind inputs and outputs directly to the UI
+- Maintain full transparency and control over generated backend code
+
+This approach combines low-code productivity with enterprise-grade database integration.
