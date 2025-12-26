@@ -36,7 +36,7 @@ In some cases, especially when debugging network issues, the WaveMaker support t
 6. Paste the copied content into a text editor and save it as a `.har` file.
 7. Share the `.har` file with the support team along with the name of the failing service.
 
-![alt text](assets/image1.png)
+![alt text](assets/debug-mode-activation.png)
 
 ---
 
@@ -140,8 +140,8 @@ If issues occur after deployment, you can still retrieve logs to investigate wha
 
 This enables detailed analysis of errors encountered by users in production or staging environments.
 
-![alt text](assets/image2.png)
-![alt text](assets/image3.png)
+![alt text](assets/breakpoint-management.png)
+![alt text](assets/debug-console-output.png)
 
 ---
 

@@ -37,9 +37,9 @@ WaveMaker allows you to import these directly into your project.
 After importing, the resources are available in your project and can be referenced or bound to widgets and logic.
 
 
-![alt text](assets/image-1.png)
+![alt text](assets/third-party-library-options.png)
 
-![alt text](assets/image-2.png)
+![alt text](assets/jar-file-upload.png)
 
 ---
 

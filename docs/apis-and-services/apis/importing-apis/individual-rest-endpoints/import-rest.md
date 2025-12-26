@@ -42,7 +42,7 @@ To integrate a third-party REST API into your WaveMaker app:
 7. Once verified, click **Import** to bring the service into your project. 
  The **Import** option becomes active only after a successful test. 
  
-![alt text](assets/image-7.png)
+![alt text](assets/websocket-variable-creation.png)
 
 ---
 
@@ -102,7 +102,7 @@ Some REST endpoints require data input (e.g., text or file uploads):
 - You can specify input types as **File** or **Text**, allowing upload of files (e.g., images) or submission of textual data.  
 - For internal WaveMaker REST APIs, `application/json` or `text/plain` types are also supported. 
 
-![alt text](assets/image-8.png)
+![alt text](assets/server-timeout-configuration.png)
 
 ---
 

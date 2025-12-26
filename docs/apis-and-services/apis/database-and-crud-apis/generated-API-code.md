@@ -26,7 +26,7 @@ WaveMaker generates a standard layered backend architecture.
 
 This architecture aligns with common **Spring Boot** application practices.
 
-![WaveMaker Backend Architecture](assets/image-4.png)
+![WaveMaker Backend Architecture](assets/backend-architecture.png)
 
 ---
 

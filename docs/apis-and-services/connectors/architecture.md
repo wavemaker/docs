@@ -50,7 +50,7 @@ WaveMaker provides a set of ready-to-use Connectors maintained by the community 
 
 You can see the full list of supported Connectors and how to use them in the Marketplace [Connectors List](https://next-marketplace.onwavemaker.com/marketplaceartifacts/124)
 
-![alt text](assets/image.png)
+![alt text](assets/connector-import-dialog.png)
 
 
 ---
