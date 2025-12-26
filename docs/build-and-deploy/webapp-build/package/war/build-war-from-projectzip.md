@@ -1,14 +1,15 @@
 ---
-title: "Building Project with Maven"
+last_update: { author: "Tejaswini K" }
 ---
 
 # Building Project with Maven
 
-This section explains how to generate a **WAR (Web Application Archive)** for a WaveMaker project using **Maven**. The generated WAR file can be deployed on a local machine or on a web server such as **Apache Tomcat**.
+## Overview
+
+This section explains how to generate a **WAR (Web Application Archive)** for a WaveMaker project using **Maven**. The generated WAR file can be deployed on a local machine or on a web server.
 
 ---
-
-## Overview
+## Introduction
 
 A Maven-based build allows you to generate a WAR file outside the WaveMaker Studio. This approach is commonly used in automated build pipelines or environments where builds are triggered from the command line.
 
@@ -20,7 +21,7 @@ To build the project using Maven, first download the project source from WaveMak
 
 1. Export the project as a ZIP file from the Studio.
 
-   ![Export project as ZIP](./image-2.png)
+   ![Export project as ZIP](../../../assets/images/projectaszip.png)
 
 2. Extract the downloaded ZIP file.
 
@@ -31,9 +32,9 @@ To build the project using Maven, first download the project source from WaveMak
 
    ```shell
    cd <location>
-![locate project](./image-3.png)
 
 ## Choose Profile and Build War file
+A WaveMaker project includes two default profiles: development and deployment. When building the project, prefix the profile name with -P. If no profile is specified, the development profile is used by default.To know more about profile configuration, refer [link to release management profile config]
 
 - Use the below command to do a maven build with the profile.
 
@@ -47,6 +48,11 @@ mvn clean install -P<ProfileName>
 mvn clean install -Pdeployment
 ```
 
-- This command will generate a `project war`  file in the target directory. The `project war`  file has both frontend artifacts (HTML, CSS, JS, images, etc), and backend artifacts (Java Classes).
-- This war file can be deployed into any webserver like Tomcat. For more information, see [App Deployment to Tomcat](/learn/how-tos/wavemaker-application-deployment-tomcat).
+- This will generate a **project war**  file in the target directory. This file has both frontend artifacts (HTML, CSS, JS, images, etc), and backend artifacts (Java Classes).
+- This can be deployed into any webserver like Tomcat. Refer [Tomcat Deployment](../../../webapp-deploy/deploy-to-web-server.md).
 
+:::note
+To learn how to generate a WAR file using Maven in WaveMaker, watch the video below:
+
+▶️ [Generate a WAR using MAVEN](https://app.guidde.com/playbooks/6xnaPU78dt88y8AtsMUH2r)
+:::

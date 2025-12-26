@@ -1,4 +1,5 @@
 {
-  "label": "WebApp-Build",
-  "position": 2
+  "label": "Packaging",
+  "collapsible": true,
+  "collapsed": true
 }

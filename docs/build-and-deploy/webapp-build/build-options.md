@@ -1,10 +1,12 @@
 ---
-title: Build Options
+last_update: { author: "Tejaswini K" }
 ---
 
-# 🛠 Build Options in WaveMaker
+# Build Options
 
-WaveMaker allows you to choose how your web application is built as part of the deployment configuration. Build options are defined per configuration profile (for example, Deployment) and determine how the application artifacts are produced.
+## Overview
+
+WaveMaker allows you to choose how your web applications are built. Build options are defined as per configuration profiles (for example, development, deployment and custom profiles) and determine how the application artifacts are produced.
 
 ---
 
@@ -23,7 +25,7 @@ The Angular Build option is the modern build approach for WaveMaker applications
 
 ---
 
-### 🔧 Modes
+### Modes
 
 You can select one of the following modes under Angular Build:
 
@@ -43,7 +45,7 @@ You can select one of the following modes under Angular Build:
 
 ---
 
-### 📝 Benefits
+### Benefits
 
 Angular Build:
 
@@ -57,7 +59,7 @@ This is the recommended build option for current WaveMaker-generated projects.
 
 ## WaveMaker Build (Deprecated)
 
-The WaveMaker Build option refers to the older, classic build process that was used in earlier versions of WaveMaker (for example, before WaveMaker 10). It uses the traditional build mechanism inherited from the Maven lifecycle.
+The WaveMaker Build option refers to the older, classic build process that was used in earlier versions of WaveMaker (before WaveMaker 10). It uses the traditional build mechanism inherited from the Maven lifecycle.
 
 This build option is deprecated and may be removed in future releases. It is retained mainly for backward compatibility.
 
@@ -70,3 +72,10 @@ Build options are available in the WaveMaker Studio under:
 Settings → Profile Configuration → Build Options
 
 ![Build Options configuration in WaveMaker Studio](../assets/images/buildoptions.png)
+
+
+:::note
+
+For a deeper understanding of build options in WaveMaker, refer to the video below:
+
+▶️ [Understanding Build Options in WaveMaker](https://app.guidde.com/playbooks/gvbivUYhkeAcS8jdTPRBCm?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)

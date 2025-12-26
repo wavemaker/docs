@@ -1,6 +1,21 @@
+---
+last_update: { author: "Tejaswini K" }
+---
+
 # Building Static Content
 
-WaveMaker app consists of frontend artifacts (HTML, CSS, JS, images, etc), and backend artifacts (Java Classes). It is recommended to host frontend artifacts in Static Content Server like Nginx, apache, etc, or Content Delivery Network (CDN), and backend artifacts can be hosted on any web server like Tomcat.
+## Overview
+
+This document explains how you can generate static assets from a WaveMaker web application.
+
+## Introduction
+
+A WaveMaker application consists of two major parts:
+
+- **Frontend (UI) artifacts**: HTML, CSS, JavaScript, images, and other static assets  
+- **Backend artifacts**: Java classes which can be packaged as a WAR file
+
+For better performance, it is **recommended to host frontend static assets on a Static Content Server or a CDN** (such as AWS CloudFront, Azure CDN, Nginx, or Apache), while the backend can be deployed on an application server like **Tomcat**.
 
 ### Generating Deployable Artifacts
 
@@ -9,35 +24,72 @@ To generate frontend and backend artifacts from a WaveMaker application, follow 
 1. Ensure that the selected profile has the `build.ui.mode` set as `angular`.
 2. Execute the following Maven command:
 
-```shell
+```bash
 mvn clean install -P<profile-name>
 ```
 
 **For example**
 
-```shell
+```bash
 mvn clean install -Pdeployment
 ```
 
 This command generates two deployable artifacts: `ui-artifacts.zip` and `project.war`, both located in the target folder.
-Both the WAR file and ui-artifacts must be deployed for the application to function correctly. Simply deploying the frontend artifacts on a CDN is insufficient.
+Both artifacts are required for the application to function correctly.
+Deploying only the frontend assets to a CDN without deploying the WAR file will result in an incomplete application.
 
-### Upload frontend artifacts to CDN
+### Preparing Static Assets for CDN Deployment
 
-Unzip the file `ui-artifacts.zip` and upload it to CDN origin (S3 bucket in AWS Cloudfront case, storage container in AZURE CDN Profile case, or put it into Nginx or apache). For specific instructions on how to use different CDNs, see [WaveMaker apps integration with AWS CDN](/learn/app-development/deployment/app-integration-with-aws-cdn) to configure CDN in AWS, and for Azure, see [WaveMaker apps integration with AZURE CDN Profile](/learn/app-development/deployment/app-integration-with-azure-cdn).
+1. Unzip the generated file:
+
+```bash
+unzip ui-artifacts.zip
+```
+
+2. Upload the extracted contents to one of the following:
+
+   - AWS CloudFront (via an S3 bucket as the origin)
+   - Azure CDN (via a Storage Account container)
+   - Static servers such as Nginx or Apache
 
 ### Configuring CDN URL
 
-The CDN URL can be passed to the application by setting the property `app.cdnUrl` in one of the following ways:
+After hosting the static assets, the WaveMaker application must know where to load the frontend assets from.
+This is done using the property:
 
-1. Environment/System property. For specific instructions on how to set environment/system property, see [Using Environment Properties](/learn/app-development/deployment/configuration-management/#using-environment-properties).
-2. Maven build parameter.
+```bash
+app.cdnUrl
+```
+
+The CDN URL usually points to the CDN endpoint followed by the application path.
 
 **For example**
 
-```shell
-mvn clean install -Pdeployment -Dapp.cdnUrl=https://mydomain.cloudfront.net/my_app>/1234/
+```bash
+https://mydomain.cloudfront.net/my_app/1234/
 ```
-3. Profile property.
 
-The priority order for reading the CDN URL is also the same as above.
+### Ways to Set app.cdnUrl
+
+WaveMaker supports multiple ways to configure the CDN URL.
+
+1. **Environment / System Property (Highest Priority)**  
+   Set `app.cdnUrl` as an environment or system property on the server.
+   For details, see: Using Environment Properties [ link to be given]
+
+2. **Maven Build Parameter**  
+   Pass the CDN URL during the Maven build:
+
+   ```bash
+   mvn clean install -Pdeployment \
+     -Dapp.cdnUrl=https://mydomain.cloudfront.net/my_app/1234/
+   ```
+
+3. **Profile Property**  
+   Define the `app.cdnUrl` directly in the WaveMaker profile configuration.
+
+:::note
+To learn how to build static content file in WaveMaker, watch the video below:
+
+▶️ [Build static content ](https://app.guidde.com/playbooks/gvbivUYhkeAcS8jdTPRBCm?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)
+:::

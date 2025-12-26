@@ -1,12 +1,16 @@
-
+---
+last_update: { author: "Tejaswini K" }
+---
 
 # Building War from Studio
 
-WaveMaker allows you to generate a **WAR (Web Application Archive)** directly from the Studio using the **Export Project** option. This approach is suitable when you want to package the application using the build configuration defined within the Studio.
+## Overview
+
+WaveMaker allows you to generate a **WAR (Web Application Archive)** directly from the Studio using the **Project as WAR** option. This approach is suitable when you want to package the application using the build configuration defined within the Studio.
 
 ---
 
-## Overview
+## Introduction
 
 A WAR build packages the WaveMaker web application into a single deployable archive. The build process uses a selected **configuration profile**, which determines the build options and environment-specific settings applied during the build.
 
@@ -31,7 +35,7 @@ The WAR file is generated based on the selected profile and its configured build
 
 The following image shows the **Project as WAR** option and profile selection in WaveMaker Studio:
 
-![Project as WAR option in WaveMaker Studio](./assets/images/buildwarfromstudio.png)
+![Project as WAR option in WaveMaker Studio](../../../assets/images/buildwarfromstudio.png)
 
 ---
 
@@ -40,3 +44,10 @@ The following image shows the **Project as WAR** option and profile selection in
 The export process generates:
 
 - A single `.war` file
+
+
+:::note
+To learn how to generate a WAR file in WaveMaker, watch the video below:
+
+▶️ [Generate a WAR from studio](https://app.guidde.com/playbooks/gvbivUYhkeAcS8jdTPRBCm?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)
+:::
