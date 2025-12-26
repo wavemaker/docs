@@ -37,7 +37,7 @@ For example, to import the public Petstore API:
 https://petstore.swagger.io/v2/swagger.json
 ```
 
-![alt text](assets/image-4.png)
+![alt text](assets/swagger-import-auth.png)
 
 ---
 
@@ -58,7 +58,7 @@ After importing the Swagger definition:
 
 Once imported, you can view all identified entities on the left side navigation. Clicking an entity displays its endpoints — organized as CRUD operations and other custom endpoints. You can modify these groupings if needed before finalizing the import.
 
-![alt text](assets/image-3.png)
+![alt text](assets/swagger-import-config.png)
 
 **Note:** If a particular path doesn't map to an entity, it will appear under an **Others** category. These endpoints can still be used via service variables, but CRUD operations aren't automatically generated.
 
@@ -77,8 +77,8 @@ Once the Swagger API is selected and its metadata is verified:
 
 Authentication settings allow WaveMaker to communicate securely with protected APIs. For more detailed steps on configuring OAuth providers, refer to the OAuth Provider Configuration for REST Services documentation.
 
-![alt text](assets/image-5.png)
-![alt text](assets/image-6.png)
+![alt text](assets/test-imported-api.png)
+![alt text](assets/websocket-configuration.png)
 
 ---
 

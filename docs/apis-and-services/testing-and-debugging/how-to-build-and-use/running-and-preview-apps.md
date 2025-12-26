@@ -12,7 +12,7 @@ Clicking **Preview** launches the application on the WaveMaker server bundled wi
 
 > **Note:** Preview mode is intended only for testing and evaluation purposes. Since the application runs on the WaveMaker Studio server, stopping the Studio or logging out will also stop the application.
 
-![alt text](assets/image.png)
+![alt text](assets/preview-application-toolbar.png)
 
 Key behaviors of Preview mode include:
 

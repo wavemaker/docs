@@ -17,7 +17,7 @@ OAuth 2.0 allows your application to securely access external services on behalf
 ## Device Flow
 The device flow is illustrated in the below image.
 
-![alt text](assets/image-9.png)
+![alt text](assets/oauth2-authorization-flow.png)
 
 ## Device Flow Steps Explained
 
@@ -47,7 +47,7 @@ You can configure a REST service to use OAuth 2.0 when you import it in WaveMake
 5. Complete the OAuth provider settings (details below).  
 6. Test the configuration to verify that the OAuth flow works and tokens are obtained successfully. 
 
-![alt text](assets/image-5.png)
+![alt text](assets/oauth2-configuration.png)
 
 ---
 
@@ -64,7 +64,7 @@ When configuring OAuth 2.0 for a REST service, you must supply details about the
 - **Scopes** – Define the permissions the app is requesting (e.g., `profile`, `email`, `openid`). Check with your OAuth provider for valid scope values. 
 These provider settings allow WaveMaker to handle the OAuth 2.0 token exchange and inject valid access tokens into REST calls automatically.
 
-![alt text](assets/image-2.png)
+![alt text](assets/rest-service-configuration.png)
 
 ---
 
@@ -79,7 +79,7 @@ Once you’ve configured the OAuth provider:
 
 These tokens are then used for subsequent REST requests to the protected service.
 
-![alt text](assets/image-3.png)
+![alt text](assets/rest-service-headers.png)
 
 ---
 
