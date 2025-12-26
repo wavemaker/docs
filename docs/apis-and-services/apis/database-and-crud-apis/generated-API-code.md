@@ -56,77 +56,42 @@ services/
 
 ### Controller Layer (`controller`)
 
-**Purpose**
 - Exposes REST APIs to clients
-
-**Key Responsibilities**
-- Request and response handling
-- Input validation and authorization
-- JSON serialization and deserialization
-
-**Notes**
-- Implemented using Spring REST controllers
-- Supports adding custom endpoints and security logic
+- Handles request and response processing, input validation and authorization, and JSON serialization/deserialization
+- Implemented using Spring REST controllers and supports adding custom endpoints and security logic
 
 ---
 
 ### Service Layer (`service`)
 
-**Purpose**
 - Contains application and business logic
-
-**Key Responsibilities**
-- Business rule implementation
-- Transaction management
-- Coordination between controllers and repositories
-
-**Notes**
-- Recommended layer for custom logic
-- Not overwritten during regeneration or upgrades
+- Responsible for business rule implementation, transaction management, and coordinating between controllers and repositories
+- Recommended layer for custom logic; changes here are not overwritten during regeneration or upgrades
 
 ---
 
 ### DAO / Repository Layer (`dao`)
 
-**Purpose**
-- Handles database access using ORM
-
-**Key Responsibilities**
-- CRUD operations via Hibernate/JPA
-- Query execution and result mapping
-- Database abstraction
-
-**Generated Features**
-- CRUD APIs per entity
-- Pagination and filtering
-- Count and export operations
-- Support for **custom SQL queries and stored procedures**
-
-**Notes**
-- Uses standard JPA repositories
-- No proprietary data-access framework
+- Handles database access using ORM (Hibernate/JPA)
+- Implements CRUD operations, query execution, and result mapping
+- Provides pagination, filtering, count and export operations; supports custom SQL queries and stored procedures
+- Uses standard JPA repositories and does not rely on a proprietary data-access framework
 
 ---
 
 ### Model Layer (`models` / Entities)
 
-**Purpose**
-- Maps database schema to Java objects
-
-**Key Responsibilities**
-- Field and relationship definitions
-- JPA annotations for table mapping
-
-**Notes**
-- Plain Java POJOs
-- Fully extensible and reusable
+- Maps database schema to Java objects, defining fields and relationships
+- Includes JPA annotations for table mapping
+- Generated models are plain Java POJOs that are fully extensible and reusable
 
 ---
 
 ### Design-time Configuration (`designtime`)
 
-**Purpose**
 - Stores metadata used by WaveMaker Studio
+- Used at design time; runtime uses generated Java code
+
 
 **Structure**
 ```text
@@ -141,10 +106,6 @@ services/
         ├── myDatabase_query.json
         └── service-info.json
 ```
-
-**Notes**
-- Used at design time; runtime uses generated Java code
-
 ---
 
 ## Summary
