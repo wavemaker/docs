@@ -7,100 +7,108 @@ export default [
 
   {
     type: "category",
-    label: "web-app-build",
+    label: "web",
     collapsible: true,
     collapsed: true,
     items: [
       {
-        type: "doc",
-        id: "build-and-deploy/webapp-build/build-options"
-      },
-
-      {
         type: "category",
-        label: "Packaging",
+        label: "build",
         collapsible: true,
         collapsed: true,
         items: [
           {
+            type: "doc",
+            id: "build-and-deploy/web/build/build-options"
+          },
+
+          {
             type: "category",
-            label: "Package WAR",
+            label: "Packaging",
             collapsible: true,
             collapsed: true,
             items: [
               {
-                type: "doc",
-                id: "build-and-deploy/webapp-build/package/war/build-war-from-studio"
+                type: "category",
+                label: "Package WAR",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                  {
+                    type: "doc",
+                    id: "build-and-deploy/web/build/package/war/build-war-from-studio"
+                  },
+                  {
+                    type: "doc",
+                    id: "build-and-deploy/web/build/package/war/build-war-from-projectzip"
+                  },
+                  {
+                    type: "doc",
+                    id: "build-and-deploy/web/build/package/war/build-war-using-docker"
+                  }
+                ]
               },
+
               {
-                type: "doc",
-                id: "build-and-deploy/webapp-build/package/war/build-war-from-projectzip"
-              },
-              {
-                type: "doc",
-                id: "build-and-deploy/webapp-build/package/war/build-war-using-docker"
+                type: "category",
+                label: "Docker Image",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                  {
+                    type: "doc",
+                    id: "build-and-deploy/web/build/package/docker/docker-image"
+                  }
+                ]
               }
             ]
           },
 
           {
-            type: "category",
-            label: "Docker Image",
-            collapsible: true,
-            collapsed: true,
-            items: [
-              {
-                type: "doc",
-                id: "build-and-deploy/webapp-build/package/docker/docker-image"
-              }
-            ]
+            type: "doc",
+            id: "build-and-deploy/web/build/static-content"
           }
         ]
       },
 
       {
-        type: "doc",
-        id: "build-and-deploy/webapp-build/static-content"
-      }
-    ]
-  },
-
-  {
-    type: "category",
-    label: "web-app-deploy",
-    collapsible: true,
-    collapsed: true,
-    items: [
-      {
-        type: "doc",
-        id: "build-and-deploy/webapp-deploy/one-click deployment"
-      },
-      {
-        type: "doc",
-        id: "build-and-deploy/webapp-deploy/deploy-to-web-server"
-      },
-      {
-        type: "doc",
-        id: "build-and-deploy/webapp-deploy/deploy-static-content"
-      },
-      {
-        type: "doc",
-        id: "build-and-deploy/webapp-deploy/container-deployment"
-      },
-
-      {
         type: "category",
-        label: "custom-ci-cd-integration",
+        label: "deploy",
         collapsible: true,
         collapsed: true,
         items: [
           {
             type: "doc",
-            id: "build-and-deploy/webapp-deploy/custom ci-cd integration/continous-integration"
+            id: "build-and-deploy/web/deploy/one-click deployment"
           },
           {
             type: "doc",
-            id: "build-and-deploy/webapp-deploy/custom ci-cd integration/continous-deployment"
+            id: "build-and-deploy/web/deploy/deploy-to-web-server"
+          },
+          {
+            type: "doc",
+            id: "build-and-deploy/web/deploy/deploy-static-content"
+          },
+          {
+            type: "doc",
+            id: "build-and-deploy/web/deploy/container-deployment"
+          },
+
+          {
+            type: "category",
+            label: "custom-ci-cd-integration",
+            collapsible: true,
+            collapsed: true,
+            items: [
+              {
+                type: "doc",
+                id: "build-and-deploy/web/deploy/custom ci-cd integration/continous-integration"
+              },
+              {
+                type: "doc",
+                id: "build-and-deploy/web/deploy/custom ci-cd integration/continous-deployment"
+              }
+            ]
           }
         ]
       }

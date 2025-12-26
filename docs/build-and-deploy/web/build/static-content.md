@@ -69,8 +69,6 @@ The CDN URL usually points to the CDN endpoint followed by the application path.
 https://mydomain.cloudfront.net/my_app/1234/
 ```
 
-### Ways to Set app.cdnUrl
-
 WaveMaker supports multiple ways to configure the CDN URL.
 
 1. **Environment / System Property (Highest Priority)**  
@@ -88,8 +86,13 @@ WaveMaker supports multiple ways to configure the CDN URL.
 3. **Profile Property**  
    Define the `app.cdnUrl` directly in the WaveMaker profile configuration.
 
+
 :::note
 To learn how to build static content file in WaveMaker, watch the video below:
 
 ▶️ [Build static content ](https://app.guidde.com/playbooks/gvbivUYhkeAcS8jdTPRBCm?origin=UHEVgZL3MXReLMMFtXRKKLRtXmG3)
 :::
+
+## Related Documentation
+
+- [Deploy Static Content to AWS Cloudfront](../deploy/deploy-static-content.md)
