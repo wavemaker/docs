@@ -52,9 +52,7 @@ WebSocket services are handled similarly to other web services in WaveMaker:
 5. Complete the import; the new WebSocket service will appear under **Web Services**.  
 6. Select the service name to access its settings and metadata. 
 
-![alt text](assets/websocket-configuration.png)
-![alt text](assets/websocket-variable-creation.png)
-![alt text](assets/importing-rest-api-overview.png)
+![alt text](assets/add-new-rest-service.png)
 
 ---
 

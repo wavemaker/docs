@@ -18,7 +18,7 @@ WaveMaker records log files that provide insight into what is happening in the d
 
 You can access both types of logs from the **footer area** of the project workspace. The logs panel also includes a **download icon** so you can save logs locally for offline review, sharing with teammates, or submitting to support for deeper analysis.
 
-![alt text](assets/image.png)
+![alt text](assets/junit-test-integration.png)
 
 ---
 

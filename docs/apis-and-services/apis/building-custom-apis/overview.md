@@ -50,6 +50,14 @@ These methods can:
 - Orchestrate multiple service or database calls  
 - Integrate with external systems or SDKs  
 
+Input parameters can be of the type:
+
+- primitive objects,
+- POJO classes,
+- a collection of POJO classes and primitives,page
+- Http servlet response/request which can be passed as URL-based header params or in the form of cookies
+- a pageable object with values pertaining to the page to be retrieved, the size of each page and sort field name
+
 Supported return types include:
 - Primitive types  
 - Java objects (POJOs)  
@@ -110,7 +118,7 @@ Any changes made to the service definition are automatically reflected across th
 
 ## Exposing Java Services as REST APIs
 
-Once a Java Service is saved, it becomes available as a **REST API** in the **API Designer**[API workspace](../../../studio/workspaces/api-workspace.md) 
+Once a Java Service is saved, it becomes available as a **REST API** in the  **API Designer** [API workspace](../../../studio/workspaces/api-workspace.md) 
 
 - For each method in the Java Service, an API endpoint is automatically generated.  
 - The **type of API** (GET, POST, etc.) is auto-assigned based on the method name.  

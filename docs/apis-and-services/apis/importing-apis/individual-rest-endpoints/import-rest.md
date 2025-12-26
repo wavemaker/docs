@@ -42,7 +42,7 @@ To integrate a third-party REST API into your WaveMaker app:
 7. Once verified, click **Import** to bring the service into your project. 
  The **Import** option becomes active only after a successful test. 
  
-![alt text](assets/websocket-variable-creation.png)
+![alt text](assets/oauth2-configuration.png)
 
 ---
 

@@ -25,101 +25,160 @@ Common use cases include:
 
 ---
 
-## Adding the Twilio Connector
+# Working with the Twilio Connector in WaveMaker
 
-1. Open your WaveMaker project.
-2. Navigate to **Services → Connectors**.
-3. Search for **Twilio** in the connector marketplace.
-4. Add the connector to your project.
-
-Once added, the Twilio connector appears as a service under the **Services** section.
+This document explains how to integrate and use the **Twilio Connector** in a WaveMaker application. Using this connector, you can send and receive **SMS, MMS, WhatsApp messages**, and also implement **OTP (One-Time Password) verification** using Twilio services.
 
 ---
 
-## Configuring the Twilio Connector
 
-To use the Twilio connector, you must provide valid Twilio credentials.
 
-### Required Configuration Properties
+## Importing the Twilio Connector
 
-| Property | Description |
-|--------|-------------|
-| **Account SID** | Unique identifier for your Twilio account |
-| **Auth Token** | Authentication token for API access |
-| **From Number** | Twilio-registered phone number used to send messages |
-
-These values are stored as **server-side properties**, ensuring credentials are not exposed on the client.
+1. Download the latest **[Twilio Connector ZIP](https://github.com/wavemaker/twilio-connector/releases)** from the provided repository link.
+2. Open your project in **WaveMaker Studio**.
+3. Use the **[Import Resource](../apis/third-party-libraries/using-3rd-party-libraries.md)** option and upload the ZIP file.
+4. The connector will be added under the **Connectors** section of the project.
 
 ---
 
-## Available Operations
+## Configuring Connector Properties
 
-After configuration, the Twilio connector exposes operations such as:
-- **Send SMS** – Sends a text message to a specified phone number
+All connector-related properties are externalized and managed through WaveMaker profile configuration files.
 
-Each operation is available as a REST API that can be invoked from the UI or server logic.
+The Twilio connector uses the following properties:
 
----
+```properties
+connector.twilio-connector.default.twilio.account.SID=
+connector.twilio-connector.default.twilio.account.authtoken=
+connector.twilio-connector.default.twilio.account.phoneNumber=
+connector.twilio-connector.default.twilio.verify.services.serviceId=
+```
 
-## Using the Twilio Connector in the Application
-
-### Step 1: Create a Service Variable
-1. Go to the page where SMS functionality is needed.
-2. Create a **Service Variable**.
-3. Select the **Twilio Connector** as the service.
-4. Choose the **Send SMS** operation.
+Update these values with your Twilio account credentials in the appropriate profile file (for example, `local.properties` or environment-specific profiles).
 
 ---
 
-### Step 2: Bind Input Parameters
-Map UI inputs or static values to the operation parameters:
-- **To** → Recipient phone number
-- **From** → Twilio phone number
-- **Body** → Message content
+## Using the Twilio Connector in Java Services
 
-These parameters can be bound to text fields, variables, or predefined values.
+### Autowiring the Connector
 
----
+To access Twilio APIs, inject the connector into your Java service class:
 
-### Step 3: Trigger the Operation
-Invoke the service variable using an event such as:
-- Button click
-- Page load
-- Form submit
+```java
+import com.wavemaker.connector.twilio.TwilioConnector;
 
-When triggered, the application sends an SMS via Twilio.
+@Autowired
+private TwilioConnector twilioConnector;
+```
+
+Once injected, all supported Twilio operations can be invoked directly from your service methods.
 
 ---
 
-## Runtime Behavior
+## Messaging Capabilities
 
-At runtime:
-1. The UI triggers the service variable.
-2. WaveMaker invokes the Twilio connector.
-3. The connector sends a request to Twilio’s REST API.
-4. Twilio processes the request and sends the SMS.
-5. The response is returned to the application.
+### Sending an SMS
 
----
+You can send a simple text message to a phone number using the following method:
 
-## Error Handling and Responses
-
-- Success and failure responses are returned as structured JSON.
-- Developers can handle errors using callbacks or conditional logic in the UI.
-- Common errors include invalid credentials, unverified phone numbers, or exceeded usage limits.
+```java
+public void sendSMSToDevice(String toPhoneNumber, String messageBody) {
+    twilioConnector.sendSMS(toPhoneNumber, messageBody);
+}
+```
 
 ---
 
-## Benefits of Using Connectors
+### Sending an MMS
 
-- No manual REST API implementation
-- Secure credential management
-- Reusable service definitions
-- Faster third-party integration
-- Consistent development experience
+To send a multimedia message, provide a list of media URLs along with the message content:
+
+```java
+List<URI> mediaUris = new ArrayList<>();
+URI url = new URI("<media-url>");
+mediaUris.add(url);
+
+twilioConnector.sendMMS(toPhoneNumber, messageBody, mediaUris);
+```
 
 ---
 
-## Summary
+### Sending a WhatsApp Message
 
-Connectors in WaveMaker simplify third-party integrations by converting external APIs into reusable backend services. The Twilio Connector demonstrates how messaging capabilities can be added to an application with minimal effort, allowing developers to focus on business functionality rather than integration complexity.
+WhatsApp messages can be sent in a similar manner using Twilio’s WhatsApp channel:
+
+```java
+List<URI> mediaUris = new ArrayList<>();
+URI url = new URI("<media-url>");
+mediaUris.add(url);
+
+twilioConnector.sendWhatsAppMessage(toPhoneNumber, messageBody, mediaUris);
+```
+
+---
+
+## Receiving and Responding to Messages
+
+The connector also supports handling incoming SMS, MMS, and WhatsApp messages. You can define a service endpoint to receive these messages and send automated responses.
+
+```java
+public void respondToMessage(HttpServletRequest request, HttpServletResponse response) {
+    twilioConnector.receiveAndRespondTwilioMessage(request, response,
+        new TwilioMessageListener() {
+            @Override
+            public String onMessage(TwilioMessage twilioMessage) {
+                // Custom business logic
+                return "Reply message";
+            }
+        }
+    );
+}
+```
+
+Ensure that this endpoint is configured as a **webhook** in your Twilio phone number or WhatsApp sandbox settings.
+
+---
+
+## OTP (One-Time Password) Support
+
+### Sending an OTP
+
+You can send verification codes to users using Twilio Verify services:
+
+```java
+public VerificationResult sendOTPCode(String phoneNumber) {
+    return twilioConnector.sendOTP(phoneNumber, Channel.SMS);
+}
+```
+
+Supported channels include `SMS`, `CALL`, and `EMAIL`.
+
+> **Note:** If you use the `EMAIL` channel, you must configure Twilio SendGrid with a dynamic email template. The SendGrid API key, template ID, and sender email should be configured under **Twilio Verify → Email Integration**.
+
+---
+
+### Validating an OTP
+
+Once the user enters the received code, you can validate it as follows:
+
+```java
+public Boolean validateOTP(String phoneNumber, String otpCode) {
+    VerificationResult result = twilioConnector.verifyOTP(phoneNumber, otpCode);
+    return result.isValid();
+}
+```
+
+A `true` value indicates that the OTP is valid and verified.
+
+---
+
+## Additional Notes
+
+* The length and format of the OTP are controlled by the **Twilio Verify Service** configuration in your Twilio account.
+* Incoming message handling requires a publicly accessible endpoint registered as a webhook in Twilio.
+* All credentials and sensitive data should be managed using WaveMaker’s profile-based configuration system.
+
+---
+
+This completes the integration and usage guide for the Twilio Connector in WaveMaker.

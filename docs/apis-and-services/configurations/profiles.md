@@ -20,7 +20,7 @@ By using configuration profiles, developers can easily deploy the same applicati
 
 ## Creating Configuration Profiles
 
-1. In WaveMaker Studio, navigate to **Deploy → Configuration Profiles**.
+1. In WaveMaker Studio, navigate to **Settings → Profile Configuration**.
 2. Click **New Profile** to create a new environment profile.
 3. Provide a **Name** and configure properties such as:
    - Database connection strings
@@ -28,6 +28,7 @@ By using configuration profiles, developers can easily deploy the same applicati
    - Authentication credentials
    - Any other environment-specific parameters
 4. Save the profile. You can create multiple profiles for different environments (e.g., Development, QA, Production).
+
 ![alt text](assets/configuration-profiles-dialog.png)
 ---
 
