@@ -1,77 +1,61 @@
 ---
-sidebar_position: 1
+last_update: { author: "Tejaswini K" }
 ---
 
 # One-Click Deployment
 
-One-click Deployment deploys an app to the cloud setup with just a single click which deploys to the WaveMaker demo cloud. Before you deploy an app, you should ensure the build and the application security settings are properly configured by following the below two checks.
+## Overview
 
-1. [Configure Deployment Profile](/learn/app-development/deployment/deployment-profile/)
-2. [Push to VCS](#push-to-vcs)
+This section explains how you can deploy a WaveMaker application using **One-click Deployment**.  
+This feature allows you to deploy your application to the **WaveMaker Demo Cloud** directly from Studio with a single click.
 
-## Configure Deployment Profile
+## Introduction
 
-Deployment configuration profile uses various service configurations like the database, REST, SOAP, Web Socket, and Security. These settings can be modified from [Deployment Profile](/learn/app-development/deployment/deployment-profile/) under the **Project Settings** dialog. Check these settings before deploying an app.
+One-click Deployment simplifies the deployment process by automatically validating, building, and deploying your application.  
+It is best suited for quick testing, demos, and QA environments before setting up a full CI/CD pipeline.
 
-## Push to VCS
+## Prerequisites
 
-Apps are deployed only under the version control system. If you have not pushed your apps changes to the VCS, you will be prompted to do so. You cannot proceed with deployment until you commit your changes.
+Before starting One-click Deployment, ensure the following:
 
-## Deploying an App
+1. **Deployment profile is configured**  
+   The Deployment Profile defines environment-specific settings such as:
+   - Database connections  
+   - REST / SOAP services  
+   - WebSocket configurations  
+   - Application security  
+   These settings are managed from **Project Settings → Deployment Profile**.
+   You can see more about Deployment Profile configuration here [Profile Configuration](/learn/app-development/deployment/deployment-profile/)
 
-By clicking on the **Deploy** icon; it initiates the deployment process and starts [checking for errors](/learn/app-development/dev-integration/inspection-framework) in the application.
+2. **Application changes are pushed to VCS**  
+   Applications can be deployed only after the code is pushed to version control.
+   If any changes are uncommitted, Studio will ask you to push them before deployment.
 
-[![deploy icon](/learn/assets/deploy.png)](/learn/assets/deploy.png)
+## Deploying an Application
 
-:::note
-Ensure to push your latest changes to VCS before **One-click deployment**. Also, if you are deploying the app for the first time, check the configuration profile settings. For more information, see [Deployment Overview](/learn/app-development/deployment/configuration-profiles).
-:::
+1. Click the **Deploy** icon in the Studio header to initiate the deployment process.  
+   ![Deploy icon](../../../build-and-deploy/assets/images/oneclickdeployment.png)  
+   During deployment, WaveMaker performs:
+   - Application validation using Inspection Framework  
+   - Build process  
+   - Deployment to the Demo Cloud  
 
 ## Deployment Flow
 
-Once you initiate the deployment, the deployment runs in the background. You can choose to **close** the Deployment progress dialog and continue working with Studio.
+Once deployment is triggered, it runs in the background, allowing you to continue working in Studio or close the deployment dialog. Deployment progress is communicated through toaster notifications, and an **email notification** is sent once the deployment completes. The deployment icon in the header updates to reflect the current status, and you can click the icon and select **Check Deployment Status** at any time to reopen the deployment dialog and view detailed progress.
 
 ### Deployment Status
 
-You can see the status of the deployment through the `toaster UI`. If you work on the same project, after the deployment, you get notified by an email.
+After deployment completes, the application can either succeed or fail. If the deployment fails, you can review and fix the reported issues using the **Inspection Framework** and then redeploy the application. If the deployment is successful, the application is hosted on the WaveMaker Demo Cloud, and a demo URL is generated for access. You can launch the deployed application directly or manage it further using the Apps Portal to confgure CI/CD Pipeline in WaveMaker.
 
-### Deployment Progress
+After deployment, you can perform the following actions:
 
-The progress of the Deployment is indicated by the change of deployment icon on the header as shown below, and by clicking the icon, you can see an option to **Check Deployment Status** allowing you to open the dialog again.
+- **Redeploy** – Deploy the application again to the **Demo (QA)** phase.
+- **Launch Deployed App** – Open the deployed application in a browser.
+- **Manage App** – Manage and configure the application in different environments using the Apps Portal.
 
-![deployment-status](/learn/assets/Check-deployment-status-Click-e1554896395542.png)
 
-### Deployment Failed
-
-If the deployment fails, you can fix the code errors by using [Inspection Framework](/learn/app-development/dev-integration/inspection-framework) and [redeploy](#redeploy) the app.
-
-![deploy failed](/learn/assets/deploy-failed.png)
-
-### Deployment Success
-
-After [successfully deployment](/learn/app-development/deployment/one-click-deployment#deployment-flow), you can access the app via the application demo URL. Deployed apps host on WaveMaker [Demo](/learn/app-development/deployment/release-management#demo) cloud. You can [Manage Deployed Apps](/learn/app-development/deployment/manage-deployed-apps/#apps-portal), or **View the Deployed App**. To further configure release pipelnes, see [CI/CD Pipeline in WaveMaker](/learn/app-development/deployment/release-management).
-
-![Deployment-flow-changes](/learn/assets/Deployment-flow-changes.png)
-
-## Deployment to Cloud
-
-After the deployment, you can perform the following three actions.
-
-### Redeploy
-
-You can redeploy the app if needed. Any redeployments will be directed to the [Demo (QA) phase](/learn/app-development/deployment/release-management/#demo).
-
-### Launch Deployed App
-
-Launches the app in a browser.
-
-### Manage App
-
-You can push the deployed app to live and other phases. This option opens the [Apps Portal](/learn/app-development/deployment/manage-deployed-apps#deployed-apps-management) page.
-
-![cloud post deploy](/learn/assets/cloud_postdeploy.png)
-
-## See Also
-
-[One-click Deployment Flow](/learn/app-development/one-click-deployment-process)  
-
+## Related Documentation
+- [Deployment Profile](/learn/app-development/deployment/deployment-profile/)
+- [Manage Deployed Apps](/learn/app-development/deployment/manage-deployed-apps)
+- [CI/CD Pipeline in WaveMaker](/learn/app-development/deployment/release-management)

@@ -1,61 +1,98 @@
 ---
-sidebar_position: 2
+last_update: { author: "Tejaswini K" }
 ---
-# Deploy-to-Tomcat
 
-WaveMaker Apps can be exported as a WAR file. This generated file can be deployed to any standard Java Web Server running on JDK 17/ JDK 21. This section walks through the steps to deploy WaveMaker app to Tomcat. You can know more about [Deployment to Web Server](/learn/app-development/deployment/deployment-web-server/) from here. 
+# Deploy to Tomcat
+
+## Overview
+
+WaveMaker applications are packaged as a **WAR (Web Application Archive) file**, which can be deployed to any standard Java web server running on **JDK 17 or JDK 21**.
+
+To learn how to generate a WAR file from a WaveMaker application- [Generate a WAR](../build/package/war/build-war-from-studio.md)
+
 
 ## Supported Versions
 
-WaveMaker application can be deployed on any of the 10.x versions of Tomcat, though it is recommended to use the latest version of tomcat in the 10.x version as the older versions can have security vulnerabilities.
+WaveMaker applications can be deployed on **Apache Tomcat 10.x**.
 
-The supported JDK versions are 17/21.
+- It is recommended to use the **latest available version** within the 10.x series to avoid known security vulnerabilities.
+- Supported JDK versions: **JDK 17** and **JDK 21**
+
+---
 
 ## Prerequisites
 
-- Tomcat has to be installed & running
-- Tomcat user credential that has the role of
-    - `manager-gui`
-- [WaveMaker application war file to be deployed](/learn/app-development/deployment/deployment-web-server/#generate-a-war-file).
+Before deploying the application, ensure the following:
+
+- Apache Tomcat is installed and running
+- A Tomcat user is configured with the `manager-gui` role
+- A WaveMaker application WAR file is generated  
 
 ### Typical Hardware Requirements
 
-- *4 GB RAM, 2 core CPU, 50GB disk**
+- **4 GB RAM**
+- **2-core CPU**
+- **50 GB disk space**
 
 :::note
-*Capacity planning with your application and its expected usage will yeild more accurate hardware requirements.
+Actual hardware requirements depend on application complexity and expected user load.  
+Proper capacity planning is recommended for production environments.
 :::
+
+---
 
 ## Deployment Process
 
-The deployment on Tomcat can be done either by copying the war file into web apps folder or by using Management portal.
+A WaveMaker WAR file can be deployed to Tomcat using either of the following methods:
 
-### Deployment from Web apps Folder
+- Copying the WAR file to the `webapps` directory  
+- Using the Tomcat Management Portal
 
-The instructions are same for all versions of Tomcat.
+---
 
-1. Copy the war file to `/webapps` folder.
-2. Tomcat will automatically detect the newly copied war file and start deploying. You can check the status on the Tomcat console.
-3. After the deployment is successful you can access the application at `http://localhost:8080/<ApplicationName>`.
+## Deployment from Webapps Folder
 
-### Deployment using Management Portal
+This method is the same across all supported Tomcat versions.
 
-**Deployment for Tomcat 10.x**
+1. Copy the WAR file into the `<TOMCAT_HOME>/webapps` directory.
+2. Tomcat automatically detects the WAR file and starts deployment.
+3. Monitor the deployment status from the Tomcat console or logs.
+4. Once deployment completes, access the application at:  
+   `http://localhost:8080/<ApplicationName>`
 
-1. Open a browser and navigate to `http://localhost:8080` (if Tomcat is running on a different port, replace the 8080 with that port).
-2. Click on **Manager App** button displayed on the homepage and provide User Name and Password in the respective text boxes when prompted.
-3. You will be navigated to Tomcat Web Application Manager.
-4. Navigate to **War file to deploy** section and choose the war file that you want to deploy and click on Deploy button.
-5. Once Application war has been deployed the application name will be listed in the applications list and it is in **Start** state by default.
-6. Click on the application name link to access the Deployed application.
+---
 
-### Configure Tomcat to Turn off Compression
+## Deployment Using Management Portal
 
-During the build process WaveMaker already generates compressed artifacts for static content. Tomcat's compression should be turned off in the `server.xml`, otherwise the Tomcat server will compress the files again leading to errors when the deployed WaveMaker app is loaded in the browsers. 
+**Applicable for Tomcat 10.x**
 
-Here is how compression is turned off in `server.xml`
+1. Open a browser and navigate to `http://localhost:8080`  
+   (replace `8080` if Tomcat runs on a different port).
+2. Click **Manager App** on the Tomcat home page.
+3. Enter the Tomcat username and password when prompted.
+4. In the **WAR file to deploy** section, select the application WAR file.
+5. Click **Deploy**.
+6. After deployment, the application appears in the applications list and is started by default.
+7. Click the application name to launch it.
 
-1. Open `server.xml` for editing.
-2. Locate the `Connector` tag that contains ```compression``` attribute.
-3. Remove the attributes `compression`, `compressionMinSize`, `compressableMimeType` from the `Connector` tag.
-4. Save the changes and restart the Tomcat server.
+---
+
+## Disable Compression in Tomcat
+
+WaveMaker already generates **compressed static assets** during the build process.  
+If Tomcat compression is enabled, the server attempts to compress these files again, which may cause runtime issues in the browser.
+
+To avoid this, compression must be disabled in `server.xml`.
+
+### Steps to Disable Compression
+
+1. Open `<TOMCAT_HOME>/conf/server.xml`.
+2. Locate the `Connector` element that contains compression-related attributes.
+3. Remove the following attributes from the `Connector` tag:
+   - `compression`
+   - `compressionMinSize`
+   - `compressableMimeType`
+4. Save the file and restart the Tomcat server.
+
+---
+
