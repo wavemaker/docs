@@ -15,7 +15,6 @@ The frontend code of any WaveMaker application can be configured to deploy onto 
 - Choose Create bucket, Next Enter Bucket Name, and Select the region for the bucket.
 - In Bucket settings for Block Public Access, choose the Block Public Access settings that you want to apply to the bucket.
 - Go to bucket properties, enable static website hosting.
-[![static website enable]]
 
 - If the web application loaded in one domain and the frontend code in s3 loaded with a different CDN domain, then the end-user will receive error No 'Access-Control-Allow-Origin' header which is present on the requested resource. So, to selectively allow cross-origin access to your Amazon S3 resources, add CORS rules in the bucket permission section. If website content requires CORS, then add rules in the bucket permission section. For more details, visit [aws s3 cors](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html).
 
@@ -53,11 +52,8 @@ CORS example
 - At Origin Domain Name select previously created S3 Bucket, if you want to store content in any specific directory provide an origin path.
 - select restrict buckets access as `yes` and select previously created existing Identity.
 - At Grant Read Permissions on Bucket select `yes` for update bucket policy ,it will provide read permission to the origin access identity when you create the distribution.
-[![CDN origin settings]]
 - Provide Cache behavior configuration details
-[![CDN cache behaviour]]
 - At distribution settings select Default CloudFront certificate or import custom SSL certificate , then click on create distribution by providing required values for creation.
-[![CDN distribution settings]]
 
 - Wait for few minutes to create distribution and after creating distribution note down the domain name of CloudFront distribution.
 
@@ -82,5 +78,5 @@ unzip ui-artifacts.zip -d <my-static-content-folder>
 ```shell
 aws s3 sync <my-static-content-folder>/ S3_BUCKET
 ```
-- For instructions on configuring the CDN URL in your application see [Configuring CDN URL](/learn/app-development/deployment/building-with-maven/#configuring-cdn-url).
+- For instructions on configuring the CDN URL in your application see **Configuring CDN URL**.
 

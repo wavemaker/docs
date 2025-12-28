@@ -25,8 +25,7 @@ Before starting One-click Deployment, ensure the following:
    - WebSocket configurations  
    - Application security  
    These settings are managed from **Project Settings → Deployment Profile**.
-   You can see more about Deployment Profile configuration here [Profile Configuration](/learn/app-development/deployment/deployment-profile/)
-
+   You can see more about Deployment Profile configuration here **Profile Configuration**
 2. **Application changes are pushed to VCS**  
    Applications can be deployed only after the code is pushed to version control.
    If any changes are uncommitted, Studio will ask you to push them before deployment.
@@ -56,6 +55,6 @@ After deployment, you can perform the following actions:
 
 
 ## Related Documentation
-- [Deployment Profile](/learn/app-development/deployment/deployment-profile/)
-- [Manage Deployed Apps](/learn/app-development/deployment/manage-deployed-apps)
-- [CI/CD Pipeline in WaveMaker](/learn/app-development/deployment/release-management)
+- Deployment Profile
+- Manage Deployed Apps
+- CI/CD Pipeline in WaveMaker
