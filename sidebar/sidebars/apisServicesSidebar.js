@@ -155,7 +155,7 @@ export default [
         ]
     },
     {
-        "type": "category",
+       	"type": "category",
         "label": "Security",
         "collapsible": true,
         "collapsed": true,
@@ -164,114 +164,18 @@ export default [
                 "type": "doc",
                 "id": "apis-and-services/security/overview"
             },
-            {
-                "type": "category",
-                "label": "Authentication & Authorization",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/authentication-and-authorization/access-levels-and-permissions"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/authentication-and-authorization/authentication"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/authentication-and-authorization/authorization"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/authentication-and-authorization/overview"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/authentication-and-authorization/role-based-and-fine-grained-permissions"
-                    }
-                ]
+			{
+                "type": "doc",
+                "id": "apis-and-services/security/authentication-and-authorization"
+            },
+			{
+                "type": "doc",
+                "id": "apis-and-services/security/providers"
             },
             {
-                "type": "category",
-                "label": "Providers",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/providers/central-authentication-system-cas"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/providers/saml-integration"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/providers/token-based-authentication"
-                    }
-                ]
-            },
-            {
-                "type": "category",
-                "label": "Hardening App",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/antisamy-policy-configuration"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/application-hardening"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/concurrent-sessions-handling"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/host-header-injection-prevention"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/login-configuration"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/other-security-hardening-measures"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/owasp-guidelines"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/remember-me-functionality"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/secure-connection-for-deployed-apps"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/security-overview-and-best-practices"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/session-persistence-and-management"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/ssl-tls-encryption"
-                    },
-                    {
-                        "type": "doc",
-                        "id": "apis-and-services/security/hardening-app/xss-prevention-techniques"
-                    }
-                ]
-            }
+                "type": "doc",
+                "id": "apis-and-services/security/hardening-app"
+            }   
         ]
     },
     {

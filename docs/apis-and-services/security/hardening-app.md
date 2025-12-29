@@ -1,7 +1,7 @@
 ---
 last_update: { author: "Author Name" }
 ---
-# Overview
+# Hardening App - Dummy Content
 
 Application security is a foundational concern in modern software development. As applications increasingly rely on distributed architectures, APIs, and browser-based clients, enforcing robust security controls becomes critical to protecting data, users, and systems.
 
@@ -13,34 +13,6 @@ This chapter introduces the core concepts of application security as they apply 
 
 In a typical web application, client-side code (such as JavaScript executed in a browser) can be inspected, modified, or replayed by users. Because of this, **security cannot be enforced reliably on the client**. All critical security decisions—such as identity validation, access control, and data protection—must be enforced on the server.
 
-```mermaid
-%%{init: {
-  "theme": "default",
-  "themeVariables": {
-    "fontSize": "30px",
-    "font-family": "DM Sans"
-  }
-}}%%
-flowchart LR
-    User["User / Client<br/>(Browser, App, API Client)"]
-    ClientCode["Client-side <br/>Code<br/>(JavaScript, UI)"]
-    Server["Application Server"]
-    Auth["Identity <br/>Verification<br/>(Authentication)"]
-    Access["Access <br/>Control<br/>(Authorization)"]
-    Data["Protected <br/>Resources<br/>(APIs, Data, Services)"]
-    Threats["Threat <br/>Mitigation<br/>(Validation, <br/>Rate Limits,<br/>Input Checks)"]
-
-    User --> ClientCode
-    ClientCode -->|Request| Server
-
-    Server --> Auth
-    Auth --> Access
-    Access --> Threats
-    Threats --> Data
-
-    Data -->|Response| Server
-    Server --> ClientCode
-```
 Application security generally addresses the following goals:
 
 - **Identity verification** – Ensuring that a user or system is who it claims to be  
