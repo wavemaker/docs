@@ -24,12 +24,9 @@ export default [
         "items": [
             {
                 "type": "doc",
-                "id": "user-interfaces/web/components/mobile"
+                "id": "user-interfaces/web/components/react-components",
+                "label": "React Components"
             },
-            {
-                "type": "doc",
-                "id": "user-interfaces/web/components/web"
-            }
         ]
     },
     {
