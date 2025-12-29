@@ -2,24 +2,25 @@
 export default [
   {
     type: "doc",
-    id: "build-and-deploy/overview"
+    id: "build-and-deploy/overview",
   },
 
+  /* ================= BUILD ================= */
   {
     type: "category",
-    label: "web",
+    label: "build",
     collapsible: true,
     collapsed: true,
     items: [
       {
         type: "category",
-        label: "build",
+        label: "web",
         collapsible: true,
         collapsed: true,
         items: [
           {
             type: "doc",
-            id: "build-and-deploy/web/build/build-options"
+            id: "build-and-deploy/web/build/build-options",
           },
 
           {
@@ -36,17 +37,17 @@ export default [
                 items: [
                   {
                     type: "doc",
-                    id: "build-and-deploy/web/build/package/war/build-war-from-studio"
+                    id: "build-and-deploy/web/build/package/war/build-war-from-studio",
                   },
                   {
                     type: "doc",
-                    id: "build-and-deploy/web/build/package/war/build-war-from-projectzip"
+                    id: "build-and-deploy/web/build/package/war/build-war-from-projectzip",
                   },
                   {
                     type: "doc",
-                    id: "build-and-deploy/web/build/package/war/build-war-using-docker"
-                  }
-                ]
+                    id: "build-and-deploy/web/build/package/war/build-war-using-docker",
+                  },
+                ],
               },
 
               {
@@ -57,61 +58,64 @@ export default [
                 items: [
                   {
                     type: "doc",
-                    id: "build-and-deploy/web/build/package/docker/docker-image"
-                  }
-                ]
-              }
-            ]
-          },
-
-          {
-            type: "doc",
-            id: "build-and-deploy/web/build/static-content"
-          }
-        ]
-      },
-
-      {
-        type: "category",
-        label: "deploy",
-        collapsible: true,
-        collapsed: true,
-        items: [
-          {
-            type: "doc",
-            id: "build-and-deploy/web/deploy/one-click deployment"
-          },
-          {
-            type: "doc",
-            id: "build-and-deploy/web/deploy/deploy-to-web-server"
-          },
-          {
-            type: "doc",
-            id: "build-and-deploy/web/deploy/deploy-static-content"
-          },
-          {
-            type: "doc",
-            id: "build-and-deploy/web/deploy/container-deployment"
-          },
-
-          {
-            type: "category",
-            label: "custom-ci-cd-integration",
-            collapsible: true,
-            collapsed: true,
-            items: [
-              {
-                type: "doc",
-                id: "build-and-deploy/web/deploy/custom ci-cd integration/continous-integration"
+                    id: "build-and-deploy/web/build/package/docker/docker-image",
+                  },
+                ],
               },
-              {
-                type: "doc",
-                id: "build-and-deploy/web/deploy/custom ci-cd integration/continous-deployment"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+            ],
+          },
+
+          {
+            type: "doc",
+            id: "build-and-deploy/web/build/static-content",
+          },
+        ],
+      },
+    ],
+  },
+
+  /* ================= DEPLOY ================= */
+  {
+    type: "category",
+    label: "deploy",
+    collapsible: true,
+    collapsed: true,
+    items: [
+      {
+        type: "doc",
+        id: "build-and-deploy/web/deploy/one-click deployment",
+      },
+      {
+        type: "doc",
+        id: "build-and-deploy/web/deploy/deploy-to-web-server",
+      },
+      {
+        type: "doc",
+        id: "build-and-deploy/web/deploy/container-deployment",
+      },
+      {
+        type: "doc",
+        id: "build-and-deploy/web/deploy/deploy-static-content",
+      },
+      
+    ],
+  },
+
+  /* ================= DISTRIBUTION (CI/CD) ================= */
+  {
+    type: "category",
+    label: "delivery & distribution (CI/CD)",
+    collapsible: true,
+    collapsed: true,
+    items: [
+      {
+        type: "doc",
+        id: "build-and-deploy/web/deploy/custom ci-cd integration/continous-integration",
+      },
+      {
+        type: "doc",
+        id: "build-and-deploy/web/deploy/custom ci-cd integration/continous-deployment",
+      },
+    ],
+  },
 ];

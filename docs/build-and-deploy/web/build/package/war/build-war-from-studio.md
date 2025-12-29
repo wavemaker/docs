@@ -35,7 +35,7 @@ The WAR file is generated based on the selected profile and its configured build
 
 The following image shows the **Project as WAR** option and profile selection in WaveMaker Studio:
 
-![Project as WAR option in WaveMaker Studio](../../../assets/images/buildwarfromstudio.png)
+![Project as WAR option in WaveMaker Studio](../../../../assets/images/buildwarfromstudio.png)
 
 ---
 

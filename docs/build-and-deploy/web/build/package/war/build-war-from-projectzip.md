@@ -21,7 +21,7 @@ To build the project using Maven, first download the project source from WaveMak
 
 1. Export the project as a ZIP file from the Studio.
 
-   ![Export project as ZIP](../../../assets/images/projectaszip.png)
+   ![Export project as ZIP](../../../../assets/images/projectaszip.png)
 
 2. Extract the downloaded ZIP file.
 

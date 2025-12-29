@@ -71,7 +71,8 @@ Build options are available in the WaveMaker Studio under:
 
 Settings → Profile Configuration → Build Options
 
-![Build Options configuration in WaveMaker Studio](../assets/images/buildoptions.png)
+![Build Options configuration in WaveMaker Studio](../../assets/images/buildoptions.png)
+
 
 
 :::note
