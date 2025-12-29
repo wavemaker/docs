@@ -24,12 +24,9 @@ export default [
         "items": [
             {
                 "type": "doc",
-                "id": "user-interfaces/mobile/components/mobile"
+                "id": "user-interfaces/mobile/components/mobile-components",
+                "label": "Mobile Components"
             },
-            {
-                "type": "doc",
-                "id": "user-interfaces/mobile/components/web"
-            }
         ]
     },
     {
